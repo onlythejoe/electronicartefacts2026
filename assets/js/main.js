@@ -63,6 +63,97 @@
     return `<div class="tag-cluster">${items.map((item) => chip(item)).join("")}</div>`;
   };
 
+  const chunk = (items, size) => {
+    const output = [];
+    for (let index = 0; index < items.length; index += size) {
+      output.push(items.slice(index, index + size));
+    }
+    return output;
+  };
+
+  const programmingLanguages = [
+    "JavaScript",
+    "TypeScript",
+    "Python",
+    "Rust",
+    "Go",
+    "C",
+    "C++",
+    "C#",
+    "Java",
+    "Kotlin",
+    "Swift",
+    "Objective-C",
+    "Dart",
+    "Ruby",
+    "PHP",
+    "Perl",
+    "Lua",
+    "Julia",
+    "R",
+    "MATLAB",
+    "Scala",
+    "Haskell",
+    "OCaml",
+    "F#",
+    "Elixir",
+    "Erlang",
+    "Clojure",
+    "Scheme",
+    "Common Lisp",
+    "Prolog",
+    "Fortran",
+    "COBOL",
+    "Pascal",
+    "Ada",
+    "Assembly",
+    "Bash",
+    "PowerShell",
+    "SQL",
+    "PL/SQL",
+    "T-SQL",
+    "HTML",
+    "CSS",
+    "Sass",
+    "Less",
+    "XML",
+    "JSON",
+    "YAML",
+    "Markdown",
+    "TOML",
+    "Nim",
+    "Zig",
+    "D",
+    "Crystal",
+    "V",
+    "Haxe",
+    "Nix",
+    "Solidity",
+    "VHDL",
+    "Verilog",
+    "Q#",
+    "Smalltalk",
+    "Groovy",
+    "Forth",
+    "ML",
+    "ReasonML",
+    "PureScript",
+    "Elm",
+    "ReScript",
+    "CoffeeScript",
+    "Hack",
+    "Arduino",
+    "Processing",
+    "Max",
+    "SuperCollider",
+    "Ballerina",
+    "Racket",
+    "Lisp",
+    "CLIPS",
+    "Factor",
+    "Fennel",
+  ];
+
   const relationList = (relations) => {
     if (!relations || !relations.length) return "";
     return `
@@ -156,6 +247,29 @@
       ])}
       ${relationList(item.related)}
       ${linkRow(item.cta, item.links || [])}
+    </article>
+  `;
+
+  const projectLandingCard = (item) => `
+    <article class="project-card" ${cardBaseAttrs(item)}>
+      <div class="project-card__top">
+        <div>
+          <p class="card__meta">${esc(item.category || item.type || "PROJECT")}</p>
+          <h3 class="card__title">${esc(item.title)}</h3>
+        </div>
+        ${statusBadge(item.status, item.statusLabel)}
+      </div>
+      <p class="card__copy">${esc(item.summary)}</p>
+      <div class="project-card__meta">
+        ${entityBadge("project")}
+        ${item.program ? chip(`Program: ${item.program}`) : ""}
+        ${item.temporality?.era ? chip(`Era: ${item.temporality.era}`) : ""}
+      </div>
+      ${tagRow([...(item.medium || []), ...(item.discipline || [])])}
+      <div class="link-row">
+        <a class="tag" href="./project.html?id=${encodeURIComponent(item.id)}">Detail</a>
+        <a class="tag" href="./project-rl.html?id=${encodeURIComponent(item.id)}">RL</a>
+      </div>
     </article>
   `;
 
@@ -446,6 +560,8 @@
       </div>
       <div class="cross-nav-grid">
         <a class="cross-nav-card" href="./work.html"><strong>WORK</strong><span>Projects, music and technology.</span></a>
+        <a class="cross-nav-card" href="./projects.html"><strong>PROJECTS</strong><span>Project landing and detail routes.</span></a>
+        <a class="cross-nav-card" href="./programs.html"><strong>PROGRAMS</strong><span>All visible programs.</span></a>
         <a class="cross-nav-card" href="./research.html"><strong>RESEARCH</strong><span>Program, fields and notes.</span></a>
         <a class="cross-nav-card" href="./archive.html"><strong>ARCHIVE</strong><span>Artefacts and drafts.</span></a>
         <a class="cross-nav-card" href="./about.html"><strong>ABOUT</strong><span>Positioning and network.</span></a>
@@ -571,9 +687,9 @@
       <div class="section-head">
         <p class="eyebrow">PROGRAMS</p>
         <h2>Programs</h2>
-        <p class="lede">One visible program anchors the research stack, plus a legacy research system.</p>
+        <p class="lede">VASTE anchors the stack, OracleHub remains the archive precursor, and Audio Analysis Engine keeps the dormant prototype line visible.</p>
       </div>
-      <div class="split">
+      <div class="card-grid card-grid--three">
         ${(catalog.programs || []).map(programCard).join("")}
       </div>
     </section>
@@ -586,7 +702,7 @@
         <h2>Notes, fragments and observations</h2>
         <p class="lede">Short, readable records that keep the lab legible without becoming a dump.</p>
       </div>
-      <div class="card-grid card-grid--three">
+      <div class="card-grid card-grid--two">
         ${[
           {
             title: "Fragments",
@@ -599,6 +715,10 @@
           {
             title: "Observations",
             copy: "Signals, tests and process notes that can move back into Work or Archive.",
+          },
+          {
+            title: "Foundational Era",
+            copy: "Before Electronic Artefacts, the work already moved through architecture, communication systems and taxonomies. That lineage now feeds the research division.",
           },
         ]
           .map(
@@ -770,7 +890,7 @@
         <div class="graph-columns">
           <div class="graph-column">
             <p class="card__meta">Programs</p>
-            ${["VASTE", "OracleHub"].map((label) => `<div class="graph-node">${esc(label)}</div>`).join("")}
+            ${["VASTE", "OracleHub", "Audio Analysis Engine"].map((label) => `<div class="graph-node">${esc(label)}</div>`).join("")}
           </div>
           <div class="graph-column">
             <p class="card__meta">Artists</p>
@@ -1181,6 +1301,7 @@
           <p class="lede">${esc(item.description || item.summary || "")}</p>
           <div class="button-row">
             ${primaryLinks.map((link) => `<a class="button button--primary" href="${esc(link.href)}"${link.target ? ' target="_blank" rel="noreferrer"' : ""}>${esc(link.label)}</a>`).join("")}
+            ${item.kind === "project" ? `<a class="button button--secondary" href="./project-rl.html?id=${encodeURIComponent(item.id)}">RL</a>` : ""}
             <a class="button button--secondary" href="./archive.html">Archive</a>
             <a class="button button--secondary" href="./search.html">Search</a>
           </div>
@@ -1346,8 +1467,180 @@
   const renderVasteBanner = () => vasteBanner();
   const renderFeaturedResearch = () => featuredResearch();
   const renderLatest = () => latestArtefacts();
+  const renderPrograms = () => {
+    const programRows = chunk(programmingLanguages, 24).slice(0, 3);
+    const activePrograms = (catalog.programs || []).length;
+    return `
+      <section class="zone-card hero programs-hero">
+        <div class="section-head">
+          <p class="eyebrow">PROGRAMS</p>
+          <h1 class="display-title">All programs in one field.</h1>
+          <p class="lede">
+            A dedicated landing page for the program stack. The animation below is a curated, extensible language wall, not a literal census of every language ever written.
+          </p>
+          <div class="button-row">
+            <a class="button button--primary" href="https://www.vaste.space/" target="_blank" rel="noreferrer">VASTE</a>
+            <a class="button button--secondary" href="./research.html">Research</a>
+            <a class="button button--secondary" href="./archive.html">Archive</a>
+          </div>
+        </div>
+        <div class="stat-grid programs-stats">
+          <article class="stat-card">
+            <p class="card__meta">Programs</p>
+            <strong>${esc(String(activePrograms))}</strong>
+            <span>Visible program entries in the catalog.</span>
+          </article>
+          <article class="stat-card">
+            <p class="card__meta">Roles</p>
+            <strong>Runtime / Archive / Prototype</strong>
+            <span>The stack is split by function, not by noise.</span>
+          </article>
+          <article class="stat-card">
+            <p class="card__meta">Surface</p>
+            <strong>Animated language field</strong>
+            <span>Representative languages drifting across the screen.</span>
+          </article>
+        </div>
+      </section>
+      <section class="zone-card hero">
+        <div class="section-head">
+          <p class="eyebrow">PROGRAM STACK</p>
+          <h2>Active and historical programs</h2>
+          <p class="lede">The landing page keeps the program catalog visible and browsable.</p>
+        </div>
+        <div class="card-grid card-grid--three programs-grid">
+          ${(catalog.programs || []).map(programCard).join("")}
+        </div>
+      </section>
+      <section class="zone-card hero">
+        <div class="section-head">
+          <p class="eyebrow">LANGUAGE FIELD</p>
+          <h2>Animated programming language wall</h2>
+          <p class="lede">A kinetic typographic scan across a large set of programming languages and related code systems.</p>
+        </div>
+        <div class="language-field" aria-label="Programming languages animation">
+          ${programRows
+            .map(
+              (row, index) => `
+                <div class="language-marquee ${index % 2 ? "language-marquee--reverse" : ""}" style="--marquee-duration:${28 + index * 8}s;">
+                  <div class="language-track">
+                    ${[...row, ...row]
+                      .map((language) => `<span class="language-pill">${esc(language)}</span>`)
+                      .join("")}
+                  </div>
+                </div>
+              `,
+            )
+            .join("")}
+        </div>
+      </section>
+    `;
+  };
+  const renderProjects = () => {
+    const grouped = (catalog.projects || []).reduce((acc, item) => {
+      const key = item.category || item.type || "Project";
+      (acc[key] || (acc[key] = [])).push(item);
+      return acc;
+    }, {});
+
+    return `
+      <section class="zone-card hero programs-hero">
+        <div class="section-head">
+          <p class="eyebrow">PROJECTS</p>
+          <h1 class="display-title">Project landing.</h1>
+          <p class="lede">A dedicated page for all project entries. Each project now has a landing card, a detail route and a foundation for a future RL surface.</p>
+          <div class="button-row">
+            <a class="button button--primary" href="./work.html">Work</a>
+            <a class="button button--secondary" href="./research.html">Research</a>
+            <a class="button button--secondary" href="./archive.html">Archive</a>
+          </div>
+        </div>
+      </section>
+      <section class="stack">
+        ${Object.entries(grouped)
+          .map(
+            ([group, items]) => `
+              <section class="zone-card hero">
+                <div class="section-head">
+                  <p class="eyebrow">PROJECT GROUP</p>
+                  <h2>${esc(group)}</h2>
+                  <p class="lede">${esc(items.length)} project${items.length > 1 ? "s" : ""}.</p>
+                </div>
+                <div class="card-grid card-grid--two projects-grid">
+                  ${items.map(projectLandingCard).join("")}
+                </div>
+              </section>
+            `,
+          )
+          .join("")}
+      </section>
+    `;
+  };
+  const renderProjectLine = () => {
+    const id = new URLSearchParams(window.location.search).get("id");
+    const item = id ? entityById(id) : null;
+    if (!item || item.kind !== "project") {
+      return `
+        <section class="zone-card hero">
+          <div class="section-head">
+            <p class="eyebrow">PROJECT RL</p>
+            <h1 class="display-title">Project line not found.</h1>
+            <p class="lede">Open a project from the landing page to access its RL surface.</p>
+            <div class="button-row">
+              <a class="button button--primary" href="./projects.html">Projects</a>
+              <a class="button button--secondary" href="./work.html">Work</a>
+            </div>
+          </div>
+        </section>
+      `;
+    }
+
+    return `
+      <section class="zone-card hero">
+        <div class="section-head">
+          <p class="eyebrow">PROJECT RL</p>
+          <h1 class="display-title">${esc(item.title)}</h1>
+          <p class="lede">${esc(item.summary || item.description || "")}</p>
+          <div class="button-row">
+            <a class="button button--primary" href="./project.html?id=${encodeURIComponent(item.id)}">Detail page</a>
+            <a class="button button--secondary" href="./projects.html">Projects</a>
+            <a class="button button--secondary" href="./archive.html">Archive</a>
+          </div>
+        </div>
+        <div class="stat-grid project-line-grid">
+          <article class="stat-card">
+            <p class="card__meta">Category</p>
+            <strong>${esc(item.category || item.type || "Project")}</strong>
+            <span>${esc(item.type || "Project entry")}</span>
+          </article>
+          <article class="stat-card">
+            <p class="card__meta">Program</p>
+            <strong>${esc(item.program || "Electronic Artefacts")}</strong>
+            <span>Publishing and system context.</span>
+          </article>
+          <article class="stat-card">
+            <p class="card__meta">Era</p>
+            <strong>${esc(item.temporality?.era || "foundation")}</strong>
+            <span>Temporal placement in the catalogue.</span>
+          </article>
+        </div>
+      </section>
+      <section class="detail-grid">
+        ${metadataPanel(item)}
+        ${relationsPanel(item)}
+        ${timelinePanel(item)}
+        ${activityPanel(item)}
+        ${researchPanel(item)}
+        ${dependenciesPanel(item)}
+        ${tagsPanel(item)}
+        ${relatedEntriesPanel(item)}
+      </section>
+    `;
+  };
   const renderWork = () => workTaxonomy() + catalogSectionWork();
   const renderResearch = () => researchFields() + researchPrograms() + researchNotes();
+  const renderProgramsPage = () => renderPrograms();
+  const renderProjectsPage = () => renderProjects();
   const renderArchive = () => archiveTaxonomy() + archiveLibrary();
   const renderAbout = () => aboutMap() + aboutNetwork();
   const renderContact = () => contactLinks();
@@ -1429,10 +1722,18 @@
       "work-catalog": catalogSectionWork,
       "cross-navigation": renderCrossNavigation,
     },
+    projects: {
+      "projects-page": renderProjectsPage,
+      "cross-navigation": renderCrossNavigation,
+    },
     research: {
       "research-fields": researchFields,
       "research-programs": researchPrograms,
       "research-notes": researchNotes,
+      "cross-navigation": renderCrossNavigation,
+    },
+    programs: {
+      "programs-page": renderProgramsPage,
       "cross-navigation": renderCrossNavigation,
     },
     archive: {
@@ -1455,6 +1756,10 @@
     },
     detail: {
       "entity-detail": renderDetailPage,
+      "cross-navigation": renderCrossNavigation,
+    },
+    "project-rl": {
+      "project-rl-page": renderProjectLine,
       "cross-navigation": renderCrossNavigation,
     },
   };
@@ -1555,6 +1860,14 @@
       const id = new URLSearchParams(window.location.search).get("id");
       const entry = id ? entityById(id) || collectionById(id) : null;
       if (entry) document.title = `${entry.title} - Electronic Artefacts`;
+    } else if (current === "project-rl") {
+      const id = new URLSearchParams(window.location.search).get("id");
+      const entry = id ? entityById(id) : null;
+      if (entry) document.title = `${entry.title} RL - Electronic Artefacts`;
+    } else if (current === "programs") {
+      document.title = "Programs - Electronic Artefacts";
+    } else if (current === "projects") {
+      document.title = "Projects - Electronic Artefacts";
     } else if (current === "search") {
       document.title = "Search - Electronic Artefacts";
     }
