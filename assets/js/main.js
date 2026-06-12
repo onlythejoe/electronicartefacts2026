@@ -261,8 +261,8 @@
     </article>
   `;
 
-  const taxonomyPanel = (scope, title, description, groups) => `
-    <section class="zone-card hero taxonomy-panel" data-filter-scope="${esc(scope)}">
+  const taxonomyPanel = (scope, title, description, groups, extraClass = "") => `
+    <section class="zone-card hero taxonomy-panel ${esc(extraClass)}" data-filter-scope="${esc(scope)}">
       <div class="section-head">
         <p class="eyebrow">${esc(title)}</p>
         <h2>${esc(description.heading)}</h2>
@@ -272,9 +272,13 @@
         ${groups
           .map(
             (group) => `
-              <div class="taxonomy-column">
+              <div class="taxonomy-column${group.options.length > 6 ? " taxonomy-column--scroll" : ""}">
                 <p class="card__meta">${esc(group.label)}</p>
-                <div class="pill-cloud" data-filter-group="${esc(group.key)}">
+                <div
+                  class="pill-cloud taxonomy-pill-row"
+                  data-filter-group="${esc(group.key)}"
+                  style="flex-wrap:nowrap;overflow-x:auto;overflow-y:hidden;scrollbar-width:thin;-webkit-overflow-scrolling:touch;"
+                >
                   ${group.options
                     .map(
                       (option) => `
@@ -703,6 +707,7 @@
           })),
         },
       ],
+      "taxonomy-panel--archive",
     );
 
   const archiveLibrary = () => {

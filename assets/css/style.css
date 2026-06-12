@@ -325,6 +325,7 @@ strong {
 .section-head h2 + .lede,
 .section-head h3 + .lede {
   margin-top: 0.15rem;
+  margin-bottom: 0.55rem;
   max-width: 48rem;
 }
 
@@ -584,6 +585,7 @@ strong {
 
 .cross-nav-grid {
   grid-template-columns: repeat(6, minmax(0, 1fr));
+  margin-top: 0.85rem;
 }
 
 .cross-nav-card {
@@ -712,6 +714,7 @@ strong {
   display: grid;
   gap: 1rem;
   grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: start;
 }
 
 .taxonomy-column {
@@ -722,6 +725,46 @@ strong {
   border: 1px solid var(--border);
   border-radius: var(--radius-lg);
   background: rgba(255, 255, 255, 0.014);
+}
+
+.taxonomy-column .pill-cloud {
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding-bottom: 0.25rem;
+  margin-right: -0.25rem;
+  scrollbar-width: thin;
+  -webkit-overflow-scrolling: touch;
+}
+
+.taxonomy-column .pill-cloud::-webkit-scrollbar {
+  height: 0.35rem;
+}
+
+.taxonomy-column .pill-cloud::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.16);
+  border-radius: 999px;
+}
+
+.taxonomy-column .filter-chip {
+  flex: 0 0 auto;
+}
+
+.taxonomy-column--scroll {
+  align-content: start;
+}
+
+.taxonomy-panel--archive .taxonomy-grid {
+  display: block;
+  column-count: 2;
+  column-gap: 1rem;
+}
+
+.taxonomy-panel--archive .taxonomy-column {
+  break-inside: avoid;
+  display: grid;
+  width: 100%;
+  margin: 0 0 1rem;
 }
 
 .taxonomy-column .card__meta {
