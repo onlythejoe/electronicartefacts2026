@@ -4,11 +4,8 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="color-scheme" content="dark" />
-    <meta
-      name="description"
-      content="Electronic Artefacts archive page: audio, visual, documents, prototypes and drafts."
-    />
-    <title>Archive - Electronic Artefacts</title>
+    <meta name="description" content="Electronic Artefacts collection entry." />
+    <title>Collection - Electronic Artefacts</title>
     <link rel="icon" href="data:," />
     <link rel="stylesheet" href="./assets/css/style.css" />
     <script src="./assets/js/data/taxonomies.js" defer></script>
@@ -21,17 +18,13 @@
     <script src="./assets/js/catalog.js" defer></script>
     <script src="./assets/js/main.js" defer></script>
   </head>
-  <body data-page="archive">
+  <body data-page="detail" data-detail-kind="collection">
     <a class="skip-link" href="#main">Aller au contenu principal</a>
     <header data-include="header"></header>
-
     <main id="main" class="site-main">
-      <div data-include="widgets/hero/archive.html"></div>
-      <section data-render="archive-taxonomy"></section>
-      <section data-render="archive-library"></section>
+      <section data-render="entity-detail"></section>
       <section data-render="cross-navigation"></section>
     </main>
-
     <footer data-include="footer"></footer>
   </body>
 </html>

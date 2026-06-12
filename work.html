@@ -11,6 +11,14 @@
     <title>Work - Electronic Artefacts</title>
     <link rel="icon" href="data:," />
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <script src="./assets/js/data/taxonomies.js" defer></script>
+    <script src="./assets/js/data/entities.js" defer></script>
+    <script src="./assets/js/data/relations.js" defer></script>
+    <script src="./assets/js/data/timelines.js" defer></script>
+    <script src="./assets/js/data/activity.js" defer></script>
+    <script src="./assets/js/data/collections.js" defer></script>
+    <script src="./assets/js/data/search-index.js" defer></script>
+    <script src="./assets/js/catalog.js" defer></script>
     <script src="./assets/js/main.js" defer></script>
   </head>
   <body data-page="work">
@@ -19,9 +27,9 @@
 
     <main id="main" class="site-main">
       <div data-include="widgets/hero/work.html"></div>
-      <div data-include="widgets/sections/featured-work.html"></div>
-      <div data-include="widgets/sections/work-categories.html"></div>
-      <div data-include="widgets/sections/cross-navigation.html"></div>
+      <section data-render="work-taxonomy"></section>
+      <section data-render="work-catalog"></section>
+      <section data-render="cross-navigation"></section>
     </main>
 
     <footer data-include="footer"></footer>

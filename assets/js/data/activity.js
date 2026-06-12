@@ -1,0 +1,42 @@
+window.EA_ACTIVITY = [
+  {
+    id: "activity-001",
+    type: "program_milestone",
+    title: "VASTE milestone reached",
+    entityId: "vaste",
+    date: "2026-06-12",
+    summary: "Public website and research-facing surface stabilized.",
+  },
+  {
+    id: "activity-002",
+    type: "artifact_published",
+    title: "Audio artefacts published",
+    entityId: "palimpsests",
+    date: "2026-06-12",
+    summary: "Entropy, Emergence and related audio fragments surfaced.",
+  },
+  {
+    id: "activity-003",
+    type: "research_updated",
+    title: "Research fields updated",
+    entityId: "entropy",
+    date: "2026-06-12",
+    summary: "Entropy and signal archaeology fields were expanded.",
+  },
+  {
+    id: "activity-004",
+    type: "project_created",
+    title: "Vestiges defined",
+    entityId: "vestiges",
+    date: "2026-06-12",
+    summary: "Narrative universe entered development.",
+  },
+  {
+    id: "activity-005",
+    type: "channel_updated",
+    title: "CreativeStuff.jpg observatory updated",
+    entityId: "creativestuff",
+    date: "2026-06-12",
+    summary: "Visual research references and studies expanded.",
+  },
+];

@@ -11,6 +11,14 @@
     <title>Contact - Electronic Artefacts</title>
     <link rel="icon" href="data:," />
     <link rel="stylesheet" href="./assets/css/style.css" />
+    <script src="./assets/js/data/taxonomies.js" defer></script>
+    <script src="./assets/js/data/entities.js" defer></script>
+    <script src="./assets/js/data/relations.js" defer></script>
+    <script src="./assets/js/data/timelines.js" defer></script>
+    <script src="./assets/js/data/activity.js" defer></script>
+    <script src="./assets/js/data/collections.js" defer></script>
+    <script src="./assets/js/data/search-index.js" defer></script>
+    <script src="./assets/js/catalog.js" defer></script>
     <script src="./assets/js/main.js" defer></script>
   </head>
   <body data-page="contact">
@@ -19,8 +27,8 @@
 
     <main id="main" class="site-main">
       <div data-include="widgets/hero/contact.html"></div>
-      <div data-include="widgets/network/contact-links.html"></div>
-      <div data-include="widgets/sections/cross-navigation.html"></div>
+      <section data-render="contact-links"></section>
+      <section data-render="cross-navigation"></section>
     </main>
 
     <footer data-include="footer"></footer>
