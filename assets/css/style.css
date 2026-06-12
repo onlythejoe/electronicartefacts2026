@@ -1959,11 +1959,23 @@ input:focus-visible {
     --grid-gap-y: 1rem;
     --stack-gap: 1.05rem;
     --section-stack-gap: 1.3rem;
+    --scroll-edge-fade: 0rem;
+    --scroll-rail-padding: 0rem;
   }
 
   .site-shell,
   .site-main {
     width: calc(100% - (var(--gutter) * 2));
+  }
+
+  .shell-header {
+    width: 100vw;
+    margin-inline: calc(50% - 50vw);
+    padding-inline: 0;
+  }
+
+  .brand-lockup {
+    padding-inline: var(--gutter);
   }
 
   .site-main {
@@ -1978,6 +1990,9 @@ input:focus-visible {
     overflow-x: auto;
     overflow-y: hidden;
     padding-bottom: 0.2rem;
+    padding-inline: 0;
+    margin-inline: 0;
+    width: 100%;
     scrollbar-width: thin;
     -webkit-overflow-scrolling: touch;
   }
@@ -2056,6 +2071,40 @@ input:focus-visible {
     min-height: 0;
   }
 
+  [data-entry-id="oeil-de-meg"][data-card-media="true"] {
+    min-height: auto;
+    background:
+      linear-gradient(180deg, rgba(255, 255, 255, 0.98), rgba(245, 241, 234, 0.96)),
+      rgba(255, 255, 255, 0.96);
+  }
+
+  [data-entry-id="oeil-de-meg"][data-card-media="true"]::before {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.1), rgba(243, 237, 228, 0.88));
+    opacity: 1;
+    filter: none;
+    transform: none;
+  }
+
+  [data-entry-id="oeil-de-meg"][data-card-media="true"]::after {
+    background: none;
+  }
+
+  [data-entry-id="oeil-de-meg"][data-card-media="true"] .project-card__top {
+    align-items: flex-start;
+  }
+
+  [data-entry-id="oeil-de-meg"][data-card-media="true"] .project-card__top-meta {
+    gap: 0.35rem;
+  }
+
+  [data-entry-id="oeil-de-meg"][data-card-media="true"] .project-meg-badge {
+    display: none;
+  }
+
+  [data-entry-id="oeil-de-meg"][data-card-media="true"] .card-signal {
+    width: 100%;
+  }
+
   .latests-grid .project-card--featured {
     min-height: auto;
   }
@@ -2066,11 +2115,31 @@ input:focus-visible {
 
   .work-carousel {
     margin-inline: calc(var(--gutter) * -1);
-    padding-inline: var(--gutter);
+    padding-inline: 0;
+    width: calc(100% + (var(--gutter) * 2));
   }
 
   .work-carousel__track {
     padding-bottom: 0.1rem;
+  }
+
+  .archive-rail-shell {
+    margin-inline: calc(var(--gutter) * -1);
+    padding-inline: 0;
+    width: calc(100% + (var(--gutter) * 2));
+  }
+
+  .site-nav,
+  .pill-cloud,
+  .tag-cluster,
+  .archive-rail-shell,
+  .work-carousel__track,
+  .taxonomy-column .pill-cloud,
+  .archive-card__chips .tag-cluster,
+  .language-marquee {
+    scroll-padding-inline: 0;
+    mask-image: none;
+    -webkit-mask-image: none;
   }
 
   .project-immersive {
