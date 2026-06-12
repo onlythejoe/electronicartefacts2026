@@ -56,6 +56,7 @@ window.EA_COLLECTIONS.resolve = function resolveCollectionMembers(collection, ca
   const allIds = new Set();
   const matches = [];
   const rules = collection.rules || {};
+  const asArray = (value) => (Array.isArray(value) ? value : value ? [value] : []);
   const add = (item) => {
     if (!item || !item.id || allIds.has(item.id)) return;
     allIds.add(item.id);
@@ -66,7 +67,8 @@ window.EA_COLLECTIONS.resolve = function resolveCollectionMembers(collection, ca
   flat.forEach((item) => {
     if (rules.kinds && !rules.kinds.includes(item.kind)) return;
     if (rules.tags && !(item.tags || []).some((tag) => rules.tags.includes(tag))) return;
-    if (rules.researchFields && !(item.researchField || item.relatedResearchFields || []).some((field) => rules.researchFields.includes(field))) return;
+    const researchFields = [...asArray(item.researchField), ...asArray(item.relatedResearchFields)];
+    if (rules.researchFields && !researchFields.some((field) => rules.researchFields.includes(field))) return;
     if (rules.relations && !(item.relations?.relatedTo || []).some((id) => rules.relations.includes(id)) && !(item.relations?.partOf || []).some((id) => rules.relations.includes(id))) return;
     if (rules.entityIds && !rules.entityIds.includes(item.id)) {
       if (!rules.tags && !rules.kinds && !rules.researchFields && !rules.relations) return;

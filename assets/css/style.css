@@ -615,8 +615,23 @@ strong {
   -webkit-backdrop-filter: blur(18px) saturate(125%);
 }
 
+.project-card > * {
+  position: relative;
+  z-index: 1;
+}
+
+.project-card__overlay-link {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  border-radius: inherit;
+  display: block;
+}
+
 .project-card[data-project-detail-link] {
   cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
 }
 
 .project-card[data-project-detail-link]:focus-visible {
@@ -1132,6 +1147,10 @@ strong {
   gap: 1rem;
 }
 
+.projects-stack {
+  gap: 2rem;
+}
+
 .split {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
@@ -1357,6 +1376,159 @@ strong {
   gap: 0.8rem;
 }
 
+.project-immersive {
+  display: grid;
+  gap: 1.25rem;
+  width: 100%;
+}
+
+.project-immersive__hero {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr;
+  align-items: end;
+  height: min(100svh, 72rem);
+  min-height: min(100svh, 72rem);
+  overflow: hidden;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-xl);
+  background: rgba(255, 255, 255, 0.01);
+  box-shadow: var(--shadow);
+}
+
+.project-immersive__hero-copy {
+  position: absolute;
+  left: clamp(1rem, 2vw, 2rem);
+  top: clamp(1rem, 2vw, 2rem);
+  z-index: 2;
+  width: min(32rem, calc(100vw - 2rem));
+  display: grid;
+  gap: 0.8rem;
+  align-content: end;
+  padding: clamp(1rem, 1.8vw, 1.4rem);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-lg);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.015)),
+    rgba(8, 8, 10, 0.34);
+  backdrop-filter: blur(18px) saturate(130%);
+  -webkit-backdrop-filter: blur(18px) saturate(130%);
+}
+
+.project-immersive__hero-copy .display-title {
+  max-width: 10ch;
+}
+
+.project-immersive__hero-visual {
+  width: 100%;
+  height: min(100svh, 72rem);
+  min-height: min(100svh, 72rem);
+  display: grid;
+  grid-template-columns: minmax(0, 1.35fr) minmax(0, 1fr);
+  grid-template-rows: minmax(0, 1fr) minmax(0, 1fr);
+  gap: clamp(0.6rem, 1vw, 1rem);
+  padding: 0;
+}
+
+.project-immersive__collage {
+  align-self: stretch;
+}
+
+.project-immersive__frame--lead {
+  grid-column: 1;
+  grid-row: 1 / span 2;
+  min-height: 100%;
+}
+
+.project-immersive__frame--split-a {
+  grid-column: 2;
+  grid-row: 1;
+  min-height: 100%;
+}
+
+.project-immersive__frame--split-b {
+  grid-column: 2;
+  grid-row: 2;
+  min-height: 100%;
+}
+
+.project-immersive__rail--wide {
+  width: 100%;
+  overflow-x: auto;
+  overflow-y: hidden;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  display: grid;
+  gap: 1rem;
+  padding-bottom: 0.2rem;
+}
+
+.project-immersive__rail {
+  display: grid;
+  gap: 1rem;
+}
+
+.project-immersive__frame {
+  position: relative;
+  margin: 0;
+  overflow: hidden;
+  min-height: min(84svh, 60rem);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-xl);
+  background: rgba(255, 255, 255, 0.01);
+  box-shadow: var(--shadow);
+}
+
+.project-immersive__hero-visual .project-immersive__frame {
+  min-height: 0;
+  min-width: 0;
+  height: 100%;
+}
+
+.project-immersive__frame--rail {
+  min-height: min(40svh, 28rem);
+}
+
+.project-immersive__image {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center;
+}
+
+.project-immersive__hero-visual .project-immersive__image {
+  object-position: center center;
+}
+
+.project-immersive__frame figcaption {
+  position: absolute;
+  left: 1rem;
+  bottom: 1rem;
+  max-width: min(30rem, calc(100% - 2rem));
+  padding: 0.55rem 0.72rem;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.45);
+  color: var(--text);
+  font-size: 0.8rem;
+  line-height: 1.3;
+  backdrop-filter: blur(12px);
+}
+
+.project-visual-section {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 1rem;
+  width: 100vw;
+  margin-inline: calc(50% - 50vw);
+  padding-inline: var(--gutter);
+  overflow: hidden;
+}
+
+.project-visual-section > .project-immersive {
+  grid-column: 1 / -1;
+}
+
 .project-gallery__item {
   margin: 0;
   display: grid;
@@ -1505,6 +1677,30 @@ input:focus-visible {
   .detail-grid {
     grid-template-columns: 1fr;
   }
+
+  .project-immersive__hero {
+    height: auto;
+    min-height: auto;
+  }
+
+  .project-immersive__hero-visual {
+    grid-template-columns: minmax(0, 1fr);
+    grid-template-rows: none;
+    height: auto;
+    min-height: auto;
+  }
+
+  .project-immersive__frame--lead,
+  .project-immersive__frame--split-a,
+  .project-immersive__frame--split-b {
+    grid-column: auto;
+    grid-row: auto;
+    min-height: clamp(26rem, 64svh, 42rem);
+  }
+
+  .project-immersive__rail--wide {
+    grid-template-columns: minmax(0, 1fr);
+  }
 }
 
 @media (max-width: 48rem) {
@@ -1562,6 +1758,37 @@ input:focus-visible {
     grid-template-columns: 1fr;
   }
 
+  .project-immersive__hero {
+    grid-template-columns: 1fr;
+    height: auto;
+    min-height: auto;
+  }
+
+  .project-immersive__hero-copy,
+  .project-immersive__hero-visual,
+  .project-immersive__frame {
+    min-height: 34rem;
+  }
+
+  .project-immersive__hero-visual {
+    grid-template-columns: 1fr;
+  }
+
+  .project-immersive {
+    width: 100%;
+  }
+
+  .project-immersive__frame--lead,
+  .project-immersive__frame--split-a,
+  .project-immersive__frame--split-b {
+    grid-column: auto;
+    grid-row: auto;
+  }
+
+  .project-immersive__rail--wide {
+    grid-template-columns: 1fr;
+  }
+
   .programs-hero .display-title {
     max-width: none;
   }
@@ -1608,6 +1835,14 @@ input:focus-visible {
   .button-row,
   .link-row {
     flex-direction: column;
+  }
+
+  .project-immersive__frame figcaption {
+    left: 0.75rem;
+    right: 0.75rem;
+    bottom: 0.75rem;
+    max-width: none;
+    border-radius: 1rem;
   }
 
   .button,

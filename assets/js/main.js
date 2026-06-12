@@ -259,6 +259,7 @@
 
   const projectLandingCard = (item) => `
     <article class="project-card" data-project-detail-link="${esc(item.route || `./project.html?id=${encodeURIComponent(item.id)}`)}" tabindex="0" role="link" aria-label="Open ${esc(item.title)} detail" ${cardBaseAttrs(item)}>
+      <a class="project-card__overlay-link" href="${esc(item.route || `./project.html?id=${encodeURIComponent(item.id)}`)}" aria-label="Open ${esc(item.title)} detail"></a>
       <div class="project-card__top">
         <div>
           <p class="card__meta">${esc(item.category || item.type || "PROJECT")}</p>
@@ -1270,6 +1271,50 @@
     if (item.kind !== "project") return "";
     const gallery = item.media?.gallery || [];
     const folder = projectMediaFolder(item);
+    if (item.id === "palimpsests" && gallery.length) {
+      const heroImage = gallery.find((image) => String(image.src || "").includes("palimpsests.jpg")) || gallery[0];
+      const secondaryImages = gallery.filter((image) => image !== heroImage);
+      const secondaryTop = secondaryImages[0] || heroImage;
+      const secondaryBottom = secondaryImages[1] || secondaryTop;
+      const railImages = secondaryImages.slice(2);
+      return `
+        <section class="project-immersive">
+          <div class="project-immersive__hero">
+            <div class="project-immersive__hero-copy">
+              <p class="eyebrow">PALIMPSESTS</p>
+              <h2 class="display-title">A memory dossier in images.</h2>
+              <p class="lede">A sequence of visual plates, each one treated like an archive trace rather than a thumbnail.</p>
+            </div>
+            <div class="project-immersive__hero-visual project-immersive__collage">
+              <figure class="project-immersive__frame project-immersive__frame--lead">
+                <img class="project-immersive__image" src="${esc(heroImage.src)}" alt="${esc(heroImage.alt || item.title)}" />
+                ${heroImage.caption ? `<figcaption>${esc(heroImage.caption)}</figcaption>` : ""}
+              </figure>
+              <figure class="project-immersive__frame project-immersive__frame--split-a">
+                <img class="project-immersive__image" src="${esc(secondaryTop.src)}" alt="${esc(secondaryTop.alt || item.title)}" />
+                ${secondaryTop.caption ? `<figcaption>${esc(secondaryTop.caption)}</figcaption>` : ""}
+              </figure>
+              <figure class="project-immersive__frame project-immersive__frame--split-b">
+                <img class="project-immersive__image" src="${esc(secondaryBottom.src)}" alt="${esc(secondaryBottom.alt || item.title)}" />
+                ${secondaryBottom.caption ? `<figcaption>${esc(secondaryBottom.caption)}</figcaption>` : ""}
+              </figure>
+            </div>
+          </div>
+          <div class="project-immersive__rail project-immersive__rail--wide">
+            ${[heroImage, ...railImages]
+              .map(
+                (image, index) => `
+                  <figure class="project-immersive__frame project-immersive__frame--rail project-immersive__rail-item--${index + 1}">
+                    <img class="project-immersive__image" src="${esc(image.src)}" alt="${esc(image.alt || item.title)}" />
+                    ${image.caption ? `<figcaption>${esc(image.caption)}</figcaption>` : ""}
+                  </figure>
+                `,
+              )
+              .join("")}
+          </div>
+        </section>
+      `;
+    }
     return panelShell(
       "Local dossier",
       "Project-specific image folder.",
@@ -1298,6 +1343,139 @@
         </div>
       `,
     );
+  };
+
+  const palimpsestsDossierPanels = (item) => {
+    if (item.id !== "palimpsests") return "";
+    const structure = item.orethStructure || {};
+    const cycles = structure.cycles || [];
+    const acts = item.acts || [];
+    return [
+      panelShell(
+        "Identification",
+        "Canonical project dossier v0.2.",
+        metadataList([
+          { label: "Title", value: item.title },
+          { label: "Type", value: item.type },
+          { label: "Medium", value: (item.medium || []).join(", ") },
+          { label: "Artist", value: "ORETH" },
+          { label: "Label", value: "Electronic Artefacts" },
+          { label: "Status", value: catalog.taxonomies?.statuses?.[item.status]?.label || item.status },
+          { label: "Classification", value: "Album, Music Project, Narrative Work, Concept Album" },
+        ]),
+      ),
+      panelShell(
+        "Core Idea",
+        null,
+        `<div class="stack">
+          <article class="panel panel--soft">
+            <p class="card__copy">${esc(item.coreIdea || item.description || item.summary || "")}</p>
+          </article>
+          <article class="panel panel--soft">
+            <p class="card__meta">Central question</p>
+            <h3 class="card__title">${esc(item.centralQuestion || "")}</h3>
+          </article>
+        </div>`,
+      ),
+      panelShell(
+        "Theme",
+        null,
+        `<div class="stack">
+          <article class="panel panel--soft">
+            <p class="card__meta">Primary theme</p>
+            <h3 class="card__title">${esc(item.theme || "Heritage")}</h3>
+          </article>
+          ${item.subThemes?.length ? `<div class="tag-cluster">${item.subThemes.map((theme) => chip(theme)).join("")}</div>` : ""}
+        </div>`,
+      ),
+      panelShell(
+        "Origin of the Title",
+        null,
+        `<p class="card__copy">${esc(item.originOfTitle || "")}</p>`,
+      ),
+      panelShell(
+        "ORETH Structure",
+        structure.note || null,
+        `
+          <div class="project-architecture__grid">
+            <article class="panel panel--soft">
+              <p class="card__meta">Cycles</p>
+              <h3 class="card__title">${esc(cycles.length.toString())}</h3>
+              <p class="card__copy">Five letters define the long structure of ORETH.</p>
+            </article>
+            <article class="panel panel--soft">
+              <p class="card__meta">Current material</p>
+              <h3 class="card__title">${esc((structure.currentMaterial || []).length.toString())}</h3>
+              <p class="card__copy">The currently identified material remains open-ended.</p>
+            </article>
+          </div>
+          <div class="tag-cluster">
+            ${cycles.map((cycle) => chip(`${cycle.letter} · ${cycle.title}`)).join("")}
+          </div>
+          ${(structure.currentMaterial || []).length ? `<div class="tag-cluster">${structure.currentMaterial.map((item) => chip(item)).join("")}</div>` : ""}
+        `,
+      ),
+      panelShell(
+        "Acts",
+        null,
+        `<div class="stack">
+          ${acts
+            .map(
+              (act) => `
+                <article class="panel panel--soft">
+                  <p class="card__meta">${esc(act.title)}</p>
+                  <h3 class="card__title">${esc(act.question)}</h3>
+                  <p class="card__copy">${esc((act.themes || []).join(" · "))}</p>
+                  ${act.artefacts?.length ? `<div class="tag-cluster">${act.artefacts.map((artefact) => chip(artefact)).join("")}</div>` : ""}
+                </article>
+              `,
+            )
+            .join("")}
+        </div>`,
+      ),
+      panelShell(
+        "Language",
+        null,
+        `<div class="project-architecture__grid">
+          <article class="panel panel--soft">
+            <p class="card__meta">Musical language</p>
+            <p class="card__copy">${esc((item.musicalLanguage || []).join(", "))}</p>
+          </article>
+          <article class="panel panel--soft">
+            <p class="card__meta">Visual language</p>
+            <p class="card__copy">${esc((item.visualLanguage || []).join(", "))}</p>
+          </article>
+          <article class="panel panel--soft">
+            <p class="card__meta">Textures</p>
+            <p class="card__copy">${esc((item.textures || []).join(", "))}</p>
+          </article>
+          <article class="panel panel--soft">
+            <p class="card__meta">Symbols</p>
+            <p class="card__copy">${esc((item.symbols || []).join(", "))}</p>
+          </article>
+        </div>`,
+      ),
+      panelShell(
+        "Interpretations",
+        null,
+        `<div class="stack">
+          ${(item.narrativeInterpretations || [])
+            .map(
+              (interpretation) => `
+                <article class="panel panel--soft">
+                  <p class="card__copy">${esc(interpretation)}</p>
+                </article>
+              `,
+            )
+            .join("")}
+        </div>`,
+      ),
+      panelShell(
+        "Autonomy",
+        "Important",
+        `<p class="card__copy">Palimpsests is autonomous. It is not defined as a sub-part of Vestiges. It exists as an independent project inside the Electronic Artefacts ecosystem, with future relations only when explicitly defined.</p>`,
+      ),
+    ].join("");
   };
 
   const collectionPanel = (item) => {
@@ -1356,7 +1534,12 @@
 
   const projectPanels = (item) => {
     if (item.kind !== "project") return "";
-    return [projectArchitecturePanel(item), projectGalleryPanel(item)].filter(Boolean).join("");
+    return [projectGalleryPanel(item)].filter(Boolean).join("");
+  };
+
+  const projectSpecificPanels = (item) => {
+    if (item.kind !== "project") return "";
+    return [palimpsestsDossierPanels(item)].filter(Boolean).join("");
   };
 
   const renderDetailPage = () => {
@@ -1406,7 +1589,8 @@
           </div>
         </div>
       </section>
-      ${projectPanels(item) ? `<section class="detail-grid">${projectPanels(item)}</section>` : ""}
+      ${projectPanels(item) ? `<section class="detail-grid project-visual-section">${projectPanels(item)}</section>` : ""}
+      ${projectSpecificPanels(item) ? `<section class="detail-grid">${projectSpecificPanels(item)}</section>` : ""}
       <section class="detail-grid">
         ${knowledgePanels(item)}
       </section>
@@ -1649,7 +1833,7 @@
           </div>
         </div>
       </section>
-      <section class="stack">
+      <section class="stack projects-stack">
         ${Object.entries(grouped)
           .map(
             ([group, items]) => `
@@ -1955,7 +2139,24 @@
     Object.entries(pageRenderers).forEach(([selector, renderer]) => {
       const target = document.querySelector(`[data-render="${selector}"]`);
       if (!target) return;
-      target.innerHTML = renderer();
+      try {
+        target.innerHTML = renderer();
+      } catch (error) {
+        console.error(`Render failed for ${selector}`, error);
+        target.innerHTML = `
+          <section class="zone-card hero">
+            <div class="section-head">
+              <p class="eyebrow">RENDER ERROR</p>
+              <h1 class="display-title">${esc(selector)}</h1>
+              <p class="lede">This section failed to render. Reload the page and check the browser console for details.</p>
+            </div>
+            <div class="panel panel--soft">
+              <p class="card__meta">Error</p>
+              <p class="card__copy">${esc(error?.message || String(error))}</p>
+            </div>
+          </section>
+        `;
+      }
     });
     initFilters();
     initSearch();
