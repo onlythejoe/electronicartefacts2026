@@ -1609,7 +1609,7 @@
         <div class="section-head">
           <p class="eyebrow">LANGUAGE FIELD</p>
           <h2>Animated system wall</h2>
-          <p class="lede">A kinetic typographic field that signals how Electronic Artefacts can adapt across many cases, contexts, frameworks and operating conditions.</p>
+          <p class="lede">Electronic Artefacts can adapt across many cases, contexts, frameworks and operating conditions.</p>
         </div>
         <div class="language-field" aria-label="Programming languages animation">
           ${programRows
