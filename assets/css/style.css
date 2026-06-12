@@ -36,6 +36,8 @@ html {
 
 body {
   margin: 0;
+  padding-top: clamp(0.9rem, 1.7vw, 1.45rem);
+  padding-bottom: clamp(0.9rem, 1.7vw, 1.45rem);
   min-height: 100vh;
   color: var(--text);
   font-family: "Inter", "SF Pro Display", "SF Pro Text", "Segoe UI", system-ui, sans-serif;
@@ -130,7 +132,7 @@ strong {
 }
 
 .site-shell {
-  padding: clamp(1.15rem, 2vw, 1.5rem) 0 2rem;
+  padding: clamp(1.7rem, 2.8vw, 2.2rem) 0 2rem;
 }
 
 .site-main {
@@ -1174,6 +1176,32 @@ strong {
 
 .footer-stack strong {
   font-size: 1rem;
+}
+
+.footer-brand {
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0;
+  font-family: "Inter", "SF Pro Display", "Segoe UI", system-ui, sans-serif;
+  font-size: 0.94rem;
+  line-height: 1;
+  letter-spacing: 0.01em;
+  color: rgba(247, 244, 239, 0.99);
+}
+
+.footer-brand .brand-name-brand {
+  font-size: 0.73em;
+  font-weight: 550;
+  letter-spacing: 0;
+  margin-right: -0.01em;
+  color: rgba(247, 244, 239, 0.92);
+}
+
+.footer-brand .brand-name-accent {
+  font-size: 1em;
+  font-weight: 780;
+  letter-spacing: 0.01em;
+  color: rgba(247, 244, 239, 1);
 }
 
 .footer-stack span {
