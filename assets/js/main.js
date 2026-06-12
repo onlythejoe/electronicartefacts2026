@@ -155,6 +155,142 @@
     `;
   };
 
+  const vasteEngineMarkup = () => `
+    <div class="vast-engine" data-vast-engine aria-hidden="true">
+      <svg viewBox="0 0 500 400" role="presentation" focusable="false">
+        <circle class="vast-engine__cutout" cx="110" cy="130" r="45" />
+        <circle class="vast-engine__cutout" cx="240" cy="292" r="45" />
+        <circle class="vast-engine__cutout" cx="390" cy="175" r="45" />
+
+        <circle class="vast-engine__nucleus" cx="110" cy="130" r="10" fill="#7dd3fc" />
+        <circle class="vast-engine__nucleus" cx="240" cy="292" r="10" fill="#38bdf8" />
+        <circle class="vast-engine__nucleus" cx="390" cy="175" r="10" fill="#1d4ed8" />
+
+        <path class="vast-engine__link" d="M 145 170 L 215 255" />
+        <path class="vast-engine__link" d="M 355 205 L 275 255" />
+
+        <circle class="vast-engine__node" cx="110" cy="130" r="45" />
+        <circle class="vast-engine__node" cx="240" cy="292" r="45" />
+        <circle class="vast-engine__node" cx="390" cy="175" r="45" />
+      </svg>
+    </div>
+  `;
+
+  const startVasteEngineAnimation = () => {
+    const root = document.querySelector("[data-vast-engine]");
+    if (!root || root.dataset.vastEngineAnimated === "true") return;
+    root.dataset.vastEngineAnimated = "true";
+
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+
+    const links = [...root.querySelectorAll(".vast-engine__link")];
+    const nodes = [...root.querySelectorAll(".vast-engine__node")];
+    const cutouts = [...root.querySelectorAll(".vast-engine__cutout")];
+    const nuclei = [...root.querySelectorAll(".vast-engine__nucleus")];
+    const baseRadii = [45, 45, 45];
+    const basePositions = [
+      { x: 110, y: 130 },
+      { x: 240, y: 292 },
+      { x: 390, y: 175 },
+    ];
+
+    let phase = 0;
+
+    const animate = () => {
+      if (!document.body.contains(root)) return;
+
+      phase += 0.02;
+
+      const energies = [
+        (Math.sin(phase) + 1) * 0.5,
+        (Math.sin(phase - 1.15) + 1) * 0.5,
+        (Math.sin(phase - 2.3) + 1) * 0.5,
+      ];
+
+      links[0].style.strokeWidth = (1.5 + energies[0] * 9.5).toFixed(2);
+      links[1].style.strokeWidth = (1.5 + energies[2] * 9.5).toFixed(2);
+      links[0].style.opacity = (0.45 + energies[0] * 0.5).toFixed(2);
+      links[1].style.opacity = (0.45 + energies[2] * 0.5).toFixed(2);
+
+      nodes.forEach((node, index) => {
+        const energy = energies[index];
+        const floatX = Math.sin(phase * 0.8 + index * 1.7) * 4;
+        const floatY = Math.cos(phase * 0.9 + index * 1.3) * 6;
+
+        const x = basePositions[index].x + floatX;
+        const y = basePositions[index].y + floatY;
+        const radius = baseRadii[index] + energy * 16;
+        const stroke = 10.5 - energy * 7.5;
+
+        node.setAttribute("cx", x.toFixed(2));
+        node.setAttribute("cy", y.toFixed(2));
+        node.setAttribute("r", radius.toFixed(2));
+        node.style.strokeWidth = stroke.toFixed(2);
+        node.style.filter = `drop-shadow(0 0 ${8 + energy * 20}px rgba(255,255,255,${(0.08 + energy * 0.18).toFixed(2)}))`;
+
+        cutouts[index].setAttribute("cx", x.toFixed(2));
+        cutouts[index].setAttribute("cy", y.toFixed(2));
+        cutouts[index].setAttribute("r", (radius + 0.5).toFixed(2));
+
+        const nucleus = nuclei[index];
+        const nucleusRadius = Math.min(8 + energy * 22, Math.max(4, radius - stroke - 2));
+        const nucleusHue = [195, 202, 215][index] + energy * 24;
+        const nucleusColor = `hsl(${nucleusHue}, ${85 + energy * 15}%, ${52 + energy * 18}%)`;
+
+        nucleus.setAttribute("cx", x.toFixed(2));
+        nucleus.setAttribute("cy", y.toFixed(2));
+        nucleus.setAttribute("r", nucleusRadius.toFixed(2));
+        nucleus.setAttribute("fill", nucleusColor);
+        nucleus.style.opacity = (0.72 + energy * 0.28).toFixed(2);
+        nucleus.style.filter = `drop-shadow(0 0 ${10 + energy * 24}px ${nucleusColor})`;
+      });
+
+      const leftNode = {
+        x: parseFloat(nodes[0].getAttribute("cx")),
+        y: parseFloat(nodes[0].getAttribute("cy")),
+      };
+      const centerNode = {
+        x: parseFloat(nodes[1].getAttribute("cx")),
+        y: parseFloat(nodes[1].getAttribute("cy")),
+      };
+      const rightNode = {
+        x: parseFloat(nodes[2].getAttribute("cx")),
+        y: parseFloat(nodes[2].getAttribute("cy")),
+      };
+
+      const leftRadius = parseFloat(nodes[0].getAttribute("r"));
+      const centerRadius = parseFloat(nodes[1].getAttribute("r"));
+      const rightRadius = parseFloat(nodes[2].getAttribute("r"));
+
+      const leftDx = centerNode.x - leftNode.x;
+      const leftDy = centerNode.y - leftNode.y;
+      const leftDistance = Math.hypot(leftDx, leftDy) || 1;
+      const leftUnitX = leftDx / leftDistance;
+      const leftUnitY = leftDy / leftDistance;
+      const leftStartX = leftNode.x + leftUnitX * leftRadius;
+      const leftStartY = leftNode.y + leftUnitY * leftRadius;
+      const leftEndX = centerNode.x - leftUnitX * centerRadius;
+      const leftEndY = centerNode.y - leftUnitY * centerRadius;
+
+      const rightDx = centerNode.x - rightNode.x;
+      const rightDy = centerNode.y - rightNode.y;
+      const rightDistance = Math.hypot(rightDx, rightDy) || 1;
+      const rightUnitX = rightDx / rightDistance;
+      const rightUnitY = rightDy / rightDistance;
+      const rightStartX = rightNode.x + rightUnitX * rightRadius;
+      const rightStartY = rightNode.y + rightUnitY * rightRadius;
+      const rightEndX = centerNode.x - rightUnitX * centerRadius;
+      const rightEndY = centerNode.y - rightUnitY * centerRadius;
+
+      links[0].setAttribute("d", `M ${leftStartX} ${leftStartY} L ${leftEndX} ${leftEndY}`);
+      links[1].setAttribute("d", `M ${rightStartX} ${rightStartY} L ${rightEndX} ${rightEndY}`);
+
+      requestAnimationFrame(animate);
+    };
+
+    requestAnimationFrame(animate);
+  };
+
   const cardImageFor = (item) => {
     const direct = mediaFrom(item);
     if (direct) return direct;
@@ -534,9 +670,9 @@
       <div class="section-head">
         <p class="eyebrow">LATESTS</p>
         <h2>Current project image, then the latest concept.</h2>
-        <p class="lede">This block pulls the featured project image from the catalogue and keeps VASTE as the direct concept CTA.</p>
+        <p class="lede">A cinematic home card for the runtime layer, with the live VASTE logo animated at the center and the CTA kept minimal.</p>
       </div>
-      <div class="latests-grid">
+      <div class="latests-grid latests-grid--cinematic">
         ${(() => {
           const featured = featuredProjectForHome(["palimpsests"]);
           if (!featured) return "";
@@ -559,21 +695,45 @@
             </article>
           `;
         })()}
-        <article class="program-card latests-panel__cta" ${cardBaseAttrs(catalog.programs?.find((item) => item.id === "vaste") || {})}>
-          <div class="project-card__top">
-            <div>
+        ${(() => {
+          const vaste = catalog.programs?.find((item) => item.id === "vaste") || {};
+          const vasteAttrs = `
+            data-filter-card
+            data-entry-id="${esc(vaste.id || "vaste")}"
+            data-status="${esc(vaste.status || "")}"
+            data-category="${esc(vaste.category || vaste.type || "")}"
+            data-medium="${esc((vaste.medium || []).join(" "))}"
+            data-discipline="${esc((vaste.discipline || []).join(" "))}"
+            data-year="${esc(vaste.temporality?.creationYear || vaste.date || "")}"
+            data-entity-type="${esc(vaste.kind || "")}"
+            data-research-field="${esc(vaste.researchField || (vaste.relatedResearchFields || []).join(" "))}"
+            data-visibility="${esc(vaste.visibility || "")}"
+            data-maturity="${esc(vaste.maturity || "")}"
+            data-confidence="${esc(vaste.confidence || "")}"
+            data-kind="${esc(vaste.kind || "")}"
+          `;
+          return `
+        <article class="program-card latests-panel__cta vast-banner vast-banner--cinematic" ${vasteAttrs}>
+          <div class="vast-banner__shell">
+            <div class="vast-banner__content">
               <p class="card__meta">CONCEPT CTA</p>
-              <h3 class="card__title">VASTE</h3>
+              <h3 class="vast-banner__title">VASTE</h3>
+              <p class="vast-banner__copy">Discover the latest concept and move into the runtime layer that drives the research stack.</p>
+              <div class="pill-cloud vast-banner__chips" aria-label="VASTE attributes">
+                <span class="chip">Runtime</span>
+                <span class="chip">Graph systems</span>
+                <span class="chip">Research engine</span>
+              </div>
             </div>
-            ${statusBadge("active", "Active")}
-          </div>
-          <p class="card__copy">Discover the latest concept and move into the runtime layer that drives the research stack.</p>
-          ${summaryMetrics(catalog.programs?.find((item) => item.id === "vaste") || { statusLabel: "Active", domain: "Runtime Systems", type: "PROGRAM", medium: [], discipline: [] }, "program")}
-          <div class="button-row button-row--compact">
-            <a class="button button--primary" href="https://www.vaste.space/" target="_blank" rel="noreferrer">Discover the latest concept</a>
-            <a class="button button--secondary" href="./research.html">Research</a>
+            ${vasteEngineMarkup()}
+            <div class="button-row button-row--compact vast-banner__actions">
+              <a class="button button--primary" href="https://www.vaste.space/" target="_blank" rel="noreferrer">Discover the latest concept</a>
+              <a class="button button--secondary" href="./research.html">Research</a>
+            </div>
           </div>
         </article>
+          `;
+        })()}
       </div>
     </section>
   `;
@@ -2649,6 +2809,7 @@
     initSearch(searchState, renderPageSections);
     initCardLinks();
     initUXEnhancements(filterState);
+    startVasteEngineAnimation();
   };
 
   const load = async () => {

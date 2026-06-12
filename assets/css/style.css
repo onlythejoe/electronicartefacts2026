@@ -27,74 +27,131 @@
 }
 
 .vast-banner {
-  min-height: clamp(14rem, 20vw, 19rem);
-  padding: clamp(1.1rem, 2vw, 1.5rem);
+  min-height: clamp(24rem, 40vw, 34rem);
+  padding: clamp(1rem, 1.8vw, 1.35rem);
+  background:
+    radial-gradient(circle at 50% 24%, rgba(56, 189, 248, 0.14), transparent 26%),
+    radial-gradient(circle at 50% 74%, rgba(255, 255, 255, 0.04), transparent 24%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.012)),
+    rgba(255, 255, 255, 0.016);
 }
 
 .vast-banner::after {
   content: "";
   position: absolute;
-  inset: 1rem;
-  border-radius: calc(var(--radius-xl) - 0.4rem);
+  inset: 0;
+  border-radius: inherit;
   background:
-    radial-gradient(circle at 50% 50%, rgba(233, 224, 213, 0.15), transparent 34%),
-    radial-gradient(circle at 50% 40%, rgba(255, 255, 255, 0.12), transparent 24%),
-    linear-gradient(135deg, rgba(255, 255, 255, 0.045), rgba(86, 108, 147, 0.08) 42%, rgba(255, 255, 255, 0.03));
-  opacity: 0.9;
-  transition:
-    opacity 220ms ease,
-    transform 220ms ease,
-    filter 220ms ease;
+    linear-gradient(135deg, rgba(255, 255, 255, 0.055), transparent 38%),
+    radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.06), transparent 42%);
+  opacity: 0.88;
   pointer-events: none;
+}
+
+.vast-banner__shell {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-rows: auto minmax(12rem, 1fr) auto;
+  gap: 1rem;
+  min-height: calc(100% - 0.1rem);
+}
+
+.vast-banner__content {
+  display: grid;
+  gap: 0.5rem;
+  max-width: 20rem;
+}
+
+.vast-banner__title {
+  font-size: clamp(2.2rem, 4.8vw, 4.4rem);
+  line-height: 0.93;
+  letter-spacing: -0.07em;
+  text-wrap: balance;
+}
+
+.vast-banner__copy {
+  max-width: 32rem;
+  color: var(--muted);
+  font-size: clamp(0.98rem, 1.2vw, 1.05rem);
+  line-height: 1.6;
+}
+
+.vast-banner__chips {
+  margin-top: 0.15rem;
+}
+
+.vast-banner__chips .chip {
+  border-color: rgba(255, 255, 255, 0.1);
+  background: rgba(255, 255, 255, 0.03);
+  color: rgba(245, 243, 238, 0.84);
+}
+
+.vast-engine {
+  position: relative;
+  display: grid;
+  place-items: center;
+  min-height: clamp(14rem, 20vw, 19rem);
+  margin-inline: auto;
+  width: min(100%, 36rem);
+  filter: drop-shadow(0 0 18px rgba(255, 255, 255, 0.1));
+}
+
+.vast-engine svg {
+  width: 100%;
+  height: 100%;
+  overflow: visible;
+}
+
+.vast-engine__link {
+  fill: none;
+  stroke: rgba(255, 255, 255, 0.9);
+  stroke-linecap: butt;
+  stroke-linejoin: miter;
+  stroke-width: 2.5;
+  vector-effect: non-scaling-stroke;
+  opacity: 0.8;
+  will-change: stroke-width;
+}
+
+.vast-engine__cutout {
+  fill: #000;
+  stroke: none;
+  pointer-events: none;
+}
+
+.vast-engine__nucleus {
+  stroke: none;
+  pointer-events: none;
+  mix-blend-mode: screen;
+  will-change: r, opacity;
+  transform-box: fill-box;
+  transform-origin: center;
+}
+
+.vast-engine__node {
+  fill: transparent;
+  stroke: rgba(255, 255, 255, 0.94);
+  stroke-width: 2.5;
+  vector-effect: non-scaling-stroke;
+  transform-box: fill-box;
+  transform-origin: center;
+  transition: filter 220ms ease;
+  will-change: stroke-width;
+}
+
+.vast-banner:hover .vast-engine__node,
+.vast-banner:focus-within .vast-engine__node {
+  filter: drop-shadow(0 0 10px rgba(255, 255, 255, 0.35));
+}
+
+.vast-banner__actions {
+  justify-content: flex-start;
 }
 
 .vast-banner:hover::after,
 .vast-banner:focus-within::after {
   opacity: 1;
-  transform: scale(1.01);
-  filter: saturate(115%);
-}
-
-.vast-banner__link {
-  position: relative;
-  z-index: 1;
-  display: grid;
-  place-items: center;
-  gap: 0.75rem;
-  min-height: clamp(12rem, 18vw, 16rem);
-  padding: clamp(1.6rem, 3vw, 2.4rem);
-  text-align: center;
-}
-
-.vast-banner__eyebrow {
-  color: var(--accent);
-  font-size: 0.72rem;
-  font-weight: 800;
-  letter-spacing: 0.22em;
-  text-transform: uppercase;
-}
-
-.vast-banner__title {
-  font-size: clamp(2rem, 5vw, 4.2rem);
-  line-height: 0.95;
-  letter-spacing: -0.06em;
-  text-wrap: balance;
-}
-
-.vast-banner__copy {
-  max-width: 38rem;
-  color: var(--muted);
-  font-size: clamp(0.98rem, 1.35vw, 1.1rem);
-  line-height: 1.6;
-}
-
-.vast-banner__cta {
-  margin-top: 0.25rem;
-}
-
-.vast-banner:hover .vast-banner__cta,
-.vast-banner:focus-within .vast-banner__cta {
-  transform: translateY(-1px);
 }
 
 .channel-card {
@@ -2113,6 +2170,19 @@ input:focus-visible {
     min-height: auto;
   }
 
+  .vast-banner {
+    min-height: auto;
+  }
+
+  .vast-banner__shell {
+    grid-template-rows: auto auto auto;
+  }
+
+  .vast-engine {
+    min-height: clamp(11rem, 52vw, 16rem);
+    width: min(100%, 28rem);
+  }
+
   .work-carousel {
     margin-inline: calc(var(--gutter) * -1);
     padding-inline: 0;
@@ -2266,6 +2336,15 @@ input:focus-visible {
 
   .metric-pill em {
     display: none;
+  }
+
+  .vast-banner__actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .vast-banner__actions .button {
+    width: 100%;
   }
 
   .command-fab {
