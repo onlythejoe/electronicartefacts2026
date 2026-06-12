@@ -1,0 +1,282 @@
+.site-shell,
+.site-main {
+  width: calc(100% - (var(--gutter) * 2));
+  max-width: none;
+  margin: 0 auto;
+}
+
+.site-shell {
+  padding: clamp(1.7rem, 2.8vw, 2.2rem) 0 2rem;
+}
+
+.site-main {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: 1rem;
+  padding: clamp(1.05rem, 1.8vw, 1.45rem) 0 1.75rem;
+}
+
+.shell-header,
+.shell-footer {
+  width: calc(100% - (var(--gutter) * 2));
+  max-width: none;
+  margin: 0 auto;
+  padding: clamp(1.15rem, 2vw, 1.5rem);
+}
+
+.shell-header {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.55fr);
+  gap: 1rem;
+  align-items: center;
+}
+
+.brand-lockup {
+  display: inline-flex;
+  align-items: flex-start;
+  gap: 0;
+  min-width: 0;
+}
+
+.brand-text {
+  display: grid;
+  gap: 0.2rem;
+  min-width: 0;
+  text-align: left;
+}
+
+.site-nav {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+  gap: 0.5rem;
+}
+
+.hero {
+  padding: clamp(1.2rem, 2.8vw, 2rem);
+}
+
+.hero-layout {
+  display: grid;
+  grid-template-columns: minmax(0, 1.45fr) minmax(16rem, 0.82fr);
+  gap: 1rem;
+  align-items: stretch;
+}
+
+.hero-copy {
+  display: grid;
+  gap: 1rem;
+  align-content: start;
+}
+
+.hero-aside {
+  display: grid;
+  gap: 0.85rem;
+  align-content: start;
+}
+
+.button-row,
+.link-row,
+.pill-cloud,
+.tag-cluster {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  min-width: 0;
+  max-width: 100%;
+}
+
+.section-head {
+  display: grid;
+  gap: 0.45rem;
+}
+
+.detail-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  column-gap: var(--grid-gap-x);
+  row-gap: var(--grid-gap-y);
+}
+
+.card-grid {
+  display: grid;
+  column-gap: var(--grid-gap-x);
+  row-gap: var(--grid-gap-y);
+}
+
+.card-grid--two {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.card-grid--three {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.archive-rail-shell {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  min-width: 0;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding-bottom: 0.3rem;
+  scrollbar-width: thin;
+  -webkit-overflow-scrolling: touch;
+}
+
+.archive-rail-shell::-webkit-scrollbar {
+  height: 0.4rem;
+}
+
+.archive-rail-shell::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.16);
+  border-radius: 999px;
+}
+
+.archive-rail {
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 1rem;
+  width: max-content;
+  min-width: 100%;
+}
+
+.archive-section {
+  width: 100%;
+  min-width: 0;
+}
+
+.archive-rail > .archive-card {
+  flex: 0 0 clamp(18rem, 28vw, 24rem);
+}
+
+.project-grid,
+.stat-grid,
+.cross-nav-grid,
+.archive-grid,
+.network-grid,
+.contact-grid,
+.taxonomy-grid,
+.graph-columns,
+.split {
+  display: grid;
+  column-gap: var(--grid-gap-x);
+  row-gap: var(--grid-gap-y);
+}
+
+.project-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.stat-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.cross-nav-grid {
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  margin-top: 0.85rem;
+}
+
+.taxonomy-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: start;
+}
+
+.graph-columns {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.split {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.archive-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.network-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.contact-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.list,
+.stack,
+.catalog-stack,
+.relationship-graph,
+.taxonomy-panel,
+.footer-stack {
+  display: grid;
+}
+
+.list {
+  gap: 0.55rem;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.stack,
+.relationship-graph {
+  gap: var(--stack-gap);
+  min-width: 0;
+}
+
+.catalog-stack,
+.projects-stack {
+  gap: var(--section-stack-gap);
+}
+
+.taxonomy-panel {
+  gap: 1.15rem;
+}
+
+.stack > *,
+.catalog-stack > *,
+.projects-stack > * {
+  min-width: 0;
+}
+
+.knowledge-panel {
+  align-content: start;
+}
+
+.knowledge-panel > .stack,
+.knowledge-panel .stack {
+  justify-items: start;
+}
+
+.knowledge-panel > .stack > .panel,
+.knowledge-panel .stack > .panel {
+  width: fit-content;
+  max-width: min(100%, 42rem);
+  justify-self: start;
+}
+
+.footer-links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.55rem;
+  margin-top: 0.65rem;
+}
+
+.footer-stack {
+  gap: 0.35rem;
+  width: fit-content;
+  max-width: 100%;
+}
+
+.shell-footer {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.footer-stack--right {
+  justify-items: end;
+  text-align: right;
+}

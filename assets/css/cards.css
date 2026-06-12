@@ -1,0 +1,269 @@
+.zone-card,
+.panel,
+.stat-card,
+.project-card,
+.cross-nav-card,
+.archive-card,
+.program-card,
+.catalog-group {
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+  min-width: 0;
+  width: 100%;
+  border: 1px solid var(--border);
+  border-radius: calc(var(--radius-lg) - 0.05rem);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.015) 38%, rgba(255, 255, 255, 0.012)),
+    rgba(255, 255, 255, 0.018);
+  box-shadow: var(--shadow-soft);
+  backdrop-filter: blur(18px) saturate(125%);
+  -webkit-backdrop-filter: blur(18px) saturate(125%);
+}
+
+.zone-card {
+  border-radius: var(--radius-xl);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.03), rgba(255, 255, 255, 0.015)),
+    var(--surface);
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(22px) saturate(130%);
+  -webkit-backdrop-filter: blur(22px) saturate(130%);
+}
+
+.zone-card[data-zone-index] {
+  animation: fade-up 520ms ease both;
+  animation-delay: calc((var(--zone-index, 1) - 1) * 70ms);
+}
+
+.zone-card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.045), transparent 44%);
+  pointer-events: none;
+}
+
+.zone-card:hover::before,
+.zone-card:focus-within::before {
+  opacity: 0.45;
+}
+
+.zone-card > *,
+.project-card > *,
+.card-link-surface > * {
+  position: relative;
+  z-index: 1;
+}
+
+.panel,
+.stat-card,
+.project-card,
+.cross-nav-card,
+.archive-card,
+.program-card,
+.catalog-group {
+  display: grid;
+  gap: var(--card-gap);
+  min-height: 100%;
+  padding: var(--card-padding);
+}
+
+.panel--soft {
+  background: rgba(255, 255, 255, 0.014);
+}
+
+.panel strong {
+  font-weight: 800;
+}
+
+.panel > .link-row,
+.stat-card > .link-row,
+.project-card > .link-row,
+.program-card > .link-row,
+.archive-card > .link-row {
+  margin-top: auto;
+  padding-top: 0.25rem;
+}
+
+.program-card {
+  border-color: rgba(228, 213, 196, 0.16);
+}
+
+.archive-card {
+  gap: 0.8rem;
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.project-card,
+.archive-card,
+.program-card {
+  align-content: start;
+  grid-auto-rows: min-content;
+}
+
+.project-card__overlay-link {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  border-radius: inherit;
+  display: block;
+}
+
+.project-card[data-project-detail-link] {
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: manipulation;
+}
+
+.project-card[data-project-detail-link]:focus-visible {
+  outline: 2px solid rgba(228, 213, 196, 0.95);
+  outline-offset: 3px;
+}
+
+.project-card__top,
+.archive-card__header {
+  display: flex;
+  align-items: start;
+  justify-content: space-between;
+  gap: 1rem;
+  padding-bottom: 0.2rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.065);
+}
+
+.archive-card__header {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 0.85rem;
+}
+
+.project-card__top > div,
+.archive-card__identity,
+.project-card__meta {
+  min-width: 0;
+}
+
+.archive-card__identity {
+  display: grid;
+  gap: 0.32rem;
+}
+
+.project-card__meta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem;
+  max-width: 100%;
+}
+
+.project-card > .tag-cluster,
+.project-card > .metadata-panel,
+.project-card > .relation-list,
+.project-card > .link-row,
+.program-card > .tag-cluster,
+.program-card > .metadata-panel,
+.program-card > .relation-list,
+.program-card > .link-row,
+.archive-card > .link-row,
+.panel > .link-row,
+.stat-card > .link-row {
+  align-self: start;
+}
+
+.project-card .pill-cloud {
+  margin-top: 0.1rem;
+}
+
+.cross-nav-card {
+  align-content: start;
+  justify-content: start;
+  min-height: 8rem;
+  transition:
+    transform 180ms ease,
+    border-color 180ms ease,
+    background-color 180ms ease,
+    box-shadow 180ms ease;
+}
+
+.cross-nav-card:hover,
+.cross-nav-card:focus-visible {
+  border-color: rgba(228, 213, 196, 0.28);
+  background: rgba(255, 255, 255, 0.04);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-soft);
+}
+
+.catalog-group {
+  gap: 0.9rem;
+  padding: clamp(1rem, 1.8vw, 1.3rem);
+  background: rgba(255, 255, 255, 0.014);
+}
+
+.catalog-group .section-head {
+  gap: 0.3rem;
+}
+
+.program-card .card__copy,
+.archive-card .card__copy,
+.project-card .card__copy,
+.panel .card__copy {
+  max-width: 42rem;
+}
+
+.archive-card .card__copy {
+  max-width: 34rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.project-card .metadata-panel,
+.program-card .metadata-panel,
+.project-card .relation-list,
+.program-card .relation-list {
+  padding-top: 0.1rem;
+}
+
+.archive-card__status {
+  display: grid;
+  justify-items: end;
+  gap: 0.35rem;
+}
+
+.archive-card__status .status-badge,
+.archive-card__status .chip {
+  width: fit-content;
+}
+
+.archive-card__facts {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.55rem;
+}
+
+.archive-card__fact {
+  display: grid;
+  gap: 0.18rem;
+  min-width: 0;
+  padding: 0.65rem 0.72rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  background: rgba(255, 255, 255, 0.012);
+}
+
+.archive-card__fact--wide {
+  grid-column: 1 / -1;
+}
+
+.archive-card__chips {
+  display: grid;
+  gap: 0.3rem;
+}
+
+.archive-card__chips .tag-cluster {
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  padding-bottom: 0.2rem;
+  scrollbar-width: thin;
+}

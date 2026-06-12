@@ -1,0 +1,30 @@
+:root {
+  --bg: #030304;
+  --bg-elevated: rgba(15, 15, 18, 0.82);
+  --surface: rgba(255, 255, 255, 0.022);
+  --surface-strong: rgba(255, 255, 255, 0.045);
+  --border: rgba(255, 255, 255, 0.065);
+  --border-strong: rgba(255, 255, 255, 0.14);
+  --text: #f7f4ef;
+  --muted: rgba(247, 244, 239, 0.66);
+  --accent: #eadccf;
+  --accent-soft: rgba(234, 220, 207, 0.14);
+  --shadow: 0 28px 70px rgba(0, 0, 0, 0.42);
+  --shadow-soft: 0 16px 30px rgba(0, 0, 0, 0.24);
+  --radius-xl: 1.9rem;
+  --radius-lg: 1.35rem;
+  --radius-md: 0.95rem;
+  --radius-sm: 0.7rem;
+  --content-max: 84rem;
+  --gutter: clamp(0.9rem, 2.5vw, 1.5rem);
+  --grid-gap-x: 1rem;
+  --grid-gap-y: clamp(1.15rem, 2.2vw, 1.55rem);
+  --stack-gap: clamp(1.2rem, 2.4vw, 1.7rem);
+  --section-stack-gap: clamp(1.55rem, 3vw, 2.2rem);
+  --card-gap: 0.95rem;
+  --card-padding: clamp(1.1rem, 2.2vw, 1.55rem);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

@@ -27,7 +27,7 @@ window.EA_COLLECTIONS = [
     status: "development",
     visibility: "internal",
     summary: "Narrative universe fragments and associated research.",
-    rules: { entityIds: ["vestiges", "synthetic-mythologies"], tags: ["Vestiges"], researchFields: ["synthetic-mythologies"] },
+    rules: { entityIds: ["vestiges", "anthropic-studies"], tags: ["Vestiges"], researchFields: ["anthropic-studies"] },
   },
   {
     id: "visual-research-collection",
@@ -47,7 +47,7 @@ window.EA_COLLECTIONS = [
     status: "active",
     visibility: "public",
     summary: "Runtime, research and system studies linked to VASTE.",
-    rules: { entityIds: ["vaste", "oraclehub", "signal-archaeology"], tags: ["VASTE"], kinds: ["program", "researchField", "researchLog"] },
+    rules: { entityIds: ["vaste", "oraclehub", "runtime-theory", "systems-theory"], tags: ["VASTE"], kinds: ["program", "researchField", "researchLog"] },
   },
 ];
 
