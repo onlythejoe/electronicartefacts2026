@@ -4,7 +4,7 @@
   const filterState = new Map();
   const { esc, setYear, chunk } = window.EA_UTILS;
   const { loadIncludes } = window.EA_INCLUDES;
-  const { statusBadge, entityBadge, chip, tagRow, relationList, metadataList, linkRow, cardLinkAttrs, cardOverlayLink } =
+  const { statusBadge, entityBadge, chip, tagRow, relationList, metadataList, linkRow, metricRail, cardLinkAttrs, cardOverlayLink } =
     window.EA_UI;
   const { initFilters, initSearch, initCardLinks, initUXEnhancements, syncNavigationState, syncPageTitle } = window.EA_BEHAVIORS;
 
@@ -149,12 +149,9 @@
   const projectSignatureBubble = (item, variant = "card") => {
     if (item?.id !== "oeil-de-meg") return "";
     return `
-      <div class="project-mark-bubble project-mark-bubble--${esc(variant)}" aria-hidden="true">
-        <img class="project-mark-bubble__logo" src="./assets/media/projects/oeil-de-meg/oeil-de-meg-logo.png" alt="" loading="lazy" />
-        <span class="project-mark-bubble__coin">
-          <img class="project-mark-bubble__picto" src="./assets/media/projects/oeil-de-meg/oeil-de-meg-picto.svg" alt="" loading="lazy" />
-        </span>
-      </div>
+      <span class="project-meg-badge project-meg-badge--${esc(variant)}" aria-hidden="true">
+        <img class="project-meg-badge__picto" src="./assets/media/projects/oeil-de-meg/oeil-de-meg-picto.svg" alt="" loading="lazy" />
+      </span>
     `;
   };
 
@@ -203,63 +200,127 @@
     return `<p class="card__copy card__copy--clamp-${Math.max(1, Math.min(4, lines))}">${esc(text)}</p>`;
   };
 
+  const metricFill = (count, total) => (total > 0 ? Math.max(0.18, Math.min(1, count / total)) : 0.42);
+
+  const summaryMetrics = (item, mode = "project") => {
+    const mediumCount = (item.medium || []).length;
+    const disciplineCount = (item.discipline || []).length;
+    const galleryCount = (item.media?.gallery || []).length;
+    const relatedCount = Object.values(item.relations || {}).flat().filter(Boolean).length;
+    const layerCount = (item.architecture?.layers || []).length;
+    const signalCount = [...(item.medium || []), ...(item.discipline || [])].filter(Boolean).length;
+    const updatedYear = item.temporality?.lastUpdated ? String(item.temporality.lastUpdated).slice(0, 4) : item.temporality?.creationYear || item.date || "";
+    const statusValue = item.statusLabel || item.status || "Active";
+
+    const variants = {
+      project: [
+        { label: "STATUS", value: statusValue, note: updatedYear ? `Updated ${updatedYear}` : "", fill: 0.92, tone: "live" },
+        { label: "SIGNALS", value: `${signalCount}`, note: countLabel(signalCount, "cue"), fill: metricFill(signalCount, 8), tone: "visual" },
+        { label: "MEDIA", value: `${galleryCount}`, note: countLabel(galleryCount, "asset"), fill: metricFill(galleryCount, 12), tone: "archive" },
+      ],
+      archive: [
+        { label: "FIELD", value: item.researchField || item.category || item.type || "Archive", note: item.project || "", fill: 0.82, tone: "archive" },
+        { label: "RELATION", value: `${relatedCount}`, note: countLabel(relatedCount, "link"), fill: metricFill(relatedCount, 6), tone: "system" },
+        { label: "DATE", value: item.date || updatedYear || "—", note: item.artist || item.type || "", fill: 0.58, tone: "live" },
+      ],
+      research: [
+        { label: "FIELD", value: item.researchField || item.category || "Research", note: item.statusLabel || statusValue, fill: 0.82, tone: "research" },
+        { label: "PROJECTS", value: `${(item.relatedProjects || []).length}`, note: countLabel((item.relatedProjects || []).length, "project"), fill: metricFill((item.relatedProjects || []).length, 8), tone: "system" },
+        { label: "ARTIFACTS", value: `${(item.relatedArtefacts || []).length}`, note: countLabel((item.relatedArtefacts || []).length, "artefact"), fill: metricFill((item.relatedArtefacts || []).length, 8), tone: "archive" },
+      ],
+      person: [
+        { label: "ROLE", value: item.role || item.type || "Person", note: item.statusLabel || statusValue, fill: 0.82, tone: "surface" },
+        { label: "PROJECTS", value: `${(item.relatedProjects || []).length}`, note: countLabel((item.relatedProjects || []).length, "project"), fill: metricFill((item.relatedProjects || []).length, 8), tone: "system" },
+        { label: "LAYER", value: `${mediumCount + disciplineCount}`, note: "signals", fill: metricFill(mediumCount + disciplineCount, 10), tone: "visual" },
+      ],
+      program: [
+        { label: "STATUS", value: statusValue, note: updatedYear ? `Updated ${updatedYear}` : "", fill: 0.92, tone: "live" },
+        { label: "DOMAIN", value: item.domain || item.systemGroup || item.type || "Program", note: item.category || "", fill: 0.78, tone: "system" },
+        { label: "SIGNALS", value: `${signalCount}`, note: countLabel(signalCount, "cue"), fill: metricFill(signalCount, 8), tone: "research" },
+      ],
+    };
+
+    return metricRail(variants[mode] || variants.project, { limit: 3, compact: true });
+  };
+
+  const countLabel = (count, singular, plural = `${singular}s`) => `${count} ${count === 1 ? singular : plural}`;
+
+  const entityDateValue = (item) => {
+    const value = item?.temporality?.lastUpdated || item?.temporality?.releaseDate || item?.temporality?.creationDate || item?.date || "";
+    const parsed = Date.parse(value);
+    return Number.isFinite(parsed) ? parsed : 0;
+  };
+
+  const homeProjects = (excludeIds = []) =>
+    (catalog.projects || [])
+      .filter((item) => item.visibility !== "internal" && !excludeIds.includes(item.id))
+      .slice()
+      .sort((a, b) => entityDateValue(b) - entityDateValue(a));
+
+  const featuredProjectForHome = (excludeIds = []) => homeProjects(excludeIds).find((item) => cardImageFor(item)) || homeProjects(excludeIds)[0] || null;
+
+  const projectHeroMedia = (item) => {
+    const media = mediaFrom(item) || cardImageFor(item);
+    if (!media) return "";
+    return mediaFigureMarkup(media, item, "project-immersive__image");
+  };
+
+  const homeCardPills = (item) => {
+    if (!item) return [];
+    if (item.id === "oeil-de-meg") return ["Photography CRM", "Portfolio", "Live site", "WordPress"];
+    if (item.id === "palimpsests") return ["Album cycle", "ORETH", "Five acts", "Archive"];
+
+    const pills = [
+      item.category || item.type || item.kind || "",
+      item.statusLabel || item.status || "",
+      item.temporality?.creationYear || "",
+      item.links?.[0]?.label || item.program || "",
+    ];
+
+    return pills.filter(Boolean).slice(0, 4);
+  };
+
   const projectCard = (item) => `
-    <article class="project-card${item?.id === "oeil-de-meg" ? " project-card--signature" : ""}" ${cardBaseAttrs(item)}>
+    <article class="project-card" ${cardBaseAttrs(item)}>
       ${item.kind === "project" ? `<a class="project-card__overlay-link" href="./project.html?id=${encodeURIComponent(item.id)}" aria-label="Open ${esc(item.title)} detail"></a>` : ""}
-      ${projectSignatureBubble(item, "card")}
       <div class="project-card__top">
         <div>
           <p class="card__meta">${esc(item.type || catalog.entityTypes?.[item.kind] || "PROJECT")}</p>
           <h3 class="card__title">${esc(item.title)}</h3>
         </div>
-        ${statusBadge(item.status, item.statusLabel)}
+        <div class="project-card__top-meta">
+          ${item.id === "oeil-de-meg" ? chip("PHP") : ""}
+          ${statusBadge(item.status, item.statusLabel)}
+          ${projectSignatureBubble(item, "card")}
+        </div>
       </div>
-      ${cardCopy(item.summary, 2)}
+      ${cardCopy(item.summary, 1)}
       ${signalStrip(item)}
-      <div class="project-card__meta">
-        ${entityBadge(item.kind || "project")}
-        ${chip(`Type: ${item.type || "Project"}`)}
-        ${item.category ? chip(`Category: ${item.category}`) : ""}
-      </div>
-      ${tagRow([...(item.medium || []), ...(item.discipline || [])], { limit: 4, compact: true })}
+      ${summaryMetrics(item, "project")}
       ${metadataList([
         { label: "Artist", value: item.artist },
         { label: "Program", value: item.program },
       ])}
-      ${relationList(item.related)}
-      ${linkRow(
-        item.kind === "project" ? { label: "Detail", href: `./project.html?id=${encodeURIComponent(item.id)}` } : item.cta,
-        [
-          ...(item.kind === "project" ? [{ label: "RL", href: `./project-rl.html?id=${encodeURIComponent(item.id)}` }] : []),
-          ...(item.links || []),
-        ],
-      )}
     </article>
   `;
 
   const projectLandingCard = (item) => `
-    <article class="project-card${item?.id === "oeil-de-meg" ? " project-card--signature" : ""}" data-project-detail-link="${esc(item.route || `./project.html?id=${encodeURIComponent(item.id)}`)}" tabindex="0" role="link" aria-label="Open ${esc(item.title)} detail" ${cardBaseAttrs(item)}>
+    <article class="project-card" data-project-detail-link="${esc(item.route || `./project.html?id=${encodeURIComponent(item.id)}`)}" tabindex="0" role="link" aria-label="Open ${esc(item.title)} detail" ${cardBaseAttrs(item)}>
       <a class="project-card__overlay-link" href="${esc(item.route || `./project.html?id=${encodeURIComponent(item.id)}`)}" aria-label="Open ${esc(item.title)} detail"></a>
-      ${projectSignatureBubble(item, "card")}
       <div class="project-card__top">
         <div>
           <p class="card__meta">${esc(item.category || item.type || "PROJECT")}</p>
           <h3 class="card__title">${esc(item.title)}</h3>
         </div>
-        ${statusBadge(item.status, item.statusLabel)}
+        <div class="project-card__top-meta">
+          ${item.id === "oeil-de-meg" ? chip("PHP") : ""}
+          ${statusBadge(item.status, item.statusLabel)}
+          ${projectSignatureBubble(item, "card")}
+        </div>
       </div>
-      ${cardCopy(item.summary, 2)}
+      ${cardCopy(item.summary, 1)}
       ${signalStrip(item)}
-      <div class="project-card__meta">
-        ${entityBadge("project")}
-        ${item.program ? chip(`Program: ${item.program}`) : ""}
-        ${item.temporality?.era ? chip(`Era: ${item.temporality.era}`) : ""}
-      </div>
-      ${tagRow([...(item.medium || []), ...(item.discipline || [])], { limit: 4, compact: true })}
-      <div class="link-row">
-        <a class="tag" href="${esc(item.route || `./project.html?id=${encodeURIComponent(item.id)}`)}">Detail</a>
-        <a class="tag" href="./project-rl.html?id=${encodeURIComponent(item.id)}">RL</a>
-      </div>
+      ${tagRow(homeCardPills(item), { limit: 4, compact: true })}
     </article>
   `;
 
@@ -269,7 +330,7 @@
         <div class="archive-card__identity">
           <p class="card__meta">${esc(item.type || "ARCHIVE")}${item.category ? ` · ${esc(item.category)}` : ""}</p>
           <h3 class="card__title">${esc(item.title)}</h3>
-          ${cardCopy(item.summary, 2)}
+          ${cardCopy(item.summary, 1)}
           ${signalStrip(item)}
         </div>
         <div class="archive-card__status">
@@ -277,15 +338,8 @@
           ${item.date ? chip(`Date: ${item.date}`) : ""}
         </div>
       </div>
-      <div class="archive-card__facts">
-        ${item.researchField ? `<div class="archive-card__fact archive-card__fact--wide"><span>Research field</span><strong>${esc(item.researchField)}</strong></div>` : ""}
-        ${item.project ? `<div class="archive-card__fact"><span>Project</span><strong>${esc(item.project)}</strong></div>` : ""}
-        ${item.artist ? `<div class="archive-card__fact"><span>Artist</span><strong>${esc(item.artist)}</strong></div>` : ""}
-      </div>
-      <div class="archive-card__chips">
-      ${tagRow([...(item.medium || []), ...(item.discipline || []), ...(item.related || [])], { limit: 5, compact: true })}
-      </div>
-      ${linkRow(item.cta || null, item.links || [])}
+      ${summaryMetrics(item, "archive")}
+      ${linkRow(item.cta || item.links?.[0] || null)}
     </article>
   `;
 
@@ -299,9 +353,9 @@
         </div>
         ${statusBadge(item.status, item.statusLabel)}
       </div>
-      ${cardCopy(item.summary, 2)}
+      ${cardCopy(item.summary, 1)}
       ${signalStrip(item)}
-      ${tagRow([...(item.medium || []), ...(item.discipline || [])], { limit: 4, compact: true })}
+      ${summaryMetrics(item, "research")}
       ${metadataList([
         { label: "Projects", value: (item.relatedProjects || []).join(", ") },
         { label: "Artefacts", value: (item.relatedArtefacts || []).join(", ") },
@@ -320,14 +374,10 @@
         </div>
         ${statusBadge(item.status, item.statusLabel)}
       </div>
-      ${cardCopy(item.summary, 2)}
+      ${cardCopy(item.summary, 1)}
       ${signalStrip(item)}
-      ${tagRow([...(item.medium || []), ...(item.discipline || [])], { limit: 4, compact: true })}
-      ${metadataList([
-        { label: "Kind", value: item.kind },
-      ])}
-      ${relationList(item.related)}
-      ${linkRow(item.cta)}
+      ${summaryMetrics(item, "person")}
+      ${metadataList([{ label: "Kind", value: item.kind }])}
     </article>
   `;
 
@@ -341,16 +391,9 @@
         </div>
         ${statusBadge(item.status, item.statusLabel)}
       </div>
-      ${cardCopy(item.summary, 2)}
+      ${cardCopy(item.summary, 1)}
       ${signalStrip(item)}
-      <div class="project-card__meta">
-        ${entityBadge("program")}
-        ${item.domain ? chip(`Domain: ${item.domain}`) : ""}
-        ${item.systemGroup ? chip(`System: ${item.systemGroup}`) : ""}
-      </div>
-      ${tagRow([...(item.medium || []), ...(item.discipline || [])], { limit: 4, compact: true })}
-      ${relationList(item.related)}
-      ${linkRow(item.cta)}
+      ${summaryMetrics(item, "program")}
     </article>
   `;
 
@@ -363,15 +406,9 @@
         </div>
         ${statusBadge(item.status, item.statusLabel)}
       </div>
-      ${cardCopy(item.summary, 2)}
+      ${cardCopy(item.summary, 1)}
       ${signalStrip(item)}
-      <div class="project-card__meta">
-        ${entityBadge("channel")}
-        ${chip(`Medium: ${(item.medium || []).join(", ") || "Channel"}`)}
-      </div>
-      ${tagRow([...(item.discipline || [])], { limit: 3, compact: true })}
-      ${relationList(item.related)}
-      ${linkRow(item.cta)}
+      ${summaryMetrics(item, "program")}
     </article>
   `;
 
@@ -458,63 +495,116 @@
 
   const featuredWork = () => {
     const palimpsests = catalog.projects?.find((item) => item.id === "palimpsests");
-    const oreth = catalog.artists?.find((item) => item.id === "oreth");
-    if (!palimpsests || !oreth) return "";
+    if (!palimpsests) return "";
+    const heroMedia = projectHeroMedia(palimpsests);
     return `
       <section class="zone-card hero">
         <div class="section-head">
-          <p class="eyebrow">FEATURED WORK</p>
-          <h2>Palimpsests / ORETH</h2>
-          <p class="lede">Music through ORETH, with Palimpsests as the main project and a first run of audio artefacts.</p>
+          <p class="eyebrow">PALIMPSESTS</p>
+          <h2>Full-width visual entry for the album cycle.</h2>
+          <p class="lede">A single hero image leads directly to the dedicated page, with the release framed as the central work on the home surface.</p>
         </div>
-        <div class="project-grid">
-          ${projectCard(palimpsests)}
-          ${personCard(oreth, { href: `./entity.html?id=${encodeURIComponent(oreth.id)}`, label: `Open ${oreth.title}` })}
+        <a class="project-immersive__hero project-immersive__hero--home" href="./palimpsests.html" aria-label="Open Palimpsests project page">
+          <div class="project-immersive__hero-copy">
+            <p class="card__meta">Featured project</p>
+            <h3 class="display-title">Palimpsests</h3>
+            <p class="lede">Open the project page to read the album cycle, its five acts and the archive of related materials.</p>
+            <div class="button-row button-row--compact">
+              <span class="button button--primary">Open project</span>
+              <span class="button button--secondary">View the cycle</span>
+            </div>
+          </div>
+          <div class="project-immersive__hero-visual">
+            <figure class="project-immersive__frame project-immersive__frame--lead project-immersive__frame--home">
+              ${heroMedia || `<div class="project-immersive__image" aria-hidden="true"></div>`}
+            </figure>
+          </div>
+        </a>
+        <div class="link-row">
+          <a class="tag" href="./palimpsests.html">Palimpsests</a>
+          <a class="tag" href="./archive.html">Archive</a>
+          <a class="tag" href="./contact.html">Contact</a>
         </div>
       </section>
     `;
   };
 
   const vasteBanner = () => `
-    <section class="zone-card hero vaste-banner">
-      <a class="vast-banner__link" href="https://www.vaste.space/" target="_blank" rel="noreferrer" aria-label="Ouvrir VASTE ENGINE sur vaste.space">
-        <span class="vast-banner__eyebrow">FEATURED PROGRAM</span>
-        <strong class="vast-banner__title">VASTE ENGINE</strong>
-        <span class="vast-banner__copy">Runtime / research engine for systems, memory and public experimentation.</span>
-        <span class="button button--primary vast-banner__cta">Visit vaste.space</span>
-      </a>
+    <section class="zone-card hero latests-panel" id="latests">
+      <div class="section-head">
+        <p class="eyebrow">LATESTS</p>
+        <h2>Current project image, then the latest concept.</h2>
+        <p class="lede">This block pulls the featured project image from the catalogue and keeps VASTE as the direct concept CTA.</p>
+      </div>
+      <div class="latests-grid">
+        ${(() => {
+          const featured = featuredProjectForHome(["palimpsests"]);
+          if (!featured) return "";
+          return `
+            <article class="project-card project-card--featured" ${cardBaseAttrs(featured)} ${cardLinkAttrs(featured.route || `./project.html?id=${encodeURIComponent(featured.id)}`, `Open ${featured.title}`)}>
+              ${cardOverlayLink(featured.route || `./project.html?id=${encodeURIComponent(featured.id)}`, `Open ${featured.title}`)}
+              <div class="project-card__top">
+                <div>
+                  <p class="card__meta">${esc(featured.category || featured.type || "PROJECT")}</p>
+                  <h3 class="card__title">${esc(featured.title)}</h3>
+                </div>
+                ${statusBadge(featured.status, featured.statusLabel)}
+              </div>
+              ${cardCopy(featured.summary || featured.description, 2)}
+              ${tagRow(featured.tags || [], { limit: 4, compact: true })}
+              <div class="link-row">
+                <a class="tag" href="${esc(featured.route || `./project.html?id=${encodeURIComponent(featured.id)}`)}">Open project</a>
+                <a class="tag" href="./work.html">Work</a>
+              </div>
+            </article>
+          `;
+        })()}
+        <article class="program-card latests-panel__cta" ${cardBaseAttrs(catalog.programs?.find((item) => item.id === "vaste") || {})}>
+          <div class="project-card__top">
+            <div>
+              <p class="card__meta">CONCEPT CTA</p>
+              <h3 class="card__title">VASTE</h3>
+            </div>
+            ${statusBadge("active", "Active")}
+          </div>
+          <p class="card__copy">Discover the latest concept and move into the runtime layer that drives the research stack.</p>
+          ${summaryMetrics(catalog.programs?.find((item) => item.id === "vaste") || { statusLabel: "Active", domain: "Runtime Systems", type: "PROGRAM", medium: [], discipline: [] }, "program")}
+          <div class="button-row button-row--compact">
+            <a class="button button--primary" href="https://www.vaste.space/" target="_blank" rel="noreferrer">Discover the latest concept</a>
+            <a class="button button--secondary" href="./research.html">Research</a>
+          </div>
+        </article>
+      </div>
     </section>
   `;
 
   const featuredResearch = () => {
-    const vaste = catalog.programs?.find((item) => item.id === "vaste");
-    const fields = catalog.researchFields?.slice(0, 2) || [];
-    if (!vaste) return "";
+    const projects = homeProjects(["palimpsests"]).filter((item) => item.route || item.kind === "project");
+    if (!projects.length) return "";
     return `
       <section class="zone-card hero">
         <div class="section-head">
-          <p class="eyebrow">FEATURED RESEARCH</p>
-          <h2>VASTE and the research field</h2>
-          <p class="lede">Core program, runtime and system research. The official public link stays external.</p>
+          <p class="eyebrow">WORK</p>
+          <h2>What I do, in a carousel of dedicated projects.</h2>
+          <p class="lede">Scroll sideways to move through the project pages. Each card opens its own route and keeps the visual context intact.</p>
         </div>
-        <div class="project-grid">
-          ${programCard(vaste, { href: `./entity.html?id=${encodeURIComponent(vaste.id)}`, label: `Open ${vaste.title}` })}
-          <article class="project-card" ${cardLinkAttrs("./research.html", "Open research page")}>
-            ${cardOverlayLink("./research.html", "Open research page")}
-            <div class="project-card__top">
-              <div>
-                <p class="card__meta">Research fields</p>
-                <h3 class="card__title">Signals, memory, mythologies</h3>
-              </div>
-              ${statusBadge("research", "Lab")}
-            </div>
-            <p class="card__copy">The research page stays concise: references, notes and future branches only.</p>
-            ${tagRow((fields.length ? fields.map((field) => field.title) : catalog.schema?.mediums || []).slice(0, 4), { limit: 4, compact: true })}
-            <div class="link-row">
-              <a class="tag" href="./research.html">Research</a>
-              <a class="tag" href="./about.html">About</a>
-            </div>
-          </article>
+        <div class="work-carousel" role="list" aria-label="Dedicated projects carousel">
+          <div class="work-carousel__track">
+            ${projects
+              .slice(0, 5)
+              .map(
+                (item) => `
+                  <div class="work-carousel__item" role="listitem">
+                    ${projectLandingCard(item)}
+                  </div>
+                `,
+              )
+              .join("")}
+          </div>
+        </div>
+        <div class="link-row">
+          <a class="tag" href="./projects.html">Projects</a>
+          <a class="tag" href="./work.html">Work archive</a>
         </div>
       </section>
     `;
@@ -679,9 +769,9 @@
         ],
       },
       programs: {
-        eyebrow: "SYSTEM MONITOR",
-        title: "Program groups read like a runtime stack.",
-        copy: "Animated fields, genealogy and grouped cards make the technical layer easier to scan and compare.",
+        eyebrow: "SYSTEM REGISTRY",
+        title: "Read the stack as a compact registry.",
+        copy: "Lineage, grouping and short status cards keep the technical layer legible without overloading the page.",
         metrics: [
           { label: "Systems", value: String(catalog.programs?.length || 0), level: 88 },
           { label: "Groups", value: "04", level: 80 },
@@ -963,7 +1053,7 @@
       <div class="section-head">
         <p class="eyebrow">PROGRAMS</p>
         <h2>Programs</h2>
-        <p class="lede">VASTE anchors the stack, ARCA remains visible as the archived lineage, and ORETH plus FORGE keep the experimental branches legible.</p>
+        <p class="lede">VASTE, La Forge, VOID and OracleHub define the visible program registry and its four distinct directions.</p>
       </div>
       <div class="card-grid card-grid--three">
         ${(catalog.programs || []).map(programCard).join("")}
@@ -1553,7 +1643,7 @@
           <div class="project-immersive__hero">
             <div class="project-immersive__hero-copy">
               <p class="eyebrow">PALIMPSESTS</p>
-              <h2 class="display-title">A memory dossier in images.</h2>
+              <h2 class="display-title">A five-act album held in images.</h2>
               <p class="lede">A sequence of visual plates, each one treated like an archive trace rather than a thumbnail.</p>
             </div>
           <div class="project-immersive__hero-visual project-immersive__collage">
@@ -1619,12 +1709,48 @@
   const palimpsestsDossierPanels = (item) => {
     if (item.id !== "palimpsests") return "";
     const structure = item.orethStructure || {};
-    const cycles = structure.cycles || [];
     const acts = item.acts || [];
+    const actCount = String(acts.length || 0).padStart(2, "0");
+    const trackCount = String((structure.currentMaterial || []).length || 0).padStart(2, "0");
+    const editorialMetrics = [
+      { label: "ACTS", value: actCount, note: "five movements", fill: 0.96, tone: "research" },
+      { label: "TRACKS", value: trackCount, note: "named passages", fill: 0.9, tone: "system" },
+      { label: "FORM", value: item.type || "Album", note: item.statusLabel || "In production", fill: 0.82, tone: "visual" },
+      { label: "ARTIST", value: "ORETH", note: item.label || "Electronic Artefacts", fill: 0.72, tone: "archive" },
+    ];
+
+    const actCard = (act) => `
+      <article class="panel panel--soft">
+        <div class="project-card__top">
+          <div>
+            <p class="card__meta">${esc(act.title || "Act")}</p>
+            <h3 class="card__title">${esc(act.subtitle || "")}</h3>
+          </div>
+          ${act.mood ? chip(act.mood) : ""}
+        </div>
+        ${act.description ? `<p class="card__copy">${esc(act.description)}</p>` : ""}
+        ${act.tracks?.length ? `<div class="tag-cluster tag-cluster--compact">${act.tracks.map((track) => chip(track)).join("")}</div>` : ""}
+        ${act.keywords?.length ? tagRow(act.keywords, { limit: 4 }) : ""}
+      </article>
+    `;
+
     return [
       panelShell(
+        "Presentation",
+        "A conceptual album in five acts.",
+        `
+          <div class="stack">
+            <article class="panel panel--soft">
+              <p class="card__copy">${esc(item.description || item.summary || "")}</p>
+              <p class="card__copy">${esc(item.coreIdea || "")}</p>
+            </article>
+            ${metricRail(editorialMetrics, { limit: 4, compact: true })}
+          </div>
+        `,
+      ),
+      panelShell(
         "Identification",
-        "Canonical project dossier v0.2.",
+        null,
         metadataList([
           { label: "Title", value: item.title },
           { label: "Type", value: item.type },
@@ -1632,119 +1758,26 @@
           { label: "Artist", value: "ORETH" },
           { label: "Label", value: "Electronic Artefacts" },
           { label: "Status", value: catalog.taxonomies?.statuses?.[item.status]?.label || item.status },
-          { label: "Classification", value: "Album, Music Project, Narrative Work, Concept Album" },
+          { label: "Classification", value: "Album, Concept Work, Narrative Album" },
         ]),
       ),
       panelShell(
-        "Core Idea",
+        "Five Acts",
+        null,
+        `<div class="stack">
+          ${acts.map(actCard).join("")}
+        </div>`,
+      ),
+      panelShell(
+        "Central Thesis",
         null,
         `<div class="stack">
           <article class="panel panel--soft">
-            <p class="card__copy">${esc(item.coreIdea || item.description || item.summary || "")}</p>
+            <p class="card__copy">Nothing truly disappears. Structures transform. Memories fade. Stories are rewritten. Civilizations vanish. Yet traces remain.</p>
+            <p class="card__copy">${esc(item.originOfTitle || "")}</p>
           </article>
-          <article class="panel panel--soft">
-            <p class="card__meta">Central question</p>
-            <h3 class="card__title">${esc(item.centralQuestion || "")}</h3>
-          </article>
+          ${item.subThemes?.length ? `<div class="tag-cluster">${item.subThemes.slice(0, 8).map((theme) => chip(theme)).join("")}</div>` : ""}
         </div>`,
-      ),
-      panelShell(
-        "Theme",
-        null,
-        `<div class="stack">
-          <article class="panel panel--soft">
-            <p class="card__meta">Primary theme</p>
-            <h3 class="card__title">${esc(item.theme || "Heritage")}</h3>
-          </article>
-          ${item.subThemes?.length ? `<div class="tag-cluster">${item.subThemes.map((theme) => chip(theme)).join("")}</div>` : ""}
-        </div>`,
-      ),
-      panelShell(
-        "Origin of the Title",
-        null,
-        `<p class="card__copy">${esc(item.originOfTitle || "")}</p>`,
-      ),
-      panelShell(
-        "ORETH Structure",
-        structure.note || null,
-        `
-          <div class="project-architecture__grid">
-            <article class="panel panel--soft">
-              <p class="card__meta">Cycles</p>
-              <h3 class="card__title">${esc(cycles.length.toString())}</h3>
-              <p class="card__copy">Five letters define the long structure of ORETH.</p>
-            </article>
-            <article class="panel panel--soft">
-              <p class="card__meta">Current material</p>
-              <h3 class="card__title">${esc((structure.currentMaterial || []).length.toString())}</h3>
-              <p class="card__copy">The currently identified material remains open-ended.</p>
-            </article>
-          </div>
-          <div class="tag-cluster">
-            ${cycles.map((cycle) => chip(`${cycle.letter} · ${cycle.title}`)).join("")}
-          </div>
-          ${(structure.currentMaterial || []).length ? `<div class="tag-cluster">${structure.currentMaterial.map((item) => chip(item)).join("")}</div>` : ""}
-        `,
-      ),
-      panelShell(
-        "Acts",
-        null,
-        `<div class="stack">
-          ${acts
-            .map(
-              (act) => `
-                <article class="panel panel--soft">
-                  <p class="card__meta">${esc(act.title)}</p>
-                  <h3 class="card__title">${esc(act.question)}</h3>
-                  <p class="card__copy">${esc((act.themes || []).join(" · "))}</p>
-                  ${act.artefacts?.length ? `<div class="tag-cluster">${act.artefacts.map((artefact) => chip(artefact)).join("")}</div>` : ""}
-                </article>
-              `,
-            )
-            .join("")}
-        </div>`,
-      ),
-      panelShell(
-        "Language",
-        null,
-        `<div class="project-architecture__grid">
-          <article class="panel panel--soft">
-            <p class="card__meta">Musical language</p>
-            <p class="card__copy">${esc((item.musicalLanguage || []).join(", "))}</p>
-          </article>
-          <article class="panel panel--soft">
-            <p class="card__meta">Visual language</p>
-            <p class="card__copy">${esc((item.visualLanguage || []).join(", "))}</p>
-          </article>
-          <article class="panel panel--soft">
-            <p class="card__meta">Textures</p>
-            <p class="card__copy">${esc((item.textures || []).join(", "))}</p>
-          </article>
-          <article class="panel panel--soft">
-            <p class="card__meta">Symbols</p>
-            <p class="card__copy">${esc((item.symbols || []).join(", "))}</p>
-          </article>
-        </div>`,
-      ),
-      panelShell(
-        "Interpretations",
-        null,
-        `<div class="stack">
-          ${(item.narrativeInterpretations || [])
-            .map(
-              (interpretation) => `
-                <article class="panel panel--soft">
-                  <p class="card__copy">${esc(interpretation)}</p>
-                </article>
-              `,
-            )
-            .join("")}
-        </div>`,
-      ),
-      panelShell(
-        "Autonomy",
-        "Important",
-        `<p class="card__copy">Palimpsests is autonomous. It is not defined as a sub-part of Vestiges. It exists as an independent project inside the Electronic Artefacts ecosystem, with future relations only when explicitly defined.</p>`,
       ),
     ].join("");
   };
@@ -1838,31 +1871,36 @@
 
     const primaryLinks = (item.links || []).map((link) => ({ ...link, target: link.href.startsWith("http") ? "_blank" : undefined }));
     const relatedCount = Object.values(item.relations || {}).flat().filter(Boolean).length;
+    const heroMode =
+      item.kind === "project"
+        ? "project"
+        : item.kind === "archive" || item.kind === "artefact"
+          ? "archive"
+          : item.kind === "person"
+            ? "person"
+            : item.kind === "program" || item.kind === "channel"
+              ? "program"
+              : "research";
+    const heroActions = [
+      ...primaryLinks.slice(0, 1),
+      ...(item.kind === "project" ? [{ label: "RL", href: `./project-rl.html?id=${encodeURIComponent(item.id)}` }] : []),
+    ];
 
     return `
       <section class="zone-card hero">
-        <div class="section-head${item.id === "oeil-de-meg" ? " section-head--signature" : ""}">
-          ${projectSignatureBubble(item, "hero")}
+        <div class="section-head">
           <p class="eyebrow">${esc(catalog.taxonomies?.entityTypes?.[item.kind] || item.kind || kind.toUpperCase())}</p>
           <h1 class="display-title">${esc(item.title)}</h1>
           <p class="lede">${esc(item.description || item.summary || "")}</p>
-          <div class="button-row">
-            ${primaryLinks.map((link) => `<a class="button button--primary" href="${esc(link.href)}"${link.target ? ' target="_blank" rel="noreferrer"' : ""}>${esc(link.label)}</a>`).join("")}
-            ${item.kind === "project" ? `<a class="button button--secondary" href="./project-rl.html?id=${encodeURIComponent(item.id)}">RL</a>` : ""}
-            <a class="button button--secondary" href="./archive.html">Archive</a>
-            <a class="button button--secondary" href="./search.html">Search</a>
+          ${projectSignatureBubble(item, "hero")}
+          <div class="button-row button-row--compact">
+            ${heroActions.map((link, index) => `<a class="button ${index === 0 ? "button--primary" : "button--secondary"}" href="${esc(link.href)}"${link.target ? ' target="_blank" rel="noreferrer"' : ""}>${esc(link.label)}</a>`).join("")}
           </div>
-          <div class="pill-cloud">
-            ${statusBadge(item.status, item.statusLabel || (item.status ? catalog.taxonomies?.statuses?.[item.status]?.label : ""))}
-            ${item.maturity ? chip(`Maturity: ${catalog.taxonomies?.maturity?.[item.maturity]?.label || item.maturity}`) : ""}
-            ${item.confidence ? chip(`Confidence: ${catalog.taxonomies?.confidence?.[item.confidence]?.label || item.confidence}`) : ""}
-            ${item.visibility ? chip(`Visibility: ${catalog.taxonomies?.visibility?.[item.visibility]?.label || item.visibility}`) : ""}
-            ${relatedCount ? chip(`Relations: ${relatedCount}`) : ""}
-          </div>
+          ${summaryMetrics(item, heroMode)}
         </div>
       </section>
-      ${projectPanels(item) ? `<section class="detail-grid project-visual-section">${projectPanels(item)}</section>` : ""}
       ${projectSpecificPanels(item) ? `<section class="detail-grid">${projectSpecificPanels(item)}</section>` : ""}
+      ${projectPanels(item) ? `<section class="detail-grid project-visual-section">${projectPanels(item)}</section>` : ""}
       <section class="detail-grid">
         ${knowledgePanels(item)}
       </section>
@@ -2022,120 +2060,264 @@
   const renderFeaturedResearch = () => featuredResearch();
   const renderLatest = () => latestArtefacts();
   const renderPrograms = () => {
-    const groupOrder = [
-      "Core Systems",
-      "Intelligence Systems",
-      "Organizational Systems",
-      "Production Systems",
-    ];
-    const groupCopy = {
-      "Core Systems": "Foundational systems that define the runtime, archive backbone and artefact engine.",
-      "Intelligence Systems": "Systems that observe, analyze or produce knowledge.",
-      "Organizational Systems": "Systems intended to organize humans, teams, roles and operations.",
-      "Production Systems": "Tools used to produce, extend and operate other projects.",
+    const vaste = entityById("vaste");
+    const forge = entityById("forge");
+    const voidEntry = entityById("void");
+    const oraclehub = entityById("oraclehub");
+
+    const registryCard = (item, options = {}) => {
+      if (!item) return "";
+      const techItems = (options.tech || []).map((value) => String(value)).filter(Boolean);
+      const classificationItems = (options.classification || []).map((value) => String(value)).filter(Boolean);
+      const link = options.link || item.links?.[0] || null;
+      return `
+        <article class="project-card program-registry-card${options.accent ? " program-registry-card--accent" : ""}" ${cardBaseAttrs(item)}>
+          <div class="project-card__top">
+            <div>
+              <p class="card__meta">${esc(options.kicker || catalog.taxonomies?.entityTypes?.[item.kind] || item.kind || "PROGRAM")}</p>
+              <h3 class="card__title">${esc(options.title || item.title)}</h3>
+            </div>
+            ${statusBadge(options.statusKey || item.status, options.statusLabel || item.statusLabel)}
+          </div>
+          ${cardCopy(options.copy || item.description || item.summary || "", 2)}
+          ${metricRail(
+            [
+              { label: "TECHNOLOGY", value: options.technology || techItems.join(" / ") || "—", note: options.role || item.subtitle || "", fill: 0.84, tone: "system" },
+              { label: "ROLE", value: options.role || item.systemGroup || "Program", note: options.statusNote || "", fill: 0.78, tone: "live" },
+              { label: "LINEAGE", value: options.lineage || (item.relations?.origin || []).slice(0, 1).join(" / ") || "Electronic Artefacts", note: options.lineageNote || "", fill: 0.58, tone: "archive" },
+            ],
+            { limit: 3, compact: true },
+          )}
+          ${classificationItems.length ? `<div class="tag-cluster tag-cluster--compact">${classificationItems.map((entry) => chip(entry)).join("")}</div>` : ""}
+          ${link ? linkRow(link) : ""}
+        </article>
+      `;
     };
-    const programDetailHref = (item) => `./entity.html?id=${encodeURIComponent(item.id)}`;
-    const groupedPrograms = groupOrder
-      .map((group) => ({
-        group,
-        items: (catalog.programs || []).filter((item) => item.systemGroup === group),
-      }))
-      .filter((entry) => entry.items.length);
-    const programRows = chunk(programmingLanguages, 24).slice(0, 3);
-    const activePrograms = (catalog.programs || []).length;
+
+    const registryCards = [
+      registryCard(vaste, {
+        title: "VASTE",
+        kicker: "PROGRAM",
+        statusLabel: "Active Development",
+        technology: "TypeScript",
+        role: "Core Program",
+        lineage: "ARCA",
+        lineageNote: "Origin system",
+        classification: ["Runtime", "Research Program", "Knowledge System", "Core Infrastructure"],
+        copy:
+          "VASTE is the primary proprietary runtime developed within Electronic Artefacts. It explores graph architectures, contextual execution, identity systems, simulation frameworks, knowledge structures and modular world construction.",
+        link: { label: "Official site", href: "https://www.vaste.space/", target: "_blank" },
+      }),
+      registryCard(forge, {
+        title: "LA FORGE",
+        kicker: "PROGRAM",
+        statusLabel: "Active Research",
+        technology: "Rust",
+        role: "Creative Production System",
+        lineage: "VASTE",
+        lineageNote: "Derived architecture",
+        classification: ["Software Program", "Research Program", "Creative Technology", "Artifact Generation System"],
+        copy:
+          "La Forge is an experimental software system dedicated to the creation, transformation and refinement of digital artefacts. The project investigates highly scalable production pipelines capable of generating multiple categories of artefacts from a shared architecture.",
+        link: { label: "Research", href: "./research.html" },
+      }),
+      registryCard(voidEntry, {
+        title: "VOID",
+        kicker: "RESEARCH FIELD",
+        statusLabel: "Archived",
+        technology: "Rust",
+        role: "Experimental Software Engine",
+        lineage: "Electronic Artefacts",
+        lineageNote: "Historical foundation",
+        classification: ["Research Program", "Experimental Engine", "Archived System", "Creative Concept"],
+        copy:
+          "VOID was one of the earliest software research projects developed within Electronic Artefacts. Originally conceived as an experimental engine, the project shaped later reflections around systems architecture, modularity and creative technology.",
+        link: { label: "Research field", href: "./entity.html?id=void" },
+      }),
+      registryCard(oraclehub, {
+        title: "OracleHub",
+        kicker: "PROGRAM",
+        statusLabel: "Research Archive",
+        technology: "Python / PostgreSQL / Redis / Docker",
+        role: "Distributed Oracle System",
+        lineage: "VASTE",
+        lineageNote: "Concepts reappear in VASTE",
+        classification: ["Prediction System", "Research Program", "Data Processing Framework"],
+        copy:
+          "OracleHub explored distributed prediction architectures through specialized oracle entities, asynchronous workers and dynamic data pipelines. Many concepts later reappeared in more generalized forms inside VASTE.",
+        link: { label: "Research notes", href: "./research.html" },
+      }),
+    ].join("");
+
+    const forgePrinciples = [
+      {
+        title: "Artifact Pipelines",
+        copy: "Each artefact is treated as the result of a chain of transformations rather than a static output.",
+      },
+      {
+        title: "Genetic Structures",
+        copy: "Artefacts can inherit characteristics from previous generations and recombine parameters.",
+      },
+      {
+        title: "Automated Refinement",
+        copy: "The system studies iterative workflows that progressively improve generated artefacts.",
+      },
+      {
+        title: "Scalability",
+        copy: "The architecture stays medium-agnostic so it can extend from video and 3D toward more output families.",
+      },
+    ];
+
+    const forgeCurrentDomains = ["Video", "3D Assets"];
+    const forgeFutureDomains = ["Audio", "Text", "Interactive Experiences", "Research Documents", "Visual Systems", "Synthetic Worlds"];
+
+    const relationshipColumns = [
+      {
+        title: "VASTE",
+        nodes: ["Knowledge Systems", "Identity Systems", "Simulation Systems", "Runtime Research"],
+      },
+      {
+        title: "LA FORGE",
+        nodes: ["Artifact Pipelines", "Genome Systems", "Automated Refinement", "Creative Production Research"],
+      },
+      {
+        title: "VOID",
+        nodes: ["Experimental Architectures", "Creative Computing Research"],
+      },
+      {
+        title: "OracleHub",
+        nodes: ["Distributed Predictions", "Oracle Systems", "Data Pipelines"],
+      },
+    ];
+
+    const technologyMap = [
+      { title: "TypeScript", nodes: ["VASTE", "UnionMob"] },
+      { title: "Rust", nodes: ["VOID", "La Forge"] },
+      { title: "PHP", nodes: ["AtypikHouse", "L'Oeil de Meg"] },
+      { title: "Python", nodes: ["OracleHub", "Audio Analysis Research"] },
+    ];
+
+    const strategicObservation = [
+      {
+        title: "VASTE",
+        copy: "Knowledge, runtime and systems. It is the core proprietary runtime and the technical anchor of the stack.",
+      },
+      {
+        title: "LA FORGE",
+        copy: "Artefact production and transformation. It studies pipelines, inheritance and multi-domain generation.",
+      },
+      {
+        title: "VOID",
+        copy: "Experimental architectures and conceptual foundations. It remains the archived theoretical engine.",
+      },
+      {
+        title: "OracleHub",
+        copy: "Distributed prediction and data systems. It preserves the archive lineage while feeding future runtime concepts.",
+      },
+    ];
+
     return `
       <section class="zone-card hero programs-hero">
         <div class="section-head">
-          <p class="eyebrow">PROGRAMS</p>
-          <h1 class="display-title">Programs, genealogy and system branches.</h1>
-          <p class="lede">
-            Electronic Artefacts now separates core systems, intelligence systems, organizational systems and production systems while keeping their lineage readable.
-          </p>
-          <div class="button-row">
+          <p class="eyebrow">ELECTRONIC ARTEFACTS</p>
+          <h1 class="display-title">Programs canonical registry v0.3.</h1>
+          <p class="lede">The software stack is organized around four major research directions: VASTE, La Forge, VOID and OracleHub.</p>
+          <div class="button-row button-row--compact">
             <a class="button button--primary" href="https://www.vaste.space/" target="_blank" rel="noreferrer">VASTE</a>
             <a class="button button--secondary" href="./research.html">Research</a>
-            <a class="button button--secondary" href="./archive.html">Archive</a>
           </div>
-        </div>
-        <div class="stat-grid programs-stats">
-          <article class="stat-card">
-            <p class="card__meta">Programs</p>
-            <strong>${esc(String(activePrograms))}</strong>
-            <span>Visible program entries in the catalog.</span>
-          </article>
-          <article class="stat-card">
-            <p class="card__meta">Roles</p>
-            <strong>Core / Intelligence / Organization / Production</strong>
-            <span>The program layer is split by system function, not by chronology alone.</span>
-          </article>
-          <article class="stat-card">
-            <p class="card__meta">Lineage</p>
-            <strong>ARCA → VASTE</strong>
-            <span>The current runtime stack is grounded in a visible technical genealogy.</span>
-          </article>
+          ${metricRail(
+            [
+              { label: "DIRECTIONS", value: "4", note: "core branches", fill: 0.95, tone: "live" },
+              { label: "RUNTIME", value: "VASTE", note: "core program", fill: 0.88, tone: "system" },
+              { label: "PRODUCTION", value: "La Forge", note: "active research", fill: 0.78, tone: "visual" },
+              { label: "ARCHIVES", value: "VOID / OracleHub", note: "legacy lineages", fill: 0.68, tone: "archive" },
+            ],
+            { limit: 4, compact: true },
+          )}
         </div>
       </section>
       <section class="zone-card hero">
         <div class="section-head">
-          <p class="eyebrow">GENEALOGY</p>
-          <h2>From ARCA to VASTE</h2>
-          <p class="lede">ARCA established the asset and authenticity logic. VASTE generalizes that heritage into a broader runtime for systems, simulations, knowledge and organizational environments.</p>
+          <p class="eyebrow">CORE REGISTRY</p>
+          <h2>Four software directions</h2>
+          <p class="lede">Each card keeps one role, one technology anchor and one compact classification line.</p>
+        </div>
+        <div class="card-grid card-grid--two">
+          ${registryCards}
+        </div>
+      </section>
+      <section class="zone-card hero">
+        <div class="section-head">
+          <p class="eyebrow">CORE PRINCIPLES</p>
+          <h2>La Forge</h2>
+          <p class="lede">Production is organized as a shared architecture with pipelines, inheritance and refinement.</p>
+        </div>
+        <div class="card-grid card-grid--two">
+          ${forgePrinciples
+            .map(
+              (item) => `
+                <article class="panel panel--soft">
+                  <p class="card__meta">${esc(item.title)}</p>
+                  <p class="card__copy">${esc(item.copy)}</p>
+                </article>
+              `,
+            )
+            .join("")}
+        </div>
+        <div class="split">
+          <article class="panel panel--soft">
+            <p class="card__meta">Current domains</p>
+            <h3 class="card__title">Video / 3D Assets</h3>
+            <div class="tag-cluster tag-cluster--compact">${forgeCurrentDomains.map((item) => chip(item)).join("")}</div>
+          </article>
+          <article class="panel panel--soft">
+            <p class="card__meta">Future domains</p>
+            <h3 class="card__title">Extensible output families</h3>
+            <div class="tag-cluster tag-cluster--compact">${forgeFutureDomains.map((item) => chip(item)).join("")}</div>
+          </article>
+        </div>
+        <article class="panel panel--soft">
+          <p class="card__meta">Long term vision</p>
+          <p class="card__copy">La Forge aims to become a universal artefact production framework. Rather than producing a single type of media, it investigates the possibility of generating entire families of artefacts through shared production logic.</p>
+        </article>
+      </section>
+      <section class="zone-card hero">
+        <div class="section-head">
+          <p class="eyebrow">PROGRAM RELATIONSHIPS</p>
+          <h2>Electronic Artefacts</h2>
+          <p class="lede">The ecosystem is organized around four major software research directions.</p>
         </div>
         <div class="relationship-graph">
-          <div class="graph-root">ARCA → VASTE</div>
+          <div class="graph-root">Electronic Artefacts</div>
           <div class="graph-columns">
-            <div class="graph-column">
-              <p class="card__meta">ARCA</p>
-              <div class="graph-node">NFT</div>
-              <div class="graph-node">Certificates</div>
-              <div class="graph-node">Auctions</div>
-              <div class="graph-node">Authenticity</div>
-            </div>
-            <div class="graph-column">
-              <p class="card__meta">VASTE</p>
-              <div class="graph-node">Runtime</div>
-              <div class="graph-node">Graph Engine</div>
-              <div class="graph-node">Modules</div>
-              <div class="graph-node">Simulations</div>
-            </div>
-            <div class="graph-column">
-              <p class="card__meta">Systems</p>
-              <div class="graph-node">Knowledge Systems</div>
-              <div class="graph-node">Operating System</div>
-              <div class="graph-node">Snapshots</div>
-              <div class="graph-node">Determinism</div>
-            </div>
-            <div class="graph-column">
-              <p class="card__meta">Branches</p>
-              <div class="graph-node">FORGE</div>
-              <div class="graph-node">OracleHub</div>
-              <div class="graph-node">UnionMob OS</div>
-            </div>
+            ${relationshipColumns
+              .map(
+                (column) => `
+                  <div class="graph-column">
+                    <p class="card__meta">${esc(column.title)}</p>
+                    ${column.nodes.map((node) => `<div class="graph-node">${esc(node)}</div>`).join("")}
+                  </div>
+                `,
+              )
+              .join("")}
           </div>
         </div>
       </section>
       <section class="zone-card hero">
         <div class="section-head">
-          <p class="eyebrow">PROGRAM STACK</p>
-          <h2>Electronic Artefacts program systems</h2>
-          <p class="lede">Each cluster keeps the stack readable by role: foundation, intelligence, organization or production.</p>
+          <p class="eyebrow">TECHNOLOGY MAP</p>
+          <h2>Language alignment</h2>
+          <p class="lede">Each stack keeps one primary language or runtime family visible.</p>
         </div>
-        <div class="catalog-stack">
-          ${groupedPrograms
+        <div class="graph-columns">
+          ${technologyMap
             .map(
-              ({ group, items }) => `
-                <section class="catalog-group">
-                  <div class="section-head">
-                    <p class="eyebrow">${esc(group.toUpperCase())}</p>
-                    <h3>${esc(group)}</h3>
-                    <p class="lede">${esc(groupCopy[group] || "")}</p>
-                  </div>
-                  <div class="card-grid card-grid--three programs-grid">
-                    ${items
-                      .map((item) => programCard(item, { href: programDetailHref(item), label: `Open ${item.title}` }))
-                      .join("")}
-                  </div>
-                </section>
+              (column) => `
+                <div class="graph-column">
+                  <p class="card__meta">${esc(column.title)}</p>
+                  ${column.nodes.map((node) => `<div class="graph-node">${esc(node)}</div>`).join("")}
+                </div>
               `,
             )
             .join("")}
@@ -2143,21 +2325,19 @@
       </section>
       <section class="zone-card hero">
         <div class="section-head">
-          <p class="eyebrow">LANGUAGE FIELD</p>
-          <h2>Animated system wall</h2>
-          <p class="lede">Electronic Artefacts can adapt across many cases, contexts, frameworks and operating conditions.</p>
+          <p class="eyebrow">STRATEGIC OBSERVATION</p>
+          <h2>Four major software research directions</h2>
+          <p class="lede">The technological backbone now reads as a small, explicit set of directions instead of a flat product list.</p>
         </div>
-        <div class="language-field" aria-label="Programming languages animation">
-          ${programRows
+        <div class="stat-grid">
+          ${strategicObservation
             .map(
-              (row, index) => `
-                <div class="language-marquee ${index % 2 ? "language-marquee--reverse" : ""}" style="--marquee-duration:${28 + index * 8}s;">
-                  <div class="language-track">
-                    ${[...row, ...row]
-                      .map((language) => `<span class="language-pill">${esc(language)}</span>`)
-                      .join("")}
-                  </div>
-                </div>
+              (item, index) => `
+                <article class="stat-card">
+                  <p class="card__meta">0${index + 1}</p>
+                  <strong>${esc(item.title)}</strong>
+                  <span>${esc(item.copy)}</span>
+                </article>
               `,
             )
             .join("")}
@@ -2386,7 +2566,7 @@
   const renderers = {
     home: {
       "home-vaste-banner": renderVasteBanner,
-      "home-featured-work": () => ecosystemExplorer() + renderFeaturedWork(),
+      "home-featured-work": renderFeaturedWork,
       "home-featured-research": renderFeaturedResearch,
       "home-latest": renderLatest,
       "home-activity": renderActivityFeed,

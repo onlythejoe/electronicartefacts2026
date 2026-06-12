@@ -167,6 +167,42 @@
   min-width: 0;
 }
 
+.project-card__top-meta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.45rem;
+  flex: 0 0 auto;
+}
+
+.project-meg-badge {
+  display: inline-grid;
+  place-items: center;
+  width: 1.7rem;
+  height: 1.7rem;
+  border: 1px solid rgba(34, 32, 28, 0.12);
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.78);
+  box-shadow: 0 1px 0 rgba(255, 255, 255, 0.65) inset;
+}
+
+.project-meg-badge--hero {
+  width: 2rem;
+  height: 2rem;
+}
+
+.project-meg-badge__picto {
+  display: block;
+  width: 1.02rem;
+  height: 1.02rem;
+  object-fit: contain;
+}
+
+.project-meg-badge--hero .project-meg-badge__picto {
+  width: 1.12rem;
+  height: 1.12rem;
+}
+
 .archive-card__identity {
   display: grid;
   gap: 0.32rem;

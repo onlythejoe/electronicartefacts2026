@@ -94,6 +94,30 @@
     return `<div class="link-row">${links.join("")}</div>`;
   };
 
+  const metricRail = (items, options = {}) => {
+    if (!items || !items.length) return "";
+    const limit = Number.isFinite(options.limit) ? Math.max(0, options.limit) : items.length;
+    const compact = options.compact !== false;
+    const visible = items.slice(0, limit);
+    return `
+      <div class="metric-rail${compact ? " metric-rail--compact" : ""}">
+        ${visible
+          .map((item, index) => {
+            const fill = Number.isFinite(item.fill) ? Math.max(0.1, Math.min(1, item.fill)) : 0.62;
+            return `
+              <div class="metric-pill metric-pill--${esc(item.tone || "neutral")}" style="--metric-fill:${fill};--metric-index:${index};">
+                <span>${esc(item.label || "")}</span>
+                <strong>${esc(item.value || "")}</strong>
+                ${item.note ? `<em>${esc(item.note)}</em>` : ""}
+                <i aria-hidden="true"></i>
+              </div>
+            `;
+          })
+          .join("")}
+      </div>
+    `;
+  };
+
   const cardLinkAttrs = (href, label) =>
     href
       ? `
@@ -116,6 +140,7 @@
     relationList,
     metadataList,
     linkRow,
+    metricRail,
     cardLinkAttrs,
     cardOverlayLink,
     taxonomyTone,
