@@ -472,6 +472,11 @@ strong {
   hyphens: auto;
 }
 
+.zone-card.hero .section-head h2,
+.zone-card.hero .section-head h3 {
+  margin-bottom: 0.35rem;
+}
+
 .section-head p {
   margin: 0;
 }
