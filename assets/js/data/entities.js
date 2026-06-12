@@ -480,6 +480,7 @@ window.EA_ENTITIES = {
       description: "Main album project carried by ORETH and published by Electronic Artefacts.",
       summary: "Main album project carried by ORETH.",
       tags: ["Palimpsests", "Album", "ORETH"],
+      route: "./palimpsests.html",
       media: {
         folder: "./assets/media/projects/palimpsests",
         gallery: [{ src: "./assets/media/projects/palimpsests/palimpsests.jpg", alt: "Palimpsests album cover", caption: "Album visual used as the project cover." }],

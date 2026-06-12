@@ -227,6 +227,7 @@
 
   const projectCard = (item) => `
     <article class="project-card" ${cardBaseAttrs(item)}>
+      ${item.kind === "project" ? `<a class="project-card__overlay-link" href="./project.html?id=${encodeURIComponent(item.id)}" aria-label="Open ${esc(item.title)} detail"></a>` : ""}
       <div class="project-card__top">
         <div>
           <p class="card__meta">${esc(item.type || catalog.entityTypes?.[item.kind] || "PROJECT")}</p>
@@ -257,7 +258,7 @@
   `;
 
   const projectLandingCard = (item) => `
-    <article class="project-card" ${cardBaseAttrs(item)}>
+    <article class="project-card" data-project-detail-link="${esc(item.route || `./project.html?id=${encodeURIComponent(item.id)}`)}" tabindex="0" role="link" aria-label="Open ${esc(item.title)} detail" ${cardBaseAttrs(item)}>
       <div class="project-card__top">
         <div>
           <p class="card__meta">${esc(item.category || item.type || "PROJECT")}</p>
@@ -273,7 +274,7 @@
       </div>
       ${tagRow([...(item.medium || []), ...(item.discipline || [])])}
       <div class="link-row">
-        <a class="tag" href="./project.html?id=${encodeURIComponent(item.id)}">Detail</a>
+        <a class="tag" href="${esc(item.route || `./project.html?id=${encodeURIComponent(item.id)}`)}">Detail</a>
         <a class="tag" href="./project-rl.html?id=${encodeURIComponent(item.id)}">RL</a>
       </div>
     </article>
@@ -1359,7 +1360,10 @@
   };
 
   const renderDetailPage = () => {
-    const id = new URLSearchParams(window.location.search).get("id");
+    const id =
+      new URLSearchParams(window.location.search).get("id") ||
+      document.body.dataset.projectId ||
+      document.body.dataset.entityId;
     const item = id ? entityById(id) || collectionById(id) : null;
     const kind = document.body.dataset.detailKind || document.body.dataset.page || "entity";
     if (!item) {
@@ -1604,8 +1608,8 @@
       <section class="zone-card hero">
         <div class="section-head">
           <p class="eyebrow">LANGUAGE FIELD</p>
-          <h2>Animated programming language wall</h2>
-          <p class="lede">A kinetic typographic scan across a large set of programming languages and related code systems.</p>
+          <h2>Animated system wall</h2>
+          <p class="lede">A kinetic typographic field that signals how Electronic Artefacts can adapt across many cases, contexts, frameworks and operating conditions.</p>
         </div>
         <div class="language-field" aria-label="Programming languages animation">
           ${programRows
@@ -1921,6 +1925,30 @@
     });
   };
 
+  const initProjectDetailLinks = () => {
+    document.querySelectorAll("[data-project-detail-link]").forEach((card) => {
+      if (card.dataset.boundProjectDetailLink === "true") return;
+      card.dataset.boundProjectDetailLink = "true";
+      const target = card.getAttribute("data-project-detail-link");
+      if (!target) return;
+      const navigate = () => {
+        window.location.href = target;
+      };
+
+      card.addEventListener("click", (event) => {
+        if (event.target.closest("a,button,input,select,textarea,label")) return;
+        navigate();
+      });
+
+      card.addEventListener("keydown", (event) => {
+        if (event.key === "Enter" || event.key === " ") {
+          event.preventDefault();
+          navigate();
+        }
+      });
+    });
+  };
+
   const renderPageSections = () => {
     const pageRenderers = renderers[page];
     if (!pageRenderers) return;
@@ -1931,6 +1959,7 @@
     });
     initFilters();
     initSearch();
+    initProjectDetailLinks();
   };
 
   const load = async () => {
