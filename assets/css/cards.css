@@ -51,6 +51,11 @@
 
 .zone-card > *,
 .project-card > *,
+.program-card > *,
+.archive-card > *,
+.panel > *,
+.stat-card > *,
+.cross-nav-card > *,
 .card-link-surface > * {
   position: relative;
   z-index: 1;
@@ -119,6 +124,25 @@
 .project-card[data-project-detail-link]:focus-visible {
   outline: 2px solid rgba(228, 213, 196, 0.95);
   outline-offset: 3px;
+}
+
+.project-card--signature {
+  overflow: visible;
+}
+
+.project-card--signature .project-mark-bubble {
+  top: clamp(0.55rem, 1vw, 0.85rem);
+  right: clamp(0.55rem, 1vw, 0.85rem);
+  --bubble-offset-x: 42%;
+  --bubble-offset-y: -38%;
+}
+
+.project-card--signature .project-card__top {
+  padding-right: clamp(3.8rem, 6vw, 5.2rem);
+}
+
+.project-card--signature .project-card__top > div {
+  padding-right: 0.2rem;
 }
 
 .project-card__top,

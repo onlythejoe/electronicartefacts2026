@@ -1335,7 +1335,62 @@ window.EA_ENTITIES = {
       tags: ["Photography", "Client Work"],
       media: {
         folder: "./assets/media/projects/oeil-de-meg",
-        gallery: [{ src: "./assets/media/projects/oeil-de-meg/cover.svg", alt: "L Oeil de Meg dossier cover", caption: "Project dossier cover." }],
+        gallery: [
+          { src: "./assets/media/projects/oeil-de-meg/cover.svg", alt: "L Oeil de Meg dossier cover", caption: "Project dossier cover." },
+          { src: "./assets/media/projects/oeil-de-meg/oeil-de-meg-logo.png", alt: "L Oeil de Meg wordmark", caption: "Wordmark version of the logo." },
+          { src: "./assets/media/projects/oeil-de-meg/oeil-de-meg-picto.svg", alt: "L Oeil de Meg pictogram", caption: "Compact pictogram used as a signature mark." },
+          {
+            src: "./assets/media/projects/oeil-de-meg/oeil-de-meg-home-hero-butterflies.png",
+            alt: "Homepage hero with butterflies",
+            caption: "Hero composition used on the public site.",
+          },
+          {
+            src: "./assets/media/projects/oeil-de-meg/oeil-de-meg-portfolio-grossesse-famille.png",
+            alt: "Grossesse et famille portfolio page",
+            caption: "Portfolio section focused on family and maternity work.",
+          },
+          {
+            src: "./assets/media/projects/oeil-de-meg/oeil-de-meg-portfolio-narrations-lumiere.png",
+            alt: "Narrations en lumiere portfolio page",
+            caption: "Portfolio section for editorial sequences in light.",
+          },
+          {
+            src: "./assets/media/projects/oeil-de-meg/oeil-de-meg-404-page-perdue.png",
+            alt: "404 page perdue",
+            caption: "Custom error page with the butterfly motif.",
+          },
+          {
+            src: "./assets/media/projects/oeil-de-meg/oeil-de-meg-admin-materiel.png",
+            alt: "WordPress admin page for material",
+            caption: "Backend page used to manage equipment content.",
+          },
+          {
+            src: "./assets/media/projects/oeil-de-meg/oeil-de-meg-services-equipment.png",
+            alt: "Service page with camera diagram",
+            caption: "Equipment and service breakdown page.",
+          },
+          {
+            src: "./assets/media/projects/oeil-de-meg/oeil-de-meg-pagespeed-desktop.png",
+            alt: "PageSpeed Insights desktop result",
+            caption: "Desktop performance snapshot.",
+          },
+          {
+            src: "./assets/media/projects/oeil-de-meg/oeil-de-meg-pagespeed-mobile.png",
+            alt: "PageSpeed Insights mobile result",
+            caption: "Mobile performance snapshot.",
+          },
+          {
+            src: "./assets/media/projects/oeil-de-meg/oeil-de-meg-pagespeed-mobile-details.png",
+            alt: "PageSpeed Insights mobile details",
+            caption: "Detailed mobile performance snapshot.",
+          },
+          {
+            src: "./assets/media/projects/oeil-de-meg/oeil-de-meg-recording-2026-02-24.mp4",
+            alt: "Screen recording of the Oeil de Meg site",
+            caption: "Screen recording of the live experience.",
+            mediaType: "video",
+          },
+        ],
       },
       architecture: {
         surface: "Photography / portfolio ecosystem",

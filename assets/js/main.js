@@ -6,7 +6,7 @@
   const { loadIncludes } = window.EA_INCLUDES;
   const { statusBadge, entityBadge, chip, tagRow, relationList, metadataList, linkRow, cardLinkAttrs, cardOverlayLink } =
     window.EA_UI;
-  const { initFilters, initSearch, initCardLinks, syncNavigationState, syncPageTitle } = window.EA_BEHAVIORS;
+  const { initFilters, initSearch, initCardLinks, initUXEnhancements, syncNavigationState, syncPageTitle } = window.EA_BEHAVIORS;
 
   const programmingLanguages = [
     "JavaScript",
@@ -96,8 +96,11 @@
     const discipline = (item.discipline || []).join(" ");
     const researchField = item.researchField || (item.relatedResearchFields || []).join(" ");
     const year = item.temporality?.creationYear || item.date || "";
+    const image = cardImageFor(item);
     return `
       data-filter-card
+      data-entry-id="${esc(item.id || "")}"
+      ${image ? `data-card-media="true" style="--card-image:url('${esc(image.src)}');"` : ""}
       data-status="${esc(item.status || "")}"
       data-category="${esc(item.category || item.type || "")}"
       data-medium="${esc(medium)}"
@@ -112,9 +115,98 @@
     `;
   };
 
+  const mediaFrom = (entry) => {
+    const gallery = entry?.media?.gallery || [];
+    if (!gallery.length) return null;
+    return (
+      gallery.find((image) => String(image.src || "").includes("palimpsests.jpg")) ||
+      gallery.find((image) => String(image.src || "").match(/cover|logo/i)) ||
+      gallery[0]
+    );
+  };
+
+  const mediaKindFor = (media) => {
+    const explicitKind = String(media?.mediaType || media?.type || "").toLowerCase();
+    if (explicitKind === "image" || explicitKind === "video") return explicitKind;
+    const src = String(media?.src || "").toLowerCase();
+    if (/\.(mov|mp4|m4v|webm)(?:[?#]|$)/.test(src)) return "video";
+    return "image";
+  };
+
+  const mediaFigureMarkup = (media, item, className = "project-gallery__media") => {
+    const mediaKind = mediaKindFor(media);
+    if (mediaKind === "video") {
+      return `
+        <video class="${className}" controls playsinline preload="metadata">
+          <source src="${esc(media.src)}" />
+          ${esc(media.alt || item.title || "Project video")}
+        </video>
+      `;
+    }
+    return `<img class="${className}" src="${esc(media.src)}" alt="${esc(media.alt || item.title)}" loading="lazy" />`;
+  };
+
+  const projectSignatureBubble = (item, variant = "card") => {
+    if (item?.id !== "oeil-de-meg") return "";
+    return `
+      <div class="project-mark-bubble project-mark-bubble--${esc(variant)}" aria-hidden="true">
+        <img class="project-mark-bubble__logo" src="./assets/media/projects/oeil-de-meg/oeil-de-meg-logo.png" alt="" loading="lazy" />
+        <span class="project-mark-bubble__coin">
+          <img class="project-mark-bubble__picto" src="./assets/media/projects/oeil-de-meg/oeil-de-meg-picto.svg" alt="" loading="lazy" />
+        </span>
+      </div>
+    `;
+  };
+
+  const cardImageFor = (item) => {
+    const direct = mediaFrom(item);
+    if (direct) return direct;
+
+    const relationIds = [
+      item.project,
+      ...(item.relatedProjects || []),
+      ...(item.relations?.partOf || []),
+      ...(item.relations?.parent || []),
+      ...(item.relations?.relatedTo || []),
+      ...(item.relations?.influences || []),
+    ]
+      .filter(Boolean)
+      .map((value) => String(value));
+
+    for (const id of relationIds) {
+      const entry = catalog.indexes?.byId?.[id];
+      const image = mediaFrom(entry);
+      if (image) return image;
+    }
+
+    if (item.kind === "collection" && window.EA_COLLECTIONS?.resolve) {
+      const member = window.EA_COLLECTIONS.resolve(item, catalog).find((entry) => mediaFrom(entry));
+      const image = mediaFrom(member);
+      if (image) return image;
+    }
+
+    return null;
+  };
+
+  const signalStrip = (item) => {
+    const signals = [item.status, item.category, ...(item.medium || []), ...(item.discipline || [])].filter(Boolean).slice(0, 6);
+    if (!signals.length) return "";
+    return `
+      <div class="card-signal" aria-hidden="true">
+        ${signals.map((signal, index) => `<span style="--signal-index:${index};" title="${esc(signal)}"></span>`).join("")}
+      </div>
+    `;
+  };
+
+  const cardCopy = (text, lines = 2) => {
+    if (!text) return "";
+    return `<p class="card__copy card__copy--clamp-${Math.max(1, Math.min(4, lines))}">${esc(text)}</p>`;
+  };
+
   const projectCard = (item) => `
-    <article class="project-card" ${cardBaseAttrs(item)}>
+    <article class="project-card${item?.id === "oeil-de-meg" ? " project-card--signature" : ""}" ${cardBaseAttrs(item)}>
       ${item.kind === "project" ? `<a class="project-card__overlay-link" href="./project.html?id=${encodeURIComponent(item.id)}" aria-label="Open ${esc(item.title)} detail"></a>` : ""}
+      ${projectSignatureBubble(item, "card")}
       <div class="project-card__top">
         <div>
           <p class="card__meta">${esc(item.type || catalog.entityTypes?.[item.kind] || "PROJECT")}</p>
@@ -122,13 +214,14 @@
         </div>
         ${statusBadge(item.status, item.statusLabel)}
       </div>
-      <p class="card__copy">${esc(item.summary)}</p>
+      ${cardCopy(item.summary, 2)}
+      ${signalStrip(item)}
       <div class="project-card__meta">
         ${entityBadge(item.kind || "project")}
         ${chip(`Type: ${item.type || "Project"}`)}
         ${item.category ? chip(`Category: ${item.category}`) : ""}
       </div>
-      ${tagRow([...(item.medium || []), ...(item.discipline || [])])}
+      ${tagRow([...(item.medium || []), ...(item.discipline || [])], { limit: 3, compact: true })}
       ${metadataList([
         { label: "Artist", value: item.artist },
         { label: "Program", value: item.program },
@@ -145,8 +238,9 @@
   `;
 
   const projectLandingCard = (item) => `
-    <article class="project-card" data-project-detail-link="${esc(item.route || `./project.html?id=${encodeURIComponent(item.id)}`)}" tabindex="0" role="link" aria-label="Open ${esc(item.title)} detail" ${cardBaseAttrs(item)}>
+    <article class="project-card${item?.id === "oeil-de-meg" ? " project-card--signature" : ""}" data-project-detail-link="${esc(item.route || `./project.html?id=${encodeURIComponent(item.id)}`)}" tabindex="0" role="link" aria-label="Open ${esc(item.title)} detail" ${cardBaseAttrs(item)}>
       <a class="project-card__overlay-link" href="${esc(item.route || `./project.html?id=${encodeURIComponent(item.id)}`)}" aria-label="Open ${esc(item.title)} detail"></a>
+      ${projectSignatureBubble(item, "card")}
       <div class="project-card__top">
         <div>
           <p class="card__meta">${esc(item.category || item.type || "PROJECT")}</p>
@@ -154,13 +248,14 @@
         </div>
         ${statusBadge(item.status, item.statusLabel)}
       </div>
-      <p class="card__copy">${esc(item.summary)}</p>
+      ${cardCopy(item.summary, 2)}
+      ${signalStrip(item)}
       <div class="project-card__meta">
         ${entityBadge("project")}
         ${item.program ? chip(`Program: ${item.program}`) : ""}
         ${item.temporality?.era ? chip(`Era: ${item.temporality.era}`) : ""}
       </div>
-      ${tagRow([...(item.medium || []), ...(item.discipline || [])])}
+      ${tagRow([...(item.medium || []), ...(item.discipline || [])], { limit: 2, compact: true })}
       <div class="link-row">
         <a class="tag" href="${esc(item.route || `./project.html?id=${encodeURIComponent(item.id)}`)}">Detail</a>
         <a class="tag" href="./project-rl.html?id=${encodeURIComponent(item.id)}">RL</a>
@@ -174,7 +269,8 @@
         <div class="archive-card__identity">
           <p class="card__meta">${esc(item.type || "ARCHIVE")}${item.category ? ` · ${esc(item.category)}` : ""}</p>
           <h3 class="card__title">${esc(item.title)}</h3>
-          <p class="card__copy">${esc(item.summary)}</p>
+          ${cardCopy(item.summary, 2)}
+          ${signalStrip(item)}
         </div>
         <div class="archive-card__status">
           ${statusBadge(item.status, item.statusLabel)}
@@ -187,7 +283,7 @@
         ${item.artist ? `<div class="archive-card__fact"><span>Artist</span><strong>${esc(item.artist)}</strong></div>` : ""}
       </div>
       <div class="archive-card__chips">
-        ${tagRow([...(item.medium || []), ...(item.discipline || []), ...(item.related || [])])}
+        ${tagRow([...(item.medium || []), ...(item.discipline || []), ...(item.related || [])], { limit: 4, compact: true })}
       </div>
       ${linkRow(item.cta || null, item.links || [])}
     </article>
@@ -203,8 +299,9 @@
         </div>
         ${statusBadge(item.status, item.statusLabel)}
       </div>
-      <p class="card__copy">${esc(item.summary)}</p>
-      ${tagRow([...(item.medium || []), ...(item.discipline || [])])}
+      ${cardCopy(item.summary, 2)}
+      ${signalStrip(item)}
+      ${tagRow([...(item.medium || []), ...(item.discipline || [])], { limit: 3, compact: true })}
       ${metadataList([
         { label: "Projects", value: (item.relatedProjects || []).join(", ") },
         { label: "Artefacts", value: (item.relatedArtefacts || []).join(", ") },
@@ -223,8 +320,9 @@
         </div>
         ${statusBadge(item.status, item.statusLabel)}
       </div>
-      <p class="card__copy">${esc(item.summary)}</p>
-      ${tagRow([...(item.medium || []), ...(item.discipline || [])])}
+      ${cardCopy(item.summary, 2)}
+      ${signalStrip(item)}
+      ${tagRow([...(item.medium || []), ...(item.discipline || [])], { limit: 3, compact: true })}
       ${metadataList([
         { label: "Kind", value: item.kind },
       ])}
@@ -243,13 +341,14 @@
         </div>
         ${statusBadge(item.status, item.statusLabel)}
       </div>
-      <p class="card__copy">${esc(item.summary)}</p>
+      ${cardCopy(item.summary, 2)}
+      ${signalStrip(item)}
       <div class="project-card__meta">
         ${entityBadge("program")}
         ${item.domain ? chip(`Domain: ${item.domain}`) : ""}
         ${item.systemGroup ? chip(`System: ${item.systemGroup}`) : ""}
       </div>
-      ${tagRow([...(item.medium || []), ...(item.discipline || [])])}
+      ${tagRow([...(item.medium || []), ...(item.discipline || [])], { limit: 3, compact: true })}
       ${relationList(item.related)}
       ${linkRow(item.cta)}
     </article>
@@ -264,12 +363,13 @@
         </div>
         ${statusBadge(item.status, item.statusLabel)}
       </div>
-      <p class="card__copy">${esc(item.summary)}</p>
+      ${cardCopy(item.summary, 2)}
+      ${signalStrip(item)}
       <div class="project-card__meta">
         ${entityBadge("channel")}
         ${chip(`Medium: ${(item.medium || []).join(", ") || "Channel"}`)}
       </div>
-      ${tagRow([...(item.discipline || [])])}
+      ${tagRow([...(item.discipline || [])], { limit: 2, compact: true })}
       ${relationList(item.related)}
       ${linkRow(item.cta)}
     </article>
@@ -409,7 +509,7 @@
               ${statusBadge("research", "Lab")}
             </div>
             <p class="card__copy">The research page stays concise: references, notes and future branches only.</p>
-            ${tagRow((fields.length ? fields.map((field) => field.title) : catalog.schema?.mediums || []).slice(0, 5))}
+            ${tagRow((fields.length ? fields.map((field) => field.title) : catalog.schema?.mediums || []).slice(0, 4), { limit: 4, compact: true })}
             <div class="link-row">
               <a class="tag" href="./research.html">Research</a>
               <a class="tag" href="./about.html">About</a>
@@ -432,11 +532,11 @@
           ${latest
             .map(
               (item) => `
-                <article class="panel panel--soft card-link-surface" ${cardLinkAttrs(`./artefact.html?id=${encodeURIComponent(item.id)}`, `Open ${item.title}`)}>
+                <article class="panel panel--soft card-link-surface" ${cardBaseAttrs(item)} ${cardLinkAttrs(`./artefact.html?id=${encodeURIComponent(item.id)}`, `Open ${item.title}`)}>
                   ${cardOverlayLink(`./artefact.html?id=${encodeURIComponent(item.id)}`, `Open ${item.title}`)}
                   <p class="card__meta">${esc(item.type)}</p>
                   <h3 class="card__title">${esc(item.title)}</h3>
-                  <p class="card__copy">${esc(item.summary)}</p>
+                  ${cardCopy(item.summary, 2)}
                   <div class="project-card__meta">
                     ${statusBadge(item.status, item.statusLabel)}
                     ${chip(item.project)}
@@ -472,6 +572,174 @@
       </div>
     </section>
   `;
+
+  const uxSurface = (eyebrow, title, copy, metrics = [], links = []) => `
+    <section class="zone-card hero ux-surface">
+      <div class="ux-surface__content">
+        <div class="section-head">
+          <p class="eyebrow">${esc(eyebrow)}</p>
+          <h2>${esc(title)}</h2>
+          <p class="lede">${esc(copy)}</p>
+        </div>
+        <div class="button-row">
+          ${links.map((link, index) => `<a class="button ${index === 0 ? "button--primary" : "button--secondary"}" href="${esc(link.href)}"${link.target ? ` target="${esc(link.target)}" rel="noreferrer"` : ""}>${esc(link.label)}</a>`).join("")}
+        </div>
+      </div>
+      <div class="ux-surface__visual" aria-hidden="true">
+        <div class="signal-orbit">
+          ${metrics
+            .slice(0, 5)
+            .map(
+              (item, index) => `
+                <span class="signal-node signal-node--${index + 1}">
+                  <strong>${esc(item.value)}</strong>
+                  <small>${esc(item.label)}</small>
+                </span>
+              `,
+            )
+            .join("")}
+        </div>
+        <div class="signal-bars">
+          ${metrics
+            .slice(0, 6)
+            .map((item, index) => `<span style="--bar:${Math.max(18, Math.min(96, Number(item.level) || 50))}%;--bar-index:${index};"></span>`)
+            .join("")}
+        </div>
+      </div>
+    </section>
+  `;
+
+  const ecosystemExplorer = () => {
+    const projects = catalog.projects?.length || 0;
+    const programs = catalog.programs?.length || 0;
+    const artefacts = catalog.artefacts?.length || 0;
+    const research = catalog.researchFields?.length || 0;
+    return uxSurface(
+      "INTERACTIVE LAYER",
+      "Explore the system by page, relation and status.",
+      "Use the quick palette, filtered taxonomies and linked cards to move through the catalogue without losing context.",
+      [
+        { label: "Projects", value: String(projects), level: 76 },
+        { label: "Programs", value: String(programs), level: 88 },
+        { label: "Artefacts", value: String(artefacts), level: 64 },
+        { label: "Research", value: String(research), level: 70 },
+        { label: "Routes", value: "8", level: 92 },
+      ],
+      [
+        { label: "Search", href: "./search.html" },
+        { label: "Archive", href: "./archive.html" },
+        { label: "VASTE", href: "https://www.vaste.space/", target: "_blank" },
+      ],
+    );
+  };
+
+  const pageLens = (type) => {
+    const configs = {
+      work: {
+        eyebrow: "WORK LENS",
+        title: "Filter the public surface by role and material.",
+        copy: "The work page now behaves like a small operating panel: active filter counts, draggable taxonomies and card-level navigation.",
+        metrics: [
+          { label: "Core", value: "06", level: 82 },
+          { label: "Collab", value: "02", level: 44 },
+          { label: "External", value: "03", level: 56 },
+          { label: "Filters", value: "09", level: 94 },
+        ],
+        links: [
+          { label: "Projects", href: "./projects.html" },
+          { label: "Search", href: "./search.html" },
+        ],
+      },
+      projects: {
+        eyebrow: "PROJECT MAP",
+        title: "Theory, art and technology stay connected.",
+        copy: "Project groups now have clearer entry points, richer card motion and a direct path into detail and RL surfaces.",
+        metrics: [
+          { label: "Pillars", value: "03", level: 90 },
+          { label: "Groups", value: "03", level: 72 },
+          { label: "RL", value: "ON", level: 84 },
+        ],
+        links: [
+          { label: "Work", href: "./work.html" },
+          { label: "Research", href: "./research.html" },
+        ],
+      },
+      research: {
+        eyebrow: "RESEARCH FIELD",
+        title: "Navigate theory as a structured graph.",
+        copy: "The research page emphasizes hierarchy, branch relations and translation paths into PALIMPSESTS.",
+        metrics: [
+          { label: "VOID", value: "01", level: 96 },
+          { label: "Branches", value: "06", level: 76 },
+          { label: "Outputs", value: "04", level: 66 },
+        ],
+        links: [
+          { label: "Programs", href: "./programs.html" },
+          { label: "Archive", href: "./archive.html" },
+        ],
+      },
+      programs: {
+        eyebrow: "SYSTEM MONITOR",
+        title: "Program groups read like a runtime stack.",
+        copy: "Animated fields, genealogy and grouped cards make the technical layer easier to scan and compare.",
+        metrics: [
+          { label: "Systems", value: String(catalog.programs?.length || 0), level: 88 },
+          { label: "Groups", value: "04", level: 80 },
+          { label: "Lineage", value: "ARCA", level: 58 },
+          { label: "Runtime", value: "VASTE", level: 96 },
+        ],
+        links: [
+          { label: "VASTE", href: "https://www.vaste.space/", target: "_blank" },
+          { label: "Research", href: "./research.html" },
+        ],
+      },
+      archive: {
+        eyebrow: "ARCHIVE CONSOLE",
+        title: "Browse fragments as a living library.",
+        copy: "Archive rails can be dragged, filtered and opened through a faster visual reading flow.",
+        metrics: [
+          { label: "Entries", value: String(catalog.artefacts?.length || 0), level: 82 },
+          { label: "Filters", value: "08", level: 92 },
+          { label: "Rails", value: "DRAG", level: 70 },
+        ],
+        links: [
+          { label: "Search", href: "./search.html" },
+          { label: "Work", href: "./work.html" },
+        ],
+      },
+      about: {
+        eyebrow: "ECOSYSTEM VIEW",
+        title: "The studio reads as a connected operating system.",
+        copy: "The about page now keeps method, pillars and navigation in the same visual grammar.",
+        metrics: [
+          { label: "Theory", value: "VOID", level: 88 },
+          { label: "Art", value: "ORETH", level: 72 },
+          { label: "Tech", value: "VASTE", level: 96 },
+        ],
+        links: [
+          { label: "Work", href: "./work.html" },
+          { label: "Contact", href: "./contact.html" },
+        ],
+      },
+      contact: {
+        eyebrow: "CONTACT ROUTER",
+        title: "Every channel has a clear action.",
+        copy: "Contact cards now sit inside the same interactive layer as the rest of the catalogue.",
+        metrics: [
+          { label: "Email", value: "01", level: 84 },
+          { label: "Social", value: "02", level: 68 },
+          { label: "External", value: "03", level: 78 },
+        ],
+        links: [
+          { label: "Email", href: "mailto:electronic.artefacts@gmail.com" },
+          { label: "Archive", href: "./archive.html" },
+        ],
+      },
+    };
+    const config = configs[type];
+    if (!config) return "";
+    return uxSurface(config.eyebrow, config.title, config.copy, config.metrics, config.links);
+  };
 
   const workTaxonomy = () => {
     const groups = [
@@ -1288,17 +1556,17 @@
               <h2 class="display-title">A memory dossier in images.</h2>
               <p class="lede">A sequence of visual plates, each one treated like an archive trace rather than a thumbnail.</p>
             </div>
-            <div class="project-immersive__hero-visual project-immersive__collage">
+          <div class="project-immersive__hero-visual project-immersive__collage">
               <figure class="project-immersive__frame project-immersive__frame--lead">
-                <img class="project-immersive__image" src="${esc(heroImage.src)}" alt="${esc(heroImage.alt || item.title)}" />
+                ${mediaFigureMarkup(heroImage, item, "project-immersive__image")}
                 ${heroImage.caption ? `<figcaption>${esc(heroImage.caption)}</figcaption>` : ""}
               </figure>
               <figure class="project-immersive__frame project-immersive__frame--split-a">
-                <img class="project-immersive__image" src="${esc(secondaryTop.src)}" alt="${esc(secondaryTop.alt || item.title)}" />
+                ${mediaFigureMarkup(secondaryTop, item, "project-immersive__image")}
                 ${secondaryTop.caption ? `<figcaption>${esc(secondaryTop.caption)}</figcaption>` : ""}
               </figure>
               <figure class="project-immersive__frame project-immersive__frame--split-b">
-                <img class="project-immersive__image" src="${esc(secondaryBottom.src)}" alt="${esc(secondaryBottom.alt || item.title)}" />
+                ${mediaFigureMarkup(secondaryBottom, item, "project-immersive__image")}
                 ${secondaryBottom.caption ? `<figcaption>${esc(secondaryBottom.caption)}</figcaption>` : ""}
               </figure>
             </div>
@@ -1308,7 +1576,7 @@
               .map(
                 (image, index) => `
                   <figure class="project-immersive__frame project-immersive__frame--rail project-immersive__rail-item--${index + 1}">
-                    <img class="project-immersive__image" src="${esc(image.src)}" alt="${esc(image.alt || item.title)}" />
+                    ${mediaFigureMarkup(image, item, "project-immersive__image")}
                     ${image.caption ? `<figcaption>${esc(image.caption)}</figcaption>` : ""}
                   </figure>
                 `,
@@ -1327,10 +1595,10 @@
             gallery.length
               ? gallery
                   .map(
-                    (image) => `
+                    (media) => `
                       <figure class="project-gallery__item">
-                        <img class="project-gallery__image" src="${esc(image.src)}" alt="${esc(image.alt || item.title)}" />
-                        ${image.caption ? `<figcaption>${esc(image.caption)}</figcaption>` : ""}
+                        ${mediaFigureMarkup(media, item)}
+                        ${media.caption ? `<figcaption>${esc(media.caption)}</figcaption>` : ""}
                       </figure>
                     `,
                   )
@@ -1573,7 +1841,8 @@
 
     return `
       <section class="zone-card hero">
-        <div class="section-head">
+        <div class="section-head${item.id === "oeil-de-meg" ? " section-head--signature" : ""}">
+          ${projectSignatureBubble(item, "hero")}
           <p class="eyebrow">${esc(catalog.taxonomies?.entityTypes?.[item.kind] || item.kind || kind.toUpperCase())}</p>
           <h1 class="display-title">${esc(item.title)}</h1>
           <p class="lede">${esc(item.description || item.summary || "")}</p>
@@ -1639,7 +1908,7 @@
         ${(catalog.collections || [])
           .map(
             (collection) => `
-              <article class="panel card-link-surface" ${cardLinkAttrs(`./collection.html?id=${encodeURIComponent(collection.id)}`, `Open ${collection.title}`)}>
+                <article class="panel card-link-surface" ${cardBaseAttrs(collection)} ${cardLinkAttrs(`./collection.html?id=${encodeURIComponent(collection.id)}`, `Open ${collection.title}`)}>
                 ${cardOverlayLink(`./collection.html?id=${encodeURIComponent(collection.id)}`, `Open ${collection.title}`)}
                 <p class="card__meta">Collection</p>
                 <h3 class="card__title">${esc(collection.title)}</h3>
@@ -1997,7 +2266,8 @@
 
     return `
       <section class="zone-card hero">
-        <div class="section-head">
+        <div class="section-head${item.id === "oeil-de-meg" ? " section-head--signature" : ""}">
+          ${projectSignatureBubble(item, "hero")}
           <p class="eyebrow">PROJECT RL</p>
           <h1 class="display-title">${esc(item.title)}</h1>
           <p class="lede">${esc(item.summary || item.description || "")}</p>
@@ -2037,13 +2307,13 @@
       </section>
     `;
   };
-  const renderWork = () => workTaxonomy() + catalogSectionWork();
-  const renderResearch = () => researchFields() + researchPrograms() + researchNotes();
-  const renderProgramsPage = () => renderPrograms();
-  const renderProjectsPage = () => renderProjects();
-  const renderArchive = () => archiveTaxonomy() + archiveLibrary();
-  const renderAbout = () => aboutMap() + aboutNetwork();
-  const renderContact = () => contactLinks();
+  const renderWork = () => pageLens("work") + workTaxonomy() + catalogSectionWork();
+  const renderResearch = () => pageLens("research") + researchFields() + researchPrograms() + researchNotes();
+  const renderProgramsPage = () => pageLens("programs") + renderPrograms();
+  const renderProjectsPage = () => pageLens("projects") + renderProjects();
+  const renderArchive = () => pageLens("archive") + archiveTaxonomy() + archiveLibrary();
+  const renderAbout = () => pageLens("about") + aboutMap() + aboutNetwork();
+  const renderContact = () => pageLens("contact") + contactLinks();
 
   const catalogSectionWork = () => {
     const groups = [
@@ -2116,7 +2386,7 @@
   const renderers = {
     home: {
       "home-vaste-banner": renderVasteBanner,
-      "home-featured-work": renderFeaturedWork,
+      "home-featured-work": () => ecosystemExplorer() + renderFeaturedWork(),
       "home-featured-research": renderFeaturedResearch,
       "home-latest": renderLatest,
       "home-activity": renderActivityFeed,
@@ -2124,7 +2394,7 @@
       "cross-navigation": renderCrossNavigation,
     },
     work: {
-      "work-taxonomy": workTaxonomy,
+      "work-taxonomy": () => pageLens("work") + workTaxonomy(),
       "work-catalog": catalogSectionWork,
       "cross-navigation": renderCrossNavigation,
     },
@@ -2133,7 +2403,7 @@
       "cross-navigation": renderCrossNavigation,
     },
     research: {
-      "research-fields": researchFields,
+      "research-fields": () => pageLens("research") + researchFields(),
       "research-programs": researchPrograms,
       "research-notes": researchNotes,
       "cross-navigation": renderCrossNavigation,
@@ -2143,12 +2413,12 @@
       "cross-navigation": renderCrossNavigation,
     },
     archive: {
-      "archive-taxonomy": archiveTaxonomy,
+      "archive-taxonomy": () => pageLens("archive") + archiveTaxonomy(),
       "archive-library": archiveLibrary,
       "cross-navigation": renderCrossNavigation,
     },
     about: {
-      "about-map": aboutMap,
+      "about-map": () => pageLens("about") + aboutMap(),
       "about-network": aboutNetwork,
       "cross-navigation": renderCrossNavigation,
     },
@@ -2198,6 +2468,7 @@
     initFilters(filterState);
     initSearch(searchState, renderPageSections);
     initCardLinks();
+    initUXEnhancements(filterState);
   };
 
   const load = async () => {

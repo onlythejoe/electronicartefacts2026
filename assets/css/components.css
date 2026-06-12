@@ -124,6 +124,25 @@
   transform: translateY(-1px);
 }
 
+.tag-cluster--compact {
+  gap: 0.35rem;
+}
+
+.tag-cluster--compact .chip,
+.tag-cluster--compact .tag {
+  min-height: 1.65rem;
+  padding: 0.28rem 0.58rem;
+  font-size: 0.72rem;
+  letter-spacing: 0.03em;
+}
+
+.chip--overflow {
+  border-style: dashed;
+  border-color: rgba(228, 213, 196, 0.24);
+  background: rgba(255, 255, 255, 0.03);
+  color: rgba(245, 243, 238, 0.76);
+}
+
 .status-badge,
 .entity-badge,
 .filter-chip {
@@ -337,6 +356,24 @@
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: var(--radius-md);
   background: rgba(255, 255, 255, 0.012);
+}
+
+.project-card .metadata-panel,
+.program-card .metadata-panel,
+.archive-card .metadata-panel,
+.project-card .relation-list,
+.program-card .relation-list,
+.archive-card .relation-list {
+  gap: 0.42rem;
+}
+
+.project-card .metadata-row,
+.program-card .metadata-row,
+.archive-card .metadata-row,
+.project-card .relation-item,
+.program-card .relation-item,
+.archive-card .relation-item {
+  padding: 0.6rem 0.68rem;
 }
 
 .list-item {

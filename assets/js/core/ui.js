@@ -18,12 +18,30 @@
     return `<span class="entity-badge entity-badge--${esc(key)}">${esc(catalog.entityTypes?.[key] || key)}</span>`;
   };
 
-  const chip = (text, extraClass = "") =>
-    `<span class="chip ${esc(extraClass)}">${esc(text)}</span>`;
+  const taxonomyTone = (value) => {
+    const text = String(value || "").toLowerCase();
+    if (text.includes("music") || text.includes("audio") || text.includes("oreth") || text.includes("palimpsests")) return "sound";
+    if (text.includes("technology") || text.includes("software") || text.includes("runtime") || text.includes("system") || text.includes("vaste")) return "system";
+    if (text.includes("research") || text.includes("void") || text.includes("theory") || text.includes("entropy") || text.includes("emergence")) return "research";
+    if (text.includes("visual") || text.includes("photography") || text.includes("image") || text.includes("creative")) return "visual";
+    if (text.includes("archive") || text.includes("document") || text.includes("memory")) return "archive";
+    if (text.includes("narrative") || text.includes("myth") || text.includes("vestiges")) return "narrative";
+    if (text.includes("client") || text.includes("external") || text.includes("communication")) return "surface";
+    if (text.includes("active") || text.includes("public") || text.includes("released")) return "live";
+    if (text.includes("prototype") || text.includes("experimental") || text.includes("development")) return "process";
+    return "neutral";
+  };
 
-  const tagRow = (items) => {
+  const chip = (text, extraClass = "") =>
+    `<span class="chip taxonomy-pill taxonomy-pill--${esc(taxonomyTone(text))} ${esc(extraClass)}" data-taxonomy-tone="${esc(taxonomyTone(text))}" tabindex="0" role="button" aria-pressed="false">${esc(text)}</span>`;
+
+  const tagRow = (items, options = {}) => {
     if (!items || !items.length) return "";
-    return `<div class="tag-cluster">${items.map((item) => chip(item)).join("")}</div>`;
+    const limit = Number.isFinite(options.limit) ? Math.max(0, options.limit) : items.length;
+    const compact = options.compact !== false;
+    const visible = items.slice(0, limit);
+    const overflow = Math.max(0, items.length - visible.length);
+    return `<div class="tag-cluster${compact ? " tag-cluster--compact" : ""}">${visible.map((item) => chip(item)).join("")}${overflow ? `<span class="chip chip--overflow" aria-hidden="true">+${overflow}</span>` : ""}</div>`;
   };
 
   const relationList = (relations) => {
@@ -100,5 +118,6 @@
     linkRow,
     cardLinkAttrs,
     cardOverlayLink,
+    taxonomyTone,
   };
 })();
