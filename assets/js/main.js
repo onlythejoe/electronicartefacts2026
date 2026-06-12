@@ -161,25 +161,25 @@
 
   const archiveCard = (item) => `
     <article class="archive-card" ${cardBaseAttrs(item)}>
-      <div class="project-card__top">
-        <div>
-          <p class="card__meta">${esc(item.type || "ARCHIVE")}</p>
+      <div class="archive-card__header">
+        <div class="archive-card__identity">
+          <p class="card__meta">${esc(item.type || "ARCHIVE")}${item.category ? ` · ${esc(item.category)}` : ""}</p>
           <h3 class="card__title">${esc(item.title)}</h3>
+          <p class="card__copy">${esc(item.summary)}</p>
         </div>
-        ${statusBadge(item.status, item.statusLabel)}
+        <div class="archive-card__status">
+          ${statusBadge(item.status, item.statusLabel)}
+          ${item.date ? chip(`Date: ${item.date}`) : ""}
+        </div>
       </div>
-      <p class="card__copy">${esc(item.summary)}</p>
-      <div class="project-card__meta">
-        ${entityBadge("archive")}
-        ${item.date ? chip(`Date: ${item.date}`) : ""}
-        ${item.category ? chip(`Category: ${item.category}`) : ""}
+      <div class="archive-card__facts">
+        ${item.researchField ? `<div class="archive-card__fact archive-card__fact--wide"><span>Research field</span><strong>${esc(item.researchField)}</strong></div>` : ""}
+        ${item.project ? `<div class="archive-card__fact"><span>Project</span><strong>${esc(item.project)}</strong></div>` : ""}
+        ${item.artist ? `<div class="archive-card__fact"><span>Artist</span><strong>${esc(item.artist)}</strong></div>` : ""}
       </div>
-      ${metadataList([
-        { label: "Research field", value: item.researchField },
-        { label: "Project", value: item.project },
-        { label: "Artist", value: item.artist },
-      ])}
-      ${tagRow([...(item.medium || []), ...(item.discipline || []), ...(item.related || [])])}
+      <div class="archive-card__chips">
+        ${tagRow([...(item.medium || []), ...(item.discipline || []), ...(item.related || [])])}
+      </div>
       ${linkRow(item.cta || null, item.links || [])}
     </article>
   `;
@@ -360,6 +360,17 @@
       </section>
     `;
   };
+
+  const vasteBanner = () => `
+    <section class="zone-card hero vaste-banner">
+      <a class="vast-banner__link" href="https://www.vaste.space/" target="_blank" rel="noreferrer" aria-label="Ouvrir VASTE ENGINE sur vaste.space">
+        <span class="vast-banner__eyebrow">FEATURED PROGRAM</span>
+        <strong class="vast-banner__title">VASTE ENGINE</strong>
+        <span class="vast-banner__copy">Runtime / research engine for systems, memory and public experimentation.</span>
+        <span class="button button--primary vast-banner__cta">Visit vaste.space</span>
+      </a>
+    </section>
+  `;
 
   const featuredResearch = () => {
     const vaste = catalog.programs?.find((item) => item.id === "vaste");
@@ -733,8 +744,10 @@
                     <h3>${esc(category)}</h3>
                     <p class="lede">${esc(items.length)} entries</p>
                   </div>
-                  <div class="card-grid card-grid--two">
-                    ${items.map(archiveCard).join("")}
+                  <div class="archive-rail-shell">
+                    <div class="archive-rail">
+                      ${items.map(archiveCard).join("")}
+                    </div>
                   </div>
                 </section>
               `,
@@ -1329,8 +1342,8 @@
 
   const renderCrossNavigation = () => crossNavigation();
 
-  const renderManifest = () => manifestPanel();
   const renderFeaturedWork = () => featuredWork();
+  const renderVasteBanner = () => vasteBanner();
   const renderFeaturedResearch = () => featuredResearch();
   const renderLatest = () => latestArtefacts();
   const renderWork = () => workTaxonomy() + catalogSectionWork();
@@ -1403,7 +1416,7 @@
 
   const renderers = {
     home: {
-      "home-manifest": renderManifest,
+      "home-vaste-banner": renderVasteBanner,
       "home-featured-work": renderFeaturedWork,
       "home-featured-research": renderFeaturedResearch,
       "home-latest": renderLatest,
