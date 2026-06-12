@@ -480,6 +480,16 @@ window.EA_ENTITIES = {
       description: "Main album project carried by ORETH and published by Electronic Artefacts.",
       summary: "Main album project carried by ORETH.",
       tags: ["Palimpsests", "Album", "ORETH"],
+      media: {
+        folder: "./assets/media/projects/palimpsests",
+        gallery: [{ src: "./assets/media/projects/palimpsests/palimpsests.jpg", alt: "Palimpsests album cover", caption: "Album visual used as the project cover." }],
+      },
+      architecture: {
+        surface: "Album / audio cycle",
+        stack: "Public release, audio fragments, narrative framing and archive layer.",
+        layers: ["Release", "Audio", "Narrative", "Archive"],
+        note: "Built as a modular musical dossier rather than a single static object.",
+      },
       relations: {
         origin: ["oreth"],
         parent: ["electronic-artefacts"],
@@ -522,6 +532,16 @@ window.EA_ENTITIES = {
       description: "Narrative frame that lets projects branch into a broader editorial universe.",
       summary: "Narrative universe for branching editorial systems.",
       tags: ["Vestiges", "Universe", "Narrative"],
+      media: {
+        folder: "./assets/media/projects/vestiges",
+        gallery: [{ src: "./assets/media/projects/vestiges/cover.svg", alt: "Vestiges dossier cover", caption: "Project dossier cover." }],
+      },
+      architecture: {
+        surface: "Narrative universe",
+        stack: "Worldbuilding frame, branching text, visual references and archive layer.",
+        layers: ["Universe", "Branches", "Mythology", "Archive"],
+        note: "Prepared as a narrative system that can absorb new branches later.",
+      },
       relations: {
         origin: ["palimpsests"],
         parent: ["palimpsests"],
@@ -562,6 +582,16 @@ window.EA_ENTITIES = {
       description: "Creative technology platform with a shared technical base and extensible modules.",
       summary: "Creative technology platform.",
       tags: ["UnionMob", "Platform"],
+      media: {
+        folder: "./assets/media/projects/unionmob",
+        gallery: [{ src: "./assets/media/projects/unionmob/cover.svg", alt: "UnionMob dossier cover", caption: "Project dossier cover." }],
+      },
+      architecture: {
+        surface: "Platform",
+        stack: "Shared core, modules, interface layer and research notes.",
+        layers: ["Core", "Modules", "Interface", "Archive"],
+        note: "Built to stay extensible and maintainable.",
+      },
       relations: {
         origin: ["vaste"],
         parent: ["electronic-artefacts"],
@@ -602,6 +632,16 @@ window.EA_ENTITIES = {
       description: "Client or product layer designed for structure, clarity and maintainability.",
       summary: "Client or product platform.",
       tags: ["AtypikHouse", "Platform"],
+      media: {
+        folder: "./assets/media/projects/atypikhouse",
+        gallery: [{ src: "./assets/media/projects/atypikhouse/cover.svg", alt: "AtypikHouse dossier cover", caption: "Project dossier cover." }],
+      },
+      architecture: {
+        surface: "Product / client layer",
+        stack: "UI structure, configuration, maintainability and archive support.",
+        layers: ["Surface", "Configuration", "UI", "Archive"],
+        note: "Kept deliberately clean so it can absorb future client requirements.",
+      },
       relations: {
         origin: ["vaste"],
         parent: ["electronic-artefacts"],
@@ -642,6 +682,16 @@ window.EA_ENTITIES = {
       description: "Photography CRM and portfolio ecosystem presented as a clean live system.",
       summary: "Photography CRM and portfolio ecosystem.",
       tags: ["Photography", "Client Work"],
+      media: {
+        folder: "./assets/media/projects/oeil-de-meg",
+        gallery: [{ src: "./assets/media/projects/oeil-de-meg/cover.svg", alt: "L Oeil de Meg dossier cover", caption: "Project dossier cover." }],
+      },
+      architecture: {
+        surface: "Photography / portfolio ecosystem",
+        stack: "CRM, portfolio surface, editorial workflow and public site.",
+        layers: ["CRM", "Portfolio", "Editorial", "Archive"],
+        note: "The structure prioritises clarity for image-heavy workflows.",
+      },
       relations: {
         origin: ["creativestuff"],
         parent: ["electronic-artefacts"],

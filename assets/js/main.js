@@ -246,7 +246,13 @@
         { label: "Program", value: item.program },
       ])}
       ${relationList(item.related)}
-      ${linkRow(item.cta, item.links || [])}
+      ${linkRow(
+        item.kind === "project" ? { label: "Detail", href: `./project.html?id=${encodeURIComponent(item.id)}` } : item.cta,
+        [
+          ...(item.kind === "project" ? [{ label: "RL", href: `./project-rl.html?id=${encodeURIComponent(item.id)}` }] : []),
+          ...(item.links || []),
+        ],
+      )}
     </article>
   `;
 
@@ -1216,6 +1222,83 @@
     );
   };
 
+  const projectMediaFolder = (item) => item.media?.folder || `./assets/media/projects/${item.id}`;
+
+  const projectArchitecturePanel = (item) => {
+    if (item.kind !== "project") return "";
+    const architecture = item.architecture || {};
+    const layers = architecture.layers || [];
+    return panelShell(
+      "Physical architecture",
+      architecture.note || "Surface, routing and local asset storage.",
+      `
+        <div class="project-architecture">
+          <div class="project-architecture__hero">
+            <p class="card__meta">Route</p>
+            <strong>./project.html?id=${esc(item.id)}</strong>
+          </div>
+          <div class="project-architecture__grid">
+            <article class="panel panel--soft">
+              <p class="card__meta">Surface</p>
+              <h3 class="card__title">${esc(architecture.surface || item.type || "Project")}</h3>
+              <p class="card__copy">${esc(architecture.surfaceCopy || item.description || item.summary || "")}</p>
+            </article>
+            <article class="panel panel--soft">
+              <p class="card__meta">Storage</p>
+              <h3 class="card__title">${esc(projectMediaFolder(item))}</h3>
+              <p class="card__copy">Local dossier assets live inside the project folder only.</p>
+            </article>
+            <article class="panel panel--soft">
+              <p class="card__meta">Stack</p>
+              <h3 class="card__title">${esc(architecture.stack || item.program || "Electronic Artefacts")}</h3>
+              <p class="card__copy">${esc(architecture.stackCopy || "General template with project-specific assets and narrative.")}</p>
+            </article>
+            <article class="panel panel--soft">
+              <p class="card__meta">Layers</p>
+              <h3 class="card__title">${esc((layers.length || 0).toString())}</h3>
+              <p class="card__copy">${esc(architecture.layerCopy || "Structure, public surface, archive path and asset folder.")}</p>
+            </article>
+          </div>
+          ${layers.length ? `<div class="tag-cluster">${layers.map((layer) => chip(layer)).join("")}</div>` : ""}
+        </div>
+      `,
+    );
+  };
+
+  const projectGalleryPanel = (item) => {
+    if (item.kind !== "project") return "";
+    const gallery = item.media?.gallery || [];
+    const folder = projectMediaFolder(item);
+    return panelShell(
+      "Local dossier",
+      "Project-specific image folder.",
+      `
+        <div class="project-gallery">
+          ${
+            gallery.length
+              ? gallery
+                  .map(
+                    (image) => `
+                      <figure class="project-gallery__item">
+                        <img class="project-gallery__image" src="${esc(image.src)}" alt="${esc(image.alt || item.title)}" />
+                        ${image.caption ? `<figcaption>${esc(image.caption)}</figcaption>` : ""}
+                      </figure>
+                    `,
+                  )
+                  .join("")
+              : `
+                <div class="panel panel--soft">
+                  <p class="card__meta">Assets</p>
+                  <h3 class="card__title">Folder ready</h3>
+                  <p class="card__copy">Add cover.svg and dossier images to <strong>${esc(folder)}</strong>. This block will render only inside the project detail page.</p>
+                </div>
+              `
+          }
+        </div>
+      `,
+    );
+  };
+
   const collectionPanel = (item) => {
     const memberships = (catalog.collections || []).filter((collection) => {
       const members = (window.EA_COLLECTIONS.resolve ? window.EA_COLLECTIONS.resolve(collection, catalog) : []);
@@ -1270,6 +1353,11 @@
     collectionMembersPanel(item),
   ].filter(Boolean).join("");
 
+  const projectPanels = (item) => {
+    if (item.kind !== "project") return "";
+    return [projectArchitecturePanel(item), projectGalleryPanel(item)].filter(Boolean).join("");
+  };
+
   const renderDetailPage = () => {
     const id = new URLSearchParams(window.location.search).get("id");
     const item = id ? entityById(id) || collectionById(id) : null;
@@ -1314,6 +1402,7 @@
           </div>
         </div>
       </section>
+      ${projectPanels(item) ? `<section class="detail-grid">${projectPanels(item)}</section>` : ""}
       <section class="detail-grid">
         ${knowledgePanels(item)}
       </section>
