@@ -89,8 +89,9 @@
 .entity-badge,
 .filter-chip {
   box-sizing: border-box;
-  min-height: 2rem;
-  padding: 0.38rem 0.72rem;
+  width: fit-content;
+  min-height: 1.9rem;
+  padding: 0.32rem 0.65rem;
   border-radius: 999px;
   border: 1px solid var(--border);
   background: rgba(255, 255, 255, 0.02);
@@ -103,8 +104,9 @@
 .pill-cloud .chip,
 .tag,
 .chip {
-  min-height: 2.05rem;
-  padding: 0.42rem 0.75rem;
+  width: fit-content;
+  min-height: 1.95rem;
+  padding: 0.34rem 0.68rem;
 }
 
 .pill-cloud .chip {
@@ -130,10 +132,10 @@
 
 .tag-cluster--compact .chip,
 .tag-cluster--compact .tag {
-  min-height: 1.65rem;
-  padding: 0.28rem 0.58rem;
-  font-size: 0.72rem;
-  letter-spacing: 0.03em;
+  min-height: 1.55rem;
+  padding: 0.22rem 0.52rem;
+  font-size: 0.7rem;
+  letter-spacing: 0.025em;
 }
 
 .chip--overflow {

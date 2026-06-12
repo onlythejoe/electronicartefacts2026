@@ -86,6 +86,55 @@
   max-width: 100%;
 }
 
+.project-card .tag-cluster,
+.program-card .tag-cluster,
+.archive-card .tag-cluster,
+.panel .tag-cluster,
+.project-card .pill-cloud,
+.program-card .pill-cloud,
+.archive-card .pill-cloud,
+.panel .pill-cloud {
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scrollbar-width: thin;
+  -webkit-overflow-scrolling: touch;
+}
+
+.project-card .tag-cluster::-webkit-scrollbar,
+.program-card .tag-cluster::-webkit-scrollbar,
+.archive-card .tag-cluster::-webkit-scrollbar,
+.panel .tag-cluster::-webkit-scrollbar,
+.project-card .pill-cloud::-webkit-scrollbar,
+.program-card .pill-cloud::-webkit-scrollbar,
+.archive-card .pill-cloud::-webkit-scrollbar,
+.panel .pill-cloud::-webkit-scrollbar {
+  height: 0.3rem;
+}
+
+.project-card .tag-cluster::-webkit-scrollbar-thumb,
+.program-card .tag-cluster::-webkit-scrollbar-thumb,
+.archive-card .tag-cluster::-webkit-scrollbar-thumb,
+.panel .tag-cluster::-webkit-scrollbar-thumb,
+.project-card .pill-cloud::-webkit-scrollbar-thumb,
+.program-card .pill-cloud::-webkit-scrollbar-thumb,
+.archive-card .pill-cloud::-webkit-scrollbar-thumb,
+.panel .pill-cloud::-webkit-scrollbar-thumb {
+  background: rgba(255, 255, 255, 0.16);
+  border-radius: 999px;
+}
+
+.project-card .tag-cluster .chip,
+.program-card .tag-cluster .chip,
+.archive-card .tag-cluster .chip,
+.panel .tag-cluster .chip,
+.project-card .pill-cloud .chip,
+.program-card .pill-cloud .chip,
+.archive-card .pill-cloud .chip,
+.panel .pill-cloud .chip {
+  flex: 0 0 auto;
+}
+
 .section-head {
   display: grid;
   gap: 0.45rem;

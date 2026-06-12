@@ -221,7 +221,7 @@
         ${chip(`Type: ${item.type || "Project"}`)}
         ${item.category ? chip(`Category: ${item.category}`) : ""}
       </div>
-      ${tagRow([...(item.medium || []), ...(item.discipline || [])], { limit: 3, compact: true })}
+      ${tagRow([...(item.medium || []), ...(item.discipline || [])], { limit: 4, compact: true })}
       ${metadataList([
         { label: "Artist", value: item.artist },
         { label: "Program", value: item.program },
@@ -255,7 +255,7 @@
         ${item.program ? chip(`Program: ${item.program}`) : ""}
         ${item.temporality?.era ? chip(`Era: ${item.temporality.era}`) : ""}
       </div>
-      ${tagRow([...(item.medium || []), ...(item.discipline || [])], { limit: 2, compact: true })}
+      ${tagRow([...(item.medium || []), ...(item.discipline || [])], { limit: 4, compact: true })}
       <div class="link-row">
         <a class="tag" href="${esc(item.route || `./project.html?id=${encodeURIComponent(item.id)}`)}">Detail</a>
         <a class="tag" href="./project-rl.html?id=${encodeURIComponent(item.id)}">RL</a>
@@ -283,7 +283,7 @@
         ${item.artist ? `<div class="archive-card__fact"><span>Artist</span><strong>${esc(item.artist)}</strong></div>` : ""}
       </div>
       <div class="archive-card__chips">
-        ${tagRow([...(item.medium || []), ...(item.discipline || []), ...(item.related || [])], { limit: 4, compact: true })}
+      ${tagRow([...(item.medium || []), ...(item.discipline || []), ...(item.related || [])], { limit: 5, compact: true })}
       </div>
       ${linkRow(item.cta || null, item.links || [])}
     </article>
@@ -301,7 +301,7 @@
       </div>
       ${cardCopy(item.summary, 2)}
       ${signalStrip(item)}
-      ${tagRow([...(item.medium || []), ...(item.discipline || [])], { limit: 3, compact: true })}
+      ${tagRow([...(item.medium || []), ...(item.discipline || [])], { limit: 4, compact: true })}
       ${metadataList([
         { label: "Projects", value: (item.relatedProjects || []).join(", ") },
         { label: "Artefacts", value: (item.relatedArtefacts || []).join(", ") },
@@ -322,7 +322,7 @@
       </div>
       ${cardCopy(item.summary, 2)}
       ${signalStrip(item)}
-      ${tagRow([...(item.medium || []), ...(item.discipline || [])], { limit: 3, compact: true })}
+      ${tagRow([...(item.medium || []), ...(item.discipline || [])], { limit: 4, compact: true })}
       ${metadataList([
         { label: "Kind", value: item.kind },
       ])}
@@ -348,7 +348,7 @@
         ${item.domain ? chip(`Domain: ${item.domain}`) : ""}
         ${item.systemGroup ? chip(`System: ${item.systemGroup}`) : ""}
       </div>
-      ${tagRow([...(item.medium || []), ...(item.discipline || [])], { limit: 3, compact: true })}
+      ${tagRow([...(item.medium || []), ...(item.discipline || [])], { limit: 4, compact: true })}
       ${relationList(item.related)}
       ${linkRow(item.cta)}
     </article>
@@ -369,7 +369,7 @@
         ${entityBadge("channel")}
         ${chip(`Medium: ${(item.medium || []).join(", ") || "Channel"}`)}
       </div>
-      ${tagRow([...(item.discipline || [])], { limit: 2, compact: true })}
+      ${tagRow([...(item.discipline || [])], { limit: 3, compact: true })}
       ${relationList(item.related)}
       ${linkRow(item.cta)}
     </article>
