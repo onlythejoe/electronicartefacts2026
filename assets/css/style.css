@@ -196,34 +196,42 @@ strong {
 
 .brand-lockup {
   display: inline-flex;
-  align-items: center;
-  gap: 0.8rem;
+  align-items: flex-start;
+  gap: 0;
   min-width: 0;
-}
-
-.brand-mark {
-  display: inline-grid;
-  place-items: center;
-  flex: none;
-  width: 3rem;
-  height: 3rem;
-  border-radius: 999px;
-  background: linear-gradient(180deg, rgba(247, 244, 239, 0.98), rgba(247, 244, 239, 0.78));
-  color: var(--bg);
-  font-size: 0.98rem;
-  font-weight: 800;
-  letter-spacing: 0.08em;
 }
 
 .brand-text {
   display: grid;
   gap: 0.2rem;
   min-width: 0;
+  text-align: left;
 }
 
 .brand-text strong {
-  font-size: 1rem;
+  display: inline-flex;
+  align-items: baseline;
+  gap: 0;
+  font-family: "Inter", "SF Pro Display", "Segoe UI", system-ui, sans-serif;
+  font-size: 1.03rem;
+  line-height: 1;
   letter-spacing: 0.01em;
+  color: rgba(247, 244, 239, 0.99);
+}
+
+.brand-name-brand {
+  font-size: 0.73em;
+  font-weight: 550;
+  letter-spacing: 0;
+  margin-right: -0.01em;
+  color: rgba(247, 244, 239, 0.92);
+}
+
+.brand-name-accent {
+  font-size: 1em;
+  font-weight: 780;
+  letter-spacing: 0.01em;
+  color: rgba(247, 244, 239, 1);
 }
 
 .brand-text span {
@@ -1604,7 +1612,11 @@ input:focus-visible {
 
 @media (max-width: 24rem) {
   .brand-text strong {
-    font-size: 0.95rem;
+    font-size: 0.98rem;
+  }
+
+  .brand-name-brand {
+    margin-right: -0.015em;
   }
 
   .brand-text span {
