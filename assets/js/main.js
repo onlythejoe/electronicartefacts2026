@@ -823,10 +823,10 @@
       <div class="contact-grid">
         ${[
           {
-            title: "contact@electronicartefacts.com",
+            title: "electronic.artefacts@gmail.com",
             type: "Email",
             copy: "Primary contact for studio, label and research requests.",
-            link: { label: "Send email", href: "mailto:contact@electronicartefacts.com" },
+            link: { label: "Send email", href: "mailto:electronic.artefacts@gmail.com" },
           },
           {
             title: "@electronic.artefacts",
