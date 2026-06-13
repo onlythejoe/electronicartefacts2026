@@ -717,7 +717,7 @@
     syncPageTitle({ current, entityById });
 
     const siteName = "Electronic Artefacts";
-    const fallbackDescription = "Electronic Artefacts, studio créatif, laboratoire de recherche et label indépendant.";
+    const fallbackDescription = "Electronic Artefacts is an independent creative technology studio operating across research, software development, digital design, communication and artistic production.";
     const pageName = window.location.pathname.split("/").pop() || "index.html";
     const baseName = pageName.replace(/\.html$/, "");
     const queryId = new URLSearchParams(window.location.search).get("id");
@@ -734,7 +734,7 @@
       programs: "Programmes, runtimes et systèmes architecturaux qui alimentent Electronic Artefacts.",
       projects: "Projets, albums et travaux clients du catalogue Electronic Artefacts.",
       archive: "Projets archivés, systèmes et fils de recherche conservés par Electronic Artefacts.",
-      about: "Contexte du studio, de la théorie et des archives d'Electronic Artefacts.",
+      about: "Electronic Artefacts is an independent creative technology studio spanning research, software development, digital design, communication and artistic production.",
       contact: "Contacter Electronic Artefacts par email et canaux sociaux.",
       search: "Rechercher dans la base de connaissances Electronic Artefacts.",
       project: "Fiche projet d'Electronic Artefacts.",

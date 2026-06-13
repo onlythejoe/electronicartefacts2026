@@ -1768,8 +1768,8 @@
   display: grid;
   justify-items: center;
   gap: 0.35rem;
-  min-width: 6.2rem;
-  width: auto;
+  width: 5.75rem;
+  height: 5.75rem;
   padding: 0;
   border: 0;
   border-radius: 0;
@@ -1783,8 +1783,10 @@
   touch-action: none;
   opacity: 0;
   transform-style: preserve-3d;
+  will-change: transform, opacity;
   transform: translate3d(var(--x), var(--y), var(--z));
   transition:
+    opacity 220ms ease,
     transform 220ms ease,
     border-color 180ms ease,
     background-color 180ms ease,
@@ -1795,58 +1797,9 @@
   cursor: grabbing;
 }
 
-.graph-surface__node::before {
-  content: "";
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  width: 5.75rem;
-  height: 5.75rem;
-  border-radius: 50%;
-  transform: translate(-50%, -50%);
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  background:
-    radial-gradient(circle at 50% 50%, rgba(234, 220, 207, 0.08), transparent 58%),
-    linear-gradient(135deg, rgba(234, 220, 207, 0.08), transparent 52%),
-    rgba(5, 5, 7, 0.52);
-  box-shadow: 0 0 26px rgba(255, 255, 255, 0.04);
-  opacity: 0.96;
-  pointer-events: none;
-}
-
-.graph-surface__node-core {
-  position: relative;
-  display: block;
-  width: 1rem;
-  height: 1rem;
-  margin-top: 2.24rem;
-  border-radius: 50%;
-  background:
-    radial-gradient(circle at 35% 35%, rgba(255, 255, 255, 0.94), rgba(255, 255, 255, 0.2) 40%, transparent 70%),
-    var(--node-color, rgba(234, 220, 207, 0.9));
-  box-shadow: 0 0 18px rgba(255, 255, 255, 0.14);
-}
-
-.graph-surface__node strong {
-  position: relative;
-  display: block;
-  margin-top: 0.02rem;
-  color: rgba(247, 244, 239, 0.98);
-  font-size: 0.68rem;
-  line-height: 1.05;
-  letter-spacing: 0.14em;
-  text-transform: uppercase;
-  text-align: center;
-}
-
-.graph-surface__node small {
-  display: block;
-  color: rgba(213, 206, 195, 0.72);
-  font-size: 0.62rem;
-  font-weight: 780;
-  letter-spacing: 0.12em;
-  text-transform: uppercase;
-  text-align: center;
+.graph-surface.is-visible .graph-surface__core,
+.graph-surface.is-visible .graph-surface__node {
+  opacity: 1;
 }
 
 .graph-surface__node.is-emphasis {

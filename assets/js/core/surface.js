@@ -48,10 +48,13 @@
           .map(
             (node, index) => {
               const tag = node.href ? "a" : "button";
+              const label = node.label || `Node ${index + 1}`;
+              const note = node.note || "";
               const attrs = [
+                !node.href ? 'type="button"' : "",
                 node.href ? `href="${esc(node.href)}"` : "",
                 node.target ? `target="${esc(node.target)}" rel="noreferrer"` : "",
-                node.label ? `aria-label="${esc(node.label)}"` : "",
+                `aria-label="${esc(note ? `${label} - ${note}` : label)}"`,
               ]
                 .filter(Boolean)
                 .join(" ");
@@ -60,10 +63,12 @@
                   class="graph-surface__node"
                   data-graph-node
                   data-node-index="${index}"
-                  data-node-label="${esc(node.label || "")}"
+                  data-node-label="${esc(label)}"
+                  data-node-note="${esc(note)}"
                   ${attrs}
                   style="--x:${esc(node.x || "0rem")};--y:${esc(node.y || "0rem")};--z:${esc(node.z || "0rem")};--node-color:${esc(node.color || "rgba(234,220,207,0.9)")};"
-                ></${tag}>
+                >
+                </${tag}>
               `;
             },
           )

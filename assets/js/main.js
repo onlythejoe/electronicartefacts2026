@@ -428,67 +428,171 @@
     `;
   };
 
+  const aboutDivisions = [
+    {
+      id: "research-development",
+      href: "#research-development",
+      nodeLabel: "R&D",
+      meta: "Research & Development",
+      title: "Emerging technologies and speculative futures.",
+      copy: "Electronic Artefacts Research Division investigates emerging technologies, digital systems, artificial intelligence, creative workflows, generative media and speculative futures. The objective is not only to study technologies, but to understand how they can shape new forms of expression, collaboration and interaction.",
+      chips: ["White papers", "Prototypes", "Experiments", "Datasets", "Frameworks", "Publications", "Creative research programs"],
+      x: "-15rem",
+      y: "-8rem",
+      z: "-16rem",
+    },
+    {
+      id: "software-systems",
+      href: "#software-systems",
+      nodeLabel: "SYSTEMS",
+      meta: "Software & Systems",
+      title: "Creative software and digital infrastructures.",
+      copy: "Electronic Artefacts develops software, digital infrastructures and experimental platforms. Projects range from internal tools and creative applications to larger-scale systems designed for communities, creators and organizations.",
+      chips: ["Creative software", "Artificial intelligence", "Data systems", "Digital archives", "Web platforms", "Interactive experiences", "Automation systems", "Emerging interfaces"],
+      x: "15rem",
+      y: "-9rem",
+      z: "16rem",
+    },
+    {
+      id: "creative-studio",
+      href: "#creative-studio",
+      nodeLabel: "STUDIO",
+      meta: "Creative Studio",
+      title: "Design and production for brands, artists and organizations.",
+      copy: "The studio provides creative direction, design and production services across branding, visual identity, web design, user experience, motion design, creative strategy, storytelling and digital experiences.",
+      chips: ["Branding", "Visual identity", "Web design", "User experience", "Motion design", "Creative strategy", "Storytelling", "Digital experiences"],
+      x: "-17rem",
+      y: "2rem",
+      z: "10rem",
+    },
+    {
+      id: "communication-strategy",
+      href: "#communication-strategy",
+      nodeLabel: "STRATEGY",
+      meta: "Communication & Strategy",
+      title: "Complex ideas turned into clear narratives.",
+      copy: "Electronic Artefacts helps organizations define, structure and communicate their ideas through communication consulting, content strategy, editorial design, campaign development, digital communication, audience building and creative marketing.",
+      chips: ["Communication consulting", "Content strategy", "Editorial design", "Campaign development", "Digital communication", "Audience building", "Creative marketing"],
+      x: "17rem",
+      y: "3rem",
+      z: "-10rem",
+    },
+    {
+      id: "production-publishing",
+      href: "#production-publishing",
+      nodeLabel: "PUBLISH",
+      meta: "Production & Publishing",
+      title: "Music, audiovisual work and immersive releases.",
+      copy: "The label produces and releases music, audiovisual works, digital artefacts, experimental publications and immersive experiences. Projects may be developed internally or in collaboration with external artists, researchers, designers and technologists.",
+      chips: ["Music", "Audiovisual works", "Digital artefacts", "Experimental publications", "Immersive experiences"],
+      x: "-10rem",
+      y: "14rem",
+      z: "12rem",
+    },
+    {
+      id: "vision-statement",
+      href: "#about-vision",
+      nodeLabel: "VISION",
+      meta: "Philosophy & Vision",
+      title: "Design systems. Create artefacts. Shape futures.",
+      copy: "The long-term ambition is to become a research laboratory, a software company, a creative agency, a cultural publisher and a production label united by a single mission.",
+      chips: ["Research laboratory", "Software company", "Creative agency", "Cultural publisher", "Production label"],
+      x: "10rem",
+      y: "14rem",
+      z: "-12rem",
+      emphasis: true,
+    },
+  ];
+
   const aboutMap = () =>
     graphSurface({
-      eyebrow: "METHOD",
-      title: "A living atlas.",
-      copy: "Theory, research, programs, artefacts and documentation remain visible as one connected field.",
+      eyebrow: "ECOSYSTEM VIEW",
+      title: "Electronic Artefacts as an evolving ecosystem.",
+      copy: "Research, software, design, communication and publishing stay connected as one system.",
       coreLabel: catalog.ecosystem?.root || "Electronic Artefacts",
-      coreCopy: "Root system",
-      nodes: [
-        { label: "VOID", note: "Theory", x: "-13rem", y: "-7rem", z: "-12rem", angle: "30deg", length: "14rem" },
-        { label: "PALIMPSESTS", note: "Art", x: "12rem", y: "-7rem", z: "14rem", angle: "-26deg", length: "13rem" },
-        { label: "VASTE", note: "Technology", x: "-15rem", y: "3rem", z: "8rem", angle: "8deg", length: "15rem" },
-        { label: "AtypikHouse", note: "Surface", x: "14rem", y: "4rem", z: "-8rem", angle: "-10deg", length: "14rem" },
-        { label: "CreativeStuff.jpg", note: "Archive", x: "-8rem", y: "12rem", z: "12rem", angle: "-48deg", length: "10rem" },
-        { label: "L’Œil de Meg", note: "Surface", x: "8rem", y: "12rem", z: "-12rem", angle: "-52deg", length: "11rem" },
-      ],
+      coreCopy: "Evolving ecosystem",
+      nodes: aboutDivisions.map((division) => ({
+        label: division.nodeLabel,
+        note: division.meta,
+        href: division.href || `#${division.id}`,
+        x: division.x,
+        y: division.y,
+        z: division.z,
+        emphasis: Boolean(division.emphasis),
+      })),
       actions: [
-        { label: "Work", href: "./work.html" },
-        { label: "Archive", href: "./archive.html" },
+        { label: "Overview", href: "#about-overview" },
+        { label: "Divisions", href: "#about-divisions" },
+        { label: "Philosophy", href: "#about-philosophy" },
       ],
     });
 
   const aboutNetwork = () => `
-    <section class="zone-card hero">
-      <div class="section-head">
-        <p class="eyebrow">PILLARS</p>
-        <h2>Three pillars in orbit.</h2>
-      </div>
-      <div class="network-grid">
-        ${[
-          {
-            eyebrow: "Theory",
-            title: "VOID",
-            copy: "Entropy, emergence, memory and causality.",
-            link: { label: "Research", href: "./research.html" },
-          },
-          {
-            eyebrow: "Art",
-            title: "PALIMPSESTS",
-            copy: "Songs, fragments and narrative forms.",
-            link: { label: "Work", href: "./work.html" },
-          },
-          {
-            eyebrow: "Technology",
-            title: "VASTE",
-            copy: "The technical spine.",
-            link: { label: "VASTE", href: "https://www.vaste.space/", target: "_blank" },
-          },
-        ]
-          .map(
-            (item) => `
-              <article class="panel">
-                <p class="card__meta">${esc(item.eyebrow)}</p>
-                <h3 class="card__title">${esc(item.title)}</h3>
-                <p class="card__copy">${esc(item.copy)}</p>
-                ${linkRow(item.link)}
-              </article>
-            `,
-          )
-          .join("")}
-      </div>
-    </section>
+    <div class="stack">
+      <section class="zone-card hero" id="about-overview">
+        <div class="section-head">
+          <p class="eyebrow">ABOUT</p>
+          <h2>What is Electronic Artefacts?</h2>
+          <p class="lede">Electronic Artefacts is an independent creative technology studio operating across research, software development, digital design, communication and artistic production.</p>
+        </div>
+        <div class="split">
+          <article class="panel panel--soft">
+            <p class="card__meta">Overview</p>
+            <p class="card__copy">Structured as an evolving ecosystem, Electronic Artefacts develops tools, systems, experiences and cultural projects at the intersection of technology, creativity and human experience.</p>
+            <p class="card__copy">Part research laboratory, part software studio, part creative agency and part production label, the organization explores how ideas move from concept to system, from system to artefact, and from artefact to culture.</p>
+          </article>
+          <article class="panel panel--soft">
+            <p class="card__meta">Operating model</p>
+            <p class="card__copy">Every project is treated as a system where design, narrative and technology work together.</p>
+            ${tagRow(["Research", "Software", "Design", "Communication", "Publishing"], { compact: true })}
+            <p class="card__copy">The result is a single studio language that can produce research outputs, software platforms, creative services and public-facing releases without fragmenting the underlying architecture.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="zone-card hero" id="about-divisions">
+        <div class="section-head">
+          <p class="eyebrow">OUR DIVISIONS</p>
+          <h2>Research, systems, studio, strategy and publishing.</h2>
+          <p class="lede">Each division has a clear role, but all of them feed the same ecosystem.</p>
+        </div>
+        <div class="network-grid">
+          ${aboutDivisions
+            .map(
+              (division) => `
+                <article class="panel panel--soft" id="${esc(division.id)}">
+                  <p class="card__meta">${esc(division.meta)}</p>
+                  <h3 class="card__title">${esc(division.title)}</h3>
+                  <p class="card__copy">${esc(division.copy)}</p>
+                  ${tagRow(division.chips, { compact: true })}
+                </article>
+              `,
+            )
+            .join("")}
+        </div>
+      </section>
+
+      <section class="zone-card hero" id="about-philosophy">
+        <div class="section-head">
+          <p class="eyebrow">PHILOSOPHY</p>
+          <h2>Systems shape culture.</h2>
+          <p class="lede">The studio works from the observation that modern culture is increasingly shaped by systems.</p>
+        </div>
+        <div class="split">
+          <article class="panel panel--soft">
+            <p class="card__meta">Philosophy</p>
+            <p class="card__copy">Software, networks, algorithms, archives, interfaces and media infrastructures influence how we create, communicate and remember. Rather than treating technology and creativity as separate disciplines, Electronic Artefacts explores the space where they become one.</p>
+            <p class="card__copy">The goal is to build meaningful systems, create lasting artefacts and contribute to the cultural landscape of the emerging digital era.</p>
+          </article>
+          <article class="panel panel--soft" id="about-vision">
+            <p class="card__meta">Vision</p>
+            <p class="card__copy">Long term, Electronic Artefacts aims to become a research laboratory, a software company, a creative agency, a cultural publisher and a production label united by a single mission.</p>
+            <p class="card__copy">Design systems. Create artefacts. Shape futures.</p>
+            ${tagRow(["Research laboratory", "Software company", "Creative agency", "Cultural publisher", "Production label"], { compact: true })}
+          </article>
+        </div>
+      </section>
+    </div>
   `;
 
   const contactLinks = () => `
