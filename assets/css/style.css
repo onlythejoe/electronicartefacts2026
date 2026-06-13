@@ -2513,10 +2513,15 @@ input:focus-visible {
     width: calc(100% - (var(--gutter) * 2));
   }
 
-  .shell-header {
-    width: 100vw;
-    margin-inline: calc(50% - 50vw);
+  .shell-header.zone-card {
+    width: calc(100% - (var(--gutter) * 2));
+    margin: 0 auto;
     padding-inline: 0;
+  }
+
+  .shell-footer.zone-card {
+    width: calc(100% - (var(--gutter) * 2));
+    margin: 0 auto;
   }
 
   .brand-lockup {
