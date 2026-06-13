@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# Search results are intentionally kept out of the index.
+Disallow: /search.html

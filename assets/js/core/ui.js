@@ -13,11 +13,6 @@
     return `<span class="status-badge ${esc(meta.className || "")}">${esc(meta.icon || "◌")} ${esc(text)}</span>`;
   };
 
-  const entityBadge = (key) => {
-    const catalog = getCatalog();
-    return `<span class="entity-badge entity-badge--${esc(key)}">${esc(catalog.entityTypes?.[key] || key)}</span>`;
-  };
-
   const taxonomyTone = (value) => {
     const text = String(value || "").toLowerCase();
     if (text.includes("music") || text.includes("audio") || text.includes("oreth") || text.includes("palimpsests")) return "sound";
@@ -42,24 +37,6 @@
     const visible = items.slice(0, limit);
     const overflow = Math.max(0, items.length - visible.length);
     return `<div class="tag-cluster${compact ? " tag-cluster--compact" : ""}">${visible.map((item) => chip(item)).join("")}${overflow ? `<span class="chip chip--overflow" aria-hidden="true">+${overflow}</span>` : ""}</div>`;
-  };
-
-  const relationList = (relations) => {
-    if (!relations || !relations.length) return "";
-    return `
-      <ul class="relation-list">
-        ${relations
-          .map(
-            (relation) => `
-              <li class="relation-item">
-                <span class="relation-item__label">${esc(relation.tag || "Related To")}</span>
-                <strong>${esc(relation.title)}</strong>
-              </li>
-            `,
-          )
-          .join("")}
-      </ul>
-    `;
   };
 
   const metadataList = (pairs) => {
@@ -134,10 +111,8 @@
   window.EA_UI = {
     statusMeta,
     statusBadge,
-    entityBadge,
     chip,
     tagRow,
-    relationList,
     metadataList,
     linkRow,
     metricRail,

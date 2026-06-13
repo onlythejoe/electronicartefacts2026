@@ -1,9 +1,24 @@
 (function () {
+  const includeCache = new Map();
+
   const resolveIncludeUrl = (key) => {
     if (!key) return null;
     if (key === "header") return "./assets/partials/header.html";
     if (key === "footer") return "./assets/partials/footer.html";
     return `./assets/partials/${key}`;
+  };
+
+  const fetchInclude = async (url) => {
+    if (!includeCache.has(url)) {
+      includeCache.set(
+        url,
+        fetch(url).then((response) => {
+          if (!response.ok) throw new Error(`Failed to load include: ${url}`);
+          return response.text();
+        }),
+      );
+    }
+    return includeCache.get(url);
   };
 
   const loadIncludes = async (root = document) => {
@@ -14,8 +29,7 @@
       nodes.map(async (node) => {
         const url = resolveIncludeUrl(node.getAttribute("data-include"));
         if (!url) return;
-        const response = await fetch(url);
-        node.innerHTML = await response.text();
+        node.innerHTML = await fetchInclude(url);
         node.removeAttribute("data-include");
       }),
     );

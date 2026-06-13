@@ -5,6 +5,12 @@
   const timelines = window.EA_TIMELINES || [];
   const activity = window.EA_ACTIVITY || [];
   const collections = window.EA_COLLECTIONS || [];
+  const normalizeTitle = (value) =>
+    String(value ?? "")
+      .toLowerCase()
+      .replace(/['’]/g, "")
+      .replace(/[^a-z0-9]+/g, "-")
+      .replace(/^-+|-+$/g, "");
 
   const flattenEntities = () =>
     [
@@ -25,6 +31,7 @@
       })),
     ].map((item) => ({
       ...item,
+      titleSlug: normalizeTitle(item.title),
       searchText: [
         item.title,
         item.subtitle,
@@ -42,6 +49,7 @@
         ...(item.relatedPrograms || []),
         ...(item.relatedResearchFields || []),
         ...(item.links || []).map((link) => link.label),
+        ...Object.values(item.relations || {}).flat(),
       ]
         .filter(Boolean)
         .join(" ")
@@ -50,6 +58,11 @@
 
   const allEntities = flattenEntities();
   const byId = Object.fromEntries(allEntities.map((item) => [item.id, item]));
+  const byTitleSlug = allEntities.reduce((acc, item) => {
+    if (!item.titleSlug || acc[item.titleSlug]) return acc;
+    acc[item.titleSlug] = item;
+    return acc;
+  }, {});
   const byKind = allEntities.reduce((acc, item) => {
     const bucket = acc[item.kind] || (acc[item.kind] = []);
     bucket.push(item);
@@ -60,12 +73,21 @@
     bucket.push(item);
     return acc;
   }, {});
+  const timelinesByEntityId = Object.fromEntries((timelines || []).map((item) => [item.entityId, item]));
+  const activityByEntityId = (activity || []).reduce((acc, item) => {
+    const bucket = acc[item.entityId] || (acc[item.entityId] = []);
+    bucket.push(item);
+    return acc;
+  }, {});
 
   const indexes = {
     entities: allEntities,
     byId,
+    byTitleSlug,
     byKind,
     byStatus,
+    timelinesByEntityId,
+    activityByEntityId,
     search: window.EA_SEARCH ? window.EA_SEARCH.buildIndex({ indexes: { entities: allEntities } }) : [],
   };
 

@@ -51,7 +51,14 @@ window.EA_COLLECTIONS = [
   },
 ];
 
+const resolvedCollectionCache = new Map();
+
 window.EA_COLLECTIONS.resolve = function resolveCollectionMembers(collection, catalog) {
+  const cacheKey = collection?.id;
+  if (cacheKey && resolvedCollectionCache.has(cacheKey)) {
+    return resolvedCollectionCache.get(cacheKey);
+  }
+
   const flat = catalog.indexes?.entities || [];
   const allIds = new Set();
   const matches = [];
@@ -75,6 +82,10 @@ window.EA_COLLECTIONS.resolve = function resolveCollectionMembers(collection, ca
     }
     add(item);
   });
+
+  if (cacheKey) {
+    resolvedCollectionCache.set(cacheKey, matches);
+  }
 
   return matches;
 };

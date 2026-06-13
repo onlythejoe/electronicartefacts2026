@@ -1,11 +1,16 @@
 (function () {
   const esc = window.EA_UTILS?.esc || ((value) => String(value ?? ""));
+  const slugify = window.EA_UTILS?.slugify || ((value) =>
+    String(value ?? "")
+      .toLowerCase()
+      .replace(/['’]/g, "")
+      .replace(/[^a-z0-9]+/g, "-")
+      .replace(/^-+|-+$/g, ""));
 
-  const applyFilters = (scope, filterState) => {
+  const applyFilters = (scope, filterState, cards = [...document.querySelectorAll("[data-filter-card]")]) => {
     const section = document.querySelector(`[data-filter-scope="${scope}"]`);
     if (!section) return;
     const state = filterState.get(scope) || {};
-    const cards = document.querySelectorAll("[data-filter-card]");
     cards.forEach((card) => {
       const visible = Object.entries(state).every(([key, value]) => {
         if (!value || value === "all") return true;
@@ -14,16 +19,15 @@
       });
       card.hidden = !visible;
     });
-    syncFilterSummaries(filterState);
+    syncFilterSummaries(filterState, cards);
   };
 
-  const syncFilterSummaries = (filterState) => {
+  const syncFilterSummaries = (filterState, cards = [...document.querySelectorAll("[data-filter-card]")]) => {
+    const visible = cards.filter((card) => !card.hidden).length;
     document.querySelectorAll("[data-filter-scope]").forEach((section) => {
       const scope = section.getAttribute("data-filter-scope");
       const summary = section.querySelector(".filter-summary");
       if (!scope || !summary) return;
-      const cards = [...document.querySelectorAll("[data-filter-card]")];
-      const visible = cards.filter((card) => !card.hidden).length;
       const count = summary.querySelector("[data-filter-count]");
       if (count) count.textContent = `${visible} visible`;
       const active = Object.values(filterState.get(scope) || {}).some((value) => value && value !== "all");
@@ -47,36 +51,45 @@
   };
 
   const initFilters = (filterState) => {
+    const cards = [...document.querySelectorAll("[data-filter-card]")];
     document.querySelectorAll("[data-filter-scope]").forEach((section) => {
       const scope = section.getAttribute("data-filter-scope");
       if (!scope) return;
       if (!filterState.has(scope)) filterState.set(scope, {});
+      if (section.dataset.boundFilterToggle === "true") return;
+      section.dataset.boundFilterToggle = "true";
 
-      section.querySelectorAll("[data-filter-toggle]").forEach((button) => {
-        if (button.dataset.boundFilterToggle === "true") return;
-        button.dataset.boundFilterToggle = "true";
+      section.addEventListener("click", (event) => {
+        const button = event.target.closest("[data-filter-toggle]");
+        if (!button) return;
+        const key = button.getAttribute("data-filter-key");
+        const value = button.getAttribute("data-filter-value");
+        const state = filterState.get(scope) || {};
+        const next = state[key] === value ? "all" : value;
+        state[key] = next;
+        filterState.set(scope, state);
 
-        button.addEventListener("click", () => {
-          const key = button.getAttribute("data-filter-key");
-          const value = button.getAttribute("data-filter-value");
-          const state = filterState.get(scope) || {};
-          const next = state[key] === value ? "all" : value;
-          state[key] = next;
-          filterState.set(scope, state);
-
-          section.querySelectorAll(`[data-filter-key="${esc(key)}"]`).forEach((chip) => {
-            const isActive = chip.getAttribute("data-filter-value") === next;
-            chip.classList.toggle("is-active", isActive);
-            chip.setAttribute("aria-pressed", isActive ? "true" : "false");
-          });
-
-          applyFilters(scope, filterState);
+        section.querySelectorAll(`[data-filter-key="${esc(key)}"]`).forEach((chip) => {
+          const isActive = chip.getAttribute("data-filter-value") === next;
+          chip.classList.toggle("is-active", isActive);
+          chip.setAttribute("aria-pressed", isActive ? "true" : "false");
         });
+
+        applyFilters(scope, filterState, cards);
       });
     });
   };
 
   const initSearch = (searchState, rerender) => {
+    let rerenderId = 0;
+    const scheduleRerender = () => {
+      if (rerenderId) cancelAnimationFrame(rerenderId);
+      rerenderId = requestAnimationFrame(() => {
+        rerenderId = 0;
+        rerender();
+      });
+    };
+
     const input = document.querySelector("[data-search-input]");
     if (input) {
       input.value = searchState.query;
@@ -84,7 +97,7 @@
         input.dataset.boundSearchInput = "true";
         input.addEventListener("input", () => {
           searchState.query = input.value.trim().toLowerCase();
-          rerender();
+          scheduleRerender();
         });
       }
     }
@@ -94,7 +107,7 @@
       chip.dataset.boundSearchStatus = "true";
       chip.addEventListener("click", () => {
         searchState.status = chip.getAttribute("data-value") || "all";
-        rerender();
+        scheduleRerender();
       });
     });
 
@@ -103,33 +116,31 @@
       chip.dataset.boundSearchKind = "true";
       chip.addEventListener("click", () => {
         searchState.kind = chip.getAttribute("data-value") || "all";
-        rerender();
+        scheduleRerender();
       });
     });
   };
 
   const initCardLinks = () => {
-    document.querySelectorAll("[data-project-detail-link], [data-card-link]").forEach((card) => {
-      if (card.dataset.boundProjectDetailLink === "true") return;
-      card.dataset.boundProjectDetailLink = "true";
-      const target = card.getAttribute("data-project-detail-link") || card.getAttribute("data-card-link");
-      if (!target) return;
+    if (document.body.dataset.boundCardLinks === "true") return;
+    document.body.dataset.boundCardLinks = "true";
 
-      const navigate = () => {
-        window.location.href = target;
-      };
+    const navigate = (target) => {
+      if (target) window.location.href = target;
+    };
 
-      card.addEventListener("click", (event) => {
-        if (event.target.closest("a,button,input,select,textarea,label,.taxonomy-pill")) return;
-        navigate();
-      });
+    document.addEventListener("click", (event) => {
+      const card = event.target.closest("[data-project-detail-link], [data-card-link]");
+      if (!card || event.target.closest("a,button,input,select,textarea,label,.taxonomy-pill")) return;
+      navigate(card.getAttribute("data-project-detail-link") || card.getAttribute("data-card-link"));
+    });
 
-      card.addEventListener("keydown", (event) => {
-        if (event.key === "Enter" || event.key === " ") {
-          event.preventDefault();
-          navigate();
-        }
-      });
+    document.addEventListener("keydown", (event) => {
+      if (event.key !== "Enter" && event.key !== " ") return;
+      const card = event.target.closest("[data-project-detail-link], [data-card-link]");
+      if (!card || event.target.closest("a,button,input,select,textarea,label,.taxonomy-pill")) return;
+      event.preventDefault();
+      navigate(card.getAttribute("data-project-detail-link") || card.getAttribute("data-card-link"));
     });
   };
 
@@ -298,6 +309,7 @@
   };
 
   const initFilterSummaries = (filterState) => {
+    const cards = [...document.querySelectorAll("[data-filter-card]")];
     document.querySelectorAll("[data-filter-scope]").forEach((section) => {
       const scope = section.getAttribute("data-filter-scope");
       if (!scope || section.dataset.boundFilterSummary === "true") return;
@@ -320,7 +332,7 @@
           chip.classList.toggle("is-active", isAll);
           chip.setAttribute("aria-pressed", isAll ? "true" : "false");
         });
-        applyFilters(scope, filterState);
+        applyFilters(scope, filterState, cards);
       });
 
       summary.addEventListener("click", (event) => {
@@ -335,13 +347,10 @@
           chip.classList.toggle("is-active", isAll);
           chip.setAttribute("aria-pressed", isAll ? "true" : "false");
         });
-        applyFilters(scope, filterState);
+        applyFilters(scope, filterState, cards);
       });
 
-      section.addEventListener("click", (event) => {
-        if (event.target.closest("[data-filter-toggle]")) requestAnimationFrame(() => syncFilterSummaries(filterState));
-      });
-      syncFilterSummaries(filterState);
+      syncFilterSummaries(filterState, cards);
     });
   };
 
@@ -497,13 +506,6 @@
       });
     });
   };
-
-  const slugify = (value) =>
-    String(value || "")
-      .toLowerCase()
-      .replace(/['’]/g, "")
-      .replace(/[^a-z0-9]+/g, "-")
-      .replace(/^-+|-+$/g, "");
 
   const initSectionRail = () => {
     const main = document.querySelector(".site-main");
@@ -691,10 +693,10 @@
     });
   };
 
-  const syncPageTitle = ({ current, entityById, collectionById }) => {
+  const syncPageTitle = ({ current, entityById }) => {
     if (current === "detail") {
       const id = new URLSearchParams(window.location.search).get("id");
-      const entry = id ? entityById(id) || collectionById(id) : null;
+      const entry = id ? entityById(id) : null;
       if (entry) document.title = `${entry.title} - Electronic Artefacts`;
       return;
     }
@@ -711,6 +713,151 @@
     if (current === "search") document.title = "Search - Electronic Artefacts";
   };
 
+  const syncSeoMeta = ({ current, entityById }) => {
+    syncPageTitle({ current, entityById });
+
+    const siteName = "Electronic Artefacts";
+    const fallbackDescription = "Electronic Artefacts, studio créatif, laboratoire de recherche et label indépendant.";
+    const pageName = window.location.pathname.split("/").pop() || "index.html";
+    const baseName = pageName.replace(/\.html$/, "");
+    const queryId = new URLSearchParams(window.location.search).get("id");
+    const detailEntry = (() => {
+      if (baseName === "palimpsests") return entityById("palimpsests");
+      if (current === "detail" || current === "project-rl") return queryId ? entityById(queryId) : null;
+      return null;
+    })();
+
+    const pageDescriptions = {
+      index: fallbackDescription,
+      work: "Travaux de studio, services et collaborations clients sélectionnées.",
+      research: "Champs de recherche, notes et études système de l'écosystème Electronic Artefacts.",
+      programs: "Programmes, runtimes et systèmes architecturaux qui alimentent Electronic Artefacts.",
+      projects: "Projets, albums et travaux clients du catalogue Electronic Artefacts.",
+      archive: "Projets archivés, systèmes et fils de recherche conservés par Electronic Artefacts.",
+      about: "Contexte du studio, de la théorie et des archives d'Electronic Artefacts.",
+      contact: "Contacter Electronic Artefacts par email et canaux sociaux.",
+      search: "Rechercher dans la base de connaissances Electronic Artefacts.",
+      project: "Fiche projet d'Electronic Artefacts.",
+      "project-rl": "Surface RL d'un projet Electronic Artefacts.",
+      artefact: "Fiche artefact d'Electronic Artefacts.",
+      collection: "Fiche collection d'Electronic Artefacts.",
+      channel: "Fiche canal d'Electronic Artefacts.",
+      artist: "Fiche artiste d'Electronic Artefacts.",
+      program: "Registre détaillé des programmes Electronic Artefacts, avec statut, lignée et contexte système.",
+      entity: "Fiche de connaissance Electronic Artefacts.",
+      palimpsests: "Fiche projet Palimpsests.",
+    };
+
+    const description =
+      (detailEntry?.kind === "project" && current === "project-rl"
+        ? `${detailEntry.summary || detailEntry.description || detailEntry.title} RL surface.`
+        : detailEntry?.summary || detailEntry?.description || pageDescriptions[baseName] || pageDescriptions[current] || fallbackDescription) || fallbackDescription;
+
+    const canonicalPath = (() => {
+      if (baseName === "index") return "./";
+      if (baseName === "palimpsests") return "./palimpsests.html";
+      if (current === "project-rl" && queryId) return `./project-rl.html?id=${encodeURIComponent(queryId)}`;
+      if (current === "detail" && queryId) return `./${baseName}.html?id=${encodeURIComponent(queryId)}`;
+      return `./${pageName}`;
+    })();
+
+    const canonicalUrl = new URL(canonicalPath, window.location.href).href;
+    const imageCandidate =
+      detailEntry?.media?.gallery?.find((item) => item?.src && item.mediaType !== "video" && /\.(png|jpe?g|webp|gif)$/i.test(item.src)) ||
+      detailEntry?.media?.gallery?.find((item) => item?.src && item.mediaType !== "video") ||
+      null;
+    const imageSrc = imageCandidate?.src || "./assets/media/projects/electronic-artefacts/electronic-artefacts-logo.png";
+    const imageAlt = imageCandidate?.alt || detailEntry?.title || "Electronic Artefacts logo";
+    const imageUrl = new URL(imageSrc, window.location.href).href;
+    const robots = current === "search" ? "noindex,follow" : "index,follow,max-image-preview:large";
+    const ogType = current === "detail" || current === "project-rl" ? "article" : "website";
+
+    const ensureMeta = ({ name, property, content }) => {
+      const selector = property ? `meta[property="${property}"]` : `meta[name="${name}"]`;
+      let node = document.head.querySelector(selector);
+      if (!node) {
+        node = document.createElement("meta");
+        if (property) node.setAttribute("property", property);
+        if (name) node.setAttribute("name", name);
+        document.head.appendChild(node);
+      }
+      node.setAttribute("content", content);
+      return node;
+    };
+
+    const ensureLink = (rel, href) => {
+      let node = document.head.querySelector(`link[rel="${rel}"]`);
+      if (!node) {
+        node = document.createElement("link");
+        node.setAttribute("rel", rel);
+        document.head.appendChild(node);
+      }
+      node.setAttribute("href", href);
+      return node;
+    };
+
+    const ensureJsonLd = (data) => {
+      let node = document.head.querySelector('script[data-seo-jsonld="true"]');
+      if (!data) {
+        node?.remove();
+        return;
+      }
+      if (!node) {
+        node = document.createElement("script");
+        node.type = "application/ld+json";
+        node.setAttribute("data-seo-jsonld", "true");
+        document.head.appendChild(node);
+      }
+      node.textContent = JSON.stringify(data);
+    };
+
+    ensureMeta({ name: "description", content: description });
+    ensureMeta({ name: "robots", content: robots });
+    ensureMeta({ name: "theme-color", content: "#0f1115" });
+    ensureMeta({ property: "og:title", content: document.title });
+    ensureMeta({ property: "og:description", content: description });
+    ensureMeta({ property: "og:type", content: ogType });
+    ensureMeta({ property: "og:url", content: canonicalUrl });
+    ensureMeta({ property: "og:site_name", content: siteName });
+    ensureMeta({ property: "og:locale", content: "fr_FR" });
+    ensureMeta({ property: "og:image", content: imageUrl });
+    ensureMeta({ property: "og:image:alt", content: imageAlt });
+    ensureMeta({ name: "twitter:card", content: "summary_large_image" });
+    ensureMeta({ name: "twitter:title", content: document.title });
+    ensureMeta({ name: "twitter:description", content: description });
+    ensureMeta({ name: "twitter:image", content: imageUrl });
+    ensureMeta({ name: "twitter:image:alt", content: imageAlt });
+    ensureLink("canonical", canonicalUrl);
+
+    const jsonLd =
+      baseName === "index"
+        ? {
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            name: siteName,
+            url: canonicalUrl,
+            description,
+          }
+        : detailEntry
+          ? {
+              "@context": "https://schema.org",
+              "@type": detailEntry.kind === "program" ? "SoftwareApplication" : "CreativeWork",
+              name: detailEntry.title,
+              description,
+              url: canonicalUrl,
+              image: imageUrl,
+            }
+          : {
+              "@context": "https://schema.org",
+              "@type": "WebPage",
+              name: document.title,
+              description,
+              url: canonicalUrl,
+            };
+
+    ensureJsonLd(jsonLd);
+  };
+
   window.EA_BEHAVIORS = {
     applyFilters,
     initFilters,
@@ -719,5 +866,6 @@
     initUXEnhancements,
     syncNavigationState,
     syncPageTitle,
+    syncSeoMeta,
   };
 })();

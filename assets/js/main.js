@@ -2,1439 +2,17 @@
   const catalog = window.EA_CATALOG || {};
   const page = document.body.dataset.page || "home";
   const filterState = new Map();
-  const { esc, setYear, chunk } = window.EA_UTILS;
+  const { esc, setYear, slugify } = window.EA_UTILS;
   const { loadIncludes } = window.EA_INCLUDES;
-  const { statusBadge, entityBadge, chip, tagRow, relationList, metadataList, linkRow, metricRail, cardLinkAttrs, cardOverlayLink } =
-    window.EA_UI;
-  const { initFilters, initSearch, initCardLinks, initUXEnhancements, syncNavigationState, syncPageTitle } = window.EA_BEHAVIORS;
-
-  const programmingLanguages = [
-    "JavaScript",
-    "TypeScript",
-    "Python",
-    "Rust",
-    "Go",
-    "C",
-    "C++",
-    "C#",
-    "Java",
-    "Kotlin",
-    "Swift",
-    "Objective-C",
-    "Dart",
-    "Ruby",
-    "PHP",
-    "Perl",
-    "Lua",
-    "Julia",
-    "R",
-    "MATLAB",
-    "Scala",
-    "Haskell",
-    "OCaml",
-    "F#",
-    "Elixir",
-    "Erlang",
-    "Clojure",
-    "Scheme",
-    "Common Lisp",
-    "Prolog",
-    "Fortran",
-    "COBOL",
-    "Pascal",
-    "Ada",
-    "Assembly",
-    "Bash",
-    "PowerShell",
-    "SQL",
-    "PL/SQL",
-    "T-SQL",
-    "HTML",
-    "CSS",
-    "Sass",
-    "Less",
-    "XML",
-    "JSON",
-    "YAML",
-    "Markdown",
-    "TOML",
-    "Nim",
-    "Zig",
-    "D",
-    "Crystal",
-    "V",
-    "Haxe",
-    "Nix",
-    "Solidity",
-    "VHDL",
-    "Verilog",
-    "Q#",
-    "Smalltalk",
-    "Groovy",
-    "Forth",
-    "ML",
-    "ReasonML",
-    "PureScript",
-    "Elm",
-    "ReScript",
-    "CoffeeScript",
-    "Hack",
-    "Arduino",
-    "Processing",
-    "Max",
-    "SuperCollider",
-    "Ballerina",
-    "Racket",
-    "Lisp",
-    "CLIPS",
-    "Factor",
-    "Fennel",
-  ];
-
-  const cardBaseAttrs = (item) => {
-    const medium = (item.medium || []).join(" ");
-    const discipline = (item.discipline || []).join(" ");
-    const researchField = item.researchField || (item.relatedResearchFields || []).join(" ");
-    const year = item.temporality?.creationYear || item.date || "";
-    const image = cardImageFor(item);
-    return `
-      data-filter-card
-      data-entry-id="${esc(item.id || "")}"
-      ${image ? `data-card-media="true" style="--card-image:url('${esc(image.src)}');"` : ""}
-      data-status="${esc(item.status || "")}"
-      data-category="${esc(item.category || item.type || "")}"
-      data-medium="${esc(medium)}"
-      data-discipline="${esc(discipline)}"
-      data-year="${esc(year)}"
-      data-entity-type="${esc(item.kind || "")}"
-      data-research-field="${esc(researchField)}"
-      data-visibility="${esc(item.visibility || "")}"
-      data-maturity="${esc(item.maturity || "")}"
-      data-confidence="${esc(item.confidence || "")}"
-      data-kind="${esc(item.kind || "")}"
-    `;
-  };
-
-  const mediaFrom = (entry) => {
-    const gallery = entry?.media?.gallery || [];
-    if (!gallery.length) return null;
-    return (
-      gallery.find((image) => String(image.src || "").includes("palimpsests.jpg")) ||
-      gallery.find((image) => String(image.src || "").match(/cover|logo/i)) ||
-      gallery[0]
-    );
-  };
-
-  const mediaKindFor = (media) => {
-    const explicitKind = String(media?.mediaType || media?.type || "").toLowerCase();
-    if (explicitKind === "image" || explicitKind === "video") return explicitKind;
-    const src = String(media?.src || "").toLowerCase();
-    if (/\.(mov|mp4|m4v|webm)(?:[?#]|$)/.test(src)) return "video";
-    return "image";
-  };
-
-  const mediaFigureMarkup = (media, item, className = "project-gallery__media") => {
-    const mediaKind = mediaKindFor(media);
-    if (mediaKind === "video") {
-      return `
-        <video class="${className}" controls playsinline preload="metadata">
-          <source src="${esc(media.src)}" />
-          ${esc(media.alt || item.title || "Project video")}
-        </video>
-      `;
-    }
-    return `<img class="${className}" src="${esc(media.src)}" alt="${esc(media.alt || item.title)}" loading="lazy" />`;
-  };
-
-  const projectSignatureBubble = (item, variant = "card") => {
-    if (item?.id !== "oeil-de-meg") return "";
-    return `
-      <span class="project-meg-badge project-meg-badge--${esc(variant)}" aria-hidden="true">
-        <img class="project-meg-badge__picto" src="./assets/media/projects/oeil-de-meg/oeil-de-meg-picto.svg" alt="" loading="lazy" />
-      </span>
-    `;
-  };
-
-  const projectButterflyBubble = (item, variant = "card") => {
-    if (item?.id !== "oeil-de-meg") return "";
-    return `
-      <span class="project-mark-bubble project-mark-bubble--${esc(variant)} project-mark-bubble--butterfly" aria-hidden="true">
-        <span class="project-mark-bubble__coin">
-          <img class="project-mark-bubble__picto project-mark-bubble__picto--butterfly" src="./assets/media/projects/oeil-de-meg/wing.png" alt="" loading="lazy" />
-        </span>
-      </span>
-    `;
-  };
-
-  const vasteEngineMarkup = () => `
-    <div class="vast-engine" data-vast-engine aria-hidden="true">
-      <svg viewBox="0 0 500 400" role="presentation" focusable="false">
-        <circle class="vast-engine__cutout" cx="110" cy="130" r="45" />
-        <circle class="vast-engine__cutout" cx="240" cy="292" r="45" />
-        <circle class="vast-engine__cutout" cx="390" cy="175" r="45" />
-
-        <circle class="vast-engine__nucleus" cx="110" cy="130" r="10" fill="#7dd3fc" />
-        <circle class="vast-engine__nucleus" cx="240" cy="292" r="10" fill="#38bdf8" />
-        <circle class="vast-engine__nucleus" cx="390" cy="175" r="10" fill="#1d4ed8" />
-
-        <path class="vast-engine__link" d="M 145 170 L 215 255" />
-        <path class="vast-engine__link" d="M 355 205 L 275 255" />
-
-        <circle class="vast-engine__node" cx="110" cy="130" r="45" />
-        <circle class="vast-engine__node" cx="240" cy="292" r="45" />
-        <circle class="vast-engine__node" cx="390" cy="175" r="45" />
-      </svg>
-    </div>
-  `;
-
-  const startVasteEngineAnimation = () => {
-    const root = document.querySelector("[data-vast-engine]");
-    if (!root || root.dataset.vastEngineAnimated === "true") return;
-    root.dataset.vastEngineAnimated = "true";
-
-    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
-
-    const links = [...root.querySelectorAll(".vast-engine__link")];
-    const nodes = [...root.querySelectorAll(".vast-engine__node")];
-    const cutouts = [...root.querySelectorAll(".vast-engine__cutout")];
-    const nuclei = [...root.querySelectorAll(".vast-engine__nucleus")];
-    const baseRadii = [45, 45, 45];
-    const basePositions = [
-      { x: 110, y: 130 },
-      { x: 240, y: 292 },
-      { x: 390, y: 175 },
-    ];
-
-    let phase = 0;
-
-    const animate = () => {
-      if (!document.body.contains(root)) return;
-
-      phase += 0.02;
-
-      const energies = [
-        (Math.sin(phase) + 1) * 0.5,
-        (Math.sin(phase - 1.15) + 1) * 0.5,
-        (Math.sin(phase - 2.3) + 1) * 0.5,
-      ];
-
-      links[0].style.strokeWidth = (1.5 + energies[0] * 9.5).toFixed(2);
-      links[1].style.strokeWidth = (1.5 + energies[2] * 9.5).toFixed(2);
-      links[0].style.opacity = (0.45 + energies[0] * 0.5).toFixed(2);
-      links[1].style.opacity = (0.45 + energies[2] * 0.5).toFixed(2);
-
-      nodes.forEach((node, index) => {
-        const energy = energies[index];
-        const floatX = Math.sin(phase * 0.8 + index * 1.7) * 4;
-        const floatY = Math.cos(phase * 0.9 + index * 1.3) * 6;
-
-        const x = basePositions[index].x + floatX;
-        const y = basePositions[index].y + floatY;
-        const radius = baseRadii[index] + energy * 16;
-        const stroke = 10.5 - energy * 7.5;
-
-        node.setAttribute("cx", x.toFixed(2));
-        node.setAttribute("cy", y.toFixed(2));
-        node.setAttribute("r", radius.toFixed(2));
-        node.style.strokeWidth = stroke.toFixed(2);
-        node.style.filter = `drop-shadow(0 0 ${8 + energy * 20}px rgba(255,255,255,${(0.08 + energy * 0.18).toFixed(2)}))`;
-
-        cutouts[index].setAttribute("cx", x.toFixed(2));
-        cutouts[index].setAttribute("cy", y.toFixed(2));
-        cutouts[index].setAttribute("r", (radius + 0.5).toFixed(2));
-
-        const nucleus = nuclei[index];
-        const nucleusRadius = Math.min(8 + energy * 22, Math.max(4, radius - stroke - 2));
-        const nucleusHue = [195, 202, 215][index] + energy * 24;
-        const nucleusColor = `hsl(${nucleusHue}, ${85 + energy * 15}%, ${52 + energy * 18}%)`;
-
-        nucleus.setAttribute("cx", x.toFixed(2));
-        nucleus.setAttribute("cy", y.toFixed(2));
-        nucleus.setAttribute("r", nucleusRadius.toFixed(2));
-        nucleus.setAttribute("fill", nucleusColor);
-        nucleus.style.opacity = (0.72 + energy * 0.28).toFixed(2);
-        nucleus.style.filter = `drop-shadow(0 0 ${10 + energy * 24}px ${nucleusColor})`;
-      });
-
-      const leftNode = {
-        x: parseFloat(nodes[0].getAttribute("cx")),
-        y: parseFloat(nodes[0].getAttribute("cy")),
-      };
-      const centerNode = {
-        x: parseFloat(nodes[1].getAttribute("cx")),
-        y: parseFloat(nodes[1].getAttribute("cy")),
-      };
-      const rightNode = {
-        x: parseFloat(nodes[2].getAttribute("cx")),
-        y: parseFloat(nodes[2].getAttribute("cy")),
-      };
-
-      const leftRadius = parseFloat(nodes[0].getAttribute("r"));
-      const centerRadius = parseFloat(nodes[1].getAttribute("r"));
-      const rightRadius = parseFloat(nodes[2].getAttribute("r"));
-
-      const leftDx = centerNode.x - leftNode.x;
-      const leftDy = centerNode.y - leftNode.y;
-      const leftDistance = Math.hypot(leftDx, leftDy) || 1;
-      const leftUnitX = leftDx / leftDistance;
-      const leftUnitY = leftDy / leftDistance;
-      const leftStartX = leftNode.x + leftUnitX * leftRadius;
-      const leftStartY = leftNode.y + leftUnitY * leftRadius;
-      const leftEndX = centerNode.x - leftUnitX * centerRadius;
-      const leftEndY = centerNode.y - leftUnitY * centerRadius;
-
-      const rightDx = centerNode.x - rightNode.x;
-      const rightDy = centerNode.y - rightNode.y;
-      const rightDistance = Math.hypot(rightDx, rightDy) || 1;
-      const rightUnitX = rightDx / rightDistance;
-      const rightUnitY = rightDy / rightDistance;
-      const rightStartX = rightNode.x + rightUnitX * rightRadius;
-      const rightStartY = rightNode.y + rightUnitY * rightRadius;
-      const rightEndX = centerNode.x - rightUnitX * centerRadius;
-      const rightEndY = centerNode.y - rightUnitY * centerRadius;
-
-      links[0].setAttribute("d", `M ${leftStartX} ${leftStartY} L ${leftEndX} ${leftEndY}`);
-      links[1].setAttribute("d", `M ${rightStartX} ${rightStartY} L ${rightEndX} ${rightEndY}`);
-
-      requestAnimationFrame(animate);
-    };
-
-    requestAnimationFrame(animate);
-  };
-
-  const cardImageFor = (item) => {
-    const direct = mediaFrom(item);
-    if (direct) return direct;
-
-    const relationIds = [
-      item.project,
-      ...(item.relatedProjects || []),
-      ...(item.relations?.partOf || []),
-      ...(item.relations?.parent || []),
-      ...(item.relations?.relatedTo || []),
-      ...(item.relations?.influences || []),
-    ]
-      .filter(Boolean)
-      .map((value) => String(value));
-
-    for (const id of relationIds) {
-      const entry = catalog.indexes?.byId?.[id];
-      const image = mediaFrom(entry);
-      if (image) return image;
-    }
-
-    if (item.kind === "collection" && window.EA_COLLECTIONS?.resolve) {
-      const member = window.EA_COLLECTIONS.resolve(item, catalog).find((entry) => mediaFrom(entry));
-      const image = mediaFrom(member);
-      if (image) return image;
-    }
-
-    return null;
-  };
-
-  const signalStrip = (item) => {
-    const signals = [item.status, item.category, ...(item.medium || []), ...(item.discipline || [])].filter(Boolean).slice(0, 6);
-    if (!signals.length) return "";
-    return `
-      <div class="card-signal" aria-hidden="true">
-        ${signals.map((signal, index) => `<span style="--signal-index:${index};" title="${esc(signal)}"></span>`).join("")}
-      </div>
-    `;
-  };
-
-  const cardCopy = (text, lines = 2) => {
-    if (!text) return "";
-    return `<p class="card__copy card__copy--clamp-${Math.max(1, Math.min(4, lines))}">${esc(text)}</p>`;
-  };
-
-  const metricFill = (count, total) => (total > 0 ? Math.max(0.18, Math.min(1, count / total)) : 0.42);
-
-  const summaryMetrics = (item, mode = "project") => {
-    const mediumCount = (item.medium || []).length;
-    const disciplineCount = (item.discipline || []).length;
-    const galleryCount = (item.media?.gallery || []).length;
-    const relatedCount = Object.values(item.relations || {}).flat().filter(Boolean).length;
-    const layerCount = (item.architecture?.layers || []).length;
-    const signalCount = [...(item.medium || []), ...(item.discipline || [])].filter(Boolean).length;
-    const updatedYear = item.temporality?.lastUpdated ? String(item.temporality.lastUpdated).slice(0, 4) : item.temporality?.creationYear || item.date || "";
-    const statusValue = item.statusLabel || item.status || "Active";
-
-    const variants = {
-      project: [
-        { label: "STATUS", value: statusValue, note: updatedYear ? `Updated ${updatedYear}` : "", fill: 0.92, tone: "live" },
-        { label: "SIGNALS", value: `${signalCount}`, note: countLabel(signalCount, "cue"), fill: metricFill(signalCount, 8), tone: "visual" },
-        { label: "MEDIA", value: `${galleryCount}`, note: countLabel(galleryCount, "asset"), fill: metricFill(galleryCount, 12), tone: "archive" },
-      ],
-      archive: [
-        { label: "FIELD", value: item.researchField || item.category || item.type || "Archive", note: item.project || "", fill: 0.82, tone: "archive" },
-        { label: "RELATION", value: `${relatedCount}`, note: countLabel(relatedCount, "link"), fill: metricFill(relatedCount, 6), tone: "system" },
-        { label: "DATE", value: item.date || updatedYear || "—", note: item.artist || item.type || "", fill: 0.58, tone: "live" },
-      ],
-      research: [
-        { label: "FIELD", value: item.researchField || item.category || "Research", note: item.statusLabel || statusValue, fill: 0.82, tone: "research" },
-        { label: "PROJECTS", value: `${(item.relatedProjects || []).length}`, note: countLabel((item.relatedProjects || []).length, "project"), fill: metricFill((item.relatedProjects || []).length, 8), tone: "system" },
-        { label: "ARTIFACTS", value: `${(item.relatedArtefacts || []).length}`, note: countLabel((item.relatedArtefacts || []).length, "artefact"), fill: metricFill((item.relatedArtefacts || []).length, 8), tone: "archive" },
-      ],
-      person: [
-        { label: "ROLE", value: item.role || item.type || "Person", note: item.statusLabel || statusValue, fill: 0.82, tone: "surface" },
-        { label: "PROJECTS", value: `${(item.relatedProjects || []).length}`, note: countLabel((item.relatedProjects || []).length, "project"), fill: metricFill((item.relatedProjects || []).length, 8), tone: "system" },
-        { label: "LAYER", value: `${mediumCount + disciplineCount}`, note: "signals", fill: metricFill(mediumCount + disciplineCount, 10), tone: "visual" },
-      ],
-      program: [
-        { label: "STATUS", value: statusValue, note: updatedYear ? `Updated ${updatedYear}` : "", fill: 0.92, tone: "live" },
-        { label: "DOMAIN", value: item.domain || item.systemGroup || item.type || "Program", note: item.category || "", fill: 0.78, tone: "system" },
-        { label: "SIGNALS", value: `${signalCount}`, note: countLabel(signalCount, "cue"), fill: metricFill(signalCount, 8), tone: "research" },
-      ],
-    };
-
-    return metricRail(variants[mode] || variants.project, { limit: 3, compact: true });
-  };
-
-  const countLabel = (count, singular, plural = `${singular}s`) => `${count} ${count === 1 ? singular : plural}`;
-
-  const entityDateValue = (item) => {
-    const value = item?.temporality?.lastUpdated || item?.temporality?.releaseDate || item?.temporality?.creationDate || item?.date || "";
-    const parsed = Date.parse(value);
-    return Number.isFinite(parsed) ? parsed : 0;
-  };
-
-  const homeProjects = (excludeIds = []) =>
-    (catalog.projects || [])
-      .filter((item) => item.visibility !== "internal" && !excludeIds.includes(item.id))
-      .slice()
-      .sort((a, b) => entityDateValue(b) - entityDateValue(a));
-
-  const featuredProjectForHome = (excludeIds = []) => homeProjects(excludeIds).find((item) => cardImageFor(item)) || homeProjects(excludeIds)[0] || null;
-
-  const projectHeroMedia = (item) => {
-    const media = mediaFrom(item) || cardImageFor(item);
-    if (!media) return "";
-    return mediaFigureMarkup(media, item, "project-immersive__image");
-  };
-
-  const homeCardPills = (item) => {
-    if (!item) return [];
-    if (item.id === "oeil-de-meg") return ["Photography CRM", "Portfolio", "Live site", "WordPress"];
-    if (item.id === "palimpsests") return ["Album cycle", "ORETH", "Five acts", "Archive"];
-
-    const pills = [
-      item.category || item.type || item.kind || "",
-      item.statusLabel || item.status || "",
-      item.temporality?.creationYear || "",
-      item.links?.[0]?.label || item.program || "",
-    ];
-
-    return pills.filter(Boolean).slice(0, 4);
-  };
-
-  const projectCard = (item) => `
-    <article class="project-card" ${cardBaseAttrs(item)}>
-      ${item.kind === "project" ? `<a class="project-card__overlay-link" href="./project.html?id=${encodeURIComponent(item.id)}" aria-label="Open ${esc(item.title)} detail"></a>` : ""}
-      <div class="project-card__top">
-        <div>
-          <p class="card__meta">${esc(item.type || catalog.entityTypes?.[item.kind] || "PROJECT")}</p>
-          <h3 class="card__title">${esc(item.title)}</h3>
-        </div>
-        <div class="project-card__top-meta">
-          ${item.id === "oeil-de-meg" ? chip("PHP") : ""}
-          ${statusBadge(item.status, item.statusLabel)}
-          ${projectSignatureBubble(item, "card")}
-        </div>
-      </div>
-      ${cardCopy(item.summary, 1)}
-      ${signalStrip(item)}
-      ${summaryMetrics(item, "project")}
-      ${metadataList([
-        { label: "Artist", value: item.artist },
-        { label: "Program", value: item.program },
-      ])}
-    </article>
-  `;
-
-  const projectLandingCard = (item) => `
-    <article class="project-card${item.id === "oeil-de-meg" ? " project-card--oeil-de-meg" : ""}" data-project-detail-link="${esc(item.route || `./project.html?id=${encodeURIComponent(item.id)}`)}" tabindex="0" role="link" aria-label="Open ${esc(item.title)} detail" ${cardBaseAttrs(item)}>
-      <a class="project-card__overlay-link" href="${esc(item.route || `./project.html?id=${encodeURIComponent(item.id)}`)}" aria-label="Open ${esc(item.title)} detail"></a>
-      <div class="project-card__top">
-        <div>
-          <p class="card__meta">${esc(item.category || item.type || "PROJECT")}</p>
-          <h3 class="card__title">${esc(item.title)}</h3>
-        </div>
-        <div class="project-card__top-meta">
-          ${item.id === "oeil-de-meg" ? chip("PHP") : ""}
-          ${statusBadge(item.status, item.statusLabel)}
-          ${projectSignatureBubble(item, "card")}
-        </div>
-      </div>
-      ${cardCopy(item.summary, 1)}
-      ${signalStrip(item)}
-      ${tagRow(homeCardPills(item), { limit: 4, compact: true })}
-    </article>
-  `;
-
-  const archiveCard = (item) => `
-    <article class="archive-card" ${cardBaseAttrs(item)}>
-      <div class="archive-card__header">
-        <div class="archive-card__identity">
-          <p class="card__meta">${esc(item.type || "ARCHIVE")}${item.category ? ` · ${esc(item.category)}` : ""}</p>
-          <h3 class="card__title">${esc(item.title)}</h3>
-          ${cardCopy(item.summary, 1)}
-          ${signalStrip(item)}
-        </div>
-        <div class="archive-card__status">
-          ${statusBadge(item.status, item.statusLabel)}
-          ${item.date ? chip(`Date: ${item.date}`) : ""}
-        </div>
-      </div>
-      ${summaryMetrics(item, "archive")}
-      ${linkRow(item.cta || item.links?.[0] || null)}
-    </article>
-  `;
-
-  const researchCard = (item, options = {}) => `
-    <article class="project-card research-dossier-card${options.featured ? " research-dossier-card--featured" : ""}" ${cardBaseAttrs(item)} ${cardLinkAttrs(options.href, options.label || `Open ${item.title}`)}>
-      ${cardOverlayLink(options.href, options.label || `Open ${item.title}`)}
-      <div class="research-dossier-card__top">
-        <div class="research-dossier-card__identity">
-          <p class="card__meta">${esc(item.type || "RESEARCH FIELD")}</p>
-          <h3 class="card__title">${esc(item.title)}</h3>
-          <p class="research-dossier-card__subtitle">${esc(item.subtitle || item.statusLabel || item.maturity || "")}</p>
-        </div>
-        <div class="research-dossier-card__top-meta">
-          ${typeof options.index === "number" ? `<span class="research-dossier-card__index">0${options.index + 1}</span>` : ""}
-          ${statusBadge(item.status, item.statusLabel)}
-        </div>
-      </div>
-      ${cardCopy(item.summary, 1)}
-      <div class="research-dossier-card__facts">
-        <div class="research-dossier-card__fact">
-          <span>Projects</span>
-          <strong>${esc((item.relatedProjects || []).length)}</strong>
-        </div>
-        <div class="research-dossier-card__fact">
-          <span>Programs</span>
-          <strong>${esc((item.relatedPrograms || []).length)}</strong>
-        </div>
-        <div class="research-dossier-card__fact">
-          <span>Artefacts</span>
-          <strong>${esc((item.relatedArtefacts || []).length)}</strong>
-        </div>
-      </div>
-      <div class="tag-cluster tag-cluster--compact research-dossier-card__signals">
-        ${[
-          item.maturity,
-          item.confidence,
-          item.visibility,
-          item.relations?.partOf?.[0],
-        ]
-          .filter(Boolean)
-          .map((value) => `<span class="chip">${esc(catalog.taxonomies?.maturity?.[value]?.label || catalog.taxonomies?.confidence?.[value]?.label || catalog.taxonomies?.visibility?.[value]?.label || value)}</span>`)
-          .join("")}
-      </div>
-      ${signalStrip(item)}
-      ${tagRow([...(item.tags || []), ...(item.medium || []), ...(item.discipline || [])], { limit: 4, compact: true })}
-    </article>
-  `;
-
-  const personCard = (item, options = {}) => `
-    <article class="project-card" ${cardBaseAttrs(item)} ${cardLinkAttrs(options.href, options.label || `Open ${item.title}`)}>
-      ${cardOverlayLink(options.href, options.label || `Open ${item.title}`)}
-      <div class="project-card__top">
-        <div>
-          <p class="card__meta">${esc(item.type || "ARTIST")}</p>
-          <h3 class="card__title">${esc(item.title)}</h3>
-        </div>
-        ${statusBadge(item.status, item.statusLabel)}
-      </div>
-      ${cardCopy(item.summary, 1)}
-      ${signalStrip(item)}
-      ${summaryMetrics(item, "person")}
-      ${metadataList([{ label: "Kind", value: item.kind }])}
-    </article>
-  `;
-
-  const programCard = (item, options = {}) => `
-    <article class="program-card" ${cardBaseAttrs(item)} ${cardLinkAttrs(options.href, options.label || `Open ${item.title}`)}>
-      ${cardOverlayLink(options.href, options.label || `Open ${item.title}`)}
-      <div class="project-card__top">
-        <div>
-          <p class="card__meta">${esc(item.type || "PROGRAM")}</p>
-          <h3 class="card__title">${esc(item.title)}</h3>
-        </div>
-        ${statusBadge(item.status, item.statusLabel)}
-      </div>
-      ${cardCopy(item.summary, 1)}
-      ${signalStrip(item)}
-      ${summaryMetrics(item, "program")}
-    </article>
-  `;
-
-  const channelCard = (item) => `
-    <article class="program-card" ${cardBaseAttrs(item)}>
-      <div class="project-card__top">
-        <div>
-          <p class="card__meta">${esc(item.type || "CHANNEL")}</p>
-          <h3 class="card__title">${esc(item.title)}</h3>
-        </div>
-        ${statusBadge(item.status, item.statusLabel)}
-      </div>
-      ${cardCopy(item.summary, 1)}
-      ${signalStrip(item)}
-      ${summaryMetrics(item, "program")}
-    </article>
-  `;
-
-  const taxonomyPanel = (scope, title, description, groups, extraClass = "") => `
-    <section class="zone-card hero taxonomy-panel ${esc(extraClass)}" data-filter-scope="${esc(scope)}">
-      <div class="section-head">
-        <p class="eyebrow">${esc(title)}</p>
-        <h2>${esc(description.heading)}</h2>
-        <p class="lede">${esc(description.copy)}</p>
-      </div>
-      <div class="taxonomy-grid">
-        ${groups
-          .map(
-            (group) => `
-              <div class="taxonomy-column${group.options.length > 6 ? " taxonomy-column--scroll" : ""}">
-                <p class="card__meta">${esc(group.label)}</p>
-                <div
-                  class="pill-cloud taxonomy-pill-row"
-                  data-filter-group="${esc(group.key)}"
-                  style="flex-wrap:nowrap;overflow-x:auto;overflow-y:hidden;scrollbar-width:thin;-webkit-overflow-scrolling:touch;"
-                >
-                  ${group.options
-                    .map(
-                      (option) => `
-                        <button
-                          class="filter-chip${option.active ? " is-active" : ""}"
-                          type="button"
-                          aria-pressed="${option.active ? "true" : "false"}"
-                          data-filter-toggle
-                          data-filter-key="${esc(group.key)}"
-                          data-filter-value="${esc(option.value)}"
-                        >
-                          ${esc(option.label)}
-                        </button>
-                      `,
-                    )
-                    .join("")}
-                </div>
-              </div>
-            `,
-          )
-          .join("")}
-      </div>
-    </section>
-  `;
-
-  const manifestPanel = () => `
-    <section class="zone-card hero">
-      <div class="section-head">
-        <p class="eyebrow">STUDIO MANIFEST</p>
-        <h2>Three layers.</h2>
-      </div>
-      <div class="stat-grid">
-        ${[
-          {
-            label: "Layer 01",
-            title: "Studio & Label",
-            copy: "Identity, releases and public signals.",
-          },
-          {
-            label: "Layer 02",
-            title: "Recording Artist",
-            copy: "ORETH carries the cycle.",
-          },
-          {
-            label: "Layer 03",
-            title: "Research Program",
-            copy: "VASTE stays external as the research spine.",
-          },
-        ]
-          .map(
-            (item) => `
-              <article class="stat-card">
-                <p class="card__meta">${esc(item.label)}</p>
-                <strong>${esc(item.title)}</strong>
-                <span>${esc(item.copy)}</span>
-              </article>
-            `,
-          )
-          .join("")}
-      </div>
-    </section>
-  `;
-
-  const featuredWork = () => {
-    const palimpsests = catalog.projects?.find((item) => item.id === "palimpsests");
-    if (!palimpsests) return "";
-    return `
-      <section class="zone-card hero">
-        <div class="section-head">
-          <p class="eyebrow">PALIMPSESTS</p>
-          <h2>Palimpsests.</h2>
-          <p class="lede">A single image, then the record.</p>
-        </div>
-        <a class="project-immersive__hero project-immersive__hero--home project-immersive__hero--palimpsests" href="./palimpsests.html" aria-label="Open Palimpsests project page">
-          <div class="project-immersive__hero-backdrop" aria-hidden="true">
-            <span class="project-immersive__hero-title">PALIMPSESTS</span>
-          </div>
-          <div class="project-immersive__hero-copy">
-            <p class="card__meta">Featured project</p>
-            <h3 class="display-title">Palimpsests</h3>
-            <p class="lede">Open the cycle.</p>
-            <div class="button-row button-row--compact">
-              <span class="button button--primary">Open project</span>
-              <span class="button button--secondary">View the record</span>
-            </div>
-          </div>
-          <div class="project-immersive__hero-visual">
-            <div class="project-immersive__hero-panel">
-              <figure class="project-immersive__frame project-immersive__frame--lead project-immersive__frame--home project-immersive__frame--palimpsests">
-                <img class="project-immersive__image project-immersive__image--palimpsests" src="./assets/media/projects/palimpsests/palimpsests-hero.png" alt="Palimpsests cover artwork" loading="lazy" />
-              </figure>
-            </div>
-          </div>
-        </a>
-        <div class="link-row">
-          <a class="tag" href="./palimpsests.html">Palimpsests</a>
-          <a class="tag" href="./archive.html">Archive</a>
-          <a class="tag" href="./contact.html">Contact</a>
-        </div>
-      </section>
-    `;
-  };
-
-  const vasteBanner = () => `
-    <section class="zone-card hero latests-panel" id="latests">
-      <div class="section-head">
-        <p class="eyebrow">LATESTS</p>
-        <h2>Current project image.</h2>
-        <p class="lede">The latest work, then the runtime line.</p>
-      </div>
-      <div class="latests-grid latests-grid--cinematic">
-        ${(() => {
-          const featured = featuredProjectForHome(["palimpsests"]);
-          if (!featured) return "";
-          return `
-            <article class="project-card project-card--featured${featured.id === "oeil-de-meg" ? " project-card--oeil-de-meg" : ""}" ${cardBaseAttrs(featured)} ${cardLinkAttrs(featured.route || `./project.html?id=${encodeURIComponent(featured.id)}`, `Open ${featured.title}`)}>
-              ${cardOverlayLink(featured.route || `./project.html?id=${encodeURIComponent(featured.id)}`, `Open ${featured.title}`)}
-              ${projectButterflyBubble(featured, "hero")}
-              <div class="project-card__top">
-                <div>
-                  <p class="card__meta">${esc(featured.category || featured.type || "PROJECT")}</p>
-                  <h3 class="card__title">${esc(featured.title)}</h3>
-                </div>
-                ${statusBadge(featured.status, featured.statusLabel)}
-              </div>
-              ${cardCopy(featured.summary || featured.description, 2)}
-              ${tagRow(featured.tags || [], { limit: 4, compact: true })}
-              <div class="link-row">
-                <a class="tag" href="${esc(featured.route || `./project.html?id=${encodeURIComponent(featured.id)}`)}">Open project</a>
-                <a class="tag" href="./work.html">Work</a>
-              </div>
-            </article>
-          `;
-        })()}
-        ${(() => {
-          const vaste = catalog.programs?.find((item) => item.id === "vaste") || {};
-          const vasteAttrs = `
-            data-filter-card
-            data-entry-id="${esc(vaste.id || "vaste")}"
-            data-status="${esc(vaste.status || "")}"
-            data-category="${esc(vaste.category || vaste.type || "")}"
-            data-medium="${esc((vaste.medium || []).join(" "))}"
-            data-discipline="${esc((vaste.discipline || []).join(" "))}"
-            data-year="${esc(vaste.temporality?.creationYear || vaste.date || "")}"
-            data-entity-type="${esc(vaste.kind || "")}"
-            data-research-field="${esc(vaste.researchField || (vaste.relatedResearchFields || []).join(" "))}"
-            data-visibility="${esc(vaste.visibility || "")}"
-            data-maturity="${esc(vaste.maturity || "")}"
-            data-confidence="${esc(vaste.confidence || "")}"
-            data-kind="${esc(vaste.kind || "")}"
-          `;
-          return `
-        <article class="program-card latests-panel__cta vast-banner vast-banner--cinematic" ${vasteAttrs}>
-          <div class="vast-banner__shell">
-            <div class="vast-banner__content">
-              <p class="card__meta">CONCEPT CTA</p>
-              <h3 class="vast-banner__title">VASTE</h3>
-              <p class="vast-banner__copy">Open the runtime.</p>
-              <div class="pill-cloud vast-banner__chips" aria-label="VASTE attributes">
-                <span class="chip">Runtime</span>
-                <span class="chip">Graph systems</span>
-                <span class="chip">Research engine</span>
-              </div>
-            </div>
-            ${vasteEngineMarkup()}
-            <div class="button-row button-row--compact vast-banner__actions">
-              <a class="button button--primary" href="https://www.vaste.space/" target="_blank" rel="noreferrer">Open VASTE</a>
-              <a class="button button--secondary" href="./research.html">Research</a>
-            </div>
-          </div>
-        </article>
-          `;
-        })()}
-      </div>
-    </section>
-  `;
-
-  const featuredResearch = () => {
-    const projects = homeProjects(["palimpsests"]).filter((item) => item.route || item.kind === "project");
-    if (!projects.length) return "";
-    return `
-      <section class="zone-card hero">
-        <div class="section-head">
-          <p class="eyebrow">WORK</p>
-          <h2>Selected works.</h2>
-          <p class="lede">One route per project.</p>
-        </div>
-        <div class="work-carousel" role="list" aria-label="Dedicated projects carousel">
-          <div class="work-carousel__track">
-            ${projects
-              .slice(0, 5)
-              .map(
-                (item) => `
-                  <div class="work-carousel__item" role="listitem">
-                    ${projectLandingCard(item)}
-                  </div>
-                `,
-              )
-              .join("")}
-          </div>
-        </div>
-        <div class="link-row">
-          <a class="tag" href="./projects.html">Projects</a>
-          <a class="tag" href="./work.html">Work archive</a>
-        </div>
-      </section>
-    `;
-  };
-
-  const latestArtefacts = () => {
-    const latest = (catalog.artefacts || []).slice(0, 3);
-    return `
-      <section class="zone-card hero">
-        <div class="section-head">
-          <p class="eyebrow">LATEST ARTEFACTS</p>
-          <h2>Current fragments</h2>
-        </div>
-        <div class="card-grid card-grid--three">
-          ${latest
-            .map(
-              (item) => `
-                <article class="panel panel--soft card-link-surface" ${cardBaseAttrs(item)} ${cardLinkAttrs(`./artefact.html?id=${encodeURIComponent(item.id)}`, `Open ${item.title}`)}>
-                  ${cardOverlayLink(`./artefact.html?id=${encodeURIComponent(item.id)}`, `Open ${item.title}`)}
-                  <p class="card__meta">${esc(item.type)}</p>
-                  <h3 class="card__title">${esc(item.title)}</h3>
-                  ${cardCopy(item.summary, 2)}
-                  <div class="project-card__meta">
-                    ${statusBadge(item.status, item.statusLabel)}
-                    ${chip(item.project)}
-                  </div>
-                  <div class="link-row">
-                    <a class="tag" href="./archive.html">Archive</a>
-                    <a class="tag" href="./work.html">Work</a>
-                  </div>
-                </article>
-              `,
-            )
-            .join("")}
-        </div>
-      </section>
-    `;
-  };
-
-  const graphSurface = ({
-    eyebrow,
-    title,
-    copy,
-    coreLabel,
-    coreCopy,
-    nodes = [],
-    actions = [],
-    variant = "default",
-  }) => `
-    <section class="zone-card hero graph-surface graph-surface--${esc(variant)}" data-graph-surface>
-      <div class="graph-surface__content">
-        <div class="section-head">
-          <p class="eyebrow">${esc(eyebrow)}</p>
-          <h2>${esc(title)}</h2>
-          <p class="lede">${esc(copy)}</p>
-        </div>
-        ${
-          actions.length
-            ? `
-              <div class="button-row">
-                ${actions
-                  .map(
-                    (action, index) =>
-                      `<a class="button ${index === 0 ? "button--primary" : "button--secondary"}" href="${esc(action.href)}"${action.target ? ` target="${esc(action.target)}" rel="noreferrer"` : ""}>${esc(action.label)}</a>`,
-                  )
-                  .join("")}
-              </div>
-            `
-            : ""
-        }
-      </div>
-      <div class="graph-surface__stage">
-        <canvas class="graph-surface__canvas" aria-hidden="true"></canvas>
-        <div class="graph-surface__grid" aria-hidden="true"></div>
-        <div class="graph-surface__halo" aria-hidden="true"></div>
-        <div class="graph-surface__ring graph-surface__ring--outer" aria-hidden="true"></div>
-        <div class="graph-surface__ring graph-surface__ring--inner" aria-hidden="true"></div>
-        <div class="graph-surface__core" aria-hidden="true">
-          <strong>${esc(coreLabel || title)}</strong>
-          ${coreCopy ? `<small>${esc(coreCopy)}</small>` : ""}
-        </div>
-        ${nodes
-          .map(
-            (node, index) => {
-              const tag = node.href ? "a" : "button";
-              const attrs = [
-                node.href ? `href="${esc(node.href)}"` : "",
-                node.target ? `target="${esc(node.target)}" rel="noreferrer"` : "",
-                node.label ? `aria-label="${esc(node.label)}"` : "",
-              ]
-                .filter(Boolean)
-                .join(" ");
-              return `
-                <${tag}
-                  class="graph-surface__node"
-                  data-graph-node
-                  data-node-index="${index}"
-                  data-node-label="${esc(node.label || "")}"
-                  ${attrs}
-                  style="--x:${esc(node.x || "0rem")};--y:${esc(node.y || "0rem")};--z:${esc(node.z || "0rem")};--node-color:${esc(node.color || "rgba(234,220,207,0.9)")};"
-                ></${tag}>
-              `;
-            },
-          )
-          .join("")}
-      </div>
-    </section>
-  `;
-
-  const crossNavigation = () =>
-    graphSurface({
-      eyebrow: "ATLAS",
-      title: "A site held together by orbiting routes.",
-      copy: "Pages stay linked through the same frame: work, research, archive, contact and the external stack.",
-      coreLabel: catalog.ecosystem?.root || "Electronic Artefacts",
-      coreCopy: "Central node",
-      nodes: [
-        { label: "WORK", note: "Projects", href: "./work.html", x: "-12rem", y: "-7rem", z: "-18rem", angle: "28deg", length: "13rem" },
-        { label: "PROJECTS", note: "Routes", href: "./projects.html", x: "11rem", y: "-6rem", z: "16rem", angle: "-26deg", length: "12rem" },
-        { label: "PROGRAMS", note: "Stack", href: "./programs.html", x: "-15rem", y: "1rem", z: "8rem", angle: "6deg", length: "14rem" },
-        { label: "RESEARCH", note: "Fields", href: "./research.html", x: "14rem", y: "2rem", z: "-8rem", angle: "-8deg", length: "15rem" },
-        { label: "ARCHIVE", note: "Fragments", href: "./archive.html", x: "-9rem", y: "10rem", z: "12rem", angle: "-44deg", length: "11rem" },
-        { label: "ABOUT", note: "Lineage", href: "./about.html", x: "9rem", y: "11rem", z: "-14rem", angle: "-54deg", length: "10rem" },
-        { label: "CONTACT", note: "Links", href: "./contact.html", x: "0rem", y: "-14rem", z: "6rem", angle: "90deg", length: "14rem" },
-        { label: "VASTE", note: "External", href: "https://www.vaste.space/", target: "_blank", x: "0rem", y: "14rem", z: "-4rem", angle: "-90deg", length: "13rem", emphasis: true },
-      ],
-    });
-
-  const uxSurface = (eyebrow, title, copy, metrics = [], links = []) =>
-    graphSurface({
-      eyebrow,
-      title,
-      copy,
-      coreLabel: title,
-      coreCopy: "Signal map",
-      nodes: metrics.slice(0, 5).map((item, index) => {
-        const positions = [
-          { x: "-11rem", y: "-6rem", z: "-14rem", angle: "32deg" },
-          { x: "10rem", y: "-7rem", z: "15rem", angle: "-30deg" },
-          { x: "-13rem", y: "2rem", z: "10rem", angle: "8deg" },
-          { x: "12rem", y: "3rem", z: "-10rem", angle: "-10deg" },
-          { x: "0rem", y: "13rem", z: "4rem", angle: "-90deg" },
-        ][index] || { x: "0rem", y: "0rem", z: "0rem", angle: "0deg" };
-        return {
-          label: item.value,
-          note: item.label,
-          x: positions.x,
-          y: positions.y,
-          z: positions.z,
-          angle: positions.angle,
-          length: index === 4 ? "13rem" : "12rem",
-        };
-      }),
-      actions: links,
-    });
-
-  const nodesFromItems = (items = [], options = {}) =>
-    items.slice(0, options.limit || 7).map((item, index) => ({
-      label: options.labelFor ? options.labelFor(item, index) : item.title || item.name || `Node ${index + 1}`,
-      note: options.noteFor ? options.noteFor(item, index) : item.type || item.statusLabel || item.category || "",
-      href: options.hrefFor ? options.hrefFor(item, index) : item.route || item.href || "",
-      target: options.targetFor ? options.targetFor(item, index) : "",
-      x: options.positions?.[index]?.x || `${(index % 2 === 0 ? -1 : 1) * (10 + index * 2)}rem`,
-      y: options.positions?.[index]?.y || `${(index - 2) * 3}rem`,
-      z: options.positions?.[index]?.z || `${(index % 3 - 1) * 8}rem`,
-      angle: options.positions?.[index]?.angle || `${(index % 2 === 0 ? 24 : -24)}deg`,
-      length: options.positions?.[index]?.length || "14rem",
-      emphasis: index === 0,
-    }));
-
-  const ecosystemExplorer = () => {
-    const projects = catalog.projects?.length || 0;
-    const programs = catalog.programs?.length || 0;
-    const artefacts = catalog.artefacts?.length || 0;
-    const research = catalog.researchFields?.length || 0;
-    return uxSurface(
-      "LAYER",
-      "Signals in orbit.",
-      "Quick routes, linked surfaces and current status, all held in one frame.",
-      [
-        { label: "Projects", value: String(projects), level: 76 },
-        { label: "Programs", value: String(programs), level: 88 },
-        { label: "Artefacts", value: String(artefacts), level: 64 },
-        { label: "Research", value: String(research), level: 70 },
-        { label: "Routes", value: "8", level: 92 },
-      ],
-      [
-        { label: "Search", href: "./search.html" },
-        { label: "Archive", href: "./archive.html" },
-        { label: "VASTE", href: "https://www.vaste.space/", target: "_blank" },
-      ],
-    );
-  };
-
-  const startGraphSurfaceAnimation = () => {
-    if (window.__graphSurfaceAnimationStarted) return;
-    window.__graphSurfaceAnimationStarted = true;
-
-    const surfaces = [...document.querySelectorAll("[data-graph-surface]")];
-    if (!surfaces.length) return;
-    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
-
-    const contexts = surfaces
-      .map((surface) => {
-        const stage = surface.querySelector(".graph-surface__stage");
-        const canvas = surface.querySelector(".graph-surface__canvas");
-        const ctx = canvas?.getContext("2d");
-        const nodes = [...surface.querySelectorAll("[data-graph-node]")].map((el) => ({
-          el,
-          label: el.dataset.nodeLabel || el.textContent.trim(),
-          color: el.style.getPropertyValue("--node-color") || "rgba(234,220,207,0.9)",
-          dragX: 0,
-          dragY: 0,
-          currentX: 0,
-          currentY: 0,
-          pointerX: 0,
-          pointerY: 0,
-          isDragging: false,
-        }));
-
-        if (!stage || !canvas || !ctx || !nodes.length) return null;
-        return {
-          surface,
-          stage,
-          canvas,
-          ctx,
-          nodes,
-          phase: Math.random() * Math.PI * 2,
-          activePointerId: null,
-        };
-      })
-      .filter(Boolean);
-
-    if (!contexts.length) return;
-
-    const resize = (context) => {
-      const rect = context.stage.getBoundingClientRect();
-      const dpr = Math.max(1, window.devicePixelRatio || 1);
-      context.canvas.width = Math.max(1, Math.round(rect.width * dpr));
-      context.canvas.height = Math.max(1, Math.round(rect.height * dpr));
-      context.canvas.style.width = `${rect.width}px`;
-      context.canvas.style.height = `${rect.height}px`;
-      context.ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
-      context.width = rect.width;
-      context.height = rect.height;
-      context.centerX = rect.width / 2;
-      context.centerY = rect.height / 2;
-      context.minDim = Math.min(rect.width, rect.height);
-    };
-
-    contexts.forEach(resize);
-
-    const setNodeDragging = (context, nodeIndex, dragging) => {
-      const node = context.nodes[nodeIndex];
-      if (!node) return;
-      node.el.classList.toggle("is-dragging", dragging);
-      node.isDragging = dragging;
-    };
-
-    const drawNode = (ctx, node, cx, cy, radius, pulse, alpha) => {
-      ctx.save();
-      ctx.translate(cx, cy);
-      ctx.globalAlpha = alpha;
-      ctx.shadowColor = "rgba(255,255,255,0.18)";
-      ctx.shadowBlur = 14 * pulse;
-      ctx.lineWidth = 1.1 + pulse * 0.65;
-      ctx.strokeStyle = "rgba(255,255,255,0.95)";
-      ctx.beginPath();
-      ctx.arc(0, 0, radius, 0, Math.PI * 2);
-      ctx.stroke();
-      ctx.shadowBlur = 0;
-      ctx.fillStyle = node.color;
-      ctx.beginPath();
-      ctx.arc(0, 0, Math.max(3.2, radius * 0.28), 0, Math.PI * 2);
-      ctx.fill();
-      ctx.fillStyle = "rgba(255,255,255,0.9)";
-      ctx.font = "600 10px sans-serif";
-      ctx.textAlign = "center";
-      ctx.textBaseline = "top";
-      ctx.fillText(node.label, 0, radius + 8);
-      ctx.restore();
-    };
-
-    let rafId = 0;
-    const render = () => {
-      contexts.forEach((context) => {
-        if (!document.body.contains(context.surface)) return;
-
-        const rect = context.stage.getBoundingClientRect();
-        if (rect.width !== context.width || rect.height !== context.height) {
-          resize(context);
-        }
-
-        const { ctx, width, height, centerX, centerY, minDim } = context;
-        const t = performance.now() * 0.001;
-
-        ctx.clearRect(0, 0, width, height);
-
-        const bg = ctx.createRadialGradient(centerX, centerY, minDim * 0.02, centerX, centerY, minDim * 0.72);
-        bg.addColorStop(0, "rgba(234,220,207,0.08)");
-        bg.addColorStop(0.45, "rgba(255,255,255,0.02)");
-        bg.addColorStop(1, "rgba(0,0,0,0.04)");
-        ctx.fillStyle = bg;
-        ctx.fillRect(0, 0, width, height);
-
-        ctx.strokeStyle = "rgba(255,255,255,0.04)";
-        ctx.lineWidth = 1;
-        for (let x = 0; x < width; x += Math.max(52, width / 10)) {
-          ctx.beginPath();
-          ctx.moveTo(x, 0);
-          ctx.lineTo(x, height);
-          ctx.stroke();
-        }
-        for (let y = 0; y < height; y += Math.max(44, height / 8)) {
-          ctx.beginPath();
-          ctx.moveTo(0, y);
-          ctx.lineTo(width, y);
-          ctx.stroke();
-        }
-
-        const orbit1 = minDim * 0.38;
-        const orbit2 = minDim * 0.22;
-        ctx.strokeStyle = "rgba(255,255,255,0.08)";
-        ctx.lineWidth = 1;
-        ctx.beginPath();
-        ctx.arc(centerX, centerY, orbit1, 0, Math.PI * 2);
-        ctx.stroke();
-        ctx.beginPath();
-        ctx.arc(centerX, centerY, orbit2, 0, Math.PI * 2);
-        ctx.stroke();
-
-        ctx.beginPath();
-        ctx.arc(centerX, centerY, Math.max(22, minDim * 0.08), 0, Math.PI * 2);
-        ctx.fillStyle = "rgba(234,220,207,0.12)";
-        ctx.fill();
-        ctx.strokeStyle = "rgba(255,255,255,0.88)";
-        ctx.lineWidth = 1.2;
-        ctx.stroke();
-
-        const positions = context.nodes.map((node, index) => {
-          const angle = t * 0.25 + index * (Math.PI * 2 / context.nodes.length);
-          const radiusBase = orbit1 - 26 - index * 5;
-          const wobble = Math.sin(t * 1.2 + index) * 12;
-          const depth = Math.sin(t * 0.9 + index * 1.3);
-          const baseX = centerX + Math.cos(angle) * (radiusBase + wobble * 0.25);
-          const baseY = centerY + Math.sin(angle * 0.95) * (orbit2 + wobble * 0.15);
-          const x = node.isDragging ? node.pointerX : baseX + node.dragX;
-          const y = node.isDragging ? node.pointerY : baseY + node.dragY;
-          const radius = 14 + (depth + 1) * 4;
-          const pulse = 0.7 + (Math.sin(t * 2 + index) + 1) * 0.2;
-          node.currentX = x;
-          node.currentY = y;
-          node.baseX = baseX;
-          node.baseY = baseY;
-          return { node, x, y, radius, pulse, depth };
-        });
-
-        positions.forEach((item) => {
-          ctx.strokeStyle = "rgba(255,255,255,0.26)";
-          ctx.lineWidth = 1;
-          ctx.beginPath();
-          ctx.moveTo(centerX, centerY);
-          ctx.lineTo(item.x, item.y);
-          ctx.stroke();
-        });
-
-        positions.forEach((item, index) => {
-          const next = positions[(index + 1) % positions.length];
-          ctx.strokeStyle = "rgba(255,255,255,0.08)";
-          ctx.lineWidth = 1;
-          ctx.beginPath();
-          ctx.moveTo(item.x, item.y);
-          ctx.lineTo(next.x, next.y);
-          ctx.stroke();
-        });
-
-        positions.forEach((item) => {
-          const z = Math.round(item.depth * 28);
-          item.node.el.style.transform = `translate3d(calc(-50% + ${item.x - centerX}px), calc(-50% + ${item.y - centerY}px), ${z}px)`;
-          drawNode(ctx, item.node, item.x, item.y, item.radius, item.pulse, 0.68 + item.depth * 0.12);
-        });
-      });
-
-      rafId = requestAnimationFrame(render);
-    };
-
-    window.addEventListener("resize", () => contexts.forEach(resize), { passive: true });
-
-    const onPointerMove = (event) => {
-      if (!window.__graphSurfaceDrag) return;
-      const drag = window.__graphSurfaceDrag;
-      const context = drag.context;
-      const node = context?.nodes?.[drag.nodeIndex];
-      if (!context || !node) return;
-
-      const rect = context.stage.getBoundingClientRect();
-      const px = event.clientX - rect.left;
-      const py = event.clientY - rect.top;
-
-      if (Math.abs(px - drag.pointerStartX) > 2 || Math.abs(py - drag.pointerStartY) > 2) {
-        context.dragMoved = true;
-      }
-
-      node.pointerX = px;
-      node.pointerY = py;
-    };
-
-    const onPointerUp = () => {
-      if (!window.__graphSurfaceDrag) return;
-      const { context, nodeIndex } = window.__graphSurfaceDrag;
-      const node = context.nodes[nodeIndex];
-      if (node) {
-        const baseX = Number.isFinite(node.baseX) ? node.baseX : node.currentX;
-        const baseY = Number.isFinite(node.baseY) ? node.baseY : node.currentY;
-        node.dragX = node.pointerX - baseX;
-        node.dragY = node.pointerY - baseY;
-      }
-      setNodeDragging(context, nodeIndex, false);
-      context.activePointerId = null;
-      window.__graphSurfaceDrag = null;
-      window.removeEventListener("pointermove", onPointerMove);
-      window.removeEventListener("pointerup", onPointerUp);
-      window.removeEventListener("pointercancel", onPointerUp);
-    };
-
-    contexts.forEach((context) => {
-      context.nodes.forEach((node, nodeIndex) => {
-        node.el.addEventListener("pointerdown", (event) => {
-          event.preventDefault();
-          const rect = context.stage.getBoundingClientRect();
-          const pointerX = event.clientX - rect.left;
-          const pointerY = event.clientY - rect.top;
-
-          window.__graphSurfaceDrag = {
-            context,
-            nodeIndex,
-            pointerStartX: pointerX,
-            pointerStartY: pointerY,
-          };
-          context.dragMoved = false;
-          context.activePointerId = event.pointerId;
-          node.pointerX = pointerX;
-          node.pointerY = pointerY;
-          setNodeDragging(context, nodeIndex, true);
-          node.el.setPointerCapture?.(event.pointerId);
-          window.addEventListener("pointermove", onPointerMove);
-          window.addEventListener("pointerup", onPointerUp);
-          window.addEventListener("pointercancel", onPointerUp);
-        });
-
-        node.el.addEventListener("click", (event) => {
-          if (context.dragMoved) {
-            event.preventDefault();
-            event.stopPropagation();
-          }
-          context.dragMoved = false;
-        });
-      });
-    });
-
-    rafId = requestAnimationFrame(render);
-    return () => cancelAnimationFrame(rafId);
-  };
-
-  const pageLens = (type) => {
-    const configs = {
-      work: {
-        eyebrow: "WORK LENS",
-        title: "Work in orbit.",
-        copy: "Projects, roles and signals stay on the same plane.",
-        nodes: nodesFromItems((catalog.projects || []).filter((item) => item.visibility !== "internal"), {
-          limit: 6,
-          labelFor: (item) => item.title,
-          noteFor: (item) => item.category || item.statusLabel || "Project",
-          hrefFor: (item) => `./project.html?id=${encodeURIComponent(item.id)}`,
-          positions: [
-            { x: "-15rem", y: "-8rem", z: "-15rem", angle: "20deg" },
-            { x: "14rem", y: "-8rem", z: "15rem", angle: "-18deg" },
-            { x: "-17rem", y: "0rem", z: "7rem", angle: "4deg" },
-            { x: "17rem", y: "1rem", z: "-8rem", angle: "-6deg" },
-            { x: "-10rem", y: "13rem", z: "11rem", angle: "-42deg" },
-            { x: "10rem", y: "13rem", z: "-13rem", angle: "-48deg" },
-          ],
-        }),
-        links: [
-          { label: "Projects", href: "./projects.html" },
-          { label: "Search", href: "./search.html" },
-        ],
-      },
-      projects: {
-        eyebrow: "PROJECT MAP",
-        title: "Project constellation.",
-        copy: "Each route keeps its own orbit.",
-        nodes: nodesFromItems(catalog.projects || [], {
-          limit: 7,
-          labelFor: (item) => item.title,
-          noteFor: (item) => item.program || item.category || item.statusLabel || "Project",
-          hrefFor: (item) => `./project.html?id=${encodeURIComponent(item.id)}`,
-          positions: [
-            { x: "-16rem", y: "-9rem", z: "-16rem" },
-            { x: "15rem", y: "-8rem", z: "15rem" },
-            { x: "-18rem", y: "0rem", z: "10rem" },
-            { x: "18rem", y: "1rem", z: "-10rem" },
-            { x: "-10rem", y: "15rem", z: "11rem" },
-            { x: "10rem", y: "15rem", z: "-11rem" },
-            { x: "0rem", y: "-18rem", z: "6rem" },
-          ],
-        }),
-        links: [
-          { label: "Work", href: "./work.html" },
-          { label: "Research", href: "./research.html" },
-        ],
-      },
-      research: {
-        eyebrow: "RESEARCH FIELD",
-        title: "Theory, branching.",
-        copy: "VOID expands into fields, notes and translations.",
-        nodes: nodesFromItems(catalog.researchFields || [], {
-          limit: 6,
-          labelFor: (item) => item.title,
-          noteFor: (item) => item.parent || item.type || "Field",
-          hrefFor: (item) => `./entity.html?id=${encodeURIComponent(item.id)}`,
-          positions: [
-            { x: "-15rem", y: "-8rem", z: "-15rem" },
-            { x: "15rem", y: "-7rem", z: "16rem" },
-            { x: "-17rem", y: "1rem", z: "8rem" },
-            { x: "17rem", y: "2rem", z: "-8rem" },
-            { x: "-9rem", y: "14rem", z: "12rem" },
-            { x: "9rem", y: "14rem", z: "-12rem" },
-          ],
-        }),
-        links: [
-          { label: "Programs", href: "./programs.html" },
-          { label: "Archive", href: "./archive.html" },
-        ],
-      },
-      programs: {
-        eyebrow: "SYSTEM REGISTRY",
-        title: "System lattice.",
-        copy: "Lineage, grouping and status stay visible.",
-        nodes: nodesFromItems(catalog.programs || [], {
-          limit: 7,
-          labelFor: (item) => item.title,
-          noteFor: (item) => item.systemGroup || item.statusLabel || item.type,
-          hrefFor: (item) => `./entity.html?id=${encodeURIComponent(item.id)}`,
-          positions: [
-            { x: "-16rem", y: "-9rem", z: "-16rem" },
-            { x: "16rem", y: "-8rem", z: "16rem" },
-            { x: "-18rem", y: "0rem", z: "10rem" },
-            { x: "18rem", y: "1rem", z: "-10rem" },
-            { x: "-10rem", y: "15rem", z: "12rem" },
-            { x: "10rem", y: "15rem", z: "-12rem" },
-            { x: "0rem", y: "-18rem", z: "6rem" },
-          ],
-        }),
-        links: [
-          { label: "VASTE", href: "https://www.vaste.space/", target: "_blank" },
-          { label: "Research", href: "./research.html" },
-        ],
-      },
-      archive: {
-        eyebrow: "ARCHIVE CONSOLE",
-        title: "Archive field.",
-        copy: "Fragments, filters and links drift together.",
-        nodes: nodesFromItems(catalog.artefacts || [], {
-          limit: 7,
-          labelFor: (item) => item.title,
-          noteFor: (item) => item.category || item.type || item.statusLabel || "Artefact",
-          hrefFor: (item) => `./artefact.html?id=${encodeURIComponent(item.id)}`,
-          positions: [
-            { x: "-16rem", y: "-8rem", z: "-14rem" },
-            { x: "16rem", y: "-8rem", z: "14rem" },
-            { x: "-18rem", y: "0rem", z: "8rem" },
-            { x: "18rem", y: "1rem", z: "-8rem" },
-            { x: "-10rem", y: "14rem", z: "12rem" },
-            { x: "10rem", y: "14rem", z: "-12rem" },
-            { x: "0rem", y: "-17rem", z: "6rem" },
-          ],
-        }),
-        links: [
-          { label: "Search", href: "./search.html" },
-          { label: "Work", href: "./work.html" },
-        ],
-      },
-      about: {
-        eyebrow: "ECOSYSTEM VIEW",
-        title: "Lineage map.",
-        copy: "Method, pillars and network.",
-        nodes: [
-          { label: "VOID", note: "Theory", href: "./research.html", x: "-15rem", y: "-8rem", z: "-15rem" },
-          { label: "PALIMPSESTS", note: "Art", href: "./work.html", x: "15rem", y: "-8rem", z: "15rem" },
-          { label: "VASTE", note: "Technology", href: "https://www.vaste.space/", target: "_blank", x: "-17rem", y: "1rem", z: "8rem", emphasis: true },
-          { label: "AtypikHouse", note: "Surface", href: "./projects.html", x: "17rem", y: "1rem", z: "-8rem" },
-          { label: "CreativeStuff.jpg", note: "Archive", href: "./archive.html", x: "-10rem", y: "14rem", z: "12rem" },
-          { label: "L’Œil de Meg", note: "Surface", href: "./work.html", x: "10rem", y: "14rem", z: "-12rem" },
-        ],
-        links: [
-          { label: "Work", href: "./work.html" },
-          { label: "Contact", href: "./contact.html" },
-        ],
-      },
-      contact: {
-        eyebrow: "CONTACT ROUTER",
-        title: "Contact routes.",
-        copy: "Email, social and external links.",
-        nodes: [
-          { label: "Email", note: "Direct", href: "mailto:electronic.artefacts@gmail.com", x: "-15rem", y: "-8rem", z: "-14rem" },
-          { label: "Instagram", note: "Social", href: "https://www.instagram.com/", target: "_blank", x: "15rem", y: "-8rem", z: "14rem" },
-          { label: "VASTE", note: "External", href: "https://www.vaste.space/", target: "_blank", x: "-17rem", y: "1rem", z: "8rem" },
-          { label: "Archive", note: "Browse", href: "./archive.html", x: "17rem", y: "1rem", z: "-8rem" },
-        ],
-        links: [
-          { label: "Email", href: "mailto:electronic.artefacts@gmail.com" },
-          { label: "Archive", href: "./archive.html" },
-        ],
-      },
-    };
-    const config = configs[type];
-    if (!config) return "";
-    return graphSurface({
-      eyebrow: config.eyebrow,
-      title: config.title,
-      copy: config.copy,
-      coreLabel: config.title,
-      coreCopy: "Page graph",
-      nodes: config.nodes || [],
-      actions: config.links || [],
-      variant: type,
-    });
-  };
+  const { statusBadge, chip, tagRow, metadataList, linkRow, metricRail, cardLinkAttrs, cardOverlayLink } = window.EA_UI;
+  const { initFilters, initSearch, initCardLinks, initUXEnhancements, syncNavigationState, syncSeoMeta } = window.EA_BEHAVIORS;
+  const { cardBaseAttrs, mediaFrom, mediaKindFor, mediaFigureMarkup, projectSignatureBubble, projectButterflyBubble, vasteEngineMarkup, startVasteEngineAnimation, cardImageFor, signalStrip, cardCopy, metricFill, summaryMetrics, countLabel, entityDateValue, homeProjects, featuredProjectForHome, projectHeroMedia, homeCardPills, projectCard, projectLandingCard, archiveCard, researchCard, personCard, programCard, channelCard, taxonomyPanel, manifestPanel, featuredWork, vasteBanner, featuredResearch, latestArtefacts } = window.EA_VIEW;
+  const { graphSurface, crossNavigation, uxSurface, nodesFromItems, ecosystemExplorer, startGraphSurfaceAnimation, pageLens } = window.EA_SURFACE;
+  const indexes = catalog.indexes || {};
+  const entityIndex = indexes.byId || {};
+  const titleIndex = indexes.byTitleSlug || {};
+  const timelineIndex = indexes.timelinesByEntityId || {};
+  const activityIndex = indexes.activityByEntityId || {};
 
   const workTaxonomy = () => {
     const groups = [
@@ -1460,15 +38,6 @@
         label: "Discipline",
         key: "discipline",
         options: ["all", "Music", "Technology", "Research", "Narrative", "Photography"].map((value) => ({
-          value,
-          label: value === "all" ? "All" : value,
-          active: value === "all",
-        })),
-      },
-      {
-        label: "Category",
-        key: "category",
-        options: ["all", ...(catalog.projectCategories || [])].map((value) => ({
           value,
           label: value === "all" ? "All" : value,
           active: value === "all",
@@ -1528,18 +97,16 @@
       "WORK TAXONOMY",
       {
         heading: "Projects grouped by role",
-        copy: "Filter by status, category and discipline.",
+        copy: "Filter by status, discipline, medium and visibility.",
       },
       groups,
     );
   };
 
   const researchFields = () => {
-    const voidTheory = (catalog.researchFields || []).find((item) => item.id === "void");
+    const voidTheory = entityById("void");
     const theoryIds = ["entropy", "emergence", "runtime-theory", "systems-theory", "information-studies", "anthropic-studies"];
-    const theoryFields = theoryIds
-      .map((id) => (catalog.researchFields || []).find((item) => item.id === id))
-      .filter(Boolean);
+    const theoryFields = theoryIds.map((id) => entityById(id)).filter(Boolean);
 
     return `
       <section class="zone-card hero">
@@ -1987,24 +554,17 @@
     </section>
   `;
 
-  const entityById = (id) => catalog.indexes?.byId?.[id] || null;
-  const collectionById = (id) => (catalog.collections || []).find((item) => item.id === id) || null;
-  const timelineFor = (id) => (catalog.timelines || []).find((item) => item.entityId === id) || null;
-  const activityFor = (id) => (catalog.activity || []).filter((item) => item.entityId === id);
-  const slugify = (value) =>
-    String(value || "")
-      .toLowerCase()
-      .replace(/['’]/g, "")
-      .replace(/[^a-z0-9]+/g, "-")
-      .replace(/^-+|-+$/g, "");
+  const entityById = (id) => entityIndex[id] || null;
+  const timelineFor = (id) => timelineIndex[id] || null;
+  const activityFor = (id) => activityIndex[id] || [];
   const resolveIds = (values) =>
     (values || [])
       .map((value) => {
         if (typeof value !== "string") return value;
-        const exact = entityById(value) || collectionById(value);
+        const exact = entityById(value);
         if (exact) return exact;
         const slug = slugify(value);
-        const byTitle = (catalog.indexes?.entities || []).find((item) => slugify(item.title) === slug);
+        const byTitle = titleIndex[slug];
         return byTitle || { title: value, id: slug || value, kind: "reference" };
       })
       .filter(Boolean);
@@ -2531,7 +1091,7 @@
       new URLSearchParams(window.location.search).get("id") ||
       document.body.dataset.projectId ||
       document.body.dataset.entityId;
-    const item = id ? entityById(id) || collectionById(id) : null;
+    const item = id ? entityById(id) : null;
     const kind = document.body.dataset.detailKind || document.body.dataset.page || "entity";
     if (!item) {
       return `
@@ -2566,6 +1126,8 @@
       ...(item.kind === "project" ? [{ label: "RL", href: `./project-rl.html?id=${encodeURIComponent(item.id)}` }] : []),
     ];
     const detailIntro = item.kind === "program" ? programSpecificPanels(item) : "";
+    const specificPanels = projectSpecificPanels(item);
+    const visualPanels = projectPanels(item);
 
     return `
       <section class="zone-card hero">
@@ -2581,8 +1143,8 @@
         </div>
       </section>
       ${detailIntro}
-      ${projectSpecificPanels(item) ? `<section class="detail-grid">${projectSpecificPanels(item)}</section>` : ""}
-      ${projectPanels(item) ? `<section class="detail-grid project-visual-section">${projectPanels(item)}</section>` : ""}
+      ${specificPanels ? `<section class="detail-grid">${specificPanels}</section>` : ""}
+      ${visualPanels ? `<section class="detail-grid project-visual-section">${visualPanels}</section>` : ""}
       <section class="detail-grid">
         ${knowledgePanels(item)}
       </section>
@@ -3035,20 +1597,20 @@
       {
         label: "Art Translation",
         copy: "The central artistic project line translating VOID into public forms.",
-        items: [catalog.projects.find((item) => item.id === "palimpsests")].filter(Boolean),
+        items: [entityById("palimpsests")].filter(Boolean),
       },
       {
         label: "Narrative Extensions",
         copy: "Branches that extend the artistic material into broader narrative frames.",
-        items: [catalog.projects.find((item) => item.id === "vestiges")].filter(Boolean),
+        items: [entityById("vestiges")].filter(Boolean),
       },
       {
         label: "Applied Surfaces",
         copy: "Project-shaped public or client surfaces that remain outside the core theory/art/technology triad.",
         items: [
-          catalog.projects.find((item) => item.id === "unionmob"),
-          catalog.projects.find((item) => item.id === "atypikhouse"),
-          catalog.projects.find((item) => item.id === "oeil-de-meg"),
+          entityById("unionmob"),
+          entityById("atypikhouse"),
+          entityById("oeil-de-meg"),
         ].filter(Boolean),
       },
     ].filter((group) => group.items.length);
@@ -3186,29 +1748,29 @@
         label: "Internal Projects",
         copy: "Core works, translations and pillars.",
         items: [
-          catalog.researchFields.find((item) => item.id === "void"),
-          catalog.projects.find((item) => item.id === "palimpsests"),
-          catalog.artists.find((item) => item.id === "oreth"),
-          catalog.programs.find((item) => item.id === "vaste"),
-          catalog.programs.find((item) => item.id === "forge"),
-          catalog.programs.find((item) => item.id === "oraclehub"),
+          entityById("void"),
+          entityById("palimpsests"),
+          entityById("oreth"),
+          entityById("vaste"),
+          entityById("forge"),
+          entityById("oraclehub"),
         ].filter(Boolean),
       },
       {
         label: "Collaborations",
         copy: "Collaborative relationships and shared work.",
         items: [
-          catalog.artists.find((item) => item.id === "noi-save"),
-          catalog.artists.find((item) => item.id === "marjolaine-muller"),
+          entityById("noi-save"),
+          entityById("marjolaine-muller"),
         ].filter(Boolean),
       },
       {
         label: "External Works",
         copy: "Outside commissions and public-facing work.",
         items: [
-          catalog.projects.find((item) => item.id === "seven-temps-seulement"),
-          catalog.projects.find((item) => item.id === "atypikhouse"),
-          catalog.projects.find((item) => item.id === "oeil-de-meg"),
+          entityById("seven-temps-seulement"),
+          entityById("atypikhouse"),
+          entityById("oeil-de-meg"),
         ].filter(Boolean),
       },
     ].filter((group) => group.items.length);
@@ -3217,8 +1779,8 @@
       <section class="zone-card hero">
         <div class="section-head">
           <p class="eyebrow">WORK CATALOG</p>
-          <h2>Internal works, collaborations and external works</h2>
-          <p class="lede">Own work, collaborations and outside work.</p>
+          <h2>Internal works, collaborations and external work</h2>
+          <p class="lede">Curated into a clean catalogue so the relation between the layers stays visible.</p>
         </div>
         <div class="catalog-stack">
           ${groups
@@ -3229,7 +1791,7 @@
                     <h3>${esc(group.label)}</h3>
                     <p class="lede">${esc(group.copy)}</p>
                   </div>
-                  <div class="card-grid ${group.items.length > 2 ? "card-grid--two" : "card-grid--two"}">
+                  <div class="card-grid card-grid--two work-card-grid">
                     ${group.items
                       .map((item) => {
                         if (item.kind === "artist") return personCard(item, { href: `./entity.html?id=${encodeURIComponent(item.id)}` });
@@ -3339,14 +1901,14 @@
   };
 
   const load = async () => {
+    const current = document.body.dataset.page;
+    syncNavigationState(current);
+    syncSeoMeta({ current, entityById });
     await loadIncludes();
     document.querySelectorAll("[data-zone]").forEach((zone, index) => {
       zone.dataset.zoneIndex = String(index + 1);
       zone.style.setProperty("--zone-index", String(index + 1));
     });
-    const current = document.body.dataset.page;
-    syncNavigationState(current);
-    syncPageTitle({ current, entityById, collectionById });
     renderPageSections();
     setYear();
   };
