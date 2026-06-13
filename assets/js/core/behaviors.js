@@ -878,6 +878,8 @@
       return;
     }
 
+    if (current === "mentions-legales") document.title = "Legal Notice - Electronic Artefacts";
+    if (current === "confidentialite") document.title = "Privacy - Electronic Artefacts";
     if (current === "programs") document.title = "Programs - Electronic Artefacts";
     if (current === "projects") document.title = "Projects - Electronic Artefacts";
     if (current === "search") document.title = "Search - Electronic Artefacts";
@@ -885,6 +887,7 @@
 
   const syncSeoMeta = ({ current, entityById }) => {
     syncPageTitle({ current, entityById });
+    document.documentElement.lang = "en";
 
     const siteName = "Electronic Artefacts";
     const fallbackDescription = "Electronic Artefacts is an independent creative technology studio operating across research, software development, digital design, communication and artistic production.";
@@ -899,23 +902,25 @@
 
     const pageDescriptions = {
       index: fallbackDescription,
-      work: "Travaux de studio, services et collaborations clients sélectionnées.",
-      research: "Champs de recherche, notes et études système de l'écosystème Electronic Artefacts.",
-      programs: "Programmes, runtimes et systèmes architecturaux qui alimentent Electronic Artefacts.",
-      projects: "Projets, albums et travaux clients du catalogue Electronic Artefacts.",
-      archive: "Projets archivés, systèmes et fils de recherche conservés par Electronic Artefacts.",
+      work: "Studio work, services and selected collaborations.",
+      research: "Research fields, notes and system studies across the Electronic Artefacts ecosystem.",
+      programs: "Programs, runtimes and architectural systems that power Electronic Artefacts.",
+      projects: "Projects, albums and client work in the Electronic Artefacts catalogue.",
+      archive: "Archived projects, systems and research threads preserved by Electronic Artefacts.",
       about: "Electronic Artefacts is an independent creative technology studio spanning research, software development, digital design, communication and artistic production.",
-      contact: "Contacter Electronic Artefacts par email et canaux sociaux.",
-      search: "Rechercher dans la base de connaissances Electronic Artefacts.",
-      project: "Fiche projet d'Electronic Artefacts.",
-      "project-rl": "Surface RL d'un projet Electronic Artefacts.",
-      artefact: "Fiche artefact d'Electronic Artefacts.",
-      collection: "Fiche collection d'Electronic Artefacts.",
-      channel: "Fiche canal d'Electronic Artefacts.",
-      artist: "Fiche artiste d'Electronic Artefacts.",
-      program: "Registre détaillé des programmes Electronic Artefacts, avec statut, lignée et contexte système.",
-      entity: "Fiche de connaissance Electronic Artefacts.",
-      palimpsests: "Fiche projet Palimpsests.",
+      contact: "Contact Electronic Artefacts by email and social channels.",
+      search: "Search the Electronic Artefacts knowledge base.",
+      project: "Electronic Artefacts project page.",
+      "project-rl": "Electronic Artefacts RL surface.",
+      artefact: "Electronic Artefacts artefact page.",
+      collection: "Electronic Artefacts collection page.",
+      channel: "Electronic Artefacts channel page.",
+      artist: "Electronic Artefacts artist page.",
+      program: "Detailed registry of Electronic Artefacts programs, with status, lineage and system context.",
+      entity: "Electronic Artefacts knowledge entry.",
+      palimpsests: "Palimpsests project page.",
+      "mentions-legales": "Legal notice for the Electronic Artefacts site.",
+      confidentialite: "Privacy policy for the Electronic Artefacts site.",
     };
 
     const description =
@@ -989,7 +994,7 @@
     ensureMeta({ property: "og:type", content: ogType });
     ensureMeta({ property: "og:url", content: canonicalUrl });
     ensureMeta({ property: "og:site_name", content: siteName });
-    ensureMeta({ property: "og:locale", content: "fr_FR" });
+    ensureMeta({ property: "og:locale", content: "en_US" });
     ensureMeta({ property: "og:image", content: imageUrl });
     ensureMeta({ property: "og:image:alt", content: imageAlt });
     ensureMeta({ name: "twitter:card", content: "summary_large_image" });
