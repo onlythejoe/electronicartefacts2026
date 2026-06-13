@@ -4579,6 +4579,111 @@ window.EA_SEARCH = {
     });
   };
 
+  const initDesktopCursor = () => {
+    if (!window.matchMedia("(hover: hover) and (pointer: fine)").matches) return;
+    if (document.documentElement.dataset.boundDesktopCursor === "true") return;
+    document.documentElement.dataset.boundDesktopCursor = "true";
+    document.documentElement.classList.add("has-desktop-cursor");
+
+    const cursor = document.createElement("div");
+    cursor.className = "ea-cursor";
+    cursor.setAttribute("aria-hidden", "true");
+    document.body.append(cursor);
+
+    const interactiveSelector = [
+      "a",
+      "button",
+      "summary",
+      "label",
+      "[role='button']",
+      "[data-card-link]",
+      "[data-project-detail-link]",
+      "input",
+      "textarea",
+      "select",
+      ".button",
+      ".chip",
+      ".tag",
+      ".filter-chip",
+      ".taxonomy-pill",
+      ".ux-dock button",
+      ".site-nav a",
+    ].join(",");
+
+    let currentX = Math.max(0, window.innerWidth * 0.5);
+    let currentY = Math.max(0, window.innerHeight * 0.5);
+    let targetX = currentX;
+    let targetY = currentY;
+    let currentScale = 1;
+    let targetScale = 1;
+    let visible = false;
+    let pointerDown = false;
+    let hoveringInteractive = false;
+    let frame = 0;
+
+    const resolveScale = () => {
+      targetScale = pointerDown ? (hoveringInteractive ? 2.55 : 0.95) : hoveringInteractive ? 2.3 : 1;
+    };
+
+    const render = () => {
+      frame = 0;
+      currentX += (targetX - currentX) * 0.28;
+      currentY += (targetY - currentY) * 0.28;
+      currentScale += (targetScale - currentScale) * 0.18;
+      cursor.style.transform = `translate3d(${currentX}px, ${currentY}px, 0) translate(-50%, -50%) scale(${currentScale})`;
+      cursor.style.opacity = visible ? "1" : "0";
+
+      if (
+        Math.abs(targetX - currentX) > 0.1 ||
+        Math.abs(targetY - currentY) > 0.1 ||
+        Math.abs(targetScale - currentScale) > 0.01
+      ) {
+        frame = window.requestAnimationFrame(render);
+      }
+    };
+
+    const scheduleRender = () => {
+      if (!frame) frame = window.requestAnimationFrame(render);
+    };
+
+    const hideCursor = () => {
+      visible = false;
+      scheduleRender();
+    };
+
+    const updatePosition = (event) => {
+      targetX = event.clientX;
+      targetY = event.clientY;
+      visible = true;
+
+      if (event.target instanceof Element) {
+        const nextHoveringInteractive = Boolean(event.target.closest(interactiveSelector));
+        if (nextHoveringInteractive !== hoveringInteractive) {
+          hoveringInteractive = nextHoveringInteractive;
+          resolveScale();
+        }
+      }
+
+      scheduleRender();
+    };
+
+    document.addEventListener("pointermove", updatePosition, { passive: true });
+    document.addEventListener("pointerdown", (event) => {
+      if (event.button !== 0) return;
+      pointerDown = true;
+      resolveScale();
+      scheduleRender();
+    });
+    document.addEventListener("pointerup", (event) => {
+      if (event.button !== 0) return;
+      pointerDown = false;
+      resolveScale();
+      scheduleRender();
+    });
+    document.documentElement.addEventListener("pointerleave", hideCursor);
+    window.addEventListener("blur", hideCursor);
+  };
+
   const initDragRails = () => {
     document.querySelectorAll(".archive-rail-shell, .taxonomy-column .pill-cloud, .project-immersive__rail--wide").forEach((rail) => {
       if (rail.dataset.boundDragRail === "true") return;
@@ -4997,6 +5102,7 @@ window.EA_SEARCH = {
     initAutoHideHeader();
     initReveal();
     initCardSpotlight();
+    initDesktopCursor();
     initDragRails();
     initFilterSummaries(filterState);
     scheduleIdle(() => {
