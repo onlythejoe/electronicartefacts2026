@@ -341,35 +341,6 @@
       return direct;
     }
 
-    const relationIds = [
-      item.project,
-      ...(item.relatedProjects || []),
-      ...(item.relations?.partOf || []),
-      ...(item.relations?.parent || []),
-      ...(item.relations?.relatedTo || []),
-      ...(item.relations?.influences || []),
-    ]
-      .filter(Boolean)
-      .map((value) => String(value));
-
-    for (const id of new Set(relationIds)) {
-      const entry = entityIndex[id];
-      const image = mediaFrom(entry);
-      if (image) {
-        if (cacheKey) cardImageCache.set(cacheKey, image);
-        return image;
-      }
-    }
-
-    if (item.kind === "collection" && window.EA_COLLECTIONS?.resolve) {
-      const member = window.EA_COLLECTIONS.resolve(item, catalog).find((entry) => mediaFrom(entry));
-      const image = mediaFrom(member);
-      if (image) {
-        if (cacheKey) cardImageCache.set(cacheKey, image);
-        return image;
-      }
-    }
-
     if (cacheKey) cardImageCache.set(cacheKey, null);
     return null;
   };
