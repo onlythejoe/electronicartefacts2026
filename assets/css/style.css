@@ -305,6 +305,114 @@
   color: inherit;
 }
 
+.project-immersive__hero--palimpsests {
+  position: relative;
+  overflow: hidden;
+  padding: clamp(1rem, 2.2vw, 1.4rem);
+  border: 1px solid rgba(108, 92, 79, 0.18);
+  background:
+    radial-gradient(circle at 18% 14%, rgba(255, 255, 255, 0.26), transparent 30%),
+    radial-gradient(circle at 80% 18%, rgba(255, 250, 245, 0.18), transparent 28%),
+    linear-gradient(135deg, #d8cfc4 0%, #cec4b7 32%, #b8aba1 68%, #9f9287 100%);
+  box-shadow:
+    0 28px 60px rgba(34, 24, 18, 0.12),
+    inset 0 1px 0 rgba(255, 255, 255, 0.32);
+}
+
+.project-immersive__hero--palimpsests::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 22% 26%, rgba(255, 255, 255, 0.18), transparent 25%),
+    radial-gradient(circle at 78% 70%, rgba(110, 92, 79, 0.12), transparent 32%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+.project-immersive__hero--palimpsests::after {
+  content: "";
+  position: absolute;
+  inset: auto 0 0 0;
+  height: 24%;
+  background: linear-gradient(180deg, transparent, rgba(47, 35, 28, 0.08));
+  pointer-events: none;
+  z-index: 0;
+}
+
+.project-immersive__hero--palimpsests .project-immersive__hero-backdrop {
+  position: absolute;
+  inset: clamp(0.9rem, 2vw, 1.3rem);
+  display: grid;
+  place-items: center;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.project-immersive__hero--palimpsests .project-immersive__hero-title {
+  display: block;
+  font-family: var(--font-display, var(--font-sans));
+  font-size: clamp(3.6rem, 11vw, 10.8rem);
+  font-weight: 900;
+  line-height: 0.9;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: rgba(54, 38, 28, 0.12);
+  text-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.16),
+    0 18px 40px rgba(42, 29, 20, 0.08);
+  transform: translateY(-6%);
+  user-select: none;
+}
+
+.project-immersive__hero--palimpsests .project-immersive__hero-copy {
+  position: relative;
+  z-index: 3;
+  max-width: min(32rem, 58%);
+  align-self: start;
+  padding: clamp(0.45rem, 1vw, 0.65rem);
+}
+
+.project-immersive__hero--palimpsests .project-immersive__hero-visual {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  align-items: end;
+  min-height: min(62svh, 46rem);
+  padding-top: clamp(6rem, 14vw, 10rem);
+}
+
+.project-immersive__hero--palimpsests .project-immersive__hero-panel {
+  display: grid;
+  align-items: end;
+  min-height: min(60svh, 44rem);
+  padding: clamp(0.55rem, 1.1vw, 0.8rem);
+  border-radius: clamp(1.2rem, 2vw, 1.8rem);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.08)),
+    rgba(255, 255, 255, 0.08);
+  box-shadow:
+    0 18px 40px rgba(22, 14, 10, 0.12),
+    inset 0 1px 0 rgba(255, 255, 255, 0.3);
+}
+
+.project-immersive__hero--palimpsests .project-immersive__frame--palimpsests {
+  min-height: min(56svh, 42rem);
+  border-radius: clamp(1rem, 1.8vw, 1.6rem);
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 50% 18%, rgba(255, 255, 255, 0.22), transparent 42%),
+    rgba(0, 0, 0, 0.06);
+}
+
+.project-immersive__hero--palimpsests .project-immersive__image--palimpsests {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center bottom;
+  filter: drop-shadow(0 18px 30px rgba(0, 0, 0, 0.14));
+}
+
 .project-immersive__hero--home .project-immersive__hero-copy {
   z-index: 2;
 }
@@ -560,6 +668,40 @@
   right: 0;
   --bubble-offset-x: 38%;
   --bubble-offset-y: -26%;
+}
+
+.program-detail-grid {
+  align-items: start;
+}
+
+.program-detail-panel {
+  align-content: start;
+}
+
+.program-detail-panel--lead {
+  grid-column: 1 / -1;
+  border-color: rgba(228, 213, 196, 0.18);
+  background:
+    radial-gradient(circle at 16% 0%, rgba(234, 220, 207, 0.12), transparent 30%),
+    radial-gradient(circle at 86% 8%, rgba(96, 165, 250, 0.08), transparent 26%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.07), rgba(255, 255, 255, 0.018)),
+    rgba(255, 255, 255, 0.02);
+}
+
+.program-detail-summary {
+  max-width: 60ch;
+}
+
+.program-detail-chips {
+  margin-top: 0.15rem;
+}
+
+.program-detail-panel .metadata-panel {
+  margin-top: 0.05rem;
+}
+
+.program-detail-panel .card__copy + .metadata-panel {
+  margin-top: 0.2rem;
 }
 
 .project-mark-bubble {
@@ -1044,6 +1186,7 @@
   isolation: isolate;
   overflow: hidden;
   pointer-events: auto;
+  gap: 0.55rem;
   border-color: rgba(var(--pill-rgb), 0.28);
   background:
     linear-gradient(180deg, rgba(var(--pill-rgb), 0.18), rgba(var(--pill-rgb), 0.045)),
@@ -1103,6 +1246,11 @@
 
 .taxonomy-pill.is-picked {
   transform: translateY(-1px) scale(1.015);
+}
+
+.taxonomy-column .taxonomy-pill,
+.taxonomy-column .filter-chip {
+  padding-inline: 0.9rem 0.95rem;
 }
 
 .has-picked-taxonomy {
@@ -1220,15 +1368,15 @@
   --pill-rgb: 234, 220, 207;
 }
 
-.ux-surface {
+.graph-surface {
   display: grid;
-  grid-template-columns: minmax(0, 1.05fr) minmax(20rem, 0.8fr);
+  grid-template-columns: minmax(0, 0.95fr) minmax(0, 1.05fr);
   gap: clamp(1rem, 2.4vw, 1.7rem);
   align-items: stretch;
-  min-height: clamp(22rem, 35vw, 32rem);
+  min-height: clamp(26rem, 40vw, 36rem);
 }
 
-.ux-surface__content {
+.graph-surface__content {
   display: grid;
   align-content: center;
   gap: 1.1rem;
@@ -1236,61 +1384,129 @@
   z-index: 1;
 }
 
-.ux-surface__visual {
+.graph-surface__stage {
   position: relative;
   display: grid;
-  min-height: 18rem;
+  min-height: 22rem;
   overflow: hidden;
   border: 1px solid rgba(255, 255, 255, 0.08);
   border-radius: calc(var(--radius-xl) - 0.35rem);
   background:
-    linear-gradient(135deg, rgba(255, 255, 255, 0.055), transparent 34%),
-    repeating-linear-gradient(90deg, rgba(255, 255, 255, 0.026) 0 1px, transparent 1px 14%),
-    rgba(255, 255, 255, 0.012);
+    radial-gradient(circle at 50% 52%, rgba(234, 220, 207, 0.1), transparent 28%),
+    linear-gradient(135deg, rgba(255, 255, 255, 0.04), transparent 34%),
+    repeating-linear-gradient(90deg, rgba(255, 255, 255, 0.022) 0 1px, transparent 1px 13.5%),
+    rgba(1, 1, 2, 0.76);
+  perspective: 1600px;
+  transform-style: preserve-3d;
 }
 
-.signal-orbit {
+.graph-surface__canvas {
   position: absolute;
-  inset: 1rem;
-  border: 1px solid rgba(255, 255, 255, 0.06);
-  border-radius: 50%;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+  pointer-events: none;
+  mix-blend-mode: screen;
 }
 
-.signal-orbit::before,
-.signal-orbit::after {
+.graph-surface__stage::before,
+.graph-surface__stage::after {
   content: "";
   position: absolute;
-  inset: 18%;
-  border: 1px solid rgba(255, 255, 255, 0.055);
-  border-radius: 50%;
+  inset: 0;
+  pointer-events: none;
 }
 
-.signal-orbit::after {
-  inset: 36%;
-  background: rgba(234, 220, 207, 0.08);
-  box-shadow: 0 0 42px rgba(234, 220, 207, 0.08);
+.graph-surface__stage::before {
+  background:
+    radial-gradient(circle at 50% 50%, rgba(255, 255, 255, 0.08), transparent 36%),
+    radial-gradient(circle at 50% 50%, rgba(234, 220, 207, 0.1), transparent 44%);
+  opacity: 0.7;
+  transform: translateZ(-1px);
 }
 
-.signal-node {
+.graph-surface__stage::after {
+  background: linear-gradient(180deg, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0.26));
+}
+
+.graph-surface__grid {
   position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(90deg, transparent 0 13%, rgba(255, 255, 255, 0.03) 13% 13.1%, transparent 13.1% 26%, rgba(255, 255, 255, 0.03) 26% 26.1%, transparent 26.1% 39%, rgba(255, 255, 255, 0.03) 39% 39.1%, transparent 39.1% 52%, rgba(255, 255, 255, 0.03) 52% 52.1%, transparent 52.1% 65%, rgba(255, 255, 255, 0.03) 65% 65.1%, transparent 65.1% 78%, rgba(255, 255, 255, 0.03) 78% 78.1%, transparent 78.1% 100%),
+    linear-gradient(180deg, transparent 0 18%, rgba(255, 255, 255, 0.025) 18% 18.1%, transparent 18.1% 36%, rgba(255, 255, 255, 0.025) 36% 36.1%, transparent 36.1% 54%, rgba(255, 255, 255, 0.025) 54% 54.1%, transparent 54.1% 72%, rgba(255, 255, 255, 0.025) 72% 72.1%, transparent 72.1% 100%);
+  opacity: 0.42;
+  transform: translateZ(-120px);
+}
+
+.graph-surface__halo {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 58%;
+  height: 58%;
+  border-radius: 50%;
+  transform: translate(-50%, -50%) translateZ(-90px);
+  background: radial-gradient(circle, rgba(234, 220, 207, 0.18), transparent 62%);
+  filter: blur(18px);
+  opacity: 0.78;
+  pointer-events: none;
+}
+
+.graph-surface__ring {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  border-radius: 50%;
+  pointer-events: none;
+}
+
+.graph-surface__ring--outer {
+  width: 74%;
+  height: 74%;
+  transform: translate(-50%, -50%) rotateX(74deg) rotateZ(-14deg) translateZ(-10px);
+  box-shadow: 0 0 42px rgba(234, 220, 207, 0.06);
+}
+
+.graph-surface__ring--inner {
+  width: 48%;
+  height: 48%;
+  transform: translate(-50%, -50%) rotateX(80deg) rotateZ(18deg) translateZ(24px);
+  border-color: rgba(234, 220, 207, 0.12);
+}
+
+.graph-surface__core {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 2;
   display: grid;
-  gap: 0.1rem;
-  min-width: 5.4rem;
-  padding: 0.62rem 0.72rem;
+  gap: 0.14rem;
+  min-width: 9.25rem;
+  padding: 0.9rem 1rem;
   border: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: var(--radius-md);
-  background: rgba(3, 3, 4, 0.55);
+  background:
+    radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.15), transparent 44%),
+    rgba(3, 3, 4, 0.62);
   box-shadow: var(--shadow-soft);
-  backdrop-filter: blur(14px) saturate(130%);
+  backdrop-filter: blur(16px) saturate(135%);
+  transform: translate(-50%, -50%) translateZ(58px);
+  opacity: 0;
+  pointer-events: none;
 }
 
-.signal-node strong {
+.graph-surface__core strong {
   color: var(--text);
-  font-size: 1.05rem;
+  font-size: 0.98rem;
   line-height: 1;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
 
-.signal-node small {
+.graph-surface__core small {
   color: var(--muted);
   font-size: 0.68rem;
   font-weight: 800;
@@ -1298,50 +1514,272 @@
   text-transform: uppercase;
 }
 
-.signal-node--1 {
-  left: 8%;
-  top: 12%;
-}
-
-.signal-node--2 {
-  right: 9%;
-  top: 18%;
-}
-
-.signal-node--3 {
-  left: 18%;
-  bottom: 12%;
-}
-
-.signal-node--4 {
-  right: 14%;
-  bottom: 16%;
-}
-
-.signal-node--5 {
-  left: 50%;
-  top: 48%;
-  transform: translate(-50%, -50%);
-}
-
-.signal-bars {
+.graph-surface__nodes {
   position: absolute;
-  left: 1rem;
-  right: 1rem;
-  bottom: 1rem;
-  display: grid;
-  grid-template-columns: repeat(6, minmax(0, 1fr));
-  gap: 0.5rem;
-  align-items: end;
-  height: 5.5rem;
+  inset: 0;
+  transform-style: preserve-3d;
+  animation: none;
+  will-change: transform;
 }
 
-.signal-bars span {
-  min-height: 0.7rem;
-  height: var(--bar, 50%);
-  border-radius: 999px 999px 0.45rem 0.45rem;
-  background: linear-gradient(180deg, rgba(247, 244, 239, 0.9), rgba(234, 220, 207, 0.2));
-  opacity: calc(0.45 + (var(--bar-index, 0) * 0.07));
+.graph-surface__node {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  display: grid;
+  justify-items: center;
+  gap: 0.35rem;
+  min-width: 6.2rem;
+  width: auto;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+  color: var(--text);
+  backdrop-filter: none;
+  text-decoration: none;
+  cursor: pointer;
+  -webkit-tap-highlight-color: transparent;
+  touch-action: none;
+  opacity: 0;
+  transform-style: preserve-3d;
+  transform: translate3d(var(--x), var(--y), var(--z));
+  transition:
+    transform 220ms ease,
+    border-color 180ms ease,
+    background-color 180ms ease,
+    box-shadow 180ms ease;
+}
+
+.graph-surface__node.is-dragging {
+  cursor: grabbing;
+}
+
+.graph-surface__node::before {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 5.75rem;
+  height: 5.75rem;
+  border-radius: 50%;
+  transform: translate(-50%, -50%);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  background:
+    radial-gradient(circle at 50% 50%, rgba(234, 220, 207, 0.08), transparent 58%),
+    linear-gradient(135deg, rgba(234, 220, 207, 0.08), transparent 52%),
+    rgba(5, 5, 7, 0.52);
+  box-shadow: 0 0 26px rgba(255, 255, 255, 0.04);
+  opacity: 0.96;
+  pointer-events: none;
+}
+
+.graph-surface__node-core {
+  position: relative;
+  display: block;
+  width: 1rem;
+  height: 1rem;
+  margin-top: 2.24rem;
+  border-radius: 50%;
+  background:
+    radial-gradient(circle at 35% 35%, rgba(255, 255, 255, 0.94), rgba(255, 255, 255, 0.2) 40%, transparent 70%),
+    var(--node-color, rgba(234, 220, 207, 0.9));
+  box-shadow: 0 0 18px rgba(255, 255, 255, 0.14);
+}
+
+.graph-surface__node strong {
+  position: relative;
+  display: block;
+  margin-top: 0.02rem;
+  color: rgba(247, 244, 239, 0.98);
+  font-size: 0.68rem;
+  line-height: 1.05;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.graph-surface__node small {
+  display: block;
+  color: rgba(213, 206, 195, 0.72);
+  font-size: 0.62rem;
+  font-weight: 780;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.graph-surface__node.is-emphasis {
+  filter: drop-shadow(0 0 12px rgba(234, 220, 207, 0.2));
+}
+
+.graph-surface__node:hover,
+.graph-surface__node:focus-visible {
+  filter: drop-shadow(0 0 16px rgba(255, 255, 255, 0.2));
+  transform: translate3d(var(--x), var(--y), calc(var(--z) + 28px)) scale(1.06);
+}
+
+.graph-surface__node:focus-visible {
+  outline: 2px solid rgba(234, 220, 207, 0.9);
+  outline-offset: 3px;
+}
+
+.graph-surface:hover .graph-surface__ring--outer,
+.graph-surface:focus-within .graph-surface__ring--outer {
+  border-color: rgba(234, 220, 207, 0.14);
+}
+
+.relationship-graph {
+  position: relative;
+  display: grid;
+  gap: 1rem;
+  min-height: clamp(20rem, 32vw, 30rem);
+  padding: clamp(1rem, 1.8vw, 1.35rem);
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: calc(var(--radius-xl) - 0.35rem);
+  background:
+    radial-gradient(circle at 50% 50%, rgba(234, 220, 207, 0.08), transparent 28%),
+    linear-gradient(135deg, rgba(255, 255, 255, 0.045), transparent 36%),
+    rgba(255, 255, 255, 0.012);
+  perspective: 1400px;
+  transform-style: preserve-3d;
+}
+
+.relationship-graph::before,
+.relationship-graph::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.relationship-graph::before {
+  background:
+    linear-gradient(90deg, transparent 0 14%, rgba(255, 255, 255, 0.03) 14% 14.1%, transparent 14.1% 28%, rgba(255, 255, 255, 0.03) 28% 28.1%, transparent 28.1% 42%, rgba(255, 255, 255, 0.03) 42% 42.1%, transparent 42.1% 56%, rgba(255, 255, 255, 0.03) 56% 56.1%, transparent 56.1% 70%, rgba(255, 255, 255, 0.03) 70% 70.1%, transparent 70.1% 84%, rgba(255, 255, 255, 0.03) 84% 84.1%, transparent 84.1% 100%),
+    linear-gradient(180deg, transparent 0 18%, rgba(255, 255, 255, 0.025) 18% 18.1%, transparent 18.1% 36%, rgba(255, 255, 255, 0.025) 36% 36.1%, transparent 36.1% 54%, rgba(255, 255, 255, 0.025) 54% 54.1%, transparent 54.1% 72%, rgba(255, 255, 255, 0.025) 72% 72.1%, transparent 72.1% 100%);
+  opacity: 0.35;
+  transform: translateZ(-80px);
+}
+
+.relationship-graph::after {
+  background: radial-gradient(circle at 50% 52%, rgba(234, 220, 207, 0.08), transparent 48%);
+  opacity: 0.85;
+}
+
+.graph-root {
+  position: relative;
+  justify-self: center;
+  display: inline-grid;
+  place-items: center;
+  min-height: 3rem;
+  padding: 0.66rem 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 999px;
+  background:
+    radial-gradient(circle at 30% 30%, rgba(255, 255, 255, 0.14), transparent 42%),
+    rgba(6, 6, 7, 0.62);
+  box-shadow: var(--shadow-soft);
+  color: var(--text);
+  font-size: 0.82rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  transform: translateZ(42px);
+}
+
+.graph-columns {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0.85rem;
+  align-items: stretch;
+  transform-style: preserve-3d;
+}
+
+.graph-column {
+  display: grid;
+  gap: 0.55rem;
+  min-width: 0;
+  padding: 0.92rem;
+  border: 1px solid rgba(255, 255, 255, 0.075);
+  border-radius: calc(var(--radius-lg) - 0.1rem);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.045), rgba(255, 255, 255, 0.015)),
+    rgba(255, 255, 255, 0.015);
+  box-shadow: var(--shadow-soft);
+  transform-style: preserve-3d;
+  transition: transform 200ms ease, border-color 180ms ease;
+}
+
+.graph-column:nth-child(1) {
+  transform: translate3d(0, 0, 18px) rotateY(5deg);
+}
+
+.graph-column:nth-child(2) {
+  transform: translate3d(0, 0, 42px) rotateY(-4deg);
+}
+
+.graph-column:nth-child(3) {
+  transform: translate3d(0, 0, 28px) rotateY(7deg);
+}
+
+.graph-column:nth-child(4) {
+  transform: translate3d(0, 0, 52px) rotateY(-6deg);
+}
+
+.graph-column:hover {
+  border-color: rgba(234, 220, 207, 0.22);
+  transform: translate3d(0, -2px, 60px) rotateY(0deg);
+}
+
+.graph-column .card__meta {
+  margin-bottom: 0.05rem;
+}
+
+.graph-node {
+  position: relative;
+  display: grid;
+  gap: 0.12rem;
+  padding: 0.58rem 0.66rem;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius-md);
+  background:
+    radial-gradient(circle at 30% 26%, rgba(255, 255, 255, 0.12), transparent 38%),
+    rgba(6, 6, 7, 0.58);
+  box-shadow: var(--shadow-soft);
+  color: var(--text);
+  backdrop-filter: blur(12px) saturate(130%);
+  transform: translateZ(18px);
+}
+
+.graph-node::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  background: linear-gradient(135deg, rgba(234, 220, 207, 0.1), transparent 54%);
+  opacity: 0.8;
+  pointer-events: none;
+}
+
+.graph-node strong {
+  color: var(--text);
+  font-size: 0.82rem;
+  line-height: 1.1;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+}
+
+.graph-node small {
+  color: var(--muted);
+  font-size: 0.66rem;
+  font-weight: 780;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
 }
 
 .filter-summary {
@@ -1918,7 +2356,7 @@ input:focus-visible {
 
   .project-grid,
   .stat-grid,
-  .ux-surface {
+  .graph-surface {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
@@ -1942,6 +2380,10 @@ input:focus-visible {
     grid-template-columns: 1fr;
   }
 
+  .program-detail-panel--lead {
+    grid-column: auto;
+  }
+
   .project-immersive__hero {
     height: auto;
     min-height: auto;
@@ -1949,6 +2391,38 @@ input:focus-visible {
 
   .project-immersive__hero--home {
     min-height: auto;
+  }
+
+  .project-immersive__hero--palimpsests {
+    padding: 0.9rem;
+  }
+
+  .project-immersive__hero--palimpsests .project-immersive__hero-backdrop {
+    inset: 0.75rem 0.75rem auto 0.75rem;
+    align-items: start;
+  }
+
+  .project-immersive__hero--palimpsests .project-immersive__hero-title {
+    font-size: clamp(2.9rem, 16vw, 6.5rem);
+    letter-spacing: 0.11em;
+    transform: translateY(0);
+  }
+
+  .project-immersive__hero--palimpsests .project-immersive__hero-copy {
+    max-width: none;
+  }
+
+  .project-immersive__hero--palimpsests .project-immersive__hero-visual {
+    min-height: clamp(22rem, 76vw, 32rem);
+    padding-top: clamp(5rem, 12vw, 7rem);
+  }
+
+  .project-immersive__hero--palimpsests .project-immersive__hero-panel {
+    min-height: clamp(20rem, 72vw, 30rem);
+  }
+
+  .project-immersive__hero--palimpsests .project-immersive__frame--palimpsests {
+    min-height: clamp(20rem, 72vw, 30rem);
   }
 
   .latests-grid {
@@ -1991,6 +2465,20 @@ input:focus-visible {
 
   .project-immersive__hero--home .project-immersive__image {
     min-height: 0;
+  }
+
+  .project-immersive__hero--palimpsests {
+    gap: 0.75rem;
+  }
+
+  .project-immersive__hero--palimpsests .project-immersive__hero-visual {
+    min-height: clamp(18rem, 68vw, 26rem);
+    padding-top: clamp(4rem, 10vw, 6rem);
+  }
+
+  .project-immersive__hero--palimpsests .project-immersive__hero-panel,
+  .project-immersive__hero--palimpsests .project-immersive__frame--palimpsests {
+    min-height: clamp(18rem, 68vw, 26rem);
   }
 
   .project-immersive__frame--lead,
@@ -2081,8 +2569,21 @@ input:focus-visible {
     grid-template-columns: 1fr;
   }
 
-  .ux-surface {
+  .graph-surface {
     grid-template-columns: 1fr;
+  }
+
+  .program-registry-card__facts {
+    grid-template-columns: 1fr;
+  }
+
+  .research-dossier-card__facts {
+    grid-template-columns: 1fr;
+  }
+
+  .research-dossier-card--featured,
+  .research-note-card--featured {
+    grid-column: auto;
   }
 
   .footer-stack--right {
@@ -2365,13 +2866,21 @@ input:focus-visible {
     width: auto;
   }
 
-  .ux-surface__visual {
+  .graph-surface__stage {
     min-height: 16rem;
   }
 
-  .signal-node {
+  .graph-surface__node {
     min-width: 4.7rem;
     padding: 0.52rem 0.58rem;
+  }
+
+  .graph-column {
+    transform: none;
+  }
+
+  .graph-column:hover {
+    transform: translateY(-1px);
   }
 
   .card__meta,

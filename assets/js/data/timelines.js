@@ -32,7 +32,7 @@ window.EA_TIMELINES = [
     entityId: "electronic-artefacts",
     entries: [
       { year: "2024", title: "Studio foundation", description: "Identity and classification layer are defined.", type: "concept" },
-      { year: "2026", title: "Knowledge system", description: "Site becomes an interlinked knowledge base.", type: "production" },
+      { year: "2026", title: "Knowledge system", description: "Site settles into a connected archive.", type: "production" },
     ],
   },
   {

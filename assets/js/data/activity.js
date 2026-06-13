@@ -5,7 +5,7 @@ window.EA_ACTIVITY = [
     title: "VASTE milestone reached",
     entityId: "vaste",
     date: "2026-06-12",
-    summary: "Public website and research-facing surface stabilized.",
+    summary: "Public site settles into place.",
   },
   {
     id: "activity-002",
@@ -13,7 +13,7 @@ window.EA_ACTIVITY = [
     title: "Audio artefacts published",
     entityId: "palimpsests",
     date: "2026-06-12",
-    summary: "Entropy, Emergence and related audio fragments surfaced.",
+    summary: "Entropy, Emergence and related fragments surfaced.",
   },
   {
     id: "activity-003",
@@ -21,7 +21,7 @@ window.EA_ACTIVITY = [
     title: "Research fields updated",
     entityId: "entropy",
     date: "2026-06-12",
-    summary: "Entropy and signal archaeology fields were expanded.",
+    summary: "Entropy and signal archaeology gained new material.",
   },
   {
     id: "activity-004",
@@ -29,14 +29,14 @@ window.EA_ACTIVITY = [
     title: "Vestiges defined",
     entityId: "vestiges",
     date: "2026-06-12",
-    summary: "Narrative universe entered development.",
+    summary: "Vestiges takes shape.",
   },
   {
     id: "activity-005",
     type: "channel_updated",
-    title: "CreativeStuff.jpg observatory updated",
+    title: "CreativeStuff.jpg updated",
     entityId: "creativestuff",
     date: "2026-06-12",
-    summary: "Visual research references and studies expanded.",
+    summary: "Visual references and studies expanded.",
   },
 ];

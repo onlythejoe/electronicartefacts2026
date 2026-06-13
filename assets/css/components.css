@@ -91,26 +91,27 @@
   box-sizing: border-box;
   width: fit-content;
   min-height: 1.9rem;
-  padding: 0.32rem 0.65rem;
+  padding: 0.38rem 0.82rem;
   border-radius: 999px;
   border: 1px solid var(--border);
   background: rgba(255, 255, 255, 0.02);
   color: var(--muted);
   font-size: 0.8rem;
   font-weight: 750;
-  line-height: 1;
+  line-height: 1.15;
 }
 
 .pill-cloud .chip,
 .tag,
 .chip {
   width: fit-content;
-  min-height: 1.95rem;
-  padding: 0.34rem 0.68rem;
+  min-height: 2rem;
+  padding: 0.42rem 0.9rem;
 }
 
 .pill-cloud .chip {
-  letter-spacing: 0.04em;
+  letter-spacing: 0.055em;
+  line-height: 1.2;
 }
 
 .pill-cloud .chip:hover,
@@ -132,10 +133,11 @@
 
 .tag-cluster--compact .chip,
 .tag-cluster--compact .tag {
-  min-height: 1.55rem;
-  padding: 0.22rem 0.52rem;
+  min-height: 1.65rem;
+  padding: 0.25rem 0.6rem;
   font-size: 0.7rem;
-  letter-spacing: 0.025em;
+  letter-spacing: 0.035em;
+  line-height: 1.1;
 }
 
 .metric-rail {
