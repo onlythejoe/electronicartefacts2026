@@ -11,7 +11,7 @@ html {
 
 body {
   margin: 0;
-  padding-top: clamp(0.9rem, 1.7vw, 1.45rem);
+  padding-top: calc(clamp(0.9rem, 1.7vw, 1.45rem) + var(--header-offset, 0px));
   padding-bottom: clamp(0.9rem, 1.7vw, 1.45rem);
   min-height: 100vh;
   color: var(--text);

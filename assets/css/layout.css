@@ -30,10 +30,22 @@
 }
 
 .shell-header.zone-card {
+  position: fixed;
+  top: clamp(0.85rem, 1.5vw, 1.25rem);
+  left: var(--gutter);
+  right: var(--gutter);
+  z-index: 1200;
   display: grid;
   grid-template-columns: minmax(0, 1fr) minmax(0, 1.55fr);
   gap: 1rem;
   align-items: center;
+  contain: layout paint;
+  backface-visibility: hidden;
+  transform: translate3d(0, 0, 0);
+  will-change: transform, opacity;
+  transition:
+    transform 220ms ease,
+    opacity 220ms ease;
 }
 
 .brand-lockup {
@@ -368,6 +380,12 @@
   align-items: flex-start;
   justify-content: space-between;
   gap: 1rem;
+}
+
+body.is-header-hidden .shell-header.zone-card {
+  transform: translateY(calc(-100% - 1.25rem));
+  opacity: 0;
+  pointer-events: none;
 }
 
 .footer-stack--right {

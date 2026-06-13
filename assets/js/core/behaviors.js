@@ -160,6 +160,70 @@
     window.addEventListener("resize", update);
   };
 
+  const initAutoHideHeader = () => {
+    const header = document.querySelector(".shell-header.zone-card");
+    if (!header || document.body.dataset.boundAutoHideHeader === "true") return;
+    document.body.dataset.boundAutoHideHeader = "true";
+
+    let lastY = window.scrollY || 0;
+    let ticking = false;
+    let hidden = false;
+    let resizeObserver = null;
+
+    const setHidden = (nextHidden) => {
+      if (hidden === nextHidden) return;
+      hidden = nextHidden;
+      document.body.classList.toggle("is-header-hidden", hidden);
+    };
+
+    const syncHeaderOffset = () => {
+      const height = Math.ceil(header.getBoundingClientRect().height || 0);
+      document.body.style.setProperty("--header-offset", `${height + 12}px`);
+    };
+
+    const update = () => {
+      const currentY = window.scrollY || 0;
+      const delta = currentY - lastY;
+      const atTop = currentY < 12;
+
+      if (atTop) {
+        setHidden(false);
+      } else if (delta > 4) {
+        setHidden(true);
+      } else if (delta < -2) {
+        setHidden(false);
+      }
+
+      lastY = currentY;
+      ticking = false;
+    };
+
+    const onScroll = () => {
+      if (ticking) return;
+      ticking = true;
+      window.requestAnimationFrame(update);
+    };
+
+    const showHeader = () => {
+      setHidden(false);
+    };
+
+    syncHeaderOffset();
+    if ("ResizeObserver" in window) {
+      resizeObserver = new ResizeObserver(() => syncHeaderOffset());
+      resizeObserver.observe(header);
+    } else {
+      window.addEventListener("resize", syncHeaderOffset);
+    }
+    update();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    window.addEventListener("resize", () => {
+      syncHeaderOffset();
+      update();
+    });
+    header.addEventListener("focusin", showHeader);
+  };
+
   const initReveal = () => {
     const targets = document.querySelectorAll(".zone-card, .panel, .project-card, .program-card, .archive-card, .cross-nav-card");
     if (!("IntersectionObserver" in window)) {
@@ -606,6 +670,7 @@
 
   const initUXEnhancements = (filterState) => {
     initScrollProgress();
+    initAutoHideHeader();
     initReveal();
     initCardSpotlight();
     initDragRails();
