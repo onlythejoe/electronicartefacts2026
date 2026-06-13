@@ -12,6 +12,72 @@
     return value;
   };
 
+  const orethBannerMedia = {
+    src: "./assets/media/projects/oreth/ORETH.png",
+    alt: "Portrait of ORETH for banner use",
+    width: 2200,
+    height: 1650,
+  };
+
+  const isOrethSignature = (item) => {
+    if (!item) return false;
+    const artist = String(item.artist || item.creditedArtist || item.signature || item.label || "").toLowerCase();
+    const id = String(item.id || "").toLowerCase();
+    const project = String(item.project || "").toLowerCase();
+    return id === "oreth" || artist === "oreth" || project === "palimpsests";
+  };
+
+  const signatureBanner = (item, options = {}) => {
+    const title = options.title || item?.title || "ORETH";
+    const copy = options.copy || item?.summary || item?.description || "";
+    const eyebrow = options.eyebrow || item?.type || item?.statusLabel || "FEATURED";
+    const titleTag = ["h1", "h2", "h3", "h4", "h5", "h6"].includes(String(options.titleTag || "h2").toLowerCase())
+      ? String(options.titleTag || "h2").toLowerCase()
+      : "h2";
+    const tags = (options.tags || []).filter(Boolean);
+    const actions = (options.actions || []).filter(Boolean);
+    const media = options.media || orethBannerMedia;
+    const mediaAlt = options.mediaAlt || media.alt || "";
+    const titleMarkup = `<${titleTag} class="signature-banner__title">${esc(title)}</${titleTag}>`;
+    const tagMarkup = tags.length
+      ? `<div class="tag-cluster tag-cluster--compact signature-banner__tags">${tags.map((value) => chip(value)).join("")}</div>`
+      : "";
+    const spacerMarkup = actions.length ? `<div class="signature-banner__spacer" aria-hidden="true"></div>` : "";
+    const actionMarkup = actions.length
+      ? `<div class="button-row button-row--compact signature-banner__actions">${actions
+          .map(
+            (action, index) =>
+              `<a class="button ${index === 0 ? "button--primary" : "button--secondary"}" href="${esc(action.href)}"${action.target ? ` target="${esc(action.target)}" rel="noreferrer"` : ""}>${esc(action.label)}</a>`,
+          )
+          .join("")}</div>`
+      : "";
+
+    return `
+      <div class="signature-banner${options.className ? ` ${esc(options.className)}` : ""}${options.variant ? ` signature-banner--${esc(options.variant)}` : ""}">
+        <div class="signature-banner__copy">
+          <p class="card__meta">${esc(eyebrow)}</p>
+          ${titleMarkup}
+          ${copy ? `<p class="signature-banner__lede">${esc(copy)}</p>` : ""}
+          ${tagMarkup}
+          ${spacerMarkup}
+          ${actionMarkup}
+        </div>
+        <div class="signature-banner__media" aria-hidden="true">
+          <img
+            class="signature-banner__image"
+            src="${esc(media.src)}"
+            alt="${esc(mediaAlt)}"
+            width="${esc(media.width || 2200)}"
+            height="${esc(media.height || 1650)}"
+            loading="${options.loading || "eager"}"
+            fetchpriority="${options.fetchPriority || "high"}"
+            decoding="async"
+          />
+        </div>
+      </div>
+    `;
+  };
+
   const cardBaseAttrs = (item) => {
     const medium = (item.medium || []).join(" ");
     const discipline = (item.discipline || []).join(" ");
@@ -127,9 +193,15 @@
     ];
 
     let phase = 0;
+    let rafId = 0;
+    let visible = false;
 
     const animate = () => {
-      if (!document.body.contains(root)) return;
+      if (!visible || document.hidden || !document.body.contains(root)) {
+        if (rafId) cancelAnimationFrame(rafId);
+        rafId = 0;
+        return;
+      }
 
       phase += 0.02;
 
@@ -217,10 +289,46 @@
       links[0].setAttribute("d", `M ${leftStartX} ${leftStartY} L ${leftEndX} ${leftEndY}`);
       links[1].setAttribute("d", `M ${rightStartX} ${rightStartY} L ${rightEndX} ${rightEndY}`);
 
-      requestAnimationFrame(animate);
+      rafId = requestAnimationFrame(animate);
     };
 
-    requestAnimationFrame(animate);
+    const observer = "IntersectionObserver" in window
+      ? new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.target !== root) return;
+              visible = entry.isIntersecting || entry.intersectionRatio > 0;
+              if (visible && !rafId && !document.hidden) {
+                rafId = requestAnimationFrame(animate);
+              }
+              if (!visible && rafId) {
+                cancelAnimationFrame(rafId);
+                rafId = 0;
+              }
+            });
+          },
+          { rootMargin: "20% 0px 20% 0px", threshold: 0.05 },
+        )
+      : null;
+
+    const syncVisibility = () => {
+      if (document.hidden || !visible) {
+        if (rafId) {
+          cancelAnimationFrame(rafId);
+          rafId = 0;
+        }
+        return;
+      }
+      if (!rafId) rafId = requestAnimationFrame(animate);
+    };
+
+    if (observer) observer.observe(root);
+    else {
+      visible = true;
+      rafId = requestAnimationFrame(animate);
+    }
+
+    document.addEventListener("visibilitychange", syncVisibility);
   };
 
   const cardImageFor = (item) => {
@@ -352,7 +460,7 @@
   };
 
   const projectHeroMedia = (item) => {
-    const media = mediaFrom(item) || cardImageFor(item);
+    const media = isOrethSignature(item) ? orethBannerMedia : mediaFrom(item) || cardImageFor(item);
     if (!media) return "";
     return mediaFigureMarkup(media, item, "project-immersive__image");
   };
@@ -535,39 +643,48 @@
         <h2>${esc(description.heading)}</h2>
         <p class="lede">${esc(description.copy)}</p>
       </div>
-      <div class="taxonomy-grid">
-        ${groups
-          .map(
-            (group) => `
-              <div class="taxonomy-column${group.options.length > 6 ? " taxonomy-column--scroll" : ""}">
-                <p class="card__meta">${esc(group.label)}</p>
-                <div
-                  class="pill-cloud taxonomy-pill-row"
-                  data-filter-group="${esc(group.key)}"
-                  style="flex-wrap:nowrap;overflow-x:auto;overflow-y:hidden;scrollbar-width:thin;-webkit-overflow-scrolling:touch;"
-                >
-                  ${group.options
-                    .map(
-                      (option) => `
-                        <button
-                          class="filter-chip${option.active ? " is-active" : ""}"
-                          type="button"
-                          aria-pressed="${option.active ? "true" : "false"}"
-                          data-filter-toggle
-                          data-filter-key="${esc(group.key)}"
-                          data-filter-value="${esc(option.value)}"
-                        >
-                          ${esc(option.label)}
-                        </button>
-                      `,
-                    )
-                    .join("")}
+      <details class="taxonomy-panel__drawer" data-taxonomy-drawer open>
+        <summary class="taxonomy-panel__drawer-summary">
+          <span class="taxonomy-panel__drawer-heading">
+            <strong>Advanced filters</strong>
+            <span>${groups.length} groups</span>
+          </span>
+          <span class="taxonomy-panel__drawer-hint">Tap to show or hide</span>
+        </summary>
+        <div class="taxonomy-grid">
+          ${groups
+            .map(
+              (group) => `
+                <div class="taxonomy-column${group.options.length > 6 ? " taxonomy-column--scroll" : ""}">
+                  <p class="card__meta">${esc(group.label)}</p>
+                  <div
+                    class="pill-cloud taxonomy-pill-row"
+                    data-filter-group="${esc(group.key)}"
+                    style="flex-wrap:nowrap;overflow-x:auto;overflow-y:hidden;scrollbar-width:thin;-webkit-overflow-scrolling:touch;"
+                  >
+                    ${group.options
+                      .map(
+                        (option) => `
+                          <button
+                            class="filter-chip${option.active ? " is-active" : ""}"
+                            type="button"
+                            aria-pressed="${option.active ? "true" : "false"}"
+                            data-filter-toggle
+                            data-filter-key="${esc(group.key)}"
+                            data-filter-value="${esc(option.value)}"
+                          >
+                            ${esc(option.label)}
+                          </button>
+                        `,
+                      )
+                      .join("")}
+                  </div>
                 </div>
-              </div>
-            `,
-          )
-          .join("")}
-      </div>
+              `,
+            )
+            .join("")}
+        </div>
+      </details>
     </section>
   `;
 
@@ -614,38 +731,18 @@
     if (!palimpsests) return "";
     return `
       <section class="zone-card hero">
-        <div class="section-head">
-          <p class="eyebrow">PALIMPSESTS</p>
-          <h2>Palimpsests.</h2>
-          <p class="lede">A single image, then the record.</p>
-        </div>
-        <a class="project-immersive__hero project-immersive__hero--home project-immersive__hero--palimpsests" href="./palimpsests.html" aria-label="Open Palimpsests project page">
-          <div class="project-immersive__hero-backdrop" aria-hidden="true">
-            <span class="project-immersive__hero-title">PALIMPSESTS</span>
-          </div>
-          <div class="project-immersive__hero-copy">
-            <p class="card__meta">Featured project</p>
-            <h3 class="display-title">Palimpsests</h3>
-            <p class="lede">Open the cycle.</p>
-            ${tagRow(homeCardPills(palimpsests), { limit: 4, compact: true })}
-            <div class="button-row button-row--compact">
-              <span class="button button--primary">Open project</span>
-              <span class="button button--secondary">View the record</span>
-            </div>
-          </div>
-          <div class="project-immersive__hero-visual">
-            <div class="project-immersive__hero-panel">
-              <figure class="project-immersive__frame project-immersive__frame--lead project-immersive__frame--home project-immersive__frame--palimpsests">
-                <img class="project-immersive__image project-immersive__image--palimpsests" src="./assets/media/projects/palimpsests/palimpsests-hero.png" alt="Palimpsests cover artwork" loading="lazy" />
-              </figure>
-            </div>
-          </div>
-        </a>
-        <div class="link-row">
-          <a class="tag" href="./palimpsests.html">Palimpsests</a>
-          <a class="tag" href="./archive.html">Archive</a>
-          <a class="tag" href="./contact.html">Contact</a>
-        </div>
+        ${signatureBanner(palimpsests, {
+          variant: "oreth",
+          eyebrow: "PALIMPSESTS / ORETH",
+          title: "Palimpsests",
+          copy: "Album cycle carried by ORETH. A single full surface, no nested panels.",
+          tags: homeCardPills(palimpsests),
+          actions: [
+            { label: "Open project", href: "./palimpsests.html" },
+            { label: "Archive", href: "./archive.html" },
+            { label: "Contact", href: "./contact.html" },
+          ],
+        })}
       </section>
     `;
   };
@@ -820,6 +917,8 @@
     taxonomyPanel,
     manifestPanel,
     featuredWork,
+    signatureBanner,
+    isOrethSignature,
     vasteBanner,
     featuredResearch,
     latestArtefacts,

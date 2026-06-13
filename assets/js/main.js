@@ -5,8 +5,43 @@
   const { esc, setYear, slugify } = window.EA_UTILS;
   const { loadIncludes } = window.EA_INCLUDES;
   const { statusBadge, chip, tagRow, metadataList, linkRow, metricRail, cardLinkAttrs, cardOverlayLink } = window.EA_UI;
-  const { initFilters, initSearch, initCardLinks, initUXEnhancements, syncNavigationState, syncSeoMeta } = window.EA_BEHAVIORS;
-  const { cardBaseAttrs, mediaFrom, mediaKindFor, mediaFigureMarkup, projectSignatureBubble, projectButterflyBubble, vasteEngineMarkup, startVasteEngineAnimation, cardImageFor, signalStrip, cardCopy, metricFill, summaryMetrics, countLabel, entityDateValue, homeProjects, featuredProjectForHome, projectHeroMedia, homeCardPills, projectCard, projectLandingCard, archiveCard, researchCard, personCard, programCard, channelCard, taxonomyPanel, manifestPanel, featuredWork, vasteBanner, featuredResearch, latestArtefacts } = window.EA_VIEW;
+  const { initFilters, initSearch, initCardLinks, initUXEnhancements, refreshCardSurfaces, syncNavigationState, syncSeoMeta } = window.EA_BEHAVIORS;
+  const {
+    cardBaseAttrs,
+    mediaFrom,
+    mediaKindFor,
+    mediaFigureMarkup,
+    projectSignatureBubble,
+    projectButterflyBubble,
+    vasteEngineMarkup,
+    startVasteEngineAnimation,
+    cardImageFor,
+    signalStrip,
+    cardCopy,
+    metricFill,
+    summaryMetrics,
+    countLabel,
+    entityDateValue,
+    homeProjects,
+    featuredProjectForHome,
+    projectHeroMedia,
+    homeCardPills,
+    projectCard,
+    projectLandingCard,
+    archiveCard,
+    researchCard,
+    personCard,
+    programCard,
+    channelCard,
+    taxonomyPanel,
+    manifestPanel,
+    featuredWork,
+    signatureBanner,
+    isOrethSignature,
+    vasteBanner,
+    featuredResearch,
+    latestArtefacts,
+  } = window.EA_VIEW;
   const { graphSurface, crossNavigation, uxSurface, nodesFromItems, ecosystemExplorer, startGraphSurfaceAnimation, pageLens } = window.EA_SURFACE;
   const indexes = catalog.indexes || {};
   const entityIndex = indexes.byId || {};
@@ -900,6 +935,7 @@
 
   const projectGalleryPanel = (item) => {
     if (item.kind !== "project") return "";
+    if (isOrethSignature(item)) return "";
     const gallery = item.media?.gallery || [];
     const folder = projectMediaFolder(item);
     if (item.id === "palimpsests" && gallery.length) {
@@ -1225,6 +1261,30 @@
             : item.kind === "program" || item.kind === "channel"
               ? "program"
               : "research";
+    const uniqueActions = (actions) => {
+      const seen = new Set();
+      return actions.filter((action) => {
+        if (!action) return false;
+        const key = `${action.label || ""}::${action.href || ""}`;
+        if (seen.has(key)) return false;
+        seen.add(key);
+        return true;
+      });
+    };
+    const signatureActions = (() => {
+      const actions = [...primaryLinks.slice(0, 1)];
+      if (item.kind === "project") {
+        actions.push({ label: "RL", href: `./project-rl.html?id=${encodeURIComponent(item.id)}` });
+        actions.push({ label: "Archive", href: "./archive.html" });
+      } else if (item.kind === "artist") {
+        actions.push({ label: "Work", href: "./work.html" });
+        actions.push({ label: "About", href: "./about.html" });
+      } else if (item.project === "palimpsests") {
+        actions.push({ label: "Palimpsests", href: "./palimpsests.html" });
+        actions.push({ label: "Archive", href: "./archive.html" });
+      }
+      return uniqueActions(actions).slice(0, 3);
+    })();
     const heroActions = [
       ...primaryLinks.slice(0, 1),
       ...(item.kind === "project" ? [{ label: "RL", href: `./project-rl.html?id=${encodeURIComponent(item.id)}` }] : []),
@@ -1232,13 +1292,36 @@
     const detailIntro = item.kind === "program" ? programSpecificPanels(item) : "";
     const specificPanels = projectSpecificPanels(item);
     const visualPanels = projectPanels(item);
+    const signatureCopy = item.description || item.summary || "";
+    const signatureTags = (item.tags && item.tags.length ? item.tags : homeCardPills(item)).filter(Boolean);
+
+    if (isOrethSignature(item)) {
+      return `
+        <section class="zone-card hero signature-hero">
+          ${signatureBanner(item, {
+            variant: "oreth",
+            titleTag: "h1",
+            eyebrow: item.kind === "artist" ? "ORETH" : "PALIMPSESTS / ORETH",
+            copy: signatureCopy,
+            tags: signatureTags,
+            actions: signatureActions,
+          })}
+        </section>
+        ${detailIntro}
+        ${specificPanels ? `<section class="detail-grid">${specificPanels}</section>` : ""}
+        ${visualPanels ? `<section class="detail-grid project-visual-section">${visualPanels}</section>` : ""}
+        <section class="detail-grid">
+          ${knowledgePanels(item)}
+        </section>
+      `;
+    }
 
     return `
       <section class="zone-card hero">
         <div class="section-head">
           <p class="eyebrow">${esc(catalog.taxonomies?.entityTypes?.[item.kind] || item.kind || kind.toUpperCase())}</p>
           <h1 class="display-title">${esc(item.title)}</h1>
-          <p class="lede">${esc(item.description || item.summary || "")}</p>
+          <p class="lede">${esc(signatureCopy)}</p>
           ${projectSignatureBubble(item, "hero")}
           <div class="button-row button-row--compact">
             ${heroActions.map((link, index) => `<a class="button ${index === 0 ? "button--primary" : "button--secondary"}" href="${esc(link.href)}"${link.target ? ' target="_blank" rel="noreferrer"' : ""}>${esc(link.label)}</a>`).join("")}
@@ -1311,21 +1394,55 @@
   `;
 
   const searchState = { query: "", status: "all", kind: "all" };
-  const renderSearchPage = () => {
-    const results = (catalog.indexes?.search || []).filter((item) => {
-      if (searchState.status !== "all" && item.status !== searchState.status) return false;
-      if (searchState.kind !== "all" && item.kind !== searchState.kind) return false;
-      if (!searchState.query) return true;
-      return item.value.includes(searchState.query.toLowerCase());
+  const searchIndex = catalog.indexes?.search || [];
+  const searchResultsInnerMarkup = () => {
+    const query = searchState.query;
+    const status = searchState.status;
+    const kind = searchState.kind;
+    const results = searchIndex.filter((item) => {
+      if (status !== "all" && item.status !== status) return false;
+      if (kind !== "all" && item.kind !== kind) return false;
+      if (!query) return true;
+      return item.value.includes(query);
     });
     const groups = results.reduce((acc, item) => {
       const bucket = acc[item.kind] || (acc[item.kind] = []);
       bucket.push(item);
       return acc;
     }, {});
+    const groupedResults = Object.entries(groups);
 
-    return `
-      <section class="zone-card hero">
+    return groupedResults.length
+      ? groupedResults
+          .map(
+            ([kind, items]) => `
+              <section class="zone-card hero">
+                <div class="section-head">
+                  <p class="eyebrow">${esc(kind)}</p>
+                  <h2>${esc(items.length)} result(s)</h2>
+                </div>
+                <div class="card-grid card-grid--two">
+                  ${items
+                    .map((item) => {
+                      const entity = entityById(item.id);
+                      if (!entity) return "";
+                      if (entity.kind === "program") return programCard(entity);
+                      if (entity.kind === "artist") return personCard(entity);
+                      if (entity.kind === "channel") return channelCard(entity);
+                      if (entity.kind === "artefact") return archiveCard(entity);
+                      if (entity.kind === "researchLog") return archiveCard(entity);
+                      return projectCard(entity);
+                    })
+                    .join("")}
+                </div>
+              </section>
+            `,
+          )
+          .join("")
+      : `<section class="zone-card hero"><div class="section-head"><p class="eyebrow">No results</p><h2>Nothing matched.</h2><p class="lede">Try a broader query or clear the filters.</p></div></section>`;
+  };
+  const renderSearchPage = () => `
+      <section class="zone-card hero" data-search-shell>
         <div class="section-head">
           <p class="eyebrow">SEARCH</p>
           <h1 class="display-title">Search the archive.</h1>
@@ -1367,38 +1484,14 @@
         </div>
       </section>
       <section class="stack" data-search-results>
-        ${
-          Object.entries(groups).length
-            ? Object.entries(groups)
-                .map(
-                  ([kind, items]) => `
-                    <section class="zone-card hero">
-                      <div class="section-head">
-                        <p class="eyebrow">${esc(kind)}</p>
-                        <h2>${esc(items.length)} result(s)</h2>
-                      </div>
-                      <div class="card-grid card-grid--two">
-                        ${items
-                          .map((item) => {
-                            const entity = entityById(item.id);
-                            if (!entity) return "";
-                            if (entity.kind === "program") return programCard(entity);
-                            if (entity.kind === "artist") return personCard(entity);
-                            if (entity.kind === "channel") return channelCard(entity);
-                            if (entity.kind === "artefact") return archiveCard(entity);
-                            if (entity.kind === "researchLog") return archiveCard(entity);
-                            return projectCard(entity);
-                          })
-                          .join("")}
-                      </div>
-                    </section>
-                  `,
-                )
-                .join("")
-            : `<section class="zone-card hero"><div class="section-head"><p class="eyebrow">No results</p><h2>Nothing matched.</h2><p class="lede">Try a broader query or clear the filters.</p></div></section>`
-        }
+        ${searchResultsInnerMarkup()}
       </section>
     `;
+  const renderSearchResults = () => {
+    const target = document.querySelector("[data-search-results]");
+    if (!target) return;
+    target.innerHTML = searchResultsInnerMarkup();
+    refreshCardSurfaces?.(target);
   };
 
   const renderCrossNavigation = () => crossNavigation();
@@ -1997,7 +2090,7 @@
       }
     });
     initFilters(filterState);
-    initSearch(searchState, renderPageSections);
+    initSearch(searchState, renderSearchResults);
     initCardLinks();
     initUXEnhancements(filterState);
     startVasteEngineAnimation();

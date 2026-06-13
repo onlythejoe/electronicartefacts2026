@@ -20,12 +20,13 @@
   --radius-sm: 0.7rem;
   --content-max: 84rem;
   --gutter: clamp(0.9rem, 2.5vw, 1.5rem);
-  --grid-gap-x: 1rem;
-  --grid-gap-y: clamp(1.15rem, 2.2vw, 1.55rem);
-  --stack-gap: clamp(1.2rem, 2.4vw, 1.7rem);
-  --section-stack-gap: clamp(1.55rem, 3vw, 2.2rem);
-  --card-gap: 0.95rem;
-  --card-padding: clamp(1.1rem, 2.2vw, 1.55rem);
+  --card-grid-gap: clamp(0.85rem, 1.6vw, 1.1rem);
+  --grid-gap-x: var(--card-grid-gap);
+  --grid-gap-y: clamp(0.98rem, 1.85vw, 1.28rem);
+  --stack-gap: clamp(1.1rem, 2.15vw, 1.5rem);
+  --section-stack-gap: clamp(1.4rem, 2.7vw, 1.95rem);
+  --card-gap: 0.9rem;
+  --card-padding: clamp(1.05rem, 2vw, 1.45rem);
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -379,7 +380,7 @@ strong {
 .archive-rail {
   display: flex;
   flex-wrap: nowrap;
-  gap: 1rem;
+  gap: var(--card-grid-gap);
   width: max-content;
   min-width: 100%;
 }
@@ -480,6 +481,34 @@ strong {
 .catalog-stack > *,
 .projects-stack > * {
   min-width: 0;
+}
+
+@supports (content-visibility: auto) {
+  .zone-card,
+  .panel,
+  .project-card,
+  .program-card,
+  .archive-card,
+  .stat-card,
+  .cross-nav-card,
+  .channel-card,
+  .signature-banner,
+  .graph-surface {
+    content-visibility: auto;
+    contain-intrinsic-size: auto 20rem;
+  }
+
+  .zone-card {
+    contain-intrinsic-size: auto 28rem;
+  }
+
+  .panel {
+    contain-intrinsic-size: auto 14rem;
+  }
+
+  .graph-surface {
+    contain-intrinsic-size: auto 30rem;
+  }
 }
 
 .knowledge-panel {
@@ -1045,6 +1074,81 @@ body.is-header-hidden .shell-header.zone-card {
   background: rgba(255, 255, 255, 0.014);
 }
 
+.taxonomy-panel__drawer {
+  display: grid;
+  gap: 0.85rem;
+  min-width: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+}
+
+.taxonomy-panel__drawer > summary {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.85rem;
+  min-height: 3.1rem;
+  padding: 0.78rem 0.92rem;
+  border: 1px solid var(--border);
+  border-radius: var(--radius-md);
+  background: rgba(255, 255, 255, 0.012);
+  cursor: pointer;
+  user-select: none;
+}
+
+.taxonomy-panel__drawer > summary::-webkit-details-marker {
+  display: none;
+}
+
+.taxonomy-panel__drawer-heading {
+  display: grid;
+  gap: 0.18rem;
+  min-width: 0;
+}
+
+.taxonomy-panel__drawer-heading strong {
+  color: var(--text);
+  font-size: 0.9rem;
+  line-height: 1.1;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.taxonomy-panel__drawer-heading span,
+.taxonomy-panel__drawer-hint {
+  color: var(--muted);
+  font-size: 0.72rem;
+  font-weight: 780;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.taxonomy-panel__drawer-hint {
+  text-align: right;
+  white-space: nowrap;
+}
+
+.taxonomy-panel__drawer > summary::after {
+  content: "▾";
+  flex: 0 0 auto;
+  color: var(--muted);
+  font-size: 0.9rem;
+  line-height: 1;
+  transition: transform 180ms ease;
+}
+
+.taxonomy-panel__drawer[open] > summary::after {
+  transform: rotate(180deg);
+}
+
+.taxonomy-panel__drawer > summary:hover,
+.taxonomy-panel__drawer > summary:focus-visible {
+  border-color: rgba(228, 213, 196, 0.32);
+  background: rgba(255, 255, 255, 0.02);
+}
+
 .taxonomy-column .pill-cloud {
   flex-wrap: nowrap;
   overflow-x: auto;
@@ -1089,6 +1193,30 @@ body.is-header-hidden .shell-header.zone-card {
 
 .taxonomy-column .card__meta {
   font-size: 0.72rem;
+}
+
+@media (max-width: 48rem) {
+  .taxonomy-panel__drawer {
+    gap: 0.7rem;
+  }
+
+  .taxonomy-panel__drawer > summary {
+    min-height: 2.85rem;
+    padding: 0.7rem 0.82rem;
+  }
+
+  .taxonomy-panel__drawer-hint {
+    display: none;
+  }
+
+  .taxonomy-column {
+    gap: 0.7rem;
+    padding: 0.85rem;
+  }
+
+  .taxonomy-column .pill-cloud {
+    padding-bottom: 0.1rem;
+  }
 }
 
 .metadata-panel,
@@ -2161,7 +2289,7 @@ body.is-header-hidden .shell-header.zone-card {
 .latests-grid {
   display: grid;
   grid-template-columns: minmax(0, 1.25fr) minmax(18rem, 0.85fr);
-  gap: 1rem;
+  gap: var(--card-grid-gap);
 }
 
 .latests-grid .project-card--featured {
@@ -2185,7 +2313,7 @@ body.is-header-hidden .shell-header.zone-card {
   display: grid;
   grid-auto-flow: column;
   grid-auto-columns: minmax(19rem, 24rem);
-  gap: 1rem;
+  gap: var(--card-grid-gap);
   overflow-x: auto;
   padding-bottom: 0.25rem;
   scroll-snap-type: x proximity;
@@ -2214,7 +2342,7 @@ body.is-header-hidden .shell-header.zone-card {
 [data-page="work"] .work-hero__grid {
   display: grid;
   grid-template-columns: minmax(0, 1.12fr) minmax(18rem, 0.88fr);
-  gap: 1rem;
+  gap: var(--card-grid-gap);
   align-items: stretch;
 }
 
@@ -2286,12 +2414,12 @@ body.is-header-hidden .shell-header.zone-card {
 }
 
 [data-page="work"] .taxonomy-panel {
-  gap: 1rem;
+  gap: var(--section-stack-gap);
 }
 
 [data-page="work"] .taxonomy-panel .taxonomy-grid {
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 0.85rem;
+  gap: var(--card-grid-gap);
 }
 
 [data-page="work"] .taxonomy-column {
@@ -2312,7 +2440,7 @@ body.is-header-hidden .shell-header.zone-card {
 }
 
 [data-page="work"] .catalog-stack {
-  gap: 1.1rem;
+  gap: var(--section-stack-gap);
 }
 
 [data-page="work"] .catalog-group {
@@ -2330,7 +2458,7 @@ body.is-header-hidden .shell-header.zone-card {
 }
 
 [data-page="work"] .work-card-grid {
-  gap: 0.85rem;
+  gap: var(--card-grid-gap);
 }
 
 [data-page="work"] .work-card-grid.card-grid--two {
@@ -2395,7 +2523,7 @@ body.is-header-hidden .shell-header.zone-card {
 
 [data-page="work"] .card-grid,
 [data-page="work"] .project-grid {
-  gap: 0.9rem;
+  gap: var(--card-grid-gap);
 }
 
 .project-immersive__hero--home {
@@ -2579,6 +2707,167 @@ body.is-header-hidden .shell-header.zone-card {
   object-position: center center;
 }
 
+.signature-hero {
+  display: grid;
+  gap: clamp(0.85rem, 1.6vw, 1rem);
+}
+
+.signature-banner {
+  --signature-bg-1: #eadfcf;
+  --signature-bg-2: #dccbb8;
+  --signature-bg-3: #c4b09c;
+  --signature-accent-rgb: 112, 84, 63;
+  position: relative;
+  display: grid;
+  grid-template-columns: minmax(0, 1.08fr) minmax(16rem, 0.92fr);
+  gap: clamp(0.9rem, 1.8vw, 1.4rem);
+  align-items: stretch;
+  min-height: clamp(24rem, 44vw, 34rem);
+  padding: clamp(1rem, 1.8vw, 1.4rem) clamp(1rem, 1.8vw, 1.4rem) 0;
+  overflow: hidden;
+  border: 1px solid rgba(99, 78, 62, 0.18);
+  border-radius: clamp(1.15rem, 2vw, 1.8rem);
+  background:
+    radial-gradient(circle at var(--pointer-x, 50%) var(--pointer-y, 28%), rgba(255, 255, 255, 0.42), transparent 32%),
+    radial-gradient(circle at 18% 14%, rgba(255, 255, 255, 0.32), transparent 28%),
+    radial-gradient(circle at 84% 74%, rgba(var(--signature-accent-rgb), 0.12), transparent 36%),
+    linear-gradient(135deg, var(--signature-bg-1) 0%, var(--signature-bg-2) 52%, var(--signature-bg-3) 100%);
+  box-shadow:
+    0 28px 56px rgba(67, 47, 31, 0.12),
+    inset 0 1px 0 rgba(255, 255, 255, 0.34);
+  color: #302219;
+  isolation: isolate;
+}
+
+.signature-banner::before,
+.signature-banner::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.signature-banner::before {
+  background:
+    radial-gradient(circle at 50% 48%, rgba(255, 255, 255, 0.1), transparent 42%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.08), transparent 42%);
+  opacity: 0.9;
+  mix-blend-mode: screen;
+}
+
+.signature-banner::after {
+  inset: auto 0 0 0;
+  height: 26%;
+  background: linear-gradient(180deg, transparent, rgba(52, 35, 24, 0.1));
+}
+
+.signature-banner__copy {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  width: 100%;
+  height: 100%;
+  max-width: min(38rem, 100%);
+  padding: clamp(0.2rem, 0.55vw, 0.45rem) 0 clamp(0.35rem, 0.8vw, 0.7rem);
+}
+
+.signature-banner__spacer {
+  flex: 1 1 auto;
+  min-height: 0;
+}
+
+.signature-banner__copy .card__meta {
+  color: rgba(72, 54, 42, 0.72);
+  letter-spacing: 0.18em;
+}
+
+.signature-banner__title {
+  margin: 0;
+  max-width: 9ch;
+  font-family: var(--font-display, var(--font-sans));
+  font-size: clamp(2.4rem, 5.6vw, 5.9rem);
+  line-height: 0.88;
+  letter-spacing: -0.075em;
+  color: #2f2118;
+  text-wrap: balance;
+}
+
+.signature-banner__lede {
+  max-width: 31rem;
+  color: rgba(69, 50, 38, 0.78);
+  font-size: clamp(0.98rem, 1.2vw, 1.07rem);
+  line-height: 1.6;
+}
+
+.signature-banner__tags {
+  justify-content: flex-start;
+}
+
+.signature-banner__media {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  min-height: clamp(19rem, 36vw, 30rem);
+}
+
+.signature-banner__image {
+  display: block;
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  object-position: center bottom;
+  filter: drop-shadow(0 20px 34px rgba(42, 29, 21, 0.16));
+  transform: translateY(2.5%);
+  user-select: none;
+  pointer-events: none;
+}
+
+.signature-banner .button-row {
+  margin-top: 0.05rem;
+}
+
+.signature-banner__actions {
+  justify-content: flex-start;
+}
+
+.signature-banner .button {
+  border-color: rgba(88, 66, 50, 0.18);
+  background: rgba(255, 255, 255, 0.24);
+  color: #2e2118;
+  box-shadow: none;
+}
+
+.signature-banner .button--primary {
+  background: linear-gradient(180deg, rgba(52, 36, 27, 0.95), rgba(39, 26, 19, 0.98));
+  color: #f8f4ef;
+}
+
+.signature-banner .button--secondary {
+  background: rgba(255, 255, 255, 0.16);
+}
+
+.signature-banner .chip,
+.signature-banner .tag {
+  border-color: rgba(89, 66, 50, 0.16);
+  background: rgba(255, 255, 255, 0.32);
+  color: #39291f;
+  box-shadow: none;
+}
+
+.signature-banner:hover,
+.signature-banner:focus-within {
+  transform: translateY(-2px);
+}
+
+.signature-banner:hover::before,
+.signature-banner:focus-within::before {
+  opacity: 1;
+}
+
 .programs-hero .display-title {
   max-width: 12ch;
 }
@@ -2611,13 +2900,13 @@ body.is-header-hidden .shell-header.zone-card {
 .project-architecture__grid {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 0.8rem;
+  gap: var(--card-grid-gap);
 }
 
 .project-gallery {
   display: grid;
   grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 0.8rem;
+  gap: var(--card-grid-gap);
 }
 
 .project-immersive {
@@ -2702,13 +2991,13 @@ body.is-header-hidden .shell-header.zone-card {
   overflow-y: hidden;
   grid-template-columns: repeat(2, minmax(0, 1fr));
   display: grid;
-  gap: 1rem;
+  gap: var(--card-grid-gap);
   padding-bottom: 0.2rem;
 }
 
 .project-immersive__rail {
   display: grid;
-  gap: 1rem;
+  gap: var(--card-grid-gap);
 }
 
 .project-immersive__frame {
@@ -3516,6 +3805,7 @@ body.is-header-hidden .shell-header.zone-card {
   gap: clamp(1rem, 2.4vw, 1.7rem);
   align-items: stretch;
   min-height: clamp(26rem, 40vw, 36rem);
+  margin-bottom: var(--section-stack-gap);
 }
 
 .graph-surface__content {
@@ -4377,9 +4667,10 @@ body.is-header-hidden .shell-header.zone-card {
 }
 
 body.is-compact-view {
-  --card-gap: 0.68rem;
-  --card-padding: clamp(0.85rem, 1.6vw, 1.15rem);
-  --grid-gap-y: 0.85rem;
+  --card-grid-gap: 0.7rem;
+  --card-gap: 0.72rem;
+  --card-padding: clamp(0.85rem, 1.55vw, 1.1rem);
+  --grid-gap-y: 0.8rem;
   --section-stack-gap: 1rem;
 }
 
@@ -4545,7 +4836,7 @@ input:focus-visible {
 
   .work-carousel__track {
     grid-auto-columns: minmax(16rem, 82vw);
-    gap: 0.75rem;
+    gap: var(--card-grid-gap);
   }
 
   .project-immersive__hero--home {
@@ -4581,6 +4872,25 @@ input:focus-visible {
 
   .project-immersive__hero--home .project-immersive__image {
     min-height: 0;
+  }
+
+  .signature-banner {
+    grid-template-columns: 1fr;
+    min-height: auto;
+    padding-bottom: 0;
+  }
+
+  .signature-banner__copy {
+    max-width: none;
+  }
+
+  .signature-banner__media {
+    min-height: clamp(18rem, 66vw, 26rem);
+  }
+
+  .signature-banner__title {
+    max-width: 11ch;
+    font-size: clamp(2.2rem, 9vw, 4.8rem);
   }
 
   .project-immersive__hero--palimpsests {
@@ -4621,9 +4931,10 @@ input:focus-visible {
 @media (max-width: 48rem) {
   :root {
     --gutter: 0.75rem;
-    --grid-gap-y: 1rem;
-    --stack-gap: 1.05rem;
-    --section-stack-gap: 1.3rem;
+    --card-grid-gap: 0.8rem;
+    --grid-gap-y: 0.82rem;
+    --stack-gap: 0.98rem;
+    --section-stack-gap: 1.12rem;
     --scroll-edge-fade: 0rem;
     --scroll-rail-padding: 0rem;
   }
@@ -4752,6 +5063,19 @@ input:focus-visible {
 
   .project-immersive__hero--home .project-immersive__image {
     min-height: 0;
+  }
+
+  .signature-banner {
+    gap: 0.75rem;
+    padding: 0.92rem 0.92rem 0;
+  }
+
+  .signature-banner__media {
+    min-height: clamp(16rem, 72vw, 24rem);
+  }
+
+  .signature-banner__title {
+    font-size: clamp(2.05rem, 12vw, 3.7rem);
   }
 
   [data-entry-id="oeil-de-meg"][data-card-media="true"] {
@@ -5064,7 +5388,8 @@ input:focus-visible {
   .button,
   .tag,
   .site-nav a,
-  .panel {
+  .panel,
+  .signature-banner {
     transition:
       transform 180ms ease,
       border-color 180ms ease,
@@ -5074,7 +5399,8 @@ input:focus-visible {
   }
 
   .zone-card:hover,
-  .panel:hover {
+  .panel:hover,
+  .signature-banner:hover {
     transform: translateY(-2px);
     border-color: rgba(228, 213, 196, 0.28);
   }

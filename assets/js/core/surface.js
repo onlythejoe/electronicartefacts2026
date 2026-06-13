@@ -197,6 +197,8 @@
           nodes,
           phase: Math.random() * Math.PI * 2,
           activePointerId: null,
+          visible: false,
+          rafId: 0,
         };
       })
       .filter(Boolean);
@@ -251,110 +253,144 @@
       ctx.restore();
     };
 
-    let rafId = 0;
-    const render = () => {
-      contexts.forEach((context) => {
-        if (!document.body.contains(context.surface)) return;
+    const renderContext = (context) => {
+      if (!document.body.contains(context.surface)) return;
 
-        const rect = context.stage.getBoundingClientRect();
-        if (rect.width !== context.width || rect.height !== context.height) {
-          resize(context);
-        }
+      const rect = context.stage.getBoundingClientRect();
+      if (rect.width !== context.width || rect.height !== context.height) {
+        resize(context);
+      }
 
-        const { ctx, width, height, centerX, centerY, minDim } = context;
-        const t = performance.now() * 0.001;
+      const { ctx, width, height, centerX, centerY, minDim } = context;
+      const t = performance.now() * 0.001;
 
-        ctx.clearRect(0, 0, width, height);
+      ctx.clearRect(0, 0, width, height);
 
-        const bg = ctx.createRadialGradient(centerX, centerY, minDim * 0.02, centerX, centerY, minDim * 0.72);
-        bg.addColorStop(0, "rgba(234,220,207,0.08)");
-        bg.addColorStop(0.45, "rgba(255,255,255,0.02)");
-        bg.addColorStop(1, "rgba(0,0,0,0.04)");
-        ctx.fillStyle = bg;
-        ctx.fillRect(0, 0, width, height);
+      const bg = ctx.createRadialGradient(centerX, centerY, minDim * 0.02, centerX, centerY, minDim * 0.72);
+      bg.addColorStop(0, "rgba(234,220,207,0.08)");
+      bg.addColorStop(0.45, "rgba(255,255,255,0.02)");
+      bg.addColorStop(1, "rgba(0,0,0,0.04)");
+      ctx.fillStyle = bg;
+      ctx.fillRect(0, 0, width, height);
 
-        ctx.strokeStyle = "rgba(255,255,255,0.04)";
+      ctx.strokeStyle = "rgba(255,255,255,0.04)";
+      ctx.lineWidth = 1;
+      for (let x = 0; x < width; x += Math.max(52, width / 10)) {
+        ctx.beginPath();
+        ctx.moveTo(x, 0);
+        ctx.lineTo(x, height);
+        ctx.stroke();
+      }
+      for (let y = 0; y < height; y += Math.max(44, height / 8)) {
+        ctx.beginPath();
+        ctx.moveTo(0, y);
+        ctx.lineTo(width, y);
+        ctx.stroke();
+      }
+
+      const orbit1 = minDim * 0.38;
+      const orbit2 = minDim * 0.22;
+      ctx.strokeStyle = "rgba(255,255,255,0.08)";
+      ctx.lineWidth = 1;
+      ctx.beginPath();
+      ctx.arc(centerX, centerY, orbit1, 0, Math.PI * 2);
+      ctx.stroke();
+      ctx.beginPath();
+      ctx.arc(centerX, centerY, orbit2, 0, Math.PI * 2);
+      ctx.stroke();
+
+      ctx.beginPath();
+      ctx.arc(centerX, centerY, Math.max(22, minDim * 0.08), 0, Math.PI * 2);
+      ctx.fillStyle = "rgba(234,220,207,0.12)";
+      ctx.fill();
+      ctx.strokeStyle = "rgba(255,255,255,0.88)";
+      ctx.lineWidth = 1.2;
+      ctx.stroke();
+
+      const positions = context.nodes.map((node, index) => {
+        const angle = t * 0.25 + index * (Math.PI * 2 / context.nodes.length);
+        const radiusBase = orbit1 - 26 - index * 5;
+        const wobble = Math.sin(t * 1.2 + index) * 12;
+        const depth = Math.sin(t * 0.9 + index * 1.3);
+        const baseX = centerX + Math.cos(angle) * (radiusBase + wobble * 0.25);
+        const baseY = centerY + Math.sin(angle * 0.95) * (orbit2 + wobble * 0.15);
+        const x = node.isDragging ? node.pointerX : baseX + node.dragX;
+        const y = node.isDragging ? node.pointerY : baseY + node.dragY;
+        const radius = 14 + (depth + 1) * 4;
+        const pulse = 0.7 + (Math.sin(t * 2 + index) + 1) * 0.2;
+        node.currentX = x;
+        node.currentY = y;
+        node.baseX = baseX;
+        node.baseY = baseY;
+        return { node, x, y, radius, pulse, depth };
+      });
+
+      positions.forEach((item) => {
+        ctx.strokeStyle = "rgba(255,255,255,0.26)";
         ctx.lineWidth = 1;
-        for (let x = 0; x < width; x += Math.max(52, width / 10)) {
-          ctx.beginPath();
-          ctx.moveTo(x, 0);
-          ctx.lineTo(x, height);
-          ctx.stroke();
-        }
-        for (let y = 0; y < height; y += Math.max(44, height / 8)) {
-          ctx.beginPath();
-          ctx.moveTo(0, y);
-          ctx.lineTo(width, y);
-          ctx.stroke();
-        }
+        ctx.beginPath();
+        ctx.moveTo(centerX, centerY);
+        ctx.lineTo(item.x, item.y);
+        ctx.stroke();
+      });
 
-        const orbit1 = minDim * 0.38;
-        const orbit2 = minDim * 0.22;
+      positions.forEach((item, index) => {
+        const next = positions[(index + 1) % positions.length];
         ctx.strokeStyle = "rgba(255,255,255,0.08)";
         ctx.lineWidth = 1;
         ctx.beginPath();
-        ctx.arc(centerX, centerY, orbit1, 0, Math.PI * 2);
+        ctx.moveTo(item.x, item.y);
+        ctx.lineTo(next.x, next.y);
         ctx.stroke();
-        ctx.beginPath();
-        ctx.arc(centerX, centerY, orbit2, 0, Math.PI * 2);
-        ctx.stroke();
-
-        ctx.beginPath();
-        ctx.arc(centerX, centerY, Math.max(22, minDim * 0.08), 0, Math.PI * 2);
-        ctx.fillStyle = "rgba(234,220,207,0.12)";
-        ctx.fill();
-        ctx.strokeStyle = "rgba(255,255,255,0.88)";
-        ctx.lineWidth = 1.2;
-        ctx.stroke();
-
-        const positions = context.nodes.map((node, index) => {
-          const angle = t * 0.25 + index * (Math.PI * 2 / context.nodes.length);
-          const radiusBase = orbit1 - 26 - index * 5;
-          const wobble = Math.sin(t * 1.2 + index) * 12;
-          const depth = Math.sin(t * 0.9 + index * 1.3);
-          const baseX = centerX + Math.cos(angle) * (radiusBase + wobble * 0.25);
-          const baseY = centerY + Math.sin(angle * 0.95) * (orbit2 + wobble * 0.15);
-          const x = node.isDragging ? node.pointerX : baseX + node.dragX;
-          const y = node.isDragging ? node.pointerY : baseY + node.dragY;
-          const radius = 14 + (depth + 1) * 4;
-          const pulse = 0.7 + (Math.sin(t * 2 + index) + 1) * 0.2;
-          node.currentX = x;
-          node.currentY = y;
-          node.baseX = baseX;
-          node.baseY = baseY;
-          return { node, x, y, radius, pulse, depth };
-        });
-
-        positions.forEach((item) => {
-          ctx.strokeStyle = "rgba(255,255,255,0.26)";
-          ctx.lineWidth = 1;
-          ctx.beginPath();
-          ctx.moveTo(centerX, centerY);
-          ctx.lineTo(item.x, item.y);
-          ctx.stroke();
-        });
-
-        positions.forEach((item, index) => {
-          const next = positions[(index + 1) % positions.length];
-          ctx.strokeStyle = "rgba(255,255,255,0.08)";
-          ctx.lineWidth = 1;
-          ctx.beginPath();
-          ctx.moveTo(item.x, item.y);
-          ctx.lineTo(next.x, next.y);
-          ctx.stroke();
-        });
-
-        positions.forEach((item) => {
-          const z = Math.round(item.depth * 28);
-          item.node.el.style.transform = `translate3d(calc(-50% + ${item.x - centerX}px), calc(-50% + ${item.y - centerY}px), ${z}px)`;
-          drawNode(ctx, item.node, item.x, item.y, item.radius, item.pulse, 0.68 + item.depth * 0.12);
-        });
       });
 
-      rafId = requestAnimationFrame(render);
+      positions.forEach((item) => {
+        const z = Math.round(item.depth * 28);
+        item.node.el.style.transform = `translate3d(calc(-50% + ${item.x - centerX}px), calc(-50% + ${item.y - centerY}px), ${z}px)`;
+        drawNode(ctx, item.node, item.x, item.y, item.radius, item.pulse, 0.68 + item.depth * 0.12);
+      });
+    };
+
+    const stopContext = (context) => {
+      if (!context.rafId) return;
+      cancelAnimationFrame(context.rafId);
+      context.rafId = 0;
+    };
+
+    const startContext = (context) => {
+      if (context.rafId || !context.visible || document.hidden) return;
+      const tick = () => {
+        if (!context.visible || document.hidden || !document.body.contains(context.surface)) {
+          stopContext(context);
+          return;
+        }
+        renderContext(context);
+        context.rafId = requestAnimationFrame(tick);
+      };
+      context.rafId = requestAnimationFrame(tick);
+    };
+
+    const setContextVisible = (context, visible) => {
+      context.visible = visible;
+      if (visible) {
+        startContext(context);
+        return;
+      }
+      stopContext(context);
+    };
+
+    const syncVisibility = () => {
+      contexts.forEach((context) => {
+        if (document.hidden) {
+          stopContext(context);
+          return;
+        }
+        if (context.visible) startContext(context);
+      });
     };
 
     window.addEventListener("resize", () => contexts.forEach(resize), { passive: true });
+    document.addEventListener("visibilitychange", syncVisibility);
 
     const onPointerMove = (event) => {
       if (!window.__graphSurfaceDrag) return;
@@ -393,6 +429,19 @@
       window.removeEventListener("pointercancel", onPointerUp);
     };
 
+    const observer = "IntersectionObserver" in window
+      ? new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              const context = contexts.find((item) => item.surface === entry.target);
+              if (!context) return;
+              setContextVisible(context, entry.isIntersecting || entry.intersectionRatio > 0);
+            });
+          },
+          { rootMargin: "20% 0px 20% 0px", threshold: 0.05 },
+        )
+      : null;
+
     contexts.forEach((context) => {
       context.nodes.forEach((node, nodeIndex) => {
         node.el.addEventListener("pointerdown", (event) => {
@@ -426,10 +475,20 @@
           context.dragMoved = false;
         });
       });
+
+      if (observer) {
+        observer.observe(context.surface);
+      } else {
+        setContextVisible(context, true);
+      }
     });
 
-    rafId = requestAnimationFrame(render);
-    return () => cancelAnimationFrame(rafId);
+    syncVisibility();
+    return () => {
+      contexts.forEach(stopContext);
+      observer?.disconnect();
+      document.removeEventListener("visibilitychange", syncVisibility);
+    };
   };
 
   const pageLens = (type) => {

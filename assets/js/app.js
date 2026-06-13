@@ -2705,6 +2705,72 @@ window.EA_SEARCH = {
     return value;
   };
 
+  const orethBannerMedia = {
+    src: "./assets/media/projects/oreth/ORETH.png",
+    alt: "Portrait of ORETH for banner use",
+    width: 2200,
+    height: 1650,
+  };
+
+  const isOrethSignature = (item) => {
+    if (!item) return false;
+    const artist = String(item.artist || item.creditedArtist || item.signature || item.label || "").toLowerCase();
+    const id = String(item.id || "").toLowerCase();
+    const project = String(item.project || "").toLowerCase();
+    return id === "oreth" || artist === "oreth" || project === "palimpsests";
+  };
+
+  const signatureBanner = (item, options = {}) => {
+    const title = options.title || item?.title || "ORETH";
+    const copy = options.copy || item?.summary || item?.description || "";
+    const eyebrow = options.eyebrow || item?.type || item?.statusLabel || "FEATURED";
+    const titleTag = ["h1", "h2", "h3", "h4", "h5", "h6"].includes(String(options.titleTag || "h2").toLowerCase())
+      ? String(options.titleTag || "h2").toLowerCase()
+      : "h2";
+    const tags = (options.tags || []).filter(Boolean);
+    const actions = (options.actions || []).filter(Boolean);
+    const media = options.media || orethBannerMedia;
+    const mediaAlt = options.mediaAlt || media.alt || "";
+    const titleMarkup = `<${titleTag} class="signature-banner__title">${esc(title)}</${titleTag}>`;
+    const tagMarkup = tags.length
+      ? `<div class="tag-cluster tag-cluster--compact signature-banner__tags">${tags.map((value) => chip(value)).join("")}</div>`
+      : "";
+    const spacerMarkup = actions.length ? `<div class="signature-banner__spacer" aria-hidden="true"></div>` : "";
+    const actionMarkup = actions.length
+      ? `<div class="button-row button-row--compact signature-banner__actions">${actions
+          .map(
+            (action, index) =>
+              `<a class="button ${index === 0 ? "button--primary" : "button--secondary"}" href="${esc(action.href)}"${action.target ? ` target="${esc(action.target)}" rel="noreferrer"` : ""}>${esc(action.label)}</a>`,
+          )
+          .join("")}</div>`
+      : "";
+
+    return `
+      <div class="signature-banner${options.className ? ` ${esc(options.className)}` : ""}${options.variant ? ` signature-banner--${esc(options.variant)}` : ""}">
+        <div class="signature-banner__copy">
+          <p class="card__meta">${esc(eyebrow)}</p>
+          ${titleMarkup}
+          ${copy ? `<p class="signature-banner__lede">${esc(copy)}</p>` : ""}
+          ${tagMarkup}
+          ${spacerMarkup}
+          ${actionMarkup}
+        </div>
+        <div class="signature-banner__media" aria-hidden="true">
+          <img
+            class="signature-banner__image"
+            src="${esc(media.src)}"
+            alt="${esc(mediaAlt)}"
+            width="${esc(media.width || 2200)}"
+            height="${esc(media.height || 1650)}"
+            loading="${options.loading || "eager"}"
+            fetchpriority="${options.fetchPriority || "high"}"
+            decoding="async"
+          />
+        </div>
+      </div>
+    `;
+  };
+
   const cardBaseAttrs = (item) => {
     const medium = (item.medium || []).join(" ");
     const discipline = (item.discipline || []).join(" ");
@@ -2820,9 +2886,15 @@ window.EA_SEARCH = {
     ];
 
     let phase = 0;
+    let rafId = 0;
+    let visible = false;
 
     const animate = () => {
-      if (!document.body.contains(root)) return;
+      if (!visible || document.hidden || !document.body.contains(root)) {
+        if (rafId) cancelAnimationFrame(rafId);
+        rafId = 0;
+        return;
+      }
 
       phase += 0.02;
 
@@ -2910,10 +2982,46 @@ window.EA_SEARCH = {
       links[0].setAttribute("d", `M ${leftStartX} ${leftStartY} L ${leftEndX} ${leftEndY}`);
       links[1].setAttribute("d", `M ${rightStartX} ${rightStartY} L ${rightEndX} ${rightEndY}`);
 
-      requestAnimationFrame(animate);
+      rafId = requestAnimationFrame(animate);
     };
 
-    requestAnimationFrame(animate);
+    const observer = "IntersectionObserver" in window
+      ? new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              if (entry.target !== root) return;
+              visible = entry.isIntersecting || entry.intersectionRatio > 0;
+              if (visible && !rafId && !document.hidden) {
+                rafId = requestAnimationFrame(animate);
+              }
+              if (!visible && rafId) {
+                cancelAnimationFrame(rafId);
+                rafId = 0;
+              }
+            });
+          },
+          { rootMargin: "20% 0px 20% 0px", threshold: 0.05 },
+        )
+      : null;
+
+    const syncVisibility = () => {
+      if (document.hidden || !visible) {
+        if (rafId) {
+          cancelAnimationFrame(rafId);
+          rafId = 0;
+        }
+        return;
+      }
+      if (!rafId) rafId = requestAnimationFrame(animate);
+    };
+
+    if (observer) observer.observe(root);
+    else {
+      visible = true;
+      rafId = requestAnimationFrame(animate);
+    }
+
+    document.addEventListener("visibilitychange", syncVisibility);
   };
 
   const cardImageFor = (item) => {
@@ -3045,7 +3153,7 @@ window.EA_SEARCH = {
   };
 
   const projectHeroMedia = (item) => {
-    const media = mediaFrom(item) || cardImageFor(item);
+    const media = isOrethSignature(item) ? orethBannerMedia : mediaFrom(item) || cardImageFor(item);
     if (!media) return "";
     return mediaFigureMarkup(media, item, "project-immersive__image");
   };
@@ -3228,39 +3336,48 @@ window.EA_SEARCH = {
         <h2>${esc(description.heading)}</h2>
         <p class="lede">${esc(description.copy)}</p>
       </div>
-      <div class="taxonomy-grid">
-        ${groups
-          .map(
-            (group) => `
-              <div class="taxonomy-column${group.options.length > 6 ? " taxonomy-column--scroll" : ""}">
-                <p class="card__meta">${esc(group.label)}</p>
-                <div
-                  class="pill-cloud taxonomy-pill-row"
-                  data-filter-group="${esc(group.key)}"
-                  style="flex-wrap:nowrap;overflow-x:auto;overflow-y:hidden;scrollbar-width:thin;-webkit-overflow-scrolling:touch;"
-                >
-                  ${group.options
-                    .map(
-                      (option) => `
-                        <button
-                          class="filter-chip${option.active ? " is-active" : ""}"
-                          type="button"
-                          aria-pressed="${option.active ? "true" : "false"}"
-                          data-filter-toggle
-                          data-filter-key="${esc(group.key)}"
-                          data-filter-value="${esc(option.value)}"
-                        >
-                          ${esc(option.label)}
-                        </button>
-                      `,
-                    )
-                    .join("")}
+      <details class="taxonomy-panel__drawer" data-taxonomy-drawer open>
+        <summary class="taxonomy-panel__drawer-summary">
+          <span class="taxonomy-panel__drawer-heading">
+            <strong>Advanced filters</strong>
+            <span>${groups.length} groups</span>
+          </span>
+          <span class="taxonomy-panel__drawer-hint">Tap to show or hide</span>
+        </summary>
+        <div class="taxonomy-grid">
+          ${groups
+            .map(
+              (group) => `
+                <div class="taxonomy-column${group.options.length > 6 ? " taxonomy-column--scroll" : ""}">
+                  <p class="card__meta">${esc(group.label)}</p>
+                  <div
+                    class="pill-cloud taxonomy-pill-row"
+                    data-filter-group="${esc(group.key)}"
+                    style="flex-wrap:nowrap;overflow-x:auto;overflow-y:hidden;scrollbar-width:thin;-webkit-overflow-scrolling:touch;"
+                  >
+                    ${group.options
+                      .map(
+                        (option) => `
+                          <button
+                            class="filter-chip${option.active ? " is-active" : ""}"
+                            type="button"
+                            aria-pressed="${option.active ? "true" : "false"}"
+                            data-filter-toggle
+                            data-filter-key="${esc(group.key)}"
+                            data-filter-value="${esc(option.value)}"
+                          >
+                            ${esc(option.label)}
+                          </button>
+                        `,
+                      )
+                      .join("")}
+                  </div>
                 </div>
-              </div>
-            `,
-          )
-          .join("")}
-      </div>
+              `,
+            )
+            .join("")}
+        </div>
+      </details>
     </section>
   `;
 
@@ -3307,38 +3424,18 @@ window.EA_SEARCH = {
     if (!palimpsests) return "";
     return `
       <section class="zone-card hero">
-        <div class="section-head">
-          <p class="eyebrow">PALIMPSESTS</p>
-          <h2>Palimpsests.</h2>
-          <p class="lede">A single image, then the record.</p>
-        </div>
-        <a class="project-immersive__hero project-immersive__hero--home project-immersive__hero--palimpsests" href="./palimpsests.html" aria-label="Open Palimpsests project page">
-          <div class="project-immersive__hero-backdrop" aria-hidden="true">
-            <span class="project-immersive__hero-title">PALIMPSESTS</span>
-          </div>
-          <div class="project-immersive__hero-copy">
-            <p class="card__meta">Featured project</p>
-            <h3 class="display-title">Palimpsests</h3>
-            <p class="lede">Open the cycle.</p>
-            ${tagRow(homeCardPills(palimpsests), { limit: 4, compact: true })}
-            <div class="button-row button-row--compact">
-              <span class="button button--primary">Open project</span>
-              <span class="button button--secondary">View the record</span>
-            </div>
-          </div>
-          <div class="project-immersive__hero-visual">
-            <div class="project-immersive__hero-panel">
-              <figure class="project-immersive__frame project-immersive__frame--lead project-immersive__frame--home project-immersive__frame--palimpsests">
-                <img class="project-immersive__image project-immersive__image--palimpsests" src="./assets/media/projects/palimpsests/palimpsests-hero.png" alt="Palimpsests cover artwork" loading="lazy" />
-              </figure>
-            </div>
-          </div>
-        </a>
-        <div class="link-row">
-          <a class="tag" href="./palimpsests.html">Palimpsests</a>
-          <a class="tag" href="./archive.html">Archive</a>
-          <a class="tag" href="./contact.html">Contact</a>
-        </div>
+        ${signatureBanner(palimpsests, {
+          variant: "oreth",
+          eyebrow: "PALIMPSESTS / ORETH",
+          title: "Palimpsests",
+          copy: "Album cycle carried by ORETH. A single full surface, no nested panels.",
+          tags: homeCardPills(palimpsests),
+          actions: [
+            { label: "Open project", href: "./palimpsests.html" },
+            { label: "Archive", href: "./archive.html" },
+            { label: "Contact", href: "./contact.html" },
+          ],
+        })}
       </section>
     `;
   };
@@ -3513,6 +3610,8 @@ window.EA_SEARCH = {
     taxonomyPanel,
     manifestPanel,
     featuredWork,
+    signatureBanner,
+    isOrethSignature,
     vasteBanner,
     featuredResearch,
     latestArtefacts,
@@ -3719,6 +3818,8 @@ window.EA_SEARCH = {
           nodes,
           phase: Math.random() * Math.PI * 2,
           activePointerId: null,
+          visible: false,
+          rafId: 0,
         };
       })
       .filter(Boolean);
@@ -3773,110 +3874,144 @@ window.EA_SEARCH = {
       ctx.restore();
     };
 
-    let rafId = 0;
-    const render = () => {
-      contexts.forEach((context) => {
-        if (!document.body.contains(context.surface)) return;
+    const renderContext = (context) => {
+      if (!document.body.contains(context.surface)) return;
 
-        const rect = context.stage.getBoundingClientRect();
-        if (rect.width !== context.width || rect.height !== context.height) {
-          resize(context);
-        }
+      const rect = context.stage.getBoundingClientRect();
+      if (rect.width !== context.width || rect.height !== context.height) {
+        resize(context);
+      }
 
-        const { ctx, width, height, centerX, centerY, minDim } = context;
-        const t = performance.now() * 0.001;
+      const { ctx, width, height, centerX, centerY, minDim } = context;
+      const t = performance.now() * 0.001;
 
-        ctx.clearRect(0, 0, width, height);
+      ctx.clearRect(0, 0, width, height);
 
-        const bg = ctx.createRadialGradient(centerX, centerY, minDim * 0.02, centerX, centerY, minDim * 0.72);
-        bg.addColorStop(0, "rgba(234,220,207,0.08)");
-        bg.addColorStop(0.45, "rgba(255,255,255,0.02)");
-        bg.addColorStop(1, "rgba(0,0,0,0.04)");
-        ctx.fillStyle = bg;
-        ctx.fillRect(0, 0, width, height);
+      const bg = ctx.createRadialGradient(centerX, centerY, minDim * 0.02, centerX, centerY, minDim * 0.72);
+      bg.addColorStop(0, "rgba(234,220,207,0.08)");
+      bg.addColorStop(0.45, "rgba(255,255,255,0.02)");
+      bg.addColorStop(1, "rgba(0,0,0,0.04)");
+      ctx.fillStyle = bg;
+      ctx.fillRect(0, 0, width, height);
 
-        ctx.strokeStyle = "rgba(255,255,255,0.04)";
+      ctx.strokeStyle = "rgba(255,255,255,0.04)";
+      ctx.lineWidth = 1;
+      for (let x = 0; x < width; x += Math.max(52, width / 10)) {
+        ctx.beginPath();
+        ctx.moveTo(x, 0);
+        ctx.lineTo(x, height);
+        ctx.stroke();
+      }
+      for (let y = 0; y < height; y += Math.max(44, height / 8)) {
+        ctx.beginPath();
+        ctx.moveTo(0, y);
+        ctx.lineTo(width, y);
+        ctx.stroke();
+      }
+
+      const orbit1 = minDim * 0.38;
+      const orbit2 = minDim * 0.22;
+      ctx.strokeStyle = "rgba(255,255,255,0.08)";
+      ctx.lineWidth = 1;
+      ctx.beginPath();
+      ctx.arc(centerX, centerY, orbit1, 0, Math.PI * 2);
+      ctx.stroke();
+      ctx.beginPath();
+      ctx.arc(centerX, centerY, orbit2, 0, Math.PI * 2);
+      ctx.stroke();
+
+      ctx.beginPath();
+      ctx.arc(centerX, centerY, Math.max(22, minDim * 0.08), 0, Math.PI * 2);
+      ctx.fillStyle = "rgba(234,220,207,0.12)";
+      ctx.fill();
+      ctx.strokeStyle = "rgba(255,255,255,0.88)";
+      ctx.lineWidth = 1.2;
+      ctx.stroke();
+
+      const positions = context.nodes.map((node, index) => {
+        const angle = t * 0.25 + index * (Math.PI * 2 / context.nodes.length);
+        const radiusBase = orbit1 - 26 - index * 5;
+        const wobble = Math.sin(t * 1.2 + index) * 12;
+        const depth = Math.sin(t * 0.9 + index * 1.3);
+        const baseX = centerX + Math.cos(angle) * (radiusBase + wobble * 0.25);
+        const baseY = centerY + Math.sin(angle * 0.95) * (orbit2 + wobble * 0.15);
+        const x = node.isDragging ? node.pointerX : baseX + node.dragX;
+        const y = node.isDragging ? node.pointerY : baseY + node.dragY;
+        const radius = 14 + (depth + 1) * 4;
+        const pulse = 0.7 + (Math.sin(t * 2 + index) + 1) * 0.2;
+        node.currentX = x;
+        node.currentY = y;
+        node.baseX = baseX;
+        node.baseY = baseY;
+        return { node, x, y, radius, pulse, depth };
+      });
+
+      positions.forEach((item) => {
+        ctx.strokeStyle = "rgba(255,255,255,0.26)";
         ctx.lineWidth = 1;
-        for (let x = 0; x < width; x += Math.max(52, width / 10)) {
-          ctx.beginPath();
-          ctx.moveTo(x, 0);
-          ctx.lineTo(x, height);
-          ctx.stroke();
-        }
-        for (let y = 0; y < height; y += Math.max(44, height / 8)) {
-          ctx.beginPath();
-          ctx.moveTo(0, y);
-          ctx.lineTo(width, y);
-          ctx.stroke();
-        }
+        ctx.beginPath();
+        ctx.moveTo(centerX, centerY);
+        ctx.lineTo(item.x, item.y);
+        ctx.stroke();
+      });
 
-        const orbit1 = minDim * 0.38;
-        const orbit2 = minDim * 0.22;
+      positions.forEach((item, index) => {
+        const next = positions[(index + 1) % positions.length];
         ctx.strokeStyle = "rgba(255,255,255,0.08)";
         ctx.lineWidth = 1;
         ctx.beginPath();
-        ctx.arc(centerX, centerY, orbit1, 0, Math.PI * 2);
+        ctx.moveTo(item.x, item.y);
+        ctx.lineTo(next.x, next.y);
         ctx.stroke();
-        ctx.beginPath();
-        ctx.arc(centerX, centerY, orbit2, 0, Math.PI * 2);
-        ctx.stroke();
-
-        ctx.beginPath();
-        ctx.arc(centerX, centerY, Math.max(22, minDim * 0.08), 0, Math.PI * 2);
-        ctx.fillStyle = "rgba(234,220,207,0.12)";
-        ctx.fill();
-        ctx.strokeStyle = "rgba(255,255,255,0.88)";
-        ctx.lineWidth = 1.2;
-        ctx.stroke();
-
-        const positions = context.nodes.map((node, index) => {
-          const angle = t * 0.25 + index * (Math.PI * 2 / context.nodes.length);
-          const radiusBase = orbit1 - 26 - index * 5;
-          const wobble = Math.sin(t * 1.2 + index) * 12;
-          const depth = Math.sin(t * 0.9 + index * 1.3);
-          const baseX = centerX + Math.cos(angle) * (radiusBase + wobble * 0.25);
-          const baseY = centerY + Math.sin(angle * 0.95) * (orbit2 + wobble * 0.15);
-          const x = node.isDragging ? node.pointerX : baseX + node.dragX;
-          const y = node.isDragging ? node.pointerY : baseY + node.dragY;
-          const radius = 14 + (depth + 1) * 4;
-          const pulse = 0.7 + (Math.sin(t * 2 + index) + 1) * 0.2;
-          node.currentX = x;
-          node.currentY = y;
-          node.baseX = baseX;
-          node.baseY = baseY;
-          return { node, x, y, radius, pulse, depth };
-        });
-
-        positions.forEach((item) => {
-          ctx.strokeStyle = "rgba(255,255,255,0.26)";
-          ctx.lineWidth = 1;
-          ctx.beginPath();
-          ctx.moveTo(centerX, centerY);
-          ctx.lineTo(item.x, item.y);
-          ctx.stroke();
-        });
-
-        positions.forEach((item, index) => {
-          const next = positions[(index + 1) % positions.length];
-          ctx.strokeStyle = "rgba(255,255,255,0.08)";
-          ctx.lineWidth = 1;
-          ctx.beginPath();
-          ctx.moveTo(item.x, item.y);
-          ctx.lineTo(next.x, next.y);
-          ctx.stroke();
-        });
-
-        positions.forEach((item) => {
-          const z = Math.round(item.depth * 28);
-          item.node.el.style.transform = `translate3d(calc(-50% + ${item.x - centerX}px), calc(-50% + ${item.y - centerY}px), ${z}px)`;
-          drawNode(ctx, item.node, item.x, item.y, item.radius, item.pulse, 0.68 + item.depth * 0.12);
-        });
       });
 
-      rafId = requestAnimationFrame(render);
+      positions.forEach((item) => {
+        const z = Math.round(item.depth * 28);
+        item.node.el.style.transform = `translate3d(calc(-50% + ${item.x - centerX}px), calc(-50% + ${item.y - centerY}px), ${z}px)`;
+        drawNode(ctx, item.node, item.x, item.y, item.radius, item.pulse, 0.68 + item.depth * 0.12);
+      });
+    };
+
+    const stopContext = (context) => {
+      if (!context.rafId) return;
+      cancelAnimationFrame(context.rafId);
+      context.rafId = 0;
+    };
+
+    const startContext = (context) => {
+      if (context.rafId || !context.visible || document.hidden) return;
+      const tick = () => {
+        if (!context.visible || document.hidden || !document.body.contains(context.surface)) {
+          stopContext(context);
+          return;
+        }
+        renderContext(context);
+        context.rafId = requestAnimationFrame(tick);
+      };
+      context.rafId = requestAnimationFrame(tick);
+    };
+
+    const setContextVisible = (context, visible) => {
+      context.visible = visible;
+      if (visible) {
+        startContext(context);
+        return;
+      }
+      stopContext(context);
+    };
+
+    const syncVisibility = () => {
+      contexts.forEach((context) => {
+        if (document.hidden) {
+          stopContext(context);
+          return;
+        }
+        if (context.visible) startContext(context);
+      });
     };
 
     window.addEventListener("resize", () => contexts.forEach(resize), { passive: true });
+    document.addEventListener("visibilitychange", syncVisibility);
 
     const onPointerMove = (event) => {
       if (!window.__graphSurfaceDrag) return;
@@ -3915,6 +4050,19 @@ window.EA_SEARCH = {
       window.removeEventListener("pointercancel", onPointerUp);
     };
 
+    const observer = "IntersectionObserver" in window
+      ? new IntersectionObserver(
+          (entries) => {
+            entries.forEach((entry) => {
+              const context = contexts.find((item) => item.surface === entry.target);
+              if (!context) return;
+              setContextVisible(context, entry.isIntersecting || entry.intersectionRatio > 0);
+            });
+          },
+          { rootMargin: "20% 0px 20% 0px", threshold: 0.05 },
+        )
+      : null;
+
     contexts.forEach((context) => {
       context.nodes.forEach((node, nodeIndex) => {
         node.el.addEventListener("pointerdown", (event) => {
@@ -3948,10 +4096,20 @@ window.EA_SEARCH = {
           context.dragMoved = false;
         });
       });
+
+      if (observer) {
+        observer.observe(context.surface);
+      } else {
+        setContextVisible(context, true);
+      }
     });
 
-    rafId = requestAnimationFrame(render);
-    return () => cancelAnimationFrame(rafId);
+    syncVisibility();
+    return () => {
+      contexts.forEach(stopContext);
+      observer?.disconnect();
+      document.removeEventListener("visibilitychange", syncVisibility);
+    };
   };
 
   const pageLens = (type) => {
@@ -4142,11 +4300,19 @@ window.EA_SEARCH = {
       .replace(/['’]/g, "")
       .replace(/[^a-z0-9]+/g, "-")
       .replace(/^-+|-+$/g, ""));
+  const scheduleIdle = (callback) => {
+    if (typeof window.requestIdleCallback === "function") {
+      window.requestIdleCallback(() => callback(), { timeout: 1200 });
+      return;
+    }
+    window.setTimeout(callback, 0);
+  };
 
   const applyFilters = (scope, filterState, cards = [...document.querySelectorAll("[data-filter-card]")]) => {
     const section = document.querySelector(`[data-filter-scope="${scope}"]`);
     if (!section) return;
     const state = filterState.get(scope) || {};
+    let visibleCount = 0;
     cards.forEach((card) => {
       const visible = Object.entries(state).every(([key, value]) => {
         if (!value || value === "all") return true;
@@ -4154,12 +4320,13 @@ window.EA_SEARCH = {
         return raw.toLowerCase().includes(value.toLowerCase());
       });
       card.hidden = !visible;
+      if (visible) visibleCount += 1;
     });
-    syncFilterSummaries(filterState, cards);
+    syncFilterSummaries(filterState, cards, visibleCount);
   };
 
-  const syncFilterSummaries = (filterState, cards = [...document.querySelectorAll("[data-filter-card]")]) => {
-    const visible = cards.filter((card) => !card.hidden).length;
+  const syncFilterSummaries = (filterState, cards = [...document.querySelectorAll("[data-filter-card]")], visibleCount = null) => {
+    const visible = visibleCount ?? cards.filter((card) => !card.hidden).length;
     document.querySelectorAll("[data-filter-scope]").forEach((section) => {
       const scope = section.getAttribute("data-filter-scope");
       const summary = section.querySelector(".filter-summary");
@@ -4225,6 +4392,13 @@ window.EA_SEARCH = {
         rerender();
       });
     };
+    const syncToggleGroup = (selector, activeValue) => {
+      document.querySelectorAll(selector).forEach((chip) => {
+        const isActive = (chip.getAttribute("data-value") || "all") === activeValue;
+        chip.classList.toggle("is-active", isActive);
+        chip.setAttribute("aria-pressed", isActive ? "true" : "false");
+      });
+    };
 
     const input = document.querySelector("[data-search-input]");
     if (input) {
@@ -4232,7 +4406,9 @@ window.EA_SEARCH = {
       if (input.dataset.boundSearchInput !== "true") {
         input.dataset.boundSearchInput = "true";
         input.addEventListener("input", () => {
-          searchState.query = input.value.trim().toLowerCase();
+          const nextQuery = input.value.trim().toLowerCase();
+          if (nextQuery === searchState.query) return;
+          searchState.query = nextQuery;
           scheduleRerender();
         });
       }
@@ -4242,7 +4418,10 @@ window.EA_SEARCH = {
       if (chip.dataset.boundSearchStatus === "true") return;
       chip.dataset.boundSearchStatus = "true";
       chip.addEventListener("click", () => {
-        searchState.status = chip.getAttribute("data-value") || "all";
+        const nextStatus = chip.getAttribute("data-value") || "all";
+        if (nextStatus === searchState.status) return;
+        searchState.status = nextStatus;
+        syncToggleGroup("[data-search-status-chip]", searchState.status);
         scheduleRerender();
       });
     });
@@ -4251,10 +4430,16 @@ window.EA_SEARCH = {
       if (chip.dataset.boundSearchKind === "true") return;
       chip.dataset.boundSearchKind = "true";
       chip.addEventListener("click", () => {
-        searchState.kind = chip.getAttribute("data-value") || "all";
+        const nextKind = chip.getAttribute("data-value") || "all";
+        if (nextKind === searchState.kind) return;
+        searchState.kind = nextKind;
+        syncToggleGroup("[data-search-kind-chip]", searchState.kind);
         scheduleRerender();
       });
     });
+
+    syncToggleGroup("[data-search-status-chip]", searchState.status);
+    syncToggleGroup("[data-search-kind-chip]", searchState.kind);
   };
 
   const initCardLinks = () => {
@@ -4372,7 +4557,7 @@ window.EA_SEARCH = {
   };
 
   const initReveal = () => {
-    const targets = document.querySelectorAll(".zone-card, .panel, .project-card, .program-card, .archive-card, .cross-nav-card");
+    const targets = document.querySelectorAll(".zone-card, .panel, .project-card, .program-card, .archive-card, .cross-nav-card, .signature-banner");
     if (!("IntersectionObserver" in window)) {
       targets.forEach((target) => target.classList.add("is-visible"));
       return;
@@ -4397,13 +4582,24 @@ window.EA_SEARCH = {
     });
   };
 
-  const initCardSpotlight = () => {
+  const initCardSpotlight = (root = document) => {
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
-    document.querySelectorAll(".project-card, .program-card, .archive-card, .panel, .cross-nav-card, .stat-card").forEach((card) => {
+    if (!window.matchMedia("(hover: hover) and (pointer: fine)").matches) return;
+    root.querySelectorAll(".project-card, .program-card, .archive-card, .panel, .cross-nav-card, .stat-card, .signature-banner").forEach((card) => {
       if (card.dataset.boundSpotlight === "true") return;
       card.dataset.boundSpotlight = "true";
+      let rect = null;
+      const syncRect = () => {
+        rect = card.getBoundingClientRect();
+      };
+      const clearRect = () => {
+        rect = null;
+      };
+
+      card.addEventListener("pointerenter", syncRect);
+      card.addEventListener("pointerleave", clearRect);
       card.addEventListener("pointermove", (event) => {
-        const rect = card.getBoundingClientRect();
+        if (!rect) syncRect();
         const x = ((event.clientX - rect.left) / rect.width) * 100;
         const y = ((event.clientY - rect.top) / rect.height) * 100;
         card.style.setProperty("--pointer-x", `${x.toFixed(2)}%`);
@@ -4459,7 +4655,24 @@ window.EA_SEARCH = {
         </div>
         <button class="filter-reset" type="button" data-filter-reset>Reset filters</button>
       `;
-      section.append(summary);
+      const drawer = section.querySelector("[data-taxonomy-drawer]");
+      const insertBefore = drawer || section.querySelector(".taxonomy-grid") || section.firstElementChild;
+      if (insertBefore) section.insertBefore(summary, insertBefore);
+      else section.append(summary);
+
+      if (drawer && drawer.dataset.boundTaxonomyDrawer !== "true") {
+        drawer.dataset.boundTaxonomyDrawer = "true";
+        const media = window.matchMedia("(max-width: 48rem)");
+        const syncDrawer = () => {
+          drawer.open = !media.matches;
+        };
+        syncDrawer();
+        if (typeof media.addEventListener === "function") {
+          media.addEventListener("change", syncDrawer);
+        } else if (typeof media.addListener === "function") {
+          media.addListener(syncDrawer);
+        }
+      }
 
       summary.querySelector("[data-filter-reset]")?.addEventListener("click", () => {
         filterState.set(scope, {});
@@ -4659,6 +4872,7 @@ window.EA_SEARCH = {
     rail.className = "section-rail";
     rail.setAttribute("data-section-rail", "");
     rail.setAttribute("aria-label", "Navigation de section");
+    const railLinks = [];
     rail.innerHTML = headings
       .map(
         (heading, index) => `
@@ -4670,6 +4884,7 @@ window.EA_SEARCH = {
       )
       .join("");
     document.body.append(rail);
+    railLinks.push(...rail.querySelectorAll("a"));
 
     if (!("IntersectionObserver" in window)) return;
     const observer = new IntersectionObserver(
@@ -4677,7 +4892,7 @@ window.EA_SEARCH = {
         const active = entries.filter((entry) => entry.isIntersecting).sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
         if (!active) return;
         const id = active.target.id;
-        rail.querySelectorAll("a").forEach((link) => {
+        railLinks.forEach((link) => {
           link.classList.toggle("is-active", link.getAttribute("data-section-target") === id);
         });
       },
@@ -4688,7 +4903,7 @@ window.EA_SEARCH = {
 
   const cardText = (card, selector) => card.querySelector(selector)?.textContent.trim() || "";
 
-  const initQuickView = () => {
+  const initQuickView = (root = document) => {
     if (!document.querySelector("[data-quick-view]")) {
       const drawer = document.createElement("aside");
       drawer.className = "quick-view";
@@ -4710,7 +4925,7 @@ window.EA_SEARCH = {
     const body = drawer?.querySelector("[data-quick-view-body]");
     if (!drawer || !body) return;
 
-    document.querySelectorAll(".project-card, .program-card, .archive-card, .panel.card-link-surface").forEach((card) => {
+    root.querySelectorAll(".project-card, .program-card, .archive-card, .panel.card-link-surface").forEach((card) => {
       if (card.dataset.boundQuickView === "true") return;
       card.dataset.boundQuickView = "true";
       const button = document.createElement("button");
@@ -4813,12 +5028,19 @@ window.EA_SEARCH = {
     initCardSpotlight();
     initDragRails();
     initFilterSummaries(filterState);
-    initCommandPalette();
-    initImageLightbox();
-    initTaxonomyPills();
-    initSectionRail();
-    initQuickView();
-    initUXDock();
+    scheduleIdle(() => {
+      initCommandPalette();
+      initImageLightbox();
+      initTaxonomyPills();
+      initSectionRail();
+      initQuickView();
+      initUXDock();
+    });
+  };
+
+  const refreshCardSurfaces = (root = document) => {
+    initCardSpotlight(root);
+    initQuickView(root);
   };
 
   const syncNavigationState = (current) => {
@@ -5000,6 +5222,7 @@ window.EA_SEARCH = {
     initSearch,
     initCardLinks,
     initUXEnhancements,
+    refreshCardSurfaces,
     syncNavigationState,
     syncPageTitle,
     syncSeoMeta,
@@ -5014,8 +5237,43 @@ window.EA_SEARCH = {
   const { esc, setYear, slugify } = window.EA_UTILS;
   const { loadIncludes } = window.EA_INCLUDES;
   const { statusBadge, chip, tagRow, metadataList, linkRow, metricRail, cardLinkAttrs, cardOverlayLink } = window.EA_UI;
-  const { initFilters, initSearch, initCardLinks, initUXEnhancements, syncNavigationState, syncSeoMeta } = window.EA_BEHAVIORS;
-  const { cardBaseAttrs, mediaFrom, mediaKindFor, mediaFigureMarkup, projectSignatureBubble, projectButterflyBubble, vasteEngineMarkup, startVasteEngineAnimation, cardImageFor, signalStrip, cardCopy, metricFill, summaryMetrics, countLabel, entityDateValue, homeProjects, featuredProjectForHome, projectHeroMedia, homeCardPills, projectCard, projectLandingCard, archiveCard, researchCard, personCard, programCard, channelCard, taxonomyPanel, manifestPanel, featuredWork, vasteBanner, featuredResearch, latestArtefacts } = window.EA_VIEW;
+  const { initFilters, initSearch, initCardLinks, initUXEnhancements, refreshCardSurfaces, syncNavigationState, syncSeoMeta } = window.EA_BEHAVIORS;
+  const {
+    cardBaseAttrs,
+    mediaFrom,
+    mediaKindFor,
+    mediaFigureMarkup,
+    projectSignatureBubble,
+    projectButterflyBubble,
+    vasteEngineMarkup,
+    startVasteEngineAnimation,
+    cardImageFor,
+    signalStrip,
+    cardCopy,
+    metricFill,
+    summaryMetrics,
+    countLabel,
+    entityDateValue,
+    homeProjects,
+    featuredProjectForHome,
+    projectHeroMedia,
+    homeCardPills,
+    projectCard,
+    projectLandingCard,
+    archiveCard,
+    researchCard,
+    personCard,
+    programCard,
+    channelCard,
+    taxonomyPanel,
+    manifestPanel,
+    featuredWork,
+    signatureBanner,
+    isOrethSignature,
+    vasteBanner,
+    featuredResearch,
+    latestArtefacts,
+  } = window.EA_VIEW;
   const { graphSurface, crossNavigation, uxSurface, nodesFromItems, ecosystemExplorer, startGraphSurfaceAnimation, pageLens } = window.EA_SURFACE;
   const indexes = catalog.indexes || {};
   const entityIndex = indexes.byId || {};
@@ -5909,6 +6167,7 @@ window.EA_SEARCH = {
 
   const projectGalleryPanel = (item) => {
     if (item.kind !== "project") return "";
+    if (isOrethSignature(item)) return "";
     const gallery = item.media?.gallery || [];
     const folder = projectMediaFolder(item);
     if (item.id === "palimpsests" && gallery.length) {
@@ -6234,6 +6493,30 @@ window.EA_SEARCH = {
             : item.kind === "program" || item.kind === "channel"
               ? "program"
               : "research";
+    const uniqueActions = (actions) => {
+      const seen = new Set();
+      return actions.filter((action) => {
+        if (!action) return false;
+        const key = `${action.label || ""}::${action.href || ""}`;
+        if (seen.has(key)) return false;
+        seen.add(key);
+        return true;
+      });
+    };
+    const signatureActions = (() => {
+      const actions = [...primaryLinks.slice(0, 1)];
+      if (item.kind === "project") {
+        actions.push({ label: "RL", href: `./project-rl.html?id=${encodeURIComponent(item.id)}` });
+        actions.push({ label: "Archive", href: "./archive.html" });
+      } else if (item.kind === "artist") {
+        actions.push({ label: "Work", href: "./work.html" });
+        actions.push({ label: "About", href: "./about.html" });
+      } else if (item.project === "palimpsests") {
+        actions.push({ label: "Palimpsests", href: "./palimpsests.html" });
+        actions.push({ label: "Archive", href: "./archive.html" });
+      }
+      return uniqueActions(actions).slice(0, 3);
+    })();
     const heroActions = [
       ...primaryLinks.slice(0, 1),
       ...(item.kind === "project" ? [{ label: "RL", href: `./project-rl.html?id=${encodeURIComponent(item.id)}` }] : []),
@@ -6241,13 +6524,36 @@ window.EA_SEARCH = {
     const detailIntro = item.kind === "program" ? programSpecificPanels(item) : "";
     const specificPanels = projectSpecificPanels(item);
     const visualPanels = projectPanels(item);
+    const signatureCopy = item.description || item.summary || "";
+    const signatureTags = (item.tags && item.tags.length ? item.tags : homeCardPills(item)).filter(Boolean);
+
+    if (isOrethSignature(item)) {
+      return `
+        <section class="zone-card hero signature-hero">
+          ${signatureBanner(item, {
+            variant: "oreth",
+            titleTag: "h1",
+            eyebrow: item.kind === "artist" ? "ORETH" : "PALIMPSESTS / ORETH",
+            copy: signatureCopy,
+            tags: signatureTags,
+            actions: signatureActions,
+          })}
+        </section>
+        ${detailIntro}
+        ${specificPanels ? `<section class="detail-grid">${specificPanels}</section>` : ""}
+        ${visualPanels ? `<section class="detail-grid project-visual-section">${visualPanels}</section>` : ""}
+        <section class="detail-grid">
+          ${knowledgePanels(item)}
+        </section>
+      `;
+    }
 
     return `
       <section class="zone-card hero">
         <div class="section-head">
           <p class="eyebrow">${esc(catalog.taxonomies?.entityTypes?.[item.kind] || item.kind || kind.toUpperCase())}</p>
           <h1 class="display-title">${esc(item.title)}</h1>
-          <p class="lede">${esc(item.description || item.summary || "")}</p>
+          <p class="lede">${esc(signatureCopy)}</p>
           ${projectSignatureBubble(item, "hero")}
           <div class="button-row button-row--compact">
             ${heroActions.map((link, index) => `<a class="button ${index === 0 ? "button--primary" : "button--secondary"}" href="${esc(link.href)}"${link.target ? ' target="_blank" rel="noreferrer"' : ""}>${esc(link.label)}</a>`).join("")}
@@ -6320,21 +6626,55 @@ window.EA_SEARCH = {
   `;
 
   const searchState = { query: "", status: "all", kind: "all" };
-  const renderSearchPage = () => {
-    const results = (catalog.indexes?.search || []).filter((item) => {
-      if (searchState.status !== "all" && item.status !== searchState.status) return false;
-      if (searchState.kind !== "all" && item.kind !== searchState.kind) return false;
-      if (!searchState.query) return true;
-      return item.value.includes(searchState.query.toLowerCase());
+  const searchIndex = catalog.indexes?.search || [];
+  const searchResultsInnerMarkup = () => {
+    const query = searchState.query;
+    const status = searchState.status;
+    const kind = searchState.kind;
+    const results = searchIndex.filter((item) => {
+      if (status !== "all" && item.status !== status) return false;
+      if (kind !== "all" && item.kind !== kind) return false;
+      if (!query) return true;
+      return item.value.includes(query);
     });
     const groups = results.reduce((acc, item) => {
       const bucket = acc[item.kind] || (acc[item.kind] = []);
       bucket.push(item);
       return acc;
     }, {});
+    const groupedResults = Object.entries(groups);
 
-    return `
-      <section class="zone-card hero">
+    return groupedResults.length
+      ? groupedResults
+          .map(
+            ([kind, items]) => `
+              <section class="zone-card hero">
+                <div class="section-head">
+                  <p class="eyebrow">${esc(kind)}</p>
+                  <h2>${esc(items.length)} result(s)</h2>
+                </div>
+                <div class="card-grid card-grid--two">
+                  ${items
+                    .map((item) => {
+                      const entity = entityById(item.id);
+                      if (!entity) return "";
+                      if (entity.kind === "program") return programCard(entity);
+                      if (entity.kind === "artist") return personCard(entity);
+                      if (entity.kind === "channel") return channelCard(entity);
+                      if (entity.kind === "artefact") return archiveCard(entity);
+                      if (entity.kind === "researchLog") return archiveCard(entity);
+                      return projectCard(entity);
+                    })
+                    .join("")}
+                </div>
+              </section>
+            `,
+          )
+          .join("")
+      : `<section class="zone-card hero"><div class="section-head"><p class="eyebrow">No results</p><h2>Nothing matched.</h2><p class="lede">Try a broader query or clear the filters.</p></div></section>`;
+  };
+  const renderSearchPage = () => `
+      <section class="zone-card hero" data-search-shell>
         <div class="section-head">
           <p class="eyebrow">SEARCH</p>
           <h1 class="display-title">Search the archive.</h1>
@@ -6376,38 +6716,14 @@ window.EA_SEARCH = {
         </div>
       </section>
       <section class="stack" data-search-results>
-        ${
-          Object.entries(groups).length
-            ? Object.entries(groups)
-                .map(
-                  ([kind, items]) => `
-                    <section class="zone-card hero">
-                      <div class="section-head">
-                        <p class="eyebrow">${esc(kind)}</p>
-                        <h2>${esc(items.length)} result(s)</h2>
-                      </div>
-                      <div class="card-grid card-grid--two">
-                        ${items
-                          .map((item) => {
-                            const entity = entityById(item.id);
-                            if (!entity) return "";
-                            if (entity.kind === "program") return programCard(entity);
-                            if (entity.kind === "artist") return personCard(entity);
-                            if (entity.kind === "channel") return channelCard(entity);
-                            if (entity.kind === "artefact") return archiveCard(entity);
-                            if (entity.kind === "researchLog") return archiveCard(entity);
-                            return projectCard(entity);
-                          })
-                          .join("")}
-                      </div>
-                    </section>
-                  `,
-                )
-                .join("")
-            : `<section class="zone-card hero"><div class="section-head"><p class="eyebrow">No results</p><h2>Nothing matched.</h2><p class="lede">Try a broader query or clear the filters.</p></div></section>`
-        }
+        ${searchResultsInnerMarkup()}
       </section>
     `;
+  const renderSearchResults = () => {
+    const target = document.querySelector("[data-search-results]");
+    if (!target) return;
+    target.innerHTML = searchResultsInnerMarkup();
+    refreshCardSurfaces?.(target);
   };
 
   const renderCrossNavigation = () => crossNavigation();
@@ -7006,7 +7322,7 @@ window.EA_SEARCH = {
       }
     });
     initFilters(filterState);
-    initSearch(searchState, renderPageSections);
+    initSearch(searchState, renderSearchResults);
     initCardLinks();
     initUXEnhancements(filterState);
     startVasteEngineAnimation();

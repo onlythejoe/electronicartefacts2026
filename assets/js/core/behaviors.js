@@ -6,11 +6,19 @@
       .replace(/['’]/g, "")
       .replace(/[^a-z0-9]+/g, "-")
       .replace(/^-+|-+$/g, ""));
+  const scheduleIdle = (callback) => {
+    if (typeof window.requestIdleCallback === "function") {
+      window.requestIdleCallback(() => callback(), { timeout: 1200 });
+      return;
+    }
+    window.setTimeout(callback, 0);
+  };
 
   const applyFilters = (scope, filterState, cards = [...document.querySelectorAll("[data-filter-card]")]) => {
     const section = document.querySelector(`[data-filter-scope="${scope}"]`);
     if (!section) return;
     const state = filterState.get(scope) || {};
+    let visibleCount = 0;
     cards.forEach((card) => {
       const visible = Object.entries(state).every(([key, value]) => {
         if (!value || value === "all") return true;
@@ -18,12 +26,13 @@
         return raw.toLowerCase().includes(value.toLowerCase());
       });
       card.hidden = !visible;
+      if (visible) visibleCount += 1;
     });
-    syncFilterSummaries(filterState, cards);
+    syncFilterSummaries(filterState, cards, visibleCount);
   };
 
-  const syncFilterSummaries = (filterState, cards = [...document.querySelectorAll("[data-filter-card]")]) => {
-    const visible = cards.filter((card) => !card.hidden).length;
+  const syncFilterSummaries = (filterState, cards = [...document.querySelectorAll("[data-filter-card]")], visibleCount = null) => {
+    const visible = visibleCount ?? cards.filter((card) => !card.hidden).length;
     document.querySelectorAll("[data-filter-scope]").forEach((section) => {
       const scope = section.getAttribute("data-filter-scope");
       const summary = section.querySelector(".filter-summary");
@@ -89,6 +98,13 @@
         rerender();
       });
     };
+    const syncToggleGroup = (selector, activeValue) => {
+      document.querySelectorAll(selector).forEach((chip) => {
+        const isActive = (chip.getAttribute("data-value") || "all") === activeValue;
+        chip.classList.toggle("is-active", isActive);
+        chip.setAttribute("aria-pressed", isActive ? "true" : "false");
+      });
+    };
 
     const input = document.querySelector("[data-search-input]");
     if (input) {
@@ -96,7 +112,9 @@
       if (input.dataset.boundSearchInput !== "true") {
         input.dataset.boundSearchInput = "true";
         input.addEventListener("input", () => {
-          searchState.query = input.value.trim().toLowerCase();
+          const nextQuery = input.value.trim().toLowerCase();
+          if (nextQuery === searchState.query) return;
+          searchState.query = nextQuery;
           scheduleRerender();
         });
       }
@@ -106,7 +124,10 @@
       if (chip.dataset.boundSearchStatus === "true") return;
       chip.dataset.boundSearchStatus = "true";
       chip.addEventListener("click", () => {
-        searchState.status = chip.getAttribute("data-value") || "all";
+        const nextStatus = chip.getAttribute("data-value") || "all";
+        if (nextStatus === searchState.status) return;
+        searchState.status = nextStatus;
+        syncToggleGroup("[data-search-status-chip]", searchState.status);
         scheduleRerender();
       });
     });
@@ -115,10 +136,16 @@
       if (chip.dataset.boundSearchKind === "true") return;
       chip.dataset.boundSearchKind = "true";
       chip.addEventListener("click", () => {
-        searchState.kind = chip.getAttribute("data-value") || "all";
+        const nextKind = chip.getAttribute("data-value") || "all";
+        if (nextKind === searchState.kind) return;
+        searchState.kind = nextKind;
+        syncToggleGroup("[data-search-kind-chip]", searchState.kind);
         scheduleRerender();
       });
     });
+
+    syncToggleGroup("[data-search-status-chip]", searchState.status);
+    syncToggleGroup("[data-search-kind-chip]", searchState.kind);
   };
 
   const initCardLinks = () => {
@@ -236,7 +263,7 @@
   };
 
   const initReveal = () => {
-    const targets = document.querySelectorAll(".zone-card, .panel, .project-card, .program-card, .archive-card, .cross-nav-card");
+    const targets = document.querySelectorAll(".zone-card, .panel, .project-card, .program-card, .archive-card, .cross-nav-card, .signature-banner");
     if (!("IntersectionObserver" in window)) {
       targets.forEach((target) => target.classList.add("is-visible"));
       return;
@@ -261,13 +288,24 @@
     });
   };
 
-  const initCardSpotlight = () => {
+  const initCardSpotlight = (root = document) => {
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
-    document.querySelectorAll(".project-card, .program-card, .archive-card, .panel, .cross-nav-card, .stat-card").forEach((card) => {
+    if (!window.matchMedia("(hover: hover) and (pointer: fine)").matches) return;
+    root.querySelectorAll(".project-card, .program-card, .archive-card, .panel, .cross-nav-card, .stat-card, .signature-banner").forEach((card) => {
       if (card.dataset.boundSpotlight === "true") return;
       card.dataset.boundSpotlight = "true";
+      let rect = null;
+      const syncRect = () => {
+        rect = card.getBoundingClientRect();
+      };
+      const clearRect = () => {
+        rect = null;
+      };
+
+      card.addEventListener("pointerenter", syncRect);
+      card.addEventListener("pointerleave", clearRect);
       card.addEventListener("pointermove", (event) => {
-        const rect = card.getBoundingClientRect();
+        if (!rect) syncRect();
         const x = ((event.clientX - rect.left) / rect.width) * 100;
         const y = ((event.clientY - rect.top) / rect.height) * 100;
         card.style.setProperty("--pointer-x", `${x.toFixed(2)}%`);
@@ -323,7 +361,24 @@
         </div>
         <button class="filter-reset" type="button" data-filter-reset>Reset filters</button>
       `;
-      section.append(summary);
+      const drawer = section.querySelector("[data-taxonomy-drawer]");
+      const insertBefore = drawer || section.querySelector(".taxonomy-grid") || section.firstElementChild;
+      if (insertBefore) section.insertBefore(summary, insertBefore);
+      else section.append(summary);
+
+      if (drawer && drawer.dataset.boundTaxonomyDrawer !== "true") {
+        drawer.dataset.boundTaxonomyDrawer = "true";
+        const media = window.matchMedia("(max-width: 48rem)");
+        const syncDrawer = () => {
+          drawer.open = !media.matches;
+        };
+        syncDrawer();
+        if (typeof media.addEventListener === "function") {
+          media.addEventListener("change", syncDrawer);
+        } else if (typeof media.addListener === "function") {
+          media.addListener(syncDrawer);
+        }
+      }
 
       summary.querySelector("[data-filter-reset]")?.addEventListener("click", () => {
         filterState.set(scope, {});
@@ -523,6 +578,7 @@
     rail.className = "section-rail";
     rail.setAttribute("data-section-rail", "");
     rail.setAttribute("aria-label", "Navigation de section");
+    const railLinks = [];
     rail.innerHTML = headings
       .map(
         (heading, index) => `
@@ -534,6 +590,7 @@
       )
       .join("");
     document.body.append(rail);
+    railLinks.push(...rail.querySelectorAll("a"));
 
     if (!("IntersectionObserver" in window)) return;
     const observer = new IntersectionObserver(
@@ -541,7 +598,7 @@
         const active = entries.filter((entry) => entry.isIntersecting).sort((a, b) => b.intersectionRatio - a.intersectionRatio)[0];
         if (!active) return;
         const id = active.target.id;
-        rail.querySelectorAll("a").forEach((link) => {
+        railLinks.forEach((link) => {
           link.classList.toggle("is-active", link.getAttribute("data-section-target") === id);
         });
       },
@@ -552,7 +609,7 @@
 
   const cardText = (card, selector) => card.querySelector(selector)?.textContent.trim() || "";
 
-  const initQuickView = () => {
+  const initQuickView = (root = document) => {
     if (!document.querySelector("[data-quick-view]")) {
       const drawer = document.createElement("aside");
       drawer.className = "quick-view";
@@ -574,7 +631,7 @@
     const body = drawer?.querySelector("[data-quick-view-body]");
     if (!drawer || !body) return;
 
-    document.querySelectorAll(".project-card, .program-card, .archive-card, .panel.card-link-surface").forEach((card) => {
+    root.querySelectorAll(".project-card, .program-card, .archive-card, .panel.card-link-surface").forEach((card) => {
       if (card.dataset.boundQuickView === "true") return;
       card.dataset.boundQuickView = "true";
       const button = document.createElement("button");
@@ -677,12 +734,19 @@
     initCardSpotlight();
     initDragRails();
     initFilterSummaries(filterState);
-    initCommandPalette();
-    initImageLightbox();
-    initTaxonomyPills();
-    initSectionRail();
-    initQuickView();
-    initUXDock();
+    scheduleIdle(() => {
+      initCommandPalette();
+      initImageLightbox();
+      initTaxonomyPills();
+      initSectionRail();
+      initQuickView();
+      initUXDock();
+    });
+  };
+
+  const refreshCardSurfaces = (root = document) => {
+    initCardSpotlight(root);
+    initQuickView(root);
   };
 
   const syncNavigationState = (current) => {
@@ -864,6 +928,7 @@
     initSearch,
     initCardLinks,
     initUXEnhancements,
+    refreshCardSurfaces,
     syncNavigationState,
     syncPageTitle,
     syncSeoMeta,

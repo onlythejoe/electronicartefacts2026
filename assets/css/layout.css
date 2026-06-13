@@ -242,7 +242,7 @@
 .archive-rail {
   display: flex;
   flex-wrap: nowrap;
-  gap: 1rem;
+  gap: var(--card-grid-gap);
   width: max-content;
   min-width: 100%;
 }
@@ -343,6 +343,34 @@
 .catalog-stack > *,
 .projects-stack > * {
   min-width: 0;
+}
+
+@supports (content-visibility: auto) {
+  .zone-card,
+  .panel,
+  .project-card,
+  .program-card,
+  .archive-card,
+  .stat-card,
+  .cross-nav-card,
+  .channel-card,
+  .signature-banner,
+  .graph-surface {
+    content-visibility: auto;
+    contain-intrinsic-size: auto 20rem;
+  }
+
+  .zone-card {
+    contain-intrinsic-size: auto 28rem;
+  }
+
+  .panel {
+    contain-intrinsic-size: auto 14rem;
+  }
+
+  .graph-surface {
+    contain-intrinsic-size: auto 30rem;
+  }
 }
 
 .knowledge-panel {
