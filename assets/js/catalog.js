@@ -32,28 +32,6 @@
     ].map((item) => ({
       ...item,
       titleSlug: normalizeTitle(item.title),
-      searchText: [
-        item.title,
-        item.subtitle,
-        item.description,
-        item.summary,
-        item.status,
-        item.kind,
-        item.category,
-        item.type,
-        ...(item.tags || []),
-        ...(item.medium || []),
-        ...(item.discipline || []),
-        ...(item.relatedProjects || []),
-        ...(item.relatedArtefacts || []),
-        ...(item.relatedPrograms || []),
-        ...(item.relatedResearchFields || []),
-        ...(item.links || []).map((link) => link.label),
-        ...Object.values(item.relations || {}).flat(),
-      ]
-        .filter(Boolean)
-        .join(" ")
-        .toLowerCase(),
     }));
 
   const allEntities = flattenEntities();
@@ -79,6 +57,12 @@
     bucket.push(item);
     return acc;
   }, {});
+  let searchIndexCache = null;
+  const getSearchIndex = () => {
+    if (searchIndexCache) return searchIndexCache;
+    searchIndexCache = window.EA_SEARCH ? window.EA_SEARCH.buildIndex({ indexes: { entities: allEntities } }) : [];
+    return searchIndexCache;
+  };
 
   const indexes = {
     entities: allEntities,
@@ -88,7 +72,7 @@
     byStatus,
     timelinesByEntityId,
     activityByEntityId,
-    search: window.EA_SEARCH ? window.EA_SEARCH.buildIndex({ indexes: { entities: allEntities } }) : [],
+    getSearchIndex,
   };
 
   const catalog = {

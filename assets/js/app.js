@@ -1438,7 +1438,7 @@ window.EA_ENTITIES = {
         folder: "./assets/media/projects/atypikhouse",
         gallery: [
           { src: "./assets/media/projects/atypikhouse/cover.svg", alt: "AtypikHouse dossier cover", caption: "Project dossier cover." },
-          { src: "./assets/media/projects/atypikhouse/atypikhouse-page.jpg", alt: "AtypikHouse landing page with logo", caption: "Landing page." },
+          { src: "./assets/media/projects/atypikhouse/atypikhouse-landing-page.jpg", alt: "AtypikHouse landing page with logo", caption: "Landing page." },
           { src: "./assets/media/projects/atypikhouse/atypikhouse-dashboard-home.jpg", alt: "AtypikHouse dashboard home view", caption: "Dashboard home." },
           { src: "./assets/media/projects/atypikhouse/atypikhouse-dashboard-ipad.jpg", alt: "AtypikHouse dashboard on a tablet", caption: "Tablet view." },
           { src: "./assets/media/projects/atypikhouse/atypikhouse-mobile-filters.jpg", alt: "AtypikHouse mobile filter interface", caption: "Filter flow." },
@@ -2350,7 +2350,10 @@ window.EA_SEARCH = {
               ...(item.tags || []),
               ...(item.medium || []),
               ...(item.discipline || []),
-              ...(item.relatedResearchFields || item.relatedProjects || item.relatedArtefacts || []),
+              ...(item.relatedProjects || []),
+              ...(item.relatedArtefacts || []),
+              ...(item.relatedPrograms || []),
+              ...(item.relatedResearchFields || []),
               ...Object.values(item.relations || {}).flat(),
             ]
               .flat()
@@ -2397,28 +2400,6 @@ window.EA_SEARCH = {
     ].map((item) => ({
       ...item,
       titleSlug: normalizeTitle(item.title),
-      searchText: [
-        item.title,
-        item.subtitle,
-        item.description,
-        item.summary,
-        item.status,
-        item.kind,
-        item.category,
-        item.type,
-        ...(item.tags || []),
-        ...(item.medium || []),
-        ...(item.discipline || []),
-        ...(item.relatedProjects || []),
-        ...(item.relatedArtefacts || []),
-        ...(item.relatedPrograms || []),
-        ...(item.relatedResearchFields || []),
-        ...(item.links || []).map((link) => link.label),
-        ...Object.values(item.relations || {}).flat(),
-      ]
-        .filter(Boolean)
-        .join(" ")
-        .toLowerCase(),
     }));
 
   const allEntities = flattenEntities();
@@ -2444,6 +2425,12 @@ window.EA_SEARCH = {
     bucket.push(item);
     return acc;
   }, {});
+  let searchIndexCache = null;
+  const getSearchIndex = () => {
+    if (searchIndexCache) return searchIndexCache;
+    searchIndexCache = window.EA_SEARCH ? window.EA_SEARCH.buildIndex({ indexes: { entities: allEntities } }) : [];
+    return searchIndexCache;
+  };
 
   const indexes = {
     entities: allEntities,
@@ -2453,7 +2440,7 @@ window.EA_SEARCH = {
     byStatus,
     timelinesByEntityId,
     activityByEntityId,
-    search: window.EA_SEARCH ? window.EA_SEARCH.buildIndex({ indexes: { entities: allEntities } }) : [],
+    getSearchIndex,
   };
 
   const catalog = {
@@ -2795,6 +2782,19 @@ window.EA_SEARCH = {
     `;
   };
 
+  const entryHrefFor = (item, options = {}) => {
+    if (options.href) return options.href;
+    if (!item) return "";
+    if (item.route) return item.route;
+    if (item.kind === "project") return `./project.html?id=${encodeURIComponent(item.id)}`;
+    if (item.kind === "collection") return `./collection.html?id=${encodeURIComponent(item.id)}`;
+    if (item.kind === "artefact" || item.kind === "researchLog") return `./artefact.html?id=${encodeURIComponent(item.id)}`;
+    if (item.kind === "program") return `./program.html?id=${encodeURIComponent(item.id)}`;
+    if (item.kind === "artist") return `./artist.html?id=${encodeURIComponent(item.id)}`;
+    if (item.kind === "channel") return `./channel.html?id=${encodeURIComponent(item.id)}`;
+    return "";
+  };
+
   const mediaFrom = (entry) => {
     const gallery = entry?.media?.gallery || [];
     if (!gallery.length) return null;
@@ -3124,7 +3124,7 @@ window.EA_SEARCH = {
   };
 
   const projectHeroMedia = (item) => {
-    const media = isOrethSignature(item) ? orethBannerMedia : mediaFrom(item) || cardImageFor(item);
+    const media = isOrethSignature(item) ? orethBannerMedia : cardImageFor(item);
     if (!media) return "";
     return mediaFigureMarkup(media, item, "project-immersive__image");
   };
@@ -3146,7 +3146,7 @@ window.EA_SEARCH = {
 
   const projectCard = (item) => `
     <article class="project-card" ${cardBaseAttrs(item)}>
-      ${item.kind === "project" ? `<a class="project-card__overlay-link" href="./project.html?id=${encodeURIComponent(item.id)}" aria-label="Open ${esc(item.title)} detail"></a>` : ""}
+      ${entryHrefFor(item) ? `<a class="project-card__overlay-link" href="${esc(entryHrefFor(item))}" aria-label="Open ${esc(item.title)} detail"></a>` : ""}
       <div class="project-card__top">
         <div>
           <p class="card__meta">${esc(item.type || catalog.taxonomies?.entityTypes?.[item.kind] || "PROJECT")}</p>
@@ -3169,8 +3169,8 @@ window.EA_SEARCH = {
   `;
 
   const projectLandingCard = (item) => `
-    <article class="project-card${item.id === "oeil-de-meg" ? " project-card--oeil-de-meg" : ""}" data-project-detail-link="${esc(item.route || `./project.html?id=${encodeURIComponent(item.id)}`)}" tabindex="0" role="link" aria-label="Open ${esc(item.title)} detail" ${cardBaseAttrs(item)}>
-      <a class="project-card__overlay-link" href="${esc(item.route || `./project.html?id=${encodeURIComponent(item.id)}`)}" aria-label="Open ${esc(item.title)} detail"></a>
+    <article class="project-card${item.id === "oeil-de-meg" ? " project-card--oeil-de-meg" : ""}" data-project-detail-link="${esc(entryHrefFor(item))}" tabindex="0" role="link" aria-label="Open ${esc(item.title)} detail" ${cardBaseAttrs(item)}>
+      <a class="project-card__overlay-link" href="${esc(entryHrefFor(item))}" aria-label="Open ${esc(item.title)} detail"></a>
       <div class="project-card__top">
         <div>
           <p class="card__meta">${esc(item.category || item.type || "PROJECT")}</p>
@@ -3189,7 +3189,8 @@ window.EA_SEARCH = {
   `;
 
   const archiveCard = (item) => `
-    <article class="archive-card" ${cardBaseAttrs(item)}>
+    <article class="archive-card" ${cardBaseAttrs(item)} ${cardLinkAttrs(entryHrefFor(item), `Open ${item.title}`)}>
+      ${cardOverlayLink(entryHrefFor(item), `Open ${item.title}`)}
       <div class="archive-card__header">
         <div class="archive-card__identity">
           <p class="card__meta">${esc(item.type || "ARCHIVE")}${item.category ? ` · ${esc(item.category)}` : ""}</p>
@@ -3253,8 +3254,8 @@ window.EA_SEARCH = {
   `;
 
   const personCard = (item, options = {}) => `
-    <article class="project-card" ${cardBaseAttrs(item)} ${cardLinkAttrs(options.href, options.label || `Open ${item.title}`)}>
-      ${cardOverlayLink(options.href, options.label || `Open ${item.title}`)}
+    <article class="project-card" ${cardBaseAttrs(item)} ${cardLinkAttrs(entryHrefFor(item, options), options.label || `Open ${item.title}`)}>
+      ${cardOverlayLink(entryHrefFor(item, options), options.label || `Open ${item.title}`)}
       <div class="project-card__top">
         <div>
           <p class="card__meta">${esc(item.type || "ARTIST")}</p>
@@ -3270,8 +3271,8 @@ window.EA_SEARCH = {
   `;
 
   const programCard = (item, options = {}) => `
-    <article class="program-card" ${cardBaseAttrs(item)} ${cardLinkAttrs(options.href, options.label || `Open ${item.title}`)}>
-      ${cardOverlayLink(options.href, options.label || `Open ${item.title}`)}
+    <article class="program-card" ${cardBaseAttrs(item)} ${cardLinkAttrs(entryHrefFor(item, options), options.label || `Open ${item.title}`)}>
+      ${cardOverlayLink(entryHrefFor(item, options), options.label || `Open ${item.title}`)}
       <div class="project-card__top">
         <div>
           <p class="card__meta">${esc(item.type || "PROGRAM")}</p>
@@ -3286,7 +3287,8 @@ window.EA_SEARCH = {
   `;
 
   const channelCard = (item) => `
-    <article class="program-card" ${cardBaseAttrs(item)}>
+    <article class="program-card" ${cardBaseAttrs(item)} ${cardLinkAttrs(entryHrefFor(item), `Open ${item.title}`)}>
+      ${cardOverlayLink(entryHrefFor(item), `Open ${item.title}`)}
       <div class="project-card__top">
         <div>
           <p class="card__meta">${esc(item.type || "CHANNEL")}</p>
@@ -3518,7 +3520,10 @@ window.EA_SEARCH = {
   };
 
   const latestArtefacts = () => {
-    const latest = (catalog.artefacts || []).slice(0, 3);
+    const latest = (catalog.artefacts || [])
+      .slice()
+      .sort((a, b) => entityDateValue(b) - entityDateValue(a))
+      .slice(0, 3);
     return `
       <section class="zone-card hero">
         <div class="section-head">
@@ -4912,8 +4917,8 @@ window.EA_SEARCH = {
     });
   };
 
-  const initTaxonomyPills = () => {
-    document.querySelectorAll(".taxonomy-pill").forEach((pill) => {
+  const initTaxonomyPills = (root = document) => {
+    root.querySelectorAll(".taxonomy-pill").forEach((pill) => {
       if (pill.dataset.boundTaxonomyPill === "true") return;
       pill.dataset.boundTaxonomyPill = "true";
       const toggle = (event) => {
@@ -5118,13 +5123,13 @@ window.EA_SEARCH = {
   const refreshCardSurfaces = (root = document) => {
     initCardSpotlight(root);
     initQuickView(root);
+    initTaxonomyPills(root);
   };
 
   const syncNavigationState = (current) => {
     document.querySelectorAll("[data-nav]").forEach((link) => {
-      if (link.dataset.nav === current) {
-        link.setAttribute("aria-current", "page");
-      }
+      if (link.dataset.nav === current) link.setAttribute("aria-current", "page");
+      else link.removeAttribute("aria-current");
     });
   };
 
@@ -5196,6 +5201,7 @@ window.EA_SEARCH = {
     const canonicalPath = (() => {
       if (baseName === "index") return "./";
       if (baseName === "palimpsests") return "./palimpsests.html";
+      if (detailEntry?.route && (current === "detail" || current === "project-rl")) return detailEntry.route;
       if (current === "project-rl" && queryId) return `./project-rl.html?id=${encodeURIComponent(queryId)}`;
       if (current === "detail" && queryId) return `./${baseName}.html?id=${encodeURIComponent(queryId)}`;
       return `./${pageName}`;
@@ -6010,6 +6016,34 @@ window.EA_SEARCH = {
   const entityById = (id) => entityIndex[id] || null;
   const timelineFor = (id) => timelineIndex[id] || null;
   const activityFor = (id) => activityIndex[id] || [];
+  const pageRoutes = {
+    home: "./index.html",
+    index: "./index.html",
+    work: "./work.html",
+    projects: "./projects.html",
+    programs: "./programs.html",
+    research: "./research.html",
+    archive: "./archive.html",
+    about: "./about.html",
+    contact: "./contact.html",
+    search: "./search.html",
+  };
+  const labelFromSlug = (value) =>
+    String(value ?? "")
+      .replace(/[-_]+/g, " ")
+      .replace(/\b\w/g, (character) => character.toUpperCase());
+  const entryHref = (entry) => {
+    if (!entry) return "";
+    if (entry.href) return entry.href;
+    if (entry.kind === "page" && entry.id && pageRoutes[entry.id]) return pageRoutes[entry.id];
+    if (entry.kind === "collection") return `./collection.html?id=${encodeURIComponent(entry.id)}`;
+    if (entry.kind === "project") return entry.route || `./project.html?id=${encodeURIComponent(entry.id)}`;
+    if (entry.kind === "program") return `./program.html?id=${encodeURIComponent(entry.id)}`;
+    if (entry.kind === "artist") return `./artist.html?id=${encodeURIComponent(entry.id)}`;
+    if (entry.kind === "channel") return `./channel.html?id=${encodeURIComponent(entry.id)}`;
+    if (entry.kind === "artefact" || entry.kind === "researchLog") return `./artefact.html?id=${encodeURIComponent(entry.id)}`;
+    return `./entity.html?id=${encodeURIComponent(entry.id)}`;
+  };
   const resolveIds = (values) =>
     (values || [])
       .map((value) => {
@@ -6018,7 +6052,17 @@ window.EA_SEARCH = {
         if (exact) return exact;
         const slug = slugify(value);
         const byTitle = titleIndex[slug];
-        return byTitle || { title: value, id: slug || value, kind: "reference" };
+        if (byTitle) return byTitle;
+        const pageHref = pageRoutes[slug];
+        if (pageHref) {
+          return {
+            id: slug,
+            title: labelFromSlug(value),
+            kind: "page",
+            href: pageHref,
+          };
+        }
+        return { title: value, id: slug || value, kind: "reference" };
       })
       .filter(Boolean);
 
@@ -6088,7 +6132,7 @@ window.EA_SEARCH = {
                 <p class="card__meta">${esc(label)}</p>
                 <div class="link-row">
                   ${resolveIds(values)
-                    .map((entry) => `<a class="tag" href="./entity.html?id=${encodeURIComponent(entry.id)}">${esc(entry.title)}</a>`)
+                    .map((entry) => `<a class="tag" href="${esc(entryHref(entry))}">${esc(entry.title)}</a>`)
                     .join("")}
                 </div>
               </div>
@@ -6105,9 +6149,7 @@ window.EA_SEARCH = {
     return panelShell(
       "Dependencies",
       null,
-      `<div class="link-row">${deps
-        .map((entry) => `<a class="tag" href="./entity.html?id=${encodeURIComponent(entry.id)}">${esc(entry.title)}</a>`)
-        .join("")}</div>`,
+      `<div class="link-row">${deps.map((entry) => `<a class="tag" href="${esc(entryHref(entry))}">${esc(entry.title)}</a>`).join("")}</div>`,
     );
   };
 
@@ -6166,9 +6208,7 @@ window.EA_SEARCH = {
     return panelShell(
       "Research",
       null,
-      `<div class="link-row">${resolveIds(fields)
-        .map((entry) => `<a class="tag" href="./entity.html?id=${encodeURIComponent(entry.id)}">${esc(entry.title)}</a>`)
-        .join("")}</div>`,
+      `<div class="link-row">${resolveIds(fields).map((entry) => `<a class="tag" href="${esc(entryHref(entry))}">${esc(entry.title)}</a>`).join("")}</div>`,
     );
   };
 
@@ -6194,7 +6234,7 @@ window.EA_SEARCH = {
                 <h3 class="card__title">${esc(entry.title)}</h3>
                 <p class="card__copy">${esc(entry.summary || entry.description || "")}</p>
                 <div class="link-row">
-                  <a class="tag" href="./entity.html?id=${encodeURIComponent(entry.id)}">Open</a>
+                  <a class="tag" href="${esc(entryHref(entry))}">Open</a>
                 </div>
               </article>
             `,
@@ -6532,7 +6572,7 @@ window.EA_SEARCH = {
           <div class="link-row">
             ${resolveIds(networkItems)
               .slice(0, 8)
-              .map((entry) => `<a class="tag" href="./entity.html?id=${encodeURIComponent(entry.id)}">${esc(entry.title)}</a>`)
+              .map((entry) => `<a class="tag" href="${esc(entryHref(entry))}">${esc(entry.title)}</a>`)
               .join("")}
           </div>
         </article>
@@ -6664,7 +6704,8 @@ window.EA_SEARCH = {
           ${rows
             .map(
               (entry) => {
-                const href = entry.entityId ? `./entity.html?id=${encodeURIComponent(entry.entityId)}` : "";
+                const entity = entry.entityId ? entityById(entry.entityId) : null;
+                const href = entity ? entryHref(entity) : "";
                 return `
                 <article class="panel panel--soft card-link-surface" ${cardLinkAttrs(href, `Open ${entry.title}`)}>
                   ${cardOverlayLink(href, `Open ${entry.title}`)}
@@ -6708,8 +6749,9 @@ window.EA_SEARCH = {
   `;
 
   const searchState = { query: "", status: "all", kind: "all" };
-  const searchIndex = catalog.indexes?.search || [];
+  const getSearchIndex = () => catalog.indexes?.getSearchIndex?.() || catalog.indexes?.search || [];
   const searchResultsInnerMarkup = () => {
+    const searchIndex = getSearchIndex();
     const query = searchState.query;
     const status = searchState.status;
     const kind = searchState.kind;
@@ -6724,7 +6766,13 @@ window.EA_SEARCH = {
       bucket.push(item);
       return acc;
     }, {});
-    const groupedResults = Object.entries(groups);
+    const groupedResults = Object.entries(groups).sort(([left], [right]) => {
+      const order = ["program", "project", "artefact", "researchLog", "researchField", "collection", "artist", "channel"];
+      const leftIndex = order.indexOf(left);
+      const rightIndex = order.indexOf(right);
+      if (leftIndex !== rightIndex) return (leftIndex === -1 ? order.length : leftIndex) - (rightIndex === -1 ? order.length : rightIndex);
+      return left.localeCompare(right);
+    });
 
     return groupedResults.length
       ? groupedResults
@@ -6732,7 +6780,7 @@ window.EA_SEARCH = {
             ([kind, items]) => `
               <section class="zone-card hero">
                 <div class="section-head">
-                  <p class="eyebrow">${esc(kind)}</p>
+                  <p class="eyebrow">${esc(catalog.taxonomies?.entityTypes?.[kind] || kind.replace(/([a-z])([A-Z])/g, "$1 $2").toUpperCase())}</p>
                   <h2>${esc(items.length)} result(s)</h2>
                 </div>
                 <div class="card-grid card-grid--two">
@@ -6743,6 +6791,7 @@ window.EA_SEARCH = {
                       if (entity.kind === "program") return programCard(entity);
                       if (entity.kind === "artist") return personCard(entity);
                       if (entity.kind === "channel") return channelCard(entity);
+                      if (entity.kind === "collection") return archiveCard(entity);
                       if (entity.kind === "artefact") return archiveCard(entity);
                       if (entity.kind === "researchLog") return archiveCard(entity);
                       return projectCard(entity);
@@ -7413,9 +7462,9 @@ window.EA_SEARCH = {
 
   const load = async () => {
     const current = document.body.dataset.page;
-    syncNavigationState(current);
     syncSeoMeta({ current, entityById });
     await loadIncludes();
+    syncNavigationState(current);
     document.querySelectorAll("[data-zone]").forEach((zone, index) => {
       zone.dataset.zoneIndex = String(index + 1);
       zone.style.setProperty("--zone-index", String(index + 1));

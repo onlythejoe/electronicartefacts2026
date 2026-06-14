@@ -647,8 +647,8 @@
     });
   };
 
-  const initTaxonomyPills = () => {
-    document.querySelectorAll(".taxonomy-pill").forEach((pill) => {
+  const initTaxonomyPills = (root = document) => {
+    root.querySelectorAll(".taxonomy-pill").forEach((pill) => {
       if (pill.dataset.boundTaxonomyPill === "true") return;
       pill.dataset.boundTaxonomyPill = "true";
       const toggle = (event) => {
@@ -853,13 +853,13 @@
   const refreshCardSurfaces = (root = document) => {
     initCardSpotlight(root);
     initQuickView(root);
+    initTaxonomyPills(root);
   };
 
   const syncNavigationState = (current) => {
     document.querySelectorAll("[data-nav]").forEach((link) => {
-      if (link.dataset.nav === current) {
-        link.setAttribute("aria-current", "page");
-      }
+      if (link.dataset.nav === current) link.setAttribute("aria-current", "page");
+      else link.removeAttribute("aria-current");
     });
   };
 
@@ -931,6 +931,7 @@
     const canonicalPath = (() => {
       if (baseName === "index") return "./";
       if (baseName === "palimpsests") return "./palimpsests.html";
+      if (detailEntry?.route && (current === "detail" || current === "project-rl")) return detailEntry.route;
       if (current === "project-rl" && queryId) return `./project-rl.html?id=${encodeURIComponent(queryId)}`;
       if (current === "detail" && queryId) return `./${baseName}.html?id=${encodeURIComponent(queryId)}`;
       return `./${pageName}`;

@@ -102,6 +102,19 @@
     `;
   };
 
+  const entryHrefFor = (item, options = {}) => {
+    if (options.href) return options.href;
+    if (!item) return "";
+    if (item.route) return item.route;
+    if (item.kind === "project") return `./project.html?id=${encodeURIComponent(item.id)}`;
+    if (item.kind === "collection") return `./collection.html?id=${encodeURIComponent(item.id)}`;
+    if (item.kind === "artefact" || item.kind === "researchLog") return `./artefact.html?id=${encodeURIComponent(item.id)}`;
+    if (item.kind === "program") return `./program.html?id=${encodeURIComponent(item.id)}`;
+    if (item.kind === "artist") return `./artist.html?id=${encodeURIComponent(item.id)}`;
+    if (item.kind === "channel") return `./channel.html?id=${encodeURIComponent(item.id)}`;
+    return "";
+  };
+
   const mediaFrom = (entry) => {
     const gallery = entry?.media?.gallery || [];
     if (!gallery.length) return null;
@@ -431,7 +444,7 @@
   };
 
   const projectHeroMedia = (item) => {
-    const media = isOrethSignature(item) ? orethBannerMedia : mediaFrom(item) || cardImageFor(item);
+    const media = isOrethSignature(item) ? orethBannerMedia : cardImageFor(item);
     if (!media) return "";
     return mediaFigureMarkup(media, item, "project-immersive__image");
   };
@@ -453,7 +466,7 @@
 
   const projectCard = (item) => `
     <article class="project-card" ${cardBaseAttrs(item)}>
-      ${item.kind === "project" ? `<a class="project-card__overlay-link" href="./project.html?id=${encodeURIComponent(item.id)}" aria-label="Open ${esc(item.title)} detail"></a>` : ""}
+      ${entryHrefFor(item) ? `<a class="project-card__overlay-link" href="${esc(entryHrefFor(item))}" aria-label="Open ${esc(item.title)} detail"></a>` : ""}
       <div class="project-card__top">
         <div>
           <p class="card__meta">${esc(item.type || catalog.taxonomies?.entityTypes?.[item.kind] || "PROJECT")}</p>
@@ -476,8 +489,8 @@
   `;
 
   const projectLandingCard = (item) => `
-    <article class="project-card${item.id === "oeil-de-meg" ? " project-card--oeil-de-meg" : ""}" data-project-detail-link="${esc(item.route || `./project.html?id=${encodeURIComponent(item.id)}`)}" tabindex="0" role="link" aria-label="Open ${esc(item.title)} detail" ${cardBaseAttrs(item)}>
-      <a class="project-card__overlay-link" href="${esc(item.route || `./project.html?id=${encodeURIComponent(item.id)}`)}" aria-label="Open ${esc(item.title)} detail"></a>
+    <article class="project-card${item.id === "oeil-de-meg" ? " project-card--oeil-de-meg" : ""}" data-project-detail-link="${esc(entryHrefFor(item))}" tabindex="0" role="link" aria-label="Open ${esc(item.title)} detail" ${cardBaseAttrs(item)}>
+      <a class="project-card__overlay-link" href="${esc(entryHrefFor(item))}" aria-label="Open ${esc(item.title)} detail"></a>
       <div class="project-card__top">
         <div>
           <p class="card__meta">${esc(item.category || item.type || "PROJECT")}</p>
@@ -496,7 +509,8 @@
   `;
 
   const archiveCard = (item) => `
-    <article class="archive-card" ${cardBaseAttrs(item)}>
+    <article class="archive-card" ${cardBaseAttrs(item)} ${cardLinkAttrs(entryHrefFor(item), `Open ${item.title}`)}>
+      ${cardOverlayLink(entryHrefFor(item), `Open ${item.title}`)}
       <div class="archive-card__header">
         <div class="archive-card__identity">
           <p class="card__meta">${esc(item.type || "ARCHIVE")}${item.category ? ` · ${esc(item.category)}` : ""}</p>
@@ -560,8 +574,8 @@
   `;
 
   const personCard = (item, options = {}) => `
-    <article class="project-card" ${cardBaseAttrs(item)} ${cardLinkAttrs(options.href, options.label || `Open ${item.title}`)}>
-      ${cardOverlayLink(options.href, options.label || `Open ${item.title}`)}
+    <article class="project-card" ${cardBaseAttrs(item)} ${cardLinkAttrs(entryHrefFor(item, options), options.label || `Open ${item.title}`)}>
+      ${cardOverlayLink(entryHrefFor(item, options), options.label || `Open ${item.title}`)}
       <div class="project-card__top">
         <div>
           <p class="card__meta">${esc(item.type || "ARTIST")}</p>
@@ -577,8 +591,8 @@
   `;
 
   const programCard = (item, options = {}) => `
-    <article class="program-card" ${cardBaseAttrs(item)} ${cardLinkAttrs(options.href, options.label || `Open ${item.title}`)}>
-      ${cardOverlayLink(options.href, options.label || `Open ${item.title}`)}
+    <article class="program-card" ${cardBaseAttrs(item)} ${cardLinkAttrs(entryHrefFor(item, options), options.label || `Open ${item.title}`)}>
+      ${cardOverlayLink(entryHrefFor(item, options), options.label || `Open ${item.title}`)}
       <div class="project-card__top">
         <div>
           <p class="card__meta">${esc(item.type || "PROGRAM")}</p>
@@ -593,7 +607,8 @@
   `;
 
   const channelCard = (item) => `
-    <article class="program-card" ${cardBaseAttrs(item)}>
+    <article class="program-card" ${cardBaseAttrs(item)} ${cardLinkAttrs(entryHrefFor(item), `Open ${item.title}`)}>
+      ${cardOverlayLink(entryHrefFor(item), `Open ${item.title}`)}
       <div class="project-card__top">
         <div>
           <p class="card__meta">${esc(item.type || "CHANNEL")}</p>
@@ -825,7 +840,10 @@
   };
 
   const latestArtefacts = () => {
-    const latest = (catalog.artefacts || []).slice(0, 3);
+    const latest = (catalog.artefacts || [])
+      .slice()
+      .sort((a, b) => entityDateValue(b) - entityDateValue(a))
+      .slice(0, 3);
     return `
       <section class="zone-card hero">
         <div class="section-head">

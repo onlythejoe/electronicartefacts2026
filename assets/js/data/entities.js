@@ -1310,7 +1310,7 @@ window.EA_ENTITIES = {
         folder: "./assets/media/projects/atypikhouse",
         gallery: [
           { src: "./assets/media/projects/atypikhouse/cover.svg", alt: "AtypikHouse dossier cover", caption: "Project dossier cover." },
-          { src: "./assets/media/projects/atypikhouse/atypikhouse-page.jpg", alt: "AtypikHouse landing page with logo", caption: "Landing page." },
+          { src: "./assets/media/projects/atypikhouse/atypikhouse-landing-page.jpg", alt: "AtypikHouse landing page with logo", caption: "Landing page." },
           { src: "./assets/media/projects/atypikhouse/atypikhouse-dashboard-home.jpg", alt: "AtypikHouse dashboard home view", caption: "Dashboard home." },
           { src: "./assets/media/projects/atypikhouse/atypikhouse-dashboard-ipad.jpg", alt: "AtypikHouse dashboard on a tablet", caption: "Tablet view." },
           { src: "./assets/media/projects/atypikhouse/atypikhouse-mobile-filters.jpg", alt: "AtypikHouse mobile filter interface", caption: "Filter flow." },

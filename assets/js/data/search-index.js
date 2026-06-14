@@ -24,7 +24,10 @@ window.EA_SEARCH = {
               ...(item.tags || []),
               ...(item.medium || []),
               ...(item.discipline || []),
-              ...(item.relatedResearchFields || item.relatedProjects || item.relatedArtefacts || []),
+              ...(item.relatedProjects || []),
+              ...(item.relatedArtefacts || []),
+              ...(item.relatedPrograms || []),
+              ...(item.relatedResearchFields || []),
               ...Object.values(item.relations || {}).flat(),
             ]
               .flat()

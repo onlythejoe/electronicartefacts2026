@@ -696,6 +696,34 @@
   const entityById = (id) => entityIndex[id] || null;
   const timelineFor = (id) => timelineIndex[id] || null;
   const activityFor = (id) => activityIndex[id] || [];
+  const pageRoutes = {
+    home: "./index.html",
+    index: "./index.html",
+    work: "./work.html",
+    projects: "./projects.html",
+    programs: "./programs.html",
+    research: "./research.html",
+    archive: "./archive.html",
+    about: "./about.html",
+    contact: "./contact.html",
+    search: "./search.html",
+  };
+  const labelFromSlug = (value) =>
+    String(value ?? "")
+      .replace(/[-_]+/g, " ")
+      .replace(/\b\w/g, (character) => character.toUpperCase());
+  const entryHref = (entry) => {
+    if (!entry) return "";
+    if (entry.href) return entry.href;
+    if (entry.kind === "page" && entry.id && pageRoutes[entry.id]) return pageRoutes[entry.id];
+    if (entry.kind === "collection") return `./collection.html?id=${encodeURIComponent(entry.id)}`;
+    if (entry.kind === "project") return entry.route || `./project.html?id=${encodeURIComponent(entry.id)}`;
+    if (entry.kind === "program") return `./program.html?id=${encodeURIComponent(entry.id)}`;
+    if (entry.kind === "artist") return `./artist.html?id=${encodeURIComponent(entry.id)}`;
+    if (entry.kind === "channel") return `./channel.html?id=${encodeURIComponent(entry.id)}`;
+    if (entry.kind === "artefact" || entry.kind === "researchLog") return `./artefact.html?id=${encodeURIComponent(entry.id)}`;
+    return `./entity.html?id=${encodeURIComponent(entry.id)}`;
+  };
   const resolveIds = (values) =>
     (values || [])
       .map((value) => {
@@ -704,7 +732,17 @@
         if (exact) return exact;
         const slug = slugify(value);
         const byTitle = titleIndex[slug];
-        return byTitle || { title: value, id: slug || value, kind: "reference" };
+        if (byTitle) return byTitle;
+        const pageHref = pageRoutes[slug];
+        if (pageHref) {
+          return {
+            id: slug,
+            title: labelFromSlug(value),
+            kind: "page",
+            href: pageHref,
+          };
+        }
+        return { title: value, id: slug || value, kind: "reference" };
       })
       .filter(Boolean);
 
@@ -774,7 +812,7 @@
                 <p class="card__meta">${esc(label)}</p>
                 <div class="link-row">
                   ${resolveIds(values)
-                    .map((entry) => `<a class="tag" href="./entity.html?id=${encodeURIComponent(entry.id)}">${esc(entry.title)}</a>`)
+                    .map((entry) => `<a class="tag" href="${esc(entryHref(entry))}">${esc(entry.title)}</a>`)
                     .join("")}
                 </div>
               </div>
@@ -791,9 +829,7 @@
     return panelShell(
       "Dependencies",
       null,
-      `<div class="link-row">${deps
-        .map((entry) => `<a class="tag" href="./entity.html?id=${encodeURIComponent(entry.id)}">${esc(entry.title)}</a>`)
-        .join("")}</div>`,
+      `<div class="link-row">${deps.map((entry) => `<a class="tag" href="${esc(entryHref(entry))}">${esc(entry.title)}</a>`).join("")}</div>`,
     );
   };
 
@@ -852,9 +888,7 @@
     return panelShell(
       "Research",
       null,
-      `<div class="link-row">${resolveIds(fields)
-        .map((entry) => `<a class="tag" href="./entity.html?id=${encodeURIComponent(entry.id)}">${esc(entry.title)}</a>`)
-        .join("")}</div>`,
+      `<div class="link-row">${resolveIds(fields).map((entry) => `<a class="tag" href="${esc(entryHref(entry))}">${esc(entry.title)}</a>`).join("")}</div>`,
     );
   };
 
@@ -880,7 +914,7 @@
                 <h3 class="card__title">${esc(entry.title)}</h3>
                 <p class="card__copy">${esc(entry.summary || entry.description || "")}</p>
                 <div class="link-row">
-                  <a class="tag" href="./entity.html?id=${encodeURIComponent(entry.id)}">Open</a>
+                  <a class="tag" href="${esc(entryHref(entry))}">Open</a>
                 </div>
               </article>
             `,
@@ -1218,7 +1252,7 @@
           <div class="link-row">
             ${resolveIds(networkItems)
               .slice(0, 8)
-              .map((entry) => `<a class="tag" href="./entity.html?id=${encodeURIComponent(entry.id)}">${esc(entry.title)}</a>`)
+              .map((entry) => `<a class="tag" href="${esc(entryHref(entry))}">${esc(entry.title)}</a>`)
               .join("")}
           </div>
         </article>
@@ -1350,7 +1384,8 @@
           ${rows
             .map(
               (entry) => {
-                const href = entry.entityId ? `./entity.html?id=${encodeURIComponent(entry.entityId)}` : "";
+                const entity = entry.entityId ? entityById(entry.entityId) : null;
+                const href = entity ? entryHref(entity) : "";
                 return `
                 <article class="panel panel--soft card-link-surface" ${cardLinkAttrs(href, `Open ${entry.title}`)}>
                   ${cardOverlayLink(href, `Open ${entry.title}`)}
@@ -1394,8 +1429,9 @@
   `;
 
   const searchState = { query: "", status: "all", kind: "all" };
-  const searchIndex = catalog.indexes?.search || [];
+  const getSearchIndex = () => catalog.indexes?.getSearchIndex?.() || catalog.indexes?.search || [];
   const searchResultsInnerMarkup = () => {
+    const searchIndex = getSearchIndex();
     const query = searchState.query;
     const status = searchState.status;
     const kind = searchState.kind;
@@ -1410,7 +1446,13 @@
       bucket.push(item);
       return acc;
     }, {});
-    const groupedResults = Object.entries(groups);
+    const groupedResults = Object.entries(groups).sort(([left], [right]) => {
+      const order = ["program", "project", "artefact", "researchLog", "researchField", "collection", "artist", "channel"];
+      const leftIndex = order.indexOf(left);
+      const rightIndex = order.indexOf(right);
+      if (leftIndex !== rightIndex) return (leftIndex === -1 ? order.length : leftIndex) - (rightIndex === -1 ? order.length : rightIndex);
+      return left.localeCompare(right);
+    });
 
     return groupedResults.length
       ? groupedResults
@@ -1418,7 +1460,7 @@
             ([kind, items]) => `
               <section class="zone-card hero">
                 <div class="section-head">
-                  <p class="eyebrow">${esc(kind)}</p>
+                  <p class="eyebrow">${esc(catalog.taxonomies?.entityTypes?.[kind] || kind.replace(/([a-z])([A-Z])/g, "$1 $2").toUpperCase())}</p>
                   <h2>${esc(items.length)} result(s)</h2>
                 </div>
                 <div class="card-grid card-grid--two">
@@ -1429,6 +1471,7 @@
                       if (entity.kind === "program") return programCard(entity);
                       if (entity.kind === "artist") return personCard(entity);
                       if (entity.kind === "channel") return channelCard(entity);
+                      if (entity.kind === "collection") return archiveCard(entity);
                       if (entity.kind === "artefact") return archiveCard(entity);
                       if (entity.kind === "researchLog") return archiveCard(entity);
                       return projectCard(entity);
@@ -2099,9 +2142,9 @@
 
   const load = async () => {
     const current = document.body.dataset.page;
-    syncNavigationState(current);
     syncSeoMeta({ current, entityById });
     await loadIncludes();
+    syncNavigationState(current);
     document.querySelectorAll("[data-zone]").forEach((zone, index) => {
       zone.dataset.zoneIndex = String(index + 1);
       zone.style.setProperty("--zone-index", String(index + 1));
