@@ -3466,9 +3466,9 @@ window.EA_SEARCH = {
           copy: "Album cycle carried by ORETH. A single full surface, no nested panels.",
           tags: homeCardPills(palimpsests),
           actions: [
-            { label: "Open project", href: "./palimpsests.html" },
-            { label: "Archive", href: "./archive.html" },
-            { label: "Contact", href: "./contact.html" },
+            { label: "Enter Palimpsests", href: "./palimpsests.html" },
+            { label: "Open Archive", href: "./archive.html" },
+            { label: "Start a Collaboration", href: "./contact.html" },
           ],
         })}
       </section>
@@ -3538,8 +3538,8 @@ window.EA_SEARCH = {
             </div>
             ${vasteEngineMarkup()}
             <div class="button-row button-row--compact vast-banner__actions">
-              <a class="button button--primary" href="https://www.vaste.space/" target="_blank" rel="noreferrer">Open VASTE</a>
-              <a class="button button--secondary" href="./research.html">Research</a>
+              <a class="button button--primary" href="https://www.vaste.space/" target="_blank" rel="noreferrer">Explore VASTE</a>
+              <a class="button button--secondary" href="./research.html">Enter Research</a>
             </div>
           </div>
         </article>
@@ -3579,7 +3579,7 @@ window.EA_SEARCH = {
               ],
               { limit: 2, compact: true },
             )}
-            ${linkRow({ label: "Projects", href: "./projects.html" }, [{ label: "Work archive", href: "./work.html" }])}
+            ${linkRow({ label: "Browse Projects", href: "./projects.html" }, [{ label: "Browse Work Archive", href: "./work.html" }])}
           </aside>
         </div>
         <div class="selected-works-panel__grid" role="list" aria-label="Selected works">
@@ -3595,8 +3595,8 @@ window.EA_SEARCH = {
           </div>
         </div>
         <div class="link-row selected-works-panel__links">
-          <a class="tag" href="./projects.html">Projects</a>
-          <a class="tag" href="./work.html">Work archive</a>
+          <a class="tag" href="./projects.html">Browse Projects</a>
+          <a class="tag" href="./work.html">Browse Work Archive</a>
         </div>
       </section>
     `;
@@ -3639,6 +3639,23 @@ window.EA_SEARCH = {
     `;
   };
 
+  const routeCard = (item = {}) => {
+    const href = item.href || "";
+    const target = item.target ? ` target="${esc(item.target)}" rel="noreferrer"` : "";
+    const label = item.ariaLabel || `${item.cta || "Open"} ${item.title || "destination"}`;
+    return `
+      <article class="panel panel--soft card-link-surface" ${href ? cardLinkAttrs(href, label) : ""}>
+        <p class="card__meta">${esc(item.kicker || "")}</p>
+        <h3 class="card__title">${esc(item.title || "")}</h3>
+        <p class="card__copy">${esc(item.copy || "")}</p>
+        ${item.reason ? `<p class="card__meta">Why it matters</p><p class="card__copy">${esc(item.reason)}</p>` : ""}
+        <div class="link-row">
+          ${href ? `<a class="tag" href="${esc(href)}"${target}>${esc(item.cta || "Open")}</a>` : ""}
+        </div>
+      </article>
+    `;
+  };
+
   window.EA_VIEW = {
     cardBaseAttrs,
     mediaFrom,
@@ -3674,6 +3691,7 @@ window.EA_SEARCH = {
     vasteBanner,
     featuredResearch,
     latestArtefacts,
+    routeCard,
   };
 })();
 
@@ -3681,6 +3699,24 @@ window.EA_SEARCH = {
 (function () {
   const catalog = window.EA_CATALOG || {};
   const { esc } = window.EA_UTILS;
+  const { routeCard } = window.EA_VIEW || {};
+  const entityIndex = catalog.indexes?.byId || {};
+  const page = document.body.dataset.page || "home";
+
+  const entityById = (id) => entityIndex[id] || null;
+
+  const navigationSection = ({ eyebrow, title, copy, cards = [] }) => `
+    <section class="zone-card hero">
+      <div class="section-head">
+        <p class="eyebrow">${esc(eyebrow)}</p>
+        <h2>${esc(title)}</h2>
+        <p class="lede">${esc(copy)}</p>
+      </div>
+      <div class="card-grid card-grid--two">
+        ${cards.map((card) => (routeCard ? routeCard(card) : "")).join("")}
+      </div>
+    </section>
+  `;
 
   const graphSurface = ({
     eyebrow,
@@ -3758,23 +3794,203 @@ window.EA_SEARCH = {
   `;
 
   const crossNavigation = () =>
-    graphSurface({
-      eyebrow: "ATLAS",
-      title: "A site held together by orbiting routes.",
-      copy: "Pages stay linked through the same frame: work, research, archive, contact and the external stack.",
-      coreLabel: catalog.ecosystem?.root || "Electronic Artefacts",
-      coreCopy: "Central node",
-      nodes: [
-        { label: "WORK", note: "Projects", href: "./work.html", x: "-12rem", y: "-7rem", z: "-18rem", angle: "28deg", length: "13rem" },
-        { label: "PROJECTS", note: "Routes", href: "./projects.html", x: "11rem", y: "-6rem", z: "16rem", angle: "-26deg", length: "12rem" },
-        { label: "PROGRAMS", note: "Stack", href: "./programs.html", x: "-15rem", y: "1rem", z: "8rem", angle: "6deg", length: "14rem" },
-        { label: "RESEARCH", note: "Fields", href: "./research.html", x: "14rem", y: "2rem", z: "-8rem", angle: "-8deg", length: "15rem" },
-        { label: "ARCHIVE", note: "Fragments", href: "./archive.html", x: "-9rem", y: "10rem", z: "12rem", angle: "-44deg", length: "11rem" },
-        { label: "ABOUT", note: "Lineage", href: "./about.html", x: "9rem", y: "11rem", z: "-14rem", angle: "-54deg", length: "10rem" },
-        { label: "CONTACT", note: "Links", href: "./contact.html", x: "0rem", y: "-14rem", z: "6rem", angle: "90deg", length: "14rem" },
-        { label: "VASTE", note: "External", href: "https://www.vaste.space/", target: "_blank", x: "0rem", y: "14rem", z: "-4rem", angle: "-90deg", length: "13rem", emphasis: true },
-      ],
-    });
+    (() => {
+      const id = new URLSearchParams(window.location.search).get("id");
+      const item = id ? entityById(id) : null;
+
+      if (page === "home") {
+        return navigationSection({
+          eyebrow: "CONTINUE EXPLORING",
+          title: "Use the ecosystem as a map, not a grid.",
+          copy: "The next useful surface depends on what you came here for. These routes keep the structure intact while making the next move explicit.",
+          cards: [
+            { kicker: "Home", title: "Projects", copy: "Move into public works and collaborations.", reason: "Best if you want to see what the studio makes.", cta: "Browse Projects", href: "./projects.html" },
+            { kicker: "Home", title: "Research", copy: "Enter the theoretical and experimental branches.", reason: "Best if you want to understand the thinking behind the work.", cta: "Enter Research", href: "./research.html" },
+            { kicker: "Home", title: "Programs", copy: "Inspect the software systems and runtime stack.", reason: "Best if you want the operational core.", cta: "View Programs", href: "./programs.html" },
+            { kicker: "Home", title: "Archive", copy: "Browse traces, fragments and historical material.", reason: "Best if you want context and depth.", cta: "Open Archive", href: "./archive.html" },
+          ],
+        });
+      }
+
+      if (page === "work") {
+        return navigationSection({
+          eyebrow: "CONTINUE EXPLORING",
+          title: "From client-facing work to the wider ecosystem.",
+          copy: "Work is the applied surface. These routes explain what sits around it.",
+          cards: [
+            { kicker: "Next", title: "Projects", copy: "Compare applied work with artistic translations.", reason: "Useful if you want the broader project field.", cta: "Browse Projects", href: "./projects.html" },
+            { kicker: "Next", title: "About", copy: "Understand how the ecosystem is organized.", reason: "Useful if you want the trunk before the branches.", cta: "Understand the Ecosystem", href: "./about.html" },
+            { kicker: "Next", title: "Contact", copy: "Start a commission or collaboration.", reason: "Useful if you already know you want to engage.", cta: "Start a Collaboration", href: "./contact.html" },
+            { kicker: "Next", title: "Archive", copy: "See the memory layer behind the work.", reason: "Useful if you want background and precedent.", cta: "Open Archive", href: "./archive.html" },
+          ],
+        });
+      }
+
+      if (page === "projects") {
+        return navigationSection({
+          eyebrow: "CONTINUE EXPLORING",
+          title: "Projects sit between research, production and archive.",
+          copy: "Use these routes to move from the project map to the layers around it.",
+          cards: [
+            { kicker: "Next", title: "Work", copy: "Return to the studio and client-facing layer.", reason: "Best if you need the applied side.", cta: "Return to Work", href: "./work.html" },
+            { kicker: "Next", title: "Research", copy: "See the investigations that feed the projects.", reason: "Best if you want the thinking layer.", cta: "Enter Research", href: "./research.html" },
+            { kicker: "Next", title: "Archive", copy: "Inspect older fragments and traces.", reason: "Best if you want depth and continuity.", cta: "Open Archive", href: "./archive.html" },
+            { kicker: "Next", title: "Contact", copy: "Start a similar project or ask for a collaboration.", reason: "Best if you want to initiate a brief.", cta: "Start a Collaboration", href: "./contact.html" },
+          ],
+        });
+      }
+
+      if (page === "programs") {
+        return navigationSection({
+          eyebrow: "CONTINUE EXPLORING",
+          title: "Programs connect the runtime to the rest of the ecosystem.",
+          copy: "Use these routes to move from the software stack to its use, context and lineage.",
+          cards: [
+            { kicker: "Next", title: "VASTE", copy: "Go to the core runtime and strategic spine.", reason: "The main program explains the wider stack.", cta: "Explore VASTE", href: "./vaste.html" },
+            { kicker: "Next", title: "Research", copy: "See the theories and methods that inform the stack.", reason: "Useful when you want the conceptual layer.", cta: "Enter Research", href: "./research.html" },
+            { kicker: "Next", title: "About", copy: "Understand how programs fit into the ecosystem.", reason: "Useful for orientation and collaboration.", cta: "Understand the Ecosystem", href: "./about.html" },
+            { kicker: "Next", title: "Contact", copy: "Discuss a program, partnership or implementation.", reason: "Useful when the stack becomes a brief.", cta: "Start a Collaboration", href: "./contact.html" },
+          ],
+        });
+      }
+
+      if (page === "research") {
+        return navigationSection({
+          eyebrow: "CONTINUE EXPLORING",
+          title: "Research is the source of the ecosystem's branches.",
+          copy: "These routes show where the investigations go once they leave the page.",
+          cards: [
+            { kicker: "Next", title: "Programs", copy: "See the systems that grow out of research.", reason: "Useful if you want the operational expression.", cta: "View Programs", href: "./programs.html" },
+            { kicker: "Next", title: "Projects", copy: "See how research translates into public works.", reason: "Useful if you want outputs rather than notes.", cta: "Browse Projects", href: "./projects.html" },
+            { kicker: "Next", title: "Archive", copy: "Inspect historical fragments and prior lines.", reason: "Useful for lineage and context.", cta: "Open Archive", href: "./archive.html" },
+            { kicker: "Next", title: "About", copy: "Return to the trunk and system model.", reason: "Useful when you need the ecosystem map.", cta: "Understand the Ecosystem", href: "./about.html" },
+          ],
+        });
+      }
+
+      if (page === "archive") {
+        return navigationSection({
+          eyebrow: "CONTINUE EXPLORING",
+          title: "The archive is a memory layer, not an endpoint.",
+          copy: "Use these routes to move from fragments into the living ecosystem.",
+          cards: [
+            { kicker: "Next", title: "Projects", copy: "See the current public-facing works.", reason: "Useful if you want what is active now.", cta: "Browse Projects", href: "./projects.html" },
+            { kicker: "Next", title: "Research", copy: "Go back to the working investigations.", reason: "Useful if you want the source material.", cta: "Enter Research", href: "./research.html" },
+            { kicker: "Next", title: "Contact", copy: "Ask for a collaboration or specific trace.", reason: "Useful when the archive leads to action.", cta: "Start a Collaboration", href: "./contact.html" },
+            { kicker: "Next", title: "About", copy: "Re-read the ecosystem structure.", reason: "Useful if you need the trunk again.", cta: "Understand the Ecosystem", href: "./about.html" },
+          ],
+        });
+      }
+
+      if (page === "about") {
+        return navigationSection({
+          eyebrow: "CONTINUE EXPLORING",
+          title: "After the ecosystem model, follow the branches.",
+          copy: "These pages show the parts of the system that matter most once the trunk is clear.",
+          cards: [
+            { kicker: "Next", title: "Research", copy: "See where investigations begin.", reason: "Useful when you want the conceptual source.", cta: "Enter Research", href: "./research.html" },
+            { kicker: "Next", title: "Programs", copy: "Inspect the software systems and runtimes.", reason: "Useful when you want the operational layer.", cta: "View Programs", href: "./programs.html" },
+            { kicker: "Next", title: "Projects", copy: "See how the system becomes public work.", reason: "Useful when you want outputs and proof.", cta: "Browse Projects", href: "./projects.html" },
+            { kicker: "Next", title: "Contact", copy: "Move from orientation to direct conversation.", reason: "Useful once the ecosystem makes sense.", cta: "Start a Collaboration", href: "./contact.html" },
+          ],
+        });
+      }
+
+      if (page === "contact") {
+        return navigationSection({
+          eyebrow: "CONTINUE EXPLORING",
+          title: "Contact is a routing point, not an ending.",
+          copy: "Choose the part of the ecosystem that matches what you need to discuss next.",
+          cards: [
+            { kicker: "Next", title: "Work", copy: "See the applied and client-facing side again.", reason: "Useful if you want service context.", cta: "See Client Work", href: "./work.html" },
+            { kicker: "Next", title: "Projects", copy: "Review the broader public project map.", reason: "Useful if you want examples and routes.", cta: "Browse Projects", href: "./projects.html" },
+            { kicker: "Next", title: "VASTE", copy: "Move into the runtime and strategic spine.", reason: "Useful if the conversation is about systems.", cta: "Explore VASTE", href: "./vaste.html" },
+            { kicker: "Next", title: "About", copy: "Revisit the ecosystem structure.", reason: "Useful if you want context before reaching out.", cta: "Understand the Ecosystem", href: "./about.html" },
+          ],
+        });
+      }
+
+      if (page === "vaste") {
+        return navigationSection({
+          eyebrow: "CONTINUE EXPLORING",
+          title: "VASTE sits at the center of the stack.",
+          copy: "Use these routes to move from the runtime into its surrounding layers.",
+          cards: [
+            { kicker: "Next", title: "Programs", copy: "See the wider software system family.", reason: "Useful if you want the stack around the core.", cta: "View Programs", href: "./programs.html" },
+            { kicker: "Next", title: "Research", copy: "See the investigations that feed the runtime.", reason: "Useful if you want the methods behind it.", cta: "Enter Research", href: "./research.html" },
+            { kicker: "Next", title: "About", copy: "Rebuild the ecosystem model around the runtime.", reason: "Useful if you need the bigger picture.", cta: "Understand the Ecosystem", href: "./about.html" },
+            { kicker: "Next", title: "Contact", copy: "Discuss the runtime or a related partnership.", reason: "Useful if VASTE is the reason you are here.", cta: "Start a Collaboration", href: "./contact.html" },
+          ],
+        });
+      }
+
+      if (page === "palimpsests") {
+        return navigationSection({
+          eyebrow: "CONTINUE EXPLORING",
+          title: "Palimpsests connects artistic work to archive and research.",
+          copy: "Use these routes to move between the album, its memory layer and the broader studio system.",
+          cards: [
+            { kicker: "Next", title: "Archive", copy: "See the traces, fragments and related material.", reason: "Useful if you want the work's historical context.", cta: "Open Archive", href: "./archive.html" },
+            { kicker: "Next", title: "Research", copy: "Revisit the conceptual branches behind the work.", reason: "Useful if you want the source ideas.", cta: "Enter Research", href: "./research.html" },
+            { kicker: "Next", title: "Work", copy: "Move back into the studio and project catalogue.", reason: "Useful if you want the wider practice.", cta: "See Client Work", href: "./work.html" },
+            { kicker: "Next", title: "Contact", copy: "Discuss collaboration, publication or release.", reason: "Useful if the work suggests a new one.", cta: "Start a Collaboration", href: "./contact.html" },
+          ],
+        });
+      }
+
+      if (item && item.kind === "project") {
+        const projectCards = {
+          "oeil-de-meg": [
+            { kicker: "Next", title: "Work", copy: "Return to the client-facing catalogue.", reason: "Useful if you want the broader service layer.", cta: "See Client Work", href: "./work.html" },
+            { kicker: "Next", title: "Projects", copy: "Compare with other public project routes.", reason: "Useful if you want adjacent examples.", cta: "Browse Projects", href: "./projects.html" },
+            { kicker: "Next", title: "Archive", copy: "See traces, drafts and related material.", reason: "Useful for precedent and context.", cta: "Open Archive", href: "./archive.html" },
+            { kicker: "Next", title: "Contact", copy: "Start a similar commission or collaboration.", reason: "Useful when the project becomes a brief.", cta: "Start a Collaboration", href: "./contact.html" },
+          ],
+          vestiges: [
+            { kicker: "Next", title: "Research", copy: "See the theoretical branches around the universe.", reason: "Useful if you want the conceptual source.", cta: "Enter Research", href: "./research.html" },
+            { kicker: "Next", title: "Archive", copy: "See the wider memory field around the project.", reason: "Useful if you want contextual material.", cta: "Open Archive", href: "./archive.html" },
+            { kicker: "Next", title: "Projects", copy: "Return to the public project constellation.", reason: "Useful if you want to compare forms.", cta: "Browse Projects", href: "./projects.html" },
+            { kicker: "Next", title: "Contact", copy: "Discuss a related narrative or publication.", reason: "Useful if the project should expand.", cta: "Start a Collaboration", href: "./contact.html" },
+          ],
+          atypikhouse: [
+            { kicker: "Next", title: "Work", copy: "See the studio layer that houses applied work.", reason: "Useful if you want service context.", cta: "See Client Work", href: "./work.html" },
+            { kicker: "Next", title: "Programs", copy: "Understand the software systems behind the surface.", reason: "Useful if you want the technical layer.", cta: "View Programs", href: "./programs.html" },
+            { kicker: "Next", title: "Projects", copy: "Compare with related project routes.", reason: "Useful if you want adjacent case studies.", cta: "Browse Projects", href: "./projects.html" },
+            { kicker: "Next", title: "Contact", copy: "Start a similar product or system brief.", reason: "Useful if this is the model you need.", cta: "Start a Collaboration", href: "./contact.html" },
+          ],
+          unionmob: [
+            { kicker: "Next", title: "Programs", copy: "See the software stack and runtime layer.", reason: "Useful if you want the system backbone.", cta: "View Programs", href: "./programs.html" },
+            { kicker: "Next", title: "Research", copy: "Inspect the investigations that inform it.", reason: "Useful if you want the conceptual layer.", cta: "Enter Research", href: "./research.html" },
+            { kicker: "Next", title: "Work", copy: "Review the studio and client-facing layer.", reason: "Useful if you want service context.", cta: "See Client Work", href: "./work.html" },
+            { kicker: "Next", title: "Contact", copy: "Discuss a platform or coordination system.", reason: "Useful if the project should be extended.", cta: "Start a Collaboration", href: "./contact.html" },
+          ],
+        };
+        const cards = projectCards[item.id] || [
+          { kicker: "Next", title: "Work", copy: "Move back to the studio layer.", reason: "Useful if you want the project catalogue.", cta: "See Client Work", href: "./work.html" },
+          { kicker: "Next", title: "Projects", copy: "Browse the broader project map.", reason: "Useful if you want adjacent examples.", cta: "Browse Projects", href: "./projects.html" },
+          { kicker: "Next", title: "Archive", copy: "Open traces and related material.", reason: "Useful for historical context.", cta: "Open Archive", href: "./archive.html" },
+          { kicker: "Next", title: "Contact", copy: "Start a similar collaboration.", reason: "Useful if this project should lead to another.", cta: "Start a Collaboration", href: "./contact.html" },
+        ];
+        return navigationSection({
+          eyebrow: "CONTINUE EXPLORING",
+          title: `${item.title} sits inside a larger ecosystem.`,
+          copy: "Use these routes to move to the layers that sit around this project.",
+          cards,
+        });
+      }
+
+      return navigationSection({
+        eyebrow: "CONTINUE EXPLORING",
+        title: "A site held together by orbiting routes.",
+        copy: "Pages stay linked through the same frame: work, research, archive, contact and the external stack.",
+        cards: [
+          { kicker: "Core", title: "Work", copy: "Projects, music and technology.", reason: "The studio layer and applied outcomes.", cta: "Return to Work", href: "./work.html" },
+          { kicker: "Core", title: "Projects", copy: "Project landing and detail routes.", reason: "The public project constellation.", cta: "Browse Projects", href: "./projects.html" },
+          { kicker: "Core", title: "Programs", copy: "All visible software programs.", reason: "The runtime and systems layer.", cta: "View Programs", href: "./programs.html" },
+          { kicker: "Core", title: "Research", copy: "Program, fields and notes.", reason: "The conceptual and experimental layer.", cta: "Enter Research", href: "./research.html" },
+        ],
+      });
+    })();
 
   const uxSurface = (eyebrow, title, copy, metrics = [], links = []) =>
     graphSurface({
@@ -5452,6 +5668,7 @@ window.EA_SEARCH = {
     vasteBanner,
     featuredResearch,
     latestArtefacts,
+    routeCard,
   } = window.EA_VIEW;
   const { graphSurface, crossNavigation, uxSurface, nodesFromItems, ecosystemExplorer, startGraphSurfaceAnimation, pageLens } = window.EA_SURFACE;
   const indexes = catalog.indexes || {};
@@ -5876,76 +6093,64 @@ window.EA_SEARCH = {
 
   const aboutDivisions = [
     {
-      id: "research-development",
-      href: "#research-development",
-      nodeLabel: "R&D",
-      meta: "Research & Development",
-      title: "Emerging technologies and speculative futures.",
-      copy: "Electronic Artefacts Research Division investigates emerging technologies, digital systems, artificial intelligence, creative workflows, generative media and speculative futures. The objective is not only to study technologies, but to understand how they can shape new forms of expression, collaboration and interaction.",
-      chips: ["White papers", "Prototypes", "Experiments", "Datasets", "Frameworks", "Publications", "Creative research programs"],
+      id: "about-research",
+      href: "#about-research",
+      nodeLabel: "RESEARCH",
+      meta: "Source layer",
+      title: "Investigations, notes and hypotheses.",
+      copy: "Research produces the concepts, tests and observations that feed the rest of the ecosystem.",
+      chips: ["Notes", "Tests", "Methods", "Hypotheses", "Branches"],
       x: "-15rem",
       y: "-8rem",
       z: "-16rem",
     },
     {
-      id: "software-systems",
-      href: "#software-systems",
-      nodeLabel: "SYSTEMS",
-      meta: "Software & Systems",
-      title: "Creative software and digital infrastructures.",
-      copy: "Electronic Artefacts develops software, digital infrastructures and experimental platforms. Projects range from internal tools and creative applications to larger-scale systems designed for communities, creators and organizations.",
-      chips: ["Creative software", "Artificial intelligence", "Data systems", "Digital archives", "Web platforms", "Interactive experiences", "Automation systems", "Emerging interfaces"],
+      id: "about-programs",
+      href: "#about-programs",
+      nodeLabel: "PROGRAMS",
+      meta: "System layer",
+      title: "Software systems and reusable engines.",
+      copy: "Programs turn research into operational logic, runtimes and internal frameworks.",
+      chips: ["Runtime", "Systems", "Logic", "Infrastructure", "Engines"],
       x: "15rem",
-      y: "-9rem",
+      y: "-8rem",
       z: "16rem",
     },
     {
-      id: "creative-studio",
-      href: "#creative-studio",
-      nodeLabel: "STUDIO",
-      meta: "Creative Studio",
-      title: "Design and production for brands, artists and organizations.",
-      copy: "The studio provides creative direction, design and production services across branding, visual identity, web design, user experience, motion design, creative strategy, storytelling and digital experiences.",
-      chips: ["Branding", "Visual identity", "Web design", "User experience", "Motion design", "Creative strategy", "Storytelling", "Digital experiences"],
-      x: "-17rem",
-      y: "2rem",
+      id: "about-projects",
+      href: "#about-projects",
+      nodeLabel: "PROJECTS",
+      meta: "Public layer",
+      title: "Works, commissions and translated outputs.",
+      copy: "Projects are the public forms that show how the system becomes visible to others.",
+      chips: ["Works", "Commissions", "Translations", "Releases", "Client outputs"],
+      x: "-16rem",
+      y: "5rem",
       z: "10rem",
     },
     {
-      id: "communication-strategy",
-      href: "#communication-strategy",
-      nodeLabel: "STRATEGY",
-      meta: "Communication & Strategy",
-      title: "Complex ideas turned into clear narratives.",
-      copy: "Electronic Artefacts helps organizations define, structure and communicate their ideas through communication consulting, content strategy, editorial design, campaign development, digital communication, audience building and creative marketing.",
-      chips: ["Communication consulting", "Content strategy", "Editorial design", "Campaign development", "Digital communication", "Audience building", "Creative marketing"],
-      x: "17rem",
-      y: "3rem",
+      id: "about-archive",
+      href: "#about-archive",
+      nodeLabel: "ARCHIVE",
+      meta: "Memory layer",
+      title: "Traces, fragments and historic material.",
+      copy: "Archive keeps the ecosystem legible over time and allows the cycle to continue.",
+      chips: ["Fragments", "Releases", "History", "Memory", "Context"],
+      x: "16rem",
+      y: "5rem",
       z: "-10rem",
     },
     {
-      id: "production-publishing",
-      href: "#production-publishing",
-      nodeLabel: "PUBLISH",
-      meta: "Production & Publishing",
-      title: "Music, audiovisual work and immersive releases.",
-      copy: "The label produces and releases music, audiovisual works, digital artefacts, experimental publications and immersive experiences. Projects may be developed internally or in collaboration with external artists, researchers, designers and technologists.",
-      chips: ["Music", "Audiovisual works", "Digital artefacts", "Experimental publications", "Immersive experiences"],
-      x: "-10rem",
-      y: "14rem",
-      z: "12rem",
-    },
-    {
-      id: "vision-statement",
-      href: "#about-vision",
-      nodeLabel: "VISION",
-      meta: "Philosophy & Vision",
-      title: "Design systems. Create artefacts. Shape futures.",
-      copy: "The long-term ambition is to become a research laboratory, a software company, a creative agency, a cultural publisher and a production label united by a single mission.",
-      chips: ["Research laboratory", "Software company", "Creative agency", "Cultural publisher", "Production label"],
-      x: "10rem",
-      y: "14rem",
-      z: "-12rem",
+      id: "about-vaste",
+      href: "./vaste.html",
+      nodeLabel: "VASTE",
+      meta: "Core runtime",
+      title: "The central runtime that links the stack.",
+      copy: "VASTE is the core program that informs the system logic behind programs, research and related projects.",
+      chips: ["Runtime", "Core", "Graph systems", "Coordination", "Knowledge"],
+      x: "0rem",
+      y: "16rem",
+      z: "-2rem",
       emphasis: true,
     },
   ];
@@ -5954,9 +6159,9 @@ window.EA_SEARCH = {
     graphSurface({
       eyebrow: "ECOSYSTEM VIEW",
       title: "Electronic Artefacts as an evolving ecosystem.",
-      copy: "Research, software, design, communication and publishing stay connected as one system.",
+      copy: "Research, programs, projects and archive stay linked as one trunk with multiple public surfaces.",
       coreLabel: catalog.ecosystem?.root || "Electronic Artefacts",
-      coreCopy: "Evolving ecosystem",
+      coreCopy: "Research → Programs → Projects → Archive",
       nodes: aboutDivisions.map((division) => ({
         label: division.nodeLabel,
         note: division.meta,
@@ -5968,8 +6173,8 @@ window.EA_SEARCH = {
       })),
       actions: [
         { label: "Overview", href: "#about-overview" },
-        { label: "Divisions", href: "#about-divisions" },
-        { label: "Philosophy", href: "#about-philosophy" },
+        { label: "Layers", href: "#about-layers" },
+        { label: "Entities", href: "#about-entities" },
       ],
     });
 
@@ -5978,63 +6183,125 @@ window.EA_SEARCH = {
       <section class="zone-card hero" id="about-overview">
         <div class="section-head">
           <p class="eyebrow">ABOUT</p>
-          <h2>What is Electronic Artefacts?</h2>
-          <p class="lede">Electronic Artefacts is an independent creative technology studio operating across research, software development, digital design, communication and artistic production.</p>
+          <h2>The trunk before the branches.</h2>
+          <p class="lede">Electronic Artefacts is a creative systems ecosystem. Research feeds programs, programs shape projects, and projects accumulate into archive.</p>
         </div>
         <div class="split">
           <article class="panel panel--soft">
-            <p class="card__meta">Overview</p>
-            <p class="card__copy">Structured as an evolving ecosystem, Electronic Artefacts develops tools, systems, experiences and cultural projects at the intersection of technology, creativity and human experience.</p>
-            <p class="card__copy">Part research laboratory, part software studio, part creative agency and part production label, the organization explores how ideas move from concept to system, from system to artefact, and from artefact to culture.</p>
+            <p class="card__meta">How it works</p>
+            <p class="card__copy">Research produces methods and hypotheses. Programs turn those methods into reusable systems. Projects translate the systems into public works and client outcomes. Archive preserves the traces so the cycle remains legible.</p>
+            <p class="card__copy">The project is not a conventional agency because the output is not a service menu. It is a system that can express itself as software, research, cultural production and memory.</p>
           </article>
           <article class="panel panel--soft">
-            <p class="card__meta">Operating model</p>
-            <p class="card__copy">Every project is treated as a system where design, narrative and technology work together.</p>
-            ${tagRow(["Research", "Software", "Design", "Communication", "Publishing"], { compact: true })}
-            <p class="card__copy">The result is a single studio language that can produce research outputs, software platforms, creative services and public-facing releases without fragmenting the underlying architecture.</p>
+            <p class="card__meta">The cycle</p>
+            <h3 class="card__title">Research → Programs → Projects → Archive</h3>
+            <p class="card__copy">That is the trunk. Everything else is a branch, a manifestation or a trace.</p>
+            ${tagRow(["Research", "Programs", "Projects", "Archive"], { compact: true })}
+            <div class="link-row">
+              <a class="tag" href="./research.html">Enter Research</a>
+              <a class="tag" href="./programs.html">View Programs</a>
+              <a class="tag" href="./projects.html">Browse Projects</a>
+              <a class="tag" href="./archive.html">Open Archive</a>
+            </div>
           </article>
         </div>
       </section>
 
-      <section class="zone-card hero" id="about-divisions">
+      <section class="zone-card hero" id="about-layers">
         <div class="section-head">
-          <p class="eyebrow">OUR DIVISIONS</p>
-          <h2>Research, systems, studio, strategy and publishing.</h2>
-          <p class="lede">Each division has a clear role, but all of them feed the same ecosystem.</p>
+          <p class="eyebrow">ECOSYSTEM</p>
+          <h2>The four operating layers.</h2>
+          <p class="lede">Each layer has a distinct role. None of them works alone.</p>
         </div>
         <div class="network-grid">
-          ${aboutDivisions
-            .map(
-              (division) => `
-                <article class="panel panel--soft" id="${esc(division.id)}">
-                  <p class="card__meta">${esc(division.meta)}</p>
-                  <h3 class="card__title">${esc(division.title)}</h3>
-                  <p class="card__copy">${esc(division.copy)}</p>
-                  ${tagRow(division.chips, { compact: true })}
-                </article>
-              `,
-            )
-            .join("")}
+          <article class="panel panel--soft" id="about-research">
+            <p class="card__meta">Research</p>
+            <h3 class="card__title">Investigations and hypotheses.</h3>
+            <p class="card__copy">Research produces the questions, references and experiments that define the next move.</p>
+            ${tagRow(["Notes", "Tests", "Methods", "Branches"], { compact: true })}
+            <div class="link-row"><a class="tag" href="./research.html">Enter Research</a></div>
+          </article>
+          <article class="panel panel--soft" id="about-programs">
+            <p class="card__meta">Programs</p>
+            <h3 class="card__title">Reusable systems and runtimes.</h3>
+            <p class="card__copy">Programs turn research into infrastructure that can be used again in other contexts.</p>
+            ${tagRow(["Runtime", "Systems", "Infrastructure", "Engines"], { compact: true })}
+            <div class="link-row"><a class="tag" href="./programs.html">View Programs</a></div>
+          </article>
+          <article class="panel panel--soft" id="about-projects">
+            <p class="card__meta">Projects</p>
+            <h3 class="card__title">Public works and commissions.</h3>
+            <p class="card__copy">Projects translate the internal system into work that can be seen, used and published.</p>
+            ${tagRow(["Works", "Commissions", "Translations", "Releases"], { compact: true })}
+            <div class="link-row"><a class="tag" href="./projects.html">Browse Projects</a></div>
+          </article>
+          <article class="panel panel--soft" id="about-archive">
+            <p class="card__meta">Archive</p>
+            <h3 class="card__title">Traces, fragments and memory.</h3>
+            <p class="card__copy">Archive keeps the structure visible over time and makes older layers available again.</p>
+            ${tagRow(["Fragments", "History", "Context", "Memory"], { compact: true })}
+            <div class="link-row"><a class="tag" href="./archive.html">Open Archive</a></div>
+          </article>
+        </div>
+      </section>
+
+      <section class="zone-card hero" id="about-entities">
+        <div class="section-head">
+          <p class="eyebrow">NAMED ENTITIES</p>
+          <h2>How the named entities fit.</h2>
+          <p class="lede">VASTE, Forge, Palimpsests, Vestiges and client work each occupy a different place in the same structure.</p>
+        </div>
+        <div class="card-grid card-grid--two">
+          <article class="panel panel--soft">
+            <p class="card__meta">VASTE</p>
+            <h3 class="card__title">Core runtime.</h3>
+            <p class="card__copy">The central program that anchors the stack and informs how systems are modeled.</p>
+            <div class="link-row"><a class="tag" href="./vaste.html">Explore VASTE</a></div>
+          </article>
+          <article class="panel panel--soft">
+            <p class="card__meta">Forge</p>
+            <h3 class="card__title">Production system.</h3>
+            <p class="card__copy">The production layer that turns shared logic into multiple families of outputs.</p>
+            <div class="link-row"><a class="tag" href="./program.html?id=forge">View Forge</a></div>
+          </article>
+          <article class="panel panel--soft">
+            <p class="card__meta">Palimpsests</p>
+            <h3 class="card__title">Artistic translation.</h3>
+            <p class="card__copy">The album cycle where theory becomes music, fragments and narrative residue.</p>
+            <div class="link-row"><a class="tag" href="./palimpsests.html">Enter Palimpsests</a></div>
+          </article>
+          <article class="panel panel--soft">
+            <p class="card__meta">Vestiges</p>
+            <h3 class="card__title">Narrative extension.</h3>
+            <p class="card__copy">A speculative project frame that expands the same logic into a broader world.</p>
+            <div class="link-row"><a class="tag" href="./project.html?id=vestiges">Open Vestiges</a></div>
+          </article>
+          <article class="panel panel--soft">
+            <p class="card__meta">Client work</p>
+            <h3 class="card__title">Applied surfaces.</h3>
+            <p class="card__copy">External commissions like L’Œil de Meg and AtypikHouse show the system in use.</p>
+            <div class="link-row"><a class="tag" href="./work.html">See Client Work</a></div>
+          </article>
         </div>
       </section>
 
       <section class="zone-card hero" id="about-philosophy">
         <div class="section-head">
           <p class="eyebrow">PHILOSOPHY</p>
-          <h2>Systems shape culture.</h2>
-          <p class="lede">The studio works from the observation that modern culture is increasingly shaped by systems.</p>
+          <h2>One language, many forms.</h2>
+          <p class="lede">The same logic can appear as a runtime, a work, a label release or an archive entry.</p>
         </div>
         <div class="split">
           <article class="panel panel--soft">
-            <p class="card__meta">Philosophy</p>
-            <p class="card__copy">Software, networks, algorithms, archives, interfaces and media infrastructures influence how we create, communicate and remember. Rather than treating technology and creativity as separate disciplines, Electronic Artefacts explores the space where they become one.</p>
-            <p class="card__copy">The goal is to build meaningful systems, create lasting artefacts and contribute to the cultural landscape of the emerging digital era.</p>
+            <p class="card__meta">Principle</p>
+            <p class="card__copy">Electronic Artefacts treats systems as cultural material. The point is not to flatten the project into a service business, but to keep one conceptual core across multiple public forms.</p>
+            <p class="card__copy">That is why the ecosystem can hold research, software, projects, archive and production without losing continuity.</p>
           </article>
-          <article class="panel panel--soft" id="about-vision">
+          <article class="panel panel--soft">
             <p class="card__meta">Vision</p>
-            <p class="card__copy">Long term, Electronic Artefacts aims to become a research laboratory, a software company, a creative agency, a cultural publisher and a production label united by a single mission.</p>
             <p class="card__copy">Design systems. Create artefacts. Shape futures.</p>
-            ${tagRow(["Research laboratory", "Software company", "Creative agency", "Cultural publisher", "Production label"], { compact: true })}
+            <p class="card__copy">The phrase works because it describes a pipeline, not a slogan.</p>
+            ${tagRow(["Research", "Programs", "Projects", "Archive", "Production"], { compact: true })}
           </article>
         </div>
       </section>
@@ -6719,7 +6986,7 @@ window.EA_SEARCH = {
     const signatureActions = (() => {
       const actions = [...primaryLinks.slice(0, 1)];
       if (item.kind === "project") {
-        actions.push({ label: "RL", href: `./project-rl.html?id=${encodeURIComponent(item.id)}` });
+        actions.push({ label: "View Project Line", href: `./project-rl.html?id=${encodeURIComponent(item.id)}` });
         actions.push({ label: "Archive", href: "./archive.html" });
       } else if (item.kind === "artist") {
         actions.push({ label: "Work", href: "./work.html" });
@@ -6732,7 +6999,7 @@ window.EA_SEARCH = {
     })();
     const heroActions = [
       ...primaryLinks.slice(0, 1),
-      ...(item.kind === "project" ? [{ label: "RL", href: `./project-rl.html?id=${encodeURIComponent(item.id)}` }] : []),
+      ...(item.kind === "project" ? [{ label: "View Project Line", href: `./project-rl.html?id=${encodeURIComponent(item.id)}` }] : []),
     ];
     const detailIntro = item.kind === "program" ? programSpecificPanels(item) : "";
     const specificPanels = projectSpecificPanels(item);
@@ -7107,6 +7374,108 @@ window.EA_SEARCH = {
   const renderVasteBanner = () => vasteBanner();
   const renderFeaturedResearch = () => featuredResearch();
   const renderLatest = () => latestArtefacts();
+  const orientationSection = ({ eyebrow, title, copy, cards }) => `
+    <section class="zone-card hero">
+      <div class="section-head">
+        <p class="eyebrow">${esc(eyebrow)}</p>
+        <h2>${esc(title)}</h2>
+        <p class="lede">${esc(copy)}</p>
+      </div>
+      <div class="card-grid card-grid--two">
+        ${cards.map((card) => routeCard(card)).join("")}
+      </div>
+    </section>
+  `;
+
+  const renderHomeOrientation = () =>
+    orientationSection({
+      eyebrow: "ORIENTATION",
+      title: "Explore Electronic Artefacts",
+      copy: "Choose the layer that fits your intent. Projects, research, programs and archive are different entrances into the same ecosystem.",
+      cards: [
+        {
+          kicker: "Projects",
+          title: "Public works and collaborations",
+          copy: "See the public-facing works, commissioned surfaces and translated outputs that make the ecosystem visible.",
+          reason: "This is the fastest way to understand what the studio actually produces.",
+          cta: "Browse Projects",
+          href: "./projects.html",
+          ariaLabel: "Browse Projects",
+        },
+        {
+          kicker: "Research",
+          title: "Experimental investigations",
+          copy: "Follow the notes, theoretical branches and working questions that feed the rest of the system.",
+          reason: "This is where the thinking behind the work becomes legible.",
+          cta: "Enter Research",
+          href: "./research.html",
+          ariaLabel: "Enter Research",
+        },
+        {
+          kicker: "Programs",
+          title: "Software systems and engines",
+          copy: "Inspect the runtime logic, internal frameworks and production systems that hold the ecosystem together.",
+          reason: "This is the operational core of the project.",
+          cta: "View Programs",
+          href: "./programs.html",
+          ariaLabel: "View Programs",
+        },
+        {
+          kicker: "Archive",
+          title: "Traces and historical material",
+          copy: "Move through releases, fragments and older surfaces that document how the ecosystem accumulated over time.",
+          reason: "This is the memory layer, not a graveyard.",
+          cta: "Open Archive",
+          href: "./archive.html",
+          ariaLabel: "Open Archive",
+        },
+      ],
+    });
+
+  const renderFeaturedPaths = () =>
+    orientationSection({
+      eyebrow: "FEATURED PATHS",
+      title: "Featured Paths",
+      copy: "Choose the path that matches why you are here. Each route points to the part of the ecosystem that should answer your question first.",
+      cards: [
+        {
+          kicker: "Investors",
+          title: "VASTE as the core spine",
+          copy: "Understand the runtime, the strategic logic and the broader system that generates the rest of the ecosystem.",
+          reason: "Investors need the trunk before the branches.",
+          cta: "Explore VASTE",
+          href: "./vaste.html",
+          ariaLabel: "Explore VASTE",
+        },
+        {
+          kicker: "Clients",
+          title: "Applied work and public outcomes",
+          copy: "See how Electronic Artefacts handles commissions, systems and visible deliverables across the studio layer.",
+          reason: "Clients need evidence of execution, not just language.",
+          cta: "See Client Work",
+          href: "./work.html",
+          ariaLabel: "See Client Work",
+        },
+        {
+          kicker: "Collaborators",
+          title: "How the ecosystem operates",
+          copy: "Learn how research, programs, projects and archive relate before starting a collaboration.",
+          reason: "Collaborators need a map of the working model.",
+          cta: "Understand the Ecosystem",
+          href: "./about.html",
+          ariaLabel: "Understand the Ecosystem",
+        },
+        {
+          kicker: "Artists",
+          title: "Palimpsests and the label layer",
+          copy: "Enter the musical and editorial surface where artistic work, traces and publication logic meet.",
+          reason: "Artists need to see the cultural register of the project.",
+          cta: "Enter Palimpsests",
+          href: "./palimpsests.html",
+          ariaLabel: "Enter Palimpsests",
+        },
+      ],
+    });
   const renderPrograms = () => {
     const vaste = entityById("vaste");
     const forge = entityById("forge");
@@ -7274,8 +7643,8 @@ window.EA_SEARCH = {
           <h1 class="display-title">Programs.</h1>
           <p class="lede">VASTE, Forge, VOID and OracleHub.</p>
           <div class="button-row button-row--compact">
-            <a class="button button--primary" href="https://www.vaste.space/" target="_blank" rel="noreferrer">VASTE</a>
-            <a class="button button--secondary" href="./research.html">Research</a>
+            <a class="button button--primary" href="https://www.vaste.space/" target="_blank" rel="noreferrer">Explore VASTE</a>
+            <a class="button button--secondary" href="./research.html">Enter Research</a>
           </div>
           ${metricRail(
             [
@@ -7426,9 +7795,9 @@ window.EA_SEARCH = {
           <h1 class="display-title">Projects as artistic translation.</h1>
           <p class="lede">PALIMPSESTS leads the line. The rest stays in orbit.</p>
           <div class="button-row">
-            <a class="button button--primary" href="./work.html">Work</a>
-            <a class="button button--secondary" href="./research.html">Research</a>
-            <a class="button button--secondary" href="./archive.html">Archive</a>
+            <a class="button button--primary" href="./work.html">See Client Work</a>
+            <a class="button button--secondary" href="./research.html">Enter Research</a>
+            <a class="button button--secondary" href="./archive.html">Open Archive</a>
           </div>
         </div>
       </section>
@@ -7487,8 +7856,8 @@ window.EA_SEARCH = {
             <h1 class="display-title">Project line not found.</h1>
             <p class="lede">Open a project from the landing page to access its RL surface.</p>
             <div class="button-row">
-              <a class="button button--primary" href="./projects.html">Projects</a>
-              <a class="button button--secondary" href="./work.html">Work</a>
+          <a class="button button--primary" href="./projects.html">Browse Projects</a>
+          <a class="button button--secondary" href="./work.html">Return to Work</a>
             </div>
           </div>
         </section>
@@ -7503,9 +7872,9 @@ window.EA_SEARCH = {
           <h1 class="display-title">${esc(item.title)}</h1>
           <p class="lede">${esc(item.summary || item.description || "")}</p>
           <div class="button-row">
-            <a class="button button--primary" href="./project.html?id=${encodeURIComponent(item.id)}">Detail page</a>
-            <a class="button button--secondary" href="./projects.html">Projects</a>
-            <a class="button button--secondary" href="./archive.html">Archive</a>
+            <a class="button button--primary" href="./project.html?id=${encodeURIComponent(item.id)}">Open Project Detail</a>
+            <a class="button button--secondary" href="./projects.html">Browse Projects</a>
+            <a class="button button--secondary" href="./archive.html">Open Archive</a>
           </div>
         </div>
         <div class="stat-grid project-line-grid">
@@ -7616,6 +7985,8 @@ window.EA_SEARCH = {
 
   const renderers = {
     home: {
+      "home-orientation": renderHomeOrientation,
+      "home-featured-paths": renderFeaturedPaths,
       "home-vaste-banner": renderVasteBanner,
       "home-featured-work": renderFeaturedWork,
       "home-featured-research": renderFeaturedResearch,

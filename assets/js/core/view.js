@@ -786,9 +786,9 @@
           copy: "Album cycle carried by ORETH. A single full surface, no nested panels.",
           tags: homeCardPills(palimpsests),
           actions: [
-            { label: "Open project", href: "./palimpsests.html" },
-            { label: "Archive", href: "./archive.html" },
-            { label: "Contact", href: "./contact.html" },
+            { label: "Enter Palimpsests", href: "./palimpsests.html" },
+            { label: "Open Archive", href: "./archive.html" },
+            { label: "Start a Collaboration", href: "./contact.html" },
           ],
         })}
       </section>
@@ -858,8 +858,8 @@
             </div>
             ${vasteEngineMarkup()}
             <div class="button-row button-row--compact vast-banner__actions">
-              <a class="button button--primary" href="https://www.vaste.space/" target="_blank" rel="noreferrer">Open VASTE</a>
-              <a class="button button--secondary" href="./research.html">Research</a>
+              <a class="button button--primary" href="https://www.vaste.space/" target="_blank" rel="noreferrer">Explore VASTE</a>
+              <a class="button button--secondary" href="./research.html">Enter Research</a>
             </div>
           </div>
         </article>
@@ -899,7 +899,7 @@
               ],
               { limit: 2, compact: true },
             )}
-            ${linkRow({ label: "Projects", href: "./projects.html" }, [{ label: "Work archive", href: "./work.html" }])}
+            ${linkRow({ label: "Browse Projects", href: "./projects.html" }, [{ label: "Browse Work Archive", href: "./work.html" }])}
           </aside>
         </div>
         <div class="selected-works-panel__grid" role="list" aria-label="Selected works">
@@ -915,8 +915,8 @@
           </div>
         </div>
         <div class="link-row selected-works-panel__links">
-          <a class="tag" href="./projects.html">Projects</a>
-          <a class="tag" href="./work.html">Work archive</a>
+          <a class="tag" href="./projects.html">Browse Projects</a>
+          <a class="tag" href="./work.html">Browse Work Archive</a>
         </div>
       </section>
     `;
@@ -959,6 +959,23 @@
     `;
   };
 
+  const routeCard = (item = {}) => {
+    const href = item.href || "";
+    const target = item.target ? ` target="${esc(item.target)}" rel="noreferrer"` : "";
+    const label = item.ariaLabel || `${item.cta || "Open"} ${item.title || "destination"}`;
+    return `
+      <article class="panel panel--soft card-link-surface" ${href ? cardLinkAttrs(href, label) : ""}>
+        <p class="card__meta">${esc(item.kicker || "")}</p>
+        <h3 class="card__title">${esc(item.title || "")}</h3>
+        <p class="card__copy">${esc(item.copy || "")}</p>
+        ${item.reason ? `<p class="card__meta">Why it matters</p><p class="card__copy">${esc(item.reason)}</p>` : ""}
+        <div class="link-row">
+          ${href ? `<a class="tag" href="${esc(href)}"${target}>${esc(item.cta || "Open")}</a>` : ""}
+        </div>
+      </article>
+    `;
+  };
+
   window.EA_VIEW = {
     cardBaseAttrs,
     mediaFrom,
@@ -994,5 +1011,6 @@
     vasteBanner,
     featuredResearch,
     latestArtefacts,
+    routeCard,
   };
 })();
