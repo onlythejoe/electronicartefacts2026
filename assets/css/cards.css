@@ -702,6 +702,227 @@
   scrollbar-width: thin;
 }
 
+.catalog-overview {
+  gap: 1rem;
+}
+
+.catalog-overview .section-head {
+  gap: 0.3rem;
+}
+
+.catalog-table-shell {
+  overflow-x: auto;
+  overflow-y: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: var(--radius-lg);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(255, 255, 255, 0.01)),
+    rgba(255, 255, 255, 0.012);
+  box-shadow: var(--shadow-soft);
+  scrollbar-width: thin;
+  -webkit-overflow-scrolling: touch;
+}
+
+.catalog-table {
+  width: 100%;
+  min-width: 104rem;
+  border-collapse: collapse;
+  table-layout: fixed;
+}
+
+.catalog-table thead th {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  padding: 0.9rem 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.085);
+  background: linear-gradient(180deg, rgba(17, 14, 11, 0.96), rgba(17, 14, 11, 0.9));
+  color: rgba(247, 244, 239, 0.82);
+  font-size: 0.69rem;
+  font-weight: 850;
+  letter-spacing: 0.16em;
+  line-height: 1.2;
+  text-align: left;
+  text-transform: uppercase;
+  white-space: nowrap;
+}
+
+.catalog-table tbody tr {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  transition: background-color 160ms ease;
+}
+
+.catalog-table tbody tr:nth-child(even) {
+  background: rgba(255, 255, 255, 0.008);
+}
+
+.catalog-table tbody tr:hover {
+  background: rgba(255, 255, 255, 0.02);
+}
+
+.catalog-table tbody td {
+  padding: 0.95rem 1rem 1rem;
+  vertical-align: top;
+  color: var(--text);
+  font-size: 0.91rem;
+  line-height: 1.5;
+}
+
+.catalog-table tbody td:first-child {
+  width: 12rem;
+}
+
+.catalog-table thead th:first-child {
+  width: 12rem;
+}
+
+.catalog-table tbody td:nth-child(2) {
+  width: 18rem;
+}
+
+.catalog-table thead th:nth-child(2) {
+  width: 18rem;
+}
+
+.catalog-table tbody td:nth-child(3) {
+  width: 36rem;
+}
+
+.catalog-table thead th:nth-child(3) {
+  width: 36rem;
+}
+
+.catalog-table tbody td:nth-child(4) {
+  width: 24rem;
+}
+
+.catalog-table thead th:nth-child(4) {
+  width: 24rem;
+}
+
+.catalog-table tbody td:nth-child(5) {
+  width: 12rem;
+}
+
+.catalog-table thead th:nth-child(5) {
+  width: 12rem;
+}
+
+.catalog-table tbody td:nth-child(6) {
+  width: 7rem;
+}
+
+.catalog-table thead th:nth-child(6) {
+  width: 7rem;
+}
+
+.catalog-table__identity,
+.catalog-table__title,
+.catalog-table__content,
+.catalog-table__meta {
+  display: grid;
+  gap: 0.32rem;
+  min-width: 0;
+}
+
+.catalog-table__kind {
+  color: rgba(234, 220, 207, 0.78);
+  font-size: 0.64rem;
+  font-weight: 850;
+  letter-spacing: 0.16em;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.catalog-table__id {
+  color: var(--muted);
+  font-size: 0.76rem;
+  line-height: 1.35;
+  overflow-wrap: anywhere;
+}
+
+.catalog-table__title a {
+  color: var(--text);
+  text-decoration: none;
+  overflow-wrap: anywhere;
+}
+
+.catalog-table__title a:hover,
+.catalog-table__title a:focus-visible {
+  text-decoration: underline;
+}
+
+.catalog-table__subtitle {
+  color: var(--muted);
+  font-size: 0.76rem;
+  font-weight: 760;
+  letter-spacing: 0.08em;
+  line-height: 1.35;
+  text-transform: uppercase;
+}
+
+.catalog-table__content {
+  gap: 0.5rem;
+}
+
+.catalog-table__content-item {
+  display: grid;
+  gap: 0.18rem;
+  padding: 0.68rem 0.74rem;
+  border: 1px solid rgba(255, 255, 255, 0.065);
+  border-radius: calc(var(--radius-md) - 0.1rem);
+  background: rgba(255, 255, 255, 0.012);
+}
+
+.catalog-table__content-item span {
+  color: rgba(234, 220, 207, 0.78);
+  font-size: 0.63rem;
+  font-weight: 850;
+  letter-spacing: 0.16em;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.catalog-table__content-item p {
+  margin: 0;
+  color: rgba(247, 244, 239, 0.88);
+  overflow-wrap: anywhere;
+  white-space: pre-line;
+}
+
+.catalog-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.42rem;
+  align-items: flex-start;
+  min-width: 0;
+}
+
+.catalog-tags .chip {
+  max-width: 100%;
+}
+
+.catalog-table__meta {
+  gap: 0.42rem;
+}
+
+.catalog-table__meta-line {
+  display: block;
+  color: var(--muted);
+  font-size: 0.76rem;
+  line-height: 1.35;
+  overflow-wrap: anywhere;
+}
+
+.catalog-table__open {
+  width: fit-content;
+}
+
+.catalog-table__empty {
+  color: var(--muted);
+  font-size: 0.78rem;
+}
+
 @media (max-width: 760px) {
   .project-card--oeil-de-meg .project-card__top {
     padding-right: clamp(3rem, 18vw, 4.2rem);
@@ -730,5 +951,22 @@
   .project-card--oeil-de-meg .project-mark-bubble--butterfly .project-mark-bubble__picto {
     width: 1.15rem;
     height: 1.15rem;
+  }
+
+  .catalog-table-shell {
+    border-radius: var(--radius-md);
+  }
+
+  .catalog-table {
+    min-width: 80rem;
+  }
+
+  .catalog-table thead th,
+  .catalog-table tbody td {
+    padding-inline: 0.78rem;
+  }
+
+  .catalog-table__content-item {
+    padding: 0.6rem 0.68rem;
   }
 }

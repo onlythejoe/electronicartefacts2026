@@ -1430,71 +1430,225 @@
 
   const searchState = { query: "", status: "all", kind: "all" };
   const getSearchIndex = () => catalog.indexes?.getSearchIndex?.() || catalog.indexes?.search || [];
-  const searchResultsInnerMarkup = () => {
+  const searchResultOrder = ["program", "project", "artefact", "researchLog", "researchField", "collection", "artist", "channel", "worldbuilding"];
+
+  const filteredSearchItems = () => {
     const searchIndex = getSearchIndex();
     const query = searchState.query;
     const status = searchState.status;
     const kind = searchState.kind;
-    const results = searchIndex.filter((item) => {
+    return searchIndex.filter((item) => {
       if (status !== "all" && item.status !== status) return false;
       if (kind !== "all" && item.kind !== kind) return false;
       if (!query) return true;
       return item.value.includes(query);
     });
-    const groups = results.reduce((acc, item) => {
-      const bucket = acc[item.kind] || (acc[item.kind] = []);
-      bucket.push(item);
-      return acc;
-    }, {});
-    const groupedResults = Object.entries(groups).sort(([left], [right]) => {
-      const order = ["program", "project", "artefact", "researchLog", "researchField", "collection", "artist", "channel"];
-      const leftIndex = order.indexOf(left);
-      const rightIndex = order.indexOf(right);
-      if (leftIndex !== rightIndex) return (leftIndex === -1 ? order.length : leftIndex) - (rightIndex === -1 ? order.length : rightIndex);
-      return left.localeCompare(right);
+  };
+
+  const sortOverviewItems = (items) =>
+    [...items].sort((left, right) => {
+      const leftIndex = searchResultOrder.indexOf(left.kind);
+      const rightIndex = searchResultOrder.indexOf(right.kind);
+      if (leftIndex !== rightIndex) return (leftIndex === -1 ? searchResultOrder.length : leftIndex) - (rightIndex === -1 ? searchResultOrder.length : rightIndex);
+      return String(left.title || "").localeCompare(String(right.title || ""));
     });
 
-    return groupedResults.length
-      ? groupedResults
-          .map(
-            ([kind, items]) => `
-              <section class="zone-card hero">
-                <div class="section-head">
-                  <p class="eyebrow">${esc(catalog.taxonomies?.entityTypes?.[kind] || kind.replace(/([a-z])([A-Z])/g, "$1 $2").toUpperCase())}</p>
-                  <h2>${esc(items.length)} result(s)</h2>
-                </div>
-                <div class="card-grid card-grid--two">
-                  ${items
-                    .map((item) => {
-                      const entity = entityById(item.id);
-                      if (!entity) return "";
-                      if (entity.kind === "program") return programCard(entity);
-                      if (entity.kind === "artist") return personCard(entity);
-                      if (entity.kind === "channel") return channelCard(entity);
-                      if (entity.kind === "collection") return archiveCard(entity);
-                      if (entity.kind === "artefact") return archiveCard(entity);
-                      if (entity.kind === "researchLog") return archiveCard(entity);
-                      return projectCard(entity);
-                    })
-                    .join("")}
-                </div>
-              </section>
-            `,
-          )
-          .join("")
-      : `<section class="zone-card hero"><div class="section-head"><p class="eyebrow">No results</p><h2>Nothing matched.</h2><p class="lede">Try a broader query or clear the filters.</p></div></section>`;
+  const collectOverviewBlocks = (item) => {
+    const blocks = [];
+    const seen = new Set();
+
+    const push = (label, value) => {
+      const text = String(value ?? "").trim();
+      if (!text) return;
+      const key = `${label}::${text}`;
+      if (seen.has(key)) return;
+      seen.add(key);
+      blocks.push([label, text]);
+    };
+
+    const pushList = (label, values, transform = (value) => value) => {
+      const items = (values || []).map((value) => String(transform(value) ?? "").trim()).filter(Boolean);
+      if (!items.length) return;
+      push(label, items.join("\n"));
+    };
+
+    push("Summary", item.summary);
+    push("Description", item.description);
+    push("Copy", item.copy);
+    push("Theme", item.theme);
+    push("Core idea", item.coreIdea);
+    push("Note", item.note || item.architecture?.note);
+    push("Origin of title", item.originOfTitle);
+    push("Question", item.centralQuestion);
+    push("Vision", item.longTermVision);
+    pushList("Secondary questions", item.secondaryQuestions);
+    pushList("Interpretations", item.narrativeInterpretations);
+    push("Body", item.body);
+
+    const architecture = item.architecture || {};
+    push("Surface", architecture.surface);
+    push("Stack", architecture.stack);
+    pushList("Layers", architecture.layers);
+    push("Architecture note", architecture.note);
+
+    const orethStructure = item.orethStructure || {};
+    push("Structure note", orethStructure.note);
+    pushList("Current material", orethStructure.currentMaterial);
+    pushList("Cycles", orethStructure.cycles, (cycle) => {
+      if (!cycle || typeof cycle !== "object") return "";
+      return [cycle.letter, cycle.title].filter(Boolean).join(" - ");
+    });
+
+    (item.acts || []).forEach((act, index) => {
+      if (!act || typeof act !== "object") return;
+      const lines = [act.title, act.subtitle, act.mood, act.description];
+      if (act.tracks?.length) lines.push(`Tracks: ${act.tracks.join(" / ")}`);
+      if (act.keywords?.length) lines.push(`Keywords: ${act.keywords.join(" / ")}`);
+      push(`Act ${String(index + 1).padStart(2, "0")}`, lines.filter(Boolean).join("\n"));
+    });
+
+    return blocks;
   };
+
+  const collectOverviewTags = (item) => {
+    const sources = [
+      item.tags,
+      item.medium,
+      item.discipline,
+      item.currentDomains,
+      item.futureDomains,
+      item.corePrinciples,
+      item.subThemes,
+      item.symbols,
+      item.textures,
+      item.musicalLanguage,
+      item.visualLanguage,
+    ];
+    return [...new Set(sources.flat().filter(Boolean).map((value) => String(value).trim()).filter(Boolean))];
+  };
+
+  const overviewStats = () => {
+    const items = sortOverviewItems(filteredSearchItems()).map((item) => entityById(item.id) || item).filter(Boolean);
+    const tagCount = items.reduce((total, item) => total + collectOverviewTags(item).length, 0);
+    const blockCount = items.reduce((total, item) => total + collectOverviewBlocks(item).length, 0);
+    const totalCount = catalog.indexes?.entities?.length || items.length || 1;
+    return { items, tagCount, blockCount, totalCount };
+  };
+
+  const searchOverviewMarkup = () => {
+    const { items, tagCount, blockCount, totalCount } = overviewStats();
+    if (!items.length) {
+      return `
+        <section class="zone-card hero catalog-overview">
+          <div class="section-head">
+            <p class="eyebrow">CATALOG MATRIX</p>
+            <h2>Nothing matched.</h2>
+            <p class="lede">Try a broader query or clear the filters.</p>
+          </div>
+        </section>
+      `;
+    }
+
+    return `
+      <section class="zone-card hero catalog-overview">
+        <div class="section-head">
+          <p class="eyebrow">CATALOG MATRIX</p>
+          <h2>${esc(items.length)} elements in view</h2>
+          <p class="lede">Contents, tags and metadata are shown together so you can tune the catalogue from a single overview.</p>
+        </div>
+        ${metricRail(
+          [
+            { label: "ELEMENTS", value: String(items.length), note: "visible rows", fill: metricFill(items.length, totalCount), tone: "live" },
+            { label: "TAGS", value: String(tagCount), note: "all chips", fill: metricFill(tagCount, Math.max(tagCount, 1) * 2), tone: "visual" },
+            { label: "CONTENTS", value: String(blockCount), note: "text blocks", fill: metricFill(blockCount, Math.max(blockCount, 1) * 2), tone: "archive" },
+          ],
+          { limit: 3, compact: true },
+        )}
+        <div class="catalog-table-shell" role="region" aria-label="Catalogue overview table" tabindex="0">
+          <table class="catalog-table">
+            <thead>
+              <tr>
+                <th scope="col">Type / ID</th>
+                <th scope="col">Title</th>
+                <th scope="col">Content</th>
+                <th scope="col">Tags</th>
+                <th scope="col">Meta</th>
+                <th scope="col">Open</th>
+              </tr>
+            </thead>
+            <tbody>
+              ${items
+                .map((item) => {
+                  const titleHref = entryHref(item);
+                  const contentBlocks = collectOverviewBlocks(item);
+                  const tags = collectOverviewTags(item);
+                  const typeLabel = esc(catalog.taxonomies?.entityTypes?.[item.kind] || item.kind || "ENTRY");
+                  const year = item.temporality?.creationYear || item.temporality?.releaseDate || String(item.temporality?.lastUpdated || "").slice(0, 4) || "—";
+                  const visibilityLabel = catalog.taxonomies?.visibility?.[item.visibility]?.label || item.visibility || "—";
+                  return `
+                    <tr data-entry-id="${esc(item.id || "")}">
+                      <td class="catalog-table__identity">
+                        <span class="catalog-table__kind">${typeLabel}</span>
+                        <span class="catalog-table__id">${esc(item.id || "")}</span>
+                      </td>
+                      <td class="catalog-table__title-cell">
+                        <div class="catalog-table__title">
+                          <a href="${esc(titleHref)}">${esc(item.title || item.id || "Untitled")}</a>
+                          ${item.subtitle ? `<span class="catalog-table__subtitle">${esc(item.subtitle)}</span>` : ""}
+                        </div>
+                      </td>
+                      <td class="catalog-table__content-cell">
+                        <div class="catalog-table__content">
+                          ${contentBlocks
+                            .map(
+                              ([label, value]) => `
+                                <div class="catalog-table__content-item">
+                                  <span>${esc(label)}</span>
+                                  <p>${esc(value)}</p>
+                                </div>
+                              `,
+                            )
+                            .join("")}
+                        </div>
+                      </td>
+                      <td class="catalog-table__tags-cell">
+                        <div class="catalog-tags">
+                          ${tags.length ? tags.map((value) => chip(value)).join("") : `<span class="catalog-table__empty">No tags</span>`}
+                        </div>
+                      </td>
+                      <td class="catalog-table__meta-cell">
+                        <div class="catalog-table__meta">
+                          ${statusBadge(item.status, item.statusLabel)}
+                          <span class="catalog-table__meta-line">${esc(visibilityLabel)}</span>
+                          <span class="catalog-table__meta-line">${esc(year)}</span>
+                          <span class="catalog-table__meta-line">${esc(item.kind || "entry")}</span>
+                        </div>
+                      </td>
+                      <td class="catalog-table__open-cell">
+                        ${titleHref ? `<a class="tag catalog-table__open" href="${esc(titleHref)}">Open</a>` : `<span class="catalog-table__empty">—</span>`}
+                      </td>
+                    </tr>
+                  `;
+                })
+                .join("")}
+            </tbody>
+          </table>
+        </div>
+      </section>
+    `;
+  };
+
   const renderSearchPage = () => `
       <section class="zone-card hero" data-search-shell>
         <div class="section-head">
-          <p class="eyebrow">SEARCH</p>
-          <h1 class="display-title">Search the archive.</h1>
-          <p class="lede">Titles, tags, relations and fields.</p>
+          <p class="eyebrow">OVERVIEW</p>
+          <h1 class="display-title">Catalogue matrix.</h1>
+          <p class="lede">Search titles, scan contents and compare every tag in one table.</p>
         </div>
         <div class="taxonomy-grid">
           <div class="taxonomy-column">
             <p class="card__meta">Query</p>
-            <input class="search-input" type="search" data-search-input placeholder="Search titles, tags, relations..." />
+            <input class="search-input" type="search" data-search-input placeholder="Search title, content or tags..." />
           </div>
           <div class="taxonomy-column">
             <p class="card__meta">Status</p>
@@ -1527,14 +1681,13 @@
         </div>
       </section>
       <section class="stack" data-search-results>
-        ${searchResultsInnerMarkup()}
+        ${searchOverviewMarkup()}
       </section>
     `;
   const renderSearchResults = () => {
     const target = document.querySelector("[data-search-results]");
     if (!target) return;
-    target.innerHTML = searchResultsInnerMarkup();
-    refreshCardSurfaces?.(target);
+    target.innerHTML = searchOverviewMarkup();
   };
 
   const renderCrossNavigation = () => crossNavigation();

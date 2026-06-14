@@ -528,6 +528,48 @@
     </article>
   `;
 
+  const selectedWorksCard = (item, options = {}) => {
+    if (!item) return "";
+    const href = entryHrefFor(item);
+    const featured = options.featured !== false;
+    const compact = !featured;
+    const label = options.label || `Open ${item.title} detail`;
+    const cardClasses = [
+      "project-card",
+      "selected-works-card",
+      featured ? "selected-works-card--featured" : "selected-works-card--compact",
+      item.id === "oeil-de-meg" ? "project-card--oeil-de-meg" : "",
+    ]
+      .filter(Boolean)
+      .join(" ");
+
+    return `
+      <article class="${cardClasses}" data-project-detail-link="${esc(href)}" ${cardLinkAttrs(href, label)}>
+        <a class="project-card__overlay-link" href="${esc(href)}" aria-label="${esc(label)}"></a>
+        <div class="project-card__top">
+          <div>
+            <p class="card__meta">${esc(item.category || item.type || "PROJECT")}</p>
+            <h3 class="card__title">${esc(item.title)}</h3>
+            ${
+              compact && (item.subtitle || item.statusLabel || item.maturity)
+                ? `<p class="selected-works-card__subtitle">${esc(item.subtitle || item.statusLabel || item.maturity)}</p>`
+                : ""
+            }
+          </div>
+          <div class="project-card__top-meta">
+            ${item.id === "oeil-de-meg" ? chip("PHP") : ""}
+            ${statusBadge(item.status, item.statusLabel)}
+            ${projectSignatureBubble(item, "card")}
+          </div>
+        </div>
+        ${cardCopy(item.summary || item.description, featured ? 2 : 1)}
+        ${signalStrip(item)}
+        ${tagRow(homeCardPills(item), { limit: featured ? 4 : 2, compact: true })}
+        ${featured ? linkRow({ label: "Open project", href }, [{ label: "Work archive", href: "./work.html" }]) : ""}
+      </article>
+    `;
+  };
+
   const archiveCard = (item) => `
     <article class="archive-card" ${cardBaseAttrs(item)} ${cardLinkAttrs(entryHrefFor(item), `Open ${item.title}`)}>
       ${cardOverlayLink(entryHrefFor(item), `Open ${item.title}`)}
@@ -828,30 +870,51 @@
   `;
 
   const featuredResearch = () => {
-    const projects = homeProjects(["palimpsests"]).filter((item) => item.route || item.kind === "project");
+    const projects = (catalog.projects || [])
+      .filter((item) => item.id !== "palimpsests")
+      .slice()
+      .sort((a, b) => entityDateValue(b) - entityDateValue(a));
     if (!projects.length) return "";
+
+    const lead = featuredProjectForHome(["palimpsests"]) || projects[0];
+    const supporting = projects.filter((item) => item.id !== lead.id).slice(0, 4);
+    const routeCount = countLabel(projects.length, "project");
+
     return `
-      <section class="zone-card hero">
-        <div class="section-head">
-          <p class="eyebrow">WORK</p>
-          <h2>Selected works.</h2>
-          <p class="lede">One route per project.</p>
+      <section class="zone-card hero selected-works-panel">
+        <div class="selected-works-panel__head">
+          <div class="section-head">
+            <p class="eyebrow">WORK</p>
+            <h2>Selected works.</h2>
+            <p class="lede">A curated route through the projects currently shaping the studio line.</p>
+          </div>
+          <aside class="panel panel--soft selected-works-panel__info">
+            <p class="card__meta">CURATED ROUTE</p>
+            <strong>${esc(routeCount)}</strong>
+            <p class="card__copy">The home keeps one lead project and a short supporting queue. It points toward the archive without flattening the work into a grid.</p>
+            ${metricRail(
+              [
+                { label: "Lead", value: lead.title || lead.category || lead.type || "Project", note: lead.statusLabel || lead.status || "", tone: "system", fill: 0.9 },
+                { label: "Mode", value: lead.category || lead.type || "Project", note: lead.temporality?.creationYear || "", tone: "visual", fill: 0.72 },
+              ],
+              { limit: 2, compact: true },
+            )}
+            ${linkRow({ label: "Projects", href: "./projects.html" }, [{ label: "Work archive", href: "./work.html" }])}
+          </aside>
         </div>
-        <div class="work-carousel" role="list" aria-label="Dedicated projects carousel">
-          <div class="work-carousel__track">
-            ${projects
-              .slice(0, 5)
-              .map(
-                (item) => `
-                  <div class="work-carousel__item" role="listitem">
-                    ${projectLandingCard(item)}
-                  </div>
-                `,
-              )
-              .join("")}
+        <div class="selected-works-panel__grid" role="list" aria-label="Selected works">
+          ${selectedWorksCard(lead, { featured: true })}
+          <div class="selected-works-panel__stack">
+            <div class="selected-works-panel__stack-head">
+              <p class="card__meta">MORE ROUTES</p>
+              <span>${esc(countLabel(supporting.length, "item"))}</span>
+            </div>
+            <div class="selected-works-panel__stack-grid">
+              ${supporting.map((item) => selectedWorksCard(item, { featured: false })).join("")}
+            </div>
           </div>
         </div>
-        <div class="link-row">
+        <div class="link-row selected-works-panel__links">
           <a class="tag" href="./projects.html">Projects</a>
           <a class="tag" href="./work.html">Work archive</a>
         </div>
