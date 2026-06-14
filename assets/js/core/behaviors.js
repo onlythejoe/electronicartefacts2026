@@ -187,15 +187,23 @@
     progress.setAttribute("aria-hidden", "true");
     document.body.append(progress);
 
+    let ticking = false;
     const update = () => {
       const max = document.documentElement.scrollHeight - window.innerHeight;
       const value = max > 0 ? Math.min(1, Math.max(0, window.scrollY / max)) : 0;
       progress.style.setProperty("--scroll-progress", String(value));
+      ticking = false;
     };
 
-    update();
-    window.addEventListener("scroll", update, { passive: true });
-    window.addEventListener("resize", update);
+    const requestUpdate = () => {
+      if (ticking) return;
+      ticking = true;
+      window.requestAnimationFrame(update);
+    };
+
+    requestUpdate();
+    window.addEventListener("scroll", requestUpdate, { passive: true });
+    window.addEventListener("resize", requestUpdate);
   };
 
   const initAutoHideHeader = () => {
@@ -836,11 +844,11 @@
     initScrollProgress();
     initAutoHideHeader();
     initReveal();
-    initCardSpotlight();
-    initDesktopCursor();
-    initDragRails();
     initFilterSummaries(filterState);
     scheduleIdle(() => {
+      initCardSpotlight();
+      initDesktopCursor();
+      initDragRails();
       initCommandPalette();
       initImageLightbox();
       initTaxonomyPills();

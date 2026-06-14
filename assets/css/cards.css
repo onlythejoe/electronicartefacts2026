@@ -21,6 +21,28 @@
   -webkit-backdrop-filter: blur(18px) saturate(125%);
 }
 
+.zone-card:not(.shell-header):not(.shell-footer),
+.catalog-group,
+.signature-banner {
+  content-visibility: auto;
+  contain-intrinsic-size: 28rem;
+}
+
+.panel,
+.stat-card,
+.project-card,
+.cross-nav-card,
+.archive-card,
+.program-card {
+  content-visibility: auto;
+  contain-intrinsic-size: 18rem;
+}
+
+.shell-header.zone-card,
+.shell-footer.zone-card {
+  content-visibility: visible;
+}
+
 .zone-card {
   border-radius: var(--radius-xl);
   background:

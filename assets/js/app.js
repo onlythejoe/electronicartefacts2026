@@ -2693,10 +2693,12 @@ window.EA_SEARCH = {
   };
 
   const orethBannerMedia = {
-    src: "./assets/media/projects/oreth/ORETH.png",
+    src: "./assets/media/projects/oreth/ORETH-hero-1200.png",
+    srcset: "./assets/media/projects/oreth/ORETH-hero-800.png 800w, ./assets/media/projects/oreth/ORETH-hero-1200.png 1200w",
+    sizes: "(max-width: 48rem) 100vw, 44vw",
     alt: "Portrait of ORETH for banner use",
-    width: 2200,
-    height: 1650,
+    width: 1200,
+    height: 900,
   };
 
   const isOrethSignature = (item) => {
@@ -2719,6 +2721,19 @@ window.EA_SEARCH = {
     const media = options.media || orethBannerMedia;
     const mediaAlt = options.mediaAlt || media.alt || "";
     const titleMarkup = `<${titleTag} class="signature-banner__title">${esc(title)}</${titleTag}>`;
+    const mediaAttrs = [
+      `src="${esc(media.src)}"`,
+      media.srcset ? `srcset="${esc(media.srcset)}"` : "",
+      media.sizes ? `sizes="${esc(media.sizes)}"` : "",
+      `alt="${esc(mediaAlt)}"`,
+      `width="${esc(media.width || 2200)}"`,
+      `height="${esc(media.height || 1650)}"`,
+      `loading="${esc(options.loading || "eager")}"`,
+      `fetchpriority="${esc(options.fetchPriority || "high")}"`,
+      `decoding="async"`,
+    ]
+      .filter(Boolean)
+      .join("\n            ");
     const tagMarkup = tags.length
       ? `<div class="tag-cluster tag-cluster--compact signature-banner__tags">${tags.map((value) => chip(value)).join("")}</div>`
       : "";
@@ -2743,15 +2758,8 @@ window.EA_SEARCH = {
           ${actionMarkup}
         </div>
         <div class="signature-banner__media" aria-hidden="true">
-          <img
-            class="signature-banner__image"
-            src="${esc(media.src)}"
-            alt="${esc(mediaAlt)}"
-            width="${esc(media.width || 2200)}"
-            height="${esc(media.height || 1650)}"
-            loading="${options.loading || "eager"}"
-            fetchpriority="${options.fetchPriority || "high"}"
-            decoding="async"
+          <img class="signature-banner__image"
+            ${mediaAttrs}
           />
         </div>
       </div>
@@ -2816,14 +2824,26 @@ window.EA_SEARCH = {
   const mediaFigureMarkup = (media, item, className = "project-gallery__media") => {
     const mediaKind = mediaKindFor(media);
     if (mediaKind === "video") {
+      const preload = media.preload || "none";
       return `
-        <video class="${className}" controls playsinline preload="metadata">
+        <video class="${className}" controls playsinline preload="${esc(preload)}">
           <source src="${esc(media.src)}" />
           ${esc(media.alt || item.title || "Project video")}
         </video>
       `;
     }
-    return `<img class="${className}" src="${esc(media.src)}" alt="${esc(media.alt || item.title)}" loading="lazy" />`;
+    const imageAttrs = [
+      `src="${esc(media.src)}"`,
+      media.srcset ? `srcset="${esc(media.srcset)}"` : "",
+      media.sizes ? `sizes="${esc(media.sizes)}"` : "",
+      `alt="${esc(media.alt || item.title)}"`,
+      `loading="lazy"`,
+      `decoding="async"`,
+      media.width && media.height ? `width="${esc(media.width)}" height="${esc(media.height)}"` : "",
+    ]
+      .filter(Boolean)
+      .join(" ");
+    return `<img class="${className}" ${imageAttrs} />`;
   };
 
   const projectSignatureBubble = (item, variant = "card") => {
@@ -4457,15 +4477,23 @@ window.EA_SEARCH = {
     progress.setAttribute("aria-hidden", "true");
     document.body.append(progress);
 
+    let ticking = false;
     const update = () => {
       const max = document.documentElement.scrollHeight - window.innerHeight;
       const value = max > 0 ? Math.min(1, Math.max(0, window.scrollY / max)) : 0;
       progress.style.setProperty("--scroll-progress", String(value));
+      ticking = false;
     };
 
-    update();
-    window.addEventListener("scroll", update, { passive: true });
-    window.addEventListener("resize", update);
+    const requestUpdate = () => {
+      if (ticking) return;
+      ticking = true;
+      window.requestAnimationFrame(update);
+    };
+
+    requestUpdate();
+    window.addEventListener("scroll", requestUpdate, { passive: true });
+    window.addEventListener("resize", requestUpdate);
   };
 
   const initAutoHideHeader = () => {
@@ -5106,11 +5134,11 @@ window.EA_SEARCH = {
     initScrollProgress();
     initAutoHideHeader();
     initReveal();
-    initCardSpotlight();
-    initDesktopCursor();
-    initDragRails();
     initFilterSummaries(filterState);
     scheduleIdle(() => {
+      initCardSpotlight();
+      initDesktopCursor();
+      initDragRails();
       initCommandPalette();
       initImageLightbox();
       initTaxonomyPills();
