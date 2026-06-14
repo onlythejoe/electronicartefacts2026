@@ -2766,12 +2766,12 @@ window.EA_SEARCH = {
     `;
   };
 
-  const cardBaseAttrs = (item) => {
+  const cardBaseAttrs = (item, options = {}) => {
     const medium = (item.medium || []).join(" ");
     const discipline = (item.discipline || []).join(" ");
     const researchField = item.researchField || (item.relatedResearchFields || []).join(" ");
     const year = item.temporality?.creationYear || item.date || "";
-    const image = cardImageFor(item);
+    const image = options.media === false ? null : cardImageFor(item);
     return `
       data-filter-card
       data-entry-id="${esc(item.id || "")}"
@@ -3487,7 +3487,7 @@ window.EA_SEARCH = {
           const featured = featuredProjectForHome(["palimpsests"]);
           if (!featured) return "";
           return `
-            <article class="project-card project-card--featured${featured.id === "oeil-de-meg" ? " project-card--oeil-de-meg" : ""}" ${cardBaseAttrs(featured)} ${cardLinkAttrs(featured.route || `./project.html?id=${encodeURIComponent(featured.id)}`, `Open ${featured.title}`)}>
+            <article class="project-card project-card--featured${featured.id === "oeil-de-meg" ? " project-card--oeil-de-meg" : ""}" ${cardBaseAttrs(featured, { media: false })} ${cardLinkAttrs(featured.route || `./project.html?id=${encodeURIComponent(featured.id)}`, `Open ${featured.title}`)}>
               ${cardOverlayLink(featured.route || `./project.html?id=${encodeURIComponent(featured.id)}`, `Open ${featured.title}`)}
               ${projectButterflyBubble(featured, "hero")}
               <div class="project-card__top">

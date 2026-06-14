@@ -2580,6 +2580,51 @@ body.is-header-hidden .shell-header.zone-card {
 
 .latests-grid .project-card--featured {
   min-height: clamp(24rem, 42vw, 33rem);
+  background:
+    linear-gradient(180deg, #ffffff, #ffffff),
+    #ffffff;
+  border-color: rgba(34, 32, 28, 0.08);
+  box-shadow:
+    0 18px 40px rgba(24, 20, 16, 0.08),
+    0 0 0 1px rgba(255, 255, 255, 0.4);
+  color: #1b1a18;
+}
+
+.latests-grid .project-card--featured::before {
+  background: #ffffff;
+  opacity: 1;
+}
+
+.latests-grid .project-card--featured::after {
+  background: radial-gradient(circle at var(--pointer-x, 50%) var(--pointer-y, 0%), rgba(34, 32, 28, 0.05), transparent 34%);
+}
+
+.latests-grid .project-card--featured .card__title,
+.latests-grid .project-card--featured .card__copy,
+.latests-grid .project-card--featured .card__meta,
+.latests-grid .project-card--featured .lede,
+.latests-grid .project-card--featured .metadata-row dd,
+.latests-grid .project-card--featured .archive-card__fact strong {
+  color: #1b1a18;
+  text-shadow: none;
+}
+
+.latests-grid .project-card--featured .project-card__top {
+  border-color: rgba(34, 32, 28, 0.08);
+}
+
+.latests-grid .project-card--featured .chip,
+.latests-grid .project-card--featured .tag,
+.latests-grid .project-card--featured .status-badge,
+.latests-grid .project-card--featured .entity-badge,
+.latests-grid .project-card--featured .metadata-row,
+.latests-grid .project-card--featured .relation-item,
+.latests-grid .project-card--featured .archive-card__fact {
+  border-color: rgba(34, 32, 28, 0.08);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.84), rgba(255, 255, 255, 0.7)),
+    rgba(255, 255, 255, 0.7);
+  color: #1b1a18;
 }
 
 .latests-panel__cta {
