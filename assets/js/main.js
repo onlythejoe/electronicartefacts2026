@@ -1379,6 +1379,7 @@
     const visualPanels = projectPanels(item);
     const signatureCopy = item.description || item.summary || "";
     const signatureTags = (item.tags && item.tags.length ? item.tags : homeCardPills(item)).filter(Boolean);
+    const detailHeroMedia = item.media?.gallery?.length || item.kind === "project" ? projectHeroMedia(item) : "";
 
     if (isOrethSignature(item)) {
       return `
@@ -1402,8 +1403,8 @@
     }
 
     return `
-      <section class="zone-card hero">
-        <div class="section-head">
+      <section class="zone-card hero detail-hero${detailHeroMedia ? " detail-hero--with-media" : ""}" data-entry-id="${esc(item.id || "")}">
+        <div class="section-head detail-hero__content">
           <p class="eyebrow">${esc(catalog.taxonomies?.entityTypes?.[item.kind] || item.kind || kind.toUpperCase())}</p>
           <h1 class="display-title">${esc(item.title)}</h1>
           <p class="lede">${esc(signatureCopy)}</p>
@@ -1413,6 +1414,19 @@
           </div>
           ${summaryMetrics(item, heroMode)}
         </div>
+        ${
+          detailHeroMedia
+            ? `
+              <figure class="detail-hero__visual">
+                ${detailHeroMedia}
+                <figcaption>
+                  <span>${esc(item.statusLabel || item.status || item.kind || "Entry")}</span>
+                  <strong>${esc(item.category || item.type || item.domain || "Electronic Artefacts")}</strong>
+                </figcaption>
+              </figure>
+            `
+            : ""
+        }
       </section>
       ${detailIntro}
       ${specificPanels ? `<section class="detail-grid">${specificPanels}</section>` : ""}

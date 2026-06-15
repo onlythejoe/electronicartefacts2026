@@ -5417,6 +5417,44 @@ window.EA_SEARCH = {
     });
   };
 
+  const initSmartPrefetch = () => {
+    if (document.body.dataset.boundSmartPrefetch === "true") return;
+    document.body.dataset.boundSmartPrefetch = "true";
+
+    const prefetched = new Set();
+    const canPrefetch = (anchor) => {
+      if (!anchor || !anchor.href) return false;
+      if (anchor.target && anchor.target !== "_self") return false;
+      if (anchor.hasAttribute("download")) return false;
+      const url = new URL(anchor.href, window.location.href);
+      if (url.origin !== window.location.origin) return false;
+      if (url.pathname === window.location.pathname && url.search === window.location.search) return false;
+      return url.pathname.endsWith(".html") || url.pathname.endsWith("/");
+    };
+    const prefetch = (anchor) => {
+      if (!canPrefetch(anchor)) return;
+      const url = new URL(anchor.href, window.location.href);
+      url.hash = "";
+      const key = url.href;
+      if (prefetched.has(key)) return;
+      prefetched.add(key);
+
+      const link = document.createElement("link");
+      link.rel = "prefetch";
+      link.as = "document";
+      link.href = key;
+      document.head.append(link);
+    };
+    const onIntent = (event) => {
+      const anchor = event.target.closest?.("a[href]");
+      prefetch(anchor);
+    };
+
+    document.addEventListener("pointerover", onIntent, { passive: true });
+    document.addEventListener("touchstart", onIntent, { passive: true });
+    document.addEventListener("focusin", onIntent);
+  };
+
   const initUXEnhancements = (filterState) => {
     initScrollProgress();
     initAutoHideHeader();
@@ -5428,6 +5466,7 @@ window.EA_SEARCH = {
       initImageLightbox();
       initTaxonomyPills();
       initQuickView();
+      initSmartPrefetch();
     });
   };
 
@@ -5438,9 +5477,35 @@ window.EA_SEARCH = {
   };
 
   const syncNavigationState = (current) => {
+    const detailNavMap = {
+      artefact: "archive",
+      artist: "work",
+      channel: "work",
+      collection: "archive",
+      entity: "research",
+      program: "programs",
+      project: "projects",
+    };
+    const navCurrent =
+      current === "detail"
+        ? detailNavMap[document.body.dataset.detailKind || ""] || current
+        : current === "project-rl"
+          ? "projects"
+          : current;
+    let activeLink = null;
     document.querySelectorAll("[data-nav]").forEach((link) => {
-      if (link.dataset.nav === current) link.setAttribute("aria-current", "page");
-      else link.removeAttribute("aria-current");
+      if (link.dataset.nav === navCurrent) {
+        link.setAttribute("aria-current", "page");
+        activeLink = link;
+      } else {
+        link.removeAttribute("aria-current");
+      }
+    });
+    if (!activeLink) return;
+    const nav = activeLink.closest(".site-nav");
+    if (!nav || nav.scrollWidth <= nav.clientWidth) return;
+    requestAnimationFrame(() => {
+      activeLink.scrollIntoView({ block: "nearest", inline: "center", behavior: "auto" });
     });
   };
 
@@ -7010,6 +7075,7 @@ window.EA_SEARCH = {
     const visualPanels = projectPanels(item);
     const signatureCopy = item.description || item.summary || "";
     const signatureTags = (item.tags && item.tags.length ? item.tags : homeCardPills(item)).filter(Boolean);
+    const detailHeroMedia = item.media?.gallery?.length || item.kind === "project" ? projectHeroMedia(item) : "";
 
     if (isOrethSignature(item)) {
       return `
@@ -7033,8 +7099,8 @@ window.EA_SEARCH = {
     }
 
     return `
-      <section class="zone-card hero">
-        <div class="section-head">
+      <section class="zone-card hero detail-hero${detailHeroMedia ? " detail-hero--with-media" : ""}" data-entry-id="${esc(item.id || "")}">
+        <div class="section-head detail-hero__content">
           <p class="eyebrow">${esc(catalog.taxonomies?.entityTypes?.[item.kind] || item.kind || kind.toUpperCase())}</p>
           <h1 class="display-title">${esc(item.title)}</h1>
           <p class="lede">${esc(signatureCopy)}</p>
@@ -7044,6 +7110,19 @@ window.EA_SEARCH = {
           </div>
           ${summaryMetrics(item, heroMode)}
         </div>
+        ${
+          detailHeroMedia
+            ? `
+              <figure class="detail-hero__visual">
+                ${detailHeroMedia}
+                <figcaption>
+                  <span>${esc(item.statusLabel || item.status || item.kind || "Entry")}</span>
+                  <strong>${esc(item.category || item.type || item.domain || "Electronic Artefacts")}</strong>
+                </figcaption>
+              </figure>
+            `
+            : ""
+        }
       </section>
       ${detailIntro}
       ${specificPanels ? `<section class="detail-grid">${specificPanels}</section>` : ""}
