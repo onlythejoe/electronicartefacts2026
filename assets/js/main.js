@@ -2440,6 +2440,9 @@
         `;
       }
     });
+  };
+
+  const initPageInteractions = () => {
     initFilters(filterState);
     initSearch(searchState, renderSearchResults);
     initCardLinks();
@@ -2451,13 +2454,16 @@
   const load = async () => {
     const current = document.body.dataset.page;
     syncSeoMeta({ current, entityById });
-    await loadIncludes();
+    const includesReady = loadIncludes();
+    renderPageSections();
+    await includesReady;
     syncNavigationState(current);
-    document.querySelectorAll("[data-zone]").forEach((zone, index) => {
+    document.querySelectorAll(".site-main .zone-card").forEach((zone, index) => {
       zone.dataset.zoneIndex = String(index + 1);
       zone.style.setProperty("--zone-index", String(index + 1));
     });
-    renderPageSections();
+    initPageInteractions();
+    document.body.classList.add("is-ready");
     setYear();
   };
 

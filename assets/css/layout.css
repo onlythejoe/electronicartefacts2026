@@ -36,7 +36,7 @@
   right: var(--gutter);
   z-index: 1200;
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(0, 1.55fr);
+  grid-template-columns: minmax(12rem, 0.7fr) minmax(0, 2.2fr);
   gap: 1rem;
   align-items: center;
   contain: layout paint;
@@ -68,6 +68,7 @@
   justify-content: flex-end;
   gap: 0.5rem;
   padding-inline: var(--scroll-rail-padding);
+  min-width: 0;
 }
 
 .site-nav,
@@ -211,11 +212,11 @@
 }
 
 .card-grid--two {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 22rem), 1fr));
 }
 
 .card-grid--three {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 18rem), 1fr));
 }
 
 .archive-rail-shell {
@@ -271,41 +272,41 @@
 }
 
 .project-grid {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 22rem), 1fr));
 }
 
 .stat-grid {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 12rem), 1fr));
 }
 
 .cross-nav-grid {
-  grid-template-columns: repeat(6, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 9.5rem), 1fr));
   margin-top: 0.85rem;
 }
 
 .taxonomy-grid {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 18rem), 1fr));
   align-items: start;
 }
 
 .graph-columns {
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 13rem), 1fr));
 }
 
 .split {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 22rem), 1fr));
 }
 
 .archive-grid {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 18rem), 1fr));
 }
 
 .network-grid {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 18rem), 1fr));
 }
 
 .contact-grid {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 20rem), 1fr));
 }
 
 .list,
@@ -343,34 +344,6 @@
 .catalog-stack > *,
 .projects-stack > * {
   min-width: 0;
-}
-
-@supports (content-visibility: auto) {
-  .zone-card,
-  .panel,
-  .project-card,
-  .program-card,
-  .archive-card,
-  .stat-card,
-  .cross-nav-card,
-  .channel-card,
-  .signature-banner,
-  .graph-surface {
-    content-visibility: auto;
-    contain-intrinsic-size: auto 20rem;
-  }
-
-  .zone-card {
-    contain-intrinsic-size: auto 28rem;
-  }
-
-  .panel {
-    contain-intrinsic-size: auto 14rem;
-  }
-
-  .graph-surface {
-    contain-intrinsic-size: auto 30rem;
-  }
 }
 
 .knowledge-panel {

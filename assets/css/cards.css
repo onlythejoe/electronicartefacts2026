@@ -21,28 +21,6 @@
   -webkit-backdrop-filter: blur(18px) saturate(125%);
 }
 
-.zone-card:not(.shell-header):not(.shell-footer),
-.catalog-group,
-.signature-banner {
-  content-visibility: auto;
-  contain-intrinsic-size: 28rem;
-}
-
-.panel,
-.stat-card,
-.project-card,
-.cross-nav-card,
-.archive-card,
-.program-card {
-  content-visibility: auto;
-  contain-intrinsic-size: 18rem;
-}
-
-.shell-header.zone-card,
-.shell-footer.zone-card {
-  content-visibility: visible;
-}
-
 .zone-card {
   border-radius: var(--radius-xl);
   background:
@@ -200,7 +178,8 @@
   color: var(--text);
   font-size: 0.88rem;
   line-height: 1.35;
-  letter-spacing: -0.02em;
+  letter-spacing: 0;
+  overflow-wrap: anywhere;
 }
 
 .program-registry-card__chips {
@@ -235,7 +214,7 @@
 
 .research-dossier-card--featured .card__title {
   font-size: clamp(1.45rem, 2.3vw, 1.95rem);
-  letter-spacing: -0.055em;
+  letter-spacing: 0;
 }
 
 .research-dossier-card--featured .card__copy {
@@ -330,7 +309,8 @@
   color: var(--text);
   font-size: 0.88rem;
   line-height: 1;
-  letter-spacing: -0.03em;
+  letter-spacing: 0;
+  overflow-wrap: anywhere;
 }
 
 .research-dossier-card__signals {
@@ -365,7 +345,7 @@
 
 .research-note-card--featured .card__title {
   font-size: clamp(1.28rem, 2vw, 1.7rem);
-  letter-spacing: -0.04em;
+  letter-spacing: 0;
 }
 
 .research-note-card__top {
@@ -445,6 +425,7 @@
 .project-card__top,
 .archive-card__header {
   display: flex;
+  flex-wrap: wrap;
   align-items: start;
   justify-content: space-between;
   gap: 1rem;
@@ -468,8 +449,10 @@
   display: inline-flex;
   align-items: center;
   justify-content: flex-end;
+  flex-wrap: wrap;
   gap: 0.45rem;
-  flex: 0 0 auto;
+  flex: 0 1 auto;
+  max-width: 100%;
 }
 
 .project-meg-badge {

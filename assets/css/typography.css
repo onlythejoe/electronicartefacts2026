@@ -56,7 +56,8 @@
   font-weight: 700;
   font-size: clamp(2.2rem, 5vw, 4.7rem);
   line-height: 0.94;
-  letter-spacing: -0.075em;
+  letter-spacing: 0;
+  overflow-wrap: anywhere;
   text-wrap: balance;
 }
 
@@ -81,9 +82,9 @@
   margin: 0;
   font-size: clamp(1.2rem, 2vw, 1.7rem);
   line-height: 1.06;
-  letter-spacing: -0.04em;
-  overflow-wrap: normal;
-  word-break: normal;
+  letter-spacing: 0;
+  overflow-wrap: anywhere;
+  word-break: break-word;
   hyphens: none;
 }
 
@@ -114,17 +115,17 @@
 
 .stat-card strong {
   font-size: 1.1rem;
-  letter-spacing: -0.03em;
-  overflow-wrap: normal;
-  word-break: normal;
+  letter-spacing: 0;
+  overflow-wrap: anywhere;
+  word-break: break-word;
   hyphens: none;
 }
 
 .cross-nav-card strong {
   font-size: 0.96rem;
   letter-spacing: 0.06em;
-  overflow-wrap: normal;
-  word-break: normal;
+  overflow-wrap: anywhere;
+  word-break: break-word;
   hyphens: none;
 }
 

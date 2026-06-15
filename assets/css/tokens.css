@@ -24,6 +24,9 @@
   --section-stack-gap: clamp(1.4rem, 2.7vw, 1.95rem);
   --card-gap: 0.9rem;
   --card-padding: clamp(1.05rem, 2vw, 1.45rem);
+  --header-offset: clamp(6.4rem, 8vw, 7.8rem);
+  --motion-fast: 160ms;
+  --motion-medium: 260ms;
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;

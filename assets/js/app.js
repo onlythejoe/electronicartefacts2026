@@ -4841,7 +4841,8 @@ window.EA_SEARCH = {
 
   const initReveal = () => {
     const targets = document.querySelectorAll(".zone-card, .panel, .project-card, .program-card, .archive-card, .cross-nav-card, .signature-banner");
-    if (!("IntersectionObserver" in window)) {
+    const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    if (reduceMotion || !("IntersectionObserver" in window)) {
       targets.forEach((target) => target.classList.add("is-visible"));
       return;
     }
@@ -4850,6 +4851,7 @@ window.EA_SEARCH = {
       (entries) => {
         entries.forEach((entry) => {
           if (!entry.isIntersecting) return;
+          entry.target.classList.remove("is-reveal-pending");
           entry.target.classList.add("is-visible");
           observer.unobserve(entry.target);
         });
@@ -4861,6 +4863,12 @@ window.EA_SEARCH = {
       if (target.dataset.boundReveal === "true") return;
       target.dataset.boundReveal = "true";
       target.style.setProperty("--reveal-index", String(index % 8));
+      const rect = target.getBoundingClientRect();
+      if (rect.top < window.innerHeight * 1.08) {
+        target.classList.add("is-visible");
+        return;
+      }
+      target.classList.add("is-reveal-pending");
       observer.observe(target);
     });
   };
@@ -5416,14 +5424,10 @@ window.EA_SEARCH = {
     initFilterSummaries(filterState);
     scheduleIdle(() => {
       initCardSpotlight();
-      initDesktopCursor();
       initDragRails();
-      initCommandPalette();
       initImageLightbox();
       initTaxonomyPills();
-      initSectionRail();
       initQuickView();
-      initUXDock();
     });
   };
 
@@ -8067,6 +8071,9 @@ window.EA_SEARCH = {
         `;
       }
     });
+  };
+
+  const initPageInteractions = () => {
     initFilters(filterState);
     initSearch(searchState, renderSearchResults);
     initCardLinks();
@@ -8078,13 +8085,16 @@ window.EA_SEARCH = {
   const load = async () => {
     const current = document.body.dataset.page;
     syncSeoMeta({ current, entityById });
-    await loadIncludes();
+    const includesReady = loadIncludes();
+    renderPageSections();
+    await includesReady;
     syncNavigationState(current);
-    document.querySelectorAll("[data-zone]").forEach((zone, index) => {
+    document.querySelectorAll(".site-main .zone-card").forEach((zone, index) => {
       zone.dataset.zoneIndex = String(index + 1);
       zone.style.setProperty("--zone-index", String(index + 1));
     });
-    renderPageSections();
+    initPageInteractions();
+    document.body.classList.add("is-ready");
     setYear();
   };
 

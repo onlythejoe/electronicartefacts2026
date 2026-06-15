@@ -272,7 +272,8 @@
 
   const initReveal = () => {
     const targets = document.querySelectorAll(".zone-card, .panel, .project-card, .program-card, .archive-card, .cross-nav-card, .signature-banner");
-    if (!("IntersectionObserver" in window)) {
+    const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    if (reduceMotion || !("IntersectionObserver" in window)) {
       targets.forEach((target) => target.classList.add("is-visible"));
       return;
     }
@@ -281,6 +282,7 @@
       (entries) => {
         entries.forEach((entry) => {
           if (!entry.isIntersecting) return;
+          entry.target.classList.remove("is-reveal-pending");
           entry.target.classList.add("is-visible");
           observer.unobserve(entry.target);
         });
@@ -292,6 +294,12 @@
       if (target.dataset.boundReveal === "true") return;
       target.dataset.boundReveal = "true";
       target.style.setProperty("--reveal-index", String(index % 8));
+      const rect = target.getBoundingClientRect();
+      if (rect.top < window.innerHeight * 1.08) {
+        target.classList.add("is-visible");
+        return;
+      }
+      target.classList.add("is-reveal-pending");
       observer.observe(target);
     });
   };
@@ -847,14 +855,10 @@
     initFilterSummaries(filterState);
     scheduleIdle(() => {
       initCardSpotlight();
-      initDesktopCursor();
       initDragRails();
-      initCommandPalette();
       initImageLightbox();
       initTaxonomyPills();
-      initSectionRail();
       initQuickView();
-      initUXDock();
     });
   };
 

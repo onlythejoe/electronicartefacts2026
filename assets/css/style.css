@@ -66,7 +66,8 @@
 .vast-banner__title {
   font-size: clamp(2.2rem, 4.8vw, 4.4rem);
   line-height: 0.93;
-  letter-spacing: -0.07em;
+  letter-spacing: 0;
+  overflow-wrap: anywhere;
   text-wrap: balance;
 }
 
@@ -374,7 +375,8 @@
 
 .selected-works-panel__info strong {
   font-size: clamp(1.02rem, 1.5vw, 1.16rem);
-  letter-spacing: -0.03em;
+  letter-spacing: 0;
+  overflow-wrap: anywhere;
 }
 
 .selected-works-panel__info .card__copy {
@@ -438,8 +440,8 @@
 .selected-works-card .card__title,
 .selected-works-card .card__copy,
 .selected-works-card .selected-works-card__subtitle {
-  overflow-wrap: normal;
-  word-break: normal;
+  overflow-wrap: anywhere;
+  word-break: break-word;
   hyphens: none;
 }
 
@@ -457,7 +459,7 @@
   max-width: 11ch;
   font-size: clamp(1.35rem, 2.3vw, 1.9rem);
   line-height: 1.03;
-  letter-spacing: -0.05em;
+  letter-spacing: 0;
 }
 
 .selected-works-card--featured .card__copy {
@@ -498,10 +500,7 @@
   max-width: 100%;
   width: 100%;
   font-size: clamp(1.02rem, 1.45vw, 1.25rem);
-  letter-spacing: -0.04em;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
+  letter-spacing: 0;
 }
 
 .selected-works-card--compact .project-card__top > div {
@@ -525,9 +524,6 @@
   letter-spacing: 0.1em;
   line-height: 1.2;
   text-transform: uppercase;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
 }
 
 .selected-works-card--compact .tag-cluster {
@@ -676,7 +672,8 @@
   color: var(--text);
   font-size: 0.98rem;
   line-height: 1.28;
-  letter-spacing: -0.03em;
+  letter-spacing: 0;
+  overflow-wrap: anywhere;
 }
 
 [data-page="work"] .work-hero__spec p {
@@ -783,7 +780,7 @@
 [data-page="work"] .archive-card .card__title,
 [data-page="work"] .program-card .card__title {
   font-size: clamp(1.15rem, 1.6vw, 1.45rem);
-  letter-spacing: -0.05em;
+  letter-spacing: 0;
 }
 
 [data-page="work"] .project-card .card__copy,
@@ -1067,7 +1064,8 @@
   font-family: var(--font-display, var(--font-sans));
   font-size: clamp(2.4rem, 5.6vw, 5.9rem);
   line-height: 0.88;
-  letter-spacing: -0.075em;
+  letter-spacing: 0;
+  overflow-wrap: anywhere;
   color: #2f2118;
   text-wrap: balance;
 }
@@ -1576,11 +1574,12 @@
   box-shadow: 0 0 18px rgba(234, 220, 207, 0.42);
 }
 
-[data-bound-reveal="true"] {
+.is-reveal-pending {
   opacity: 0;
   transform: translateY(0.85rem);
 }
 
+.is-reveal-pending.is-visible,
 [data-bound-reveal="true"].is-visible {
   opacity: 1;
   transform: translateY(0);
@@ -2718,7 +2717,7 @@
   top: 50%;
   right: clamp(0.75rem, 1.4vw, 1.1rem);
   z-index: 950;
-  display: grid;
+  display: none;
   gap: 0.34rem;
   width: min(13rem, 18vw);
   transform: translateY(-50%);
@@ -2850,7 +2849,8 @@
   margin: 0;
   font-size: clamp(1.45rem, 3vw, 2.1rem);
   line-height: 1;
-  letter-spacing: -0.04em;
+  letter-spacing: 0;
+  overflow-wrap: anywhere;
 }
 
 .quick-view__body p:not(.card__meta) {
@@ -2895,6 +2895,11 @@
 .ux-dock button:focus-visible {
   border-color: rgba(234, 220, 207, 0.28);
   background: rgba(255, 255, 255, 0.08);
+}
+
+.command-fab,
+.ux-dock {
+  display: none;
 }
 
 .toast-stack {
@@ -3077,6 +3082,14 @@ input:focus-visible {
   .project-immersive__hero {
     height: auto;
     min-height: auto;
+  }
+
+  .project-immersive__hero-copy {
+    position: relative;
+    left: auto;
+    top: auto;
+    width: 100%;
+    max-width: none;
   }
 
   .project-immersive__hero--home {
@@ -3264,7 +3277,7 @@ input:focus-visible {
     overflow-x: auto;
     overflow-y: hidden;
     margin-inline: 0;
-    margin-top: -2rem;
+    margin-top: 0.2rem;
     padding: 0.18rem var(--gutter) 0.12rem;
     width: 100%;
     border-radius: 0;
@@ -3641,6 +3654,11 @@ input:focus-visible {
     width: auto;
   }
 
+  .command-fab,
+  .ux-dock {
+    display: none;
+  }
+
   .graph-surface__stage {
     min-height: 16rem;
   }
@@ -3709,6 +3727,30 @@ input:focus-visible {
   }
 }
 
+@media (hover: none), (pointer: coarse) {
+  .quick-view-button,
+  .ea-cursor {
+    display: none;
+  }
+
+  .project-card:hover,
+  .program-card:hover,
+  .archive-card:hover,
+  .panel:hover,
+  .zone-card:hover,
+  .signature-banner:hover,
+  .channel-card:hover,
+  .cross-nav-card:hover {
+    transform: none;
+  }
+
+  [data-card-media="true"]:hover::before,
+  [data-card-media="true"]:focus-within::before {
+    transform: none;
+    filter: none;
+  }
+}
+
 @media (prefers-reduced-motion: no-preference) {
   .zone-card,
   .button,
@@ -3751,7 +3793,8 @@ input:focus-visible {
     animation: none;
   }
 
-  [data-bound-reveal="true"],
+  .is-reveal-pending,
+  .is-reveal-pending.is-visible,
   [data-bound-reveal="true"].is-visible {
     opacity: 1;
     transform: none;
