@@ -683,6 +683,39 @@
     });
   };
 
+  const initLyricsHighlights = (root = document) => {
+    root.querySelectorAll("[data-lyrics-card]").forEach((card) => {
+      if (card.dataset.boundLyrics === "true") return;
+      card.dataset.boundLyrics = "true";
+      const annotation = card.querySelector("[data-lyrics-annotation]");
+
+      card.addEventListener("click", (event) => {
+        const line = event.target.closest("[data-lyric-line]");
+        if (!line || !card.contains(line)) return;
+        const isActive = line.classList.contains("is-active");
+        card.querySelectorAll("[data-lyric-line]").forEach((node) => {
+          node.classList.remove("is-active");
+          node.setAttribute("aria-pressed", "false");
+        });
+        if (isActive) {
+          if (annotation) {
+            annotation.querySelector(".card__title").textContent = "Select a line";
+            annotation.querySelector(".card__copy").textContent = "Click a phrase to highlight it. This space is reserved for future notes, references and explanations.";
+          }
+          return;
+        }
+        line.classList.add("is-active");
+        line.setAttribute("aria-pressed", "true");
+        if (annotation) {
+          const text = line.querySelector(".lyrics-line__text")?.textContent?.trim() || "";
+          const number = line.querySelector(".lyrics-line__number")?.textContent?.trim() || "";
+          annotation.querySelector(".card__title").textContent = number ? `Line ${number}` : "Selected line";
+          annotation.querySelector(".card__copy").textContent = text;
+        }
+      });
+    });
+  };
+
   const initSectionRail = () => {
     const main = document.querySelector(".site-main");
     if (!main || document.querySelector("[data-section-rail]")) return;
@@ -896,6 +929,7 @@
       initDragRails();
       initImageLightbox();
       initTaxonomyPills();
+      initLyricsHighlights();
       initQuickView();
       initSmartPrefetch();
     });
@@ -905,6 +939,7 @@
     initCardSpotlight(root);
     initQuickView(root);
     initTaxonomyPills(root);
+    initLyricsHighlights(root);
   };
 
   const syncNavigationState = (current) => {

@@ -484,6 +484,16 @@
     return pills.filter(Boolean).slice(0, 4);
   };
 
+  const projectReadAs = (item) => {
+    if (!item) return "";
+    if (item.id === "palimpsests") return "Read as the artistic anchor: an album cycle, archive surface and ORETH world.";
+    if (item.id === "oeil-de-meg") return "Read as delivery proof: a live photography portfolio, CRM logic and performance dossier.";
+    if (item.id === "vestiges") return "Read as narrative expansion: a universe that lets the artistic material branch outward.";
+    if (item.category === "Client Work" || item.category === "External Work") return "Read as applied work: public-facing UX, visual evidence and delivery context.";
+    if (item.category === "Platform" || item.type === "Platform") return "Read as a system surface: product structure, workflow and operational logic.";
+    return `Read as ${item.category || item.type || "a project"} inside the Electronic Artefacts catalogue.`;
+  };
+
   const projectCard = (item) => `
     <article class="project-card" ${cardBaseAttrs(item)}>
       ${entryHrefFor(item) ? `<a class="project-card__overlay-link" href="${esc(entryHrefFor(item))}" aria-label="Open ${esc(item.title)} detail"></a>` : ""}
@@ -499,6 +509,7 @@
         </div>
       </div>
       ${cardCopy(item.summary, 1)}
+      <p class="project-card__editorial-note">${esc(projectReadAs(item))}</p>
       ${signalStrip(item)}
       ${summaryMetrics(item, "project")}
       ${metadataList([
@@ -523,6 +534,7 @@
         </div>
       </div>
       ${cardCopy(item.summary, 1)}
+      <p class="project-card__editorial-note">${esc(projectReadAs(item))}</p>
       ${signalStrip(item)}
       ${tagRow(homeCardPills(item), { limit: 4, compact: true })}
     </article>
@@ -563,6 +575,7 @@
           </div>
         </div>
         ${cardCopy(item.summary || item.description, featured ? 2 : 1)}
+        <p class="project-card__editorial-note">${esc(projectReadAs(item))}</p>
         ${signalStrip(item)}
         ${tagRow(homeCardPills(item), { limit: featured ? 4 : 2, compact: true })}
         ${featured ? linkRow({ label: "Open project", href }, [{ label: "Work archive", href: "./work.html" }]) : ""}
