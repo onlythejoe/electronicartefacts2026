@@ -662,7 +662,7 @@
         <div class="section-head">
           <p class="eyebrow">PHILOSOPHY</p>
           <h2>One language, many forms.</h2>
-          <p class="lede">The same logic can appear as a runtime, a work, a label release or an archive entry.</p>
+          <p class="lede">The same logic can appear as a runtime, a work, a label release or an archive piece.</p>
         </div>
         <div class="split">
           <article class="panel panel--soft">
@@ -809,7 +809,7 @@
 
   const taxonomyLabel = (group, value) => catalog.taxonomies?.[group]?.[value]?.label || value;
   const statusLabelFor = (item) => item.statusLabel || catalog.taxonomies?.statuses?.[item.status]?.label || item.status || "In progress";
-  const detailTypeLabel = (item) => catalog.taxonomies?.entityTypes?.[item.kind] || item.category || item.type || labelFromSlug(item.kind || "entry");
+  const detailTypeLabel = (item) => catalog.taxonomies?.entityTypes?.[item.kind] || item.category || item.type || labelFromSlug(item.kind || "piece");
   const compactValues = (values) => values.map((value) => String(value || "").trim()).filter(Boolean);
   const readableList = (values, fallback = "") => {
     const items = compactValues(values);
@@ -820,6 +820,23 @@
   const relationEntriesFor = (item) => Object.values(item.relations || {}).flat().filter(Boolean);
   const signalValuesFor = (item, limit = 5) =>
     compactValues([item.category, item.type, ...(item.medium || []), ...(item.discipline || []), ...(item.tags || [])]).slice(0, limit);
+  const publicEventLabel = (value) => {
+    const labels = {
+      artifact_published: "Publication",
+      channel_updated: "Update",
+      concept: "Concept",
+      development: "Composition",
+      production: "Production",
+      program_milestone: "Milestone",
+      project_created: "Definition",
+      prototype: "Study",
+      release: "Release",
+      released: "Release",
+      research: "Research",
+      research_updated: "Research update",
+    };
+    return labels[value] || labelFromSlug(value || "Note");
+  };
 
   const detailEditorialCopy = (item, heroMode, relatedCount) => {
     const typeLabel = detailTypeLabel(item);
@@ -837,13 +854,13 @@
 
     if (isOrethSignature(item)) {
       return {
-        title: "Read this as an artistic dossier before reading it as data.",
-        intro: `${item.title} connects release logic, image memory and archive structure. The page keeps the work legible as a cultural object first, then exposes its system context.`,
+        title: "Read this as an artistic dossier.",
+        intro: `${item.title} connects release logic, image memory and archive structure. The page keeps the work legible as a cultural object first, then opens the world around it.`,
         why: "The important point is the translation: fragments become acts, references become a world, and the archive becomes part of the work rather than a footnote.",
-        inspect: ["The opening frame for mood and authorship", "The act structure for narrative order", "The context map for lineage and dependencies"],
-        proof: `${visualSupport} the dossier, with ${relationPhrase} behind it.`,
-        next: "Move from the thesis into the visual plates, then use related entries to follow the album back into the wider Electronic Artefacts system.",
-        cta: item.kind === "project" ? { label: "Open Project Line", href: `./project-rl.html?id=${encodeURIComponent(item.id)}` } : { label: "Open Archive", href: "./archive.html" },
+        inspect: ["The opening frame for mood and authorship", "The act structure for narrative order", "The lineage around the work"],
+        proof: `${visualSupport} the dossier, with ${relationPhrase} around it.`,
+        next: "Move from the thesis into the visual plates, then follow the album back into the wider Electronic Artefacts world.",
+        cta: item.kind === "project" ? { label: "Open Dossier", href: `./project-rl.html?id=${encodeURIComponent(item.id)}` } : { label: "Open Archive", href: "./archive.html" },
       };
     }
 
@@ -852,22 +869,22 @@
         title: "Read this as proof of a live client system.",
         intro: `${item.title} shows how identity, content, interface and operational workflows are gathered into one public surface.`,
         why: "The useful evidence is not only the look of the site. It is the way visual direction, portfolio browsing, back-office structure and performance snapshots hold together.",
-        inspect: ["The hero for the public promise", "The media dossier for interface evidence", "The structure panel for how the work is organised"],
+        inspect: ["The public promise", "The interface evidence", "The organisation of the work"],
         proof: `${assetDocumentation} the public surface, admin layer and performance signals.`,
-        next: "Start with the visuals, then check the reference sheet to understand scope, status and system placement.",
+        next: "Start with the visuals, then continue through scope, status and system placement.",
         cta: item.links?.[0] || { label: "Browse Projects", href: "./projects.html" },
       };
     }
 
     if (heroMode === "project") {
       return {
-        title: "Read this as a project route, not a standalone card.",
+        title: "Read this as a project dossier.",
         intro: `${item.title} sits inside the studio as ${typeLabel.toLowerCase()}, shaped by ${mediumPhrase}.`,
         why: "The page explains what the project is, where it comes from and which surrounding systems make it meaningful.",
-        inspect: ["The summary for the public angle", "The visual proof for concrete material", "The context map for lineage and nearby work"],
-        proof: `${status} status, ${galleryCount ? countLabel(galleryCount, "media item") : "a ready media folder"} and ${relationPhrase}.`,
-        next: "Use the Project Line when you want the structured dossier, or jump into the archive for adjacent fragments.",
-        cta: { label: "Open Project Line", href: `./project-rl.html?id=${encodeURIComponent(item.id)}` },
+        inspect: ["The public angle", "The visual material", "The lineage and nearby work"],
+        proof: `${status} status, ${galleryCount ? countLabel(galleryCount, "media item") : "visual material"} and ${relationPhrase}.`,
+        next: "Open the extended dossier for the deeper reading, or move into the archive for adjacent fragments.",
+        cta: { label: "Open Dossier", href: `./project-rl.html?id=${encodeURIComponent(item.id)}` },
       };
     }
 
@@ -878,7 +895,7 @@
         why: "Programs clarify how the studio thinks, builds and connects work behind the visible projects.",
         inspect: ["The program profile for scope", "The system shape for operating context", "The network for dependencies and influence"],
         proof: `${status} status${dateLabel ? `, updated ${dateLabel}` : ""}, with ${relationPhrase}.`,
-        next: "Use the network links to move from program logic into projects, research fields and archives.",
+        next: "Follow the connected works to move from program logic into projects, research fields and archives.",
         cta: item.links?.[0] || { label: "View Programs", href: "./programs.html" },
       };
     }
@@ -896,12 +913,12 @@
     }
 
     return {
-      title: "Read this as a knowledge entry with a clear route outward.",
-      intro: `${item.title} frames ${mediumPhrase} inside the Electronic Artefacts catalogue.`,
-      why: "The page gives the entry a public explanation first, then keeps the reference data available for verification.",
+        title: "Read this as a knowledge piece with a clear path outward.",
+        intro: `${item.title} frames ${mediumPhrase} inside the Electronic Artefacts world.`,
+      why: "The page gives the piece a public explanation first, then keeps the surrounding context available.",
       inspect: ["The opening summary for meaning", "The signals for subject matter", "The relations for where it belongs"],
       proof: `${status} status, ${relationPhrase}${dateLabel ? ` and ${dateLabel} temporal placement` : ""}.`,
-      next: "Use the related entries and collections to move through the catalogue without losing context.",
+      next: "Use the related works and collections to move through the archive without losing context.",
       cta: item.links?.[0] || { label: "Explore Research", href: "./research.html" },
     };
   };
@@ -922,7 +939,7 @@
       <section class="detail-grid detail-editorial-grid" aria-label="${esc(item.title)} reading guide">
         <article class="panel detail-editorial-card detail-editorial-card--lead">
           <div class="section-head">
-            <p class="card__meta">Reader guide</p>
+          <p class="card__meta">Reading guide</p>
             <h2 class="card__title">${esc(copy.title)}</h2>
             <p class="lede">${esc(copy.intro)}</p>
           </div>
@@ -939,12 +956,12 @@
           </ul>
         </article>
         <article class="panel detail-editorial-card detail-editorial-card--wide">
-          <p class="card__meta">Evidence on this page</p>
+          <p class="card__meta">Evidence</p>
           <p class="card__copy">${esc(copy.proof)}</p>
           ${primary ? linkRow(primary, secondary ? [secondary] : []) : ""}
         </article>
         <article class="panel detail-editorial-card">
-          <p class="card__meta">Next best read</p>
+          <p class="card__meta">Continue</p>
           <p class="card__copy">${esc(copy.next)}</p>
         </article>
       </section>
@@ -958,9 +975,9 @@
     return `
       <section class="panel knowledge-panel knowledge-panel--intro">
         <div class="section-head">
-          <p class="card__meta">Reference dossier</p>
-          <h2 class="card__title">Details that make the entry verifiable.</h2>
-          <p class="lede">Use this lower section to check classification, dates, relationships and discovery signals after the editorial read.</p>
+          <p class="card__meta">Dossier notes</p>
+          <h2 class="card__title">A compact frame around the work.</h2>
+          <p class="lede">Classification, dates and relationships stay visible so the piece can be read in context.</p>
         </div>
         <div class="detail-reference-strip">
           <span><strong>${esc(statusLabelFor(item))}</strong><em>Status</em></span>
@@ -974,8 +991,8 @@
 
   const metadataPanel = (item) =>
     panelShell(
-      "Reference sheet",
-      "Stable identifiers, status, dates and classification for this entry.",
+      "Identity",
+      "Core facts, dates and classification for this work.",
       metadataList([
         { label: "Title", value: item.title },
         { label: "Role", value: item.subtitle || item.type },
@@ -993,8 +1010,8 @@
 
   const tagsPanel = (item) =>
     panelShell(
-      "Reading signals",
-      "Subjects, mediums and disciplines that help visitors understand and discover this entry.",
+      "Themes",
+      "Subjects, mediums and disciplines that shape this work.",
       tagRow([...(item.tags || []), ...(item.medium || []), ...(item.discipline || []), item.category, item.type].filter(Boolean)),
     );
 
@@ -1019,8 +1036,8 @@
     if (!sections.length) return "";
 
     return panelShell(
-      "Context map",
-      "Where this entry comes from, what supports it and what sits nearby.",
+      "Lineage",
+      "Where this work comes from, what supports it and what sits nearby.",
       `<div class="stack">
         ${sections
           .map(
@@ -1045,7 +1062,7 @@
     if (!deps.length) return "";
     return panelShell(
       "Built on",
-      "Dependencies and source systems that explain the entry's foundation.",
+      "Source systems that explain the foundation of the work.",
       `<div class="link-row">${deps.map((entry) => `<a class="tag" href="${esc(entryHref(entry))}">${esc(entry.title)}</a>`).join("")}</div>`,
     );
   };
@@ -1055,13 +1072,13 @@
     if (!timeline || !timeline.entries?.length) return "";
     return panelShell(
       "Timeline",
-      "Milestones that place the entry in time.",
+      "Milestones that place the work in time.",
       `<div class="stack">
         ${timeline.entries
           .map(
             (entry) => `
               <article class="panel panel--soft">
-                <p class="card__meta">${esc(entry.year)} · ${esc(entry.type)}</p>
+                <p class="card__meta">${esc(entry.year)} · ${esc(publicEventLabel(entry.type))}</p>
                 <h3 class="card__title">${esc(entry.title)}</h3>
                 <p class="card__copy">${esc(entry.description)}</p>
               </article>
@@ -1077,13 +1094,13 @@
     if (!rows.length) return "";
     return panelShell(
       "Recent activity",
-      "Latest visible changes, notes or publication signals connected to this entry.",
+      "Visible changes, notes or publication signals connected to this work.",
       `<div class="stack">
         ${rows
           .map(
             (entry) => `
               <article class="panel panel--soft">
-                <p class="card__meta">${esc(entry.date)} · ${esc(entry.type)}</p>
+                <p class="card__meta">${esc(entry.date)} · ${esc(publicEventLabel(entry.type))}</p>
                 <h3 class="card__title">${esc(entry.title)}</h3>
                 <p class="card__copy">${esc(entry.summary)}</p>
               </article>
@@ -1104,7 +1121,7 @@
     if (!fields.length) return "";
     return panelShell(
       "Research thread",
-      "Questions, fields and programs that sit behind the visible surface.",
+      "Questions, fields and programs behind the visible surface.",
       `<div class="link-row">${resolveIds(fields).map((entry) => `<a class="tag" href="${esc(entryHref(entry))}">${esc(entry.title)}</a>`).join("")}</div>`,
     );
   };
@@ -1120,8 +1137,8 @@
     const entries = resolveIds(relatedIds).filter((entry) => entry.id !== item.id);
     if (!entries.length) return "";
     return panelShell(
-      "Nearby entries",
-      "A short continuation path for the next page to open.",
+      "Continue reading",
+      "Adjacent works and contexts to open next.",
       `<div class="card-grid card-grid--two">
         ${entries
           .map(
@@ -1131,7 +1148,7 @@
                 <h3 class="card__title">${esc(entry.title)}</h3>
                 <p class="card__copy">${esc(entry.summary || entry.description || "")}</p>
                 <div class="link-row">
-                  <a class="tag" href="${esc(entryHref(entry))}">Open detail</a>
+                  <a class="tag" href="${esc(entryHref(entry))}">Open</a>
                 </div>
               </article>
             `,
@@ -1149,12 +1166,12 @@
     const layers = architecture.layers || [];
     return panelShell(
       "How the project is structured",
-      architecture.note || "Route, public surface, asset dossier and content layers.",
+      architecture.note || "Public surface, visual material and content layers.",
       `
         <div class="project-architecture">
           <div class="project-architecture__hero">
-            <p class="card__meta">Public route</p>
-            <strong>./project.html?id=${esc(item.id)}</strong>
+            <p class="card__meta">Public form</p>
+            <strong>${esc(item.category || item.type || "Project")}</strong>
           </div>
           <div class="project-architecture__grid">
             <article class="panel panel--soft">
@@ -1163,14 +1180,14 @@
               <p class="card__copy">${esc(architecture.surfaceCopy || item.description || item.summary || "")}</p>
             </article>
             <article class="panel panel--soft">
-              <p class="card__meta">Asset dossier</p>
-              <h3 class="card__title">${esc(projectMediaFolder(item))}</h3>
-              <p class="card__copy">Images and recordings stay with the project so the case study reads as one coherent dossier.</p>
+              <p class="card__meta">Image material</p>
+              <h3 class="card__title">${esc(countLabel(item.media?.gallery?.length || 0, "piece"))}</h3>
+              <p class="card__copy">Images and recordings are gathered with the work so the case study reads as one coherent dossier.</p>
             </article>
             <article class="panel panel--soft">
               <p class="card__meta">System frame</p>
               <h3 class="card__title">${esc(architecture.stack || item.program || "Electronic Artefacts")}</h3>
-              <p class="card__copy">${esc(architecture.stackCopy || "The template carries project-specific assets, narrative and reference data without losing the shared catalogue structure.")}</p>
+              <p class="card__copy">${esc(architecture.stackCopy || "The project carries its own visual material, narrative and references while staying connected to the wider studio structure.")}</p>
             </article>
             <article class="panel panel--soft">
               <p class="card__meta">Content layers</p>
@@ -1188,7 +1205,6 @@
     if (item.kind !== "project") return "";
     if (isOrethSignature(item)) return "";
     const gallery = item.media?.gallery || [];
-    const folder = projectMediaFolder(item);
     if (item.id === "palimpsests" && gallery.length) {
       const heroImage = gallery.find((image) => String(image.src || "").includes("palimpsests.jpg")) || gallery[0];
       const secondaryImages = gallery.filter((image) => image !== heroImage);
@@ -1234,8 +1250,8 @@
       `;
     }
     return panelShell(
-      "Visual proof",
-      "Images, recordings and interface captures that explain the project beyond the summary.",
+      "Visual material",
+      "Images, recordings and interface captures that carry the work beyond the summary.",
       `
         <div class="project-gallery">
           ${
@@ -1252,9 +1268,9 @@
                   .join("")
               : `
                 <div class="panel panel--soft">
-                  <p class="card__meta">Assets</p>
-                  <h3 class="card__title">Visual dossier ready</h3>
-                  <p class="card__copy">Add cover.svg, screenshots or recordings to <strong>${esc(folder)}</strong>. The project page will turn them into a visual explanation.</p>
+                  <p class="card__meta">Images</p>
+                  <h3 class="card__title">Visual material attached to the work</h3>
+                  <p class="card__copy">Images, recordings and interface captures are shown here when they are part of the public dossier.</p>
                 </div>
               `
           }
@@ -1294,7 +1310,7 @@
     return [
       panelShell(
         "Opening frame",
-        "The shortest way into the album before the track and reference material.",
+        "The shortest way into the album before the track material.",
         `
           <div class="stack">
             <article class="panel panel--soft">
@@ -1307,7 +1323,7 @@
       ),
       panelShell(
         "Release identity",
-        "The stable identity fields behind the artistic surface.",
+        "The identity of the release.",
         metadataList([
           { label: "Title", value: item.title },
           { label: "Type", value: item.type },
@@ -1376,9 +1392,9 @@
             ${(entry.lines || []).map((line, index) => lineMarkup(entry, line, index)).join("")}
           </div>
           <aside class="lyrics-annotation" data-lyrics-annotation="${esc(entry.id)}">
-            <p class="card__meta">Annotation layer</p>
+            <p class="card__meta">Notes</p>
             <h4 class="card__title">Select a line</h4>
-            <p class="card__copy">Click a phrase to highlight it. This space is reserved for future notes, references and explanations.</p>
+            <p class="card__copy">Click a phrase to isolate it. Notes, references and explanations can live here as the text grows.</p>
           </aside>
         </div>
         ${entry.note ? `<p class="card__copy lyrics-card__note">${esc(entry.note)}</p>` : ""}
@@ -1387,7 +1403,7 @@
 
     return panelShell(
       "Texts / Lyrics",
-      "A structured lyric surface for Palimpsests. Lines are already addressable for future annotation and highlight systems.",
+      "A lyric surface for Palimpsests, built for close reading line by line.",
       `<div class="lyrics-stack">${lyricEntries.map(entryMarkup).join("")}</div>`,
     );
   };
@@ -1501,7 +1517,7 @@
       ),
       panelShell(
         "Research Outcomes",
-        "What the project contributed to the Electronic Artefacts knowledge system.",
+        "What the project contributed to the Electronic Artefacts research line.",
         listMarkup(item.researchOutcomes || []),
       ),
       panelShell(
@@ -1514,12 +1530,12 @@
         "The implementation study was framed around modular services and evented projections.",
         `<div class="stack">
           ${sequenceMarkup(umos.stack || [])}
-          ${softPanel("Architecture note", "No runtime cross-database joins", umos.note || "")}
+          ${softPanel("Architecture note", "Services remain separated at runtime", umos.note || "")}
         </div>`,
       ),
       panelShell(
-        "Project Status",
-        "Stable project metadata and continuation paths.",
+        "Current State",
+        "The public context of the project and the paths around it.",
         `<div class="stack">
           ${metadataList([
             { label: "Status", value: item.statusLabel || statusLabelFor(item) },
@@ -1547,7 +1563,7 @@
     if (!memberships.length) return "";
     return panelShell(
       "Collection shelf",
-      "Curated groups where this entry also appears.",
+      "Curated groups where this work also appears.",
       `<div class="link-row">${memberships
         .map((collection) => `<a class="tag" href="./collection.html?id=${encodeURIComponent(collection.id)}">${esc(collection.title)}</a>`)
         .join("")}</div>`,
@@ -1559,8 +1575,8 @@
     const members = window.EA_COLLECTIONS.resolve ? window.EA_COLLECTIONS.resolve(item, catalog) : [];
     if (!members.length) return "";
     return panelShell(
-      "Included entries",
-      "The entries collected inside this shelf.",
+      "Included works",
+      "The works collected inside this shelf.",
       `<div class="card-grid card-grid--two">
         ${members
           .map(
@@ -1570,7 +1586,7 @@
                 <h3 class="card__title">${esc(entry.title)}</h3>
                 <p class="card__copy">${esc(entry.summary || entry.description || "")}</p>
                 <div class="link-row">
-                  <a class="tag" href="./entity.html?id=${encodeURIComponent(entry.id)}">Open detail</a>
+                  <a class="tag" href="./entity.html?id=${encodeURIComponent(entry.id)}">Open</a>
                 </div>
               </article>
             `,
@@ -1654,7 +1670,7 @@
             { label: "Domain", value: item.domain },
             { label: "System group", value: item.systemGroup },
             { label: "Creation year", value: item.temporality?.creationYear },
-            { label: "Release date", value: item.temporality?.releaseDate || "—" },
+            { label: "Release date", value: item.temporality?.releaseDate || "No public date" },
             { label: "Last updated", value: item.temporality?.lastUpdated },
             { label: "Era", value: item.temporality?.era },
           ])}
@@ -1666,7 +1682,7 @@
         </article>
         <article class="panel program-detail-panel">
           <p class="card__meta">Nearby systems</p>
-          <p class="card__copy">Entries connected through origin, lineage, dependency or influence.</p>
+          <p class="card__copy">Works connected through origin, lineage, dependency or influence.</p>
           <div class="link-row">
             ${resolveIds(networkItems)
               .slice(0, 8)
@@ -1690,7 +1706,7 @@
         <section class="zone-card hero">
           <div class="section-head">
             <p class="eyebrow">${esc(kind.toUpperCase())}</p>
-            <h1 class="display-title">Entry not found.</h1>
+            <h1 class="display-title">Work not found.</h1>
             <p class="lede">Return to the archive or open the knowledge system from the homepage.</p>
             <div class="button-row">
               <a class="button button--primary" href="./archive.html">Archive</a>
@@ -1726,7 +1742,7 @@
     const signatureActions = (() => {
       const actions = [...primaryLinks.slice(0, 1)];
       if (item.kind === "project") {
-        actions.push({ label: "View Project Line", href: `./project-rl.html?id=${encodeURIComponent(item.id)}` });
+        actions.push({ label: "Open Dossier", href: `./project-rl.html?id=${encodeURIComponent(item.id)}` });
         actions.push({ label: "Archive", href: "./archive.html" });
       } else if (item.kind === "artist") {
         actions.push({ label: "Work", href: "./work.html" });
@@ -1739,7 +1755,7 @@
     })();
     const heroActions = [
       ...primaryLinks.slice(0, 1),
-      ...(item.kind === "project" ? [{ label: "View Project Line", href: `./project-rl.html?id=${encodeURIComponent(item.id)}` }] : []),
+      ...(item.kind === "project" ? [{ label: "Open Dossier", href: `./project-rl.html?id=${encodeURIComponent(item.id)}` }] : []),
     ];
     const detailIntro = item.kind === "program" ? programSpecificPanels(item) : "";
     const specificPanels = projectSpecificPanels(item);
@@ -1788,7 +1804,7 @@
               <figure class="detail-hero__visual">
                 ${detailHeroMedia}
                 <figcaption>
-                  <span>${esc(item.statusLabel || item.status || item.kind || "Entry")}</span>
+                  <span>${esc(item.statusLabel || item.status || item.kind || "Piece")}</span>
                   <strong>${esc(item.category || item.type || item.domain || "Electronic Artefacts")}</strong>
                 </figcaption>
               </figure>
@@ -1823,7 +1839,7 @@
                 return `
                 <article class="panel panel--soft card-link-surface" ${cardLinkAttrs(href, `Open ${entry.title}`)}>
                   ${cardOverlayLink(href, `Open ${entry.title}`)}
-                  <p class="card__meta">${esc(entry.date)} · ${esc(entry.type)}</p>
+                  <p class="card__meta">${esc(entry.date)} · ${esc(publicEventLabel(entry.type))}</p>
                   <h3 class="card__title">${esc(entry.title)}</h3>
                   <p class="card__copy">${esc(entry.summary)}</p>
                 </article>
@@ -2040,7 +2056,7 @@
         <div class="section-head">
           <p class="eyebrow">CATALOG MATRIX</p>
           <h2>${esc(items.length)} elements in view</h2>
-          <p class="lede">Contents, tags and metadata are shown together so you can tune the catalogue from a single overview.</p>
+          <p class="lede">Works, tags and context are gathered together for a clear view of the archive.</p>
         </div>
         ${metricRail(
           [
@@ -2050,7 +2066,7 @@
           ],
           { limit: 3, compact: true },
         )}
-        <div class="catalog-table-shell" role="region" aria-label="Catalogue overview table" tabindex="0">
+        <div class="catalog-table-shell" role="region" aria-label="Archive overview table" tabindex="0">
           <table class="catalog-table">
             <thead>
               <tr>
@@ -2068,9 +2084,9 @@
                   const titleHref = entryHref(item);
                   const contentBlocks = collectOverviewBlocks(item);
                   const tags = collectOverviewTags(item);
-                  const typeLabel = esc(catalog.taxonomies?.entityTypes?.[item.kind] || item.kind || "ENTRY");
-                  const year = item.temporality?.creationYear || item.temporality?.releaseDate || String(item.temporality?.lastUpdated || "").slice(0, 4) || "—";
-                  const visibilityLabel = catalog.taxonomies?.visibility?.[item.visibility]?.label || item.visibility || "—";
+                  const typeLabel = esc(catalog.taxonomies?.entityTypes?.[item.kind] || item.kind || "Piece");
+                  const year = item.temporality?.creationYear || item.temporality?.releaseDate || String(item.temporality?.lastUpdated || "").slice(0, 4) || "Undated";
+                  const visibilityLabel = catalog.taxonomies?.visibility?.[item.visibility]?.label || item.visibility || "Not specified";
                   return `
                     <tr data-entry-id="${esc(item.id || "")}">
                       <td class="catalog-table__identity">
@@ -2099,7 +2115,7 @@
                       </td>
                       <td class="catalog-table__tags-cell">
                         <div class="catalog-tags">
-                          ${tags.length ? tags.map((value) => chip(value)).join("") : `<span class="catalog-table__empty">No tags</span>`}
+                          ${tags.length ? tags.map((value) => chip(value)).join("") : `<span class="catalog-table__empty">Unlisted</span>`}
                         </div>
                       </td>
                       <td class="catalog-table__meta-cell">
@@ -2107,11 +2123,11 @@
                           ${statusBadge(item.status, item.statusLabel)}
                           <span class="catalog-table__meta-line">${esc(visibilityLabel)}</span>
                           <span class="catalog-table__meta-line">${esc(year)}</span>
-                          <span class="catalog-table__meta-line">${esc(item.kind || "entry")}</span>
+                          <span class="catalog-table__meta-line">${esc(item.kind || "piece")}</span>
                         </div>
                       </td>
                       <td class="catalog-table__open-cell">
-                        ${titleHref ? `<a class="tag catalog-table__open" href="${esc(titleHref)}">Open</a>` : `<span class="catalog-table__empty">—</span>`}
+                        ${titleHref ? `<a class="tag catalog-table__open" href="${esc(titleHref)}">Open</a>` : `<span class="catalog-table__empty">Unavailable</span>`}
                       </td>
                     </tr>
                   `;
@@ -2128,13 +2144,13 @@
       <section class="zone-card hero" data-search-shell>
         <div class="section-head">
           <p class="eyebrow">OVERVIEW</p>
-          <h1 class="display-title">Catalogue matrix.</h1>
-          <p class="lede">Search titles, scan contents and compare every tag in one table.</p>
+          <h1 class="display-title">Archive matrix.</h1>
+          <p class="lede">Search titles, read across the archive and compare themes in one view.</p>
         </div>
         <div class="taxonomy-grid">
           <div class="taxonomy-column">
             <p class="card__meta">Query</p>
-            <input class="search-input" type="search" data-search-input placeholder="Search title, content or tags..." />
+            <input class="search-input" type="search" data-search-input placeholder="Search title, text or tags..." />
           </div>
           <div class="taxonomy-column">
             <p class="card__meta">Status</p>
@@ -2244,7 +2260,7 @@
     orientationSection({
       eyebrow: "FEATURED PATHS",
       title: "Featured Paths",
-      copy: "Choose the path that matches why you are here. Each route points to the part of the ecosystem that should answer your question first.",
+      copy: "Choose the path that matches why you are here. Each direction points to the part of the ecosystem that should answer your question first.",
       cards: [
         {
           kicker: "Investors",
@@ -2309,7 +2325,7 @@
           <div class="program-registry-card__facts">
             <div class="program-registry-card__fact">
               <span>Technology</span>
-              <strong>${esc(options.technology || techItems.join(" / ") || "—")}</strong>
+              <strong>${esc(options.technology || techItems.join(" / ") || "Research stack")}</strong>
             </div>
             <div class="program-registry-card__fact">
               <span>Lineage</span>
@@ -2326,7 +2342,7 @@
       registryCard(vaste, {
         title: "VASTE",
         kicker: "PROGRAM",
-        statusLabel: "Active Development",
+        statusLabel: "Active Research",
         technology: "TypeScript",
         role: "Core Program",
         lineage: "ARCA",
@@ -2599,7 +2615,7 @@
       {
         kicker: "For the artistic line",
         title: "Enter Palimpsests first.",
-        copy: "It is the clearest route into ORETH, memory, traces and the label layer.",
+        copy: "It is the clearest path into ORETH, memory, traces and the label layer.",
         href: "./palimpsests.html",
         cta: "Open Palimpsests",
       },
@@ -2635,8 +2651,8 @@
       <section class="zone-card hero project-pathways-panel">
         <div class="section-head">
           <p class="eyebrow">HOW TO READ THIS PAGE</p>
-          <h2>Choose the route that matches your intent.</h2>
-          <p class="lede">The same catalogue can be read as art, delivery proof or systems research. These three routes make that choice explicit.</p>
+          <h2>Choose the path that matches your intent.</h2>
+          <p class="lede">The same body of work can be read as art, delivery proof or systems research. These three paths make that choice explicit.</p>
         </div>
         <div class="card-grid card-grid--three project-pathways-grid">
           ${projectPathways
@@ -2660,7 +2676,7 @@
         <div class="section-head">
           <p class="eyebrow">THREE PILLARS</p>
           <h2>Theory, art and technology</h2>
-          <p class="lede">A simple map for understanding how the catalogue is organised before opening individual dossiers.</p>
+          <p class="lede">A simple map for understanding how the work is organised before opening individual dossiers.</p>
         </div>
         <div class="split">
           <article class="panel panel--soft">
@@ -2707,9 +2723,9 @@
       return `
         <section class="zone-card hero">
           <div class="section-head">
-            <p class="eyebrow">PROJECT RL</p>
-            <h1 class="display-title">Project line not found.</h1>
-            <p class="lede">Open a project from the landing page to access its RL surface.</p>
+            <p class="eyebrow">PROJECT DOSSIER</p>
+            <h1 class="display-title">Dossier not found.</h1>
+            <p class="lede">Open a project from the landing page to access its extended dossier.</p>
             <div class="button-row">
           <a class="button button--primary" href="./projects.html">Browse Projects</a>
           <a class="button button--secondary" href="./work.html">Return to Work</a>
@@ -2720,7 +2736,7 @@
     }
     const relatedCount = relationEntriesFor(item).length;
     const projectLineActions = [
-      { label: "Open Project Detail", href: `./project.html?id=${encodeURIComponent(item.id)}` },
+      { label: "Overview", href: `./project.html?id=${encodeURIComponent(item.id)}` },
       { label: "Browse Projects", href: "./projects.html" },
     ];
     const specificPanels = projectSpecificPanels(item);
@@ -2729,11 +2745,11 @@
       <section class="zone-card hero">
         <div class="section-head${item.id === "oeil-de-meg" ? " section-head--signature" : ""}">
           ${projectSignatureBubble(item, "hero")}
-          <p class="eyebrow">PROJECT RL</p>
+          <p class="eyebrow">PROJECT DOSSIER</p>
           <h1 class="display-title">${esc(item.title)}</h1>
           <p class="lede">${esc(item.summary || item.description || "")}</p>
           <div class="button-row">
-            <a class="button button--primary" href="./project.html?id=${encodeURIComponent(item.id)}">Open Project Detail</a>
+            <a class="button button--primary" href="./project.html?id=${encodeURIComponent(item.id)}">Overview</a>
             <a class="button button--secondary" href="./projects.html">Browse Projects</a>
             <a class="button button--secondary" href="./archive.html">Open Archive</a>
           </div>
@@ -2742,7 +2758,7 @@
           <article class="stat-card">
             <p class="card__meta">Category</p>
             <strong>${esc(item.category || item.type || "Project")}</strong>
-            <span>${esc(item.type || "Project entry")}</span>
+            <span>${esc(item.type || "Project work")}</span>
           </article>
           <article class="stat-card">
             <p class="card__meta">Program</p>
@@ -2752,7 +2768,7 @@
           <article class="stat-card">
             <p class="card__meta">Era</p>
             <strong>${esc(item.temporality?.era || "foundation")}</strong>
-            <span>Where the project sits in the catalogue timeline.</span>
+            <span>Where the project sits in the timeline.</span>
           </article>
         </div>
       </section>
@@ -2809,7 +2825,7 @@
         <div class="section-head">
           <p class="eyebrow">WORK CATALOG</p>
           <h2>Internal works, collaborations and external work</h2>
-          <p class="lede">Curated into a clean catalogue so the relation between the layers stays visible.</p>
+          <p class="lede">Curated so the relation between the layers stays visible.</p>
         </div>
         <div class="catalog-stack">
           ${groups
@@ -2911,13 +2927,13 @@
         target.innerHTML = `
           <section class="zone-card hero">
             <div class="section-head">
-              <p class="eyebrow">RENDER ERROR</p>
-              <h1 class="display-title">${esc(selector)}</h1>
-              <p class="lede">This section failed to render. Reload the page and check the browser console for details.</p>
+              <p class="eyebrow">UNAVAILABLE</p>
+              <h1 class="display-title">Section unavailable.</h1>
+              <p class="lede">This part of the page could not be displayed for the moment.</p>
             </div>
             <div class="panel panel--soft">
-              <p class="card__meta">Error</p>
-              <p class="card__copy">${esc(error?.message || String(error))}</p>
+              <p class="card__meta">Notice</p>
+              <p class="card__copy">Please continue with the rest of the page.</p>
             </div>
           </section>
         `;

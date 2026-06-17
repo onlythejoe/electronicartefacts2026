@@ -500,7 +500,20 @@
   }
 
   .taxonomy-column .pill-cloud {
-    padding-bottom: 0.1rem;
+    flex-wrap: wrap;
+    overflow: visible;
+    margin-right: 0;
+    padding-bottom: 0;
+  }
+
+  .taxonomy-column .filter-chip {
+    flex: 1 1 min(100%, 8.5rem);
+    min-width: 0;
+    padding-inline: 0.58rem;
+    font-size: 0.66rem;
+    letter-spacing: 0.06em;
+    overflow-wrap: normal;
+    word-break: normal;
   }
 }
 

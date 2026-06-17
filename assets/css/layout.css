@@ -17,7 +17,7 @@
 .site-main {
   display: grid;
   grid-template-columns: minmax(0, 1fr);
-  gap: 1rem;
+  gap: var(--section-stack-gap);
   padding: clamp(1.05rem, 1.8vw, 1.45rem) 0 1.75rem;
 }
 
@@ -110,25 +110,25 @@
 }
 
 .hero {
-  padding: clamp(1.2rem, 2.8vw, 2rem);
+  padding: clamp(1.35rem, 3vw, 2.25rem);
 }
 
 .hero-layout {
   display: grid;
   grid-template-columns: minmax(0, 1.45fr) minmax(16rem, 0.82fr);
-  gap: 1rem;
+  gap: var(--card-grid-gap);
   align-items: stretch;
 }
 
 .hero-copy {
   display: grid;
-  gap: 1rem;
+  gap: clamp(0.95rem, 1.7vw, 1.25rem);
   align-content: start;
 }
 
 .hero-aside {
   display: grid;
-  gap: 0.85rem;
+  gap: clamp(0.85rem, 1.5vw, 1.08rem);
   align-content: start;
 }
 

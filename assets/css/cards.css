@@ -70,6 +70,7 @@
 .catalog-group {
   display: grid;
   gap: var(--card-gap);
+  align-content: start;
   min-height: 100%;
   padding: var(--card-padding);
 }
@@ -938,15 +939,80 @@
 
   .catalog-table-shell {
     border-radius: var(--radius-md);
+    overflow: visible;
+    border: 0;
+    background: transparent;
+    box-shadow: none;
   }
 
   .catalog-table {
-    min-width: 80rem;
+    display: grid;
+    min-width: 0;
+    width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
   }
 
-  .catalog-table thead th,
+  .catalog-table thead {
+    display: none;
+  }
+
+  .catalog-table tbody {
+    display: grid;
+    gap: var(--card-grid-gap);
+  }
+
+  .catalog-table tbody tr {
+    display: grid;
+    gap: 0.62rem;
+    padding: var(--card-padding);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-lg);
+    background:
+      linear-gradient(180deg, rgba(255, 255, 255, 0.042), rgba(255, 255, 255, 0.014)),
+      rgba(255, 255, 255, 0.016);
+    box-shadow: var(--shadow-soft);
+  }
+
   .catalog-table tbody td {
-    padding-inline: 0.78rem;
+    display: grid;
+    gap: 0.34rem;
+    width: auto !important;
+    padding: 0;
+    border: 0;
+  }
+
+  .catalog-table tbody td::before {
+    color: rgba(234, 220, 207, 0.78);
+    font-size: 0.62rem;
+    font-weight: 850;
+    letter-spacing: 0.16em;
+    line-height: 1.2;
+    text-transform: uppercase;
+  }
+
+  .catalog-table tbody td:nth-child(1)::before {
+    content: "Type";
+  }
+
+  .catalog-table tbody td:nth-child(2)::before {
+    content: "Title";
+  }
+
+  .catalog-table tbody td:nth-child(3)::before {
+    content: "Content";
+  }
+
+  .catalog-table tbody td:nth-child(4)::before {
+    content: "Tags";
+  }
+
+  .catalog-table tbody td:nth-child(5)::before {
+    content: "Meta";
+  }
+
+  .catalog-table tbody td:nth-child(6)::before {
+    content: "Open";
   }
 
   .catalog-table__content-item {

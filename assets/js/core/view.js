@@ -414,7 +414,7 @@
       archive: [
         { label: "FIELD", value: item.researchField || item.category || item.type || "Archive", note: item.project || "", fill: 0.82, tone: "archive" },
         { label: "RELATION", value: `${relatedCount}`, note: countLabel(relatedCount, "link"), fill: metricFill(relatedCount, 6), tone: "system" },
-        { label: "DATE", value: item.date || updatedYear || "—", note: item.artist || item.type || "", fill: 0.58, tone: "live" },
+        { label: "DATE", value: item.date || updatedYear || "Undated", note: item.artist || item.type || "", fill: 0.58, tone: "live" },
       ],
       research: [
         { label: "FIELD", value: item.researchField || item.category || "Research", note: item.statusLabel || statusValue, fill: 0.82, tone: "research" },
@@ -491,7 +491,7 @@
     if (item.id === "vestiges") return "Read as narrative expansion: a universe that lets the artistic material branch outward.";
     if (item.category === "Client Work" || item.category === "External Work") return "Read as applied work: public-facing UX, visual evidence and delivery context.";
     if (item.category === "Platform" || item.type === "Platform") return "Read as a system surface: product structure, workflow and operational logic.";
-    return `Read as ${item.category || item.type || "a project"} inside the Electronic Artefacts catalogue.`;
+    return `Read as ${item.category || item.type || "a project"} inside the Electronic Artefacts world.`;
   };
 
   const projectCard = (item) => `
@@ -899,10 +899,10 @@
           <div class="section-head">
             <p class="eyebrow">WORK</p>
             <h2>Selected works.</h2>
-            <p class="lede">A curated route through the projects currently shaping the studio line.</p>
+            <p class="lede">A curated path through the projects currently shaping the studio line.</p>
           </div>
           <aside class="panel panel--soft selected-works-panel__info">
-            <p class="card__meta">CURATED ROUTE</p>
+            <p class="card__meta">CURATED PATH</p>
             <strong>${esc(routeCount)}</strong>
             <p class="card__copy">The home keeps one lead project and a short supporting queue. It points toward the archive without flattening the work into a grid.</p>
             ${metricRail(
@@ -919,7 +919,7 @@
           ${selectedWorksCard(lead, { featured: true })}
           <div class="selected-works-panel__stack">
             <div class="selected-works-panel__stack-head">
-              <p class="card__meta">MORE ROUTES</p>
+              <p class="card__meta">MORE PATHS</p>
               <span>${esc(countLabel(supporting.length, "item"))}</span>
             </div>
             <div class="selected-works-panel__stack-grid">

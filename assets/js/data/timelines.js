@@ -2,9 +2,12 @@ window.EA_TIMELINES = [
   {
     entityId: "vaste",
     entries: [
+      { year: "2023", title: "ARCA lineage", description: "Archive and certification experiments establish the lineage.", type: "concept" },
       { year: "2024", title: "Concept foundation", description: "Initial systems frame.", type: "concept" },
       { year: "2025", title: "Runtime prototype", description: "Prototype runtime and research base.", type: "prototype" },
-      { year: "2026", title: "Public website", description: "External reference and studio presence.", type: "release" },
+      { year: "2026", title: "Graph runtime evolution", description: "Graph runtime architecture and contextual execution mature.", type: "development" },
+      { year: "2026", title: "Performance optimization phase", description: "Execution paths and pipelines are tuned for efficiency.", type: "production" },
+      { year: "2026", title: "Public website", description: "External reference and studio presence.", type: "released" },
     ],
   },
   {
@@ -17,8 +20,11 @@ window.EA_TIMELINES = [
   {
     entityId: "palimpsests",
     entries: [
+      { year: "2025", title: "Concept", description: "The cycle is defined as a five-act album project.", type: "concept" },
+      { year: "2025", title: "Writing", description: "Lyrics, act structure and editorial framing are drafted.", type: "development" },
       { year: "2025", title: "Cycle defined", description: "Album frame and research branches locked.", type: "development" },
-      { year: "2026", title: "Audio artefacts released", description: "First public audio artefacts are surfaced.", type: "released" },
+      { year: "2026", title: "Production", description: "Audio fragments move through studio production.", type: "production" },
+      { year: "2026", title: "Releases", description: "First public audio artefacts are surfaced.", type: "released" },
     ],
   },
   {
@@ -32,13 +38,23 @@ window.EA_TIMELINES = [
     entityId: "electronic-artefacts",
     entries: [
       { year: "2024", title: "Studio foundation", description: "Identity and classification layer are defined.", type: "concept" },
+      { year: "2025", title: "Research phase", description: "The content graph and studio taxonomy expand.", type: "research" },
       { year: "2026", title: "Knowledge system", description: "Site settles into a connected archive.", type: "production" },
+      { year: "2026", title: "Public platform phase", description: "The public knowledge surface is refined and exposed.", type: "released" },
     ],
   },
   {
     entityId: "entropy",
     entries: [
       { year: "2026", title: "Observation sequence", description: "Entropy observations documented.", type: "research" },
+    ],
+  },
+  {
+    entityId: "unionmob",
+    entries: [
+      { year: "2025", title: "Concept", description: "The governed creative operating system is framed.", type: "concept" },
+      { year: "2026", title: "Governance model", description: "Scope, authority and capabilities are structured.", type: "development" },
+      { year: "2026", title: "UMOS architecture", description: "The operating system architecture is outlined.", type: "prototype" },
     ],
   },
 ];

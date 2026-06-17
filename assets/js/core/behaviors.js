@@ -571,7 +571,7 @@
       <section class="command-palette__panel" role="dialog" aria-modal="true" aria-label="Quick navigation">
         <div class="command-palette__search">
           <span aria-hidden="true">⌕</span>
-          <input type="search" placeholder="Jump to a page, project, program..." data-command-input />
+          <input type="search" placeholder="Search pages, projects and programs..." data-command-input />
           <button type="button" data-command-close aria-label="Close quick navigation">Esc</button>
         </div>
         <div class="command-palette__results" data-command-results></div>
@@ -700,7 +700,7 @@
         if (isActive) {
           if (annotation) {
             annotation.querySelector(".card__title").textContent = "Select a line";
-            annotation.querySelector(".card__copy").textContent = "Click a phrase to highlight it. This space is reserved for future notes, references and explanations.";
+            annotation.querySelector(".card__copy").textContent = "Click a phrase to isolate it. Notes, references and explanations can live here as the text grows.";
           }
           return;
         }
@@ -986,7 +986,7 @@
     if (current === "project-rl") {
       const id = new URLSearchParams(window.location.search).get("id");
       const entry = id ? entityById(id) : null;
-      if (entry) document.title = `${entry.title} RL - Electronic Artefacts`;
+      if (entry) document.title = `${entry.title} Dossier - Electronic Artefacts`;
       return;
     }
 
@@ -1017,19 +1017,19 @@
       work: "Studio work, services and selected collaborations.",
       research: "Research fields, notes and system studies across the Electronic Artefacts ecosystem.",
       programs: "Programs, runtimes and architectural systems that power Electronic Artefacts.",
-      projects: "Projects, albums and client work in the Electronic Artefacts catalogue.",
+      projects: "Projects, albums and client work in the Electronic Artefacts archive.",
       archive: "Archived projects, systems and research threads preserved by Electronic Artefacts.",
       about: "Electronic Artefacts is an independent creative technology studio spanning research, software development, digital design, communication and artistic production.",
       contact: "Contact Electronic Artefacts by email and social channels.",
       search: "Search the Electronic Artefacts knowledge base.",
       project: "Electronic Artefacts project page.",
-      "project-rl": "Electronic Artefacts RL surface.",
+      "project-rl": "Electronic Artefacts project dossier.",
       artefact: "Electronic Artefacts artefact page.",
       collection: "Electronic Artefacts collection page.",
       channel: "Electronic Artefacts channel page.",
       artist: "Electronic Artefacts artist page.",
       program: "Detailed registry of Electronic Artefacts programs, with status, lineage and system context.",
-      entity: "Electronic Artefacts knowledge entry.",
+      entity: "Electronic Artefacts knowledge piece.",
       palimpsests: "Palimpsests project page.",
       "mentions-legales": "Legal notice for the Electronic Artefacts site.",
       confidentialite: "Privacy policy for the Electronic Artefacts site.",
@@ -1037,7 +1037,7 @@
 
     const description =
       (detailEntry?.kind === "project" && current === "project-rl"
-        ? `${detailEntry.summary || detailEntry.description || detailEntry.title} RL surface.`
+        ? `${detailEntry.summary || detailEntry.description || detailEntry.title} Extended project dossier.`
         : detailEntry?.summary || detailEntry?.description || pageDescriptions[baseName] || pageDescriptions[current] || fallbackDescription) || fallbackDescription;
 
     const canonicalPath = (() => {
