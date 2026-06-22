@@ -710,6 +710,7 @@
   };
 
   const initSectionRail = () => {
+    if (window.matchMedia("(max-width: 64rem)").matches) return;
     const main = document.querySelector(".site-main");
     if (!main || document.querySelector("[data-section-rail]")) return;
     const headings = [...main.querySelectorAll(".zone-card .section-head h1, .zone-card .section-head h2, .catalog-group .section-head h3")]
@@ -757,6 +758,7 @@
   const cardText = (card, selector) => card.querySelector(selector)?.textContent.trim() || "";
 
   const initQuickView = (root = document) => {
+    if (window.matchMedia("(max-width: 48rem)").matches) return;
     if (!document.querySelector("[data-quick-view]")) {
       const drawer = document.createElement("aside");
       drawer.className = "quick-view";

@@ -3930,6 +3930,32 @@ textarea {
   font: inherit;
 }
 
+.contact-process,
+.case-study-summary {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: var(--card-grid-gap);
+  margin-top: var(--card-grid-gap);
+}
+
+.lyrics-card > summary {
+  cursor: pointer;
+  list-style: none;
+}
+
+.lyrics-card > summary::-webkit-details-marker {
+  display: none;
+}
+
+.lyrics-card:not([open]) .lyrics-card__meta .tag {
+  color: var(--text);
+}
+
+.lyrics-card[open] .lyrics-card__meta .tag {
+  border-color: var(--border-strong);
+  background: rgba(255, 255, 255, 0.08);
+}
+
 a:focus-visible,
 button:focus-visible,
 summary:focus-visible,
@@ -3949,6 +3975,11 @@ input:focus-visible {
     grid-template-columns: 1fr;
     gap: 0.42rem;
     align-items: start;
+  }
+
+  .contact-process,
+  .case-study-summary {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .brand-lockup {
@@ -4351,6 +4382,11 @@ input:focus-visible {
   .taxonomy-grid,
   .graph-columns,
   .detail-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .contact-process,
+  .case-study-summary {
     grid-template-columns: 1fr;
   }
 

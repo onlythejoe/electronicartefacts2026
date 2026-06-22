@@ -7926,6 +7926,7 @@ window.EA_SEARCH = {
   };
 
   const initSectionRail = () => {
+    if (window.matchMedia("(max-width: 64rem)").matches) return;
     const main = document.querySelector(".site-main");
     if (!main || document.querySelector("[data-section-rail]")) return;
     const headings = [...main.querySelectorAll(".zone-card .section-head h1, .zone-card .section-head h2, .catalog-group .section-head h3")]
@@ -7973,6 +7974,7 @@ window.EA_SEARCH = {
   const cardText = (card, selector) => card.querySelector(selector)?.textContent.trim() || "";
 
   const initQuickView = (root = document) => {
+    if (window.matchMedia("(max-width: 48rem)").matches) return;
     if (!document.querySelector("[data-quick-view]")) {
       const drawer = document.createElement("aside");
       drawer.className = "quick-view";
@@ -9093,6 +9095,24 @@ window.EA_SEARCH = {
           <p class="card__copy">Early conversations focus on the real objective, available evidence, decision constraints and the smallest meaningful first phase.</p>
         </article>
       </div>
+      <div class="contact-process">
+        ${[
+          ["01", "Frame", "Clarify the objective, users, constraints and available evidence."],
+          ["02", "Scope", "Define the smallest useful phase, responsibilities and decision points."],
+          ["03", "Build", "Design and implement in short reviewable increments."],
+          ["04", "Transfer", "Document the system, decisions and next operating steps."],
+        ]
+          .map(
+            ([number, title, copy]) => `
+              <article class="panel panel--soft">
+                <span class="research-method__number">${number}</span>
+                <h3 class="card__title">${title}</h3>
+                <p class="card__copy">${copy}</p>
+              </article>
+            `,
+          )
+          .join("")}
+      </div>
     </section>
   `;
 
@@ -9815,8 +9835,8 @@ window.EA_SEARCH = {
       `;
     };
     const entryMarkup = (entry) => `
-      <article class="lyrics-card" data-lyrics-card="${esc(entry.id)}">
-        <div class="lyrics-card__head">
+      <details class="lyrics-card" data-lyrics-card="${esc(entry.id)}">
+        <summary class="lyrics-card__head">
           <div>
             <p class="card__meta">Lyrics / ${esc(entry.act || item.title)}</p>
             <h3 class="card__title">${esc(`${entry.trackNumber ? `${entry.trackNumber}. ` : ""}${entry.title || "Untitled"}`)}</h3>
@@ -9825,8 +9845,9 @@ window.EA_SEARCH = {
           <div class="lyrics-card__meta">
             ${entry.status ? chip(entry.status) : ""}
             ${entry.language ? chip(entry.language.toUpperCase()) : ""}
+            <span class="tag">Open text</span>
           </div>
-        </div>
+        </summary>
         <div class="lyrics-card__body">
           <div class="lyrics-sheet" aria-label="${esc(entry.title || "Lyrics")} lyrics">
             ${(entry.lines || []).map((line, index) => lineMarkup(entry, line, index)).join("")}
@@ -9838,13 +9859,53 @@ window.EA_SEARCH = {
           </aside>
         </div>
         ${entry.note ? `<p class="card__copy lyrics-card__note">${esc(entry.note)}</p>` : ""}
-      </article>
+      </details>
     `;
 
     return panelShell(
       "Texts / Lyrics",
       "A lyric surface for Palimpsests, built for close reading line by line.",
       `<div class="lyrics-stack">${lyricEntries.map(entryMarkup).join("")}</div>`,
+    );
+  };
+
+  const clientCaseStudyPanel = (item) => {
+    if (item.kind !== "project" || item.category !== "Client Work") return "";
+    const galleryCount = item.media?.gallery?.length || 0;
+    const architecture = item.architecture || {};
+    const role = item.role || "Strategy, information structure, interface direction and implementation.";
+    const delivered = [
+      architecture.surface,
+      ...(architecture.layers || []),
+    ].filter(Boolean);
+
+    return panelShell(
+      "Engagement summary",
+      "A concise view of the problem, role, delivered system and available evidence.",
+      `
+        <div class="case-study-summary">
+          <article class="panel panel--soft">
+            <p class="card__meta">Objective</p>
+            <h3 class="card__title">${esc(item.theme || item.subtitle || item.type || "Client system")}</h3>
+            <p class="card__copy">${esc(item.summary || item.description || "")}</p>
+          </article>
+          <article class="panel panel--soft">
+            <p class="card__meta">Electronic Artefacts role</p>
+            <h3 class="card__title">Structure before surface.</h3>
+            <p class="card__copy">${esc(role)}</p>
+          </article>
+          <article class="panel panel--soft">
+            <p class="card__meta">Delivered system</p>
+            <h3 class="card__title">${esc(architecture.surface || "Public product and operating workflow")}</h3>
+            ${delivered.length ? tagRow(delivered, { limit: 6, compact: true }) : ""}
+          </article>
+          <article class="panel panel--soft">
+            <p class="card__meta">Evidence</p>
+            <h3 class="card__title">${esc(countLabel(galleryCount, "documented asset"))}</h3>
+            <p class="card__copy">Public screens, operational views and performance evidence are attached where available.</p>
+          </article>
+        </div>
+      `,
     );
   };
 
@@ -10057,7 +10118,7 @@ window.EA_SEARCH = {
 
   const projectSpecificPanels = (item) => {
     if (item.kind !== "project") return "";
-    return [vestigesDossierPanels(item), palimpsestsDossierPanels(item), lyricsDossierPanel(item), unionMobDossierPanels(item)].filter(Boolean).join("");
+    return [clientCaseStudyPanel(item), vestigesDossierPanels(item), palimpsestsDossierPanels(item), lyricsDossierPanel(item), unionMobDossierPanels(item)].filter(Boolean).join("");
   };
 
   const programSpecificPanels = (item) => {
@@ -10198,7 +10259,10 @@ window.EA_SEARCH = {
       ...(item.kind === "project" ? [{ label: "Open Dossier", href: `./project-rl.html?id=${encodeURIComponent(item.id)}` }] : []),
     ];
     const detailIntro = item.kind === "program" ? programSpecificPanels(item) : "";
-    const specificPanels = projectSpecificPanels(item);
+    const specificPanels =
+      item.id === "palimpsests"
+        ? projectSpecificPanels(item)
+        : clientCaseStudyPanel(item);
     const visualPanels = projectPanels(item);
     const signatureCopy = item.description || item.summary || "";
     const signatureTags = (item.tags && item.tags.length ? item.tags : homeCardPills(item)).filter(Boolean);
@@ -10318,7 +10382,14 @@ window.EA_SEARCH = {
     </section>
   `;
 
-  const searchState = { query: "", status: "all", kind: "all", page: 1, pageSize: 12 };
+  const initialSearchParams = new URLSearchParams(window.location.search);
+  const searchState = {
+    query: String(initialSearchParams.get("q") || "").trim().toLowerCase(),
+    status: initialSearchParams.get("status") || "all",
+    kind: initialSearchParams.get("kind") || "all",
+    page: 1,
+    pageSize: 12,
+  };
   const getSearchIndex = () => catalog.indexes?.getSearchIndex?.() || catalog.indexes?.search || [];
   const searchResultOrder = ["program", "project", "artefact", "researchLog", "researchField", "collection", "artist", "channel", "worldbuilding"];
 
@@ -10775,15 +10846,6 @@ window.EA_SEARCH = {
           ariaLabel: "See Client Work",
         },
         {
-          kicker: "Collaboration",
-          title: "Understand how the ecosystem operates",
-          copy: "Learn how research, programs, projects and archive exchange knowledge before starting a partnership.",
-          reason: "Best when the working model and points of contribution matter.",
-          cta: "Understand the Ecosystem",
-          href: "./about.html",
-          ariaLabel: "Understand the Ecosystem",
-        },
-        {
           kicker: "Culture",
           title: "Enter through Palimpsests",
           copy: "Explore the musical and editorial surface where artistic production, memory and publication meet.",
@@ -10794,6 +10856,52 @@ window.EA_SEARCH = {
         },
       ],
     });
+
+  const renderWorkOffer = () => `
+    <section class="zone-card hero work-offer">
+      <div class="section-head">
+        <p class="eyebrow">ENGAGEMENTS</p>
+        <h2>Three ways to work together.</h2>
+        <p class="lede">The format follows the problem. Each engagement produces explicit decisions, working artefacts and a clear next phase.</p>
+      </div>
+      <div class="card-grid card-grid--three">
+        ${[
+          {
+            meta: "Direction",
+            title: "Product and system framing",
+            copy: "Clarify the proposition, users, information model, constraints and technical direction before committing to a large build.",
+            outputs: ["Brief", "Architecture", "Roadmap"],
+          },
+          {
+            meta: "Delivery",
+            title: "Design and implementation",
+            copy: "Turn an existing direction into a coherent public product across content structure, UX, interface and development.",
+            outputs: ["UX / UI", "Prototype", "Production"],
+          },
+          {
+            meta: "Evolution",
+            title: "Platform and workflow redesign",
+            copy: "Rework a fragmented site or operating process into a maintainable system with clearer ownership and reusable components.",
+            outputs: ["Audit", "Refactor", "Documentation"],
+          },
+        ]
+          .map(
+            (offer) => `
+              <article class="panel panel--soft">
+                <p class="card__meta">${offer.meta}</p>
+                <h3 class="card__title">${offer.title}</h3>
+                <p class="card__copy">${offer.copy}</p>
+                ${tagRow(offer.outputs, { compact: true })}
+              </article>
+            `,
+          )
+          .join("")}
+      </div>
+      <div class="button-row">
+        <a class="button button--primary" href="./contact.html">Discuss the right starting point</a>
+      </div>
+    </section>
+  `;
   const renderPrograms = () => {
     const vaste = entityById("vaste");
     const forge = entityById("forge");
@@ -11332,13 +11440,13 @@ window.EA_SEARCH = {
       </section>
     `;
   };
-  const renderWork = () => pageLens("work") + workTaxonomy() + catalogSectionWork();
-  const renderResearch = () => pageLens("research") + researchFields() + researchPrograms() + researchNotes();
+  const renderWork = () => renderWorkOffer() + workTaxonomy() + catalogSectionWork();
+  const renderResearch = () => researchFields() + researchPrograms() + researchNotes();
   const renderProgramsPage = () => pageLens("programs") + renderPrograms();
   const renderProjectsPage = () => renderProjects();
   const renderArchive = () => pageLens("archive") + archiveTaxonomy() + archiveLibrary();
   const renderAbout = () => pageLens("about") + aboutMap() + aboutNetwork();
-  const renderContact = () => pageLens("contact") + contactLinks();
+  const renderContact = () => contactLinks();
 
   const catalogSectionWork = () => {
     const groups = [
@@ -11426,7 +11534,8 @@ window.EA_SEARCH = {
       "cross-navigation": renderCrossNavigation,
     },
     work: {
-      "work-taxonomy": () => pageLens("work") + workTaxonomy(),
+      "work-offer": renderWorkOffer,
+      "work-taxonomy": workTaxonomy,
       "work-catalog": catalogSectionWork,
       "cross-navigation": renderCrossNavigation,
     },
@@ -11435,7 +11544,7 @@ window.EA_SEARCH = {
       "cross-navigation": renderCrossNavigation,
     },
     research: {
-      "research-fields": () => pageLens("research") + researchFields(),
+      "research-fields": researchFields,
       "research-programs": researchPrograms,
       "research-notes": researchNotes,
       "cross-navigation": renderCrossNavigation,
