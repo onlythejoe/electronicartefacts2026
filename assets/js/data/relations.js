@@ -12,6 +12,7 @@ window.EA_RELATIONS = {
     { from: "electronic-artefacts", to: "oeil-de-meg-calendar", type: "Produced By" },
     { from: "electronic-artefacts", to: "palimpsests", type: "Part Of" },
     { from: "electronic-artefacts", to: "vestiges", type: "Part Of" },
+    { from: "vestiges", to: "vaste", type: "Powered By" },
     { from: "electronic-artefacts", to: "creativestuff", type: "Related To" },
     { from: "palimpsests", to: "entropy-audio", type: "Part Of" },
     { from: "palimpsests", to: "emergence-audio", type: "Part Of" },

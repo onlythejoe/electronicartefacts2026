@@ -16,11 +16,11 @@
   const taxonomyTone = (value) => {
     const text = String(value || "").toLowerCase();
     if (text.includes("music") || text.includes("audio") || text.includes("oreth") || text.includes("palimpsests")) return "sound";
-    if (text.includes("technology") || text.includes("software") || text.includes("runtime") || text.includes("system") || text.includes("vaste")) return "system";
+    if (text.includes("technology") || text.includes("software") || text.includes("runtime") || text.includes("system") || text.includes("vaste") || text.includes("vestiges") || text.includes("knowledge graph")) return "system";
     if (text.includes("research") || text.includes("void") || text.includes("theory") || text.includes("entropy") || text.includes("emergence")) return "research";
     if (text.includes("visual") || text.includes("photography") || text.includes("image") || text.includes("creative")) return "visual";
     if (text.includes("archive") || text.includes("document") || text.includes("memory")) return "archive";
-    if (text.includes("narrative") || text.includes("myth") || text.includes("vestiges")) return "narrative";
+    if (text.includes("narrative") || text.includes("myth")) return "narrative";
     if (text.includes("client") || text.includes("external") || text.includes("communication")) return "surface";
     if (text.includes("active") || text.includes("public") || text.includes("released")) return "live";
     if (text.includes("prototype") || text.includes("experimental") || text.includes("development")) return "process";

@@ -25,11 +25,11 @@ window.EA_ACTIVITY = [
   },
   {
     id: "activity-004",
-    type: "project_created",
-    title: "Vestiges defined",
+    type: "research_updated",
+    title: "Vestiges product definition aligned",
     entityId: "vestiges",
-    date: "2026-06-12",
-    summary: "Vestiges takes shape.",
+    date: "2026-06-22",
+    summary: "VASTE flagship positioning, knowledge graph model and long-term mission documented.",
   },
   {
     id: "activity-005",

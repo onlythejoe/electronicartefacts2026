@@ -852,6 +852,18 @@
       ? `${countLabel(galleryCount, "asset")} ${galleryCount === 1 ? "documents" : "document"}`
       : "The dossier documents";
 
+    if (item.id === "vestiges") {
+      return {
+        title: "Read this as VASTE's flagship product.",
+        intro: "Vestiges turns the VASTE runtime into a concrete platform for culture, craft and applied knowledge. Its core asset is the graph, not the profile, product or transaction.",
+        why: "The platform is designed to preserve know-how while making it discoverable, collaborative and economically useful across generations.",
+        inspect: ["The knowledge-first graph model", "The multi-actor contribution system", "The path from public knowledge pages to services and exchange"],
+        proof: `${countLabel(item.graphNodeTypes?.length || 0, "node category", "node categories")}, ${countLabel(item.relationshipTypes?.length || 0, "relationship type")} and a VASTE-powered product architecture.`,
+        next: "Follow the platform layers from knowledge graph to collaboration, visual exploration and economic activation.",
+        cta: item.links?.[0] || { label: "Explore VASTE", href: "https://www.vaste.space/" },
+      };
+    }
+
     if (isOrethSignature(item)) {
       return {
         title: "Read this as an artistic dossier.",
@@ -1355,6 +1367,82 @@
     ].join("");
   };
 
+  const vestigesDossierPanels = (item) => {
+    if (item.id !== "vestiges") return "";
+    const softPanel = (meta, title, copy, extra = "") => `
+      <article class="panel panel--soft">
+        <p class="card__meta">${esc(meta)}</p>
+        <h3 class="card__title">${esc(title)}</h3>
+        ${copy ? `<p class="card__copy">${esc(copy)}</p>` : ""}
+        ${extra}
+      </article>
+    `;
+    const chipList = (values, limit) =>
+      values?.length
+        ? `<div class="tag-cluster">${values.slice(0, limit || values.length).map((value) => chip(value)).join("")}</div>`
+        : "";
+
+    return [
+      panelShell(
+        "Product definition",
+        "Vestiges is a premium technology platform and VASTE flagship, not a narrative universe, artistic project, wiki or simple marketplace.",
+        `<div class="stack">
+          ${softPanel("Position", "VASTE made concrete", item.productPosition || "")}
+          ${softPanel("Mission", item.mission || "", "A global infrastructure for knowledge applied to human know-how.")}
+          ${softPanel("Primary resource", item.coreResource || "Knowledge", "People, products and transactions remain important, but the graph of knowledge is the system's durable foundation.")}
+        </div>`,
+      ),
+      panelShell(
+        "The living knowledge graph",
+        "Every entity has its own identity and every relationship remains explicit.",
+        `<div class="stack">
+          ${softPanel("Graph principle", "Everything becomes an addressable node", item.graphPrinciple || "")}
+          <div class="card-grid card-grid--two">
+            ${softPanel("Node families", `${item.graphNodeTypes?.length || 0} mapped families`, "People, organisations, techniques, materials, places, works and records can each become public knowledge pages.", chipList(item.graphNodeTypes, 12))}
+            ${softPanel("Relationship vocabulary", `${item.relationshipTypes?.length || 0} explicit relations`, "Mastery, teaching, use, provenance, collaboration and certification create the paths through the graph.", chipList(item.relationshipTypes, 10))}
+          </div>
+        </div>`,
+      ),
+      panelShell(
+        "Native public knowledge",
+        "The graph produces an expanding network of indexable pages without treating SEO as a separate module.",
+        `<div class="stack">
+          ${softPanel("Infinite pages", "One canonical surface per node", item.seoModel || "")}
+          ${chipList(["Public page", "Canonical URL", "Description", "Relations", "Media", "History", "Metadata"])}
+        </div>`,
+      ),
+      panelShell(
+        "Multi-actor contribution",
+        "Expertise can enter the same governed graph from the workshop, school, museum, institution or field.",
+        `<div class="stack">
+          ${softPanel("Participants", `${item.stakeholders?.length || 0} initial actor groups`, "Vestiges connects professional, cultural, educational, institutional and private actors.", chipList(item.stakeholders))}
+          ${softPanel("Collaboration", "Distributed knowledge with governance", "Contributions remain attributable, reviewable and enrich the same shared graph.", chipList(item.collaborationCapabilities))}
+        </div>`,
+      ),
+      panelShell(
+        "Explore knowledge spatially",
+        "Relationships are designed to be seen as networks, maps and immersive constellations rather than only as lists.",
+        `<div class="stack">
+          ${softPanel("Visualisation", "From graph to navigable space", "A technique can reveal its materials, tools, practitioners, buildings, schools and museums in one connected view.", chipList(item.visualizationModes))}
+        </div>`,
+      ),
+      panelShell(
+        "Economic activation",
+        "The marketplace is a consequence of trusted knowledge and explicit relationships, not the product's final horizon.",
+        `<div class="stack">
+          ${softPanel("Business model", "Services grow from the graph", "Professional tools, exchange, APIs and specialised intelligence can operate on top of the shared knowledge infrastructure.", chipList(item.economicModel))}
+        </div>`,
+      ),
+      panelShell(
+        "Long-term horizon",
+        "Vestiges is conceived as infrastructure capable of growing for decades.",
+        `<div class="stack">
+          ${softPanel("Global scope", "A living map of human know-how", "Heritage, production, learning, research and innovation remain connected inside the same evolving system.", chipList(item.longTermDomains))}
+        </div>`,
+      ),
+    ].join("");
+  };
+
   const lyricsDossierPanel = (item) => {
     const lyricEntries = item.lyrics || [];
     if (!lyricEntries.length) return "";
@@ -1617,7 +1705,7 @@
 
   const projectSpecificPanels = (item) => {
     if (item.kind !== "project") return "";
-    return [palimpsestsDossierPanels(item), lyricsDossierPanel(item), unionMobDossierPanels(item)].filter(Boolean).join("");
+    return [vestigesDossierPanels(item), palimpsestsDossierPanels(item), lyricsDossierPanel(item), unionMobDossierPanels(item)].filter(Boolean).join("");
   };
 
   const programSpecificPanels = (item) => {
@@ -1946,6 +2034,18 @@
     });
     pushList("Lifecycle", item.lifecycle);
     pushList("Primitives", item.primitives);
+    push("Mission", item.mission);
+    push("Primary resource", item.coreResource);
+    push("Product position", item.productPosition);
+    push("Graph principle", item.graphPrinciple);
+    push("SEO model", item.seoModel);
+    pushList("Graph node types", item.graphNodeTypes);
+    pushList("Relationship types", item.relationshipTypes);
+    pushList("Stakeholders", item.stakeholders);
+    pushList("Collaboration capabilities", item.collaborationCapabilities);
+    pushList("Visualization modes", item.visualizationModes);
+    pushList("Economic model", item.economicModel);
+    pushList("Long-term domains", item.longTermDomains);
     pushList("Facet controls", item.facetControls);
     pushList("Unions", item.unions);
     pushList("Research outcomes", item.researchOutcomes);

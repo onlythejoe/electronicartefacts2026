@@ -249,10 +249,10 @@
             { kicker: "Next", title: "Contact", copy: "Start a similar commission or collaboration.", reason: "Useful when the project becomes a brief.", cta: "Start a Collaboration", href: "./contact.html" },
           ],
           vestiges: [
-            { kicker: "Next", title: "Research", copy: "See the theoretical branches around the universe.", reason: "Useful if you want the conceptual source.", cta: "Enter Research", href: "./research.html" },
-            { kicker: "Next", title: "Archive", copy: "See the wider memory field around the project.", reason: "Useful if you want contextual material.", cta: "Open Archive", href: "./archive.html" },
-            { kicker: "Next", title: "Projects", copy: "Return to the public project constellation.", reason: "Useful if you want to compare forms.", cta: "Browse Projects", href: "./projects.html" },
-            { kicker: "Next", title: "Contact", copy: "Discuss a related narrative or publication.", reason: "Useful if the project should expand.", cta: "Start a Collaboration", href: "./contact.html" },
+            { kicker: "Runtime", title: "VASTE", copy: "Open the runtime that powers Vestiges.", reason: "Useful if you want the technical foundation.", cta: "Explore VASTE", href: "https://www.vaste.space/" },
+            { kicker: "Next", title: "Programs", copy: "See the software and infrastructure layer around the product.", reason: "Useful if you want the wider system family.", cta: "View Programs", href: "./programs.html" },
+            { kicker: "Next", title: "Research", copy: "Inspect the graph, taxonomy and systems research that informs the platform.", reason: "Useful if you want the conceptual and technical sources.", cta: "Enter Research", href: "./research.html" },
+            { kicker: "Next", title: "Contact", copy: "Discuss a platform, cultural institution or knowledge infrastructure collaboration.", reason: "Useful if Vestiges connects to your organisation.", cta: "Start a Collaboration", href: "./contact.html" },
           ],
           atypikhouse: [
             { kicker: "Next", title: "Work", copy: "See the studio layer that houses applied work.", reason: "Useful if you want service context.", cta: "See Client Work", href: "./work.html" },

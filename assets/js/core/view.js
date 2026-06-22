@@ -473,6 +473,7 @@
     if (!item) return [];
     if (item.id === "oeil-de-meg") return ["Photography CRM", "Portfolio", "Live site", "WordPress"];
     if (item.id === "palimpsests") return ["Album cycle", "ORETH", "Five acts", "Archive"];
+    if (item.id === "vestiges") return ["VASTE flagship", "Knowledge graph", "Craft", "Culture"];
 
     const pills = [
       item.category || item.type || item.kind || "",
@@ -488,7 +489,7 @@
     if (!item) return "";
     if (item.id === "palimpsests") return "Read as the artistic anchor: an album cycle, archive surface and ORETH world.";
     if (item.id === "oeil-de-meg") return "Read as delivery proof: a live photography portfolio, CRM logic and performance dossier.";
-    if (item.id === "vestiges") return "Read as narrative expansion: a universe that lets the artistic material branch outward.";
+    if (item.id === "vestiges") return "Read as VASTE's flagship: a knowledge platform for culture, craft and human know-how.";
     if (item.category === "Client Work" || item.category === "External Work") return "Read as applied work: public-facing UX, visual evidence and delivery context.";
     if (item.category === "Platform" || item.type === "Platform") return "Read as a system surface: product structure, workflow and operational logic.";
     return `Read as ${item.category || item.type || "a project"} inside the Electronic Artefacts world.`;

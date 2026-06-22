@@ -30,8 +30,9 @@ window.EA_TIMELINES = [
   {
     entityId: "vestiges",
     entries: [
-      { year: "2025", title: "Narrative universe drafted", description: "Lore structure emerges from the cycle.", type: "development" },
-      { year: "2026", title: "Worldbuilding map", description: "Worldbuilding nodes are prepared.", type: "prototype" },
+      { year: "2025", title: "Platform thesis", description: "Vestiges is framed as VASTE's flagship product for culture, craft and applied knowledge.", type: "concept" },
+      { year: "2026", title: "Knowledge graph model", description: "Actors, know-how, materials, places and institutions become explicit, addressable nodes.", type: "development" },
+      { year: "2026", title: "Product architecture", description: "Collaborative contribution, native public pages, visual exploration and economic services are structured around the graph.", type: "prototype" },
     ],
   },
   {

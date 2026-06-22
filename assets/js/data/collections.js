@@ -25,9 +25,9 @@ window.EA_COLLECTIONS = [
     kind: "collection",
     type: "Collection",
     status: "development",
-    visibility: "internal",
-    summary: "Narrative universe fragments and associated research.",
-    rules: { entityIds: ["vestiges", "anthropic-studies"], tags: ["Vestiges"], researchFields: ["anthropic-studies"] },
+    visibility: "public",
+    summary: "Product, graph, culture and craft research connected to the Vestiges platform.",
+    rules: { entityIds: ["vestiges", "vaste", "graph-runtime-studies", "taxonomy-schema"], tags: ["Vestiges", "Knowledge Graph"], kinds: ["project", "program", "researchField", "researchLog", "artefact"] },
   },
   {
     id: "visual-research-collection",
@@ -77,7 +77,7 @@ window.EA_COLLECTIONS = [
     status: "development",
     visibility: "internal",
     summary: "Narrative universes, symbolic structures and lore-linked research.",
-    rules: { entityIds: ["vestiges", "vestiges-universe", "palimpsests-universe", "null-universe", "anthropic-studies"], tags: ["Universe", "Lore"], kinds: ["project", "universe", "researchField", "researchLog"] },
+    rules: { entityIds: ["palimpsests-universe", "null-universe", "anthropic-studies"], tags: ["Universe", "Lore"], kinds: ["universe", "researchField", "researchLog"] },
   },
   {
     id: "client-work-collection",

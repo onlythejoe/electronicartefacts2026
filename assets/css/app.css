@@ -3780,6 +3780,34 @@ body.is-header-hidden .shell-header.zone-card {
   text-align: right;
 }
 
+.detail-hero[data-entry-id="vestiges"] {
+  --project-rgb: 247, 244, 239;
+}
+
+.detail-hero[data-entry-id="vestiges"] .detail-hero__visual {
+  padding: clamp(1.5rem, 5vw, 4.5rem);
+  background:
+    radial-gradient(circle at 76% 18%, rgba(255, 255, 255, 0.9), transparent 32%),
+    linear-gradient(145deg, #f7f4ef, #dedbd5);
+}
+
+.detail-hero[data-entry-id="vestiges"] .detail-hero__visual::after {
+  background: linear-gradient(180deg, transparent 68%, rgba(3, 3, 4, 0.12));
+}
+
+.detail-hero[data-entry-id="vestiges"] .detail-hero__visual .project-immersive__image,
+.detail-hero[data-entry-id="vestiges"] .detail-hero__visual .project-gallery__media {
+  object-fit: contain;
+}
+
+.detail-hero[data-entry-id="vestiges"] .detail-hero__visual figcaption {
+  background: rgba(3, 3, 4, 0.78);
+}
+
+[data-entry-id="vestiges"] {
+  --project-rgb: 247, 244, 239;
+}
+
 .detail-editorial-grid {
   align-items: stretch;
 }
@@ -6127,12 +6155,11 @@ input:focus-visible {
     width: calc(100% - (var(--gutter) * 2));
     margin: 0 auto;
     padding-inline: 0;
-    border-color: rgba(255, 255, 255, 0.11);
-    background:
-      linear-gradient(180deg, rgba(255, 255, 255, 0.075), rgba(255, 255, 255, 0.026)),
-      rgba(12, 12, 12, 0.72);
-    backdrop-filter: blur(22px) saturate(135%);
-    -webkit-backdrop-filter: blur(22px) saturate(135%);
+    border-color: rgba(255, 255, 255, 0.08);
+    background: rgba(12, 12, 12, 0.94);
+    box-shadow: none;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
   }
 
   .shell-footer.zone-card {
@@ -6161,9 +6188,10 @@ input:focus-visible {
     padding: 0.18rem var(--gutter) 0.12rem;
     width: 100%;
     border-radius: 0;
-    background: rgba(8, 8, 10, 0.86);
-    border-bottom: 1px solid rgba(255, 255, 255, 0.045);
-    box-shadow: none;
+    background:
+      linear-gradient(90deg, rgba(8, 8, 10, 0.84), rgba(8, 8, 10, 0.42) 42%, rgba(8, 8, 10, 0.2)),
+      rgba(255, 255, 255, 0.018);
+    box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.045) inset;
     backdrop-filter: blur(18px) saturate(135%);
     -webkit-backdrop-filter: blur(18px) saturate(135%);
     scrollbar-width: thin;
@@ -6388,9 +6416,18 @@ input:focus-visible {
 
   .site-nav {
     scroll-padding-inline: var(--gutter);
+    background: rgba(8, 8, 10, 0.94);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+    box-shadow: none;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
     mask-image: none;
     -webkit-mask-image: none;
     scrollbar-width: none;
+  }
+
+  .site-nav::-webkit-scrollbar {
+    display: none;
   }
 
   .project-immersive {
@@ -6632,7 +6669,6 @@ input:focus-visible {
 
   .site-nav a {
     font-size: 0.66rem;
-    text-shadow: none;
   }
 }
 

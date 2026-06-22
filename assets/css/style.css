@@ -1390,6 +1390,34 @@
   text-align: right;
 }
 
+.detail-hero[data-entry-id="vestiges"] {
+  --project-rgb: 247, 244, 239;
+}
+
+.detail-hero[data-entry-id="vestiges"] .detail-hero__visual {
+  padding: clamp(1.5rem, 5vw, 4.5rem);
+  background:
+    radial-gradient(circle at 76% 18%, rgba(255, 255, 255, 0.9), transparent 32%),
+    linear-gradient(145deg, #f7f4ef, #dedbd5);
+}
+
+.detail-hero[data-entry-id="vestiges"] .detail-hero__visual::after {
+  background: linear-gradient(180deg, transparent 68%, rgba(3, 3, 4, 0.12));
+}
+
+.detail-hero[data-entry-id="vestiges"] .detail-hero__visual .project-immersive__image,
+.detail-hero[data-entry-id="vestiges"] .detail-hero__visual .project-gallery__media {
+  object-fit: contain;
+}
+
+.detail-hero[data-entry-id="vestiges"] .detail-hero__visual figcaption {
+  background: rgba(3, 3, 4, 0.78);
+}
+
+[data-entry-id="vestiges"] {
+  --project-rgb: 247, 244, 239;
+}
+
 .detail-editorial-grid {
   align-items: stretch;
 }
