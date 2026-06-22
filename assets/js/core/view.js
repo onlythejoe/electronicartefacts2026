@@ -611,10 +611,10 @@
         <div class="research-dossier-card__identity">
           <p class="card__meta">${esc(item.type || "RESEARCH FIELD")}</p>
           <h3 class="card__title">${esc(item.title)}</h3>
-          <p class="research-dossier-card__subtitle">${esc(item.subtitle || item.statusLabel || item.maturity || "")}</p>
+          <p class="research-dossier-card__subtitle">${esc(options.hideLineage ? item.statusLabel || item.maturity || "" : item.subtitle || item.statusLabel || item.maturity || "")}</p>
         </div>
         <div class="research-dossier-card__top-meta">
-          ${typeof options.index === "number" ? `<span class="research-dossier-card__index">0${options.index + 1}</span>` : ""}
+          ${typeof options.index === "number" ? `<span class="research-dossier-card__index">${String(options.index + 1).padStart(2, "0")}</span>` : ""}
           ${statusBadge(item.status, item.statusLabel)}
         </div>
       </div>
@@ -638,7 +638,7 @@
           item.maturity,
           item.confidence,
           item.visibility,
-          item.relations?.partOf?.[0],
+          options.hideLineage ? "" : item.relations?.partOf?.[0],
         ]
           .filter(Boolean)
           .map((value) => `<span class="chip">${esc(catalog.taxonomies?.maturity?.[value]?.label || catalog.taxonomies?.confidence?.[value]?.label || catalog.taxonomies?.visibility?.[value]?.label || value)}</span>`)

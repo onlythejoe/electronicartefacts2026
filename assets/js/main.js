@@ -140,190 +140,159 @@
   };
 
   const researchFields = () => {
-    const voidTheory = entityById("void");
-    const theoryIds = ["entropy", "emergence", "runtime-theory", "systems-theory", "information-studies", "anthropic-studies"];
-    const theoryFields = theoryIds.map((id) => entityById(id)).filter(Boolean);
+    const publicFields = (catalog.researchFields || []).filter((item) => item.visibility !== "internal" && item.id !== "void");
+    const researchPaths = [
+      {
+        label: "Systems & infrastructure",
+        title: "How can complex systems remain legible, adaptable and governed?",
+        copy: "Runtime architecture, graph execution, information structures, simulation and organisational governance.",
+        ids: ["runtime-theory", "systems-theory", "graph-runtime-studies", "governance-studies"],
+      },
+      {
+        label: "Knowledge & transmission",
+        title: "How does knowledge persist, circulate and become actionable?",
+        copy: "Taxonomy, memory, signals, archives and the relationships that make knowledge discoverable.",
+        ids: ["information-studies", "signal-archaeology", "artifact-theory"],
+      },
+      {
+        label: "Perception & emergence",
+        title: "What appears when rules, people and environments interact?",
+        copy: "Emergence, entropy, human interpretation and the boundary between observation and construction.",
+        ids: ["entropy", "emergence", "anthropic-studies", "simulation-studies"],
+      },
+    ];
+    const researchMethod = [
+      { number: "01", title: "Question", copy: "Frame a precise uncertainty, tension or behaviour worth investigating." },
+      { number: "02", title: "Map", copy: "Connect references, entities, prior experiments and adjacent disciplines." },
+      { number: "03", title: "Test", copy: "Build the smallest useful prototype, model, interface or artefact." },
+      { number: "04", title: "Translate", copy: "Move the result into a program, project, document or reusable method." },
+    ];
 
     return `
-      <section class="zone-card hero">
+      <section class="zone-card hero research-overview" id="research-fields">
         <div class="section-head">
-          <p class="eyebrow">RESEARCH DIVISION</p>
-          <h2>VOID as the theoretical source</h2>
-          <p class="lede">VOID is the core frame, with the other fields branching from it.</p>
+          <p class="eyebrow">RESEARCH PRACTICE</p>
+          <h2>A shared space for questions that cross disciplines.</h2>
+          <p class="lede">Research is organised around active questions rather than a single doctrine. Fields overlap, feed programs and produce evidence through projects, prototypes and notes.</p>
         </div>
-        ${
-          voidTheory
-            ? `
-              <article class="panel">
-                <p class="card__meta">${esc(voidTheory.type)}</p>
-                <h3 class="card__title">${esc(voidTheory.title)}</h3>
-                <p class="card__copy">${esc(voidTheory.description)}</p>
-                ${tagRow([...(voidTheory.medium || []), ...(voidTheory.discipline || [])])}
-                <div class="link-row">
-                  <a class="tag" href="./entity.html?id=${encodeURIComponent(voidTheory.id)}">Open theory</a>
-                  <a class="tag" href="./projects.html">See artistic translation</a>
-                </div>
-              </article>
-            `
-            : ""
-        }
+        <div class="research-path-grid">
+          ${researchPaths
+            .map(
+              (path, index) => `
+                <article class="panel research-path-card">
+                  <div class="research-path-card__top">
+                    <p class="card__meta">${esc(path.label)}</p>
+                    <span>0${index + 1}</span>
+                  </div>
+                  <h3 class="card__title">${esc(path.title)}</h3>
+                  <p class="card__copy">${esc(path.copy)}</p>
+                  <div class="link-row">
+                    ${resolveIds(path.ids)
+                      .map((field) => `<a class="tag" href="./entity.html?id=${encodeURIComponent(field.id)}">${esc(field.title)}</a>`)
+                      .join("")}
+                  </div>
+                </article>
+              `,
+            )
+            .join("")}
+        </div>
       </section>
-      <section class="zone-card hero">
+      <section class="zone-card hero research-method">
         <div class="section-head">
-          <p class="eyebrow">HIERARCHY</p>
-          <h2>VOID research structure</h2>
-          <p class="lede">Theory, bridges and translation.</p>
+          <p class="eyebrow">WORKING METHOD</p>
+          <h2>From uncertainty to a reusable result.</h2>
+          <p class="lede">The process stays lightweight enough for exploration and structured enough to preserve what was learned.</p>
         </div>
-        <div class="relationship-graph">
-          <div class="graph-root">VOID</div>
-          <div class="graph-columns">
-            <div class="graph-column">
-              <p class="card__meta">Core branches</p>
-              <div class="graph-node">Entropy Studies</div>
-              <div class="graph-node">Emergence Research</div>
-              <div class="graph-node">Runtime Theory</div>
-            </div>
-            <div class="graph-column">
-              <p class="card__meta">Systems branches</p>
-              <div class="graph-node">Systems Theory</div>
-              <div class="graph-node">Information Studies</div>
-              <div class="graph-node">Anthropic Studies</div>
-            </div>
-            <div class="graph-column">
-              <p class="card__meta">Bridge</p>
-              <div class="graph-node">Anthropic Studies</div>
-              <div class="graph-node">Memory</div>
-              <div class="graph-node">Identity</div>
-              <div class="graph-node">Observation</div>
-            </div>
-            <div class="graph-column">
-              <p class="card__meta">Art translation</p>
-              <div class="graph-node">PALIMPSESTS</div>
-              <div class="graph-node">Fragments</div>
-              <div class="graph-node">Music</div>
-              <div class="graph-node">Narrative</div>
-            </div>
+        <div class="research-method__steps">
+          ${researchMethod
+            .map(
+              (step) => `
+                <article class="panel panel--soft">
+                  <span class="research-method__number">${esc(step.number)}</span>
+                  <h3 class="card__title">${esc(step.title)}</h3>
+                  <p class="card__copy">${esc(step.copy)}</p>
+                </article>
+              `,
+            )
+            .join("")}
           </div>
-        </div>
       </section>
       <section class="zone-card hero">
         <div class="section-head">
-          <p class="eyebrow">RESEARCH FIELDS</p>
-          <h2>Structured theory branches</h2>
-          <p class="lede">Each field belongs to VOID.</p>
+          <p class="eyebrow">FIELD DIRECTORY</p>
+          <h2>Open research fields.</h2>
+          <p class="lede">${publicFields.length} connected areas of inquiry. Open any field to inspect its projects, programs, artefacts and relations.</p>
         </div>
         <div class="card-grid card-grid--three">
-          ${theoryFields.map((item, index) => researchCard(item, { href: `./entity.html?id=${encodeURIComponent(item.id)}`, index, featured: item.id === "void" })).join("")}
-        </div>
-      </section>
-      <section class="zone-card hero">
-        <div class="section-head">
-          <p class="eyebrow">PALIMPSESTS SANDBOX</p>
-          <h2>Artistic translation of theory</h2>
-          <p class="lede">VOID becomes songs, fragments, visuals and narrative residues.</p>
-        </div>
-        <div class="relationship-graph">
-          <div class="graph-root">VOID → PALIMPSESTS</div>
-          <div class="graph-columns">
-            <div class="graph-column">
-              <p class="card__meta">Inputs</p>
-              <div class="graph-node">Entropy Studies</div>
-              <div class="graph-node">Emergence Research</div>
-              <div class="graph-node">Runtime Theory</div>
-            </div>
-            <div class="graph-column">
-              <p class="card__meta">Bridge</p>
-              <div class="graph-node">Anthropic Studies</div>
-              <div class="graph-node">Perception</div>
-              <div class="graph-node">Memory</div>
-            </div>
-            <div class="graph-column">
-              <p class="card__meta">Outputs</p>
-              <div class="graph-node">ENTROPY</div>
-              <div class="graph-node">EMERGENCE</div>
-              <div class="graph-node">PALIMPSEST</div>
-              <div class="graph-node">INCANDESCENCE</div>
-            </div>
-            <div class="graph-column">
-              <p class="card__meta">Cycle</p>
-              <div class="graph-node">KERAUNOS</div>
-              <div class="graph-node">CTRL</div>
-              <div class="graph-node">Les etoiles meurent pour toi</div>
-            </div>
-          </div>
+          ${publicFields.map((item, index) => researchCard(item, { href: `./entity.html?id=${encodeURIComponent(item.id)}`, index, hideLineage: true })).join("")}
         </div>
       </section>
     `;
   };
 
-  const researchPrograms = () => `
-    <section class="zone-card hero">
+  const researchPrograms = () => {
+    const appliedPrograms = ["vaste", "forge", "unionmob-os1", "oraclehub"]
+      .map((id) => entityById(id))
+      .filter(Boolean);
+    return `
+    <section class="zone-card hero" id="research-programs">
       <div class="section-head">
-        <p class="eyebrow">PROGRAMS</p>
-        <h2>Programs</h2>
-        <p class="lede">VASTE, Forge, VOID and OracleHub.</p>
+        <p class="eyebrow">APPLIED RESEARCH</p>
+        <h2>When an investigation becomes a system.</h2>
+        <p class="lede">Programs hold long-running technical questions. They provide continuity between experiments, production constraints and reusable infrastructure.</p>
       </div>
-      <div class="card-grid card-grid--three">
-        ${(catalog.programs || []).map(programCard).join("")}
+      <div class="card-grid card-grid--two">
+        ${appliedPrograms.map(programCard).join("")}
+      </div>
+      <div class="link-row">
+        <a class="button button--secondary" href="./programs.html">Open the full program registry</a>
+        <a class="tag" href="https://www.vaste.space/" target="_blank" rel="noreferrer">Explore VASTE</a>
       </div>
     </section>
   `;
+  };
 
-  const researchNotes = () => `
-    <section class="zone-card hero">
+  const researchNotes = () => {
+    const notes = (catalog.researchLogs || []).filter((item) => item.visibility !== "internal");
+    return `
+    <section class="zone-card hero" id="research-notes">
       <div class="section-head">
-        <p class="eyebrow">RESEARCH NOTES</p>
-        <h2>Notes, fragments, observations.</h2>
-        <p class="lede">Short records.</p>
+        <p class="eyebrow">RESEARCH RECORDS</p>
+        <h2>Evidence stays attached to the work.</h2>
+        <p class="lede">Logs preserve decisions, tests and unresolved questions. They keep research inspectable after a prototype or project has moved on.</p>
       </div>
       <div class="card-grid card-grid--three">
-        ${[
-          {
-            title: "Fragments",
-            copy: "Short observations and fragments.",
-            label: "Field notes",
-            facts: ["Brief", "Portable", "Working"],
-          },
-          {
-            title: "Documents",
-            copy: "Specs, references and structure notes.",
-            label: "Reference set",
-            facts: ["Specs", "Structure", "Context"],
-          },
-          {
-            title: "Observations",
-            copy: "Signals, tests and process notes.",
-            label: "Test bench",
-            facts: ["Signals", "Tests", "Process"],
-          },
-          {
-            title: "Foundational Era",
-            copy: "Architecture, communication and taxonomy still shape the line.",
-            label: "Lineage",
-            facts: ["Archive", "Systems", "Continuity"],
-          },
-        ]
+        ${notes
           .map(
             (item, index) => `
-              <article class="panel research-note-card${index === 0 ? " research-note-card--featured" : ""}">
+              <article class="panel research-note-card${index === 0 ? " research-note-card--featured" : ""}" ${cardLinkAttrs(entryHref(item), `Open ${item.title}`)}>
+                ${cardOverlayLink(entryHref(item), `Open ${item.title}`)}
                 <div class="research-note-card__top">
                   <div class="research-note-card__identity">
-                    <p class="card__meta">${esc(item.label)}</p>
+                    <p class="card__meta">${esc(item.type || "Research log")}</p>
                     <h3 class="card__title">${esc(item.title)}</h3>
                   </div>
                   <span class="research-note-card__index">0${index + 1}</span>
                 </div>
-                <p class="card__copy">${esc(item.copy)}</p>
+                <p class="card__copy">${esc(item.summary || item.description || "")}</p>
                 <div class="tag-cluster tag-cluster--compact research-note-card__chips">
-                  ${item.facts.map((fact) => `<span class="chip">${esc(fact)}</span>`).join("")}
+                  ${[item.date || item.temporality?.lastUpdated, ...(item.tags || []).slice(0, 3)]
+                    .filter(Boolean)
+                    .map((fact) => chip(fact))
+                    .join("")}
                 </div>
               </article>
             `,
           )
           .join("")}
       </div>
+      <div class="link-row">
+        <a class="button button--secondary" href="./archive.html">Browse the complete archive</a>
+        <a class="tag" href="./search.html">Search all records</a>
+      </div>
     </section>
   `;
+  };
 
   const archiveTaxonomy = () =>
     taxonomyPanel(
@@ -435,11 +404,11 @@
       return acc;
     }, {});
     return `
-      <section class="zone-card hero">
+      <section class="zone-card hero" id="archive-library">
         <div class="section-head">
           <p class="eyebrow">ARCHIVE LIBRARY</p>
-          <h2>Library categories</h2>
-          <p class="lede">A clear inventory of outputs, drafts and fragments, organized by type.</p>
+          <h2>Browse by the form each trace currently takes.</h2>
+          <p class="lede">Categories describe the artefact, not its final value. A document may become a product decision; a prototype may become a program; an audio fragment may become a release.</p>
         </div>
         <div class="stack">
           ${Object.entries(grouped)
@@ -645,8 +614,8 @@
           </article>
           <article class="panel panel--soft">
             <p class="card__meta">Vestiges</p>
-            <h3 class="card__title">Narrative extension.</h3>
-            <p class="card__copy">A speculative project frame that expands the same logic into a broader world.</p>
+            <h3 class="card__title">VASTE flagship platform.</h3>
+            <p class="card__copy">A knowledge infrastructure for culture and craft, designed to map, preserve and activate human know-how.</p>
             <div class="link-row"><a class="tag" href="./project.html?id=vestiges">Open Vestiges</a></div>
           </article>
           <article class="panel panel--soft">
@@ -682,24 +651,24 @@
   `;
 
   const contactLinks = () => `
-    <section class="zone-card hero">
+    <section class="zone-card hero contact-channels">
       <div class="section-head">
-        <p class="eyebrow">CONTACT</p>
-        <h2>Selected channels</h2>
-        <p class="lede">Email, social and listening links.</p>
+        <p class="eyebrow">DIRECT CHANNELS</p>
+        <h2>Choose the channel that matches the conversation.</h2>
+        <p class="lede">Email is the primary route for projects and partnerships. Social channels document the work; GitHub, SoundCloud and VASTE expose specific parts of the practice.</p>
       </div>
       <div class="contact-grid">
         ${[
           {
             title: "electronic.artefacts@gmail.com",
             type: "Email",
-            copy: "Studio contact.",
+            copy: "Best for project briefs, partnerships, commissions and considered introductions.",
             link: { label: "Send email", href: "mailto:electronic.artefacts@gmail.com" },
           },
           {
             title: "@electronic.artefacts",
             type: "Instagram",
-            copy: "Releases and studio notes.",
+            copy: "Studio updates, releases and public signals from the wider ecosystem.",
             link: {
               label: "Open Instagram",
               href: "https://www.instagram.com/electronic.artefacts/",
@@ -709,7 +678,7 @@
           {
             title: "@creativestuff.jpg",
             type: "Instagram",
-            copy: "Visual fragments and references.",
+            copy: "Visual research, references and informal observations from the image practice.",
             link: {
               label: "Open Instagram",
               href: "https://www.instagram.com/creativestuff.jpg/",
@@ -719,7 +688,7 @@
           {
             title: "GitHub, SoundCloud, VASTE",
             type: "External links",
-            copy: "The rest of the trail.",
+            copy: "Code, audio and the external VASTE runtime each provide a deeper technical or cultural entry point.",
             link: null,
           },
         ]
@@ -740,6 +709,18 @@
             `,
           )
           .join("")}
+      </div>
+      <div class="split contact-expectations">
+        <article class="panel panel--soft">
+          <p class="card__meta">Good fit</p>
+          <h3 class="card__title">Complex projects that need structure.</h3>
+          <p class="card__copy">Knowledge platforms, digital products, creative technology, cultural infrastructure, research-led interfaces and distinctive public systems.</p>
+        </article>
+        <article class="panel panel--soft">
+          <p class="card__meta">Working relationship</p>
+          <h3 class="card__title">Clarity before scale.</h3>
+          <p class="card__copy">Early conversations focus on the real objective, available evidence, decision constraints and the smallest meaningful first phase.</p>
+        </article>
       </div>
     </section>
   `;
@@ -2243,9 +2224,26 @@
   const renderSearchPage = () => `
       <section class="zone-card hero" data-search-shell>
         <div class="section-head">
-          <p class="eyebrow">OVERVIEW</p>
-          <h1 class="display-title">Archive matrix.</h1>
-          <p class="lede">Search titles, read across the archive and compare themes in one view.</p>
+          <p class="eyebrow">KNOWLEDGE SEARCH</p>
+          <h1 class="display-title">Find the work behind the words.</h1>
+          <p class="lede">Search across projects, programs, people, research fields, artefacts and collections. Results retain their type, status and relations so a match always has context.</p>
+        </div>
+        <div class="stat-grid search-guide">
+          <article class="stat-card">
+            <p class="card__meta">Search by subject</p>
+            <strong>Knowledge, memory, governance</strong>
+            <span>Use concepts when you want to move across several projects and entity types.</span>
+          </article>
+          <article class="stat-card">
+            <p class="card__meta">Search by name</p>
+            <strong>Vestiges, VASTE, Palimpsests</strong>
+            <span>Use a project or program name when you already know the entry point.</span>
+          </article>
+          <article class="stat-card">
+            <p class="card__meta">Narrow the field</p>
+            <strong>Status and entity type</strong>
+            <span>Filters distinguish active systems, archived work, research and public projects.</span>
+          </article>
         </div>
         <div class="taxonomy-grid">
           <div class="taxonomy-column">
@@ -2359,41 +2357,41 @@
   const renderFeaturedPaths = () =>
     orientationSection({
       eyebrow: "FEATURED PATHS",
-      title: "Featured Paths",
-      copy: "Choose the path that matches why you are here. Each direction points to the part of the ecosystem that should answer your question first.",
+      title: "Start from your real question.",
+      copy: "The ecosystem is easier to understand when you begin with intent: evaluate the technology, inspect delivered work, understand the operating model or enter through culture.",
       cards: [
         {
-          kicker: "Investors",
-          title: "VASTE as the core spine",
-          copy: "Understand the runtime, the strategic logic and the broader system that generates the rest of the ecosystem.",
-          reason: "Investors need the trunk before the branches.",
+          kicker: "Technology",
+          title: "Understand the core runtime",
+          copy: "Open VASTE to inspect the strategic and technical foundation behind the wider family of systems.",
+          reason: "Best when architecture, scalability and the long-term platform thesis matter first.",
           cta: "Explore VASTE",
           href: "./vaste.html",
           ariaLabel: "Explore VASTE",
         },
         {
-          kicker: "Clients",
-          title: "Applied work and public outcomes",
-          copy: "See how Electronic Artefacts handles commissions, systems and visible deliverables across the studio layer.",
-          reason: "Clients need evidence of execution, not just language.",
+          kicker: "Delivery",
+          title: "Inspect applied work and outcomes",
+          copy: "See how strategy, interface, content and implementation hold together across commissions and public products.",
+          reason: "Best when you need evidence of execution under concrete constraints.",
           cta: "See Client Work",
           href: "./work.html",
           ariaLabel: "See Client Work",
         },
         {
-          kicker: "Collaborators",
-          title: "How the ecosystem operates",
-          copy: "Learn how research, programs, projects and archive relate before starting a collaboration.",
-          reason: "Collaborators need a map of the working model.",
+          kicker: "Collaboration",
+          title: "Understand how the ecosystem operates",
+          copy: "Learn how research, programs, projects and archive exchange knowledge before starting a partnership.",
+          reason: "Best when the working model and points of contribution matter.",
           cta: "Understand the Ecosystem",
           href: "./about.html",
           ariaLabel: "Understand the Ecosystem",
         },
         {
-          kicker: "Artists",
-          title: "Palimpsests and the label layer",
-          copy: "Enter the musical and editorial surface where artistic work, traces and publication logic meet.",
-          reason: "Artists need to see the cultural register of the project.",
+          kicker: "Culture",
+          title: "Enter through Palimpsests",
+          copy: "Explore the musical and editorial surface where artistic production, memory and publication meet.",
+          reason: "Best when you want the cultural register before the technical system.",
           cta: "Enter Palimpsests",
           href: "./palimpsests.html",
           ariaLabel: "Enter Palimpsests",
@@ -2697,8 +2695,8 @@
         items: [entityById("palimpsests")].filter(Boolean),
       },
       {
-        label: "Narrative Extensions",
-        copy: "Branches that expand the artistic material into worlds, references and future editorial systems.",
+        label: "Knowledge Platforms",
+        copy: "Flagship products that turn research and runtime architecture into public infrastructure with a concrete economic purpose.",
         items: [entityById("vestiges")].filter(Boolean),
       },
       {
@@ -2729,7 +2727,7 @@
       {
         kicker: "For the system behind it",
         title: "Move into programs and research.",
-        copy: "VASTE, Forge, VOID and OracleHub explain the operating model beneath the visible projects.",
+        copy: "VASTE, Forge and the wider research field explain the operating model beneath the visible projects.",
         href: "./programs.html",
         cta: "View Programs",
       },
@@ -2774,25 +2772,25 @@
       ${pageLens("projects")}
       <section class="zone-card hero">
         <div class="section-head">
-          <p class="eyebrow">THREE PILLARS</p>
-          <h2>Theory, art and technology</h2>
-          <p class="lede">A simple map for understanding how the work is organised before opening individual dossiers.</p>
+          <p class="eyebrow">THREE MODES OF OUTPUT</p>
+          <h2>Research, cultural work and applied systems.</h2>
+          <p class="lede">Projects differ in public form, but each one translates investigation into something that can be experienced, used or developed further.</p>
         </div>
         <div class="split">
           <article class="panel panel--soft">
-            <p class="card__meta">Theory</p>
-            <h3 class="card__title">VOID</h3>
-            <p class="card__copy">The archived research source. It frames entropy, emergence, runtime, systems, information and anthropic studies.</p>
+            <p class="card__meta">Research-led</p>
+            <h3 class="card__title">Questions become models.</h3>
+            <p class="card__copy">Systems, knowledge, perception and governance research provide reusable methods rather than a single fixed doctrine.</p>
           </article>
           <article class="panel panel--soft">
-            <p class="card__meta">Art</p>
-            <h3 class="card__title">PALIMPSESTS</h3>
-            <p class="card__copy">The artistic translation layer. Theory becomes music, fragments, memory and narrative experience.</p>
+            <p class="card__meta">Cultural</p>
+            <h3 class="card__title">Ideas become experiences.</h3>
+            <p class="card__copy">Music, image and editorial forms create emotional and cultural access to the wider practice.</p>
           </article>
           <article class="panel panel--soft">
-            <p class="card__meta">Technology</p>
-            <h3 class="card__title">VASTE / ORETH / FORGE / OracleHub</h3>
-            <p class="card__copy">The operating layer. These programs support execution, analysis, generation and knowledge flows.</p>
+            <p class="card__meta">Applied</p>
+            <h3 class="card__title">Models become working systems.</h3>
+            <p class="card__copy">Runtimes, products and client platforms turn the research into operational tools and public infrastructure.</p>
           </article>
         </div>
       </section>
@@ -2891,7 +2889,7 @@
     const groups = [
       {
         label: "Internal Projects",
-        copy: "Core works, translations and pillars.",
+        copy: "Core programs, flagship products and artistic works developed inside the Electronic Artefacts ecosystem.",
         items: [
           entityById("void"),
           entityById("palimpsests"),
@@ -2899,11 +2897,12 @@
           entityById("vaste"),
           entityById("forge"),
           entityById("oraclehub"),
+          entityById("vestiges"),
         ].filter(Boolean),
       },
       {
         label: "Collaborations",
-        copy: "Collaborative relationships and shared work.",
+        copy: "People and shared practices that expand the work through specialist knowledge, artistic exchange and production.",
         items: [
           entityById("noi-save"),
           entityById("marjolaine-muller"),
@@ -2911,7 +2910,7 @@
       },
       {
         label: "External Works",
-        copy: "Outside commissions and public-facing work.",
+        copy: "Commissioned and client-facing systems where strategy, design and implementation are judged against a real public use.",
         items: [
           entityById("seven-temps-seulement"),
           entityById("atypikhouse"),
@@ -2924,8 +2923,8 @@
       <section class="zone-card hero">
         <div class="section-head">
           <p class="eyebrow">WORK CATALOG</p>
-          <h2>Internal works, collaborations and external work</h2>
-          <p class="lede">Curated so the relation between the layers stays visible.</p>
+          <h2>One practice, three working contexts.</h2>
+          <p class="lede">Internal work develops the language, collaborations introduce other forms of expertise, and external projects prove the approach under concrete constraints.</p>
         </div>
         <div class="catalog-stack">
           ${groups
