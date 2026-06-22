@@ -207,6 +207,13 @@ strong {
   padding: clamp(1.05rem, 1.8vw, 1.45rem) 0 1.75rem;
 }
 
+section[data-render] {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--section-stack-gap);
+  min-width: 0;
+}
+
 .shell-header.zone-card,
 .shell-footer.zone-card {
   width: calc(100% - (var(--gutter) * 2));
@@ -971,14 +978,7 @@ body.is-header-hidden .shell-header.zone-card {
 }
 
 .metric-pill i {
-  display: block;
-  width: 100%;
-  height: 0.26rem;
-  margin-top: 0.12rem;
-  border-radius: 999px;
-  background: linear-gradient(90deg, rgba(var(--metric-rgb), 0.12), rgba(var(--metric-rgb), 0.72));
-  transform: scaleX(var(--metric-fill, 0.62));
-  transform-origin: left center;
+  display: none;
 }
 
 .metric-pill--live {
@@ -5630,6 +5630,118 @@ body.is-header-hidden .shell-header.zone-card {
   color: rgba(125, 211, 252, 0.7);
 }
 
+.technology-register {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--card-grid-gap);
+  align-items: start;
+}
+
+.technology-card {
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  border-radius: var(--radius-lg);
+  background:
+    linear-gradient(145deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.012)),
+    rgba(255, 255, 255, 0.014);
+  transition: border-color 180ms ease, background-color 180ms ease;
+}
+
+.technology-card[open] {
+  border-color: rgba(125, 211, 252, 0.22);
+  background:
+    radial-gradient(circle at 88% 0%, rgba(125, 211, 252, 0.09), transparent 34%),
+    linear-gradient(145deg, rgba(255, 255, 255, 0.06), rgba(255, 255, 255, 0.014)),
+    rgba(255, 255, 255, 0.018);
+}
+
+.technology-card summary {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr) auto;
+  gap: 0.85rem;
+  align-items: center;
+  padding: 1rem;
+  cursor: pointer;
+  list-style: none;
+}
+
+.technology-card summary::-webkit-details-marker {
+  display: none;
+}
+
+.technology-card__mark {
+  display: grid;
+  place-items: center;
+  width: 3rem;
+  height: 3rem;
+  border: 1px solid rgba(125, 211, 252, 0.2);
+  border-radius: 0.8rem;
+  background:
+    linear-gradient(145deg, rgba(125, 211, 252, 0.14), rgba(255, 255, 255, 0.025)),
+    rgba(255, 255, 255, 0.018);
+  color: rgba(247, 244, 239, 0.9);
+  font-size: 0.72rem;
+  font-weight: 850;
+  letter-spacing: 0.08em;
+}
+
+.technology-card__identity {
+  display: grid;
+  gap: 0.15rem;
+}
+
+.technology-card__identity strong {
+  color: var(--text);
+  font-size: 1.05rem;
+}
+
+.technology-card__identity small {
+  color: var(--muted);
+  font-size: 0.7rem;
+  font-weight: 720;
+  line-height: 1.35;
+}
+
+.technology-card__toggle {
+  display: grid;
+  place-items: center;
+  width: 1.9rem;
+  height: 1.9rem;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  color: var(--text);
+  transition: transform 180ms ease;
+}
+
+.technology-card[open] .technology-card__toggle {
+  transform: rotate(45deg);
+}
+
+.technology-card__body {
+  display: grid;
+  gap: 1rem;
+  padding: 0 1rem 1.05rem;
+}
+
+.technology-card__body > p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.88rem;
+  line-height: 1.55;
+}
+
+.technology-card__meta {
+  display: grid;
+  grid-template-columns: minmax(0, 1.08fr) minmax(10rem, 0.92fr);
+  gap: 0.85rem;
+}
+
+.technology-card__meta > div {
+  display: grid;
+  gap: 0.5rem;
+  align-content: start;
+}
+
 .relationship-graph::before,
 .relationship-graph::after {
   content: "";
@@ -6629,6 +6741,10 @@ input:focus-visible {
     grid-template-columns: 1fr;
   }
 
+  .technology-register {
+    grid-template-columns: 1fr;
+  }
+
   .program-stack-map__core {
     position: static;
   }
@@ -6812,6 +6928,10 @@ input:focus-visible {
   }
 
   .program-stack-card__grid {
+    grid-template-columns: 1fr;
+  }
+
+  .technology-card__meta {
     grid-template-columns: 1fr;
   }
 

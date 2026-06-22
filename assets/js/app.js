@@ -8187,25 +8187,33 @@ window.EA_SEARCH = {
   };
 
   const syncPageTitle = ({ current, entityById }) => {
+    const fitTitle = (value) => {
+      const suffix = " | Electronic Artefacts";
+      const text = String(value || "").trim();
+      if (!text) return "Electronic Artefacts";
+      if (`${text}${suffix}`.length <= 60) return `${text}${suffix}`;
+      return `${text.slice(0, Math.max(20, 59 - suffix.length)).trim()}${suffix}`;
+    };
+
     if (current === "detail") {
       const id = new URLSearchParams(window.location.search).get("id");
       const entry = id ? entityById(id) : null;
-      if (entry) document.title = `${entry.title} - Electronic Artefacts`;
+      if (entry) document.title = fitTitle(entry.title);
       return;
     }
 
     if (current === "project-rl") {
       const id = new URLSearchParams(window.location.search).get("id");
       const entry = id ? entityById(id) : null;
-      if (entry) document.title = `${entry.title} Dossier - Electronic Artefacts`;
+      if (entry) document.title = fitTitle(`${entry.title} Dossier`);
       return;
     }
 
-    if (current === "mentions-legales") document.title = "Legal Notice - Electronic Artefacts";
-    if (current === "confidentialite") document.title = "Privacy - Electronic Artefacts";
-    if (current === "programs") document.title = "Programs - Electronic Artefacts";
-    if (current === "projects") document.title = "Projects - Electronic Artefacts";
-    if (current === "search") document.title = "Search - Electronic Artefacts";
+    if (current === "mentions-legales") document.title = "Legal Notice | Electronic Artefacts";
+    if (current === "confidentialite") document.title = "Privacy Policy | Electronic Artefacts";
+    if (current === "programs") document.title = "Programs and Runtimes | Electronic Artefacts";
+    if (current === "projects") document.title = "Projects | Electronic Artefacts";
+    if (current === "search") document.title = "Search | Electronic Artefacts";
   };
 
   const syncSeoMeta = ({ current, entityById }) => {
@@ -8213,7 +8221,27 @@ window.EA_SEARCH = {
     document.documentElement.lang = "en";
 
     const siteName = "Electronic Artefacts";
-    const fallbackDescription = "Electronic Artefacts is an independent creative technology studio operating across research, software development, digital design, communication and artistic production.";
+    const fallbackDescription = "Electronic Artefacts designs digital products, knowledge systems, cultural platforms and research-led experiences.";
+    const fitDescription = (value) => {
+      const text = String(value || fallbackDescription).replace(/\s+/g, " ").trim();
+      if (text.length <= 155) return text;
+      return `${text.slice(0, 152).replace(/\s+\S*$/, "").trim()}…`;
+    };
+    const enrichDetailDescription = (entry, value) => {
+      const text = String(value || "").trim();
+      if (!entry || text.length >= 90) return text;
+      const additions = {
+        project: "Explore the project scope, visual evidence and connected systems.",
+        program: "Explore its role, architecture, lineage and connected projects.",
+        researchField: "Explore connected research, projects, programs and artefacts.",
+        researchLog: "Explore the research context and related work.",
+        artefact: "Explore its archive context and related work.",
+        collection: "Explore the connected projects and research records.",
+        artist: "Explore the profile and connected work.",
+        channel: "Explore the channel and related projects.",
+      };
+      return `${text} ${additions[entry.kind] || "Explore its context and connected work."}`.trim();
+    };
     const pageName = window.location.pathname.split("/").pop() || "index.html";
     const baseName = pageName.replace(/\.html$/, "");
     const queryId = new URLSearchParams(window.location.search).get("id");
@@ -8225,50 +8253,53 @@ window.EA_SEARCH = {
 
     const pageDescriptions = {
       index: fallbackDescription,
-      work: "Studio work, services and selected collaborations.",
-      research: "Research fields, notes and system studies across the Electronic Artefacts ecosystem.",
-      programs: "Programs, runtimes and architectural systems that power Electronic Artefacts.",
-      projects: "Projects, albums and client work in the Electronic Artefacts archive.",
-      archive: "Archived projects, systems and research threads preserved by Electronic Artefacts.",
-      about: "Electronic Artefacts is an independent creative technology studio spanning research, software development, digital design, communication and artistic production.",
-      contact: "Contact Electronic Artefacts by email and social channels.",
-      search: "Search the Electronic Artefacts knowledge base.",
-      project: "Electronic Artefacts project page.",
-      "project-rl": "Electronic Artefacts project dossier.",
-      artefact: "Electronic Artefacts artefact page.",
-      collection: "Electronic Artefacts collection page.",
-      channel: "Electronic Artefacts channel page.",
-      artist: "Electronic Artefacts artist page.",
-      program: "Detailed registry of Electronic Artefacts programs, with status, lineage and system context.",
-      entity: "Electronic Artefacts knowledge piece.",
-      palimpsests: "Palimpsests project page.",
-      "mentions-legales": "Legal notice for the Electronic Artefacts site.",
-      confidentialite: "Privacy policy for the Electronic Artefacts site.",
+      work: "Explore digital products, knowledge platforms, creative technology and public systems designed by Electronic Artefacts.",
+      research: "Research across technology, knowledge systems, culture, governance, perception and creative production.",
+      programs: "Discover the runtimes, software programs and architectural systems behind Electronic Artefacts projects.",
+      projects: "Explore Electronic Artefacts projects across software, cultural platforms, artistic production and client systems.",
+      archive: "Browse releases, prototypes, documents, research logs and unfinished material preserved by Electronic Artefacts.",
+      about: "Electronic Artefacts is an independent creative technology studio connecting research, software, design and cultural production.",
+      contact: "Contact Electronic Artefacts about digital products, knowledge systems, cultural platforms and creative technology.",
+      search: "Search public Electronic Artefacts projects, programs, research and archive records.",
+      project: "Electronic Artefacts project overview, visual evidence and connected systems.",
+      "project-rl": "Extended Electronic Artefacts project documentation and technical context.",
+      artefact: "A public artefact preserved in the Electronic Artefacts archive.",
+      collection: "A curated collection of connected Electronic Artefacts projects and research.",
+      channel: "A public channel connected to the Electronic Artefacts ecosystem.",
+      artist: "Artist profile and connected work within Electronic Artefacts.",
+      program: "Electronic Artefacts program profile with status, lineage and system context.",
+      entity: "A connected public research or knowledge record from Electronic Artefacts.",
+      palimpsests: "Explore Palimpsests, a conceptual album by ORETH structured in five acts around memory, inheritance and transmission.",
+      "mentions-legales": "Legal information and publisher details for the Electronic Artefacts website.",
+      confidentialite: "Privacy and browser-storage information for the Electronic Artefacts website.",
     };
 
-    const description =
+    const rawDescription =
       (detailEntry?.kind === "project" && current === "project-rl"
         ? `${detailEntry.summary || detailEntry.description || detailEntry.title} Extended project dossier.`
         : detailEntry?.summary || detailEntry?.description || pageDescriptions[baseName] || pageDescriptions[current] || fallbackDescription) || fallbackDescription;
+    const description = fitDescription(enrichDetailDescription(detailEntry, rawDescription));
 
     const canonicalPath = (() => {
       if (baseName === "index") return "./";
       if (baseName === "palimpsests") return "./palimpsests.html";
       if (detailEntry?.route && (current === "detail" || current === "project-rl")) return detailEntry.route;
-      if (current === "project-rl" && queryId) return `./project-rl.html?id=${encodeURIComponent(queryId)}`;
+      if (current === "project-rl" && queryId) return `./project.html?id=${encodeURIComponent(queryId)}`;
       if (current === "detail" && queryId) return `./${baseName}.html?id=${encodeURIComponent(queryId)}`;
       return `./${pageName}`;
     })();
 
-    const canonicalUrl = new URL(canonicalPath, window.location.href).href;
+    const canonicalUrl = new URL(canonicalPath, "https://electronicartefacts.com/").href;
     const imageCandidate =
       detailEntry?.media?.gallery?.find((item) => item?.src && item.mediaType !== "video" && /\.(png|jpe?g|webp|gif)$/i.test(item.src)) ||
-      detailEntry?.media?.gallery?.find((item) => item?.src && item.mediaType !== "video") ||
       null;
-    const imageSrc = imageCandidate?.src || "./assets/media/projects/electronic-artefacts/electronic-artefacts-logo.png";
+    const imageSrc = imageCandidate?.src || "./assets/media/projects/electronic-artefacts/electronic-artefacts-search.jpg";
     const imageAlt = imageCandidate?.alt || detailEntry?.title || "Electronic Artefacts logo";
-    const imageUrl = new URL(imageSrc, window.location.href).href;
-    const robots = current === "search" ? "noindex,follow" : "index,follow,max-image-preview:large";
+    const imageUrl = new URL(imageSrc, "https://electronicartefacts.com/").href;
+    const robots =
+      current === "search" || current === "project-rl" || ((current === "detail" || current === "project-rl") && !detailEntry)
+        ? "noindex,follow"
+        : "index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1";
     const ogType = current === "detail" || current === "project-rl" ? "article" : "website";
 
     const ensureMeta = ({ name, property, content }) => {
@@ -8282,6 +8313,10 @@ window.EA_SEARCH = {
       }
       node.setAttribute("content", content);
       return node;
+    };
+    const removeMeta = ({ name, property }) => {
+      const selector = property ? `meta[property="${property}"]` : `meta[name="${name}"]`;
+      document.head.querySelector(selector)?.remove();
     };
 
     const ensureLink = (rel, href) => {
@@ -8312,7 +8347,7 @@ window.EA_SEARCH = {
 
     ensureMeta({ name: "description", content: description });
     ensureMeta({ name: "robots", content: robots });
-    ensureMeta({ name: "theme-color", content: "#0f1115" });
+    ensureMeta({ name: "theme-color", content: "#000000" });
     ensureMeta({ property: "og:title", content: document.title });
     ensureMeta({ property: "og:description", content: description });
     ensureMeta({ property: "og:type", content: ogType });
@@ -8320,7 +8355,17 @@ window.EA_SEARCH = {
     ensureMeta({ property: "og:site_name", content: siteName });
     ensureMeta({ property: "og:locale", content: "en_US" });
     ensureMeta({ property: "og:image", content: imageUrl });
+    ensureMeta({ property: "og:image:secure_url", content: imageUrl });
     ensureMeta({ property: "og:image:alt", content: imageAlt });
+    if (imageCandidate) {
+      removeMeta({ property: "og:image:type" });
+      removeMeta({ property: "og:image:width" });
+      removeMeta({ property: "og:image:height" });
+    } else {
+      ensureMeta({ property: "og:image:type", content: "image/jpeg" });
+      ensureMeta({ property: "og:image:width", content: "1200" });
+      ensureMeta({ property: "og:image:height", content: "630" });
+    }
     ensureMeta({ name: "twitter:card", content: "summary_large_image" });
     ensureMeta({ name: "twitter:title", content: document.title });
     ensureMeta({ name: "twitter:description", content: description });
@@ -8330,13 +8375,7 @@ window.EA_SEARCH = {
 
     const jsonLd =
       baseName === "index"
-        ? {
-            "@context": "https://schema.org",
-            "@type": "WebSite",
-            name: siteName,
-            url: canonicalUrl,
-            description,
-          }
+        ? null
         : detailEntry
           ? {
               "@context": "https://schema.org",
@@ -11057,10 +11096,50 @@ window.EA_SEARCH = {
     ];
 
     const technologyMap = [
-      { title: "TypeScript", nodes: ["VASTE", "UnionMob"] },
-      { title: "Rust", nodes: ["VOID", "Forge"] },
-      { title: "PHP", nodes: ["AtypikHouse", "L'Oeil de Meg"] },
-      { title: "Python", nodes: ["OracleHub", "Audio Analysis Research"] },
+      {
+        title: "TypeScript",
+        mark: "TS",
+        role: "Interfaces, runtimes and connected product systems",
+        copy: "Used where shared models, graph-shaped data and interactive application surfaces need to evolve together.",
+        strengths: ["Typed models", "Web runtime", "Shared contracts"],
+        systems: [
+          { label: "VASTE", href: "https://www.vaste.space/" },
+          { label: "UnionMob", href: "./project.html?id=unionmob" },
+        ],
+      },
+      {
+        title: "Rust",
+        mark: "RS",
+        role: "Performance-sensitive production and systems research",
+        copy: "Used for experiments where execution control, reliability and scalable transformation pipelines are central.",
+        strengths: ["Performance", "Memory safety", "Pipeline control"],
+        systems: [
+          { label: "Forge", href: "./program.html?id=forge" },
+          { label: "VOID archive", href: "./entity.html?id=void" },
+        ],
+      },
+      {
+        title: "PHP",
+        mark: "PHP",
+        role: "Operational web products and publishing ecosystems",
+        copy: "Used for pragmatic public platforms that combine content management, business workflows and long-lived web delivery.",
+        strengths: ["CMS ecosystems", "Operational delivery", "Content workflows"],
+        systems: [
+          { label: "AtypikHouse", href: "./project.html?id=atypikhouse" },
+          { label: "L’Œil de Meg", href: "./project.html?id=oeil-de-meg" },
+        ],
+      },
+      {
+        title: "Python",
+        mark: "PY",
+        role: "Data processing, analysis and asynchronous research",
+        copy: "Used for specialised workers, data pipelines, experimental analysis and rapid technical investigation.",
+        strengths: ["Data tooling", "Async workers", "Rapid research"],
+        systems: [
+          { label: "OracleHub", href: "./program.html?id=oraclehub" },
+          { label: "Audio analysis", href: "./research.html" },
+        ],
+      },
     ];
 
     const strategicObservation = [
@@ -11212,17 +11291,45 @@ window.EA_SEARCH = {
       <section class="zone-card hero">
         <div class="section-head">
           <p class="eyebrow">TECHNOLOGY MAP</p>
-          <h2>Language alignment</h2>
-          <p class="lede">Each stack keeps a primary language visible.</p>
+          <h2>Languages are selected by system responsibility.</h2>
+          <p class="lede">The stack is intentionally polyglot. Each language is attached to a class of constraints: interactive products, high-control pipelines, operational publishing or data-intensive research.</p>
         </div>
-        <div class="graph-columns">
+        <div class="technology-register">
           ${technologyMap
             .map(
-              (column) => `
-                <div class="graph-column">
-                  <p class="card__meta">${esc(column.title)}</p>
-                  ${column.nodes.map((node) => `<div class="graph-node">${esc(node)}</div>`).join("")}
-                </div>
+              (technology, index) => `
+                <details class="technology-card"${index === 0 ? " open" : ""}>
+                  <summary>
+                    <span class="technology-card__mark">${esc(technology.mark)}</span>
+                    <span class="technology-card__identity">
+                      <strong>${esc(technology.title)}</strong>
+                      <small>${esc(technology.role)}</small>
+                    </span>
+                    <span class="technology-card__toggle" aria-hidden="true">+</span>
+                  </summary>
+                  <div class="technology-card__body">
+                    <p>${esc(technology.copy)}</p>
+                    <div class="technology-card__meta">
+                      <div>
+                        <span class="card__meta">Why it fits</span>
+                        <div class="tag-cluster tag-cluster--compact">
+                          ${technology.strengths.map((strength) => chip(strength)).join("")}
+                        </div>
+                      </div>
+                      <div>
+                        <span class="card__meta">Used in</span>
+                        <div class="link-row">
+                          ${technology.systems
+                            .map(
+                              (system) =>
+                                `<a class="tag" href="${esc(system.href)}"${system.href.startsWith("http") ? ' target="_blank" rel="noreferrer"' : ""}>${esc(system.label)}</a>`,
+                            )
+                            .join("")}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </details>
               `,
             )
             .join("")}

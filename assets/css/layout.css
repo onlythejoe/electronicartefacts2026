@@ -21,6 +21,13 @@
   padding: clamp(1.05rem, 1.8vw, 1.45rem) 0 1.75rem;
 }
 
+section[data-render] {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  gap: var(--section-stack-gap);
+  min-width: 0;
+}
+
 .shell-header.zone-card,
 .shell-footer.zone-card {
   width: calc(100% - (var(--gutter) * 2));

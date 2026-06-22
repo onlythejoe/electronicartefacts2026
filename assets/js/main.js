@@ -2684,10 +2684,50 @@
     ];
 
     const technologyMap = [
-      { title: "TypeScript", nodes: ["VASTE", "UnionMob"] },
-      { title: "Rust", nodes: ["VOID", "Forge"] },
-      { title: "PHP", nodes: ["AtypikHouse", "L'Oeil de Meg"] },
-      { title: "Python", nodes: ["OracleHub", "Audio Analysis Research"] },
+      {
+        title: "TypeScript",
+        mark: "TS",
+        role: "Interfaces, runtimes and connected product systems",
+        copy: "Used where shared models, graph-shaped data and interactive application surfaces need to evolve together.",
+        strengths: ["Typed models", "Web runtime", "Shared contracts"],
+        systems: [
+          { label: "VASTE", href: "https://www.vaste.space/" },
+          { label: "UnionMob", href: "./project.html?id=unionmob" },
+        ],
+      },
+      {
+        title: "Rust",
+        mark: "RS",
+        role: "Performance-sensitive production and systems research",
+        copy: "Used for experiments where execution control, reliability and scalable transformation pipelines are central.",
+        strengths: ["Performance", "Memory safety", "Pipeline control"],
+        systems: [
+          { label: "Forge", href: "./program.html?id=forge" },
+          { label: "VOID archive", href: "./entity.html?id=void" },
+        ],
+      },
+      {
+        title: "PHP",
+        mark: "PHP",
+        role: "Operational web products and publishing ecosystems",
+        copy: "Used for pragmatic public platforms that combine content management, business workflows and long-lived web delivery.",
+        strengths: ["CMS ecosystems", "Operational delivery", "Content workflows"],
+        systems: [
+          { label: "AtypikHouse", href: "./project.html?id=atypikhouse" },
+          { label: "L’Œil de Meg", href: "./project.html?id=oeil-de-meg" },
+        ],
+      },
+      {
+        title: "Python",
+        mark: "PY",
+        role: "Data processing, analysis and asynchronous research",
+        copy: "Used for specialised workers, data pipelines, experimental analysis and rapid technical investigation.",
+        strengths: ["Data tooling", "Async workers", "Rapid research"],
+        systems: [
+          { label: "OracleHub", href: "./program.html?id=oraclehub" },
+          { label: "Audio analysis", href: "./research.html" },
+        ],
+      },
     ];
 
     const strategicObservation = [
@@ -2839,17 +2879,45 @@
       <section class="zone-card hero">
         <div class="section-head">
           <p class="eyebrow">TECHNOLOGY MAP</p>
-          <h2>Language alignment</h2>
-          <p class="lede">Each stack keeps a primary language visible.</p>
+          <h2>Languages are selected by system responsibility.</h2>
+          <p class="lede">The stack is intentionally polyglot. Each language is attached to a class of constraints: interactive products, high-control pipelines, operational publishing or data-intensive research.</p>
         </div>
-        <div class="graph-columns">
+        <div class="technology-register">
           ${technologyMap
             .map(
-              (column) => `
-                <div class="graph-column">
-                  <p class="card__meta">${esc(column.title)}</p>
-                  ${column.nodes.map((node) => `<div class="graph-node">${esc(node)}</div>`).join("")}
-                </div>
+              (technology, index) => `
+                <details class="technology-card"${index === 0 ? " open" : ""}>
+                  <summary>
+                    <span class="technology-card__mark">${esc(technology.mark)}</span>
+                    <span class="technology-card__identity">
+                      <strong>${esc(technology.title)}</strong>
+                      <small>${esc(technology.role)}</small>
+                    </span>
+                    <span class="technology-card__toggle" aria-hidden="true">+</span>
+                  </summary>
+                  <div class="technology-card__body">
+                    <p>${esc(technology.copy)}</p>
+                    <div class="technology-card__meta">
+                      <div>
+                        <span class="card__meta">Why it fits</span>
+                        <div class="tag-cluster tag-cluster--compact">
+                          ${technology.strengths.map((strength) => chip(strength)).join("")}
+                        </div>
+                      </div>
+                      <div>
+                        <span class="card__meta">Used in</span>
+                        <div class="link-row">
+                          ${technology.systems
+                            .map(
+                              (system) =>
+                                `<a class="tag" href="${esc(system.href)}"${system.href.startsWith("http") ? ' target="_blank" rel="noreferrer"' : ""}>${esc(system.label)}</a>`,
+                            )
+                            .join("")}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </details>
               `,
             )
             .join("")}

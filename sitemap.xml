@@ -1,14 +1,66 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://electronicartefacts.com/</loc></url>
-  <url><loc>https://electronicartefacts.com/work.html</loc></url>
-  <url><loc>https://electronicartefacts.com/projects.html</loc></url>
-  <url><loc>https://electronicartefacts.com/programs.html</loc></url>
-  <url><loc>https://electronicartefacts.com/research.html</loc></url>
-  <url><loc>https://electronicartefacts.com/archive.html</loc></url>
   <url><loc>https://electronicartefacts.com/about.html</loc></url>
+  <url><loc>https://electronicartefacts.com/archive.html</loc></url>
+  <url><loc>https://electronicartefacts.com/artefact.html?id=crash-audio</loc></url>
+  <url><loc>https://electronicartefacts.com/artefact.html?id=emergence-audio</loc></url>
+  <url><loc>https://electronicartefacts.com/artefact.html?id=entropy-audio</loc></url>
+  <url><loc>https://electronicartefacts.com/artefact.html?id=etoiles-audio</loc></url>
+  <url><loc>https://electronicartefacts.com/artefact.html?id=experiences-audio</loc></url>
+  <url><loc>https://electronicartefacts.com/artefact.html?id=foundational-lineage-001</loc></url>
+  <url><loc>https://electronicartefacts.com/artefact.html?id=incandescence-audio</loc></url>
+  <url><loc>https://electronicartefacts.com/artefact.html?id=keraunos-audio</loc></url>
+  <url><loc>https://electronicartefacts.com/artefact.html?id=legacy-agency</loc></url>
+  <url><loc>https://electronicartefacts.com/artefact.html?id=nerve-corrupted</loc></url>
+  <url><loc>https://electronicartefacts.com/artefact.html?id=out-of-memory-audio</loc></url>
+  <url><loc>https://electronicartefacts.com/artefact.html?id=palimpsest-audio</loc></url>
+  <url><loc>https://electronicartefacts.com/artefact.html?id=resilience-audio</loc></url>
+  <url><loc>https://electronicartefacts.com/artefact.html?id=soft-control-audio</loc></url>
+  <url><loc>https://electronicartefacts.com/artefact.html?id=visual-reference-001</loc></url>
+  <url><loc>https://electronicartefacts.com/artist.html?id=marjolaine-muller</loc></url>
+  <url><loc>https://electronicartefacts.com/artist.html?id=noi-save</loc></url>
+  <url><loc>https://electronicartefacts.com/artist.html?id=oreth</loc></url>
+  <url><loc>https://electronicartefacts.com/artist.html?id=zarah-nkounkou</loc></url>
+  <url><loc>https://electronicartefacts.com/channel.html?id=creativestuff</loc></url>
+  <url><loc>https://electronicartefacts.com/channel.html?id=electronic-artefacts</loc></url>
+  <url><loc>https://electronicartefacts.com/collection.html?id=client-work-collection</loc></url>
+  <url><loc>https://electronicartefacts.com/collection.html?id=entropy-studies-collection</loc></url>
+  <url><loc>https://electronicartefacts.com/collection.html?id=palimpsests-collection</loc></url>
+  <url><loc>https://electronicartefacts.com/collection.html?id=runtime-collection</loc></url>
+  <url><loc>https://electronicartefacts.com/collection.html?id=unionmob-collection</loc></url>
+  <url><loc>https://electronicartefacts.com/collection.html?id=vastelab-collection</loc></url>
+  <url><loc>https://electronicartefacts.com/collection.html?id=vestiges-collection</loc></url>
+  <url><loc>https://electronicartefacts.com/collection.html?id=visual-research-collection</loc></url>
   <url><loc>https://electronicartefacts.com/contact.html</loc></url>
+  <url><loc>https://electronicartefacts.com/entity.html?id=anthropic-studies</loc></url>
+  <url><loc>https://electronicartefacts.com/entity.html?id=artifact-theory</loc></url>
+  <url><loc>https://electronicartefacts.com/entity.html?id=emergence</loc></url>
+  <url><loc>https://electronicartefacts.com/entity.html?id=entropy</loc></url>
+  <url><loc>https://electronicartefacts.com/entity.html?id=graph-runtime-studies</loc></url>
+  <url><loc>https://electronicartefacts.com/entity.html?id=information-studies</loc></url>
+  <url><loc>https://electronicartefacts.com/entity.html?id=null-universe</loc></url>
+  <url><loc>https://electronicartefacts.com/entity.html?id=palimpsests-universe</loc></url>
+  <url><loc>https://electronicartefacts.com/entity.html?id=runtime-theory</loc></url>
+  <url><loc>https://electronicartefacts.com/entity.html?id=signal-archaeology</loc></url>
+  <url><loc>https://electronicartefacts.com/entity.html?id=simulation-studies</loc></url>
+  <url><loc>https://electronicartefacts.com/entity.html?id=systems-theory</loc></url>
+  <url><loc>https://electronicartefacts.com/entity.html?id=void</loc></url>
   <url><loc>https://electronicartefacts.com/palimpsests.html</loc></url>
-  <url><loc>https://electronicartefacts.com/mentions-legales.html</loc></url>
-  <url><loc>https://electronicartefacts.com/confidentialite.html</loc></url>
+  <url><loc>https://electronicartefacts.com/program.html?id=arca</loc></url>
+  <url><loc>https://electronicartefacts.com/program.html?id=ea-lightweight-template</loc></url>
+  <url><loc>https://electronicartefacts.com/program.html?id=forge</loc></url>
+  <url><loc>https://electronicartefacts.com/program.html?id=oraclehub</loc></url>
+  <url><loc>https://electronicartefacts.com/program.html?id=oreth-program</loc></url>
+  <url><loc>https://electronicartefacts.com/program.html?id=vaste</loc></url>
+  <url><loc>https://electronicartefacts.com/programs.html</loc></url>
+  <url><loc>https://electronicartefacts.com/project.html?id=electronic-artefacts-website</loc></url>
+  <url><loc>https://electronicartefacts.com/project.html?id=null-underscore-human</loc></url>
+  <url><loc>https://electronicartefacts.com/project.html?id=oeil-de-meg</loc></url>
+  <url><loc>https://electronicartefacts.com/project.html?id=seven-temps-seulement</loc></url>
+  <url><loc>https://electronicartefacts.com/project.html?id=unionmob</loc></url>
+  <url><loc>https://electronicartefacts.com/project.html?id=vestiges</loc></url>
+  <url><loc>https://electronicartefacts.com/projects.html</loc></url>
+  <url><loc>https://electronicartefacts.com/research.html</loc></url>
+  <url><loc>https://electronicartefacts.com/work.html</loc></url>
 </urlset>
