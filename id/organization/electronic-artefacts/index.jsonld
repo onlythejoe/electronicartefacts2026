@@ -1,0 +1,47 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://electronicartefacts.com/organizations/electronic-artefacts/#webpage",
+      "url": "https://electronicartefacts.com/organizations/electronic-artefacts/",
+      "name": "Electronic Artefacts",
+      "mainEntity": {
+        "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
+      },
+      "isPartOf": {
+        "@id": "https://electronicartefacts.com/#website"
+      }
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/",
+      "name": "Electronic Artefacts",
+      "description": "Electronic Artefacts is an independent creative technology studio, software laboratory, research organization, cultural platform, label and publishing system.",
+      "url": "https://electronicartefacts.com/organizations/electronic-artefacts/",
+      "dateCreated": "2024-01-01",
+      "datePublished": "2026-06-22",
+      "dateModified": "2026-06-22",
+      "publisher": {
+        "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Electronic Artefacts",
+          "item": "https://electronicartefacts.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Electronic Artefacts",
+          "item": "https://electronicartefacts.com/organizations/electronic-artefacts/"
+        }
+      ]
+    }
+  ]
+}

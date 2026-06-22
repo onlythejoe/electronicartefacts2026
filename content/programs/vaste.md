@@ -1,0 +1,81 @@
+---
+id: ea:program:vaste
+type: program
+slug:
+  canonical: vaste
+title: VASTE
+subtitle: Proprietary Runtime
+abstract: VASTE is the primary proprietary runtime developed by Electronic Artefacts for graph architectures, contextual execution, identity systems and modular world construction.
+description: The program connects Runtime Theory to implemented graph systems and provides the technical foundation for projects including Vestiges.
+locale: en
+visibility: public
+publicationClass: canonical
+status: development
+maturity: development
+confidence: published
+version:
+  version: 1.0.0
+  createdAt: "2024-01-01"
+  publishedAt: "2026-01-01"
+  modifiedAt: "2026-06-22"
+authors:
+  - id: ea:organization:electronic-artefacts
+publisher: ea:organization:electronic-artefacts
+mandate: Develop a reusable graph runtime for contextual execution, identity, knowledge structures, simulation and modular systems.
+domain: Runtime Systems
+capabilities:
+  - Addressable graph entities
+  - Typed relationships
+  - Contextual execution
+  - Identity and permissions
+  - Event propagation
+  - Simulation structures
+architecture:
+  - Graph entity layer
+  - Context and identity layer
+  - Event execution layer
+  - Projection and public-surface layer
+lifecycle:
+  - ARCA lineage in 2023
+  - Concept foundation in 2024
+  - Runtime prototype in 2025
+  - Graph runtime evolution in 2026
+maintainers:
+  - id: ea:organization:electronic-artefacts
+officialUrl: https://www.vaste.space/
+tags:
+  - TypeScript
+  - Graph
+  - Context
+  - Identity
+  - Simulation
+  - Knowledge
+disciplines:
+  - Technology
+  - Systems
+  - Research
+---
+
+## Mandate
+
+VASTE is the primary proprietary runtime developed within Electronic Artefacts. It explores graph architectures, contextual execution, identity systems, simulation frameworks, knowledge structures and modular world construction.
+
+## Research foundation
+
+The program operationalizes Runtime Theory. It treats entities, relations, identity and context as executable system concerns rather than only database or interface concerns.
+
+## Architecture
+
+The current architecture is organized around addressable graph entities, typed relationships, contextual identity and event propagation. Public applications can build specialized surfaces while retaining shared runtime semantics.
+
+## Lineage
+
+VASTE emerged from ARCA, an earlier system concerned with digital assets, traceability and certification. The scope moved from a specialized asset platform toward generalized execution and information structures.
+
+## Implementations
+
+Vestiges is the flagship public product currently used to demonstrate the runtime in a concrete knowledge and economic context. It applies the graph model to culture, craft and human know-how.
+
+## Status and limitations
+
+VASTE remains in active development. Architectural claims are published where they are stable enough to explain, while implementation details and performance characteristics remain subject to revision.

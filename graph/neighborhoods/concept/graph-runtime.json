@@ -1,0 +1,68 @@
+{
+  "id": "local:ea:concept:graph-runtime",
+  "kind": "local",
+  "focus": "ea:concept:graph-runtime",
+  "nodes": [
+    {
+      "id": "ea:concept:graph-runtime",
+      "type": "concept",
+      "title": "Graph Runtime",
+      "route": "/knowledge/concepts/graph-runtime/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:program:vaste",
+      "type": "program",
+      "title": "VASTE",
+      "route": "/programs/vaste/",
+      "status": "development",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:project:vestiges",
+      "type": "project",
+      "title": "Vestiges",
+      "route": "/projects/vestiges/",
+      "status": "development",
+      "confidence": "observed"
+    },
+    {
+      "id": "ea:researchField:runtime-theory",
+      "type": "researchField",
+      "title": "Runtime Theory",
+      "route": "/research/fields/runtime-theory/",
+      "status": "active",
+      "confidence": "validated"
+    }
+  ],
+  "edges": [
+    {
+      "id": "ear:runtime-theory-defines-graph-runtime",
+      "source": "ea:researchField:runtime-theory",
+      "target": "ea:concept:graph-runtime",
+      "predicate": "defines",
+      "label": "Defines",
+      "statement": "Runtime Theory supplies the research questions and boundaries used to define graph runtime within Electronic Artefacts.",
+      "confidence": "validated"
+    },
+    {
+      "id": "ear:vaste-applies-graph-runtime",
+      "source": "ea:program:vaste",
+      "target": "ea:concept:graph-runtime",
+      "predicate": "appliesConcept",
+      "label": "Applies concept",
+      "statement": "VASTE applies the graph-runtime concept through addressable entities, typed relationships, identity, context and event execution.",
+      "confidence": "observed"
+    },
+    {
+      "id": "ear:vestiges-applies-graph-runtime",
+      "source": "ea:project:vestiges",
+      "target": "ea:concept:graph-runtime",
+      "predicate": "appliesConcept",
+      "label": "Applies concept",
+      "statement": "Vestiges applies graph-runtime principles to cultural, craft and human-knowledge infrastructure.",
+      "confidence": "observed"
+    }
+  ]
+}

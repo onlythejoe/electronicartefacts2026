@@ -5,6 +5,7 @@
   const timelines = window.EA_TIMELINES || [];
   const activity = window.EA_ACTIVITY || [];
   const collections = window.EA_COLLECTIONS || [];
+  const publicCatalog = window.EA_PUBLIC_CATALOG || {};
   const normalizeTitle = (value) =>
     String(value ?? "")
       .toLowerCase()
@@ -77,6 +78,15 @@
     activityByEntityId,
     getSearchIndex,
   };
+  const routeById = { ...(publicCatalog.routes || {}) };
+  (publicCatalog.entities || []).forEach((item) => {
+    if (item.legacyId && item.route) routeById[item.legacyId] = item.route;
+  });
+  const routeFor = (itemOrId) => {
+    const id = typeof itemOrId === "string" ? itemOrId : itemOrId?.id;
+    if (!id) return "";
+    return routeById[id] || (typeof itemOrId === "object" ? itemOrId.route || "" : "");
+  };
 
   const catalog = {
     taxonomies,
@@ -86,6 +96,9 @@
     activity,
     collections,
     indexes,
+    routeById,
+    routeFor,
+    publicCatalog,
     programs: (entities.programs || []).filter(isPublic),
     artists: (entities.artists || []).filter(isPublic),
     projects: (entities.projects || []).filter(isPublic),

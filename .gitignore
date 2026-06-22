@@ -1,2 +1,5 @@
 .playwright-mcp/
 contact-check.png
+node_modules/
+.cache/
+generated/reports/

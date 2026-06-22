@@ -5,7 +5,7 @@
   const { esc, setYear, slugify } = window.EA_UTILS;
   const { loadIncludes } = window.EA_INCLUDES;
   const { statusBadge, chip, tagRow, metadataList, linkRow, metricRail, cardLinkAttrs, cardOverlayLink } = window.EA_UI;
-  const { initFilters, initSearch, initCardLinks, initUXEnhancements, refreshCardSurfaces, syncNavigationState, syncSeoMeta } = window.EA_BEHAVIORS;
+  const { initFilters, initSearch, initCardLinks, initContactDiscovery, initUXEnhancements, refreshCardSurfaces, syncNavigationState, syncSeoMeta } = window.EA_BEHAVIORS;
   const {
     cardBaseAttrs,
     mediaFrom,
@@ -650,95 +650,57 @@
     </div>
   `;
 
+  const contactDiscovery = () => `
+    <section class="zone-card contact-discovery" data-contact-discovery>
+      <div class="contact-discovery__intro">
+        <p class="eyebrow">PROJECT / COLLABORATION DISCOVERY</p>
+        <h1 class="display-title">What should exist that doesn’t exist yet?</h1>
+        <p class="lede">Describe the situation in your own words. This interface organizes your intent into a concise brief. Classification happens locally in your browser.</p>
+      </div>
+      <div class="contact-command">
+        <label class="sr-only" for="contact-intent">Describe your idea, project or collaboration</label>
+        <textarea id="contact-intent" class="contact-command__input" rows="4" data-contact-intent placeholder="Tell us what you’re working on." aria-describedby="contact-discovery-status"></textarea>
+        <div class="contact-command__footer"><span id="contact-discovery-status" data-contact-status aria-live="polite">Start with a sentence. No formal brief required.</span><span><kbd>⌘</kbd><kbd>Enter</kbd> to continue</span></div>
+      </div>
+      <div class="contact-discovery__workspace" data-contact-workspace hidden>
+        <div class="contact-discovery__main">
+          <section class="contact-discovery__step" aria-labelledby="contact-pathway-title">
+            <div class="contact-discovery__step-head"><span>01</span><div><p class="card__meta">Likely pathway</p><h2 id="contact-pathway-title" data-contact-pathway-title>Clarifying intent</h2></div></div>
+            <p class="card__copy" data-contact-pathway-copy></p>
+            <div class="contact-pathways" data-contact-pathways aria-label="Change collaboration pathway"></div>
+          </section>
+          <section class="contact-discovery__step" aria-labelledby="contact-tags-title">
+            <div class="contact-discovery__step-head"><span>02</span><div><p class="card__meta">Detected signals</p><h2 id="contact-tags-title">Confirm what matters.</h2></div></div>
+            <div class="contact-detected-tags" data-contact-tags aria-live="polite"></div>
+            <div class="contact-custom-tag"><label for="contact-custom-tag">Add another signal</label><div><input id="contact-custom-tag" type="text" data-contact-custom-tag placeholder="e.g. exhibition, API, distribution" /><button type="button" class="tag" data-contact-add-tag>Add</button></div></div>
+          </section>
+          <section class="contact-discovery__step" aria-labelledby="contact-questions-title">
+            <div class="contact-discovery__step-head"><span>03</span><div><p class="card__meta">Relevant questions</p><h2 id="contact-questions-title">Give the idea enough context.</h2></div></div>
+            <div class="contact-questions" data-contact-questions></div>
+          </section>
+          <section class="contact-discovery__step contact-identity" aria-labelledby="contact-identity-title">
+            <div class="contact-discovery__step-head"><span>04</span><div><p class="card__meta">Contact details</p><h2 id="contact-identity-title">Where should the reply go?</h2></div></div>
+            <div class="contact-field-grid"><label><span>Name</span><input type="text" autocomplete="name" data-contact-name required /></label><label><span>Email</span><input type="email" autocomplete="email" data-contact-email required /></label><label class="contact-field-grid__wide"><span>Organization or practice <em>optional</em></span><input type="text" autocomplete="organization" data-contact-organization /></label></div>
+          </section>
+        </div>
+        <aside class="contact-brief" aria-labelledby="contact-brief-title">
+          <div class="contact-brief__head"><p class="card__meta">LIVE BRIEF</p><h2 id="contact-brief-title">Your entry point</h2><span data-contact-completeness>Intent captured</span></div>
+          <dl data-contact-summary></dl>
+          <div class="contact-brief__actions"><a class="button button--primary" data-contact-submit href="mailto:electronic.artefacts@gmail.com">Prepare email</a><button class="button button--secondary" type="button" data-contact-copy>Copy brief</button></div>
+          <p class="contact-brief__note">Nothing is uploaded. “Prepare email” opens your mail application with the brief included.</p>
+        </aside>
+      </div>
+    </section>
+  `;
+
   const contactLinks = () => `
     <section class="zone-card hero contact-channels">
-      <div class="section-head">
-        <p class="eyebrow">DIRECT CHANNELS</p>
-        <h2>Choose the channel that matches the conversation.</h2>
-        <p class="lede">Email is the primary route for projects and partnerships. Social channels document the work; GitHub, SoundCloud and VASTE expose specific parts of the practice.</p>
-      </div>
+      <div class="section-head"><p class="eyebrow">DIRECT ROUTES</p><h2>Prefer to contact us directly?</h2><p class="lede">The discovery interface is optional. Email remains the primary route; public channels expose the studio's code, sound, research and ongoing work.</p></div>
       <div class="contact-grid">
-        ${[
-          {
-            title: "electronic.artefacts@gmail.com",
-            type: "Email",
-            copy: "Best for project briefs, partnerships, commissions and considered introductions.",
-            link: { label: "Send email", href: "mailto:electronic.artefacts@gmail.com" },
-          },
-          {
-            title: "@electronic.artefacts",
-            type: "Instagram",
-            copy: "Studio updates, releases and public signals from the wider ecosystem.",
-            link: {
-              label: "Open Instagram",
-              href: "https://www.instagram.com/electronic.artefacts/",
-              target: "_blank",
-            },
-          },
-          {
-            title: "@creativestuff.jpg",
-            type: "Instagram",
-            copy: "Visual research, references and informal observations from the image practice.",
-            link: {
-              label: "Open Instagram",
-              href: "https://www.instagram.com/creativestuff.jpg/",
-              target: "_blank",
-            },
-          },
-          {
-            title: "GitHub, SoundCloud, VASTE",
-            type: "External links",
-            copy: "Code, audio and the external VASTE runtime each provide a deeper technical or cultural entry point.",
-            link: null,
-          },
-        ]
-          .map(
-            (item, index) => `
-              <article class="panel">
-                <p class="card__meta">${esc(item.type)}</p>
-                <h3 class="card__title">${esc(item.title)}</h3>
-                <p class="card__copy">${esc(item.copy)}</p>
-                ${index === 3
-                  ? `<div class="link-row">
-                      <a class="tag" href="https://github.com/onlythejoe" target="_blank" rel="noreferrer">GitHub</a>
-                      <a class="tag" href="https://soundcloud.com/electronic-artefacts" target="_blank" rel="noreferrer">SoundCloud</a>
-                      <a class="tag" href="https://www.vaste.space/" target="_blank" rel="noreferrer">VASTE</a>
-                    </div>`
-                  : linkRow(item.link)}
-              </article>
-            `,
-          )
-          .join("")}
-      </div>
-      <div class="split contact-expectations">
-        <article class="panel panel--soft">
-          <p class="card__meta">Good fit</p>
-          <h3 class="card__title">Complex projects that need structure.</h3>
-          <p class="card__copy">Knowledge platforms, digital products, creative technology, cultural infrastructure, research-led interfaces and distinctive public systems.</p>
-        </article>
-        <article class="panel panel--soft">
-          <p class="card__meta">Working relationship</p>
-          <h3 class="card__title">Clarity before scale.</h3>
-          <p class="card__copy">Early conversations focus on the real objective, available evidence, decision constraints and the smallest meaningful first phase.</p>
-        </article>
-      </div>
-      <div class="contact-process">
-        ${[
-          ["01", "Frame", "Clarify the objective, users, constraints and available evidence."],
-          ["02", "Scope", "Define the smallest useful phase, responsibilities and decision points."],
-          ["03", "Build", "Design and implement in short reviewable increments."],
-          ["04", "Transfer", "Document the system, decisions and next operating steps."],
-        ]
-          .map(
-            ([number, title, copy]) => `
-              <article class="panel panel--soft">
-                <span class="research-method__number">${number}</span>
-                <h3 class="card__title">${title}</h3>
-                <p class="card__copy">${copy}</p>
-              </article>
-            `,
-          )
-          .join("")}
+        <article class="panel"><p class="card__meta">Email</p><h3 class="card__title">electronic.artefacts@gmail.com</h3><p class="card__copy">Project briefs, partnerships, commissions and considered introductions.</p>${linkRow({ label: "Send email", href: "mailto:electronic.artefacts@gmail.com" })}</article>
+        <article class="panel"><p class="card__meta">Studio channel</p><h3 class="card__title">@electronic.artefacts</h3><p class="card__copy">Studio updates, releases and public signals.</p>${linkRow({ label: "Open Instagram", href: "https://www.instagram.com/electronic.artefacts/", target: "_blank" })}</article>
+        <article class="panel"><p class="card__meta">Visual observatory</p><h3 class="card__title">@creativestuff.jpg</h3><p class="card__copy">Visual research, references and observations.</p>${linkRow({ label: "Open Instagram", href: "https://www.instagram.com/creativestuff.jpg/", target: "_blank" })}</article>
+        <article class="panel"><p class="card__meta">Code / sound / runtime</p><h3 class="card__title">Public surfaces</h3><p class="card__copy">Code, audio and the external VASTE runtime.</p><div class="link-row"><a class="tag" href="https://github.com/onlythejoe" target="_blank" rel="noreferrer">GitHub</a><a class="tag" href="https://soundcloud.com/electronic-artefacts" target="_blank" rel="noreferrer">SoundCloud</a><a class="tag" href="https://www.vaste.space/" target="_blank" rel="noreferrer">VASTE</a></div></article>
       </div>
     </section>
   `;
@@ -765,6 +727,8 @@
   const entryHref = (entry) => {
     if (!entry) return "";
     if (entry.href) return entry.href;
+    const canonicalRoute = catalog.routeFor?.(entry);
+    if (canonicalRoute) return canonicalRoute;
     if (entry.kind === "page" && entry.id && pageRoutes[entry.id]) return pageRoutes[entry.id];
     if (entry.kind === "collection") return `./collection.html?id=${encodeURIComponent(entry.id)}`;
     if (entry.kind === "project") return entry.route || `./project.html?id=${encodeURIComponent(entry.id)}`;
@@ -3259,8 +3223,8 @@
       "cross-navigation": renderCrossNavigation,
     },
     contact: {
+      "contact-discovery": contactDiscovery,
       "contact-links": renderContact,
-      "cross-navigation": renderCrossNavigation,
     },
     search: {
       "search-page": renderSearchPage,
@@ -3307,6 +3271,7 @@
     initFilters(filterState);
     initSearch(searchState, renderSearchResults);
     initCardLinks();
+    initContactDiscovery();
     initUXEnhancements(filterState);
     startVasteEngineAnimation();
     startGraphSurfaceAnimation();

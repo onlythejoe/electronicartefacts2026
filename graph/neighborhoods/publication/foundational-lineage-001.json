@@ -1,0 +1,85 @@
+{
+  "id": "local:ea:publication:foundational-lineage-001",
+  "kind": "local",
+  "focus": "ea:publication:foundational-lineage-001",
+  "nodes": [
+    {
+      "id": "ea:organization:electronic-artefacts",
+      "type": "organization",
+      "title": "Electronic Artefacts",
+      "route": "/organizations/electronic-artefacts/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:program:vaste",
+      "type": "program",
+      "title": "VASTE",
+      "route": "/programs/vaste/",
+      "status": "development",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:project:vestiges",
+      "type": "project",
+      "title": "Vestiges",
+      "route": "/projects/vestiges/",
+      "status": "development",
+      "confidence": "observed"
+    },
+    {
+      "id": "ea:publication:foundational-lineage-001",
+      "type": "publication",
+      "title": "Foundational Lineage #001",
+      "route": "/publications/foundational-lineage-001/",
+      "status": "research",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:researchField:runtime-theory",
+      "type": "researchField",
+      "title": "Runtime Theory",
+      "route": "/research/fields/runtime-theory/",
+      "status": "active",
+      "confidence": "validated"
+    }
+  ],
+  "edges": [
+    {
+      "id": "ear:electronic-artefacts-publishes-foundational-lineage",
+      "source": "ea:publication:foundational-lineage-001",
+      "target": "ea:organization:electronic-artefacts",
+      "predicate": "publishedBy",
+      "label": "Published by",
+      "statement": "Electronic Artefacts publishes and maintains Foundational Lineage",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:foundational-lineage-documents-runtime-theory",
+      "source": "ea:publication:foundational-lineage-001",
+      "target": "ea:researchField:runtime-theory",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Foundational Lineage",
+      "confidence": "observed"
+    },
+    {
+      "id": "ear:foundational-lineage-documents-vaste",
+      "source": "ea:publication:foundational-lineage-001",
+      "target": "ea:program:vaste",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Foundational Lineage",
+      "confidence": "observed"
+    },
+    {
+      "id": "ear:vestiges-evidenced-by-foundational-lineage",
+      "source": "ea:project:vestiges",
+      "target": "ea:publication:foundational-lineage-001",
+      "predicate": "evidencedBy",
+      "label": "Evidenced by",
+      "statement": "Foundational Lineage",
+      "confidence": "observed"
+    }
+  ]
+}

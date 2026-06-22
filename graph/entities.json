@@ -1,0 +1,206 @@
+[
+  {
+    "id": "ea:concept:graph-runtime",
+    "legacyId": "graph-runtime",
+    "kind": "concept",
+    "type": "concept",
+    "title": "Graph Runtime",
+    "summary": "Electronic Artefacts uses graph runtime to describe systems where entities, relationships, identity, context and events form an executable structure rather than a passive data model.",
+    "description": "A canonical definition of graph runtime, its scope, applications and relationship to VASTE, Runtime Theory and Vestiges.",
+    "definition": "A graph runtime is an execution environment in which addressable entities and typed relationships participate directly in contextual computation.",
+    "status": "active",
+    "maturity": "research",
+    "confidence": "canonical",
+    "visibility": "public",
+    "publicationClass": "canonical",
+    "tags": [
+      "Graph",
+      "Runtime",
+      "Context",
+      "Identity",
+      "Execution"
+    ],
+    "discipline": [
+      "Software architecture",
+      "Knowledge systems"
+    ],
+    "route": "/knowledge/concepts/graph-runtime/",
+    "identifier": "/id/concept/graph-runtime/",
+    "temporality": {
+      "creationDate": "2024-01-01",
+      "lastUpdated": "2026-06-22",
+      "releaseDate": "2026-06-22",
+      "creationYear": "2024"
+    }
+  },
+  {
+    "id": "ea:organization:electronic-artefacts",
+    "legacyId": "electronic-artefacts",
+    "kind": "organization",
+    "type": "organization",
+    "title": "Electronic Artefacts",
+    "subtitle": "Studio / label / research",
+    "summary": "Electronic Artefacts is an independent creative technology studio, software laboratory, research organization, cultural platform, label and publishing system.",
+    "description": "Electronic Artefacts connects research, software, design, cultural production and archival practice through a shared graph of projects, programs and knowledge.",
+    "status": "active",
+    "maturity": "production",
+    "confidence": "canonical",
+    "visibility": "public",
+    "publicationClass": "canonical",
+    "tags": [
+      "Creative technology",
+      "Software",
+      "Research",
+      "Culture",
+      "Publishing"
+    ],
+    "discipline": [],
+    "route": "/organizations/electronic-artefacts/",
+    "identifier": "/id/organization/electronic-artefacts/",
+    "temporality": {
+      "creationDate": "2024-01-01",
+      "lastUpdated": "2026-06-22",
+      "releaseDate": "2026-06-22",
+      "creationYear": "2024"
+    }
+  },
+  {
+    "id": "ea:program:vaste",
+    "legacyId": "vaste",
+    "kind": "program",
+    "type": "program",
+    "title": "VASTE",
+    "subtitle": "Proprietary Runtime",
+    "summary": "VASTE is the primary proprietary runtime developed by Electronic Artefacts for graph architectures, contextual execution, identity systems and modular world construction.",
+    "description": "The program connects Runtime Theory to implemented graph systems and provides the technical foundation for projects including Vestiges.",
+    "status": "development",
+    "maturity": "development",
+    "confidence": "published",
+    "visibility": "public",
+    "publicationClass": "canonical",
+    "tags": [
+      "TypeScript",
+      "Graph",
+      "Context",
+      "Identity",
+      "Simulation",
+      "Knowledge"
+    ],
+    "discipline": [
+      "Technology",
+      "Systems",
+      "Research"
+    ],
+    "route": "/programs/vaste/",
+    "identifier": "/id/program/vaste/",
+    "temporality": {
+      "creationDate": "2024-01-01",
+      "lastUpdated": "2026-06-22",
+      "releaseDate": "2026-01-01",
+      "creationYear": "2024"
+    }
+  },
+  {
+    "id": "ea:project:vestiges",
+    "legacyId": "vestiges",
+    "kind": "project",
+    "type": "project",
+    "title": "Vestiges",
+    "subtitle": "VASTE Flagship Knowledge Platform",
+    "summary": "Vestiges is a VASTE-powered knowledge infrastructure platform designed to map, preserve, connect, transmit and activate human know-how.",
+    "description": "The project applies graph-runtime architecture to culture, craft, institutions, materials, techniques, places and public knowledge pages.",
+    "status": "development",
+    "maturity": "prototype",
+    "confidence": "observed",
+    "visibility": "public",
+    "publicationClass": "canonical",
+    "tags": [
+      "Vestiges",
+      "VASTE",
+      "Knowledge Graph",
+      "Craft",
+      "Culture",
+      "Platform"
+    ],
+    "discipline": [
+      "Technology",
+      "Knowledge Graphs",
+      "Culture",
+      "Craft",
+      "Design"
+    ],
+    "route": "/projects/vestiges/",
+    "identifier": "/id/project/vestiges/",
+    "temporality": {
+      "creationDate": "2025-01-01",
+      "lastUpdated": "2026-06-22",
+      "releaseDate": "2026-06-22",
+      "creationYear": "2025"
+    }
+  },
+  {
+    "id": "ea:publication:foundational-lineage-001",
+    "legacyId": "foundational-lineage-001",
+    "kind": "publication",
+    "type": "publication",
+    "title": "Foundational Lineage #001",
+    "subtitle": "Research Note",
+    "summary": "This research note records early architecture, communication-system and documentation threads that led to Electronic Artefacts, Runtime Theory and VASTE.",
+    "description": "A concise record of the foundational research lineage connecting information architecture, taxonomy, runtime systems and public knowledge structures.",
+    "status": "research",
+    "maturity": "research",
+    "confidence": "published",
+    "visibility": "public",
+    "publicationClass": "published",
+    "tags": [
+      "Foundational",
+      "Lineage",
+      "Research",
+      "Information architecture"
+    ],
+    "discipline": [],
+    "route": "/publications/foundational-lineage-001/",
+    "identifier": "/id/publication/foundational-lineage-001/",
+    "temporality": {
+      "creationDate": "2026-01-01",
+      "lastUpdated": "2026-06-22",
+      "releaseDate": "2026-06-12",
+      "creationYear": "2026"
+    }
+  },
+  {
+    "id": "ea:researchField:runtime-theory",
+    "legacyId": "runtime-theory",
+    "kind": "researchField",
+    "type": "researchField",
+    "title": "Runtime Theory",
+    "subtitle": "Research field",
+    "summary": "Runtime Theory investigates the minimum identities, relations, contexts and event primitives required for a coherent executable system.",
+    "description": "An active Electronic Artefacts research field connecting early VOID experiments, VASTE and the definition of graph runtime.",
+    "status": "active",
+    "maturity": "research",
+    "confidence": "validated",
+    "visibility": "public",
+    "publicationClass": "canonical",
+    "tags": [
+      "Runtime",
+      "Theory",
+      "Execution",
+      "Events",
+      "Primitives"
+    ],
+    "discipline": [
+      "Technology",
+      "Research",
+      "Systems"
+    ],
+    "route": "/research/fields/runtime-theory/",
+    "identifier": "/id/research-field/runtime-theory/",
+    "temporality": {
+      "creationDate": "2024-01-01",
+      "lastUpdated": "2026-06-22",
+      "releaseDate": "2026-06-22",
+      "creationYear": "2024"
+    }
+  }
+]

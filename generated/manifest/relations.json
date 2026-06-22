@@ -1,0 +1,123 @@
+[
+  {
+    "id": "ear:electronic-artefacts-publishes-foundational-lineage",
+    "subject": "ea:publication:foundational-lineage-001",
+    "predicate": "publishedBy",
+    "object": "ea:organization:electronic-artefacts",
+    "statement": "Electronic Artefacts publishes and maintains Foundational Lineage",
+    "confidence": "published",
+    "createdAt": "2026-06-22",
+    "reviewedAt": "2026-06-22",
+    "visibility": "public"
+  },
+  {
+    "id": "ear:foundational-lineage-documents-runtime-theory",
+    "subject": "ea:publication:foundational-lineage-001",
+    "predicate": "documents",
+    "object": "ea:researchField:runtime-theory",
+    "statement": "Foundational Lineage",
+    "confidence": "observed",
+    "createdAt": "2026-06-22",
+    "reviewedAt": "2026-06-22",
+    "visibility": "public"
+  },
+  {
+    "id": "ear:foundational-lineage-documents-vaste",
+    "subject": "ea:publication:foundational-lineage-001",
+    "predicate": "documents",
+    "object": "ea:program:vaste",
+    "statement": "Foundational Lineage",
+    "confidence": "observed",
+    "createdAt": "2026-06-22",
+    "reviewedAt": "2026-06-22",
+    "visibility": "public"
+  },
+  {
+    "id": "ear:runtime-theory-defines-graph-runtime",
+    "subject": "ea:researchField:runtime-theory",
+    "predicate": "defines",
+    "object": "ea:concept:graph-runtime",
+    "statement": "Runtime Theory supplies the research questions and boundaries used to define graph runtime within Electronic Artefacts.",
+    "confidence": "validated",
+    "createdAt": "2026-06-22",
+    "reviewedAt": "2026-06-22",
+    "visibility": "public"
+  },
+  {
+    "id": "ear:vaste-applies-graph-runtime",
+    "subject": "ea:program:vaste",
+    "predicate": "appliesConcept",
+    "object": "ea:concept:graph-runtime",
+    "statement": "VASTE applies the graph-runtime concept through addressable entities, typed relationships, identity, context and event execution.",
+    "confidence": "observed",
+    "createdAt": "2026-06-22",
+    "reviewedAt": "2026-06-22",
+    "visibility": "public"
+  },
+  {
+    "id": "ear:vaste-derived-from-runtime-theory",
+    "subject": "ea:program:vaste",
+    "predicate": "derivedFrom",
+    "object": "ea:researchField:runtime-theory",
+    "statement": "VASTE derives its runtime primitives and contextual execution questions from the Runtime Theory research field.",
+    "confidence": "validated",
+    "createdAt": "2026-06-22",
+    "reviewedAt": "2026-06-22",
+    "visibility": "public"
+  },
+  {
+    "id": "ear:vestiges-powered-by-vaste",
+    "subject": "ea:project:vestiges",
+    "predicate": "poweredBy",
+    "object": "ea:program:vaste",
+    "statement": "Vestiges uses VASTE as its graph runtime and contextual execution foundation.",
+    "confidence": "observed",
+    "createdAt": "2026-06-22",
+    "reviewedAt": "2026-06-22",
+    "visibility": "public"
+  },
+  {
+    "id": "ear:vestiges-applies-graph-runtime",
+    "subject": "ea:project:vestiges",
+    "predicate": "appliesConcept",
+    "object": "ea:concept:graph-runtime",
+    "statement": "Vestiges applies graph-runtime principles to cultural, craft and human-knowledge infrastructure.",
+    "confidence": "observed",
+    "createdAt": "2026-06-22",
+    "reviewedAt": "2026-06-22",
+    "visibility": "public"
+  },
+  {
+    "id": "ear:vestiges-evidenced-by-foundational-lineage",
+    "subject": "ea:project:vestiges",
+    "predicate": "evidencedBy",
+    "object": "ea:publication:foundational-lineage-001",
+    "statement": "Foundational Lineage",
+    "confidence": "observed",
+    "createdAt": "2026-06-22",
+    "reviewedAt": "2026-06-22",
+    "visibility": "public"
+  },
+  {
+    "id": "ear:electronic-artefacts-maintains-vaste",
+    "subject": "ea:program:vaste",
+    "predicate": "maintainedBy",
+    "object": "ea:organization:electronic-artefacts",
+    "statement": "Electronic Artefacts develops and maintains the VASTE program.",
+    "confidence": "published",
+    "createdAt": "2026-06-22",
+    "reviewedAt": "2026-06-22",
+    "visibility": "public"
+  },
+  {
+    "id": "ear:electronic-artefacts-creates-vestiges",
+    "subject": "ea:project:vestiges",
+    "predicate": "createdBy",
+    "object": "ea:organization:electronic-artefacts",
+    "statement": "Electronic Artefacts created Vestiges as the flagship public application of VASTE.",
+    "confidence": "published",
+    "createdAt": "2026-06-22",
+    "reviewedAt": "2026-06-22",
+    "visibility": "public"
+  }
+]

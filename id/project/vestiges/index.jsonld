@@ -1,0 +1,47 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://electronicartefacts.com/projects/vestiges/#webpage",
+      "url": "https://electronicartefacts.com/projects/vestiges/",
+      "name": "Vestiges",
+      "mainEntity": {
+        "@id": "https://electronicartefacts.com/id/project/vestiges/"
+      },
+      "isPartOf": {
+        "@id": "https://electronicartefacts.com/#website"
+      }
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://electronicartefacts.com/id/project/vestiges/",
+      "name": "Vestiges",
+      "description": "Vestiges is a VASTE-powered knowledge infrastructure platform designed to map, preserve, connect, transmit and activate human know-how.",
+      "url": "https://electronicartefacts.com/projects/vestiges/",
+      "dateCreated": "2025-01-01",
+      "datePublished": "2026-06-22",
+      "dateModified": "2026-06-22",
+      "publisher": {
+        "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Electronic Artefacts",
+          "item": "https://electronicartefacts.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Vestiges",
+          "item": "https://electronicartefacts.com/projects/vestiges/"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://electronicartefacts.com/research/fields/runtime-theory/#webpage",
+      "url": "https://electronicartefacts.com/research/fields/runtime-theory/",
+      "name": "Runtime Theory",
+      "mainEntity": {
+        "@id": "https://electronicartefacts.com/id/research-field/runtime-theory/"
+      },
+      "isPartOf": {
+        "@id": "https://electronicartefacts.com/#website"
+      }
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://electronicartefacts.com/id/research-field/runtime-theory/",
+      "name": "Runtime Theory",
+      "description": "Runtime Theory investigates the minimum identities, relations, contexts and event primitives required for a coherent executable system.",
+      "url": "https://electronicartefacts.com/research/fields/runtime-theory/",
+      "dateCreated": "2024-01-01",
+      "datePublished": "2026-06-22",
+      "dateModified": "2026-06-22",
+      "publisher": {
+        "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Electronic Artefacts",
+          "item": "https://electronicartefacts.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Runtime Theory",
+          "item": "https://electronicartefacts.com/research/fields/runtime-theory/"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "id": "local:ea:program:vaste",
+  "kind": "local",
+  "focus": "ea:program:vaste",
+  "nodes": [
+    {
+      "id": "ea:concept:graph-runtime",
+      "type": "concept",
+      "title": "Graph Runtime",
+      "route": "/knowledge/concepts/graph-runtime/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:organization:electronic-artefacts",
+      "type": "organization",
+      "title": "Electronic Artefacts",
+      "route": "/organizations/electronic-artefacts/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:program:vaste",
+      "type": "program",
+      "title": "VASTE",
+      "route": "/programs/vaste/",
+      "status": "development",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:project:vestiges",
+      "type": "project",
+      "title": "Vestiges",
+      "route": "/projects/vestiges/",
+      "status": "development",
+      "confidence": "observed"
+    },
+    {
+      "id": "ea:publication:foundational-lineage-001",
+      "type": "publication",
+      "title": "Foundational Lineage #001",
+      "route": "/publications/foundational-lineage-001/",
+      "status": "research",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:researchField:runtime-theory",
+      "type": "researchField",
+      "title": "Runtime Theory",
+      "route": "/research/fields/runtime-theory/",
+      "status": "active",
+      "confidence": "validated"
+    }
+  ],
+  "edges": [
+    {
+      "id": "ear:foundational-lineage-documents-vaste",
+      "source": "ea:publication:foundational-lineage-001",
+      "target": "ea:program:vaste",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Foundational Lineage",
+      "confidence": "observed"
+    },
+    {
+      "id": "ear:vaste-applies-graph-runtime",
+      "source": "ea:program:vaste",
+      "target": "ea:concept:graph-runtime",
+      "predicate": "appliesConcept",
+      "label": "Applies concept",
+      "statement": "VASTE applies the graph-runtime concept through addressable entities, typed relationships, identity, context and event execution.",
+      "confidence": "observed"
+    },
+    {
+      "id": "ear:vaste-derived-from-runtime-theory",
+      "source": "ea:program:vaste",
+      "target": "ea:researchField:runtime-theory",
+      "predicate": "derivedFrom",
+      "label": "Derived from",
+      "statement": "VASTE derives its runtime primitives and contextual execution questions from the Runtime Theory research field.",
+      "confidence": "validated"
+    },
+    {
+      "id": "ear:vestiges-powered-by-vaste",
+      "source": "ea:project:vestiges",
+      "target": "ea:program:vaste",
+      "predicate": "poweredBy",
+      "label": "Powered by",
+      "statement": "Vestiges uses VASTE as its graph runtime and contextual execution foundation.",
+      "confidence": "observed"
+    },
+    {
+      "id": "ear:electronic-artefacts-maintains-vaste",
+      "source": "ea:program:vaste",
+      "target": "ea:organization:electronic-artefacts",
+      "predicate": "maintainedBy",
+      "label": "Maintained by",
+      "statement": "Electronic Artefacts develops and maintains the VASTE program.",
+      "confidence": "published"
+    }
+  ]
+}

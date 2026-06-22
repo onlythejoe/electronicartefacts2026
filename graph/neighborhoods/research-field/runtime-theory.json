@@ -1,0 +1,68 @@
+{
+  "id": "local:ea:researchField:runtime-theory",
+  "kind": "local",
+  "focus": "ea:researchField:runtime-theory",
+  "nodes": [
+    {
+      "id": "ea:concept:graph-runtime",
+      "type": "concept",
+      "title": "Graph Runtime",
+      "route": "/knowledge/concepts/graph-runtime/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:program:vaste",
+      "type": "program",
+      "title": "VASTE",
+      "route": "/programs/vaste/",
+      "status": "development",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:foundational-lineage-001",
+      "type": "publication",
+      "title": "Foundational Lineage #001",
+      "route": "/publications/foundational-lineage-001/",
+      "status": "research",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:researchField:runtime-theory",
+      "type": "researchField",
+      "title": "Runtime Theory",
+      "route": "/research/fields/runtime-theory/",
+      "status": "active",
+      "confidence": "validated"
+    }
+  ],
+  "edges": [
+    {
+      "id": "ear:foundational-lineage-documents-runtime-theory",
+      "source": "ea:publication:foundational-lineage-001",
+      "target": "ea:researchField:runtime-theory",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Foundational Lineage",
+      "confidence": "observed"
+    },
+    {
+      "id": "ear:runtime-theory-defines-graph-runtime",
+      "source": "ea:researchField:runtime-theory",
+      "target": "ea:concept:graph-runtime",
+      "predicate": "defines",
+      "label": "Defines",
+      "statement": "Runtime Theory supplies the research questions and boundaries used to define graph runtime within Electronic Artefacts.",
+      "confidence": "validated"
+    },
+    {
+      "id": "ear:vaste-derived-from-runtime-theory",
+      "source": "ea:program:vaste",
+      "target": "ea:researchField:runtime-theory",
+      "predicate": "derivedFrom",
+      "label": "Derived from",
+      "statement": "VASTE derives its runtime primitives and contextual execution questions from the Runtime Theory research field.",
+      "confidence": "validated"
+    }
+  ]
+}

@@ -1,0 +1,32 @@
+[
+  {
+    "id": "ea:concept:graph-runtime",
+    "route": "/knowledge/concepts/graph-runtime/",
+    "identifier": "/id/concept/graph-runtime/"
+  },
+  {
+    "id": "ea:organization:electronic-artefacts",
+    "route": "/organizations/electronic-artefacts/",
+    "identifier": "/id/organization/electronic-artefacts/"
+  },
+  {
+    "id": "ea:program:vaste",
+    "route": "/programs/vaste/",
+    "identifier": "/id/program/vaste/"
+  },
+  {
+    "id": "ea:project:vestiges",
+    "route": "/projects/vestiges/",
+    "identifier": "/id/project/vestiges/"
+  },
+  {
+    "id": "ea:publication:foundational-lineage-001",
+    "route": "/publications/foundational-lineage-001/",
+    "identifier": "/id/publication/foundational-lineage-001/"
+  },
+  {
+    "id": "ea:researchField:runtime-theory",
+    "route": "/research/fields/runtime-theory/",
+    "identifier": "/id/research-field/runtime-theory/"
+  }
+]

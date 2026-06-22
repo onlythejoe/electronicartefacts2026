@@ -4928,6 +4928,347 @@ window.EA_COLLECTIONS.resolve = function resolveCollectionMembers(collection, ca
   return matches;
 };
 
+window.EA_PUBLIC_CATALOG = {
+  "schemaVersion": "1.0.0",
+  "entities": [
+    {
+      "id": "ea:concept:graph-runtime",
+      "legacyId": "graph-runtime",
+      "kind": "concept",
+      "type": "concept",
+      "title": "Graph Runtime",
+      "summary": "Electronic Artefacts uses graph runtime to describe systems where entities, relationships, identity, context and events form an executable structure rather than a passive data model.",
+      "description": "A canonical definition of graph runtime, its scope, applications and relationship to VASTE, Runtime Theory and Vestiges.",
+      "definition": "A graph runtime is an execution environment in which addressable entities and typed relationships participate directly in contextual computation.",
+      "status": "active",
+      "maturity": "research",
+      "confidence": "canonical",
+      "visibility": "public",
+      "publicationClass": "canonical",
+      "tags": [
+        "Graph",
+        "Runtime",
+        "Context",
+        "Identity",
+        "Execution"
+      ],
+      "discipline": [
+        "Software architecture",
+        "Knowledge systems"
+      ],
+      "route": "/knowledge/concepts/graph-runtime/",
+      "identifier": "/id/concept/graph-runtime/",
+      "temporality": {
+        "creationDate": "2024-01-01",
+        "lastUpdated": "2026-06-22",
+        "releaseDate": "2026-06-22",
+        "creationYear": "2024"
+      }
+    },
+    {
+      "id": "ea:organization:electronic-artefacts",
+      "legacyId": "electronic-artefacts",
+      "kind": "organization",
+      "type": "organization",
+      "title": "Electronic Artefacts",
+      "subtitle": "Studio / label / research",
+      "summary": "Electronic Artefacts is an independent creative technology studio, software laboratory, research organization, cultural platform, label and publishing system.",
+      "description": "Electronic Artefacts connects research, software, design, cultural production and archival practice through a shared graph of projects, programs and knowledge.",
+      "status": "active",
+      "maturity": "production",
+      "confidence": "canonical",
+      "visibility": "public",
+      "publicationClass": "canonical",
+      "tags": [
+        "Creative technology",
+        "Software",
+        "Research",
+        "Culture",
+        "Publishing"
+      ],
+      "discipline": [],
+      "route": "/organizations/electronic-artefacts/",
+      "identifier": "/id/organization/electronic-artefacts/",
+      "temporality": {
+        "creationDate": "2024-01-01",
+        "lastUpdated": "2026-06-22",
+        "releaseDate": "2026-06-22",
+        "creationYear": "2024"
+      }
+    },
+    {
+      "id": "ea:program:vaste",
+      "legacyId": "vaste",
+      "kind": "program",
+      "type": "program",
+      "title": "VASTE",
+      "subtitle": "Proprietary Runtime",
+      "summary": "VASTE is the primary proprietary runtime developed by Electronic Artefacts for graph architectures, contextual execution, identity systems and modular world construction.",
+      "description": "The program connects Runtime Theory to implemented graph systems and provides the technical foundation for projects including Vestiges.",
+      "status": "development",
+      "maturity": "development",
+      "confidence": "published",
+      "visibility": "public",
+      "publicationClass": "canonical",
+      "tags": [
+        "TypeScript",
+        "Graph",
+        "Context",
+        "Identity",
+        "Simulation",
+        "Knowledge"
+      ],
+      "discipline": [
+        "Technology",
+        "Systems",
+        "Research"
+      ],
+      "route": "/programs/vaste/",
+      "identifier": "/id/program/vaste/",
+      "temporality": {
+        "creationDate": "2024-01-01",
+        "lastUpdated": "2026-06-22",
+        "releaseDate": "2026-01-01",
+        "creationYear": "2024"
+      }
+    },
+    {
+      "id": "ea:project:vestiges",
+      "legacyId": "vestiges",
+      "kind": "project",
+      "type": "project",
+      "title": "Vestiges",
+      "subtitle": "VASTE Flagship Knowledge Platform",
+      "summary": "Vestiges is a VASTE-powered knowledge infrastructure platform designed to map, preserve, connect, transmit and activate human know-how.",
+      "description": "The project applies graph-runtime architecture to culture, craft, institutions, materials, techniques, places and public knowledge pages.",
+      "status": "development",
+      "maturity": "prototype",
+      "confidence": "observed",
+      "visibility": "public",
+      "publicationClass": "canonical",
+      "tags": [
+        "Vestiges",
+        "VASTE",
+        "Knowledge Graph",
+        "Craft",
+        "Culture",
+        "Platform"
+      ],
+      "discipline": [
+        "Technology",
+        "Knowledge Graphs",
+        "Culture",
+        "Craft",
+        "Design"
+      ],
+      "route": "/projects/vestiges/",
+      "identifier": "/id/project/vestiges/",
+      "temporality": {
+        "creationDate": "2025-01-01",
+        "lastUpdated": "2026-06-22",
+        "releaseDate": "2026-06-22",
+        "creationYear": "2025"
+      }
+    },
+    {
+      "id": "ea:publication:foundational-lineage-001",
+      "legacyId": "foundational-lineage-001",
+      "kind": "publication",
+      "type": "publication",
+      "title": "Foundational Lineage #001",
+      "subtitle": "Research Note",
+      "summary": "This research note records early architecture, communication-system and documentation threads that led to Electronic Artefacts, Runtime Theory and VASTE.",
+      "description": "A concise record of the foundational research lineage connecting information architecture, taxonomy, runtime systems and public knowledge structures.",
+      "status": "research",
+      "maturity": "research",
+      "confidence": "published",
+      "visibility": "public",
+      "publicationClass": "published",
+      "tags": [
+        "Foundational",
+        "Lineage",
+        "Research",
+        "Information architecture"
+      ],
+      "discipline": [],
+      "route": "/publications/foundational-lineage-001/",
+      "identifier": "/id/publication/foundational-lineage-001/",
+      "temporality": {
+        "creationDate": "2026-01-01",
+        "lastUpdated": "2026-06-22",
+        "releaseDate": "2026-06-12",
+        "creationYear": "2026"
+      }
+    },
+    {
+      "id": "ea:researchField:runtime-theory",
+      "legacyId": "runtime-theory",
+      "kind": "researchField",
+      "type": "researchField",
+      "title": "Runtime Theory",
+      "subtitle": "Research field",
+      "summary": "Runtime Theory investigates the minimum identities, relations, contexts and event primitives required for a coherent executable system.",
+      "description": "An active Electronic Artefacts research field connecting early VOID experiments, VASTE and the definition of graph runtime.",
+      "status": "active",
+      "maturity": "research",
+      "confidence": "validated",
+      "visibility": "public",
+      "publicationClass": "canonical",
+      "tags": [
+        "Runtime",
+        "Theory",
+        "Execution",
+        "Events",
+        "Primitives"
+      ],
+      "discipline": [
+        "Technology",
+        "Research",
+        "Systems"
+      ],
+      "route": "/research/fields/runtime-theory/",
+      "identifier": "/id/research-field/runtime-theory/",
+      "temporality": {
+        "creationDate": "2024-01-01",
+        "lastUpdated": "2026-06-22",
+        "releaseDate": "2026-06-22",
+        "creationYear": "2024"
+      }
+    }
+  ],
+  "relations": [
+    {
+      "id": "ear:electronic-artefacts-publishes-foundational-lineage",
+      "subject": "ea:publication:foundational-lineage-001",
+      "predicate": "publishedBy",
+      "object": "ea:organization:electronic-artefacts",
+      "statement": "Electronic Artefacts publishes and maintains Foundational Lineage",
+      "confidence": "published",
+      "createdAt": "2026-06-22",
+      "reviewedAt": "2026-06-22",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:foundational-lineage-documents-runtime-theory",
+      "subject": "ea:publication:foundational-lineage-001",
+      "predicate": "documents",
+      "object": "ea:researchField:runtime-theory",
+      "statement": "Foundational Lineage",
+      "confidence": "observed",
+      "createdAt": "2026-06-22",
+      "reviewedAt": "2026-06-22",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:foundational-lineage-documents-vaste",
+      "subject": "ea:publication:foundational-lineage-001",
+      "predicate": "documents",
+      "object": "ea:program:vaste",
+      "statement": "Foundational Lineage",
+      "confidence": "observed",
+      "createdAt": "2026-06-22",
+      "reviewedAt": "2026-06-22",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:runtime-theory-defines-graph-runtime",
+      "subject": "ea:researchField:runtime-theory",
+      "predicate": "defines",
+      "object": "ea:concept:graph-runtime",
+      "statement": "Runtime Theory supplies the research questions and boundaries used to define graph runtime within Electronic Artefacts.",
+      "confidence": "validated",
+      "createdAt": "2026-06-22",
+      "reviewedAt": "2026-06-22",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:vaste-applies-graph-runtime",
+      "subject": "ea:program:vaste",
+      "predicate": "appliesConcept",
+      "object": "ea:concept:graph-runtime",
+      "statement": "VASTE applies the graph-runtime concept through addressable entities, typed relationships, identity, context and event execution.",
+      "confidence": "observed",
+      "createdAt": "2026-06-22",
+      "reviewedAt": "2026-06-22",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:vaste-derived-from-runtime-theory",
+      "subject": "ea:program:vaste",
+      "predicate": "derivedFrom",
+      "object": "ea:researchField:runtime-theory",
+      "statement": "VASTE derives its runtime primitives and contextual execution questions from the Runtime Theory research field.",
+      "confidence": "validated",
+      "createdAt": "2026-06-22",
+      "reviewedAt": "2026-06-22",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:vestiges-powered-by-vaste",
+      "subject": "ea:project:vestiges",
+      "predicate": "poweredBy",
+      "object": "ea:program:vaste",
+      "statement": "Vestiges uses VASTE as its graph runtime and contextual execution foundation.",
+      "confidence": "observed",
+      "createdAt": "2026-06-22",
+      "reviewedAt": "2026-06-22",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:vestiges-applies-graph-runtime",
+      "subject": "ea:project:vestiges",
+      "predicate": "appliesConcept",
+      "object": "ea:concept:graph-runtime",
+      "statement": "Vestiges applies graph-runtime principles to cultural, craft and human-knowledge infrastructure.",
+      "confidence": "observed",
+      "createdAt": "2026-06-22",
+      "reviewedAt": "2026-06-22",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:vestiges-evidenced-by-foundational-lineage",
+      "subject": "ea:project:vestiges",
+      "predicate": "evidencedBy",
+      "object": "ea:publication:foundational-lineage-001",
+      "statement": "Foundational Lineage",
+      "confidence": "observed",
+      "createdAt": "2026-06-22",
+      "reviewedAt": "2026-06-22",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:electronic-artefacts-maintains-vaste",
+      "subject": "ea:program:vaste",
+      "predicate": "maintainedBy",
+      "object": "ea:organization:electronic-artefacts",
+      "statement": "Electronic Artefacts develops and maintains the VASTE program.",
+      "confidence": "published",
+      "createdAt": "2026-06-22",
+      "reviewedAt": "2026-06-22",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:electronic-artefacts-creates-vestiges",
+      "subject": "ea:project:vestiges",
+      "predicate": "createdBy",
+      "object": "ea:organization:electronic-artefacts",
+      "statement": "Electronic Artefacts created Vestiges as the flagship public application of VASTE.",
+      "confidence": "published",
+      "createdAt": "2026-06-22",
+      "reviewedAt": "2026-06-22",
+      "visibility": "public"
+    }
+  ],
+  "routes": {
+    "ea:concept:graph-runtime": "/knowledge/concepts/graph-runtime/",
+    "ea:organization:electronic-artefacts": "/organizations/electronic-artefacts/",
+    "ea:program:vaste": "/programs/vaste/",
+    "ea:project:vestiges": "/projects/vestiges/",
+    "ea:publication:foundational-lineage-001": "/publications/foundational-lineage-001/",
+    "ea:researchField:runtime-theory": "/research/fields/runtime-theory/"
+  }
+};
+
 /* ==== assets/js/data/search-index.js ==== */
 window.EA_SEARCH = {
   buildIndex(catalog) {
@@ -4978,6 +5319,7 @@ window.EA_SEARCH = {
   const timelines = window.EA_TIMELINES || [];
   const activity = window.EA_ACTIVITY || [];
   const collections = window.EA_COLLECTIONS || [];
+  const publicCatalog = window.EA_PUBLIC_CATALOG || {};
   const normalizeTitle = (value) =>
     String(value ?? "")
       .toLowerCase()
@@ -5050,6 +5392,15 @@ window.EA_SEARCH = {
     activityByEntityId,
     getSearchIndex,
   };
+  const routeById = { ...(publicCatalog.routes || {}) };
+  (publicCatalog.entities || []).forEach((item) => {
+    if (item.legacyId && item.route) routeById[item.legacyId] = item.route;
+  });
+  const routeFor = (itemOrId) => {
+    const id = typeof itemOrId === "string" ? itemOrId : itemOrId?.id;
+    if (!id) return "";
+    return routeById[id] || (typeof itemOrId === "object" ? itemOrId.route || "" : "");
+  };
 
   const catalog = {
     taxonomies,
@@ -5059,6 +5410,9 @@ window.EA_SEARCH = {
     activity,
     collections,
     indexes,
+    routeById,
+    routeFor,
+    publicCatalog,
     programs: (entities.programs || []).filter(isPublic),
     artists: (entities.artists || []).filter(isPublic),
     projects: (entities.projects || []).filter(isPublic),
@@ -5399,6 +5753,8 @@ window.EA_SEARCH = {
   const entryHrefFor = (item, options = {}) => {
     if (options.href) return options.href;
     if (!item) return "";
+    const canonicalRoute = catalog.routeFor?.(item);
+    if (canonicalRoute) return canonicalRoute;
     if (item.route) return item.route;
     if (item.kind === "project") return `./project.html?id=${encodeURIComponent(item.id)}`;
     if (item.kind === "collection") return `./collection.html?id=${encodeURIComponent(item.id)}`;
@@ -7395,6 +7751,8 @@ window.EA_SEARCH = {
 
   const makeEntryHref = (item) => {
     if (!item) return "./index.html";
+    const canonicalRoute = window.EA_CATALOG?.routeFor?.(item);
+    if (canonicalRoute) return canonicalRoute;
     if (item.kind === "project") return `./project.html?id=${encodeURIComponent(item.id)}`;
     if (item.kind === "collection") return `./collection.html?id=${encodeURIComponent(item.id)}`;
     if (item.kind === "artefact" || item.kind === "researchLog") return `./artefact.html?id=${encodeURIComponent(item.id)}`;
@@ -8130,6 +8488,293 @@ window.EA_SEARCH = {
     document.addEventListener("focusin", onIntent);
   };
 
+  const initContactDiscovery = () => {
+    const root = document.querySelector("[data-contact-discovery]");
+    if (!root || root.dataset.boundContactDiscovery === "true") return;
+    root.dataset.boundContactDiscovery = "true";
+
+    const pathways = {
+      build: {
+        label: "Build Something",
+        copy: "A client or commissioned project requiring strategy, design, technology or delivery.",
+        keywords: ["website", "site", "platform", "software", "app", "application", "brand", "branding", "identity", "ux", "ui", "product", "tool", "interface", "development", "develop", "build", "company", "business"],
+        questions: [
+          ["stage", "Project stage", "select", ["New idea", "Existing project", "Redesign", "Active product"]],
+          ["audience", "Who is it for?", "text", "Audience, users or community"],
+          ["timeline", "Preferred timing", "select", ["Exploring", "1–2 months", "3–6 months", "6+ months"]],
+          ["budget", "Indicative budget", "select", ["Not defined", "Under €5k", "€5k–€10k", "€10k–€25k", "€25k+"]],
+          ["requirements", "Known requirements", "text", "Existing stack, integrations, content or constraints"],
+        ],
+      },
+      vaste: {
+        label: "Work With VASTE",
+        copy: "A technical, design, pilot or research collaboration around the VASTE ecosystem.",
+        keywords: ["vaste", "runtime", "graph", "extension", "plugin", "protocol", "infrastructure", "open source", "developer", "engineer", "academic"],
+        questions: [
+          ["background", "Your background", "text", "Engineering, design, research, institution…"],
+          ["expertise", "Relevant expertise", "text", "Languages, systems, disciplines or methods"],
+          ["interest", "Area of interest", "select", ["Runtime", "Graph systems", "Knowledge systems", "Design", "Research", "Pilot project"]],
+          ["goal", "Collaboration goal", "text", "What would a useful collaboration produce?"],
+        ],
+      },
+      support: {
+        label: "Support The Ecosystem",
+        copy: "An institutional, strategic, financial, educational or cultural partnership.",
+        keywords: ["invest", "investor", "sponsor", "fund", "funding", "museum", "school", "university", "institution", "accelerator", "partner", "partnership", "supplier", "grant", "foundation"],
+        questions: [
+          ["organizationType", "Organization type", "select", ["Institution", "University / school", "Museum / cultural venue", "Investor / fund", "Sponsor", "Research organization", "Other"]],
+          ["strategicInterest", "Strategic interest", "text", "Why does Electronic Artefacts fit your work?"],
+          ["resources", "Potential contribution", "text", "Funding, venue, expertise, network, research access…"],
+          ["objective", "Partnership objective", "text", "What should the relationship make possible?"],
+        ],
+      },
+      creative: {
+        label: "Creative & Artistic Collaboration",
+        copy: "A shared cultural, visual, spatial, narrative or experimental project.",
+        keywords: ["artist", "art", "designer", "photographer", "film", "filmmaker", "writer", "curator", "collective", "exhibition", "installation", "residency", "visual", "creative", "culture", "cultural"],
+        questions: [
+          ["discipline", "Primary discipline", "text", "Visual art, film, photography, writing, curation…"],
+          ["medium", "Medium or format", "text", "Installation, exhibition, publication, digital work…"],
+          ["references", "References or existing work", "text", "Links or a short description"],
+          ["outcome", "Desired outcome", "text", "What would you like to create together?"],
+        ],
+      },
+      label: {
+        label: "Label & Publishing",
+        copy: "A music, sound, audiovisual, release, distribution or artistic publishing conversation.",
+        keywords: ["music", "musician", "album", "ep", "track", "release", "label", "sound", "audio", "audiovisual", "distribution", "publishing", "producer", "production", "composer"],
+        questions: [
+          ["format", "Project format", "select", ["Single / EP / album", "Sound design", "Audiovisual work", "Visual album", "Artistic publication", "Other"]],
+          ["releaseStage", "Current stage", "select", ["Idea", "In production", "Finished material", "Seeking release", "Seeking distribution"]],
+          ["material", "Existing material", "text", "Private link, portfolio or short description"],
+          ["labelGoal", "Collaboration goal", "text", "Production, release, publishing, visuals, distribution…"],
+        ],
+      },
+    };
+
+    const tagRules = {
+      Website: ["website", "site", "portfolio", "web"],
+      Platform: ["platform", "marketplace", "community"],
+      Software: ["software", "app", "application", "tool", "saas"],
+      Branding: ["brand", "branding", "identity", "logo"],
+      "Creative Direction": ["creative direction", "art direction", "direction"],
+      "UX / UI": ["ux", "ui", "interface", "experience"],
+      Development: ["development", "develop", "code", "technical", "engineering"],
+      Photography: ["photography", "photographer", "photo"],
+      VASTE: ["vaste"],
+      Developer: ["developer", "engineer", "engineering", "code"],
+      Research: ["research", "academic", "study", "laboratory", "lab"],
+      Collaboration: ["collaborate", "collaboration", "contribute", "partner", "together"],
+      Institution: ["institution", "museum", "university", "school", "foundation"],
+      Partnership: ["partnership", "partner", "sponsor", "support"],
+      "Cultural Sector": ["cultural", "culture", "museum", "arts"],
+      Music: ["music", "album", "ep", "track", "musician", "producer"],
+      Label: ["label", "release", "record"],
+      Publishing: ["publishing", "publication", "release", "distribution"],
+      Audiovisual: ["audiovisual", "film", "video", "motion"],
+      Exhibition: ["exhibition", "installation", "residency", "gallery"],
+      Investment: ["investor", "investment", "funding", "fund", "grant"],
+    };
+
+    const state = { intent: "", pathway: "build", tags: [], answers: {} };
+    const intent = root.querySelector("[data-contact-intent]");
+    const workspace = root.querySelector("[data-contact-workspace]");
+    const status = root.querySelector("[data-contact-status]");
+    const pathwayTitle = root.querySelector("[data-contact-pathway-title]");
+    const pathwayCopy = root.querySelector("[data-contact-pathway-copy]");
+    const pathwayTray = root.querySelector("[data-contact-pathways]");
+    const tagTray = root.querySelector("[data-contact-tags]");
+    const questions = root.querySelector("[data-contact-questions]");
+    const summary = root.querySelector("[data-contact-summary]");
+    const submit = root.querySelector("[data-contact-submit]");
+    const completeness = root.querySelector("[data-contact-completeness]");
+    const customTag = root.querySelector("[data-contact-custom-tag]");
+    const nameInput = root.querySelector("[data-contact-name]");
+    const emailInput = root.querySelector("[data-contact-email]");
+    const organizationInput = root.querySelector("[data-contact-organization]");
+    const keywordMatches = (text, keyword) => {
+      const escaped = keyword.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+      return new RegExp(`(^|[^a-z0-9])${escaped}([^a-z0-9]|$)`, "i").test(text);
+    };
+
+    const detectPathway = (text) => {
+      const normalized = text.toLowerCase();
+      const scores = Object.entries(pathways).map(([key, config]) => [
+        key,
+        config.keywords.reduce((score, keyword) => score + (keywordMatches(normalized, keyword) ? (keyword.includes(" ") ? 3 : 1) : 0), 0),
+      ]);
+      scores.sort((left, right) => right[1] - left[1]);
+      return scores[0][1] > 0 ? scores[0][0] : "build";
+    };
+
+    const detectTags = (text) => {
+      const normalized = text.toLowerCase();
+      return Object.entries(tagRules)
+        .filter(([, keywords]) => keywords.some((keyword) => keywordMatches(normalized, keyword)))
+        .map(([tag]) => tag)
+        .slice(0, 8);
+    };
+
+    const renderPathways = () => {
+      pathwayTray.innerHTML = Object.entries(pathways)
+        .map(([key, config]) => `<button type="button" class="contact-pathway${state.pathway === key ? " is-active" : ""}" data-contact-pathway="${esc(key)}" aria-pressed="${state.pathway === key ? "true" : "false"}">${esc(config.label)}</button>`)
+        .join("");
+      pathwayTitle.textContent = pathways[state.pathway].label;
+      pathwayCopy.textContent = pathways[state.pathway].copy;
+    };
+
+    const renderTags = () => {
+      tagTray.innerHTML = state.tags.length
+        ? state.tags.map((tag) => `<button type="button" class="contact-detected-tag" data-contact-remove-tag="${esc(tag)}" aria-label="Remove ${esc(tag)}"><span>✓</span>${esc(tag)}<b aria-hidden="true">×</b></button>`).join("")
+        : `<p class="card__copy">No specific signals detected yet. Add a little more context or create a tag.</p>`;
+    };
+
+    const renderQuestions = () => {
+      const config = pathways[state.pathway];
+      questions.innerHTML = config.questions
+        .map(([key, label, type, options]) => {
+          const value = state.answers[key] || "";
+          if (type === "select") {
+            return `<label class="contact-question"><span>${esc(label)}</span><select data-contact-answer="${esc(key)}"><option value="">Select an option</option>${options.map((option) => `<option value="${esc(option)}"${value === option ? " selected" : ""}>${esc(option)}</option>`).join("")}</select></label>`;
+          }
+          return `<label class="contact-question"><span>${esc(label)}</span><input type="text" data-contact-answer="${esc(key)}" value="${esc(value)}" placeholder="${esc(options)}" /></label>`;
+        })
+        .join("");
+    };
+
+    const briefText = () => {
+      const config = pathways[state.pathway];
+      const answerLines = config.questions
+        .map(([key, label]) => state.answers[key] ? `${label}: ${state.answers[key]}` : "")
+        .filter(Boolean);
+      return [
+        "Electronic Artefacts — Discovery Brief",
+        "",
+        `Pathway: ${config.label}`,
+        `Intent: ${state.intent}`,
+        state.tags.length ? `Signals: ${state.tags.join(", ")}` : "",
+        ...answerLines,
+        "",
+        `Name: ${nameInput.value.trim()}`,
+        `Email: ${emailInput.value.trim()}`,
+        organizationInput.value.trim() ? `Organization: ${organizationInput.value.trim()}` : "",
+      ].filter((line) => line !== "").join("\n");
+    };
+
+    const renderSummary = () => {
+      const config = pathways[state.pathway];
+      const answered = config.questions.filter(([key]) => state.answers[key]).length;
+      const rows = [
+        ["Pathway", config.label],
+        ["Intent", state.intent],
+        ["Signals", state.tags.join(", ") || "To be clarified"],
+        ...config.questions.filter(([key]) => state.answers[key]).map(([key, label]) => [label, state.answers[key]]),
+      ];
+      summary.innerHTML = rows.map(([label, value]) => `<div><dt>${esc(label)}</dt><dd>${esc(value)}</dd></div>`).join("");
+      completeness.textContent = answered === config.questions.length ? "Brief ready" : `${answered}/${config.questions.length} questions answered`;
+      const subject = encodeURIComponent(`[${config.label}] ${state.intent.slice(0, 70) || "New discovery brief"}`);
+      const contactValid = Boolean(nameInput.value.trim()) && /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emailInput.value.trim());
+      submit.href = contactValid
+        ? `mailto:electronic.artefacts@gmail.com?subject=${subject}&body=${encodeURIComponent(briefText())}`
+        : "#contact-identity-title";
+      submit.setAttribute("aria-disabled", contactValid ? "false" : "true");
+      submit.classList.toggle("is-disabled", !contactValid);
+    };
+
+    const refresh = ({ resetAnswers = false } = {}) => {
+      if (resetAnswers) state.answers = {};
+      renderPathways();
+      renderTags();
+      renderQuestions();
+      renderSummary();
+    };
+
+    const analyze = () => {
+      state.intent = intent.value.trim();
+      if (state.intent.length < 3) {
+        workspace.hidden = true;
+        status.textContent = "Start with a sentence. No formal brief required.";
+        return;
+      }
+      state.pathway = detectPathway(state.intent);
+      state.tags = detectTags(state.intent);
+      workspace.hidden = false;
+      status.textContent = `A likely pathway and ${state.tags.length} signals were identified locally.`;
+      refresh({ resetAnswers: true });
+    };
+
+    intent.addEventListener("input", analyze);
+    intent.addEventListener("change", analyze);
+    intent.addEventListener("keydown", (event) => {
+      if (event.key === "Enter" && (event.metaKey || event.ctrlKey)) {
+        event.preventDefault();
+        analyze();
+        workspace.querySelector("button, input, select")?.focus();
+      }
+    });
+
+    pathwayTray.addEventListener("click", (event) => {
+      const button = event.target.closest("[data-contact-pathway]");
+      if (!button) return;
+      state.pathway = button.getAttribute("data-contact-pathway");
+      refresh({ resetAnswers: true });
+    });
+    tagTray.addEventListener("click", (event) => {
+      const button = event.target.closest("[data-contact-remove-tag]");
+      if (!button) return;
+      state.tags = state.tags.filter((tag) => tag !== button.getAttribute("data-contact-remove-tag"));
+      renderTags();
+      renderSummary();
+    });
+    root.querySelector("[data-contact-add-tag]")?.addEventListener("click", () => {
+      const value = customTag.value.trim();
+      if (!value || state.tags.some((tag) => tag.toLowerCase() === value.toLowerCase())) return;
+      state.tags.push(value);
+      customTag.value = "";
+      renderTags();
+      renderSummary();
+    });
+    customTag.addEventListener("keydown", (event) => {
+      if (event.key !== "Enter") return;
+      event.preventDefault();
+      root.querySelector("[data-contact-add-tag]")?.click();
+    });
+    questions.addEventListener("input", (event) => {
+      const field = event.target.closest("[data-contact-answer]");
+      if (!field) return;
+      state.answers[field.getAttribute("data-contact-answer")] = field.value.trim();
+      renderSummary();
+    });
+    [nameInput, emailInput, organizationInput].forEach((field) => field.addEventListener("input", renderSummary));
+    submit.addEventListener("click", (event) => {
+      if (submit.getAttribute("aria-disabled") !== "true") return;
+      event.preventDefault();
+      status.textContent = "Add your name and a valid email address before preparing the message.";
+      (!nameInput.value.trim() ? nameInput : emailInput).focus();
+    });
+    root.querySelector("[data-contact-copy]")?.addEventListener("click", async (event) => {
+      const button = event.currentTarget;
+      const original = button.textContent;
+      try {
+        await navigator.clipboard.writeText(briefText());
+        button.textContent = "Brief copied";
+      } catch {
+        button.textContent = "Copy unavailable";
+      }
+      window.setTimeout(() => { button.textContent = original; }, 1600);
+    });
+
+    const prompts = ["Tell us what you’re working on.", "What would you like to build together?", "Describe the idea that needs a system.", "What should exist that doesn’t exist yet?"];
+    if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      let promptIndex = 0;
+      window.setInterval(() => {
+        if (document.activeElement === intent || intent.value) return;
+        promptIndex = (promptIndex + 1) % prompts.length;
+        intent.placeholder = prompts[promptIndex];
+      }, 4200);
+    }
+  };
+
   const initUXEnhancements = (filterState) => {
     initScrollProgress();
     initAutoHideHeader();
@@ -8217,6 +8862,7 @@ window.EA_SEARCH = {
   };
 
   const syncSeoMeta = ({ current, entityById }) => {
+    if (document.body.dataset.generatedPage === "true") return;
     syncPageTitle({ current, entityById });
     document.documentElement.lang = "en";
 
@@ -8401,6 +9047,7 @@ window.EA_SEARCH = {
     initFilters,
     initSearch,
     initCardLinks,
+    initContactDiscovery,
     initUXEnhancements,
     refreshCardSurfaces,
     syncNavigationState,
@@ -8417,7 +9064,7 @@ window.EA_SEARCH = {
   const { esc, setYear, slugify } = window.EA_UTILS;
   const { loadIncludes } = window.EA_INCLUDES;
   const { statusBadge, chip, tagRow, metadataList, linkRow, metricRail, cardLinkAttrs, cardOverlayLink } = window.EA_UI;
-  const { initFilters, initSearch, initCardLinks, initUXEnhancements, refreshCardSurfaces, syncNavigationState, syncSeoMeta } = window.EA_BEHAVIORS;
+  const { initFilters, initSearch, initCardLinks, initContactDiscovery, initUXEnhancements, refreshCardSurfaces, syncNavigationState, syncSeoMeta } = window.EA_BEHAVIORS;
   const {
     cardBaseAttrs,
     mediaFrom,
@@ -9062,95 +9709,57 @@ window.EA_SEARCH = {
     </div>
   `;
 
+  const contactDiscovery = () => `
+    <section class="zone-card contact-discovery" data-contact-discovery>
+      <div class="contact-discovery__intro">
+        <p class="eyebrow">PROJECT / COLLABORATION DISCOVERY</p>
+        <h1 class="display-title">What should exist that doesn’t exist yet?</h1>
+        <p class="lede">Describe the situation in your own words. This interface organizes your intent into a concise brief. Classification happens locally in your browser.</p>
+      </div>
+      <div class="contact-command">
+        <label class="sr-only" for="contact-intent">Describe your idea, project or collaboration</label>
+        <textarea id="contact-intent" class="contact-command__input" rows="4" data-contact-intent placeholder="Tell us what you’re working on." aria-describedby="contact-discovery-status"></textarea>
+        <div class="contact-command__footer"><span id="contact-discovery-status" data-contact-status aria-live="polite">Start with a sentence. No formal brief required.</span><span><kbd>⌘</kbd><kbd>Enter</kbd> to continue</span></div>
+      </div>
+      <div class="contact-discovery__workspace" data-contact-workspace hidden>
+        <div class="contact-discovery__main">
+          <section class="contact-discovery__step" aria-labelledby="contact-pathway-title">
+            <div class="contact-discovery__step-head"><span>01</span><div><p class="card__meta">Likely pathway</p><h2 id="contact-pathway-title" data-contact-pathway-title>Clarifying intent</h2></div></div>
+            <p class="card__copy" data-contact-pathway-copy></p>
+            <div class="contact-pathways" data-contact-pathways aria-label="Change collaboration pathway"></div>
+          </section>
+          <section class="contact-discovery__step" aria-labelledby="contact-tags-title">
+            <div class="contact-discovery__step-head"><span>02</span><div><p class="card__meta">Detected signals</p><h2 id="contact-tags-title">Confirm what matters.</h2></div></div>
+            <div class="contact-detected-tags" data-contact-tags aria-live="polite"></div>
+            <div class="contact-custom-tag"><label for="contact-custom-tag">Add another signal</label><div><input id="contact-custom-tag" type="text" data-contact-custom-tag placeholder="e.g. exhibition, API, distribution" /><button type="button" class="tag" data-contact-add-tag>Add</button></div></div>
+          </section>
+          <section class="contact-discovery__step" aria-labelledby="contact-questions-title">
+            <div class="contact-discovery__step-head"><span>03</span><div><p class="card__meta">Relevant questions</p><h2 id="contact-questions-title">Give the idea enough context.</h2></div></div>
+            <div class="contact-questions" data-contact-questions></div>
+          </section>
+          <section class="contact-discovery__step contact-identity" aria-labelledby="contact-identity-title">
+            <div class="contact-discovery__step-head"><span>04</span><div><p class="card__meta">Contact details</p><h2 id="contact-identity-title">Where should the reply go?</h2></div></div>
+            <div class="contact-field-grid"><label><span>Name</span><input type="text" autocomplete="name" data-contact-name required /></label><label><span>Email</span><input type="email" autocomplete="email" data-contact-email required /></label><label class="contact-field-grid__wide"><span>Organization or practice <em>optional</em></span><input type="text" autocomplete="organization" data-contact-organization /></label></div>
+          </section>
+        </div>
+        <aside class="contact-brief" aria-labelledby="contact-brief-title">
+          <div class="contact-brief__head"><p class="card__meta">LIVE BRIEF</p><h2 id="contact-brief-title">Your entry point</h2><span data-contact-completeness>Intent captured</span></div>
+          <dl data-contact-summary></dl>
+          <div class="contact-brief__actions"><a class="button button--primary" data-contact-submit href="mailto:electronic.artefacts@gmail.com">Prepare email</a><button class="button button--secondary" type="button" data-contact-copy>Copy brief</button></div>
+          <p class="contact-brief__note">Nothing is uploaded. “Prepare email” opens your mail application with the brief included.</p>
+        </aside>
+      </div>
+    </section>
+  `;
+
   const contactLinks = () => `
     <section class="zone-card hero contact-channels">
-      <div class="section-head">
-        <p class="eyebrow">DIRECT CHANNELS</p>
-        <h2>Choose the channel that matches the conversation.</h2>
-        <p class="lede">Email is the primary route for projects and partnerships. Social channels document the work; GitHub, SoundCloud and VASTE expose specific parts of the practice.</p>
-      </div>
+      <div class="section-head"><p class="eyebrow">DIRECT ROUTES</p><h2>Prefer to contact us directly?</h2><p class="lede">The discovery interface is optional. Email remains the primary route; public channels expose the studio's code, sound, research and ongoing work.</p></div>
       <div class="contact-grid">
-        ${[
-          {
-            title: "electronic.artefacts@gmail.com",
-            type: "Email",
-            copy: "Best for project briefs, partnerships, commissions and considered introductions.",
-            link: { label: "Send email", href: "mailto:electronic.artefacts@gmail.com" },
-          },
-          {
-            title: "@electronic.artefacts",
-            type: "Instagram",
-            copy: "Studio updates, releases and public signals from the wider ecosystem.",
-            link: {
-              label: "Open Instagram",
-              href: "https://www.instagram.com/electronic.artefacts/",
-              target: "_blank",
-            },
-          },
-          {
-            title: "@creativestuff.jpg",
-            type: "Instagram",
-            copy: "Visual research, references and informal observations from the image practice.",
-            link: {
-              label: "Open Instagram",
-              href: "https://www.instagram.com/creativestuff.jpg/",
-              target: "_blank",
-            },
-          },
-          {
-            title: "GitHub, SoundCloud, VASTE",
-            type: "External links",
-            copy: "Code, audio and the external VASTE runtime each provide a deeper technical or cultural entry point.",
-            link: null,
-          },
-        ]
-          .map(
-            (item, index) => `
-              <article class="panel">
-                <p class="card__meta">${esc(item.type)}</p>
-                <h3 class="card__title">${esc(item.title)}</h3>
-                <p class="card__copy">${esc(item.copy)}</p>
-                ${index === 3
-                  ? `<div class="link-row">
-                      <a class="tag" href="https://github.com/onlythejoe" target="_blank" rel="noreferrer">GitHub</a>
-                      <a class="tag" href="https://soundcloud.com/electronic-artefacts" target="_blank" rel="noreferrer">SoundCloud</a>
-                      <a class="tag" href="https://www.vaste.space/" target="_blank" rel="noreferrer">VASTE</a>
-                    </div>`
-                  : linkRow(item.link)}
-              </article>
-            `,
-          )
-          .join("")}
-      </div>
-      <div class="split contact-expectations">
-        <article class="panel panel--soft">
-          <p class="card__meta">Good fit</p>
-          <h3 class="card__title">Complex projects that need structure.</h3>
-          <p class="card__copy">Knowledge platforms, digital products, creative technology, cultural infrastructure, research-led interfaces and distinctive public systems.</p>
-        </article>
-        <article class="panel panel--soft">
-          <p class="card__meta">Working relationship</p>
-          <h3 class="card__title">Clarity before scale.</h3>
-          <p class="card__copy">Early conversations focus on the real objective, available evidence, decision constraints and the smallest meaningful first phase.</p>
-        </article>
-      </div>
-      <div class="contact-process">
-        ${[
-          ["01", "Frame", "Clarify the objective, users, constraints and available evidence."],
-          ["02", "Scope", "Define the smallest useful phase, responsibilities and decision points."],
-          ["03", "Build", "Design and implement in short reviewable increments."],
-          ["04", "Transfer", "Document the system, decisions and next operating steps."],
-        ]
-          .map(
-            ([number, title, copy]) => `
-              <article class="panel panel--soft">
-                <span class="research-method__number">${number}</span>
-                <h3 class="card__title">${title}</h3>
-                <p class="card__copy">${copy}</p>
-              </article>
-            `,
-          )
-          .join("")}
+        <article class="panel"><p class="card__meta">Email</p><h3 class="card__title">electronic.artefacts@gmail.com</h3><p class="card__copy">Project briefs, partnerships, commissions and considered introductions.</p>${linkRow({ label: "Send email", href: "mailto:electronic.artefacts@gmail.com" })}</article>
+        <article class="panel"><p class="card__meta">Studio channel</p><h3 class="card__title">@electronic.artefacts</h3><p class="card__copy">Studio updates, releases and public signals.</p>${linkRow({ label: "Open Instagram", href: "https://www.instagram.com/electronic.artefacts/", target: "_blank" })}</article>
+        <article class="panel"><p class="card__meta">Visual observatory</p><h3 class="card__title">@creativestuff.jpg</h3><p class="card__copy">Visual research, references and observations.</p>${linkRow({ label: "Open Instagram", href: "https://www.instagram.com/creativestuff.jpg/", target: "_blank" })}</article>
+        <article class="panel"><p class="card__meta">Code / sound / runtime</p><h3 class="card__title">Public surfaces</h3><p class="card__copy">Code, audio and the external VASTE runtime.</p><div class="link-row"><a class="tag" href="https://github.com/onlythejoe" target="_blank" rel="noreferrer">GitHub</a><a class="tag" href="https://soundcloud.com/electronic-artefacts" target="_blank" rel="noreferrer">SoundCloud</a><a class="tag" href="https://www.vaste.space/" target="_blank" rel="noreferrer">VASTE</a></div></article>
       </div>
     </section>
   `;
@@ -9177,6 +9786,8 @@ window.EA_SEARCH = {
   const entryHref = (entry) => {
     if (!entry) return "";
     if (entry.href) return entry.href;
+    const canonicalRoute = catalog.routeFor?.(entry);
+    if (canonicalRoute) return canonicalRoute;
     if (entry.kind === "page" && entry.id && pageRoutes[entry.id]) return pageRoutes[entry.id];
     if (entry.kind === "collection") return `./collection.html?id=${encodeURIComponent(entry.id)}`;
     if (entry.kind === "project") return entry.route || `./project.html?id=${encodeURIComponent(entry.id)}`;
@@ -11671,8 +12282,8 @@ window.EA_SEARCH = {
       "cross-navigation": renderCrossNavigation,
     },
     contact: {
+      "contact-discovery": contactDiscovery,
       "contact-links": renderContact,
-      "cross-navigation": renderCrossNavigation,
     },
     search: {
       "search-page": renderSearchPage,
@@ -11719,6 +12330,7 @@ window.EA_SEARCH = {
     initFilters(filterState);
     initSearch(searchState, renderSearchResults);
     initCardLinks();
+    initContactDiscovery();
     initUXEnhancements(filterState);
     startVasteEngineAnimation();
     startGraphSurfaceAnimation();

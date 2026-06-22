@@ -1,0 +1,430 @@
+[
+  {
+    "id": "ea:concept:graph-runtime",
+    "type": "concept",
+    "slug": {
+      "canonical": "graph-runtime"
+    },
+    "title": "Graph Runtime",
+    "definition": "A graph runtime is an execution environment in which addressable entities and typed relationships participate directly in contextual computation.",
+    "abstract": "Electronic Artefacts uses graph runtime to describe systems where entities, relationships, identity, context and events form an executable structure rather than a passive data model.",
+    "description": "A canonical definition of graph runtime, its scope, applications and relationship to VASTE, Runtime Theory and Vestiges.",
+    "locale": "en",
+    "visibility": "public",
+    "publicationClass": "canonical",
+    "status": "active",
+    "maturity": "research",
+    "confidence": "canonical",
+    "version": {
+      "version": "1.0.0",
+      "createdAt": "2024-01-01",
+      "publishedAt": "2026-06-22",
+      "modifiedAt": "2026-06-22"
+    },
+    "authors": [
+      {
+        "id": "ea:organization:electronic-artefacts"
+      }
+    ],
+    "publisher": "ea:organization:electronic-artefacts",
+    "tags": [
+      "Graph",
+      "Runtime",
+      "Context",
+      "Identity",
+      "Execution"
+    ],
+    "disciplines": [
+      "Software architecture",
+      "Knowledge systems"
+    ],
+    "scope": [
+      "Addressable entities",
+      "Typed relationships",
+      "Contextual execution",
+      "Identity",
+      "Events and propagation"
+    ],
+    "exclusions": [
+      "A static graph visualization without execution semantics",
+      "A generic knowledge graph used only for retrieval"
+    ],
+    "claims": [
+      "Graph structure can participate in execution rather than remain only a representation of data.",
+      "Context and identity must be explicit for graph-based execution to remain governable."
+    ],
+    "bodyHtml": "<h2>Definition</h2>\n<p>A graph runtime is an execution environment in which addressable entities and typed relationships participate directly in contextual computation. Nodes are not only records to retrieve. They can carry identity, state and capabilities; relationships can constrain or enable how events propagate.</p>\n<h2>Scope</h2>\n<p>The concept concerns the minimum structures required for a graph to execute meaningful operations: stable identity, typed relations, context, events, permissions and observable state transitions.</p>\n<p>Electronic Artefacts distinguishes a graph runtime from a static knowledge graph. A knowledge graph may describe facts and connections. A graph runtime uses graph structure as part of the mechanism that decides what can execute, under which context and with which consequences.</p>\n<h2>Electronic Artefacts position</h2>\n<p>Graph execution is useful only when it remains legible and governable. Context should not be hidden inside application code when it determines authority, visibility or behavior. Identity and relation types therefore belong to the runtime model rather than being treated as decorative metadata.</p>\n<h2>Applications</h2>\n<p>VASTE is the primary program through which Electronic Artefacts develops this model. Vestiges applies the runtime thesis to cultural and craft knowledge, where people, techniques, materials, institutions, places and documents need stable identities and explicit historical relationships.</p>\n<p>Runtime Theory supplies the research question beneath the implementation: what is the minimum necessary for a universe of entities to execute events coherently?</p>\n<h2>Limitations</h2>\n<p>A graph runtime introduces modeling and governance costs. Poorly defined relations create ambiguity, high-degree graphs can become difficult to reason about, and unrestricted context propagation can produce security and performance failures. Not every workflow requires a graph runtime.</p>\n<h2>References</h2>\n<p>This definition is grounded in the VASTE program, Runtime Theory research field, Vestiges project architecture and the preserved foundational lineage of Electronic Artefacts.</p>\n",
+    "headings": [
+      "Definition",
+      "Scope",
+      "Electronic Artefacts position",
+      "Applications",
+      "Limitations",
+      "References"
+    ]
+  },
+  {
+    "id": "ea:organization:electronic-artefacts",
+    "type": "organization",
+    "slug": {
+      "canonical": "electronic-artefacts"
+    },
+    "title": "Electronic Artefacts",
+    "subtitle": "Studio / label / research",
+    "abstract": "Electronic Artefacts is an independent creative technology studio, software laboratory, research organization, cultural platform, label and publishing system.",
+    "description": "Electronic Artefacts connects research, software, design, cultural production and archival practice through a shared graph of projects, programs and knowledge.",
+    "locale": "en",
+    "visibility": "public",
+    "publicationClass": "canonical",
+    "status": "active",
+    "maturity": "production",
+    "confidence": "canonical",
+    "version": {
+      "version": "1.0.0",
+      "createdAt": "2024-01-01",
+      "publishedAt": "2026-06-22",
+      "modifiedAt": "2026-06-22"
+    },
+    "authors": [
+      {
+        "id": "ea:organization:electronic-artefacts"
+      }
+    ],
+    "publisher": "ea:organization:electronic-artefacts",
+    "tags": [
+      "Creative technology",
+      "Software",
+      "Research",
+      "Culture",
+      "Publishing"
+    ],
+    "rights": "© Electronic Artefacts",
+    "organizationType": "studio",
+    "bodyHtml": "<h2>Institutional role</h2>\n<p>Electronic Artefacts develops digital products, knowledge systems, cultural platforms and research-led experiences. The organization operates across studio practice, software research, artistic production, publishing and archival stewardship.</p>\n<h2>Operating layers</h2>\n<p>Research frames questions and preserves observations. Programs turn sustained research into reusable systems. Projects apply those systems in public, cultural or client contexts. Publications make definitions, arguments and findings citable. The archive preserves evidence, versions and lineage.</p>\n<h2>Public knowledge system</h2>\n<p>The public platform exposes these layers through stable entities and typed relationships. It is designed so that a project can be followed back to the concepts, methods, programs, people and evidence that made it possible.</p>\n<h2>Responsibilities</h2>\n<p>Electronic Artefacts publishes and maintains the pilot knowledge records in this migration. Publication status, lifecycle maturity, confidence and visibility remain separate so that experimental work can be described without being misrepresented as proven or complete.</p>\n",
+    "headings": [
+      "Institutional role",
+      "Operating layers",
+      "Public knowledge system",
+      "Responsibilities"
+    ]
+  },
+  {
+    "id": "ea:program:vaste",
+    "type": "program",
+    "slug": {
+      "canonical": "vaste"
+    },
+    "title": "VASTE",
+    "subtitle": "Proprietary Runtime",
+    "abstract": "VASTE is the primary proprietary runtime developed by Electronic Artefacts for graph architectures, contextual execution, identity systems and modular world construction.",
+    "description": "The program connects Runtime Theory to implemented graph systems and provides the technical foundation for projects including Vestiges.",
+    "locale": "en",
+    "visibility": "public",
+    "publicationClass": "canonical",
+    "status": "development",
+    "maturity": "development",
+    "confidence": "published",
+    "version": {
+      "version": "1.0.0",
+      "createdAt": "2024-01-01",
+      "publishedAt": "2026-01-01",
+      "modifiedAt": "2026-06-22"
+    },
+    "authors": [
+      {
+        "id": "ea:organization:electronic-artefacts"
+      }
+    ],
+    "publisher": "ea:organization:electronic-artefacts",
+    "tags": [
+      "TypeScript",
+      "Graph",
+      "Context",
+      "Identity",
+      "Simulation",
+      "Knowledge"
+    ],
+    "disciplines": [
+      "Technology",
+      "Systems",
+      "Research"
+    ],
+    "mandate": "Develop a reusable graph runtime for contextual execution, identity, knowledge structures, simulation and modular systems.",
+    "domain": "Runtime Systems",
+    "capabilities": [
+      "Addressable graph entities",
+      "Typed relationships",
+      "Contextual execution",
+      "Identity and permissions",
+      "Event propagation",
+      "Simulation structures"
+    ],
+    "architecture": [
+      "Graph entity layer",
+      "Context and identity layer",
+      "Event execution layer",
+      "Projection and public-surface layer"
+    ],
+    "lifecycle": [
+      "ARCA lineage in 2023",
+      "Concept foundation in 2024",
+      "Runtime prototype in 2025",
+      "Graph runtime evolution in 2026"
+    ],
+    "maintainers": [
+      {
+        "id": "ea:organization:electronic-artefacts"
+      }
+    ],
+    "officialUrl": "https://www.vaste.space/",
+    "bodyHtml": "<h2>Mandate</h2>\n<p>VASTE is the primary proprietary runtime developed within Electronic Artefacts. It explores graph architectures, contextual execution, identity systems, simulation frameworks, knowledge structures and modular world construction.</p>\n<h2>Research foundation</h2>\n<p>The program operationalizes Runtime Theory. It treats entities, relations, identity and context as executable system concerns rather than only database or interface concerns.</p>\n<h2>Architecture</h2>\n<p>The current architecture is organized around addressable graph entities, typed relationships, contextual identity and event propagation. Public applications can build specialized surfaces while retaining shared runtime semantics.</p>\n<h2>Lineage</h2>\n<p>VASTE emerged from ARCA, an earlier system concerned with digital assets, traceability and certification. The scope moved from a specialized asset platform toward generalized execution and information structures.</p>\n<h2>Implementations</h2>\n<p>Vestiges is the flagship public product currently used to demonstrate the runtime in a concrete knowledge and economic context. It applies the graph model to culture, craft and human know-how.</p>\n<h2>Status and limitations</h2>\n<p>VASTE remains in active development. Architectural claims are published where they are stable enough to explain, while implementation details and performance characteristics remain subject to revision.</p>\n",
+    "headings": [
+      "Mandate",
+      "Research foundation",
+      "Architecture",
+      "Lineage",
+      "Implementations",
+      "Status and limitations"
+    ]
+  },
+  {
+    "id": "ea:project:vestiges",
+    "type": "project",
+    "slug": {
+      "canonical": "vestiges"
+    },
+    "title": "Vestiges",
+    "subtitle": "VASTE Flagship Knowledge Platform",
+    "abstract": "Vestiges is a VASTE-powered knowledge infrastructure platform designed to map, preserve, connect, transmit and activate human know-how.",
+    "description": "The project applies graph-runtime architecture to culture, craft, institutions, materials, techniques, places and public knowledge pages.",
+    "locale": "en",
+    "visibility": "public",
+    "publicationClass": "canonical",
+    "status": "development",
+    "maturity": "prototype",
+    "confidence": "observed",
+    "version": {
+      "version": "1.0.0",
+      "createdAt": "2025-01-01",
+      "publishedAt": "2026-06-22",
+      "modifiedAt": "2026-06-22"
+    },
+    "authors": [
+      {
+        "id": "ea:organization:electronic-artefacts"
+      }
+    ],
+    "publisher": "ea:organization:electronic-artefacts",
+    "tags": [
+      "Vestiges",
+      "VASTE",
+      "Knowledge Graph",
+      "Craft",
+      "Culture",
+      "Platform"
+    ],
+    "disciplines": [
+      "Technology",
+      "Knowledge Graphs",
+      "Culture",
+      "Craft",
+      "Design"
+    ],
+    "media": [
+      {
+        "id": "vestiges-logo",
+        "type": "image",
+        "src": "/assets/media/projects/vestiges/logo-vestiges.png",
+        "alt": "Vestiges monogram",
+        "caption": "Vestiges identity."
+      }
+    ],
+    "category": "internal",
+    "brief": "Build a durable knowledge and economic platform around the living graph of culture, craft and human know-how.",
+    "context": "Cultural knowledge is distributed across people, practices, institutions, materials, places and documents, while conventional profiles and content systems flatten those relationships.",
+    "stakeholders": [
+      {
+        "id": "ea:organization:electronic-artefacts"
+      }
+    ],
+    "constraints": [
+      "Preserve provenance and change over time.",
+      "Support distributed contribution and validation.",
+      "Keep knowledge primary while enabling services and exchange."
+    ],
+    "approach": [
+      "Represent people, organizations, techniques, materials, tools, works, places and documents as addressable nodes.",
+      "Make relationships explicit, navigable and historized.",
+      "Use VASTE for graph identity, context and execution."
+    ],
+    "outputs": [
+      {
+        "id": "ea:project:vestiges"
+      }
+    ],
+    "outcomes": [
+      "A defined knowledge-first platform architecture.",
+      "A model connecting public knowledge pages, contribution workflows and economic services."
+    ],
+    "evidence": [
+      {
+        "id": "ea:publication:foundational-lineage-001"
+      }
+    ],
+    "credits": [
+      {
+        "id": "ea:organization:electronic-artefacts"
+      }
+    ],
+    "bodyHtml": "<h2>Project thesis</h2>\n<p>Vestiges is the flagship product that demonstrates VASTE in a concrete cultural and economic context. It is neither a wiki nor a simple marketplace. Its primary resource is connected knowledge.</p>\n<h2>Knowledge model</h2>\n<p>Every person, organization, technique, material, tool, work, place, project and document can be represented as an addressable node. Relationships such as teaching, using, making, restoring, supplying, certifying and participating remain explicit and historical.</p>\n<h2>System approach</h2>\n<p>The platform combines graph identity, contribution permissions, collaborative validation, public node pages, visual exploration and economic services. The marketplace is an outcome of the graph rather than the organizing principle.</p>\n<h2>VASTE implementation</h2>\n<p>Vestiges uses VASTE as its runtime foundation. Context and identity determine who can contribute, validate or access information, while graph relations make knowledge navigable across institutional and disciplinary boundaries.</p>\n<h2>Evidence</h2>\n<p>The current public evidence consists of the product definition, graph-node and relationship models, architectural layers, project media and its documented place in the Electronic Artefacts lineage.</p>\n<h2>Status</h2>\n<p>Vestiges is in development. The knowledge model and product architecture are published as observed design work; implementation details and public availability will evolve.</p>\n",
+    "headings": [
+      "Project thesis",
+      "Knowledge model",
+      "System approach",
+      "VASTE implementation",
+      "Evidence",
+      "Status"
+    ]
+  },
+  {
+    "id": "ea:publication:foundational-lineage-001",
+    "type": "publication",
+    "slug": {
+      "canonical": "foundational-lineage-001"
+    },
+    "title": "Foundational Lineage #001",
+    "subtitle": "Research Note",
+    "abstract": "This research note records early architecture, communication-system and documentation threads that led to Electronic Artefacts, Runtime Theory and VASTE.",
+    "description": "A concise record of the foundational research lineage connecting information architecture, taxonomy, runtime systems and public knowledge structures.",
+    "locale": "en",
+    "visibility": "public",
+    "publicationClass": "published",
+    "status": "research",
+    "maturity": "research",
+    "confidence": "published",
+    "version": {
+      "version": "1.0.0",
+      "createdAt": "2026-01-01",
+      "publishedAt": "2026-06-12",
+      "modifiedAt": "2026-06-22"
+    },
+    "authors": [
+      {
+        "id": "ea:organization:electronic-artefacts"
+      }
+    ],
+    "publisher": "ea:organization:electronic-artefacts",
+    "tags": [
+      "Foundational",
+      "Lineage",
+      "Research",
+      "Information architecture"
+    ],
+    "format": "researchNote",
+    "subjects": [
+      {
+        "id": "ea:researchField:runtime-theory"
+      },
+      {
+        "id": "ea:program:vaste"
+      }
+    ],
+    "claims": [
+      "Electronic Artefacts developed through a shared concern for architecture, communication systems, industrial documentation, wayfinding and taxonomy."
+    ],
+    "evidence": [
+      {
+        "id": "ea:program:vaste"
+      }
+    ],
+    "citation": {
+      "preferred": "Electronic Artefacts. “Foundational Lineage #001.” Research note, version 1.0.0, 2026."
+    },
+    "bodyHtml": "<h2>Question</h2>\n<p>Which early research threads created continuity between information architecture, software systems and the public knowledge model of Electronic Artefacts?</p>\n<h2>Context</h2>\n<p>The foundational layer did not begin as a publishing taxonomy. It emerged from practical work on architecture, communication systems, industrial documentation, wayfinding and structured information.</p>\n<h2>Observation</h2>\n<p>Across those contexts, the recurring problem was not only how information should look. It was how entities, responsibilities, states and relationships could remain legible across a changing system.</p>\n<p>That concern later appeared in early software experiments, ARCA, Runtime Theory and VASTE. It also informed the decision to treat the Electronic Artefacts website as a connected public system rather than a sequence of isolated portfolio pages.</p>\n<h2>Interpretation</h2>\n<p>The shared lineage is a method of making complex systems addressable. Taxonomy gives entities stable categories. Information architecture makes routes and context legible. Runtime work asks how those entities and relations can participate in execution.</p>\n<h2>Limitations</h2>\n<p>This note is a concise internal lineage record, not a complete historical account. Additional primary artefacts and dated implementation records should be connected as they become publishable.</p>\n<h2>References</h2>\n<p>The current reference set consists of the Runtime Theory field, VASTE program record, Vestiges project architecture and preserved Electronic Artefacts timelines.</p>\n",
+    "headings": [
+      "Question",
+      "Context",
+      "Observation",
+      "Interpretation",
+      "Limitations",
+      "References"
+    ]
+  },
+  {
+    "id": "ea:researchField:runtime-theory",
+    "type": "researchField",
+    "slug": {
+      "canonical": "runtime-theory"
+    },
+    "title": "Runtime Theory",
+    "subtitle": "Research field",
+    "abstract": "Runtime Theory investigates the minimum identities, relations, contexts and event primitives required for a coherent executable system.",
+    "description": "An active Electronic Artefacts research field connecting early VOID experiments, VASTE and the definition of graph runtime.",
+    "locale": "en",
+    "visibility": "public",
+    "publicationClass": "canonical",
+    "status": "active",
+    "maturity": "research",
+    "confidence": "validated",
+    "version": {
+      "version": "1.0.0",
+      "createdAt": "2024-01-01",
+      "publishedAt": "2026-06-22",
+      "modifiedAt": "2026-06-22"
+    },
+    "authors": [
+      {
+        "id": "ea:organization:electronic-artefacts"
+      }
+    ],
+    "publisher": "ea:organization:electronic-artefacts",
+    "tags": [
+      "Runtime",
+      "Theory",
+      "Execution",
+      "Events",
+      "Primitives"
+    ],
+    "disciplines": [
+      "Technology",
+      "Research",
+      "Systems"
+    ],
+    "questions": [
+      {
+        "id": "minimum-runtime",
+        "question": "What is the minimum necessary for a universe of entities to execute events coherently?",
+        "status": "active"
+      },
+      {
+        "id": "contextual-execution",
+        "question": "How should identity and context constrain execution and event propagation?",
+        "status": "active"
+      }
+    ],
+    "scope": [
+      "Execution primitives",
+      "Events",
+      "Identity",
+      "Context",
+      "Graph propagation"
+    ],
+    "findings": [
+      "Identity and context must be explicit when they determine execution authority.",
+      "Typed graph relationships can become operational constraints rather than descriptive links."
+    ],
+    "openQuestions": [
+      "How should runtime context be bounded across distributed services?",
+      "Which graph operations remain legible at large scale?"
+    ],
+    "bodyHtml": "<h2>Research question</h2>\n<p>Runtime Theory asks what is minimally necessary for a universe of entities to execute events coherently. The field studies execution primitives, identity, context, relations, event propagation and the boundaries that keep a system understandable.</p>\n<h2>Origin</h2>\n<p>The field grew from early software-engine experiments associated with VOID and later informed ARCA. Those experiments shifted from building a bounded engine toward more general questions about information systems and execution environments.</p>\n<h2>Current position</h2>\n<p>VASTE is the principal implementation context for Runtime Theory. The program treats graph entities, typed relationships, identity and contextual execution as parts of one runtime model.</p>\n<h2>Research method</h2>\n<p>The field advances through architecture models, prototypes, implementation notes, performance observations and applied projects. Concepts are retained only when they can be stated precisely and inspected through evidence.</p>\n<h2>Applications</h2>\n<p>Vestiges applies Runtime Theory to a cultural knowledge platform. Its public thesis depends on addressable entities and historized relationships, while its operational model requires permissions, contribution context and controlled propagation.</p>\n<h2>Open questions</h2>\n<p>Current work concerns bounded context across distributed services, the legibility of large graph systems, and the relationship between expressive graph models and predictable execution.</p>\n",
+    "headings": [
+      "Research question",
+      "Origin",
+      "Current position",
+      "Research method",
+      "Applications",
+      "Open questions"
+    ]
+  }
+]

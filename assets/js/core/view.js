@@ -113,6 +113,8 @@
   const entryHrefFor = (item, options = {}) => {
     if (options.href) return options.href;
     if (!item) return "";
+    const canonicalRoute = catalog.routeFor?.(item);
+    if (canonicalRoute) return canonicalRoute;
     if (item.route) return item.route;
     if (item.kind === "project") return `./project.html?id=${encodeURIComponent(item.id)}`;
     if (item.kind === "collection") return `./collection.html?id=${encodeURIComponent(item.id)}`;

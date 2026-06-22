@@ -1,0 +1,29 @@
+- id: ear:electronic-artefacts-publishes-foundational-lineage
+  subject: ea:publication:foundational-lineage-001
+  predicate: publishedBy
+  object: ea:organization:electronic-artefacts
+  statement: Electronic Artefacts publishes and maintains Foundational Lineage #001 as a public research note.
+  confidence: published
+  createdAt: "2026-06-22"
+  reviewedAt: "2026-06-22"
+  visibility: public
+
+- id: ear:foundational-lineage-documents-runtime-theory
+  subject: ea:publication:foundational-lineage-001
+  predicate: documents
+  object: ea:researchField:runtime-theory
+  statement: Foundational Lineage #001 records the architectural and information-system concerns that preceded Runtime Theory.
+  confidence: observed
+  createdAt: "2026-06-22"
+  reviewedAt: "2026-06-22"
+  visibility: public
+
+- id: ear:foundational-lineage-documents-vaste
+  subject: ea:publication:foundational-lineage-001
+  predicate: documents
+  object: ea:program:vaste
+  statement: Foundational Lineage #001 places VASTE inside the longer Electronic Artefacts research and software lineage.
+  confidence: observed
+  createdAt: "2026-06-22"
+  reviewedAt: "2026-06-22"
+  visibility: public

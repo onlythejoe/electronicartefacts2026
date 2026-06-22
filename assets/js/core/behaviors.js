@@ -179,6 +179,8 @@
 
   const makeEntryHref = (item) => {
     if (!item) return "./index.html";
+    const canonicalRoute = window.EA_CATALOG?.routeFor?.(item);
+    if (canonicalRoute) return canonicalRoute;
     if (item.kind === "project") return `./project.html?id=${encodeURIComponent(item.id)}`;
     if (item.kind === "collection") return `./collection.html?id=${encodeURIComponent(item.id)}`;
     if (item.kind === "artefact" || item.kind === "researchLog") return `./artefact.html?id=${encodeURIComponent(item.id)}`;
@@ -914,6 +916,293 @@
     document.addEventListener("focusin", onIntent);
   };
 
+  const initContactDiscovery = () => {
+    const root = document.querySelector("[data-contact-discovery]");
+    if (!root || root.dataset.boundContactDiscovery === "true") return;
+    root.dataset.boundContactDiscovery = "true";
+
+    const pathways = {
+      build: {
+        label: "Build Something",
+        copy: "A client or commissioned project requiring strategy, design, technology or delivery.",
+        keywords: ["website", "site", "platform", "software", "app", "application", "brand", "branding", "identity", "ux", "ui", "product", "tool", "interface", "development", "develop", "build", "company", "business"],
+        questions: [
+          ["stage", "Project stage", "select", ["New idea", "Existing project", "Redesign", "Active product"]],
+          ["audience", "Who is it for?", "text", "Audience, users or community"],
+          ["timeline", "Preferred timing", "select", ["Exploring", "1–2 months", "3–6 months", "6+ months"]],
+          ["budget", "Indicative budget", "select", ["Not defined", "Under €5k", "€5k–€10k", "€10k–€25k", "€25k+"]],
+          ["requirements", "Known requirements", "text", "Existing stack, integrations, content or constraints"],
+        ],
+      },
+      vaste: {
+        label: "Work With VASTE",
+        copy: "A technical, design, pilot or research collaboration around the VASTE ecosystem.",
+        keywords: ["vaste", "runtime", "graph", "extension", "plugin", "protocol", "infrastructure", "open source", "developer", "engineer", "academic"],
+        questions: [
+          ["background", "Your background", "text", "Engineering, design, research, institution…"],
+          ["expertise", "Relevant expertise", "text", "Languages, systems, disciplines or methods"],
+          ["interest", "Area of interest", "select", ["Runtime", "Graph systems", "Knowledge systems", "Design", "Research", "Pilot project"]],
+          ["goal", "Collaboration goal", "text", "What would a useful collaboration produce?"],
+        ],
+      },
+      support: {
+        label: "Support The Ecosystem",
+        copy: "An institutional, strategic, financial, educational or cultural partnership.",
+        keywords: ["invest", "investor", "sponsor", "fund", "funding", "museum", "school", "university", "institution", "accelerator", "partner", "partnership", "supplier", "grant", "foundation"],
+        questions: [
+          ["organizationType", "Organization type", "select", ["Institution", "University / school", "Museum / cultural venue", "Investor / fund", "Sponsor", "Research organization", "Other"]],
+          ["strategicInterest", "Strategic interest", "text", "Why does Electronic Artefacts fit your work?"],
+          ["resources", "Potential contribution", "text", "Funding, venue, expertise, network, research access…"],
+          ["objective", "Partnership objective", "text", "What should the relationship make possible?"],
+        ],
+      },
+      creative: {
+        label: "Creative & Artistic Collaboration",
+        copy: "A shared cultural, visual, spatial, narrative or experimental project.",
+        keywords: ["artist", "art", "designer", "photographer", "film", "filmmaker", "writer", "curator", "collective", "exhibition", "installation", "residency", "visual", "creative", "culture", "cultural"],
+        questions: [
+          ["discipline", "Primary discipline", "text", "Visual art, film, photography, writing, curation…"],
+          ["medium", "Medium or format", "text", "Installation, exhibition, publication, digital work…"],
+          ["references", "References or existing work", "text", "Links or a short description"],
+          ["outcome", "Desired outcome", "text", "What would you like to create together?"],
+        ],
+      },
+      label: {
+        label: "Label & Publishing",
+        copy: "A music, sound, audiovisual, release, distribution or artistic publishing conversation.",
+        keywords: ["music", "musician", "album", "ep", "track", "release", "label", "sound", "audio", "audiovisual", "distribution", "publishing", "producer", "production", "composer"],
+        questions: [
+          ["format", "Project format", "select", ["Single / EP / album", "Sound design", "Audiovisual work", "Visual album", "Artistic publication", "Other"]],
+          ["releaseStage", "Current stage", "select", ["Idea", "In production", "Finished material", "Seeking release", "Seeking distribution"]],
+          ["material", "Existing material", "text", "Private link, portfolio or short description"],
+          ["labelGoal", "Collaboration goal", "text", "Production, release, publishing, visuals, distribution…"],
+        ],
+      },
+    };
+
+    const tagRules = {
+      Website: ["website", "site", "portfolio", "web"],
+      Platform: ["platform", "marketplace", "community"],
+      Software: ["software", "app", "application", "tool", "saas"],
+      Branding: ["brand", "branding", "identity", "logo"],
+      "Creative Direction": ["creative direction", "art direction", "direction"],
+      "UX / UI": ["ux", "ui", "interface", "experience"],
+      Development: ["development", "develop", "code", "technical", "engineering"],
+      Photography: ["photography", "photographer", "photo"],
+      VASTE: ["vaste"],
+      Developer: ["developer", "engineer", "engineering", "code"],
+      Research: ["research", "academic", "study", "laboratory", "lab"],
+      Collaboration: ["collaborate", "collaboration", "contribute", "partner", "together"],
+      Institution: ["institution", "museum", "university", "school", "foundation"],
+      Partnership: ["partnership", "partner", "sponsor", "support"],
+      "Cultural Sector": ["cultural", "culture", "museum", "arts"],
+      Music: ["music", "album", "ep", "track", "musician", "producer"],
+      Label: ["label", "release", "record"],
+      Publishing: ["publishing", "publication", "release", "distribution"],
+      Audiovisual: ["audiovisual", "film", "video", "motion"],
+      Exhibition: ["exhibition", "installation", "residency", "gallery"],
+      Investment: ["investor", "investment", "funding", "fund", "grant"],
+    };
+
+    const state = { intent: "", pathway: "build", tags: [], answers: {} };
+    const intent = root.querySelector("[data-contact-intent]");
+    const workspace = root.querySelector("[data-contact-workspace]");
+    const status = root.querySelector("[data-contact-status]");
+    const pathwayTitle = root.querySelector("[data-contact-pathway-title]");
+    const pathwayCopy = root.querySelector("[data-contact-pathway-copy]");
+    const pathwayTray = root.querySelector("[data-contact-pathways]");
+    const tagTray = root.querySelector("[data-contact-tags]");
+    const questions = root.querySelector("[data-contact-questions]");
+    const summary = root.querySelector("[data-contact-summary]");
+    const submit = root.querySelector("[data-contact-submit]");
+    const completeness = root.querySelector("[data-contact-completeness]");
+    const customTag = root.querySelector("[data-contact-custom-tag]");
+    const nameInput = root.querySelector("[data-contact-name]");
+    const emailInput = root.querySelector("[data-contact-email]");
+    const organizationInput = root.querySelector("[data-contact-organization]");
+    const keywordMatches = (text, keyword) => {
+      const escaped = keyword.replace(/[.*+?^${}()|[\]\\]/g, "\\$&");
+      return new RegExp(`(^|[^a-z0-9])${escaped}([^a-z0-9]|$)`, "i").test(text);
+    };
+
+    const detectPathway = (text) => {
+      const normalized = text.toLowerCase();
+      const scores = Object.entries(pathways).map(([key, config]) => [
+        key,
+        config.keywords.reduce((score, keyword) => score + (keywordMatches(normalized, keyword) ? (keyword.includes(" ") ? 3 : 1) : 0), 0),
+      ]);
+      scores.sort((left, right) => right[1] - left[1]);
+      return scores[0][1] > 0 ? scores[0][0] : "build";
+    };
+
+    const detectTags = (text) => {
+      const normalized = text.toLowerCase();
+      return Object.entries(tagRules)
+        .filter(([, keywords]) => keywords.some((keyword) => keywordMatches(normalized, keyword)))
+        .map(([tag]) => tag)
+        .slice(0, 8);
+    };
+
+    const renderPathways = () => {
+      pathwayTray.innerHTML = Object.entries(pathways)
+        .map(([key, config]) => `<button type="button" class="contact-pathway${state.pathway === key ? " is-active" : ""}" data-contact-pathway="${esc(key)}" aria-pressed="${state.pathway === key ? "true" : "false"}">${esc(config.label)}</button>`)
+        .join("");
+      pathwayTitle.textContent = pathways[state.pathway].label;
+      pathwayCopy.textContent = pathways[state.pathway].copy;
+    };
+
+    const renderTags = () => {
+      tagTray.innerHTML = state.tags.length
+        ? state.tags.map((tag) => `<button type="button" class="contact-detected-tag" data-contact-remove-tag="${esc(tag)}" aria-label="Remove ${esc(tag)}"><span>✓</span>${esc(tag)}<b aria-hidden="true">×</b></button>`).join("")
+        : `<p class="card__copy">No specific signals detected yet. Add a little more context or create a tag.</p>`;
+    };
+
+    const renderQuestions = () => {
+      const config = pathways[state.pathway];
+      questions.innerHTML = config.questions
+        .map(([key, label, type, options]) => {
+          const value = state.answers[key] || "";
+          if (type === "select") {
+            return `<label class="contact-question"><span>${esc(label)}</span><select data-contact-answer="${esc(key)}"><option value="">Select an option</option>${options.map((option) => `<option value="${esc(option)}"${value === option ? " selected" : ""}>${esc(option)}</option>`).join("")}</select></label>`;
+          }
+          return `<label class="contact-question"><span>${esc(label)}</span><input type="text" data-contact-answer="${esc(key)}" value="${esc(value)}" placeholder="${esc(options)}" /></label>`;
+        })
+        .join("");
+    };
+
+    const briefText = () => {
+      const config = pathways[state.pathway];
+      const answerLines = config.questions
+        .map(([key, label]) => state.answers[key] ? `${label}: ${state.answers[key]}` : "")
+        .filter(Boolean);
+      return [
+        "Electronic Artefacts — Discovery Brief",
+        "",
+        `Pathway: ${config.label}`,
+        `Intent: ${state.intent}`,
+        state.tags.length ? `Signals: ${state.tags.join(", ")}` : "",
+        ...answerLines,
+        "",
+        `Name: ${nameInput.value.trim()}`,
+        `Email: ${emailInput.value.trim()}`,
+        organizationInput.value.trim() ? `Organization: ${organizationInput.value.trim()}` : "",
+      ].filter((line) => line !== "").join("\n");
+    };
+
+    const renderSummary = () => {
+      const config = pathways[state.pathway];
+      const answered = config.questions.filter(([key]) => state.answers[key]).length;
+      const rows = [
+        ["Pathway", config.label],
+        ["Intent", state.intent],
+        ["Signals", state.tags.join(", ") || "To be clarified"],
+        ...config.questions.filter(([key]) => state.answers[key]).map(([key, label]) => [label, state.answers[key]]),
+      ];
+      summary.innerHTML = rows.map(([label, value]) => `<div><dt>${esc(label)}</dt><dd>${esc(value)}</dd></div>`).join("");
+      completeness.textContent = answered === config.questions.length ? "Brief ready" : `${answered}/${config.questions.length} questions answered`;
+      const subject = encodeURIComponent(`[${config.label}] ${state.intent.slice(0, 70) || "New discovery brief"}`);
+      const contactValid = Boolean(nameInput.value.trim()) && /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emailInput.value.trim());
+      submit.href = contactValid
+        ? `mailto:electronic.artefacts@gmail.com?subject=${subject}&body=${encodeURIComponent(briefText())}`
+        : "#contact-identity-title";
+      submit.setAttribute("aria-disabled", contactValid ? "false" : "true");
+      submit.classList.toggle("is-disabled", !contactValid);
+    };
+
+    const refresh = ({ resetAnswers = false } = {}) => {
+      if (resetAnswers) state.answers = {};
+      renderPathways();
+      renderTags();
+      renderQuestions();
+      renderSummary();
+    };
+
+    const analyze = () => {
+      state.intent = intent.value.trim();
+      if (state.intent.length < 3) {
+        workspace.hidden = true;
+        status.textContent = "Start with a sentence. No formal brief required.";
+        return;
+      }
+      state.pathway = detectPathway(state.intent);
+      state.tags = detectTags(state.intent);
+      workspace.hidden = false;
+      status.textContent = `A likely pathway and ${state.tags.length} signals were identified locally.`;
+      refresh({ resetAnswers: true });
+    };
+
+    intent.addEventListener("input", analyze);
+    intent.addEventListener("change", analyze);
+    intent.addEventListener("keydown", (event) => {
+      if (event.key === "Enter" && (event.metaKey || event.ctrlKey)) {
+        event.preventDefault();
+        analyze();
+        workspace.querySelector("button, input, select")?.focus();
+      }
+    });
+
+    pathwayTray.addEventListener("click", (event) => {
+      const button = event.target.closest("[data-contact-pathway]");
+      if (!button) return;
+      state.pathway = button.getAttribute("data-contact-pathway");
+      refresh({ resetAnswers: true });
+    });
+    tagTray.addEventListener("click", (event) => {
+      const button = event.target.closest("[data-contact-remove-tag]");
+      if (!button) return;
+      state.tags = state.tags.filter((tag) => tag !== button.getAttribute("data-contact-remove-tag"));
+      renderTags();
+      renderSummary();
+    });
+    root.querySelector("[data-contact-add-tag]")?.addEventListener("click", () => {
+      const value = customTag.value.trim();
+      if (!value || state.tags.some((tag) => tag.toLowerCase() === value.toLowerCase())) return;
+      state.tags.push(value);
+      customTag.value = "";
+      renderTags();
+      renderSummary();
+    });
+    customTag.addEventListener("keydown", (event) => {
+      if (event.key !== "Enter") return;
+      event.preventDefault();
+      root.querySelector("[data-contact-add-tag]")?.click();
+    });
+    questions.addEventListener("input", (event) => {
+      const field = event.target.closest("[data-contact-answer]");
+      if (!field) return;
+      state.answers[field.getAttribute("data-contact-answer")] = field.value.trim();
+      renderSummary();
+    });
+    [nameInput, emailInput, organizationInput].forEach((field) => field.addEventListener("input", renderSummary));
+    submit.addEventListener("click", (event) => {
+      if (submit.getAttribute("aria-disabled") !== "true") return;
+      event.preventDefault();
+      status.textContent = "Add your name and a valid email address before preparing the message.";
+      (!nameInput.value.trim() ? nameInput : emailInput).focus();
+    });
+    root.querySelector("[data-contact-copy]")?.addEventListener("click", async (event) => {
+      const button = event.currentTarget;
+      const original = button.textContent;
+      try {
+        await navigator.clipboard.writeText(briefText());
+        button.textContent = "Brief copied";
+      } catch {
+        button.textContent = "Copy unavailable";
+      }
+      window.setTimeout(() => { button.textContent = original; }, 1600);
+    });
+
+    const prompts = ["Tell us what you’re working on.", "What would you like to build together?", "Describe the idea that needs a system.", "What should exist that doesn’t exist yet?"];
+    if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
+      let promptIndex = 0;
+      window.setInterval(() => {
+        if (document.activeElement === intent || intent.value) return;
+        promptIndex = (promptIndex + 1) % prompts.length;
+        intent.placeholder = prompts[promptIndex];
+      }, 4200);
+    }
+  };
+
   const initUXEnhancements = (filterState) => {
     initScrollProgress();
     initAutoHideHeader();
@@ -1001,6 +1290,7 @@
   };
 
   const syncSeoMeta = ({ current, entityById }) => {
+    if (document.body.dataset.generatedPage === "true") return;
     syncPageTitle({ current, entityById });
     document.documentElement.lang = "en";
 
@@ -1185,6 +1475,7 @@
     initFilters,
     initSearch,
     initCardLinks,
+    initContactDiscovery,
     initUXEnhancements,
     refreshCardSurfaces,
     syncNavigationState,

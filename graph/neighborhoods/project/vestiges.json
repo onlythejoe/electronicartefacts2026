@@ -1,0 +1,85 @@
+{
+  "id": "local:ea:project:vestiges",
+  "kind": "local",
+  "focus": "ea:project:vestiges",
+  "nodes": [
+    {
+      "id": "ea:concept:graph-runtime",
+      "type": "concept",
+      "title": "Graph Runtime",
+      "route": "/knowledge/concepts/graph-runtime/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:organization:electronic-artefacts",
+      "type": "organization",
+      "title": "Electronic Artefacts",
+      "route": "/organizations/electronic-artefacts/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:program:vaste",
+      "type": "program",
+      "title": "VASTE",
+      "route": "/programs/vaste/",
+      "status": "development",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:project:vestiges",
+      "type": "project",
+      "title": "Vestiges",
+      "route": "/projects/vestiges/",
+      "status": "development",
+      "confidence": "observed"
+    },
+    {
+      "id": "ea:publication:foundational-lineage-001",
+      "type": "publication",
+      "title": "Foundational Lineage #001",
+      "route": "/publications/foundational-lineage-001/",
+      "status": "research",
+      "confidence": "published"
+    }
+  ],
+  "edges": [
+    {
+      "id": "ear:vestiges-powered-by-vaste",
+      "source": "ea:project:vestiges",
+      "target": "ea:program:vaste",
+      "predicate": "poweredBy",
+      "label": "Powered by",
+      "statement": "Vestiges uses VASTE as its graph runtime and contextual execution foundation.",
+      "confidence": "observed"
+    },
+    {
+      "id": "ear:vestiges-applies-graph-runtime",
+      "source": "ea:project:vestiges",
+      "target": "ea:concept:graph-runtime",
+      "predicate": "appliesConcept",
+      "label": "Applies concept",
+      "statement": "Vestiges applies graph-runtime principles to cultural, craft and human-knowledge infrastructure.",
+      "confidence": "observed"
+    },
+    {
+      "id": "ear:vestiges-evidenced-by-foundational-lineage",
+      "source": "ea:project:vestiges",
+      "target": "ea:publication:foundational-lineage-001",
+      "predicate": "evidencedBy",
+      "label": "Evidenced by",
+      "statement": "Foundational Lineage",
+      "confidence": "observed"
+    },
+    {
+      "id": "ear:electronic-artefacts-creates-vestiges",
+      "source": "ea:project:vestiges",
+      "target": "ea:organization:electronic-artefacts",
+      "predicate": "createdBy",
+      "label": "Created by",
+      "statement": "Electronic Artefacts created Vestiges as the flagship public application of VASTE.",
+      "confidence": "published"
+    }
+  ]
+}
