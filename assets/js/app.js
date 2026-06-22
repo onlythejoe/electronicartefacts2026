@@ -2445,7 +2445,7 @@ window.EA_ENTITIES = {
     },
     {
       id: "null-underscore-human",
-      title: "null_underscore_human",
+      title: "null_human",
       subtitle: "Artistic Identity Project",
       kind: "project",
       type: "Narrative Project",
@@ -2468,7 +2468,7 @@ window.EA_ENTITIES = {
       description:
         "Experimental artistic identity project combining storytelling, performance, visual experimentation, social media narratives and speculative worldbuilding.",
       summary: "Speculative artistic identity project.",
-      tags: ["null_underscore_human", "Identity", "Worldbuilding", "Performance"],
+      tags: ["null_human", "Identity", "Worldbuilding", "Performance"],
       architecture: {
         surface: "Identity and narrative project",
         stack: "Story fragments, visual tests, social narratives and speculative worldbuilding.",
@@ -3130,7 +3130,7 @@ window.EA_ENTITIES = {
   worldbuilding: [
     { id: "electronic-artefacts-universe", title: "Electronic Artefacts Universe", kind: "universe", type: "Universe", status: "concept", maturity: "concept", confidence: "speculative", visibility: "internal", temporality: { creationYear: "2026", creationDate: "2026-01-01", releaseDate: "", lastUpdated: "2026-06-17", era: "foundation" }, summary: "Meta-universe connecting major Electronic Artefacts projects.", tags: ["Universe", "Meta", "Electronic Artefacts"], relations: { relatedTo: ["electronic-artefacts", "palimpsests", "unionmob", "creativestuff"] } },
     { id: "palimpsests-universe", title: "Palimpsests Universe", kind: "universe", type: "Universe", status: "concept", maturity: "concept", confidence: "speculative", visibility: "public", temporality: { creationYear: "2026", creationDate: "2026-01-01", releaseDate: "", lastUpdated: "2026-06-17", era: "palimpsests" }, summary: "Narrative and symbolic universe of the Palimpsests cycle.", tags: ["Universe", "Palimpsests", "Lore"], relations: { relatedTo: ["palimpsests", "oreth", "anthropic-studies"] } },
-    { id: "null-universe", title: "Null Universe", kind: "universe", type: "Universe", status: "concept", maturity: "concept", confidence: "speculative", visibility: "public", temporality: { creationYear: "2026", creationDate: "2026-01-01", releaseDate: "", lastUpdated: "2026-06-17", era: "emergence" }, summary: "Narrative universe for null_underscore_human.", tags: ["Universe", "Identity", "Narrative"], relations: { relatedTo: ["null-underscore-human", "electronic-artefacts-universe"] } },
+    { id: "null-universe", title: "Null Universe", kind: "universe", type: "Universe", status: "concept", maturity: "concept", confidence: "speculative", visibility: "public", temporality: { creationYear: "2026", creationDate: "2026-01-01", releaseDate: "", lastUpdated: "2026-06-17", era: "emergence" }, summary: "Narrative universe for null_human.", tags: ["Universe", "Identity", "Narrative"], relations: { relatedTo: ["null-underscore-human", "electronic-artefacts-universe"] } },
   ],
 };
 
@@ -4156,15 +4156,7 @@ window.EA_SEARCH = {
     return null;
   };
 
-  const signalStrip = (item) => {
-    const signals = [item.status, item.category, ...(item.medium || []), ...(item.discipline || [])].filter(Boolean).slice(0, 6);
-    if (!signals.length) return "";
-    return `
-      <div class="card-signal" aria-hidden="true">
-        ${signals.map((signal, index) => `<span style="--signal-index:${index};" title="${esc(signal)}"></span>`).join("")}
-      </div>
-    `;
-  };
+  const signalStrip = () => "";
 
   const cardCopy = (text, lines = 2) => {
     if (!text) return "";
@@ -4427,22 +4419,57 @@ window.EA_SEARCH = {
     </article>
   `;
 
-  const personCard = (item, options = {}) => `
-    <article class="project-card" ${cardBaseAttrs(item)} ${cardLinkAttrs(entryHrefFor(item, options), options.label || `Open ${item.title}`)}>
-      ${cardOverlayLink(entryHrefFor(item, options), options.label || `Open ${item.title}`)}
-      <div class="project-card__top">
-        <div>
-          <p class="card__meta">${esc(item.type || "ARTIST")}</p>
-          <h3 class="card__title">${esc(item.title)}</h3>
+  const personCard = (item, options = {}) => {
+    const href = entryHrefFor(item, options);
+    if (options.variant === "collaborator") {
+      const initials = String(item.title || "")
+        .split(/[\s.]+/)
+        .filter(Boolean)
+        .slice(0, 2)
+        .map((part) => part[0])
+        .join("")
+        .toUpperCase();
+      const related = entityById(item.relations?.relatedTo?.[0] || item.relations?.parent?.[0]);
+      return `
+        <article class="project-card collaborator-card" ${cardBaseAttrs(item)} ${cardLinkAttrs(href, options.label || `Open ${item.title}`)}>
+          ${cardOverlayLink(href, options.label || `Open ${item.title}`)}
+          <div class="collaborator-card__header">
+            <span class="collaborator-card__index">${String((options.index || 0) + 1).padStart(2, "0")}</span>
+            <span class="collaborator-card__monogram" aria-hidden="true">${esc(initials)}</span>
+          </div>
+          <div class="collaborator-card__identity">
+            <p class="card__meta">${esc(item.subtitle || item.type || "Collaborator")}</p>
+            <h3 class="card__title">${esc(item.title)}</h3>
+            <p class="collaborator-card__role">${esc((item.discipline || []).slice(0, 3).join(" · "))}</p>
+          </div>
+          <p class="card__copy">${esc(item.description || item.summary || "")}</p>
+          <div class="collaborator-card__footer">
+            <div>
+              <span>Connected work</span>
+              <strong>${esc(related?.title || "Electronic Artefacts")}</strong>
+            </div>
+            <span class="collaborator-card__cta">View profile <span aria-hidden="true">↗</span></span>
+          </div>
+        </article>
+      `;
+    }
+    return `
+      <article class="project-card" ${cardBaseAttrs(item)} ${cardLinkAttrs(href, options.label || `Open ${item.title}`)}>
+        ${cardOverlayLink(href, options.label || `Open ${item.title}`)}
+        <div class="project-card__top">
+          <div>
+            <p class="card__meta">${esc(item.type || "ARTIST")}</p>
+            <h3 class="card__title">${esc(item.title)}</h3>
+          </div>
+          ${statusBadge(item.status, item.statusLabel)}
         </div>
-        ${statusBadge(item.status, item.statusLabel)}
-      </div>
-      ${cardCopy(item.summary, 1)}
-      ${signalStrip(item)}
-      ${summaryMetrics(item, "person")}
-      ${metadataList([{ label: "Kind", value: item.kind }])}
-    </article>
-  `;
+        ${cardCopy(item.summary, 1)}
+        ${signalStrip(item)}
+        ${summaryMetrics(item, "person")}
+        ${metadataList([{ label: "Kind", value: item.kind }])}
+      </article>
+    `;
+  };
 
   const programCard = (item, options = {}) => `
     <article class="program-card" ${cardBaseAttrs(item)} ${cardLinkAttrs(entryHrefFor(item, options), options.label || `Open ${item.title}`)}>
@@ -9780,8 +9807,12 @@ window.EA_SEARCH = {
                   </div>
                   <div class="card-grid card-grid--two work-card-grid">
                     ${group.items
-                      .map((item) => {
-                        if (item.kind === "artist") return personCard(item, { href: `./entity.html?id=${encodeURIComponent(item.id)}` });
+                      .map((item, index) => {
+                        if (item.kind === "artist") return personCard(item, {
+                          href: `./artist.html?id=${encodeURIComponent(item.id)}`,
+                          variant: group.label === "Collaborations" ? "collaborator" : "",
+                          index,
+                        });
                         if (item.kind === "program") return programCard(item, { href: `./entity.html?id=${encodeURIComponent(item.id)}` });
                         if (item.kind === "researchField") return researchCard(item, { href: `./entity.html?id=${encodeURIComponent(item.id)}` });
                         return projectCard(item);

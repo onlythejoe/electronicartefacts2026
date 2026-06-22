@@ -2937,8 +2937,12 @@
                   </div>
                   <div class="card-grid card-grid--two work-card-grid">
                     ${group.items
-                      .map((item) => {
-                        if (item.kind === "artist") return personCard(item, { href: `./entity.html?id=${encodeURIComponent(item.id)}` });
+                      .map((item, index) => {
+                        if (item.kind === "artist") return personCard(item, {
+                          href: `./artist.html?id=${encodeURIComponent(item.id)}`,
+                          variant: group.label === "Collaborations" ? "collaborator" : "",
+                          index,
+                        });
                         if (item.kind === "program") return programCard(item, { href: `./entity.html?id=${encodeURIComponent(item.id)}` });
                         if (item.kind === "researchField") return researchCard(item, { href: `./entity.html?id=${encodeURIComponent(item.id)}` });
                         return projectCard(item);

@@ -2317,7 +2317,7 @@ window.EA_ENTITIES = {
     },
     {
       id: "null-underscore-human",
-      title: "null_underscore_human",
+      title: "null_human",
       subtitle: "Artistic Identity Project",
       kind: "project",
       type: "Narrative Project",
@@ -2340,7 +2340,7 @@ window.EA_ENTITIES = {
       description:
         "Experimental artistic identity project combining storytelling, performance, visual experimentation, social media narratives and speculative worldbuilding.",
       summary: "Speculative artistic identity project.",
-      tags: ["null_underscore_human", "Identity", "Worldbuilding", "Performance"],
+      tags: ["null_human", "Identity", "Worldbuilding", "Performance"],
       architecture: {
         surface: "Identity and narrative project",
         stack: "Story fragments, visual tests, social narratives and speculative worldbuilding.",
@@ -3002,6 +3002,6 @@ window.EA_ENTITIES = {
   worldbuilding: [
     { id: "electronic-artefacts-universe", title: "Electronic Artefacts Universe", kind: "universe", type: "Universe", status: "concept", maturity: "concept", confidence: "speculative", visibility: "internal", temporality: { creationYear: "2026", creationDate: "2026-01-01", releaseDate: "", lastUpdated: "2026-06-17", era: "foundation" }, summary: "Meta-universe connecting major Electronic Artefacts projects.", tags: ["Universe", "Meta", "Electronic Artefacts"], relations: { relatedTo: ["electronic-artefacts", "palimpsests", "unionmob", "creativestuff"] } },
     { id: "palimpsests-universe", title: "Palimpsests Universe", kind: "universe", type: "Universe", status: "concept", maturity: "concept", confidence: "speculative", visibility: "public", temporality: { creationYear: "2026", creationDate: "2026-01-01", releaseDate: "", lastUpdated: "2026-06-17", era: "palimpsests" }, summary: "Narrative and symbolic universe of the Palimpsests cycle.", tags: ["Universe", "Palimpsests", "Lore"], relations: { relatedTo: ["palimpsests", "oreth", "anthropic-studies"] } },
-    { id: "null-universe", title: "Null Universe", kind: "universe", type: "Universe", status: "concept", maturity: "concept", confidence: "speculative", visibility: "public", temporality: { creationYear: "2026", creationDate: "2026-01-01", releaseDate: "", lastUpdated: "2026-06-17", era: "emergence" }, summary: "Narrative universe for null_underscore_human.", tags: ["Universe", "Identity", "Narrative"], relations: { relatedTo: ["null-underscore-human", "electronic-artefacts-universe"] } },
+    { id: "null-universe", title: "Null Universe", kind: "universe", type: "Universe", status: "concept", maturity: "concept", confidence: "speculative", visibility: "public", temporality: { creationYear: "2026", creationDate: "2026-01-01", releaseDate: "", lastUpdated: "2026-06-17", era: "emergence" }, summary: "Narrative universe for null_human.", tags: ["Universe", "Identity", "Narrative"], relations: { relatedTo: ["null-underscore-human", "electronic-artefacts-universe"] } },
   ],
 };

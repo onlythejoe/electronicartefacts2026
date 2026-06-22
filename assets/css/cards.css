@@ -113,11 +113,7 @@
 }
 
 .program-registry-card::before {
-  opacity: 0.42;
-  background:
-    linear-gradient(90deg, rgba(var(--project-rgb), 0.24), transparent 0.42rem),
-    radial-gradient(circle at 12% 0%, rgba(var(--project-rgb), 0.16), transparent 34%),
-    linear-gradient(135deg, rgba(var(--project-rgb), 0.08), transparent 42%);
+  display: none;
 }
 
 .program-registry-card:hover,
@@ -223,7 +219,7 @@
 }
 
 .research-dossier-card::before {
-  opacity: 0.4;
+  display: none;
 }
 
 .research-dossier-card:hover,

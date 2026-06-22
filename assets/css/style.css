@@ -577,6 +577,19 @@
   align-content: start;
 }
 
+.selected-works-card::before {
+  display: none;
+}
+
+.selected-works-card .project-card__editorial-note {
+  border-left: 0;
+  background: rgba(255, 255, 255, 0.055);
+}
+
+.selected-works-panel__info .metric-pill i {
+  display: none;
+}
+
 .selected-works-card .card__meta,
 .selected-works-card .card__title,
 .selected-works-card .card__copy,
@@ -677,6 +690,127 @@
 
 .selected-works-panel__links {
   justify-content: flex-start;
+}
+
+.collaborator-card {
+  --project-rgb: 228, 213, 196;
+  gap: 1.15rem;
+  min-height: clamp(24rem, 34vw, 31rem);
+  padding: clamp(1.25rem, 2.4vw, 1.8rem);
+  border-color: rgba(228, 213, 196, 0.2);
+  background:
+    radial-gradient(circle at 82% 12%, rgba(228, 213, 196, 0.13), transparent 28%),
+    linear-gradient(145deg, rgba(255, 255, 255, 0.07), rgba(255, 255, 255, 0.012) 58%),
+    rgba(255, 255, 255, 0.016);
+}
+
+.collaborator-card::before {
+  display: none;
+}
+
+.collaborator-card__header,
+.collaborator-card__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.collaborator-card__index {
+  color: rgba(247, 244, 239, 0.42);
+  font-size: 0.72rem;
+  font-weight: 820;
+  letter-spacing: 0.16em;
+}
+
+.collaborator-card__monogram {
+  display: grid;
+  place-items: center;
+  width: 3.5rem;
+  height: 3.5rem;
+  border: 1px solid rgba(228, 213, 196, 0.26);
+  border-radius: 50%;
+  background:
+    linear-gradient(145deg, rgba(228, 213, 196, 0.18), rgba(255, 255, 255, 0.025)),
+    rgba(255, 255, 255, 0.02);
+  color: var(--text);
+  font-size: 0.88rem;
+  font-weight: 850;
+  letter-spacing: 0.08em;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.08);
+}
+
+.collaborator-card__identity {
+  display: grid;
+  gap: 0.25rem;
+  padding-block: clamp(0.4rem, 2vw, 1.3rem);
+}
+
+.collaborator-card__identity .card__title {
+  max-width: 12ch;
+  font-size: clamp(1.85rem, 4vw, 3.25rem);
+  line-height: 0.96;
+  letter-spacing: -0.035em;
+}
+
+.collaborator-card__role {
+  margin: 0.25rem 0 0;
+  color: rgba(228, 213, 196, 0.72);
+  font-size: 0.72rem;
+  font-weight: 780;
+  letter-spacing: 0.11em;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+.collaborator-card > .card__copy {
+  max-width: 34rem;
+  color: rgba(247, 244, 239, 0.7);
+  font-size: clamp(0.95rem, 1.4vw, 1.08rem);
+  line-height: 1.62;
+}
+
+.collaborator-card__footer {
+  align-self: end;
+  margin-top: auto;
+  padding-top: 1rem;
+  border-top: 1px solid rgba(228, 213, 196, 0.14);
+}
+
+.collaborator-card__footer > div {
+  display: grid;
+  gap: 0.18rem;
+}
+
+.collaborator-card__footer span {
+  color: rgba(247, 244, 239, 0.46);
+  font-size: 0.66rem;
+  font-weight: 780;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.collaborator-card__footer strong {
+  color: var(--text);
+  font-size: 0.92rem;
+  line-height: 1.2;
+}
+
+.collaborator-card__footer .collaborator-card__cta {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  color: rgba(247, 244, 239, 0.82);
+  white-space: nowrap;
+}
+
+.collaborator-card:hover,
+.collaborator-card:focus-within {
+  border-color: rgba(228, 213, 196, 0.34);
+  background:
+    radial-gradient(circle at 82% 12%, rgba(228, 213, 196, 0.17), transparent 30%),
+    linear-gradient(145deg, rgba(255, 255, 255, 0.085), rgba(255, 255, 255, 0.016) 58%),
+    rgba(255, 255, 255, 0.02);
 }
 
 @media (max-width: 64rem) {
@@ -1595,6 +1729,11 @@
   scroll-margin-top: 1rem;
 }
 
+[data-render="research-fields"] {
+  display: grid;
+  gap: var(--section-stack-gap);
+}
+
 #research-programs,
 #research-notes {
   scroll-margin-top: 1rem;
@@ -2174,6 +2313,12 @@
   transition:
     opacity 180ms ease,
     transform 180ms ease;
+}
+
+.project-card:not([data-card-media="true"])::before,
+.program-card:not([data-card-media="true"])::before,
+.archive-card:not([data-card-media="true"])::before {
+  display: none;
 }
 
 .project-card:hover::before,
@@ -3965,12 +4110,10 @@ input:focus-visible {
     padding: 0.18rem var(--gutter) 0.12rem;
     width: 100%;
     border-radius: 0;
-    background:
-      linear-gradient(90deg, rgba(8, 8, 10, 0.84), rgba(8, 8, 10, 0.42) 42%, rgba(8, 8, 10, 0.2)),
-      rgba(255, 255, 255, 0.018);
-    box-shadow: 0 -1px 0 rgba(255, 255, 255, 0.045) inset;
-    backdrop-filter: blur(18px) saturate(135%);
-    -webkit-backdrop-filter: blur(18px) saturate(135%);
+    background: transparent;
+    box-shadow: none;
+    backdrop-filter: none;
+    -webkit-backdrop-filter: none;
     scrollbar-width: thin;
     -webkit-overflow-scrolling: touch;
   }

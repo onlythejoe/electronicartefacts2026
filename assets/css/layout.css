@@ -151,11 +151,29 @@
 .project-card .pill-cloud,
 .program-card .pill-cloud,
 .archive-card .pill-cloud,
-.panel .pill-cloud {
+.panel .pill-cloud,
+.taxonomy-column .pill-cloud,
+.archive-card__chips .tag-cluster {
   flex-wrap: nowrap;
   overflow-x: auto;
   overflow-y: hidden;
-  scrollbar-width: thin;
+  padding-inline: 0.45rem;
+  scroll-padding-inline: 1.2rem;
+  scrollbar-width: none;
+  mask-image: linear-gradient(
+    90deg,
+    transparent 0,
+    black 1.2rem,
+    black calc(100% - 1.2rem),
+    transparent 100%
+  );
+  -webkit-mask-image: linear-gradient(
+    90deg,
+    transparent 0,
+    black 1.2rem,
+    black calc(100% - 1.2rem),
+    transparent 100%
+  );
   -webkit-overflow-scrolling: touch;
 }
 
@@ -166,20 +184,12 @@
 .project-card .pill-cloud::-webkit-scrollbar,
 .program-card .pill-cloud::-webkit-scrollbar,
 .archive-card .pill-cloud::-webkit-scrollbar,
-.panel .pill-cloud::-webkit-scrollbar {
-  height: 0.3rem;
-}
-
-.project-card .tag-cluster::-webkit-scrollbar-thumb,
-.program-card .tag-cluster::-webkit-scrollbar-thumb,
-.archive-card .tag-cluster::-webkit-scrollbar-thumb,
-.panel .tag-cluster::-webkit-scrollbar-thumb,
-.project-card .pill-cloud::-webkit-scrollbar-thumb,
-.program-card .pill-cloud::-webkit-scrollbar-thumb,
-.archive-card .pill-cloud::-webkit-scrollbar-thumb,
-.panel .pill-cloud::-webkit-scrollbar-thumb {
-  background: rgba(255, 255, 255, 0.16);
-  border-radius: 999px;
+.panel .pill-cloud::-webkit-scrollbar,
+.taxonomy-column .pill-cloud::-webkit-scrollbar,
+.archive-card__chips .tag-cluster::-webkit-scrollbar {
+  display: none;
+  width: 0;
+  height: 0;
 }
 
 .project-card .tag-cluster .chip,
