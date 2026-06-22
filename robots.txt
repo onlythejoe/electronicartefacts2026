@@ -3,3 +3,5 @@ Allow: /
 
 # Search results are intentionally kept out of the index.
 Disallow: /search.html
+
+Sitemap: https://electronicartefacts.com/sitemap.xml

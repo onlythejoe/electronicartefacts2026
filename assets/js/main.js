@@ -121,7 +121,7 @@
       {
         label: "Visibility",
         key: "visibility",
-        options: ["all", "Public", "Internal", "Archive", "Restricted"].map((value) => ({
+        options: ["all", "Public", "Archive"].map((value) => ({
           value,
           label: value === "all" ? "All" : value,
           active: value === "all",
@@ -386,7 +386,7 @@
         {
           label: "Visibility",
           key: "visibility",
-          options: ["all", "Public", "Internal", "Archive", "Restricted"].map((value) => ({
+          options: ["all", "Public", "Archive"].map((value) => ({
             value,
             label: value === "all" ? "All" : value,
             active: value === "all",
@@ -1947,7 +1947,7 @@
     </section>
   `;
 
-  const searchState = { query: "", status: "all", kind: "all" };
+  const searchState = { query: "", status: "all", kind: "all", page: 1, pageSize: 12 };
   const getSearchIndex = () => catalog.indexes?.getSearchIndex?.() || catalog.indexes?.search || [];
   const searchResultOrder = ["program", "project", "artefact", "researchLog", "researchField", "collection", "artist", "channel", "worldbuilding"];
 
@@ -1956,6 +1956,8 @@
     const query = searchState.query;
     const status = searchState.status;
     const kind = searchState.kind;
+    const hasActiveSearch = Boolean(query) || status !== "all" || kind !== "all";
+    if (!hasActiveSearch) return [];
     return searchIndex.filter((item) => {
       if (status !== "all" && item.status !== status) return false;
       if (kind !== "all" && item.kind !== kind) return false;
@@ -2111,15 +2113,29 @@
   };
 
   const overviewStats = () => {
-    const items = sortOverviewItems(filteredSearchItems()).map((item) => entityById(item.id) || item).filter(Boolean);
+    const allItems = sortOverviewItems(filteredSearchItems()).map((item) => entityById(item.id) || item).filter(Boolean);
+    const items = allItems.slice(0, searchState.page * searchState.pageSize);
     const tagCount = items.reduce((total, item) => total + collectOverviewTags(item).length, 0);
     const blockCount = items.reduce((total, item) => total + collectOverviewBlocks(item).length, 0);
     const totalCount = catalog.indexes?.entities?.length || items.length || 1;
-    return { items, tagCount, blockCount, totalCount };
+    return { items, tagCount, blockCount, totalCount, matchCount: allItems.length };
   };
 
   const searchOverviewMarkup = () => {
-    const { items, tagCount, blockCount, totalCount } = overviewStats();
+    const hasActiveSearch = Boolean(searchState.query) || searchState.status !== "all" || searchState.kind !== "all";
+    if (!hasActiveSearch) {
+      return `
+        <section class="zone-card hero catalog-overview catalog-overview--idle">
+          <div class="section-head">
+            <p class="eyebrow">SEARCH READY</p>
+            <h2>Enter a subject, project or program.</h2>
+            <p class="lede">Results appear after you type or select a filter. This keeps the full archive out of the initial page.</p>
+          </div>
+        </section>
+      `;
+    }
+
+    const { items, tagCount, blockCount, totalCount, matchCount } = overviewStats();
     if (!items.length) {
       return `
         <section class="zone-card hero catalog-overview">
@@ -2136,14 +2152,14 @@
       <section class="zone-card hero catalog-overview">
         <div class="section-head">
           <p class="eyebrow">CATALOG MATRIX</p>
-          <h2>${esc(items.length)} elements in view</h2>
-          <p class="lede">Works, tags and context are gathered together for a clear view of the archive.</p>
+          <h2>${esc(matchCount)} ${matchCount === 1 ? "result" : "results"}</h2>
+          <p class="lede">Showing ${esc(items.length)} concise entries. Open an item for the complete record.</p>
         </div>
         ${metricRail(
           [
-            { label: "ELEMENTS", value: String(items.length), note: "visible rows", fill: metricFill(items.length, totalCount), tone: "live" },
-            { label: "TAGS", value: String(tagCount), note: "all chips", fill: metricFill(tagCount, Math.max(tagCount, 1) * 2), tone: "visual" },
-            { label: "CONTENTS", value: String(blockCount), note: "text blocks", fill: metricFill(blockCount, Math.max(blockCount, 1) * 2), tone: "archive" },
+            { label: "MATCHES", value: String(matchCount), note: "public records", fill: metricFill(matchCount, totalCount), tone: "live" },
+            { label: "SHOWN", value: String(items.length), note: "current page", fill: metricFill(items.length, Math.max(matchCount, 1)), tone: "visual" },
+            { label: "TAGS", value: String(tagCount), note: "visible labels", fill: metricFill(tagCount, Math.max(tagCount, 1) * 2), tone: "archive" },
           ],
           { limit: 3, compact: true },
         )}
@@ -2163,8 +2179,8 @@
               ${items
                 .map((item) => {
                   const titleHref = entryHref(item);
-                  const contentBlocks = collectOverviewBlocks(item);
-                  const tags = collectOverviewTags(item);
+                  const contentBlocks = collectOverviewBlocks(item).slice(0, 2);
+                  const tags = collectOverviewTags(item).slice(0, 6);
                   const typeLabel = esc(catalog.taxonomies?.entityTypes?.[item.kind] || item.kind || "Piece");
                   const year = item.temporality?.creationYear || item.temporality?.releaseDate || String(item.temporality?.lastUpdated || "").slice(0, 4) || "Undated";
                   const visibilityLabel = catalog.taxonomies?.visibility?.[item.visibility]?.label || item.visibility || "Not specified";
@@ -2217,6 +2233,15 @@
             </tbody>
           </table>
         </div>
+        ${
+          items.length < matchCount
+            ? `<div class="catalog-overview__more">
+                <button class="button button--secondary" type="button" data-search-more>
+                  Show ${esc(Math.min(searchState.pageSize, matchCount - items.length))} more
+                </button>
+              </div>`
+            : ""
+        }
       </section>
     `;
   };
@@ -2247,8 +2272,8 @@
         </div>
         <div class="taxonomy-grid">
           <div class="taxonomy-column">
-            <p class="card__meta">Query</p>
-            <input class="search-input" type="search" data-search-input placeholder="Search title, text or tags..." />
+            <label class="card__meta" for="knowledge-search-input">Query</label>
+            <input id="knowledge-search-input" class="search-input" type="search" data-search-input placeholder="Search title, text or tags..." autocomplete="off" />
           </div>
           <div class="taxonomy-column">
             <p class="card__meta">Status</p>
@@ -2516,19 +2541,39 @@
     const relationshipColumns = [
       {
         title: "VASTE",
+        role: "Runtime and knowledge infrastructure",
+        copy: "The core runtime coordinates graph execution, identity, context and long-lived knowledge structures.",
         nodes: ["Knowledge Systems", "Identity Systems", "Simulation Systems", "Runtime Research"],
+        exchanges: ["Powers Vestiges", "Informs UnionMob", "Feeds Forge"],
+        href: "https://www.vaste.space/",
+        linkLabel: "Explore VASTE",
       },
       {
         title: "FORGE",
+        role: "Artefact production and transformation",
+        copy: "Forge studies how shared pipelines can generate, inherit, evaluate and refine many families of digital artefacts.",
         nodes: ["Artifact Pipelines", "Genome Systems", "Automated Refinement", "Creative Production Research"],
+        exchanges: ["Consumes runtime context", "Produces artefacts", "Returns production evidence"],
+        href: "./program.html?id=forge",
+        linkLabel: "Open Forge",
       },
       {
         title: "VOID",
+        role: "Archived experimental foundation",
+        copy: "VOID preserves early experiments in modular architecture and creative computation without acting as the centre of the current stack.",
         nodes: ["Experimental Architectures", "Creative Computing Research"],
+        exchanges: ["Historical precedent", "Research vocabulary", "Archived decisions"],
+        href: "./entity.html?id=void",
+        linkLabel: "Open archive field",
       },
       {
         title: "OracleHub",
+        role: "Distributed data and prediction lineage",
+        copy: "OracleHub explored asynchronous workers, specialised oracle entities and dynamic data pipelines later generalised elsewhere.",
         nodes: ["Distributed Predictions", "Oracle Systems", "Data Pipelines"],
+        exchanges: ["Supplies data patterns", "Preserves distributed lineage", "Informs runtime design"],
+        href: "./program.html?id=oraclehub",
+        linkLabel: "Open OracleHub",
       },
     ];
 
@@ -2627,19 +2672,58 @@
       <section class="zone-card hero">
         <div class="section-head">
           <p class="eyebrow">PROGRAM RELATIONSHIPS</p>
-          <h2>Electronic Artefacts</h2>
-          <p class="lede">Four software directions, one stack.</p>
+          <h2>How the programs exchange responsibilities.</h2>
+          <p class="lede">The stack is not a hierarchy of interchangeable tools. Each program owns a different problem, preserves a different lineage and passes useful context to the others.</p>
         </div>
-        <div class="relationship-graph">
-          <div class="graph-root">Electronic Artefacts</div>
-          <div class="graph-columns">
+        <div class="program-stack-flow" aria-label="Program exchange flow">
+          <span>Research questions</span>
+          <i aria-hidden="true">→</i>
+          <span>Runtime context</span>
+          <i aria-hidden="true">→</i>
+          <span>Production systems</span>
+          <i aria-hidden="true">→</i>
+          <span>Projects and evidence</span>
+        </div>
+        <div class="program-stack-map">
+          <div class="program-stack-map__core">
+            <p class="card__meta">Shared context</p>
+            <strong>Electronic Artefacts</strong>
+            <span>Research, programs, projects and archive remain connected through explicit lineage.</span>
+          </div>
+          <div class="program-stack-map__list">
             ${relationshipColumns
               .map(
-                (column) => `
-                  <div class="graph-column">
-                    <p class="card__meta">${esc(column.title)}</p>
-                    ${column.nodes.map((node) => `<div class="graph-node">${esc(node)}</div>`).join("")}
-                  </div>
+                (column, index) => `
+                  <details class="program-stack-card"${index === 0 ? " open" : ""}>
+                    <summary>
+                      <span class="program-stack-card__number">0${index + 1}</span>
+                      <span class="program-stack-card__identity">
+                        <strong>${esc(column.title)}</strong>
+                        <small>${esc(column.role)}</small>
+                      </span>
+                      <span class="program-stack-card__toggle" aria-hidden="true">+</span>
+                    </summary>
+                    <div class="program-stack-card__body">
+                      <p>${esc(column.copy)}</p>
+                      <div class="program-stack-card__grid">
+                        <div>
+                          <span class="card__meta">Responsibilities</span>
+                          <div class="tag-cluster tag-cluster--compact">
+                            ${column.nodes.map((node) => chip(node)).join("")}
+                          </div>
+                        </div>
+                        <div>
+                          <span class="card__meta">Exchanges</span>
+                          <ul>
+                            ${column.exchanges.map((exchange) => `<li>${esc(exchange)}</li>`).join("")}
+                          </ul>
+                        </div>
+                      </div>
+                      <div class="link-row">
+                        <a class="tag" href="${esc(column.href)}"${column.href.startsWith("http") ? ' target="_blank" rel="noreferrer"' : ""}>${esc(column.linkLabel)}</a>
+                      </div>
+                    </div>
+                  </details>
                 `,
               )
               .join("")}

@@ -513,7 +513,7 @@
   `;
 
   const projectLandingCard = (item) => `
-    <article class="project-card${item.id === "oeil-de-meg" ? " project-card--oeil-de-meg" : ""}" data-project-detail-link="${esc(entryHrefFor(item))}" tabindex="0" role="link" aria-label="Open ${esc(item.title)} detail" ${cardBaseAttrs(item)}>
+    <article class="project-card${item.id === "oeil-de-meg" ? " project-card--oeil-de-meg" : ""}" data-project-detail-link="${esc(entryHrefFor(item))}" aria-label="Open ${esc(item.title)} detail" ${cardBaseAttrs(item)}>
       <a class="project-card__overlay-link" href="${esc(entryHrefFor(item))}" aria-label="Open ${esc(item.title)} detail"></a>
       <div class="project-card__top">
         <div>

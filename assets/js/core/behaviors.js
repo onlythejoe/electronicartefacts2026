@@ -115,6 +115,7 @@
           const nextQuery = input.value.trim().toLowerCase();
           if (nextQuery === searchState.query) return;
           searchState.query = nextQuery;
+          searchState.page = 1;
           scheduleRerender();
         });
       }
@@ -127,6 +128,7 @@
         const nextStatus = chip.getAttribute("data-value") || "all";
         if (nextStatus === searchState.status) return;
         searchState.status = nextStatus;
+        searchState.page = 1;
         syncToggleGroup("[data-search-status-chip]", searchState.status);
         scheduleRerender();
       });
@@ -139,6 +141,7 @@
         const nextKind = chip.getAttribute("data-value") || "all";
         if (nextKind === searchState.kind) return;
         searchState.kind = nextKind;
+        searchState.page = 1;
         syncToggleGroup("[data-search-kind-chip]", searchState.kind);
         scheduleRerender();
       });
@@ -146,6 +149,16 @@
 
     syncToggleGroup("[data-search-status-chip]", searchState.status);
     syncToggleGroup("[data-search-kind-chip]", searchState.kind);
+
+    if (document.body.dataset.boundSearchMore !== "true") {
+      document.body.dataset.boundSearchMore = "true";
+      document.addEventListener("click", (event) => {
+        const button = event.target.closest("[data-search-more]");
+        if (!button) return;
+        searchState.page += 1;
+        rerender();
+      });
+    }
   };
 
   const initCardLinks = () => {
@@ -162,13 +175,6 @@
       navigate(card.getAttribute("data-project-detail-link") || card.getAttribute("data-card-link"));
     });
 
-    document.addEventListener("keydown", (event) => {
-      if (event.key !== "Enter" && event.key !== " ") return;
-      const card = event.target.closest("[data-project-detail-link], [data-card-link]");
-      if (!card || event.target.closest("a,button,input,select,textarea,label,.taxonomy-pill")) return;
-      event.preventDefault();
-      navigate(card.getAttribute("data-project-detail-link") || card.getAttribute("data-card-link"));
-    });
   };
 
   const makeEntryHref = (item) => {
@@ -667,19 +673,6 @@
     root.querySelectorAll(".taxonomy-pill").forEach((pill) => {
       if (pill.dataset.boundTaxonomyPill === "true") return;
       pill.dataset.boundTaxonomyPill = "true";
-      const toggle = (event) => {
-        event?.preventDefault();
-        event?.stopPropagation();
-        const picked = !pill.classList.contains("is-picked");
-        pill.classList.toggle("is-picked", picked);
-        pill.setAttribute("aria-pressed", picked ? "true" : "false");
-        pill.closest(".project-card, .program-card, .archive-card, .panel")?.classList.toggle("has-picked-taxonomy", picked);
-      };
-      pill.addEventListener("click", toggle);
-      pill.addEventListener("keydown", (event) => {
-        if (event.key !== "Enter" && event.key !== " ") return;
-        toggle(event);
-      });
     });
   };
 

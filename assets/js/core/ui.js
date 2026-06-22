@@ -28,7 +28,7 @@
   };
 
   const chip = (text, extraClass = "") =>
-    `<span class="chip taxonomy-pill taxonomy-pill--${esc(taxonomyTone(text))} ${esc(extraClass)}" data-taxonomy-tone="${esc(taxonomyTone(text))}" tabindex="0" role="button" aria-pressed="false">${esc(text)}</span>`;
+    `<span class="chip taxonomy-pill taxonomy-pill--${esc(taxonomyTone(text))} ${esc(extraClass)}" data-taxonomy-tone="${esc(taxonomyTone(text))}">${esc(text)}</span>`;
 
   const tagRow = (items, options = {}) => {
     if (!items || !items.length) return "";
@@ -99,8 +99,6 @@
     href
       ? `
       data-card-link="${esc(href)}"
-      tabindex="0"
-      role="link"
       aria-label="${esc(label || "Open card")}"
     `
       : "";

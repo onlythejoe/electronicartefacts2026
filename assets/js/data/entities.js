@@ -1705,8 +1705,8 @@ window.EA_ENTITIES = {
         gallery: [
           { src: "./assets/media/projects/palimpsests/logo.jpg", alt: "Palimpsests logo image", caption: "Wordmark used as a neutral project cover." },
           { src: "./assets/media/projects/palimpsests/palimpsests.jpg", alt: "Palimpsests album cover", caption: "Album cover visual." },
-          { src: "./assets/media/projects/palimpsests/P1288505.png.jpg", alt: "Palimpsests architectural detail", caption: "A structural image read as a material trace." },
-          { src: "./assets/media/projects/palimpsests/P1288759-edit.jpg", alt: "Palimpsests portrait image", caption: "Portrait image used as an expressive dossier plate." },
+          { src: "./assets/media/projects/palimpsests/P1288505-1200.webp", alt: "Palimpsests architectural detail", caption: "A structural image read as a material trace." },
+          { src: "./assets/media/projects/palimpsests/P1288759-edit-1800.webp", alt: "Palimpsests portrait image", caption: "Portrait image used as an expressive dossier plate." },
         ],
       },
       architecture: {
@@ -2184,7 +2184,7 @@ window.EA_ENTITIES = {
             caption: "Detailed mobile performance snapshot.",
           },
           {
-            src: "./assets/media/projects/oeil-de-meg/oeil-de-meg-recording-2026-02-24.mp4",
+            src: "./assets/media/projects/oeil-de-meg/oeil-de-meg-recording-2026-02-24-web.mp4",
             alt: "Screen recording of the L’Œil de Meg site",
             caption: "Screen recording of the live experience.",
             mediaType: "video",

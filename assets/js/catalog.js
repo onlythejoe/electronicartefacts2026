@@ -11,6 +11,7 @@
       .replace(/['’]/g, "")
       .replace(/[^a-z0-9]+/g, "-")
       .replace(/^-+|-+$/g, "");
+  const isPublic = (item) => !["internal", "restricted"].includes(item?.visibility);
 
   const flattenEntities = () =>
     [
@@ -29,10 +30,12 @@
         summary: item.summary || "",
         visibility: item.visibility || "public",
       })),
-    ].map((item) => ({
+    ]
+      .filter(isPublic)
+      .map((item) => ({
       ...item,
       titleSlug: normalizeTitle(item.title),
-    }));
+      }));
 
   const allEntities = flattenEntities();
   const byId = Object.fromEntries(allEntities.map((item) => [item.id, item]));
@@ -83,14 +86,14 @@
     activity,
     collections,
     indexes,
-    programs: entities.programs || [],
-    artists: entities.artists || [],
-    projects: entities.projects || [],
-    artefacts: entities.artefacts || [],
-    channels: entities.channels || [],
-    researchFields: entities.researchFields || [],
-    researchLogs: entities.researchLogs || [],
-    worldbuilding: entities.worldbuilding || [],
+    programs: (entities.programs || []).filter(isPublic),
+    artists: (entities.artists || []).filter(isPublic),
+    projects: (entities.projects || []).filter(isPublic),
+    artefacts: (entities.artefacts || []).filter(isPublic),
+    channels: (entities.channels || []).filter(isPublic),
+    researchFields: (entities.researchFields || []).filter(isPublic),
+    researchLogs: (entities.researchLogs || []).filter(isPublic),
+    worldbuilding: (entities.worldbuilding || []).filter(isPublic),
     schema: {
       status: Object.keys(taxonomies.statuses || {}),
       entityTypes: Object.keys(taxonomies.entityTypes || {}),
