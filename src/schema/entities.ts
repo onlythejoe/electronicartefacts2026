@@ -60,6 +60,11 @@ export interface ProjectEntity extends BaseEntity {
   outcomes?: string[];
   evidence: EntityRef[];
   credits: AgentRef[];
+  visualLanguage?: string[];
+  textures?: string[];
+  symbols?: string[];
+  developmentFocus?: string[];
+  marketingFocus?: string[];
 }
 
 export interface ProgramEntity extends BaseEntity {

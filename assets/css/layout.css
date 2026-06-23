@@ -41,11 +41,12 @@ section[data-render] {
   top: clamp(0.85rem, 1.5vw, 1.25rem);
   left: var(--gutter);
   right: var(--gutter);
-  z-index: 1200;
+  z-index: 2000;
   display: grid;
-  grid-template-columns: minmax(12rem, 0.7fr) minmax(0, 2.2fr);
+  grid-template-columns: minmax(10.5rem, 0.55fr) minmax(0, 2.45fr);
   gap: 1rem;
   align-items: center;
+  isolation: isolate;
   contain: layout paint;
   backface-visibility: hidden;
   transform: translate3d(0, 0, 0);
@@ -71,11 +72,13 @@ section[data-render] {
 
 .site-nav {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   justify-content: flex-end;
   gap: 0.5rem;
   padding-inline: var(--scroll-rail-padding);
   min-width: 0;
+  overflow-x: auto;
+  overflow-y: hidden;
 }
 
 .site-nav,

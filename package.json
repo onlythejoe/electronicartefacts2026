@@ -4,8 +4,9 @@
   "scripts": {
     "build": "npm run validate && tsx scripts/build-site.ts && node scripts/build-assets.mjs",
     "validate": "tsx scripts/validate-content.ts",
+    "typecheck": "tsc --noEmit",
     "test": "node --import tsx --test tests/*.test.ts",
-    "check": "npm run validate && npm test && npm run build"
+    "check": "npm run validate && npm run typecheck && npm test && npm run build"
   },
   "dependencies": {
     "fast-glob": "3.3.3",

@@ -111,6 +111,11 @@ const project = base.extend({
   outcomes: z.array(z.string()).optional(),
   evidence: z.array(ref),
   credits: z.array(agentRef).min(1),
+  visualLanguage: z.array(z.string()).optional(),
+  textures: z.array(z.string()).optional(),
+  symbols: z.array(z.string()).optional(),
+  developmentFocus: z.array(z.string()).optional(),
+  marketingFocus: z.array(z.string()).optional(),
 });
 const publication = base.extend({
   type: z.literal("publication"),

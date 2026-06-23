@@ -49,6 +49,18 @@ media:
     src: /assets/media/projects/vestiges/logo-vestiges.png
     alt: Vestiges monogram
     caption: Vestiges identity.
+visualLanguage:
+  - Black
+  - White
+  - Ivory
+textures:
+  - Knowledge graph
+  - Cultural archive
+  - Precision
+symbols:
+  - Monogram
+  - Trace
+  - Living knowledge
 tags:
   - Vestiges
   - VASTE

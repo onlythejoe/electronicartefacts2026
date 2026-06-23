@@ -13,20 +13,22 @@
 }
 
 .site-nav a {
+  flex: 0 1 auto;
   max-width: 100%;
-  min-height: 2.55rem;
-  padding: 0.55rem 0.9rem;
+  min-height: 2.45rem;
+  padding: 0.5rem 0.72rem;
   border-radius: 999px;
   border: 1px solid var(--border);
   background: rgba(255, 255, 255, 0.02);
   color: var(--muted);
-  font-size: 0.8rem;
+  font-size: 0.74rem;
   font-weight: 800;
-  letter-spacing: 0.12em;
+  letter-spacing: 0.105em;
   line-height: 1.12;
   overflow-wrap: anywhere;
   text-align: center;
   text-transform: uppercase;
+  white-space: nowrap;
   transition:
     transform 180ms ease,
     border-color 180ms ease,
@@ -352,6 +354,13 @@
   background: rgba(255, 255, 255, 0.014);
 }
 
+.taxonomy-panel__quick-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.75rem;
+  min-width: 0;
+}
+
 .taxonomy-panel__drawer {
   display: grid;
   gap: 0.85rem;
@@ -427,6 +436,10 @@
   background: rgba(255, 255, 255, 0.02);
 }
 
+.taxonomy-panel__drawer:not([open]) > .taxonomy-grid {
+  display: none;
+}
+
 .taxonomy-column .pill-cloud {
   flex-wrap: nowrap;
   overflow-x: auto;
@@ -456,17 +469,105 @@
   align-content: start;
 }
 
-.taxonomy-panel--archive .taxonomy-grid {
-  display: block;
-  column-count: 2;
-  column-gap: 1rem;
+.taxonomy-panel--archive {
+  gap: clamp(0.82rem, 1.5vw, 1.15rem);
+  overflow: hidden;
+  background:
+    radial-gradient(circle at 82% 8%, rgba(247, 244, 239, 0.075), transparent 28%),
+    radial-gradient(circle at 18% 0%, rgba(125, 211, 252, 0.055), transparent 24%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.038), rgba(255, 255, 255, 0.012)),
+    rgba(255, 255, 255, 0.014);
+}
+
+.taxonomy-panel--archive .taxonomy-panel__head {
+  max-width: 52rem;
+  gap: 0.44rem;
+}
+
+.taxonomy-panel--archive .taxonomy-panel__head h2 {
+  max-width: 15ch;
+}
+
+.taxonomy-panel--archive .taxonomy-panel__head .lede {
+  max-width: 42rem;
 }
 
 .taxonomy-panel--archive .taxonomy-column {
-  break-inside: avoid;
-  display: grid;
+  gap: 0.58rem;
   width: 100%;
-  margin: 0 0 1rem;
+  margin: 0;
+  padding: clamp(0.72rem, 1.35vw, 0.98rem);
+  border-color: rgba(247, 244, 239, 0.11);
+  border-radius: calc(var(--radius-md) + 0.12rem);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.042), rgba(255, 255, 255, 0.012)),
+    rgba(255, 255, 255, 0.012);
+}
+
+.taxonomy-panel--archive .taxonomy-column .card__meta {
+  margin: 0;
+  color: rgba(247, 244, 239, 0.74);
+  font-size: 0.66rem;
+  letter-spacing: 0.18em;
+}
+
+.taxonomy-panel--archive .taxonomy-column .pill-cloud {
+  gap: 0.42rem;
+  margin: 0;
+  padding: 0.02rem 0.04rem 0.08rem;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  overflow-y: hidden;
+  scroll-snap-type: x proximity;
+  scrollbar-width: none;
+}
+
+.taxonomy-panel--archive .taxonomy-column .filter-chip {
+  flex: 0 0 auto;
+  width: auto;
+  min-width: 0;
+  max-width: min(14rem, 62vw);
+  min-height: 2.22rem;
+  padding: 0.38rem 0.64rem;
+  font-size: 0.64rem;
+  letter-spacing: 0.07em;
+  line-height: 1.05;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  scroll-snap-align: start;
+}
+
+.taxonomy-panel--archive .taxonomy-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0.65rem;
+  min-width: 0;
+}
+
+.taxonomy-panel--archive .taxonomy-panel__drawer > summary {
+  min-height: 2.85rem;
+  padding: 0.68rem 0.78rem;
+  border-color: rgba(247, 244, 239, 0.11);
+  border-radius: calc(var(--radius-md) + 0.12rem);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0.012)),
+    rgba(255, 255, 255, 0.012);
+}
+
+.taxonomy-panel--archive .taxonomy-panel__drawer-heading {
+  gap: 0.12rem;
+}
+
+.taxonomy-panel--archive .taxonomy-panel__drawer-heading strong {
+  font-size: 0.76rem;
+  letter-spacing: 0.14em;
+}
+
+.taxonomy-panel--archive .taxonomy-panel__drawer-heading span,
+.taxonomy-panel--archive .taxonomy-panel__drawer-hint {
+  font-size: 0.62rem;
+  letter-spacing: 0.11em;
 }
 
 .taxonomy-column .card__meta {
@@ -507,6 +608,36 @@
     letter-spacing: 0.06em;
     overflow-wrap: normal;
     word-break: normal;
+  }
+
+  .taxonomy-panel__quick-grid,
+  .taxonomy-panel--archive .taxonomy-grid {
+    grid-template-columns: 1fr;
+    gap: 0.58rem;
+  }
+
+  .taxonomy-panel--archive {
+    gap: 0.72rem;
+  }
+
+  .taxonomy-panel--archive .taxonomy-column {
+    padding: 0.68rem;
+  }
+
+  .taxonomy-panel--archive .taxonomy-column .pill-cloud {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    overflow-y: hidden;
+    margin-right: 0;
+    padding-bottom: 0.08rem;
+  }
+
+  .taxonomy-panel--archive .taxonomy-column .filter-chip {
+    flex: 0 0 auto;
+    min-height: 2.1rem;
+    max-width: min(12.5rem, 58vw);
+    padding: 0.34rem 0.58rem;
+    font-size: 0.6rem;
   }
 }
 

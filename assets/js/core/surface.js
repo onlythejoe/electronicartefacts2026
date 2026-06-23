@@ -68,6 +68,14 @@
               const tag = node.href ? "a" : "button";
               const label = node.label || `Node ${index + 1}`;
               const note = node.note || "";
+              const tone = String(node.tone || "").replace(/[^a-z0-9-]/gi, "").toLowerCase();
+              const classes = [
+                "graph-surface__node",
+                node.emphasis ? "is-emphasis" : "",
+                tone ? `graph-surface__node--${tone}` : "",
+              ]
+                .filter(Boolean)
+                .join(" ");
               const attrs = [
                 !node.href ? 'type="button"' : "",
                 node.href ? `href="${esc(node.href)}"` : "",
@@ -78,7 +86,7 @@
                 .join(" ");
               return `
                 <${tag}
-                  class="graph-surface__node"
+                  class="${esc(classes)}"
                   data-graph-node
                   data-node-index="${index}"
                   data-node-label="${esc(label)}"
@@ -86,6 +94,11 @@
                   ${attrs}
                   style="--x:${esc(node.x || "0rem")};--y:${esc(node.y || "0rem")};--z:${esc(node.z || "0rem")};--node-color:${esc(node.color || "rgba(234,220,207,0.9)")};"
                 >
+                  <span class="graph-surface__node-pin" aria-hidden="true"></span>
+                  <span class="graph-surface__node-body">
+                    <strong>${esc(label)}</strong>
+                    ${note ? `<small>${esc(note)}</small>` : ""}
+                  </span>
                 </${tag}>
               `;
             },
@@ -339,25 +352,75 @@
   const ecosystemExplorer = () => {
     const projects = catalog.projects?.length || 0;
     const programs = catalog.programs?.length || 0;
-    const artefacts = catalog.artefacts?.length || 0;
     const research = catalog.researchFields?.length || 0;
-    return uxSurface(
-      "LAYER",
-      "Signals in orbit.",
-      "Quick paths, linked surfaces and current status, all held in one frame.",
-      [
-        { label: "Projects", value: String(projects), level: 76 },
-        { label: "Programs", value: String(programs), level: 88 },
-        { label: "Artefacts", value: String(artefacts), level: 64 },
-        { label: "Research", value: String(research), level: 70 },
-        { label: "Paths", value: "8", level: 92 },
+    const routeFor = (id, fallback = "") => catalog.routeFor?.(id) || entityById(id)?.route || fallback;
+    return graphSurface({
+      eyebrow: "LAYER",
+      title: "Live ecosystem map.",
+      copy: "Real projects, programs and knowledge routes from the current Electronic Artefacts graph.",
+      coreLabel: "Electronic Artefacts",
+      coreCopy: `${projects} projects / ${programs} programs / ${research} fields`,
+      variant: "home",
+      nodes: [
+        {
+          label: "VASTE",
+          note: "Runtime / active",
+          href: "https://www.vaste.space/",
+          target: "_blank",
+          color: "rgba(125, 211, 252, 0.95)",
+          tone: "system",
+          emphasis: true,
+        },
+        {
+          label: "Vestiges",
+          note: "Flagship platform",
+          href: routeFor("vestiges", "./projects/vestiges/"),
+          color: "rgba(247, 244, 239, 0.94)",
+          tone: "platform",
+          emphasis: true,
+        },
+        {
+          label: "L’Œil de Meg",
+          note: "Client work / live",
+          href: routeFor("oeil-de-meg", "./project.html?id=oeil-de-meg"),
+          color: "rgba(245, 158, 11, 0.92)",
+          tone: "delivery",
+        },
+        {
+          label: "Palimpsests",
+          note: "Album / culture",
+          href: routeFor("palimpsests", "./palimpsests.html"),
+          color: "rgba(234, 220, 207, 0.92)",
+          tone: "culture",
+        },
+        {
+          label: "Runtime Theory",
+          note: "Research field",
+          href: routeFor("runtime-theory", "./research/fields/runtime-theory/"),
+          color: "rgba(167, 139, 250, 0.92)",
+          tone: "research",
+        },
+        {
+          label: "Knowledge",
+          note: "Concept records",
+          href: "./knowledge/",
+          color: "rgba(52, 211, 153, 0.9)",
+          tone: "knowledge",
+        },
+        {
+          label: "Archive",
+          note: "Memory layer",
+          href: "./archive.html",
+          color: "rgba(228, 213, 196, 0.86)",
+          tone: "archive",
+        },
       ],
-      [
+      actions: [
         { label: "Search", href: "./search.html" },
-        { label: "Archive", href: "./archive.html" },
-        { label: "VASTE", href: "https://www.vaste.space/", target: "_blank" },
+        { label: "Projects", href: "./projects.html" },
+        { label: "Knowledge", href: "./knowledge/" },
       ],
-    );
+    });
   };
 
   const startGraphSurfaceAnimation = () => {
@@ -443,11 +506,6 @@
       ctx.beginPath();
       ctx.arc(0, 0, Math.max(3.2, radius * 0.28), 0, Math.PI * 2);
       ctx.fill();
-      ctx.fillStyle = "rgba(255,255,255,0.9)";
-      ctx.font = "600 10px sans-serif";
-      ctx.textAlign = "center";
-      ctx.textBaseline = "top";
-      ctx.fillText(node.label, 0, radius + 8);
       ctx.restore();
     };
 
@@ -807,23 +865,6 @@
         links: [
           { label: "Search", href: "./search.html" },
           { label: "Work", href: "./work.html" },
-        ],
-      },
-      about: {
-        eyebrow: "ECOSYSTEM VIEW",
-        title: "Lineage map.",
-        copy: "Method, pillars and network.",
-        nodes: [
-          { label: "VOID", note: "Theory", href: "./research.html", x: "-15rem", y: "-8rem", z: "-15rem" },
-          { label: "PALIMPSESTS", note: "Art", href: "./work.html", x: "15rem", y: "-8rem", z: "15rem" },
-          { label: "VASTE", note: "Technology", href: "https://www.vaste.space/", target: "_blank", x: "-17rem", y: "1rem", z: "8rem", emphasis: true },
-          { label: "AtypikHouse", note: "Surface", href: "./projects.html", x: "17rem", y: "1rem", z: "-8rem" },
-          { label: "CreativeStuff.jpg", note: "Archive", href: "./archive.html", x: "-10rem", y: "14rem", z: "12rem" },
-          { label: "L’Œil de Meg", note: "Surface", href: "./work.html", x: "10rem", y: "14rem", z: "-12rem" },
-        ],
-        links: [
-          { label: "Work", href: "./work.html" },
-          { label: "Contact", href: "./contact.html" },
         ],
       },
       contact: {

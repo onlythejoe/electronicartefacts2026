@@ -1,6 +1,7 @@
 import { predicateDefinitions } from "../../schema/predicates.js";
 import type { Entity } from "../../schema/entities.js";
 import type { RelationStatement } from "../../schema/relation.js";
+import { publicEntityIds, publicRelationsForEntity } from "../../semantic/visibility.js";
 import { escapeHtml } from "../html.js";
 
 export const renderRelationshipGroups = (
@@ -9,7 +10,7 @@ export const renderRelationshipGroups = (
   byId: Map<string, Entity>,
   routeById: Record<string, string>,
 ): string => {
-  const connected = relations.filter((relation) => relation.subject === entity.id || relation.object === entity.id);
+  const connected = publicRelationsForEntity(entity, relations, publicEntityIds(byId.values()));
   if (!connected.length) return "";
   const groups = new Map<string, RelationStatement[]>();
   for (const relation of connected) {

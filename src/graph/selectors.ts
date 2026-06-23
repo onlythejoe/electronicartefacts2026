@@ -3,6 +3,7 @@ import type { Entity } from "../schema/entities.js";
 import type { RelationStatement } from "../schema/relation.js";
 import type { EntityId } from "../schema/entity.js";
 import type { RouteRecord } from "../build/build-routes.js";
+import { publicEntityIds, publicRelationsForEntity } from "../semantic/visibility.js";
 
 export interface GraphNode {
   id: EntityId;
@@ -37,8 +38,8 @@ export const localNeighborhood = (
   relations: RelationStatement[],
   routes: RouteRecord[],
 ): GraphView => {
-  const connected = relations.filter((relation) =>
-    relation.visibility === "public" && (relation.subject === focus.id || relation.object === focus.id));
+  const publicIds = publicEntityIds(entities);
+  const connected = publicRelationsForEntity(focus, relations, publicIds);
   const ids = new Set<EntityId>([focus.id]);
   connected.forEach((relation) => {
     ids.add(relation.subject);

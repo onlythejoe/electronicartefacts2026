@@ -38,8 +38,8 @@ export const renderLayout = ({ metadata, body, header, footer, jsonLd, pageClass
     <meta name="twitter:image" content="${escapeHtml(metadata.image)}" />
     <title>${escapeHtml(metadata.title)}</title>
     <script type="application/ld+json">${JSON.stringify(jsonLd).replaceAll("<", "\\u003c")}</script>
-    <link rel="stylesheet" href="/assets/css/app.css?v=23" />
-    <script type="module" src="/assets/js/app.js?v=23"></script>
+    <link rel="stylesheet" href="/assets/css/app.css?v=26" />
+    <script type="module" src="/assets/js/app.js?v=26"></script>
   </head>
   <body data-page="${escapeHtml(pageClass)}" data-generated-page="true">
     <a class="skip-link" href="#main">Skip to main content</a>

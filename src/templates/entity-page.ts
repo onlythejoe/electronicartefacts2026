@@ -8,14 +8,15 @@ import { renderEntityHeader } from "./components/entity-header.js";
 import { renderEntityMetadata } from "./components/entity-metadata.js";
 import { renderLocalGraph } from "./components/local-graph.js";
 import { renderRelationshipGroups } from "./components/relationship-groups.js";
+import { renderProjectPage } from "./project-page.js";
 
 export const renderEntityPage = (
   entity: Entity,
   relations: RelationStatement[],
   byId: Map<string, Entity>,
   routeById: Record<string, string>,
-): string => `
-  <section class="zone-card">${renderBreadcrumbs(entity)}</section>
+): string => entity.type === "project" ? renderProjectPage(entity, relations, byId, routeById) : `
+  <section class="zone-card entity-breadcrumb-card">${renderBreadcrumbs(entity)}</section>
   ${renderEntityHeader(entity)}
   <article class="zone-card hero publication-body">${entity.bodyHtml}</article>
   <section class="detail-grid">
@@ -23,5 +24,5 @@ export const renderEntityPage = (
     ${renderCitationPanel(entity, `${site.origin}${routeForEntity(entity)}`)}
   </section>
   ${renderRelationshipGroups(entity, relations, byId, routeById)}
-  <section class="zone-card hero">${renderLocalGraph(entity, relations)}</section>
+  <section class="zone-card hero">${renderLocalGraph(entity, relations, byId)}</section>
 `;

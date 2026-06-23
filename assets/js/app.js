@@ -712,6 +712,7 @@ window.EA_ENTITIES = {
           "electronic-artefacts"
         ],
         "relatedTo": [
+          "atypikhouse",
           "oeil-de-meg"
         ]
       },
@@ -886,8 +887,8 @@ window.EA_ENTITIES = {
     },
     {
       "id": "marjolaine-muller",
-      "title": "Marjolaine Muller",
-      "subtitle": "External Collaborator",
+      "title": "Marjolaine MULLER",
+      "subtitle": "Independent Artist / External Collaboration",
       "kind": "artist",
       "type": "Collaborateur externe",
       "status": "active",
@@ -899,26 +900,73 @@ window.EA_ENTITIES = {
         "creationYear": "2026",
         "creationDate": "2026-01-01",
         "releaseDate": "",
-        "lastUpdated": "2026-06-12",
+        "lastUpdated": "2026-06-23",
         "era": "foundation"
       },
-      "description": "Independent artist for whom Electronic Artefacts handled part of the musical production, composition, arrangement and artistic support on 7 Temps Seulement.",
-      "summary": "External collaborator linked to 7 Temps Seulement.",
+      "description": "Independent artist connected to Electronic Artefacts through 7 Temps Seulement, a music production collaboration shaped around composition, arrangement and artistic accompaniment.",
+      "summary": "Independent artist linked to the 7 Temps Seulement production collaboration.",
+      "role": "Independent artist / external collaborator",
       "discipline": [
         "Music",
+        "Composition",
         "Production",
         "Arrangement"
       ],
       "medium": [
         "Audio",
-        "Writing"
+        "Writing",
+        "Voice"
       ],
       "tags": [
-        "Marjolaine Muller",
+        "Marjolaine MULLER",
         "External Collaboration",
         "Production",
         "7 Temps Seulement"
       ],
+      "relatedProjects": [
+        "seven-temps-seulement"
+      ],
+      "media": {
+        "folder": "./assets/media/artists/marjolaine-muller",
+        "gallery": [
+          {
+            "src": "./assets/media/artists/marjolaine-muller/photomarjo.png",
+            "alt": "Portrait of Marjolaine MULLER",
+            "caption": "Portrait used for the Marjolaine MULLER artist profile.",
+            "width": 3398,
+            "height": 2193
+          }
+        ]
+      },
+      "artistProfile": {
+        "headline": "A music collaboration held between artist identity, arrangement and production.",
+        "intro": "Marjolaine MULLER is presented inside the Electronic Artefacts system through the work around 7 Temps Seulement. The profile makes the collaboration legible without absorbing the artist into the studio catalogue.",
+        "collaboration": "Electronic Artefacts contributed musical production, composition, arrangement and artistic support, keeping the record attached to a clear project context.",
+        "focus": [
+          "Composition",
+          "Arrangement",
+          "Production",
+          "Artistic accompaniment"
+        ],
+        "credits": [
+          {
+            "label": "Connected work",
+            "value": "7 Temps Seulement"
+          },
+          {
+            "label": "Role",
+            "value": "Independent artist"
+          },
+          {
+            "label": "Electronic Artefacts",
+            "value": "Production, composition, arrangement and support"
+          }
+        ],
+        "notes": [
+          "The artist page now separates the person from the delivered production work.",
+          "The collaboration remains connected to the project record and the broader Electronic Artefacts archive."
+        ]
+      },
       "relations": {
         "origin": [
           "seven-temps-seulement"
@@ -945,6 +993,10 @@ window.EA_ENTITIES = {
         ]
       },
       "links": [
+        {
+          "label": "Instagram",
+          "href": "https://www.instagram.com/marjolaine_muller/"
+        },
         {
           "label": "Work",
           "href": "./work.html"
@@ -2809,6 +2861,21 @@ window.EA_ENTITIES = {
         "Culture",
         "Platform"
       ],
+      "visualLanguage": [
+        "Black",
+        "White",
+        "Ivory"
+      ],
+      "textures": [
+        "Knowledge graph",
+        "Cultural archive",
+        "Precision"
+      ],
+      "symbols": [
+        "Monogram",
+        "Trace",
+        "Living knowledge"
+      ],
       "media": {
         "folder": "./assets/media/projects/vestiges",
         "gallery": [
@@ -3174,7 +3241,8 @@ window.EA_ENTITIES = {
           "electronic-artefacts"
         ],
         "relatedTo": [
-          "systems-theory"
+          "systems-theory",
+          "atypikhouse"
         ]
       },
       "relatedResearchFields": [
@@ -3193,6 +3261,193 @@ window.EA_ENTITIES = {
         {
           "label": "UMOS",
           "href": "./program.html?id=unionmob-os1"
+        }
+      ]
+    },
+    {
+      "id": "atypikhouse",
+      "title": "AtypikHouse",
+      "subtitle": "Platform",
+      "kind": "project",
+      "type": "Platform",
+      "category": "Platform",
+      "status": "development",
+      "maturity": "development",
+      "confidence": "observed",
+      "visibility": "public",
+      "temporality": {
+        "creationYear": "2025",
+        "creationDate": "2025-01-01",
+        "releaseDate": "",
+        "lastUpdated": "2026-06-12",
+        "era": "foundation"
+      },
+      "medium": [
+        "Software",
+        "UI",
+        "Marketing dossier"
+      ],
+      "discipline": [
+        "Technology",
+        "UX",
+        "UI",
+        "Art Direction"
+      ],
+      "description": "Hospitality platform for curated unusual stays, host listings, traveller booking flows and account spaces.",
+      "summary": "Web platform for unusual accommodation rentals, structured around immersive discovery, host tools and booking flows.",
+      "tags": [
+        "AtypikHouse",
+        "Platform",
+        "Hospitality",
+        "Booking",
+        "Glamping"
+      ],
+      "credits": [
+        {
+          "id": "ea:artist:zarah-nkounkou",
+          "label": "Zarah Nkounkou",
+          "role": "Project management and art direction"
+        }
+      ],
+      "media": {
+        "folder": "./assets/media/projects/atypikhouse",
+        "gallery": [
+          {
+            "src": "./assets/media/projects/atypikhouse/cover.svg",
+            "alt": "AtypikHouse dossier cover",
+            "caption": "Project dossier cover."
+          },
+          {
+            "src": "./assets/media/projects/atypikhouse/atypikhouse-landing-page.jpg",
+            "alt": "AtypikHouse landing page with logo",
+            "caption": "Landing page."
+          },
+          {
+            "src": "./assets/media/projects/atypikhouse/atypikhouse-dashboard-home.jpg",
+            "alt": "AtypikHouse dashboard home view",
+            "caption": "Dashboard home."
+          },
+          {
+            "src": "./assets/media/projects/atypikhouse/atypikhouse-dashboard-ipad.jpg",
+            "alt": "AtypikHouse dashboard on a tablet",
+            "caption": "Tablet view."
+          },
+          {
+            "src": "./assets/media/projects/atypikhouse/atypikhouse-mobile-filters.jpg",
+            "alt": "AtypikHouse mobile filter interface",
+            "caption": "Filter flow."
+          },
+          {
+            "src": "./assets/media/projects/atypikhouse/atypikhouse-profile.png",
+            "alt": "AtypikHouse profile screen",
+            "caption": "Profile surface."
+          },
+          {
+            "src": "./assets/media/projects/atypikhouse/atypikhouse-bedroom-forest.jpg",
+            "alt": "AtypikHouse bedroom in a forest setting",
+            "caption": "Forest room."
+          },
+          {
+            "src": "./assets/media/projects/atypikhouse/atypikhouse-nav-system.jpg",
+            "alt": "AtypikHouse navigation system mockup",
+            "caption": "Navigation system."
+          },
+          {
+            "src": "./assets/media/projects/atypikhouse/atypikhouse-symbol-set.jpg",
+            "alt": "AtypikHouse symbol set",
+            "caption": "Symbol set."
+          },
+          {
+            "src": "./assets/media/projects/atypikhouse/atypikhouse-signage.jpg",
+            "alt": "AtypikHouse signage mockup",
+            "caption": "Signage."
+          },
+          {
+            "src": "./assets/media/projects/atypikhouse/atypikhouse-brand-kit.jpg",
+            "alt": "AtypikHouse brand kit mockup",
+            "caption": "Brand kit."
+          },
+          {
+            "src": "./assets/media/projects/atypikhouse/atypikhouse-moodboard-suite.jpg",
+            "alt": "AtypikHouse moodboard and suite composition",
+            "caption": "Moodboard suite."
+          }
+        ]
+      },
+      "architecture": {
+        "surface": "Hospitality / booking layer",
+        "stack": "Explorer, booking flow, dynamic filters, profile space and identity system.",
+        "layers": [
+          "Explorer",
+          "Booking",
+          "Dynamic filters",
+          "Host space",
+          "Traveller profile",
+          "Identity"
+        ],
+        "note": "Built to make unusual stays easier to discover, compare and reserve."
+      },
+      "marketingDossier": {
+        "title": "AtypikHouse marketing dossier",
+        "subtitle": "Plateforme web de location d'hebergements insolites",
+        "src": "./assets/media/projects/atypikhouse/atypikhouse-dossier-marketing.pdf",
+        "cover": "./assets/media/projects/atypikhouse/atypikhouse-dossier-marketing-cover.jpg",
+        "pages": 47,
+        "year": "2025",
+        "fileSize": "3.5 MB",
+        "format": "PDF 16:9",
+        "agency": "JAZ Labs",
+        "copy": "A web-optimized version of the 47-page marketing dossier: market framing, project team, positioning, SWOT, glamping study, host/traveller ecosystem and interface mockups.",
+        "highlights": [
+          "Curated stays and unusual accommodation discovery",
+          "Host and traveller exchange ecosystem",
+          "Dynamic filtering and immersive listing cards",
+          "Launch strategy and long-term platform growth"
+        ]
+      },
+      "relations": {
+        "origin": [
+          "vaste"
+        ],
+        "parent": [
+          "electronic-artefacts"
+        ],
+        "children": [],
+        "dependencies": [
+          "vaste"
+        ],
+        "influences": [
+          "unionmob"
+        ],
+        "derivedFrom": [],
+        "inspiredBy": [],
+        "poweredBy": [
+          "vaste"
+        ],
+        "producedBy": [
+          "electronic-artefacts"
+        ],
+        "publishedBy": [
+          "electronic-artefacts"
+        ],
+        "maintainedBy": [
+          "electronic-artefacts"
+        ],
+        "partOf": [
+          "electronic-artefacts"
+        ],
+        "relatedTo": [
+          "unionmob"
+        ]
+      },
+      "links": [
+        {
+          "label": "Browse dossier",
+          "href": "#atypikhouse-dossier-marketing"
+        },
+        {
+          "label": "Work catalog",
+          "href": "./work.html"
         }
       ]
     },
@@ -3383,8 +3638,8 @@ window.EA_ENTITIES = {
         "Production",
         "Arrangement"
       ],
-      "description": "External music production collaboration for Marjolaine Muller, covering production, composition, arrangement and artistic support.",
-      "summary": "External music production work for Marjolaine Muller.",
+      "description": "External music production collaboration for Marjolaine MULLER, covering production, composition, arrangement and artistic support.",
+      "summary": "External music production work for Marjolaine MULLER.",
       "tags": [
         "7 Temps Seulement",
         "External Work",
@@ -5003,8 +5258,8 @@ window.EA_PUBLIC_CATALOG = {
       "type": "program",
       "title": "VASTE",
       "subtitle": "Proprietary Runtime",
-      "summary": "VASTE is the primary proprietary runtime developed by Electronic Artefacts for graph architectures, contextual execution, identity systems and modular world construction.",
-      "description": "The program connects Runtime Theory to implemented graph systems and provides the technical foundation for projects including Vestiges.",
+      "summary": "VASTE is the primary proprietary runtime developed and commercialized by Electronic Artefacts for graph architectures, contextual execution, identity systems and modular world construction.",
+      "description": "VASTE connects Runtime Theory to implemented graph systems and can be evaluated through scoped repository access, technical pilots, implementation work and licensing conversations.",
       "status": "development",
       "maturity": "development",
       "confidence": "published",
@@ -5469,12 +5724,17 @@ window.EA_SEARCH = {
 /* ==== assets/js/core/includes.js ==== */
 (function () {
   const includeCache = new Map();
+  const includeVersion = "26";
 
   const resolveIncludeUrl = (key) => {
     if (!key) return null;
-    if (key === "header") return "./assets/partials/header.html";
-    if (key === "footer") return "./assets/partials/footer.html";
-    return `./assets/partials/${key}`;
+    const path =
+      key === "header"
+        ? "./assets/partials/header.html"
+        : key === "footer"
+          ? "./assets/partials/footer.html"
+          : `./assets/partials/${key}`;
+    return `${path}?v=${includeVersion}`;
   };
 
   const fetchInclude = async (url) => {
@@ -5648,7 +5908,7 @@ window.EA_SEARCH = {
   const entityById = (id) => entityIndex[id] || null;
   const cardCssUrl = (src) => {
     const value = String(src || "");
-    if (value.startsWith("./assets/media/")) return value.replace("./assets/media/", "../media/");
+    if (value.startsWith("./assets/media/")) return value.replace("./assets/media/", "/assets/media/");
     return value;
   };
 
@@ -5768,9 +6028,15 @@ window.EA_SEARCH = {
   const mediaFrom = (entry) => {
     const gallery = entry?.media?.gallery || [];
     if (!gallery.length) return null;
+    const images = gallery.filter((image) => mediaKindFor(image) === "image");
+    const isRaster = (image) => /\.(png|jpe?g|webp|gif)(?:[?#]|$)/i.test(String(image?.src || ""));
+    const isGenericMark = (image) => /(?:^|\/)(cover|logo|icon|picto|symbol)[^/]*\.(?:svg|png|jpe?g|webp|gif)(?:[?#]|$)/i.test(String(image?.src || ""));
     return (
-      gallery.find((image) => String(image.src || "").includes("palimpsests.jpg")) ||
-      gallery.find((image) => String(image.src || "").match(/cover|logo/i)) ||
+      images.find((image) => String(image.src || "").includes("palimpsests.jpg")) ||
+      images.find((image) => isRaster(image) && !isGenericMark(image)) ||
+      images.find((image) => !isGenericMark(image)) ||
+      images.find((image) => isRaster(image)) ||
+      images[0] ||
       gallery[0]
     );
   };
@@ -6103,6 +6369,33 @@ window.EA_SEARCH = {
     return mediaFigureMarkup(media, item, "project-immersive__image");
   };
 
+  const cardMediaPlate = (item, options = {}) => {
+    const media = cardImageFor(item);
+    if (!media || mediaKindFor(media) !== "image") return "";
+    const label = options.label || media.caption || item.title || "Visual";
+    const imageAttrs = [
+      `src="${esc(media.src)}"`,
+      media.srcset ? `srcset="${esc(media.srcset)}"` : "",
+      media.sizes ? `sizes="${esc(media.sizes)}"` : "",
+      `alt=""`,
+      `loading="lazy"`,
+      `decoding="async"`,
+      media.width && media.height ? `width="${esc(media.width)}" height="${esc(media.height)}"` : "",
+    ]
+      .filter(Boolean)
+      .join(" ");
+
+    return `
+      <figure class="card-media-plate" aria-hidden="true">
+        <img ${imageAttrs} />
+        <figcaption>
+          <span>${esc(options.kicker || "Visual")}</span>
+          <strong>${esc(label)}</strong>
+        </figcaption>
+      </figure>
+    `;
+  };
+
   const homeCardPills = (item) => {
     if (!item) return [];
     if (item.id === "oeil-de-meg") return ["Photography CRM", "Portfolio", "Live site", "WordPress"];
@@ -6143,6 +6436,7 @@ window.EA_SEARCH = {
           ${projectSignatureBubble(item, "card")}
         </div>
       </div>
+      ${cardMediaPlate(item)}
       ${cardCopy(item.summary, 1)}
       <p class="project-card__editorial-note">${esc(projectReadAs(item))}</p>
       ${signalStrip(item)}
@@ -6154,9 +6448,11 @@ window.EA_SEARCH = {
     </article>
   `;
 
-  const projectLandingCard = (item) => `
-    <article class="project-card${item.id === "oeil-de-meg" ? " project-card--oeil-de-meg" : ""}" data-project-detail-link="${esc(entryHrefFor(item))}" aria-label="Open ${esc(item.title)} detail" ${cardBaseAttrs(item)}>
-      <a class="project-card__overlay-link" href="${esc(entryHrefFor(item))}" aria-label="Open ${esc(item.title)} detail"></a>
+  const projectLandingCard = (item) => {
+    const href = entryHrefFor(item);
+    return `
+    <article class="project-card project-index-card${item.id === "oeil-de-meg" ? " project-card--oeil-de-meg" : ""}" data-project-detail-link="${esc(href)}" aria-label="Open ${esc(item.title)} detail" ${cardBaseAttrs(item)}>
+      <a class="project-card__overlay-link" href="${esc(href)}" aria-label="Open ${esc(item.title)} detail"></a>
       <div class="project-card__top">
         <div>
           <p class="card__meta">${esc(item.category || item.type || "PROJECT")}</p>
@@ -6168,12 +6464,15 @@ window.EA_SEARCH = {
           ${projectSignatureBubble(item, "card")}
         </div>
       </div>
+      ${cardMediaPlate(item)}
       ${cardCopy(item.summary, 1)}
       <p class="project-card__editorial-note">${esc(projectReadAs(item))}</p>
       ${signalStrip(item)}
       ${tagRow(homeCardPills(item), { limit: 4, compact: true })}
+      ${linkRow({ label: "Open project", href })}
     </article>
   `;
+  };
 
   const selectedWorksCard = (item, options = {}) => {
     if (!item) return "";
@@ -6191,7 +6490,7 @@ window.EA_SEARCH = {
       .join(" ");
 
     return `
-      <article class="${cardClasses}" data-project-detail-link="${esc(href)}" ${cardLinkAttrs(href, label)}>
+      <article class="${cardClasses}" data-project-detail-link="${esc(href)}" ${cardBaseAttrs(item)} ${cardLinkAttrs(href, label)}>
         <a class="project-card__overlay-link" href="${esc(href)}" aria-label="${esc(label)}"></a>
         <div class="project-card__top">
           <div>
@@ -6209,6 +6508,7 @@ window.EA_SEARCH = {
             ${projectSignatureBubble(item, "card")}
           </div>
         </div>
+        ${cardMediaPlate(item, { kicker: featured ? "Lead visual" : "Visual" })}
         ${cardCopy(item.summary || item.description, featured ? 2 : 1)}
         <p class="project-card__editorial-note">${esc(projectReadAs(item))}</p>
         ${signalStrip(item)}
@@ -6233,6 +6533,7 @@ window.EA_SEARCH = {
           ${item.date ? chip(`Date: ${item.date}`) : ""}
         </div>
       </div>
+      ${cardMediaPlate(item)}
       ${summaryMetrics(item, "archive")}
       ${linkRow(item.cta || item.links?.[0] || null)}
     </article>
@@ -6286,6 +6587,20 @@ window.EA_SEARCH = {
   const personCard = (item, options = {}) => {
     const href = entryHrefFor(item, options);
     if (options.variant === "collaborator") {
+      const portrait = mediaFrom(item);
+      const portraitMarkup = portrait && mediaKindFor(portrait) === "image"
+        ? `
+            <span class="collaborator-card__portrait" aria-hidden="true">
+              <img
+                src="${esc(portrait.src)}"
+                alt=""
+                loading="lazy"
+                decoding="async"
+                ${portrait.width && portrait.height ? `width="${esc(portrait.width)}" height="${esc(portrait.height)}"` : ""}
+              />
+            </span>
+          `
+        : "";
       const initials = String(item.title || "")
         .split(/[\s.]+/)
         .filter(Boolean)
@@ -6299,7 +6614,7 @@ window.EA_SEARCH = {
           ${cardOverlayLink(href, options.label || `Open ${item.title}`)}
           <div class="collaborator-card__header">
             <span class="collaborator-card__index">${String((options.index || 0) + 1).padStart(2, "0")}</span>
-            <span class="collaborator-card__monogram" aria-hidden="true">${esc(initials)}</span>
+            ${portraitMarkup || `<span class="collaborator-card__monogram" aria-hidden="true">${esc(initials)}</span>`}
           </div>
           <div class="collaborator-card__identity">
             <p class="card__meta">${esc(item.subtitle || item.type || "Collaborator")}</p>
@@ -6327,6 +6642,7 @@ window.EA_SEARCH = {
           </div>
           ${statusBadge(item.status, item.statusLabel)}
         </div>
+        ${cardMediaPlate(item, { kicker: "Artist", label: item.media?.gallery?.[0]?.caption || item.title })}
         ${cardCopy(item.summary, 1)}
         ${signalStrip(item)}
         ${summaryMetrics(item, "person")}
@@ -6345,6 +6661,7 @@ window.EA_SEARCH = {
         </div>
         ${statusBadge(item.status, item.statusLabel)}
       </div>
+      ${cardMediaPlate(item)}
       ${cardCopy(item.summary, 1)}
       ${signalStrip(item)}
       ${summaryMetrics(item, "program")}
@@ -6361,63 +6678,71 @@ window.EA_SEARCH = {
         </div>
         ${statusBadge(item.status, item.statusLabel)}
       </div>
+      ${cardMediaPlate(item)}
       ${cardCopy(item.summary, 1)}
       ${signalStrip(item)}
       ${summaryMetrics(item, "program")}
     </article>
   `;
 
-  const taxonomyPanel = (scope, title, description, groups, extraClass = "") => `
-    <section class="zone-card hero taxonomy-panel ${esc(extraClass)}" data-filter-scope="${esc(scope)}">
-      <div class="section-head">
-        <p class="eyebrow">${esc(title)}</p>
-        <h2>${esc(description.heading)}</h2>
-        <p class="lede">${esc(description.copy)}</p>
-      </div>
-      <details class="taxonomy-panel__drawer" data-taxonomy-drawer open>
-        <summary class="taxonomy-panel__drawer-summary">
-          <span class="taxonomy-panel__drawer-heading">
-            <strong>Advanced filters</strong>
-            <span>${groups.length} groups</span>
-          </span>
-          <span class="taxonomy-panel__drawer-hint">Tap to show or hide</span>
-        </summary>
-        <div class="taxonomy-grid">
-          ${groups
+  const taxonomyPanel = (scope, title, description, groups, extraClass = "") => {
+    const renderGroup = (group) => `
+      <div class="taxonomy-column${group.options.length > 6 ? " taxonomy-column--scroll" : ""}">
+        <p class="card__meta">${esc(group.label)}</p>
+        <div class="pill-cloud taxonomy-pill-row" data-filter-group="${esc(group.key)}">
+          ${group.options
             .map(
-              (group) => `
-                <div class="taxonomy-column${group.options.length > 6 ? " taxonomy-column--scroll" : ""}">
-                  <p class="card__meta">${esc(group.label)}</p>
-                  <div
-                    class="pill-cloud taxonomy-pill-row"
-                    data-filter-group="${esc(group.key)}"
-                    style="flex-wrap:nowrap;overflow-x:auto;overflow-y:hidden;scrollbar-width:thin;-webkit-overflow-scrolling:touch;"
-                  >
-                    ${group.options
-                      .map(
-                        (option) => `
-                          <button
-                            class="filter-chip${option.active ? " is-active" : ""}"
-                            type="button"
-                            aria-pressed="${option.active ? "true" : "false"}"
-                            data-filter-toggle
-                            data-filter-key="${esc(group.key)}"
-                            data-filter-value="${esc(option.value)}"
-                          >
-                            ${esc(option.label)}
-                          </button>
-                        `,
-                      )
-                      .join("")}
-                  </div>
-                </div>
+              (option) => `
+                <button
+                  class="filter-chip${option.active ? " is-active" : ""}"
+                  type="button"
+                  aria-pressed="${option.active ? "true" : "false"}"
+                  data-filter-toggle
+                  data-filter-key="${esc(group.key)}"
+                  data-filter-value="${esc(option.value)}"
+                >
+                  ${esc(option.label)}
+                </button>
               `,
             )
             .join("")}
         </div>
-      </details>
-    </section>
-  `;
+      </div>
+    `;
+    const quickGroups = groups.slice(0, Math.min(3, groups.length));
+    const advancedGroups = groups.slice(quickGroups.length);
+
+    return `
+      <section class="zone-card hero taxonomy-panel ${esc(extraClass)}" data-filter-scope="${esc(scope)}">
+        <div class="section-head taxonomy-panel__head">
+          <p class="eyebrow">${esc(title)}</p>
+          <h2>${esc(description.heading)}</h2>
+          <p class="lede">${esc(description.copy)}</p>
+        </div>
+        <div class="taxonomy-panel__quick-grid" aria-label="Priority filters">
+          ${quickGroups.map(renderGroup).join("")}
+        </div>
+        ${
+          advancedGroups.length
+            ? `
+              <details class="taxonomy-panel__drawer" data-taxonomy-drawer>
+                <summary class="taxonomy-panel__drawer-summary">
+                  <span class="taxonomy-panel__drawer-heading">
+                    <strong>More filters</strong>
+                    <span>${advancedGroups.length} groups</span>
+                  </span>
+                  <span class="taxonomy-panel__drawer-hint">Tap to show or hide</span>
+                </summary>
+                <div class="taxonomy-grid taxonomy-grid--advanced">
+                  ${advancedGroups.map(renderGroup).join("")}
+                </div>
+              </details>
+            `
+            : ""
+        }
+      </section>
+    `;
+  };
 
   const manifestPanel = () => `
     <section class="zone-card hero">
@@ -6481,9 +6806,9 @@ window.EA_SEARCH = {
   const vasteBanner = () => `
     <section class="zone-card hero latests-panel" id="latests">
       <div class="section-head">
-        <p class="eyebrow">LATESTS</p>
-        <h2>Current project image.</h2>
-        <p class="lede">The latest work, then the runtime line.</p>
+        <p class="eyebrow">PROOF FIRST</p>
+        <h2>One current project, one runtime foundation.</h2>
+        <p class="lede">Start with visible work, then open the system line that explains how the studio thinks and builds.</p>
       </div>
       <div class="latests-grid latests-grid--cinematic">
         ${(() => {
@@ -6530,9 +6855,9 @@ window.EA_SEARCH = {
         <article class="program-card latests-panel__cta vast-banner vast-banner--cinematic" ${vasteAttrs}>
           <div class="vast-banner__shell">
             <div class="vast-banner__content">
-              <p class="card__meta">CONCEPT CTA</p>
+              <p class="card__meta">RUNTIME FOUNDATION</p>
               <h3 class="vast-banner__title">VASTE</h3>
-              <p class="vast-banner__copy">Open the runtime.</p>
+              <p class="vast-banner__copy">Open the proprietary program behind the graph, identity and knowledge-system work.</p>
               <div class="pill-cloud vast-banner__chips" aria-label="VASTE attributes">
                 <span class="chip">Runtime</span>
                 <span class="chip">Graph systems</span>
@@ -6569,12 +6894,12 @@ window.EA_SEARCH = {
           <div class="section-head">
             <p class="eyebrow">WORK</p>
             <h2>Selected works.</h2>
-            <p class="lede">A curated path through the projects currently shaping the studio line.</p>
+            <p class="lede">A compact path through client delivery, proprietary platforms and cultural publishing.</p>
           </div>
           <aside class="panel panel--soft selected-works-panel__info">
             <p class="card__meta">CURATED PATH</p>
             <strong>${esc(routeCount)}</strong>
-            <p class="card__copy">The home keeps one lead project and a short supporting queue. It points toward the archive without flattening the work into a grid.</p>
+            <p class="card__copy">Use this as the fast scan before entering the full project catalogue or archive.</p>
             ${metricRail(
               [
                 { label: "Lead", value: lead.title || lead.category || lead.type || "Project", note: lead.statusLabel || lead.status || "", tone: "system", fill: 0.9 },
@@ -6678,6 +7003,7 @@ window.EA_SEARCH = {
     homeProjects,
     featuredProjectForHome,
     projectHeroMedia,
+    cardMediaPlate,
     homeCardPills,
     projectCard,
     projectLandingCard,
@@ -6769,6 +7095,14 @@ window.EA_SEARCH = {
               const tag = node.href ? "a" : "button";
               const label = node.label || `Node ${index + 1}`;
               const note = node.note || "";
+              const tone = String(node.tone || "").replace(/[^a-z0-9-]/gi, "").toLowerCase();
+              const classes = [
+                "graph-surface__node",
+                node.emphasis ? "is-emphasis" : "",
+                tone ? `graph-surface__node--${tone}` : "",
+              ]
+                .filter(Boolean)
+                .join(" ");
               const attrs = [
                 !node.href ? 'type="button"' : "",
                 node.href ? `href="${esc(node.href)}"` : "",
@@ -6779,7 +7113,7 @@ window.EA_SEARCH = {
                 .join(" ");
               return `
                 <${tag}
-                  class="graph-surface__node"
+                  class="${esc(classes)}"
                   data-graph-node
                   data-node-index="${index}"
                   data-node-label="${esc(label)}"
@@ -6787,6 +7121,11 @@ window.EA_SEARCH = {
                   ${attrs}
                   style="--x:${esc(node.x || "0rem")};--y:${esc(node.y || "0rem")};--z:${esc(node.z || "0rem")};--node-color:${esc(node.color || "rgba(234,220,207,0.9)")};"
                 >
+                  <span class="graph-surface__node-pin" aria-hidden="true"></span>
+                  <span class="graph-surface__node-body">
+                    <strong>${esc(label)}</strong>
+                    ${note ? `<small>${esc(note)}</small>` : ""}
+                  </span>
                 </${tag}>
               `;
             },
@@ -7040,25 +7379,75 @@ window.EA_SEARCH = {
   const ecosystemExplorer = () => {
     const projects = catalog.projects?.length || 0;
     const programs = catalog.programs?.length || 0;
-    const artefacts = catalog.artefacts?.length || 0;
     const research = catalog.researchFields?.length || 0;
-    return uxSurface(
-      "LAYER",
-      "Signals in orbit.",
-      "Quick paths, linked surfaces and current status, all held in one frame.",
-      [
-        { label: "Projects", value: String(projects), level: 76 },
-        { label: "Programs", value: String(programs), level: 88 },
-        { label: "Artefacts", value: String(artefacts), level: 64 },
-        { label: "Research", value: String(research), level: 70 },
-        { label: "Paths", value: "8", level: 92 },
+    const routeFor = (id, fallback = "") => catalog.routeFor?.(id) || entityById(id)?.route || fallback;
+    return graphSurface({
+      eyebrow: "LAYER",
+      title: "Live ecosystem map.",
+      copy: "Real projects, programs and knowledge routes from the current Electronic Artefacts graph.",
+      coreLabel: "Electronic Artefacts",
+      coreCopy: `${projects} projects / ${programs} programs / ${research} fields`,
+      variant: "home",
+      nodes: [
+        {
+          label: "VASTE",
+          note: "Runtime / active",
+          href: "https://www.vaste.space/",
+          target: "_blank",
+          color: "rgba(125, 211, 252, 0.95)",
+          tone: "system",
+          emphasis: true,
+        },
+        {
+          label: "Vestiges",
+          note: "Flagship platform",
+          href: routeFor("vestiges", "./projects/vestiges/"),
+          color: "rgba(247, 244, 239, 0.94)",
+          tone: "platform",
+          emphasis: true,
+        },
+        {
+          label: "L’Œil de Meg",
+          note: "Client work / live",
+          href: routeFor("oeil-de-meg", "./project.html?id=oeil-de-meg"),
+          color: "rgba(245, 158, 11, 0.92)",
+          tone: "delivery",
+        },
+        {
+          label: "Palimpsests",
+          note: "Album / culture",
+          href: routeFor("palimpsests", "./palimpsests.html"),
+          color: "rgba(234, 220, 207, 0.92)",
+          tone: "culture",
+        },
+        {
+          label: "Runtime Theory",
+          note: "Research field",
+          href: routeFor("runtime-theory", "./research/fields/runtime-theory/"),
+          color: "rgba(167, 139, 250, 0.92)",
+          tone: "research",
+        },
+        {
+          label: "Knowledge",
+          note: "Concept records",
+          href: "./knowledge/",
+          color: "rgba(52, 211, 153, 0.9)",
+          tone: "knowledge",
+        },
+        {
+          label: "Archive",
+          note: "Memory layer",
+          href: "./archive.html",
+          color: "rgba(228, 213, 196, 0.86)",
+          tone: "archive",
+        },
       ],
-      [
+      actions: [
         { label: "Search", href: "./search.html" },
-        { label: "Archive", href: "./archive.html" },
-        { label: "VASTE", href: "https://www.vaste.space/", target: "_blank" },
+        { label: "Projects", href: "./projects.html" },
+        { label: "Knowledge", href: "./knowledge/" },
       ],
-    );
+    });
   };
 
   const startGraphSurfaceAnimation = () => {
@@ -7144,11 +7533,6 @@ window.EA_SEARCH = {
       ctx.beginPath();
       ctx.arc(0, 0, Math.max(3.2, radius * 0.28), 0, Math.PI * 2);
       ctx.fill();
-      ctx.fillStyle = "rgba(255,255,255,0.9)";
-      ctx.font = "600 10px sans-serif";
-      ctx.textAlign = "center";
-      ctx.textBaseline = "top";
-      ctx.fillText(node.label, 0, radius + 8);
       ctx.restore();
     };
 
@@ -7510,23 +7894,6 @@ window.EA_SEARCH = {
           { label: "Work", href: "./work.html" },
         ],
       },
-      about: {
-        eyebrow: "ECOSYSTEM VIEW",
-        title: "Lineage map.",
-        copy: "Method, pillars and network.",
-        nodes: [
-          { label: "VOID", note: "Theory", href: "./research.html", x: "-15rem", y: "-8rem", z: "-15rem" },
-          { label: "PALIMPSESTS", note: "Art", href: "./work.html", x: "15rem", y: "-8rem", z: "15rem" },
-          { label: "VASTE", note: "Technology", href: "https://www.vaste.space/", target: "_blank", x: "-17rem", y: "1rem", z: "8rem", emphasis: true },
-          { label: "AtypikHouse", note: "Surface", href: "./projects.html", x: "17rem", y: "1rem", z: "-8rem" },
-          { label: "CreativeStuff.jpg", note: "Archive", href: "./archive.html", x: "-10rem", y: "14rem", z: "12rem" },
-          { label: "L’Œil de Meg", note: "Surface", href: "./work.html", x: "10rem", y: "14rem", z: "-12rem" },
-        ],
-        links: [
-          { label: "Work", href: "./work.html" },
-          { label: "Contact", href: "./contact.html" },
-        ],
-      },
       contact: {
         eyebrow: "CONTACT",
         title: "Contact paths.",
@@ -7749,6 +8116,124 @@ window.EA_SEARCH = {
 
   };
 
+  const initAmbientField = () => {
+    if (document.querySelector("[data-ambient-field]")) return;
+    const root = document.createElement("div");
+    root.className = "ambient-field";
+    root.setAttribute("data-ambient-field", "");
+    root.setAttribute("aria-hidden", "true");
+    root.innerHTML = "<canvas></canvas>";
+    document.body.prepend(root);
+
+    const canvas = root.querySelector("canvas");
+    const ctx = canvas?.getContext("2d");
+    if (!canvas || !ctx) return;
+
+    const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    let width = 0;
+    let height = 0;
+    let particles = [];
+    let rafId = 0;
+
+    const resize = () => {
+      const dpr = Math.max(1, Math.min(2, window.devicePixelRatio || 1));
+      width = Math.max(1, window.innerWidth);
+      height = Math.max(1, window.innerHeight);
+      canvas.width = Math.round(width * dpr);
+      canvas.height = Math.round(height * dpr);
+      canvas.style.width = `${width}px`;
+      canvas.style.height = `${height}px`;
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+
+      const anchors = [
+        { x: 0.2, y: 0.22, spreadX: 0.34, spreadY: 0.26, warmth: 1 },
+        { x: 0.75, y: 0.34, spreadX: 0.3, spreadY: 0.24, warmth: 0.78 },
+        { x: 0.45, y: 0.74, spreadX: 0.42, spreadY: 0.2, warmth: 0.9 },
+      ];
+      const count = Math.min(150, Math.max(72, Math.round((width * height) / 14500)));
+      particles = Array.from({ length: count }, (_, index) => {
+        const anchor = anchors[index % anchors.length];
+        const angle = index * 2.399963229728653;
+        const ring = Math.sqrt(((index * 37) % 101) / 101);
+        const offsetX = Math.cos(angle) * ring * width * anchor.spreadX;
+        const offsetY = Math.sin(angle * 1.17) * ring * height * anchor.spreadY;
+        const haze = index % 5 === 0;
+        return {
+          x: anchor.x * width + offsetX,
+          y: anchor.y * height + offsetY,
+          driftX: 8 + ((index * 11) % 23),
+          driftY: 7 + ((index * 17) % 21),
+          phase: index * 0.73,
+          phaseAlt: index * 1.19,
+          radius: haze ? 16 + (index % 7) * 2.8 : 1.2 + (index % 6) * 0.55,
+          alpha: haze ? 0.022 + (index % 4) * 0.006 : 0.055 + (index % 5) * 0.013,
+          warmth: anchor.warmth,
+          haze,
+        };
+      });
+    };
+
+    const draw = () => {
+      ctx.clearRect(0, 0, width, height);
+      const time = Date.now() * 0.001;
+      ctx.globalCompositeOperation = "lighter";
+
+      particles.forEach((particle) => {
+        const driftScale = reduceMotion ? 0 : 1;
+        const x =
+          particle.x +
+          Math.sin(time * 0.13 + particle.phase) * particle.driftX * driftScale +
+          Math.sin(time * 0.07 + particle.phaseAlt) * particle.driftY * 0.45 * driftScale;
+        const y =
+          particle.y +
+          Math.cos(time * 0.11 + particle.phaseAlt) * particle.driftY * driftScale +
+          Math.sin(time * 0.06 + particle.phase) * particle.driftX * 0.38 * driftScale;
+        const pulse = reduceMotion ? 0.5 : (Math.sin(time * 0.42 + particle.phase) + 1) * 0.5;
+        const radius = particle.radius + (particle.haze ? pulse * 4.5 : pulse * 0.85);
+        const alpha = particle.alpha * (0.68 + pulse * 0.38);
+
+        if (particle.haze) {
+          const gradient = ctx.createRadialGradient(x, y, 0, x, y, radius);
+          gradient.addColorStop(0, `rgba(247,244,239,${(alpha * particle.warmth).toFixed(3)})`);
+          gradient.addColorStop(0.48, `rgba(234,220,207,${(alpha * 0.46).toFixed(3)})`);
+          gradient.addColorStop(1, "rgba(247,244,239,0)");
+          ctx.fillStyle = gradient;
+        } else {
+          ctx.fillStyle = `rgba(247,244,239,${alpha.toFixed(3)})`;
+        }
+
+        ctx.beginPath();
+        ctx.arc(x, y, radius, 0, Math.PI * 2);
+        ctx.fill();
+      });
+      ctx.globalCompositeOperation = "source-over";
+
+      if (!reduceMotion && !document.hidden) rafId = requestAnimationFrame(draw);
+    };
+
+    const start = () => {
+      if (rafId || reduceMotion || document.hidden) return;
+      rafId = requestAnimationFrame(draw);
+    };
+    const stop = () => {
+      if (!rafId) return;
+      cancelAnimationFrame(rafId);
+      rafId = 0;
+    };
+
+    resize();
+    draw();
+    window.addEventListener("resize", () => {
+      resize();
+      if (reduceMotion) draw();
+    });
+    document.addEventListener("visibilitychange", () => {
+      if (document.hidden) stop();
+      else start();
+    });
+    start();
+  };
+
   const makeEntryHref = (item) => {
     if (!item) return "./index.html";
     const canonicalRoute = window.EA_CATALOG?.routeFor?.(item);
@@ -7772,6 +8257,7 @@ window.EA_SEARCH = {
       const max = document.documentElement.scrollHeight - window.innerHeight;
       const value = max > 0 ? Math.min(1, Math.max(0, window.scrollY / max)) : 0;
       progress.style.setProperty("--scroll-progress", String(value));
+      document.body.classList.toggle("is-page-scrolled", window.scrollY > 140);
       ticking = false;
     };
 
@@ -7953,7 +8439,9 @@ window.EA_SEARCH = {
     let frame = 0;
 
     const resolveScale = () => {
-      targetScale = pointerDown ? (hoveringInteractive ? 2.55 : 0.95) : hoveringInteractive ? 2.3 : 1;
+      targetScale = pointerDown ? (hoveringInteractive ? 1.16 : 0.82) : hoveringInteractive ? 1.52 : 1;
+      cursor.classList.toggle("is-interactive", hoveringInteractive);
+      cursor.classList.toggle("is-pressed", pointerDown);
     };
 
     const render = () => {
@@ -8140,6 +8628,7 @@ window.EA_SEARCH = {
     button.className = "command-fab";
     button.type = "button";
     button.setAttribute("aria-label", "Open quick navigation");
+    button.setAttribute("title", "Open quick navigation");
     button.innerHTML = "<span>Search</span><kbd>⌘K</kbd>";
 
     const palette = document.createElement("div");
@@ -8370,11 +8859,16 @@ window.EA_SEARCH = {
         const meta = cardText(card, ".card__meta");
         const copy = cardText(card, ".card__copy");
         const href = card.getAttribute("data-project-detail-link") || card.getAttribute("data-card-link") || card.querySelector("a[href]")?.getAttribute("href") || "";
+        const mediaNode = card.querySelector(".card-media-plate img");
+        const cardImageVar = getComputedStyle(card).getPropertyValue("--card-image").trim();
+        const cardImageMatch = cardImageVar.match(/url\((['\"]?)(.*?)\1\)/);
+        const mediaSrc = mediaNode?.currentSrc || mediaNode?.src || cardImageMatch?.[2] || "";
         const tags = [...card.querySelectorAll(".taxonomy-pill, .status-badge, .entity-badge")]
           .slice(0, 8)
           .map((node) => `<span class="${esc(node.className)}">${esc(node.textContent.trim())}</span>`)
           .join("");
         body.innerHTML = `
+          ${mediaSrc ? `<div class="quick-view__media" style="background-image:url('${esc(mediaSrc)}')" aria-hidden="true"></div>` : ""}
           <p class="card__meta">${esc(meta || "Quick view")}</p>
           <h2>${esc(title)}</h2>
           ${copy ? `<p>${esc(copy)}</p>` : ""}
@@ -8416,9 +8910,9 @@ window.EA_SEARCH = {
     dock.className = "ux-dock";
     dock.setAttribute("data-ux-dock", "");
     dock.innerHTML = `
-      <button type="button" data-ux-action="top" aria-label="Back to top">↑</button>
-      <button type="button" data-ux-action="compact" aria-label="Toggle compact view">▦</button>
-      <button type="button" data-ux-action="vivid" aria-label="Toggle vivid mode">◐</button>
+      <button type="button" data-ux-action="top" aria-label="Back to top" title="Back to top">↑</button>
+      <button type="button" data-ux-action="compact" aria-label="Toggle compact view" title="Toggle compact view">▦</button>
+      <button type="button" data-ux-action="vivid" aria-label="Toggle vivid mode" title="Toggle vivid mode">◐</button>
     `;
     document.body.append(dock);
 
@@ -8486,6 +8980,101 @@ window.EA_SEARCH = {
     document.addEventListener("pointerover", onIntent, { passive: true });
     document.addEventListener("touchstart", onIntent, { passive: true });
     document.addEventListener("focusin", onIntent);
+  };
+
+  const initProjectDossier = (root = document) => {
+    root.querySelectorAll("[data-project-moodboard]").forEach((board) => {
+      if (board.dataset.boundProjectMoodboard === "true") return;
+      board.dataset.boundProjectMoodboard = "true";
+      const filters = [...board.querySelectorAll("[data-project-mood-filter]")];
+      const assets = [...board.querySelectorAll("[data-project-mood-asset]")];
+      const activate = (filter) => {
+        filters.forEach((button) => {
+          const active = button.dataset.projectMoodFilter === filter;
+          button.classList.toggle("is-active", active);
+          button.setAttribute("aria-pressed", active ? "true" : "false");
+        });
+        assets.forEach((asset) => {
+          const visible = filter === "all" || asset.dataset.moodKind === filter;
+          asset.hidden = !visible;
+          asset.classList.toggle("is-muted", !visible);
+        });
+      };
+      filters.forEach((button) => {
+        button.addEventListener("click", () => activate(button.dataset.projectMoodFilter || "all"));
+      });
+    });
+
+    root.querySelectorAll("[data-project-tabs]").forEach((tabsRoot) => {
+      if (tabsRoot.dataset.boundProjectTabs === "true") return;
+      tabsRoot.dataset.boundProjectTabs = "true";
+      tabsRoot.classList.add("is-tabbed");
+
+      const tabs = [...tabsRoot.querySelectorAll("[data-project-tab]")];
+      const panels = [...tabsRoot.querySelectorAll("[data-project-panel]")];
+      const activate = (activeTab) => {
+        const targetId = activeTab.getAttribute("aria-controls");
+        tabs.forEach((tab) => {
+          const active = tab === activeTab;
+          tab.classList.toggle("is-active", active);
+          tab.setAttribute("aria-selected", active ? "true" : "false");
+          tab.tabIndex = active ? 0 : -1;
+        });
+        panels.forEach((panel) => {
+          panel.classList.toggle("is-active", panel.id === targetId);
+        });
+      };
+
+      tabs.forEach((tab, index) => {
+        tab.tabIndex = tab.classList.contains("is-active") ? 0 : -1;
+        tab.addEventListener("click", () => activate(tab));
+        tab.addEventListener("keydown", (event) => {
+          if (!["ArrowLeft", "ArrowRight", "Home", "End"].includes(event.key)) return;
+          event.preventDefault();
+          const nextIndex =
+            event.key === "Home"
+              ? 0
+              : event.key === "End"
+                ? tabs.length - 1
+                : event.key === "ArrowRight"
+                  ? (index + 1) % tabs.length
+                  : (index - 1 + tabs.length) % tabs.length;
+          tabs[nextIndex].focus();
+          activate(tabs[nextIndex]);
+        });
+      });
+    });
+
+    root.querySelectorAll("[data-project-process]").forEach((process) => {
+      if (process.dataset.boundProjectProcess === "true") return;
+      process.dataset.boundProjectProcess = "true";
+      process.addEventListener("click", (event) => {
+        const item = event.target.closest("[data-project-step]");
+        if (!item || !process.contains(item)) return;
+        process.querySelectorAll("[data-project-step]").forEach((step) => step.classList.remove("is-active"));
+        item.classList.add("is-active");
+      });
+    });
+
+    root.querySelectorAll("[data-project-graph]").forEach((graph) => {
+      if (graph.dataset.boundProjectGraph === "true") return;
+      graph.dataset.boundProjectGraph = "true";
+      const detail = graph.querySelector("[data-project-graph-detail]");
+      const label = detail?.querySelector("[data-project-graph-label]");
+      const title = detail?.querySelector("[data-project-graph-title]");
+      const statement = detail?.querySelector("[data-project-graph-statement]");
+      const nodes = [...graph.querySelectorAll("[data-project-graph-node]")];
+      const activate = (node) => {
+        nodes.forEach((item) => item.classList.toggle("is-active", item === node));
+        if (label) label.textContent = node.dataset.relationLabel || "";
+        if (title) {
+          title.textContent = node.dataset.relationTitle || "";
+          title.setAttribute("href", node.dataset.relationHref || "#");
+        }
+        if (statement) statement.textContent = node.dataset.relationStatement || "";
+      };
+      nodes.forEach((node) => node.addEventListener("click", () => activate(node)));
+    });
   };
 
   const initContactDiscovery = () => {
@@ -8776,11 +9365,16 @@ window.EA_SEARCH = {
   };
 
   const initUXEnhancements = (filterState) => {
+    initAmbientField();
     initScrollProgress();
     initAutoHideHeader();
+    initDesktopCursor();
     initReveal();
     initFilterSummaries(filterState);
+    initProjectDossier();
     scheduleIdle(() => {
+      initCommandPalette();
+      initUXDock();
       initCardSpotlight();
       initDragRails();
       initImageLightbox();
@@ -8796,6 +9390,7 @@ window.EA_SEARCH = {
     initQuickView(root);
     initTaxonomyPills(root);
     initLyricsHighlights(root);
+    initProjectDossier(root);
   };
 
   const syncNavigationState = (current) => {
@@ -8856,7 +9451,7 @@ window.EA_SEARCH = {
 
     if (current === "mentions-legales") document.title = "Legal Notice | Electronic Artefacts";
     if (current === "confidentialite") document.title = "Privacy Policy | Electronic Artefacts";
-    if (current === "programs") document.title = "Programs and Runtimes | Electronic Artefacts";
+    if (current === "programs") document.title = "Programs, Repo Access and Runtimes | Electronic Artefacts";
     if (current === "projects") document.title = "Projects | Electronic Artefacts";
     if (current === "search") document.title = "Search | Electronic Artefacts";
   };
@@ -8901,7 +9496,7 @@ window.EA_SEARCH = {
       index: fallbackDescription,
       work: "Explore digital products, knowledge platforms, creative technology and public systems designed by Electronic Artefacts.",
       research: "Research across technology, knowledge systems, culture, governance, perception and creative production.",
-      programs: "Discover the runtimes, software programs and architectural systems behind Electronic Artefacts projects.",
+      programs: "Explore Electronic Artefacts software programs available through repository access, pilots, implementation work and licensing conversations.",
       projects: "Explore Electronic Artefacts projects across software, cultural platforms, artistic production and client systems.",
       archive: "Browse releases, prototypes, documents, research logs and unfinished material preserved by Electronic Artefacts.",
       about: "Electronic Artefacts is an independent creative technology studio connecting research, software, design and cultural production.",
@@ -9102,12 +9697,27 @@ window.EA_SEARCH = {
     latestArtefacts,
     routeCard,
   } = window.EA_VIEW;
-  const { graphSurface, crossNavigation, uxSurface, nodesFromItems, ecosystemExplorer, startGraphSurfaceAnimation, pageLens } = window.EA_SURFACE;
+  const { crossNavigation, uxSurface, nodesFromItems, ecosystemExplorer, startGraphSurfaceAnimation, pageLens } = window.EA_SURFACE;
   const indexes = catalog.indexes || {};
   const entityIndex = indexes.byId || {};
   const titleIndex = indexes.byTitleSlug || {};
   const timelineIndex = indexes.timelinesByEntityId || {};
   const activityIndex = indexes.activityByEntityId || {};
+  const contactEmail = "electronic.artefacts@gmail.com";
+  const mailto = (subject, body = "") =>
+    `mailto:${contactEmail}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+  const programAccessMailto = mailto(
+    "Program repository access request",
+    [
+      "Program or repository:",
+      "GitHub username:",
+      "Organization or practice:",
+      "Use case:",
+      "Commercial context:",
+      "Requested access window:",
+      "NDA, licensing or procurement constraints:",
+    ].join("\n"),
+  );
 
   const workTaxonomy = () => {
     const groups = [
@@ -9556,47 +10166,25 @@ window.EA_SEARCH = {
     },
   ];
 
-  const aboutMap = () =>
-    graphSurface({
-      eyebrow: "ECOSYSTEM VIEW",
-      title: "Electronic Artefacts as an evolving ecosystem.",
-      copy: "Research, programs, projects and archive stay linked as one trunk with multiple public surfaces.",
-      coreLabel: catalog.ecosystem?.root || "Electronic Artefacts",
-      coreCopy: "Research → Programs → Projects → Archive",
-      nodes: aboutDivisions.map((division) => ({
-        label: division.nodeLabel,
-        note: division.meta,
-        href: division.href || `#${division.id}`,
-        x: division.x,
-        y: division.y,
-        z: division.z,
-        emphasis: Boolean(division.emphasis),
-      })),
-      actions: [
-        { label: "Overview", href: "#about-overview" },
-        { label: "Layers", href: "#about-layers" },
-        { label: "Entities", href: "#about-entities" },
-      ],
-    });
-
   const aboutNetwork = () => `
     <div class="stack">
       <section class="zone-card hero" id="about-overview">
         <div class="section-head">
           <p class="eyebrow">ABOUT</p>
-          <h2>The trunk before the branches.</h2>
-          <p class="lede">Electronic Artefacts is a creative systems ecosystem. Research feeds programs, programs shape projects, and projects accumulate into archive.</p>
+          <h2>What Electronic Artefacts is.</h2>
+          <p class="lede">An independent creative technology studio for products and platforms that need strategy, system architecture, interface design, implementation and cultural context to stay aligned.</p>
         </div>
         <div class="split">
           <article class="panel panel--soft">
-            <p class="card__meta">How it works</p>
-            <p class="card__copy">Research produces methods and hypotheses. Programs turn those methods into reusable systems. Projects translate the systems into public works and client outcomes. Archive preserves the traces so the cycle remains legible.</p>
-            <p class="card__copy">The project is not a conventional agency because the output is not a service menu. It is a system that can express itself as software, research, cultural production and memory.</p>
+            <p class="card__meta">Institutional role</p>
+            <h3 class="card__title">Studio, software lab and publishing line, in that order.</h3>
+            <p class="card__copy">The primary public identity is a studio. Client work proves the approach, proprietary programs extend it, and research or artistic publishing keeps the deeper context available.</p>
+            <p class="card__copy">This hierarchy prevents the label, archive and research language from competing with the simple answer: Electronic Artefacts designs and builds complex digital systems.</p>
           </article>
           <article class="panel panel--soft">
-            <p class="card__meta">The cycle</p>
+            <p class="card__meta">Operating cycle</p>
             <h3 class="card__title">Research → Programs → Projects → Archive</h3>
-            <p class="card__copy">That is the trunk. Everything else is a branch, a manifestation or a trace.</p>
+            <p class="card__copy">Research produces methods and hypotheses. Programs turn those methods into reusable systems. Projects translate the systems into public works and client outcomes. Archive preserves the evidence.</p>
             ${tagRow(["Research", "Programs", "Projects", "Archive"], { compact: true })}
             <div class="link-row">
               <a class="tag" href="./research.html">Enter Research</a>
@@ -9712,9 +10300,11 @@ window.EA_SEARCH = {
   const contactDiscovery = () => `
     <section class="zone-card contact-discovery" data-contact-discovery>
       <div class="contact-discovery__intro">
-        <p class="eyebrow">PROJECT / COLLABORATION DISCOVERY</p>
-        <h1 class="display-title">What should exist that doesn’t exist yet?</h1>
-        <p class="lede">Describe the situation in your own words. This interface organizes your intent into a concise brief. Classification happens locally in your browser.</p>
+        <div>
+          <p class="eyebrow">PROJECT / COLLABORATION DISCOVERY</p>
+          <h1 class="display-title">What should exist that doesn’t exist yet?</h1>
+          <p class="lede">Describe the situation in your own words. This interface organizes your intent into a concise brief. Classification happens locally in your browser.</p>
+        </div>
       </div>
       <div class="contact-command">
         <label class="sr-only" for="contact-intent">Describe your idea, project or collaboration</label>
@@ -9907,6 +10497,19 @@ window.EA_SEARCH = {
         proof: `${assetDocumentation} the public surface, admin layer and performance signals.`,
         next: "Start with the visuals, then continue through scope, status and system placement.",
         cta: item.links?.[0] || { label: "Browse Projects", href: "./projects.html" },
+      };
+    }
+
+    if (heroMode === "person" || item.kind === "artist") {
+      const profile = item.artistProfile || {};
+      return {
+        title: "Read this as an artist profile.",
+        intro: profile.headline || `${item.title} is mapped through ${mediumPhrase} and connected work inside the Electronic Artefacts catalogue.`,
+        why: profile.intro || "Artist pages give collaborators their own public context, then keep production work, credits and nearby projects connected underneath.",
+        inspect: ["The artist position", "The connected work", "The production or collaboration notes"],
+        proof: `${status} status, ${galleryCount ? countLabel(galleryCount, "portrait asset") : "artist context"} and ${relationPhrase}.`,
+        next: "Move from the profile into the connected project, or return to the work catalogue to compare the wider artistic line.",
+        cta: item.links?.[0] || { label: "Open Work", href: "./work.html" },
       };
     }
 
@@ -10193,6 +10796,344 @@ window.EA_SEARCH = {
   };
 
   const projectMediaFolder = (item) => item.media?.folder || `./assets/media/projects/${item.id}`;
+
+  const projectDesignPattern =
+    /\b(art direction|brand|branding|charte|cover|design|identity|logo|mark|mood|moodboard|monogram|palette|picto|signage|symbol|ui|visual|wordmark)\b/i;
+  const projectIdentityPattern = /\b(brand|branding|cover|identity|logo|mark|monogram|picto|symbol|wordmark)\b/i;
+  const projectInterfacePattern = /\b(admin|app|dashboard|flow|interface|landing|mobile|navigation|page|portfolio|screen|site|ui|ux)\b/i;
+  const projectAtmospherePattern = /\b(atmosphere|forest|hero|image|mood|moodboard|room|signage|suite|texture|visual)\b/i;
+  const projectSwatchMap = {
+    amber: "#d89f4f",
+    black: "#050505",
+    blue: "#2563eb",
+    cream: "#eadccf",
+    gold: "#d8b86a",
+    gray: "#8d8f95",
+    grey: "#8d8f95",
+    green: "#4f7d5d",
+    ink: "#111115",
+    ivory: "#f2eadf",
+    navy: "#13213a",
+    "navy blue": "#13213a",
+    orange: "#d97738",
+    red: "#b94a48",
+    slate: "#334155",
+    white: "#f7f4ef",
+  };
+  const projectFallbackSwatches = ["#f2eadf", "#161616", "#7dd3fc", "#4f7d5d", "#d8b86a", "#8d8f95"];
+  const compactUnique = (values) => [...new Set((values || []).filter(Boolean))];
+  const labelize = (value) => String(value || "").replace(/[-_]+/g, " ").replace(/\s+/g, " ").trim();
+  const projectMediaText = (media) => [media.src, media.alt, media.caption, media.id].filter(Boolean).join(" ");
+  const projectText = (item) =>
+    [
+      item.title,
+      item.subtitle,
+      item.summary,
+      item.description,
+      item.category,
+      item.type,
+      ...(item.tags || []),
+      ...(item.discipline || []),
+      ...(item.medium || []),
+      ...(item.visualLanguage || []),
+      ...(item.textures || []),
+      ...(item.symbols || []),
+    ]
+      .filter(Boolean)
+      .join(" ");
+  const projectVisualGroup = (media) => {
+    const text = projectMediaText(media);
+    if (projectIdentityPattern.test(text)) return "identity";
+    if (projectInterfacePattern.test(text)) return "interface";
+    if (projectAtmospherePattern.test(text)) return "atmosphere";
+    return "reference";
+  };
+  const projectMediaHasVisualSignal = (media) => {
+    const text = projectMediaText(media);
+    return projectDesignPattern.test(text) || projectIdentityPattern.test(text) || projectInterfacePattern.test(text) || projectAtmospherePattern.test(text);
+  };
+  const projectDesignAssets = (item) => {
+    const gallery = item.media?.gallery || [];
+    const matches = gallery.filter(projectMediaHasVisualSignal);
+    if (matches.length) return matches;
+    return projectDesignPattern.test(projectText(item)) ? gallery.filter(Boolean).slice(0, 8) : [];
+  };
+  const projectHasArtDirection = (item) =>
+    Boolean(item.visualLanguage?.length || item.textures?.length || item.symbols?.length || projectDesignAssets(item).length);
+  const projectSwatchColor = (token, index) => projectSwatchMap[String(token || "").toLowerCase().trim()] || projectFallbackSwatches[index % projectFallbackSwatches.length];
+  const projectVisualTokens = (item) => {
+    if (item.visualLanguage?.length) return compactUnique(item.visualLanguage).slice(0, 6);
+    return compactUnique([
+      ...(item.discipline || []).filter((value) => projectDesignPattern.test(value)),
+      ...(item.tags || []).filter((value) => projectDesignPattern.test(value)),
+    ]).slice(0, 6);
+  };
+  const projectMoodCues = (item) =>
+    compactUnique([...(item.textures || []), ...(item.symbols || []), ...(item.discipline || []), ...(item.tags || [])]).slice(0, 10);
+
+  const projectMoodboardPanel = (item) => {
+    if (item.kind !== "project" || !projectHasArtDirection(item)) return "";
+    const assets = projectDesignAssets(item);
+    const identityAssets = assets.filter((media) => projectVisualGroup(media) === "identity");
+    const groups = compactUnique(assets.map((media) => projectVisualGroup(media)));
+    const visualTokens = projectVisualTokens(item);
+    const cues = projectMoodCues(item);
+
+    return panelShell(
+      "Art direction",
+      "Moodboard, marks and graphic system pulled from the project assets.",
+      `
+        <div class="project-moodboard project-moodboard--runtime" data-project-moodboard>
+          <div class="project-moodboard__intro">
+            <div>
+              <p class="card__meta">Moodboard</p>
+              <h3 class="card__title">${esc(identityAssets.length ? "Identity, atmosphere and interface cues." : "Visual language attached to the project.")}</h3>
+            </div>
+            ${
+              groups.length > 1
+                ? `<div class="project-moodboard__filters" aria-label="Moodboard asset filters">
+                    <button class="project-command__tab is-active" type="button" aria-pressed="true" data-project-mood-filter="all">All</button>
+                    ${groups
+                      .map(
+                        (group) =>
+                          `<button class="project-command__tab" type="button" aria-pressed="false" data-project-mood-filter="${esc(group)}">${esc(labelize(group))}</button>`,
+                      )
+                      .join("")}
+                  </div>`
+                : ""
+            }
+          </div>
+          <div class="project-moodboard__layout">
+            <article class="panel panel--soft project-moodboard__identity">
+              <p class="card__meta">Identity kit</p>
+              <h3 class="card__title">${esc(identityAssets.length ? countLabel(identityAssets.length, "mark asset") : item.subtitle || item.type || "Visual system")}</h3>
+              <p class="card__copy">${esc(identityAssets[0]?.caption || item.summary || item.description || "")}</p>
+              ${
+                identityAssets.length
+                  ? `<div class="project-moodboard__logo-rail">
+                      ${identityAssets
+                        .slice(0, 3)
+                        .map(
+                          (media) => `
+                            <figure>
+                              ${mediaFigureMarkup(media, item, "project-moodboard__logo")}
+                            </figure>
+                          `,
+                        )
+                        .join("")}
+                    </div>`
+                  : tagRow(visualTokens, { compact: true, limit: 6 })
+              }
+            </article>
+            <div class="project-moodboard__canvas">
+              ${assets
+                .slice(0, 10)
+                .map((media, index) => {
+                  const group = projectVisualGroup(media);
+                  return `
+                    <figure class="project-moodboard__asset project-moodboard__asset--${index % 5}" data-project-mood-asset data-mood-kind="${esc(group)}">
+                      ${mediaFigureMarkup(media, item, "project-moodboard__media")}
+                      ${media.caption ? `<figcaption>${esc(media.caption)}</figcaption>` : ""}
+                    </figure>
+                  `;
+                })
+                .join("")}
+            </div>
+            <aside class="panel panel--soft project-moodboard__system">
+              <p class="card__meta">Graphic charter</p>
+              <div class="project-moodboard__swatches" aria-label="Visual language">
+                ${(visualTokens.length ? visualTokens : ["Identity", "Interface", "Material"])
+                  .map(
+                    (token, index) => `
+                      <span class="project-moodboard__swatch">
+                        <i style="--swatch: ${esc(projectSwatchColor(token, index))}" aria-hidden="true"></i>
+                        <strong>${esc(token)}</strong>
+                      </span>
+                    `,
+                  )
+                  .join("")}
+              </div>
+              ${cues.length ? `<div class="project-moodboard__cues"><p class="card__meta">Cues</p>${tagRow(cues, { compact: true, limit: 10 })}</div>` : ""}
+            </aside>
+          </div>
+        </div>
+      `,
+    );
+  };
+
+  const projectDevelopmentPanel = (item) => {
+    if (item.kind !== "project") return "";
+    const architecture = item.architecture || {};
+    const layers = compactUnique([...(architecture.layers || []), ...(item.umosArchitecture?.layers || [])]).slice(0, 10);
+    const stack = Array.isArray(architecture.stack)
+      ? architecture.stack
+      : String(architecture.stack || item.umosArchitecture?.stack?.join(", ") || "")
+          .split(/,\s*|\s+and\s+/)
+          .map((value) => value.trim())
+          .filter(Boolean);
+    const relatedSystems = compactUnique([
+      ...(item.relatedPrograms || []),
+      ...(item.relations?.dependencies || []),
+      ...(item.relations?.poweredBy || []),
+    ]);
+    const related = resolveIds(relatedSystems).slice(0, 6);
+
+    return panelShell(
+      "Development",
+      architecture.note || "Architecture, implementation logic and system dependencies.",
+      `
+        <div class="project-discipline project-discipline--dev">
+          <div class="project-discipline__grid">
+            <article class="panel panel--soft project-discipline__card project-discipline__card--lead">
+              <p class="card__meta">Build surface</p>
+              <h3 class="card__title">${esc(architecture.surface || item.type || item.category || "Project system")}</h3>
+              <p class="card__copy">${esc(architecture.surfaceCopy || item.description || item.summary || "")}</p>
+            </article>
+            <article class="panel panel--soft project-discipline__card">
+              <p class="card__meta">Stack</p>
+              <h3 class="card__title">${esc(stack.length ? countLabel(stack.length, "stack signal") : architecture.stack || item.program || "System stack")}</h3>
+              ${stack.length ? tagRow(stack, { compact: true, limit: 8 }) : `<p class="card__copy">${esc(architecture.stackCopy || "Stack details appear when the project record exposes them.")}</p>`}
+            </article>
+            <article class="panel panel--soft project-discipline__card">
+              <p class="card__meta">Layers</p>
+              <h3 class="card__title">${esc(layers.length ? countLabel(layers.length, "layer") : "Layer model")}</h3>
+              ${layers.length ? tagRow(layers, { compact: true, limit: 10 }) : `<p class="card__copy">${esc(architecture.layerCopy || "Layered architecture will appear here when available.")}</p>`}
+            </article>
+            <article class="panel panel--soft project-discipline__card">
+              <p class="card__meta">Connected systems</p>
+              <h3 class="card__title">${esc(related.length ? countLabel(related.length, "system") : item.program || item.statusLabel || item.status || "Project graph")}</h3>
+              ${
+                related.length
+                  ? `<div class="project-discipline__links">${related.map((entry) => `<a class="tag" href="${esc(entryHref(entry))}">${esc(entry.title)}</a>`).join("")}</div>`
+                  : `<p class="card__copy">Runtime dependencies and related programs are shown when the graph records them.</p>`
+              }
+            </article>
+          </div>
+        </div>
+      `,
+    );
+  };
+
+  const projectMarketingPanel = (item) => {
+    if (item.kind !== "project") return "";
+    const galleryCount = item.media?.gallery?.length || 0;
+    const audience = compactUnique([
+      item.client,
+      item.artist,
+      ...(item.stakeholders || []),
+      ...(item.medium || []),
+      ...(item.discipline || []),
+    ]).slice(0, 8);
+    const proof = compactUnique([
+      item.statusLabel || item.status,
+      item.visibility,
+      galleryCount ? countLabel(galleryCount, "asset") : "",
+      ...(item.researchOutcomes || []),
+      ...(item.lessonsLearned || []),
+    ]).slice(0, 6);
+    const messaging = compactUnique([item.category, item.type, ...(item.tags || []), ...(item.subThemes || [])]).slice(0, 10);
+
+    return panelShell(
+      "Marketing",
+      "Positioning, audience, message and proof signals.",
+      `
+        <div class="project-discipline project-discipline--marketing">
+          <div class="project-marketing__grid">
+            <article class="panel panel--soft project-marketing__statement">
+              <p class="card__meta">Positioning</p>
+              <h3 class="card__title">${esc(item.summary || item.subtitle || item.type || "Project positioning")}</h3>
+              <p class="card__copy">${esc(item.description || item.coreIdea || "")}</p>
+            </article>
+            <article class="panel panel--soft project-discipline__card">
+              <p class="card__meta">Audience</p>
+              <h3 class="card__title">${esc(audience.length ? countLabel(audience.length, "audience signal") : "Audience")}</h3>
+              ${audience.length ? tagRow(audience, { compact: true, limit: 8 }) : `<p class="card__copy">Audience groups appear when client, stakeholder or medium data is present.</p>`}
+            </article>
+            <article class="panel panel--soft project-discipline__card">
+              <p class="card__meta">Proof</p>
+              <h3 class="card__title">${esc(proof.length ? countLabel(proof.length, "signal") : "Proof pending")}</h3>
+              <ul class="project-list">
+                ${proof.map((value) => `<li>${esc(value)}</li>`).join("")}
+              </ul>
+            </article>
+            <article class="panel panel--soft project-discipline__card">
+              <p class="card__meta">Messaging fields</p>
+              <h3 class="card__title">${esc(item.subtitle || item.category || item.type || "Message system")}</h3>
+              ${messaging.length ? tagRow(messaging, { compact: true, limit: 10 }) : ""}
+            </article>
+          </div>
+        </div>
+      `,
+    );
+  };
+
+  const projectDossierReaderPanel = (item) => {
+    if (item.kind !== "project") return "";
+    const dossier = item.marketingDossier || item.dossier;
+    if (!dossier?.src) return "";
+    const panelId = `${item.id || "project"}-dossier-marketing`;
+    const readerSrc = `${dossier.src}#toolbar=1&navpanes=0&view=FitH`;
+    const highlights = compactUnique(dossier.highlights || []).slice(0, 6);
+    const credits = Array.isArray(item.credits) ? item.credits : [];
+    const creditItems = credits.map((credit) => ({
+      label: credit.label || labelize(credit.id || ""),
+      value: credit.role || "Contribution",
+    }));
+    const stats = [
+      dossier.pages ? { label: "Pages", value: String(dossier.pages) } : null,
+      dossier.format ? { label: "Format", value: dossier.format } : null,
+      dossier.fileSize ? { label: "Web PDF", value: dossier.fileSize } : null,
+      dossier.year ? { label: "Year", value: dossier.year } : null,
+    ].filter(Boolean);
+
+    return `
+      <section class="panel knowledge-panel project-pdf-panel" id="${esc(panelId)}">
+        <div class="project-pdf-reader">
+          <div class="project-pdf-reader__intro">
+            ${
+              dossier.cover
+                ? `
+                  <figure class="project-pdf-reader__cover">
+                    <img src="${esc(dossier.cover)}" alt="${esc(`${dossier.title || item.title} cover`)}" loading="lazy" decoding="async" />
+                  </figure>
+                `
+                : ""
+            }
+            <div class="project-pdf-reader__copy">
+              <p class="card__meta">${esc(dossier.agency ? `Dossier marketing / ${dossier.agency}` : "Dossier marketing")}</p>
+              <h2 class="card__title">${esc(dossier.title || `${item.title} dossier`)}</h2>
+              ${dossier.subtitle ? `<p class="lede">${esc(dossier.subtitle)}</p>` : ""}
+              ${dossier.copy ? `<p class="card__copy">${esc(dossier.copy)}</p>` : ""}
+              ${stats.length ? `
+                <div class="project-pdf-reader__metrics" aria-label="Dossier details">
+                  ${stats.map((stat) => `
+                    <span>
+                      <strong>${esc(stat.value)}</strong>
+                      <em>${esc(stat.label)}</em>
+                    </span>
+                  `).join("")}
+                </div>
+              ` : ""}
+              ${creditItems.length ? `
+                <div class="project-pdf-reader__credits">
+                  <p class="card__meta">Credits</p>
+                  ${metadataList(creditItems)}
+                </div>
+              ` : ""}
+              ${highlights.length ? tagRow(highlights, { compact: true, limit: 6 }) : ""}
+              <div class="button-row button-row--compact">
+                <a class="button button--primary" href="${esc(dossier.src)}" target="_blank" rel="noreferrer">Open PDF</a>
+                <a class="button button--secondary" href="${esc(dossier.src)}" download="${esc(`${item.id || "project"}-marketing-dossier.pdf`)}">Download</a>
+              </div>
+            </div>
+          </div>
+          <div class="project-pdf-reader__viewport" role="region" aria-label="${esc(`${dossier.title || item.title} PDF reader`)}">
+            <iframe class="project-pdf-reader__frame" title="${esc(dossier.title || `${item.title} PDF dossier`)}" src="${esc(readerSrc)}" loading="lazy"></iframe>
+          </div>
+        </div>
+      </section>
+    `;
+  };
 
   const projectArchitecturePanel = (item) => {
     if (item.kind !== "project") return "";
@@ -10559,6 +11500,69 @@ window.EA_SEARCH = {
     );
   };
 
+  const artistProfilePanels = (item) => {
+    if (item.kind !== "artist") return "";
+    const profile = item.artistProfile || {};
+    const focus = compactValues([...(profile.focus || []), ...(item.discipline || []), ...(item.medium || [])]).slice(0, 8);
+    const connected = resolveIds([
+      ...(item.relatedProjects || []),
+      ...(item.relations?.children || []),
+      ...(item.relations?.relatedTo || []),
+      ...(item.relations?.parent || []),
+    ]);
+    const uniqueConnected = connected.filter((entry, index, entries) => entries.findIndex((candidate) => candidate?.id === entry?.id) === index);
+    const credits = Array.isArray(profile.credits) && profile.credits.length
+      ? profile.credits
+      : [
+          { label: "Role", value: item.role || item.subtitle || item.type },
+          { label: "Connected work", value: uniqueConnected[0]?.title },
+          { label: "Medium", value: readableList(item.medium || []) },
+        ];
+    const notes = compactValues(profile.notes || []);
+
+    return `
+      <section class="detail-grid artist-profile-grid" aria-label="${esc(item.title)} artist profile">
+        <article class="panel artist-profile-card artist-profile-card--lead">
+          <div class="section-head">
+            <p class="card__meta">Artist profile</p>
+            <h2 class="card__title">${esc(profile.headline || item.subtitle || item.type || item.title)}</h2>
+            <p class="lede">${esc(profile.intro || item.description || item.summary || "")}</p>
+          </div>
+          ${focus.length ? tagRow(focus, { limit: 8, compact: true }) : ""}
+        </article>
+        <article class="panel artist-profile-card">
+          <p class="card__meta">Collaboration</p>
+          <p class="card__copy">${esc(profile.collaboration || item.description || item.summary || "")}</p>
+        </article>
+        <article class="panel artist-profile-card">
+          <p class="card__meta">Credits</p>
+          ${metadataList(credits)}
+        </article>
+        <article class="panel artist-profile-card artist-profile-card--wide">
+          <p class="card__meta">Connected work</p>
+          ${
+            uniqueConnected.length
+              ? `<div class="link-row">${uniqueConnected
+                  .slice(0, 6)
+                  .map((entry) => `<a class="tag" href="${esc(entryHref(entry))}">${esc(entry.title)}</a>`)
+                  .join("")}</div>`
+              : `<p class="card__copy">No connected public work is attached yet.</p>`
+          }
+        </article>
+        ${
+          notes.length
+            ? `<article class="panel artist-profile-card">
+                <p class="card__meta">Notes</p>
+                <ul class="detail-editorial-list">
+                  ${notes.map((note) => `<li>${esc(note)}</li>`).join("")}
+                </ul>
+              </article>`
+            : ""
+        }
+      </section>
+    `;
+  };
+
   const unionMobDossierPanels = (item) => {
     if (item.id !== "unionmob") return "";
 
@@ -10763,7 +11767,14 @@ window.EA_SEARCH = {
 
   const projectPanels = (item) => {
     if (item.kind !== "project") return "";
-    return [projectGalleryPanel(item), projectArchitecturePanel(item)].filter(Boolean).join("");
+    return [
+      projectMoodboardPanel(item),
+      projectDevelopmentPanel(item),
+      projectMarketingPanel(item),
+      projectDossierReaderPanel(item),
+      projectGalleryPanel(item),
+      projectArchitecturePanel(item),
+    ].filter(Boolean).join("");
   };
 
   const projectSpecificPanels = (item) => {
@@ -10790,6 +11801,49 @@ window.EA_SEARCH = {
       item.domain,
       item.systemGroup,
     ].filter(Boolean);
+    const commercialProfile = {
+      vaste: {
+        access: "Private repository review",
+        engagement: "Runtime pilot / licensing / implementation",
+        evaluation: ["Graph model", "Identity and permissions", "Context execution", "Projection surfaces"],
+        buyerFit: ["Knowledge platforms", "Cultural infrastructure", "Product teams", "Research partners"],
+      },
+      forge: {
+        access: "Gated prototype review",
+        engagement: "Creative pipeline pilot",
+        evaluation: ["Generation pipelines", "Refinement loops", "Asset structures", "Production workflows"],
+        buyerFit: ["Studios", "Artists", "Media teams", "R&D partners"],
+      },
+      "oreth-program": {
+        access: "Research repository review",
+        engagement: "Audio research pilot",
+        evaluation: ["Signal analysis", "Event detection", "Pattern recognition", "Adaptive learning"],
+        buyerFit: ["Audio labs", "Artists", "Research groups", "Cultural partners"],
+      },
+      "ea-lightweight-template": {
+        access: "Implementation package",
+        engagement: "Template transfer / production setup",
+        evaluation: ["Static surfaces", "Design system", "Content structure", "Deployment workflow"],
+        buyerFit: ["Small teams", "Studios", "Cultural projects", "Independent brands"],
+      },
+      oraclehub: {
+        access: "Architecture archive review",
+        engagement: "Distributed-data advisory",
+        evaluation: ["Oracle entities", "Worker pipelines", "Data contracts", "Runtime lineage"],
+        buyerFit: ["Data teams", "Research partners", "Prediction systems", "Platform architects"],
+      },
+      arca: {
+        access: "Archive review",
+        engagement: "Traceability and certification advisory",
+        evaluation: ["Digital assets", "Certification", "Authenticity", "Lineage"],
+        buyerFit: ["Archive teams", "Cultural platforms", "Asset systems", "Collectors"],
+      },
+    }[item.id] || {
+      access: "Scoped repository or documentation review",
+      engagement: "Technical review / implementation",
+      evaluation: (item.tags || []).slice(0, 4),
+      buyerFit: ["Partners", "Technical teams", "Cultural projects", "Product owners"],
+    };
 
     return `
       <section class="detail-grid program-detail-grid">
@@ -10842,6 +11896,34 @@ window.EA_SEARCH = {
           </div>
         </article>
       </section>
+      <section class="detail-grid program-commercial-detail">
+        <article class="panel program-detail-panel program-detail-panel--lead">
+          <div class="section-head">
+            <p class="card__meta">Commercial access</p>
+            <h2 class="card__title">Evaluate, license or build with ${esc(item.title)}.</h2>
+            <p class="card__copy">Repository access is granted case by case. The first step is a short brief that identifies the program, intended use, GitHub account and commercial context.</p>
+          </div>
+          ${metadataList([
+            { label: "Access mode", value: commercialProfile.access },
+            { label: "Engagement", value: commercialProfile.engagement },
+            { label: "Maintainer", value: "Electronic Artefacts" },
+          ])}
+          <div class="button-row button-row--compact">
+            <a class="button button--primary" href="${esc(programAccessMailto)}">Request repo access</a>
+            <a class="button button--secondary" href="./contact.html">Discuss implementation</a>
+          </div>
+        </article>
+        <article class="panel program-detail-panel">
+          <p class="card__meta">What can be reviewed</p>
+          <p class="card__copy">A qualified review can include code, architecture notes, setup constraints, roadmap context and licensing boundaries.</p>
+          ${tagRow(commercialProfile.evaluation, { compact: true })}
+        </article>
+        <article class="panel program-detail-panel">
+          <p class="card__meta">Best fit</p>
+          <p class="card__copy">The programs are sold as technical assets, pilots or implementation foundations rather than as generic SaaS subscriptions.</p>
+          ${tagRow(commercialProfile.buyerFit, { compact: true })}
+        </article>
+      </section>
     `;
   };
 
@@ -10875,7 +11957,7 @@ window.EA_SEARCH = {
         ? "project"
         : item.kind === "archive" || item.kind === "artefact"
           ? "archive"
-          : item.kind === "person"
+          : item.kind === "person" || item.kind === "artist"
             ? "person"
             : item.kind === "program" || item.kind === "channel"
               ? "program"
@@ -10904,11 +11986,13 @@ window.EA_SEARCH = {
       }
       return uniqueActions(actions).slice(0, 3);
     })();
-    const heroActions = [
-      ...primaryLinks.slice(0, 1),
+    const heroActions = uniqueActions([
+      ...primaryLinks.slice(0, item.kind === "artist" ? 3 : 1),
+      ...(item.kind === "artist" ? [{ label: "Work", href: "./work.html" }] : []),
       ...(item.kind === "project" ? [{ label: "Open Dossier", href: `./project-rl.html?id=${encodeURIComponent(item.id)}` }] : []),
-    ];
+    ]).slice(0, item.kind === "artist" ? 3 : 2);
     const detailIntro = item.kind === "program" ? programSpecificPanels(item) : "";
+    const artistIntro = item.kind === "artist" ? artistProfilePanels(item) : "";
     const specificPanels =
       item.id === "palimpsests"
         ? projectSpecificPanels(item)
@@ -10932,6 +12016,7 @@ window.EA_SEARCH = {
         </section>
         ${detailEditorialPanel(item, heroMode, relatedCount, signatureActions)}
         ${detailIntro}
+        ${artistIntro}
         ${specificPanels ? `<section class="detail-grid">${specificPanels}</section>` : ""}
         ${visualPanels ? `<section class="detail-grid project-visual-section">${visualPanels}</section>` : ""}
         <section class="detail-grid">
@@ -10968,6 +12053,7 @@ window.EA_SEARCH = {
       </section>
       ${detailEditorialPanel(item, heroMode, relatedCount, heroActions)}
       ${detailIntro}
+      ${artistIntro}
       ${specificPanels ? `<section class="detail-grid">${specificPanels}</section>` : ""}
       ${visualPanels ? `<section class="detail-grid project-visual-section">${visualPanels}</section>` : ""}
       <section class="detail-grid">
@@ -11472,10 +12558,10 @@ window.EA_SEARCH = {
     });
 
   const renderFeaturedPaths = () =>
-    orientationSection({
+    `${orientationSection({
       eyebrow: "FEATURED PATHS",
       title: "Start from your real question.",
-      copy: "The ecosystem is easier to understand when you begin with intent: evaluate the technology, inspect delivered work, understand the operating model or enter through culture.",
+      copy: "Choose the entry point that matches your intent before going deeper into the graph.",
       cards: [
         {
           kicker: "Technology",
@@ -11505,14 +12591,14 @@ window.EA_SEARCH = {
           ariaLabel: "Enter Palimpsests",
         },
       ],
-    });
+    })}${ecosystemExplorer()}`;
 
   const renderWorkOffer = () => `
     <section class="zone-card hero work-offer">
       <div class="section-head">
         <p class="eyebrow">ENGAGEMENTS</p>
         <h2>Three ways to work together.</h2>
-        <p class="lede">The format follows the problem. Each engagement produces explicit decisions, working artefacts and a clear next phase.</p>
+        <p class="lede">The format follows the problem. Each engagement produces explicit decisions, working artefacts and a clear next phase before scope or budget is locked.</p>
       </div>
       <div class="card-grid card-grid--three">
         ${[
@@ -11521,18 +12607,24 @@ window.EA_SEARCH = {
             title: "Product and system framing",
             copy: "Clarify the proposition, users, information model, constraints and technical direction before committing to a large build.",
             outputs: ["Brief", "Architecture", "Roadmap"],
+            fit: "Best for new products, repositioning and ambiguous systems.",
+            timeline: "Typical start: discovery sprint",
           },
           {
             meta: "Delivery",
             title: "Design and implementation",
             copy: "Turn an existing direction into a coherent public product across content structure, UX, interface and development.",
             outputs: ["UX / UI", "Prototype", "Production"],
+            fit: "Best for public surfaces, product MVPs and client platforms.",
+            timeline: "Typical start: scoped build",
           },
           {
             meta: "Evolution",
             title: "Platform and workflow redesign",
             copy: "Rework a fragmented site or operating process into a maintainable system with clearer ownership and reusable components.",
             outputs: ["Audit", "Refactor", "Documentation"],
+            fit: "Best for existing tools, content systems and operational workflows.",
+            timeline: "Typical start: audit and recovery map",
           },
         ]
           .map(
@@ -11541,28 +12633,55 @@ window.EA_SEARCH = {
                 <p class="card__meta">${offer.meta}</p>
                 <h3 class="card__title">${offer.title}</h3>
                 <p class="card__copy">${offer.copy}</p>
+                <p class="card__copy"><strong>${offer.timeline}</strong></p>
+                <p class="card__copy">${offer.fit}</p>
                 ${tagRow(offer.outputs, { compact: true })}
               </article>
             `,
           )
           .join("")}
       </div>
+      <div class="stat-grid work-qualification">
+        <article class="stat-card">
+          <p class="card__meta">Qualification</p>
+          <strong>Problem first</strong>
+          <span>Timing, budget and constraints are captured in the contact brief before a proposal is shaped.</span>
+        </article>
+        <article class="stat-card">
+          <p class="card__meta">Evidence</p>
+          <strong>Live or documented</strong>
+          <span>Case pages expose public screens, operational views, dossiers, media and performance signals when available.</span>
+        </article>
+        <article class="stat-card">
+          <p class="card__meta">Handoff</p>
+          <strong>Reusable system</strong>
+          <span>The expected output is a maintained surface, workflow, repository or decision record, not a loose visual concept.</span>
+        </article>
+      </div>
       <div class="button-row">
         <a class="button button--primary" href="./contact.html">Discuss the right starting point</a>
+        <a class="button button--secondary" href="#work-evidence">Review evidence</a>
       </div>
     </section>
   `;
   const renderPrograms = () => {
     const vaste = entityById("vaste");
     const forge = entityById("forge");
+    const orethProgram = entityById("oreth-program");
+    const lightweightTemplate = entityById("ea-lightweight-template");
+    const arca = entityById("arca");
     const voidEntry = entityById("void");
     const oraclehub = entityById("oraclehub");
+    const linkAttrs = (href = "") => href.startsWith("http") ? ' target="_blank" rel="noreferrer"' : "";
+    const programRoute = (item) => catalog.routeFor?.(item) || `./program.html?id=${encodeURIComponent(item.id)}`;
 
     const registryCard = (item, options = {}) => {
       if (!item) return "";
       const techItems = (options.tech || []).map((value) => String(value)).filter(Boolean);
       const classificationItems = (options.classification || []).map((value) => String(value)).filter(Boolean);
-      const link = options.link || item.links?.[0] || null;
+      const deliverables = (options.deliverables || []).map((value) => String(value)).filter(Boolean);
+      const recordHref = options.href || programRoute(item);
+      const accessHref = options.accessHref || programAccessMailto;
       return `
         <article class="program-card program-registry-card${options.accent ? " program-registry-card--accent" : ""}" ${cardBaseAttrs(item)}>
           <div class="program-registry-card__top">
@@ -11580,12 +12699,25 @@ window.EA_SEARCH = {
               <strong>${esc(options.technology || techItems.join(" / ") || "Research stack")}</strong>
             </div>
             <div class="program-registry-card__fact">
-              <span>Lineage</span>
-              <strong>${esc(options.lineage || (item.relations?.origin || []).slice(0, 1).join(" / ") || "Electronic Artefacts")}</strong>
+              <span>Package</span>
+              <strong>${esc(options.package || options.lineage || (item.relations?.origin || []).slice(0, 1).join(" / ") || "Electronic Artefacts")}</strong>
+            </div>
+            <div class="program-registry-card__fact">
+              <span>Access</span>
+              <strong>${esc(options.access || "Request-based review")}</strong>
+            </div>
+            <div class="program-registry-card__fact">
+              <span>Buyer fit</span>
+              <strong>${esc(options.buyerFit || item.domain || "Technical partners")}</strong>
             </div>
           </div>
+          ${deliverables.length ? `<ul class="program-offer-card__list">${deliverables.map((entry) => `<li>${esc(entry)}</li>`).join("")}</ul>` : ""}
           ${classificationItems.length ? `<div class="tag-cluster tag-cluster--compact program-registry-card__chips">${classificationItems.map((entry) => chip(entry)).join("")}</div>` : ""}
-          ${link ? linkRow(link) : ""}
+          <div class="link-row">
+            <a class="tag" href="${esc(recordHref)}"${linkAttrs(recordHref)}>Open record</a>
+            <a class="tag" href="${esc(accessHref)}">Request repo access</a>
+            ${options.official ? `<a class="tag" href="${esc(options.official)}" target="_blank" rel="noreferrer">Official site</a>` : ""}
+          </div>
         </article>
       `;
     };
@@ -11595,27 +12727,59 @@ window.EA_SEARCH = {
         title: "VASTE",
         kicker: "PROGRAM",
         statusLabel: "Active Research",
-        technology: "TypeScript",
-        role: "Core Program",
-        lineage: "ARCA",
-        lineageNote: "Origin system",
-        classification: ["Runtime", "Research Program", "Knowledge System", "Core Infrastructure"],
+        technology: "TypeScript / graph runtime",
+        role: "Core proprietary runtime",
+        package: "Runtime foundation",
+        access: "Private repository review",
+        buyerFit: "Knowledge and product platforms",
+        classification: ["Runtime", "Knowledge Graph", "Identity", "Licensing"],
+        deliverables: ["Architecture map", "Repository walkthrough", "Pilot scope", "Licensing discussion"],
         copy:
-          "VASTE is the primary proprietary runtime developed within Electronic Artefacts. It explores graph architectures, contextual execution, identity systems, simulation frameworks, knowledge structures and modular world construction.",
-        link: { label: "Official site", href: "https://www.vaste.space/", target: "_blank" },
+          "VASTE is sold as the core runtime foundation for graph architectures, contextual execution, identity systems and modular knowledge products.",
+        official: "https://www.vaste.space/",
+        href: catalog.routeFor?.(vaste) || "./programs/vaste/",
       }),
       registryCard(forge, {
         title: "FORGE",
         kicker: "PROGRAM",
         statusLabel: "Active Research",
-        technology: "Rust",
-        role: "Creative Production System",
-        lineage: "VASTE",
-        lineageNote: "Derived architecture",
-        classification: ["Software Program", "Research Program", "Creative Technology", "Artifact Generation System"],
+        technology: "Rust / production pipelines",
+        role: "Creative production system",
+        package: "Generation and refinement pilot",
+        access: "Gated prototype review",
+        buyerFit: "Studios and R&D teams",
+        classification: ["Pipelines", "Artefact Generation", "Creative Technology", "Pilot"],
+        deliverables: ["Pipeline audit", "Prototype review", "Output families", "Integration plan"],
         copy:
-          "Forge is an experimental software system dedicated to the creation, transformation and refinement of digital artefacts. The project investigates highly scalable production pipelines capable of generating multiple categories of artefacts from a shared architecture.",
-        link: { label: "Research", href: "./research.html" },
+          "Forge packages artefact creation, transformation and refinement as an evaluable production system for media, 3D and future output families.",
+      }),
+      registryCard(orethProgram, {
+        title: "ORETH",
+        kicker: "PROGRAM",
+        statusLabel: "Prototype",
+        technology: "Python / audio analysis",
+        role: "Audio intelligence research",
+        package: "Research prototype",
+        access: "Research repository review",
+        buyerFit: "Audio, culture and research partners",
+        classification: ["Signal Processing", "Audio Intelligence", "Pattern Recognition", "Prototype"],
+        deliverables: ["Prototype orientation", "Analysis stack", "Research constraints", "Pilot questions"],
+        copy:
+          "ORETH packages audio analysis, event detection and adaptive-learning experiments for partners exploring sonic systems and cultural research.",
+      }),
+      registryCard(lightweightTemplate, {
+        title: "EA Lightweight Template",
+        kicker: "FRAMEWORK",
+        statusLabel: "Production",
+        technology: "HTML / CSS / JavaScript",
+        role: "Public-surface starter",
+        package: "Template transfer",
+        access: "Repo transfer or implementation",
+        buyerFit: "Small teams and cultural projects",
+        classification: ["Vanilla Web", "Static Surface", "Fast Prototype", "Implementation"],
+        deliverables: ["Repository access", "Design tokens", "Component patterns", "Deployment checklist"],
+        copy:
+          "The lightweight template is the practical production base for fast public showcases, small product surfaces and low-maintenance sites.",
       }),
       registryCard(voidEntry, {
         title: "VOID",
@@ -11623,12 +12787,14 @@ window.EA_SEARCH = {
         statusLabel: "Archived",
         technology: "Rust",
         role: "Experimental Software Engine",
-        lineage: "Electronic Artefacts",
-        lineageNote: "Historical foundation",
-        classification: ["Research Program", "Experimental Engine", "Archived System", "Creative Concept"],
+        package: "Architecture archive",
+        access: "Documentation review",
+        buyerFit: "Research and systems partners",
+        classification: ["Experimental Engine", "Archived System", "Creative Concept", "Lineage"],
+        deliverables: ["Concept archive", "Architecture lineage", "Reusable decisions"],
         copy:
           "VOID was one of the earliest software research projects developed within Electronic Artefacts. Originally conceived as an experimental engine, the project shaped later reflections around systems architecture, modularity and creative technology.",
-        link: { label: "Research field", href: "./entity.html?id=void" },
+        href: "./entity.html?id=void",
       }),
       registryCard(oraclehub, {
         title: "OracleHub",
@@ -11636,64 +12802,122 @@ window.EA_SEARCH = {
         statusLabel: "Research Archive",
         technology: "Python / PostgreSQL / Redis / Docker",
         role: "Distributed Oracle System",
-        lineage: "VASTE",
-        lineageNote: "Concepts reappear in VASTE",
-        classification: ["Prediction System", "Research Program", "Data Processing Framework"],
+        package: "Distributed-data archive",
+        access: "Case-by-case architecture review",
+        buyerFit: "Data and prediction systems",
+        classification: ["Prediction System", "Data Processing", "Workers", "Archive"],
+        deliverables: ["Worker model", "Data contracts", "System lineage", "Advisory scope"],
         copy:
           "OracleHub explored distributed prediction architectures through specialized oracle entities, asynchronous workers and dynamic data pipelines. Many concepts later reappeared in more generalized forms inside VASTE.",
-        link: { label: "Research notes", href: "./research.html" },
+      }),
+      registryCard(arca, {
+        title: "ARCA",
+        kicker: "ARCHIVE",
+        statusLabel: "Archived",
+        technology: "Asset systems / certification",
+        role: "VASTE ancestor",
+        package: "Traceability archive",
+        access: "Documentation and lineage review",
+        buyerFit: "Asset, archive and authenticity systems",
+        classification: ["Digital Assets", "Traceability", "Authenticity", "Lineage"],
+        deliverables: ["Origin decisions", "Certification model", "Asset-flow notes"],
+        copy:
+          "ARCA preserves the asset, traceability and certification lineage that later moved into the broader VASTE runtime questions.",
       }),
     ].join("");
 
-    const forgePrinciples = [
+    const commercialPaths = [
       {
-        title: "Artifact Pipelines",
-        copy: "Each artefact is treated as the result of a chain of transformations rather than a static output.",
+        kicker: "Repository access",
+        title: "Review the actual program.",
+        copy: "For qualified technical conversations, access can include private repositories, architecture notes, setup constraints and roadmap context.",
+        includes: ["GitHub invite", "Repository walkthrough", "Architecture map", "License boundaries"],
+        cta: "Request repo access",
+        href: programAccessMailto,
       },
       {
-        title: "Genetic Structures",
-        copy: "Artefacts can inherit characteristics from previous generations and recombine parameters.",
+        kicker: "Technical pilot",
+        title: "Test a focused use case.",
+        copy: "A pilot turns one program into a contained implementation with agreed inputs, outputs, validation criteria and a clear decision point.",
+        includes: ["Pilot brief", "Integration scope", "Success criteria", "Delivery review"],
+        cta: "Discuss a pilot",
+        href: "./contact.html",
       },
       {
-        title: "Automated Refinement",
-        copy: "The system studies iterative workflows that progressively improve generated artefacts.",
+        kicker: "Implementation",
+        title: "Adapt the program to production.",
+        copy: "Programs can be used as implementation foundations for public systems, internal tools, cultural platforms and knowledge products.",
+        includes: ["Product framing", "Technical build", "Documentation", "Operational handoff"],
+        cta: "Start implementation",
+        href: "./contact.html",
       },
       {
-        title: "Scalability",
-        copy: "The architecture stays medium-agnostic so it can extend from video and 3D toward more output families.",
+        kicker: "Licensing",
+        title: "Use program logic in your own context.",
+        copy: "For longer partnerships, the conversation can move toward licensing, white-label use, dedicated modules or shared product development.",
+        includes: ["Rights perimeter", "Support model", "Roadmap alignment", "Partnership terms"],
+        cta: "Open licensing discussion",
+        href: "./contact.html",
       },
     ];
 
-    const forgeCurrentDomains = ["Video", "3D Assets"];
-    const forgeFutureDomains = ["Audio", "Text", "Interactive Experiences", "Research Documents", "Visual Systems", "Synthetic Worlds"];
+    const accessSteps = [
+      {
+        title: "Qualify the program",
+        copy: "Name the program, use case, organization, technical lead and expected access window.",
+      },
+      {
+        title: "Scope the review",
+        copy: "Define whether you need repository access, documentation, a demo, advisory work, a pilot or a license conversation.",
+      },
+      {
+        title: "Grant the right access",
+        copy: "Access is scoped through GitHub, shared documents or a guided technical session depending on maturity and confidentiality.",
+      },
+      {
+        title: "Decide the engagement",
+        copy: "The review ends with a clear next step: no fit, paid pilot, implementation scope, licensing track or partnership roadmap.",
+      },
+    ];
+
+    const accessChecklist = [
+      "Target program",
+      "GitHub username",
+      "Organization",
+      "Intended use",
+      "Commercial context",
+      "Access window",
+      "NDA constraints",
+      "License expectations",
+    ];
 
     const relationshipColumns = [
       {
         title: "VASTE",
-        role: "Runtime and knowledge infrastructure",
-        copy: "The core runtime coordinates graph execution, identity, context and long-lived knowledge structures.",
+        role: "Runtime, identity and knowledge infrastructure",
+        copy: "The core program coordinates graph execution, identity, permissions, context and long-lived knowledge structures.",
         nodes: ["Knowledge Systems", "Identity Systems", "Simulation Systems", "Runtime Research"],
-        exchanges: ["Powers Vestiges", "Informs UnionMob", "Feeds Forge"],
+        exchanges: ["Powers Vestiges", "Frames repository access", "Feeds implementation work"],
         href: "https://www.vaste.space/",
         linkLabel: "Explore VASTE",
       },
       {
         title: "FORGE",
         role: "Artefact production and transformation",
-        copy: "Forge studies how shared pipelines can generate, inherit, evaluate and refine many families of digital artefacts.",
+        copy: "Forge turns production research into pipelines that can generate, inherit, evaluate and refine families of digital artefacts.",
         nodes: ["Artifact Pipelines", "Genome Systems", "Automated Refinement", "Creative Production Research"],
-        exchanges: ["Consumes runtime context", "Produces artefacts", "Returns production evidence"],
+        exchanges: ["Consumes runtime context", "Produces artefacts", "Returns pilot evidence"],
         href: "./program.html?id=forge",
         linkLabel: "Open Forge",
       },
       {
-        title: "VOID",
-        role: "Archived experimental foundation",
-        copy: "VOID preserves early experiments in modular architecture and creative computation without acting as the centre of the current stack.",
-        nodes: ["Experimental Architectures", "Creative Computing Research"],
-        exchanges: ["Historical precedent", "Research vocabulary", "Archived decisions"],
-        href: "./entity.html?id=void",
-        linkLabel: "Open archive field",
+        title: "EA Template",
+        role: "Fast public-surface implementation",
+        copy: "The lightweight template packages the site system used for small production surfaces, public showcases and low-maintenance delivery.",
+        nodes: ["Static Interfaces", "Design Tokens", "Component Patterns", "Deployment Workflow"],
+        exchanges: ["Receives product requirements", "Ships public surfaces", "Returns delivery constraints"],
+        href: "./program.html?id=ea-lightweight-template",
+        linkLabel: "Open template",
       },
       {
         title: "OracleHub",
@@ -11710,8 +12934,8 @@ window.EA_SEARCH = {
       {
         title: "TypeScript",
         mark: "TS",
-        role: "Interfaces, runtimes and connected product systems",
-        copy: "Used where shared models, graph-shaped data and interactive application surfaces need to evolve together.",
+        role: "Runtimes, interfaces and connected product systems",
+        copy: "Used where shared models, graph-shaped data, interactive product surfaces and repository-level contracts need to evolve together.",
         strengths: ["Typed models", "Web runtime", "Shared contracts"],
         systems: [
           { label: "VASTE", href: "https://www.vaste.space/" },
@@ -11721,7 +12945,7 @@ window.EA_SEARCH = {
       {
         title: "Rust",
         mark: "RS",
-        role: "Performance-sensitive production and systems research",
+        role: "Performance-sensitive production and pipeline research",
         copy: "Used for experiments where execution control, reliability and scalable transformation pipelines are central.",
         strengths: ["Performance", "Memory safety", "Pipeline control"],
         systems: [
@@ -11730,14 +12954,14 @@ window.EA_SEARCH = {
         ],
       },
       {
-        title: "PHP",
-        mark: "PHP",
-        role: "Operational web products and publishing ecosystems",
-        copy: "Used for pragmatic public platforms that combine content management, business workflows and long-lived web delivery.",
-        strengths: ["CMS ecosystems", "Operational delivery", "Content workflows"],
+        title: "Vanilla Web",
+        mark: "WEB",
+        role: "Transferable public surfaces and fast delivery",
+        copy: "Used for public program pages, small product surfaces and implementation packages that should stay inspectable and portable.",
+        strengths: ["Low maintenance", "Portable code", "Fast deployment"],
         systems: [
-          { label: "AtypikHouse", href: "./project.html?id=atypikhouse" },
-          { label: "L’Œil de Meg", href: "./project.html?id=oeil-de-meg" },
+          { label: "EA Template", href: "./program.html?id=ea-lightweight-template" },
+          { label: "Electronic Artefacts", href: "./projects.html" },
         ],
       },
       {
@@ -11753,51 +12977,84 @@ window.EA_SEARCH = {
       },
     ];
 
-    const strategicObservation = [
+    const selectionGuide = [
       {
-        title: "VASTE",
-        copy: "Knowledge, runtime and systems. It is the core proprietary runtime and the technical anchor of the stack.",
+        title: "Need a runtime",
+        copy: "Start with VASTE when the problem is graph structure, identity, permissions, contextual execution or knowledge infrastructure.",
       },
       {
-        title: "LA FORGE",
-        copy: "Artefact production and transformation. It studies pipelines, inheritance and multi-domain generation.",
+        title: "Need production pipelines",
+        copy: "Start with Forge when the problem is repeated creation, transformation, refinement or generation of digital artefacts.",
       },
       {
-        title: "VOID",
-        copy: "Experimental architectures and conceptual foundations. It remains the archived theoretical engine.",
+        title: "Need a public surface",
+        copy: "Start with the lightweight template when the goal is to ship a precise site, catalogue, showcase or knowledge interface fast.",
       },
       {
-        title: "OracleHub",
-        copy: "Distributed prediction and data systems. It preserves the archive lineage while feeding future runtime concepts.",
+        title: "Need lineage or advisory",
+        copy: "Start with ARCA, VOID or OracleHub when the value is architecture history, traceability, distributed data or research precedent.",
       },
     ];
 
     return `
-      <section class="zone-card hero programs-hero">
-        <div class="section-head">
-          <p class="eyebrow">ELECTRONIC ARTEFACTS</p>
-          <h1 class="display-title">Programs.</h1>
-          <p class="lede">VASTE, Forge, VOID and OracleHub.</p>
-          <div class="button-row button-row--compact">
-            <a class="button button--primary" href="https://www.vaste.space/" target="_blank" rel="noreferrer">Explore VASTE</a>
-            <a class="button button--secondary" href="./research.html">Enter Research</a>
+      <section class="zone-card hero programs-hero program-commercial-hero">
+        <div class="program-commercial-hero__grid">
+          <div class="section-head">
+            <p class="eyebrow">PROGRAMS</p>
+            <h1 class="display-title">Programs for repo access, pilots and licensing.</h1>
+            <p class="lede">Electronic Artefacts programs are packaged technical systems. They can be evaluated through repository access, scoped pilots, implementation work or licensing conversations.</p>
+            <div class="button-row button-row--compact">
+              <a class="button button--primary" href="${esc(programAccessMailto)}">Request repo access</a>
+              <a class="button button--secondary" href="./contact.html">Discuss a program</a>
+              <a class="button button--secondary" href="https://www.vaste.space/" target="_blank" rel="noreferrer">Explore VASTE</a>
+            </div>
+            ${metricRail(
+              [
+                { label: "ACCESS", value: "Request", note: "repo review", fill: 0.95, tone: "live" },
+                { label: "FORMATS", value: "4", note: "access / pilot / build / license", fill: 0.86, tone: "system" },
+                { label: "CORE", value: "VASTE", note: "runtime foundation", fill: 0.82, tone: "visual" },
+                { label: "DELIVERY", value: "Build", note: "implementation available", fill: 0.74, tone: "archive" },
+              ],
+              { limit: 4, compact: true },
+            )}
           </div>
-          ${metricRail(
-            [
-              { label: "DIRECTIONS", value: "4", note: "core branches", fill: 0.95, tone: "live" },
-              { label: "RUNTIME", value: "VASTE", note: "core program", fill: 0.88, tone: "system" },
-              { label: "PRODUCTION", value: "Forge", note: "active research", fill: 0.78, tone: "visual" },
-              { label: "ARCHIVES", value: "VOID / OracleHub", note: "legacy lineages", fill: 0.68, tone: "archive" },
-            ],
-            { limit: 4, compact: true },
-          )}
+          <figure class="program-commercial-hero__media">
+            <img src="./assets/media/projects/electronic-artefacts/electronic-artefacts-search.jpg" alt="Electronic Artefacts brand mark" loading="eager" />
+            <figcaption><span>Program registry</span><strong>Private code, pilots and product foundations.</strong></figcaption>
+          </figure>
         </div>
       </section>
       <section class="zone-card hero">
         <div class="section-head">
-          <p class="eyebrow">CORE REGISTRY</p>
-          <h2>Four software directions</h2>
-          <p class="lede">Each card keeps one role, one technology anchor and one compact classification line.</p>
+          <p class="eyebrow">COMMERCIAL ACCESS</p>
+          <h2>How programs are sold.</h2>
+          <p class="lede">The offer is not a generic download. Each access path has a different level of code exposure, technical support, implementation responsibility and rights discussion.</p>
+        </div>
+        <div class="card-grid card-grid--two">
+          ${commercialPaths
+            .map(
+              (offer, index) => `
+                <article class="panel panel--soft program-offer-card">
+                  <p class="card__meta">0${index + 1} / ${esc(offer.kicker)}</p>
+                  <h3 class="card__title">${esc(offer.title)}</h3>
+                  <p class="card__copy">${esc(offer.copy)}</p>
+                  <ul class="program-offer-card__list">
+                    ${offer.includes.map((entry) => `<li>${esc(entry)}</li>`).join("")}
+                  </ul>
+                  <div class="link-row">
+                    <a class="tag" href="${esc(offer.href)}">${esc(offer.cta)}</a>
+                  </div>
+                </article>
+              `,
+            )
+            .join("")}
+        </div>
+      </section>
+      <section class="zone-card hero">
+        <div class="section-head">
+          <p class="eyebrow">PROGRAM CATALOG</p>
+          <h2>Available program packages.</h2>
+          <p class="lede">Each card states what the program is, what can be evaluated, what kind of access is realistic and who it is for.</p>
         </div>
         <div class="card-grid card-grid--two">
           ${registryCards}
@@ -11805,59 +13062,56 @@ window.EA_SEARCH = {
       </section>
       <section class="zone-card hero">
         <div class="section-head">
-          <p class="eyebrow">CORE PRINCIPLES</p>
-          <h2>Forge</h2>
-          <p class="lede">Production is organized as a shared architecture with pipelines, inheritance and refinement.</p>
+          <p class="eyebrow">REQUEST WORKFLOW</p>
+          <h2>Repository access is qualified, not automatic.</h2>
+          <p class="lede">A useful request contains enough information to decide which code, docs or technical session should be opened first.</p>
         </div>
-        <div class="card-grid card-grid--two">
-          ${forgePrinciples
+        <div class="program-access-layout">
+          <article class="panel program-access-card">
+            <p class="card__meta">Request checklist</p>
+            <h3 class="card__title">Include these details.</h3>
+            <div class="tag-cluster tag-cluster--compact">
+              ${accessChecklist.map((item) => chip(item)).join("")}
+            </div>
+            <div class="button-row button-row--compact">
+              <a class="button button--primary" href="${esc(programAccessMailto)}">Request repo access</a>
+            </div>
+          </article>
+          <div class="program-access-steps">
+            ${accessSteps
             .map(
-              (item) => `
-                <article class="panel panel--soft">
-                  <p class="card__meta">${esc(item.title)}</p>
-                  <p class="card__copy">${esc(item.copy)}</p>
+              (step, index) => `
+                <article class="panel panel--soft program-access-step">
+                  <p class="card__meta">0${index + 1}</p>
+                  <h3 class="card__title">${esc(step.title)}</h3>
+                  <p class="card__copy">${esc(step.copy)}</p>
                 </article>
               `,
             )
             .join("")}
+          </div>
         </div>
-        <div class="split">
-          <article class="panel panel--soft">
-            <p class="card__meta">Current domains</p>
-            <h3 class="card__title">Video / 3D Assets</h3>
-            <div class="tag-cluster tag-cluster--compact">${forgeCurrentDomains.map((item) => chip(item)).join("")}</div>
-          </article>
-          <article class="panel panel--soft">
-            <p class="card__meta">Future domains</p>
-            <h3 class="card__title">Extensible output families</h3>
-            <div class="tag-cluster tag-cluster--compact">${forgeFutureDomains.map((item) => chip(item)).join("")}</div>
-          </article>
-        </div>
-        <article class="panel panel--soft">
-          <p class="card__meta">Long term vision</p>
-          <p class="card__copy">Forge studies production as a shared logic.</p>
-        </article>
       </section>
       <section class="zone-card hero">
         <div class="section-head">
-          <p class="eyebrow">PROGRAM RELATIONSHIPS</p>
+          <p class="eyebrow">SYSTEM MAP</p>
           <h2>How the programs exchange responsibilities.</h2>
-          <p class="lede">The stack is not a hierarchy of interchangeable tools. Each program owns a different problem, preserves a different lineage and passes useful context to the others.</p>
+          <p class="lede">The stack is not a list of interchangeable tools. Each program owns a problem class and becomes saleable when that problem matches a buyer context.</p>
         </div>
         <div class="program-stack-flow" aria-label="Program exchange flow">
-          <span>Research questions</span>
+          <span>Qualified request</span>
           <i aria-hidden="true">→</i>
-          <span>Runtime context</span>
+          <span>Repository review</span>
           <i aria-hidden="true">→</i>
-          <span>Production systems</span>
+          <span>Pilot or license</span>
           <i aria-hidden="true">→</i>
-          <span>Projects and evidence</span>
+          <span>Implementation</span>
         </div>
         <div class="program-stack-map">
           <div class="program-stack-map__core">
             <p class="card__meta">Shared context</p>
             <strong>Electronic Artefacts</strong>
-            <span>Research, programs, projects and archive remain connected through explicit lineage.</span>
+            <span>Research, programs, projects and archive stay connected so code access can be explained through evidence and lineage.</span>
           </div>
           <div class="program-stack-map__list">
             ${relationshipColumns
@@ -11889,7 +13143,7 @@ window.EA_SEARCH = {
                         </div>
                       </div>
                       <div class="link-row">
-                        <a class="tag" href="${esc(column.href)}"${column.href.startsWith("http") ? ' target="_blank" rel="noreferrer"' : ""}>${esc(column.linkLabel)}</a>
+                        <a class="tag" href="${esc(column.href)}"${linkAttrs(column.href)}>${esc(column.linkLabel)}</a>
                       </div>
                     </div>
                   </details>
@@ -11933,7 +13187,7 @@ window.EA_SEARCH = {
                           ${technology.systems
                             .map(
                               (system) =>
-                                `<a class="tag" href="${esc(system.href)}"${system.href.startsWith("http") ? ' target="_blank" rel="noreferrer"' : ""}>${esc(system.label)}</a>`,
+                                `<a class="tag" href="${esc(system.href)}"${linkAttrs(system.href)}>${esc(system.label)}</a>`,
                             )
                             .join("")}
                         </div>
@@ -11948,12 +13202,12 @@ window.EA_SEARCH = {
       </section>
       <section class="zone-card hero">
         <div class="section-head">
-          <p class="eyebrow">STRATEGIC OBSERVATION</p>
-          <h2>Four directions.</h2>
-          <p class="lede">A compact set of directions.</p>
+          <p class="eyebrow">SELECTION GUIDE</p>
+          <h2>Choose the right program first.</h2>
+          <p class="lede">A good conversation starts with the problem class. The repository or pilot only matters once the right program is identified.</p>
         </div>
         <div class="stat-grid">
-          ${strategicObservation
+          ${selectionGuide
             .map(
               (item, index) => `
                 <article class="stat-card">
@@ -12013,17 +13267,46 @@ window.EA_SEARCH = {
         cta: "View Programs",
       },
     ];
+    const indexedGroups = grouped.map((group, index) => {
+      const key = slugify(group.label) || `group-${index + 1}`;
+      const categories = [
+        ...new Set(group.items.map((item) => item.category || item.type || item.kind).filter(Boolean)),
+      ];
+      return {
+        ...group,
+        key,
+        index,
+        categories,
+        primary: group.items[0]?.title || group.label,
+      };
+    });
 
     return `
       <section class="zone-card hero projects-hero">
-        <div class="section-head">
-          <p class="eyebrow">PROJECTS</p>
-          <h1 class="display-title">Projects, from art systems to applied surfaces.</h1>
-          <p class="lede">Start with the artistic line, then compare client work, product surfaces and the systems that support them.</p>
-          <div class="button-row">
-            <a class="button button--primary" href="./work.html">See Client Work</a>
-            <a class="button button--secondary" href="./research.html">Enter Research</a>
-            <a class="button button--secondary" href="./archive.html">Open Archive</a>
+        <div class="projects-hero__grid">
+          <div class="section-head">
+            <p class="eyebrow">PROJECTS</p>
+            <h1 class="display-title">Projects, from art systems to applied surfaces.</h1>
+            <p class="lede">Start with the artistic line, then compare client work, product surfaces and the systems that support them.</p>
+            <div class="button-row">
+              <a class="button button--primary" href="./work.html">See Client Work</a>
+              <a class="button button--secondary" href="./research.html">Enter Research</a>
+              <a class="button button--secondary" href="./archive.html">Open Archive</a>
+            </div>
+          </div>
+          <div class="projects-hero__stage" aria-label="Project media previews">
+            <a class="projects-hero__frame projects-hero__frame--wide" href="./palimpsests.html" aria-label="Open Palimpsests">
+              <img src="./assets/media/projects/palimpsests/P1288759-edit-1800.webp" alt="Palimpsests portrait visual" loading="eager" />
+              <figcaption><span>Art system</span><strong>Palimpsests</strong></figcaption>
+            </a>
+            <a class="projects-hero__frame" href="./project.html?id=atypikhouse" aria-label="Open AtypikHouse project">
+              <img src="./assets/media/projects/atypikhouse/atypikhouse-dashboard-ipad.jpg" alt="AtypikHouse tablet dashboard" loading="lazy" />
+              <figcaption><span>Applied surface</span><strong>AtypikHouse</strong></figcaption>
+            </a>
+            <a class="projects-hero__frame" href="./project.html?id=oeil-de-meg" aria-label="Open L’Œil de Meg project">
+              <img src="./assets/media/projects/oeil-de-meg/oeil-de-meg-pagespeed-desktop.png" alt="L’Œil de Meg PageSpeed desktop report" loading="lazy" />
+              <figcaption><span>Delivery proof</span><strong>L’Œil de Meg</strong></figcaption>
+            </a>
           </div>
         </div>
       </section>
@@ -12075,17 +13358,45 @@ window.EA_SEARCH = {
           </article>
         </div>
       </section>
-      <section class="stack projects-stack">
-        ${grouped
+      <nav class="projects-index-rail" aria-label="Project groups">
+        ${indexedGroups
           .map(
             (group) => `
-              <section class="zone-card hero">
-                <div class="section-head">
-                  <p class="eyebrow">PROJECT GROUP</p>
-                  <h2>${esc(group.label)}</h2>
-                  <p class="lede">${esc(group.copy)}</p>
+              <a class="projects-index-rail__link" href="#projects-${esc(group.key)}">
+                <span>${String(group.index + 1).padStart(2, "0")}</span>
+                <strong>${esc(group.label)}</strong>
+              </a>
+            `,
+          )
+          .join("")}
+      </nav>
+      <section class="stack projects-stack">
+        ${indexedGroups
+          .map(
+            (group) => `
+              <section id="projects-${esc(group.key)}" class="zone-card hero projects-group projects-group--${esc(group.key)}" data-project-group="${esc(group.key)}">
+                <div class="projects-group__head">
+                  <div class="section-head">
+                    <p class="eyebrow">PROJECT GROUP</p>
+                    <h2>${esc(group.label)}</h2>
+                    <p class="lede">${esc(group.copy)}</p>
+                  </div>
+                  <aside class="projects-group__summary" aria-label="${esc(group.label)} summary">
+                    <div>
+                      <span>Projects</span>
+                      <strong>${group.items.length}</strong>
+                    </div>
+                    <div>
+                      <span>Lead</span>
+                      <strong>${esc(group.primary)}</strong>
+                    </div>
+                    <div>
+                      <span>Read</span>
+                      <strong>${esc(group.categories.slice(0, 2).join(" / ") || "Project")}</strong>
+                    </div>
+                  </aside>
                 </div>
-                <div class="card-grid card-grid--two projects-grid">
+                <div class="card-grid card-grid--two projects-grid projects-grid--${group.items.length === 1 ? "single" : "multi"}">
                   ${group.items.map(projectLandingCard).join("")}
                 </div>
               </section>
@@ -12160,10 +13471,10 @@ window.EA_SEARCH = {
   };
   const renderWork = () => renderWorkOffer() + workTaxonomy() + catalogSectionWork();
   const renderResearch = () => researchFields() + researchPrograms() + researchNotes();
-  const renderProgramsPage = () => pageLens("programs") + renderPrograms();
+  const renderProgramsPage = () => renderPrograms() + pageLens("programs");
   const renderProjectsPage = () => renderProjects();
   const renderArchive = () => pageLens("archive") + archiveTaxonomy() + archiveLibrary();
-  const renderAbout = () => pageLens("about") + aboutMap() + aboutNetwork();
+  const renderAbout = () => aboutNetwork();
   const renderContact = () => contactLinks();
 
   const catalogSectionWork = () => {
@@ -12201,7 +13512,7 @@ window.EA_SEARCH = {
     ].filter((group) => group.items.length);
 
     return `
-      <section class="zone-card hero">
+      <section class="zone-card hero" id="work-evidence">
         <div class="section-head">
           <p class="eyebrow">WORK CATALOG</p>
           <h2>One practice, three working contexts.</h2>
@@ -12277,7 +13588,6 @@ window.EA_SEARCH = {
       "cross-navigation": renderCrossNavigation,
     },
     about: {
-      "about-map": () => pageLens("about") + aboutMap(),
       "about-network": aboutNetwork,
       "cross-navigation": renderCrossNavigation,
     },

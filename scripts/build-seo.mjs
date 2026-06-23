@@ -26,9 +26,9 @@ const pages = {
       "Explore Electronic Artefacts projects across software, cultural platforms, artistic production and client systems.",
   },
   "programs.html": {
-    title: "Programs and Runtimes | Electronic Artefacts",
+    title: "Programs, Repo Access and Runtimes | Electronic Artefacts",
     description:
-      "Discover the runtimes, software programs and architectural systems behind Electronic Artefacts projects.",
+      "Explore Electronic Artefacts software programs available through repository access, pilots, implementation work and licensing conversations.",
   },
   "research.html": {
     title: "Research | Electronic Artefacts",

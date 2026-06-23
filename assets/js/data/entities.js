@@ -824,8 +824,8 @@ window.EA_ENTITIES = {
     },
     {
       id: "marjolaine-muller",
-      title: "Marjolaine Muller",
-      subtitle: "External Collaborator",
+      title: "Marjolaine MULLER",
+      subtitle: "Independent Artist / External Collaboration",
       kind: "artist",
       type: "Collaborateur externe",
       status: "active",
@@ -837,16 +837,47 @@ window.EA_ENTITIES = {
         creationYear: "2026",
         creationDate: "2026-01-01",
         releaseDate: "",
-        lastUpdated: "2026-06-12",
+        lastUpdated: "2026-06-23",
         era: "foundation",
       },
       description:
-        "Independent artist for whom Electronic Artefacts handled part of the musical production, composition, arrangement and artistic support on 7 Temps Seulement.",
+        "Independent artist connected to Electronic Artefacts through 7 Temps Seulement, a music production collaboration shaped around composition, arrangement and artistic accompaniment.",
       summary:
-        "External collaborator linked to 7 Temps Seulement.",
-      discipline: ["Music", "Production", "Arrangement"],
-      medium: ["Audio", "Writing"],
-      tags: ["Marjolaine Muller", "External Collaboration", "Production", "7 Temps Seulement"],
+        "Independent artist linked to the 7 Temps Seulement production collaboration.",
+      role: "Independent artist / external collaborator",
+      discipline: ["Music", "Composition", "Production", "Arrangement"],
+      medium: ["Audio", "Writing", "Voice"],
+      tags: ["Marjolaine MULLER", "External Collaboration", "Production", "7 Temps Seulement"],
+      relatedProjects: ["seven-temps-seulement"],
+      media: {
+        folder: "./assets/media/artists/marjolaine-muller",
+        gallery: [
+          {
+            src: "./assets/media/artists/marjolaine-muller/photomarjo.png",
+            alt: "Portrait of Marjolaine MULLER",
+            caption: "Portrait used for the Marjolaine MULLER artist profile.",
+            width: 3398,
+            height: 2193,
+          },
+        ],
+      },
+      artistProfile: {
+        headline: "A music collaboration held between artist identity, arrangement and production.",
+        intro:
+          "Marjolaine MULLER is presented inside the Electronic Artefacts system through the work around 7 Temps Seulement. The profile makes the collaboration legible without absorbing the artist into the studio catalogue.",
+        collaboration:
+          "Electronic Artefacts contributed musical production, composition, arrangement and artistic support, keeping the record attached to a clear project context.",
+        focus: ["Composition", "Arrangement", "Production", "Artistic accompaniment"],
+        credits: [
+          { label: "Connected work", value: "7 Temps Seulement" },
+          { label: "Role", value: "Independent artist" },
+          { label: "Electronic Artefacts", value: "Production, composition, arrangement and support" },
+        ],
+        notes: [
+          "The artist page now separates the person from the delivered production work.",
+          "The collaboration remains connected to the project record and the broader Electronic Artefacts archive.",
+        ],
+      },
       relations: {
         origin: ["seven-temps-seulement"],
         parent: ["seven-temps-seulement"],
@@ -862,7 +893,10 @@ window.EA_ENTITIES = {
         partOf: ["electronic-artefacts"],
         relatedTo: ["seven-temps-seulement"],
       },
-      links: [{ label: "Work", href: "./work.html" }],
+      links: [
+        { label: "Instagram", href: "https://www.instagram.com/marjolaine_muller/" },
+        { label: "Work", href: "./work.html" },
+      ],
     },
     {
       id: "zarah-nkounkou",
@@ -1837,6 +1871,9 @@ window.EA_ENTITIES = {
       seoModel:
         "Each graph node can expose a public page, canonical URL, description, relations, media, history and metadata. Search visibility emerges from the graph rather than from a separate SEO module.",
       tags: ["Vestiges", "VASTE", "Knowledge Graph", "Craft", "Culture", "Platform"],
+      visualLanguage: ["Black", "White", "Ivory"],
+      textures: ["Knowledge graph", "Cultural archive", "Precision"],
+      symbols: ["Monogram", "Trace", "Living knowledge"],
       media: {
         folder: "./assets/media/projects/vestiges",
         gallery: [
@@ -2056,7 +2093,7 @@ window.EA_ENTITIES = {
       status: "development",
       maturity: "development",
       confidence: "observed",
-      visibility: "internal",
+      visibility: "public",
       temporality: {
         creationYear: "2025",
         creationDate: "2025-01-01",
@@ -2064,11 +2101,14 @@ window.EA_ENTITIES = {
         lastUpdated: "2026-06-12",
         era: "foundation",
       },
-      medium: ["Software", "UI"],
-      discipline: ["Technology", "UX", "UI"],
-      description: "Hospitality platform for curated stays, booking flows and account spaces.",
-      summary: "Hospitality platform for curated stays and booking flows.",
-      tags: ["AtypikHouse", "Platform"],
+      medium: ["Software", "UI", "Marketing dossier"],
+      discipline: ["Technology", "UX", "UI", "Art Direction"],
+      description: "Hospitality platform for curated unusual stays, host listings, traveller booking flows and account spaces.",
+      summary: "Web platform for unusual accommodation rentals, structured around immersive discovery, host tools and booking flows.",
+      tags: ["AtypikHouse", "Platform", "Hospitality", "Booking", "Glamping"],
+      credits: [
+        { id: "ea:artist:zarah-nkounkou", label: "Zarah Nkounkou", role: "Project management and art direction" },
+      ],
       media: {
         folder: "./assets/media/projects/atypikhouse",
         gallery: [
@@ -2088,9 +2128,28 @@ window.EA_ENTITIES = {
       },
       architecture: {
         surface: "Hospitality / booking layer",
-        stack: "Explorer, booking flow, profile space and identity system.",
-        layers: ["Explorer", "Booking", "Profile", "Identity"],
-        note: "Built to stay calm, legible and adaptable.",
+        stack: "Explorer, booking flow, dynamic filters, profile space and identity system.",
+        layers: ["Explorer", "Booking", "Dynamic filters", "Host space", "Traveller profile", "Identity"],
+        note: "Built to make unusual stays easier to discover, compare and reserve.",
+      },
+      marketingDossier: {
+        title: "AtypikHouse marketing dossier",
+        subtitle: "Plateforme web de location d'hebergements insolites",
+        src: "./assets/media/projects/atypikhouse/atypikhouse-dossier-marketing.pdf",
+        cover: "./assets/media/projects/atypikhouse/atypikhouse-dossier-marketing-cover.jpg",
+        pages: 47,
+        year: "2025",
+        fileSize: "3.5 MB",
+        format: "PDF 16:9",
+        agency: "JAZ Labs",
+        copy:
+          "A web-optimized version of the 47-page marketing dossier: market framing, project team, positioning, SWOT, glamping study, host/traveller ecosystem and interface mockups.",
+        highlights: [
+          "Curated stays and unusual accommodation discovery",
+          "Host and traveller exchange ecosystem",
+          "Dynamic filtering and immersive listing cards",
+          "Launch strategy and long-term platform growth",
+        ],
       },
       relations: {
         origin: ["vaste"],
@@ -2107,7 +2166,10 @@ window.EA_ENTITIES = {
         partOf: ["electronic-artefacts"],
         relatedTo: ["unionmob"],
       },
-      links: [{ label: "Work catalog", href: "./work.html" }],
+      links: [
+        { label: "Browse dossier", href: "#atypikhouse-dossier-marketing" },
+        { label: "Work catalog", href: "./work.html" },
+      ],
     },
     {
       id: "oeil-de-meg",
@@ -2239,9 +2301,9 @@ window.EA_ENTITIES = {
       medium: ["Audio"],
       discipline: ["Music", "Production", "Arrangement"],
       description:
-        "External music production collaboration for Marjolaine Muller, covering production, composition, arrangement and artistic support.",
+        "External music production collaboration for Marjolaine MULLER, covering production, composition, arrangement and artistic support.",
       summary:
-        "External music production work for Marjolaine Muller.",
+        "External music production work for Marjolaine MULLER.",
       tags: ["7 Temps Seulement", "External Work", "Production", "Collaboration"],
       architecture: {
         surface: "External production work",

@@ -2,7 +2,7 @@ import { escapeHtml } from "../html.js";
 import type { Entity } from "../../schema/entities.js";
 
 export const renderEntityHeader = (entity: Entity): string => `
-  <section class="zone-card hero">
+  <section class="zone-card hero entity-hero">
     <div class="section-head">
       <p class="eyebrow">${escapeHtml(entity.type.replace(/([A-Z])/g, " $1").toUpperCase())}</p>
       <h1 class="display-title">${escapeHtml(entity.title)}</h1>

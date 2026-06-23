@@ -1,14 +1,9 @@
 import type { Entity } from "../schema/entities.js";
 import type { RelationStatement } from "../schema/relation.js";
 import type { RouteRecord } from "./build-routes.js";
+import { isPublicEntity, isIndexableEntity } from "../semantic/visibility.js";
 
-export const isPublicEntity = (entity: Entity): boolean =>
-  entity.visibility === "public" && entity.publicationClass !== "internal";
-
-export const isIndexableEntity = (entity: Entity): boolean =>
-  isPublicEntity(entity) &&
-  ["canonical", "published"].includes(entity.publicationClass) &&
-  Boolean(entity.version.publishedAt);
+export { isPublicEntity, isIndexableEntity };
 
 export const buildCatalog = (entities: Entity[], relations: RelationStatement[], routes: RouteRecord[]) => {
   const routeById = Object.fromEntries(routes.map((route) => [route.id, route.route]));

@@ -8,7 +8,7 @@
   const entityById = (id) => entityIndex[id] || null;
   const cardCssUrl = (src) => {
     const value = String(src || "");
-    if (value.startsWith("./assets/media/")) return value.replace("./assets/media/", "../media/");
+    if (value.startsWith("./assets/media/")) return value.replace("./assets/media/", "/assets/media/");
     return value;
   };
 
@@ -128,9 +128,15 @@
   const mediaFrom = (entry) => {
     const gallery = entry?.media?.gallery || [];
     if (!gallery.length) return null;
+    const images = gallery.filter((image) => mediaKindFor(image) === "image");
+    const isRaster = (image) => /\.(png|jpe?g|webp|gif)(?:[?#]|$)/i.test(String(image?.src || ""));
+    const isGenericMark = (image) => /(?:^|\/)(cover|logo|icon|picto|symbol)[^/]*\.(?:svg|png|jpe?g|webp|gif)(?:[?#]|$)/i.test(String(image?.src || ""));
     return (
-      gallery.find((image) => String(image.src || "").includes("palimpsests.jpg")) ||
-      gallery.find((image) => String(image.src || "").match(/cover|logo/i)) ||
+      images.find((image) => String(image.src || "").includes("palimpsests.jpg")) ||
+      images.find((image) => isRaster(image) && !isGenericMark(image)) ||
+      images.find((image) => !isGenericMark(image)) ||
+      images.find((image) => isRaster(image)) ||
+      images[0] ||
       gallery[0]
     );
   };
@@ -463,6 +469,33 @@
     return mediaFigureMarkup(media, item, "project-immersive__image");
   };
 
+  const cardMediaPlate = (item, options = {}) => {
+    const media = cardImageFor(item);
+    if (!media || mediaKindFor(media) !== "image") return "";
+    const label = options.label || media.caption || item.title || "Visual";
+    const imageAttrs = [
+      `src="${esc(media.src)}"`,
+      media.srcset ? `srcset="${esc(media.srcset)}"` : "",
+      media.sizes ? `sizes="${esc(media.sizes)}"` : "",
+      `alt=""`,
+      `loading="lazy"`,
+      `decoding="async"`,
+      media.width && media.height ? `width="${esc(media.width)}" height="${esc(media.height)}"` : "",
+    ]
+      .filter(Boolean)
+      .join(" ");
+
+    return `
+      <figure class="card-media-plate" aria-hidden="true">
+        <img ${imageAttrs} />
+        <figcaption>
+          <span>${esc(options.kicker || "Visual")}</span>
+          <strong>${esc(label)}</strong>
+        </figcaption>
+      </figure>
+    `;
+  };
+
   const homeCardPills = (item) => {
     if (!item) return [];
     if (item.id === "oeil-de-meg") return ["Photography CRM", "Portfolio", "Live site", "WordPress"];
@@ -503,6 +536,7 @@
           ${projectSignatureBubble(item, "card")}
         </div>
       </div>
+      ${cardMediaPlate(item)}
       ${cardCopy(item.summary, 1)}
       <p class="project-card__editorial-note">${esc(projectReadAs(item))}</p>
       ${signalStrip(item)}
@@ -514,9 +548,11 @@
     </article>
   `;
 
-  const projectLandingCard = (item) => `
-    <article class="project-card${item.id === "oeil-de-meg" ? " project-card--oeil-de-meg" : ""}" data-project-detail-link="${esc(entryHrefFor(item))}" aria-label="Open ${esc(item.title)} detail" ${cardBaseAttrs(item)}>
-      <a class="project-card__overlay-link" href="${esc(entryHrefFor(item))}" aria-label="Open ${esc(item.title)} detail"></a>
+  const projectLandingCard = (item) => {
+    const href = entryHrefFor(item);
+    return `
+    <article class="project-card project-index-card${item.id === "oeil-de-meg" ? " project-card--oeil-de-meg" : ""}" data-project-detail-link="${esc(href)}" aria-label="Open ${esc(item.title)} detail" ${cardBaseAttrs(item)}>
+      <a class="project-card__overlay-link" href="${esc(href)}" aria-label="Open ${esc(item.title)} detail"></a>
       <div class="project-card__top">
         <div>
           <p class="card__meta">${esc(item.category || item.type || "PROJECT")}</p>
@@ -528,12 +564,15 @@
           ${projectSignatureBubble(item, "card")}
         </div>
       </div>
+      ${cardMediaPlate(item)}
       ${cardCopy(item.summary, 1)}
       <p class="project-card__editorial-note">${esc(projectReadAs(item))}</p>
       ${signalStrip(item)}
       ${tagRow(homeCardPills(item), { limit: 4, compact: true })}
+      ${linkRow({ label: "Open project", href })}
     </article>
   `;
+  };
 
   const selectedWorksCard = (item, options = {}) => {
     if (!item) return "";
@@ -551,7 +590,7 @@
       .join(" ");
 
     return `
-      <article class="${cardClasses}" data-project-detail-link="${esc(href)}" ${cardLinkAttrs(href, label)}>
+      <article class="${cardClasses}" data-project-detail-link="${esc(href)}" ${cardBaseAttrs(item)} ${cardLinkAttrs(href, label)}>
         <a class="project-card__overlay-link" href="${esc(href)}" aria-label="${esc(label)}"></a>
         <div class="project-card__top">
           <div>
@@ -569,6 +608,7 @@
             ${projectSignatureBubble(item, "card")}
           </div>
         </div>
+        ${cardMediaPlate(item, { kicker: featured ? "Lead visual" : "Visual" })}
         ${cardCopy(item.summary || item.description, featured ? 2 : 1)}
         <p class="project-card__editorial-note">${esc(projectReadAs(item))}</p>
         ${signalStrip(item)}
@@ -593,6 +633,7 @@
           ${item.date ? chip(`Date: ${item.date}`) : ""}
         </div>
       </div>
+      ${cardMediaPlate(item)}
       ${summaryMetrics(item, "archive")}
       ${linkRow(item.cta || item.links?.[0] || null)}
     </article>
@@ -646,6 +687,20 @@
   const personCard = (item, options = {}) => {
     const href = entryHrefFor(item, options);
     if (options.variant === "collaborator") {
+      const portrait = mediaFrom(item);
+      const portraitMarkup = portrait && mediaKindFor(portrait) === "image"
+        ? `
+            <span class="collaborator-card__portrait" aria-hidden="true">
+              <img
+                src="${esc(portrait.src)}"
+                alt=""
+                loading="lazy"
+                decoding="async"
+                ${portrait.width && portrait.height ? `width="${esc(portrait.width)}" height="${esc(portrait.height)}"` : ""}
+              />
+            </span>
+          `
+        : "";
       const initials = String(item.title || "")
         .split(/[\s.]+/)
         .filter(Boolean)
@@ -659,7 +714,7 @@
           ${cardOverlayLink(href, options.label || `Open ${item.title}`)}
           <div class="collaborator-card__header">
             <span class="collaborator-card__index">${String((options.index || 0) + 1).padStart(2, "0")}</span>
-            <span class="collaborator-card__monogram" aria-hidden="true">${esc(initials)}</span>
+            ${portraitMarkup || `<span class="collaborator-card__monogram" aria-hidden="true">${esc(initials)}</span>`}
           </div>
           <div class="collaborator-card__identity">
             <p class="card__meta">${esc(item.subtitle || item.type || "Collaborator")}</p>
@@ -687,6 +742,7 @@
           </div>
           ${statusBadge(item.status, item.statusLabel)}
         </div>
+        ${cardMediaPlate(item, { kicker: "Artist", label: item.media?.gallery?.[0]?.caption || item.title })}
         ${cardCopy(item.summary, 1)}
         ${signalStrip(item)}
         ${summaryMetrics(item, "person")}
@@ -705,6 +761,7 @@
         </div>
         ${statusBadge(item.status, item.statusLabel)}
       </div>
+      ${cardMediaPlate(item)}
       ${cardCopy(item.summary, 1)}
       ${signalStrip(item)}
       ${summaryMetrics(item, "program")}
@@ -721,63 +778,71 @@
         </div>
         ${statusBadge(item.status, item.statusLabel)}
       </div>
+      ${cardMediaPlate(item)}
       ${cardCopy(item.summary, 1)}
       ${signalStrip(item)}
       ${summaryMetrics(item, "program")}
     </article>
   `;
 
-  const taxonomyPanel = (scope, title, description, groups, extraClass = "") => `
-    <section class="zone-card hero taxonomy-panel ${esc(extraClass)}" data-filter-scope="${esc(scope)}">
-      <div class="section-head">
-        <p class="eyebrow">${esc(title)}</p>
-        <h2>${esc(description.heading)}</h2>
-        <p class="lede">${esc(description.copy)}</p>
-      </div>
-      <details class="taxonomy-panel__drawer" data-taxonomy-drawer open>
-        <summary class="taxonomy-panel__drawer-summary">
-          <span class="taxonomy-panel__drawer-heading">
-            <strong>Advanced filters</strong>
-            <span>${groups.length} groups</span>
-          </span>
-          <span class="taxonomy-panel__drawer-hint">Tap to show or hide</span>
-        </summary>
-        <div class="taxonomy-grid">
-          ${groups
+  const taxonomyPanel = (scope, title, description, groups, extraClass = "") => {
+    const renderGroup = (group) => `
+      <div class="taxonomy-column${group.options.length > 6 ? " taxonomy-column--scroll" : ""}">
+        <p class="card__meta">${esc(group.label)}</p>
+        <div class="pill-cloud taxonomy-pill-row" data-filter-group="${esc(group.key)}">
+          ${group.options
             .map(
-              (group) => `
-                <div class="taxonomy-column${group.options.length > 6 ? " taxonomy-column--scroll" : ""}">
-                  <p class="card__meta">${esc(group.label)}</p>
-                  <div
-                    class="pill-cloud taxonomy-pill-row"
-                    data-filter-group="${esc(group.key)}"
-                    style="flex-wrap:nowrap;overflow-x:auto;overflow-y:hidden;scrollbar-width:thin;-webkit-overflow-scrolling:touch;"
-                  >
-                    ${group.options
-                      .map(
-                        (option) => `
-                          <button
-                            class="filter-chip${option.active ? " is-active" : ""}"
-                            type="button"
-                            aria-pressed="${option.active ? "true" : "false"}"
-                            data-filter-toggle
-                            data-filter-key="${esc(group.key)}"
-                            data-filter-value="${esc(option.value)}"
-                          >
-                            ${esc(option.label)}
-                          </button>
-                        `,
-                      )
-                      .join("")}
-                  </div>
-                </div>
+              (option) => `
+                <button
+                  class="filter-chip${option.active ? " is-active" : ""}"
+                  type="button"
+                  aria-pressed="${option.active ? "true" : "false"}"
+                  data-filter-toggle
+                  data-filter-key="${esc(group.key)}"
+                  data-filter-value="${esc(option.value)}"
+                >
+                  ${esc(option.label)}
+                </button>
               `,
             )
             .join("")}
         </div>
-      </details>
-    </section>
-  `;
+      </div>
+    `;
+    const quickGroups = groups.slice(0, Math.min(3, groups.length));
+    const advancedGroups = groups.slice(quickGroups.length);
+
+    return `
+      <section class="zone-card hero taxonomy-panel ${esc(extraClass)}" data-filter-scope="${esc(scope)}">
+        <div class="section-head taxonomy-panel__head">
+          <p class="eyebrow">${esc(title)}</p>
+          <h2>${esc(description.heading)}</h2>
+          <p class="lede">${esc(description.copy)}</p>
+        </div>
+        <div class="taxonomy-panel__quick-grid" aria-label="Priority filters">
+          ${quickGroups.map(renderGroup).join("")}
+        </div>
+        ${
+          advancedGroups.length
+            ? `
+              <details class="taxonomy-panel__drawer" data-taxonomy-drawer>
+                <summary class="taxonomy-panel__drawer-summary">
+                  <span class="taxonomy-panel__drawer-heading">
+                    <strong>More filters</strong>
+                    <span>${advancedGroups.length} groups</span>
+                  </span>
+                  <span class="taxonomy-panel__drawer-hint">Tap to show or hide</span>
+                </summary>
+                <div class="taxonomy-grid taxonomy-grid--advanced">
+                  ${advancedGroups.map(renderGroup).join("")}
+                </div>
+              </details>
+            `
+            : ""
+        }
+      </section>
+    `;
+  };
 
   const manifestPanel = () => `
     <section class="zone-card hero">
@@ -841,9 +906,9 @@
   const vasteBanner = () => `
     <section class="zone-card hero latests-panel" id="latests">
       <div class="section-head">
-        <p class="eyebrow">LATESTS</p>
-        <h2>Current project image.</h2>
-        <p class="lede">The latest work, then the runtime line.</p>
+        <p class="eyebrow">PROOF FIRST</p>
+        <h2>One current project, one runtime foundation.</h2>
+        <p class="lede">Start with visible work, then open the system line that explains how the studio thinks and builds.</p>
       </div>
       <div class="latests-grid latests-grid--cinematic">
         ${(() => {
@@ -890,9 +955,9 @@
         <article class="program-card latests-panel__cta vast-banner vast-banner--cinematic" ${vasteAttrs}>
           <div class="vast-banner__shell">
             <div class="vast-banner__content">
-              <p class="card__meta">CONCEPT CTA</p>
+              <p class="card__meta">RUNTIME FOUNDATION</p>
               <h3 class="vast-banner__title">VASTE</h3>
-              <p class="vast-banner__copy">Open the runtime.</p>
+              <p class="vast-banner__copy">Open the proprietary program behind the graph, identity and knowledge-system work.</p>
               <div class="pill-cloud vast-banner__chips" aria-label="VASTE attributes">
                 <span class="chip">Runtime</span>
                 <span class="chip">Graph systems</span>
@@ -929,12 +994,12 @@
           <div class="section-head">
             <p class="eyebrow">WORK</p>
             <h2>Selected works.</h2>
-            <p class="lede">A curated path through the projects currently shaping the studio line.</p>
+            <p class="lede">A compact path through client delivery, proprietary platforms and cultural publishing.</p>
           </div>
           <aside class="panel panel--soft selected-works-panel__info">
             <p class="card__meta">CURATED PATH</p>
             <strong>${esc(routeCount)}</strong>
-            <p class="card__copy">The home keeps one lead project and a short supporting queue. It points toward the archive without flattening the work into a grid.</p>
+            <p class="card__copy">Use this as the fast scan before entering the full project catalogue or archive.</p>
             ${metricRail(
               [
                 { label: "Lead", value: lead.title || lead.category || lead.type || "Project", note: lead.statusLabel || lead.status || "", tone: "system", fill: 0.9 },
@@ -1038,6 +1103,7 @@
     homeProjects,
     featuredProjectForHome,
     projectHeroMedia,
+    cardMediaPlate,
     homeCardPills,
     projectCard,
     projectLandingCard,

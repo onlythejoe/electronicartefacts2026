@@ -177,6 +177,124 @@
 
   };
 
+  const initAmbientField = () => {
+    if (document.querySelector("[data-ambient-field]")) return;
+    const root = document.createElement("div");
+    root.className = "ambient-field";
+    root.setAttribute("data-ambient-field", "");
+    root.setAttribute("aria-hidden", "true");
+    root.innerHTML = "<canvas></canvas>";
+    document.body.prepend(root);
+
+    const canvas = root.querySelector("canvas");
+    const ctx = canvas?.getContext("2d");
+    if (!canvas || !ctx) return;
+
+    const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    let width = 0;
+    let height = 0;
+    let particles = [];
+    let rafId = 0;
+
+    const resize = () => {
+      const dpr = Math.max(1, Math.min(2, window.devicePixelRatio || 1));
+      width = Math.max(1, window.innerWidth);
+      height = Math.max(1, window.innerHeight);
+      canvas.width = Math.round(width * dpr);
+      canvas.height = Math.round(height * dpr);
+      canvas.style.width = `${width}px`;
+      canvas.style.height = `${height}px`;
+      ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+
+      const anchors = [
+        { x: 0.2, y: 0.22, spreadX: 0.34, spreadY: 0.26, warmth: 1 },
+        { x: 0.75, y: 0.34, spreadX: 0.3, spreadY: 0.24, warmth: 0.78 },
+        { x: 0.45, y: 0.74, spreadX: 0.42, spreadY: 0.2, warmth: 0.9 },
+      ];
+      const count = Math.min(150, Math.max(72, Math.round((width * height) / 14500)));
+      particles = Array.from({ length: count }, (_, index) => {
+        const anchor = anchors[index % anchors.length];
+        const angle = index * 2.399963229728653;
+        const ring = Math.sqrt(((index * 37) % 101) / 101);
+        const offsetX = Math.cos(angle) * ring * width * anchor.spreadX;
+        const offsetY = Math.sin(angle * 1.17) * ring * height * anchor.spreadY;
+        const haze = index % 5 === 0;
+        return {
+          x: anchor.x * width + offsetX,
+          y: anchor.y * height + offsetY,
+          driftX: 8 + ((index * 11) % 23),
+          driftY: 7 + ((index * 17) % 21),
+          phase: index * 0.73,
+          phaseAlt: index * 1.19,
+          radius: haze ? 16 + (index % 7) * 2.8 : 1.2 + (index % 6) * 0.55,
+          alpha: haze ? 0.022 + (index % 4) * 0.006 : 0.055 + (index % 5) * 0.013,
+          warmth: anchor.warmth,
+          haze,
+        };
+      });
+    };
+
+    const draw = () => {
+      ctx.clearRect(0, 0, width, height);
+      const time = Date.now() * 0.001;
+      ctx.globalCompositeOperation = "lighter";
+
+      particles.forEach((particle) => {
+        const driftScale = reduceMotion ? 0 : 1;
+        const x =
+          particle.x +
+          Math.sin(time * 0.13 + particle.phase) * particle.driftX * driftScale +
+          Math.sin(time * 0.07 + particle.phaseAlt) * particle.driftY * 0.45 * driftScale;
+        const y =
+          particle.y +
+          Math.cos(time * 0.11 + particle.phaseAlt) * particle.driftY * driftScale +
+          Math.sin(time * 0.06 + particle.phase) * particle.driftX * 0.38 * driftScale;
+        const pulse = reduceMotion ? 0.5 : (Math.sin(time * 0.42 + particle.phase) + 1) * 0.5;
+        const radius = particle.radius + (particle.haze ? pulse * 4.5 : pulse * 0.85);
+        const alpha = particle.alpha * (0.68 + pulse * 0.38);
+
+        if (particle.haze) {
+          const gradient = ctx.createRadialGradient(x, y, 0, x, y, radius);
+          gradient.addColorStop(0, `rgba(247,244,239,${(alpha * particle.warmth).toFixed(3)})`);
+          gradient.addColorStop(0.48, `rgba(234,220,207,${(alpha * 0.46).toFixed(3)})`);
+          gradient.addColorStop(1, "rgba(247,244,239,0)");
+          ctx.fillStyle = gradient;
+        } else {
+          ctx.fillStyle = `rgba(247,244,239,${alpha.toFixed(3)})`;
+        }
+
+        ctx.beginPath();
+        ctx.arc(x, y, radius, 0, Math.PI * 2);
+        ctx.fill();
+      });
+      ctx.globalCompositeOperation = "source-over";
+
+      if (!reduceMotion && !document.hidden) rafId = requestAnimationFrame(draw);
+    };
+
+    const start = () => {
+      if (rafId || reduceMotion || document.hidden) return;
+      rafId = requestAnimationFrame(draw);
+    };
+    const stop = () => {
+      if (!rafId) return;
+      cancelAnimationFrame(rafId);
+      rafId = 0;
+    };
+
+    resize();
+    draw();
+    window.addEventListener("resize", () => {
+      resize();
+      if (reduceMotion) draw();
+    });
+    document.addEventListener("visibilitychange", () => {
+      if (document.hidden) stop();
+      else start();
+    });
+    start();
+  };
+
   const makeEntryHref = (item) => {
     if (!item) return "./index.html";
     const canonicalRoute = window.EA_CATALOG?.routeFor?.(item);
@@ -200,6 +318,7 @@
       const max = document.documentElement.scrollHeight - window.innerHeight;
       const value = max > 0 ? Math.min(1, Math.max(0, window.scrollY / max)) : 0;
       progress.style.setProperty("--scroll-progress", String(value));
+      document.body.classList.toggle("is-page-scrolled", window.scrollY > 140);
       ticking = false;
     };
 
@@ -381,7 +500,9 @@
     let frame = 0;
 
     const resolveScale = () => {
-      targetScale = pointerDown ? (hoveringInteractive ? 2.55 : 0.95) : hoveringInteractive ? 2.3 : 1;
+      targetScale = pointerDown ? (hoveringInteractive ? 1.16 : 0.82) : hoveringInteractive ? 1.52 : 1;
+      cursor.classList.toggle("is-interactive", hoveringInteractive);
+      cursor.classList.toggle("is-pressed", pointerDown);
     };
 
     const render = () => {
@@ -568,6 +689,7 @@
     button.className = "command-fab";
     button.type = "button";
     button.setAttribute("aria-label", "Open quick navigation");
+    button.setAttribute("title", "Open quick navigation");
     button.innerHTML = "<span>Search</span><kbd>⌘K</kbd>";
 
     const palette = document.createElement("div");
@@ -798,11 +920,16 @@
         const meta = cardText(card, ".card__meta");
         const copy = cardText(card, ".card__copy");
         const href = card.getAttribute("data-project-detail-link") || card.getAttribute("data-card-link") || card.querySelector("a[href]")?.getAttribute("href") || "";
+        const mediaNode = card.querySelector(".card-media-plate img");
+        const cardImageVar = getComputedStyle(card).getPropertyValue("--card-image").trim();
+        const cardImageMatch = cardImageVar.match(/url\((['\"]?)(.*?)\1\)/);
+        const mediaSrc = mediaNode?.currentSrc || mediaNode?.src || cardImageMatch?.[2] || "";
         const tags = [...card.querySelectorAll(".taxonomy-pill, .status-badge, .entity-badge")]
           .slice(0, 8)
           .map((node) => `<span class="${esc(node.className)}">${esc(node.textContent.trim())}</span>`)
           .join("");
         body.innerHTML = `
+          ${mediaSrc ? `<div class="quick-view__media" style="background-image:url('${esc(mediaSrc)}')" aria-hidden="true"></div>` : ""}
           <p class="card__meta">${esc(meta || "Quick view")}</p>
           <h2>${esc(title)}</h2>
           ${copy ? `<p>${esc(copy)}</p>` : ""}
@@ -844,9 +971,9 @@
     dock.className = "ux-dock";
     dock.setAttribute("data-ux-dock", "");
     dock.innerHTML = `
-      <button type="button" data-ux-action="top" aria-label="Back to top">↑</button>
-      <button type="button" data-ux-action="compact" aria-label="Toggle compact view">▦</button>
-      <button type="button" data-ux-action="vivid" aria-label="Toggle vivid mode">◐</button>
+      <button type="button" data-ux-action="top" aria-label="Back to top" title="Back to top">↑</button>
+      <button type="button" data-ux-action="compact" aria-label="Toggle compact view" title="Toggle compact view">▦</button>
+      <button type="button" data-ux-action="vivid" aria-label="Toggle vivid mode" title="Toggle vivid mode">◐</button>
     `;
     document.body.append(dock);
 
@@ -914,6 +1041,101 @@
     document.addEventListener("pointerover", onIntent, { passive: true });
     document.addEventListener("touchstart", onIntent, { passive: true });
     document.addEventListener("focusin", onIntent);
+  };
+
+  const initProjectDossier = (root = document) => {
+    root.querySelectorAll("[data-project-moodboard]").forEach((board) => {
+      if (board.dataset.boundProjectMoodboard === "true") return;
+      board.dataset.boundProjectMoodboard = "true";
+      const filters = [...board.querySelectorAll("[data-project-mood-filter]")];
+      const assets = [...board.querySelectorAll("[data-project-mood-asset]")];
+      const activate = (filter) => {
+        filters.forEach((button) => {
+          const active = button.dataset.projectMoodFilter === filter;
+          button.classList.toggle("is-active", active);
+          button.setAttribute("aria-pressed", active ? "true" : "false");
+        });
+        assets.forEach((asset) => {
+          const visible = filter === "all" || asset.dataset.moodKind === filter;
+          asset.hidden = !visible;
+          asset.classList.toggle("is-muted", !visible);
+        });
+      };
+      filters.forEach((button) => {
+        button.addEventListener("click", () => activate(button.dataset.projectMoodFilter || "all"));
+      });
+    });
+
+    root.querySelectorAll("[data-project-tabs]").forEach((tabsRoot) => {
+      if (tabsRoot.dataset.boundProjectTabs === "true") return;
+      tabsRoot.dataset.boundProjectTabs = "true";
+      tabsRoot.classList.add("is-tabbed");
+
+      const tabs = [...tabsRoot.querySelectorAll("[data-project-tab]")];
+      const panels = [...tabsRoot.querySelectorAll("[data-project-panel]")];
+      const activate = (activeTab) => {
+        const targetId = activeTab.getAttribute("aria-controls");
+        tabs.forEach((tab) => {
+          const active = tab === activeTab;
+          tab.classList.toggle("is-active", active);
+          tab.setAttribute("aria-selected", active ? "true" : "false");
+          tab.tabIndex = active ? 0 : -1;
+        });
+        panels.forEach((panel) => {
+          panel.classList.toggle("is-active", panel.id === targetId);
+        });
+      };
+
+      tabs.forEach((tab, index) => {
+        tab.tabIndex = tab.classList.contains("is-active") ? 0 : -1;
+        tab.addEventListener("click", () => activate(tab));
+        tab.addEventListener("keydown", (event) => {
+          if (!["ArrowLeft", "ArrowRight", "Home", "End"].includes(event.key)) return;
+          event.preventDefault();
+          const nextIndex =
+            event.key === "Home"
+              ? 0
+              : event.key === "End"
+                ? tabs.length - 1
+                : event.key === "ArrowRight"
+                  ? (index + 1) % tabs.length
+                  : (index - 1 + tabs.length) % tabs.length;
+          tabs[nextIndex].focus();
+          activate(tabs[nextIndex]);
+        });
+      });
+    });
+
+    root.querySelectorAll("[data-project-process]").forEach((process) => {
+      if (process.dataset.boundProjectProcess === "true") return;
+      process.dataset.boundProjectProcess = "true";
+      process.addEventListener("click", (event) => {
+        const item = event.target.closest("[data-project-step]");
+        if (!item || !process.contains(item)) return;
+        process.querySelectorAll("[data-project-step]").forEach((step) => step.classList.remove("is-active"));
+        item.classList.add("is-active");
+      });
+    });
+
+    root.querySelectorAll("[data-project-graph]").forEach((graph) => {
+      if (graph.dataset.boundProjectGraph === "true") return;
+      graph.dataset.boundProjectGraph = "true";
+      const detail = graph.querySelector("[data-project-graph-detail]");
+      const label = detail?.querySelector("[data-project-graph-label]");
+      const title = detail?.querySelector("[data-project-graph-title]");
+      const statement = detail?.querySelector("[data-project-graph-statement]");
+      const nodes = [...graph.querySelectorAll("[data-project-graph-node]")];
+      const activate = (node) => {
+        nodes.forEach((item) => item.classList.toggle("is-active", item === node));
+        if (label) label.textContent = node.dataset.relationLabel || "";
+        if (title) {
+          title.textContent = node.dataset.relationTitle || "";
+          title.setAttribute("href", node.dataset.relationHref || "#");
+        }
+        if (statement) statement.textContent = node.dataset.relationStatement || "";
+      };
+      nodes.forEach((node) => node.addEventListener("click", () => activate(node)));
+    });
   };
 
   const initContactDiscovery = () => {
@@ -1204,11 +1426,16 @@
   };
 
   const initUXEnhancements = (filterState) => {
+    initAmbientField();
     initScrollProgress();
     initAutoHideHeader();
+    initDesktopCursor();
     initReveal();
     initFilterSummaries(filterState);
+    initProjectDossier();
     scheduleIdle(() => {
+      initCommandPalette();
+      initUXDock();
       initCardSpotlight();
       initDragRails();
       initImageLightbox();
@@ -1224,6 +1451,7 @@
     initQuickView(root);
     initTaxonomyPills(root);
     initLyricsHighlights(root);
+    initProjectDossier(root);
   };
 
   const syncNavigationState = (current) => {
@@ -1284,7 +1512,7 @@
 
     if (current === "mentions-legales") document.title = "Legal Notice | Electronic Artefacts";
     if (current === "confidentialite") document.title = "Privacy Policy | Electronic Artefacts";
-    if (current === "programs") document.title = "Programs and Runtimes | Electronic Artefacts";
+    if (current === "programs") document.title = "Programs, Repo Access and Runtimes | Electronic Artefacts";
     if (current === "projects") document.title = "Projects | Electronic Artefacts";
     if (current === "search") document.title = "Search | Electronic Artefacts";
   };
@@ -1329,7 +1557,7 @@
       index: fallbackDescription,
       work: "Explore digital products, knowledge platforms, creative technology and public systems designed by Electronic Artefacts.",
       research: "Research across technology, knowledge systems, culture, governance, perception and creative production.",
-      programs: "Discover the runtimes, software programs and architectural systems behind Electronic Artefacts projects.",
+      programs: "Explore Electronic Artefacts software programs available through repository access, pilots, implementation work and licensing conversations.",
       projects: "Explore Electronic Artefacts projects across software, cultural platforms, artistic production and client systems.",
       archive: "Browse releases, prototypes, documents, research logs and unfinished material preserved by Electronic Artefacts.",
       about: "Electronic Artefacts is an independent creative technology studio connecting research, software, design and cultural production.",

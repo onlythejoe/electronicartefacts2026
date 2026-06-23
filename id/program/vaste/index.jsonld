@@ -17,7 +17,7 @@
       "@type": "SoftwareApplication",
       "@id": "https://electronicartefacts.com/id/program/vaste/",
       "name": "VASTE",
-      "description": "VASTE is the primary proprietary runtime developed by Electronic Artefacts for graph architectures, contextual execution, identity systems and modular world construction.",
+      "description": "VASTE is the primary proprietary runtime developed and commercialized by Electronic Artefacts for graph architectures, contextual execution, identity systems and modular world construction.",
       "url": "https://electronicartefacts.com/programs/vaste/",
       "dateCreated": "2024-01-01",
       "datePublished": "2026-01-01",

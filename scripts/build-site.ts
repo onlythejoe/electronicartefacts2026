@@ -69,16 +69,85 @@ const hubMetadata = (title: string, description: string, route: string) => ({
   imageAlt: "Electronic Artefacts knowledge platform",
 });
 
-const hubCards = (items: Entity[]) => `<div class="card-grid card-grid--two">${items.map((entity) => `
-  <article class="panel">
-    <p class="card__meta">${escapeHtml(entity.type)}</p>
-    <h2 class="card__title"><a href="${routeForEntity(entity)}">${escapeHtml(entity.title)}</a></h2>
-    <p class="card__copy">${escapeHtml(entity.definition || entity.abstract)}</p>
-    <div class="link-row"><a class="tag" href="${routeForEntity(entity)}">Open record</a></div>
-  </article>`).join("")}</div>`;
+const typeLabel = (type: string): string => type.replace(/([a-z])([A-Z])/g, "$1 $2").toLowerCase();
+const typeSlug = (type: string): string => type.replace(/([a-z])([A-Z])/g, "$1-$2").toLowerCase();
+const entitySummary = (entity: Entity): string => entity.definition || entity.description || entity.abstract;
+const hubTags = (entity: Entity, limit: number): string[] =>
+  [entity.status, entity.maturity, ...(entity.tags || [])]
+    .filter((value, index, values): value is string => Boolean(value) && values.indexOf(value) === index)
+    .slice(0, limit);
+
+const hubCard = (entity: Entity, index: number, options: { lead?: boolean } = {}) => {
+  const route = routeForEntity(entity);
+  const label = typeLabel(entity.type);
+  const tags = hubTags(entity, options.lead ? 5 : 3);
+  return `
+    <article class="panel generated-hub-card generated-hub-card--${escapeHtml(typeSlug(entity.type))}${options.lead ? " generated-hub-card--lead" : ""}" data-hub-card-type="${escapeHtml(entity.type)}">
+      <a class="project-card__overlay-link generated-hub-card__overlay" href="${route}" aria-label="Open ${escapeHtml(entity.title)}"></a>
+      <div class="generated-hub-card__top">
+        <span class="generated-hub-card__number">${String(index + 1).padStart(2, "0")}</span>
+        <p class="card__meta">${escapeHtml(label)}</p>
+      </div>
+      <h2 class="card__title"><a href="${route}">${escapeHtml(entity.title)}</a></h2>
+      <p class="card__copy">${escapeHtml(entitySummary(entity))}</p>
+      ${tags.length ? `<div class="tag-cluster tag-cluster--compact generated-hub-card__tags">${tags.map((tag) => `<span class="chip taxonomy-pill">${escapeHtml(tag)}</span>`).join("")}</div>` : ""}
+      <div class="link-row"><a class="tag" href="${route}">Open record</a></div>
+    </article>`;
+};
+
+const hubCards = (items: Entity[]) => {
+  if (!items.length) {
+    return `<div class="generated-hub-layout"><article class="panel generated-hub-card generated-hub-card--lead"><p class="card__meta">empty index</p><h2 class="card__title">No public records yet.</h2><p class="card__copy">This hub is ready to receive public graph records.</p></article></div>`;
+  }
+
+  const lead = items[0]!;
+  const secondary = items.slice(1);
+  const groups = Object.entries(items.reduce<Record<string, number>>((acc, entity) => {
+    acc[entity.type] = (acc[entity.type] || 0) + 1;
+    return acc;
+  }, {}));
+
+  return `
+    <div class="generated-hub-layout">
+      ${hubCard(lead, 0, { lead: true })}
+      <div class="generated-hub-stack">
+        <div class="generated-hub-stack__head">
+          <p class="card__meta">Graph index</p>
+          <strong>${items.length} ${items.length === 1 ? "record" : "records"}</strong>
+        </div>
+        <nav class="generated-hub-rail" aria-label="Knowledge record types">
+          ${groups
+            .map(
+              ([type, count]) => `
+                <a class="generated-hub-rail__item" href="${routeForEntity(items.find((entity) => entity.type === type) || lead)}">
+                  <span>${String(count).padStart(2, "0")}</span>
+                  <strong>${escapeHtml(typeLabel(type))}</strong>
+                </a>`,
+            )
+            .join("")}
+        </nav>
+        <div class="generated-hub-grid">
+          ${(secondary.length ? secondary : items).map((entity, index) => hubCard(entity, secondary.length ? index + 1 : index)).join("")}
+        </div>
+      </div>
+    </div>`;
+};
 
 const writeHub = async (route: string, title: string, description: string, items: Entity[]) => {
-  const body = `<section class="zone-card hero"><div class="section-head"><p class="eyebrow">KNOWLEDGE PLATFORM</p><h1 class="display-title">${escapeHtml(title)}</h1><p class="lede">${escapeHtml(description)}</p></div>${hubCards(items)}</section>`;
+  const groups = Object.entries(items.reduce<Record<string, number>>((acc, entity) => {
+    acc[entity.type] = (acc[entity.type] || 0) + 1;
+    return acc;
+  }, {}));
+  const metrics = groups
+    .slice(0, 4)
+    .map(([type, count]) => {
+      const label = type.replace(/([A-Z])/g, " $1").toLowerCase();
+      return `<span><strong>${count}</strong><em>${escapeHtml(label)}</em></span>`;
+    })
+    .join("");
+  const secondaryAction = route === "/knowledge/" ? "/knowledge/concepts/" : "/knowledge/";
+  const secondaryLabel = route === "/knowledge/" ? "Concepts" : "Knowledge index";
+  const body = `<section class="zone-card hero generated-hub-hero generated-hub-hero--${escapeHtml(typeSlug(title))}"><div class="generated-hub-hero__intro"><div class="section-head"><p class="eyebrow">KNOWLEDGE PLATFORM</p><h1 class="display-title">${escapeHtml(title)}</h1><p class="lede">${escapeHtml(description)}</p><div class="button-row button-row--compact generated-hub-hero__actions"><a class="button button--primary" href="/search/">Search graph</a><a class="button button--secondary" href="${secondaryAction}">${secondaryLabel}</a></div></div><div class="generated-hub-hero__metrics" aria-label="Knowledge inventory">${metrics}</div></div>${hubCards(items)}</section>`;
   await writeText(routeToFile(rootDir, route), renderLayout({
     metadata: hubMetadata(title, description, route),
     body,

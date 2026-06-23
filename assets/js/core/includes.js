@@ -1,11 +1,16 @@
 (function () {
   const includeCache = new Map();
+  const includeVersion = "26";
 
   const resolveIncludeUrl = (key) => {
     if (!key) return null;
-    if (key === "header") return "./assets/partials/header.html";
-    if (key === "footer") return "./assets/partials/footer.html";
-    return `./assets/partials/${key}`;
+    const path =
+      key === "header"
+        ? "./assets/partials/header.html"
+        : key === "footer"
+          ? "./assets/partials/footer.html"
+          : `./assets/partials/${key}`;
+    return `${path}?v=${includeVersion}`;
   };
 
   const fetchInclude = async (url) => {
