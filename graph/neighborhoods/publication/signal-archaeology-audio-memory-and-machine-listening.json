@@ -1,0 +1,119 @@
+{
+  "id": "local:ea:publication:signal-archaeology-audio-memory-and-machine-listening",
+  "kind": "local",
+  "focus": "ea:publication:signal-archaeology-audio-memory-and-machine-listening",
+  "nodes": [
+    {
+      "id": "ea:collection:knowledge-hub-foundations",
+      "type": "collection",
+      "title": "Knowledge Hub Foundations",
+      "route": "/archive/collections/knowledge-hub-foundations/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:concept:digital-preservation",
+      "type": "concept",
+      "title": "Digital Preservation",
+      "route": "/knowledge/concepts/digital-preservation/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:concept:provenance",
+      "type": "concept",
+      "title": "Provenance",
+      "route": "/knowledge/concepts/provenance/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:concept:signal-archaeology",
+      "type": "concept",
+      "title": "Signal Archaeology",
+      "route": "/knowledge/concepts/signal-archaeology/",
+      "status": "active",
+      "confidence": "observed"
+    },
+    {
+      "id": "ea:program:oreth",
+      "type": "program",
+      "title": "ORETH",
+      "route": "/programs/oreth/",
+      "status": "prototype",
+      "confidence": "observed"
+    },
+    {
+      "id": "ea:project:palimpsests",
+      "type": "project",
+      "title": "Palimpsests",
+      "route": "/projects/palimpsests/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:signal-archaeology-audio-memory-and-machine-listening",
+      "type": "publication",
+      "title": "Signal Archaeology, Audio Memory and Machine Listening",
+      "route": "/publications/signal-archaeology-audio-memory-and-machine-listening/",
+      "status": "active",
+      "confidence": "published"
+    }
+  ],
+  "edges": [
+    {
+      "id": "ear:signal-archaeology-article-documents-signal-archaeology",
+      "source": "ea:publication:signal-archaeology-audio-memory-and-machine-listening",
+      "target": "ea:concept:signal-archaeology",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Signal Archaeology, Audio Memory and Machine Listening documents signal archaeology as a concept.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:signal-archaeology-article-documents-provenance",
+      "source": "ea:publication:signal-archaeology-audio-memory-and-machine-listening",
+      "target": "ea:concept:provenance",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Signal Archaeology, Audio Memory and Machine Listening explains why signal interpretation needs provenance.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:signal-archaeology-article-documents-digital-preservation",
+      "source": "ea:publication:signal-archaeology-audio-memory-and-machine-listening",
+      "target": "ea:concept:digital-preservation",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Signal Archaeology, Audio Memory and Machine Listening connects audio traces to digital preservation practice.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:signal-archaeology-article-documents-oreth",
+      "source": "ea:publication:signal-archaeology-audio-memory-and-machine-listening",
+      "target": "ea:program:oreth",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Signal Archaeology, Audio Memory and Machine Listening uses ORETH as the machine-listening and audio research context.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:signal-archaeology-article-documents-palimpsests",
+      "source": "ea:publication:signal-archaeology-audio-memory-and-machine-listening",
+      "target": "ea:project:palimpsests",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Signal Archaeology, Audio Memory and Machine Listening links Palimpsests to audio memory and sonic residue.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:knowledge-hub-foundations-has-signal-archaeology-article",
+      "source": "ea:collection:knowledge-hub-foundations",
+      "target": "ea:publication:signal-archaeology-audio-memory-and-machine-listening",
+      "predicate": "hasPart",
+      "label": "Has part",
+      "statement": "Knowledge Hub Foundations includes Signal Archaeology, Audio Memory and Machine Listening as a foundation article.",
+      "confidence": "published"
+    }
+  ]
+}

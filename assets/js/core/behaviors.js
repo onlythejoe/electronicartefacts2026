@@ -1475,12 +1475,33 @@
   const initIntentHeroes = (root = document) => {
     const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     const coarsePointer = window.matchMedia("(hover: none), (pointer: coarse)").matches;
+    const automaticLayerSelector = [
+      ".intent-hero__copy > .eyebrow",
+      ".intent-hero__copy > .display-title",
+      ".intent-hero__copy > .lede",
+      ".intent-hero__copy > .button-row",
+      ".intent-hero__copy > .pill-cloud",
+      ".intent-hero__stage-label",
+    ].join(",");
+    const layerDepth = (layer) => {
+      const explicit = Number.parseFloat(layer.getAttribute("data-depth") || "");
+      if (Number.isFinite(explicit)) return explicit;
+      if (layer.matches(".intent-hero__copy > .eyebrow")) return 0.18;
+      if (layer.matches(".intent-hero__copy > .display-title")) return 0.3;
+      if (layer.matches(".intent-hero__copy > .lede")) return 0.42;
+      if (layer.matches(".intent-hero__copy > .button-row")) return 0.68;
+      if (layer.matches(".intent-hero__copy > .pill-cloud")) return 0.55;
+      if (layer.matches(".intent-hero__stage-label")) return 0.34;
+      return 1;
+    };
 
     root.querySelectorAll("[data-intent-stage]").forEach((stage) => {
-      if (stage.dataset.intentHeroBound === "true") return;
+      const scope = stage.closest(".intent-hero") || stage;
+      if (scope.dataset.intentHeroBound === "true") return;
+      scope.dataset.intentHeroBound = "true";
       stage.dataset.intentHeroBound = "true";
 
-      const layers = [...stage.querySelectorAll("[data-depth]")];
+      const layers = [...new Set([...scope.querySelectorAll("[data-depth]"), ...scope.querySelectorAll(automaticLayerSelector)])];
       if (reduceMotion || coarsePointer || !layers.length) return;
 
       let frame = 0;
@@ -1492,12 +1513,14 @@
       const render = () => {
         currentX += (targetX - currentX) * 0.12;
         currentY += (targetY - currentY) * 0.12;
-        stage.style.setProperty("--intent-rotate-x", `${(-currentY * 2.2).toFixed(2)}deg`);
-        stage.style.setProperty("--intent-rotate-y", `${(currentX * 2.8).toFixed(2)}deg`);
+        scope.style.setProperty("--intent-glow-x", `${(68 + currentX * 10).toFixed(2)}%`);
+        scope.style.setProperty("--intent-glow-y", `${(34 + currentY * 8).toFixed(2)}%`);
+        scope.style.setProperty("--intent-rotate-x", `${(-currentY * 1.1).toFixed(2)}deg`);
+        scope.style.setProperty("--intent-rotate-y", `${(currentX * 1.4).toFixed(2)}deg`);
         layers.forEach((layer) => {
-          const depth = Number.parseFloat(layer.getAttribute("data-depth") || "1") || 1;
-          layer.style.setProperty("--intent-shift-x", `${(currentX * depth * 8).toFixed(2)}px`);
-          layer.style.setProperty("--intent-shift-y", `${(currentY * depth * 7).toFixed(2)}px`);
+          const depth = layerDepth(layer);
+          layer.style.setProperty("--intent-shift-x", `${(currentX * depth * 5.8).toFixed(2)}px`);
+          layer.style.setProperty("--intent-shift-y", `${(currentY * depth * 5).toFixed(2)}px`);
         });
 
         if (Math.abs(targetX - currentX) > 0.002 || Math.abs(targetY - currentY) > 0.002) {
@@ -1511,14 +1534,14 @@
         if (!frame) frame = requestAnimationFrame(render);
       };
 
-      stage.addEventListener("pointermove", (event) => {
-        const rect = stage.getBoundingClientRect();
+      scope.addEventListener("pointermove", (event) => {
+        const rect = scope.getBoundingClientRect();
         targetX = ((event.clientX - rect.left) / Math.max(1, rect.width) - 0.5) * 2;
         targetY = ((event.clientY - rect.top) / Math.max(1, rect.height) - 0.5) * 2;
         schedule();
       });
 
-      stage.addEventListener("pointerleave", () => {
+      scope.addEventListener("pointerleave", () => {
         targetX = 0;
         targetY = 0;
         schedule();

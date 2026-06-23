@@ -1,0 +1,84 @@
+{
+  "id": "ea:concept:linked-data",
+  "type": "concept",
+  "slug": {
+    "canonical": "linked-data"
+  },
+  "title": "Linked Data",
+  "definition": "Linked Data is a web publishing approach that identifies things with stable URIs and connects them through machine-readable statements.",
+  "abstract": "Linked Data gives public knowledge systems a way to make entities, pages, references and datasets interoperable across sites and software systems.",
+  "description": "A canonical definition of Linked Data as it applies to Electronic Artefacts, JSON-LD, RDF, SEO and public knowledge pages.",
+  "locale": "en",
+  "visibility": "public",
+  "publicationClass": "canonical",
+  "status": "active",
+  "maturity": "research",
+  "confidence": "validated",
+  "version": {
+    "version": "1.0.0",
+    "createdAt": "2026-06-23",
+    "publishedAt": "2026-06-23",
+    "modifiedAt": "2026-06-23"
+  },
+  "authors": [
+    {
+      "id": "ea:organization:electronic-artefacts"
+    }
+  ],
+  "publisher": "ea:organization:electronic-artefacts",
+  "tags": [
+    "Linked Data",
+    "Semantic Web",
+    "JSON-LD",
+    "RDF",
+    "URI"
+  ],
+  "disciplines": [
+    "Knowledge Systems",
+    "Web Development",
+    "SEO",
+    "Information Architecture"
+  ],
+  "sources": [
+    {
+      "title": "Cool URIs for the Semantic Web",
+      "url": "https://www.w3.org/TR/cooluris/",
+      "author": "Leo Sauermann and Richard Cyganiak",
+      "publisher": "W3C",
+      "publishedAt": "2008-12-03",
+      "accessedAt": "2026-06-23"
+    },
+    {
+      "title": "JSON-LD 1.1",
+      "url": "https://www.w3.org/TR/json-ld11/",
+      "publisher": "W3C",
+      "publishedAt": "2020-07-16",
+      "accessedAt": "2026-06-23"
+    }
+  ],
+  "scope": [
+    "Stable URIs",
+    "Entity identifiers",
+    "RDF statements",
+    "JSON-LD publication",
+    "Semantic web interoperability"
+  ],
+  "exclusions": [
+    "Unstructured hyperlinks without machine-readable entity identity",
+    "Private database IDs that never resolve to public records"
+  ],
+  "claims": [
+    "Linked Data principles are useful even when a site remains statically generated.",
+    "Public knowledge pages should distinguish the page URL from the entity identifier it describes."
+  ],
+  "bodyHtml": "<h2>Definition</h2>\n<p>Linked Data is a way of publishing structured information on the Web so that things can be identified, described and connected across systems. It depends on stable identifiers, explicit statements and formats that machines can read without losing the human context.</p>\n<p>The principle is simple: a page can describe an entity, but the page and the entity are not the same thing. Electronic Artefacts uses canonical public pages for humans and <code>/id/</code> identifier routes for machine-readable identity. That separation makes it possible to cite a concept, inspect its JSON-LD and connect it to other records.</p>\n<h2>Scope</h2>\n<p>Linked Data covers entity identifiers, canonical URLs, JSON-LD, RDF-compatible statements, structured data, citations and relationship exports. It does not require every site to run a graph database. A static site can publish Linked Data if it generates stable URLs, structured metadata and consistent identifiers.</p>\n<h2>Why it matters</h2>\n<p>Search engines, AI retrieval systems, archives and external tools need more than good prose. They need to know what a page is about, who published it, when it changed, what it cites, and how it connects to other things. Linked Data provides a vocabulary for that layer.</p>\n<h2>Electronic Artefacts position</h2>\n<p>Electronic Artefacts uses Linked Data pragmatically. The goal is not to become a standards demonstration. The goal is to make concepts, programs, projects and publications citable and durable. JSON-LD is especially useful because it works with ordinary JSON-based web tooling while preserving Linked Data semantics.</p>\n<h2>Applications</h2>\n<p>Useful applications include article structured data, concept identifiers, project metadata, publication citation, archive provenance, graph exports, internal search and future external data integration.</p>\n<h2>Limitations</h2>\n<p>Linked Data does not solve editorial quality. A malformed graph can be perfectly machine-readable and intellectually useless. The durable value comes from combining explicit identifiers with careful writing, sources, evidence and review.</p>\n<h2>References</h2>\n<p>See W3C Cool URIs for the Semantic Web, JSON-LD 1.1, RDF 1.1 Concepts and the Electronic Artefacts JSON-LD output.</p>\n",
+  "headings": [
+    "Definition",
+    "Scope",
+    "Why it matters",
+    "Electronic Artefacts position",
+    "Applications",
+    "Limitations",
+    "References"
+  ]
+}

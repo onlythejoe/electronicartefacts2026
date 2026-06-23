@@ -7,7 +7,23 @@ const escapeXml = (value: string) =>
   value.replaceAll("&", "&amp;").replaceAll("<", "&lt;").replaceAll(">", "&gt;");
 
 export const buildSitemap = (entities: Entity[]): string => {
-  const staticRoutes = ["/", "/about.html", "/archive.html", "/contact.html", "/projects.html", "/programs.html", "/research.html", "/work.html", "/knowledge/", "/knowledge/concepts/", "/publications/"];
+  const staticRoutes = [
+    "/",
+    "/about.html",
+    "/archive.html",
+    "/contact.html",
+    "/projects.html",
+    "/programs.html",
+    "/research.html",
+    "/work.html",
+    "/knowledge/",
+    "/knowledge/concepts/",
+    "/knowledge/methods/",
+    "/knowledge/frameworks/",
+    "/knowledge/technologies/",
+    "/archive/collections/",
+    "/publications/",
+  ];
   const urls: Array<{ route: string; lastmod?: string }> = [
     ...staticRoutes.map((route) => ({ route })),
     ...entities.filter(isIndexableEntity).map((entity) => ({

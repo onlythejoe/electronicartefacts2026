@@ -1,0 +1,68 @@
+{
+  "id": "local:ea:concept:signal-archaeology",
+  "kind": "local",
+  "focus": "ea:concept:signal-archaeology",
+  "nodes": [
+    {
+      "id": "ea:concept:signal-archaeology",
+      "type": "concept",
+      "title": "Signal Archaeology",
+      "route": "/knowledge/concepts/signal-archaeology/",
+      "status": "active",
+      "confidence": "observed"
+    },
+    {
+      "id": "ea:program:oreth",
+      "type": "program",
+      "title": "ORETH",
+      "route": "/programs/oreth/",
+      "status": "prototype",
+      "confidence": "observed"
+    },
+    {
+      "id": "ea:project:palimpsests",
+      "type": "project",
+      "title": "Palimpsests",
+      "route": "/projects/palimpsests/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:signal-archaeology-audio-memory-and-machine-listening",
+      "type": "publication",
+      "title": "Signal Archaeology, Audio Memory and Machine Listening",
+      "route": "/publications/signal-archaeology-audio-memory-and-machine-listening/",
+      "status": "active",
+      "confidence": "published"
+    }
+  ],
+  "edges": [
+    {
+      "id": "ear:oreth-applies-signal-archaeology",
+      "source": "ea:program:oreth",
+      "target": "ea:concept:signal-archaeology",
+      "predicate": "appliesConcept",
+      "label": "Applies concept",
+      "statement": "ORETH applies signal archaeology to audio analysis, machine listening and sonic trace interpretation.",
+      "confidence": "observed"
+    },
+    {
+      "id": "ear:palimpsests-applies-signal-archaeology",
+      "source": "ea:project:palimpsests",
+      "target": "ea:concept:signal-archaeology",
+      "predicate": "appliesConcept",
+      "label": "Applies concept",
+      "statement": "Palimpsests applies signal archaeology by treating sonic residue and media traces as cultural material.",
+      "confidence": "observed"
+    },
+    {
+      "id": "ear:signal-archaeology-article-documents-signal-archaeology",
+      "source": "ea:publication:signal-archaeology-audio-memory-and-machine-listening",
+      "target": "ea:concept:signal-archaeology",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Signal Archaeology, Audio Memory and Machine Listening documents signal archaeology as a concept.",
+      "confidence": "published"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "id": "local:ea:concept:linked-data",
+  "kind": "local",
+  "focus": "ea:concept:linked-data",
+  "nodes": [
+    {
+      "id": "ea:concept:linked-data",
+      "type": "concept",
+      "title": "Linked Data",
+      "route": "/knowledge/concepts/linked-data/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:publication:linked-data-and-public-knowledge-pages",
+      "type": "publication",
+      "title": "Linked Data and Public Knowledge Pages",
+      "route": "/publications/linked-data-and-public-knowledge-pages/",
+      "status": "active",
+      "confidence": "published"
+    }
+  ],
+  "edges": [
+    {
+      "id": "ear:linked-data-article-documents-linked-data",
+      "source": "ea:publication:linked-data-and-public-knowledge-pages",
+      "target": "ea:concept:linked-data",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Linked Data and Public Knowledge Pages documents Linked Data as a publishing discipline for public knowledge pages.",
+      "confidence": "published"
+    }
+  ]
+}

@@ -1,8 +1,63 @@
 [
   {
+    "id": "ea:collection:knowledge-hub-foundations",
+    "route": "/archive/collections/knowledge-hub-foundations/",
+    "identifier": "/id/collection/knowledge-hub-foundations/"
+  },
+  {
+    "id": "ea:concept:contextual-execution",
+    "route": "/knowledge/concepts/contextual-execution/",
+    "identifier": "/id/concept/contextual-execution/"
+  },
+  {
+    "id": "ea:concept:creative-coding",
+    "route": "/knowledge/concepts/creative-coding/",
+    "identifier": "/id/concept/creative-coding/"
+  },
+  {
+    "id": "ea:concept:cybernetic-feedback",
+    "route": "/knowledge/concepts/cybernetic-feedback/",
+    "identifier": "/id/concept/cybernetic-feedback/"
+  },
+  {
+    "id": "ea:concept:digital-preservation",
+    "route": "/knowledge/concepts/digital-preservation/",
+    "identifier": "/id/concept/digital-preservation/"
+  },
+  {
+    "id": "ea:concept:entity-identity",
+    "route": "/knowledge/concepts/entity-identity/",
+    "identifier": "/id/concept/entity-identity/"
+  },
+  {
+    "id": "ea:concept:generative-system",
+    "route": "/knowledge/concepts/generative-system/",
+    "identifier": "/id/concept/generative-system/"
+  },
+  {
     "id": "ea:concept:graph-runtime",
     "route": "/knowledge/concepts/graph-runtime/",
     "identifier": "/id/concept/graph-runtime/"
+  },
+  {
+    "id": "ea:concept:knowledge-graph",
+    "route": "/knowledge/concepts/knowledge-graph/",
+    "identifier": "/id/concept/knowledge-graph/"
+  },
+  {
+    "id": "ea:concept:linked-data",
+    "route": "/knowledge/concepts/linked-data/",
+    "identifier": "/id/concept/linked-data/"
+  },
+  {
+    "id": "ea:concept:provenance",
+    "route": "/knowledge/concepts/provenance/",
+    "identifier": "/id/concept/provenance/"
+  },
+  {
+    "id": "ea:concept:signal-archaeology",
+    "route": "/knowledge/concepts/signal-archaeology/",
+    "identifier": "/id/concept/signal-archaeology/"
   },
   {
     "id": "ea:organization:electronic-artefacts",
@@ -10,9 +65,19 @@
     "identifier": "/id/organization/electronic-artefacts/"
   },
   {
+    "id": "ea:program:oreth",
+    "route": "/programs/oreth/",
+    "identifier": "/id/program/oreth/"
+  },
+  {
     "id": "ea:program:vaste",
     "route": "/programs/vaste/",
     "identifier": "/id/program/vaste/"
+  },
+  {
+    "id": "ea:project:palimpsests",
+    "route": "/projects/palimpsests/",
+    "identifier": "/id/project/palimpsests/"
   },
   {
     "id": "ea:project:vestiges",
@@ -20,13 +85,53 @@
     "identifier": "/id/project/vestiges/"
   },
   {
+    "id": "ea:publication:contextual-execution-and-graph-runtimes",
+    "route": "/publications/contextual-execution-and-graph-runtimes/",
+    "identifier": "/id/publication/contextual-execution-and-graph-runtimes/"
+  },
+  {
+    "id": "ea:publication:digital-preservation-and-living-archives",
+    "route": "/publications/digital-preservation-and-living-archives/",
+    "identifier": "/id/publication/digital-preservation-and-living-archives/"
+  },
+  {
     "id": "ea:publication:foundational-lineage-001",
     "route": "/publications/foundational-lineage-001/",
     "identifier": "/id/publication/foundational-lineage-001/"
   },
   {
+    "id": "ea:publication:generative-systems-cybernetics-and-creative-coding",
+    "route": "/publications/generative-systems-cybernetics-and-creative-coding/",
+    "identifier": "/id/publication/generative-systems-cybernetics-and-creative-coding/"
+  },
+  {
+    "id": "ea:publication:knowledge-graphs-for-cultural-infrastructure",
+    "route": "/publications/knowledge-graphs-for-cultural-infrastructure/",
+    "identifier": "/id/publication/knowledge-graphs-for-cultural-infrastructure/"
+  },
+  {
+    "id": "ea:publication:linked-data-and-public-knowledge-pages",
+    "route": "/publications/linked-data-and-public-knowledge-pages/",
+    "identifier": "/id/publication/linked-data-and-public-knowledge-pages/"
+  },
+  {
+    "id": "ea:publication:signal-archaeology-audio-memory-and-machine-listening",
+    "route": "/publications/signal-archaeology-audio-memory-and-machine-listening/",
+    "identifier": "/id/publication/signal-archaeology-audio-memory-and-machine-listening/"
+  },
+  {
     "id": "ea:researchField:runtime-theory",
     "route": "/research/fields/runtime-theory/",
     "identifier": "/id/research-field/runtime-theory/"
+  },
+  {
+    "id": "ea:technology:json-ld",
+    "route": "/knowledge/technologies/json-ld/",
+    "identifier": "/id/technology/json-ld/"
+  },
+  {
+    "id": "ea:technology:rdf",
+    "route": "/knowledge/technologies/rdf/",
+    "identifier": "/id/technology/rdf/"
   }
 ]

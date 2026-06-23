@@ -4,6 +4,14 @@
   "focus": "ea:program:vaste",
   "nodes": [
     {
+      "id": "ea:concept:contextual-execution",
+      "type": "concept",
+      "title": "Contextual Execution",
+      "route": "/knowledge/concepts/contextual-execution/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
       "id": "ea:concept:graph-runtime",
       "type": "concept",
       "title": "Graph Runtime",
@@ -36,6 +44,14 @@
       "confidence": "observed"
     },
     {
+      "id": "ea:publication:contextual-execution-and-graph-runtimes",
+      "type": "publication",
+      "title": "Contextual Execution and Graph Runtimes",
+      "route": "/publications/contextual-execution-and-graph-runtimes/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
       "id": "ea:publication:foundational-lineage-001",
       "type": "publication",
       "title": "Foundational Lineage #001",
@@ -61,6 +77,24 @@
       "label": "Documents",
       "statement": "Foundational Lineage",
       "confidence": "observed"
+    },
+    {
+      "id": "ear:vaste-applies-contextual-execution",
+      "source": "ea:program:vaste",
+      "target": "ea:concept:contextual-execution",
+      "predicate": "appliesConcept",
+      "label": "Applies concept",
+      "statement": "VASTE applies contextual execution through identity-aware graph records, relations, permissions and event propagation.",
+      "confidence": "observed"
+    },
+    {
+      "id": "ear:contextual-execution-article-documents-vaste",
+      "source": "ea:publication:contextual-execution-and-graph-runtimes",
+      "target": "ea:program:vaste",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Contextual Execution and Graph Runtimes uses VASTE as the program context for graph runtime execution.",
+      "confidence": "published"
     },
     {
       "id": "ear:vaste-applies-graph-runtime",

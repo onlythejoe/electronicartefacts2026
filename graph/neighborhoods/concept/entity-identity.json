@@ -1,0 +1,51 @@
+{
+  "id": "local:ea:concept:entity-identity",
+  "kind": "local",
+  "focus": "ea:concept:entity-identity",
+  "nodes": [
+    {
+      "id": "ea:concept:entity-identity",
+      "type": "concept",
+      "title": "Entity Identity",
+      "route": "/knowledge/concepts/entity-identity/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:publication:knowledge-graphs-for-cultural-infrastructure",
+      "type": "publication",
+      "title": "Knowledge Graphs for Cultural Infrastructure",
+      "route": "/publications/knowledge-graphs-for-cultural-infrastructure/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:linked-data-and-public-knowledge-pages",
+      "type": "publication",
+      "title": "Linked Data and Public Knowledge Pages",
+      "route": "/publications/linked-data-and-public-knowledge-pages/",
+      "status": "active",
+      "confidence": "published"
+    }
+  ],
+  "edges": [
+    {
+      "id": "ear:knowledge-graphs-article-documents-entity-identity",
+      "source": "ea:publication:knowledge-graphs-for-cultural-infrastructure",
+      "target": "ea:concept:entity-identity",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Knowledge Graphs for Cultural Infrastructure explains why stable entity identity matters for graph publishing.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:linked-data-article-documents-entity-identity",
+      "source": "ea:publication:linked-data-and-public-knowledge-pages",
+      "target": "ea:concept:entity-identity",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Linked Data and Public Knowledge Pages explains the difference between page URLs and entity identifiers.",
+      "confidence": "published"
+    }
+  ]
+}

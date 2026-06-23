@@ -1,0 +1,47 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://electronicartefacts.com/knowledge/concepts/entity-identity/#webpage",
+      "url": "https://electronicartefacts.com/knowledge/concepts/entity-identity/",
+      "name": "Entity Identity",
+      "mainEntity": {
+        "@id": "https://electronicartefacts.com/id/concept/entity-identity/"
+      },
+      "isPartOf": {
+        "@id": "https://electronicartefacts.com/#website"
+      }
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://electronicartefacts.com/id/concept/entity-identity/",
+      "name": "Entity Identity",
+      "description": "Entity identity is the durable naming of a person, concept, project, program, publication or artefact so that references remain stable as descriptions evolve.",
+      "url": "https://electronicartefacts.com/knowledge/concepts/entity-identity/",
+      "dateCreated": "2026-06-23",
+      "datePublished": "2026-06-23",
+      "dateModified": "2026-06-23",
+      "publisher": {
+        "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Electronic Artefacts",
+          "item": "https://electronicartefacts.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Entity Identity",
+          "item": "https://electronicartefacts.com/knowledge/concepts/entity-identity/"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,67 @@
+{
+  "id": "ea:concept:creative-coding",
+  "type": "concept",
+  "slug": {
+    "canonical": "creative-coding"
+  },
+  "title": "Creative Coding",
+  "definition": "Creative coding is the use of programming as an artistic, design or exploratory medium rather than only as an engineering implementation tool.",
+  "abstract": "Creative coding connects software, visual culture, sound, interaction, generative systems, education and experimental publishing.",
+  "description": "A canonical definition of creative coding for Electronic Artefacts knowledge articles, projects and programs.",
+  "locale": "en",
+  "visibility": "public",
+  "publicationClass": "canonical",
+  "status": "active",
+  "maturity": "research",
+  "confidence": "validated",
+  "version": {
+    "version": "1.0.0",
+    "createdAt": "2026-06-23",
+    "publishedAt": "2026-06-23",
+    "modifiedAt": "2026-06-23"
+  },
+  "authors": [
+    {
+      "id": "ea:organization:electronic-artefacts"
+    }
+  ],
+  "publisher": "ea:organization:electronic-artefacts",
+  "tags": [
+    "Creative Coding",
+    "Digital Art",
+    "Programming",
+    "Generative Art",
+    "Interaction"
+  ],
+  "disciplines": [
+    "Creative Coding",
+    "Programming",
+    "Digital Art",
+    "Motion Design",
+    "Sound Design"
+  ],
+  "scope": [
+    "Programming as medium",
+    "Generative visuals",
+    "Interactive systems",
+    "Sound tools",
+    "Prototyping",
+    "Experimental publishing"
+  ],
+  "exclusions": [
+    "Routine implementation with no artistic, design or exploratory intent"
+  ],
+  "claims": [
+    "Creative coding is a bridge between technical literacy and cultural production.",
+    "The best creative coding work makes process inspectable without reducing the work to code."
+  ],
+  "bodyHtml": "<h2>Definition</h2>\n<p>Creative coding is programming used as a creative medium. It includes visual systems, sound tools, installations, generative art, interactive sketches, prototypes, browser experiments and computational publications.</p>\n<p>The practice is not defined by a specific language. JavaScript, Processing, p5.js, TouchDesigner, Max, Python, shaders, Rust and many other environments can support creative coding when code is used to explore form, behavior and perception.</p>\n<h2>Scope</h2>\n<p>Creative coding includes experimentation, system design, tool making, procedural aesthetics, interaction, performance, data visualization, sound generation and educational work.</p>\n<h2>Electronic Artefacts position</h2>\n<p>Electronic Artefacts treats creative coding as a bridge between cultural production and technical systems. It appears in visual research, runtime interfaces, graph surfaces, audio tooling and generative production methods.</p>\n<h2>Applications</h2>\n<p>Applications include motion design, interactive diagrams, audio visualization, archive exploration, live performance tools, generative brand systems, teaching materials and interface prototypes.</p>\n<h2>Limitations</h2>\n<p>Creative coding should not be used as a vague label for any code that produces visuals. The creative intent, process and system behavior should be legible.</p>\n<h2>References</h2>\n<p>See Generative System, Cybernetic Feedback, ORETH and VASTE.</p>\n",
+  "headings": [
+    "Definition",
+    "Scope",
+    "Electronic Artefacts position",
+    "Applications",
+    "Limitations",
+    "References"
+  ]
+}

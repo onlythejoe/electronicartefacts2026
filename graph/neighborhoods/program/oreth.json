@@ -1,0 +1,102 @@
+{
+  "id": "local:ea:program:oreth",
+  "kind": "local",
+  "focus": "ea:program:oreth",
+  "nodes": [
+    {
+      "id": "ea:concept:generative-system",
+      "type": "concept",
+      "title": "Generative System",
+      "route": "/knowledge/concepts/generative-system/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:concept:signal-archaeology",
+      "type": "concept",
+      "title": "Signal Archaeology",
+      "route": "/knowledge/concepts/signal-archaeology/",
+      "status": "active",
+      "confidence": "observed"
+    },
+    {
+      "id": "ea:program:oreth",
+      "type": "program",
+      "title": "ORETH",
+      "route": "/programs/oreth/",
+      "status": "prototype",
+      "confidence": "observed"
+    },
+    {
+      "id": "ea:project:palimpsests",
+      "type": "project",
+      "title": "Palimpsests",
+      "route": "/projects/palimpsests/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:generative-systems-cybernetics-and-creative-coding",
+      "type": "publication",
+      "title": "Generative Systems, Cybernetics and Creative Coding",
+      "route": "/publications/generative-systems-cybernetics-and-creative-coding/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:signal-archaeology-audio-memory-and-machine-listening",
+      "type": "publication",
+      "title": "Signal Archaeology, Audio Memory and Machine Listening",
+      "route": "/publications/signal-archaeology-audio-memory-and-machine-listening/",
+      "status": "active",
+      "confidence": "published"
+    }
+  ],
+  "edges": [
+    {
+      "id": "ear:palimpsests-powered-by-oreth",
+      "source": "ea:project:palimpsests",
+      "target": "ea:program:oreth",
+      "predicate": "poweredBy",
+      "label": "Powered by",
+      "statement": "Palimpsests uses ORETH as its audio intelligence and artistic research layer.",
+      "confidence": "observed"
+    },
+    {
+      "id": "ear:oreth-applies-signal-archaeology",
+      "source": "ea:program:oreth",
+      "target": "ea:concept:signal-archaeology",
+      "predicate": "appliesConcept",
+      "label": "Applies concept",
+      "statement": "ORETH applies signal archaeology to audio analysis, machine listening and sonic trace interpretation.",
+      "confidence": "observed"
+    },
+    {
+      "id": "ear:oreth-applies-generative-system",
+      "source": "ea:program:oreth",
+      "target": "ea:concept:generative-system",
+      "predicate": "appliesConcept",
+      "label": "Applies concept",
+      "statement": "ORETH applies generative-system thinking to experimental audio structures and pattern exploration.",
+      "confidence": "observed"
+    },
+    {
+      "id": "ear:generative-systems-article-documents-oreth",
+      "source": "ea:publication:generative-systems-cybernetics-and-creative-coding",
+      "target": "ea:program:oreth",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Generative Systems, Cybernetics and Creative Coding links ORETH to audio pattern exploration and generative systems.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:signal-archaeology-article-documents-oreth",
+      "source": "ea:publication:signal-archaeology-audio-memory-and-machine-listening",
+      "target": "ea:program:oreth",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Signal Archaeology, Audio Memory and Machine Listening uses ORETH as the machine-listening and audio research context.",
+      "confidence": "published"
+    }
+  ]
+}

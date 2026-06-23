@@ -1,0 +1,51 @@
+{
+  "id": "local:ea:concept:generative-system",
+  "kind": "local",
+  "focus": "ea:concept:generative-system",
+  "nodes": [
+    {
+      "id": "ea:concept:generative-system",
+      "type": "concept",
+      "title": "Generative System",
+      "route": "/knowledge/concepts/generative-system/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:program:oreth",
+      "type": "program",
+      "title": "ORETH",
+      "route": "/programs/oreth/",
+      "status": "prototype",
+      "confidence": "observed"
+    },
+    {
+      "id": "ea:publication:generative-systems-cybernetics-and-creative-coding",
+      "type": "publication",
+      "title": "Generative Systems, Cybernetics and Creative Coding",
+      "route": "/publications/generative-systems-cybernetics-and-creative-coding/",
+      "status": "active",
+      "confidence": "published"
+    }
+  ],
+  "edges": [
+    {
+      "id": "ear:oreth-applies-generative-system",
+      "source": "ea:program:oreth",
+      "target": "ea:concept:generative-system",
+      "predicate": "appliesConcept",
+      "label": "Applies concept",
+      "statement": "ORETH applies generative-system thinking to experimental audio structures and pattern exploration.",
+      "confidence": "observed"
+    },
+    {
+      "id": "ear:generative-systems-article-documents-generative-system",
+      "source": "ea:publication:generative-systems-cybernetics-and-creative-coding",
+      "target": "ea:concept:generative-system",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Generative Systems, Cybernetics and Creative Coding documents generative systems through constraints, rules and selection.",
+      "confidence": "published"
+    }
+  ]
+}

@@ -373,7 +373,7 @@
   };
 
   const computationFieldMarkup = (variant = "hero") => `
-    <figure class="program-commercial-hero__media computation-field computation-field--${esc(variant)}" data-computation-field data-computation-variant="${esc(variant)}">
+    <figure class="program-commercial-hero__media computation-field computation-field--${esc(variant)}" data-computation-field data-computation-variant="${esc(variant)}" data-depth="0.86">
       <canvas class="computation-field__canvas" aria-hidden="true"></canvas>
       <div class="computation-field__hud" aria-hidden="true">
         <span>EA.RUNTIME / SIGNAL BUS</span>

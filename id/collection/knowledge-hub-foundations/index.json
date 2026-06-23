@@ -1,0 +1,120 @@
+{
+  "id": "ea:collection:knowledge-hub-foundations",
+  "type": "collection",
+  "slug": {
+    "canonical": "knowledge-hub-foundations"
+  },
+  "title": "Knowledge Hub Foundations",
+  "subtitle": "Editorial Collection",
+  "abstract": "Knowledge Hub Foundations curates the first expansion wave of Electronic Artefacts knowledge records around graph systems, preservation, generative systems, signal, audio and public semantic publishing.",
+  "description": "A curated collection grouping foundational Knowledge Hub concepts, technologies, programs, projects and publications.",
+  "locale": "en",
+  "visibility": "public",
+  "publicationClass": "published",
+  "status": "active",
+  "maturity": "research",
+  "confidence": "published",
+  "version": {
+    "version": "1.0.0",
+    "createdAt": "2026-06-23",
+    "publishedAt": "2026-06-23",
+    "modifiedAt": "2026-06-23"
+  },
+  "authors": [
+    {
+      "id": "ea:organization:electronic-artefacts"
+    }
+  ],
+  "publisher": "ea:organization:electronic-artefacts",
+  "tags": [
+    "Knowledge Hub",
+    "Editorial Collection",
+    "Foundations",
+    "Research Library",
+    "Semantic Publishing"
+  ],
+  "disciplines": [
+    "Knowledge Systems",
+    "Archives",
+    "Creative Coding",
+    "Audio Engineering",
+    "Digital Art"
+  ],
+  "thesis": "The Knowledge Hub should begin with durable foundation records that explain graph publishing, semantic identity, preservation, generative systems and audio-signal interpretation.",
+  "curator": [
+    {
+      "id": "ea:organization:electronic-artefacts"
+    }
+  ],
+  "explicitMembers": [
+    {
+      "id": "ea:publication:knowledge-graphs-for-cultural-infrastructure"
+    },
+    {
+      "id": "ea:publication:linked-data-and-public-knowledge-pages"
+    },
+    {
+      "id": "ea:publication:contextual-execution-and-graph-runtimes"
+    },
+    {
+      "id": "ea:publication:digital-preservation-and-living-archives"
+    },
+    {
+      "id": "ea:publication:generative-systems-cybernetics-and-creative-coding"
+    },
+    {
+      "id": "ea:publication:signal-archaeology-audio-memory-and-machine-listening"
+    },
+    {
+      "id": "ea:concept:knowledge-graph"
+    },
+    {
+      "id": "ea:concept:linked-data"
+    },
+    {
+      "id": "ea:concept:contextual-execution"
+    },
+    {
+      "id": "ea:concept:entity-identity"
+    },
+    {
+      "id": "ea:concept:provenance"
+    },
+    {
+      "id": "ea:concept:digital-preservation"
+    },
+    {
+      "id": "ea:concept:generative-system"
+    },
+    {
+      "id": "ea:concept:cybernetic-feedback"
+    },
+    {
+      "id": "ea:concept:creative-coding"
+    },
+    {
+      "id": "ea:concept:signal-archaeology"
+    },
+    {
+      "id": "ea:technology:rdf"
+    },
+    {
+      "id": "ea:technology:json-ld"
+    },
+    {
+      "id": "ea:program:oreth"
+    },
+    {
+      "id": "ea:project:palimpsests"
+    }
+  ],
+  "selectionNote": "This collection privileges evergreen, interconnected reference material that can support future research, SEO, AI retrieval and internal graph expansion.",
+  "bodyHtml": "<h2>Thesis</h2>\n<p>Knowledge Hub Foundations is the first editorial collection for the expanded Electronic Artefacts Knowledge Hub. It groups the records that explain why the site is becoming a research library rather than a conventional blog.</p>\n<p>The collection begins with graph infrastructure, semantic identity, contextual execution, preservation, generative systems and signal archaeology because these subjects support many future articles. They can connect software, audio, archives, design, culture and AI retrieval without forcing every topic into a single discipline.</p>\n<h2>Selection logic</h2>\n<p>The collection selects records that are durable, reusable and relational. Each member should help future readers understand other parts of the site. A good foundation record is not only an answer to one query; it becomes a connector between projects, programs and publications.</p>\n<h2>Editorial role</h2>\n<p>This collection should be used as a starting point for future waves of content. New articles can join the collection only when they strengthen the foundational graph rather than duplicate existing records.</p>\n<h2>Current members</h2>\n<p>The first wave includes six publications, ten concepts, two technology records and two Electronic Artefacts practice nodes. Together they define the first public scaffold for the Knowledge Hub.</p>\n<h2>Future expansion</h2>\n<p>Future additions should include methods, frameworks, archive records, source guides and case studies. The priority is not volume alone. Each addition should improve navigation, source quality, semantic clarity or internal linking.</p>\n",
+  "headings": [
+    "Thesis",
+    "Selection logic",
+    "Editorial role",
+    "Current members",
+    "Future expansion"
+  ]
+}

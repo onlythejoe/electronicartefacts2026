@@ -1,0 +1,409 @@
+- id: ear:palimpsests-powered-by-oreth
+  subject: ea:project:palimpsests
+  predicate: poweredBy
+  object: ea:program:oreth
+  statement: Palimpsests uses ORETH as its audio intelligence and artistic research layer.
+  confidence: observed
+  createdAt: "2026-06-23"
+  reviewedAt: "2026-06-23"
+  visibility: public
+
+- id: ear:oreth-applies-signal-archaeology
+  subject: ea:program:oreth
+  predicate: appliesConcept
+  object: ea:concept:signal-archaeology
+  statement: ORETH applies signal archaeology to audio analysis, machine listening and sonic trace interpretation.
+  confidence: observed
+  createdAt: "2026-06-23"
+  reviewedAt: "2026-06-23"
+  visibility: public
+
+- id: ear:oreth-applies-generative-system
+  subject: ea:program:oreth
+  predicate: appliesConcept
+  object: ea:concept:generative-system
+  statement: ORETH applies generative-system thinking to experimental audio structures and pattern exploration.
+  confidence: observed
+  createdAt: "2026-06-23"
+  reviewedAt: "2026-06-23"
+  visibility: public
+
+- id: ear:palimpsests-applies-signal-archaeology
+  subject: ea:project:palimpsests
+  predicate: appliesConcept
+  object: ea:concept:signal-archaeology
+  statement: Palimpsests applies signal archaeology by treating sonic residue and media traces as cultural material.
+  confidence: observed
+  createdAt: "2026-06-23"
+  reviewedAt: "2026-06-23"
+  visibility: public
+
+- id: ear:palimpsests-applies-digital-preservation
+  subject: ea:project:palimpsests
+  predicate: appliesConcept
+  object: ea:concept:digital-preservation
+  statement: Palimpsests applies digital preservation by treating audio, visual and research traces as a compound cultural record.
+  confidence: observed
+  createdAt: "2026-06-23"
+  reviewedAt: "2026-06-23"
+  visibility: public
+
+- id: ear:vestiges-applies-knowledge-graph
+  subject: ea:project:vestiges
+  predicate: appliesConcept
+  object: ea:concept:knowledge-graph
+  statement: Vestiges applies knowledge-graph principles to culture, craft, institutions, techniques and public knowledge pages.
+  confidence: observed
+  createdAt: "2026-06-23"
+  reviewedAt: "2026-06-23"
+  visibility: public
+
+- id: ear:vaste-applies-contextual-execution
+  subject: ea:program:vaste
+  predicate: appliesConcept
+  object: ea:concept:contextual-execution
+  statement: VASTE applies contextual execution through identity-aware graph records, relations, permissions and event propagation.
+  confidence: observed
+  createdAt: "2026-06-23"
+  reviewedAt: "2026-06-23"
+  visibility: public
+
+- id: ear:runtime-theory-defines-contextual-execution
+  subject: ea:researchField:runtime-theory
+  predicate: defines
+  object: ea:concept:contextual-execution
+  statement: Runtime Theory defines the research boundary for contextual execution inside Electronic Artefacts.
+  confidence: validated
+  createdAt: "2026-06-23"
+  reviewedAt: "2026-06-23"
+  visibility: public
+
+- id: ear:knowledge-graphs-article-documents-knowledge-graph
+  subject: ea:publication:knowledge-graphs-for-cultural-infrastructure
+  predicate: documents
+  object: ea:concept:knowledge-graph
+  statement: Knowledge Graphs for Cultural Infrastructure documents the knowledge-graph concept for cultural publishing.
+  confidence: published
+  createdAt: "2026-06-23"
+  reviewedAt: "2026-06-23"
+  visibility: public
+
+- id: ear:knowledge-graphs-article-documents-entity-identity
+  subject: ea:publication:knowledge-graphs-for-cultural-infrastructure
+  predicate: documents
+  object: ea:concept:entity-identity
+  statement: Knowledge Graphs for Cultural Infrastructure explains why stable entity identity matters for graph publishing.
+  confidence: published
+  createdAt: "2026-06-23"
+  reviewedAt: "2026-06-23"
+  visibility: public
+
+- id: ear:knowledge-graphs-article-documents-provenance
+  subject: ea:publication:knowledge-graphs-for-cultural-infrastructure
+  predicate: documents
+  object: ea:concept:provenance
+  statement: Knowledge Graphs for Cultural Infrastructure frames provenance as a trust layer for cultural knowledge graphs.
+  confidence: published
+  createdAt: "2026-06-23"
+  reviewedAt: "2026-06-23"
+  visibility: public
+
+- id: ear:knowledge-graphs-article-documents-vestiges
+  subject: ea:publication:knowledge-graphs-for-cultural-infrastructure
+  predicate: documents
+  object: ea:project:vestiges
+  statement: Knowledge Graphs for Cultural Infrastructure uses Vestiges as the applied cultural infrastructure example.
+  confidence: published
+  createdAt: "2026-06-23"
+  reviewedAt: "2026-06-23"
+  visibility: public
+
+- id: ear:knowledge-graphs-article-uses-rdf
+  subject: ea:publication:knowledge-graphs-for-cultural-infrastructure
+  predicate: usesTechnology
+  object: ea:technology:rdf
+  statement: Knowledge Graphs for Cultural Infrastructure uses RDF as the reference model for graph statements and resources.
+  confidence: published
+  createdAt: "2026-06-23"
+  reviewedAt: "2026-06-23"
+  visibility: public
+
+- id: ear:linked-data-article-documents-linked-data
+  subject: ea:publication:linked-data-and-public-knowledge-pages
+  predicate: documents
+  object: ea:concept:linked-data
+  statement: Linked Data and Public Knowledge Pages documents Linked Data as a publishing discipline for public knowledge pages.
+  confidence: published
+  createdAt: "2026-06-23"
+  reviewedAt: "2026-06-23"
+  visibility: public
+
+- id: ear:linked-data-article-documents-entity-identity
+  subject: ea:publication:linked-data-and-public-knowledge-pages
+  predicate: documents
+  object: ea:concept:entity-identity
+  statement: Linked Data and Public Knowledge Pages explains the difference between page URLs and entity identifiers.
+  confidence: published
+  createdAt: "2026-06-23"
+  reviewedAt: "2026-06-23"
+  visibility: public
+
+- id: ear:linked-data-article-uses-json-ld
+  subject: ea:publication:linked-data-and-public-knowledge-pages
+  predicate: usesTechnology
+  object: ea:technology:json-ld
+  statement: Linked Data and Public Knowledge Pages uses JSON-LD as the practical structured-data format for static knowledge pages.
+  confidence: published
+  createdAt: "2026-06-23"
+  reviewedAt: "2026-06-23"
+  visibility: public
+
+- id: ear:linked-data-article-uses-rdf
+  subject: ea:publication:linked-data-and-public-knowledge-pages
+  predicate: usesTechnology
+  object: ea:technology:rdf
+  statement: Linked Data and Public Knowledge Pages uses RDF as the underlying graph-data reference for Linked Data.
+  confidence: published
+  createdAt: "2026-06-23"
+  reviewedAt: "2026-06-23"
+  visibility: public
+
+- id: ear:contextual-execution-article-documents-contextual-execution
+  subject: ea:publication:contextual-execution-and-graph-runtimes
+  predicate: documents
+  object: ea:concept:contextual-execution
+  statement: Contextual Execution and Graph Runtimes documents contextual execution as a runtime principle.
+  confidence: published
+  createdAt: "2026-06-23"
+  reviewedAt: "2026-06-23"
+  visibility: public
+
+- id: ear:contextual-execution-article-documents-graph-runtime
+  subject: ea:publication:contextual-execution-and-graph-runtimes
+  predicate: documents
+  object: ea:concept:graph-runtime
+  statement: Contextual Execution and Graph Runtimes explains how contextual execution extends the graph-runtime concept.
+  confidence: published
+  createdAt: "2026-06-23"
+  reviewedAt: "2026-06-23"
+  visibility: public
+
+- id: ear:contextual-execution-article-documents-runtime-theory
+  subject: ea:publication:contextual-execution-and-graph-runtimes
+  predicate: documents
+  object: ea:researchField:runtime-theory
+  statement: Contextual Execution and Graph Runtimes connects contextual execution to Runtime Theory.
+  confidence: published
+  createdAt: "2026-06-23"
+  reviewedAt: "2026-06-23"
+  visibility: public
+
+- id: ear:contextual-execution-article-documents-vaste
+  subject: ea:publication:contextual-execution-and-graph-runtimes
+  predicate: documents
+  object: ea:program:vaste
+  statement: Contextual Execution and Graph Runtimes uses VASTE as the program context for graph runtime execution.
+  confidence: published
+  createdAt: "2026-06-23"
+  reviewedAt: "2026-06-23"
+  visibility: public
+
+- id: ear:digital-preservation-article-documents-digital-preservation
+  subject: ea:publication:digital-preservation-and-living-archives
+  predicate: documents
+  object: ea:concept:digital-preservation
+  statement: Digital Preservation and Living Archives documents digital preservation as long-term care for digital objects and context.
+  confidence: published
+  createdAt: "2026-06-23"
+  reviewedAt: "2026-06-23"
+  visibility: public
+
+- id: ear:digital-preservation-article-documents-provenance
+  subject: ea:publication:digital-preservation-and-living-archives
+  predicate: documents
+  object: ea:concept:provenance
+  statement: Digital Preservation and Living Archives explains provenance as a central layer of living archive practice.
+  confidence: published
+  createdAt: "2026-06-23"
+  reviewedAt: "2026-06-23"
+  visibility: public
+
+- id: ear:digital-preservation-article-documents-palimpsests
+  subject: ea:publication:digital-preservation-and-living-archives
+  predicate: documents
+  object: ea:project:palimpsests
+  statement: Digital Preservation and Living Archives uses Palimpsests as an example of born-digital cultural preservation.
+  confidence: published
+  createdAt: "2026-06-23"
+  reviewedAt: "2026-06-23"
+  visibility: public
+
+- id: ear:digital-preservation-article-documents-vestiges
+  subject: ea:publication:digital-preservation-and-living-archives
+  predicate: documents
+  object: ea:project:vestiges
+  statement: Digital Preservation and Living Archives connects Vestiges to living archive and cultural knowledge preservation.
+  confidence: published
+  createdAt: "2026-06-23"
+  reviewedAt: "2026-06-23"
+  visibility: public
+
+- id: ear:generative-systems-article-documents-generative-system
+  subject: ea:publication:generative-systems-cybernetics-and-creative-coding
+  predicate: documents
+  object: ea:concept:generative-system
+  statement: Generative Systems, Cybernetics and Creative Coding documents generative systems through constraints, rules and selection.
+  confidence: published
+  createdAt: "2026-06-23"
+  reviewedAt: "2026-06-23"
+  visibility: public
+
+- id: ear:generative-systems-article-documents-cybernetic-feedback
+  subject: ea:publication:generative-systems-cybernetics-and-creative-coding
+  predicate: documents
+  object: ea:concept:cybernetic-feedback
+  statement: Generative Systems, Cybernetics and Creative Coding uses cybernetic feedback as a historical and technical foundation.
+  confidence: published
+  createdAt: "2026-06-23"
+  reviewedAt: "2026-06-23"
+  visibility: public
+
+- id: ear:generative-systems-article-documents-creative-coding
+  subject: ea:publication:generative-systems-cybernetics-and-creative-coding
+  predicate: documents
+  object: ea:concept:creative-coding
+  statement: Generative Systems, Cybernetics and Creative Coding connects creative coding to generative system practice.
+  confidence: published
+  createdAt: "2026-06-23"
+  reviewedAt: "2026-06-23"
+  visibility: public
+
+- id: ear:generative-systems-article-documents-oreth
+  subject: ea:publication:generative-systems-cybernetics-and-creative-coding
+  predicate: documents
+  object: ea:program:oreth
+  statement: Generative Systems, Cybernetics and Creative Coding links ORETH to audio pattern exploration and generative systems.
+  confidence: published
+  createdAt: "2026-06-23"
+  reviewedAt: "2026-06-23"
+  visibility: public
+
+- id: ear:generative-systems-article-documents-palimpsests
+  subject: ea:publication:generative-systems-cybernetics-and-creative-coding
+  predicate: documents
+  object: ea:project:palimpsests
+  statement: Generative Systems, Cybernetics and Creative Coding links Palimpsests to repetition, residue and transformation.
+  confidence: published
+  createdAt: "2026-06-23"
+  reviewedAt: "2026-06-23"
+  visibility: public
+
+- id: ear:signal-archaeology-article-documents-signal-archaeology
+  subject: ea:publication:signal-archaeology-audio-memory-and-machine-listening
+  predicate: documents
+  object: ea:concept:signal-archaeology
+  statement: Signal Archaeology, Audio Memory and Machine Listening documents signal archaeology as a concept.
+  confidence: published
+  createdAt: "2026-06-23"
+  reviewedAt: "2026-06-23"
+  visibility: public
+
+- id: ear:signal-archaeology-article-documents-provenance
+  subject: ea:publication:signal-archaeology-audio-memory-and-machine-listening
+  predicate: documents
+  object: ea:concept:provenance
+  statement: Signal Archaeology, Audio Memory and Machine Listening explains why signal interpretation needs provenance.
+  confidence: published
+  createdAt: "2026-06-23"
+  reviewedAt: "2026-06-23"
+  visibility: public
+
+- id: ear:signal-archaeology-article-documents-digital-preservation
+  subject: ea:publication:signal-archaeology-audio-memory-and-machine-listening
+  predicate: documents
+  object: ea:concept:digital-preservation
+  statement: Signal Archaeology, Audio Memory and Machine Listening connects audio traces to digital preservation practice.
+  confidence: published
+  createdAt: "2026-06-23"
+  reviewedAt: "2026-06-23"
+  visibility: public
+
+- id: ear:signal-archaeology-article-documents-oreth
+  subject: ea:publication:signal-archaeology-audio-memory-and-machine-listening
+  predicate: documents
+  object: ea:program:oreth
+  statement: Signal Archaeology, Audio Memory and Machine Listening uses ORETH as the machine-listening and audio research context.
+  confidence: published
+  createdAt: "2026-06-23"
+  reviewedAt: "2026-06-23"
+  visibility: public
+
+- id: ear:signal-archaeology-article-documents-palimpsests
+  subject: ea:publication:signal-archaeology-audio-memory-and-machine-listening
+  predicate: documents
+  object: ea:project:palimpsests
+  statement: Signal Archaeology, Audio Memory and Machine Listening links Palimpsests to audio memory and sonic residue.
+  confidence: published
+  createdAt: "2026-06-23"
+  reviewedAt: "2026-06-23"
+  visibility: public
+
+- id: ear:knowledge-hub-foundations-has-knowledge-graphs-article
+  subject: ea:collection:knowledge-hub-foundations
+  predicate: hasPart
+  object: ea:publication:knowledge-graphs-for-cultural-infrastructure
+  statement: Knowledge Hub Foundations includes Knowledge Graphs for Cultural Infrastructure as a foundation article.
+  confidence: published
+  createdAt: "2026-06-23"
+  reviewedAt: "2026-06-23"
+  visibility: public
+
+- id: ear:knowledge-hub-foundations-has-linked-data-article
+  subject: ea:collection:knowledge-hub-foundations
+  predicate: hasPart
+  object: ea:publication:linked-data-and-public-knowledge-pages
+  statement: Knowledge Hub Foundations includes Linked Data and Public Knowledge Pages as a foundation article.
+  confidence: published
+  createdAt: "2026-06-23"
+  reviewedAt: "2026-06-23"
+  visibility: public
+
+- id: ear:knowledge-hub-foundations-has-contextual-execution-article
+  subject: ea:collection:knowledge-hub-foundations
+  predicate: hasPart
+  object: ea:publication:contextual-execution-and-graph-runtimes
+  statement: Knowledge Hub Foundations includes Contextual Execution and Graph Runtimes as a foundation article.
+  confidence: published
+  createdAt: "2026-06-23"
+  reviewedAt: "2026-06-23"
+  visibility: public
+
+- id: ear:knowledge-hub-foundations-has-digital-preservation-article
+  subject: ea:collection:knowledge-hub-foundations
+  predicate: hasPart
+  object: ea:publication:digital-preservation-and-living-archives
+  statement: Knowledge Hub Foundations includes Digital Preservation and Living Archives as a foundation article.
+  confidence: published
+  createdAt: "2026-06-23"
+  reviewedAt: "2026-06-23"
+  visibility: public
+
+- id: ear:knowledge-hub-foundations-has-generative-systems-article
+  subject: ea:collection:knowledge-hub-foundations
+  predicate: hasPart
+  object: ea:publication:generative-systems-cybernetics-and-creative-coding
+  statement: Knowledge Hub Foundations includes Generative Systems, Cybernetics and Creative Coding as a foundation article.
+  confidence: published
+  createdAt: "2026-06-23"
+  reviewedAt: "2026-06-23"
+  visibility: public
+
+- id: ear:knowledge-hub-foundations-has-signal-archaeology-article
+  subject: ea:collection:knowledge-hub-foundations
+  predicate: hasPart
+  object: ea:publication:signal-archaeology-audio-memory-and-machine-listening
+  statement: Knowledge Hub Foundations includes Signal Archaeology, Audio Memory and Machine Listening as a foundation article.
+  confidence: published
+  createdAt: "2026-06-23"
+  reviewedAt: "2026-06-23"
+  visibility: public

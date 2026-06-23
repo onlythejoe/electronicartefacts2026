@@ -1,0 +1,95 @@
+---
+id: ea:concept:knowledge-graph
+type: concept
+slug:
+  canonical: knowledge-graph
+title: Knowledge Graph
+definition: A knowledge graph is a structured network of entities, identifiers and typed relationships that makes knowledge navigable, queryable and reusable across contexts.
+abstract: Electronic Artefacts uses knowledge graph to describe public knowledge systems where concepts, projects, programs, publications, sources and artefacts keep stable identities and typed relations.
+description: A canonical definition of knowledge graph for cultural, technical and research publishing.
+locale: en
+visibility: public
+publicationClass: canonical
+status: active
+maturity: research
+confidence: canonical
+version:
+  version: 1.0.0
+  createdAt: "2026-06-23"
+  publishedAt: "2026-06-23"
+  modifiedAt: "2026-06-23"
+authors:
+  - id: ea:organization:electronic-artefacts
+publisher: ea:organization:electronic-artefacts
+scope:
+  - Entity identity
+  - Typed relationships
+  - Semantic publication
+  - Knowledge retrieval
+  - Cultural infrastructure
+exclusions:
+  - A decorative network visualization with no stable identifiers
+  - A tag cloud without explicit relation semantics
+  - A database schema that is never exposed as public knowledge
+claims:
+  - A knowledge graph becomes durable when entities, relations, sources and versions are explicit.
+  - Cultural knowledge graphs require provenance and interpretive context, not only database connectivity.
+sources:
+  - title: RDF 1.1 Concepts and Abstract Syntax
+    author: Richard Cyganiak, David Wood and Markus Lanthaler
+    publisher: W3C
+    publishedAt: "2014-02-25"
+    accessedAt: "2026-06-23"
+    url: https://www.w3.org/TR/rdf11-concepts/
+  - title: The CIDOC Conceptual Reference Model
+    publisher: CIDOC CRM Special Interest Group
+    accessedAt: "2026-06-23"
+    url: https://www.cidoc-crm.org/
+tags:
+  - Knowledge Graph
+  - Semantic Web
+  - Entities
+  - Relations
+  - Search
+disciplines:
+  - Knowledge Systems
+  - Information Architecture
+  - Web Development
+  - Research
+---
+
+## Definition
+
+A knowledge graph is a structured network of entities, identifiers and typed relationships. It is not merely a visualization of related things. A durable knowledge graph gives each important object a stable identity, describes how objects relate to one another, and allows those relations to be interpreted by humans, software and search systems.
+
+In Electronic Artefacts, the knowledge graph connects concepts, projects, programs, publications, research fields, organizations and artefacts. A project can apply a concept. A publication can document a field. A program can implement a framework. A cultural work can be linked to signal, memory, preservation and production methods without being reduced to a promotional card.
+
+## Scope
+
+The concept includes three layers. The first layer is identity: every meaningful object needs an addressable record. The second layer is relation: links must say what kind of connection exists. The third layer is publication: the graph must produce pages, metadata, search documents and machine-readable representations that can survive outside a browser session.
+
+RDF describes graph statements as subject-predicate-object triples and treats IRIs as identifiers for resources. Electronic Artefacts does not need to imitate every RDF system internally, but it adopts the same discipline: stable identity and explicit predicates are more durable than loose associations.
+
+## Cultural use
+
+For cultural infrastructure, a knowledge graph must handle ambiguity. A sound work can be an artefact, a release, a trace of process and evidence for a research question. A person can be an artist, contributor, maintainer and subject. A concept can move from speculation to canonical status. A graph that cannot represent those roles loses historical value.
+
+The CIDOC CRM is a strong reference point because it was designed for cultural heritage integration. It shows why museums, archives and libraries need shared conceptual structures rather than isolated database fields.
+
+## Electronic Artefacts position
+
+Electronic Artefacts uses knowledge graph as a publication model. The graph should not be hidden infrastructure. It should shape how pages are written, how evidence is attached, how canonical URLs are minted, and how future readers discover related work.
+
+The difference from a blog is structural. A blog post is primarily chronological. A graph record is primarily relational. Publications can still have dates, authors and arguments, but they should enrich existing entities rather than vanish into a feed.
+
+## Applications
+
+Knowledge graphs are useful for research libraries, cultural archives, software documentation, institutional memory, product ecosystems, music catalogues, design systems and AI retrieval. They help readers move from a term to examples, from an example to sources, and from sources to related questions.
+
+## Limitations
+
+A knowledge graph can become noisy if relation types are vague or if every weak association is published. It can also become brittle when identifiers change. The graph requires editorial discipline: controlled vocabularies, relation validation, source review and periodic pruning.
+
+## References
+
+See W3C RDF 1.1 Concepts, CIDOC CRM, the Electronic Artefacts Runtime Theory field and the VASTE program record.

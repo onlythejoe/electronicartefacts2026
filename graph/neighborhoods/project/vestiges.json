@@ -12,6 +12,14 @@
       "confidence": "canonical"
     },
     {
+      "id": "ea:concept:knowledge-graph",
+      "type": "concept",
+      "title": "Knowledge Graph",
+      "route": "/knowledge/concepts/knowledge-graph/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
       "id": "ea:organization:electronic-artefacts",
       "type": "organization",
       "title": "Electronic Artefacts",
@@ -36,15 +44,58 @@
       "confidence": "observed"
     },
     {
+      "id": "ea:publication:digital-preservation-and-living-archives",
+      "type": "publication",
+      "title": "Digital Preservation and Living Archives",
+      "route": "/publications/digital-preservation-and-living-archives/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
       "id": "ea:publication:foundational-lineage-001",
       "type": "publication",
       "title": "Foundational Lineage #001",
       "route": "/publications/foundational-lineage-001/",
       "status": "research",
       "confidence": "published"
+    },
+    {
+      "id": "ea:publication:knowledge-graphs-for-cultural-infrastructure",
+      "type": "publication",
+      "title": "Knowledge Graphs for Cultural Infrastructure",
+      "route": "/publications/knowledge-graphs-for-cultural-infrastructure/",
+      "status": "active",
+      "confidence": "published"
     }
   ],
   "edges": [
+    {
+      "id": "ear:vestiges-applies-knowledge-graph",
+      "source": "ea:project:vestiges",
+      "target": "ea:concept:knowledge-graph",
+      "predicate": "appliesConcept",
+      "label": "Applies concept",
+      "statement": "Vestiges applies knowledge-graph principles to culture, craft, institutions, techniques and public knowledge pages.",
+      "confidence": "observed"
+    },
+    {
+      "id": "ear:knowledge-graphs-article-documents-vestiges",
+      "source": "ea:publication:knowledge-graphs-for-cultural-infrastructure",
+      "target": "ea:project:vestiges",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Knowledge Graphs for Cultural Infrastructure uses Vestiges as the applied cultural infrastructure example.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:digital-preservation-article-documents-vestiges",
+      "source": "ea:publication:digital-preservation-and-living-archives",
+      "target": "ea:project:vestiges",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Digital Preservation and Living Archives connects Vestiges to living archive and cultural knowledge preservation.",
+      "confidence": "published"
+    },
     {
       "id": "ear:vestiges-powered-by-vaste",
       "source": "ea:project:vestiges",

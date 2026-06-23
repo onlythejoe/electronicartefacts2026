@@ -109,6 +109,32 @@ const program = base.extend({
   maintainers: z.array(agentRef).min(1),
   officialUrl: z.string().url().optional(),
 });
+const method = base.extend({
+  type: z.literal("method"),
+  purpose: z.string().min(20),
+  useWhen: z.array(z.string()).min(1),
+  inputs: z.array(z.string()).min(1),
+  steps: z.array(z.object({
+    order: z.number().int().positive(),
+    title: z.string().min(1),
+    description: z.string().min(10),
+  })).min(1),
+  outputs: z.array(z.string()).min(1),
+  limitations: z.array(z.string()).min(1),
+});
+const framework = base.extend({
+  type: z.literal("framework"),
+  principles: z.array(z.string()).min(1),
+  components: z.array(ref),
+  limitations: z.array(z.string()).min(1),
+});
+const technology = base.extend({
+  type: z.literal("technology"),
+  category: z.enum(["language", "library", "protocol", "database", "platform", "approach"]),
+  roleInEcosystem: z.string().min(20),
+  officialUrl: z.string().url().optional(),
+  versions: z.array(z.string()).optional(),
+});
 const project = base.extend({
   type: z.literal("project"),
   category: z.enum(["internal", "client", "cultural", "research", "collaboration"]),
@@ -139,9 +165,38 @@ const organization = base.extend({
   type: z.literal("organization"),
   organizationType: z.enum(["studio", "label", "institution", "company", "collective", "client", "publisher"]),
 });
+const collection = base.extend({
+  type: z.literal("collection"),
+  thesis: z.string().min(20),
+  curator: z.array(agentRef).min(1),
+  explicitMembers: z.array(ref).min(1),
+  selectionNote: z.string().min(20),
+});
+const tool = base.extend({
+  type: z.literal("tool"),
+  purpose: z.string().min(20),
+  users: z.array(z.string()).min(1),
+  inputs: z.array(z.string()).min(1),
+  outputs: z.array(z.string()).min(1),
+});
+const dataset = base.extend({
+  type: z.literal("dataset"),
+  methodology: z.string().min(20),
+  formats: z.array(z.string()).min(1),
+  limitations: z.array(z.string()).min(1),
+});
+const event = base.extend({
+  type: z.literal("event"),
+  eventType: z.enum(["creation", "publication", "release", "milestone", "exhibition", "decision"]),
+  startDate: isoDate,
+  endDate: isoDate.optional(),
+  participants: z.array(ref),
+  result: z.array(ref).optional(),
+});
 
 export const entityFrontmatterSchema = z.discriminatedUnion("type", [
-  concept, researchField, program, project, publication, organization,
+  concept, method, framework, technology, researchField, program, project, publication,
+  collection, organization, tool, dataset, event,
 ]);
 
 export const relationSchema = z.object({

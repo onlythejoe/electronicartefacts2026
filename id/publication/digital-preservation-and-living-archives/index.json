@@ -1,0 +1,119 @@
+{
+  "id": "ea:publication:digital-preservation-and-living-archives",
+  "type": "publication",
+  "slug": {
+    "canonical": "digital-preservation-and-living-archives"
+  },
+  "title": "Digital Preservation and Living Archives",
+  "subtitle": "Technical Article",
+  "abstract": "This article explains digital preservation as an active cultural practice that keeps digital objects, metadata, provenance and interpretation usable over time.",
+  "description": "A technical article on digital preservation, living archives, file formats, provenance and Electronic Artefacts cultural records.",
+  "locale": "en",
+  "visibility": "public",
+  "publicationClass": "published",
+  "status": "active",
+  "maturity": "research",
+  "confidence": "published",
+  "version": {
+    "version": "1.0.0",
+    "createdAt": "2026-06-23",
+    "publishedAt": "2026-06-23",
+    "modifiedAt": "2026-06-23"
+  },
+  "authors": [
+    {
+      "id": "ea:organization:electronic-artefacts"
+    }
+  ],
+  "publisher": "ea:organization:electronic-artefacts",
+  "tags": [
+    "Digital Preservation",
+    "Living Archive",
+    "Provenance",
+    "Palimpsests",
+    "Vestiges"
+  ],
+  "disciplines": [
+    "Archives",
+    "Digital Art",
+    "Knowledge Systems",
+    "History of Technology"
+  ],
+  "sources": [
+    {
+      "title": "Digital Preservation Handbook",
+      "url": "https://www.dpconline.org/handbook",
+      "publisher": "Digital Preservation Coalition",
+      "publishedAt": "2015-01-01",
+      "accessedAt": "2026-06-23"
+    },
+    {
+      "title": "Sustainability of Digital Formats",
+      "url": "https://www.loc.gov/preservation/digital/formats/",
+      "publisher": "Library of Congress",
+      "accessedAt": "2026-06-23",
+      "locator": "Last updated 2024-06-18"
+    },
+    {
+      "title": "Levels of Digital Preservation",
+      "url": "https://www.ndsa.org/publications/levels-of-digital-preservation/",
+      "publisher": "National Digital Stewardship Alliance",
+      "accessedAt": "2026-06-23"
+    }
+  ],
+  "format": "technicalArticle",
+  "subjects": [
+    {
+      "id": "ea:concept:digital-preservation"
+    },
+    {
+      "id": "ea:concept:provenance"
+    },
+    {
+      "id": "ea:project:palimpsests"
+    },
+    {
+      "id": "ea:project:vestiges"
+    },
+    {
+      "id": "ea:concept:knowledge-graph"
+    }
+  ],
+  "claims": [
+    "Digital preservation is not backup; it is long-term care for objects, metadata, rights, formats and context.",
+    "Living archives need graph relationships because interpretation changes while provenance must remain inspectable."
+  ],
+  "evidence": [
+    {
+      "id": "ea:project:palimpsests"
+    },
+    {
+      "id": "ea:project:vestiges"
+    }
+  ],
+  "citation": {
+    "preferred": "Electronic Artefacts. \"Digital Preservation and Living Archives.\" Technical article, version 1.0.0, 2026."
+  },
+  "bodyHtml": "<h2>Problem</h2>\n<p>Digital culture is easy to copy and difficult to preserve. A file can be duplicated in seconds, but long-term meaning depends on much more than the bytes. Who made it? Which version is this? What software created it? Which rights apply? What project does it belong to? Is it a final work, a process trace, a reference image, a generated output, a damaged export or a public artefact?</p>\n<p>Backup answers only one part of the problem: can the file be recovered after a failure? Digital preservation asks a larger question: can the object remain understandable, authentic, usable and accessible when formats, software, hardware, links and cultural context change?</p>\n<p>This distinction matters for Electronic Artefacts because the site contains born-digital work: images, audio, code, generated pages, JSON-LD, research notes, project media and experimental publications. The archive is not a warehouse at the end of production. It is part of how the work remains intelligible.</p>\n<h2>Introduction</h2>\n<p>Digital preservation is a long-term care practice for digital objects and their context. It combines storage, format strategy, metadata, provenance, rights, fixity checks, migration, access copies and interpretation.</p>\n<p>A living archive is an archive that can continue to receive interpretation, relations and updated records without pretending that the past is unstable. The object’s provenance should remain stable, but the public understanding of that object may deepen over time.</p>\n<h2>Context</h2>\n<p>The Digital Preservation Coalition describes digital preservation as a practical field concerned with managing digital resources over time. The Library of Congress maintains format sustainability guidance because file formats differ in transparency, disclosure, adoption, dependencies and preservation risk. The NDSA Levels of Digital Preservation provide a way for organizations to assess and improve preservation practice.</p>\n<p>Those references share a principle: preservation is organizational and technical. It is not enough to store files. A preservation system must know what it has, how it can verify it, how it can migrate it and how a future user can understand it.</p>\n<h2>History</h2>\n<p>Archives long predate digital systems. Physical archives managed custody, description, conservation and access. Digital preservation inherited those concerns and added new ones: media failure, format obsolescence, software dependency, link rot, metadata loss, compression, version drift and platform disappearance.</p>\n<p>The shift to born-digital culture intensified the problem. A digital artwork, website, recording session or software prototype may depend on tools, operating systems, plugins, APIs and interaction patterns that disappear. Preserving only the final export can erase the process that made the work significant.</p>\n<h2>Core concepts</h2>\n<p>Fixity means verifying that a file has not changed unexpectedly, usually through checksums.</p>\n<p>Provenance means recording origin, custody, authorship, transformation and evidence.</p>\n<p>Representation information means the information needed to interpret the object.</p>\n<p>Access copy means a version prepared for use, separate from a preservation master.</p>\n<p>Migration means moving an object or metadata into a newer format or environment.</p>\n<p>Selection means deciding what deserves preservation attention.</p>\n<h2>Architecture</h2>\n<p>A living archive needs several layers:</p>\n<ul>\n<li>preservation storage for important source files;</li>\n<li>metadata records with identity, dates, rights and context;</li>\n<li>provenance statements;</li>\n<li>format monitoring;</li>\n<li>public access pages;</li>\n<li>graph relations to projects, concepts and publications;</li>\n<li>review states that distinguish canonical records from speculative interpretation.</li>\n</ul>\n<p>For a static website, preservation also includes generated outputs. HTML pages, JSON-LD, sitemaps and graph exports are part of the public record. They should be reproducible from source records, but preserving generated snapshots can still help future audits.</p>\n<h2>Implementation</h2>\n<p>The implementation path should begin with inventory. What exists? Which files are public? Which files are source material? Which files are evidence? Which formats are risky? Which records have no provenance?</p>\n<p>Next comes identity. Important objects should receive stable IDs and routes. A record should not depend only on an image filename or a folder name.</p>\n<p>Then comes relation. An artefact should say what project it belongs to, what publication documents it, which concept it demonstrates and what source or production process it derives from.</p>\n<p>Finally comes review. Preservation is ongoing. Records need modification dates, confidence states and periodic checks.</p>\n<h2>Practical applications</h2>\n<p>For Palimpsests, digital preservation means more than storing album artwork and audio exports. It means preserving enough context to understand memory, residue, signal and production decisions.</p>\n<p>For ORETH, it means preserving research notes and audio analysis context without overclaiming machine-listening results.</p>\n<p>For Vestiges, preservation is central because the platform thesis depends on living cultural knowledge, contribution, provenance and public interpretation.</p>\n<p>For the Electronic Artefacts site, it means treating generated knowledge pages as durable public artefacts.</p>\n<h2>Tools</h2>\n<p>Useful tools include checksums, file inventories, format registries, controlled vocabularies, provenance records, versioned source control, metadata schemas, static exports, web archives and graph indexes.</p>\n<h2>Evidence</h2>\n<p>The current repository already distinguishes source content, generated pages, graph outputs, search documents and identifier routes. That separation makes preservation possible because source and projection can be inspected separately.</p>\n<h2>Preservation checklist</h2>\n<p>A small studio or research site can begin with a practical checklist.</p>\n<p>Identify the object. Give important works, publications, media and datasets stable IDs. Do not depend on filenames alone.</p>\n<p>Record provenance. Document creator, publisher, date, source project, rights, transformations and confidence. If the object came from a legacy system, say so.</p>\n<p>Separate preservation copies from access copies. A compressed web image is useful for visitors, but it may not be the best preservation object.</p>\n<p>Track formats and dependencies. A file is easier to preserve when its format is open, documented, widely adopted and not locked to one abandoned tool.</p>\n<p>Verify fixity. Checksums do not explain meaning, but they help detect unexpected change.</p>\n<p>Connect the object. A preserved item should link to the project, publication, concept or program that makes it meaningful.</p>\n<p>Review periodically. Preservation is not a single action. It is a maintenance practice.</p>\n<h2>Common mistakes</h2>\n<p>The first mistake is treating cloud storage as preservation. Cloud storage can be part of an infrastructure, but without metadata, rights, fixity, format awareness and retrieval practice, it is only remote storage.</p>\n<p>The second mistake is preserving final outputs while discarding context. For a cultural work, drafts, references, process notes and production decisions may carry interpretive value. Not all should be public, but significant context should be described.</p>\n<p>The third mistake is over-preserving without selection. If everything is kept with equal priority, the archive becomes hard to maintain and hard to interpret.</p>\n<h2>Electronic Artefacts implications</h2>\n<p>Electronic Artefacts should treat every major project as a preservation context. VASTE needs versioned architecture and licensing records. Palimpsests needs audio, visual and interpretive provenance. Vestiges needs contribution and validation history. The website itself needs generated snapshots and source records because the public graph is part of the institution’s intellectual output.</p>\n<p>This approach gives the archive value beyond nostalgia. It makes the site a working memory system.</p>\n<h2>Related concepts</h2>\n<p>Read <a href=\"/knowledge/concepts/digital-preservation/\">Digital Preservation</a>, <a href=\"/knowledge/concepts/provenance/\">Provenance</a>, <a href=\"/knowledge/concepts/knowledge-graph/\">Knowledge Graph</a>, <a href=\"/projects/palimpsests/\">Palimpsests</a> and <a href=\"/projects/vestiges/\">Vestiges</a>.</p>\n<h2>Suggested reading</h2>\n<p>Start with the Digital Preservation Coalition Handbook, Library of Congress Sustainability of Digital Formats and NDSA Levels of Digital Preservation.</p>\n<h2>Related articles</h2>\n<p>Continue with <a href=\"/publications/knowledge-graphs-for-cultural-infrastructure/\">Knowledge Graphs for Cultural Infrastructure</a> and <a href=\"/publications/signal-archaeology-audio-memory-and-machine-listening/\">Signal Archaeology, Audio Memory and Machine Listening</a>.</p>\n<h2>Glossary</h2>\n<p>Fixity: evidence that a file has not changed unexpectedly.</p>\n<p>Migration: moving content or metadata to a new format or environment.</p>\n<p>Living archive: an archive that preserves stable provenance while allowing interpretation to grow.</p>\n<p>Representation information: context needed to understand a preserved object.</p>\n<h2>Limitations</h2>\n<p>Preservation can become infinite if no selection criteria exist. A living archive should not keep everything equally. It should preserve objects that carry evidence, meaning, rights or future interpretive value.</p>\n<p>Preservation also has ecological and economic cost. Storage, migration and redundancy should be proportional to significance.</p>\n<h2>References</h2>\n<ul>\n<li>Digital Preservation Coalition. Digital Preservation Handbook, 2nd Edition.</li>\n<li>Library of Congress. Sustainability of Digital Formats.</li>\n<li>National Digital Stewardship Alliance. Levels of Digital Preservation.</li>\n<li>Electronic Artefacts. Palimpsests and Vestiges records.</li>\n</ul>\n",
+  "headings": [
+    "Problem",
+    "Introduction",
+    "Context",
+    "History",
+    "Core concepts",
+    "Architecture",
+    "Implementation",
+    "Practical applications",
+    "Tools",
+    "Evidence",
+    "Preservation checklist",
+    "Common mistakes",
+    "Electronic Artefacts implications",
+    "Related concepts",
+    "Suggested reading",
+    "Related articles",
+    "Glossary",
+    "Limitations",
+    "References"
+  ]
+}

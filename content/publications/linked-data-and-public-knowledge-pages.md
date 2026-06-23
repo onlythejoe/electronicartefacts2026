@@ -1,0 +1,206 @@
+---
+id: ea:publication:linked-data-and-public-knowledge-pages
+type: publication
+slug:
+  canonical: linked-data-and-public-knowledge-pages
+title: Linked Data and Public Knowledge Pages
+subtitle: Technical Article
+abstract: This article explains how public knowledge pages can use stable URLs, JSON-LD, RDF-oriented identifiers and internal links to become useful to humans, search engines and AI systems.
+description: A technical article on Linked Data, JSON-LD, canonical URLs, identifiers and SEO for static knowledge platforms.
+locale: en
+visibility: public
+publicationClass: published
+status: active
+maturity: research
+confidence: published
+version:
+  version: 1.0.0
+  createdAt: "2026-06-23"
+  publishedAt: "2026-06-23"
+  modifiedAt: "2026-06-23"
+authors:
+  - id: ea:organization:electronic-artefacts
+publisher: ea:organization:electronic-artefacts
+format: technicalArticle
+subjects:
+  - id: ea:concept:linked-data
+  - id: ea:concept:entity-identity
+  - id: ea:technology:json-ld
+  - id: ea:technology:rdf
+  - id: ea:concept:knowledge-graph
+claims:
+  - Static knowledge pages can participate in Linked Data when they publish stable identifiers, canonical routes and structured data.
+  - JSON-LD is a practical bridge between editorial publishing and semantic graph representation.
+evidence:
+  - id: ea:organization:electronic-artefacts
+sources:
+  - title: Cool URIs for the Semantic Web
+    publisher: W3C
+    publishedAt: "2008-12-03"
+    accessedAt: "2026-06-23"
+    url: https://www.w3.org/TR/cooluris/
+  - title: JSON-LD 1.1
+    publisher: W3C
+    publishedAt: "2020-07-16"
+    accessedAt: "2026-06-23"
+    url: https://www.w3.org/TR/json-ld11/
+  - title: Article
+    publisher: Schema.org
+    accessedAt: "2026-06-23"
+    url: https://schema.org/Article
+citation:
+  preferred: "Electronic Artefacts. \"Linked Data and Public Knowledge Pages.\" Technical article, version 1.0.0, 2026."
+tags:
+  - Linked Data
+  - JSON-LD
+  - Structured Data
+  - SEO
+  - Knowledge Pages
+disciplines:
+  - Web Development
+  - SEO
+  - Knowledge Systems
+---
+
+## Problem
+
+Many knowledge pages are well written but poorly addressable. A human can read them, yet a machine cannot easily tell what entity the page describes, which organization published it, which sources it cites, which concepts it relates to, or whether the page is the canonical version.
+
+The problem becomes worse when a site relies on browser-side rendering. A crawler, archive or link preview may receive a generic page shell instead of the actual entity. The page might look complete in a modern browser, but the initial HTML can still be weak: generic title, missing canonical URL, no structured data, no stable identifier and no content body.
+
+Linked Data offers a practical discipline for solving this. It asks a publisher to identify things, publish useful descriptions, and connect those things to other things. Public knowledge pages do not need to become complex semantic-web applications, but they should borrow the durable habits of Linked Data.
+
+## Introduction
+
+A public knowledge page has two audiences. The first is human: readers need an explanation, context, examples, sources and related reading. The second is machine: search engines, AI retrieval systems, archives, link unfurlers and internal tools need stable metadata and identifiers.
+
+Good publishing serves both audiences from the same source. The human page should be complete, and the machine representation should describe the same entity. JSON-LD is useful because it lets a static site embed structured data in a format already familiar to web tooling.
+
+## Context
+
+W3C's Cool URIs note explains a key semantic-web distinction: the URL of a web document and the identity of the thing described by that document can be different. This matters for a knowledge platform. `/knowledge/concepts/provenance/` is a readable page. `/id/concept/provenance/` can be an identifier route for the concept itself. Both can point to the same conceptual record, but they serve different access modes.
+
+JSON-LD 1.1 defines a JSON-based serialization for Linked Data. For a static site, JSON-LD can be generated at build time from the same typed record used to render HTML.
+
+## History
+
+The Web began as a document linking system. Hyperlinks made navigation easy, but they did not by themselves specify what kind of relation existed. Semantic Web work introduced a stronger model of resources, identifiers and statements. Linked Data then translated that model into web publishing practices.
+
+Structured data for search adopted some of the same principles in a pragmatic form. Schema.org does not require a publisher to expose a complete RDF dataset. It allows a page to identify itself as an Article, DefinedTerm, Organization, SoftwareApplication or CreativeWork, then provide properties such as author, publisher, datePublished, citation and about.
+
+## Core concepts
+
+The first concept is canonical identity. A page should have one preferred public URL. Alternate routes and old paths can redirect or identify, but the canonical URL is the public citation target.
+
+The second concept is entity identity. The thing being described should have a stable ID independent of page layout. Electronic Artefacts uses IDs such as `ea:concept:linked-data` and identifier routes under `/id/`.
+
+The third concept is structured data. JSON-LD records should expose name, description, date, publisher, main entity and subject relations.
+
+The fourth concept is visible correspondence. Structured data should not say things that the visible page does not support. Machines should receive a compressed version of the same editorial truth that humans see.
+
+## Architecture
+
+The architecture for public knowledge pages should include:
+
+- source records with typed frontmatter;
+- generated HTML pages at canonical routes;
+- generated identifier routes;
+- generated JSON-LD files;
+- generated sitemaps;
+- generated search documents;
+- typed internal relation statements;
+- validation that rejects broken IDs and duplicate triples.
+
+This lets a single content record support human reading, search indexing, graph browsing, citation and archive export.
+
+## Implementation
+
+In Electronic Artefacts, the implementation path is:
+
+1. Author a record in `content/`.
+2. Validate its type and required fields.
+3. Render the body as HTML.
+4. Generate metadata from the record.
+5. Generate JSON-LD from the same entity.
+6. Write a canonical route and identifier route.
+7. Add the record to search documents and graph exports.
+8. Add relations that connect the record to other entities.
+
+This implementation is intentionally conservative. It avoids using JavaScript as the source of canonical metadata. Browser scripts can improve interaction, but the initial generated HTML should already be sufficient for indexing and citation.
+
+## Practical applications
+
+A concept page such as [Linked Data](/knowledge/concepts/linked-data/) can expose a definition to readers, a JSON-LD defined term to machines, and relations to RDF, JSON-LD and knowledge graph pages.
+
+A publication such as this article can identify itself as an article, define its subjects, cite sources and link to related articles.
+
+A program page such as [VASTE](/programs/vaste/) can expose software and research context while linking to Graph Runtime and Runtime Theory.
+
+## Tools
+
+Useful tools include JSON-LD, Schema.org, sitemaps, canonical links, generated metadata, static validation, Markdown content records, relation YAML and search index generation.
+
+## Evidence
+
+The Electronic Artefacts build generates pages, JSON-LD, search documents and graph neighborhoods from typed source records. This means the public site is no longer only a visual interface. It is a set of citable knowledge resources.
+
+## Editorial checklist
+
+A public knowledge page should pass a simple editorial checklist before publication.
+
+First, the page should answer a durable question. A page about Linked Data should not only announce that a site uses JSON-LD. It should explain why stable identity matters, how the page relates to the entity it describes, and what a reader can do next.
+
+Second, the page should expose its identity. The title, canonical URL, entity ID, publication date and citation should all point toward the same record. If a reader copies the URL or a crawler extracts the JSON-LD, both should resolve to the same intellectual object.
+
+Third, the page should contain visible links that mirror the graph. If the structured data says that an article is about RDF and JSON-LD, the article should also link to those technology records in the human-readable body or relationship panels.
+
+Fourth, the page should name its sources. Structured data can identify the article, but sources explain why the article deserves trust. This is especially important for topics such as standards, cultural history and preservation.
+
+Fifth, the page should support continuation. Suggested reading and related articles turn a single landing page into a path through the wider library.
+
+## Common mistakes
+
+The most common mistake is confusing SEO markup with knowledge architecture. A page can contain valid structured data and still be a weak knowledge object. Another mistake is creating too many shallow pages around synonyms. Linked Data, RDF, JSON-LD and knowledge graph are related, but they should not be collapsed into one page or duplicated across four nearly identical articles.
+
+A third mistake is treating JSON-LD as invisible decoration. If structured data is only appended for search engines and not reflected in the visible editorial model, it becomes fragile. The Knowledge Hub should make the same claims to humans and machines.
+
+## Electronic Artefacts implications
+
+For Electronic Artefacts, Linked Data is a publishing discipline. It helps the site connect artistic work, software systems, research publications and archive records without forcing them into one visual template. It also gives future AI systems a better chance of retrieving the correct record rather than guessing from generic page text.
+
+This matters most as the corpus grows. A site with ten pages can rely on human memory. A site with one thousand knowledge records needs persistent identity, relation validation and generated indexes.
+
+## Related concepts
+
+Read [Linked Data](/knowledge/concepts/linked-data/), [Entity Identity](/knowledge/concepts/entity-identity/), [RDF](/knowledge/technologies/rdf/), [JSON-LD](/knowledge/technologies/json-ld/) and [Knowledge Graph](/knowledge/concepts/knowledge-graph/).
+
+## Suggested reading
+
+Start with W3C Cool URIs, JSON-LD 1.1 and Schema.org Article. Then inspect the generated JSON-LD for an Electronic Artefacts publication page.
+
+## Related articles
+
+Continue with [Knowledge Graphs for Cultural Infrastructure](/publications/knowledge-graphs-for-cultural-infrastructure/) and [Contextual Execution and Graph Runtimes](/publications/contextual-execution-and-graph-runtimes/).
+
+## Glossary
+
+Canonical URL: preferred public URL for a page.
+
+Identifier route: a route used to identify the entity described by a page.
+
+JSON-LD: JSON serialization for Linked Data.
+
+Structured data: machine-readable metadata embedded in or linked from a page.
+
+## Limitations
+
+Linked Data does not guarantee authority. A misleading page can publish perfect JSON-LD. The strength comes from alignment: accurate content, stable identity, visible sources, structured metadata and honest confidence.
+
+Static generation also has tradeoffs. Real-time updates require a rebuild. For an editorial knowledge hub, that is usually acceptable because review and stability matter more than instant mutation.
+
+## References
+
+- W3C. Cool URIs for the Semantic Web. 2008.
+- W3C. JSON-LD 1.1. 2020.
+- Schema.org. Article.
+- Electronic Artefacts. Route registry, JSON-LD generator and search documents.

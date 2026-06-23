@@ -195,9 +195,13 @@ ${hubCards(items).trimStart()}
   }));
 };
 
-await writeHub("/knowledge/", "Knowledge", "Canonical concepts, research fields, programs and applied projects in the Electronic Artefacts graph.", publicEntities.filter((entity) => ["concept", "researchField", "program", "project"].includes(entity.type)));
+await writeHub("/knowledge/", "Knowledge", "Canonical concepts, methods, frameworks, technologies, research fields and publications in the Electronic Artefacts graph.", publicEntities.filter((entity) => ["concept", "method", "framework", "technology", "researchField", "publication"].includes(entity.type)));
 await writeHub("/knowledge/concepts/", "Concepts", "Canonical definitions maintained by Electronic Artefacts and connected to implementations and evidence.", publicEntities.filter((entity) => entity.type === "concept"));
+await writeHub("/knowledge/methods/", "Methods", "Repeatable procedures used by Electronic Artefacts for research, production, preservation and system design.", publicEntities.filter((entity) => entity.type === "method"));
+await writeHub("/knowledge/frameworks/", "Frameworks", "Structured conceptual and operational models maintained inside the Electronic Artefacts knowledge graph.", publicEntities.filter((entity) => entity.type === "framework"));
+await writeHub("/knowledge/technologies/", "Technologies", "Languages, protocols, formats, platforms and technical approaches referenced by the Electronic Artefacts knowledge system.", publicEntities.filter((entity) => entity.type === "technology"));
 await writeHub("/publications/", "Publications", "Research notes and authored records published by Electronic Artefacts.", publicEntities.filter((entity) => entity.type === "publication"));
+await writeHub("/archive/collections/", "Collections", "Curated neighborhoods that group Electronic Artefacts records by editorial thesis, provenance and research use.", publicEntities.filter((entity) => entity.type === "collection"));
 
 const searchDocuments = buildSearchDocuments(publicEntities, relations, routes);
 await writeJson(path.join(rootDir, "search/documents.json"), searchDocuments);

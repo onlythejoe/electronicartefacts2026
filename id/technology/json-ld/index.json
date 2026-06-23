@@ -1,0 +1,61 @@
+{
+  "id": "ea:technology:json-ld",
+  "type": "technology",
+  "slug": {
+    "canonical": "json-ld"
+  },
+  "title": "JSON-LD",
+  "subtitle": "JSON for Linked Data",
+  "abstract": "JSON-LD is a W3C format for serializing Linked Data in JSON, making semantic graph metadata compatible with common web programming workflows.",
+  "description": "A technology record for JSON-LD as the structured data format used by Electronic Artefacts canonical pages.",
+  "locale": "en",
+  "visibility": "public",
+  "publicationClass": "published",
+  "status": "active",
+  "maturity": "production",
+  "confidence": "published",
+  "version": {
+    "version": "1.0.0",
+    "createdAt": "2020-07-16",
+    "publishedAt": "2026-06-23",
+    "modifiedAt": "2026-06-23"
+  },
+  "authors": [
+    {
+      "id": "ea:organization:electronic-artefacts"
+    }
+  ],
+  "publisher": "ea:organization:electronic-artefacts",
+  "tags": [
+    "JSON-LD",
+    "Linked Data",
+    "Structured Data",
+    "SEO"
+  ],
+  "disciplines": [
+    "Web Development",
+    "Knowledge Systems",
+    "SEO"
+  ],
+  "sources": [
+    {
+      "title": "JSON-LD 1.1",
+      "url": "https://www.w3.org/TR/json-ld11/",
+      "publisher": "W3C",
+      "publishedAt": "2020-07-16",
+      "accessedAt": "2026-06-23"
+    }
+  ],
+  "category": "protocol",
+  "roleInEcosystem": "JSON-LD is the format used to publish machine-readable structured data for Electronic Artefacts entity pages.",
+  "officialUrl": "https://www.w3.org/TR/json-ld11/",
+  "versions": [
+    "JSON-LD 1.1"
+  ],
+  "bodyHtml": "<h2>Role</h2>\n<p>JSON-LD serializes Linked Data as JSON. It is practical for static websites because build tools can generate it alongside HTML without requiring a graph database at runtime.</p>\n<h2>Use</h2>\n<p>Electronic Artefacts uses JSON-LD to expose each public entity as structured data. Publications become articles, concepts become defined terms, programs become software applications or creative works, and identifier routes expose machine-readable records.</p>\n<h2>Limitations</h2>\n<p>JSON-LD improves machine interpretation, but it cannot repair weak content. The structured data should match visible human content and remain consistent with canonical routes.</p>\n",
+  "headings": [
+    "Role",
+    "Use",
+    "Limitations"
+  ]
+}

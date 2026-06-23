@@ -1,0 +1,34 @@
+{
+  "id": "local:ea:technology:json-ld",
+  "kind": "local",
+  "focus": "ea:technology:json-ld",
+  "nodes": [
+    {
+      "id": "ea:publication:linked-data-and-public-knowledge-pages",
+      "type": "publication",
+      "title": "Linked Data and Public Knowledge Pages",
+      "route": "/publications/linked-data-and-public-knowledge-pages/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:technology:json-ld",
+      "type": "technology",
+      "title": "JSON-LD",
+      "route": "/knowledge/technologies/json-ld/",
+      "status": "active",
+      "confidence": "published"
+    }
+  ],
+  "edges": [
+    {
+      "id": "ear:linked-data-article-uses-json-ld",
+      "source": "ea:publication:linked-data-and-public-knowledge-pages",
+      "target": "ea:technology:json-ld",
+      "predicate": "usesTechnology",
+      "label": "Uses technology",
+      "statement": "Linked Data and Public Knowledge Pages uses JSON-LD as the practical structured-data format for static knowledge pages.",
+      "confidence": "published"
+    }
+  ]
+}

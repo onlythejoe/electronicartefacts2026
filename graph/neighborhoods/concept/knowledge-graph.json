@@ -1,0 +1,51 @@
+{
+  "id": "local:ea:concept:knowledge-graph",
+  "kind": "local",
+  "focus": "ea:concept:knowledge-graph",
+  "nodes": [
+    {
+      "id": "ea:concept:knowledge-graph",
+      "type": "concept",
+      "title": "Knowledge Graph",
+      "route": "/knowledge/concepts/knowledge-graph/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:project:vestiges",
+      "type": "project",
+      "title": "Vestiges",
+      "route": "/projects/vestiges/",
+      "status": "development",
+      "confidence": "observed"
+    },
+    {
+      "id": "ea:publication:knowledge-graphs-for-cultural-infrastructure",
+      "type": "publication",
+      "title": "Knowledge Graphs for Cultural Infrastructure",
+      "route": "/publications/knowledge-graphs-for-cultural-infrastructure/",
+      "status": "active",
+      "confidence": "published"
+    }
+  ],
+  "edges": [
+    {
+      "id": "ear:vestiges-applies-knowledge-graph",
+      "source": "ea:project:vestiges",
+      "target": "ea:concept:knowledge-graph",
+      "predicate": "appliesConcept",
+      "label": "Applies concept",
+      "statement": "Vestiges applies knowledge-graph principles to culture, craft, institutions, techniques and public knowledge pages.",
+      "confidence": "observed"
+    },
+    {
+      "id": "ear:knowledge-graphs-article-documents-knowledge-graph",
+      "source": "ea:publication:knowledge-graphs-for-cultural-infrastructure",
+      "target": "ea:concept:knowledge-graph",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Knowledge Graphs for Cultural Infrastructure documents the knowledge-graph concept for cultural publishing.",
+      "confidence": "published"
+    }
+  ]
+}

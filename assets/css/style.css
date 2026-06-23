@@ -9011,13 +9011,37 @@ input:focus-visible {
 /* Unified page-intent heroes */
 .intent-hero {
   --intent-tone: 125, 211, 252;
+  --intent-glow-x: 82%;
+  --intent-glow-y: 16%;
+  --intent-rotate-x: 0deg;
+  --intent-rotate-y: 0deg;
   min-height: clamp(32rem, 68svh, 46rem);
-  overflow: hidden;
+  overflow: visible;
   background:
-    radial-gradient(circle at 82% 16%, rgba(var(--intent-tone), 0.13), transparent 28%),
+    radial-gradient(circle at var(--intent-glow-x) var(--intent-glow-y), rgba(var(--intent-tone), 0.14), transparent 29%),
     radial-gradient(circle at 14% 0%, rgba(255, 255, 255, 0.09), transparent 27%),
-    linear-gradient(150deg, rgba(255, 255, 255, 0.052), rgba(255, 255, 255, 0.012) 58%),
-    rgba(255, 255, 255, 0.016);
+    linear-gradient(150deg, rgba(255, 255, 255, 0.056), rgba(255, 255, 255, 0.012) 58%),
+    rgba(255, 255, 255, 0.018);
+  perspective: 1400px;
+  transform-style: preserve-3d;
+  transition: background 220ms ease-out;
+}
+
+.intent-hero::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  border-radius: inherit;
+  background:
+    linear-gradient(rgba(var(--intent-tone), 0.03) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(var(--intent-tone), 0.024) 1px, transparent 1px);
+  background-size: clamp(2.8rem, 5vw, 4.5rem) clamp(2.8rem, 5vw, 4.5rem);
+  mask-image: radial-gradient(circle at 68% 45%, #000 0, #000 38%, transparent 78%);
+  -webkit-mask-image: radial-gradient(circle at 68% 45%, #000 0, #000 38%, transparent 78%);
+  opacity: 0.8;
+  pointer-events: none;
 }
 
 .intent-hero--home {
@@ -9026,6 +9050,21 @@ input:focus-visible {
 
 .intent-hero--work {
   --intent-tone: 45, 212, 191;
+}
+
+[data-page="work"] .work-hero.intent-hero {
+  overflow: visible;
+  background:
+    radial-gradient(circle at var(--intent-glow-x) var(--intent-glow-y), rgba(var(--intent-tone), 0.14), transparent 29%),
+    radial-gradient(circle at 14% 0%, rgba(255, 255, 255, 0.09), transparent 27%),
+    linear-gradient(150deg, rgba(255, 255, 255, 0.056), rgba(255, 255, 255, 0.012) 58%),
+    rgba(255, 255, 255, 0.018);
+}
+
+[data-page="work"] .work-hero__grid.intent-hero__grid {
+  grid-template-columns: minmax(0, 1fr);
+  gap: 0;
+  align-items: center;
 }
 
 .intent-hero--projects {
@@ -9055,16 +9094,22 @@ input:focus-visible {
 
 .intent-hero__grid {
   display: grid;
-  grid-template-columns: minmax(0, 0.92fr) minmax(23rem, 1.08fr);
-  gap: clamp(1.15rem, 2.4vw, 2rem);
-  align-items: stretch;
+  grid-template-columns: minmax(0, 1fr);
+  align-items: center;
   min-height: inherit;
+  position: relative;
+  z-index: 1;
 }
 
 .intent-hero__copy {
+  grid-area: 1 / 1;
+  position: relative;
+  z-index: 12;
   align-content: center;
+  width: min(59%, 57rem);
   max-width: 57rem;
   padding-block: clamp(0.25rem, 1vw, 0.75rem);
+  transform-style: preserve-3d;
 }
 
 .intent-hero__copy .display-title {
@@ -9079,39 +9124,63 @@ input:focus-visible {
   margin-top: 0.3rem;
 }
 
-.intent-hero__stage {
-  --intent-rotate-x: 0deg;
-  --intent-rotate-y: 0deg;
-  position: relative;
-  isolation: isolate;
-  min-height: clamp(24rem, 36vw, 32rem);
-  overflow: visible;
-  border: 1px solid rgba(255, 255, 255, 0.1);
-  border-radius: calc(var(--radius-xl) - 0.12rem);
-  background:
-    radial-gradient(circle at 50% 45%, rgba(var(--intent-tone), 0.1), transparent 42%),
-    linear-gradient(160deg, rgba(255, 255, 255, 0.042), rgba(2, 3, 7, 0.9)),
-    #050609;
-  box-shadow:
-    inset 0 1px rgba(255, 255, 255, 0.04),
-    0 30px 70px rgba(0, 0, 0, 0.3);
-  perspective: 1100px;
-  transform: rotateX(var(--intent-rotate-x)) rotateY(var(--intent-rotate-y));
-  transform-style: preserve-3d;
-  transition: transform 180ms ease-out, border-color 180ms ease;
+.intent-hero [data-depth],
+.intent-hero__copy > .eyebrow,
+.intent-hero__copy > .display-title,
+.intent-hero__copy > .lede,
+.intent-hero__copy > .button-row,
+.intent-hero__copy > .pill-cloud,
+.intent-hero__stage-label {
+  --intent-shift-x: 0px;
+  --intent-shift-y: 0px;
+  translate: var(--intent-shift-x) var(--intent-shift-y);
+  transition: translate 160ms ease-out;
+  will-change: translate;
 }
 
-.intent-hero__stage:hover {
-  border-color: rgba(var(--intent-tone), 0.24);
+.intent-hero__copy > .eyebrow,
+.intent-hero__copy > .display-title,
+.intent-hero__copy > .lede,
+.intent-hero__copy > .button-row,
+.intent-hero__copy > .pill-cloud,
+.intent-hero__stage-label {
+  position: relative;
+}
+
+.intent-hero__copy > .button-row {
+  z-index: 20;
+}
+
+.intent-hero__copy > .pill-cloud,
+.intent-hero__copy > .lede {
+  z-index: 14;
+}
+
+.intent-hero__stage {
+  grid-area: 1 / 1;
+  position: relative;
+  z-index: 6;
+  justify-self: end;
+  align-self: center;
+  width: min(64%, 52rem);
+  min-height: clamp(24rem, 36vw, 32rem);
+  overflow: visible;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+  transform: rotateX(var(--intent-rotate-x)) rotateY(var(--intent-rotate-y));
+  transform-style: preserve-3d;
+  transition: transform 190ms ease-out;
 }
 
 .intent-hero__stage::before {
   content: "";
   position: absolute;
-  inset: 0;
-  z-index: -1;
+  inset: 4% 2% 9%;
+  z-index: 0;
   overflow: hidden;
-  border-radius: inherit;
+  border-radius: 2rem;
   background-image:
     linear-gradient(rgba(var(--intent-tone), 0.028) 1px, transparent 1px),
     linear-gradient(90deg, rgba(var(--intent-tone), 0.022) 1px, transparent 1px);
@@ -9121,19 +9190,11 @@ input:focus-visible {
   pointer-events: none;
 }
 
-.intent-hero__stage [data-depth] {
-  --intent-shift-x: 0px;
-  --intent-shift-y: 0px;
-  translate: var(--intent-shift-x) var(--intent-shift-y);
-  transition: translate 130ms ease-out;
-  will-change: translate;
-}
-
 .intent-hero__stage-label {
   position: absolute;
-  top: 0.9rem;
-  left: 0.95rem;
-  right: 0.95rem;
+  top: 0.35rem;
+  left: 0.15rem;
+  right: 0.15rem;
   z-index: 30;
   display: flex;
   align-items: center;
@@ -9157,8 +9218,8 @@ input:focus-visible {
 
 .intent-hero__stats {
   position: absolute;
-  right: -0.5rem;
-  bottom: 0.8rem;
+  right: -0.75rem;
+  bottom: -0.55rem;
   z-index: 40;
   display: grid;
   grid-template-columns: repeat(3, minmax(5.7rem, 1fr));
@@ -9210,7 +9271,8 @@ input:focus-visible {
 
 .home-intent-stage__orbit {
   position: absolute;
-  inset: 12% 8% 18%;
+  inset: 12% 4% 17% 11%;
+  z-index: 1;
   border: 1px solid rgba(234, 220, 207, 0.11);
   border-radius: 50%;
   box-shadow:
@@ -9221,13 +9283,13 @@ input:focus-visible {
 
 .home-intent-stage__frame {
   position: absolute;
-  z-index: 3;
+  z-index: 6;
   display: grid;
   overflow: hidden;
   border: 1px solid rgba(255, 255, 255, 0.15);
   border-radius: calc(var(--radius-lg) - 0.1rem);
-  background: #08080a;
-  box-shadow: 0 24px 48px rgba(0, 0, 0, 0.4);
+  background: rgba(8, 8, 10, 0.76);
+  box-shadow: 0 24px 48px rgba(0, 0, 0, 0.34);
   transform-style: preserve-3d;
 }
 
@@ -9283,7 +9345,7 @@ input:focus-visible {
 }
 
 .home-intent-stage__frame--lead {
-  left: 4%;
+  left: 2%;
   top: 12%;
   width: 58%;
   height: 61%;
@@ -9291,7 +9353,7 @@ input:focus-visible {
 }
 
 .home-intent-stage__frame--system {
-  right: 5%;
+  right: 2%;
   top: 8%;
   width: 35%;
   height: 39%;
@@ -9299,7 +9361,7 @@ input:focus-visible {
 }
 
 .home-intent-stage__frame--proof {
-  right: 8%;
+  right: -2%;
   top: 45%;
   width: 37%;
   height: 32%;
@@ -9318,6 +9380,9 @@ input:focus-visible {
 }
 
 .home-intent-stage__channels a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
   padding: 0.42rem 0.65rem;
   border: 1px solid rgba(255, 255, 255, 0.11);
   border-radius: 999px;
@@ -9329,16 +9394,28 @@ input:focus-visible {
   -webkit-backdrop-filter: blur(12px);
 }
 
+.home-intent-stage__channels img {
+  width: 1.35rem;
+  height: 1.35rem;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
 /* Work and projects */
 .work-hero__panel.intent-hero__stage {
   display: block;
   min-height: clamp(26rem, 36vw, 32rem);
   padding: 0;
+  border: 0;
+  background: transparent;
+  box-shadow: none;
+  backdrop-filter: none;
+  -webkit-backdrop-filter: none;
 }
 
 .intent-media-stack {
   position: absolute;
-  inset: 3.2rem 0.8rem 5.8rem;
+  inset: 3.2rem 0.2rem 4.8rem 0.8rem;
   display: grid;
   grid-template-columns: minmax(0, 1.2fr) minmax(0, 0.8fr);
   grid-template-rows: repeat(2, minmax(0, 1fr));
@@ -9352,8 +9429,8 @@ input:focus-visible {
   overflow: hidden;
   border: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: calc(var(--radius-lg) - 0.12rem);
-  background: #08090b;
-  box-shadow: 0 18px 34px rgba(0, 0, 0, 0.35);
+  background: rgba(8, 9, 11, 0.74);
+  box-shadow: 0 18px 34px rgba(0, 0, 0, 0.31);
 }
 
 .intent-media-stack a:first-child {
@@ -9362,10 +9439,12 @@ input:focus-visible {
 }
 
 .intent-media-stack a:nth-child(2) {
+  margin-right: -0.55rem;
   transform: rotateY(-6deg) rotateZ(1deg);
 }
 
 .intent-media-stack a:nth-child(3) {
+  margin-right: -0.2rem;
   transform: rotateY(-4deg) rotateZ(-1deg);
 }
 
@@ -9377,7 +9456,7 @@ input:focus-visible {
 
 .projects-hero__stage.intent-hero__stage {
   min-height: clamp(26rem, 36vw, 32rem);
-  padding: 3.15rem 0.75rem 5.8rem;
+  padding: 3.15rem 0.1rem 5rem 0.8rem;
 }
 
 .projects-hero__stage.intent-hero__stage::before {
@@ -9386,6 +9465,8 @@ input:focus-visible {
 
 .projects-hero__stage .projects-hero__frame {
   z-index: 2;
+  background: rgba(8, 8, 10, 0.72);
+  box-shadow: 0 24px 48px rgba(0, 0, 0, 0.34);
 }
 
 /* Programs */
@@ -9404,6 +9485,8 @@ input:focus-visible {
   width: 100%;
   height: 100%;
   min-height: inherit;
+  background: transparent;
+  box-shadow: none;
 }
 
 .intent-hero__stage--programs .intent-hero__stats {
@@ -9444,7 +9527,7 @@ input:focus-visible {
 
 .research-constellation__node {
   position: absolute;
-  z-index: 4;
+  z-index: 7;
   display: grid;
   gap: 0.15rem;
   width: clamp(8rem, 14vw, 10.5rem);
@@ -9454,8 +9537,8 @@ input:focus-visible {
   border-radius: var(--radius-lg);
   background:
     radial-gradient(circle at 90% 0%, rgba(var(--intent-tone), 0.14), transparent 36%),
-    rgba(8, 11, 16, 0.78);
-  box-shadow: 0 18px 36px rgba(0, 0, 0, 0.34);
+    rgba(8, 11, 16, 0.68);
+  box-shadow: 0 18px 36px rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
 }
@@ -9490,7 +9573,7 @@ input:focus-visible {
 }
 
 .research-constellation__node--prototype {
-  right: 5%;
+  right: -1%;
   top: 49%;
   transform: rotateZ(-1deg);
 }
@@ -9517,15 +9600,15 @@ input:focus-visible {
 
 .archive-stack__sheet {
   position: absolute;
-  z-index: 3;
+  z-index: 5;
   display: grid;
   overflow: hidden;
   width: 48%;
   height: 63%;
   border: 1px solid rgba(255, 255, 255, 0.13);
   border-radius: calc(var(--radius-lg) - 0.08rem);
-  background: #090a0d;
-  box-shadow: 0 28px 54px rgba(0, 0, 0, 0.42);
+  background: rgba(9, 10, 13, 0.72);
+  box-shadow: 0 28px 54px rgba(0, 0, 0, 0.34);
 }
 
 .archive-stack__sheet img {
@@ -9578,7 +9661,7 @@ input:focus-visible {
 }
 
 .archive-stack__sheet--front {
-  right: 8%;
+  right: -2%;
   top: 16%;
   transform: rotate(-2deg) translateZ(44px);
 }
@@ -9608,7 +9691,7 @@ input:focus-visible {
   position: absolute;
   left: 50%;
   top: 46%;
-  z-index: 6;
+  z-index: 8;
   display: grid;
   place-items: center;
   width: 9.5rem;
@@ -9617,7 +9700,7 @@ input:focus-visible {
   border-radius: 50%;
   background:
     radial-gradient(circle, rgba(var(--intent-tone), 0.16), transparent 68%),
-    rgba(7, 8, 10, 0.82);
+    rgba(7, 8, 10, 0.68);
   box-shadow: 0 0 3rem rgba(var(--intent-tone), 0.14);
   transform: translate(-50%, -50%);
 }
@@ -9637,7 +9720,7 @@ input:focus-visible {
 
 .about-orbit__node {
   position: absolute;
-  z-index: 5;
+  z-index: 7;
   display: grid;
   place-items: center;
   min-width: 6.6rem;
@@ -9645,7 +9728,7 @@ input:focus-visible {
   padding: 0.55rem 0.8rem;
   border: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: 999px;
-  background: rgba(8, 9, 12, 0.78);
+  background: rgba(8, 9, 12, 0.68);
   color: rgba(247, 244, 239, 0.82);
   font-size: 0.72rem;
   font-weight: 800;
@@ -9667,7 +9750,7 @@ input:focus-visible {
 }
 
 .about-orbit__node--projects {
-  right: 7%;
+  right: -1%;
   top: 60%;
 }
 
@@ -9692,7 +9775,7 @@ input:focus-visible {
 
 .contact-signal__card {
   position: absolute;
-  z-index: 4;
+  z-index: 7;
   display: grid;
   gap: 0.26rem;
   width: min(39%, 13rem);
@@ -9701,8 +9784,8 @@ input:focus-visible {
   border-radius: var(--radius-lg);
   background:
     radial-gradient(circle at 100% 0%, rgba(var(--intent-tone), 0.13), transparent 38%),
-    rgba(8, 9, 13, 0.82);
-  box-shadow: 0 20px 38px rgba(0, 0, 0, 0.36);
+    rgba(8, 9, 13, 0.7);
+  box-shadow: 0 20px 38px rgba(0, 0, 0, 0.31);
   backdrop-filter: blur(14px);
   -webkit-backdrop-filter: blur(14px);
 }
@@ -9738,7 +9821,7 @@ input:focus-visible {
 }
 
 .contact-signal__card--brief {
-  right: 5%;
+  right: -1%;
   top: 17%;
   transform: rotate(-1deg);
 }
@@ -9749,8 +9832,8 @@ input:focus-visible {
 }
 
 .generated-hub-hero__intro.intent-hero__grid {
-  grid-template-columns: minmax(0, 0.82fr) minmax(23rem, 1.18fr);
-  align-items: stretch;
+  grid-template-columns: minmax(0, 1fr);
+  align-items: center;
 }
 
 .knowledge-graph-stage {
@@ -9892,25 +9975,41 @@ input:focus-visible {
   .intent-hero__grid,
   .generated-hub-hero__intro.intent-hero__grid {
     grid-template-columns: 1fr;
+    gap: clamp(1.15rem, 2.4vw, 2rem);
     min-height: auto;
   }
 
   .intent-hero__copy {
+    grid-area: auto;
     align-content: start;
+    width: 100%;
   }
 
   .intent-hero__stage {
+    grid-area: auto;
+    justify-self: stretch;
+    width: 100%;
     min-height: clamp(25rem, 61vw, 35rem);
   }
 }
 
 @media (max-width: 48rem) {
+  .intent-hero {
+    overflow: hidden;
+  }
+
   .intent-hero__stage {
     min-height: 31rem;
     transform: none;
   }
 
-  .intent-hero__stage [data-depth] {
+  .intent-hero [data-depth],
+  .intent-hero__copy > .eyebrow,
+  .intent-hero__copy > .display-title,
+  .intent-hero__copy > .lede,
+  .intent-hero__copy > .button-row,
+  .intent-hero__copy > .pill-cloud,
+  .intent-hero__stage-label {
     translate: none;
   }
 
@@ -9974,6 +10073,11 @@ input:focus-visible {
 
   .intent-media-stack {
     inset: 3rem 0.55rem 5.15rem;
+  }
+
+  .intent-media-stack a:nth-child(2),
+  .intent-media-stack a:nth-child(3) {
+    margin-right: 0;
   }
 
   .projects-hero__stage.intent-hero__stage {
@@ -10075,7 +10179,13 @@ input:focus-visible {
 
 @media (prefers-reduced-motion: reduce) {
   .intent-hero__stage,
-  .intent-hero__stage [data-depth] {
+  .intent-hero [data-depth],
+  .intent-hero__copy > .eyebrow,
+  .intent-hero__copy > .display-title,
+  .intent-hero__copy > .lede,
+  .intent-hero__copy > .button-row,
+  .intent-hero__copy > .pill-cloud,
+  .intent-hero__stage-label {
     transform: none !important;
     translate: none !important;
   }

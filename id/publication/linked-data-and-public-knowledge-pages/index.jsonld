@@ -1,0 +1,65 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://electronicartefacts.com/publications/linked-data-and-public-knowledge-pages/#webpage",
+      "url": "https://electronicartefacts.com/publications/linked-data-and-public-knowledge-pages/",
+      "name": "Linked Data and Public Knowledge Pages",
+      "mainEntity": {
+        "@id": "https://electronicartefacts.com/id/publication/linked-data-and-public-knowledge-pages/"
+      },
+      "isPartOf": {
+        "@id": "https://electronicartefacts.com/#website"
+      }
+    },
+    {
+      "@type": "TechArticle",
+      "@id": "https://electronicartefacts.com/id/publication/linked-data-and-public-knowledge-pages/",
+      "name": "Linked Data and Public Knowledge Pages",
+      "description": "This article explains how public knowledge pages can use stable URLs, JSON-LD, RDF-oriented identifiers and internal links to become useful to humans, search engines and AI systems.",
+      "url": "https://electronicartefacts.com/publications/linked-data-and-public-knowledge-pages/",
+      "dateCreated": "2026-06-23",
+      "datePublished": "2026-06-23",
+      "dateModified": "2026-06-23",
+      "publisher": {
+        "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
+      },
+      "citation": "Electronic Artefacts. \"Linked Data and Public Knowledge Pages.\" Technical article, version 1.0.0, 2026.",
+      "about": [
+        {
+          "@id": "https://electronicartefacts.com/id/concept/linked-data/"
+        },
+        {
+          "@id": "https://electronicartefacts.com/id/concept/entity-identity/"
+        },
+        {
+          "@id": "https://electronicartefacts.com/id/technology/json-ld/"
+        },
+        {
+          "@id": "https://electronicartefacts.com/id/technology/rdf/"
+        },
+        {
+          "@id": "https://electronicartefacts.com/id/concept/knowledge-graph/"
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Electronic Artefacts",
+          "item": "https://electronicartefacts.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Linked Data and Public Knowledge Pages",
+          "item": "https://electronicartefacts.com/publications/linked-data-and-public-knowledge-pages/"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "id": "local:ea:concept:digital-preservation",
+  "kind": "local",
+  "focus": "ea:concept:digital-preservation",
+  "nodes": [
+    {
+      "id": "ea:concept:digital-preservation",
+      "type": "concept",
+      "title": "Digital Preservation",
+      "route": "/knowledge/concepts/digital-preservation/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:project:palimpsests",
+      "type": "project",
+      "title": "Palimpsests",
+      "route": "/projects/palimpsests/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:digital-preservation-and-living-archives",
+      "type": "publication",
+      "title": "Digital Preservation and Living Archives",
+      "route": "/publications/digital-preservation-and-living-archives/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:signal-archaeology-audio-memory-and-machine-listening",
+      "type": "publication",
+      "title": "Signal Archaeology, Audio Memory and Machine Listening",
+      "route": "/publications/signal-archaeology-audio-memory-and-machine-listening/",
+      "status": "active",
+      "confidence": "published"
+    }
+  ],
+  "edges": [
+    {
+      "id": "ear:palimpsests-applies-digital-preservation",
+      "source": "ea:project:palimpsests",
+      "target": "ea:concept:digital-preservation",
+      "predicate": "appliesConcept",
+      "label": "Applies concept",
+      "statement": "Palimpsests applies digital preservation by treating audio, visual and research traces as a compound cultural record.",
+      "confidence": "observed"
+    },
+    {
+      "id": "ear:digital-preservation-article-documents-digital-preservation",
+      "source": "ea:publication:digital-preservation-and-living-archives",
+      "target": "ea:concept:digital-preservation",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Digital Preservation and Living Archives documents digital preservation as long-term care for digital objects and context.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:signal-archaeology-article-documents-digital-preservation",
+      "source": "ea:publication:signal-archaeology-audio-memory-and-machine-listening",
+      "target": "ea:concept:digital-preservation",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Signal Archaeology, Audio Memory and Machine Listening connects audio traces to digital preservation practice.",
+      "confidence": "published"
+    }
+  ]
+}

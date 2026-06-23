@@ -1,0 +1,119 @@
+{
+  "id": "local:ea:publication:generative-systems-cybernetics-and-creative-coding",
+  "kind": "local",
+  "focus": "ea:publication:generative-systems-cybernetics-and-creative-coding",
+  "nodes": [
+    {
+      "id": "ea:collection:knowledge-hub-foundations",
+      "type": "collection",
+      "title": "Knowledge Hub Foundations",
+      "route": "/archive/collections/knowledge-hub-foundations/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:concept:creative-coding",
+      "type": "concept",
+      "title": "Creative Coding",
+      "route": "/knowledge/concepts/creative-coding/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:concept:cybernetic-feedback",
+      "type": "concept",
+      "title": "Cybernetic Feedback",
+      "route": "/knowledge/concepts/cybernetic-feedback/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:concept:generative-system",
+      "type": "concept",
+      "title": "Generative System",
+      "route": "/knowledge/concepts/generative-system/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:program:oreth",
+      "type": "program",
+      "title": "ORETH",
+      "route": "/programs/oreth/",
+      "status": "prototype",
+      "confidence": "observed"
+    },
+    {
+      "id": "ea:project:palimpsests",
+      "type": "project",
+      "title": "Palimpsests",
+      "route": "/projects/palimpsests/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:generative-systems-cybernetics-and-creative-coding",
+      "type": "publication",
+      "title": "Generative Systems, Cybernetics and Creative Coding",
+      "route": "/publications/generative-systems-cybernetics-and-creative-coding/",
+      "status": "active",
+      "confidence": "published"
+    }
+  ],
+  "edges": [
+    {
+      "id": "ear:generative-systems-article-documents-generative-system",
+      "source": "ea:publication:generative-systems-cybernetics-and-creative-coding",
+      "target": "ea:concept:generative-system",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Generative Systems, Cybernetics and Creative Coding documents generative systems through constraints, rules and selection.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:generative-systems-article-documents-cybernetic-feedback",
+      "source": "ea:publication:generative-systems-cybernetics-and-creative-coding",
+      "target": "ea:concept:cybernetic-feedback",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Generative Systems, Cybernetics and Creative Coding uses cybernetic feedback as a historical and technical foundation.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:generative-systems-article-documents-creative-coding",
+      "source": "ea:publication:generative-systems-cybernetics-and-creative-coding",
+      "target": "ea:concept:creative-coding",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Generative Systems, Cybernetics and Creative Coding connects creative coding to generative system practice.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:generative-systems-article-documents-oreth",
+      "source": "ea:publication:generative-systems-cybernetics-and-creative-coding",
+      "target": "ea:program:oreth",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Generative Systems, Cybernetics and Creative Coding links ORETH to audio pattern exploration and generative systems.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:generative-systems-article-documents-palimpsests",
+      "source": "ea:publication:generative-systems-cybernetics-and-creative-coding",
+      "target": "ea:project:palimpsests",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Generative Systems, Cybernetics and Creative Coding links Palimpsests to repetition, residue and transformation.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:knowledge-hub-foundations-has-generative-systems-article",
+      "source": "ea:collection:knowledge-hub-foundations",
+      "target": "ea:publication:generative-systems-cybernetics-and-creative-coding",
+      "predicate": "hasPart",
+      "label": "Has part",
+      "statement": "Knowledge Hub Foundations includes Generative Systems, Cybernetics and Creative Coding as a foundation article.",
+      "confidence": "published"
+    }
+  ]
+}

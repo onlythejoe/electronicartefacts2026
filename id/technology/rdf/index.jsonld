@@ -1,0 +1,47 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://electronicartefacts.com/knowledge/technologies/rdf/#webpage",
+      "url": "https://electronicartefacts.com/knowledge/technologies/rdf/",
+      "name": "RDF",
+      "mainEntity": {
+        "@id": "https://electronicartefacts.com/id/technology/rdf/"
+      },
+      "isPartOf": {
+        "@id": "https://electronicartefacts.com/#website"
+      }
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://electronicartefacts.com/id/technology/rdf/",
+      "name": "RDF",
+      "description": "RDF is a W3C graph data model for representing information as subject-predicate-object statements about resources.",
+      "url": "https://electronicartefacts.com/knowledge/technologies/rdf/",
+      "dateCreated": "2014-02-25",
+      "datePublished": "2026-06-23",
+      "dateModified": "2026-06-23",
+      "publisher": {
+        "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Electronic Artefacts",
+          "item": "https://electronicartefacts.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "RDF",
+          "item": "https://electronicartefacts.com/knowledge/technologies/rdf/"
+        }
+      ]
+    }
+  ]
+}

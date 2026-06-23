@@ -1,0 +1,68 @@
+{
+  "id": "local:ea:concept:contextual-execution",
+  "kind": "local",
+  "focus": "ea:concept:contextual-execution",
+  "nodes": [
+    {
+      "id": "ea:concept:contextual-execution",
+      "type": "concept",
+      "title": "Contextual Execution",
+      "route": "/knowledge/concepts/contextual-execution/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:program:vaste",
+      "type": "program",
+      "title": "VASTE",
+      "route": "/programs/vaste/",
+      "status": "development",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:contextual-execution-and-graph-runtimes",
+      "type": "publication",
+      "title": "Contextual Execution and Graph Runtimes",
+      "route": "/publications/contextual-execution-and-graph-runtimes/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:researchField:runtime-theory",
+      "type": "researchField",
+      "title": "Runtime Theory",
+      "route": "/research/fields/runtime-theory/",
+      "status": "active",
+      "confidence": "validated"
+    }
+  ],
+  "edges": [
+    {
+      "id": "ear:vaste-applies-contextual-execution",
+      "source": "ea:program:vaste",
+      "target": "ea:concept:contextual-execution",
+      "predicate": "appliesConcept",
+      "label": "Applies concept",
+      "statement": "VASTE applies contextual execution through identity-aware graph records, relations, permissions and event propagation.",
+      "confidence": "observed"
+    },
+    {
+      "id": "ear:runtime-theory-defines-contextual-execution",
+      "source": "ea:researchField:runtime-theory",
+      "target": "ea:concept:contextual-execution",
+      "predicate": "defines",
+      "label": "Defines",
+      "statement": "Runtime Theory defines the research boundary for contextual execution inside Electronic Artefacts.",
+      "confidence": "validated"
+    },
+    {
+      "id": "ear:contextual-execution-article-documents-contextual-execution",
+      "source": "ea:publication:contextual-execution-and-graph-runtimes",
+      "target": "ea:concept:contextual-execution",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Contextual Execution and Graph Runtimes documents contextual execution as a runtime principle.",
+      "confidence": "published"
+    }
+  ]
+}

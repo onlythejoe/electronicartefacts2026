@@ -1,5 +1,259 @@
 [
   {
+    "id": "ea:collection:knowledge-hub-foundations",
+    "legacyId": "knowledge-hub-foundations",
+    "kind": "collection",
+    "type": "collection",
+    "title": "Knowledge Hub Foundations",
+    "subtitle": "Editorial Collection",
+    "summary": "Knowledge Hub Foundations curates the first expansion wave of Electronic Artefacts knowledge records around graph systems, preservation, generative systems, signal, audio and public semantic publishing.",
+    "description": "A curated collection grouping foundational Knowledge Hub concepts, technologies, programs, projects and publications.",
+    "status": "active",
+    "maturity": "research",
+    "confidence": "published",
+    "visibility": "public",
+    "publicationClass": "published",
+    "tags": [
+      "Knowledge Hub",
+      "Editorial Collection",
+      "Foundations",
+      "Research Library",
+      "Semantic Publishing"
+    ],
+    "discipline": [
+      "Knowledge Systems",
+      "Archives",
+      "Creative Coding",
+      "Audio Engineering",
+      "Digital Art"
+    ],
+    "route": "/archive/collections/knowledge-hub-foundations/",
+    "identifier": "/id/collection/knowledge-hub-foundations/",
+    "temporality": {
+      "creationDate": "2026-06-23",
+      "lastUpdated": "2026-06-23",
+      "releaseDate": "2026-06-23",
+      "creationYear": "2026"
+    }
+  },
+  {
+    "id": "ea:concept:contextual-execution",
+    "legacyId": "contextual-execution",
+    "kind": "concept",
+    "type": "concept",
+    "title": "Contextual Execution",
+    "summary": "Contextual execution describes runtime behavior where an operation is evaluated through entity identity, graph relations, permissions, temporal state and intended scope.",
+    "description": "A canonical Electronic Artefacts concept connecting graph runtime, Runtime Theory, VASTE and identity-aware systems.",
+    "definition": "Contextual execution is the practice of making identity, state, permissions, relationships and operating context active constraints on what a system can do.",
+    "status": "active",
+    "maturity": "research",
+    "confidence": "canonical",
+    "visibility": "public",
+    "publicationClass": "canonical",
+    "tags": [
+      "Context",
+      "Execution",
+      "Runtime",
+      "Identity",
+      "Permissions"
+    ],
+    "discipline": [
+      "Systems Design",
+      "Programming",
+      "Knowledge Systems",
+      "Software Architecture"
+    ],
+    "route": "/knowledge/concepts/contextual-execution/",
+    "identifier": "/id/concept/contextual-execution/",
+    "temporality": {
+      "creationDate": "2026-06-23",
+      "lastUpdated": "2026-06-23",
+      "releaseDate": "2026-06-23",
+      "creationYear": "2026"
+    }
+  },
+  {
+    "id": "ea:concept:creative-coding",
+    "legacyId": "creative-coding",
+    "kind": "concept",
+    "type": "concept",
+    "title": "Creative Coding",
+    "summary": "Creative coding connects software, visual culture, sound, interaction, generative systems, education and experimental publishing.",
+    "description": "A canonical definition of creative coding for Electronic Artefacts knowledge articles, projects and programs.",
+    "definition": "Creative coding is the use of programming as an artistic, design or exploratory medium rather than only as an engineering implementation tool.",
+    "status": "active",
+    "maturity": "research",
+    "confidence": "validated",
+    "visibility": "public",
+    "publicationClass": "canonical",
+    "tags": [
+      "Creative Coding",
+      "Digital Art",
+      "Programming",
+      "Generative Art",
+      "Interaction"
+    ],
+    "discipline": [
+      "Creative Coding",
+      "Programming",
+      "Digital Art",
+      "Motion Design",
+      "Sound Design"
+    ],
+    "route": "/knowledge/concepts/creative-coding/",
+    "identifier": "/id/concept/creative-coding/",
+    "temporality": {
+      "creationDate": "2026-06-23",
+      "lastUpdated": "2026-06-23",
+      "releaseDate": "2026-06-23",
+      "creationYear": "2026"
+    }
+  },
+  {
+    "id": "ea:concept:cybernetic-feedback",
+    "legacyId": "cybernetic-feedback",
+    "kind": "concept",
+    "type": "concept",
+    "title": "Cybernetic Feedback",
+    "summary": "Cybernetic feedback connects control, communication, systems theory, generative art, machine listening, adaptive interfaces and runtime governance.",
+    "description": "A canonical definition of cybernetic feedback for Electronic Artefacts research, creative systems and historical technology context.",
+    "definition": "Cybernetic feedback is the circulation of information about a system's state back into the system so that behavior can be regulated, adapted or transformed.",
+    "status": "active",
+    "maturity": "research",
+    "confidence": "validated",
+    "visibility": "public",
+    "publicationClass": "canonical",
+    "tags": [
+      "Cybernetics",
+      "Feedback",
+      "Systems Theory",
+      "Control",
+      "Generative Systems"
+    ],
+    "discipline": [
+      "Cybernetics",
+      "Complexity",
+      "Systems Design",
+      "Digital Art"
+    ],
+    "route": "/knowledge/concepts/cybernetic-feedback/",
+    "identifier": "/id/concept/cybernetic-feedback/",
+    "temporality": {
+      "creationDate": "2026-06-23",
+      "lastUpdated": "2026-06-23",
+      "releaseDate": "2026-06-23",
+      "creationYear": "2026"
+    }
+  },
+  {
+    "id": "ea:concept:digital-preservation",
+    "legacyId": "digital-preservation",
+    "kind": "concept",
+    "type": "concept",
+    "title": "Digital Preservation",
+    "summary": "Digital preservation connects file formats, metadata, provenance, storage, rights, migration and interpretation into a long-term care practice for digital culture.",
+    "description": "A canonical definition of digital preservation for Electronic Artefacts archives, Palimpsests, Vestiges and knowledge infrastructure.",
+    "definition": "Digital preservation is the long-term work of keeping digital objects understandable, authentic, usable and accessible despite changes in formats, software, hardware and context.",
+    "status": "active",
+    "maturity": "research",
+    "confidence": "validated",
+    "visibility": "public",
+    "publicationClass": "canonical",
+    "tags": [
+      "Digital Preservation",
+      "Archive",
+      "File Formats",
+      "Provenance",
+      "Memory"
+    ],
+    "discipline": [
+      "Archives",
+      "History of Technology",
+      "Knowledge Systems",
+      "Digital Art"
+    ],
+    "route": "/knowledge/concepts/digital-preservation/",
+    "identifier": "/id/concept/digital-preservation/",
+    "temporality": {
+      "creationDate": "2026-06-23",
+      "lastUpdated": "2026-06-23",
+      "releaseDate": "2026-06-23",
+      "creationYear": "2026"
+    }
+  },
+  {
+    "id": "ea:concept:entity-identity",
+    "legacyId": "entity-identity",
+    "kind": "concept",
+    "type": "concept",
+    "title": "Entity Identity",
+    "summary": "Entity identity gives knowledge systems a way to cite things without confusing names, pages, files, versions and changing descriptions.",
+    "description": "A canonical definition of entity identity for graph publishing, semantic URLs, archives and Electronic Artefacts records.",
+    "definition": "Entity identity is the durable naming of a person, concept, project, program, publication or artefact so that references remain stable as descriptions evolve.",
+    "status": "active",
+    "maturity": "research",
+    "confidence": "canonical",
+    "visibility": "public",
+    "publicationClass": "canonical",
+    "tags": [
+      "Identity",
+      "URI",
+      "Canonical URL",
+      "Versioning",
+      "Knowledge Graph"
+    ],
+    "discipline": [
+      "Knowledge Systems",
+      "Web Development",
+      "Archives"
+    ],
+    "route": "/knowledge/concepts/entity-identity/",
+    "identifier": "/id/concept/entity-identity/",
+    "temporality": {
+      "creationDate": "2026-06-23",
+      "lastUpdated": "2026-06-23",
+      "releaseDate": "2026-06-23",
+      "creationYear": "2026"
+    }
+  },
+  {
+    "id": "ea:concept:generative-system",
+    "legacyId": "generative-system",
+    "kind": "concept",
+    "type": "concept",
+    "title": "Generative System",
+    "summary": "Generative systems connect creative coding, cybernetics, algorithmic composition, simulation, design tools and AI by shifting authorship toward rules, feedback and selection.",
+    "description": "A canonical definition of generative system for creative coding, sound design, design automation and Electronic Artefacts projects.",
+    "definition": "A generative system is a rule-based, procedural or computational arrangement that produces variable outputs from defined constraints, materials and processes.",
+    "status": "active",
+    "maturity": "research",
+    "confidence": "validated",
+    "visibility": "public",
+    "publicationClass": "canonical",
+    "tags": [
+      "Generative Art",
+      "Creative Coding",
+      "Algorithmic Composition",
+      "Systems",
+      "Simulation"
+    ],
+    "discipline": [
+      "Digital Art",
+      "Creative Coding",
+      "Design",
+      "Music Production",
+      "Systems Design"
+    ],
+    "route": "/knowledge/concepts/generative-system/",
+    "identifier": "/id/concept/generative-system/",
+    "temporality": {
+      "creationDate": "2026-06-23",
+      "lastUpdated": "2026-06-23",
+      "releaseDate": "2026-06-23",
+      "creationYear": "2026"
+    }
+  },
+  {
     "id": "ea:concept:graph-runtime",
     "legacyId": "graph-runtime",
     "kind": "concept",
@@ -34,6 +288,149 @@
     }
   },
   {
+    "id": "ea:concept:knowledge-graph",
+    "legacyId": "knowledge-graph",
+    "kind": "concept",
+    "type": "concept",
+    "title": "Knowledge Graph",
+    "summary": "Electronic Artefacts uses knowledge graph to describe public knowledge systems where concepts, projects, programs, publications, sources and artefacts keep stable identities and typed relations.",
+    "description": "A canonical definition of knowledge graph for cultural, technical and research publishing.",
+    "definition": "A knowledge graph is a structured network of entities, identifiers and typed relationships that makes knowledge navigable, queryable and reusable across contexts.",
+    "status": "active",
+    "maturity": "research",
+    "confidence": "canonical",
+    "visibility": "public",
+    "publicationClass": "canonical",
+    "tags": [
+      "Knowledge Graph",
+      "Semantic Web",
+      "Entities",
+      "Relations",
+      "Search"
+    ],
+    "discipline": [
+      "Knowledge Systems",
+      "Information Architecture",
+      "Web Development",
+      "Research"
+    ],
+    "route": "/knowledge/concepts/knowledge-graph/",
+    "identifier": "/id/concept/knowledge-graph/",
+    "temporality": {
+      "creationDate": "2026-06-23",
+      "lastUpdated": "2026-06-23",
+      "releaseDate": "2026-06-23",
+      "creationYear": "2026"
+    }
+  },
+  {
+    "id": "ea:concept:linked-data",
+    "legacyId": "linked-data",
+    "kind": "concept",
+    "type": "concept",
+    "title": "Linked Data",
+    "summary": "Linked Data gives public knowledge systems a way to make entities, pages, references and datasets interoperable across sites and software systems.",
+    "description": "A canonical definition of Linked Data as it applies to Electronic Artefacts, JSON-LD, RDF, SEO and public knowledge pages.",
+    "definition": "Linked Data is a web publishing approach that identifies things with stable URIs and connects them through machine-readable statements.",
+    "status": "active",
+    "maturity": "research",
+    "confidence": "validated",
+    "visibility": "public",
+    "publicationClass": "canonical",
+    "tags": [
+      "Linked Data",
+      "Semantic Web",
+      "JSON-LD",
+      "RDF",
+      "URI"
+    ],
+    "discipline": [
+      "Knowledge Systems",
+      "Web Development",
+      "SEO",
+      "Information Architecture"
+    ],
+    "route": "/knowledge/concepts/linked-data/",
+    "identifier": "/id/concept/linked-data/",
+    "temporality": {
+      "creationDate": "2026-06-23",
+      "lastUpdated": "2026-06-23",
+      "releaseDate": "2026-06-23",
+      "creationYear": "2026"
+    }
+  },
+  {
+    "id": "ea:concept:provenance",
+    "legacyId": "provenance",
+    "kind": "concept",
+    "type": "concept",
+    "title": "Provenance",
+    "summary": "Provenance helps readers assess reliability, rights, authorship, lineage, context and trust across research, archive, software and cultural records.",
+    "description": "A canonical definition of provenance for Electronic Artefacts publications, artefacts, archives and graph relations.",
+    "definition": "Provenance is information about the people, activities, sources, transformations and decisions involved in producing a thing or piece of data.",
+    "status": "active",
+    "maturity": "research",
+    "confidence": "validated",
+    "visibility": "public",
+    "publicationClass": "canonical",
+    "tags": [
+      "Provenance",
+      "Sources",
+      "Evidence",
+      "Trust",
+      "Archive"
+    ],
+    "discipline": [
+      "Archives",
+      "Research Methods",
+      "Knowledge Systems"
+    ],
+    "route": "/knowledge/concepts/provenance/",
+    "identifier": "/id/concept/provenance/",
+    "temporality": {
+      "creationDate": "2026-06-23",
+      "lastUpdated": "2026-06-23",
+      "releaseDate": "2026-06-23",
+      "creationYear": "2026"
+    }
+  },
+  {
+    "id": "ea:concept:signal-archaeology",
+    "legacyId": "signal-archaeology",
+    "kind": "concept",
+    "type": "concept",
+    "title": "Signal Archaeology",
+    "summary": "Signal archaeology gives Electronic Artefacts a way to connect audio analysis, media residue, archival provenance, memory and cultural interpretation.",
+    "description": "A canonical Electronic Artefacts concept linking ORETH, Palimpsests, digital preservation, provenance and machine listening.",
+    "definition": "Signal archaeology is the interpretation of technical, sonic, visual or archival traces as evidence of hidden processes, transformations and histories.",
+    "status": "active",
+    "maturity": "research",
+    "confidence": "observed",
+    "visibility": "public",
+    "publicationClass": "canonical",
+    "tags": [
+      "Signal Archaeology",
+      "Audio",
+      "Archive",
+      "Memory",
+      "Machine Listening"
+    ],
+    "discipline": [
+      "Audio Engineering",
+      "Digital Art",
+      "Archives",
+      "Research Methods"
+    ],
+    "route": "/knowledge/concepts/signal-archaeology/",
+    "identifier": "/id/concept/signal-archaeology/",
+    "temporality": {
+      "creationDate": "2026-06-23",
+      "lastUpdated": "2026-06-23",
+      "releaseDate": "2026-06-23",
+      "creationYear": "2026"
+    }
+  },
+  {
     "id": "ea:organization:electronic-artefacts",
     "legacyId": "electronic-artefacts",
     "kind": "organization",
@@ -61,6 +458,44 @@
       "creationDate": "2024-01-01",
       "lastUpdated": "2026-06-22",
       "releaseDate": "2026-06-22",
+      "creationYear": "2024"
+    }
+  },
+  {
+    "id": "ea:program:oreth",
+    "legacyId": "oreth",
+    "kind": "program",
+    "type": "program",
+    "title": "ORETH",
+    "subtitle": "Audio Intelligence Program",
+    "summary": "ORETH is an Electronic Artefacts audio intelligence and artistic research program concerned with signal analysis, pattern detection, memory, machine listening and experimental music production.",
+    "description": "A public program record for ORETH as both an audio research system and the technical-cultural layer connected to Palimpsests.",
+    "status": "prototype",
+    "maturity": "prototype",
+    "confidence": "observed",
+    "visibility": "public",
+    "publicationClass": "canonical",
+    "tags": [
+      "Audio Intelligence",
+      "Machine Listening",
+      "Signal Processing",
+      "Sound Design",
+      "Palimpsests",
+      "Experimental Music"
+    ],
+    "discipline": [
+      "Music",
+      "Technology",
+      "Research",
+      "Audio Engineering",
+      "Digital Art"
+    ],
+    "route": "/programs/oreth/",
+    "identifier": "/id/program/oreth/",
+    "temporality": {
+      "creationDate": "2024-01-01",
+      "lastUpdated": "2026-06-23",
+      "releaseDate": "2026-06-23",
       "creationYear": "2024"
     }
   },
@@ -98,6 +533,45 @@
       "lastUpdated": "2026-06-22",
       "releaseDate": "2026-01-01",
       "creationYear": "2024"
+    }
+  },
+  {
+    "id": "ea:project:palimpsests",
+    "legacyId": "palimpsests",
+    "kind": "project",
+    "type": "project",
+    "title": "Palimpsests",
+    "subtitle": "Conceptual Audio Publication",
+    "summary": "Palimpsests is an Electronic Artefacts cultural project and conceptual album cycle connected to ORETH, memory, inheritance, transmission, entropy, signal and layered artistic production.",
+    "description": "A canonical project record for Palimpsests as a compound audio, visual and research publication within Electronic Artefacts.",
+    "status": "active",
+    "maturity": "development",
+    "confidence": "published",
+    "visibility": "public",
+    "publicationClass": "canonical",
+    "tags": [
+      "Palimpsests",
+      "ORETH",
+      "Audio",
+      "Memory",
+      "Transmission",
+      "Signal",
+      "Digital Art"
+    ],
+    "discipline": [
+      "Music",
+      "Digital Art",
+      "Visual Culture",
+      "Audio Engineering",
+      "Research"
+    ],
+    "route": "/projects/palimpsests/",
+    "identifier": "/id/project/palimpsests/",
+    "temporality": {
+      "creationDate": "2026-01-01",
+      "lastUpdated": "2026-06-23",
+      "releaseDate": "2026-06-23",
+      "creationYear": "2026"
     }
   },
   {
@@ -139,6 +613,78 @@
     }
   },
   {
+    "id": "ea:publication:contextual-execution-and-graph-runtimes",
+    "legacyId": "contextual-execution-and-graph-runtimes",
+    "kind": "publication",
+    "type": "publication",
+    "title": "Contextual Execution and Graph Runtimes",
+    "subtitle": "Technical Article",
+    "summary": "This article explains contextual execution as a runtime principle for systems where identity, relations, permissions and state influence what operations can occur.",
+    "description": "A technical article connecting contextual execution, graph runtime, Runtime Theory and VASTE.",
+    "status": "active",
+    "maturity": "research",
+    "confidence": "published",
+    "visibility": "public",
+    "publicationClass": "published",
+    "tags": [
+      "Contextual Execution",
+      "Graph Runtime",
+      "Runtime Theory",
+      "VASTE",
+      "Systems Design"
+    ],
+    "discipline": [
+      "Systems Design",
+      "Programming",
+      "Knowledge Systems",
+      "Software Architecture"
+    ],
+    "route": "/publications/contextual-execution-and-graph-runtimes/",
+    "identifier": "/id/publication/contextual-execution-and-graph-runtimes/",
+    "temporality": {
+      "creationDate": "2026-06-23",
+      "lastUpdated": "2026-06-23",
+      "releaseDate": "2026-06-23",
+      "creationYear": "2026"
+    }
+  },
+  {
+    "id": "ea:publication:digital-preservation-and-living-archives",
+    "legacyId": "digital-preservation-and-living-archives",
+    "kind": "publication",
+    "type": "publication",
+    "title": "Digital Preservation and Living Archives",
+    "subtitle": "Technical Article",
+    "summary": "This article explains digital preservation as an active cultural practice that keeps digital objects, metadata, provenance and interpretation usable over time.",
+    "description": "A technical article on digital preservation, living archives, file formats, provenance and Electronic Artefacts cultural records.",
+    "status": "active",
+    "maturity": "research",
+    "confidence": "published",
+    "visibility": "public",
+    "publicationClass": "published",
+    "tags": [
+      "Digital Preservation",
+      "Living Archive",
+      "Provenance",
+      "Palimpsests",
+      "Vestiges"
+    ],
+    "discipline": [
+      "Archives",
+      "Digital Art",
+      "Knowledge Systems",
+      "History of Technology"
+    ],
+    "route": "/publications/digital-preservation-and-living-archives/",
+    "identifier": "/id/publication/digital-preservation-and-living-archives/",
+    "temporality": {
+      "creationDate": "2026-06-23",
+      "lastUpdated": "2026-06-23",
+      "releaseDate": "2026-06-23",
+      "creationYear": "2026"
+    }
+  },
+  {
     "id": "ea:publication:foundational-lineage-001",
     "legacyId": "foundational-lineage-001",
     "kind": "publication",
@@ -165,6 +711,151 @@
       "creationDate": "2026-01-01",
       "lastUpdated": "2026-06-22",
       "releaseDate": "2026-06-12",
+      "creationYear": "2026"
+    }
+  },
+  {
+    "id": "ea:publication:generative-systems-cybernetics-and-creative-coding",
+    "legacyId": "generative-systems-cybernetics-and-creative-coding",
+    "kind": "publication",
+    "type": "publication",
+    "title": "Generative Systems, Cybernetics and Creative Coding",
+    "subtitle": "Technical Article",
+    "summary": "This article traces generative systems from cybernetic feedback and algorithmic art to creative coding, sound design and contemporary AI-assisted production.",
+    "description": "A technical article on generative systems, cybernetic feedback, creative coding, algorithmic composition and Electronic Artefacts projects.",
+    "status": "active",
+    "maturity": "research",
+    "confidence": "published",
+    "visibility": "public",
+    "publicationClass": "published",
+    "tags": [
+      "Generative Systems",
+      "Cybernetics",
+      "Creative Coding",
+      "Algorithmic Composition",
+      "Digital Art"
+    ],
+    "discipline": [
+      "Creative Coding",
+      "Digital Art",
+      "Music Production",
+      "Systems Design",
+      "Cybernetics"
+    ],
+    "route": "/publications/generative-systems-cybernetics-and-creative-coding/",
+    "identifier": "/id/publication/generative-systems-cybernetics-and-creative-coding/",
+    "temporality": {
+      "creationDate": "2026-06-23",
+      "lastUpdated": "2026-06-23",
+      "releaseDate": "2026-06-23",
+      "creationYear": "2026"
+    }
+  },
+  {
+    "id": "ea:publication:knowledge-graphs-for-cultural-infrastructure",
+    "legacyId": "knowledge-graphs-for-cultural-infrastructure",
+    "kind": "publication",
+    "type": "publication",
+    "title": "Knowledge Graphs for Cultural Infrastructure",
+    "subtitle": "Technical Article",
+    "summary": "This article explains how knowledge graphs support cultural infrastructure by giving people, works, sources, concepts, projects and archives stable identities and explicit relations.",
+    "description": "A technical article on knowledge graphs, cultural heritage, provenance and public knowledge pages, connected to Vestiges and the Electronic Artefacts graph.",
+    "status": "active",
+    "maturity": "research",
+    "confidence": "published",
+    "visibility": "public",
+    "publicationClass": "published",
+    "tags": [
+      "Knowledge Graph",
+      "Cultural Infrastructure",
+      "Linked Data",
+      "Provenance",
+      "Vestiges"
+    ],
+    "discipline": [
+      "Knowledge Systems",
+      "Archives",
+      "Information Architecture",
+      "Research Methods"
+    ],
+    "route": "/publications/knowledge-graphs-for-cultural-infrastructure/",
+    "identifier": "/id/publication/knowledge-graphs-for-cultural-infrastructure/",
+    "temporality": {
+      "creationDate": "2026-06-23",
+      "lastUpdated": "2026-06-23",
+      "releaseDate": "2026-06-23",
+      "creationYear": "2026"
+    }
+  },
+  {
+    "id": "ea:publication:linked-data-and-public-knowledge-pages",
+    "legacyId": "linked-data-and-public-knowledge-pages",
+    "kind": "publication",
+    "type": "publication",
+    "title": "Linked Data and Public Knowledge Pages",
+    "subtitle": "Technical Article",
+    "summary": "This article explains how public knowledge pages can use stable URLs, JSON-LD, RDF-oriented identifiers and internal links to become useful to humans, search engines and AI systems.",
+    "description": "A technical article on Linked Data, JSON-LD, canonical URLs, identifiers and SEO for static knowledge platforms.",
+    "status": "active",
+    "maturity": "research",
+    "confidence": "published",
+    "visibility": "public",
+    "publicationClass": "published",
+    "tags": [
+      "Linked Data",
+      "JSON-LD",
+      "Structured Data",
+      "SEO",
+      "Knowledge Pages"
+    ],
+    "discipline": [
+      "Web Development",
+      "SEO",
+      "Knowledge Systems"
+    ],
+    "route": "/publications/linked-data-and-public-knowledge-pages/",
+    "identifier": "/id/publication/linked-data-and-public-knowledge-pages/",
+    "temporality": {
+      "creationDate": "2026-06-23",
+      "lastUpdated": "2026-06-23",
+      "releaseDate": "2026-06-23",
+      "creationYear": "2026"
+    }
+  },
+  {
+    "id": "ea:publication:signal-archaeology-audio-memory-and-machine-listening",
+    "legacyId": "signal-archaeology-audio-memory-and-machine-listening",
+    "kind": "publication",
+    "type": "publication",
+    "title": "Signal Archaeology, Audio Memory and Machine Listening",
+    "subtitle": "Technical Article",
+    "summary": "This article explains signal archaeology as a way to read sonic and technical traces through audio analysis, provenance, memory and machine listening.",
+    "description": "A technical article on signal archaeology, audio memory, machine listening, ORETH and Palimpsests.",
+    "status": "active",
+    "maturity": "research",
+    "confidence": "published",
+    "visibility": "public",
+    "publicationClass": "published",
+    "tags": [
+      "Signal Archaeology",
+      "Audio",
+      "Machine Listening",
+      "ORETH",
+      "Palimpsests"
+    ],
+    "discipline": [
+      "Audio Engineering",
+      "Sound Design",
+      "Digital Art",
+      "Archives",
+      "Research Methods"
+    ],
+    "route": "/publications/signal-archaeology-audio-memory-and-machine-listening/",
+    "identifier": "/id/publication/signal-archaeology-audio-memory-and-machine-listening/",
+    "temporality": {
+      "creationDate": "2026-06-23",
+      "lastUpdated": "2026-06-23",
+      "releaseDate": "2026-06-23",
       "creationYear": "2026"
     }
   },
@@ -201,6 +892,73 @@
       "lastUpdated": "2026-06-22",
       "releaseDate": "2026-06-22",
       "creationYear": "2024"
+    }
+  },
+  {
+    "id": "ea:technology:json-ld",
+    "legacyId": "json-ld",
+    "kind": "technology",
+    "type": "technology",
+    "title": "JSON-LD",
+    "subtitle": "JSON for Linked Data",
+    "summary": "JSON-LD is a W3C format for serializing Linked Data in JSON, making semantic graph metadata compatible with common web programming workflows.",
+    "description": "A technology record for JSON-LD as the structured data format used by Electronic Artefacts canonical pages.",
+    "status": "active",
+    "maturity": "production",
+    "confidence": "published",
+    "visibility": "public",
+    "publicationClass": "published",
+    "tags": [
+      "JSON-LD",
+      "Linked Data",
+      "Structured Data",
+      "SEO"
+    ],
+    "discipline": [
+      "Web Development",
+      "Knowledge Systems",
+      "SEO"
+    ],
+    "route": "/knowledge/technologies/json-ld/",
+    "identifier": "/id/technology/json-ld/",
+    "temporality": {
+      "creationDate": "2020-07-16",
+      "lastUpdated": "2026-06-23",
+      "releaseDate": "2026-06-23",
+      "creationYear": "2020"
+    }
+  },
+  {
+    "id": "ea:technology:rdf",
+    "legacyId": "rdf",
+    "kind": "technology",
+    "type": "technology",
+    "title": "RDF",
+    "subtitle": "Resource Description Framework",
+    "summary": "RDF is a W3C graph data model for representing information as subject-predicate-object statements about resources.",
+    "description": "A technology record for RDF as a reference model behind knowledge graphs, Linked Data and semantic publication.",
+    "status": "active",
+    "maturity": "production",
+    "confidence": "published",
+    "visibility": "public",
+    "publicationClass": "published",
+    "tags": [
+      "RDF",
+      "Semantic Web",
+      "Linked Data",
+      "Graph"
+    ],
+    "discipline": [
+      "Web Development",
+      "Knowledge Systems"
+    ],
+    "route": "/knowledge/technologies/rdf/",
+    "identifier": "/id/technology/rdf/",
+    "temporality": {
+      "creationDate": "2014-02-25",
+      "lastUpdated": "2026-06-23",
+      "releaseDate": "2026-06-23",
+      "creationYear": "2014"
     }
   }
 ]

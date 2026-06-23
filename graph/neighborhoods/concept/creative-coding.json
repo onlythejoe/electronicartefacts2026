@@ -1,0 +1,34 @@
+{
+  "id": "local:ea:concept:creative-coding",
+  "kind": "local",
+  "focus": "ea:concept:creative-coding",
+  "nodes": [
+    {
+      "id": "ea:concept:creative-coding",
+      "type": "concept",
+      "title": "Creative Coding",
+      "route": "/knowledge/concepts/creative-coding/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:publication:generative-systems-cybernetics-and-creative-coding",
+      "type": "publication",
+      "title": "Generative Systems, Cybernetics and Creative Coding",
+      "route": "/publications/generative-systems-cybernetics-and-creative-coding/",
+      "status": "active",
+      "confidence": "published"
+    }
+  ],
+  "edges": [
+    {
+      "id": "ear:generative-systems-article-documents-creative-coding",
+      "source": "ea:publication:generative-systems-cybernetics-and-creative-coding",
+      "target": "ea:concept:creative-coding",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Generative Systems, Cybernetics and Creative Coding connects creative coding to generative system practice.",
+      "confidence": "published"
+    }
+  ]
+}

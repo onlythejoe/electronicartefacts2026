@@ -1,0 +1,34 @@
+{
+  "id": "local:ea:concept:cybernetic-feedback",
+  "kind": "local",
+  "focus": "ea:concept:cybernetic-feedback",
+  "nodes": [
+    {
+      "id": "ea:concept:cybernetic-feedback",
+      "type": "concept",
+      "title": "Cybernetic Feedback",
+      "route": "/knowledge/concepts/cybernetic-feedback/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:publication:generative-systems-cybernetics-and-creative-coding",
+      "type": "publication",
+      "title": "Generative Systems, Cybernetics and Creative Coding",
+      "route": "/publications/generative-systems-cybernetics-and-creative-coding/",
+      "status": "active",
+      "confidence": "published"
+    }
+  ],
+  "edges": [
+    {
+      "id": "ear:generative-systems-article-documents-cybernetic-feedback",
+      "source": "ea:publication:generative-systems-cybernetics-and-creative-coding",
+      "target": "ea:concept:cybernetic-feedback",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Generative Systems, Cybernetics and Creative Coding uses cybernetic feedback as a historical and technical foundation.",
+      "confidence": "published"
+    }
+  ]
+}

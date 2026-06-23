@@ -1,0 +1,65 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://electronicartefacts.com/publications/generative-systems-cybernetics-and-creative-coding/#webpage",
+      "url": "https://electronicartefacts.com/publications/generative-systems-cybernetics-and-creative-coding/",
+      "name": "Generative Systems, Cybernetics and Creative Coding",
+      "mainEntity": {
+        "@id": "https://electronicartefacts.com/id/publication/generative-systems-cybernetics-and-creative-coding/"
+      },
+      "isPartOf": {
+        "@id": "https://electronicartefacts.com/#website"
+      }
+    },
+    {
+      "@type": "TechArticle",
+      "@id": "https://electronicartefacts.com/id/publication/generative-systems-cybernetics-and-creative-coding/",
+      "name": "Generative Systems, Cybernetics and Creative Coding",
+      "description": "This article traces generative systems from cybernetic feedback and algorithmic art to creative coding, sound design and contemporary AI-assisted production.",
+      "url": "https://electronicartefacts.com/publications/generative-systems-cybernetics-and-creative-coding/",
+      "dateCreated": "2026-06-23",
+      "datePublished": "2026-06-23",
+      "dateModified": "2026-06-23",
+      "publisher": {
+        "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
+      },
+      "citation": "Electronic Artefacts. \"Generative Systems, Cybernetics and Creative Coding.\" Technical article, version 1.0.0, 2026.",
+      "about": [
+        {
+          "@id": "https://electronicartefacts.com/id/concept/generative-system/"
+        },
+        {
+          "@id": "https://electronicartefacts.com/id/concept/cybernetic-feedback/"
+        },
+        {
+          "@id": "https://electronicartefacts.com/id/concept/creative-coding/"
+        },
+        {
+          "@id": "https://electronicartefacts.com/id/program/oreth/"
+        },
+        {
+          "@id": "https://electronicartefacts.com/id/project/palimpsests/"
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Electronic Artefacts",
+          "item": "https://electronicartefacts.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Generative Systems, Cybernetics and Creative Coding",
+          "item": "https://electronicartefacts.com/publications/generative-systems-cybernetics-and-creative-coding/"
+        }
+      ]
+    }
+  ]
+}

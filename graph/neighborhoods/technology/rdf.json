@@ -1,0 +1,51 @@
+{
+  "id": "local:ea:technology:rdf",
+  "kind": "local",
+  "focus": "ea:technology:rdf",
+  "nodes": [
+    {
+      "id": "ea:publication:knowledge-graphs-for-cultural-infrastructure",
+      "type": "publication",
+      "title": "Knowledge Graphs for Cultural Infrastructure",
+      "route": "/publications/knowledge-graphs-for-cultural-infrastructure/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:linked-data-and-public-knowledge-pages",
+      "type": "publication",
+      "title": "Linked Data and Public Knowledge Pages",
+      "route": "/publications/linked-data-and-public-knowledge-pages/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:technology:rdf",
+      "type": "technology",
+      "title": "RDF",
+      "route": "/knowledge/technologies/rdf/",
+      "status": "active",
+      "confidence": "published"
+    }
+  ],
+  "edges": [
+    {
+      "id": "ear:knowledge-graphs-article-uses-rdf",
+      "source": "ea:publication:knowledge-graphs-for-cultural-infrastructure",
+      "target": "ea:technology:rdf",
+      "predicate": "usesTechnology",
+      "label": "Uses technology",
+      "statement": "Knowledge Graphs for Cultural Infrastructure uses RDF as the reference model for graph statements and resources.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:linked-data-article-uses-rdf",
+      "source": "ea:publication:linked-data-and-public-knowledge-pages",
+      "target": "ea:technology:rdf",
+      "predicate": "usesTechnology",
+      "label": "Uses technology",
+      "statement": "Linked Data and Public Knowledge Pages uses RDF as the underlying graph-data reference for Linked Data.",
+      "confidence": "published"
+    }
+  ]
+}

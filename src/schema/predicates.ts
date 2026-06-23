@@ -39,7 +39,7 @@ export const predicateDefinitions: Record<RelationPredicate, PredicateDefinition
   definition("appliesConcept", "Applies concept", "implementation", ["project", "program", "method", "publication"], ["concept"]),
   definition("usesMethod", "Uses method", "implementation", ["project", "program", "publication"], ["method"]),
   definition("implementsFramework", "Implements framework", "implementation", ["project", "program", "tool"], ["framework"]),
-  definition("usesTechnology", "Uses technology", "implementation", ["project", "program", "tool"], ["technology"]),
+  definition("usesTechnology", "Uses technology", "implementation", ["project", "program", "publication", "tool"], ["technology"]),
   definition("implementedBy", "Implemented by", "implementation"),
   definition("demonstratedBy", "Demonstrated by", "evidence"),
   definition("createdBy", "Created by", "production", all, agents),

@@ -1,0 +1,119 @@
+{
+  "id": "local:ea:project:palimpsests",
+  "kind": "local",
+  "focus": "ea:project:palimpsests",
+  "nodes": [
+    {
+      "id": "ea:concept:digital-preservation",
+      "type": "concept",
+      "title": "Digital Preservation",
+      "route": "/knowledge/concepts/digital-preservation/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:concept:signal-archaeology",
+      "type": "concept",
+      "title": "Signal Archaeology",
+      "route": "/knowledge/concepts/signal-archaeology/",
+      "status": "active",
+      "confidence": "observed"
+    },
+    {
+      "id": "ea:program:oreth",
+      "type": "program",
+      "title": "ORETH",
+      "route": "/programs/oreth/",
+      "status": "prototype",
+      "confidence": "observed"
+    },
+    {
+      "id": "ea:project:palimpsests",
+      "type": "project",
+      "title": "Palimpsests",
+      "route": "/projects/palimpsests/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:digital-preservation-and-living-archives",
+      "type": "publication",
+      "title": "Digital Preservation and Living Archives",
+      "route": "/publications/digital-preservation-and-living-archives/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:generative-systems-cybernetics-and-creative-coding",
+      "type": "publication",
+      "title": "Generative Systems, Cybernetics and Creative Coding",
+      "route": "/publications/generative-systems-cybernetics-and-creative-coding/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:signal-archaeology-audio-memory-and-machine-listening",
+      "type": "publication",
+      "title": "Signal Archaeology, Audio Memory and Machine Listening",
+      "route": "/publications/signal-archaeology-audio-memory-and-machine-listening/",
+      "status": "active",
+      "confidence": "published"
+    }
+  ],
+  "edges": [
+    {
+      "id": "ear:palimpsests-powered-by-oreth",
+      "source": "ea:project:palimpsests",
+      "target": "ea:program:oreth",
+      "predicate": "poweredBy",
+      "label": "Powered by",
+      "statement": "Palimpsests uses ORETH as its audio intelligence and artistic research layer.",
+      "confidence": "observed"
+    },
+    {
+      "id": "ear:palimpsests-applies-signal-archaeology",
+      "source": "ea:project:palimpsests",
+      "target": "ea:concept:signal-archaeology",
+      "predicate": "appliesConcept",
+      "label": "Applies concept",
+      "statement": "Palimpsests applies signal archaeology by treating sonic residue and media traces as cultural material.",
+      "confidence": "observed"
+    },
+    {
+      "id": "ear:palimpsests-applies-digital-preservation",
+      "source": "ea:project:palimpsests",
+      "target": "ea:concept:digital-preservation",
+      "predicate": "appliesConcept",
+      "label": "Applies concept",
+      "statement": "Palimpsests applies digital preservation by treating audio, visual and research traces as a compound cultural record.",
+      "confidence": "observed"
+    },
+    {
+      "id": "ear:digital-preservation-article-documents-palimpsests",
+      "source": "ea:publication:digital-preservation-and-living-archives",
+      "target": "ea:project:palimpsests",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Digital Preservation and Living Archives uses Palimpsests as an example of born-digital cultural preservation.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:generative-systems-article-documents-palimpsests",
+      "source": "ea:publication:generative-systems-cybernetics-and-creative-coding",
+      "target": "ea:project:palimpsests",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Generative Systems, Cybernetics and Creative Coding links Palimpsests to repetition, residue and transformation.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:signal-archaeology-article-documents-palimpsests",
+      "source": "ea:publication:signal-archaeology-audio-memory-and-machine-listening",
+      "target": "ea:project:palimpsests",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Signal Archaeology, Audio Memory and Machine Listening links Palimpsests to audio memory and sonic residue.",
+      "confidence": "published"
+    }
+  ]
+}

@@ -4,6 +4,14 @@
   "focus": "ea:researchField:runtime-theory",
   "nodes": [
     {
+      "id": "ea:concept:contextual-execution",
+      "type": "concept",
+      "title": "Contextual Execution",
+      "route": "/knowledge/concepts/contextual-execution/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
       "id": "ea:concept:graph-runtime",
       "type": "concept",
       "title": "Graph Runtime",
@@ -17,6 +25,14 @@
       "title": "VASTE",
       "route": "/programs/vaste/",
       "status": "development",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:contextual-execution-and-graph-runtimes",
+      "type": "publication",
+      "title": "Contextual Execution and Graph Runtimes",
+      "route": "/publications/contextual-execution-and-graph-runtimes/",
+      "status": "active",
       "confidence": "published"
     },
     {
@@ -45,6 +61,24 @@
       "label": "Documents",
       "statement": "Foundational Lineage",
       "confidence": "observed"
+    },
+    {
+      "id": "ear:runtime-theory-defines-contextual-execution",
+      "source": "ea:researchField:runtime-theory",
+      "target": "ea:concept:contextual-execution",
+      "predicate": "defines",
+      "label": "Defines",
+      "statement": "Runtime Theory defines the research boundary for contextual execution inside Electronic Artefacts.",
+      "confidence": "validated"
+    },
+    {
+      "id": "ear:contextual-execution-article-documents-runtime-theory",
+      "source": "ea:publication:contextual-execution-and-graph-runtimes",
+      "target": "ea:researchField:runtime-theory",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Contextual Execution and Graph Runtimes connects contextual execution to Runtime Theory.",
+      "confidence": "published"
     },
     {
       "id": "ear:runtime-theory-defines-graph-runtime",

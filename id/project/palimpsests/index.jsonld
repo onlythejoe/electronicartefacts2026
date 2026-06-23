@@ -1,0 +1,47 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://electronicartefacts.com/projects/palimpsests/#webpage",
+      "url": "https://electronicartefacts.com/projects/palimpsests/",
+      "name": "Palimpsests",
+      "mainEntity": {
+        "@id": "https://electronicartefacts.com/id/project/palimpsests/"
+      },
+      "isPartOf": {
+        "@id": "https://electronicartefacts.com/#website"
+      }
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://electronicartefacts.com/id/project/palimpsests/",
+      "name": "Palimpsests",
+      "description": "Palimpsests is an Electronic Artefacts cultural project and conceptual album cycle connected to ORETH, memory, inheritance, transmission, entropy, signal and layered artistic production.",
+      "url": "https://electronicartefacts.com/projects/palimpsests/",
+      "dateCreated": "2026-01-01",
+      "datePublished": "2026-06-23",
+      "dateModified": "2026-06-23",
+      "publisher": {
+        "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Electronic Artefacts",
+          "item": "https://electronicartefacts.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Palimpsests",
+          "item": "https://electronicartefacts.com/projects/palimpsests/"
+        }
+      ]
+    }
+  ]
+}

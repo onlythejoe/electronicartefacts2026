@@ -1,0 +1,118 @@
+{
+  "id": "ea:project:palimpsests",
+  "type": "project",
+  "slug": {
+    "canonical": "palimpsests"
+  },
+  "title": "Palimpsests",
+  "subtitle": "Conceptual Audio Publication",
+  "abstract": "Palimpsests is an Electronic Artefacts cultural project and conceptual album cycle connected to ORETH, memory, inheritance, transmission, entropy, signal and layered artistic production.",
+  "description": "A canonical project record for Palimpsests as a compound audio, visual and research publication within Electronic Artefacts.",
+  "locale": "en",
+  "visibility": "public",
+  "publicationClass": "canonical",
+  "status": "active",
+  "maturity": "development",
+  "confidence": "published",
+  "version": {
+    "version": "1.0.0",
+    "createdAt": "2026-01-01",
+    "publishedAt": "2026-06-23",
+    "modifiedAt": "2026-06-23"
+  },
+  "authors": [
+    {
+      "id": "ea:organization:electronic-artefacts"
+    }
+  ],
+  "publisher": "ea:organization:electronic-artefacts",
+  "tags": [
+    "Palimpsests",
+    "ORETH",
+    "Audio",
+    "Memory",
+    "Transmission",
+    "Signal",
+    "Digital Art"
+  ],
+  "disciplines": [
+    "Music",
+    "Digital Art",
+    "Visual Culture",
+    "Audio Engineering",
+    "Research"
+  ],
+  "media": [
+    {
+      "id": "palimpsests-cover",
+      "type": "image",
+      "src": "/assets/media/projects/palimpsests/palimpsests.jpg",
+      "alt": "Palimpsests album cover visual",
+      "caption": "Palimpsests album cover visual."
+    }
+  ],
+  "category": "cultural",
+  "brief": "Publish a compound audio and research work around memory, inheritance, transmission and layered cultural traces.",
+  "context": "Palimpsests extends Electronic Artefacts beyond software and portfolio surfaces by treating music, images, notes and archives as one connected cultural publication.",
+  "stakeholders": [
+    {
+      "id": "ea:organization:electronic-artefacts"
+    }
+  ],
+  "constraints": [
+    "Preserve the autonomy of the artistic work.",
+    "Keep research context useful without over-explaining the music.",
+    "Maintain provenance across audio, visual, textual and archival fragments."
+  ],
+  "approach": [
+    "Treat the album cycle as a compound publication rather than a single static release.",
+    "Connect audio artefacts, visual references, research notes and concepts through typed relations.",
+    "Use ORETH as the audio research layer for signal, listening and pattern interpretation."
+  ],
+  "outputs": [
+    {
+      "id": "ea:project:palimpsests"
+    }
+  ],
+  "outcomes": [
+    "A public cultural dossier around memory and transmission.",
+    "A model for linking artistic production to research and archive systems."
+  ],
+  "evidence": [
+    {
+      "id": "ea:program:oreth"
+    }
+  ],
+  "credits": [
+    {
+      "id": "ea:organization:electronic-artefacts"
+    }
+  ],
+  "visualLanguage": [
+    "Black",
+    "White",
+    "Material trace",
+    "Layered memory"
+  ],
+  "textures": [
+    "Overwriting",
+    "Residue",
+    "Signal",
+    "Fragment"
+  ],
+  "symbols": [
+    "Palimpsest",
+    "Trace",
+    "Memory surface",
+    "Transmission"
+  ],
+  "bodyHtml": "<h2>Project thesis</h2>\n<p>Palimpsests is a compound artistic publication built around layered memory. It uses the figure of the palimpsest to describe audio, image and research material that remains marked by previous states.</p>\n<p>The project should be read as a cultural work before it is read as a technical case study. It belongs to the Electronic Artefacts graph because the studio treats artistic production, software systems, research fields and archives as connected forms of knowledge.</p>\n<h2>Concept</h2>\n<p>A palimpsest is not a blank page. It is a surface that has carried earlier inscription, later erasure, partial rewriting and residual visibility. The project applies that idea to sound and digital culture: memory is not only stored, it is overwritten, compressed, distorted, recovered and reinterpreted.</p>\n<p>In audio, this appears through spectral residue, recurring motifs, degraded textures, room traces, sample memory and production decisions that leave audible marks. In archive work, it appears when a record survives with missing metadata, unstable context or uncertain provenance.</p>\n<h2>Relation to ORETH</h2>\n<p>ORETH supplies the audio research layer behind Palimpsests. It gives the project a language for signal, pattern, machine listening and sonic evidence without requiring the music to behave like documentation.</p>\n<p>The relationship is reciprocal. ORETH provides methods and questions. Palimpsests provides material, constraints and public form.</p>\n<h2>Knowledge role</h2>\n<p>Palimpsests is useful for the Knowledge Hub because it demonstrates how cultural works can become graph nodes without becoming promotional case studies. It connects audio engineering, signal archaeology, digital preservation, visual culture, memory studies and generative systems.</p>\n<h2>Archive role</h2>\n<p>The project should preserve not only final releases but also references, visual plates, research notes and structural decisions. The archive should remain selective. A good archive does not publish everything; it preserves enough provenance for future interpretation.</p>\n<h2>Status</h2>\n<p>Palimpsests is active as a cultural dossier and publication model. Additional audio artefacts, notes, concept pages and relations can be added as the public evidence layer matures.</p>\n",
+  "headings": [
+    "Project thesis",
+    "Concept",
+    "Relation to ORETH",
+    "Knowledge role",
+    "Archive role",
+    "Status"
+  ]
+}

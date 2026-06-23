@@ -1,6 +1,6 @@
-<section class="zone-card hero home-cinematic-hero">
-  <div class="hero-layout home-cinematic-hero__layout">
-    <div class="hero-copy">
+<section class="zone-card hero home-cinematic-hero intent-hero intent-hero--home">
+  <div class="intent-hero__grid home-cinematic-hero__layout">
+    <div class="hero-copy intent-hero__copy">
       <p class="eyebrow">ELECTRONIC ARTEFACTS</p>
       <h1 class="display-title">Creative systems made visible.</h1>
       <p class="lede">
@@ -11,38 +11,30 @@
         <a class="button button--primary" href="./work.html">See selected work</a>
         <a class="button button--secondary" href="./contact.html">Start a project</a>
       </div>
-      <div class="pill-cloud" aria-label="Identity tags">
+      <div class="pill-cloud intent-hero__chips" aria-label="Identity tags">
         <span class="chip">Client systems</span>
         <span class="chip">Proprietary platforms</span>
         <span class="chip">Research</span>
         <span class="chip">Artistic publishing</span>
       </div>
-      <div class="home-cinematic-hero__signals" aria-label="Current studio signals">
-        <span><strong>06</strong><em>public works</em></span>
-        <span><strong>04</strong><em>program lines</em></span>
-        <span><strong>01</strong><em>live client proof</em></span>
-      </div>
     </div>
 
-    <aside class="home-cinematic-hero__stage" aria-label="Studio visual system">
-      <div class="home-cinematic-hero__orbital" aria-hidden="true">
-        <span style="--i:0"></span>
-        <span style="--i:1"></span>
-        <span style="--i:2"></span>
-      </div>
-      <a class="home-cinematic-hero__frame home-cinematic-hero__frame--lead" href="./work.html" aria-label="Open selected work including AtypikHouse">
+    <aside class="intent-hero__stage home-intent-stage" data-intent-stage aria-label="Studio visual system">
+      <div class="intent-hero__stage-label"><span>Now showing</span><strong>Current products and public work</strong></div>
+      <div class="home-intent-stage__orbit" aria-hidden="true"></div>
+      <a class="home-intent-stage__frame home-intent-stage__frame--lead" href="./work.html" data-depth="0.82" aria-label="Open selected work including AtypikHouse">
         <img src="./assets/media/projects/atypikhouse/atypikhouse-dashboard-home.jpg" alt="AtypikHouse dashboard interface" loading="eager" fetchpriority="high" />
         <figcaption><span>Product surface</span><strong>AtypikHouse</strong></figcaption>
       </a>
-      <a class="home-cinematic-hero__frame home-cinematic-hero__frame--portrait" href="./project.html?id=oeil-de-meg" aria-label="Open L’Œil de Meg project">
+      <a class="home-intent-stage__frame home-intent-stage__frame--system" href="./project.html?id=oeil-de-meg" data-depth="1.35" aria-label="Open L’Œil de Meg project">
         <img src="./assets/media/projects/oeil-de-meg/oeil-de-meg-home-hero-butterflies.png" alt="L’Œil de Meg homepage visual with butterflies" loading="lazy" />
         <figcaption><span>Public delivery</span><strong>L’Œil de Meg</strong></figcaption>
       </a>
-      <a class="home-cinematic-hero__frame home-cinematic-hero__frame--archive" href="./palimpsests.html" aria-label="Open Palimpsests">
+      <a class="home-intent-stage__frame home-intent-stage__frame--proof" href="./palimpsests.html" data-depth="1.62" aria-label="Open Palimpsests">
         <img src="./assets/media/projects/palimpsests/palimpsests.jpg" alt="Palimpsests album cover" loading="lazy" />
         <figcaption><span>Culture</span><strong>Palimpsests</strong></figcaption>
       </a>
-      <div class="home-cinematic-hero__channels" aria-label="Channels">
+      <div class="home-intent-stage__channels" data-depth="1.42" aria-label="Channels">
         <a href="https://www.instagram.com/electronic.artefacts/" target="_blank" rel="noreferrer" aria-label="Open the Electronic Artefacts Instagram channel">
           <img src="./assets/media/projects/electronic-artefacts/electronic-artefacts-logo.jpg" alt="" loading="lazy" />
           <span>@electronic.artefacts</span>
@@ -51,6 +43,11 @@
           <img src="./assets/media/projects/creativestuff/creativestuff-logo.jpg" alt="" loading="lazy" />
           <span>@creativestuff.jpg</span>
         </a>
+      </div>
+      <div class="intent-hero__stats" aria-label="Current studio signals" data-depth="1.65">
+        <span><strong>06</strong><em>public works</em></span>
+        <span><strong>04</strong><em>program lines</em></span>
+        <span><strong>01</strong><em>live client proof</em></span>
       </div>
     </aside>
   </div>

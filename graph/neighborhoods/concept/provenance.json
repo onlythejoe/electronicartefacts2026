@@ -1,0 +1,68 @@
+{
+  "id": "local:ea:concept:provenance",
+  "kind": "local",
+  "focus": "ea:concept:provenance",
+  "nodes": [
+    {
+      "id": "ea:concept:provenance",
+      "type": "concept",
+      "title": "Provenance",
+      "route": "/knowledge/concepts/provenance/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:publication:digital-preservation-and-living-archives",
+      "type": "publication",
+      "title": "Digital Preservation and Living Archives",
+      "route": "/publications/digital-preservation-and-living-archives/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:knowledge-graphs-for-cultural-infrastructure",
+      "type": "publication",
+      "title": "Knowledge Graphs for Cultural Infrastructure",
+      "route": "/publications/knowledge-graphs-for-cultural-infrastructure/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:signal-archaeology-audio-memory-and-machine-listening",
+      "type": "publication",
+      "title": "Signal Archaeology, Audio Memory and Machine Listening",
+      "route": "/publications/signal-archaeology-audio-memory-and-machine-listening/",
+      "status": "active",
+      "confidence": "published"
+    }
+  ],
+  "edges": [
+    {
+      "id": "ear:knowledge-graphs-article-documents-provenance",
+      "source": "ea:publication:knowledge-graphs-for-cultural-infrastructure",
+      "target": "ea:concept:provenance",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Knowledge Graphs for Cultural Infrastructure frames provenance as a trust layer for cultural knowledge graphs.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:digital-preservation-article-documents-provenance",
+      "source": "ea:publication:digital-preservation-and-living-archives",
+      "target": "ea:concept:provenance",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Digital Preservation and Living Archives explains provenance as a central layer of living archive practice.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:signal-archaeology-article-documents-provenance",
+      "source": "ea:publication:signal-archaeology-audio-memory-and-machine-listening",
+      "target": "ea:concept:provenance",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Signal Archaeology, Audio Memory and Machine Listening explains why signal interpretation needs provenance.",
+      "confidence": "published"
+    }
+  ]
+}

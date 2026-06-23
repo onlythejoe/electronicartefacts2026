@@ -1,0 +1,47 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://electronicartefacts.com/knowledge/concepts/digital-preservation/#webpage",
+      "url": "https://electronicartefacts.com/knowledge/concepts/digital-preservation/",
+      "name": "Digital Preservation",
+      "mainEntity": {
+        "@id": "https://electronicartefacts.com/id/concept/digital-preservation/"
+      },
+      "isPartOf": {
+        "@id": "https://electronicartefacts.com/#website"
+      }
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://electronicartefacts.com/id/concept/digital-preservation/",
+      "name": "Digital Preservation",
+      "description": "Digital preservation is the long-term work of keeping digital objects understandable, authentic, usable and accessible despite changes in formats, software, hardware and context.",
+      "url": "https://electronicartefacts.com/knowledge/concepts/digital-preservation/",
+      "dateCreated": "2026-06-23",
+      "datePublished": "2026-06-23",
+      "dateModified": "2026-06-23",
+      "publisher": {
+        "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Electronic Artefacts",
+          "item": "https://electronicartefacts.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Digital Preservation",
+          "item": "https://electronicartefacts.com/knowledge/concepts/digital-preservation/"
+        }
+      ]
+    }
+  ]
+}

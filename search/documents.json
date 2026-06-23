@@ -1,5 +1,274 @@
 [
   {
+    "id": "ea:collection:knowledge-hub-foundations",
+    "route": "/archive/collections/knowledge-hub-foundations/",
+    "type": "collection",
+    "title": "Knowledge Hub Foundations",
+    "alternateNames": [],
+    "abstract": "Knowledge Hub Foundations curates the first expansion wave of Electronic Artefacts knowledge records around graph systems, preservation, generative systems, signal, audio and public semantic publishing.",
+    "headings": [
+      "Thesis",
+      "Selection logic",
+      "Editorial role",
+      "Current members",
+      "Future expansion"
+    ],
+    "body": "Thesis Knowledge Hub Foundations is the first editorial collection for the expanded Electronic Artefacts Knowledge Hub. It groups the records that explain why the site is becoming a research library rather than a conventional blog. The collection begins with graph infrastructure, semantic identity, contextual execution, preservation, generative systems and signal archaeology because these subjects support many future articles. They can connect software, audio, archives, design, culture and AI retrieval without forcing every topic into a single discipline. Selection logic The collection selects records that are durable, reusable and relational. Each member should help future readers understand other parts of the site. A good foundation record is not only an answer to one query; it becomes a connector between projects, programs and publications. Editorial role This collection should be used as a starting point for future waves of content. New articles can join the collection only when they strengthen the foundational graph rather than duplicate existing records. Current members The first wave includes six publications, ten concepts, two technology records and two Electronic Artefacts practice nodes. Together they define the first public scaffold for the Knowledge Hub. Future expansion Future additions should include methods, frameworks, archive records, source guides and case studies. The priority is not volume alone. Each addition should improve navigation, source quality, semantic clarity or internal linking.",
+    "tags": [
+      "Knowledge Hub",
+      "Editorial Collection",
+      "Foundations",
+      "Research Library",
+      "Semantic Publishing"
+    ],
+    "questions": [],
+    "relationLabels": [
+      "hasPart Knowledge Hub Foundations includes Knowledge Graphs for Cultural Infrastructure as a foundation article.",
+      "hasPart Knowledge Hub Foundations includes Linked Data and Public Knowledge Pages as a foundation article.",
+      "hasPart Knowledge Hub Foundations includes Contextual Execution and Graph Runtimes as a foundation article.",
+      "hasPart Knowledge Hub Foundations includes Digital Preservation and Living Archives as a foundation article.",
+      "hasPart Knowledge Hub Foundations includes Generative Systems, Cybernetics and Creative Coding as a foundation article.",
+      "hasPart Knowledge Hub Foundations includes Signal Archaeology, Audio Memory and Machine Listening as a foundation article."
+    ],
+    "relatedEntityIds": [
+      "ea:publication:knowledge-graphs-for-cultural-infrastructure",
+      "ea:publication:linked-data-and-public-knowledge-pages",
+      "ea:publication:contextual-execution-and-graph-runtimes",
+      "ea:publication:digital-preservation-and-living-archives",
+      "ea:publication:generative-systems-cybernetics-and-creative-coding",
+      "ea:publication:signal-archaeology-audio-memory-and-machine-listening"
+    ],
+    "status": "active",
+    "confidence": "published",
+    "modifiedAt": "2026-06-23"
+  },
+  {
+    "id": "ea:concept:contextual-execution",
+    "route": "/knowledge/concepts/contextual-execution/",
+    "type": "concept",
+    "title": "Contextual Execution",
+    "alternateNames": [],
+    "definition": "Contextual execution is the practice of making identity, state, permissions, relationships and operating context active constraints on what a system can do.",
+    "abstract": "Contextual execution describes runtime behavior where an operation is evaluated through entity identity, graph relations, permissions, temporal state and intended scope.",
+    "headings": [
+      "Definition",
+      "Scope",
+      "Difference from configuration",
+      "Electronic Artefacts position",
+      "Applications",
+      "Limitations",
+      "References"
+    ],
+    "body": "Definition Contextual execution is the practice of making operating context part of execution. A system does not only ask what operation was requested. It asks who requested it, which entity is affected, which relations are active, what state the system is in, what permissions apply, and what consequences should propagate. In Electronic Artefacts, contextual execution is a core bridge between Runtime Theory and VASTE. A graph runtime becomes meaningful when identity and relation structure can influence behavior. Scope The concept includes user identity, organization identity, entity state, visibility, confidence, lifecycle, permissions, relations, event scope and temporal validity. It also includes boundaries: where context starts, where it stops, and which parts can be inherited. Difference from configuration Configuration is usually a set of values that changes how software behaves. Contextual execution is more dynamic. It can depend on the current actor, the current entity, current graph neighbors, the operation being attempted and the event history that led to the moment. Electronic Artefacts position The Electronic Artefacts position is that context should not be hidden inside incidental application code when it determines authority or meaning. It should be modeled explicitly enough to be inspected, tested and explained. This is important for knowledge systems. A publication, archive record or project page may be public, internal, canonical, speculative, archived or superseded. Those states should not only change styling. They should influence indexing, graph visibility, citation and relation publication. Applications Contextual execution is useful for editorial workflows, archive permissions, AI agent actions, cultural contribution systems, project governance, knowledge graph publishing and product runtimes with multiple actors. Limitations Context can become expensive. If every operation depends on too much graph state, the system becomes hard to reason about. The practical challenge is to define the smallest context needed for correct execution. References See Graph Runtime, Runtime Theory and VASTE.",
+    "tags": [
+      "Context",
+      "Execution",
+      "Runtime",
+      "Identity",
+      "Permissions"
+    ],
+    "questions": [],
+    "relationLabels": [
+      "appliesConcept VASTE applies contextual execution through identity-aware graph records, relations, permissions and event propagation.",
+      "defines Runtime Theory defines the research boundary for contextual execution inside Electronic Artefacts.",
+      "documents Contextual Execution and Graph Runtimes documents contextual execution as a runtime principle."
+    ],
+    "relatedEntityIds": [
+      "ea:program:vaste",
+      "ea:researchField:runtime-theory",
+      "ea:publication:contextual-execution-and-graph-runtimes"
+    ],
+    "status": "active",
+    "confidence": "canonical",
+    "modifiedAt": "2026-06-23"
+  },
+  {
+    "id": "ea:concept:creative-coding",
+    "route": "/knowledge/concepts/creative-coding/",
+    "type": "concept",
+    "title": "Creative Coding",
+    "alternateNames": [],
+    "definition": "Creative coding is the use of programming as an artistic, design or exploratory medium rather than only as an engineering implementation tool.",
+    "abstract": "Creative coding connects software, visual culture, sound, interaction, generative systems, education and experimental publishing.",
+    "headings": [
+      "Definition",
+      "Scope",
+      "Electronic Artefacts position",
+      "Applications",
+      "Limitations",
+      "References"
+    ],
+    "body": "Definition Creative coding is programming used as a creative medium. It includes visual systems, sound tools, installations, generative art, interactive sketches, prototypes, browser experiments and computational publications. The practice is not defined by a specific language. JavaScript, Processing, p5.js, TouchDesigner, Max, Python, shaders, Rust and many other environments can support creative coding when code is used to explore form, behavior and perception. Scope Creative coding includes experimentation, system design, tool making, procedural aesthetics, interaction, performance, data visualization, sound generation and educational work. Electronic Artefacts position Electronic Artefacts treats creative coding as a bridge between cultural production and technical systems. It appears in visual research, runtime interfaces, graph surfaces, audio tooling and generative production methods. Applications Applications include motion design, interactive diagrams, audio visualization, archive exploration, live performance tools, generative brand systems, teaching materials and interface prototypes. Limitations Creative coding should not be used as a vague label for any code that produces visuals. The creative intent, process and system behavior should be legible. References See Generative System, Cybernetic Feedback, ORETH and VASTE.",
+    "tags": [
+      "Creative Coding",
+      "Digital Art",
+      "Programming",
+      "Generative Art",
+      "Interaction"
+    ],
+    "questions": [],
+    "relationLabels": [
+      "documents Generative Systems, Cybernetics and Creative Coding connects creative coding to generative system practice."
+    ],
+    "relatedEntityIds": [
+      "ea:publication:generative-systems-cybernetics-and-creative-coding"
+    ],
+    "status": "active",
+    "confidence": "validated",
+    "modifiedAt": "2026-06-23"
+  },
+  {
+    "id": "ea:concept:cybernetic-feedback",
+    "route": "/knowledge/concepts/cybernetic-feedback/",
+    "type": "concept",
+    "title": "Cybernetic Feedback",
+    "alternateNames": [],
+    "definition": "Cybernetic feedback is the circulation of information about a system's state back into the system so that behavior can be regulated, adapted or transformed.",
+    "abstract": "Cybernetic feedback connects control, communication, systems theory, generative art, machine listening, adaptive interfaces and runtime governance.",
+    "headings": [
+      "Definition",
+      "Scope",
+      "Historical context",
+      "Electronic Artefacts position",
+      "Applications",
+      "Limitations",
+      "References"
+    ],
+    "body": "Definition Cybernetic feedback is the circulation of information about a system’s state back into the system. That information can be used to regulate, correct, amplify, dampen or transform behavior. Feedback is not simply repetition. A loop becomes feedback when the output or state of a process affects future operation. Scope The concept includes control systems, adaptive behavior, self-regulation, homeostasis, signal processing, interface response, generative art, machine listening and organizational systems. Historical context Norbert Wiener framed cybernetics around control and communication across animals and machines. The field influenced engineering, computing, neuroscience, design, art and social theory. It also produced dangerous overextensions when feedback metaphors were applied without care. Electronic Artefacts position Electronic Artefacts uses cybernetic feedback as a precise historical and technical reference. It helps explain why graph runtime, contextual execution and generative systems depend on state observation and response. It also helps connect ORETH and Palimpsests to traditions of signal, noise, adaptation and machine perception. Applications Applications include adaptive interfaces, generative music, runtime governance, simulations, machine listening, search ranking, archive curation and human-computer interaction. Limitations Cybernetics can become vague if every circular relation is called feedback. The term should be reserved for systems where state information has a functional effect on behavior. References See Norbert Wiener, W. Ross Ashby, Generative System and Contextual Execution.",
+    "tags": [
+      "Cybernetics",
+      "Feedback",
+      "Systems Theory",
+      "Control",
+      "Generative Systems"
+    ],
+    "questions": [],
+    "relationLabels": [
+      "documents Generative Systems, Cybernetics and Creative Coding uses cybernetic feedback as a historical and technical foundation."
+    ],
+    "relatedEntityIds": [
+      "ea:publication:generative-systems-cybernetics-and-creative-coding"
+    ],
+    "status": "active",
+    "confidence": "validated",
+    "modifiedAt": "2026-06-23"
+  },
+  {
+    "id": "ea:concept:digital-preservation",
+    "route": "/knowledge/concepts/digital-preservation/",
+    "type": "concept",
+    "title": "Digital Preservation",
+    "alternateNames": [],
+    "definition": "Digital preservation is the long-term work of keeping digital objects understandable, authentic, usable and accessible despite changes in formats, software, hardware and context.",
+    "abstract": "Digital preservation connects file formats, metadata, provenance, storage, rights, migration and interpretation into a long-term care practice for digital culture.",
+    "headings": [
+      "Definition",
+      "Scope",
+      "Why it matters",
+      "Electronic Artefacts position",
+      "Applications",
+      "Limitations",
+      "References"
+    ],
+    "body": "Definition Digital preservation is the long-term work of keeping digital objects understandable, authentic, usable and accessible. It is broader than backup. Backup protects against immediate loss. Preservation protects against future unintelligibility. Scope The concept includes storage, redundancy, checksums, metadata, format sustainability, rights, documentation, migration, emulation, access copies, provenance, selection and review. For cultural material, it also includes context: why the object mattered, how it was made, and how it should be interpreted. Why it matters Digital objects are fragile in ways that are not always visible. A file can exist and still become unreadable. A recording can play and still lose its production context. A website can be copied and still lose its routes, scripts, metadata and original interaction. Electronic Artefacts position Electronic Artefacts treats digital preservation as part of the knowledge graph. An archive record should know what it is, where it came from, what it documents, what its rights are, and how it relates to projects or publications. This is especially relevant to Palimpsests, ORETH and Vestiges. Applications Applications include audio archives, project media, research notes, generated static pages, JSON-LD records, software releases, visual references, datasets and cultural dossiers. Limitations Preservation requires selection. Keeping every temporary file creates noise and cost. The purpose is to preserve significant evidence, not to freeze every intermediate state forever. References See the Digital Preservation Coalition Handbook, Library of Congress Sustainability of Digital Formats and NDSA Levels of Digital Preservation.",
+    "tags": [
+      "Digital Preservation",
+      "Archive",
+      "File Formats",
+      "Provenance",
+      "Memory"
+    ],
+    "questions": [],
+    "relationLabels": [
+      "appliesConcept Palimpsests applies digital preservation by treating audio, visual and research traces as a compound cultural record.",
+      "documents Digital Preservation and Living Archives documents digital preservation as long-term care for digital objects and context.",
+      "documents Signal Archaeology, Audio Memory and Machine Listening connects audio traces to digital preservation practice."
+    ],
+    "relatedEntityIds": [
+      "ea:project:palimpsests",
+      "ea:publication:digital-preservation-and-living-archives",
+      "ea:publication:signal-archaeology-audio-memory-and-machine-listening"
+    ],
+    "status": "active",
+    "confidence": "validated",
+    "modifiedAt": "2026-06-23"
+  },
+  {
+    "id": "ea:concept:entity-identity",
+    "route": "/knowledge/concepts/entity-identity/",
+    "type": "concept",
+    "title": "Entity Identity",
+    "alternateNames": [],
+    "definition": "Entity identity is the durable naming of a person, concept, project, program, publication or artefact so that references remain stable as descriptions evolve.",
+    "abstract": "Entity identity gives knowledge systems a way to cite things without confusing names, pages, files, versions and changing descriptions.",
+    "headings": [
+      "Definition",
+      "Scope",
+      "Why identity matters",
+      "Electronic Artefacts position",
+      "Applications",
+      "Limitations",
+      "References"
+    ],
+    "body": "Definition Entity identity is the durable naming of something that the system wants to reference. It can be a concept, person, project, program, publication, organization, artefact, event or dataset. The key requirement is stability: the identifier should continue to refer to the same thing even when the description, title, route or design changes. Scope Entity identity includes internal IDs, canonical slugs, public URLs, identifier routes, aliases, version metadata and redirect strategy. It also includes editorial decisions: whether two similar names describe one entity or two distinct entities. Why identity matters Without durable identity, internal links decay into text references. A publication cannot reliably document a concept if the concept has no stable record. Search cannot rank related entities if identifiers keep changing. A future AI system cannot cite a project if the project only exists as a visual card. Electronic Artefacts position Electronic Artefacts uses entity IDs such as ea:concept:graph-runtime and canonical routes such as /knowledge/concepts/graph-runtime/ . Identifier routes under /id/ preserve machine-facing identity while public pages remain readable for humans. Applications Entity identity supports citations, graph validation, JSON-LD, sitemap generation, redirects, search documents, local graph neighborhoods, version history and archive records. Limitations Identity is not merely technical. Poor identity decisions create conceptual debt. Splitting one entity into many duplicates weakens authority, while merging different entities erases important distinctions. The rule is to define identity around stable meaning, not temporary wording. References See RDF 1.1 Concepts, Cool URIs for the Semantic Web and the Electronic Artefacts route registry.",
+    "tags": [
+      "Identity",
+      "URI",
+      "Canonical URL",
+      "Versioning",
+      "Knowledge Graph"
+    ],
+    "questions": [],
+    "relationLabels": [
+      "documents Knowledge Graphs for Cultural Infrastructure explains why stable entity identity matters for graph publishing.",
+      "documents Linked Data and Public Knowledge Pages explains the difference between page URLs and entity identifiers."
+    ],
+    "relatedEntityIds": [
+      "ea:publication:knowledge-graphs-for-cultural-infrastructure",
+      "ea:publication:linked-data-and-public-knowledge-pages"
+    ],
+    "status": "active",
+    "confidence": "canonical",
+    "modifiedAt": "2026-06-23"
+  },
+  {
+    "id": "ea:concept:generative-system",
+    "route": "/knowledge/concepts/generative-system/",
+    "type": "concept",
+    "title": "Generative System",
+    "alternateNames": [],
+    "definition": "A generative system is a rule-based, procedural or computational arrangement that produces variable outputs from defined constraints, materials and processes.",
+    "abstract": "Generative systems connect creative coding, cybernetics, algorithmic composition, simulation, design tools and AI by shifting authorship toward rules, feedback and selection.",
+    "headings": [
+      "Definition",
+      "Scope",
+      "Electronic Artefacts position",
+      "Applications",
+      "Limitations",
+      "References"
+    ],
+    "body": "Definition A generative system is an arrangement that produces outputs from rules, parameters, materials and processes. It can be code, a musical procedure, a design system, a simulation, a set of prompts, a physical mechanism or a hybrid workflow. The important point is not that the system creates without a human. The important point is that the human defines conditions under which outputs can emerge, vary and be selected. Scope Generative systems include algorithmic composition, procedural graphics, creative coding, rule-based design, simulations, artificial life, stochastic processes, modular synthesis, AI-assisted production and runtime-based content generation. Electronic Artefacts position Electronic Artefacts treats generative systems as production and research structures. VASTE explores graph-shaped execution. ORETH explores audio patterns and signal interpretation. Palimpsests uses repetition, residue and transformation as cultural material. Applications Applications include visual systems, music structures, motion design, asset generation, archive exploration, simulation, interface states and creative tools. Limitations A generative system needs evaluation. Variation alone is not value. Good generative work requires meaningful constraints, inspectable process and a way to decide which outputs matter. References See Cybernetic Feedback, Creative Coding, ORETH and Palimpsests.",
+    "tags": [
+      "Generative Art",
+      "Creative Coding",
+      "Algorithmic Composition",
+      "Systems",
+      "Simulation"
+    ],
+    "questions": [],
+    "relationLabels": [
+      "appliesConcept ORETH applies generative-system thinking to experimental audio structures and pattern exploration.",
+      "documents Generative Systems, Cybernetics and Creative Coding documents generative systems through constraints, rules and selection."
+    ],
+    "relatedEntityIds": [
+      "ea:program:oreth",
+      "ea:publication:generative-systems-cybernetics-and-creative-coding"
+    ],
+    "status": "active",
+    "confidence": "validated",
+    "modifiedAt": "2026-06-23"
+  },
+  {
     "id": "ea:concept:graph-runtime",
     "route": "/knowledge/concepts/graph-runtime/",
     "type": "concept",
@@ -25,11 +294,13 @@
     ],
     "questions": [],
     "relationLabels": [
+      "documents Contextual Execution and Graph Runtimes explains how contextual execution extends the graph-runtime concept.",
       "defines Runtime Theory supplies the research questions and boundaries used to define graph runtime within Electronic Artefacts.",
       "appliesConcept VASTE applies the graph-runtime concept through addressable entities, typed relationships, identity, context and event execution.",
       "appliesConcept Vestiges applies graph-runtime principles to cultural, craft and human-knowledge infrastructure."
     ],
     "relatedEntityIds": [
+      "ea:publication:contextual-execution-and-graph-runtimes",
       "ea:researchField:runtime-theory",
       "ea:program:vaste",
       "ea:project:vestiges"
@@ -37,6 +308,159 @@
     "status": "active",
     "confidence": "canonical",
     "modifiedAt": "2026-06-22"
+  },
+  {
+    "id": "ea:concept:knowledge-graph",
+    "route": "/knowledge/concepts/knowledge-graph/",
+    "type": "concept",
+    "title": "Knowledge Graph",
+    "alternateNames": [],
+    "definition": "A knowledge graph is a structured network of entities, identifiers and typed relationships that makes knowledge navigable, queryable and reusable across contexts.",
+    "abstract": "Electronic Artefacts uses knowledge graph to describe public knowledge systems where concepts, projects, programs, publications, sources and artefacts keep stable identities and typed relations.",
+    "headings": [
+      "Definition",
+      "Scope",
+      "Cultural use",
+      "Electronic Artefacts position",
+      "Applications",
+      "Limitations",
+      "References"
+    ],
+    "body": "Definition A knowledge graph is a structured network of entities, identifiers and typed relationships. It is not merely a visualization of related things. A durable knowledge graph gives each important object a stable identity, describes how objects relate to one another, and allows those relations to be interpreted by humans, software and search systems. In Electronic Artefacts, the knowledge graph connects concepts, projects, programs, publications, research fields, organizations and artefacts. A project can apply a concept. A publication can document a field. A program can implement a framework. A cultural work can be linked to signal, memory, preservation and production methods without being reduced to a promotional card. Scope The concept includes three layers. The first layer is identity: every meaningful object needs an addressable record. The second layer is relation: links must say what kind of connection exists. The third layer is publication: the graph must produce pages, metadata, search documents and machine-readable representations that can survive outside a browser session. RDF describes graph statements as subject-predicate-object triples and treats IRIs as identifiers for resources. Electronic Artefacts does not need to imitate every RDF system internally, but it adopts the same discipline: stable identity and explicit predicates are more durable than loose associations. Cultural use For cultural infrastructure, a knowledge graph must handle ambiguity. A sound work can be an artefact, a release, a trace of process and evidence for a research question. A person can be an artist, contributor, maintainer and subject. A concept can move from speculation to canonical status. A graph that cannot represent those roles loses historical value. The CIDOC CRM is a strong reference point because it was designed for cultural heritage integration. It shows why museums, archives and libraries need shared conceptual structures rather than isolated database fields. Electronic Artefacts position Electronic Artefacts uses knowledge graph as a publication model. The graph should not be hidden infrastructure. It should shape how pages are written, how evidence is attached, how canonical URLs are minted, and how future readers discover related work. The difference from a blog is structural. A blog post is primarily chronological. A graph record is primarily relational. Publications can still have dates, authors and arguments, but they should enrich existing entities rather than vanish into a feed. Applications Knowledge graphs are useful for research libraries, cultural archives, software documentation, institutional memory, product ecosystems, music catalogues, design systems and AI retrieval. They help readers move from a term to examples, from an example to sources, and from sources to related questions. Limitations A knowledge graph can become noisy if relation types are vague or if every weak association is published. It can also become brittle when identifiers change. The graph requires editorial discipline: controlled vocabularies, relation validation, source review and periodic pruning. References See W3C RDF 1.1 Concepts, CIDOC CRM, the Electronic Artefacts Runtime Theory field and the VASTE program record.",
+    "tags": [
+      "Knowledge Graph",
+      "Semantic Web",
+      "Entities",
+      "Relations",
+      "Search"
+    ],
+    "questions": [],
+    "relationLabels": [
+      "appliesConcept Vestiges applies knowledge-graph principles to culture, craft, institutions, techniques and public knowledge pages.",
+      "documents Knowledge Graphs for Cultural Infrastructure documents the knowledge-graph concept for cultural publishing."
+    ],
+    "relatedEntityIds": [
+      "ea:project:vestiges",
+      "ea:publication:knowledge-graphs-for-cultural-infrastructure"
+    ],
+    "status": "active",
+    "confidence": "canonical",
+    "modifiedAt": "2026-06-23"
+  },
+  {
+    "id": "ea:concept:linked-data",
+    "route": "/knowledge/concepts/linked-data/",
+    "type": "concept",
+    "title": "Linked Data",
+    "alternateNames": [],
+    "definition": "Linked Data is a web publishing approach that identifies things with stable URIs and connects them through machine-readable statements.",
+    "abstract": "Linked Data gives public knowledge systems a way to make entities, pages, references and datasets interoperable across sites and software systems.",
+    "headings": [
+      "Definition",
+      "Scope",
+      "Why it matters",
+      "Electronic Artefacts position",
+      "Applications",
+      "Limitations",
+      "References"
+    ],
+    "body": "Definition Linked Data is a way of publishing structured information on the Web so that things can be identified, described and connected across systems. It depends on stable identifiers, explicit statements and formats that machines can read without losing the human context. The principle is simple: a page can describe an entity, but the page and the entity are not the same thing. Electronic Artefacts uses canonical public pages for humans and /id/ identifier routes for machine-readable identity. That separation makes it possible to cite a concept, inspect its JSON-LD and connect it to other records. Scope Linked Data covers entity identifiers, canonical URLs, JSON-LD, RDF-compatible statements, structured data, citations and relationship exports. It does not require every site to run a graph database. A static site can publish Linked Data if it generates stable URLs, structured metadata and consistent identifiers. Why it matters Search engines, AI retrieval systems, archives and external tools need more than good prose. They need to know what a page is about, who published it, when it changed, what it cites, and how it connects to other things. Linked Data provides a vocabulary for that layer. Electronic Artefacts position Electronic Artefacts uses Linked Data pragmatically. The goal is not to become a standards demonstration. The goal is to make concepts, programs, projects and publications citable and durable. JSON-LD is especially useful because it works with ordinary JSON-based web tooling while preserving Linked Data semantics. Applications Useful applications include article structured data, concept identifiers, project metadata, publication citation, archive provenance, graph exports, internal search and future external data integration. Limitations Linked Data does not solve editorial quality. A malformed graph can be perfectly machine-readable and intellectually useless. The durable value comes from combining explicit identifiers with careful writing, sources, evidence and review. References See W3C Cool URIs for the Semantic Web, JSON-LD 1.1, RDF 1.1 Concepts and the Electronic Artefacts JSON-LD output.",
+    "tags": [
+      "Linked Data",
+      "Semantic Web",
+      "JSON-LD",
+      "RDF",
+      "URI"
+    ],
+    "questions": [],
+    "relationLabels": [
+      "documents Linked Data and Public Knowledge Pages documents Linked Data as a publishing discipline for public knowledge pages."
+    ],
+    "relatedEntityIds": [
+      "ea:publication:linked-data-and-public-knowledge-pages"
+    ],
+    "status": "active",
+    "confidence": "validated",
+    "modifiedAt": "2026-06-23"
+  },
+  {
+    "id": "ea:concept:provenance",
+    "route": "/knowledge/concepts/provenance/",
+    "type": "concept",
+    "title": "Provenance",
+    "alternateNames": [],
+    "definition": "Provenance is information about the people, activities, sources, transformations and decisions involved in producing a thing or piece of data.",
+    "abstract": "Provenance helps readers assess reliability, rights, authorship, lineage, context and trust across research, archive, software and cultural records.",
+    "headings": [
+      "Definition",
+      "Scope",
+      "Why it matters",
+      "Electronic Artefacts position",
+      "Applications",
+      "Limitations",
+      "References"
+    ],
+    "body": "Definition Provenance is information about how a thing came to be. It records people, organizations, activities, source material, transformations, dates, rights, decisions and evidence. In a knowledge graph, provenance helps readers judge why a claim exists and how much trust to place in it. Scope Provenance includes authorship, publication, maintenance, derivation, citation, versioning, source custody and transformation history. It can apply to data, images, audio, code, publications, concepts and physical artefacts. Why it matters A knowledge system without provenance becomes a surface of claims. Provenance does not make every claim true, but it gives readers a path to evaluate reliability. It also helps future maintainers understand whether a record is original research, interpretation, migrated legacy material or external reference. Electronic Artefacts position Electronic Artefacts treats provenance as a public trust layer. A project, program or publication should expose authorship, publisher, modification date, confidence and sources. Relations should carry statements and confidence levels rather than acting as anonymous links. Applications Provenance is useful for archives, AI retrieval, digital preservation, cultural heritage, research reproducibility, software releases, dataset documentation and audio artefact interpretation. Limitations Provenance is not infinite documentation. A record can always explain more. The editorial task is to preserve enough lineage to support interpretation, rights, trust and future migration. References See W3C PROV, the Electronic Artefacts relation schema and the Digital Preservation concept.",
+    "tags": [
+      "Provenance",
+      "Sources",
+      "Evidence",
+      "Trust",
+      "Archive"
+    ],
+    "questions": [],
+    "relationLabels": [
+      "documents Knowledge Graphs for Cultural Infrastructure frames provenance as a trust layer for cultural knowledge graphs.",
+      "documents Digital Preservation and Living Archives explains provenance as a central layer of living archive practice.",
+      "documents Signal Archaeology, Audio Memory and Machine Listening explains why signal interpretation needs provenance."
+    ],
+    "relatedEntityIds": [
+      "ea:publication:knowledge-graphs-for-cultural-infrastructure",
+      "ea:publication:digital-preservation-and-living-archives",
+      "ea:publication:signal-archaeology-audio-memory-and-machine-listening"
+    ],
+    "status": "active",
+    "confidence": "validated",
+    "modifiedAt": "2026-06-23"
+  },
+  {
+    "id": "ea:concept:signal-archaeology",
+    "route": "/knowledge/concepts/signal-archaeology/",
+    "type": "concept",
+    "title": "Signal Archaeology",
+    "alternateNames": [],
+    "definition": "Signal archaeology is the interpretation of technical, sonic, visual or archival traces as evidence of hidden processes, transformations and histories.",
+    "abstract": "Signal archaeology gives Electronic Artefacts a way to connect audio analysis, media residue, archival provenance, memory and cultural interpretation.",
+    "headings": [
+      "Definition",
+      "Scope",
+      "Electronic Artefacts position",
+      "Applications",
+      "Limitations",
+      "References"
+    ],
+    "body": "Definition Signal archaeology is the interpretation of traces. Those traces may be sonic, visual, computational or archival. The goal is to understand what a signal reveals about process, material, transformation, memory and context. Scope The concept includes noise floors, compression marks, spectral residue, glitches, metadata loss, repeated motifs, version traces, file histories, interface artefacts and archival gaps. Electronic Artefacts position Signal archaeology is useful because Electronic Artefacts works across music, software, archives and cultural systems. ORETH observes audio material. Palimpsests turns memory and residue into artistic structure. Digital preservation asks what context must remain for future interpretation. Applications Applications include audio research notes, sample history, restoration decisions, archive records, visual reference studies, glitch interpretation, production lineage and machine-listening-assisted annotation. Limitations Signal archaeology is interpretive. It should not pretend to prove more than the evidence supports. A trace may suggest a process, but provenance, sources and context are needed before a claim becomes reliable. References See Provenance, Digital Preservation, ORETH and Palimpsests.",
+    "tags": [
+      "Signal Archaeology",
+      "Audio",
+      "Archive",
+      "Memory",
+      "Machine Listening"
+    ],
+    "questions": [],
+    "relationLabels": [
+      "appliesConcept ORETH applies signal archaeology to audio analysis, machine listening and sonic trace interpretation.",
+      "appliesConcept Palimpsests applies signal archaeology by treating sonic residue and media traces as cultural material.",
+      "documents Signal Archaeology, Audio Memory and Machine Listening documents signal archaeology as a concept."
+    ],
+    "relatedEntityIds": [
+      "ea:program:oreth",
+      "ea:project:palimpsests",
+      "ea:publication:signal-archaeology-audio-memory-and-machine-listening"
+    ],
+    "status": "active",
+    "confidence": "observed",
+    "modifiedAt": "2026-06-23"
   },
   {
     "id": "ea:organization:electronic-artefacts",
@@ -75,6 +499,50 @@
     "modifiedAt": "2026-06-22"
   },
   {
+    "id": "ea:program:oreth",
+    "route": "/programs/oreth/",
+    "type": "program",
+    "title": "ORETH",
+    "alternateNames": [],
+    "abstract": "ORETH is an Electronic Artefacts audio intelligence and artistic research program concerned with signal analysis, pattern detection, memory, machine listening and experimental music production.",
+    "headings": [
+      "Mandate",
+      "Research position",
+      "Technical scope",
+      "Artistic scope",
+      "Applications",
+      "Limitations",
+      "References"
+    ],
+    "body": "Mandate ORETH is the Electronic Artefacts program that treats sound as both material and evidence. It connects practical audio production with research questions about signal, memory, pattern, noise and listening systems. The program is not only a music identity. It is a research layer for studying how sonic material can be observed, segmented, transformed and preserved without reducing it to a neutral file. A recorded fragment can be a composition, a sample, a trace of a session, a clue about a process, a cultural artefact and a future training object at the same time. Research position ORETH sits between audio engineering, machine listening, sound design and archive work. Its current position is deliberately experimental: it uses analysis as a way to understand sonic structure, but it does not treat automated analysis as a replacement for artistic judgment. The program is connected to Palimpsests because that project makes memory, inheritance and transmission explicit. A palimpsest is a surface overwritten by later marks while earlier traces remain partly visible. In sound, the same logic appears through saturation, sampling, room tone, compression history, noise floors, spectral residue and repeated motifs. Technical scope The technical scope includes frequency-domain analysis, onset and transient detection, segment comparison, signal annotation, audio feature extraction, visual inspection, prototype interfaces and research notes. Early experiments around Python audio tooling, numerical analysis and visual plotting inform the program, but the public record focuses on concepts and methods rather than promising a specific production package. Artistic scope ORETH also names the public artistic layer that carries the Palimpsests cycle. The artistic output should remain legible as music first. The research layer explains how listening, analysis and memory interact, but it should not turn the work into a technical demonstration. Applications The program supports: machine-listening research for creative use; annotation of audio artefacts and recordings; sonic archives where provenance matters; composition systems built around recurrence and transformation; essays on signal, memory, entropy and musical form; future tools that help creators inspect and preserve audio process. Limitations ORETH is an active prototype program. Public claims should remain scoped to documented concepts, project records and preserved artefacts. Performance claims, model claims and production-system claims require separate evidence before they become canonical. References This program record is grounded in the existing Electronic Artefacts archive, the Palimpsests dossier, Runtime Theory, signal archaeology research and the studio’s preserved audio and production notes.",
+    "tags": [
+      "Audio Intelligence",
+      "Machine Listening",
+      "Signal Processing",
+      "Sound Design",
+      "Palimpsests",
+      "Experimental Music"
+    ],
+    "questions": [],
+    "relationLabels": [
+      "poweredBy Palimpsests uses ORETH as its audio intelligence and artistic research layer.",
+      "appliesConcept ORETH applies signal archaeology to audio analysis, machine listening and sonic trace interpretation.",
+      "appliesConcept ORETH applies generative-system thinking to experimental audio structures and pattern exploration.",
+      "documents Generative Systems, Cybernetics and Creative Coding links ORETH to audio pattern exploration and generative systems.",
+      "documents Signal Archaeology, Audio Memory and Machine Listening uses ORETH as the machine-listening and audio research context."
+    ],
+    "relatedEntityIds": [
+      "ea:project:palimpsests",
+      "ea:concept:signal-archaeology",
+      "ea:concept:generative-system",
+      "ea:publication:generative-systems-cybernetics-and-creative-coding",
+      "ea:publication:signal-archaeology-audio-memory-and-machine-listening"
+    ],
+    "status": "prototype",
+    "confidence": "observed",
+    "modifiedAt": "2026-06-23"
+  },
+  {
     "id": "ea:program:vaste",
     "route": "/programs/vaste/",
     "type": "program",
@@ -105,6 +573,8 @@
     "questions": [],
     "relationLabels": [
       "documents Foundational Lineage",
+      "appliesConcept VASTE applies contextual execution through identity-aware graph records, relations, permissions and event propagation.",
+      "documents Contextual Execution and Graph Runtimes uses VASTE as the program context for graph runtime execution.",
       "appliesConcept VASTE applies the graph-runtime concept through addressable entities, typed relationships, identity, context and event execution.",
       "derivedFrom VASTE derives its runtime primitives and contextual execution questions from the Runtime Theory research field.",
       "poweredBy Vestiges uses VASTE as its graph runtime and contextual execution foundation.",
@@ -112,6 +582,8 @@
     ],
     "relatedEntityIds": [
       "ea:publication:foundational-lineage-001",
+      "ea:concept:contextual-execution",
+      "ea:publication:contextual-execution-and-graph-runtimes",
       "ea:concept:graph-runtime",
       "ea:researchField:runtime-theory",
       "ea:project:vestiges",
@@ -120,6 +592,52 @@
     "status": "development",
     "confidence": "published",
     "modifiedAt": "2026-06-22"
+  },
+  {
+    "id": "ea:project:palimpsests",
+    "route": "/projects/palimpsests/",
+    "type": "project",
+    "title": "Palimpsests",
+    "alternateNames": [],
+    "abstract": "Palimpsests is an Electronic Artefacts cultural project and conceptual album cycle connected to ORETH, memory, inheritance, transmission, entropy, signal and layered artistic production.",
+    "headings": [
+      "Project thesis",
+      "Concept",
+      "Relation to ORETH",
+      "Knowledge role",
+      "Archive role",
+      "Status"
+    ],
+    "body": "Project thesis Palimpsests is a compound artistic publication built around layered memory. It uses the figure of the palimpsest to describe audio, image and research material that remains marked by previous states. The project should be read as a cultural work before it is read as a technical case study. It belongs to the Electronic Artefacts graph because the studio treats artistic production, software systems, research fields and archives as connected forms of knowledge. Concept A palimpsest is not a blank page. It is a surface that has carried earlier inscription, later erasure, partial rewriting and residual visibility. The project applies that idea to sound and digital culture: memory is not only stored, it is overwritten, compressed, distorted, recovered and reinterpreted. In audio, this appears through spectral residue, recurring motifs, degraded textures, room traces, sample memory and production decisions that leave audible marks. In archive work, it appears when a record survives with missing metadata, unstable context or uncertain provenance. Relation to ORETH ORETH supplies the audio research layer behind Palimpsests. It gives the project a language for signal, pattern, machine listening and sonic evidence without requiring the music to behave like documentation. The relationship is reciprocal. ORETH provides methods and questions. Palimpsests provides material, constraints and public form. Knowledge role Palimpsests is useful for the Knowledge Hub because it demonstrates how cultural works can become graph nodes without becoming promotional case studies. It connects audio engineering, signal archaeology, digital preservation, visual culture, memory studies and generative systems. Archive role The project should preserve not only final releases but also references, visual plates, research notes and structural decisions. The archive should remain selective. A good archive does not publish everything; it preserves enough provenance for future interpretation. Status Palimpsests is active as a cultural dossier and publication model. Additional audio artefacts, notes, concept pages and relations can be added as the public evidence layer matures.",
+    "tags": [
+      "Palimpsests",
+      "ORETH",
+      "Audio",
+      "Memory",
+      "Transmission",
+      "Signal",
+      "Digital Art"
+    ],
+    "questions": [],
+    "relationLabels": [
+      "poweredBy Palimpsests uses ORETH as its audio intelligence and artistic research layer.",
+      "appliesConcept Palimpsests applies signal archaeology by treating sonic residue and media traces as cultural material.",
+      "appliesConcept Palimpsests applies digital preservation by treating audio, visual and research traces as a compound cultural record.",
+      "documents Digital Preservation and Living Archives uses Palimpsests as an example of born-digital cultural preservation.",
+      "documents Generative Systems, Cybernetics and Creative Coding links Palimpsests to repetition, residue and transformation.",
+      "documents Signal Archaeology, Audio Memory and Machine Listening links Palimpsests to audio memory and sonic residue."
+    ],
+    "relatedEntityIds": [
+      "ea:program:oreth",
+      "ea:concept:signal-archaeology",
+      "ea:concept:digital-preservation",
+      "ea:publication:digital-preservation-and-living-archives",
+      "ea:publication:generative-systems-cybernetics-and-creative-coding",
+      "ea:publication:signal-archaeology-audio-memory-and-machine-listening"
+    ],
+    "status": "active",
+    "confidence": "published",
+    "modifiedAt": "2026-06-23"
   },
   {
     "id": "ea:project:vestiges",
@@ -147,12 +665,18 @@
     ],
     "questions": [],
     "relationLabels": [
+      "appliesConcept Vestiges applies knowledge-graph principles to culture, craft, institutions, techniques and public knowledge pages.",
+      "documents Knowledge Graphs for Cultural Infrastructure uses Vestiges as the applied cultural infrastructure example.",
+      "documents Digital Preservation and Living Archives connects Vestiges to living archive and cultural knowledge preservation.",
       "poweredBy Vestiges uses VASTE as its graph runtime and contextual execution foundation.",
       "appliesConcept Vestiges applies graph-runtime principles to cultural, craft and human-knowledge infrastructure.",
       "evidencedBy Foundational Lineage",
       "createdBy Electronic Artefacts created Vestiges as the flagship public application of VASTE."
     ],
     "relatedEntityIds": [
+      "ea:concept:knowledge-graph",
+      "ea:publication:knowledge-graphs-for-cultural-infrastructure",
+      "ea:publication:digital-preservation-and-living-archives",
       "ea:program:vaste",
       "ea:concept:graph-runtime",
       "ea:publication:foundational-lineage-001",
@@ -161,6 +685,118 @@
     "status": "development",
     "confidence": "observed",
     "modifiedAt": "2026-06-22"
+  },
+  {
+    "id": "ea:publication:contextual-execution-and-graph-runtimes",
+    "route": "/publications/contextual-execution-and-graph-runtimes/",
+    "type": "publication",
+    "format": "technicalArticle",
+    "title": "Contextual Execution and Graph Runtimes",
+    "alternateNames": [],
+    "abstract": "This article explains contextual execution as a runtime principle for systems where identity, relations, permissions and state influence what operations can occur.",
+    "headings": [
+      "Problem",
+      "Introduction",
+      "Context",
+      "History",
+      "Core concepts",
+      "Architecture",
+      "Implementation",
+      "Practical applications",
+      "Tools",
+      "Evidence",
+      "Design questions",
+      "Common mistakes",
+      "Electronic Artefacts implications",
+      "Related concepts",
+      "Suggested reading",
+      "Related articles",
+      "Glossary",
+      "Limitations",
+      "References"
+    ],
+    "body": "Problem Software often treats context as a secondary concern. A function receives inputs, performs logic and returns output. Permissions, identity, relation state, publication status, provenance and visibility may be checked somewhere else. This can work for small systems, but it becomes fragile when the meaning of an operation depends on where it happens in a graph. Consider a cultural knowledge platform. A user may edit a record, publish a note, create a relation, cite a source or expose an archive item. Each action depends on context. Who is the actor? Which organization owns the record? Is the record public, internal or archived? Is the relation allowed? Does publishing this record expose a restricted entity? Is the article canonical or speculative? Should the change update search, JSON-LD and local graph views? When those questions are hidden inside scattered application code, the system becomes difficult to reason about. Contextual execution makes the context explicit. Introduction Contextual execution is the practice of making identity, state, permissions, relationships and operating context active constraints on what a system can do. It is a runtime principle rather than only a metadata label. A graph runtime extends this idea. It treats addressable entities and typed relationships as part of execution. A relation is not just a link to render. It can constrain propagation, validate allowed operations, expose evidence or determine visibility. Within Electronic Artefacts, this concept connects Runtime Theory and VASTE. Runtime Theory asks what is minimally necessary for a universe of entities to execute events coherently. VASTE explores how graph identity, typed relations and contextual execution can become system architecture. Context Many systems already contain implicit context. A CMS has authors, drafts, roles and statuses. A database has foreign keys. An operating system has users and permissions. A workflow engine has states and transitions. The difference in a graph runtime is that context can be modeled around entities and relations rather than only tables or pages. A project can apply a concept. A publication can document a field. A program can power a platform. Those relationships can affect what gets rendered, indexed, cited or exposed. History Contextual execution belongs to a long family of ideas: operating systems with permissions, object systems with message passing, workflow engines, rule engines, actor models, state machines, knowledge graphs and semantic web systems. It also has conceptual links to cybernetics, because feedback depends on state information re-entering system behavior. Electronic Artefacts frames the topic through graph runtime because the site and its programs need to combine knowledge representation with public execution: pages, search, sitemaps, metadata, graph exports and local neighborhoods are generated from the same source. Core concepts The first concept is actor identity. An operation means different things depending on who performs it. The second concept is entity identity. An operation targets a specific record, not a vague display card. The third concept is relation context. The target’s neighbors can change meaning. Publishing a relation to an internal record may leak information. The fourth concept is state. A concept can be speculative, observed, validated, published or canonical. Those confidence states should affect how claims are presented. The fifth concept is propagation. A change to one entity may update search documents, graph neighborhoods, sitemaps and JSON-LD. Architecture A contextual execution architecture needs: entity records with stable IDs; relation statements with predicates and confidence; validation rules for subject and object types; visibility rules; build or runtime processes that know which projections to update; audit trails or provenance for important changes; a clear boundary between editorial status and execution authority. The Electronic Artefacts build currently implements this in a static form. The build validates records and relations, filters public entities, generates canonical pages and writes graph outputs. That is not a full dynamic runtime, but it demonstrates the same principle: context determines output. Implementation Implementation should start small. A system can first define entity types and relation predicates. Then it can reject broken IDs and duplicate triples. Next it can filter public graph output based on entity visibility. Later it can add workflows, permissions and event propagation. The mistake is to begin with a large abstract engine. Contextual execution should grow from concrete operations that need context: publish a record, expose a relation, generate structured data, cite a source, update a collection, create a derived artefact. Practical applications For VASTE, contextual execution is a runtime design principle. For Vestiges, it can govern contribution, validation and public visibility across cultural knowledge nodes. For the Knowledge Hub, it determines which entities are indexable, which relations can appear publicly, and how publication status affects metadata. For future AI agents, contextual execution can limit actions by role, record state, relation type and evidence level. Tools Useful tools include typed schemas, relation predicate registries, graph selectors, permission models, validation pipelines, event logs, search projections and JSON-LD generation. Evidence The current build rejects relations whose subject or object types are not allowed by the predicate definition. It also prevents public relations from leaking non-public entities. That is contextual execution in static build form. Design questions A system that claims contextual execution should answer several design questions. What is the smallest context needed for the operation? Publishing a page may require entity identity, publication class, visibility, modified date and public relations. It probably does not require the entire history of every related entity. Which context is authoritative? If a Markdown record says one thing and a generated manifest says another, the build must define which source wins. In this repository, the authored content and relation statements are the source of truth; generated outputs are projections. Which context can propagate? A relation from a public article to an internal entity should not become visible simply because the article is public. A confidence label should affect the way claims are displayed, but it should not automatically decide whether a page is indexable. Which context is temporal? A relation may be valid for one version of a system and wrong later. Long-term graph runtimes eventually need dated relations, supersession and change summaries. Common mistakes The first mistake is using context as a global bag of variables. If every part of the system can read and mutate a shared context object, the architecture becomes unpredictable. Contextual execution should use explicit boundaries. The second mistake is treating permissions as the only context. Permissions matter, but editorial state, provenance, confidence, lifecycle and relation type can be equally important. The third mistake is making the graph purely descriptive. If relations never influence validation, projection or search, the system has a knowledge graph but not a graph runtime. Electronic Artefacts implications The Knowledge Hub already shows why contextual execution matters. A public relation is allowed only when both connected entities are public. A publication becomes indexable only when it has the right publication class and a publication date. A concept page uses its definition differently from a project page. These are small examples, but they create a path toward stronger runtime behavior. Future VASTE work can extend this principle into dynamic contribution systems, archive permissions, AI-agent action limits and event-driven projections. Related concepts Read Contextual Execution , Graph Runtime , Runtime Theory , Entity Identity and Cybernetic Feedback . Suggested reading Inspect the VASTE program record and Runtime Theory field. Then review how relation predicates are defined and validated in the Electronic Artefacts repository. Related articles Continue with Knowledge Graphs for Cultural Infrastructure and Linked Data and Public Knowledge Pages . Glossary Context: information that changes the meaning or permission of an operation. Runtime: the environment in which operations execute. Propagation: the spread of a state change into dependent outputs. Predicate: the named type of a relation. Limitations Contextual execution can become overcomplicated. If every operation depends on the entire graph, performance and reasoning suffer. The system should define bounded context: the smallest set of identities, states and relations needed to make the operation correct. The concept also requires humility. Some context is social and cannot be fully encoded. The goal is not to mechanize all judgment, but to make important constraints visible and testable. References Electronic Artefacts. Graph Runtime. Electronic Artefacts. Runtime Theory. Electronic Artefacts. VASTE. W3C. RDF 1.1 Concepts and Abstract Syntax.",
+    "tags": [
+      "Contextual Execution",
+      "Graph Runtime",
+      "Runtime Theory",
+      "VASTE",
+      "Systems Design"
+    ],
+    "questions": [],
+    "relationLabels": [
+      "documents Contextual Execution and Graph Runtimes documents contextual execution as a runtime principle.",
+      "documents Contextual Execution and Graph Runtimes explains how contextual execution extends the graph-runtime concept.",
+      "documents Contextual Execution and Graph Runtimes connects contextual execution to Runtime Theory.",
+      "documents Contextual Execution and Graph Runtimes uses VASTE as the program context for graph runtime execution.",
+      "hasPart Knowledge Hub Foundations includes Contextual Execution and Graph Runtimes as a foundation article."
+    ],
+    "relatedEntityIds": [
+      "ea:concept:contextual-execution",
+      "ea:concept:graph-runtime",
+      "ea:researchField:runtime-theory",
+      "ea:program:vaste",
+      "ea:collection:knowledge-hub-foundations"
+    ],
+    "status": "active",
+    "confidence": "published",
+    "modifiedAt": "2026-06-23"
+  },
+  {
+    "id": "ea:publication:digital-preservation-and-living-archives",
+    "route": "/publications/digital-preservation-and-living-archives/",
+    "type": "publication",
+    "format": "technicalArticle",
+    "title": "Digital Preservation and Living Archives",
+    "alternateNames": [],
+    "abstract": "This article explains digital preservation as an active cultural practice that keeps digital objects, metadata, provenance and interpretation usable over time.",
+    "headings": [
+      "Problem",
+      "Introduction",
+      "Context",
+      "History",
+      "Core concepts",
+      "Architecture",
+      "Implementation",
+      "Practical applications",
+      "Tools",
+      "Evidence",
+      "Preservation checklist",
+      "Common mistakes",
+      "Electronic Artefacts implications",
+      "Related concepts",
+      "Suggested reading",
+      "Related articles",
+      "Glossary",
+      "Limitations",
+      "References"
+    ],
+    "body": "Problem Digital culture is easy to copy and difficult to preserve. A file can be duplicated in seconds, but long-term meaning depends on much more than the bytes. Who made it? Which version is this? What software created it? Which rights apply? What project does it belong to? Is it a final work, a process trace, a reference image, a generated output, a damaged export or a public artefact? Backup answers only one part of the problem: can the file be recovered after a failure? Digital preservation asks a larger question: can the object remain understandable, authentic, usable and accessible when formats, software, hardware, links and cultural context change? This distinction matters for Electronic Artefacts because the site contains born-digital work: images, audio, code, generated pages, JSON-LD, research notes, project media and experimental publications. The archive is not a warehouse at the end of production. It is part of how the work remains intelligible. Introduction Digital preservation is a long-term care practice for digital objects and their context. It combines storage, format strategy, metadata, provenance, rights, fixity checks, migration, access copies and interpretation. A living archive is an archive that can continue to receive interpretation, relations and updated records without pretending that the past is unstable. The object’s provenance should remain stable, but the public understanding of that object may deepen over time. Context The Digital Preservation Coalition describes digital preservation as a practical field concerned with managing digital resources over time. The Library of Congress maintains format sustainability guidance because file formats differ in transparency, disclosure, adoption, dependencies and preservation risk. The NDSA Levels of Digital Preservation provide a way for organizations to assess and improve preservation practice. Those references share a principle: preservation is organizational and technical. It is not enough to store files. A preservation system must know what it has, how it can verify it, how it can migrate it and how a future user can understand it. History Archives long predate digital systems. Physical archives managed custody, description, conservation and access. Digital preservation inherited those concerns and added new ones: media failure, format obsolescence, software dependency, link rot, metadata loss, compression, version drift and platform disappearance. The shift to born-digital culture intensified the problem. A digital artwork, website, recording session or software prototype may depend on tools, operating systems, plugins, APIs and interaction patterns that disappear. Preserving only the final export can erase the process that made the work significant. Core concepts Fixity means verifying that a file has not changed unexpectedly, usually through checksums. Provenance means recording origin, custody, authorship, transformation and evidence. Representation information means the information needed to interpret the object. Access copy means a version prepared for use, separate from a preservation master. Migration means moving an object or metadata into a newer format or environment. Selection means deciding what deserves preservation attention. Architecture A living archive needs several layers: preservation storage for important source files; metadata records with identity, dates, rights and context; provenance statements; format monitoring; public access pages; graph relations to projects, concepts and publications; review states that distinguish canonical records from speculative interpretation. For a static website, preservation also includes generated outputs. HTML pages, JSON-LD, sitemaps and graph exports are part of the public record. They should be reproducible from source records, but preserving generated snapshots can still help future audits. Implementation The implementation path should begin with inventory. What exists? Which files are public? Which files are source material? Which files are evidence? Which formats are risky? Which records have no provenance? Next comes identity. Important objects should receive stable IDs and routes. A record should not depend only on an image filename or a folder name. Then comes relation. An artefact should say what project it belongs to, what publication documents it, which concept it demonstrates and what source or production process it derives from. Finally comes review. Preservation is ongoing. Records need modification dates, confidence states and periodic checks. Practical applications For Palimpsests, digital preservation means more than storing album artwork and audio exports. It means preserving enough context to understand memory, residue, signal and production decisions. For ORETH, it means preserving research notes and audio analysis context without overclaiming machine-listening results. For Vestiges, preservation is central because the platform thesis depends on living cultural knowledge, contribution, provenance and public interpretation. For the Electronic Artefacts site, it means treating generated knowledge pages as durable public artefacts. Tools Useful tools include checksums, file inventories, format registries, controlled vocabularies, provenance records, versioned source control, metadata schemas, static exports, web archives and graph indexes. Evidence The current repository already distinguishes source content, generated pages, graph outputs, search documents and identifier routes. That separation makes preservation possible because source and projection can be inspected separately. Preservation checklist A small studio or research site can begin with a practical checklist. Identify the object. Give important works, publications, media and datasets stable IDs. Do not depend on filenames alone. Record provenance. Document creator, publisher, date, source project, rights, transformations and confidence. If the object came from a legacy system, say so. Separate preservation copies from access copies. A compressed web image is useful for visitors, but it may not be the best preservation object. Track formats and dependencies. A file is easier to preserve when its format is open, documented, widely adopted and not locked to one abandoned tool. Verify fixity. Checksums do not explain meaning, but they help detect unexpected change. Connect the object. A preserved item should link to the project, publication, concept or program that makes it meaningful. Review periodically. Preservation is not a single action. It is a maintenance practice. Common mistakes The first mistake is treating cloud storage as preservation. Cloud storage can be part of an infrastructure, but without metadata, rights, fixity, format awareness and retrieval practice, it is only remote storage. The second mistake is preserving final outputs while discarding context. For a cultural work, drafts, references, process notes and production decisions may carry interpretive value. Not all should be public, but significant context should be described. The third mistake is over-preserving without selection. If everything is kept with equal priority, the archive becomes hard to maintain and hard to interpret. Electronic Artefacts implications Electronic Artefacts should treat every major project as a preservation context. VASTE needs versioned architecture and licensing records. Palimpsests needs audio, visual and interpretive provenance. Vestiges needs contribution and validation history. The website itself needs generated snapshots and source records because the public graph is part of the institution’s intellectual output. This approach gives the archive value beyond nostalgia. It makes the site a working memory system. Related concepts Read Digital Preservation , Provenance , Knowledge Graph , Palimpsests and Vestiges . Suggested reading Start with the Digital Preservation Coalition Handbook, Library of Congress Sustainability of Digital Formats and NDSA Levels of Digital Preservation. Related articles Continue with Knowledge Graphs for Cultural Infrastructure and Signal Archaeology, Audio Memory and Machine Listening . Glossary Fixity: evidence that a file has not changed unexpectedly. Migration: moving content or metadata to a new format or environment. Living archive: an archive that preserves stable provenance while allowing interpretation to grow. Representation information: context needed to understand a preserved object. Limitations Preservation can become infinite if no selection criteria exist. A living archive should not keep everything equally. It should preserve objects that carry evidence, meaning, rights or future interpretive value. Preservation also has ecological and economic cost. Storage, migration and redundancy should be proportional to significance. References Digital Preservation Coalition. Digital Preservation Handbook, 2nd Edition. Library of Congress. Sustainability of Digital Formats. National Digital Stewardship Alliance. Levels of Digital Preservation. Electronic Artefacts. Palimpsests and Vestiges records.",
+    "tags": [
+      "Digital Preservation",
+      "Living Archive",
+      "Provenance",
+      "Palimpsests",
+      "Vestiges"
+    ],
+    "questions": [],
+    "relationLabels": [
+      "documents Digital Preservation and Living Archives documents digital preservation as long-term care for digital objects and context.",
+      "documents Digital Preservation and Living Archives explains provenance as a central layer of living archive practice.",
+      "documents Digital Preservation and Living Archives uses Palimpsests as an example of born-digital cultural preservation.",
+      "documents Digital Preservation and Living Archives connects Vestiges to living archive and cultural knowledge preservation.",
+      "hasPart Knowledge Hub Foundations includes Digital Preservation and Living Archives as a foundation article."
+    ],
+    "relatedEntityIds": [
+      "ea:concept:digital-preservation",
+      "ea:concept:provenance",
+      "ea:project:palimpsests",
+      "ea:project:vestiges",
+      "ea:collection:knowledge-hub-foundations"
+    ],
+    "status": "active",
+    "confidence": "published",
+    "modifiedAt": "2026-06-23"
   },
   {
     "id": "ea:publication:foundational-lineage-001",
@@ -203,6 +839,238 @@
     "modifiedAt": "2026-06-22"
   },
   {
+    "id": "ea:publication:generative-systems-cybernetics-and-creative-coding",
+    "route": "/publications/generative-systems-cybernetics-and-creative-coding/",
+    "type": "publication",
+    "format": "technicalArticle",
+    "title": "Generative Systems, Cybernetics and Creative Coding",
+    "alternateNames": [],
+    "abstract": "This article traces generative systems from cybernetic feedback and algorithmic art to creative coding, sound design and contemporary AI-assisted production.",
+    "headings": [
+      "Problem",
+      "Introduction",
+      "Context",
+      "History",
+      "Core concepts",
+      "Architecture",
+      "Implementation",
+      "Practical applications",
+      "Tools",
+      "Evidence",
+      "Evaluation criteria",
+      "Documentation pattern",
+      "Common mistakes",
+      "Electronic Artefacts implications",
+      "Future work",
+      "Related concepts",
+      "Suggested reading",
+      "Related articles",
+      "Glossary",
+      "Limitations",
+      "References"
+    ],
+    "body": "Problem Generative work is often described through outputs: a set of images, a sound, a moving pattern, a generated interface, a model response. That description hides the actual creative work. A generative system is defined by constraints, rules, feedback, materials, parameters and selection. Without those elements, variation becomes spectacle rather than knowledge. This matters because contemporary culture uses generative language everywhere. Generative art, generative AI, generative music and generative design are often treated as if they belong to one recent technological moment. In reality, the lineage is older and broader. Cybernetics, algorithmic composition, systems art, computer graphics, procedural design and creative coding all contribute important concepts. Introduction A generative system produces variable outputs from defined conditions. The creator may write rules, tune parameters, select materials, design feedback loops, curate outputs or build an environment where interaction changes the result. The central question is not “did a machine make it?” The central question is “what system of constraints made this output possible, and how does the creator evaluate the results?” For Electronic Artefacts, this concept connects VASTE, ORETH, Palimpsests, creative coding and future production tools. It gives the Knowledge Hub a way to discuss AI and computational creativity without collapsing everything into trend language. Context Cybernetics introduced a language of control, communication and feedback. Feedback means that information about a system’s state returns to influence future behavior. This idea matters for creative systems because many generative works depend on loops: a system produces, senses, transforms, responds and produces again. Algorithmic composition made rule-based musical generation explicit. Iannis Xenakis used mathematics, stochastic processes and computer-assisted composition as creative material. Creative coding later made programming environments accessible to artists, designers and educators who wanted to explore form and behavior through code. History Norbert Wiener published Cybernetics in 1948, framing a field around control and communication across animals and machines. W. Ross Ashby’s 1956 Introduction to Cybernetics helped formalize regulation, variety and systems thinking. In the arts, cybernetic and computer-based experiments appeared in exhibitions, music studios and research labs. By the late twentieth century, artists and composers were no longer only using computers to automate existing tasks. They were using computation as a medium. This shift matters: code did not merely execute an already complete artwork. It became part of the work’s form. Creative coding inherits that tradition but changes its scale. Browser APIs, open-source libraries, shaders, audio frameworks and accessible hardware let small teams build systems that earlier required institutional labs. Core concepts Constraint: the rule or boundary that gives the system shape. Parameter: a controllable value that changes output without rewriting the whole system. Feedback: state information returning into behavior. Variation: difference produced inside the system’s rule space. Selection: the human or automated decision about what matters. Material: the sound, image, dataset, text, gesture or archive that the system transforms. Architecture A generative system usually has inputs, rules, state, output and evaluation. Inputs may be random seeds, gestures, audio signals, data, prompts or graph entities. Rules define transformation. State allows memory. Output becomes image, sound, page, movement or data. Evaluation decides whether the output is kept, changed, published or discarded. When feedback is present, output or state can return as input. A musical system may listen to its own resonance. A visual system may react to user movement. A graph runtime may update projections after an event. Implementation Implementation depends on medium. A creative coding sketch may use canvas, WebGL or SVG. A sound system may use spectral analysis, synthesis and sequencing. A graph-based production system may generate artefacts from entity relations. The implementation should preserve inspectability. If the system is important, record its inputs, versions, parameters, sources and selected outputs. Generative work becomes stronger when its process can be studied without destroying its mystery. Practical applications In ORETH, generative thinking can support machine listening, pattern exploration and audio structure. In Palimpsests, it supports repetition, memory, residue and transformation across sound and visual language. In VASTE, it supports runtime systems where graph structure can produce events or public projections. In design, it supports variable identity systems, motion, layout exploration and procedural assets. Tools Useful tools include p5.js, Processing, WebGL, shaders, Web Audio, Max, TouchDesigner, Python audio libraries, machine-learning notebooks, graph runtimes, simulation engines and version control. Evidence Electronic Artefacts already contains graph surfaces, audio research records, generated pages and runtime concepts. These are not all generative artworks, but they provide a technical and editorial foundation for generative systems. Evaluation criteria Generative systems need evaluation criteria because output volume can be misleading. Legibility: can the creator or reader understand the system’s main constraints? Material relevance: does the system use material that matters, or could any input have produced an equivalent effect? Variation quality: do outputs differ in meaningful ways, or are they superficial permutations? Feedback: does the system observe and respond to state, interaction or output history? Curatorial method: how are outputs selected, edited, rejected or preserved? Provenance: can a future reader understand which system, version, source material and parameters produced an artefact? These criteria help separate durable generative practice from output novelty. Documentation pattern A useful generative record should describe the system before it presents the selected output. That record can name the source materials, rule set, interaction model, random seed policy, software versions, parameter ranges, export process and selection method. It can also distinguish between public artefacts and discarded trials. The point is not to make every artwork fully reproducible. Some works depend on live conditions, hardware behavior or subjective curation. The point is to preserve enough context for a future reader to understand the relation between system, material and result. For Electronic Artefacts, this pattern is important because the same system may produce sounds, images, pages, traces or graph projections. Documentation lets those outputs remain connected rather than becoming isolated media fragments. Common mistakes The first mistake is treating randomness as creativity. Randomness can be useful, but a generative system needs constraints that shape the range of possible outputs. The second mistake is hiding the human role. In most generative work, authorship includes deciding what counts as input, writing rules, choosing tools, training or prompting systems, curating results and naming the final work. The third mistake is ignoring preservation. Generative work often depends on code versions, libraries, seeds, parameters, model versions or external APIs. If those are not recorded, the work becomes difficult to study later. Electronic Artefacts implications For Electronic Artefacts, generative systems can become both production tools and research objects. A generated visual is not only an image; it is evidence of a system. An audio pattern is not only a sound; it may reveal a listening method. A graph projection is not only a page; it is a generated public surface from structured records. The Knowledge Hub should therefore document generative systems at two levels: the cultural history of generative practice and the concrete architecture of EA tools and outputs. Future work Future articles should cover algorithmic composition, procedural graphics, generative identity systems, AI-assisted production methods, output evaluation, dataset provenance and preservation strategies for generated artefacts. Related concepts Read Generative System , Cybernetic Feedback , Creative Coding , ORETH and Palimpsests . Suggested reading Start with Wiener, Ashby and Xenakis for historical grounding. Then study contemporary creative coding through code, not only finished images. Related articles Continue with Signal Archaeology, Audio Memory and Machine Listening and Contextual Execution and Graph Runtimes . Glossary Generative system: a system that produces outputs from rules and constraints. Cybernetic feedback: state information returning into system behavior. Creative coding: programming used as a creative medium. Stochastic: involving probability or random variation. Limitations Generative language can obscure authorship. A responsible account names the human choices: rule design, source selection, parameter tuning, training data, curation, editing and publication context. It can also overstate autonomy. Most generative systems require maintenance, selection and interpretation. The system produces possibilities; culture decides what they mean. References Norbert Wiener. Cybernetics or Control and Communication in the Animal and the Machine. 1948. W. Ross Ashby. An Introduction to Cybernetics. 1956. Iannis Xenakis. Formalized Music. 1971. Electronic Artefacts. ORETH and Palimpsests records.",
+    "tags": [
+      "Generative Systems",
+      "Cybernetics",
+      "Creative Coding",
+      "Algorithmic Composition",
+      "Digital Art"
+    ],
+    "questions": [],
+    "relationLabels": [
+      "documents Generative Systems, Cybernetics and Creative Coding documents generative systems through constraints, rules and selection.",
+      "documents Generative Systems, Cybernetics and Creative Coding uses cybernetic feedback as a historical and technical foundation.",
+      "documents Generative Systems, Cybernetics and Creative Coding connects creative coding to generative system practice.",
+      "documents Generative Systems, Cybernetics and Creative Coding links ORETH to audio pattern exploration and generative systems.",
+      "documents Generative Systems, Cybernetics and Creative Coding links Palimpsests to repetition, residue and transformation.",
+      "hasPart Knowledge Hub Foundations includes Generative Systems, Cybernetics and Creative Coding as a foundation article."
+    ],
+    "relatedEntityIds": [
+      "ea:concept:generative-system",
+      "ea:concept:cybernetic-feedback",
+      "ea:concept:creative-coding",
+      "ea:program:oreth",
+      "ea:project:palimpsests",
+      "ea:collection:knowledge-hub-foundations"
+    ],
+    "status": "active",
+    "confidence": "published",
+    "modifiedAt": "2026-06-23"
+  },
+  {
+    "id": "ea:publication:knowledge-graphs-for-cultural-infrastructure",
+    "route": "/publications/knowledge-graphs-for-cultural-infrastructure/",
+    "type": "publication",
+    "format": "technicalArticle",
+    "title": "Knowledge Graphs for Cultural Infrastructure",
+    "alternateNames": [],
+    "abstract": "This article explains how knowledge graphs support cultural infrastructure by giving people, works, sources, concepts, projects and archives stable identities and explicit relations.",
+    "headings": [
+      "Problem",
+      "Introduction",
+      "Context",
+      "History",
+      "Core concepts",
+      "Architecture",
+      "Implementation",
+      "Practical applications",
+      "Tools",
+      "Evidence",
+      "Related concepts",
+      "Suggested reading",
+      "Related articles",
+      "Glossary",
+      "Limitations",
+      "References"
+    ],
+    "body": "Problem Cultural knowledge is rarely simple. A craft technique can belong to a person, a place, a school, a material tradition, a set of tools, a historical period and a living practice. A musical work can be a release, a performance, a file, a memory object, a set of production decisions and evidence of a wider research question. A design archive can contain final images, discarded sketches, rights information, software versions, references and oral context. Conventional websites flatten this complexity. They publish pages, categories and tags, but the relations between things remain vague. A tag can say that two records both concern “audio” or “archives”, but it cannot explain that one document cites another, that one project applies a concept, that one program powers a platform, or that one object is evidence for a claim. The result is familiar: cultural platforms become attractive but shallow catalogues. Search engines can find individual pages, but they cannot understand the system. Human readers can browse, but they cannot easily follow lineage, provenance, method or influence. AI retrieval systems may extract isolated paragraphs without knowing where a claim comes from or which internal records should be read next. A knowledge graph addresses this problem by making entities and relationships first-class editorial objects. Introduction A knowledge graph is a structured network of entities and typed relationships. In practice, that means a person, project, publication, concept, tool, artwork, archive record or organization receives a stable identity, then the site records meaningful relations between those identities. The important word is “meaningful”. A knowledge graph is not valuable because it draws many lines. It is valuable when those lines have predicates that can be interpreted: documents , appliesConcept , usesTechnology , poweredBy , derivedFrom , publishedBy , evidencedBy . Those predicates let readers and machines distinguish a citation from a dependency, a case study from an influence, and a component from a source. For Electronic Artefacts, this matters because the site is not only a portfolio. It contains software programs, artistic projects, research fields, publications, concepts, archives and commercial work. A linear blog would separate those objects into posts. A knowledge graph lets each new publication strengthen existing entities. Context The Web has always been a linking system, but not every link is a semantic relation. A link inside an essay may be navigational, rhetorical, evidential or decorative. A typed relation is different: it states what connects two records. RDF formalizes graph statements as subject-predicate-object triples. That model is useful because it separates the thing being described, the relationship and the target. CIDOC CRM is useful for cultural heritage because it shows how cultural data needs shared conceptual structure across people, events, objects, places and documents. W3C PROV is useful because it treats provenance as information about entities, activities and people involved in producing a thing. Electronic Artefacts does not need to reproduce every museum or semantic-web standard internally. The strategic lesson is simpler: cultural infrastructure needs stable identity, typed relation, provenance and review. History The idea of connected knowledge has a long pre-web history. Libraries, catalogues, citation indexes, museums and archives have always tried to connect works to authors, subjects, dates, places and sources. The Web made linking public and cheap, but early web pages usually linked documents rather than modeling the things inside them. Semantic Web research made a stronger claim: the Web could describe resources in machine-readable ways. Linked Data practices then focused on stable identifiers and connections between datasets. Cultural heritage communities developed models such as CIDOC CRM because museum and archive records could not be integrated reliably through shallow metadata alone. Knowledge graphs entered product and search vocabulary later, but the underlying issue is older: how can a system preserve meaning across changing records, institutions, technologies and readers? Core concepts The first concept is entity identity. A record needs to know whether it describes a concept, a project, a person, a publication or an artefact. It also needs a stable identifier that should not change when the title, page design or summary changes. The second concept is relationship semantics. “Related” is rarely enough. If a publication explains a concept, the relation should say defines or documents . If a project uses a runtime, it should say poweredBy . If a concept influenced a framework, it should say influencedBy . The third concept is provenance. Cultural knowledge depends on context. A graph should record sources, authors, publishers, dates, confidence and evidence, because those elements help readers evaluate trust. The fourth concept is public projection. A private database does not become a public knowledge graph until it produces readable pages, search documents, JSON-LD, sitemaps, canonical URLs and exports that other systems can consume. Architecture A practical cultural knowledge graph needs a few layers. The source layer stores canonical records. In this repository, those records live in Markdown frontmatter and body content under content/ . The relation layer stores typed statements in YAML. The validation layer checks IDs, allowed predicates, public visibility and required fields. The rendering layer generates public HTML, identifier routes, JSON-LD, graph neighborhoods and search documents. This architecture is deliberately static. It does not require a server-side database to publish useful graph knowledge. The build step becomes the authority: it validates the corpus, renders complete pages and writes machine-readable outputs. That choice matters for cultural publishing because static output is durable. A future reader, crawler or archive can inspect the generated page without needing a running application server. Implementation The implementation pattern is straightforward: Define entity types. Give each record a canonical ID and route. Require publication metadata. Keep body content substantive enough to stand alone. Store relations as typed statements. Generate pages and JSON-LD from the same source. Build search documents from titles, abstracts, bodies, tags and relations. Reject broken references during validation. The Electronic Artefacts graph already applies this pattern to VASTE, Runtime Theory, Graph Runtime and Vestiges. This article expands the same model into a broader knowledge hub. Practical applications For Vestiges, a knowledge graph can connect people, techniques, materials, works, documents and institutions. A reader could start from a craft material, follow it to a technique, then to a practitioner, then to a publication, then to a provenance record. For Palimpsests, a graph can connect tracks, visual references, audio analysis, memory concepts, signal archaeology and publication context. For VASTE, a graph can document runtime concepts and show where they are applied in projects. For the public site, a graph improves SEO because every article becomes a route into related canonical records. It improves AI discoverability because sources, identifiers and relations are explicit. Tools Useful tools and standards include RDF for graph thinking, JSON-LD for structured data, Schema.org for web metadata, PROV for provenance, CIDOC CRM for cultural heritage modeling, static site generation for durable output, and search indexes built from structured records. Evidence The current Electronic Artefacts build already generates canonical entity pages, identifier routes, JSON-LD files, search documents, a sitemap and local graph neighborhoods. That means the knowledge graph is not theoretical. It is the publishing substrate of the site. Vestiges is the strongest applied case because it needs to model living cultural knowledge without flattening people, materials and techniques into isolated cards. Related concepts Read the records for Knowledge Graph , Entity Identity , Provenance , Linked Data and Graph Runtime . Suggested reading Start with W3C RDF 1.1 Concepts, the CIDOC CRM overview and W3C PROV. Then compare those models with the Electronic Artefacts records for VASTE, Runtime Theory and Vestiges. Related articles Continue with Linked Data and Public Knowledge Pages and Contextual Execution and Graph Runtimes . Glossary Entity: a thing with identity in the graph. Predicate: the named relationship between two entities. Provenance: information about origin, authorship, activity and transformation. Canonical URL: the preferred public URL for a record. Identifier route: a stable machine-facing route for an entity. Limitations Knowledge graphs can become over-modeled. Not every noun deserves an entity. Not every association deserves a relation. Editorial discipline is required to prevent duplication, weak predicates and noise. The graph should also avoid false certainty. Cultural knowledge often contains uncertainty, contested interpretation and incomplete provenance. A good graph records confidence rather than hiding it. References W3C. RDF 1.1 Concepts and Abstract Syntax. 2014. CIDOC CRM Special Interest Group. The CIDOC Conceptual Reference Model. W3C. PROV-Overview. 2013. Electronic Artefacts. VASTE, Runtime Theory, Graph Runtime and Vestiges records.",
+    "tags": [
+      "Knowledge Graph",
+      "Cultural Infrastructure",
+      "Linked Data",
+      "Provenance",
+      "Vestiges"
+    ],
+    "questions": [],
+    "relationLabels": [
+      "documents Knowledge Graphs for Cultural Infrastructure documents the knowledge-graph concept for cultural publishing.",
+      "documents Knowledge Graphs for Cultural Infrastructure explains why stable entity identity matters for graph publishing.",
+      "documents Knowledge Graphs for Cultural Infrastructure frames provenance as a trust layer for cultural knowledge graphs.",
+      "documents Knowledge Graphs for Cultural Infrastructure uses Vestiges as the applied cultural infrastructure example.",
+      "usesTechnology Knowledge Graphs for Cultural Infrastructure uses RDF as the reference model for graph statements and resources.",
+      "hasPart Knowledge Hub Foundations includes Knowledge Graphs for Cultural Infrastructure as a foundation article."
+    ],
+    "relatedEntityIds": [
+      "ea:concept:knowledge-graph",
+      "ea:concept:entity-identity",
+      "ea:concept:provenance",
+      "ea:project:vestiges",
+      "ea:technology:rdf",
+      "ea:collection:knowledge-hub-foundations"
+    ],
+    "status": "active",
+    "confidence": "published",
+    "modifiedAt": "2026-06-23"
+  },
+  {
+    "id": "ea:publication:linked-data-and-public-knowledge-pages",
+    "route": "/publications/linked-data-and-public-knowledge-pages/",
+    "type": "publication",
+    "format": "technicalArticle",
+    "title": "Linked Data and Public Knowledge Pages",
+    "alternateNames": [],
+    "abstract": "This article explains how public knowledge pages can use stable URLs, JSON-LD, RDF-oriented identifiers and internal links to become useful to humans, search engines and AI systems.",
+    "headings": [
+      "Problem",
+      "Introduction",
+      "Context",
+      "History",
+      "Core concepts",
+      "Architecture",
+      "Implementation",
+      "Practical applications",
+      "Tools",
+      "Evidence",
+      "Editorial checklist",
+      "Common mistakes",
+      "Electronic Artefacts implications",
+      "Related concepts",
+      "Suggested reading",
+      "Related articles",
+      "Glossary",
+      "Limitations",
+      "References"
+    ],
+    "body": "Problem Many knowledge pages are well written but poorly addressable. A human can read them, yet a machine cannot easily tell what entity the page describes, which organization published it, which sources it cites, which concepts it relates to, or whether the page is the canonical version. The problem becomes worse when a site relies on browser-side rendering. A crawler, archive or link preview may receive a generic page shell instead of the actual entity. The page might look complete in a modern browser, but the initial HTML can still be weak: generic title, missing canonical URL, no structured data, no stable identifier and no content body. Linked Data offers a practical discipline for solving this. It asks a publisher to identify things, publish useful descriptions, and connect those things to other things. Public knowledge pages do not need to become complex semantic-web applications, but they should borrow the durable habits of Linked Data. Introduction A public knowledge page has two audiences. The first is human: readers need an explanation, context, examples, sources and related reading. The second is machine: search engines, AI retrieval systems, archives, link unfurlers and internal tools need stable metadata and identifiers. Good publishing serves both audiences from the same source. The human page should be complete, and the machine representation should describe the same entity. JSON-LD is useful because it lets a static site embed structured data in a format already familiar to web tooling. Context W3C’s Cool URIs note explains a key semantic-web distinction: the URL of a web document and the identity of the thing described by that document can be different. This matters for a knowledge platform. /knowledge/concepts/provenance/ is a readable page. /id/concept/provenance/ can be an identifier route for the concept itself. Both can point to the same conceptual record, but they serve different access modes. JSON-LD 1.1 defines a JSON-based serialization for Linked Data. For a static site, JSON-LD can be generated at build time from the same typed record used to render HTML. History The Web began as a document linking system. Hyperlinks made navigation easy, but they did not by themselves specify what kind of relation existed. Semantic Web work introduced a stronger model of resources, identifiers and statements. Linked Data then translated that model into web publishing practices. Structured data for search adopted some of the same principles in a pragmatic form. Schema.org does not require a publisher to expose a complete RDF dataset. It allows a page to identify itself as an Article, DefinedTerm, Organization, SoftwareApplication or CreativeWork, then provide properties such as author, publisher, datePublished, citation and about. Core concepts The first concept is canonical identity. A page should have one preferred public URL. Alternate routes and old paths can redirect or identify, but the canonical URL is the public citation target. The second concept is entity identity. The thing being described should have a stable ID independent of page layout. Electronic Artefacts uses IDs such as ea:concept:linked-data and identifier routes under /id/ . The third concept is structured data. JSON-LD records should expose name, description, date, publisher, main entity and subject relations. The fourth concept is visible correspondence. Structured data should not say things that the visible page does not support. Machines should receive a compressed version of the same editorial truth that humans see. Architecture The architecture for public knowledge pages should include: source records with typed frontmatter; generated HTML pages at canonical routes; generated identifier routes; generated JSON-LD files; generated sitemaps; generated search documents; typed internal relation statements; validation that rejects broken IDs and duplicate triples. This lets a single content record support human reading, search indexing, graph browsing, citation and archive export. Implementation In Electronic Artefacts, the implementation path is: Author a record in content/ . Validate its type and required fields. Render the body as HTML. Generate metadata from the record. Generate JSON-LD from the same entity. Write a canonical route and identifier route. Add the record to search documents and graph exports. Add relations that connect the record to other entities. This implementation is intentionally conservative. It avoids using JavaScript as the source of canonical metadata. Browser scripts can improve interaction, but the initial generated HTML should already be sufficient for indexing and citation. Practical applications A concept page such as Linked Data can expose a definition to readers, a JSON-LD defined term to machines, and relations to RDF, JSON-LD and knowledge graph pages. A publication such as this article can identify itself as an article, define its subjects, cite sources and link to related articles. A program page such as VASTE can expose software and research context while linking to Graph Runtime and Runtime Theory. Tools Useful tools include JSON-LD, Schema.org , sitemaps, canonical links, generated metadata, static validation, Markdown content records, relation YAML and search index generation. Evidence The Electronic Artefacts build generates pages, JSON-LD, search documents and graph neighborhoods from typed source records. This means the public site is no longer only a visual interface. It is a set of citable knowledge resources. Editorial checklist A public knowledge page should pass a simple editorial checklist before publication. First, the page should answer a durable question. A page about Linked Data should not only announce that a site uses JSON-LD. It should explain why stable identity matters, how the page relates to the entity it describes, and what a reader can do next. Second, the page should expose its identity. The title, canonical URL, entity ID, publication date and citation should all point toward the same record. If a reader copies the URL or a crawler extracts the JSON-LD, both should resolve to the same intellectual object. Third, the page should contain visible links that mirror the graph. If the structured data says that an article is about RDF and JSON-LD, the article should also link to those technology records in the human-readable body or relationship panels. Fourth, the page should name its sources. Structured data can identify the article, but sources explain why the article deserves trust. This is especially important for topics such as standards, cultural history and preservation. Fifth, the page should support continuation. Suggested reading and related articles turn a single landing page into a path through the wider library. Common mistakes The most common mistake is confusing SEO markup with knowledge architecture. A page can contain valid structured data and still be a weak knowledge object. Another mistake is creating too many shallow pages around synonyms. Linked Data, RDF, JSON-LD and knowledge graph are related, but they should not be collapsed into one page or duplicated across four nearly identical articles. A third mistake is treating JSON-LD as invisible decoration. If structured data is only appended for search engines and not reflected in the visible editorial model, it becomes fragile. The Knowledge Hub should make the same claims to humans and machines. Electronic Artefacts implications For Electronic Artefacts, Linked Data is a publishing discipline. It helps the site connect artistic work, software systems, research publications and archive records without forcing them into one visual template. It also gives future AI systems a better chance of retrieving the correct record rather than guessing from generic page text. This matters most as the corpus grows. A site with ten pages can rely on human memory. A site with one thousand knowledge records needs persistent identity, relation validation and generated indexes. Related concepts Read Linked Data , Entity Identity , RDF , JSON-LD and Knowledge Graph . Suggested reading Start with W3C Cool URIs, JSON-LD 1.1 and Schema.org Article. Then inspect the generated JSON-LD for an Electronic Artefacts publication page. Related articles Continue with Knowledge Graphs for Cultural Infrastructure and Contextual Execution and Graph Runtimes . Glossary Canonical URL: preferred public URL for a page. Identifier route: a route used to identify the entity described by a page. JSON-LD: JSON serialization for Linked Data. Structured data: machine-readable metadata embedded in or linked from a page. Limitations Linked Data does not guarantee authority. A misleading page can publish perfect JSON-LD. The strength comes from alignment: accurate content, stable identity, visible sources, structured metadata and honest confidence. Static generation also has tradeoffs. Real-time updates require a rebuild. For an editorial knowledge hub, that is usually acceptable because review and stability matter more than instant mutation. References W3C. Cool URIs for the Semantic Web. 2008. W3C. JSON-LD 1.1. 2020. Schema.org . Article. Electronic Artefacts. Route registry, JSON-LD generator and search documents.",
+    "tags": [
+      "Linked Data",
+      "JSON-LD",
+      "Structured Data",
+      "SEO",
+      "Knowledge Pages"
+    ],
+    "questions": [],
+    "relationLabels": [
+      "documents Linked Data and Public Knowledge Pages documents Linked Data as a publishing discipline for public knowledge pages.",
+      "documents Linked Data and Public Knowledge Pages explains the difference between page URLs and entity identifiers.",
+      "usesTechnology Linked Data and Public Knowledge Pages uses JSON-LD as the practical structured-data format for static knowledge pages.",
+      "usesTechnology Linked Data and Public Knowledge Pages uses RDF as the underlying graph-data reference for Linked Data.",
+      "hasPart Knowledge Hub Foundations includes Linked Data and Public Knowledge Pages as a foundation article."
+    ],
+    "relatedEntityIds": [
+      "ea:concept:linked-data",
+      "ea:concept:entity-identity",
+      "ea:technology:json-ld",
+      "ea:technology:rdf",
+      "ea:collection:knowledge-hub-foundations"
+    ],
+    "status": "active",
+    "confidence": "published",
+    "modifiedAt": "2026-06-23"
+  },
+  {
+    "id": "ea:publication:signal-archaeology-audio-memory-and-machine-listening",
+    "route": "/publications/signal-archaeology-audio-memory-and-machine-listening/",
+    "type": "publication",
+    "format": "technicalArticle",
+    "title": "Signal Archaeology, Audio Memory and Machine Listening",
+    "alternateNames": [],
+    "abstract": "This article explains signal archaeology as a way to read sonic and technical traces through audio analysis, provenance, memory and machine listening.",
+    "headings": [
+      "Problem",
+      "Introduction",
+      "Context",
+      "History",
+      "Core concepts",
+      "Architecture",
+      "Implementation",
+      "Practical applications",
+      "Tools",
+      "Evidence",
+      "Listening protocol",
+      "Common mistakes",
+      "Electronic Artefacts implications",
+      "Future work",
+      "Editorial standard",
+      "Publication pattern",
+      "Related concepts",
+      "Suggested reading",
+      "Related articles",
+      "Glossary",
+      "Limitations",
+      "References"
+    ],
+    "body": "Problem Digital audio carries more than audible content. It carries traces of rooms, microphones, conversion, compression, editing, noise reduction, saturation, resampling, plugins, clipping, export settings, file naming and archival decisions. Some traces are audible. Some are visible only through analysis. Some survive as metadata. Some are lost and must be inferred cautiously. The problem is that these traces are often ignored. Music platforms privilege final tracks. Production systems privilege project files. Archives privilege description. Machine-learning systems privilege features. Signal archaeology asks how those layers can be interpreted together without pretending that analysis alone proves history. Introduction Signal archaeology is the interpretation of technical, sonic, visual or archival traces as evidence of hidden processes, transformations and histories. In audio, it studies residue: noise floors, spectral fingerprints, repeated motifs, compression artifacts, edits, room tones and production marks. Machine listening can support this work by extracting features, detecting events and comparing patterns. But signal archaeology is not the same as automated classification. A model can detect similarity; it cannot by itself explain cultural significance. Context ORETH gives Electronic Artefacts a program for machine listening, audio analysis and experimental production. Palimpsests gives the work a cultural frame around memory, inheritance and transmission. Digital Preservation and Provenance provide the archival discipline needed to keep interpretations honest. The connection matters because audio is both material and memory. A sound can be a work, a sample, a signal, a trace of process and an archival object. History Listening has always included inference. Engineers hear rooms, microphones and distortion. Musicians hear references, performance habits and production eras. Archivists read carriers, labels, catalogues and provenance. Digital tools changed the scale and visibility of that inference. Spectrograms, waveform editors, metadata readers and machine-learning tools reveal patterns that are difficult to perceive directly. But they also create a risk: the visual or statistical representation can feel more certain than it is. Signal archaeology sits between listening, analysis and archive practice. It treats technical evidence as meaningful, but it requires provenance before making strong claims. Core concepts Signal: measurable or perceptible information carried by sound or media. Residue: a trace left by process, material or transformation. Noise floor: background energy that may reveal recording or processing conditions. Feature: a measurable property extracted from audio. Provenance: source and transformation context. Interpretation: a claim made from evidence, context and judgment. Architecture A signal archaeology workflow needs: audio objects with stable identity; preservation files and access copies; metadata and provenance records; analysis outputs; human listening notes; relation statements connecting audio to projects, concepts and publications; confidence levels for claims. The graph matters because interpretation is relational. An audio fragment may relate to a project, an artist, a production session, a concept, a source file, a publication and a preservation decision. Implementation Implementation can begin with simple practices. Preserve the original file when possible. Record source, date, project and rights. Generate access copies separately. Add notes about processing and uncertainty. Use analysis tools to inspect spectral or temporal features. Connect the artefact to concepts such as signal archaeology, digital preservation and provenance. Machine listening should be used as support. It can suggest events, clusters, similarities or anomalies. Those results should be published only with context and confidence. Practical applications For ORETH, signal archaeology can guide machine-listening prototypes and audio research notes. For Palimpsests, it can explain how memory and residue operate as sonic material. For a cultural archive, it can help preserve not only final media but also interpretive context. For music production, it can help creators understand how processing histories shape sound. Tools Useful tools include waveform editors, spectrograms, metadata readers, checksum tools, Python audio libraries, annotation systems, listening notes, file inventories and graph records. Evidence Electronic Artefacts already connects ORETH, Palimpsests, provenance and digital preservation as public graph entities. This article makes that relation explicit and gives future audio artefacts a conceptual home. Listening protocol A signal archaeology workflow should combine listening, documentation and analysis. Begin with ordinary listening. Note perceptual features before opening analysis tools: density, space, distortion, repetition, silence, noise, cuts, transitions and emotional pacing. Then inspect the object. Record file format, duration, channels, sample rate, bit depth, loudness, metadata and naming context. None of these details explain the work alone, but they can reveal production and preservation conditions. Next, use visual or computational analysis. A spectrogram may reveal energy bands, dropouts, edits or noise. Feature extraction may suggest similarity or segmentation. These outputs should be treated as evidence to interpret, not as final truth. Finally, connect the record. Link the audio object to its project, program, concepts, sources and preservation state. A trace becomes more useful when it enters the graph. Common mistakes The first mistake is forensic overconfidence. A spectral mark can suggest a process, but it rarely proves intention by itself. The second mistake is treating machine listening as neutral. Feature extraction depends on models, parameters and assumptions. A system trained for music information retrieval may not understand artistic noise, silence or intentional degradation. The third mistake is separating analysis from memory. In Palimpsests, residue is not only technical. It is part of the conceptual structure of the work. The archive should preserve that interpretive layer. Electronic Artefacts implications ORETH can become the methodological home for machine listening and audio research. Palimpsests can become the cultural home for memory, residue and transmission. Signal archaeology is the bridge: it lets the site discuss technical analysis without losing artistic context. This is also valuable for SEO and AI retrieval. Many audio articles online are either production tutorials or reviews. A sourced reference article about signal archaeology, machine listening and digital preservation can occupy a more durable research niche. Future work Future Knowledge Hub entries should cover spectrogram reading, audio feature extraction, metadata for audio archives, sampling as memory, compression artefacts, restoration ethics, room tone, noise floors and the preservation of project files. Editorial standard Claims about audio traces should be labeled carefully. Use observed when a trace is visible or audible. Use validated only when independent evidence supports the interpretation. Use speculative when the trace suggests a possibility but the source context is incomplete. Publication pattern A public signal archaeology entry should separate object description, technical observation and interpretation. Object description identifies the file, source, project, date, format and preservation state. Technical observation records what can be heard, measured or seen: edits, noise, spectral shapes, metadata, repeated fragments, level changes or compression marks. Interpretation explains what those traces might mean in relation to a work, archive, production process or cultural memory. This separation protects the reader. It lets a future researcher reuse the observations even if they disagree with the interpretation. It also makes the Knowledge Hub more useful for AI retrieval, because entities, claims and confidence levels are easier to extract when the article does not collapse evidence and meaning into one paragraph. For Electronic Artefacts, this pattern can be applied to ORETH notes, Palimpsests materials, audio experiments and future archives. Each signal record can become a small node in a larger graph of projects, programs, tools, traces and concepts. Related concepts Read Signal Archaeology , Provenance , Digital Preservation , ORETH and Palimpsests . Suggested reading Start with the PROV family of documents for provenance and the Digital Preservation Handbook for preservation practice. Then inspect audio analysis methods in the context of actual listening and archive records. Related articles Continue with Digital Preservation and Living Archives and Generative Systems, Cybernetics and Creative Coding . Glossary Machine listening: computational analysis of audio signals. Spectrogram: visual representation of frequency content over time. Residue: process trace that remains in a signal or record. Provenance: information about origin, custody and transformation. Limitations Signal archaeology can over-interpret. A compression artifact may indicate an export path, but it does not necessarily reveal intention. A repeated motif may suggest memory, but interpretation needs context. The strongest practice is layered: preserve files, document provenance, analyze signals, listen carefully and publish claims with confidence levels. References W3C. PROV-Overview. 2013. Digital Preservation Coalition. Digital Preservation Handbook, 2nd Edition. Electronic Artefacts. ORETH and Palimpsests records.",
+    "tags": [
+      "Signal Archaeology",
+      "Audio",
+      "Machine Listening",
+      "ORETH",
+      "Palimpsests"
+    ],
+    "questions": [],
+    "relationLabels": [
+      "documents Signal Archaeology, Audio Memory and Machine Listening documents signal archaeology as a concept.",
+      "documents Signal Archaeology, Audio Memory and Machine Listening explains why signal interpretation needs provenance.",
+      "documents Signal Archaeology, Audio Memory and Machine Listening connects audio traces to digital preservation practice.",
+      "documents Signal Archaeology, Audio Memory and Machine Listening uses ORETH as the machine-listening and audio research context.",
+      "documents Signal Archaeology, Audio Memory and Machine Listening links Palimpsests to audio memory and sonic residue.",
+      "hasPart Knowledge Hub Foundations includes Signal Archaeology, Audio Memory and Machine Listening as a foundation article."
+    ],
+    "relatedEntityIds": [
+      "ea:concept:signal-archaeology",
+      "ea:concept:provenance",
+      "ea:concept:digital-preservation",
+      "ea:program:oreth",
+      "ea:project:palimpsests",
+      "ea:collection:knowledge-hub-foundations"
+    ],
+    "status": "active",
+    "confidence": "published",
+    "modifiedAt": "2026-06-23"
+  },
+  {
     "id": "ea:researchField:runtime-theory",
     "route": "/research/fields/runtime-theory/",
     "type": "researchField",
@@ -231,16 +1099,82 @@
     ],
     "relationLabels": [
       "documents Foundational Lineage",
+      "defines Runtime Theory defines the research boundary for contextual execution inside Electronic Artefacts.",
+      "documents Contextual Execution and Graph Runtimes connects contextual execution to Runtime Theory.",
       "defines Runtime Theory supplies the research questions and boundaries used to define graph runtime within Electronic Artefacts.",
       "derivedFrom VASTE derives its runtime primitives and contextual execution questions from the Runtime Theory research field."
     ],
     "relatedEntityIds": [
       "ea:publication:foundational-lineage-001",
+      "ea:concept:contextual-execution",
+      "ea:publication:contextual-execution-and-graph-runtimes",
       "ea:concept:graph-runtime",
       "ea:program:vaste"
     ],
     "status": "active",
     "confidence": "validated",
     "modifiedAt": "2026-06-22"
+  },
+  {
+    "id": "ea:technology:json-ld",
+    "route": "/knowledge/technologies/json-ld/",
+    "type": "technology",
+    "title": "JSON-LD",
+    "alternateNames": [],
+    "abstract": "JSON-LD is a W3C format for serializing Linked Data in JSON, making semantic graph metadata compatible with common web programming workflows.",
+    "headings": [
+      "Role",
+      "Use",
+      "Limitations"
+    ],
+    "body": "Role JSON-LD serializes Linked Data as JSON. It is practical for static websites because build tools can generate it alongside HTML without requiring a graph database at runtime. Use Electronic Artefacts uses JSON-LD to expose each public entity as structured data. Publications become articles, concepts become defined terms, programs become software applications or creative works, and identifier routes expose machine-readable records. Limitations JSON-LD improves machine interpretation, but it cannot repair weak content. The structured data should match visible human content and remain consistent with canonical routes.",
+    "tags": [
+      "JSON-LD",
+      "Linked Data",
+      "Structured Data",
+      "SEO"
+    ],
+    "questions": [],
+    "relationLabels": [
+      "usesTechnology Linked Data and Public Knowledge Pages uses JSON-LD as the practical structured-data format for static knowledge pages."
+    ],
+    "relatedEntityIds": [
+      "ea:publication:linked-data-and-public-knowledge-pages"
+    ],
+    "status": "active",
+    "confidence": "published",
+    "modifiedAt": "2026-06-23"
+  },
+  {
+    "id": "ea:technology:rdf",
+    "route": "/knowledge/technologies/rdf/",
+    "type": "technology",
+    "title": "RDF",
+    "alternateNames": [],
+    "abstract": "RDF is a W3C graph data model for representing information as subject-predicate-object statements about resources.",
+    "headings": [
+      "Role",
+      "Use",
+      "Limitations"
+    ],
+    "body": "Role RDF is a reference model for representing information as graph statements. Electronic Artefacts uses RDF as a conceptual reference for entity identity and typed relationships, even when the internal source records are authored in Markdown and YAML. Use RDF helps clarify the difference between a thing, a page about that thing, and a statement connecting that thing to another thing. Limitations RDF interoperability requires precise identifiers, vocabularies and serialization choices. A site can learn from RDF without adopting a full RDF stack in its internal implementation.",
+    "tags": [
+      "RDF",
+      "Semantic Web",
+      "Linked Data",
+      "Graph"
+    ],
+    "questions": [],
+    "relationLabels": [
+      "usesTechnology Knowledge Graphs for Cultural Infrastructure uses RDF as the reference model for graph statements and resources.",
+      "usesTechnology Linked Data and Public Knowledge Pages uses RDF as the underlying graph-data reference for Linked Data."
+    ],
+    "relatedEntityIds": [
+      "ea:publication:knowledge-graphs-for-cultural-infrastructure",
+      "ea:publication:linked-data-and-public-knowledge-pages"
+    ],
+    "status": "active",
+    "confidence": "published",
+    "modifiedAt": "2026-06-23"
   }
 ]
