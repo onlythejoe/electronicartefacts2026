@@ -1,7 +1,7 @@
 User-agent: *
 Allow: /
 
-# Search results are intentionally kept out of the index.
+# Legacy search route is intentionally kept out of crawled index paths.
 Disallow: /search.html
 
 Sitemap: https://electronicartefacts.com/sitemap.xml

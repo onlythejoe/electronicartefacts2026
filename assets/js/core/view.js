@@ -372,6 +372,280 @@
     document.addEventListener("visibilitychange", syncVisibility);
   };
 
+  const computationFieldMarkup = (variant = "hero") => `
+    <figure class="program-commercial-hero__media computation-field computation-field--${esc(variant)}" data-computation-field data-computation-variant="${esc(variant)}">
+      <canvas class="computation-field__canvas" aria-hidden="true"></canvas>
+      <div class="computation-field__hud" aria-hidden="true">
+        <span>EA.RUNTIME / SIGNAL BUS</span>
+        <span data-computation-rate>128.4 GB/s</span>
+      </div>
+      <div class="computation-field__events" data-computation-events aria-hidden="true"></div>
+      <figcaption>
+        <span>Live computation field</span>
+        <strong>Information propagates through context, identity and execution layers.</strong>
+      </figcaption>
+    </figure>
+  `;
+
+  const startComputationFieldAnimation = () => {
+    const roots = [...document.querySelectorAll("[data-computation-field]")];
+    if (!roots.length) return;
+
+    const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    const eventLabels = [
+      "packet routed",
+      "graph resolved",
+      "context synced",
+      "state committed",
+      "signal indexed",
+      "identity verified",
+    ];
+    const glyphs = ["0", "1", "A", "B", "C", "D", "E", "F", "/", "=", "∴", "◇"];
+
+    roots.forEach((root, rootIndex) => {
+      if (root.dataset.computationAnimated === "true") return;
+      root.dataset.computationAnimated = "true";
+
+      const canvas = root.querySelector(".computation-field__canvas");
+      const ctx = canvas?.getContext("2d");
+      const eventsRoot = root.querySelector("[data-computation-events]");
+      const rate = root.querySelector("[data-computation-rate]");
+      if (!canvas || !ctx) return;
+
+      let width = 1;
+      let height = 1;
+      let dpr = 1;
+      let visible = false;
+      let rafId = 0;
+      let lastFrame = 0;
+      let elapsed = rootIndex * 1.7;
+      let eventTimer = 0;
+      let automaticWaveTimer = 0;
+      let pointerActive = false;
+      let pointerX = -1000;
+      let pointerY = -1000;
+      const waves = [];
+      const particles = Array.from({ length: root.dataset.computationVariant === "detail" ? 72 : 104 }, (_, index) => ({
+        offset: (index * 0.61803398875) % 1,
+        lane: index % 2,
+        phase: (index * 1.91) % (Math.PI * 2),
+        speed: 0.035 + (index % 7) * 0.006,
+        glyph: glyphs[index % glyphs.length],
+        alpha: 0.22 + (index % 5) * 0.1,
+      }));
+
+      const syncSize = () => {
+        const rect = root.getBoundingClientRect();
+        width = Math.max(1, rect.width);
+        height = Math.max(1, rect.height);
+        dpr = Math.min(window.devicePixelRatio || 1, 1.6);
+        canvas.width = Math.max(1, Math.round(width * dpr));
+        canvas.height = Math.max(1, Math.round(height * dpr));
+        canvas.style.width = `${width}px`;
+        canvas.style.height = `${height}px`;
+        ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+      };
+
+      const localPoint = (event) => {
+        const rect = root.getBoundingClientRect();
+        return {
+          x: event.clientX - rect.left,
+          y: event.clientY - rect.top,
+        };
+      };
+
+      const addWave = (x, y, strength = 1) => {
+        waves.push({ x, y, age: 0, strength });
+        if (waves.length > 5) waves.shift();
+      };
+
+      const spawnEvent = () => {
+        if (!eventsRoot || reduceMotion || !visible) return;
+        const node = document.createElement("span");
+        const marker = document.createElement("i");
+        const label = document.createElement("b");
+        const labelIndex = Math.floor((elapsed * 2.7 + rootIndex) % eventLabels.length);
+        const x = 16 + ((elapsed * 31 + rootIndex * 19) % 66);
+        const y = 29 + Math.sin(elapsed * 1.3 + rootIndex) * 22;
+        marker.setAttribute("aria-hidden", "true");
+        label.textContent = eventLabels[labelIndex];
+        node.className = "computation-field__event";
+        node.style.left = `${x}%`;
+        node.style.top = `${y}%`;
+        node.append(marker, label);
+        eventsRoot.append(node);
+        window.setTimeout(() => node.remove(), 2600);
+      };
+
+      const draw = (timestamp = 0) => {
+        if (!visible || document.hidden || !document.body.contains(root)) {
+          rafId = 0;
+          return;
+        }
+
+        if (!reduceMotion && timestamp - lastFrame < 1000 / 36) {
+          rafId = requestAnimationFrame(draw);
+          return;
+        }
+
+        const delta = lastFrame ? Math.min(0.05, (timestamp - lastFrame) / 1000) : 0.016;
+        lastFrame = timestamp;
+        if (!reduceMotion) elapsed += delta;
+        eventTimer += delta;
+        automaticWaveTimer += delta;
+        waves.forEach((wave) => {
+          wave.age += delta;
+        });
+        while (waves.length && waves[0].age > 2.4) waves.shift();
+
+        ctx.clearRect(0, 0, width, height);
+
+        const midY = height * 0.48;
+        const amplitude = Math.min(height * 0.19, 66);
+        const phase = elapsed * 1.18;
+        const pointFor = (x, lane) => {
+          const strandPhase = phase + x * 0.018 + (lane ? Math.PI : 0);
+          let y = midY + Math.sin(strandPhase) * amplitude + Math.cos(strandPhase * 0.47) * 9;
+          if (pointerActive) {
+            const distance = Math.hypot(x - pointerX, y - pointerY);
+            const influence = Math.max(0, 1 - distance / 190);
+            y += (lane ? -1 : 1) * influence * 26;
+          }
+          waves.forEach((wave) => {
+            const distance = Math.hypot(x - wave.x, y - wave.y);
+            const radius = wave.age * 180;
+            const ring = Math.max(0, 1 - Math.abs(distance - radius) / 70);
+            y += Math.sin(distance * 0.035 - wave.age * 8) * ring * 18 * wave.strength * (1 - wave.age / 2.4);
+          });
+          return y;
+        };
+
+        const fadeAt = (x) => Math.max(0, 1 - Math.abs(x - width * 0.5) / (width * 0.58));
+        ctx.lineCap = "round";
+
+        for (let x = 8; x < width; x += 30) {
+          const yA = pointFor(x, 0);
+          const yB = pointFor(x, 1);
+          const depth = (Math.sin(phase + x * 0.018) + 1) * 0.5;
+          ctx.strokeStyle = `rgba(132, 196, 255, ${0.06 + depth * 0.1})`;
+          ctx.lineWidth = 0.6 + depth * 0.75;
+          ctx.beginPath();
+          ctx.moveTo(x, yA);
+          ctx.lineTo(x, yB);
+          ctx.stroke();
+        }
+
+        [0, 1].forEach((lane) => {
+          ctx.beginPath();
+          for (let x = 0; x <= width; x += 5) {
+            const y = pointFor(x, lane);
+            if (x === 0) ctx.moveTo(x, y);
+            else ctx.lineTo(x, y);
+          }
+          const gradient = ctx.createLinearGradient(0, 0, width, 0);
+          gradient.addColorStop(0, "rgba(91, 145, 255, 0)");
+          gradient.addColorStop(0.28, lane ? "rgba(140, 183, 255, 0.36)" : "rgba(220, 238, 255, 0.5)");
+          gradient.addColorStop(0.72, lane ? "rgba(220, 238, 255, 0.46)" : "rgba(112, 173, 255, 0.34)");
+          gradient.addColorStop(1, "rgba(91, 145, 255, 0)");
+          ctx.strokeStyle = gradient;
+          ctx.lineWidth = lane ? 1 : 1.25;
+          ctx.stroke();
+        });
+
+        particles.forEach((particle, index) => {
+          const normalizedX = (particle.offset + elapsed * particle.speed) % 1;
+          const x = normalizedX * width;
+          const y = pointFor(x, particle.lane) + Math.sin(particle.phase + elapsed * 2.1) * (7 + (index % 4) * 2);
+          const depth = (Math.sin(phase + x * 0.018 + (particle.lane ? Math.PI : 0)) + 1) * 0.5;
+          const size = 7.5 + depth * 5.5;
+          ctx.font = `${depth > 0.62 ? 650 : 420} ${size}px ui-monospace, SFMono-Regular, Menlo, Consolas, monospace`;
+          ctx.fillStyle = `rgba(${185 + Math.round(depth * 55)}, ${207 + Math.round(depth * 36)}, 255, ${particle.alpha * fadeAt(x)})`;
+          ctx.fillText(particle.glyph, x, y);
+        });
+
+        waves.forEach((wave) => {
+          const opacity = Math.max(0, 0.28 * (1 - wave.age / 2.4));
+          ctx.strokeStyle = `rgba(126, 184, 255, ${opacity})`;
+          ctx.lineWidth = 1;
+          ctx.beginPath();
+          ctx.arc(wave.x, wave.y, wave.age * 180, 0, Math.PI * 2);
+          ctx.stroke();
+        });
+
+        if (rate) {
+          const throughput = 118 + (Math.sin(elapsed * 0.82) + 1) * 9.4;
+          rate.textContent = `${throughput.toFixed(1)} GB/s`;
+        }
+
+        if (!reduceMotion && eventTimer > 2.75 + rootIndex * 0.4) {
+          eventTimer = 0;
+          spawnEvent();
+        }
+        if (!reduceMotion && automaticWaveTimer > 4.8) {
+          automaticWaveTimer = 0;
+          addWave(width * (0.3 + ((elapsed * 0.17) % 0.4)), midY, 0.58);
+        }
+
+        if (!reduceMotion) rafId = requestAnimationFrame(draw);
+        else rafId = 0;
+      };
+
+      root.addEventListener("pointermove", (event) => {
+        const point = localPoint(event);
+        pointerActive = true;
+        pointerX = point.x;
+        pointerY = point.y;
+      });
+      root.addEventListener("pointerleave", () => {
+        pointerActive = false;
+      });
+      root.addEventListener("pointerdown", (event) => {
+        const point = localPoint(event);
+        addWave(point.x, point.y, 1.15);
+        spawnEvent();
+      });
+
+      const observer = "IntersectionObserver" in window
+        ? new IntersectionObserver(
+            (entries) => {
+              const entry = entries.find((item) => item.target === root);
+              if (!entry) return;
+              visible = entry.isIntersecting || entry.intersectionRatio > 0;
+              if (visible && !rafId && !document.hidden) {
+                lastFrame = 0;
+                rafId = requestAnimationFrame(draw);
+              } else if (!visible && rafId) {
+                cancelAnimationFrame(rafId);
+                rafId = 0;
+              }
+            },
+            { rootMargin: "18% 0px", threshold: 0.04 },
+          )
+        : null;
+
+      const resizeObserver = "ResizeObserver" in window ? new ResizeObserver(syncSize) : null;
+      syncSize();
+      resizeObserver?.observe(root);
+      window.addEventListener("resize", syncSize, { passive: true });
+
+      if (observer) observer.observe(root);
+      else {
+        visible = true;
+        rafId = requestAnimationFrame(draw);
+      }
+
+      document.addEventListener("visibilitychange", () => {
+        if (document.hidden && rafId) {
+          cancelAnimationFrame(rafId);
+          rafId = 0;
+        } else if (!document.hidden && visible && !rafId) {
+          lastFrame = 0;
+          rafId = requestAnimationFrame(draw);
+        }
+      });
+    });
+  };
+
   const cardImageFor = (item) => {
     const cacheKey = item?.id || "";
     if (cacheKey && cardImageCache.has(cacheKey)) return cardImageCache.get(cacheKey);
@@ -1093,6 +1367,8 @@
     projectButterflyBubble,
     vasteEngineMarkup,
     startVasteEngineAnimation,
+    computationFieldMarkup,
+    startComputationFieldAnimation,
     cardImageFor,
     signalStrip,
     cardCopy,

@@ -1,6 +1,7 @@
 import type { Entity, PublicationEntity, ResearchFieldEntity } from "../schema/entities.js";
 import type { RelationStatement } from "../schema/relation.js";
 import type { RouteRecord } from "../build/build-routes.js";
+import { isPublicEntity, publicEntityIds, publicRelationsForEntity } from "../semantic/visibility.js";
 
 export interface SearchDocument {
   id: Entity["id"];
@@ -31,10 +32,11 @@ export const buildSearchDocuments = (
   routes: RouteRecord[],
 ): SearchDocument[] => {
   const routeById = Object.fromEntries(routes.map((route) => [route.id, route.route]));
+  const publicIds = publicEntityIds(entities);
   return entities
-    .filter((entity) => entity.visibility === "public" && entity.publicationClass !== "internal")
+    .filter(isPublicEntity)
     .map((entity) => {
-      const connected = relations.filter((relation) => relation.subject === entity.id || relation.object === entity.id);
+      const connected = publicRelationsForEntity(entity, relations, publicIds);
       return {
         id: entity.id,
         route: routeById[entity.id],

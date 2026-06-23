@@ -177,6 +177,53 @@
 
   };
 
+  const initCapabilityMaps = (root = document) => {
+    root.querySelectorAll("[data-capability-map]").forEach((map) => {
+      if (map.dataset.boundCapabilityMap === "true") return;
+      map.dataset.boundCapabilityMap = "true";
+
+      const nodes = [...map.querySelectorAll("[data-capability-node]")];
+      const kicker = map.querySelector("[data-capability-reader-kicker]");
+      const title = map.querySelector("[data-capability-reader-title]");
+      const copy = map.querySelector("[data-capability-reader-copy]");
+      const tools = map.querySelector("[data-capability-reader-tools]");
+      const outputs = map.querySelector("[data-capability-reader-outputs]");
+      if (!nodes.length || !kicker || !title || !copy || !tools || !outputs) return;
+
+      const renderTokens = (target, value) => {
+        target.replaceChildren(
+          ...String(value || "")
+            .split("|")
+            .filter(Boolean)
+            .map((label) => {
+              const token = document.createElement("span");
+              token.textContent = label;
+              return token;
+            }),
+        );
+      };
+
+      const activate = (node) => {
+        nodes.forEach((candidate) => {
+          const isActive = candidate === node;
+          candidate.classList.toggle("is-active", isActive);
+          candidate.setAttribute("aria-pressed", isActive ? "true" : "false");
+        });
+        kicker.textContent = node.dataset.capabilityKicker || "";
+        title.textContent = node.dataset.capabilityTitle || "";
+        copy.textContent = node.dataset.capabilityCopy || "";
+        renderTokens(tools, node.dataset.capabilityTools);
+        renderTokens(outputs, node.dataset.capabilityOutputs);
+      };
+
+      nodes.forEach((node) => {
+        node.addEventListener("pointerenter", () => activate(node));
+        node.addEventListener("focus", () => activate(node));
+        node.addEventListener("click", () => activate(node));
+      });
+    });
+  };
+
   const initAmbientField = () => {
     if (document.querySelector("[data-ambient-field]")) return;
     const root = document.createElement("div");
@@ -1704,6 +1751,7 @@
     initSearch,
     initCardLinks,
     initContactDiscovery,
+    initCapabilityMaps,
     initUXEnhancements,
     refreshCardSurfaces,
     syncNavigationState,

@@ -10,6 +10,16 @@ const entityId = z.string().regex(/^ea:(concept|method|framework|technology|rese
 const agentId = z.string().regex(/^ea:(artist|organization):[a-z0-9][a-z0-9-]*$/);
 const ref = z.object({ id: entityId, label: z.string().optional() });
 const agentRef = z.object({ id: agentId, label: z.string().optional(), role: z.string().optional() });
+const mediaSrc = z.string().min(1).refine((value) => {
+  if (/[\s"'<>]/.test(value)) return false;
+  if (value.startsWith("/")) return !value.startsWith("//") && !value.includes("/../");
+  if (value.startsWith("./")) return !value.includes("/../");
+  try {
+    return new URL(value).protocol === "https:";
+  } catch {
+    return false;
+  }
+}, "Media src must be a safe local path or HTTPS URL");
 const sourceRef = z.object({
   id: z.string().optional(),
   title: z.string().min(1),
@@ -57,7 +67,7 @@ const baseShape = {
   media: z.array(z.object({
     id: z.string(),
     type: z.enum(["image", "audio", "video", "document"]),
-    src: z.string(),
+    src: mediaSrc,
     alt: z.string().optional(),
     caption: z.string().optional(),
     credit: z.string().optional(),

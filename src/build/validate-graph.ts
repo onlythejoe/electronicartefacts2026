@@ -2,6 +2,7 @@ import { predicateDefinitions } from "../schema/predicates.js";
 import type { Entity } from "../schema/entities.js";
 import type { EntityId } from "../schema/entity.js";
 import type { RelationStatement } from "../schema/relation.js";
+import { isPublicEntity } from "../semantic/visibility.js";
 
 const collectEntityRefs = (entity: Entity): EntityId[] => {
   const refs: EntityId[] = [entity.publisher, ...entity.authors.map((item) => item.id)];
@@ -53,8 +54,8 @@ export const validateGraph = (entities: Entity[], relations: RelationStatement[]
     }
     if (relation.subject === relation.object && !definition.symmetric) throw new Error(`${relation.id} is an invalid self-loop`);
     if (definition.requiresSource && !relation.sources?.length) throw new Error(`${relation.id} requires a source`);
-    if (relation.visibility === "public" && [subject, object].some((item) => item.visibility === "internal" || item.visibility === "restricted")) {
-      throw new Error(`${relation.id} leaks a private entity`);
+    if (relation.visibility === "public" && [subject, object].some((item) => !isPublicEntity(item))) {
+      throw new Error(`${relation.id} leaks a non-public entity`);
     }
     const triple = `${relation.subject}|${relation.predicate}|${relation.object}`;
     if (triples.has(triple)) throw new Error(`Duplicate relation triple ${triple}`);

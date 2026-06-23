@@ -9,6 +9,9 @@ export const buildCatalog = (entities: Entity[], relations: RelationStatement[],
   const routeById = Object.fromEntries(routes.map((route) => [route.id, route.route]));
   const publicEntities = entities.filter(isPublicEntity);
   const publicIds = new Set(publicEntities.map((entity) => entity.id));
+  const publicRoutes = Object.fromEntries(
+    routes.filter((route) => publicIds.has(route.id)).map((route) => [route.id, route.route]),
+  );
   return {
     schemaVersion: "1.0.0",
     entities: publicEntities.map((entity) => ({
@@ -39,6 +42,6 @@ export const buildCatalog = (entities: Entity[], relations: RelationStatement[],
     })),
     relations: relations.filter((relation) =>
       relation.visibility === "public" && publicIds.has(relation.subject) && publicIds.has(relation.object)),
-    routes: routeById,
+    routes: publicRoutes,
   };
 };

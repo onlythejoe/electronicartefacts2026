@@ -5,7 +5,7 @@
   const { esc, setYear, slugify } = window.EA_UTILS;
   const { loadIncludes } = window.EA_INCLUDES;
   const { statusBadge, chip, tagRow, metadataList, linkRow, metricRail, cardLinkAttrs, cardOverlayLink } = window.EA_UI;
-  const { initFilters, initSearch, initCardLinks, initContactDiscovery, initUXEnhancements, refreshCardSurfaces, syncNavigationState, syncSeoMeta } = window.EA_BEHAVIORS;
+  const { initFilters, initSearch, initCardLinks, initContactDiscovery, initCapabilityMaps, initUXEnhancements, refreshCardSurfaces, syncNavigationState, syncSeoMeta } = window.EA_BEHAVIORS;
   const {
     cardBaseAttrs,
     mediaFrom,
@@ -15,6 +15,8 @@
     projectButterflyBubble,
     vasteEngineMarkup,
     startVasteEngineAnimation,
+    computationFieldMarkup,
+    startComputationFieldAnimation,
     cardImageFor,
     signalStrip,
     cardCopy,
@@ -2939,6 +2941,259 @@
       ],
     })}${ecosystemExplorer()}`;
 
+  const renderWorkCapabilities = () => {
+    const capabilities = [
+      {
+        mark: "STR",
+        kicker: "Direction",
+        title: "Strategy and product framing",
+        copy: "We turn an open ambition into a position, an audience, a product shape and a sequence of decisions that can actually be built.",
+        tools: ["Research", "Workshops", "Notion", "Figma"],
+        outputs: ["Positioning", "Brief", "Roadmap"],
+        x: 13,
+        y: 22,
+        size: "7.1rem",
+        rgb: "234, 220, 207",
+      },
+      {
+        mark: "ID",
+        kicker: "Identity",
+        title: "Brand systems and art direction",
+        copy: "Identity is designed as a usable system: marks, typography, image direction, motion principles and rules that survive beyond a launch.",
+        tools: ["Illustrator", "Photoshop", "InDesign", "Figma"],
+        outputs: ["Identity", "Art direction", "Brand kit"],
+        x: 34,
+        y: 14,
+        size: "7.8rem",
+        rgb: "244, 114, 182",
+      },
+      {
+        mark: "ED",
+        kicker: "Narrative",
+        title: "Editorial and content architecture",
+        copy: "We organise messages, stories and knowledge so that a complex subject becomes clear without being flattened into generic marketing language.",
+        tools: ["Content models", "Taxonomy", "Writing", "CMS"],
+        outputs: ["Narrative", "Information model", "Editorial system"],
+        x: 66,
+        y: 14,
+        size: "7.5rem",
+        rgb: "251, 191, 36",
+      },
+      {
+        mark: "MO",
+        kicker: "Movement",
+        title: "Motion and moving image",
+        copy: "Motion gives a system rhythm and continuity, from interface behaviour and title sequences to campaign films and spatial visual language.",
+        tools: ["After Effects", "Premiere Pro", "Cinema 4D", "Blender"],
+        outputs: ["Motion system", "Film", "Animation"],
+        x: 87,
+        y: 23,
+        size: "7.2rem",
+        rgb: "248, 113, 113",
+      },
+      {
+        mark: "PRD",
+        kicker: "Product",
+        title: "Digital product design",
+        copy: "We connect user needs, business rules and content structures into products that remain understandable as their scope grows.",
+        tools: ["Discovery", "User flows", "Figma", "Prototyping"],
+        outputs: ["Product model", "Prototype", "Design system"],
+        x: 12,
+        y: 53,
+        size: "7.7rem",
+        rgb: "45, 212, 191",
+      },
+      {
+        mark: "UX",
+        kicker: "Experience",
+        title: "UX, UI and interaction",
+        copy: "Interfaces are shaped around real tasks, responsive constraints and a visual hierarchy that makes the next action feel obvious.",
+        tools: ["Figma", "Accessibility", "Prototypes", "Testing"],
+        outputs: ["User flows", "Interface", "Interaction model"],
+        x: 31,
+        y: 43,
+        size: "6.8rem",
+        rgb: "56, 189, 248",
+      },
+      {
+        mark: "WEB",
+        kicker: "Engineering",
+        title: "Web development and delivery",
+        copy: "We implement the public surface, not only the mock-up: responsive front ends, content systems, APIs, deployment and measurable performance.",
+        tools: ["JavaScript", "TypeScript", "PHP", "WordPress"],
+        outputs: ["Front end", "CMS", "Production site"],
+        x: 69,
+        y: 43,
+        size: "7.4rem",
+        rgb: "96, 165, 250",
+      },
+      {
+        mark: "SYS",
+        kicker: "Systems",
+        title: "Platforms and technical architecture",
+        copy: "For work that exceeds a website, we design data models, workflows, services and maintainable architectures that connect multiple surfaces.",
+        tools: ["Node.js", "Python", "Rust", "GitHub"],
+        outputs: ["Architecture", "Platform", "Workflow"],
+        x: 88,
+        y: 54,
+        size: "7.9rem",
+        rgb: "74, 222, 128",
+      },
+      {
+        mark: "3D",
+        kicker: "Spatial",
+        title: "3D and digital environments",
+        copy: "Objects, spaces and simulations extend an identity into scenes that can be rendered, animated or integrated into interactive experiences.",
+        tools: ["Blender", "Cinema 4D", "Rendering", "Simulation"],
+        outputs: ["3D assets", "Environment", "Visualisation"],
+        x: 15,
+        y: 83,
+        size: "7.4rem",
+        rgb: "251, 146, 60",
+      },
+      {
+        mark: "IMG",
+        kicker: "Image",
+        title: "Photography and image making",
+        copy: "Original image production, selection and treatment create a recognisable visual world instead of relying on interchangeable stock imagery.",
+        tools: ["Photography", "Lightroom", "Photoshop", "Retouching"],
+        outputs: ["Art buying", "Photo direction", "Image library"],
+        x: 37,
+        y: 86,
+        size: "7.2rem",
+        rgb: "232, 121, 249",
+      },
+      {
+        mark: "SND",
+        kicker: "Sound",
+        title: "Music and sound design",
+        copy: "Sound is treated as part of the identity and experience, from composition and sonic texture to editing, mixing and performance systems.",
+        tools: ["Logic Pro", "Ableton Live", "Recording", "Mixing"],
+        outputs: ["Composition", "Sound identity", "Audio production"],
+        x: 63,
+        y: 86,
+        size: "7.1rem",
+        rgb: "167, 139, 250",
+      },
+      {
+        mark: "AI",
+        kicker: "Augmentation",
+        title: "AI, automation and creative R&D",
+        copy: "We prototype new production methods, assistants and automated workflows when they create leverage without obscuring authorship or control.",
+        tools: ["OpenAI", "Python", "APIs", "Custom tooling"],
+        outputs: ["Prototype", "Automation", "R&D system"],
+        x: 86,
+        y: 82,
+        size: "7.8rem",
+        rgb: "34, 211, 238",
+      },
+    ];
+
+    const connectionMarkup = capabilities
+      .map(
+        (capability) =>
+          `<line x1="500" y1="330" x2="${capability.x * 10}" y2="${capability.y * 6.6}" />`,
+      )
+      .join("");
+    const active = capabilities[0];
+    const capabilityButtons = capabilities
+      .map(
+        (capability, index) => `
+          <button
+            class="capability-node${index === 0 ? " is-active" : ""}"
+            type="button"
+            style="--cap-x:${capability.x}%;--cap-y:${capability.y}%;--cap-size:${capability.size};--cap-rgb:${capability.rgb}"
+            data-capability-node
+            data-capability-kicker="${esc(capability.kicker)}"
+            data-capability-title="${esc(capability.title)}"
+            data-capability-copy="${esc(capability.copy)}"
+            data-capability-tools="${esc(capability.tools.join("|"))}"
+            data-capability-outputs="${esc(capability.outputs.join("|"))}"
+            aria-pressed="${index === 0 ? "true" : "false"}"
+          >
+            <span class="capability-node__mark" aria-hidden="true">${esc(capability.mark)}</span>
+            <strong>${esc(capability.title)}</strong>
+          </button>
+        `,
+      )
+      .join("");
+
+    return `
+      <section class="zone-card hero work-capabilities" id="capabilities">
+        <div class="work-capabilities__intro">
+          <div class="section-head">
+            <p class="eyebrow">CREATIVE CAPABILITIES</p>
+            <h2>One connected practice, from first question to final surface.</h2>
+          </div>
+          <p class="lede">Electronic Artefacts brings direction, design, technology and cultural production into the same working system. The point is not to apply every discipline to every brief, but to assemble the right combination without losing coherence between the idea and its execution.</p>
+        </div>
+
+        <div class="capability-experience" data-capability-map>
+          <aside class="capability-reader" aria-live="polite" aria-atomic="true">
+            <div class="capability-reader__index">
+              <span data-capability-reader-kicker>${esc(active.kicker)}</span>
+              <span>EA / capability map</span>
+            </div>
+            <div class="capability-reader__copy">
+              <h3 data-capability-reader-title>${esc(active.title)}</h3>
+              <p data-capability-reader-copy>${esc(active.copy)}</p>
+            </div>
+            <div class="capability-reader__group">
+              <span>Typical tools</span>
+              <div class="capability-reader__tokens" data-capability-reader-tools>
+                ${active.tools.map((tool) => `<span>${esc(tool)}</span>`).join("")}
+              </div>
+            </div>
+            <div class="capability-reader__group">
+              <span>What it produces</span>
+              <div class="capability-reader__tokens capability-reader__tokens--strong" data-capability-reader-outputs>
+                ${active.outputs.map((output) => `<span>${esc(output)}</span>`).join("")}
+              </div>
+            </div>
+            <p class="capability-reader__prompt">Explore the map with pointer, touch or keyboard.</p>
+          </aside>
+
+          <div class="capability-map" aria-label="Interactive map of Electronic Artefacts capabilities">
+            <svg class="capability-map__connections" viewBox="0 0 1000 660" preserveAspectRatio="none" aria-hidden="true">
+              <g>${connectionMarkup}</g>
+              <circle cx="500" cy="330" r="118" />
+            </svg>
+            <div class="capability-map__core" aria-hidden="true">
+              <span>Electronic</span>
+              <strong>Artefacts</strong>
+              <small>Direction · Design<br />Technology · Culture</small>
+            </div>
+            ${capabilityButtons}
+          </div>
+        </div>
+
+        <div class="capability-outcomes" aria-label="What the combined practice can produce">
+          ${[
+            ["Brands and campaigns", "Identity, editorial direction, original imagery, motion and launch surfaces."],
+            ["Products and platforms", "Research, product framing, UX, interface, engineering and operational workflows."],
+            ["Worlds and experiences", "Narrative, sound, moving image, 3D environments and interactive systems."],
+            ["Knowledge and automation", "Taxonomies, archives, publishing tools, AI workflows and custom technical infrastructure."],
+          ]
+            .map(
+              ([title, copy], index) => `
+                <article>
+                  <span>0${index + 1}</span>
+                  <h3>${esc(title)}</h3>
+                  <p>${esc(copy)}</p>
+                </article>
+              `,
+            )
+            .join("")}
+        </div>
+
+        <div class="work-capabilities__closing">
+          <p>Capabilities are combined around the problem, then carried through to a live, documented or reproducible result.</p>
+          <a class="button button--secondary" href="./contact.html">Shape a capability mix</a>
+        </div>
+      </section>
+    `;
+  };
+
   const renderWorkOffer = () => `
     <section class="zone-card hero work-offer">
       <div class="section-head">
@@ -3364,10 +3619,7 @@
               { limit: 4, compact: true },
             )}
           </div>
-          <figure class="program-commercial-hero__media">
-            <img src="./assets/media/projects/electronic-artefacts/electronic-artefacts-search.jpg" alt="Electronic Artefacts brand mark" loading="eager" />
-            <figcaption><span>Program registry</span><strong>Private code, pilots and product foundations.</strong></figcaption>
-          </figure>
+          ${computationFieldMarkup("hero")}
         </div>
       </section>
       <section class="zone-card hero">
@@ -3909,6 +4161,7 @@
       "cross-navigation": renderCrossNavigation,
     },
     work: {
+      "work-capabilities": renderWorkCapabilities,
       "work-offer": renderWorkOffer,
       "work-taxonomy": workTaxonomy,
       "work-catalog": catalogSectionWork,
@@ -3987,8 +4240,10 @@
     initSearch(searchState, renderSearchResults);
     initCardLinks();
     initContactDiscovery();
+    initCapabilityMaps();
     initUXEnhancements(filterState);
     startVasteEngineAnimation();
+    startComputationFieldAnimation();
     startGraphSurfaceAnimation();
   };
 

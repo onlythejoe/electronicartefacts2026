@@ -27,6 +27,8 @@ const routes = buildRoutes(entities);
 const routeById = Object.fromEntries(routes.map((route) => [route.id, route.route]));
 const byId = new Map(entities.map((entity) => [entity.id, entity]));
 const publicEntities = entities.filter(isPublicEntity);
+const publicIds = new Set(publicEntities.map((entity) => entity.id));
+const publicRoutes = routes.filter((route) => publicIds.has(route.id));
 
 const rootifyPartials = (html: string): string =>
   html
@@ -176,24 +178,24 @@ await writeText(routeToFile(rootDir, "/search/"), renderLayout({
 }));
 
 const graphViews = buildGraphViews(publicEntities, relations, routes);
-await writeJson(path.join(rootDir, "graph/entities.json"), buildCatalog(entities, relations, routes).entities);
-await writeJson(path.join(rootDir, "graph/relations.json"), relations.filter((relation) => relation.visibility === "public"));
+const catalog = buildCatalog(entities, relations, routes);
+await writeJson(path.join(rootDir, "graph/entities.json"), catalog.entities);
+await writeJson(path.join(rootDir, "graph/relations.json"), catalog.relations);
 for (const view of graphViews) {
   const entity = byId.get(view.focus)!;
   const type = entity.type === "researchField" ? "research-field" : entity.type;
   await writeJson(path.join(rootDir, `graph/neighborhoods/${type}/${entity.slug.canonical}.json`), view);
 }
 
-const catalog = buildCatalog(entities, relations, routes);
 await writeJson(path.join(rootDir, "generated/public/catalog.json"), catalog);
-await writeJson(path.join(rootDir, "generated/manifest/routes.json"), routes);
+await writeJson(path.join(rootDir, "generated/manifest/routes.json"), publicRoutes);
 await writeJson(path.join(rootDir, "generated/manifest/entities.json"), publicEntities);
-await writeJson(path.join(rootDir, "generated/manifest/relations.json"), relations.filter((relation) => relation.visibility === "public"));
+await writeJson(path.join(rootDir, "generated/manifest/relations.json"), catalog.relations);
 await writeJson(path.join(rootDir, "generated/manifest/build.json"), {
   schemaVersion: "1.0.0",
   builtAt: new Date().toISOString(),
   entities: publicEntities.length,
-  relations: relations.filter((relation) => relation.visibility === "public").length,
+  relations: catalog.relations.length,
 });
 await writeText(path.join(rootDir, "sitemap.xml"), buildSitemap(entities));
 
