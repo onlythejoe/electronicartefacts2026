@@ -646,11 +646,11 @@
   `;
 
   const contactDiscovery = () => `
-    <section class="zone-card contact-discovery" data-contact-discovery>
+    <section class="zone-card contact-discovery" id="contact-discovery" data-contact-discovery>
       <div class="contact-discovery__intro">
         <div>
           <p class="eyebrow">PROJECT / COLLABORATION DISCOVERY</p>
-          <h1 class="display-title">What should exist that doesn’t exist yet?</h1>
+          <h2 class="display-title">What should exist that doesn’t exist yet?</h2>
           <p class="lede">Describe the situation in your own words. This interface organizes your intent into a concise brief. Classification happens locally in your browser.</p>
         </div>
       </div>
@@ -821,6 +821,18 @@
         proof: `${countLabel(item.graphNodeTypes?.length || 0, "node category", "node categories")}, ${countLabel(item.relationshipTypes?.length || 0, "relationship type")} and a VASTE-powered product architecture.`,
         next: "Follow the platform layers from knowledge graph to collaboration, visual exploration and economic activation.",
         cta: item.links?.[0] || { label: "Explore VASTE", href: "https://www.vaste.space/" },
+      };
+    }
+
+    if (item.id === "unionmob") {
+      return {
+        title: "Read this as an external CTO partnership.",
+        intro: "UnionMob is owned and led by Zarah Nkounkou. Electronic Artefacts contributes technical leadership, back-end architecture and governance systems without owning the UnionMob project or claiming its visual identity.",
+        why: "The central distinction is contractual and technical: UnionMob remains the external organisation, while UMOS remains Electronic Artefacts property and is made available through usage rights.",
+        inspect: ["The project ownership and CTO role", "The official UnionMob identity and violet palette", "The separation between UnionMob and the licensed UMOS system"],
+        proof: `${assetDocumentation} the supplied UnionMob identity, while the dossier records the CTO scope and software-rights model.`,
+        next: "Continue into the architecture to inspect the back-end, governance and operating-system contribution.",
+        cta: item.links?.[0] || { label: "Explore Research", href: "./research.html" },
       };
     }
 
@@ -1164,8 +1176,10 @@
     navy: "#13213a",
     "navy blue": "#13213a",
     orange: "#d97738",
+    purple: "#7c3aed",
     red: "#b94a48",
     slate: "#334155",
+    violet: "#8b5cf6",
     white: "#f7f4ef",
   };
   const projectFallbackSwatches = ["#f2eadf", "#161616", "#7dd3fc", "#4f7d5d", "#d8b86a", "#8d8f95"];
@@ -1226,10 +1240,13 @@
     const groups = compactUnique(assets.map((media) => projectVisualGroup(media)));
     const visualTokens = projectVisualTokens(item);
     const cues = projectMoodCues(item);
+    const isUnionMob = item.id === "unionmob";
 
     return panelShell(
-      "Art direction",
-      "Moodboard, marks and graphic system pulled from the project assets.",
+      isUnionMob ? "Project identity" : "Art direction",
+      isUnionMob
+        ? item.visualAttribution || "Identity assets supplied by the project are shown for context."
+        : "Moodboard, marks and graphic system pulled from the project assets.",
       `
         <div class="project-moodboard project-moodboard--runtime" data-project-moodboard>
           <div class="project-moodboard__intro">
@@ -1288,7 +1305,7 @@
                 .join("")}
             </div>
             <aside class="panel panel--soft project-moodboard__system">
-              <p class="card__meta">Graphic charter</p>
+              <p class="card__meta">${isUnionMob ? "Project palette" : "Graphic charter"}</p>
               <div class="project-moodboard__swatches" aria-label="Visual language">
                 ${(visualTokens.length ? visualTokens : ["Identity", "Interface", "Material"])
                   .map(
@@ -1935,13 +1952,20 @@
     const aiBroker = item.aiBroker || {};
     const umos = item.umosArchitecture || {};
     const traits = item.traits || {};
+    const ownership = item.ownership || {};
 
     return [
       panelShell(
-        "Overview",
-        "UnionMob is presented as a client project and organisational system, not as a generic platform card.",
+        "Ownership and collaboration",
+        "UnionMob is an external project. The organisation, the technical collaboration and the software ownership remain explicitly separated.",
         `<div class="stack">
-          ${softPanel("Client", item.client || "Client project", item.role || "")}
+          ${softPanel("Project owner", item.client || "Zarah Nkounkou", ownership.project || "")}
+          ${softPanel("Electronic Artefacts", "Technological collaborator / CTO", item.role || "")}
+          ${softPanel("Brand attribution", "UnionMob identity", ownership.brandDirection || item.visualAttribution || "")}
+          ${softPanel("Software rights", "UMOS ownership and licence", ownership.license || "", metadataList([
+            { label: "Owner", value: ownership.software || "Electronic Artefacts" },
+            { label: "User", value: "UnionMob" },
+          ]))}
           ${softPanel("Core definition", item.title, item.description || item.summary || "", tagRow(item.subThemes || [], { compact: true }))}
           ${softPanel("Separation", "UnionMob and UMOS", distinction.relationship || "", metadataList([
             { label: "UnionMob", value: distinction.unionMob },
@@ -2025,7 +2049,7 @@
       ),
       panelShell(
         "Lessons Learned",
-        "The project is best understood as an operating system for living organisations.",
+        "UnionMob is the external organisation; UMOS is the operating system developed and owned by Electronic Artefacts.",
         listMarkup(item.lessonsLearned || []),
       ),
       panelShell(
@@ -2297,6 +2321,7 @@
         </section>
       `;
     }
+    document.body.dataset.entryId = item.id || "";
 
     const primaryLinks = (item.links || []).map((link) => ({ ...link, target: link.href.startsWith("http") ? "_blank" : undefined }));
     const relatedCount = Object.values(item.relations || {}).flat().filter(Boolean).length;
@@ -2342,7 +2367,7 @@
     const detailIntro = item.kind === "program" ? programSpecificPanels(item) : "";
     const artistIntro = item.kind === "artist" ? artistProfilePanels(item) : "";
     const specificPanels =
-      item.id === "palimpsests"
+      item.id === "palimpsests" || item.id === "unionmob"
         ? projectSpecificPanels(item)
         : clientCaseStudyPanel(item);
     const visualPanels = projectPanels(item);
@@ -2847,6 +2872,80 @@
   const renderVasteBanner = () => vasteBanner();
   const renderFeaturedResearch = () => featuredResearch();
   const renderLatest = () => latestArtefacts();
+  const intentHeroStats = (items, label) => `
+    <div class="intent-hero__stats" aria-label="${esc(label)}" data-depth="1.65">
+      ${items.map((item) => `<span><strong>${esc(item.value)}</strong><em>${esc(item.label)}</em></span>`).join("")}
+    </div>
+  `;
+  const homeHeroFrame = (item, className, options = {}) => {
+    if (!item) return "";
+    const media = cardImageFor(item);
+    if (!media) return "";
+    const href = entryHref(item);
+    return `
+      <a class="home-intent-stage__frame ${esc(className)}" href="${esc(href)}" data-depth="${esc(options.depth || 1)}" aria-label="Open ${esc(item.title)}">
+        <img src="${esc(media.src)}" alt="${esc(media.alt || item.title)}" loading="${options.eager ? "eager" : "lazy"}"${options.eager ? ' fetchpriority="high"' : ""} />
+        <figcaption>
+          <span>${esc(options.kicker || item.category || item.type || "Project")}</span>
+          <strong>${esc(item.title)}</strong>
+        </figcaption>
+      </a>
+    `;
+  };
+  const renderHomeHero = () => {
+    const ranked = homeProjects().filter((item) => cardImageFor(item));
+    const lead = ranked[0] || entityById("vestiges");
+    const system = ranked.find((item) => item.id === "unionmob") || ranked.find((item) => item.id !== lead?.id);
+    const publicProof = entityById("oeil-de-meg") || ranked.find((item) => ![lead?.id, system?.id].includes(item.id));
+    const distinct = [lead, system, publicProof].filter((item, index, items) => item && items.findIndex((candidate) => candidate?.id === item.id) === index);
+    const latestDate = distinct
+      .map((item) => item?.temporality?.lastUpdated || "")
+      .filter(Boolean)
+      .sort()
+      .reverse()[0] || "2026";
+
+    return `
+      <section class="zone-card hero home-cinematic-hero intent-hero intent-hero--home">
+        <div class="intent-hero__grid home-cinematic-hero__layout">
+          <div class="hero-copy intent-hero__copy">
+            <p class="eyebrow">ELECTRONIC ARTEFACTS</p>
+            <h1 class="display-title">Creative systems made visible.</h1>
+            <p class="lede">Electronic Artefacts is a creative technology studio for client systems, proprietary platforms and research-led cultural publishing.</p>
+            <div class="button-row">
+              <a class="button button--primary" href="./work.html">See selected work</a>
+              <a class="button button--secondary" href="./contact.html">Start a project</a>
+            </div>
+            <div class="pill-cloud intent-hero__chips" aria-label="Studio practices">
+              <span class="chip">Client systems</span>
+              <span class="chip">Proprietary platforms</span>
+              <span class="chip">Research</span>
+              <span class="chip">Artistic publishing</span>
+            </div>
+          </div>
+          <aside class="intent-hero__stage home-intent-stage" data-intent-stage aria-label="Current Electronic Artefacts projects">
+            <div class="intent-hero__stage-label"><span>Now showing</span><strong>Current products and public work</strong></div>
+            <div class="home-intent-stage__orbit" aria-hidden="true"></div>
+            ${homeHeroFrame(lead, "home-intent-stage__frame--lead", { depth: 0.82, kicker: "Latest platform", eager: true })}
+            ${homeHeroFrame(system, "home-intent-stage__frame--system", { depth: 1.35, kicker: system?.id === "unionmob" ? "External CTO partnership" : "Product system" })}
+            ${homeHeroFrame(publicProof, "home-intent-stage__frame--proof", { depth: 1.62, kicker: "Live public proof" })}
+            <div class="home-intent-stage__channels" data-depth="1.42" aria-label="Electronic Artefacts channels">
+              <a href="https://www.instagram.com/electronic.artefacts/" target="_blank" rel="noreferrer">@electronic.artefacts</a>
+              <a href="https://github.com/onlythejoe" target="_blank" rel="noreferrer">GitHub</a>
+              <a href="https://soundcloud.com/electronic-artefacts" target="_blank" rel="noreferrer">SoundCloud</a>
+            </div>
+            ${intentHeroStats(
+              [
+                { value: String(distinct.length).padStart(2, "0"), label: "current spotlights" },
+                { value: latestDate.slice(5).replace("-", "."), label: "latest update" },
+                { value: "LIVE", label: "public surfaces" },
+              ],
+              "Current studio statistics",
+            )}
+          </aside>
+        </div>
+      </section>
+    `;
+  };
   const orientationSection = ({ eyebrow, title, copy, cards }) => `
     <section class="zone-card hero">
       <div class="section-head">
@@ -3598,9 +3697,9 @@
     ];
 
     return `
-      <section class="zone-card hero programs-hero program-commercial-hero">
-        <div class="program-commercial-hero__grid">
-          <div class="section-head">
+      <section class="zone-card hero programs-hero program-commercial-hero intent-hero intent-hero--programs">
+        <div class="program-commercial-hero__grid intent-hero__grid">
+          <div class="section-head intent-hero__copy">
             <p class="eyebrow">PROGRAMS</p>
             <h1 class="display-title">Programs for repo access, pilots and licensing.</h1>
             <p class="lede">Electronic Artefacts programs are packaged technical systems. They can be evaluated through repository access, scoped pilots, implementation work or licensing conversations.</p>
@@ -3609,17 +3708,24 @@
               <a class="button button--secondary" href="./contact.html">Discuss a program</a>
               <a class="button button--secondary" href="https://www.vaste.space/" target="_blank" rel="noreferrer">Explore VASTE</a>
             </div>
-            ${metricRail(
+            <div class="pill-cloud intent-hero__chips" aria-label="Program access formats">
+              <span class="chip">Repository access</span>
+              <span class="chip">Pilot</span>
+              <span class="chip">Implementation</span>
+              <span class="chip">Licensing</span>
+            </div>
+          </div>
+          <div class="intent-hero__stage intent-hero__stage--programs" data-intent-stage>
+            ${computationFieldMarkup("hero")}
+            ${intentHeroStats(
               [
-                { label: "ACCESS", value: "Request", note: "repo review", fill: 0.95, tone: "live" },
-                { label: "FORMATS", value: "4", note: "access / pilot / build / license", fill: 0.86, tone: "system" },
-                { label: "CORE", value: "VASTE", note: "runtime foundation", fill: 0.82, tone: "visual" },
-                { label: "DELIVERY", value: "Build", note: "implementation available", fill: 0.74, tone: "archive" },
+                { value: "04", label: "access formats" },
+                { value: "VASTE", label: "runtime core" },
+                { value: "BUILD", label: "delivery path" },
               ],
-              { limit: 4, compact: true },
+              "Program statistics",
             )}
           </div>
-          ${computationFieldMarkup("hero")}
         </div>
       </section>
       <section class="zone-card hero">
@@ -3821,6 +3927,7 @@
     `;
   };
   const renderProjects = () => {
+    const publicProjectCount = (catalog.projects || []).filter((item) => item.visibility !== "internal" && item.visibility !== "restricted").length;
     const grouped = [
       {
         label: "Art Translation",
@@ -3833,10 +3940,14 @@
         items: [entityById("vestiges")].filter(Boolean),
       },
       {
+        label: "External Partnership",
+        copy: "Independent initiatives owned outside Electronic Artefacts, with the studio contributing a defined technical or strategic role.",
+        items: [entityById("unionmob")].filter(Boolean),
+      },
+      {
         label: "Applied Surfaces",
         copy: "Public and client-facing systems. Open these when you want concrete UX, interface and delivery evidence.",
         items: [
-          entityById("unionmob"),
           entityById("atypikhouse"),
           entityById("oeil-de-meg"),
         ].filter(Boolean),
@@ -3880,9 +3991,9 @@
     });
 
     return `
-      <section class="zone-card hero projects-hero">
-        <div class="projects-hero__grid">
-          <div class="section-head">
+      <section class="zone-card hero projects-hero intent-hero intent-hero--projects">
+        <div class="projects-hero__grid intent-hero__grid">
+          <div class="section-head intent-hero__copy">
             <p class="eyebrow">PROJECTS</p>
             <h1 class="display-title">Projects, from art systems to applied surfaces.</h1>
             <p class="lede">Start with the artistic line, then compare client work, product surfaces and the systems that support them.</p>
@@ -3892,19 +4003,28 @@
               <a class="button button--secondary" href="./archive.html">Open Archive</a>
             </div>
           </div>
-          <div class="projects-hero__stage" aria-label="Project media previews">
-            <a class="projects-hero__frame projects-hero__frame--wide" href="./palimpsests.html" aria-label="Open Palimpsests">
+          <div class="projects-hero__stage intent-hero__stage" data-intent-stage aria-label="Project media previews">
+            <div class="intent-hero__stage-label"><span>Project spectrum</span><strong>Art / product / public proof</strong></div>
+            <a class="projects-hero__frame projects-hero__frame--wide" href="./palimpsests.html" data-depth="0.78" aria-label="Open Palimpsests">
               <img src="./assets/media/projects/palimpsests/P1288759-edit-1800.webp" alt="Palimpsests portrait visual" loading="eager" />
               <figcaption><span>Art system</span><strong>Palimpsests</strong></figcaption>
             </a>
-            <a class="projects-hero__frame" href="./project.html?id=atypikhouse" aria-label="Open AtypikHouse project">
+            <a class="projects-hero__frame" href="./project.html?id=atypikhouse" data-depth="1.18" aria-label="Open AtypikHouse project">
               <img src="./assets/media/projects/atypikhouse/atypikhouse-dashboard-ipad.jpg" alt="AtypikHouse tablet dashboard" loading="lazy" />
               <figcaption><span>Applied surface</span><strong>AtypikHouse</strong></figcaption>
             </a>
-            <a class="projects-hero__frame" href="./project.html?id=oeil-de-meg" aria-label="Open L’Œil de Meg project">
+            <a class="projects-hero__frame" href="./project.html?id=oeil-de-meg" data-depth="1.48" aria-label="Open L’Œil de Meg project">
               <img src="./assets/media/projects/oeil-de-meg/oeil-de-meg-pagespeed-desktop.png" alt="L’Œil de Meg PageSpeed desktop report" loading="lazy" />
               <figcaption><span>Delivery proof</span><strong>L’Œil de Meg</strong></figcaption>
             </a>
+            ${intentHeroStats(
+              [
+                { value: "03", label: "output modes" },
+                { value: String(publicProjectCount).padStart(2, "0"), label: "public projects" },
+                { value: "LIVE", label: "active delivery" },
+              ],
+              "Project statistics",
+            )}
           </div>
         </div>
       </section>
@@ -4022,6 +4142,7 @@
         </section>
       `;
     }
+    document.body.dataset.entryId = item.id || "";
     const relatedCount = relationEntriesFor(item).length;
     const projectLineActions = [
       { label: "Overview", href: `./project.html?id=${encodeURIComponent(item.id)}` },
@@ -4099,6 +4220,13 @@
         ].filter(Boolean),
       },
       {
+        label: "External Partnerships",
+        copy: "Independent projects owned outside Electronic Artefacts, where the studio contributes a clearly bounded technical leadership role.",
+        items: [
+          entityById("unionmob"),
+        ].filter(Boolean),
+      },
+      {
         label: "External Works",
         copy: "Commissioned and client-facing systems where strategy, design and implementation are judged against a real public use.",
         items: [
@@ -4113,8 +4241,8 @@
       <section class="zone-card hero" id="work-evidence">
         <div class="section-head">
           <p class="eyebrow">WORK CATALOG</p>
-          <h2>One practice, three working contexts.</h2>
-          <p class="lede">Internal work develops the language, collaborations introduce other forms of expertise, and external projects prove the approach under concrete constraints.</p>
+          <h2>One practice, four working contexts.</h2>
+          <p class="lede">Internal work develops the language, collaborations introduce specialist expertise, external partnerships define bounded leadership roles, and commissioned work proves delivery under concrete constraints.</p>
         </div>
         <div class="catalog-stack">
           ${groups
@@ -4150,6 +4278,7 @@
 
   const renderers = {
     home: {
+      "home-hero": renderHomeHero,
       "home-orientation": renderHomeOrientation,
       "home-featured-paths": renderFeaturedPaths,
       "home-vaste-banner": renderVasteBanner,

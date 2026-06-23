@@ -1472,12 +1472,67 @@
     }
   };
 
+  const initIntentHeroes = (root = document) => {
+    const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    const coarsePointer = window.matchMedia("(hover: none), (pointer: coarse)").matches;
+
+    root.querySelectorAll("[data-intent-stage]").forEach((stage) => {
+      if (stage.dataset.intentHeroBound === "true") return;
+      stage.dataset.intentHeroBound = "true";
+
+      const layers = [...stage.querySelectorAll("[data-depth]")];
+      if (reduceMotion || coarsePointer || !layers.length) return;
+
+      let frame = 0;
+      let targetX = 0;
+      let targetY = 0;
+      let currentX = 0;
+      let currentY = 0;
+
+      const render = () => {
+        currentX += (targetX - currentX) * 0.12;
+        currentY += (targetY - currentY) * 0.12;
+        stage.style.setProperty("--intent-rotate-x", `${(-currentY * 2.2).toFixed(2)}deg`);
+        stage.style.setProperty("--intent-rotate-y", `${(currentX * 2.8).toFixed(2)}deg`);
+        layers.forEach((layer) => {
+          const depth = Number.parseFloat(layer.getAttribute("data-depth") || "1") || 1;
+          layer.style.setProperty("--intent-shift-x", `${(currentX * depth * 8).toFixed(2)}px`);
+          layer.style.setProperty("--intent-shift-y", `${(currentY * depth * 7).toFixed(2)}px`);
+        });
+
+        if (Math.abs(targetX - currentX) > 0.002 || Math.abs(targetY - currentY) > 0.002) {
+          frame = requestAnimationFrame(render);
+        } else {
+          frame = 0;
+        }
+      };
+
+      const schedule = () => {
+        if (!frame) frame = requestAnimationFrame(render);
+      };
+
+      stage.addEventListener("pointermove", (event) => {
+        const rect = stage.getBoundingClientRect();
+        targetX = ((event.clientX - rect.left) / Math.max(1, rect.width) - 0.5) * 2;
+        targetY = ((event.clientY - rect.top) / Math.max(1, rect.height) - 0.5) * 2;
+        schedule();
+      });
+
+      stage.addEventListener("pointerleave", () => {
+        targetX = 0;
+        targetY = 0;
+        schedule();
+      });
+    });
+  };
+
   const initUXEnhancements = (filterState) => {
     initAmbientField();
     initScrollProgress();
     initAutoHideHeader();
     initDesktopCursor();
     initReveal();
+    initIntentHeroes();
     initFilterSummaries(filterState);
     initProjectDossier();
     scheduleIdle(() => {
@@ -1752,6 +1807,7 @@
     initCardLinks,
     initContactDiscovery,
     initCapabilityMaps,
+    initIntentHeroes,
     initUXEnhancements,
     refreshCardSurfaces,
     syncNavigationState,

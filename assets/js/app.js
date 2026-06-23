@@ -186,6 +186,7 @@ window.EA_TAXONOMIES = {
     "Platform",
     "Universe",
     "Client Work",
+    "External Collaboration",
     "Research Initiative",
     "Software",
     "Framework",
@@ -1006,9 +1007,9 @@ window.EA_ENTITIES = {
     {
       "id": "zarah-nkounkou",
       "title": "Zarah Nkounkou",
-      "subtitle": "Founder / Client",
+      "subtitle": "UnionMob Founder / Owner",
       "kind": "artist",
-      "type": "Founder / Client",
+      "type": "Founder / Project Owner",
       "status": "active",
       "statusLabel": "Active",
       "maturity": "production",
@@ -1021,8 +1022,8 @@ window.EA_ENTITIES = {
         "lastUpdated": "2026-06-17",
         "era": "foundation"
       },
-      "description": "Founder and client connected to the UnionMob ecosystem and its governed operating system work.",
-      "summary": "Founder and client connected to UnionMob.",
+      "description": "Founder and owner of the external UnionMob project, working with Electronic Artefacts as technological collaborator and CTO partner.",
+      "summary": "Founder and owner of UnionMob.",
       "discipline": [
         "Technology",
         "Systems",
@@ -1035,16 +1036,13 @@ window.EA_ENTITIES = {
       "tags": [
         "Zarah Nkounkou",
         "Founder",
-        "Client",
+        "Project Owner",
+        "External Collaboration",
         "UnionMob"
       ],
       "relations": {
-        "origin": [
-          "unionmob"
-        ],
-        "parent": [
-          "unionmob"
-        ],
+        "origin": [],
+        "parent": [],
         "children": [],
         "dependencies": [],
         "influences": [
@@ -1053,14 +1051,10 @@ window.EA_ENTITIES = {
         "derivedFrom": [],
         "inspiredBy": [],
         "poweredBy": [],
-        "producedBy": [
-          "electronic-artefacts"
-        ],
+        "producedBy": [],
         "publishedBy": [],
         "maintainedBy": [],
-        "partOf": [
-          "electronic-artefacts"
-        ],
+        "partOf": [],
         "relatedTo": [
           "unionmob"
         ]
@@ -2954,12 +2948,12 @@ window.EA_ENTITIES = {
     {
       "id": "unionmob",
       "title": "UnionMob",
-      "subtitle": "Governed Creative Operating System",
+      "subtitle": "External Creative Organisation / CTO Partnership",
       "kind": "project",
-      "type": "Governed Creative Operating System",
-      "category": "Client Work",
+      "type": "External Creative Organisation",
+      "category": "External Collaboration",
       "status": "development",
-      "statusLabel": "Client project",
+      "statusLabel": "External CTO partnership",
       "maturity": "research",
       "confidence": "observed",
       "visibility": "public",
@@ -2970,8 +2964,9 @@ window.EA_ENTITIES = {
         "lastUpdated": "2026-06-15",
         "era": "foundation"
       },
-      "client": "zarah-nkounkou",
-      "role": "Electronic Artefacts acted as system architect, product architect and CTO partner during the conceptual and technical design phases.",
+      "client": "Zarah Nkounkou",
+      "clientId": "zarah-nkounkou",
+      "role": "Electronic Artefacts acts as technological collaborator and CTO for UnionMob, with responsibility centred on back-end architecture, governance systems and technical direction.",
       "medium": [
         "Software",
         "Interactive",
@@ -2984,10 +2979,10 @@ window.EA_ENTITIES = {
         "Architecture",
         "Research"
       ],
-      "description": "UnionMob is a governed creative operating system designed to organise communities, creators, teams, projects, commerce and decision-making inside a single programmable ecosystem.",
-      "summary": "Governed creative operating system for communities, creators, projects, commerce and decision-making.",
-      "coreIdea": "The project explored a bio-inspired organisational model: not a hierarchy, not a social graph, but an ecosystem where participants evolve through capabilities, facets and governed contexts.",
-      "theme": "Governed creative ecosystem and organisational operating system",
+      "description": "UnionMob is an independent creative organisation and external project owned and led by Zarah Nkounkou. Electronic Artefacts contributes as technological collaborator and CTO, rather than as owner or author of the UnionMob brand.",
+      "summary": "Independent creative organisation led by Zarah Nkounkou, with Electronic Artefacts serving as technological collaborator and CTO.",
+      "coreIdea": "The collaboration explores a bio-inspired organisational model where participants evolve through capabilities, facets and governed contexts, supported by a dedicated technical operating system.",
+      "theme": "Independent creative ecosystem supported by external CTO leadership",
       "subThemes": [
         "Creative Networks",
         "Governance Systems",
@@ -3001,6 +2996,8 @@ window.EA_ENTITIES = {
       "tags": [
         "UnionMob",
         "UMOS",
+        "External Collaboration",
+        "CTO",
         "Systems Design",
         "Research",
         "Governance",
@@ -3008,10 +3005,17 @@ window.EA_ENTITIES = {
         "Community Systems",
         "AI Governance"
       ],
+      "ownership": {
+        "project": "UnionMob belongs to and is led by Zarah Nkounkou.",
+        "technicalRole": "Electronic Artefacts is the technological collaborator and acts as CTO.",
+        "brandDirection": "UnionMob's visual identity and graphic charter are not credited to Electronic Artefacts.",
+        "software": "UMOS remains the property of Electronic Artefacts.",
+        "license": "UnionMob receives usage rights for UMOS without an ownership transfer."
+      },
       "projectDistinction": {
-        "unionMob": "UnionMob is the creative ecosystem, label, community and organisation.",
-        "umos": "UMOS is the UnionMob Operating System: the internal platform, governance layer and technical infrastructure powering UnionMob.",
-        "relationship": "UnionMob is the creative organisation. UMOS is the operating system powering it."
+        "unionMob": "UnionMob is the independent creative ecosystem, organisation and external project owned by Zarah Nkounkou.",
+        "umos": "UMOS is the operating system developed and owned by Electronic Artefacts.",
+        "relationship": "UnionMob uses UMOS under granted usage rights; ownership of UMOS remains with Electronic Artefacts."
       },
       "lifecycle": [
         "Signal",
@@ -3184,15 +3188,40 @@ window.EA_ENTITIES = {
         "folder": "./assets/media/projects/unionmob",
         "gallery": [
           {
-            "src": "./assets/media/projects/unionmob/cover.svg",
-            "alt": "UnionMob dossier cover",
-            "caption": "Project dossier cover."
+            "src": "./assets/media/projects/unionmob/unionmob-world.jpg",
+            "alt": "UnionMob spherical visual composed of compass interfaces and UnionMob marks",
+            "caption": "UnionMob visual universe.",
+            "width": 1405,
+            "height": 1820
+          },
+          {
+            "src": "./assets/media/projects/unionmob/unionmob-logo.svg",
+            "alt": "Official UnionMob logo",
+            "caption": "Official UnionMob logo. Identity supplied by the project.",
+            "width": 210,
+            "height": 170
           }
         ]
       },
+      "visualLanguage": [
+        "Violet",
+        "Black",
+        "White"
+      ],
+      "textures": [
+        "Spherical network",
+        "Compass interface",
+        "Monochrome imagery"
+      ],
+      "symbols": [
+        "Official UnionMob wordmark",
+        "Orientation",
+        "Collective system"
+      ],
+      "visualAttribution": "The UnionMob identity and graphic charter are shown as project context. Electronic Artefacts is not credited for their creation.",
       "architecture": {
-        "surface": "Creative organisation and governed operating system",
-        "surfaceCopy": "UnionMob names the creative ecosystem, label, community and organisation. UMOS names the operating system that powers it.",
+        "surface": "External creative organisation with a licensed technical operating system",
+        "surfaceCopy": "UnionMob is the organisation owned by Zarah Nkounkou. UMOS is the separate Electronic Artefacts-owned system made available to UnionMob through usage rights.",
         "stack": "TypeScript, Prisma, PostgreSQL, Docker and NATS",
         "stackCopy": "The technical study centred on modular services, events, projections, governance, search and brokered AI access.",
         "layers": [
@@ -3206,40 +3235,34 @@ window.EA_ENTITIES = {
           "UMOS"
         ],
         "layerCopy": "Each layer separates organisational meaning from technical authority so the system can coordinate without flattening people into fixed roles.",
-        "note": "Built as an organisational operating system: event-driven, zero-trust, distributed, modular and governance-first."
+        "note": "Electronic Artefacts' contribution is technical: CTO leadership, back-end architecture, governance infrastructure and system design."
       },
       "relations": {
         "origin": [
-          "vaste"
+          "zarah-nkounkou"
         ],
         "parent": [
-          "electronic-artefacts"
+          "zarah-nkounkou"
         ],
         "children": [],
-        "dependencies": [
-          "vaste"
-        ],
+        "dependencies": [],
         "influences": [
           "systems-theory",
           "runtime-theory"
         ],
         "derivedFrom": [],
         "inspiredBy": [],
-        "poweredBy": [
-          "vaste"
-        ],
+        "poweredBy": [],
         "producedBy": [
-          "electronic-artefacts"
+          "zarah-nkounkou"
         ],
         "publishedBy": [
-          "electronic-artefacts"
+          "zarah-nkounkou"
         ],
         "maintainedBy": [
           "electronic-artefacts"
         ],
-        "partOf": [
-          "electronic-artefacts"
-        ],
+        "partOf": [],
         "relatedTo": [
           "systems-theory",
           "atypikhouse"
@@ -3257,10 +3280,6 @@ window.EA_ENTITIES = {
         {
           "label": "Research",
           "href": "./research.html"
-        },
-        {
-          "label": "UMOS",
-          "href": "./program.html?id=unionmob-os1"
         }
       ]
     },
@@ -4891,20 +4910,20 @@ window.EA_TIMELINES = [
     "entries": [
       {
         "year": "2025",
-        "title": "Concept",
-        "description": "The governed creative operating system is framed.",
+        "title": "External project",
+        "description": "UnionMob is established as an independent project led by Zarah Nkounkou.",
         "type": "concept"
       },
       {
         "year": "2026",
-        "title": "Governance model",
-        "description": "Scope, authority and capabilities are structured.",
+        "title": "CTO collaboration",
+        "description": "Electronic Artefacts contributes technical direction, back-end architecture and governance systems.",
         "type": "development"
       },
       {
         "year": "2026",
-        "title": "UMOS architecture",
-        "description": "The operating system architecture is outlined.",
+        "title": "UMOS usage model",
+        "description": "UMOS remains owned by Electronic Artefacts and is made available to UnionMob through usage rights.",
         "type": "prototype"
       }
     ]
@@ -5074,7 +5093,7 @@ window.EA_COLLECTIONS = [
     "type": "Collection",
     "status": "research",
     "visibility": "public",
-    "summary": "UnionMob project, operating system and governance research.",
+    "summary": "External UnionMob collaboration, CTO work, UMOS licensing model and governance research.",
     "rules": {
       "entityIds": [
         "unionmob"
@@ -6675,6 +6694,7 @@ window.EA_SEARCH = {
     if (item.id === "oeil-de-meg") return ["Photography CRM", "Portfolio", "Live site", "WordPress"];
     if (item.id === "palimpsests") return ["Album cycle", "ORETH", "Five acts", "Archive"];
     if (item.id === "vestiges") return ["VASTE flagship", "Knowledge graph", "Craft", "Culture"];
+    if (item.id === "unionmob") return ["External project", "CTO", "UMOS licence", "Violet identity"];
 
     const pills = [
       item.category || item.type || item.kind || "",
@@ -6691,6 +6711,7 @@ window.EA_SEARCH = {
     if (item.id === "palimpsests") return "Read as the artistic anchor: an album cycle, archive surface and ORETH world.";
     if (item.id === "oeil-de-meg") return "Read as delivery proof: a live photography portfolio, CRM logic and performance dossier.";
     if (item.id === "vestiges") return "Read as VASTE's flagship: a knowledge platform for culture, craft and human know-how.";
+    if (item.id === "unionmob") return "Read as an external CTO partnership: UnionMob belongs to Zarah Nkounkou; UMOS remains owned by Electronic Artefacts.";
     if (item.category === "Client Work" || item.category === "External Work") return "Read as applied work: public-facing UX, visual evidence and delivery context.";
     if (item.category === "Platform" || item.type === "Platform") return "Read as a system surface: product structure, workflow and operational logic.";
     return `Read as ${item.category || item.type || "a project"} inside the Electronic Artefacts world.`;
@@ -7577,10 +7598,10 @@ window.EA_SEARCH = {
             { kicker: "Next", title: "Contact", copy: "Start a similar product or system brief.", reason: "Useful if this is the model you need.", cta: "Start a Collaboration", href: "./contact.html" },
           ],
           unionmob: [
-            { kicker: "Next", title: "Programs", copy: "See the software stack and runtime layer.", reason: "Useful if you want the system backbone.", cta: "View Programs", href: "./programs.html" },
+            { kicker: "Technical asset", title: "Programs", copy: "See the Electronic Artefacts-owned systems behind the CTO contribution.", reason: "Useful for understanding the software layer without confusing it with UnionMob ownership.", cta: "View Programs", href: "./programs.html" },
             { kicker: "Next", title: "Research", copy: "Inspect the investigations that inform it.", reason: "Useful if you want the conceptual layer.", cta: "Enter Research", href: "./research.html" },
-            { kicker: "Next", title: "Work", copy: "Review the studio and client-facing layer.", reason: "Useful if you want service context.", cta: "See Client Work", href: "./work.html" },
-            { kicker: "Next", title: "Contact", copy: "Discuss a platform or coordination system.", reason: "Useful if the project should be extended.", cta: "Start a Collaboration", href: "./contact.html" },
+            { kicker: "Partnership", title: "Work", copy: "Review how Electronic Artefacts presents external technical collaborations.", reason: "Useful for comparing the CTO role with commissioned delivery.", cta: "See Work", href: "./work.html" },
+            { kicker: "Next", title: "Contact", copy: "Discuss an external CTO, platform or coordination-system collaboration.", reason: "Useful when a project needs technical leadership with clear ownership boundaries.", cta: "Start a Collaboration", href: "./contact.html" },
           ],
         };
         const cards = projectCards[item.id] || [
@@ -9687,12 +9708,67 @@ window.EA_SEARCH = {
     }
   };
 
+  const initIntentHeroes = (root = document) => {
+    const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+    const coarsePointer = window.matchMedia("(hover: none), (pointer: coarse)").matches;
+
+    root.querySelectorAll("[data-intent-stage]").forEach((stage) => {
+      if (stage.dataset.intentHeroBound === "true") return;
+      stage.dataset.intentHeroBound = "true";
+
+      const layers = [...stage.querySelectorAll("[data-depth]")];
+      if (reduceMotion || coarsePointer || !layers.length) return;
+
+      let frame = 0;
+      let targetX = 0;
+      let targetY = 0;
+      let currentX = 0;
+      let currentY = 0;
+
+      const render = () => {
+        currentX += (targetX - currentX) * 0.12;
+        currentY += (targetY - currentY) * 0.12;
+        stage.style.setProperty("--intent-rotate-x", `${(-currentY * 2.2).toFixed(2)}deg`);
+        stage.style.setProperty("--intent-rotate-y", `${(currentX * 2.8).toFixed(2)}deg`);
+        layers.forEach((layer) => {
+          const depth = Number.parseFloat(layer.getAttribute("data-depth") || "1") || 1;
+          layer.style.setProperty("--intent-shift-x", `${(currentX * depth * 8).toFixed(2)}px`);
+          layer.style.setProperty("--intent-shift-y", `${(currentY * depth * 7).toFixed(2)}px`);
+        });
+
+        if (Math.abs(targetX - currentX) > 0.002 || Math.abs(targetY - currentY) > 0.002) {
+          frame = requestAnimationFrame(render);
+        } else {
+          frame = 0;
+        }
+      };
+
+      const schedule = () => {
+        if (!frame) frame = requestAnimationFrame(render);
+      };
+
+      stage.addEventListener("pointermove", (event) => {
+        const rect = stage.getBoundingClientRect();
+        targetX = ((event.clientX - rect.left) / Math.max(1, rect.width) - 0.5) * 2;
+        targetY = ((event.clientY - rect.top) / Math.max(1, rect.height) - 0.5) * 2;
+        schedule();
+      });
+
+      stage.addEventListener("pointerleave", () => {
+        targetX = 0;
+        targetY = 0;
+        schedule();
+      });
+    });
+  };
+
   const initUXEnhancements = (filterState) => {
     initAmbientField();
     initScrollProgress();
     initAutoHideHeader();
     initDesktopCursor();
     initReveal();
+    initIntentHeroes();
     initFilterSummaries(filterState);
     initProjectDossier();
     scheduleIdle(() => {
@@ -9967,6 +10043,7 @@ window.EA_SEARCH = {
     initCardLinks,
     initContactDiscovery,
     initCapabilityMaps,
+    initIntentHeroes,
     initUXEnhancements,
     refreshCardSurfaces,
     syncNavigationState,
@@ -10624,11 +10701,11 @@ window.EA_SEARCH = {
   `;
 
   const contactDiscovery = () => `
-    <section class="zone-card contact-discovery" data-contact-discovery>
+    <section class="zone-card contact-discovery" id="contact-discovery" data-contact-discovery>
       <div class="contact-discovery__intro">
         <div>
           <p class="eyebrow">PROJECT / COLLABORATION DISCOVERY</p>
-          <h1 class="display-title">What should exist that doesn’t exist yet?</h1>
+          <h2 class="display-title">What should exist that doesn’t exist yet?</h2>
           <p class="lede">Describe the situation in your own words. This interface organizes your intent into a concise brief. Classification happens locally in your browser.</p>
         </div>
       </div>
@@ -10799,6 +10876,18 @@ window.EA_SEARCH = {
         proof: `${countLabel(item.graphNodeTypes?.length || 0, "node category", "node categories")}, ${countLabel(item.relationshipTypes?.length || 0, "relationship type")} and a VASTE-powered product architecture.`,
         next: "Follow the platform layers from knowledge graph to collaboration, visual exploration and economic activation.",
         cta: item.links?.[0] || { label: "Explore VASTE", href: "https://www.vaste.space/" },
+      };
+    }
+
+    if (item.id === "unionmob") {
+      return {
+        title: "Read this as an external CTO partnership.",
+        intro: "UnionMob is owned and led by Zarah Nkounkou. Electronic Artefacts contributes technical leadership, back-end architecture and governance systems without owning the UnionMob project or claiming its visual identity.",
+        why: "The central distinction is contractual and technical: UnionMob remains the external organisation, while UMOS remains Electronic Artefacts property and is made available through usage rights.",
+        inspect: ["The project ownership and CTO role", "The official UnionMob identity and violet palette", "The separation between UnionMob and the licensed UMOS system"],
+        proof: `${assetDocumentation} the supplied UnionMob identity, while the dossier records the CTO scope and software-rights model.`,
+        next: "Continue into the architecture to inspect the back-end, governance and operating-system contribution.",
+        cta: item.links?.[0] || { label: "Explore Research", href: "./research.html" },
       };
     }
 
@@ -11142,8 +11231,10 @@ window.EA_SEARCH = {
     navy: "#13213a",
     "navy blue": "#13213a",
     orange: "#d97738",
+    purple: "#7c3aed",
     red: "#b94a48",
     slate: "#334155",
+    violet: "#8b5cf6",
     white: "#f7f4ef",
   };
   const projectFallbackSwatches = ["#f2eadf", "#161616", "#7dd3fc", "#4f7d5d", "#d8b86a", "#8d8f95"];
@@ -11204,10 +11295,13 @@ window.EA_SEARCH = {
     const groups = compactUnique(assets.map((media) => projectVisualGroup(media)));
     const visualTokens = projectVisualTokens(item);
     const cues = projectMoodCues(item);
+    const isUnionMob = item.id === "unionmob";
 
     return panelShell(
-      "Art direction",
-      "Moodboard, marks and graphic system pulled from the project assets.",
+      isUnionMob ? "Project identity" : "Art direction",
+      isUnionMob
+        ? item.visualAttribution || "Identity assets supplied by the project are shown for context."
+        : "Moodboard, marks and graphic system pulled from the project assets.",
       `
         <div class="project-moodboard project-moodboard--runtime" data-project-moodboard>
           <div class="project-moodboard__intro">
@@ -11266,7 +11360,7 @@ window.EA_SEARCH = {
                 .join("")}
             </div>
             <aside class="panel panel--soft project-moodboard__system">
-              <p class="card__meta">Graphic charter</p>
+              <p class="card__meta">${isUnionMob ? "Project palette" : "Graphic charter"}</p>
               <div class="project-moodboard__swatches" aria-label="Visual language">
                 ${(visualTokens.length ? visualTokens : ["Identity", "Interface", "Material"])
                   .map(
@@ -11913,13 +12007,20 @@ window.EA_SEARCH = {
     const aiBroker = item.aiBroker || {};
     const umos = item.umosArchitecture || {};
     const traits = item.traits || {};
+    const ownership = item.ownership || {};
 
     return [
       panelShell(
-        "Overview",
-        "UnionMob is presented as a client project and organisational system, not as a generic platform card.",
+        "Ownership and collaboration",
+        "UnionMob is an external project. The organisation, the technical collaboration and the software ownership remain explicitly separated.",
         `<div class="stack">
-          ${softPanel("Client", item.client || "Client project", item.role || "")}
+          ${softPanel("Project owner", item.client || "Zarah Nkounkou", ownership.project || "")}
+          ${softPanel("Electronic Artefacts", "Technological collaborator / CTO", item.role || "")}
+          ${softPanel("Brand attribution", "UnionMob identity", ownership.brandDirection || item.visualAttribution || "")}
+          ${softPanel("Software rights", "UMOS ownership and licence", ownership.license || "", metadataList([
+            { label: "Owner", value: ownership.software || "Electronic Artefacts" },
+            { label: "User", value: "UnionMob" },
+          ]))}
           ${softPanel("Core definition", item.title, item.description || item.summary || "", tagRow(item.subThemes || [], { compact: true }))}
           ${softPanel("Separation", "UnionMob and UMOS", distinction.relationship || "", metadataList([
             { label: "UnionMob", value: distinction.unionMob },
@@ -12003,7 +12104,7 @@ window.EA_SEARCH = {
       ),
       panelShell(
         "Lessons Learned",
-        "The project is best understood as an operating system for living organisations.",
+        "UnionMob is the external organisation; UMOS is the operating system developed and owned by Electronic Artefacts.",
         listMarkup(item.lessonsLearned || []),
       ),
       panelShell(
@@ -12275,6 +12376,7 @@ window.EA_SEARCH = {
         </section>
       `;
     }
+    document.body.dataset.entryId = item.id || "";
 
     const primaryLinks = (item.links || []).map((link) => ({ ...link, target: link.href.startsWith("http") ? "_blank" : undefined }));
     const relatedCount = Object.values(item.relations || {}).flat().filter(Boolean).length;
@@ -12320,7 +12422,7 @@ window.EA_SEARCH = {
     const detailIntro = item.kind === "program" ? programSpecificPanels(item) : "";
     const artistIntro = item.kind === "artist" ? artistProfilePanels(item) : "";
     const specificPanels =
-      item.id === "palimpsests"
+      item.id === "palimpsests" || item.id === "unionmob"
         ? projectSpecificPanels(item)
         : clientCaseStudyPanel(item);
     const visualPanels = projectPanels(item);
@@ -12825,6 +12927,80 @@ window.EA_SEARCH = {
   const renderVasteBanner = () => vasteBanner();
   const renderFeaturedResearch = () => featuredResearch();
   const renderLatest = () => latestArtefacts();
+  const intentHeroStats = (items, label) => `
+    <div class="intent-hero__stats" aria-label="${esc(label)}" data-depth="1.65">
+      ${items.map((item) => `<span><strong>${esc(item.value)}</strong><em>${esc(item.label)}</em></span>`).join("")}
+    </div>
+  `;
+  const homeHeroFrame = (item, className, options = {}) => {
+    if (!item) return "";
+    const media = cardImageFor(item);
+    if (!media) return "";
+    const href = entryHref(item);
+    return `
+      <a class="home-intent-stage__frame ${esc(className)}" href="${esc(href)}" data-depth="${esc(options.depth || 1)}" aria-label="Open ${esc(item.title)}">
+        <img src="${esc(media.src)}" alt="${esc(media.alt || item.title)}" loading="${options.eager ? "eager" : "lazy"}"${options.eager ? ' fetchpriority="high"' : ""} />
+        <figcaption>
+          <span>${esc(options.kicker || item.category || item.type || "Project")}</span>
+          <strong>${esc(item.title)}</strong>
+        </figcaption>
+      </a>
+    `;
+  };
+  const renderHomeHero = () => {
+    const ranked = homeProjects().filter((item) => cardImageFor(item));
+    const lead = ranked[0] || entityById("vestiges");
+    const system = ranked.find((item) => item.id === "unionmob") || ranked.find((item) => item.id !== lead?.id);
+    const publicProof = entityById("oeil-de-meg") || ranked.find((item) => ![lead?.id, system?.id].includes(item.id));
+    const distinct = [lead, system, publicProof].filter((item, index, items) => item && items.findIndex((candidate) => candidate?.id === item.id) === index);
+    const latestDate = distinct
+      .map((item) => item?.temporality?.lastUpdated || "")
+      .filter(Boolean)
+      .sort()
+      .reverse()[0] || "2026";
+
+    return `
+      <section class="zone-card hero home-cinematic-hero intent-hero intent-hero--home">
+        <div class="intent-hero__grid home-cinematic-hero__layout">
+          <div class="hero-copy intent-hero__copy">
+            <p class="eyebrow">ELECTRONIC ARTEFACTS</p>
+            <h1 class="display-title">Creative systems made visible.</h1>
+            <p class="lede">Electronic Artefacts is a creative technology studio for client systems, proprietary platforms and research-led cultural publishing.</p>
+            <div class="button-row">
+              <a class="button button--primary" href="./work.html">See selected work</a>
+              <a class="button button--secondary" href="./contact.html">Start a project</a>
+            </div>
+            <div class="pill-cloud intent-hero__chips" aria-label="Studio practices">
+              <span class="chip">Client systems</span>
+              <span class="chip">Proprietary platforms</span>
+              <span class="chip">Research</span>
+              <span class="chip">Artistic publishing</span>
+            </div>
+          </div>
+          <aside class="intent-hero__stage home-intent-stage" data-intent-stage aria-label="Current Electronic Artefacts projects">
+            <div class="intent-hero__stage-label"><span>Now showing</span><strong>Current products and public work</strong></div>
+            <div class="home-intent-stage__orbit" aria-hidden="true"></div>
+            ${homeHeroFrame(lead, "home-intent-stage__frame--lead", { depth: 0.82, kicker: "Latest platform", eager: true })}
+            ${homeHeroFrame(system, "home-intent-stage__frame--system", { depth: 1.35, kicker: system?.id === "unionmob" ? "External CTO partnership" : "Product system" })}
+            ${homeHeroFrame(publicProof, "home-intent-stage__frame--proof", { depth: 1.62, kicker: "Live public proof" })}
+            <div class="home-intent-stage__channels" data-depth="1.42" aria-label="Electronic Artefacts channels">
+              <a href="https://www.instagram.com/electronic.artefacts/" target="_blank" rel="noreferrer">@electronic.artefacts</a>
+              <a href="https://github.com/onlythejoe" target="_blank" rel="noreferrer">GitHub</a>
+              <a href="https://soundcloud.com/electronic-artefacts" target="_blank" rel="noreferrer">SoundCloud</a>
+            </div>
+            ${intentHeroStats(
+              [
+                { value: String(distinct.length).padStart(2, "0"), label: "current spotlights" },
+                { value: latestDate.slice(5).replace("-", "."), label: "latest update" },
+                { value: "LIVE", label: "public surfaces" },
+              ],
+              "Current studio statistics",
+            )}
+          </aside>
+        </div>
+      </section>
+    `;
+  };
   const orientationSection = ({ eyebrow, title, copy, cards }) => `
     <section class="zone-card hero">
       <div class="section-head">
@@ -13576,9 +13752,9 @@ window.EA_SEARCH = {
     ];
 
     return `
-      <section class="zone-card hero programs-hero program-commercial-hero">
-        <div class="program-commercial-hero__grid">
-          <div class="section-head">
+      <section class="zone-card hero programs-hero program-commercial-hero intent-hero intent-hero--programs">
+        <div class="program-commercial-hero__grid intent-hero__grid">
+          <div class="section-head intent-hero__copy">
             <p class="eyebrow">PROGRAMS</p>
             <h1 class="display-title">Programs for repo access, pilots and licensing.</h1>
             <p class="lede">Electronic Artefacts programs are packaged technical systems. They can be evaluated through repository access, scoped pilots, implementation work or licensing conversations.</p>
@@ -13587,17 +13763,24 @@ window.EA_SEARCH = {
               <a class="button button--secondary" href="./contact.html">Discuss a program</a>
               <a class="button button--secondary" href="https://www.vaste.space/" target="_blank" rel="noreferrer">Explore VASTE</a>
             </div>
-            ${metricRail(
+            <div class="pill-cloud intent-hero__chips" aria-label="Program access formats">
+              <span class="chip">Repository access</span>
+              <span class="chip">Pilot</span>
+              <span class="chip">Implementation</span>
+              <span class="chip">Licensing</span>
+            </div>
+          </div>
+          <div class="intent-hero__stage intent-hero__stage--programs" data-intent-stage>
+            ${computationFieldMarkup("hero")}
+            ${intentHeroStats(
               [
-                { label: "ACCESS", value: "Request", note: "repo review", fill: 0.95, tone: "live" },
-                { label: "FORMATS", value: "4", note: "access / pilot / build / license", fill: 0.86, tone: "system" },
-                { label: "CORE", value: "VASTE", note: "runtime foundation", fill: 0.82, tone: "visual" },
-                { label: "DELIVERY", value: "Build", note: "implementation available", fill: 0.74, tone: "archive" },
+                { value: "04", label: "access formats" },
+                { value: "VASTE", label: "runtime core" },
+                { value: "BUILD", label: "delivery path" },
               ],
-              { limit: 4, compact: true },
+              "Program statistics",
             )}
           </div>
-          ${computationFieldMarkup("hero")}
         </div>
       </section>
       <section class="zone-card hero">
@@ -13799,6 +13982,7 @@ window.EA_SEARCH = {
     `;
   };
   const renderProjects = () => {
+    const publicProjectCount = (catalog.projects || []).filter((item) => item.visibility !== "internal" && item.visibility !== "restricted").length;
     const grouped = [
       {
         label: "Art Translation",
@@ -13811,10 +13995,14 @@ window.EA_SEARCH = {
         items: [entityById("vestiges")].filter(Boolean),
       },
       {
+        label: "External Partnership",
+        copy: "Independent initiatives owned outside Electronic Artefacts, with the studio contributing a defined technical or strategic role.",
+        items: [entityById("unionmob")].filter(Boolean),
+      },
+      {
         label: "Applied Surfaces",
         copy: "Public and client-facing systems. Open these when you want concrete UX, interface and delivery evidence.",
         items: [
-          entityById("unionmob"),
           entityById("atypikhouse"),
           entityById("oeil-de-meg"),
         ].filter(Boolean),
@@ -13858,9 +14046,9 @@ window.EA_SEARCH = {
     });
 
     return `
-      <section class="zone-card hero projects-hero">
-        <div class="projects-hero__grid">
-          <div class="section-head">
+      <section class="zone-card hero projects-hero intent-hero intent-hero--projects">
+        <div class="projects-hero__grid intent-hero__grid">
+          <div class="section-head intent-hero__copy">
             <p class="eyebrow">PROJECTS</p>
             <h1 class="display-title">Projects, from art systems to applied surfaces.</h1>
             <p class="lede">Start with the artistic line, then compare client work, product surfaces and the systems that support them.</p>
@@ -13870,19 +14058,28 @@ window.EA_SEARCH = {
               <a class="button button--secondary" href="./archive.html">Open Archive</a>
             </div>
           </div>
-          <div class="projects-hero__stage" aria-label="Project media previews">
-            <a class="projects-hero__frame projects-hero__frame--wide" href="./palimpsests.html" aria-label="Open Palimpsests">
+          <div class="projects-hero__stage intent-hero__stage" data-intent-stage aria-label="Project media previews">
+            <div class="intent-hero__stage-label"><span>Project spectrum</span><strong>Art / product / public proof</strong></div>
+            <a class="projects-hero__frame projects-hero__frame--wide" href="./palimpsests.html" data-depth="0.78" aria-label="Open Palimpsests">
               <img src="./assets/media/projects/palimpsests/P1288759-edit-1800.webp" alt="Palimpsests portrait visual" loading="eager" />
               <figcaption><span>Art system</span><strong>Palimpsests</strong></figcaption>
             </a>
-            <a class="projects-hero__frame" href="./project.html?id=atypikhouse" aria-label="Open AtypikHouse project">
+            <a class="projects-hero__frame" href="./project.html?id=atypikhouse" data-depth="1.18" aria-label="Open AtypikHouse project">
               <img src="./assets/media/projects/atypikhouse/atypikhouse-dashboard-ipad.jpg" alt="AtypikHouse tablet dashboard" loading="lazy" />
               <figcaption><span>Applied surface</span><strong>AtypikHouse</strong></figcaption>
             </a>
-            <a class="projects-hero__frame" href="./project.html?id=oeil-de-meg" aria-label="Open L’Œil de Meg project">
+            <a class="projects-hero__frame" href="./project.html?id=oeil-de-meg" data-depth="1.48" aria-label="Open L’Œil de Meg project">
               <img src="./assets/media/projects/oeil-de-meg/oeil-de-meg-pagespeed-desktop.png" alt="L’Œil de Meg PageSpeed desktop report" loading="lazy" />
               <figcaption><span>Delivery proof</span><strong>L’Œil de Meg</strong></figcaption>
             </a>
+            ${intentHeroStats(
+              [
+                { value: "03", label: "output modes" },
+                { value: String(publicProjectCount).padStart(2, "0"), label: "public projects" },
+                { value: "LIVE", label: "active delivery" },
+              ],
+              "Project statistics",
+            )}
           </div>
         </div>
       </section>
@@ -14000,6 +14197,7 @@ window.EA_SEARCH = {
         </section>
       `;
     }
+    document.body.dataset.entryId = item.id || "";
     const relatedCount = relationEntriesFor(item).length;
     const projectLineActions = [
       { label: "Overview", href: `./project.html?id=${encodeURIComponent(item.id)}` },
@@ -14077,6 +14275,13 @@ window.EA_SEARCH = {
         ].filter(Boolean),
       },
       {
+        label: "External Partnerships",
+        copy: "Independent projects owned outside Electronic Artefacts, where the studio contributes a clearly bounded technical leadership role.",
+        items: [
+          entityById("unionmob"),
+        ].filter(Boolean),
+      },
+      {
         label: "External Works",
         copy: "Commissioned and client-facing systems where strategy, design and implementation are judged against a real public use.",
         items: [
@@ -14091,8 +14296,8 @@ window.EA_SEARCH = {
       <section class="zone-card hero" id="work-evidence">
         <div class="section-head">
           <p class="eyebrow">WORK CATALOG</p>
-          <h2>One practice, three working contexts.</h2>
-          <p class="lede">Internal work develops the language, collaborations introduce other forms of expertise, and external projects prove the approach under concrete constraints.</p>
+          <h2>One practice, four working contexts.</h2>
+          <p class="lede">Internal work develops the language, collaborations introduce specialist expertise, external partnerships define bounded leadership roles, and commissioned work proves delivery under concrete constraints.</p>
         </div>
         <div class="catalog-stack">
           ${groups
@@ -14128,6 +14333,7 @@ window.EA_SEARCH = {
 
   const renderers = {
     home: {
+      "home-hero": renderHomeHero,
       "home-orientation": renderHomeOrientation,
       "home-featured-paths": renderFeaturedPaths,
       "home-vaste-banner": renderVasteBanner,

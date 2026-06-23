@@ -51,8 +51,33 @@
   </nav>
 </div>
 </header>
-    <main id="main" class="site-main"><section class="zone-card hero generated-hub-hero generated-hub-hero--knowledge"><div class="generated-hub-hero__intro"><div class="section-head"><p class="eyebrow">KNOWLEDGE PLATFORM</p><h1 class="display-title">Knowledge</h1><p class="lede">Canonical concepts, research fields, programs and applied projects in the Electronic Artefacts graph.</p><div class="button-row button-row--compact generated-hub-hero__actions"><a class="button button--primary" href="/search/">Search graph</a><a class="button button--secondary" href="/knowledge/concepts/">Concepts</a></div></div><div class="generated-hub-hero__metrics" aria-label="Knowledge inventory"><span><strong>1</strong><em>concept</em></span><span><strong>1</strong><em>program</em></span><span><strong>1</strong><em>project</em></span><span><strong>1</strong><em>research field</em></span></div></div>
-    <div class="generated-hub-layout">
+    <main id="main" class="site-main">
+    <section class="zone-card hero generated-hub-hero generated-hub-hero--knowledge intent-hero intent-hero--knowledge">
+      <div class="intent-hero__grid generated-hub-hero__intro">
+        <div class="section-head intent-hero__copy">
+          <p class="eyebrow">KNOWLEDGE PLATFORM</p>
+          <h1 class="display-title">Knowledge</h1>
+          <p class="lede">Canonical concepts, research fields, programs and applied projects in the Electronic Artefacts graph.</p>
+          <div class="button-row button-row--compact generated-hub-hero__actions">
+            <a class="button button--primary" href="/search/">Search graph</a>
+            <a class="button button--secondary" href="/knowledge/concepts/">Concepts</a>
+          </div>
+        </div>
+        <div class="intent-hero__stage knowledge-graph-stage" data-intent-stage aria-label="Knowledge graph overview">
+          <div class="intent-hero__stage-label"><span>Addressable knowledge</span><strong>4 connected records</strong></div>
+          <svg class="knowledge-graph-stage__lines" viewBox="0 0 600 440" aria-hidden="true">
+            <path d="M300 220 L112 116 M300 220 L478 102 M300 220 L108 334 M300 220 L492 326" />
+            <circle cx="300" cy="220" r="116" />
+          </svg>
+          <div class="knowledge-graph-stage__core" data-depth="1.3"><span>EA</span><strong>Knowledge</strong></div>
+          <a class="knowledge-graph-stage__node knowledge-graph-stage__node--1" href="/knowledge/concepts/graph-runtime/" data-depth="0.70"><span>01</span><strong>concept</strong></a><a class="knowledge-graph-stage__node knowledge-graph-stage__node--2" href="/programs/vaste/" data-depth="0.97"><span>02</span><strong>program</strong></a><a class="knowledge-graph-stage__node knowledge-graph-stage__node--3" href="/projects/vestiges/" data-depth="1.24"><span>03</span><strong>project</strong></a><a class="knowledge-graph-stage__node knowledge-graph-stage__node--4" href="/research/fields/runtime-theory/" data-depth="1.51"><span>04</span><strong>research field</strong></a>
+          <div class="intent-hero__stats generated-hub-hero__metrics" aria-label="Knowledge inventory" data-depth="1.65"><span><strong>1</strong><em>concept</em></span><span><strong>1</strong><em>program</em></span><span><strong>1</strong><em>project</em></span><span><strong>1</strong><em>research field</em></span></div>
+        </div>
+      </div>
+    </section>
+    <section class="zone-card hero generated-hub-index">
+      <div class="section-head"><p class="eyebrow">GRAPH INDEX</p><h2>Browse the connected records.</h2><p class="lede">Every entry keeps its type, status, context and route into the wider knowledge system.</p></div>
+<div class="generated-hub-layout">
       
     <article class="panel generated-hub-card generated-hub-card--concept generated-hub-card--lead" data-hub-card-type="concept">
       <a class="project-card__overlay-link generated-hub-card__overlay" href="/knowledge/concepts/graph-runtime/" aria-label="Open Graph Runtime"></a>
@@ -126,7 +151,8 @@
     </article>
         </div>
       </div>
-    </div></section></main>
+    </div>
+    </section></main>
     <footer><div class="shell-footer zone-card">
   <div class="footer-stack">
     <strong class="footer-brand">

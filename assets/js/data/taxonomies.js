@@ -98,6 +98,7 @@ window.EA_TAXONOMIES = {
     "Platform",
     "Universe",
     "Client Work",
+    "External Collaboration",
     "Research Initiative",
     "Software",
     "Framework",

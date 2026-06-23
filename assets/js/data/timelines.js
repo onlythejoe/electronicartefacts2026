@@ -53,9 +53,9 @@ window.EA_TIMELINES = [
   {
     entityId: "unionmob",
     entries: [
-      { year: "2025", title: "Concept", description: "The governed creative operating system is framed.", type: "concept" },
-      { year: "2026", title: "Governance model", description: "Scope, authority and capabilities are structured.", type: "development" },
-      { year: "2026", title: "UMOS architecture", description: "The operating system architecture is outlined.", type: "prototype" },
+      { year: "2025", title: "External project", description: "UnionMob is established as an independent project led by Zarah Nkounkou.", type: "concept" },
+      { year: "2026", title: "CTO collaboration", description: "Electronic Artefacts contributes technical direction, back-end architecture and governance systems.", type: "development" },
+      { year: "2026", title: "UMOS usage model", description: "UMOS remains owned by Electronic Artefacts and is made available to UnionMob through usage rights.", type: "prototype" },
     ],
   },
 ];

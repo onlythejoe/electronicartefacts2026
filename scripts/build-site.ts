@@ -149,7 +149,42 @@ const writeHub = async (route: string, title: string, description: string, items
     .join("");
   const secondaryAction = route === "/knowledge/" ? "/knowledge/concepts/" : "/knowledge/";
   const secondaryLabel = route === "/knowledge/" ? "Concepts" : "Knowledge index";
-  const body = `<section class="zone-card hero generated-hub-hero generated-hub-hero--${escapeHtml(typeSlug(title))}"><div class="generated-hub-hero__intro"><div class="section-head"><p class="eyebrow">KNOWLEDGE PLATFORM</p><h1 class="display-title">${escapeHtml(title)}</h1><p class="lede">${escapeHtml(description)}</p><div class="button-row button-row--compact generated-hub-hero__actions"><a class="button button--primary" href="/search/">Search graph</a><a class="button button--secondary" href="${secondaryAction}">${secondaryLabel}</a></div></div><div class="generated-hub-hero__metrics" aria-label="Knowledge inventory">${metrics}</div></div>${hubCards(items)}</section>`;
+  const sceneNodes = groups
+    .slice(0, 4)
+    .map(([type], index) => {
+      const entity = items.find((candidate) => candidate.type === type);
+      const href = entity ? routeForEntity(entity) : route;
+      return `<a class="knowledge-graph-stage__node knowledge-graph-stage__node--${index + 1}" href="${href}" data-depth="${(0.7 + index * 0.27).toFixed(2)}"><span>${String(index + 1).padStart(2, "0")}</span><strong>${escapeHtml(typeLabel(type))}</strong></a>`;
+    })
+    .join("");
+  const body = `
+    <section class="zone-card hero generated-hub-hero generated-hub-hero--${escapeHtml(typeSlug(title))} intent-hero intent-hero--knowledge">
+      <div class="intent-hero__grid generated-hub-hero__intro">
+        <div class="section-head intent-hero__copy">
+          <p class="eyebrow">KNOWLEDGE PLATFORM</p>
+          <h1 class="display-title">${escapeHtml(title)}</h1>
+          <p class="lede">${escapeHtml(description)}</p>
+          <div class="button-row button-row--compact generated-hub-hero__actions">
+            <a class="button button--primary" href="/search/">Search graph</a>
+            <a class="button button--secondary" href="${secondaryAction}">${secondaryLabel}</a>
+          </div>
+        </div>
+        <div class="intent-hero__stage knowledge-graph-stage" data-intent-stage aria-label="Knowledge graph overview">
+          <div class="intent-hero__stage-label"><span>Addressable knowledge</span><strong>${items.length} connected records</strong></div>
+          <svg class="knowledge-graph-stage__lines" viewBox="0 0 600 440" aria-hidden="true">
+            <path d="M300 220 L112 116 M300 220 L478 102 M300 220 L108 334 M300 220 L492 326" />
+            <circle cx="300" cy="220" r="116" />
+          </svg>
+          <div class="knowledge-graph-stage__core" data-depth="1.3"><span>EA</span><strong>${escapeHtml(title)}</strong></div>
+          ${sceneNodes}
+          <div class="intent-hero__stats generated-hub-hero__metrics" aria-label="Knowledge inventory" data-depth="1.65">${metrics}</div>
+        </div>
+      </div>
+    </section>
+    <section class="zone-card hero generated-hub-index">
+      <div class="section-head"><p class="eyebrow">GRAPH INDEX</p><h2>Browse the connected records.</h2><p class="lede">Every entry keeps its type, status, context and route into the wider knowledge system.</p></div>
+${hubCards(items).trimStart()}
+    </section>`;
   await writeText(routeToFile(rootDir, route), renderLayout({
     metadata: hubMetadata(title, description, route),
     body,

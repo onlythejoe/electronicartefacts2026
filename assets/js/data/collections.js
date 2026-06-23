@@ -56,7 +56,7 @@ window.EA_COLLECTIONS = [
     type: "Collection",
     status: "research",
     visibility: "public",
-    summary: "UnionMob project, operating system and governance research.",
+    summary: "External UnionMob collaboration, CTO work, UMOS licensing model and governance research.",
     rules: { entityIds: ["unionmob", "unionmob-os1", "governance-studies"], tags: ["UnionMob"], kinds: ["project", "program", "researchField", "researchLog"] },
   },
   {

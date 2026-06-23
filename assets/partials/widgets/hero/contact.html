@@ -1,6 +1,6 @@
-<section class="zone-card hero contact-page-hero">
-  <div class="split">
-    <div class="section-head">
+<section class="zone-card hero contact-page-hero intent-hero intent-hero--contact">
+  <div class="intent-hero__grid">
+    <div class="section-head intent-hero__copy">
       <p class="eyebrow">CONTACT / COLLABORATION</p>
       <h1 class="display-title">Start with the problem, not the format.</h1>
       <p class="lede">
@@ -8,22 +8,28 @@
         creative technology and complex redesigns that need structural thinking.
       </p>
       <div class="button-row">
-        <a class="button button--primary" href="mailto:electronic.artefacts@gmail.com">Start a conversation</a>
+        <a class="button button--primary" href="#contact-discovery">Build a project brief</a>
+        <a class="button button--secondary" href="mailto:electronic.artefacts@gmail.com">Send an email</a>
         <a class="button button--secondary" href="./work.html">See the work</a>
       </div>
     </div>
-    <aside class="panel panel--soft">
-      <p class="card__meta">A useful first message</p>
-      <h2 class="card__title">Context, objective, constraints.</h2>
-      <p class="card__copy">
-        Explain what should change, who it serves, what already exists, the main constraint and
-        any relevant timing. A finished specification is not required.
-      </p>
-      <div class="tag-cluster tag-cluster--compact">
-        <span class="chip">Product</span>
-        <span class="chip">Culture</span>
-        <span class="chip">Research</span>
-        <span class="chip">Collaboration</span>
+
+    <aside class="intent-hero__stage contact-signal" data-intent-stage aria-label="Project brief signal flow">
+      <div class="intent-hero__stage-label"><span>Collaboration signal</span><strong>Unstructured idea → useful brief</strong></div>
+      <div class="contact-signal__line" aria-hidden="true"></div>
+      <article class="contact-signal__card contact-signal__card--problem" data-depth="0.7">
+        <span>01 / Problem</span><strong>What should change?</strong><em>Start in your own words.</em>
+      </article>
+      <article class="contact-signal__card contact-signal__card--context" data-depth="1.12">
+        <span>02 / Context</span><strong>Who does it serve?</strong><em>Audience, system, constraints.</em>
+      </article>
+      <article class="contact-signal__card contact-signal__card--brief" data-depth="1.55">
+        <span>03 / Brief</span><strong>A clear entry point.</strong><em>Ready for a real conversation.</em>
+      </article>
+      <div class="intent-hero__stats" aria-label="Contact workflow statistics" data-depth="1.75">
+        <span><strong>01</strong><em>direct route</em></span>
+        <span><strong>04</strong><em>project pathways</em></span>
+        <span><strong>LOCAL</strong><em>brief analysis</em></span>
       </div>
     </aside>
   </div>

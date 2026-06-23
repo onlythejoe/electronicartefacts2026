@@ -274,10 +274,10 @@
             { kicker: "Next", title: "Contact", copy: "Start a similar product or system brief.", reason: "Useful if this is the model you need.", cta: "Start a Collaboration", href: "./contact.html" },
           ],
           unionmob: [
-            { kicker: "Next", title: "Programs", copy: "See the software stack and runtime layer.", reason: "Useful if you want the system backbone.", cta: "View Programs", href: "./programs.html" },
+            { kicker: "Technical asset", title: "Programs", copy: "See the Electronic Artefacts-owned systems behind the CTO contribution.", reason: "Useful for understanding the software layer without confusing it with UnionMob ownership.", cta: "View Programs", href: "./programs.html" },
             { kicker: "Next", title: "Research", copy: "Inspect the investigations that inform it.", reason: "Useful if you want the conceptual layer.", cta: "Enter Research", href: "./research.html" },
-            { kicker: "Next", title: "Work", copy: "Review the studio and client-facing layer.", reason: "Useful if you want service context.", cta: "See Client Work", href: "./work.html" },
-            { kicker: "Next", title: "Contact", copy: "Discuss a platform or coordination system.", reason: "Useful if the project should be extended.", cta: "Start a Collaboration", href: "./contact.html" },
+            { kicker: "Partnership", title: "Work", copy: "Review how Electronic Artefacts presents external technical collaborations.", reason: "Useful for comparing the CTO role with commissioned delivery.", cta: "See Work", href: "./work.html" },
+            { kicker: "Next", title: "Contact", copy: "Discuss an external CTO, platform or coordination-system collaboration.", reason: "Useful when a project needs technical leadership with clear ownership boundaries.", cta: "Start a Collaboration", href: "./contact.html" },
           ],
         };
         const cards = projectCards[item.id] || [

@@ -1,32 +1,41 @@
-<section class="zone-card hero research-page-hero">
-  <div class="section-head research-page-hero__content">
-    <p class="eyebrow">RESEARCH / ELECTRONIC ARTEFACTS</p>
-    <h1 class="display-title">Ideas become systems, methods and works.</h1>
-    <p class="lede">
-      An open research practice across technology, culture, knowledge, perception and creative production.
-      Questions are documented, connected, tested and translated into usable forms.
-    </p>
-    <div class="button-row button-row--compact">
-      <a class="button button--primary" href="#research-fields">Explore the fields</a>
-      <a class="button button--secondary" href="#research-programs">See applied research</a>
-      <a class="button button--secondary" href="#research-notes">Read the notes</a>
+<section class="zone-card hero research-page-hero intent-hero intent-hero--research">
+  <div class="intent-hero__grid">
+    <div class="section-head research-page-hero__content intent-hero__copy">
+      <p class="eyebrow">RESEARCH / ELECTRONIC ARTEFACTS</p>
+      <h1 class="display-title">Ideas become systems, methods and works.</h1>
+      <p class="lede">
+        An open research practice across technology, culture, knowledge, perception and creative production.
+        Questions are documented, connected, tested and translated into usable forms.
+      </p>
+      <div class="button-row button-row--compact">
+        <a class="button button--primary" href="#research-fields">Explore the fields</a>
+        <a class="button button--secondary" href="#research-programs">Applied research</a>
+        <a class="button button--secondary" href="#research-notes">Research notes</a>
+      </div>
     </div>
-  </div>
-  <div class="research-page-hero__principles" aria-label="Research principles">
-    <article>
-      <span>01</span>
-      <strong>Observe</strong>
-      <p>Start from signals, constraints, behaviours and unresolved questions.</p>
-    </article>
-    <article>
-      <span>02</span>
-      <strong>Connect</strong>
-      <p>Place each finding inside a wider graph of fields, projects and precedents.</p>
-    </article>
-    <article>
-      <span>03</span>
-      <strong>Prototype</strong>
-      <p>Turn hypotheses into software, interfaces, artefacts and operational models.</p>
-    </article>
+
+    <div class="intent-hero__stage research-constellation" data-intent-stage aria-label="Research constellation">
+      <div class="intent-hero__stage-label"><span>Research graph</span><strong>Question → evidence → system</strong></div>
+      <svg class="research-constellation__lines" viewBox="0 0 600 440" aria-hidden="true">
+        <path d="M92 296 C180 240 190 110 308 128 S434 254 516 104" />
+        <path d="M104 312 C226 370 340 354 496 278" />
+        <path d="M308 128 C340 214 384 240 496 278" />
+      </svg>
+      <a class="research-constellation__node research-constellation__node--observe" href="#research-fields" data-depth="0.72">
+        <span>01</span><strong>Observe</strong><em>signals and constraints</em>
+      </a>
+      <a class="research-constellation__node research-constellation__node--connect" href="#research-programs" data-depth="1.18">
+        <span>02</span><strong>Connect</strong><em>fields and precedents</em>
+      </a>
+      <a class="research-constellation__node research-constellation__node--prototype" href="#research-notes" data-depth="1.48">
+        <span>03</span><strong>Prototype</strong><em>usable evidence</em>
+      </a>
+      <span class="research-constellation__pulse" data-depth="1.8" aria-hidden="true"></span>
+      <div class="intent-hero__stats" aria-label="Research statistics" data-depth="1.62">
+        <span><strong>03</strong><em>research paths</em></span>
+        <span><strong>04</strong><em>working steps</em></span>
+        <span><strong>LIVE</strong><em>connected graph</em></span>
+      </div>
+    </div>
   </div>
 </section>

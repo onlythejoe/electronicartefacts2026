@@ -1,6 +1,6 @@
-<section class="zone-card hero">
-  <div class="split">
-    <div class="section-head">
+<section class="zone-card hero intent-hero intent-hero--about">
+  <div class="intent-hero__grid">
+    <div class="section-head intent-hero__copy">
       <p class="eyebrow">ABOUT</p>
       <h1 class="display-title">A studio before an ecosystem.</h1>
       <p class="lede">
@@ -15,21 +15,25 @@
       </div>
     </div>
 
-    <aside class="panel panel--soft" aria-label="About at a glance">
-      <p class="card__meta">At a glance</p>
-      <p class="card__copy">
-        Founder-led, system-oriented and built for projects where brand, product,
-        interface, architecture and cultural context need to move together.
-      </p>
-      <div class="tag-cluster tag-cluster--compact">
-        <span class="chip">Client work</span>
-        <span class="chip">Software programs</span>
-        <span class="chip">Knowledge systems</span>
-        <span class="chip">Culture</span>
+    <aside class="intent-hero__stage about-orbit" data-intent-stage aria-label="Electronic Artefacts ecosystem">
+      <div class="intent-hero__stage-label"><span>Studio model</span><strong>One core / connected outputs</strong></div>
+      <svg class="about-orbit__lines" viewBox="0 0 600 440" aria-hidden="true">
+        <ellipse cx="300" cy="220" rx="212" ry="132" />
+        <ellipse cx="300" cy="220" rx="132" ry="198" transform="rotate(42 300 220)" />
+      </svg>
+      <div class="about-orbit__core" data-depth="1.15">
+        <img src="./assets/media/projects/electronic-artefacts/electronic-artefacts-icon-192.png" alt="" />
+        <span>Electronic<br />Artefacts</span>
       </div>
-      <p class="card__copy">
-        The ecosystem model below explains how research, programs, projects and archive stay connected.
-      </p>
+      <a href="#about-layers" class="about-orbit__node about-orbit__node--research" data-depth="0.75">Research</a>
+      <a href="./programs.html" class="about-orbit__node about-orbit__node--programs" data-depth="1.25">Programs</a>
+      <a href="./projects.html" class="about-orbit__node about-orbit__node--projects" data-depth="1.5">Projects</a>
+      <a href="./archive.html" class="about-orbit__node about-orbit__node--archive" data-depth="0.9">Archive</a>
+      <div class="intent-hero__stats" aria-label="Studio statistics" data-depth="1.65">
+        <span><strong>01</strong><em>independent studio</em></span>
+        <span><strong>04</strong><em>connected layers</em></span>
+        <span><strong>2026</strong><em>public edition</em></span>
+      </div>
     </aside>
   </div>
 </section>
