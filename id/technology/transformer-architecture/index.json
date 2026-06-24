@@ -47,10 +47,27 @@
   "category": "approach",
   "roleInEcosystem": "Transformers provide the principal architectural reference for understanding attention, context and token prediction in modern large language models.",
   "officialUrl": "https://arxiv.org/abs/1706.03762",
-  "bodyHtml": "<h2>Role</h2>\n<p>The transformer processes token relationships through attention and feed-forward layers, enabling parallel training and flexible sequence modeling.</p>\n<h2>Use</h2>\n<p>Electronic Artefacts uses the transformer as a technical reference for explaining LLMs and multimodal systems rather than as a synonym for intelligence.</p>\n<h2>References</h2>\n<p>See Attention Is All You Need and Large Language Model.</p>\n",
+  "bodyHtml": "<h2 id=\"role\">Role</h2>\n<p>The transformer processes token relationships through attention and feed-forward layers, enabling parallel training and flexible sequence modeling.</p>\n<h2 id=\"use\">Use</h2>\n<p>Electronic Artefacts uses the transformer as a technical reference for explaining LLMs and multimodal systems rather than as a synonym for intelligence.</p>\n<h2 id=\"references\">References</h2>\n<p>See Attention Is All You Need and Large Language Model.</p>\n",
   "headings": [
     "Role",
     "Use",
     "References"
+  ],
+  "headingItems": [
+    {
+      "level": 2,
+      "title": "Role",
+      "id": "role"
+    },
+    {
+      "level": 2,
+      "title": "Use",
+      "id": "use"
+    },
+    {
+      "level": 2,
+      "title": "References",
+      "id": "references"
+    }
   ]
 }

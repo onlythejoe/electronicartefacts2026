@@ -63,12 +63,39 @@
     "Events reduce temporal coupling but introduce ordering, duplication, replay and observability concerns.",
     "Durable event systems require explicit schemas, identifiers and consumer behavior."
   ],
-  "bodyHtml": "<h2>Definition</h2>\n<p>Event-driven architecture organizes behavior around events: durable descriptions that something happened. Producers emit events, transport infrastructure makes them available, and consumers react without requiring the producer to control every downstream action.</p>\n<h2>Architecture</h2>\n<p>An event normally needs an identifier, type, source, time, subject and data. Brokers, queues or logs manage transport. Consumers update projections, trigger workflows or integrate systems.</p>\n<h2>Electronic Artefacts position</h2>\n<p>VASTE uses event propagation as part of contextual execution. Events should retain entity identity and relation context so that downstream behavior remains explainable.</p>\n<h2>Limitations</h2>\n<p>Consumers may receive duplicates, events can arrive late or out of order, schemas evolve, and replay can reproduce unintended side effects. Idempotency, versioning and observability are core design requirements.</p>\n<h2>References</h2>\n<p>See CloudEvents, Redis Streams, Contextual Execution and Graph Runtime.</p>\n",
+  "bodyHtml": "<h2 id=\"definition\">Definition</h2>\n<p>Event-driven architecture organizes behavior around events: durable descriptions that something happened. Producers emit events, transport infrastructure makes them available, and consumers react without requiring the producer to control every downstream action.</p>\n<h2 id=\"architecture\">Architecture</h2>\n<p>An event normally needs an identifier, type, source, time, subject and data. Brokers, queues or logs manage transport. Consumers update projections, trigger workflows or integrate systems.</p>\n<h2 id=\"electronic-artefacts-position\">Electronic Artefacts position</h2>\n<p>VASTE uses event propagation as part of contextual execution. Events should retain entity identity and relation context so that downstream behavior remains explainable.</p>\n<h2 id=\"limitations\">Limitations</h2>\n<p>Consumers may receive duplicates, events can arrive late or out of order, schemas evolve, and replay can reproduce unintended side effects. Idempotency, versioning and observability are core design requirements.</p>\n<h2 id=\"references\">References</h2>\n<p>See CloudEvents, Redis Streams, Contextual Execution and Graph Runtime.</p>\n",
   "headings": [
     "Definition",
     "Architecture",
     "Electronic Artefacts position",
     "Limitations",
     "References"
+  ],
+  "headingItems": [
+    {
+      "level": 2,
+      "title": "Definition",
+      "id": "definition"
+    },
+    {
+      "level": 2,
+      "title": "Architecture",
+      "id": "architecture"
+    },
+    {
+      "level": 2,
+      "title": "Electronic Artefacts position",
+      "id": "electronic-artefacts-position"
+    },
+    {
+      "level": 2,
+      "title": "Limitations",
+      "id": "limitations"
+    },
+    {
+      "level": 2,
+      "title": "References",
+      "id": "references"
+    }
   ]
 }

@@ -47,10 +47,27 @@
   "category": "library",
   "roleInEcosystem": "llama.cpp provides a practical reference implementation for local, quantized and hardware-portable language-model inference.",
   "officialUrl": "https://github.com/ggml-org/llama.cpp",
-  "bodyHtml": "<h2>Role</h2>\n<p>llama.cpp runs supported language models locally through a portable native runtime and quantized model formats.</p>\n<h2>Use</h2>\n<p>It is useful for private prototypes, offline inference, model evaluation and local knowledge tools where hosted APIs are not required.</p>\n<h2>References</h2>\n<p>See the official llama.cpp repository and Open-Weight Model.</p>\n",
+  "bodyHtml": "<h2 id=\"role\">Role</h2>\n<p>llama.cpp runs supported language models locally through a portable native runtime and quantized model formats.</p>\n<h2 id=\"use\">Use</h2>\n<p>It is useful for private prototypes, offline inference, model evaluation and local knowledge tools where hosted APIs are not required.</p>\n<h2 id=\"references\">References</h2>\n<p>See the official llama.cpp repository and Open-Weight Model.</p>\n",
   "headings": [
     "Role",
     "Use",
     "References"
+  ],
+  "headingItems": [
+    {
+      "level": 2,
+      "title": "Role",
+      "id": "role"
+    },
+    {
+      "level": 2,
+      "title": "Use",
+      "id": "use"
+    },
+    {
+      "level": 2,
+      "title": "References",
+      "id": "references"
+    }
   ]
 }

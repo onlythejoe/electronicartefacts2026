@@ -62,12 +62,39 @@
     "Web audio turns the browser into a viable medium for interactive sound systems.",
     "Browser sound work needs careful attention to latency, permissions, performance and preservation."
   ],
-  "bodyHtml": "<h2>Definition</h2>\n<p>Web audio is the practice of building audio systems inside browser runtimes. It includes playback, synthesis, routing, analysis and interaction.</p>\n<h2>Scope</h2>\n<p>The concept includes the Web Audio API, audio graphs, analyzers, oscillators, buffers, effects, user gestures, latency and integration with visual systems.</p>\n<h2>Applications</h2>\n<p>Electronic Artefacts can use web audio for public demonstrations, interactive essays, ORETH prototypes and browser-native listening tools.</p>\n<h2>Limitations</h2>\n<p>Browser audio is constrained by device performance, browser policy, autoplay rules and long-term API compatibility.</p>\n<h2>References</h2>\n<p>See the W3C Web Audio API, ORETH, signal archaeology and creative coding.</p>\n",
+  "bodyHtml": "<h2 id=\"definition\">Definition</h2>\n<p>Web audio is the practice of building audio systems inside browser runtimes. It includes playback, synthesis, routing, analysis and interaction.</p>\n<h2 id=\"scope\">Scope</h2>\n<p>The concept includes the Web Audio API, audio graphs, analyzers, oscillators, buffers, effects, user gestures, latency and integration with visual systems.</p>\n<h2 id=\"applications\">Applications</h2>\n<p>Electronic Artefacts can use web audio for public demonstrations, interactive essays, ORETH prototypes and browser-native listening tools.</p>\n<h2 id=\"limitations\">Limitations</h2>\n<p>Browser audio is constrained by device performance, browser policy, autoplay rules and long-term API compatibility.</p>\n<h2 id=\"references\">References</h2>\n<p>See the W3C Web Audio API, ORETH, signal archaeology and creative coding.</p>\n",
   "headings": [
     "Definition",
     "Scope",
     "Applications",
     "Limitations",
     "References"
+  ],
+  "headingItems": [
+    {
+      "level": 2,
+      "title": "Definition",
+      "id": "definition"
+    },
+    {
+      "level": 2,
+      "title": "Scope",
+      "id": "scope"
+    },
+    {
+      "level": 2,
+      "title": "Applications",
+      "id": "applications"
+    },
+    {
+      "level": 2,
+      "title": "Limitations",
+      "id": "limitations"
+    },
+    {
+      "level": 2,
+      "title": "References",
+      "id": "references"
+    }
   ]
 }

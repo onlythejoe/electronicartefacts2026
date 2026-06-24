@@ -82,7 +82,7 @@
   "citation": {
     "preferred": "Electronic Artefacts. \"Creative Coding Pedagogy from Logo to p5.js.\" Technical article, version 1.0.0, 2026."
   },
-  "bodyHtml": "<h2>Problem</h2>\n<p>Programming education often begins with abstraction before experience. Learners are asked to understand syntax, data structures and control flow before they have a reason to care. For artists, designers, musicians and researchers, that sequence can be discouraging. It makes code feel like a gate rather than a medium.</p>\n<p>Creative coding pedagogy approaches the problem differently. It gives learners immediate feedback through images, sound, motion or interaction. A variable changes a color. A loop draws a pattern. A mouse movement transforms a system. The learner sees computation as material.</p>\n<p>Electronic Artefacts needs this topic because the Knowledge Hub is not only documenting finished systems. It can also teach the literacies behind them.</p>\n<h2>Introduction</h2>\n<p>Creative coding is programming used as a creative medium. Its pedagogy focuses on exploration, iteration, modification and visible feedback. The goal is not to turn every artist into a software engineer. The goal is to make computational thinking available as artistic and design practice.</p>\n<p>Processing and p5.js are central references because they helped normalize programming environments for artists and educators. They made code examples legible, visual and shareable.</p>\n<h2>Context</h2>\n<p>Creative coding sits between programming, design, art, education and open source. It values small experiments, readable examples and playful iteration. This does not mean it is technically shallow. Many advanced systems begin as simple sketches.</p>\n<p>The pedagogical value comes from the loop: write, run, see, change, compare, discuss. This loop makes concepts concrete. Coordinates, loops, functions, arrays and events become visible behaviors.</p>\n<h2>History</h2>\n<p>Creative coding pedagogy has roots in educational computing, Logo, computer art, Processing, design schools, media labs, open-source libraries and online communities. Logo made programming spatial and embodied through turtle graphics. Processing later gave artists a simplified environment for visual computation. p5.js brought that ethos into the browser.</p>\n<p>This lineage matters because it frames code as expressive material. It also makes examples culturally important. A well-written sketch teaches by being copied and changed.</p>\n<h2>Core concepts</h2>\n<p>Sketch: a small program treated as experiment or study.</p>\n<p>Iteration: repeated adjustment through feedback.</p>\n<p>Parameter: a controllable value that changes behavior.</p>\n<p>Event: a user or system action that changes state.</p>\n<p>Coordinate system: the spatial model used to draw or place elements.</p>\n<p>Remix: learning by modifying an existing example.</p>\n<h2>Architecture</h2>\n<p>A creative coding learning environment needs a low-friction editor, fast execution, visible output, accessible examples, error feedback and a community vocabulary. It should reduce setup friction without hiding all computational structure.</p>\n<p>For public knowledge pages, the architecture can include embedded sketches, source links, explanations and related concepts. A sketch should be both an experience and a record.</p>\n<h2>Implementation</h2>\n<p>Implementation should start with constraints. A good beginner exercise uses a small set of ideas: draw a shape, change a variable, repeat with a loop, respond to input, save an output.</p>\n<p>As learners progress, exercises can introduce systems thinking: particles, noise, audio input, typographic layout, generative rules, data mapping and shader pipelines.</p>\n<p>Documentation is part of implementation. The code should explain itself through naming and structure, not only comments.</p>\n<h2>Practical applications</h2>\n<p>Creative coding pedagogy supports visual design, motion studies, sound experiments, generative identity, interactive essays, data visualization, projection systems and browser-based tools.</p>\n<p>For Electronic Artefacts, it supports future public demonstrations around VASTE, ORETH, Palimpsests and procedural graphics. A concept can be explained through text and an executable sketch.</p>\n<h2>Tools</h2>\n<p>Useful tools include Processing, p5.js, Canvas, WebGL, Web Audio, GLSL, Observable notebooks, CodePen-like environments, local static servers, version control and screenshot capture for documentation.</p>\n<h2>Evidence</h2>\n<p>Processing and p5.js are public examples of creative coding pedagogy at scale. Their ecosystems show how examples, tutorials and open libraries can create computational literacy beyond traditional computer science pathways.</p>\n<p>Electronic Artefacts already has concepts that benefit from this pedagogical model: <a href=\"/knowledge/concepts/creative-coding/\">Creative Coding</a>, <a href=\"/knowledge/concepts/generative-system/\">Generative System</a> and <a href=\"/knowledge/concepts/procedural-graphics/\">Procedural Graphics</a>.</p>\n<h2>Editorial method</h2>\n<p>A Knowledge Hub teaching article should avoid hiding complexity behind magic. It should show a minimal model, explain why it works, then point to extensions.</p>\n<p>The best editorial pattern is progressive disclosure: simple sketch, concept explanation, variation, related system, preservation note.</p>\n<h2>Common mistakes</h2>\n<p>The first mistake is reducing creative coding to visuals. Sound, text, data, motion and interaction are equally important.</p>\n<p>The second mistake is over-polishing examples. Learners need readable systems, not only impressive outputs.</p>\n<p>The third mistake is ignoring accessibility. Creative coding examples should consider keyboard input, reduced motion, contrast and alternative descriptions.</p>\n<h2>Electronic Artefacts implications</h2>\n<p>Electronic Artefacts can use creative coding pedagogy to make its research more legible. Instead of presenting generative systems as finished artefacts only, the site can show the steps, constraints and rules that produce them.</p>\n<p>This supports organic search because learners search for concepts, tools and patterns. It supports the brand because the teaching remains connected to serious artistic and technical work.</p>\n<h2>Knowledge graph role</h2>\n<p>Creative coding examples become much more valuable when they are linked to concepts. A sketch about particles can document procedural graphics. A browser audio sketch can connect to Web Audio and ORETH. A typography sketch can connect to reading systems and motion design. Without those relations, examples remain isolated snippets.</p>\n<p>For Electronic Artefacts, the graph can turn teaching material into research infrastructure. A beginner article can link upward to a deeper concept. A project page can link downward to a small explanatory sketch. This creates multiple entry points for readers with different skill levels.</p>\n<h2>Evaluation criteria</h2>\n<p>A creative coding lesson should be judged by more than output quality. Does the code reveal the concept? Can a learner change one parameter and understand the effect? Does the example avoid unnecessary dependencies? Does it explain failure states? Does it connect to history and critique?</p>\n<p>The strongest exercises are small but expandable. They let a reader understand a system’s core behavior, then imagine variations.</p>\n<h2>Editorial standard</h2>\n<p>Examples should be readable before they are impressive. Variable names, structure and comments should clarify intention. Screenshots and outputs should be paired with explanations of process. If a sketch uses randomness, the article should explain whether the randomness is expressive, exploratory or incidental.</p>\n<p>This standard prevents the Knowledge Hub from becoming a gallery of effects. It turns examples into durable learning objects.</p>\n<h2>Reader pathway</h2>\n<p>A strong path for this topic starts with a learner’s need: how do I make code feel tangible? The article should answer that question with sketches, then connect the reader to deeper systems. A drawing loop leads to procedural graphics. A changing parameter leads to generative systems. A shared example leads to open source. This path makes the Knowledge Hub useful to beginners without flattening the research context.</p>\n<p>The next articles should move from pedagogy into <a href=\"/knowledge/concepts/procedural-graphics/\">Procedural Graphics</a>, <a href=\"/knowledge/concepts/web-audio/\">Web Audio</a> and algorithmic composition.</p>\n<p>This also creates a practical SEO ladder. Introductory coding questions can lead to deeper Electronic Artefacts material about systems, archives, audio and generative practice.</p>\n<p>It also gives future workshops a reusable editorial base.</p>\n<h2>Future work</h2>\n<p>Future articles should cover p5.js patterns, coordinate systems, noise, particles, shaders, interactive sound, generative typography, live coding and preserving code-based sketches.</p>\n<h2>Related concepts</h2>\n<p>Read <a href=\"/knowledge/concepts/creative-coding/\">Creative Coding</a>, <a href=\"/knowledge/concepts/open-source/\">Open Source</a>, <a href=\"/knowledge/concepts/procedural-graphics/\">Procedural Graphics</a> and <a href=\"/knowledge/concepts/generative-system/\">Generative System</a>.</p>\n<h2>Suggested reading</h2>\n<p>Start with Processing and p5.js examples. Study small sketches by changing one parameter at a time.</p>\n<h2>Related articles</h2>\n<p>Continue with <a href=\"/publications/open-source-as-cultural-infrastructure/\">Open Source as Cultural Infrastructure</a> and <a href=\"/publications/procedural-graphics-shaders-and-visual-systems/\">Procedural Graphics, Shaders and Visual Systems</a>.</p>\n<h2>Glossary</h2>\n<p>Sketch: a compact creative program or study.</p>\n<p>Parameter: a value exposed for adjustment.</p>\n<p>Remix: learning through modification.</p>\n<p>Event: user or system action that changes program state.</p>\n<h2>Limitations</h2>\n<p>Creative coding pedagogy can under-teach software architecture if it remains at sketch level forever. Learners eventually need structure, testing, performance and maintainability.</p>\n<p>It can also overemphasize novelty. Strong creative coding education should include critique, history and cultural context.</p>\n<h2>References</h2>\n<ul>\n<li>Processing Foundation. Processing Overview.</li>\n<li>Processing Foundation. p5.js.</li>\n<li>Electronic Artefacts. Creative Coding, Generative System and Open Source records.</li>\n</ul>\n",
+  "bodyHtml": "<h2 id=\"problem\">Problem</h2>\n<p>Programming education often begins with abstraction before experience. Learners are asked to understand syntax, data structures and control flow before they have a reason to care. For artists, designers, musicians and researchers, that sequence can be discouraging. It makes code feel like a gate rather than a medium.</p>\n<p>Creative coding pedagogy approaches the problem differently. It gives learners immediate feedback through images, sound, motion or interaction. A variable changes a color. A loop draws a pattern. A mouse movement transforms a system. The learner sees computation as material.</p>\n<p>Electronic Artefacts needs this topic because the Knowledge Hub is not only documenting finished systems. It can also teach the literacies behind them.</p>\n<h2 id=\"introduction\">Introduction</h2>\n<p>Creative coding is programming used as a creative medium. Its pedagogy focuses on exploration, iteration, modification and visible feedback. The goal is not to turn every artist into a software engineer. The goal is to make computational thinking available as artistic and design practice.</p>\n<p>Processing and p5.js are central references because they helped normalize programming environments for artists and educators. They made code examples legible, visual and shareable.</p>\n<h2 id=\"context\">Context</h2>\n<p>Creative coding sits between programming, design, art, education and open source. It values small experiments, readable examples and playful iteration. This does not mean it is technically shallow. Many advanced systems begin as simple sketches.</p>\n<p>The pedagogical value comes from the loop: write, run, see, change, compare, discuss. This loop makes concepts concrete. Coordinates, loops, functions, arrays and events become visible behaviors.</p>\n<h2 id=\"history\">History</h2>\n<p>Creative coding pedagogy has roots in educational computing, Logo, computer art, Processing, design schools, media labs, open-source libraries and online communities. Logo made programming spatial and embodied through turtle graphics. Processing later gave artists a simplified environment for visual computation. p5.js brought that ethos into the browser.</p>\n<p>This lineage matters because it frames code as expressive material. It also makes examples culturally important. A well-written sketch teaches by being copied and changed.</p>\n<h2 id=\"core-concepts\">Core concepts</h2>\n<p>Sketch: a small program treated as experiment or study.</p>\n<p>Iteration: repeated adjustment through feedback.</p>\n<p>Parameter: a controllable value that changes behavior.</p>\n<p>Event: a user or system action that changes state.</p>\n<p>Coordinate system: the spatial model used to draw or place elements.</p>\n<p>Remix: learning by modifying an existing example.</p>\n<h2 id=\"architecture\">Architecture</h2>\n<p>A creative coding learning environment needs a low-friction editor, fast execution, visible output, accessible examples, error feedback and a community vocabulary. It should reduce setup friction without hiding all computational structure.</p>\n<p>For public knowledge pages, the architecture can include embedded sketches, source links, explanations and related concepts. A sketch should be both an experience and a record.</p>\n<h2 id=\"implementation\">Implementation</h2>\n<p>Implementation should start with constraints. A good beginner exercise uses a small set of ideas: draw a shape, change a variable, repeat with a loop, respond to input, save an output.</p>\n<p>As learners progress, exercises can introduce systems thinking: particles, noise, audio input, typographic layout, generative rules, data mapping and shader pipelines.</p>\n<p>Documentation is part of implementation. The code should explain itself through naming and structure, not only comments.</p>\n<h2 id=\"practical-applications\">Practical applications</h2>\n<p>Creative coding pedagogy supports visual design, motion studies, sound experiments, generative identity, interactive essays, data visualization, projection systems and browser-based tools.</p>\n<p>For Electronic Artefacts, it supports future public demonstrations around VASTE, ORETH, Palimpsests and procedural graphics. A concept can be explained through text and an executable sketch.</p>\n<h2 id=\"tools\">Tools</h2>\n<p>Useful tools include Processing, p5.js, Canvas, WebGL, Web Audio, GLSL, Observable notebooks, CodePen-like environments, local static servers, version control and screenshot capture for documentation.</p>\n<h2 id=\"evidence\">Evidence</h2>\n<p>Processing and p5.js are public examples of creative coding pedagogy at scale. Their ecosystems show how examples, tutorials and open libraries can create computational literacy beyond traditional computer science pathways.</p>\n<p>Electronic Artefacts already has concepts that benefit from this pedagogical model: <a href=\"/knowledge/concepts/creative-coding/\">Creative Coding</a>, <a href=\"/knowledge/concepts/generative-system/\">Generative System</a> and <a href=\"/knowledge/concepts/procedural-graphics/\">Procedural Graphics</a>.</p>\n<h2 id=\"editorial-method\">Editorial method</h2>\n<p>A Knowledge Hub teaching article should avoid hiding complexity behind magic. It should show a minimal model, explain why it works, then point to extensions.</p>\n<p>The best editorial pattern is progressive disclosure: simple sketch, concept explanation, variation, related system, preservation note.</p>\n<h2 id=\"common-mistakes\">Common mistakes</h2>\n<p>The first mistake is reducing creative coding to visuals. Sound, text, data, motion and interaction are equally important.</p>\n<p>The second mistake is over-polishing examples. Learners need readable systems, not only impressive outputs.</p>\n<p>The third mistake is ignoring accessibility. Creative coding examples should consider keyboard input, reduced motion, contrast and alternative descriptions.</p>\n<h2 id=\"electronic-artefacts-implications\">Electronic Artefacts implications</h2>\n<p>Electronic Artefacts can use creative coding pedagogy to make its research more legible. Instead of presenting generative systems as finished artefacts only, the site can show the steps, constraints and rules that produce them.</p>\n<p>This supports organic search because learners search for concepts, tools and patterns. It supports the brand because the teaching remains connected to serious artistic and technical work.</p>\n<h2 id=\"knowledge-graph-role\">Knowledge graph role</h2>\n<p>Creative coding examples become much more valuable when they are linked to concepts. A sketch about particles can document procedural graphics. A browser audio sketch can connect to Web Audio and ORETH. A typography sketch can connect to reading systems and motion design. Without those relations, examples remain isolated snippets.</p>\n<p>For Electronic Artefacts, the graph can turn teaching material into research infrastructure. A beginner article can link upward to a deeper concept. A project page can link downward to a small explanatory sketch. This creates multiple entry points for readers with different skill levels.</p>\n<h2 id=\"evaluation-criteria\">Evaluation criteria</h2>\n<p>A creative coding lesson should be judged by more than output quality. Does the code reveal the concept? Can a learner change one parameter and understand the effect? Does the example avoid unnecessary dependencies? Does it explain failure states? Does it connect to history and critique?</p>\n<p>The strongest exercises are small but expandable. They let a reader understand a system’s core behavior, then imagine variations.</p>\n<h2 id=\"editorial-standard\">Editorial standard</h2>\n<p>Examples should be readable before they are impressive. Variable names, structure and comments should clarify intention. Screenshots and outputs should be paired with explanations of process. If a sketch uses randomness, the article should explain whether the randomness is expressive, exploratory or incidental.</p>\n<p>This standard prevents the Knowledge Hub from becoming a gallery of effects. It turns examples into durable learning objects.</p>\n<h2 id=\"reader-pathway\">Reader pathway</h2>\n<p>A strong path for this topic starts with a learner’s need: how do I make code feel tangible? The article should answer that question with sketches, then connect the reader to deeper systems. A drawing loop leads to procedural graphics. A changing parameter leads to generative systems. A shared example leads to open source. This path makes the Knowledge Hub useful to beginners without flattening the research context.</p>\n<p>The next articles should move from pedagogy into <a href=\"/knowledge/concepts/procedural-graphics/\">Procedural Graphics</a>, <a href=\"/knowledge/concepts/web-audio/\">Web Audio</a> and algorithmic composition.</p>\n<p>This also creates a practical SEO ladder. Introductory coding questions can lead to deeper Electronic Artefacts material about systems, archives, audio and generative practice.</p>\n<p>It also gives future workshops a reusable editorial base.</p>\n<h2 id=\"future-work\">Future work</h2>\n<p>Future articles should cover p5.js patterns, coordinate systems, noise, particles, shaders, interactive sound, generative typography, live coding and preserving code-based sketches.</p>\n<h2 id=\"related-concepts\">Related concepts</h2>\n<p>Read <a href=\"/knowledge/concepts/creative-coding/\">Creative Coding</a>, <a href=\"/knowledge/concepts/open-source/\">Open Source</a>, <a href=\"/knowledge/concepts/procedural-graphics/\">Procedural Graphics</a> and <a href=\"/knowledge/concepts/generative-system/\">Generative System</a>.</p>\n<h2 id=\"suggested-reading\">Suggested reading</h2>\n<p>Start with Processing and p5.js examples. Study small sketches by changing one parameter at a time.</p>\n<h2 id=\"related-articles\">Related articles</h2>\n<p>Continue with <a href=\"/publications/open-source-as-cultural-infrastructure/\">Open Source as Cultural Infrastructure</a> and <a href=\"/publications/procedural-graphics-shaders-and-visual-systems/\">Procedural Graphics, Shaders and Visual Systems</a>.</p>\n<h2 id=\"glossary\">Glossary</h2>\n<p>Sketch: a compact creative program or study.</p>\n<p>Parameter: a value exposed for adjustment.</p>\n<p>Remix: learning through modification.</p>\n<p>Event: user or system action that changes program state.</p>\n<h2 id=\"limitations\">Limitations</h2>\n<p>Creative coding pedagogy can under-teach software architecture if it remains at sketch level forever. Learners eventually need structure, testing, performance and maintainability.</p>\n<p>It can also overemphasize novelty. Strong creative coding education should include critique, history and cultural context.</p>\n<h2 id=\"references\">References</h2>\n<ul>\n<li>Processing Foundation. Processing Overview.</li>\n<li>Processing Foundation. p5.js.</li>\n<li>Electronic Artefacts. Creative Coding, Generative System and Open Source records.</li>\n</ul>\n",
   "headings": [
     "Problem",
     "Introduction",
@@ -108,5 +108,127 @@
     "Glossary",
     "Limitations",
     "References"
+  ],
+  "headingItems": [
+    {
+      "level": 2,
+      "title": "Problem",
+      "id": "problem"
+    },
+    {
+      "level": 2,
+      "title": "Introduction",
+      "id": "introduction"
+    },
+    {
+      "level": 2,
+      "title": "Context",
+      "id": "context"
+    },
+    {
+      "level": 2,
+      "title": "History",
+      "id": "history"
+    },
+    {
+      "level": 2,
+      "title": "Core concepts",
+      "id": "core-concepts"
+    },
+    {
+      "level": 2,
+      "title": "Architecture",
+      "id": "architecture"
+    },
+    {
+      "level": 2,
+      "title": "Implementation",
+      "id": "implementation"
+    },
+    {
+      "level": 2,
+      "title": "Practical applications",
+      "id": "practical-applications"
+    },
+    {
+      "level": 2,
+      "title": "Tools",
+      "id": "tools"
+    },
+    {
+      "level": 2,
+      "title": "Evidence",
+      "id": "evidence"
+    },
+    {
+      "level": 2,
+      "title": "Editorial method",
+      "id": "editorial-method"
+    },
+    {
+      "level": 2,
+      "title": "Common mistakes",
+      "id": "common-mistakes"
+    },
+    {
+      "level": 2,
+      "title": "Electronic Artefacts implications",
+      "id": "electronic-artefacts-implications"
+    },
+    {
+      "level": 2,
+      "title": "Knowledge graph role",
+      "id": "knowledge-graph-role"
+    },
+    {
+      "level": 2,
+      "title": "Evaluation criteria",
+      "id": "evaluation-criteria"
+    },
+    {
+      "level": 2,
+      "title": "Editorial standard",
+      "id": "editorial-standard"
+    },
+    {
+      "level": 2,
+      "title": "Reader pathway",
+      "id": "reader-pathway"
+    },
+    {
+      "level": 2,
+      "title": "Future work",
+      "id": "future-work"
+    },
+    {
+      "level": 2,
+      "title": "Related concepts",
+      "id": "related-concepts"
+    },
+    {
+      "level": 2,
+      "title": "Suggested reading",
+      "id": "suggested-reading"
+    },
+    {
+      "level": 2,
+      "title": "Related articles",
+      "id": "related-articles"
+    },
+    {
+      "level": 2,
+      "title": "Glossary",
+      "id": "glossary"
+    },
+    {
+      "level": 2,
+      "title": "Limitations",
+      "id": "limitations"
+    },
+    {
+      "level": 2,
+      "title": "References",
+      "id": "references"
+    }
   ]
 }

@@ -79,7 +79,7 @@
   "citation": {
     "preferred": "Electronic Artefacts. \"Procedural Graphics, Shaders and Visual Systems.\" Technical article, version 1.0.0, 2026."
   },
-  "bodyHtml": "<h2>Problem</h2>\n<p>Digital visuals are often discussed as finished images: a poster, an interface, a frame, a render, a still from a motion system. Procedural graphics shift attention from output to system. The important question becomes: what rules, parameters and transformations produced this image?</p>\n<p>The problem is that procedural visuals can become generic. Noise fields, particles, gradients and shader effects are everywhere. Without conceptual discipline, procedural work becomes a recognizable style rather than a way of thinking.</p>\n<p>Electronic Artefacts needs procedural graphics as a knowledge topic because many future visual systems will be generated, parameterized, animated or linked to audio and graph state.</p>\n<h2>Introduction</h2>\n<p>Procedural graphics are generated from rules. The rules may be mathematical, physical, typographic, random, data-driven or interactive. A shader may compute color for every pixel. A particle system may simulate motion. A layout system may arrange elements from graph data.</p>\n<p>The key idea is that the visual form is not drawn once. It emerges from a system that can be changed, repeated, versioned and studied.</p>\n<h2>Context</h2>\n<p>Creative coding made procedural graphics accessible to artists and designers. WebGL brought GPU-accelerated visual systems to browsers. Shader communities made pixel-level experimentation teachable. Generative art platforms made procedural outputs collectible and public.</p>\n<p>But procedural graphics have value beyond spectacle. They can explain data, express identity, create interactive archives, visualize audio and reveal structural patterns.</p>\n<h2>History</h2>\n<p>Procedural image-making belongs to the history of computer graphics, algorithmic art, simulation, demoscene culture, game engines, design systems and scientific visualization. Early computer artists used plotters and rule-based systems. Later GPUs and shaders made real-time procedural form widely available.</p>\n<p>The browser changed distribution. A procedural visual could be viewed, inspected and interacted with through a public URL.</p>\n<h2>Core concepts</h2>\n<p>Rule: a procedure that determines visual output.</p>\n<p>Parameter: a value that changes the rule’s behavior.</p>\n<p>Shader: code that runs on the GPU to compute visual results.</p>\n<p>Noise: structured pseudo-random variation.</p>\n<p>Simulation: a system that evolves according to rules over time.</p>\n<p>Visual grammar: the set of constraints that makes outputs feel related.</p>\n<h2>Architecture</h2>\n<p>A procedural visual system usually has input, rule layer, state, rendering and evaluation. Input may include time, audio, pointer position, data, random seeds or graph entities. The rule layer transforms input. State stores memory. Rendering converts state into pixels. Evaluation decides whether the output communicates, performs and belongs.</p>\n<p>For Electronic Artefacts, graph data can become input. An article, project or concept could influence layout, color, motion or sound. The visual system should remain documented so the relation is understandable.</p>\n<h2>Implementation</h2>\n<p>Implementation can begin with simple canvas drawing, then move into WebGL and shaders when performance or pixel control matters. The system should expose meaningful parameters: density, scale, rhythm, color relation, input source, seed and time behavior.</p>\n<p>Preservation requires recording code, version, parameter ranges, seeds, browser assumptions and exported outputs. A procedural work that cannot be rebuilt can still be documented, but it loses part of its meaning.</p>\n<h2>Practical applications</h2>\n<p>Procedural graphics support generative identity systems, interactive essays, audio visualizers, archive maps, simulation-based artworks, data-driven publication layouts and motion systems.</p>\n<p>For Palimpsests, procedural graphics could express layers, residue and transformation. For ORETH, they could visualize audio features. For VASTE, they could represent graph runtime state.</p>\n<h2>Tools</h2>\n<p>Useful tools include Canvas, SVG, WebGL, GLSL, Three.js, p5.js, Processing, shader editors, image export tools, performance profilers, version control and screenshot regression tests.</p>\n<h2>Evidence</h2>\n<p>Khronos describes WebGL as a browser technology for low-level graphics based on OpenGL ES. In practice, that makes shader and GPU pipelines available to public web pages.</p>\n<p>Electronic Artefacts already has concepts that support procedural work: <a href=\"/knowledge/concepts/generative-system/\">Generative System</a>, <a href=\"/knowledge/concepts/creative-coding/\">Creative Coding</a> and <a href=\"/knowledge/concepts/motion-design/\">Motion Design</a>.</p>\n<h2>Editorial method</h2>\n<p>A procedural graphics article should show the system’s logic. It should explain inputs, parameters and constraints before presenting visual output as if it were self-evident.</p>\n<p>Screenshots should be treated as evidence of a runtime, not as the entire work.</p>\n<h2>Common mistakes</h2>\n<p>The first mistake is treating randomness as depth. Randomness needs constraints.</p>\n<p>The second mistake is ignoring performance. A beautiful system that fails on ordinary devices is weak public infrastructure.</p>\n<p>The third mistake is leaving the reader unable to connect visual behavior to concept.</p>\n<h2>Electronic Artefacts implications</h2>\n<p>Procedural graphics can help Electronic Artefacts build a recognizable visual research language without relying on static branding alone. The site can develop visual systems that respond to knowledge, sound and archives.</p>\n<p>The Knowledge Hub should document those systems so future readers can understand their technical and cultural meaning.</p>\n<h2>Knowledge graph role</h2>\n<p>Procedural graphics can be represented as more than images. A visual system may be powered by WebGL, implement a generative system, use graph data, respond to audio and produce artefacts. Those are distinct relations. A graph can preserve them in a way that a static screenshot cannot.</p>\n<p>This matters for Electronic Artefacts because future visual systems may connect VASTE, ORETH and Palimpsests. A shader could visualize audio residue. A generative layout could respond to knowledge entities. A motion system could express archival layers. Each output should remain attached to its rule system and context.</p>\n<h2>Evaluation criteria</h2>\n<p>A procedural visual system should be evaluated through coherence, performance, relevance and preservation. Do the parameters create meaningful variation? Does the visual grammar fit the subject? Does it run reliably on target devices? Can the system be rebuilt or at least documented later?</p>\n<p>It should also be evaluated critically. Procedural complexity is not the same as cultural depth. A simple rule that clarifies a concept can be stronger than a complex shader with no relation to content.</p>\n<h2>Editorial standard</h2>\n<p>When publishing procedural graphics, include the rule logic in prose. Name the inputs, parameters and output conditions. If screenshots are shown, identify them as captured states. If the system is interactive, explain what interaction changes. If the system uses randomness, record whether outputs are repeatable.</p>\n<p>This makes visual systems legible as research objects, not only aesthetic surfaces.</p>\n<h2>Reader pathway</h2>\n<p>Procedural graphics attract readers through visual curiosity, but the article should not stop at effects. It should move from visible output to system logic: rules, parameters, shaders, runtime conditions and preservation. A reader who arrives for WebGL can leave understanding generative systems. A designer who arrives for visual inspiration can leave with a stronger model of visual grammar.</p>\n<p>This topic should point toward <a href=\"/knowledge/concepts/motion-design/\">Motion Design</a>, <a href=\"/knowledge/concepts/creative-coding/\">Creative Coding</a>, <a href=\"/knowledge/technologies/webgl/\">WebGL</a> and future shader-specific articles. It is also a natural bridge toward Palimpsests, where layers and transformation can become visual method rather than decoration.</p>\n<p>It can also support VASTE by making graph structure visible. A procedural interface can show density, relation, confidence or change over time, as long as the mapping is explained. The point is not to turn every dataset into spectacle. The point is to give abstract structure a readable visual behavior.</p>\n<p>For readers, this creates a path from visual curiosity to systems literacy. They can begin with shaders and end with a better understanding of graphs, audio and archives.</p>\n<h2>Future work</h2>\n<p>Future articles should cover shaders, noise, particles, generative typography, graph visualization, audio-reactive visuals, WebGL preservation and parameter design.</p>\n<h2>Related concepts</h2>\n<p>Read <a href=\"/knowledge/concepts/procedural-graphics/\">Procedural Graphics</a>, <a href=\"/knowledge/technologies/webgl/\">WebGL</a>, <a href=\"/knowledge/concepts/generative-system/\">Generative System</a>, <a href=\"/knowledge/concepts/creative-coding/\">Creative Coding</a> and <a href=\"/knowledge/concepts/motion-design/\">Motion Design</a>.</p>\n<h2>Suggested reading</h2>\n<p>Start with small shader examples, then study WebGL fundamentals and creative coding sketches that expose parameters clearly.</p>\n<h2>Related articles</h2>\n<p>Continue with <a href=\"/publications/creative-coding-pedagogy-from-logo-to-p5js/\">Creative Coding Pedagogy from Logo to p5.js</a> and <a href=\"/publications/motion-design-time-and-interface-semantics/\">Motion Design, Time and Interface Semantics</a>.</p>\n<h2>Glossary</h2>\n<p>Shader: GPU program used for rendering.</p>\n<p>Seed: value used to initialize repeatable variation.</p>\n<p>Noise: pseudo-random signal with structure.</p>\n<p>Visual grammar: constraints that make outputs coherent.</p>\n<h2>Limitations</h2>\n<p>Procedural graphics can be difficult to preserve because they depend on runtime conditions. Browser versions, GPU differences and library changes matter.</p>\n<p>They can also become aesthetic shorthand. A durable article should connect the system to purpose, material and context.</p>\n<h2>References</h2>\n<ul>\n<li>Khronos Group. WebGL.</li>\n<li>Electronic Artefacts. Generative System, Creative Coding and Motion Design records.</li>\n</ul>\n",
+  "bodyHtml": "<h2 id=\"problem\">Problem</h2>\n<p>Digital visuals are often discussed as finished images: a poster, an interface, a frame, a render, a still from a motion system. Procedural graphics shift attention from output to system. The important question becomes: what rules, parameters and transformations produced this image?</p>\n<p>The problem is that procedural visuals can become generic. Noise fields, particles, gradients and shader effects are everywhere. Without conceptual discipline, procedural work becomes a recognizable style rather than a way of thinking.</p>\n<p>Electronic Artefacts needs procedural graphics as a knowledge topic because many future visual systems will be generated, parameterized, animated or linked to audio and graph state.</p>\n<h2 id=\"introduction\">Introduction</h2>\n<p>Procedural graphics are generated from rules. The rules may be mathematical, physical, typographic, random, data-driven or interactive. A shader may compute color for every pixel. A particle system may simulate motion. A layout system may arrange elements from graph data.</p>\n<p>The key idea is that the visual form is not drawn once. It emerges from a system that can be changed, repeated, versioned and studied.</p>\n<h2 id=\"context\">Context</h2>\n<p>Creative coding made procedural graphics accessible to artists and designers. WebGL brought GPU-accelerated visual systems to browsers. Shader communities made pixel-level experimentation teachable. Generative art platforms made procedural outputs collectible and public.</p>\n<p>But procedural graphics have value beyond spectacle. They can explain data, express identity, create interactive archives, visualize audio and reveal structural patterns.</p>\n<h2 id=\"history\">History</h2>\n<p>Procedural image-making belongs to the history of computer graphics, algorithmic art, simulation, demoscene culture, game engines, design systems and scientific visualization. Early computer artists used plotters and rule-based systems. Later GPUs and shaders made real-time procedural form widely available.</p>\n<p>The browser changed distribution. A procedural visual could be viewed, inspected and interacted with through a public URL.</p>\n<h2 id=\"core-concepts\">Core concepts</h2>\n<p>Rule: a procedure that determines visual output.</p>\n<p>Parameter: a value that changes the rule’s behavior.</p>\n<p>Shader: code that runs on the GPU to compute visual results.</p>\n<p>Noise: structured pseudo-random variation.</p>\n<p>Simulation: a system that evolves according to rules over time.</p>\n<p>Visual grammar: the set of constraints that makes outputs feel related.</p>\n<h2 id=\"architecture\">Architecture</h2>\n<p>A procedural visual system usually has input, rule layer, state, rendering and evaluation. Input may include time, audio, pointer position, data, random seeds or graph entities. The rule layer transforms input. State stores memory. Rendering converts state into pixels. Evaluation decides whether the output communicates, performs and belongs.</p>\n<p>For Electronic Artefacts, graph data can become input. An article, project or concept could influence layout, color, motion or sound. The visual system should remain documented so the relation is understandable.</p>\n<h2 id=\"implementation\">Implementation</h2>\n<p>Implementation can begin with simple canvas drawing, then move into WebGL and shaders when performance or pixel control matters. The system should expose meaningful parameters: density, scale, rhythm, color relation, input source, seed and time behavior.</p>\n<p>Preservation requires recording code, version, parameter ranges, seeds, browser assumptions and exported outputs. A procedural work that cannot be rebuilt can still be documented, but it loses part of its meaning.</p>\n<h2 id=\"practical-applications\">Practical applications</h2>\n<p>Procedural graphics support generative identity systems, interactive essays, audio visualizers, archive maps, simulation-based artworks, data-driven publication layouts and motion systems.</p>\n<p>For Palimpsests, procedural graphics could express layers, residue and transformation. For ORETH, they could visualize audio features. For VASTE, they could represent graph runtime state.</p>\n<h2 id=\"tools\">Tools</h2>\n<p>Useful tools include Canvas, SVG, WebGL, GLSL, Three.js, p5.js, Processing, shader editors, image export tools, performance profilers, version control and screenshot regression tests.</p>\n<h2 id=\"evidence\">Evidence</h2>\n<p>Khronos describes WebGL as a browser technology for low-level graphics based on OpenGL ES. In practice, that makes shader and GPU pipelines available to public web pages.</p>\n<p>Electronic Artefacts already has concepts that support procedural work: <a href=\"/knowledge/concepts/generative-system/\">Generative System</a>, <a href=\"/knowledge/concepts/creative-coding/\">Creative Coding</a> and <a href=\"/knowledge/concepts/motion-design/\">Motion Design</a>.</p>\n<h2 id=\"editorial-method\">Editorial method</h2>\n<p>A procedural graphics article should show the system’s logic. It should explain inputs, parameters and constraints before presenting visual output as if it were self-evident.</p>\n<p>Screenshots should be treated as evidence of a runtime, not as the entire work.</p>\n<h2 id=\"common-mistakes\">Common mistakes</h2>\n<p>The first mistake is treating randomness as depth. Randomness needs constraints.</p>\n<p>The second mistake is ignoring performance. A beautiful system that fails on ordinary devices is weak public infrastructure.</p>\n<p>The third mistake is leaving the reader unable to connect visual behavior to concept.</p>\n<h2 id=\"electronic-artefacts-implications\">Electronic Artefacts implications</h2>\n<p>Procedural graphics can help Electronic Artefacts build a recognizable visual research language without relying on static branding alone. The site can develop visual systems that respond to knowledge, sound and archives.</p>\n<p>The Knowledge Hub should document those systems so future readers can understand their technical and cultural meaning.</p>\n<h2 id=\"knowledge-graph-role\">Knowledge graph role</h2>\n<p>Procedural graphics can be represented as more than images. A visual system may be powered by WebGL, implement a generative system, use graph data, respond to audio and produce artefacts. Those are distinct relations. A graph can preserve them in a way that a static screenshot cannot.</p>\n<p>This matters for Electronic Artefacts because future visual systems may connect VASTE, ORETH and Palimpsests. A shader could visualize audio residue. A generative layout could respond to knowledge entities. A motion system could express archival layers. Each output should remain attached to its rule system and context.</p>\n<h2 id=\"evaluation-criteria\">Evaluation criteria</h2>\n<p>A procedural visual system should be evaluated through coherence, performance, relevance and preservation. Do the parameters create meaningful variation? Does the visual grammar fit the subject? Does it run reliably on target devices? Can the system be rebuilt or at least documented later?</p>\n<p>It should also be evaluated critically. Procedural complexity is not the same as cultural depth. A simple rule that clarifies a concept can be stronger than a complex shader with no relation to content.</p>\n<h2 id=\"editorial-standard\">Editorial standard</h2>\n<p>When publishing procedural graphics, include the rule logic in prose. Name the inputs, parameters and output conditions. If screenshots are shown, identify them as captured states. If the system is interactive, explain what interaction changes. If the system uses randomness, record whether outputs are repeatable.</p>\n<p>This makes visual systems legible as research objects, not only aesthetic surfaces.</p>\n<h2 id=\"reader-pathway\">Reader pathway</h2>\n<p>Procedural graphics attract readers through visual curiosity, but the article should not stop at effects. It should move from visible output to system logic: rules, parameters, shaders, runtime conditions and preservation. A reader who arrives for WebGL can leave understanding generative systems. A designer who arrives for visual inspiration can leave with a stronger model of visual grammar.</p>\n<p>This topic should point toward <a href=\"/knowledge/concepts/motion-design/\">Motion Design</a>, <a href=\"/knowledge/concepts/creative-coding/\">Creative Coding</a>, <a href=\"/knowledge/technologies/webgl/\">WebGL</a> and future shader-specific articles. It is also a natural bridge toward Palimpsests, where layers and transformation can become visual method rather than decoration.</p>\n<p>It can also support VASTE by making graph structure visible. A procedural interface can show density, relation, confidence or change over time, as long as the mapping is explained. The point is not to turn every dataset into spectacle. The point is to give abstract structure a readable visual behavior.</p>\n<p>For readers, this creates a path from visual curiosity to systems literacy. They can begin with shaders and end with a better understanding of graphs, audio and archives.</p>\n<h2 id=\"future-work\">Future work</h2>\n<p>Future articles should cover shaders, noise, particles, generative typography, graph visualization, audio-reactive visuals, WebGL preservation and parameter design.</p>\n<h2 id=\"related-concepts\">Related concepts</h2>\n<p>Read <a href=\"/knowledge/concepts/procedural-graphics/\">Procedural Graphics</a>, <a href=\"/knowledge/technologies/webgl/\">WebGL</a>, <a href=\"/knowledge/concepts/generative-system/\">Generative System</a>, <a href=\"/knowledge/concepts/creative-coding/\">Creative Coding</a> and <a href=\"/knowledge/concepts/motion-design/\">Motion Design</a>.</p>\n<h2 id=\"suggested-reading\">Suggested reading</h2>\n<p>Start with small shader examples, then study WebGL fundamentals and creative coding sketches that expose parameters clearly.</p>\n<h2 id=\"related-articles\">Related articles</h2>\n<p>Continue with <a href=\"/publications/creative-coding-pedagogy-from-logo-to-p5js/\">Creative Coding Pedagogy from Logo to p5.js</a> and <a href=\"/publications/motion-design-time-and-interface-semantics/\">Motion Design, Time and Interface Semantics</a>.</p>\n<h2 id=\"glossary\">Glossary</h2>\n<p>Shader: GPU program used for rendering.</p>\n<p>Seed: value used to initialize repeatable variation.</p>\n<p>Noise: pseudo-random signal with structure.</p>\n<p>Visual grammar: constraints that make outputs coherent.</p>\n<h2 id=\"limitations\">Limitations</h2>\n<p>Procedural graphics can be difficult to preserve because they depend on runtime conditions. Browser versions, GPU differences and library changes matter.</p>\n<p>They can also become aesthetic shorthand. A durable article should connect the system to purpose, material and context.</p>\n<h2 id=\"references\">References</h2>\n<ul>\n<li>Khronos Group. WebGL.</li>\n<li>Electronic Artefacts. Generative System, Creative Coding and Motion Design records.</li>\n</ul>\n",
   "headings": [
     "Problem",
     "Introduction",
@@ -105,5 +105,127 @@
     "Glossary",
     "Limitations",
     "References"
+  ],
+  "headingItems": [
+    {
+      "level": 2,
+      "title": "Problem",
+      "id": "problem"
+    },
+    {
+      "level": 2,
+      "title": "Introduction",
+      "id": "introduction"
+    },
+    {
+      "level": 2,
+      "title": "Context",
+      "id": "context"
+    },
+    {
+      "level": 2,
+      "title": "History",
+      "id": "history"
+    },
+    {
+      "level": 2,
+      "title": "Core concepts",
+      "id": "core-concepts"
+    },
+    {
+      "level": 2,
+      "title": "Architecture",
+      "id": "architecture"
+    },
+    {
+      "level": 2,
+      "title": "Implementation",
+      "id": "implementation"
+    },
+    {
+      "level": 2,
+      "title": "Practical applications",
+      "id": "practical-applications"
+    },
+    {
+      "level": 2,
+      "title": "Tools",
+      "id": "tools"
+    },
+    {
+      "level": 2,
+      "title": "Evidence",
+      "id": "evidence"
+    },
+    {
+      "level": 2,
+      "title": "Editorial method",
+      "id": "editorial-method"
+    },
+    {
+      "level": 2,
+      "title": "Common mistakes",
+      "id": "common-mistakes"
+    },
+    {
+      "level": 2,
+      "title": "Electronic Artefacts implications",
+      "id": "electronic-artefacts-implications"
+    },
+    {
+      "level": 2,
+      "title": "Knowledge graph role",
+      "id": "knowledge-graph-role"
+    },
+    {
+      "level": 2,
+      "title": "Evaluation criteria",
+      "id": "evaluation-criteria"
+    },
+    {
+      "level": 2,
+      "title": "Editorial standard",
+      "id": "editorial-standard"
+    },
+    {
+      "level": 2,
+      "title": "Reader pathway",
+      "id": "reader-pathway"
+    },
+    {
+      "level": 2,
+      "title": "Future work",
+      "id": "future-work"
+    },
+    {
+      "level": 2,
+      "title": "Related concepts",
+      "id": "related-concepts"
+    },
+    {
+      "level": 2,
+      "title": "Suggested reading",
+      "id": "suggested-reading"
+    },
+    {
+      "level": 2,
+      "title": "Related articles",
+      "id": "related-articles"
+    },
+    {
+      "level": 2,
+      "title": "Glossary",
+      "id": "glossary"
+    },
+    {
+      "level": 2,
+      "title": "Limitations",
+      "id": "limitations"
+    },
+    {
+      "level": 2,
+      "title": "References",
+      "id": "references"
+    }
   ]
 }

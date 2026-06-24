@@ -139,7 +139,7 @@
     }
   ],
   "selectionNote": "The collection prioritizes evergreen questions with high search demand and strong structural links to VASTE, Vestiges, ORETH, Palimpsests and the public Knowledge Hub.",
-  "bodyHtml": "<h2>Thesis</h2>\n<p>AI systems become durable when models are treated as components inside architectures of knowledge, identity, permissions, events, evaluation and human judgment.</p>\n<h2>Selection logic</h2>\n<p>The collection begins with high-demand AI foundations, then connects them to systems thinking, ontologies, graph modeling and runtime infrastructure. This creates reading paths from general questions to Electronic Artefacts research and implementation contexts.</p>\n<h2>Editorial role</h2>\n<p>The articles avoid release news and product rankings. They explain stable mechanisms, tradeoffs and vocabulary that should remain useful as specific models and platforms change.</p>\n<h2>Current members</h2>\n<p>The collection includes twelve long-form publications, twelve canonical concepts and six technology records.</p>\n<h2>Internal pathways</h2>\n<p>LLM readers can move toward agents, local inference, RAG and multimodality. Systems readers can move toward graphs, events, Redis, service boundaries and domain operating systems. VASTE, Vestiges, ORETH and Palimpsests provide applied contexts.</p>\n<h2>Future expansion</h2>\n<p>The next wave should cover creative technologists, interactive installations, sound synthesis, real-time audio analysis, computational design, worldbuilding, visual direction and graph-generated web publishing.</p>\n",
+  "bodyHtml": "<h2 id=\"thesis\">Thesis</h2>\n<p>AI systems become durable when models are treated as components inside architectures of knowledge, identity, permissions, events, evaluation and human judgment.</p>\n<h2 id=\"selection-logic\">Selection logic</h2>\n<p>The collection begins with high-demand AI foundations, then connects them to systems thinking, ontologies, graph modeling and runtime infrastructure. This creates reading paths from general questions to Electronic Artefacts research and implementation contexts.</p>\n<h2 id=\"editorial-role\">Editorial role</h2>\n<p>The articles avoid release news and product rankings. They explain stable mechanisms, tradeoffs and vocabulary that should remain useful as specific models and platforms change.</p>\n<h2 id=\"current-members\">Current members</h2>\n<p>The collection includes twelve long-form publications, twelve canonical concepts and six technology records.</p>\n<h2 id=\"internal-pathways\">Internal pathways</h2>\n<p>LLM readers can move toward agents, local inference, RAG and multimodality. Systems readers can move toward graphs, events, Redis, service boundaries and domain operating systems. VASTE, Vestiges, ORETH and Palimpsests provide applied contexts.</p>\n<h2 id=\"future-expansion\">Future expansion</h2>\n<p>The next wave should cover creative technologists, interactive installations, sound synthesis, real-time audio analysis, computational design, worldbuilding, visual direction and graph-generated web publishing.</p>\n",
   "headings": [
     "Thesis",
     "Selection logic",
@@ -147,5 +147,37 @@
     "Current members",
     "Internal pathways",
     "Future expansion"
+  ],
+  "headingItems": [
+    {
+      "level": 2,
+      "title": "Thesis",
+      "id": "thesis"
+    },
+    {
+      "level": 2,
+      "title": "Selection logic",
+      "id": "selection-logic"
+    },
+    {
+      "level": 2,
+      "title": "Editorial role",
+      "id": "editorial-role"
+    },
+    {
+      "level": 2,
+      "title": "Current members",
+      "id": "current-members"
+    },
+    {
+      "level": 2,
+      "title": "Internal pathways",
+      "id": "internal-pathways"
+    },
+    {
+      "level": 2,
+      "title": "Future expansion",
+      "id": "future-expansion"
+    }
   ]
 }

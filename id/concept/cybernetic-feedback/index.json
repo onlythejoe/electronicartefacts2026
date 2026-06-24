@@ -65,7 +65,7 @@
     "Feedback is a core concept for understanding adaptive creative and technical systems.",
     "Cybernetic language should be used precisely because it carries both technical and cultural history."
   ],
-  "bodyHtml": "<h2>Definition</h2>\n<p>Cybernetic feedback is the circulation of information about a system’s state back into the system. That information can be used to regulate, correct, amplify, dampen or transform behavior.</p>\n<p>Feedback is not simply repetition. A loop becomes feedback when the output or state of a process affects future operation.</p>\n<h2>Scope</h2>\n<p>The concept includes control systems, adaptive behavior, self-regulation, homeostasis, signal processing, interface response, generative art, machine listening and organizational systems.</p>\n<h2>Historical context</h2>\n<p>Norbert Wiener framed cybernetics around control and communication across animals and machines. The field influenced engineering, computing, neuroscience, design, art and social theory. It also produced dangerous overextensions when feedback metaphors were applied without care.</p>\n<h2>Electronic Artefacts position</h2>\n<p>Electronic Artefacts uses cybernetic feedback as a precise historical and technical reference. It helps explain why graph runtime, contextual execution and generative systems depend on state observation and response. It also helps connect ORETH and Palimpsests to traditions of signal, noise, adaptation and machine perception.</p>\n<h2>Applications</h2>\n<p>Applications include adaptive interfaces, generative music, runtime governance, simulations, machine listening, search ranking, archive curation and human-computer interaction.</p>\n<h2>Limitations</h2>\n<p>Cybernetics can become vague if every circular relation is called feedback. The term should be reserved for systems where state information has a functional effect on behavior.</p>\n<h2>References</h2>\n<p>See Norbert Wiener, W. Ross Ashby, Generative System and Contextual Execution.</p>\n",
+  "bodyHtml": "<h2 id=\"definition\">Definition</h2>\n<p>Cybernetic feedback is the circulation of information about a system’s state back into the system. That information can be used to regulate, correct, amplify, dampen or transform behavior.</p>\n<p>Feedback is not simply repetition. A loop becomes feedback when the output or state of a process affects future operation.</p>\n<h2 id=\"scope\">Scope</h2>\n<p>The concept includes control systems, adaptive behavior, self-regulation, homeostasis, signal processing, interface response, generative art, machine listening and organizational systems.</p>\n<h2 id=\"historical-context\">Historical context</h2>\n<p>Norbert Wiener framed cybernetics around control and communication across animals and machines. The field influenced engineering, computing, neuroscience, design, art and social theory. It also produced dangerous overextensions when feedback metaphors were applied without care.</p>\n<h2 id=\"electronic-artefacts-position\">Electronic Artefacts position</h2>\n<p>Electronic Artefacts uses cybernetic feedback as a precise historical and technical reference. It helps explain why graph runtime, contextual execution and generative systems depend on state observation and response. It also helps connect ORETH and Palimpsests to traditions of signal, noise, adaptation and machine perception.</p>\n<h2 id=\"applications\">Applications</h2>\n<p>Applications include adaptive interfaces, generative music, runtime governance, simulations, machine listening, search ranking, archive curation and human-computer interaction.</p>\n<h2 id=\"limitations\">Limitations</h2>\n<p>Cybernetics can become vague if every circular relation is called feedback. The term should be reserved for systems where state information has a functional effect on behavior.</p>\n<h2 id=\"references\">References</h2>\n<p>See Norbert Wiener, W. Ross Ashby, Generative System and Contextual Execution.</p>\n",
   "headings": [
     "Definition",
     "Scope",
@@ -74,5 +74,42 @@
     "Applications",
     "Limitations",
     "References"
+  ],
+  "headingItems": [
+    {
+      "level": 2,
+      "title": "Definition",
+      "id": "definition"
+    },
+    {
+      "level": 2,
+      "title": "Scope",
+      "id": "scope"
+    },
+    {
+      "level": 2,
+      "title": "Historical context",
+      "id": "historical-context"
+    },
+    {
+      "level": 2,
+      "title": "Electronic Artefacts position",
+      "id": "electronic-artefacts-position"
+    },
+    {
+      "level": 2,
+      "title": "Applications",
+      "id": "applications"
+    },
+    {
+      "level": 2,
+      "title": "Limitations",
+      "id": "limitations"
+    },
+    {
+      "level": 2,
+      "title": "References",
+      "id": "references"
+    }
   ]
 }

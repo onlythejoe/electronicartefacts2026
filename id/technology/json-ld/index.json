@@ -52,10 +52,27 @@
   "versions": [
     "JSON-LD 1.1"
   ],
-  "bodyHtml": "<h2>Role</h2>\n<p>JSON-LD serializes Linked Data as JSON. It is practical for static websites because build tools can generate it alongside HTML without requiring a graph database at runtime.</p>\n<h2>Use</h2>\n<p>Electronic Artefacts uses JSON-LD to expose each public entity as structured data. Publications become articles, concepts become defined terms, programs become software applications or creative works, and identifier routes expose machine-readable records.</p>\n<h2>Limitations</h2>\n<p>JSON-LD improves machine interpretation, but it cannot repair weak content. The structured data should match visible human content and remain consistent with canonical routes.</p>\n",
+  "bodyHtml": "<h2 id=\"role\">Role</h2>\n<p>JSON-LD serializes Linked Data as JSON. It is practical for static websites because build tools can generate it alongside HTML without requiring a graph database at runtime.</p>\n<h2 id=\"use\">Use</h2>\n<p>Electronic Artefacts uses JSON-LD to expose each public entity as structured data. Publications become articles, concepts become defined terms, programs become software applications or creative works, and identifier routes expose machine-readable records.</p>\n<h2 id=\"limitations\">Limitations</h2>\n<p>JSON-LD improves machine interpretation, but it cannot repair weak content. The structured data should match visible human content and remain consistent with canonical routes.</p>\n",
   "headings": [
     "Role",
     "Use",
     "Limitations"
+  ],
+  "headingItems": [
+    {
+      "level": 2,
+      "title": "Role",
+      "id": "role"
+    },
+    {
+      "level": 2,
+      "title": "Use",
+      "id": "use"
+    },
+    {
+      "level": 2,
+      "title": "Limitations",
+      "id": "limitations"
+    }
   ]
 }

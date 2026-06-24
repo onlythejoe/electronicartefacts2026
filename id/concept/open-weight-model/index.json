@@ -61,7 +61,7 @@
     "Open weights can improve autonomy and inspectability without providing full training reproducibility.",
     "Model licenses, data information, code availability and use restrictions must be evaluated separately."
   ],
-  "bodyHtml": "<h2>Definition</h2>\n<p>An open-weight model makes learned parameters available for download and inference. Availability may permit local deployment, evaluation, quantization or fine-tuning, but the exact freedoms depend on the license and supplied components.</p>\n<h2>Open source distinction</h2>\n<p>The Open Source AI Definition requires freedoms to use, study, modify and share, together with the preferred form for modification. A weight release may omit training data information or training code and therefore remain open-weight rather than fully open source.</p>\n<h2>Applications</h2>\n<p>Open-weight models support private local assistants, offline tools, edge deployments, reproducible experiments and specialized creative systems.</p>\n<h2>Electronic Artefacts position</h2>\n<p>Local and open-weight models are relevant where archives, unreleased audio, project documents or private graphs should remain under operator control. Deployment choices must still account for provenance, security, performance and licensing.</p>\n<h2>Limitations</h2>\n<p>Running weights locally does not remove model bias, hallucination, data rights concerns or maintenance cost. Hardware requirements, context limits and update procedures remain operational constraints.</p>\n<h2>References</h2>\n<p>See the OSI Open Source AI Definition, llama.cpp, Open Source and Provenance.</p>\n",
+  "bodyHtml": "<h2 id=\"definition\">Definition</h2>\n<p>An open-weight model makes learned parameters available for download and inference. Availability may permit local deployment, evaluation, quantization or fine-tuning, but the exact freedoms depend on the license and supplied components.</p>\n<h2 id=\"open-source-distinction\">Open source distinction</h2>\n<p>The Open Source AI Definition requires freedoms to use, study, modify and share, together with the preferred form for modification. A weight release may omit training data information or training code and therefore remain open-weight rather than fully open source.</p>\n<h2 id=\"applications\">Applications</h2>\n<p>Open-weight models support private local assistants, offline tools, edge deployments, reproducible experiments and specialized creative systems.</p>\n<h2 id=\"electronic-artefacts-position\">Electronic Artefacts position</h2>\n<p>Local and open-weight models are relevant where archives, unreleased audio, project documents or private graphs should remain under operator control. Deployment choices must still account for provenance, security, performance and licensing.</p>\n<h2 id=\"limitations\">Limitations</h2>\n<p>Running weights locally does not remove model bias, hallucination, data rights concerns or maintenance cost. Hardware requirements, context limits and update procedures remain operational constraints.</p>\n<h2 id=\"references\">References</h2>\n<p>See the OSI Open Source AI Definition, llama.cpp, Open Source and Provenance.</p>\n",
   "headings": [
     "Definition",
     "Open source distinction",
@@ -69,5 +69,37 @@
     "Electronic Artefacts position",
     "Limitations",
     "References"
+  ],
+  "headingItems": [
+    {
+      "level": 2,
+      "title": "Definition",
+      "id": "definition"
+    },
+    {
+      "level": 2,
+      "title": "Open source distinction",
+      "id": "open-source-distinction"
+    },
+    {
+      "level": 2,
+      "title": "Applications",
+      "id": "applications"
+    },
+    {
+      "level": 2,
+      "title": "Electronic Artefacts position",
+      "id": "electronic-artefacts-position"
+    },
+    {
+      "level": 2,
+      "title": "Limitations",
+      "id": "limitations"
+    },
+    {
+      "level": 2,
+      "title": "References",
+      "id": "references"
+    }
   ]
 }

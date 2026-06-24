@@ -65,7 +65,7 @@
     "Agency is an architectural property of the whole system, not a property of the model output alone.",
     "Agents require stronger permissions, observability and evaluation than deterministic workflows."
   ],
-  "bodyHtml": "<h2>Definition</h2>\n<p>An AI agent is a system that lets a model influence the sequence of actions used to pursue an objective. It can inspect context, choose a tool, receive an observation, revise a plan and continue until a stopping condition is met.</p>\n<h2>Difference from a workflow</h2>\n<p>A workflow follows paths substantially defined in advance. An agent chooses among possible paths at runtime. Real systems often combine both: deterministic code controls permissions and irreversible actions while a model handles interpretation, planning or recovery.</p>\n<h2>System boundary</h2>\n<p>The agent includes more than the model. Tool definitions, credentials, memory, environment, logs, budgets, approval gates and evaluators all contribute to its behavior.</p>\n<h2>Electronic Artefacts position</h2>\n<p>Electronic Artefacts connects agents to contextual execution. An action should be constrained by actor identity, target entity, relation, evidence level, visibility and current state. VASTE provides a relevant research context for that model.</p>\n<h2>Limitations</h2>\n<p>Longer action loops increase latency, cost and the chance of compounding errors. Agents need sandboxing, bounded authority, explicit completion criteria and human review where consequences are difficult to reverse.</p>\n<h2>References</h2>\n<p>See Building Effective Agents, Contextual Execution, Large Language Model and Autonomous System.</p>\n",
+  "bodyHtml": "<h2 id=\"definition\">Definition</h2>\n<p>An AI agent is a system that lets a model influence the sequence of actions used to pursue an objective. It can inspect context, choose a tool, receive an observation, revise a plan and continue until a stopping condition is met.</p>\n<h2 id=\"difference-from-a-workflow\">Difference from a workflow</h2>\n<p>A workflow follows paths substantially defined in advance. An agent chooses among possible paths at runtime. Real systems often combine both: deterministic code controls permissions and irreversible actions while a model handles interpretation, planning or recovery.</p>\n<h2 id=\"system-boundary\">System boundary</h2>\n<p>The agent includes more than the model. Tool definitions, credentials, memory, environment, logs, budgets, approval gates and evaluators all contribute to its behavior.</p>\n<h2 id=\"electronic-artefacts-position\">Electronic Artefacts position</h2>\n<p>Electronic Artefacts connects agents to contextual execution. An action should be constrained by actor identity, target entity, relation, evidence level, visibility and current state. VASTE provides a relevant research context for that model.</p>\n<h2 id=\"limitations\">Limitations</h2>\n<p>Longer action loops increase latency, cost and the chance of compounding errors. Agents need sandboxing, bounded authority, explicit completion criteria and human review where consequences are difficult to reverse.</p>\n<h2 id=\"references\">References</h2>\n<p>See Building Effective Agents, Contextual Execution, Large Language Model and Autonomous System.</p>\n",
   "headings": [
     "Definition",
     "Difference from a workflow",
@@ -73,5 +73,37 @@
     "Electronic Artefacts position",
     "Limitations",
     "References"
+  ],
+  "headingItems": [
+    {
+      "level": 2,
+      "title": "Definition",
+      "id": "definition"
+    },
+    {
+      "level": 2,
+      "title": "Difference from a workflow",
+      "id": "difference-from-a-workflow"
+    },
+    {
+      "level": 2,
+      "title": "System boundary",
+      "id": "system-boundary"
+    },
+    {
+      "level": 2,
+      "title": "Electronic Artefacts position",
+      "id": "electronic-artefacts-position"
+    },
+    {
+      "level": 2,
+      "title": "Limitations",
+      "id": "limitations"
+    },
+    {
+      "level": 2,
+      "title": "References",
+      "id": "references"
+    }
   ]
 }

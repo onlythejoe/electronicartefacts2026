@@ -129,7 +129,7 @@
       "href": "https://www.instagram.com/vestiges.world/"
     }
   ],
-  "bodyHtml": "<h2>Position</h2>\n<p>Vestiges is the flagship public application of VASTE: a living knowledge infrastructure for culture, craft and human know-how. It is not a directory, an encyclopedia or a marketplace with editorial content attached. Its primary asset is a trusted graph of people, practices, materials, places, works and institutions.</p>\n<h2>The problem</h2>\n<p>Know-how is rarely contained in one source. It moves through apprenticeship, gestures, tools, workshops, documents, schools, territories and repeated practice. When those elements are reduced to isolated profiles or articles, the paths of transmission disappear. Vestiges is designed to preserve those paths without freezing living practices into a static archive.</p>\n<h2>Product thesis</h2>\n<p>Knowledge comes first. Public pages, professional profiles, learning resources, project opportunities and economic services all grow from the same structured graph. A transaction can happen inside Vestiges, but it should remain connected to the knowledge, provenance and relationships that make it meaningful.</p>\n<h2>The living graph</h2>\n<p>Every person, organization, technique, material, tool, work, place, project and document receives a durable identity. Relationships such as teaches, uses, makes, restores, supplies, certifies and participates in remain explicit, navigable and historized. The graph can therefore answer questions that a folder, feed or directory cannot.</p>\n<h2>Contribution and trust</h2>\n<p>Vestiges is designed for distributed contribution with clear responsibility. Additions remain attributable, reviewable and contextual. Practitioners, institutions, schools, researchers and cultural organizations can contribute from different positions without collapsing expertise into a single anonymous voice.</p>\n<h2>Public discovery</h2>\n<p>Each public node can expose a canonical page with a description, media, history, sources and connected entities. Discovery emerges from relation paths: a material leads to a technique, a technique to a practitioner, a practitioner to a place, a school, a work or a document. Search visibility is a projection of the knowledge model rather than a separate publishing layer.</p>\n<h2>Professional activation</h2>\n<p>Trusted knowledge can support professional workspaces, project matching, training pathways, commissions, institutional research, specialist services and APIs. These functions sit on top of the graph. They do not replace its cultural and documentary purpose.</p>\n<h2>VASTE foundation</h2>\n<p>VASTE provides the runtime foundation for identity, context, permissions, events and graph execution. It allows Vestiges to distinguish public knowledge from private working context, coordinate contribution states and preserve the history of entities and relationships as the platform evolves.</p>\n<h2>Current evidence</h2>\n<p>The current public evidence is architectural: the product definition, entity and relation models, contribution logic, public-page strategy, visual identity and documented relationship to VASTE. Product availability, adoption and performance claims will be added only when they can be substantiated.</p>\n<h2>Development status</h2>\n<p>Vestiges is in active development. The public record describes the product thesis and current architecture; interfaces, implementation details and access conditions will evolve through documented releases.</p>\n<h2>Public channel</h2>\n<p>Follow the visual and editorial development of the platform on <a href=\"https://www.instagram.com/vestiges.world/\">Instagram @vestiges.world</a>.</p>\n",
+  "bodyHtml": "<h2 id=\"position\">Position</h2>\n<p>Vestiges is the flagship public application of VASTE: a living knowledge infrastructure for culture, craft and human know-how. It is not a directory, an encyclopedia or a marketplace with editorial content attached. Its primary asset is a trusted graph of people, practices, materials, places, works and institutions.</p>\n<h2 id=\"the-problem\">The problem</h2>\n<p>Know-how is rarely contained in one source. It moves through apprenticeship, gestures, tools, workshops, documents, schools, territories and repeated practice. When those elements are reduced to isolated profiles or articles, the paths of transmission disappear. Vestiges is designed to preserve those paths without freezing living practices into a static archive.</p>\n<h2 id=\"product-thesis\">Product thesis</h2>\n<p>Knowledge comes first. Public pages, professional profiles, learning resources, project opportunities and economic services all grow from the same structured graph. A transaction can happen inside Vestiges, but it should remain connected to the knowledge, provenance and relationships that make it meaningful.</p>\n<h2 id=\"the-living-graph\">The living graph</h2>\n<p>Every person, organization, technique, material, tool, work, place, project and document receives a durable identity. Relationships such as teaches, uses, makes, restores, supplies, certifies and participates in remain explicit, navigable and historized. The graph can therefore answer questions that a folder, feed or directory cannot.</p>\n<h2 id=\"contribution-and-trust\">Contribution and trust</h2>\n<p>Vestiges is designed for distributed contribution with clear responsibility. Additions remain attributable, reviewable and contextual. Practitioners, institutions, schools, researchers and cultural organizations can contribute from different positions without collapsing expertise into a single anonymous voice.</p>\n<h2 id=\"public-discovery\">Public discovery</h2>\n<p>Each public node can expose a canonical page with a description, media, history, sources and connected entities. Discovery emerges from relation paths: a material leads to a technique, a technique to a practitioner, a practitioner to a place, a school, a work or a document. Search visibility is a projection of the knowledge model rather than a separate publishing layer.</p>\n<h2 id=\"professional-activation\">Professional activation</h2>\n<p>Trusted knowledge can support professional workspaces, project matching, training pathways, commissions, institutional research, specialist services and APIs. These functions sit on top of the graph. They do not replace its cultural and documentary purpose.</p>\n<h2 id=\"vaste-foundation\">VASTE foundation</h2>\n<p>VASTE provides the runtime foundation for identity, context, permissions, events and graph execution. It allows Vestiges to distinguish public knowledge from private working context, coordinate contribution states and preserve the history of entities and relationships as the platform evolves.</p>\n<h2 id=\"current-evidence\">Current evidence</h2>\n<p>The current public evidence is architectural: the product definition, entity and relation models, contribution logic, public-page strategy, visual identity and documented relationship to VASTE. Product availability, adoption and performance claims will be added only when they can be substantiated.</p>\n<h2 id=\"development-status\">Development status</h2>\n<p>Vestiges is in active development. The public record describes the product thesis and current architecture; interfaces, implementation details and access conditions will evolve through documented releases.</p>\n<h2 id=\"public-channel\">Public channel</h2>\n<p>Follow the visual and editorial development of the platform on <a href=\"https://www.instagram.com/vestiges.world/\">Instagram @vestiges.world</a>.</p>\n",
   "headings": [
     "Position",
     "The problem",
@@ -142,5 +142,62 @@
     "Current evidence",
     "Development status",
     "Public channel"
+  ],
+  "headingItems": [
+    {
+      "level": 2,
+      "title": "Position",
+      "id": "position"
+    },
+    {
+      "level": 2,
+      "title": "The problem",
+      "id": "the-problem"
+    },
+    {
+      "level": 2,
+      "title": "Product thesis",
+      "id": "product-thesis"
+    },
+    {
+      "level": 2,
+      "title": "The living graph",
+      "id": "the-living-graph"
+    },
+    {
+      "level": 2,
+      "title": "Contribution and trust",
+      "id": "contribution-and-trust"
+    },
+    {
+      "level": 2,
+      "title": "Public discovery",
+      "id": "public-discovery"
+    },
+    {
+      "level": 2,
+      "title": "Professional activation",
+      "id": "professional-activation"
+    },
+    {
+      "level": 2,
+      "title": "VASTE foundation",
+      "id": "vaste-foundation"
+    },
+    {
+      "level": 2,
+      "title": "Current evidence",
+      "id": "current-evidence"
+    },
+    {
+      "level": 2,
+      "title": "Development status",
+      "id": "development-status"
+    },
+    {
+      "level": 2,
+      "title": "Public channel",
+      "id": "public-channel"
+    }
   ]
 }

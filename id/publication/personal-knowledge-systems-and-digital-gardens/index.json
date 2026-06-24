@@ -88,7 +88,7 @@
   "citation": {
     "preferred": "Electronic Artefacts. \"Personal Knowledge Systems and Digital Gardens.\" Technical article, version 1.0.0, 2026."
   },
-  "bodyHtml": "<h2>Problem</h2>\n<p>People collect more information than they can use. Notes accumulate in applications, bookmarks vanish into folders, PDFs sit unread, conversations become impossible to find, and ideas repeat because earlier versions were never connected to later work. The problem is not only storage. The problem is retrieval, relation and revision.</p>\n<p>A personal knowledge system attempts to solve this at individual scale. A digital garden brings part of that practice into public. It treats knowledge as something cultivated over time rather than published once and abandoned.</p>\n<p>Electronic Artefacts has a related challenge at institutional scale. The Knowledge Hub needs to absorb research, projects, programs, concepts and sources without becoming a pile of pages. It needs the strengths of personal knowledge systems but with public editorial accountability.</p>\n<h2>Introduction</h2>\n<p>A personal knowledge system is a practice for capturing, linking, revising and retrieving knowledge. It may use notebooks, wikis, graph tools, plain text, databases or static pages. The tools matter, but the practice matters more.</p>\n<p>A digital garden is a public or semi-public knowledge space where notes can grow. It often favors interlinking, topic pages, revision and non-chronological navigation over polished feed-based publishing.</p>\n<p>The Knowledge Hub can use this pattern without becoming informal. It can publish complete articles while still showing relations, concepts, sources and future paths.</p>\n<h2>Context</h2>\n<p>The digital garden metaphor became popular because it resisted the pressure of feeds and finished announcements. A garden can have seedlings, evergreen pages and mature essays. That vocabulary is useful, but it can also become vague. A serious knowledge hub needs clearer status, maturity and evidence markers.</p>\n<p>Electronic Artefacts already has those markers in its entity schema: publication class, status, maturity, confidence, version, sources, subjects and typed relations. That gives the site a way to combine garden-like growth with library-like discipline.</p>\n<h2>History</h2>\n<p>Personal knowledge systems have roots in commonplace books, scholarly notebooks, card indexes, research diaries, citation managers, wikis and hypertext. Bush’s associative trails and Engelbart’s augmentation framework belong to the same lineage. The goal is not simply to remember. The goal is to extend thought through external structure.</p>\n<p>Digital gardens update this lineage for the web. They make revision, linking and topical organization visible. A garden page may begin as a rough note and become a reference article. A knowledge hub can adopt the same life cycle if it is transparent about confidence and maturity.</p>\n<h2>Core concepts</h2>\n<p>Capture: storing a note, source, observation or idea.</p>\n<p>Linking: connecting the note to related concepts and records.</p>\n<p>Synthesis: rewriting fragments into clearer understanding.</p>\n<p>Retrieval: finding the right note at the right time.</p>\n<p>Revision: improving a page as knowledge changes.</p>\n<p>Publication state: the declared maturity of a public record.</p>\n<h2>Architecture</h2>\n<p>A durable knowledge system needs input, processing and output. Input includes notes, sources, conversations, code, media and project records. Processing includes tagging, linking, summarizing, evaluating and rewriting. Output includes articles, concept pages, source guides, glossaries and graph relations.</p>\n<p>The most important architectural distinction is between capture and publication. Capture can be messy. Publication should be legible. Electronic Artefacts can keep internal notes private while turning mature material into public records.</p>\n<h2>Implementation</h2>\n<p>Implementation begins with consistent frontmatter. Every public record should identify its type, subject, date, maturity, sources and related entities. Notes can become articles when they have enough context, structure and evidence.</p>\n<p>Backlinks and graph neighborhoods should not replace editorial judgment. They are discovery tools. The article itself should explain why connections matter.</p>\n<p>Collections can act as maps. Knowledge Hub Foundations and Knowledge Hub Second Wave give readers curated paths through many records.</p>\n<h2>Practical applications</h2>\n<p>For research, a knowledge system prevents repeated work. Earlier notes remain discoverable.</p>\n<p>For SEO, stable topic pages accumulate relevance over time.</p>\n<p>For AI retrieval, structured pages provide clearer entities, claims and sources.</p>\n<p>For Electronic Artefacts, the system turns projects into knowledge. VASTE becomes not only a program but a node in Runtime Theory. ORETH becomes not only audio research but part of a network around signal, listening and generative systems.</p>\n<h2>Tools</h2>\n<p>Useful tools include plain-text notes, Markdown, static site generators, backlinks, graph databases, citation managers, source records, search indexes, version control, schema validation and periodic content audits.</p>\n<h2>Evidence</h2>\n<p>Electronic Artefacts already uses structured content and typed relations. The first Knowledge Hub wave demonstrated that concepts, articles, projects and programs can reinforce one another. The second wave extends that method across broader evergreen fields.</p>\n<h2>Editorial method</h2>\n<p>A public knowledge page should have a clear role. It may define a concept, explain a method, document a project, synthesize a field or curate sources. Mixing those roles without naming them creates confusion.</p>\n<p>The editor should also prune. A knowledge system improves when duplicate notes are merged, weak tags are removed and unclear links are rewritten.</p>\n<h2>Common mistakes</h2>\n<p>The first mistake is capturing everything. More notes do not automatically create more knowledge.</p>\n<p>The second mistake is over-visualizing the graph. A graph view can be beautiful while hiding the absence of strong writing.</p>\n<p>The third mistake is treating rough notes as public authority. Public knowledge pages should tell the reader how mature and sourced they are.</p>\n<h2>Electronic Artefacts implications</h2>\n<p>Electronic Artefacts can use personal knowledge system principles as a production method. Research fragments should be captured, then promoted into concepts, articles, methods or archive records when they become useful.</p>\n<p>The Knowledge Hub should remain open enough to grow and rigorous enough to be trusted.</p>\n<h2>Knowledge graph role</h2>\n<p>The knowledge graph changes the digital garden pattern in an important way. A garden usually relies on visible links and authorial memory. A graph adds stable identities and relation types. This means an article can be connected to a concept, source, project or program in a way that machines can validate and readers can inspect.</p>\n<p>For Electronic Artefacts, this prevents the Knowledge Hub from becoming a purely personal archive. The site can still grow through notes and revisions, but public records have declared type, maturity, confidence and source context. That combination is useful for humans who want orientation and for AI systems that need structured retrieval.</p>\n<h2>Evaluation criteria</h2>\n<p>A knowledge system can be evaluated by five practical questions.</p>\n<p>Can a reader find the page again through search, navigation or related links?</p>\n<p>Does the page connect to the right concepts without over-linking?</p>\n<p>Does the page identify its sources and maturity?</p>\n<p>Does it reduce duplication by strengthening existing entities?</p>\n<p>Can it be revised later without breaking the public URL?</p>\n<p>These criteria keep the system grounded. A digital garden metaphor is helpful only if it produces better long-term memory.</p>\n<h2>Reader pathway</h2>\n<p>A useful reader pathway begins with a practical question: how do I keep ideas connected over time? From there, the article should guide the reader toward <a href=\"/knowledge/concepts/hypertext/\">Hypertext</a>, <a href=\"/knowledge/concepts/metadata/\">Metadata</a> and <a href=\"/knowledge/concepts/digital-preservation/\">Digital Preservation</a>. This route turns a familiar productivity topic into a deeper architecture of memory and publication.</p>\n<h2>Future work</h2>\n<p>Future entries should cover source triage, note taxonomies, backlink hygiene, concept maturity, editorial pruning, public research logs and AI-readable knowledge pages.</p>\n<h2>Related concepts</h2>\n<p>Read <a href=\"/knowledge/concepts/personal-knowledge-system/\">Personal Knowledge System</a>, <a href=\"/knowledge/concepts/hypertext/\">Hypertext</a>, <a href=\"/knowledge/concepts/knowledge-graph/\">Knowledge Graph</a>, <a href=\"/knowledge/concepts/metadata/\">Metadata</a> and <a href=\"/knowledge/concepts/digital-preservation/\">Digital Preservation</a>.</p>\n<h2>Suggested reading</h2>\n<p>Start with hypertext history, then study metadata and preservation practices. A knowledge garden without metadata becomes difficult to maintain.</p>\n<h2>Related articles</h2>\n<p>Continue with <a href=\"/publications/hypertext-and-augmented-knowledge-systems/\">Hypertext and Augmented Knowledge Systems</a> and <a href=\"/publications/metadata-cataloguing-and-cultural-memory/\">Metadata, Cataloguing and Cultural Memory</a>.</p>\n<h2>Glossary</h2>\n<p>Backlink: a link from another page back to the current page.</p>\n<p>Digital garden: a public knowledge space that grows over time.</p>\n<p>Evergreen note: a note maintained as reusable knowledge.</p>\n<p>Maturity: the declared development state of a record.</p>\n<h2>Limitations</h2>\n<p>Personal knowledge practices do not automatically scale to public libraries. Public systems need permissions, editorial review, source standards and long-term maintenance.</p>\n<p>They also need restraint. Not every note deserves publication.</p>\n<h2>References</h2>\n<ul>\n<li>Vannevar Bush. As We May Think. 1945.</li>\n<li>Dublin Core Metadata Initiative. DCMI Metadata Terms. 2020.</li>\n<li>Electronic Artefacts. Knowledge Hub Foundations and Knowledge Graph records.</li>\n</ul>\n",
+  "bodyHtml": "<h2 id=\"problem\">Problem</h2>\n<p>People collect more information than they can use. Notes accumulate in applications, bookmarks vanish into folders, PDFs sit unread, conversations become impossible to find, and ideas repeat because earlier versions were never connected to later work. The problem is not only storage. The problem is retrieval, relation and revision.</p>\n<p>A personal knowledge system attempts to solve this at individual scale. A digital garden brings part of that practice into public. It treats knowledge as something cultivated over time rather than published once and abandoned.</p>\n<p>Electronic Artefacts has a related challenge at institutional scale. The Knowledge Hub needs to absorb research, projects, programs, concepts and sources without becoming a pile of pages. It needs the strengths of personal knowledge systems but with public editorial accountability.</p>\n<h2 id=\"introduction\">Introduction</h2>\n<p>A personal knowledge system is a practice for capturing, linking, revising and retrieving knowledge. It may use notebooks, wikis, graph tools, plain text, databases or static pages. The tools matter, but the practice matters more.</p>\n<p>A digital garden is a public or semi-public knowledge space where notes can grow. It often favors interlinking, topic pages, revision and non-chronological navigation over polished feed-based publishing.</p>\n<p>The Knowledge Hub can use this pattern without becoming informal. It can publish complete articles while still showing relations, concepts, sources and future paths.</p>\n<h2 id=\"context\">Context</h2>\n<p>The digital garden metaphor became popular because it resisted the pressure of feeds and finished announcements. A garden can have seedlings, evergreen pages and mature essays. That vocabulary is useful, but it can also become vague. A serious knowledge hub needs clearer status, maturity and evidence markers.</p>\n<p>Electronic Artefacts already has those markers in its entity schema: publication class, status, maturity, confidence, version, sources, subjects and typed relations. That gives the site a way to combine garden-like growth with library-like discipline.</p>\n<h2 id=\"history\">History</h2>\n<p>Personal knowledge systems have roots in commonplace books, scholarly notebooks, card indexes, research diaries, citation managers, wikis and hypertext. Bush’s associative trails and Engelbart’s augmentation framework belong to the same lineage. The goal is not simply to remember. The goal is to extend thought through external structure.</p>\n<p>Digital gardens update this lineage for the web. They make revision, linking and topical organization visible. A garden page may begin as a rough note and become a reference article. A knowledge hub can adopt the same life cycle if it is transparent about confidence and maturity.</p>\n<h2 id=\"core-concepts\">Core concepts</h2>\n<p>Capture: storing a note, source, observation or idea.</p>\n<p>Linking: connecting the note to related concepts and records.</p>\n<p>Synthesis: rewriting fragments into clearer understanding.</p>\n<p>Retrieval: finding the right note at the right time.</p>\n<p>Revision: improving a page as knowledge changes.</p>\n<p>Publication state: the declared maturity of a public record.</p>\n<h2 id=\"architecture\">Architecture</h2>\n<p>A durable knowledge system needs input, processing and output. Input includes notes, sources, conversations, code, media and project records. Processing includes tagging, linking, summarizing, evaluating and rewriting. Output includes articles, concept pages, source guides, glossaries and graph relations.</p>\n<p>The most important architectural distinction is between capture and publication. Capture can be messy. Publication should be legible. Electronic Artefacts can keep internal notes private while turning mature material into public records.</p>\n<h2 id=\"implementation\">Implementation</h2>\n<p>Implementation begins with consistent frontmatter. Every public record should identify its type, subject, date, maturity, sources and related entities. Notes can become articles when they have enough context, structure and evidence.</p>\n<p>Backlinks and graph neighborhoods should not replace editorial judgment. They are discovery tools. The article itself should explain why connections matter.</p>\n<p>Collections can act as maps. Knowledge Hub Foundations and Knowledge Hub Second Wave give readers curated paths through many records.</p>\n<h2 id=\"practical-applications\">Practical applications</h2>\n<p>For research, a knowledge system prevents repeated work. Earlier notes remain discoverable.</p>\n<p>For SEO, stable topic pages accumulate relevance over time.</p>\n<p>For AI retrieval, structured pages provide clearer entities, claims and sources.</p>\n<p>For Electronic Artefacts, the system turns projects into knowledge. VASTE becomes not only a program but a node in Runtime Theory. ORETH becomes not only audio research but part of a network around signal, listening and generative systems.</p>\n<h2 id=\"tools\">Tools</h2>\n<p>Useful tools include plain-text notes, Markdown, static site generators, backlinks, graph databases, citation managers, source records, search indexes, version control, schema validation and periodic content audits.</p>\n<h2 id=\"evidence\">Evidence</h2>\n<p>Electronic Artefacts already uses structured content and typed relations. The first Knowledge Hub wave demonstrated that concepts, articles, projects and programs can reinforce one another. The second wave extends that method across broader evergreen fields.</p>\n<h2 id=\"editorial-method\">Editorial method</h2>\n<p>A public knowledge page should have a clear role. It may define a concept, explain a method, document a project, synthesize a field or curate sources. Mixing those roles without naming them creates confusion.</p>\n<p>The editor should also prune. A knowledge system improves when duplicate notes are merged, weak tags are removed and unclear links are rewritten.</p>\n<h2 id=\"common-mistakes\">Common mistakes</h2>\n<p>The first mistake is capturing everything. More notes do not automatically create more knowledge.</p>\n<p>The second mistake is over-visualizing the graph. A graph view can be beautiful while hiding the absence of strong writing.</p>\n<p>The third mistake is treating rough notes as public authority. Public knowledge pages should tell the reader how mature and sourced they are.</p>\n<h2 id=\"electronic-artefacts-implications\">Electronic Artefacts implications</h2>\n<p>Electronic Artefacts can use personal knowledge system principles as a production method. Research fragments should be captured, then promoted into concepts, articles, methods or archive records when they become useful.</p>\n<p>The Knowledge Hub should remain open enough to grow and rigorous enough to be trusted.</p>\n<h2 id=\"knowledge-graph-role\">Knowledge graph role</h2>\n<p>The knowledge graph changes the digital garden pattern in an important way. A garden usually relies on visible links and authorial memory. A graph adds stable identities and relation types. This means an article can be connected to a concept, source, project or program in a way that machines can validate and readers can inspect.</p>\n<p>For Electronic Artefacts, this prevents the Knowledge Hub from becoming a purely personal archive. The site can still grow through notes and revisions, but public records have declared type, maturity, confidence and source context. That combination is useful for humans who want orientation and for AI systems that need structured retrieval.</p>\n<h2 id=\"evaluation-criteria\">Evaluation criteria</h2>\n<p>A knowledge system can be evaluated by five practical questions.</p>\n<p>Can a reader find the page again through search, navigation or related links?</p>\n<p>Does the page connect to the right concepts without over-linking?</p>\n<p>Does the page identify its sources and maturity?</p>\n<p>Does it reduce duplication by strengthening existing entities?</p>\n<p>Can it be revised later without breaking the public URL?</p>\n<p>These criteria keep the system grounded. A digital garden metaphor is helpful only if it produces better long-term memory.</p>\n<h2 id=\"reader-pathway\">Reader pathway</h2>\n<p>A useful reader pathway begins with a practical question: how do I keep ideas connected over time? From there, the article should guide the reader toward <a href=\"/knowledge/concepts/hypertext/\">Hypertext</a>, <a href=\"/knowledge/concepts/metadata/\">Metadata</a> and <a href=\"/knowledge/concepts/digital-preservation/\">Digital Preservation</a>. This route turns a familiar productivity topic into a deeper architecture of memory and publication.</p>\n<h2 id=\"future-work\">Future work</h2>\n<p>Future entries should cover source triage, note taxonomies, backlink hygiene, concept maturity, editorial pruning, public research logs and AI-readable knowledge pages.</p>\n<h2 id=\"related-concepts\">Related concepts</h2>\n<p>Read <a href=\"/knowledge/concepts/personal-knowledge-system/\">Personal Knowledge System</a>, <a href=\"/knowledge/concepts/hypertext/\">Hypertext</a>, <a href=\"/knowledge/concepts/knowledge-graph/\">Knowledge Graph</a>, <a href=\"/knowledge/concepts/metadata/\">Metadata</a> and <a href=\"/knowledge/concepts/digital-preservation/\">Digital Preservation</a>.</p>\n<h2 id=\"suggested-reading\">Suggested reading</h2>\n<p>Start with hypertext history, then study metadata and preservation practices. A knowledge garden without metadata becomes difficult to maintain.</p>\n<h2 id=\"related-articles\">Related articles</h2>\n<p>Continue with <a href=\"/publications/hypertext-and-augmented-knowledge-systems/\">Hypertext and Augmented Knowledge Systems</a> and <a href=\"/publications/metadata-cataloguing-and-cultural-memory/\">Metadata, Cataloguing and Cultural Memory</a>.</p>\n<h2 id=\"glossary\">Glossary</h2>\n<p>Backlink: a link from another page back to the current page.</p>\n<p>Digital garden: a public knowledge space that grows over time.</p>\n<p>Evergreen note: a note maintained as reusable knowledge.</p>\n<p>Maturity: the declared development state of a record.</p>\n<h2 id=\"limitations\">Limitations</h2>\n<p>Personal knowledge practices do not automatically scale to public libraries. Public systems need permissions, editorial review, source standards and long-term maintenance.</p>\n<p>They also need restraint. Not every note deserves publication.</p>\n<h2 id=\"references\">References</h2>\n<ul>\n<li>Vannevar Bush. As We May Think. 1945.</li>\n<li>Dublin Core Metadata Initiative. DCMI Metadata Terms. 2020.</li>\n<li>Electronic Artefacts. Knowledge Hub Foundations and Knowledge Graph records.</li>\n</ul>\n",
   "headings": [
     "Problem",
     "Introduction",
@@ -113,5 +113,122 @@
     "Glossary",
     "Limitations",
     "References"
+  ],
+  "headingItems": [
+    {
+      "level": 2,
+      "title": "Problem",
+      "id": "problem"
+    },
+    {
+      "level": 2,
+      "title": "Introduction",
+      "id": "introduction"
+    },
+    {
+      "level": 2,
+      "title": "Context",
+      "id": "context"
+    },
+    {
+      "level": 2,
+      "title": "History",
+      "id": "history"
+    },
+    {
+      "level": 2,
+      "title": "Core concepts",
+      "id": "core-concepts"
+    },
+    {
+      "level": 2,
+      "title": "Architecture",
+      "id": "architecture"
+    },
+    {
+      "level": 2,
+      "title": "Implementation",
+      "id": "implementation"
+    },
+    {
+      "level": 2,
+      "title": "Practical applications",
+      "id": "practical-applications"
+    },
+    {
+      "level": 2,
+      "title": "Tools",
+      "id": "tools"
+    },
+    {
+      "level": 2,
+      "title": "Evidence",
+      "id": "evidence"
+    },
+    {
+      "level": 2,
+      "title": "Editorial method",
+      "id": "editorial-method"
+    },
+    {
+      "level": 2,
+      "title": "Common mistakes",
+      "id": "common-mistakes"
+    },
+    {
+      "level": 2,
+      "title": "Electronic Artefacts implications",
+      "id": "electronic-artefacts-implications"
+    },
+    {
+      "level": 2,
+      "title": "Knowledge graph role",
+      "id": "knowledge-graph-role"
+    },
+    {
+      "level": 2,
+      "title": "Evaluation criteria",
+      "id": "evaluation-criteria"
+    },
+    {
+      "level": 2,
+      "title": "Reader pathway",
+      "id": "reader-pathway"
+    },
+    {
+      "level": 2,
+      "title": "Future work",
+      "id": "future-work"
+    },
+    {
+      "level": 2,
+      "title": "Related concepts",
+      "id": "related-concepts"
+    },
+    {
+      "level": 2,
+      "title": "Suggested reading",
+      "id": "suggested-reading"
+    },
+    {
+      "level": 2,
+      "title": "Related articles",
+      "id": "related-articles"
+    },
+    {
+      "level": 2,
+      "title": "Glossary",
+      "id": "glossary"
+    },
+    {
+      "level": 2,
+      "title": "Limitations",
+      "id": "limitations"
+    },
+    {
+      "level": 2,
+      "title": "References",
+      "id": "references"
+    }
   ]
 }

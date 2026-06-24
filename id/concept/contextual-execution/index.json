@@ -54,7 +54,7 @@
     "Context becomes a runtime concern when it changes whether an operation is allowed or meaningful.",
     "Graph runtimes need explicit context boundaries to remain governable."
   ],
-  "bodyHtml": "<h2>Definition</h2>\n<p>Contextual execution is the practice of making operating context part of execution. A system does not only ask what operation was requested. It asks who requested it, which entity is affected, which relations are active, what state the system is in, what permissions apply, and what consequences should propagate.</p>\n<p>In Electronic Artefacts, contextual execution is a core bridge between Runtime Theory and VASTE. A graph runtime becomes meaningful when identity and relation structure can influence behavior.</p>\n<h2>Scope</h2>\n<p>The concept includes user identity, organization identity, entity state, visibility, confidence, lifecycle, permissions, relations, event scope and temporal validity. It also includes boundaries: where context starts, where it stops, and which parts can be inherited.</p>\n<h2>Difference from configuration</h2>\n<p>Configuration is usually a set of values that changes how software behaves. Contextual execution is more dynamic. It can depend on the current actor, the current entity, current graph neighbors, the operation being attempted and the event history that led to the moment.</p>\n<h2>Electronic Artefacts position</h2>\n<p>The Electronic Artefacts position is that context should not be hidden inside incidental application code when it determines authority or meaning. It should be modeled explicitly enough to be inspected, tested and explained.</p>\n<p>This is important for knowledge systems. A publication, archive record or project page may be public, internal, canonical, speculative, archived or superseded. Those states should not only change styling. They should influence indexing, graph visibility, citation and relation publication.</p>\n<h2>Applications</h2>\n<p>Contextual execution is useful for editorial workflows, archive permissions, AI agent actions, cultural contribution systems, project governance, knowledge graph publishing and product runtimes with multiple actors.</p>\n<h2>Limitations</h2>\n<p>Context can become expensive. If every operation depends on too much graph state, the system becomes hard to reason about. The practical challenge is to define the smallest context needed for correct execution.</p>\n<h2>References</h2>\n<p>See Graph Runtime, Runtime Theory and VASTE.</p>\n",
+  "bodyHtml": "<h2 id=\"definition\">Definition</h2>\n<p>Contextual execution is the practice of making operating context part of execution. A system does not only ask what operation was requested. It asks who requested it, which entity is affected, which relations are active, what state the system is in, what permissions apply, and what consequences should propagate.</p>\n<p>In Electronic Artefacts, contextual execution is a core bridge between Runtime Theory and VASTE. A graph runtime becomes meaningful when identity and relation structure can influence behavior.</p>\n<h2 id=\"scope\">Scope</h2>\n<p>The concept includes user identity, organization identity, entity state, visibility, confidence, lifecycle, permissions, relations, event scope and temporal validity. It also includes boundaries: where context starts, where it stops, and which parts can be inherited.</p>\n<h2 id=\"difference-from-configuration\">Difference from configuration</h2>\n<p>Configuration is usually a set of values that changes how software behaves. Contextual execution is more dynamic. It can depend on the current actor, the current entity, current graph neighbors, the operation being attempted and the event history that led to the moment.</p>\n<h2 id=\"electronic-artefacts-position\">Electronic Artefacts position</h2>\n<p>The Electronic Artefacts position is that context should not be hidden inside incidental application code when it determines authority or meaning. It should be modeled explicitly enough to be inspected, tested and explained.</p>\n<p>This is important for knowledge systems. A publication, archive record or project page may be public, internal, canonical, speculative, archived or superseded. Those states should not only change styling. They should influence indexing, graph visibility, citation and relation publication.</p>\n<h2 id=\"applications\">Applications</h2>\n<p>Contextual execution is useful for editorial workflows, archive permissions, AI agent actions, cultural contribution systems, project governance, knowledge graph publishing and product runtimes with multiple actors.</p>\n<h2 id=\"limitations\">Limitations</h2>\n<p>Context can become expensive. If every operation depends on too much graph state, the system becomes hard to reason about. The practical challenge is to define the smallest context needed for correct execution.</p>\n<h2 id=\"references\">References</h2>\n<p>See Graph Runtime, Runtime Theory and VASTE.</p>\n",
   "headings": [
     "Definition",
     "Scope",
@@ -63,5 +63,42 @@
     "Applications",
     "Limitations",
     "References"
+  ],
+  "headingItems": [
+    {
+      "level": 2,
+      "title": "Definition",
+      "id": "definition"
+    },
+    {
+      "level": 2,
+      "title": "Scope",
+      "id": "scope"
+    },
+    {
+      "level": 2,
+      "title": "Difference from configuration",
+      "id": "difference-from-configuration"
+    },
+    {
+      "level": 2,
+      "title": "Electronic Artefacts position",
+      "id": "electronic-artefacts-position"
+    },
+    {
+      "level": 2,
+      "title": "Applications",
+      "id": "applications"
+    },
+    {
+      "level": 2,
+      "title": "Limitations",
+      "id": "limitations"
+    },
+    {
+      "level": 2,
+      "title": "References",
+      "id": "references"
+    }
   ]
 }

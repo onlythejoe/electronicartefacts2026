@@ -63,12 +63,39 @@
     "Augmentation is a better frame than replacement for many creative and research systems.",
     "Good augmented systems preserve context, reversibility and user judgment."
   ],
-  "bodyHtml": "<h2>Definition</h2>\n<p>Augmented intelligence describes systems that increase human capability instead of pretending that computation should remove the human from the loop.</p>\n<h2>Scope</h2>\n<p>The concept includes creative software, AI assistants, knowledge work tools, graph interfaces, annotation systems, interactive analysis and decision support.</p>\n<h2>Applications</h2>\n<p>For Electronic Artefacts, augmented intelligence is relevant to VASTE, ORETH, machine listening, knowledge retrieval and future editorial tooling.</p>\n<h2>Limitations</h2>\n<p>Augmentation can become dependency when the user cannot inspect, correct or refuse system output. Responsible design preserves agency.</p>\n<h2>References</h2>\n<p>See Douglas Engelbart, HCI, AI risk management, contextual execution and graph runtimes.</p>\n",
+  "bodyHtml": "<h2 id=\"definition\">Definition</h2>\n<p>Augmented intelligence describes systems that increase human capability instead of pretending that computation should remove the human from the loop.</p>\n<h2 id=\"scope\">Scope</h2>\n<p>The concept includes creative software, AI assistants, knowledge work tools, graph interfaces, annotation systems, interactive analysis and decision support.</p>\n<h2 id=\"applications\">Applications</h2>\n<p>For Electronic Artefacts, augmented intelligence is relevant to VASTE, ORETH, machine listening, knowledge retrieval and future editorial tooling.</p>\n<h2 id=\"limitations\">Limitations</h2>\n<p>Augmentation can become dependency when the user cannot inspect, correct or refuse system output. Responsible design preserves agency.</p>\n<h2 id=\"references\">References</h2>\n<p>See Douglas Engelbart, HCI, AI risk management, contextual execution and graph runtimes.</p>\n",
   "headings": [
     "Definition",
     "Scope",
     "Applications",
     "Limitations",
     "References"
+  ],
+  "headingItems": [
+    {
+      "level": 2,
+      "title": "Definition",
+      "id": "definition"
+    },
+    {
+      "level": 2,
+      "title": "Scope",
+      "id": "scope"
+    },
+    {
+      "level": 2,
+      "title": "Applications",
+      "id": "applications"
+    },
+    {
+      "level": 2,
+      "title": "Limitations",
+      "id": "limitations"
+    },
+    {
+      "level": 2,
+      "title": "References",
+      "id": "references"
+    }
   ]
 }

@@ -47,10 +47,27 @@
   "category": "platform",
   "roleInEcosystem": "Web Animations helps Electronic Artefacts treat motion as a timed interface and storytelling layer rather than decorative movement.",
   "officialUrl": "https://www.w3.org/TR/web-animations-1/",
-  "bodyHtml": "<h2>Role</h2>\n<p>Web Animations provides a model for timing, playback and synchronization in browser interfaces.</p>\n<h2>Use</h2>\n<p>Electronic Artefacts can use it for interface motion, interactive essays and state transitions that clarify graph navigation.</p>\n<h2>References</h2>\n<p>See the W3C Web Animations specification.</p>\n",
+  "bodyHtml": "<h2 id=\"role\">Role</h2>\n<p>Web Animations provides a model for timing, playback and synchronization in browser interfaces.</p>\n<h2 id=\"use\">Use</h2>\n<p>Electronic Artefacts can use it for interface motion, interactive essays and state transitions that clarify graph navigation.</p>\n<h2 id=\"references\">References</h2>\n<p>See the W3C Web Animations specification.</p>\n",
   "headings": [
     "Role",
     "Use",
     "References"
+  ],
+  "headingItems": [
+    {
+      "level": 2,
+      "title": "Role",
+      "id": "role"
+    },
+    {
+      "level": 2,
+      "title": "Use",
+      "id": "use"
+    },
+    {
+      "level": 2,
+      "title": "References",
+      "id": "references"
+    }
   ]
 }

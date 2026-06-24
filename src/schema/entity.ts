@@ -91,6 +91,12 @@ export interface SlugSet {
   aliases?: string[];
 }
 
+export interface EntityHeading {
+  level: 2 | 3;
+  title: string;
+  id: string;
+}
+
 export interface BaseEntity {
   id: EntityId;
   type: EntityType;
@@ -103,6 +109,7 @@ export interface BaseEntity {
   description?: string;
   bodyHtml: string;
   headings: string[];
+  headingItems: EntityHeading[];
   locale: Locale;
   visibility: Visibility;
   publicationClass: PublicationClass;

@@ -46,10 +46,27 @@
   "category": "platform",
   "roleInEcosystem": "WebGL supports procedural graphics, shader experiments, real-time visuals and interactive cultural interfaces.",
   "officialUrl": "https://www.khronos.org/webgl/",
-  "bodyHtml": "<h2>Role</h2>\n<p>WebGL makes GPU-accelerated graphics available on the web. It is relevant to shaders, procedural visual systems and interactive public artefacts.</p>\n<h2>Use</h2>\n<p>Electronic Artefacts can use WebGL for generative visuals, motion systems and browser-native spatial interfaces.</p>\n<h2>References</h2>\n<p>See Khronos WebGL resources.</p>\n",
+  "bodyHtml": "<h2 id=\"role\">Role</h2>\n<p>WebGL makes GPU-accelerated graphics available on the web. It is relevant to shaders, procedural visual systems and interactive public artefacts.</p>\n<h2 id=\"use\">Use</h2>\n<p>Electronic Artefacts can use WebGL for generative visuals, motion systems and browser-native spatial interfaces.</p>\n<h2 id=\"references\">References</h2>\n<p>See Khronos WebGL resources.</p>\n",
   "headings": [
     "Role",
     "Use",
     "References"
+  ],
+  "headingItems": [
+    {
+      "level": 2,
+      "title": "Role",
+      "id": "role"
+    },
+    {
+      "level": 2,
+      "title": "Use",
+      "id": "use"
+    },
+    {
+      "level": 2,
+      "title": "References",
+      "id": "references"
+    }
   ]
 }

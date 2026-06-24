@@ -61,12 +61,39 @@
     "Typography is infrastructure for knowledge because it shapes reading, scanning and comprehension.",
     "Digital typography must account for responsive layouts, accessibility and long-term rendering conditions."
   ],
-  "bodyHtml": "<h2>Definition</h2>\n<p>Typography is the system through which written language becomes visible, readable and structured.</p>\n<h2>Scope</h2>\n<p>The concept includes typefaces, scale, line length, leading, spacing, rhythm, hierarchy, responsive behavior, legibility and accessibility.</p>\n<h2>Applications</h2>\n<p>Electronic Artefacts uses typography as a core layer of the Knowledge Hub because long-form reference content depends on reading quality.</p>\n<h2>Limitations</h2>\n<p>Typography can become aesthetic surface when disconnected from language, context and accessibility.</p>\n<h2>References</h2>\n<p>See CSS Fonts, WCAG, motion design and digital publishing.</p>\n",
+  "bodyHtml": "<h2 id=\"definition\">Definition</h2>\n<p>Typography is the system through which written language becomes visible, readable and structured.</p>\n<h2 id=\"scope\">Scope</h2>\n<p>The concept includes typefaces, scale, line length, leading, spacing, rhythm, hierarchy, responsive behavior, legibility and accessibility.</p>\n<h2 id=\"applications\">Applications</h2>\n<p>Electronic Artefacts uses typography as a core layer of the Knowledge Hub because long-form reference content depends on reading quality.</p>\n<h2 id=\"limitations\">Limitations</h2>\n<p>Typography can become aesthetic surface when disconnected from language, context and accessibility.</p>\n<h2 id=\"references\">References</h2>\n<p>See CSS Fonts, WCAG, motion design and digital publishing.</p>\n",
   "headings": [
     "Definition",
     "Scope",
     "Applications",
     "Limitations",
     "References"
+  ],
+  "headingItems": [
+    {
+      "level": 2,
+      "title": "Definition",
+      "id": "definition"
+    },
+    {
+      "level": 2,
+      "title": "Scope",
+      "id": "scope"
+    },
+    {
+      "level": 2,
+      "title": "Applications",
+      "id": "applications"
+    },
+    {
+      "level": 2,
+      "title": "Limitations",
+      "id": "limitations"
+    },
+    {
+      "level": 2,
+      "title": "References",
+      "id": "references"
+    }
   ]
 }

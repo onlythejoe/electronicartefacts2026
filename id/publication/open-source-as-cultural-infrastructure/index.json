@@ -82,7 +82,7 @@
   "citation": {
     "preferred": "Electronic Artefacts. \"Open Source as Cultural Infrastructure.\" Technical article, version 1.0.0, 2026."
   },
-  "bodyHtml": "<h2>Problem</h2>\n<p>Open source is often described as a software distribution model. That is accurate but incomplete. Open source also determines who can learn from code, adapt tools, preserve software, audit systems, build creative environments and sustain technical communities.</p>\n<p>The problem is that cultural discussions of software often focus on finished products while ignoring the shared infrastructure below them. Creative coding libraries, browser standards, build tools, audio frameworks, fonts, package managers and documentation systems shape what artists and researchers can attempt.</p>\n<p>Electronic Artefacts needs to discuss open source as cultural infrastructure: a material layer that supports creative practice, knowledge publishing and long-term access.</p>\n<h2>Introduction</h2>\n<p>Open source means more than public source code. The Open Source Definition describes distribution terms that permit redistribution, access to source code, derived works and non-discrimination. Those legal conditions matter because they allow communities to study, modify and circulate software.</p>\n<p>But the cultural value of open source depends on more than licensing. A project can be legally open and practically unusable. Documentation, maintainership, governance, examples, tests and community norms decide whether code becomes infrastructure.</p>\n<h2>Context</h2>\n<p>Creative technology depends heavily on open source. Processing, p5.js, WebGL tooling, audio libraries, visualization frameworks and static site systems all extend what individual creators can build. They also create dependency chains. A small library may become part of thousands of artworks, websites or research tools.</p>\n<p>Open source therefore belongs in a Knowledge Hub about art, software and research. It is not a side topic. It explains how technical cultures reproduce themselves.</p>\n<h2>History</h2>\n<p>The history of open source includes free software, academic code sharing, Unix culture, hacker ethics, internet collaboration, community governance and institutional adoption. The term “open source” helped clarify licensing and business compatibility, while free software retained a stronger ethical vocabulary around user freedoms.</p>\n<p>For creative coding, open source made programming environments teachable. Learners could inspect examples, copy sketches, change parameters and share modifications. That pedagogical loop helped computation become a creative medium.</p>\n<h2>Core concepts</h2>\n<p>License: the legal terms that permit or restrict use.</p>\n<p>Source code: the preferred form for understanding and modifying software.</p>\n<p>Fork: a divergent development path from an existing codebase.</p>\n<p>Maintainer: a person or group responsible for review, releases and stewardship.</p>\n<p>Dependency: a software component used by another project.</p>\n<p>Commons: shared resources governed for collective use.</p>\n<h2>Architecture</h2>\n<p>Open source infrastructure has layers. The legal layer defines rights. The technical layer includes repositories, issues, builds, tests and releases. The social layer includes maintainers, contributors, norms and governance. The documentation layer teaches use and preserves context. The archival layer keeps code, releases and dependencies recoverable.</p>\n<p>When any layer fails, the project weakens. A library with permissive licensing but no documentation may be inaccessible to new users. A popular tool with exhausted maintainers may become fragile infrastructure.</p>\n<h2>Implementation</h2>\n<p>For Electronic Artefacts, open source should be documented with precision. If a project uses an open-source library, the article should name the library, role, license when relevant and preservation implication. If a tool is inspired by open-source practice, the article should separate inspiration from actual license status.</p>\n<p>Internal tools can also adopt open-source habits without being public immediately: clear README files, versioning, changelogs, examples, issue notes and dependency records.</p>\n<h2>Practical applications</h2>\n<p>Open source supports education because learners can inspect working systems.</p>\n<p>It supports preservation because code can be archived, rebuilt and studied.</p>\n<p>It supports creative practice because artists can adapt tools instead of waiting for closed vendors.</p>\n<p>It supports knowledge systems because schemas, validators and generators can be reviewed and extended.</p>\n<h2>Tools</h2>\n<p>Useful tools include Git, public repositories, package managers, issue trackers, changelogs, semantic versioning, license files, dependency scanners, documentation generators and static site builds.</p>\n<h2>Evidence</h2>\n<p>The Electronic Artefacts Knowledge Hub itself benefits from open technical patterns: structured Markdown, generated pages, JSON-LD, graph validation and static output. Even when a repository is project-specific, the culture of inspectable systems shapes the work.</p>\n<p>Creative coding also provides public evidence. Processing and p5.js show how open tools can create learning communities around code, art and education.</p>\n<h2>Editorial method</h2>\n<p>A good open-source article should distinguish license, governance and cultural effect. It should not call something open source simply because it is visible online. It should ask who can use it, who can modify it, who maintains it and what happens if dependencies disappear.</p>\n<h2>Common mistakes</h2>\n<p>The first mistake is equating public code with open source.</p>\n<p>The second mistake is romanticizing unpaid maintenance. Infrastructure has labor costs.</p>\n<p>The third mistake is ignoring licenses until publication. Rights should be documented early.</p>\n<h2>Electronic Artefacts implications</h2>\n<p>Electronic Artefacts can treat open source as part of its intellectual environment. VASTE, ORETH and future tools should document dependencies and reusable patterns where appropriate.</p>\n<p>The Knowledge Hub can also publish educational articles that help readers understand not only what a tool does, but what cultural conditions made it possible.</p>\n<h2>Knowledge graph role</h2>\n<p>Open source becomes more legible when it is represented relationally. A tool can depend on a library. A project can use a technology. A publication can document a concept. A program can be maintained by an organization. These relations make infrastructure visible.</p>\n<p>For Electronic Artefacts, that matters because software dependencies are not only build details. They are part of the cultural and technical conditions of the work. If a future project uses Web Audio, WebGL, p5.js or a graph library, the Knowledge Hub should be able to explain the relation between the project, the tool and the broader open-source ecosystem.</p>\n<h2>Evaluation criteria</h2>\n<p>An open-source record should answer more than “is the code public?” It should ask whether the license permits use and modification, whether the source is the preferred form for change, whether releases are identifiable, whether maintainers are visible, whether documentation exists and whether dependencies can be preserved.</p>\n<p>Creative projects should also ask what kind of learning the software enables. A library that is readable and well documented can become pedagogy. A library that is powerful but opaque may still be useful, but it plays a different cultural role.</p>\n<h2>Preservation angle</h2>\n<p>Open source helps preservation only when the code and its context survive. A repository without releases, examples, licenses or dependency records may be hard to reconstruct. A responsible cultural archive should therefore preserve not only source code, but also documentation, version constraints, sample inputs, outputs and build instructions.</p>\n<h2>Reader pathway</h2>\n<p>A search visitor may arrive through a practical query about open source, creative coding or software culture. The article should move that reader from licensing into infrastructure: who maintains the code, what depends on it, how it teaches, and how it can be preserved. From there, the natural path leads to <a href=\"/knowledge/concepts/creative-coding/\">Creative Coding</a>, <a href=\"/knowledge/concepts/digital-preservation/\">Digital Preservation</a> and future software archive records.</p>\n<h2>Future work</h2>\n<p>Future entries should cover software preservation, creative coding libraries, dependency archives, licenses for cultural projects, maintainership models and open-source governance.</p>\n<h2>Related concepts</h2>\n<p>Read <a href=\"/knowledge/concepts/open-source/\">Open Source</a>, <a href=\"/knowledge/concepts/creative-coding/\">Creative Coding</a>, <a href=\"/knowledge/concepts/internet-culture/\">Internet Culture</a> and <a href=\"/knowledge/concepts/digital-preservation/\">Digital Preservation</a>.</p>\n<h2>Suggested reading</h2>\n<p>Start with the Open Source Definition, then study concrete creative tools such as Processing and p5.js through examples and repository histories.</p>\n<h2>Related articles</h2>\n<p>Continue with <a href=\"/publications/creative-coding-pedagogy-from-logo-to-p5js/\">Creative Coding Pedagogy from Logo to p5.js</a> and <a href=\"/publications/digital-preservation-and-living-archives/\">Digital Preservation and Living Archives</a>.</p>\n<h2>Glossary</h2>\n<p>Open source: software distributed under terms that allow use, study, modification and redistribution.</p>\n<p>Maintainer: steward of a project repository and release process.</p>\n<p>Fork: a separate development path derived from an existing codebase.</p>\n<p>Dependency: software required by another system.</p>\n<h2>Limitations</h2>\n<p>Open source does not solve every problem. It can reproduce inequality, burn out maintainers and create fragile dependency chains.</p>\n<p>It also does not replace editorial judgment. A public knowledge system should document open-source use without turning every article into a software advocacy text.</p>\n<h2>References</h2>\n<ul>\n<li>Open Source Initiative. The Open Source Definition.</li>\n<li>Processing Foundation. p5.js.</li>\n<li>Electronic Artefacts. Creative Coding and Digital Preservation records.</li>\n</ul>\n",
+  "bodyHtml": "<h2 id=\"problem\">Problem</h2>\n<p>Open source is often described as a software distribution model. That is accurate but incomplete. Open source also determines who can learn from code, adapt tools, preserve software, audit systems, build creative environments and sustain technical communities.</p>\n<p>The problem is that cultural discussions of software often focus on finished products while ignoring the shared infrastructure below them. Creative coding libraries, browser standards, build tools, audio frameworks, fonts, package managers and documentation systems shape what artists and researchers can attempt.</p>\n<p>Electronic Artefacts needs to discuss open source as cultural infrastructure: a material layer that supports creative practice, knowledge publishing and long-term access.</p>\n<h2 id=\"introduction\">Introduction</h2>\n<p>Open source means more than public source code. The Open Source Definition describes distribution terms that permit redistribution, access to source code, derived works and non-discrimination. Those legal conditions matter because they allow communities to study, modify and circulate software.</p>\n<p>But the cultural value of open source depends on more than licensing. A project can be legally open and practically unusable. Documentation, maintainership, governance, examples, tests and community norms decide whether code becomes infrastructure.</p>\n<h2 id=\"context\">Context</h2>\n<p>Creative technology depends heavily on open source. Processing, p5.js, WebGL tooling, audio libraries, visualization frameworks and static site systems all extend what individual creators can build. They also create dependency chains. A small library may become part of thousands of artworks, websites or research tools.</p>\n<p>Open source therefore belongs in a Knowledge Hub about art, software and research. It is not a side topic. It explains how technical cultures reproduce themselves.</p>\n<h2 id=\"history\">History</h2>\n<p>The history of open source includes free software, academic code sharing, Unix culture, hacker ethics, internet collaboration, community governance and institutional adoption. The term “open source” helped clarify licensing and business compatibility, while free software retained a stronger ethical vocabulary around user freedoms.</p>\n<p>For creative coding, open source made programming environments teachable. Learners could inspect examples, copy sketches, change parameters and share modifications. That pedagogical loop helped computation become a creative medium.</p>\n<h2 id=\"core-concepts\">Core concepts</h2>\n<p>License: the legal terms that permit or restrict use.</p>\n<p>Source code: the preferred form for understanding and modifying software.</p>\n<p>Fork: a divergent development path from an existing codebase.</p>\n<p>Maintainer: a person or group responsible for review, releases and stewardship.</p>\n<p>Dependency: a software component used by another project.</p>\n<p>Commons: shared resources governed for collective use.</p>\n<h2 id=\"architecture\">Architecture</h2>\n<p>Open source infrastructure has layers. The legal layer defines rights. The technical layer includes repositories, issues, builds, tests and releases. The social layer includes maintainers, contributors, norms and governance. The documentation layer teaches use and preserves context. The archival layer keeps code, releases and dependencies recoverable.</p>\n<p>When any layer fails, the project weakens. A library with permissive licensing but no documentation may be inaccessible to new users. A popular tool with exhausted maintainers may become fragile infrastructure.</p>\n<h2 id=\"implementation\">Implementation</h2>\n<p>For Electronic Artefacts, open source should be documented with precision. If a project uses an open-source library, the article should name the library, role, license when relevant and preservation implication. If a tool is inspired by open-source practice, the article should separate inspiration from actual license status.</p>\n<p>Internal tools can also adopt open-source habits without being public immediately: clear README files, versioning, changelogs, examples, issue notes and dependency records.</p>\n<h2 id=\"practical-applications\">Practical applications</h2>\n<p>Open source supports education because learners can inspect working systems.</p>\n<p>It supports preservation because code can be archived, rebuilt and studied.</p>\n<p>It supports creative practice because artists can adapt tools instead of waiting for closed vendors.</p>\n<p>It supports knowledge systems because schemas, validators and generators can be reviewed and extended.</p>\n<h2 id=\"tools\">Tools</h2>\n<p>Useful tools include Git, public repositories, package managers, issue trackers, changelogs, semantic versioning, license files, dependency scanners, documentation generators and static site builds.</p>\n<h2 id=\"evidence\">Evidence</h2>\n<p>The Electronic Artefacts Knowledge Hub itself benefits from open technical patterns: structured Markdown, generated pages, JSON-LD, graph validation and static output. Even when a repository is project-specific, the culture of inspectable systems shapes the work.</p>\n<p>Creative coding also provides public evidence. Processing and p5.js show how open tools can create learning communities around code, art and education.</p>\n<h2 id=\"editorial-method\">Editorial method</h2>\n<p>A good open-source article should distinguish license, governance and cultural effect. It should not call something open source simply because it is visible online. It should ask who can use it, who can modify it, who maintains it and what happens if dependencies disappear.</p>\n<h2 id=\"common-mistakes\">Common mistakes</h2>\n<p>The first mistake is equating public code with open source.</p>\n<p>The second mistake is romanticizing unpaid maintenance. Infrastructure has labor costs.</p>\n<p>The third mistake is ignoring licenses until publication. Rights should be documented early.</p>\n<h2 id=\"electronic-artefacts-implications\">Electronic Artefacts implications</h2>\n<p>Electronic Artefacts can treat open source as part of its intellectual environment. VASTE, ORETH and future tools should document dependencies and reusable patterns where appropriate.</p>\n<p>The Knowledge Hub can also publish educational articles that help readers understand not only what a tool does, but what cultural conditions made it possible.</p>\n<h2 id=\"knowledge-graph-role\">Knowledge graph role</h2>\n<p>Open source becomes more legible when it is represented relationally. A tool can depend on a library. A project can use a technology. A publication can document a concept. A program can be maintained by an organization. These relations make infrastructure visible.</p>\n<p>For Electronic Artefacts, that matters because software dependencies are not only build details. They are part of the cultural and technical conditions of the work. If a future project uses Web Audio, WebGL, p5.js or a graph library, the Knowledge Hub should be able to explain the relation between the project, the tool and the broader open-source ecosystem.</p>\n<h2 id=\"evaluation-criteria\">Evaluation criteria</h2>\n<p>An open-source record should answer more than “is the code public?” It should ask whether the license permits use and modification, whether the source is the preferred form for change, whether releases are identifiable, whether maintainers are visible, whether documentation exists and whether dependencies can be preserved.</p>\n<p>Creative projects should also ask what kind of learning the software enables. A library that is readable and well documented can become pedagogy. A library that is powerful but opaque may still be useful, but it plays a different cultural role.</p>\n<h2 id=\"preservation-angle\">Preservation angle</h2>\n<p>Open source helps preservation only when the code and its context survive. A repository without releases, examples, licenses or dependency records may be hard to reconstruct. A responsible cultural archive should therefore preserve not only source code, but also documentation, version constraints, sample inputs, outputs and build instructions.</p>\n<h2 id=\"reader-pathway\">Reader pathway</h2>\n<p>A search visitor may arrive through a practical query about open source, creative coding or software culture. The article should move that reader from licensing into infrastructure: who maintains the code, what depends on it, how it teaches, and how it can be preserved. From there, the natural path leads to <a href=\"/knowledge/concepts/creative-coding/\">Creative Coding</a>, <a href=\"/knowledge/concepts/digital-preservation/\">Digital Preservation</a> and future software archive records.</p>\n<h2 id=\"future-work\">Future work</h2>\n<p>Future entries should cover software preservation, creative coding libraries, dependency archives, licenses for cultural projects, maintainership models and open-source governance.</p>\n<h2 id=\"related-concepts\">Related concepts</h2>\n<p>Read <a href=\"/knowledge/concepts/open-source/\">Open Source</a>, <a href=\"/knowledge/concepts/creative-coding/\">Creative Coding</a>, <a href=\"/knowledge/concepts/internet-culture/\">Internet Culture</a> and <a href=\"/knowledge/concepts/digital-preservation/\">Digital Preservation</a>.</p>\n<h2 id=\"suggested-reading\">Suggested reading</h2>\n<p>Start with the Open Source Definition, then study concrete creative tools such as Processing and p5.js through examples and repository histories.</p>\n<h2 id=\"related-articles\">Related articles</h2>\n<p>Continue with <a href=\"/publications/creative-coding-pedagogy-from-logo-to-p5js/\">Creative Coding Pedagogy from Logo to p5.js</a> and <a href=\"/publications/digital-preservation-and-living-archives/\">Digital Preservation and Living Archives</a>.</p>\n<h2 id=\"glossary\">Glossary</h2>\n<p>Open source: software distributed under terms that allow use, study, modification and redistribution.</p>\n<p>Maintainer: steward of a project repository and release process.</p>\n<p>Fork: a separate development path derived from an existing codebase.</p>\n<p>Dependency: software required by another system.</p>\n<h2 id=\"limitations\">Limitations</h2>\n<p>Open source does not solve every problem. It can reproduce inequality, burn out maintainers and create fragile dependency chains.</p>\n<p>It also does not replace editorial judgment. A public knowledge system should document open-source use without turning every article into a software advocacy text.</p>\n<h2 id=\"references\">References</h2>\n<ul>\n<li>Open Source Initiative. The Open Source Definition.</li>\n<li>Processing Foundation. p5.js.</li>\n<li>Electronic Artefacts. Creative Coding and Digital Preservation records.</li>\n</ul>\n",
   "headings": [
     "Problem",
     "Introduction",
@@ -108,5 +108,127 @@
     "Glossary",
     "Limitations",
     "References"
+  ],
+  "headingItems": [
+    {
+      "level": 2,
+      "title": "Problem",
+      "id": "problem"
+    },
+    {
+      "level": 2,
+      "title": "Introduction",
+      "id": "introduction"
+    },
+    {
+      "level": 2,
+      "title": "Context",
+      "id": "context"
+    },
+    {
+      "level": 2,
+      "title": "History",
+      "id": "history"
+    },
+    {
+      "level": 2,
+      "title": "Core concepts",
+      "id": "core-concepts"
+    },
+    {
+      "level": 2,
+      "title": "Architecture",
+      "id": "architecture"
+    },
+    {
+      "level": 2,
+      "title": "Implementation",
+      "id": "implementation"
+    },
+    {
+      "level": 2,
+      "title": "Practical applications",
+      "id": "practical-applications"
+    },
+    {
+      "level": 2,
+      "title": "Tools",
+      "id": "tools"
+    },
+    {
+      "level": 2,
+      "title": "Evidence",
+      "id": "evidence"
+    },
+    {
+      "level": 2,
+      "title": "Editorial method",
+      "id": "editorial-method"
+    },
+    {
+      "level": 2,
+      "title": "Common mistakes",
+      "id": "common-mistakes"
+    },
+    {
+      "level": 2,
+      "title": "Electronic Artefacts implications",
+      "id": "electronic-artefacts-implications"
+    },
+    {
+      "level": 2,
+      "title": "Knowledge graph role",
+      "id": "knowledge-graph-role"
+    },
+    {
+      "level": 2,
+      "title": "Evaluation criteria",
+      "id": "evaluation-criteria"
+    },
+    {
+      "level": 2,
+      "title": "Preservation angle",
+      "id": "preservation-angle"
+    },
+    {
+      "level": 2,
+      "title": "Reader pathway",
+      "id": "reader-pathway"
+    },
+    {
+      "level": 2,
+      "title": "Future work",
+      "id": "future-work"
+    },
+    {
+      "level": 2,
+      "title": "Related concepts",
+      "id": "related-concepts"
+    },
+    {
+      "level": 2,
+      "title": "Suggested reading",
+      "id": "suggested-reading"
+    },
+    {
+      "level": 2,
+      "title": "Related articles",
+      "id": "related-articles"
+    },
+    {
+      "level": 2,
+      "title": "Glossary",
+      "id": "glossary"
+    },
+    {
+      "level": 2,
+      "title": "Limitations",
+      "id": "limitations"
+    },
+    {
+      "level": 2,
+      "title": "References",
+      "id": "references"
+    }
   ]
 }

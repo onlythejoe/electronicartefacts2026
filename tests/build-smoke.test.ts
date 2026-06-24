@@ -8,7 +8,7 @@ test("generated canonical pages contain semantic HTML when build output exists",
   try {
     const html = await readFile(file, "utf8");
     assert.match(html, /<h1[^>]*>Graph Runtime<\/h1>/);
-    assert.match(html, /<article[^>]*>[\s\S]*<h2>Definition<\/h2>/);
+    assert.match(html, /<article[^>]*>[\s\S]*<h2(?:\s[^>]*)?>Definition<\/h2>/);
     assert.match(html, /application\/ld\+json/);
     assert.match(html, /rel="canonical"/);
   } catch {

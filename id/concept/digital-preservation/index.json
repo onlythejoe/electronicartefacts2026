@@ -72,7 +72,7 @@
     "Digital preservation is a cultural and interpretive practice, not only a storage problem.",
     "Born-digital artistic work requires preservation of context as well as files."
   ],
-  "bodyHtml": "<h2>Definition</h2>\n<p>Digital preservation is the long-term work of keeping digital objects understandable, authentic, usable and accessible. It is broader than backup. Backup protects against immediate loss. Preservation protects against future unintelligibility.</p>\n<h2>Scope</h2>\n<p>The concept includes storage, redundancy, checksums, metadata, format sustainability, rights, documentation, migration, emulation, access copies, provenance, selection and review. For cultural material, it also includes context: why the object mattered, how it was made, and how it should be interpreted.</p>\n<h2>Why it matters</h2>\n<p>Digital objects are fragile in ways that are not always visible. A file can exist and still become unreadable. A recording can play and still lose its production context. A website can be copied and still lose its routes, scripts, metadata and original interaction.</p>\n<h2>Electronic Artefacts position</h2>\n<p>Electronic Artefacts treats digital preservation as part of the knowledge graph. An archive record should know what it is, where it came from, what it documents, what its rights are, and how it relates to projects or publications. This is especially relevant to Palimpsests, ORETH and Vestiges.</p>\n<h2>Applications</h2>\n<p>Applications include audio archives, project media, research notes, generated static pages, JSON-LD records, software releases, visual references, datasets and cultural dossiers.</p>\n<h2>Limitations</h2>\n<p>Preservation requires selection. Keeping every temporary file creates noise and cost. The purpose is to preserve significant evidence, not to freeze every intermediate state forever.</p>\n<h2>References</h2>\n<p>See the Digital Preservation Coalition Handbook, Library of Congress Sustainability of Digital Formats and NDSA Levels of Digital Preservation.</p>\n",
+  "bodyHtml": "<h2 id=\"definition\">Definition</h2>\n<p>Digital preservation is the long-term work of keeping digital objects understandable, authentic, usable and accessible. It is broader than backup. Backup protects against immediate loss. Preservation protects against future unintelligibility.</p>\n<h2 id=\"scope\">Scope</h2>\n<p>The concept includes storage, redundancy, checksums, metadata, format sustainability, rights, documentation, migration, emulation, access copies, provenance, selection and review. For cultural material, it also includes context: why the object mattered, how it was made, and how it should be interpreted.</p>\n<h2 id=\"why-it-matters\">Why it matters</h2>\n<p>Digital objects are fragile in ways that are not always visible. A file can exist and still become unreadable. A recording can play and still lose its production context. A website can be copied and still lose its routes, scripts, metadata and original interaction.</p>\n<h2 id=\"electronic-artefacts-position\">Electronic Artefacts position</h2>\n<p>Electronic Artefacts treats digital preservation as part of the knowledge graph. An archive record should know what it is, where it came from, what it documents, what its rights are, and how it relates to projects or publications. This is especially relevant to Palimpsests, ORETH and Vestiges.</p>\n<h2 id=\"applications\">Applications</h2>\n<p>Applications include audio archives, project media, research notes, generated static pages, JSON-LD records, software releases, visual references, datasets and cultural dossiers.</p>\n<h2 id=\"limitations\">Limitations</h2>\n<p>Preservation requires selection. Keeping every temporary file creates noise and cost. The purpose is to preserve significant evidence, not to freeze every intermediate state forever.</p>\n<h2 id=\"references\">References</h2>\n<p>See the Digital Preservation Coalition Handbook, Library of Congress Sustainability of Digital Formats and NDSA Levels of Digital Preservation.</p>\n",
   "headings": [
     "Definition",
     "Scope",
@@ -81,5 +81,42 @@
     "Applications",
     "Limitations",
     "References"
+  ],
+  "headingItems": [
+    {
+      "level": 2,
+      "title": "Definition",
+      "id": "definition"
+    },
+    {
+      "level": 2,
+      "title": "Scope",
+      "id": "scope"
+    },
+    {
+      "level": 2,
+      "title": "Why it matters",
+      "id": "why-it-matters"
+    },
+    {
+      "level": 2,
+      "title": "Electronic Artefacts position",
+      "id": "electronic-artefacts-position"
+    },
+    {
+      "level": 2,
+      "title": "Applications",
+      "id": "applications"
+    },
+    {
+      "level": 2,
+      "title": "Limitations",
+      "id": "limitations"
+    },
+    {
+      "level": 2,
+      "title": "References",
+      "id": "references"
+    }
   ]
 }

@@ -88,7 +88,7 @@
   "citation": {
     "preferred": "Electronic Artefacts. \"Generative AI, Latent Space and Creative Workflows.\" Technical article, version 1.0.0, 2026."
   },
-  "bodyHtml": "<h2>Problem</h2>\n<p>Generative AI is often discussed through outputs: an image, a paragraph, a sound, a video, a code snippet. Output-first discussion hides the workflow that produced the result. It hides prompts, source material, model constraints, editing, rejection, rights, uncertainty and human judgment.</p>\n<p>This creates a cultural problem. Generated media can look complete while its provenance is unclear. A model may produce a convincing answer without reliable grounding. A workflow may depend on undocumented prompts or unstable tools.</p>\n<p>Electronic Artefacts needs a precise way to discuss generative AI without hype. The Knowledge Hub should treat it as a system of production, risk, augmentation and interpretation.</p>\n<h2>Introduction</h2>\n<p>Generative AI refers to machine-learning systems that produce or transform media from learned patterns. The media may be text, image, audio, video, code or structured data. A creative workflow may use prompts, references, embeddings, latent spaces, model outputs, human selection and editing.</p>\n<p>The central question is not whether AI was used. The central question is how it was used, what constraints shaped the output, what sources or models were involved, and how the final result was evaluated.</p>\n<h2>Context</h2>\n<p>Generative AI belongs to the longer history of generative systems. It is new in scale and capability, but not in the basic idea of producing outputs from rules, models and constraints.</p>\n<p>The NIST AI Risk Management Framework provides a useful counterweight to novelty discourse. It frames AI systems through risk, trustworthiness, context and evaluation. Creative practice needs the same discipline.</p>\n<h2>History</h2>\n<p>Machine-learning generation has roots in statistical modeling, neural networks, computer vision, natural language processing, audio synthesis and information retrieval. Transformers became especially important for language and multimodal systems after the publication of “Attention Is All You Need.”</p>\n<p>Creative cultures rapidly adopted generative models for ideation, drafting, transformation and production. That adoption created new questions around authorship, datasets, labor, style, evaluation and preservation.</p>\n<h2>Core concepts</h2>\n<p>Model: learned system that transforms input into output.</p>\n<p>Prompt: instruction or input used to guide generation.</p>\n<p>Embedding: numerical representation of data used for comparison or retrieval.</p>\n<p>Latent space: learned representation space where related patterns can be navigated.</p>\n<p>Inference: producing output from a model.</p>\n<p>Provenance: origin and transformation history.</p>\n<p>Evaluation: judgment of output quality, risk and fitness.</p>\n<h2>Architecture</h2>\n<p>A responsible generative AI workflow has sources, model, prompt, constraints, output, selection, editing and record. Sources may include reference material, internal notes, datasets or retrieved documents. The model transforms input. Constraints guide output. Selection and editing remain human responsibilities. The record preserves what happened.</p>\n<p>If the workflow is used inside Electronic Artefacts, it should connect to the graph. A generated artefact should relate to its project, source, method, model context and editorial decision.</p>\n<h2>Implementation</h2>\n<p>Implementation begins by naming the use case. Is the system helping ideation, summarization, drafting, sound exploration, code generation, image generation, classification or retrieval?</p>\n<p>Then define boundaries. What material can be used? What rights apply? What must be checked? What uncertainty should be disclosed?</p>\n<p>Finally, preserve workflow evidence. Record prompts when useful, model family when possible, source material, human edits and publication decision.</p>\n<h2>Practical applications</h2>\n<p>Generative AI can support article outlines, glossary drafts, code prototypes, image concepts, audio transformations, metadata extraction, search augmentation and graph exploration.</p>\n<p>For ORETH, it may help classify or describe audio patterns when paired with listening and provenance.</p>\n<p>For Palimpsests, it may support transformation and memory experiments if sources and edits remain visible.</p>\n<p>For the Knowledge Hub, it can assist production but should not replace editorial accountability.</p>\n<h2>Tools</h2>\n<p>Useful tools include language models, image models, audio models, embedding systems, retrieval pipelines, prompt logs, version control, citation managers, human review checklists and provenance records.</p>\n<h2>Evidence</h2>\n<p>NIST frames AI risk management around context, trustworthiness and evaluation. Transformer research provides one technical lineage for modern generative systems. Electronic Artefacts already has concepts for provenance, generative systems, HCI and augmented intelligence, which are necessary to discuss AI responsibly.</p>\n<h2>Editorial method</h2>\n<p>An AI-related article should avoid both hype and dismissal. It should explain the system boundary, the human role and the evidence behind claims.</p>\n<p>When outputs are generated, the publication should document whether the generated material is a draft, source, artefact, reference or final work. Those roles are different.</p>\n<h2>Common mistakes</h2>\n<p>The first mistake is treating generated output as self-evident evidence.</p>\n<p>The second mistake is hiding prompts and selection.</p>\n<p>The third mistake is ignoring rights and training-data questions.</p>\n<p>The fourth mistake is using “AI” as a vague keyword instead of naming the workflow.</p>\n<h2>Electronic Artefacts implications</h2>\n<p>Electronic Artefacts can discuss generative AI through its own stronger vocabulary: generative systems, provenance, augmented intelligence, HCI and contextual execution.</p>\n<p>This makes the site more durable. Instead of chasing every model release, it can explain the stable concepts readers will need for years.</p>\n<h2>Knowledge graph role</h2>\n<p>Generative AI workflows need graph structure because they combine many entities: source material, model family, prompt, output, editor, project, rights context, method and publication decision. A flat article can describe those pieces, but a graph can keep them reusable.</p>\n<p>For Electronic Artefacts, this is the difference between saying “AI was used” and documenting what actually happened. A generated image could be related to a project and a prompt archive. A generated text draft could be related to a source set and human review. An audio transformation could connect ORETH, signal archaeology and provenance.</p>\n<h2>Evaluation criteria</h2>\n<p>AI-assisted work should be evaluated through fitness, provenance, editability, risk and disclosure. Does the output serve a clear purpose? Are source materials and constraints known? Can a human revise the result? Are errors, bias or rights issues considered? Does publication make the system’s role clear enough for readers?</p>\n<p>The criteria should match the use case. A private ideation sketch requires a different level of disclosure than a public archive record or factual article.</p>\n<h2>Editorial standard</h2>\n<p>The Knowledge Hub should avoid model-release dependency. Instead of publishing thin pages about specific tools, it should document workflows, concepts and evaluation methods. Product details can change quickly. Provenance, human review, source context and interface agency remain durable.</p>\n<h2>Reader pathway</h2>\n<p>Generative AI has high search demand, but the Knowledge Hub should not chase superficial traffic. A reader may arrive asking what latent space, prompting or AI workflow means. The article should answer, then guide the reader toward durable concepts: <a href=\"/knowledge/concepts/provenance/\">Provenance</a>, <a href=\"/knowledge/concepts/augmented-intelligence/\">Augmented Intelligence</a>, <a href=\"/knowledge/concepts/human-computer-interaction/\">Human Computer Interaction</a> and <a href=\"/knowledge/concepts/generative-system/\">Generative System</a>.</p>\n<p>This pathway lets Electronic Artefacts discuss AI without becoming a news blog. The focus remains on systems, evidence and creative practice.</p>\n<h2>Preservation angle</h2>\n<p>AI-assisted work can be hard to reconstruct. Models change, interfaces disappear, prompts are lost and outputs are edited. A responsible workflow should preserve enough process context to make later interpretation possible. That may include prompts, source sets, model family, human edits, review notes and publication rationale.</p>\n<h2>Future work</h2>\n<p>Future entries should cover embeddings, retrieval-augmented generation, prompt archives, model evaluation, AI audio tools, dataset provenance, synthetic media rights and human-in-the-loop creative systems.</p>\n<h2>Related concepts</h2>\n<p>Read <a href=\"/knowledge/concepts/generative-ai/\">Generative AI</a>, <a href=\"/knowledge/concepts/augmented-intelligence/\">Augmented Intelligence</a>, <a href=\"/knowledge/concepts/provenance/\">Provenance</a>, <a href=\"/knowledge/concepts/generative-system/\">Generative System</a> and <a href=\"/knowledge/concepts/human-computer-interaction/\">Human Computer Interaction</a>.</p>\n<h2>Suggested reading</h2>\n<p>Start with NIST AI RMF for risk and context, then study transformer research and practical workflow documentation.</p>\n<h2>Related articles</h2>\n<p>Continue with <a href=\"/publications/generative-systems-cybernetics-and-creative-coding/\">Generative Systems, Cybernetics and Creative Coding</a> and <a href=\"/publications/human-computer-interaction-for-creative-tools/\">Human Computer Interaction for Creative Tools</a>.</p>\n<h2>Glossary</h2>\n<p>Latent space: learned representation space for patterns.</p>\n<p>Prompt: input used to guide generation.</p>\n<p>Embedding: numerical representation used for retrieval or comparison.</p>\n<p>Provenance: origin and transformation history.</p>\n<h2>Limitations</h2>\n<p>Generative AI changes quickly. Durable writing should focus on concepts, workflows and evaluation rather than fragile product comparisons.</p>\n<p>Model behavior can be uncertain. A responsible workflow keeps human review, source checking and publication judgment explicit.</p>\n<h2>References</h2>\n<ul>\n<li>NIST. AI Risk Management Framework.</li>\n<li>Vaswani et al. Attention Is All You Need. 2017.</li>\n<li>Electronic Artefacts. Generative AI, Provenance and Generative System records.</li>\n</ul>\n",
+  "bodyHtml": "<h2 id=\"problem\">Problem</h2>\n<p>Generative AI is often discussed through outputs: an image, a paragraph, a sound, a video, a code snippet. Output-first discussion hides the workflow that produced the result. It hides prompts, source material, model constraints, editing, rejection, rights, uncertainty and human judgment.</p>\n<p>This creates a cultural problem. Generated media can look complete while its provenance is unclear. A model may produce a convincing answer without reliable grounding. A workflow may depend on undocumented prompts or unstable tools.</p>\n<p>Electronic Artefacts needs a precise way to discuss generative AI without hype. The Knowledge Hub should treat it as a system of production, risk, augmentation and interpretation.</p>\n<h2 id=\"introduction\">Introduction</h2>\n<p>Generative AI refers to machine-learning systems that produce or transform media from learned patterns. The media may be text, image, audio, video, code or structured data. A creative workflow may use prompts, references, embeddings, latent spaces, model outputs, human selection and editing.</p>\n<p>The central question is not whether AI was used. The central question is how it was used, what constraints shaped the output, what sources or models were involved, and how the final result was evaluated.</p>\n<h2 id=\"context\">Context</h2>\n<p>Generative AI belongs to the longer history of generative systems. It is new in scale and capability, but not in the basic idea of producing outputs from rules, models and constraints.</p>\n<p>The NIST AI Risk Management Framework provides a useful counterweight to novelty discourse. It frames AI systems through risk, trustworthiness, context and evaluation. Creative practice needs the same discipline.</p>\n<h2 id=\"history\">History</h2>\n<p>Machine-learning generation has roots in statistical modeling, neural networks, computer vision, natural language processing, audio synthesis and information retrieval. Transformers became especially important for language and multimodal systems after the publication of “Attention Is All You Need.”</p>\n<p>Creative cultures rapidly adopted generative models for ideation, drafting, transformation and production. That adoption created new questions around authorship, datasets, labor, style, evaluation and preservation.</p>\n<h2 id=\"core-concepts\">Core concepts</h2>\n<p>Model: learned system that transforms input into output.</p>\n<p>Prompt: instruction or input used to guide generation.</p>\n<p>Embedding: numerical representation of data used for comparison or retrieval.</p>\n<p>Latent space: learned representation space where related patterns can be navigated.</p>\n<p>Inference: producing output from a model.</p>\n<p>Provenance: origin and transformation history.</p>\n<p>Evaluation: judgment of output quality, risk and fitness.</p>\n<h2 id=\"architecture\">Architecture</h2>\n<p>A responsible generative AI workflow has sources, model, prompt, constraints, output, selection, editing and record. Sources may include reference material, internal notes, datasets or retrieved documents. The model transforms input. Constraints guide output. Selection and editing remain human responsibilities. The record preserves what happened.</p>\n<p>If the workflow is used inside Electronic Artefacts, it should connect to the graph. A generated artefact should relate to its project, source, method, model context and editorial decision.</p>\n<h2 id=\"implementation\">Implementation</h2>\n<p>Implementation begins by naming the use case. Is the system helping ideation, summarization, drafting, sound exploration, code generation, image generation, classification or retrieval?</p>\n<p>Then define boundaries. What material can be used? What rights apply? What must be checked? What uncertainty should be disclosed?</p>\n<p>Finally, preserve workflow evidence. Record prompts when useful, model family when possible, source material, human edits and publication decision.</p>\n<h2 id=\"practical-applications\">Practical applications</h2>\n<p>Generative AI can support article outlines, glossary drafts, code prototypes, image concepts, audio transformations, metadata extraction, search augmentation and graph exploration.</p>\n<p>For ORETH, it may help classify or describe audio patterns when paired with listening and provenance.</p>\n<p>For Palimpsests, it may support transformation and memory experiments if sources and edits remain visible.</p>\n<p>For the Knowledge Hub, it can assist production but should not replace editorial accountability.</p>\n<h2 id=\"tools\">Tools</h2>\n<p>Useful tools include language models, image models, audio models, embedding systems, retrieval pipelines, prompt logs, version control, citation managers, human review checklists and provenance records.</p>\n<h2 id=\"evidence\">Evidence</h2>\n<p>NIST frames AI risk management around context, trustworthiness and evaluation. Transformer research provides one technical lineage for modern generative systems. Electronic Artefacts already has concepts for provenance, generative systems, HCI and augmented intelligence, which are necessary to discuss AI responsibly.</p>\n<h2 id=\"editorial-method\">Editorial method</h2>\n<p>An AI-related article should avoid both hype and dismissal. It should explain the system boundary, the human role and the evidence behind claims.</p>\n<p>When outputs are generated, the publication should document whether the generated material is a draft, source, artefact, reference or final work. Those roles are different.</p>\n<h2 id=\"common-mistakes\">Common mistakes</h2>\n<p>The first mistake is treating generated output as self-evident evidence.</p>\n<p>The second mistake is hiding prompts and selection.</p>\n<p>The third mistake is ignoring rights and training-data questions.</p>\n<p>The fourth mistake is using “AI” as a vague keyword instead of naming the workflow.</p>\n<h2 id=\"electronic-artefacts-implications\">Electronic Artefacts implications</h2>\n<p>Electronic Artefacts can discuss generative AI through its own stronger vocabulary: generative systems, provenance, augmented intelligence, HCI and contextual execution.</p>\n<p>This makes the site more durable. Instead of chasing every model release, it can explain the stable concepts readers will need for years.</p>\n<h2 id=\"knowledge-graph-role\">Knowledge graph role</h2>\n<p>Generative AI workflows need graph structure because they combine many entities: source material, model family, prompt, output, editor, project, rights context, method and publication decision. A flat article can describe those pieces, but a graph can keep them reusable.</p>\n<p>For Electronic Artefacts, this is the difference between saying “AI was used” and documenting what actually happened. A generated image could be related to a project and a prompt archive. A generated text draft could be related to a source set and human review. An audio transformation could connect ORETH, signal archaeology and provenance.</p>\n<h2 id=\"evaluation-criteria\">Evaluation criteria</h2>\n<p>AI-assisted work should be evaluated through fitness, provenance, editability, risk and disclosure. Does the output serve a clear purpose? Are source materials and constraints known? Can a human revise the result? Are errors, bias or rights issues considered? Does publication make the system’s role clear enough for readers?</p>\n<p>The criteria should match the use case. A private ideation sketch requires a different level of disclosure than a public archive record or factual article.</p>\n<h2 id=\"editorial-standard\">Editorial standard</h2>\n<p>The Knowledge Hub should avoid model-release dependency. Instead of publishing thin pages about specific tools, it should document workflows, concepts and evaluation methods. Product details can change quickly. Provenance, human review, source context and interface agency remain durable.</p>\n<h2 id=\"reader-pathway\">Reader pathway</h2>\n<p>Generative AI has high search demand, but the Knowledge Hub should not chase superficial traffic. A reader may arrive asking what latent space, prompting or AI workflow means. The article should answer, then guide the reader toward durable concepts: <a href=\"/knowledge/concepts/provenance/\">Provenance</a>, <a href=\"/knowledge/concepts/augmented-intelligence/\">Augmented Intelligence</a>, <a href=\"/knowledge/concepts/human-computer-interaction/\">Human Computer Interaction</a> and <a href=\"/knowledge/concepts/generative-system/\">Generative System</a>.</p>\n<p>This pathway lets Electronic Artefacts discuss AI without becoming a news blog. The focus remains on systems, evidence and creative practice.</p>\n<h2 id=\"preservation-angle\">Preservation angle</h2>\n<p>AI-assisted work can be hard to reconstruct. Models change, interfaces disappear, prompts are lost and outputs are edited. A responsible workflow should preserve enough process context to make later interpretation possible. That may include prompts, source sets, model family, human edits, review notes and publication rationale.</p>\n<h2 id=\"future-work\">Future work</h2>\n<p>Future entries should cover embeddings, retrieval-augmented generation, prompt archives, model evaluation, AI audio tools, dataset provenance, synthetic media rights and human-in-the-loop creative systems.</p>\n<h2 id=\"related-concepts\">Related concepts</h2>\n<p>Read <a href=\"/knowledge/concepts/generative-ai/\">Generative AI</a>, <a href=\"/knowledge/concepts/augmented-intelligence/\">Augmented Intelligence</a>, <a href=\"/knowledge/concepts/provenance/\">Provenance</a>, <a href=\"/knowledge/concepts/generative-system/\">Generative System</a> and <a href=\"/knowledge/concepts/human-computer-interaction/\">Human Computer Interaction</a>.</p>\n<h2 id=\"suggested-reading\">Suggested reading</h2>\n<p>Start with NIST AI RMF for risk and context, then study transformer research and practical workflow documentation.</p>\n<h2 id=\"related-articles\">Related articles</h2>\n<p>Continue with <a href=\"/publications/generative-systems-cybernetics-and-creative-coding/\">Generative Systems, Cybernetics and Creative Coding</a> and <a href=\"/publications/human-computer-interaction-for-creative-tools/\">Human Computer Interaction for Creative Tools</a>.</p>\n<h2 id=\"glossary\">Glossary</h2>\n<p>Latent space: learned representation space for patterns.</p>\n<p>Prompt: input used to guide generation.</p>\n<p>Embedding: numerical representation used for retrieval or comparison.</p>\n<p>Provenance: origin and transformation history.</p>\n<h2 id=\"limitations\">Limitations</h2>\n<p>Generative AI changes quickly. Durable writing should focus on concepts, workflows and evaluation rather than fragile product comparisons.</p>\n<p>Model behavior can be uncertain. A responsible workflow keeps human review, source checking and publication judgment explicit.</p>\n<h2 id=\"references\">References</h2>\n<ul>\n<li>NIST. AI Risk Management Framework.</li>\n<li>Vaswani et al. Attention Is All You Need. 2017.</li>\n<li>Electronic Artefacts. Generative AI, Provenance and Generative System records.</li>\n</ul>\n",
   "headings": [
     "Problem",
     "Introduction",
@@ -115,5 +115,132 @@
     "Glossary",
     "Limitations",
     "References"
+  ],
+  "headingItems": [
+    {
+      "level": 2,
+      "title": "Problem",
+      "id": "problem"
+    },
+    {
+      "level": 2,
+      "title": "Introduction",
+      "id": "introduction"
+    },
+    {
+      "level": 2,
+      "title": "Context",
+      "id": "context"
+    },
+    {
+      "level": 2,
+      "title": "History",
+      "id": "history"
+    },
+    {
+      "level": 2,
+      "title": "Core concepts",
+      "id": "core-concepts"
+    },
+    {
+      "level": 2,
+      "title": "Architecture",
+      "id": "architecture"
+    },
+    {
+      "level": 2,
+      "title": "Implementation",
+      "id": "implementation"
+    },
+    {
+      "level": 2,
+      "title": "Practical applications",
+      "id": "practical-applications"
+    },
+    {
+      "level": 2,
+      "title": "Tools",
+      "id": "tools"
+    },
+    {
+      "level": 2,
+      "title": "Evidence",
+      "id": "evidence"
+    },
+    {
+      "level": 2,
+      "title": "Editorial method",
+      "id": "editorial-method"
+    },
+    {
+      "level": 2,
+      "title": "Common mistakes",
+      "id": "common-mistakes"
+    },
+    {
+      "level": 2,
+      "title": "Electronic Artefacts implications",
+      "id": "electronic-artefacts-implications"
+    },
+    {
+      "level": 2,
+      "title": "Knowledge graph role",
+      "id": "knowledge-graph-role"
+    },
+    {
+      "level": 2,
+      "title": "Evaluation criteria",
+      "id": "evaluation-criteria"
+    },
+    {
+      "level": 2,
+      "title": "Editorial standard",
+      "id": "editorial-standard"
+    },
+    {
+      "level": 2,
+      "title": "Reader pathway",
+      "id": "reader-pathway"
+    },
+    {
+      "level": 2,
+      "title": "Preservation angle",
+      "id": "preservation-angle"
+    },
+    {
+      "level": 2,
+      "title": "Future work",
+      "id": "future-work"
+    },
+    {
+      "level": 2,
+      "title": "Related concepts",
+      "id": "related-concepts"
+    },
+    {
+      "level": 2,
+      "title": "Suggested reading",
+      "id": "suggested-reading"
+    },
+    {
+      "level": 2,
+      "title": "Related articles",
+      "id": "related-articles"
+    },
+    {
+      "level": 2,
+      "title": "Glossary",
+      "id": "glossary"
+    },
+    {
+      "level": 2,
+      "title": "Limitations",
+      "id": "limitations"
+    },
+    {
+      "level": 2,
+      "title": "References",
+      "id": "references"
+    }
   ]
 }

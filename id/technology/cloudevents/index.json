@@ -46,10 +46,27 @@
   "category": "protocol",
   "roleInEcosystem": "CloudEvents provides a shared event envelope for type, source, subject, identity, time and payload metadata.",
   "officialUrl": "https://cloudevents.io/",
-  "bodyHtml": "<h2>Role</h2>\n<p>CloudEvents standardizes common event metadata so that producers, transports and consumers can exchange event records with fewer platform-specific assumptions.</p>\n<h2>Use</h2>\n<p>Electronic Artefacts can use it as a reference when defining VASTE event envelopes and public event projections.</p>\n<h2>References</h2>\n<p>See the CloudEvents specification and Event-Driven Architecture.</p>\n",
+  "bodyHtml": "<h2 id=\"role\">Role</h2>\n<p>CloudEvents standardizes common event metadata so that producers, transports and consumers can exchange event records with fewer platform-specific assumptions.</p>\n<h2 id=\"use\">Use</h2>\n<p>Electronic Artefacts can use it as a reference when defining VASTE event envelopes and public event projections.</p>\n<h2 id=\"references\">References</h2>\n<p>See the CloudEvents specification and Event-Driven Architecture.</p>\n",
   "headings": [
     "Role",
     "Use",
     "References"
+  ],
+  "headingItems": [
+    {
+      "level": 2,
+      "title": "Role",
+      "id": "role"
+    },
+    {
+      "level": 2,
+      "title": "Use",
+      "id": "use"
+    },
+    {
+      "level": 2,
+      "title": "References",
+      "id": "references"
+    }
   ]
 }

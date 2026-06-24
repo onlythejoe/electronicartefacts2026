@@ -138,12 +138,39 @@
     }
   ],
   "selectionNote": "This wave prioritizes evergreen topics with strong search intent, deep internal linking potential and long-term relevance to creative technology, archives and knowledge systems.",
-  "bodyHtml": "<h2>Thesis</h2>\n<p>Knowledge Hub Second Wave extends the first foundation collection with topics that are broad enough to remain useful for decades and specific enough to support organic discovery.</p>\n<h2>Selection logic</h2>\n<p>The collection selects articles and entities that can connect multiple disciplines: hypertext, open source, metadata, web audio, creative coding pedagogy, procedural graphics, motion, typography, HCI, algorithmic music and generative AI.</p>\n<h2>Editorial role</h2>\n<p>This collection is designed as an onboarding path for readers who arrive through search and then discover Electronic Artefacts projects, programs and research fields through contextual links.</p>\n<h2>Current members</h2>\n<p>The wave includes twelve publications, thirteen concept records and five technology records.</p>\n<h2>Future expansion</h2>\n<p>Future waves should add methods, tool records, datasets, archive records and project-specific case studies that reuse these entities instead of creating duplicate categories.</p>\n",
+  "bodyHtml": "<h2 id=\"thesis\">Thesis</h2>\n<p>Knowledge Hub Second Wave extends the first foundation collection with topics that are broad enough to remain useful for decades and specific enough to support organic discovery.</p>\n<h2 id=\"selection-logic\">Selection logic</h2>\n<p>The collection selects articles and entities that can connect multiple disciplines: hypertext, open source, metadata, web audio, creative coding pedagogy, procedural graphics, motion, typography, HCI, algorithmic music and generative AI.</p>\n<h2 id=\"editorial-role\">Editorial role</h2>\n<p>This collection is designed as an onboarding path for readers who arrive through search and then discover Electronic Artefacts projects, programs and research fields through contextual links.</p>\n<h2 id=\"current-members\">Current members</h2>\n<p>The wave includes twelve publications, thirteen concept records and five technology records.</p>\n<h2 id=\"future-expansion\">Future expansion</h2>\n<p>Future waves should add methods, tool records, datasets, archive records and project-specific case studies that reuse these entities instead of creating duplicate categories.</p>\n",
   "headings": [
     "Thesis",
     "Selection logic",
     "Editorial role",
     "Current members",
     "Future expansion"
+  ],
+  "headingItems": [
+    {
+      "level": 2,
+      "title": "Thesis",
+      "id": "thesis"
+    },
+    {
+      "level": 2,
+      "title": "Selection logic",
+      "id": "selection-logic"
+    },
+    {
+      "level": 2,
+      "title": "Editorial role",
+      "id": "editorial-role"
+    },
+    {
+      "level": 2,
+      "title": "Current members",
+      "id": "current-members"
+    },
+    {
+      "level": 2,
+      "title": "Future expansion",
+      "id": "future-expansion"
+    }
   ]
 }

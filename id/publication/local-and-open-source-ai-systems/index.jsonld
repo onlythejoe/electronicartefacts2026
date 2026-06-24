@@ -6,6 +6,15 @@
       "@id": "https://electronicartefacts.com/publications/local-and-open-source-ai-systems/#webpage",
       "url": "https://electronicartefacts.com/publications/local-and-open-source-ai-systems/",
       "name": "Local and Open Source AI Systems",
+      "description": "Understand local AI and open-source AI systems, including model weights, quantization, llama.cpp, privacy, hardware and licensing.",
+      "inLanguage": "en",
+      "datePublished": "2026-06-24",
+      "dateModified": "2026-06-24",
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-search.jpg",
+        "description": "Local and Open Source AI Systems"
+      },
       "mainEntity": {
         "@id": "https://electronicartefacts.com/id/publication/local-and-open-source-ai-systems/"
       },
@@ -17,15 +26,73 @@
       "@type": "TechArticle",
       "@id": "https://electronicartefacts.com/id/publication/local-and-open-source-ai-systems/",
       "name": "Local and Open Source AI Systems",
+      "headline": "Local and Open Source AI Systems",
       "description": "A practical guide to local inference, open-weight models, open-source AI, quantization, hardware, privacy, licensing and operational independence.",
       "url": "https://electronicartefacts.com/publications/local-and-open-source-ai-systems/",
+      "mainEntityOfPage": {
+        "@id": "https://electronicartefacts.com/publications/local-and-open-source-ai-systems/#webpage"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-search.jpg",
+        "description": "Local and Open Source AI Systems"
+      },
+      "author": [
+        {
+          "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
+        }
+      ],
+      "creator": [
+        {
+          "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
+        }
+      ],
+      "keywords": [
+        "Local AI",
+        "Open Source AI",
+        "Open Weights",
+        "Quantization",
+        "llama.cpp",
+        "Artificial Intelligence",
+        "Open Source",
+        "Programming",
+        "Systems Design"
+      ],
+      "inLanguage": "en",
       "dateCreated": "2026-06-24",
       "datePublished": "2026-06-24",
       "dateModified": "2026-06-24",
       "publisher": {
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
-      "citation": "Electronic Artefacts. \"Local and Open Source AI Systems.\" Technical article, version 1.0.0, 2026.",
+      "copyrightHolder": {
+        "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
+      },
+      "isAccessibleForFree": true,
+      "wordCount": 1967,
+      "citation": [
+        "Electronic Artefacts. \"Local and Open Source AI Systems.\" Technical article, version 1.0.0, 2026.",
+        {
+          "@type": "CreativeWork",
+          "name": "The Open Source AI Definition 1.0",
+          "url": "https://opensource.org/ai/open-source-ai-definition",
+          "publisher": "Open Source Initiative"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "llama.cpp",
+          "url": "https://github.com/ggml-org/llama.cpp",
+          "publisher": "ggml-org"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "QLoRA Efficient Finetuning of Quantized LLMs",
+          "url": "https://arxiv.org/abs/2305.14314",
+          "author": "Tim Dettmers et al.",
+          "publisher": "arXiv",
+          "datePublished": "2023-05-23"
+        }
+      ],
       "about": [
         {
           "@id": "https://electronicartefacts.com/id/concept/open-weight-model/"
@@ -42,7 +109,35 @@
         {
           "@id": "https://electronicartefacts.com/id/concept/provenance/"
         }
+      ],
+      "mentions": [
+        {
+          "@id": "https://electronicartefacts.com/id/concept/open-weight-model/"
+        },
+        {
+          "@id": "https://electronicartefacts.com/id/technology/llama-cpp/"
+        }
       ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/",
+      "name": "Electronic Artefacts",
+      "url": "https://electronicartefacts.com/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-logo.jpg"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://electronicartefacts.com/#website",
+      "url": "https://electronicartefacts.com/",
+      "name": "Electronic Artefacts",
+      "publisher": {
+        "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
+      },
+      "inLanguage": "en"
     },
     {
       "@type": "BreadcrumbList",
@@ -56,6 +151,12 @@
         {
           "@type": "ListItem",
           "position": 2,
+          "name": "Publications",
+          "item": "https://electronicartefacts.com/publications/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
           "name": "Local and Open Source AI Systems",
           "item": "https://electronicartefacts.com/publications/local-and-open-source-ai-systems/"
         }

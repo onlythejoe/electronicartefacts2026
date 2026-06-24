@@ -6,6 +6,15 @@
       "@id": "https://electronicartefacts.com/organizations/electronic-artefacts/#webpage",
       "url": "https://electronicartefacts.com/organizations/electronic-artefacts/",
       "name": "Electronic Artefacts",
+      "description": "Electronic Artefacts connects research, software, design, cultural production and archival practice through a shared graph of projects, programs and knowledge.",
+      "inLanguage": "en",
+      "datePublished": "2026-06-22",
+      "dateModified": "2026-06-22",
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-search.jpg",
+        "description": "Electronic Artefacts"
+      },
       "mainEntity": {
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
@@ -19,12 +28,63 @@
       "name": "Electronic Artefacts",
       "description": "Electronic Artefacts is an independent creative technology studio, software laboratory, research organization, cultural platform, label and publishing system.",
       "url": "https://electronicartefacts.com/organizations/electronic-artefacts/",
+      "mainEntityOfPage": {
+        "@id": "https://electronicartefacts.com/organizations/electronic-artefacts/#webpage"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-search.jpg",
+        "description": "Electronic Artefacts"
+      },
+      "author": [
+        {
+          "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
+        }
+      ],
+      "creator": [
+        {
+          "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
+        }
+      ],
+      "keywords": [
+        "Creative technology",
+        "Software",
+        "Research",
+        "Culture",
+        "Publishing"
+      ],
+      "inLanguage": "en",
       "dateCreated": "2024-01-01",
       "datePublished": "2026-06-22",
       "dateModified": "2026-06-22",
       "publisher": {
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
+      },
+      "copyrightHolder": {
+        "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
+      },
+      "isAccessibleForFree": true,
+      "wordCount": 141
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/",
+      "name": "Electronic Artefacts",
+      "url": "https://electronicartefacts.com/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-logo.jpg"
       }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://electronicartefacts.com/#website",
+      "url": "https://electronicartefacts.com/",
+      "name": "Electronic Artefacts",
+      "publisher": {
+        "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
+      },
+      "inLanguage": "en"
     },
     {
       "@type": "BreadcrumbList",
@@ -38,6 +98,12 @@
         {
           "@type": "ListItem",
           "position": 2,
+          "name": "Organizations",
+          "item": "https://electronicartefacts.com/organizations/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
           "name": "Electronic Artefacts",
           "item": "https://electronicartefacts.com/organizations/electronic-artefacts/"
         }

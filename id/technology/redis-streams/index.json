@@ -47,10 +47,27 @@
   "category": "database",
   "roleInEcosystem": "Redis Streams provides a compact event-log and consumer-group primitive for bounded orchestration, projections and real-time services.",
   "officialUrl": "https://redis.io/docs/latest/develop/data-types/streams/",
-  "bodyHtml": "<h2>Role</h2>\n<p>Redis Streams stores ordered entries in an append-only structure and supports multiple consumption patterns, including consumer groups and pending-entry tracking.</p>\n<h2>Use</h2>\n<p>It can support task distribution, event projections, integration streams and real-time processing when Redis fits the operational scale and durability requirements.</p>\n<h2>References</h2>\n<p>See the official Redis Streams documentation and Event-Driven Architecture.</p>\n",
+  "bodyHtml": "<h2 id=\"role\">Role</h2>\n<p>Redis Streams stores ordered entries in an append-only structure and supports multiple consumption patterns, including consumer groups and pending-entry tracking.</p>\n<h2 id=\"use\">Use</h2>\n<p>It can support task distribution, event projections, integration streams and real-time processing when Redis fits the operational scale and durability requirements.</p>\n<h2 id=\"references\">References</h2>\n<p>See the official Redis Streams documentation and Event-Driven Architecture.</p>\n",
   "headings": [
     "Role",
     "Use",
     "References"
+  ],
+  "headingItems": [
+    {
+      "level": 2,
+      "title": "Role",
+      "id": "role"
+    },
+    {
+      "level": 2,
+      "title": "Use",
+      "id": "use"
+    },
+    {
+      "level": 2,
+      "title": "References",
+      "id": "references"
+    }
   ]
 }

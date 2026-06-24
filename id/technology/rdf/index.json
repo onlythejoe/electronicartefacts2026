@@ -51,10 +51,27 @@
   "versions": [
     "RDF 1.1"
   ],
-  "bodyHtml": "<h2>Role</h2>\n<p>RDF is a reference model for representing information as graph statements. Electronic Artefacts uses RDF as a conceptual reference for entity identity and typed relationships, even when the internal source records are authored in Markdown and YAML.</p>\n<h2>Use</h2>\n<p>RDF helps clarify the difference between a thing, a page about that thing, and a statement connecting that thing to another thing.</p>\n<h2>Limitations</h2>\n<p>RDF interoperability requires precise identifiers, vocabularies and serialization choices. A site can learn from RDF without adopting a full RDF stack in its internal implementation.</p>\n",
+  "bodyHtml": "<h2 id=\"role\">Role</h2>\n<p>RDF is a reference model for representing information as graph statements. Electronic Artefacts uses RDF as a conceptual reference for entity identity and typed relationships, even when the internal source records are authored in Markdown and YAML.</p>\n<h2 id=\"use\">Use</h2>\n<p>RDF helps clarify the difference between a thing, a page about that thing, and a statement connecting that thing to another thing.</p>\n<h2 id=\"limitations\">Limitations</h2>\n<p>RDF interoperability requires precise identifiers, vocabularies and serialization choices. A site can learn from RDF without adopting a full RDF stack in its internal implementation.</p>\n",
   "headings": [
     "Role",
     "Use",
     "Limitations"
+  ],
+  "headingItems": [
+    {
+      "level": 2,
+      "title": "Role",
+      "id": "role"
+    },
+    {
+      "level": 2,
+      "title": "Use",
+      "id": "use"
+    },
+    {
+      "level": 2,
+      "title": "Limitations",
+      "id": "limitations"
+    }
   ]
 }

@@ -16,5 +16,5 @@ test("loads the typed pilot entities", async () => {
   ]) {
     assert.ok(entities.some((entity) => entity.id === id), `missing ${id}`);
   }
-  assert.ok(entities.every((entity) => entity.bodyHtml.includes("<h2>")));
+  assert.ok(entities.every((entity) => /<h2(?:\s[^>]*)?>/.test(entity.bodyHtml)));
 });

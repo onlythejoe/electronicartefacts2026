@@ -6,6 +6,15 @@
       "@id": "https://electronicartefacts.com/knowledge/concepts/augmented-intelligence/#webpage",
       "url": "https://electronicartefacts.com/knowledge/concepts/augmented-intelligence/",
       "name": "Augmented Intelligence",
+      "description": "A canonical concept record for human-centered computational augmentation.",
+      "inLanguage": "en",
+      "datePublished": "2026-06-24",
+      "dateModified": "2026-06-24",
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-search.jpg",
+        "description": "Augmented Intelligence"
+      },
       "mainEntity": {
         "@id": "https://electronicartefacts.com/id/concept/augmented-intelligence/"
       },
@@ -19,12 +28,78 @@
       "name": "Augmented Intelligence",
       "description": "Augmented intelligence is the design of tools, interfaces and systems that expand human perception, reasoning, memory and creative capability.",
       "url": "https://electronicartefacts.com/knowledge/concepts/augmented-intelligence/",
+      "mainEntityOfPage": {
+        "@id": "https://electronicartefacts.com/knowledge/concepts/augmented-intelligence/#webpage"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-search.jpg",
+        "description": "Augmented Intelligence"
+      },
+      "author": [
+        {
+          "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
+        }
+      ],
+      "creator": [
+        {
+          "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
+        }
+      ],
+      "keywords": [
+        "Augmented Intelligence",
+        "HCI",
+        "AI",
+        "Creative Tools",
+        "Human Computer Interaction",
+        "Artificial Intelligence",
+        "Knowledge Systems",
+        "Systems Design"
+      ],
+      "inLanguage": "en",
       "dateCreated": "2026-06-24",
       "datePublished": "2026-06-24",
       "dateModified": "2026-06-24",
       "publisher": {
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
+      },
+      "copyrightHolder": {
+        "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
+      },
+      "isAccessibleForFree": true,
+      "wordCount": 92,
+      "citation": [
+        {
+          "@type": "CreativeWork",
+          "name": "Augmenting Human Intellect",
+          "url": "https://dougengelbart.org/content/view/138/000/",
+          "author": "Douglas C. Engelbart",
+          "publisher": "Doug Engelbart Institute",
+          "datePublished": "1962-10-01"
+        }
+      ],
+      "inDefinedTermSet": "https://electronicartefacts.com/knowledge/concepts/",
+      "termCode": "augmented-intelligence"
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/",
+      "name": "Electronic Artefacts",
+      "url": "https://electronicartefacts.com/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-logo.jpg"
       }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://electronicartefacts.com/#website",
+      "url": "https://electronicartefacts.com/",
+      "name": "Electronic Artefacts",
+      "publisher": {
+        "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
+      },
+      "inLanguage": "en"
     },
     {
       "@type": "BreadcrumbList",
@@ -38,6 +113,12 @@
         {
           "@type": "ListItem",
           "position": 2,
+          "name": "Knowledge",
+          "item": "https://electronicartefacts.com/knowledge/concepts/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
           "name": "Augmented Intelligence",
           "item": "https://electronicartefacts.com/knowledge/concepts/augmented-intelligence/"
         }

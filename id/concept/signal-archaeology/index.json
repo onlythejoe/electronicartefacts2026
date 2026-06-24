@@ -55,7 +55,7 @@
     "Technical residue can become cultural evidence when it is contextualized.",
     "Machine listening can support interpretation but cannot replace provenance."
   ],
-  "bodyHtml": "<h2>Definition</h2>\n<p>Signal archaeology is the interpretation of traces. Those traces may be sonic, visual, computational or archival. The goal is to understand what a signal reveals about process, material, transformation, memory and context.</p>\n<h2>Scope</h2>\n<p>The concept includes noise floors, compression marks, spectral residue, glitches, metadata loss, repeated motifs, version traces, file histories, interface artefacts and archival gaps.</p>\n<h2>Electronic Artefacts position</h2>\n<p>Signal archaeology is useful because Electronic Artefacts works across music, software, archives and cultural systems. ORETH observes audio material. Palimpsests turns memory and residue into artistic structure. Digital preservation asks what context must remain for future interpretation.</p>\n<h2>Applications</h2>\n<p>Applications include audio research notes, sample history, restoration decisions, archive records, visual reference studies, glitch interpretation, production lineage and machine-listening-assisted annotation.</p>\n<h2>Limitations</h2>\n<p>Signal archaeology is interpretive. It should not pretend to prove more than the evidence supports. A trace may suggest a process, but provenance, sources and context are needed before a claim becomes reliable.</p>\n<h2>References</h2>\n<p>See Provenance, Digital Preservation, ORETH and Palimpsests.</p>\n",
+  "bodyHtml": "<h2 id=\"definition\">Definition</h2>\n<p>Signal archaeology is the interpretation of traces. Those traces may be sonic, visual, computational or archival. The goal is to understand what a signal reveals about process, material, transformation, memory and context.</p>\n<h2 id=\"scope\">Scope</h2>\n<p>The concept includes noise floors, compression marks, spectral residue, glitches, metadata loss, repeated motifs, version traces, file histories, interface artefacts and archival gaps.</p>\n<h2 id=\"electronic-artefacts-position\">Electronic Artefacts position</h2>\n<p>Signal archaeology is useful because Electronic Artefacts works across music, software, archives and cultural systems. ORETH observes audio material. Palimpsests turns memory and residue into artistic structure. Digital preservation asks what context must remain for future interpretation.</p>\n<h2 id=\"applications\">Applications</h2>\n<p>Applications include audio research notes, sample history, restoration decisions, archive records, visual reference studies, glitch interpretation, production lineage and machine-listening-assisted annotation.</p>\n<h2 id=\"limitations\">Limitations</h2>\n<p>Signal archaeology is interpretive. It should not pretend to prove more than the evidence supports. A trace may suggest a process, but provenance, sources and context are needed before a claim becomes reliable.</p>\n<h2 id=\"references\">References</h2>\n<p>See Provenance, Digital Preservation, ORETH and Palimpsests.</p>\n",
   "headings": [
     "Definition",
     "Scope",
@@ -63,5 +63,37 @@
     "Applications",
     "Limitations",
     "References"
+  ],
+  "headingItems": [
+    {
+      "level": 2,
+      "title": "Definition",
+      "id": "definition"
+    },
+    {
+      "level": 2,
+      "title": "Scope",
+      "id": "scope"
+    },
+    {
+      "level": 2,
+      "title": "Electronic Artefacts position",
+      "id": "electronic-artefacts-position"
+    },
+    {
+      "level": 2,
+      "title": "Applications",
+      "id": "applications"
+    },
+    {
+      "level": 2,
+      "title": "Limitations",
+      "id": "limitations"
+    },
+    {
+      "level": 2,
+      "title": "References",
+      "id": "references"
+    }
   ]
 }

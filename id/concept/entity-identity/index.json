@@ -69,7 +69,7 @@
     "Entity identity is a prerequisite for durable internal linking.",
     "Public knowledge graphs need stable identifiers even when pages are redesigned."
   ],
-  "bodyHtml": "<h2>Definition</h2>\n<p>Entity identity is the durable naming of something that the system wants to reference. It can be a concept, person, project, program, publication, organization, artefact, event or dataset. The key requirement is stability: the identifier should continue to refer to the same thing even when the description, title, route or design changes.</p>\n<h2>Scope</h2>\n<p>Entity identity includes internal IDs, canonical slugs, public URLs, identifier routes, aliases, version metadata and redirect strategy. It also includes editorial decisions: whether two similar names describe one entity or two distinct entities.</p>\n<h2>Why identity matters</h2>\n<p>Without durable identity, internal links decay into text references. A publication cannot reliably document a concept if the concept has no stable record. Search cannot rank related entities if identifiers keep changing. A future AI system cannot cite a project if the project only exists as a visual card.</p>\n<h2>Electronic Artefacts position</h2>\n<p>Electronic Artefacts uses entity IDs such as <code>ea:concept:graph-runtime</code> and canonical routes such as <code>/knowledge/concepts/graph-runtime/</code>. Identifier routes under <code>/id/</code> preserve machine-facing identity while public pages remain readable for humans.</p>\n<h2>Applications</h2>\n<p>Entity identity supports citations, graph validation, JSON-LD, sitemap generation, redirects, search documents, local graph neighborhoods, version history and archive records.</p>\n<h2>Limitations</h2>\n<p>Identity is not merely technical. Poor identity decisions create conceptual debt. Splitting one entity into many duplicates weakens authority, while merging different entities erases important distinctions. The rule is to define identity around stable meaning, not temporary wording.</p>\n<h2>References</h2>\n<p>See RDF 1.1 Concepts, Cool URIs for the Semantic Web and the Electronic Artefacts route registry.</p>\n",
+  "bodyHtml": "<h2 id=\"definition\">Definition</h2>\n<p>Entity identity is the durable naming of something that the system wants to reference. It can be a concept, person, project, program, publication, organization, artefact, event or dataset. The key requirement is stability: the identifier should continue to refer to the same thing even when the description, title, route or design changes.</p>\n<h2 id=\"scope\">Scope</h2>\n<p>Entity identity includes internal IDs, canonical slugs, public URLs, identifier routes, aliases, version metadata and redirect strategy. It also includes editorial decisions: whether two similar names describe one entity or two distinct entities.</p>\n<h2 id=\"why-identity-matters\">Why identity matters</h2>\n<p>Without durable identity, internal links decay into text references. A publication cannot reliably document a concept if the concept has no stable record. Search cannot rank related entities if identifiers keep changing. A future AI system cannot cite a project if the project only exists as a visual card.</p>\n<h2 id=\"electronic-artefacts-position\">Electronic Artefacts position</h2>\n<p>Electronic Artefacts uses entity IDs such as <code>ea:concept:graph-runtime</code> and canonical routes such as <code>/knowledge/concepts/graph-runtime/</code>. Identifier routes under <code>/id/</code> preserve machine-facing identity while public pages remain readable for humans.</p>\n<h2 id=\"applications\">Applications</h2>\n<p>Entity identity supports citations, graph validation, JSON-LD, sitemap generation, redirects, search documents, local graph neighborhoods, version history and archive records.</p>\n<h2 id=\"limitations\">Limitations</h2>\n<p>Identity is not merely technical. Poor identity decisions create conceptual debt. Splitting one entity into many duplicates weakens authority, while merging different entities erases important distinctions. The rule is to define identity around stable meaning, not temporary wording.</p>\n<h2 id=\"references\">References</h2>\n<p>See RDF 1.1 Concepts, Cool URIs for the Semantic Web and the Electronic Artefacts route registry.</p>\n",
   "headings": [
     "Definition",
     "Scope",
@@ -78,5 +78,42 @@
     "Applications",
     "Limitations",
     "References"
+  ],
+  "headingItems": [
+    {
+      "level": 2,
+      "title": "Definition",
+      "id": "definition"
+    },
+    {
+      "level": 2,
+      "title": "Scope",
+      "id": "scope"
+    },
+    {
+      "level": 2,
+      "title": "Why identity matters",
+      "id": "why-identity-matters"
+    },
+    {
+      "level": 2,
+      "title": "Electronic Artefacts position",
+      "id": "electronic-artefacts-position"
+    },
+    {
+      "level": 2,
+      "title": "Applications",
+      "id": "applications"
+    },
+    {
+      "level": 2,
+      "title": "Limitations",
+      "id": "limitations"
+    },
+    {
+      "level": 2,
+      "title": "References",
+      "id": "references"
+    }
   ]
 }

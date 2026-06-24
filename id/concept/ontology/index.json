@@ -71,12 +71,39 @@
     "Ontologies should formalize distinctions that produce real retrieval, validation or interoperability value.",
     "Lightweight vocabularies are often more sustainable than premature formal complexity."
   ],
-  "bodyHtml": "<h2>Definition</h2>\n<p>An ontology specifies what kinds of things exist in a modeled domain and how statements about them can be formed. In formal systems it can define classes, properties, individuals, constraints and inference rules.</p>\n<h2>Difference from taxonomy</h2>\n<p>A taxonomy primarily classifies concepts, often through broader and narrower categories. A thesaurus adds preferred labels, synonyms and associative relations. A folksonomy emerges from user-created tags. An ontology can include classification but also expresses richer domain semantics.</p>\n<h2>Electronic Artefacts position</h2>\n<p>Electronic Artefacts uses a pragmatic entity and predicate vocabulary. The goal is not maximum formalism. It is enough explicit meaning to validate records, generate pages, publish JSON-LD and preserve relations over time.</p>\n<h2>Limitations</h2>\n<p>Ontologies can become expensive, politically narrow or disconnected from use. The model should evolve from real questions and records, with versioning and mappings when terms change.</p>\n<h2>References</h2>\n<p>See W3C OWL 2, W3C SKOS, Knowledge Graph, Linked Data and Metadata.</p>\n",
+  "bodyHtml": "<h2 id=\"definition\">Definition</h2>\n<p>An ontology specifies what kinds of things exist in a modeled domain and how statements about them can be formed. In formal systems it can define classes, properties, individuals, constraints and inference rules.</p>\n<h2 id=\"difference-from-taxonomy\">Difference from taxonomy</h2>\n<p>A taxonomy primarily classifies concepts, often through broader and narrower categories. A thesaurus adds preferred labels, synonyms and associative relations. A folksonomy emerges from user-created tags. An ontology can include classification but also expresses richer domain semantics.</p>\n<h2 id=\"electronic-artefacts-position\">Electronic Artefacts position</h2>\n<p>Electronic Artefacts uses a pragmatic entity and predicate vocabulary. The goal is not maximum formalism. It is enough explicit meaning to validate records, generate pages, publish JSON-LD and preserve relations over time.</p>\n<h2 id=\"limitations\">Limitations</h2>\n<p>Ontologies can become expensive, politically narrow or disconnected from use. The model should evolve from real questions and records, with versioning and mappings when terms change.</p>\n<h2 id=\"references\">References</h2>\n<p>See W3C OWL 2, W3C SKOS, Knowledge Graph, Linked Data and Metadata.</p>\n",
   "headings": [
     "Definition",
     "Difference from taxonomy",
     "Electronic Artefacts position",
     "Limitations",
     "References"
+  ],
+  "headingItems": [
+    {
+      "level": 2,
+      "title": "Definition",
+      "id": "definition"
+    },
+    {
+      "level": 2,
+      "title": "Difference from taxonomy",
+      "id": "difference-from-taxonomy"
+    },
+    {
+      "level": 2,
+      "title": "Electronic Artefacts position",
+      "id": "electronic-artefacts-position"
+    },
+    {
+      "level": 2,
+      "title": "Limitations",
+      "id": "limitations"
+    },
+    {
+      "level": 2,
+      "title": "References",
+      "id": "references"
+    }
   ]
 }

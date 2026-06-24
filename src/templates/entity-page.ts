@@ -4,6 +4,7 @@ import type { Entity } from "../schema/entities.js";
 import type { RelationStatement } from "../schema/relation.js";
 import { renderBreadcrumbs } from "./components/breadcrumbs.js";
 import { renderCitationPanel } from "./components/citation-panel.js";
+import { renderEditorialPanels } from "./components/editorial-panels.js";
 import { renderEntityHeader } from "./components/entity-header.js";
 import { renderEntityMetadata } from "./components/entity-metadata.js";
 import { renderLocalGraph } from "./components/local-graph.js";
@@ -48,6 +49,7 @@ export const renderEntityPage = (
 ): string => entity.type === "project" ? renderProjectPage(entity, relations, byId, routeById) : `
   <section class="zone-card entity-breadcrumb-card">${renderBreadcrumbs(entity)}</section>
   ${renderEntityHeader(entity)}${renderProgramComputationField(entity)}
+  ${renderEditorialPanels(entity, byId, routeById)}
   <article class="zone-card hero publication-body">${entity.bodyHtml}</article>
   <section class="detail-grid">
     ${renderEntityMetadata(entity)}

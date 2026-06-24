@@ -61,12 +61,39 @@
     "HCI is central to creative tools because interfaces shape what creators can perceive and attempt.",
     "Good interfaces expose state, preserve agency and make recovery possible."
   ],
-  "bodyHtml": "<h2>Definition</h2>\n<p>Human computer interaction studies and designs the relationships between people and computational systems.</p>\n<h2>Scope</h2>\n<p>The concept includes interface behavior, feedback, mental models, usability, accessibility, error handling, creative flow, automation and social context.</p>\n<h2>Applications</h2>\n<p>Electronic Artefacts uses HCI to reason about VASTE, knowledge navigation, graph tools, audio interfaces and AI-assisted creative systems.</p>\n<h2>Limitations</h2>\n<p>HCI can become too narrow when reduced to usability metrics alone. Cultural context, power, learning and meaning also matter.</p>\n<h2>References</h2>\n<p>See WCAG, Engelbart, augmented intelligence and motion design.</p>\n",
+  "bodyHtml": "<h2 id=\"definition\">Definition</h2>\n<p>Human computer interaction studies and designs the relationships between people and computational systems.</p>\n<h2 id=\"scope\">Scope</h2>\n<p>The concept includes interface behavior, feedback, mental models, usability, accessibility, error handling, creative flow, automation and social context.</p>\n<h2 id=\"applications\">Applications</h2>\n<p>Electronic Artefacts uses HCI to reason about VASTE, knowledge navigation, graph tools, audio interfaces and AI-assisted creative systems.</p>\n<h2 id=\"limitations\">Limitations</h2>\n<p>HCI can become too narrow when reduced to usability metrics alone. Cultural context, power, learning and meaning also matter.</p>\n<h2 id=\"references\">References</h2>\n<p>See WCAG, Engelbart, augmented intelligence and motion design.</p>\n",
   "headings": [
     "Definition",
     "Scope",
     "Applications",
     "Limitations",
     "References"
+  ],
+  "headingItems": [
+    {
+      "level": 2,
+      "title": "Definition",
+      "id": "definition"
+    },
+    {
+      "level": 2,
+      "title": "Scope",
+      "id": "scope"
+    },
+    {
+      "level": 2,
+      "title": "Applications",
+      "id": "applications"
+    },
+    {
+      "level": 2,
+      "title": "Limitations",
+      "id": "limitations"
+    },
+    {
+      "level": 2,
+      "title": "References",
+      "id": "references"
+    }
   ]
 }

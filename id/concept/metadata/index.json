@@ -62,12 +62,39 @@
     "Metadata becomes cultural memory when it preserves source, context, rights and relation.",
     "Poor metadata can make digital work effectively invisible even when files still exist."
   ],
-  "bodyHtml": "<h2>Definition</h2>\n<p>Metadata is structured information about a resource. It tells future readers what something is, where it came from, how it can be used and how it relates to other records.</p>\n<h2>Scope</h2>\n<p>The concept includes titles, identifiers, creators, dates, formats, sources, rights, provenance, subjects, relations and preservation state.</p>\n<h2>Applications</h2>\n<p>Electronic Artefacts uses metadata in frontmatter, JSON-LD, graph relations, search documents and public pages.</p>\n<h2>Limitations</h2>\n<p>Metadata can be wrong, outdated or too vague. It requires review and should record uncertainty when knowledge is incomplete.</p>\n<h2>References</h2>\n<p>See Dublin Core, PREMIS, METS, provenance and digital preservation.</p>\n",
+  "bodyHtml": "<h2 id=\"definition\">Definition</h2>\n<p>Metadata is structured information about a resource. It tells future readers what something is, where it came from, how it can be used and how it relates to other records.</p>\n<h2 id=\"scope\">Scope</h2>\n<p>The concept includes titles, identifiers, creators, dates, formats, sources, rights, provenance, subjects, relations and preservation state.</p>\n<h2 id=\"applications\">Applications</h2>\n<p>Electronic Artefacts uses metadata in frontmatter, JSON-LD, graph relations, search documents and public pages.</p>\n<h2 id=\"limitations\">Limitations</h2>\n<p>Metadata can be wrong, outdated or too vague. It requires review and should record uncertainty when knowledge is incomplete.</p>\n<h2 id=\"references\">References</h2>\n<p>See Dublin Core, PREMIS, METS, provenance and digital preservation.</p>\n",
   "headings": [
     "Definition",
     "Scope",
     "Applications",
     "Limitations",
     "References"
+  ],
+  "headingItems": [
+    {
+      "level": 2,
+      "title": "Definition",
+      "id": "definition"
+    },
+    {
+      "level": 2,
+      "title": "Scope",
+      "id": "scope"
+    },
+    {
+      "level": 2,
+      "title": "Applications",
+      "id": "applications"
+    },
+    {
+      "level": 2,
+      "title": "Limitations",
+      "id": "limitations"
+    },
+    {
+      "level": 2,
+      "title": "References",
+      "id": "references"
+    }
   ]
 }

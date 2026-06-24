@@ -95,7 +95,7 @@
   "citation": {
     "preferred": "Electronic Artefacts. \"Generative Systems, Cybernetics and Creative Coding.\" Technical article, version 1.0.0, 2026."
   },
-  "bodyHtml": "<h2>Problem</h2>\n<p>Generative work is often described through outputs: a set of images, a sound, a moving pattern, a generated interface, a model response. That description hides the actual creative work. A generative system is defined by constraints, rules, feedback, materials, parameters and selection. Without those elements, variation becomes spectacle rather than knowledge.</p>\n<p>This matters because contemporary culture uses generative language everywhere. Generative art, generative AI, generative music and generative design are often treated as if they belong to one recent technological moment. In reality, the lineage is older and broader. Cybernetics, algorithmic composition, systems art, computer graphics, procedural design and creative coding all contribute important concepts.</p>\n<h2>Introduction</h2>\n<p>A generative system produces variable outputs from defined conditions. The creator may write rules, tune parameters, select materials, design feedback loops, curate outputs or build an environment where interaction changes the result.</p>\n<p>The central question is not “did a machine make it?” The central question is “what system of constraints made this output possible, and how does the creator evaluate the results?”</p>\n<p>For Electronic Artefacts, this concept connects VASTE, ORETH, Palimpsests, creative coding and future production tools. It gives the Knowledge Hub a way to discuss AI and computational creativity without collapsing everything into trend language.</p>\n<h2>Context</h2>\n<p>Cybernetics introduced a language of control, communication and feedback. Feedback means that information about a system’s state returns to influence future behavior. This idea matters for creative systems because many generative works depend on loops: a system produces, senses, transforms, responds and produces again.</p>\n<p>Algorithmic composition made rule-based musical generation explicit. Iannis Xenakis used mathematics, stochastic processes and computer-assisted composition as creative material. Creative coding later made programming environments accessible to artists, designers and educators who wanted to explore form and behavior through code.</p>\n<h2>History</h2>\n<p>Norbert Wiener published Cybernetics in 1948, framing a field around control and communication across animals and machines. W. Ross Ashby’s 1956 Introduction to Cybernetics helped formalize regulation, variety and systems thinking. In the arts, cybernetic and computer-based experiments appeared in exhibitions, music studios and research labs.</p>\n<p>By the late twentieth century, artists and composers were no longer only using computers to automate existing tasks. They were using computation as a medium. This shift matters: code did not merely execute an already complete artwork. It became part of the work’s form.</p>\n<p>Creative coding inherits that tradition but changes its scale. Browser APIs, open-source libraries, shaders, audio frameworks and accessible hardware let small teams build systems that earlier required institutional labs.</p>\n<h2>Core concepts</h2>\n<p>Constraint: the rule or boundary that gives the system shape.</p>\n<p>Parameter: a controllable value that changes output without rewriting the whole system.</p>\n<p>Feedback: state information returning into behavior.</p>\n<p>Variation: difference produced inside the system’s rule space.</p>\n<p>Selection: the human or automated decision about what matters.</p>\n<p>Material: the sound, image, dataset, text, gesture or archive that the system transforms.</p>\n<h2>Architecture</h2>\n<p>A generative system usually has inputs, rules, state, output and evaluation. Inputs may be random seeds, gestures, audio signals, data, prompts or graph entities. Rules define transformation. State allows memory. Output becomes image, sound, page, movement or data. Evaluation decides whether the output is kept, changed, published or discarded.</p>\n<p>When feedback is present, output or state can return as input. A musical system may listen to its own resonance. A visual system may react to user movement. A graph runtime may update projections after an event.</p>\n<h2>Implementation</h2>\n<p>Implementation depends on medium. A creative coding sketch may use canvas, WebGL or SVG. A sound system may use spectral analysis, synthesis and sequencing. A graph-based production system may generate artefacts from entity relations.</p>\n<p>The implementation should preserve inspectability. If the system is important, record its inputs, versions, parameters, sources and selected outputs. Generative work becomes stronger when its process can be studied without destroying its mystery.</p>\n<h2>Practical applications</h2>\n<p>In ORETH, generative thinking can support machine listening, pattern exploration and audio structure.</p>\n<p>In Palimpsests, it supports repetition, memory, residue and transformation across sound and visual language.</p>\n<p>In VASTE, it supports runtime systems where graph structure can produce events or public projections.</p>\n<p>In design, it supports variable identity systems, motion, layout exploration and procedural assets.</p>\n<h2>Tools</h2>\n<p>Useful tools include p5.js, Processing, WebGL, shaders, Web Audio, Max, TouchDesigner, Python audio libraries, machine-learning notebooks, graph runtimes, simulation engines and version control.</p>\n<h2>Evidence</h2>\n<p>Electronic Artefacts already contains graph surfaces, audio research records, generated pages and runtime concepts. These are not all generative artworks, but they provide a technical and editorial foundation for generative systems.</p>\n<h2>Evaluation criteria</h2>\n<p>Generative systems need evaluation criteria because output volume can be misleading.</p>\n<p>Legibility: can the creator or reader understand the system’s main constraints?</p>\n<p>Material relevance: does the system use material that matters, or could any input have produced an equivalent effect?</p>\n<p>Variation quality: do outputs differ in meaningful ways, or are they superficial permutations?</p>\n<p>Feedback: does the system observe and respond to state, interaction or output history?</p>\n<p>Curatorial method: how are outputs selected, edited, rejected or preserved?</p>\n<p>Provenance: can a future reader understand which system, version, source material and parameters produced an artefact?</p>\n<p>These criteria help separate durable generative practice from output novelty.</p>\n<h2>Documentation pattern</h2>\n<p>A useful generative record should describe the system before it presents the selected output. That record can name the source materials, rule set, interaction model, random seed policy, software versions, parameter ranges, export process and selection method. It can also distinguish between public artefacts and discarded trials. The point is not to make every artwork fully reproducible. Some works depend on live conditions, hardware behavior or subjective curation. The point is to preserve enough context for a future reader to understand the relation between system, material and result.</p>\n<p>For Electronic Artefacts, this pattern is important because the same system may produce sounds, images, pages, traces or graph projections. Documentation lets those outputs remain connected rather than becoming isolated media fragments.</p>\n<h2>Common mistakes</h2>\n<p>The first mistake is treating randomness as creativity. Randomness can be useful, but a generative system needs constraints that shape the range of possible outputs.</p>\n<p>The second mistake is hiding the human role. In most generative work, authorship includes deciding what counts as input, writing rules, choosing tools, training or prompting systems, curating results and naming the final work.</p>\n<p>The third mistake is ignoring preservation. Generative work often depends on code versions, libraries, seeds, parameters, model versions or external APIs. If those are not recorded, the work becomes difficult to study later.</p>\n<h2>Electronic Artefacts implications</h2>\n<p>For Electronic Artefacts, generative systems can become both production tools and research objects. A generated visual is not only an image; it is evidence of a system. An audio pattern is not only a sound; it may reveal a listening method. A graph projection is not only a page; it is a generated public surface from structured records.</p>\n<p>The Knowledge Hub should therefore document generative systems at two levels: the cultural history of generative practice and the concrete architecture of EA tools and outputs.</p>\n<h2>Future work</h2>\n<p>Future articles should cover algorithmic composition, procedural graphics, generative identity systems, AI-assisted production methods, output evaluation, dataset provenance and preservation strategies for generated artefacts.</p>\n<h2>Related concepts</h2>\n<p>Read <a href=\"/knowledge/concepts/generative-system/\">Generative System</a>, <a href=\"/knowledge/concepts/cybernetic-feedback/\">Cybernetic Feedback</a>, <a href=\"/knowledge/concepts/creative-coding/\">Creative Coding</a>, <a href=\"/programs/oreth/\">ORETH</a> and <a href=\"/projects/palimpsests/\">Palimpsests</a>.</p>\n<h2>Suggested reading</h2>\n<p>Start with Wiener, Ashby and Xenakis for historical grounding. Then study contemporary creative coding through code, not only finished images.</p>\n<h2>Related articles</h2>\n<p>Continue with <a href=\"/publications/signal-archaeology-audio-memory-and-machine-listening/\">Signal Archaeology, Audio Memory and Machine Listening</a> and <a href=\"/publications/contextual-execution-and-graph-runtimes/\">Contextual Execution and Graph Runtimes</a>.</p>\n<h2>Glossary</h2>\n<p>Generative system: a system that produces outputs from rules and constraints.</p>\n<p>Cybernetic feedback: state information returning into system behavior.</p>\n<p>Creative coding: programming used as a creative medium.</p>\n<p>Stochastic: involving probability or random variation.</p>\n<h2>Limitations</h2>\n<p>Generative language can obscure authorship. A responsible account names the human choices: rule design, source selection, parameter tuning, training data, curation, editing and publication context.</p>\n<p>It can also overstate autonomy. Most generative systems require maintenance, selection and interpretation. The system produces possibilities; culture decides what they mean.</p>\n<h2>References</h2>\n<ul>\n<li>Norbert Wiener. Cybernetics or Control and Communication in the Animal and the Machine. 1948.</li>\n<li>W. Ross Ashby. An Introduction to Cybernetics. 1956.</li>\n<li>Iannis Xenakis. Formalized Music. 1971.</li>\n<li>Electronic Artefacts. ORETH and Palimpsests records.</li>\n</ul>\n",
+  "bodyHtml": "<h2 id=\"problem\">Problem</h2>\n<p>Generative work is often described through outputs: a set of images, a sound, a moving pattern, a generated interface, a model response. That description hides the actual creative work. A generative system is defined by constraints, rules, feedback, materials, parameters and selection. Without those elements, variation becomes spectacle rather than knowledge.</p>\n<p>This matters because contemporary culture uses generative language everywhere. Generative art, generative AI, generative music and generative design are often treated as if they belong to one recent technological moment. In reality, the lineage is older and broader. Cybernetics, algorithmic composition, systems art, computer graphics, procedural design and creative coding all contribute important concepts.</p>\n<h2 id=\"introduction\">Introduction</h2>\n<p>A generative system produces variable outputs from defined conditions. The creator may write rules, tune parameters, select materials, design feedback loops, curate outputs or build an environment where interaction changes the result.</p>\n<p>The central question is not “did a machine make it?” The central question is “what system of constraints made this output possible, and how does the creator evaluate the results?”</p>\n<p>For Electronic Artefacts, this concept connects VASTE, ORETH, Palimpsests, creative coding and future production tools. It gives the Knowledge Hub a way to discuss AI and computational creativity without collapsing everything into trend language.</p>\n<h2 id=\"context\">Context</h2>\n<p>Cybernetics introduced a language of control, communication and feedback. Feedback means that information about a system’s state returns to influence future behavior. This idea matters for creative systems because many generative works depend on loops: a system produces, senses, transforms, responds and produces again.</p>\n<p>Algorithmic composition made rule-based musical generation explicit. Iannis Xenakis used mathematics, stochastic processes and computer-assisted composition as creative material. Creative coding later made programming environments accessible to artists, designers and educators who wanted to explore form and behavior through code.</p>\n<h2 id=\"history\">History</h2>\n<p>Norbert Wiener published Cybernetics in 1948, framing a field around control and communication across animals and machines. W. Ross Ashby’s 1956 Introduction to Cybernetics helped formalize regulation, variety and systems thinking. In the arts, cybernetic and computer-based experiments appeared in exhibitions, music studios and research labs.</p>\n<p>By the late twentieth century, artists and composers were no longer only using computers to automate existing tasks. They were using computation as a medium. This shift matters: code did not merely execute an already complete artwork. It became part of the work’s form.</p>\n<p>Creative coding inherits that tradition but changes its scale. Browser APIs, open-source libraries, shaders, audio frameworks and accessible hardware let small teams build systems that earlier required institutional labs.</p>\n<h2 id=\"core-concepts\">Core concepts</h2>\n<p>Constraint: the rule or boundary that gives the system shape.</p>\n<p>Parameter: a controllable value that changes output without rewriting the whole system.</p>\n<p>Feedback: state information returning into behavior.</p>\n<p>Variation: difference produced inside the system’s rule space.</p>\n<p>Selection: the human or automated decision about what matters.</p>\n<p>Material: the sound, image, dataset, text, gesture or archive that the system transforms.</p>\n<h2 id=\"architecture\">Architecture</h2>\n<p>A generative system usually has inputs, rules, state, output and evaluation. Inputs may be random seeds, gestures, audio signals, data, prompts or graph entities. Rules define transformation. State allows memory. Output becomes image, sound, page, movement or data. Evaluation decides whether the output is kept, changed, published or discarded.</p>\n<p>When feedback is present, output or state can return as input. A musical system may listen to its own resonance. A visual system may react to user movement. A graph runtime may update projections after an event.</p>\n<h2 id=\"implementation\">Implementation</h2>\n<p>Implementation depends on medium. A creative coding sketch may use canvas, WebGL or SVG. A sound system may use spectral analysis, synthesis and sequencing. A graph-based production system may generate artefacts from entity relations.</p>\n<p>The implementation should preserve inspectability. If the system is important, record its inputs, versions, parameters, sources and selected outputs. Generative work becomes stronger when its process can be studied without destroying its mystery.</p>\n<h2 id=\"practical-applications\">Practical applications</h2>\n<p>In ORETH, generative thinking can support machine listening, pattern exploration and audio structure.</p>\n<p>In Palimpsests, it supports repetition, memory, residue and transformation across sound and visual language.</p>\n<p>In VASTE, it supports runtime systems where graph structure can produce events or public projections.</p>\n<p>In design, it supports variable identity systems, motion, layout exploration and procedural assets.</p>\n<h2 id=\"tools\">Tools</h2>\n<p>Useful tools include p5.js, Processing, WebGL, shaders, Web Audio, Max, TouchDesigner, Python audio libraries, machine-learning notebooks, graph runtimes, simulation engines and version control.</p>\n<h2 id=\"evidence\">Evidence</h2>\n<p>Electronic Artefacts already contains graph surfaces, audio research records, generated pages and runtime concepts. These are not all generative artworks, but they provide a technical and editorial foundation for generative systems.</p>\n<h2 id=\"evaluation-criteria\">Evaluation criteria</h2>\n<p>Generative systems need evaluation criteria because output volume can be misleading.</p>\n<p>Legibility: can the creator or reader understand the system’s main constraints?</p>\n<p>Material relevance: does the system use material that matters, or could any input have produced an equivalent effect?</p>\n<p>Variation quality: do outputs differ in meaningful ways, or are they superficial permutations?</p>\n<p>Feedback: does the system observe and respond to state, interaction or output history?</p>\n<p>Curatorial method: how are outputs selected, edited, rejected or preserved?</p>\n<p>Provenance: can a future reader understand which system, version, source material and parameters produced an artefact?</p>\n<p>These criteria help separate durable generative practice from output novelty.</p>\n<h2 id=\"documentation-pattern\">Documentation pattern</h2>\n<p>A useful generative record should describe the system before it presents the selected output. That record can name the source materials, rule set, interaction model, random seed policy, software versions, parameter ranges, export process and selection method. It can also distinguish between public artefacts and discarded trials. The point is not to make every artwork fully reproducible. Some works depend on live conditions, hardware behavior or subjective curation. The point is to preserve enough context for a future reader to understand the relation between system, material and result.</p>\n<p>For Electronic Artefacts, this pattern is important because the same system may produce sounds, images, pages, traces or graph projections. Documentation lets those outputs remain connected rather than becoming isolated media fragments.</p>\n<h2 id=\"common-mistakes\">Common mistakes</h2>\n<p>The first mistake is treating randomness as creativity. Randomness can be useful, but a generative system needs constraints that shape the range of possible outputs.</p>\n<p>The second mistake is hiding the human role. In most generative work, authorship includes deciding what counts as input, writing rules, choosing tools, training or prompting systems, curating results and naming the final work.</p>\n<p>The third mistake is ignoring preservation. Generative work often depends on code versions, libraries, seeds, parameters, model versions or external APIs. If those are not recorded, the work becomes difficult to study later.</p>\n<h2 id=\"electronic-artefacts-implications\">Electronic Artefacts implications</h2>\n<p>For Electronic Artefacts, generative systems can become both production tools and research objects. A generated visual is not only an image; it is evidence of a system. An audio pattern is not only a sound; it may reveal a listening method. A graph projection is not only a page; it is a generated public surface from structured records.</p>\n<p>The Knowledge Hub should therefore document generative systems at two levels: the cultural history of generative practice and the concrete architecture of EA tools and outputs.</p>\n<h2 id=\"future-work\">Future work</h2>\n<p>Future articles should cover algorithmic composition, procedural graphics, generative identity systems, AI-assisted production methods, output evaluation, dataset provenance and preservation strategies for generated artefacts.</p>\n<h2 id=\"related-concepts\">Related concepts</h2>\n<p>Read <a href=\"/knowledge/concepts/generative-system/\">Generative System</a>, <a href=\"/knowledge/concepts/cybernetic-feedback/\">Cybernetic Feedback</a>, <a href=\"/knowledge/concepts/creative-coding/\">Creative Coding</a>, <a href=\"/programs/oreth/\">ORETH</a> and <a href=\"/projects/palimpsests/\">Palimpsests</a>.</p>\n<h2 id=\"suggested-reading\">Suggested reading</h2>\n<p>Start with Wiener, Ashby and Xenakis for historical grounding. Then study contemporary creative coding through code, not only finished images.</p>\n<h2 id=\"related-articles\">Related articles</h2>\n<p>Continue with <a href=\"/publications/signal-archaeology-audio-memory-and-machine-listening/\">Signal Archaeology, Audio Memory and Machine Listening</a> and <a href=\"/publications/contextual-execution-and-graph-runtimes/\">Contextual Execution and Graph Runtimes</a>.</p>\n<h2 id=\"glossary\">Glossary</h2>\n<p>Generative system: a system that produces outputs from rules and constraints.</p>\n<p>Cybernetic feedback: state information returning into system behavior.</p>\n<p>Creative coding: programming used as a creative medium.</p>\n<p>Stochastic: involving probability or random variation.</p>\n<h2 id=\"limitations\">Limitations</h2>\n<p>Generative language can obscure authorship. A responsible account names the human choices: rule design, source selection, parameter tuning, training data, curation, editing and publication context.</p>\n<p>It can also overstate autonomy. Most generative systems require maintenance, selection and interpretation. The system produces possibilities; culture decides what they mean.</p>\n<h2 id=\"references\">References</h2>\n<ul>\n<li>Norbert Wiener. Cybernetics or Control and Communication in the Animal and the Machine. 1948.</li>\n<li>W. Ross Ashby. An Introduction to Cybernetics. 1956.</li>\n<li>Iannis Xenakis. Formalized Music. 1971.</li>\n<li>Electronic Artefacts. ORETH and Palimpsests records.</li>\n</ul>\n",
   "headings": [
     "Problem",
     "Introduction",
@@ -118,5 +118,112 @@
     "Glossary",
     "Limitations",
     "References"
+  ],
+  "headingItems": [
+    {
+      "level": 2,
+      "title": "Problem",
+      "id": "problem"
+    },
+    {
+      "level": 2,
+      "title": "Introduction",
+      "id": "introduction"
+    },
+    {
+      "level": 2,
+      "title": "Context",
+      "id": "context"
+    },
+    {
+      "level": 2,
+      "title": "History",
+      "id": "history"
+    },
+    {
+      "level": 2,
+      "title": "Core concepts",
+      "id": "core-concepts"
+    },
+    {
+      "level": 2,
+      "title": "Architecture",
+      "id": "architecture"
+    },
+    {
+      "level": 2,
+      "title": "Implementation",
+      "id": "implementation"
+    },
+    {
+      "level": 2,
+      "title": "Practical applications",
+      "id": "practical-applications"
+    },
+    {
+      "level": 2,
+      "title": "Tools",
+      "id": "tools"
+    },
+    {
+      "level": 2,
+      "title": "Evidence",
+      "id": "evidence"
+    },
+    {
+      "level": 2,
+      "title": "Evaluation criteria",
+      "id": "evaluation-criteria"
+    },
+    {
+      "level": 2,
+      "title": "Documentation pattern",
+      "id": "documentation-pattern"
+    },
+    {
+      "level": 2,
+      "title": "Common mistakes",
+      "id": "common-mistakes"
+    },
+    {
+      "level": 2,
+      "title": "Electronic Artefacts implications",
+      "id": "electronic-artefacts-implications"
+    },
+    {
+      "level": 2,
+      "title": "Future work",
+      "id": "future-work"
+    },
+    {
+      "level": 2,
+      "title": "Related concepts",
+      "id": "related-concepts"
+    },
+    {
+      "level": 2,
+      "title": "Suggested reading",
+      "id": "suggested-reading"
+    },
+    {
+      "level": 2,
+      "title": "Related articles",
+      "id": "related-articles"
+    },
+    {
+      "level": 2,
+      "title": "Glossary",
+      "id": "glossary"
+    },
+    {
+      "level": 2,
+      "title": "Limitations",
+      "id": "limitations"
+    },
+    {
+      "level": 2,
+      "title": "References",
+      "id": "references"
+    }
   ]
 }

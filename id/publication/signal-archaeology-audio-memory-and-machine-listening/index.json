@@ -89,7 +89,7 @@
   "citation": {
     "preferred": "Electronic Artefacts. \"Signal Archaeology, Audio Memory and Machine Listening.\" Technical article, version 1.0.0, 2026."
   },
-  "bodyHtml": "<h2>Problem</h2>\n<p>Digital audio carries more than audible content. It carries traces of rooms, microphones, conversion, compression, editing, noise reduction, saturation, resampling, plugins, clipping, export settings, file naming and archival decisions. Some traces are audible. Some are visible only through analysis. Some survive as metadata. Some are lost and must be inferred cautiously.</p>\n<p>The problem is that these traces are often ignored. Music platforms privilege final tracks. Production systems privilege project files. Archives privilege description. Machine-learning systems privilege features. Signal archaeology asks how those layers can be interpreted together without pretending that analysis alone proves history.</p>\n<h2>Introduction</h2>\n<p>Signal archaeology is the interpretation of technical, sonic, visual or archival traces as evidence of hidden processes, transformations and histories. In audio, it studies residue: noise floors, spectral fingerprints, repeated motifs, compression artifacts, edits, room tones and production marks.</p>\n<p>Machine listening can support this work by extracting features, detecting events and comparing patterns. But signal archaeology is not the same as automated classification. A model can detect similarity; it cannot by itself explain cultural significance.</p>\n<h2>Context</h2>\n<p>ORETH gives Electronic Artefacts a program for machine listening, audio analysis and experimental production. Palimpsests gives the work a cultural frame around memory, inheritance and transmission. Digital Preservation and Provenance provide the archival discipline needed to keep interpretations honest.</p>\n<p>The connection matters because audio is both material and memory. A sound can be a work, a sample, a signal, a trace of process and an archival object.</p>\n<h2>History</h2>\n<p>Listening has always included inference. Engineers hear rooms, microphones and distortion. Musicians hear references, performance habits and production eras. Archivists read carriers, labels, catalogues and provenance.</p>\n<p>Digital tools changed the scale and visibility of that inference. Spectrograms, waveform editors, metadata readers and machine-learning tools reveal patterns that are difficult to perceive directly. But they also create a risk: the visual or statistical representation can feel more certain than it is.</p>\n<p>Signal archaeology sits between listening, analysis and archive practice. It treats technical evidence as meaningful, but it requires provenance before making strong claims.</p>\n<h2>Core concepts</h2>\n<p>Signal: measurable or perceptible information carried by sound or media.</p>\n<p>Residue: a trace left by process, material or transformation.</p>\n<p>Noise floor: background energy that may reveal recording or processing conditions.</p>\n<p>Feature: a measurable property extracted from audio.</p>\n<p>Provenance: source and transformation context.</p>\n<p>Interpretation: a claim made from evidence, context and judgment.</p>\n<h2>Architecture</h2>\n<p>A signal archaeology workflow needs:</p>\n<ul>\n<li>audio objects with stable identity;</li>\n<li>preservation files and access copies;</li>\n<li>metadata and provenance records;</li>\n<li>analysis outputs;</li>\n<li>human listening notes;</li>\n<li>relation statements connecting audio to projects, concepts and publications;</li>\n<li>confidence levels for claims.</li>\n</ul>\n<p>The graph matters because interpretation is relational. An audio fragment may relate to a project, an artist, a production session, a concept, a source file, a publication and a preservation decision.</p>\n<h2>Implementation</h2>\n<p>Implementation can begin with simple practices. Preserve the original file when possible. Record source, date, project and rights. Generate access copies separately. Add notes about processing and uncertainty. Use analysis tools to inspect spectral or temporal features. Connect the artefact to concepts such as signal archaeology, digital preservation and provenance.</p>\n<p>Machine listening should be used as support. It can suggest events, clusters, similarities or anomalies. Those results should be published only with context and confidence.</p>\n<h2>Practical applications</h2>\n<p>For ORETH, signal archaeology can guide machine-listening prototypes and audio research notes.</p>\n<p>For Palimpsests, it can explain how memory and residue operate as sonic material.</p>\n<p>For a cultural archive, it can help preserve not only final media but also interpretive context.</p>\n<p>For music production, it can help creators understand how processing histories shape sound.</p>\n<h2>Tools</h2>\n<p>Useful tools include waveform editors, spectrograms, metadata readers, checksum tools, Python audio libraries, annotation systems, listening notes, file inventories and graph records.</p>\n<h2>Evidence</h2>\n<p>Electronic Artefacts already connects ORETH, Palimpsests, provenance and digital preservation as public graph entities. This article makes that relation explicit and gives future audio artefacts a conceptual home.</p>\n<h2>Listening protocol</h2>\n<p>A signal archaeology workflow should combine listening, documentation and analysis.</p>\n<p>Begin with ordinary listening. Note perceptual features before opening analysis tools: density, space, distortion, repetition, silence, noise, cuts, transitions and emotional pacing.</p>\n<p>Then inspect the object. Record file format, duration, channels, sample rate, bit depth, loudness, metadata and naming context. None of these details explain the work alone, but they can reveal production and preservation conditions.</p>\n<p>Next, use visual or computational analysis. A spectrogram may reveal energy bands, dropouts, edits or noise. Feature extraction may suggest similarity or segmentation. These outputs should be treated as evidence to interpret, not as final truth.</p>\n<p>Finally, connect the record. Link the audio object to its project, program, concepts, sources and preservation state. A trace becomes more useful when it enters the graph.</p>\n<h2>Common mistakes</h2>\n<p>The first mistake is forensic overconfidence. A spectral mark can suggest a process, but it rarely proves intention by itself.</p>\n<p>The second mistake is treating machine listening as neutral. Feature extraction depends on models, parameters and assumptions. A system trained for music information retrieval may not understand artistic noise, silence or intentional degradation.</p>\n<p>The third mistake is separating analysis from memory. In Palimpsests, residue is not only technical. It is part of the conceptual structure of the work. The archive should preserve that interpretive layer.</p>\n<h2>Electronic Artefacts implications</h2>\n<p>ORETH can become the methodological home for machine listening and audio research. Palimpsests can become the cultural home for memory, residue and transmission. Signal archaeology is the bridge: it lets the site discuss technical analysis without losing artistic context.</p>\n<p>This is also valuable for SEO and AI retrieval. Many audio articles online are either production tutorials or reviews. A sourced reference article about signal archaeology, machine listening and digital preservation can occupy a more durable research niche.</p>\n<h2>Future work</h2>\n<p>Future Knowledge Hub entries should cover spectrogram reading, audio feature extraction, metadata for audio archives, sampling as memory, compression artefacts, restoration ethics, room tone, noise floors and the preservation of project files.</p>\n<h2>Editorial standard</h2>\n<p>Claims about audio traces should be labeled carefully. Use observed when a trace is visible or audible. Use validated only when independent evidence supports the interpretation. Use speculative when the trace suggests a possibility but the source context is incomplete.</p>\n<h2>Publication pattern</h2>\n<p>A public signal archaeology entry should separate object description, technical observation and interpretation. Object description identifies the file, source, project, date, format and preservation state. Technical observation records what can be heard, measured or seen: edits, noise, spectral shapes, metadata, repeated fragments, level changes or compression marks. Interpretation explains what those traces might mean in relation to a work, archive, production process or cultural memory.</p>\n<p>This separation protects the reader. It lets a future researcher reuse the observations even if they disagree with the interpretation. It also makes the Knowledge Hub more useful for AI retrieval, because entities, claims and confidence levels are easier to extract when the article does not collapse evidence and meaning into one paragraph.</p>\n<p>For Electronic Artefacts, this pattern can be applied to ORETH notes, Palimpsests materials, audio experiments and future archives. Each signal record can become a small node in a larger graph of projects, programs, tools, traces and concepts.</p>\n<h2>Related concepts</h2>\n<p>Read <a href=\"/knowledge/concepts/signal-archaeology/\">Signal Archaeology</a>, <a href=\"/knowledge/concepts/provenance/\">Provenance</a>, <a href=\"/knowledge/concepts/digital-preservation/\">Digital Preservation</a>, <a href=\"/programs/oreth/\">ORETH</a> and <a href=\"/projects/palimpsests/\">Palimpsests</a>.</p>\n<h2>Suggested reading</h2>\n<p>Start with the PROV family of documents for provenance and the Digital Preservation Handbook for preservation practice. Then inspect audio analysis methods in the context of actual listening and archive records.</p>\n<h2>Related articles</h2>\n<p>Continue with <a href=\"/publications/digital-preservation-and-living-archives/\">Digital Preservation and Living Archives</a> and <a href=\"/publications/generative-systems-cybernetics-and-creative-coding/\">Generative Systems, Cybernetics and Creative Coding</a>.</p>\n<h2>Glossary</h2>\n<p>Machine listening: computational analysis of audio signals.</p>\n<p>Spectrogram: visual representation of frequency content over time.</p>\n<p>Residue: process trace that remains in a signal or record.</p>\n<p>Provenance: information about origin, custody and transformation.</p>\n<h2>Limitations</h2>\n<p>Signal archaeology can over-interpret. A compression artifact may indicate an export path, but it does not necessarily reveal intention. A repeated motif may suggest memory, but interpretation needs context.</p>\n<p>The strongest practice is layered: preserve files, document provenance, analyze signals, listen carefully and publish claims with confidence levels.</p>\n<h2>References</h2>\n<ul>\n<li>W3C. PROV-Overview. 2013.</li>\n<li>Digital Preservation Coalition. Digital Preservation Handbook, 2nd Edition.</li>\n<li>Electronic Artefacts. ORETH and Palimpsests records.</li>\n</ul>\n",
+  "bodyHtml": "<h2 id=\"problem\">Problem</h2>\n<p>Digital audio carries more than audible content. It carries traces of rooms, microphones, conversion, compression, editing, noise reduction, saturation, resampling, plugins, clipping, export settings, file naming and archival decisions. Some traces are audible. Some are visible only through analysis. Some survive as metadata. Some are lost and must be inferred cautiously.</p>\n<p>The problem is that these traces are often ignored. Music platforms privilege final tracks. Production systems privilege project files. Archives privilege description. Machine-learning systems privilege features. Signal archaeology asks how those layers can be interpreted together without pretending that analysis alone proves history.</p>\n<h2 id=\"introduction\">Introduction</h2>\n<p>Signal archaeology is the interpretation of technical, sonic, visual or archival traces as evidence of hidden processes, transformations and histories. In audio, it studies residue: noise floors, spectral fingerprints, repeated motifs, compression artifacts, edits, room tones and production marks.</p>\n<p>Machine listening can support this work by extracting features, detecting events and comparing patterns. But signal archaeology is not the same as automated classification. A model can detect similarity; it cannot by itself explain cultural significance.</p>\n<h2 id=\"context\">Context</h2>\n<p>ORETH gives Electronic Artefacts a program for machine listening, audio analysis and experimental production. Palimpsests gives the work a cultural frame around memory, inheritance and transmission. Digital Preservation and Provenance provide the archival discipline needed to keep interpretations honest.</p>\n<p>The connection matters because audio is both material and memory. A sound can be a work, a sample, a signal, a trace of process and an archival object.</p>\n<h2 id=\"history\">History</h2>\n<p>Listening has always included inference. Engineers hear rooms, microphones and distortion. Musicians hear references, performance habits and production eras. Archivists read carriers, labels, catalogues and provenance.</p>\n<p>Digital tools changed the scale and visibility of that inference. Spectrograms, waveform editors, metadata readers and machine-learning tools reveal patterns that are difficult to perceive directly. But they also create a risk: the visual or statistical representation can feel more certain than it is.</p>\n<p>Signal archaeology sits between listening, analysis and archive practice. It treats technical evidence as meaningful, but it requires provenance before making strong claims.</p>\n<h2 id=\"core-concepts\">Core concepts</h2>\n<p>Signal: measurable or perceptible information carried by sound or media.</p>\n<p>Residue: a trace left by process, material or transformation.</p>\n<p>Noise floor: background energy that may reveal recording or processing conditions.</p>\n<p>Feature: a measurable property extracted from audio.</p>\n<p>Provenance: source and transformation context.</p>\n<p>Interpretation: a claim made from evidence, context and judgment.</p>\n<h2 id=\"architecture\">Architecture</h2>\n<p>A signal archaeology workflow needs:</p>\n<ul>\n<li>audio objects with stable identity;</li>\n<li>preservation files and access copies;</li>\n<li>metadata and provenance records;</li>\n<li>analysis outputs;</li>\n<li>human listening notes;</li>\n<li>relation statements connecting audio to projects, concepts and publications;</li>\n<li>confidence levels for claims.</li>\n</ul>\n<p>The graph matters because interpretation is relational. An audio fragment may relate to a project, an artist, a production session, a concept, a source file, a publication and a preservation decision.</p>\n<h2 id=\"implementation\">Implementation</h2>\n<p>Implementation can begin with simple practices. Preserve the original file when possible. Record source, date, project and rights. Generate access copies separately. Add notes about processing and uncertainty. Use analysis tools to inspect spectral or temporal features. Connect the artefact to concepts such as signal archaeology, digital preservation and provenance.</p>\n<p>Machine listening should be used as support. It can suggest events, clusters, similarities or anomalies. Those results should be published only with context and confidence.</p>\n<h2 id=\"practical-applications\">Practical applications</h2>\n<p>For ORETH, signal archaeology can guide machine-listening prototypes and audio research notes.</p>\n<p>For Palimpsests, it can explain how memory and residue operate as sonic material.</p>\n<p>For a cultural archive, it can help preserve not only final media but also interpretive context.</p>\n<p>For music production, it can help creators understand how processing histories shape sound.</p>\n<h2 id=\"tools\">Tools</h2>\n<p>Useful tools include waveform editors, spectrograms, metadata readers, checksum tools, Python audio libraries, annotation systems, listening notes, file inventories and graph records.</p>\n<h2 id=\"evidence\">Evidence</h2>\n<p>Electronic Artefacts already connects ORETH, Palimpsests, provenance and digital preservation as public graph entities. This article makes that relation explicit and gives future audio artefacts a conceptual home.</p>\n<h2 id=\"listening-protocol\">Listening protocol</h2>\n<p>A signal archaeology workflow should combine listening, documentation and analysis.</p>\n<p>Begin with ordinary listening. Note perceptual features before opening analysis tools: density, space, distortion, repetition, silence, noise, cuts, transitions and emotional pacing.</p>\n<p>Then inspect the object. Record file format, duration, channels, sample rate, bit depth, loudness, metadata and naming context. None of these details explain the work alone, but they can reveal production and preservation conditions.</p>\n<p>Next, use visual or computational analysis. A spectrogram may reveal energy bands, dropouts, edits or noise. Feature extraction may suggest similarity or segmentation. These outputs should be treated as evidence to interpret, not as final truth.</p>\n<p>Finally, connect the record. Link the audio object to its project, program, concepts, sources and preservation state. A trace becomes more useful when it enters the graph.</p>\n<h2 id=\"common-mistakes\">Common mistakes</h2>\n<p>The first mistake is forensic overconfidence. A spectral mark can suggest a process, but it rarely proves intention by itself.</p>\n<p>The second mistake is treating machine listening as neutral. Feature extraction depends on models, parameters and assumptions. A system trained for music information retrieval may not understand artistic noise, silence or intentional degradation.</p>\n<p>The third mistake is separating analysis from memory. In Palimpsests, residue is not only technical. It is part of the conceptual structure of the work. The archive should preserve that interpretive layer.</p>\n<h2 id=\"electronic-artefacts-implications\">Electronic Artefacts implications</h2>\n<p>ORETH can become the methodological home for machine listening and audio research. Palimpsests can become the cultural home for memory, residue and transmission. Signal archaeology is the bridge: it lets the site discuss technical analysis without losing artistic context.</p>\n<p>This is also valuable for SEO and AI retrieval. Many audio articles online are either production tutorials or reviews. A sourced reference article about signal archaeology, machine listening and digital preservation can occupy a more durable research niche.</p>\n<h2 id=\"future-work\">Future work</h2>\n<p>Future Knowledge Hub entries should cover spectrogram reading, audio feature extraction, metadata for audio archives, sampling as memory, compression artefacts, restoration ethics, room tone, noise floors and the preservation of project files.</p>\n<h2 id=\"editorial-standard\">Editorial standard</h2>\n<p>Claims about audio traces should be labeled carefully. Use observed when a trace is visible or audible. Use validated only when independent evidence supports the interpretation. Use speculative when the trace suggests a possibility but the source context is incomplete.</p>\n<h2 id=\"publication-pattern\">Publication pattern</h2>\n<p>A public signal archaeology entry should separate object description, technical observation and interpretation. Object description identifies the file, source, project, date, format and preservation state. Technical observation records what can be heard, measured or seen: edits, noise, spectral shapes, metadata, repeated fragments, level changes or compression marks. Interpretation explains what those traces might mean in relation to a work, archive, production process or cultural memory.</p>\n<p>This separation protects the reader. It lets a future researcher reuse the observations even if they disagree with the interpretation. It also makes the Knowledge Hub more useful for AI retrieval, because entities, claims and confidence levels are easier to extract when the article does not collapse evidence and meaning into one paragraph.</p>\n<p>For Electronic Artefacts, this pattern can be applied to ORETH notes, Palimpsests materials, audio experiments and future archives. Each signal record can become a small node in a larger graph of projects, programs, tools, traces and concepts.</p>\n<h2 id=\"related-concepts\">Related concepts</h2>\n<p>Read <a href=\"/knowledge/concepts/signal-archaeology/\">Signal Archaeology</a>, <a href=\"/knowledge/concepts/provenance/\">Provenance</a>, <a href=\"/knowledge/concepts/digital-preservation/\">Digital Preservation</a>, <a href=\"/programs/oreth/\">ORETH</a> and <a href=\"/projects/palimpsests/\">Palimpsests</a>.</p>\n<h2 id=\"suggested-reading\">Suggested reading</h2>\n<p>Start with the PROV family of documents for provenance and the Digital Preservation Handbook for preservation practice. Then inspect audio analysis methods in the context of actual listening and archive records.</p>\n<h2 id=\"related-articles\">Related articles</h2>\n<p>Continue with <a href=\"/publications/digital-preservation-and-living-archives/\">Digital Preservation and Living Archives</a> and <a href=\"/publications/generative-systems-cybernetics-and-creative-coding/\">Generative Systems, Cybernetics and Creative Coding</a>.</p>\n<h2 id=\"glossary\">Glossary</h2>\n<p>Machine listening: computational analysis of audio signals.</p>\n<p>Spectrogram: visual representation of frequency content over time.</p>\n<p>Residue: process trace that remains in a signal or record.</p>\n<p>Provenance: information about origin, custody and transformation.</p>\n<h2 id=\"limitations\">Limitations</h2>\n<p>Signal archaeology can over-interpret. A compression artifact may indicate an export path, but it does not necessarily reveal intention. A repeated motif may suggest memory, but interpretation needs context.</p>\n<p>The strongest practice is layered: preserve files, document provenance, analyze signals, listen carefully and publish claims with confidence levels.</p>\n<h2 id=\"references\">References</h2>\n<ul>\n<li>W3C. PROV-Overview. 2013.</li>\n<li>Digital Preservation Coalition. Digital Preservation Handbook, 2nd Edition.</li>\n<li>Electronic Artefacts. ORETH and Palimpsests records.</li>\n</ul>\n",
   "headings": [
     "Problem",
     "Introduction",
@@ -113,5 +113,117 @@
     "Glossary",
     "Limitations",
     "References"
+  ],
+  "headingItems": [
+    {
+      "level": 2,
+      "title": "Problem",
+      "id": "problem"
+    },
+    {
+      "level": 2,
+      "title": "Introduction",
+      "id": "introduction"
+    },
+    {
+      "level": 2,
+      "title": "Context",
+      "id": "context"
+    },
+    {
+      "level": 2,
+      "title": "History",
+      "id": "history"
+    },
+    {
+      "level": 2,
+      "title": "Core concepts",
+      "id": "core-concepts"
+    },
+    {
+      "level": 2,
+      "title": "Architecture",
+      "id": "architecture"
+    },
+    {
+      "level": 2,
+      "title": "Implementation",
+      "id": "implementation"
+    },
+    {
+      "level": 2,
+      "title": "Practical applications",
+      "id": "practical-applications"
+    },
+    {
+      "level": 2,
+      "title": "Tools",
+      "id": "tools"
+    },
+    {
+      "level": 2,
+      "title": "Evidence",
+      "id": "evidence"
+    },
+    {
+      "level": 2,
+      "title": "Listening protocol",
+      "id": "listening-protocol"
+    },
+    {
+      "level": 2,
+      "title": "Common mistakes",
+      "id": "common-mistakes"
+    },
+    {
+      "level": 2,
+      "title": "Electronic Artefacts implications",
+      "id": "electronic-artefacts-implications"
+    },
+    {
+      "level": 2,
+      "title": "Future work",
+      "id": "future-work"
+    },
+    {
+      "level": 2,
+      "title": "Editorial standard",
+      "id": "editorial-standard"
+    },
+    {
+      "level": 2,
+      "title": "Publication pattern",
+      "id": "publication-pattern"
+    },
+    {
+      "level": 2,
+      "title": "Related concepts",
+      "id": "related-concepts"
+    },
+    {
+      "level": 2,
+      "title": "Suggested reading",
+      "id": "suggested-reading"
+    },
+    {
+      "level": 2,
+      "title": "Related articles",
+      "id": "related-articles"
+    },
+    {
+      "level": 2,
+      "title": "Glossary",
+      "id": "glossary"
+    },
+    {
+      "level": 2,
+      "title": "Limitations",
+      "id": "limitations"
+    },
+    {
+      "level": 2,
+      "title": "References",
+      "id": "references"
+    }
   ]
 }

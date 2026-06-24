@@ -65,7 +65,7 @@
     "Multimodal systems depend on how modalities are encoded, aligned and evaluated.",
     "Cross-modal interfaces create new creative possibilities and new provenance risks."
   ],
-  "bodyHtml": "<h2>Definition</h2>\n<p>Multimodal AI processes relationships across different forms of data. A model may connect an image with a caption, speech with text, video with temporal descriptions, or audio with visual and metadata records.</p>\n<h2>Architecture</h2>\n<p>Systems may use separate encoders for each modality, a shared representation space, a language model as an orchestration layer, or an end-to-end architecture. The integration method determines what relationships the system can learn.</p>\n<h2>Creative use</h2>\n<p>Applications include image search from language, audio description, video indexing, generative storyboards, performance systems, accessibility interfaces and compound archives.</p>\n<h2>Electronic Artefacts position</h2>\n<p>ORETH and Palimpsests make multimodal structure concrete: sound, images, notes, analyses and provenance form one compound record. A multimodal system should preserve those distinctions rather than flattening every input into an opaque embedding.</p>\n<h2>Limitations</h2>\n<p>Performance can be uneven across modalities. Text may dominate a nominally visual system, temporal structure may be lost, and generated outputs may obscure their sources. Evaluation must test each modality and cross-modal task independently.</p>\n<h2>References</h2>\n<p>See CLIP, Generative AI, Signal Archaeology, ORETH and Palimpsests.</p>\n",
+  "bodyHtml": "<h2 id=\"definition\">Definition</h2>\n<p>Multimodal AI processes relationships across different forms of data. A model may connect an image with a caption, speech with text, video with temporal descriptions, or audio with visual and metadata records.</p>\n<h2 id=\"architecture\">Architecture</h2>\n<p>Systems may use separate encoders for each modality, a shared representation space, a language model as an orchestration layer, or an end-to-end architecture. The integration method determines what relationships the system can learn.</p>\n<h2 id=\"creative-use\">Creative use</h2>\n<p>Applications include image search from language, audio description, video indexing, generative storyboards, performance systems, accessibility interfaces and compound archives.</p>\n<h2 id=\"electronic-artefacts-position\">Electronic Artefacts position</h2>\n<p>ORETH and Palimpsests make multimodal structure concrete: sound, images, notes, analyses and provenance form one compound record. A multimodal system should preserve those distinctions rather than flattening every input into an opaque embedding.</p>\n<h2 id=\"limitations\">Limitations</h2>\n<p>Performance can be uneven across modalities. Text may dominate a nominally visual system, temporal structure may be lost, and generated outputs may obscure their sources. Evaluation must test each modality and cross-modal task independently.</p>\n<h2 id=\"references\">References</h2>\n<p>See CLIP, Generative AI, Signal Archaeology, ORETH and Palimpsests.</p>\n",
   "headings": [
     "Definition",
     "Architecture",
@@ -73,5 +73,37 @@
     "Electronic Artefacts position",
     "Limitations",
     "References"
+  ],
+  "headingItems": [
+    {
+      "level": 2,
+      "title": "Definition",
+      "id": "definition"
+    },
+    {
+      "level": 2,
+      "title": "Architecture",
+      "id": "architecture"
+    },
+    {
+      "level": 2,
+      "title": "Creative use",
+      "id": "creative-use"
+    },
+    {
+      "level": 2,
+      "title": "Electronic Artefacts position",
+      "id": "electronic-artefacts-position"
+    },
+    {
+      "level": 2,
+      "title": "Limitations",
+      "id": "limitations"
+    },
+    {
+      "level": 2,
+      "title": "References",
+      "id": "references"
+    }
   ]
 }

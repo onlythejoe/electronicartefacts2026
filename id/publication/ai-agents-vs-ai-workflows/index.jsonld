@@ -6,6 +6,15 @@
       "@id": "https://electronicartefacts.com/publications/ai-agents-vs-ai-workflows/#webpage",
       "url": "https://electronicartefacts.com/publications/ai-agents-vs-ai-workflows/",
       "name": "AI Agents vs AI Workflows",
+      "description": "Understand the difference between AI agents and AI workflows, when to use each architecture, and how to design reliable hybrid systems.",
+      "inLanguage": "en",
+      "datePublished": "2026-06-24",
+      "dateModified": "2026-06-24",
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-search.jpg",
+        "description": "AI Agents vs AI Workflows"
+      },
       "mainEntity": {
         "@id": "https://electronicartefacts.com/id/publication/ai-agents-vs-ai-workflows/"
       },
@@ -17,15 +26,68 @@
       "@type": "TechArticle",
       "@id": "https://electronicartefacts.com/id/publication/ai-agents-vs-ai-workflows/",
       "name": "AI Agents vs AI Workflows",
+      "headline": "AI Agents vs AI Workflows",
       "description": "A practical comparison of model-directed agents, deterministic workflows, hybrid orchestration, tool permissions, memory, evaluation and human oversight.",
       "url": "https://electronicartefacts.com/publications/ai-agents-vs-ai-workflows/",
+      "mainEntityOfPage": {
+        "@id": "https://electronicartefacts.com/publications/ai-agents-vs-ai-workflows/#webpage"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-search.jpg",
+        "description": "AI Agents vs AI Workflows"
+      },
+      "author": [
+        {
+          "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
+        }
+      ],
+      "creator": [
+        {
+          "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
+        }
+      ],
+      "keywords": [
+        "AI Agents",
+        "AI Workflows",
+        "Orchestration",
+        "Tool Use",
+        "Automation",
+        "Artificial Intelligence",
+        "Systems Design",
+        "Software Architecture",
+        "Human Computer Interaction"
+      ],
+      "inLanguage": "en",
       "dateCreated": "2026-06-24",
       "datePublished": "2026-06-24",
       "dateModified": "2026-06-24",
       "publisher": {
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
-      "citation": "Electronic Artefacts. \"AI Agents vs AI Workflows.\" Technical article, version 1.0.0, 2026.",
+      "copyrightHolder": {
+        "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
+      },
+      "isAccessibleForFree": true,
+      "wordCount": 2026,
+      "citation": [
+        "Electronic Artefacts. \"AI Agents vs AI Workflows.\" Technical article, version 1.0.0, 2026.",
+        {
+          "@type": "CreativeWork",
+          "name": "Building Effective Agents",
+          "url": "https://www.anthropic.com/engineering/building-effective-agents",
+          "author": "Erik Schluntz and Barry Zhang",
+          "publisher": "Anthropic",
+          "datePublished": "2024-12-19"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "AI Risk Management Framework",
+          "url": "https://www.nist.gov/itl/ai-risk-management-framework",
+          "publisher": "NIST",
+          "datePublished": "2023-01-26"
+        }
+      ],
       "about": [
         {
           "@id": "https://electronicartefacts.com/id/concept/ai-agent/"
@@ -42,7 +104,35 @@
         {
           "@id": "https://electronicartefacts.com/id/program/vaste/"
         }
+      ],
+      "mentions": [
+        {
+          "@id": "https://electronicartefacts.com/id/concept/ai-agent/"
+        },
+        {
+          "@id": "https://electronicartefacts.com/id/concept/contextual-execution/"
+        }
       ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/",
+      "name": "Electronic Artefacts",
+      "url": "https://electronicartefacts.com/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-logo.jpg"
+      }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://electronicartefacts.com/#website",
+      "url": "https://electronicartefacts.com/",
+      "name": "Electronic Artefacts",
+      "publisher": {
+        "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
+      },
+      "inLanguage": "en"
     },
     {
       "@type": "BreadcrumbList",
@@ -56,6 +146,12 @@
         {
           "@type": "ListItem",
           "position": 2,
+          "name": "Publications",
+          "item": "https://electronicartefacts.com/publications/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
           "name": "AI Agents vs AI Workflows",
           "item": "https://electronicartefacts.com/publications/ai-agents-vs-ai-workflows/"
         }

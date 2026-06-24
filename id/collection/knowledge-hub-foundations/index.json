@@ -109,12 +109,39 @@
     }
   ],
   "selectionNote": "This collection privileges evergreen, interconnected reference material that can support future research, SEO, AI retrieval and internal graph expansion.",
-  "bodyHtml": "<h2>Thesis</h2>\n<p>Knowledge Hub Foundations is the first editorial collection for the expanded Electronic Artefacts Knowledge Hub. It groups the records that explain why the site is becoming a research library rather than a conventional blog.</p>\n<p>The collection begins with graph infrastructure, semantic identity, contextual execution, preservation, generative systems and signal archaeology because these subjects support many future articles. They can connect software, audio, archives, design, culture and AI retrieval without forcing every topic into a single discipline.</p>\n<h2>Selection logic</h2>\n<p>The collection selects records that are durable, reusable and relational. Each member should help future readers understand other parts of the site. A good foundation record is not only an answer to one query; it becomes a connector between projects, programs and publications.</p>\n<h2>Editorial role</h2>\n<p>This collection should be used as a starting point for future waves of content. New articles can join the collection only when they strengthen the foundational graph rather than duplicate existing records.</p>\n<h2>Current members</h2>\n<p>The first wave includes six publications, ten concepts, two technology records and two Electronic Artefacts practice nodes. Together they define the first public scaffold for the Knowledge Hub.</p>\n<h2>Future expansion</h2>\n<p>Future additions should include methods, frameworks, archive records, source guides and case studies. The priority is not volume alone. Each addition should improve navigation, source quality, semantic clarity or internal linking.</p>\n",
+  "bodyHtml": "<h2 id=\"thesis\">Thesis</h2>\n<p>Knowledge Hub Foundations is the first editorial collection for the expanded Electronic Artefacts Knowledge Hub. It groups the records that explain why the site is becoming a research library rather than a conventional blog.</p>\n<p>The collection begins with graph infrastructure, semantic identity, contextual execution, preservation, generative systems and signal archaeology because these subjects support many future articles. They can connect software, audio, archives, design, culture and AI retrieval without forcing every topic into a single discipline.</p>\n<h2 id=\"selection-logic\">Selection logic</h2>\n<p>The collection selects records that are durable, reusable and relational. Each member should help future readers understand other parts of the site. A good foundation record is not only an answer to one query; it becomes a connector between projects, programs and publications.</p>\n<h2 id=\"editorial-role\">Editorial role</h2>\n<p>This collection should be used as a starting point for future waves of content. New articles can join the collection only when they strengthen the foundational graph rather than duplicate existing records.</p>\n<h2 id=\"current-members\">Current members</h2>\n<p>The first wave includes six publications, ten concepts, two technology records and two Electronic Artefacts practice nodes. Together they define the first public scaffold for the Knowledge Hub.</p>\n<h2 id=\"future-expansion\">Future expansion</h2>\n<p>Future additions should include methods, frameworks, archive records, source guides and case studies. The priority is not volume alone. Each addition should improve navigation, source quality, semantic clarity or internal linking.</p>\n",
   "headings": [
     "Thesis",
     "Selection logic",
     "Editorial role",
     "Current members",
     "Future expansion"
+  ],
+  "headingItems": [
+    {
+      "level": 2,
+      "title": "Thesis",
+      "id": "thesis"
+    },
+    {
+      "level": 2,
+      "title": "Selection logic",
+      "id": "selection-logic"
+    },
+    {
+      "level": 2,
+      "title": "Editorial role",
+      "id": "editorial-role"
+    },
+    {
+      "level": 2,
+      "title": "Current members",
+      "id": "current-members"
+    },
+    {
+      "level": 2,
+      "title": "Future expansion",
+      "id": "future-expansion"
+    }
   ]
 }

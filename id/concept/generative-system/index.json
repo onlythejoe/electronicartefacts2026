@@ -56,7 +56,7 @@
     "Generative systems are best understood through constraints, not novelty alone.",
     "Creative authorship in generative work includes rule design, material selection and curation of outputs."
   ],
-  "bodyHtml": "<h2>Definition</h2>\n<p>A generative system is an arrangement that produces outputs from rules, parameters, materials and processes. It can be code, a musical procedure, a design system, a simulation, a set of prompts, a physical mechanism or a hybrid workflow.</p>\n<p>The important point is not that the system creates without a human. The important point is that the human defines conditions under which outputs can emerge, vary and be selected.</p>\n<h2>Scope</h2>\n<p>Generative systems include algorithmic composition, procedural graphics, creative coding, rule-based design, simulations, artificial life, stochastic processes, modular synthesis, AI-assisted production and runtime-based content generation.</p>\n<h2>Electronic Artefacts position</h2>\n<p>Electronic Artefacts treats generative systems as production and research structures. VASTE explores graph-shaped execution. ORETH explores audio patterns and signal interpretation. Palimpsests uses repetition, residue and transformation as cultural material.</p>\n<h2>Applications</h2>\n<p>Applications include visual systems, music structures, motion design, asset generation, archive exploration, simulation, interface states and creative tools.</p>\n<h2>Limitations</h2>\n<p>A generative system needs evaluation. Variation alone is not value. Good generative work requires meaningful constraints, inspectable process and a way to decide which outputs matter.</p>\n<h2>References</h2>\n<p>See Cybernetic Feedback, Creative Coding, ORETH and Palimpsests.</p>\n",
+  "bodyHtml": "<h2 id=\"definition\">Definition</h2>\n<p>A generative system is an arrangement that produces outputs from rules, parameters, materials and processes. It can be code, a musical procedure, a design system, a simulation, a set of prompts, a physical mechanism or a hybrid workflow.</p>\n<p>The important point is not that the system creates without a human. The important point is that the human defines conditions under which outputs can emerge, vary and be selected.</p>\n<h2 id=\"scope\">Scope</h2>\n<p>Generative systems include algorithmic composition, procedural graphics, creative coding, rule-based design, simulations, artificial life, stochastic processes, modular synthesis, AI-assisted production and runtime-based content generation.</p>\n<h2 id=\"electronic-artefacts-position\">Electronic Artefacts position</h2>\n<p>Electronic Artefacts treats generative systems as production and research structures. VASTE explores graph-shaped execution. ORETH explores audio patterns and signal interpretation. Palimpsests uses repetition, residue and transformation as cultural material.</p>\n<h2 id=\"applications\">Applications</h2>\n<p>Applications include visual systems, music structures, motion design, asset generation, archive exploration, simulation, interface states and creative tools.</p>\n<h2 id=\"limitations\">Limitations</h2>\n<p>A generative system needs evaluation. Variation alone is not value. Good generative work requires meaningful constraints, inspectable process and a way to decide which outputs matter.</p>\n<h2 id=\"references\">References</h2>\n<p>See Cybernetic Feedback, Creative Coding, ORETH and Palimpsests.</p>\n",
   "headings": [
     "Definition",
     "Scope",
@@ -64,5 +64,37 @@
     "Applications",
     "Limitations",
     "References"
+  ],
+  "headingItems": [
+    {
+      "level": 2,
+      "title": "Definition",
+      "id": "definition"
+    },
+    {
+      "level": 2,
+      "title": "Scope",
+      "id": "scope"
+    },
+    {
+      "level": 2,
+      "title": "Electronic Artefacts position",
+      "id": "electronic-artefacts-position"
+    },
+    {
+      "level": 2,
+      "title": "Applications",
+      "id": "applications"
+    },
+    {
+      "level": 2,
+      "title": "Limitations",
+      "id": "limitations"
+    },
+    {
+      "level": 2,
+      "title": "References",
+      "id": "references"
+    }
   ]
 }

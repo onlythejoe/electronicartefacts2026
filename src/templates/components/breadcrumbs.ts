@@ -2,7 +2,7 @@ import { escapeHtml } from "../html.js";
 import type { Entity } from "../../schema/entities.js";
 
 const sectionLabel = (entity: Entity): string => {
-  if (entity.type === "concept") return "Knowledge";
+  if (["concept", "technology", "method", "framework"].includes(entity.type)) return "Knowledge";
   if (entity.type === "researchField") return "Research";
   if (entity.type === "publication") return "Publications";
   if (entity.type === "project") return "Projects";

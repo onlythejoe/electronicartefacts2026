@@ -49,10 +49,27 @@
   "category": "language",
   "roleInEcosystem": "OWL provides a formal reference for ontology semantics, constraints and inference beyond lightweight taxonomies.",
   "officialUrl": "https://www.w3.org/TR/owl2-overview/",
-  "bodyHtml": "<h2>Role</h2>\n<p>OWL formalizes domain classes, properties and constraints with semantics that can support automated reasoning.</p>\n<h2>Use</h2>\n<p>It is a reference for cases where Electronic Artefacts needs stronger interoperability or inference than the current pragmatic entity schema provides.</p>\n<h2>References</h2>\n<p>See W3C OWL 2, RDF and Ontology.</p>\n",
+  "bodyHtml": "<h2 id=\"role\">Role</h2>\n<p>OWL formalizes domain classes, properties and constraints with semantics that can support automated reasoning.</p>\n<h2 id=\"use\">Use</h2>\n<p>It is a reference for cases where Electronic Artefacts needs stronger interoperability or inference than the current pragmatic entity schema provides.</p>\n<h2 id=\"references\">References</h2>\n<p>See W3C OWL 2, RDF and Ontology.</p>\n",
   "headings": [
     "Role",
     "Use",
     "References"
+  ],
+  "headingItems": [
+    {
+      "level": 2,
+      "title": "Role",
+      "id": "role"
+    },
+    {
+      "level": 2,
+      "title": "Use",
+      "id": "use"
+    },
+    {
+      "level": 2,
+      "title": "References",
+      "id": "references"
+    }
   ]
 }

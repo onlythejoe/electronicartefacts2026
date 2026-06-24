@@ -63,7 +63,7 @@
     "Provenance is essential for cultural archives and AI-readable knowledge systems.",
     "Provenance should distinguish source, author, curator, publisher and maintainer roles."
   ],
-  "bodyHtml": "<h2>Definition</h2>\n<p>Provenance is information about how a thing came to be. It records people, organizations, activities, source material, transformations, dates, rights, decisions and evidence. In a knowledge graph, provenance helps readers judge why a claim exists and how much trust to place in it.</p>\n<h2>Scope</h2>\n<p>Provenance includes authorship, publication, maintenance, derivation, citation, versioning, source custody and transformation history. It can apply to data, images, audio, code, publications, concepts and physical artefacts.</p>\n<h2>Why it matters</h2>\n<p>A knowledge system without provenance becomes a surface of claims. Provenance does not make every claim true, but it gives readers a path to evaluate reliability. It also helps future maintainers understand whether a record is original research, interpretation, migrated legacy material or external reference.</p>\n<h2>Electronic Artefacts position</h2>\n<p>Electronic Artefacts treats provenance as a public trust layer. A project, program or publication should expose authorship, publisher, modification date, confidence and sources. Relations should carry statements and confidence levels rather than acting as anonymous links.</p>\n<h2>Applications</h2>\n<p>Provenance is useful for archives, AI retrieval, digital preservation, cultural heritage, research reproducibility, software releases, dataset documentation and audio artefact interpretation.</p>\n<h2>Limitations</h2>\n<p>Provenance is not infinite documentation. A record can always explain more. The editorial task is to preserve enough lineage to support interpretation, rights, trust and future migration.</p>\n<h2>References</h2>\n<p>See W3C PROV, the Electronic Artefacts relation schema and the Digital Preservation concept.</p>\n",
+  "bodyHtml": "<h2 id=\"definition\">Definition</h2>\n<p>Provenance is information about how a thing came to be. It records people, organizations, activities, source material, transformations, dates, rights, decisions and evidence. In a knowledge graph, provenance helps readers judge why a claim exists and how much trust to place in it.</p>\n<h2 id=\"scope\">Scope</h2>\n<p>Provenance includes authorship, publication, maintenance, derivation, citation, versioning, source custody and transformation history. It can apply to data, images, audio, code, publications, concepts and physical artefacts.</p>\n<h2 id=\"why-it-matters\">Why it matters</h2>\n<p>A knowledge system without provenance becomes a surface of claims. Provenance does not make every claim true, but it gives readers a path to evaluate reliability. It also helps future maintainers understand whether a record is original research, interpretation, migrated legacy material or external reference.</p>\n<h2 id=\"electronic-artefacts-position\">Electronic Artefacts position</h2>\n<p>Electronic Artefacts treats provenance as a public trust layer. A project, program or publication should expose authorship, publisher, modification date, confidence and sources. Relations should carry statements and confidence levels rather than acting as anonymous links.</p>\n<h2 id=\"applications\">Applications</h2>\n<p>Provenance is useful for archives, AI retrieval, digital preservation, cultural heritage, research reproducibility, software releases, dataset documentation and audio artefact interpretation.</p>\n<h2 id=\"limitations\">Limitations</h2>\n<p>Provenance is not infinite documentation. A record can always explain more. The editorial task is to preserve enough lineage to support interpretation, rights, trust and future migration.</p>\n<h2 id=\"references\">References</h2>\n<p>See W3C PROV, the Electronic Artefacts relation schema and the Digital Preservation concept.</p>\n",
   "headings": [
     "Definition",
     "Scope",
@@ -72,5 +72,42 @@
     "Applications",
     "Limitations",
     "References"
+  ],
+  "headingItems": [
+    {
+      "level": 2,
+      "title": "Definition",
+      "id": "definition"
+    },
+    {
+      "level": 2,
+      "title": "Scope",
+      "id": "scope"
+    },
+    {
+      "level": 2,
+      "title": "Why it matters",
+      "id": "why-it-matters"
+    },
+    {
+      "level": 2,
+      "title": "Electronic Artefacts position",
+      "id": "electronic-artefacts-position"
+    },
+    {
+      "level": 2,
+      "title": "Applications",
+      "id": "applications"
+    },
+    {
+      "level": 2,
+      "title": "Limitations",
+      "id": "limitations"
+    },
+    {
+      "level": 2,
+      "title": "References",
+      "id": "references"
+    }
   ]
 }

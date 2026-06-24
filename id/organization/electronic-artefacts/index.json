@@ -35,11 +35,33 @@
   ],
   "rights": "© Electronic Artefacts",
   "organizationType": "studio",
-  "bodyHtml": "<h2>Institutional role</h2>\n<p>Electronic Artefacts develops digital products, knowledge systems, cultural platforms and research-led experiences. The organization operates across studio practice, software research, artistic production, publishing and archival stewardship.</p>\n<h2>Operating layers</h2>\n<p>Research frames questions and preserves observations. Programs turn sustained research into reusable systems. Projects apply those systems in public, cultural or client contexts. Publications make definitions, arguments and findings citable. The archive preserves evidence, versions and lineage.</p>\n<h2>Public knowledge system</h2>\n<p>The public platform exposes these layers through stable entities and typed relationships. It is designed so that a project can be followed back to the concepts, methods, programs, people and evidence that made it possible.</p>\n<h2>Responsibilities</h2>\n<p>Electronic Artefacts publishes and maintains the pilot knowledge records in this migration. Publication status, lifecycle maturity, confidence and visibility remain separate so that experimental work can be described without being misrepresented as proven or complete.</p>\n",
+  "bodyHtml": "<h2 id=\"institutional-role\">Institutional role</h2>\n<p>Electronic Artefacts develops digital products, knowledge systems, cultural platforms and research-led experiences. The organization operates across studio practice, software research, artistic production, publishing and archival stewardship.</p>\n<h2 id=\"operating-layers\">Operating layers</h2>\n<p>Research frames questions and preserves observations. Programs turn sustained research into reusable systems. Projects apply those systems in public, cultural or client contexts. Publications make definitions, arguments and findings citable. The archive preserves evidence, versions and lineage.</p>\n<h2 id=\"public-knowledge-system\">Public knowledge system</h2>\n<p>The public platform exposes these layers through stable entities and typed relationships. It is designed so that a project can be followed back to the concepts, methods, programs, people and evidence that made it possible.</p>\n<h2 id=\"responsibilities\">Responsibilities</h2>\n<p>Electronic Artefacts publishes and maintains the pilot knowledge records in this migration. Publication status, lifecycle maturity, confidence and visibility remain separate so that experimental work can be described without being misrepresented as proven or complete.</p>\n",
   "headings": [
     "Institutional role",
     "Operating layers",
     "Public knowledge system",
     "Responsibilities"
+  ],
+  "headingItems": [
+    {
+      "level": 2,
+      "title": "Institutional role",
+      "id": "institutional-role"
+    },
+    {
+      "level": 2,
+      "title": "Operating layers",
+      "id": "operating-layers"
+    },
+    {
+      "level": 2,
+      "title": "Public knowledge system",
+      "id": "public-knowledge-system"
+    },
+    {
+      "level": 2,
+      "title": "Responsibilities",
+      "id": "responsibilities"
+    }
   ]
 }

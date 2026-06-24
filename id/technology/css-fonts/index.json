@@ -46,10 +46,27 @@
   "category": "platform",
   "roleInEcosystem": "CSS Fonts supports durable web typography for long-form articles, knowledge pages and accessible reading systems.",
   "officialUrl": "https://www.w3.org/TR/css-fonts-4/",
-  "bodyHtml": "<h2>Role</h2>\n<p>CSS Fonts is part of the web platform’s typographic layer. It helps browsers select and render typefaces across devices.</p>\n<h2>Use</h2>\n<p>Electronic Artefacts can treat typography as part of knowledge infrastructure: readable articles, stable hierarchy and accessible layout.</p>\n<h2>References</h2>\n<p>See the W3C CSS Fonts specification.</p>\n",
+  "bodyHtml": "<h2 id=\"role\">Role</h2>\n<p>CSS Fonts is part of the web platform’s typographic layer. It helps browsers select and render typefaces across devices.</p>\n<h2 id=\"use\">Use</h2>\n<p>Electronic Artefacts can treat typography as part of knowledge infrastructure: readable articles, stable hierarchy and accessible layout.</p>\n<h2 id=\"references\">References</h2>\n<p>See the W3C CSS Fonts specification.</p>\n",
   "headings": [
     "Role",
     "Use",
     "References"
+  ],
+  "headingItems": [
+    {
+      "level": 2,
+      "title": "Role",
+      "id": "role"
+    },
+    {
+      "level": 2,
+      "title": "Use",
+      "id": "use"
+    },
+    {
+      "level": 2,
+      "title": "References",
+      "id": "references"
+    }
   ]
 }

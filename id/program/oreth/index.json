@@ -68,7 +68,7 @@
       "id": "ea:organization:electronic-artefacts"
     }
   ],
-  "bodyHtml": "<h2>Mandate</h2>\n<p>ORETH is the Electronic Artefacts program that treats sound as both material and evidence. It connects practical audio production with research questions about signal, memory, pattern, noise and listening systems.</p>\n<p>The program is not only a music identity. It is a research layer for studying how sonic material can be observed, segmented, transformed and preserved without reducing it to a neutral file. A recorded fragment can be a composition, a sample, a trace of a session, a clue about a process, a cultural artefact and a future training object at the same time.</p>\n<h2>Research position</h2>\n<p>ORETH sits between audio engineering, machine listening, sound design and archive work. Its current position is deliberately experimental: it uses analysis as a way to understand sonic structure, but it does not treat automated analysis as a replacement for artistic judgment.</p>\n<p>The program is connected to Palimpsests because that project makes memory, inheritance and transmission explicit. A palimpsest is a surface overwritten by later marks while earlier traces remain partly visible. In sound, the same logic appears through saturation, sampling, room tone, compression history, noise floors, spectral residue and repeated motifs.</p>\n<h2>Technical scope</h2>\n<p>The technical scope includes frequency-domain analysis, onset and transient detection, segment comparison, signal annotation, audio feature extraction, visual inspection, prototype interfaces and research notes.</p>\n<p>Early experiments around Python audio tooling, numerical analysis and visual plotting inform the program, but the public record focuses on concepts and methods rather than promising a specific production package.</p>\n<h2>Artistic scope</h2>\n<p>ORETH also names the public artistic layer that carries the Palimpsests cycle. The artistic output should remain legible as music first. The research layer explains how listening, analysis and memory interact, but it should not turn the work into a technical demonstration.</p>\n<h2>Applications</h2>\n<p>The program supports:</p>\n<ul>\n<li>machine-listening research for creative use;</li>\n<li>annotation of audio artefacts and recordings;</li>\n<li>sonic archives where provenance matters;</li>\n<li>composition systems built around recurrence and transformation;</li>\n<li>essays on signal, memory, entropy and musical form;</li>\n<li>future tools that help creators inspect and preserve audio process.</li>\n</ul>\n<h2>Limitations</h2>\n<p>ORETH is an active prototype program. Public claims should remain scoped to documented concepts, project records and preserved artefacts. Performance claims, model claims and production-system claims require separate evidence before they become canonical.</p>\n<h2>References</h2>\n<p>This program record is grounded in the existing Electronic Artefacts archive, the Palimpsests dossier, Runtime Theory, signal archaeology research and the studio’s preserved audio and production notes.</p>\n",
+  "bodyHtml": "<h2 id=\"mandate\">Mandate</h2>\n<p>ORETH is the Electronic Artefacts program that treats sound as both material and evidence. It connects practical audio production with research questions about signal, memory, pattern, noise and listening systems.</p>\n<p>The program is not only a music identity. It is a research layer for studying how sonic material can be observed, segmented, transformed and preserved without reducing it to a neutral file. A recorded fragment can be a composition, a sample, a trace of a session, a clue about a process, a cultural artefact and a future training object at the same time.</p>\n<h2 id=\"research-position\">Research position</h2>\n<p>ORETH sits between audio engineering, machine listening, sound design and archive work. Its current position is deliberately experimental: it uses analysis as a way to understand sonic structure, but it does not treat automated analysis as a replacement for artistic judgment.</p>\n<p>The program is connected to Palimpsests because that project makes memory, inheritance and transmission explicit. A palimpsest is a surface overwritten by later marks while earlier traces remain partly visible. In sound, the same logic appears through saturation, sampling, room tone, compression history, noise floors, spectral residue and repeated motifs.</p>\n<h2 id=\"technical-scope\">Technical scope</h2>\n<p>The technical scope includes frequency-domain analysis, onset and transient detection, segment comparison, signal annotation, audio feature extraction, visual inspection, prototype interfaces and research notes.</p>\n<p>Early experiments around Python audio tooling, numerical analysis and visual plotting inform the program, but the public record focuses on concepts and methods rather than promising a specific production package.</p>\n<h2 id=\"artistic-scope\">Artistic scope</h2>\n<p>ORETH also names the public artistic layer that carries the Palimpsests cycle. The artistic output should remain legible as music first. The research layer explains how listening, analysis and memory interact, but it should not turn the work into a technical demonstration.</p>\n<h2 id=\"applications\">Applications</h2>\n<p>The program supports:</p>\n<ul>\n<li>machine-listening research for creative use;</li>\n<li>annotation of audio artefacts and recordings;</li>\n<li>sonic archives where provenance matters;</li>\n<li>composition systems built around recurrence and transformation;</li>\n<li>essays on signal, memory, entropy and musical form;</li>\n<li>future tools that help creators inspect and preserve audio process.</li>\n</ul>\n<h2 id=\"limitations\">Limitations</h2>\n<p>ORETH is an active prototype program. Public claims should remain scoped to documented concepts, project records and preserved artefacts. Performance claims, model claims and production-system claims require separate evidence before they become canonical.</p>\n<h2 id=\"references\">References</h2>\n<p>This program record is grounded in the existing Electronic Artefacts archive, the Palimpsests dossier, Runtime Theory, signal archaeology research and the studio’s preserved audio and production notes.</p>\n",
   "headings": [
     "Mandate",
     "Research position",
@@ -77,5 +77,42 @@
     "Applications",
     "Limitations",
     "References"
+  ],
+  "headingItems": [
+    {
+      "level": 2,
+      "title": "Mandate",
+      "id": "mandate"
+    },
+    {
+      "level": 2,
+      "title": "Research position",
+      "id": "research-position"
+    },
+    {
+      "level": 2,
+      "title": "Technical scope",
+      "id": "technical-scope"
+    },
+    {
+      "level": 2,
+      "title": "Artistic scope",
+      "id": "artistic-scope"
+    },
+    {
+      "level": 2,
+      "title": "Applications",
+      "id": "applications"
+    },
+    {
+      "level": 2,
+      "title": "Limitations",
+      "id": "limitations"
+    },
+    {
+      "level": 2,
+      "title": "References",
+      "id": "references"
+    }
   ]
 }

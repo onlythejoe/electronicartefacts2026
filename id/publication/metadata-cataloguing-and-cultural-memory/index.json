@@ -92,7 +92,7 @@
   "citation": {
     "preferred": "Electronic Artefacts. \"Metadata, Cataloguing and Cultural Memory.\" Technical article, version 1.0.0, 2026."
   },
-  "bodyHtml": "<h2>Problem</h2>\n<p>Digital culture creates enormous quantities of files, pages, exports, recordings, screenshots, notes, code and media fragments. Without metadata, those objects lose context quickly. A file may still open but no longer explain who made it, why it exists, what it relates to, whether it can be used or how it changed.</p>\n<p>The problem is not only technical. Metadata is cultural memory. It preserves the conditions that make interpretation possible. Without it, archives become storage. Search becomes guesswork. Knowledge graphs become weak maps.</p>\n<p>Electronic Artefacts needs metadata because its work crosses software, sound, research, design, art and systems. The same object may be a project output, evidence for a claim, a preserved artefact and a source for future work.</p>\n<h2>Introduction</h2>\n<p>Metadata is structured information about a resource. It can be descriptive, administrative, structural or preservation-oriented. Descriptive metadata helps identify and discover an object. Administrative metadata records rights, technical properties and management context. Structural metadata explains parts and relationships. Preservation metadata records actions, agents, formats and fixity.</p>\n<p>For the Knowledge Hub, metadata is not hidden paperwork. It is part of publication quality.</p>\n<h2>Context</h2>\n<p>Dublin Core, METS and PREMIS come from library, archive and preservation contexts. Their details differ, but they share a premise: digital resources require structured context.</p>\n<p>Electronic Artefacts does not need to reproduce every archival standard. It does need to respect the same logic. A public record should name title, identifier, creator, date, source, rights, relation, confidence and version where possible.</p>\n<h2>History</h2>\n<p>Cataloguing predates digital systems. Libraries, museums and archives developed descriptive practices to make collections discoverable and accountable. Digital networks changed the scale and the fragility of the problem. Files can be copied endlessly while losing context. Links can circulate without provenance. Formats can become obsolete.</p>\n<p>Metadata standards emerged to address different parts of this environment. Dublin Core offered a broad vocabulary for resource description. METS provided a way to encode descriptive, administrative and structural metadata for digital library objects. PREMIS focused on preservation metadata.</p>\n<h2>Core concepts</h2>\n<p>Identifier: a stable reference to a resource.</p>\n<p>Title: the name used to identify the resource.</p>\n<p>Creator: the person or organization responsible for creation.</p>\n<p>Source: the resource from which another resource derives.</p>\n<p>Rights: legal and usage context.</p>\n<p>Relation: a structured connection to another resource.</p>\n<p>Fixity: evidence that a file has not changed unexpectedly.</p>\n<h2>Architecture</h2>\n<p>A metadata architecture needs a schema, vocabulary, validation and publication path. The schema defines required fields. The vocabulary keeps terms consistent. Validation catches missing or malformed values. Publication exposes metadata to readers, search engines and machines.</p>\n<p>Electronic Artefacts implements this through frontmatter, entity schemas, relation schemas, generated pages, JSON-LD and search documents. The architecture is strongest when article prose and machine metadata agree.</p>\n<h2>Implementation</h2>\n<p>Implementation should begin with minimum viable metadata for every public record: identifier, type, title, abstract, status, maturity, dates, author, publisher, subjects and sources. For preservation-sensitive objects, add format, rights, provenance, fixity and relation to original files.</p>\n<p>Metadata should be reviewed when content changes. A modified article should update modifiedAt. A speculative concept should not pretend to be canonical. A source should include accessedAt when it is web-based.</p>\n<h2>Practical applications</h2>\n<p>Metadata improves search by giving documents clear subjects and descriptions.</p>\n<p>It improves navigation by allowing related content to be generated from real entities.</p>\n<p>It improves preservation by recording origin, format and change.</p>\n<p>It improves trust by showing what a claim depends on.</p>\n<p>In Vestiges, metadata can connect culture, craft, institutions, techniques and sources. In Palimpsests, it can preserve audio and visual residue. In ORETH, it can document analysis outputs and machine-listening context.</p>\n<h2>Tools</h2>\n<p>Useful tools include Dublin Core vocabularies, PREMIS, METS, JSON-LD, RDF, YAML frontmatter, checksums, file inventories, source registers, validation scripts and graph neighborhood generation.</p>\n<h2>Evidence</h2>\n<p>The Knowledge Hub already demonstrates metadata’s value. Every entity carries type, status, maturity, confidence, dates and subjects. Generated pages turn those records into public knowledge surfaces.</p>\n<h2>Editorial method</h2>\n<p>Editors should treat metadata as writing. A vague abstract or broad tag weakens the article. A precise subject list makes the record discoverable and helps future authors link to it.</p>\n<p>Metadata should also record uncertainty. If a date is approximate, if attribution is unclear or if rights are unknown, the record should say so rather than conceal the gap.</p>\n<h2>Common mistakes</h2>\n<p>The first mistake is postponing metadata until the end. Context is easiest to capture when work is created.</p>\n<p>The second mistake is over-customization. A private vocabulary may feel expressive but become difficult to integrate.</p>\n<p>The third mistake is treating tags as enough. Tags group content; metadata explains resources.</p>\n<h2>Electronic Artefacts implications</h2>\n<p>Electronic Artefacts can use metadata to connect creative production with research memory. This matters because the site is not only presenting work. It is documenting an ecosystem.</p>\n<p>The Knowledge Hub should continue to add concept records, article subjects, source trails and relation statements before content volume overwhelms structure.</p>\n<h2>Knowledge graph role</h2>\n<p>Metadata is the bridge between a page and a graph. A prose article can explain an idea, but metadata makes that article addressable, sortable and reusable. Subjects connect it to entities. Sources connect it to evidence. Dates make revision visible. Confidence levels tell readers how stable the record is.</p>\n<p>In Electronic Artefacts, this is especially important because many pages are not simply articles. A project page may be evidence for a concept. A program page may implement a framework. A technology page may support several publications. Metadata lets those roles remain distinct while still connected.</p>\n<h2>Evaluation criteria</h2>\n<p>A metadata record should be evaluated by usefulness, not density. The best question is not “did we fill every field?” but “will this help a future reader understand, retrieve, trust or preserve the object?”</p>\n<p>Good metadata names the resource clearly, distinguishes the resource from the page describing it, identifies creators and sources, records rights where relevant, connects related records and avoids false precision. When information is unknown, the record should preserve uncertainty rather than invent certainty.</p>\n<h2>Editorial standard</h2>\n<p>The Knowledge Hub should treat metadata changes as editorial changes. If a source is added, a concept becomes canonical or an article is substantially revised, the metadata should change with the text. This keeps the graph honest. It also makes generated search documents and JSON-LD reflect the actual publication state.</p>\n<h2>Reader pathway</h2>\n<p>Metadata can feel abstract until a reader loses context. The article should therefore guide readers from everyday questions, such as “what is this file?” or “where did this source come from?”, toward archival concepts like provenance, preservation metadata and graph relations. The strongest path leads from <a href=\"/knowledge/concepts/metadata/\">Metadata</a> to <a href=\"/knowledge/concepts/provenance/\">Provenance</a>, <a href=\"/knowledge/concepts/digital-preservation/\">Digital Preservation</a> and <a href=\"/projects/vestiges/\">Vestiges</a>.</p>\n<h2>Future work</h2>\n<p>Future entries should cover preservation metadata, rights metadata, source criticism, file format sustainability, checksums, cataloguing for audio and graph-based archival description.</p>\n<h2>Related concepts</h2>\n<p>Read <a href=\"/knowledge/concepts/metadata/\">Metadata</a>, <a href=\"/knowledge/concepts/provenance/\">Provenance</a>, <a href=\"/knowledge/concepts/digital-preservation/\">Digital Preservation</a>, <a href=\"/knowledge/concepts/knowledge-graph/\">Knowledge Graph</a> and <a href=\"/projects/vestiges/\">Vestiges</a>.</p>\n<h2>Suggested reading</h2>\n<p>Start with Dublin Core for general description, then study METS and PREMIS for digital library and preservation contexts.</p>\n<h2>Related articles</h2>\n<p>Continue with <a href=\"/publications/digital-preservation-and-living-archives/\">Digital Preservation and Living Archives</a> and <a href=\"/publications/knowledge-graphs-for-cultural-infrastructure/\">Knowledge Graphs for Cultural Infrastructure</a>.</p>\n<h2>Glossary</h2>\n<p>Metadata: structured information about a resource.</p>\n<p>Cataloguing: the practice of describing resources for discovery and management.</p>\n<p>PREMIS: a preservation metadata standard.</p>\n<p>METS: a standard for encoding digital library object metadata.</p>\n<h2>Limitations</h2>\n<p>Metadata can create false authority. A well-structured record may still be wrong. Review, sources and confidence levels remain necessary.</p>\n<p>Metadata also costs time. The right response is not to describe everything exhaustively, but to capture the context future readers will actually need.</p>\n<h2>References</h2>\n<ul>\n<li>Dublin Core Metadata Initiative. DCMI Metadata Terms.</li>\n<li>Library of Congress. METS.</li>\n<li>Library of Congress. PREMIS.</li>\n<li>Electronic Artefacts. Vestiges, Knowledge Graph and Digital Preservation records.</li>\n</ul>\n",
+  "bodyHtml": "<h2 id=\"problem\">Problem</h2>\n<p>Digital culture creates enormous quantities of files, pages, exports, recordings, screenshots, notes, code and media fragments. Without metadata, those objects lose context quickly. A file may still open but no longer explain who made it, why it exists, what it relates to, whether it can be used or how it changed.</p>\n<p>The problem is not only technical. Metadata is cultural memory. It preserves the conditions that make interpretation possible. Without it, archives become storage. Search becomes guesswork. Knowledge graphs become weak maps.</p>\n<p>Electronic Artefacts needs metadata because its work crosses software, sound, research, design, art and systems. The same object may be a project output, evidence for a claim, a preserved artefact and a source for future work.</p>\n<h2 id=\"introduction\">Introduction</h2>\n<p>Metadata is structured information about a resource. It can be descriptive, administrative, structural or preservation-oriented. Descriptive metadata helps identify and discover an object. Administrative metadata records rights, technical properties and management context. Structural metadata explains parts and relationships. Preservation metadata records actions, agents, formats and fixity.</p>\n<p>For the Knowledge Hub, metadata is not hidden paperwork. It is part of publication quality.</p>\n<h2 id=\"context\">Context</h2>\n<p>Dublin Core, METS and PREMIS come from library, archive and preservation contexts. Their details differ, but they share a premise: digital resources require structured context.</p>\n<p>Electronic Artefacts does not need to reproduce every archival standard. It does need to respect the same logic. A public record should name title, identifier, creator, date, source, rights, relation, confidence and version where possible.</p>\n<h2 id=\"history\">History</h2>\n<p>Cataloguing predates digital systems. Libraries, museums and archives developed descriptive practices to make collections discoverable and accountable. Digital networks changed the scale and the fragility of the problem. Files can be copied endlessly while losing context. Links can circulate without provenance. Formats can become obsolete.</p>\n<p>Metadata standards emerged to address different parts of this environment. Dublin Core offered a broad vocabulary for resource description. METS provided a way to encode descriptive, administrative and structural metadata for digital library objects. PREMIS focused on preservation metadata.</p>\n<h2 id=\"core-concepts\">Core concepts</h2>\n<p>Identifier: a stable reference to a resource.</p>\n<p>Title: the name used to identify the resource.</p>\n<p>Creator: the person or organization responsible for creation.</p>\n<p>Source: the resource from which another resource derives.</p>\n<p>Rights: legal and usage context.</p>\n<p>Relation: a structured connection to another resource.</p>\n<p>Fixity: evidence that a file has not changed unexpectedly.</p>\n<h2 id=\"architecture\">Architecture</h2>\n<p>A metadata architecture needs a schema, vocabulary, validation and publication path. The schema defines required fields. The vocabulary keeps terms consistent. Validation catches missing or malformed values. Publication exposes metadata to readers, search engines and machines.</p>\n<p>Electronic Artefacts implements this through frontmatter, entity schemas, relation schemas, generated pages, JSON-LD and search documents. The architecture is strongest when article prose and machine metadata agree.</p>\n<h2 id=\"implementation\">Implementation</h2>\n<p>Implementation should begin with minimum viable metadata for every public record: identifier, type, title, abstract, status, maturity, dates, author, publisher, subjects and sources. For preservation-sensitive objects, add format, rights, provenance, fixity and relation to original files.</p>\n<p>Metadata should be reviewed when content changes. A modified article should update modifiedAt. A speculative concept should not pretend to be canonical. A source should include accessedAt when it is web-based.</p>\n<h2 id=\"practical-applications\">Practical applications</h2>\n<p>Metadata improves search by giving documents clear subjects and descriptions.</p>\n<p>It improves navigation by allowing related content to be generated from real entities.</p>\n<p>It improves preservation by recording origin, format and change.</p>\n<p>It improves trust by showing what a claim depends on.</p>\n<p>In Vestiges, metadata can connect culture, craft, institutions, techniques and sources. In Palimpsests, it can preserve audio and visual residue. In ORETH, it can document analysis outputs and machine-listening context.</p>\n<h2 id=\"tools\">Tools</h2>\n<p>Useful tools include Dublin Core vocabularies, PREMIS, METS, JSON-LD, RDF, YAML frontmatter, checksums, file inventories, source registers, validation scripts and graph neighborhood generation.</p>\n<h2 id=\"evidence\">Evidence</h2>\n<p>The Knowledge Hub already demonstrates metadata’s value. Every entity carries type, status, maturity, confidence, dates and subjects. Generated pages turn those records into public knowledge surfaces.</p>\n<h2 id=\"editorial-method\">Editorial method</h2>\n<p>Editors should treat metadata as writing. A vague abstract or broad tag weakens the article. A precise subject list makes the record discoverable and helps future authors link to it.</p>\n<p>Metadata should also record uncertainty. If a date is approximate, if attribution is unclear or if rights are unknown, the record should say so rather than conceal the gap.</p>\n<h2 id=\"common-mistakes\">Common mistakes</h2>\n<p>The first mistake is postponing metadata until the end. Context is easiest to capture when work is created.</p>\n<p>The second mistake is over-customization. A private vocabulary may feel expressive but become difficult to integrate.</p>\n<p>The third mistake is treating tags as enough. Tags group content; metadata explains resources.</p>\n<h2 id=\"electronic-artefacts-implications\">Electronic Artefacts implications</h2>\n<p>Electronic Artefacts can use metadata to connect creative production with research memory. This matters because the site is not only presenting work. It is documenting an ecosystem.</p>\n<p>The Knowledge Hub should continue to add concept records, article subjects, source trails and relation statements before content volume overwhelms structure.</p>\n<h2 id=\"knowledge-graph-role\">Knowledge graph role</h2>\n<p>Metadata is the bridge between a page and a graph. A prose article can explain an idea, but metadata makes that article addressable, sortable and reusable. Subjects connect it to entities. Sources connect it to evidence. Dates make revision visible. Confidence levels tell readers how stable the record is.</p>\n<p>In Electronic Artefacts, this is especially important because many pages are not simply articles. A project page may be evidence for a concept. A program page may implement a framework. A technology page may support several publications. Metadata lets those roles remain distinct while still connected.</p>\n<h2 id=\"evaluation-criteria\">Evaluation criteria</h2>\n<p>A metadata record should be evaluated by usefulness, not density. The best question is not “did we fill every field?” but “will this help a future reader understand, retrieve, trust or preserve the object?”</p>\n<p>Good metadata names the resource clearly, distinguishes the resource from the page describing it, identifies creators and sources, records rights where relevant, connects related records and avoids false precision. When information is unknown, the record should preserve uncertainty rather than invent certainty.</p>\n<h2 id=\"editorial-standard\">Editorial standard</h2>\n<p>The Knowledge Hub should treat metadata changes as editorial changes. If a source is added, a concept becomes canonical or an article is substantially revised, the metadata should change with the text. This keeps the graph honest. It also makes generated search documents and JSON-LD reflect the actual publication state.</p>\n<h2 id=\"reader-pathway\">Reader pathway</h2>\n<p>Metadata can feel abstract until a reader loses context. The article should therefore guide readers from everyday questions, such as “what is this file?” or “where did this source come from?”, toward archival concepts like provenance, preservation metadata and graph relations. The strongest path leads from <a href=\"/knowledge/concepts/metadata/\">Metadata</a> to <a href=\"/knowledge/concepts/provenance/\">Provenance</a>, <a href=\"/knowledge/concepts/digital-preservation/\">Digital Preservation</a> and <a href=\"/projects/vestiges/\">Vestiges</a>.</p>\n<h2 id=\"future-work\">Future work</h2>\n<p>Future entries should cover preservation metadata, rights metadata, source criticism, file format sustainability, checksums, cataloguing for audio and graph-based archival description.</p>\n<h2 id=\"related-concepts\">Related concepts</h2>\n<p>Read <a href=\"/knowledge/concepts/metadata/\">Metadata</a>, <a href=\"/knowledge/concepts/provenance/\">Provenance</a>, <a href=\"/knowledge/concepts/digital-preservation/\">Digital Preservation</a>, <a href=\"/knowledge/concepts/knowledge-graph/\">Knowledge Graph</a> and <a href=\"/projects/vestiges/\">Vestiges</a>.</p>\n<h2 id=\"suggested-reading\">Suggested reading</h2>\n<p>Start with Dublin Core for general description, then study METS and PREMIS for digital library and preservation contexts.</p>\n<h2 id=\"related-articles\">Related articles</h2>\n<p>Continue with <a href=\"/publications/digital-preservation-and-living-archives/\">Digital Preservation and Living Archives</a> and <a href=\"/publications/knowledge-graphs-for-cultural-infrastructure/\">Knowledge Graphs for Cultural Infrastructure</a>.</p>\n<h2 id=\"glossary\">Glossary</h2>\n<p>Metadata: structured information about a resource.</p>\n<p>Cataloguing: the practice of describing resources for discovery and management.</p>\n<p>PREMIS: a preservation metadata standard.</p>\n<p>METS: a standard for encoding digital library object metadata.</p>\n<h2 id=\"limitations\">Limitations</h2>\n<p>Metadata can create false authority. A well-structured record may still be wrong. Review, sources and confidence levels remain necessary.</p>\n<p>Metadata also costs time. The right response is not to describe everything exhaustively, but to capture the context future readers will actually need.</p>\n<h2 id=\"references\">References</h2>\n<ul>\n<li>Dublin Core Metadata Initiative. DCMI Metadata Terms.</li>\n<li>Library of Congress. METS.</li>\n<li>Library of Congress. PREMIS.</li>\n<li>Electronic Artefacts. Vestiges, Knowledge Graph and Digital Preservation records.</li>\n</ul>\n",
   "headings": [
     "Problem",
     "Introduction",
@@ -118,5 +118,127 @@
     "Glossary",
     "Limitations",
     "References"
+  ],
+  "headingItems": [
+    {
+      "level": 2,
+      "title": "Problem",
+      "id": "problem"
+    },
+    {
+      "level": 2,
+      "title": "Introduction",
+      "id": "introduction"
+    },
+    {
+      "level": 2,
+      "title": "Context",
+      "id": "context"
+    },
+    {
+      "level": 2,
+      "title": "History",
+      "id": "history"
+    },
+    {
+      "level": 2,
+      "title": "Core concepts",
+      "id": "core-concepts"
+    },
+    {
+      "level": 2,
+      "title": "Architecture",
+      "id": "architecture"
+    },
+    {
+      "level": 2,
+      "title": "Implementation",
+      "id": "implementation"
+    },
+    {
+      "level": 2,
+      "title": "Practical applications",
+      "id": "practical-applications"
+    },
+    {
+      "level": 2,
+      "title": "Tools",
+      "id": "tools"
+    },
+    {
+      "level": 2,
+      "title": "Evidence",
+      "id": "evidence"
+    },
+    {
+      "level": 2,
+      "title": "Editorial method",
+      "id": "editorial-method"
+    },
+    {
+      "level": 2,
+      "title": "Common mistakes",
+      "id": "common-mistakes"
+    },
+    {
+      "level": 2,
+      "title": "Electronic Artefacts implications",
+      "id": "electronic-artefacts-implications"
+    },
+    {
+      "level": 2,
+      "title": "Knowledge graph role",
+      "id": "knowledge-graph-role"
+    },
+    {
+      "level": 2,
+      "title": "Evaluation criteria",
+      "id": "evaluation-criteria"
+    },
+    {
+      "level": 2,
+      "title": "Editorial standard",
+      "id": "editorial-standard"
+    },
+    {
+      "level": 2,
+      "title": "Reader pathway",
+      "id": "reader-pathway"
+    },
+    {
+      "level": 2,
+      "title": "Future work",
+      "id": "future-work"
+    },
+    {
+      "level": 2,
+      "title": "Related concepts",
+      "id": "related-concepts"
+    },
+    {
+      "level": 2,
+      "title": "Suggested reading",
+      "id": "suggested-reading"
+    },
+    {
+      "level": 2,
+      "title": "Related articles",
+      "id": "related-articles"
+    },
+    {
+      "level": 2,
+      "title": "Glossary",
+      "id": "glossary"
+    },
+    {
+      "level": 2,
+      "title": "Limitations",
+      "id": "limitations"
+    },
+    {
+      "level": 2,
+      "title": "References",
+      "id": "references"
+    }
   ]
 }

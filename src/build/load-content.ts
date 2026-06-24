@@ -5,11 +5,18 @@ import MarkdownIt from "markdown-it";
 import { parse as parseYaml } from "yaml";
 import { entityFrontmatterSchema } from "../schema/validation.js";
 import type { Entity } from "../schema/entities.js";
+import { headingItemsFromMarkdown } from "../semantic/heading-ids.js";
 
 const markdown = new MarkdownIt({ html: false, linkify: true, typographer: true });
+const defaultHeadingOpen = markdown.renderer.rules.heading_open
+  || ((tokens, index, options, _env, self) => self.renderToken(tokens, index, options));
 
-const headingsFrom = (body: string): string[] =>
-  [...body.matchAll(/^#{2,3}\s+(.+)$/gm)].map((match) => match[1].trim());
+markdown.renderer.rules.heading_open = (tokens, index, options, env, self) => {
+  const queue = (env as { headingIdQueue?: string[] }).headingIdQueue;
+  const id = queue?.shift();
+  if (id) tokens[index].attrSet("id", id);
+  return defaultHeadingOpen(tokens, index, options, env, self);
+};
 
 const frontmatterPattern = /^---\r?\n([\s\S]*?)\r?\n---\r?\n?/;
 
@@ -39,10 +46,12 @@ export const loadContent = async (rootDir: string): Promise<Entity[]> => {
     if (!result.success) {
       throw new Error(`Invalid entity ${path.relative(rootDir, file)}:\n${result.error.message}`);
     }
+    const headingItems = headingItemsFromMarkdown(parsed.content);
     entities.push({
       ...result.data,
-      bodyHtml: markdown.render(parsed.content),
-      headings: headingsFrom(parsed.content),
+      bodyHtml: markdown.render(parsed.content, { headingIdQueue: headingItems.map((heading) => heading.id) }),
+      headings: headingItems.map((heading) => heading.title),
+      headingItems,
     } as Entity);
   }
   return entities;

@@ -70,6 +70,9 @@ const hubMetadata = (title: string, description: string, route: string) => ({
   robots: "index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1",
   image: "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-search.jpg",
   imageAlt: "Electronic Artefacts knowledge platform",
+  ogType: "website" as const,
+  keywords: ["Electronic Artefacts", title, "knowledge graph", "creative technology", "research"],
+  modifiedAt: "2026-06-24",
 });
 
 const typeLabel = (type: string): string => type.replace(/([a-z])([A-Z])/g, "$1 $2").toLowerCase();

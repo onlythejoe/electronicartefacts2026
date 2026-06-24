@@ -55,12 +55,39 @@
     "A domain operating system becomes credible when multiple applications reuse the same identities, rules and event semantics.",
     "Domain infrastructure should expose extension points without centralizing every concern."
   ],
-  "bodyHtml": "<h2>Definition</h2>\n<p>A domain operating system coordinates the recurring entities and rules of a field. It provides shared identity, permissions, events, workflows, data contracts and extension surfaces so that multiple applications do not reimplement the same foundations.</p>\n<h2>Difference from an application</h2>\n<p>An application delivers a bounded user experience. A domain operating system supports several experiences and integrations while maintaining common semantics underneath them.</p>\n<h2>Electronic Artefacts position</h2>\n<p>VASTE is relevant as a domain-runtime foundation for graph-shaped products. Vestiges can become a cultural knowledge operating layer when public pages, contributions, validation and economic services share the same entity model.</p>\n<h2>Limitations</h2>\n<p>The metaphor can encourage overreach. A domain operating system should start from proven shared needs, maintain replaceable modules and avoid becoming a mandatory dependency for unrelated functions.</p>\n<h2>References</h2>\n<p>See Graph Runtime, Contextual Execution, VASTE, Vestiges and Event-Driven Architecture.</p>\n",
+  "bodyHtml": "<h2 id=\"definition\">Definition</h2>\n<p>A domain operating system coordinates the recurring entities and rules of a field. It provides shared identity, permissions, events, workflows, data contracts and extension surfaces so that multiple applications do not reimplement the same foundations.</p>\n<h2 id=\"difference-from-an-application\">Difference from an application</h2>\n<p>An application delivers a bounded user experience. A domain operating system supports several experiences and integrations while maintaining common semantics underneath them.</p>\n<h2 id=\"electronic-artefacts-position\">Electronic Artefacts position</h2>\n<p>VASTE is relevant as a domain-runtime foundation for graph-shaped products. Vestiges can become a cultural knowledge operating layer when public pages, contributions, validation and economic services share the same entity model.</p>\n<h2 id=\"limitations\">Limitations</h2>\n<p>The metaphor can encourage overreach. A domain operating system should start from proven shared needs, maintain replaceable modules and avoid becoming a mandatory dependency for unrelated functions.</p>\n<h2 id=\"references\">References</h2>\n<p>See Graph Runtime, Contextual Execution, VASTE, Vestiges and Event-Driven Architecture.</p>\n",
   "headings": [
     "Definition",
     "Difference from an application",
     "Electronic Artefacts position",
     "Limitations",
     "References"
+  ],
+  "headingItems": [
+    {
+      "level": 2,
+      "title": "Definition",
+      "id": "definition"
+    },
+    {
+      "level": 2,
+      "title": "Difference from an application",
+      "id": "difference-from-an-application"
+    },
+    {
+      "level": 2,
+      "title": "Electronic Artefacts position",
+      "id": "electronic-artefacts-position"
+    },
+    {
+      "level": 2,
+      "title": "Limitations",
+      "id": "limitations"
+    },
+    {
+      "level": 2,
+      "title": "References",
+      "id": "references"
+    }
   ]
 }

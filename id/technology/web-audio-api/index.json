@@ -47,10 +47,27 @@
   "category": "platform",
   "roleInEcosystem": "The Web Audio API supports interactive sound, analysis, synthesis and browser-based audio tools for Electronic Artefacts research.",
   "officialUrl": "https://www.w3.org/TR/webaudio/",
-  "bodyHtml": "<h2>Role</h2>\n<p>The Web Audio API provides graph-based audio routing and processing in browsers. It is relevant to interactive essays, sound analysis, synthesis and public listening tools.</p>\n<h2>Use</h2>\n<p>Electronic Artefacts can use it for ORETH prototypes, audio visualizers, browser-native sound experiments and educational demonstrations.</p>\n<h2>References</h2>\n<p>See the W3C Web Audio API specification.</p>\n",
+  "bodyHtml": "<h2 id=\"role\">Role</h2>\n<p>The Web Audio API provides graph-based audio routing and processing in browsers. It is relevant to interactive essays, sound analysis, synthesis and public listening tools.</p>\n<h2 id=\"use\">Use</h2>\n<p>Electronic Artefacts can use it for ORETH prototypes, audio visualizers, browser-native sound experiments and educational demonstrations.</p>\n<h2 id=\"references\">References</h2>\n<p>See the W3C Web Audio API specification.</p>\n",
   "headings": [
     "Role",
     "Use",
     "References"
+  ],
+  "headingItems": [
+    {
+      "level": 2,
+      "title": "Role",
+      "id": "role"
+    },
+    {
+      "level": 2,
+      "title": "Use",
+      "id": "use"
+    },
+    {
+      "level": 2,
+      "title": "References",
+      "id": "references"
+    }
   ]
 }

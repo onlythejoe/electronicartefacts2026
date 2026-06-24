@@ -53,12 +53,39 @@
     "A useful knowledge system depends on retrieval and revision as much as capture.",
     "Public knowledge hubs can borrow from personal knowledge practices while adding editorial validation."
   ],
-  "bodyHtml": "<h2>Definition</h2>\n<p>A personal knowledge system is an ongoing environment for capturing information, linking ideas and turning notes into reusable understanding.</p>\n<h2>Scope</h2>\n<p>The concept includes notes, source records, backlinks, tags, outlines, maps of content, spaced review, digital gardens and research logs.</p>\n<h2>Applications</h2>\n<p>Electronic Artefacts can adapt this logic at site scale. The Knowledge Hub is not personal, but it benefits from the same practices: stable pages, explicit links, source trails and recurring revision.</p>\n<h2>Limitations</h2>\n<p>Capture without synthesis creates clutter. The system becomes valuable when notes are rewritten, linked, pruned and published with context.</p>\n<h2>References</h2>\n<p>See hypertext, knowledge graphs, research methods and digital preservation.</p>\n",
+  "bodyHtml": "<h2 id=\"definition\">Definition</h2>\n<p>A personal knowledge system is an ongoing environment for capturing information, linking ideas and turning notes into reusable understanding.</p>\n<h2 id=\"scope\">Scope</h2>\n<p>The concept includes notes, source records, backlinks, tags, outlines, maps of content, spaced review, digital gardens and research logs.</p>\n<h2 id=\"applications\">Applications</h2>\n<p>Electronic Artefacts can adapt this logic at site scale. The Knowledge Hub is not personal, but it benefits from the same practices: stable pages, explicit links, source trails and recurring revision.</p>\n<h2 id=\"limitations\">Limitations</h2>\n<p>Capture without synthesis creates clutter. The system becomes valuable when notes are rewritten, linked, pruned and published with context.</p>\n<h2 id=\"references\">References</h2>\n<p>See hypertext, knowledge graphs, research methods and digital preservation.</p>\n",
   "headings": [
     "Definition",
     "Scope",
     "Applications",
     "Limitations",
     "References"
+  ],
+  "headingItems": [
+    {
+      "level": 2,
+      "title": "Definition",
+      "id": "definition"
+    },
+    {
+      "level": 2,
+      "title": "Scope",
+      "id": "scope"
+    },
+    {
+      "level": 2,
+      "title": "Applications",
+      "id": "applications"
+    },
+    {
+      "level": 2,
+      "title": "Limitations",
+      "id": "limitations"
+    },
+    {
+      "level": 2,
+      "title": "References",
+      "id": "references"
+    }
   ]
 }

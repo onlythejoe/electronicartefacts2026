@@ -68,7 +68,7 @@
     "RAG separates updatable external knowledge from model parameters.",
     "Retrieval quality, chunk design, metadata and answer attribution determine system reliability."
   ],
-  "bodyHtml": "<h2>Definition</h2>\n<p>Retrieval-augmented generation combines a retriever with a generative model. The retriever selects passages, records or graph neighborhoods relevant to a request. The model receives that material as context and produces a response.</p>\n<h2>Architecture</h2>\n<p>A practical system includes ingestion, segmentation, metadata, indexing, query transformation, retrieval, ranking, context assembly, generation, citation and evaluation. Each stage can fail independently.</p>\n<h2>Knowledge graph role</h2>\n<p>Vector similarity can find semantically related passages, while graph relations can preserve identity, type, provenance and explicit paths. Hybrid retrieval can use both rather than treating embeddings as a replacement for structured knowledge.</p>\n<h2>Electronic Artefacts position</h2>\n<p>The Knowledge Hub can provide high-quality retrieval material because its pages expose stable entities, sources, confidence labels and relations. Future RAG systems should cite canonical records and retain the distinction between retrieved evidence and generated synthesis.</p>\n<h2>Limitations</h2>\n<p>Retrieved passages may be irrelevant, outdated, inaccessible or misleading. A model can ignore evidence or attach a citation to an unsupported claim. Evaluation must test retrieval recall, source precision, faithfulness and answer usefulness separately.</p>\n<h2>References</h2>\n<p>See Lewis et al., Knowledge Graph, Metadata, Provenance and Large Language Model.</p>\n",
+  "bodyHtml": "<h2 id=\"definition\">Definition</h2>\n<p>Retrieval-augmented generation combines a retriever with a generative model. The retriever selects passages, records or graph neighborhoods relevant to a request. The model receives that material as context and produces a response.</p>\n<h2 id=\"architecture\">Architecture</h2>\n<p>A practical system includes ingestion, segmentation, metadata, indexing, query transformation, retrieval, ranking, context assembly, generation, citation and evaluation. Each stage can fail independently.</p>\n<h2 id=\"knowledge-graph-role\">Knowledge graph role</h2>\n<p>Vector similarity can find semantically related passages, while graph relations can preserve identity, type, provenance and explicit paths. Hybrid retrieval can use both rather than treating embeddings as a replacement for structured knowledge.</p>\n<h2 id=\"electronic-artefacts-position\">Electronic Artefacts position</h2>\n<p>The Knowledge Hub can provide high-quality retrieval material because its pages expose stable entities, sources, confidence labels and relations. Future RAG systems should cite canonical records and retain the distinction between retrieved evidence and generated synthesis.</p>\n<h2 id=\"limitations\">Limitations</h2>\n<p>Retrieved passages may be irrelevant, outdated, inaccessible or misleading. A model can ignore evidence or attach a citation to an unsupported claim. Evaluation must test retrieval recall, source precision, faithfulness and answer usefulness separately.</p>\n<h2 id=\"references\">References</h2>\n<p>See Lewis et al., Knowledge Graph, Metadata, Provenance and Large Language Model.</p>\n",
   "headings": [
     "Definition",
     "Architecture",
@@ -76,5 +76,37 @@
     "Electronic Artefacts position",
     "Limitations",
     "References"
+  ],
+  "headingItems": [
+    {
+      "level": 2,
+      "title": "Definition",
+      "id": "definition"
+    },
+    {
+      "level": 2,
+      "title": "Architecture",
+      "id": "architecture"
+    },
+    {
+      "level": 2,
+      "title": "Knowledge graph role",
+      "id": "knowledge-graph-role"
+    },
+    {
+      "level": 2,
+      "title": "Electronic Artefacts position",
+      "id": "electronic-artefacts-position"
+    },
+    {
+      "level": 2,
+      "title": "Limitations",
+      "id": "limitations"
+    },
+    {
+      "level": 2,
+      "title": "References",
+      "id": "references"
+    }
   ]
 }

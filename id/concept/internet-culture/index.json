@@ -62,12 +62,39 @@
     "Internet culture depends on technical protocols and social interpretation at the same time.",
     "Durable study of internet culture requires preservation of context, not only screenshots or metrics."
   ],
-  "bodyHtml": "<h2>Definition</h2>\n<p>Internet culture is culture shaped by networked communication. It includes communities, aesthetics, rituals, jokes, archives, protocols and platform behaviors.</p>\n<h2>Scope</h2>\n<p>The concept includes memes, forums, social protocols, federated networks, digital folklore, web archives, open-source communities and platform-native genres.</p>\n<h2>Applications</h2>\n<p>Electronic Artefacts can use internet culture as a bridge between technical systems and cultural memory.</p>\n<h2>Limitations</h2>\n<p>Internet culture changes quickly. Durable analysis should focus on patterns, infrastructures and archival traces rather than short-lived trends alone.</p>\n<h2>References</h2>\n<p>See ActivityPub, open source, hypertext and digital preservation.</p>\n",
+  "bodyHtml": "<h2 id=\"definition\">Definition</h2>\n<p>Internet culture is culture shaped by networked communication. It includes communities, aesthetics, rituals, jokes, archives, protocols and platform behaviors.</p>\n<h2 id=\"scope\">Scope</h2>\n<p>The concept includes memes, forums, social protocols, federated networks, digital folklore, web archives, open-source communities and platform-native genres.</p>\n<h2 id=\"applications\">Applications</h2>\n<p>Electronic Artefacts can use internet culture as a bridge between technical systems and cultural memory.</p>\n<h2 id=\"limitations\">Limitations</h2>\n<p>Internet culture changes quickly. Durable analysis should focus on patterns, infrastructures and archival traces rather than short-lived trends alone.</p>\n<h2 id=\"references\">References</h2>\n<p>See ActivityPub, open source, hypertext and digital preservation.</p>\n",
   "headings": [
     "Definition",
     "Scope",
     "Applications",
     "Limitations",
     "References"
+  ],
+  "headingItems": [
+    {
+      "level": 2,
+      "title": "Definition",
+      "id": "definition"
+    },
+    {
+      "level": 2,
+      "title": "Scope",
+      "id": "scope"
+    },
+    {
+      "level": 2,
+      "title": "Applications",
+      "id": "applications"
+    },
+    {
+      "level": 2,
+      "title": "Limitations",
+      "id": "limitations"
+    },
+    {
+      "level": 2,
+      "title": "References",
+      "id": "references"
+    }
   ]
 }

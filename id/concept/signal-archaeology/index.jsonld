@@ -6,6 +6,15 @@
       "@id": "https://electronicartefacts.com/knowledge/concepts/signal-archaeology/#webpage",
       "url": "https://electronicartefacts.com/knowledge/concepts/signal-archaeology/",
       "name": "Signal Archaeology",
+      "description": "A canonical Electronic Artefacts concept linking ORETH, Palimpsests, digital preservation, provenance and machine listening.",
+      "inLanguage": "en",
+      "datePublished": "2026-06-23",
+      "dateModified": "2026-06-23",
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-search.jpg",
+        "description": "Signal Archaeology"
+      },
       "mainEntity": {
         "@id": "https://electronicartefacts.com/id/concept/signal-archaeology/"
       },
@@ -19,12 +28,69 @@
       "name": "Signal Archaeology",
       "description": "Signal archaeology is the interpretation of technical, sonic, visual or archival traces as evidence of hidden processes, transformations and histories.",
       "url": "https://electronicartefacts.com/knowledge/concepts/signal-archaeology/",
+      "mainEntityOfPage": {
+        "@id": "https://electronicartefacts.com/knowledge/concepts/signal-archaeology/#webpage"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-search.jpg",
+        "description": "Signal Archaeology"
+      },
+      "author": [
+        {
+          "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
+        }
+      ],
+      "creator": [
+        {
+          "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
+        }
+      ],
+      "keywords": [
+        "Signal Archaeology",
+        "Audio",
+        "Archive",
+        "Memory",
+        "Machine Listening",
+        "Audio Engineering",
+        "Digital Art",
+        "Archives",
+        "Research Methods"
+      ],
+      "inLanguage": "en",
       "dateCreated": "2026-06-23",
       "datePublished": "2026-06-23",
       "dateModified": "2026-06-23",
       "publisher": {
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
+      },
+      "copyrightHolder": {
+        "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
+      },
+      "isAccessibleForFree": true,
+      "wordCount": 161,
+      "inDefinedTermSet": "https://electronicartefacts.com/knowledge/concepts/",
+      "termCode": "signal-archaeology"
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/",
+      "name": "Electronic Artefacts",
+      "url": "https://electronicartefacts.com/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-logo.jpg"
       }
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://electronicartefacts.com/#website",
+      "url": "https://electronicartefacts.com/",
+      "name": "Electronic Artefacts",
+      "publisher": {
+        "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
+      },
+      "inLanguage": "en"
     },
     {
       "@type": "BreadcrumbList",
@@ -38,6 +104,12 @@
         {
           "@type": "ListItem",
           "position": 2,
+          "name": "Knowledge",
+          "item": "https://electronicartefacts.com/knowledge/concepts/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
           "name": "Signal Archaeology",
           "item": "https://electronicartefacts.com/knowledge/concepts/signal-archaeology/"
         }

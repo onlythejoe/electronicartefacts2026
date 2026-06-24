@@ -64,12 +64,39 @@
     "Autonomy is always bounded by system design, available actions and operating environment.",
     "Higher autonomy requires stronger observability, testing, fallback and governance."
   ],
-  "bodyHtml": "<h2>Definition</h2>\n<p>An autonomous system observes an environment, chooses actions and uses feedback to continue operation without a human specifying every step. Autonomy exists by degree and within a designed action space.</p>\n<h2>Architecture</h2>\n<p>The system may include sensors, state estimation, models, planners, policies, tools, actuators, logs, safety constraints and human override. A language-model agent is one form; robots, adaptive control systems and simulation actors are others.</p>\n<h2>Electronic Artefacts position</h2>\n<p>Autonomy should be connected to contextual execution. Identity, permissions, evidence, environment and reversible actions matter more than a broad claim that a system can “act alone.”</p>\n<h2>Limitations</h2>\n<p>Real environments change, sensors fail, objectives conflict and errors compound. Autonomous systems require bounded authority, monitoring, incident response and clear responsibility for outcomes.</p>\n<h2>References</h2>\n<p>See NIST AI RMF, AI Agent, Cybernetic Feedback and Contextual Execution.</p>\n",
+  "bodyHtml": "<h2 id=\"definition\">Definition</h2>\n<p>An autonomous system observes an environment, chooses actions and uses feedback to continue operation without a human specifying every step. Autonomy exists by degree and within a designed action space.</p>\n<h2 id=\"architecture\">Architecture</h2>\n<p>The system may include sensors, state estimation, models, planners, policies, tools, actuators, logs, safety constraints and human override. A language-model agent is one form; robots, adaptive control systems and simulation actors are others.</p>\n<h2 id=\"electronic-artefacts-position\">Electronic Artefacts position</h2>\n<p>Autonomy should be connected to contextual execution. Identity, permissions, evidence, environment and reversible actions matter more than a broad claim that a system can “act alone.”</p>\n<h2 id=\"limitations\">Limitations</h2>\n<p>Real environments change, sensors fail, objectives conflict and errors compound. Autonomous systems require bounded authority, monitoring, incident response and clear responsibility for outcomes.</p>\n<h2 id=\"references\">References</h2>\n<p>See NIST AI RMF, AI Agent, Cybernetic Feedback and Contextual Execution.</p>\n",
   "headings": [
     "Definition",
     "Architecture",
     "Electronic Artefacts position",
     "Limitations",
     "References"
+  ],
+  "headingItems": [
+    {
+      "level": 2,
+      "title": "Definition",
+      "id": "definition"
+    },
+    {
+      "level": 2,
+      "title": "Architecture",
+      "id": "architecture"
+    },
+    {
+      "level": 2,
+      "title": "Electronic Artefacts position",
+      "id": "electronic-artefacts-position"
+    },
+    {
+      "level": 2,
+      "title": "Limitations",
+      "id": "limitations"
+    },
+    {
+      "level": 2,
+      "title": "References",
+      "id": "references"
+    }
   ]
 }
