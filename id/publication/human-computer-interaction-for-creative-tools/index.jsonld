@@ -1,0 +1,65 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://electronicartefacts.com/publications/human-computer-interaction-for-creative-tools/#webpage",
+      "url": "https://electronicartefacts.com/publications/human-computer-interaction-for-creative-tools/",
+      "name": "Human Computer Interaction for Creative Tools",
+      "mainEntity": {
+        "@id": "https://electronicartefacts.com/id/publication/human-computer-interaction-for-creative-tools/"
+      },
+      "isPartOf": {
+        "@id": "https://electronicartefacts.com/#website"
+      }
+    },
+    {
+      "@type": "TechArticle",
+      "@id": "https://electronicartefacts.com/id/publication/human-computer-interaction-for-creative-tools/",
+      "name": "Human Computer Interaction for Creative Tools",
+      "description": "This article explains HCI for creative tools, focusing on feedback, agency, flow, error recovery, accessibility, augmented intelligence and computational media.",
+      "url": "https://electronicartefacts.com/publications/human-computer-interaction-for-creative-tools/",
+      "dateCreated": "2026-06-24",
+      "datePublished": "2026-06-24",
+      "dateModified": "2026-06-24",
+      "publisher": {
+        "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
+      },
+      "citation": "Electronic Artefacts. \"Human Computer Interaction for Creative Tools.\" Technical article, version 1.0.0, 2026.",
+      "about": [
+        {
+          "@id": "https://electronicartefacts.com/id/concept/human-computer-interaction/"
+        },
+        {
+          "@id": "https://electronicartefacts.com/id/concept/augmented-intelligence/"
+        },
+        {
+          "@id": "https://electronicartefacts.com/id/concept/motion-design/"
+        },
+        {
+          "@id": "https://electronicartefacts.com/id/concept/creative-coding/"
+        },
+        {
+          "@id": "https://electronicartefacts.com/id/program/vaste/"
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Electronic Artefacts",
+          "item": "https://electronicartefacts.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Human Computer Interaction for Creative Tools",
+          "item": "https://electronicartefacts.com/publications/human-computer-interaction-for-creative-tools/"
+        }
+      ]
+    }
+  ]
+}

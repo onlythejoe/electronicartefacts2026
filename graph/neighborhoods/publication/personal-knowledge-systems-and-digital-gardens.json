@@ -1,0 +1,102 @@
+{
+  "id": "local:ea:publication:personal-knowledge-systems-and-digital-gardens",
+  "kind": "local",
+  "focus": "ea:publication:personal-knowledge-systems-and-digital-gardens",
+  "nodes": [
+    {
+      "id": "ea:collection:knowledge-hub-second-wave",
+      "type": "collection",
+      "title": "Knowledge Hub Second Wave",
+      "route": "/archive/collections/knowledge-hub-second-wave/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:concept:digital-preservation",
+      "type": "concept",
+      "title": "Digital Preservation",
+      "route": "/knowledge/concepts/digital-preservation/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:concept:hypertext",
+      "type": "concept",
+      "title": "Hypertext",
+      "route": "/knowledge/concepts/hypertext/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:concept:metadata",
+      "type": "concept",
+      "title": "Metadata",
+      "route": "/knowledge/concepts/metadata/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:concept:personal-knowledge-system",
+      "type": "concept",
+      "title": "Personal Knowledge System",
+      "route": "/knowledge/concepts/personal-knowledge-system/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:publication:personal-knowledge-systems-and-digital-gardens",
+      "type": "publication",
+      "title": "Personal Knowledge Systems and Digital Gardens",
+      "route": "/publications/personal-knowledge-systems-and-digital-gardens/",
+      "status": "active",
+      "confidence": "published"
+    }
+  ],
+  "edges": [
+    {
+      "id": "ear:personal-knowledge-article-documents-personal-knowledge-system",
+      "source": "ea:publication:personal-knowledge-systems-and-digital-gardens",
+      "target": "ea:concept:personal-knowledge-system",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Personal Knowledge Systems and Digital Gardens documents personal knowledge systems as a practice of capture, linking and revision.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:personal-knowledge-article-documents-hypertext",
+      "source": "ea:publication:personal-knowledge-systems-and-digital-gardens",
+      "target": "ea:concept:hypertext",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Personal Knowledge Systems and Digital Gardens uses hypertext as the linking model for public knowledge gardens.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:personal-knowledge-article-documents-metadata",
+      "source": "ea:publication:personal-knowledge-systems-and-digital-gardens",
+      "target": "ea:concept:metadata",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Personal Knowledge Systems and Digital Gardens connects durable note systems to metadata and publication state.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:personal-knowledge-article-documents-digital-preservation",
+      "source": "ea:publication:personal-knowledge-systems-and-digital-gardens",
+      "target": "ea:concept:digital-preservation",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Personal Knowledge Systems and Digital Gardens links revision and retrieval practice to digital preservation concerns.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:knowledge-hub-second-wave-has-personal-knowledge-article",
+      "source": "ea:collection:knowledge-hub-second-wave",
+      "target": "ea:publication:personal-knowledge-systems-and-digital-gardens",
+      "predicate": "hasPart",
+      "label": "Has part",
+      "statement": "Knowledge Hub Second Wave includes Personal Knowledge Systems and Digital Gardens as a core article.",
+      "confidence": "published"
+    }
+  ]
+}

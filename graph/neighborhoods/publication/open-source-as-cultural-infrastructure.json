@@ -1,0 +1,102 @@
+{
+  "id": "local:ea:publication:open-source-as-cultural-infrastructure",
+  "kind": "local",
+  "focus": "ea:publication:open-source-as-cultural-infrastructure",
+  "nodes": [
+    {
+      "id": "ea:collection:knowledge-hub-second-wave",
+      "type": "collection",
+      "title": "Knowledge Hub Second Wave",
+      "route": "/archive/collections/knowledge-hub-second-wave/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:concept:creative-coding",
+      "type": "concept",
+      "title": "Creative Coding",
+      "route": "/knowledge/concepts/creative-coding/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:concept:digital-preservation",
+      "type": "concept",
+      "title": "Digital Preservation",
+      "route": "/knowledge/concepts/digital-preservation/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:concept:internet-culture",
+      "type": "concept",
+      "title": "Internet Culture",
+      "route": "/knowledge/concepts/internet-culture/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:concept:open-source",
+      "type": "concept",
+      "title": "Open Source",
+      "route": "/knowledge/concepts/open-source/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:publication:open-source-as-cultural-infrastructure",
+      "type": "publication",
+      "title": "Open Source as Cultural Infrastructure",
+      "route": "/publications/open-source-as-cultural-infrastructure/",
+      "status": "active",
+      "confidence": "published"
+    }
+  ],
+  "edges": [
+    {
+      "id": "ear:open-source-article-documents-open-source",
+      "source": "ea:publication:open-source-as-cultural-infrastructure",
+      "target": "ea:concept:open-source",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Open Source as Cultural Infrastructure documents open source as a licensing, maintenance and cultural infrastructure practice.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:open-source-article-documents-creative-coding",
+      "source": "ea:publication:open-source-as-cultural-infrastructure",
+      "target": "ea:concept:creative-coding",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Open Source as Cultural Infrastructure connects open source to creative coding tools and pedagogy.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:open-source-article-documents-internet-culture",
+      "source": "ea:publication:open-source-as-cultural-infrastructure",
+      "target": "ea:concept:internet-culture",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Open Source as Cultural Infrastructure frames open collaboration as part of broader internet culture.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:open-source-article-documents-digital-preservation",
+      "source": "ea:publication:open-source-as-cultural-infrastructure",
+      "target": "ea:concept:digital-preservation",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Open Source as Cultural Infrastructure connects software access and maintenance to preservation concerns.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:knowledge-hub-second-wave-has-open-source-article",
+      "source": "ea:collection:knowledge-hub-second-wave",
+      "target": "ea:publication:open-source-as-cultural-infrastructure",
+      "predicate": "hasPart",
+      "label": "Has part",
+      "statement": "Knowledge Hub Second Wave includes Open Source as Cultural Infrastructure as a core article.",
+      "confidence": "published"
+    }
+  ]
+}

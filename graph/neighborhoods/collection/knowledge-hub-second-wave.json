@@ -1,0 +1,221 @@
+{
+  "id": "local:ea:collection:knowledge-hub-second-wave",
+  "kind": "local",
+  "focus": "ea:collection:knowledge-hub-second-wave",
+  "nodes": [
+    {
+      "id": "ea:collection:knowledge-hub-second-wave",
+      "type": "collection",
+      "title": "Knowledge Hub Second Wave",
+      "route": "/archive/collections/knowledge-hub-second-wave/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:algorithmic-composition-and-rule-based-music",
+      "type": "publication",
+      "title": "Algorithmic Composition and Rule-Based Music",
+      "route": "/publications/algorithmic-composition-and-rule-based-music/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:creative-coding-pedagogy-from-logo-to-p5js",
+      "type": "publication",
+      "title": "Creative Coding Pedagogy from Logo to p5.js",
+      "route": "/publications/creative-coding-pedagogy-from-logo-to-p5js/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:generative-ai-latent-space-and-creative-workflows",
+      "type": "publication",
+      "title": "Generative AI, Latent Space and Creative Workflows",
+      "route": "/publications/generative-ai-latent-space-and-creative-workflows/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:human-computer-interaction-for-creative-tools",
+      "type": "publication",
+      "title": "Human Computer Interaction for Creative Tools",
+      "route": "/publications/human-computer-interaction-for-creative-tools/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:hypertext-and-augmented-knowledge-systems",
+      "type": "publication",
+      "title": "Hypertext and Augmented Knowledge Systems",
+      "route": "/publications/hypertext-and-augmented-knowledge-systems/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:metadata-cataloguing-and-cultural-memory",
+      "type": "publication",
+      "title": "Metadata, Cataloguing and Cultural Memory",
+      "route": "/publications/metadata-cataloguing-and-cultural-memory/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:motion-design-time-and-interface-semantics",
+      "type": "publication",
+      "title": "Motion Design, Time and Interface Semantics",
+      "route": "/publications/motion-design-time-and-interface-semantics/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:open-source-as-cultural-infrastructure",
+      "type": "publication",
+      "title": "Open Source as Cultural Infrastructure",
+      "route": "/publications/open-source-as-cultural-infrastructure/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:personal-knowledge-systems-and-digital-gardens",
+      "type": "publication",
+      "title": "Personal Knowledge Systems and Digital Gardens",
+      "route": "/publications/personal-knowledge-systems-and-digital-gardens/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:procedural-graphics-shaders-and-visual-systems",
+      "type": "publication",
+      "title": "Procedural Graphics, Shaders and Visual Systems",
+      "route": "/publications/procedural-graphics-shaders-and-visual-systems/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:typography-reading-systems-and-digital-interfaces",
+      "type": "publication",
+      "title": "Typography, Reading Systems and Digital Interfaces",
+      "route": "/publications/typography-reading-systems-and-digital-interfaces/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:web-audio-and-browser-based-sound-systems",
+      "type": "publication",
+      "title": "Web Audio and Browser-Based Sound Systems",
+      "route": "/publications/web-audio-and-browser-based-sound-systems/",
+      "status": "active",
+      "confidence": "published"
+    }
+  ],
+  "edges": [
+    {
+      "id": "ear:knowledge-hub-second-wave-has-hypertext-article",
+      "source": "ea:collection:knowledge-hub-second-wave",
+      "target": "ea:publication:hypertext-and-augmented-knowledge-systems",
+      "predicate": "hasPart",
+      "label": "Has part",
+      "statement": "Knowledge Hub Second Wave includes Hypertext and Augmented Knowledge Systems as a core article.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:knowledge-hub-second-wave-has-personal-knowledge-article",
+      "source": "ea:collection:knowledge-hub-second-wave",
+      "target": "ea:publication:personal-knowledge-systems-and-digital-gardens",
+      "predicate": "hasPart",
+      "label": "Has part",
+      "statement": "Knowledge Hub Second Wave includes Personal Knowledge Systems and Digital Gardens as a core article.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:knowledge-hub-second-wave-has-open-source-article",
+      "source": "ea:collection:knowledge-hub-second-wave",
+      "target": "ea:publication:open-source-as-cultural-infrastructure",
+      "predicate": "hasPart",
+      "label": "Has part",
+      "statement": "Knowledge Hub Second Wave includes Open Source as Cultural Infrastructure as a core article.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:knowledge-hub-second-wave-has-metadata-article",
+      "source": "ea:collection:knowledge-hub-second-wave",
+      "target": "ea:publication:metadata-cataloguing-and-cultural-memory",
+      "predicate": "hasPart",
+      "label": "Has part",
+      "statement": "Knowledge Hub Second Wave includes Metadata, Cataloguing and Cultural Memory as a core article.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:knowledge-hub-second-wave-has-web-audio-article",
+      "source": "ea:collection:knowledge-hub-second-wave",
+      "target": "ea:publication:web-audio-and-browser-based-sound-systems",
+      "predicate": "hasPart",
+      "label": "Has part",
+      "statement": "Knowledge Hub Second Wave includes Web Audio and Browser-Based Sound Systems as a core article.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:knowledge-hub-second-wave-has-creative-coding-pedagogy-article",
+      "source": "ea:collection:knowledge-hub-second-wave",
+      "target": "ea:publication:creative-coding-pedagogy-from-logo-to-p5js",
+      "predicate": "hasPart",
+      "label": "Has part",
+      "statement": "Knowledge Hub Second Wave includes Creative Coding Pedagogy from Logo to p5.js as a core article.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:knowledge-hub-second-wave-has-procedural-graphics-article",
+      "source": "ea:collection:knowledge-hub-second-wave",
+      "target": "ea:publication:procedural-graphics-shaders-and-visual-systems",
+      "predicate": "hasPart",
+      "label": "Has part",
+      "statement": "Knowledge Hub Second Wave includes Procedural Graphics, Shaders and Visual Systems as a core article.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:knowledge-hub-second-wave-has-motion-design-article",
+      "source": "ea:collection:knowledge-hub-second-wave",
+      "target": "ea:publication:motion-design-time-and-interface-semantics",
+      "predicate": "hasPart",
+      "label": "Has part",
+      "statement": "Knowledge Hub Second Wave includes Motion Design, Time and Interface Semantics as a core article.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:knowledge-hub-second-wave-has-typography-article",
+      "source": "ea:collection:knowledge-hub-second-wave",
+      "target": "ea:publication:typography-reading-systems-and-digital-interfaces",
+      "predicate": "hasPart",
+      "label": "Has part",
+      "statement": "Knowledge Hub Second Wave includes Typography, Reading Systems and Digital Interfaces as a core article.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:knowledge-hub-second-wave-has-hci-article",
+      "source": "ea:collection:knowledge-hub-second-wave",
+      "target": "ea:publication:human-computer-interaction-for-creative-tools",
+      "predicate": "hasPart",
+      "label": "Has part",
+      "statement": "Knowledge Hub Second Wave includes Human Computer Interaction for Creative Tools as a core article.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:knowledge-hub-second-wave-has-algorithmic-composition-article",
+      "source": "ea:collection:knowledge-hub-second-wave",
+      "target": "ea:publication:algorithmic-composition-and-rule-based-music",
+      "predicate": "hasPart",
+      "label": "Has part",
+      "statement": "Knowledge Hub Second Wave includes Algorithmic Composition and Rule-Based Music as a core article.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:knowledge-hub-second-wave-has-generative-ai-article",
+      "source": "ea:collection:knowledge-hub-second-wave",
+      "target": "ea:publication:generative-ai-latent-space-and-creative-workflows",
+      "predicate": "hasPart",
+      "label": "Has part",
+      "statement": "Knowledge Hub Second Wave includes Generative AI, Latent Space and Creative Workflows as a core article.",
+      "confidence": "published"
+    }
+  ]
+}

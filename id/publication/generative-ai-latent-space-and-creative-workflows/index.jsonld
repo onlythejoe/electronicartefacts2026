@@ -1,0 +1,65 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://electronicartefacts.com/publications/generative-ai-latent-space-and-creative-workflows/#webpage",
+      "url": "https://electronicartefacts.com/publications/generative-ai-latent-space-and-creative-workflows/",
+      "name": "Generative AI, Latent Space and Creative Workflows",
+      "mainEntity": {
+        "@id": "https://electronicartefacts.com/id/publication/generative-ai-latent-space-and-creative-workflows/"
+      },
+      "isPartOf": {
+        "@id": "https://electronicartefacts.com/#website"
+      }
+    },
+    {
+      "@type": "TechArticle",
+      "@id": "https://electronicartefacts.com/id/publication/generative-ai-latent-space-and-creative-workflows/",
+      "name": "Generative AI, Latent Space and Creative Workflows",
+      "description": "This article explains generative AI as a creative workflow topic, covering latent spaces, prompts, provenance, risk, evaluation, authorship and Electronic Artefacts systems.",
+      "url": "https://electronicartefacts.com/publications/generative-ai-latent-space-and-creative-workflows/",
+      "dateCreated": "2026-06-24",
+      "datePublished": "2026-06-24",
+      "dateModified": "2026-06-24",
+      "publisher": {
+        "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
+      },
+      "citation": "Electronic Artefacts. \"Generative AI, Latent Space and Creative Workflows.\" Technical article, version 1.0.0, 2026.",
+      "about": [
+        {
+          "@id": "https://electronicartefacts.com/id/concept/generative-ai/"
+        },
+        {
+          "@id": "https://electronicartefacts.com/id/concept/augmented-intelligence/"
+        },
+        {
+          "@id": "https://electronicartefacts.com/id/concept/provenance/"
+        },
+        {
+          "@id": "https://electronicartefacts.com/id/concept/generative-system/"
+        },
+        {
+          "@id": "https://electronicartefacts.com/id/concept/human-computer-interaction/"
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Electronic Artefacts",
+          "item": "https://electronicartefacts.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Generative AI, Latent Space and Creative Workflows",
+          "item": "https://electronicartefacts.com/publications/generative-ai-latent-space-and-creative-workflows/"
+        }
+      ]
+    }
+  ]
+}

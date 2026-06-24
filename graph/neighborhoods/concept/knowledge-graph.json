@@ -20,6 +20,14 @@
       "confidence": "observed"
     },
     {
+      "id": "ea:publication:hypertext-and-augmented-knowledge-systems",
+      "type": "publication",
+      "title": "Hypertext and Augmented Knowledge Systems",
+      "route": "/publications/hypertext-and-augmented-knowledge-systems/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
       "id": "ea:publication:knowledge-graphs-for-cultural-infrastructure",
       "type": "publication",
       "title": "Knowledge Graphs for Cultural Infrastructure",
@@ -45,6 +53,15 @@
       "predicate": "documents",
       "label": "Documents",
       "statement": "Knowledge Graphs for Cultural Infrastructure documents the knowledge-graph concept for cultural publishing.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:hypertext-article-documents-knowledge-graph",
+      "source": "ea:publication:hypertext-and-augmented-knowledge-systems",
+      "target": "ea:concept:knowledge-graph",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Hypertext and Augmented Knowledge Systems explains how knowledge graphs strengthen linked pages with explicit relations.",
       "confidence": "published"
     }
   ]

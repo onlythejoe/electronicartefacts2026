@@ -1,0 +1,47 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://electronicartefacts.com/knowledge/concepts/procedural-graphics/#webpage",
+      "url": "https://electronicartefacts.com/knowledge/concepts/procedural-graphics/",
+      "name": "Procedural Graphics",
+      "mainEntity": {
+        "@id": "https://electronicartefacts.com/id/concept/procedural-graphics/"
+      },
+      "isPartOf": {
+        "@id": "https://electronicartefacts.com/#website"
+      }
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://electronicartefacts.com/id/concept/procedural-graphics/",
+      "name": "Procedural Graphics",
+      "description": "Procedural graphics are images or visual systems generated from rules, algorithms, parameters, simulation or code rather than only manually drawn assets.",
+      "url": "https://electronicartefacts.com/knowledge/concepts/procedural-graphics/",
+      "dateCreated": "2026-06-24",
+      "datePublished": "2026-06-24",
+      "dateModified": "2026-06-24",
+      "publisher": {
+        "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Electronic Artefacts",
+          "item": "https://electronicartefacts.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Procedural Graphics",
+          "item": "https://electronicartefacts.com/knowledge/concepts/procedural-graphics/"
+        }
+      ]
+    }
+  ]
+}

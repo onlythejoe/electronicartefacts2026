@@ -1,0 +1,65 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://electronicartefacts.com/publications/algorithmic-composition-and-rule-based-music/#webpage",
+      "url": "https://electronicartefacts.com/publications/algorithmic-composition-and-rule-based-music/",
+      "name": "Algorithmic Composition and Rule-Based Music",
+      "mainEntity": {
+        "@id": "https://electronicartefacts.com/id/publication/algorithmic-composition-and-rule-based-music/"
+      },
+      "isPartOf": {
+        "@id": "https://electronicartefacts.com/#website"
+      }
+    },
+    {
+      "@type": "TechArticle",
+      "@id": "https://electronicartefacts.com/id/publication/algorithmic-composition-and-rule-based-music/",
+      "name": "Algorithmic Composition and Rule-Based Music",
+      "description": "This article explains algorithmic composition through rules, stochastic methods, cybernetics, electronic music, creative coding, generative systems and ORETH.",
+      "url": "https://electronicartefacts.com/publications/algorithmic-composition-and-rule-based-music/",
+      "dateCreated": "2026-06-24",
+      "datePublished": "2026-06-24",
+      "dateModified": "2026-06-24",
+      "publisher": {
+        "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
+      },
+      "citation": "Electronic Artefacts. \"Algorithmic Composition and Rule-Based Music.\" Technical article, version 1.0.0, 2026.",
+      "about": [
+        {
+          "@id": "https://electronicartefacts.com/id/concept/algorithmic-composition/"
+        },
+        {
+          "@id": "https://electronicartefacts.com/id/concept/generative-system/"
+        },
+        {
+          "@id": "https://electronicartefacts.com/id/concept/cybernetic-feedback/"
+        },
+        {
+          "@id": "https://electronicartefacts.com/id/program/oreth/"
+        },
+        {
+          "@id": "https://electronicartefacts.com/id/concept/web-audio/"
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Electronic Artefacts",
+          "item": "https://electronicartefacts.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Algorithmic Composition and Rule-Based Music",
+          "item": "https://electronicartefacts.com/publications/algorithmic-composition-and-rule-based-music/"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,65 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://electronicartefacts.com/publications/personal-knowledge-systems-and-digital-gardens/#webpage",
+      "url": "https://electronicartefacts.com/publications/personal-knowledge-systems-and-digital-gardens/",
+      "name": "Personal Knowledge Systems and Digital Gardens",
+      "mainEntity": {
+        "@id": "https://electronicartefacts.com/id/publication/personal-knowledge-systems-and-digital-gardens/"
+      },
+      "isPartOf": {
+        "@id": "https://electronicartefacts.com/#website"
+      }
+    },
+    {
+      "@type": "TechArticle",
+      "@id": "https://electronicartefacts.com/id/publication/personal-knowledge-systems-and-digital-gardens/",
+      "name": "Personal Knowledge Systems and Digital Gardens",
+      "description": "This article explains personal knowledge systems and digital gardens as durable practices for notes, sources, backlinks, revision, public learning and research libraries.",
+      "url": "https://electronicartefacts.com/publications/personal-knowledge-systems-and-digital-gardens/",
+      "dateCreated": "2026-06-24",
+      "datePublished": "2026-06-24",
+      "dateModified": "2026-06-24",
+      "publisher": {
+        "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
+      },
+      "citation": "Electronic Artefacts. \"Personal Knowledge Systems and Digital Gardens.\" Technical article, version 1.0.0, 2026.",
+      "about": [
+        {
+          "@id": "https://electronicartefacts.com/id/concept/personal-knowledge-system/"
+        },
+        {
+          "@id": "https://electronicartefacts.com/id/concept/hypertext/"
+        },
+        {
+          "@id": "https://electronicartefacts.com/id/concept/knowledge-graph/"
+        },
+        {
+          "@id": "https://electronicartefacts.com/id/concept/metadata/"
+        },
+        {
+          "@id": "https://electronicartefacts.com/id/concept/digital-preservation/"
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Electronic Artefacts",
+          "item": "https://electronicartefacts.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Personal Knowledge Systems and Digital Gardens",
+          "item": "https://electronicartefacts.com/publications/personal-knowledge-systems-and-digital-gardens/"
+        }
+      ]
+    }
+  ]
+}

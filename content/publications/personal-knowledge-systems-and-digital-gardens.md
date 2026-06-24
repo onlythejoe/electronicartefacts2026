@@ -1,0 +1,219 @@
+---
+id: ea:publication:personal-knowledge-systems-and-digital-gardens
+type: publication
+slug:
+  canonical: personal-knowledge-systems-and-digital-gardens
+title: Personal Knowledge Systems and Digital Gardens
+subtitle: Technical Article
+abstract: This article explains personal knowledge systems and digital gardens as durable practices for notes, sources, backlinks, revision, public learning and research libraries.
+description: A technical article on personal knowledge systems, digital gardens, backlinks, research memory and public knowledge hubs.
+locale: en
+visibility: public
+publicationClass: published
+status: active
+maturity: research
+confidence: published
+version:
+  version: 1.0.0
+  createdAt: "2026-06-24"
+  publishedAt: "2026-06-24"
+  modifiedAt: "2026-06-24"
+authors:
+  - id: ea:organization:electronic-artefacts
+publisher: ea:organization:electronic-artefacts
+format: technicalArticle
+subjects:
+  - id: ea:concept:personal-knowledge-system
+  - id: ea:concept:hypertext
+  - id: ea:concept:knowledge-graph
+  - id: ea:concept:metadata
+  - id: ea:concept:digital-preservation
+claims:
+  - A knowledge system becomes useful when notes are linked, revised and retrieved, not merely captured.
+  - Public knowledge hubs can adapt digital-garden practices while adding editorial standards and source validation.
+evidence:
+  - id: ea:concept:personal-knowledge-system
+  - id: ea:collection:knowledge-hub-foundations
+sources:
+  - title: As We May Think
+    author: Vannevar Bush
+    publisher: The Atlantic
+    publishedAt: "1945-07-01"
+    accessedAt: "2026-06-24"
+    url: https://www.theatlantic.com/magazine/archive/1945/07/as-we-may-think/303881/
+  - title: DCMI Metadata Terms
+    publisher: Dublin Core Metadata Initiative
+    publishedAt: "2020-01-20"
+    accessedAt: "2026-06-24"
+    url: https://www.dublincore.org/specifications/dublin-core/dcmi-terms/
+citation:
+  preferred: "Electronic Artefacts. \"Personal Knowledge Systems and Digital Gardens.\" Technical article, version 1.0.0, 2026."
+tags:
+  - Personal Knowledge Management
+  - Digital Gardens
+  - Backlinks
+  - Research Methods
+disciplines:
+  - Knowledge Systems
+  - Research Methods
+  - Internet Culture
+  - Archives
+---
+
+## Problem
+
+People collect more information than they can use. Notes accumulate in applications, bookmarks vanish into folders, PDFs sit unread, conversations become impossible to find, and ideas repeat because earlier versions were never connected to later work. The problem is not only storage. The problem is retrieval, relation and revision.
+
+A personal knowledge system attempts to solve this at individual scale. A digital garden brings part of that practice into public. It treats knowledge as something cultivated over time rather than published once and abandoned.
+
+Electronic Artefacts has a related challenge at institutional scale. The Knowledge Hub needs to absorb research, projects, programs, concepts and sources without becoming a pile of pages. It needs the strengths of personal knowledge systems but with public editorial accountability.
+
+## Introduction
+
+A personal knowledge system is a practice for capturing, linking, revising and retrieving knowledge. It may use notebooks, wikis, graph tools, plain text, databases or static pages. The tools matter, but the practice matters more.
+
+A digital garden is a public or semi-public knowledge space where notes can grow. It often favors interlinking, topic pages, revision and non-chronological navigation over polished feed-based publishing.
+
+The Knowledge Hub can use this pattern without becoming informal. It can publish complete articles while still showing relations, concepts, sources and future paths.
+
+## Context
+
+The digital garden metaphor became popular because it resisted the pressure of feeds and finished announcements. A garden can have seedlings, evergreen pages and mature essays. That vocabulary is useful, but it can also become vague. A serious knowledge hub needs clearer status, maturity and evidence markers.
+
+Electronic Artefacts already has those markers in its entity schema: publication class, status, maturity, confidence, version, sources, subjects and typed relations. That gives the site a way to combine garden-like growth with library-like discipline.
+
+## History
+
+Personal knowledge systems have roots in commonplace books, scholarly notebooks, card indexes, research diaries, citation managers, wikis and hypertext. Bush's associative trails and Engelbart's augmentation framework belong to the same lineage. The goal is not simply to remember. The goal is to extend thought through external structure.
+
+Digital gardens update this lineage for the web. They make revision, linking and topical organization visible. A garden page may begin as a rough note and become a reference article. A knowledge hub can adopt the same life cycle if it is transparent about confidence and maturity.
+
+## Core concepts
+
+Capture: storing a note, source, observation or idea.
+
+Linking: connecting the note to related concepts and records.
+
+Synthesis: rewriting fragments into clearer understanding.
+
+Retrieval: finding the right note at the right time.
+
+Revision: improving a page as knowledge changes.
+
+Publication state: the declared maturity of a public record.
+
+## Architecture
+
+A durable knowledge system needs input, processing and output. Input includes notes, sources, conversations, code, media and project records. Processing includes tagging, linking, summarizing, evaluating and rewriting. Output includes articles, concept pages, source guides, glossaries and graph relations.
+
+The most important architectural distinction is between capture and publication. Capture can be messy. Publication should be legible. Electronic Artefacts can keep internal notes private while turning mature material into public records.
+
+## Implementation
+
+Implementation begins with consistent frontmatter. Every public record should identify its type, subject, date, maturity, sources and related entities. Notes can become articles when they have enough context, structure and evidence.
+
+Backlinks and graph neighborhoods should not replace editorial judgment. They are discovery tools. The article itself should explain why connections matter.
+
+Collections can act as maps. Knowledge Hub Foundations and Knowledge Hub Second Wave give readers curated paths through many records.
+
+## Practical applications
+
+For research, a knowledge system prevents repeated work. Earlier notes remain discoverable.
+
+For SEO, stable topic pages accumulate relevance over time.
+
+For AI retrieval, structured pages provide clearer entities, claims and sources.
+
+For Electronic Artefacts, the system turns projects into knowledge. VASTE becomes not only a program but a node in Runtime Theory. ORETH becomes not only audio research but part of a network around signal, listening and generative systems.
+
+## Tools
+
+Useful tools include plain-text notes, Markdown, static site generators, backlinks, graph databases, citation managers, source records, search indexes, version control, schema validation and periodic content audits.
+
+## Evidence
+
+Electronic Artefacts already uses structured content and typed relations. The first Knowledge Hub wave demonstrated that concepts, articles, projects and programs can reinforce one another. The second wave extends that method across broader evergreen fields.
+
+## Editorial method
+
+A public knowledge page should have a clear role. It may define a concept, explain a method, document a project, synthesize a field or curate sources. Mixing those roles without naming them creates confusion.
+
+The editor should also prune. A knowledge system improves when duplicate notes are merged, weak tags are removed and unclear links are rewritten.
+
+## Common mistakes
+
+The first mistake is capturing everything. More notes do not automatically create more knowledge.
+
+The second mistake is over-visualizing the graph. A graph view can be beautiful while hiding the absence of strong writing.
+
+The third mistake is treating rough notes as public authority. Public knowledge pages should tell the reader how mature and sourced they are.
+
+## Electronic Artefacts implications
+
+Electronic Artefacts can use personal knowledge system principles as a production method. Research fragments should be captured, then promoted into concepts, articles, methods or archive records when they become useful.
+
+The Knowledge Hub should remain open enough to grow and rigorous enough to be trusted.
+
+## Knowledge graph role
+
+The knowledge graph changes the digital garden pattern in an important way. A garden usually relies on visible links and authorial memory. A graph adds stable identities and relation types. This means an article can be connected to a concept, source, project or program in a way that machines can validate and readers can inspect.
+
+For Electronic Artefacts, this prevents the Knowledge Hub from becoming a purely personal archive. The site can still grow through notes and revisions, but public records have declared type, maturity, confidence and source context. That combination is useful for humans who want orientation and for AI systems that need structured retrieval.
+
+## Evaluation criteria
+
+A knowledge system can be evaluated by five practical questions.
+
+Can a reader find the page again through search, navigation or related links?
+
+Does the page connect to the right concepts without over-linking?
+
+Does the page identify its sources and maturity?
+
+Does it reduce duplication by strengthening existing entities?
+
+Can it be revised later without breaking the public URL?
+
+These criteria keep the system grounded. A digital garden metaphor is helpful only if it produces better long-term memory.
+
+## Reader pathway
+
+A useful reader pathway begins with a practical question: how do I keep ideas connected over time? From there, the article should guide the reader toward [Hypertext](/knowledge/concepts/hypertext/), [Metadata](/knowledge/concepts/metadata/) and [Digital Preservation](/knowledge/concepts/digital-preservation/). This route turns a familiar productivity topic into a deeper architecture of memory and publication.
+
+## Future work
+
+Future entries should cover source triage, note taxonomies, backlink hygiene, concept maturity, editorial pruning, public research logs and AI-readable knowledge pages.
+
+## Related concepts
+
+Read [Personal Knowledge System](/knowledge/concepts/personal-knowledge-system/), [Hypertext](/knowledge/concepts/hypertext/), [Knowledge Graph](/knowledge/concepts/knowledge-graph/), [Metadata](/knowledge/concepts/metadata/) and [Digital Preservation](/knowledge/concepts/digital-preservation/).
+
+## Suggested reading
+
+Start with hypertext history, then study metadata and preservation practices. A knowledge garden without metadata becomes difficult to maintain.
+
+## Related articles
+
+Continue with [Hypertext and Augmented Knowledge Systems](/publications/hypertext-and-augmented-knowledge-systems/) and [Metadata, Cataloguing and Cultural Memory](/publications/metadata-cataloguing-and-cultural-memory/).
+
+## Glossary
+
+Backlink: a link from another page back to the current page.
+
+Digital garden: a public knowledge space that grows over time.
+
+Evergreen note: a note maintained as reusable knowledge.
+
+Maturity: the declared development state of a record.
+
+## Limitations
+
+Personal knowledge practices do not automatically scale to public libraries. Public systems need permissions, editorial review, source standards and long-term maintenance.
+
+They also need restraint. Not every note deserves publication.
+
+## References
+
+- Vannevar Bush. As We May Think. 1945.
+- Dublin Core Metadata Initiative. DCMI Metadata Terms. 2020.
+- Electronic Artefacts. Knowledge Hub Foundations and Knowledge Graph records.

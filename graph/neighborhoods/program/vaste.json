@@ -60,6 +60,14 @@
       "confidence": "published"
     },
     {
+      "id": "ea:publication:human-computer-interaction-for-creative-tools",
+      "type": "publication",
+      "title": "Human Computer Interaction for Creative Tools",
+      "route": "/publications/human-computer-interaction-for-creative-tools/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
       "id": "ea:researchField:runtime-theory",
       "type": "researchField",
       "title": "Runtime Theory",
@@ -94,6 +102,15 @@
       "predicate": "documents",
       "label": "Documents",
       "statement": "Contextual Execution and Graph Runtimes uses VASTE as the program context for graph runtime execution.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:hci-article-documents-vaste",
+      "source": "ea:publication:human-computer-interaction-for-creative-tools",
+      "target": "ea:program:vaste",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Human Computer Interaction for Creative Tools uses VASTE as a context for graph-aware creative systems.",
       "confidence": "published"
     },
     {

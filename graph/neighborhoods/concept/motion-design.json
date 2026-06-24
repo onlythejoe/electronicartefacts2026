@@ -1,0 +1,68 @@
+{
+  "id": "local:ea:concept:motion-design",
+  "kind": "local",
+  "focus": "ea:concept:motion-design",
+  "nodes": [
+    {
+      "id": "ea:concept:motion-design",
+      "type": "concept",
+      "title": "Motion Design",
+      "route": "/knowledge/concepts/motion-design/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:publication:human-computer-interaction-for-creative-tools",
+      "type": "publication",
+      "title": "Human Computer Interaction for Creative Tools",
+      "route": "/publications/human-computer-interaction-for-creative-tools/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:motion-design-time-and-interface-semantics",
+      "type": "publication",
+      "title": "Motion Design, Time and Interface Semantics",
+      "route": "/publications/motion-design-time-and-interface-semantics/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:procedural-graphics-shaders-and-visual-systems",
+      "type": "publication",
+      "title": "Procedural Graphics, Shaders and Visual Systems",
+      "route": "/publications/procedural-graphics-shaders-and-visual-systems/",
+      "status": "active",
+      "confidence": "published"
+    }
+  ],
+  "edges": [
+    {
+      "id": "ear:procedural-graphics-article-documents-motion-design",
+      "source": "ea:publication:procedural-graphics-shaders-and-visual-systems",
+      "target": "ea:concept:motion-design",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Procedural Graphics, Shaders and Visual Systems connects procedural visuals to motion design and time-based behavior.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:motion-design-article-documents-motion-design",
+      "source": "ea:publication:motion-design-time-and-interface-semantics",
+      "target": "ea:concept:motion-design",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Motion Design, Time and Interface Semantics documents motion design as interface semantics.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:hci-article-documents-motion-design",
+      "source": "ea:publication:human-computer-interaction-for-creative-tools",
+      "target": "ea:concept:motion-design",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Human Computer Interaction for Creative Tools links feedback and state communication to motion design.",
+      "confidence": "published"
+    }
+  ]
+}

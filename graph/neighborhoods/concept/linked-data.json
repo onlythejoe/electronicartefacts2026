@@ -12,6 +12,14 @@
       "confidence": "validated"
     },
     {
+      "id": "ea:publication:hypertext-and-augmented-knowledge-systems",
+      "type": "publication",
+      "title": "Hypertext and Augmented Knowledge Systems",
+      "route": "/publications/hypertext-and-augmented-knowledge-systems/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
       "id": "ea:publication:linked-data-and-public-knowledge-pages",
       "type": "publication",
       "title": "Linked Data and Public Knowledge Pages",
@@ -28,6 +36,15 @@
       "predicate": "documents",
       "label": "Documents",
       "statement": "Linked Data and Public Knowledge Pages documents Linked Data as a publishing discipline for public knowledge pages.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:hypertext-article-documents-linked-data",
+      "source": "ea:publication:hypertext-and-augmented-knowledge-systems",
+      "target": "ea:concept:linked-data",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Hypertext and Augmented Knowledge Systems links hypertext practice to Linked Data and stable identifiers.",
       "confidence": "published"
     }
   ]

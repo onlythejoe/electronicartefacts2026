@@ -1,0 +1,47 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://electronicartefacts.com/knowledge/technologies/webgl/#webpage",
+      "url": "https://electronicartefacts.com/knowledge/technologies/webgl/",
+      "name": "WebGL",
+      "mainEntity": {
+        "@id": "https://electronicartefacts.com/id/technology/webgl/"
+      },
+      "isPartOf": {
+        "@id": "https://electronicartefacts.com/#website"
+      }
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://electronicartefacts.com/id/technology/webgl/",
+      "name": "WebGL",
+      "description": "WebGL is a web platform technology for rendering interactive 2D and 3D graphics in compatible browsers using GPU acceleration.",
+      "url": "https://electronicartefacts.com/knowledge/technologies/webgl/",
+      "dateCreated": "2026-06-24",
+      "datePublished": "2026-06-24",
+      "dateModified": "2026-06-24",
+      "publisher": {
+        "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Electronic Artefacts",
+          "item": "https://electronicartefacts.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "WebGL",
+          "item": "https://electronicartefacts.com/knowledge/technologies/webgl/"
+        }
+      ]
+    }
+  ]
+}

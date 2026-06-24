@@ -1,0 +1,102 @@
+{
+  "id": "local:ea:publication:procedural-graphics-shaders-and-visual-systems",
+  "kind": "local",
+  "focus": "ea:publication:procedural-graphics-shaders-and-visual-systems",
+  "nodes": [
+    {
+      "id": "ea:collection:knowledge-hub-second-wave",
+      "type": "collection",
+      "title": "Knowledge Hub Second Wave",
+      "route": "/archive/collections/knowledge-hub-second-wave/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:concept:generative-system",
+      "type": "concept",
+      "title": "Generative System",
+      "route": "/knowledge/concepts/generative-system/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:concept:motion-design",
+      "type": "concept",
+      "title": "Motion Design",
+      "route": "/knowledge/concepts/motion-design/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:concept:procedural-graphics",
+      "type": "concept",
+      "title": "Procedural Graphics",
+      "route": "/knowledge/concepts/procedural-graphics/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:publication:procedural-graphics-shaders-and-visual-systems",
+      "type": "publication",
+      "title": "Procedural Graphics, Shaders and Visual Systems",
+      "route": "/publications/procedural-graphics-shaders-and-visual-systems/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:technology:webgl",
+      "type": "technology",
+      "title": "WebGL",
+      "route": "/knowledge/technologies/webgl/",
+      "status": "active",
+      "confidence": "canonical"
+    }
+  ],
+  "edges": [
+    {
+      "id": "ear:procedural-graphics-article-documents-procedural-graphics",
+      "source": "ea:publication:procedural-graphics-shaders-and-visual-systems",
+      "target": "ea:concept:procedural-graphics",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Procedural Graphics, Shaders and Visual Systems documents procedural graphics as a rule-based visual practice.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:procedural-graphics-article-uses-webgl",
+      "source": "ea:publication:procedural-graphics-shaders-and-visual-systems",
+      "target": "ea:technology:webgl",
+      "predicate": "usesTechnology",
+      "label": "Uses technology",
+      "statement": "Procedural Graphics, Shaders and Visual Systems uses WebGL as the browser graphics reference technology.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:procedural-graphics-article-documents-generative-system",
+      "source": "ea:publication:procedural-graphics-shaders-and-visual-systems",
+      "target": "ea:concept:generative-system",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Procedural Graphics, Shaders and Visual Systems links procedural visuals to generative-system thinking.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:procedural-graphics-article-documents-motion-design",
+      "source": "ea:publication:procedural-graphics-shaders-and-visual-systems",
+      "target": "ea:concept:motion-design",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Procedural Graphics, Shaders and Visual Systems connects procedural visuals to motion design and time-based behavior.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:knowledge-hub-second-wave-has-procedural-graphics-article",
+      "source": "ea:collection:knowledge-hub-second-wave",
+      "target": "ea:publication:procedural-graphics-shaders-and-visual-systems",
+      "predicate": "hasPart",
+      "label": "Has part",
+      "statement": "Knowledge Hub Second Wave includes Procedural Graphics, Shaders and Visual Systems as a core article.",
+      "confidence": "published"
+    }
+  ]
+}

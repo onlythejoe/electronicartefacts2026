@@ -1,0 +1,62 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://electronicartefacts.com/publications/motion-design-time-and-interface-semantics/#webpage",
+      "url": "https://electronicartefacts.com/publications/motion-design-time-and-interface-semantics/",
+      "name": "Motion Design, Time and Interface Semantics",
+      "mainEntity": {
+        "@id": "https://electronicartefacts.com/id/publication/motion-design-time-and-interface-semantics/"
+      },
+      "isPartOf": {
+        "@id": "https://electronicartefacts.com/#website"
+      }
+    },
+    {
+      "@type": "TechArticle",
+      "@id": "https://electronicartefacts.com/id/publication/motion-design-time-and-interface-semantics/",
+      "name": "Motion Design, Time and Interface Semantics",
+      "description": "This article explains motion design as a semantic layer for digital interfaces, connecting time, transition, attention, accessibility and Web Animations.",
+      "url": "https://electronicartefacts.com/publications/motion-design-time-and-interface-semantics/",
+      "dateCreated": "2026-06-24",
+      "datePublished": "2026-06-24",
+      "dateModified": "2026-06-24",
+      "publisher": {
+        "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
+      },
+      "citation": "Electronic Artefacts. \"Motion Design, Time and Interface Semantics.\" Technical article, version 1.0.0, 2026.",
+      "about": [
+        {
+          "@id": "https://electronicartefacts.com/id/concept/motion-design/"
+        },
+        {
+          "@id": "https://electronicartefacts.com/id/technology/web-animations/"
+        },
+        {
+          "@id": "https://electronicartefacts.com/id/concept/human-computer-interaction/"
+        },
+        {
+          "@id": "https://electronicartefacts.com/id/concept/typography/"
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Electronic Artefacts",
+          "item": "https://electronicartefacts.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Motion Design, Time and Interface Semantics",
+          "item": "https://electronicartefacts.com/publications/motion-design-time-and-interface-semantics/"
+        }
+      ]
+    }
+  ]
+}

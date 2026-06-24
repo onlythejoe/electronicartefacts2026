@@ -1,0 +1,113 @@
+{
+  "id": "ea:publication:typography-reading-systems-and-digital-interfaces",
+  "type": "publication",
+  "slug": {
+    "canonical": "typography-reading-systems-and-digital-interfaces"
+  },
+  "title": "Typography, Reading Systems and Digital Interfaces",
+  "subtitle": "Technical Article",
+  "abstract": "This article explains typography as infrastructure for digital reading, connecting type, layout, hierarchy, accessibility, CSS Fonts and long-form knowledge publishing.",
+  "description": "A technical article on typography, reading systems, web interfaces, accessibility and Electronic Artefacts editorial design.",
+  "locale": "en",
+  "visibility": "public",
+  "publicationClass": "published",
+  "status": "active",
+  "maturity": "research",
+  "confidence": "published",
+  "version": {
+    "version": "1.0.0",
+    "createdAt": "2026-06-24",
+    "publishedAt": "2026-06-24",
+    "modifiedAt": "2026-06-24"
+  },
+  "authors": [
+    {
+      "id": "ea:organization:electronic-artefacts"
+    }
+  ],
+  "publisher": "ea:organization:electronic-artefacts",
+  "tags": [
+    "Typography",
+    "Reading Systems",
+    "Interface Design",
+    "Accessibility"
+  ],
+  "disciplines": [
+    "Typography",
+    "Design",
+    "Web Development",
+    "Human Computer Interaction"
+  ],
+  "sources": [
+    {
+      "title": "CSS Fonts Module Level 4",
+      "url": "https://www.w3.org/TR/css-fonts-4/",
+      "publisher": "W3C",
+      "accessedAt": "2026-06-24"
+    },
+    {
+      "title": "WCAG 2 Overview",
+      "url": "https://www.w3.org/WAI/standards-guidelines/wcag/",
+      "publisher": "W3C Web Accessibility Initiative",
+      "accessedAt": "2026-06-24"
+    }
+  ],
+  "format": "technicalArticle",
+  "subjects": [
+    {
+      "id": "ea:concept:typography"
+    },
+    {
+      "id": "ea:technology:css-fonts"
+    },
+    {
+      "id": "ea:concept:human-computer-interaction"
+    },
+    {
+      "id": "ea:concept:metadata"
+    }
+  ],
+  "claims": [
+    "Typography is knowledge infrastructure because it shapes attention, comprehension, hierarchy and scanning.",
+    "Digital typography must be designed as a responsive and accessible reading system rather than a fixed visual composition."
+  ],
+  "evidence": [
+    {
+      "id": "ea:concept:typography"
+    },
+    {
+      "id": "ea:technology:css-fonts"
+    }
+  ],
+  "citation": {
+    "preferred": "Electronic Artefacts. \"Typography, Reading Systems and Digital Interfaces.\" Technical article, version 1.0.0, 2026."
+  },
+  "bodyHtml": "<h2>Problem</h2>\n<p>Knowledge pages live or die by reading quality. A site can have excellent sources, rich concepts and strong internal links, yet fail if the typography makes scanning difficult, long paragraphs exhausting or hierarchy unclear.</p>\n<p>Typography is often treated as visual taste: a typeface, a size, a mood. That is too narrow. In a knowledge system, typography is infrastructure. It controls how readers enter a page, compare sections, follow citations, understand metadata and decide whether to continue.</p>\n<p>Electronic Artefacts needs typography as a Knowledge Hub topic because long-form editorial work must remain readable across devices, languages, contexts and future design changes.</p>\n<h2>Introduction</h2>\n<p>Typography is the design and arrangement of written language. In digital interfaces, it includes typefaces, scale, line height, line length, spacing, hierarchy, contrast, responsiveness and accessibility.</p>\n<p>A reading system is typography plus layout plus interaction. It decides how headings behave, how references appear, how metadata is presented, how links are distinguished and how dense content becomes navigable.</p>\n<h2>Context</h2>\n<p>Web typography is shaped by CSS, browser rendering, font files, device density, user settings and network conditions. CSS Fonts defines how fonts are selected and used in web documents. Accessibility guidance reminds us that text is not only visual decoration. It is content that must remain perceivable and usable.</p>\n<p>For a research library, typography must support both immersion and scanning. Readers need to move quickly through headings, then slow down into paragraphs.</p>\n<h2>History</h2>\n<p>Typography has always mediated knowledge. Manuscripts, printed books, newspapers, encyclopedias, catalogues and interfaces each use typographic systems to make information legible.</p>\n<p>Digital typography introduced new conditions. Text reflows. Fonts load or fail. Screens vary. Users change zoom, contrast and preferences. Responsive design made typography dynamic rather than fixed.</p>\n<p>The Knowledge Hub belongs to this history because it publishes long-form, structured, source-heavy material on the web.</p>\n<h2>Core concepts</h2>\n<p>Typeface: the design of letterforms.</p>\n<p>Font: a specific digital implementation of a typeface.</p>\n<p>Hierarchy: visual ordering of content importance.</p>\n<p>Measure: line length.</p>\n<p>Leading: vertical space between lines.</p>\n<p>Contrast: difference between foreground and background or between text levels.</p>\n<p>Reading rhythm: the pattern of visual intervals across a page.</p>\n<h2>Architecture</h2>\n<p>A typographic system needs tokens and rules. Tokens define sizes, weights, line heights, spacing and color roles. Rules define where those tokens apply: article headings, metadata, captions, citations, navigation, graph panels and related links.</p>\n<p>The system should also include constraints. Maximum line length prevents exhausting paragraphs. Stable heading sizes prevent internal panels from feeling like landing pages. Link styles must remain recognizable.</p>\n<h2>Implementation</h2>\n<p>Implementation begins with content roles. Body text, headings, metadata, captions, labels, code, citations and navigation each need different typographic behavior.</p>\n<p>Then define responsive constraints. Body copy should remain readable on mobile without scaling unpredictably. Long words and URLs should wrap. Buttons should not depend on fragile text fitting. Article pages should reserve enough width for comfortable reading.</p>\n<p>Accessibility matters. Respect zoom, color contrast, text spacing and user preferences. Do not encode essential meaning only through color or motion.</p>\n<h2>Practical applications</h2>\n<p>Typography supports Knowledge Hub articles by making structure visible.</p>\n<p>It supports SEO indirectly by improving engagement and scannability.</p>\n<p>It supports AI retrieval by encouraging clear headings and consistent section labels.</p>\n<p>It supports archive pages by distinguishing object metadata from interpretive prose.</p>\n<p>It supports project pages by separating narrative, evidence, credits and outputs.</p>\n<h2>Tools</h2>\n<p>Useful tools include CSS Fonts, CSS custom properties, browser typography inspectors, accessibility checkers, contrast tools, responsive screenshots, font loading strategies and design tokens.</p>\n<h2>Evidence</h2>\n<p>The W3C CSS Fonts specification anchors the browser font layer. WCAG guidance frames accessibility as a shared technical standard for web content.</p>\n<p>Electronic Artefacts already has article templates, entity metadata and generated pages. Typography gives those structures readable form.</p>\n<h2>Editorial method</h2>\n<p>Writers should use headings as semantic structure, not as visual emphasis alone. A heading should tell the reader what kind of information follows.</p>\n<p>Paragraphs should be written for reading on screens. Dense ideas can remain dense, but they need rhythm: definitions, examples, transitions and summaries.</p>\n<h2>Common mistakes</h2>\n<p>The first mistake is making body text too decorative. Long-form reading needs restraint.</p>\n<p>The second mistake is using too many hierarchy levels. Readers lose orientation.</p>\n<p>The third mistake is designing only for desktop screenshots. Knowledge pages must survive mobile, zoom and text expansion.</p>\n<h2>Electronic Artefacts implications</h2>\n<p>Electronic Artefacts should treat typography as part of its intellectual identity. The site can feel precise, quiet and research-oriented without becoming sterile.</p>\n<p>For the Knowledge Hub, typography should support deep reading and fast navigation at the same time.</p>\n<h2>Knowledge graph role</h2>\n<p>Typography also affects the graph. Entity pages contain different kinds of text: titles, abstracts, metadata, relation labels, source lists, article prose and glossary entries. If those layers look too similar, the reader cannot tell what kind of knowledge they are seeing.</p>\n<p>A strong typographic system makes relation groups scannable, sources trustworthy and long articles comfortable. It also helps AI-oriented publishing indirectly because clear headings and consistent structures encourage clearer content segmentation.</p>\n<h2>Evaluation criteria</h2>\n<p>A reading system should be evaluated across several conditions. Can the page be read on mobile without horizontal scrolling? Does body copy have a comfortable measure? Are links visible without relying on color alone? Do headings describe the content that follows? Are source lists and glossaries visually distinct but not distracting?</p>\n<p>The evaluation should include real content. Placeholder text hides problems that appear only with long titles, source URLs, multilingual terms or dense metadata.</p>\n<h2>Editorial standard</h2>\n<p>Writers should cooperate with typography. Headings should be short enough to scan. Paragraphs should carry one main idea when possible. Lists should be used for genuine comparison or sequence, not as a substitute for thinking.</p>\n<p>This does not mean simplifying difficult ideas. It means giving difficult ideas a readable structure.</p>\n<h2>Reader pathway</h2>\n<p>Typography can attract readers through design, but the Knowledge Hub should connect it to knowledge infrastructure. A reader who starts with font choice should quickly reach line length, hierarchy, accessibility, metadata display and source readability. This turns typography from taste into a system for understanding.</p>\n<p>The pathway should connect <a href=\"/knowledge/concepts/typography/\">Typography</a> to <a href=\"/knowledge/concepts/human-computer-interaction/\">Human Computer Interaction</a>, <a href=\"/knowledge/concepts/motion-design/\">Motion Design</a> and <a href=\"/knowledge/concepts/metadata/\">Metadata</a>. A well-designed article page is where all of those concerns meet.</p>\n<h2>Preservation angle</h2>\n<p>Typography also has a preservation dimension. Fonts may change, licenses may expire, browser rendering may shift and layout assumptions may break. A durable knowledge site should document its typographic system through CSS, design tokens and readable fallbacks. The goal is not to freeze appearance forever, but to preserve reading quality.</p>\n<p>This is especially important for Electronic Artefacts because the Knowledge Hub is intended to grow for years. A typographic decision made for ten pages must still work when there are hundreds.</p>\n<p>The article system should therefore be tested with dense, real knowledge pages, not only idealized samples.</p>\n<h2>Future work</h2>\n<p>Future entries should cover typographic scale, variable fonts, citation design, code typography, multilingual typography, long-form article layout and accessibility testing for editorial pages.</p>\n<h2>Related concepts</h2>\n<p>Read <a href=\"/knowledge/concepts/typography/\">Typography</a>, <a href=\"/knowledge/technologies/css-fonts/\">CSS Fonts</a>, <a href=\"/knowledge/concepts/human-computer-interaction/\">Human Computer Interaction</a> and <a href=\"/knowledge/concepts/metadata/\">Metadata</a>.</p>\n<h2>Suggested reading</h2>\n<p>Start with CSS Fonts and WCAG guidance, then study well-designed long-form references, technical documentation and digital libraries.</p>\n<h2>Related articles</h2>\n<p>Continue with <a href=\"/publications/motion-design-time-and-interface-semantics/\">Motion Design, Time and Interface Semantics</a> and <a href=\"/publications/human-computer-interaction-for-creative-tools/\">Human Computer Interaction for Creative Tools</a>.</p>\n<h2>Glossary</h2>\n<p>Measure: line length in a block of text.</p>\n<p>Hierarchy: relative importance expressed through typographic system.</p>\n<p>Font loading: browser process of fetching and applying fonts.</p>\n<p>Reading system: the combined layout, typography and interaction model for reading.</p>\n<h2>Limitations</h2>\n<p>Typography cannot rescue unclear writing. It can support comprehension, but structure and argument still matter.</p>\n<p>It can also become overly rigid. A living knowledge system needs consistency, but it should allow special formats when content genuinely requires them.</p>\n<h2>References</h2>\n<ul>\n<li>W3C. CSS Fonts Module Level 4.</li>\n<li>W3C WAI. WCAG 2 Overview.</li>\n<li>Electronic Artefacts. Typography, Metadata and HCI records.</li>\n</ul>\n",
+  "headings": [
+    "Problem",
+    "Introduction",
+    "Context",
+    "History",
+    "Core concepts",
+    "Architecture",
+    "Implementation",
+    "Practical applications",
+    "Tools",
+    "Evidence",
+    "Editorial method",
+    "Common mistakes",
+    "Electronic Artefacts implications",
+    "Knowledge graph role",
+    "Evaluation criteria",
+    "Editorial standard",
+    "Reader pathway",
+    "Preservation angle",
+    "Future work",
+    "Related concepts",
+    "Suggested reading",
+    "Related articles",
+    "Glossary",
+    "Limitations",
+    "References"
+  ]
+}

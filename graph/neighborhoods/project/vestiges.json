@@ -66,6 +66,14 @@
       "route": "/publications/knowledge-graphs-for-cultural-infrastructure/",
       "status": "active",
       "confidence": "published"
+    },
+    {
+      "id": "ea:publication:metadata-cataloguing-and-cultural-memory",
+      "type": "publication",
+      "title": "Metadata, Cataloguing and Cultural Memory",
+      "route": "/publications/metadata-cataloguing-and-cultural-memory/",
+      "status": "active",
+      "confidence": "published"
     }
   ],
   "edges": [
@@ -94,6 +102,15 @@
       "predicate": "documents",
       "label": "Documents",
       "statement": "Digital Preservation and Living Archives connects Vestiges to living archive and cultural knowledge preservation.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:metadata-article-documents-vestiges",
+      "source": "ea:publication:metadata-cataloguing-and-cultural-memory",
+      "target": "ea:project:vestiges",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Metadata, Cataloguing and Cultural Memory links metadata practice to the Vestiges cultural knowledge project.",
       "confidence": "published"
     },
     {

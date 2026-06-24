@@ -1,0 +1,47 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://electronicartefacts.com/knowledge/concepts/augmented-intelligence/#webpage",
+      "url": "https://electronicartefacts.com/knowledge/concepts/augmented-intelligence/",
+      "name": "Augmented Intelligence",
+      "mainEntity": {
+        "@id": "https://electronicartefacts.com/id/concept/augmented-intelligence/"
+      },
+      "isPartOf": {
+        "@id": "https://electronicartefacts.com/#website"
+      }
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://electronicartefacts.com/id/concept/augmented-intelligence/",
+      "name": "Augmented Intelligence",
+      "description": "Augmented intelligence is the design of tools, interfaces and systems that expand human perception, reasoning, memory and creative capability.",
+      "url": "https://electronicartefacts.com/knowledge/concepts/augmented-intelligence/",
+      "dateCreated": "2026-06-24",
+      "datePublished": "2026-06-24",
+      "dateModified": "2026-06-24",
+      "publisher": {
+        "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Electronic Artefacts",
+          "item": "https://electronicartefacts.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Augmented Intelligence",
+          "item": "https://electronicartefacts.com/knowledge/concepts/augmented-intelligence/"
+        }
+      ]
+    }
+  ]
+}

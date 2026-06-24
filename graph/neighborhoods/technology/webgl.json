@@ -1,0 +1,34 @@
+{
+  "id": "local:ea:technology:webgl",
+  "kind": "local",
+  "focus": "ea:technology:webgl",
+  "nodes": [
+    {
+      "id": "ea:publication:procedural-graphics-shaders-and-visual-systems",
+      "type": "publication",
+      "title": "Procedural Graphics, Shaders and Visual Systems",
+      "route": "/publications/procedural-graphics-shaders-and-visual-systems/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:technology:webgl",
+      "type": "technology",
+      "title": "WebGL",
+      "route": "/knowledge/technologies/webgl/",
+      "status": "active",
+      "confidence": "canonical"
+    }
+  ],
+  "edges": [
+    {
+      "id": "ear:procedural-graphics-article-uses-webgl",
+      "source": "ea:publication:procedural-graphics-shaders-and-visual-systems",
+      "target": "ea:technology:webgl",
+      "predicate": "usesTechnology",
+      "label": "Uses technology",
+      "statement": "Procedural Graphics, Shaders and Visual Systems uses WebGL as the browser graphics reference technology.",
+      "confidence": "published"
+    }
+  ]
+}

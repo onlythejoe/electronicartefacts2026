@@ -1,0 +1,125 @@
+{
+  "id": "ea:publication:algorithmic-composition-and-rule-based-music",
+  "type": "publication",
+  "slug": {
+    "canonical": "algorithmic-composition-and-rule-based-music"
+  },
+  "title": "Algorithmic Composition and Rule-Based Music",
+  "subtitle": "Technical Article",
+  "abstract": "This article explains algorithmic composition through rules, stochastic methods, cybernetics, electronic music, creative coding, generative systems and ORETH.",
+  "description": "A technical article on algorithmic composition, rule-based music, generative sound, cybernetics and Electronic Artefacts audio research.",
+  "locale": "en",
+  "visibility": "public",
+  "publicationClass": "published",
+  "status": "active",
+  "maturity": "research",
+  "confidence": "published",
+  "version": {
+    "version": "1.0.0",
+    "createdAt": "2026-06-24",
+    "publishedAt": "2026-06-24",
+    "modifiedAt": "2026-06-24"
+  },
+  "authors": [
+    {
+      "id": "ea:organization:electronic-artefacts"
+    }
+  ],
+  "publisher": "ea:organization:electronic-artefacts",
+  "tags": [
+    "Algorithmic Composition",
+    "Electronic Music",
+    "Generative Music",
+    "ORETH"
+  ],
+  "disciplines": [
+    "Electronic Music",
+    "Music Production",
+    "Creative Coding",
+    "Cybernetics"
+  ],
+  "sources": [
+    {
+      "title": "Formalized Music",
+      "author": "Iannis Xenakis",
+      "publisher": "Indiana University Press",
+      "publishedAt": "1971-01-01"
+    },
+    {
+      "title": "Cybernetics or Control and Communication in the Animal and the Machine",
+      "url": "https://direct.mit.edu/books/oa-monograph/4581/Cybernetics-or-Control-and-Communication-in-the",
+      "author": "Norbert Wiener",
+      "publisher": "MIT Press",
+      "publishedAt": "1948-01-01",
+      "accessedAt": "2026-06-24"
+    },
+    {
+      "title": "Web Audio API 1.1",
+      "url": "https://www.w3.org/TR/webaudio/",
+      "publisher": "W3C",
+      "publishedAt": "2024-11-05",
+      "accessedAt": "2026-06-24"
+    }
+  ],
+  "format": "technicalArticle",
+  "subjects": [
+    {
+      "id": "ea:concept:algorithmic-composition"
+    },
+    {
+      "id": "ea:concept:generative-system"
+    },
+    {
+      "id": "ea:concept:cybernetic-feedback"
+    },
+    {
+      "id": "ea:program:oreth"
+    },
+    {
+      "id": "ea:concept:web-audio"
+    }
+  ],
+  "claims": [
+    "Algorithmic composition is not a recent AI phenomenon; it is a long history of rule-based musical thought.",
+    "Rule-based music needs listening, evaluation and documentation as much as procedural generation."
+  ],
+  "evidence": [
+    {
+      "id": "ea:concept:algorithmic-composition"
+    },
+    {
+      "id": "ea:program:oreth"
+    }
+  ],
+  "citation": {
+    "preferred": "Electronic Artefacts. \"Algorithmic Composition and Rule-Based Music.\" Technical article, version 1.0.0, 2026."
+  },
+  "bodyHtml": "<h2>Problem</h2>\n<p>Algorithmic composition is often misunderstood as music made by machines. That framing is too crude. The important question is not whether a computer is involved. The important question is how rules, constraints, probability, feedback and selection shape musical material.</p>\n<p>This matters because contemporary AI has made generative music visible again, but the history is much older. Composers, theorists and artists have long used procedures to organize pitch, rhythm, timbre, form and performance.</p>\n<p>Electronic Artefacts needs algorithmic composition as a Knowledge Hub topic because it connects ORETH, generative systems, cybernetics, Web Audio and signal archaeology.</p>\n<h2>Introduction</h2>\n<p>Algorithmic composition is the use of procedures to generate or organize music. The procedure may be a formal rule, stochastic process, software patch, live coding system, model, sequencer, feedback loop or human-machine workflow.</p>\n<p>The composer does not disappear. Authorship moves into system design, parameter tuning, listening, selection and interpretation.</p>\n<h2>Context</h2>\n<p>Rule-based music sits between music theory and computation. A canon, serial procedure or rhythmic cycle can be algorithmic even without digital machinery. Computers expanded the scale and speed of rule execution, but they did not invent procedural musical thought.</p>\n<p>Electronic music made this especially clear. Sequencers, modular synthesis, tape processes and computer-assisted composition all treat musical time as something that can be structured by systems.</p>\n<h2>History</h2>\n<p>The history includes formal composition systems, chance operations, stochastic music, cybernetics, computer music labs, algorithmic sequencing, live coding and machine-learning generation. Iannis Xenakis is a key reference because his work made mathematics and stochastic processes compositional materials.</p>\n<p>Cybernetics adds feedback. A musical system can respond to its own output, performer input, room behavior or listener interaction. That makes composition less like fixed inscription and more like designed behavior.</p>\n<h2>Core concepts</h2>\n<p>Rule: a constraint that determines musical behavior.</p>\n<p>Stochastic process: a procedure involving probability.</p>\n<p>Sequence: ordered musical events.</p>\n<p>Feedback: output or state returning into the system.</p>\n<p>Parameter: controllable value that changes output.</p>\n<p>Selection: human or automated choice among generated possibilities.</p>\n<h2>Architecture</h2>\n<p>An algorithmic music system has materials, rules, state, time and evaluation. Materials may be notes, samples, spectra, motifs, rhythms, datasets or live input. Rules transform those materials. State creates memory. Time schedules events. Evaluation decides what remains.</p>\n<p>ORETH can use this architecture to connect analysis and generation. A machine-listening system may detect patterns, but a compositional system decides how those patterns become musical structure.</p>\n<h2>Implementation</h2>\n<p>Implementation can begin with simple rule systems: generate a rhythm from a pattern, map data to pitch, vary a sequence with probability, or transform an audio feature into control data.</p>\n<p>More advanced systems include feedback loops, Markov models, constraint solving, live coding, neural generation and Web Audio synthesis.</p>\n<p>Documentation should record rules, parameters, source material, version and selection method. Without those, the output becomes detached from the system that produced it.</p>\n<h2>Practical applications</h2>\n<p>Algorithmic composition supports generative music, adaptive soundtracks, interactive installations, sound design tools, browser synthesizers, audio research and machine-listening experiments.</p>\n<p>For Palimpsests, rule-based music can express repetition, memory and transformation. For ORETH, it can connect audio analysis to generative exploration.</p>\n<h2>Tools</h2>\n<p>Useful tools include Max, SuperCollider, TidalCycles, Sonic Pi, Web Audio, MIDI, modular synthesizers, Python audio libraries, Markov models, constraint systems, DAW scripting and version control.</p>\n<h2>Evidence</h2>\n<p>The Electronic Artefacts graph already connects ORETH, generative systems, cybernetic feedback and signal archaeology. Algorithmic composition gives that cluster a musical history and practical vocabulary.</p>\n<p>The Web Audio API also makes simple algorithmic systems publishable directly in browser pages.</p>\n<h2>Editorial method</h2>\n<p>An article about algorithmic music should distinguish procedure from result. It should explain what the rules do and how the output is evaluated.</p>\n<p>It should also avoid technological presentism. AI music is part of the story, not the beginning of the story.</p>\n<h2>Common mistakes</h2>\n<p>The first mistake is treating randomness as composition.</p>\n<p>The second mistake is claiming machine autonomy while hiding human selection.</p>\n<p>The third mistake is publishing generated sound without preserving rules, sources and parameters.</p>\n<h2>Electronic Artefacts implications</h2>\n<p>Algorithmic composition can help Electronic Artefacts connect music production, sound design and research systems. ORETH can become not only an analysis program but a conceptual home for listening-based generation.</p>\n<p>The Knowledge Hub should use the topic to attract readers interested in electronic music while connecting them to deeper systems thinking.</p>\n<h2>Knowledge graph role</h2>\n<p>Algorithmic composition is a strong graph topic because it links musical outcomes to rules, tools, concepts and evidence. A generated pattern can be related to a source sample, a method, a software environment, a performance, an article and an archive record.</p>\n<p>For ORETH, this makes it possible to connect machine listening with musical production. A detected motif can become evidence. A transformation rule can become a method. A generated sketch can become an artefact. Those distinctions prevent the system from collapsing analysis, generation and interpretation into one vague process.</p>\n<h2>Evaluation criteria</h2>\n<p>Rule-based music should be evaluated by listening and structure together. Does the procedure create meaningful musical relationships? Does variation serve the piece? Does feedback create responsive behavior or uncontrolled drift? Are the rules documented enough for future study? Is the human selection process acknowledged?</p>\n<p>The evaluation should also include material relevance. A system that could use any input with the same effect may be technically interesting but culturally weak. A stronger system transforms material in a way that preserves or reveals something about it.</p>\n<h2>Editorial standard</h2>\n<p>When publishing algorithmic music research, document the compositional system. Name the source materials, rules, probability ranges, timing model, software environment and output selection. If the result is audio, preserve both the rendered sound and the description of the process.</p>\n<p>This standard lets future readers understand the work as music, software and research evidence.</p>\n<h2>Reader pathway</h2>\n<p>Algorithmic composition is useful for search because it connects music producers, composers, coders and AI-curious readers. The article should welcome practical questions about generative music, then move toward deeper history. Rule-based music did not begin with modern AI. It belongs to a lineage of formal systems, stochastic processes, cybernetics and electronic studios.</p>\n<p>The next path should lead to <a href=\"/knowledge/concepts/generative-system/\">Generative System</a>, <a href=\"/knowledge/concepts/cybernetic-feedback/\">Cybernetic Feedback</a>, <a href=\"/knowledge/concepts/web-audio/\">Web Audio</a> and <a href=\"/programs/oreth/\">ORETH</a>. This keeps music production linked to the wider Knowledge Hub rather than isolated as a tutorial category.</p>\n<h2>Preservation angle</h2>\n<p>Musical outputs are especially easy to detach from process. A rendered file may survive while the patch, seed, score, sample source or parameter history disappears. Algorithmic work should therefore preserve both sound and procedure. When full reproducibility is impossible, the record should at least preserve enough context to understand the system.</p>\n<p>That context is what turns a generated track into research evidence rather than only an audio file.</p>\n<h2>Future work</h2>\n<p>Future entries should cover stochastic music, Markov chains, live coding, generative rhythm, adaptive music, Web Audio synthesis, algorithmic mixing and machine listening for composition.</p>\n<h2>Related concepts</h2>\n<p>Read <a href=\"/knowledge/concepts/algorithmic-composition/\">Algorithmic Composition</a>, <a href=\"/knowledge/concepts/generative-system/\">Generative System</a>, <a href=\"/knowledge/concepts/cybernetic-feedback/\">Cybernetic Feedback</a>, <a href=\"/knowledge/concepts/web-audio/\">Web Audio</a> and <a href=\"/programs/oreth/\">ORETH</a>.</p>\n<h2>Suggested reading</h2>\n<p>Start with Xenakis for formalized music and Wiener for cybernetic context. Then study live coding and Web Audio examples.</p>\n<h2>Related articles</h2>\n<p>Continue with <a href=\"/publications/generative-systems-cybernetics-and-creative-coding/\">Generative Systems, Cybernetics and Creative Coding</a> and <a href=\"/publications/web-audio-and-browser-based-sound-systems/\">Web Audio and Browser-Based Sound Systems</a>.</p>\n<h2>Glossary</h2>\n<p>Algorithmic composition: music organized by rules or procedures.</p>\n<p>Stochastic: involving probability.</p>\n<p>Live coding: writing or changing code during performance.</p>\n<p>Feedback loop: system output returning into future behavior.</p>\n<h2>Limitations</h2>\n<p>Algorithmic composition can overvalue system elegance and undervalue listening. A procedure may be clever while producing weak music.</p>\n<p>It can also obscure labor. Someone designs, tunes, curates and contextualizes the system.</p>\n<h2>References</h2>\n<ul>\n<li>Iannis Xenakis. Formalized Music. 1971.</li>\n<li>Norbert Wiener. Cybernetics. 1948.</li>\n<li>W3C. Web Audio API 1.1.</li>\n<li>Electronic Artefacts. ORETH and Generative System records.</li>\n</ul>\n",
+  "headings": [
+    "Problem",
+    "Introduction",
+    "Context",
+    "History",
+    "Core concepts",
+    "Architecture",
+    "Implementation",
+    "Practical applications",
+    "Tools",
+    "Evidence",
+    "Editorial method",
+    "Common mistakes",
+    "Electronic Artefacts implications",
+    "Knowledge graph role",
+    "Evaluation criteria",
+    "Editorial standard",
+    "Reader pathway",
+    "Preservation angle",
+    "Future work",
+    "Related concepts",
+    "Suggested reading",
+    "Related articles",
+    "Glossary",
+    "Limitations",
+    "References"
+  ]
+}

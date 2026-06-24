@@ -1,0 +1,65 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://electronicartefacts.com/publications/metadata-cataloguing-and-cultural-memory/#webpage",
+      "url": "https://electronicartefacts.com/publications/metadata-cataloguing-and-cultural-memory/",
+      "name": "Metadata, Cataloguing and Cultural Memory",
+      "mainEntity": {
+        "@id": "https://electronicartefacts.com/id/publication/metadata-cataloguing-and-cultural-memory/"
+      },
+      "isPartOf": {
+        "@id": "https://electronicartefacts.com/#website"
+      }
+    },
+    {
+      "@type": "TechArticle",
+      "@id": "https://electronicartefacts.com/id/publication/metadata-cataloguing-and-cultural-memory/",
+      "name": "Metadata, Cataloguing and Cultural Memory",
+      "description": "This article explains metadata as a cultural memory layer, connecting cataloguing, Dublin Core, PREMIS, METS, provenance, archives and knowledge graphs.",
+      "url": "https://electronicartefacts.com/publications/metadata-cataloguing-and-cultural-memory/",
+      "dateCreated": "2026-06-24",
+      "datePublished": "2026-06-24",
+      "dateModified": "2026-06-24",
+      "publisher": {
+        "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
+      },
+      "citation": "Electronic Artefacts. \"Metadata, Cataloguing and Cultural Memory.\" Technical article, version 1.0.0, 2026.",
+      "about": [
+        {
+          "@id": "https://electronicartefacts.com/id/concept/metadata/"
+        },
+        {
+          "@id": "https://electronicartefacts.com/id/concept/provenance/"
+        },
+        {
+          "@id": "https://electronicartefacts.com/id/concept/digital-preservation/"
+        },
+        {
+          "@id": "https://electronicartefacts.com/id/concept/knowledge-graph/"
+        },
+        {
+          "@id": "https://electronicartefacts.com/id/project/vestiges/"
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Electronic Artefacts",
+          "item": "https://electronicartefacts.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Metadata, Cataloguing and Cultural Memory",
+          "item": "https://electronicartefacts.com/publications/metadata-cataloguing-and-cultural-memory/"
+        }
+      ]
+    }
+  ]
+}

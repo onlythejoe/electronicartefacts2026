@@ -1,0 +1,34 @@
+{
+  "id": "local:ea:technology:web-audio-api",
+  "kind": "local",
+  "focus": "ea:technology:web-audio-api",
+  "nodes": [
+    {
+      "id": "ea:publication:web-audio-and-browser-based-sound-systems",
+      "type": "publication",
+      "title": "Web Audio and Browser-Based Sound Systems",
+      "route": "/publications/web-audio-and-browser-based-sound-systems/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:technology:web-audio-api",
+      "type": "technology",
+      "title": "Web Audio API",
+      "route": "/knowledge/technologies/web-audio-api/",
+      "status": "active",
+      "confidence": "canonical"
+    }
+  ],
+  "edges": [
+    {
+      "id": "ear:web-audio-article-uses-web-audio-api",
+      "source": "ea:publication:web-audio-and-browser-based-sound-systems",
+      "target": "ea:technology:web-audio-api",
+      "predicate": "usesTechnology",
+      "label": "Uses technology",
+      "statement": "Web Audio and Browser-Based Sound Systems uses the Web Audio API as its main browser audio reference.",
+      "confidence": "published"
+    }
+  ]
+}

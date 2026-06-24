@@ -5,6 +5,21 @@
     "identifier": "/id/collection/knowledge-hub-foundations/"
   },
   {
+    "id": "ea:collection:knowledge-hub-second-wave",
+    "route": "/archive/collections/knowledge-hub-second-wave/",
+    "identifier": "/id/collection/knowledge-hub-second-wave/"
+  },
+  {
+    "id": "ea:concept:algorithmic-composition",
+    "route": "/knowledge/concepts/algorithmic-composition/",
+    "identifier": "/id/concept/algorithmic-composition/"
+  },
+  {
+    "id": "ea:concept:augmented-intelligence",
+    "route": "/knowledge/concepts/augmented-intelligence/",
+    "identifier": "/id/concept/augmented-intelligence/"
+  },
+  {
     "id": "ea:concept:contextual-execution",
     "route": "/knowledge/concepts/contextual-execution/",
     "identifier": "/id/concept/contextual-execution/"
@@ -30,6 +45,11 @@
     "identifier": "/id/concept/entity-identity/"
   },
   {
+    "id": "ea:concept:generative-ai",
+    "route": "/knowledge/concepts/generative-ai/",
+    "identifier": "/id/concept/generative-ai/"
+  },
+  {
     "id": "ea:concept:generative-system",
     "route": "/knowledge/concepts/generative-system/",
     "identifier": "/id/concept/generative-system/"
@@ -38,6 +58,21 @@
     "id": "ea:concept:graph-runtime",
     "route": "/knowledge/concepts/graph-runtime/",
     "identifier": "/id/concept/graph-runtime/"
+  },
+  {
+    "id": "ea:concept:human-computer-interaction",
+    "route": "/knowledge/concepts/human-computer-interaction/",
+    "identifier": "/id/concept/human-computer-interaction/"
+  },
+  {
+    "id": "ea:concept:hypertext",
+    "route": "/knowledge/concepts/hypertext/",
+    "identifier": "/id/concept/hypertext/"
+  },
+  {
+    "id": "ea:concept:internet-culture",
+    "route": "/knowledge/concepts/internet-culture/",
+    "identifier": "/id/concept/internet-culture/"
   },
   {
     "id": "ea:concept:knowledge-graph",
@@ -50,6 +85,31 @@
     "identifier": "/id/concept/linked-data/"
   },
   {
+    "id": "ea:concept:metadata",
+    "route": "/knowledge/concepts/metadata/",
+    "identifier": "/id/concept/metadata/"
+  },
+  {
+    "id": "ea:concept:motion-design",
+    "route": "/knowledge/concepts/motion-design/",
+    "identifier": "/id/concept/motion-design/"
+  },
+  {
+    "id": "ea:concept:open-source",
+    "route": "/knowledge/concepts/open-source/",
+    "identifier": "/id/concept/open-source/"
+  },
+  {
+    "id": "ea:concept:personal-knowledge-system",
+    "route": "/knowledge/concepts/personal-knowledge-system/",
+    "identifier": "/id/concept/personal-knowledge-system/"
+  },
+  {
+    "id": "ea:concept:procedural-graphics",
+    "route": "/knowledge/concepts/procedural-graphics/",
+    "identifier": "/id/concept/procedural-graphics/"
+  },
+  {
     "id": "ea:concept:provenance",
     "route": "/knowledge/concepts/provenance/",
     "identifier": "/id/concept/provenance/"
@@ -58,6 +118,16 @@
     "id": "ea:concept:signal-archaeology",
     "route": "/knowledge/concepts/signal-archaeology/",
     "identifier": "/id/concept/signal-archaeology/"
+  },
+  {
+    "id": "ea:concept:typography",
+    "route": "/knowledge/concepts/typography/",
+    "identifier": "/id/concept/typography/"
+  },
+  {
+    "id": "ea:concept:web-audio",
+    "route": "/knowledge/concepts/web-audio/",
+    "identifier": "/id/concept/web-audio/"
   },
   {
     "id": "ea:organization:electronic-artefacts",
@@ -85,9 +155,19 @@
     "identifier": "/id/project/vestiges/"
   },
   {
+    "id": "ea:publication:algorithmic-composition-and-rule-based-music",
+    "route": "/publications/algorithmic-composition-and-rule-based-music/",
+    "identifier": "/id/publication/algorithmic-composition-and-rule-based-music/"
+  },
+  {
     "id": "ea:publication:contextual-execution-and-graph-runtimes",
     "route": "/publications/contextual-execution-and-graph-runtimes/",
     "identifier": "/id/publication/contextual-execution-and-graph-runtimes/"
+  },
+  {
+    "id": "ea:publication:creative-coding-pedagogy-from-logo-to-p5js",
+    "route": "/publications/creative-coding-pedagogy-from-logo-to-p5js/",
+    "identifier": "/id/publication/creative-coding-pedagogy-from-logo-to-p5js/"
   },
   {
     "id": "ea:publication:digital-preservation-and-living-archives",
@@ -100,9 +180,24 @@
     "identifier": "/id/publication/foundational-lineage-001/"
   },
   {
+    "id": "ea:publication:generative-ai-latent-space-and-creative-workflows",
+    "route": "/publications/generative-ai-latent-space-and-creative-workflows/",
+    "identifier": "/id/publication/generative-ai-latent-space-and-creative-workflows/"
+  },
+  {
     "id": "ea:publication:generative-systems-cybernetics-and-creative-coding",
     "route": "/publications/generative-systems-cybernetics-and-creative-coding/",
     "identifier": "/id/publication/generative-systems-cybernetics-and-creative-coding/"
+  },
+  {
+    "id": "ea:publication:human-computer-interaction-for-creative-tools",
+    "route": "/publications/human-computer-interaction-for-creative-tools/",
+    "identifier": "/id/publication/human-computer-interaction-for-creative-tools/"
+  },
+  {
+    "id": "ea:publication:hypertext-and-augmented-knowledge-systems",
+    "route": "/publications/hypertext-and-augmented-knowledge-systems/",
+    "identifier": "/id/publication/hypertext-and-augmented-knowledge-systems/"
   },
   {
     "id": "ea:publication:knowledge-graphs-for-cultural-infrastructure",
@@ -115,14 +210,59 @@
     "identifier": "/id/publication/linked-data-and-public-knowledge-pages/"
   },
   {
+    "id": "ea:publication:metadata-cataloguing-and-cultural-memory",
+    "route": "/publications/metadata-cataloguing-and-cultural-memory/",
+    "identifier": "/id/publication/metadata-cataloguing-and-cultural-memory/"
+  },
+  {
+    "id": "ea:publication:motion-design-time-and-interface-semantics",
+    "route": "/publications/motion-design-time-and-interface-semantics/",
+    "identifier": "/id/publication/motion-design-time-and-interface-semantics/"
+  },
+  {
+    "id": "ea:publication:open-source-as-cultural-infrastructure",
+    "route": "/publications/open-source-as-cultural-infrastructure/",
+    "identifier": "/id/publication/open-source-as-cultural-infrastructure/"
+  },
+  {
+    "id": "ea:publication:personal-knowledge-systems-and-digital-gardens",
+    "route": "/publications/personal-knowledge-systems-and-digital-gardens/",
+    "identifier": "/id/publication/personal-knowledge-systems-and-digital-gardens/"
+  },
+  {
+    "id": "ea:publication:procedural-graphics-shaders-and-visual-systems",
+    "route": "/publications/procedural-graphics-shaders-and-visual-systems/",
+    "identifier": "/id/publication/procedural-graphics-shaders-and-visual-systems/"
+  },
+  {
     "id": "ea:publication:signal-archaeology-audio-memory-and-machine-listening",
     "route": "/publications/signal-archaeology-audio-memory-and-machine-listening/",
     "identifier": "/id/publication/signal-archaeology-audio-memory-and-machine-listening/"
   },
   {
+    "id": "ea:publication:typography-reading-systems-and-digital-interfaces",
+    "route": "/publications/typography-reading-systems-and-digital-interfaces/",
+    "identifier": "/id/publication/typography-reading-systems-and-digital-interfaces/"
+  },
+  {
+    "id": "ea:publication:web-audio-and-browser-based-sound-systems",
+    "route": "/publications/web-audio-and-browser-based-sound-systems/",
+    "identifier": "/id/publication/web-audio-and-browser-based-sound-systems/"
+  },
+  {
     "id": "ea:researchField:runtime-theory",
     "route": "/research/fields/runtime-theory/",
     "identifier": "/id/research-field/runtime-theory/"
+  },
+  {
+    "id": "ea:technology:activitypub",
+    "route": "/knowledge/technologies/activitypub/",
+    "identifier": "/id/technology/activitypub/"
+  },
+  {
+    "id": "ea:technology:css-fonts",
+    "route": "/knowledge/technologies/css-fonts/",
+    "identifier": "/id/technology/css-fonts/"
   },
   {
     "id": "ea:technology:json-ld",
@@ -133,5 +273,20 @@
     "id": "ea:technology:rdf",
     "route": "/knowledge/technologies/rdf/",
     "identifier": "/id/technology/rdf/"
+  },
+  {
+    "id": "ea:technology:web-animations",
+    "route": "/knowledge/technologies/web-animations/",
+    "identifier": "/id/technology/web-animations/"
+  },
+  {
+    "id": "ea:technology:web-audio-api",
+    "route": "/knowledge/technologies/web-audio-api/",
+    "identifier": "/id/technology/web-audio-api/"
+  },
+  {
+    "id": "ea:technology:webgl",
+    "route": "/knowledge/technologies/webgl/",
+    "identifier": "/id/technology/webgl/"
   }
 ]

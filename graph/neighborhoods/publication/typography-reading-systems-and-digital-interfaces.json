@@ -1,0 +1,102 @@
+{
+  "id": "local:ea:publication:typography-reading-systems-and-digital-interfaces",
+  "kind": "local",
+  "focus": "ea:publication:typography-reading-systems-and-digital-interfaces",
+  "nodes": [
+    {
+      "id": "ea:collection:knowledge-hub-second-wave",
+      "type": "collection",
+      "title": "Knowledge Hub Second Wave",
+      "route": "/archive/collections/knowledge-hub-second-wave/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:concept:human-computer-interaction",
+      "type": "concept",
+      "title": "Human Computer Interaction",
+      "route": "/knowledge/concepts/human-computer-interaction/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:concept:metadata",
+      "type": "concept",
+      "title": "Metadata",
+      "route": "/knowledge/concepts/metadata/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:concept:typography",
+      "type": "concept",
+      "title": "Typography",
+      "route": "/knowledge/concepts/typography/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:publication:typography-reading-systems-and-digital-interfaces",
+      "type": "publication",
+      "title": "Typography, Reading Systems and Digital Interfaces",
+      "route": "/publications/typography-reading-systems-and-digital-interfaces/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:technology:css-fonts",
+      "type": "technology",
+      "title": "CSS Fonts",
+      "route": "/knowledge/technologies/css-fonts/",
+      "status": "active",
+      "confidence": "validated"
+    }
+  ],
+  "edges": [
+    {
+      "id": "ear:typography-article-documents-typography",
+      "source": "ea:publication:typography-reading-systems-and-digital-interfaces",
+      "target": "ea:concept:typography",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Typography, Reading Systems and Digital Interfaces documents typography as reading infrastructure.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:typography-article-uses-css-fonts",
+      "source": "ea:publication:typography-reading-systems-and-digital-interfaces",
+      "target": "ea:technology:css-fonts",
+      "predicate": "usesTechnology",
+      "label": "Uses technology",
+      "statement": "Typography, Reading Systems and Digital Interfaces uses CSS Fonts as the browser typography reference.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:typography-article-documents-hci",
+      "source": "ea:publication:typography-reading-systems-and-digital-interfaces",
+      "target": "ea:concept:human-computer-interaction",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Typography, Reading Systems and Digital Interfaces connects typography to human computer interaction and accessibility.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:typography-article-documents-metadata",
+      "source": "ea:publication:typography-reading-systems-and-digital-interfaces",
+      "target": "ea:concept:metadata",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Typography, Reading Systems and Digital Interfaces links reading systems to visible metadata and article structure.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:knowledge-hub-second-wave-has-typography-article",
+      "source": "ea:collection:knowledge-hub-second-wave",
+      "target": "ea:publication:typography-reading-systems-and-digital-interfaces",
+      "predicate": "hasPart",
+      "label": "Has part",
+      "statement": "Knowledge Hub Second Wave includes Typography, Reading Systems and Digital Interfaces as a core article.",
+      "confidence": "published"
+    }
+  ]
+}

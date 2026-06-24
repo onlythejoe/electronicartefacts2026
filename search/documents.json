@@ -43,6 +43,130 @@
     "modifiedAt": "2026-06-23"
   },
   {
+    "id": "ea:collection:knowledge-hub-second-wave",
+    "route": "/archive/collections/knowledge-hub-second-wave/",
+    "type": "collection",
+    "title": "Knowledge Hub Second Wave",
+    "alternateNames": [],
+    "abstract": "Knowledge Hub Second Wave groups a larger expansion of Electronic Artefacts knowledge records across hypertext, open source, metadata, creative coding, web audio, motion, typography, HCI, algorithmic music and generative AI.",
+    "headings": [
+      "Thesis",
+      "Selection logic",
+      "Editorial role",
+      "Current members",
+      "Future expansion"
+    ],
+    "body": "Thesis Knowledge Hub Second Wave extends the first foundation collection with topics that are broad enough to remain useful for decades and specific enough to support organic discovery. Selection logic The collection selects articles and entities that can connect multiple disciplines: hypertext, open source, metadata, web audio, creative coding pedagogy, procedural graphics, motion, typography, HCI, algorithmic music and generative AI. Editorial role This collection is designed as an onboarding path for readers who arrive through search and then discover Electronic Artefacts projects, programs and research fields through contextual links. Current members The wave includes twelve publications, thirteen concept records and five technology records. Future expansion Future waves should add methods, tool records, datasets, archive records and project-specific case studies that reuse these entities instead of creating duplicate categories.",
+    "tags": [
+      "Knowledge Hub",
+      "Second Wave",
+      "Editorial Collection",
+      "Research Library"
+    ],
+    "questions": [],
+    "relationLabels": [
+      "hasPart Knowledge Hub Second Wave includes Hypertext and Augmented Knowledge Systems as a core article.",
+      "hasPart Knowledge Hub Second Wave includes Personal Knowledge Systems and Digital Gardens as a core article.",
+      "hasPart Knowledge Hub Second Wave includes Open Source as Cultural Infrastructure as a core article.",
+      "hasPart Knowledge Hub Second Wave includes Metadata, Cataloguing and Cultural Memory as a core article.",
+      "hasPart Knowledge Hub Second Wave includes Web Audio and Browser-Based Sound Systems as a core article.",
+      "hasPart Knowledge Hub Second Wave includes Creative Coding Pedagogy from Logo to p5.js as a core article.",
+      "hasPart Knowledge Hub Second Wave includes Procedural Graphics, Shaders and Visual Systems as a core article.",
+      "hasPart Knowledge Hub Second Wave includes Motion Design, Time and Interface Semantics as a core article.",
+      "hasPart Knowledge Hub Second Wave includes Typography, Reading Systems and Digital Interfaces as a core article.",
+      "hasPart Knowledge Hub Second Wave includes Human Computer Interaction for Creative Tools as a core article.",
+      "hasPart Knowledge Hub Second Wave includes Algorithmic Composition and Rule-Based Music as a core article.",
+      "hasPart Knowledge Hub Second Wave includes Generative AI, Latent Space and Creative Workflows as a core article."
+    ],
+    "relatedEntityIds": [
+      "ea:publication:hypertext-and-augmented-knowledge-systems",
+      "ea:publication:personal-knowledge-systems-and-digital-gardens",
+      "ea:publication:open-source-as-cultural-infrastructure",
+      "ea:publication:metadata-cataloguing-and-cultural-memory",
+      "ea:publication:web-audio-and-browser-based-sound-systems",
+      "ea:publication:creative-coding-pedagogy-from-logo-to-p5js",
+      "ea:publication:procedural-graphics-shaders-and-visual-systems",
+      "ea:publication:motion-design-time-and-interface-semantics",
+      "ea:publication:typography-reading-systems-and-digital-interfaces",
+      "ea:publication:human-computer-interaction-for-creative-tools",
+      "ea:publication:algorithmic-composition-and-rule-based-music",
+      "ea:publication:generative-ai-latent-space-and-creative-workflows"
+    ],
+    "status": "active",
+    "confidence": "published",
+    "modifiedAt": "2026-06-24"
+  },
+  {
+    "id": "ea:concept:algorithmic-composition",
+    "route": "/knowledge/concepts/algorithmic-composition/",
+    "type": "concept",
+    "title": "Algorithmic Composition",
+    "alternateNames": [],
+    "definition": "Algorithmic composition is the use of rules, procedures, probability, computation or formal systems to generate or organize musical material.",
+    "abstract": "Algorithmic composition connects music theory, computation, cybernetics, generative systems and electronic music by treating composition as the design of procedures as well as sounds.",
+    "headings": [
+      "Definition",
+      "Scope",
+      "Applications",
+      "Limitations",
+      "References"
+    ],
+    "body": "Definition Algorithmic composition treats musical structure as something that can be generated, transformed or organized by a procedure. The procedure may be mathematical, stochastic, rule-based, symbolic, computational or hybrid. Scope The concept includes historical formal systems, computer-assisted composition, generative sequencing, stochastic music, live coding, procedural rhythm, algorithmic harmony and systems that transform audio or symbolic material. Applications Electronic Artefacts uses the concept to connect ORETH, generative systems, machine listening and audio-memory research. It is useful whenever a musical process is best understood through rules and constraints rather than a fixed score alone. Limitations An algorithm does not guarantee musical value. Algorithmic composition still depends on material selection, listening, tuning, rejection and cultural interpretation. References See Iannis Xenakis, cybernetics, generative systems and the Electronic Artefacts ORETH program.",
+    "tags": [
+      "Algorithmic Composition",
+      "Electronic Music",
+      "Generative Systems",
+      "Music Theory"
+    ],
+    "questions": [],
+    "relationLabels": [
+      "documents Algorithmic Composition and Rule-Based Music documents algorithmic composition as rule-based musical practice."
+    ],
+    "relatedEntityIds": [
+      "ea:publication:algorithmic-composition-and-rule-based-music"
+    ],
+    "status": "active",
+    "confidence": "canonical",
+    "modifiedAt": "2026-06-24"
+  },
+  {
+    "id": "ea:concept:augmented-intelligence",
+    "route": "/knowledge/concepts/augmented-intelligence/",
+    "type": "concept",
+    "title": "Augmented Intelligence",
+    "alternateNames": [],
+    "definition": "Augmented intelligence is the design of tools, interfaces and systems that expand human perception, reasoning, memory and creative capability.",
+    "abstract": "Augmented intelligence reframes computation as a partner in human work, linking HCI, AI, knowledge systems, creative tools and Electronic Artefacts runtime research.",
+    "headings": [
+      "Definition",
+      "Scope",
+      "Applications",
+      "Limitations",
+      "References"
+    ],
+    "body": "Definition Augmented intelligence describes systems that increase human capability instead of pretending that computation should remove the human from the loop. Scope The concept includes creative software, AI assistants, knowledge work tools, graph interfaces, annotation systems, interactive analysis and decision support. Applications For Electronic Artefacts, augmented intelligence is relevant to VASTE, ORETH, machine listening, knowledge retrieval and future editorial tooling. Limitations Augmentation can become dependency when the user cannot inspect, correct or refuse system output. Responsible design preserves agency. References See Douglas Engelbart, HCI, AI risk management, contextual execution and graph runtimes.",
+    "tags": [
+      "Augmented Intelligence",
+      "HCI",
+      "AI",
+      "Creative Tools"
+    ],
+    "questions": [],
+    "relationLabels": [
+      "documents Hypertext and Augmented Knowledge Systems connects hypertext to augmented intelligence and human knowledge work.",
+      "documents Human Computer Interaction for Creative Tools connects interface design to augmented intelligence.",
+      "documents Generative AI, Latent Space and Creative Workflows connects generative AI to augmented intelligence."
+    ],
+    "relatedEntityIds": [
+      "ea:publication:hypertext-and-augmented-knowledge-systems",
+      "ea:publication:human-computer-interaction-for-creative-tools",
+      "ea:publication:generative-ai-latent-space-and-creative-workflows"
+    ],
+    "status": "active",
+    "confidence": "canonical",
+    "modifiedAt": "2026-06-24"
+  },
+  {
     "id": "ea:concept:contextual-execution",
     "route": "/knowledge/concepts/contextual-execution/",
     "type": "concept",
@@ -108,10 +232,14 @@
     ],
     "questions": [],
     "relationLabels": [
-      "documents Generative Systems, Cybernetics and Creative Coding connects creative coding to generative system practice."
+      "documents Generative Systems, Cybernetics and Creative Coding connects creative coding to generative system practice.",
+      "documents Open Source as Cultural Infrastructure connects open source to creative coding tools and pedagogy.",
+      "documents Creative Coding Pedagogy from Logo to p5.js documents creative coding as a learning practice."
     ],
     "relatedEntityIds": [
-      "ea:publication:generative-systems-cybernetics-and-creative-coding"
+      "ea:publication:generative-systems-cybernetics-and-creative-coding",
+      "ea:publication:open-source-as-cultural-infrastructure",
+      "ea:publication:creative-coding-pedagogy-from-logo-to-p5js"
     ],
     "status": "active",
     "confidence": "validated",
@@ -144,10 +272,12 @@
     ],
     "questions": [],
     "relationLabels": [
-      "documents Generative Systems, Cybernetics and Creative Coding uses cybernetic feedback as a historical and technical foundation."
+      "documents Generative Systems, Cybernetics and Creative Coding uses cybernetic feedback as a historical and technical foundation.",
+      "documents Algorithmic Composition and Rule-Based Music connects feedback loops to musical systems."
     ],
     "relatedEntityIds": [
-      "ea:publication:generative-systems-cybernetics-and-creative-coding"
+      "ea:publication:generative-systems-cybernetics-and-creative-coding",
+      "ea:publication:algorithmic-composition-and-rule-based-music"
     ],
     "status": "active",
     "confidence": "validated",
@@ -182,12 +312,18 @@
     "relationLabels": [
       "appliesConcept Palimpsests applies digital preservation by treating audio, visual and research traces as a compound cultural record.",
       "documents Digital Preservation and Living Archives documents digital preservation as long-term care for digital objects and context.",
-      "documents Signal Archaeology, Audio Memory and Machine Listening connects audio traces to digital preservation practice."
+      "documents Signal Archaeology, Audio Memory and Machine Listening connects audio traces to digital preservation practice.",
+      "documents Personal Knowledge Systems and Digital Gardens links revision and retrieval practice to digital preservation concerns.",
+      "documents Open Source as Cultural Infrastructure connects software access and maintenance to preservation concerns.",
+      "documents Metadata, Cataloguing and Cultural Memory connects metadata to digital preservation and long-term context."
     ],
     "relatedEntityIds": [
       "ea:project:palimpsests",
       "ea:publication:digital-preservation-and-living-archives",
-      "ea:publication:signal-archaeology-audio-memory-and-machine-listening"
+      "ea:publication:signal-archaeology-audio-memory-and-machine-listening",
+      "ea:publication:personal-knowledge-systems-and-digital-gardens",
+      "ea:publication:open-source-as-cultural-infrastructure",
+      "ea:publication:metadata-cataloguing-and-cultural-memory"
     ],
     "status": "active",
     "confidence": "validated",
@@ -232,6 +368,39 @@
     "modifiedAt": "2026-06-23"
   },
   {
+    "id": "ea:concept:generative-ai",
+    "route": "/knowledge/concepts/generative-ai/",
+    "type": "concept",
+    "title": "Generative AI",
+    "alternateNames": [],
+    "definition": "Generative AI refers to machine-learning systems that produce or transform media such as text, image, audio, video, code or structured data from learned patterns.",
+    "abstract": "Generative AI connects machine learning, creative workflows, latent spaces, risk management, provenance, authorship and cultural production.",
+    "headings": [
+      "Definition",
+      "Scope",
+      "Applications",
+      "Limitations",
+      "References"
+    ],
+    "body": "Definition Generative AI describes learned systems that produce or transform media. The output may be text, image, sound, video, code or structured data. Scope The concept includes foundation models, latent spaces, diffusion, transformers, prompts, embeddings, datasets, evaluation, provenance and human editing. Applications Electronic Artefacts can use generative AI as a research topic and production method when outputs remain connected to sources, constraints and interpretation. Limitations Generative AI can obscure training data, authorship, rights and confidence. Responsible practice documents process and avoids claiming certainty where the system provides probability. References See NIST AI RMF, provenance, generative systems and augmented intelligence.",
+    "tags": [
+      "Generative AI",
+      "Machine Learning",
+      "Provenance",
+      "Creative Workflows"
+    ],
+    "questions": [],
+    "relationLabels": [
+      "documents Generative AI, Latent Space and Creative Workflows documents generative AI as a creative workflow topic."
+    ],
+    "relatedEntityIds": [
+      "ea:publication:generative-ai-latent-space-and-creative-workflows"
+    ],
+    "status": "active",
+    "confidence": "validated",
+    "modifiedAt": "2026-06-24"
+  },
+  {
     "id": "ea:concept:generative-system",
     "route": "/knowledge/concepts/generative-system/",
     "type": "concept",
@@ -258,11 +427,19 @@
     "questions": [],
     "relationLabels": [
       "appliesConcept ORETH applies generative-system thinking to experimental audio structures and pattern exploration.",
-      "documents Generative Systems, Cybernetics and Creative Coding documents generative systems through constraints, rules and selection."
+      "documents Generative Systems, Cybernetics and Creative Coding documents generative systems through constraints, rules and selection.",
+      "documents Creative Coding Pedagogy from Logo to p5.js connects sketch-based learning to generative system design.",
+      "documents Procedural Graphics, Shaders and Visual Systems links procedural visuals to generative-system thinking.",
+      "documents Algorithmic Composition and Rule-Based Music connects rule-based music to generative systems.",
+      "documents Generative AI, Latent Space and Creative Workflows situates generative AI within the broader generative systems lineage."
     ],
     "relatedEntityIds": [
       "ea:program:oreth",
-      "ea:publication:generative-systems-cybernetics-and-creative-coding"
+      "ea:publication:generative-systems-cybernetics-and-creative-coding",
+      "ea:publication:creative-coding-pedagogy-from-logo-to-p5js",
+      "ea:publication:procedural-graphics-shaders-and-visual-systems",
+      "ea:publication:algorithmic-composition-and-rule-based-music",
+      "ea:publication:generative-ai-latent-space-and-creative-workflows"
     ],
     "status": "active",
     "confidence": "validated",
@@ -310,6 +487,113 @@
     "modifiedAt": "2026-06-22"
   },
   {
+    "id": "ea:concept:human-computer-interaction",
+    "route": "/knowledge/concepts/human-computer-interaction/",
+    "type": "concept",
+    "title": "Human Computer Interaction",
+    "alternateNames": [],
+    "definition": "Human computer interaction is the study and design of relationships between people, computational systems, interfaces, tasks, environments and cultures of use.",
+    "abstract": "HCI connects interface design, accessibility, creative tools, augmented intelligence, software ergonomics and the social consequences of computation.",
+    "headings": [
+      "Definition",
+      "Scope",
+      "Applications",
+      "Limitations",
+      "References"
+    ],
+    "body": "Definition Human computer interaction studies and designs the relationships between people and computational systems. Scope The concept includes interface behavior, feedback, mental models, usability, accessibility, error handling, creative flow, automation and social context. Applications Electronic Artefacts uses HCI to reason about VASTE, knowledge navigation, graph tools, audio interfaces and AI-assisted creative systems. Limitations HCI can become too narrow when reduced to usability metrics alone. Cultural context, power, learning and meaning also matter. References See WCAG, Engelbart, augmented intelligence and motion design.",
+    "tags": [
+      "HCI",
+      "Interface Design",
+      "Accessibility",
+      "Creative Tools"
+    ],
+    "questions": [],
+    "relationLabels": [
+      "documents Motion Design, Time and Interface Semantics links motion design to human computer interaction.",
+      "documents Typography, Reading Systems and Digital Interfaces connects typography to human computer interaction and accessibility.",
+      "documents Human Computer Interaction for Creative Tools documents HCI as a creative tool discipline.",
+      "documents Generative AI, Latent Space and Creative Workflows links AI workflows to human computer interaction and creative agency."
+    ],
+    "relatedEntityIds": [
+      "ea:publication:motion-design-time-and-interface-semantics",
+      "ea:publication:typography-reading-systems-and-digital-interfaces",
+      "ea:publication:human-computer-interaction-for-creative-tools",
+      "ea:publication:generative-ai-latent-space-and-creative-workflows"
+    ],
+    "status": "active",
+    "confidence": "canonical",
+    "modifiedAt": "2026-06-24"
+  },
+  {
+    "id": "ea:concept:hypertext",
+    "route": "/knowledge/concepts/hypertext/",
+    "type": "concept",
+    "title": "Hypertext",
+    "alternateNames": [],
+    "definition": "Hypertext is a system of non-linear text and media connected by links, allowing readers and machines to traverse knowledge through associations.",
+    "abstract": "Hypertext is a foundational concept for the web, digital archives, knowledge graphs, digital gardens, public notes and Electronic Artefacts knowledge publishing.",
+    "headings": [
+      "Definition",
+      "Scope",
+      "Applications",
+      "Limitations",
+      "References"
+    ],
+    "body": "Definition Hypertext is text and media organized through links rather than only sequence. It lets a reader move by association, reference, citation, concept, source or curiosity. Scope The concept includes linked documents, web pages, wikis, digital gardens, archive interfaces, annotation systems and semantic pages. It becomes especially important when a site is designed for exploration rather than chronological consumption. Applications Electronic Artefacts uses hypertext as the public surface of its knowledge graph. Every article, concept and project page should help readers move into adjacent questions. Limitations Links can also create noise. Hypertext requires editorial discipline: clear anchors, stable URLs, context around links and periodic pruning. References See Vannevar Bush, Douglas Engelbart, URI design, Linked Data and Knowledge Graph.",
+    "tags": [
+      "Hypertext",
+      "Web",
+      "Knowledge Systems",
+      "Digital Archives"
+    ],
+    "questions": [],
+    "relationLabels": [
+      "documents Hypertext and Augmented Knowledge Systems documents hypertext as an architecture for linked public knowledge.",
+      "documents Personal Knowledge Systems and Digital Gardens uses hypertext as the linking model for public knowledge gardens."
+    ],
+    "relatedEntityIds": [
+      "ea:publication:hypertext-and-augmented-knowledge-systems",
+      "ea:publication:personal-knowledge-systems-and-digital-gardens"
+    ],
+    "status": "active",
+    "confidence": "canonical",
+    "modifiedAt": "2026-06-24"
+  },
+  {
+    "id": "ea:concept:internet-culture",
+    "route": "/knowledge/concepts/internet-culture/",
+    "type": "concept",
+    "title": "Internet Culture",
+    "alternateNames": [],
+    "definition": "Internet culture is the set of social forms, aesthetics, protocols, communities, memes, archives and practices that emerge through networked communication.",
+    "abstract": "Internet culture connects network protocols, web publishing, platform communities, memes, archives, open source, digital folklore and public knowledge systems.",
+    "headings": [
+      "Definition",
+      "Scope",
+      "Applications",
+      "Limitations",
+      "References"
+    ],
+    "body": "Definition Internet culture is culture shaped by networked communication. It includes communities, aesthetics, rituals, jokes, archives, protocols and platform behaviors. Scope The concept includes memes, forums, social protocols, federated networks, digital folklore, web archives, open-source communities and platform-native genres. Applications Electronic Artefacts can use internet culture as a bridge between technical systems and cultural memory. Limitations Internet culture changes quickly. Durable analysis should focus on patterns, infrastructures and archival traces rather than short-lived trends alone. References See ActivityPub, open source, hypertext and digital preservation.",
+    "tags": [
+      "Internet Culture",
+      "Network Culture",
+      "Memes",
+      "Archives"
+    ],
+    "questions": [],
+    "relationLabels": [
+      "documents Open Source as Cultural Infrastructure frames open collaboration as part of broader internet culture."
+    ],
+    "relatedEntityIds": [
+      "ea:publication:open-source-as-cultural-infrastructure"
+    ],
+    "status": "active",
+    "confidence": "validated",
+    "modifiedAt": "2026-06-24"
+  },
+  {
     "id": "ea:concept:knowledge-graph",
     "route": "/knowledge/concepts/knowledge-graph/",
     "type": "concept",
@@ -337,11 +621,13 @@
     "questions": [],
     "relationLabels": [
       "appliesConcept Vestiges applies knowledge-graph principles to culture, craft, institutions, techniques and public knowledge pages.",
-      "documents Knowledge Graphs for Cultural Infrastructure documents the knowledge-graph concept for cultural publishing."
+      "documents Knowledge Graphs for Cultural Infrastructure documents the knowledge-graph concept for cultural publishing.",
+      "documents Hypertext and Augmented Knowledge Systems explains how knowledge graphs strengthen linked pages with explicit relations."
     ],
     "relatedEntityIds": [
       "ea:project:vestiges",
-      "ea:publication:knowledge-graphs-for-cultural-infrastructure"
+      "ea:publication:knowledge-graphs-for-cultural-infrastructure",
+      "ea:publication:hypertext-and-augmented-knowledge-systems"
     ],
     "status": "active",
     "confidence": "canonical",
@@ -374,14 +660,193 @@
     ],
     "questions": [],
     "relationLabels": [
-      "documents Linked Data and Public Knowledge Pages documents Linked Data as a publishing discipline for public knowledge pages."
+      "documents Linked Data and Public Knowledge Pages documents Linked Data as a publishing discipline for public knowledge pages.",
+      "documents Hypertext and Augmented Knowledge Systems links hypertext practice to Linked Data and stable identifiers."
     ],
     "relatedEntityIds": [
-      "ea:publication:linked-data-and-public-knowledge-pages"
+      "ea:publication:linked-data-and-public-knowledge-pages",
+      "ea:publication:hypertext-and-augmented-knowledge-systems"
     ],
     "status": "active",
     "confidence": "validated",
     "modifiedAt": "2026-06-23"
+  },
+  {
+    "id": "ea:concept:metadata",
+    "route": "/knowledge/concepts/metadata/",
+    "type": "concept",
+    "title": "Metadata",
+    "alternateNames": [],
+    "definition": "Metadata is structured information about a resource, such as title, creator, date, format, source, rights, subject, relation and preservation context.",
+    "abstract": "Metadata is the descriptive, administrative, structural and preservation layer that makes archives, catalogues, digital objects and knowledge graphs usable over time.",
+    "headings": [
+      "Definition",
+      "Scope",
+      "Applications",
+      "Limitations",
+      "References"
+    ],
+    "body": "Definition Metadata is structured information about a resource. It tells future readers what something is, where it came from, how it can be used and how it relates to other records. Scope The concept includes titles, identifiers, creators, dates, formats, sources, rights, provenance, subjects, relations and preservation state. Applications Electronic Artefacts uses metadata in frontmatter, JSON-LD, graph relations, search documents and public pages. Limitations Metadata can be wrong, outdated or too vague. It requires review and should record uncertainty when knowledge is incomplete. References See Dublin Core, PREMIS, METS, provenance and digital preservation.",
+    "tags": [
+      "Metadata",
+      "Archives",
+      "Cataloguing",
+      "Preservation"
+    ],
+    "questions": [],
+    "relationLabels": [
+      "documents Personal Knowledge Systems and Digital Gardens connects durable note systems to metadata and publication state.",
+      "documents Metadata, Cataloguing and Cultural Memory documents metadata as a cultural memory layer.",
+      "documents Typography, Reading Systems and Digital Interfaces links reading systems to visible metadata and article structure."
+    ],
+    "relatedEntityIds": [
+      "ea:publication:personal-knowledge-systems-and-digital-gardens",
+      "ea:publication:metadata-cataloguing-and-cultural-memory",
+      "ea:publication:typography-reading-systems-and-digital-interfaces"
+    ],
+    "status": "active",
+    "confidence": "canonical",
+    "modifiedAt": "2026-06-24"
+  },
+  {
+    "id": "ea:concept:motion-design",
+    "route": "/knowledge/concepts/motion-design/",
+    "type": "concept",
+    "title": "Motion Design",
+    "alternateNames": [],
+    "definition": "Motion design is the use of time, movement, transition, rhythm and sequencing to structure visual communication and interface behavior.",
+    "abstract": "Motion design connects visual culture, interface semantics, typography, animation, sound, choreography and web interaction.",
+    "headings": [
+      "Definition",
+      "Scope",
+      "Applications",
+      "Limitations",
+      "References"
+    ],
+    "body": "Definition Motion design uses time and movement to organize visual experience. In interfaces, it can show where something came from, what changed and what deserves attention. Scope The concept includes transitions, choreography, pacing, animation curves, motion accessibility, state changes, narrative sequences and visual rhythm. Applications Electronic Artefacts can use motion design for public interfaces, interactive essays, generative systems and audio-visual research. Limitations Motion can distract, disorient or exclude. Responsible motion respects user control, reduced-motion preferences and semantic clarity. References See Web Animations, HCI, typography and procedural graphics.",
+    "tags": [
+      "Motion Design",
+      "Animation",
+      "Interface",
+      "Visual Culture"
+    ],
+    "questions": [],
+    "relationLabels": [
+      "documents Procedural Graphics, Shaders and Visual Systems connects procedural visuals to motion design and time-based behavior.",
+      "documents Motion Design, Time and Interface Semantics documents motion design as interface semantics.",
+      "documents Human Computer Interaction for Creative Tools links feedback and state communication to motion design."
+    ],
+    "relatedEntityIds": [
+      "ea:publication:procedural-graphics-shaders-and-visual-systems",
+      "ea:publication:motion-design-time-and-interface-semantics",
+      "ea:publication:human-computer-interaction-for-creative-tools"
+    ],
+    "status": "active",
+    "confidence": "validated",
+    "modifiedAt": "2026-06-24"
+  },
+  {
+    "id": "ea:concept:open-source",
+    "route": "/knowledge/concepts/open-source/",
+    "type": "concept",
+    "title": "Open Source",
+    "alternateNames": [],
+    "definition": "Open source is a software and cultural practice in which source code is made available under licenses that allow use, study, modification and redistribution.",
+    "abstract": "Open source is both a licensing model and a cultural infrastructure for software, creative tools, public knowledge, maintainership and technical education.",
+    "headings": [
+      "Definition",
+      "Scope",
+      "Applications",
+      "Limitations",
+      "References"
+    ],
+    "body": "Definition Open source describes software distributed under terms that permit access to source code, modification and redistribution. Scope The concept includes licenses, governance, maintainers, public collaboration, forks, documentation, issue histories, dependency chains and creative tooling ecosystems. Applications Electronic Artefacts uses open source as a lens for creative coding, web tools, graph systems and long-term cultural infrastructure. Limitations Open source is not automatically sustainable. Maintenance labor, security, documentation and governance remain real costs. References See the Open Source Definition, creative coding and web development.",
+    "tags": [
+      "Open Source",
+      "Software",
+      "Commons",
+      "Infrastructure"
+    ],
+    "questions": [],
+    "relationLabels": [
+      "documents Open Source as Cultural Infrastructure documents open source as a licensing, maintenance and cultural infrastructure practice.",
+      "documents Creative Coding Pedagogy from Logo to p5.js connects creative learning to open examples and open-source communities."
+    ],
+    "relatedEntityIds": [
+      "ea:publication:open-source-as-cultural-infrastructure",
+      "ea:publication:creative-coding-pedagogy-from-logo-to-p5js"
+    ],
+    "status": "active",
+    "confidence": "canonical",
+    "modifiedAt": "2026-06-24"
+  },
+  {
+    "id": "ea:concept:personal-knowledge-system",
+    "route": "/knowledge/concepts/personal-knowledge-system/",
+    "type": "concept",
+    "title": "Personal Knowledge System",
+    "alternateNames": [],
+    "definition": "A personal knowledge system is a practice and tool environment for capturing, linking, revising and retrieving notes, sources, ideas and decisions over time.",
+    "abstract": "Personal knowledge systems connect digital gardens, wikis, note archives, research methods, backlinks and long-term intellectual memory.",
+    "headings": [
+      "Definition",
+      "Scope",
+      "Applications",
+      "Limitations",
+      "References"
+    ],
+    "body": "Definition A personal knowledge system is an ongoing environment for capturing information, linking ideas and turning notes into reusable understanding. Scope The concept includes notes, source records, backlinks, tags, outlines, maps of content, spaced review, digital gardens and research logs. Applications Electronic Artefacts can adapt this logic at site scale. The Knowledge Hub is not personal, but it benefits from the same practices: stable pages, explicit links, source trails and recurring revision. Limitations Capture without synthesis creates clutter. The system becomes valuable when notes are rewritten, linked, pruned and published with context. References See hypertext, knowledge graphs, research methods and digital preservation.",
+    "tags": [
+      "Personal Knowledge Management",
+      "Digital Gardens",
+      "Notes",
+      "Research"
+    ],
+    "questions": [],
+    "relationLabels": [
+      "documents Personal Knowledge Systems and Digital Gardens documents personal knowledge systems as a practice of capture, linking and revision."
+    ],
+    "relatedEntityIds": [
+      "ea:publication:personal-knowledge-systems-and-digital-gardens"
+    ],
+    "status": "active",
+    "confidence": "validated",
+    "modifiedAt": "2026-06-24"
+  },
+  {
+    "id": "ea:concept:procedural-graphics",
+    "route": "/knowledge/concepts/procedural-graphics/",
+    "type": "concept",
+    "title": "Procedural Graphics",
+    "alternateNames": [],
+    "definition": "Procedural graphics are images or visual systems generated from rules, algorithms, parameters, simulation or code rather than only manually drawn assets.",
+    "abstract": "Procedural graphics connect shaders, generative systems, motion design, creative coding, visual culture and real-time web interfaces.",
+    "headings": [
+      "Definition",
+      "Scope",
+      "Applications",
+      "Limitations",
+      "References"
+    ],
+    "body": "Definition Procedural graphics are generated by systems. The creator designs rules, parameters and transformations that produce visual form. Scope The concept includes shaders, particles, cellular systems, noise, simulation, algorithmic layout, generative identity systems and real-time browser graphics. Applications Electronic Artefacts can use procedural graphics to document generative systems, build visual research tools and produce interactive public artefacts. Limitations Procedural visuals can become generic when they rely on fashionable effects without a strong relation to content or material. References See WebGL, creative coding, generative systems and motion design.",
+    "tags": [
+      "Procedural Graphics",
+      "Shaders",
+      "WebGL",
+      "Generative Art"
+    ],
+    "questions": [],
+    "relationLabels": [
+      "documents Creative Coding Pedagogy from Logo to p5.js links visual learning to procedural graphics.",
+      "documents Procedural Graphics, Shaders and Visual Systems documents procedural graphics as a rule-based visual practice."
+    ],
+    "relatedEntityIds": [
+      "ea:publication:creative-coding-pedagogy-from-logo-to-p5js",
+      "ea:publication:procedural-graphics-shaders-and-visual-systems"
+    ],
+    "status": "active",
+    "confidence": "canonical",
+    "modifiedAt": "2026-06-24"
   },
   {
     "id": "ea:concept:provenance",
@@ -412,12 +877,16 @@
     "relationLabels": [
       "documents Knowledge Graphs for Cultural Infrastructure frames provenance as a trust layer for cultural knowledge graphs.",
       "documents Digital Preservation and Living Archives explains provenance as a central layer of living archive practice.",
-      "documents Signal Archaeology, Audio Memory and Machine Listening explains why signal interpretation needs provenance."
+      "documents Signal Archaeology, Audio Memory and Machine Listening explains why signal interpretation needs provenance.",
+      "documents Metadata, Cataloguing and Cultural Memory explains provenance as a key part of trustworthy metadata.",
+      "documents Generative AI, Latent Space and Creative Workflows explains provenance as a requirement for responsible AI-assisted production."
     ],
     "relatedEntityIds": [
       "ea:publication:knowledge-graphs-for-cultural-infrastructure",
       "ea:publication:digital-preservation-and-living-archives",
-      "ea:publication:signal-archaeology-audio-memory-and-machine-listening"
+      "ea:publication:signal-archaeology-audio-memory-and-machine-listening",
+      "ea:publication:metadata-cataloguing-and-cultural-memory",
+      "ea:publication:generative-ai-latent-space-and-creative-workflows"
     ],
     "status": "active",
     "confidence": "validated",
@@ -451,16 +920,88 @@
     "relationLabels": [
       "appliesConcept ORETH applies signal archaeology to audio analysis, machine listening and sonic trace interpretation.",
       "appliesConcept Palimpsests applies signal archaeology by treating sonic residue and media traces as cultural material.",
-      "documents Signal Archaeology, Audio Memory and Machine Listening documents signal archaeology as a concept."
+      "documents Signal Archaeology, Audio Memory and Machine Listening documents signal archaeology as a concept.",
+      "documents Web Audio and Browser-Based Sound Systems connects browser sound tools to signal archaeology."
     ],
     "relatedEntityIds": [
       "ea:program:oreth",
       "ea:project:palimpsests",
-      "ea:publication:signal-archaeology-audio-memory-and-machine-listening"
+      "ea:publication:signal-archaeology-audio-memory-and-machine-listening",
+      "ea:publication:web-audio-and-browser-based-sound-systems"
     ],
     "status": "active",
     "confidence": "observed",
     "modifiedAt": "2026-06-23"
+  },
+  {
+    "id": "ea:concept:typography",
+    "route": "/knowledge/concepts/typography/",
+    "type": "concept",
+    "title": "Typography",
+    "alternateNames": [],
+    "definition": "Typography is the design and arrangement of written language through typefaces, spacing, hierarchy, rhythm, scale and reading conditions.",
+    "abstract": "Typography connects design, reading systems, accessibility, visual culture, web interfaces and long-form knowledge publishing.",
+    "headings": [
+      "Definition",
+      "Scope",
+      "Applications",
+      "Limitations",
+      "References"
+    ],
+    "body": "Definition Typography is the system through which written language becomes visible, readable and structured. Scope The concept includes typefaces, scale, line length, leading, spacing, rhythm, hierarchy, responsive behavior, legibility and accessibility. Applications Electronic Artefacts uses typography as a core layer of the Knowledge Hub because long-form reference content depends on reading quality. Limitations Typography can become aesthetic surface when disconnected from language, context and accessibility. References See CSS Fonts, WCAG, motion design and digital publishing.",
+    "tags": [
+      "Typography",
+      "Reading",
+      "Interface Design",
+      "Accessibility"
+    ],
+    "questions": [],
+    "relationLabels": [
+      "documents Motion Design, Time and Interface Semantics connects motion to typography and reading behavior.",
+      "documents Typography, Reading Systems and Digital Interfaces documents typography as reading infrastructure."
+    ],
+    "relatedEntityIds": [
+      "ea:publication:motion-design-time-and-interface-semantics",
+      "ea:publication:typography-reading-systems-and-digital-interfaces"
+    ],
+    "status": "active",
+    "confidence": "canonical",
+    "modifiedAt": "2026-06-24"
+  },
+  {
+    "id": "ea:concept:web-audio",
+    "route": "/knowledge/concepts/web-audio/",
+    "type": "concept",
+    "title": "Web Audio",
+    "alternateNames": [],
+    "definition": "Web audio is the use of browser-based audio APIs and related web technologies to synthesize, process, analyze, route and present sound.",
+    "abstract": "Web audio connects sound design, browser runtimes, interactive media, creative coding and public sound tools.",
+    "headings": [
+      "Definition",
+      "Scope",
+      "Applications",
+      "Limitations",
+      "References"
+    ],
+    "body": "Definition Web audio is the practice of building audio systems inside browser runtimes. It includes playback, synthesis, routing, analysis and interaction. Scope The concept includes the Web Audio API, audio graphs, analyzers, oscillators, buffers, effects, user gestures, latency and integration with visual systems. Applications Electronic Artefacts can use web audio for public demonstrations, interactive essays, ORETH prototypes and browser-native listening tools. Limitations Browser audio is constrained by device performance, browser policy, autoplay rules and long-term API compatibility. References See the W3C Web Audio API, ORETH, signal archaeology and creative coding.",
+    "tags": [
+      "Web Audio",
+      "Browser",
+      "Sound Design",
+      "Creative Coding"
+    ],
+    "questions": [],
+    "relationLabels": [
+      "documents Web Audio and Browser-Based Sound Systems documents web audio as a browser-native sound practice.",
+      "documents Algorithmic Composition and Rule-Based Music connects rule-based music to browser sound systems."
+    ],
+    "relatedEntityIds": [
+      "ea:publication:web-audio-and-browser-based-sound-systems",
+      "ea:publication:algorithmic-composition-and-rule-based-music"
+    ],
+    "status": "active",
+    "confidence": "validated",
+    "modifiedAt": "2026-06-24"
   },
   {
     "id": "ea:organization:electronic-artefacts",
@@ -529,14 +1070,18 @@
       "appliesConcept ORETH applies signal archaeology to audio analysis, machine listening and sonic trace interpretation.",
       "appliesConcept ORETH applies generative-system thinking to experimental audio structures and pattern exploration.",
       "documents Generative Systems, Cybernetics and Creative Coding links ORETH to audio pattern exploration and generative systems.",
-      "documents Signal Archaeology, Audio Memory and Machine Listening uses ORETH as the machine-listening and audio research context."
+      "documents Signal Archaeology, Audio Memory and Machine Listening uses ORETH as the machine-listening and audio research context.",
+      "documents Web Audio and Browser-Based Sound Systems links ORETH to public sound tools and browser-native audio research.",
+      "documents Algorithmic Composition and Rule-Based Music links ORETH to audio analysis and generative musical exploration."
     ],
     "relatedEntityIds": [
       "ea:project:palimpsests",
       "ea:concept:signal-archaeology",
       "ea:concept:generative-system",
       "ea:publication:generative-systems-cybernetics-and-creative-coding",
-      "ea:publication:signal-archaeology-audio-memory-and-machine-listening"
+      "ea:publication:signal-archaeology-audio-memory-and-machine-listening",
+      "ea:publication:web-audio-and-browser-based-sound-systems",
+      "ea:publication:algorithmic-composition-and-rule-based-music"
     ],
     "status": "prototype",
     "confidence": "observed",
@@ -575,6 +1120,7 @@
       "documents Foundational Lineage",
       "appliesConcept VASTE applies contextual execution through identity-aware graph records, relations, permissions and event propagation.",
       "documents Contextual Execution and Graph Runtimes uses VASTE as the program context for graph runtime execution.",
+      "documents Human Computer Interaction for Creative Tools uses VASTE as a context for graph-aware creative systems.",
       "appliesConcept VASTE applies the graph-runtime concept through addressable entities, typed relationships, identity, context and event execution.",
       "derivedFrom VASTE derives its runtime primitives and contextual execution questions from the Runtime Theory research field.",
       "poweredBy Vestiges uses VASTE as its graph runtime and contextual execution foundation.",
@@ -584,6 +1130,7 @@
       "ea:publication:foundational-lineage-001",
       "ea:concept:contextual-execution",
       "ea:publication:contextual-execution-and-graph-runtimes",
+      "ea:publication:human-computer-interaction-for-creative-tools",
       "ea:concept:graph-runtime",
       "ea:researchField:runtime-theory",
       "ea:project:vestiges",
@@ -668,6 +1215,7 @@
       "appliesConcept Vestiges applies knowledge-graph principles to culture, craft, institutions, techniques and public knowledge pages.",
       "documents Knowledge Graphs for Cultural Infrastructure uses Vestiges as the applied cultural infrastructure example.",
       "documents Digital Preservation and Living Archives connects Vestiges to living archive and cultural knowledge preservation.",
+      "documents Metadata, Cataloguing and Cultural Memory links metadata practice to the Vestiges cultural knowledge project.",
       "poweredBy Vestiges uses VASTE as its graph runtime and contextual execution foundation.",
       "appliesConcept Vestiges applies graph-runtime principles to cultural, craft and human-knowledge infrastructure.",
       "evidencedBy Foundational Lineage",
@@ -677,6 +1225,7 @@
       "ea:concept:knowledge-graph",
       "ea:publication:knowledge-graphs-for-cultural-infrastructure",
       "ea:publication:digital-preservation-and-living-archives",
+      "ea:publication:metadata-cataloguing-and-cultural-memory",
       "ea:program:vaste",
       "ea:concept:graph-runtime",
       "ea:publication:foundational-lineage-001",
@@ -685,6 +1234,69 @@
     "status": "development",
     "confidence": "observed",
     "modifiedAt": "2026-06-22"
+  },
+  {
+    "id": "ea:publication:algorithmic-composition-and-rule-based-music",
+    "route": "/publications/algorithmic-composition-and-rule-based-music/",
+    "type": "publication",
+    "format": "technicalArticle",
+    "title": "Algorithmic Composition and Rule-Based Music",
+    "alternateNames": [],
+    "abstract": "This article explains algorithmic composition through rules, stochastic methods, cybernetics, electronic music, creative coding, generative systems and ORETH.",
+    "headings": [
+      "Problem",
+      "Introduction",
+      "Context",
+      "History",
+      "Core concepts",
+      "Architecture",
+      "Implementation",
+      "Practical applications",
+      "Tools",
+      "Evidence",
+      "Editorial method",
+      "Common mistakes",
+      "Electronic Artefacts implications",
+      "Knowledge graph role",
+      "Evaluation criteria",
+      "Editorial standard",
+      "Reader pathway",
+      "Preservation angle",
+      "Future work",
+      "Related concepts",
+      "Suggested reading",
+      "Related articles",
+      "Glossary",
+      "Limitations",
+      "References"
+    ],
+    "body": "Problem Algorithmic composition is often misunderstood as music made by machines. That framing is too crude. The important question is not whether a computer is involved. The important question is how rules, constraints, probability, feedback and selection shape musical material. This matters because contemporary AI has made generative music visible again, but the history is much older. Composers, theorists and artists have long used procedures to organize pitch, rhythm, timbre, form and performance. Electronic Artefacts needs algorithmic composition as a Knowledge Hub topic because it connects ORETH, generative systems, cybernetics, Web Audio and signal archaeology. Introduction Algorithmic composition is the use of procedures to generate or organize music. The procedure may be a formal rule, stochastic process, software patch, live coding system, model, sequencer, feedback loop or human-machine workflow. The composer does not disappear. Authorship moves into system design, parameter tuning, listening, selection and interpretation. Context Rule-based music sits between music theory and computation. A canon, serial procedure or rhythmic cycle can be algorithmic even without digital machinery. Computers expanded the scale and speed of rule execution, but they did not invent procedural musical thought. Electronic music made this especially clear. Sequencers, modular synthesis, tape processes and computer-assisted composition all treat musical time as something that can be structured by systems. History The history includes formal composition systems, chance operations, stochastic music, cybernetics, computer music labs, algorithmic sequencing, live coding and machine-learning generation. Iannis Xenakis is a key reference because his work made mathematics and stochastic processes compositional materials. Cybernetics adds feedback. A musical system can respond to its own output, performer input, room behavior or listener interaction. That makes composition less like fixed inscription and more like designed behavior. Core concepts Rule: a constraint that determines musical behavior. Stochastic process: a procedure involving probability. Sequence: ordered musical events. Feedback: output or state returning into the system. Parameter: controllable value that changes output. Selection: human or automated choice among generated possibilities. Architecture An algorithmic music system has materials, rules, state, time and evaluation. Materials may be notes, samples, spectra, motifs, rhythms, datasets or live input. Rules transform those materials. State creates memory. Time schedules events. Evaluation decides what remains. ORETH can use this architecture to connect analysis and generation. A machine-listening system may detect patterns, but a compositional system decides how those patterns become musical structure. Implementation Implementation can begin with simple rule systems: generate a rhythm from a pattern, map data to pitch, vary a sequence with probability, or transform an audio feature into control data. More advanced systems include feedback loops, Markov models, constraint solving, live coding, neural generation and Web Audio synthesis. Documentation should record rules, parameters, source material, version and selection method. Without those, the output becomes detached from the system that produced it. Practical applications Algorithmic composition supports generative music, adaptive soundtracks, interactive installations, sound design tools, browser synthesizers, audio research and machine-listening experiments. For Palimpsests, rule-based music can express repetition, memory and transformation. For ORETH, it can connect audio analysis to generative exploration. Tools Useful tools include Max, SuperCollider, TidalCycles, Sonic Pi, Web Audio, MIDI, modular synthesizers, Python audio libraries, Markov models, constraint systems, DAW scripting and version control. Evidence The Electronic Artefacts graph already connects ORETH, generative systems, cybernetic feedback and signal archaeology. Algorithmic composition gives that cluster a musical history and practical vocabulary. The Web Audio API also makes simple algorithmic systems publishable directly in browser pages. Editorial method An article about algorithmic music should distinguish procedure from result. It should explain what the rules do and how the output is evaluated. It should also avoid technological presentism. AI music is part of the story, not the beginning of the story. Common mistakes The first mistake is treating randomness as composition. The second mistake is claiming machine autonomy while hiding human selection. The third mistake is publishing generated sound without preserving rules, sources and parameters. Electronic Artefacts implications Algorithmic composition can help Electronic Artefacts connect music production, sound design and research systems. ORETH can become not only an analysis program but a conceptual home for listening-based generation. The Knowledge Hub should use the topic to attract readers interested in electronic music while connecting them to deeper systems thinking. Knowledge graph role Algorithmic composition is a strong graph topic because it links musical outcomes to rules, tools, concepts and evidence. A generated pattern can be related to a source sample, a method, a software environment, a performance, an article and an archive record. For ORETH, this makes it possible to connect machine listening with musical production. A detected motif can become evidence. A transformation rule can become a method. A generated sketch can become an artefact. Those distinctions prevent the system from collapsing analysis, generation and interpretation into one vague process. Evaluation criteria Rule-based music should be evaluated by listening and structure together. Does the procedure create meaningful musical relationships? Does variation serve the piece? Does feedback create responsive behavior or uncontrolled drift? Are the rules documented enough for future study? Is the human selection process acknowledged? The evaluation should also include material relevance. A system that could use any input with the same effect may be technically interesting but culturally weak. A stronger system transforms material in a way that preserves or reveals something about it. Editorial standard When publishing algorithmic music research, document the compositional system. Name the source materials, rules, probability ranges, timing model, software environment and output selection. If the result is audio, preserve both the rendered sound and the description of the process. This standard lets future readers understand the work as music, software and research evidence. Reader pathway Algorithmic composition is useful for search because it connects music producers, composers, coders and AI-curious readers. The article should welcome practical questions about generative music, then move toward deeper history. Rule-based music did not begin with modern AI. It belongs to a lineage of formal systems, stochastic processes, cybernetics and electronic studios. The next path should lead to Generative System , Cybernetic Feedback , Web Audio and ORETH . This keeps music production linked to the wider Knowledge Hub rather than isolated as a tutorial category. Preservation angle Musical outputs are especially easy to detach from process. A rendered file may survive while the patch, seed, score, sample source or parameter history disappears. Algorithmic work should therefore preserve both sound and procedure. When full reproducibility is impossible, the record should at least preserve enough context to understand the system. That context is what turns a generated track into research evidence rather than only an audio file. Future work Future entries should cover stochastic music, Markov chains, live coding, generative rhythm, adaptive music, Web Audio synthesis, algorithmic mixing and machine listening for composition. Related concepts Read Algorithmic Composition , Generative System , Cybernetic Feedback , Web Audio and ORETH . Suggested reading Start with Xenakis for formalized music and Wiener for cybernetic context. Then study live coding and Web Audio examples. Related articles Continue with Generative Systems, Cybernetics and Creative Coding and Web Audio and Browser-Based Sound Systems . Glossary Algorithmic composition: music organized by rules or procedures. Stochastic: involving probability. Live coding: writing or changing code during performance. Feedback loop: system output returning into future behavior. Limitations Algorithmic composition can overvalue system elegance and undervalue listening. A procedure may be clever while producing weak music. It can also obscure labor. Someone designs, tunes, curates and contextualizes the system. References Iannis Xenakis. Formalized Music. 1971. Norbert Wiener. Cybernetics. 1948. W3C. Web Audio API 1.1. Electronic Artefacts. ORETH and Generative System records.",
+    "tags": [
+      "Algorithmic Composition",
+      "Electronic Music",
+      "Generative Music",
+      "ORETH"
+    ],
+    "questions": [],
+    "relationLabels": [
+      "documents Algorithmic Composition and Rule-Based Music documents algorithmic composition as rule-based musical practice.",
+      "documents Algorithmic Composition and Rule-Based Music connects rule-based music to generative systems.",
+      "documents Algorithmic Composition and Rule-Based Music connects feedback loops to musical systems.",
+      "documents Algorithmic Composition and Rule-Based Music links ORETH to audio analysis and generative musical exploration.",
+      "documents Algorithmic Composition and Rule-Based Music connects rule-based music to browser sound systems.",
+      "hasPart Knowledge Hub Second Wave includes Algorithmic Composition and Rule-Based Music as a core article."
+    ],
+    "relatedEntityIds": [
+      "ea:concept:algorithmic-composition",
+      "ea:concept:generative-system",
+      "ea:concept:cybernetic-feedback",
+      "ea:program:oreth",
+      "ea:concept:web-audio",
+      "ea:collection:knowledge-hub-second-wave"
+    ],
+    "status": "active",
+    "confidence": "published",
+    "modifiedAt": "2026-06-24"
   },
   {
     "id": "ea:publication:contextual-execution-and-graph-runtimes",
@@ -741,6 +1353,66 @@
     "status": "active",
     "confidence": "published",
     "modifiedAt": "2026-06-23"
+  },
+  {
+    "id": "ea:publication:creative-coding-pedagogy-from-logo-to-p5js",
+    "route": "/publications/creative-coding-pedagogy-from-logo-to-p5js/",
+    "type": "publication",
+    "format": "technicalArticle",
+    "title": "Creative Coding Pedagogy from Logo to p5.js",
+    "alternateNames": [],
+    "abstract": "This article explains creative coding pedagogy through exploratory programming, computational literacy, Processing, p5.js, visual feedback and open learning communities.",
+    "headings": [
+      "Problem",
+      "Introduction",
+      "Context",
+      "History",
+      "Core concepts",
+      "Architecture",
+      "Implementation",
+      "Practical applications",
+      "Tools",
+      "Evidence",
+      "Editorial method",
+      "Common mistakes",
+      "Electronic Artefacts implications",
+      "Knowledge graph role",
+      "Evaluation criteria",
+      "Editorial standard",
+      "Reader pathway",
+      "Future work",
+      "Related concepts",
+      "Suggested reading",
+      "Related articles",
+      "Glossary",
+      "Limitations",
+      "References"
+    ],
+    "body": "Problem Programming education often begins with abstraction before experience. Learners are asked to understand syntax, data structures and control flow before they have a reason to care. For artists, designers, musicians and researchers, that sequence can be discouraging. It makes code feel like a gate rather than a medium. Creative coding pedagogy approaches the problem differently. It gives learners immediate feedback through images, sound, motion or interaction. A variable changes a color. A loop draws a pattern. A mouse movement transforms a system. The learner sees computation as material. Electronic Artefacts needs this topic because the Knowledge Hub is not only documenting finished systems. It can also teach the literacies behind them. Introduction Creative coding is programming used as a creative medium. Its pedagogy focuses on exploration, iteration, modification and visible feedback. The goal is not to turn every artist into a software engineer. The goal is to make computational thinking available as artistic and design practice. Processing and p5.js are central references because they helped normalize programming environments for artists and educators. They made code examples legible, visual and shareable. Context Creative coding sits between programming, design, art, education and open source. It values small experiments, readable examples and playful iteration. This does not mean it is technically shallow. Many advanced systems begin as simple sketches. The pedagogical value comes from the loop: write, run, see, change, compare, discuss. This loop makes concepts concrete. Coordinates, loops, functions, arrays and events become visible behaviors. History Creative coding pedagogy has roots in educational computing, Logo, computer art, Processing, design schools, media labs, open-source libraries and online communities. Logo made programming spatial and embodied through turtle graphics. Processing later gave artists a simplified environment for visual computation. p5.js brought that ethos into the browser. This lineage matters because it frames code as expressive material. It also makes examples culturally important. A well-written sketch teaches by being copied and changed. Core concepts Sketch: a small program treated as experiment or study. Iteration: repeated adjustment through feedback. Parameter: a controllable value that changes behavior. Event: a user or system action that changes state. Coordinate system: the spatial model used to draw or place elements. Remix: learning by modifying an existing example. Architecture A creative coding learning environment needs a low-friction editor, fast execution, visible output, accessible examples, error feedback and a community vocabulary. It should reduce setup friction without hiding all computational structure. For public knowledge pages, the architecture can include embedded sketches, source links, explanations and related concepts. A sketch should be both an experience and a record. Implementation Implementation should start with constraints. A good beginner exercise uses a small set of ideas: draw a shape, change a variable, repeat with a loop, respond to input, save an output. As learners progress, exercises can introduce systems thinking: particles, noise, audio input, typographic layout, generative rules, data mapping and shader pipelines. Documentation is part of implementation. The code should explain itself through naming and structure, not only comments. Practical applications Creative coding pedagogy supports visual design, motion studies, sound experiments, generative identity, interactive essays, data visualization, projection systems and browser-based tools. For Electronic Artefacts, it supports future public demonstrations around VASTE, ORETH, Palimpsests and procedural graphics. A concept can be explained through text and an executable sketch. Tools Useful tools include Processing, p5.js, Canvas, WebGL, Web Audio, GLSL, Observable notebooks, CodePen-like environments, local static servers, version control and screenshot capture for documentation. Evidence Processing and p5.js are public examples of creative coding pedagogy at scale. Their ecosystems show how examples, tutorials and open libraries can create computational literacy beyond traditional computer science pathways. Electronic Artefacts already has concepts that benefit from this pedagogical model: Creative Coding , Generative System and Procedural Graphics . Editorial method A Knowledge Hub teaching article should avoid hiding complexity behind magic. It should show a minimal model, explain why it works, then point to extensions. The best editorial pattern is progressive disclosure: simple sketch, concept explanation, variation, related system, preservation note. Common mistakes The first mistake is reducing creative coding to visuals. Sound, text, data, motion and interaction are equally important. The second mistake is over-polishing examples. Learners need readable systems, not only impressive outputs. The third mistake is ignoring accessibility. Creative coding examples should consider keyboard input, reduced motion, contrast and alternative descriptions. Electronic Artefacts implications Electronic Artefacts can use creative coding pedagogy to make its research more legible. Instead of presenting generative systems as finished artefacts only, the site can show the steps, constraints and rules that produce them. This supports organic search because learners search for concepts, tools and patterns. It supports the brand because the teaching remains connected to serious artistic and technical work. Knowledge graph role Creative coding examples become much more valuable when they are linked to concepts. A sketch about particles can document procedural graphics. A browser audio sketch can connect to Web Audio and ORETH. A typography sketch can connect to reading systems and motion design. Without those relations, examples remain isolated snippets. For Electronic Artefacts, the graph can turn teaching material into research infrastructure. A beginner article can link upward to a deeper concept. A project page can link downward to a small explanatory sketch. This creates multiple entry points for readers with different skill levels. Evaluation criteria A creative coding lesson should be judged by more than output quality. Does the code reveal the concept? Can a learner change one parameter and understand the effect? Does the example avoid unnecessary dependencies? Does it explain failure states? Does it connect to history and critique? The strongest exercises are small but expandable. They let a reader understand a system’s core behavior, then imagine variations. Editorial standard Examples should be readable before they are impressive. Variable names, structure and comments should clarify intention. Screenshots and outputs should be paired with explanations of process. If a sketch uses randomness, the article should explain whether the randomness is expressive, exploratory or incidental. This standard prevents the Knowledge Hub from becoming a gallery of effects. It turns examples into durable learning objects. Reader pathway A strong path for this topic starts with a learner’s need: how do I make code feel tangible? The article should answer that question with sketches, then connect the reader to deeper systems. A drawing loop leads to procedural graphics. A changing parameter leads to generative systems. A shared example leads to open source. This path makes the Knowledge Hub useful to beginners without flattening the research context. The next articles should move from pedagogy into Procedural Graphics , Web Audio and algorithmic composition. This also creates a practical SEO ladder. Introductory coding questions can lead to deeper Electronic Artefacts material about systems, archives, audio and generative practice. It also gives future workshops a reusable editorial base. Future work Future articles should cover p5.js patterns, coordinate systems, noise, particles, shaders, interactive sound, generative typography, live coding and preserving code-based sketches. Related concepts Read Creative Coding , Open Source , Procedural Graphics and Generative System . Suggested reading Start with Processing and p5.js examples. Study small sketches by changing one parameter at a time. Related articles Continue with Open Source as Cultural Infrastructure and Procedural Graphics, Shaders and Visual Systems . Glossary Sketch: a compact creative program or study. Parameter: a value exposed for adjustment. Remix: learning through modification. Event: user or system action that changes program state. Limitations Creative coding pedagogy can under-teach software architecture if it remains at sketch level forever. Learners eventually need structure, testing, performance and maintainability. It can also overemphasize novelty. Strong creative coding education should include critique, history and cultural context. References Processing Foundation. Processing Overview. Processing Foundation. p5.js. Electronic Artefacts. Creative Coding, Generative System and Open Source records.",
+    "tags": [
+      "Creative Coding",
+      "Processing",
+      "p5.js",
+      "Education"
+    ],
+    "questions": [],
+    "relationLabels": [
+      "documents Creative Coding Pedagogy from Logo to p5.js documents creative coding as a learning practice.",
+      "documents Creative Coding Pedagogy from Logo to p5.js connects creative learning to open examples and open-source communities.",
+      "documents Creative Coding Pedagogy from Logo to p5.js links visual learning to procedural graphics.",
+      "documents Creative Coding Pedagogy from Logo to p5.js connects sketch-based learning to generative system design.",
+      "hasPart Knowledge Hub Second Wave includes Creative Coding Pedagogy from Logo to p5.js as a core article."
+    ],
+    "relatedEntityIds": [
+      "ea:concept:creative-coding",
+      "ea:concept:open-source",
+      "ea:concept:procedural-graphics",
+      "ea:concept:generative-system",
+      "ea:collection:knowledge-hub-second-wave"
+    ],
+    "status": "active",
+    "confidence": "published",
+    "modifiedAt": "2026-06-24"
   },
   {
     "id": "ea:publication:digital-preservation-and-living-archives",
@@ -839,6 +1511,69 @@
     "modifiedAt": "2026-06-22"
   },
   {
+    "id": "ea:publication:generative-ai-latent-space-and-creative-workflows",
+    "route": "/publications/generative-ai-latent-space-and-creative-workflows/",
+    "type": "publication",
+    "format": "technicalArticle",
+    "title": "Generative AI, Latent Space and Creative Workflows",
+    "alternateNames": [],
+    "abstract": "This article explains generative AI as a creative workflow topic, covering latent spaces, prompts, provenance, risk, evaluation, authorship and Electronic Artefacts systems.",
+    "headings": [
+      "Problem",
+      "Introduction",
+      "Context",
+      "History",
+      "Core concepts",
+      "Architecture",
+      "Implementation",
+      "Practical applications",
+      "Tools",
+      "Evidence",
+      "Editorial method",
+      "Common mistakes",
+      "Electronic Artefacts implications",
+      "Knowledge graph role",
+      "Evaluation criteria",
+      "Editorial standard",
+      "Reader pathway",
+      "Preservation angle",
+      "Future work",
+      "Related concepts",
+      "Suggested reading",
+      "Related articles",
+      "Glossary",
+      "Limitations",
+      "References"
+    ],
+    "body": "Problem Generative AI is often discussed through outputs: an image, a paragraph, a sound, a video, a code snippet. Output-first discussion hides the workflow that produced the result. It hides prompts, source material, model constraints, editing, rejection, rights, uncertainty and human judgment. This creates a cultural problem. Generated media can look complete while its provenance is unclear. A model may produce a convincing answer without reliable grounding. A workflow may depend on undocumented prompts or unstable tools. Electronic Artefacts needs a precise way to discuss generative AI without hype. The Knowledge Hub should treat it as a system of production, risk, augmentation and interpretation. Introduction Generative AI refers to machine-learning systems that produce or transform media from learned patterns. The media may be text, image, audio, video, code or structured data. A creative workflow may use prompts, references, embeddings, latent spaces, model outputs, human selection and editing. The central question is not whether AI was used. The central question is how it was used, what constraints shaped the output, what sources or models were involved, and how the final result was evaluated. Context Generative AI belongs to the longer history of generative systems. It is new in scale and capability, but not in the basic idea of producing outputs from rules, models and constraints. The NIST AI Risk Management Framework provides a useful counterweight to novelty discourse. It frames AI systems through risk, trustworthiness, context and evaluation. Creative practice needs the same discipline. History Machine-learning generation has roots in statistical modeling, neural networks, computer vision, natural language processing, audio synthesis and information retrieval. Transformers became especially important for language and multimodal systems after the publication of “Attention Is All You Need.” Creative cultures rapidly adopted generative models for ideation, drafting, transformation and production. That adoption created new questions around authorship, datasets, labor, style, evaluation and preservation. Core concepts Model: learned system that transforms input into output. Prompt: instruction or input used to guide generation. Embedding: numerical representation of data used for comparison or retrieval. Latent space: learned representation space where related patterns can be navigated. Inference: producing output from a model. Provenance: origin and transformation history. Evaluation: judgment of output quality, risk and fitness. Architecture A responsible generative AI workflow has sources, model, prompt, constraints, output, selection, editing and record. Sources may include reference material, internal notes, datasets or retrieved documents. The model transforms input. Constraints guide output. Selection and editing remain human responsibilities. The record preserves what happened. If the workflow is used inside Electronic Artefacts, it should connect to the graph. A generated artefact should relate to its project, source, method, model context and editorial decision. Implementation Implementation begins by naming the use case. Is the system helping ideation, summarization, drafting, sound exploration, code generation, image generation, classification or retrieval? Then define boundaries. What material can be used? What rights apply? What must be checked? What uncertainty should be disclosed? Finally, preserve workflow evidence. Record prompts when useful, model family when possible, source material, human edits and publication decision. Practical applications Generative AI can support article outlines, glossary drafts, code prototypes, image concepts, audio transformations, metadata extraction, search augmentation and graph exploration. For ORETH, it may help classify or describe audio patterns when paired with listening and provenance. For Palimpsests, it may support transformation and memory experiments if sources and edits remain visible. For the Knowledge Hub, it can assist production but should not replace editorial accountability. Tools Useful tools include language models, image models, audio models, embedding systems, retrieval pipelines, prompt logs, version control, citation managers, human review checklists and provenance records. Evidence NIST frames AI risk management around context, trustworthiness and evaluation. Transformer research provides one technical lineage for modern generative systems. Electronic Artefacts already has concepts for provenance, generative systems, HCI and augmented intelligence, which are necessary to discuss AI responsibly. Editorial method An AI-related article should avoid both hype and dismissal. It should explain the system boundary, the human role and the evidence behind claims. When outputs are generated, the publication should document whether the generated material is a draft, source, artefact, reference or final work. Those roles are different. Common mistakes The first mistake is treating generated output as self-evident evidence. The second mistake is hiding prompts and selection. The third mistake is ignoring rights and training-data questions. The fourth mistake is using “AI” as a vague keyword instead of naming the workflow. Electronic Artefacts implications Electronic Artefacts can discuss generative AI through its own stronger vocabulary: generative systems, provenance, augmented intelligence, HCI and contextual execution. This makes the site more durable. Instead of chasing every model release, it can explain the stable concepts readers will need for years. Knowledge graph role Generative AI workflows need graph structure because they combine many entities: source material, model family, prompt, output, editor, project, rights context, method and publication decision. A flat article can describe those pieces, but a graph can keep them reusable. For Electronic Artefacts, this is the difference between saying “AI was used” and documenting what actually happened. A generated image could be related to a project and a prompt archive. A generated text draft could be related to a source set and human review. An audio transformation could connect ORETH, signal archaeology and provenance. Evaluation criteria AI-assisted work should be evaluated through fitness, provenance, editability, risk and disclosure. Does the output serve a clear purpose? Are source materials and constraints known? Can a human revise the result? Are errors, bias or rights issues considered? Does publication make the system’s role clear enough for readers? The criteria should match the use case. A private ideation sketch requires a different level of disclosure than a public archive record or factual article. Editorial standard The Knowledge Hub should avoid model-release dependency. Instead of publishing thin pages about specific tools, it should document workflows, concepts and evaluation methods. Product details can change quickly. Provenance, human review, source context and interface agency remain durable. Reader pathway Generative AI has high search demand, but the Knowledge Hub should not chase superficial traffic. A reader may arrive asking what latent space, prompting or AI workflow means. The article should answer, then guide the reader toward durable concepts: Provenance , Augmented Intelligence , Human Computer Interaction and Generative System . This pathway lets Electronic Artefacts discuss AI without becoming a news blog. The focus remains on systems, evidence and creative practice. Preservation angle AI-assisted work can be hard to reconstruct. Models change, interfaces disappear, prompts are lost and outputs are edited. A responsible workflow should preserve enough process context to make later interpretation possible. That may include prompts, source sets, model family, human edits, review notes and publication rationale. Future work Future entries should cover embeddings, retrieval-augmented generation, prompt archives, model evaluation, AI audio tools, dataset provenance, synthetic media rights and human-in-the-loop creative systems. Related concepts Read Generative AI , Augmented Intelligence , Provenance , Generative System and Human Computer Interaction . Suggested reading Start with NIST AI RMF for risk and context, then study transformer research and practical workflow documentation. Related articles Continue with Generative Systems, Cybernetics and Creative Coding and Human Computer Interaction for Creative Tools . Glossary Latent space: learned representation space for patterns. Prompt: input used to guide generation. Embedding: numerical representation used for retrieval or comparison. Provenance: origin and transformation history. Limitations Generative AI changes quickly. Durable writing should focus on concepts, workflows and evaluation rather than fragile product comparisons. Model behavior can be uncertain. A responsible workflow keeps human review, source checking and publication judgment explicit. References NIST. AI Risk Management Framework. Vaswani et al. Attention Is All You Need. 2017. Electronic Artefacts. Generative AI, Provenance and Generative System records.",
+    "tags": [
+      "Generative AI",
+      "Latent Space",
+      "Creative Workflows",
+      "Provenance"
+    ],
+    "questions": [],
+    "relationLabels": [
+      "documents Generative AI, Latent Space and Creative Workflows documents generative AI as a creative workflow topic.",
+      "documents Generative AI, Latent Space and Creative Workflows connects generative AI to augmented intelligence.",
+      "documents Generative AI, Latent Space and Creative Workflows explains provenance as a requirement for responsible AI-assisted production.",
+      "documents Generative AI, Latent Space and Creative Workflows situates generative AI within the broader generative systems lineage.",
+      "documents Generative AI, Latent Space and Creative Workflows links AI workflows to human computer interaction and creative agency.",
+      "hasPart Knowledge Hub Second Wave includes Generative AI, Latent Space and Creative Workflows as a core article."
+    ],
+    "relatedEntityIds": [
+      "ea:concept:generative-ai",
+      "ea:concept:augmented-intelligence",
+      "ea:concept:provenance",
+      "ea:concept:generative-system",
+      "ea:concept:human-computer-interaction",
+      "ea:collection:knowledge-hub-second-wave"
+    ],
+    "status": "active",
+    "confidence": "published",
+    "modifiedAt": "2026-06-24"
+  },
+  {
     "id": "ea:publication:generative-systems-cybernetics-and-creative-coding",
     "route": "/publications/generative-systems-cybernetics-and-creative-coding/",
     "type": "publication",
@@ -897,6 +1632,124 @@
     "status": "active",
     "confidence": "published",
     "modifiedAt": "2026-06-23"
+  },
+  {
+    "id": "ea:publication:human-computer-interaction-for-creative-tools",
+    "route": "/publications/human-computer-interaction-for-creative-tools/",
+    "type": "publication",
+    "format": "technicalArticle",
+    "title": "Human Computer Interaction for Creative Tools",
+    "alternateNames": [],
+    "abstract": "This article explains HCI for creative tools, focusing on feedback, agency, flow, error recovery, accessibility, augmented intelligence and computational media.",
+    "headings": [
+      "Problem",
+      "Introduction",
+      "Context",
+      "History",
+      "Core concepts",
+      "Architecture",
+      "Implementation",
+      "Practical applications",
+      "Tools",
+      "Evidence",
+      "Editorial method",
+      "Common mistakes",
+      "Electronic Artefacts implications",
+      "Knowledge graph role",
+      "Evaluation criteria",
+      "Editorial standard",
+      "Reader pathway",
+      "Preservation angle",
+      "Future work",
+      "Related concepts",
+      "Suggested reading",
+      "Related articles",
+      "Glossary",
+      "Limitations",
+      "References"
+    ],
+    "body": "Problem Creative tools are often judged by features. Can the tool generate, edit, export, analyze, organize or automate? Features matter, but they do not determine whether the tool supports creative work. The interface decides whether the user can understand state, explore possibilities, recover from mistakes and trust the system. Human computer interaction is therefore central to creative technology. A sound tool, graph runtime, AI assistant or generative editor can expand creative capability or reduce the user to accepting opaque output. Electronic Artefacts needs HCI as a Knowledge Hub topic because its programs involve graph systems, audio intelligence, generative workflows and public interfaces. Those systems need interaction principles, not only technical architecture. Introduction HCI studies and designs relationships between people and computational systems. For creative tools, the goal is not only efficiency. It is also agency, flow, play, precision, ambiguity and interpretation. The strongest creative interfaces make constraints visible without shutting down discovery. They help the user understand what happened, what can happen next and how to change direction. Context Douglas Engelbart framed computation as a way to augment human intellectual capability. That frame remains useful for creative tools. The computer is not merely executing commands. It is changing the way a person perceives and manipulates a problem space. Modern AI systems make this more urgent. When systems generate suggestions, classifications or transformations, users need interfaces that show source, confidence, alternatives and editability. History HCI emerged from computing, cognitive science, design, ergonomics, human factors and interactive systems research. Creative tools add specific concerns: flow, expressiveness, iteration, materiality and tacit skill. Early drawing, music and programming environments showed that interface design could create new creative practices. The tool does not only serve the work. It shapes the work that becomes thinkable. Core concepts Feedback: visible or audible response to action. Affordance: perceived possibility for action. State: current condition of a system. History: record of actions and changes. Recovery: ability to undo, revise or branch. Flow: sustained engagement with low friction. Agency: user’s ability to understand and direct outcomes. Architecture A creative tool interface needs input, representation, manipulation, feedback and memory. Input can be gesture, text, audio, code, graph selection or parameter change. Representation makes the system visible. Manipulation lets the user act. Feedback confirms or explains change. Memory preserves history, versions and alternatives. VASTE’s contextual execution model is relevant because graph systems need context-aware behavior. A command may mean different things depending on identity, entity, relation, permission and state. Implementation Implementation should begin with the user’s mental model. What does the user think they are editing: a file, graph, sound, prompt, parameter set or publication? Then expose state. Show selected entity, active mode, pending change, source, confidence, permission and result where relevant. Support recovery. Creative work involves trial. Undo, versioning, branching, snapshots and non-destructive editing are not luxuries. Support accessibility. Keyboard navigation, clear focus, readable text, reduced motion and alternative representations increase the range of users and contexts. Practical applications For ORETH, HCI can shape machine-listening interfaces that show what the system detects and how confident it is. For VASTE, HCI can shape graph runtime tools that expose context and relation. For Palimpsests, HCI can support layered exploration of sound, memory and visual residue. For the Knowledge Hub, HCI improves search, related reading, graph navigation and article comprehension. Tools Useful tools include prototypes, usability sessions, interaction logs, keyboard testing, accessibility audits, state diagrams, design tokens, motion guidelines, version histories and browser automation tests. Evidence Engelbart’s augmentation frame shows why tools must be evaluated as part of a human system. WCAG guidance shows why web interfaces must meet accessibility requirements rather than assuming one ideal user. Electronic Artefacts already has the technical entities for this discussion: VASTE , Contextual Execution and Motion Design . Editorial method An HCI article should describe the user, task, context and system state. Without those, interface advice becomes generic. For creative tools, the article should also ask what kind of exploration the interface permits. Does it support sketching? Comparison? Failure? Surprise? Revision? Common mistakes The first mistake is optimizing only for speed. Creative work sometimes needs friction that supports judgment. The second mistake is hiding uncertainty. AI and analysis systems should expose confidence. The third mistake is treating accessibility as final polish. It belongs in the core interaction model. Electronic Artefacts implications Electronic Artefacts should make HCI a recurring lens for programs and projects. The site is not only documenting systems; it is building public interfaces for research. As tools become more intelligent, interaction design becomes more ethical and cultural. The user must remain able to inspect, guide and contest the system. Knowledge graph role HCI also shapes how the graph is experienced. A graph can be formally correct and still difficult to use. Readers need orientation, progressive disclosure and meaningful relation labels. A project page should not overload a newcomer with every possible edge. It should surface relations that help the current task. For Electronic Artefacts, this means graph interfaces need editorial hierarchy. A local neighborhood can show immediate context. A collection can offer a curated path. Search can provide direct retrieval. The interface should let readers move from simple understanding to deeper exploration without losing state. Evaluation criteria A creative tool interface should be evaluated through agency, feedback, recovery and learning. Does the user understand what is selected? Does the system show what changed? Can the user undo or branch? Are generated suggestions labeled as suggestions? Can the user inspect source material or confidence? These questions are especially important for AI-assisted systems. The more a system appears intelligent, the more carefully it should expose uncertainty and user control. Editorial standard When the Knowledge Hub documents a tool or interface, the article should describe the user role, task context, system state and feedback model. Screenshots alone are not enough. The reader should understand what the interface allows, what it prevents and what assumptions it makes about the user. Reader pathway HCI can serve several audiences at once. Designers may arrive through interface questions. Developers may arrive through state and feedback problems. Artists may arrive through creative tool frustrations. The article should give all of them a shared vocabulary: agency, recovery, feedback, history and accessibility. From there, the path should lead to Augmented Intelligence , Motion Design , Generative AI and VASTE . This makes HCI a bridge between interface craft and systems research. Preservation angle Creative tools should preserve decisions, not only final exports. Undo histories, parameter snapshots, prompt logs, graph changes and analysis states can become evidence. HCI and preservation therefore overlap: the same state that helps a user recover today may help a researcher understand the work tomorrow. That overlap should shape future EA tools. Future work Future entries should cover undo systems, creative flow, graph interface patterns, machine-listening UI, prompt interfaces, accessibility for generative tools and public knowledge navigation. Related concepts Read Human Computer Interaction , Augmented Intelligence , Motion Design , Creative Coding and VASTE . Suggested reading Start with Engelbart, WCAG and case studies of creative tools where state and history are visible. Related articles Continue with Hypertext and Augmented Knowledge Systems and Generative AI, Latent Space and Creative Workflows . Glossary Agency: capacity to understand and direct system behavior. Feedback: system response to user action. Affordance: perceived possibility for action. Recovery: ability to undo, revise or branch after action. Limitations HCI methods can become too task-oriented for artistic practice. Creative work includes ambiguity, play and open-ended exploration. The solution is not to reject usability, but to expand what counts as successful interaction. References Douglas C. Engelbart. Augmenting Human Intellect. 1962. W3C WAI. WCAG 2 Overview. Electronic Artefacts. VASTE and Contextual Execution records.",
+    "tags": [
+      "HCI",
+      "Creative Tools",
+      "Augmented Intelligence",
+      "Accessibility"
+    ],
+    "questions": [],
+    "relationLabels": [
+      "documents Human Computer Interaction for Creative Tools documents HCI as a creative tool discipline.",
+      "documents Human Computer Interaction for Creative Tools connects interface design to augmented intelligence.",
+      "documents Human Computer Interaction for Creative Tools links feedback and state communication to motion design.",
+      "documents Human Computer Interaction for Creative Tools uses VASTE as a context for graph-aware creative systems.",
+      "hasPart Knowledge Hub Second Wave includes Human Computer Interaction for Creative Tools as a core article."
+    ],
+    "relatedEntityIds": [
+      "ea:concept:human-computer-interaction",
+      "ea:concept:augmented-intelligence",
+      "ea:concept:motion-design",
+      "ea:program:vaste",
+      "ea:collection:knowledge-hub-second-wave"
+    ],
+    "status": "active",
+    "confidence": "published",
+    "modifiedAt": "2026-06-24"
+  },
+  {
+    "id": "ea:publication:hypertext-and-augmented-knowledge-systems",
+    "route": "/publications/hypertext-and-augmented-knowledge-systems/",
+    "type": "publication",
+    "format": "technicalArticle",
+    "title": "Hypertext and Augmented Knowledge Systems",
+    "alternateNames": [],
+    "abstract": "This article explains hypertext as a long-term knowledge architecture, connecting Vannevar Bush, Douglas Engelbart, web links, knowledge graphs and augmented intelligence.",
+    "headings": [
+      "Problem",
+      "Introduction",
+      "Context",
+      "History",
+      "Core concepts",
+      "Architecture",
+      "Implementation",
+      "Practical applications",
+      "Tools",
+      "Evidence",
+      "Editorial method",
+      "Common mistakes",
+      "Electronic Artefacts implications",
+      "Future work",
+      "Related concepts",
+      "Suggested reading",
+      "Related articles",
+      "Glossary",
+      "Limitations",
+      "References"
+    ],
+    "body": "Problem Most websites treat links as navigation. A link sends a visitor somewhere else: a menu item, a call to action, a source, a related page. That is useful, but it is a limited understanding of hypertext. Hypertext is more than movement between pages. It is a way of organizing thought through associations, references, trails, revisions and context. The problem for a knowledge site is that links can become decorative. A page may link to many things without explaining why those things matter. A footer may list related content without revealing the conceptual relation. Search engines and AI systems may discover URLs, but not understand the site as a body of knowledge. Electronic Artefacts needs a stronger model. The Knowledge Hub should use hypertext as an augmented knowledge system: a public interface where concepts, projects, programs, sources and articles reinforce one another through stable identity and typed relation. Introduction Hypertext begins with a simple proposition: knowledge does not have to be read only in a fixed sequence. A reader can move from one idea to another by association. A publication can become a network. A source can point backward to history and forward to new interpretation. For Electronic Artefacts, hypertext is the public reading layer of the knowledge graph. The graph gives entities stable identities. Hypertext gives those entities a human path. A concept page can lead to a project. A project can lead to a technical article. A technical article can lead to sources, tools, methods and related concepts. That structure is also a theory of augmentation. A good knowledge system does not only store information. It helps a reader perceive relations they would not otherwise notice. Context Vannevar Bush’s memex imagined associative trails as a response to the growing difficulty of managing scientific and cultural records. Douglas Engelbart’s augmentation program pushed further: computation could improve human intellectual effectiveness by changing how people represent, manipulate and share complex structures. The web made linking ordinary, but ordinary links did not automatically solve the problem. Web pages are often chronologically buried, URL structures change, and link meaning is rarely explicit. A knowledge graph adds the missing layer: this page documents a concept, that project applies it, this article cites a source, that program implements a framework. History Hypertext is part of a longer history of memory systems, reference works, indexes, encyclopedias, scholarly citation, card files and annotation. Bush and Engelbart are important because they connected association with technical systems. They did not describe a mere library catalogue. They described work environments where links, representations and tools change the user’s capacity to think. The web standardized a global linking environment. URIs made resources addressable. HTML made anchors ordinary. Search engines made pages discoverable. Later wikis, blogs, digital gardens and graph note systems made linking personal and editorial. Electronic Artefacts stands in this lineage when it treats the site as a living research library rather than a promotional archive. Core concepts Node: a meaningful unit, such as a concept, article, project, source or program. Link: a traversable connection between nodes. Trail: a curated sequence of links that helps a reader follow an argument or topic. Anchor: the visible or machine-readable point where a relation becomes reachable. Context: the surrounding explanation that tells the reader why a link exists. Identity: the stable address of the thing being linked. Architecture A durable hypertext system needs four layers. The first is URL design: pages must have stable, readable, canonical routes. The second is entity identity: the page and the thing described by the page are related but not identical. The third is relation semantics: links should be supported by graph predicates where the relation is important. The fourth is editorial curation: suggested readings and related articles should be selected for meaning, not merely generated from shared tags. In Electronic Artefacts, this architecture already appears through canonical pages, identifier routes, JSON-LD, relation files and graph neighborhoods. The next step is editorial density: more articles must use these structures intentionally. Implementation Implementation begins in frontmatter. Every article should name subjects, sources, claims and evidence. The body should then explain those relations in language. A link to VASTE should not appear because VASTE exists; it should appear because the article is discussing runtime systems, contextual execution or graph-based infrastructure. Internal links should point to stable routes. Concept mentions should become concept links when they help the reader. Articles should include “Related concepts” and “Related articles” sections, but those sections should be curated rather than generic. At build time, the site can generate graph neighborhoods and search documents. At writing time, the editor supplies judgment. Practical applications Hypertext supports onboarding. A reader who arrives through search for “knowledge graph” can move into Linked Data, entity identity, VASTE and Runtime Theory. It supports research. A reader studying signal archaeology can follow links into provenance, digital preservation, ORETH and Palimpsests. It supports AI retrieval. Structured links, headings and JSON-LD make the site easier to parse without reducing articles to keyword pages. It supports memory. Future Electronic Artefacts work can attach new projects to older concepts instead of creating isolated announcements. Tools Useful tools include static site generation, Markdown with structured frontmatter, JSON-LD, RDF concepts, sitemap generation, graph validation, search indexes, backlinks, source records and content audits. Evidence Electronic Artefacts already has the necessary foundation: entity records, typed relations, canonical routes, identifier routes and generated graph views. The new Knowledge Hub articles make that infrastructure visible to readers. The strongest evidence is navigational: a reader can move from this article to Hypertext , Augmented Intelligence , Knowledge Graph and Linked Data without leaving the conceptual frame. Editorial method The editorial method is simple but demanding. Each page should answer three questions: what is this about, what does it connect to, and why does that connection matter? Links should be added when they improve comprehension. A link can define, cite, contrast, extend or contextualize. If a link does none of those things, it is probably noise. Common mistakes The first mistake is using links as decoration. A page with many unexplained links may look rich while remaining conceptually shallow. The second mistake is confusing tags with relations. Tags group pages by broad similarity. Relations describe specific claims. The third mistake is letting time dominate structure. Chronological feeds are useful, but a research library should privilege concepts, sources and durable questions. Electronic Artefacts implications Electronic Artefacts should treat every major article as a node in a long-term knowledge system. VASTE, ORETH, Palimpsests and Vestiges should be linked when they illuminate a subject, not when promotion is needed. The site’s advantage is not only its projects. It is the ability to explain the technical, artistic and historical ideas behind those projects in a public, reusable graph. Future work Future articles should cover wikis, digital gardens, annotation systems, URI design, backlinks, semantic publishing and the relationship between public knowledge pages and AI retrieval. Related concepts Read Hypertext , Augmented Intelligence , Knowledge Graph , Linked Data and Entity Identity . Suggested reading Start with Bush and Engelbart for historical grounding. Then read RDF, URI design and Linked Data material to understand how hypertext becomes semantic infrastructure. Related articles Continue with Linked Data and Public Knowledge Pages and Personal Knowledge Systems and Digital Gardens . Glossary Hypertext: linked text or media designed for non-linear traversal. Trail: a meaningful sequence of connected nodes. URI: a generic identifier for a resource. Augmentation: expanding human capability through tools, representations and methods. Limitations Hypertext can fragment attention. Not every article should become a maze. A strong page needs a clear argument and carefully chosen exits. Links also decay. Long-term hypertext systems need redirects, stable identifiers and periodic link review. References Vannevar Bush. As We May Think. 1945. Douglas C. Engelbart. Augmenting Human Intellect. 1962. RFC 3986. Uniform Resource Identifier Generic Syntax. 2005. Electronic Artefacts. Knowledge Graph and Linked Data records.",
+    "tags": [
+      "Hypertext",
+      "Augmented Intelligence",
+      "Knowledge Graph",
+      "Linked Data",
+      "History of Technology"
+    ],
+    "questions": [],
+    "relationLabels": [
+      "documents Hypertext and Augmented Knowledge Systems documents hypertext as an architecture for linked public knowledge.",
+      "documents Hypertext and Augmented Knowledge Systems connects hypertext to augmented intelligence and human knowledge work.",
+      "documents Hypertext and Augmented Knowledge Systems explains how knowledge graphs strengthen linked pages with explicit relations.",
+      "documents Hypertext and Augmented Knowledge Systems links hypertext practice to Linked Data and stable identifiers.",
+      "hasPart Knowledge Hub Second Wave includes Hypertext and Augmented Knowledge Systems as a core article."
+    ],
+    "relatedEntityIds": [
+      "ea:concept:hypertext",
+      "ea:concept:augmented-intelligence",
+      "ea:concept:knowledge-graph",
+      "ea:concept:linked-data",
+      "ea:collection:knowledge-hub-second-wave"
+    ],
+    "status": "active",
+    "confidence": "published",
+    "modifiedAt": "2026-06-24"
   },
   {
     "id": "ea:publication:knowledge-graphs-for-cultural-infrastructure",
@@ -1010,6 +1863,306 @@
     "modifiedAt": "2026-06-23"
   },
   {
+    "id": "ea:publication:metadata-cataloguing-and-cultural-memory",
+    "route": "/publications/metadata-cataloguing-and-cultural-memory/",
+    "type": "publication",
+    "format": "technicalArticle",
+    "title": "Metadata, Cataloguing and Cultural Memory",
+    "alternateNames": [],
+    "abstract": "This article explains metadata as a cultural memory layer, connecting cataloguing, Dublin Core, PREMIS, METS, provenance, archives and knowledge graphs.",
+    "headings": [
+      "Problem",
+      "Introduction",
+      "Context",
+      "History",
+      "Core concepts",
+      "Architecture",
+      "Implementation",
+      "Practical applications",
+      "Tools",
+      "Evidence",
+      "Editorial method",
+      "Common mistakes",
+      "Electronic Artefacts implications",
+      "Knowledge graph role",
+      "Evaluation criteria",
+      "Editorial standard",
+      "Reader pathway",
+      "Future work",
+      "Related concepts",
+      "Suggested reading",
+      "Related articles",
+      "Glossary",
+      "Limitations",
+      "References"
+    ],
+    "body": "Problem Digital culture creates enormous quantities of files, pages, exports, recordings, screenshots, notes, code and media fragments. Without metadata, those objects lose context quickly. A file may still open but no longer explain who made it, why it exists, what it relates to, whether it can be used or how it changed. The problem is not only technical. Metadata is cultural memory. It preserves the conditions that make interpretation possible. Without it, archives become storage. Search becomes guesswork. Knowledge graphs become weak maps. Electronic Artefacts needs metadata because its work crosses software, sound, research, design, art and systems. The same object may be a project output, evidence for a claim, a preserved artefact and a source for future work. Introduction Metadata is structured information about a resource. It can be descriptive, administrative, structural or preservation-oriented. Descriptive metadata helps identify and discover an object. Administrative metadata records rights, technical properties and management context. Structural metadata explains parts and relationships. Preservation metadata records actions, agents, formats and fixity. For the Knowledge Hub, metadata is not hidden paperwork. It is part of publication quality. Context Dublin Core, METS and PREMIS come from library, archive and preservation contexts. Their details differ, but they share a premise: digital resources require structured context. Electronic Artefacts does not need to reproduce every archival standard. It does need to respect the same logic. A public record should name title, identifier, creator, date, source, rights, relation, confidence and version where possible. History Cataloguing predates digital systems. Libraries, museums and archives developed descriptive practices to make collections discoverable and accountable. Digital networks changed the scale and the fragility of the problem. Files can be copied endlessly while losing context. Links can circulate without provenance. Formats can become obsolete. Metadata standards emerged to address different parts of this environment. Dublin Core offered a broad vocabulary for resource description. METS provided a way to encode descriptive, administrative and structural metadata for digital library objects. PREMIS focused on preservation metadata. Core concepts Identifier: a stable reference to a resource. Title: the name used to identify the resource. Creator: the person or organization responsible for creation. Source: the resource from which another resource derives. Rights: legal and usage context. Relation: a structured connection to another resource. Fixity: evidence that a file has not changed unexpectedly. Architecture A metadata architecture needs a schema, vocabulary, validation and publication path. The schema defines required fields. The vocabulary keeps terms consistent. Validation catches missing or malformed values. Publication exposes metadata to readers, search engines and machines. Electronic Artefacts implements this through frontmatter, entity schemas, relation schemas, generated pages, JSON-LD and search documents. The architecture is strongest when article prose and machine metadata agree. Implementation Implementation should begin with minimum viable metadata for every public record: identifier, type, title, abstract, status, maturity, dates, author, publisher, subjects and sources. For preservation-sensitive objects, add format, rights, provenance, fixity and relation to original files. Metadata should be reviewed when content changes. A modified article should update modifiedAt. A speculative concept should not pretend to be canonical. A source should include accessedAt when it is web-based. Practical applications Metadata improves search by giving documents clear subjects and descriptions. It improves navigation by allowing related content to be generated from real entities. It improves preservation by recording origin, format and change. It improves trust by showing what a claim depends on. In Vestiges, metadata can connect culture, craft, institutions, techniques and sources. In Palimpsests, it can preserve audio and visual residue. In ORETH, it can document analysis outputs and machine-listening context. Tools Useful tools include Dublin Core vocabularies, PREMIS, METS, JSON-LD, RDF, YAML frontmatter, checksums, file inventories, source registers, validation scripts and graph neighborhood generation. Evidence The Knowledge Hub already demonstrates metadata’s value. Every entity carries type, status, maturity, confidence, dates and subjects. Generated pages turn those records into public knowledge surfaces. Editorial method Editors should treat metadata as writing. A vague abstract or broad tag weakens the article. A precise subject list makes the record discoverable and helps future authors link to it. Metadata should also record uncertainty. If a date is approximate, if attribution is unclear or if rights are unknown, the record should say so rather than conceal the gap. Common mistakes The first mistake is postponing metadata until the end. Context is easiest to capture when work is created. The second mistake is over-customization. A private vocabulary may feel expressive but become difficult to integrate. The third mistake is treating tags as enough. Tags group content; metadata explains resources. Electronic Artefacts implications Electronic Artefacts can use metadata to connect creative production with research memory. This matters because the site is not only presenting work. It is documenting an ecosystem. The Knowledge Hub should continue to add concept records, article subjects, source trails and relation statements before content volume overwhelms structure. Knowledge graph role Metadata is the bridge between a page and a graph. A prose article can explain an idea, but metadata makes that article addressable, sortable and reusable. Subjects connect it to entities. Sources connect it to evidence. Dates make revision visible. Confidence levels tell readers how stable the record is. In Electronic Artefacts, this is especially important because many pages are not simply articles. A project page may be evidence for a concept. A program page may implement a framework. A technology page may support several publications. Metadata lets those roles remain distinct while still connected. Evaluation criteria A metadata record should be evaluated by usefulness, not density. The best question is not “did we fill every field?” but “will this help a future reader understand, retrieve, trust or preserve the object?” Good metadata names the resource clearly, distinguishes the resource from the page describing it, identifies creators and sources, records rights where relevant, connects related records and avoids false precision. When information is unknown, the record should preserve uncertainty rather than invent certainty. Editorial standard The Knowledge Hub should treat metadata changes as editorial changes. If a source is added, a concept becomes canonical or an article is substantially revised, the metadata should change with the text. This keeps the graph honest. It also makes generated search documents and JSON-LD reflect the actual publication state. Reader pathway Metadata can feel abstract until a reader loses context. The article should therefore guide readers from everyday questions, such as “what is this file?” or “where did this source come from?”, toward archival concepts like provenance, preservation metadata and graph relations. The strongest path leads from Metadata to Provenance , Digital Preservation and Vestiges . Future work Future entries should cover preservation metadata, rights metadata, source criticism, file format sustainability, checksums, cataloguing for audio and graph-based archival description. Related concepts Read Metadata , Provenance , Digital Preservation , Knowledge Graph and Vestiges . Suggested reading Start with Dublin Core for general description, then study METS and PREMIS for digital library and preservation contexts. Related articles Continue with Digital Preservation and Living Archives and Knowledge Graphs for Cultural Infrastructure . Glossary Metadata: structured information about a resource. Cataloguing: the practice of describing resources for discovery and management. PREMIS: a preservation metadata standard. METS: a standard for encoding digital library object metadata. Limitations Metadata can create false authority. A well-structured record may still be wrong. Review, sources and confidence levels remain necessary. Metadata also costs time. The right response is not to describe everything exhaustively, but to capture the context future readers will actually need. References Dublin Core Metadata Initiative. DCMI Metadata Terms. Library of Congress. METS. Library of Congress. PREMIS. Electronic Artefacts. Vestiges, Knowledge Graph and Digital Preservation records.",
+    "tags": [
+      "Metadata",
+      "Cataloguing",
+      "Archives",
+      "Cultural Memory"
+    ],
+    "questions": [],
+    "relationLabels": [
+      "documents Metadata, Cataloguing and Cultural Memory documents metadata as a cultural memory layer.",
+      "documents Metadata, Cataloguing and Cultural Memory explains provenance as a key part of trustworthy metadata.",
+      "documents Metadata, Cataloguing and Cultural Memory connects metadata to digital preservation and long-term context.",
+      "documents Metadata, Cataloguing and Cultural Memory links metadata practice to the Vestiges cultural knowledge project.",
+      "hasPart Knowledge Hub Second Wave includes Metadata, Cataloguing and Cultural Memory as a core article."
+    ],
+    "relatedEntityIds": [
+      "ea:concept:metadata",
+      "ea:concept:provenance",
+      "ea:concept:digital-preservation",
+      "ea:project:vestiges",
+      "ea:collection:knowledge-hub-second-wave"
+    ],
+    "status": "active",
+    "confidence": "published",
+    "modifiedAt": "2026-06-24"
+  },
+  {
+    "id": "ea:publication:motion-design-time-and-interface-semantics",
+    "route": "/publications/motion-design-time-and-interface-semantics/",
+    "type": "publication",
+    "format": "technicalArticle",
+    "title": "Motion Design, Time and Interface Semantics",
+    "alternateNames": [],
+    "abstract": "This article explains motion design as a semantic layer for digital interfaces, connecting time, transition, attention, accessibility and Web Animations.",
+    "headings": [
+      "Problem",
+      "Introduction",
+      "Context",
+      "History",
+      "Core concepts",
+      "Architecture",
+      "Implementation",
+      "Practical applications",
+      "Tools",
+      "Evidence",
+      "Editorial method",
+      "Common mistakes",
+      "Electronic Artefacts implications",
+      "Knowledge graph role",
+      "Evaluation criteria",
+      "Editorial standard",
+      "Reader pathway",
+      "Preservation angle",
+      "Future work",
+      "Related concepts",
+      "Suggested reading",
+      "Related articles",
+      "Glossary",
+      "Limitations",
+      "References"
+    ],
+    "body": "Problem Motion on the web is frequently treated as decoration. Elements fade, slide, pulse or spin because motion can feel polished. But decorative motion can also distract, disorient, hide state changes and waste attention. The more useful view is that motion design is interface semantics. It can explain where something came from, what changed, what is related and what the user can do next. Time becomes part of meaning. Electronic Artefacts needs this topic because its site is built around knowledge navigation, projects, graph relations and experimental media. Motion can help readers understand those structures, but only if it is designed with discipline. Introduction Motion design uses time, movement, rhythm and transition to structure visual communication. In digital interfaces, it can communicate continuity, hierarchy, feedback and causality. The question is not whether an interface moves. The question is why it moves, how long it moves, what state it reveals and whether the user can still read and control the experience. Context Web Animations defines a model for timing changes to page presentation. CSS transitions, CSS animations, SVG animation and scripted animation all participate in the broader motion environment of the web. Accessibility standards add another context. Motion must respect human variation. Some users are sensitive to movement. Some need predictable focus. Some browse with reduced-motion preferences. History Motion design grew from film titles, broadcast graphics, animation, interaction design and software interface patterns. As interfaces became more dynamic, motion moved from media production into everyday product design. On the web, early motion often came from plugins and scripted effects. Modern browser APIs made animation more integrated. That made motion easier to deploy, but not automatically better. Core concepts Timing: duration and delay. Easing: the rate of change over time. Continuity: visual connection across states. Feedback: motion that confirms user action. Hierarchy: motion that prioritizes attention. Reduced motion: user preference for less movement. Architecture A motion system needs tokens, rules and contexts. Tokens define durations and easing curves. Rules define which state changes move and which do not. Contexts define when motion is appropriate: navigation, opening, closing, loading, error, success, focus or data update. The system should not rely on one animation everywhere. A knowledge page, project hero and graph interaction have different motion needs. Implementation Implementation should start with state. What state changes require visual explanation? A panel opening, a graph node expanding, a search result appearing and a route transition all have different semantics. Then define timing. Fast feedback can be under 150 milliseconds. Larger transitions may need more time but should not block reading. Motion should be disabled or simplified when the user requests reduced motion. Web Animations, CSS transitions and CSS animations should be used with semantic class changes and predictable state management. Practical applications Motion can help a reader understand graph expansion, card filtering, route transitions, audio playback state, image sequence comparison and archive exploration. It can also support storytelling. A Palimpsests page might use layered transitions to express residue. An ORETH visualization might use time-based motion to reveal audio analysis. Tools Useful tools include CSS transitions, CSS animations, Web Animations API, requestAnimationFrame, reduced-motion media queries, browser performance tools, timeline inspectors and accessibility testing. Evidence The W3C Web Animations specification defines a model for synchronization and timing of presentation changes. WCAG guidance frames accessibility as a web content requirement, not an optional enhancement. Electronic Artefacts can combine both: motion should be technically stable and human-centered. Editorial method When documenting motion, describe what the motion means. Does it reveal hierarchy? Connect two states? Show temporal process? Confirm interaction? If the answer is unclear, the motion may not be needed. Motion examples should include timing values, reduced-motion behavior and rationale. Common mistakes The first mistake is using motion to hide slow interfaces. Performance issues should be fixed, not animated away. The second mistake is animating everything. Constant movement reduces meaning. The third mistake is ignoring text. Motion should not make reading harder. Electronic Artefacts implications Electronic Artefacts can develop a quiet but expressive motion language for knowledge exploration. The site should use motion to support comprehension, not to mimic marketing interfaces. This matters for long-form content. A research library should feel alive without making the reader fight the page. Knowledge graph role Motion can express graph structure when used carefully. A node can expand from its source, a related article can appear as a continuation, a filtered set can contract without losing orientation, and a route transition can preserve a reader’s sense of place. The graph should not be animated for spectacle. Motion should clarify relation. If a publication documents a concept, the transition can feel direct and stable. If a collection gathers multiple articles, the interface can reveal grouping without turning the page into a performance. Evaluation criteria Motion should be evaluated by semantic clarity, accessibility, performance and restraint. Does the movement communicate state? Does it help the reader predict what changed? Does it respect reduced-motion settings? Does it avoid layout shift? Does it preserve text readability? The best motion systems are quiet. They appear when state changes need explanation and disappear when reading requires stillness. Editorial standard Motion documentation should record timing, easing, trigger, affected elements and fallback. A motion pattern without a written rationale becomes hard to maintain. Future contributors may copy it as decoration without understanding its purpose. For Electronic Artefacts, motion patterns should be attached to interface roles: graph expansion, search filtering, route transition, media playback, archive layering or project reveal. Reader pathway Motion design is a strong search topic because many readers look for animation techniques. The Knowledge Hub should capture that interest, then move the reader toward semantic design. The question should change from “how do I animate this?” to “what state does this motion explain?” That path connects implementation to HCI. A transition can support orientation. A reduced-motion fallback can support accessibility. A timing token can support consistency. A graph expansion can make relation visible. The article should therefore send readers toward Human Computer Interaction , Typography and Web Animations . Preservation angle Motion is difficult to preserve because it lives in time. A static screenshot cannot show pacing, easing or interaction. When a motion pattern matters, preserve a description, code reference, timing values and, where possible, a short capture. This lets future readers distinguish a design decision from an accidental animation artifact. For a research site, this is not secondary. Motion may become part of how a reader understands archive layers, audio state or graph expansion. If that behavior disappears, part of the interface argument disappears with it. Documentation keeps temporal design available for future maintenance and critique. That documentation also helps future contributors avoid accidental inconsistency. They can reuse a motion pattern because its role is known, not because it happened to look good in an earlier release. This preserves design intent. Future work Future entries should cover motion tokens, graph transitions, reduced-motion design, scroll-linked animation, kinetic typography and audio-reactive motion. Related concepts Read Motion Design , Web Animations , Human Computer Interaction and Typography . Suggested reading Start with Web Animations and WCAG resources, then study interfaces where motion clarifies state instead of decorating it. Related articles Continue with Typography, Reading Systems and Digital Interfaces and Human Computer Interaction for Creative Tools . Glossary Easing: rate curve for animation. State change: transition from one interface condition to another. Reduced motion: user preference to limit motion. Timeline: temporal structure of an animation. Limitations Motion design is not universally beneficial. Some users prefer or require less motion. Some content needs stability. A responsible motion system is restrained, semantic and optional where appropriate. References W3C. Web Animations. W3C WAI. WCAG 2 Overview. Electronic Artefacts. Motion Design, HCI and Typography records.",
+    "tags": [
+      "Motion Design",
+      "Web Animations",
+      "Interface Design",
+      "Accessibility"
+    ],
+    "questions": [],
+    "relationLabels": [
+      "documents Motion Design, Time and Interface Semantics documents motion design as interface semantics.",
+      "usesTechnology Motion Design, Time and Interface Semantics uses Web Animations as its main web timing reference.",
+      "documents Motion Design, Time and Interface Semantics links motion design to human computer interaction.",
+      "documents Motion Design, Time and Interface Semantics connects motion to typography and reading behavior.",
+      "hasPart Knowledge Hub Second Wave includes Motion Design, Time and Interface Semantics as a core article."
+    ],
+    "relatedEntityIds": [
+      "ea:concept:motion-design",
+      "ea:technology:web-animations",
+      "ea:concept:human-computer-interaction",
+      "ea:concept:typography",
+      "ea:collection:knowledge-hub-second-wave"
+    ],
+    "status": "active",
+    "confidence": "published",
+    "modifiedAt": "2026-06-24"
+  },
+  {
+    "id": "ea:publication:open-source-as-cultural-infrastructure",
+    "route": "/publications/open-source-as-cultural-infrastructure/",
+    "type": "publication",
+    "format": "technicalArticle",
+    "title": "Open Source as Cultural Infrastructure",
+    "alternateNames": [],
+    "abstract": "This article frames open source as cultural infrastructure, explaining licenses, maintenance, creative tools, dependency chains, commons and public knowledge systems.",
+    "headings": [
+      "Problem",
+      "Introduction",
+      "Context",
+      "History",
+      "Core concepts",
+      "Architecture",
+      "Implementation",
+      "Practical applications",
+      "Tools",
+      "Evidence",
+      "Editorial method",
+      "Common mistakes",
+      "Electronic Artefacts implications",
+      "Knowledge graph role",
+      "Evaluation criteria",
+      "Preservation angle",
+      "Reader pathway",
+      "Future work",
+      "Related concepts",
+      "Suggested reading",
+      "Related articles",
+      "Glossary",
+      "Limitations",
+      "References"
+    ],
+    "body": "Problem Open source is often described as a software distribution model. That is accurate but incomplete. Open source also determines who can learn from code, adapt tools, preserve software, audit systems, build creative environments and sustain technical communities. The problem is that cultural discussions of software often focus on finished products while ignoring the shared infrastructure below them. Creative coding libraries, browser standards, build tools, audio frameworks, fonts, package managers and documentation systems shape what artists and researchers can attempt. Electronic Artefacts needs to discuss open source as cultural infrastructure: a material layer that supports creative practice, knowledge publishing and long-term access. Introduction Open source means more than public source code. The Open Source Definition describes distribution terms that permit redistribution, access to source code, derived works and non-discrimination. Those legal conditions matter because they allow communities to study, modify and circulate software. But the cultural value of open source depends on more than licensing. A project can be legally open and practically unusable. Documentation, maintainership, governance, examples, tests and community norms decide whether code becomes infrastructure. Context Creative technology depends heavily on open source. Processing, p5.js, WebGL tooling, audio libraries, visualization frameworks and static site systems all extend what individual creators can build. They also create dependency chains. A small library may become part of thousands of artworks, websites or research tools. Open source therefore belongs in a Knowledge Hub about art, software and research. It is not a side topic. It explains how technical cultures reproduce themselves. History The history of open source includes free software, academic code sharing, Unix culture, hacker ethics, internet collaboration, community governance and institutional adoption. The term “open source” helped clarify licensing and business compatibility, while free software retained a stronger ethical vocabulary around user freedoms. For creative coding, open source made programming environments teachable. Learners could inspect examples, copy sketches, change parameters and share modifications. That pedagogical loop helped computation become a creative medium. Core concepts License: the legal terms that permit or restrict use. Source code: the preferred form for understanding and modifying software. Fork: a divergent development path from an existing codebase. Maintainer: a person or group responsible for review, releases and stewardship. Dependency: a software component used by another project. Commons: shared resources governed for collective use. Architecture Open source infrastructure has layers. The legal layer defines rights. The technical layer includes repositories, issues, builds, tests and releases. The social layer includes maintainers, contributors, norms and governance. The documentation layer teaches use and preserves context. The archival layer keeps code, releases and dependencies recoverable. When any layer fails, the project weakens. A library with permissive licensing but no documentation may be inaccessible to new users. A popular tool with exhausted maintainers may become fragile infrastructure. Implementation For Electronic Artefacts, open source should be documented with precision. If a project uses an open-source library, the article should name the library, role, license when relevant and preservation implication. If a tool is inspired by open-source practice, the article should separate inspiration from actual license status. Internal tools can also adopt open-source habits without being public immediately: clear README files, versioning, changelogs, examples, issue notes and dependency records. Practical applications Open source supports education because learners can inspect working systems. It supports preservation because code can be archived, rebuilt and studied. It supports creative practice because artists can adapt tools instead of waiting for closed vendors. It supports knowledge systems because schemas, validators and generators can be reviewed and extended. Tools Useful tools include Git, public repositories, package managers, issue trackers, changelogs, semantic versioning, license files, dependency scanners, documentation generators and static site builds. Evidence The Electronic Artefacts Knowledge Hub itself benefits from open technical patterns: structured Markdown, generated pages, JSON-LD, graph validation and static output. Even when a repository is project-specific, the culture of inspectable systems shapes the work. Creative coding also provides public evidence. Processing and p5.js show how open tools can create learning communities around code, art and education. Editorial method A good open-source article should distinguish license, governance and cultural effect. It should not call something open source simply because it is visible online. It should ask who can use it, who can modify it, who maintains it and what happens if dependencies disappear. Common mistakes The first mistake is equating public code with open source. The second mistake is romanticizing unpaid maintenance. Infrastructure has labor costs. The third mistake is ignoring licenses until publication. Rights should be documented early. Electronic Artefacts implications Electronic Artefacts can treat open source as part of its intellectual environment. VASTE, ORETH and future tools should document dependencies and reusable patterns where appropriate. The Knowledge Hub can also publish educational articles that help readers understand not only what a tool does, but what cultural conditions made it possible. Knowledge graph role Open source becomes more legible when it is represented relationally. A tool can depend on a library. A project can use a technology. A publication can document a concept. A program can be maintained by an organization. These relations make infrastructure visible. For Electronic Artefacts, that matters because software dependencies are not only build details. They are part of the cultural and technical conditions of the work. If a future project uses Web Audio, WebGL, p5.js or a graph library, the Knowledge Hub should be able to explain the relation between the project, the tool and the broader open-source ecosystem. Evaluation criteria An open-source record should answer more than “is the code public?” It should ask whether the license permits use and modification, whether the source is the preferred form for change, whether releases are identifiable, whether maintainers are visible, whether documentation exists and whether dependencies can be preserved. Creative projects should also ask what kind of learning the software enables. A library that is readable and well documented can become pedagogy. A library that is powerful but opaque may still be useful, but it plays a different cultural role. Preservation angle Open source helps preservation only when the code and its context survive. A repository without releases, examples, licenses or dependency records may be hard to reconstruct. A responsible cultural archive should therefore preserve not only source code, but also documentation, version constraints, sample inputs, outputs and build instructions. Reader pathway A search visitor may arrive through a practical query about open source, creative coding or software culture. The article should move that reader from licensing into infrastructure: who maintains the code, what depends on it, how it teaches, and how it can be preserved. From there, the natural path leads to Creative Coding , Digital Preservation and future software archive records. Future work Future entries should cover software preservation, creative coding libraries, dependency archives, licenses for cultural projects, maintainership models and open-source governance. Related concepts Read Open Source , Creative Coding , Internet Culture and Digital Preservation . Suggested reading Start with the Open Source Definition, then study concrete creative tools such as Processing and p5.js through examples and repository histories. Related articles Continue with Creative Coding Pedagogy from Logo to p5.js and Digital Preservation and Living Archives . Glossary Open source: software distributed under terms that allow use, study, modification and redistribution. Maintainer: steward of a project repository and release process. Fork: a separate development path derived from an existing codebase. Dependency: software required by another system. Limitations Open source does not solve every problem. It can reproduce inequality, burn out maintainers and create fragile dependency chains. It also does not replace editorial judgment. A public knowledge system should document open-source use without turning every article into a software advocacy text. References Open Source Initiative. The Open Source Definition. Processing Foundation. p5.js. Electronic Artefacts. Creative Coding and Digital Preservation records.",
+    "tags": [
+      "Open Source",
+      "Creative Coding",
+      "Infrastructure",
+      "Maintainers"
+    ],
+    "questions": [],
+    "relationLabels": [
+      "documents Open Source as Cultural Infrastructure documents open source as a licensing, maintenance and cultural infrastructure practice.",
+      "documents Open Source as Cultural Infrastructure connects open source to creative coding tools and pedagogy.",
+      "documents Open Source as Cultural Infrastructure frames open collaboration as part of broader internet culture.",
+      "documents Open Source as Cultural Infrastructure connects software access and maintenance to preservation concerns.",
+      "hasPart Knowledge Hub Second Wave includes Open Source as Cultural Infrastructure as a core article."
+    ],
+    "relatedEntityIds": [
+      "ea:concept:open-source",
+      "ea:concept:creative-coding",
+      "ea:concept:internet-culture",
+      "ea:concept:digital-preservation",
+      "ea:collection:knowledge-hub-second-wave"
+    ],
+    "status": "active",
+    "confidence": "published",
+    "modifiedAt": "2026-06-24"
+  },
+  {
+    "id": "ea:publication:personal-knowledge-systems-and-digital-gardens",
+    "route": "/publications/personal-knowledge-systems-and-digital-gardens/",
+    "type": "publication",
+    "format": "technicalArticle",
+    "title": "Personal Knowledge Systems and Digital Gardens",
+    "alternateNames": [],
+    "abstract": "This article explains personal knowledge systems and digital gardens as durable practices for notes, sources, backlinks, revision, public learning and research libraries.",
+    "headings": [
+      "Problem",
+      "Introduction",
+      "Context",
+      "History",
+      "Core concepts",
+      "Architecture",
+      "Implementation",
+      "Practical applications",
+      "Tools",
+      "Evidence",
+      "Editorial method",
+      "Common mistakes",
+      "Electronic Artefacts implications",
+      "Knowledge graph role",
+      "Evaluation criteria",
+      "Reader pathway",
+      "Future work",
+      "Related concepts",
+      "Suggested reading",
+      "Related articles",
+      "Glossary",
+      "Limitations",
+      "References"
+    ],
+    "body": "Problem People collect more information than they can use. Notes accumulate in applications, bookmarks vanish into folders, PDFs sit unread, conversations become impossible to find, and ideas repeat because earlier versions were never connected to later work. The problem is not only storage. The problem is retrieval, relation and revision. A personal knowledge system attempts to solve this at individual scale. A digital garden brings part of that practice into public. It treats knowledge as something cultivated over time rather than published once and abandoned. Electronic Artefacts has a related challenge at institutional scale. The Knowledge Hub needs to absorb research, projects, programs, concepts and sources without becoming a pile of pages. It needs the strengths of personal knowledge systems but with public editorial accountability. Introduction A personal knowledge system is a practice for capturing, linking, revising and retrieving knowledge. It may use notebooks, wikis, graph tools, plain text, databases or static pages. The tools matter, but the practice matters more. A digital garden is a public or semi-public knowledge space where notes can grow. It often favors interlinking, topic pages, revision and non-chronological navigation over polished feed-based publishing. The Knowledge Hub can use this pattern without becoming informal. It can publish complete articles while still showing relations, concepts, sources and future paths. Context The digital garden metaphor became popular because it resisted the pressure of feeds and finished announcements. A garden can have seedlings, evergreen pages and mature essays. That vocabulary is useful, but it can also become vague. A serious knowledge hub needs clearer status, maturity and evidence markers. Electronic Artefacts already has those markers in its entity schema: publication class, status, maturity, confidence, version, sources, subjects and typed relations. That gives the site a way to combine garden-like growth with library-like discipline. History Personal knowledge systems have roots in commonplace books, scholarly notebooks, card indexes, research diaries, citation managers, wikis and hypertext. Bush’s associative trails and Engelbart’s augmentation framework belong to the same lineage. The goal is not simply to remember. The goal is to extend thought through external structure. Digital gardens update this lineage for the web. They make revision, linking and topical organization visible. A garden page may begin as a rough note and become a reference article. A knowledge hub can adopt the same life cycle if it is transparent about confidence and maturity. Core concepts Capture: storing a note, source, observation or idea. Linking: connecting the note to related concepts and records. Synthesis: rewriting fragments into clearer understanding. Retrieval: finding the right note at the right time. Revision: improving a page as knowledge changes. Publication state: the declared maturity of a public record. Architecture A durable knowledge system needs input, processing and output. Input includes notes, sources, conversations, code, media and project records. Processing includes tagging, linking, summarizing, evaluating and rewriting. Output includes articles, concept pages, source guides, glossaries and graph relations. The most important architectural distinction is between capture and publication. Capture can be messy. Publication should be legible. Electronic Artefacts can keep internal notes private while turning mature material into public records. Implementation Implementation begins with consistent frontmatter. Every public record should identify its type, subject, date, maturity, sources and related entities. Notes can become articles when they have enough context, structure and evidence. Backlinks and graph neighborhoods should not replace editorial judgment. They are discovery tools. The article itself should explain why connections matter. Collections can act as maps. Knowledge Hub Foundations and Knowledge Hub Second Wave give readers curated paths through many records. Practical applications For research, a knowledge system prevents repeated work. Earlier notes remain discoverable. For SEO, stable topic pages accumulate relevance over time. For AI retrieval, structured pages provide clearer entities, claims and sources. For Electronic Artefacts, the system turns projects into knowledge. VASTE becomes not only a program but a node in Runtime Theory. ORETH becomes not only audio research but part of a network around signal, listening and generative systems. Tools Useful tools include plain-text notes, Markdown, static site generators, backlinks, graph databases, citation managers, source records, search indexes, version control, schema validation and periodic content audits. Evidence Electronic Artefacts already uses structured content and typed relations. The first Knowledge Hub wave demonstrated that concepts, articles, projects and programs can reinforce one another. The second wave extends that method across broader evergreen fields. Editorial method A public knowledge page should have a clear role. It may define a concept, explain a method, document a project, synthesize a field or curate sources. Mixing those roles without naming them creates confusion. The editor should also prune. A knowledge system improves when duplicate notes are merged, weak tags are removed and unclear links are rewritten. Common mistakes The first mistake is capturing everything. More notes do not automatically create more knowledge. The second mistake is over-visualizing the graph. A graph view can be beautiful while hiding the absence of strong writing. The third mistake is treating rough notes as public authority. Public knowledge pages should tell the reader how mature and sourced they are. Electronic Artefacts implications Electronic Artefacts can use personal knowledge system principles as a production method. Research fragments should be captured, then promoted into concepts, articles, methods or archive records when they become useful. The Knowledge Hub should remain open enough to grow and rigorous enough to be trusted. Knowledge graph role The knowledge graph changes the digital garden pattern in an important way. A garden usually relies on visible links and authorial memory. A graph adds stable identities and relation types. This means an article can be connected to a concept, source, project or program in a way that machines can validate and readers can inspect. For Electronic Artefacts, this prevents the Knowledge Hub from becoming a purely personal archive. The site can still grow through notes and revisions, but public records have declared type, maturity, confidence and source context. That combination is useful for humans who want orientation and for AI systems that need structured retrieval. Evaluation criteria A knowledge system can be evaluated by five practical questions. Can a reader find the page again through search, navigation or related links? Does the page connect to the right concepts without over-linking? Does the page identify its sources and maturity? Does it reduce duplication by strengthening existing entities? Can it be revised later without breaking the public URL? These criteria keep the system grounded. A digital garden metaphor is helpful only if it produces better long-term memory. Reader pathway A useful reader pathway begins with a practical question: how do I keep ideas connected over time? From there, the article should guide the reader toward Hypertext , Metadata and Digital Preservation . This route turns a familiar productivity topic into a deeper architecture of memory and publication. Future work Future entries should cover source triage, note taxonomies, backlink hygiene, concept maturity, editorial pruning, public research logs and AI-readable knowledge pages. Related concepts Read Personal Knowledge System , Hypertext , Knowledge Graph , Metadata and Digital Preservation . Suggested reading Start with hypertext history, then study metadata and preservation practices. A knowledge garden without metadata becomes difficult to maintain. Related articles Continue with Hypertext and Augmented Knowledge Systems and Metadata, Cataloguing and Cultural Memory . Glossary Backlink: a link from another page back to the current page. Digital garden: a public knowledge space that grows over time. Evergreen note: a note maintained as reusable knowledge. Maturity: the declared development state of a record. Limitations Personal knowledge practices do not automatically scale to public libraries. Public systems need permissions, editorial review, source standards and long-term maintenance. They also need restraint. Not every note deserves publication. References Vannevar Bush. As We May Think. 1945. Dublin Core Metadata Initiative. DCMI Metadata Terms. 2020. Electronic Artefacts. Knowledge Hub Foundations and Knowledge Graph records.",
+    "tags": [
+      "Personal Knowledge Management",
+      "Digital Gardens",
+      "Backlinks",
+      "Research Methods"
+    ],
+    "questions": [],
+    "relationLabels": [
+      "documents Personal Knowledge Systems and Digital Gardens documents personal knowledge systems as a practice of capture, linking and revision.",
+      "documents Personal Knowledge Systems and Digital Gardens uses hypertext as the linking model for public knowledge gardens.",
+      "documents Personal Knowledge Systems and Digital Gardens connects durable note systems to metadata and publication state.",
+      "documents Personal Knowledge Systems and Digital Gardens links revision and retrieval practice to digital preservation concerns.",
+      "hasPart Knowledge Hub Second Wave includes Personal Knowledge Systems and Digital Gardens as a core article."
+    ],
+    "relatedEntityIds": [
+      "ea:concept:personal-knowledge-system",
+      "ea:concept:hypertext",
+      "ea:concept:metadata",
+      "ea:concept:digital-preservation",
+      "ea:collection:knowledge-hub-second-wave"
+    ],
+    "status": "active",
+    "confidence": "published",
+    "modifiedAt": "2026-06-24"
+  },
+  {
+    "id": "ea:publication:procedural-graphics-shaders-and-visual-systems",
+    "route": "/publications/procedural-graphics-shaders-and-visual-systems/",
+    "type": "publication",
+    "format": "technicalArticle",
+    "title": "Procedural Graphics, Shaders and Visual Systems",
+    "alternateNames": [],
+    "abstract": "This article explains procedural graphics through rules, shaders, parameters, WebGL, generative systems and visual grammars for digital art and interfaces.",
+    "headings": [
+      "Problem",
+      "Introduction",
+      "Context",
+      "History",
+      "Core concepts",
+      "Architecture",
+      "Implementation",
+      "Practical applications",
+      "Tools",
+      "Evidence",
+      "Editorial method",
+      "Common mistakes",
+      "Electronic Artefacts implications",
+      "Knowledge graph role",
+      "Evaluation criteria",
+      "Editorial standard",
+      "Reader pathway",
+      "Future work",
+      "Related concepts",
+      "Suggested reading",
+      "Related articles",
+      "Glossary",
+      "Limitations",
+      "References"
+    ],
+    "body": "Problem Digital visuals are often discussed as finished images: a poster, an interface, a frame, a render, a still from a motion system. Procedural graphics shift attention from output to system. The important question becomes: what rules, parameters and transformations produced this image? The problem is that procedural visuals can become generic. Noise fields, particles, gradients and shader effects are everywhere. Without conceptual discipline, procedural work becomes a recognizable style rather than a way of thinking. Electronic Artefacts needs procedural graphics as a knowledge topic because many future visual systems will be generated, parameterized, animated or linked to audio and graph state. Introduction Procedural graphics are generated from rules. The rules may be mathematical, physical, typographic, random, data-driven or interactive. A shader may compute color for every pixel. A particle system may simulate motion. A layout system may arrange elements from graph data. The key idea is that the visual form is not drawn once. It emerges from a system that can be changed, repeated, versioned and studied. Context Creative coding made procedural graphics accessible to artists and designers. WebGL brought GPU-accelerated visual systems to browsers. Shader communities made pixel-level experimentation teachable. Generative art platforms made procedural outputs collectible and public. But procedural graphics have value beyond spectacle. They can explain data, express identity, create interactive archives, visualize audio and reveal structural patterns. History Procedural image-making belongs to the history of computer graphics, algorithmic art, simulation, demoscene culture, game engines, design systems and scientific visualization. Early computer artists used plotters and rule-based systems. Later GPUs and shaders made real-time procedural form widely available. The browser changed distribution. A procedural visual could be viewed, inspected and interacted with through a public URL. Core concepts Rule: a procedure that determines visual output. Parameter: a value that changes the rule’s behavior. Shader: code that runs on the GPU to compute visual results. Noise: structured pseudo-random variation. Simulation: a system that evolves according to rules over time. Visual grammar: the set of constraints that makes outputs feel related. Architecture A procedural visual system usually has input, rule layer, state, rendering and evaluation. Input may include time, audio, pointer position, data, random seeds or graph entities. The rule layer transforms input. State stores memory. Rendering converts state into pixels. Evaluation decides whether the output communicates, performs and belongs. For Electronic Artefacts, graph data can become input. An article, project or concept could influence layout, color, motion or sound. The visual system should remain documented so the relation is understandable. Implementation Implementation can begin with simple canvas drawing, then move into WebGL and shaders when performance or pixel control matters. The system should expose meaningful parameters: density, scale, rhythm, color relation, input source, seed and time behavior. Preservation requires recording code, version, parameter ranges, seeds, browser assumptions and exported outputs. A procedural work that cannot be rebuilt can still be documented, but it loses part of its meaning. Practical applications Procedural graphics support generative identity systems, interactive essays, audio visualizers, archive maps, simulation-based artworks, data-driven publication layouts and motion systems. For Palimpsests, procedural graphics could express layers, residue and transformation. For ORETH, they could visualize audio features. For VASTE, they could represent graph runtime state. Tools Useful tools include Canvas, SVG, WebGL, GLSL, Three.js, p5.js, Processing, shader editors, image export tools, performance profilers, version control and screenshot regression tests. Evidence Khronos describes WebGL as a browser technology for low-level graphics based on OpenGL ES. In practice, that makes shader and GPU pipelines available to public web pages. Electronic Artefacts already has concepts that support procedural work: Generative System , Creative Coding and Motion Design . Editorial method A procedural graphics article should show the system’s logic. It should explain inputs, parameters and constraints before presenting visual output as if it were self-evident. Screenshots should be treated as evidence of a runtime, not as the entire work. Common mistakes The first mistake is treating randomness as depth. Randomness needs constraints. The second mistake is ignoring performance. A beautiful system that fails on ordinary devices is weak public infrastructure. The third mistake is leaving the reader unable to connect visual behavior to concept. Electronic Artefacts implications Procedural graphics can help Electronic Artefacts build a recognizable visual research language without relying on static branding alone. The site can develop visual systems that respond to knowledge, sound and archives. The Knowledge Hub should document those systems so future readers can understand their technical and cultural meaning. Knowledge graph role Procedural graphics can be represented as more than images. A visual system may be powered by WebGL, implement a generative system, use graph data, respond to audio and produce artefacts. Those are distinct relations. A graph can preserve them in a way that a static screenshot cannot. This matters for Electronic Artefacts because future visual systems may connect VASTE, ORETH and Palimpsests. A shader could visualize audio residue. A generative layout could respond to knowledge entities. A motion system could express archival layers. Each output should remain attached to its rule system and context. Evaluation criteria A procedural visual system should be evaluated through coherence, performance, relevance and preservation. Do the parameters create meaningful variation? Does the visual grammar fit the subject? Does it run reliably on target devices? Can the system be rebuilt or at least documented later? It should also be evaluated critically. Procedural complexity is not the same as cultural depth. A simple rule that clarifies a concept can be stronger than a complex shader with no relation to content. Editorial standard When publishing procedural graphics, include the rule logic in prose. Name the inputs, parameters and output conditions. If screenshots are shown, identify them as captured states. If the system is interactive, explain what interaction changes. If the system uses randomness, record whether outputs are repeatable. This makes visual systems legible as research objects, not only aesthetic surfaces. Reader pathway Procedural graphics attract readers through visual curiosity, but the article should not stop at effects. It should move from visible output to system logic: rules, parameters, shaders, runtime conditions and preservation. A reader who arrives for WebGL can leave understanding generative systems. A designer who arrives for visual inspiration can leave with a stronger model of visual grammar. This topic should point toward Motion Design , Creative Coding , WebGL and future shader-specific articles. It is also a natural bridge toward Palimpsests, where layers and transformation can become visual method rather than decoration. It can also support VASTE by making graph structure visible. A procedural interface can show density, relation, confidence or change over time, as long as the mapping is explained. The point is not to turn every dataset into spectacle. The point is to give abstract structure a readable visual behavior. For readers, this creates a path from visual curiosity to systems literacy. They can begin with shaders and end with a better understanding of graphs, audio and archives. Future work Future articles should cover shaders, noise, particles, generative typography, graph visualization, audio-reactive visuals, WebGL preservation and parameter design. Related concepts Read Procedural Graphics , WebGL , Generative System , Creative Coding and Motion Design . Suggested reading Start with small shader examples, then study WebGL fundamentals and creative coding sketches that expose parameters clearly. Related articles Continue with Creative Coding Pedagogy from Logo to p5.js and Motion Design, Time and Interface Semantics . Glossary Shader: GPU program used for rendering. Seed: value used to initialize repeatable variation. Noise: pseudo-random signal with structure. Visual grammar: constraints that make outputs coherent. Limitations Procedural graphics can be difficult to preserve because they depend on runtime conditions. Browser versions, GPU differences and library changes matter. They can also become aesthetic shorthand. A durable article should connect the system to purpose, material and context. References Khronos Group. WebGL. Electronic Artefacts. Generative System, Creative Coding and Motion Design records.",
+    "tags": [
+      "Procedural Graphics",
+      "Shaders",
+      "WebGL",
+      "Generative Art"
+    ],
+    "questions": [],
+    "relationLabels": [
+      "documents Procedural Graphics, Shaders and Visual Systems documents procedural graphics as a rule-based visual practice.",
+      "usesTechnology Procedural Graphics, Shaders and Visual Systems uses WebGL as the browser graphics reference technology.",
+      "documents Procedural Graphics, Shaders and Visual Systems links procedural visuals to generative-system thinking.",
+      "documents Procedural Graphics, Shaders and Visual Systems connects procedural visuals to motion design and time-based behavior.",
+      "hasPart Knowledge Hub Second Wave includes Procedural Graphics, Shaders and Visual Systems as a core article."
+    ],
+    "relatedEntityIds": [
+      "ea:concept:procedural-graphics",
+      "ea:technology:webgl",
+      "ea:concept:generative-system",
+      "ea:concept:motion-design",
+      "ea:collection:knowledge-hub-second-wave"
+    ],
+    "status": "active",
+    "confidence": "published",
+    "modifiedAt": "2026-06-24"
+  },
+  {
     "id": "ea:publication:signal-archaeology-audio-memory-and-machine-listening",
     "route": "/publications/signal-archaeology-audio-memory-and-machine-listening/",
     "type": "publication",
@@ -1071,6 +2224,127 @@
     "modifiedAt": "2026-06-23"
   },
   {
+    "id": "ea:publication:typography-reading-systems-and-digital-interfaces",
+    "route": "/publications/typography-reading-systems-and-digital-interfaces/",
+    "type": "publication",
+    "format": "technicalArticle",
+    "title": "Typography, Reading Systems and Digital Interfaces",
+    "alternateNames": [],
+    "abstract": "This article explains typography as infrastructure for digital reading, connecting type, layout, hierarchy, accessibility, CSS Fonts and long-form knowledge publishing.",
+    "headings": [
+      "Problem",
+      "Introduction",
+      "Context",
+      "History",
+      "Core concepts",
+      "Architecture",
+      "Implementation",
+      "Practical applications",
+      "Tools",
+      "Evidence",
+      "Editorial method",
+      "Common mistakes",
+      "Electronic Artefacts implications",
+      "Knowledge graph role",
+      "Evaluation criteria",
+      "Editorial standard",
+      "Reader pathway",
+      "Preservation angle",
+      "Future work",
+      "Related concepts",
+      "Suggested reading",
+      "Related articles",
+      "Glossary",
+      "Limitations",
+      "References"
+    ],
+    "body": "Problem Knowledge pages live or die by reading quality. A site can have excellent sources, rich concepts and strong internal links, yet fail if the typography makes scanning difficult, long paragraphs exhausting or hierarchy unclear. Typography is often treated as visual taste: a typeface, a size, a mood. That is too narrow. In a knowledge system, typography is infrastructure. It controls how readers enter a page, compare sections, follow citations, understand metadata and decide whether to continue. Electronic Artefacts needs typography as a Knowledge Hub topic because long-form editorial work must remain readable across devices, languages, contexts and future design changes. Introduction Typography is the design and arrangement of written language. In digital interfaces, it includes typefaces, scale, line height, line length, spacing, hierarchy, contrast, responsiveness and accessibility. A reading system is typography plus layout plus interaction. It decides how headings behave, how references appear, how metadata is presented, how links are distinguished and how dense content becomes navigable. Context Web typography is shaped by CSS, browser rendering, font files, device density, user settings and network conditions. CSS Fonts defines how fonts are selected and used in web documents. Accessibility guidance reminds us that text is not only visual decoration. It is content that must remain perceivable and usable. For a research library, typography must support both immersion and scanning. Readers need to move quickly through headings, then slow down into paragraphs. History Typography has always mediated knowledge. Manuscripts, printed books, newspapers, encyclopedias, catalogues and interfaces each use typographic systems to make information legible. Digital typography introduced new conditions. Text reflows. Fonts load or fail. Screens vary. Users change zoom, contrast and preferences. Responsive design made typography dynamic rather than fixed. The Knowledge Hub belongs to this history because it publishes long-form, structured, source-heavy material on the web. Core concepts Typeface: the design of letterforms. Font: a specific digital implementation of a typeface. Hierarchy: visual ordering of content importance. Measure: line length. Leading: vertical space between lines. Contrast: difference between foreground and background or between text levels. Reading rhythm: the pattern of visual intervals across a page. Architecture A typographic system needs tokens and rules. Tokens define sizes, weights, line heights, spacing and color roles. Rules define where those tokens apply: article headings, metadata, captions, citations, navigation, graph panels and related links. The system should also include constraints. Maximum line length prevents exhausting paragraphs. Stable heading sizes prevent internal panels from feeling like landing pages. Link styles must remain recognizable. Implementation Implementation begins with content roles. Body text, headings, metadata, captions, labels, code, citations and navigation each need different typographic behavior. Then define responsive constraints. Body copy should remain readable on mobile without scaling unpredictably. Long words and URLs should wrap. Buttons should not depend on fragile text fitting. Article pages should reserve enough width for comfortable reading. Accessibility matters. Respect zoom, color contrast, text spacing and user preferences. Do not encode essential meaning only through color or motion. Practical applications Typography supports Knowledge Hub articles by making structure visible. It supports SEO indirectly by improving engagement and scannability. It supports AI retrieval by encouraging clear headings and consistent section labels. It supports archive pages by distinguishing object metadata from interpretive prose. It supports project pages by separating narrative, evidence, credits and outputs. Tools Useful tools include CSS Fonts, CSS custom properties, browser typography inspectors, accessibility checkers, contrast tools, responsive screenshots, font loading strategies and design tokens. Evidence The W3C CSS Fonts specification anchors the browser font layer. WCAG guidance frames accessibility as a shared technical standard for web content. Electronic Artefacts already has article templates, entity metadata and generated pages. Typography gives those structures readable form. Editorial method Writers should use headings as semantic structure, not as visual emphasis alone. A heading should tell the reader what kind of information follows. Paragraphs should be written for reading on screens. Dense ideas can remain dense, but they need rhythm: definitions, examples, transitions and summaries. Common mistakes The first mistake is making body text too decorative. Long-form reading needs restraint. The second mistake is using too many hierarchy levels. Readers lose orientation. The third mistake is designing only for desktop screenshots. Knowledge pages must survive mobile, zoom and text expansion. Electronic Artefacts implications Electronic Artefacts should treat typography as part of its intellectual identity. The site can feel precise, quiet and research-oriented without becoming sterile. For the Knowledge Hub, typography should support deep reading and fast navigation at the same time. Knowledge graph role Typography also affects the graph. Entity pages contain different kinds of text: titles, abstracts, metadata, relation labels, source lists, article prose and glossary entries. If those layers look too similar, the reader cannot tell what kind of knowledge they are seeing. A strong typographic system makes relation groups scannable, sources trustworthy and long articles comfortable. It also helps AI-oriented publishing indirectly because clear headings and consistent structures encourage clearer content segmentation. Evaluation criteria A reading system should be evaluated across several conditions. Can the page be read on mobile without horizontal scrolling? Does body copy have a comfortable measure? Are links visible without relying on color alone? Do headings describe the content that follows? Are source lists and glossaries visually distinct but not distracting? The evaluation should include real content. Placeholder text hides problems that appear only with long titles, source URLs, multilingual terms or dense metadata. Editorial standard Writers should cooperate with typography. Headings should be short enough to scan. Paragraphs should carry one main idea when possible. Lists should be used for genuine comparison or sequence, not as a substitute for thinking. This does not mean simplifying difficult ideas. It means giving difficult ideas a readable structure. Reader pathway Typography can attract readers through design, but the Knowledge Hub should connect it to knowledge infrastructure. A reader who starts with font choice should quickly reach line length, hierarchy, accessibility, metadata display and source readability. This turns typography from taste into a system for understanding. The pathway should connect Typography to Human Computer Interaction , Motion Design and Metadata . A well-designed article page is where all of those concerns meet. Preservation angle Typography also has a preservation dimension. Fonts may change, licenses may expire, browser rendering may shift and layout assumptions may break. A durable knowledge site should document its typographic system through CSS, design tokens and readable fallbacks. The goal is not to freeze appearance forever, but to preserve reading quality. This is especially important for Electronic Artefacts because the Knowledge Hub is intended to grow for years. A typographic decision made for ten pages must still work when there are hundreds. The article system should therefore be tested with dense, real knowledge pages, not only idealized samples. Future work Future entries should cover typographic scale, variable fonts, citation design, code typography, multilingual typography, long-form article layout and accessibility testing for editorial pages. Related concepts Read Typography , CSS Fonts , Human Computer Interaction and Metadata . Suggested reading Start with CSS Fonts and WCAG guidance, then study well-designed long-form references, technical documentation and digital libraries. Related articles Continue with Motion Design, Time and Interface Semantics and Human Computer Interaction for Creative Tools . Glossary Measure: line length in a block of text. Hierarchy: relative importance expressed through typographic system. Font loading: browser process of fetching and applying fonts. Reading system: the combined layout, typography and interaction model for reading. Limitations Typography cannot rescue unclear writing. It can support comprehension, but structure and argument still matter. It can also become overly rigid. A living knowledge system needs consistency, but it should allow special formats when content genuinely requires them. References W3C. CSS Fonts Module Level 4. W3C WAI. WCAG 2 Overview. Electronic Artefacts. Typography, Metadata and HCI records.",
+    "tags": [
+      "Typography",
+      "Reading Systems",
+      "Interface Design",
+      "Accessibility"
+    ],
+    "questions": [],
+    "relationLabels": [
+      "documents Typography, Reading Systems and Digital Interfaces documents typography as reading infrastructure.",
+      "usesTechnology Typography, Reading Systems and Digital Interfaces uses CSS Fonts as the browser typography reference.",
+      "documents Typography, Reading Systems and Digital Interfaces connects typography to human computer interaction and accessibility.",
+      "documents Typography, Reading Systems and Digital Interfaces links reading systems to visible metadata and article structure.",
+      "hasPart Knowledge Hub Second Wave includes Typography, Reading Systems and Digital Interfaces as a core article."
+    ],
+    "relatedEntityIds": [
+      "ea:concept:typography",
+      "ea:technology:css-fonts",
+      "ea:concept:human-computer-interaction",
+      "ea:concept:metadata",
+      "ea:collection:knowledge-hub-second-wave"
+    ],
+    "status": "active",
+    "confidence": "published",
+    "modifiedAt": "2026-06-24"
+  },
+  {
+    "id": "ea:publication:web-audio-and-browser-based-sound-systems",
+    "route": "/publications/web-audio-and-browser-based-sound-systems/",
+    "type": "publication",
+    "format": "technicalArticle",
+    "title": "Web Audio and Browser-Based Sound Systems",
+    "alternateNames": [],
+    "abstract": "This article explains Web Audio as a browser-native sound architecture for synthesis, processing, analysis, interactive essays, creative coding and public audio tools.",
+    "headings": [
+      "Problem",
+      "Introduction",
+      "Context",
+      "History",
+      "Core concepts",
+      "Architecture",
+      "Implementation",
+      "Practical applications",
+      "Tools",
+      "Evidence",
+      "Editorial method",
+      "Common mistakes",
+      "Electronic Artefacts implications",
+      "Knowledge graph role",
+      "Evaluation criteria",
+      "Editorial standard",
+      "Reader pathway",
+      "Future work",
+      "Related concepts",
+      "Suggested reading",
+      "Related articles",
+      "Glossary",
+      "Limitations",
+      "References"
+    ],
+    "body": "Problem The web is often treated as a place where audio files are embedded and played. That view is too small. Browsers can now host interactive sound systems: synthesizers, samplers, analyzers, visualizers, spatial audio experiments, educational tools and machine-listening prototypes. The problem is that many web audio projects remain either demos or opaque experiences. They make sound but do not explain the system. They use analysis but do not preserve parameters. They produce interaction but do not document the audio graph. Electronic Artefacts needs a more rigorous way to think about browser-based sound. Web Audio should be treated as a public sound architecture, especially in relation to ORETH, signal archaeology and interactive knowledge pages. Introduction Web Audio describes browser-based audio synthesis, routing, processing and analysis. The Web Audio API organizes sound through connected nodes. Oscillators, buffers, filters, gains, analyzers and destinations form an audio graph. This graph structure matters conceptually. Sound is not a black box. It is a network of sources, transformations, parameters and outputs. That makes Web Audio especially compatible with Electronic Artefacts’ broader graph vocabulary. Context Browser sound has cultural and technical significance. It lowers the barrier to access because a reader can encounter an audio tool inside a page. It also creates constraints: browser policies, latency, CPU budgets, permissions, device variation and long-term compatibility. For a knowledge hub, those constraints are productive. They force public sound systems to document their assumptions. A Web Audio article can explain not only the sound, but the architecture that makes the sound possible. History Early web audio was centered on file playback and plugins. Browser-native audio APIs changed that. The web platform gradually became capable of real-time synthesis, analysis and routing without requiring a separate application. This shift parallels earlier transitions in creative coding. When visual programming moved into browsers, sketches became shareable. When audio moved into browsers, listening tools and sound experiments could become public pages. Core concepts Audio graph: a network of connected audio nodes. Audio node: a processing unit such as a source, filter, gain or analyzer. Buffer: stored audio data used for playback or processing. Analyzer: a node that exposes time-domain or frequency-domain data. Latency: the delay between input, processing and output. Automation: scheduled parameter change over time. Architecture A browser-based sound system usually has four layers. The interface layer gathers user gestures and displays state. The audio graph layer routes and processes sound. The analysis layer extracts features or visual data. The publication layer explains the system, sources, parameters and rights. ORETH can use this architecture for public prototypes. A machine-listening note may include an analyzer, spectrogram or comparison tool. A Palimpsests page may use Web Audio to demonstrate residue, memory or transformation. Implementation Implementation begins by designing the audio graph. What are the sources? What transformations occur? Which parameters are exposed? What is automated? What is analyzed? Then the interface should communicate state. If audio is muted until user interaction, say so through behavior rather than explanatory clutter. If analysis is approximate, describe confidence in the article. Preservation matters. Record browser API assumptions, sample rates, source files, parameter ranges and version. If the system depends on generated buffers or external models, document those dependencies. Practical applications Web Audio can support interactive essays that let readers hear a concept. It can support ORETH prototypes for feature extraction, segmentation or listening demonstrations. It can support educational tools that show filters, oscillators, envelopes and spectra. It can support generative systems that combine audio graph state with visual output. It can support archives by creating access copies, listening interfaces and context-rich playback pages. Tools Useful tools include the Web Audio API, AudioWorklet, AnalyserNode, OfflineAudioContext, Web MIDI, Canvas, WebGL, MediaRecorder, spectrogram libraries, checksum tools and static publication pipelines. Evidence The W3C Web Audio specification frames the API around routing graphs of AudioNode objects. That model aligns with the Electronic Artefacts practice of making structure visible. The Knowledge Hub already has related entities: Web Audio , Web Audio API , ORETH and Signal Archaeology . Editorial method A web audio article should not only describe what a reader hears. It should describe the signal path. A simple diagram or ordered explanation can be more useful than a long list of effects. The article should also separate perceptual claims from technical facts. “This sounds warmer” is an interpretation. “A low-pass filter removes higher frequencies” is a technical description. Common mistakes The first mistake is ignoring autoplay and permission behavior. Audio on the web is user-mediated. The second mistake is hiding latency. Real-time interaction depends on device and browser conditions. The third mistake is treating analysis output as objective truth. An analyzer provides data, not meaning. Electronic Artefacts implications Web Audio gives Electronic Artefacts a path toward public sound research. Instead of describing audio experiments only in prose, the site can eventually host listening tools that remain connected to sources and concepts. ORETH should be the methodological anchor. Palimpsests can provide artistic context. Signal archaeology can provide interpretive discipline. Knowledge graph role Web Audio fits naturally into a graph because an audio system is itself a network. Sources connect to processing nodes. Parameters influence behavior. Analysis outputs become evidence. Public pages connect the system to articles, concepts, projects and programs. For ORETH, this means a browser listening tool should not be treated as an isolated demo. It can be represented as a tool, artefact or project output connected to source files, analysis methods, signal archaeology and preservation records. That structure makes the sound system easier to revisit later. Evaluation criteria A browser sound system should be evaluated through interaction, accuracy and care. Does it start only after a clear user gesture? Does it expose enough state for the reader to understand what is happening? Does it respect device limits? Does it describe analysis confidence? Does it preserve the original audio separately from access or processed versions? These criteria matter because audio interfaces can feel convincing even when they are technically fragile. A waveform, meter or spectrogram should not be treated as truth without context. Editorial standard Whenever a Web Audio example is published, the article should name the signal path. It should tell the reader what is being played, synthesized, filtered, analyzed or recorded. If the page uses sample material, rights and source context should be visible. If the tool generates sound, parameters and random seeds should be documented where possible. Reader pathway A reader may arrive from a practical web development query about browser sound. The article should then open into a richer field: audio graphs, signal analysis, interactive listening and preservation. This makes Web Audio relevant not only to developers, but also to musicians, sound designers and researchers. The next step should be Signal Archaeology , ORETH and future browser-based listening tools. That route is important because it turns a technical API topic into a broader research path. The browser becomes a studio, a classroom and an archive interface at once. Future work Future entries should cover AudioWorklet, spectrogram interfaces, browser synthesis, Web MIDI, audio feature extraction, latency, WebRTC audio, interactive listening and preservation of browser-based sound works. Related concepts Read Web Audio , Web Audio API , Signal Archaeology , Creative Coding and ORETH . Suggested reading Start with the W3C Web Audio API specification, then inspect small audio graph examples and browser performance notes. Related articles Continue with Signal Archaeology, Audio Memory and Machine Listening and Generative Systems, Cybernetics and Creative Coding . Glossary Audio graph: connected audio processing nodes. Analyzer: node exposing audio data for inspection. AudioWorklet: mechanism for custom audio processing in a worklet context. Latency: delay affecting interaction and monitoring. Limitations Browser-based sound is not a universal replacement for native audio software. It has performance, permission and compatibility constraints. It is strongest when public access, interaction and explanation matter more than maximum production power. References W3C. Web Audio API 1.1. Electronic Artefacts. ORETH, Web Audio and Signal Archaeology records.",
+    "tags": [
+      "Web Audio",
+      "Audio Graph",
+      "Browser Sound",
+      "ORETH"
+    ],
+    "questions": [],
+    "relationLabels": [
+      "documents Web Audio and Browser-Based Sound Systems documents web audio as a browser-native sound practice.",
+      "usesTechnology Web Audio and Browser-Based Sound Systems uses the Web Audio API as its main browser audio reference.",
+      "documents Web Audio and Browser-Based Sound Systems connects browser sound tools to signal archaeology.",
+      "documents Web Audio and Browser-Based Sound Systems links ORETH to public sound tools and browser-native audio research.",
+      "hasPart Knowledge Hub Second Wave includes Web Audio and Browser-Based Sound Systems as a core article."
+    ],
+    "relatedEntityIds": [
+      "ea:concept:web-audio",
+      "ea:technology:web-audio-api",
+      "ea:concept:signal-archaeology",
+      "ea:program:oreth",
+      "ea:collection:knowledge-hub-second-wave"
+    ],
+    "status": "active",
+    "confidence": "published",
+    "modifiedAt": "2026-06-24"
+  },
+  {
     "id": "ea:researchField:runtime-theory",
     "route": "/research/fields/runtime-theory/",
     "type": "researchField",
@@ -1114,6 +2388,60 @@
     "status": "active",
     "confidence": "validated",
     "modifiedAt": "2026-06-22"
+  },
+  {
+    "id": "ea:technology:activitypub",
+    "route": "/knowledge/technologies/activitypub/",
+    "type": "technology",
+    "title": "ActivityPub",
+    "alternateNames": [],
+    "abstract": "ActivityPub is a decentralized social networking protocol standardized by W3C for federated server-to-server and client-to-server activity exchange.",
+    "headings": [
+      "Role",
+      "Use",
+      "References"
+    ],
+    "body": "Role ActivityPub is a reference protocol for federated social systems and decentralized activity exchange. Use Electronic Artefacts can use ActivityPub as a conceptual source for network culture, distribution and social web research. References See the W3C ActivityPub Recommendation.",
+    "tags": [
+      "ActivityPub",
+      "Federation",
+      "Social Web"
+    ],
+    "questions": [],
+    "relationLabels": [],
+    "relatedEntityIds": [],
+    "status": "active",
+    "confidence": "canonical",
+    "modifiedAt": "2026-06-24"
+  },
+  {
+    "id": "ea:technology:css-fonts",
+    "route": "/knowledge/technologies/css-fonts/",
+    "type": "technology",
+    "title": "CSS Fonts",
+    "alternateNames": [],
+    "abstract": "CSS Fonts defines web font selection, font faces and typographic behavior for digital interfaces and web documents.",
+    "headings": [
+      "Role",
+      "Use",
+      "References"
+    ],
+    "body": "Role CSS Fonts is part of the web platform’s typographic layer. It helps browsers select and render typefaces across devices. Use Electronic Artefacts can treat typography as part of knowledge infrastructure: readable articles, stable hierarchy and accessible layout. References See the W3C CSS Fonts specification.",
+    "tags": [
+      "CSS Fonts",
+      "Typography",
+      "Web"
+    ],
+    "questions": [],
+    "relationLabels": [
+      "usesTechnology Typography, Reading Systems and Digital Interfaces uses CSS Fonts as the browser typography reference."
+    ],
+    "relatedEntityIds": [
+      "ea:publication:typography-reading-systems-and-digital-interfaces"
+    ],
+    "status": "active",
+    "confidence": "validated",
+    "modifiedAt": "2026-06-24"
   },
   {
     "id": "ea:technology:json-ld",
@@ -1176,5 +2504,92 @@
     "status": "active",
     "confidence": "published",
     "modifiedAt": "2026-06-23"
+  },
+  {
+    "id": "ea:technology:web-animations",
+    "route": "/knowledge/technologies/web-animations/",
+    "type": "technology",
+    "title": "Web Animations",
+    "alternateNames": [],
+    "abstract": "Web Animations defines a timing and animation model for changes to web page presentation and related programming interfaces.",
+    "headings": [
+      "Role",
+      "Use",
+      "References"
+    ],
+    "body": "Role Web Animations provides a model for timing, playback and synchronization in browser interfaces. Use Electronic Artefacts can use it for interface motion, interactive essays and state transitions that clarify graph navigation. References See the W3C Web Animations specification.",
+    "tags": [
+      "Web Animations",
+      "Motion Design",
+      "Interface"
+    ],
+    "questions": [],
+    "relationLabels": [
+      "usesTechnology Motion Design, Time and Interface Semantics uses Web Animations as its main web timing reference."
+    ],
+    "relatedEntityIds": [
+      "ea:publication:motion-design-time-and-interface-semantics"
+    ],
+    "status": "active",
+    "confidence": "validated",
+    "modifiedAt": "2026-06-24"
+  },
+  {
+    "id": "ea:technology:web-audio-api",
+    "route": "/knowledge/technologies/web-audio-api/",
+    "type": "technology",
+    "title": "Web Audio API",
+    "alternateNames": [],
+    "abstract": "The Web Audio API is a browser platform technology for routing, synthesizing, processing and analyzing audio through connected audio nodes.",
+    "headings": [
+      "Role",
+      "Use",
+      "References"
+    ],
+    "body": "Role The Web Audio API provides graph-based audio routing and processing in browsers. It is relevant to interactive essays, sound analysis, synthesis and public listening tools. Use Electronic Artefacts can use it for ORETH prototypes, audio visualizers, browser-native sound experiments and educational demonstrations. References See the W3C Web Audio API specification.",
+    "tags": [
+      "Web Audio API",
+      "Browser Audio",
+      "Audio Graph"
+    ],
+    "questions": [],
+    "relationLabels": [
+      "usesTechnology Web Audio and Browser-Based Sound Systems uses the Web Audio API as its main browser audio reference."
+    ],
+    "relatedEntityIds": [
+      "ea:publication:web-audio-and-browser-based-sound-systems"
+    ],
+    "status": "active",
+    "confidence": "canonical",
+    "modifiedAt": "2026-06-24"
+  },
+  {
+    "id": "ea:technology:webgl",
+    "route": "/knowledge/technologies/webgl/",
+    "type": "technology",
+    "title": "WebGL",
+    "alternateNames": [],
+    "abstract": "WebGL is a web platform technology for rendering interactive 2D and 3D graphics in compatible browsers using GPU acceleration.",
+    "headings": [
+      "Role",
+      "Use",
+      "References"
+    ],
+    "body": "Role WebGL makes GPU-accelerated graphics available on the web. It is relevant to shaders, procedural visual systems and interactive public artefacts. Use Electronic Artefacts can use WebGL for generative visuals, motion systems and browser-native spatial interfaces. References See Khronos WebGL resources.",
+    "tags": [
+      "WebGL",
+      "Shaders",
+      "Browser Graphics"
+    ],
+    "questions": [],
+    "relationLabels": [
+      "usesTechnology Procedural Graphics, Shaders and Visual Systems uses WebGL as the browser graphics reference technology."
+    ],
+    "relatedEntityIds": [
+      "ea:publication:procedural-graphics-shaders-and-visual-systems"
+    ],
+    "status": "active",
+    "confidence": "canonical",
+    "modifiedAt": "2026-06-24"
   }
 ]

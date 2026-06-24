@@ -1,0 +1,16 @@
+{
+  "id": "local:ea:technology:activitypub",
+  "kind": "local",
+  "focus": "ea:technology:activitypub",
+  "nodes": [
+    {
+      "id": "ea:technology:activitypub",
+      "type": "technology",
+      "title": "ActivityPub",
+      "route": "/knowledge/technologies/activitypub/",
+      "status": "active",
+      "confidence": "canonical"
+    }
+  ],
+  "edges": []
+}

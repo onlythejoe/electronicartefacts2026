@@ -12,10 +12,26 @@
       "confidence": "validated"
     },
     {
+      "id": "ea:publication:creative-coding-pedagogy-from-logo-to-p5js",
+      "type": "publication",
+      "title": "Creative Coding Pedagogy from Logo to p5.js",
+      "route": "/publications/creative-coding-pedagogy-from-logo-to-p5js/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
       "id": "ea:publication:generative-systems-cybernetics-and-creative-coding",
       "type": "publication",
       "title": "Generative Systems, Cybernetics and Creative Coding",
       "route": "/publications/generative-systems-cybernetics-and-creative-coding/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:open-source-as-cultural-infrastructure",
+      "type": "publication",
+      "title": "Open Source as Cultural Infrastructure",
+      "route": "/publications/open-source-as-cultural-infrastructure/",
       "status": "active",
       "confidence": "published"
     }
@@ -28,6 +44,24 @@
       "predicate": "documents",
       "label": "Documents",
       "statement": "Generative Systems, Cybernetics and Creative Coding connects creative coding to generative system practice.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:open-source-article-documents-creative-coding",
+      "source": "ea:publication:open-source-as-cultural-infrastructure",
+      "target": "ea:concept:creative-coding",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Open Source as Cultural Infrastructure connects open source to creative coding tools and pedagogy.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:creative-coding-pedagogy-article-documents-creative-coding",
+      "source": "ea:publication:creative-coding-pedagogy-from-logo-to-p5js",
+      "target": "ea:concept:creative-coding",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Creative Coding Pedagogy from Logo to p5.js documents creative coding as a learning practice.",
       "confidence": "published"
     }
   ]

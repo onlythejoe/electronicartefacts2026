@@ -1,0 +1,102 @@
+{
+  "id": "local:ea:publication:metadata-cataloguing-and-cultural-memory",
+  "kind": "local",
+  "focus": "ea:publication:metadata-cataloguing-and-cultural-memory",
+  "nodes": [
+    {
+      "id": "ea:collection:knowledge-hub-second-wave",
+      "type": "collection",
+      "title": "Knowledge Hub Second Wave",
+      "route": "/archive/collections/knowledge-hub-second-wave/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:concept:digital-preservation",
+      "type": "concept",
+      "title": "Digital Preservation",
+      "route": "/knowledge/concepts/digital-preservation/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:concept:metadata",
+      "type": "concept",
+      "title": "Metadata",
+      "route": "/knowledge/concepts/metadata/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:concept:provenance",
+      "type": "concept",
+      "title": "Provenance",
+      "route": "/knowledge/concepts/provenance/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:project:vestiges",
+      "type": "project",
+      "title": "Vestiges",
+      "route": "/projects/vestiges/",
+      "status": "development",
+      "confidence": "observed"
+    },
+    {
+      "id": "ea:publication:metadata-cataloguing-and-cultural-memory",
+      "type": "publication",
+      "title": "Metadata, Cataloguing and Cultural Memory",
+      "route": "/publications/metadata-cataloguing-and-cultural-memory/",
+      "status": "active",
+      "confidence": "published"
+    }
+  ],
+  "edges": [
+    {
+      "id": "ear:metadata-article-documents-metadata",
+      "source": "ea:publication:metadata-cataloguing-and-cultural-memory",
+      "target": "ea:concept:metadata",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Metadata, Cataloguing and Cultural Memory documents metadata as a cultural memory layer.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:metadata-article-documents-provenance",
+      "source": "ea:publication:metadata-cataloguing-and-cultural-memory",
+      "target": "ea:concept:provenance",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Metadata, Cataloguing and Cultural Memory explains provenance as a key part of trustworthy metadata.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:metadata-article-documents-digital-preservation",
+      "source": "ea:publication:metadata-cataloguing-and-cultural-memory",
+      "target": "ea:concept:digital-preservation",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Metadata, Cataloguing and Cultural Memory connects metadata to digital preservation and long-term context.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:metadata-article-documents-vestiges",
+      "source": "ea:publication:metadata-cataloguing-and-cultural-memory",
+      "target": "ea:project:vestiges",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Metadata, Cataloguing and Cultural Memory links metadata practice to the Vestiges cultural knowledge project.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:knowledge-hub-second-wave-has-metadata-article",
+      "source": "ea:collection:knowledge-hub-second-wave",
+      "target": "ea:publication:metadata-cataloguing-and-cultural-memory",
+      "predicate": "hasPart",
+      "label": "Has part",
+      "statement": "Knowledge Hub Second Wave includes Metadata, Cataloguing and Cultural Memory as a core article.",
+      "confidence": "published"
+    }
+  ]
+}

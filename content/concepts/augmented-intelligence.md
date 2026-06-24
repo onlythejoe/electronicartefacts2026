@@ -1,0 +1,73 @@
+---
+id: ea:concept:augmented-intelligence
+type: concept
+slug:
+  canonical: augmented-intelligence
+title: Augmented Intelligence
+definition: Augmented intelligence is the design of tools, interfaces and systems that expand human perception, reasoning, memory and creative capability.
+abstract: Augmented intelligence reframes computation as a partner in human work, linking HCI, AI, knowledge systems, creative tools and Electronic Artefacts runtime research.
+description: A canonical concept record for human-centered computational augmentation.
+locale: en
+visibility: public
+publicationClass: canonical
+status: active
+maturity: research
+confidence: canonical
+version:
+  version: 1.0.0
+  createdAt: "2026-06-24"
+  publishedAt: "2026-06-24"
+  modifiedAt: "2026-06-24"
+authors:
+  - id: ea:organization:electronic-artefacts
+publisher: ea:organization:electronic-artefacts
+scope:
+  - Human-computer interaction
+  - Creative tools
+  - AI assistance
+  - Knowledge work
+  - Interface design
+exclusions:
+  - Claims that autonomous systems replace human judgment in all contexts
+  - Productivity automation with no support for understanding or agency
+claims:
+  - Augmentation is a better frame than replacement for many creative and research systems.
+  - Good augmented systems preserve context, reversibility and user judgment.
+sources:
+  - title: Augmenting Human Intellect
+    author: Douglas C. Engelbart
+    publisher: Doug Engelbart Institute
+    publishedAt: "1962-10-01"
+    accessedAt: "2026-06-24"
+    url: https://dougengelbart.org/content/view/138/000/
+tags:
+  - Augmented Intelligence
+  - HCI
+  - AI
+  - Creative Tools
+disciplines:
+  - Human Computer Interaction
+  - Artificial Intelligence
+  - Knowledge Systems
+  - Systems Design
+---
+
+## Definition
+
+Augmented intelligence describes systems that increase human capability instead of pretending that computation should remove the human from the loop.
+
+## Scope
+
+The concept includes creative software, AI assistants, knowledge work tools, graph interfaces, annotation systems, interactive analysis and decision support.
+
+## Applications
+
+For Electronic Artefacts, augmented intelligence is relevant to VASTE, ORETH, machine listening, knowledge retrieval and future editorial tooling.
+
+## Limitations
+
+Augmentation can become dependency when the user cannot inspect, correct or refuse system output. Responsible design preserves agency.
+
+## References
+
+See Douglas Engelbart, HCI, AI risk management, contextual execution and graph runtimes.

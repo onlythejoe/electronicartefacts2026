@@ -1,0 +1,47 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://electronicartefacts.com/knowledge/concepts/typography/#webpage",
+      "url": "https://electronicartefacts.com/knowledge/concepts/typography/",
+      "name": "Typography",
+      "mainEntity": {
+        "@id": "https://electronicartefacts.com/id/concept/typography/"
+      },
+      "isPartOf": {
+        "@id": "https://electronicartefacts.com/#website"
+      }
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://electronicartefacts.com/id/concept/typography/",
+      "name": "Typography",
+      "description": "Typography is the design and arrangement of written language through typefaces, spacing, hierarchy, rhythm, scale and reading conditions.",
+      "url": "https://electronicartefacts.com/knowledge/concepts/typography/",
+      "dateCreated": "2026-06-24",
+      "datePublished": "2026-06-24",
+      "dateModified": "2026-06-24",
+      "publisher": {
+        "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Electronic Artefacts",
+          "item": "https://electronicartefacts.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Typography",
+          "item": "https://electronicartefacts.com/knowledge/concepts/typography/"
+        }
+      ]
+    }
+  ]
+}

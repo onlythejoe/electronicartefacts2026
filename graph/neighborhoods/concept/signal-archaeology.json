@@ -34,6 +34,14 @@
       "route": "/publications/signal-archaeology-audio-memory-and-machine-listening/",
       "status": "active",
       "confidence": "published"
+    },
+    {
+      "id": "ea:publication:web-audio-and-browser-based-sound-systems",
+      "type": "publication",
+      "title": "Web Audio and Browser-Based Sound Systems",
+      "route": "/publications/web-audio-and-browser-based-sound-systems/",
+      "status": "active",
+      "confidence": "published"
     }
   ],
   "edges": [
@@ -62,6 +70,15 @@
       "predicate": "documents",
       "label": "Documents",
       "statement": "Signal Archaeology, Audio Memory and Machine Listening documents signal archaeology as a concept.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:web-audio-article-documents-signal-archaeology",
+      "source": "ea:publication:web-audio-and-browser-based-sound-systems",
+      "target": "ea:concept:signal-archaeology",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Web Audio and Browser-Based Sound Systems connects browser sound tools to signal archaeology.",
       "confidence": "published"
     }
   ]

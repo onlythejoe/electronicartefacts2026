@@ -1,0 +1,34 @@
+{
+  "id": "local:ea:concept:personal-knowledge-system",
+  "kind": "local",
+  "focus": "ea:concept:personal-knowledge-system",
+  "nodes": [
+    {
+      "id": "ea:concept:personal-knowledge-system",
+      "type": "concept",
+      "title": "Personal Knowledge System",
+      "route": "/knowledge/concepts/personal-knowledge-system/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:publication:personal-knowledge-systems-and-digital-gardens",
+      "type": "publication",
+      "title": "Personal Knowledge Systems and Digital Gardens",
+      "route": "/publications/personal-knowledge-systems-and-digital-gardens/",
+      "status": "active",
+      "confidence": "published"
+    }
+  ],
+  "edges": [
+    {
+      "id": "ear:personal-knowledge-article-documents-personal-knowledge-system",
+      "source": "ea:publication:personal-knowledge-systems-and-digital-gardens",
+      "target": "ea:concept:personal-knowledge-system",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Personal Knowledge Systems and Digital Gardens documents personal knowledge systems as a practice of capture, linking and revision.",
+      "confidence": "published"
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "id": "local:ea:concept:open-source",
+  "kind": "local",
+  "focus": "ea:concept:open-source",
+  "nodes": [
+    {
+      "id": "ea:concept:open-source",
+      "type": "concept",
+      "title": "Open Source",
+      "route": "/knowledge/concepts/open-source/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:publication:creative-coding-pedagogy-from-logo-to-p5js",
+      "type": "publication",
+      "title": "Creative Coding Pedagogy from Logo to p5.js",
+      "route": "/publications/creative-coding-pedagogy-from-logo-to-p5js/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:open-source-as-cultural-infrastructure",
+      "type": "publication",
+      "title": "Open Source as Cultural Infrastructure",
+      "route": "/publications/open-source-as-cultural-infrastructure/",
+      "status": "active",
+      "confidence": "published"
+    }
+  ],
+  "edges": [
+    {
+      "id": "ear:open-source-article-documents-open-source",
+      "source": "ea:publication:open-source-as-cultural-infrastructure",
+      "target": "ea:concept:open-source",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Open Source as Cultural Infrastructure documents open source as a licensing, maintenance and cultural infrastructure practice.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:creative-coding-pedagogy-article-documents-open-source",
+      "source": "ea:publication:creative-coding-pedagogy-from-logo-to-p5js",
+      "target": "ea:concept:open-source",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Creative Coding Pedagogy from Logo to p5.js connects creative learning to open examples and open-source communities.",
+      "confidence": "published"
+    }
+  ]
+}

@@ -1,0 +1,47 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://electronicartefacts.com/archive/collections/knowledge-hub-second-wave/#webpage",
+      "url": "https://electronicartefacts.com/archive/collections/knowledge-hub-second-wave/",
+      "name": "Knowledge Hub Second Wave",
+      "mainEntity": {
+        "@id": "https://electronicartefacts.com/id/collection/knowledge-hub-second-wave/"
+      },
+      "isPartOf": {
+        "@id": "https://electronicartefacts.com/#website"
+      }
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://electronicartefacts.com/id/collection/knowledge-hub-second-wave/",
+      "name": "Knowledge Hub Second Wave",
+      "description": "Knowledge Hub Second Wave groups a larger expansion of Electronic Artefacts knowledge records across hypertext, open source, metadata, creative coding, web audio, motion, typography, HCI, algorithmic music and generative AI.",
+      "url": "https://electronicartefacts.com/archive/collections/knowledge-hub-second-wave/",
+      "dateCreated": "2026-06-24",
+      "datePublished": "2026-06-24",
+      "dateModified": "2026-06-24",
+      "publisher": {
+        "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Electronic Artefacts",
+          "item": "https://electronicartefacts.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Knowledge Hub Second Wave",
+          "item": "https://electronicartefacts.com/archive/collections/knowledge-hub-second-wave/"
+        }
+      ]
+    }
+  ]
+}

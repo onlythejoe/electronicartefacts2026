@@ -1,0 +1,34 @@
+{
+  "id": "local:ea:concept:generative-ai",
+  "kind": "local",
+  "focus": "ea:concept:generative-ai",
+  "nodes": [
+    {
+      "id": "ea:concept:generative-ai",
+      "type": "concept",
+      "title": "Generative AI",
+      "route": "/knowledge/concepts/generative-ai/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:publication:generative-ai-latent-space-and-creative-workflows",
+      "type": "publication",
+      "title": "Generative AI, Latent Space and Creative Workflows",
+      "route": "/publications/generative-ai-latent-space-and-creative-workflows/",
+      "status": "active",
+      "confidence": "published"
+    }
+  ],
+  "edges": [
+    {
+      "id": "ear:generative-ai-article-documents-generative-ai",
+      "source": "ea:publication:generative-ai-latent-space-and-creative-workflows",
+      "target": "ea:concept:generative-ai",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Generative AI, Latent Space and Creative Workflows documents generative AI as a creative workflow topic.",
+      "confidence": "published"
+    }
+  ]
+}

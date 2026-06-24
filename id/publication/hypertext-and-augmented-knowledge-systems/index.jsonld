@@ -1,0 +1,65 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://electronicartefacts.com/publications/hypertext-and-augmented-knowledge-systems/#webpage",
+      "url": "https://electronicartefacts.com/publications/hypertext-and-augmented-knowledge-systems/",
+      "name": "Hypertext and Augmented Knowledge Systems",
+      "mainEntity": {
+        "@id": "https://electronicartefacts.com/id/publication/hypertext-and-augmented-knowledge-systems/"
+      },
+      "isPartOf": {
+        "@id": "https://electronicartefacts.com/#website"
+      }
+    },
+    {
+      "@type": "TechArticle",
+      "@id": "https://electronicartefacts.com/id/publication/hypertext-and-augmented-knowledge-systems/",
+      "name": "Hypertext and Augmented Knowledge Systems",
+      "description": "This article explains hypertext as a long-term knowledge architecture, connecting Vannevar Bush, Douglas Engelbart, web links, knowledge graphs and augmented intelligence.",
+      "url": "https://electronicartefacts.com/publications/hypertext-and-augmented-knowledge-systems/",
+      "dateCreated": "2026-06-24",
+      "datePublished": "2026-06-24",
+      "dateModified": "2026-06-24",
+      "publisher": {
+        "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
+      },
+      "citation": "Electronic Artefacts. \"Hypertext and Augmented Knowledge Systems.\" Technical article, version 1.0.0, 2026.",
+      "about": [
+        {
+          "@id": "https://electronicartefacts.com/id/concept/hypertext/"
+        },
+        {
+          "@id": "https://electronicartefacts.com/id/concept/augmented-intelligence/"
+        },
+        {
+          "@id": "https://electronicartefacts.com/id/concept/knowledge-graph/"
+        },
+        {
+          "@id": "https://electronicartefacts.com/id/concept/linked-data/"
+        },
+        {
+          "@id": "https://electronicartefacts.com/id/research-field/runtime-theory/"
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Electronic Artefacts",
+          "item": "https://electronicartefacts.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Hypertext and Augmented Knowledge Systems",
+          "item": "https://electronicartefacts.com/publications/hypertext-and-augmented-knowledge-systems/"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "id": "local:ea:publication:web-audio-and-browser-based-sound-systems",
+  "kind": "local",
+  "focus": "ea:publication:web-audio-and-browser-based-sound-systems",
+  "nodes": [
+    {
+      "id": "ea:collection:knowledge-hub-second-wave",
+      "type": "collection",
+      "title": "Knowledge Hub Second Wave",
+      "route": "/archive/collections/knowledge-hub-second-wave/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:concept:signal-archaeology",
+      "type": "concept",
+      "title": "Signal Archaeology",
+      "route": "/knowledge/concepts/signal-archaeology/",
+      "status": "active",
+      "confidence": "observed"
+    },
+    {
+      "id": "ea:concept:web-audio",
+      "type": "concept",
+      "title": "Web Audio",
+      "route": "/knowledge/concepts/web-audio/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:program:oreth",
+      "type": "program",
+      "title": "ORETH",
+      "route": "/programs/oreth/",
+      "status": "prototype",
+      "confidence": "observed"
+    },
+    {
+      "id": "ea:publication:web-audio-and-browser-based-sound-systems",
+      "type": "publication",
+      "title": "Web Audio and Browser-Based Sound Systems",
+      "route": "/publications/web-audio-and-browser-based-sound-systems/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:technology:web-audio-api",
+      "type": "technology",
+      "title": "Web Audio API",
+      "route": "/knowledge/technologies/web-audio-api/",
+      "status": "active",
+      "confidence": "canonical"
+    }
+  ],
+  "edges": [
+    {
+      "id": "ear:web-audio-article-documents-web-audio",
+      "source": "ea:publication:web-audio-and-browser-based-sound-systems",
+      "target": "ea:concept:web-audio",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Web Audio and Browser-Based Sound Systems documents web audio as a browser-native sound practice.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:web-audio-article-uses-web-audio-api",
+      "source": "ea:publication:web-audio-and-browser-based-sound-systems",
+      "target": "ea:technology:web-audio-api",
+      "predicate": "usesTechnology",
+      "label": "Uses technology",
+      "statement": "Web Audio and Browser-Based Sound Systems uses the Web Audio API as its main browser audio reference.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:web-audio-article-documents-signal-archaeology",
+      "source": "ea:publication:web-audio-and-browser-based-sound-systems",
+      "target": "ea:concept:signal-archaeology",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Web Audio and Browser-Based Sound Systems connects browser sound tools to signal archaeology.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:web-audio-article-documents-oreth",
+      "source": "ea:publication:web-audio-and-browser-based-sound-systems",
+      "target": "ea:program:oreth",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Web Audio and Browser-Based Sound Systems links ORETH to public sound tools and browser-native audio research.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:knowledge-hub-second-wave-has-web-audio-article",
+      "source": "ea:collection:knowledge-hub-second-wave",
+      "target": "ea:publication:web-audio-and-browser-based-sound-systems",
+      "predicate": "hasPart",
+      "label": "Has part",
+      "statement": "Knowledge Hub Second Wave includes Web Audio and Browser-Based Sound Systems as a core article.",
+      "confidence": "published"
+    }
+  ]
+}

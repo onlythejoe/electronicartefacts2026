@@ -5243,6 +5243,112 @@ window.EA_PUBLIC_CATALOG = {
       }
     },
     {
+      "id": "ea:collection:knowledge-hub-second-wave",
+      "legacyId": "knowledge-hub-second-wave",
+      "kind": "collection",
+      "type": "collection",
+      "title": "Knowledge Hub Second Wave",
+      "subtitle": "Editorial Collection",
+      "summary": "Knowledge Hub Second Wave groups a larger expansion of Electronic Artefacts knowledge records across hypertext, open source, metadata, creative coding, web audio, motion, typography, HCI, algorithmic music and generative AI.",
+      "description": "A curated collection for the second Knowledge Hub expansion wave.",
+      "status": "active",
+      "maturity": "research",
+      "confidence": "published",
+      "visibility": "public",
+      "publicationClass": "published",
+      "tags": [
+        "Knowledge Hub",
+        "Second Wave",
+        "Editorial Collection",
+        "Research Library"
+      ],
+      "discipline": [
+        "Knowledge Systems",
+        "Creative Coding",
+        "Web Development",
+        "Design",
+        "Artificial Intelligence"
+      ],
+      "route": "/archive/collections/knowledge-hub-second-wave/",
+      "identifier": "/id/collection/knowledge-hub-second-wave/",
+      "temporality": {
+        "creationDate": "2026-06-24",
+        "lastUpdated": "2026-06-24",
+        "releaseDate": "2026-06-24",
+        "creationYear": "2026"
+      }
+    },
+    {
+      "id": "ea:concept:algorithmic-composition",
+      "legacyId": "algorithmic-composition",
+      "kind": "concept",
+      "type": "concept",
+      "title": "Algorithmic Composition",
+      "summary": "Algorithmic composition connects music theory, computation, cybernetics, generative systems and electronic music by treating composition as the design of procedures as well as sounds.",
+      "description": "A canonical concept record for rule-based and computational approaches to musical composition.",
+      "definition": "Algorithmic composition is the use of rules, procedures, probability, computation or formal systems to generate or organize musical material.",
+      "status": "active",
+      "maturity": "research",
+      "confidence": "canonical",
+      "visibility": "public",
+      "publicationClass": "canonical",
+      "tags": [
+        "Algorithmic Composition",
+        "Electronic Music",
+        "Generative Systems",
+        "Music Theory"
+      ],
+      "discipline": [
+        "Electronic Music",
+        "Music Production",
+        "Creative Coding",
+        "Cybernetics"
+      ],
+      "route": "/knowledge/concepts/algorithmic-composition/",
+      "identifier": "/id/concept/algorithmic-composition/",
+      "temporality": {
+        "creationDate": "2026-06-24",
+        "lastUpdated": "2026-06-24",
+        "releaseDate": "2026-06-24",
+        "creationYear": "2026"
+      }
+    },
+    {
+      "id": "ea:concept:augmented-intelligence",
+      "legacyId": "augmented-intelligence",
+      "kind": "concept",
+      "type": "concept",
+      "title": "Augmented Intelligence",
+      "summary": "Augmented intelligence reframes computation as a partner in human work, linking HCI, AI, knowledge systems, creative tools and Electronic Artefacts runtime research.",
+      "description": "A canonical concept record for human-centered computational augmentation.",
+      "definition": "Augmented intelligence is the design of tools, interfaces and systems that expand human perception, reasoning, memory and creative capability.",
+      "status": "active",
+      "maturity": "research",
+      "confidence": "canonical",
+      "visibility": "public",
+      "publicationClass": "canonical",
+      "tags": [
+        "Augmented Intelligence",
+        "HCI",
+        "AI",
+        "Creative Tools"
+      ],
+      "discipline": [
+        "Human Computer Interaction",
+        "Artificial Intelligence",
+        "Knowledge Systems",
+        "Systems Design"
+      ],
+      "route": "/knowledge/concepts/augmented-intelligence/",
+      "identifier": "/id/concept/augmented-intelligence/",
+      "temporality": {
+        "creationDate": "2026-06-24",
+        "lastUpdated": "2026-06-24",
+        "releaseDate": "2026-06-24",
+        "creationYear": "2026"
+      }
+    },
+    {
       "id": "ea:concept:contextual-execution",
       "legacyId": "contextual-execution",
       "kind": "concept",
@@ -5423,6 +5529,41 @@ window.EA_PUBLIC_CATALOG = {
       }
     },
     {
+      "id": "ea:concept:generative-ai",
+      "legacyId": "generative-ai",
+      "kind": "concept",
+      "type": "concept",
+      "title": "Generative AI",
+      "summary": "Generative AI connects machine learning, creative workflows, latent spaces, risk management, provenance, authorship and cultural production.",
+      "description": "A canonical concept record for generative AI in creative and knowledge systems.",
+      "definition": "Generative AI refers to machine-learning systems that produce or transform media such as text, image, audio, video, code or structured data from learned patterns.",
+      "status": "active",
+      "maturity": "research",
+      "confidence": "validated",
+      "visibility": "public",
+      "publicationClass": "canonical",
+      "tags": [
+        "Generative AI",
+        "Machine Learning",
+        "Provenance",
+        "Creative Workflows"
+      ],
+      "discipline": [
+        "Artificial Intelligence",
+        "Machine Learning",
+        "Creative Coding",
+        "Digital Art"
+      ],
+      "route": "/knowledge/concepts/generative-ai/",
+      "identifier": "/id/concept/generative-ai/",
+      "temporality": {
+        "creationDate": "2026-06-24",
+        "lastUpdated": "2026-06-24",
+        "releaseDate": "2026-06-24",
+        "creationYear": "2026"
+      }
+    },
+    {
       "id": "ea:concept:generative-system",
       "legacyId": "generative-system",
       "kind": "concept",
@@ -5491,6 +5632,111 @@ window.EA_PUBLIC_CATALOG = {
         "lastUpdated": "2026-06-22",
         "releaseDate": "2026-06-22",
         "creationYear": "2024"
+      }
+    },
+    {
+      "id": "ea:concept:human-computer-interaction",
+      "legacyId": "human-computer-interaction",
+      "kind": "concept",
+      "type": "concept",
+      "title": "Human Computer Interaction",
+      "summary": "HCI connects interface design, accessibility, creative tools, augmented intelligence, software ergonomics and the social consequences of computation.",
+      "description": "A canonical concept record for HCI as a design and research discipline.",
+      "definition": "Human computer interaction is the study and design of relationships between people, computational systems, interfaces, tasks, environments and cultures of use.",
+      "status": "active",
+      "maturity": "research",
+      "confidence": "canonical",
+      "visibility": "public",
+      "publicationClass": "canonical",
+      "tags": [
+        "HCI",
+        "Interface Design",
+        "Accessibility",
+        "Creative Tools"
+      ],
+      "discipline": [
+        "Human Computer Interaction",
+        "Design",
+        "Web Development",
+        "Artificial Intelligence"
+      ],
+      "route": "/knowledge/concepts/human-computer-interaction/",
+      "identifier": "/id/concept/human-computer-interaction/",
+      "temporality": {
+        "creationDate": "2026-06-24",
+        "lastUpdated": "2026-06-24",
+        "releaseDate": "2026-06-24",
+        "creationYear": "2026"
+      }
+    },
+    {
+      "id": "ea:concept:hypertext",
+      "legacyId": "hypertext",
+      "kind": "concept",
+      "type": "concept",
+      "title": "Hypertext",
+      "summary": "Hypertext is a foundational concept for the web, digital archives, knowledge graphs, digital gardens, public notes and Electronic Artefacts knowledge publishing.",
+      "description": "A canonical concept record for linked textual and media systems.",
+      "definition": "Hypertext is a system of non-linear text and media connected by links, allowing readers and machines to traverse knowledge through associations.",
+      "status": "active",
+      "maturity": "research",
+      "confidence": "canonical",
+      "visibility": "public",
+      "publicationClass": "canonical",
+      "tags": [
+        "Hypertext",
+        "Web",
+        "Knowledge Systems",
+        "Digital Archives"
+      ],
+      "discipline": [
+        "Knowledge Systems",
+        "Internet Culture",
+        "Web Development",
+        "History of Technology"
+      ],
+      "route": "/knowledge/concepts/hypertext/",
+      "identifier": "/id/concept/hypertext/",
+      "temporality": {
+        "creationDate": "2026-06-24",
+        "lastUpdated": "2026-06-24",
+        "releaseDate": "2026-06-24",
+        "creationYear": "2026"
+      }
+    },
+    {
+      "id": "ea:concept:internet-culture",
+      "legacyId": "internet-culture",
+      "kind": "concept",
+      "type": "concept",
+      "title": "Internet Culture",
+      "summary": "Internet culture connects network protocols, web publishing, platform communities, memes, archives, open source, digital folklore and public knowledge systems.",
+      "description": "A canonical concept record for networked cultural production and memory.",
+      "definition": "Internet culture is the set of social forms, aesthetics, protocols, communities, memes, archives and practices that emerge through networked communication.",
+      "status": "active",
+      "maturity": "research",
+      "confidence": "validated",
+      "visibility": "public",
+      "publicationClass": "canonical",
+      "tags": [
+        "Internet Culture",
+        "Network Culture",
+        "Memes",
+        "Archives"
+      ],
+      "discipline": [
+        "Internet Culture",
+        "Network Culture",
+        "Archives",
+        "History of Technology"
+      ],
+      "route": "/knowledge/concepts/internet-culture/",
+      "identifier": "/id/concept/internet-culture/",
+      "temporality": {
+        "creationDate": "2026-06-24",
+        "lastUpdated": "2026-06-24",
+        "releaseDate": "2026-06-24",
+        "creationYear": "2026"
       }
     },
     {
@@ -5566,6 +5812,181 @@ window.EA_PUBLIC_CATALOG = {
       }
     },
     {
+      "id": "ea:concept:metadata",
+      "legacyId": "metadata",
+      "kind": "concept",
+      "type": "concept",
+      "title": "Metadata",
+      "summary": "Metadata is the descriptive, administrative, structural and preservation layer that makes archives, catalogues, digital objects and knowledge graphs usable over time.",
+      "description": "A canonical concept record for metadata in cultural and technical systems.",
+      "definition": "Metadata is structured information about a resource, such as title, creator, date, format, source, rights, subject, relation and preservation context.",
+      "status": "active",
+      "maturity": "research",
+      "confidence": "canonical",
+      "visibility": "public",
+      "publicationClass": "canonical",
+      "tags": [
+        "Metadata",
+        "Archives",
+        "Cataloguing",
+        "Preservation"
+      ],
+      "discipline": [
+        "Archives",
+        "Knowledge Systems",
+        "Research Methods",
+        "Digital Preservation"
+      ],
+      "route": "/knowledge/concepts/metadata/",
+      "identifier": "/id/concept/metadata/",
+      "temporality": {
+        "creationDate": "2026-06-24",
+        "lastUpdated": "2026-06-24",
+        "releaseDate": "2026-06-24",
+        "creationYear": "2026"
+      }
+    },
+    {
+      "id": "ea:concept:motion-design",
+      "legacyId": "motion-design",
+      "kind": "concept",
+      "type": "concept",
+      "title": "Motion Design",
+      "summary": "Motion design connects visual culture, interface semantics, typography, animation, sound, choreography and web interaction.",
+      "description": "A canonical concept record for motion as a design and interface discipline.",
+      "definition": "Motion design is the use of time, movement, transition, rhythm and sequencing to structure visual communication and interface behavior.",
+      "status": "active",
+      "maturity": "research",
+      "confidence": "validated",
+      "visibility": "public",
+      "publicationClass": "canonical",
+      "tags": [
+        "Motion Design",
+        "Animation",
+        "Interface",
+        "Visual Culture"
+      ],
+      "discipline": [
+        "Motion Design",
+        "Design",
+        "Human Computer Interaction",
+        "Web Development"
+      ],
+      "route": "/knowledge/concepts/motion-design/",
+      "identifier": "/id/concept/motion-design/",
+      "temporality": {
+        "creationDate": "2026-06-24",
+        "lastUpdated": "2026-06-24",
+        "releaseDate": "2026-06-24",
+        "creationYear": "2026"
+      }
+    },
+    {
+      "id": "ea:concept:open-source",
+      "legacyId": "open-source",
+      "kind": "concept",
+      "type": "concept",
+      "title": "Open Source",
+      "summary": "Open source is both a licensing model and a cultural infrastructure for software, creative tools, public knowledge, maintainership and technical education.",
+      "description": "A canonical concept record for open source software and cultural infrastructure.",
+      "definition": "Open source is a software and cultural practice in which source code is made available under licenses that allow use, study, modification and redistribution.",
+      "status": "active",
+      "maturity": "research",
+      "confidence": "canonical",
+      "visibility": "public",
+      "publicationClass": "canonical",
+      "tags": [
+        "Open Source",
+        "Software",
+        "Commons",
+        "Infrastructure"
+      ],
+      "discipline": [
+        "Open Source",
+        "Programming",
+        "Creative Coding",
+        "Creative Business"
+      ],
+      "route": "/knowledge/concepts/open-source/",
+      "identifier": "/id/concept/open-source/",
+      "temporality": {
+        "creationDate": "2026-06-24",
+        "lastUpdated": "2026-06-24",
+        "releaseDate": "2026-06-24",
+        "creationYear": "2026"
+      }
+    },
+    {
+      "id": "ea:concept:personal-knowledge-system",
+      "legacyId": "personal-knowledge-system",
+      "kind": "concept",
+      "type": "concept",
+      "title": "Personal Knowledge System",
+      "summary": "Personal knowledge systems connect digital gardens, wikis, note archives, research methods, backlinks and long-term intellectual memory.",
+      "description": "A canonical concept record for durable note and knowledge practices.",
+      "definition": "A personal knowledge system is a practice and tool environment for capturing, linking, revising and retrieving notes, sources, ideas and decisions over time.",
+      "status": "active",
+      "maturity": "research",
+      "confidence": "validated",
+      "visibility": "public",
+      "publicationClass": "canonical",
+      "tags": [
+        "Personal Knowledge Management",
+        "Digital Gardens",
+        "Notes",
+        "Research"
+      ],
+      "discipline": [
+        "Knowledge Systems",
+        "Research Methods",
+        "Internet Culture",
+        "Writing"
+      ],
+      "route": "/knowledge/concepts/personal-knowledge-system/",
+      "identifier": "/id/concept/personal-knowledge-system/",
+      "temporality": {
+        "creationDate": "2026-06-24",
+        "lastUpdated": "2026-06-24",
+        "releaseDate": "2026-06-24",
+        "creationYear": "2026"
+      }
+    },
+    {
+      "id": "ea:concept:procedural-graphics",
+      "legacyId": "procedural-graphics",
+      "kind": "concept",
+      "type": "concept",
+      "title": "Procedural Graphics",
+      "summary": "Procedural graphics connect shaders, generative systems, motion design, creative coding, visual culture and real-time web interfaces.",
+      "description": "A canonical concept record for rule-based visual generation.",
+      "definition": "Procedural graphics are images or visual systems generated from rules, algorithms, parameters, simulation or code rather than only manually drawn assets.",
+      "status": "active",
+      "maturity": "research",
+      "confidence": "canonical",
+      "visibility": "public",
+      "publicationClass": "canonical",
+      "tags": [
+        "Procedural Graphics",
+        "Shaders",
+        "WebGL",
+        "Generative Art"
+      ],
+      "discipline": [
+        "Creative Coding",
+        "Visual Culture",
+        "Digital Art",
+        "Motion Design"
+      ],
+      "route": "/knowledge/concepts/procedural-graphics/",
+      "identifier": "/id/concept/procedural-graphics/",
+      "temporality": {
+        "creationDate": "2026-06-24",
+        "lastUpdated": "2026-06-24",
+        "releaseDate": "2026-06-24",
+        "creationYear": "2026"
+      }
+    },
+    {
       "id": "ea:concept:provenance",
       "legacyId": "provenance",
       "kind": "concept",
@@ -5633,6 +6054,76 @@ window.EA_PUBLIC_CATALOG = {
         "creationDate": "2026-06-23",
         "lastUpdated": "2026-06-23",
         "releaseDate": "2026-06-23",
+        "creationYear": "2026"
+      }
+    },
+    {
+      "id": "ea:concept:typography",
+      "legacyId": "typography",
+      "kind": "concept",
+      "type": "concept",
+      "title": "Typography",
+      "summary": "Typography connects design, reading systems, accessibility, visual culture, web interfaces and long-form knowledge publishing.",
+      "description": "A canonical concept record for typography in digital interfaces and cultural publishing.",
+      "definition": "Typography is the design and arrangement of written language through typefaces, spacing, hierarchy, rhythm, scale and reading conditions.",
+      "status": "active",
+      "maturity": "research",
+      "confidence": "canonical",
+      "visibility": "public",
+      "publicationClass": "canonical",
+      "tags": [
+        "Typography",
+        "Reading",
+        "Interface Design",
+        "Accessibility"
+      ],
+      "discipline": [
+        "Typography",
+        "Design",
+        "Visual Culture",
+        "Web Development"
+      ],
+      "route": "/knowledge/concepts/typography/",
+      "identifier": "/id/concept/typography/",
+      "temporality": {
+        "creationDate": "2026-06-24",
+        "lastUpdated": "2026-06-24",
+        "releaseDate": "2026-06-24",
+        "creationYear": "2026"
+      }
+    },
+    {
+      "id": "ea:concept:web-audio",
+      "legacyId": "web-audio",
+      "kind": "concept",
+      "type": "concept",
+      "title": "Web Audio",
+      "summary": "Web audio connects sound design, browser runtimes, interactive media, creative coding and public sound tools.",
+      "description": "A canonical concept record for audio systems built on the web platform.",
+      "definition": "Web audio is the use of browser-based audio APIs and related web technologies to synthesize, process, analyze, route and present sound.",
+      "status": "active",
+      "maturity": "research",
+      "confidence": "validated",
+      "visibility": "public",
+      "publicationClass": "canonical",
+      "tags": [
+        "Web Audio",
+        "Browser",
+        "Sound Design",
+        "Creative Coding"
+      ],
+      "discipline": [
+        "Audio Engineering",
+        "Web Development",
+        "Creative Coding",
+        "Sound Design"
+      ],
+      "route": "/knowledge/concepts/web-audio/",
+      "identifier": "/id/concept/web-audio/",
+      "temporality": {
+        "creationDate": "2026-06-24",
+        "lastUpdated": "2026-06-24",
+        "releaseDate": "2026-06-24",
         "creationYear": "2026"
       }
     },
@@ -5819,6 +6310,41 @@ window.EA_PUBLIC_CATALOG = {
       }
     },
     {
+      "id": "ea:publication:algorithmic-composition-and-rule-based-music",
+      "legacyId": "algorithmic-composition-and-rule-based-music",
+      "kind": "publication",
+      "type": "publication",
+      "title": "Algorithmic Composition and Rule-Based Music",
+      "subtitle": "Technical Article",
+      "summary": "This article explains algorithmic composition through rules, stochastic methods, cybernetics, electronic music, creative coding, generative systems and ORETH.",
+      "description": "A technical article on algorithmic composition, rule-based music, generative sound, cybernetics and Electronic Artefacts audio research.",
+      "status": "active",
+      "maturity": "research",
+      "confidence": "published",
+      "visibility": "public",
+      "publicationClass": "published",
+      "tags": [
+        "Algorithmic Composition",
+        "Electronic Music",
+        "Generative Music",
+        "ORETH"
+      ],
+      "discipline": [
+        "Electronic Music",
+        "Music Production",
+        "Creative Coding",
+        "Cybernetics"
+      ],
+      "route": "/publications/algorithmic-composition-and-rule-based-music/",
+      "identifier": "/id/publication/algorithmic-composition-and-rule-based-music/",
+      "temporality": {
+        "creationDate": "2026-06-24",
+        "lastUpdated": "2026-06-24",
+        "releaseDate": "2026-06-24",
+        "creationYear": "2026"
+      }
+    },
+    {
       "id": "ea:publication:contextual-execution-and-graph-runtimes",
       "legacyId": "contextual-execution-and-graph-runtimes",
       "kind": "publication",
@@ -5851,6 +6377,41 @@ window.EA_PUBLIC_CATALOG = {
         "creationDate": "2026-06-23",
         "lastUpdated": "2026-06-23",
         "releaseDate": "2026-06-23",
+        "creationYear": "2026"
+      }
+    },
+    {
+      "id": "ea:publication:creative-coding-pedagogy-from-logo-to-p5js",
+      "legacyId": "creative-coding-pedagogy-from-logo-to-p5js",
+      "kind": "publication",
+      "type": "publication",
+      "title": "Creative Coding Pedagogy from Logo to p5.js",
+      "subtitle": "Technical Article",
+      "summary": "This article explains creative coding pedagogy through exploratory programming, computational literacy, Processing, p5.js, visual feedback and open learning communities.",
+      "description": "A technical article on teaching creative coding, Processing, p5.js, computational media, open source and Electronic Artefacts learning culture.",
+      "status": "active",
+      "maturity": "research",
+      "confidence": "published",
+      "visibility": "public",
+      "publicationClass": "published",
+      "tags": [
+        "Creative Coding",
+        "Processing",
+        "p5.js",
+        "Education"
+      ],
+      "discipline": [
+        "Creative Coding",
+        "Programming",
+        "Design",
+        "Open Source"
+      ],
+      "route": "/publications/creative-coding-pedagogy-from-logo-to-p5js/",
+      "identifier": "/id/publication/creative-coding-pedagogy-from-logo-to-p5js/",
+      "temporality": {
+        "creationDate": "2026-06-24",
+        "lastUpdated": "2026-06-24",
+        "releaseDate": "2026-06-24",
         "creationYear": "2026"
       }
     },
@@ -5921,6 +6482,41 @@ window.EA_PUBLIC_CATALOG = {
       }
     },
     {
+      "id": "ea:publication:generative-ai-latent-space-and-creative-workflows",
+      "legacyId": "generative-ai-latent-space-and-creative-workflows",
+      "kind": "publication",
+      "type": "publication",
+      "title": "Generative AI, Latent Space and Creative Workflows",
+      "subtitle": "Technical Article",
+      "summary": "This article explains generative AI as a creative workflow topic, covering latent spaces, prompts, provenance, risk, evaluation, authorship and Electronic Artefacts systems.",
+      "description": "A technical article on generative AI, latent space, creative workflows, provenance, augmented intelligence and responsible production.",
+      "status": "active",
+      "maturity": "research",
+      "confidence": "published",
+      "visibility": "public",
+      "publicationClass": "published",
+      "tags": [
+        "Generative AI",
+        "Latent Space",
+        "Creative Workflows",
+        "Provenance"
+      ],
+      "discipline": [
+        "Artificial Intelligence",
+        "Machine Learning",
+        "Creative Coding",
+        "Human Computer Interaction"
+      ],
+      "route": "/publications/generative-ai-latent-space-and-creative-workflows/",
+      "identifier": "/id/publication/generative-ai-latent-space-and-creative-workflows/",
+      "temporality": {
+        "creationDate": "2026-06-24",
+        "lastUpdated": "2026-06-24",
+        "releaseDate": "2026-06-24",
+        "creationYear": "2026"
+      }
+    },
+    {
       "id": "ea:publication:generative-systems-cybernetics-and-creative-coding",
       "legacyId": "generative-systems-cybernetics-and-creative-coding",
       "kind": "publication",
@@ -5954,6 +6550,77 @@ window.EA_PUBLIC_CATALOG = {
         "creationDate": "2026-06-23",
         "lastUpdated": "2026-06-23",
         "releaseDate": "2026-06-23",
+        "creationYear": "2026"
+      }
+    },
+    {
+      "id": "ea:publication:human-computer-interaction-for-creative-tools",
+      "legacyId": "human-computer-interaction-for-creative-tools",
+      "kind": "publication",
+      "type": "publication",
+      "title": "Human Computer Interaction for Creative Tools",
+      "subtitle": "Technical Article",
+      "summary": "This article explains HCI for creative tools, focusing on feedback, agency, flow, error recovery, accessibility, augmented intelligence and computational media.",
+      "description": "A technical article on HCI, creative tools, interface design, augmented intelligence, accessibility and Electronic Artefacts systems.",
+      "status": "active",
+      "maturity": "research",
+      "confidence": "published",
+      "visibility": "public",
+      "publicationClass": "published",
+      "tags": [
+        "HCI",
+        "Creative Tools",
+        "Augmented Intelligence",
+        "Accessibility"
+      ],
+      "discipline": [
+        "Human Computer Interaction",
+        "Design",
+        "Creative Coding",
+        "Artificial Intelligence"
+      ],
+      "route": "/publications/human-computer-interaction-for-creative-tools/",
+      "identifier": "/id/publication/human-computer-interaction-for-creative-tools/",
+      "temporality": {
+        "creationDate": "2026-06-24",
+        "lastUpdated": "2026-06-24",
+        "releaseDate": "2026-06-24",
+        "creationYear": "2026"
+      }
+    },
+    {
+      "id": "ea:publication:hypertext-and-augmented-knowledge-systems",
+      "legacyId": "hypertext-and-augmented-knowledge-systems",
+      "kind": "publication",
+      "type": "publication",
+      "title": "Hypertext and Augmented Knowledge Systems",
+      "subtitle": "Technical Article",
+      "summary": "This article explains hypertext as a long-term knowledge architecture, connecting Vannevar Bush, Douglas Engelbart, web links, knowledge graphs and augmented intelligence.",
+      "description": "A technical article on hypertext, augmented intelligence, linked pages, knowledge graphs and Electronic Artefacts knowledge publishing.",
+      "status": "active",
+      "maturity": "research",
+      "confidence": "published",
+      "visibility": "public",
+      "publicationClass": "published",
+      "tags": [
+        "Hypertext",
+        "Augmented Intelligence",
+        "Knowledge Graph",
+        "Linked Data",
+        "History of Technology"
+      ],
+      "discipline": [
+        "Knowledge Systems",
+        "History of Technology",
+        "Web Development",
+        "Human Computer Interaction"
+      ],
+      "route": "/publications/hypertext-and-augmented-knowledge-systems/",
+      "identifier": "/id/publication/hypertext-and-augmented-knowledge-systems/",
+      "temporality": {
+        "creationDate": "2026-06-24",
+        "lastUpdated": "2026-06-24",
+        "releaseDate": "2026-06-24",
         "creationYear": "2026"
       }
     },
@@ -6029,6 +6696,181 @@ window.EA_PUBLIC_CATALOG = {
       }
     },
     {
+      "id": "ea:publication:metadata-cataloguing-and-cultural-memory",
+      "legacyId": "metadata-cataloguing-and-cultural-memory",
+      "kind": "publication",
+      "type": "publication",
+      "title": "Metadata, Cataloguing and Cultural Memory",
+      "subtitle": "Technical Article",
+      "summary": "This article explains metadata as a cultural memory layer, connecting cataloguing, Dublin Core, PREMIS, METS, provenance, archives and knowledge graphs.",
+      "description": "A technical article on metadata, cataloguing, cultural memory, preservation standards and Electronic Artefacts graph records.",
+      "status": "active",
+      "maturity": "research",
+      "confidence": "published",
+      "visibility": "public",
+      "publicationClass": "published",
+      "tags": [
+        "Metadata",
+        "Cataloguing",
+        "Archives",
+        "Cultural Memory"
+      ],
+      "discipline": [
+        "Archives",
+        "Knowledge Systems",
+        "Research Methods",
+        "History of Technology"
+      ],
+      "route": "/publications/metadata-cataloguing-and-cultural-memory/",
+      "identifier": "/id/publication/metadata-cataloguing-and-cultural-memory/",
+      "temporality": {
+        "creationDate": "2026-06-24",
+        "lastUpdated": "2026-06-24",
+        "releaseDate": "2026-06-24",
+        "creationYear": "2026"
+      }
+    },
+    {
+      "id": "ea:publication:motion-design-time-and-interface-semantics",
+      "legacyId": "motion-design-time-and-interface-semantics",
+      "kind": "publication",
+      "type": "publication",
+      "title": "Motion Design, Time and Interface Semantics",
+      "subtitle": "Technical Article",
+      "summary": "This article explains motion design as a semantic layer for digital interfaces, connecting time, transition, attention, accessibility and Web Animations.",
+      "description": "A technical article on motion design, web animation, interface state, accessibility and temporal visual systems.",
+      "status": "active",
+      "maturity": "research",
+      "confidence": "published",
+      "visibility": "public",
+      "publicationClass": "published",
+      "tags": [
+        "Motion Design",
+        "Web Animations",
+        "Interface Design",
+        "Accessibility"
+      ],
+      "discipline": [
+        "Motion Design",
+        "Design",
+        "Human Computer Interaction",
+        "Web Development"
+      ],
+      "route": "/publications/motion-design-time-and-interface-semantics/",
+      "identifier": "/id/publication/motion-design-time-and-interface-semantics/",
+      "temporality": {
+        "creationDate": "2026-06-24",
+        "lastUpdated": "2026-06-24",
+        "releaseDate": "2026-06-24",
+        "creationYear": "2026"
+      }
+    },
+    {
+      "id": "ea:publication:open-source-as-cultural-infrastructure",
+      "legacyId": "open-source-as-cultural-infrastructure",
+      "kind": "publication",
+      "type": "publication",
+      "title": "Open Source as Cultural Infrastructure",
+      "subtitle": "Technical Article",
+      "summary": "This article frames open source as cultural infrastructure, explaining licenses, maintenance, creative tools, dependency chains, commons and public knowledge systems.",
+      "description": "A technical article on open source software, maintainership, creative coding, infrastructure and Electronic Artefacts knowledge culture.",
+      "status": "active",
+      "maturity": "research",
+      "confidence": "published",
+      "visibility": "public",
+      "publicationClass": "published",
+      "tags": [
+        "Open Source",
+        "Creative Coding",
+        "Infrastructure",
+        "Maintainers"
+      ],
+      "discipline": [
+        "Open Source",
+        "Programming",
+        "Creative Coding",
+        "Internet Culture"
+      ],
+      "route": "/publications/open-source-as-cultural-infrastructure/",
+      "identifier": "/id/publication/open-source-as-cultural-infrastructure/",
+      "temporality": {
+        "creationDate": "2026-06-24",
+        "lastUpdated": "2026-06-24",
+        "releaseDate": "2026-06-24",
+        "creationYear": "2026"
+      }
+    },
+    {
+      "id": "ea:publication:personal-knowledge-systems-and-digital-gardens",
+      "legacyId": "personal-knowledge-systems-and-digital-gardens",
+      "kind": "publication",
+      "type": "publication",
+      "title": "Personal Knowledge Systems and Digital Gardens",
+      "subtitle": "Technical Article",
+      "summary": "This article explains personal knowledge systems and digital gardens as durable practices for notes, sources, backlinks, revision, public learning and research libraries.",
+      "description": "A technical article on personal knowledge systems, digital gardens, backlinks, research memory and public knowledge hubs.",
+      "status": "active",
+      "maturity": "research",
+      "confidence": "published",
+      "visibility": "public",
+      "publicationClass": "published",
+      "tags": [
+        "Personal Knowledge Management",
+        "Digital Gardens",
+        "Backlinks",
+        "Research Methods"
+      ],
+      "discipline": [
+        "Knowledge Systems",
+        "Research Methods",
+        "Internet Culture",
+        "Archives"
+      ],
+      "route": "/publications/personal-knowledge-systems-and-digital-gardens/",
+      "identifier": "/id/publication/personal-knowledge-systems-and-digital-gardens/",
+      "temporality": {
+        "creationDate": "2026-06-24",
+        "lastUpdated": "2026-06-24",
+        "releaseDate": "2026-06-24",
+        "creationYear": "2026"
+      }
+    },
+    {
+      "id": "ea:publication:procedural-graphics-shaders-and-visual-systems",
+      "legacyId": "procedural-graphics-shaders-and-visual-systems",
+      "kind": "publication",
+      "type": "publication",
+      "title": "Procedural Graphics, Shaders and Visual Systems",
+      "subtitle": "Technical Article",
+      "summary": "This article explains procedural graphics through rules, shaders, parameters, WebGL, generative systems and visual grammars for digital art and interfaces.",
+      "description": "A technical article on procedural graphics, shaders, WebGL, creative coding and generative visual systems.",
+      "status": "active",
+      "maturity": "research",
+      "confidence": "published",
+      "visibility": "public",
+      "publicationClass": "published",
+      "tags": [
+        "Procedural Graphics",
+        "Shaders",
+        "WebGL",
+        "Generative Art"
+      ],
+      "discipline": [
+        "Creative Coding",
+        "Digital Art",
+        "Visual Culture",
+        "Web Development"
+      ],
+      "route": "/publications/procedural-graphics-shaders-and-visual-systems/",
+      "identifier": "/id/publication/procedural-graphics-shaders-and-visual-systems/",
+      "temporality": {
+        "creationDate": "2026-06-24",
+        "lastUpdated": "2026-06-24",
+        "releaseDate": "2026-06-24",
+        "creationYear": "2026"
+      }
+    },
+    {
       "id": "ea:publication:signal-archaeology-audio-memory-and-machine-listening",
       "legacyId": "signal-archaeology-audio-memory-and-machine-listening",
       "kind": "publication",
@@ -6066,6 +6908,76 @@ window.EA_PUBLIC_CATALOG = {
       }
     },
     {
+      "id": "ea:publication:typography-reading-systems-and-digital-interfaces",
+      "legacyId": "typography-reading-systems-and-digital-interfaces",
+      "kind": "publication",
+      "type": "publication",
+      "title": "Typography, Reading Systems and Digital Interfaces",
+      "subtitle": "Technical Article",
+      "summary": "This article explains typography as infrastructure for digital reading, connecting type, layout, hierarchy, accessibility, CSS Fonts and long-form knowledge publishing.",
+      "description": "A technical article on typography, reading systems, web interfaces, accessibility and Electronic Artefacts editorial design.",
+      "status": "active",
+      "maturity": "research",
+      "confidence": "published",
+      "visibility": "public",
+      "publicationClass": "published",
+      "tags": [
+        "Typography",
+        "Reading Systems",
+        "Interface Design",
+        "Accessibility"
+      ],
+      "discipline": [
+        "Typography",
+        "Design",
+        "Web Development",
+        "Human Computer Interaction"
+      ],
+      "route": "/publications/typography-reading-systems-and-digital-interfaces/",
+      "identifier": "/id/publication/typography-reading-systems-and-digital-interfaces/",
+      "temporality": {
+        "creationDate": "2026-06-24",
+        "lastUpdated": "2026-06-24",
+        "releaseDate": "2026-06-24",
+        "creationYear": "2026"
+      }
+    },
+    {
+      "id": "ea:publication:web-audio-and-browser-based-sound-systems",
+      "legacyId": "web-audio-and-browser-based-sound-systems",
+      "kind": "publication",
+      "type": "publication",
+      "title": "Web Audio and Browser-Based Sound Systems",
+      "subtitle": "Technical Article",
+      "summary": "This article explains Web Audio as a browser-native sound architecture for synthesis, processing, analysis, interactive essays, creative coding and public audio tools.",
+      "description": "A technical article on Web Audio, audio graphs, browser sound, ORETH, machine listening and interactive media.",
+      "status": "active",
+      "maturity": "research",
+      "confidence": "published",
+      "visibility": "public",
+      "publicationClass": "published",
+      "tags": [
+        "Web Audio",
+        "Audio Graph",
+        "Browser Sound",
+        "ORETH"
+      ],
+      "discipline": [
+        "Audio Engineering",
+        "Web Development",
+        "Creative Coding",
+        "Sound Design"
+      ],
+      "route": "/publications/web-audio-and-browser-based-sound-systems/",
+      "identifier": "/id/publication/web-audio-and-browser-based-sound-systems/",
+      "temporality": {
+        "creationDate": "2026-06-24",
+        "lastUpdated": "2026-06-24",
+        "releaseDate": "2026-06-24",
+        "creationYear": "2026"
+      }
+    },
+    {
       "id": "ea:researchField:runtime-theory",
       "legacyId": "runtime-theory",
       "kind": "researchField",
@@ -6098,6 +7010,70 @@ window.EA_PUBLIC_CATALOG = {
         "lastUpdated": "2026-06-22",
         "releaseDate": "2026-06-22",
         "creationYear": "2024"
+      }
+    },
+    {
+      "id": "ea:technology:activitypub",
+      "legacyId": "activitypub",
+      "kind": "technology",
+      "type": "technology",
+      "title": "ActivityPub",
+      "summary": "ActivityPub is a decentralized social networking protocol standardized by W3C for federated server-to-server and client-to-server activity exchange.",
+      "description": "A technology record for federated network culture and social web infrastructure.",
+      "status": "active",
+      "maturity": "production",
+      "confidence": "canonical",
+      "visibility": "public",
+      "publicationClass": "canonical",
+      "tags": [
+        "ActivityPub",
+        "Federation",
+        "Social Web"
+      ],
+      "discipline": [
+        "Internet Culture",
+        "Network Culture",
+        "Web Development"
+      ],
+      "route": "/knowledge/technologies/activitypub/",
+      "identifier": "/id/technology/activitypub/",
+      "temporality": {
+        "creationDate": "2026-06-24",
+        "lastUpdated": "2026-06-24",
+        "releaseDate": "2026-06-24",
+        "creationYear": "2026"
+      }
+    },
+    {
+      "id": "ea:technology:css-fonts",
+      "legacyId": "css-fonts",
+      "kind": "technology",
+      "type": "technology",
+      "title": "CSS Fonts",
+      "summary": "CSS Fonts defines web font selection, font faces and typographic behavior for digital interfaces and web documents.",
+      "description": "A technology record for browser typography and reading systems.",
+      "status": "active",
+      "maturity": "production",
+      "confidence": "validated",
+      "visibility": "public",
+      "publicationClass": "canonical",
+      "tags": [
+        "CSS Fonts",
+        "Typography",
+        "Web"
+      ],
+      "discipline": [
+        "Typography",
+        "Web Development",
+        "Design"
+      ],
+      "route": "/knowledge/technologies/css-fonts/",
+      "identifier": "/id/technology/css-fonts/",
+      "temporality": {
+        "creationDate": "2026-06-24",
+        "lastUpdated": "2026-06-24",
+        "releaseDate": "2026-06-24",
+        "creationYear": "2026"
       }
     },
     {
@@ -6165,6 +7141,102 @@ window.EA_PUBLIC_CATALOG = {
         "lastUpdated": "2026-06-23",
         "releaseDate": "2026-06-23",
         "creationYear": "2014"
+      }
+    },
+    {
+      "id": "ea:technology:web-animations",
+      "legacyId": "web-animations",
+      "kind": "technology",
+      "type": "technology",
+      "title": "Web Animations",
+      "summary": "Web Animations defines a timing and animation model for changes to web page presentation and related programming interfaces.",
+      "description": "A technology record for animation timing, synchronization and interface motion on the web.",
+      "status": "active",
+      "maturity": "production",
+      "confidence": "validated",
+      "visibility": "public",
+      "publicationClass": "canonical",
+      "tags": [
+        "Web Animations",
+        "Motion Design",
+        "Interface"
+      ],
+      "discipline": [
+        "Motion Design",
+        "Web Development",
+        "Human Computer Interaction"
+      ],
+      "route": "/knowledge/technologies/web-animations/",
+      "identifier": "/id/technology/web-animations/",
+      "temporality": {
+        "creationDate": "2026-06-24",
+        "lastUpdated": "2026-06-24",
+        "releaseDate": "2026-06-24",
+        "creationYear": "2026"
+      }
+    },
+    {
+      "id": "ea:technology:web-audio-api",
+      "legacyId": "web-audio-api",
+      "kind": "technology",
+      "type": "technology",
+      "title": "Web Audio API",
+      "summary": "The Web Audio API is a browser platform technology for routing, synthesizing, processing and analyzing audio through connected audio nodes.",
+      "description": "A technology record for browser-native audio processing and synthesis.",
+      "status": "active",
+      "maturity": "production",
+      "confidence": "canonical",
+      "visibility": "public",
+      "publicationClass": "canonical",
+      "tags": [
+        "Web Audio API",
+        "Browser Audio",
+        "Audio Graph"
+      ],
+      "discipline": [
+        "Audio Engineering",
+        "Web Development",
+        "Creative Coding"
+      ],
+      "route": "/knowledge/technologies/web-audio-api/",
+      "identifier": "/id/technology/web-audio-api/",
+      "temporality": {
+        "creationDate": "2026-06-24",
+        "lastUpdated": "2026-06-24",
+        "releaseDate": "2026-06-24",
+        "creationYear": "2026"
+      }
+    },
+    {
+      "id": "ea:technology:webgl",
+      "legacyId": "webgl",
+      "kind": "technology",
+      "type": "technology",
+      "title": "WebGL",
+      "summary": "WebGL is a web platform technology for rendering interactive 2D and 3D graphics in compatible browsers using GPU acceleration.",
+      "description": "A technology record for browser graphics and shader-based visual systems.",
+      "status": "active",
+      "maturity": "production",
+      "confidence": "canonical",
+      "visibility": "public",
+      "publicationClass": "canonical",
+      "tags": [
+        "WebGL",
+        "Shaders",
+        "Browser Graphics"
+      ],
+      "discipline": [
+        "Creative Coding",
+        "Web Development",
+        "Digital Art"
+      ],
+      "route": "/knowledge/technologies/webgl/",
+      "identifier": "/id/technology/webgl/",
+      "temporality": {
+        "creationDate": "2026-06-24",
+        "lastUpdated": "2026-06-24",
+        "releaseDate": "2026-06-24",
+        "creationYear": "2026"
       }
     }
   ],
@@ -6654,6 +7726,688 @@ window.EA_PUBLIC_CATALOG = {
       "visibility": "public"
     },
     {
+      "id": "ear:hypertext-article-documents-hypertext",
+      "subject": "ea:publication:hypertext-and-augmented-knowledge-systems",
+      "predicate": "documents",
+      "object": "ea:concept:hypertext",
+      "statement": "Hypertext and Augmented Knowledge Systems documents hypertext as an architecture for linked public knowledge.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:hypertext-article-documents-augmented-intelligence",
+      "subject": "ea:publication:hypertext-and-augmented-knowledge-systems",
+      "predicate": "documents",
+      "object": "ea:concept:augmented-intelligence",
+      "statement": "Hypertext and Augmented Knowledge Systems connects hypertext to augmented intelligence and human knowledge work.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:hypertext-article-documents-knowledge-graph",
+      "subject": "ea:publication:hypertext-and-augmented-knowledge-systems",
+      "predicate": "documents",
+      "object": "ea:concept:knowledge-graph",
+      "statement": "Hypertext and Augmented Knowledge Systems explains how knowledge graphs strengthen linked pages with explicit relations.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:hypertext-article-documents-linked-data",
+      "subject": "ea:publication:hypertext-and-augmented-knowledge-systems",
+      "predicate": "documents",
+      "object": "ea:concept:linked-data",
+      "statement": "Hypertext and Augmented Knowledge Systems links hypertext practice to Linked Data and stable identifiers.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:personal-knowledge-article-documents-personal-knowledge-system",
+      "subject": "ea:publication:personal-knowledge-systems-and-digital-gardens",
+      "predicate": "documents",
+      "object": "ea:concept:personal-knowledge-system",
+      "statement": "Personal Knowledge Systems and Digital Gardens documents personal knowledge systems as a practice of capture, linking and revision.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:personal-knowledge-article-documents-hypertext",
+      "subject": "ea:publication:personal-knowledge-systems-and-digital-gardens",
+      "predicate": "documents",
+      "object": "ea:concept:hypertext",
+      "statement": "Personal Knowledge Systems and Digital Gardens uses hypertext as the linking model for public knowledge gardens.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:personal-knowledge-article-documents-metadata",
+      "subject": "ea:publication:personal-knowledge-systems-and-digital-gardens",
+      "predicate": "documents",
+      "object": "ea:concept:metadata",
+      "statement": "Personal Knowledge Systems and Digital Gardens connects durable note systems to metadata and publication state.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:personal-knowledge-article-documents-digital-preservation",
+      "subject": "ea:publication:personal-knowledge-systems-and-digital-gardens",
+      "predicate": "documents",
+      "object": "ea:concept:digital-preservation",
+      "statement": "Personal Knowledge Systems and Digital Gardens links revision and retrieval practice to digital preservation concerns.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:open-source-article-documents-open-source",
+      "subject": "ea:publication:open-source-as-cultural-infrastructure",
+      "predicate": "documents",
+      "object": "ea:concept:open-source",
+      "statement": "Open Source as Cultural Infrastructure documents open source as a licensing, maintenance and cultural infrastructure practice.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:open-source-article-documents-creative-coding",
+      "subject": "ea:publication:open-source-as-cultural-infrastructure",
+      "predicate": "documents",
+      "object": "ea:concept:creative-coding",
+      "statement": "Open Source as Cultural Infrastructure connects open source to creative coding tools and pedagogy.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:open-source-article-documents-internet-culture",
+      "subject": "ea:publication:open-source-as-cultural-infrastructure",
+      "predicate": "documents",
+      "object": "ea:concept:internet-culture",
+      "statement": "Open Source as Cultural Infrastructure frames open collaboration as part of broader internet culture.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:open-source-article-documents-digital-preservation",
+      "subject": "ea:publication:open-source-as-cultural-infrastructure",
+      "predicate": "documents",
+      "object": "ea:concept:digital-preservation",
+      "statement": "Open Source as Cultural Infrastructure connects software access and maintenance to preservation concerns.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:metadata-article-documents-metadata",
+      "subject": "ea:publication:metadata-cataloguing-and-cultural-memory",
+      "predicate": "documents",
+      "object": "ea:concept:metadata",
+      "statement": "Metadata, Cataloguing and Cultural Memory documents metadata as a cultural memory layer.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:metadata-article-documents-provenance",
+      "subject": "ea:publication:metadata-cataloguing-and-cultural-memory",
+      "predicate": "documents",
+      "object": "ea:concept:provenance",
+      "statement": "Metadata, Cataloguing and Cultural Memory explains provenance as a key part of trustworthy metadata.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:metadata-article-documents-digital-preservation",
+      "subject": "ea:publication:metadata-cataloguing-and-cultural-memory",
+      "predicate": "documents",
+      "object": "ea:concept:digital-preservation",
+      "statement": "Metadata, Cataloguing and Cultural Memory connects metadata to digital preservation and long-term context.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:metadata-article-documents-vestiges",
+      "subject": "ea:publication:metadata-cataloguing-and-cultural-memory",
+      "predicate": "documents",
+      "object": "ea:project:vestiges",
+      "statement": "Metadata, Cataloguing and Cultural Memory links metadata practice to the Vestiges cultural knowledge project.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:web-audio-article-documents-web-audio",
+      "subject": "ea:publication:web-audio-and-browser-based-sound-systems",
+      "predicate": "documents",
+      "object": "ea:concept:web-audio",
+      "statement": "Web Audio and Browser-Based Sound Systems documents web audio as a browser-native sound practice.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:web-audio-article-uses-web-audio-api",
+      "subject": "ea:publication:web-audio-and-browser-based-sound-systems",
+      "predicate": "usesTechnology",
+      "object": "ea:technology:web-audio-api",
+      "statement": "Web Audio and Browser-Based Sound Systems uses the Web Audio API as its main browser audio reference.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:web-audio-article-documents-signal-archaeology",
+      "subject": "ea:publication:web-audio-and-browser-based-sound-systems",
+      "predicate": "documents",
+      "object": "ea:concept:signal-archaeology",
+      "statement": "Web Audio and Browser-Based Sound Systems connects browser sound tools to signal archaeology.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:web-audio-article-documents-oreth",
+      "subject": "ea:publication:web-audio-and-browser-based-sound-systems",
+      "predicate": "documents",
+      "object": "ea:program:oreth",
+      "statement": "Web Audio and Browser-Based Sound Systems links ORETH to public sound tools and browser-native audio research.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:creative-coding-pedagogy-article-documents-creative-coding",
+      "subject": "ea:publication:creative-coding-pedagogy-from-logo-to-p5js",
+      "predicate": "documents",
+      "object": "ea:concept:creative-coding",
+      "statement": "Creative Coding Pedagogy from Logo to p5.js documents creative coding as a learning practice.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:creative-coding-pedagogy-article-documents-open-source",
+      "subject": "ea:publication:creative-coding-pedagogy-from-logo-to-p5js",
+      "predicate": "documents",
+      "object": "ea:concept:open-source",
+      "statement": "Creative Coding Pedagogy from Logo to p5.js connects creative learning to open examples and open-source communities.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:creative-coding-pedagogy-article-documents-procedural-graphics",
+      "subject": "ea:publication:creative-coding-pedagogy-from-logo-to-p5js",
+      "predicate": "documents",
+      "object": "ea:concept:procedural-graphics",
+      "statement": "Creative Coding Pedagogy from Logo to p5.js links visual learning to procedural graphics.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:creative-coding-pedagogy-article-documents-generative-system",
+      "subject": "ea:publication:creative-coding-pedagogy-from-logo-to-p5js",
+      "predicate": "documents",
+      "object": "ea:concept:generative-system",
+      "statement": "Creative Coding Pedagogy from Logo to p5.js connects sketch-based learning to generative system design.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:procedural-graphics-article-documents-procedural-graphics",
+      "subject": "ea:publication:procedural-graphics-shaders-and-visual-systems",
+      "predicate": "documents",
+      "object": "ea:concept:procedural-graphics",
+      "statement": "Procedural Graphics, Shaders and Visual Systems documents procedural graphics as a rule-based visual practice.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:procedural-graphics-article-uses-webgl",
+      "subject": "ea:publication:procedural-graphics-shaders-and-visual-systems",
+      "predicate": "usesTechnology",
+      "object": "ea:technology:webgl",
+      "statement": "Procedural Graphics, Shaders and Visual Systems uses WebGL as the browser graphics reference technology.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:procedural-graphics-article-documents-generative-system",
+      "subject": "ea:publication:procedural-graphics-shaders-and-visual-systems",
+      "predicate": "documents",
+      "object": "ea:concept:generative-system",
+      "statement": "Procedural Graphics, Shaders and Visual Systems links procedural visuals to generative-system thinking.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:procedural-graphics-article-documents-motion-design",
+      "subject": "ea:publication:procedural-graphics-shaders-and-visual-systems",
+      "predicate": "documents",
+      "object": "ea:concept:motion-design",
+      "statement": "Procedural Graphics, Shaders and Visual Systems connects procedural visuals to motion design and time-based behavior.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:motion-design-article-documents-motion-design",
+      "subject": "ea:publication:motion-design-time-and-interface-semantics",
+      "predicate": "documents",
+      "object": "ea:concept:motion-design",
+      "statement": "Motion Design, Time and Interface Semantics documents motion design as interface semantics.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:motion-design-article-uses-web-animations",
+      "subject": "ea:publication:motion-design-time-and-interface-semantics",
+      "predicate": "usesTechnology",
+      "object": "ea:technology:web-animations",
+      "statement": "Motion Design, Time and Interface Semantics uses Web Animations as its main web timing reference.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:motion-design-article-documents-hci",
+      "subject": "ea:publication:motion-design-time-and-interface-semantics",
+      "predicate": "documents",
+      "object": "ea:concept:human-computer-interaction",
+      "statement": "Motion Design, Time and Interface Semantics links motion design to human computer interaction.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:motion-design-article-documents-typography",
+      "subject": "ea:publication:motion-design-time-and-interface-semantics",
+      "predicate": "documents",
+      "object": "ea:concept:typography",
+      "statement": "Motion Design, Time and Interface Semantics connects motion to typography and reading behavior.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:typography-article-documents-typography",
+      "subject": "ea:publication:typography-reading-systems-and-digital-interfaces",
+      "predicate": "documents",
+      "object": "ea:concept:typography",
+      "statement": "Typography, Reading Systems and Digital Interfaces documents typography as reading infrastructure.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:typography-article-uses-css-fonts",
+      "subject": "ea:publication:typography-reading-systems-and-digital-interfaces",
+      "predicate": "usesTechnology",
+      "object": "ea:technology:css-fonts",
+      "statement": "Typography, Reading Systems and Digital Interfaces uses CSS Fonts as the browser typography reference.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:typography-article-documents-hci",
+      "subject": "ea:publication:typography-reading-systems-and-digital-interfaces",
+      "predicate": "documents",
+      "object": "ea:concept:human-computer-interaction",
+      "statement": "Typography, Reading Systems and Digital Interfaces connects typography to human computer interaction and accessibility.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:typography-article-documents-metadata",
+      "subject": "ea:publication:typography-reading-systems-and-digital-interfaces",
+      "predicate": "documents",
+      "object": "ea:concept:metadata",
+      "statement": "Typography, Reading Systems and Digital Interfaces links reading systems to visible metadata and article structure.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:hci-article-documents-hci",
+      "subject": "ea:publication:human-computer-interaction-for-creative-tools",
+      "predicate": "documents",
+      "object": "ea:concept:human-computer-interaction",
+      "statement": "Human Computer Interaction for Creative Tools documents HCI as a creative tool discipline.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:hci-article-documents-augmented-intelligence",
+      "subject": "ea:publication:human-computer-interaction-for-creative-tools",
+      "predicate": "documents",
+      "object": "ea:concept:augmented-intelligence",
+      "statement": "Human Computer Interaction for Creative Tools connects interface design to augmented intelligence.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:hci-article-documents-motion-design",
+      "subject": "ea:publication:human-computer-interaction-for-creative-tools",
+      "predicate": "documents",
+      "object": "ea:concept:motion-design",
+      "statement": "Human Computer Interaction for Creative Tools links feedback and state communication to motion design.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:hci-article-documents-vaste",
+      "subject": "ea:publication:human-computer-interaction-for-creative-tools",
+      "predicate": "documents",
+      "object": "ea:program:vaste",
+      "statement": "Human Computer Interaction for Creative Tools uses VASTE as a context for graph-aware creative systems.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:algorithmic-composition-article-documents-algorithmic-composition",
+      "subject": "ea:publication:algorithmic-composition-and-rule-based-music",
+      "predicate": "documents",
+      "object": "ea:concept:algorithmic-composition",
+      "statement": "Algorithmic Composition and Rule-Based Music documents algorithmic composition as rule-based musical practice.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:algorithmic-composition-article-documents-generative-system",
+      "subject": "ea:publication:algorithmic-composition-and-rule-based-music",
+      "predicate": "documents",
+      "object": "ea:concept:generative-system",
+      "statement": "Algorithmic Composition and Rule-Based Music connects rule-based music to generative systems.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:algorithmic-composition-article-documents-cybernetic-feedback",
+      "subject": "ea:publication:algorithmic-composition-and-rule-based-music",
+      "predicate": "documents",
+      "object": "ea:concept:cybernetic-feedback",
+      "statement": "Algorithmic Composition and Rule-Based Music connects feedback loops to musical systems.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:algorithmic-composition-article-documents-oreth",
+      "subject": "ea:publication:algorithmic-composition-and-rule-based-music",
+      "predicate": "documents",
+      "object": "ea:program:oreth",
+      "statement": "Algorithmic Composition and Rule-Based Music links ORETH to audio analysis and generative musical exploration.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:algorithmic-composition-article-documents-web-audio",
+      "subject": "ea:publication:algorithmic-composition-and-rule-based-music",
+      "predicate": "documents",
+      "object": "ea:concept:web-audio",
+      "statement": "Algorithmic Composition and Rule-Based Music connects rule-based music to browser sound systems.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:generative-ai-article-documents-generative-ai",
+      "subject": "ea:publication:generative-ai-latent-space-and-creative-workflows",
+      "predicate": "documents",
+      "object": "ea:concept:generative-ai",
+      "statement": "Generative AI, Latent Space and Creative Workflows documents generative AI as a creative workflow topic.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:generative-ai-article-documents-augmented-intelligence",
+      "subject": "ea:publication:generative-ai-latent-space-and-creative-workflows",
+      "predicate": "documents",
+      "object": "ea:concept:augmented-intelligence",
+      "statement": "Generative AI, Latent Space and Creative Workflows connects generative AI to augmented intelligence.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:generative-ai-article-documents-provenance",
+      "subject": "ea:publication:generative-ai-latent-space-and-creative-workflows",
+      "predicate": "documents",
+      "object": "ea:concept:provenance",
+      "statement": "Generative AI, Latent Space and Creative Workflows explains provenance as a requirement for responsible AI-assisted production.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:generative-ai-article-documents-generative-system",
+      "subject": "ea:publication:generative-ai-latent-space-and-creative-workflows",
+      "predicate": "documents",
+      "object": "ea:concept:generative-system",
+      "statement": "Generative AI, Latent Space and Creative Workflows situates generative AI within the broader generative systems lineage.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:generative-ai-article-documents-hci",
+      "subject": "ea:publication:generative-ai-latent-space-and-creative-workflows",
+      "predicate": "documents",
+      "object": "ea:concept:human-computer-interaction",
+      "statement": "Generative AI, Latent Space and Creative Workflows links AI workflows to human computer interaction and creative agency.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:knowledge-hub-second-wave-has-hypertext-article",
+      "subject": "ea:collection:knowledge-hub-second-wave",
+      "predicate": "hasPart",
+      "object": "ea:publication:hypertext-and-augmented-knowledge-systems",
+      "statement": "Knowledge Hub Second Wave includes Hypertext and Augmented Knowledge Systems as a core article.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:knowledge-hub-second-wave-has-personal-knowledge-article",
+      "subject": "ea:collection:knowledge-hub-second-wave",
+      "predicate": "hasPart",
+      "object": "ea:publication:personal-knowledge-systems-and-digital-gardens",
+      "statement": "Knowledge Hub Second Wave includes Personal Knowledge Systems and Digital Gardens as a core article.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:knowledge-hub-second-wave-has-open-source-article",
+      "subject": "ea:collection:knowledge-hub-second-wave",
+      "predicate": "hasPart",
+      "object": "ea:publication:open-source-as-cultural-infrastructure",
+      "statement": "Knowledge Hub Second Wave includes Open Source as Cultural Infrastructure as a core article.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:knowledge-hub-second-wave-has-metadata-article",
+      "subject": "ea:collection:knowledge-hub-second-wave",
+      "predicate": "hasPart",
+      "object": "ea:publication:metadata-cataloguing-and-cultural-memory",
+      "statement": "Knowledge Hub Second Wave includes Metadata, Cataloguing and Cultural Memory as a core article.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:knowledge-hub-second-wave-has-web-audio-article",
+      "subject": "ea:collection:knowledge-hub-second-wave",
+      "predicate": "hasPart",
+      "object": "ea:publication:web-audio-and-browser-based-sound-systems",
+      "statement": "Knowledge Hub Second Wave includes Web Audio and Browser-Based Sound Systems as a core article.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:knowledge-hub-second-wave-has-creative-coding-pedagogy-article",
+      "subject": "ea:collection:knowledge-hub-second-wave",
+      "predicate": "hasPart",
+      "object": "ea:publication:creative-coding-pedagogy-from-logo-to-p5js",
+      "statement": "Knowledge Hub Second Wave includes Creative Coding Pedagogy from Logo to p5.js as a core article.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:knowledge-hub-second-wave-has-procedural-graphics-article",
+      "subject": "ea:collection:knowledge-hub-second-wave",
+      "predicate": "hasPart",
+      "object": "ea:publication:procedural-graphics-shaders-and-visual-systems",
+      "statement": "Knowledge Hub Second Wave includes Procedural Graphics, Shaders and Visual Systems as a core article.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:knowledge-hub-second-wave-has-motion-design-article",
+      "subject": "ea:collection:knowledge-hub-second-wave",
+      "predicate": "hasPart",
+      "object": "ea:publication:motion-design-time-and-interface-semantics",
+      "statement": "Knowledge Hub Second Wave includes Motion Design, Time and Interface Semantics as a core article.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:knowledge-hub-second-wave-has-typography-article",
+      "subject": "ea:collection:knowledge-hub-second-wave",
+      "predicate": "hasPart",
+      "object": "ea:publication:typography-reading-systems-and-digital-interfaces",
+      "statement": "Knowledge Hub Second Wave includes Typography, Reading Systems and Digital Interfaces as a core article.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:knowledge-hub-second-wave-has-hci-article",
+      "subject": "ea:collection:knowledge-hub-second-wave",
+      "predicate": "hasPart",
+      "object": "ea:publication:human-computer-interaction-for-creative-tools",
+      "statement": "Knowledge Hub Second Wave includes Human Computer Interaction for Creative Tools as a core article.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:knowledge-hub-second-wave-has-algorithmic-composition-article",
+      "subject": "ea:collection:knowledge-hub-second-wave",
+      "predicate": "hasPart",
+      "object": "ea:publication:algorithmic-composition-and-rule-based-music",
+      "statement": "Knowledge Hub Second Wave includes Algorithmic Composition and Rule-Based Music as a core article.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:knowledge-hub-second-wave-has-generative-ai-article",
+      "subject": "ea:collection:knowledge-hub-second-wave",
+      "predicate": "hasPart",
+      "object": "ea:publication:generative-ai-latent-space-and-creative-workflows",
+      "statement": "Knowledge Hub Second Wave includes Generative AI, Latent Space and Creative Workflows as a core article.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
       "id": "ear:runtime-theory-defines-graph-runtime",
       "subject": "ea:researchField:runtime-theory",
       "predicate": "defines",
@@ -6744,32 +8498,63 @@ window.EA_PUBLIC_CATALOG = {
   ],
   "routes": {
     "ea:collection:knowledge-hub-foundations": "/archive/collections/knowledge-hub-foundations/",
+    "ea:collection:knowledge-hub-second-wave": "/archive/collections/knowledge-hub-second-wave/",
+    "ea:concept:algorithmic-composition": "/knowledge/concepts/algorithmic-composition/",
+    "ea:concept:augmented-intelligence": "/knowledge/concepts/augmented-intelligence/",
     "ea:concept:contextual-execution": "/knowledge/concepts/contextual-execution/",
     "ea:concept:creative-coding": "/knowledge/concepts/creative-coding/",
     "ea:concept:cybernetic-feedback": "/knowledge/concepts/cybernetic-feedback/",
     "ea:concept:digital-preservation": "/knowledge/concepts/digital-preservation/",
     "ea:concept:entity-identity": "/knowledge/concepts/entity-identity/",
+    "ea:concept:generative-ai": "/knowledge/concepts/generative-ai/",
     "ea:concept:generative-system": "/knowledge/concepts/generative-system/",
     "ea:concept:graph-runtime": "/knowledge/concepts/graph-runtime/",
+    "ea:concept:human-computer-interaction": "/knowledge/concepts/human-computer-interaction/",
+    "ea:concept:hypertext": "/knowledge/concepts/hypertext/",
+    "ea:concept:internet-culture": "/knowledge/concepts/internet-culture/",
     "ea:concept:knowledge-graph": "/knowledge/concepts/knowledge-graph/",
     "ea:concept:linked-data": "/knowledge/concepts/linked-data/",
+    "ea:concept:metadata": "/knowledge/concepts/metadata/",
+    "ea:concept:motion-design": "/knowledge/concepts/motion-design/",
+    "ea:concept:open-source": "/knowledge/concepts/open-source/",
+    "ea:concept:personal-knowledge-system": "/knowledge/concepts/personal-knowledge-system/",
+    "ea:concept:procedural-graphics": "/knowledge/concepts/procedural-graphics/",
     "ea:concept:provenance": "/knowledge/concepts/provenance/",
     "ea:concept:signal-archaeology": "/knowledge/concepts/signal-archaeology/",
+    "ea:concept:typography": "/knowledge/concepts/typography/",
+    "ea:concept:web-audio": "/knowledge/concepts/web-audio/",
     "ea:organization:electronic-artefacts": "/organizations/electronic-artefacts/",
     "ea:program:oreth": "/programs/oreth/",
     "ea:program:vaste": "/programs/vaste/",
     "ea:project:palimpsests": "/projects/palimpsests/",
     "ea:project:vestiges": "/projects/vestiges/",
+    "ea:publication:algorithmic-composition-and-rule-based-music": "/publications/algorithmic-composition-and-rule-based-music/",
     "ea:publication:contextual-execution-and-graph-runtimes": "/publications/contextual-execution-and-graph-runtimes/",
+    "ea:publication:creative-coding-pedagogy-from-logo-to-p5js": "/publications/creative-coding-pedagogy-from-logo-to-p5js/",
     "ea:publication:digital-preservation-and-living-archives": "/publications/digital-preservation-and-living-archives/",
     "ea:publication:foundational-lineage-001": "/publications/foundational-lineage-001/",
+    "ea:publication:generative-ai-latent-space-and-creative-workflows": "/publications/generative-ai-latent-space-and-creative-workflows/",
     "ea:publication:generative-systems-cybernetics-and-creative-coding": "/publications/generative-systems-cybernetics-and-creative-coding/",
+    "ea:publication:human-computer-interaction-for-creative-tools": "/publications/human-computer-interaction-for-creative-tools/",
+    "ea:publication:hypertext-and-augmented-knowledge-systems": "/publications/hypertext-and-augmented-knowledge-systems/",
     "ea:publication:knowledge-graphs-for-cultural-infrastructure": "/publications/knowledge-graphs-for-cultural-infrastructure/",
     "ea:publication:linked-data-and-public-knowledge-pages": "/publications/linked-data-and-public-knowledge-pages/",
+    "ea:publication:metadata-cataloguing-and-cultural-memory": "/publications/metadata-cataloguing-and-cultural-memory/",
+    "ea:publication:motion-design-time-and-interface-semantics": "/publications/motion-design-time-and-interface-semantics/",
+    "ea:publication:open-source-as-cultural-infrastructure": "/publications/open-source-as-cultural-infrastructure/",
+    "ea:publication:personal-knowledge-systems-and-digital-gardens": "/publications/personal-knowledge-systems-and-digital-gardens/",
+    "ea:publication:procedural-graphics-shaders-and-visual-systems": "/publications/procedural-graphics-shaders-and-visual-systems/",
     "ea:publication:signal-archaeology-audio-memory-and-machine-listening": "/publications/signal-archaeology-audio-memory-and-machine-listening/",
+    "ea:publication:typography-reading-systems-and-digital-interfaces": "/publications/typography-reading-systems-and-digital-interfaces/",
+    "ea:publication:web-audio-and-browser-based-sound-systems": "/publications/web-audio-and-browser-based-sound-systems/",
     "ea:researchField:runtime-theory": "/research/fields/runtime-theory/",
+    "ea:technology:activitypub": "/knowledge/technologies/activitypub/",
+    "ea:technology:css-fonts": "/knowledge/technologies/css-fonts/",
     "ea:technology:json-ld": "/knowledge/technologies/json-ld/",
-    "ea:technology:rdf": "/knowledge/technologies/rdf/"
+    "ea:technology:rdf": "/knowledge/technologies/rdf/",
+    "ea:technology:web-animations": "/knowledge/technologies/web-animations/",
+    "ea:technology:web-audio-api": "/knowledge/technologies/web-audio-api/",
+    "ea:technology:webgl": "/knowledge/technologies/webgl/"
   }
 };
 

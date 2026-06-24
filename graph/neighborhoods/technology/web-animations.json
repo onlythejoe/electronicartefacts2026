@@ -1,0 +1,34 @@
+{
+  "id": "local:ea:technology:web-animations",
+  "kind": "local",
+  "focus": "ea:technology:web-animations",
+  "nodes": [
+    {
+      "id": "ea:publication:motion-design-time-and-interface-semantics",
+      "type": "publication",
+      "title": "Motion Design, Time and Interface Semantics",
+      "route": "/publications/motion-design-time-and-interface-semantics/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:technology:web-animations",
+      "type": "technology",
+      "title": "Web Animations",
+      "route": "/knowledge/technologies/web-animations/",
+      "status": "active",
+      "confidence": "validated"
+    }
+  ],
+  "edges": [
+    {
+      "id": "ear:motion-design-article-uses-web-animations",
+      "source": "ea:publication:motion-design-time-and-interface-semantics",
+      "target": "ea:technology:web-animations",
+      "predicate": "usesTechnology",
+      "label": "Uses technology",
+      "statement": "Motion Design, Time and Interface Semantics uses Web Animations as its main web timing reference.",
+      "confidence": "published"
+    }
+  ]
+}

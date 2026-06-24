@@ -1,0 +1,62 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://electronicartefacts.com/publications/creative-coding-pedagogy-from-logo-to-p5js/#webpage",
+      "url": "https://electronicartefacts.com/publications/creative-coding-pedagogy-from-logo-to-p5js/",
+      "name": "Creative Coding Pedagogy from Logo to p5.js",
+      "mainEntity": {
+        "@id": "https://electronicartefacts.com/id/publication/creative-coding-pedagogy-from-logo-to-p5js/"
+      },
+      "isPartOf": {
+        "@id": "https://electronicartefacts.com/#website"
+      }
+    },
+    {
+      "@type": "TechArticle",
+      "@id": "https://electronicartefacts.com/id/publication/creative-coding-pedagogy-from-logo-to-p5js/",
+      "name": "Creative Coding Pedagogy from Logo to p5.js",
+      "description": "This article explains creative coding pedagogy through exploratory programming, computational literacy, Processing, p5.js, visual feedback and open learning communities.",
+      "url": "https://electronicartefacts.com/publications/creative-coding-pedagogy-from-logo-to-p5js/",
+      "dateCreated": "2026-06-24",
+      "datePublished": "2026-06-24",
+      "dateModified": "2026-06-24",
+      "publisher": {
+        "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
+      },
+      "citation": "Electronic Artefacts. \"Creative Coding Pedagogy from Logo to p5.js.\" Technical article, version 1.0.0, 2026.",
+      "about": [
+        {
+          "@id": "https://electronicartefacts.com/id/concept/creative-coding/"
+        },
+        {
+          "@id": "https://electronicartefacts.com/id/concept/open-source/"
+        },
+        {
+          "@id": "https://electronicartefacts.com/id/concept/procedural-graphics/"
+        },
+        {
+          "@id": "https://electronicartefacts.com/id/concept/generative-system/"
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Electronic Artefacts",
+          "item": "https://electronicartefacts.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Creative Coding Pedagogy from Logo to p5.js",
+          "item": "https://electronicartefacts.com/publications/creative-coding-pedagogy-from-logo-to-p5js/"
+        }
+      ]
+    }
+  ]
+}

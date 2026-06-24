@@ -407,3 +407,623 @@
   createdAt: "2026-06-23"
   reviewedAt: "2026-06-23"
   visibility: public
+
+- id: ear:hypertext-article-documents-hypertext
+  subject: ea:publication:hypertext-and-augmented-knowledge-systems
+  predicate: documents
+  object: ea:concept:hypertext
+  statement: Hypertext and Augmented Knowledge Systems documents hypertext as an architecture for linked public knowledge.
+  confidence: published
+  createdAt: "2026-06-24"
+  reviewedAt: "2026-06-24"
+  visibility: public
+
+- id: ear:hypertext-article-documents-augmented-intelligence
+  subject: ea:publication:hypertext-and-augmented-knowledge-systems
+  predicate: documents
+  object: ea:concept:augmented-intelligence
+  statement: Hypertext and Augmented Knowledge Systems connects hypertext to augmented intelligence and human knowledge work.
+  confidence: published
+  createdAt: "2026-06-24"
+  reviewedAt: "2026-06-24"
+  visibility: public
+
+- id: ear:hypertext-article-documents-knowledge-graph
+  subject: ea:publication:hypertext-and-augmented-knowledge-systems
+  predicate: documents
+  object: ea:concept:knowledge-graph
+  statement: Hypertext and Augmented Knowledge Systems explains how knowledge graphs strengthen linked pages with explicit relations.
+  confidence: published
+  createdAt: "2026-06-24"
+  reviewedAt: "2026-06-24"
+  visibility: public
+
+- id: ear:hypertext-article-documents-linked-data
+  subject: ea:publication:hypertext-and-augmented-knowledge-systems
+  predicate: documents
+  object: ea:concept:linked-data
+  statement: Hypertext and Augmented Knowledge Systems links hypertext practice to Linked Data and stable identifiers.
+  confidence: published
+  createdAt: "2026-06-24"
+  reviewedAt: "2026-06-24"
+  visibility: public
+
+- id: ear:personal-knowledge-article-documents-personal-knowledge-system
+  subject: ea:publication:personal-knowledge-systems-and-digital-gardens
+  predicate: documents
+  object: ea:concept:personal-knowledge-system
+  statement: Personal Knowledge Systems and Digital Gardens documents personal knowledge systems as a practice of capture, linking and revision.
+  confidence: published
+  createdAt: "2026-06-24"
+  reviewedAt: "2026-06-24"
+  visibility: public
+
+- id: ear:personal-knowledge-article-documents-hypertext
+  subject: ea:publication:personal-knowledge-systems-and-digital-gardens
+  predicate: documents
+  object: ea:concept:hypertext
+  statement: Personal Knowledge Systems and Digital Gardens uses hypertext as the linking model for public knowledge gardens.
+  confidence: published
+  createdAt: "2026-06-24"
+  reviewedAt: "2026-06-24"
+  visibility: public
+
+- id: ear:personal-knowledge-article-documents-metadata
+  subject: ea:publication:personal-knowledge-systems-and-digital-gardens
+  predicate: documents
+  object: ea:concept:metadata
+  statement: Personal Knowledge Systems and Digital Gardens connects durable note systems to metadata and publication state.
+  confidence: published
+  createdAt: "2026-06-24"
+  reviewedAt: "2026-06-24"
+  visibility: public
+
+- id: ear:personal-knowledge-article-documents-digital-preservation
+  subject: ea:publication:personal-knowledge-systems-and-digital-gardens
+  predicate: documents
+  object: ea:concept:digital-preservation
+  statement: Personal Knowledge Systems and Digital Gardens links revision and retrieval practice to digital preservation concerns.
+  confidence: published
+  createdAt: "2026-06-24"
+  reviewedAt: "2026-06-24"
+  visibility: public
+
+- id: ear:open-source-article-documents-open-source
+  subject: ea:publication:open-source-as-cultural-infrastructure
+  predicate: documents
+  object: ea:concept:open-source
+  statement: Open Source as Cultural Infrastructure documents open source as a licensing, maintenance and cultural infrastructure practice.
+  confidence: published
+  createdAt: "2026-06-24"
+  reviewedAt: "2026-06-24"
+  visibility: public
+
+- id: ear:open-source-article-documents-creative-coding
+  subject: ea:publication:open-source-as-cultural-infrastructure
+  predicate: documents
+  object: ea:concept:creative-coding
+  statement: Open Source as Cultural Infrastructure connects open source to creative coding tools and pedagogy.
+  confidence: published
+  createdAt: "2026-06-24"
+  reviewedAt: "2026-06-24"
+  visibility: public
+
+- id: ear:open-source-article-documents-internet-culture
+  subject: ea:publication:open-source-as-cultural-infrastructure
+  predicate: documents
+  object: ea:concept:internet-culture
+  statement: Open Source as Cultural Infrastructure frames open collaboration as part of broader internet culture.
+  confidence: published
+  createdAt: "2026-06-24"
+  reviewedAt: "2026-06-24"
+  visibility: public
+
+- id: ear:open-source-article-documents-digital-preservation
+  subject: ea:publication:open-source-as-cultural-infrastructure
+  predicate: documents
+  object: ea:concept:digital-preservation
+  statement: Open Source as Cultural Infrastructure connects software access and maintenance to preservation concerns.
+  confidence: published
+  createdAt: "2026-06-24"
+  reviewedAt: "2026-06-24"
+  visibility: public
+
+- id: ear:metadata-article-documents-metadata
+  subject: ea:publication:metadata-cataloguing-and-cultural-memory
+  predicate: documents
+  object: ea:concept:metadata
+  statement: Metadata, Cataloguing and Cultural Memory documents metadata as a cultural memory layer.
+  confidence: published
+  createdAt: "2026-06-24"
+  reviewedAt: "2026-06-24"
+  visibility: public
+
+- id: ear:metadata-article-documents-provenance
+  subject: ea:publication:metadata-cataloguing-and-cultural-memory
+  predicate: documents
+  object: ea:concept:provenance
+  statement: Metadata, Cataloguing and Cultural Memory explains provenance as a key part of trustworthy metadata.
+  confidence: published
+  createdAt: "2026-06-24"
+  reviewedAt: "2026-06-24"
+  visibility: public
+
+- id: ear:metadata-article-documents-digital-preservation
+  subject: ea:publication:metadata-cataloguing-and-cultural-memory
+  predicate: documents
+  object: ea:concept:digital-preservation
+  statement: Metadata, Cataloguing and Cultural Memory connects metadata to digital preservation and long-term context.
+  confidence: published
+  createdAt: "2026-06-24"
+  reviewedAt: "2026-06-24"
+  visibility: public
+
+- id: ear:metadata-article-documents-vestiges
+  subject: ea:publication:metadata-cataloguing-and-cultural-memory
+  predicate: documents
+  object: ea:project:vestiges
+  statement: Metadata, Cataloguing and Cultural Memory links metadata practice to the Vestiges cultural knowledge project.
+  confidence: published
+  createdAt: "2026-06-24"
+  reviewedAt: "2026-06-24"
+  visibility: public
+
+- id: ear:web-audio-article-documents-web-audio
+  subject: ea:publication:web-audio-and-browser-based-sound-systems
+  predicate: documents
+  object: ea:concept:web-audio
+  statement: Web Audio and Browser-Based Sound Systems documents web audio as a browser-native sound practice.
+  confidence: published
+  createdAt: "2026-06-24"
+  reviewedAt: "2026-06-24"
+  visibility: public
+
+- id: ear:web-audio-article-uses-web-audio-api
+  subject: ea:publication:web-audio-and-browser-based-sound-systems
+  predicate: usesTechnology
+  object: ea:technology:web-audio-api
+  statement: Web Audio and Browser-Based Sound Systems uses the Web Audio API as its main browser audio reference.
+  confidence: published
+  createdAt: "2026-06-24"
+  reviewedAt: "2026-06-24"
+  visibility: public
+
+- id: ear:web-audio-article-documents-signal-archaeology
+  subject: ea:publication:web-audio-and-browser-based-sound-systems
+  predicate: documents
+  object: ea:concept:signal-archaeology
+  statement: Web Audio and Browser-Based Sound Systems connects browser sound tools to signal archaeology.
+  confidence: published
+  createdAt: "2026-06-24"
+  reviewedAt: "2026-06-24"
+  visibility: public
+
+- id: ear:web-audio-article-documents-oreth
+  subject: ea:publication:web-audio-and-browser-based-sound-systems
+  predicate: documents
+  object: ea:program:oreth
+  statement: Web Audio and Browser-Based Sound Systems links ORETH to public sound tools and browser-native audio research.
+  confidence: published
+  createdAt: "2026-06-24"
+  reviewedAt: "2026-06-24"
+  visibility: public
+
+- id: ear:creative-coding-pedagogy-article-documents-creative-coding
+  subject: ea:publication:creative-coding-pedagogy-from-logo-to-p5js
+  predicate: documents
+  object: ea:concept:creative-coding
+  statement: Creative Coding Pedagogy from Logo to p5.js documents creative coding as a learning practice.
+  confidence: published
+  createdAt: "2026-06-24"
+  reviewedAt: "2026-06-24"
+  visibility: public
+
+- id: ear:creative-coding-pedagogy-article-documents-open-source
+  subject: ea:publication:creative-coding-pedagogy-from-logo-to-p5js
+  predicate: documents
+  object: ea:concept:open-source
+  statement: Creative Coding Pedagogy from Logo to p5.js connects creative learning to open examples and open-source communities.
+  confidence: published
+  createdAt: "2026-06-24"
+  reviewedAt: "2026-06-24"
+  visibility: public
+
+- id: ear:creative-coding-pedagogy-article-documents-procedural-graphics
+  subject: ea:publication:creative-coding-pedagogy-from-logo-to-p5js
+  predicate: documents
+  object: ea:concept:procedural-graphics
+  statement: Creative Coding Pedagogy from Logo to p5.js links visual learning to procedural graphics.
+  confidence: published
+  createdAt: "2026-06-24"
+  reviewedAt: "2026-06-24"
+  visibility: public
+
+- id: ear:creative-coding-pedagogy-article-documents-generative-system
+  subject: ea:publication:creative-coding-pedagogy-from-logo-to-p5js
+  predicate: documents
+  object: ea:concept:generative-system
+  statement: Creative Coding Pedagogy from Logo to p5.js connects sketch-based learning to generative system design.
+  confidence: published
+  createdAt: "2026-06-24"
+  reviewedAt: "2026-06-24"
+  visibility: public
+
+- id: ear:procedural-graphics-article-documents-procedural-graphics
+  subject: ea:publication:procedural-graphics-shaders-and-visual-systems
+  predicate: documents
+  object: ea:concept:procedural-graphics
+  statement: Procedural Graphics, Shaders and Visual Systems documents procedural graphics as a rule-based visual practice.
+  confidence: published
+  createdAt: "2026-06-24"
+  reviewedAt: "2026-06-24"
+  visibility: public
+
+- id: ear:procedural-graphics-article-uses-webgl
+  subject: ea:publication:procedural-graphics-shaders-and-visual-systems
+  predicate: usesTechnology
+  object: ea:technology:webgl
+  statement: Procedural Graphics, Shaders and Visual Systems uses WebGL as the browser graphics reference technology.
+  confidence: published
+  createdAt: "2026-06-24"
+  reviewedAt: "2026-06-24"
+  visibility: public
+
+- id: ear:procedural-graphics-article-documents-generative-system
+  subject: ea:publication:procedural-graphics-shaders-and-visual-systems
+  predicate: documents
+  object: ea:concept:generative-system
+  statement: Procedural Graphics, Shaders and Visual Systems links procedural visuals to generative-system thinking.
+  confidence: published
+  createdAt: "2026-06-24"
+  reviewedAt: "2026-06-24"
+  visibility: public
+
+- id: ear:procedural-graphics-article-documents-motion-design
+  subject: ea:publication:procedural-graphics-shaders-and-visual-systems
+  predicate: documents
+  object: ea:concept:motion-design
+  statement: Procedural Graphics, Shaders and Visual Systems connects procedural visuals to motion design and time-based behavior.
+  confidence: published
+  createdAt: "2026-06-24"
+  reviewedAt: "2026-06-24"
+  visibility: public
+
+- id: ear:motion-design-article-documents-motion-design
+  subject: ea:publication:motion-design-time-and-interface-semantics
+  predicate: documents
+  object: ea:concept:motion-design
+  statement: Motion Design, Time and Interface Semantics documents motion design as interface semantics.
+  confidence: published
+  createdAt: "2026-06-24"
+  reviewedAt: "2026-06-24"
+  visibility: public
+
+- id: ear:motion-design-article-uses-web-animations
+  subject: ea:publication:motion-design-time-and-interface-semantics
+  predicate: usesTechnology
+  object: ea:technology:web-animations
+  statement: Motion Design, Time and Interface Semantics uses Web Animations as its main web timing reference.
+  confidence: published
+  createdAt: "2026-06-24"
+  reviewedAt: "2026-06-24"
+  visibility: public
+
+- id: ear:motion-design-article-documents-hci
+  subject: ea:publication:motion-design-time-and-interface-semantics
+  predicate: documents
+  object: ea:concept:human-computer-interaction
+  statement: Motion Design, Time and Interface Semantics links motion design to human computer interaction.
+  confidence: published
+  createdAt: "2026-06-24"
+  reviewedAt: "2026-06-24"
+  visibility: public
+
+- id: ear:motion-design-article-documents-typography
+  subject: ea:publication:motion-design-time-and-interface-semantics
+  predicate: documents
+  object: ea:concept:typography
+  statement: Motion Design, Time and Interface Semantics connects motion to typography and reading behavior.
+  confidence: published
+  createdAt: "2026-06-24"
+  reviewedAt: "2026-06-24"
+  visibility: public
+
+- id: ear:typography-article-documents-typography
+  subject: ea:publication:typography-reading-systems-and-digital-interfaces
+  predicate: documents
+  object: ea:concept:typography
+  statement: Typography, Reading Systems and Digital Interfaces documents typography as reading infrastructure.
+  confidence: published
+  createdAt: "2026-06-24"
+  reviewedAt: "2026-06-24"
+  visibility: public
+
+- id: ear:typography-article-uses-css-fonts
+  subject: ea:publication:typography-reading-systems-and-digital-interfaces
+  predicate: usesTechnology
+  object: ea:technology:css-fonts
+  statement: Typography, Reading Systems and Digital Interfaces uses CSS Fonts as the browser typography reference.
+  confidence: published
+  createdAt: "2026-06-24"
+  reviewedAt: "2026-06-24"
+  visibility: public
+
+- id: ear:typography-article-documents-hci
+  subject: ea:publication:typography-reading-systems-and-digital-interfaces
+  predicate: documents
+  object: ea:concept:human-computer-interaction
+  statement: Typography, Reading Systems and Digital Interfaces connects typography to human computer interaction and accessibility.
+  confidence: published
+  createdAt: "2026-06-24"
+  reviewedAt: "2026-06-24"
+  visibility: public
+
+- id: ear:typography-article-documents-metadata
+  subject: ea:publication:typography-reading-systems-and-digital-interfaces
+  predicate: documents
+  object: ea:concept:metadata
+  statement: Typography, Reading Systems and Digital Interfaces links reading systems to visible metadata and article structure.
+  confidence: published
+  createdAt: "2026-06-24"
+  reviewedAt: "2026-06-24"
+  visibility: public
+
+- id: ear:hci-article-documents-hci
+  subject: ea:publication:human-computer-interaction-for-creative-tools
+  predicate: documents
+  object: ea:concept:human-computer-interaction
+  statement: Human Computer Interaction for Creative Tools documents HCI as a creative tool discipline.
+  confidence: published
+  createdAt: "2026-06-24"
+  reviewedAt: "2026-06-24"
+  visibility: public
+
+- id: ear:hci-article-documents-augmented-intelligence
+  subject: ea:publication:human-computer-interaction-for-creative-tools
+  predicate: documents
+  object: ea:concept:augmented-intelligence
+  statement: Human Computer Interaction for Creative Tools connects interface design to augmented intelligence.
+  confidence: published
+  createdAt: "2026-06-24"
+  reviewedAt: "2026-06-24"
+  visibility: public
+
+- id: ear:hci-article-documents-motion-design
+  subject: ea:publication:human-computer-interaction-for-creative-tools
+  predicate: documents
+  object: ea:concept:motion-design
+  statement: Human Computer Interaction for Creative Tools links feedback and state communication to motion design.
+  confidence: published
+  createdAt: "2026-06-24"
+  reviewedAt: "2026-06-24"
+  visibility: public
+
+- id: ear:hci-article-documents-vaste
+  subject: ea:publication:human-computer-interaction-for-creative-tools
+  predicate: documents
+  object: ea:program:vaste
+  statement: Human Computer Interaction for Creative Tools uses VASTE as a context for graph-aware creative systems.
+  confidence: published
+  createdAt: "2026-06-24"
+  reviewedAt: "2026-06-24"
+  visibility: public
+
+- id: ear:algorithmic-composition-article-documents-algorithmic-composition
+  subject: ea:publication:algorithmic-composition-and-rule-based-music
+  predicate: documents
+  object: ea:concept:algorithmic-composition
+  statement: Algorithmic Composition and Rule-Based Music documents algorithmic composition as rule-based musical practice.
+  confidence: published
+  createdAt: "2026-06-24"
+  reviewedAt: "2026-06-24"
+  visibility: public
+
+- id: ear:algorithmic-composition-article-documents-generative-system
+  subject: ea:publication:algorithmic-composition-and-rule-based-music
+  predicate: documents
+  object: ea:concept:generative-system
+  statement: Algorithmic Composition and Rule-Based Music connects rule-based music to generative systems.
+  confidence: published
+  createdAt: "2026-06-24"
+  reviewedAt: "2026-06-24"
+  visibility: public
+
+- id: ear:algorithmic-composition-article-documents-cybernetic-feedback
+  subject: ea:publication:algorithmic-composition-and-rule-based-music
+  predicate: documents
+  object: ea:concept:cybernetic-feedback
+  statement: Algorithmic Composition and Rule-Based Music connects feedback loops to musical systems.
+  confidence: published
+  createdAt: "2026-06-24"
+  reviewedAt: "2026-06-24"
+  visibility: public
+
+- id: ear:algorithmic-composition-article-documents-oreth
+  subject: ea:publication:algorithmic-composition-and-rule-based-music
+  predicate: documents
+  object: ea:program:oreth
+  statement: Algorithmic Composition and Rule-Based Music links ORETH to audio analysis and generative musical exploration.
+  confidence: published
+  createdAt: "2026-06-24"
+  reviewedAt: "2026-06-24"
+  visibility: public
+
+- id: ear:algorithmic-composition-article-documents-web-audio
+  subject: ea:publication:algorithmic-composition-and-rule-based-music
+  predicate: documents
+  object: ea:concept:web-audio
+  statement: Algorithmic Composition and Rule-Based Music connects rule-based music to browser sound systems.
+  confidence: published
+  createdAt: "2026-06-24"
+  reviewedAt: "2026-06-24"
+  visibility: public
+
+- id: ear:generative-ai-article-documents-generative-ai
+  subject: ea:publication:generative-ai-latent-space-and-creative-workflows
+  predicate: documents
+  object: ea:concept:generative-ai
+  statement: Generative AI, Latent Space and Creative Workflows documents generative AI as a creative workflow topic.
+  confidence: published
+  createdAt: "2026-06-24"
+  reviewedAt: "2026-06-24"
+  visibility: public
+
+- id: ear:generative-ai-article-documents-augmented-intelligence
+  subject: ea:publication:generative-ai-latent-space-and-creative-workflows
+  predicate: documents
+  object: ea:concept:augmented-intelligence
+  statement: Generative AI, Latent Space and Creative Workflows connects generative AI to augmented intelligence.
+  confidence: published
+  createdAt: "2026-06-24"
+  reviewedAt: "2026-06-24"
+  visibility: public
+
+- id: ear:generative-ai-article-documents-provenance
+  subject: ea:publication:generative-ai-latent-space-and-creative-workflows
+  predicate: documents
+  object: ea:concept:provenance
+  statement: Generative AI, Latent Space and Creative Workflows explains provenance as a requirement for responsible AI-assisted production.
+  confidence: published
+  createdAt: "2026-06-24"
+  reviewedAt: "2026-06-24"
+  visibility: public
+
+- id: ear:generative-ai-article-documents-generative-system
+  subject: ea:publication:generative-ai-latent-space-and-creative-workflows
+  predicate: documents
+  object: ea:concept:generative-system
+  statement: Generative AI, Latent Space and Creative Workflows situates generative AI within the broader generative systems lineage.
+  confidence: published
+  createdAt: "2026-06-24"
+  reviewedAt: "2026-06-24"
+  visibility: public
+
+- id: ear:generative-ai-article-documents-hci
+  subject: ea:publication:generative-ai-latent-space-and-creative-workflows
+  predicate: documents
+  object: ea:concept:human-computer-interaction
+  statement: Generative AI, Latent Space and Creative Workflows links AI workflows to human computer interaction and creative agency.
+  confidence: published
+  createdAt: "2026-06-24"
+  reviewedAt: "2026-06-24"
+  visibility: public
+
+- id: ear:knowledge-hub-second-wave-has-hypertext-article
+  subject: ea:collection:knowledge-hub-second-wave
+  predicate: hasPart
+  object: ea:publication:hypertext-and-augmented-knowledge-systems
+  statement: Knowledge Hub Second Wave includes Hypertext and Augmented Knowledge Systems as a core article.
+  confidence: published
+  createdAt: "2026-06-24"
+  reviewedAt: "2026-06-24"
+  visibility: public
+
+- id: ear:knowledge-hub-second-wave-has-personal-knowledge-article
+  subject: ea:collection:knowledge-hub-second-wave
+  predicate: hasPart
+  object: ea:publication:personal-knowledge-systems-and-digital-gardens
+  statement: Knowledge Hub Second Wave includes Personal Knowledge Systems and Digital Gardens as a core article.
+  confidence: published
+  createdAt: "2026-06-24"
+  reviewedAt: "2026-06-24"
+  visibility: public
+
+- id: ear:knowledge-hub-second-wave-has-open-source-article
+  subject: ea:collection:knowledge-hub-second-wave
+  predicate: hasPart
+  object: ea:publication:open-source-as-cultural-infrastructure
+  statement: Knowledge Hub Second Wave includes Open Source as Cultural Infrastructure as a core article.
+  confidence: published
+  createdAt: "2026-06-24"
+  reviewedAt: "2026-06-24"
+  visibility: public
+
+- id: ear:knowledge-hub-second-wave-has-metadata-article
+  subject: ea:collection:knowledge-hub-second-wave
+  predicate: hasPart
+  object: ea:publication:metadata-cataloguing-and-cultural-memory
+  statement: Knowledge Hub Second Wave includes Metadata, Cataloguing and Cultural Memory as a core article.
+  confidence: published
+  createdAt: "2026-06-24"
+  reviewedAt: "2026-06-24"
+  visibility: public
+
+- id: ear:knowledge-hub-second-wave-has-web-audio-article
+  subject: ea:collection:knowledge-hub-second-wave
+  predicate: hasPart
+  object: ea:publication:web-audio-and-browser-based-sound-systems
+  statement: Knowledge Hub Second Wave includes Web Audio and Browser-Based Sound Systems as a core article.
+  confidence: published
+  createdAt: "2026-06-24"
+  reviewedAt: "2026-06-24"
+  visibility: public
+
+- id: ear:knowledge-hub-second-wave-has-creative-coding-pedagogy-article
+  subject: ea:collection:knowledge-hub-second-wave
+  predicate: hasPart
+  object: ea:publication:creative-coding-pedagogy-from-logo-to-p5js
+  statement: Knowledge Hub Second Wave includes Creative Coding Pedagogy from Logo to p5.js as a core article.
+  confidence: published
+  createdAt: "2026-06-24"
+  reviewedAt: "2026-06-24"
+  visibility: public
+
+- id: ear:knowledge-hub-second-wave-has-procedural-graphics-article
+  subject: ea:collection:knowledge-hub-second-wave
+  predicate: hasPart
+  object: ea:publication:procedural-graphics-shaders-and-visual-systems
+  statement: Knowledge Hub Second Wave includes Procedural Graphics, Shaders and Visual Systems as a core article.
+  confidence: published
+  createdAt: "2026-06-24"
+  reviewedAt: "2026-06-24"
+  visibility: public
+
+- id: ear:knowledge-hub-second-wave-has-motion-design-article
+  subject: ea:collection:knowledge-hub-second-wave
+  predicate: hasPart
+  object: ea:publication:motion-design-time-and-interface-semantics
+  statement: Knowledge Hub Second Wave includes Motion Design, Time and Interface Semantics as a core article.
+  confidence: published
+  createdAt: "2026-06-24"
+  reviewedAt: "2026-06-24"
+  visibility: public
+
+- id: ear:knowledge-hub-second-wave-has-typography-article
+  subject: ea:collection:knowledge-hub-second-wave
+  predicate: hasPart
+  object: ea:publication:typography-reading-systems-and-digital-interfaces
+  statement: Knowledge Hub Second Wave includes Typography, Reading Systems and Digital Interfaces as a core article.
+  confidence: published
+  createdAt: "2026-06-24"
+  reviewedAt: "2026-06-24"
+  visibility: public
+
+- id: ear:knowledge-hub-second-wave-has-hci-article
+  subject: ea:collection:knowledge-hub-second-wave
+  predicate: hasPart
+  object: ea:publication:human-computer-interaction-for-creative-tools
+  statement: Knowledge Hub Second Wave includes Human Computer Interaction for Creative Tools as a core article.
+  confidence: published
+  createdAt: "2026-06-24"
+  reviewedAt: "2026-06-24"
+  visibility: public
+
+- id: ear:knowledge-hub-second-wave-has-algorithmic-composition-article
+  subject: ea:collection:knowledge-hub-second-wave
+  predicate: hasPart
+  object: ea:publication:algorithmic-composition-and-rule-based-music
+  statement: Knowledge Hub Second Wave includes Algorithmic Composition and Rule-Based Music as a core article.
+  confidence: published
+  createdAt: "2026-06-24"
+  reviewedAt: "2026-06-24"
+  visibility: public
+
+- id: ear:knowledge-hub-second-wave-has-generative-ai-article
+  subject: ea:collection:knowledge-hub-second-wave
+  predicate: hasPart
+  object: ea:publication:generative-ai-latent-space-and-creative-workflows
+  statement: Knowledge Hub Second Wave includes Generative AI, Latent Space and Creative Workflows as a core article.
+  confidence: published
+  createdAt: "2026-06-24"
+  reviewedAt: "2026-06-24"
+  visibility: public

@@ -1,0 +1,65 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://electronicartefacts.com/publications/procedural-graphics-shaders-and-visual-systems/#webpage",
+      "url": "https://electronicartefacts.com/publications/procedural-graphics-shaders-and-visual-systems/",
+      "name": "Procedural Graphics, Shaders and Visual Systems",
+      "mainEntity": {
+        "@id": "https://electronicartefacts.com/id/publication/procedural-graphics-shaders-and-visual-systems/"
+      },
+      "isPartOf": {
+        "@id": "https://electronicartefacts.com/#website"
+      }
+    },
+    {
+      "@type": "TechArticle",
+      "@id": "https://electronicartefacts.com/id/publication/procedural-graphics-shaders-and-visual-systems/",
+      "name": "Procedural Graphics, Shaders and Visual Systems",
+      "description": "This article explains procedural graphics through rules, shaders, parameters, WebGL, generative systems and visual grammars for digital art and interfaces.",
+      "url": "https://electronicartefacts.com/publications/procedural-graphics-shaders-and-visual-systems/",
+      "dateCreated": "2026-06-24",
+      "datePublished": "2026-06-24",
+      "dateModified": "2026-06-24",
+      "publisher": {
+        "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
+      },
+      "citation": "Electronic Artefacts. \"Procedural Graphics, Shaders and Visual Systems.\" Technical article, version 1.0.0, 2026.",
+      "about": [
+        {
+          "@id": "https://electronicartefacts.com/id/concept/procedural-graphics/"
+        },
+        {
+          "@id": "https://electronicartefacts.com/id/technology/webgl/"
+        },
+        {
+          "@id": "https://electronicartefacts.com/id/concept/generative-system/"
+        },
+        {
+          "@id": "https://electronicartefacts.com/id/concept/creative-coding/"
+        },
+        {
+          "@id": "https://electronicartefacts.com/id/concept/motion-design/"
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Electronic Artefacts",
+          "item": "https://electronicartefacts.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Procedural Graphics, Shaders and Visual Systems",
+          "item": "https://electronicartefacts.com/publications/procedural-graphics-shaders-and-visual-systems/"
+        }
+      ]
+    }
+  ]
+}

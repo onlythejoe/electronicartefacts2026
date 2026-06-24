@@ -20,10 +20,26 @@
       "confidence": "published"
     },
     {
+      "id": "ea:publication:generative-ai-latent-space-and-creative-workflows",
+      "type": "publication",
+      "title": "Generative AI, Latent Space and Creative Workflows",
+      "route": "/publications/generative-ai-latent-space-and-creative-workflows/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
       "id": "ea:publication:knowledge-graphs-for-cultural-infrastructure",
       "type": "publication",
       "title": "Knowledge Graphs for Cultural Infrastructure",
       "route": "/publications/knowledge-graphs-for-cultural-infrastructure/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:metadata-cataloguing-and-cultural-memory",
+      "type": "publication",
+      "title": "Metadata, Cataloguing and Cultural Memory",
+      "route": "/publications/metadata-cataloguing-and-cultural-memory/",
       "status": "active",
       "confidence": "published"
     },
@@ -62,6 +78,24 @@
       "predicate": "documents",
       "label": "Documents",
       "statement": "Signal Archaeology, Audio Memory and Machine Listening explains why signal interpretation needs provenance.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:metadata-article-documents-provenance",
+      "source": "ea:publication:metadata-cataloguing-and-cultural-memory",
+      "target": "ea:concept:provenance",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Metadata, Cataloguing and Cultural Memory explains provenance as a key part of trustworthy metadata.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:generative-ai-article-documents-provenance",
+      "source": "ea:publication:generative-ai-latent-space-and-creative-workflows",
+      "target": "ea:concept:provenance",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Generative AI, Latent Space and Creative Workflows explains provenance as a requirement for responsible AI-assisted production.",
       "confidence": "published"
     }
   ]

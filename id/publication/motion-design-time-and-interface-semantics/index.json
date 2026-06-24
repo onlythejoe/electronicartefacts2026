@@ -1,0 +1,114 @@
+{
+  "id": "ea:publication:motion-design-time-and-interface-semantics",
+  "type": "publication",
+  "slug": {
+    "canonical": "motion-design-time-and-interface-semantics"
+  },
+  "title": "Motion Design, Time and Interface Semantics",
+  "subtitle": "Technical Article",
+  "abstract": "This article explains motion design as a semantic layer for digital interfaces, connecting time, transition, attention, accessibility and Web Animations.",
+  "description": "A technical article on motion design, web animation, interface state, accessibility and temporal visual systems.",
+  "locale": "en",
+  "visibility": "public",
+  "publicationClass": "published",
+  "status": "active",
+  "maturity": "research",
+  "confidence": "published",
+  "version": {
+    "version": "1.0.0",
+    "createdAt": "2026-06-24",
+    "publishedAt": "2026-06-24",
+    "modifiedAt": "2026-06-24"
+  },
+  "authors": [
+    {
+      "id": "ea:organization:electronic-artefacts"
+    }
+  ],
+  "publisher": "ea:organization:electronic-artefacts",
+  "tags": [
+    "Motion Design",
+    "Web Animations",
+    "Interface Design",
+    "Accessibility"
+  ],
+  "disciplines": [
+    "Motion Design",
+    "Design",
+    "Human Computer Interaction",
+    "Web Development"
+  ],
+  "sources": [
+    {
+      "title": "Web Animations",
+      "url": "https://www.w3.org/TR/web-animations-1/",
+      "publisher": "W3C",
+      "publishedAt": "2023-06-05",
+      "accessedAt": "2026-06-24"
+    },
+    {
+      "title": "WCAG 2 Overview",
+      "url": "https://www.w3.org/WAI/standards-guidelines/wcag/",
+      "publisher": "W3C Web Accessibility Initiative",
+      "accessedAt": "2026-06-24"
+    }
+  ],
+  "format": "technicalArticle",
+  "subjects": [
+    {
+      "id": "ea:concept:motion-design"
+    },
+    {
+      "id": "ea:technology:web-animations"
+    },
+    {
+      "id": "ea:concept:human-computer-interaction"
+    },
+    {
+      "id": "ea:concept:typography"
+    }
+  ],
+  "claims": [
+    "Motion design communicates state, causality and attention when it is treated as interface semantics.",
+    "Responsible motion requires timing discipline, reduced-motion support and clear relation to content."
+  ],
+  "evidence": [
+    {
+      "id": "ea:concept:motion-design"
+    },
+    {
+      "id": "ea:technology:web-animations"
+    }
+  ],
+  "citation": {
+    "preferred": "Electronic Artefacts. \"Motion Design, Time and Interface Semantics.\" Technical article, version 1.0.0, 2026."
+  },
+  "bodyHtml": "<h2>Problem</h2>\n<p>Motion on the web is frequently treated as decoration. Elements fade, slide, pulse or spin because motion can feel polished. But decorative motion can also distract, disorient, hide state changes and waste attention.</p>\n<p>The more useful view is that motion design is interface semantics. It can explain where something came from, what changed, what is related and what the user can do next. Time becomes part of meaning.</p>\n<p>Electronic Artefacts needs this topic because its site is built around knowledge navigation, projects, graph relations and experimental media. Motion can help readers understand those structures, but only if it is designed with discipline.</p>\n<h2>Introduction</h2>\n<p>Motion design uses time, movement, rhythm and transition to structure visual communication. In digital interfaces, it can communicate continuity, hierarchy, feedback and causality.</p>\n<p>The question is not whether an interface moves. The question is why it moves, how long it moves, what state it reveals and whether the user can still read and control the experience.</p>\n<h2>Context</h2>\n<p>Web Animations defines a model for timing changes to page presentation. CSS transitions, CSS animations, SVG animation and scripted animation all participate in the broader motion environment of the web.</p>\n<p>Accessibility standards add another context. Motion must respect human variation. Some users are sensitive to movement. Some need predictable focus. Some browse with reduced-motion preferences.</p>\n<h2>History</h2>\n<p>Motion design grew from film titles, broadcast graphics, animation, interaction design and software interface patterns. As interfaces became more dynamic, motion moved from media production into everyday product design.</p>\n<p>On the web, early motion often came from plugins and scripted effects. Modern browser APIs made animation more integrated. That made motion easier to deploy, but not automatically better.</p>\n<h2>Core concepts</h2>\n<p>Timing: duration and delay.</p>\n<p>Easing: the rate of change over time.</p>\n<p>Continuity: visual connection across states.</p>\n<p>Feedback: motion that confirms user action.</p>\n<p>Hierarchy: motion that prioritizes attention.</p>\n<p>Reduced motion: user preference for less movement.</p>\n<h2>Architecture</h2>\n<p>A motion system needs tokens, rules and contexts. Tokens define durations and easing curves. Rules define which state changes move and which do not. Contexts define when motion is appropriate: navigation, opening, closing, loading, error, success, focus or data update.</p>\n<p>The system should not rely on one animation everywhere. A knowledge page, project hero and graph interaction have different motion needs.</p>\n<h2>Implementation</h2>\n<p>Implementation should start with state. What state changes require visual explanation? A panel opening, a graph node expanding, a search result appearing and a route transition all have different semantics.</p>\n<p>Then define timing. Fast feedback can be under 150 milliseconds. Larger transitions may need more time but should not block reading. Motion should be disabled or simplified when the user requests reduced motion.</p>\n<p>Web Animations, CSS transitions and CSS animations should be used with semantic class changes and predictable state management.</p>\n<h2>Practical applications</h2>\n<p>Motion can help a reader understand graph expansion, card filtering, route transitions, audio playback state, image sequence comparison and archive exploration.</p>\n<p>It can also support storytelling. A Palimpsests page might use layered transitions to express residue. An ORETH visualization might use time-based motion to reveal audio analysis.</p>\n<h2>Tools</h2>\n<p>Useful tools include CSS transitions, CSS animations, Web Animations API, requestAnimationFrame, reduced-motion media queries, browser performance tools, timeline inspectors and accessibility testing.</p>\n<h2>Evidence</h2>\n<p>The W3C Web Animations specification defines a model for synchronization and timing of presentation changes. WCAG guidance frames accessibility as a web content requirement, not an optional enhancement.</p>\n<p>Electronic Artefacts can combine both: motion should be technically stable and human-centered.</p>\n<h2>Editorial method</h2>\n<p>When documenting motion, describe what the motion means. Does it reveal hierarchy? Connect two states? Show temporal process? Confirm interaction? If the answer is unclear, the motion may not be needed.</p>\n<p>Motion examples should include timing values, reduced-motion behavior and rationale.</p>\n<h2>Common mistakes</h2>\n<p>The first mistake is using motion to hide slow interfaces. Performance issues should be fixed, not animated away.</p>\n<p>The second mistake is animating everything. Constant movement reduces meaning.</p>\n<p>The third mistake is ignoring text. Motion should not make reading harder.</p>\n<h2>Electronic Artefacts implications</h2>\n<p>Electronic Artefacts can develop a quiet but expressive motion language for knowledge exploration. The site should use motion to support comprehension, not to mimic marketing interfaces.</p>\n<p>This matters for long-form content. A research library should feel alive without making the reader fight the page.</p>\n<h2>Knowledge graph role</h2>\n<p>Motion can express graph structure when used carefully. A node can expand from its source, a related article can appear as a continuation, a filtered set can contract without losing orientation, and a route transition can preserve a reader’s sense of place.</p>\n<p>The graph should not be animated for spectacle. Motion should clarify relation. If a publication documents a concept, the transition can feel direct and stable. If a collection gathers multiple articles, the interface can reveal grouping without turning the page into a performance.</p>\n<h2>Evaluation criteria</h2>\n<p>Motion should be evaluated by semantic clarity, accessibility, performance and restraint. Does the movement communicate state? Does it help the reader predict what changed? Does it respect reduced-motion settings? Does it avoid layout shift? Does it preserve text readability?</p>\n<p>The best motion systems are quiet. They appear when state changes need explanation and disappear when reading requires stillness.</p>\n<h2>Editorial standard</h2>\n<p>Motion documentation should record timing, easing, trigger, affected elements and fallback. A motion pattern without a written rationale becomes hard to maintain. Future contributors may copy it as decoration without understanding its purpose.</p>\n<p>For Electronic Artefacts, motion patterns should be attached to interface roles: graph expansion, search filtering, route transition, media playback, archive layering or project reveal.</p>\n<h2>Reader pathway</h2>\n<p>Motion design is a strong search topic because many readers look for animation techniques. The Knowledge Hub should capture that interest, then move the reader toward semantic design. The question should change from “how do I animate this?” to “what state does this motion explain?”</p>\n<p>That path connects implementation to HCI. A transition can support orientation. A reduced-motion fallback can support accessibility. A timing token can support consistency. A graph expansion can make relation visible. The article should therefore send readers toward <a href=\"/knowledge/concepts/human-computer-interaction/\">Human Computer Interaction</a>, <a href=\"/knowledge/concepts/typography/\">Typography</a> and <a href=\"/knowledge/technologies/web-animations/\">Web Animations</a>.</p>\n<h2>Preservation angle</h2>\n<p>Motion is difficult to preserve because it lives in time. A static screenshot cannot show pacing, easing or interaction. When a motion pattern matters, preserve a description, code reference, timing values and, where possible, a short capture. This lets future readers distinguish a design decision from an accidental animation artifact.</p>\n<p>For a research site, this is not secondary. Motion may become part of how a reader understands archive layers, audio state or graph expansion. If that behavior disappears, part of the interface argument disappears with it. Documentation keeps temporal design available for future maintenance and critique.</p>\n<p>That documentation also helps future contributors avoid accidental inconsistency. They can reuse a motion pattern because its role is known, not because it happened to look good in an earlier release.</p>\n<p>This preserves design intent.</p>\n<h2>Future work</h2>\n<p>Future entries should cover motion tokens, graph transitions, reduced-motion design, scroll-linked animation, kinetic typography and audio-reactive motion.</p>\n<h2>Related concepts</h2>\n<p>Read <a href=\"/knowledge/concepts/motion-design/\">Motion Design</a>, <a href=\"/knowledge/technologies/web-animations/\">Web Animations</a>, <a href=\"/knowledge/concepts/human-computer-interaction/\">Human Computer Interaction</a> and <a href=\"/knowledge/concepts/typography/\">Typography</a>.</p>\n<h2>Suggested reading</h2>\n<p>Start with Web Animations and WCAG resources, then study interfaces where motion clarifies state instead of decorating it.</p>\n<h2>Related articles</h2>\n<p>Continue with <a href=\"/publications/typography-reading-systems-and-digital-interfaces/\">Typography, Reading Systems and Digital Interfaces</a> and <a href=\"/publications/human-computer-interaction-for-creative-tools/\">Human Computer Interaction for Creative Tools</a>.</p>\n<h2>Glossary</h2>\n<p>Easing: rate curve for animation.</p>\n<p>State change: transition from one interface condition to another.</p>\n<p>Reduced motion: user preference to limit motion.</p>\n<p>Timeline: temporal structure of an animation.</p>\n<h2>Limitations</h2>\n<p>Motion design is not universally beneficial. Some users prefer or require less motion. Some content needs stability.</p>\n<p>A responsible motion system is restrained, semantic and optional where appropriate.</p>\n<h2>References</h2>\n<ul>\n<li>W3C. Web Animations.</li>\n<li>W3C WAI. WCAG 2 Overview.</li>\n<li>Electronic Artefacts. Motion Design, HCI and Typography records.</li>\n</ul>\n",
+  "headings": [
+    "Problem",
+    "Introduction",
+    "Context",
+    "History",
+    "Core concepts",
+    "Architecture",
+    "Implementation",
+    "Practical applications",
+    "Tools",
+    "Evidence",
+    "Editorial method",
+    "Common mistakes",
+    "Electronic Artefacts implications",
+    "Knowledge graph role",
+    "Evaluation criteria",
+    "Editorial standard",
+    "Reader pathway",
+    "Preservation angle",
+    "Future work",
+    "Related concepts",
+    "Suggested reading",
+    "Related articles",
+    "Glossary",
+    "Limitations",
+    "References"
+  ]
+}
