@@ -17,14 +17,17 @@
       "@type": "CreativeWork",
       "@id": "https://electronicartefacts.com/id/project/vestiges/",
       "name": "Vestiges",
-      "description": "Vestiges is a VASTE-powered knowledge infrastructure platform designed to map, preserve, connect, transmit and activate human know-how.",
+      "description": "Vestiges is the flagship VASTE platform for mapping, preserving and activating living know-how across people, practices, materials, places and institutions.",
       "url": "https://electronicartefacts.com/projects/vestiges/",
       "dateCreated": "2025-01-01",
       "datePublished": "2026-06-22",
-      "dateModified": "2026-06-22",
+      "dateModified": "2026-06-24",
       "publisher": {
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
-      }
+      },
+      "sameAs": [
+        "https://www.instagram.com/vestiges.world/"
+      ]
     },
     {
       "@type": "BreadcrumbList",

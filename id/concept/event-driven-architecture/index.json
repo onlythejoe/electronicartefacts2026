@@ -1,0 +1,74 @@
+{
+  "id": "ea:concept:event-driven-architecture",
+  "type": "concept",
+  "slug": {
+    "canonical": "event-driven-architecture"
+  },
+  "title": "Event-Driven Architecture",
+  "definition": "Event-driven architecture is a system design approach in which components publish, transport and react to records of state change rather than depending only on direct synchronous calls.",
+  "abstract": "Event-driven architecture connects event producers, brokers or logs, consumers, schemas, delivery semantics, projections and observability.",
+  "description": "A canonical definition of event-driven architecture for runtimes, workflows and distributed systems.",
+  "locale": "en",
+  "visibility": "public",
+  "publicationClass": "canonical",
+  "status": "active",
+  "maturity": "production",
+  "confidence": "canonical",
+  "version": {
+    "version": "1.0.0",
+    "createdAt": "2026-06-24",
+    "publishedAt": "2026-06-24",
+    "modifiedAt": "2026-06-24"
+  },
+  "authors": [
+    {
+      "id": "ea:organization:electronic-artefacts"
+    }
+  ],
+  "publisher": "ea:organization:electronic-artefacts",
+  "tags": [
+    "Event-Driven Architecture",
+    "Event Streams",
+    "Messaging",
+    "Idempotency",
+    "Projections"
+  ],
+  "disciplines": [
+    "Software Architecture",
+    "Systems Design",
+    "Programming",
+    "Distributed Systems"
+  ],
+  "sources": [
+    {
+      "title": "CloudEvents",
+      "url": "https://cloudevents.io/",
+      "publisher": "Cloud Native Computing Foundation",
+      "accessedAt": "2026-06-24"
+    }
+  ],
+  "scope": [
+    "Events",
+    "Producers and consumers",
+    "Streams and brokers",
+    "Delivery semantics",
+    "Idempotency",
+    "Projections"
+  ],
+  "exclusions": [
+    "Renaming arbitrary messages as events without recording a meaningful state change",
+    "Assuming asynchronous transport removes the need for contracts and failure handling"
+  ],
+  "claims": [
+    "Events reduce temporal coupling but introduce ordering, duplication, replay and observability concerns.",
+    "Durable event systems require explicit schemas, identifiers and consumer behavior."
+  ],
+  "bodyHtml": "<h2>Definition</h2>\n<p>Event-driven architecture organizes behavior around events: durable descriptions that something happened. Producers emit events, transport infrastructure makes them available, and consumers react without requiring the producer to control every downstream action.</p>\n<h2>Architecture</h2>\n<p>An event normally needs an identifier, type, source, time, subject and data. Brokers, queues or logs manage transport. Consumers update projections, trigger workflows or integrate systems.</p>\n<h2>Electronic Artefacts position</h2>\n<p>VASTE uses event propagation as part of contextual execution. Events should retain entity identity and relation context so that downstream behavior remains explainable.</p>\n<h2>Limitations</h2>\n<p>Consumers may receive duplicates, events can arrive late or out of order, schemas evolve, and replay can reproduce unintended side effects. Idempotency, versioning and observability are core design requirements.</p>\n<h2>References</h2>\n<p>See CloudEvents, Redis Streams, Contextual Execution and Graph Runtime.</p>\n",
+  "headings": [
+    "Definition",
+    "Architecture",
+    "Electronic Artefacts position",
+    "Limitations",
+    "References"
+  ]
+}

@@ -1,0 +1,68 @@
+{
+  "id": "local:ea:concept:graph-modeling",
+  "kind": "local",
+  "focus": "ea:concept:graph-modeling",
+  "nodes": [
+    {
+      "id": "ea:concept:graph-modeling",
+      "type": "concept",
+      "title": "Graph Modeling",
+      "route": "/knowledge/concepts/graph-modeling/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:program:vaste",
+      "type": "program",
+      "title": "VASTE",
+      "route": "/programs/vaste/",
+      "status": "development",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:project:vestiges",
+      "type": "project",
+      "title": "Vestiges",
+      "route": "/projects/vestiges/",
+      "status": "development",
+      "confidence": "observed"
+    },
+    {
+      "id": "ea:publication:why-graphs-are-more-powerful-than-folders",
+      "type": "publication",
+      "title": "Why Graphs Are More Powerful Than Folders",
+      "route": "/publications/why-graphs-are-more-powerful-than-folders/",
+      "status": "active",
+      "confidence": "published"
+    }
+  ],
+  "edges": [
+    {
+      "id": "ear:graphs-folders-article-documents-graph-modeling",
+      "source": "ea:publication:why-graphs-are-more-powerful-than-folders",
+      "target": "ea:concept:graph-modeling",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Why Graphs Are More Powerful Than Folders documents graph modeling for connected domains.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:vaste-applies-graph-modeling",
+      "source": "ea:program:vaste",
+      "target": "ea:concept:graph-modeling",
+      "predicate": "appliesConcept",
+      "label": "Applies concept",
+      "statement": "VASTE applies graph modeling through addressable entities and typed relationships.",
+      "confidence": "observed"
+    },
+    {
+      "id": "ear:vestiges-applies-graph-modeling",
+      "source": "ea:project:vestiges",
+      "target": "ea:concept:graph-modeling",
+      "predicate": "appliesConcept",
+      "label": "Applies concept",
+      "statement": "Vestiges applies graph modeling to cultural knowledge and human know-how.",
+      "confidence": "observed"
+    }
+  ]
+}

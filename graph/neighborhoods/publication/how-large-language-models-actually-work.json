@@ -1,0 +1,102 @@
+{
+  "id": "local:ea:publication:how-large-language-models-actually-work",
+  "kind": "local",
+  "focus": "ea:publication:how-large-language-models-actually-work",
+  "nodes": [
+    {
+      "id": "ea:collection:knowledge-hub-third-wave",
+      "type": "collection",
+      "title": "Knowledge Hub Third Wave",
+      "route": "/archive/collections/knowledge-hub-third-wave/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:concept:generative-ai",
+      "type": "concept",
+      "title": "Generative AI",
+      "route": "/knowledge/concepts/generative-ai/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:concept:large-language-model",
+      "type": "concept",
+      "title": "Large Language Model",
+      "route": "/knowledge/concepts/large-language-model/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:concept:provenance",
+      "type": "concept",
+      "title": "Provenance",
+      "route": "/knowledge/concepts/provenance/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:publication:how-large-language-models-actually-work",
+      "type": "publication",
+      "title": "How Large Language Models Actually Work",
+      "route": "/publications/how-large-language-models-actually-work/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:technology:transformer-architecture",
+      "type": "technology",
+      "title": "Transformer Architecture",
+      "route": "/knowledge/technologies/transformer-architecture/",
+      "status": "active",
+      "confidence": "canonical"
+    }
+  ],
+  "edges": [
+    {
+      "id": "ear:llm-article-documents-large-language-model",
+      "source": "ea:publication:how-large-language-models-actually-work",
+      "target": "ea:concept:large-language-model",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "How Large Language Models Actually Work documents the core LLM concept.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:llm-article-uses-transformer-architecture",
+      "source": "ea:publication:how-large-language-models-actually-work",
+      "target": "ea:technology:transformer-architecture",
+      "predicate": "usesTechnology",
+      "label": "Uses technology",
+      "statement": "How Large Language Models Actually Work uses the transformer architecture as its principal technical reference.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:llm-article-documents-generative-ai",
+      "source": "ea:publication:how-large-language-models-actually-work",
+      "target": "ea:concept:generative-ai",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "How Large Language Models Actually Work situates LLMs within generative AI.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:llm-article-documents-provenance",
+      "source": "ea:publication:how-large-language-models-actually-work",
+      "target": "ea:concept:provenance",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "How Large Language Models Actually Work explains why model and data provenance matter.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:knowledge-hub-third-wave-has-llm-article",
+      "source": "ea:collection:knowledge-hub-third-wave",
+      "target": "ea:publication:how-large-language-models-actually-work",
+      "predicate": "hasPart",
+      "label": "Has part",
+      "statement": "Knowledge Hub Third Wave includes How Large Language Models Actually Work.",
+      "confidence": "published"
+    }
+  ]
+}

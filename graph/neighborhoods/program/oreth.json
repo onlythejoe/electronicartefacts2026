@@ -12,6 +12,14 @@
       "confidence": "validated"
     },
     {
+      "id": "ea:concept:multimodal-ai",
+      "type": "concept",
+      "title": "Multimodal AI",
+      "route": "/knowledge/concepts/multimodal-ai/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
       "id": "ea:concept:signal-archaeology",
       "type": "concept",
       "title": "Signal Archaeology",
@@ -48,6 +56,14 @@
       "type": "publication",
       "title": "Generative Systems, Cybernetics and Creative Coding",
       "route": "/publications/generative-systems-cybernetics-and-creative-coding/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:multimodal-ai-across-text-image-audio-and-video",
+      "type": "publication",
+      "title": "Multimodal AI Across Text, Image, Audio and Video",
+      "route": "/publications/multimodal-ai-across-text-image-audio-and-video/",
       "status": "active",
       "confidence": "published"
     },
@@ -131,6 +147,24 @@
       "label": "Documents",
       "statement": "Algorithmic Composition and Rule-Based Music links ORETH to audio analysis and generative musical exploration.",
       "confidence": "published"
+    },
+    {
+      "id": "ear:multimodal-article-documents-oreth",
+      "source": "ea:publication:multimodal-ai-across-text-image-audio-and-video",
+      "target": "ea:program:oreth",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Multimodal AI Across Text, Image, Audio and Video connects ORETH to audio and cross-modal analysis.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:oreth-applies-multimodal-ai",
+      "source": "ea:program:oreth",
+      "target": "ea:concept:multimodal-ai",
+      "predicate": "appliesConcept",
+      "label": "Applies concept",
+      "statement": "ORETH provides an applied context for connecting audio analysis with visual, textual and archival records.",
+      "confidence": "observed"
     }
   ]
 }

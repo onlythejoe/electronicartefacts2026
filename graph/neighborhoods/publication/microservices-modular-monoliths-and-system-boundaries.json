@@ -1,0 +1,102 @@
+{
+  "id": "local:ea:publication:microservices-modular-monoliths-and-system-boundaries",
+  "kind": "local",
+  "focus": "ea:publication:microservices-modular-monoliths-and-system-boundaries",
+  "nodes": [
+    {
+      "id": "ea:collection:knowledge-hub-third-wave",
+      "type": "collection",
+      "title": "Knowledge Hub Third Wave",
+      "route": "/archive/collections/knowledge-hub-third-wave/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:concept:event-driven-architecture",
+      "type": "concept",
+      "title": "Event-Driven Architecture",
+      "route": "/knowledge/concepts/event-driven-architecture/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:concept:microservice-architecture",
+      "type": "concept",
+      "title": "Microservice Architecture",
+      "route": "/knowledge/concepts/microservice-architecture/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:concept:systems-thinking",
+      "type": "concept",
+      "title": "Systems Thinking",
+      "route": "/knowledge/concepts/systems-thinking/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:program:vaste",
+      "type": "program",
+      "title": "VASTE",
+      "route": "/programs/vaste/",
+      "status": "development",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:microservices-modular-monoliths-and-system-boundaries",
+      "type": "publication",
+      "title": "Microservices, Modular Monoliths and System Boundaries",
+      "route": "/publications/microservices-modular-monoliths-and-system-boundaries/",
+      "status": "active",
+      "confidence": "published"
+    }
+  ],
+  "edges": [
+    {
+      "id": "ear:microservices-article-documents-microservice-architecture",
+      "source": "ea:publication:microservices-modular-monoliths-and-system-boundaries",
+      "target": "ea:concept:microservice-architecture",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Microservices, Modular Monoliths and System Boundaries documents microservice architecture and its tradeoffs.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:microservices-article-documents-systems-thinking",
+      "source": "ea:publication:microservices-modular-monoliths-and-system-boundaries",
+      "target": "ea:concept:systems-thinking",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Microservices, Modular Monoliths and System Boundaries applies systems thinking to organizational and operational cost.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:microservices-article-documents-event-driven-architecture",
+      "source": "ea:publication:microservices-modular-monoliths-and-system-boundaries",
+      "target": "ea:concept:event-driven-architecture",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Microservices, Modular Monoliths and System Boundaries explains events as one service communication pattern.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:microservices-article-documents-vaste",
+      "source": "ea:publication:microservices-modular-monoliths-and-system-boundaries",
+      "target": "ea:program:vaste",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Microservices, Modular Monoliths and System Boundaries evaluates VASTE through conservative runtime boundaries.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:knowledge-hub-third-wave-has-microservices-article",
+      "source": "ea:collection:knowledge-hub-third-wave",
+      "target": "ea:publication:microservices-modular-monoliths-and-system-boundaries",
+      "predicate": "hasPart",
+      "label": "Has part",
+      "statement": "Knowledge Hub Third Wave includes Microservices, Modular Monoliths and System Boundaries.",
+      "confidence": "published"
+    }
+  ]
+}

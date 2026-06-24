@@ -1,0 +1,34 @@
+{
+  "id": "local:ea:technology:transformer-architecture",
+  "kind": "local",
+  "focus": "ea:technology:transformer-architecture",
+  "nodes": [
+    {
+      "id": "ea:publication:how-large-language-models-actually-work",
+      "type": "publication",
+      "title": "How Large Language Models Actually Work",
+      "route": "/publications/how-large-language-models-actually-work/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:technology:transformer-architecture",
+      "type": "technology",
+      "title": "Transformer Architecture",
+      "route": "/knowledge/technologies/transformer-architecture/",
+      "status": "active",
+      "confidence": "canonical"
+    }
+  ],
+  "edges": [
+    {
+      "id": "ear:llm-article-uses-transformer-architecture",
+      "source": "ea:publication:how-large-language-models-actually-work",
+      "target": "ea:technology:transformer-architecture",
+      "predicate": "usesTechnology",
+      "label": "Uses technology",
+      "statement": "How Large Language Models Actually Work uses the transformer architecture as its principal technical reference.",
+      "confidence": "published"
+    }
+  ]
+}

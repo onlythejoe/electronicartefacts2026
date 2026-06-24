@@ -1,0 +1,68 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://electronicartefacts.com/publications/retrieval-augmented-generation-and-knowledge-systems/#webpage",
+      "url": "https://electronicartefacts.com/publications/retrieval-augmented-generation-and-knowledge-systems/",
+      "name": "Retrieval-Augmented Generation and Knowledge Systems",
+      "mainEntity": {
+        "@id": "https://electronicartefacts.com/id/publication/retrieval-augmented-generation-and-knowledge-systems/"
+      },
+      "isPartOf": {
+        "@id": "https://electronicartefacts.com/#website"
+      }
+    },
+    {
+      "@type": "TechArticle",
+      "@id": "https://electronicartefacts.com/id/publication/retrieval-augmented-generation-and-knowledge-systems/",
+      "name": "Retrieval-Augmented Generation and Knowledge Systems",
+      "description": "An end-to-end explanation of RAG architecture, ingestion, chunking, embeddings, hybrid retrieval, graphs, citations, permissions and evaluation.",
+      "url": "https://electronicartefacts.com/publications/retrieval-augmented-generation-and-knowledge-systems/",
+      "dateCreated": "2026-06-24",
+      "datePublished": "2026-06-24",
+      "dateModified": "2026-06-24",
+      "publisher": {
+        "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
+      },
+      "citation": "Electronic Artefacts. \"Retrieval-Augmented Generation and Knowledge Systems.\" Technical article, version 1.0.0, 2026.",
+      "about": [
+        {
+          "@id": "https://electronicartefacts.com/id/concept/retrieval-augmented-generation/"
+        },
+        {
+          "@id": "https://electronicartefacts.com/id/concept/knowledge-graph/"
+        },
+        {
+          "@id": "https://electronicartefacts.com/id/concept/metadata/"
+        },
+        {
+          "@id": "https://electronicartefacts.com/id/concept/provenance/"
+        },
+        {
+          "@id": "https://electronicartefacts.com/id/concept/large-language-model/"
+        },
+        {
+          "@id": "https://electronicartefacts.com/id/program/vaste/"
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Electronic Artefacts",
+          "item": "https://electronicartefacts.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Retrieval-Augmented Generation and Knowledge Systems",
+          "item": "https://electronicartefacts.com/publications/retrieval-augmented-generation-and-knowledge-systems/"
+        }
+      ]
+    }
+  ]
+}

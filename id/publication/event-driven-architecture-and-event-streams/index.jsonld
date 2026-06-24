@@ -1,0 +1,65 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://electronicartefacts.com/publications/event-driven-architecture-and-event-streams/#webpage",
+      "url": "https://electronicartefacts.com/publications/event-driven-architecture-and-event-streams/",
+      "name": "Event-Driven Architecture and Event Streams",
+      "mainEntity": {
+        "@id": "https://electronicartefacts.com/id/publication/event-driven-architecture-and-event-streams/"
+      },
+      "isPartOf": {
+        "@id": "https://electronicartefacts.com/#website"
+      }
+    },
+    {
+      "@type": "TechArticle",
+      "@id": "https://electronicartefacts.com/id/publication/event-driven-architecture-and-event-streams/",
+      "name": "Event-Driven Architecture and Event Streams",
+      "description": "A practical explanation of events, commands, queues, logs, brokers, schemas, delivery semantics, idempotency, projections, replay and observability.",
+      "url": "https://electronicartefacts.com/publications/event-driven-architecture-and-event-streams/",
+      "dateCreated": "2026-06-24",
+      "datePublished": "2026-06-24",
+      "dateModified": "2026-06-24",
+      "publisher": {
+        "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
+      },
+      "citation": "Electronic Artefacts. \"Event-Driven Architecture and Event Streams.\" Technical article, version 1.0.0, 2026.",
+      "about": [
+        {
+          "@id": "https://electronicartefacts.com/id/concept/event-driven-architecture/"
+        },
+        {
+          "@id": "https://electronicartefacts.com/id/technology/cloudevents/"
+        },
+        {
+          "@id": "https://electronicartefacts.com/id/concept/contextual-execution/"
+        },
+        {
+          "@id": "https://electronicartefacts.com/id/concept/graph-runtime/"
+        },
+        {
+          "@id": "https://electronicartefacts.com/id/program/vaste/"
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Electronic Artefacts",
+          "item": "https://electronicartefacts.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Event-Driven Architecture and Event Streams",
+          "item": "https://electronicartefacts.com/publications/event-driven-architecture-and-event-streams/"
+        }
+      ]
+    }
+  ]
+}

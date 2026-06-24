@@ -12,10 +12,42 @@
       "confidence": "canonical"
     },
     {
+      "id": "ea:concept:domain-operating-system",
+      "type": "concept",
+      "title": "Domain Operating System",
+      "route": "/knowledge/concepts/domain-operating-system/",
+      "status": "active",
+      "confidence": "observed"
+    },
+    {
+      "id": "ea:concept:event-driven-architecture",
+      "type": "concept",
+      "title": "Event-Driven Architecture",
+      "route": "/knowledge/concepts/event-driven-architecture/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:concept:graph-modeling",
+      "type": "concept",
+      "title": "Graph Modeling",
+      "route": "/knowledge/concepts/graph-modeling/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
       "id": "ea:concept:graph-runtime",
       "type": "concept",
       "title": "Graph Runtime",
       "route": "/knowledge/concepts/graph-runtime/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:concept:systems-thinking",
+      "type": "concept",
+      "title": "Systems Thinking",
+      "route": "/knowledge/concepts/systems-thinking/",
       "status": "active",
       "confidence": "canonical"
     },
@@ -44,10 +76,26 @@
       "confidence": "observed"
     },
     {
+      "id": "ea:publication:ai-agents-vs-ai-workflows",
+      "type": "publication",
+      "title": "AI Agents vs AI Workflows",
+      "route": "/publications/ai-agents-vs-ai-workflows/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
       "id": "ea:publication:contextual-execution-and-graph-runtimes",
       "type": "publication",
       "title": "Contextual Execution and Graph Runtimes",
       "route": "/publications/contextual-execution-and-graph-runtimes/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:event-driven-architecture-and-event-streams",
+      "type": "publication",
+      "title": "Event-Driven Architecture and Event Streams",
+      "route": "/publications/event-driven-architecture-and-event-streams/",
       "status": "active",
       "confidence": "published"
     },
@@ -64,6 +112,54 @@
       "type": "publication",
       "title": "Human Computer Interaction for Creative Tools",
       "route": "/publications/human-computer-interaction-for-creative-tools/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:microservices-modular-monoliths-and-system-boundaries",
+      "type": "publication",
+      "title": "Microservices, Modular Monoliths and System Boundaries",
+      "route": "/publications/microservices-modular-monoliths-and-system-boundaries/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:redis-streams-for-orchestration",
+      "type": "publication",
+      "title": "Redis Streams for Orchestration",
+      "route": "/publications/redis-streams-for-orchestration/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:retrieval-augmented-generation-and-knowledge-systems",
+      "type": "publication",
+      "title": "Retrieval-Augmented Generation and Knowledge Systems",
+      "route": "/publications/retrieval-augmented-generation-and-knowledge-systems/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:runtime-engines-and-domain-operating-systems",
+      "type": "publication",
+      "title": "Runtime Engines and Domain Operating Systems",
+      "route": "/publications/runtime-engines-and-domain-operating-systems/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:systems-thinking-for-creative-practice",
+      "type": "publication",
+      "title": "Systems Thinking for Creative Practice",
+      "route": "/publications/systems-thinking-for-creative-practice/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:why-graphs-are-more-powerful-than-folders",
+      "type": "publication",
+      "title": "Why Graphs Are More Powerful Than Folders",
+      "route": "/publications/why-graphs-are-more-powerful-than-folders/",
       "status": "active",
       "confidence": "published"
     },
@@ -112,6 +208,114 @@
       "label": "Documents",
       "statement": "Human Computer Interaction for Creative Tools uses VASTE as a context for graph-aware creative systems.",
       "confidence": "published"
+    },
+    {
+      "id": "ear:agents-article-documents-vaste",
+      "source": "ea:publication:ai-agents-vs-ai-workflows",
+      "target": "ea:program:vaste",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "AI Agents vs AI Workflows uses VASTE as a context for identity-aware agent permissions.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:rag-article-documents-vaste",
+      "source": "ea:publication:retrieval-augmented-generation-and-knowledge-systems",
+      "target": "ea:program:vaste",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Retrieval-Augmented Generation and Knowledge Systems uses VASTE as a context for identity-aware graph retrieval.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:systems-thinking-article-documents-vaste",
+      "source": "ea:publication:systems-thinking-for-creative-practice",
+      "target": "ea:program:vaste",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Systems Thinking for Creative Practice uses VASTE as an applied runtime-systems context.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:graphs-folders-article-documents-vaste",
+      "source": "ea:publication:why-graphs-are-more-powerful-than-folders",
+      "target": "ea:program:vaste",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Why Graphs Are More Powerful Than Folders uses VASTE as a graph-runtime application.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:event-architecture-article-documents-vaste",
+      "source": "ea:publication:event-driven-architecture-and-event-streams",
+      "target": "ea:program:vaste",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Event-Driven Architecture and Event Streams uses VASTE as an applied event-propagation context.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:redis-streams-article-documents-vaste",
+      "source": "ea:publication:redis-streams-for-orchestration",
+      "target": "ea:program:vaste",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Redis Streams for Orchestration describes a possible bounded transport layer for VASTE projections.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:microservices-article-documents-vaste",
+      "source": "ea:publication:microservices-modular-monoliths-and-system-boundaries",
+      "target": "ea:program:vaste",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Microservices, Modular Monoliths and System Boundaries evaluates VASTE through conservative runtime boundaries.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:domain-os-article-documents-vaste",
+      "source": "ea:publication:runtime-engines-and-domain-operating-systems",
+      "target": "ea:program:vaste",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Runtime Engines and Domain Operating Systems uses VASTE as the primary Electronic Artefacts runtime context.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:vaste-applies-systems-thinking",
+      "source": "ea:program:vaste",
+      "target": "ea:concept:systems-thinking",
+      "predicate": "appliesConcept",
+      "label": "Applies concept",
+      "statement": "VASTE applies systems thinking to entities, context, events and projections.",
+      "confidence": "observed"
+    },
+    {
+      "id": "ear:vaste-applies-event-driven-architecture",
+      "source": "ea:program:vaste",
+      "target": "ea:concept:event-driven-architecture",
+      "predicate": "appliesConcept",
+      "label": "Applies concept",
+      "statement": "VASTE applies event-driven architecture through its event propagation layer.",
+      "confidence": "observed"
+    },
+    {
+      "id": "ear:vaste-applies-graph-modeling",
+      "source": "ea:program:vaste",
+      "target": "ea:concept:graph-modeling",
+      "predicate": "appliesConcept",
+      "label": "Applies concept",
+      "statement": "VASTE applies graph modeling through addressable entities and typed relationships.",
+      "confidence": "observed"
+    },
+    {
+      "id": "ear:vaste-applies-domain-operating-system",
+      "source": "ea:program:vaste",
+      "target": "ea:concept:domain-operating-system",
+      "predicate": "appliesConcept",
+      "label": "Applies concept",
+      "statement": "VASTE explores domain operating system architecture for graph-shaped products.",
+      "confidence": "observed"
     },
     {
       "id": "ear:vaste-applies-graph-runtime",

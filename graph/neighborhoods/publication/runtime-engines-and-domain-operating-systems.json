@@ -1,0 +1,119 @@
+{
+  "id": "local:ea:publication:runtime-engines-and-domain-operating-systems",
+  "kind": "local",
+  "focus": "ea:publication:runtime-engines-and-domain-operating-systems",
+  "nodes": [
+    {
+      "id": "ea:collection:knowledge-hub-third-wave",
+      "type": "collection",
+      "title": "Knowledge Hub Third Wave",
+      "route": "/archive/collections/knowledge-hub-third-wave/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:concept:contextual-execution",
+      "type": "concept",
+      "title": "Contextual Execution",
+      "route": "/knowledge/concepts/contextual-execution/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:concept:domain-operating-system",
+      "type": "concept",
+      "title": "Domain Operating System",
+      "route": "/knowledge/concepts/domain-operating-system/",
+      "status": "active",
+      "confidence": "observed"
+    },
+    {
+      "id": "ea:concept:graph-runtime",
+      "type": "concept",
+      "title": "Graph Runtime",
+      "route": "/knowledge/concepts/graph-runtime/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:program:vaste",
+      "type": "program",
+      "title": "VASTE",
+      "route": "/programs/vaste/",
+      "status": "development",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:project:vestiges",
+      "type": "project",
+      "title": "Vestiges",
+      "route": "/projects/vestiges/",
+      "status": "development",
+      "confidence": "observed"
+    },
+    {
+      "id": "ea:publication:runtime-engines-and-domain-operating-systems",
+      "type": "publication",
+      "title": "Runtime Engines and Domain Operating Systems",
+      "route": "/publications/runtime-engines-and-domain-operating-systems/",
+      "status": "active",
+      "confidence": "published"
+    }
+  ],
+  "edges": [
+    {
+      "id": "ear:domain-os-article-documents-domain-operating-system",
+      "source": "ea:publication:runtime-engines-and-domain-operating-systems",
+      "target": "ea:concept:domain-operating-system",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Runtime Engines and Domain Operating Systems documents the domain operating system concept.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:domain-os-article-documents-graph-runtime",
+      "source": "ea:publication:runtime-engines-and-domain-operating-systems",
+      "target": "ea:concept:graph-runtime",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Runtime Engines and Domain Operating Systems connects domain runtimes to graph execution.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:domain-os-article-documents-contextual-execution",
+      "source": "ea:publication:runtime-engines-and-domain-operating-systems",
+      "target": "ea:concept:contextual-execution",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Runtime Engines and Domain Operating Systems explains capability evaluation through contextual execution.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:domain-os-article-documents-vaste",
+      "source": "ea:publication:runtime-engines-and-domain-operating-systems",
+      "target": "ea:program:vaste",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Runtime Engines and Domain Operating Systems uses VASTE as the primary Electronic Artefacts runtime context.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:domain-os-article-documents-vestiges",
+      "source": "ea:publication:runtime-engines-and-domain-operating-systems",
+      "target": "ea:project:vestiges",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Runtime Engines and Domain Operating Systems uses Vestiges as a cultural domain OS application.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:knowledge-hub-third-wave-has-domain-os-article",
+      "source": "ea:collection:knowledge-hub-third-wave",
+      "target": "ea:publication:runtime-engines-and-domain-operating-systems",
+      "predicate": "hasPart",
+      "label": "Has part",
+      "statement": "Knowledge Hub Third Wave includes Runtime Engines and Domain Operating Systems.",
+      "confidence": "published"
+    }
+  ]
+}

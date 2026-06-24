@@ -50,6 +50,7 @@ for (const entity of publicEntities) {
     footer,
     jsonLd: jsonLdFor(entity),
     pageClass: entity.type,
+    entryId: entity.slug.canonical,
   });
   await writeText(routeToFile(rootDir, routeForEntity(entity)), html);
 

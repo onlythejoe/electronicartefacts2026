@@ -1,0 +1,34 @@
+{
+  "id": "local:ea:concept:retrieval-augmented-generation",
+  "kind": "local",
+  "focus": "ea:concept:retrieval-augmented-generation",
+  "nodes": [
+    {
+      "id": "ea:concept:retrieval-augmented-generation",
+      "type": "concept",
+      "title": "Retrieval-Augmented Generation",
+      "route": "/knowledge/concepts/retrieval-augmented-generation/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:publication:retrieval-augmented-generation-and-knowledge-systems",
+      "type": "publication",
+      "title": "Retrieval-Augmented Generation and Knowledge Systems",
+      "route": "/publications/retrieval-augmented-generation-and-knowledge-systems/",
+      "status": "active",
+      "confidence": "published"
+    }
+  ],
+  "edges": [
+    {
+      "id": "ear:rag-article-documents-rag",
+      "source": "ea:publication:retrieval-augmented-generation-and-knowledge-systems",
+      "target": "ea:concept:retrieval-augmented-generation",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Retrieval-Augmented Generation and Knowledge Systems documents RAG architecture end to end.",
+      "confidence": "published"
+    }
+  ]
+}

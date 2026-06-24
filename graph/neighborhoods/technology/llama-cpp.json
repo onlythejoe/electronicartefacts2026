@@ -1,0 +1,34 @@
+{
+  "id": "local:ea:technology:llama-cpp",
+  "kind": "local",
+  "focus": "ea:technology:llama-cpp",
+  "nodes": [
+    {
+      "id": "ea:publication:local-and-open-source-ai-systems",
+      "type": "publication",
+      "title": "Local and Open Source AI Systems",
+      "route": "/publications/local-and-open-source-ai-systems/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:technology:llama-cpp",
+      "type": "technology",
+      "title": "llama.cpp",
+      "route": "/knowledge/technologies/llama-cpp/",
+      "status": "active",
+      "confidence": "canonical"
+    }
+  ],
+  "edges": [
+    {
+      "id": "ear:local-ai-article-uses-llama-cpp",
+      "source": "ea:publication:local-and-open-source-ai-systems",
+      "target": "ea:technology:llama-cpp",
+      "predicate": "usesTechnology",
+      "label": "Uses technology",
+      "statement": "Local and Open Source AI Systems uses llama.cpp as a reference local inference runtime.",
+      "confidence": "published"
+    }
+  ]
+}

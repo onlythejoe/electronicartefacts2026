@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="dark" />
+    <meta name="description" content="Learn event-driven architecture through event streams, delivery guarantees, schema evolution, idempotency, projections and runtime design." />
+    <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
+    <meta name="author" content="Electronic Artefacts" />
+    <meta name="theme-color" content="#000000" />
+    <link rel="canonical" href="https://electronicartefacts.com/publications/event-driven-architecture-and-event-streams/" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/assets/media/projects/electronic-artefacts/electronic-artefacts-icon-192.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta property="og:title" content="Event-Driven Architecture and Event Streams | Electronic Artefacts" />
+    <meta property="og:description" content="Learn event-driven architecture through event streams, delivery guarantees, schema evolution, idempotency, projections and runtime design." />
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content="Electronic Artefacts" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:url" content="https://electronicartefacts.com/publications/event-driven-architecture-and-event-streams/" />
+    <meta property="og:image" content="https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-search.jpg" />
+    <meta property="og:image:alt" content="Event-Driven Architecture and Event Streams" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Event-Driven Architecture and Event Streams | Electronic Artefacts" />
+    <meta name="twitter:description" content="Learn event-driven architecture through event streams, delivery guarantees, schema evolution, idempotency, projections and runtime design." />
+    <meta name="twitter:image" content="https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-search.jpg" />
+    <title>Event-Driven Architecture and Event Streams | Electronic Artefacts</title>
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://electronicartefacts.com/publications/event-driven-architecture-and-event-streams/#webpage","url":"https://electronicartefacts.com/publications/event-driven-architecture-and-event-streams/","name":"Event-Driven Architecture and Event Streams","mainEntity":{"@id":"https://electronicartefacts.com/id/publication/event-driven-architecture-and-event-streams/"},"isPartOf":{"@id":"https://electronicartefacts.com/#website"}},{"@type":"TechArticle","@id":"https://electronicartefacts.com/id/publication/event-driven-architecture-and-event-streams/","name":"Event-Driven Architecture and Event Streams","description":"A practical explanation of events, commands, queues, logs, brokers, schemas, delivery semantics, idempotency, projections, replay and observability.","url":"https://electronicartefacts.com/publications/event-driven-architecture-and-event-streams/","dateCreated":"2026-06-24","datePublished":"2026-06-24","dateModified":"2026-06-24","publisher":{"@id":"https://electronicartefacts.com/id/organization/electronic-artefacts/"},"citation":"Electronic Artefacts. \"Event-Driven Architecture and Event Streams.\" Technical article, version 1.0.0, 2026.","about":[{"@id":"https://electronicartefacts.com/id/concept/event-driven-architecture/"},{"@id":"https://electronicartefacts.com/id/technology/cloudevents/"},{"@id":"https://electronicartefacts.com/id/concept/contextual-execution/"},{"@id":"https://electronicartefacts.com/id/concept/graph-runtime/"},{"@id":"https://electronicartefacts.com/id/program/vaste/"}]},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Electronic Artefacts","item":"https://electronicartefacts.com/"},{"@type":"ListItem","position":2,"name":"Event-Driven Architecture and Event Streams","item":"https://electronicartefacts.com/publications/event-driven-architecture-and-event-streams/"}]}]}</script>
+    <link rel="stylesheet" href="/assets/css/app.css?v=27" />
+    <script type="module" src="/assets/js/app.js?v=27"></script>
+  </head>
+  <body data-page="publication" data-generated-page="true" data-entry-id="event-driven-architecture-and-event-streams">
+    <a class="skip-link" href="#main">Skip to main content</a>
+    <header><div class="shell-header zone-card">
+  <a class="brand-lockup" href="/index.html" aria-label="Back to home">
+    <span class="brand-text">
+      <strong><span class="brand-name-brand">electronic</span><span class="brand-name-accent">Artefacts</span></strong>
+      <span>Creative technology studio</span>
+    </span>
+  </a>
+
+  <nav class="site-nav" aria-label="Main navigation">
+    <a data-nav="home" href="/index.html">HOME</a>
+    <a data-nav="work" href="/work.html">WORK</a>
+    <a data-nav="projects" href="/projects.html">PROJECTS</a>
+    <a data-nav="programs" href="/programs.html">PROGRAMS</a>
+    <a data-nav="research" href="/research.html">RESEARCH</a>
+    <a data-nav="knowledge" href="/knowledge/">KNOWLEDGE</a>
+    <a data-nav="archive" href="/archive.html">ARCHIVE</a>
+    <a data-nav="about" href="/about.html">ABOUT</a>
+    <a data-nav="contact" href="/contact.html">CONTACT</a>
+  </nav>
+</div>
+</header>
+    <main id="main" class="site-main">
+  <section class="zone-card entity-breadcrumb-card">
+  <nav class="link-row entity-breadcrumbs" aria-label="Breadcrumb">
+    <a class="tag" href="/">Home</a>
+    <span aria-hidden="true">/</span>
+    <span class="tag">Publications</span>
+    <span aria-hidden="true">/</span>
+    <span aria-current="page">Event-Driven Architecture and Event Streams</span>
+  </nav></section>
+  
+  <section class="zone-card hero entity-hero">
+    <div class="section-head">
+      <p class="eyebrow">PUBLICATION</p>
+      <h1 class="display-title">Event-Driven Architecture and Event Streams</h1>
+      <p class="card__meta">Technical Article</p>
+      <p class="lede">A practical explanation of events, commands, queues, logs, brokers, schemas, delivery semantics, idempotency, projections, replay and observability.</p>
+      
+    </div>
+    <div class="pill-cloud">
+      <span class="tag">active</span>
+      <span class="tag">published</span>
+      <span class="tag">v1.0.0</span>
+    </div>
+  </section>
+  <article class="zone-card hero publication-body"><h2>Problem</h2>
+<p>Direct synchronous calls couple component availability and force producers to coordinate every consequence of a change. As systems grow, this reduces resilience and obscures historical state transitions.</p>
+<h2>Introduction</h2>
+<p>Most software begins with direct calls. A user submits a form, an application validates it, writes a database record and returns a response. One component calls another and waits. This request-response model is understandable and often sufficient.</p>
+<p>Event-driven architecture becomes useful when several parts of a system need to react to change independently, when work must continue asynchronously, or when the history of change matters. Instead of one component instructing every downstream component, it records that something happened: a publication was approved, an artefact was ingested, a relation was created, a payment was completed.</p>
+<p>Consumers subscribe to relevant events and perform their own work. A search index updates. A public projection rebuilds. An audit record is written. A notification is sent. The producer does not need to know all of these consequences.</p>
+<p>This decoupling creates flexibility and resilience, but it also creates new questions: what exactly is an event, how is it delivered, what happens when consumers fail, how are schemas changed, and can history be replayed safely?</p>
+<h2>Events and commands</h2>
+<p>A command requests an action: <code>PublishArticle</code>, <code>CreateRelation</code>, <code>AnalyzeAudio</code>. It may be rejected because permissions, validation or state do not allow it. An event records something that has happened: <code>ArticlePublished</code>, <code>RelationCreated</code>, <code>AudioAnalysisCompleted</code>.</p>
+<p>The distinction clarifies responsibility. A command has an intended handler. An event may have many unknown consumers. Commands are usually named in the imperative; events in the past tense.</p>
+<p>Systems often blur the terms. A message named <code>SendEmailEvent</code> may actually be a command directed to one worker. The architecture becomes easier to reason about when names reflect semantics rather than transport.</p>
+<p>Events should represent meaningful domain changes, not every internal function call. Excessively fine-grained events expose implementation detail and create noise.</p>
+<h2>Event envelope</h2>
+<p>An event needs metadata as well as payload. Common fields include a unique identifier, type, source, time, subject, schema version and correlation identifier.</p>
+<p>CloudEvents defines a portable event envelope with attributes such as <code>id</code>, <code>source</code>, <code>specversion</code> and <code>type</code>. The specification does not dictate the domain payload or broker. It provides a shared shape that improves interoperability across services and transports.</p>
+<p>For VASTE, an event could identify the entity that changed, the actor context, relation scope, visibility and causation. This allows downstream consumers to apply contextual rules rather than receiving anonymous data.</p>
+<p>An envelope should remain compact and stable. Sensitive details may belong in a protected payload or referenced record rather than headers copied across infrastructure.</p>
+<h2>Architecture</h2>
+<p>An event-driven architecture contains producers, event contracts, transport, retention, consumer groups, idempotent handlers, projections, failure paths and observability. Domain state remains authoritative outside the broker unless event sourcing is chosen deliberately.</p>
+<h2>Queues, topics and logs</h2>
+<p>A queue distributes work. A message is delivered to one worker or one member of a worker group, then acknowledged. Queues are appropriate for tasks such as rendering, email delivery or file processing.</p>
+<p>A topic broadcasts events to multiple subscribers. Each subscriber can react independently. Topics fit integration and domain event distribution.</p>
+<p>An append-only log retains ordered records for later reading. Consumers track their own position and can replay history. Apache Kafka and Redis Streams provide log-oriented primitives, although their operational models differ.</p>
+<p>These patterns overlap in implementations. The important questions are retention, ordering, consumption state and whether multiple independent consumers need the same record.</p>
+<h2>Temporal coupling</h2>
+<p>Direct synchronous calls create temporal coupling: both components must be available at the same time. If the search index is down, should article publication fail? An event stream lets publication commit its domain change while indexing catches up later.</p>
+<p>This improves resilience but introduces eventual consistency. The public article may exist before every projection reflects it. Interfaces need to handle intermediate states.</p>
+<p>Not every operation should be asynchronous. A user changing a password needs immediate validation. A financial transaction may require coordinated guarantees. Event-driven design should follow domain boundaries rather than a rule that all calls become messages.</p>
+<h2>Delivery semantics</h2>
+<p>Messaging systems are often described as at-most-once, at-least-once or exactly-once.</p>
+<p>At-most-once delivery may lose a message but avoids duplicate processing. At-least-once delivery retries until acknowledgement, so consumers must handle duplicates. Exactly-once usually refers to guarantees within a bounded system or transaction model; end-to-end external side effects remain difficult.</p>
+<p>The practical default is to design consumers for at-least-once delivery. Every event has a stable ID. Consumers record processed IDs or make operations idempotent. Retrying <code>SetPublicationStatusToPublished</code> is safer than retrying <code>IncrementPublicationCount</code>.</p>
+<p>Marketing claims about exactly-once should be translated into precise boundaries: exactly once where, under which failures, and for which side effects?</p>
+<h2>Idempotency</h2>
+<p>An idempotent operation produces the same relevant result when repeated. It is central to reliable event handling because networks and processes can fail after work completes but before acknowledgement is recorded.</p>
+<p>Consumers can use event IDs as deduplication keys. Database writes can use upserts or unique constraints. External calls can use provider-supported idempotency keys. State transitions can verify current version.</p>
+<p>Idempotency is a domain property, not only a broker feature. Sending the same public announcement twice may remain harmful even if the internal database write is deduplicated.</p>
+<p>Design review should identify every irreversible side effect and define duplicate behavior.</p>
+<h2>Ordering</h2>
+<p>Global ordering is expensive and rarely necessary. Most systems need ordering within a meaningful key: events for one account, project or entity should be processed in sequence.</p>
+<p>Partitioned logs preserve order within a partition. Choosing the partition key determines which events can be ordered together and how load is distributed.</p>
+<p>Consumers should still handle late events. Network delays, retries and migrations can expose older records. Events need occurrence time and processing time where the difference matters.</p>
+<p>For a graph runtime, ordering by entity may be insufficient when an operation spans several connected entities. The design must define transaction and consistency boundaries explicitly.</p>
+<h2>Schema evolution</h2>
+<p>Events outlive the code that produced them. Consumers may deploy at different times. A schema change that removes or reinterprets a field can break replay and integration.</p>
+<p>Prefer additive changes. New optional fields are easier to adopt than renamed fields. Include a schema version when semantics change. Maintain compatibility tests between producers and consumers.</p>
+<p>An event should contain enough information to remain meaningful without copying the entire current entity. References to canonical IDs reduce duplication, while snapshots may be useful when historical interpretation requires the state at event time.</p>
+<p>Schema registries and generated types can help, but governance remains editorial: what does the event mean?</p>
+<h2>Event sourcing</h2>
+<p>Event sourcing stores state changes as the primary record and derives current state by replaying events. Instead of overwriting an article record, the system stores events such as <code>ArticleDrafted</code>, <code>ArticleReviewed</code> and <code>ArticlePublished</code>.</p>
+<p>The pattern provides history, auditability and temporal reconstruction. It also adds complexity. Event schemas become permanent. Correcting mistakes requires compensating events or controlled migration. Replaying external side effects is dangerous.</p>
+<p>Event sourcing should not be confused with publishing integration events. A system can use event-driven messaging while keeping a conventional database as the source of truth.</p>
+<p>Use event sourcing when domain history is fundamental and the team can support its operational discipline.</p>
+<h2>Projections</h2>
+<p>A projection transforms events or canonical state into a view optimized for reading. Search indexes, public pages, dashboards and graph neighborhoods are projections.</p>
+<p>Projections can be rebuilt when logic changes, provided source events or canonical records remain available. This separation protects the core model from interface-specific fields.</p>
+<p>Electronic Artefacts already generates several projections from content records: HTML pages, JSON-LD, search documents, route manifests and graph files. An event-driven runtime could update these surfaces incrementally as entities change.</p>
+<p>Projection lag should be observable. A system needs to know which event a projection has processed.</p>
+<h2>Failure handling</h2>
+<p>Consumers fail because of invalid data, unavailable dependencies, code defects or resource exhaustion. Retrying every failure indefinitely can block a partition or multiply costs.</p>
+<p>Classify failures as transient or permanent. Transient failures can use bounded retries with backoff. Permanent failures should move to a dead-letter or quarantine process with enough context for investigation.</p>
+<p>Dead-letter queues are not garbage bins. They need ownership, alerts and replay procedures. Sensitive payloads require the same protection as the primary stream.</p>
+<p>Poison events should not prevent unrelated work. Partitioning and consumer design influence blast radius.</p>
+<h2>Observability</h2>
+<p>Distributed event flows are invisible without tracing and metrics. Logs should include event ID, type, source, correlation ID, consumer and processing outcome. Metrics should track lag, throughput, retry rate, age and dead-letter volume.</p>
+<p>Distributed tracing can connect the original command with emitted events and downstream work. This is especially useful when one user action affects several services.</p>
+<p>Business observability matters too. A stream can be technically healthy while publications remain stuck before approval. Domain metrics should reflect meaningful progress.</p>
+<p>For VASTE, graph context can enrich traces: which entity and relation caused an event, under whose authority, and which projections changed?</p>
+<h2>Security</h2>
+<p>Events can carry sensitive data far beyond the original service. Minimize payloads, classify fields and apply access controls at the broker and consumer level.</p>
+<p>Producers should be authenticated and authorized to emit event types. Consumers should validate schemas and treat payloads as untrusted input. Signing may be appropriate across organizational boundaries.</p>
+<p>Retention policy matters. An append-only log can become a long-lived copy of personal or restricted information. References to controlled records may be safer than embedding full content.</p>
+<p>Prompt injection also affects AI consumers. Text in an event payload should not become trusted model instruction.</p>
+<h2>Event-driven AI</h2>
+<p>AI workflows often fit event architecture. A document-ingested event can trigger extraction. An analysis-completed event can trigger human review. A review-approved event can update the public graph.</p>
+<p>Agents should not consume an unbounded global stream. They need scoped subscriptions, permissions and task context. Model outputs should become proposals or events with explicit confidence, not silent state mutation.</p>
+<p>Events also support evaluation. The trajectory of tool calls, approvals and outcomes can be reconstructed without treating private chain-of-thought as an authoritative record.</p>
+<p>Local models and hosted services can sit behind the same event contracts, improving replaceability.</p>
+<h2>VASTE and contextual execution</h2>
+<p>VASTE is concerned with entities, identity, relations, context and event propagation. Event-driven architecture supplies transport and temporal decoupling, while the graph supplies meaning.</p>
+<p>An event such as <code>RelationCreated</code> is insufficient without knowing the subject, predicate, object, actor and confidence. Contextual execution can determine whether the relation is allowed and which consumers may see it.</p>
+<p>Graph neighborhoods can also bound propagation. A change may notify direct dependents without broadcasting across the entire system.</p>
+<p>This combination distinguishes a graph runtime from a generic message bus. The runtime uses semantic structure to govern event behavior.</p>
+<h2>When not to use events</h2>
+<p>Do not introduce a broker when a direct function call or database transaction is sufficient. Small systems can become harder to debug when every operation is asynchronous.</p>
+<p>Avoid events as a way to hide unclear ownership. If no service is authoritative for a concept, more messages will not fix the domain model.</p>
+<p>Do not publish unstable internal details as permanent integration contracts. Keep local implementation events inside the owning boundary.</p>
+<p>The strongest event systems are selective. They record changes that other components genuinely need to observe.</p>
+<h2>Implementation sequence</h2>
+<p>Start by naming domain events and their owners. Define identifiers, schema, source and retention. Choose one consumer and design idempotency before adding more.</p>
+<p>Add correlation IDs, lag metrics and failure handling early. Test duplicates, reordering, unavailable consumers and schema changes. Document replay behavior.</p>
+<p>Use CloudEvents or a similar envelope where interoperability is valuable. Choose a broker according to scale, retention and operations, not trend.</p>
+<p>Only adopt event sourcing after the team has demonstrated reliable event handling and a domain need for event history as source of truth.</p>
+<h2>Implementation</h2>
+<p>Implement one domain event end to end. Give it stable identity and schema, persist the originating state change, deliver it to one idempotent consumer, monitor lag and duplicates, then expand to additional projections.</p>
+<h2>Evidence</h2>
+<p>CloudEvents specifies a portable event envelope. Kafka documents durable event streaming, while event-sourcing literature describes deriving application state from sequenced domain events.</p>
+<h2>Limitations</h2>
+<p>Asynchronous systems increase operational and cognitive load. Eventual consistency, schema evolution and replay can be inappropriate where one local transaction or direct call already satisfies the requirement.</p>
+<h2>Related concepts</h2>
+<p>Read <a href="/knowledge/concepts/event-driven-architecture/">Event-Driven Architecture</a>, <a href="/knowledge/concepts/contextual-execution/">Contextual Execution</a> and <a href="/knowledge/concepts/graph-runtime/">Graph Runtime</a>.</p>
+<h2>Related technology</h2>
+<p>See <a href="/knowledge/technologies/cloudevents/">CloudEvents</a> and <a href="/knowledge/technologies/redis-streams/">Redis Streams</a>.</p>
+<h2>Related program</h2>
+<p>See <a href="/programs/vaste/">VASTE</a>.</p>
+<h2>Glossary</h2>
+<p>Event: a durable record that something happened.</p>
+<p>Command: a request for an action.</p>
+<p>Broker: infrastructure that transports messages.</p>
+<p>Consumer: a component that reads and reacts to events.</p>
+<p>Idempotency: safety under repeated execution.</p>
+<p>Projection: a read model derived from canonical state or events.</p>
+<h2>References</h2>
+<ul>
+<li>Cloud Native Computing Foundation. CloudEvents.</li>
+<li>Apache Software Foundation. Apache Kafka Documentation.</li>
+<li>Fowler, Martin. Event Sourcing.</li>
+</ul>
+</article>
+  <section class="detail-grid">
+    
+  <section class="panel knowledge-panel">
+    <div class="section-head">
+      <p class="card__meta">Identity and publication</p>
+      <h2 class="card__title">Record metadata</h2>
+    </div>
+    <dl class="metadata-list">
+      <div><dt>Entity ID</dt><dd>ea:publication:event-driven-architecture-and-event-streams</dd></div>
+      <div><dt>Publication class</dt><dd>published</dd></div>
+      <div><dt>Status</dt><dd>active</dd></div>
+      <div><dt>Maturity</dt><dd>research</dd></div>
+      <div><dt>Confidence</dt><dd>published</dd></div>
+      <div><dt>Published</dt><dd>2026-06-24</dd></div>
+      <div><dt>Modified</dt><dd>2026-06-24</dd></div>
+      <div><dt>Version</dt><dd>1.0.0</dd></div>
+    </dl>
+  </section>
+    
+    <section class="panel knowledge-panel">
+      <div class="section-head">
+        <p class="card__meta">Citation</p>
+        <h2 class="card__title">How to cite this record</h2>
+      </div>
+      <p class="card__copy">Electronic Artefacts. &quot;Event-Driven Architecture and Event Streams.&quot; Technical article, version 1.0.0, 2026.</p>
+      <div class="link-row"><a class="tag" href="https://electronicartefacts.com/publications/event-driven-architecture-and-event-streams/">Canonical URL</a></div>
+    </section>
+  </section>
+  
+    <section class="zone-card hero">
+      <div class="section-head">
+        <p class="eyebrow">TYPED RELATIONSHIPS</p>
+        <h2>How this entity connects.</h2>
+        <p class="lede">Each connection has an explicit predicate and a human-readable statement.</p>
+      </div>
+      <div class="card-grid card-grid--two">
+        
+          <article class="panel">
+            <p class="card__meta">evidence</p>
+            <div class="stack">
+              
+                  <div class="panel panel--soft">
+                    <p class="card__meta">Documents</p>
+                    <h3 class="card__title"><a href="/knowledge/concepts/event-driven-architecture/">Event-Driven Architecture</a></h3>
+                    <p class="card__copy">Event-Driven Architecture and Event Streams documents event-driven system design.</p>
+                  </div>
+                  <div class="panel panel--soft">
+                    <p class="card__meta">Documents</p>
+                    <h3 class="card__title"><a href="/knowledge/concepts/contextual-execution/">Contextual Execution</a></h3>
+                    <p class="card__copy">Event-Driven Architecture and Event Streams connects event propagation to contextual execution.</p>
+                  </div>
+                  <div class="panel panel--soft">
+                    <p class="card__meta">Documents</p>
+                    <h3 class="card__title"><a href="/knowledge/concepts/graph-runtime/">Graph Runtime</a></h3>
+                    <p class="card__copy">Event-Driven Architecture and Event Streams explains event flow inside graph runtimes.</p>
+                  </div>
+                  <div class="panel panel--soft">
+                    <p class="card__meta">Documents</p>
+                    <h3 class="card__title"><a href="/programs/vaste/">VASTE</a></h3>
+                    <p class="card__copy">Event-Driven Architecture and Event Streams uses VASTE as an applied event-propagation context.</p>
+                  </div>
+            </div>
+          </article>
+          <article class="panel">
+            <p class="card__meta">implementation</p>
+            <div class="stack">
+              
+                  <div class="panel panel--soft">
+                    <p class="card__meta">Uses technology</p>
+                    <h3 class="card__title"><a href="/knowledge/technologies/cloudevents/">CloudEvents</a></h3>
+                    <p class="card__copy">Event-Driven Architecture and Event Streams uses CloudEvents as an interoperable event-envelope reference.</p>
+                  </div>
+            </div>
+          </article>
+          <article class="panel">
+            <p class="card__meta">structure</p>
+            <div class="stack">
+              
+                  <div class="panel panel--soft">
+                    <p class="card__meta">Has part</p>
+                    <h3 class="card__title"><a href="/archive/collections/knowledge-hub-third-wave/">Knowledge Hub Third Wave</a></h3>
+                    <p class="card__copy">Knowledge Hub Third Wave includes Event-Driven Architecture and Event Streams.</p>
+                  </div>
+            </div>
+          </article>
+      </div>
+    </section>
+  <section class="zone-card hero">
+    <section class="panel knowledge-panel" data-local-graph data-graph-src="/graph/neighborhoods/publication/event-driven-architecture-and-event-streams.json">
+      <div class="section-head">
+        <p class="card__meta">Local graph</p>
+        <h2 class="card__title">6 typed connections</h2>
+        <p class="card__copy">The accessible relationship list above contains the complete local graph. Interactive rendering is loaded progressively.</p>
+      </div>
+    </section></section>
+</main>
+    <footer><div class="shell-footer zone-card">
+  <div class="footer-stack">
+    <strong class="footer-brand">
+      <span class="brand-name-brand">electronic</span><span class="brand-name-accent">Artefacts</span>
+    </strong>
+    <span>Creative technology studio: client systems, proprietary platforms, research and artistic publishing.</span>
+    <nav class="footer-links" aria-label="Quick links">
+      <a class="tag" href="/index.html">HOME</a>
+      <a class="tag" href="/work.html">WORK</a>
+      <a class="tag" href="/projects.html">PROJECTS</a>
+      <a class="tag" href="/programs.html">PROGRAMS</a>
+      <a class="tag" href="/research.html">RESEARCH</a>
+      <a class="tag" href="/knowledge/">KNOWLEDGE</a>
+      <a class="tag" href="/publications/">PUBLICATIONS</a>
+      <a class="tag" href="/archive.html">ARCHIVE</a>
+      <a class="tag" href="/about.html">ABOUT</a>
+      <a class="tag" href="/contact.html">CONTACT</a>
+      <a class="tag" href="/search/">SEARCH</a>
+      <a class="tag" href="/mentions-legales.html">LEGAL</a>
+      <a class="tag" href="/confidentialite.html">PRIVACY</a>
+      <a class="tag" href="https://www.vaste.space/" target="_blank" rel="noreferrer">VASTE</a>
+    </nav>
+  </div>
+  <div class="footer-stack footer-stack--right">
+    <span class="footer-note">Edition 2026</span>
+    <span class="footer-note">© <span id="current-year"></span></span>
+  </div>
+</div>
+</footer>
+  </body>
+</html>

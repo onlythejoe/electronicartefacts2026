@@ -1,0 +1,34 @@
+{
+  "id": "local:ea:technology:redis-streams",
+  "kind": "local",
+  "focus": "ea:technology:redis-streams",
+  "nodes": [
+    {
+      "id": "ea:publication:redis-streams-for-orchestration",
+      "type": "publication",
+      "title": "Redis Streams for Orchestration",
+      "route": "/publications/redis-streams-for-orchestration/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:technology:redis-streams",
+      "type": "technology",
+      "title": "Redis Streams",
+      "route": "/knowledge/technologies/redis-streams/",
+      "status": "active",
+      "confidence": "canonical"
+    }
+  ],
+  "edges": [
+    {
+      "id": "ear:redis-streams-article-uses-redis-streams",
+      "source": "ea:publication:redis-streams-for-orchestration",
+      "target": "ea:technology:redis-streams",
+      "predicate": "usesTechnology",
+      "label": "Uses technology",
+      "statement": "Redis Streams for Orchestration documents Redis Streams as its implementation primitive.",
+      "confidence": "published"
+    }
+  ]
+}

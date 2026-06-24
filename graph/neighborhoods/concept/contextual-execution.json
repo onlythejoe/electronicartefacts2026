@@ -20,10 +20,34 @@
       "confidence": "published"
     },
     {
+      "id": "ea:publication:ai-agents-vs-ai-workflows",
+      "type": "publication",
+      "title": "AI Agents vs AI Workflows",
+      "route": "/publications/ai-agents-vs-ai-workflows/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
       "id": "ea:publication:contextual-execution-and-graph-runtimes",
       "type": "publication",
       "title": "Contextual Execution and Graph Runtimes",
       "route": "/publications/contextual-execution-and-graph-runtimes/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:event-driven-architecture-and-event-streams",
+      "type": "publication",
+      "title": "Event-Driven Architecture and Event Streams",
+      "route": "/publications/event-driven-architecture-and-event-streams/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:runtime-engines-and-domain-operating-systems",
+      "type": "publication",
+      "title": "Runtime Engines and Domain Operating Systems",
+      "route": "/publications/runtime-engines-and-domain-operating-systems/",
       "status": "active",
       "confidence": "published"
     },
@@ -62,6 +86,33 @@
       "predicate": "documents",
       "label": "Documents",
       "statement": "Contextual Execution and Graph Runtimes documents contextual execution as a runtime principle.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:agents-article-documents-contextual-execution",
+      "source": "ea:publication:ai-agents-vs-ai-workflows",
+      "target": "ea:concept:contextual-execution",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "AI Agents vs AI Workflows connects agent permissions to contextual execution.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:event-architecture-article-documents-contextual-execution",
+      "source": "ea:publication:event-driven-architecture-and-event-streams",
+      "target": "ea:concept:contextual-execution",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Event-Driven Architecture and Event Streams connects event propagation to contextual execution.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:domain-os-article-documents-contextual-execution",
+      "source": "ea:publication:runtime-engines-and-domain-operating-systems",
+      "target": "ea:concept:contextual-execution",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Runtime Engines and Domain Operating Systems explains capability evaluation through contextual execution.",
       "confidence": "published"
     }
   ]

@@ -1,0 +1,34 @@
+{
+  "id": "local:ea:concept:open-weight-model",
+  "kind": "local",
+  "focus": "ea:concept:open-weight-model",
+  "nodes": [
+    {
+      "id": "ea:concept:open-weight-model",
+      "type": "concept",
+      "title": "Open-Weight Model",
+      "route": "/knowledge/concepts/open-weight-model/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:publication:local-and-open-source-ai-systems",
+      "type": "publication",
+      "title": "Local and Open Source AI Systems",
+      "route": "/publications/local-and-open-source-ai-systems/",
+      "status": "active",
+      "confidence": "published"
+    }
+  ],
+  "edges": [
+    {
+      "id": "ear:local-ai-article-documents-open-weight-model",
+      "source": "ea:publication:local-and-open-source-ai-systems",
+      "target": "ea:concept:open-weight-model",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Local and Open Source AI Systems documents the distinction between open-weight and open-source models.",
+      "confidence": "published"
+    }
+  ]
+}

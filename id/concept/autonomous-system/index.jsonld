@@ -1,0 +1,47 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://electronicartefacts.com/knowledge/concepts/autonomous-system/#webpage",
+      "url": "https://electronicartefacts.com/knowledge/concepts/autonomous-system/",
+      "name": "Autonomous System",
+      "mainEntity": {
+        "@id": "https://electronicartefacts.com/id/concept/autonomous-system/"
+      },
+      "isPartOf": {
+        "@id": "https://electronicartefacts.com/#website"
+      }
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://electronicartefacts.com/id/concept/autonomous-system/",
+      "name": "Autonomous System",
+      "description": "An autonomous system can perceive relevant state, select actions and adapt behavior toward objectives with limited direct human control during operation.",
+      "url": "https://electronicartefacts.com/knowledge/concepts/autonomous-system/",
+      "dateCreated": "2026-06-24",
+      "datePublished": "2026-06-24",
+      "dateModified": "2026-06-24",
+      "publisher": {
+        "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Electronic Artefacts",
+          "item": "https://electronicartefacts.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Autonomous System",
+          "item": "https://electronicartefacts.com/knowledge/concepts/autonomous-system/"
+        }
+      ]
+    }
+  ]
+}

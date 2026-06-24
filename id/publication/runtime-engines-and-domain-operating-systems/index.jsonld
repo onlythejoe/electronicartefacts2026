@@ -1,0 +1,68 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://electronicartefacts.com/publications/runtime-engines-and-domain-operating-systems/#webpage",
+      "url": "https://electronicartefacts.com/publications/runtime-engines-and-domain-operating-systems/",
+      "name": "Runtime Engines and Domain Operating Systems",
+      "mainEntity": {
+        "@id": "https://electronicartefacts.com/id/publication/runtime-engines-and-domain-operating-systems/"
+      },
+      "isPartOf": {
+        "@id": "https://electronicartefacts.com/#website"
+      }
+    },
+    {
+      "@type": "TechArticle",
+      "@id": "https://electronicartefacts.com/id/publication/runtime-engines-and-domain-operating-systems/",
+      "name": "Runtime Engines and Domain Operating Systems",
+      "description": "A systems-level guide to runtime engines, domain operating systems, identity, state, permissions, events, extensions and public projections.",
+      "url": "https://electronicartefacts.com/publications/runtime-engines-and-domain-operating-systems/",
+      "dateCreated": "2026-06-24",
+      "datePublished": "2026-06-24",
+      "dateModified": "2026-06-24",
+      "publisher": {
+        "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
+      },
+      "citation": "Electronic Artefacts. \"Runtime Engines and Domain Operating Systems.\" Technical article, version 1.0.0, 2026.",
+      "about": [
+        {
+          "@id": "https://electronicartefacts.com/id/concept/domain-operating-system/"
+        },
+        {
+          "@id": "https://electronicartefacts.com/id/concept/graph-runtime/"
+        },
+        {
+          "@id": "https://electronicartefacts.com/id/concept/contextual-execution/"
+        },
+        {
+          "@id": "https://electronicartefacts.com/id/concept/event-driven-architecture/"
+        },
+        {
+          "@id": "https://electronicartefacts.com/id/program/vaste/"
+        },
+        {
+          "@id": "https://electronicartefacts.com/id/project/vestiges/"
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Electronic Artefacts",
+          "item": "https://electronicartefacts.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Runtime Engines and Domain Operating Systems",
+          "item": "https://electronicartefacts.com/publications/runtime-engines-and-domain-operating-systems/"
+        }
+      ]
+    }
+  ]
+}

@@ -58,6 +58,14 @@
       "route": "/publications/procedural-graphics-shaders-and-visual-systems/",
       "status": "active",
       "confidence": "published"
+    },
+    {
+      "id": "ea:publication:systems-thinking-for-creative-practice",
+      "type": "publication",
+      "title": "Systems Thinking for Creative Practice",
+      "route": "/publications/systems-thinking-for-creative-practice/",
+      "status": "active",
+      "confidence": "published"
     }
   ],
   "edges": [
@@ -113,6 +121,15 @@
       "predicate": "documents",
       "label": "Documents",
       "statement": "Generative AI, Latent Space and Creative Workflows situates generative AI within the broader generative systems lineage.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:systems-thinking-article-documents-generative-system",
+      "source": "ea:publication:systems-thinking-for-creative-practice",
+      "target": "ea:concept:generative-system",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Systems Thinking for Creative Practice explains constraints and emergence in generative systems.",
       "confidence": "published"
     }
   ]

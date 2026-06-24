@@ -6566,7 +6566,7 @@ body.is-header-hidden .shell-header.zone-card {
 }
 
 [data-entry-id="vestiges"] {
-  --project-rgb: 245, 158, 11;
+  --project-rgb: 34, 34, 32;
 }
 
 [data-entry-id="unionmob"] {
@@ -6842,6 +6842,192 @@ img[src*="unionmob-logo.svg"] {
 
 [data-entry-id="oeil-de-meg"][data-card-media="true"] .card-signal span {
   background: rgba(34, 32, 28, calc(0.14 + (var(--signal-index, 0) * 0.03)));
+}
+
+.project-card[data-entry-id="vestiges"],
+.selected-works-card[data-entry-id="vestiges"],
+.project-index-card[data-entry-id="vestiges"] {
+  border-color: rgba(27, 26, 24, 0.12);
+  background:
+    radial-gradient(circle at 90% 0%, rgba(27, 26, 24, 0.045), transparent 28%),
+    linear-gradient(180deg, #ffffff, #f4f3ef);
+  color: #1b1a18;
+  box-shadow:
+    0 18px 40px rgba(24, 20, 16, 0.08),
+    0 0 0 1px rgba(255, 255, 255, 0.55);
+}
+
+.project-card[data-entry-id="vestiges"][data-card-media="true"]::before,
+.selected-works-card[data-entry-id="vestiges"][data-card-media="true"]::before,
+.project-index-card[data-entry-id="vestiges"][data-card-media="true"]::before {
+  display: none;
+}
+
+.project-card[data-entry-id="vestiges"]::after,
+.selected-works-card[data-entry-id="vestiges"]::after,
+.project-index-card[data-entry-id="vestiges"]::after {
+  background:
+    linear-gradient(135deg, rgba(27, 26, 24, 0.04), transparent 42%),
+    radial-gradient(circle at var(--pointer-x, 50%) var(--pointer-y, 0%), rgba(27, 26, 24, 0.065), transparent 34%);
+}
+
+[data-entry-id="vestiges"] .card__title,
+[data-entry-id="vestiges"] .card__copy,
+[data-entry-id="vestiges"] .card__meta,
+[data-entry-id="vestiges"] .selected-works-card__subtitle,
+[data-entry-id="vestiges"] .metadata-row dd {
+  color: #1b1a18;
+  text-shadow: none;
+}
+
+[data-entry-id="vestiges"] .project-card__top {
+  border-bottom-color: rgba(27, 26, 24, 0.1);
+}
+
+[data-entry-id="vestiges"] .project-card__editorial-note {
+  border-color: rgba(27, 26, 24, 0.12);
+  background: rgba(27, 26, 24, 0.045);
+  color: #403c37;
+}
+
+[data-entry-id="vestiges"] .chip,
+[data-entry-id="vestiges"] .tag,
+[data-entry-id="vestiges"] .status-badge,
+[data-entry-id="vestiges"] .entity-badge,
+[data-entry-id="vestiges"] .metadata-row,
+[data-entry-id="vestiges"] .metric-pill {
+  border-color: rgba(27, 26, 24, 0.1);
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.92), rgba(241, 240, 235, 0.82)),
+    rgba(255, 255, 255, 0.78);
+  color: #1b1a18;
+}
+
+[data-entry-id="vestiges"] .metric-pill span,
+[data-entry-id="vestiges"] .metric-pill strong,
+[data-entry-id="vestiges"] .metric-pill em {
+  color: #1b1a18;
+}
+
+[data-entry-id="vestiges"] .card-media-plate {
+  border-color: rgba(27, 26, 24, 0.1);
+  background:
+    radial-gradient(circle at 50% 38%, #ffffff, transparent 42%),
+    linear-gradient(145deg, #faf9f6, #e8e6df);
+}
+
+[data-entry-id="vestiges"] .card-media-plate::after {
+  background:
+    linear-gradient(180deg, transparent 56%, rgba(12, 12, 12, 0.42)),
+    radial-gradient(circle at 18% 12%, rgba(27, 26, 24, 0.05), transparent 34%);
+}
+
+[data-entry-id="vestiges"] .card-media-plate img {
+  object-fit: contain;
+  padding: clamp(1.15rem, 4vw, 3rem);
+  filter: none;
+}
+
+body[data-entry-id="vestiges"] {
+  --project-rgb: 34, 34, 32;
+  --accent: #57534e;
+  --accent-soft: rgba(247, 244, 239, 0.16);
+}
+
+body[data-entry-id="vestiges"] .site-main {
+  background:
+    radial-gradient(circle at 82% 8%, rgba(247, 244, 239, 0.08), transparent 28rem),
+    radial-gradient(circle at 10% 58%, rgba(148, 143, 134, 0.08), transparent 32rem);
+}
+
+.detail-hero[data-entry-id="vestiges"] {
+  border-color: rgba(27, 26, 24, 0.12);
+  background:
+    radial-gradient(circle at 88% 0%, rgba(27, 26, 24, 0.055), transparent 28%),
+    linear-gradient(150deg, #ffffff, #f1f0eb);
+  color: #1b1a18;
+  box-shadow:
+    0 22px 54px rgba(0, 0, 0, 0.16),
+    0 0 0 1px rgba(255, 255, 255, 0.5) inset;
+}
+
+.detail-hero[data-entry-id="vestiges"] .display-title,
+.detail-hero[data-entry-id="vestiges"] .lede,
+.detail-hero[data-entry-id="vestiges"] .card__meta,
+.detail-hero[data-entry-id="vestiges"] .eyebrow,
+.detail-hero[data-entry-id="vestiges"] .project-dossier-breadcrumbs,
+.detail-hero[data-entry-id="vestiges"] .project-dossier-breadcrumbs a,
+.detail-hero[data-entry-id="vestiges"] .project-dossier-breadcrumbs span {
+  color: #1b1a18;
+  text-shadow: none;
+}
+
+.detail-hero[data-entry-id="vestiges"] .button--primary {
+  border-color: #1b1a18;
+  background: #1b1a18;
+  color: #ffffff;
+}
+
+.detail-hero[data-entry-id="vestiges"] .button--secondary {
+  border-color: rgba(27, 26, 24, 0.14);
+  background: rgba(27, 26, 24, 0.045);
+  color: #1b1a18;
+}
+
+.detail-hero[data-entry-id="vestiges"] .project-dossier-nav {
+  border-top-color: rgba(27, 26, 24, 0.1);
+}
+
+body[data-entry-id="vestiges"] .panel,
+body[data-entry-id="vestiges"] .project-command__panel,
+body[data-entry-id="vestiges"] .project-dossier-body {
+  border-color: rgba(27, 26, 24, 0.11);
+  background:
+    radial-gradient(circle at 94% 0%, rgba(27, 26, 24, 0.035), transparent 28%),
+    linear-gradient(180deg, #ffffff, #f4f3ef);
+  color: #1b1a18;
+  box-shadow:
+    0 16px 36px rgba(0, 0, 0, 0.08),
+    0 0 0 1px rgba(255, 255, 255, 0.45) inset;
+}
+
+body[data-entry-id="vestiges"] .panel .card__title,
+body[data-entry-id="vestiges"] .panel .card__copy,
+body[data-entry-id="vestiges"] .panel .card__meta,
+body[data-entry-id="vestiges"] .panel .lede,
+body[data-entry-id="vestiges"] .project-command__panel .card__title,
+body[data-entry-id="vestiges"] .project-command__panel .card__copy,
+body[data-entry-id="vestiges"] .project-command__panel .card__meta,
+body[data-entry-id="vestiges"] .project-command__panel .lede,
+body[data-entry-id="vestiges"] .project-dossier-body h2,
+body[data-entry-id="vestiges"] .project-dossier-body h3,
+body[data-entry-id="vestiges"] .project-dossier-body p,
+body[data-entry-id="vestiges"] .project-dossier-body li,
+body[data-entry-id="vestiges"] .project-list,
+body[data-entry-id="vestiges"] .project-process__item p,
+body[data-entry-id="vestiges"] .project-snapshot dt,
+body[data-entry-id="vestiges"] .project-snapshot dd,
+body[data-entry-id="vestiges"] .project-moodboard__swatch strong {
+  color: #1b1a18;
+}
+
+body[data-entry-id="vestiges"] .project-snapshot div {
+  border-top-color: rgba(27, 26, 24, 0.1);
+}
+
+body[data-entry-id="vestiges"] .panel .chip,
+body[data-entry-id="vestiges"] .panel .tag,
+body[data-entry-id="vestiges"] .project-command__panel .chip,
+body[data-entry-id="vestiges"] .project-command__panel .tag {
+  border-color: rgba(27, 26, 24, 0.1);
+  background: rgba(27, 26, 24, 0.045);
+  color: #1b1a18;
+}
+
+body[data-entry-id="vestiges"] .project-process__marker {
+  border-color: rgba(27, 26, 24, 0.14);
+  background: #1b1a18;
+  color: #ffffff;
 }
 
 [data-page="projects"] .project-index-card[data-entry-id="oeil-de-meg"][data-card-media="true"] {

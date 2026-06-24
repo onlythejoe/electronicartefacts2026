@@ -1,0 +1,47 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://electronicartefacts.com/knowledge/technologies/llama-cpp/#webpage",
+      "url": "https://electronicartefacts.com/knowledge/technologies/llama-cpp/",
+      "name": "llama.cpp",
+      "mainEntity": {
+        "@id": "https://electronicartefacts.com/id/technology/llama-cpp/"
+      },
+      "isPartOf": {
+        "@id": "https://electronicartefacts.com/#website"
+      }
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://electronicartefacts.com/id/technology/llama-cpp/",
+      "name": "llama.cpp",
+      "description": "llama.cpp is an open-source C and C++ inference runtime for running large language models across consumer and server hardware.",
+      "url": "https://electronicartefacts.com/knowledge/technologies/llama-cpp/",
+      "dateCreated": "2026-06-24",
+      "datePublished": "2026-06-24",
+      "dateModified": "2026-06-24",
+      "publisher": {
+        "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Electronic Artefacts",
+          "item": "https://electronicartefacts.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "llama.cpp",
+          "item": "https://electronicartefacts.com/knowledge/technologies/llama-cpp/"
+        }
+      ]
+    }
+  ]
+}

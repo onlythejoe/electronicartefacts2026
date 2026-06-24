@@ -1,0 +1,80 @@
+{
+  "id": "ea:concept:large-language-model",
+  "type": "concept",
+  "slug": {
+    "canonical": "large-language-model"
+  },
+  "title": "Large Language Model",
+  "alternateNames": [
+    "LLM"
+  ],
+  "definition": "A large language model is a parameterized machine-learning model trained to predict and generate sequences of tokens from statistical patterns learned across large text or multimodal corpora.",
+  "abstract": "Large language models combine tokenization, embeddings, transformer layers, attention, training objectives and probabilistic decoding to generate or transform language.",
+  "description": "A canonical definition of large language models, their operating principles, capabilities and limitations.",
+  "locale": "en",
+  "visibility": "public",
+  "publicationClass": "canonical",
+  "status": "active",
+  "maturity": "research",
+  "confidence": "canonical",
+  "version": {
+    "version": "1.0.0",
+    "createdAt": "2026-06-24",
+    "publishedAt": "2026-06-24",
+    "modifiedAt": "2026-06-24"
+  },
+  "authors": [
+    {
+      "id": "ea:organization:electronic-artefacts"
+    }
+  ],
+  "publisher": "ea:organization:electronic-artefacts",
+  "tags": [
+    "LLM",
+    "Transformer",
+    "Tokens",
+    "Inference",
+    "Language Models"
+  ],
+  "disciplines": [
+    "Artificial Intelligence",
+    "Machine Learning",
+    "Programming",
+    "Knowledge Systems"
+  ],
+  "sources": [
+    {
+      "title": "Attention Is All You Need",
+      "url": "https://arxiv.org/abs/1706.03762",
+      "author": "Ashish Vaswani et al.",
+      "publisher": "arXiv",
+      "publishedAt": "2017-06-12",
+      "accessedAt": "2026-06-24"
+    }
+  ],
+  "scope": [
+    "Tokenization",
+    "Embeddings",
+    "Transformer architecture",
+    "Pretraining and adaptation",
+    "Inference and decoding",
+    "Context windows"
+  ],
+  "exclusions": [
+    "A database that retrieves stored sentences without a learned generative model",
+    "A claim that generated text represents understanding, truth or agency by itself"
+  ],
+  "claims": [
+    "Large language models generate token sequences from learned probability distributions rather than retrieving a single memorized answer.",
+    "Model capability depends on architecture, data, training, inference configuration, tools and evaluation context."
+  ],
+  "bodyHtml": "<h2>Definition</h2>\n<p>A large language model is a learned system that estimates relationships between tokens and uses those estimates to continue, transform or classify sequences. The word “large” usually refers to some combination of parameter count, training data and computational scale rather than a strict threshold.</p>\n<h2>Operating model</h2>\n<p>Text is segmented into tokens, mapped into numerical representations and processed through repeated transformer layers. Attention mechanisms let the model weigh relationships between positions in the available context. During inference, the model produces a probability distribution over possible next tokens and a decoding strategy selects from that distribution.</p>\n<h2>Scope</h2>\n<p>The concept includes pretraining, supervised adaptation, preference optimization, prompting, context windows, tool use, retrieval augmentation, quantization and evaluation. It does not imply that every model has the same architecture or that text generation alone establishes factual reliability.</p>\n<h2>Electronic Artefacts position</h2>\n<p>Electronic Artefacts treats the LLM as one component inside a wider knowledge or creative system. Sources, retrieval, permissions, tools, interfaces, provenance and human review determine whether the model is useful and governable.</p>\n<h2>Limitations</h2>\n<p>Language models can produce plausible but unsupported statements, inherit dataset bias, lose information outside their context, expose sensitive inputs and behave differently under small prompt changes. Their outputs require evaluation appropriate to the domain.</p>\n<h2>References</h2>\n<p>See Vaswani et al., Retrieval-Augmented Generation, Generative AI, Provenance and Augmented Intelligence.</p>\n",
+  "headings": [
+    "Definition",
+    "Operating model",
+    "Scope",
+    "Electronic Artefacts position",
+    "Limitations",
+    "References"
+  ]
+}

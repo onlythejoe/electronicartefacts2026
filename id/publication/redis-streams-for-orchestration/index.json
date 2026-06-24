@@ -1,0 +1,125 @@
+{
+  "id": "ea:publication:redis-streams-for-orchestration",
+  "type": "publication",
+  "slug": {
+    "canonical": "redis-streams-for-orchestration"
+  },
+  "title": "Redis Streams for Orchestration",
+  "subtitle": "Technical Article",
+  "abstract": "An implementation-oriented guide to Redis Streams, consumer groups, acknowledgements, pending entries, retries, idempotency, trimming and orchestration boundaries.",
+  "description": "Learn how Redis Streams works and how to use consumer groups, pending entries and idempotent workers for reliable orchestration.",
+  "locale": "en",
+  "visibility": "public",
+  "publicationClass": "published",
+  "status": "active",
+  "maturity": "research",
+  "confidence": "published",
+  "version": {
+    "version": "1.0.0",
+    "createdAt": "2026-06-24",
+    "publishedAt": "2026-06-24",
+    "modifiedAt": "2026-06-24"
+  },
+  "authors": [
+    {
+      "id": "ea:organization:electronic-artefacts"
+    }
+  ],
+  "publisher": "ea:organization:electronic-artefacts",
+  "tags": [
+    "Redis Streams",
+    "Orchestration",
+    "Consumer Groups",
+    "Event Processing",
+    "Idempotency"
+  ],
+  "disciplines": [
+    "Software Architecture",
+    "Distributed Systems",
+    "Programming",
+    "Systems Design"
+  ],
+  "sources": [
+    {
+      "title": "Redis Streams",
+      "url": "https://redis.io/docs/latest/develop/data-types/streams/",
+      "publisher": "Redis",
+      "accessedAt": "2026-06-24"
+    },
+    {
+      "title": "XREADGROUP",
+      "url": "https://redis.io/docs/latest/commands/xreadgroup/",
+      "publisher": "Redis",
+      "accessedAt": "2026-06-24"
+    },
+    {
+      "title": "XAUTOCLAIM",
+      "url": "https://redis.io/docs/latest/commands/xautoclaim/",
+      "publisher": "Redis",
+      "accessedAt": "2026-06-24"
+    }
+  ],
+  "format": "technicalArticle",
+  "subjects": [
+    {
+      "id": "ea:technology:redis-streams"
+    },
+    {
+      "id": "ea:concept:event-driven-architecture"
+    },
+    {
+      "id": "ea:concept:contextual-execution"
+    },
+    {
+      "id": "ea:program:vaste"
+    }
+  ],
+  "claims": [
+    "Redis Streams provides a useful append-only log and consumer-group primitive for bounded orchestration.",
+    "Reliable Redis Streams workers require explicit acknowledgement, recovery, idempotency, retention and monitoring policies."
+  ],
+  "evidence": [
+    {
+      "id": "ea:technology:redis-streams"
+    },
+    {
+      "id": "ea:concept:event-driven-architecture"
+    }
+  ],
+  "citation": {
+    "preferred": "Electronic Artefacts. \"Redis Streams for Orchestration.\" Technical article, version 1.0.0, 2026."
+  },
+  "bodyHtml": "<h2>Problem</h2>\n<p>Teams need durable background processing and event distribution without always operating a large streaming platform. Simple queues may lose history, while Redis Streams is frequently adopted without a clear acknowledgement, recovery or retention model.</p>\n<h2>Introduction</h2>\n<p>Redis Streams is a Redis data type for append-only sequences of entries. Each entry receives an ordered identifier and stores field-value data. Clients can read ranges, block for new entries, retain history and coordinate workers through consumer groups.</p>\n<p>This makes Streams useful for event processing, task distribution, projections and lightweight orchestration. It occupies a space between simple Redis lists or Pub/Sub and larger log platforms. Teams already operating Redis can add durable consumer state without introducing a separate broker immediately.</p>\n<p>The word orchestration needs qualification. Redis Streams can transport work and track delivery, but it does not by itself model long-running workflows, compensation, schedules or domain permissions. Reliable orchestration emerges from stream design, worker behavior, idempotency, persistence and observability around the primitive.</p>\n<h2>Stream model</h2>\n<p>A stream is identified by a Redis key. <code>XADD</code> appends an entry with an ID and fields. Redis can generate an ID based on milliseconds and sequence, producing values such as <code>1719230000000-0</code>. IDs provide ordering within the stream.</p>\n<p><code>XRANGE</code> and <code>XREVRANGE</code> read historical ranges. <code>XREAD</code> reads from one or more streams and can block until new entries arrive. This supports independent readers that maintain their own offsets.</p>\n<p>Entries are immutable after append in the normal usage model. The system can delete or trim entries, but changing an event in place undermines log semantics. Corrections should usually be represented by later entries.</p>\n<p>The payload is a flat field-value structure. Complex domain data can be serialized, but fields needed for routing or inspection should remain explicit.</p>\n<h2>Architecture</h2>\n<p>A production design includes stream keys, event envelopes, producers, consumer groups, pending-entry recovery, idempotent handlers, retry and dead-letter policy, persistence, trimming and monitoring.</p>\n<h2>Pub/Sub versus Streams</h2>\n<p>Redis Pub/Sub delivers messages to clients currently subscribed. It does not retain messages for disconnected consumers. It is useful for ephemeral notifications where loss is acceptable.</p>\n<p>Streams retain entries and let consumers resume from an ID. Consumer groups track delivery and pending work. This is the better primitive when processing must survive worker restarts or when history is useful.</p>\n<p>Neither guarantees that an external side effect occurs exactly once. Streams improve delivery tracking, while application design handles duplicate effects.</p>\n<p>Use Pub/Sub for transient fan-out such as live UI hints. Use Streams for durable tasks, integrations and rebuildable projections.</p>\n<h2>Consumer groups</h2>\n<p>A consumer group allows several workers to divide entries from one stream. <code>XGROUP CREATE</code> establishes the group and its starting position. <code>XREADGROUP</code> delivers new entries to consumers within the group.</p>\n<p>Each entry is assigned to one consumer and added to the group’s Pending Entries List until acknowledged. <code>XACK</code> removes it from pending state after successful processing.</p>\n<p>This model supports horizontal worker scaling. One group can update search while another independent group generates notifications. Each group receives the stream under its own progress state.</p>\n<p>Consumer names should represent stable worker identities during a process lifetime. Operational tooling needs to inspect active consumers, pending counts and idle time.</p>\n<h2>Acknowledgement</h2>\n<p>Acknowledgement should happen after the relevant work commits. A worker that acknowledges before writing to the database can lose work if it crashes. A worker that writes successfully and crashes before acknowledgement will receive or recover the entry again.</p>\n<p>This is why the handler must be idempotent. The stream can provide at-least-once processing behavior, but application state must tolerate repetition.</p>\n<p>Transactions or atomic scripts can coordinate Redis-side state, but they cannot atomically include arbitrary external services. Outbox patterns and idempotency keys help bridge those boundaries.</p>\n<p>Acknowledgement policy should be explicit in code review. Hidden automatic acknowledgement can produce silent loss.</p>\n<h2>Pending entries</h2>\n<p>The Pending Entries List records messages delivered but not acknowledged. <code>XPENDING</code> reports counts, consumers and idle information. This is the core recovery surface.</p>\n<p>A healthy system monitors pending age, not only pending count. A small number of old entries may indicate a poisoned task. A high count may reflect insufficient workers or a failed dependency.</p>\n<p>When a worker disappears, its entries remain pending. Another consumer can claim them after a suitable idle period. <code>XAUTOCLAIM</code> supports scanning and transferring stale pending entries.</p>\n<p>The idle threshold should exceed normal processing time. Claiming too early can cause two workers to perform the same long-running task concurrently.</p>\n<h2>Retry policy</h2>\n<p>Redis Streams does not impose a complete retry strategy. Applications decide when to retry, how often and where failed entries go.</p>\n<p>Transient failures can leave the entry pending and retry with backoff. Permanent failures should be recorded in a failure stream or database with original ID, error class and context. A dead-letter stream needs operators and replay tooling.</p>\n<p>Attempt count can be stored separately or derived from delivery information. The handler should classify failures instead of retrying invalid payloads forever.</p>\n<p>Retry delays are not native scheduled messages in the same sense as a workflow engine. Systems often combine Streams with sorted sets, delayed queues or external schedulers.</p>\n<h2>Idempotent workers</h2>\n<p>An idempotent worker associates a stable operation with the stream entry or domain command. Before performing a side effect, it checks whether that operation has already completed.</p>\n<p>Database uniqueness constraints are strong tools. A projection can upsert by entity ID and version. An email worker can store a delivery key. A file processor can record source checksum and transformation version.</p>\n<p>Do not rely only on in-memory deduplication. Worker restarts erase it. Redis keys with expiration can help for bounded windows, but permanent domain effects may require durable records.</p>\n<p>Idempotency also protects manual replay. Operators should be able to reprocess an entry without guessing whether it will duplicate irreversible work.</p>\n<h2>Stream design</h2>\n<p>One global stream simplifies transport but can create mixed payloads, noisy consumers and broad permissions. One stream per entity creates operational explosion. A useful middle ground groups events by domain or processing boundary.</p>\n<p>Examples include <code>knowledge-events</code>, <code>audio-analysis-jobs</code> and <code>public-projection-events</code>. Event type and entity ID remain fields within the stream.</p>\n<p>Ordering requirements influence partitioning. A single Redis Stream has one order, but multiple streams may be processed independently. If all events for one entity must remain ordered, route them consistently.</p>\n<p>Names should reflect ownership and retention. Avoid using environment or version details in ways that make migration difficult.</p>\n<h2>Payload and schema</h2>\n<p>Include event ID, type, occurred time, subject ID, schema version and correlation ID. Store the minimum payload needed for processing or reference a canonical record.</p>\n<p>Large documents and audio should not be embedded in stream entries. Store them in appropriate object storage and send a stable reference with checksum and access context.</p>\n<p>Schema validation belongs at both producer and consumer boundaries. Producers should not append malformed events. Consumers should reject unknown incompatible versions into a visible failure path.</p>\n<p>CloudEvents can provide a common envelope even when Redis Streams is the transport.</p>\n<h2>Retention and trimming</h2>\n<p>Streams grow until entries are deleted or trimmed. <code>MAXLEN</code> on <code>XADD</code> or <code>XTRIM</code> can cap approximate or exact length. Time-based retention may require periodic trimming by ID.</p>\n<p>Retention should follow recovery requirements. If a search projection may need a seven-day replay, retaining only one hour is insufficient. If the canonical database can rebuild everything, shorter retention may be acceptable.</p>\n<p>Trimming entries that remain pending can complicate recovery. Operational policy should consider consumer lag before deletion.</p>\n<p>Redis persistence configuration also matters. Append-only files, snapshots and replication affect durability. A stream retained in memory but not durably persisted is not an archive.</p>\n<h2>Redis durability</h2>\n<p>Redis can persist data through RDB snapshots, append-only files or both. Each configuration creates a different loss window and recovery profile. Replication improves availability but does not replace backup or prevent logical deletion.</p>\n<p>For critical events, understand what acknowledgement means relative to persistence and replication. A producer receiving success does not always imply the event has reached durable storage across failures.</p>\n<p>Redis Streams may be appropriate for orchestration while an authoritative event history remains in a database. The architecture should state which system is the source of truth.</p>\n<p>Do not present a convenient stream as permanent preservation unless durability has been designed and tested.</p>\n<h2>Backpressure</h2>\n<p>When producers outpace consumers, stream length and pending lag grow. Backpressure is the system’s response to that imbalance.</p>\n<p>Monitor entry rate, acknowledgement rate, pending age and memory. Scale workers where tasks are parallelizable. Limit producers or batch low-priority work. Protect downstream services with concurrency caps.</p>\n<p>Consumer groups distribute work, but more workers do not help when one database or model server is the bottleneck. Systems thinking is needed to locate the constraint.</p>\n<p>For AI workloads, model inference may be expensive. A stream can buffer tasks, while per-model concurrency limits keep latency and memory stable.</p>\n<h2>Orchestration pattern</h2>\n<p>A bounded orchestration can represent each state change as an event. A publication workflow might append <code>ArticleValidationRequested</code>. A worker validates content and appends <code>ArticleValidated</code> or <code>ArticleValidationFailed</code>. A projection updates status.</p>\n<p>The correlation ID connects events in one process. A state record holds the authoritative workflow status. The stream transports facts and tasks; it should not require reconstructing all business state from pending messages.</p>\n<p>Timeouts and human approvals need explicit services or scheduled checks. Redis Streams is not a complete durable workflow language.</p>\n<p>This separation keeps the design honest. Streams do what they do well: ordered append, blocking reads and consumer coordination.</p>\n<h2>VASTE application</h2>\n<p>VASTE could use Redis Streams as an event transport for graph changes and projection work. A validated relation event could trigger neighborhood regeneration, search indexing and cache invalidation.</p>\n<p>The event should include canonical entity IDs and context. Consumers can retrieve full records according to permissions. Public projection workers must never receive restricted payloads unnecessarily.</p>\n<p>Graph semantics remain in VASTE; delivery mechanics remain in Redis. This prevents transport technology from defining the domain model.</p>\n<p>If scale or retention requirements outgrow Redis Streams, stable event contracts make migration to another log easier.</p>\n<h2>AI and ORETH workloads</h2>\n<p>ORETH analysis jobs may involve long-running audio processing. A stream can distribute file references and analysis parameters to workers. Results become new records linked to source artefacts.</p>\n<p>Workers should record model or algorithm version, source checksum and output location. Idempotency can use the combination of source, analysis type and version.</p>\n<p>For local LLM tasks, a consumer group can feed one or more inference workers. Priority may require separate streams. Sensitive prompts should be referenced from controlled storage rather than copied into retained logs.</p>\n<p>Human review events can separate machine observation from published interpretation.</p>\n<h2>Monitoring</h2>\n<p>At minimum, monitor stream length, group lag, pending count, oldest pending age, consumer idle time, processing duration, retry rate and dead-letter count.</p>\n<p>Dashboards should connect infrastructure metrics to domain outcomes. How many articles await validation? How many audio analyses failed by model version? Which projection is stale?</p>\n<p>Alerts need actionable thresholds. A transient backlog during a batch import may be normal. An old pending entry in a publication pipeline may require immediate review.</p>\n<p>Periodic recovery drills should stop a worker mid-task, restart it and verify duplicate safety.</p>\n<h2>When Redis Streams is a good fit</h2>\n<p>Redis Streams is a good fit when a team already operates Redis, throughput is moderate, low latency matters and the stream model meets retention and replay needs. It works well for background jobs, real-time projections and service integration within one operational environment.</p>\n<p>A larger log platform may be preferable for very high throughput, long retention, many partitions, cross-team data products or mature stream processing ecosystems. A dedicated workflow engine may be preferable for long-running processes with timers, compensation and complex state.</p>\n<p>A database outbox plus simple worker may be enough for small systems. Architecture should follow requirements.</p>\n<h2>Common mistakes</h2>\n<p>The first mistake is treating <code>XREADGROUP</code> delivery as exactly-once execution.</p>\n<p>The second is acknowledging before side effects commit.</p>\n<p>The third is ignoring pending entries until memory grows.</p>\n<p>The fourth is trimming without considering lag and replay.</p>\n<p>The fifth is embedding large or sensitive payloads.</p>\n<p>The sixth is using Streams as the only workflow state.</p>\n<p>The seventh is adding consumers without observability or ownership.</p>\n<h2>Implementation checklist</h2>\n<p>Define stream and group names, event envelope and schema version. Establish producer validation. Implement idempotent handlers. Acknowledge after commit. Monitor pending age. Add bounded retries and a failure stream. Configure persistence, backup and retention. Test worker crashes and duplicate delivery.</p>\n<p>Document the source of truth and replay procedure. Record which events are safe to replay and which side effects require suppression.</p>\n<p>Start with one bounded workflow. Expand only after operations are reliable.</p>\n<h2>Implementation</h2>\n<p>Create a stream and consumer group, append versioned events, process with <code>XREADGROUP</code>, commit side effects idempotently and acknowledge afterward. Add <code>XPENDING</code> monitoring and <code>XAUTOCLAIM</code> recovery before increasing worker count.</p>\n<h2>Evidence</h2>\n<p>Redis documents Streams as an append-only log with blocking reads, range queries and consumer groups. The <code>XREADGROUP</code> and <code>XAUTOCLAIM</code> commands expose delivery and recovery behavior directly.</p>\n<h2>Limitations</h2>\n<p>Redis Streams is not a full workflow engine or permanent archive by default. Durability depends on Redis persistence, retention and deployment. Long-running timers, complex compensation or large-scale partitioned retention may require other systems.</p>\n<h2>Related concepts</h2>\n<p>Read <a href=\"/knowledge/concepts/event-driven-architecture/\">Event-Driven Architecture</a>, <a href=\"/knowledge/concepts/contextual-execution/\">Contextual Execution</a> and <a href=\"/knowledge/concepts/graph-runtime/\">Graph Runtime</a>.</p>\n<h2>Related technology</h2>\n<p>See <a href=\"/knowledge/technologies/redis-streams/\">Redis Streams</a> and <a href=\"/knowledge/technologies/cloudevents/\">CloudEvents</a>.</p>\n<h2>Related program</h2>\n<p>See <a href=\"/programs/vaste/\">VASTE</a>.</p>\n<h2>Glossary</h2>\n<p>Stream: an ordered append-only sequence of entries.</p>\n<p>Consumer group: a group that divides entries among named consumers.</p>\n<p>Pending Entries List: delivered entries not yet acknowledged.</p>\n<p>Acknowledgement: confirmation that a consumer completed processing.</p>\n<p>Claim: transfer of stale pending work to another consumer.</p>\n<p>Trimming: removal of old stream entries according to retention policy.</p>\n<h2>References</h2>\n<ul>\n<li>Redis. Redis Streams documentation.</li>\n<li>Redis. XREADGROUP command.</li>\n<li>Redis. XAUTOCLAIM command.</li>\n</ul>\n",
+  "headings": [
+    "Problem",
+    "Introduction",
+    "Stream model",
+    "Architecture",
+    "Pub/Sub versus Streams",
+    "Consumer groups",
+    "Acknowledgement",
+    "Pending entries",
+    "Retry policy",
+    "Idempotent workers",
+    "Stream design",
+    "Payload and schema",
+    "Retention and trimming",
+    "Redis durability",
+    "Backpressure",
+    "Orchestration pattern",
+    "VASTE application",
+    "AI and ORETH workloads",
+    "Monitoring",
+    "When Redis Streams is a good fit",
+    "Common mistakes",
+    "Implementation checklist",
+    "Implementation",
+    "Evidence",
+    "Limitations",
+    "Related concepts",
+    "Related technology",
+    "Related program",
+    "Glossary",
+    "References"
+  ]
+}

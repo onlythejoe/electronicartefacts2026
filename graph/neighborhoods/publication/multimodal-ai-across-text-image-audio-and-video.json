@@ -1,0 +1,102 @@
+{
+  "id": "local:ea:publication:multimodal-ai-across-text-image-audio-and-video",
+  "kind": "local",
+  "focus": "ea:publication:multimodal-ai-across-text-image-audio-and-video",
+  "nodes": [
+    {
+      "id": "ea:collection:knowledge-hub-third-wave",
+      "type": "collection",
+      "title": "Knowledge Hub Third Wave",
+      "route": "/archive/collections/knowledge-hub-third-wave/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:concept:multimodal-ai",
+      "type": "concept",
+      "title": "Multimodal AI",
+      "route": "/knowledge/concepts/multimodal-ai/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:concept:provenance",
+      "type": "concept",
+      "title": "Provenance",
+      "route": "/knowledge/concepts/provenance/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:program:oreth",
+      "type": "program",
+      "title": "ORETH",
+      "route": "/programs/oreth/",
+      "status": "prototype",
+      "confidence": "observed"
+    },
+    {
+      "id": "ea:project:palimpsests",
+      "type": "project",
+      "title": "Palimpsests",
+      "route": "/projects/palimpsests/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:multimodal-ai-across-text-image-audio-and-video",
+      "type": "publication",
+      "title": "Multimodal AI Across Text, Image, Audio and Video",
+      "route": "/publications/multimodal-ai-across-text-image-audio-and-video/",
+      "status": "active",
+      "confidence": "published"
+    }
+  ],
+  "edges": [
+    {
+      "id": "ear:multimodal-article-documents-multimodal-ai",
+      "source": "ea:publication:multimodal-ai-across-text-image-audio-and-video",
+      "target": "ea:concept:multimodal-ai",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Multimodal AI Across Text, Image, Audio and Video documents cross-modal architectures and evaluation.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:multimodal-article-documents-oreth",
+      "source": "ea:publication:multimodal-ai-across-text-image-audio-and-video",
+      "target": "ea:program:oreth",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Multimodal AI Across Text, Image, Audio and Video connects ORETH to audio and cross-modal analysis.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:multimodal-article-documents-palimpsests",
+      "source": "ea:publication:multimodal-ai-across-text-image-audio-and-video",
+      "target": "ea:project:palimpsests",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Multimodal AI Across Text, Image, Audio and Video uses Palimpsests as a compound media and provenance context.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:multimodal-article-documents-provenance",
+      "source": "ea:publication:multimodal-ai-across-text-image-audio-and-video",
+      "target": "ea:concept:provenance",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Multimodal AI Across Text, Image, Audio and Video documents provenance risks across generated media.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:knowledge-hub-third-wave-has-multimodal-article",
+      "source": "ea:collection:knowledge-hub-third-wave",
+      "target": "ea:publication:multimodal-ai-across-text-image-audio-and-video",
+      "predicate": "hasPart",
+      "label": "Has part",
+      "statement": "Knowledge Hub Third Wave includes Multimodal AI Across Text, Image, Audio and Video.",
+      "confidence": "published"
+    }
+  ]
+}

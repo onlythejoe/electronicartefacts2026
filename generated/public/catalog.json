@@ -75,6 +75,79 @@
       }
     },
     {
+      "id": "ea:collection:knowledge-hub-third-wave",
+      "legacyId": "knowledge-hub-third-wave",
+      "kind": "collection",
+      "type": "collection",
+      "title": "Knowledge Hub Third Wave",
+      "subtitle": "AI, Systems and Graph Computing",
+      "summary": "Knowledge Hub Third Wave groups a major expansion across LLMs, AI agents, local AI, RAG, multimodal systems, systems thinking, ontologies, graph modeling, event streams, Redis, microservices and domain runtimes.",
+      "description": "A curated Electronic Artefacts collection about durable AI and systems architecture.",
+      "status": "active",
+      "maturity": "research",
+      "confidence": "published",
+      "visibility": "public",
+      "publicationClass": "published",
+      "tags": [
+        "Knowledge Hub",
+        "Third Wave",
+        "Artificial Intelligence",
+        "Systems Architecture",
+        "Graph Computing"
+      ],
+      "discipline": [
+        "Artificial Intelligence",
+        "Systems Design",
+        "Knowledge Systems",
+        "Software Architecture",
+        "Creative Technology"
+      ],
+      "route": "/archive/collections/knowledge-hub-third-wave/",
+      "identifier": "/id/collection/knowledge-hub-third-wave/",
+      "temporality": {
+        "creationDate": "2026-06-24",
+        "lastUpdated": "2026-06-24",
+        "releaseDate": "2026-06-24",
+        "creationYear": "2026"
+      }
+    },
+    {
+      "id": "ea:concept:ai-agent",
+      "legacyId": "ai-agent",
+      "kind": "concept",
+      "type": "concept",
+      "title": "AI Agent",
+      "summary": "AI agents combine models, tools, memory, environmental feedback, stopping conditions, permissions and evaluation in an iterative action loop.",
+      "description": "A canonical definition distinguishing AI agents from fixed AI workflows and conventional automation.",
+      "definition": "An AI agent is a software system in which a model can select actions, use tools, observe results and adapt its next steps toward an objective within defined boundaries.",
+      "status": "active",
+      "maturity": "research",
+      "confidence": "validated",
+      "visibility": "public",
+      "publicationClass": "canonical",
+      "tags": [
+        "AI Agents",
+        "Tool Use",
+        "Automation",
+        "Orchestration",
+        "Human Oversight"
+      ],
+      "discipline": [
+        "Artificial Intelligence",
+        "Systems Design",
+        "Human Computer Interaction",
+        "Software Architecture"
+      ],
+      "route": "/knowledge/concepts/ai-agent/",
+      "identifier": "/id/concept/ai-agent/",
+      "temporality": {
+        "creationDate": "2026-06-24",
+        "lastUpdated": "2026-06-24",
+        "releaseDate": "2026-06-24",
+        "creationYear": "2026"
+      }
+    },
+    {
       "id": "ea:concept:algorithmic-composition",
       "legacyId": "algorithmic-composition",
       "kind": "concept",
@@ -137,6 +210,42 @@
       ],
       "route": "/knowledge/concepts/augmented-intelligence/",
       "identifier": "/id/concept/augmented-intelligence/",
+      "temporality": {
+        "creationDate": "2026-06-24",
+        "lastUpdated": "2026-06-24",
+        "releaseDate": "2026-06-24",
+        "creationYear": "2026"
+      }
+    },
+    {
+      "id": "ea:concept:autonomous-system",
+      "legacyId": "autonomous-system",
+      "kind": "concept",
+      "type": "concept",
+      "title": "Autonomous System",
+      "summary": "Autonomous systems combine sensing, models, planning, execution, feedback, constraints, governance and human intervention paths.",
+      "description": "A canonical definition connecting AI agents, robotics, runtime systems and responsible control.",
+      "definition": "An autonomous system can perceive relevant state, select actions and adapt behavior toward objectives with limited direct human control during operation.",
+      "status": "active",
+      "maturity": "research",
+      "confidence": "validated",
+      "visibility": "public",
+      "publicationClass": "canonical",
+      "tags": [
+        "Autonomous Systems",
+        "AI Agents",
+        "Feedback",
+        "Governance",
+        "Human Oversight"
+      ],
+      "discipline": [
+        "Artificial Intelligence",
+        "Robotics",
+        "Systems Design",
+        "Cybernetics"
+      ],
+      "route": "/knowledge/concepts/autonomous-system/",
+      "identifier": "/id/concept/autonomous-system/",
       "temporality": {
         "creationDate": "2026-06-24",
         "lastUpdated": "2026-06-24",
@@ -290,6 +399,42 @@
       }
     },
     {
+      "id": "ea:concept:domain-operating-system",
+      "legacyId": "domain-operating-system",
+      "kind": "concept",
+      "type": "concept",
+      "title": "Domain Operating System",
+      "summary": "A domain operating system turns repeated domain rules into reusable infrastructure without claiming to replace a general-purpose computer operating system.",
+      "description": "An Electronic Artefacts concept for business operating systems, runtime engines and shared domain platforms.",
+      "definition": "A domain operating system is a shared runtime and information layer that coordinates identities, entities, permissions, workflows, events and interfaces for a specific field of activity.",
+      "status": "active",
+      "maturity": "research",
+      "confidence": "observed",
+      "visibility": "public",
+      "publicationClass": "canonical",
+      "tags": [
+        "Domain OS",
+        "Business OS",
+        "Runtime Engine",
+        "Platform Architecture",
+        "Composability"
+      ],
+      "discipline": [
+        "Systems Design",
+        "Software Architecture",
+        "Programming",
+        "Knowledge Systems"
+      ],
+      "route": "/knowledge/concepts/domain-operating-system/",
+      "identifier": "/id/concept/domain-operating-system/",
+      "temporality": {
+        "creationDate": "2026-06-24",
+        "lastUpdated": "2026-06-24",
+        "releaseDate": "2026-06-24",
+        "creationYear": "2026"
+      }
+    },
+    {
       "id": "ea:concept:entity-identity",
       "legacyId": "entity-identity",
       "kind": "concept",
@@ -321,6 +466,42 @@
         "creationDate": "2026-06-23",
         "lastUpdated": "2026-06-23",
         "releaseDate": "2026-06-23",
+        "creationYear": "2026"
+      }
+    },
+    {
+      "id": "ea:concept:event-driven-architecture",
+      "legacyId": "event-driven-architecture",
+      "kind": "concept",
+      "type": "concept",
+      "title": "Event-Driven Architecture",
+      "summary": "Event-driven architecture connects event producers, brokers or logs, consumers, schemas, delivery semantics, projections and observability.",
+      "description": "A canonical definition of event-driven architecture for runtimes, workflows and distributed systems.",
+      "definition": "Event-driven architecture is a system design approach in which components publish, transport and react to records of state change rather than depending only on direct synchronous calls.",
+      "status": "active",
+      "maturity": "production",
+      "confidence": "canonical",
+      "visibility": "public",
+      "publicationClass": "canonical",
+      "tags": [
+        "Event-Driven Architecture",
+        "Event Streams",
+        "Messaging",
+        "Idempotency",
+        "Projections"
+      ],
+      "discipline": [
+        "Software Architecture",
+        "Systems Design",
+        "Programming",
+        "Distributed Systems"
+      ],
+      "route": "/knowledge/concepts/event-driven-architecture/",
+      "identifier": "/id/concept/event-driven-architecture/",
+      "temporality": {
+        "creationDate": "2026-06-24",
+        "lastUpdated": "2026-06-24",
+        "releaseDate": "2026-06-24",
         "creationYear": "2026"
       }
     },
@@ -393,6 +574,42 @@
         "creationDate": "2026-06-23",
         "lastUpdated": "2026-06-23",
         "releaseDate": "2026-06-23",
+        "creationYear": "2026"
+      }
+    },
+    {
+      "id": "ea:concept:graph-modeling",
+      "legacyId": "graph-modeling",
+      "kind": "concept",
+      "type": "concept",
+      "title": "Graph Modeling",
+      "summary": "Graph modeling makes many-to-many relationships, paths, provenance and evolving context explicit where folders and rigid trees obscure them.",
+      "description": "A canonical definition of graph modeling for knowledge, runtime and cultural systems.",
+      "definition": "Graph modeling represents a domain through addressable nodes, typed relationships and properties chosen to answer specific questions and support specific operations.",
+      "status": "active",
+      "maturity": "research",
+      "confidence": "canonical",
+      "visibility": "public",
+      "publicationClass": "canonical",
+      "tags": [
+        "Graph Modeling",
+        "Nodes",
+        "Relations",
+        "Domain Modeling",
+        "Knowledge Graph"
+      ],
+      "discipline": [
+        "Knowledge Systems",
+        "Systems Design",
+        "Information Architecture",
+        "Software Architecture"
+      ],
+      "route": "/knowledge/concepts/graph-modeling/",
+      "identifier": "/id/concept/graph-modeling/",
+      "temporality": {
+        "creationDate": "2026-06-24",
+        "lastUpdated": "2026-06-24",
+        "releaseDate": "2026-06-24",
         "creationYear": "2026"
       }
     },
@@ -572,6 +789,42 @@
       }
     },
     {
+      "id": "ea:concept:large-language-model",
+      "legacyId": "large-language-model",
+      "kind": "concept",
+      "type": "concept",
+      "title": "Large Language Model",
+      "summary": "Large language models combine tokenization, embeddings, transformer layers, attention, training objectives and probabilistic decoding to generate or transform language.",
+      "description": "A canonical definition of large language models, their operating principles, capabilities and limitations.",
+      "definition": "A large language model is a parameterized machine-learning model trained to predict and generate sequences of tokens from statistical patterns learned across large text or multimodal corpora.",
+      "status": "active",
+      "maturity": "research",
+      "confidence": "canonical",
+      "visibility": "public",
+      "publicationClass": "canonical",
+      "tags": [
+        "LLM",
+        "Transformer",
+        "Tokens",
+        "Inference",
+        "Language Models"
+      ],
+      "discipline": [
+        "Artificial Intelligence",
+        "Machine Learning",
+        "Programming",
+        "Knowledge Systems"
+      ],
+      "route": "/knowledge/concepts/large-language-model/",
+      "identifier": "/id/concept/large-language-model/",
+      "temporality": {
+        "creationDate": "2026-06-24",
+        "lastUpdated": "2026-06-24",
+        "releaseDate": "2026-06-24",
+        "creationYear": "2026"
+      }
+    },
+    {
       "id": "ea:concept:linked-data",
       "legacyId": "linked-data",
       "kind": "concept",
@@ -643,6 +896,40 @@
       }
     },
     {
+      "id": "ea:concept:microservice-architecture",
+      "legacyId": "microservice-architecture",
+      "kind": "concept",
+      "type": "concept",
+      "title": "Microservice Architecture",
+      "summary": "Microservices can improve independent evolution and scaling but add network, data, deployment, observability and organizational complexity.",
+      "description": "A canonical definition comparing microservices with modular monoliths and service-oriented systems.",
+      "definition": "Microservice architecture structures a software system as independently deployable services aligned with bounded capabilities and communicating through explicit contracts.",
+      "status": "active",
+      "maturity": "production",
+      "confidence": "validated",
+      "visibility": "public",
+      "publicationClass": "canonical",
+      "tags": [
+        "Microservices",
+        "Modular Monolith",
+        "Service Boundaries",
+        "Distributed Systems"
+      ],
+      "discipline": [
+        "Software Architecture",
+        "Systems Design",
+        "Programming"
+      ],
+      "route": "/knowledge/concepts/microservice-architecture/",
+      "identifier": "/id/concept/microservice-architecture/",
+      "temporality": {
+        "creationDate": "2026-06-24",
+        "lastUpdated": "2026-06-24",
+        "releaseDate": "2026-06-24",
+        "creationYear": "2026"
+      }
+    },
+    {
       "id": "ea:concept:motion-design",
       "legacyId": "motion-design",
       "kind": "concept",
@@ -678,6 +965,78 @@
       }
     },
     {
+      "id": "ea:concept:multimodal-ai",
+      "legacyId": "multimodal-ai",
+      "kind": "concept",
+      "type": "concept",
+      "title": "Multimodal AI",
+      "summary": "Multimodal AI connects representation learning, modality encoders, shared embedding spaces, generation, alignment and cross-modal interfaces.",
+      "description": "A canonical definition of multimodal AI for creative systems, archives and machine perception.",
+      "definition": "Multimodal AI describes systems that learn from, align, transform or generate more than one modality such as text, image, audio, video, sensor data or structured records.",
+      "status": "active",
+      "maturity": "research",
+      "confidence": "validated",
+      "visibility": "public",
+      "publicationClass": "canonical",
+      "tags": [
+        "Multimodal AI",
+        "Vision Language",
+        "Audio",
+        "Video",
+        "Cross-Modal Retrieval"
+      ],
+      "discipline": [
+        "Artificial Intelligence",
+        "Machine Learning",
+        "Digital Art",
+        "Audio Engineering"
+      ],
+      "route": "/knowledge/concepts/multimodal-ai/",
+      "identifier": "/id/concept/multimodal-ai/",
+      "temporality": {
+        "creationDate": "2026-06-24",
+        "lastUpdated": "2026-06-24",
+        "releaseDate": "2026-06-24",
+        "creationYear": "2026"
+      }
+    },
+    {
+      "id": "ea:concept:ontology",
+      "legacyId": "ontology",
+      "kind": "concept",
+      "type": "concept",
+      "title": "Ontology",
+      "summary": "Ontologies make domain meaning explicit and interoperable, while taxonomies organize concepts primarily through classification and hierarchy.",
+      "description": "A canonical definition distinguishing ontology, taxonomy, thesaurus and folksonomy.",
+      "definition": "In knowledge engineering, an ontology is an explicit specification of the kinds of entities, properties, relationships and constraints used to represent a domain.",
+      "status": "active",
+      "maturity": "research",
+      "confidence": "canonical",
+      "visibility": "public",
+      "publicationClass": "canonical",
+      "tags": [
+        "Ontology",
+        "Taxonomy",
+        "SKOS",
+        "OWL",
+        "Controlled Vocabulary"
+      ],
+      "discipline": [
+        "Knowledge Systems",
+        "Information Architecture",
+        "Philosophy",
+        "Semantic Web"
+      ],
+      "route": "/knowledge/concepts/ontology/",
+      "identifier": "/id/concept/ontology/",
+      "temporality": {
+        "creationDate": "2026-06-24",
+        "lastUpdated": "2026-06-24",
+        "releaseDate": "2026-06-24",
+        "creationYear": "2026"
+      }
+    },
+    {
       "id": "ea:concept:open-source",
       "legacyId": "open-source",
       "kind": "concept",
@@ -705,6 +1064,41 @@
       ],
       "route": "/knowledge/concepts/open-source/",
       "identifier": "/id/concept/open-source/",
+      "temporality": {
+        "creationDate": "2026-06-24",
+        "lastUpdated": "2026-06-24",
+        "releaseDate": "2026-06-24",
+        "creationYear": "2026"
+      }
+    },
+    {
+      "id": "ea:concept:open-weight-model",
+      "legacyId": "open-weight-model",
+      "kind": "concept",
+      "type": "concept",
+      "title": "Open-Weight Model",
+      "summary": "Open-weight models enable local inference and adaptation but must be distinguished from fully open-source AI systems.",
+      "description": "A canonical definition for local AI, model licensing and digital independence.",
+      "definition": "An open-weight model is a machine-learning model whose learned parameters are distributed for reuse under stated terms, without necessarily providing the training data, training code or freedoms required by open-source definitions.",
+      "status": "active",
+      "maturity": "research",
+      "confidence": "validated",
+      "visibility": "public",
+      "publicationClass": "canonical",
+      "tags": [
+        "Open Weights",
+        "Local AI",
+        "Model Licensing",
+        "Quantization"
+      ],
+      "discipline": [
+        "Artificial Intelligence",
+        "Open Source",
+        "Programming",
+        "Digital Independence"
+      ],
+      "route": "/knowledge/concepts/open-weight-model/",
+      "identifier": "/id/concept/open-weight-model/",
       "temporality": {
         "creationDate": "2026-06-24",
         "lastUpdated": "2026-06-24",
@@ -818,6 +1212,42 @@
       }
     },
     {
+      "id": "ea:concept:retrieval-augmented-generation",
+      "legacyId": "retrieval-augmented-generation",
+      "kind": "concept",
+      "type": "concept",
+      "title": "Retrieval-Augmented Generation",
+      "summary": "RAG connects search, embeddings, document segmentation, metadata, provenance, context assembly, language models and answer evaluation.",
+      "description": "A canonical definition of retrieval-augmented generation for knowledge systems and source-grounded AI.",
+      "definition": "Retrieval-augmented generation is an architecture that retrieves external information at query time and supplies selected evidence to a generative model before or during response production.",
+      "status": "active",
+      "maturity": "research",
+      "confidence": "canonical",
+      "visibility": "public",
+      "publicationClass": "canonical",
+      "tags": [
+        "RAG",
+        "Retrieval",
+        "Embeddings",
+        "Vector Search",
+        "Grounding"
+      ],
+      "discipline": [
+        "Artificial Intelligence",
+        "Knowledge Systems",
+        "Information Architecture",
+        "Machine Learning"
+      ],
+      "route": "/knowledge/concepts/retrieval-augmented-generation/",
+      "identifier": "/id/concept/retrieval-augmented-generation/",
+      "temporality": {
+        "creationDate": "2026-06-24",
+        "lastUpdated": "2026-06-24",
+        "releaseDate": "2026-06-24",
+        "creationYear": "2026"
+      }
+    },
+    {
       "id": "ea:concept:signal-archaeology",
       "legacyId": "signal-archaeology",
       "kind": "concept",
@@ -850,6 +1280,42 @@
         "creationDate": "2026-06-23",
         "lastUpdated": "2026-06-23",
         "releaseDate": "2026-06-23",
+        "creationYear": "2026"
+      }
+    },
+    {
+      "id": "ea:concept:systems-thinking",
+      "legacyId": "systems-thinking",
+      "kind": "concept",
+      "type": "concept",
+      "title": "Systems Thinking",
+      "summary": "Systems thinking helps creators and technologists understand why local interventions can produce indirect, delayed or counterintuitive effects.",
+      "description": "A canonical definition of systems thinking for creative practice, software architecture and organizational design.",
+      "definition": "Systems thinking is an approach that studies elements through their relationships, feedback, boundaries, delays, stocks, flows and patterns of behavior over time.",
+      "status": "active",
+      "maturity": "research",
+      "confidence": "canonical",
+      "visibility": "public",
+      "publicationClass": "canonical",
+      "tags": [
+        "Systems Thinking",
+        "Feedback",
+        "Boundaries",
+        "Leverage Points",
+        "Complexity"
+      ],
+      "discipline": [
+        "Systems Design",
+        "Cybernetics",
+        "Complexity",
+        "Design"
+      ],
+      "route": "/knowledge/concepts/systems-thinking/",
+      "identifier": "/id/concept/systems-thinking/",
+      "temporality": {
+        "creationDate": "2026-06-24",
+        "lastUpdated": "2026-06-24",
+        "releaseDate": "2026-06-24",
         "creationYear": "2026"
       }
     },
@@ -1073,9 +1539,9 @@
       "kind": "project",
       "type": "project",
       "title": "Vestiges",
-      "subtitle": "VASTE Flagship Knowledge Platform",
-      "summary": "Vestiges is a VASTE-powered knowledge infrastructure platform designed to map, preserve, connect, transmit and activate human know-how.",
-      "description": "The project applies graph-runtime architecture to culture, craft, institutions, materials, techniques, places and public knowledge pages.",
+      "subtitle": "Living Knowledge Infrastructure",
+      "summary": "Vestiges is the flagship VASTE platform for mapping, preserving and activating living know-how across people, practices, materials, places and institutions.",
+      "description": "A knowledge-first product where provenance, contribution, discovery and professional services grow from one historized graph.",
       "status": "development",
       "maturity": "prototype",
       "confidence": "observed",
@@ -1087,7 +1553,7 @@
         "Knowledge Graph",
         "Craft",
         "Culture",
-        "Platform"
+        "Cultural Infrastructure"
       ],
       "discipline": [
         "Technology",
@@ -1100,9 +1566,45 @@
       "identifier": "/id/project/vestiges/",
       "temporality": {
         "creationDate": "2025-01-01",
-        "lastUpdated": "2026-06-22",
+        "lastUpdated": "2026-06-24",
         "releaseDate": "2026-06-22",
         "creationYear": "2025"
+      }
+    },
+    {
+      "id": "ea:publication:ai-agents-vs-ai-workflows",
+      "legacyId": "ai-agents-vs-ai-workflows",
+      "kind": "publication",
+      "type": "publication",
+      "title": "AI Agents vs AI Workflows",
+      "subtitle": "Technical Article",
+      "summary": "A practical comparison of model-directed agents, deterministic workflows, hybrid orchestration, tool permissions, memory, evaluation and human oversight.",
+      "description": "Understand the difference between AI agents and AI workflows, when to use each architecture, and how to design reliable hybrid systems.",
+      "status": "active",
+      "maturity": "research",
+      "confidence": "published",
+      "visibility": "public",
+      "publicationClass": "published",
+      "tags": [
+        "AI Agents",
+        "AI Workflows",
+        "Orchestration",
+        "Tool Use",
+        "Automation"
+      ],
+      "discipline": [
+        "Artificial Intelligence",
+        "Systems Design",
+        "Software Architecture",
+        "Human Computer Interaction"
+      ],
+      "route": "/publications/ai-agents-vs-ai-workflows/",
+      "identifier": "/id/publication/ai-agents-vs-ai-workflows/",
+      "temporality": {
+        "creationDate": "2026-06-24",
+        "lastUpdated": "2026-06-24",
+        "releaseDate": "2026-06-24",
+        "creationYear": "2026"
       }
     },
     {
@@ -1248,6 +1750,42 @@
       }
     },
     {
+      "id": "ea:publication:event-driven-architecture-and-event-streams",
+      "legacyId": "event-driven-architecture-and-event-streams",
+      "kind": "publication",
+      "type": "publication",
+      "title": "Event-Driven Architecture and Event Streams",
+      "subtitle": "Technical Article",
+      "summary": "A practical explanation of events, commands, queues, logs, brokers, schemas, delivery semantics, idempotency, projections, replay and observability.",
+      "description": "Learn event-driven architecture through event streams, delivery guarantees, schema evolution, idempotency, projections and runtime design.",
+      "status": "active",
+      "maturity": "research",
+      "confidence": "published",
+      "visibility": "public",
+      "publicationClass": "published",
+      "tags": [
+        "Event-Driven Architecture",
+        "Event Streams",
+        "CloudEvents",
+        "Idempotency",
+        "Event Sourcing"
+      ],
+      "discipline": [
+        "Software Architecture",
+        "Systems Design",
+        "Distributed Systems",
+        "Programming"
+      ],
+      "route": "/publications/event-driven-architecture-and-event-streams/",
+      "identifier": "/id/publication/event-driven-architecture-and-event-streams/",
+      "temporality": {
+        "creationDate": "2026-06-24",
+        "lastUpdated": "2026-06-24",
+        "releaseDate": "2026-06-24",
+        "creationYear": "2026"
+      }
+    },
+    {
       "id": "ea:publication:foundational-lineage-001",
       "legacyId": "foundational-lineage-001",
       "kind": "publication",
@@ -1346,6 +1884,42 @@
         "creationDate": "2026-06-23",
         "lastUpdated": "2026-06-23",
         "releaseDate": "2026-06-23",
+        "creationYear": "2026"
+      }
+    },
+    {
+      "id": "ea:publication:how-large-language-models-actually-work",
+      "legacyId": "how-large-language-models-actually-work",
+      "kind": "publication",
+      "type": "publication",
+      "title": "How Large Language Models Actually Work",
+      "subtitle": "Technical Article",
+      "summary": "A grounded explanation of how large language models turn tokens into predictions through embeddings, transformer layers, attention, training and probabilistic inference.",
+      "description": "Learn how LLMs work, from tokenization and training to attention, context windows, decoding, hallucinations, tools and evaluation.",
+      "status": "active",
+      "maturity": "research",
+      "confidence": "published",
+      "visibility": "public",
+      "publicationClass": "published",
+      "tags": [
+        "LLM",
+        "Transformer",
+        "Attention",
+        "Tokenization",
+        "Inference"
+      ],
+      "discipline": [
+        "Artificial Intelligence",
+        "Machine Learning",
+        "Programming",
+        "Knowledge Systems"
+      ],
+      "route": "/publications/how-large-language-models-actually-work/",
+      "identifier": "/id/publication/how-large-language-models-actually-work/",
+      "temporality": {
+        "creationDate": "2026-06-24",
+        "lastUpdated": "2026-06-24",
+        "releaseDate": "2026-06-24",
         "creationYear": "2026"
       }
     },
@@ -1492,6 +2066,42 @@
       }
     },
     {
+      "id": "ea:publication:local-and-open-source-ai-systems",
+      "legacyId": "local-and-open-source-ai-systems",
+      "kind": "publication",
+      "type": "publication",
+      "title": "Local and Open Source AI Systems",
+      "subtitle": "Technical Article",
+      "summary": "A practical guide to local inference, open-weight models, open-source AI, quantization, hardware, privacy, licensing and operational independence.",
+      "description": "Understand local AI and open-source AI systems, including model weights, quantization, llama.cpp, privacy, hardware and licensing.",
+      "status": "active",
+      "maturity": "research",
+      "confidence": "published",
+      "visibility": "public",
+      "publicationClass": "published",
+      "tags": [
+        "Local AI",
+        "Open Source AI",
+        "Open Weights",
+        "Quantization",
+        "llama.cpp"
+      ],
+      "discipline": [
+        "Artificial Intelligence",
+        "Open Source",
+        "Programming",
+        "Systems Design"
+      ],
+      "route": "/publications/local-and-open-source-ai-systems/",
+      "identifier": "/id/publication/local-and-open-source-ai-systems/",
+      "temporality": {
+        "creationDate": "2026-06-24",
+        "lastUpdated": "2026-06-24",
+        "releaseDate": "2026-06-24",
+        "creationYear": "2026"
+      }
+    },
+    {
       "id": "ea:publication:metadata-cataloguing-and-cultural-memory",
       "legacyId": "metadata-cataloguing-and-cultural-memory",
       "kind": "publication",
@@ -1527,6 +2137,42 @@
       }
     },
     {
+      "id": "ea:publication:microservices-modular-monoliths-and-system-boundaries",
+      "legacyId": "microservices-modular-monoliths-and-system-boundaries",
+      "kind": "publication",
+      "type": "publication",
+      "title": "Microservices, Modular Monoliths and System Boundaries",
+      "subtitle": "Technical Article",
+      "summary": "A pragmatic comparison of microservices and modular monoliths through domain boundaries, data ownership, deployment, events, observability and team structure.",
+      "description": "Learn when microservices make sense, why modular monoliths are often the better starting point, and how to define durable system boundaries.",
+      "status": "active",
+      "maturity": "research",
+      "confidence": "published",
+      "visibility": "public",
+      "publicationClass": "published",
+      "tags": [
+        "Microservices",
+        "Modular Monolith",
+        "System Boundaries",
+        "Domain-Driven Design",
+        "Distributed Systems"
+      ],
+      "discipline": [
+        "Software Architecture",
+        "Systems Design",
+        "Programming",
+        "Distributed Systems"
+      ],
+      "route": "/publications/microservices-modular-monoliths-and-system-boundaries/",
+      "identifier": "/id/publication/microservices-modular-monoliths-and-system-boundaries/",
+      "temporality": {
+        "creationDate": "2026-06-24",
+        "lastUpdated": "2026-06-24",
+        "releaseDate": "2026-06-24",
+        "creationYear": "2026"
+      }
+    },
+    {
       "id": "ea:publication:motion-design-time-and-interface-semantics",
       "legacyId": "motion-design-time-and-interface-semantics",
       "kind": "publication",
@@ -1554,6 +2200,78 @@
       ],
       "route": "/publications/motion-design-time-and-interface-semantics/",
       "identifier": "/id/publication/motion-design-time-and-interface-semantics/",
+      "temporality": {
+        "creationDate": "2026-06-24",
+        "lastUpdated": "2026-06-24",
+        "releaseDate": "2026-06-24",
+        "creationYear": "2026"
+      }
+    },
+    {
+      "id": "ea:publication:multimodal-ai-across-text-image-audio-and-video",
+      "legacyId": "multimodal-ai-across-text-image-audio-and-video",
+      "kind": "publication",
+      "type": "publication",
+      "title": "Multimodal AI Across Text, Image, Audio and Video",
+      "subtitle": "Technical Article",
+      "summary": "A durable guide to multimodal AI architecture, shared representations, cross-modal retrieval, generation, temporal media, provenance and creative applications.",
+      "description": "Learn how multimodal AI connects text, images, audio and video, and how to evaluate cross-modal systems for creative and cultural use.",
+      "status": "active",
+      "maturity": "research",
+      "confidence": "published",
+      "visibility": "public",
+      "publicationClass": "published",
+      "tags": [
+        "Multimodal AI",
+        "Vision Language",
+        "Audio AI",
+        "Video AI",
+        "Cross-Modal Retrieval"
+      ],
+      "discipline": [
+        "Artificial Intelligence",
+        "Machine Learning",
+        "Digital Art",
+        "Audio Engineering"
+      ],
+      "route": "/publications/multimodal-ai-across-text-image-audio-and-video/",
+      "identifier": "/id/publication/multimodal-ai-across-text-image-audio-and-video/",
+      "temporality": {
+        "creationDate": "2026-06-24",
+        "lastUpdated": "2026-06-24",
+        "releaseDate": "2026-06-24",
+        "creationYear": "2026"
+      }
+    },
+    {
+      "id": "ea:publication:ontologies-taxonomies-and-knowledge-modeling",
+      "legacyId": "ontologies-taxonomies-and-knowledge-modeling",
+      "kind": "publication",
+      "type": "publication",
+      "title": "Ontologies, Taxonomies and Knowledge Modeling",
+      "subtitle": "Technical Article",
+      "summary": "A practical guide to taxonomies, thesauri, folksonomies, ontologies, controlled vocabularies, OWL, SKOS and sustainable semantic modeling.",
+      "description": "Understand the differences between taxonomies and ontologies and learn how to design a durable knowledge model without overengineering.",
+      "status": "active",
+      "maturity": "research",
+      "confidence": "published",
+      "visibility": "public",
+      "publicationClass": "published",
+      "tags": [
+        "Ontology",
+        "Taxonomy",
+        "SKOS",
+        "OWL",
+        "Knowledge Modeling"
+      ],
+      "discipline": [
+        "Knowledge Systems",
+        "Information Architecture",
+        "Semantic Web",
+        "Philosophy"
+      ],
+      "route": "/publications/ontologies-taxonomies-and-knowledge-modeling/",
+      "identifier": "/id/publication/ontologies-taxonomies-and-knowledge-modeling/",
       "temporality": {
         "creationDate": "2026-06-24",
         "lastUpdated": "2026-06-24",
@@ -1667,6 +2385,114 @@
       }
     },
     {
+      "id": "ea:publication:redis-streams-for-orchestration",
+      "legacyId": "redis-streams-for-orchestration",
+      "kind": "publication",
+      "type": "publication",
+      "title": "Redis Streams for Orchestration",
+      "subtitle": "Technical Article",
+      "summary": "An implementation-oriented guide to Redis Streams, consumer groups, acknowledgements, pending entries, retries, idempotency, trimming and orchestration boundaries.",
+      "description": "Learn how Redis Streams works and how to use consumer groups, pending entries and idempotent workers for reliable orchestration.",
+      "status": "active",
+      "maturity": "research",
+      "confidence": "published",
+      "visibility": "public",
+      "publicationClass": "published",
+      "tags": [
+        "Redis Streams",
+        "Orchestration",
+        "Consumer Groups",
+        "Event Processing",
+        "Idempotency"
+      ],
+      "discipline": [
+        "Software Architecture",
+        "Distributed Systems",
+        "Programming",
+        "Systems Design"
+      ],
+      "route": "/publications/redis-streams-for-orchestration/",
+      "identifier": "/id/publication/redis-streams-for-orchestration/",
+      "temporality": {
+        "creationDate": "2026-06-24",
+        "lastUpdated": "2026-06-24",
+        "releaseDate": "2026-06-24",
+        "creationYear": "2026"
+      }
+    },
+    {
+      "id": "ea:publication:retrieval-augmented-generation-and-knowledge-systems",
+      "legacyId": "retrieval-augmented-generation-and-knowledge-systems",
+      "kind": "publication",
+      "type": "publication",
+      "title": "Retrieval-Augmented Generation and Knowledge Systems",
+      "subtitle": "Technical Article",
+      "summary": "An end-to-end explanation of RAG architecture, ingestion, chunking, embeddings, hybrid retrieval, graphs, citations, permissions and evaluation.",
+      "description": "Learn how retrieval-augmented generation works and how to build source-grounded RAG systems with metadata, knowledge graphs and evaluation.",
+      "status": "active",
+      "maturity": "research",
+      "confidence": "published",
+      "visibility": "public",
+      "publicationClass": "published",
+      "tags": [
+        "RAG",
+        "Knowledge Graph",
+        "Vector Search",
+        "Embeddings",
+        "Citations"
+      ],
+      "discipline": [
+        "Artificial Intelligence",
+        "Knowledge Systems",
+        "Information Architecture",
+        "Machine Learning"
+      ],
+      "route": "/publications/retrieval-augmented-generation-and-knowledge-systems/",
+      "identifier": "/id/publication/retrieval-augmented-generation-and-knowledge-systems/",
+      "temporality": {
+        "creationDate": "2026-06-24",
+        "lastUpdated": "2026-06-24",
+        "releaseDate": "2026-06-24",
+        "creationYear": "2026"
+      }
+    },
+    {
+      "id": "ea:publication:runtime-engines-and-domain-operating-systems",
+      "legacyId": "runtime-engines-and-domain-operating-systems",
+      "kind": "publication",
+      "type": "publication",
+      "title": "Runtime Engines and Domain Operating Systems",
+      "subtitle": "Technical Article",
+      "summary": "A systems-level guide to runtime engines, domain operating systems, identity, state, permissions, events, extensions and public projections.",
+      "description": "Understand runtime engines and domain operating systems, and how shared entities, permissions and events can support many applications.",
+      "status": "active",
+      "maturity": "research",
+      "confidence": "published",
+      "visibility": "public",
+      "publicationClass": "published",
+      "tags": [
+        "Runtime Engine",
+        "Domain OS",
+        "Business OS",
+        "VASTE",
+        "Composable Systems"
+      ],
+      "discipline": [
+        "Systems Design",
+        "Software Architecture",
+        "Programming",
+        "Knowledge Systems"
+      ],
+      "route": "/publications/runtime-engines-and-domain-operating-systems/",
+      "identifier": "/id/publication/runtime-engines-and-domain-operating-systems/",
+      "temporality": {
+        "creationDate": "2026-06-24",
+        "lastUpdated": "2026-06-24",
+        "releaseDate": "2026-06-24",
+        "creationYear": "2026"
+      }
+    },
+    {
       "id": "ea:publication:signal-archaeology-audio-memory-and-machine-listening",
       "legacyId": "signal-archaeology-audio-memory-and-machine-listening",
       "kind": "publication",
@@ -1700,6 +2526,42 @@
         "creationDate": "2026-06-23",
         "lastUpdated": "2026-06-23",
         "releaseDate": "2026-06-23",
+        "creationYear": "2026"
+      }
+    },
+    {
+      "id": "ea:publication:systems-thinking-for-creative-practice",
+      "legacyId": "systems-thinking-for-creative-practice",
+      "kind": "publication",
+      "type": "publication",
+      "title": "Systems Thinking for Creative Practice",
+      "subtitle": "Research Article",
+      "summary": "A practical introduction to systems, boundaries, feedback, stocks, flows, delays, leverage points and their use in creative and technical work.",
+      "description": "Learn systems thinking through creative practice, software, studios and cultural projects, with practical mapping and intervention methods.",
+      "status": "active",
+      "maturity": "research",
+      "confidence": "published",
+      "visibility": "public",
+      "publicationClass": "published",
+      "tags": [
+        "Systems Thinking",
+        "Creative Practice",
+        "Feedback",
+        "Complexity",
+        "Leverage Points"
+      ],
+      "discipline": [
+        "Systems Design",
+        "Cybernetics",
+        "Complexity",
+        "Design"
+      ],
+      "route": "/publications/systems-thinking-for-creative-practice/",
+      "identifier": "/id/publication/systems-thinking-for-creative-practice/",
+      "temporality": {
+        "creationDate": "2026-06-24",
+        "lastUpdated": "2026-06-24",
+        "releaseDate": "2026-06-24",
         "creationYear": "2026"
       }
     },
@@ -1766,6 +2628,42 @@
       ],
       "route": "/publications/web-audio-and-browser-based-sound-systems/",
       "identifier": "/id/publication/web-audio-and-browser-based-sound-systems/",
+      "temporality": {
+        "creationDate": "2026-06-24",
+        "lastUpdated": "2026-06-24",
+        "releaseDate": "2026-06-24",
+        "creationYear": "2026"
+      }
+    },
+    {
+      "id": "ea:publication:why-graphs-are-more-powerful-than-folders",
+      "legacyId": "why-graphs-are-more-powerful-than-folders",
+      "kind": "publication",
+      "type": "publication",
+      "title": "Why Graphs Are More Powerful Than Folders",
+      "subtitle": "Technical Article",
+      "summary": "A practical comparison of hierarchical folders and graph models for knowledge, projects, archives, identity, provenance and generated interfaces.",
+      "description": "Learn when graph models outperform folder hierarchies, why relationships matter, and how to keep folders as useful projections over connected data.",
+      "status": "active",
+      "maturity": "research",
+      "confidence": "published",
+      "visibility": "public",
+      "publicationClass": "published",
+      "tags": [
+        "Graph Modeling",
+        "Folders",
+        "Knowledge Graph",
+        "Information Architecture",
+        "VASTE"
+      ],
+      "discipline": [
+        "Knowledge Systems",
+        "Systems Design",
+        "Information Architecture",
+        "Software Architecture"
+      ],
+      "route": "/publications/why-graphs-are-more-powerful-than-folders/",
+      "identifier": "/id/publication/why-graphs-are-more-powerful-than-folders/",
       "temporality": {
         "creationDate": "2026-06-24",
         "lastUpdated": "2026-06-24",
@@ -1841,6 +2739,38 @@
       }
     },
     {
+      "id": "ea:technology:cloudevents",
+      "legacyId": "cloudevents",
+      "kind": "technology",
+      "type": "technology",
+      "title": "CloudEvents",
+      "summary": "CloudEvents is a CNCF specification for describing event data in a common, portable envelope.",
+      "description": "A technology record for interoperable event metadata across services and platforms.",
+      "status": "active",
+      "maturity": "production",
+      "confidence": "canonical",
+      "visibility": "public",
+      "publicationClass": "canonical",
+      "tags": [
+        "CloudEvents",
+        "Event Schema",
+        "Interoperability"
+      ],
+      "discipline": [
+        "Software Architecture",
+        "Distributed Systems",
+        "Programming"
+      ],
+      "route": "/knowledge/technologies/cloudevents/",
+      "identifier": "/id/technology/cloudevents/",
+      "temporality": {
+        "creationDate": "2026-06-24",
+        "lastUpdated": "2026-06-24",
+        "releaseDate": "2026-06-24",
+        "creationYear": "2026"
+      }
+    },
+    {
       "id": "ea:technology:css-fonts",
       "legacyId": "css-fonts",
       "kind": "technology",
@@ -1907,6 +2837,70 @@
       }
     },
     {
+      "id": "ea:technology:llama-cpp",
+      "legacyId": "llama-cpp",
+      "kind": "technology",
+      "type": "technology",
+      "title": "llama.cpp",
+      "summary": "llama.cpp is an open-source C and C++ inference runtime for running large language models across consumer and server hardware.",
+      "description": "A technology record for local model inference, quantization and portable AI deployment.",
+      "status": "active",
+      "maturity": "production",
+      "confidence": "canonical",
+      "visibility": "public",
+      "publicationClass": "canonical",
+      "tags": [
+        "llama.cpp",
+        "Local AI",
+        "Inference",
+        "Quantization"
+      ],
+      "discipline": [
+        "Artificial Intelligence",
+        "Programming",
+        "Open Source"
+      ],
+      "route": "/knowledge/technologies/llama-cpp/",
+      "identifier": "/id/technology/llama-cpp/",
+      "temporality": {
+        "creationDate": "2026-06-24",
+        "lastUpdated": "2026-06-24",
+        "releaseDate": "2026-06-24",
+        "creationYear": "2026"
+      }
+    },
+    {
+      "id": "ea:technology:owl",
+      "legacyId": "owl",
+      "kind": "technology",
+      "type": "technology",
+      "title": "OWL",
+      "summary": "OWL is a W3C ontology language with formally defined semantics for classes, properties, individuals and constraints on the Semantic Web.",
+      "description": "A technology record for formal ontology publication and reasoning.",
+      "status": "active",
+      "maturity": "production",
+      "confidence": "canonical",
+      "visibility": "public",
+      "publicationClass": "canonical",
+      "tags": [
+        "OWL",
+        "Ontology",
+        "Semantic Web"
+      ],
+      "discipline": [
+        "Knowledge Systems",
+        "Semantic Web"
+      ],
+      "route": "/knowledge/technologies/owl/",
+      "identifier": "/id/technology/owl/",
+      "temporality": {
+        "creationDate": "2026-06-24",
+        "lastUpdated": "2026-06-24",
+        "releaseDate": "2026-06-24",
+        "creationYear": "2026"
+      }
+    },
+    {
       "id": "ea:technology:rdf",
       "legacyId": "rdf",
       "kind": "technology",
@@ -1937,6 +2931,102 @@
         "lastUpdated": "2026-06-23",
         "releaseDate": "2026-06-23",
         "creationYear": "2014"
+      }
+    },
+    {
+      "id": "ea:technology:redis-streams",
+      "legacyId": "redis-streams",
+      "kind": "technology",
+      "type": "technology",
+      "title": "Redis Streams",
+      "summary": "Redis Streams is an append-only log data type with ordered entries, range reads, trimming and consumer-group processing.",
+      "description": "A technology record for event streams, orchestration and real-time processing.",
+      "status": "active",
+      "maturity": "production",
+      "confidence": "canonical",
+      "visibility": "public",
+      "publicationClass": "canonical",
+      "tags": [
+        "Redis Streams",
+        "Event Log",
+        "Consumer Groups",
+        "Orchestration"
+      ],
+      "discipline": [
+        "Software Architecture",
+        "Programming",
+        "Distributed Systems"
+      ],
+      "route": "/knowledge/technologies/redis-streams/",
+      "identifier": "/id/technology/redis-streams/",
+      "temporality": {
+        "creationDate": "2026-06-24",
+        "lastUpdated": "2026-06-24",
+        "releaseDate": "2026-06-24",
+        "creationYear": "2026"
+      }
+    },
+    {
+      "id": "ea:technology:skos",
+      "legacyId": "skos",
+      "kind": "technology",
+      "type": "technology",
+      "title": "SKOS",
+      "summary": "SKOS is a W3C data model for publishing thesauri, taxonomies, classification schemes and other knowledge organization systems on the Web.",
+      "description": "A technology record for controlled vocabularies and lightweight semantic organization.",
+      "status": "active",
+      "maturity": "production",
+      "confidence": "canonical",
+      "visibility": "public",
+      "publicationClass": "canonical",
+      "tags": [
+        "SKOS",
+        "Taxonomy",
+        "Controlled Vocabulary"
+      ],
+      "discipline": [
+        "Knowledge Systems",
+        "Information Architecture",
+        "Semantic Web"
+      ],
+      "route": "/knowledge/technologies/skos/",
+      "identifier": "/id/technology/skos/",
+      "temporality": {
+        "creationDate": "2026-06-24",
+        "lastUpdated": "2026-06-24",
+        "releaseDate": "2026-06-24",
+        "creationYear": "2026"
+      }
+    },
+    {
+      "id": "ea:technology:transformer-architecture",
+      "legacyId": "transformer-architecture",
+      "kind": "technology",
+      "type": "technology",
+      "title": "Transformer Architecture",
+      "summary": "The transformer is a neural-network architecture built around attention mechanisms and parallel sequence processing.",
+      "description": "A technology record for the architecture underlying many modern language and multimodal models.",
+      "status": "active",
+      "maturity": "production",
+      "confidence": "canonical",
+      "visibility": "public",
+      "publicationClass": "canonical",
+      "tags": [
+        "Transformer",
+        "Attention",
+        "Neural Networks"
+      ],
+      "discipline": [
+        "Artificial Intelligence",
+        "Machine Learning"
+      ],
+      "route": "/knowledge/technologies/transformer-architecture/",
+      "identifier": "/id/technology/transformer-architecture/",
+      "temporality": {
+        "creationDate": "2026-06-24",
+        "lastUpdated": "2026-06-24",
+        "releaseDate": "2026-06-24",
+        "creationYear": "2026"
       }
     },
     {
@@ -3204,6 +4294,809 @@
       "visibility": "public"
     },
     {
+      "id": "ear:llm-article-documents-large-language-model",
+      "subject": "ea:publication:how-large-language-models-actually-work",
+      "predicate": "documents",
+      "object": "ea:concept:large-language-model",
+      "statement": "How Large Language Models Actually Work documents the core LLM concept.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:llm-article-uses-transformer-architecture",
+      "subject": "ea:publication:how-large-language-models-actually-work",
+      "predicate": "usesTechnology",
+      "object": "ea:technology:transformer-architecture",
+      "statement": "How Large Language Models Actually Work uses the transformer architecture as its principal technical reference.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:llm-article-documents-generative-ai",
+      "subject": "ea:publication:how-large-language-models-actually-work",
+      "predicate": "documents",
+      "object": "ea:concept:generative-ai",
+      "statement": "How Large Language Models Actually Work situates LLMs within generative AI.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:llm-article-documents-provenance",
+      "subject": "ea:publication:how-large-language-models-actually-work",
+      "predicate": "documents",
+      "object": "ea:concept:provenance",
+      "statement": "How Large Language Models Actually Work explains why model and data provenance matter.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:agents-article-documents-ai-agent",
+      "subject": "ea:publication:ai-agents-vs-ai-workflows",
+      "predicate": "documents",
+      "object": "ea:concept:ai-agent",
+      "statement": "AI Agents vs AI Workflows documents model-directed agency and deterministic workflow boundaries.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:agents-article-documents-contextual-execution",
+      "subject": "ea:publication:ai-agents-vs-ai-workflows",
+      "predicate": "documents",
+      "object": "ea:concept:contextual-execution",
+      "statement": "AI Agents vs AI Workflows connects agent permissions to contextual execution.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:agents-article-documents-autonomous-system",
+      "subject": "ea:publication:ai-agents-vs-ai-workflows",
+      "predicate": "documents",
+      "object": "ea:concept:autonomous-system",
+      "statement": "AI Agents vs AI Workflows distinguishes bounded agents from broader autonomous systems.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:agents-article-documents-vaste",
+      "subject": "ea:publication:ai-agents-vs-ai-workflows",
+      "predicate": "documents",
+      "object": "ea:program:vaste",
+      "statement": "AI Agents vs AI Workflows uses VASTE as a context for identity-aware agent permissions.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:local-ai-article-documents-open-weight-model",
+      "subject": "ea:publication:local-and-open-source-ai-systems",
+      "predicate": "documents",
+      "object": "ea:concept:open-weight-model",
+      "statement": "Local and Open Source AI Systems documents the distinction between open-weight and open-source models.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:local-ai-article-documents-open-source",
+      "subject": "ea:publication:local-and-open-source-ai-systems",
+      "predicate": "documents",
+      "object": "ea:concept:open-source",
+      "statement": "Local and Open Source AI Systems applies open-source principles to AI infrastructure and licensing.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:local-ai-article-uses-llama-cpp",
+      "subject": "ea:publication:local-and-open-source-ai-systems",
+      "predicate": "usesTechnology",
+      "object": "ea:technology:llama-cpp",
+      "statement": "Local and Open Source AI Systems uses llama.cpp as a reference local inference runtime.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:local-ai-article-documents-provenance",
+      "subject": "ea:publication:local-and-open-source-ai-systems",
+      "predicate": "documents",
+      "object": "ea:concept:provenance",
+      "statement": "Local and Open Source AI Systems connects model deployment to provenance and reproducibility.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:rag-article-documents-rag",
+      "subject": "ea:publication:retrieval-augmented-generation-and-knowledge-systems",
+      "predicate": "documents",
+      "object": "ea:concept:retrieval-augmented-generation",
+      "statement": "Retrieval-Augmented Generation and Knowledge Systems documents RAG architecture end to end.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:rag-article-documents-knowledge-graph",
+      "subject": "ea:publication:retrieval-augmented-generation-and-knowledge-systems",
+      "predicate": "documents",
+      "object": "ea:concept:knowledge-graph",
+      "statement": "Retrieval-Augmented Generation and Knowledge Systems explains graph-grounded retrieval.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:rag-article-documents-metadata",
+      "subject": "ea:publication:retrieval-augmented-generation-and-knowledge-systems",
+      "predicate": "documents",
+      "object": "ea:concept:metadata",
+      "statement": "Retrieval-Augmented Generation and Knowledge Systems treats metadata as retrieval infrastructure.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:rag-article-documents-provenance",
+      "subject": "ea:publication:retrieval-augmented-generation-and-knowledge-systems",
+      "predicate": "documents",
+      "object": "ea:concept:provenance",
+      "statement": "Retrieval-Augmented Generation and Knowledge Systems connects citations and source grounding to provenance.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:rag-article-documents-vaste",
+      "subject": "ea:publication:retrieval-augmented-generation-and-knowledge-systems",
+      "predicate": "documents",
+      "object": "ea:program:vaste",
+      "statement": "Retrieval-Augmented Generation and Knowledge Systems uses VASTE as a context for identity-aware graph retrieval.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:multimodal-article-documents-multimodal-ai",
+      "subject": "ea:publication:multimodal-ai-across-text-image-audio-and-video",
+      "predicate": "documents",
+      "object": "ea:concept:multimodal-ai",
+      "statement": "Multimodal AI Across Text, Image, Audio and Video documents cross-modal architectures and evaluation.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:multimodal-article-documents-oreth",
+      "subject": "ea:publication:multimodal-ai-across-text-image-audio-and-video",
+      "predicate": "documents",
+      "object": "ea:program:oreth",
+      "statement": "Multimodal AI Across Text, Image, Audio and Video connects ORETH to audio and cross-modal analysis.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:multimodal-article-documents-palimpsests",
+      "subject": "ea:publication:multimodal-ai-across-text-image-audio-and-video",
+      "predicate": "documents",
+      "object": "ea:project:palimpsests",
+      "statement": "Multimodal AI Across Text, Image, Audio and Video uses Palimpsests as a compound media and provenance context.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:multimodal-article-documents-provenance",
+      "subject": "ea:publication:multimodal-ai-across-text-image-audio-and-video",
+      "predicate": "documents",
+      "object": "ea:concept:provenance",
+      "statement": "Multimodal AI Across Text, Image, Audio and Video documents provenance risks across generated media.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:systems-thinking-article-documents-systems-thinking",
+      "subject": "ea:publication:systems-thinking-for-creative-practice",
+      "predicate": "documents",
+      "object": "ea:concept:systems-thinking",
+      "statement": "Systems Thinking for Creative Practice documents systems thinking for creative and technical work.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:systems-thinking-article-documents-cybernetic-feedback",
+      "subject": "ea:publication:systems-thinking-for-creative-practice",
+      "predicate": "documents",
+      "object": "ea:concept:cybernetic-feedback",
+      "statement": "Systems Thinking for Creative Practice connects system behavior to cybernetic feedback.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:systems-thinking-article-documents-generative-system",
+      "subject": "ea:publication:systems-thinking-for-creative-practice",
+      "predicate": "documents",
+      "object": "ea:concept:generative-system",
+      "statement": "Systems Thinking for Creative Practice explains constraints and emergence in generative systems.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:systems-thinking-article-documents-vaste",
+      "subject": "ea:publication:systems-thinking-for-creative-practice",
+      "predicate": "documents",
+      "object": "ea:program:vaste",
+      "statement": "Systems Thinking for Creative Practice uses VASTE as an applied runtime-systems context.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:ontology-article-documents-ontology",
+      "subject": "ea:publication:ontologies-taxonomies-and-knowledge-modeling",
+      "predicate": "documents",
+      "object": "ea:concept:ontology",
+      "statement": "Ontologies, Taxonomies and Knowledge Modeling documents ontology and vocabulary distinctions.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:ontology-article-documents-knowledge-graph",
+      "subject": "ea:publication:ontologies-taxonomies-and-knowledge-modeling",
+      "predicate": "documents",
+      "object": "ea:concept:knowledge-graph",
+      "statement": "Ontologies, Taxonomies and Knowledge Modeling connects semantic models to knowledge graphs.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:ontology-article-documents-metadata",
+      "subject": "ea:publication:ontologies-taxonomies-and-knowledge-modeling",
+      "predicate": "documents",
+      "object": "ea:concept:metadata",
+      "statement": "Ontologies, Taxonomies and Knowledge Modeling positions metadata within a broader semantic architecture.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:ontology-article-uses-owl",
+      "subject": "ea:publication:ontologies-taxonomies-and-knowledge-modeling",
+      "predicate": "usesTechnology",
+      "object": "ea:technology:owl",
+      "statement": "Ontologies, Taxonomies and Knowledge Modeling uses OWL as its formal ontology reference.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:ontology-article-uses-skos",
+      "subject": "ea:publication:ontologies-taxonomies-and-knowledge-modeling",
+      "predicate": "usesTechnology",
+      "object": "ea:technology:skos",
+      "statement": "Ontologies, Taxonomies and Knowledge Modeling uses SKOS as its vocabulary and taxonomy reference.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:ontology-article-documents-vestiges",
+      "subject": "ea:publication:ontologies-taxonomies-and-knowledge-modeling",
+      "predicate": "documents",
+      "object": "ea:project:vestiges",
+      "statement": "Ontologies, Taxonomies and Knowledge Modeling connects semantic modeling to the Vestiges cultural graph.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:graphs-folders-article-documents-graph-modeling",
+      "subject": "ea:publication:why-graphs-are-more-powerful-than-folders",
+      "predicate": "documents",
+      "object": "ea:concept:graph-modeling",
+      "statement": "Why Graphs Are More Powerful Than Folders documents graph modeling for connected domains.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:graphs-folders-article-documents-knowledge-graph",
+      "subject": "ea:publication:why-graphs-are-more-powerful-than-folders",
+      "predicate": "documents",
+      "object": "ea:concept:knowledge-graph",
+      "statement": "Why Graphs Are More Powerful Than Folders explains knowledge graph identity and traversal.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:graphs-folders-article-documents-entity-identity",
+      "subject": "ea:publication:why-graphs-are-more-powerful-than-folders",
+      "predicate": "documents",
+      "object": "ea:concept:entity-identity",
+      "statement": "Why Graphs Are More Powerful Than Folders explains why entity identity should survive path changes.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:graphs-folders-article-documents-vaste",
+      "subject": "ea:publication:why-graphs-are-more-powerful-than-folders",
+      "predicate": "documents",
+      "object": "ea:program:vaste",
+      "statement": "Why Graphs Are More Powerful Than Folders uses VASTE as a graph-runtime application.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:graphs-folders-article-documents-vestiges",
+      "subject": "ea:publication:why-graphs-are-more-powerful-than-folders",
+      "predicate": "documents",
+      "object": "ea:project:vestiges",
+      "statement": "Why Graphs Are More Powerful Than Folders uses Vestiges as a cultural graph case.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:event-architecture-article-documents-event-driven-architecture",
+      "subject": "ea:publication:event-driven-architecture-and-event-streams",
+      "predicate": "documents",
+      "object": "ea:concept:event-driven-architecture",
+      "statement": "Event-Driven Architecture and Event Streams documents event-driven system design.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:event-architecture-article-uses-cloudevents",
+      "subject": "ea:publication:event-driven-architecture-and-event-streams",
+      "predicate": "usesTechnology",
+      "object": "ea:technology:cloudevents",
+      "statement": "Event-Driven Architecture and Event Streams uses CloudEvents as an interoperable event-envelope reference.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:event-architecture-article-documents-contextual-execution",
+      "subject": "ea:publication:event-driven-architecture-and-event-streams",
+      "predicate": "documents",
+      "object": "ea:concept:contextual-execution",
+      "statement": "Event-Driven Architecture and Event Streams connects event propagation to contextual execution.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:event-architecture-article-documents-graph-runtime",
+      "subject": "ea:publication:event-driven-architecture-and-event-streams",
+      "predicate": "documents",
+      "object": "ea:concept:graph-runtime",
+      "statement": "Event-Driven Architecture and Event Streams explains event flow inside graph runtimes.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:event-architecture-article-documents-vaste",
+      "subject": "ea:publication:event-driven-architecture-and-event-streams",
+      "predicate": "documents",
+      "object": "ea:program:vaste",
+      "statement": "Event-Driven Architecture and Event Streams uses VASTE as an applied event-propagation context.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:redis-streams-article-uses-redis-streams",
+      "subject": "ea:publication:redis-streams-for-orchestration",
+      "predicate": "usesTechnology",
+      "object": "ea:technology:redis-streams",
+      "statement": "Redis Streams for Orchestration documents Redis Streams as its implementation primitive.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:redis-streams-article-documents-event-driven-architecture",
+      "subject": "ea:publication:redis-streams-for-orchestration",
+      "predicate": "documents",
+      "object": "ea:concept:event-driven-architecture",
+      "statement": "Redis Streams for Orchestration places Redis consumer groups within event-driven architecture.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:redis-streams-article-documents-vaste",
+      "subject": "ea:publication:redis-streams-for-orchestration",
+      "predicate": "documents",
+      "object": "ea:program:vaste",
+      "statement": "Redis Streams for Orchestration describes a possible bounded transport layer for VASTE projections.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:microservices-article-documents-microservice-architecture",
+      "subject": "ea:publication:microservices-modular-monoliths-and-system-boundaries",
+      "predicate": "documents",
+      "object": "ea:concept:microservice-architecture",
+      "statement": "Microservices, Modular Monoliths and System Boundaries documents microservice architecture and its tradeoffs.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:microservices-article-documents-systems-thinking",
+      "subject": "ea:publication:microservices-modular-monoliths-and-system-boundaries",
+      "predicate": "documents",
+      "object": "ea:concept:systems-thinking",
+      "statement": "Microservices, Modular Monoliths and System Boundaries applies systems thinking to organizational and operational cost.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:microservices-article-documents-event-driven-architecture",
+      "subject": "ea:publication:microservices-modular-monoliths-and-system-boundaries",
+      "predicate": "documents",
+      "object": "ea:concept:event-driven-architecture",
+      "statement": "Microservices, Modular Monoliths and System Boundaries explains events as one service communication pattern.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:microservices-article-documents-vaste",
+      "subject": "ea:publication:microservices-modular-monoliths-and-system-boundaries",
+      "predicate": "documents",
+      "object": "ea:program:vaste",
+      "statement": "Microservices, Modular Monoliths and System Boundaries evaluates VASTE through conservative runtime boundaries.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:domain-os-article-documents-domain-operating-system",
+      "subject": "ea:publication:runtime-engines-and-domain-operating-systems",
+      "predicate": "documents",
+      "object": "ea:concept:domain-operating-system",
+      "statement": "Runtime Engines and Domain Operating Systems documents the domain operating system concept.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:domain-os-article-documents-graph-runtime",
+      "subject": "ea:publication:runtime-engines-and-domain-operating-systems",
+      "predicate": "documents",
+      "object": "ea:concept:graph-runtime",
+      "statement": "Runtime Engines and Domain Operating Systems connects domain runtimes to graph execution.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:domain-os-article-documents-contextual-execution",
+      "subject": "ea:publication:runtime-engines-and-domain-operating-systems",
+      "predicate": "documents",
+      "object": "ea:concept:contextual-execution",
+      "statement": "Runtime Engines and Domain Operating Systems explains capability evaluation through contextual execution.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:domain-os-article-documents-vaste",
+      "subject": "ea:publication:runtime-engines-and-domain-operating-systems",
+      "predicate": "documents",
+      "object": "ea:program:vaste",
+      "statement": "Runtime Engines and Domain Operating Systems uses VASTE as the primary Electronic Artefacts runtime context.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:domain-os-article-documents-vestiges",
+      "subject": "ea:publication:runtime-engines-and-domain-operating-systems",
+      "predicate": "documents",
+      "object": "ea:project:vestiges",
+      "statement": "Runtime Engines and Domain Operating Systems uses Vestiges as a cultural domain OS application.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:vaste-applies-systems-thinking",
+      "subject": "ea:program:vaste",
+      "predicate": "appliesConcept",
+      "object": "ea:concept:systems-thinking",
+      "statement": "VASTE applies systems thinking to entities, context, events and projections.",
+      "confidence": "observed",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:vaste-applies-event-driven-architecture",
+      "subject": "ea:program:vaste",
+      "predicate": "appliesConcept",
+      "object": "ea:concept:event-driven-architecture",
+      "statement": "VASTE applies event-driven architecture through its event propagation layer.",
+      "confidence": "observed",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:vaste-applies-graph-modeling",
+      "subject": "ea:program:vaste",
+      "predicate": "appliesConcept",
+      "object": "ea:concept:graph-modeling",
+      "statement": "VASTE applies graph modeling through addressable entities and typed relationships.",
+      "confidence": "observed",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:vaste-applies-domain-operating-system",
+      "subject": "ea:program:vaste",
+      "predicate": "appliesConcept",
+      "object": "ea:concept:domain-operating-system",
+      "statement": "VASTE explores domain operating system architecture for graph-shaped products.",
+      "confidence": "observed",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:vestiges-applies-ontology",
+      "subject": "ea:project:vestiges",
+      "predicate": "appliesConcept",
+      "object": "ea:concept:ontology",
+      "statement": "Vestiges applies ontology design to people, techniques, materials, institutions and cultural relations.",
+      "confidence": "observed",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:vestiges-applies-graph-modeling",
+      "subject": "ea:project:vestiges",
+      "predicate": "appliesConcept",
+      "object": "ea:concept:graph-modeling",
+      "statement": "Vestiges applies graph modeling to cultural knowledge and human know-how.",
+      "confidence": "observed",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:vestiges-applies-domain-operating-system",
+      "subject": "ea:project:vestiges",
+      "predicate": "appliesConcept",
+      "object": "ea:concept:domain-operating-system",
+      "statement": "Vestiges explores a domain operating system for cultural knowledge, contribution and exchange.",
+      "confidence": "observed",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:oreth-applies-multimodal-ai",
+      "subject": "ea:program:oreth",
+      "predicate": "appliesConcept",
+      "object": "ea:concept:multimodal-ai",
+      "statement": "ORETH provides an applied context for connecting audio analysis with visual, textual and archival records.",
+      "confidence": "observed",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:knowledge-hub-third-wave-has-llm-article",
+      "subject": "ea:collection:knowledge-hub-third-wave",
+      "predicate": "hasPart",
+      "object": "ea:publication:how-large-language-models-actually-work",
+      "statement": "Knowledge Hub Third Wave includes How Large Language Models Actually Work.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:knowledge-hub-third-wave-has-agents-article",
+      "subject": "ea:collection:knowledge-hub-third-wave",
+      "predicate": "hasPart",
+      "object": "ea:publication:ai-agents-vs-ai-workflows",
+      "statement": "Knowledge Hub Third Wave includes AI Agents vs AI Workflows.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:knowledge-hub-third-wave-has-local-ai-article",
+      "subject": "ea:collection:knowledge-hub-third-wave",
+      "predicate": "hasPart",
+      "object": "ea:publication:local-and-open-source-ai-systems",
+      "statement": "Knowledge Hub Third Wave includes Local and Open Source AI Systems.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:knowledge-hub-third-wave-has-rag-article",
+      "subject": "ea:collection:knowledge-hub-third-wave",
+      "predicate": "hasPart",
+      "object": "ea:publication:retrieval-augmented-generation-and-knowledge-systems",
+      "statement": "Knowledge Hub Third Wave includes Retrieval-Augmented Generation and Knowledge Systems.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:knowledge-hub-third-wave-has-multimodal-article",
+      "subject": "ea:collection:knowledge-hub-third-wave",
+      "predicate": "hasPart",
+      "object": "ea:publication:multimodal-ai-across-text-image-audio-and-video",
+      "statement": "Knowledge Hub Third Wave includes Multimodal AI Across Text, Image, Audio and Video.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:knowledge-hub-third-wave-has-systems-thinking-article",
+      "subject": "ea:collection:knowledge-hub-third-wave",
+      "predicate": "hasPart",
+      "object": "ea:publication:systems-thinking-for-creative-practice",
+      "statement": "Knowledge Hub Third Wave includes Systems Thinking for Creative Practice.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:knowledge-hub-third-wave-has-ontology-article",
+      "subject": "ea:collection:knowledge-hub-third-wave",
+      "predicate": "hasPart",
+      "object": "ea:publication:ontologies-taxonomies-and-knowledge-modeling",
+      "statement": "Knowledge Hub Third Wave includes Ontologies, Taxonomies and Knowledge Modeling.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:knowledge-hub-third-wave-has-graphs-folders-article",
+      "subject": "ea:collection:knowledge-hub-third-wave",
+      "predicate": "hasPart",
+      "object": "ea:publication:why-graphs-are-more-powerful-than-folders",
+      "statement": "Knowledge Hub Third Wave includes Why Graphs Are More Powerful Than Folders.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:knowledge-hub-third-wave-has-event-architecture-article",
+      "subject": "ea:collection:knowledge-hub-third-wave",
+      "predicate": "hasPart",
+      "object": "ea:publication:event-driven-architecture-and-event-streams",
+      "statement": "Knowledge Hub Third Wave includes Event-Driven Architecture and Event Streams.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:knowledge-hub-third-wave-has-redis-streams-article",
+      "subject": "ea:collection:knowledge-hub-third-wave",
+      "predicate": "hasPart",
+      "object": "ea:publication:redis-streams-for-orchestration",
+      "statement": "Knowledge Hub Third Wave includes Redis Streams for Orchestration.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:knowledge-hub-third-wave-has-microservices-article",
+      "subject": "ea:collection:knowledge-hub-third-wave",
+      "predicate": "hasPart",
+      "object": "ea:publication:microservices-modular-monoliths-and-system-boundaries",
+      "statement": "Knowledge Hub Third Wave includes Microservices, Modular Monoliths and System Boundaries.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:knowledge-hub-third-wave-has-domain-os-article",
+      "subject": "ea:collection:knowledge-hub-third-wave",
+      "predicate": "hasPart",
+      "object": "ea:publication:runtime-engines-and-domain-operating-systems",
+      "statement": "Knowledge Hub Third Wave includes Runtime Engines and Domain Operating Systems.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
       "id": "ear:runtime-theory-defines-graph-runtime",
       "subject": "ea:researchField:runtime-theory",
       "predicate": "defines",
@@ -3295,28 +5188,41 @@
   "routes": {
     "ea:collection:knowledge-hub-foundations": "/archive/collections/knowledge-hub-foundations/",
     "ea:collection:knowledge-hub-second-wave": "/archive/collections/knowledge-hub-second-wave/",
+    "ea:collection:knowledge-hub-third-wave": "/archive/collections/knowledge-hub-third-wave/",
+    "ea:concept:ai-agent": "/knowledge/concepts/ai-agent/",
     "ea:concept:algorithmic-composition": "/knowledge/concepts/algorithmic-composition/",
     "ea:concept:augmented-intelligence": "/knowledge/concepts/augmented-intelligence/",
+    "ea:concept:autonomous-system": "/knowledge/concepts/autonomous-system/",
     "ea:concept:contextual-execution": "/knowledge/concepts/contextual-execution/",
     "ea:concept:creative-coding": "/knowledge/concepts/creative-coding/",
     "ea:concept:cybernetic-feedback": "/knowledge/concepts/cybernetic-feedback/",
     "ea:concept:digital-preservation": "/knowledge/concepts/digital-preservation/",
+    "ea:concept:domain-operating-system": "/knowledge/concepts/domain-operating-system/",
     "ea:concept:entity-identity": "/knowledge/concepts/entity-identity/",
+    "ea:concept:event-driven-architecture": "/knowledge/concepts/event-driven-architecture/",
     "ea:concept:generative-ai": "/knowledge/concepts/generative-ai/",
     "ea:concept:generative-system": "/knowledge/concepts/generative-system/",
+    "ea:concept:graph-modeling": "/knowledge/concepts/graph-modeling/",
     "ea:concept:graph-runtime": "/knowledge/concepts/graph-runtime/",
     "ea:concept:human-computer-interaction": "/knowledge/concepts/human-computer-interaction/",
     "ea:concept:hypertext": "/knowledge/concepts/hypertext/",
     "ea:concept:internet-culture": "/knowledge/concepts/internet-culture/",
     "ea:concept:knowledge-graph": "/knowledge/concepts/knowledge-graph/",
+    "ea:concept:large-language-model": "/knowledge/concepts/large-language-model/",
     "ea:concept:linked-data": "/knowledge/concepts/linked-data/",
     "ea:concept:metadata": "/knowledge/concepts/metadata/",
+    "ea:concept:microservice-architecture": "/knowledge/concepts/microservice-architecture/",
     "ea:concept:motion-design": "/knowledge/concepts/motion-design/",
+    "ea:concept:multimodal-ai": "/knowledge/concepts/multimodal-ai/",
+    "ea:concept:ontology": "/knowledge/concepts/ontology/",
     "ea:concept:open-source": "/knowledge/concepts/open-source/",
+    "ea:concept:open-weight-model": "/knowledge/concepts/open-weight-model/",
     "ea:concept:personal-knowledge-system": "/knowledge/concepts/personal-knowledge-system/",
     "ea:concept:procedural-graphics": "/knowledge/concepts/procedural-graphics/",
     "ea:concept:provenance": "/knowledge/concepts/provenance/",
+    "ea:concept:retrieval-augmented-generation": "/knowledge/concepts/retrieval-augmented-generation/",
     "ea:concept:signal-archaeology": "/knowledge/concepts/signal-archaeology/",
+    "ea:concept:systems-thinking": "/knowledge/concepts/systems-thinking/",
     "ea:concept:typography": "/knowledge/concepts/typography/",
     "ea:concept:web-audio": "/knowledge/concepts/web-audio/",
     "ea:organization:electronic-artefacts": "/organizations/electronic-artefacts/",
@@ -3324,30 +5230,48 @@
     "ea:program:vaste": "/programs/vaste/",
     "ea:project:palimpsests": "/projects/palimpsests/",
     "ea:project:vestiges": "/projects/vestiges/",
+    "ea:publication:ai-agents-vs-ai-workflows": "/publications/ai-agents-vs-ai-workflows/",
     "ea:publication:algorithmic-composition-and-rule-based-music": "/publications/algorithmic-composition-and-rule-based-music/",
     "ea:publication:contextual-execution-and-graph-runtimes": "/publications/contextual-execution-and-graph-runtimes/",
     "ea:publication:creative-coding-pedagogy-from-logo-to-p5js": "/publications/creative-coding-pedagogy-from-logo-to-p5js/",
     "ea:publication:digital-preservation-and-living-archives": "/publications/digital-preservation-and-living-archives/",
+    "ea:publication:event-driven-architecture-and-event-streams": "/publications/event-driven-architecture-and-event-streams/",
     "ea:publication:foundational-lineage-001": "/publications/foundational-lineage-001/",
     "ea:publication:generative-ai-latent-space-and-creative-workflows": "/publications/generative-ai-latent-space-and-creative-workflows/",
     "ea:publication:generative-systems-cybernetics-and-creative-coding": "/publications/generative-systems-cybernetics-and-creative-coding/",
+    "ea:publication:how-large-language-models-actually-work": "/publications/how-large-language-models-actually-work/",
     "ea:publication:human-computer-interaction-for-creative-tools": "/publications/human-computer-interaction-for-creative-tools/",
     "ea:publication:hypertext-and-augmented-knowledge-systems": "/publications/hypertext-and-augmented-knowledge-systems/",
     "ea:publication:knowledge-graphs-for-cultural-infrastructure": "/publications/knowledge-graphs-for-cultural-infrastructure/",
     "ea:publication:linked-data-and-public-knowledge-pages": "/publications/linked-data-and-public-knowledge-pages/",
+    "ea:publication:local-and-open-source-ai-systems": "/publications/local-and-open-source-ai-systems/",
     "ea:publication:metadata-cataloguing-and-cultural-memory": "/publications/metadata-cataloguing-and-cultural-memory/",
+    "ea:publication:microservices-modular-monoliths-and-system-boundaries": "/publications/microservices-modular-monoliths-and-system-boundaries/",
     "ea:publication:motion-design-time-and-interface-semantics": "/publications/motion-design-time-and-interface-semantics/",
+    "ea:publication:multimodal-ai-across-text-image-audio-and-video": "/publications/multimodal-ai-across-text-image-audio-and-video/",
+    "ea:publication:ontologies-taxonomies-and-knowledge-modeling": "/publications/ontologies-taxonomies-and-knowledge-modeling/",
     "ea:publication:open-source-as-cultural-infrastructure": "/publications/open-source-as-cultural-infrastructure/",
     "ea:publication:personal-knowledge-systems-and-digital-gardens": "/publications/personal-knowledge-systems-and-digital-gardens/",
     "ea:publication:procedural-graphics-shaders-and-visual-systems": "/publications/procedural-graphics-shaders-and-visual-systems/",
+    "ea:publication:redis-streams-for-orchestration": "/publications/redis-streams-for-orchestration/",
+    "ea:publication:retrieval-augmented-generation-and-knowledge-systems": "/publications/retrieval-augmented-generation-and-knowledge-systems/",
+    "ea:publication:runtime-engines-and-domain-operating-systems": "/publications/runtime-engines-and-domain-operating-systems/",
     "ea:publication:signal-archaeology-audio-memory-and-machine-listening": "/publications/signal-archaeology-audio-memory-and-machine-listening/",
+    "ea:publication:systems-thinking-for-creative-practice": "/publications/systems-thinking-for-creative-practice/",
     "ea:publication:typography-reading-systems-and-digital-interfaces": "/publications/typography-reading-systems-and-digital-interfaces/",
     "ea:publication:web-audio-and-browser-based-sound-systems": "/publications/web-audio-and-browser-based-sound-systems/",
+    "ea:publication:why-graphs-are-more-powerful-than-folders": "/publications/why-graphs-are-more-powerful-than-folders/",
     "ea:researchField:runtime-theory": "/research/fields/runtime-theory/",
     "ea:technology:activitypub": "/knowledge/technologies/activitypub/",
+    "ea:technology:cloudevents": "/knowledge/technologies/cloudevents/",
     "ea:technology:css-fonts": "/knowledge/technologies/css-fonts/",
     "ea:technology:json-ld": "/knowledge/technologies/json-ld/",
+    "ea:technology:llama-cpp": "/knowledge/technologies/llama-cpp/",
+    "ea:technology:owl": "/knowledge/technologies/owl/",
     "ea:technology:rdf": "/knowledge/technologies/rdf/",
+    "ea:technology:redis-streams": "/knowledge/technologies/redis-streams/",
+    "ea:technology:skos": "/knowledge/technologies/skos/",
+    "ea:technology:transformer-architecture": "/knowledge/technologies/transformer-architecture/",
     "ea:technology:web-animations": "/knowledge/technologies/web-animations/",
     "ea:technology:web-audio-api": "/knowledge/technologies/web-audio-api/",
     "ea:technology:webgl": "/knowledge/technologies/webgl/"

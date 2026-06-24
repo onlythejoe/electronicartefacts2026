@@ -152,6 +152,10 @@ const project = base.extend({
   symbols: z.array(z.string()).optional(),
   developmentFocus: z.array(z.string()).optional(),
   marketingFocus: z.array(z.string()).optional(),
+  socialLinks: z.array(z.object({
+    label: z.string().min(1),
+    href: z.string().url(),
+  })).optional(),
 });
 const publication = base.extend({
   type: z.literal("publication"),

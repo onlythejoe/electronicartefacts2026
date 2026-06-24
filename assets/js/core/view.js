@@ -774,7 +774,7 @@
     if (!item) return [];
     if (item.id === "oeil-de-meg") return ["Photography CRM", "Portfolio", "Live site", "WordPress"];
     if (item.id === "palimpsests") return ["Album cycle", "ORETH", "Five acts", "Archive"];
-    if (item.id === "vestiges") return ["VASTE flagship", "Knowledge graph", "Craft", "Culture"];
+    if (item.id === "vestiges") return ["Living knowledge", "VASTE runtime", "Cultural graph", "Public infrastructure"];
     if (item.id === "unionmob") return ["External project", "CTO", "UMOS licence", "Violet identity"];
 
     const pills = [
@@ -791,7 +791,7 @@
     if (!item) return "";
     if (item.id === "palimpsests") return "Read as the artistic anchor: an album cycle, archive surface and ORETH world.";
     if (item.id === "oeil-de-meg") return "Read as delivery proof: a live photography portfolio, CRM logic and performance dossier.";
-    if (item.id === "vestiges") return "Read as VASTE's flagship: a knowledge platform for culture, craft and human know-how.";
+    if (item.id === "vestiges") return "Read as living knowledge infrastructure: a VASTE-powered graph connecting people, practices, materials and institutions.";
     if (item.id === "unionmob") return "Read as an external CTO partnership: UnionMob belongs to Zarah Nkounkou; UMOS remains owned by Electronic Artefacts.";
     if (item.category === "Client Work" || item.category === "External Work") return "Read as applied work: public-facing UX, visual evidence and delivery context.";
     if (item.category === "Platform" || item.type === "Platform") return "Read as a system surface: product structure, workflow and operational logic.";

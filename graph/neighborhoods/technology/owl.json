@@ -1,0 +1,34 @@
+{
+  "id": "local:ea:technology:owl",
+  "kind": "local",
+  "focus": "ea:technology:owl",
+  "nodes": [
+    {
+      "id": "ea:publication:ontologies-taxonomies-and-knowledge-modeling",
+      "type": "publication",
+      "title": "Ontologies, Taxonomies and Knowledge Modeling",
+      "route": "/publications/ontologies-taxonomies-and-knowledge-modeling/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:technology:owl",
+      "type": "technology",
+      "title": "OWL",
+      "route": "/knowledge/technologies/owl/",
+      "status": "active",
+      "confidence": "canonical"
+    }
+  ],
+  "edges": [
+    {
+      "id": "ear:ontology-article-uses-owl",
+      "source": "ea:publication:ontologies-taxonomies-and-knowledge-modeling",
+      "target": "ea:technology:owl",
+      "predicate": "usesTechnology",
+      "label": "Uses technology",
+      "statement": "Ontologies, Taxonomies and Knowledge Modeling uses OWL as its formal ontology reference.",
+      "confidence": "published"
+    }
+  ]
+}

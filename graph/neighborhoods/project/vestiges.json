@@ -4,6 +4,22 @@
   "focus": "ea:project:vestiges",
   "nodes": [
     {
+      "id": "ea:concept:domain-operating-system",
+      "type": "concept",
+      "title": "Domain Operating System",
+      "route": "/knowledge/concepts/domain-operating-system/",
+      "status": "active",
+      "confidence": "observed"
+    },
+    {
+      "id": "ea:concept:graph-modeling",
+      "type": "concept",
+      "title": "Graph Modeling",
+      "route": "/knowledge/concepts/graph-modeling/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
       "id": "ea:concept:graph-runtime",
       "type": "concept",
       "title": "Graph Runtime",
@@ -16,6 +32,14 @@
       "type": "concept",
       "title": "Knowledge Graph",
       "route": "/knowledge/concepts/knowledge-graph/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:concept:ontology",
+      "type": "concept",
+      "title": "Ontology",
+      "route": "/knowledge/concepts/ontology/",
       "status": "active",
       "confidence": "canonical"
     },
@@ -74,6 +98,30 @@
       "route": "/publications/metadata-cataloguing-and-cultural-memory/",
       "status": "active",
       "confidence": "published"
+    },
+    {
+      "id": "ea:publication:ontologies-taxonomies-and-knowledge-modeling",
+      "type": "publication",
+      "title": "Ontologies, Taxonomies and Knowledge Modeling",
+      "route": "/publications/ontologies-taxonomies-and-knowledge-modeling/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:runtime-engines-and-domain-operating-systems",
+      "type": "publication",
+      "title": "Runtime Engines and Domain Operating Systems",
+      "route": "/publications/runtime-engines-and-domain-operating-systems/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:why-graphs-are-more-powerful-than-folders",
+      "type": "publication",
+      "title": "Why Graphs Are More Powerful Than Folders",
+      "route": "/publications/why-graphs-are-more-powerful-than-folders/",
+      "status": "active",
+      "confidence": "published"
     }
   ],
   "edges": [
@@ -112,6 +160,60 @@
       "label": "Documents",
       "statement": "Metadata, Cataloguing and Cultural Memory links metadata practice to the Vestiges cultural knowledge project.",
       "confidence": "published"
+    },
+    {
+      "id": "ear:ontology-article-documents-vestiges",
+      "source": "ea:publication:ontologies-taxonomies-and-knowledge-modeling",
+      "target": "ea:project:vestiges",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Ontologies, Taxonomies and Knowledge Modeling connects semantic modeling to the Vestiges cultural graph.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:graphs-folders-article-documents-vestiges",
+      "source": "ea:publication:why-graphs-are-more-powerful-than-folders",
+      "target": "ea:project:vestiges",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Why Graphs Are More Powerful Than Folders uses Vestiges as a cultural graph case.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:domain-os-article-documents-vestiges",
+      "source": "ea:publication:runtime-engines-and-domain-operating-systems",
+      "target": "ea:project:vestiges",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Runtime Engines and Domain Operating Systems uses Vestiges as a cultural domain OS application.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:vestiges-applies-ontology",
+      "source": "ea:project:vestiges",
+      "target": "ea:concept:ontology",
+      "predicate": "appliesConcept",
+      "label": "Applies concept",
+      "statement": "Vestiges applies ontology design to people, techniques, materials, institutions and cultural relations.",
+      "confidence": "observed"
+    },
+    {
+      "id": "ear:vestiges-applies-graph-modeling",
+      "source": "ea:project:vestiges",
+      "target": "ea:concept:graph-modeling",
+      "predicate": "appliesConcept",
+      "label": "Applies concept",
+      "statement": "Vestiges applies graph modeling to cultural knowledge and human know-how.",
+      "confidence": "observed"
+    },
+    {
+      "id": "ear:vestiges-applies-domain-operating-system",
+      "source": "ea:project:vestiges",
+      "target": "ea:concept:domain-operating-system",
+      "predicate": "appliesConcept",
+      "label": "Applies concept",
+      "statement": "Vestiges explores a domain operating system for cultural knowledge, contribution and exchange.",
+      "confidence": "observed"
     },
     {
       "id": "ear:vestiges-powered-by-vaste",

@@ -1,0 +1,74 @@
+{
+  "id": "ea:concept:microservice-architecture",
+  "type": "concept",
+  "slug": {
+    "canonical": "microservice-architecture"
+  },
+  "title": "Microservice Architecture",
+  "definition": "Microservice architecture structures a software system as independently deployable services aligned with bounded capabilities and communicating through explicit contracts.",
+  "abstract": "Microservices can improve independent evolution and scaling but add network, data, deployment, observability and organizational complexity.",
+  "description": "A canonical definition comparing microservices with modular monoliths and service-oriented systems.",
+  "locale": "en",
+  "visibility": "public",
+  "publicationClass": "canonical",
+  "status": "active",
+  "maturity": "production",
+  "confidence": "validated",
+  "version": {
+    "version": "1.0.0",
+    "createdAt": "2026-06-24",
+    "publishedAt": "2026-06-24",
+    "modifiedAt": "2026-06-24"
+  },
+  "authors": [
+    {
+      "id": "ea:organization:electronic-artefacts"
+    }
+  ],
+  "publisher": "ea:organization:electronic-artefacts",
+  "tags": [
+    "Microservices",
+    "Modular Monolith",
+    "Service Boundaries",
+    "Distributed Systems"
+  ],
+  "disciplines": [
+    "Software Architecture",
+    "Systems Design",
+    "Programming"
+  ],
+  "sources": [
+    {
+      "title": "Microservices",
+      "url": "https://martinfowler.com/articles/microservices.html",
+      "author": "James Lewis and Martin Fowler",
+      "publisher": "MartinFowler.com",
+      "publishedAt": "2014-03-25",
+      "accessedAt": "2026-06-24"
+    }
+  ],
+  "scope": [
+    "Service boundaries",
+    "Independent deployment",
+    "API and event contracts",
+    "Data ownership",
+    "Observability",
+    "Team topology"
+  ],
+  "exclusions": [
+    "Splitting an application into many processes without coherent domain boundaries",
+    "Treating microservices as the default architecture for small systems"
+  ],
+  "claims": [
+    "Microservice value depends on organizational and domain boundaries, not service count.",
+    "A modular monolith is often the stronger starting architecture when independent deployment is not required."
+  ],
+  "bodyHtml": "<h2>Definition</h2>\n<p>Microservice architecture divides a system into services that own bounded capabilities and can be deployed independently. Each service communicates through defined APIs or events and should minimize shared implementation assumptions.</p>\n<h2>Tradeoff</h2>\n<p>Independent deployment can support scaling, team autonomy and failure isolation. The cost is distribution: network latency, partial failure, contract evolution, data consistency, security and operations become first-order concerns.</p>\n<h2>Electronic Artefacts position</h2>\n<p>VASTE should not be decomposed into microservices merely to appear modern. Runtime boundaries should follow real ownership, scaling or isolation needs. A modular core with explicit contracts can preserve future options.</p>\n<h2>Limitations</h2>\n<p>Poorly chosen boundaries create chatty services, duplicated logic and distributed transactions. Microservices also require mature deployment, monitoring and incident practices.</p>\n<h2>References</h2>\n<p>See Lewis and Fowler, Event-Driven Architecture, Graph Runtime and Contextual Execution.</p>\n",
+  "headings": [
+    "Definition",
+    "Tradeoff",
+    "Electronic Artefacts position",
+    "Limitations",
+    "References"
+  ]
+}

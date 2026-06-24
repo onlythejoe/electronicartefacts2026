@@ -814,12 +814,12 @@
 
     if (item.id === "vestiges") {
       return {
-        title: "Read this as VASTE's flagship product.",
-        intro: "Vestiges turns the VASTE runtime into a concrete platform for culture, craft and applied knowledge. Its core asset is the graph, not the profile, product or transaction.",
-        why: "The platform is designed to preserve know-how while making it discoverable, collaborative and economically useful across generations.",
-        inspect: ["The knowledge-first graph model", "The multi-actor contribution system", "The path from public knowledge pages to services and exchange"],
-        proof: `${countLabel(item.graphNodeTypes?.length || 0, "node category", "node categories")}, ${countLabel(item.relationshipTypes?.length || 0, "relationship type")} and a VASTE-powered product architecture.`,
-        next: "Follow the platform layers from knowledge graph to collaboration, visual exploration and economic activation.",
+        title: "Read this as living knowledge infrastructure.",
+        intro: "Vestiges is the flagship public application of VASTE: a platform where people, practices, materials, places and institutions become durable identities inside one historized graph.",
+        why: "The product preserves paths of transmission while making knowledge discoverable, attributable and useful across public, cultural and professional contexts.",
+        inspect: ["The living knowledge graph", "The contribution and trust model", "The path from public discovery to professional utility"],
+        proof: `${countLabel(item.graphNodeTypes?.length || 0, "node category", "node categories")}, ${countLabel(item.relationshipTypes?.length || 0, "relationship type")} and a VASTE-powered architecture for identity, provenance and context.`,
+        next: "Follow the system from stable graph identity to contribution, public projection and professional activation.",
         cta: item.links?.[0] || { label: "Explore VASTE", href: "https://www.vaste.space/" },
       };
     }
@@ -1713,59 +1713,60 @@
     return [
       panelShell(
         "Product definition",
-        "Vestiges is a premium technology platform and VASTE flagship, not a narrative universe, artistic project, wiki or simple marketplace.",
+        "Vestiges is the flagship public application of VASTE: a living knowledge infrastructure rather than a directory, encyclopedia or marketplace.",
         `<div class="stack">
-          ${softPanel("Position", "VASTE made concrete", item.productPosition || "")}
-          ${softPanel("Mission", item.mission || "", "A global infrastructure for knowledge applied to human know-how.")}
-          ${softPanel("Primary resource", item.coreResource || "Knowledge", "People, products and transactions remain important, but the graph of knowledge is the system's durable foundation.")}
+          ${softPanel("Position", "Living knowledge, made operational", item.productPosition || "")}
+          ${softPanel("Mission", item.mission || "", "A durable infrastructure for documenting, connecting and reactivating human know-how.")}
+          ${softPanel("Primary resource", item.coreResource || "Knowledge", "Profiles, services and transactions remain useful, but trusted knowledge and its provenance form the durable foundation.")}
         </div>`,
       ),
       panelShell(
         "The living knowledge graph",
-        "Every entity has its own identity and every relationship remains explicit.",
+        "The system preserves both the entities and the paths through which knowledge moves.",
         `<div class="stack">
-          ${softPanel("Graph principle", "Everything becomes an addressable node", item.graphPrinciple || "")}
+          ${softPanel("Graph principle", "Every record keeps a durable identity", item.graphPrinciple || "")}
           <div class="card-grid card-grid--two">
-            ${softPanel("Node families", `${item.graphNodeTypes?.length || 0} mapped families`, "People, organisations, techniques, materials, places, works and records can each become public knowledge pages.", chipList(item.graphNodeTypes, 12))}
-            ${softPanel("Relationship vocabulary", `${item.relationshipTypes?.length || 0} explicit relations`, "Mastery, teaching, use, provenance, collaboration and certification create the paths through the graph.", chipList(item.relationshipTypes, 10))}
+            ${softPanel("Node families", `${item.graphNodeTypes?.length || 0} mapped families`, "People, organisations, techniques, materials, places, works and records can each become canonical knowledge surfaces.", chipList(item.graphNodeTypes, 12))}
+            ${softPanel("Relationship vocabulary", `${item.relationshipTypes?.length || 0} explicit relations`, "Teaching, making, use, restoration, supply and certification reveal how know-how is transmitted.", chipList(item.relationshipTypes, 10))}
           </div>
         </div>`,
       ),
       panelShell(
-        "Native public knowledge",
-        "The graph produces an expanding network of indexable pages without treating SEO as a separate module.",
+        "Public discovery",
+        "Canonical pages and relation paths make the graph readable without separating publishing from the knowledge model.",
         `<div class="stack">
-          ${softPanel("Infinite pages", "One canonical surface per node", item.seoModel || "")}
+          ${softPanel("Knowledge projection", "One canonical surface per node", item.seoModel || "")}
           ${chipList(["Public page", "Canonical URL", "Description", "Relations", "Media", "History", "Metadata"])}
         </div>`,
       ),
       panelShell(
-        "Multi-actor contribution",
-        "Expertise can enter the same governed graph from the workshop, school, museum, institution or field.",
+        "Contribution and trust",
+        "Expertise can enter the graph from workshops, schools, museums and institutions without losing authorship or editorial responsibility.",
         `<div class="stack">
           ${softPanel("Participants", `${item.stakeholders?.length || 0} initial actor groups`, "Vestiges connects professional, cultural, educational, institutional and private actors.", chipList(item.stakeholders))}
-          ${softPanel("Collaboration", "Distributed knowledge with governance", "Contributions remain attributable, reviewable and enrich the same shared graph.", chipList(item.collaborationCapabilities))}
+          ${softPanel("Collaboration", "Distributed knowledge with governance", "Contributions remain attributable, contextual, reviewable and connected to the same shared graph.", chipList(item.collaborationCapabilities))}
         </div>`,
       ),
       panelShell(
-        "Explore knowledge spatially",
-        "Relationships are designed to be seen as networks, maps and immersive constellations rather than only as lists.",
+        "Explore relation paths",
+        "Knowledge can be read as paths, maps and constellations rather than as isolated profiles.",
         `<div class="stack">
-          ${softPanel("Visualisation", "From graph to navigable space", "A technique can reveal its materials, tools, practitioners, buildings, schools and museums in one connected view.", chipList(item.visualizationModes))}
+          ${softPanel("Visualisation", "From graph to navigable space", "A technique can reveal its materials, tools, practitioners, places, schools and institutions in one connected view.", chipList(item.visualizationModes))}
         </div>`,
       ),
       panelShell(
-        "Economic activation",
-        "The marketplace is a consequence of trusted knowledge and explicit relationships, not the product's final horizon.",
+        "Professional activation",
+        "Services emerge from trusted knowledge and explicit relationships; they do not replace the platform's cultural purpose.",
         `<div class="stack">
-          ${softPanel("Business model", "Services grow from the graph", "Professional tools, exchange, APIs and specialised intelligence can operate on top of the shared knowledge infrastructure.", chipList(item.economicModel))}
+          ${softPanel("Service model", "Utility grows from the graph", "Professional workspaces, collaboration, learning, research and APIs can operate on top of the shared knowledge infrastructure.", chipList(item.economicModel))}
         </div>`,
       ),
       panelShell(
         "Long-term horizon",
-        "Vestiges is conceived as infrastructure capable of growing for decades.",
+        "Vestiges is conceived as durable infrastructure for knowledge that continues to change.",
         `<div class="stack">
-          ${softPanel("Global scope", "A living map of human know-how", "Heritage, production, learning, research and innovation remain connected inside the same evolving system.", chipList(item.longTermDomains))}
+          ${softPanel("Long view", "A living map of human know-how", "Craft, heritage, production, learning, research and innovation remain connected inside the same evolving system.", chipList(item.longTermDomains))}
+          ${softPanel("Public channel", "@vestiges.world", "Visual identity, editorial research and product development.", linkRow({ label: "Open Instagram", href: "https://www.instagram.com/vestiges.world/", target: "_blank" }))}
         </div>`,
       ),
     ].join("");
@@ -2359,15 +2360,17 @@
       }
       return uniqueActions(actions).slice(0, 3);
     })();
+    const primaryLinkLimit = item.id === "vestiges" ? 2 : item.kind === "artist" ? 3 : 1;
+    const heroActionLimit = item.id === "vestiges" ? 3 : item.kind === "artist" ? 3 : 2;
     const heroActions = uniqueActions([
-      ...primaryLinks.slice(0, item.kind === "artist" ? 3 : 1),
+      ...primaryLinks.slice(0, primaryLinkLimit),
       ...(item.kind === "artist" ? [{ label: "Work", href: "./work.html" }] : []),
       ...(item.kind === "project" ? [{ label: "Open Dossier", href: `./project-rl.html?id=${encodeURIComponent(item.id)}` }] : []),
-    ]).slice(0, item.kind === "artist" ? 3 : 2);
+    ]).slice(0, heroActionLimit);
     const detailIntro = item.kind === "program" ? programSpecificPanels(item) : "";
     const artistIntro = item.kind === "artist" ? artistProfilePanels(item) : "";
     const specificPanels =
-      item.id === "palimpsests" || item.id === "unionmob"
+      item.id === "palimpsests" || item.id === "unionmob" || item.id === "vestiges"
         ? projectSpecificPanels(item)
         : clientCaseStudyPanel(item);
     const visualPanels = projectPanels(item);
@@ -2928,10 +2931,15 @@
             ${homeHeroFrame(lead, "home-intent-stage__frame--lead", { depth: 0.82, kicker: "Latest platform", eager: true })}
             ${homeHeroFrame(system, "home-intent-stage__frame--system", { depth: 1.35, kicker: system?.id === "unionmob" ? "External CTO partnership" : "Product system" })}
             ${homeHeroFrame(publicProof, "home-intent-stage__frame--proof", { depth: 1.62, kicker: "Live public proof" })}
-            <div class="home-intent-stage__channels" data-depth="1.42" aria-label="Electronic Artefacts channels">
-              <a href="https://www.instagram.com/electronic.artefacts/" target="_blank" rel="noreferrer">@electronic.artefacts</a>
-              <a href="https://github.com/onlythejoe" target="_blank" rel="noreferrer">GitHub</a>
-              <a href="https://soundcloud.com/electronic-artefacts" target="_blank" rel="noreferrer">SoundCloud</a>
+            <div class="home-intent-stage__channels" data-depth="1.42" aria-label="Instagram channels">
+              <a href="https://www.instagram.com/electronic.artefacts/" target="_blank" rel="noreferrer" aria-label="Open the Electronic Artefacts Instagram channel">
+                <img src="./assets/media/projects/electronic-artefacts/electronic-artefacts-logo.jpg" alt="" loading="lazy" />
+                <span>@electronic.artefacts</span>
+              </a>
+              <a href="https://www.instagram.com/creativestuff.jpg/" target="_blank" rel="noreferrer" aria-label="Open the CreativeStuff.jpg Instagram channel">
+                <img src="./assets/media/projects/creativestuff/creativestuff-logo.jpg" alt="" loading="lazy" />
+                <span>@creativestuff.jpg</span>
+              </a>
             </div>
             ${intentHeroStats(
               [

@@ -1,0 +1,47 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://electronicartefacts.com/knowledge/concepts/open-weight-model/#webpage",
+      "url": "https://electronicartefacts.com/knowledge/concepts/open-weight-model/",
+      "name": "Open-Weight Model",
+      "mainEntity": {
+        "@id": "https://electronicartefacts.com/id/concept/open-weight-model/"
+      },
+      "isPartOf": {
+        "@id": "https://electronicartefacts.com/#website"
+      }
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://electronicartefacts.com/id/concept/open-weight-model/",
+      "name": "Open-Weight Model",
+      "description": "An open-weight model is a machine-learning model whose learned parameters are distributed for reuse under stated terms, without necessarily providing the training data, training code or freedoms required by open-source definitions.",
+      "url": "https://electronicartefacts.com/knowledge/concepts/open-weight-model/",
+      "dateCreated": "2026-06-24",
+      "datePublished": "2026-06-24",
+      "dateModified": "2026-06-24",
+      "publisher": {
+        "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Electronic Artefacts",
+          "item": "https://electronicartefacts.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Open-Weight Model",
+          "item": "https://electronicartefacts.com/knowledge/concepts/open-weight-model/"
+        }
+      ]
+    }
+  ]
+}

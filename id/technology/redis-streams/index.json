@@ -1,0 +1,56 @@
+{
+  "id": "ea:technology:redis-streams",
+  "type": "technology",
+  "slug": {
+    "canonical": "redis-streams"
+  },
+  "title": "Redis Streams",
+  "abstract": "Redis Streams is an append-only log data type with ordered entries, range reads, trimming and consumer-group processing.",
+  "description": "A technology record for event streams, orchestration and real-time processing.",
+  "locale": "en",
+  "visibility": "public",
+  "publicationClass": "canonical",
+  "status": "active",
+  "maturity": "production",
+  "confidence": "canonical",
+  "version": {
+    "version": "1.0.0",
+    "createdAt": "2026-06-24",
+    "publishedAt": "2026-06-24",
+    "modifiedAt": "2026-06-24"
+  },
+  "authors": [
+    {
+      "id": "ea:organization:electronic-artefacts"
+    }
+  ],
+  "publisher": "ea:organization:electronic-artefacts",
+  "tags": [
+    "Redis Streams",
+    "Event Log",
+    "Consumer Groups",
+    "Orchestration"
+  ],
+  "disciplines": [
+    "Software Architecture",
+    "Programming",
+    "Distributed Systems"
+  ],
+  "sources": [
+    {
+      "title": "Redis Streams",
+      "url": "https://redis.io/docs/latest/develop/data-types/streams/",
+      "publisher": "Redis",
+      "accessedAt": "2026-06-24"
+    }
+  ],
+  "category": "database",
+  "roleInEcosystem": "Redis Streams provides a compact event-log and consumer-group primitive for bounded orchestration, projections and real-time services.",
+  "officialUrl": "https://redis.io/docs/latest/develop/data-types/streams/",
+  "bodyHtml": "<h2>Role</h2>\n<p>Redis Streams stores ordered entries in an append-only structure and supports multiple consumption patterns, including consumer groups and pending-entry tracking.</p>\n<h2>Use</h2>\n<p>It can support task distribution, event projections, integration streams and real-time processing when Redis fits the operational scale and durability requirements.</p>\n<h2>References</h2>\n<p>See the official Redis Streams documentation and Event-Driven Architecture.</p>\n",
+  "headings": [
+    "Role",
+    "Use",
+    "References"
+  ]
+}

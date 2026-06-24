@@ -40,6 +40,9 @@ export const jsonLdFor = (entity: Entity) => {
     primary.citation = entity.citation.preferred;
     primary.about = entity.subjects.map((subject) => ({ "@id": identifierForRef(subject.id) }));
   }
+  if (entity.type === "project" && entity.socialLinks?.length) {
+    primary.sameAs = entity.socialLinks.map((link) => link.href);
+  }
   return {
     "@context": "https://schema.org",
     "@graph": [

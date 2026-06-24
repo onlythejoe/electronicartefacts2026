@@ -52,6 +52,14 @@
       "confidence": "published"
     },
     {
+      "id": "ea:publication:multimodal-ai-across-text-image-audio-and-video",
+      "type": "publication",
+      "title": "Multimodal AI Across Text, Image, Audio and Video",
+      "route": "/publications/multimodal-ai-across-text-image-audio-and-video/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
       "id": "ea:publication:signal-archaeology-audio-memory-and-machine-listening",
       "type": "publication",
       "title": "Signal Archaeology, Audio Memory and Machine Listening",
@@ -113,6 +121,15 @@
       "predicate": "documents",
       "label": "Documents",
       "statement": "Signal Archaeology, Audio Memory and Machine Listening links Palimpsests to audio memory and sonic residue.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:multimodal-article-documents-palimpsests",
+      "source": "ea:publication:multimodal-ai-across-text-image-audio-and-video",
+      "target": "ea:project:palimpsests",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Multimodal AI Across Text, Image, Audio and Video uses Palimpsests as a compound media and provenance context.",
       "confidence": "published"
     }
   ]

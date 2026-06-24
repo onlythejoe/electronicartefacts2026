@@ -1,0 +1,68 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://electronicartefacts.com/publications/ontologies-taxonomies-and-knowledge-modeling/#webpage",
+      "url": "https://electronicartefacts.com/publications/ontologies-taxonomies-and-knowledge-modeling/",
+      "name": "Ontologies, Taxonomies and Knowledge Modeling",
+      "mainEntity": {
+        "@id": "https://electronicartefacts.com/id/publication/ontologies-taxonomies-and-knowledge-modeling/"
+      },
+      "isPartOf": {
+        "@id": "https://electronicartefacts.com/#website"
+      }
+    },
+    {
+      "@type": "TechArticle",
+      "@id": "https://electronicartefacts.com/id/publication/ontologies-taxonomies-and-knowledge-modeling/",
+      "name": "Ontologies, Taxonomies and Knowledge Modeling",
+      "description": "A practical guide to taxonomies, thesauri, folksonomies, ontologies, controlled vocabularies, OWL, SKOS and sustainable semantic modeling.",
+      "url": "https://electronicartefacts.com/publications/ontologies-taxonomies-and-knowledge-modeling/",
+      "dateCreated": "2026-06-24",
+      "datePublished": "2026-06-24",
+      "dateModified": "2026-06-24",
+      "publisher": {
+        "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
+      },
+      "citation": "Electronic Artefacts. \"Ontologies, Taxonomies and Knowledge Modeling.\" Technical article, version 1.0.0, 2026.",
+      "about": [
+        {
+          "@id": "https://electronicartefacts.com/id/concept/ontology/"
+        },
+        {
+          "@id": "https://electronicartefacts.com/id/concept/knowledge-graph/"
+        },
+        {
+          "@id": "https://electronicartefacts.com/id/concept/metadata/"
+        },
+        {
+          "@id": "https://electronicartefacts.com/id/technology/owl/"
+        },
+        {
+          "@id": "https://electronicartefacts.com/id/technology/skos/"
+        },
+        {
+          "@id": "https://electronicartefacts.com/id/project/vestiges/"
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Electronic Artefacts",
+          "item": "https://electronicartefacts.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Ontologies, Taxonomies and Knowledge Modeling",
+          "item": "https://electronicartefacts.com/publications/ontologies-taxonomies-and-knowledge-modeling/"
+        }
+      ]
+    }
+  ]
+}

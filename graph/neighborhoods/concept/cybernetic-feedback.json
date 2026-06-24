@@ -26,6 +26,14 @@
       "route": "/publications/generative-systems-cybernetics-and-creative-coding/",
       "status": "active",
       "confidence": "published"
+    },
+    {
+      "id": "ea:publication:systems-thinking-for-creative-practice",
+      "type": "publication",
+      "title": "Systems Thinking for Creative Practice",
+      "route": "/publications/systems-thinking-for-creative-practice/",
+      "status": "active",
+      "confidence": "published"
     }
   ],
   "edges": [
@@ -45,6 +53,15 @@
       "predicate": "documents",
       "label": "Documents",
       "statement": "Algorithmic Composition and Rule-Based Music connects feedback loops to musical systems.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:systems-thinking-article-documents-cybernetic-feedback",
+      "source": "ea:publication:systems-thinking-for-creative-practice",
+      "target": "ea:concept:cybernetic-feedback",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Systems Thinking for Creative Practice connects system behavior to cybernetic feedback.",
       "confidence": "published"
     }
   ]

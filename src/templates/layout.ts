@@ -9,9 +9,10 @@ interface LayoutInput {
   footer: string;
   jsonLd: unknown;
   pageClass?: string;
+  entryId?: string;
 }
 
-export const renderLayout = ({ metadata, body, header, footer, jsonLd, pageClass = "generated" }: LayoutInput): string => `<!doctype html>
+export const renderLayout = ({ metadata, body, header, footer, jsonLd, pageClass = "generated", entryId }: LayoutInput): string => `<!doctype html>
 <html lang="${site.language}">
   <head>
     <meta charset="utf-8" />
@@ -38,10 +39,10 @@ export const renderLayout = ({ metadata, body, header, footer, jsonLd, pageClass
     <meta name="twitter:image" content="${escapeHtml(metadata.image)}" />
     <title>${escapeHtml(metadata.title)}</title>
     <script type="application/ld+json">${JSON.stringify(jsonLd).replaceAll("<", "\\u003c")}</script>
-    <link rel="stylesheet" href="/assets/css/app.css?v=26" />
-    <script type="module" src="/assets/js/app.js?v=26"></script>
+    <link rel="stylesheet" href="/assets/css/app.css?v=27" />
+    <script type="module" src="/assets/js/app.js?v=27"></script>
   </head>
-  <body data-page="${escapeHtml(pageClass)}" data-generated-page="true">
+  <body data-page="${escapeHtml(pageClass)}" data-generated-page="true"${entryId ? ` data-entry-id="${escapeHtml(entryId)}"` : ""}>
     <a class="skip-link" href="#main">Skip to main content</a>
     <header>${header}</header>
     <main id="main" class="site-main">${body}</main>

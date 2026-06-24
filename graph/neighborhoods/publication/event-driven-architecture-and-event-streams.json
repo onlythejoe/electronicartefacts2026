@@ -1,0 +1,119 @@
+{
+  "id": "local:ea:publication:event-driven-architecture-and-event-streams",
+  "kind": "local",
+  "focus": "ea:publication:event-driven-architecture-and-event-streams",
+  "nodes": [
+    {
+      "id": "ea:collection:knowledge-hub-third-wave",
+      "type": "collection",
+      "title": "Knowledge Hub Third Wave",
+      "route": "/archive/collections/knowledge-hub-third-wave/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:concept:contextual-execution",
+      "type": "concept",
+      "title": "Contextual Execution",
+      "route": "/knowledge/concepts/contextual-execution/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:concept:event-driven-architecture",
+      "type": "concept",
+      "title": "Event-Driven Architecture",
+      "route": "/knowledge/concepts/event-driven-architecture/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:concept:graph-runtime",
+      "type": "concept",
+      "title": "Graph Runtime",
+      "route": "/knowledge/concepts/graph-runtime/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:program:vaste",
+      "type": "program",
+      "title": "VASTE",
+      "route": "/programs/vaste/",
+      "status": "development",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:event-driven-architecture-and-event-streams",
+      "type": "publication",
+      "title": "Event-Driven Architecture and Event Streams",
+      "route": "/publications/event-driven-architecture-and-event-streams/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:technology:cloudevents",
+      "type": "technology",
+      "title": "CloudEvents",
+      "route": "/knowledge/technologies/cloudevents/",
+      "status": "active",
+      "confidence": "canonical"
+    }
+  ],
+  "edges": [
+    {
+      "id": "ear:event-architecture-article-documents-event-driven-architecture",
+      "source": "ea:publication:event-driven-architecture-and-event-streams",
+      "target": "ea:concept:event-driven-architecture",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Event-Driven Architecture and Event Streams documents event-driven system design.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:event-architecture-article-uses-cloudevents",
+      "source": "ea:publication:event-driven-architecture-and-event-streams",
+      "target": "ea:technology:cloudevents",
+      "predicate": "usesTechnology",
+      "label": "Uses technology",
+      "statement": "Event-Driven Architecture and Event Streams uses CloudEvents as an interoperable event-envelope reference.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:event-architecture-article-documents-contextual-execution",
+      "source": "ea:publication:event-driven-architecture-and-event-streams",
+      "target": "ea:concept:contextual-execution",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Event-Driven Architecture and Event Streams connects event propagation to contextual execution.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:event-architecture-article-documents-graph-runtime",
+      "source": "ea:publication:event-driven-architecture-and-event-streams",
+      "target": "ea:concept:graph-runtime",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Event-Driven Architecture and Event Streams explains event flow inside graph runtimes.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:event-architecture-article-documents-vaste",
+      "source": "ea:publication:event-driven-architecture-and-event-streams",
+      "target": "ea:program:vaste",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Event-Driven Architecture and Event Streams uses VASTE as an applied event-propagation context.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:knowledge-hub-third-wave-has-event-architecture-article",
+      "source": "ea:collection:knowledge-hub-third-wave",
+      "target": "ea:publication:event-driven-architecture-and-event-streams",
+      "predicate": "hasPart",
+      "label": "Has part",
+      "statement": "Knowledge Hub Third Wave includes Event-Driven Architecture and Event Streams.",
+      "confidence": "published"
+    }
+  ]
+}

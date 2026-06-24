@@ -1,0 +1,65 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://electronicartefacts.com/publications/microservices-modular-monoliths-and-system-boundaries/#webpage",
+      "url": "https://electronicartefacts.com/publications/microservices-modular-monoliths-and-system-boundaries/",
+      "name": "Microservices, Modular Monoliths and System Boundaries",
+      "mainEntity": {
+        "@id": "https://electronicartefacts.com/id/publication/microservices-modular-monoliths-and-system-boundaries/"
+      },
+      "isPartOf": {
+        "@id": "https://electronicartefacts.com/#website"
+      }
+    },
+    {
+      "@type": "TechArticle",
+      "@id": "https://electronicartefacts.com/id/publication/microservices-modular-monoliths-and-system-boundaries/",
+      "name": "Microservices, Modular Monoliths and System Boundaries",
+      "description": "A pragmatic comparison of microservices and modular monoliths through domain boundaries, data ownership, deployment, events, observability and team structure.",
+      "url": "https://electronicartefacts.com/publications/microservices-modular-monoliths-and-system-boundaries/",
+      "dateCreated": "2026-06-24",
+      "datePublished": "2026-06-24",
+      "dateModified": "2026-06-24",
+      "publisher": {
+        "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
+      },
+      "citation": "Electronic Artefacts. \"Microservices, Modular Monoliths and System Boundaries.\" Technical article, version 1.0.0, 2026.",
+      "about": [
+        {
+          "@id": "https://electronicartefacts.com/id/concept/microservice-architecture/"
+        },
+        {
+          "@id": "https://electronicartefacts.com/id/concept/event-driven-architecture/"
+        },
+        {
+          "@id": "https://electronicartefacts.com/id/concept/systems-thinking/"
+        },
+        {
+          "@id": "https://electronicartefacts.com/id/concept/contextual-execution/"
+        },
+        {
+          "@id": "https://electronicartefacts.com/id/program/vaste/"
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Electronic Artefacts",
+          "item": "https://electronicartefacts.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Microservices, Modular Monoliths and System Boundaries",
+          "item": "https://electronicartefacts.com/publications/microservices-modular-monoliths-and-system-boundaries/"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,77 @@
+{
+  "id": "ea:concept:ai-agent",
+  "type": "concept",
+  "slug": {
+    "canonical": "ai-agent"
+  },
+  "title": "AI Agent",
+  "definition": "An AI agent is a software system in which a model can select actions, use tools, observe results and adapt its next steps toward an objective within defined boundaries.",
+  "abstract": "AI agents combine models, tools, memory, environmental feedback, stopping conditions, permissions and evaluation in an iterative action loop.",
+  "description": "A canonical definition distinguishing AI agents from fixed AI workflows and conventional automation.",
+  "locale": "en",
+  "visibility": "public",
+  "publicationClass": "canonical",
+  "status": "active",
+  "maturity": "research",
+  "confidence": "validated",
+  "version": {
+    "version": "1.0.0",
+    "createdAt": "2026-06-24",
+    "publishedAt": "2026-06-24",
+    "modifiedAt": "2026-06-24"
+  },
+  "authors": [
+    {
+      "id": "ea:organization:electronic-artefacts"
+    }
+  ],
+  "publisher": "ea:organization:electronic-artefacts",
+  "tags": [
+    "AI Agents",
+    "Tool Use",
+    "Automation",
+    "Orchestration",
+    "Human Oversight"
+  ],
+  "disciplines": [
+    "Artificial Intelligence",
+    "Systems Design",
+    "Human Computer Interaction",
+    "Software Architecture"
+  ],
+  "sources": [
+    {
+      "title": "Building Effective Agents",
+      "url": "https://www.anthropic.com/engineering/building-effective-agents",
+      "author": "Erik Schluntz and Barry Zhang",
+      "publisher": "Anthropic",
+      "publishedAt": "2024-12-19",
+      "accessedAt": "2026-06-24"
+    }
+  ],
+  "scope": [
+    "Tool use",
+    "Planning",
+    "Environmental feedback",
+    "Memory and state",
+    "Permissions",
+    "Stopping conditions"
+  ],
+  "exclusions": [
+    "A fixed sequence of model calls with no model-directed action selection",
+    "Unbounded autonomy with no observable state or control surface"
+  ],
+  "claims": [
+    "Agency is an architectural property of the whole system, not a property of the model output alone.",
+    "Agents require stronger permissions, observability and evaluation than deterministic workflows."
+  ],
+  "bodyHtml": "<h2>Definition</h2>\n<p>An AI agent is a system that lets a model influence the sequence of actions used to pursue an objective. It can inspect context, choose a tool, receive an observation, revise a plan and continue until a stopping condition is met.</p>\n<h2>Difference from a workflow</h2>\n<p>A workflow follows paths substantially defined in advance. An agent chooses among possible paths at runtime. Real systems often combine both: deterministic code controls permissions and irreversible actions while a model handles interpretation, planning or recovery.</p>\n<h2>System boundary</h2>\n<p>The agent includes more than the model. Tool definitions, credentials, memory, environment, logs, budgets, approval gates and evaluators all contribute to its behavior.</p>\n<h2>Electronic Artefacts position</h2>\n<p>Electronic Artefacts connects agents to contextual execution. An action should be constrained by actor identity, target entity, relation, evidence level, visibility and current state. VASTE provides a relevant research context for that model.</p>\n<h2>Limitations</h2>\n<p>Longer action loops increase latency, cost and the chance of compounding errors. Agents need sandboxing, bounded authority, explicit completion criteria and human review where consequences are difficult to reverse.</p>\n<h2>References</h2>\n<p>See Building Effective Agents, Contextual Execution, Large Language Model and Autonomous System.</p>\n",
+  "headings": [
+    "Definition",
+    "Difference from a workflow",
+    "System boundary",
+    "Electronic Artefacts position",
+    "Limitations",
+    "References"
+  ]
+}

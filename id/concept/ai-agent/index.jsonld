@@ -1,0 +1,47 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://electronicartefacts.com/knowledge/concepts/ai-agent/#webpage",
+      "url": "https://electronicartefacts.com/knowledge/concepts/ai-agent/",
+      "name": "AI Agent",
+      "mainEntity": {
+        "@id": "https://electronicartefacts.com/id/concept/ai-agent/"
+      },
+      "isPartOf": {
+        "@id": "https://electronicartefacts.com/#website"
+      }
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://electronicartefacts.com/id/concept/ai-agent/",
+      "name": "AI Agent",
+      "description": "An AI agent is a software system in which a model can select actions, use tools, observe results and adapt its next steps toward an objective within defined boundaries.",
+      "url": "https://electronicartefacts.com/knowledge/concepts/ai-agent/",
+      "dateCreated": "2026-06-24",
+      "datePublished": "2026-06-24",
+      "dateModified": "2026-06-24",
+      "publisher": {
+        "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Electronic Artefacts",
+          "item": "https://electronicartefacts.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "AI Agent",
+          "item": "https://electronicartefacts.com/knowledge/concepts/ai-agent/"
+        }
+      ]
+    }
+  ]
+}

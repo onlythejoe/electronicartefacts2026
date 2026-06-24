@@ -181,6 +181,7 @@ const renderMediaElement = (media: MediaRef, className: string, loading: "eager"
 
 const renderHeroVisual = (project: ProjectEntity): string => {
   const media = firstVisualMedia(project);
+  const categoryLabel = project.slug.canonical === "vestiges" ? "Living knowledge platform" : project.category;
   if (!media) {
     return `
       <figure class="detail-hero__visual project-dossier-hero__visual project-dossier-hero__visual--empty">
@@ -189,7 +190,7 @@ const renderHeroVisual = (project: ProjectEntity): string => {
         </div>
         <figcaption>
           <span>${escapeHtml(project.status)}</span>
-          <strong>${escapeHtml(project.category)}</strong>
+          <strong>${escapeHtml(categoryLabel)}</strong>
         </figcaption>
       </figure>`;
   }
@@ -199,7 +200,7 @@ const renderHeroVisual = (project: ProjectEntity): string => {
       ${renderMediaElement(media, "project-immersive__image")}
       <figcaption>
         <span>${escapeHtml(media.caption || project.status)}</span>
-        <strong>${escapeHtml(project.category)}</strong>
+        <strong>${escapeHtml(categoryLabel)}</strong>
       </figcaption>
     </figure>`;
 };
@@ -249,6 +250,7 @@ const renderProjectTabs = (
   byId: Map<string, Entity>,
   routeById: Record<string, string>,
 ): string => {
+  const isVestiges = project.slug.canonical === "vestiges";
   const evidenceCards = publicRefs(project.evidence, byId).map((ref) => refDetails(ref, byId, routeById));
   const tabs = [
     {
@@ -302,8 +304,8 @@ const renderProjectTabs = (
       <div class="project-command__top">
         <div class="section-head">
           <p class="eyebrow">PROJECT READING</p>
-          <h2>A compact cockpit for the dossier.</h2>
-          <p class="lede">Move between strategic framing, context, implementation logic and evidence without losing the surrounding page.</p>
+          <h2>${isVestiges ? "Read Vestiges from thesis to evidence." : "A compact cockpit for the dossier."}</h2>
+          <p class="lede">${isVestiges ? "Move from the cultural problem to the graph model, contribution logic and current public evidence." : "Move between strategic framing, context, implementation logic and evidence without losing the surrounding page."}</p>
         </div>
         <div class="project-command__nav" role="tablist" aria-label="Project dossier sections">
           ${tabs.map((tab, index) => `
@@ -338,13 +340,14 @@ const renderProjectTabs = (
 const renderProjectSystem = (project: ProjectEntity): string => {
   const hasConstraints = Boolean(project.constraints?.length);
   const hasOutcomes = Boolean(project.outcomes?.length);
+  const isVestiges = project.slug.canonical === "vestiges";
 
   return `
     <section class="zone-card hero project-intelligence" id="project-system">
       <div class="section-head">
         <p class="eyebrow">PROJECT INTELLIGENCE</p>
-        <h2>Brief, context and operating frame in one place.</h2>
-        <p class="lede">This section rebuilds itself from the structured project record, so the page stays precise when a project gains constraints, outcomes, media or evidence.</p>
+        <h2>${isVestiges ? "Knowledge, trust and activation in one operating model." : "Brief, context and operating frame in one place."}</h2>
+        <p class="lede">${isVestiges ? "Vestiges treats living know-how as shared infrastructure: addressable, attributable, reviewable and reusable across public and professional contexts." : "This section rebuilds itself from the structured project record, so the page stays precise when a project gains constraints, outcomes, media or evidence."}</p>
       </div>
       <div class="project-intelligence__grid">
         <article class="panel project-intelligence__card project-intelligence__card--lead">
@@ -425,6 +428,7 @@ const relationDisplay = (
 
 const renderProjectMoodboard = (project: ProjectEntity): string => {
   if (!projectHasArtDirection(project)) return "";
+  const isVestiges = project.slug.canonical === "vestiges";
   const assets = designMediaFor(project);
   const logoAssets = assets.filter((media) => visualAssetGroup(media) === "identity");
   const leadAssets = assets.length ? assets.slice(0, 8) : project.media?.slice(0, 4) || [];
@@ -437,8 +441,8 @@ const renderProjectMoodboard = (project: ProjectEntity): string => {
       <div class="project-moodboard__intro">
         <div class="section-head">
           <p class="eyebrow">ART DIRECTION</p>
-          <h2>Moodboard, marks and visual system.</h2>
-          <p class="lede">The board appears when the project carries identity, mood or visual-language material, and its assets stay tied to the project media record.</p>
+          <h2>${isVestiges ? "A restrained identity for living knowledge." : "Moodboard, marks and visual system."}</h2>
+          <p class="lede">${isVestiges ? "White space, black structure and archival restraint keep the identity quiet enough for many cultures, practices and sources to coexist." : "The board appears when the project carries identity, mood or visual-language material, and its assets stay tied to the project media record."}</p>
         </div>
         ${groups.length > 1 ? `
           <div class="project-moodboard__filters" aria-label="Moodboard asset filters">
@@ -499,6 +503,7 @@ const renderProjectDevelopment = (
   byId: Map<string, Entity>,
   routeById: Record<string, string>,
 ): string => {
+  const isVestiges = project.slug.canonical === "vestiges";
   const implementation = connectedRelationsFor(project, relations, byId)
     .filter((relation) => predicateDefinitions[relation.predicate]?.group === "implementation")
     .map((relation) => relationDisplay(relation, project, byId, routeById));
@@ -512,8 +517,8 @@ const renderProjectDevelopment = (
     <section class="zone-card hero project-discipline project-discipline--dev" id="project-dev">
       <div class="section-head">
         <p class="eyebrow">DEVELOPMENT</p>
-        <h2>Architecture, implementation logic and build surface.</h2>
-        <p class="lede">The technical read is generated from approach steps and typed implementation relations, then reinforced by current constraints and delivery state.</p>
+        <h2>${isVestiges ? "A graph runtime for cultural transmission." : "Architecture, implementation logic and build surface."}</h2>
+        <p class="lede">${isVestiges ? "Stable identities, typed relations, provenance and contextual permissions turn cultural records into an executable and governable system." : "The technical read is generated from approach steps and typed implementation relations, then reinforced by current constraints and delivery state."}</p>
       </div>
       <div class="project-discipline__grid">
         <article class="panel project-discipline__card project-discipline__card--lead">
@@ -561,6 +566,7 @@ const renderProjectMarketing = (
   byId: Map<string, Entity>,
   routeById: Record<string, string>,
 ): string => {
+  const isVestiges = project.slug.canonical === "vestiges";
   const audience = uniqueRefs(publicRefs([...project.stakeholders, ...project.credits], byId))
     .map((ref) => refDetails(ref, byId, routeById))
     .slice(0, 6);
@@ -580,8 +586,8 @@ const renderProjectMarketing = (
     <section class="zone-card hero project-discipline project-discipline--marketing" id="project-marketing">
       <div class="section-head">
         <p class="eyebrow">MARKETING</p>
-        <h2>Positioning, audience and proof.</h2>
-        <p class="lede">This view translates the project record into a public-facing offer: who it speaks to, what it promises and what can already be shown.</p>
+        <h2>${isVestiges ? "From public knowledge to professional utility." : "Positioning, audience and proof."}</h2>
+        <p class="lede">${isVestiges ? "The offer begins with trustworthy discovery, then extends into contribution, learning, collaboration and specialist services." : "This view translates the project record into a public-facing offer: who it speaks to, what it promises and what can already be shown."}</p>
       </div>
       <div class="project-marketing__grid">
         <article class="panel project-marketing__statement">
@@ -680,6 +686,7 @@ export const renderProjectPage = (
   byId: Map<string, Entity>,
   routeById: Record<string, string>,
 ): string => {
+  const isVestiges = project.slug.canonical === "vestiges";
   const connected = connectedRelationsFor(project, relations, byId);
   const tags = uniqueStrings([...(project.disciplines || []), ...(project.tags || [])]);
   const mediaCount = project.media?.length || 0;
@@ -709,10 +716,11 @@ export const renderProjectPage = (
         <div class="button-row button-row--compact">
           <a class="button button--primary" href="#project-brief">Read the brief</a>
           <a class="button button--secondary" href="${hasGraph ? "#project-graph" : "#project-thesis"}">${hasGraph ? "Inspect graph" : "Read thesis"}</a>
+          ${(project.socialLinks || []).map((link) => `<a class="button button--secondary" href="${escapeHtml(link.href)}" target="_blank" rel="noreferrer">${escapeHtml(link.label)}</a>`).join("")}
         </div>
         <div class="metric-rail">
           ${renderMetric("Status", labelFrom(project.status), project.maturity, "surface")}
-          ${renderMetric("Category", labelFrom(project.category), project.confidence, "research")}
+          ${renderMetric("Category", isVestiges ? "Flagship platform" : labelFrom(project.category), project.confidence, "research")}
           ${renderMetric("Relations", String(connected.length), "typed edges", "system")}
           ${renderMetric("Media", String(mediaCount), mediaCount === 1 ? "asset" : "assets", "visual")}
         </div>
@@ -737,7 +745,7 @@ export const renderProjectPage = (
     <article class="zone-card hero publication-body project-dossier-body" id="project-thesis">
       <div class="section-head">
         <p class="eyebrow">PROJECT THESIS</p>
-        <h2>Detailed reading notes.</h2>
+        <h2>${isVestiges ? "Vestiges as living knowledge infrastructure." : "Detailed reading notes."}</h2>
       </div>
       ${project.bodyHtml}
     </article>

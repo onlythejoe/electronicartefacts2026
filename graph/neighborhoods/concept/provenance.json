@@ -28,6 +28,14 @@
       "confidence": "published"
     },
     {
+      "id": "ea:publication:how-large-language-models-actually-work",
+      "type": "publication",
+      "title": "How Large Language Models Actually Work",
+      "route": "/publications/how-large-language-models-actually-work/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
       "id": "ea:publication:knowledge-graphs-for-cultural-infrastructure",
       "type": "publication",
       "title": "Knowledge Graphs for Cultural Infrastructure",
@@ -36,10 +44,34 @@
       "confidence": "published"
     },
     {
+      "id": "ea:publication:local-and-open-source-ai-systems",
+      "type": "publication",
+      "title": "Local and Open Source AI Systems",
+      "route": "/publications/local-and-open-source-ai-systems/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
       "id": "ea:publication:metadata-cataloguing-and-cultural-memory",
       "type": "publication",
       "title": "Metadata, Cataloguing and Cultural Memory",
       "route": "/publications/metadata-cataloguing-and-cultural-memory/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:multimodal-ai-across-text-image-audio-and-video",
+      "type": "publication",
+      "title": "Multimodal AI Across Text, Image, Audio and Video",
+      "route": "/publications/multimodal-ai-across-text-image-audio-and-video/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:retrieval-augmented-generation-and-knowledge-systems",
+      "type": "publication",
+      "title": "Retrieval-Augmented Generation and Knowledge Systems",
+      "route": "/publications/retrieval-augmented-generation-and-knowledge-systems/",
       "status": "active",
       "confidence": "published"
     },
@@ -96,6 +128,42 @@
       "predicate": "documents",
       "label": "Documents",
       "statement": "Generative AI, Latent Space and Creative Workflows explains provenance as a requirement for responsible AI-assisted production.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:llm-article-documents-provenance",
+      "source": "ea:publication:how-large-language-models-actually-work",
+      "target": "ea:concept:provenance",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "How Large Language Models Actually Work explains why model and data provenance matter.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:local-ai-article-documents-provenance",
+      "source": "ea:publication:local-and-open-source-ai-systems",
+      "target": "ea:concept:provenance",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Local and Open Source AI Systems connects model deployment to provenance and reproducibility.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:rag-article-documents-provenance",
+      "source": "ea:publication:retrieval-augmented-generation-and-knowledge-systems",
+      "target": "ea:concept:provenance",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Retrieval-Augmented Generation and Knowledge Systems connects citations and source grounding to provenance.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:multimodal-article-documents-provenance",
+      "source": "ea:publication:multimodal-ai-across-text-image-audio-and-video",
+      "target": "ea:concept:provenance",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Multimodal AI Across Text, Image, Audio and Video documents provenance risks across generated media.",
       "confidence": "published"
     }
   ]

@@ -1,0 +1,65 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://electronicartefacts.com/publications/ai-agents-vs-ai-workflows/#webpage",
+      "url": "https://electronicartefacts.com/publications/ai-agents-vs-ai-workflows/",
+      "name": "AI Agents vs AI Workflows",
+      "mainEntity": {
+        "@id": "https://electronicartefacts.com/id/publication/ai-agents-vs-ai-workflows/"
+      },
+      "isPartOf": {
+        "@id": "https://electronicartefacts.com/#website"
+      }
+    },
+    {
+      "@type": "TechArticle",
+      "@id": "https://electronicartefacts.com/id/publication/ai-agents-vs-ai-workflows/",
+      "name": "AI Agents vs AI Workflows",
+      "description": "A practical comparison of model-directed agents, deterministic workflows, hybrid orchestration, tool permissions, memory, evaluation and human oversight.",
+      "url": "https://electronicartefacts.com/publications/ai-agents-vs-ai-workflows/",
+      "dateCreated": "2026-06-24",
+      "datePublished": "2026-06-24",
+      "dateModified": "2026-06-24",
+      "publisher": {
+        "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
+      },
+      "citation": "Electronic Artefacts. \"AI Agents vs AI Workflows.\" Technical article, version 1.0.0, 2026.",
+      "about": [
+        {
+          "@id": "https://electronicartefacts.com/id/concept/ai-agent/"
+        },
+        {
+          "@id": "https://electronicartefacts.com/id/concept/large-language-model/"
+        },
+        {
+          "@id": "https://electronicartefacts.com/id/concept/contextual-execution/"
+        },
+        {
+          "@id": "https://electronicartefacts.com/id/concept/autonomous-system/"
+        },
+        {
+          "@id": "https://electronicartefacts.com/id/program/vaste/"
+        }
+      ]
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Electronic Artefacts",
+          "item": "https://electronicartefacts.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "AI Agents vs AI Workflows",
+          "item": "https://electronicartefacts.com/publications/ai-agents-vs-ai-workflows/"
+        }
+      ]
+    }
+  ]
+}

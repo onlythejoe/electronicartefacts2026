@@ -65,6 +65,7 @@ export interface ProjectEntity extends BaseEntity {
   symbols?: string[];
   developmentFocus?: string[];
   marketingFocus?: string[];
+  socialLinks?: Array<{ label: string; href: string }>;
 }
 
 export interface ProgramEntity extends BaseEntity {

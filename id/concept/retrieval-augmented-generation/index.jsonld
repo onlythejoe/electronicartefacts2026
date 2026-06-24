@@ -1,0 +1,47 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://electronicartefacts.com/knowledge/concepts/retrieval-augmented-generation/#webpage",
+      "url": "https://electronicartefacts.com/knowledge/concepts/retrieval-augmented-generation/",
+      "name": "Retrieval-Augmented Generation",
+      "mainEntity": {
+        "@id": "https://electronicartefacts.com/id/concept/retrieval-augmented-generation/"
+      },
+      "isPartOf": {
+        "@id": "https://electronicartefacts.com/#website"
+      }
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://electronicartefacts.com/id/concept/retrieval-augmented-generation/",
+      "name": "Retrieval-Augmented Generation",
+      "description": "Retrieval-augmented generation is an architecture that retrieves external information at query time and supplies selected evidence to a generative model before or during response production.",
+      "url": "https://electronicartefacts.com/knowledge/concepts/retrieval-augmented-generation/",
+      "dateCreated": "2026-06-24",
+      "datePublished": "2026-06-24",
+      "dateModified": "2026-06-24",
+      "publisher": {
+        "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Electronic Artefacts",
+          "item": "https://electronicartefacts.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Retrieval-Augmented Generation",
+          "item": "https://electronicartefacts.com/knowledge/concepts/retrieval-augmented-generation/"
+        }
+      ]
+    }
+  ]
+}

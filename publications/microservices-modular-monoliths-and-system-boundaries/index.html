@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="dark" />
+    <meta name="description" content="Learn when microservices make sense, why modular monoliths are often the better starting point, and how to define durable system boundaries." />
+    <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
+    <meta name="author" content="Electronic Artefacts" />
+    <meta name="theme-color" content="#000000" />
+    <link rel="canonical" href="https://electronicartefacts.com/publications/microservices-modular-monoliths-and-system-boundaries/" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/assets/media/projects/electronic-artefacts/electronic-artefacts-icon-192.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta property="og:title" content="Microservices, Modular Monoliths and System Boundaries | Electronic Artefacts" />
+    <meta property="og:description" content="Learn when microservices make sense, why modular monoliths are often the better starting point, and how to define durable system boundaries." />
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content="Electronic Artefacts" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:url" content="https://electronicartefacts.com/publications/microservices-modular-monoliths-and-system-boundaries/" />
+    <meta property="og:image" content="https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-search.jpg" />
+    <meta property="og:image:alt" content="Microservices, Modular Monoliths and System Boundaries" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Microservices, Modular Monoliths and System Boundaries | Electronic Artefacts" />
+    <meta name="twitter:description" content="Learn when microservices make sense, why modular monoliths are often the better starting point, and how to define durable system boundaries." />
+    <meta name="twitter:image" content="https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-search.jpg" />
+    <title>Microservices, Modular Monoliths and System Boundaries | Electronic Artefacts</title>
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://electronicartefacts.com/publications/microservices-modular-monoliths-and-system-boundaries/#webpage","url":"https://electronicartefacts.com/publications/microservices-modular-monoliths-and-system-boundaries/","name":"Microservices, Modular Monoliths and System Boundaries","mainEntity":{"@id":"https://electronicartefacts.com/id/publication/microservices-modular-monoliths-and-system-boundaries/"},"isPartOf":{"@id":"https://electronicartefacts.com/#website"}},{"@type":"TechArticle","@id":"https://electronicartefacts.com/id/publication/microservices-modular-monoliths-and-system-boundaries/","name":"Microservices, Modular Monoliths and System Boundaries","description":"A pragmatic comparison of microservices and modular monoliths through domain boundaries, data ownership, deployment, events, observability and team structure.","url":"https://electronicartefacts.com/publications/microservices-modular-monoliths-and-system-boundaries/","dateCreated":"2026-06-24","datePublished":"2026-06-24","dateModified":"2026-06-24","publisher":{"@id":"https://electronicartefacts.com/id/organization/electronic-artefacts/"},"citation":"Electronic Artefacts. \"Microservices, Modular Monoliths and System Boundaries.\" Technical article, version 1.0.0, 2026.","about":[{"@id":"https://electronicartefacts.com/id/concept/microservice-architecture/"},{"@id":"https://electronicartefacts.com/id/concept/event-driven-architecture/"},{"@id":"https://electronicartefacts.com/id/concept/systems-thinking/"},{"@id":"https://electronicartefacts.com/id/concept/contextual-execution/"},{"@id":"https://electronicartefacts.com/id/program/vaste/"}]},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Electronic Artefacts","item":"https://electronicartefacts.com/"},{"@type":"ListItem","position":2,"name":"Microservices, Modular Monoliths and System Boundaries","item":"https://electronicartefacts.com/publications/microservices-modular-monoliths-and-system-boundaries/"}]}]}</script>
+    <link rel="stylesheet" href="/assets/css/app.css?v=27" />
+    <script type="module" src="/assets/js/app.js?v=27"></script>
+  </head>
+  <body data-page="publication" data-generated-page="true" data-entry-id="microservices-modular-monoliths-and-system-boundaries">
+    <a class="skip-link" href="#main">Skip to main content</a>
+    <header><div class="shell-header zone-card">
+  <a class="brand-lockup" href="/index.html" aria-label="Back to home">
+    <span class="brand-text">
+      <strong><span class="brand-name-brand">electronic</span><span class="brand-name-accent">Artefacts</span></strong>
+      <span>Creative technology studio</span>
+    </span>
+  </a>
+
+  <nav class="site-nav" aria-label="Main navigation">
+    <a data-nav="home" href="/index.html">HOME</a>
+    <a data-nav="work" href="/work.html">WORK</a>
+    <a data-nav="projects" href="/projects.html">PROJECTS</a>
+    <a data-nav="programs" href="/programs.html">PROGRAMS</a>
+    <a data-nav="research" href="/research.html">RESEARCH</a>
+    <a data-nav="knowledge" href="/knowledge/">KNOWLEDGE</a>
+    <a data-nav="archive" href="/archive.html">ARCHIVE</a>
+    <a data-nav="about" href="/about.html">ABOUT</a>
+    <a data-nav="contact" href="/contact.html">CONTACT</a>
+  </nav>
+</div>
+</header>
+    <main id="main" class="site-main">
+  <section class="zone-card entity-breadcrumb-card">
+  <nav class="link-row entity-breadcrumbs" aria-label="Breadcrumb">
+    <a class="tag" href="/">Home</a>
+    <span aria-hidden="true">/</span>
+    <span class="tag">Publications</span>
+    <span aria-hidden="true">/</span>
+    <span aria-current="page">Microservices, Modular Monoliths and System Boundaries</span>
+  </nav></section>
+  
+  <section class="zone-card hero entity-hero">
+    <div class="section-head">
+      <p class="eyebrow">PUBLICATION</p>
+      <h1 class="display-title">Microservices, Modular Monoliths and System Boundaries</h1>
+      <p class="card__meta">Technical Article</p>
+      <p class="lede">A pragmatic comparison of microservices and modular monoliths through domain boundaries, data ownership, deployment, events, observability and team structure.</p>
+      
+    </div>
+    <div class="pill-cloud">
+      <span class="tag">active</span>
+      <span class="tag">published</span>
+      <span class="tag">v1.0.0</span>
+    </div>
+  </section>
+  <article class="zone-card hero publication-body"><h2>Problem</h2>
+<p>Teams often distribute applications before domain boundaries, ownership and operational needs are understood. The result is a networked system that preserves monolithic coupling while adding latency and failure modes.</p>
+<h2>Introduction</h2>
+<p>Microservices are often presented as the modern endpoint of software architecture. A large application is split into small services, each independently deployable and aligned with a business capability. Teams gain autonomy, components scale separately and failures remain isolated.</p>
+<p>Those benefits are real under the right conditions. The costs are equally real. Network calls replace function calls. Partial failure becomes normal. Data ownership becomes distributed. Deployment, authentication, observability and incident response require mature infrastructure. A system with ten services can be harder to change than a monolith when boundaries are wrong.</p>
+<p>A modular monolith offers another path. The application deploys as one unit but enforces internal module boundaries. Modules own capabilities and expose explicit interfaces. Transactions and local development remain simpler, while the architecture preserves the option to extract services later.</p>
+<p>The useful question is not “monolith or microservices?” in the abstract. It is where the domain boundaries are, which parts need independent deployment, and whether the organization can carry the operational complexity of distribution.</p>
+<h2>What a microservice is</h2>
+<p>A microservice is an independently deployable service organized around a bounded capability. It owns its implementation and usually its data. Other services interact through network contracts such as APIs or events.</p>
+<p>Size is not the defining feature. A service with little code can own a complex responsibility, while a larger service may still represent one coherent domain. Counting lines or endpoints encourages arbitrary fragmentation.</p>
+<p>Independent deployment is central. If five services must always be released together, they may be a distributed monolith: physically separated but tightly coupled.</p>
+<p>Autonomy also needs organizational ownership. A service with no team responsible for reliability and evolution is not meaningfully independent.</p>
+<h2>What a monolith is</h2>
+<p>A monolith is an application deployed as one unit. The term says little about internal quality. A monolith can be well modularized, testable and maintainable. It can also be a tightly coupled codebase where every feature reaches every table.</p>
+<p>Deployment unity provides advantages. Local development can start one process. Calls are fast and debuggable. Database transactions can preserve consistency. Refactoring across modules can happen atomically.</p>
+<p>The risk is erosion. Without enforced boundaries, shared models and utility packages become coupling channels. Teams avoid change because impact is unclear.</p>
+<p>The remedy is modular architecture, not immediate distribution.</p>
+<h2>The modular monolith</h2>
+<p>A modular monolith defines internal components around domain capabilities. Each module owns its data access and exposes a public interface. Other modules cannot reach internal tables or implementation classes directly.</p>
+<p>Modules may communicate through function calls, internal commands or domain events. Contracts can be tested. Dependency direction can be enforced by tooling.</p>
+<p>This architecture offers a learning advantage. Domain boundaries are difficult to discover early. Keeping modules in one deployable allows refactoring while product understanding develops. Once a boundary proves stable and requires independent scaling or ownership, it can be extracted.</p>
+<p>The monolith-first approach is not a refusal of microservices. It delays irreversible distribution until evidence exists.</p>
+<h2>Architecture</h2>
+<p>The architecture begins with bounded capabilities, owned data and explicit contracts. These boundaries can run as modules in one deployable or as independently deployed services connected through APIs and events.</p>
+<h2>Domain boundaries</h2>
+<p>Boundaries should follow changes in language, rules, ownership and lifecycle. Domain-driven design calls these bounded contexts. The same word may mean different things in different contexts: a “publication” in editorial workflow differs from a static HTML page in the delivery system.</p>
+<p>A good boundary has high internal cohesion and low external coupling. Changes within it do not repeatedly require changes elsewhere. It can explain its responsibility in domain language.</p>
+<p>Technical layers alone are weak service boundaries. Splitting controllers, business logic and persistence into separate services creates network coupling without domain autonomy.</p>
+<p>Electronic Artefacts can distinguish content authority, graph runtime, search projection, media processing and public delivery. Whether these become processes depends on operational need.</p>
+<h2>Data ownership</h2>
+<p>Independent services should own their data. Sharing one database schema lets services bypass contracts and creates hidden coupling. A schema change for one capability can break another.</p>
+<p>Separate ownership does not require a different database server for every small service. It requires controlled access boundaries. One service should not query another service’s tables directly.</p>
+<p>Data needed elsewhere can be exposed through APIs, events or replicated projections. This introduces eventual consistency and duplication, which are deliberate costs of autonomy.</p>
+<p>The system must identify authoritative sources. A search index is a projection, not the canonical publication record. A graph neighborhood is derived from entities and relations.</p>
+<h2>Transactions and consistency</h2>
+<p>Monoliths can use local database transactions across modules. Microservices cannot rely on one atomic transaction across independently owned stores without reintroducing coupling.</p>
+<p>Distributed workflows use patterns such as sagas, outboxes and compensating actions. A service commits its local state and records an event. Downstream services react. If later work fails, compensation may reverse or amend earlier effects.</p>
+<p>This is not equivalent to atomic rollback. Users may observe intermediate states. Domain design must decide which invariants require immediate consistency and which can converge.</p>
+<p>Do not distribute a workflow before understanding its failure semantics.</p>
+<h2>Communication</h2>
+<p>Synchronous APIs are appropriate when a caller needs an immediate result. They create availability dependencies: if the callee is unavailable, the caller must fail, retry or degrade.</p>
+<p>Events reduce temporal coupling and support multiple consumers. They introduce delayed consistency, schema evolution and duplicate processing.</p>
+<p>Most architectures use both. The choice should reflect meaning. Query current authorization synchronously if a decision cannot proceed without it. Publish an event after a canonical record changes so projections can update.</p>
+<p>Avoid long chains of synchronous service calls. Latency and failure probability multiply. If one user request crosses many services, the boundary design may be too fragmented.</p>
+<h2>Deployment</h2>
+<p>Independent deployment is a microservice benefit only when the pipeline, tests and compatibility practices support it. Each service needs build, release, configuration, secrets, monitoring and rollback.</p>
+<p>Version contracts to allow gradual rollout. Consumers and producers may run different versions simultaneously. Backward-compatible changes reduce coordination.</p>
+<p>A modular monolith has one release pipeline, making cross-module change simpler. The deployment can still use blue-green or canary strategies.</p>
+<p>Operational capacity should be treated as a finite stock. Every service consumes part of it.</p>
+<h2>Observability</h2>
+<p>A monolith can often trace a request through one process. Microservices require correlation IDs, distributed tracing, centralized logs and service-level metrics.</p>
+<p>Infrastructure metrics are not enough. The system should observe domain flows: publication time, failed graph updates, stale projections and pending reviews.</p>
+<p>Ownership matters. Alerts must route to a team able to act. A dashboard with no response procedure does not create reliability.</p>
+<p>Testing should include dependency timeouts, partial outages and retries. Distributed failure cannot be evaluated only through unit tests.</p>
+<h2>Security</h2>
+<p>Microservices increase network and identity surfaces. Service-to-service authentication, authorization, certificate or token rotation and secret management become foundational.</p>
+<p>Network location alone should not grant trust. Each service validates caller identity and requested capability. Sensitive events and logs require data minimization.</p>
+<p>A monolith has fewer network boundaries but still needs module-level authorization. Internal code should not assume every operation is allowed merely because it runs in one process.</p>
+<p>VASTE’s contextual execution is relevant in both architectures. Permission is a domain concern before it is a deployment concern.</p>
+<h2>Team structure</h2>
+<p>Architecture and organization influence one another. Teams aligned to capabilities can own services end to end. Teams divided by technical layer often create handoffs and coupled release processes.</p>
+<p>Microservices can support autonomy when teams are large enough and capabilities are stable. In a small studio, they may distribute attention across infrastructure instead of product work.</p>
+<p>A modular monolith can still support ownership through module maintainers and interface contracts. Deployment unity does not require organizational chaos.</p>
+<p>The number of services should not exceed the organization’s ability to understand and operate them.</p>
+<h2>Scaling</h2>
+<p>Microservices allow one capability to scale independently. Media processing can add workers without scaling the editorial API. A public read service can replicate without duplicating private administration.</p>
+<p>Many systems do not need this granularity. A monolith can scale horizontally behind a load balancer. Background jobs can run as separate processes while sharing code and data contracts.</p>
+<p>Measure the bottleneck before splitting. Database design, caching or asynchronous work may solve the actual problem.</p>
+<p>Premature distribution turns hypothetical scale into permanent complexity.</p>
+<h2>Reliability</h2>
+<p>Service isolation can limit failures. A broken recommendation service need not stop publication. Bulk audio analysis can be separated from interactive requests.</p>
+<p>Isolation only works when dependencies degrade gracefully. If the main application waits synchronously for every service, one failure propagates.</p>
+<p>Circuit breakers, timeouts, bulkheads and queues help, but each adds behavior to test. The system should define acceptable degradation. Can a page render without related recommendations? Can an article publish while search indexing is delayed?</p>
+<p>Reliability comes from designed boundaries, not container count.</p>
+<h2>Testing</h2>
+<p>A modular monolith supports fast unit and integration tests inside one repository. Module contract tests can enforce boundaries. End-to-end tests remain manageable.</p>
+<p>Microservices require contract tests between independently deployed components, integration environments and production observability. End-to-end tests can become slow and brittle if they attempt to cover every combination.</p>
+<p>Consumer-driven contracts help verify that providers remain compatible. Event schemas need version tests. Failure injection reveals assumptions.</p>
+<p>Testing cost should be included in architectural decisions.</p>
+<h2>Migration</h2>
+<p>The safest migration extracts one proven boundary. Identify a capability with distinct ownership, scaling or release needs. Define its contract while still inside the monolith. Remove direct internal dependencies. Establish data ownership. Then move execution across a network.</p>
+<p>This sequence separates domain work from infrastructure work. If the boundary remains painful before extraction, the network will not improve it.</p>
+<p>Use a strangler pattern to route selected functionality to the new service gradually. Monitor behavior and maintain rollback.</p>
+<p>Do not begin by splitting the database into arbitrary tables or creating services for every noun.</p>
+<h2>VASTE architecture</h2>
+<p>VASTE is a runtime program, not an argument for maximal distribution. Its core value lies in graph entities, typed relationships, identity, context and events.</p>
+<p>A modular runtime can keep these semantics coherent while exposing adapters for search, media processing and public projections. Services should be extracted where independent operation creates value.</p>
+<p>For example, computationally heavy simulation or audio analysis may scale independently. Public graph delivery may need a different security and caching profile from private editing. These are evidence-based boundaries.</p>
+<p>The canonical graph and permission model should not be duplicated across services without a clear authority strategy.</p>
+<h2>Knowledge Hub architecture</h2>
+<p>The current Knowledge Hub is well served by a static build. Content source files, relation validation, search generation and public pages operate through one repository pipeline. Introducing microservices would add little value.</p>
+<p>Future collaborative editing or large-scale retrieval may justify services. The existing entity contracts and generated projections create a strong modular foundation.</p>
+<p>This demonstrates an important principle: architecture should fit the product stage. A sophisticated knowledge graph does not require a distributed deployment.</p>
+<h2>Decision framework</h2>
+<p>Choose a modular monolith when the product and domain are still evolving, one team owns most capabilities, transactions cross boundaries frequently, and operational simplicity matters.</p>
+<p>Choose microservices when capabilities are stable, teams need independent deployment, workloads scale differently, regulatory isolation matters, or failure containment justifies distribution.</p>
+<p>Before extraction, answer: who owns the service, what data does it own, what contract does it expose, how does it fail, how is it observed, and how can it be rolled back?</p>
+<p>If these answers are unclear, distribution is premature.</p>
+<h2>Implementation</h2>
+<p>Enforce module boundaries inside the current codebase, remove cross-module table access and define contracts. Extract only a capability with proven independent scaling, security or release needs, then add deployment and observability around it.</p>
+<h2>Evidence</h2>
+<p>Lewis and Fowler describe microservices through business capabilities, independent deployment and decentralized management. Fowler’s monolith-first argument emphasizes that service boundaries are easier to discover inside an initially unified system.</p>
+<h2>Common mistakes</h2>
+<p>The first mistake is splitting by technical layer.</p>
+<p>The second is sharing a database while claiming service independence.</p>
+<p>The third is synchronous call chains across many services.</p>
+<p>The fourth is adopting orchestration infrastructure without operational ownership.</p>
+<p>The fifth is confusing containers with microservices.</p>
+<p>The sixth is ignoring eventual consistency in user experience.</p>
+<p>The seventh is extracting boundaries before the domain is understood.</p>
+<h2>Limitations</h2>
+<p>Organizational scale, regulatory constraints and workload profiles can justify early distribution. This article offers a conservative default, not a universal prohibition against microservices.</p>
+<h2>Related concepts</h2>
+<p>Read <a href="/knowledge/concepts/microservice-architecture/">Microservice Architecture</a>, <a href="/knowledge/concepts/event-driven-architecture/">Event-Driven Architecture</a>, <a href="/knowledge/concepts/systems-thinking/">Systems Thinking</a> and <a href="/knowledge/concepts/contextual-execution/">Contextual Execution</a>.</p>
+<h2>Related program</h2>
+<p>See <a href="/programs/vaste/">VASTE</a>.</p>
+<h2>Glossary</h2>
+<p>Microservice: an independently deployable service aligned with a bounded capability.</p>
+<p>Modular monolith: one deployable application with enforced internal module boundaries.</p>
+<p>Bounded context: a domain boundary within which a model and language are consistent.</p>
+<p>Distributed monolith: separately deployed components that remain tightly coupled.</p>
+<p>Saga: a distributed process coordinated through local transactions and compensation.</p>
+<p>Outbox: a pattern for reliably publishing events after a database change.</p>
+<h2>References</h2>
+<ul>
+<li>Lewis, James, and Martin Fowler. Microservices. 2014.</li>
+<li>Fowler, Martin. MonolithFirst. 2015.</li>
+<li>Evans, Eric. Domain-Driven Design Reference.</li>
+</ul>
+</article>
+  <section class="detail-grid">
+    
+  <section class="panel knowledge-panel">
+    <div class="section-head">
+      <p class="card__meta">Identity and publication</p>
+      <h2 class="card__title">Record metadata</h2>
+    </div>
+    <dl class="metadata-list">
+      <div><dt>Entity ID</dt><dd>ea:publication:microservices-modular-monoliths-and-system-boundaries</dd></div>
+      <div><dt>Publication class</dt><dd>published</dd></div>
+      <div><dt>Status</dt><dd>active</dd></div>
+      <div><dt>Maturity</dt><dd>research</dd></div>
+      <div><dt>Confidence</dt><dd>published</dd></div>
+      <div><dt>Published</dt><dd>2026-06-24</dd></div>
+      <div><dt>Modified</dt><dd>2026-06-24</dd></div>
+      <div><dt>Version</dt><dd>1.0.0</dd></div>
+    </dl>
+  </section>
+    
+    <section class="panel knowledge-panel">
+      <div class="section-head">
+        <p class="card__meta">Citation</p>
+        <h2 class="card__title">How to cite this record</h2>
+      </div>
+      <p class="card__copy">Electronic Artefacts. &quot;Microservices, Modular Monoliths and System Boundaries.&quot; Technical article, version 1.0.0, 2026.</p>
+      <div class="link-row"><a class="tag" href="https://electronicartefacts.com/publications/microservices-modular-monoliths-and-system-boundaries/">Canonical URL</a></div>
+    </section>
+  </section>
+  
+    <section class="zone-card hero">
+      <div class="section-head">
+        <p class="eyebrow">TYPED RELATIONSHIPS</p>
+        <h2>How this entity connects.</h2>
+        <p class="lede">Each connection has an explicit predicate and a human-readable statement.</p>
+      </div>
+      <div class="card-grid card-grid--two">
+        
+          <article class="panel">
+            <p class="card__meta">evidence</p>
+            <div class="stack">
+              
+                  <div class="panel panel--soft">
+                    <p class="card__meta">Documents</p>
+                    <h3 class="card__title"><a href="/knowledge/concepts/microservice-architecture/">Microservice Architecture</a></h3>
+                    <p class="card__copy">Microservices, Modular Monoliths and System Boundaries documents microservice architecture and its tradeoffs.</p>
+                  </div>
+                  <div class="panel panel--soft">
+                    <p class="card__meta">Documents</p>
+                    <h3 class="card__title"><a href="/knowledge/concepts/systems-thinking/">Systems Thinking</a></h3>
+                    <p class="card__copy">Microservices, Modular Monoliths and System Boundaries applies systems thinking to organizational and operational cost.</p>
+                  </div>
+                  <div class="panel panel--soft">
+                    <p class="card__meta">Documents</p>
+                    <h3 class="card__title"><a href="/knowledge/concepts/event-driven-architecture/">Event-Driven Architecture</a></h3>
+                    <p class="card__copy">Microservices, Modular Monoliths and System Boundaries explains events as one service communication pattern.</p>
+                  </div>
+                  <div class="panel panel--soft">
+                    <p class="card__meta">Documents</p>
+                    <h3 class="card__title"><a href="/programs/vaste/">VASTE</a></h3>
+                    <p class="card__copy">Microservices, Modular Monoliths and System Boundaries evaluates VASTE through conservative runtime boundaries.</p>
+                  </div>
+            </div>
+          </article>
+          <article class="panel">
+            <p class="card__meta">structure</p>
+            <div class="stack">
+              
+                  <div class="panel panel--soft">
+                    <p class="card__meta">Has part</p>
+                    <h3 class="card__title"><a href="/archive/collections/knowledge-hub-third-wave/">Knowledge Hub Third Wave</a></h3>
+                    <p class="card__copy">Knowledge Hub Third Wave includes Microservices, Modular Monoliths and System Boundaries.</p>
+                  </div>
+            </div>
+          </article>
+      </div>
+    </section>
+  <section class="zone-card hero">
+    <section class="panel knowledge-panel" data-local-graph data-graph-src="/graph/neighborhoods/publication/microservices-modular-monoliths-and-system-boundaries.json">
+      <div class="section-head">
+        <p class="card__meta">Local graph</p>
+        <h2 class="card__title">5 typed connections</h2>
+        <p class="card__copy">The accessible relationship list above contains the complete local graph. Interactive rendering is loaded progressively.</p>
+      </div>
+    </section></section>
+</main>
+    <footer><div class="shell-footer zone-card">
+  <div class="footer-stack">
+    <strong class="footer-brand">
+      <span class="brand-name-brand">electronic</span><span class="brand-name-accent">Artefacts</span>
+    </strong>
+    <span>Creative technology studio: client systems, proprietary platforms, research and artistic publishing.</span>
+    <nav class="footer-links" aria-label="Quick links">
+      <a class="tag" href="/index.html">HOME</a>
+      <a class="tag" href="/work.html">WORK</a>
+      <a class="tag" href="/projects.html">PROJECTS</a>
+      <a class="tag" href="/programs.html">PROGRAMS</a>
+      <a class="tag" href="/research.html">RESEARCH</a>
+      <a class="tag" href="/knowledge/">KNOWLEDGE</a>
+      <a class="tag" href="/publications/">PUBLICATIONS</a>
+      <a class="tag" href="/archive.html">ARCHIVE</a>
+      <a class="tag" href="/about.html">ABOUT</a>
+      <a class="tag" href="/contact.html">CONTACT</a>
+      <a class="tag" href="/search/">SEARCH</a>
+      <a class="tag" href="/mentions-legales.html">LEGAL</a>
+      <a class="tag" href="/confidentialite.html">PRIVACY</a>
+      <a class="tag" href="https://www.vaste.space/" target="_blank" rel="noreferrer">VASTE</a>
+    </nav>
+  </div>
+  <div class="footer-stack footer-stack--right">
+    <span class="footer-note">Edition 2026</span>
+    <span class="footer-note">© <span id="current-year"></span></span>
+  </div>
+</div>
+</footer>
+  </body>
+</html>

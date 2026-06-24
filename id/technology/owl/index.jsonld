@@ -1,0 +1,47 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://electronicartefacts.com/knowledge/technologies/owl/#webpage",
+      "url": "https://electronicartefacts.com/knowledge/technologies/owl/",
+      "name": "OWL",
+      "mainEntity": {
+        "@id": "https://electronicartefacts.com/id/technology/owl/"
+      },
+      "isPartOf": {
+        "@id": "https://electronicartefacts.com/#website"
+      }
+    },
+    {
+      "@type": "CreativeWork",
+      "@id": "https://electronicartefacts.com/id/technology/owl/",
+      "name": "OWL",
+      "description": "OWL is a W3C ontology language with formally defined semantics for classes, properties, individuals and constraints on the Semantic Web.",
+      "url": "https://electronicartefacts.com/knowledge/technologies/owl/",
+      "dateCreated": "2026-06-24",
+      "datePublished": "2026-06-24",
+      "dateModified": "2026-06-24",
+      "publisher": {
+        "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Electronic Artefacts",
+          "item": "https://electronicartefacts.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "OWL",
+          "item": "https://electronicartefacts.com/knowledge/technologies/owl/"
+        }
+      ]
+    }
+  ]
+}

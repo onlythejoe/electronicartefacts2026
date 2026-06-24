@@ -1,0 +1,66 @@
+{
+  "id": "ea:concept:graph-modeling",
+  "type": "concept",
+  "slug": {
+    "canonical": "graph-modeling"
+  },
+  "title": "Graph Modeling",
+  "definition": "Graph modeling represents a domain through addressable nodes, typed relationships and properties chosen to answer specific questions and support specific operations.",
+  "abstract": "Graph modeling makes many-to-many relationships, paths, provenance and evolving context explicit where folders and rigid trees obscure them.",
+  "description": "A canonical definition of graph modeling for knowledge, runtime and cultural systems.",
+  "locale": "en",
+  "visibility": "public",
+  "publicationClass": "canonical",
+  "status": "active",
+  "maturity": "research",
+  "confidence": "canonical",
+  "version": {
+    "version": "1.0.0",
+    "createdAt": "2026-06-24",
+    "publishedAt": "2026-06-24",
+    "modifiedAt": "2026-06-24"
+  },
+  "authors": [
+    {
+      "id": "ea:organization:electronic-artefacts"
+    }
+  ],
+  "publisher": "ea:organization:electronic-artefacts",
+  "tags": [
+    "Graph Modeling",
+    "Nodes",
+    "Relations",
+    "Domain Modeling",
+    "Knowledge Graph"
+  ],
+  "disciplines": [
+    "Knowledge Systems",
+    "Systems Design",
+    "Information Architecture",
+    "Software Architecture"
+  ],
+  "scope": [
+    "Nodes",
+    "Typed relationships",
+    "Properties",
+    "Paths",
+    "Constraints",
+    "Temporal context"
+  ],
+  "exclusions": [
+    "Turning every field into a node without a query or reuse requirement",
+    "Assuming a graph database automatically produces a good domain model"
+  ],
+  "claims": [
+    "Graphs are strongest when relationships are first-class and many valid paths must coexist.",
+    "Trees and folders remain useful projections even when the underlying model is a graph."
+  ],
+  "bodyHtml": "<h2>Definition</h2>\n<p>Graph modeling identifies the important entities in a domain and expresses meaningful connections between them. A model is judged by the questions it can answer, the constraints it can enforce and the changes it can absorb.</p>\n<h2>Graphs and folders</h2>\n<p>Folders impose a primary containment path. Graphs allow an artefact to relate simultaneously to a project, person, technique, source, place, rights record and publication. Folder views can still be generated as useful projections.</p>\n<h2>Electronic Artefacts position</h2>\n<p>VASTE uses graph modeling for runtime concerns, while the Knowledge Hub uses it for semantic publication. Vestiges applies the same discipline to cultural knowledge and human know-how.</p>\n<h2>Limitations</h2>\n<p>Graphs can become unreadable when relation types are vague or when weak associations are published indiscriminately. Modeling requires predicate governance, provenance and pruning.</p>\n<h2>References</h2>\n<p>See Knowledge Graph, Entity Identity, VASTE and Ontology.</p>\n",
+  "headings": [
+    "Definition",
+    "Graphs and folders",
+    "Electronic Artefacts position",
+    "Limitations",
+    "References"
+  ]
+}

@@ -26,6 +26,14 @@
       "route": "/publications/linked-data-and-public-knowledge-pages/",
       "status": "active",
       "confidence": "published"
+    },
+    {
+      "id": "ea:publication:why-graphs-are-more-powerful-than-folders",
+      "type": "publication",
+      "title": "Why Graphs Are More Powerful Than Folders",
+      "route": "/publications/why-graphs-are-more-powerful-than-folders/",
+      "status": "active",
+      "confidence": "published"
     }
   ],
   "edges": [
@@ -45,6 +53,15 @@
       "predicate": "documents",
       "label": "Documents",
       "statement": "Linked Data and Public Knowledge Pages explains the difference between page URLs and entity identifiers.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:graphs-folders-article-documents-entity-identity",
+      "source": "ea:publication:why-graphs-are-more-powerful-than-folders",
+      "target": "ea:concept:entity-identity",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Why Graphs Are More Powerful Than Folders explains why entity identity should survive path changes.",
       "confidence": "published"
     }
   ]
