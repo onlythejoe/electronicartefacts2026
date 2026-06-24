@@ -1,0 +1,467 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="dark" />
+    <meta name="description" content="IIIF and Compound Cultural Objects: Technical Article. A practical explanation of IIIF Presentation API concepts, compound objects, manifests, canvases,…" />
+    <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
+    <meta name="author" content="Electronic Artefacts" />
+    <meta name="keywords" content="IIIF and Compound Cultural Objects, publication, IIIF, Digital Archives, Cultural Objects, Metadata, Linked Data, Digital Preservation, Cultural Infrastructure, Knowledge Systems, Web Development" />
+    <meta name="theme-color" content="#000000" />
+    <link rel="canonical" href="https://electronicartefacts.com/publications/iiif-and-compound-cultural-objects/" />
+    <link rel="alternate" type="application/ld+json" href="https://electronicartefacts.com/id/publication/iiif-and-compound-cultural-objects/index.jsonld" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/assets/media/projects/electronic-artefacts/electronic-artefacts-icon-192.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta property="og:title" content="IIIF and Compound Cultural Objects | Electronic Artefacts" />
+    <meta property="og:description" content="IIIF and Compound Cultural Objects: Technical Article. A practical explanation of IIIF Presentation API concepts, compound objects, manifests, canvases,…" />
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content="Electronic Artefacts" />
+    <meta property="og:locale" content="en_US" />
+    <meta property="og:url" content="https://electronicartefacts.com/publications/iiif-and-compound-cultural-objects/" />
+    <meta property="og:image" content="https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-search.jpg" />
+    <meta property="og:image:alt" content="IIIF and Compound Cultural Objects" />
+    <meta property="article:published_time" content="2026-06-24" />
+    <meta property="article:modified_time" content="2026-06-24" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="IIIF and Compound Cultural Objects | Electronic Artefacts" />
+    <meta name="twitter:description" content="IIIF and Compound Cultural Objects: Technical Article. A practical explanation of IIIF Presentation API concepts, compound objects, manifests, canvases,…" />
+    <meta name="twitter:image" content="https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-search.jpg" />
+    <meta name="twitter:image:alt" content="IIIF and Compound Cultural Objects" />
+    <title>IIIF and Compound Cultural Objects | Electronic Artefacts</title>
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://electronicartefacts.com/publications/iiif-and-compound-cultural-objects/#webpage","url":"https://electronicartefacts.com/publications/iiif-and-compound-cultural-objects/","name":"IIIF and Compound Cultural Objects","description":"Understand IIIF as presentation infrastructure for compound cultural objects, archives, manifests, canvases and annotations.","inLanguage":"en","datePublished":"2026-06-24","dateModified":"2026-06-24","primaryImageOfPage":{"@type":"ImageObject","url":"https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-search.jpg","description":"IIIF and Compound Cultural Objects"},"mainEntity":{"@id":"https://electronicartefacts.com/id/publication/iiif-and-compound-cultural-objects/"},"isPartOf":{"@id":"https://electronicartefacts.com/#website"}},{"@type":"TechArticle","@id":"https://electronicartefacts.com/id/publication/iiif-and-compound-cultural-objects/","name":"IIIF and Compound Cultural Objects","headline":"IIIF and Compound Cultural Objects","description":"A practical explanation of IIIF Presentation API concepts, compound objects, manifests, canvases, annotations and cultural archive interfaces.","url":"https://electronicartefacts.com/publications/iiif-and-compound-cultural-objects/","mainEntityOfPage":{"@id":"https://electronicartefacts.com/publications/iiif-and-compound-cultural-objects/#webpage"},"image":{"@type":"ImageObject","url":"https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-search.jpg","description":"IIIF and Compound Cultural Objects"},"author":[{"@id":"https://electronicartefacts.com/id/organization/electronic-artefacts/"}],"creator":[{"@id":"https://electronicartefacts.com/id/organization/electronic-artefacts/"}],"keywords":["IIIF","Digital Archives","Cultural Objects","Metadata","Linked Data","Digital Preservation","Cultural Infrastructure","Knowledge Systems","Web Development"],"inLanguage":"en","dateCreated":"2026-06-24","datePublished":"2026-06-24","dateModified":"2026-06-24","publisher":{"@id":"https://electronicartefacts.com/id/organization/electronic-artefacts/"},"copyrightHolder":{"@id":"https://electronicartefacts.com/id/organization/electronic-artefacts/"},"isAccessibleForFree":true,"wordCount":1293,"citation":["Electronic Artefacts. \"IIIF and Compound Cultural Objects.\" Technical article, version 1.0.0, 2026.",{"@type":"CreativeWork","name":"IIIF Presentation API 3.0","url":"https://iiif.io/api/presentation/3.0/","publisher":"IIIF Consortium"},{"@type":"CreativeWork","name":"IIIF Image API 3.0","url":"https://iiif.io/api/image/3.0/","publisher":"IIIF Consortium"},{"@type":"CreativeWork","name":"JSON-LD 1.1","url":"https://www.w3.org/TR/json-ld11/","publisher":"W3C"}],"about":[{"@id":"https://electronicartefacts.com/id/technology/iiif/"},{"@id":"https://electronicartefacts.com/id/concept/digital-preservation/"},{"@id":"https://electronicartefacts.com/id/concept/linked-data/"},{"@id":"https://electronicartefacts.com/id/concept/metadata/"},{"@id":"https://electronicartefacts.com/id/project/vestiges/"}],"mentions":[{"@id":"https://electronicartefacts.com/id/technology/iiif/"},{"@id":"https://electronicartefacts.com/id/concept/digital-preservation/"}]},{"@type":"Organization","@id":"https://electronicartefacts.com/id/organization/electronic-artefacts/","name":"Electronic Artefacts","url":"https://electronicartefacts.com/","logo":{"@type":"ImageObject","url":"https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-logo.jpg"}},{"@type":"WebSite","@id":"https://electronicartefacts.com/#website","url":"https://electronicartefacts.com/","name":"Electronic Artefacts","publisher":{"@id":"https://electronicartefacts.com/id/organization/electronic-artefacts/"},"inLanguage":"en"},{"@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Electronic Artefacts","item":"https://electronicartefacts.com/"},{"@type":"ListItem","position":2,"name":"Publications","item":"https://electronicartefacts.com/publications/"},{"@type":"ListItem","position":3,"name":"IIIF and Compound Cultural Objects","item":"https://electronicartefacts.com/publications/iiif-and-compound-cultural-objects/"}]}]}</script>
+    <link rel="stylesheet" href="/assets/css/app.css?v=29" />
+    <script type="module" src="/assets/js/app.js?v=29"></script>
+  </head>
+  <body data-page="publication" data-generated-page="true" data-entry-id="iiif-and-compound-cultural-objects">
+    <a class="skip-link" href="#main">Skip to main content</a>
+    <header><div class="shell-header zone-card">
+  <a class="brand-lockup" href="/index.html" aria-label="Back to home">
+    <span class="brand-text">
+      <strong><span class="brand-name-brand">electronic</span><span class="brand-name-accent">Artefacts</span></strong>
+      <span>Creative technology studio</span>
+    </span>
+  </a>
+
+  <nav class="site-nav" aria-label="Main navigation">
+    <a data-nav="home" href="/index.html">HOME</a>
+    <a data-nav="work" href="/work.html">WORK</a>
+    <a data-nav="projects" href="/projects.html">PROJECTS</a>
+    <a data-nav="programs" href="/programs.html">PROGRAMS</a>
+    <a data-nav="research" href="/research.html">RESEARCH</a>
+    <a data-nav="knowledge" href="/knowledge/">KNOWLEDGE</a>
+    <a data-nav="archive" href="/archive.html">ARCHIVE</a>
+    <a data-nav="about" href="/about.html">ABOUT</a>
+    <a data-nav="contact" href="/contact.html">CONTACT</a>
+  </nav>
+</div>
+</header>
+    <main id="main" class="site-main">
+    <div class="article-page">
+      <section class="zone-card entity-breadcrumb-card">
+  <nav class="link-row entity-breadcrumbs" aria-label="Breadcrumb">
+    <a class="tag" href="/">Home</a>
+    <span aria-hidden="true">/</span>
+    <span class="tag">Publications</span>
+    <span aria-hidden="true">/</span>
+    <span aria-current="page">IIIF and Compound Cultural Objects</span>
+  </nav></section>
+      
+    <section class="zone-card hero article-hero">
+      <div class="article-hero__copy">
+        <p class="eyebrow">Technical article</p>
+        <h1 class="display-title">IIIF and Compound Cultural Objects</h1>
+        <p class="card__meta">Technical Article</p>
+        <p class="lede">A practical explanation of IIIF Presentation API concepts, compound objects, manifests, canvases, annotations and cultural archive interfaces.</p>
+        
+    <div class="pill-cloud">
+      <span class="tag">Technical article</span><span class="tag">active</span><span class="tag">research</span><span class="tag">published</span><span class="tag">IIIF</span><span class="tag">Digital Archives</span><span class="tag">Cultural Objects</span><span class="tag">Metadata</span>
+    </div>
+      </div>
+      <aside class="article-hero__dashboard" aria-label="Article record summary">
+        <div class="article-hero__dashboard-head">
+          <p class="card__meta">Publication record</p>
+          <strong>1.0.0</strong>
+        </div>
+        <div class="article-stat-grid">
+          <span>
+            <strong>6 min</strong>
+            <em>Reading</em>
+          </span>
+          <span>
+            <strong>20</strong>
+            <em>Sections</em>
+          </span>
+          <span>
+            <strong>4</strong>
+            <em>Relations</em>
+          </span>
+          <span>
+            <strong>2026-06-24</strong>
+            <em>Published</em>
+          </span>
+        </div>
+        <div class="article-hero__subjects">
+          <p class="card__meta">Primary subjects</p>
+          
+    <div class="article-link-cloud">
+      
+        <a class="tag" href="/knowledge/technologies/iiif/">IIIF</a>
+      
+        <a class="tag" href="/knowledge/concepts/digital-preservation/">Digital Preservation</a>
+      
+        <a class="tag" href="/knowledge/concepts/linked-data/">Linked Data</a>
+      
+        <a class="tag" href="/knowledge/concepts/metadata/">Metadata</a>
+      
+        <a class="tag" href="/projects/vestiges/">Vestiges</a>
+      
+    </div>
+        </div>
+      </aside>
+    </section>
+      <section class="article-layout">
+        
+  <aside class="article-rail" aria-label="Article side rail">
+    <section class="panel article-rail-card">
+      <div class="section-head">
+        <p class="card__meta">Contents</p>
+        <h2 class="card__title">Reading map</h2>
+      </div>
+      
+    <nav class="article-toc" aria-label="Article contents">
+      
+        <a class="article-toc__item article-toc__item--level-2" href="#problem">
+          <span>01</span>
+          <strong>Problem</strong>
+        </a>
+        <a class="article-toc__item article-toc__item--level-2" href="#introduction">
+          <span>02</span>
+          <strong>Introduction</strong>
+        </a>
+        <a class="article-toc__item article-toc__item--level-2" href="#architecture">
+          <span>03</span>
+          <strong>Architecture</strong>
+        </a>
+        <a class="article-toc__item article-toc__item--level-2" href="#compound-objects">
+          <span>04</span>
+          <strong>Compound objects</strong>
+        </a>
+        <a class="article-toc__item article-toc__item--level-2" href="#collections">
+          <span>05</span>
+          <strong>Collections</strong>
+        </a>
+        <a class="article-toc__item article-toc__item--level-2" href="#manifests">
+          <span>06</span>
+          <strong>Manifests</strong>
+        </a>
+        <a class="article-toc__item article-toc__item--level-2" href="#canvases">
+          <span>07</span>
+          <strong>Canvases</strong>
+        </a>
+        <a class="article-toc__item article-toc__item--level-2" href="#annotations">
+          <span>08</span>
+          <strong>Annotations</strong>
+        </a>
+        <a class="article-toc__item article-toc__item--level-2" href="#presentation-not-discovery">
+          <span>09</span>
+          <strong>Presentation, not discovery</strong>
+        </a>
+        <a class="article-toc__item article-toc__item--level-2" href="#linked-data">
+          <span>10</span>
+          <strong>Linked Data</strong>
+        </a>
+        <a class="article-toc__item article-toc__item--level-2" href="#digital-preservation">
+          <span>11</span>
+          <strong>Digital preservation</strong>
+        </a>
+        <a class="article-toc__item article-toc__item--level-2" href="#vestiges">
+          <span>12</span>
+          <strong>Vestiges</strong>
+        </a>
+        <a class="article-toc__item article-toc__item--level-2" href="#implementation">
+          <span>13</span>
+          <strong>Implementation</strong>
+        </a>
+        <a class="article-toc__item article-toc__item--level-2" href="#evidence">
+          <span>14</span>
+          <strong>Evidence</strong>
+        </a>
+        <a class="article-toc__item article-toc__item--level-2" href="#electronic-artefacts-implications">
+          <span>15</span>
+          <strong>Electronic Artefacts implications</strong>
+        </a>
+        <a class="article-toc__item article-toc__item--level-2" href="#limitations">
+          <span>16</span>
+          <strong>Limitations</strong>
+        </a>
+        <a class="article-toc__item article-toc__item--level-2" href="#related-concepts">
+          <span>17</span>
+          <strong>Related concepts</strong>
+        </a>
+        <a class="article-toc__item article-toc__item--level-2" href="#related-technology">
+          <span>18</span>
+          <strong>Related technology</strong>
+        </a>
+        <a class="article-toc__item article-toc__item--level-2" href="#glossary">
+          <span>19</span>
+          <strong>Glossary</strong>
+        </a>
+        <a class="article-toc__item article-toc__item--level-2" href="#references">
+          <span>20</span>
+          <strong>References</strong>
+        </a>
+    </nav>
+    </section>
+    <section class="panel article-rail-card article-rail-card--compact">
+      <div class="article-rail-facts">
+        <span><strong>Technical article</strong><em>Format</em></span>
+        <span><strong>6 min</strong><em>Reading</em></span>
+        <span><strong>2026-06-24</strong><em>Updated</em></span>
+      </div>
+    </section>
+    
+      <section class="panel article-rail-card article-rail-card--compact">
+        <p class="card__meta">Disciplines</p>
+        
+    <div class="tag-cluster tag-cluster--compact">
+      <span class="tag">Digital Preservation</span><span class="tag">Cultural Infrastructure</span><span class="tag">Knowledge Systems</span><span class="tag">Web Development</span>
+    </div>
+      </section>
+  </aside>
+        <article class="zone-card hero publication-body article-body">
+          <div class="article-body__frame">
+            <h2 id="problem">Problem</h2>
+<p>Cultural objects rarely fit one file. A book has pages, a sculpture has views, an album has tracks and artwork, an installation has video, audio, diagrams and documentation. Flat image galleries and download folders hide the structure that gives those objects meaning.</p>
+<h2 id="introduction">Introduction</h2>
+<p>IIIF, the International Image Interoperability Framework, provides APIs and data models for presenting digital cultural objects. It is widely associated with high-resolution image viewers, but the Presentation API is broader: it models compound objects, views, sequences, ranges, annotations and descriptive context.</p>
+<p>The IIIF Presentation API 3.0 describes resources such as collections, manifests, canvases, ranges and annotations. These are not only technical containers. They are a way to say how a cultural object should be seen, navigated and contextualized.</p>
+<p>For Electronic Artefacts, IIIF is relevant because projects such as Vestiges and Palimpsests involve compound records. The work is not just a media file. It is a structured object with parts, views, traces, evidence and interpretation.</p>
+<h2 id="architecture">Architecture</h2>
+<p>A IIIF presentation architecture contains source assets, derivative media, image or media services, manifests, canvases, ranges, annotations, viewers and external metadata records. IIIF describes presentational structure, while the surrounding knowledge graph records semantic identity, provenance, rights and cross-object relations.</p>
+<h2 id="compound-objects">Compound objects</h2>
+<p>A compound object is made of multiple parts or views. A manuscript has pages. A painting may have visible, infrared and detail images. A music release may have tracks, cover art, liner notes and videos. A cultural technique may have photographs, diagrams, interviews and contextual records.</p>
+<p>If each file is published independently, the object dissolves. Users can see pieces but not the whole. Search engines may index fragments without understanding their relation. Archives may preserve files while losing presentation structure.</p>
+<p>IIIF helps by separating object structure from individual asset storage. A manifest can describe how parts belong together and how a viewer should present them.</p>
+<h2 id="collections">Collections</h2>
+<p>In IIIF, a collection groups manifests and other collections. It can represent an archive set, exhibition, search result, institution or curated body of objects.</p>
+<p>Collections are useful because cultural infrastructure often needs nested navigation. A project may contain series. A series may contain objects. An object may contain canvases. This structure lets readers move from overview to detail without relying on a folder tree.</p>
+<p>For Vestiges, collections could group crafts, institutions, regions, techniques or documentation campaigns. The important point is that collection structure is editorial, not merely storage.</p>
+<h2 id="manifests">Manifests</h2>
+<p>A manifest describes a single object or work for presentation. It includes descriptive information and the sequence or structure of views needed to render it.</p>
+<p>The manifest is the central unit a viewer can load. It tells the client what the object is, which canvases it has, which resources are painted onto those canvases and which ranges or structures organize them.</p>
+<p>For Palimpsests, one manifest might describe a release dossier: cover image, booklet pages, listening notes, track-related visuals and documentation. For a visual archive, a manifest might describe one artefact with multiple photographs and annotations.</p>
+<h2 id="canvases">Canvases</h2>
+<p>A canvas is a virtual surface or time extent. It provides a coordinate or temporal frame where content resources are placed. This is a powerful abstraction because it can represent a page, image plane, video duration or audio timeline.</p>
+<p>A canvas is not the image itself. It is the space onto which images, text, video or audio can be associated. That distinction allows annotations, overlays and alternate representations.</p>
+<p>For audio-visual work, this model is especially useful. A canvas can refer to time-based media and annotations can point to moments or segments.</p>
+<h2 id="annotations">Annotations</h2>
+<p>IIIF uses annotations to associate content with canvases or parts of canvases. An annotation might place an image on a canvas, add transcription, mark a region, attach commentary or link to another resource.</p>
+<p>Annotations make cultural objects active surfaces for interpretation. A researcher can connect a visual detail to a note. A curator can identify a technique. A system can associate transcript text with audio.</p>
+<p>Annotation workflows require governance. Public annotations, editorial annotations and machine-generated annotations should not be collapsed into one layer. Each should carry author, confidence and review status.</p>
+<h2 id="presentation-not-discovery">Presentation, not discovery</h2>
+<p>The IIIF Presentation API explicitly focuses on presenting compound objects to humans. It does not try to replace metadata standards for discovery or search.</p>
+<p>This matters. IIIF can tell a viewer how to render an object and move through its parts. A knowledge graph can describe why the object matters, which people are involved, which techniques it uses, which sources support claims and how it relates to other objects.</p>
+<p>The best architecture pairs them. IIIF handles rich object presentation. Linked Data and site metadata handle discovery, semantic identity and cross-object relations.</p>
+<h2 id="linked-data">Linked Data</h2>
+<p>IIIF uses JSON-LD and adopts Linked Data principles. This gives the model web-native identifiers and interoperability benefits.</p>
+<p>However, using JSON-LD does not automatically make an archive semantically rich. A manifest may include descriptive labels that are intended for human display rather than machine reasoning. Deeper semantic work still requires controlled vocabularies, entity identifiers and relation modeling.</p>
+<p>Electronic Artefacts already has a graph model for entities and relations. IIIF could complement it by adding presentation-level structure for selected media-rich objects.</p>
+<h2 id="digital-preservation">Digital preservation</h2>
+<p>Preservation is not only keeping files. It is keeping enough structure and context for future interpretation. IIIF can help preserve presentation structure: which page followed which, which image showed which view, which annotation explained which region.</p>
+<p>It does not replace fixity, storage redundancy, rights records, format monitoring or provenance. It adds a presentational layer that can remain useful across viewers and institutions.</p>
+<p>A preservation plan should keep source assets, derivative assets, manifests, annotations, rights metadata and graph records together enough that future systems can reconstruct the object.</p>
+<h2 id="vestiges">Vestiges</h2>
+<p>Vestiges is a natural IIIF-adjacent project because cultural heritage records often need more than one image and one paragraph. A craft object can have material details, maker context, workshop images, tool diagrams and institutional references.</p>
+<p>An IIIF manifest could expose the object for interoperable viewing. The Electronic Artefacts graph could connect that object to concepts, places, materials, techniques and evidence.</p>
+<p>This division prevents the public page from becoming either a generic article or a raw viewer. The page can explain, the graph can relate and IIIF can present.</p>
+<h2 id="implementation">Implementation</h2>
+<p>Start with one compound object that has multiple images or media parts. Create stable IDs for the object and assets. Produce a IIIF manifest that describes canvases, labels, summaries and resource links. Validate it in a IIIF viewer.</p>
+<p>Then connect the manifest back to the site graph: project, concept, provenance, rights and source records. Avoid treating the manifest as the only metadata source.</p>
+<h2 id="evidence">Evidence</h2>
+<p>The IIIF Presentation API 3.0 defines collections, manifests, canvases, ranges and annotations for presenting compound objects. It states that presentation is its core purpose and that discovery metadata is outside its direct scope.</p>
+<h2 id="electronic-artefacts-implications">Electronic Artefacts implications</h2>
+<p>IIIF gives Electronic Artefacts a mature reference for media-rich cultural objects. It is especially useful where the site needs a viewer-like experience without inventing a custom archive format.</p>
+<p>The design principle is complementarity: IIIF for presentation, knowledge graph records for meaning, provenance and discovery.</p>
+<h2 id="limitations">Limitations</h2>
+<p>IIIF can add implementation complexity, especially when a small project only needs a simple public page. It is most valuable when objects have multiple views, deep zoom needs, timed media, annotations or institutional interoperability requirements.</p>
+<h2 id="related-concepts">Related concepts</h2>
+<p>Read <a href="/knowledge/concepts/digital-preservation/">Digital Preservation</a>, <a href="/knowledge/concepts/linked-data/">Linked Data</a>, <a href="/knowledge/concepts/metadata/">Metadata</a> and <a href="/knowledge/concepts/knowledge-graph/">Knowledge Graph</a>.</p>
+<h2 id="related-technology">Related technology</h2>
+<p>See <a href="/knowledge/technologies/iiif/">IIIF</a> and <a href="/knowledge/technologies/json-ld/">JSON-LD</a>.</p>
+<h2 id="glossary">Glossary</h2>
+<p>Manifest: a IIIF resource describing how to present one compound object.</p>
+<p>Canvas: a spatial or temporal frame for object content.</p>
+<p>Range: a structural grouping inside a manifest.</p>
+<p>Annotation: a link between a canvas or region and content or commentary.</p>
+<p>Collection: a grouping of manifests or other collections.</p>
+<h2 id="references">References</h2>
+<ul>
+<li>IIIF Consortium. IIIF Presentation API 3.0.</li>
+<li>IIIF Consortium. IIIF Image API 3.0.</li>
+<li>W3C. JSON-LD 1.1.</li>
+</ul>
+
+          </div>
+        </article>
+      </section>
+      
+  <section class="article-context-grid" aria-label="Article context">
+    <article class="panel article-context-card article-context-card--lead">
+      <div class="section-head">
+        <p class="card__meta">Argument</p>
+        <h2 class="card__title">Core claims</h2>
+      </div>
+      
+    <ol class="article-mini-list article-mini-list--claims">
+      <li><strong>IIIF is useful for cultural infrastructure because it models compound objects as presentable structures rather than isolated files.</strong></li><li><strong>IIIF should be paired with richer metadata and knowledge graphs when discovery, interpretation and semantic search are required.</strong></li>
+    </ol>
+    </article>
+    <article class="panel article-context-card">
+      <div class="section-head">
+        <p class="card__meta">Knowledge graph</p>
+        <h2 class="card__title">Evidence links</h2>
+      </div>
+      
+    <div class="article-link-cloud">
+      
+        <a class="tag" href="/knowledge/technologies/iiif/">IIIF</a>
+      
+        <a class="tag" href="/knowledge/concepts/digital-preservation/">Digital Preservation</a>
+      
+    </div>
+    </article>
+    <article class="panel article-context-card">
+      <div class="section-head">
+        <p class="card__meta">Source trail</p>
+        <h2 class="card__title">References</h2>
+      </div>
+      
+    <ol class="article-mini-list">
+      
+          <li>
+            <a href="https://iiif.io/api/presentation/3.0/" target="_blank" rel="noreferrer">IIIF Presentation API 3.0</a>
+            <span>IIIF Consortium</span>
+          </li>
+          <li>
+            <a href="https://iiif.io/api/image/3.0/" target="_blank" rel="noreferrer">IIIF Image API 3.0</a>
+            <span>IIIF Consortium</span>
+          </li>
+          <li>
+            <a href="https://www.w3.org/TR/json-ld11/" target="_blank" rel="noreferrer">JSON-LD 1.1</a>
+            <span>W3C</span>
+          </li>
+    </ol>
+    </article>
+  </section>
+      <section class="detail-grid article-detail-grid">
+        
+  <section class="panel knowledge-panel">
+    <div class="section-head">
+      <p class="card__meta">Identity and publication</p>
+      <h2 class="card__title">Record metadata</h2>
+    </div>
+    <dl class="metadata-list">
+      <div><dt>Entity ID</dt><dd>ea:publication:iiif-and-compound-cultural-objects</dd></div>
+      <div><dt>Publication class</dt><dd>published</dd></div>
+      <div><dt>Status</dt><dd>active</dd></div>
+      <div><dt>Maturity</dt><dd>research</dd></div>
+      <div><dt>Confidence</dt><dd>published</dd></div>
+      <div><dt>Published</dt><dd>2026-06-24</dd></div>
+      <div><dt>Modified</dt><dd>2026-06-24</dd></div>
+      <div><dt>Version</dt><dd>1.0.0</dd></div>
+    </dl>
+  </section>
+        
+    <section class="panel knowledge-panel">
+      <div class="section-head">
+        <p class="card__meta">Citation</p>
+        <h2 class="card__title">How to cite this record</h2>
+      </div>
+      <p class="card__copy">Electronic Artefacts. &quot;IIIF and Compound Cultural Objects.&quot; Technical article, version 1.0.0, 2026.</p>
+      <div class="link-row"><a class="tag" href="https://electronicartefacts.com/publications/iiif-and-compound-cultural-objects/">Canonical URL</a></div>
+    </section>
+      </section>
+      
+    <section class="zone-card hero">
+      <div class="section-head">
+        <p class="eyebrow">TYPED RELATIONSHIPS</p>
+        <h2>How this entity connects.</h2>
+        <p class="lede">Each connection has an explicit predicate and a human-readable statement.</p>
+      </div>
+      <div class="card-grid card-grid--two">
+        
+          <article class="panel">
+            <p class="card__meta">evidence</p>
+            <div class="stack">
+              
+                  <div class="panel panel--soft">
+                    <p class="card__meta">Documents</p>
+                    <h3 class="card__title"><a href="/knowledge/technologies/iiif/">IIIF</a></h3>
+                    <p class="card__copy">IIIF and Compound Cultural Objects documents IIIF as a presentation framework for cultural archive objects.</p>
+                  </div>
+                  <div class="panel panel--soft">
+                    <p class="card__meta">Documents</p>
+                    <h3 class="card__title"><a href="/knowledge/concepts/digital-preservation/">Digital Preservation</a></h3>
+                    <p class="card__copy">IIIF and Compound Cultural Objects connects object presentation structure to digital preservation practice.</p>
+                  </div>
+                  <div class="panel panel--soft">
+                    <p class="card__meta">Documents</p>
+                    <h3 class="card__title"><a href="/projects/vestiges/">Vestiges</a></h3>
+                    <p class="card__copy">IIIF and Compound Cultural Objects uses Vestiges as a cultural infrastructure context for compound object records.</p>
+                  </div>
+            </div>
+          </article>
+          <article class="panel">
+            <p class="card__meta">structure</p>
+            <div class="stack">
+              
+                  <div class="panel panel--soft">
+                    <p class="card__meta">Member of collection</p>
+                    <h3 class="card__title"><a href="/archive/collections/knowledge-hub-fourth-wave/">Knowledge Hub Fourth Wave</a></h3>
+                    <p class="card__copy">IIIF and Compound Cultural Objects is part of the fourth Knowledge Hub wave.</p>
+                  </div>
+            </div>
+          </article>
+      </div>
+    </section>
+      <section class="zone-card hero article-local-graph">
+    <section class="panel knowledge-panel" data-local-graph data-graph-src="/graph/neighborhoods/publication/iiif-and-compound-cultural-objects.json">
+      <div class="section-head">
+        <p class="card__meta">Local graph</p>
+        <h2 class="card__title">4 typed connections</h2>
+        <p class="card__copy">The accessible relationship list above contains the complete local graph. Interactive rendering is loaded progressively.</p>
+      </div>
+    </section></section>
+    </div></main>
+    <footer><div class="shell-footer zone-card">
+  <div class="footer-stack">
+    <strong class="footer-brand">
+      <span class="brand-name-brand">electronic</span><span class="brand-name-accent">Artefacts</span>
+    </strong>
+    <span>Creative technology studio: client systems, proprietary platforms, research and artistic publishing.</span>
+    <nav class="footer-links" aria-label="Quick links">
+      <a class="tag" href="/index.html">HOME</a>
+      <a class="tag" href="/work.html">WORK</a>
+      <a class="tag" href="/projects.html">PROJECTS</a>
+      <a class="tag" href="/programs.html">PROGRAMS</a>
+      <a class="tag" href="/research.html">RESEARCH</a>
+      <a class="tag" href="/knowledge/">KNOWLEDGE</a>
+      <a class="tag" href="/publications/">PUBLICATIONS</a>
+      <a class="tag" href="/archive.html">ARCHIVE</a>
+      <a class="tag" href="/about.html">ABOUT</a>
+      <a class="tag" href="/contact.html">CONTACT</a>
+      <a class="tag" href="/search/">SEARCH</a>
+      <a class="tag" href="/mentions-legales.html">LEGAL</a>
+      <a class="tag" href="/confidentialite.html">PRIVACY</a>
+      <a class="tag" href="https://www.vaste.space/" target="_blank" rel="noreferrer">VASTE</a>
+    </nav>
+  </div>
+  <div class="footer-stack footer-stack--right">
+    <span class="footer-note">Edition 2026</span>
+    <span class="footer-note">© <span id="current-year"></span></span>
+  </div>
+</div>
+</footer>
+  </body>
+</html>

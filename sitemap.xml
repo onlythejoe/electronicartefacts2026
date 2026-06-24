@@ -16,6 +16,7 @@
   <url><loc>https://electronicartefacts.com/archive/collections/</loc></url>
   <url><loc>https://electronicartefacts.com/publications/</loc></url>
   <url><loc>https://electronicartefacts.com/archive/collections/knowledge-hub-foundations/</loc><lastmod>2026-06-23</lastmod></url>
+  <url><loc>https://electronicartefacts.com/archive/collections/knowledge-hub-fourth-wave/</loc><lastmod>2026-06-24</lastmod></url>
   <url><loc>https://electronicartefacts.com/archive/collections/knowledge-hub-second-wave/</loc><lastmod>2026-06-24</lastmod></url>
   <url><loc>https://electronicartefacts.com/archive/collections/knowledge-hub-third-wave/</loc><lastmod>2026-06-24</lastmod></url>
   <url><loc>https://electronicartefacts.com/knowledge/concepts/ai-agent/</loc><lastmod>2026-06-24</lastmod></url>
@@ -61,6 +62,7 @@
   <url><loc>https://electronicartefacts.com/projects/vestiges/</loc><lastmod>2026-06-24</lastmod></url>
   <url><loc>https://electronicartefacts.com/publications/ai-agents-vs-ai-workflows/</loc><lastmod>2026-06-24</lastmod></url>
   <url><loc>https://electronicartefacts.com/publications/algorithmic-composition-and-rule-based-music/</loc><lastmod>2026-06-24</lastmod></url>
+  <url><loc>https://electronicartefacts.com/publications/c2pa-content-credentials-and-generative-media-provenance/</loc><lastmod>2026-06-24</lastmod></url>
   <url><loc>https://electronicartefacts.com/publications/contextual-execution-and-graph-runtimes/</loc><lastmod>2026-06-23</lastmod></url>
   <url><loc>https://electronicartefacts.com/publications/creative-coding-pedagogy-from-logo-to-p5js/</loc><lastmod>2026-06-24</lastmod></url>
   <url><loc>https://electronicartefacts.com/publications/digital-preservation-and-living-archives/</loc><lastmod>2026-06-23</lastmod></url>
@@ -71,13 +73,16 @@
   <url><loc>https://electronicartefacts.com/publications/how-large-language-models-actually-work/</loc><lastmod>2026-06-24</lastmod></url>
   <url><loc>https://electronicartefacts.com/publications/human-computer-interaction-for-creative-tools/</loc><lastmod>2026-06-24</lastmod></url>
   <url><loc>https://electronicartefacts.com/publications/hypertext-and-augmented-knowledge-systems/</loc><lastmod>2026-06-24</lastmod></url>
+  <url><loc>https://electronicartefacts.com/publications/iiif-and-compound-cultural-objects/</loc><lastmod>2026-06-24</lastmod></url>
   <url><loc>https://electronicartefacts.com/publications/knowledge-graphs-for-cultural-infrastructure/</loc><lastmod>2026-06-23</lastmod></url>
   <url><loc>https://electronicartefacts.com/publications/linked-data-and-public-knowledge-pages/</loc><lastmod>2026-06-23</lastmod></url>
   <url><loc>https://electronicartefacts.com/publications/local-and-open-source-ai-systems/</loc><lastmod>2026-06-24</lastmod></url>
   <url><loc>https://electronicartefacts.com/publications/metadata-cataloguing-and-cultural-memory/</loc><lastmod>2026-06-24</lastmod></url>
   <url><loc>https://electronicartefacts.com/publications/microservices-modular-monoliths-and-system-boundaries/</loc><lastmod>2026-06-24</lastmod></url>
+  <url><loc>https://electronicartefacts.com/publications/model-context-protocol-and-tool-using-ai-systems/</loc><lastmod>2026-06-24</lastmod></url>
   <url><loc>https://electronicartefacts.com/publications/motion-design-time-and-interface-semantics/</loc><lastmod>2026-06-24</lastmod></url>
   <url><loc>https://electronicartefacts.com/publications/multimodal-ai-across-text-image-audio-and-video/</loc><lastmod>2026-06-24</lastmod></url>
+  <url><loc>https://electronicartefacts.com/publications/observability-for-ai-agents-and-tool-calling-systems/</loc><lastmod>2026-06-24</lastmod></url>
   <url><loc>https://electronicartefacts.com/publications/ontologies-taxonomies-and-knowledge-modeling/</loc><lastmod>2026-06-24</lastmod></url>
   <url><loc>https://electronicartefacts.com/publications/open-source-as-cultural-infrastructure/</loc><lastmod>2026-06-24</lastmod></url>
   <url><loc>https://electronicartefacts.com/publications/personal-knowledge-systems-and-digital-gardens/</loc><lastmod>2026-06-24</lastmod></url>
@@ -89,13 +94,18 @@
   <url><loc>https://electronicartefacts.com/publications/systems-thinking-for-creative-practice/</loc><lastmod>2026-06-24</lastmod></url>
   <url><loc>https://electronicartefacts.com/publications/typography-reading-systems-and-digital-interfaces/</loc><lastmod>2026-06-24</lastmod></url>
   <url><loc>https://electronicartefacts.com/publications/web-audio-and-browser-based-sound-systems/</loc><lastmod>2026-06-24</lastmod></url>
+  <url><loc>https://electronicartefacts.com/publications/webnn-and-local-ai-in-the-browser/</loc><lastmod>2026-06-24</lastmod></url>
   <url><loc>https://electronicartefacts.com/publications/why-graphs-are-more-powerful-than-folders/</loc><lastmod>2026-06-24</lastmod></url>
   <url><loc>https://electronicartefacts.com/research/fields/runtime-theory/</loc><lastmod>2026-06-22</lastmod></url>
   <url><loc>https://electronicartefacts.com/knowledge/technologies/activitypub/</loc><lastmod>2026-06-24</lastmod></url>
+  <url><loc>https://electronicartefacts.com/knowledge/technologies/c2pa/</loc><lastmod>2026-06-24</lastmod></url>
   <url><loc>https://electronicartefacts.com/knowledge/technologies/cloudevents/</loc><lastmod>2026-06-24</lastmod></url>
   <url><loc>https://electronicartefacts.com/knowledge/technologies/css-fonts/</loc><lastmod>2026-06-24</lastmod></url>
+  <url><loc>https://electronicartefacts.com/knowledge/technologies/iiif/</loc><lastmod>2026-06-24</lastmod></url>
   <url><loc>https://electronicartefacts.com/knowledge/technologies/json-ld/</loc><lastmod>2026-06-23</lastmod></url>
   <url><loc>https://electronicartefacts.com/knowledge/technologies/llama-cpp/</loc><lastmod>2026-06-24</lastmod></url>
+  <url><loc>https://electronicartefacts.com/knowledge/technologies/model-context-protocol/</loc><lastmod>2026-06-24</lastmod></url>
+  <url><loc>https://electronicartefacts.com/knowledge/technologies/opentelemetry/</loc><lastmod>2026-06-24</lastmod></url>
   <url><loc>https://electronicartefacts.com/knowledge/technologies/owl/</loc><lastmod>2026-06-24</lastmod></url>
   <url><loc>https://electronicartefacts.com/knowledge/technologies/rdf/</loc><lastmod>2026-06-23</lastmod></url>
   <url><loc>https://electronicartefacts.com/knowledge/technologies/redis-streams/</loc><lastmod>2026-06-24</lastmod></url>
@@ -104,4 +114,5 @@
   <url><loc>https://electronicartefacts.com/knowledge/technologies/web-animations/</loc><lastmod>2026-06-24</lastmod></url>
   <url><loc>https://electronicartefacts.com/knowledge/technologies/web-audio-api/</loc><lastmod>2026-06-24</lastmod></url>
   <url><loc>https://electronicartefacts.com/knowledge/technologies/webgl/</loc><lastmod>2026-06-24</lastmod></url>
+  <url><loc>https://electronicartefacts.com/knowledge/technologies/webnn/</loc><lastmod>2026-06-24</lastmod></url>
 </urlset>

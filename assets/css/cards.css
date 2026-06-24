@@ -36,6 +36,10 @@
   animation-delay: calc((var(--zone-index, 1) - 1) * 70ms);
 }
 
+.zone-card[data-zone-index="1"] {
+  animation: none;
+}
+
 .zone-card::before {
   content: "";
   position: absolute;

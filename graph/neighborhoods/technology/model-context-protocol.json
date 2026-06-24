@@ -1,0 +1,68 @@
+{
+  "id": "local:ea:technology:model-context-protocol",
+  "kind": "local",
+  "focus": "ea:technology:model-context-protocol",
+  "nodes": [
+    {
+      "id": "ea:program:vaste",
+      "type": "program",
+      "title": "VASTE",
+      "route": "/programs/vaste/",
+      "status": "development",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:model-context-protocol-and-tool-using-ai-systems",
+      "type": "publication",
+      "title": "Model Context Protocol and Tool-Using AI Systems",
+      "route": "/publications/model-context-protocol-and-tool-using-ai-systems/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:observability-for-ai-agents-and-tool-calling-systems",
+      "type": "publication",
+      "title": "Observability for AI Agents and Tool-Calling Systems",
+      "route": "/publications/observability-for-ai-agents-and-tool-calling-systems/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:technology:model-context-protocol",
+      "type": "technology",
+      "title": "Model Context Protocol",
+      "route": "/knowledge/technologies/model-context-protocol/",
+      "status": "active",
+      "confidence": "canonical"
+    }
+  ],
+  "edges": [
+    {
+      "id": "ear:mcp-article-documents-mcp",
+      "source": "ea:publication:model-context-protocol-and-tool-using-ai-systems",
+      "target": "ea:technology:model-context-protocol",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Model Context Protocol and Tool-Using AI Systems documents MCP as a capability protocol for AI tools, prompts and resources.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:observability-article-uses-mcp",
+      "source": "ea:publication:observability-for-ai-agents-and-tool-calling-systems",
+      "target": "ea:technology:model-context-protocol",
+      "predicate": "usesTechnology",
+      "label": "Uses technology",
+      "statement": "Observability for AI Agents and Tool-Calling Systems uses MCP as the reference capability surface for tool telemetry.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:vaste-integrates-with-mcp",
+      "source": "ea:program:vaste",
+      "target": "ea:technology:model-context-protocol",
+      "predicate": "integratesWith",
+      "label": "Integrates with",
+      "statement": "VASTE can integrate with MCP as a scoped interface for graph resources, prompts and controlled tools.",
+      "confidence": "observed"
+    }
+  ]
+}

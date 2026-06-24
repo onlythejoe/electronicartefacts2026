@@ -26,9 +26,26 @@
       "route": "/publications/multimodal-ai-across-text-image-audio-and-video/",
       "status": "active",
       "confidence": "published"
+    },
+    {
+      "id": "ea:publication:webnn-and-local-ai-in-the-browser",
+      "type": "publication",
+      "title": "WebNN and Local AI in the Browser",
+      "route": "/publications/webnn-and-local-ai-in-the-browser/",
+      "status": "active",
+      "confidence": "published"
     }
   ],
   "edges": [
+    {
+      "id": "ear:webnn-article-documents-multimodal-ai",
+      "source": "ea:publication:webnn-and-local-ai-in-the-browser",
+      "target": "ea:concept:multimodal-ai",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "WebNN and Local AI in the Browser links WebNN to multimodal browser interfaces and local perception tasks.",
+      "confidence": "published"
+    },
     {
       "id": "ear:multimodal-article-documents-multimodal-ai",
       "source": "ea:publication:multimodal-ai-across-text-image-audio-and-video",

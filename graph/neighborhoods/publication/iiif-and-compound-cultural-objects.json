@@ -1,0 +1,85 @@
+{
+  "id": "local:ea:publication:iiif-and-compound-cultural-objects",
+  "kind": "local",
+  "focus": "ea:publication:iiif-and-compound-cultural-objects",
+  "nodes": [
+    {
+      "id": "ea:collection:knowledge-hub-fourth-wave",
+      "type": "collection",
+      "title": "Knowledge Hub Fourth Wave",
+      "route": "/archive/collections/knowledge-hub-fourth-wave/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:concept:digital-preservation",
+      "type": "concept",
+      "title": "Digital Preservation",
+      "route": "/knowledge/concepts/digital-preservation/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:project:vestiges",
+      "type": "project",
+      "title": "Vestiges",
+      "route": "/projects/vestiges/",
+      "status": "development",
+      "confidence": "observed"
+    },
+    {
+      "id": "ea:publication:iiif-and-compound-cultural-objects",
+      "type": "publication",
+      "title": "IIIF and Compound Cultural Objects",
+      "route": "/publications/iiif-and-compound-cultural-objects/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:technology:iiif",
+      "type": "technology",
+      "title": "IIIF",
+      "route": "/knowledge/technologies/iiif/",
+      "status": "active",
+      "confidence": "canonical"
+    }
+  ],
+  "edges": [
+    {
+      "id": "ear:iiif-article-documents-iiif",
+      "source": "ea:publication:iiif-and-compound-cultural-objects",
+      "target": "ea:technology:iiif",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "IIIF and Compound Cultural Objects documents IIIF as a presentation framework for cultural archive objects.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:iiif-article-documents-digital-preservation",
+      "source": "ea:publication:iiif-and-compound-cultural-objects",
+      "target": "ea:concept:digital-preservation",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "IIIF and Compound Cultural Objects connects object presentation structure to digital preservation practice.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:iiif-article-documents-vestiges",
+      "source": "ea:publication:iiif-and-compound-cultural-objects",
+      "target": "ea:project:vestiges",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "IIIF and Compound Cultural Objects uses Vestiges as a cultural infrastructure context for compound object records.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:knowledge-hub-fourth-wave-has-iiif-article",
+      "source": "ea:publication:iiif-and-compound-cultural-objects",
+      "target": "ea:collection:knowledge-hub-fourth-wave",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "IIIF and Compound Cultural Objects is part of the fourth Knowledge Hub wave.",
+      "confidence": "published"
+    }
+  ]
+}

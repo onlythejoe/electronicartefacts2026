@@ -18,9 +18,43 @@
       "route": "/publications/ai-agents-vs-ai-workflows/",
       "status": "active",
       "confidence": "published"
+    },
+    {
+      "id": "ea:publication:model-context-protocol-and-tool-using-ai-systems",
+      "type": "publication",
+      "title": "Model Context Protocol and Tool-Using AI Systems",
+      "route": "/publications/model-context-protocol-and-tool-using-ai-systems/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:observability-for-ai-agents-and-tool-calling-systems",
+      "type": "publication",
+      "title": "Observability for AI Agents and Tool-Calling Systems",
+      "route": "/publications/observability-for-ai-agents-and-tool-calling-systems/",
+      "status": "active",
+      "confidence": "published"
     }
   ],
   "edges": [
+    {
+      "id": "ear:mcp-article-documents-ai-agent",
+      "source": "ea:publication:model-context-protocol-and-tool-using-ai-systems",
+      "target": "ea:concept:ai-agent",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Model Context Protocol and Tool-Using AI Systems explains how MCP relates to AI agents and deterministic workflows.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:observability-article-documents-ai-agent",
+      "source": "ea:publication:observability-for-ai-agents-and-tool-calling-systems",
+      "target": "ea:concept:ai-agent",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Observability for AI Agents and Tool-Calling Systems explains why agents need traceable model and tool behavior.",
+      "confidence": "published"
+    },
     {
       "id": "ear:agents-article-documents-ai-agent",
       "source": "ea:publication:ai-agents-vs-ai-workflows",

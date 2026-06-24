@@ -43,6 +43,48 @@
     "modifiedAt": "2026-06-23"
   },
   {
+    "id": "ea:collection:knowledge-hub-fourth-wave",
+    "route": "/archive/collections/knowledge-hub-fourth-wave/",
+    "type": "collection",
+    "title": "Knowledge Hub Fourth Wave",
+    "alternateNames": [],
+    "abstract": "Knowledge Hub Fourth Wave groups articles and technology records about MCP, C2PA, WebNN, IIIF and OpenTelemetry for durable AI and cultural infrastructure.",
+    "headings": [
+      "Thesis",
+      "Selection logic",
+      "Editorial role",
+      "Current members",
+      "Internal pathways",
+      "Future expansion"
+    ],
+    "body": "Thesis The next layer of AI and cultural infrastructure is not only model capability. It is protocol design: context access, tool use, media provenance, local inference, object presentation and operational accountability. Selection logic This collection follows the AI and graph-runtime foundations by adding implementation-facing standards. MCP connects tools and context. C2PA connects media to provenance. WebNN brings local inference to the browser. IIIF structures compound cultural objects. OpenTelemetry makes runtime behavior observable. Editorial role The wave avoids product rankings. It focuses on stable concepts and standards that can support future Electronic Artefacts systems, especially VASTE, Vestiges, ORETH, Palimpsests and the Knowledge Hub. Current members The collection includes five long-form publications and five canonical technology records. Internal pathways AI readers can move from agents to MCP and observability. Archive readers can move from provenance to C2PA and IIIF. Web readers can move from multimodal AI to WebNN and local interaction design. Future expansion Future articles can add WebAssembly components, verifiable credentials, Solid data spaces, source entities, claim graphs and browser-based archive viewers.",
+    "tags": [
+      "Knowledge Hub",
+      "Fourth Wave",
+      "AI Protocols",
+      "Provenance",
+      "Cultural Infrastructure"
+    ],
+    "questions": [],
+    "relationLabels": [
+      "memberOfCollection Model Context Protocol and Tool-Using AI Systems is part of the fourth Knowledge Hub wave.",
+      "memberOfCollection C2PA Content Credentials and Generative Media Provenance is part of the fourth Knowledge Hub wave.",
+      "memberOfCollection WebNN and Local AI in the Browser is part of the fourth Knowledge Hub wave.",
+      "memberOfCollection IIIF and Compound Cultural Objects is part of the fourth Knowledge Hub wave.",
+      "memberOfCollection Observability for AI Agents and Tool-Calling Systems is part of the fourth Knowledge Hub wave."
+    ],
+    "relatedEntityIds": [
+      "ea:publication:model-context-protocol-and-tool-using-ai-systems",
+      "ea:publication:c2pa-content-credentials-and-generative-media-provenance",
+      "ea:publication:webnn-and-local-ai-in-the-browser",
+      "ea:publication:iiif-and-compound-cultural-objects",
+      "ea:publication:observability-for-ai-agents-and-tool-calling-systems"
+    ],
+    "status": "active",
+    "confidence": "published",
+    "modifiedAt": "2026-06-24"
+  },
+  {
     "id": "ea:collection:knowledge-hub-second-wave",
     "route": "/archive/collections/knowledge-hub-second-wave/",
     "type": "collection",
@@ -178,9 +220,13 @@
     ],
     "questions": [],
     "relationLabels": [
+      "documents Model Context Protocol and Tool-Using AI Systems explains how MCP relates to AI agents and deterministic workflows.",
+      "documents Observability for AI Agents and Tool-Calling Systems explains why agents need traceable model and tool behavior.",
       "documents AI Agents vs AI Workflows documents model-directed agency and deterministic workflow boundaries."
     ],
     "relatedEntityIds": [
+      "ea:publication:model-context-protocol-and-tool-using-ai-systems",
+      "ea:publication:observability-for-ai-agents-and-tool-calling-systems",
       "ea:publication:ai-agents-vs-ai-workflows"
     ],
     "status": "active",
@@ -318,6 +364,8 @@
     ],
     "questions": [],
     "relationLabels": [
+      "documents Model Context Protocol and Tool-Using AI Systems connects MCP permissions to contextual execution boundaries.",
+      "documents Observability for AI Agents and Tool-Calling Systems ties telemetry to context-aware permissions and runtime accountability.",
       "appliesConcept VASTE applies contextual execution through identity-aware graph records, relations, permissions and event propagation.",
       "defines Runtime Theory defines the research boundary for contextual execution inside Electronic Artefacts.",
       "documents Contextual Execution and Graph Runtimes documents contextual execution as a runtime principle.",
@@ -326,6 +374,8 @@
       "documents Runtime Engines and Domain Operating Systems explains capability evaluation through contextual execution."
     ],
     "relatedEntityIds": [
+      "ea:publication:model-context-protocol-and-tool-using-ai-systems",
+      "ea:publication:observability-for-ai-agents-and-tool-calling-systems",
       "ea:program:vaste",
       "ea:researchField:runtime-theory",
       "ea:publication:contextual-execution-and-graph-runtimes",
@@ -443,6 +493,7 @@
     ],
     "questions": [],
     "relationLabels": [
+      "documents IIIF and Compound Cultural Objects connects object presentation structure to digital preservation practice.",
       "appliesConcept Palimpsests applies digital preservation by treating audio, visual and research traces as a compound cultural record.",
       "documents Digital Preservation and Living Archives documents digital preservation as long-term care for digital objects and context.",
       "documents Signal Archaeology, Audio Memory and Machine Listening connects audio traces to digital preservation practice.",
@@ -451,6 +502,7 @@
       "documents Metadata, Cataloguing and Cultural Memory connects metadata to digital preservation and long-term context."
     ],
     "relatedEntityIds": [
+      "ea:publication:iiif-and-compound-cultural-objects",
       "ea:project:palimpsests",
       "ea:publication:digital-preservation-and-living-archives",
       "ea:publication:signal-archaeology-audio-memory-and-machine-listening",
@@ -769,12 +821,14 @@
     ],
     "questions": [],
     "relationLabels": [
+      "documents WebNN and Local AI in the Browser frames local inference as a human-computer interaction design problem.",
       "documents Motion Design, Time and Interface Semantics links motion design to human computer interaction.",
       "documents Typography, Reading Systems and Digital Interfaces connects typography to human computer interaction and accessibility.",
       "documents Human Computer Interaction for Creative Tools documents HCI as a creative tool discipline.",
       "documents Generative AI, Latent Space and Creative Workflows links AI workflows to human computer interaction and creative agency."
     ],
     "relatedEntityIds": [
+      "ea:publication:webnn-and-local-ai-in-the-browser",
       "ea:publication:motion-design-time-and-interface-semantics",
       "ea:publication:typography-reading-systems-and-digital-interfaces",
       "ea:publication:human-computer-interaction-for-creative-tools",
@@ -1110,10 +1164,12 @@
     ],
     "questions": [],
     "relationLabels": [
+      "documents WebNN and Local AI in the Browser links WebNN to multimodal browser interfaces and local perception tasks.",
       "documents Multimodal AI Across Text, Image, Audio and Video documents cross-modal architectures and evaluation.",
       "appliesConcept ORETH provides an applied context for connecting audio analysis with visual, textual and archival records."
     ],
     "relatedEntityIds": [
+      "ea:publication:webnn-and-local-ai-in-the-browser",
       "ea:publication:multimodal-ai-across-text-image-audio-and-video",
       "ea:program:oreth"
     ],
@@ -1323,6 +1379,7 @@
     ],
     "questions": [],
     "relationLabels": [
+      "documents C2PA Content Credentials and Generative Media Provenance explains provenance as evidence rather than proof of truth.",
       "documents Knowledge Graphs for Cultural Infrastructure frames provenance as a trust layer for cultural knowledge graphs.",
       "documents Digital Preservation and Living Archives explains provenance as a central layer of living archive practice.",
       "documents Signal Archaeology, Audio Memory and Machine Listening explains why signal interpretation needs provenance.",
@@ -1334,6 +1391,7 @@
       "documents Multimodal AI Across Text, Image, Audio and Video documents provenance risks across generated media."
     ],
     "relatedEntityIds": [
+      "ea:publication:c2pa-content-credentials-and-generative-media-provenance",
       "ea:publication:knowledge-graphs-for-cultural-infrastructure",
       "ea:publication:digital-preservation-and-living-archives",
       "ea:publication:signal-archaeology-audio-memory-and-machine-listening",
@@ -1654,6 +1712,9 @@
     "questions": [],
     "relationLabels": [
       "documents Foundational Lineage",
+      "documents Model Context Protocol and Tool-Using AI Systems uses VASTE as the graph-runtime context for scoped AI tools.",
+      "integratesWith VASTE can integrate with MCP as a scoped interface for graph resources, prompts and controlled tools.",
+      "integratesWith VASTE can integrate with OpenTelemetry to observe graph-runtime events, tool calls and projection behavior.",
       "appliesConcept VASTE applies contextual execution through identity-aware graph records, relations, permissions and event propagation.",
       "documents Contextual Execution and Graph Runtimes uses VASTE as the program context for graph runtime execution.",
       "documents Human Computer Interaction for Creative Tools uses VASTE as a context for graph-aware creative systems.",
@@ -1676,6 +1737,9 @@
     ],
     "relatedEntityIds": [
       "ea:publication:foundational-lineage-001",
+      "ea:publication:model-context-protocol-and-tool-using-ai-systems",
+      "ea:technology:model-context-protocol",
+      "ea:technology:opentelemetry",
       "ea:concept:contextual-execution",
       "ea:publication:contextual-execution-and-graph-runtimes",
       "ea:publication:human-computer-interaction-for-creative-tools",
@@ -1727,6 +1791,8 @@
     ],
     "questions": [],
     "relationLabels": [
+      "documents C2PA Content Credentials and Generative Media Provenance applies media provenance to Palimpsests and production memory.",
+      "integratesWith Palimpsests can integrate with C2PA to attach signed provenance and production memory to public media derivatives.",
       "poweredBy Palimpsests uses ORETH as its audio intelligence and artistic research layer.",
       "appliesConcept Palimpsests applies signal archaeology by treating sonic residue and media traces as cultural material.",
       "appliesConcept Palimpsests applies digital preservation by treating audio, visual and research traces as a compound cultural record.",
@@ -1736,6 +1802,8 @@
       "documents Multimodal AI Across Text, Image, Audio and Video uses Palimpsests as a compound media and provenance context."
     ],
     "relatedEntityIds": [
+      "ea:publication:c2pa-content-credentials-and-generative-media-provenance",
+      "ea:technology:c2pa",
       "ea:program:oreth",
       "ea:concept:signal-archaeology",
       "ea:concept:digital-preservation",
@@ -1779,6 +1847,8 @@
     ],
     "questions": [],
     "relationLabels": [
+      "documents IIIF and Compound Cultural Objects uses Vestiges as a cultural infrastructure context for compound object records.",
+      "integratesWith Vestiges can integrate with IIIF for compound cultural object presentation and annotation-aware viewing.",
       "appliesConcept Vestiges applies knowledge-graph principles to culture, craft, institutions, techniques and public knowledge pages.",
       "documents Knowledge Graphs for Cultural Infrastructure uses Vestiges as the applied cultural infrastructure example.",
       "documents Digital Preservation and Living Archives connects Vestiges to living archive and cultural knowledge preservation.",
@@ -1795,6 +1865,8 @@
       "createdBy Electronic Artefacts created Vestiges as the flagship public application of VASTE."
     ],
     "relatedEntityIds": [
+      "ea:publication:iiif-and-compound-cultural-objects",
+      "ea:technology:iiif",
       "ea:concept:knowledge-graph",
       "ea:publication:knowledge-graphs-for-cultural-infrastructure",
       "ea:publication:digital-preservation-and-living-archives",
@@ -1931,6 +2003,61 @@
       "ea:program:oreth",
       "ea:concept:web-audio",
       "ea:collection:knowledge-hub-second-wave"
+    ],
+    "status": "active",
+    "confidence": "published",
+    "modifiedAt": "2026-06-24"
+  },
+  {
+    "id": "ea:publication:c2pa-content-credentials-and-generative-media-provenance",
+    "route": "/publications/c2pa-content-credentials-and-generative-media-provenance/",
+    "type": "publication",
+    "format": "technicalArticle",
+    "title": "C2PA Content Credentials and Generative Media Provenance",
+    "alternateNames": [],
+    "abstract": "A practical explanation of C2PA, Content Credentials, signed media manifests, provenance claims, trust limits and archive use.",
+    "headings": [
+      "Problem",
+      "Introduction",
+      "Architecture",
+      "Content credentials",
+      "Manifests and assertions",
+      "Provenance is not truth",
+      "Generative AI",
+      "Archive workflows",
+      "Trust chains",
+      "C2PA and PROV",
+      "Rights and privacy",
+      "Palimpsests",
+      "Implementation",
+      "Evidence",
+      "Electronic Artefacts implications",
+      "Limitations",
+      "Related concepts",
+      "Related technology",
+      "Glossary",
+      "References"
+    ],
+    "body": "Problem Generative media, fast editing pipelines and platform reposting make it difficult to know where an image, video, audio file or document came from. Conventional metadata is easy to strip or edit. Viewers need provenance signals, but provenance signals are often mistaken for truth. Introduction C2PA, the Coalition for Content Provenance and Authenticity, defines specifications for attaching verifiable provenance information to media. Its public product language often appears as Content Credentials. The basic idea is that a media asset can carry a signed record of origin, actions, assertions and related metadata. This is important in a media environment shaped by synthetic images, AI-assisted editing and fragmented distribution. A photograph may be captured on a device, edited in software, exported for a publication, compressed by a platform and reposted elsewhere. Each transformation can detach the asset from its production context. C2PA tries to keep some of that context attached. For Electronic Artefacts, the standard is less interesting as a consumer label and more interesting as archive infrastructure. Palimpsests, ORETH and future public records can benefit from durable production memory, but only if credentials are treated as evidence rather than final authority. Architecture C2PA architecture centers on signed manifests attached to, embedded in or associated with media assets. Those manifests group assertions about creation, editing, ingredients, thumbnails and policy metadata, while verification tools inspect signatures and claim structure. The architecture is therefore not a single database of truth. It is a portable evidence layer that can travel with media files and be reconciled with external archive records, graph entities and editorial context. Content credentials A content credential is a structured provenance record associated with a media asset. It can include who created or signed the asset, which tool performed an action, what changes were declared and how those assertions were secured. The credential does not need to reveal everything. Implementations can choose what to disclose. A credential can say that an asset was exported by a tool, that it includes AI-generated content, that a crop was applied or that an organization signed the record. The practical value depends on adoption across capture devices, editing tools, publication systems, platforms and viewers. A signed manifest hidden from readers has less public effect than one surfaced clearly in context. Manifests and assertions C2PA uses manifests to organize assertions about an asset. An assertion is a claim made by a tool, person or organization. Assertions can describe actions, ingredients, thumbnails, metadata or AI-related information. The manifest can be cryptographically signed. This gives verifiers a way to detect whether the manifest has been altered and whether the signer is known. It does not mean that every assertion is morally or factually correct. It means that the assertion was bound to a signature. This difference is critical. A credential can support chain-of-custody reasoning, but a trusted institution still has to decide which signers and claims it trusts. Provenance is not truth Provenance records where something came from and how it changed. Truth asks whether a claim corresponds to reality. These overlap but are not the same. A photograph can have a valid credential and still be misleading because of framing, timing or caption. An AI-generated image can be labelled correctly and still circulate without that label being visible. A genuine recording can be edited honestly or dishonestly. C2PA should therefore be used as a provenance layer, not as an authenticity oracle. Archive and editorial systems still need source criticism, rights review, contextual notes and human judgment. Generative AI Generative AI increases the need for provenance because outputs can be produced quickly and convincingly. C2PA can record that a tool generated, modified or exported an asset. It can also support policies that distinguish camera capture, edited capture and synthetic generation. The hard part is not only technical. A platform may strip metadata. A viewer may not show it. A malicious actor may start from an asset without credentials. A system may sign a record whose assertions are incomplete. For creative practice, the question should not be limited to detecting fakes. Many artists use generative tools legitimately. The stronger question is how to document process, authorship, ingredients, transformations and rights without reducing the work to a warning label. Archive workflows In an archive, C2PA can be one layer among several. A born-digital work should also have fixity checks, file format records, rights metadata, source notes, software environment information and interpretive context. Credentials can help record which export came from which tool and which derivative was used for publication. They can connect production images to project dossiers. They can make public derivatives easier to relate to private master files. But an archive should not depend on embedded metadata alone. Manifests may be detached, stripped or unsupported by future tools. Preserve sidecar records and canonical database entries alongside embedded credentials. Trust chains Trust depends on signers and verification context. A credential signed by an unknown tool has different force from one signed by an institution with documented procedures. A viewer needs to know not only that a signature validates, but what the signer is claiming. This maps well to knowledge graphs. A graph can model signers, tools, assets, events, assertions, rights and publication contexts. C2PA can provide machine-verifiable fragments, while the graph provides human-readable structure and institutional interpretation. The trust chain should be explicit. Who captured the source? Which tool transformed it? Which organization approved it? Which public page displays it? C2PA and PROV W3C PROV gives a general model for entities, activities and agents. C2PA gives a media-specific credential system. They are complementary. An archive can use C2PA to bind provenance to a file and use broader graph records to describe the same history across publications, projects and people. This helps avoid a narrow view where only embedded file metadata counts. For Electronic Artefacts, PROV-style thinking remains useful because works are compound. A Palimpsests object might include audio stems, photographs, notes, rendered videos, album art, text fragments and public pages. Not every relation lives inside one media file. Rights and privacy Provenance metadata can expose people, locations, device identifiers, edit history or organizational workflows. A stronger provenance record is not automatically safer. Every credential strategy needs disclosure policy. Which fields should be public? Which should be private but preserved? Which should be omitted? How can subjects request correction? How are minors, collaborators and restricted cultural material protected? Rights metadata is also separate from provenance. A record of origin does not guarantee permission to publish, remix or train on the media. Palimpsests Palimpsests is a strong context for C2PA because the project treats media traces as cultural material. A credential can document production stages, but the artistic meaning lives in the relation between traces. For example, a cover image, an audio export and a dossier PDF might each carry credentials. The public project page can then explain how those assets relate to the work, the process and the archive. This creates a layered record: embedded credentials for file-level provenance, graph entities for project-level meaning, and editorial text for interpretation. Implementation Start by choosing one media workflow, such as publishing a final image or video derivative. Preserve the master asset, create a signed public derivative, store the manifest or sidecar data, and record the asset relation in the graph. Define signer identity, fields to disclose, private metadata policy, verification procedure and fallback when a platform strips credentials. Display credentials in context rather than relying on hidden metadata. Evidence The C2PA specification set defines Content Credentials, attestations, implementer guidance, UX guidance, security considerations and AI/ML guidance. W3C PROV provides a broader conceptual model for agents, activities and entities in provenance records. Electronic Artefacts implications C2PA belongs in the Knowledge Hub because Electronic Artefacts works across AI, archives, audio, visual systems and public knowledge pages. It gives a concrete technical layer for provenance, but the site should avoid overstating its authority. The useful stance is evidentiary: credentials can strengthen a record, but they must be interpreted with sources, rights, context and human editorial responsibility. Limitations C2PA cannot guarantee universal platform display, cannot prove factual truth and cannot preserve credentials if a workflow strips them. It also introduces privacy and governance questions because provenance metadata can reveal sensitive production context. Related concepts Read Provenance , Digital Preservation , Generative AI and Metadata . Related technology See C2PA and JSON-LD . Glossary Content credential: a structured media provenance record associated with an asset. Manifest: a package of assertions and metadata associated with a media file. Assertion: a claim made by a tool, person or organization. Signer: the entity whose key signs a manifest or credential. Fixity: evidence that a file has not changed since a recorded point. References Coalition for Content Provenance and Authenticity. C2PA Specifications 2.4. Coalition for Content Provenance and Authenticity. C2PA Security Considerations. W3C. PROV Overview.",
+    "tags": [
+      "C2PA",
+      "Content Credentials",
+      "Provenance",
+      "Generative AI",
+      "Digital Preservation"
+    ],
+    "questions": [],
+    "relationLabels": [
+      "documents C2PA Content Credentials and Generative Media Provenance documents C2PA as media provenance infrastructure.",
+      "documents C2PA Content Credentials and Generative Media Provenance explains provenance as evidence rather than proof of truth.",
+      "documents C2PA Content Credentials and Generative Media Provenance applies media provenance to Palimpsests and production memory.",
+      "memberOfCollection C2PA Content Credentials and Generative Media Provenance is part of the fourth Knowledge Hub wave."
+    ],
+    "relatedEntityIds": [
+      "ea:technology:c2pa",
+      "ea:concept:provenance",
+      "ea:project:palimpsests",
+      "ea:collection:knowledge-hub-fourth-wave"
     ],
     "status": "active",
     "confidence": "published",
@@ -2515,6 +2642,61 @@
     "modifiedAt": "2026-06-24"
   },
   {
+    "id": "ea:publication:iiif-and-compound-cultural-objects",
+    "route": "/publications/iiif-and-compound-cultural-objects/",
+    "type": "publication",
+    "format": "technicalArticle",
+    "title": "IIIF and Compound Cultural Objects",
+    "alternateNames": [],
+    "abstract": "A practical explanation of IIIF Presentation API concepts, compound objects, manifests, canvases, annotations and cultural archive interfaces.",
+    "headings": [
+      "Problem",
+      "Introduction",
+      "Architecture",
+      "Compound objects",
+      "Collections",
+      "Manifests",
+      "Canvases",
+      "Annotations",
+      "Presentation, not discovery",
+      "Linked Data",
+      "Digital preservation",
+      "Vestiges",
+      "Implementation",
+      "Evidence",
+      "Electronic Artefacts implications",
+      "Limitations",
+      "Related concepts",
+      "Related technology",
+      "Glossary",
+      "References"
+    ],
+    "body": "Problem Cultural objects rarely fit one file. A book has pages, a sculpture has views, an album has tracks and artwork, an installation has video, audio, diagrams and documentation. Flat image galleries and download folders hide the structure that gives those objects meaning. Introduction IIIF, the International Image Interoperability Framework, provides APIs and data models for presenting digital cultural objects. It is widely associated with high-resolution image viewers, but the Presentation API is broader: it models compound objects, views, sequences, ranges, annotations and descriptive context. The IIIF Presentation API 3.0 describes resources such as collections, manifests, canvases, ranges and annotations. These are not only technical containers. They are a way to say how a cultural object should be seen, navigated and contextualized. For Electronic Artefacts, IIIF is relevant because projects such as Vestiges and Palimpsests involve compound records. The work is not just a media file. It is a structured object with parts, views, traces, evidence and interpretation. Architecture A IIIF presentation architecture contains source assets, derivative media, image or media services, manifests, canvases, ranges, annotations, viewers and external metadata records. IIIF describes presentational structure, while the surrounding knowledge graph records semantic identity, provenance, rights and cross-object relations. Compound objects A compound object is made of multiple parts or views. A manuscript has pages. A painting may have visible, infrared and detail images. A music release may have tracks, cover art, liner notes and videos. A cultural technique may have photographs, diagrams, interviews and contextual records. If each file is published independently, the object dissolves. Users can see pieces but not the whole. Search engines may index fragments without understanding their relation. Archives may preserve files while losing presentation structure. IIIF helps by separating object structure from individual asset storage. A manifest can describe how parts belong together and how a viewer should present them. Collections In IIIF, a collection groups manifests and other collections. It can represent an archive set, exhibition, search result, institution or curated body of objects. Collections are useful because cultural infrastructure often needs nested navigation. A project may contain series. A series may contain objects. An object may contain canvases. This structure lets readers move from overview to detail without relying on a folder tree. For Vestiges, collections could group crafts, institutions, regions, techniques or documentation campaigns. The important point is that collection structure is editorial, not merely storage. Manifests A manifest describes a single object or work for presentation. It includes descriptive information and the sequence or structure of views needed to render it. The manifest is the central unit a viewer can load. It tells the client what the object is, which canvases it has, which resources are painted onto those canvases and which ranges or structures organize them. For Palimpsests, one manifest might describe a release dossier: cover image, booklet pages, listening notes, track-related visuals and documentation. For a visual archive, a manifest might describe one artefact with multiple photographs and annotations. Canvases A canvas is a virtual surface or time extent. It provides a coordinate or temporal frame where content resources are placed. This is a powerful abstraction because it can represent a page, image plane, video duration or audio timeline. A canvas is not the image itself. It is the space onto which images, text, video or audio can be associated. That distinction allows annotations, overlays and alternate representations. For audio-visual work, this model is especially useful. A canvas can refer to time-based media and annotations can point to moments or segments. Annotations IIIF uses annotations to associate content with canvases or parts of canvases. An annotation might place an image on a canvas, add transcription, mark a region, attach commentary or link to another resource. Annotations make cultural objects active surfaces for interpretation. A researcher can connect a visual detail to a note. A curator can identify a technique. A system can associate transcript text with audio. Annotation workflows require governance. Public annotations, editorial annotations and machine-generated annotations should not be collapsed into one layer. Each should carry author, confidence and review status. Presentation, not discovery The IIIF Presentation API explicitly focuses on presenting compound objects to humans. It does not try to replace metadata standards for discovery or search. This matters. IIIF can tell a viewer how to render an object and move through its parts. A knowledge graph can describe why the object matters, which people are involved, which techniques it uses, which sources support claims and how it relates to other objects. The best architecture pairs them. IIIF handles rich object presentation. Linked Data and site metadata handle discovery, semantic identity and cross-object relations. Linked Data IIIF uses JSON-LD and adopts Linked Data principles. This gives the model web-native identifiers and interoperability benefits. However, using JSON-LD does not automatically make an archive semantically rich. A manifest may include descriptive labels that are intended for human display rather than machine reasoning. Deeper semantic work still requires controlled vocabularies, entity identifiers and relation modeling. Electronic Artefacts already has a graph model for entities and relations. IIIF could complement it by adding presentation-level structure for selected media-rich objects. Digital preservation Preservation is not only keeping files. It is keeping enough structure and context for future interpretation. IIIF can help preserve presentation structure: which page followed which, which image showed which view, which annotation explained which region. It does not replace fixity, storage redundancy, rights records, format monitoring or provenance. It adds a presentational layer that can remain useful across viewers and institutions. A preservation plan should keep source assets, derivative assets, manifests, annotations, rights metadata and graph records together enough that future systems can reconstruct the object. Vestiges Vestiges is a natural IIIF-adjacent project because cultural heritage records often need more than one image and one paragraph. A craft object can have material details, maker context, workshop images, tool diagrams and institutional references. An IIIF manifest could expose the object for interoperable viewing. The Electronic Artefacts graph could connect that object to concepts, places, materials, techniques and evidence. This division prevents the public page from becoming either a generic article or a raw viewer. The page can explain, the graph can relate and IIIF can present. Implementation Start with one compound object that has multiple images or media parts. Create stable IDs for the object and assets. Produce a IIIF manifest that describes canvases, labels, summaries and resource links. Validate it in a IIIF viewer. Then connect the manifest back to the site graph: project, concept, provenance, rights and source records. Avoid treating the manifest as the only metadata source. Evidence The IIIF Presentation API 3.0 defines collections, manifests, canvases, ranges and annotations for presenting compound objects. It states that presentation is its core purpose and that discovery metadata is outside its direct scope. Electronic Artefacts implications IIIF gives Electronic Artefacts a mature reference for media-rich cultural objects. It is especially useful where the site needs a viewer-like experience without inventing a custom archive format. The design principle is complementarity: IIIF for presentation, knowledge graph records for meaning, provenance and discovery. Limitations IIIF can add implementation complexity, especially when a small project only needs a simple public page. It is most valuable when objects have multiple views, deep zoom needs, timed media, annotations or institutional interoperability requirements. Related concepts Read Digital Preservation , Linked Data , Metadata and Knowledge Graph . Related technology See IIIF and JSON-LD . Glossary Manifest: a IIIF resource describing how to present one compound object. Canvas: a spatial or temporal frame for object content. Range: a structural grouping inside a manifest. Annotation: a link between a canvas or region and content or commentary. Collection: a grouping of manifests or other collections. References IIIF Consortium. IIIF Presentation API 3.0. IIIF Consortium. IIIF Image API 3.0. W3C. JSON-LD 1.1.",
+    "tags": [
+      "IIIF",
+      "Digital Archives",
+      "Cultural Objects",
+      "Metadata",
+      "Linked Data"
+    ],
+    "questions": [],
+    "relationLabels": [
+      "documents IIIF and Compound Cultural Objects documents IIIF as a presentation framework for cultural archive objects.",
+      "documents IIIF and Compound Cultural Objects connects object presentation structure to digital preservation practice.",
+      "documents IIIF and Compound Cultural Objects uses Vestiges as a cultural infrastructure context for compound object records.",
+      "memberOfCollection IIIF and Compound Cultural Objects is part of the fourth Knowledge Hub wave."
+    ],
+    "relatedEntityIds": [
+      "ea:technology:iiif",
+      "ea:concept:digital-preservation",
+      "ea:project:vestiges",
+      "ea:collection:knowledge-hub-fourth-wave"
+    ],
+    "status": "active",
+    "confidence": "published",
+    "modifiedAt": "2026-06-24"
+  },
+  {
     "id": "ea:publication:knowledge-graphs-for-cultural-infrastructure",
     "route": "/publications/knowledge-graphs-for-cultural-infrastructure/",
     "type": "publication",
@@ -2813,6 +2995,64 @@
     "modifiedAt": "2026-06-24"
   },
   {
+    "id": "ea:publication:model-context-protocol-and-tool-using-ai-systems",
+    "route": "/publications/model-context-protocol-and-tool-using-ai-systems/",
+    "type": "publication",
+    "format": "technicalArticle",
+    "title": "Model Context Protocol and Tool-Using AI Systems",
+    "alternateNames": [],
+    "abstract": "A practical explanation of MCP as an integration protocol for resources, prompts, tools, consent, host boundaries and graph-scoped AI workflows.",
+    "headings": [
+      "Problem",
+      "Introduction",
+      "Architecture",
+      "Hosts, clients and servers",
+      "Resources",
+      "Prompts",
+      "Tools",
+      "Consent and control",
+      "Contextual execution",
+      "Agent workflows",
+      "Observability",
+      "Security",
+      "MCP and VASTE",
+      "Implementation",
+      "Evidence",
+      "Electronic Artefacts implications",
+      "Limitations",
+      "Related concepts",
+      "Related technology",
+      "Glossary",
+      "References"
+    ],
+    "body": "Problem Language-model applications increasingly need access to files, databases, tools, prompts and external services. Without a shared protocol, each integration becomes a custom bridge with unclear permissions, inconsistent context exposure and brittle assumptions about what a model is allowed to do. Introduction Model Context Protocol, usually shortened to MCP, standardizes how an AI host can connect to servers that expose context and capabilities. A host might be a desktop assistant, coding environment, chat interface or workflow engine. A server might expose project files, issue trackers, search indexes, media metadata, graph records or actions such as rendering a document. The important shift is architectural. MCP does not make a model autonomous by itself. It gives the surrounding application a structured way to discover and invoke resources, prompts and tools. Autonomy, review, permission and memory still belong to the host and application design. That distinction matters for Electronic Artefacts. VASTE is concerned with graph runtimes, context boundaries, identity, relations and event propagation. MCP can become one way to expose graph-scoped capabilities to model interfaces, but it should not bypass the graph’s own authority model. Architecture An MCP architecture contains a user-facing host, one or more clients, external servers, declared resources, reusable prompts, executable tools, approval controls and audit records. The protocol coordinates capability discovery and invocation; the host remains responsible for consent, policy and user-visible behavior. Hosts, clients and servers The MCP specification describes communication between hosts, clients and servers. The host is the application that the user experiences. A client is the connector inside that host. A server provides capabilities and context. This separation gives each layer a clear responsibility. The server describes what it can provide. The client manages the connection. The host decides how the user grants access and how model outputs are interpreted. In practice, the host is the trust boundary users understand. If a server exposes a file system or publishing action, the user should not need to reason about raw protocol messages. The host should make data access and tool invocation visible enough to approve, deny and audit. Resources Resources are contextual data exposed by a server. They can represent files, documents, database rows, graph neighborhoods, archive records, search results or any structured content that the model may use. For a knowledge system, resources are more than text blobs. A resource should preserve identity, title, source, visibility, modification time and relevant relations. A model reading an archive record should know whether it is public, restricted, provisional or canonical. This is where MCP fits Electronic Artefacts better than generic copy-paste prompting. A VASTE-backed MCP server could expose only the resources allowed by a user’s role and the current task. The model receives relevant context without receiving the whole private graph. Prompts Prompts in MCP are reusable interaction patterns. A server can offer a structured prompt for summarizing an artefact, drafting metadata, reviewing a relation or comparing two sources. Treating prompts as server-provided capabilities helps a team version important workflows. Instead of every user improvising a metadata prompt, the system can expose a named prompt that encodes editorial standards and expected output structure. Prompts are not neutral. They carry assumptions about role, evidence, tone and success criteria. They should be reviewed like product behavior. For Electronic Artefacts, prompts that touch public knowledge should point back to claims, sources and entity identifiers rather than free-floating prose. Tools Tools are executable functions. They may search, transform, create, update, render, send, schedule or publish. This is where value and risk both increase. A tool description is not a security guarantee. A host must treat tool metadata as untrusted unless the server and deployment are trusted. Users should be able to inspect what a tool does before granting access. Sensitive tools should require explicit confirmation, especially when they write, publish or call external systems. Tool design should prefer narrow operations with typed inputs over broad commands. A tool named create_relation with a fixed schema is easier to authorize and audit than a tool named run_shell_command . Consent and control MCP’s security guidance emphasizes user consent, data privacy, tool safety and controls around model sampling. These are not optional interface details. They are core architecture. Consent should be specific enough to matter. “Allow access to your data” is weaker than “allow this server to read public Knowledge Hub entities for this conversation.” A write action should distinguish draft creation, internal mutation and public publication. Control also means revocation and inspection. A user should know which servers are connected, which resources were read, which tools were called and what result each call returned. Contextual execution Contextual execution means that action depends on entity identity, actor, relation, visibility, policy and current task. MCP can carry context, but it does not define the domain semantics for that context. For VASTE, a relation-editing tool should not merely accept subject, predicate and object. It should know whether the actor can create that relation, whether the object is public, whether the predicate is allowed between those entity types and whether the proposed statement has evidence. The protocol is a transport and capability layer. The graph runtime remains responsible for deciding what an action means. Agent workflows MCP is often discussed in the same breath as AI agents. The more precise framing is that MCP gives agents and workflows a standard way to connect to capabilities. An agent might use MCP to retrieve a project brief, call a search tool, draft a metadata update and ask for human approval. A workflow might use the same tools in a deterministic sequence without claiming autonomy. The protocol supports both. This distinction protects system design. If the task needs repeatability, a workflow may be safer. If the task needs exploration across uncertain paths, an agent may be appropriate. MCP should not force one execution model. Observability Tool-using systems need telemetry. Each request should record which server was used, which resource was read, which tool was invoked, how long it took, whether it failed and which user approved it. The logs should avoid retaining sensitive prompt content by default. They should preserve enough metadata to reconstruct operational behavior and investigate errors. For graph systems, telemetry should include entity IDs and relation types where safe. A trace that says “tool call failed” is less useful than one that says “relation validation failed for publication to technology relation under public visibility.” Security The main MCP risk is not the protocol syntax. It is capability composition. A model that can read private data and call an external sending tool may exfiltrate information if the host does not enforce boundaries. Prompt injection increases that risk. A resource can contain text that tells the model to ignore prior instructions or call a tool. The host must treat resource content as data, not as authority. Tool permissions should be scoped by server, operation, user, conversation and data class. A read-only research server should not gain write permissions because another connected server provides a publishing tool. MCP and VASTE VASTE can treat MCP as one interface to the runtime, not the runtime itself. A VASTE MCP server might expose public entity lookup, relation validation, graph neighborhood retrieval, archive drafting and controlled projection rebuilds. The graph supplies identity and policy. MCP supplies a connection model. OpenTelemetry can supply observability. Human review supplies governance. This combination is stronger than a generic assistant because actions remain grounded in typed entities and public contracts. Implementation Start with one read-only MCP server. Expose a small set of resources from the public Knowledge Hub, such as entity lookup and graph neighborhoods. Add one harmless tool, such as validating a draft relation without writing it. Require explicit approval before any write tool is introduced. Define resource visibility, tool schemas, audit events and telemetry before adding more servers. Treat every prompt, resource and tool response as untrusted input unless it comes from a trusted internal source and still passes validation. Evidence The MCP specification defines hosts, clients, servers, resources, prompts and tools over JSON-RPC style communication. Its own security section highlights user consent, privacy, tool safety and controls around model-initiated sampling. Electronic Artefacts implications MCP is interesting for Electronic Artefacts because it gives AI systems a practical boundary between model reasoning and executable studio infrastructure. It could connect the Knowledge Hub, VASTE, archive records, project metadata and local tools without collapsing everything into one opaque assistant. The durable design principle is simple: the model may propose and invoke capabilities, but the graph runtime should decide identity, context and permission. Limitations MCP does not solve prompt injection, authorization, observability, schema design or user-interface consent by itself. It gives implementers a protocol surface where those responsibilities can be expressed. Related concepts Read AI Agent , Contextual Execution , Graph Runtime and Event-Driven Architecture . Related technology See Model Context Protocol and OpenTelemetry . Glossary Host: the user-facing language-model application. Server: a service that exposes resources, prompts or tools. Resource: contextual data made available to the model. Tool: an executable capability that may perform work outside the model. Sampling: a server-initiated request for model generation controlled by the host. References Model Context Protocol. Specification. 2025-06-18. JSON-RPC Working Group. JSON-RPC 2.0 Specification. Microsoft. Language Server Protocol Specification.",
+    "tags": [
+      "Model Context Protocol",
+      "AI Agents",
+      "Tool Use",
+      "Contextual Execution",
+      "VASTE"
+    ],
+    "questions": [],
+    "relationLabels": [
+      "documents Model Context Protocol and Tool-Using AI Systems documents MCP as a capability protocol for AI tools, prompts and resources.",
+      "documents Model Context Protocol and Tool-Using AI Systems explains how MCP relates to AI agents and deterministic workflows.",
+      "documents Model Context Protocol and Tool-Using AI Systems connects MCP permissions to contextual execution boundaries.",
+      "documents Model Context Protocol and Tool-Using AI Systems uses VASTE as the graph-runtime context for scoped AI tools.",
+      "memberOfCollection Model Context Protocol and Tool-Using AI Systems is part of the fourth Knowledge Hub wave."
+    ],
+    "relatedEntityIds": [
+      "ea:technology:model-context-protocol",
+      "ea:concept:ai-agent",
+      "ea:concept:contextual-execution",
+      "ea:program:vaste",
+      "ea:collection:knowledge-hub-fourth-wave"
+    ],
+    "status": "active",
+    "confidence": "published",
+    "modifiedAt": "2026-06-24"
+  },
+  {
     "id": "ea:publication:motion-design-time-and-interface-semantics",
     "route": "/publications/motion-design-time-and-interface-semantics/",
     "type": "publication",
@@ -2929,6 +3169,66 @@
       "ea:project:palimpsests",
       "ea:concept:provenance",
       "ea:collection:knowledge-hub-third-wave"
+    ],
+    "status": "active",
+    "confidence": "published",
+    "modifiedAt": "2026-06-24"
+  },
+  {
+    "id": "ea:publication:observability-for-ai-agents-and-tool-calling-systems",
+    "route": "/publications/observability-for-ai-agents-and-tool-calling-systems/",
+    "type": "publication",
+    "format": "technicalArticle",
+    "title": "Observability for AI Agents and Tool-Calling Systems",
+    "alternateNames": [],
+    "abstract": "A practical explanation of telemetry for AI agents, tool calls, traces, events, approvals, failures, evaluations and graph-runtime accountability.",
+    "headings": [
+      "Problem",
+      "Introduction",
+      "Architecture",
+      "Traces",
+      "Metrics",
+      "Logs",
+      "Events",
+      "Tool-call telemetry",
+      "Retrieval telemetry",
+      "Approval and consent",
+      "Evaluation",
+      "Prompt injection",
+      "Privacy",
+      "OpenTelemetry",
+      "VASTE and graph runtimes",
+      "Implementation",
+      "Evidence",
+      "Electronic Artefacts implications",
+      "Limitations",
+      "Related concepts",
+      "Related technology",
+      "Glossary",
+      "References"
+    ],
+    "body": "Problem AI agents and tool-calling workflows can read context, call tools, write data and trigger external side effects. Without observability, teams cannot reconstruct what happened, explain failures, enforce consent or improve reliability. Introduction Observability is the ability to understand a system’s behavior from its emitted signals. In conventional distributed systems, those signals include traces, metrics, logs and events. In AI systems, the problem expands: model calls, retrieved context, tool calls, approvals, refusals, retries and generated outputs all affect behavior. An AI agent is not just a model response. It is a runtime path through prompts, resources, tools and decisions. A failed publication draft may involve retrieval errors, schema mismatch, a tool timeout, missing authorization or a hallucinated identifier. A normal log line saying “request failed” is not enough. OpenTelemetry provides a useful reference point because it standardizes telemetry concepts and semantic conventions. MCP provides a useful capability surface because tools and resources have names, servers and structured calls. Together, they point toward accountable AI infrastructure. Architecture An observable AI-agent architecture contains a user request, retrieval layer, model calls, tool calls, validation, approval gates, side effects, traces, metrics, logs and durable audit events. The runtime should emit enough structured telemetry to reconstruct behavior without storing sensitive prompts or private documents by default. Traces A trace records a flow of work across components. It is made of spans, where each span represents a timed operation. For AI systems, useful spans include user request, retrieval, model call, tool selection, tool call, validation, approval and write operation. Tracing helps answer sequence questions. Did the model call the tool before or after retrieval? Which server handled the request? How long did the embedding search take? Which validation rule failed? A trace should include stable identifiers without exposing sensitive content by default. Entity IDs, tool names, server names, model identifiers, status codes and durations are often enough for operations. Full prompts and outputs require stricter retention policy. Metrics Metrics describe aggregated behavior. For tool-calling systems, track request count, error rate, latency, tool-call count, approval rate, rejection rate, retry count, token use, cost, queue depth and stale projection age. Domain metrics are just as important as infrastructure metrics. If an archive-assistance agent creates many metadata drafts but none are approved, the system is not succeeding. If a graph assistant repeatedly proposes invalid predicates, the model or prompt needs adjustment. Metrics should distinguish model failure, tool failure, validation failure and user rejection. These are different causes with different fixes. Logs Logs provide discrete records. They are useful for human investigation, but dangerous when they capture too much. AI systems can leak private user text, source documents or credentials into logs if logging is careless. Log structure matters. A log event should include request ID, user or actor reference, server, tool, entity ID, outcome and error class. Freeform logs make incidents harder to search and easier to over-collect. Sensitive content should be redacted or omitted by default. If a debugging mode captures prompts, it should be explicit, temporary and protected. Events Events record meaningful state changes. In an agentic system, useful audit events include ToolCallRequested , ToolCallApproved , ToolCallDenied , ResourceRead , DraftCreated , ValidationFailed and PublicationQueued . Events differ from traces. A trace helps debug flow. An event can become part of durable accountability. A rejected write proposal may matter months later if a public page changes. CloudEvents or a similar envelope can help standardize event identity, type, source and time. The domain payload should still be designed carefully. Tool-call telemetry Every tool call should be observable as a first-class operation. Record tool name, server, input schema version, actor, approval status, start time, end time, result class and side-effect class. Do not rely on the model transcript as the audit log. The transcript may be summarized, hidden, pruned or unavailable. The runtime should independently record the tool call. For write tools, record the target entity and before-after references where appropriate. For external calls, record destination class and idempotency key if one exists. Retrieval telemetry Retrieval affects model output. A bad answer may come from wrong sources rather than bad generation. Observability should capture which index was queried, which filters applied, which documents or entities were returned and whether access controls were enforced. For a knowledge graph, retrieval telemetry should include entity IDs and relation scopes. It should not dump full private documents into traces. When a user challenges an answer, the system should be able to reconstruct which sources were presented to the model. Approval and consent User approvals are operational facts. If a tool sends an email, publishes a page, modifies a graph relation or shares data, the system should record who approved the action and what they approved. Consent should be specific. Observability should distinguish automatic reads, user-approved reads, draft writes and public publishing. This is especially important for MCP-style systems where multiple servers may expose different capabilities. Approval records should be readable by humans. A future reviewer should not have to decode raw JSON to understand the decision. Evaluation Observability and evaluation reinforce each other. Traces reveal where a system fails. Evaluations test whether those failures are improving. An agent should be evaluated on task outcomes, not only model responses. Did it use allowed tools? Did it cite correct sources? Did it avoid restricted data? Did it produce a valid draft? Did a human approve it? Evaluation data should be versioned with model, prompt, retrieval index and tool definitions. Otherwise, improvements cannot be explained. Prompt injection Prompt injection is an observability problem as well as a security problem. A malicious resource may cause a model to request an unsafe tool call. The system should record the resource read, the tool request and the policy decision. Detection is not enough. The host should prevent unsafe composition, and telemetry should make attempts visible. If many retrieved pages trigger suspicious tool requests, the retrieval or prompt boundary needs work. For Electronic Artefacts, public knowledge pages can be treated as sources, not instructions. Their content should not gain authority over tools. Privacy AI telemetry can become a shadow archive of private work. Prompts may contain unreleased projects, personal notes, credentials or client material. Outputs may contain transformed sensitive data. The default should be metadata-first observability. Capture structure, IDs, timings, outcomes and policy decisions. Capture full content only under explicit debugging controls and with retention limits. Privacy also includes model-provider visibility. If a hosted model is used, observability should record that the request left local infrastructure. OpenTelemetry OpenTelemetry provides common concepts for spans, metrics, logs and semantic attributes. Its value is not only library instrumentation. It gives teams shared vocabulary for what a system emits. AI-specific semantic conventions are evolving, including work around generative AI and MCP. Even when a project does not adopt every convention, it can follow the same principle: consistent names, stable attributes and clear boundaries. Using OpenTelemetry also allows AI systems to be observed alongside non-AI systems. A tool call that writes a database row should appear in the same operational universe as any other service call. VASTE and graph runtimes VASTE can add graph semantics to observability. A trace can include entity IDs, predicates, projection names and policy contexts. An audit event can say which graph relation was proposed and which validation rule accepted or rejected it. This is stronger than generic AI logging because it connects runtime behavior to semantic structure. The system can ask not only “which tool failed” but “which kind of knowledge operation failed.” Graph-aware observability also supports public trust. If a public page was generated from a graph projection, the system should know which records and build events contributed. Implementation Start by instrumenting one tool-using workflow end to end. Create a trace for the user request, spans for retrieval, model call, validation and tool call, metrics for latency and error rate, and audit events for approval and mutation. Define a redaction policy before collecting content. Store model identifier, prompt template version, tool schema version and target entity IDs. Review telemetry output with the same seriousness as user-facing data. Evidence OpenTelemetry defines shared telemetry semantics for traces, metrics, logs and attributes. MCP defines a capability model around resources, prompts and tools. CloudEvents provides a useful event-envelope reference for durable audit events. Electronic Artefacts implications Observability is essential if Electronic Artefacts connects AI systems to VASTE, archive records or publishing workflows. It protects reliability, editorial accountability and user consent. The practical principle is to observe behavior without silently hoarding content. A system should know what happened, who authorized it and which entity changed, while keeping private material out of default telemetry. Limitations Telemetry can create cost, noise and privacy risk. More logs do not automatically produce better understanding. Instrumentation should be designed around questions the team needs to answer. Related concepts Read AI Agent , Event-Driven Architecture , Contextual Execution and Provenance . Related technology See OpenTelemetry , Model Context Protocol and CloudEvents . Glossary Trace: a linked record of a request or workflow across components. Span: a timed operation inside a trace. Metric: an aggregated measurement such as latency, count or error rate. Audit event: a durable record of a meaningful action or decision. Redaction: removing sensitive content before storage or display. References OpenTelemetry. Semantic Conventions 1.42.0. Model Context Protocol. Specification. 2025-06-18. Cloud Native Computing Foundation. CloudEvents.",
+    "tags": [
+      "Observability",
+      "AI Agents",
+      "Tool Calling",
+      "OpenTelemetry",
+      "Tracing"
+    ],
+    "questions": [],
+    "relationLabels": [
+      "documents Observability for AI Agents and Tool-Calling Systems documents OpenTelemetry as telemetry infrastructure.",
+      "documents Observability for AI Agents and Tool-Calling Systems explains why agents need traceable model and tool behavior.",
+      "usesTechnology Observability for AI Agents and Tool-Calling Systems uses MCP as the reference capability surface for tool telemetry.",
+      "documents Observability for AI Agents and Tool-Calling Systems ties telemetry to context-aware permissions and runtime accountability.",
+      "memberOfCollection Observability for AI Agents and Tool-Calling Systems is part of the fourth Knowledge Hub wave."
+    ],
+    "relatedEntityIds": [
+      "ea:technology:opentelemetry",
+      "ea:concept:ai-agent",
+      "ea:technology:model-context-protocol",
+      "ea:concept:contextual-execution",
+      "ea:collection:knowledge-hub-fourth-wave"
     ],
     "status": "active",
     "confidence": "published",
@@ -3620,6 +3920,61 @@
     "modifiedAt": "2026-06-24"
   },
   {
+    "id": "ea:publication:webnn-and-local-ai-in-the-browser",
+    "route": "/publications/webnn-and-local-ai-in-the-browser/",
+    "type": "publication",
+    "format": "technicalArticle",
+    "title": "WebNN and Local AI in the Browser",
+    "alternateNames": [],
+    "abstract": "A practical explanation of WebNN, browser-local inference, hardware acceleration, privacy limits, creative tools and web machine-learning architecture.",
+    "headings": [
+      "Problem",
+      "Introduction",
+      "Architecture",
+      "What WebNN provides",
+      "Local inference",
+      "Use cases",
+      "Privacy boundaries",
+      "Performance",
+      "Model packaging",
+      "HCI implications",
+      "Archive interfaces",
+      "WebNN and VASTE",
+      "Implementation",
+      "Evidence",
+      "Electronic Artefacts implications",
+      "Limitations",
+      "Related concepts",
+      "Related technology",
+      "Glossary",
+      "References"
+    ],
+    "body": "Problem Many AI features send user data to remote inference services even when the task could be local, private or interactive. Browser applications need a way to use local hardware acceleration without tying every feature to one vendor backend. Introduction WebNN, the Web Neural Network API, is a W3C effort to expose neural-network inference acceleration to web applications. It is not a model, not a chatbot and not a complete AI product. It is an API layer that lets web software build and execute neural-network graphs using available platform capabilities. The promise is practical. A browser tool could classify images, enhance audio, run segmentation, produce captions or support local generative features without every input leaving the device. For creative tools and archives, that changes the privacy and latency profile of web applications. The constraints are equally important. Browser support, model size, memory, operator coverage, permissions and fallback design determine whether WebNN helps a real product. Local inference is not automatically private or fast; it has to be designed. Architecture A WebNN architecture includes model packaging, browser capability detection, a WebNN execution context, selected device backends, input preprocessing, output postprocessing, privacy controls, telemetry and fallback paths. The API supplies an inference surface, while the application still owns model selection, data movement and user trust. What WebNN provides WebNN defines an abstraction for neural-network inference in web applications. Instead of each site directly targeting platform-specific ML APIs, a web application can use a web standard that maps to underlying hardware and operating-system capabilities. The specification covers contexts, tensors, graph builders, operands and many neural-network operations. It also addresses device selection, security and privacy considerations. The goal is to make inference portable enough for web developers while still benefiting from specialized acceleration. This is different from WebGPU. WebGPU exposes lower-level GPU programming for graphics and compute. WebNN exposes a neural-network-oriented abstraction. A web AI stack may use one, both or neither depending on workload and browser support. Local inference Local inference means model execution happens on the user’s device or controlled local environment. With WebNN, the browser can become a runtime surface for some of that execution. The benefit is strongest when inputs are personal, sensory or interactive. A camera frame, audio stream, private note or local archive object may not need to leave the browser. Processing near the interface can reduce latency and preserve user agency. The tradeoff is variability. A feature that runs well on one laptop may be slow or unavailable on another device. Applications need capability detection, graceful degradation and transparent controls. Use cases The WebNN specification lists use cases such as person detection, segmentation, pose estimation, style transfer, image captioning, speech recognition, noise suppression, text generation and fake-video detection. These cover much of the modern multimodal interface surface. For Electronic Artefacts, the strongest use cases are not general chat. They are bounded, media-adjacent functions: local tagging of archive images, client-side audio feature extraction, accessible captions, private summarization of public pages and interactive creative controls. A creative tool should not require server round trips for every small perception task. If the browser can run a model locally, the interface can feel more like an instrument than a form submission. Privacy boundaries Local inference reduces exposure to remote inference providers, but privacy still depends on the whole application. A page can send input elsewhere before or after inference. It can log outputs. It can load remote models. It can store embeddings or telemetry. Users need clear signals about where models run and what data is transmitted. A feature labelled “local” should avoid hidden network calls for sensitive inputs. If it uses remote fallback, that fallback should be explicit. Browser permission models matter too. Camera, microphone, file and storage access should be scoped to visible user action. Model execution should not become a way to infer sensitive information without consent. Performance The performance of browser-local AI depends on model size, operation support, acceleration backend, memory layout, device thermal limits and workload frequency. A single benchmark rarely captures the user experience. Interactive tools care about latency. Batch archive tools may care about throughput. Accessibility features may require consistent frame-level performance. Mobile devices add battery and heat constraints. A robust application should measure and adapt. It can choose smaller models, lower input resolution, batch work, pause processing when the tab is hidden or let users opt into higher-quality modes. Model packaging WebNN does not eliminate the need to package and deliver models. A web application still needs model files, metadata, versioning, caching and compatibility information. Large model downloads can be impractical. Smaller specialized models may be more appropriate than general models. The model source and license should be documented, especially for public cultural tools. If a model processes archive material, preserve the model identifier and version in the record. Future readers should know which model helped produce a tag, caption or transformation. HCI implications Browser-local AI changes interaction design. Users can get immediate feedback while editing, browsing, drawing, listening or annotating. The model becomes part of the interface loop. That immediacy should not hide uncertainty. Interfaces should expose confidence, allow correction and avoid presenting model output as authoritative when it is only a suggestion. A segmentation mask, audio label or generated caption should be editable. For creative systems, latency and reversibility shape trust. A model that responds instantly but cannot be corrected becomes annoying. A model that makes uncertainty legible can become a useful collaborator. Archive interfaces Archives often contain sensitive or unpublished material. Browser-local inference can let a researcher run assistance over local files without uploading them to a server. This is valuable for field recordings, private photographs, manuscripts and production notes. Still, browser storage and caching must be handled carefully. A local browser feature can leave traces on a shared machine. The application should offer clear session boundaries and deletion controls. For Vestiges, a WebNN-enabled viewer could classify images or suggest metadata while preserving human review. For Palimpsests, it could assist with audio-visual annotation without exposing private source media. WebNN and VASTE VASTE could treat WebNN as a client-side execution surface. The graph runtime would decide which entity and task are in scope. The browser would run bounded inference. The result would return as a proposal, not as silent truth. For example, a user viewing an artefact could ask for local image tags. The model runs in the browser. The proposed tags are reviewed and then submitted as graph relations only if accepted. This keeps inference close to the interface while preserving graph governance. Implementation Start with a small, bounded task: image classification, audio feature extraction or local caption suggestion. Detect WebNN support, provide a CPU or server fallback only with clear disclosure, and measure latency on representative devices. Pin model versions. Record model identifiers in generated metadata. Keep network behavior visible. Treat outputs as suggestions until reviewed. Evidence The W3C WebNN specification defines a low-level API for neural-network inference hardware acceleration and lists application use cases across vision, audio, language and generative media. W3C Web Machine Learning ethics guidance emphasizes privacy, transparency, control and user benefit. Electronic Artefacts implications WebNN is a strong fit for Electronic Artefacts because the studio works across web interfaces, AI, archives and creative tools. It offers a route toward local, interactive machine perception without turning every interface into a remote API client. The design principle is bounded local assistance: small models, clear tasks, visible permissions and graph-backed review. Limitations WebNN is still dependent on browser implementation and hardware support. Applications should avoid promising universal local AI behavior until capability detection, fallback and testing are mature. Related concepts Read Multimodal AI , Human Computer Interaction , Open-Weight Model and Generative AI . Related technology See WebNN and WebGL . Glossary Inference: running a trained model to produce outputs from inputs. Tensor: a structured numerical array used by machine-learning operations. Backend: the platform layer that executes model operations on hardware. Fallback: an alternate execution path used when a feature is unavailable. Capability detection: runtime checks for browser and hardware support. References W3C. Web Neural Network API. 2026. W3C. Ethical Principles for Web Machine Learning. W3C. WebGPU.",
+    "tags": [
+      "WebNN",
+      "Browser AI",
+      "Local Inference",
+      "Web Machine Learning",
+      "HCI"
+    ],
+    "questions": [],
+    "relationLabels": [
+      "documents WebNN and Local AI in the Browser documents WebNN as browser-local inference infrastructure.",
+      "documents WebNN and Local AI in the Browser links WebNN to multimodal browser interfaces and local perception tasks.",
+      "documents WebNN and Local AI in the Browser frames local inference as a human-computer interaction design problem.",
+      "memberOfCollection WebNN and Local AI in the Browser is part of the fourth Knowledge Hub wave."
+    ],
+    "relatedEntityIds": [
+      "ea:technology:webnn",
+      "ea:concept:multimodal-ai",
+      "ea:concept:human-computer-interaction",
+      "ea:collection:knowledge-hub-fourth-wave"
+    ],
+    "status": "active",
+    "confidence": "published",
+    "modifiedAt": "2026-06-24"
+  },
+  {
     "id": "ea:publication:why-graphs-are-more-powerful-than-folders",
     "route": "/publications/why-graphs-are-more-powerful-than-folders/",
     "type": "publication",
@@ -3755,6 +4110,41 @@
     "modifiedAt": "2026-06-24"
   },
   {
+    "id": "ea:technology:c2pa",
+    "route": "/knowledge/technologies/c2pa/",
+    "type": "technology",
+    "title": "C2PA",
+    "alternateNames": [
+      "Content Credentials",
+      "Coalition for Content Provenance and Authenticity"
+    ],
+    "abstract": "C2PA is a technical standard family for attaching verifiable provenance and content-credential metadata to media assets.",
+    "headings": [
+      "Role",
+      "Use",
+      "References"
+    ],
+    "body": "Role C2PA gives media producers and tools a way to bind provenance assertions to assets so later systems can inspect source and transformation history. Use Electronic Artefacts can treat C2PA as a reference technology for archive trust, generative-media labelling, Palimpsests documentation and production-memory workflows. References See the C2PA specification set, including Content Credentials, implementer guidance, UX guidance, security considerations and AI/ML guidance.",
+    "tags": [
+      "C2PA",
+      "Content Credentials",
+      "Provenance",
+      "Media Authenticity"
+    ],
+    "questions": [],
+    "relationLabels": [
+      "documents C2PA Content Credentials and Generative Media Provenance documents C2PA as media provenance infrastructure.",
+      "integratesWith Palimpsests can integrate with C2PA to attach signed provenance and production memory to public media derivatives."
+    ],
+    "relatedEntityIds": [
+      "ea:publication:c2pa-content-credentials-and-generative-media-provenance",
+      "ea:project:palimpsests"
+    ],
+    "status": "active",
+    "confidence": "canonical",
+    "modifiedAt": "2026-06-24"
+  },
+  {
     "id": "ea:technology:cloudevents",
     "route": "/knowledge/technologies/cloudevents/",
     "type": "technology",
@@ -3813,6 +4203,40 @@
     "modifiedAt": "2026-06-24"
   },
   {
+    "id": "ea:technology:iiif",
+    "route": "/knowledge/technologies/iiif/",
+    "type": "technology",
+    "title": "IIIF",
+    "alternateNames": [
+      "International Image Interoperability Framework"
+    ],
+    "abstract": "IIIF is a framework of APIs for presenting, structuring and annotating digital representations of cultural and archival objects.",
+    "headings": [
+      "Role",
+      "Use",
+      "References"
+    ],
+    "body": "Role IIIF standardizes the presentation of digitized and born-digital cultural objects so viewers, archives and institutions can exchange compound object structures. Use Electronic Artefacts can use IIIF concepts to reason about Vestiges objects, Palimpsests dossiers, audio-visual collections and annotation-aware public records. References See the IIIF Presentation API 3.0 specification for collections, manifests, canvases, ranges and annotations.",
+    "tags": [
+      "IIIF",
+      "Digital Archives",
+      "Cultural Heritage",
+      "Presentation API"
+    ],
+    "questions": [],
+    "relationLabels": [
+      "documents IIIF and Compound Cultural Objects documents IIIF as a presentation framework for cultural archive objects.",
+      "integratesWith Vestiges can integrate with IIIF for compound cultural object presentation and annotation-aware viewing."
+    ],
+    "relatedEntityIds": [
+      "ea:publication:iiif-and-compound-cultural-objects",
+      "ea:project:vestiges"
+    ],
+    "status": "active",
+    "confidence": "canonical",
+    "modifiedAt": "2026-06-24"
+  },
+  {
     "id": "ea:technology:json-ld",
     "route": "/knowledge/technologies/json-ld/",
     "type": "technology",
@@ -3867,6 +4291,74 @@
     ],
     "relatedEntityIds": [
       "ea:publication:local-and-open-source-ai-systems"
+    ],
+    "status": "active",
+    "confidence": "canonical",
+    "modifiedAt": "2026-06-24"
+  },
+  {
+    "id": "ea:technology:model-context-protocol",
+    "route": "/knowledge/technologies/model-context-protocol/",
+    "type": "technology",
+    "title": "Model Context Protocol",
+    "alternateNames": [
+      "MCP"
+    ],
+    "abstract": "Model Context Protocol is an open protocol for connecting language-model applications to external context, prompts and executable tools.",
+    "headings": [
+      "Role",
+      "Use",
+      "References"
+    ],
+    "body": "Role Model Context Protocol standardizes how language-model applications discover contextual resources, reusable prompts and executable tools without hard-coding every integration into the model interface. Use Electronic Artefacts can use MCP as a reference for tool boundaries, consent, context exposure and graph-scoped runtime integrations in VASTE. References See the MCP specification for the host, client, server, resources, prompts, tools and security model.",
+    "tags": [
+      "MCP",
+      "AI Tools",
+      "Context Protocol",
+      "JSON-RPC"
+    ],
+    "questions": [],
+    "relationLabels": [
+      "documents Model Context Protocol and Tool-Using AI Systems documents MCP as a capability protocol for AI tools, prompts and resources.",
+      "usesTechnology Observability for AI Agents and Tool-Calling Systems uses MCP as the reference capability surface for tool telemetry.",
+      "integratesWith VASTE can integrate with MCP as a scoped interface for graph resources, prompts and controlled tools."
+    ],
+    "relatedEntityIds": [
+      "ea:publication:model-context-protocol-and-tool-using-ai-systems",
+      "ea:publication:observability-for-ai-agents-and-tool-calling-systems",
+      "ea:program:vaste"
+    ],
+    "status": "active",
+    "confidence": "canonical",
+    "modifiedAt": "2026-06-24"
+  },
+  {
+    "id": "ea:technology:opentelemetry",
+    "route": "/knowledge/technologies/opentelemetry/",
+    "type": "technology",
+    "title": "OpenTelemetry",
+    "alternateNames": [],
+    "abstract": "OpenTelemetry is an observability framework for producing, collecting and standardizing telemetry such as traces, metrics and logs.",
+    "headings": [
+      "Role",
+      "Use",
+      "References"
+    ],
+    "body": "Role OpenTelemetry supports operational understanding by standardizing how systems describe requests, spans, logs, metrics, errors and service context. Use Electronic Artefacts can use OpenTelemetry as a reference for observing VASTE event propagation, AI tool calls, graph projections and user-visible runtime behavior. References See the OpenTelemetry semantic conventions and the related generative-AI and MCP telemetry work.",
+    "tags": [
+      "OpenTelemetry",
+      "Observability",
+      "Tracing",
+      "Metrics"
+    ],
+    "questions": [],
+    "relationLabels": [
+      "documents Observability for AI Agents and Tool-Calling Systems documents OpenTelemetry as telemetry infrastructure.",
+      "integratesWith VASTE can integrate with OpenTelemetry to observe graph-runtime events, tool calls and projection behavior."
+    ],
+    "relatedEntityIds": [
+      "ea:publication:observability-for-ai-agents-and-tool-calling-systems",
+      "ea:program:vaste"
     ],
     "status": "active",
     "confidence": "canonical",
@@ -4107,6 +4599,38 @@
     ],
     "relatedEntityIds": [
       "ea:publication:procedural-graphics-shaders-and-visual-systems"
+    ],
+    "status": "active",
+    "confidence": "canonical",
+    "modifiedAt": "2026-06-24"
+  },
+  {
+    "id": "ea:technology:webnn",
+    "route": "/knowledge/technologies/webnn/",
+    "type": "technology",
+    "title": "WebNN",
+    "alternateNames": [
+      "Web Neural Network API"
+    ],
+    "abstract": "WebNN is a W3C Web Machine Learning API for hardware-accelerated neural-network inference in web applications.",
+    "headings": [
+      "Role",
+      "Use",
+      "References"
+    ],
+    "body": "Role WebNN defines a web API for running neural-network inference through available platform acceleration while keeping application code inside the browser environment. Use Electronic Artefacts can use WebNN as a reference for browser-local analysis, interactive creative tools, private archive assistants and accessible multimodal interfaces. References See the W3C Web Neural Network API Candidate Recommendation Draft.",
+    "tags": [
+      "WebNN",
+      "Browser AI",
+      "Local Inference",
+      "Web Machine Learning"
+    ],
+    "questions": [],
+    "relationLabels": [
+      "documents WebNN and Local AI in the Browser documents WebNN as browser-local inference infrastructure."
+    ],
+    "relatedEntityIds": [
+      "ea:publication:webnn-and-local-ai-in-the-browser"
     ],
     "status": "active",
     "confidence": "canonical",

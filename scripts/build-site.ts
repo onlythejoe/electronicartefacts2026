@@ -12,6 +12,7 @@ import { jsonLdFor } from "../src/semantic/jsonld.js";
 import { routeForEntity } from "../src/config/routes.js";
 import { renderLayout } from "../src/templates/layout.js";
 import { renderEntityPage } from "../src/templates/entity-page.js";
+import { renderIdentifierPage } from "../src/templates/identifier-page.js";
 import { renderPublicationPage } from "../src/templates/publication-page.js";
 import { escapeHtml } from "../src/templates/html.js";
 import { buildSearchDocuments } from "../src/search/documents.js";
@@ -59,8 +60,11 @@ for (const entity of publicEntities) {
   const jsonLd = jsonLdFor(entity);
   await writeJson(path.join(identifierDir, "index.jsonld"), jsonLd);
   await writeJson(path.join(identifierDir, "index.json"), entity);
-  await writeText(path.join(identifierDir, "index.html"), `<!doctype html>
-<html lang="en"><head><meta charset="utf-8"><meta name="robots" content="noindex,follow"><link rel="canonical" href="${metadata.canonicalUrl}"><link rel="alternate" type="application/ld+json" href="./index.jsonld"><title>${escapeHtml(entity.title)} identifier</title><script>location.replace(${JSON.stringify(routeForEntity(entity))})</script></head><body><p><a href="${routeForEntity(entity)}">Open ${escapeHtml(entity.title)}</a></p></body></html>`);
+  await writeText(path.join(identifierDir, "index.html"), renderIdentifierPage({
+    entity,
+    metadata,
+    route: routeForEntity(entity),
+  }));
 }
 
 const hubMetadata = (title: string, description: string, route: string) => ({
@@ -212,7 +216,7 @@ await writeJson(path.join(rootDir, "search/documents.json"), searchDocuments);
 await writeJson(path.join(rootDir, "search/index.json"), buildSearchIndex(searchDocuments));
 const searchBody = `<section class="zone-card hero"><div class="section-head"><p class="eyebrow">KNOWLEDGE SEARCH</p><h1 class="display-title">Search the public graph.</h1><p class="lede">Find concepts, research fields, programs, projects, publications and organizations.</p></div><label class="card__meta" for="generated-search">Query</label><input id="generated-search" class="search-input" type="search" data-generated-search-input placeholder="Graph Runtime, VASTE, Vestiges…"></section><section class="zone-card hero"><div class="stack" data-generated-search-results></div></section><script type="module" src="/assets/js/search/client.js"></script>`;
 await writeText(routeToFile(rootDir, "/search/"), renderLayout({
-  metadata: { ...hubMetadata("Search", "Search the public Electronic Artefacts knowledge graph.", "/search/"), robots: "noindex,follow" },
+  metadata: { ...hubMetadata("Search", "Search the public Electronic Artefacts knowledge graph across concepts, projects, programs, publications and research fields.", "/search/"), robots: "noindex,follow" },
   body: searchBody,
   header,
   footer,

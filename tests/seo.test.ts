@@ -7,6 +7,7 @@ import { buildSitemap } from "../src/seo/sitemaps.js";
 import { jsonLdFor } from "../src/semantic/jsonld.js";
 import { buildRoutes } from "../src/build/build-routes.js";
 import { renderEditorialPanels } from "../src/templates/components/editorial-panels.js";
+import { renderIdentifierPage } from "../src/templates/identifier-page.js";
 
 test("generates canonical metadata and JSON-LD", async () => {
   const entities = await loadContent(path.resolve("."));
@@ -70,4 +71,23 @@ test("sitemap excludes noindex generated search route", async () => {
   const sitemap = buildSitemap(entities);
 
   assert.doesNotMatch(sitemap, /https:\/\/electronicartefacts\.com\/search\//);
+});
+
+test("identifier routes expose noindex canonical metadata and JSON-LD fallback", async () => {
+  const entities = await loadContent(path.resolve("."));
+  const entity = entities.find((candidate) => candidate.id === "ea:concept:graph-runtime");
+  assert.ok(entity);
+
+  const metadata = metadataFor(entity);
+  const html = renderIdentifierPage({
+    entity,
+    metadata,
+    route: "/knowledge/concepts/graph-runtime/",
+  });
+
+  assert.match(html, /<meta name="description" content="Persistent identifier route for Graph Runtime/);
+  assert.match(html, /<meta name="robots" content="noindex,follow" \/>/);
+  assert.match(html, /<link rel="canonical" href="https:\/\/electronicartefacts\.com\/knowledge\/concepts\/graph-runtime\/" \/>/);
+  assert.match(html, /<link rel="alternate" type="application\/ld\+json" href=".\/index.jsonld" \/>/);
+  assert.match(html, /<meta http-equiv="refresh" content="0; url=\/knowledge\/concepts\/graph-runtime\/" \/>/);
 });

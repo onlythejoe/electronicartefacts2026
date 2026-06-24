@@ -44,6 +44,22 @@
       "confidence": "published"
     },
     {
+      "id": "ea:publication:model-context-protocol-and-tool-using-ai-systems",
+      "type": "publication",
+      "title": "Model Context Protocol and Tool-Using AI Systems",
+      "route": "/publications/model-context-protocol-and-tool-using-ai-systems/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:observability-for-ai-agents-and-tool-calling-systems",
+      "type": "publication",
+      "title": "Observability for AI Agents and Tool-Calling Systems",
+      "route": "/publications/observability-for-ai-agents-and-tool-calling-systems/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
       "id": "ea:publication:runtime-engines-and-domain-operating-systems",
       "type": "publication",
       "title": "Runtime Engines and Domain Operating Systems",
@@ -61,6 +77,24 @@
     }
   ],
   "edges": [
+    {
+      "id": "ear:mcp-article-documents-contextual-execution",
+      "source": "ea:publication:model-context-protocol-and-tool-using-ai-systems",
+      "target": "ea:concept:contextual-execution",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Model Context Protocol and Tool-Using AI Systems connects MCP permissions to contextual execution boundaries.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:observability-article-documents-contextual-execution",
+      "source": "ea:publication:observability-for-ai-agents-and-tool-calling-systems",
+      "target": "ea:concept:contextual-execution",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Observability for AI Agents and Tool-Calling Systems ties telemetry to context-aware permissions and runtime accountability.",
+      "confidence": "published"
+    },
     {
       "id": "ear:vaste-applies-contextual-execution",
       "source": "ea:program:vaste",

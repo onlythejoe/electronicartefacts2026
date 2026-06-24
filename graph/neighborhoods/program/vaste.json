@@ -124,6 +124,14 @@
       "confidence": "published"
     },
     {
+      "id": "ea:publication:model-context-protocol-and-tool-using-ai-systems",
+      "type": "publication",
+      "title": "Model Context Protocol and Tool-Using AI Systems",
+      "route": "/publications/model-context-protocol-and-tool-using-ai-systems/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
       "id": "ea:publication:redis-streams-for-orchestration",
       "type": "publication",
       "title": "Redis Streams for Orchestration",
@@ -170,6 +178,22 @@
       "route": "/research/fields/runtime-theory/",
       "status": "active",
       "confidence": "validated"
+    },
+    {
+      "id": "ea:technology:model-context-protocol",
+      "type": "technology",
+      "title": "Model Context Protocol",
+      "route": "/knowledge/technologies/model-context-protocol/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:technology:opentelemetry",
+      "type": "technology",
+      "title": "OpenTelemetry",
+      "route": "/knowledge/technologies/opentelemetry/",
+      "status": "active",
+      "confidence": "canonical"
     }
   ],
   "edges": [
@@ -180,6 +204,33 @@
       "predicate": "documents",
       "label": "Documents",
       "statement": "Foundational Lineage",
+      "confidence": "observed"
+    },
+    {
+      "id": "ear:mcp-article-documents-vaste",
+      "source": "ea:publication:model-context-protocol-and-tool-using-ai-systems",
+      "target": "ea:program:vaste",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Model Context Protocol and Tool-Using AI Systems uses VASTE as the graph-runtime context for scoped AI tools.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:vaste-integrates-with-mcp",
+      "source": "ea:program:vaste",
+      "target": "ea:technology:model-context-protocol",
+      "predicate": "integratesWith",
+      "label": "Integrates with",
+      "statement": "VASTE can integrate with MCP as a scoped interface for graph resources, prompts and controlled tools.",
+      "confidence": "observed"
+    },
+    {
+      "id": "ear:vaste-integrates-with-opentelemetry",
+      "source": "ea:program:vaste",
+      "target": "ea:technology:opentelemetry",
+      "predicate": "integratesWith",
+      "label": "Integrates with",
+      "statement": "VASTE can integrate with OpenTelemetry to observe graph-runtime events, tool calls and projection behavior.",
       "confidence": "observed"
     },
     {

@@ -36,6 +36,14 @@
       "confidence": "published"
     },
     {
+      "id": "ea:publication:c2pa-content-credentials-and-generative-media-provenance",
+      "type": "publication",
+      "title": "C2PA Content Credentials and Generative Media Provenance",
+      "route": "/publications/c2pa-content-credentials-and-generative-media-provenance/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
       "id": "ea:publication:digital-preservation-and-living-archives",
       "type": "publication",
       "title": "Digital Preservation and Living Archives",
@@ -66,9 +74,35 @@
       "route": "/publications/signal-archaeology-audio-memory-and-machine-listening/",
       "status": "active",
       "confidence": "published"
+    },
+    {
+      "id": "ea:technology:c2pa",
+      "type": "technology",
+      "title": "C2PA",
+      "route": "/knowledge/technologies/c2pa/",
+      "status": "active",
+      "confidence": "canonical"
     }
   ],
   "edges": [
+    {
+      "id": "ear:c2pa-article-documents-palimpsests",
+      "source": "ea:publication:c2pa-content-credentials-and-generative-media-provenance",
+      "target": "ea:project:palimpsests",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "C2PA Content Credentials and Generative Media Provenance applies media provenance to Palimpsests and production memory.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:palimpsests-integrates-with-c2pa",
+      "source": "ea:project:palimpsests",
+      "target": "ea:technology:c2pa",
+      "predicate": "integratesWith",
+      "label": "Integrates with",
+      "statement": "Palimpsests can integrate with C2PA to attach signed provenance and production memory to public media derivatives.",
+      "confidence": "observed"
+    },
     {
       "id": "ear:palimpsests-powered-by-oreth",
       "source": "ea:project:palimpsests",

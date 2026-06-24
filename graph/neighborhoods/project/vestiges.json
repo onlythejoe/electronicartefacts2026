@@ -84,6 +84,14 @@
       "confidence": "published"
     },
     {
+      "id": "ea:publication:iiif-and-compound-cultural-objects",
+      "type": "publication",
+      "title": "IIIF and Compound Cultural Objects",
+      "route": "/publications/iiif-and-compound-cultural-objects/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
       "id": "ea:publication:knowledge-graphs-for-cultural-infrastructure",
       "type": "publication",
       "title": "Knowledge Graphs for Cultural Infrastructure",
@@ -122,9 +130,35 @@
       "route": "/publications/why-graphs-are-more-powerful-than-folders/",
       "status": "active",
       "confidence": "published"
+    },
+    {
+      "id": "ea:technology:iiif",
+      "type": "technology",
+      "title": "IIIF",
+      "route": "/knowledge/technologies/iiif/",
+      "status": "active",
+      "confidence": "canonical"
     }
   ],
   "edges": [
+    {
+      "id": "ear:iiif-article-documents-vestiges",
+      "source": "ea:publication:iiif-and-compound-cultural-objects",
+      "target": "ea:project:vestiges",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "IIIF and Compound Cultural Objects uses Vestiges as a cultural infrastructure context for compound object records.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:vestiges-integrates-with-iiif",
+      "source": "ea:project:vestiges",
+      "target": "ea:technology:iiif",
+      "predicate": "integratesWith",
+      "label": "Integrates with",
+      "statement": "Vestiges can integrate with IIIF for compound cultural object presentation and annotation-aware viewing.",
+      "confidence": "observed"
+    },
     {
       "id": "ear:vestiges-applies-knowledge-graph",
       "source": "ea:project:vestiges",

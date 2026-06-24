@@ -1,0 +1,225 @@
+{
+  "id": "ea:publication:model-context-protocol-and-tool-using-ai-systems",
+  "type": "publication",
+  "slug": {
+    "canonical": "model-context-protocol-and-tool-using-ai-systems"
+  },
+  "title": "Model Context Protocol and Tool-Using AI Systems",
+  "subtitle": "Technical Article",
+  "abstract": "A practical explanation of MCP as an integration protocol for resources, prompts, tools, consent, host boundaries and graph-scoped AI workflows.",
+  "description": "Understand Model Context Protocol through hosts, clients, servers, resources, prompts, tools, security boundaries and contextual execution.",
+  "locale": "en",
+  "visibility": "public",
+  "publicationClass": "published",
+  "status": "active",
+  "maturity": "research",
+  "confidence": "published",
+  "version": {
+    "version": "1.0.0",
+    "createdAt": "2026-06-24",
+    "publishedAt": "2026-06-24",
+    "modifiedAt": "2026-06-24"
+  },
+  "authors": [
+    {
+      "id": "ea:organization:electronic-artefacts"
+    }
+  ],
+  "publisher": "ea:organization:electronic-artefacts",
+  "tags": [
+    "Model Context Protocol",
+    "AI Agents",
+    "Tool Use",
+    "Contextual Execution",
+    "VASTE"
+  ],
+  "disciplines": [
+    "Artificial Intelligence",
+    "Software Architecture",
+    "Systems Design"
+  ],
+  "sources": [
+    {
+      "title": "Model Context Protocol Specification",
+      "url": "https://modelcontextprotocol.io/specification/2025-06-18",
+      "publisher": "Model Context Protocol",
+      "accessedAt": "2026-06-24"
+    },
+    {
+      "title": "JSON-RPC 2.0 Specification",
+      "url": "https://www.jsonrpc.org/specification",
+      "publisher": "JSON-RPC Working Group",
+      "accessedAt": "2026-06-24"
+    },
+    {
+      "title": "Language Server Protocol Specification",
+      "url": "https://microsoft.github.io/language-server-protocol/",
+      "publisher": "Microsoft",
+      "accessedAt": "2026-06-24"
+    }
+  ],
+  "format": "technicalArticle",
+  "subjects": [
+    {
+      "id": "ea:technology:model-context-protocol"
+    },
+    {
+      "id": "ea:concept:ai-agent"
+    },
+    {
+      "id": "ea:concept:contextual-execution"
+    },
+    {
+      "id": "ea:concept:graph-runtime"
+    },
+    {
+      "id": "ea:program:vaste"
+    }
+  ],
+  "claims": [
+    "MCP is best understood as a context and capability protocol, not as agent autonomy by itself.",
+    "Tool-using AI systems need explicit host boundaries, consent, authorization and context scoping before tools become useful infrastructure."
+  ],
+  "evidence": [
+    {
+      "id": "ea:technology:model-context-protocol"
+    },
+    {
+      "id": "ea:concept:contextual-execution"
+    }
+  ],
+  "citation": {
+    "preferred": "Electronic Artefacts. \"Model Context Protocol and Tool-Using AI Systems.\" Technical article, version 1.0.0, 2026."
+  },
+  "bodyHtml": "<h2 id=\"problem\">Problem</h2>\n<p>Language-model applications increasingly need access to files, databases, tools, prompts and external services. Without a shared protocol, each integration becomes a custom bridge with unclear permissions, inconsistent context exposure and brittle assumptions about what a model is allowed to do.</p>\n<h2 id=\"introduction\">Introduction</h2>\n<p>Model Context Protocol, usually shortened to MCP, standardizes how an AI host can connect to servers that expose context and capabilities. A host might be a desktop assistant, coding environment, chat interface or workflow engine. A server might expose project files, issue trackers, search indexes, media metadata, graph records or actions such as rendering a document.</p>\n<p>The important shift is architectural. MCP does not make a model autonomous by itself. It gives the surrounding application a structured way to discover and invoke resources, prompts and tools. Autonomy, review, permission and memory still belong to the host and application design.</p>\n<p>That distinction matters for Electronic Artefacts. VASTE is concerned with graph runtimes, context boundaries, identity, relations and event propagation. MCP can become one way to expose graph-scoped capabilities to model interfaces, but it should not bypass the graph’s own authority model.</p>\n<h2 id=\"architecture\">Architecture</h2>\n<p>An MCP architecture contains a user-facing host, one or more clients, external servers, declared resources, reusable prompts, executable tools, approval controls and audit records. The protocol coordinates capability discovery and invocation; the host remains responsible for consent, policy and user-visible behavior.</p>\n<h2 id=\"hosts-clients-and-servers\">Hosts, clients and servers</h2>\n<p>The MCP specification describes communication between hosts, clients and servers. The host is the application that the user experiences. A client is the connector inside that host. A server provides capabilities and context.</p>\n<p>This separation gives each layer a clear responsibility. The server describes what it can provide. The client manages the connection. The host decides how the user grants access and how model outputs are interpreted.</p>\n<p>In practice, the host is the trust boundary users understand. If a server exposes a file system or publishing action, the user should not need to reason about raw protocol messages. The host should make data access and tool invocation visible enough to approve, deny and audit.</p>\n<h2 id=\"resources\">Resources</h2>\n<p>Resources are contextual data exposed by a server. They can represent files, documents, database rows, graph neighborhoods, archive records, search results or any structured content that the model may use.</p>\n<p>For a knowledge system, resources are more than text blobs. A resource should preserve identity, title, source, visibility, modification time and relevant relations. A model reading an archive record should know whether it is public, restricted, provisional or canonical.</p>\n<p>This is where MCP fits Electronic Artefacts better than generic copy-paste prompting. A VASTE-backed MCP server could expose only the resources allowed by a user’s role and the current task. The model receives relevant context without receiving the whole private graph.</p>\n<h2 id=\"prompts\">Prompts</h2>\n<p>Prompts in MCP are reusable interaction patterns. A server can offer a structured prompt for summarizing an artefact, drafting metadata, reviewing a relation or comparing two sources.</p>\n<p>Treating prompts as server-provided capabilities helps a team version important workflows. Instead of every user improvising a metadata prompt, the system can expose a named prompt that encodes editorial standards and expected output structure.</p>\n<p>Prompts are not neutral. They carry assumptions about role, evidence, tone and success criteria. They should be reviewed like product behavior. For Electronic Artefacts, prompts that touch public knowledge should point back to claims, sources and entity identifiers rather than free-floating prose.</p>\n<h2 id=\"tools\">Tools</h2>\n<p>Tools are executable functions. They may search, transform, create, update, render, send, schedule or publish. This is where value and risk both increase.</p>\n<p>A tool description is not a security guarantee. A host must treat tool metadata as untrusted unless the server and deployment are trusted. Users should be able to inspect what a tool does before granting access. Sensitive tools should require explicit confirmation, especially when they write, publish or call external systems.</p>\n<p>Tool design should prefer narrow operations with typed inputs over broad commands. A tool named <code>create_relation</code> with a fixed schema is easier to authorize and audit than a tool named <code>run_shell_command</code>.</p>\n<h2 id=\"consent-and-control\">Consent and control</h2>\n<p>MCP’s security guidance emphasizes user consent, data privacy, tool safety and controls around model sampling. These are not optional interface details. They are core architecture.</p>\n<p>Consent should be specific enough to matter. “Allow access to your data” is weaker than “allow this server to read public Knowledge Hub entities for this conversation.” A write action should distinguish draft creation, internal mutation and public publication.</p>\n<p>Control also means revocation and inspection. A user should know which servers are connected, which resources were read, which tools were called and what result each call returned.</p>\n<h2 id=\"contextual-execution\">Contextual execution</h2>\n<p>Contextual execution means that action depends on entity identity, actor, relation, visibility, policy and current task. MCP can carry context, but it does not define the domain semantics for that context.</p>\n<p>For VASTE, a relation-editing tool should not merely accept subject, predicate and object. It should know whether the actor can create that relation, whether the object is public, whether the predicate is allowed between those entity types and whether the proposed statement has evidence.</p>\n<p>The protocol is a transport and capability layer. The graph runtime remains responsible for deciding what an action means.</p>\n<h2 id=\"agent-workflows\">Agent workflows</h2>\n<p>MCP is often discussed in the same breath as AI agents. The more precise framing is that MCP gives agents and workflows a standard way to connect to capabilities.</p>\n<p>An agent might use MCP to retrieve a project brief, call a search tool, draft a metadata update and ask for human approval. A workflow might use the same tools in a deterministic sequence without claiming autonomy. The protocol supports both.</p>\n<p>This distinction protects system design. If the task needs repeatability, a workflow may be safer. If the task needs exploration across uncertain paths, an agent may be appropriate. MCP should not force one execution model.</p>\n<h2 id=\"observability\">Observability</h2>\n<p>Tool-using systems need telemetry. Each request should record which server was used, which resource was read, which tool was invoked, how long it took, whether it failed and which user approved it.</p>\n<p>The logs should avoid retaining sensitive prompt content by default. They should preserve enough metadata to reconstruct operational behavior and investigate errors.</p>\n<p>For graph systems, telemetry should include entity IDs and relation types where safe. A trace that says “tool call failed” is less useful than one that says “relation validation failed for publication to technology relation under public visibility.”</p>\n<h2 id=\"security\">Security</h2>\n<p>The main MCP risk is not the protocol syntax. It is capability composition. A model that can read private data and call an external sending tool may exfiltrate information if the host does not enforce boundaries.</p>\n<p>Prompt injection increases that risk. A resource can contain text that tells the model to ignore prior instructions or call a tool. The host must treat resource content as data, not as authority.</p>\n<p>Tool permissions should be scoped by server, operation, user, conversation and data class. A read-only research server should not gain write permissions because another connected server provides a publishing tool.</p>\n<h2 id=\"mcp-and-vaste\">MCP and VASTE</h2>\n<p>VASTE can treat MCP as one interface to the runtime, not the runtime itself. A VASTE MCP server might expose public entity lookup, relation validation, graph neighborhood retrieval, archive drafting and controlled projection rebuilds.</p>\n<p>The graph supplies identity and policy. MCP supplies a connection model. OpenTelemetry can supply observability. Human review supplies governance.</p>\n<p>This combination is stronger than a generic assistant because actions remain grounded in typed entities and public contracts.</p>\n<h2 id=\"implementation\">Implementation</h2>\n<p>Start with one read-only MCP server. Expose a small set of resources from the public Knowledge Hub, such as entity lookup and graph neighborhoods. Add one harmless tool, such as validating a draft relation without writing it. Require explicit approval before any write tool is introduced.</p>\n<p>Define resource visibility, tool schemas, audit events and telemetry before adding more servers. Treat every prompt, resource and tool response as untrusted input unless it comes from a trusted internal source and still passes validation.</p>\n<h2 id=\"evidence\">Evidence</h2>\n<p>The MCP specification defines hosts, clients, servers, resources, prompts and tools over JSON-RPC style communication. Its own security section highlights user consent, privacy, tool safety and controls around model-initiated sampling.</p>\n<h2 id=\"electronic-artefacts-implications\">Electronic Artefacts implications</h2>\n<p>MCP is interesting for Electronic Artefacts because it gives AI systems a practical boundary between model reasoning and executable studio infrastructure. It could connect the Knowledge Hub, VASTE, archive records, project metadata and local tools without collapsing everything into one opaque assistant.</p>\n<p>The durable design principle is simple: the model may propose and invoke capabilities, but the graph runtime should decide identity, context and permission.</p>\n<h2 id=\"limitations\">Limitations</h2>\n<p>MCP does not solve prompt injection, authorization, observability, schema design or user-interface consent by itself. It gives implementers a protocol surface where those responsibilities can be expressed.</p>\n<h2 id=\"related-concepts\">Related concepts</h2>\n<p>Read <a href=\"/knowledge/concepts/ai-agent/\">AI Agent</a>, <a href=\"/knowledge/concepts/contextual-execution/\">Contextual Execution</a>, <a href=\"/knowledge/concepts/graph-runtime/\">Graph Runtime</a> and <a href=\"/knowledge/concepts/event-driven-architecture/\">Event-Driven Architecture</a>.</p>\n<h2 id=\"related-technology\">Related technology</h2>\n<p>See <a href=\"/knowledge/technologies/model-context-protocol/\">Model Context Protocol</a> and <a href=\"/knowledge/technologies/opentelemetry/\">OpenTelemetry</a>.</p>\n<h2 id=\"glossary\">Glossary</h2>\n<p>Host: the user-facing language-model application.</p>\n<p>Server: a service that exposes resources, prompts or tools.</p>\n<p>Resource: contextual data made available to the model.</p>\n<p>Tool: an executable capability that may perform work outside the model.</p>\n<p>Sampling: a server-initiated request for model generation controlled by the host.</p>\n<h2 id=\"references\">References</h2>\n<ul>\n<li>Model Context Protocol. Specification. 2025-06-18.</li>\n<li>JSON-RPC Working Group. JSON-RPC 2.0 Specification.</li>\n<li>Microsoft. Language Server Protocol Specification.</li>\n</ul>\n",
+  "headings": [
+    "Problem",
+    "Introduction",
+    "Architecture",
+    "Hosts, clients and servers",
+    "Resources",
+    "Prompts",
+    "Tools",
+    "Consent and control",
+    "Contextual execution",
+    "Agent workflows",
+    "Observability",
+    "Security",
+    "MCP and VASTE",
+    "Implementation",
+    "Evidence",
+    "Electronic Artefacts implications",
+    "Limitations",
+    "Related concepts",
+    "Related technology",
+    "Glossary",
+    "References"
+  ],
+  "headingItems": [
+    {
+      "level": 2,
+      "title": "Problem",
+      "id": "problem"
+    },
+    {
+      "level": 2,
+      "title": "Introduction",
+      "id": "introduction"
+    },
+    {
+      "level": 2,
+      "title": "Architecture",
+      "id": "architecture"
+    },
+    {
+      "level": 2,
+      "title": "Hosts, clients and servers",
+      "id": "hosts-clients-and-servers"
+    },
+    {
+      "level": 2,
+      "title": "Resources",
+      "id": "resources"
+    },
+    {
+      "level": 2,
+      "title": "Prompts",
+      "id": "prompts"
+    },
+    {
+      "level": 2,
+      "title": "Tools",
+      "id": "tools"
+    },
+    {
+      "level": 2,
+      "title": "Consent and control",
+      "id": "consent-and-control"
+    },
+    {
+      "level": 2,
+      "title": "Contextual execution",
+      "id": "contextual-execution"
+    },
+    {
+      "level": 2,
+      "title": "Agent workflows",
+      "id": "agent-workflows"
+    },
+    {
+      "level": 2,
+      "title": "Observability",
+      "id": "observability"
+    },
+    {
+      "level": 2,
+      "title": "Security",
+      "id": "security"
+    },
+    {
+      "level": 2,
+      "title": "MCP and VASTE",
+      "id": "mcp-and-vaste"
+    },
+    {
+      "level": 2,
+      "title": "Implementation",
+      "id": "implementation"
+    },
+    {
+      "level": 2,
+      "title": "Evidence",
+      "id": "evidence"
+    },
+    {
+      "level": 2,
+      "title": "Electronic Artefacts implications",
+      "id": "electronic-artefacts-implications"
+    },
+    {
+      "level": 2,
+      "title": "Limitations",
+      "id": "limitations"
+    },
+    {
+      "level": 2,
+      "title": "Related concepts",
+      "id": "related-concepts"
+    },
+    {
+      "level": 2,
+      "title": "Related technology",
+      "id": "related-technology"
+    },
+    {
+      "level": 2,
+      "title": "Glossary",
+      "id": "glossary"
+    },
+    {
+      "level": 2,
+      "title": "References",
+      "id": "references"
+    }
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "id": "local:ea:collection:knowledge-hub-fourth-wave",
+  "kind": "local",
+  "focus": "ea:collection:knowledge-hub-fourth-wave",
+  "nodes": [
+    {
+      "id": "ea:collection:knowledge-hub-fourth-wave",
+      "type": "collection",
+      "title": "Knowledge Hub Fourth Wave",
+      "route": "/archive/collections/knowledge-hub-fourth-wave/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:c2pa-content-credentials-and-generative-media-provenance",
+      "type": "publication",
+      "title": "C2PA Content Credentials and Generative Media Provenance",
+      "route": "/publications/c2pa-content-credentials-and-generative-media-provenance/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:iiif-and-compound-cultural-objects",
+      "type": "publication",
+      "title": "IIIF and Compound Cultural Objects",
+      "route": "/publications/iiif-and-compound-cultural-objects/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:model-context-protocol-and-tool-using-ai-systems",
+      "type": "publication",
+      "title": "Model Context Protocol and Tool-Using AI Systems",
+      "route": "/publications/model-context-protocol-and-tool-using-ai-systems/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:observability-for-ai-agents-and-tool-calling-systems",
+      "type": "publication",
+      "title": "Observability for AI Agents and Tool-Calling Systems",
+      "route": "/publications/observability-for-ai-agents-and-tool-calling-systems/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:webnn-and-local-ai-in-the-browser",
+      "type": "publication",
+      "title": "WebNN and Local AI in the Browser",
+      "route": "/publications/webnn-and-local-ai-in-the-browser/",
+      "status": "active",
+      "confidence": "published"
+    }
+  ],
+  "edges": [
+    {
+      "id": "ear:knowledge-hub-fourth-wave-has-mcp-article",
+      "source": "ea:publication:model-context-protocol-and-tool-using-ai-systems",
+      "target": "ea:collection:knowledge-hub-fourth-wave",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Model Context Protocol and Tool-Using AI Systems is part of the fourth Knowledge Hub wave.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:knowledge-hub-fourth-wave-has-c2pa-article",
+      "source": "ea:publication:c2pa-content-credentials-and-generative-media-provenance",
+      "target": "ea:collection:knowledge-hub-fourth-wave",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "C2PA Content Credentials and Generative Media Provenance is part of the fourth Knowledge Hub wave.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:knowledge-hub-fourth-wave-has-webnn-article",
+      "source": "ea:publication:webnn-and-local-ai-in-the-browser",
+      "target": "ea:collection:knowledge-hub-fourth-wave",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "WebNN and Local AI in the Browser is part of the fourth Knowledge Hub wave.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:knowledge-hub-fourth-wave-has-iiif-article",
+      "source": "ea:publication:iiif-and-compound-cultural-objects",
+      "target": "ea:collection:knowledge-hub-fourth-wave",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "IIIF and Compound Cultural Objects is part of the fourth Knowledge Hub wave.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:knowledge-hub-fourth-wave-has-observability-article",
+      "source": "ea:publication:observability-for-ai-agents-and-tool-calling-systems",
+      "target": "ea:collection:knowledge-hub-fourth-wave",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Observability for AI Agents and Tool-Calling Systems is part of the fourth Knowledge Hub wave.",
+      "confidence": "published"
+    }
+  ]
+}

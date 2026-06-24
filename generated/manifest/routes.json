@@ -5,6 +5,11 @@
     "identifier": "/id/collection/knowledge-hub-foundations/"
   },
   {
+    "id": "ea:collection:knowledge-hub-fourth-wave",
+    "route": "/archive/collections/knowledge-hub-fourth-wave/",
+    "identifier": "/id/collection/knowledge-hub-fourth-wave/"
+  },
+  {
     "id": "ea:collection:knowledge-hub-second-wave",
     "route": "/archive/collections/knowledge-hub-second-wave/",
     "identifier": "/id/collection/knowledge-hub-second-wave/"
@@ -230,6 +235,11 @@
     "identifier": "/id/publication/algorithmic-composition-and-rule-based-music/"
   },
   {
+    "id": "ea:publication:c2pa-content-credentials-and-generative-media-provenance",
+    "route": "/publications/c2pa-content-credentials-and-generative-media-provenance/",
+    "identifier": "/id/publication/c2pa-content-credentials-and-generative-media-provenance/"
+  },
+  {
     "id": "ea:publication:contextual-execution-and-graph-runtimes",
     "route": "/publications/contextual-execution-and-graph-runtimes/",
     "identifier": "/id/publication/contextual-execution-and-graph-runtimes/"
@@ -280,6 +290,11 @@
     "identifier": "/id/publication/hypertext-and-augmented-knowledge-systems/"
   },
   {
+    "id": "ea:publication:iiif-and-compound-cultural-objects",
+    "route": "/publications/iiif-and-compound-cultural-objects/",
+    "identifier": "/id/publication/iiif-and-compound-cultural-objects/"
+  },
+  {
     "id": "ea:publication:knowledge-graphs-for-cultural-infrastructure",
     "route": "/publications/knowledge-graphs-for-cultural-infrastructure/",
     "identifier": "/id/publication/knowledge-graphs-for-cultural-infrastructure/"
@@ -305,6 +320,11 @@
     "identifier": "/id/publication/microservices-modular-monoliths-and-system-boundaries/"
   },
   {
+    "id": "ea:publication:model-context-protocol-and-tool-using-ai-systems",
+    "route": "/publications/model-context-protocol-and-tool-using-ai-systems/",
+    "identifier": "/id/publication/model-context-protocol-and-tool-using-ai-systems/"
+  },
+  {
     "id": "ea:publication:motion-design-time-and-interface-semantics",
     "route": "/publications/motion-design-time-and-interface-semantics/",
     "identifier": "/id/publication/motion-design-time-and-interface-semantics/"
@@ -313,6 +333,11 @@
     "id": "ea:publication:multimodal-ai-across-text-image-audio-and-video",
     "route": "/publications/multimodal-ai-across-text-image-audio-and-video/",
     "identifier": "/id/publication/multimodal-ai-across-text-image-audio-and-video/"
+  },
+  {
+    "id": "ea:publication:observability-for-ai-agents-and-tool-calling-systems",
+    "route": "/publications/observability-for-ai-agents-and-tool-calling-systems/",
+    "identifier": "/id/publication/observability-for-ai-agents-and-tool-calling-systems/"
   },
   {
     "id": "ea:publication:ontologies-taxonomies-and-knowledge-modeling",
@@ -370,6 +395,11 @@
     "identifier": "/id/publication/web-audio-and-browser-based-sound-systems/"
   },
   {
+    "id": "ea:publication:webnn-and-local-ai-in-the-browser",
+    "route": "/publications/webnn-and-local-ai-in-the-browser/",
+    "identifier": "/id/publication/webnn-and-local-ai-in-the-browser/"
+  },
+  {
     "id": "ea:publication:why-graphs-are-more-powerful-than-folders",
     "route": "/publications/why-graphs-are-more-powerful-than-folders/",
     "identifier": "/id/publication/why-graphs-are-more-powerful-than-folders/"
@@ -385,6 +415,11 @@
     "identifier": "/id/technology/activitypub/"
   },
   {
+    "id": "ea:technology:c2pa",
+    "route": "/knowledge/technologies/c2pa/",
+    "identifier": "/id/technology/c2pa/"
+  },
+  {
     "id": "ea:technology:cloudevents",
     "route": "/knowledge/technologies/cloudevents/",
     "identifier": "/id/technology/cloudevents/"
@@ -395,6 +430,11 @@
     "identifier": "/id/technology/css-fonts/"
   },
   {
+    "id": "ea:technology:iiif",
+    "route": "/knowledge/technologies/iiif/",
+    "identifier": "/id/technology/iiif/"
+  },
+  {
     "id": "ea:technology:json-ld",
     "route": "/knowledge/technologies/json-ld/",
     "identifier": "/id/technology/json-ld/"
@@ -403,6 +443,16 @@
     "id": "ea:technology:llama-cpp",
     "route": "/knowledge/technologies/llama-cpp/",
     "identifier": "/id/technology/llama-cpp/"
+  },
+  {
+    "id": "ea:technology:model-context-protocol",
+    "route": "/knowledge/technologies/model-context-protocol/",
+    "identifier": "/id/technology/model-context-protocol/"
+  },
+  {
+    "id": "ea:technology:opentelemetry",
+    "route": "/knowledge/technologies/opentelemetry/",
+    "identifier": "/id/technology/opentelemetry/"
   },
   {
     "id": "ea:technology:owl",
@@ -443,5 +493,10 @@
     "id": "ea:technology:webgl",
     "route": "/knowledge/technologies/webgl/",
     "identifier": "/id/technology/webgl/"
+  },
+  {
+    "id": "ea:technology:webnn",
+    "route": "/knowledge/technologies/webnn/",
+    "identifier": "/id/technology/webnn/"
   }
 ]

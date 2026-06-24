@@ -5247,6 +5247,43 @@ window.EA_PUBLIC_CATALOG = {
       }
     },
     {
+      "id": "ea:collection:knowledge-hub-fourth-wave",
+      "legacyId": "knowledge-hub-fourth-wave",
+      "kind": "collection",
+      "type": "collection",
+      "title": "Knowledge Hub Fourth Wave",
+      "subtitle": "AI Protocols, Provenance and Cultural Interfaces",
+      "summary": "Knowledge Hub Fourth Wave groups articles and technology records about MCP, C2PA, WebNN, IIIF and OpenTelemetry for durable AI and cultural infrastructure.",
+      "description": "A curated Electronic Artefacts collection about AI tool protocols, media provenance, browser-local inference, archive presentation and agent observability.",
+      "status": "active",
+      "maturity": "research",
+      "confidence": "published",
+      "visibility": "public",
+      "publicationClass": "published",
+      "tags": [
+        "Knowledge Hub",
+        "Fourth Wave",
+        "AI Protocols",
+        "Provenance",
+        "Cultural Infrastructure"
+      ],
+      "discipline": [
+        "Artificial Intelligence",
+        "Knowledge Systems",
+        "Digital Preservation",
+        "Software Architecture",
+        "Cultural Infrastructure"
+      ],
+      "route": "/archive/collections/knowledge-hub-fourth-wave/",
+      "identifier": "/id/collection/knowledge-hub-fourth-wave/",
+      "temporality": {
+        "creationDate": "2026-06-24",
+        "lastUpdated": "2026-06-24",
+        "releaseDate": "2026-06-24",
+        "creationYear": "2026"
+      }
+    },
+    {
       "id": "ea:collection:knowledge-hub-second-wave",
       "legacyId": "knowledge-hub-second-wave",
       "kind": "collection",
@@ -6851,6 +6888,42 @@ window.EA_PUBLIC_CATALOG = {
       }
     },
     {
+      "id": "ea:publication:c2pa-content-credentials-and-generative-media-provenance",
+      "legacyId": "c2pa-content-credentials-and-generative-media-provenance",
+      "kind": "publication",
+      "type": "publication",
+      "title": "C2PA Content Credentials and Generative Media Provenance",
+      "subtitle": "Technical Article",
+      "summary": "A practical explanation of C2PA, Content Credentials, signed media manifests, provenance claims, trust limits and archive use.",
+      "description": "Understand C2PA and Content Credentials for media provenance, generative AI labelling, archive trust and cultural production workflows.",
+      "status": "active",
+      "maturity": "research",
+      "confidence": "published",
+      "visibility": "public",
+      "publicationClass": "published",
+      "tags": [
+        "C2PA",
+        "Content Credentials",
+        "Provenance",
+        "Generative AI",
+        "Digital Preservation"
+      ],
+      "discipline": [
+        "Digital Preservation",
+        "Artificial Intelligence",
+        "Knowledge Systems",
+        "Cultural Infrastructure"
+      ],
+      "route": "/publications/c2pa-content-credentials-and-generative-media-provenance/",
+      "identifier": "/id/publication/c2pa-content-credentials-and-generative-media-provenance/",
+      "temporality": {
+        "creationDate": "2026-06-24",
+        "lastUpdated": "2026-06-24",
+        "releaseDate": "2026-06-24",
+        "creationYear": "2026"
+      }
+    },
+    {
       "id": "ea:publication:contextual-execution-and-graph-runtimes",
       "legacyId": "contextual-execution-and-graph-runtimes",
       "kind": "publication",
@@ -7203,6 +7276,42 @@ window.EA_PUBLIC_CATALOG = {
       }
     },
     {
+      "id": "ea:publication:iiif-and-compound-cultural-objects",
+      "legacyId": "iiif-and-compound-cultural-objects",
+      "kind": "publication",
+      "type": "publication",
+      "title": "IIIF and Compound Cultural Objects",
+      "subtitle": "Technical Article",
+      "summary": "A practical explanation of IIIF Presentation API concepts, compound objects, manifests, canvases, annotations and cultural archive interfaces.",
+      "description": "Understand IIIF as presentation infrastructure for compound cultural objects, archives, manifests, canvases and annotations.",
+      "status": "active",
+      "maturity": "research",
+      "confidence": "published",
+      "visibility": "public",
+      "publicationClass": "published",
+      "tags": [
+        "IIIF",
+        "Digital Archives",
+        "Cultural Objects",
+        "Metadata",
+        "Linked Data"
+      ],
+      "discipline": [
+        "Digital Preservation",
+        "Cultural Infrastructure",
+        "Knowledge Systems",
+        "Web Development"
+      ],
+      "route": "/publications/iiif-and-compound-cultural-objects/",
+      "identifier": "/id/publication/iiif-and-compound-cultural-objects/",
+      "temporality": {
+        "creationDate": "2026-06-24",
+        "lastUpdated": "2026-06-24",
+        "releaseDate": "2026-06-24",
+        "creationYear": "2026"
+      }
+    },
+    {
       "id": "ea:publication:knowledge-graphs-for-cultural-infrastructure",
       "legacyId": "knowledge-graphs-for-cultural-infrastructure",
       "kind": "publication",
@@ -7381,6 +7490,41 @@ window.EA_PUBLIC_CATALOG = {
       }
     },
     {
+      "id": "ea:publication:model-context-protocol-and-tool-using-ai-systems",
+      "legacyId": "model-context-protocol-and-tool-using-ai-systems",
+      "kind": "publication",
+      "type": "publication",
+      "title": "Model Context Protocol and Tool-Using AI Systems",
+      "subtitle": "Technical Article",
+      "summary": "A practical explanation of MCP as an integration protocol for resources, prompts, tools, consent, host boundaries and graph-scoped AI workflows.",
+      "description": "Understand Model Context Protocol through hosts, clients, servers, resources, prompts, tools, security boundaries and contextual execution.",
+      "status": "active",
+      "maturity": "research",
+      "confidence": "published",
+      "visibility": "public",
+      "publicationClass": "published",
+      "tags": [
+        "Model Context Protocol",
+        "AI Agents",
+        "Tool Use",
+        "Contextual Execution",
+        "VASTE"
+      ],
+      "discipline": [
+        "Artificial Intelligence",
+        "Software Architecture",
+        "Systems Design"
+      ],
+      "route": "/publications/model-context-protocol-and-tool-using-ai-systems/",
+      "identifier": "/id/publication/model-context-protocol-and-tool-using-ai-systems/",
+      "temporality": {
+        "creationDate": "2026-06-24",
+        "lastUpdated": "2026-06-24",
+        "releaseDate": "2026-06-24",
+        "creationYear": "2026"
+      }
+    },
+    {
       "id": "ea:publication:motion-design-time-and-interface-semantics",
       "legacyId": "motion-design-time-and-interface-semantics",
       "kind": "publication",
@@ -7444,6 +7588,42 @@ window.EA_PUBLIC_CATALOG = {
       ],
       "route": "/publications/multimodal-ai-across-text-image-audio-and-video/",
       "identifier": "/id/publication/multimodal-ai-across-text-image-audio-and-video/",
+      "temporality": {
+        "creationDate": "2026-06-24",
+        "lastUpdated": "2026-06-24",
+        "releaseDate": "2026-06-24",
+        "creationYear": "2026"
+      }
+    },
+    {
+      "id": "ea:publication:observability-for-ai-agents-and-tool-calling-systems",
+      "legacyId": "observability-for-ai-agents-and-tool-calling-systems",
+      "kind": "publication",
+      "type": "publication",
+      "title": "Observability for AI Agents and Tool-Calling Systems",
+      "subtitle": "Technical Article",
+      "summary": "A practical explanation of telemetry for AI agents, tool calls, traces, events, approvals, failures, evaluations and graph-runtime accountability.",
+      "description": "Understand observability for AI agents and tool-calling systems through traces, metrics, logs, audit events and OpenTelemetry.",
+      "status": "active",
+      "maturity": "research",
+      "confidence": "published",
+      "visibility": "public",
+      "publicationClass": "published",
+      "tags": [
+        "Observability",
+        "AI Agents",
+        "Tool Calling",
+        "OpenTelemetry",
+        "Tracing"
+      ],
+      "discipline": [
+        "Artificial Intelligence",
+        "Software Architecture",
+        "Systems Design",
+        "Distributed Systems"
+      ],
+      "route": "/publications/observability-for-ai-agents-and-tool-calling-systems/",
+      "identifier": "/id/publication/observability-for-ai-agents-and-tool-calling-systems/",
       "temporality": {
         "creationDate": "2026-06-24",
         "lastUpdated": "2026-06-24",
@@ -7844,6 +8024,42 @@ window.EA_PUBLIC_CATALOG = {
       }
     },
     {
+      "id": "ea:publication:webnn-and-local-ai-in-the-browser",
+      "legacyId": "webnn-and-local-ai-in-the-browser",
+      "kind": "publication",
+      "type": "publication",
+      "title": "WebNN and Local AI in the Browser",
+      "subtitle": "Technical Article",
+      "summary": "A practical explanation of WebNN, browser-local inference, hardware acceleration, privacy limits, creative tools and web machine-learning architecture.",
+      "description": "Understand WebNN as a browser API for hardware-accelerated neural-network inference and local AI interaction design.",
+      "status": "active",
+      "maturity": "research",
+      "confidence": "published",
+      "visibility": "public",
+      "publicationClass": "published",
+      "tags": [
+        "WebNN",
+        "Browser AI",
+        "Local Inference",
+        "Web Machine Learning",
+        "HCI"
+      ],
+      "discipline": [
+        "Artificial Intelligence",
+        "Web Development",
+        "Human Computer Interaction",
+        "Creative Technology"
+      ],
+      "route": "/publications/webnn-and-local-ai-in-the-browser/",
+      "identifier": "/id/publication/webnn-and-local-ai-in-the-browser/",
+      "temporality": {
+        "creationDate": "2026-06-24",
+        "lastUpdated": "2026-06-24",
+        "releaseDate": "2026-06-24",
+        "creationYear": "2026"
+      }
+    },
+    {
       "id": "ea:publication:why-graphs-are-more-powerful-than-folders",
       "legacyId": "why-graphs-are-more-powerful-than-folders",
       "kind": "publication",
@@ -7947,6 +8163,39 @@ window.EA_PUBLIC_CATALOG = {
       }
     },
     {
+      "id": "ea:technology:c2pa",
+      "legacyId": "c2pa",
+      "kind": "technology",
+      "type": "technology",
+      "title": "C2PA",
+      "summary": "C2PA is a technical standard family for attaching verifiable provenance and content-credential metadata to media assets.",
+      "description": "A technology record for C2PA and Content Credentials as provenance infrastructure for digital media.",
+      "status": "active",
+      "maturity": "development",
+      "confidence": "canonical",
+      "visibility": "public",
+      "publicationClass": "canonical",
+      "tags": [
+        "C2PA",
+        "Content Credentials",
+        "Provenance",
+        "Media Authenticity"
+      ],
+      "discipline": [
+        "Digital Preservation",
+        "Knowledge Systems",
+        "Artificial Intelligence"
+      ],
+      "route": "/knowledge/technologies/c2pa/",
+      "identifier": "/id/technology/c2pa/",
+      "temporality": {
+        "creationDate": "2026-06-24",
+        "lastUpdated": "2026-06-24",
+        "releaseDate": "2026-06-24",
+        "creationYear": "2026"
+      }
+    },
+    {
       "id": "ea:technology:cloudevents",
       "legacyId": "cloudevents",
       "kind": "technology",
@@ -8003,6 +8252,39 @@ window.EA_PUBLIC_CATALOG = {
       ],
       "route": "/knowledge/technologies/css-fonts/",
       "identifier": "/id/technology/css-fonts/",
+      "temporality": {
+        "creationDate": "2026-06-24",
+        "lastUpdated": "2026-06-24",
+        "releaseDate": "2026-06-24",
+        "creationYear": "2026"
+      }
+    },
+    {
+      "id": "ea:technology:iiif",
+      "legacyId": "iiif",
+      "kind": "technology",
+      "type": "technology",
+      "title": "IIIF",
+      "summary": "IIIF is a framework of APIs for presenting, structuring and annotating digital representations of cultural and archival objects.",
+      "description": "A technology record for IIIF as interoperable presentation infrastructure for compound cultural objects.",
+      "status": "active",
+      "maturity": "production",
+      "confidence": "canonical",
+      "visibility": "public",
+      "publicationClass": "canonical",
+      "tags": [
+        "IIIF",
+        "Digital Archives",
+        "Cultural Heritage",
+        "Presentation API"
+      ],
+      "discipline": [
+        "Digital Preservation",
+        "Cultural Infrastructure",
+        "Knowledge Systems"
+      ],
+      "route": "/knowledge/technologies/iiif/",
+      "identifier": "/id/technology/iiif/",
       "temporality": {
         "creationDate": "2026-06-24",
         "lastUpdated": "2026-06-24",
@@ -8070,6 +8352,72 @@ window.EA_PUBLIC_CATALOG = {
       ],
       "route": "/knowledge/technologies/llama-cpp/",
       "identifier": "/id/technology/llama-cpp/",
+      "temporality": {
+        "creationDate": "2026-06-24",
+        "lastUpdated": "2026-06-24",
+        "releaseDate": "2026-06-24",
+        "creationYear": "2026"
+      }
+    },
+    {
+      "id": "ea:technology:model-context-protocol",
+      "legacyId": "model-context-protocol",
+      "kind": "technology",
+      "type": "technology",
+      "title": "Model Context Protocol",
+      "summary": "Model Context Protocol is an open protocol for connecting language-model applications to external context, prompts and executable tools.",
+      "description": "A technology record for MCP as an integration protocol for tool-using AI applications, resources and contextual workflows.",
+      "status": "active",
+      "maturity": "development",
+      "confidence": "canonical",
+      "visibility": "public",
+      "publicationClass": "canonical",
+      "tags": [
+        "MCP",
+        "AI Tools",
+        "Context Protocol",
+        "JSON-RPC"
+      ],
+      "discipline": [
+        "Artificial Intelligence",
+        "Software Architecture",
+        "Systems Design"
+      ],
+      "route": "/knowledge/technologies/model-context-protocol/",
+      "identifier": "/id/technology/model-context-protocol/",
+      "temporality": {
+        "creationDate": "2026-06-24",
+        "lastUpdated": "2026-06-24",
+        "releaseDate": "2026-06-24",
+        "creationYear": "2026"
+      }
+    },
+    {
+      "id": "ea:technology:opentelemetry",
+      "legacyId": "opentelemetry",
+      "kind": "technology",
+      "type": "technology",
+      "title": "OpenTelemetry",
+      "summary": "OpenTelemetry is an observability framework for producing, collecting and standardizing telemetry such as traces, metrics and logs.",
+      "description": "A technology record for OpenTelemetry as telemetry infrastructure for distributed systems and AI tool workflows.",
+      "status": "active",
+      "maturity": "production",
+      "confidence": "canonical",
+      "visibility": "public",
+      "publicationClass": "canonical",
+      "tags": [
+        "OpenTelemetry",
+        "Observability",
+        "Tracing",
+        "Metrics"
+      ],
+      "discipline": [
+        "Software Architecture",
+        "Systems Design",
+        "Artificial Intelligence"
+      ],
+      "route": "/knowledge/technologies/opentelemetry/",
+      "identifier": "/id/technology/opentelemetry/",
       "temporality": {
         "creationDate": "2026-06-24",
         "lastUpdated": "2026-06-24",
@@ -8332,6 +8680,39 @@ window.EA_PUBLIC_CATALOG = {
         "releaseDate": "2026-06-24",
         "creationYear": "2026"
       }
+    },
+    {
+      "id": "ea:technology:webnn",
+      "legacyId": "webnn",
+      "kind": "technology",
+      "type": "technology",
+      "title": "WebNN",
+      "summary": "WebNN is a W3C Web Machine Learning API for hardware-accelerated neural-network inference in web applications.",
+      "description": "A technology record for browser-based machine-learning inference through the Web Neural Network API.",
+      "status": "active",
+      "maturity": "development",
+      "confidence": "canonical",
+      "visibility": "public",
+      "publicationClass": "canonical",
+      "tags": [
+        "WebNN",
+        "Browser AI",
+        "Local Inference",
+        "Web Machine Learning"
+      ],
+      "discipline": [
+        "Artificial Intelligence",
+        "Web Development",
+        "Human Computer Interaction"
+      ],
+      "route": "/knowledge/technologies/webnn/",
+      "identifier": "/id/technology/webnn/",
+      "temporality": {
+        "creationDate": "2026-06-24",
+        "lastUpdated": "2026-06-24",
+        "releaseDate": "2026-06-24",
+        "creationYear": "2026"
+      }
     }
   ],
   "relations": [
@@ -8366,6 +8747,292 @@ window.EA_PUBLIC_CATALOG = {
       "confidence": "observed",
       "createdAt": "2026-06-22",
       "reviewedAt": "2026-06-22",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:mcp-article-documents-mcp",
+      "subject": "ea:publication:model-context-protocol-and-tool-using-ai-systems",
+      "predicate": "documents",
+      "object": "ea:technology:model-context-protocol",
+      "statement": "Model Context Protocol and Tool-Using AI Systems documents MCP as a capability protocol for AI tools, prompts and resources.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:mcp-article-documents-ai-agent",
+      "subject": "ea:publication:model-context-protocol-and-tool-using-ai-systems",
+      "predicate": "documents",
+      "object": "ea:concept:ai-agent",
+      "statement": "Model Context Protocol and Tool-Using AI Systems explains how MCP relates to AI agents and deterministic workflows.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:mcp-article-documents-contextual-execution",
+      "subject": "ea:publication:model-context-protocol-and-tool-using-ai-systems",
+      "predicate": "documents",
+      "object": "ea:concept:contextual-execution",
+      "statement": "Model Context Protocol and Tool-Using AI Systems connects MCP permissions to contextual execution boundaries.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:mcp-article-documents-vaste",
+      "subject": "ea:publication:model-context-protocol-and-tool-using-ai-systems",
+      "predicate": "documents",
+      "object": "ea:program:vaste",
+      "statement": "Model Context Protocol and Tool-Using AI Systems uses VASTE as the graph-runtime context for scoped AI tools.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:c2pa-article-documents-c2pa",
+      "subject": "ea:publication:c2pa-content-credentials-and-generative-media-provenance",
+      "predicate": "documents",
+      "object": "ea:technology:c2pa",
+      "statement": "C2PA Content Credentials and Generative Media Provenance documents C2PA as media provenance infrastructure.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:c2pa-article-documents-provenance",
+      "subject": "ea:publication:c2pa-content-credentials-and-generative-media-provenance",
+      "predicate": "documents",
+      "object": "ea:concept:provenance",
+      "statement": "C2PA Content Credentials and Generative Media Provenance explains provenance as evidence rather than proof of truth.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:c2pa-article-documents-palimpsests",
+      "subject": "ea:publication:c2pa-content-credentials-and-generative-media-provenance",
+      "predicate": "documents",
+      "object": "ea:project:palimpsests",
+      "statement": "C2PA Content Credentials and Generative Media Provenance applies media provenance to Palimpsests and production memory.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:webnn-article-documents-webnn",
+      "subject": "ea:publication:webnn-and-local-ai-in-the-browser",
+      "predicate": "documents",
+      "object": "ea:technology:webnn",
+      "statement": "WebNN and Local AI in the Browser documents WebNN as browser-local inference infrastructure.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:webnn-article-documents-multimodal-ai",
+      "subject": "ea:publication:webnn-and-local-ai-in-the-browser",
+      "predicate": "documents",
+      "object": "ea:concept:multimodal-ai",
+      "statement": "WebNN and Local AI in the Browser links WebNN to multimodal browser interfaces and local perception tasks.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:webnn-article-documents-hci",
+      "subject": "ea:publication:webnn-and-local-ai-in-the-browser",
+      "predicate": "documents",
+      "object": "ea:concept:human-computer-interaction",
+      "statement": "WebNN and Local AI in the Browser frames local inference as a human-computer interaction design problem.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:iiif-article-documents-iiif",
+      "subject": "ea:publication:iiif-and-compound-cultural-objects",
+      "predicate": "documents",
+      "object": "ea:technology:iiif",
+      "statement": "IIIF and Compound Cultural Objects documents IIIF as a presentation framework for cultural archive objects.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:iiif-article-documents-digital-preservation",
+      "subject": "ea:publication:iiif-and-compound-cultural-objects",
+      "predicate": "documents",
+      "object": "ea:concept:digital-preservation",
+      "statement": "IIIF and Compound Cultural Objects connects object presentation structure to digital preservation practice.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:iiif-article-documents-vestiges",
+      "subject": "ea:publication:iiif-and-compound-cultural-objects",
+      "predicate": "documents",
+      "object": "ea:project:vestiges",
+      "statement": "IIIF and Compound Cultural Objects uses Vestiges as a cultural infrastructure context for compound object records.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:observability-article-documents-opentelemetry",
+      "subject": "ea:publication:observability-for-ai-agents-and-tool-calling-systems",
+      "predicate": "documents",
+      "object": "ea:technology:opentelemetry",
+      "statement": "Observability for AI Agents and Tool-Calling Systems documents OpenTelemetry as telemetry infrastructure.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:observability-article-documents-ai-agent",
+      "subject": "ea:publication:observability-for-ai-agents-and-tool-calling-systems",
+      "predicate": "documents",
+      "object": "ea:concept:ai-agent",
+      "statement": "Observability for AI Agents and Tool-Calling Systems explains why agents need traceable model and tool behavior.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:observability-article-uses-mcp",
+      "subject": "ea:publication:observability-for-ai-agents-and-tool-calling-systems",
+      "predicate": "usesTechnology",
+      "object": "ea:technology:model-context-protocol",
+      "statement": "Observability for AI Agents and Tool-Calling Systems uses MCP as the reference capability surface for tool telemetry.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:observability-article-documents-contextual-execution",
+      "subject": "ea:publication:observability-for-ai-agents-and-tool-calling-systems",
+      "predicate": "documents",
+      "object": "ea:concept:contextual-execution",
+      "statement": "Observability for AI Agents and Tool-Calling Systems ties telemetry to context-aware permissions and runtime accountability.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:knowledge-hub-fourth-wave-has-mcp-article",
+      "subject": "ea:publication:model-context-protocol-and-tool-using-ai-systems",
+      "predicate": "memberOfCollection",
+      "object": "ea:collection:knowledge-hub-fourth-wave",
+      "statement": "Model Context Protocol and Tool-Using AI Systems is part of the fourth Knowledge Hub wave.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:knowledge-hub-fourth-wave-has-c2pa-article",
+      "subject": "ea:publication:c2pa-content-credentials-and-generative-media-provenance",
+      "predicate": "memberOfCollection",
+      "object": "ea:collection:knowledge-hub-fourth-wave",
+      "statement": "C2PA Content Credentials and Generative Media Provenance is part of the fourth Knowledge Hub wave.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:knowledge-hub-fourth-wave-has-webnn-article",
+      "subject": "ea:publication:webnn-and-local-ai-in-the-browser",
+      "predicate": "memberOfCollection",
+      "object": "ea:collection:knowledge-hub-fourth-wave",
+      "statement": "WebNN and Local AI in the Browser is part of the fourth Knowledge Hub wave.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:knowledge-hub-fourth-wave-has-iiif-article",
+      "subject": "ea:publication:iiif-and-compound-cultural-objects",
+      "predicate": "memberOfCollection",
+      "object": "ea:collection:knowledge-hub-fourth-wave",
+      "statement": "IIIF and Compound Cultural Objects is part of the fourth Knowledge Hub wave.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:knowledge-hub-fourth-wave-has-observability-article",
+      "subject": "ea:publication:observability-for-ai-agents-and-tool-calling-systems",
+      "predicate": "memberOfCollection",
+      "object": "ea:collection:knowledge-hub-fourth-wave",
+      "statement": "Observability for AI Agents and Tool-Calling Systems is part of the fourth Knowledge Hub wave.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:vaste-integrates-with-mcp",
+      "subject": "ea:program:vaste",
+      "predicate": "integratesWith",
+      "object": "ea:technology:model-context-protocol",
+      "statement": "VASTE can integrate with MCP as a scoped interface for graph resources, prompts and controlled tools.",
+      "confidence": "observed",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:vaste-integrates-with-opentelemetry",
+      "subject": "ea:program:vaste",
+      "predicate": "integratesWith",
+      "object": "ea:technology:opentelemetry",
+      "statement": "VASTE can integrate with OpenTelemetry to observe graph-runtime events, tool calls and projection behavior.",
+      "confidence": "observed",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:vestiges-integrates-with-iiif",
+      "subject": "ea:project:vestiges",
+      "predicate": "integratesWith",
+      "object": "ea:technology:iiif",
+      "statement": "Vestiges can integrate with IIIF for compound cultural object presentation and annotation-aware viewing.",
+      "confidence": "observed",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:palimpsests-integrates-with-c2pa",
+      "subject": "ea:project:palimpsests",
+      "predicate": "integratesWith",
+      "object": "ea:technology:c2pa",
+      "statement": "Palimpsests can integrate with C2PA to attach signed provenance and production memory to public media derivatives.",
+      "confidence": "observed",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
       "visibility": "public"
     },
     {
@@ -10395,6 +11062,7 @@ window.EA_PUBLIC_CATALOG = {
   ],
   "routes": {
     "ea:collection:knowledge-hub-foundations": "/archive/collections/knowledge-hub-foundations/",
+    "ea:collection:knowledge-hub-fourth-wave": "/archive/collections/knowledge-hub-fourth-wave/",
     "ea:collection:knowledge-hub-second-wave": "/archive/collections/knowledge-hub-second-wave/",
     "ea:collection:knowledge-hub-third-wave": "/archive/collections/knowledge-hub-third-wave/",
     "ea:concept:ai-agent": "/knowledge/concepts/ai-agent/",
@@ -10440,6 +11108,7 @@ window.EA_PUBLIC_CATALOG = {
     "ea:project:vestiges": "/projects/vestiges/",
     "ea:publication:ai-agents-vs-ai-workflows": "/publications/ai-agents-vs-ai-workflows/",
     "ea:publication:algorithmic-composition-and-rule-based-music": "/publications/algorithmic-composition-and-rule-based-music/",
+    "ea:publication:c2pa-content-credentials-and-generative-media-provenance": "/publications/c2pa-content-credentials-and-generative-media-provenance/",
     "ea:publication:contextual-execution-and-graph-runtimes": "/publications/contextual-execution-and-graph-runtimes/",
     "ea:publication:creative-coding-pedagogy-from-logo-to-p5js": "/publications/creative-coding-pedagogy-from-logo-to-p5js/",
     "ea:publication:digital-preservation-and-living-archives": "/publications/digital-preservation-and-living-archives/",
@@ -10450,13 +11119,16 @@ window.EA_PUBLIC_CATALOG = {
     "ea:publication:how-large-language-models-actually-work": "/publications/how-large-language-models-actually-work/",
     "ea:publication:human-computer-interaction-for-creative-tools": "/publications/human-computer-interaction-for-creative-tools/",
     "ea:publication:hypertext-and-augmented-knowledge-systems": "/publications/hypertext-and-augmented-knowledge-systems/",
+    "ea:publication:iiif-and-compound-cultural-objects": "/publications/iiif-and-compound-cultural-objects/",
     "ea:publication:knowledge-graphs-for-cultural-infrastructure": "/publications/knowledge-graphs-for-cultural-infrastructure/",
     "ea:publication:linked-data-and-public-knowledge-pages": "/publications/linked-data-and-public-knowledge-pages/",
     "ea:publication:local-and-open-source-ai-systems": "/publications/local-and-open-source-ai-systems/",
     "ea:publication:metadata-cataloguing-and-cultural-memory": "/publications/metadata-cataloguing-and-cultural-memory/",
     "ea:publication:microservices-modular-monoliths-and-system-boundaries": "/publications/microservices-modular-monoliths-and-system-boundaries/",
+    "ea:publication:model-context-protocol-and-tool-using-ai-systems": "/publications/model-context-protocol-and-tool-using-ai-systems/",
     "ea:publication:motion-design-time-and-interface-semantics": "/publications/motion-design-time-and-interface-semantics/",
     "ea:publication:multimodal-ai-across-text-image-audio-and-video": "/publications/multimodal-ai-across-text-image-audio-and-video/",
+    "ea:publication:observability-for-ai-agents-and-tool-calling-systems": "/publications/observability-for-ai-agents-and-tool-calling-systems/",
     "ea:publication:ontologies-taxonomies-and-knowledge-modeling": "/publications/ontologies-taxonomies-and-knowledge-modeling/",
     "ea:publication:open-source-as-cultural-infrastructure": "/publications/open-source-as-cultural-infrastructure/",
     "ea:publication:personal-knowledge-systems-and-digital-gardens": "/publications/personal-knowledge-systems-and-digital-gardens/",
@@ -10468,13 +11140,18 @@ window.EA_PUBLIC_CATALOG = {
     "ea:publication:systems-thinking-for-creative-practice": "/publications/systems-thinking-for-creative-practice/",
     "ea:publication:typography-reading-systems-and-digital-interfaces": "/publications/typography-reading-systems-and-digital-interfaces/",
     "ea:publication:web-audio-and-browser-based-sound-systems": "/publications/web-audio-and-browser-based-sound-systems/",
+    "ea:publication:webnn-and-local-ai-in-the-browser": "/publications/webnn-and-local-ai-in-the-browser/",
     "ea:publication:why-graphs-are-more-powerful-than-folders": "/publications/why-graphs-are-more-powerful-than-folders/",
     "ea:researchField:runtime-theory": "/research/fields/runtime-theory/",
     "ea:technology:activitypub": "/knowledge/technologies/activitypub/",
+    "ea:technology:c2pa": "/knowledge/technologies/c2pa/",
     "ea:technology:cloudevents": "/knowledge/technologies/cloudevents/",
     "ea:technology:css-fonts": "/knowledge/technologies/css-fonts/",
+    "ea:technology:iiif": "/knowledge/technologies/iiif/",
     "ea:technology:json-ld": "/knowledge/technologies/json-ld/",
     "ea:technology:llama-cpp": "/knowledge/technologies/llama-cpp/",
+    "ea:technology:model-context-protocol": "/knowledge/technologies/model-context-protocol/",
+    "ea:technology:opentelemetry": "/knowledge/technologies/opentelemetry/",
     "ea:technology:owl": "/knowledge/technologies/owl/",
     "ea:technology:rdf": "/knowledge/technologies/rdf/",
     "ea:technology:redis-streams": "/knowledge/technologies/redis-streams/",
@@ -10482,7 +11159,8 @@ window.EA_PUBLIC_CATALOG = {
     "ea:technology:transformer-architecture": "/knowledge/technologies/transformer-architecture/",
     "ea:technology:web-animations": "/knowledge/technologies/web-animations/",
     "ea:technology:web-audio-api": "/knowledge/technologies/web-audio-api/",
-    "ea:technology:webgl": "/knowledge/technologies/webgl/"
+    "ea:technology:webgl": "/knowledge/technologies/webgl/",
+    "ea:technology:webnn": "/knowledge/technologies/webnn/"
   }
 };
 

@@ -28,6 +28,14 @@
       "confidence": "published"
     },
     {
+      "id": "ea:publication:iiif-and-compound-cultural-objects",
+      "type": "publication",
+      "title": "IIIF and Compound Cultural Objects",
+      "route": "/publications/iiif-and-compound-cultural-objects/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
       "id": "ea:publication:metadata-cataloguing-and-cultural-memory",
       "type": "publication",
       "title": "Metadata, Cataloguing and Cultural Memory",
@@ -61,6 +69,15 @@
     }
   ],
   "edges": [
+    {
+      "id": "ear:iiif-article-documents-digital-preservation",
+      "source": "ea:publication:iiif-and-compound-cultural-objects",
+      "target": "ea:concept:digital-preservation",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "IIIF and Compound Cultural Objects connects object presentation structure to digital preservation practice.",
+      "confidence": "published"
+    },
     {
       "id": "ear:palimpsests-applies-digital-preservation",
       "source": "ea:project:palimpsests",

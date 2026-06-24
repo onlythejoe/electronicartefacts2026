@@ -12,6 +12,14 @@
       "confidence": "validated"
     },
     {
+      "id": "ea:publication:c2pa-content-credentials-and-generative-media-provenance",
+      "type": "publication",
+      "title": "C2PA Content Credentials and Generative Media Provenance",
+      "route": "/publications/c2pa-content-credentials-and-generative-media-provenance/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
       "id": "ea:publication:digital-preservation-and-living-archives",
       "type": "publication",
       "title": "Digital Preservation and Living Archives",
@@ -85,6 +93,15 @@
     }
   ],
   "edges": [
+    {
+      "id": "ear:c2pa-article-documents-provenance",
+      "source": "ea:publication:c2pa-content-credentials-and-generative-media-provenance",
+      "target": "ea:concept:provenance",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "C2PA Content Credentials and Generative Media Provenance explains provenance as evidence rather than proof of truth.",
+      "confidence": "published"
+    },
     {
       "id": "ear:knowledge-graphs-article-documents-provenance",
       "source": "ea:publication:knowledge-graphs-for-cultural-infrastructure",

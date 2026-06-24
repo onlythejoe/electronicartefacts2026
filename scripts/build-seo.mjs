@@ -1,6 +1,5 @@
 import { readFile, writeFile } from "node:fs/promises";
 import path from "node:path";
-import vm from "node:vm";
 import { fileURLToPath } from "node:url";
 
 const rootDir = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
@@ -66,7 +65,8 @@ const pages = {
   },
   "search.html": {
     title: "Search | Electronic Artefacts",
-    description: "Search public Electronic Artefacts projects, programs, research and archive records.",
+    description:
+      "Search public Electronic Artefacts projects, programs, research, archive records and connected knowledge pages.",
     robots: "noindex,follow",
   },
   "project.html": {
@@ -95,7 +95,8 @@ const pages = {
   },
   "artefact.html": {
     title: "Artefact | Electronic Artefacts",
-    description: "A public artefact preserved in the Electronic Artefacts archive.",
+    description:
+      "A public artefact preserved in the Electronic Artefacts archive, with provenance, context and connected knowledge-graph references.",
     robots: "noindex,follow",
     dynamic: true,
   },
@@ -107,15 +108,53 @@ const pages = {
   },
   "artist.html": {
     title: "Artist | Electronic Artefacts",
-    description: "Artist profile and connected work within Electronic Artefacts.",
+    description:
+      "Artist profile, connected works, cultural context and archive relationships within the Electronic Artefacts ecosystem.",
     robots: "noindex,follow",
     dynamic: true,
   },
   "channel.html": {
     title: "Channel | Electronic Artefacts",
-    description: "A public channel connected to the Electronic Artefacts ecosystem.",
+    description:
+      "A public channel connected to the Electronic Artefacts ecosystem, including related works, programs and archive references.",
     robots: "noindex,follow",
     dynamic: true,
+  },
+  "services.html": {
+    title: "Services Redirect | Electronic Artefacts",
+    description: "Legacy services address redirecting to the Electronic Artefacts selected work overview.",
+    canonical: "/work.html",
+    robots: "noindex,follow",
+  },
+  "communication.html": {
+    title: "Communication Redirect | Electronic Artefacts",
+    description: "Legacy communication address redirecting to the Electronic Artefacts selected work overview.",
+    canonical: "/work.html",
+    robots: "noindex,follow",
+  },
+  "agence-communication.html": {
+    title: "Agency Communication Redirect | Electronic Artefacts",
+    description: "Legacy communication agency address redirecting to the Electronic Artefacts selected work overview.",
+    canonical: "/work.html",
+    robots: "noindex,follow",
+  },
+  "development.html": {
+    title: "Development Redirect | Electronic Artefacts",
+    description: "Legacy development address redirecting to the Electronic Artefacts research and systems overview.",
+    canonical: "/research.html",
+    robots: "noindex,follow",
+  },
+  "agence-developpement.html": {
+    title: "Development Agency Redirect | Electronic Artefacts",
+    description: "Legacy development agency address redirecting to the Electronic Artefacts research and systems overview.",
+    canonical: "/research.html",
+    robots: "noindex,follow",
+  },
+  "vaste.html": {
+    title: "VASTE Redirect | Electronic Artefacts",
+    description: "Legacy Electronic Artefacts address redirecting visitors to the dedicated VASTE program website.",
+    canonical: "https://www.vaste.space/",
+    robots: "noindex,follow",
   },
 };
 
@@ -127,10 +166,11 @@ const escapeHtml = (value) =>
     .replaceAll(">", "&gt;");
 
 const seoMarkup = (file, config) => {
-  const canonical = config.dynamic ? "" : `${origin}${config.canonical || `/${file}`}`;
+  const canonicalPath = config.dynamic ? `/${file}` : config.canonical || `/${file}`;
+  const canonical = canonicalPath.startsWith("https://") ? canonicalPath : `${origin}${canonicalPath}`;
   const type = config.type || "website";
   const robots = config.robots || "index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1";
-  const canonicalMarkup = canonical ? `\n    <link rel="canonical" href="${canonical}" />` : "";
+  const canonicalMarkup = `\n    <link rel="canonical" href="${canonical}" />`;
   const websiteSchema =
     file === "index.html"
       ? `
@@ -223,50 +263,4 @@ for (const [file, config] of Object.entries(pages)) {
   await writeFile(absolutePath, html);
 }
 
-const context = vm.createContext({ window: {} });
-for (const source of ["assets/js/data/entities.js", "assets/js/data/collections.js"]) {
-  vm.runInContext(await readFile(path.join(rootDir, source), "utf8"), context, { filename: source });
-}
-
-const entities = context.window.EA_ENTITIES || {};
-const collections = context.window.EA_COLLECTIONS || [];
-const isPublic = (item) => !["internal", "restricted"].includes(item?.visibility);
-const urls = new Set([
-  "/",
-  "/work.html",
-  "/projects.html",
-  "/programs.html",
-  "/research.html",
-  "/archive.html",
-  "/about.html",
-  "/contact.html",
-  "/palimpsests.html",
-]);
-const add = (pathname, id) => urls.add(`${pathname}?id=${encodeURIComponent(id)}`);
-
-for (const item of entities.projects || []) {
-  if (!isPublic(item) || item.id === "palimpsests") continue;
-  add("/project.html", item.id);
-}
-for (const item of entities.programs || []) if (isPublic(item)) add("/program.html", item.id);
-for (const item of entities.artists || []) if (isPublic(item)) add("/artist.html", item.id);
-for (const item of entities.channels || []) if (isPublic(item)) add("/channel.html", item.id);
-for (const item of [...(entities.artefacts || []), ...(entities.researchLogs || [])]) {
-  if (isPublic(item)) add("/artefact.html", item.id);
-}
-for (const item of [...(entities.researchFields || []), ...(entities.worldbuilding || [])]) {
-  if (isPublic(item)) add("/entity.html", item.id);
-}
-for (const item of collections) if (isPublic(item)) add("/collection.html", item.id);
-
-const sitemap = `<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-${[...urls]
-  .sort()
-  .map((url) => `  <url><loc>${origin}${url.replaceAll("&", "&amp;")}</loc></url>`)
-  .join("\n")}
-</urlset>
-`;
-await writeFile(path.join(rootDir, "sitemap.xml"), sitemap);
-
-process.stdout.write(`Updated SEO metadata for ${Object.keys(pages).length} pages and generated ${urls.size} sitemap URLs.\n`);
+process.stdout.write(`Updated SEO metadata for ${Object.keys(pages).length} pages.\n`);

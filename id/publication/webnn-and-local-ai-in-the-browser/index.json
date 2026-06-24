@@ -1,0 +1,221 @@
+{
+  "id": "ea:publication:webnn-and-local-ai-in-the-browser",
+  "type": "publication",
+  "slug": {
+    "canonical": "webnn-and-local-ai-in-the-browser"
+  },
+  "title": "WebNN and Local AI in the Browser",
+  "subtitle": "Technical Article",
+  "abstract": "A practical explanation of WebNN, browser-local inference, hardware acceleration, privacy limits, creative tools and web machine-learning architecture.",
+  "description": "Understand WebNN as a browser API for hardware-accelerated neural-network inference and local AI interaction design.",
+  "locale": "en",
+  "visibility": "public",
+  "publicationClass": "published",
+  "status": "active",
+  "maturity": "research",
+  "confidence": "published",
+  "version": {
+    "version": "1.0.0",
+    "createdAt": "2026-06-24",
+    "publishedAt": "2026-06-24",
+    "modifiedAt": "2026-06-24"
+  },
+  "authors": [
+    {
+      "id": "ea:organization:electronic-artefacts"
+    }
+  ],
+  "publisher": "ea:organization:electronic-artefacts",
+  "tags": [
+    "WebNN",
+    "Browser AI",
+    "Local Inference",
+    "Web Machine Learning",
+    "HCI"
+  ],
+  "disciplines": [
+    "Artificial Intelligence",
+    "Web Development",
+    "Human Computer Interaction",
+    "Creative Technology"
+  ],
+  "sources": [
+    {
+      "title": "Web Neural Network API",
+      "url": "https://www.w3.org/TR/webnn/",
+      "publisher": "W3C",
+      "publishedAt": "2026-05-21",
+      "accessedAt": "2026-06-24"
+    },
+    {
+      "title": "Ethical Principles for Web Machine Learning",
+      "url": "https://www.w3.org/TR/webmachinelearning-ethics/",
+      "publisher": "W3C",
+      "accessedAt": "2026-06-24"
+    },
+    {
+      "title": "WebGPU",
+      "url": "https://www.w3.org/TR/webgpu/",
+      "publisher": "W3C",
+      "accessedAt": "2026-06-24"
+    }
+  ],
+  "format": "technicalArticle",
+  "subjects": [
+    {
+      "id": "ea:technology:webnn"
+    },
+    {
+      "id": "ea:concept:open-weight-model"
+    },
+    {
+      "id": "ea:concept:multimodal-ai"
+    },
+    {
+      "id": "ea:concept:human-computer-interaction"
+    },
+    {
+      "id": "ea:concept:generative-ai"
+    }
+  ],
+  "claims": [
+    "Browser-local inference can reduce server dependence and improve interaction privacy, but it remains constrained by device capability, browser support and model size.",
+    "WebNN is most useful when treated as one layer in a broader web AI stack that includes model packaging, permissions, fallbacks and user-visible controls."
+  ],
+  "evidence": [
+    {
+      "id": "ea:technology:webnn"
+    },
+    {
+      "id": "ea:concept:multimodal-ai"
+    }
+  ],
+  "citation": {
+    "preferred": "Electronic Artefacts. \"WebNN and Local AI in the Browser.\" Technical article, version 1.0.0, 2026."
+  },
+  "bodyHtml": "<h2 id=\"problem\">Problem</h2>\n<p>Many AI features send user data to remote inference services even when the task could be local, private or interactive. Browser applications need a way to use local hardware acceleration without tying every feature to one vendor backend.</p>\n<h2 id=\"introduction\">Introduction</h2>\n<p>WebNN, the Web Neural Network API, is a W3C effort to expose neural-network inference acceleration to web applications. It is not a model, not a chatbot and not a complete AI product. It is an API layer that lets web software build and execute neural-network graphs using available platform capabilities.</p>\n<p>The promise is practical. A browser tool could classify images, enhance audio, run segmentation, produce captions or support local generative features without every input leaving the device. For creative tools and archives, that changes the privacy and latency profile of web applications.</p>\n<p>The constraints are equally important. Browser support, model size, memory, operator coverage, permissions and fallback design determine whether WebNN helps a real product. Local inference is not automatically private or fast; it has to be designed.</p>\n<h2 id=\"architecture\">Architecture</h2>\n<p>A WebNN architecture includes model packaging, browser capability detection, a WebNN execution context, selected device backends, input preprocessing, output postprocessing, privacy controls, telemetry and fallback paths. The API supplies an inference surface, while the application still owns model selection, data movement and user trust.</p>\n<h2 id=\"what-webnn-provides\">What WebNN provides</h2>\n<p>WebNN defines an abstraction for neural-network inference in web applications. Instead of each site directly targeting platform-specific ML APIs, a web application can use a web standard that maps to underlying hardware and operating-system capabilities.</p>\n<p>The specification covers contexts, tensors, graph builders, operands and many neural-network operations. It also addresses device selection, security and privacy considerations. The goal is to make inference portable enough for web developers while still benefiting from specialized acceleration.</p>\n<p>This is different from WebGPU. WebGPU exposes lower-level GPU programming for graphics and compute. WebNN exposes a neural-network-oriented abstraction. A web AI stack may use one, both or neither depending on workload and browser support.</p>\n<h2 id=\"local-inference\">Local inference</h2>\n<p>Local inference means model execution happens on the user’s device or controlled local environment. With WebNN, the browser can become a runtime surface for some of that execution.</p>\n<p>The benefit is strongest when inputs are personal, sensory or interactive. A camera frame, audio stream, private note or local archive object may not need to leave the browser. Processing near the interface can reduce latency and preserve user agency.</p>\n<p>The tradeoff is variability. A feature that runs well on one laptop may be slow or unavailable on another device. Applications need capability detection, graceful degradation and transparent controls.</p>\n<h2 id=\"use-cases\">Use cases</h2>\n<p>The WebNN specification lists use cases such as person detection, segmentation, pose estimation, style transfer, image captioning, speech recognition, noise suppression, text generation and fake-video detection. These cover much of the modern multimodal interface surface.</p>\n<p>For Electronic Artefacts, the strongest use cases are not general chat. They are bounded, media-adjacent functions: local tagging of archive images, client-side audio feature extraction, accessible captions, private summarization of public pages and interactive creative controls.</p>\n<p>A creative tool should not require server round trips for every small perception task. If the browser can run a model locally, the interface can feel more like an instrument than a form submission.</p>\n<h2 id=\"privacy-boundaries\">Privacy boundaries</h2>\n<p>Local inference reduces exposure to remote inference providers, but privacy still depends on the whole application. A page can send input elsewhere before or after inference. It can log outputs. It can load remote models. It can store embeddings or telemetry.</p>\n<p>Users need clear signals about where models run and what data is transmitted. A feature labelled “local” should avoid hidden network calls for sensitive inputs. If it uses remote fallback, that fallback should be explicit.</p>\n<p>Browser permission models matter too. Camera, microphone, file and storage access should be scoped to visible user action. Model execution should not become a way to infer sensitive information without consent.</p>\n<h2 id=\"performance\">Performance</h2>\n<p>The performance of browser-local AI depends on model size, operation support, acceleration backend, memory layout, device thermal limits and workload frequency. A single benchmark rarely captures the user experience.</p>\n<p>Interactive tools care about latency. Batch archive tools may care about throughput. Accessibility features may require consistent frame-level performance. Mobile devices add battery and heat constraints.</p>\n<p>A robust application should measure and adapt. It can choose smaller models, lower input resolution, batch work, pause processing when the tab is hidden or let users opt into higher-quality modes.</p>\n<h2 id=\"model-packaging\">Model packaging</h2>\n<p>WebNN does not eliminate the need to package and deliver models. A web application still needs model files, metadata, versioning, caching and compatibility information.</p>\n<p>Large model downloads can be impractical. Smaller specialized models may be more appropriate than general models. The model source and license should be documented, especially for public cultural tools.</p>\n<p>If a model processes archive material, preserve the model identifier and version in the record. Future readers should know which model helped produce a tag, caption or transformation.</p>\n<h2 id=\"hci-implications\">HCI implications</h2>\n<p>Browser-local AI changes interaction design. Users can get immediate feedback while editing, browsing, drawing, listening or annotating. The model becomes part of the interface loop.</p>\n<p>That immediacy should not hide uncertainty. Interfaces should expose confidence, allow correction and avoid presenting model output as authoritative when it is only a suggestion. A segmentation mask, audio label or generated caption should be editable.</p>\n<p>For creative systems, latency and reversibility shape trust. A model that responds instantly but cannot be corrected becomes annoying. A model that makes uncertainty legible can become a useful collaborator.</p>\n<h2 id=\"archive-interfaces\">Archive interfaces</h2>\n<p>Archives often contain sensitive or unpublished material. Browser-local inference can let a researcher run assistance over local files without uploading them to a server. This is valuable for field recordings, private photographs, manuscripts and production notes.</p>\n<p>Still, browser storage and caching must be handled carefully. A local browser feature can leave traces on a shared machine. The application should offer clear session boundaries and deletion controls.</p>\n<p>For Vestiges, a WebNN-enabled viewer could classify images or suggest metadata while preserving human review. For Palimpsests, it could assist with audio-visual annotation without exposing private source media.</p>\n<h2 id=\"webnn-and-vaste\">WebNN and VASTE</h2>\n<p>VASTE could treat WebNN as a client-side execution surface. The graph runtime would decide which entity and task are in scope. The browser would run bounded inference. The result would return as a proposal, not as silent truth.</p>\n<p>For example, a user viewing an artefact could ask for local image tags. The model runs in the browser. The proposed tags are reviewed and then submitted as graph relations only if accepted.</p>\n<p>This keeps inference close to the interface while preserving graph governance.</p>\n<h2 id=\"implementation\">Implementation</h2>\n<p>Start with a small, bounded task: image classification, audio feature extraction or local caption suggestion. Detect WebNN support, provide a CPU or server fallback only with clear disclosure, and measure latency on representative devices.</p>\n<p>Pin model versions. Record model identifiers in generated metadata. Keep network behavior visible. Treat outputs as suggestions until reviewed.</p>\n<h2 id=\"evidence\">Evidence</h2>\n<p>The W3C WebNN specification defines a low-level API for neural-network inference hardware acceleration and lists application use cases across vision, audio, language and generative media. W3C Web Machine Learning ethics guidance emphasizes privacy, transparency, control and user benefit.</p>\n<h2 id=\"electronic-artefacts-implications\">Electronic Artefacts implications</h2>\n<p>WebNN is a strong fit for Electronic Artefacts because the studio works across web interfaces, AI, archives and creative tools. It offers a route toward local, interactive machine perception without turning every interface into a remote API client.</p>\n<p>The design principle is bounded local assistance: small models, clear tasks, visible permissions and graph-backed review.</p>\n<h2 id=\"limitations\">Limitations</h2>\n<p>WebNN is still dependent on browser implementation and hardware support. Applications should avoid promising universal local AI behavior until capability detection, fallback and testing are mature.</p>\n<h2 id=\"related-concepts\">Related concepts</h2>\n<p>Read <a href=\"/knowledge/concepts/multimodal-ai/\">Multimodal AI</a>, <a href=\"/knowledge/concepts/human-computer-interaction/\">Human Computer Interaction</a>, <a href=\"/knowledge/concepts/open-weight-model/\">Open-Weight Model</a> and <a href=\"/knowledge/concepts/generative-ai/\">Generative AI</a>.</p>\n<h2 id=\"related-technology\">Related technology</h2>\n<p>See <a href=\"/knowledge/technologies/webnn/\">WebNN</a> and <a href=\"/knowledge/technologies/webgl/\">WebGL</a>.</p>\n<h2 id=\"glossary\">Glossary</h2>\n<p>Inference: running a trained model to produce outputs from inputs.</p>\n<p>Tensor: a structured numerical array used by machine-learning operations.</p>\n<p>Backend: the platform layer that executes model operations on hardware.</p>\n<p>Fallback: an alternate execution path used when a feature is unavailable.</p>\n<p>Capability detection: runtime checks for browser and hardware support.</p>\n<h2 id=\"references\">References</h2>\n<ul>\n<li>W3C. Web Neural Network API. 2026.</li>\n<li>W3C. Ethical Principles for Web Machine Learning.</li>\n<li>W3C. WebGPU.</li>\n</ul>\n",
+  "headings": [
+    "Problem",
+    "Introduction",
+    "Architecture",
+    "What WebNN provides",
+    "Local inference",
+    "Use cases",
+    "Privacy boundaries",
+    "Performance",
+    "Model packaging",
+    "HCI implications",
+    "Archive interfaces",
+    "WebNN and VASTE",
+    "Implementation",
+    "Evidence",
+    "Electronic Artefacts implications",
+    "Limitations",
+    "Related concepts",
+    "Related technology",
+    "Glossary",
+    "References"
+  ],
+  "headingItems": [
+    {
+      "level": 2,
+      "title": "Problem",
+      "id": "problem"
+    },
+    {
+      "level": 2,
+      "title": "Introduction",
+      "id": "introduction"
+    },
+    {
+      "level": 2,
+      "title": "Architecture",
+      "id": "architecture"
+    },
+    {
+      "level": 2,
+      "title": "What WebNN provides",
+      "id": "what-webnn-provides"
+    },
+    {
+      "level": 2,
+      "title": "Local inference",
+      "id": "local-inference"
+    },
+    {
+      "level": 2,
+      "title": "Use cases",
+      "id": "use-cases"
+    },
+    {
+      "level": 2,
+      "title": "Privacy boundaries",
+      "id": "privacy-boundaries"
+    },
+    {
+      "level": 2,
+      "title": "Performance",
+      "id": "performance"
+    },
+    {
+      "level": 2,
+      "title": "Model packaging",
+      "id": "model-packaging"
+    },
+    {
+      "level": 2,
+      "title": "HCI implications",
+      "id": "hci-implications"
+    },
+    {
+      "level": 2,
+      "title": "Archive interfaces",
+      "id": "archive-interfaces"
+    },
+    {
+      "level": 2,
+      "title": "WebNN and VASTE",
+      "id": "webnn-and-vaste"
+    },
+    {
+      "level": 2,
+      "title": "Implementation",
+      "id": "implementation"
+    },
+    {
+      "level": 2,
+      "title": "Evidence",
+      "id": "evidence"
+    },
+    {
+      "level": 2,
+      "title": "Electronic Artefacts implications",
+      "id": "electronic-artefacts-implications"
+    },
+    {
+      "level": 2,
+      "title": "Limitations",
+      "id": "limitations"
+    },
+    {
+      "level": 2,
+      "title": "Related concepts",
+      "id": "related-concepts"
+    },
+    {
+      "level": 2,
+      "title": "Related technology",
+      "id": "related-technology"
+    },
+    {
+      "level": 2,
+      "title": "Glossary",
+      "id": "glossary"
+    },
+    {
+      "level": 2,
+      "title": "References",
+      "id": "references"
+    }
+  ]
+}
