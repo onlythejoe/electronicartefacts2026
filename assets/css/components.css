@@ -161,7 +161,7 @@
   box-shadow:
     0 1.2rem 3.5rem rgba(0, 0, 0, 0.54),
     inset 0 1px 0 rgba(255, 255, 255, 0.16);
-  overflow: hidden;
+  overflow: visible;
   transform-origin: 90% -0.35rem;
   animation: language-menu-in 180ms cubic-bezier(0.2, 0.78, 0.18, 1) both;
   backdrop-filter: blur(26px) saturate(165%);
