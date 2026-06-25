@@ -83,10 +83,11 @@ const pages = {
       "Contact Electronic Artefacts about digital products, knowledge systems, cultural platforms and creative technology.",
   },
   "palimpsests.html": {
-    title: "Palimpsests by ORETH | Electronic Artefacts",
+    title: "Palimpsests Redirect | Electronic Artefacts",
     description:
-      "Explore Palimpsests, a conceptual album by ORETH structured in five acts around memory, inheritance and transmission.",
-    type: "article",
+      "Legacy Palimpsests address redirecting to the canonical Electronic Artefacts project record.",
+    canonical: "/projects/palimpsests/",
+    robots: "noindex,follow",
   },
   "mentions-legales.html": {
     title: "Legal Notice | Electronic Artefacts",
