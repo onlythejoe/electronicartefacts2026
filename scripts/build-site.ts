@@ -14,6 +14,7 @@ import { buildSitemap } from "../src/seo/sitemaps.js";
 import { buildHumansTxt, buildSecurityTxt } from "../src/seo/trust-files.js";
 import { jsonLdFor, organizationNode, websiteNode } from "../src/semantic/jsonld.js";
 import { identifierPath, routeForEntity } from "../src/config/routes.js";
+import { defaultLocale, localeConfig } from "../src/config/i18n.js";
 import { renderLayout } from "../src/templates/layout.js";
 import { renderEntityPage } from "../src/templates/entity-page.js";
 import { renderIdentifierPage } from "../src/templates/identifier-page.js";
@@ -75,6 +76,12 @@ const hubMetadata = (title: string, description: string, route: string) => ({
   title: `${title} | Electronic Artefacts`,
   description,
   canonicalUrl: `https://electronicartefacts.com${route}`,
+  language: defaultLocale,
+  locale: localeConfig(defaultLocale).ogLocale,
+  alternates: [
+    { hreflang: defaultLocale, href: `https://electronicartefacts.com${route}` },
+    { hreflang: "x-default", href: `https://electronicartefacts.com${route}` },
+  ],
   robots: "index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1",
   image: "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-search.jpg",
   imageAlt: "Electronic Artefacts knowledge platform",
@@ -220,7 +227,7 @@ ${hubCards(items).trimStart()}
         url,
         name: title,
         description,
-        inLanguage: "en",
+        inLanguage: defaultLocale,
         isPartOf: { "@id": "https://electronicartefacts.com/#website" },
         publisher: { "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/" },
         mainEntity: { "@id": itemListId },
@@ -278,7 +285,7 @@ await writeText(routeToFile(rootDir, "/search/"), renderLayout({
         url: "https://electronicartefacts.com/search/",
         name: "Electronic Artefacts Search",
         description: "Search the public Electronic Artefacts knowledge graph across concepts, projects, programs, publications and research fields.",
-        inLanguage: "en",
+        inLanguage: defaultLocale,
         isPartOf: { "@id": "https://electronicartefacts.com/#website" },
         publisher: { "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/" },
       },

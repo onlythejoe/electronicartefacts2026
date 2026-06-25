@@ -4,7 +4,7 @@ import type { SearchDocument } from "./documents.js";
 export const buildSearchIndex = (documents: SearchDocument[]) => {
   const miniSearch = new MiniSearch<SearchDocument>({
     fields: ["title", "alternateNames", "definition", "abstract", "headings", "questions", "tags", "relationLabels", "body"],
-    storeFields: ["id", "route", "type", "format", "title", "definition", "abstract", "status", "confidence", "modifiedAt"],
+    storeFields: ["id", "locale", "route", "type", "format", "title", "definition", "abstract", "status", "confidence", "modifiedAt"],
     searchOptions: {
       boost: {
         title: 12,

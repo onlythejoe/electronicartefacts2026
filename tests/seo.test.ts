@@ -19,6 +19,8 @@ test("generates canonical metadata and JSON-LD", async () => {
   for (const entity of entities) {
     const metadata = metadataFor(entity);
     assert.ok(metadata.canonicalUrl.startsWith("https://electronicartefacts.com/"));
+    assert.equal(metadata.language, entity.locale);
+    assert.ok(metadata.alternates?.some((alternate) => alternate.hreflang === entity.locale));
     assert.match(metadata.robots, /^index,follow/);
     const jsonLd = jsonLdFor(entity);
     assert.equal(jsonLd["@context"], "https://schema.org");
@@ -85,8 +87,10 @@ test("sitemap excludes noindex generated search route", async () => {
   const sitemap = buildSitemap(entities);
 
   assert.doesNotMatch(sitemap, /https:\/\/electronicartefacts\.com\/search\//);
+  assert.match(sitemap, /xmlns:xhtml="http:\/\/www\.w3\.org\/1999\/xhtml"/);
+  assert.match(sitemap, /<xhtml:link rel="alternate" hreflang="en" href="https:\/\/electronicartefacts\.com\/" \/>/);
   assert.match(sitemap, /xmlns:image="http:\/\/www\.google\.com\/schemas\/sitemap-image\/1\.1"/);
-  assert.match(sitemap, /<loc>https:\/\/electronicartefacts\.com\/<\/loc><lastmod>2026-06-25<\/lastmod>/);
+  assert.match(sitemap, /<loc>https:\/\/electronicartefacts\.com\/<\/loc>.*<lastmod>2026-06-25<\/lastmod>/);
   assert.match(sitemap, /<image:loc>https:\/\/electronicartefacts\.com\/assets\/media\/projects\/electronic-artefacts\/electronic-artefacts-search\.jpg<\/image:loc>/);
 });
 

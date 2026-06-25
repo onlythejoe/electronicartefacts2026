@@ -5,6 +5,7 @@ import { isPublicEntity, publicEntityIds, publicRelationsForEntity } from "../se
 
 export interface SearchDocument {
   id: Entity["id"];
+  locale: Entity["locale"];
   route: string;
   type: Entity["type"];
   format?: PublicationEntity["format"];
@@ -39,6 +40,7 @@ export const buildSearchDocuments = (
       const connected = publicRelationsForEntity(entity, relations, publicIds);
       return {
         id: entity.id,
+        locale: entity.locale,
         route: routeById[entity.id],
         type: entity.type,
         format: entity.type === "publication" ? entity.format : undefined,

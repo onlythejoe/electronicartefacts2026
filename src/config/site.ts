@@ -1,10 +1,12 @@
+import { defaultLocale, localeConfig } from "./i18n.js";
+
 export const site = {
   name: "Electronic Artefacts",
   origin: "https://electronicartefacts.com",
   description: "Electronic Artefacts designs digital products, knowledge systems, cultural platforms and research-led experiences.",
   updatedAt: "2026-06-25",
-  locale: "en_US",
-  language: "en",
+  locale: localeConfig(defaultLocale).ogLocale,
+  language: defaultLocale,
   publisherId: "ea:organization:electronic-artefacts",
   socialImage: "/assets/media/projects/electronic-artefacts/electronic-artefacts-search.jpg",
   logoImage: "/assets/media/projects/electronic-artefacts/electronic-artefacts-logo.jpg",

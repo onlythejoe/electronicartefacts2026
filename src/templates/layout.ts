@@ -13,7 +13,7 @@ interface LayoutInput {
 }
 
 export const renderLayout = ({ metadata, body, header, footer, jsonLd, pageClass = "generated", entryId }: LayoutInput): string => `<!doctype html>
-<html lang="${site.language}">
+<html lang="${metadata.language || site.language}">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -24,8 +24,10 @@ export const renderLayout = ({ metadata, body, header, footer, jsonLd, pageClass
     ${metadata.keywords.length ? `<meta name="keywords" content="${escapeHtml(metadata.keywords.join(", "))}" />` : ""}
     <meta name="theme-color" content="#000000" />
     <link rel="canonical" href="${escapeHtml(metadata.canonicalUrl)}" />
-    <link rel="alternate" hreflang="${site.language}" href="${escapeHtml(metadata.canonicalUrl)}" />
-    <link rel="alternate" hreflang="x-default" href="${escapeHtml(metadata.canonicalUrl)}" />
+    ${(metadata.alternates || [
+      { hreflang: metadata.language || site.language, href: metadata.canonicalUrl },
+      { hreflang: "x-default", href: metadata.canonicalUrl },
+    ]).map((alternate) => `<link rel="alternate" hreflang="${escapeHtml(alternate.hreflang)}" href="${escapeHtml(alternate.href)}" />`).join("\n    ")}
     ${metadata.jsonLdUrl ? `<link rel="alternate" type="application/ld+json" href="${escapeHtml(metadata.jsonLdUrl)}" />` : ""}
     <link rel="alternate" type="application/ld+json" href="/graph/catalog.jsonld" title="Public knowledge graph catalog" />
     <link rel="alternate" type="text/plain" href="/llms.txt" title="LLM-readable site index" />
@@ -37,7 +39,7 @@ export const renderLayout = ({ metadata, body, header, footer, jsonLd, pageClass
     <meta property="og:description" content="${escapeHtml(metadata.description)}" />
     <meta property="og:type" content="${escapeHtml(metadata.ogType)}" />
     <meta property="og:site_name" content="${site.name}" />
-    <meta property="og:locale" content="${site.locale}" />
+    <meta property="og:locale" content="${escapeHtml(metadata.locale || site.locale)}" />
     <meta property="og:url" content="${escapeHtml(metadata.canonicalUrl)}" />
     <meta property="og:image" content="${escapeHtml(metadata.image)}" />
     <meta property="og:image:secure_url" content="${escapeHtml(metadata.image)}" />

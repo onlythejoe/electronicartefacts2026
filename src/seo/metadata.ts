@@ -1,13 +1,18 @@
 import { site } from "../config/site.js";
 import { identifierPath, routeForEntity } from "../config/routes.js";
+import { defaultLocale, localeConfig } from "../config/i18n.js";
 import { isIndexableEntity } from "../build/build-catalog.js";
 import type { Entity } from "../schema/entities.js";
+import type { Locale } from "../schema/entity.js";
 
 export interface PageMetadata {
   title: string;
   description: string;
   canonicalUrl: string;
   jsonLdUrl?: string;
+  language?: Locale;
+  locale?: string;
+  alternates?: Array<{ hreflang: string; href: string }>;
   robots: string;
   image: string;
   imageAlt: string;
@@ -78,11 +83,20 @@ const keywordsFor = (entity: Entity): string[] =>
 
 export const metadataFor = (entity: Entity): PageMetadata => {
   const image = entity.media?.find((item) => item.type === "image");
+  const language = entity.locale || defaultLocale;
+  const route = routeForEntity(entity, language);
+  const canonicalUrl = `${site.origin}${route}`;
   return {
     title: titleFor(entity),
     description: descriptionFor(entity),
-    canonicalUrl: `${site.origin}${routeForEntity(entity)}`,
+    canonicalUrl,
     jsonLdUrl: `${site.origin}${identifierPath(entity)}index.jsonld`,
+    language,
+    locale: localeConfig(language).ogLocale,
+    alternates: [
+      { hreflang: language, href: canonicalUrl },
+      ...(language === defaultLocale ? [{ hreflang: "x-default", href: canonicalUrl }] : []),
+    ],
     robots: isIndexableEntity(entity)
       ? "index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1"
       : "noindex,follow",

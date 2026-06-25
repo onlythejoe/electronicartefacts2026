@@ -13,7 +13,7 @@ const identifierDescription = (entity: Entity): string =>
   `Persistent identifier route for ${entity.title}, linking to the canonical Electronic Artefacts record.`;
 
 export const renderIdentifierPage = ({ entity, metadata, route }: IdentifierPageInput): string => `<!doctype html>
-<html lang="${site.language}">
+<html lang="${metadata.language || site.language}">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />

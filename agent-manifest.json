@@ -87,6 +87,7 @@
   "records": [
     {
       "id": "ea:organization:electronic-artefacts",
+      "locale": "en",
       "type": "organization",
       "title": "Electronic Artefacts",
       "summary": "Electronic Artefacts connects research, software, design, cultural production and archival practice through a shared graph of projects, programs and knowledge.",
@@ -109,6 +110,7 @@
     },
     {
       "id": "ea:program:oreth",
+      "locale": "en",
       "type": "program",
       "title": "ORETH",
       "summary": "A public program record for ORETH as both an audio research system and the technical-cultural layer connected to Palimpsests.",
@@ -137,6 +139,7 @@
     },
     {
       "id": "ea:program:vaste",
+      "locale": "en",
       "type": "program",
       "title": "VASTE",
       "summary": "VASTE connects Runtime Theory to implemented graph systems and can be evaluated through scoped repository access, technical pilots, implementation work and licensing conversations.",
@@ -163,6 +166,7 @@
     },
     {
       "id": "ea:project:palimpsests",
+      "locale": "en",
       "type": "project",
       "title": "Palimpsests",
       "summary": "A canonical project record for Palimpsests as a compound audio, visual and research publication within Electronic Artefacts.",
@@ -190,6 +194,7 @@
     },
     {
       "id": "ea:project:vestiges",
+      "locale": "en",
       "type": "project",
       "title": "Vestiges",
       "summary": "A knowledge-first product where provenance, contribution, discovery and professional services grow from one historized graph.",
@@ -215,6 +220,7 @@
     },
     {
       "id": "ea:researchField:runtime-theory",
+      "locale": "en",
       "type": "researchField",
       "title": "Runtime Theory",
       "summary": "An active Electronic Artefacts research field connecting early VOID experiments, VASTE and the definition of graph runtime.",
@@ -240,6 +246,7 @@
     },
     {
       "id": "ea:publication:ai-agents-vs-ai-workflows",
+      "locale": "en",
       "type": "publication",
       "title": "AI Agents vs AI Workflows",
       "summary": "Understand the difference between AI agents and AI workflows, when to use each architecture, and how to design reliable hybrid systems.",
@@ -266,6 +273,7 @@
     },
     {
       "id": "ea:publication:ai-search-structured-content-and-knowledge-graph-seo",
+      "locale": "en",
       "type": "publication",
       "title": "AI Search, Structured Content and Knowledge Graph SEO",
       "summary": "Understand how AI search changes SEO strategy through helpful content, structured data, crawlable pages, entity identity and knowledge graph architecture.",
@@ -292,6 +300,7 @@
     },
     {
       "id": "ea:publication:algorithmic-composition-and-rule-based-music",
+      "locale": "en",
       "type": "publication",
       "title": "Algorithmic Composition and Rule-Based Music",
       "summary": "A technical article on algorithmic composition, rule-based music, generative sound, cybernetics and Electronic Artefacts audio research.",
@@ -316,6 +325,7 @@
     },
     {
       "id": "ea:publication:c2pa-content-credentials-and-generative-media-provenance",
+      "locale": "en",
       "type": "publication",
       "title": "C2PA Content Credentials and Generative Media Provenance",
       "summary": "Understand C2PA and Content Credentials for media provenance, generative AI labelling, archive trust and cultural production workflows.",
@@ -341,6 +351,7 @@
     },
     {
       "id": "ea:publication:contextual-execution-and-graph-runtimes",
+      "locale": "en",
       "type": "publication",
       "title": "Contextual Execution and Graph Runtimes",
       "summary": "A technical article connecting contextual execution, graph runtime, Runtime Theory and VASTE.",
@@ -366,6 +377,7 @@
     },
     {
       "id": "ea:publication:creative-coding-pedagogy-from-logo-to-p5js",
+      "locale": "en",
       "type": "publication",
       "title": "Creative Coding Pedagogy from Logo to p5.js",
       "summary": "A technical article on teaching creative coding, Processing, p5.js, computational media, open source and Electronic Artefacts learning culture.",
@@ -390,6 +402,7 @@
     },
     {
       "id": "ea:publication:digital-preservation-and-living-archives",
+      "locale": "en",
       "type": "publication",
       "title": "Digital Preservation and Living Archives",
       "summary": "A technical article on digital preservation, living archives, file formats, provenance and Electronic Artefacts cultural records.",
@@ -416,6 +429,7 @@
     },
     {
       "id": "ea:publication:event-driven-architecture-and-event-streams",
+      "locale": "en",
       "type": "publication",
       "title": "Event-Driven Architecture and Event Streams",
       "summary": "Learn event-driven architecture through event streams, delivery guarantees, schema evolution, idempotency, projections and runtime design.",
@@ -442,6 +456,7 @@
     },
     {
       "id": "ea:publication:foundational-lineage-001",
+      "locale": "en",
       "type": "publication",
       "title": "Foundational Lineage #001",
       "summary": "A concise record of the foundational research lineage connecting information architecture, taxonomy, runtime systems and public knowledge structures.",
@@ -463,6 +478,7 @@
     },
     {
       "id": "ea:publication:generative-ai-latent-space-and-creative-workflows",
+      "locale": "en",
       "type": "publication",
       "title": "Generative AI, Latent Space and Creative Workflows",
       "summary": "A technical article on generative AI, latent space, creative workflows, provenance, augmented intelligence and responsible production.",
@@ -488,6 +504,7 @@
     },
     {
       "id": "ea:publication:generative-systems-cybernetics-and-creative-coding",
+      "locale": "en",
       "type": "publication",
       "title": "Generative Systems, Cybernetics and Creative Coding",
       "summary": "A technical article on generative systems, cybernetic feedback, creative coding, algorithmic composition and Electronic Artefacts projects.",
@@ -512,6 +529,7 @@
     },
     {
       "id": "ea:publication:how-large-language-models-actually-work",
+      "locale": "en",
       "type": "publication",
       "title": "How Large Language Models Actually Work",
       "summary": "Learn how LLMs work, from tokenization and training to attention, context windows, decoding, hallucinations, tools and evaluation.",
@@ -538,6 +556,7 @@
     },
     {
       "id": "ea:publication:human-computer-interaction-for-creative-tools",
+      "locale": "en",
       "type": "publication",
       "title": "Human Computer Interaction for Creative Tools",
       "summary": "A technical article on HCI, creative tools, interface design, augmented intelligence, accessibility and Electronic Artefacts systems.",
@@ -563,6 +582,7 @@
     },
     {
       "id": "ea:publication:hypertext-and-augmented-knowledge-systems",
+      "locale": "en",
       "type": "publication",
       "title": "Hypertext and Augmented Knowledge Systems",
       "summary": "A technical article on hypertext, augmented intelligence, linked pages, knowledge graphs and Electronic Artefacts knowledge publishing.",
@@ -588,6 +608,7 @@
     },
     {
       "id": "ea:publication:iiif-and-compound-cultural-objects",
+      "locale": "en",
       "type": "publication",
       "title": "IIIF and Compound Cultural Objects",
       "summary": "Understand IIIF as presentation infrastructure for compound cultural objects, archives, manifests, canvases and annotations.",
@@ -614,6 +635,7 @@
     },
     {
       "id": "ea:publication:knowledge-graphs-for-cultural-infrastructure",
+      "locale": "en",
       "type": "publication",
       "title": "Knowledge Graphs for Cultural Infrastructure",
       "summary": "A technical article on knowledge graphs, cultural heritage, provenance and public knowledge pages, connected to Vestiges and the Electronic Artefacts graph.",
@@ -640,6 +662,7 @@
     },
     {
       "id": "ea:publication:linked-data-and-public-knowledge-pages",
+      "locale": "en",
       "type": "publication",
       "title": "Linked Data and Public Knowledge Pages",
       "summary": "A technical article on Linked Data, JSON-LD, canonical URLs, identifiers and SEO for static knowledge platforms.",
@@ -664,6 +687,7 @@
     },
     {
       "id": "ea:publication:local-and-open-source-ai-systems",
+      "locale": "en",
       "type": "publication",
       "title": "Local and Open Source AI Systems",
       "summary": "Understand local AI and open-source AI systems, including model weights, quantization, llama.cpp, privacy, hardware and licensing.",
@@ -690,6 +714,7 @@
     },
     {
       "id": "ea:publication:metadata-cataloguing-and-cultural-memory",
+      "locale": "en",
       "type": "publication",
       "title": "Metadata, Cataloguing and Cultural Memory",
       "summary": "A technical article on metadata, cataloguing, cultural memory, preservation standards and Electronic Artefacts graph records.",
@@ -714,6 +739,7 @@
     },
     {
       "id": "ea:publication:microservices-modular-monoliths-and-system-boundaries",
+      "locale": "en",
       "type": "publication",
       "title": "Microservices, Modular Monoliths and System Boundaries",
       "summary": "Learn when microservices make sense, why modular monoliths are often the better starting point, and how to define durable system boundaries.",
@@ -739,6 +765,7 @@
     },
     {
       "id": "ea:publication:model-context-protocol-and-tool-using-ai-systems",
+      "locale": "en",
       "type": "publication",
       "title": "Model Context Protocol and Tool-Using AI Systems",
       "summary": "Understand Model Context Protocol through hosts, clients, servers, resources, prompts, tools, security boundaries and contextual execution.",
@@ -764,6 +791,7 @@
     },
     {
       "id": "ea:publication:motion-design-time-and-interface-semantics",
+      "locale": "en",
       "type": "publication",
       "title": "Motion Design, Time and Interface Semantics",
       "summary": "A technical article on motion design, web animation, interface state, accessibility and temporal visual systems.",
@@ -788,6 +816,7 @@
     },
     {
       "id": "ea:publication:multimodal-ai-across-text-image-audio-and-video",
+      "locale": "en",
       "type": "publication",
       "title": "Multimodal AI Across Text, Image, Audio and Video",
       "summary": "Learn how multimodal AI connects text, images, audio and video, and how to evaluate cross-modal systems for creative and cultural use.",
@@ -814,6 +843,7 @@
     },
     {
       "id": "ea:publication:observability-for-ai-agents-and-tool-calling-systems",
+      "locale": "en",
       "type": "publication",
       "title": "Observability for AI Agents and Tool-Calling Systems",
       "summary": "Understand observability for AI agents and tool-calling systems through traces, metrics, logs, audit events and OpenTelemetry.",
@@ -840,6 +870,7 @@
     },
     {
       "id": "ea:publication:ontologies-taxonomies-and-knowledge-modeling",
+      "locale": "en",
       "type": "publication",
       "title": "Ontologies, Taxonomies and Knowledge Modeling",
       "summary": "Understand the differences between taxonomies and ontologies and learn how to design a durable knowledge model without overengineering.",
@@ -866,6 +897,7 @@
     },
     {
       "id": "ea:publication:open-source-as-cultural-infrastructure",
+      "locale": "en",
       "type": "publication",
       "title": "Open Source as Cultural Infrastructure",
       "summary": "A technical article on open source software, maintainership, creative coding, infrastructure and Electronic Artefacts knowledge culture.",
@@ -889,6 +921,7 @@
     },
     {
       "id": "ea:publication:personal-knowledge-systems-and-digital-gardens",
+      "locale": "en",
       "type": "publication",
       "title": "Personal Knowledge Systems and Digital Gardens",
       "summary": "A technical article on personal knowledge systems, digital gardens, backlinks, research memory and public knowledge hubs.",
@@ -913,6 +946,7 @@
     },
     {
       "id": "ea:publication:procedural-graphics-shaders-and-visual-systems",
+      "locale": "en",
       "type": "publication",
       "title": "Procedural Graphics, Shaders and Visual Systems",
       "summary": "A technical article on procedural graphics, shaders, WebGL, creative coding and generative visual systems.",
@@ -938,6 +972,7 @@
     },
     {
       "id": "ea:publication:prompt-injection-and-trust-boundaries-in-ai-knowledge-systems",
+      "locale": "en",
       "type": "publication",
       "title": "Prompt Injection and Trust Boundaries in AI Knowledge Systems",
       "summary": "Understand prompt injection in AI knowledge systems through retrieval, agents, MCP tools, permissions, untrusted content and contextual execution.",
@@ -964,6 +999,7 @@
     },
     {
       "id": "ea:publication:redis-streams-for-orchestration",
+      "locale": "en",
       "type": "publication",
       "title": "Redis Streams for Orchestration",
       "summary": "Learn how Redis Streams works and how to use consumer groups, pending entries and idempotent workers for reliable orchestration.",
@@ -990,6 +1026,7 @@
     },
     {
       "id": "ea:publication:responsible-ai-governance-for-creative-and-cultural-systems",
+      "locale": "en",
       "type": "publication",
       "title": "Responsible AI Governance for Creative and Cultural Systems",
       "summary": "Learn how responsible AI governance applies to creative technology, cultural infrastructure, archives, generative media and AI-assisted knowledge workflows.",
@@ -1015,6 +1052,7 @@
     },
     {
       "id": "ea:publication:retrieval-augmented-generation-and-knowledge-systems",
+      "locale": "en",
       "type": "publication",
       "title": "Retrieval-Augmented Generation and Knowledge Systems",
       "summary": "Learn how retrieval-augmented generation works and how to build source-grounded RAG systems with metadata, knowledge graphs and evaluation.",
@@ -1041,6 +1079,7 @@
     },
     {
       "id": "ea:publication:runtime-engines-and-domain-operating-systems",
+      "locale": "en",
       "type": "publication",
       "title": "Runtime Engines and Domain Operating Systems",
       "summary": "Understand runtime engines and domain operating systems, and how shared entities, permissions and events can support many applications.",
@@ -1067,6 +1106,7 @@
     },
     {
       "id": "ea:publication:signal-archaeology-audio-memory-and-machine-listening",
+      "locale": "en",
       "type": "publication",
       "title": "Signal Archaeology, Audio Memory and Machine Listening",
       "summary": "A technical article on signal archaeology, audio memory, machine listening, ORETH and Palimpsests.",
@@ -1094,6 +1134,7 @@
     },
     {
       "id": "ea:publication:systems-thinking-for-creative-practice",
+      "locale": "en",
       "type": "publication",
       "title": "Systems Thinking for Creative Practice",
       "summary": "Learn systems thinking through creative practice, software, studios and cultural projects, with practical mapping and intervention methods.",
@@ -1119,6 +1160,7 @@
     },
     {
       "id": "ea:publication:typography-reading-systems-and-digital-interfaces",
+      "locale": "en",
       "type": "publication",
       "title": "Typography, Reading Systems and Digital Interfaces",
       "summary": "A technical article on typography, reading systems, web interfaces, accessibility and Electronic Artefacts editorial design.",
@@ -1143,6 +1185,7 @@
     },
     {
       "id": "ea:publication:verifiable-credentials-for-cultural-archives-and-creator-identity",
+      "locale": "en",
       "type": "publication",
       "title": "Verifiable Credentials for Cultural Archives and Creator Identity",
       "summary": "Understand how verifiable credentials can support creator identity, archive provenance, rights workflows and trusted claims in cultural knowledge systems.",
@@ -1168,6 +1211,7 @@
     },
     {
       "id": "ea:publication:web-audio-and-browser-based-sound-systems",
+      "locale": "en",
       "type": "publication",
       "title": "Web Audio and Browser-Based Sound Systems",
       "summary": "A technical article on Web Audio, audio graphs, browser sound, ORETH, machine listening and interactive media.",
@@ -1193,6 +1237,7 @@
     },
     {
       "id": "ea:publication:webnn-and-local-ai-in-the-browser",
+      "locale": "en",
       "type": "publication",
       "title": "WebNN and Local AI in the Browser",
       "summary": "Understand WebNN as a browser API for hardware-accelerated neural-network inference and local AI interaction design.",
@@ -1219,6 +1264,7 @@
     },
     {
       "id": "ea:publication:why-graphs-are-more-powerful-than-folders",
+      "locale": "en",
       "type": "publication",
       "title": "Why Graphs Are More Powerful Than Folders",
       "summary": "Learn when graph models outperform folder hierarchies, why relationships matter, and how to keep folders as useful projections over connected data.",
@@ -1244,6 +1290,7 @@
     },
     {
       "id": "ea:concept:ai-agent",
+      "locale": "en",
       "type": "concept",
       "title": "AI Agent",
       "summary": "An AI agent is a software system in which a model can select actions, use tools, observe results and adapt its next steps toward an objective within defined boundaries.",
@@ -1270,6 +1317,7 @@
     },
     {
       "id": "ea:concept:algorithmic-composition",
+      "locale": "en",
       "type": "concept",
       "title": "Algorithmic Composition",
       "summary": "Algorithmic composition is the use of rules, procedures, probability, computation or formal systems to generate or organize musical material.",
@@ -1293,6 +1341,7 @@
     },
     {
       "id": "ea:concept:augmented-intelligence",
+      "locale": "en",
       "type": "concept",
       "title": "Augmented Intelligence",
       "summary": "Augmented intelligence is the design of tools, interfaces and systems that expand human perception, reasoning, memory and creative capability.",
@@ -1317,6 +1366,7 @@
     },
     {
       "id": "ea:concept:autonomous-system",
+      "locale": "en",
       "type": "concept",
       "title": "Autonomous System",
       "summary": "An autonomous system can perceive relevant state, select actions and adapt behavior toward objectives with limited direct human control during operation.",
@@ -1343,6 +1393,7 @@
     },
     {
       "id": "ea:concept:contextual-execution",
+      "locale": "en",
       "type": "concept",
       "title": "Contextual Execution",
       "summary": "Contextual execution is the practice of making identity, state, permissions, relationships and operating context active constraints on what a system can do.",
@@ -1369,6 +1420,7 @@
     },
     {
       "id": "ea:concept:creative-coding",
+      "locale": "en",
       "type": "concept",
       "title": "Creative Coding",
       "summary": "Creative coding is the use of programming as an artistic, design or exploratory medium rather than only as an engineering implementation tool.",
@@ -1392,6 +1444,7 @@
     },
     {
       "id": "ea:concept:cybernetic-feedback",
+      "locale": "en",
       "type": "concept",
       "title": "Cybernetic Feedback",
       "summary": "Cybernetic feedback is the circulation of information about a system's state back into the system so that behavior can be regulated, adapted or transformed.",
@@ -1417,6 +1470,7 @@
     },
     {
       "id": "ea:concept:digital-preservation",
+      "locale": "en",
       "type": "concept",
       "title": "Digital Preservation",
       "summary": "Digital preservation is the long-term work of keeping digital objects understandable, authentic, usable and accessible despite changes in formats, software, hardware and context.",
@@ -1442,6 +1496,7 @@
     },
     {
       "id": "ea:concept:domain-operating-system",
+      "locale": "en",
       "type": "concept",
       "title": "Domain Operating System",
       "summary": "A domain operating system is a shared runtime and information layer that coordinates identities, entities, permissions, workflows, events and interfaces for a specific field of activity.",
@@ -1468,6 +1523,7 @@
     },
     {
       "id": "ea:concept:entity-identity",
+      "locale": "en",
       "type": "concept",
       "title": "Entity Identity",
       "summary": "Entity identity is the durable naming of a person, concept, project, program, publication or artefact so that references remain stable as descriptions evolve.",
@@ -1493,6 +1549,7 @@
     },
     {
       "id": "ea:concept:event-driven-architecture",
+      "locale": "en",
       "type": "concept",
       "title": "Event-Driven Architecture",
       "summary": "Event-driven architecture is a system design approach in which components publish, transport and react to records of state change rather than depending only on direct synchronous calls.",
@@ -1518,6 +1575,7 @@
     },
     {
       "id": "ea:concept:generative-ai",
+      "locale": "en",
       "type": "concept",
       "title": "Generative AI",
       "summary": "Generative AI refers to machine-learning systems that produce or transform media such as text, image, audio, video, code or structured data from learned patterns.",
@@ -1541,6 +1599,7 @@
     },
     {
       "id": "ea:concept:generative-system",
+      "locale": "en",
       "type": "concept",
       "title": "Generative System",
       "summary": "A generative system is a rule-based, procedural or computational arrangement that produces variable outputs from defined constraints, materials and processes.",
@@ -1567,6 +1626,7 @@
     },
     {
       "id": "ea:concept:graph-modeling",
+      "locale": "en",
       "type": "concept",
       "title": "Graph Modeling",
       "summary": "Graph modeling represents a domain through addressable nodes, typed relationships and properties chosen to answer specific questions and support specific operations.",
@@ -1592,6 +1652,7 @@
     },
     {
       "id": "ea:concept:graph-runtime",
+      "locale": "en",
       "type": "concept",
       "title": "Graph Runtime",
       "summary": "A graph runtime is an execution environment in which addressable entities and typed relationships participate directly in contextual computation.",
@@ -1616,6 +1677,7 @@
     },
     {
       "id": "ea:concept:human-computer-interaction",
+      "locale": "en",
       "type": "concept",
       "title": "Human Computer Interaction",
       "summary": "Human computer interaction is the study and design of relationships between people, computational systems, interfaces, tasks, environments and cultures of use.",
@@ -1640,6 +1702,7 @@
     },
     {
       "id": "ea:concept:hypertext",
+      "locale": "en",
       "type": "concept",
       "title": "Hypertext",
       "summary": "Hypertext is a system of non-linear text and media connected by links, allowing readers and machines to traverse knowledge through associations.",
@@ -1663,6 +1726,7 @@
     },
     {
       "id": "ea:concept:internet-culture",
+      "locale": "en",
       "type": "concept",
       "title": "Internet Culture",
       "summary": "Internet culture is the set of social forms, aesthetics, protocols, communities, memes, archives and practices that emerge through networked communication.",
@@ -1684,6 +1748,7 @@
     },
     {
       "id": "ea:concept:knowledge-graph",
+      "locale": "en",
       "type": "concept",
       "title": "Knowledge Graph",
       "summary": "A knowledge graph is a structured network of entities, identifiers and typed relationships that makes knowledge navigable, queryable and reusable across contexts.",
@@ -1709,6 +1774,7 @@
     },
     {
       "id": "ea:concept:large-language-model",
+      "locale": "en",
       "type": "concept",
       "title": "Large Language Model",
       "summary": "A large language model is a parameterized machine-learning model trained to predict and generate sequences of tokens from statistical patterns learned across large text or multimodal corpora.",
@@ -1735,6 +1801,7 @@
     },
     {
       "id": "ea:concept:linked-data",
+      "locale": "en",
       "type": "concept",
       "title": "Linked Data",
       "summary": "Linked Data is a web publishing approach that identifies things with stable URIs and connects them through machine-readable statements.",
@@ -1760,6 +1827,7 @@
     },
     {
       "id": "ea:concept:metadata",
+      "locale": "en",
       "type": "concept",
       "title": "Metadata",
       "summary": "Metadata is structured information about a resource, such as title, creator, date, format, source, rights, subject, relation and preservation context.",
@@ -1783,6 +1851,7 @@
     },
     {
       "id": "ea:concept:microservice-architecture",
+      "locale": "en",
       "type": "concept",
       "title": "Microservice Architecture",
       "summary": "Microservice architecture structures a software system as independently deployable services aligned with bounded capabilities and communicating through explicit contracts.",
@@ -1807,6 +1876,7 @@
     },
     {
       "id": "ea:concept:motion-design",
+      "locale": "en",
       "type": "concept",
       "title": "Motion Design",
       "summary": "Motion design is the use of time, movement, transition, rhythm and sequencing to structure visual communication and interface behavior.",
@@ -1830,6 +1900,7 @@
     },
     {
       "id": "ea:concept:multimodal-ai",
+      "locale": "en",
       "type": "concept",
       "title": "Multimodal AI",
       "summary": "Multimodal AI describes systems that learn from, align, transform or generate more than one modality such as text, image, audio, video, sensor data or structured records.",
@@ -1855,6 +1926,7 @@
     },
     {
       "id": "ea:concept:ontology",
+      "locale": "en",
       "type": "concept",
       "title": "Ontology",
       "summary": "In knowledge engineering, an ontology is an explicit specification of the kinds of entities, properties, relationships and constraints used to represent a domain.",
@@ -1880,6 +1952,7 @@
     },
     {
       "id": "ea:concept:open-source",
+      "locale": "en",
       "type": "concept",
       "title": "Open Source",
       "summary": "Open source is a software and cultural practice in which source code is made available under licenses that allow use, study, modification and redistribution.",
@@ -1903,6 +1976,7 @@
     },
     {
       "id": "ea:concept:open-weight-model",
+      "locale": "en",
       "type": "concept",
       "title": "Open-Weight Model",
       "summary": "An open-weight model is a machine-learning model whose learned parameters are distributed for reuse under stated terms, without necessarily providing the training data, training code or freedoms required by...",
@@ -1928,6 +2002,7 @@
     },
     {
       "id": "ea:concept:personal-knowledge-system",
+      "locale": "en",
       "type": "concept",
       "title": "Personal Knowledge System",
       "summary": "A personal knowledge system is a practice and tool environment for capturing, linking, revising and retrieving notes, sources, ideas and decisions over time.",
@@ -1953,6 +2028,7 @@
     },
     {
       "id": "ea:concept:procedural-graphics",
+      "locale": "en",
       "type": "concept",
       "title": "Procedural Graphics",
       "summary": "Procedural graphics are images or visual systems generated from rules, algorithms, parameters, simulation or code rather than only manually drawn assets.",
@@ -1977,6 +2053,7 @@
     },
     {
       "id": "ea:concept:provenance",
+      "locale": "en",
       "type": "concept",
       "title": "Provenance",
       "summary": "Provenance is information about the people, activities, sources, transformations and decisions involved in producing a thing or piece of data.",
@@ -2001,6 +2078,7 @@
     },
     {
       "id": "ea:concept:retrieval-augmented-generation",
+      "locale": "en",
       "type": "concept",
       "title": "Retrieval-Augmented Generation",
       "summary": "Retrieval-augmented generation is an architecture that retrieves external information at query time and supplies selected evidence to a generative model before or during response production.",
@@ -2027,6 +2105,7 @@
     },
     {
       "id": "ea:concept:signal-archaeology",
+      "locale": "en",
       "type": "concept",
       "title": "Signal Archaeology",
       "summary": "Signal archaeology is the interpretation of technical, sonic, visual or archival traces as evidence of hidden processes, transformations and histories.",
@@ -2052,6 +2131,7 @@
     },
     {
       "id": "ea:concept:systems-thinking",
+      "locale": "en",
       "type": "concept",
       "title": "Systems Thinking",
       "summary": "Systems thinking is an approach that studies elements through their relationships, feedback, boundaries, delays, stocks, flows and patterns of behavior over time.",
@@ -2076,6 +2156,7 @@
     },
     {
       "id": "ea:concept:typography",
+      "locale": "en",
       "type": "concept",
       "title": "Typography",
       "summary": "Typography is the design and arrangement of written language through typefaces, spacing, hierarchy, rhythm, scale and reading conditions.",
@@ -2099,6 +2180,7 @@
     },
     {
       "id": "ea:concept:web-audio",
+      "locale": "en",
       "type": "concept",
       "title": "Web Audio",
       "summary": "Web audio is the use of browser-based audio APIs and related web technologies to synthesize, process, analyze, route and present sound.",
@@ -2121,6 +2203,7 @@
     },
     {
       "id": "ea:technology:activitypub",
+      "locale": "en",
       "type": "technology",
       "title": "ActivityPub",
       "summary": "A technology record for federated network culture and social web infrastructure.",
@@ -2143,6 +2226,7 @@
     },
     {
       "id": "ea:technology:c2pa",
+      "locale": "en",
       "type": "technology",
       "title": "C2PA",
       "summary": "A technology record for C2PA and Content Credentials as provenance infrastructure for digital media.",
@@ -2167,6 +2251,7 @@
     },
     {
       "id": "ea:technology:cloudevents",
+      "locale": "en",
       "type": "technology",
       "title": "CloudEvents",
       "summary": "A technology record for interoperable event metadata across services and platforms.",
@@ -2189,6 +2274,7 @@
     },
     {
       "id": "ea:technology:css-fonts",
+      "locale": "en",
       "type": "technology",
       "title": "CSS Fonts",
       "summary": "A technology record for browser typography and reading systems.",
@@ -2210,6 +2296,7 @@
     },
     {
       "id": "ea:technology:iiif",
+      "locale": "en",
       "type": "technology",
       "title": "IIIF",
       "summary": "A technology record for IIIF as interoperable presentation infrastructure for compound cultural objects.",
@@ -2234,6 +2321,7 @@
     },
     {
       "id": "ea:technology:json-ld",
+      "locale": "en",
       "type": "technology",
       "title": "JSON-LD",
       "summary": "A technology record for JSON-LD as the structured data format used by Electronic Artefacts canonical pages.",
@@ -2256,6 +2344,7 @@
     },
     {
       "id": "ea:technology:llama-cpp",
+      "locale": "en",
       "type": "technology",
       "title": "llama.cpp",
       "summary": "A technology record for local model inference, quantization and portable AI deployment.",
@@ -2279,6 +2368,7 @@
     },
     {
       "id": "ea:technology:model-context-protocol",
+      "locale": "en",
       "type": "technology",
       "title": "Model Context Protocol",
       "summary": "A technology record for MCP as an integration protocol for tool-using AI applications, resources and contextual workflows.",
@@ -2303,6 +2393,7 @@
     },
     {
       "id": "ea:technology:opentelemetry",
+      "locale": "en",
       "type": "technology",
       "title": "OpenTelemetry",
       "summary": "A technology record for OpenTelemetry as telemetry infrastructure for distributed systems and AI tool workflows.",
@@ -2326,6 +2417,7 @@
     },
     {
       "id": "ea:technology:owl",
+      "locale": "en",
       "type": "technology",
       "title": "OWL",
       "summary": "A technology record for formal ontology publication and reasoning.",
@@ -2347,6 +2439,7 @@
     },
     {
       "id": "ea:technology:rdf",
+      "locale": "en",
       "type": "technology",
       "title": "RDF",
       "summary": "A technology record for RDF as a reference model behind knowledge graphs, Linked Data and semantic publication.",
@@ -2369,6 +2462,7 @@
     },
     {
       "id": "ea:technology:redis-streams",
+      "locale": "en",
       "type": "technology",
       "title": "Redis Streams",
       "summary": "A technology record for event streams, orchestration and real-time processing.",
@@ -2392,6 +2486,7 @@
     },
     {
       "id": "ea:technology:skos",
+      "locale": "en",
       "type": "technology",
       "title": "SKOS",
       "summary": "A technology record for controlled vocabularies and lightweight semantic organization.",
@@ -2415,6 +2510,7 @@
     },
     {
       "id": "ea:technology:transformer-architecture",
+      "locale": "en",
       "type": "technology",
       "title": "Transformer Architecture",
       "summary": "A technology record for the architecture underlying many modern language and multimodal models.",
@@ -2437,6 +2533,7 @@
     },
     {
       "id": "ea:technology:web-animations",
+      "locale": "en",
       "type": "technology",
       "title": "Web Animations",
       "summary": "A technology record for animation timing, synchronization and interface motion on the web.",
@@ -2458,6 +2555,7 @@
     },
     {
       "id": "ea:technology:web-audio-api",
+      "locale": "en",
       "type": "technology",
       "title": "Web Audio API",
       "summary": "A technology record for browser-native audio processing and synthesis.",
@@ -2480,6 +2578,7 @@
     },
     {
       "id": "ea:technology:webgl",
+      "locale": "en",
       "type": "technology",
       "title": "WebGL",
       "summary": "A technology record for browser graphics and shader-based visual systems.",
@@ -2502,6 +2601,7 @@
     },
     {
       "id": "ea:technology:webnn",
+      "locale": "en",
       "type": "technology",
       "title": "WebNN",
       "summary": "A technology record for browser-based machine-learning inference through the Web Neural Network API.",
@@ -2526,6 +2626,7 @@
     },
     {
       "id": "ea:collection:knowledge-hub-foundations",
+      "locale": "en",
       "type": "collection",
       "title": "Knowledge Hub Foundations",
       "summary": "A curated collection grouping foundational Knowledge Hub concepts, technologies, programs, projects and publications.",
@@ -2553,6 +2654,7 @@
     },
     {
       "id": "ea:collection:knowledge-hub-fourth-wave",
+      "locale": "en",
       "type": "collection",
       "title": "Knowledge Hub Fourth Wave",
       "summary": "A curated Electronic Artefacts collection about AI tool protocols, media provenance, browser-local inference, archive presentation, agent observability, governance and knowledge graph SEO.",
@@ -2580,6 +2682,7 @@
     },
     {
       "id": "ea:collection:knowledge-hub-second-wave",
+      "locale": "en",
       "type": "collection",
       "title": "Knowledge Hub Second Wave",
       "summary": "A curated collection for the second Knowledge Hub expansion wave.",
@@ -2606,6 +2709,7 @@
     },
     {
       "id": "ea:collection:knowledge-hub-third-wave",
+      "locale": "en",
       "type": "collection",
       "title": "Knowledge Hub Third Wave",
       "summary": "A curated Electronic Artefacts collection about durable AI and systems architecture.",

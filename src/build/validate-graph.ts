@@ -34,7 +34,7 @@ export const validateGraph = (entities: Entity[], relations: RelationStatement[]
   if (byId.size !== entities.length) throw new Error("Duplicate entity ID");
   const routeKeys = new Set<string>();
   for (const entity of entities) {
-    const routeKey = `${entity.type}:${entity.slug.canonical}`;
+    const routeKey = `${entity.locale}:${entity.type}:${entity.slug.canonical}`;
     if (routeKeys.has(routeKey)) throw new Error(`Duplicate entity route key ${routeKey}`);
     routeKeys.add(routeKey);
     for (const ref of collectEntityRefs(entity)) {

@@ -100,6 +100,8 @@ export interface EntityHeading {
 export interface BaseEntity {
   id: EntityId;
   type: EntityType;
+  translationKey?: string;
+  translationOf?: EntityId;
   slug: SlugSet;
   title: string;
   alternateNames?: string[];

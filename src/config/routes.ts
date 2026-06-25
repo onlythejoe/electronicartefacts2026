@@ -1,5 +1,7 @@
 import type { Entity, PublicationEntity } from "../schema/entities.js";
+import type { Locale } from "../schema/entity.js";
 import type { EntityType } from "../schema/entity.js";
+import { localizedRoute, routeLocale } from "./i18n.js";
 
 export const routeByType: Record<EntityType, (slug: string) => string> = {
   concept: (slug) => `/knowledge/concepts/${slug}/`,
@@ -32,12 +34,15 @@ export const hubRoutes = {
   search: "/search/",
 } as const;
 
-export const routeForEntity = (entity: Entity): string => {
+export const unlocalizedRouteForEntity = (entity: Entity): string => {
   if (entity.type === "publication" && (entity as PublicationEntity).format === "researchNote") {
     return routeByType.publication(entity.slug.canonical);
   }
   return routeByType[entity.type](entity.slug.canonical);
 };
+
+export const routeForEntity = (entity: Entity, locale: Locale = routeLocale(entity.locale)): string =>
+  localizedRoute(unlocalizedRouteForEntity(entity), locale);
 
 export const identifierPath = (entity: Entity): string => {
   const type = entity.type === "researchField" ? "research-field" : entity.type;

@@ -11,6 +11,7 @@ import type { RelationStatement } from "../src/schema/relation.js";
 test("search documents contain required pilot terms", async () => {
   const entities = await loadContent(path.resolve("."));
   const documents = buildSearchDocuments(entities, await loadRelations(path.resolve(".")), buildRoutes(entities));
+  assert.ok(documents.every((document) => document.locale === "en"));
   const corpus = JSON.stringify(documents).toLowerCase();
   for (const term of ["graph runtime", "vaste", "vestiges", "runtime theory"]) {
     assert.ok(corpus.includes(term), `missing ${term}`);

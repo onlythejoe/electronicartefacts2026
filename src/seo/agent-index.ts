@@ -233,6 +233,9 @@ export const buildAgentManifest = (entities: Entity[]) => {
       const identifier = identifierPath(entity);
       return {
         id: entity.id,
+        locale: entity.locale,
+        translationKey: entity.translationKey,
+        translationOf: entity.translationOf,
         type: entity.type,
         title: entity.title,
         summary: summaryFor(entity),

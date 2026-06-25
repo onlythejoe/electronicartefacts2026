@@ -34,6 +34,8 @@ const sourceRef = z.object({
 const baseShape = {
   id: entityId,
   type: entityType,
+  translationKey: z.string().regex(/^[a-z0-9][a-z0-9:-]*$/).optional(),
+  translationOf: entityId.optional(),
   slug: z.object({
     canonical: z.string().regex(/^[a-z0-9][a-z0-9-]*$/),
     aliases: z.array(z.string()).optional(),
