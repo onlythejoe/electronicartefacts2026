@@ -1,0 +1,139 @@
+{
+  "id": "ea:publication:digital-preservation-and-living-archives-fr",
+  "type": "publication",
+  "translationOf": "ea:publication:digital-preservation-and-living-archives",
+  "slug": {
+    "canonical": "digital-preservation-and-living-archives"
+  },
+  "title": "Préservation numérique et archives vivantes",
+  "subtitle": "Technical Article",
+  "abstract": "This article explains préservation numérique comme an active culturel practice that keeps digital objects, métadonnées, provenance et interpretation usable over time.",
+  "description": "A technical article on préservation numérique, living archives, file formats, provenance et Electronic Artefacts culturel records.",
+  "locale": "fr",
+  "visibility": "public",
+  "publicationClass": "published",
+  "status": "active",
+  "maturity": "research",
+  "confidence": "published",
+  "version": {
+    "version": "1.0.0",
+    "createdAt": "2026-06-23",
+    "publishedAt": "2026-06-25",
+    "modifiedAt": "2026-06-25"
+  },
+  "authors": [
+    {
+      "id": "ea:organization:electronic-artefacts"
+    }
+  ],
+  "publisher": "ea:organization:electronic-artefacts",
+  "tags": [
+    "Préservation numérique",
+    "Living Archive",
+    "Provenance",
+    "Palimpsests",
+    "Vestiges"
+  ],
+  "disciplines": [
+    "Archives",
+    "Digital Art",
+    "Systèmes de connaissance",
+    "History de Technology"
+  ],
+  "sources": [
+    {
+      "title": "Préservation numérique Handbook",
+      "url": "https://www.dpconline.org/handbook",
+      "publisher": "Digital Preservation Coalition",
+      "publishedAt": "2015-01-01",
+      "accessedAt": "2026-06-23"
+    },
+    {
+      "title": "Sustainability de Digital Formats",
+      "url": "https://www.loc.gov/preservation/digital/formats/",
+      "publisher": "Library of Congress",
+      "accessedAt": "2026-06-23",
+      "locator": "Last updated 2024-06-18"
+    },
+    {
+      "title": "Levels de Préservation numérique",
+      "url": "https://www.ndsa.org/publications/levels-of-digital-preservation/",
+      "publisher": "National Digital Stewardship Alliance",
+      "accessedAt": "2026-06-23"
+    }
+  ],
+  "format": "technicalArticle",
+  "subjects": [
+    {
+      "id": "ea:concept:digital-preservation"
+    },
+    {
+      "id": "ea:concept:provenance"
+    },
+    {
+      "id": "ea:project:palimpsests"
+    },
+    {
+      "id": "ea:project:vestiges"
+    },
+    {
+      "id": "ea:concept:knowledge-graph"
+    }
+  ],
+  "claims": [
+    "Digital preservation is not backup; it is long-term care pour objects, métadonnées, rights, formats et context.",
+    "Living archives need graphe relationships because interpretation changes while provenance must remain inspectable."
+  ],
+  "evidence": [
+    {
+      "id": "ea:project:palimpsests"
+    },
+    {
+      "id": "ea:project:vestiges"
+    }
+  ],
+  "citation": {
+    "preferred": "Electronic Artefacts. \"Préservation numérique et Living Archives.\" Technical article, version 1.0.0, 2026."
+  },
+  "bodyHtml": "<h2 id=\"problem\">Problem</h2>\n<p>Préservation numérique et archives vivantes répond à un problème de lisibilité, d’architecture ou de transmission dans les systèmes numériques contemporains. This article explains préservation numérique comme an active culturel practice that keeps digital objects, métadonnées, provenance et interpretation usable over time.</p>\n<h2 id=\"architecture\">Architecture</h2>\n<p>La page organise le sujet comme un ensemble de notions, dépendances, preuves et relations éditoriales connectées au graphe de connaissance.</p>\n<h2 id=\"implementation\">Implementation</h2>\n<p>Pour Electronic Artefacts, cette publication sert de repère français pour cadrer les choix de conception, préparer des contenus plus détaillés et stabiliser le vocabulaire technique.</p>\n<h2 id=\"evidence\">Evidence</h2>\n<ul>\n<li>Digital preservation is not backup; it is long-term care pour objects, métadonnées, rights, formats et context.</li>\n<li>Living archives need graphe relationships because interpretation changes while provenance must remain inspectable.</li>\n</ul>\n<h2 id=\"limitations\">Limitations</h2>\n<p>Cette version française assure la couverture éditoriale du site. Une passe ultérieure pourra enrichir le style et traduire plus finement chaque nuance de la version longue.</p>\n<h2 id=\"references\">References</h2>\n<p>Références conservées depuis la fiche canonique : Digital Preservation Handbook, Sustainability of Digital Formats, Levels of Digital Preservation.</p>\n",
+  "headings": [
+    "Problem",
+    "Architecture",
+    "Implementation",
+    "Evidence",
+    "Limitations",
+    "References"
+  ],
+  "headingItems": [
+    {
+      "level": 2,
+      "title": "Problem",
+      "id": "problem"
+    },
+    {
+      "level": 2,
+      "title": "Architecture",
+      "id": "architecture"
+    },
+    {
+      "level": 2,
+      "title": "Implementation",
+      "id": "implementation"
+    },
+    {
+      "level": 2,
+      "title": "Evidence",
+      "id": "evidence"
+    },
+    {
+      "level": 2,
+      "title": "Limitations",
+      "id": "limitations"
+    },
+    {
+      "level": 2,
+      "title": "References",
+      "id": "references"
+    }
+  ]
+}

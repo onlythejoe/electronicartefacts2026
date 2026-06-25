@@ -1,0 +1,138 @@
+{
+  "id": "ea:publication:retrieval-augmented-generation-and-knowledge-systems-fr",
+  "type": "publication",
+  "translationOf": "ea:publication:retrieval-augmented-generation-and-knowledge-systems",
+  "slug": {
+    "canonical": "retrieval-augmented-generation-and-knowledge-systems"
+  },
+  "title": "Génération augmentée par récupération et systèmes de connaissance",
+  "subtitle": "Technical Article",
+  "abstract": "An end-à-end explanation de RAG architecture, ingestion, chunking, embeddings, hybrid retrieval, graphes, citations, permissions et evaluation.",
+  "description": "Learn how retrieval-augmented generation works et how à build source-grounded RAG systèmes avec métadonnées, graphee de connaissancess et evaluation.",
+  "locale": "fr",
+  "visibility": "public",
+  "publicationClass": "published",
+  "status": "active",
+  "maturity": "research",
+  "confidence": "published",
+  "version": {
+    "version": "1.0.0",
+    "createdAt": "2026-06-24",
+    "publishedAt": "2026-06-25",
+    "modifiedAt": "2026-06-25"
+  },
+  "authors": [
+    {
+      "id": "ea:organization:electronic-artefacts"
+    }
+  ],
+  "publisher": "ea:organization:electronic-artefacts",
+  "tags": [
+    "RAG",
+    "Graphe de connaissances",
+    "Vector Search",
+    "Embeddings",
+    "Citations"
+  ],
+  "disciplines": [
+    "Intelligence artificielle",
+    "Systèmes de connaissance",
+    "Information Architecture",
+    "Machine Learning"
+  ],
+  "sources": [
+    {
+      "title": "Retrieval-Augmented Generation pour Knowledge-Intensive NLP Tasks",
+      "url": "https://arxiv.org/abs/2005.11401",
+      "author": "Patrick Lewis et al.",
+      "publisher": "arXiv",
+      "publishedAt": "2020-05-22",
+      "accessedAt": "2026-06-24"
+    },
+    {
+      "title": "Active Retrieval Augmented Generation",
+      "url": "https://arxiv.org/abs/2305.06983",
+      "author": "Zhengbao Jiang et al.",
+      "publisher": "arXiv",
+      "publishedAt": "2023-05-11",
+      "accessedAt": "2026-06-24"
+    }
+  ],
+  "format": "technicalArticle",
+  "subjects": [
+    {
+      "id": "ea:concept:retrieval-augmented-generation"
+    },
+    {
+      "id": "ea:concept:knowledge-graph"
+    },
+    {
+      "id": "ea:concept:metadata"
+    },
+    {
+      "id": "ea:concept:provenance"
+    },
+    {
+      "id": "ea:concept:large-language-model"
+    },
+    {
+      "id": "ea:program:vaste"
+    }
+  ],
+  "claims": [
+    "RAG quality depends on corpus architecture, retrieval et attribution rather than on vector search alone.",
+    "Hybrid systèmes can combine embeddings avec typed graphe relations à preserve sémantique identité et source paths."
+  ],
+  "evidence": [
+    {
+      "id": "ea:concept:retrieval-augmented-generation"
+    },
+    {
+      "id": "ea:concept:knowledge-graph"
+    }
+  ],
+  "citation": {
+    "preferred": "Electronic Artefacts. \"Retrieval-Augmented Generation et Systèmes de connaissance.\" Technical article, version 1.0.0, 2026."
+  },
+  "bodyHtml": "<h2 id=\"problem\">Problem</h2>\n<p>Génération augmentée par récupération et systèmes de connaissance répond à un problème de lisibilité, d’architecture ou de transmission dans les systèmes numériques contemporains. An end-à-end explanation de RAG architecture, ingestion, chunking, embeddings, hybrid retrieval, graphes, citations, permissions et evaluation.</p>\n<h2 id=\"architecture\">Architecture</h2>\n<p>La page organise le sujet comme un ensemble de notions, dépendances, preuves et relations éditoriales connectées au graphe de connaissance.</p>\n<h2 id=\"implementation\">Implementation</h2>\n<p>Pour Electronic Artefacts, cette publication sert de repère français pour cadrer les choix de conception, préparer des contenus plus détaillés et stabiliser le vocabulaire technique.</p>\n<h2 id=\"evidence\">Evidence</h2>\n<ul>\n<li>RAG quality depends on corpus architecture, retrieval et attribution rather than on vector search alone.</li>\n<li>Hybrid systèmes can combine embeddings avec typed graphe relations à preserve sémantique identité et source paths.</li>\n</ul>\n<h2 id=\"limitations\">Limitations</h2>\n<p>Cette version française assure la couverture éditoriale du site. Une passe ultérieure pourra enrichir le style et traduire plus finement chaque nuance de la version longue.</p>\n<h2 id=\"references\">References</h2>\n<p>Références conservées depuis la fiche canonique : Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks, Active Retrieval Augmented Generation.</p>\n",
+  "headings": [
+    "Problem",
+    "Architecture",
+    "Implementation",
+    "Evidence",
+    "Limitations",
+    "References"
+  ],
+  "headingItems": [
+    {
+      "level": 2,
+      "title": "Problem",
+      "id": "problem"
+    },
+    {
+      "level": 2,
+      "title": "Architecture",
+      "id": "architecture"
+    },
+    {
+      "level": 2,
+      "title": "Implementation",
+      "id": "implementation"
+    },
+    {
+      "level": 2,
+      "title": "Evidence",
+      "id": "evidence"
+    },
+    {
+      "level": 2,
+      "title": "Limitations",
+      "id": "limitations"
+    },
+    {
+      "level": 2,
+      "title": "References",
+      "id": "references"
+    }
+  ]
+}

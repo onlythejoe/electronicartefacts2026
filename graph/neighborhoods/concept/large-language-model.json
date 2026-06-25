@@ -1,34 +1,16 @@
 {
-  "id": "local:ea:concept:large-language-model",
+  "id": "local:ea:concept:large-language-model-fr",
   "kind": "local",
-  "focus": "ea:concept:large-language-model",
+  "focus": "ea:concept:large-language-model-fr",
   "nodes": [
     {
-      "id": "ea:concept:large-language-model",
+      "id": "ea:concept:large-language-model-fr",
       "type": "concept",
-      "title": "Large Language Model",
-      "route": "/knowledge/concepts/large-language-model/",
+      "title": "Grand modèle de langage",
+      "route": "/fr/knowledge/concepts/large-language-model/",
       "status": "active",
       "confidence": "canonical"
-    },
-    {
-      "id": "ea:publication:how-large-language-models-actually-work",
-      "type": "publication",
-      "title": "How Large Language Models Actually Work",
-      "route": "/publications/how-large-language-models-actually-work/",
-      "status": "active",
-      "confidence": "published"
     }
   ],
-  "edges": [
-    {
-      "id": "ear:llm-article-documents-large-language-model",
-      "source": "ea:publication:how-large-language-models-actually-work",
-      "target": "ea:concept:large-language-model",
-      "predicate": "documents",
-      "label": "Documents",
-      "statement": "How Large Language Models Actually Work documents the core LLM concept.",
-      "confidence": "published"
-    }
-  ]
+  "edges": []
 }

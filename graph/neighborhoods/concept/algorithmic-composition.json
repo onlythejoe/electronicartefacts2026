@@ -1,34 +1,16 @@
 {
-  "id": "local:ea:concept:algorithmic-composition",
+  "id": "local:ea:concept:algorithmic-composition-fr",
   "kind": "local",
-  "focus": "ea:concept:algorithmic-composition",
+  "focus": "ea:concept:algorithmic-composition-fr",
   "nodes": [
     {
-      "id": "ea:concept:algorithmic-composition",
+      "id": "ea:concept:algorithmic-composition-fr",
       "type": "concept",
-      "title": "Algorithmic Composition",
-      "route": "/knowledge/concepts/algorithmic-composition/",
+      "title": "Composition algorithmique",
+      "route": "/fr/knowledge/concepts/algorithmic-composition/",
       "status": "active",
       "confidence": "canonical"
-    },
-    {
-      "id": "ea:publication:algorithmic-composition-and-rule-based-music",
-      "type": "publication",
-      "title": "Algorithmic Composition and Rule-Based Music",
-      "route": "/publications/algorithmic-composition-and-rule-based-music/",
-      "status": "active",
-      "confidence": "published"
     }
   ],
-  "edges": [
-    {
-      "id": "ear:algorithmic-composition-article-documents-algorithmic-composition",
-      "source": "ea:publication:algorithmic-composition-and-rule-based-music",
-      "target": "ea:concept:algorithmic-composition",
-      "predicate": "documents",
-      "label": "Documents",
-      "statement": "Algorithmic Composition and Rule-Based Music documents algorithmic composition as rule-based musical practice.",
-      "confidence": "published"
-    }
-  ]
+  "edges": []
 }

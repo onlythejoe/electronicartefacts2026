@@ -1,0 +1,83 @@
+{
+  "id": "ea:technology:iiif-fr",
+  "type": "technology",
+  "translationOf": "ea:technology:iiif",
+  "slug": {
+    "canonical": "iiif"
+  },
+  "title": "IIIF",
+  "alternateNames": [
+    "International Image Interoperability Framework"
+  ],
+  "abstract": "IIIF est un framework de APIs pour presenting, structuring et annotating digital representations de culturel et archival objects.",
+  "description": "A technology record pour IIIF comme interoperable presentation infrastructure pour compound culturel objects.",
+  "locale": "fr",
+  "visibility": "public",
+  "publicationClass": "canonical",
+  "status": "active",
+  "maturity": "production",
+  "confidence": "canonical",
+  "version": {
+    "version": "1.0.0",
+    "createdAt": "2026-06-24",
+    "publishedAt": "2026-06-25",
+    "modifiedAt": "2026-06-25"
+  },
+  "authors": [
+    {
+      "id": "ea:organization:electronic-artefacts"
+    }
+  ],
+  "publisher": "ea:organization:electronic-artefacts",
+  "tags": [
+    "IIIF",
+    "Digital Archives",
+    "Culturel Heritage",
+    "Presentation API"
+  ],
+  "disciplines": [
+    "Préservation numérique",
+    "Culturel Infrastructure",
+    "Systèmes de connaissance"
+  ],
+  "sources": [
+    {
+      "title": "IIIF Presentation API 3.0",
+      "url": "https://iiif.io/api/presentation/3.0/",
+      "publisher": "IIIF Consortium",
+      "accessedAt": "2026-06-24"
+    }
+  ],
+  "category": "protocol",
+  "roleInEcosystem": "IIIF fournit interoperable resource structures such comme collections, manifests, canvases, ranges et annotations pour culturel object presentation.",
+  "officialUrl": "https://iiif.io/api/presentation/3.0/",
+  "bodyHtml": "<h2 id=\"role\">Rôle</h2>\n<p>IIIF est documenté ici comme une entrée française du graphe public d’Electronic Artefacts. IIIF est un framework de APIs pour presenting, structuring et annotating digital representations de culturel et archival objects.</p>\n<h2 id=\"usage\">Usage</h2>\n<p>Cette technologie sert de repère pour évaluer les choix d’architecture, les dépendances et les possibilités d’implémentation. IIIF fournit interoperable resource structures such comme collections, manifests, canvases, ranges et annotations pour culturel object presentation.</p>\n<h2 id=\"domaines\">Domaines</h2>\n<p>Cette entrée croise notamment les domaines suivants : Préservation numérique, Culturel Infrastructure, Systèmes de connaissance.</p>\n<h2 id=\"references\">Références</h2>\n<p>Les références principales restent les sources indiquées dans la fiche canonique, notamment IIIF Presentation API 3.0.</p>\n",
+  "headings": [
+    "Rôle",
+    "Usage",
+    "Domaines",
+    "Références"
+  ],
+  "headingItems": [
+    {
+      "level": 2,
+      "title": "Rôle",
+      "id": "role"
+    },
+    {
+      "level": 2,
+      "title": "Usage",
+      "id": "usage"
+    },
+    {
+      "level": 2,
+      "title": "Domaines",
+      "id": "domaines"
+    },
+    {
+      "level": 2,
+      "title": "Références",
+      "id": "references"
+    }
+  ]
+}

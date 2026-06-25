@@ -1,0 +1,262 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://electronicartefacts.com/fr/publications/why-graphs-are-more-powerful-than-folders/#webpage",
+      "url": "https://electronicartefacts.com/fr/publications/why-graphs-are-more-powerful-than-folders/",
+      "name": "Pourquoi les graphes sont plus puissants que les dossiers",
+      "description": "Learn when graphe modèles outperform folder hierarchies, why relationships matter, et how à keep folders comme useful projections over connected données.",
+      "inLanguage": "fr",
+      "datePublished": "2026-06-25",
+      "dateModified": "2026-06-25",
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-search.jpg",
+        "description": "Pourquoi les graphes sont plus puissants que les dossiers"
+      },
+      "breadcrumb": {
+        "@id": "https://electronicartefacts.com/fr/publications/why-graphs-are-more-powerful-than-folders/#breadcrumb"
+      },
+      "mainEntity": {
+        "@id": "https://electronicartefacts.com/fr/id/publication/why-graphs-are-more-powerful-than-folders/"
+      },
+      "isPartOf": {
+        "@id": "https://electronicartefacts.com/#website"
+      },
+      "publisher": {
+        "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
+      },
+      "isAccessibleForFree": true
+    },
+    {
+      "@type": "TechArticle",
+      "@id": "https://electronicartefacts.com/fr/id/publication/why-graphs-are-more-powerful-than-folders/",
+      "identifier": "ea:publication:why-graphs-are-more-powerful-than-folders-fr",
+      "name": "Pourquoi les graphes sont plus puissants que les dossiers",
+      "headline": "Pourquoi les graphes sont plus puissants que les dossiers",
+      "abstract": "A practical comparison de hierarchical folders et graphe modèles pour knowledge, projects, archives, identité, provenance et generated interfaces.",
+      "description": "A practical comparison de hierarchical folders et graphe modèles pour knowledge, projects, archives, identité, provenance et generated interfaces.",
+      "url": "https://electronicartefacts.com/fr/publications/why-graphs-are-more-powerful-than-folders/",
+      "mainEntityOfPage": {
+        "@id": "https://electronicartefacts.com/fr/publications/why-graphs-are-more-powerful-than-folders/#webpage"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-search.jpg",
+        "description": "Pourquoi les graphes sont plus puissants que les dossiers"
+      },
+      "author": [
+        {
+          "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
+        }
+      ],
+      "creator": [
+        {
+          "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
+        }
+      ],
+      "keywords": [
+        "Modélisation de graphe",
+        "Folders",
+        "Graphe de connaissances",
+        "Information Architecture",
+        "VASTE",
+        "Systèmes de connaissance",
+        "Systèmes Design",
+        "Software Architecture"
+      ],
+      "inLanguage": "fr",
+      "dateCreated": "2026-06-24",
+      "datePublished": "2026-06-25",
+      "dateModified": "2026-06-25",
+      "publisher": {
+        "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
+      },
+      "copyrightHolder": {
+        "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
+      },
+      "isAccessibleForFree": true,
+      "wordCount": 167,
+      "citation": [
+        "Electronic Artefacts. \"Why Graphes Are More Powerful Than Folders.\" Technical article, version 1.0.0, 2026.",
+        {
+          "@type": "CreativeWork",
+          "name": "RDF 1.1 Concepts et Abstract Syntax",
+          "url": "https://www.w3.org/TR/rdf11-concepts/",
+          "author": "Richard Cyganiak, David Wood et Markus Lanthaler",
+          "publisher": "W3C",
+          "datePublished": "2014-02-25"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "The CIDOC Conceptual Reference Modèle",
+          "url": "https://www.cidoc-crm.org/",
+          "publisher": "CIDOC CRM Special Interest Group"
+        }
+      ],
+      "about": [
+        {
+          "@id": "https://electronicartefacts.com/id/concept/graph-modeling/"
+        },
+        {
+          "@id": "https://electronicartefacts.com/id/concept/knowledge-graph/"
+        },
+        {
+          "@id": "https://electronicartefacts.com/id/concept/entity-identity/"
+        },
+        {
+          "@id": "https://electronicartefacts.com/id/concept/provenance/"
+        },
+        {
+          "@id": "https://electronicartefacts.com/id/program/vaste/"
+        },
+        {
+          "@id": "https://electronicartefacts.com/id/project/vestiges/"
+        }
+      ],
+      "mentions": [
+        {
+          "@id": "https://electronicartefacts.com/id/concept/graph-modeling/"
+        },
+        {
+          "@id": "https://electronicartefacts.com/id/concept/knowledge-graph/"
+        }
+      ],
+      "articleSection": [
+        "Systèmes de connaissance",
+        "Systèmes Design",
+        "Information Architecture",
+        "Software Architecture",
+        "Modélisation de graphe",
+        "Folders"
+      ],
+      "timeRequired": "PT1M",
+      "isBasedOn": [
+        {
+          "@type": "CreativeWork",
+          "name": "RDF 1.1 Concepts et Abstract Syntax",
+          "url": "https://www.w3.org/TR/rdf11-concepts/",
+          "author": "Richard Cyganiak, David Wood et Markus Lanthaler",
+          "publisher": "W3C",
+          "datePublished": "2014-02-25"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "The CIDOC Conceptual Reference Modèle",
+          "url": "https://www.cidoc-crm.org/",
+          "publisher": "CIDOC CRM Special Interest Group"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/",
+      "name": "Electronic Artefacts",
+      "url": "https://electronicartefacts.com/",
+      "description": "Electronic Artefacts designs digital products, knowledge systems, cultural platforms and research-led experiences.",
+      "keywords": [
+        "creative technology",
+        "knowledge graph",
+        "AI agents",
+        "retrieval-augmented generation",
+        "linked data",
+        "digital preservation",
+        "cultural infrastructure",
+        "software systems",
+        "research publishing"
+      ],
+      "knowsAbout": [
+        "AI agents",
+        "knowledge graphs",
+        "retrieval-augmented generation",
+        "linked data",
+        "JSON-LD",
+        "creative coding",
+        "digital preservation",
+        "cultural knowledge systems",
+        "software architecture",
+        "human-computer interaction",
+        "generative AI",
+        "provenance"
+      ],
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-logo.jpg"
+      },
+      "image": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-search.jpg",
+      "email": "electronic.artefacts@gmail.com",
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "email": "electronic.artefacts@gmail.com",
+          "contactType": "inquiries",
+          "availableLanguage": [
+            "en",
+            "fr"
+          ]
+        }
+      ],
+      "sameAs": [
+        "https://www.instagram.com/electronic.artefacts/",
+        "https://github.com/onlythejoe",
+        "https://soundcloud.com/electronic-artefacts"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://electronicartefacts.com/#website",
+      "url": "https://electronicartefacts.com/",
+      "name": "Electronic Artefacts",
+      "description": "Electronic Artefacts designs digital products, knowledge systems, cultural platforms and research-led experiences.",
+      "keywords": [
+        "creative technology",
+        "knowledge graph",
+        "AI agents",
+        "retrieval-augmented generation",
+        "linked data",
+        "digital preservation",
+        "cultural infrastructure",
+        "software systems",
+        "research publishing"
+      ],
+      "dateModified": "2026-06-25",
+      "publisher": {
+        "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
+      },
+      "inLanguage": "en",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://electronicartefacts.com/search/?q={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://electronicartefacts.com/fr/publications/why-graphs-are-more-powerful-than-folders/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Electronic Artefacts",
+          "item": "https://electronicartefacts.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Publications",
+          "item": "https://electronicartefacts.com/publications/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Pourquoi les graphes sont plus puissants que les dossiers",
+          "item": "https://electronicartefacts.com/fr/publications/why-graphs-are-more-powerful-than-folders/"
+        }
+      ]
+    }
+  ]
+}

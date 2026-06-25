@@ -1,0 +1,269 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://electronicartefacts.com/fr/publications/responsible-ai-governance-for-creative-and-cultural-systems/#webpage",
+      "url": "https://electronicartefacts.com/fr/publications/responsible-ai-governance-for-creative-and-cultural-systems/",
+      "name": "Gouvernance responsable de l’IA pour les systèmes créatifs et culturels",
+      "description": "Learn how responsible AI gouvernance applies à creative technology, culturel infrastructure, archives, generative médias et AI-assisted knowledge workflows.",
+      "inLanguage": "fr",
+      "datePublished": "2026-06-25",
+      "dateModified": "2026-06-25",
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-search.jpg",
+        "description": "Gouvernance responsable de l’IA pour les systèmes créatifs et culturels"
+      },
+      "breadcrumb": {
+        "@id": "https://electronicartefacts.com/fr/publications/responsible-ai-governance-for-creative-and-cultural-systems/#breadcrumb"
+      },
+      "mainEntity": {
+        "@id": "https://electronicartefacts.com/fr/id/publication/responsible-ai-governance-for-creative-and-cultural-systems/"
+      },
+      "isPartOf": {
+        "@id": "https://electronicartefacts.com/#website"
+      },
+      "publisher": {
+        "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
+      },
+      "isAccessibleForFree": true
+    },
+    {
+      "@type": "TechArticle",
+      "@id": "https://electronicartefacts.com/fr/id/publication/responsible-ai-governance-for-creative-and-cultural-systems/",
+      "identifier": "ea:publication:responsible-ai-governance-for-creative-and-cultural-systems-fr",
+      "name": "Gouvernance responsable de l’IA pour les systèmes créatifs et culturels",
+      "headline": "Gouvernance responsable de l’IA pour les systèmes créatifs et culturels",
+      "abstract": "A practical gouvernance article pour AI dans creative studios, culturel archives et systèmes de connaissance, covering risk, review, provenance, rights et evaluation.",
+      "description": "A practical gouvernance article pour AI dans creative studios, culturel archives et systèmes de connaissance, covering risk, review, provenance, rights et evaluation.",
+      "url": "https://electronicartefacts.com/fr/publications/responsible-ai-governance-for-creative-and-cultural-systems/",
+      "mainEntityOfPage": {
+        "@id": "https://electronicartefacts.com/fr/publications/responsible-ai-governance-for-creative-and-cultural-systems/#webpage"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-search.jpg",
+        "description": "Gouvernance responsable de l’IA pour les systèmes créatifs et culturels"
+      },
+      "author": [
+        {
+          "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
+        }
+      ],
+      "creator": [
+        {
+          "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
+        }
+      ],
+      "keywords": [
+        "Responsible AI",
+        "AI Gouvernance",
+        "Creative Technology",
+        "Culturel Infrastructure",
+        "Provenance",
+        "Intelligence artificielle",
+        "Systèmes de connaissance",
+        "Systèmes Design"
+      ],
+      "inLanguage": "fr",
+      "dateCreated": "2026-06-25",
+      "datePublished": "2026-06-25",
+      "dateModified": "2026-06-25",
+      "publisher": {
+        "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
+      },
+      "copyrightHolder": {
+        "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
+      },
+      "isAccessibleForFree": true,
+      "wordCount": 184,
+      "citation": [
+        "Electronic Artefacts. \"Responsible AI Gouvernance pour Creative et Culturel Systèmes.\" Technical article, version 1.0.0, 2026.",
+        {
+          "@type": "CreativeWork",
+          "name": "AI Act",
+          "url": "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai",
+          "publisher": "European Commission"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "AI Risk Management Framework",
+          "url": "https://www.nist.gov/itl/ai-risk-management-framework",
+          "publisher": "National Institute of Standards and Technology"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Intelligence artificielle Risk Management Framework Generative Intelligence artificielle Profile",
+          "url": "https://doi.org/10.6028/NIST.AI.600-1",
+          "publisher": "National Institute of Standards and Technology",
+          "datePublished": "2024-07-26"
+        }
+      ],
+      "about": [
+        {
+          "@id": "https://electronicartefacts.com/id/concept/generative-ai/"
+        },
+        {
+          "@id": "https://electronicartefacts.com/id/concept/augmented-intelligence/"
+        },
+        {
+          "@id": "https://electronicartefacts.com/id/concept/provenance/"
+        },
+        {
+          "@id": "https://electronicartefacts.com/id/concept/systems-thinking/"
+        },
+        {
+          "@id": "https://electronicartefacts.com/id/concept/contextual-execution/"
+        }
+      ],
+      "mentions": [
+        {
+          "@id": "https://electronicartefacts.com/id/concept/generative-ai/"
+        },
+        {
+          "@id": "https://electronicartefacts.com/id/concept/provenance/"
+        }
+      ],
+      "articleSection": [
+        "Intelligence artificielle",
+        "Culturel Infrastructure",
+        "Systèmes de connaissance",
+        "Systèmes Design",
+        "Responsible AI",
+        "AI Gouvernance"
+      ],
+      "timeRequired": "PT1M",
+      "isBasedOn": [
+        {
+          "@type": "CreativeWork",
+          "name": "AI Act",
+          "url": "https://digital-strategy.ec.europa.eu/en/policies/regulatory-framework-ai",
+          "publisher": "European Commission"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "AI Risk Management Framework",
+          "url": "https://www.nist.gov/itl/ai-risk-management-framework",
+          "publisher": "National Institute of Standards and Technology"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Intelligence artificielle Risk Management Framework Generative Intelligence artificielle Profile",
+          "url": "https://doi.org/10.6028/NIST.AI.600-1",
+          "publisher": "National Institute of Standards and Technology",
+          "datePublished": "2024-07-26"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/",
+      "name": "Electronic Artefacts",
+      "url": "https://electronicartefacts.com/",
+      "description": "Electronic Artefacts designs digital products, knowledge systems, cultural platforms and research-led experiences.",
+      "keywords": [
+        "creative technology",
+        "knowledge graph",
+        "AI agents",
+        "retrieval-augmented generation",
+        "linked data",
+        "digital preservation",
+        "cultural infrastructure",
+        "software systems",
+        "research publishing"
+      ],
+      "knowsAbout": [
+        "AI agents",
+        "knowledge graphs",
+        "retrieval-augmented generation",
+        "linked data",
+        "JSON-LD",
+        "creative coding",
+        "digital preservation",
+        "cultural knowledge systems",
+        "software architecture",
+        "human-computer interaction",
+        "generative AI",
+        "provenance"
+      ],
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-logo.jpg"
+      },
+      "image": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-search.jpg",
+      "email": "electronic.artefacts@gmail.com",
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "email": "electronic.artefacts@gmail.com",
+          "contactType": "inquiries",
+          "availableLanguage": [
+            "en",
+            "fr"
+          ]
+        }
+      ],
+      "sameAs": [
+        "https://www.instagram.com/electronic.artefacts/",
+        "https://github.com/onlythejoe",
+        "https://soundcloud.com/electronic-artefacts"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://electronicartefacts.com/#website",
+      "url": "https://electronicartefacts.com/",
+      "name": "Electronic Artefacts",
+      "description": "Electronic Artefacts designs digital products, knowledge systems, cultural platforms and research-led experiences.",
+      "keywords": [
+        "creative technology",
+        "knowledge graph",
+        "AI agents",
+        "retrieval-augmented generation",
+        "linked data",
+        "digital preservation",
+        "cultural infrastructure",
+        "software systems",
+        "research publishing"
+      ],
+      "dateModified": "2026-06-25",
+      "publisher": {
+        "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
+      },
+      "inLanguage": "en",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://electronicartefacts.com/search/?q={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://electronicartefacts.com/fr/publications/responsible-ai-governance-for-creative-and-cultural-systems/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Electronic Artefacts",
+          "item": "https://electronicartefacts.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Publications",
+          "item": "https://electronicartefacts.com/publications/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Gouvernance responsable de l’IA pour les systèmes créatifs et culturels",
+          "item": "https://electronicartefacts.com/fr/publications/responsible-ai-governance-for-creative-and-cultural-systems/"
+        }
+      ]
+    }
+  ]
+}

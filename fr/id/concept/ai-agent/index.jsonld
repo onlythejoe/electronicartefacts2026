@@ -1,0 +1,204 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://electronicartefacts.com/fr/knowledge/concepts/ai-agent/#webpage",
+      "url": "https://electronicartefacts.com/fr/knowledge/concepts/ai-agent/",
+      "name": "Agent d’IA",
+      "description": "A canonical definition distinguishing AI agents from fixed AI workflows et conventional automation.",
+      "inLanguage": "fr",
+      "datePublished": "2026-06-25",
+      "dateModified": "2026-06-25",
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-search.jpg",
+        "description": "Agent d’IA"
+      },
+      "breadcrumb": {
+        "@id": "https://electronicartefacts.com/fr/knowledge/concepts/ai-agent/#breadcrumb"
+      },
+      "mainEntity": {
+        "@id": "https://electronicartefacts.com/fr/id/concept/ai-agent/"
+      },
+      "isPartOf": {
+        "@id": "https://electronicartefacts.com/#website"
+      },
+      "publisher": {
+        "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
+      },
+      "isAccessibleForFree": true
+    },
+    {
+      "@type": "DefinedTerm",
+      "@id": "https://electronicartefacts.com/fr/id/concept/ai-agent/",
+      "identifier": "ea:concept:ai-agent-fr",
+      "name": "Agent d’IA",
+      "abstract": "AI agents combine modèles, outils, mémoire, environmental feedback, stopping conditions, permissions et evaluation dans an iterative action loop.",
+      "description": "An AI agent est un software système dans which a modèle can select actions, use outils, observe results et adapt its next steps toward an objective within defined boundaries.",
+      "url": "https://electronicartefacts.com/fr/knowledge/concepts/ai-agent/",
+      "mainEntityOfPage": {
+        "@id": "https://electronicartefacts.com/fr/knowledge/concepts/ai-agent/#webpage"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-search.jpg",
+        "description": "Agent d’IA"
+      },
+      "author": [
+        {
+          "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
+        }
+      ],
+      "creator": [
+        {
+          "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
+        }
+      ],
+      "keywords": [
+        "AI Agents",
+        "Outil Use",
+        "Automation",
+        "Orchestration",
+        "Human Oversight",
+        "Intelligence artificielle",
+        "Systèmes Design",
+        "Human Computer Interaction",
+        "Software Architecture"
+      ],
+      "inLanguage": "fr",
+      "dateCreated": "2026-06-24",
+      "datePublished": "2026-06-25",
+      "dateModified": "2026-06-25",
+      "publisher": {
+        "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
+      },
+      "copyrightHolder": {
+        "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
+      },
+      "isAccessibleForFree": true,
+      "wordCount": 114,
+      "citation": [
+        {
+          "@type": "CreativeWork",
+          "name": "Building Effective Agents",
+          "url": "https://www.anthropic.com/engineering/building-effective-agents",
+          "author": "Erik Schluntz et Barry Zhang",
+          "publisher": "Anthropic",
+          "datePublished": "2024-12-19"
+        }
+      ],
+      "inDefinedTermSet": "https://electronicartefacts.com/knowledge/concepts/",
+      "termCode": "ai-agent"
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/",
+      "name": "Electronic Artefacts",
+      "url": "https://electronicartefacts.com/",
+      "description": "Electronic Artefacts designs digital products, knowledge systems, cultural platforms and research-led experiences.",
+      "keywords": [
+        "creative technology",
+        "knowledge graph",
+        "AI agents",
+        "retrieval-augmented generation",
+        "linked data",
+        "digital preservation",
+        "cultural infrastructure",
+        "software systems",
+        "research publishing"
+      ],
+      "knowsAbout": [
+        "AI agents",
+        "knowledge graphs",
+        "retrieval-augmented generation",
+        "linked data",
+        "JSON-LD",
+        "creative coding",
+        "digital preservation",
+        "cultural knowledge systems",
+        "software architecture",
+        "human-computer interaction",
+        "generative AI",
+        "provenance"
+      ],
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-logo.jpg"
+      },
+      "image": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-search.jpg",
+      "email": "electronic.artefacts@gmail.com",
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "email": "electronic.artefacts@gmail.com",
+          "contactType": "inquiries",
+          "availableLanguage": [
+            "en",
+            "fr"
+          ]
+        }
+      ],
+      "sameAs": [
+        "https://www.instagram.com/electronic.artefacts/",
+        "https://github.com/onlythejoe",
+        "https://soundcloud.com/electronic-artefacts"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://electronicartefacts.com/#website",
+      "url": "https://electronicartefacts.com/",
+      "name": "Electronic Artefacts",
+      "description": "Electronic Artefacts designs digital products, knowledge systems, cultural platforms and research-led experiences.",
+      "keywords": [
+        "creative technology",
+        "knowledge graph",
+        "AI agents",
+        "retrieval-augmented generation",
+        "linked data",
+        "digital preservation",
+        "cultural infrastructure",
+        "software systems",
+        "research publishing"
+      ],
+      "dateModified": "2026-06-25",
+      "publisher": {
+        "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
+      },
+      "inLanguage": "en",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://electronicartefacts.com/search/?q={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://electronicartefacts.com/fr/knowledge/concepts/ai-agent/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Electronic Artefacts",
+          "item": "https://electronicartefacts.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Knowledge",
+          "item": "https://electronicartefacts.com/knowledge/concepts/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Agent d’IA",
+          "item": "https://electronicartefacts.com/fr/knowledge/concepts/ai-agent/"
+        }
+      ]
+    }
+  ]
+}

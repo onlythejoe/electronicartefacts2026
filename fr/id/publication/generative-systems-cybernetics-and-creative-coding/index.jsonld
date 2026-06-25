@@ -1,0 +1,274 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://electronicartefacts.com/fr/publications/generative-systems-cybernetics-and-creative-coding/#webpage",
+      "url": "https://electronicartefacts.com/fr/publications/generative-systems-cybernetics-and-creative-coding/",
+      "name": "Systèmes génératifs, cybernétique et programmation créative",
+      "description": "A technical article on generative systèmes, cybernetic feedback, programmation créative, algorithmic composition et Electronic Artefacts projects.",
+      "inLanguage": "fr",
+      "datePublished": "2026-06-25",
+      "dateModified": "2026-06-25",
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-search.jpg",
+        "description": "Systèmes génératifs, cybernétique et programmation créative"
+      },
+      "breadcrumb": {
+        "@id": "https://electronicartefacts.com/fr/publications/generative-systems-cybernetics-and-creative-coding/#breadcrumb"
+      },
+      "mainEntity": {
+        "@id": "https://electronicartefacts.com/fr/id/publication/generative-systems-cybernetics-and-creative-coding/"
+      },
+      "isPartOf": {
+        "@id": "https://electronicartefacts.com/#website"
+      },
+      "publisher": {
+        "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
+      },
+      "isAccessibleForFree": true
+    },
+    {
+      "@type": "TechArticle",
+      "@id": "https://electronicartefacts.com/fr/id/publication/generative-systems-cybernetics-and-creative-coding/",
+      "identifier": "ea:publication:generative-systems-cybernetics-and-creative-coding-fr",
+      "name": "Systèmes génératifs, cybernétique et programmation créative",
+      "headline": "Systèmes génératifs, cybernétique et programmation créative",
+      "abstract": "This article traces generative systèmes from cybernetic feedback et algorithmic art à programmation créative, sound design et contemporary AI-assisted production.",
+      "description": "This article traces generative systèmes from cybernetic feedback et algorithmic art à programmation créative, sound design et contemporary AI-assisted production.",
+      "url": "https://electronicartefacts.com/fr/publications/generative-systems-cybernetics-and-creative-coding/",
+      "mainEntityOfPage": {
+        "@id": "https://electronicartefacts.com/fr/publications/generative-systems-cybernetics-and-creative-coding/#webpage"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-search.jpg",
+        "description": "Systèmes génératifs, cybernétique et programmation créative"
+      },
+      "author": [
+        {
+          "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
+        }
+      ],
+      "creator": [
+        {
+          "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
+        }
+      ],
+      "keywords": [
+        "Generative Systèmes",
+        "Cybernetics",
+        "Programmation créative",
+        "Composition algorithmique",
+        "Digital Art",
+        "Music Production",
+        "Systèmes Design"
+      ],
+      "inLanguage": "fr",
+      "dateCreated": "2026-06-23",
+      "datePublished": "2026-06-25",
+      "dateModified": "2026-06-25",
+      "publisher": {
+        "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
+      },
+      "copyrightHolder": {
+        "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
+      },
+      "isAccessibleForFree": true,
+      "wordCount": 172,
+      "citation": [
+        "Electronic Artefacts. \"Generative Systèmes, Cybernetics et Programmation créative.\" Technical article, version 1.0.0, 2026.",
+        {
+          "@type": "CreativeWork",
+          "name": "Cybernetics ou Control et Communication dans the Animal et the Machine",
+          "url": "https://direct.mit.edu/books/oa-monograph/4581/Cybernetics-or-Control-and-Communication-in-the",
+          "author": "Norbert Wiener",
+          "publisher": "MIT Press",
+          "datePublished": "1948-01-01"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "An Introduction à Cybernetics",
+          "author": "W. Ross Ashby",
+          "publisher": "Chapman and Hall",
+          "datePublished": "1956-01-01"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Formalized Music",
+          "author": "Iannis Xenakis",
+          "publisher": "Indiana University Press",
+          "datePublished": "1971-01-01"
+        }
+      ],
+      "about": [
+        {
+          "@id": "https://electronicartefacts.com/id/concept/generative-system/"
+        },
+        {
+          "@id": "https://electronicartefacts.com/id/concept/cybernetic-feedback/"
+        },
+        {
+          "@id": "https://electronicartefacts.com/id/concept/creative-coding/"
+        },
+        {
+          "@id": "https://electronicartefacts.com/id/program/oreth/"
+        },
+        {
+          "@id": "https://electronicartefacts.com/id/project/palimpsests/"
+        }
+      ],
+      "mentions": [
+        {
+          "@id": "https://electronicartefacts.com/id/program/oreth/"
+        },
+        {
+          "@id": "https://electronicartefacts.com/id/project/palimpsests/"
+        }
+      ],
+      "articleSection": [
+        "Programmation créative",
+        "Digital Art",
+        "Music Production",
+        "Systèmes Design",
+        "Cybernetics",
+        "Generative Systèmes"
+      ],
+      "timeRequired": "PT1M",
+      "isBasedOn": [
+        {
+          "@type": "CreativeWork",
+          "name": "Cybernetics ou Control et Communication dans the Animal et the Machine",
+          "url": "https://direct.mit.edu/books/oa-monograph/4581/Cybernetics-or-Control-and-Communication-in-the",
+          "author": "Norbert Wiener",
+          "publisher": "MIT Press",
+          "datePublished": "1948-01-01"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "An Introduction à Cybernetics",
+          "author": "W. Ross Ashby",
+          "publisher": "Chapman and Hall",
+          "datePublished": "1956-01-01"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Formalized Music",
+          "author": "Iannis Xenakis",
+          "publisher": "Indiana University Press",
+          "datePublished": "1971-01-01"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/",
+      "name": "Electronic Artefacts",
+      "url": "https://electronicartefacts.com/",
+      "description": "Electronic Artefacts designs digital products, knowledge systems, cultural platforms and research-led experiences.",
+      "keywords": [
+        "creative technology",
+        "knowledge graph",
+        "AI agents",
+        "retrieval-augmented generation",
+        "linked data",
+        "digital preservation",
+        "cultural infrastructure",
+        "software systems",
+        "research publishing"
+      ],
+      "knowsAbout": [
+        "AI agents",
+        "knowledge graphs",
+        "retrieval-augmented generation",
+        "linked data",
+        "JSON-LD",
+        "creative coding",
+        "digital preservation",
+        "cultural knowledge systems",
+        "software architecture",
+        "human-computer interaction",
+        "generative AI",
+        "provenance"
+      ],
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-logo.jpg"
+      },
+      "image": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-search.jpg",
+      "email": "electronic.artefacts@gmail.com",
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "email": "electronic.artefacts@gmail.com",
+          "contactType": "inquiries",
+          "availableLanguage": [
+            "en",
+            "fr"
+          ]
+        }
+      ],
+      "sameAs": [
+        "https://www.instagram.com/electronic.artefacts/",
+        "https://github.com/onlythejoe",
+        "https://soundcloud.com/electronic-artefacts"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://electronicartefacts.com/#website",
+      "url": "https://electronicartefacts.com/",
+      "name": "Electronic Artefacts",
+      "description": "Electronic Artefacts designs digital products, knowledge systems, cultural platforms and research-led experiences.",
+      "keywords": [
+        "creative technology",
+        "knowledge graph",
+        "AI agents",
+        "retrieval-augmented generation",
+        "linked data",
+        "digital preservation",
+        "cultural infrastructure",
+        "software systems",
+        "research publishing"
+      ],
+      "dateModified": "2026-06-25",
+      "publisher": {
+        "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
+      },
+      "inLanguage": "en",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://electronicartefacts.com/search/?q={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://electronicartefacts.com/fr/publications/generative-systems-cybernetics-and-creative-coding/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Electronic Artefacts",
+          "item": "https://electronicartefacts.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Publications",
+          "item": "https://electronicartefacts.com/publications/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Systèmes génératifs, cybernétique et programmation créative",
+          "item": "https://electronicartefacts.com/fr/publications/generative-systems-cybernetics-and-creative-coding/"
+        }
+      ]
+    }
+  ]
+}

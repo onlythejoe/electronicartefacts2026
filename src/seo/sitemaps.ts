@@ -39,13 +39,16 @@ export const buildSitemap = (entities: Entity[]): string => {
     { route: "/fr/", image: `${site.origin}${site.socialImage}`, alternates: bilingual("/", "/fr/") },
     { route: "/about.html", alternates: bilingual("/about.html", "/fr/about.html") },
     { route: "/fr/about.html", alternates: bilingual("/about.html", "/fr/about.html") },
-    { route: "/archive.html" },
+    { route: "/archive.html", alternates: bilingual("/archive.html", "/fr/archive.html") },
+    { route: "/fr/archive.html", alternates: bilingual("/archive.html", "/fr/archive.html") },
     { route: "/contact.html", alternates: bilingual("/contact.html", "/fr/contact.html") },
     { route: "/fr/contact.html", alternates: bilingual("/contact.html", "/fr/contact.html") },
     { route: "/projects.html", alternates: bilingual("/projects.html", "/fr/projects.html") },
     { route: "/fr/projects.html", alternates: bilingual("/projects.html", "/fr/projects.html") },
-    { route: "/programs.html" },
-    { route: "/research.html" },
+    { route: "/programs.html", alternates: bilingual("/programs.html", "/fr/programs.html") },
+    { route: "/fr/programs.html", alternates: bilingual("/programs.html", "/fr/programs.html") },
+    { route: "/research.html", alternates: bilingual("/research.html", "/fr/research.html") },
+    { route: "/fr/research.html", alternates: bilingual("/research.html", "/fr/research.html") },
     { route: "/work.html", alternates: bilingual("/work.html", "/fr/work.html") },
     { route: "/fr/work.html", alternates: bilingual("/work.html", "/fr/work.html") },
     { route: "/knowledge/" },
@@ -55,17 +58,34 @@ export const buildSitemap = (entities: Entity[]): string => {
     { route: "/knowledge/technologies/" },
     { route: "/archive/collections/" },
     { route: "/publications/" },
+    { route: "/mentions-legales.html", alternates: bilingual("/mentions-legales.html", "/fr/mentions-legales.html") },
+    { route: "/fr/mentions-legales.html", alternates: bilingual("/mentions-legales.html", "/fr/mentions-legales.html") },
+    { route: "/confidentialite.html", alternates: bilingual("/confidentialite.html", "/fr/confidentialite.html") },
+    { route: "/fr/confidentialite.html", alternates: bilingual("/confidentialite.html", "/fr/confidentialite.html") },
   ];
+  const translationGroups = new Map<string, Entity[]>();
+  for (const entity of entities) {
+    const key = entity.translationKey || entity.translationOf || entity.id;
+    translationGroups.set(key, [...(translationGroups.get(key) || []), entity]);
+  }
+  const entityAlternates = (entity: Entity) => {
+    const key = entity.translationKey || entity.translationOf || entity.id;
+    const group = translationGroups.get(key) || [entity];
+    const alternates: Array<{ hreflang: string; href: string }> = group.map((item) => ({
+      hreflang: item.locale,
+      href: `${site.origin}${routeForEntity(item)}`,
+    }));
+    const english = group.find((item) => item.locale === defaultLocale);
+    if (english) alternates.push({ hreflang: "x-default", href: `${site.origin}${routeForEntity(english)}` });
+    return alternates;
+  };
   const urls: SitemapUrl[] = [
     ...staticRoutes.map((item) => ({ ...item, lastmod: site.updatedAt })),
     ...entities.filter(isIndexableEntity).map((entity) => ({
       route: routeForEntity(entity),
       lastmod: entity.version.modifiedAt,
       image: entityImage(entity),
-      alternates: [
-        { hreflang: entity.locale, href: `${site.origin}${routeForEntity(entity)}` },
-        ...(entity.locale === defaultLocale ? [{ hreflang: "x-default", href: `${site.origin}${routeForEntity(entity)}` }] : []),
-      ],
+      alternates: entityAlternates(entity),
     })),
   ];
   return `<?xml version="1.0" encoding="UTF-8"?>

@@ -1,0 +1,261 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://electronicartefacts.com/fr/publications/signal-archaeology-audio-memory-and-machine-listening/#webpage",
+      "url": "https://electronicartefacts.com/fr/publications/signal-archaeology-audio-memory-and-machine-listening/",
+      "name": "Archéologie du signal, mémoire audio et écoute machine",
+      "description": "A technical article on signal archaeology, audio mémoire, machine listening, ORETH et Palimpsests.",
+      "inLanguage": "fr",
+      "datePublished": "2026-06-25",
+      "dateModified": "2026-06-25",
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-search.jpg",
+        "description": "Archéologie du signal, mémoire audio et écoute machine"
+      },
+      "breadcrumb": {
+        "@id": "https://electronicartefacts.com/fr/publications/signal-archaeology-audio-memory-and-machine-listening/#breadcrumb"
+      },
+      "mainEntity": {
+        "@id": "https://electronicartefacts.com/fr/id/publication/signal-archaeology-audio-memory-and-machine-listening/"
+      },
+      "isPartOf": {
+        "@id": "https://electronicartefacts.com/#website"
+      },
+      "publisher": {
+        "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
+      },
+      "isAccessibleForFree": true
+    },
+    {
+      "@type": "TechArticle",
+      "@id": "https://electronicartefacts.com/fr/id/publication/signal-archaeology-audio-memory-and-machine-listening/",
+      "identifier": "ea:publication:signal-archaeology-audio-memory-and-machine-listening-fr",
+      "name": "Archéologie du signal, mémoire audio et écoute machine",
+      "headline": "Archéologie du signal, mémoire audio et écoute machine",
+      "abstract": "This article explains signal archaeology comme a way à read sonic et technical traces through audio analysis, provenance, mémoire et machine listening.",
+      "description": "This article explains signal archaeology comme a way à read sonic et technical traces through audio analysis, provenance, mémoire et machine listening.",
+      "url": "https://electronicartefacts.com/fr/publications/signal-archaeology-audio-memory-and-machine-listening/",
+      "mainEntityOfPage": {
+        "@id": "https://electronicartefacts.com/fr/publications/signal-archaeology-audio-memory-and-machine-listening/#webpage"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-search.jpg",
+        "description": "Archéologie du signal, mémoire audio et écoute machine"
+      },
+      "author": [
+        {
+          "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
+        }
+      ],
+      "creator": [
+        {
+          "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
+        }
+      ],
+      "keywords": [
+        "Archéologie du signal",
+        "Audio",
+        "Machine Listening",
+        "ORETH",
+        "Palimpsests",
+        "Audio Engineering",
+        "Sound Design",
+        "Digital Art",
+        "Archives",
+        "Recherche Méthodes"
+      ],
+      "inLanguage": "fr",
+      "dateCreated": "2026-06-23",
+      "datePublished": "2026-06-25",
+      "dateModified": "2026-06-25",
+      "publisher": {
+        "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
+      },
+      "copyrightHolder": {
+        "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
+      },
+      "isAccessibleForFree": true,
+      "wordCount": 159,
+      "citation": [
+        "Electronic Artefacts. \"Signal Archaeology, Audio Mémoire et Machine Listening.\" Technical article, version 1.0.0, 2026.",
+        {
+          "@type": "CreativeWork",
+          "name": "PROV-Overview",
+          "url": "https://www.w3.org/TR/prov-overview/",
+          "publisher": "W3C",
+          "datePublished": "2013-04-30"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Préservation numérique Handbook",
+          "url": "https://www.dpconline.org/handbook",
+          "publisher": "Digital Preservation Coalition",
+          "datePublished": "2015-01-01"
+        }
+      ],
+      "about": [
+        {
+          "@id": "https://electronicartefacts.com/id/concept/signal-archaeology/"
+        },
+        {
+          "@id": "https://electronicartefacts.com/id/concept/provenance/"
+        },
+        {
+          "@id": "https://electronicartefacts.com/id/concept/digital-preservation/"
+        },
+        {
+          "@id": "https://electronicartefacts.com/id/program/oreth/"
+        },
+        {
+          "@id": "https://electronicartefacts.com/id/project/palimpsests/"
+        }
+      ],
+      "mentions": [
+        {
+          "@id": "https://electronicartefacts.com/id/program/oreth/"
+        },
+        {
+          "@id": "https://electronicartefacts.com/id/project/palimpsests/"
+        }
+      ],
+      "articleSection": [
+        "Audio Engineering",
+        "Sound Design",
+        "Digital Art",
+        "Archives",
+        "Recherche Méthodes",
+        "Archéologie du signal"
+      ],
+      "timeRequired": "PT1M",
+      "isBasedOn": [
+        {
+          "@type": "CreativeWork",
+          "name": "PROV-Overview",
+          "url": "https://www.w3.org/TR/prov-overview/",
+          "publisher": "W3C",
+          "datePublished": "2013-04-30"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Préservation numérique Handbook",
+          "url": "https://www.dpconline.org/handbook",
+          "publisher": "Digital Preservation Coalition",
+          "datePublished": "2015-01-01"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/",
+      "name": "Electronic Artefacts",
+      "url": "https://electronicartefacts.com/",
+      "description": "Electronic Artefacts designs digital products, knowledge systems, cultural platforms and research-led experiences.",
+      "keywords": [
+        "creative technology",
+        "knowledge graph",
+        "AI agents",
+        "retrieval-augmented generation",
+        "linked data",
+        "digital preservation",
+        "cultural infrastructure",
+        "software systems",
+        "research publishing"
+      ],
+      "knowsAbout": [
+        "AI agents",
+        "knowledge graphs",
+        "retrieval-augmented generation",
+        "linked data",
+        "JSON-LD",
+        "creative coding",
+        "digital preservation",
+        "cultural knowledge systems",
+        "software architecture",
+        "human-computer interaction",
+        "generative AI",
+        "provenance"
+      ],
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-logo.jpg"
+      },
+      "image": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-search.jpg",
+      "email": "electronic.artefacts@gmail.com",
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "email": "electronic.artefacts@gmail.com",
+          "contactType": "inquiries",
+          "availableLanguage": [
+            "en",
+            "fr"
+          ]
+        }
+      ],
+      "sameAs": [
+        "https://www.instagram.com/electronic.artefacts/",
+        "https://github.com/onlythejoe",
+        "https://soundcloud.com/electronic-artefacts"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://electronicartefacts.com/#website",
+      "url": "https://electronicartefacts.com/",
+      "name": "Electronic Artefacts",
+      "description": "Electronic Artefacts designs digital products, knowledge systems, cultural platforms and research-led experiences.",
+      "keywords": [
+        "creative technology",
+        "knowledge graph",
+        "AI agents",
+        "retrieval-augmented generation",
+        "linked data",
+        "digital preservation",
+        "cultural infrastructure",
+        "software systems",
+        "research publishing"
+      ],
+      "dateModified": "2026-06-25",
+      "publisher": {
+        "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
+      },
+      "inLanguage": "en",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://electronicartefacts.com/search/?q={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://electronicartefacts.com/fr/publications/signal-archaeology-audio-memory-and-machine-listening/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Electronic Artefacts",
+          "item": "https://electronicartefacts.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Publications",
+          "item": "https://electronicartefacts.com/publications/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Archéologie du signal, mémoire audio et écoute machine",
+          "item": "https://electronicartefacts.com/fr/publications/signal-archaeology-audio-memory-and-machine-listening/"
+        }
+      ]
+    }
+  ]
+}

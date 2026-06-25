@@ -1,0 +1,86 @@
+{
+  "id": "ea:concept:procedural-graphics-fr",
+  "type": "concept",
+  "translationOf": "ea:concept:procedural-graphics",
+  "slug": {
+    "canonical": "procedural-graphics"
+  },
+  "title": "Graphisme procédural",
+  "definition": "Procedural grapheics sont images ou visuel systèmes generated from rules, algorithms, parameters, simulation ou code rather than only manually drawn assets.",
+  "abstract": "Procedural grapheics connect shaders, generative systèmes, motion design, programmation créative, visuel culture et real-time web interfaces.",
+  "description": "A canonical concept record pour rule-based visuel generation.",
+  "locale": "fr",
+  "visibility": "public",
+  "publicationClass": "canonical",
+  "status": "active",
+  "maturity": "research",
+  "confidence": "canonical",
+  "version": {
+    "version": "1.0.0",
+    "createdAt": "2026-06-24",
+    "publishedAt": "2026-06-25",
+    "modifiedAt": "2026-06-25"
+  },
+  "authors": [
+    {
+      "id": "ea:organization:electronic-artefacts"
+    }
+  ],
+  "publisher": "ea:organization:electronic-artefacts",
+  "tags": [
+    "Graphisme procédural",
+    "Shaders",
+    "WebGL",
+    "Generative Art"
+  ],
+  "disciplines": [
+    "Programmation créative",
+    "Visuel Culture",
+    "Digital Art",
+    "Motion design"
+  ],
+  "scope": [
+    "Shaders",
+    "Generative visuels",
+    "Simulation",
+    "WebGL",
+    "Creative coding"
+  ],
+  "exclusions": [
+    "Static illustration exported from manual design software avec no procedural layer",
+    "Randomized decoration avec no coherent visuel système"
+  ],
+  "claims": [
+    "Procedural grapheics sont strongest when parameters express a visuel grammar rather than arbitrary variation.",
+    "Preservation de procedural visuels requires code, parameters, runtime context et output records."
+  ],
+  "bodyHtml": "<h2 id=\"role\">Rôle</h2>\n<p>Graphisme procédural est documenté ici comme une entrée française du graphe public d’Electronic Artefacts. Procedural grapheics connect shaders, generative systèmes, motion design, programmation créative, visuel culture et real-time web interfaces.</p>\n<h2 id=\"usage\">Usage</h2>\n<p>Cette notion sert à relier les projets, publications et technologies qui partagent un même vocabulaire de conception. Procedural grapheics sont images ou visuel systèmes generated from rules, algorithms, parameters, simulation ou code rather than only manually drawn assets.</p>\n<h2 id=\"domaines\">Domaines</h2>\n<p>Cette entrée croise notamment les domaines suivants : Programmation créative, Visuel Culture, Digital Art, Motion design.</p>\n<h2 id=\"references\">Références</h2>\n<p>Les références principales sont conservées dans la fiche canonique et dans le graphe de connaissance public.</p>\n",
+  "headings": [
+    "Rôle",
+    "Usage",
+    "Domaines",
+    "Références"
+  ],
+  "headingItems": [
+    {
+      "level": 2,
+      "title": "Rôle",
+      "id": "role"
+    },
+    {
+      "level": 2,
+      "title": "Usage",
+      "id": "usage"
+    },
+    {
+      "level": 2,
+      "title": "Domaines",
+      "id": "domaines"
+    },
+    {
+      "level": 2,
+      "title": "Références",
+      "id": "references"
+    }
+  ]
+}

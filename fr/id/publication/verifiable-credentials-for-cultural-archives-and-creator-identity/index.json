@@ -1,0 +1,139 @@
+{
+  "id": "ea:publication:verifiable-credentials-for-cultural-archives-and-creator-identity-fr",
+  "type": "publication",
+  "translationOf": "ea:publication:verifiable-credentials-for-cultural-archives-and-creator-identity",
+  "slug": {
+    "canonical": "verifiable-credentials-for-cultural-archives-and-creator-identity"
+  },
+  "title": "Identifiants vérifiables pour les archives culturelles et l’identité des créateurs",
+  "subtitle": "Technical Article",
+  "abstract": "A practical article on W3C Verifiable Credentials, creator identité, culturel archives, provenance, claims, privacy et machine-readable trust.",
+  "description": "Understand how verifiable credentials can support creator identité, archive provenance, rights workflows et trusted claims dans culturel systèmes de connaissance.",
+  "locale": "fr",
+  "visibility": "public",
+  "publicationClass": "published",
+  "status": "active",
+  "maturity": "research",
+  "confidence": "published",
+  "version": {
+    "version": "1.0.0",
+    "createdAt": "2026-06-25",
+    "publishedAt": "2026-06-25",
+    "modifiedAt": "2026-06-25"
+  },
+  "authors": [
+    {
+      "id": "ea:organization:electronic-artefacts"
+    }
+  ],
+  "publisher": "ea:organization:electronic-artefacts",
+  "tags": [
+    "Verifiable Credentials",
+    "Creator Identité",
+    "Provenance",
+    "Préservation numérique",
+    "Culturel Archives"
+  ],
+  "disciplines": [
+    "Culturel Infrastructure",
+    "Systèmes de connaissance",
+    "Préservation numérique",
+    "Web Standards"
+  ],
+  "sources": [
+    {
+      "title": "Verifiable Credentials Données Modèle v2.0",
+      "url": "https://www.w3.org/TR/vc-data-model-2.0/",
+      "publisher": "W3C",
+      "publishedAt": "2025-05-15",
+      "accessedAt": "2026-06-25"
+    },
+    {
+      "title": "PROV-Overview",
+      "url": "https://www.w3.org/TR/prov-overview/",
+      "publisher": "W3C",
+      "publishedAt": "2013-04-30",
+      "accessedAt": "2026-06-25"
+    },
+    {
+      "title": "C2PA Specifications",
+      "url": "https://spec.c2pa.org/specifications/specifications/2.2/index.html",
+      "publisher": "Coalition for Content Provenance and Authenticity",
+      "accessedAt": "2026-06-25"
+    }
+  ],
+  "format": "technicalArticle",
+  "subjects": [
+    {
+      "id": "ea:concept:provenance"
+    },
+    {
+      "id": "ea:concept:entity-identity"
+    },
+    {
+      "id": "ea:concept:digital-preservation"
+    },
+    {
+      "id": "ea:concept:linked-data"
+    },
+    {
+      "id": "ea:technology:c2pa"
+    }
+  ],
+  "claims": [
+    "Verifiable credentials can express signed claims about creators, works, rights ou archive events, but trust still depends on issuer context et verification policy.",
+    "Culturel systèmes should use credentials comme one provenance layer alongside graphe records, editorial review, rights métadonnées et public interpretation."
+  ],
+  "evidence": [
+    {
+      "id": "ea:concept:provenance"
+    },
+    {
+      "id": "ea:concept:entity-identity"
+    }
+  ],
+  "citation": {
+    "preferred": "Electronic Artefacts. \"Verifiable Credentials pour Culturel Archives et Creator Identité.\" Technical article, version 1.0.0, 2026."
+  },
+  "bodyHtml": "<h2 id=\"problem\">Problem</h2>\n<p>Identifiants vérifiables pour les archives culturelles et l’identité des créateurs répond à un problème de lisibilité, d’architecture ou de transmission dans les systèmes numériques contemporains. A practical article on W3C Verifiable Credentials, creator identité, culturel archives, provenance, claims, privacy et machine-readable trust.</p>\n<h2 id=\"architecture\">Architecture</h2>\n<p>La page organise le sujet comme un ensemble de notions, dépendances, preuves et relations éditoriales connectées au graphe de connaissance.</p>\n<h2 id=\"implementation\">Implementation</h2>\n<p>Pour Electronic Artefacts, cette publication sert de repère français pour cadrer les choix de conception, préparer des contenus plus détaillés et stabiliser le vocabulaire technique.</p>\n<h2 id=\"evidence\">Evidence</h2>\n<ul>\n<li>Verifiable credentials can express signed claims about creators, works, rights ou archive events, but trust still depends on issuer context et verification policy.</li>\n<li>Culturel systèmes should use credentials comme one provenance layer alongside graphe records, editorial review, rights métadonnées et public interpretation.</li>\n</ul>\n<h2 id=\"limitations\">Limitations</h2>\n<p>Cette version française assure la couverture éditoriale du site. Une passe ultérieure pourra enrichir le style et traduire plus finement chaque nuance de la version longue.</p>\n<h2 id=\"references\">References</h2>\n<p>Références conservées depuis la fiche canonique : Verifiable Credentials Data Model v2.0, PROV-Overview, C2PA Specifications.</p>\n",
+  "headings": [
+    "Problem",
+    "Architecture",
+    "Implementation",
+    "Evidence",
+    "Limitations",
+    "References"
+  ],
+  "headingItems": [
+    {
+      "level": 2,
+      "title": "Problem",
+      "id": "problem"
+    },
+    {
+      "level": 2,
+      "title": "Architecture",
+      "id": "architecture"
+    },
+    {
+      "level": 2,
+      "title": "Implementation",
+      "id": "implementation"
+    },
+    {
+      "level": 2,
+      "title": "Evidence",
+      "id": "evidence"
+    },
+    {
+      "level": 2,
+      "title": "Limitations",
+      "id": "limitations"
+    },
+    {
+      "level": 2,
+      "title": "References",
+      "id": "references"
+    }
+  ]
+}

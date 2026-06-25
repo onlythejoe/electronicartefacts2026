@@ -1,0 +1,172 @@
+{
+  "id": "ea:collection:knowledge-hub-third-wave-fr",
+  "type": "collection",
+  "translationOf": "ea:collection:knowledge-hub-third-wave",
+  "slug": {
+    "canonical": "knowledge-hub-third-wave"
+  },
+  "title": "Hub de connaissance, troisième vague",
+  "subtitle": "AI, Systèmes et Graphe Computing",
+  "abstract": "Knowledge Hub Third Wave groups a major expansion across LLMs, AI agents, local AI, RAG, multimodal systèmes, systèmes thinking, ontologies, graphe modèleing, event streams, Redis, microservices et domain runtimes.",
+  "description": "A curated Electronic Artefacts collection about durable AI et systèmes architecture.",
+  "locale": "fr",
+  "visibility": "public",
+  "publicationClass": "published",
+  "status": "active",
+  "maturity": "research",
+  "confidence": "published",
+  "version": {
+    "version": "1.0.0",
+    "createdAt": "2026-06-24",
+    "publishedAt": "2026-06-25",
+    "modifiedAt": "2026-06-25"
+  },
+  "authors": [
+    {
+      "id": "ea:organization:electronic-artefacts"
+    }
+  ],
+  "publisher": "ea:organization:electronic-artefacts",
+  "tags": [
+    "Knowledge Hub",
+    "Third Wave",
+    "Intelligence artificielle",
+    "Systèmes Architecture",
+    "Graphe Computing"
+  ],
+  "disciplines": [
+    "Intelligence artificielle",
+    "Systèmes Design",
+    "Systèmes de connaissance",
+    "Software Architecture",
+    "Creative Technology"
+  ],
+  "thesis": "Durable AI knowledge requires systèmes architecture, source grounding, sémantique identité et human gouvernance; graphe runtimes connect those concerns à Electronic Artefacts programs et projects.",
+  "curator": [
+    {
+      "id": "ea:organization:electronic-artefacts"
+    }
+  ],
+  "explicitMembers": [
+    {
+      "id": "ea:publication:how-large-language-models-actually-work"
+    },
+    {
+      "id": "ea:publication:ai-agents-vs-ai-workflows"
+    },
+    {
+      "id": "ea:publication:local-and-open-source-ai-systems"
+    },
+    {
+      "id": "ea:publication:retrieval-augmented-generation-and-knowledge-systems"
+    },
+    {
+      "id": "ea:publication:multimodal-ai-across-text-image-audio-and-video"
+    },
+    {
+      "id": "ea:publication:systems-thinking-for-creative-practice"
+    },
+    {
+      "id": "ea:publication:ontologies-taxonomies-and-knowledge-modeling"
+    },
+    {
+      "id": "ea:publication:why-graphs-are-more-powerful-than-folders"
+    },
+    {
+      "id": "ea:publication:event-driven-architecture-and-event-streams"
+    },
+    {
+      "id": "ea:publication:redis-streams-for-orchestration"
+    },
+    {
+      "id": "ea:publication:microservices-modular-monoliths-and-system-boundaries"
+    },
+    {
+      "id": "ea:publication:runtime-engines-and-domain-operating-systems"
+    },
+    {
+      "id": "ea:concept:large-language-model"
+    },
+    {
+      "id": "ea:concept:ai-agent"
+    },
+    {
+      "id": "ea:concept:retrieval-augmented-generation"
+    },
+    {
+      "id": "ea:concept:open-weight-model"
+    },
+    {
+      "id": "ea:concept:multimodal-ai"
+    },
+    {
+      "id": "ea:concept:autonomous-system"
+    },
+    {
+      "id": "ea:concept:systems-thinking"
+    },
+    {
+      "id": "ea:concept:ontology"
+    },
+    {
+      "id": "ea:concept:event-driven-architecture"
+    },
+    {
+      "id": "ea:concept:microservice-architecture"
+    },
+    {
+      "id": "ea:concept:domain-operating-system"
+    },
+    {
+      "id": "ea:concept:graph-modeling"
+    },
+    {
+      "id": "ea:technology:transformer-architecture"
+    },
+    {
+      "id": "ea:technology:llama-cpp"
+    },
+    {
+      "id": "ea:technology:redis-streams"
+    },
+    {
+      "id": "ea:technology:cloudevents"
+    },
+    {
+      "id": "ea:technology:owl"
+    },
+    {
+      "id": "ea:technology:skos"
+    }
+  ],
+  "selectionNote": "The collection prioritizes evergreen questions avec high search demand et strong structural links à VASTE, Vestiges, ORETH, Palimpsests et the public Knowledge Hub.",
+  "bodyHtml": "<h2 id=\"intention\">Intention</h2>\n<p>Hub de connaissance, troisième vague est documenté ici comme une entrée française du graphe public d’Electronic Artefacts. Knowledge Hub Third Wave groups a major expansion across LLMs, AI agents, local AI, RAG, multimodal systèmes, systèmes thinking, ontologies, graphe modèleing, event streams, Redis, microservices et domain runtimes.</p>\n<h2 id=\"selection\">Sélection</h2>\n<p>The collection prioritizes evergreen questions avec high search demand et strong structural links à VASTE, Vestiges, ORETH, Palimpsests et the public Knowledge Hub.</p>\n<h2 id=\"usage\">Usage</h2>\n<p>Cette collection facilite la navigation entre des objets liés et donne une entrée française cohérente aux archives de connaissance.</p>\n<h2 id=\"references\">Références</h2>\n<p>Les références principales sont conservées dans la fiche canonique et dans le graphe de connaissance public.</p>\n",
+  "headings": [
+    "Intention",
+    "Sélection",
+    "Usage",
+    "Références"
+  ],
+  "headingItems": [
+    {
+      "level": 2,
+      "title": "Intention",
+      "id": "intention"
+    },
+    {
+      "level": 2,
+      "title": "Sélection",
+      "id": "selection"
+    },
+    {
+      "level": 2,
+      "title": "Usage",
+      "id": "usage"
+    },
+    {
+      "level": 2,
+      "title": "Références",
+      "id": "references"
+    }
+  ]
+}

@@ -1,0 +1,75 @@
+---
+id: ea:concept:open-weight-model-fr
+type: concept
+slug:
+  canonical: open-weight-model
+title: Open-Weight Model
+definition: An open-weight modèle est un machine-learning modèle whose learned
+  parameters sont distributed pour reuse under stated terms, without necessarily
+  providing the training données, training code ou freedoms required by
+  open-source definitions.
+abstract: Open-weight modèles enable local inference et adaptation but must be
+  distinguished from fully open-source AI systèmes.
+description: A canonical definition pour local AI, modèle licensing et digital independence.
+locale: fr
+visibility: public
+publicationClass: canonical
+status: active
+maturity: research
+confidence: validated
+version:
+  version: 1.0.0
+  createdAt: 2026-06-24
+  publishedAt: 2026-06-25
+  modifiedAt: 2026-06-25
+authors:
+  - id: ea:organization:electronic-artefacts
+publisher: ea:organization:electronic-artefacts
+scope:
+  - Modèle weights
+  - Local inference
+  - Licensing
+  - Quantization
+  - Adaptation
+exclusions:
+  - A claim that downloadable weights automatically make an AI système open
+    source
+  - A hosted API avec no distributable modèle parameters
+claims:
+  - Open weights can improve autonomy et inspectability without providing full
+    training reproducibility.
+  - Modèle licenses, données information, code availability et use restrictions
+    must be evaluated separately.
+sources:
+  - title: The Open source AI Definition 1.0
+    publisher: Open Source Initiative
+    accessedAt: 2026-06-24
+    url: https://opensource.org/ai/open-source-ai-definition
+tags:
+  - Open Weights
+  - Local AI
+  - Modèle Licensing
+  - Quantization
+disciplines:
+  - Intelligence artificielle
+  - Open source
+  - Programming
+  - Digital Independence
+translationOf: ea:concept:open-weight-model
+---
+
+## Rôle
+
+Open-Weight Model est documenté ici comme une entrée française du graphe public d’Electronic Artefacts. Open-weight modèles enable local inference et adaptation but must be distinguished from fully open-source AI systèmes.
+
+## Usage
+
+Cette notion sert à relier les projets, publications et technologies qui partagent un même vocabulaire de conception. An open-weight modèle est un machine-learning modèle whose learned parameters sont distributed pour reuse under stated terms, without necessarily providing the training données, training code ou freedoms required by open-source definitions.
+
+## Domaines
+
+Cette entrée croise notamment les domaines suivants : Intelligence artificielle, Open source, Programming, Digital Independence.
+
+## Références
+
+Les références principales restent les sources indiquées dans la fiche canonique, notamment The Open Source AI Definition 1.0.

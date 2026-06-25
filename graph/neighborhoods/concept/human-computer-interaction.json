@@ -1,102 +1,16 @@
 {
-  "id": "local:ea:concept:human-computer-interaction",
+  "id": "local:ea:concept:human-computer-interaction-fr",
   "kind": "local",
-  "focus": "ea:concept:human-computer-interaction",
+  "focus": "ea:concept:human-computer-interaction-fr",
   "nodes": [
     {
-      "id": "ea:concept:human-computer-interaction",
+      "id": "ea:concept:human-computer-interaction-fr",
       "type": "concept",
       "title": "Human Computer Interaction",
-      "route": "/knowledge/concepts/human-computer-interaction/",
+      "route": "/fr/knowledge/concepts/human-computer-interaction/",
       "status": "active",
       "confidence": "canonical"
-    },
-    {
-      "id": "ea:publication:generative-ai-latent-space-and-creative-workflows",
-      "type": "publication",
-      "title": "Generative AI, Latent Space and Creative Workflows",
-      "route": "/publications/generative-ai-latent-space-and-creative-workflows/",
-      "status": "active",
-      "confidence": "published"
-    },
-    {
-      "id": "ea:publication:human-computer-interaction-for-creative-tools",
-      "type": "publication",
-      "title": "Human Computer Interaction for Creative Tools",
-      "route": "/publications/human-computer-interaction-for-creative-tools/",
-      "status": "active",
-      "confidence": "published"
-    },
-    {
-      "id": "ea:publication:motion-design-time-and-interface-semantics",
-      "type": "publication",
-      "title": "Motion Design, Time and Interface Semantics",
-      "route": "/publications/motion-design-time-and-interface-semantics/",
-      "status": "active",
-      "confidence": "published"
-    },
-    {
-      "id": "ea:publication:typography-reading-systems-and-digital-interfaces",
-      "type": "publication",
-      "title": "Typography, Reading Systems and Digital Interfaces",
-      "route": "/publications/typography-reading-systems-and-digital-interfaces/",
-      "status": "active",
-      "confidence": "published"
-    },
-    {
-      "id": "ea:publication:webnn-and-local-ai-in-the-browser",
-      "type": "publication",
-      "title": "WebNN and Local AI in the Browser",
-      "route": "/publications/webnn-and-local-ai-in-the-browser/",
-      "status": "active",
-      "confidence": "published"
     }
   ],
-  "edges": [
-    {
-      "id": "ear:webnn-article-documents-hci",
-      "source": "ea:publication:webnn-and-local-ai-in-the-browser",
-      "target": "ea:concept:human-computer-interaction",
-      "predicate": "documents",
-      "label": "Documents",
-      "statement": "WebNN and Local AI in the Browser frames local inference as a human-computer interaction design problem.",
-      "confidence": "published"
-    },
-    {
-      "id": "ear:motion-design-article-documents-hci",
-      "source": "ea:publication:motion-design-time-and-interface-semantics",
-      "target": "ea:concept:human-computer-interaction",
-      "predicate": "documents",
-      "label": "Documents",
-      "statement": "Motion Design, Time and Interface Semantics links motion design to human computer interaction.",
-      "confidence": "published"
-    },
-    {
-      "id": "ear:typography-article-documents-hci",
-      "source": "ea:publication:typography-reading-systems-and-digital-interfaces",
-      "target": "ea:concept:human-computer-interaction",
-      "predicate": "documents",
-      "label": "Documents",
-      "statement": "Typography, Reading Systems and Digital Interfaces connects typography to human computer interaction and accessibility.",
-      "confidence": "published"
-    },
-    {
-      "id": "ear:hci-article-documents-hci",
-      "source": "ea:publication:human-computer-interaction-for-creative-tools",
-      "target": "ea:concept:human-computer-interaction",
-      "predicate": "documents",
-      "label": "Documents",
-      "statement": "Human Computer Interaction for Creative Tools documents HCI as a creative tool discipline.",
-      "confidence": "published"
-    },
-    {
-      "id": "ear:generative-ai-article-documents-hci",
-      "source": "ea:publication:generative-ai-latent-space-and-creative-workflows",
-      "target": "ea:concept:human-computer-interaction",
-      "predicate": "documents",
-      "label": "Documents",
-      "statement": "Generative AI, Latent Space and Creative Workflows links AI workflows to human computer interaction and creative agency.",
-      "confidence": "published"
-    }
-  ]
+  "edges": []
 }

@@ -1,0 +1,87 @@
+{
+  "id": "ea:concept:contextual-execution-fr",
+  "type": "concept",
+  "translationOf": "ea:concept:contextual-execution",
+  "slug": {
+    "canonical": "contextual-execution"
+  },
+  "title": "Exécution contextuelle",
+  "definition": "Contextual execution est le practice de making identité, state, permissions, relationships et operating context active constraints on what a système can do.",
+  "abstract": "Contextual execution décrit runtime behavior where an operation is evaluated through entité identité, graphe relations, permissions, temporal state et intended scope.",
+  "description": "A canonical Electronic Artefacts concept connecting graphe runtime, Runtime Theory, VASTE et identité-aware systèmes.",
+  "locale": "fr",
+  "visibility": "public",
+  "publicationClass": "canonical",
+  "status": "active",
+  "maturity": "research",
+  "confidence": "canonical",
+  "version": {
+    "version": "1.0.0",
+    "createdAt": "2026-06-23",
+    "publishedAt": "2026-06-25",
+    "modifiedAt": "2026-06-25"
+  },
+  "authors": [
+    {
+      "id": "ea:organization:electronic-artefacts"
+    }
+  ],
+  "publisher": "ea:organization:electronic-artefacts",
+  "tags": [
+    "Context",
+    "Execution",
+    "Runtime",
+    "Identité",
+    "Permissions"
+  ],
+  "disciplines": [
+    "Systèmes Design",
+    "Programming",
+    "Systèmes de connaissance",
+    "Software Architecture"
+  ],
+  "scope": [
+    "Runtime context",
+    "Identité",
+    "Permissions",
+    "Graphe relations",
+    "Event propagation"
+  ],
+  "exclusions": [
+    "A global function call avec no relation à user, state ou entité context",
+    "A static label that is never used by execution logic"
+  ],
+  "claims": [
+    "Context becomes a runtime concern when it changes whether an operation is allowed ou meaningful.",
+    "Graphe runtimes need explicit context boundaries à remain governable."
+  ],
+  "bodyHtml": "<h2 id=\"role\">Rôle</h2>\n<p>Exécution contextuelle est documenté ici comme une entrée française du graphe public d’Electronic Artefacts. Contextual execution décrit runtime behavior where an operation is evaluated through entité identité, graphe relations, permissions, temporal state et intended scope.</p>\n<h2 id=\"usage\">Usage</h2>\n<p>Cette notion sert à relier les projets, publications et technologies qui partagent un même vocabulaire de conception. Contextual execution est le practice de making identité, state, permissions, relationships et operating context active constraints on what a système can do.</p>\n<h2 id=\"domaines\">Domaines</h2>\n<p>Cette entrée croise notamment les domaines suivants : Systèmes Design, Programming, Systèmes de connaissance, Software Architecture.</p>\n<h2 id=\"references\">Références</h2>\n<p>Les références principales sont conservées dans la fiche canonique et dans le graphe de connaissance public.</p>\n",
+  "headings": [
+    "Rôle",
+    "Usage",
+    "Domaines",
+    "Références"
+  ],
+  "headingItems": [
+    {
+      "level": 2,
+      "title": "Rôle",
+      "id": "role"
+    },
+    {
+      "level": 2,
+      "title": "Usage",
+      "id": "usage"
+    },
+    {
+      "level": 2,
+      "title": "Domaines",
+      "id": "domaines"
+    },
+    {
+      "level": 2,
+      "title": "Références",
+      "id": "references"
+    }
+  ]
+}

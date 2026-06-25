@@ -37,6 +37,16 @@ export const validateGraph = (entities: Entity[], relations: RelationStatement[]
     const routeKey = `${entity.locale}:${entity.type}:${entity.slug.canonical}`;
     if (routeKeys.has(routeKey)) throw new Error(`Duplicate entity route key ${routeKey}`);
     routeKeys.add(routeKey);
+    if (entity.translationOf) {
+      const source = byId.get(entity.translationOf);
+      if (!source) throw new Error(`${entity.id} translates unknown entity ${entity.translationOf}`);
+      if (source.type !== entity.type) {
+        throw new Error(`${entity.id} translation type ${entity.type} does not match ${source.type}`);
+      }
+      if (source.locale === entity.locale) {
+        throw new Error(`${entity.id} translation must use a different locale from ${entity.translationOf}`);
+      }
+    }
     for (const ref of collectEntityRefs(entity)) {
       if (!byId.has(ref)) throw new Error(`${entity.id} references unknown entity ${ref}`);
     }

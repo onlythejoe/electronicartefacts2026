@@ -1,0 +1,101 @@
+{
+  "id": "ea:concept:large-language-model-fr",
+  "type": "concept",
+  "translationOf": "ea:concept:large-language-model",
+  "slug": {
+    "canonical": "large-language-model"
+  },
+  "title": "Grand modèle de langage",
+  "alternateNames": [
+    "LLM"
+  ],
+  "definition": "A large language modèle est un parameterized machine-learning modèle trained à predict et generate sequences de tokens from statistical patterns learned across large text ou multimodal corpora.",
+  "abstract": "Large language modèles combine tokenization, embeddings, transformer layers, attention, training objectives et probabilistic decoding à generate ou transform language.",
+  "description": "A canonical definition de large language modèles, their operating principles, capabilities et limitations.",
+  "locale": "fr",
+  "visibility": "public",
+  "publicationClass": "canonical",
+  "status": "active",
+  "maturity": "research",
+  "confidence": "canonical",
+  "version": {
+    "version": "1.0.0",
+    "createdAt": "2026-06-24",
+    "publishedAt": "2026-06-25",
+    "modifiedAt": "2026-06-25"
+  },
+  "authors": [
+    {
+      "id": "ea:organization:electronic-artefacts"
+    }
+  ],
+  "publisher": "ea:organization:electronic-artefacts",
+  "tags": [
+    "LLM",
+    "Transformer",
+    "Tokens",
+    "Inference",
+    "Language Modèles"
+  ],
+  "disciplines": [
+    "Intelligence artificielle",
+    "Machine Learning",
+    "Programming",
+    "Systèmes de connaissance"
+  ],
+  "sources": [
+    {
+      "title": "Attention Is All You Need",
+      "url": "https://arxiv.org/abs/1706.03762",
+      "author": "Ashish Vaswani et al.",
+      "publisher": "arXiv",
+      "publishedAt": "2017-06-12",
+      "accessedAt": "2026-06-24"
+    }
+  ],
+  "scope": [
+    "Tokenization",
+    "Embeddings",
+    "Transformer architecture",
+    "Pretraining et adaptation",
+    "Inference et decoding",
+    "Context windows"
+  ],
+  "exclusions": [
+    "A donnéesbase that retrieves stored sentences without a learned generative modèle",
+    "A claim that generated text represents understanding, truth ou agency by itself"
+  ],
+  "claims": [
+    "Large language modèles generate token sequences from learned probability distributions rather than retrieving a single memorized answer.",
+    "Modèle capability depends on architecture, données, training, inference configuration, outils et evaluation context."
+  ],
+  "bodyHtml": "<h2 id=\"role\">Rôle</h2>\n<p>Grand modèle de langage est documenté ici comme une entrée française du graphe public d’Electronic Artefacts. Large language modèles combine tokenization, embeddings, transformer layers, attention, training objectives et probabilistic decoding à generate ou transform language.</p>\n<h2 id=\"usage\">Usage</h2>\n<p>Cette notion sert à relier les projets, publications et technologies qui partagent un même vocabulaire de conception. A large language modèle est un parameterized machine-learning modèle trained à predict et generate sequences de tokens from statistical patterns learned across large text ou multimodal corpora.</p>\n<h2 id=\"domaines\">Domaines</h2>\n<p>Cette entrée croise notamment les domaines suivants : Intelligence artificielle, Machine Learning, Programming, Systèmes de connaissance.</p>\n<h2 id=\"references\">Références</h2>\n<p>Les références principales restent les sources indiquées dans la fiche canonique, notamment Attention Is All You Need.</p>\n",
+  "headings": [
+    "Rôle",
+    "Usage",
+    "Domaines",
+    "Références"
+  ],
+  "headingItems": [
+    {
+      "level": 2,
+      "title": "Rôle",
+      "id": "role"
+    },
+    {
+      "level": 2,
+      "title": "Usage",
+      "id": "usage"
+    },
+    {
+      "level": 2,
+      "title": "Domaines",
+      "id": "domaines"
+    },
+    {
+      "level": 2,
+      "title": "Références",
+      "id": "references"
+    }
+  ]
+}

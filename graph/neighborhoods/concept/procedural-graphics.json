@@ -1,51 +1,16 @@
 {
-  "id": "local:ea:concept:procedural-graphics",
+  "id": "local:ea:concept:procedural-graphics-fr",
   "kind": "local",
-  "focus": "ea:concept:procedural-graphics",
+  "focus": "ea:concept:procedural-graphics-fr",
   "nodes": [
     {
-      "id": "ea:concept:procedural-graphics",
+      "id": "ea:concept:procedural-graphics-fr",
       "type": "concept",
-      "title": "Procedural Graphics",
-      "route": "/knowledge/concepts/procedural-graphics/",
+      "title": "Graphisme procédural",
+      "route": "/fr/knowledge/concepts/procedural-graphics/",
       "status": "active",
       "confidence": "canonical"
-    },
-    {
-      "id": "ea:publication:creative-coding-pedagogy-from-logo-to-p5js",
-      "type": "publication",
-      "title": "Creative Coding Pedagogy from Logo to p5.js",
-      "route": "/publications/creative-coding-pedagogy-from-logo-to-p5js/",
-      "status": "active",
-      "confidence": "published"
-    },
-    {
-      "id": "ea:publication:procedural-graphics-shaders-and-visual-systems",
-      "type": "publication",
-      "title": "Procedural Graphics, Shaders and Visual Systems",
-      "route": "/publications/procedural-graphics-shaders-and-visual-systems/",
-      "status": "active",
-      "confidence": "published"
     }
   ],
-  "edges": [
-    {
-      "id": "ear:creative-coding-pedagogy-article-documents-procedural-graphics",
-      "source": "ea:publication:creative-coding-pedagogy-from-logo-to-p5js",
-      "target": "ea:concept:procedural-graphics",
-      "predicate": "documents",
-      "label": "Documents",
-      "statement": "Creative Coding Pedagogy from Logo to p5.js links visual learning to procedural graphics.",
-      "confidence": "published"
-    },
-    {
-      "id": "ear:procedural-graphics-article-documents-procedural-graphics",
-      "source": "ea:publication:procedural-graphics-shaders-and-visual-systems",
-      "target": "ea:concept:procedural-graphics",
-      "predicate": "documents",
-      "label": "Documents",
-      "statement": "Procedural Graphics, Shaders and Visual Systems documents procedural graphics as a rule-based visual practice.",
-      "confidence": "published"
-    }
-  ]
+  "edges": []
 }

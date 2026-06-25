@@ -1,0 +1,94 @@
+{
+  "id": "ea:concept:open-source-fr",
+  "type": "concept",
+  "translationOf": "ea:concept:open-source",
+  "slug": {
+    "canonical": "open-source"
+  },
+  "title": "Open source",
+  "definition": "Open source est un software et culturel practice dans which source code is made available under licenses that allow use, study, modification et redistribution.",
+  "abstract": "Open source is both a licensing modèle et a culturel infrastructure pour software, creative outils, public knowledge, maintainership et technical education.",
+  "description": "A canonical concept record pour open source software et culturel infrastructure.",
+  "locale": "fr",
+  "visibility": "public",
+  "publicationClass": "canonical",
+  "status": "active",
+  "maturity": "research",
+  "confidence": "canonical",
+  "version": {
+    "version": "1.0.0",
+    "createdAt": "2026-06-24",
+    "publishedAt": "2026-06-25",
+    "modifiedAt": "2026-06-25"
+  },
+  "authors": [
+    {
+      "id": "ea:organization:electronic-artefacts"
+    }
+  ],
+  "publisher": "ea:organization:electronic-artefacts",
+  "tags": [
+    "Open source",
+    "Software",
+    "Commons",
+    "Infrastructure"
+  ],
+  "disciplines": [
+    "Open source",
+    "Programming",
+    "Programmation créative",
+    "Creative Business"
+  ],
+  "sources": [
+    {
+      "title": "The Open source Definition",
+      "url": "https://opensource.org/osd",
+      "publisher": "Open Source Initiative",
+      "accessedAt": "2026-06-24"
+    }
+  ],
+  "scope": [
+    "Software licenses",
+    "Commons",
+    "Maintainers",
+    "Creative outils",
+    "Culturel infrastructure"
+  ],
+  "exclusions": [
+    "Source-available software whose license blocks modification ou reuse",
+    "Public code without clear rights ou maintenance context"
+  ],
+  "claims": [
+    "Open source is infrastructure because many culturel et technical systèmes depend on shared code.",
+    "Open source value depends on maintenance, gouvernance et documentation, not access alone."
+  ],
+  "bodyHtml": "<h2 id=\"role\">Rôle</h2>\n<p>Open source est documenté ici comme une entrée française du graphe public d’Electronic Artefacts. Open source is both a licensing modèle et a culturel infrastructure pour software, creative outils, public knowledge, maintainership et technical education.</p>\n<h2 id=\"usage\">Usage</h2>\n<p>Cette notion sert à relier les projets, publications et technologies qui partagent un même vocabulaire de conception. Open source est un software et culturel practice dans which source code is made available under licenses that allow use, study, modification et redistribution.</p>\n<h2 id=\"domaines\">Domaines</h2>\n<p>Cette entrée croise notamment les domaines suivants : Open source, Programming, Programmation créative, Creative Business.</p>\n<h2 id=\"references\">Références</h2>\n<p>Les références principales restent les sources indiquées dans la fiche canonique, notamment The Open Source Definition.</p>\n",
+  "headings": [
+    "Rôle",
+    "Usage",
+    "Domaines",
+    "Références"
+  ],
+  "headingItems": [
+    {
+      "level": 2,
+      "title": "Rôle",
+      "id": "role"
+    },
+    {
+      "level": 2,
+      "title": "Usage",
+      "id": "usage"
+    },
+    {
+      "level": 2,
+      "title": "Domaines",
+      "id": "domaines"
+    },
+    {
+      "level": 2,
+      "title": "Références",
+      "id": "references"
+    }
+  ]
+}

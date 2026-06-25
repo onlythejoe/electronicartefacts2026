@@ -1,0 +1,94 @@
+---
+id: ea:publication:iiif-and-compound-cultural-objects-fr
+type: publication
+slug:
+  canonical: iiif-and-compound-cultural-objects
+title: IIIF et objets culturels composés
+subtitle: Technical Article
+abstract: A practical explanation de IIIF Presentation API concepts, compound
+  objects, manifests, canvases, annotations et culturel archive interfaces.
+description: Understand IIIF comme presentation infrastructure pour compound
+  culturel objects, archives, manifests, canvases et annotations.
+locale: fr
+visibility: public
+publicationClass: published
+status: active
+maturity: research
+confidence: published
+version:
+  version: 1.0.0
+  createdAt: 2026-06-24
+  publishedAt: 2026-06-25
+  modifiedAt: 2026-06-25
+authors:
+  - id: ea:organization:electronic-artefacts
+publisher: ea:organization:electronic-artefacts
+format: technicalArticle
+subjects:
+  - id: ea:technology:iiif
+  - id: ea:concept:digital-preservation
+  - id: ea:concept:linked-data
+  - id: ea:concept:metadata
+  - id: ea:project:vestiges
+claims:
+  - IIIF is useful pour culturel infrastructure because it modèles compound
+    objects comme presentable structures rather than isolated files.
+  - IIIF should be paired avec richer métadonnées et graphee de connaissancess
+    when discovery, interpretation et sémantique search sont required.
+evidence:
+  - id: ea:technology:iiif
+  - id: ea:concept:digital-preservation
+sources:
+  - title: IIIF Presentation API 3.0
+    publisher: IIIF Consortium
+    accessedAt: 2026-06-24
+    url: https://iiif.io/api/presentation/3.0/
+  - title: IIIF Image API 3.0
+    publisher: IIIF Consortium
+    accessedAt: 2026-06-24
+    url: https://iiif.io/api/image/3.0/
+  - title: JSON-LD 1.1
+    publisher: W3C
+    accessedAt: 2026-06-24
+    url: https://www.w3.org/TR/json-ld11/
+citation:
+  preferred: Electronic Artefacts. "IIIF et Compound Culturel Objects." Technical
+    article, version 1.0.0, 2026.
+tags:
+  - IIIF
+  - Digital Archives
+  - Culturel Objects
+  - Métadonnées
+  - Données liées
+disciplines:
+  - Préservation numérique
+  - Culturel Infrastructure
+  - Systèmes de connaissance
+  - Web Development
+translationOf: ea:publication:iiif-and-compound-cultural-objects
+---
+
+## Problem
+
+IIIF et objets culturels composés répond à un problème de lisibilité, d’architecture ou de transmission dans les systèmes numériques contemporains. A practical explanation de IIIF Presentation API concepts, compound objects, manifests, canvases, annotations et culturel archive interfaces.
+
+## Architecture
+
+La page organise le sujet comme un ensemble de notions, dépendances, preuves et relations éditoriales connectées au graphe de connaissance.
+
+## Implementation
+
+Pour Electronic Artefacts, cette publication sert de repère français pour cadrer les choix de conception, préparer des contenus plus détaillés et stabiliser le vocabulaire technique.
+
+## Evidence
+
+- IIIF is useful pour culturel infrastructure because it modèles compound objects comme presentable structures rather than isolated files.
+- IIIF should be paired avec richer métadonnées et graphee de connaissancess when discovery, interpretation et sémantique search sont required.
+
+## Limitations
+
+Cette version française assure la couverture éditoriale du site. Une passe ultérieure pourra enrichir le style et traduire plus finement chaque nuance de la version longue.
+
+## References
+
+Références conservées depuis la fiche canonique : IIIF Presentation API 3.0, IIIF Image API 3.0, JSON-LD 1.1.

@@ -1,51 +1,16 @@
 {
-  "id": "local:ea:concept:typography",
+  "id": "local:ea:concept:typography-fr",
   "kind": "local",
-  "focus": "ea:concept:typography",
+  "focus": "ea:concept:typography-fr",
   "nodes": [
     {
-      "id": "ea:concept:typography",
+      "id": "ea:concept:typography-fr",
       "type": "concept",
-      "title": "Typography",
-      "route": "/knowledge/concepts/typography/",
+      "title": "Typographie",
+      "route": "/fr/knowledge/concepts/typography/",
       "status": "active",
       "confidence": "canonical"
-    },
-    {
-      "id": "ea:publication:motion-design-time-and-interface-semantics",
-      "type": "publication",
-      "title": "Motion Design, Time and Interface Semantics",
-      "route": "/publications/motion-design-time-and-interface-semantics/",
-      "status": "active",
-      "confidence": "published"
-    },
-    {
-      "id": "ea:publication:typography-reading-systems-and-digital-interfaces",
-      "type": "publication",
-      "title": "Typography, Reading Systems and Digital Interfaces",
-      "route": "/publications/typography-reading-systems-and-digital-interfaces/",
-      "status": "active",
-      "confidence": "published"
     }
   ],
-  "edges": [
-    {
-      "id": "ear:motion-design-article-documents-typography",
-      "source": "ea:publication:motion-design-time-and-interface-semantics",
-      "target": "ea:concept:typography",
-      "predicate": "documents",
-      "label": "Documents",
-      "statement": "Motion Design, Time and Interface Semantics connects motion to typography and reading behavior.",
-      "confidence": "published"
-    },
-    {
-      "id": "ear:typography-article-documents-typography",
-      "source": "ea:publication:typography-reading-systems-and-digital-interfaces",
-      "target": "ea:concept:typography",
-      "predicate": "documents",
-      "label": "Documents",
-      "statement": "Typography, Reading Systems and Digital Interfaces documents typography as reading infrastructure.",
-      "confidence": "published"
-    }
-  ]
+  "edges": []
 }

@@ -1,0 +1,146 @@
+{
+  "id": "ea:publication:runtime-engines-and-domain-operating-systems-fr",
+  "type": "publication",
+  "translationOf": "ea:publication:runtime-engines-and-domain-operating-systems",
+  "slug": {
+    "canonical": "runtime-engines-and-domain-operating-systems"
+  },
+  "title": "Moteurs runtime et systèmes d’exploitation de domaine",
+  "subtitle": "Technical Article",
+  "abstract": "A systèmes-level guide à runtime engines, domain operating systèmes, identité, state, permissions, events, extensions et public projections.",
+  "description": "Understand runtime engines et domain operating systèmes, et how shared entités, permissions et events can support many applications.",
+  "locale": "fr",
+  "visibility": "public",
+  "publicationClass": "published",
+  "status": "active",
+  "maturity": "research",
+  "confidence": "published",
+  "version": {
+    "version": "1.0.0",
+    "createdAt": "2026-06-24",
+    "publishedAt": "2026-06-25",
+    "modifiedAt": "2026-06-25"
+  },
+  "authors": [
+    {
+      "id": "ea:organization:electronic-artefacts"
+    }
+  ],
+  "publisher": "ea:organization:electronic-artefacts",
+  "tags": [
+    "Runtime Engine",
+    "Domain OS",
+    "Business OS",
+    "VASTE",
+    "Composable Systèmes"
+  ],
+  "disciplines": [
+    "Systèmes Design",
+    "Software Architecture",
+    "Programming",
+    "Systèmes de connaissance"
+  ],
+  "sources": [
+    {
+      "title": "POSIX.1-2024",
+      "url": "https://pubs.opengroup.org/onlinepubs/9799919799/",
+      "publisher": "The Open Group and IEEE",
+      "publishedAt": "2024-06-14",
+      "accessedAt": "2026-06-24"
+    },
+    {
+      "title": "Domain-Driven Design Reference",
+      "url": "https://www.domainlanguage.com/ddd/reference/",
+      "author": "Eric Evans",
+      "publisher": "Domain Language",
+      "publishedAt": "2015-01-01",
+      "accessedAt": "2026-06-24"
+    },
+    {
+      "title": "CloudEvents",
+      "url": "https://cloudevents.io/",
+      "publisher": "Cloud Native Computing Foundation",
+      "accessedAt": "2026-06-24"
+    }
+  ],
+  "format": "technicalArticle",
+  "subjects": [
+    {
+      "id": "ea:concept:domain-operating-system"
+    },
+    {
+      "id": "ea:concept:graph-runtime"
+    },
+    {
+      "id": "ea:concept:contextual-execution"
+    },
+    {
+      "id": "ea:concept:event-driven-architecture"
+    },
+    {
+      "id": "ea:program:vaste"
+    },
+    {
+      "id": "ea:project:vestiges"
+    }
+  ],
+  "claims": [
+    "A domain operating système is credible when several applications reuse shared identité, entité, permission et event sémantiques.",
+    "Runtime engines should separate stable domain contracts from replaceable storage, transport et interface implementations."
+  ],
+  "evidence": [
+    {
+      "id": "ea:concept:domain-operating-system"
+    },
+    {
+      "id": "ea:concept:graph-runtime"
+    },
+    {
+      "id": "ea:program:vaste"
+    }
+  ],
+  "citation": {
+    "preferred": "Electronic Artefacts. \"Runtime Engines et Domain Operating Systèmes.\" Technical article, version 1.0.0, 2026."
+  },
+  "bodyHtml": "<h2 id=\"problem\">Problem</h2>\n<p>Moteurs runtime et systèmes d’exploitation de domaine répond à un problème de lisibilité, d’architecture ou de transmission dans les systèmes numériques contemporains. A systèmes-level guide à runtime engines, domain operating systèmes, identité, state, permissions, events, extensions et public projections.</p>\n<h2 id=\"architecture\">Architecture</h2>\n<p>La page organise le sujet comme un ensemble de notions, dépendances, preuves et relations éditoriales connectées au graphe de connaissance.</p>\n<h2 id=\"implementation\">Implementation</h2>\n<p>Pour Electronic Artefacts, cette publication sert de repère français pour cadrer les choix de conception, préparer des contenus plus détaillés et stabiliser le vocabulaire technique.</p>\n<h2 id=\"evidence\">Evidence</h2>\n<ul>\n<li>A domain operating système is credible when several applications reuse shared identité, entité, permission et event sémantiques.</li>\n<li>Runtime engines should separate stable domain contracts from replaceable storage, transport et interface implementations.</li>\n</ul>\n<h2 id=\"limitations\">Limitations</h2>\n<p>Cette version française assure la couverture éditoriale du site. Une passe ultérieure pourra enrichir le style et traduire plus finement chaque nuance de la version longue.</p>\n<h2 id=\"references\">References</h2>\n<p>Références conservées depuis la fiche canonique : POSIX.1-2024, Domain-Driven Design Reference, CloudEvents.</p>\n",
+  "headings": [
+    "Problem",
+    "Architecture",
+    "Implementation",
+    "Evidence",
+    "Limitations",
+    "References"
+  ],
+  "headingItems": [
+    {
+      "level": 2,
+      "title": "Problem",
+      "id": "problem"
+    },
+    {
+      "level": 2,
+      "title": "Architecture",
+      "id": "architecture"
+    },
+    {
+      "level": 2,
+      "title": "Implementation",
+      "id": "implementation"
+    },
+    {
+      "level": 2,
+      "title": "Evidence",
+      "id": "evidence"
+    },
+    {
+      "level": 2,
+      "title": "Limitations",
+      "id": "limitations"
+    },
+    {
+      "level": 2,
+      "title": "References",
+      "id": "references"
+    }
+  ]
+}

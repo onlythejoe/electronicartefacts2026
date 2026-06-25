@@ -46,5 +46,5 @@ export const routeForEntity = (entity: Entity, locale: Locale = routeLocale(enti
 
 export const identifierPath = (entity: Entity): string => {
   const type = entity.type === "researchField" ? "research-field" : entity.type;
-  return `/id/${type}/${entity.slug.canonical}/`;
+  return localizedRoute(`/id/${type}/${entity.slug.canonical}/`, routeLocale(entity.locale));
 };

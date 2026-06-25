@@ -1,0 +1,78 @@
+---
+id: ea:concept:cybernetic-feedback-fr
+type: concept
+slug:
+  canonical: cybernetic-feedback
+title: Rétroaction cybernétique
+definition: Cybernetic feedback est le circulation de information about a
+  système's state back into the système so that behavior can be regulated,
+  adapted ou transformed.
+abstract: Cybernetic feedback relie control, communication, systèmes theory,
+  generative art, machine listening, adaptive interfaces et runtime gouvernance.
+description: A canonical definition de cybernetic feedback pour Electronic
+  Artefacts recherche, creative systèmes et historical technology context.
+locale: fr
+visibility: public
+publicationClass: canonical
+status: active
+maturity: research
+confidence: validated
+version:
+  version: 1.0.0
+  createdAt: 2026-06-23
+  publishedAt: 2026-06-25
+  modifiedAt: 2026-06-25
+authors:
+  - id: ea:organization:electronic-artefacts
+publisher: ea:organization:electronic-artefacts
+scope:
+  - Feedback
+  - Regulation
+  - Control
+  - Communication
+  - Adaptation
+  - Système state
+exclusions:
+  - Any loop avec no state observation ou corrective effect
+  - A metaphor pour complexity without operational meaning
+claims:
+  - Feedback est un core concept pour understanding adaptive creative et
+    technical systèmes.
+  - Cybernetic language should be used precisely because it carries both
+    technical et culturel history.
+sources:
+  - title: Cybernetics ou Control et Communication dans the Animal et the Machine
+    author: Norbert Wiener
+    publisher: MIT Press
+    publishedAt: 1948-01-01
+    accessedAt: 2026-06-23
+    url: https://direct.mit.edu/books/oa-monograph/4581/Cybernetics-or-Control-and-Communication-in-the
+tags:
+  - Cybernetics
+  - Feedback
+  - Systèmes Theory
+  - Control
+  - Generative Systèmes
+disciplines:
+  - Cybernetics
+  - Complexity
+  - Systèmes Design
+  - Digital Art
+translationOf: ea:concept:cybernetic-feedback
+---
+
+## Rôle
+
+Rétroaction cybernétique est documenté ici comme une entrée française du graphe public d’Electronic Artefacts. Cybernetic feedback relie control, communication, systèmes theory, generative art, machine listening, adaptive interfaces et runtime gouvernance.
+
+## Usage
+
+Cette notion sert à relier les projets, publications et technologies qui partagent un même vocabulaire de conception. Cybernetic feedback est le circulation de information about a système's state back into the système so that behavior can be regulated, adapted ou transformed.
+
+## Domaines
+
+Cette entrée croise notamment les domaines suivants : Cybernetics, Complexity, Systèmes Design, Digital Art.
+
+## Références
+
+Les références principales restent les sources indiquées dans la fiche canonique, notamment Cybernetics or Control and Communication in the Animal and the Machine.

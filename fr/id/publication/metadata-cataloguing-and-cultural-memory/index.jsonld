@@ -1,0 +1,268 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "WebPage",
+      "@id": "https://electronicartefacts.com/fr/publications/metadata-cataloguing-and-cultural-memory/#webpage",
+      "url": "https://electronicartefacts.com/fr/publications/metadata-cataloguing-and-cultural-memory/",
+      "name": "Métadonnées, catalogage et mémoire culturelle",
+      "description": "A technical article on métadonnées, catalogage, culturel mémoire, preservation standards et Electronic Artefacts graphe records.",
+      "inLanguage": "fr",
+      "datePublished": "2026-06-25",
+      "dateModified": "2026-06-25",
+      "primaryImageOfPage": {
+        "@type": "ImageObject",
+        "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-search.jpg",
+        "description": "Métadonnées, catalogage et mémoire culturelle"
+      },
+      "breadcrumb": {
+        "@id": "https://electronicartefacts.com/fr/publications/metadata-cataloguing-and-cultural-memory/#breadcrumb"
+      },
+      "mainEntity": {
+        "@id": "https://electronicartefacts.com/fr/id/publication/metadata-cataloguing-and-cultural-memory/"
+      },
+      "isPartOf": {
+        "@id": "https://electronicartefacts.com/#website"
+      },
+      "publisher": {
+        "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
+      },
+      "isAccessibleForFree": true
+    },
+    {
+      "@type": "TechArticle",
+      "@id": "https://electronicartefacts.com/fr/id/publication/metadata-cataloguing-and-cultural-memory/",
+      "identifier": "ea:publication:metadata-cataloguing-and-cultural-memory-fr",
+      "name": "Métadonnées, catalogage et mémoire culturelle",
+      "headline": "Métadonnées, catalogage et mémoire culturelle",
+      "abstract": "This article explains métadonnées comme a culturel mémoire layer, connecting catalogage, Dublin Core, PREMIS, METS, provenance, archives et graphee de connaissancess.",
+      "description": "This article explains métadonnées comme a culturel mémoire layer, connecting catalogage, Dublin Core, PREMIS, METS, provenance, archives et graphee de connaissancess.",
+      "url": "https://electronicartefacts.com/fr/publications/metadata-cataloguing-and-cultural-memory/",
+      "mainEntityOfPage": {
+        "@id": "https://electronicartefacts.com/fr/publications/metadata-cataloguing-and-cultural-memory/#webpage"
+      },
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-search.jpg",
+        "description": "Métadonnées, catalogage et mémoire culturelle"
+      },
+      "author": [
+        {
+          "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
+        }
+      ],
+      "creator": [
+        {
+          "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
+        }
+      ],
+      "keywords": [
+        "Métadonnées",
+        "Catalogage",
+        "Archives",
+        "Culturel Mémoire",
+        "Systèmes de connaissance",
+        "Recherche Méthodes",
+        "History de Technology"
+      ],
+      "inLanguage": "fr",
+      "dateCreated": "2026-06-24",
+      "datePublished": "2026-06-25",
+      "dateModified": "2026-06-25",
+      "publisher": {
+        "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
+      },
+      "copyrightHolder": {
+        "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
+      },
+      "isAccessibleForFree": true,
+      "wordCount": 168,
+      "citation": [
+        "Electronic Artefacts. \"Métadonnées, Catalogage et Culturel Mémoire.\" Technical article, version 1.0.0, 2026.",
+        {
+          "@type": "CreativeWork",
+          "name": "DCMI Métadonnées Terms",
+          "url": "https://www.dublincore.org/specifications/dublin-core/dcmi-terms/",
+          "publisher": "Dublin Core Metadata Initiative",
+          "datePublished": "2020-01-20"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Métadonnées Encoding et Transmission Standard",
+          "url": "https://www.loc.gov/standards/mets/",
+          "publisher": "Library of Congress"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "PREMIS Preservation Métadonnées",
+          "url": "https://www.loc.gov/standards/premis/",
+          "publisher": "Library of Congress"
+        }
+      ],
+      "about": [
+        {
+          "@id": "https://electronicartefacts.com/id/concept/metadata/"
+        },
+        {
+          "@id": "https://electronicartefacts.com/id/concept/provenance/"
+        },
+        {
+          "@id": "https://electronicartefacts.com/id/concept/digital-preservation/"
+        },
+        {
+          "@id": "https://electronicartefacts.com/id/concept/knowledge-graph/"
+        },
+        {
+          "@id": "https://electronicartefacts.com/id/project/vestiges/"
+        }
+      ],
+      "mentions": [
+        {
+          "@id": "https://electronicartefacts.com/id/concept/metadata/"
+        },
+        {
+          "@id": "https://electronicartefacts.com/id/project/vestiges/"
+        }
+      ],
+      "articleSection": [
+        "Archives",
+        "Systèmes de connaissance",
+        "Recherche Méthodes",
+        "History de Technology",
+        "Métadonnées",
+        "Catalogage"
+      ],
+      "timeRequired": "PT1M",
+      "isBasedOn": [
+        {
+          "@type": "CreativeWork",
+          "name": "DCMI Métadonnées Terms",
+          "url": "https://www.dublincore.org/specifications/dublin-core/dcmi-terms/",
+          "publisher": "Dublin Core Metadata Initiative",
+          "datePublished": "2020-01-20"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Métadonnées Encoding et Transmission Standard",
+          "url": "https://www.loc.gov/standards/mets/",
+          "publisher": "Library of Congress"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "PREMIS Preservation Métadonnées",
+          "url": "https://www.loc.gov/standards/premis/",
+          "publisher": "Library of Congress"
+        }
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/",
+      "name": "Electronic Artefacts",
+      "url": "https://electronicartefacts.com/",
+      "description": "Electronic Artefacts designs digital products, knowledge systems, cultural platforms and research-led experiences.",
+      "keywords": [
+        "creative technology",
+        "knowledge graph",
+        "AI agents",
+        "retrieval-augmented generation",
+        "linked data",
+        "digital preservation",
+        "cultural infrastructure",
+        "software systems",
+        "research publishing"
+      ],
+      "knowsAbout": [
+        "AI agents",
+        "knowledge graphs",
+        "retrieval-augmented generation",
+        "linked data",
+        "JSON-LD",
+        "creative coding",
+        "digital preservation",
+        "cultural knowledge systems",
+        "software architecture",
+        "human-computer interaction",
+        "generative AI",
+        "provenance"
+      ],
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-logo.jpg"
+      },
+      "image": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-search.jpg",
+      "email": "electronic.artefacts@gmail.com",
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "email": "electronic.artefacts@gmail.com",
+          "contactType": "inquiries",
+          "availableLanguage": [
+            "en",
+            "fr"
+          ]
+        }
+      ],
+      "sameAs": [
+        "https://www.instagram.com/electronic.artefacts/",
+        "https://github.com/onlythejoe",
+        "https://soundcloud.com/electronic-artefacts"
+      ]
+    },
+    {
+      "@type": "WebSite",
+      "@id": "https://electronicartefacts.com/#website",
+      "url": "https://electronicartefacts.com/",
+      "name": "Electronic Artefacts",
+      "description": "Electronic Artefacts designs digital products, knowledge systems, cultural platforms and research-led experiences.",
+      "keywords": [
+        "creative technology",
+        "knowledge graph",
+        "AI agents",
+        "retrieval-augmented generation",
+        "linked data",
+        "digital preservation",
+        "cultural infrastructure",
+        "software systems",
+        "research publishing"
+      ],
+      "dateModified": "2026-06-25",
+      "publisher": {
+        "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
+      },
+      "inLanguage": "en",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://electronicartefacts.com/search/?q={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
+      }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": "https://electronicartefacts.com/fr/publications/metadata-cataloguing-and-cultural-memory/#breadcrumb",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Electronic Artefacts",
+          "item": "https://electronicartefacts.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "Publications",
+          "item": "https://electronicartefacts.com/publications/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Métadonnées, catalogage et mémoire culturelle",
+          "item": "https://electronicartefacts.com/fr/publications/metadata-cataloguing-and-cultural-memory/"
+        }
+      ]
+    }
+  ]
+}

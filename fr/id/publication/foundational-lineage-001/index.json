@@ -1,0 +1,97 @@
+{
+  "id": "ea:publication:foundational-lineage-001-fr",
+  "type": "publication",
+  "translationOf": "ea:publication:foundational-lineage-001",
+  "slug": {
+    "canonical": "foundational-lineage-001"
+  },
+  "title": "Foundational Lineage #001",
+  "subtitle": "Recherche Note",
+  "abstract": "This recherche note records early architecture, communication-système et documentation threads that led à Electronic Artefacts, Runtime Theory et VASTE.",
+  "description": "A concise record de the foundational recherche lineage connecting information architecture, taxonomy, runtime systèmes et public knowledge structures.",
+  "locale": "fr",
+  "visibility": "public",
+  "publicationClass": "published",
+  "status": "research",
+  "maturity": "research",
+  "confidence": "published",
+  "version": {
+    "version": "1.0.0",
+    "createdAt": "2026-01-01",
+    "publishedAt": "2026-06-25",
+    "modifiedAt": "2026-06-25"
+  },
+  "authors": [
+    {
+      "id": "ea:organization:electronic-artefacts"
+    }
+  ],
+  "publisher": "ea:organization:electronic-artefacts",
+  "tags": [
+    "Foundational",
+    "Lineage",
+    "Recherche",
+    "Information architecture"
+  ],
+  "format": "researchNote",
+  "subjects": [
+    {
+      "id": "ea:researchField:runtime-theory"
+    },
+    {
+      "id": "ea:program:vaste"
+    }
+  ],
+  "claims": [
+    "Electronic Artefacts developed through a shared concern pour architecture, communication systèmes, industrial documentation, wayfinding et taxonomy."
+  ],
+  "evidence": [
+    {
+      "id": "ea:program:vaste"
+    }
+  ],
+  "citation": {
+    "preferred": "Electronic Artefacts. “Foundational Lineage #001.” Recherche note, version 1.0.0, 2026."
+  },
+  "bodyHtml": "<h2 id=\"question\">Question</h2>\n<p>La question centrale est la suivante : comment rendre Foundational Lineage #001 compréhensible et utile dans le corpus français d’Electronic Artefacts ?</p>\n<h2 id=\"context\">Context</h2>\n<p>This recherche note records early architecture, communication-système et documentation threads that led à Electronic Artefacts, Runtime Theory et VASTE. Ce contexte relie la publication aux pratiques numériques, culturelles et techniques suivies par le studio.</p>\n<h2 id=\"observation\">Observation</h2>\n<ul>\n<li>Electronic Artefacts developed through a shared concern pour architecture, communication systèmes, industrial documentation, wayfinding et taxonomy.</li>\n</ul>\n<h2 id=\"interpretation\">Interpretation</h2>\n<p>L’interprétation proposée est pragmatique : le sujet sert à mieux concevoir, documenter et gouverner des systèmes numériques et culturels.</p>\n<h2 id=\"limitations\">Limitations</h2>\n<p>Cette version française assure la couverture éditoriale du site. Une passe ultérieure pourra enrichir le style et traduire plus finement chaque nuance de la version longue.</p>\n<h2 id=\"references\">References</h2>\n<p>Références conservées dans la fiche canonique et dans le graphe public.</p>\n",
+  "headings": [
+    "Question",
+    "Context",
+    "Observation",
+    "Interpretation",
+    "Limitations",
+    "References"
+  ],
+  "headingItems": [
+    {
+      "level": 2,
+      "title": "Question",
+      "id": "question"
+    },
+    {
+      "level": 2,
+      "title": "Context",
+      "id": "context"
+    },
+    {
+      "level": 2,
+      "title": "Observation",
+      "id": "observation"
+    },
+    {
+      "level": 2,
+      "title": "Interpretation",
+      "id": "interpretation"
+    },
+    {
+      "level": 2,
+      "title": "Limitations",
+      "id": "limitations"
+    },
+    {
+      "level": 2,
+      "title": "References",
+      "id": "references"
+    }
+  ]
+}

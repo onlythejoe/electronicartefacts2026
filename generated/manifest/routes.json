@@ -240,6 +240,630 @@
     "identifier": "/id/concept/web-audio/"
   },
   {
+    "id": "ea:collection:knowledge-hub-foundations-fr",
+    "locale": "fr",
+    "route": "/fr/archive/collections/knowledge-hub-foundations/",
+    "identifier": "/fr/id/collection/knowledge-hub-foundations/"
+  },
+  {
+    "id": "ea:collection:knowledge-hub-fourth-wave-fr",
+    "locale": "fr",
+    "route": "/fr/archive/collections/knowledge-hub-fourth-wave/",
+    "identifier": "/fr/id/collection/knowledge-hub-fourth-wave/"
+  },
+  {
+    "id": "ea:collection:knowledge-hub-second-wave-fr",
+    "locale": "fr",
+    "route": "/fr/archive/collections/knowledge-hub-second-wave/",
+    "identifier": "/fr/id/collection/knowledge-hub-second-wave/"
+  },
+  {
+    "id": "ea:collection:knowledge-hub-third-wave-fr",
+    "locale": "fr",
+    "route": "/fr/archive/collections/knowledge-hub-third-wave/",
+    "identifier": "/fr/id/collection/knowledge-hub-third-wave/"
+  },
+  {
+    "id": "ea:concept:ai-agent-fr",
+    "locale": "fr",
+    "route": "/fr/knowledge/concepts/ai-agent/",
+    "identifier": "/fr/id/concept/ai-agent/"
+  },
+  {
+    "id": "ea:concept:algorithmic-composition-fr",
+    "locale": "fr",
+    "route": "/fr/knowledge/concepts/algorithmic-composition/",
+    "identifier": "/fr/id/concept/algorithmic-composition/"
+  },
+  {
+    "id": "ea:concept:augmented-intelligence-fr",
+    "locale": "fr",
+    "route": "/fr/knowledge/concepts/augmented-intelligence/",
+    "identifier": "/fr/id/concept/augmented-intelligence/"
+  },
+  {
+    "id": "ea:concept:autonomous-system-fr",
+    "locale": "fr",
+    "route": "/fr/knowledge/concepts/autonomous-system/",
+    "identifier": "/fr/id/concept/autonomous-system/"
+  },
+  {
+    "id": "ea:concept:contextual-execution-fr",
+    "locale": "fr",
+    "route": "/fr/knowledge/concepts/contextual-execution/",
+    "identifier": "/fr/id/concept/contextual-execution/"
+  },
+  {
+    "id": "ea:concept:creative-coding-fr",
+    "locale": "fr",
+    "route": "/fr/knowledge/concepts/creative-coding/",
+    "identifier": "/fr/id/concept/creative-coding/"
+  },
+  {
+    "id": "ea:concept:cybernetic-feedback-fr",
+    "locale": "fr",
+    "route": "/fr/knowledge/concepts/cybernetic-feedback/",
+    "identifier": "/fr/id/concept/cybernetic-feedback/"
+  },
+  {
+    "id": "ea:concept:digital-preservation-fr",
+    "locale": "fr",
+    "route": "/fr/knowledge/concepts/digital-preservation/",
+    "identifier": "/fr/id/concept/digital-preservation/"
+  },
+  {
+    "id": "ea:concept:domain-operating-system-fr",
+    "locale": "fr",
+    "route": "/fr/knowledge/concepts/domain-operating-system/",
+    "identifier": "/fr/id/concept/domain-operating-system/"
+  },
+  {
+    "id": "ea:concept:entity-identity-fr",
+    "locale": "fr",
+    "route": "/fr/knowledge/concepts/entity-identity/",
+    "identifier": "/fr/id/concept/entity-identity/"
+  },
+  {
+    "id": "ea:concept:event-driven-architecture-fr",
+    "locale": "fr",
+    "route": "/fr/knowledge/concepts/event-driven-architecture/",
+    "identifier": "/fr/id/concept/event-driven-architecture/"
+  },
+  {
+    "id": "ea:concept:generative-ai-fr",
+    "locale": "fr",
+    "route": "/fr/knowledge/concepts/generative-ai/",
+    "identifier": "/fr/id/concept/generative-ai/"
+  },
+  {
+    "id": "ea:concept:generative-system-fr",
+    "locale": "fr",
+    "route": "/fr/knowledge/concepts/generative-system/",
+    "identifier": "/fr/id/concept/generative-system/"
+  },
+  {
+    "id": "ea:concept:graph-modeling-fr",
+    "locale": "fr",
+    "route": "/fr/knowledge/concepts/graph-modeling/",
+    "identifier": "/fr/id/concept/graph-modeling/"
+  },
+  {
+    "id": "ea:concept:graph-runtime-fr",
+    "locale": "fr",
+    "route": "/fr/knowledge/concepts/graph-runtime/",
+    "identifier": "/fr/id/concept/graph-runtime/"
+  },
+  {
+    "id": "ea:concept:human-computer-interaction-fr",
+    "locale": "fr",
+    "route": "/fr/knowledge/concepts/human-computer-interaction/",
+    "identifier": "/fr/id/concept/human-computer-interaction/"
+  },
+  {
+    "id": "ea:concept:hypertext-fr",
+    "locale": "fr",
+    "route": "/fr/knowledge/concepts/hypertext/",
+    "identifier": "/fr/id/concept/hypertext/"
+  },
+  {
+    "id": "ea:concept:internet-culture-fr",
+    "locale": "fr",
+    "route": "/fr/knowledge/concepts/internet-culture/",
+    "identifier": "/fr/id/concept/internet-culture/"
+  },
+  {
+    "id": "ea:concept:knowledge-graph-fr",
+    "locale": "fr",
+    "route": "/fr/knowledge/concepts/knowledge-graph/",
+    "identifier": "/fr/id/concept/knowledge-graph/"
+  },
+  {
+    "id": "ea:concept:large-language-model-fr",
+    "locale": "fr",
+    "route": "/fr/knowledge/concepts/large-language-model/",
+    "identifier": "/fr/id/concept/large-language-model/"
+  },
+  {
+    "id": "ea:concept:linked-data-fr",
+    "locale": "fr",
+    "route": "/fr/knowledge/concepts/linked-data/",
+    "identifier": "/fr/id/concept/linked-data/"
+  },
+  {
+    "id": "ea:concept:metadata-fr",
+    "locale": "fr",
+    "route": "/fr/knowledge/concepts/metadata/",
+    "identifier": "/fr/id/concept/metadata/"
+  },
+  {
+    "id": "ea:concept:microservice-architecture-fr",
+    "locale": "fr",
+    "route": "/fr/knowledge/concepts/microservice-architecture/",
+    "identifier": "/fr/id/concept/microservice-architecture/"
+  },
+  {
+    "id": "ea:concept:motion-design-fr",
+    "locale": "fr",
+    "route": "/fr/knowledge/concepts/motion-design/",
+    "identifier": "/fr/id/concept/motion-design/"
+  },
+  {
+    "id": "ea:concept:multimodal-ai-fr",
+    "locale": "fr",
+    "route": "/fr/knowledge/concepts/multimodal-ai/",
+    "identifier": "/fr/id/concept/multimodal-ai/"
+  },
+  {
+    "id": "ea:concept:ontology-fr",
+    "locale": "fr",
+    "route": "/fr/knowledge/concepts/ontology/",
+    "identifier": "/fr/id/concept/ontology/"
+  },
+  {
+    "id": "ea:concept:open-source-fr",
+    "locale": "fr",
+    "route": "/fr/knowledge/concepts/open-source/",
+    "identifier": "/fr/id/concept/open-source/"
+  },
+  {
+    "id": "ea:concept:open-weight-model-fr",
+    "locale": "fr",
+    "route": "/fr/knowledge/concepts/open-weight-model/",
+    "identifier": "/fr/id/concept/open-weight-model/"
+  },
+  {
+    "id": "ea:concept:personal-knowledge-system-fr",
+    "locale": "fr",
+    "route": "/fr/knowledge/concepts/personal-knowledge-system/",
+    "identifier": "/fr/id/concept/personal-knowledge-system/"
+  },
+  {
+    "id": "ea:concept:procedural-graphics-fr",
+    "locale": "fr",
+    "route": "/fr/knowledge/concepts/procedural-graphics/",
+    "identifier": "/fr/id/concept/procedural-graphics/"
+  },
+  {
+    "id": "ea:concept:provenance-fr",
+    "locale": "fr",
+    "route": "/fr/knowledge/concepts/provenance/",
+    "identifier": "/fr/id/concept/provenance/"
+  },
+  {
+    "id": "ea:concept:retrieval-augmented-generation-fr",
+    "locale": "fr",
+    "route": "/fr/knowledge/concepts/retrieval-augmented-generation/",
+    "identifier": "/fr/id/concept/retrieval-augmented-generation/"
+  },
+  {
+    "id": "ea:concept:signal-archaeology-fr",
+    "locale": "fr",
+    "route": "/fr/knowledge/concepts/signal-archaeology/",
+    "identifier": "/fr/id/concept/signal-archaeology/"
+  },
+  {
+    "id": "ea:concept:systems-thinking-fr",
+    "locale": "fr",
+    "route": "/fr/knowledge/concepts/systems-thinking/",
+    "identifier": "/fr/id/concept/systems-thinking/"
+  },
+  {
+    "id": "ea:concept:typography-fr",
+    "locale": "fr",
+    "route": "/fr/knowledge/concepts/typography/",
+    "identifier": "/fr/id/concept/typography/"
+  },
+  {
+    "id": "ea:concept:web-audio-fr",
+    "locale": "fr",
+    "route": "/fr/knowledge/concepts/web-audio/",
+    "identifier": "/fr/id/concept/web-audio/"
+  },
+  {
+    "id": "ea:organization:electronic-artefacts-fr",
+    "locale": "fr",
+    "route": "/fr/organizations/electronic-artefacts/",
+    "identifier": "/fr/id/organization/electronic-artefacts/"
+  },
+  {
+    "id": "ea:program:oreth-fr",
+    "locale": "fr",
+    "route": "/fr/programs/oreth/",
+    "identifier": "/fr/id/program/oreth/"
+  },
+  {
+    "id": "ea:program:vaste-fr",
+    "locale": "fr",
+    "route": "/fr/programs/vaste/",
+    "identifier": "/fr/id/program/vaste/"
+  },
+  {
+    "id": "ea:project:palimpsests-fr",
+    "locale": "fr",
+    "route": "/fr/projects/palimpsests/",
+    "identifier": "/fr/id/project/palimpsests/"
+  },
+  {
+    "id": "ea:project:vestiges-fr",
+    "locale": "fr",
+    "route": "/fr/projects/vestiges/",
+    "identifier": "/fr/id/project/vestiges/"
+  },
+  {
+    "id": "ea:publication:ai-agents-vs-ai-workflows-fr",
+    "locale": "fr",
+    "route": "/fr/publications/ai-agents-vs-ai-workflows/",
+    "identifier": "/fr/id/publication/ai-agents-vs-ai-workflows/"
+  },
+  {
+    "id": "ea:publication:ai-search-structured-content-and-knowledge-graph-seo-fr",
+    "locale": "fr",
+    "route": "/fr/publications/ai-search-structured-content-and-knowledge-graph-seo/",
+    "identifier": "/fr/id/publication/ai-search-structured-content-and-knowledge-graph-seo/"
+  },
+  {
+    "id": "ea:publication:algorithmic-composition-and-rule-based-music-fr",
+    "locale": "fr",
+    "route": "/fr/publications/algorithmic-composition-and-rule-based-music/",
+    "identifier": "/fr/id/publication/algorithmic-composition-and-rule-based-music/"
+  },
+  {
+    "id": "ea:publication:c2pa-content-credentials-and-generative-media-provenance-fr",
+    "locale": "fr",
+    "route": "/fr/publications/c2pa-content-credentials-and-generative-media-provenance/",
+    "identifier": "/fr/id/publication/c2pa-content-credentials-and-generative-media-provenance/"
+  },
+  {
+    "id": "ea:publication:contextual-execution-and-graph-runtimes-fr",
+    "locale": "fr",
+    "route": "/fr/publications/contextual-execution-and-graph-runtimes/",
+    "identifier": "/fr/id/publication/contextual-execution-and-graph-runtimes/"
+  },
+  {
+    "id": "ea:publication:creative-coding-pedagogy-from-logo-to-p5js-fr",
+    "locale": "fr",
+    "route": "/fr/publications/creative-coding-pedagogy-from-logo-to-p5js/",
+    "identifier": "/fr/id/publication/creative-coding-pedagogy-from-logo-to-p5js/"
+  },
+  {
+    "id": "ea:publication:digital-preservation-and-living-archives-fr",
+    "locale": "fr",
+    "route": "/fr/publications/digital-preservation-and-living-archives/",
+    "identifier": "/fr/id/publication/digital-preservation-and-living-archives/"
+  },
+  {
+    "id": "ea:publication:event-driven-architecture-and-event-streams-fr",
+    "locale": "fr",
+    "route": "/fr/publications/event-driven-architecture-and-event-streams/",
+    "identifier": "/fr/id/publication/event-driven-architecture-and-event-streams/"
+  },
+  {
+    "id": "ea:publication:foundational-lineage-001-fr",
+    "locale": "fr",
+    "route": "/fr/publications/foundational-lineage-001/",
+    "identifier": "/fr/id/publication/foundational-lineage-001/"
+  },
+  {
+    "id": "ea:publication:generative-ai-latent-space-and-creative-workflows-fr",
+    "locale": "fr",
+    "route": "/fr/publications/generative-ai-latent-space-and-creative-workflows/",
+    "identifier": "/fr/id/publication/generative-ai-latent-space-and-creative-workflows/"
+  },
+  {
+    "id": "ea:publication:generative-systems-cybernetics-and-creative-coding-fr",
+    "locale": "fr",
+    "route": "/fr/publications/generative-systems-cybernetics-and-creative-coding/",
+    "identifier": "/fr/id/publication/generative-systems-cybernetics-and-creative-coding/"
+  },
+  {
+    "id": "ea:publication:how-large-language-models-actually-work-fr",
+    "locale": "fr",
+    "route": "/fr/publications/how-large-language-models-actually-work/",
+    "identifier": "/fr/id/publication/how-large-language-models-actually-work/"
+  },
+  {
+    "id": "ea:publication:human-computer-interaction-for-creative-tools-fr",
+    "locale": "fr",
+    "route": "/fr/publications/human-computer-interaction-for-creative-tools/",
+    "identifier": "/fr/id/publication/human-computer-interaction-for-creative-tools/"
+  },
+  {
+    "id": "ea:publication:hypertext-and-augmented-knowledge-systems-fr",
+    "locale": "fr",
+    "route": "/fr/publications/hypertext-and-augmented-knowledge-systems/",
+    "identifier": "/fr/id/publication/hypertext-and-augmented-knowledge-systems/"
+  },
+  {
+    "id": "ea:publication:iiif-and-compound-cultural-objects-fr",
+    "locale": "fr",
+    "route": "/fr/publications/iiif-and-compound-cultural-objects/",
+    "identifier": "/fr/id/publication/iiif-and-compound-cultural-objects/"
+  },
+  {
+    "id": "ea:publication:knowledge-graphs-for-cultural-infrastructure-fr",
+    "locale": "fr",
+    "route": "/fr/publications/knowledge-graphs-for-cultural-infrastructure/",
+    "identifier": "/fr/id/publication/knowledge-graphs-for-cultural-infrastructure/"
+  },
+  {
+    "id": "ea:publication:linked-data-and-public-knowledge-pages-fr",
+    "locale": "fr",
+    "route": "/fr/publications/linked-data-and-public-knowledge-pages/",
+    "identifier": "/fr/id/publication/linked-data-and-public-knowledge-pages/"
+  },
+  {
+    "id": "ea:publication:local-and-open-source-ai-systems-fr",
+    "locale": "fr",
+    "route": "/fr/publications/local-and-open-source-ai-systems/",
+    "identifier": "/fr/id/publication/local-and-open-source-ai-systems/"
+  },
+  {
+    "id": "ea:publication:metadata-cataloguing-and-cultural-memory-fr",
+    "locale": "fr",
+    "route": "/fr/publications/metadata-cataloguing-and-cultural-memory/",
+    "identifier": "/fr/id/publication/metadata-cataloguing-and-cultural-memory/"
+  },
+  {
+    "id": "ea:publication:microservices-modular-monoliths-and-system-boundaries-fr",
+    "locale": "fr",
+    "route": "/fr/publications/microservices-modular-monoliths-and-system-boundaries/",
+    "identifier": "/fr/id/publication/microservices-modular-monoliths-and-system-boundaries/"
+  },
+  {
+    "id": "ea:publication:model-context-protocol-and-tool-using-ai-systems-fr",
+    "locale": "fr",
+    "route": "/fr/publications/model-context-protocol-and-tool-using-ai-systems/",
+    "identifier": "/fr/id/publication/model-context-protocol-and-tool-using-ai-systems/"
+  },
+  {
+    "id": "ea:publication:motion-design-time-and-interface-semantics-fr",
+    "locale": "fr",
+    "route": "/fr/publications/motion-design-time-and-interface-semantics/",
+    "identifier": "/fr/id/publication/motion-design-time-and-interface-semantics/"
+  },
+  {
+    "id": "ea:publication:multimodal-ai-across-text-image-audio-and-video-fr",
+    "locale": "fr",
+    "route": "/fr/publications/multimodal-ai-across-text-image-audio-and-video/",
+    "identifier": "/fr/id/publication/multimodal-ai-across-text-image-audio-and-video/"
+  },
+  {
+    "id": "ea:publication:observability-for-ai-agents-and-tool-calling-systems-fr",
+    "locale": "fr",
+    "route": "/fr/publications/observability-for-ai-agents-and-tool-calling-systems/",
+    "identifier": "/fr/id/publication/observability-for-ai-agents-and-tool-calling-systems/"
+  },
+  {
+    "id": "ea:publication:ontologies-taxonomies-and-knowledge-modeling-fr",
+    "locale": "fr",
+    "route": "/fr/publications/ontologies-taxonomies-and-knowledge-modeling/",
+    "identifier": "/fr/id/publication/ontologies-taxonomies-and-knowledge-modeling/"
+  },
+  {
+    "id": "ea:publication:open-source-as-cultural-infrastructure-fr",
+    "locale": "fr",
+    "route": "/fr/publications/open-source-as-cultural-infrastructure/",
+    "identifier": "/fr/id/publication/open-source-as-cultural-infrastructure/"
+  },
+  {
+    "id": "ea:publication:personal-knowledge-systems-and-digital-gardens-fr",
+    "locale": "fr",
+    "route": "/fr/publications/personal-knowledge-systems-and-digital-gardens/",
+    "identifier": "/fr/id/publication/personal-knowledge-systems-and-digital-gardens/"
+  },
+  {
+    "id": "ea:publication:procedural-graphics-shaders-and-visual-systems-fr",
+    "locale": "fr",
+    "route": "/fr/publications/procedural-graphics-shaders-and-visual-systems/",
+    "identifier": "/fr/id/publication/procedural-graphics-shaders-and-visual-systems/"
+  },
+  {
+    "id": "ea:publication:prompt-injection-and-trust-boundaries-in-ai-knowledge-systems-fr",
+    "locale": "fr",
+    "route": "/fr/publications/prompt-injection-and-trust-boundaries-in-ai-knowledge-systems/",
+    "identifier": "/fr/id/publication/prompt-injection-and-trust-boundaries-in-ai-knowledge-systems/"
+  },
+  {
+    "id": "ea:publication:redis-streams-for-orchestration-fr",
+    "locale": "fr",
+    "route": "/fr/publications/redis-streams-for-orchestration/",
+    "identifier": "/fr/id/publication/redis-streams-for-orchestration/"
+  },
+  {
+    "id": "ea:publication:responsible-ai-governance-for-creative-and-cultural-systems-fr",
+    "locale": "fr",
+    "route": "/fr/publications/responsible-ai-governance-for-creative-and-cultural-systems/",
+    "identifier": "/fr/id/publication/responsible-ai-governance-for-creative-and-cultural-systems/"
+  },
+  {
+    "id": "ea:publication:retrieval-augmented-generation-and-knowledge-systems-fr",
+    "locale": "fr",
+    "route": "/fr/publications/retrieval-augmented-generation-and-knowledge-systems/",
+    "identifier": "/fr/id/publication/retrieval-augmented-generation-and-knowledge-systems/"
+  },
+  {
+    "id": "ea:publication:runtime-engines-and-domain-operating-systems-fr",
+    "locale": "fr",
+    "route": "/fr/publications/runtime-engines-and-domain-operating-systems/",
+    "identifier": "/fr/id/publication/runtime-engines-and-domain-operating-systems/"
+  },
+  {
+    "id": "ea:publication:signal-archaeology-audio-memory-and-machine-listening-fr",
+    "locale": "fr",
+    "route": "/fr/publications/signal-archaeology-audio-memory-and-machine-listening/",
+    "identifier": "/fr/id/publication/signal-archaeology-audio-memory-and-machine-listening/"
+  },
+  {
+    "id": "ea:publication:systems-thinking-for-creative-practice-fr",
+    "locale": "fr",
+    "route": "/fr/publications/systems-thinking-for-creative-practice/",
+    "identifier": "/fr/id/publication/systems-thinking-for-creative-practice/"
+  },
+  {
+    "id": "ea:publication:typography-reading-systems-and-digital-interfaces-fr",
+    "locale": "fr",
+    "route": "/fr/publications/typography-reading-systems-and-digital-interfaces/",
+    "identifier": "/fr/id/publication/typography-reading-systems-and-digital-interfaces/"
+  },
+  {
+    "id": "ea:publication:verifiable-credentials-for-cultural-archives-and-creator-identity-fr",
+    "locale": "fr",
+    "route": "/fr/publications/verifiable-credentials-for-cultural-archives-and-creator-identity/",
+    "identifier": "/fr/id/publication/verifiable-credentials-for-cultural-archives-and-creator-identity/"
+  },
+  {
+    "id": "ea:publication:web-audio-and-browser-based-sound-systems-fr",
+    "locale": "fr",
+    "route": "/fr/publications/web-audio-and-browser-based-sound-systems/",
+    "identifier": "/fr/id/publication/web-audio-and-browser-based-sound-systems/"
+  },
+  {
+    "id": "ea:publication:webnn-and-local-ai-in-the-browser-fr",
+    "locale": "fr",
+    "route": "/fr/publications/webnn-and-local-ai-in-the-browser/",
+    "identifier": "/fr/id/publication/webnn-and-local-ai-in-the-browser/"
+  },
+  {
+    "id": "ea:publication:why-graphs-are-more-powerful-than-folders-fr",
+    "locale": "fr",
+    "route": "/fr/publications/why-graphs-are-more-powerful-than-folders/",
+    "identifier": "/fr/id/publication/why-graphs-are-more-powerful-than-folders/"
+  },
+  {
+    "id": "ea:researchField:runtime-theory-fr",
+    "locale": "fr",
+    "route": "/fr/research/fields/runtime-theory/",
+    "identifier": "/fr/id/research-field/runtime-theory/"
+  },
+  {
+    "id": "ea:technology:activitypub-fr",
+    "locale": "fr",
+    "route": "/fr/knowledge/technologies/activitypub/",
+    "identifier": "/fr/id/technology/activitypub/"
+  },
+  {
+    "id": "ea:technology:c2pa-fr",
+    "locale": "fr",
+    "route": "/fr/knowledge/technologies/c2pa/",
+    "identifier": "/fr/id/technology/c2pa/"
+  },
+  {
+    "id": "ea:technology:cloudevents-fr",
+    "locale": "fr",
+    "route": "/fr/knowledge/technologies/cloudevents/",
+    "identifier": "/fr/id/technology/cloudevents/"
+  },
+  {
+    "id": "ea:technology:css-fonts-fr",
+    "locale": "fr",
+    "route": "/fr/knowledge/technologies/css-fonts/",
+    "identifier": "/fr/id/technology/css-fonts/"
+  },
+  {
+    "id": "ea:technology:iiif-fr",
+    "locale": "fr",
+    "route": "/fr/knowledge/technologies/iiif/",
+    "identifier": "/fr/id/technology/iiif/"
+  },
+  {
+    "id": "ea:technology:json-ld-fr",
+    "locale": "fr",
+    "route": "/fr/knowledge/technologies/json-ld/",
+    "identifier": "/fr/id/technology/json-ld/"
+  },
+  {
+    "id": "ea:technology:llama-cpp-fr",
+    "locale": "fr",
+    "route": "/fr/knowledge/technologies/llama-cpp/",
+    "identifier": "/fr/id/technology/llama-cpp/"
+  },
+  {
+    "id": "ea:technology:model-context-protocol-fr",
+    "locale": "fr",
+    "route": "/fr/knowledge/technologies/model-context-protocol/",
+    "identifier": "/fr/id/technology/model-context-protocol/"
+  },
+  {
+    "id": "ea:technology:opentelemetry-fr",
+    "locale": "fr",
+    "route": "/fr/knowledge/technologies/opentelemetry/",
+    "identifier": "/fr/id/technology/opentelemetry/"
+  },
+  {
+    "id": "ea:technology:owl-fr",
+    "locale": "fr",
+    "route": "/fr/knowledge/technologies/owl/",
+    "identifier": "/fr/id/technology/owl/"
+  },
+  {
+    "id": "ea:technology:rdf-fr",
+    "locale": "fr",
+    "route": "/fr/knowledge/technologies/rdf/",
+    "identifier": "/fr/id/technology/rdf/"
+  },
+  {
+    "id": "ea:technology:redis-streams-fr",
+    "locale": "fr",
+    "route": "/fr/knowledge/technologies/redis-streams/",
+    "identifier": "/fr/id/technology/redis-streams/"
+  },
+  {
+    "id": "ea:technology:skos-fr",
+    "locale": "fr",
+    "route": "/fr/knowledge/technologies/skos/",
+    "identifier": "/fr/id/technology/skos/"
+  },
+  {
+    "id": "ea:technology:transformer-architecture-fr",
+    "locale": "fr",
+    "route": "/fr/knowledge/technologies/transformer-architecture/",
+    "identifier": "/fr/id/technology/transformer-architecture/"
+  },
+  {
+    "id": "ea:technology:web-animations-fr",
+    "locale": "fr",
+    "route": "/fr/knowledge/technologies/web-animations/",
+    "identifier": "/fr/id/technology/web-animations/"
+  },
+  {
+    "id": "ea:technology:web-audio-api-fr",
+    "locale": "fr",
+    "route": "/fr/knowledge/technologies/web-audio-api/",
+    "identifier": "/fr/id/technology/web-audio-api/"
+  },
+  {
+    "id": "ea:technology:webgl-fr",
+    "locale": "fr",
+    "route": "/fr/knowledge/technologies/webgl/",
+    "identifier": "/fr/id/technology/webgl/"
+  },
+  {
+    "id": "ea:technology:webnn-fr",
+    "locale": "fr",
+    "route": "/fr/knowledge/technologies/webnn/",
+    "identifier": "/fr/id/technology/webnn/"
+  },
+  {
     "id": "ea:organization:electronic-artefacts",
     "locale": "en",
     "route": "/organizations/electronic-artefacts/",

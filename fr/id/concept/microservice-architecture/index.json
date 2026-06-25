@@ -1,0 +1,96 @@
+{
+  "id": "ea:concept:microservice-architecture-fr",
+  "type": "concept",
+  "translationOf": "ea:concept:microservice-architecture",
+  "slug": {
+    "canonical": "microservice-architecture"
+  },
+  "title": "Architecture de microservices",
+  "definition": "Microservice architecture structures a software système comme independently deployable services aligned avec bounded capabilities et communicating through explicit contracts.",
+  "abstract": "Microservices can improve independent evolution et scaling but add network, données, deployment, observability et organizational complexity.",
+  "description": "A canonical definition comparing microservices avec modular monoliths et service-oriented systèmes.",
+  "locale": "fr",
+  "visibility": "public",
+  "publicationClass": "canonical",
+  "status": "active",
+  "maturity": "production",
+  "confidence": "validated",
+  "version": {
+    "version": "1.0.0",
+    "createdAt": "2026-06-24",
+    "publishedAt": "2026-06-25",
+    "modifiedAt": "2026-06-25"
+  },
+  "authors": [
+    {
+      "id": "ea:organization:electronic-artefacts"
+    }
+  ],
+  "publisher": "ea:organization:electronic-artefacts",
+  "tags": [
+    "Microservices",
+    "Modular Monolith",
+    "Service Boundaries",
+    "Distributed Systèmes"
+  ],
+  "disciplines": [
+    "Software Architecture",
+    "Systèmes Design",
+    "Programming"
+  ],
+  "sources": [
+    {
+      "title": "Microservices",
+      "url": "https://martinfowler.com/articles/microservices.html",
+      "author": "James Lewis et Martin Fowler",
+      "publisher": "MartinFowler.com",
+      "publishedAt": "2014-03-25",
+      "accessedAt": "2026-06-24"
+    }
+  ],
+  "scope": [
+    "Service boundaries",
+    "Independent deployment",
+    "API et event contracts",
+    "Données ownership",
+    "Observability",
+    "Team topology"
+  ],
+  "exclusions": [
+    "Splitting an application into many processes without coherent domain boundaries",
+    "Treating microservices comme the default architecture pour small systèmes"
+  ],
+  "claims": [
+    "Microservice value depends on organizational et domain boundaries, not service count.",
+    "A modular monolith is often the stronger starting architecture when independent deployment is not required."
+  ],
+  "bodyHtml": "<h2 id=\"role\">Rôle</h2>\n<p>Architecture de microservices est documenté ici comme une entrée française du graphe public d’Electronic Artefacts. Microservices can improve independent evolution et scaling but add network, données, deployment, observability et organizational complexity.</p>\n<h2 id=\"usage\">Usage</h2>\n<p>Cette notion sert à relier les projets, publications et technologies qui partagent un même vocabulaire de conception. Microservice architecture structures a software système comme independently deployable services aligned avec bounded capabilities et communicating through explicit contracts.</p>\n<h2 id=\"domaines\">Domaines</h2>\n<p>Cette entrée croise notamment les domaines suivants : Software Architecture, Systèmes Design, Programming.</p>\n<h2 id=\"references\">Références</h2>\n<p>Les références principales restent les sources indiquées dans la fiche canonique, notamment Microservices.</p>\n",
+  "headings": [
+    "Rôle",
+    "Usage",
+    "Domaines",
+    "Références"
+  ],
+  "headingItems": [
+    {
+      "level": 2,
+      "title": "Rôle",
+      "id": "role"
+    },
+    {
+      "level": 2,
+      "title": "Usage",
+      "id": "usage"
+    },
+    {
+      "level": 2,
+      "title": "Domaines",
+      "id": "domaines"
+    },
+    {
+      "level": 2,
+      "title": "Références",
+      "id": "references"
+    }
+  ]
+}

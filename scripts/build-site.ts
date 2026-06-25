@@ -36,6 +36,7 @@ const byId = new Map(entities.map((entity) => [entity.id, entity]));
 const publicEntities = entities.filter(isPublicEntity);
 const publicIds = new Set(publicEntities.map((entity) => entity.id));
 const publicRoutes = routes.filter((route) => publicIds.has(route.id));
+const i18nAlternates = buildI18nAlternates(publicEntities);
 
 const rootifyPartials = (html: string): string =>
   html
@@ -46,7 +47,24 @@ const header = rootifyPartials(await readFile(path.join(rootDir, "assets/partial
 const footer = rootifyPartials(await readFile(path.join(rootDir, "assets/partials/footer.html"), "utf8"));
 
 for (const entity of publicEntities) {
-  const metadata = metadataFor(entity);
+  const route = routeForEntity(entity);
+  const routeAlternates = i18nAlternates[route];
+  const metadata = {
+    ...metadataFor(entity),
+    ...(routeAlternates
+      ? {
+          alternates: [
+            ...Object.entries(routeAlternates).map(([hreflang, href]) => ({
+              hreflang,
+              href: `https://electronicartefacts.com${href}`,
+            })),
+            ...(routeAlternates.en
+              ? [{ hreflang: "x-default", href: `https://electronicartefacts.com${routeAlternates.en}` }]
+              : []),
+          ],
+        }
+      : {}),
+  };
   const body = entity.type === "publication"
     ? renderPublicationPage(entity as PublicationEntity, relations, byId, routeById)
     : renderEntityPage(entity, relations, byId, routeById);
@@ -309,7 +327,7 @@ for (const view of graphViews) {
 }
 
 await writeJson(path.join(rootDir, "generated/public/catalog.json"), catalog);
-await writeJson(path.join(rootDir, "generated/i18n-alternates.json"), buildI18nAlternates(publicEntities));
+await writeJson(path.join(rootDir, "generated/i18n-alternates.json"), i18nAlternates);
 await writeJson(path.join(rootDir, "generated/manifest/routes.json"), publicRoutes);
 await writeJson(path.join(rootDir, "generated/manifest/entities.json"), publicEntities);
 await writeJson(path.join(rootDir, "generated/manifest/relations.json"), catalog.relations);

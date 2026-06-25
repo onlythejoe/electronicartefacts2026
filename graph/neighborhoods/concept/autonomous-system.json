@@ -1,34 +1,16 @@
 {
-  "id": "local:ea:concept:autonomous-system",
+  "id": "local:ea:concept:autonomous-system-fr",
   "kind": "local",
-  "focus": "ea:concept:autonomous-system",
+  "focus": "ea:concept:autonomous-system-fr",
   "nodes": [
     {
-      "id": "ea:concept:autonomous-system",
+      "id": "ea:concept:autonomous-system-fr",
       "type": "concept",
-      "title": "Autonomous System",
-      "route": "/knowledge/concepts/autonomous-system/",
+      "title": "Système autonome",
+      "route": "/fr/knowledge/concepts/autonomous-system/",
       "status": "active",
       "confidence": "validated"
-    },
-    {
-      "id": "ea:publication:ai-agents-vs-ai-workflows",
-      "type": "publication",
-      "title": "AI Agents vs AI Workflows",
-      "route": "/publications/ai-agents-vs-ai-workflows/",
-      "status": "active",
-      "confidence": "published"
     }
   ],
-  "edges": [
-    {
-      "id": "ear:agents-article-documents-autonomous-system",
-      "source": "ea:publication:ai-agents-vs-ai-workflows",
-      "target": "ea:concept:autonomous-system",
-      "predicate": "documents",
-      "label": "Documents",
-      "statement": "AI Agents vs AI Workflows distinguishes bounded agents from broader autonomous systems.",
-      "confidence": "published"
-    }
-  ]
+  "edges": []
 }

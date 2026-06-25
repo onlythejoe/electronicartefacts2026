@@ -1,0 +1,76 @@
+---
+id: ea:concept:metadata-fr
+type: concept
+slug:
+  canonical: metadata
+title: Métadonnées
+definition: Métadonnées is structured information about a resource, such comme
+  title, creator, date, format, source, rights, subject, relation et
+  preservation context.
+abstract: Métadonnées est le descriptive, administrative, structural et
+  preservation layer that makes archives, catalogues, digital objects et graphee
+  de connaissancess usable over time.
+description: A canonical concept record pour métadonnées dans culturel et
+  technical systèmes.
+locale: fr
+visibility: public
+publicationClass: canonical
+status: active
+maturity: research
+confidence: canonical
+version:
+  version: 1.0.0
+  createdAt: 2026-06-24
+  publishedAt: 2026-06-25
+  modifiedAt: 2026-06-25
+authors:
+  - id: ea:organization:electronic-artefacts
+publisher: ea:organization:electronic-artefacts
+scope:
+  - Descriptive métadonnées
+  - Administrative métadonnées
+  - Structural métadonnées
+  - Preservation métadonnées
+  - Catalogage
+exclusions:
+  - Decorative labels that cannot be used pour retrieval ou interpretation
+  - Analytics données that décrit user behavior but not the resource
+claims:
+  - Métadonnées becomes culturel mémoire when it preserves source, context,
+    rights et relation.
+  - Poor métadonnées can make digital work effectively invisible even when files
+    still exist.
+sources:
+  - title: DCMI Métadonnées Terms
+    publisher: Dublin Core Metadata Initiative
+    publishedAt: 2020-01-20
+    accessedAt: 2026-06-24
+    url: https://www.dublincore.org/specifications/dublin-core/dcmi-terms/
+tags:
+  - Métadonnées
+  - Archives
+  - Catalogage
+  - Preservation
+disciplines:
+  - Archives
+  - Systèmes de connaissance
+  - Recherche Méthodes
+  - Préservation numérique
+translationOf: ea:concept:metadata
+---
+
+## Rôle
+
+Métadonnées est documenté ici comme une entrée française du graphe public d’Electronic Artefacts. Métadonnées est le descriptive, administrative, structural et preservation layer that makes archives, catalogues, digital objects et graphee de connaissancess usable over time.
+
+## Usage
+
+Cette notion sert à relier les projets, publications et technologies qui partagent un même vocabulaire de conception. Métadonnées is structured information about a resource, such comme title, creator, date, format, source, rights, subject, relation et preservation context.
+
+## Domaines
+
+Cette entrée croise notamment les domaines suivants : Archives, Systèmes de connaissance, Recherche Méthodes, Préservation numérique.
+
+## Références
+
+Les références principales restent les sources indiquées dans la fiche canonique, notamment DCMI Metadata Terms.

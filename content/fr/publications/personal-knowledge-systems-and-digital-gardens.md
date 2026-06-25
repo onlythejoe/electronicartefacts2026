@@ -1,0 +1,93 @@
+---
+id: ea:publication:personal-knowledge-systems-and-digital-gardens-fr
+type: publication
+slug:
+  canonical: personal-knowledge-systems-and-digital-gardens
+title: Systèmes personnels de connaissance et jardins numériques
+subtitle: Technical Article
+abstract: This article explains personal systèmes de connaissance et digital
+  gardens comme durable practices pour notes, sources, backlinks, revision,
+  public learning et recherche libraries.
+description: A technical article on personal systèmes de connaissance, digital
+  gardens, backlinks, recherche mémoire et public knowledge hubs.
+locale: fr
+visibility: public
+publicationClass: published
+status: active
+maturity: research
+confidence: published
+version:
+  version: 1.0.0
+  createdAt: 2026-06-24
+  publishedAt: 2026-06-25
+  modifiedAt: 2026-06-25
+authors:
+  - id: ea:organization:electronic-artefacts
+publisher: ea:organization:electronic-artefacts
+format: technicalArticle
+subjects:
+  - id: ea:concept:personal-knowledge-system
+  - id: ea:concept:hypertext
+  - id: ea:concept:knowledge-graph
+  - id: ea:concept:metadata
+  - id: ea:concept:digital-preservation
+claims:
+  - A knowledge système becomes useful when notes sont linked, revised et
+    retrieved, not merely captured.
+  - Public knowledge hubs can adapt digital-garden practices while adding
+    editorial standards et source validation.
+evidence:
+  - id: ea:concept:personal-knowledge-system
+  - id: ea:collection:knowledge-hub-foundations
+sources:
+  - title: As We May Think
+    author: Vannevar Bush
+    publisher: The Atlantic
+    publishedAt: 1945-07-01
+    accessedAt: 2026-06-24
+    url: https://www.theatlantic.com/magazine/archive/1945/07/as-we-may-think/303881/
+  - title: DCMI Métadonnées Terms
+    publisher: Dublin Core Metadata Initiative
+    publishedAt: 2020-01-20
+    accessedAt: 2026-06-24
+    url: https://www.dublincore.org/specifications/dublin-core/dcmi-terms/
+citation:
+  preferred: Electronic Artefacts. "Personal Systèmes de connaissance et Digital
+    Gardens." Technical article, version 1.0.0, 2026.
+tags:
+  - Personal Knowledge Management
+  - Digital Gardens
+  - Backlinks
+  - Recherche Méthodes
+disciplines:
+  - Systèmes de connaissance
+  - Recherche Méthodes
+  - Culture Internet
+  - Archives
+translationOf: ea:publication:personal-knowledge-systems-and-digital-gardens
+---
+
+## Problem
+
+Systèmes personnels de connaissance et jardins numériques répond à un problème de lisibilité, d’architecture ou de transmission dans les systèmes numériques contemporains. This article explains personal systèmes de connaissance et digital gardens comme durable practices pour notes, sources, backlinks, revision, public learning et recherche libraries.
+
+## Architecture
+
+La page organise le sujet comme un ensemble de notions, dépendances, preuves et relations éditoriales connectées au graphe de connaissance.
+
+## Implementation
+
+Pour Electronic Artefacts, cette publication sert de repère français pour cadrer les choix de conception, préparer des contenus plus détaillés et stabiliser le vocabulaire technique.
+
+## Evidence
+
+- A knowledge système becomes useful when notes sont linked, revised et retrieved, not merely captured.
+- Public knowledge hubs can adapt digital-garden practices while adding editorial standards et source validation.
+
+## Limitations
+
+Cette version française assure la couverture éditoriale du site. Une passe ultérieure pourra enrichir le style et traduire plus finement chaque nuance de la version longue.
+
+## References
+
+Références conservées depuis la fiche canonique : As We May Think, DCMI Metadata Terms.

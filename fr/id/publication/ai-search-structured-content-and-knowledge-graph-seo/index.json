@@ -1,0 +1,140 @@
+{
+  "id": "ea:publication:ai-search-structured-content-and-knowledge-graph-seo-fr",
+  "type": "publication",
+  "translationOf": "ea:publication:ai-search-structured-content-and-knowledge-graph-seo",
+  "slug": {
+    "canonical": "ai-search-structured-content-and-knowledge-graph-seo"
+  },
+  "title": "Recherche IA, contenu structuré et SEO par graphe de connaissances",
+  "subtitle": "Technical Article",
+  "abstract": "A practical article on AI search visibility, structured content, JSON-LD, entité identité, graphee de connaissances SEO et non-commodity editorial authority.",
+  "description": "Understand how AI search changes SEO strategy through helpful content, structured données, crawlable pages, entité identité et graphee de connaissances architecture.",
+  "locale": "fr",
+  "visibility": "public",
+  "publicationClass": "published",
+  "status": "active",
+  "maturity": "research",
+  "confidence": "published",
+  "version": {
+    "version": "1.0.0",
+    "createdAt": "2026-06-25",
+    "publishedAt": "2026-06-25",
+    "modifiedAt": "2026-06-25"
+  },
+  "authors": [
+    {
+      "id": "ea:organization:electronic-artefacts"
+    }
+  ],
+  "publisher": "ea:organization:electronic-artefacts",
+  "tags": [
+    "AI Search",
+    "Graphee de connaissances SEO",
+    "Structured Données",
+    "JSON-LD",
+    "Entité SEO"
+  ],
+  "disciplines": [
+    "SEO",
+    "Systèmes de connaissance",
+    "Web Development",
+    "Information Architecture"
+  ],
+  "sources": [
+    {
+      "title": "Optimizing your website pour generative AI features on Google Search",
+      "url": "https://developers.google.com/search/docs/fundamentals/ai-optimization-guide",
+      "publisher": "Google Search Central",
+      "accessedAt": "2026-06-25"
+    },
+    {
+      "title": "Introduction à structured données markup dans Google Search",
+      "url": "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
+      "publisher": "Google Search Central",
+      "accessedAt": "2026-06-25"
+    },
+    {
+      "title": "Article",
+      "url": "https://schema.org/Article",
+      "publisher": "Schema.org",
+      "accessedAt": "2026-06-25"
+    }
+  ],
+  "format": "technicalArticle",
+  "subjects": [
+    {
+      "id": "ea:concept:linked-data"
+    },
+    {
+      "id": "ea:concept:knowledge-graph"
+    },
+    {
+      "id": "ea:concept:metadata"
+    },
+    {
+      "id": "ea:concept:entity-identity"
+    },
+    {
+      "id": "ea:concept:retrieval-augmented-generation"
+    },
+    {
+      "id": "ea:technology:json-ld"
+    }
+  ],
+  "claims": [
+    "AI search visibility depends on useful, crawlable, attributable content rather than a separate layer de generative-engine tricks.",
+    "Knowledge graphe SEO relie entités, sources, relations et structured données so that humans et retrieval systèmes can understand a site comme a coherent corpus."
+  ],
+  "evidence": [
+    {
+      "id": "ea:concept:linked-data"
+    },
+    {
+      "id": "ea:technology:json-ld"
+    }
+  ],
+  "citation": {
+    "preferred": "Electronic Artefacts. \"AI Search, Structured Content et Graphee de connaissances SEO.\" Technical article, version 1.0.0, 2026."
+  },
+  "bodyHtml": "<h2 id=\"problem\">Problem</h2>\n<p>Recherche IA, contenu structuré et SEO par graphe de connaissances répond à un problème de lisibilité, d’architecture ou de transmission dans les systèmes numériques contemporains. A practical article on AI search visibility, structured content, JSON-LD, entité identité, graphee de connaissances SEO et non-commodity editorial authority.</p>\n<h2 id=\"architecture\">Architecture</h2>\n<p>La page organise le sujet comme un ensemble de notions, dépendances, preuves et relations éditoriales connectées au graphe de connaissance.</p>\n<h2 id=\"implementation\">Implementation</h2>\n<p>Pour Electronic Artefacts, cette publication sert de repère français pour cadrer les choix de conception, préparer des contenus plus détaillés et stabiliser le vocabulaire technique.</p>\n<h2 id=\"evidence\">Evidence</h2>\n<ul>\n<li>AI search visibility depends on useful, crawlable, attributable content rather than a separate layer de generative-engine tricks.</li>\n<li>Knowledge graphe SEO relie entités, sources, relations et structured données so that humans et retrieval systèmes can understand a site comme a coherent corpus.</li>\n</ul>\n<h2 id=\"limitations\">Limitations</h2>\n<p>Cette version française assure la couverture éditoriale du site. Une passe ultérieure pourra enrichir le style et traduire plus finement chaque nuance de la version longue.</p>\n<h2 id=\"references\">References</h2>\n<p>Références conservées depuis la fiche canonique : Optimizing your website for generative AI features on Google Search, Introduction to structured data markup in Google Search, Article.</p>\n",
+  "headings": [
+    "Problem",
+    "Architecture",
+    "Implementation",
+    "Evidence",
+    "Limitations",
+    "References"
+  ],
+  "headingItems": [
+    {
+      "level": 2,
+      "title": "Problem",
+      "id": "problem"
+    },
+    {
+      "level": 2,
+      "title": "Architecture",
+      "id": "architecture"
+    },
+    {
+      "level": 2,
+      "title": "Implementation",
+      "id": "implementation"
+    },
+    {
+      "level": 2,
+      "title": "Evidence",
+      "id": "evidence"
+    },
+    {
+      "level": 2,
+      "title": "Limitations",
+      "id": "limitations"
+    },
+    {
+      "level": 2,
+      "title": "References",
+      "id": "references"
+    }
+  ]
+}

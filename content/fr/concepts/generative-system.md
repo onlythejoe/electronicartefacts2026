@@ -1,0 +1,73 @@
+---
+id: ea:concept:generative-system-fr
+type: concept
+slug:
+  canonical: generative-system
+title: Système génératif
+definition: A generative système est un rule-based, procedural ou computational
+  arrangement that produces variable outputs from defined constraints, materials
+  et processes.
+abstract: Generative systèmes connect programmation créative, cybernetics,
+  algorithmic composition, simulation, design outils et AI by shifting
+  authorship toward rules, feedback et selection.
+description: A canonical definition de generative système pour programmation
+  créative, sound design, design automation et Electronic Artefacts projects.
+locale: fr
+visibility: public
+publicationClass: canonical
+status: active
+maturity: research
+confidence: validated
+version:
+  version: 1.0.0
+  createdAt: 2026-06-23
+  publishedAt: 2026-06-25
+  modifiedAt: 2026-06-25
+authors:
+  - id: ea:organization:electronic-artefacts
+publisher: ea:organization:electronic-artefacts
+scope:
+  - Rules
+  - Parameters
+  - Variation
+  - Selection
+  - Feedback
+  - Creative coding
+exclusions:
+  - A random output avec no meaningful constraints
+  - A manual batch process mislabeled comme generative
+claims:
+  - Generative systèmes sont best understood through constraints, not novelty
+    alone.
+  - Creative authorship dans generative work includes rule design, material
+    selection et curation de outputs.
+tags:
+  - Generative Art
+  - Programmation créative
+  - Composition algorithmique
+  - Systèmes
+  - Simulation
+disciplines:
+  - Digital Art
+  - Programmation créative
+  - Design
+  - Music Production
+  - Systèmes Design
+translationOf: ea:concept:generative-system
+---
+
+## Rôle
+
+Système génératif est documenté ici comme une entrée française du graphe public d’Electronic Artefacts. Generative systèmes connect programmation créative, cybernetics, algorithmic composition, simulation, design outils et AI by shifting authorship toward rules, feedback et selection.
+
+## Usage
+
+Cette notion sert à relier les projets, publications et technologies qui partagent un même vocabulaire de conception. A generative système est un rule-based, procedural ou computational arrangement that produces variable outputs from defined constraints, materials et processes.
+
+## Domaines
+
+Cette entrée croise notamment les domaines suivants : Digital Art, Programmation créative, Design, Music Production, Systèmes Design.
+
+## Références
+
+Les références principales sont conservées dans la fiche canonique et dans le graphe de connaissance public.

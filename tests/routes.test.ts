@@ -15,6 +15,8 @@ test("builds required canonical and identifier routes", async () => {
   assert.equal(byId["ea:researchField:runtime-theory"].identifier, "/id/research-field/runtime-theory/");
   assert.equal(byId["ea:program:vaste"].route, "/programs/vaste/");
   assert.equal(byId["ea:project:vestiges"].route, "/projects/vestiges/");
+  assert.equal(byId["ea:project:vestiges-fr"].route, "/fr/projects/vestiges/");
+  assert.equal(byId["ea:project:vestiges-fr"].identifier, "/fr/id/project/vestiges/");
 });
 
 test("localizes non-default entity routes without changing English routes", async () => {
@@ -32,16 +34,17 @@ test("localizes non-default entity routes without changing English routes", asyn
 
 test("allows the same slug in another locale when the entity id is distinct", async () => {
   const entities = await loadContent(path.resolve("."));
-  const vestiges = entities.find((entity) => entity.id === "ea:project:vestiges")!;
-  const frenchVestiges = {
-    ...vestiges,
-    id: "ea:project:vestiges-fr",
+  const graphRuntime = entities.find((entity) => entity.id === "ea:concept:graph-runtime")!;
+  const frenchGraphRuntime = {
+    ...graphRuntime,
+    id: "ea:concept:graph-runtime-test-fr",
     locale: "fr",
-    translationOf: vestiges.id,
-    slug: { canonical: vestiges.slug.canonical },
+    translationOf: graphRuntime.id,
+    slug: { canonical: graphRuntime.slug.canonical },
   } as Entity;
 
-  assert.doesNotThrow(() => validateGraph([...entities, frenchVestiges], []));
+  const fixtureEntities = entities.filter((entity) => entity.id !== "ea:concept:graph-runtime-fr");
+  assert.doesNotThrow(() => validateGraph([...fixtureEntities, frenchGraphRuntime], []));
 });
 
 test("builds route alternates for translated entity groups", async () => {
@@ -49,7 +52,7 @@ test("builds route alternates for translated entity groups", async () => {
   const vestiges = entities.find((entity) => entity.id === "ea:project:vestiges")!;
   const frenchVestiges = {
     ...vestiges,
-    id: "ea:project:vestiges-fr",
+    id: "ea:project:vestiges-test-fr",
     locale: "fr",
     translationOf: vestiges.id,
     slug: { canonical: vestiges.slug.canonical },

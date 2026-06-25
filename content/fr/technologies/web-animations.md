@@ -1,0 +1,36 @@
+---
+id: ea:technology:web-animations-fr
+type: technology
+translationOf: ea:technology:web-animations
+slug: { canonical: web-animations }
+title: Web Animations
+abstract: Web Animations définit un modèle de temporalité et d’animation pour les changements de présentation des pages web ainsi que les interfaces de programmation associées.
+description: Fiche technologique consacrée au rythme, à la synchronisation et au mouvement des interfaces web.
+locale: fr
+visibility: public
+publicationClass: canonical
+status: active
+maturity: production
+confidence: validated
+version: { version: 1.0.0, createdAt: "2026-06-24", publishedAt: "2026-06-25", modifiedAt: "2026-06-25" }
+authors: [{ id: ea:organization:electronic-artefacts }]
+publisher: ea:organization:electronic-artefacts
+category: platform
+roleInEcosystem: Web Animations aide Electronic Artefacts à traiter le mouvement comme une couche temporelle d’interface et de narration plutôt que comme une décoration.
+officialUrl: https://www.w3.org/TR/web-animations-1/
+sources: [{ title: Web Animations, publisher: W3C, publishedAt: "2023-06-05", accessedAt: "2026-06-24", url: https://www.w3.org/TR/web-animations-1/ }]
+tags: [Web Animations, Motion design, Interface]
+disciplines: [Motion design, Développement web, Interaction humain-machine]
+---
+
+## Rôle
+
+Web Animations fournit un modèle de temporalité, de lecture et de synchronisation dans les interfaces du navigateur.
+
+## Usage
+
+Electronic Artefacts peut l’utiliser pour le mouvement d’interface, les essais interactifs et les transitions d’état clarifiant la navigation graphique.
+
+## Références
+
+Consulter la spécification Web Animations du W3C.

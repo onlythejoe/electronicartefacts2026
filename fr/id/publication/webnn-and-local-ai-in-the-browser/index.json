@@ -1,0 +1,138 @@
+{
+  "id": "ea:publication:webnn-and-local-ai-in-the-browser-fr",
+  "type": "publication",
+  "translationOf": "ea:publication:webnn-and-local-ai-in-the-browser",
+  "slug": {
+    "canonical": "webnn-and-local-ai-in-the-browser"
+  },
+  "title": "WebNN et IA locale dans le navigateur",
+  "subtitle": "Technical Article",
+  "abstract": "A practical explanation de WebNN, navigateur-local inference, hardware acceleration, privacy limits, creative outils et web machine-learning architecture.",
+  "description": "Understand WebNN comme a navigateur API pour hardware-accelerated neural-network inference et local AI interaction design.",
+  "locale": "fr",
+  "visibility": "public",
+  "publicationClass": "published",
+  "status": "active",
+  "maturity": "research",
+  "confidence": "published",
+  "version": {
+    "version": "1.0.0",
+    "createdAt": "2026-06-24",
+    "publishedAt": "2026-06-25",
+    "modifiedAt": "2026-06-25"
+  },
+  "authors": [
+    {
+      "id": "ea:organization:electronic-artefacts"
+    }
+  ],
+  "publisher": "ea:organization:electronic-artefacts",
+  "tags": [
+    "WebNN",
+    "Navigateur AI",
+    "Local Inference",
+    "Web Machine Learning",
+    "HCI"
+  ],
+  "disciplines": [
+    "Intelligence artificielle",
+    "Web Development",
+    "Human Computer Interaction",
+    "Creative Technology"
+  ],
+  "sources": [
+    {
+      "title": "Web Neural Network API",
+      "url": "https://www.w3.org/TR/webnn/",
+      "publisher": "W3C",
+      "publishedAt": "2026-05-21",
+      "accessedAt": "2026-06-24"
+    },
+    {
+      "title": "Ethical Principles pour Web Machine Learning",
+      "url": "https://www.w3.org/TR/webmachinelearning-ethics/",
+      "publisher": "W3C",
+      "accessedAt": "2026-06-24"
+    },
+    {
+      "title": "WebGPU",
+      "url": "https://www.w3.org/TR/webgpu/",
+      "publisher": "W3C",
+      "accessedAt": "2026-06-24"
+    }
+  ],
+  "format": "technicalArticle",
+  "subjects": [
+    {
+      "id": "ea:technology:webnn"
+    },
+    {
+      "id": "ea:concept:open-weight-model"
+    },
+    {
+      "id": "ea:concept:multimodal-ai"
+    },
+    {
+      "id": "ea:concept:human-computer-interaction"
+    },
+    {
+      "id": "ea:concept:generative-ai"
+    }
+  ],
+  "claims": [
+    "Navigateur-local inference can reduce server dependence et improve interaction privacy, but it remains constrained by device capability, navigateur support et modèle size.",
+    "WebNN is most useful when treated comme one layer dans a broader web AI stack that includes modèle packaging, permissions, fallbacks et user-visible controls."
+  ],
+  "evidence": [
+    {
+      "id": "ea:technology:webnn"
+    },
+    {
+      "id": "ea:concept:multimodal-ai"
+    }
+  ],
+  "citation": {
+    "preferred": "Electronic Artefacts. \"WebNN et Local AI dans the Navigateur.\" Technical article, version 1.0.0, 2026."
+  },
+  "bodyHtml": "<h2 id=\"problem\">Problem</h2>\n<p>WebNN et IA locale dans le navigateur répond à un problème de lisibilité, d’architecture ou de transmission dans les systèmes numériques contemporains. A practical explanation de WebNN, navigateur-local inference, hardware acceleration, privacy limits, creative outils et web machine-learning architecture.</p>\n<h2 id=\"architecture\">Architecture</h2>\n<p>La page organise le sujet comme un ensemble de notions, dépendances, preuves et relations éditoriales connectées au graphe de connaissance.</p>\n<h2 id=\"implementation\">Implementation</h2>\n<p>Pour Electronic Artefacts, cette publication sert de repère français pour cadrer les choix de conception, préparer des contenus plus détaillés et stabiliser le vocabulaire technique.</p>\n<h2 id=\"evidence\">Evidence</h2>\n<ul>\n<li>Navigateur-local inference can reduce server dependence et improve interaction privacy, but it remains constrained by device capability, navigateur support et modèle size.</li>\n<li>WebNN is most useful when treated comme one layer dans a broader web AI stack that includes modèle packaging, permissions, fallbacks et user-visible controls.</li>\n</ul>\n<h2 id=\"limitations\">Limitations</h2>\n<p>Cette version française assure la couverture éditoriale du site. Une passe ultérieure pourra enrichir le style et traduire plus finement chaque nuance de la version longue.</p>\n<h2 id=\"references\">References</h2>\n<p>Références conservées depuis la fiche canonique : Web Neural Network API, Ethical Principles for Web Machine Learning, WebGPU.</p>\n",
+  "headings": [
+    "Problem",
+    "Architecture",
+    "Implementation",
+    "Evidence",
+    "Limitations",
+    "References"
+  ],
+  "headingItems": [
+    {
+      "level": 2,
+      "title": "Problem",
+      "id": "problem"
+    },
+    {
+      "level": 2,
+      "title": "Architecture",
+      "id": "architecture"
+    },
+    {
+      "level": 2,
+      "title": "Implementation",
+      "id": "implementation"
+    },
+    {
+      "level": 2,
+      "title": "Evidence",
+      "id": "evidence"
+    },
+    {
+      "level": 2,
+      "title": "Limitations",
+      "id": "limitations"
+    },
+    {
+      "level": 2,
+      "title": "References",
+      "id": "references"
+    }
+  ]
+}

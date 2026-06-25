@@ -1,0 +1,137 @@
+{
+  "id": "ea:publication:prompt-injection-and-trust-boundaries-in-ai-knowledge-systems-fr",
+  "type": "publication",
+  "translationOf": "ea:publication:prompt-injection-and-trust-boundaries-in-ai-knowledge-systems",
+  "slug": {
+    "canonical": "prompt-injection-and-trust-boundaries-in-ai-knowledge-systems"
+  },
+  "title": "Injection de prompt et frontières de confiance dans les systèmes de connaissance IA",
+  "subtitle": "Technical Article",
+  "abstract": "A security-focused article on prompt injection, retrieved content, outil use, MCP servers, trust boundaries, permissions et graphe-aware AI workflows.",
+  "description": "Understand prompt injection dans AI systèmes de connaissance through retrieval, agents, MCP outils, permissions, untrusted content et contextual execution.",
+  "locale": "fr",
+  "visibility": "public",
+  "publicationClass": "published",
+  "status": "active",
+  "maturity": "research",
+  "confidence": "published",
+  "version": {
+    "version": "1.0.0",
+    "createdAt": "2026-06-25",
+    "publishedAt": "2026-06-25",
+    "modifiedAt": "2026-06-25"
+  },
+  "authors": [
+    {
+      "id": "ea:organization:electronic-artefacts"
+    }
+  ],
+  "publisher": "ea:organization:electronic-artefacts",
+  "tags": [
+    "Prompt Injection",
+    "AI Security",
+    "AI Agents",
+    "MCP",
+    "Trust Boundaries"
+  ],
+  "disciplines": [
+    "Intelligence artificielle",
+    "Security",
+    "Systèmes de connaissance",
+    "Software Architecture"
+  ],
+  "sources": [
+    {
+      "title": "OWASP Top 10 pour Large Language Modèle Applications",
+      "url": "https://owasp.org/www-project-top-10-for-large-language-model-applications/",
+      "publisher": "OWASP Foundation",
+      "accessedAt": "2026-06-25"
+    },
+    {
+      "title": "Modèle Context Protocole Specification",
+      "url": "https://modelcontextprotocol.io/specification/2025-06-18",
+      "publisher": "Model Context Protocol",
+      "accessedAt": "2026-06-25"
+    },
+    {
+      "title": "AI Risk Management Framework",
+      "url": "https://www.nist.gov/itl/ai-risk-management-framework",
+      "publisher": "National Institute of Standards and Technology",
+      "accessedAt": "2026-06-25"
+    }
+  ],
+  "format": "technicalArticle",
+  "subjects": [
+    {
+      "id": "ea:concept:ai-agent"
+    },
+    {
+      "id": "ea:concept:contextual-execution"
+    },
+    {
+      "id": "ea:concept:retrieval-augmented-generation"
+    },
+    {
+      "id": "ea:concept:graph-runtime"
+    },
+    {
+      "id": "ea:technology:model-context-protocol"
+    }
+  ],
+  "claims": [
+    "Prompt injection est un trust-boundary failure where untrusted content can influence modèle behavior beyond its authority.",
+    "AI systèmes de connaissance should treat retrieved pages, archive records et outil responses comme données, while policy, permissions et outil authority remain outside the modèle transcript."
+  ],
+  "evidence": [
+    {
+      "id": "ea:concept:ai-agent"
+    },
+    {
+      "id": "ea:technology:model-context-protocol"
+    }
+  ],
+  "citation": {
+    "preferred": "Electronic Artefacts. \"Prompt Injection et Trust Boundaries dans AI Systèmes de connaissance.\" Technical article, version 1.0.0, 2026."
+  },
+  "bodyHtml": "<h2 id=\"problem\">Problem</h2>\n<p>Injection de prompt et frontières de confiance dans les systèmes de connaissance IA répond à un problème de lisibilité, d’architecture ou de transmission dans les systèmes numériques contemporains. A security-focused article on prompt injection, retrieved content, outil use, MCP servers, trust boundaries, permissions et graphe-aware AI workflows.</p>\n<h2 id=\"architecture\">Architecture</h2>\n<p>La page organise le sujet comme un ensemble de notions, dépendances, preuves et relations éditoriales connectées au graphe de connaissance.</p>\n<h2 id=\"implementation\">Implementation</h2>\n<p>Pour Electronic Artefacts, cette publication sert de repère français pour cadrer les choix de conception, préparer des contenus plus détaillés et stabiliser le vocabulaire technique.</p>\n<h2 id=\"evidence\">Evidence</h2>\n<ul>\n<li>Prompt injection est un trust-boundary failure where untrusted content can influence modèle behavior beyond its authority.</li>\n<li>AI systèmes de connaissance should treat retrieved pages, archive records et outil responses comme données, while policy, permissions et outil authority remain outside the modèle transcript.</li>\n</ul>\n<h2 id=\"limitations\">Limitations</h2>\n<p>Cette version française assure la couverture éditoriale du site. Une passe ultérieure pourra enrichir le style et traduire plus finement chaque nuance de la version longue.</p>\n<h2 id=\"references\">References</h2>\n<p>Références conservées depuis la fiche canonique : OWASP Top 10 for Large Language Model Applications, Model Context Protocol Specification, AI Risk Management Framework.</p>\n",
+  "headings": [
+    "Problem",
+    "Architecture",
+    "Implementation",
+    "Evidence",
+    "Limitations",
+    "References"
+  ],
+  "headingItems": [
+    {
+      "level": 2,
+      "title": "Problem",
+      "id": "problem"
+    },
+    {
+      "level": 2,
+      "title": "Architecture",
+      "id": "architecture"
+    },
+    {
+      "level": 2,
+      "title": "Implementation",
+      "id": "implementation"
+    },
+    {
+      "level": 2,
+      "title": "Evidence",
+      "id": "evidence"
+    },
+    {
+      "level": 2,
+      "title": "Limitations",
+      "id": "limitations"
+    },
+    {
+      "level": 2,
+      "title": "References",
+      "id": "references"
+    }
+  ]
+}

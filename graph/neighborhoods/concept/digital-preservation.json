@@ -1,153 +1,16 @@
 {
-  "id": "local:ea:concept:digital-preservation",
+  "id": "local:ea:concept:digital-preservation-fr",
   "kind": "local",
-  "focus": "ea:concept:digital-preservation",
+  "focus": "ea:concept:digital-preservation-fr",
   "nodes": [
     {
-      "id": "ea:concept:digital-preservation",
+      "id": "ea:concept:digital-preservation-fr",
       "type": "concept",
-      "title": "Digital Preservation",
-      "route": "/knowledge/concepts/digital-preservation/",
+      "title": "Préservation numérique",
+      "route": "/fr/knowledge/concepts/digital-preservation/",
       "status": "active",
       "confidence": "validated"
-    },
-    {
-      "id": "ea:project:palimpsests",
-      "type": "project",
-      "title": "Palimpsests",
-      "route": "/projects/palimpsests/",
-      "status": "active",
-      "confidence": "published"
-    },
-    {
-      "id": "ea:publication:digital-preservation-and-living-archives",
-      "type": "publication",
-      "title": "Digital Preservation and Living Archives",
-      "route": "/publications/digital-preservation-and-living-archives/",
-      "status": "active",
-      "confidence": "published"
-    },
-    {
-      "id": "ea:publication:iiif-and-compound-cultural-objects",
-      "type": "publication",
-      "title": "IIIF and Compound Cultural Objects",
-      "route": "/publications/iiif-and-compound-cultural-objects/",
-      "status": "active",
-      "confidence": "published"
-    },
-    {
-      "id": "ea:publication:metadata-cataloguing-and-cultural-memory",
-      "type": "publication",
-      "title": "Metadata, Cataloguing and Cultural Memory",
-      "route": "/publications/metadata-cataloguing-and-cultural-memory/",
-      "status": "active",
-      "confidence": "published"
-    },
-    {
-      "id": "ea:publication:open-source-as-cultural-infrastructure",
-      "type": "publication",
-      "title": "Open Source as Cultural Infrastructure",
-      "route": "/publications/open-source-as-cultural-infrastructure/",
-      "status": "active",
-      "confidence": "published"
-    },
-    {
-      "id": "ea:publication:personal-knowledge-systems-and-digital-gardens",
-      "type": "publication",
-      "title": "Personal Knowledge Systems and Digital Gardens",
-      "route": "/publications/personal-knowledge-systems-and-digital-gardens/",
-      "status": "active",
-      "confidence": "published"
-    },
-    {
-      "id": "ea:publication:signal-archaeology-audio-memory-and-machine-listening",
-      "type": "publication",
-      "title": "Signal Archaeology, Audio Memory and Machine Listening",
-      "route": "/publications/signal-archaeology-audio-memory-and-machine-listening/",
-      "status": "active",
-      "confidence": "published"
-    },
-    {
-      "id": "ea:publication:verifiable-credentials-for-cultural-archives-and-creator-identity",
-      "type": "publication",
-      "title": "Verifiable Credentials for Cultural Archives and Creator Identity",
-      "route": "/publications/verifiable-credentials-for-cultural-archives-and-creator-identity/",
-      "status": "active",
-      "confidence": "published"
     }
   ],
-  "edges": [
-    {
-      "id": "ear:iiif-article-documents-digital-preservation",
-      "source": "ea:publication:iiif-and-compound-cultural-objects",
-      "target": "ea:concept:digital-preservation",
-      "predicate": "documents",
-      "label": "Documents",
-      "statement": "IIIF and Compound Cultural Objects connects object presentation structure to digital preservation practice.",
-      "confidence": "published"
-    },
-    {
-      "id": "ear:verifiable-credentials-article-documents-digital-preservation",
-      "source": "ea:publication:verifiable-credentials-for-cultural-archives-and-creator-identity",
-      "target": "ea:concept:digital-preservation",
-      "predicate": "documents",
-      "label": "Documents",
-      "statement": "Verifiable Credentials for Cultural Archives and Creator Identity explains how credentials can support preservation events and archive trust.",
-      "confidence": "published"
-    },
-    {
-      "id": "ear:palimpsests-applies-digital-preservation",
-      "source": "ea:project:palimpsests",
-      "target": "ea:concept:digital-preservation",
-      "predicate": "appliesConcept",
-      "label": "Applies concept",
-      "statement": "Palimpsests applies digital preservation by treating audio, visual and research traces as a compound cultural record.",
-      "confidence": "observed"
-    },
-    {
-      "id": "ear:digital-preservation-article-documents-digital-preservation",
-      "source": "ea:publication:digital-preservation-and-living-archives",
-      "target": "ea:concept:digital-preservation",
-      "predicate": "documents",
-      "label": "Documents",
-      "statement": "Digital Preservation and Living Archives documents digital preservation as long-term care for digital objects and context.",
-      "confidence": "published"
-    },
-    {
-      "id": "ear:signal-archaeology-article-documents-digital-preservation",
-      "source": "ea:publication:signal-archaeology-audio-memory-and-machine-listening",
-      "target": "ea:concept:digital-preservation",
-      "predicate": "documents",
-      "label": "Documents",
-      "statement": "Signal Archaeology, Audio Memory and Machine Listening connects audio traces to digital preservation practice.",
-      "confidence": "published"
-    },
-    {
-      "id": "ear:personal-knowledge-article-documents-digital-preservation",
-      "source": "ea:publication:personal-knowledge-systems-and-digital-gardens",
-      "target": "ea:concept:digital-preservation",
-      "predicate": "documents",
-      "label": "Documents",
-      "statement": "Personal Knowledge Systems and Digital Gardens links revision and retrieval practice to digital preservation concerns.",
-      "confidence": "published"
-    },
-    {
-      "id": "ear:open-source-article-documents-digital-preservation",
-      "source": "ea:publication:open-source-as-cultural-infrastructure",
-      "target": "ea:concept:digital-preservation",
-      "predicate": "documents",
-      "label": "Documents",
-      "statement": "Open Source as Cultural Infrastructure connects software access and maintenance to preservation concerns.",
-      "confidence": "published"
-    },
-    {
-      "id": "ear:metadata-article-documents-digital-preservation",
-      "source": "ea:publication:metadata-cataloguing-and-cultural-memory",
-      "target": "ea:concept:digital-preservation",
-      "predicate": "documents",
-      "label": "Documents",
-      "statement": "Metadata, Cataloguing and Cultural Memory connects metadata to digital preservation and long-term context.",
-      "confidence": "published"
-    }
-  ]
+  "edges": []
 }

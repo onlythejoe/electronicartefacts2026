@@ -1466,6 +1466,3863 @@
     }
   },
   {
+    "id": "ea:collection:knowledge-hub-foundations-fr",
+    "legacyId": "knowledge-hub-foundations-fr",
+    "kind": "collection",
+    "type": "collection",
+    "locale": "fr",
+    "translationOf": "ea:collection:knowledge-hub-foundations",
+    "title": "Fondations du hub de connaissance",
+    "subtitle": "Editorial Collection",
+    "summary": "Knowledge Hub Foundations curates the first expansion wave de Electronic Artefacts knowledge records around graphe systèmes, preservation, generative systèmes, signal, audio et public sémantique publishing.",
+    "description": "A curated collection grouping foundational Knowledge Hub concepts, technologies, programs, projects et publications.",
+    "status": "active",
+    "maturity": "research",
+    "confidence": "published",
+    "visibility": "public",
+    "publicationClass": "published",
+    "tags": [
+      "Knowledge Hub",
+      "Editorial Collection",
+      "Foundations",
+      "Recherche Library",
+      "Sémantique Publishing"
+    ],
+    "discipline": [
+      "Systèmes de connaissance",
+      "Archives",
+      "Programmation créative",
+      "Audio Engineering",
+      "Digital Art"
+    ],
+    "route": "/fr/archive/collections/knowledge-hub-foundations/",
+    "identifier": "/fr/id/collection/knowledge-hub-foundations/",
+    "temporality": {
+      "creationDate": "2026-06-23",
+      "lastUpdated": "2026-06-25",
+      "releaseDate": "2026-06-25",
+      "creationYear": "2026"
+    }
+  },
+  {
+    "id": "ea:collection:knowledge-hub-fourth-wave-fr",
+    "legacyId": "knowledge-hub-fourth-wave-fr",
+    "kind": "collection",
+    "type": "collection",
+    "locale": "fr",
+    "translationOf": "ea:collection:knowledge-hub-fourth-wave",
+    "title": "Hub de connaissance, quatrième vague",
+    "subtitle": "AI Protocoles, Provenance, Gouvernance et Culturel Interfaces",
+    "summary": "Knowledge Hub Fourth Wave groups articles et technology records about MCP, C2PA, WebNN, IIIF, OpenTelemetry, AI search, gouvernance, prompt injection et verifiable identité.",
+    "description": "A curated Electronic Artefacts collection about AI outil protocoles, médias provenance, navigateur-local inference, archive presentation, agent observability, gouvernance et graphee de connaissances SEO.",
+    "status": "active",
+    "maturity": "research",
+    "confidence": "published",
+    "visibility": "public",
+    "publicationClass": "published",
+    "tags": [
+      "Knowledge Hub",
+      "Fourth Wave",
+      "AI Protocoles",
+      "AI Gouvernance",
+      "Provenance",
+      "Culturel Infrastructure"
+    ],
+    "discipline": [
+      "Intelligence artificielle",
+      "Systèmes de connaissance",
+      "Préservation numérique",
+      "Software Architecture",
+      "Culturel Infrastructure"
+    ],
+    "route": "/fr/archive/collections/knowledge-hub-fourth-wave/",
+    "identifier": "/fr/id/collection/knowledge-hub-fourth-wave/",
+    "temporality": {
+      "creationDate": "2026-06-24",
+      "lastUpdated": "2026-06-25",
+      "releaseDate": "2026-06-25",
+      "creationYear": "2026"
+    }
+  },
+  {
+    "id": "ea:collection:knowledge-hub-second-wave-fr",
+    "legacyId": "knowledge-hub-second-wave-fr",
+    "kind": "collection",
+    "type": "collection",
+    "locale": "fr",
+    "translationOf": "ea:collection:knowledge-hub-second-wave",
+    "title": "Hub de connaissance, deuxième vague",
+    "subtitle": "Editorial Collection",
+    "summary": "Knowledge Hub Second Wave groups a larger expansion de Electronic Artefacts knowledge records across hypertext, open source, métadonnées, programmation créative, web audio, motion, typographey, HCI, algorithmic music et generative AI.",
+    "description": "A curated collection pour the second Knowledge Hub expansion wave.",
+    "status": "active",
+    "maturity": "research",
+    "confidence": "published",
+    "visibility": "public",
+    "publicationClass": "published",
+    "tags": [
+      "Knowledge Hub",
+      "Second Wave",
+      "Editorial Collection",
+      "Recherche Library"
+    ],
+    "discipline": [
+      "Systèmes de connaissance",
+      "Programmation créative",
+      "Web Development",
+      "Design",
+      "Intelligence artificielle"
+    ],
+    "route": "/fr/archive/collections/knowledge-hub-second-wave/",
+    "identifier": "/fr/id/collection/knowledge-hub-second-wave/",
+    "temporality": {
+      "creationDate": "2026-06-24",
+      "lastUpdated": "2026-06-25",
+      "releaseDate": "2026-06-25",
+      "creationYear": "2026"
+    }
+  },
+  {
+    "id": "ea:collection:knowledge-hub-third-wave-fr",
+    "legacyId": "knowledge-hub-third-wave-fr",
+    "kind": "collection",
+    "type": "collection",
+    "locale": "fr",
+    "translationOf": "ea:collection:knowledge-hub-third-wave",
+    "title": "Hub de connaissance, troisième vague",
+    "subtitle": "AI, Systèmes et Graphe Computing",
+    "summary": "Knowledge Hub Third Wave groups a major expansion across LLMs, AI agents, local AI, RAG, multimodal systèmes, systèmes thinking, ontologies, graphe modèleing, event streams, Redis, microservices et domain runtimes.",
+    "description": "A curated Electronic Artefacts collection about durable AI et systèmes architecture.",
+    "status": "active",
+    "maturity": "research",
+    "confidence": "published",
+    "visibility": "public",
+    "publicationClass": "published",
+    "tags": [
+      "Knowledge Hub",
+      "Third Wave",
+      "Intelligence artificielle",
+      "Systèmes Architecture",
+      "Graphe Computing"
+    ],
+    "discipline": [
+      "Intelligence artificielle",
+      "Systèmes Design",
+      "Systèmes de connaissance",
+      "Software Architecture",
+      "Creative Technology"
+    ],
+    "route": "/fr/archive/collections/knowledge-hub-third-wave/",
+    "identifier": "/fr/id/collection/knowledge-hub-third-wave/",
+    "temporality": {
+      "creationDate": "2026-06-24",
+      "lastUpdated": "2026-06-25",
+      "releaseDate": "2026-06-25",
+      "creationYear": "2026"
+    }
+  },
+  {
+    "id": "ea:concept:ai-agent-fr",
+    "legacyId": "ai-agent-fr",
+    "kind": "concept",
+    "type": "concept",
+    "locale": "fr",
+    "translationOf": "ea:concept:ai-agent",
+    "title": "Agent d’IA",
+    "summary": "AI agents combine modèles, outils, mémoire, environmental feedback, stopping conditions, permissions et evaluation dans an iterative action loop.",
+    "description": "A canonical definition distinguishing AI agents from fixed AI workflows et conventional automation.",
+    "definition": "An AI agent est un software système dans which a modèle can select actions, use outils, observe results et adapt its next steps toward an objective within defined boundaries.",
+    "status": "active",
+    "maturity": "research",
+    "confidence": "validated",
+    "visibility": "public",
+    "publicationClass": "canonical",
+    "tags": [
+      "AI Agents",
+      "Outil Use",
+      "Automation",
+      "Orchestration",
+      "Human Oversight"
+    ],
+    "discipline": [
+      "Intelligence artificielle",
+      "Systèmes Design",
+      "Human Computer Interaction",
+      "Software Architecture"
+    ],
+    "route": "/fr/knowledge/concepts/ai-agent/",
+    "identifier": "/fr/id/concept/ai-agent/",
+    "temporality": {
+      "creationDate": "2026-06-24",
+      "lastUpdated": "2026-06-25",
+      "releaseDate": "2026-06-25",
+      "creationYear": "2026"
+    }
+  },
+  {
+    "id": "ea:concept:algorithmic-composition-fr",
+    "legacyId": "algorithmic-composition-fr",
+    "kind": "concept",
+    "type": "concept",
+    "locale": "fr",
+    "translationOf": "ea:concept:algorithmic-composition",
+    "title": "Composition algorithmique",
+    "summary": "Algorithmic composition relie music theory, computation, cybernetics, generative systèmes et electronic music by treating composition comme the design de procedures comme well comme sounds.",
+    "description": "A canonical concept record pour rule-based et computational approaches à musical composition.",
+    "definition": "Algorithmic composition est le use de rules, procedures, probability, computation ou formal systèmes à generate ou organize musical material.",
+    "status": "active",
+    "maturity": "research",
+    "confidence": "canonical",
+    "visibility": "public",
+    "publicationClass": "canonical",
+    "tags": [
+      "Composition algorithmique",
+      "Electronic Music",
+      "Generative Systèmes",
+      "Music Theory"
+    ],
+    "discipline": [
+      "Electronic Music",
+      "Music Production",
+      "Programmation créative",
+      "Cybernetics"
+    ],
+    "route": "/fr/knowledge/concepts/algorithmic-composition/",
+    "identifier": "/fr/id/concept/algorithmic-composition/",
+    "temporality": {
+      "creationDate": "2026-06-24",
+      "lastUpdated": "2026-06-25",
+      "releaseDate": "2026-06-25",
+      "creationYear": "2026"
+    }
+  },
+  {
+    "id": "ea:concept:augmented-intelligence-fr",
+    "legacyId": "augmented-intelligence-fr",
+    "kind": "concept",
+    "type": "concept",
+    "locale": "fr",
+    "translationOf": "ea:concept:augmented-intelligence",
+    "title": "Intelligence augmentée",
+    "summary": "Augmented intelligence reframes computation comme a partner dans human work, linking HCI, AI, systèmes de connaissance, creative outils et Electronic Artefacts runtime recherche.",
+    "description": "A canonical concept record pour human-centered computational augmentation.",
+    "definition": "Augmented intelligence est le design de outils, interfaces et systèmes that expand human perception, reasoning, mémoire et creative capability.",
+    "status": "active",
+    "maturity": "research",
+    "confidence": "canonical",
+    "visibility": "public",
+    "publicationClass": "canonical",
+    "tags": [
+      "Intelligence augmentée",
+      "HCI",
+      "AI",
+      "Creative Outils"
+    ],
+    "discipline": [
+      "Human Computer Interaction",
+      "Intelligence artificielle",
+      "Systèmes de connaissance",
+      "Systèmes Design"
+    ],
+    "route": "/fr/knowledge/concepts/augmented-intelligence/",
+    "identifier": "/fr/id/concept/augmented-intelligence/",
+    "temporality": {
+      "creationDate": "2026-06-24",
+      "lastUpdated": "2026-06-25",
+      "releaseDate": "2026-06-25",
+      "creationYear": "2026"
+    }
+  },
+  {
+    "id": "ea:concept:autonomous-system-fr",
+    "legacyId": "autonomous-system-fr",
+    "kind": "concept",
+    "type": "concept",
+    "locale": "fr",
+    "translationOf": "ea:concept:autonomous-system",
+    "title": "Système autonome",
+    "summary": "Autonomous systèmes combine sensing, modèles, planning, execution, feedback, constraints, gouvernance et human intervention paths.",
+    "description": "A canonical definition connecting AI agents, robotics, runtime systèmes et responsible control.",
+    "definition": "An autonomous système can perceive relevant state, select actions et adapt behavior toward objectives avec limited direct human control during operation.",
+    "status": "active",
+    "maturity": "research",
+    "confidence": "validated",
+    "visibility": "public",
+    "publicationClass": "canonical",
+    "tags": [
+      "Autonomous Systèmes",
+      "AI Agents",
+      "Feedback",
+      "Gouvernance",
+      "Human Oversight"
+    ],
+    "discipline": [
+      "Intelligence artificielle",
+      "Robotics",
+      "Systèmes Design",
+      "Cybernetics"
+    ],
+    "route": "/fr/knowledge/concepts/autonomous-system/",
+    "identifier": "/fr/id/concept/autonomous-system/",
+    "temporality": {
+      "creationDate": "2026-06-24",
+      "lastUpdated": "2026-06-25",
+      "releaseDate": "2026-06-25",
+      "creationYear": "2026"
+    }
+  },
+  {
+    "id": "ea:concept:contextual-execution-fr",
+    "legacyId": "contextual-execution-fr",
+    "kind": "concept",
+    "type": "concept",
+    "locale": "fr",
+    "translationOf": "ea:concept:contextual-execution",
+    "title": "Exécution contextuelle",
+    "summary": "Contextual execution décrit runtime behavior where an operation is evaluated through entité identité, graphe relations, permissions, temporal state et intended scope.",
+    "description": "A canonical Electronic Artefacts concept connecting graphe runtime, Runtime Theory, VASTE et identité-aware systèmes.",
+    "definition": "Contextual execution est le practice de making identité, state, permissions, relationships et operating context active constraints on what a système can do.",
+    "status": "active",
+    "maturity": "research",
+    "confidence": "canonical",
+    "visibility": "public",
+    "publicationClass": "canonical",
+    "tags": [
+      "Context",
+      "Execution",
+      "Runtime",
+      "Identité",
+      "Permissions"
+    ],
+    "discipline": [
+      "Systèmes Design",
+      "Programming",
+      "Systèmes de connaissance",
+      "Software Architecture"
+    ],
+    "route": "/fr/knowledge/concepts/contextual-execution/",
+    "identifier": "/fr/id/concept/contextual-execution/",
+    "temporality": {
+      "creationDate": "2026-06-23",
+      "lastUpdated": "2026-06-25",
+      "releaseDate": "2026-06-25",
+      "creationYear": "2026"
+    }
+  },
+  {
+    "id": "ea:concept:creative-coding-fr",
+    "legacyId": "creative-coding-fr",
+    "kind": "concept",
+    "type": "concept",
+    "locale": "fr",
+    "translationOf": "ea:concept:creative-coding",
+    "title": "Programmation créative",
+    "summary": "Creative coding relie software, visuel culture, sound, interaction, generative systèmes, education et experimental publishing.",
+    "description": "A canonical definition de programmation créative pour Electronic Artefacts knowledge articles, projects et programs.",
+    "definition": "Creative coding est le use de programming comme an artistic, design ou exploratory medium rather than only comme an engineering implementation outil.",
+    "status": "active",
+    "maturity": "research",
+    "confidence": "validated",
+    "visibility": "public",
+    "publicationClass": "canonical",
+    "tags": [
+      "Programmation créative",
+      "Digital Art",
+      "Programming",
+      "Generative Art",
+      "Interaction"
+    ],
+    "discipline": [
+      "Programmation créative",
+      "Programming",
+      "Digital Art",
+      "Motion design",
+      "Sound Design"
+    ],
+    "route": "/fr/knowledge/concepts/creative-coding/",
+    "identifier": "/fr/id/concept/creative-coding/",
+    "temporality": {
+      "creationDate": "2026-06-23",
+      "lastUpdated": "2026-06-25",
+      "releaseDate": "2026-06-25",
+      "creationYear": "2026"
+    }
+  },
+  {
+    "id": "ea:concept:cybernetic-feedback-fr",
+    "legacyId": "cybernetic-feedback-fr",
+    "kind": "concept",
+    "type": "concept",
+    "locale": "fr",
+    "translationOf": "ea:concept:cybernetic-feedback",
+    "title": "Rétroaction cybernétique",
+    "summary": "Cybernetic feedback relie control, communication, systèmes theory, generative art, machine listening, adaptive interfaces et runtime gouvernance.",
+    "description": "A canonical definition de cybernetic feedback pour Electronic Artefacts recherche, creative systèmes et historical technology context.",
+    "definition": "Cybernetic feedback est le circulation de information about a système's state back into the système so that behavior can be regulated, adapted ou transformed.",
+    "status": "active",
+    "maturity": "research",
+    "confidence": "validated",
+    "visibility": "public",
+    "publicationClass": "canonical",
+    "tags": [
+      "Cybernetics",
+      "Feedback",
+      "Systèmes Theory",
+      "Control",
+      "Generative Systèmes"
+    ],
+    "discipline": [
+      "Cybernetics",
+      "Complexity",
+      "Systèmes Design",
+      "Digital Art"
+    ],
+    "route": "/fr/knowledge/concepts/cybernetic-feedback/",
+    "identifier": "/fr/id/concept/cybernetic-feedback/",
+    "temporality": {
+      "creationDate": "2026-06-23",
+      "lastUpdated": "2026-06-25",
+      "releaseDate": "2026-06-25",
+      "creationYear": "2026"
+    }
+  },
+  {
+    "id": "ea:concept:digital-preservation-fr",
+    "legacyId": "digital-preservation-fr",
+    "kind": "concept",
+    "type": "concept",
+    "locale": "fr",
+    "translationOf": "ea:concept:digital-preservation",
+    "title": "Préservation numérique",
+    "summary": "Digital preservation relie file formats, métadonnées, provenance, storage, rights, migration et interpretation into a long-term care practice pour digital culture.",
+    "description": "A canonical definition de préservation numérique pour Electronic Artefacts archives, Palimpsests, Vestiges et knowledge infrastructure.",
+    "definition": "Digital preservation est le long-term work de keeping digital objects understandable, authentic, usable et accessible despite changes dans formats, software, hardware et context.",
+    "status": "active",
+    "maturity": "research",
+    "confidence": "validated",
+    "visibility": "public",
+    "publicationClass": "canonical",
+    "tags": [
+      "Préservation numérique",
+      "Archive",
+      "File Formats",
+      "Provenance",
+      "Mémoire"
+    ],
+    "discipline": [
+      "Archives",
+      "History de Technology",
+      "Systèmes de connaissance",
+      "Digital Art"
+    ],
+    "route": "/fr/knowledge/concepts/digital-preservation/",
+    "identifier": "/fr/id/concept/digital-preservation/",
+    "temporality": {
+      "creationDate": "2026-06-23",
+      "lastUpdated": "2026-06-25",
+      "releaseDate": "2026-06-25",
+      "creationYear": "2026"
+    }
+  },
+  {
+    "id": "ea:concept:domain-operating-system-fr",
+    "legacyId": "domain-operating-system-fr",
+    "kind": "concept",
+    "type": "concept",
+    "locale": "fr",
+    "translationOf": "ea:concept:domain-operating-system",
+    "title": "Système d’exploitation de domaine",
+    "summary": "A domain operating système turns repeated domain rules into reusable infrastructure without claiming à replace a general-purpose computer operating système.",
+    "description": "An Electronic Artefacts concept pour business operating systèmes, runtime engines et shared domain plateformes.",
+    "definition": "A domain operating système est un shared runtime et information layer that coordinates identités, entités, permissions, workflows, events et interfaces pour a specific field de activity.",
+    "status": "active",
+    "maturity": "research",
+    "confidence": "observed",
+    "visibility": "public",
+    "publicationClass": "canonical",
+    "tags": [
+      "Domain OS",
+      "Business OS",
+      "Runtime Engine",
+      "Plateforme Architecture",
+      "Composability"
+    ],
+    "discipline": [
+      "Systèmes Design",
+      "Software Architecture",
+      "Programming",
+      "Systèmes de connaissance"
+    ],
+    "route": "/fr/knowledge/concepts/domain-operating-system/",
+    "identifier": "/fr/id/concept/domain-operating-system/",
+    "temporality": {
+      "creationDate": "2026-06-24",
+      "lastUpdated": "2026-06-25",
+      "releaseDate": "2026-06-25",
+      "creationYear": "2026"
+    }
+  },
+  {
+    "id": "ea:concept:entity-identity-fr",
+    "legacyId": "entity-identity-fr",
+    "kind": "concept",
+    "type": "concept",
+    "locale": "fr",
+    "translationOf": "ea:concept:entity-identity",
+    "title": "Identité d’entité",
+    "summary": "Entité identité gives systèmes de connaissance a way à cite things without confusing names, pages, files, versions et changing descriptions.",
+    "description": "A canonical definition de entité identité pour graphe publishing, sémantique URLs, archives et Electronic Artefacts records.",
+    "definition": "Entité identité est le durable naming de a person, concept, project, program, publication ou artefact so that references remain stable comme descriptions evolve.",
+    "status": "active",
+    "maturity": "research",
+    "confidence": "canonical",
+    "visibility": "public",
+    "publicationClass": "canonical",
+    "tags": [
+      "Identité",
+      "URI",
+      "Canonical URL",
+      "Versioning",
+      "Graphe de connaissances"
+    ],
+    "discipline": [
+      "Systèmes de connaissance",
+      "Web Development",
+      "Archives"
+    ],
+    "route": "/fr/knowledge/concepts/entity-identity/",
+    "identifier": "/fr/id/concept/entity-identity/",
+    "temporality": {
+      "creationDate": "2026-06-23",
+      "lastUpdated": "2026-06-25",
+      "releaseDate": "2026-06-25",
+      "creationYear": "2026"
+    }
+  },
+  {
+    "id": "ea:concept:event-driven-architecture-fr",
+    "legacyId": "event-driven-architecture-fr",
+    "kind": "concept",
+    "type": "concept",
+    "locale": "fr",
+    "translationOf": "ea:concept:event-driven-architecture",
+    "title": "Architecture événementielle",
+    "summary": "Event-driven architecture relie event producers, brokers ou logs, consumers, schemas, delivery sémantiques, projections et observability.",
+    "description": "A canonical definition de event-driven architecture pour runtimes, workflows et distributed systèmes.",
+    "definition": "Event-driven architecture est un système design approach dans which components publish, transport et react à records de state change rather than depending only on direct synchronous calls.",
+    "status": "active",
+    "maturity": "production",
+    "confidence": "canonical",
+    "visibility": "public",
+    "publicationClass": "canonical",
+    "tags": [
+      "Architecture événementielle",
+      "Event Streams",
+      "Messaging",
+      "Idempotency",
+      "Projections"
+    ],
+    "discipline": [
+      "Software Architecture",
+      "Systèmes Design",
+      "Programming",
+      "Distributed Systèmes"
+    ],
+    "route": "/fr/knowledge/concepts/event-driven-architecture/",
+    "identifier": "/fr/id/concept/event-driven-architecture/",
+    "temporality": {
+      "creationDate": "2026-06-24",
+      "lastUpdated": "2026-06-25",
+      "releaseDate": "2026-06-25",
+      "creationYear": "2026"
+    }
+  },
+  {
+    "id": "ea:concept:generative-ai-fr",
+    "legacyId": "generative-ai-fr",
+    "kind": "concept",
+    "type": "concept",
+    "locale": "fr",
+    "translationOf": "ea:concept:generative-ai",
+    "title": "IA générative",
+    "summary": "Generative AI relie machine learning, creative workflows, latent spaces, risk management, provenance, authorship et culturel production.",
+    "description": "A canonical concept record pour generative AI dans creative et systèmes de connaissance.",
+    "definition": "Generative AI refers à machine-learning systèmes that produce ou transform médias such comme text, image, audio, video, code ou structured données from learned patterns.",
+    "status": "active",
+    "maturity": "research",
+    "confidence": "validated",
+    "visibility": "public",
+    "publicationClass": "canonical",
+    "tags": [
+      "IA générative",
+      "Machine Learning",
+      "Provenance",
+      "Creative Workflows"
+    ],
+    "discipline": [
+      "Intelligence artificielle",
+      "Machine Learning",
+      "Programmation créative",
+      "Digital Art"
+    ],
+    "route": "/fr/knowledge/concepts/generative-ai/",
+    "identifier": "/fr/id/concept/generative-ai/",
+    "temporality": {
+      "creationDate": "2026-06-24",
+      "lastUpdated": "2026-06-25",
+      "releaseDate": "2026-06-25",
+      "creationYear": "2026"
+    }
+  },
+  {
+    "id": "ea:concept:generative-system-fr",
+    "legacyId": "generative-system-fr",
+    "kind": "concept",
+    "type": "concept",
+    "locale": "fr",
+    "translationOf": "ea:concept:generative-system",
+    "title": "Système génératif",
+    "summary": "Generative systèmes connect programmation créative, cybernetics, algorithmic composition, simulation, design outils et AI by shifting authorship toward rules, feedback et selection.",
+    "description": "A canonical definition de generative système pour programmation créative, sound design, design automation et Electronic Artefacts projects.",
+    "definition": "A generative système est un rule-based, procedural ou computational arrangement that produces variable outputs from defined constraints, materials et processes.",
+    "status": "active",
+    "maturity": "research",
+    "confidence": "validated",
+    "visibility": "public",
+    "publicationClass": "canonical",
+    "tags": [
+      "Generative Art",
+      "Programmation créative",
+      "Composition algorithmique",
+      "Systèmes",
+      "Simulation"
+    ],
+    "discipline": [
+      "Digital Art",
+      "Programmation créative",
+      "Design",
+      "Music Production",
+      "Systèmes Design"
+    ],
+    "route": "/fr/knowledge/concepts/generative-system/",
+    "identifier": "/fr/id/concept/generative-system/",
+    "temporality": {
+      "creationDate": "2026-06-23",
+      "lastUpdated": "2026-06-25",
+      "releaseDate": "2026-06-25",
+      "creationYear": "2026"
+    }
+  },
+  {
+    "id": "ea:concept:graph-modeling-fr",
+    "legacyId": "graph-modeling-fr",
+    "kind": "concept",
+    "type": "concept",
+    "locale": "fr",
+    "translationOf": "ea:concept:graph-modeling",
+    "title": "Modélisation de graphe",
+    "summary": "Graphe modèleing makes many-à-many relationships, paths, provenance et evolving context explicit where folders et rigid trees obscure them.",
+    "description": "A canonical definition de graphe modèleing pour knowledge, runtime et culturel systèmes.",
+    "definition": "Graphe modèleing represents a domain through addressable nodes, typed relationships et properties chosen à answer specific questions et support specific operations.",
+    "status": "active",
+    "maturity": "research",
+    "confidence": "canonical",
+    "visibility": "public",
+    "publicationClass": "canonical",
+    "tags": [
+      "Modélisation de graphe",
+      "Nodes",
+      "Relations",
+      "Domain Modèleing",
+      "Graphe de connaissances"
+    ],
+    "discipline": [
+      "Systèmes de connaissance",
+      "Systèmes Design",
+      "Information Architecture",
+      "Software Architecture"
+    ],
+    "route": "/fr/knowledge/concepts/graph-modeling/",
+    "identifier": "/fr/id/concept/graph-modeling/",
+    "temporality": {
+      "creationDate": "2026-06-24",
+      "lastUpdated": "2026-06-25",
+      "releaseDate": "2026-06-25",
+      "creationYear": "2026"
+    }
+  },
+  {
+    "id": "ea:concept:graph-runtime-fr",
+    "legacyId": "graph-runtime-fr",
+    "kind": "concept",
+    "type": "concept",
+    "locale": "fr",
+    "translationOf": "ea:concept:graph-runtime",
+    "title": "Runtime de graphe",
+    "summary": "Electronic Artefacts uses graphe runtime à describe systèmes where entités, relationships, identité, context et events form an executable structure rather than a passive données modèle.",
+    "description": "A canonical definition de graphe runtime, its scope, applications et relationship à VASTE, Runtime Theory et Vestiges.",
+    "definition": "A graphe runtime est un execution environment dans which addressable entités et typed relationships participate directly dans contextual computation.",
+    "status": "active",
+    "maturity": "research",
+    "confidence": "canonical",
+    "visibility": "public",
+    "publicationClass": "canonical",
+    "tags": [
+      "Graphe",
+      "Runtime",
+      "Context",
+      "Identité",
+      "Execution"
+    ],
+    "discipline": [
+      "Software architecture",
+      "Knowledge systèmes"
+    ],
+    "route": "/fr/knowledge/concepts/graph-runtime/",
+    "identifier": "/fr/id/concept/graph-runtime/",
+    "temporality": {
+      "creationDate": "2024-01-01",
+      "lastUpdated": "2026-06-25",
+      "releaseDate": "2026-06-25",
+      "creationYear": "2024"
+    }
+  },
+  {
+    "id": "ea:concept:human-computer-interaction-fr",
+    "legacyId": "human-computer-interaction-fr",
+    "kind": "concept",
+    "type": "concept",
+    "locale": "fr",
+    "translationOf": "ea:concept:human-computer-interaction",
+    "title": "Human Computer Interaction",
+    "summary": "HCI relie interface design, accessibility, creative outils, augmented intelligence, software ergonomics et the social consequences de computation.",
+    "description": "A canonical concept record pour HCI comme a design et recherche discipline.",
+    "definition": "Human computer interaction est le study et design de relationships between people, computational systèmes, interfaces, tasks, environments et cultures de use.",
+    "status": "active",
+    "maturity": "research",
+    "confidence": "canonical",
+    "visibility": "public",
+    "publicationClass": "canonical",
+    "tags": [
+      "HCI",
+      "Interface Design",
+      "Accessibility",
+      "Creative Outils"
+    ],
+    "discipline": [
+      "Human Computer Interaction",
+      "Design",
+      "Web Development",
+      "Intelligence artificielle"
+    ],
+    "route": "/fr/knowledge/concepts/human-computer-interaction/",
+    "identifier": "/fr/id/concept/human-computer-interaction/",
+    "temporality": {
+      "creationDate": "2026-06-24",
+      "lastUpdated": "2026-06-25",
+      "releaseDate": "2026-06-25",
+      "creationYear": "2026"
+    }
+  },
+  {
+    "id": "ea:concept:hypertext-fr",
+    "legacyId": "hypertext-fr",
+    "kind": "concept",
+    "type": "concept",
+    "locale": "fr",
+    "translationOf": "ea:concept:hypertext",
+    "title": "Hypertexte",
+    "summary": "Hypertext est un foundational concept pour the web, digital archives, graphee de connaissancess, digital gardens, public notes et Electronic Artefacts knowledge publishing.",
+    "description": "A canonical concept record pour linked textual et médias systèmes.",
+    "definition": "Hypertext est un système de non-linear text et médias connected by links, allowing readers et machines à traverse knowledge through associations.",
+    "status": "active",
+    "maturity": "research",
+    "confidence": "canonical",
+    "visibility": "public",
+    "publicationClass": "canonical",
+    "tags": [
+      "Hypertexte",
+      "Web",
+      "Systèmes de connaissance",
+      "Digital Archives"
+    ],
+    "discipline": [
+      "Systèmes de connaissance",
+      "Culture Internet",
+      "Web Development",
+      "History de Technology"
+    ],
+    "route": "/fr/knowledge/concepts/hypertext/",
+    "identifier": "/fr/id/concept/hypertext/",
+    "temporality": {
+      "creationDate": "2026-06-24",
+      "lastUpdated": "2026-06-25",
+      "releaseDate": "2026-06-25",
+      "creationYear": "2026"
+    }
+  },
+  {
+    "id": "ea:concept:internet-culture-fr",
+    "legacyId": "internet-culture-fr",
+    "kind": "concept",
+    "type": "concept",
+    "locale": "fr",
+    "translationOf": "ea:concept:internet-culture",
+    "title": "Culture Internet",
+    "summary": "Internet culture relie network protocoles, web publishing, plateforme communities, memes, archives, open source, digital folklore et public systèmes de connaissance.",
+    "description": "A canonical concept record pour networked culturel production et mémoire.",
+    "definition": "Internet culture est le set de social forms, aesthetics, protocoles, communities, memes, archives et practices that emerge through networked communication.",
+    "status": "active",
+    "maturity": "research",
+    "confidence": "validated",
+    "visibility": "public",
+    "publicationClass": "canonical",
+    "tags": [
+      "Culture Internet",
+      "Network Culture",
+      "Memes",
+      "Archives"
+    ],
+    "discipline": [
+      "Culture Internet",
+      "Network Culture",
+      "Archives",
+      "History de Technology"
+    ],
+    "route": "/fr/knowledge/concepts/internet-culture/",
+    "identifier": "/fr/id/concept/internet-culture/",
+    "temporality": {
+      "creationDate": "2026-06-24",
+      "lastUpdated": "2026-06-25",
+      "releaseDate": "2026-06-25",
+      "creationYear": "2026"
+    }
+  },
+  {
+    "id": "ea:concept:knowledge-graph-fr",
+    "legacyId": "knowledge-graph-fr",
+    "kind": "concept",
+    "type": "concept",
+    "locale": "fr",
+    "translationOf": "ea:concept:knowledge-graph",
+    "title": "Graphe de connaissances",
+    "summary": "Electronic Artefacts uses graphee de connaissances à describe public systèmes de connaissance where concepts, projects, programs, publications, sources et artefacts keep stable identités et typed relations.",
+    "description": "A canonical definition de graphee de connaissances pour culturel, technical et recherche publishing.",
+    "definition": "A graphee de connaissances est un structured network de entités, identifiers et typed relationships that makes knowledge navigable, queryable et reusable across contexts.",
+    "status": "active",
+    "maturity": "research",
+    "confidence": "canonical",
+    "visibility": "public",
+    "publicationClass": "canonical",
+    "tags": [
+      "Graphe de connaissances",
+      "Sémantique Web",
+      "Entités",
+      "Relations",
+      "Search"
+    ],
+    "discipline": [
+      "Systèmes de connaissance",
+      "Information Architecture",
+      "Web Development",
+      "Recherche"
+    ],
+    "route": "/fr/knowledge/concepts/knowledge-graph/",
+    "identifier": "/fr/id/concept/knowledge-graph/",
+    "temporality": {
+      "creationDate": "2026-06-23",
+      "lastUpdated": "2026-06-25",
+      "releaseDate": "2026-06-25",
+      "creationYear": "2026"
+    }
+  },
+  {
+    "id": "ea:concept:large-language-model-fr",
+    "legacyId": "large-language-model-fr",
+    "kind": "concept",
+    "type": "concept",
+    "locale": "fr",
+    "translationOf": "ea:concept:large-language-model",
+    "title": "Grand modèle de langage",
+    "summary": "Large language modèles combine tokenization, embeddings, transformer layers, attention, training objectives et probabilistic decoding à generate ou transform language.",
+    "description": "A canonical definition de large language modèles, their operating principles, capabilities et limitations.",
+    "definition": "A large language modèle est un parameterized machine-learning modèle trained à predict et generate sequences de tokens from statistical patterns learned across large text ou multimodal corpora.",
+    "status": "active",
+    "maturity": "research",
+    "confidence": "canonical",
+    "visibility": "public",
+    "publicationClass": "canonical",
+    "tags": [
+      "LLM",
+      "Transformer",
+      "Tokens",
+      "Inference",
+      "Language Modèles"
+    ],
+    "discipline": [
+      "Intelligence artificielle",
+      "Machine Learning",
+      "Programming",
+      "Systèmes de connaissance"
+    ],
+    "route": "/fr/knowledge/concepts/large-language-model/",
+    "identifier": "/fr/id/concept/large-language-model/",
+    "temporality": {
+      "creationDate": "2026-06-24",
+      "lastUpdated": "2026-06-25",
+      "releaseDate": "2026-06-25",
+      "creationYear": "2026"
+    }
+  },
+  {
+    "id": "ea:concept:linked-data-fr",
+    "legacyId": "linked-data-fr",
+    "kind": "concept",
+    "type": "concept",
+    "locale": "fr",
+    "translationOf": "ea:concept:linked-data",
+    "title": "Données liées",
+    "summary": "Données liées gives public systèmes de connaissance a way à make entités, pages, references et donnéessets interoperable across sites et software systèmes.",
+    "description": "A canonical definition de Données liées comme it applies à Electronic Artefacts, JSON-LD, RDF, SEO et public knowledge pages.",
+    "definition": "Données liées est un web publishing approach that identifies things avec stable URIs et relie them through machine-readable statements.",
+    "status": "active",
+    "maturity": "research",
+    "confidence": "validated",
+    "visibility": "public",
+    "publicationClass": "canonical",
+    "tags": [
+      "Données liées",
+      "Sémantique Web",
+      "JSON-LD",
+      "RDF",
+      "URI"
+    ],
+    "discipline": [
+      "Systèmes de connaissance",
+      "Web Development",
+      "SEO",
+      "Information Architecture"
+    ],
+    "route": "/fr/knowledge/concepts/linked-data/",
+    "identifier": "/fr/id/concept/linked-data/",
+    "temporality": {
+      "creationDate": "2026-06-23",
+      "lastUpdated": "2026-06-25",
+      "releaseDate": "2026-06-25",
+      "creationYear": "2026"
+    }
+  },
+  {
+    "id": "ea:concept:metadata-fr",
+    "legacyId": "metadata-fr",
+    "kind": "concept",
+    "type": "concept",
+    "locale": "fr",
+    "translationOf": "ea:concept:metadata",
+    "title": "Métadonnées",
+    "summary": "Métadonnées est le descriptive, administrative, structural et preservation layer that makes archives, catalogues, digital objects et graphee de connaissancess usable over time.",
+    "description": "A canonical concept record pour métadonnées dans culturel et technical systèmes.",
+    "definition": "Métadonnées is structured information about a resource, such comme title, creator, date, format, source, rights, subject, relation et preservation context.",
+    "status": "active",
+    "maturity": "research",
+    "confidence": "canonical",
+    "visibility": "public",
+    "publicationClass": "canonical",
+    "tags": [
+      "Métadonnées",
+      "Archives",
+      "Catalogage",
+      "Preservation"
+    ],
+    "discipline": [
+      "Archives",
+      "Systèmes de connaissance",
+      "Recherche Méthodes",
+      "Préservation numérique"
+    ],
+    "route": "/fr/knowledge/concepts/metadata/",
+    "identifier": "/fr/id/concept/metadata/",
+    "temporality": {
+      "creationDate": "2026-06-24",
+      "lastUpdated": "2026-06-25",
+      "releaseDate": "2026-06-25",
+      "creationYear": "2026"
+    }
+  },
+  {
+    "id": "ea:concept:microservice-architecture-fr",
+    "legacyId": "microservice-architecture-fr",
+    "kind": "concept",
+    "type": "concept",
+    "locale": "fr",
+    "translationOf": "ea:concept:microservice-architecture",
+    "title": "Architecture de microservices",
+    "summary": "Microservices can improve independent evolution et scaling but add network, données, deployment, observability et organizational complexity.",
+    "description": "A canonical definition comparing microservices avec modular monoliths et service-oriented systèmes.",
+    "definition": "Microservice architecture structures a software système comme independently deployable services aligned avec bounded capabilities et communicating through explicit contracts.",
+    "status": "active",
+    "maturity": "production",
+    "confidence": "validated",
+    "visibility": "public",
+    "publicationClass": "canonical",
+    "tags": [
+      "Microservices",
+      "Modular Monolith",
+      "Service Boundaries",
+      "Distributed Systèmes"
+    ],
+    "discipline": [
+      "Software Architecture",
+      "Systèmes Design",
+      "Programming"
+    ],
+    "route": "/fr/knowledge/concepts/microservice-architecture/",
+    "identifier": "/fr/id/concept/microservice-architecture/",
+    "temporality": {
+      "creationDate": "2026-06-24",
+      "lastUpdated": "2026-06-25",
+      "releaseDate": "2026-06-25",
+      "creationYear": "2026"
+    }
+  },
+  {
+    "id": "ea:concept:motion-design-fr",
+    "legacyId": "motion-design-fr",
+    "kind": "concept",
+    "type": "concept",
+    "locale": "fr",
+    "translationOf": "ea:concept:motion-design",
+    "title": "Motion design",
+    "summary": "Motion design relie visuel culture, interface sémantiques, typographey, animation, sound, choreographey et web interaction.",
+    "description": "A canonical concept record pour motion comme a design et interface discipline.",
+    "definition": "Motion design est le use de time, movement, transition, rhythm et sequencing à structure visuel communication et interface behavior.",
+    "status": "active",
+    "maturity": "research",
+    "confidence": "validated",
+    "visibility": "public",
+    "publicationClass": "canonical",
+    "tags": [
+      "Motion design",
+      "Animation",
+      "Interface",
+      "Visuel Culture"
+    ],
+    "discipline": [
+      "Motion design",
+      "Design",
+      "Human Computer Interaction",
+      "Web Development"
+    ],
+    "route": "/fr/knowledge/concepts/motion-design/",
+    "identifier": "/fr/id/concept/motion-design/",
+    "temporality": {
+      "creationDate": "2026-06-24",
+      "lastUpdated": "2026-06-25",
+      "releaseDate": "2026-06-25",
+      "creationYear": "2026"
+    }
+  },
+  {
+    "id": "ea:concept:multimodal-ai-fr",
+    "legacyId": "multimodal-ai-fr",
+    "kind": "concept",
+    "type": "concept",
+    "locale": "fr",
+    "translationOf": "ea:concept:multimodal-ai",
+    "title": "IA multimodale",
+    "summary": "Multimodal AI relie representation learning, modality encoders, shared embedding spaces, generation, alignment et cross-modal interfaces.",
+    "description": "A canonical definition de multimodal AI pour creative systèmes, archives et machine perception.",
+    "definition": "Multimodal AI décrit systèmes that learn from, align, transform ou generate more than one modality such comme text, image, audio, video, sensor données ou structured records.",
+    "status": "active",
+    "maturity": "research",
+    "confidence": "validated",
+    "visibility": "public",
+    "publicationClass": "canonical",
+    "tags": [
+      "IA multimodale",
+      "Vision Language",
+      "Audio",
+      "Video",
+      "Cross-Modal Retrieval"
+    ],
+    "discipline": [
+      "Intelligence artificielle",
+      "Machine Learning",
+      "Digital Art",
+      "Audio Engineering"
+    ],
+    "route": "/fr/knowledge/concepts/multimodal-ai/",
+    "identifier": "/fr/id/concept/multimodal-ai/",
+    "temporality": {
+      "creationDate": "2026-06-24",
+      "lastUpdated": "2026-06-25",
+      "releaseDate": "2026-06-25",
+      "creationYear": "2026"
+    }
+  },
+  {
+    "id": "ea:concept:ontology-fr",
+    "legacyId": "ontology-fr",
+    "kind": "concept",
+    "type": "concept",
+    "locale": "fr",
+    "translationOf": "ea:concept:ontology",
+    "title": "Ontologie",
+    "summary": "Ontologies make domain meaning explicit et interoperable, while taxonomies organize concepts primarily through classification et hierarchy.",
+    "description": "A canonical definition distinguishing ontology, taxonomy, thesaurus et folksonomy.",
+    "definition": "In knowledge engineering, an ontology est un explicit specification de the kinds de entités, properties, relationships et constraints used à represent a domain.",
+    "status": "active",
+    "maturity": "research",
+    "confidence": "canonical",
+    "visibility": "public",
+    "publicationClass": "canonical",
+    "tags": [
+      "Ontologie",
+      "Taxonomy",
+      "SKOS",
+      "OWL",
+      "Controlled Vocabulary"
+    ],
+    "discipline": [
+      "Systèmes de connaissance",
+      "Information Architecture",
+      "Philosophy",
+      "Sémantique Web"
+    ],
+    "route": "/fr/knowledge/concepts/ontology/",
+    "identifier": "/fr/id/concept/ontology/",
+    "temporality": {
+      "creationDate": "2026-06-24",
+      "lastUpdated": "2026-06-25",
+      "releaseDate": "2026-06-25",
+      "creationYear": "2026"
+    }
+  },
+  {
+    "id": "ea:concept:open-source-fr",
+    "legacyId": "open-source-fr",
+    "kind": "concept",
+    "type": "concept",
+    "locale": "fr",
+    "translationOf": "ea:concept:open-source",
+    "title": "Open source",
+    "summary": "Open source is both a licensing modèle et a culturel infrastructure pour software, creative outils, public knowledge, maintainership et technical education.",
+    "description": "A canonical concept record pour open source software et culturel infrastructure.",
+    "definition": "Open source est un software et culturel practice dans which source code is made available under licenses that allow use, study, modification et redistribution.",
+    "status": "active",
+    "maturity": "research",
+    "confidence": "canonical",
+    "visibility": "public",
+    "publicationClass": "canonical",
+    "tags": [
+      "Open source",
+      "Software",
+      "Commons",
+      "Infrastructure"
+    ],
+    "discipline": [
+      "Open source",
+      "Programming",
+      "Programmation créative",
+      "Creative Business"
+    ],
+    "route": "/fr/knowledge/concepts/open-source/",
+    "identifier": "/fr/id/concept/open-source/",
+    "temporality": {
+      "creationDate": "2026-06-24",
+      "lastUpdated": "2026-06-25",
+      "releaseDate": "2026-06-25",
+      "creationYear": "2026"
+    }
+  },
+  {
+    "id": "ea:concept:open-weight-model-fr",
+    "legacyId": "open-weight-model-fr",
+    "kind": "concept",
+    "type": "concept",
+    "locale": "fr",
+    "translationOf": "ea:concept:open-weight-model",
+    "title": "Open-Weight Model",
+    "summary": "Open-weight modèles enable local inference et adaptation but must be distinguished from fully open-source AI systèmes.",
+    "description": "A canonical definition pour local AI, modèle licensing et digital independence.",
+    "definition": "An open-weight modèle est un machine-learning modèle whose learned parameters sont distributed pour reuse under stated terms, without necessarily providing the training données, training code ou freedoms required by open-source definitions.",
+    "status": "active",
+    "maturity": "research",
+    "confidence": "validated",
+    "visibility": "public",
+    "publicationClass": "canonical",
+    "tags": [
+      "Open Weights",
+      "Local AI",
+      "Modèle Licensing",
+      "Quantization"
+    ],
+    "discipline": [
+      "Intelligence artificielle",
+      "Open source",
+      "Programming",
+      "Digital Independence"
+    ],
+    "route": "/fr/knowledge/concepts/open-weight-model/",
+    "identifier": "/fr/id/concept/open-weight-model/",
+    "temporality": {
+      "creationDate": "2026-06-24",
+      "lastUpdated": "2026-06-25",
+      "releaseDate": "2026-06-25",
+      "creationYear": "2026"
+    }
+  },
+  {
+    "id": "ea:concept:personal-knowledge-system-fr",
+    "legacyId": "personal-knowledge-system-fr",
+    "kind": "concept",
+    "type": "concept",
+    "locale": "fr",
+    "translationOf": "ea:concept:personal-knowledge-system",
+    "title": "Système personnel de connaissance",
+    "summary": "Personal systèmes de connaissance connect digital gardens, wikis, note archives, recherche méthodes, backlinks et long-term intellectual mémoire.",
+    "description": "A canonical concept record pour durable note et knowledge practices.",
+    "definition": "A personal knowledge système est un practice et outil environment pour capturing, linking, revising et retrieving notes, sources, ideas et decisions over time.",
+    "status": "active",
+    "maturity": "research",
+    "confidence": "validated",
+    "visibility": "public",
+    "publicationClass": "canonical",
+    "tags": [
+      "Personal Knowledge Management",
+      "Digital Gardens",
+      "Notes",
+      "Recherche"
+    ],
+    "discipline": [
+      "Systèmes de connaissance",
+      "Recherche Méthodes",
+      "Culture Internet",
+      "Writing"
+    ],
+    "route": "/fr/knowledge/concepts/personal-knowledge-system/",
+    "identifier": "/fr/id/concept/personal-knowledge-system/",
+    "temporality": {
+      "creationDate": "2026-06-24",
+      "lastUpdated": "2026-06-25",
+      "releaseDate": "2026-06-25",
+      "creationYear": "2026"
+    }
+  },
+  {
+    "id": "ea:concept:procedural-graphics-fr",
+    "legacyId": "procedural-graphics-fr",
+    "kind": "concept",
+    "type": "concept",
+    "locale": "fr",
+    "translationOf": "ea:concept:procedural-graphics",
+    "title": "Graphisme procédural",
+    "summary": "Procedural grapheics connect shaders, generative systèmes, motion design, programmation créative, visuel culture et real-time web interfaces.",
+    "description": "A canonical concept record pour rule-based visuel generation.",
+    "definition": "Procedural grapheics sont images ou visuel systèmes generated from rules, algorithms, parameters, simulation ou code rather than only manually drawn assets.",
+    "status": "active",
+    "maturity": "research",
+    "confidence": "canonical",
+    "visibility": "public",
+    "publicationClass": "canonical",
+    "tags": [
+      "Graphisme procédural",
+      "Shaders",
+      "WebGL",
+      "Generative Art"
+    ],
+    "discipline": [
+      "Programmation créative",
+      "Visuel Culture",
+      "Digital Art",
+      "Motion design"
+    ],
+    "route": "/fr/knowledge/concepts/procedural-graphics/",
+    "identifier": "/fr/id/concept/procedural-graphics/",
+    "temporality": {
+      "creationDate": "2026-06-24",
+      "lastUpdated": "2026-06-25",
+      "releaseDate": "2026-06-25",
+      "creationYear": "2026"
+    }
+  },
+  {
+    "id": "ea:concept:provenance-fr",
+    "legacyId": "provenance-fr",
+    "kind": "concept",
+    "type": "concept",
+    "locale": "fr",
+    "translationOf": "ea:concept:provenance",
+    "title": "Provenance",
+    "summary": "Provenance helps readers assess reliability, rights, authorship, lineage, context et trust across recherche, archive, software et culturel records.",
+    "description": "A canonical definition de provenance pour Electronic Artefacts publications, artefacts, archives et graphe relations.",
+    "definition": "Provenance is information about the people, activities, sources, transformations et decisions involved dans producing a thing ou piece de données.",
+    "status": "active",
+    "maturity": "research",
+    "confidence": "validated",
+    "visibility": "public",
+    "publicationClass": "canonical",
+    "tags": [
+      "Provenance",
+      "Sources",
+      "Evidence",
+      "Trust",
+      "Archive"
+    ],
+    "discipline": [
+      "Archives",
+      "Recherche Méthodes",
+      "Systèmes de connaissance"
+    ],
+    "route": "/fr/knowledge/concepts/provenance/",
+    "identifier": "/fr/id/concept/provenance/",
+    "temporality": {
+      "creationDate": "2026-06-23",
+      "lastUpdated": "2026-06-25",
+      "releaseDate": "2026-06-25",
+      "creationYear": "2026"
+    }
+  },
+  {
+    "id": "ea:concept:retrieval-augmented-generation-fr",
+    "legacyId": "retrieval-augmented-generation-fr",
+    "kind": "concept",
+    "type": "concept",
+    "locale": "fr",
+    "translationOf": "ea:concept:retrieval-augmented-generation",
+    "title": "Génération augmentée par récupération",
+    "summary": "RAG relie search, embeddings, document segmentation, métadonnées, provenance, context assembly, language modèles et answer evaluation.",
+    "description": "A canonical definition de retrieval-augmented generation pour systèmes de connaissance et source-grounded AI.",
+    "definition": "Retrieval-augmented generation est un architecture that retrieves external information at query time et supplies selected evidence à a generative modèle before ou during response production.",
+    "status": "active",
+    "maturity": "research",
+    "confidence": "canonical",
+    "visibility": "public",
+    "publicationClass": "canonical",
+    "tags": [
+      "RAG",
+      "Retrieval",
+      "Embeddings",
+      "Vector Search",
+      "Grounding"
+    ],
+    "discipline": [
+      "Intelligence artificielle",
+      "Systèmes de connaissance",
+      "Information Architecture",
+      "Machine Learning"
+    ],
+    "route": "/fr/knowledge/concepts/retrieval-augmented-generation/",
+    "identifier": "/fr/id/concept/retrieval-augmented-generation/",
+    "temporality": {
+      "creationDate": "2026-06-24",
+      "lastUpdated": "2026-06-25",
+      "releaseDate": "2026-06-25",
+      "creationYear": "2026"
+    }
+  },
+  {
+    "id": "ea:concept:signal-archaeology-fr",
+    "legacyId": "signal-archaeology-fr",
+    "kind": "concept",
+    "type": "concept",
+    "locale": "fr",
+    "translationOf": "ea:concept:signal-archaeology",
+    "title": "Archéologie du signal",
+    "summary": "Signal archaeology gives Electronic Artefacts a way à connect audio analysis, médias residue, archival provenance, mémoire et culturel interpretation.",
+    "description": "A canonical Electronic Artefacts concept linking ORETH, Palimpsests, préservation numérique, provenance et machine listening.",
+    "definition": "Signal archaeology est le interpretation de technical, sonic, visuel ou archival traces comme evidence de hidden processes, transformations et histories.",
+    "status": "active",
+    "maturity": "research",
+    "confidence": "observed",
+    "visibility": "public",
+    "publicationClass": "canonical",
+    "tags": [
+      "Archéologie du signal",
+      "Audio",
+      "Archive",
+      "Mémoire",
+      "Machine Listening"
+    ],
+    "discipline": [
+      "Audio Engineering",
+      "Digital Art",
+      "Archives",
+      "Recherche Méthodes"
+    ],
+    "route": "/fr/knowledge/concepts/signal-archaeology/",
+    "identifier": "/fr/id/concept/signal-archaeology/",
+    "temporality": {
+      "creationDate": "2026-06-23",
+      "lastUpdated": "2026-06-25",
+      "releaseDate": "2026-06-25",
+      "creationYear": "2026"
+    }
+  },
+  {
+    "id": "ea:concept:systems-thinking-fr",
+    "legacyId": "systems-thinking-fr",
+    "kind": "concept",
+    "type": "concept",
+    "locale": "fr",
+    "translationOf": "ea:concept:systems-thinking",
+    "title": "Pensée systémique",
+    "summary": "Systèmes thinking helps creators et technologists understand why local interventions can produce indirect, delayed ou counterintuitive effects.",
+    "description": "A canonical definition de systèmes thinking pour creative practice, software architecture et organizational design.",
+    "definition": "Systèmes thinking est un approach that studies elements through their relationships, feedback, boundaries, delays, stocks, flows et patterns de behavior over time.",
+    "status": "active",
+    "maturity": "research",
+    "confidence": "canonical",
+    "visibility": "public",
+    "publicationClass": "canonical",
+    "tags": [
+      "Pensée systémique",
+      "Feedback",
+      "Boundaries",
+      "Leverage Points",
+      "Complexity"
+    ],
+    "discipline": [
+      "Systèmes Design",
+      "Cybernetics",
+      "Complexity",
+      "Design"
+    ],
+    "route": "/fr/knowledge/concepts/systems-thinking/",
+    "identifier": "/fr/id/concept/systems-thinking/",
+    "temporality": {
+      "creationDate": "2026-06-24",
+      "lastUpdated": "2026-06-25",
+      "releaseDate": "2026-06-25",
+      "creationYear": "2026"
+    }
+  },
+  {
+    "id": "ea:concept:typography-fr",
+    "legacyId": "typography-fr",
+    "kind": "concept",
+    "type": "concept",
+    "locale": "fr",
+    "translationOf": "ea:concept:typography",
+    "title": "Typographie",
+    "summary": "Typographey relie design, reading systèmes, accessibility, visuel culture, web interfaces et long-form knowledge publishing.",
+    "description": "A canonical concept record pour typographey dans digital interfaces et culturel publishing.",
+    "definition": "Typographey est le design et arrangement de written language through typefaces, spacing, hierarchy, rhythm, scale et reading conditions.",
+    "status": "active",
+    "maturity": "research",
+    "confidence": "canonical",
+    "visibility": "public",
+    "publicationClass": "canonical",
+    "tags": [
+      "Typographie",
+      "Reading",
+      "Interface Design",
+      "Accessibility"
+    ],
+    "discipline": [
+      "Typographie",
+      "Design",
+      "Visuel Culture",
+      "Web Development"
+    ],
+    "route": "/fr/knowledge/concepts/typography/",
+    "identifier": "/fr/id/concept/typography/",
+    "temporality": {
+      "creationDate": "2026-06-24",
+      "lastUpdated": "2026-06-25",
+      "releaseDate": "2026-06-25",
+      "creationYear": "2026"
+    }
+  },
+  {
+    "id": "ea:concept:web-audio-fr",
+    "legacyId": "web-audio-fr",
+    "kind": "concept",
+    "type": "concept",
+    "locale": "fr",
+    "translationOf": "ea:concept:web-audio",
+    "title": "Audio web",
+    "summary": "Web audio relie sound design, navigateur runtimes, interactive médias, programmation créative et public sound outils.",
+    "description": "A canonical concept record pour audio systèmes built on the web plateforme.",
+    "definition": "Web audio est le use de navigateur-based audio APIs et related web technologies à synthesize, process, analyze, route et present sound.",
+    "status": "active",
+    "maturity": "research",
+    "confidence": "validated",
+    "visibility": "public",
+    "publicationClass": "canonical",
+    "tags": [
+      "Audio web",
+      "Navigateur",
+      "Sound Design",
+      "Programmation créative"
+    ],
+    "discipline": [
+      "Audio Engineering",
+      "Web Development",
+      "Programmation créative",
+      "Sound Design"
+    ],
+    "route": "/fr/knowledge/concepts/web-audio/",
+    "identifier": "/fr/id/concept/web-audio/",
+    "temporality": {
+      "creationDate": "2026-06-24",
+      "lastUpdated": "2026-06-25",
+      "releaseDate": "2026-06-25",
+      "creationYear": "2026"
+    }
+  },
+  {
+    "id": "ea:organization:electronic-artefacts-fr",
+    "legacyId": "electronic-artefacts-fr",
+    "kind": "organization",
+    "type": "organization",
+    "locale": "fr",
+    "translationOf": "ea:organization:electronic-artefacts",
+    "title": "Electronic Artefacts",
+    "subtitle": "Studio indépendant de technologies créatives",
+    "summary": "Electronic Artefacts est un studio indépendant qui conçoit des produits numériques, des systèmes de connaissance, des plateformes culturelles et des expériences issues de la recherche.",
+    "description": "Un studio reliant stratégie, design, logiciel, recherche et production culturelle au sein de systèmes publics durables.",
+    "status": "active",
+    "maturity": "production",
+    "confidence": "canonical",
+    "visibility": "public",
+    "publicationClass": "canonical",
+    "tags": [
+      "Technologies créatives",
+      "Systèmes de connaissance",
+      "Logiciel",
+      "Design",
+      "Recherche"
+    ],
+    "discipline": [
+      "Technologie",
+      "Design",
+      "Recherche",
+      "Production culturelle"
+    ],
+    "route": "/fr/organizations/electronic-artefacts/",
+    "identifier": "/fr/id/organization/electronic-artefacts/",
+    "temporality": {
+      "creationDate": "2023-01-01",
+      "lastUpdated": "2026-06-25",
+      "releaseDate": "2026-06-25",
+      "creationYear": "2023"
+    }
+  },
+  {
+    "id": "ea:program:oreth-fr",
+    "legacyId": "oreth-fr",
+    "kind": "program",
+    "type": "program",
+    "locale": "fr",
+    "translationOf": "ea:program:oreth",
+    "title": "ORETH",
+    "subtitle": "Recherche et intelligence audio",
+    "summary": "ORETH est un programme expérimental consacré à l’observation, l’analyse et la transformation de phénomènes sonores complexes par le traitement du signal, l’apprentissage automatique et la création musicale.",
+    "description": "Un programme de recherche audio reliant analyse fréquentielle, détection d’événements, reconnaissance de motifs, écoute machine et production artistique.",
+    "status": "prototype",
+    "maturity": "prototype",
+    "confidence": "observed",
+    "visibility": "public",
+    "publicationClass": "canonical",
+    "tags": [
+      "Audio",
+      "Traitement du signal",
+      "Apprentissage automatique",
+      "Musique",
+      "Recherche"
+    ],
+    "discipline": [
+      "Technologie",
+      "Musique",
+      "Recherche"
+    ],
+    "route": "/fr/programs/oreth/",
+    "identifier": "/fr/id/program/oreth/",
+    "temporality": {
+      "creationDate": "2024-01-01",
+      "lastUpdated": "2026-06-25",
+      "releaseDate": "2026-06-25",
+      "creationYear": "2024"
+    }
+  },
+  {
+    "id": "ea:program:vaste-fr",
+    "legacyId": "vaste-fr",
+    "kind": "program",
+    "type": "program",
+    "locale": "fr",
+    "translationOf": "ea:program:vaste",
+    "title": "VASTE",
+    "subtitle": "Moteur propriétaire",
+    "summary": "VASTE est le principal moteur propriétaire développé et commercialisé par Electronic Artefacts pour les architectures graphiques, l’exécution contextuelle, les systèmes d’identité et la construction de mondes modulaires.",
+    "description": "VASTE relie la théorie des moteurs à des systèmes graphiques implémentés et peut être évalué par un accès encadré au dépôt, des pilotes techniques, des missions d’implémentation et des discussions de licence.",
+    "status": "development",
+    "maturity": "development",
+    "confidence": "published",
+    "visibility": "public",
+    "publicationClass": "canonical",
+    "tags": [
+      "TypeScript",
+      "Graphe",
+      "Contexte",
+      "Identité",
+      "Simulation",
+      "Connaissance"
+    ],
+    "discipline": [
+      "Technologie",
+      "Systèmes",
+      "Recherche"
+    ],
+    "route": "/fr/programs/vaste/",
+    "identifier": "/fr/id/program/vaste/",
+    "temporality": {
+      "creationDate": "2024-01-01",
+      "lastUpdated": "2026-06-25",
+      "releaseDate": "2026-06-25",
+      "creationYear": "2024"
+    }
+  },
+  {
+    "id": "ea:project:palimpsests-fr",
+    "legacyId": "palimpsests-fr",
+    "kind": "project",
+    "type": "project",
+    "locale": "fr",
+    "translationOf": "ea:project:palimpsests",
+    "title": "Palimpsests",
+    "subtitle": "Cycle musical et éditorial",
+    "summary": "Palimpsests est un cycle conceptuel d’ORETH explorant mémoire, héritage, transformation et transmission à travers la composition sonore, l’image et la publication.",
+    "description": "Une œuvre musicale et éditoriale en cinq actes reliant recherche sonore, mémoire culturelle, archives et production visuelle.",
+    "status": "active",
+    "maturity": "development",
+    "confidence": "published",
+    "visibility": "public",
+    "publicationClass": "canonical",
+    "tags": [
+      "Palimpsests",
+      "ORETH",
+      "Musique",
+      "Mémoire",
+      "Archives"
+    ],
+    "discipline": [
+      "Musique",
+      "Art sonore",
+      "Image",
+      "Recherche"
+    ],
+    "route": "/fr/projects/palimpsests/",
+    "identifier": "/fr/id/project/palimpsests/",
+    "temporality": {
+      "creationDate": "2024-01-01",
+      "lastUpdated": "2026-06-25",
+      "releaseDate": "2026-06-25",
+      "creationYear": "2024"
+    }
+  },
+  {
+    "id": "ea:project:vestiges-fr",
+    "legacyId": "vestiges-fr",
+    "kind": "project",
+    "type": "project",
+    "locale": "fr",
+    "translationOf": "ea:project:vestiges",
+    "title": "Vestiges",
+    "subtitle": "Infrastructure de connaissance vivante",
+    "summary": "Vestiges est la plateforme principale fondée sur VASTE pour cartographier, préserver et activer les savoir-faire vivants à travers les personnes, pratiques, matériaux, lieux et institutions.",
+    "description": "Un produit centré sur la connaissance où provenance, contribution, découverte et services professionnels émergent d’un même graphe historisé.",
+    "status": "development",
+    "maturity": "prototype",
+    "confidence": "observed",
+    "visibility": "public",
+    "publicationClass": "canonical",
+    "tags": [
+      "Vestiges",
+      "VASTE",
+      "Graphe de connaissance",
+      "Savoir-faire",
+      "Culture",
+      "Infrastructure culturelle"
+    ],
+    "discipline": [
+      "Technologie",
+      "Graphes de connaissance",
+      "Culture",
+      "Savoir-faire",
+      "Design"
+    ],
+    "route": "/fr/projects/vestiges/",
+    "identifier": "/fr/id/project/vestiges/",
+    "temporality": {
+      "creationDate": "2025-01-01",
+      "lastUpdated": "2026-06-25",
+      "releaseDate": "2026-06-25",
+      "creationYear": "2025"
+    }
+  },
+  {
+    "id": "ea:publication:ai-agents-vs-ai-workflows-fr",
+    "legacyId": "ai-agents-vs-ai-workflows-fr",
+    "kind": "publication",
+    "type": "publication",
+    "locale": "fr",
+    "translationOf": "ea:publication:ai-agents-vs-ai-workflows",
+    "title": "Agents d’IA et workflows d’IA",
+    "subtitle": "Technical Article",
+    "summary": "A practical comparison de modèle-directed agents, deterministic workflows, hybrid orchestration, outil permissions, mémoire, evaluation et human oversight.",
+    "description": "Understand the difference between AI agents et AI workflows, when à use each architecture, et how à design reliable hybrid systèmes.",
+    "status": "active",
+    "maturity": "research",
+    "confidence": "published",
+    "visibility": "public",
+    "publicationClass": "published",
+    "tags": [
+      "AI Agents",
+      "AI Workflows",
+      "Orchestration",
+      "Outil Use",
+      "Automation"
+    ],
+    "discipline": [
+      "Intelligence artificielle",
+      "Systèmes Design",
+      "Software Architecture",
+      "Human Computer Interaction"
+    ],
+    "route": "/fr/publications/ai-agents-vs-ai-workflows/",
+    "identifier": "/fr/id/publication/ai-agents-vs-ai-workflows/",
+    "temporality": {
+      "creationDate": "2026-06-24",
+      "lastUpdated": "2026-06-25",
+      "releaseDate": "2026-06-25",
+      "creationYear": "2026"
+    }
+  },
+  {
+    "id": "ea:publication:ai-search-structured-content-and-knowledge-graph-seo-fr",
+    "legacyId": "ai-search-structured-content-and-knowledge-graph-seo-fr",
+    "kind": "publication",
+    "type": "publication",
+    "locale": "fr",
+    "translationOf": "ea:publication:ai-search-structured-content-and-knowledge-graph-seo",
+    "title": "Recherche IA, contenu structuré et SEO par graphe de connaissances",
+    "subtitle": "Technical Article",
+    "summary": "A practical article on AI search visibility, structured content, JSON-LD, entité identité, graphee de connaissances SEO et non-commodity editorial authority.",
+    "description": "Understand how AI search changes SEO strategy through helpful content, structured données, crawlable pages, entité identité et graphee de connaissances architecture.",
+    "status": "active",
+    "maturity": "research",
+    "confidence": "published",
+    "visibility": "public",
+    "publicationClass": "published",
+    "tags": [
+      "AI Search",
+      "Graphee de connaissances SEO",
+      "Structured Données",
+      "JSON-LD",
+      "Entité SEO"
+    ],
+    "discipline": [
+      "SEO",
+      "Systèmes de connaissance",
+      "Web Development",
+      "Information Architecture"
+    ],
+    "route": "/fr/publications/ai-search-structured-content-and-knowledge-graph-seo/",
+    "identifier": "/fr/id/publication/ai-search-structured-content-and-knowledge-graph-seo/",
+    "temporality": {
+      "creationDate": "2026-06-25",
+      "lastUpdated": "2026-06-25",
+      "releaseDate": "2026-06-25",
+      "creationYear": "2026"
+    }
+  },
+  {
+    "id": "ea:publication:algorithmic-composition-and-rule-based-music-fr",
+    "legacyId": "algorithmic-composition-and-rule-based-music-fr",
+    "kind": "publication",
+    "type": "publication",
+    "locale": "fr",
+    "translationOf": "ea:publication:algorithmic-composition-and-rule-based-music",
+    "title": "Composition algorithmique et musique fondée sur des règles",
+    "subtitle": "Technical Article",
+    "summary": "This article explains algorithmic composition through rules, stochastic méthodes, cybernetics, electronic music, programmation créative, generative systèmes et ORETH.",
+    "description": "A technical article on algorithmic composition, rule-based music, generative sound, cybernetics et Electronic Artefacts audio recherche.",
+    "status": "active",
+    "maturity": "research",
+    "confidence": "published",
+    "visibility": "public",
+    "publicationClass": "published",
+    "tags": [
+      "Composition algorithmique",
+      "Electronic Music",
+      "Generative Music",
+      "ORETH"
+    ],
+    "discipline": [
+      "Electronic Music",
+      "Music Production",
+      "Programmation créative",
+      "Cybernetics"
+    ],
+    "route": "/fr/publications/algorithmic-composition-and-rule-based-music/",
+    "identifier": "/fr/id/publication/algorithmic-composition-and-rule-based-music/",
+    "temporality": {
+      "creationDate": "2026-06-24",
+      "lastUpdated": "2026-06-25",
+      "releaseDate": "2026-06-25",
+      "creationYear": "2026"
+    }
+  },
+  {
+    "id": "ea:publication:c2pa-content-credentials-and-generative-media-provenance-fr",
+    "legacyId": "c2pa-content-credentials-and-generative-media-provenance-fr",
+    "kind": "publication",
+    "type": "publication",
+    "locale": "fr",
+    "translationOf": "ea:publication:c2pa-content-credentials-and-generative-media-provenance",
+    "title": "C2PA, Content Credentials et provenance des médias génératifs",
+    "subtitle": "Technical Article",
+    "summary": "A practical explanation de C2PA, Content Credentials, signed médias manifests, provenance claims, trust limits et archive use.",
+    "description": "Understand C2PA et Content Credentials pour médias provenance, generative AI labelling, archive trust et culturel production workflows.",
+    "status": "active",
+    "maturity": "research",
+    "confidence": "published",
+    "visibility": "public",
+    "publicationClass": "published",
+    "tags": [
+      "C2PA",
+      "Content Credentials",
+      "Provenance",
+      "IA générative",
+      "Préservation numérique"
+    ],
+    "discipline": [
+      "Préservation numérique",
+      "Intelligence artificielle",
+      "Systèmes de connaissance",
+      "Culturel Infrastructure"
+    ],
+    "route": "/fr/publications/c2pa-content-credentials-and-generative-media-provenance/",
+    "identifier": "/fr/id/publication/c2pa-content-credentials-and-generative-media-provenance/",
+    "temporality": {
+      "creationDate": "2026-06-24",
+      "lastUpdated": "2026-06-25",
+      "releaseDate": "2026-06-25",
+      "creationYear": "2026"
+    }
+  },
+  {
+    "id": "ea:publication:contextual-execution-and-graph-runtimes-fr",
+    "legacyId": "contextual-execution-and-graph-runtimes-fr",
+    "kind": "publication",
+    "type": "publication",
+    "locale": "fr",
+    "translationOf": "ea:publication:contextual-execution-and-graph-runtimes",
+    "title": "Exécution contextuelle et runtimes de graphe",
+    "subtitle": "Technical Article",
+    "summary": "This article explains contextual execution comme a runtime principle pour systèmes where identité, relations, permissions et state influence what operations can occur.",
+    "description": "A technical article connecting contextual execution, graphe runtime, Runtime Theory et VASTE.",
+    "status": "active",
+    "maturity": "research",
+    "confidence": "published",
+    "visibility": "public",
+    "publicationClass": "published",
+    "tags": [
+      "Exécution contextuelle",
+      "Runtime de graphe",
+      "Théorie du runtime",
+      "VASTE",
+      "Systèmes Design"
+    ],
+    "discipline": [
+      "Systèmes Design",
+      "Programming",
+      "Systèmes de connaissance",
+      "Software Architecture"
+    ],
+    "route": "/fr/publications/contextual-execution-and-graph-runtimes/",
+    "identifier": "/fr/id/publication/contextual-execution-and-graph-runtimes/",
+    "temporality": {
+      "creationDate": "2026-06-23",
+      "lastUpdated": "2026-06-25",
+      "releaseDate": "2026-06-25",
+      "creationYear": "2026"
+    }
+  },
+  {
+    "id": "ea:publication:creative-coding-pedagogy-from-logo-to-p5js-fr",
+    "legacyId": "creative-coding-pedagogy-from-logo-to-p5js-fr",
+    "kind": "publication",
+    "type": "publication",
+    "locale": "fr",
+    "translationOf": "ea:publication:creative-coding-pedagogy-from-logo-to-p5js",
+    "title": "Pédagogie du creative coding, de Logo à p5.js",
+    "subtitle": "Technical Article",
+    "summary": "This article explains programmation créative pedagogy through exploratory programming, computational literacy, Processing, p5.js, visuel feedback et open learning communities.",
+    "description": "A technical article on teaching programmation créative, Processing, p5.js, computational médias, open source et Electronic Artefacts learning culture.",
+    "status": "active",
+    "maturity": "research",
+    "confidence": "published",
+    "visibility": "public",
+    "publicationClass": "published",
+    "tags": [
+      "Programmation créative",
+      "Processing",
+      "p5.js",
+      "Education"
+    ],
+    "discipline": [
+      "Programmation créative",
+      "Programming",
+      "Design",
+      "Open source"
+    ],
+    "route": "/fr/publications/creative-coding-pedagogy-from-logo-to-p5js/",
+    "identifier": "/fr/id/publication/creative-coding-pedagogy-from-logo-to-p5js/",
+    "temporality": {
+      "creationDate": "2026-06-24",
+      "lastUpdated": "2026-06-25",
+      "releaseDate": "2026-06-25",
+      "creationYear": "2026"
+    }
+  },
+  {
+    "id": "ea:publication:digital-preservation-and-living-archives-fr",
+    "legacyId": "digital-preservation-and-living-archives-fr",
+    "kind": "publication",
+    "type": "publication",
+    "locale": "fr",
+    "translationOf": "ea:publication:digital-preservation-and-living-archives",
+    "title": "Préservation numérique et archives vivantes",
+    "subtitle": "Technical Article",
+    "summary": "This article explains préservation numérique comme an active culturel practice that keeps digital objects, métadonnées, provenance et interpretation usable over time.",
+    "description": "A technical article on préservation numérique, living archives, file formats, provenance et Electronic Artefacts culturel records.",
+    "status": "active",
+    "maturity": "research",
+    "confidence": "published",
+    "visibility": "public",
+    "publicationClass": "published",
+    "tags": [
+      "Préservation numérique",
+      "Living Archive",
+      "Provenance",
+      "Palimpsests",
+      "Vestiges"
+    ],
+    "discipline": [
+      "Archives",
+      "Digital Art",
+      "Systèmes de connaissance",
+      "History de Technology"
+    ],
+    "route": "/fr/publications/digital-preservation-and-living-archives/",
+    "identifier": "/fr/id/publication/digital-preservation-and-living-archives/",
+    "temporality": {
+      "creationDate": "2026-06-23",
+      "lastUpdated": "2026-06-25",
+      "releaseDate": "2026-06-25",
+      "creationYear": "2026"
+    }
+  },
+  {
+    "id": "ea:publication:event-driven-architecture-and-event-streams-fr",
+    "legacyId": "event-driven-architecture-and-event-streams-fr",
+    "kind": "publication",
+    "type": "publication",
+    "locale": "fr",
+    "translationOf": "ea:publication:event-driven-architecture-and-event-streams",
+    "title": "Architecture événementielle et flux d’événements",
+    "subtitle": "Technical Article",
+    "summary": "A practical explanation de events, commands, queues, logs, brokers, schemas, delivery sémantiques, idempotency, projections, replay et observability.",
+    "description": "Learn event-driven architecture through event streams, delivery guarantees, schema evolution, idempotency, projections et runtime design.",
+    "status": "active",
+    "maturity": "research",
+    "confidence": "published",
+    "visibility": "public",
+    "publicationClass": "published",
+    "tags": [
+      "Architecture événementielle",
+      "Event Streams",
+      "CloudEvents",
+      "Idempotency",
+      "Event Sourcing"
+    ],
+    "discipline": [
+      "Software Architecture",
+      "Systèmes Design",
+      "Distributed Systèmes",
+      "Programming"
+    ],
+    "route": "/fr/publications/event-driven-architecture-and-event-streams/",
+    "identifier": "/fr/id/publication/event-driven-architecture-and-event-streams/",
+    "temporality": {
+      "creationDate": "2026-06-24",
+      "lastUpdated": "2026-06-25",
+      "releaseDate": "2026-06-25",
+      "creationYear": "2026"
+    }
+  },
+  {
+    "id": "ea:publication:foundational-lineage-001-fr",
+    "legacyId": "foundational-lineage-001-fr",
+    "kind": "publication",
+    "type": "publication",
+    "locale": "fr",
+    "translationOf": "ea:publication:foundational-lineage-001",
+    "title": "Foundational Lineage #001",
+    "subtitle": "Recherche Note",
+    "summary": "This recherche note records early architecture, communication-système et documentation threads that led à Electronic Artefacts, Runtime Theory et VASTE.",
+    "description": "A concise record de the foundational recherche lineage connecting information architecture, taxonomy, runtime systèmes et public knowledge structures.",
+    "status": "research",
+    "maturity": "research",
+    "confidence": "published",
+    "visibility": "public",
+    "publicationClass": "published",
+    "tags": [
+      "Foundational",
+      "Lineage",
+      "Recherche",
+      "Information architecture"
+    ],
+    "discipline": [],
+    "route": "/fr/publications/foundational-lineage-001/",
+    "identifier": "/fr/id/publication/foundational-lineage-001/",
+    "temporality": {
+      "creationDate": "2026-01-01",
+      "lastUpdated": "2026-06-25",
+      "releaseDate": "2026-06-25",
+      "creationYear": "2026"
+    }
+  },
+  {
+    "id": "ea:publication:generative-ai-latent-space-and-creative-workflows-fr",
+    "legacyId": "generative-ai-latent-space-and-creative-workflows-fr",
+    "kind": "publication",
+    "type": "publication",
+    "locale": "fr",
+    "translationOf": "ea:publication:generative-ai-latent-space-and-creative-workflows",
+    "title": "IA générative, espace latent et workflows créatifs",
+    "subtitle": "Technical Article",
+    "summary": "This article explains generative AI comme a creative workflow topic, covering latent spaces, prompts, provenance, risk, evaluation, authorship et Electronic Artefacts systèmes.",
+    "description": "A technical article on generative AI, latent space, creative workflows, provenance, augmented intelligence et responsible production.",
+    "status": "active",
+    "maturity": "research",
+    "confidence": "published",
+    "visibility": "public",
+    "publicationClass": "published",
+    "tags": [
+      "IA générative",
+      "Latent Space",
+      "Creative Workflows",
+      "Provenance"
+    ],
+    "discipline": [
+      "Intelligence artificielle",
+      "Machine Learning",
+      "Programmation créative",
+      "Human Computer Interaction"
+    ],
+    "route": "/fr/publications/generative-ai-latent-space-and-creative-workflows/",
+    "identifier": "/fr/id/publication/generative-ai-latent-space-and-creative-workflows/",
+    "temporality": {
+      "creationDate": "2026-06-24",
+      "lastUpdated": "2026-06-25",
+      "releaseDate": "2026-06-25",
+      "creationYear": "2026"
+    }
+  },
+  {
+    "id": "ea:publication:generative-systems-cybernetics-and-creative-coding-fr",
+    "legacyId": "generative-systems-cybernetics-and-creative-coding-fr",
+    "kind": "publication",
+    "type": "publication",
+    "locale": "fr",
+    "translationOf": "ea:publication:generative-systems-cybernetics-and-creative-coding",
+    "title": "Systèmes génératifs, cybernétique et programmation créative",
+    "subtitle": "Technical Article",
+    "summary": "This article traces generative systèmes from cybernetic feedback et algorithmic art à programmation créative, sound design et contemporary AI-assisted production.",
+    "description": "A technical article on generative systèmes, cybernetic feedback, programmation créative, algorithmic composition et Electronic Artefacts projects.",
+    "status": "active",
+    "maturity": "research",
+    "confidence": "published",
+    "visibility": "public",
+    "publicationClass": "published",
+    "tags": [
+      "Generative Systèmes",
+      "Cybernetics",
+      "Programmation créative",
+      "Composition algorithmique",
+      "Digital Art"
+    ],
+    "discipline": [
+      "Programmation créative",
+      "Digital Art",
+      "Music Production",
+      "Systèmes Design",
+      "Cybernetics"
+    ],
+    "route": "/fr/publications/generative-systems-cybernetics-and-creative-coding/",
+    "identifier": "/fr/id/publication/generative-systems-cybernetics-and-creative-coding/",
+    "temporality": {
+      "creationDate": "2026-06-23",
+      "lastUpdated": "2026-06-25",
+      "releaseDate": "2026-06-25",
+      "creationYear": "2026"
+    }
+  },
+  {
+    "id": "ea:publication:how-large-language-models-actually-work-fr",
+    "legacyId": "how-large-language-models-actually-work-fr",
+    "kind": "publication",
+    "type": "publication",
+    "locale": "fr",
+    "translationOf": "ea:publication:how-large-language-models-actually-work",
+    "title": "Comment fonctionnent vraiment les grands modèles de langage",
+    "subtitle": "Technical Article",
+    "summary": "A grounded explanation de how large language modèles turn tokens into predictions through embeddings, transformer layers, attention, training et probabilistic inference.",
+    "description": "Learn how LLMs work, from tokenization et training à attention, context windows, decoding, hallucinations, outils et evaluation.",
+    "status": "active",
+    "maturity": "research",
+    "confidence": "published",
+    "visibility": "public",
+    "publicationClass": "published",
+    "tags": [
+      "LLM",
+      "Transformer",
+      "Attention",
+      "Tokenization",
+      "Inference"
+    ],
+    "discipline": [
+      "Intelligence artificielle",
+      "Machine Learning",
+      "Programming",
+      "Systèmes de connaissance"
+    ],
+    "route": "/fr/publications/how-large-language-models-actually-work/",
+    "identifier": "/fr/id/publication/how-large-language-models-actually-work/",
+    "temporality": {
+      "creationDate": "2026-06-24",
+      "lastUpdated": "2026-06-25",
+      "releaseDate": "2026-06-25",
+      "creationYear": "2026"
+    }
+  },
+  {
+    "id": "ea:publication:human-computer-interaction-for-creative-tools-fr",
+    "legacyId": "human-computer-interaction-for-creative-tools-fr",
+    "kind": "publication",
+    "type": "publication",
+    "locale": "fr",
+    "translationOf": "ea:publication:human-computer-interaction-for-creative-tools",
+    "title": "Human Computer Interaction for Creative Tools",
+    "subtitle": "Technical Article",
+    "summary": "This article explains HCI pour creative outils, focusing on feedback, agency, flow, error recovery, accessibility, augmented intelligence et computational médias.",
+    "description": "A technical article on HCI, creative outils, interface design, augmented intelligence, accessibility et Electronic Artefacts systèmes.",
+    "status": "active",
+    "maturity": "research",
+    "confidence": "published",
+    "visibility": "public",
+    "publicationClass": "published",
+    "tags": [
+      "HCI",
+      "Creative Outils",
+      "Intelligence augmentée",
+      "Accessibility"
+    ],
+    "discipline": [
+      "Human Computer Interaction",
+      "Design",
+      "Programmation créative",
+      "Intelligence artificielle"
+    ],
+    "route": "/fr/publications/human-computer-interaction-for-creative-tools/",
+    "identifier": "/fr/id/publication/human-computer-interaction-for-creative-tools/",
+    "temporality": {
+      "creationDate": "2026-06-24",
+      "lastUpdated": "2026-06-25",
+      "releaseDate": "2026-06-25",
+      "creationYear": "2026"
+    }
+  },
+  {
+    "id": "ea:publication:hypertext-and-augmented-knowledge-systems-fr",
+    "legacyId": "hypertext-and-augmented-knowledge-systems-fr",
+    "kind": "publication",
+    "type": "publication",
+    "locale": "fr",
+    "translationOf": "ea:publication:hypertext-and-augmented-knowledge-systems",
+    "title": "Hypertexte et systèmes de connaissance augmentée",
+    "subtitle": "Technical Article",
+    "summary": "This article explains hypertext comme a long-term knowledge architecture, connecting Vannevar Bush, Douglas Engelbart, web links, graphee de connaissancess et augmented intelligence.",
+    "description": "A technical article on hypertext, augmented intelligence, linked pages, graphee de connaissancess et Electronic Artefacts knowledge publishing.",
+    "status": "active",
+    "maturity": "research",
+    "confidence": "published",
+    "visibility": "public",
+    "publicationClass": "published",
+    "tags": [
+      "Hypertexte",
+      "Intelligence augmentée",
+      "Graphe de connaissances",
+      "Données liées",
+      "History de Technology"
+    ],
+    "discipline": [
+      "Systèmes de connaissance",
+      "History de Technology",
+      "Web Development",
+      "Human Computer Interaction"
+    ],
+    "route": "/fr/publications/hypertext-and-augmented-knowledge-systems/",
+    "identifier": "/fr/id/publication/hypertext-and-augmented-knowledge-systems/",
+    "temporality": {
+      "creationDate": "2026-06-24",
+      "lastUpdated": "2026-06-25",
+      "releaseDate": "2026-06-25",
+      "creationYear": "2026"
+    }
+  },
+  {
+    "id": "ea:publication:iiif-and-compound-cultural-objects-fr",
+    "legacyId": "iiif-and-compound-cultural-objects-fr",
+    "kind": "publication",
+    "type": "publication",
+    "locale": "fr",
+    "translationOf": "ea:publication:iiif-and-compound-cultural-objects",
+    "title": "IIIF et objets culturels composés",
+    "subtitle": "Technical Article",
+    "summary": "A practical explanation de IIIF Presentation API concepts, compound objects, manifests, canvases, annotations et culturel archive interfaces.",
+    "description": "Understand IIIF comme presentation infrastructure pour compound culturel objects, archives, manifests, canvases et annotations.",
+    "status": "active",
+    "maturity": "research",
+    "confidence": "published",
+    "visibility": "public",
+    "publicationClass": "published",
+    "tags": [
+      "IIIF",
+      "Digital Archives",
+      "Culturel Objects",
+      "Métadonnées",
+      "Données liées"
+    ],
+    "discipline": [
+      "Préservation numérique",
+      "Culturel Infrastructure",
+      "Systèmes de connaissance",
+      "Web Development"
+    ],
+    "route": "/fr/publications/iiif-and-compound-cultural-objects/",
+    "identifier": "/fr/id/publication/iiif-and-compound-cultural-objects/",
+    "temporality": {
+      "creationDate": "2026-06-24",
+      "lastUpdated": "2026-06-25",
+      "releaseDate": "2026-06-25",
+      "creationYear": "2026"
+    }
+  },
+  {
+    "id": "ea:publication:knowledge-graphs-for-cultural-infrastructure-fr",
+    "legacyId": "knowledge-graphs-for-cultural-infrastructure-fr",
+    "kind": "publication",
+    "type": "publication",
+    "locale": "fr",
+    "translationOf": "ea:publication:knowledge-graphs-for-cultural-infrastructure",
+    "title": "Graphes de connaissances pour les infrastructures culturelles",
+    "subtitle": "Technical Article",
+    "summary": "This article explains how graphee de connaissancess support culturel infrastructure by giving people, works, sources, concepts, projects et archives stable identités et explicit relations.",
+    "description": "A technical article on graphee de connaissancess, culturel heritage, provenance et public knowledge pages, connected à Vestiges et the Electronic Artefacts graphe.",
+    "status": "active",
+    "maturity": "research",
+    "confidence": "published",
+    "visibility": "public",
+    "publicationClass": "published",
+    "tags": [
+      "Graphe de connaissances",
+      "Culturel Infrastructure",
+      "Données liées",
+      "Provenance",
+      "Vestiges"
+    ],
+    "discipline": [
+      "Systèmes de connaissance",
+      "Archives",
+      "Information Architecture",
+      "Recherche Méthodes"
+    ],
+    "route": "/fr/publications/knowledge-graphs-for-cultural-infrastructure/",
+    "identifier": "/fr/id/publication/knowledge-graphs-for-cultural-infrastructure/",
+    "temporality": {
+      "creationDate": "2026-06-23",
+      "lastUpdated": "2026-06-25",
+      "releaseDate": "2026-06-25",
+      "creationYear": "2026"
+    }
+  },
+  {
+    "id": "ea:publication:linked-data-and-public-knowledge-pages-fr",
+    "legacyId": "linked-data-and-public-knowledge-pages-fr",
+    "kind": "publication",
+    "type": "publication",
+    "locale": "fr",
+    "translationOf": "ea:publication:linked-data-and-public-knowledge-pages",
+    "title": "Données liées et pages publiques de connaissance",
+    "subtitle": "Technical Article",
+    "summary": "This article explains how public knowledge pages can use stable URLs, JSON-LD, RDF-oriented identifiers et internal links à become useful à humans, search engines et AI systèmes.",
+    "description": "A technical article on Données liées, JSON-LD, canonical URLs, identifiers et SEO pour static knowledge plateformes.",
+    "status": "active",
+    "maturity": "research",
+    "confidence": "published",
+    "visibility": "public",
+    "publicationClass": "published",
+    "tags": [
+      "Données liées",
+      "JSON-LD",
+      "Structured Données",
+      "SEO",
+      "Knowledge Pages"
+    ],
+    "discipline": [
+      "Web Development",
+      "SEO",
+      "Systèmes de connaissance"
+    ],
+    "route": "/fr/publications/linked-data-and-public-knowledge-pages/",
+    "identifier": "/fr/id/publication/linked-data-and-public-knowledge-pages/",
+    "temporality": {
+      "creationDate": "2026-06-23",
+      "lastUpdated": "2026-06-25",
+      "releaseDate": "2026-06-25",
+      "creationYear": "2026"
+    }
+  },
+  {
+    "id": "ea:publication:local-and-open-source-ai-systems-fr",
+    "legacyId": "local-and-open-source-ai-systems-fr",
+    "kind": "publication",
+    "type": "publication",
+    "locale": "fr",
+    "translationOf": "ea:publication:local-and-open-source-ai-systems",
+    "title": "Systèmes d’IA locaux et open source",
+    "subtitle": "Technical Article",
+    "summary": "A practical guide à local inference, open-weight modèles, open-source AI, quantization, hardware, privacy, licensing et operational independence.",
+    "description": "Understand local AI et open-source AI systèmes, including modèle weights, quantization, llama.cpp, privacy, hardware et licensing.",
+    "status": "active",
+    "maturity": "research",
+    "confidence": "published",
+    "visibility": "public",
+    "publicationClass": "published",
+    "tags": [
+      "Local AI",
+      "Open source AI",
+      "Open Weights",
+      "Quantization",
+      "llama.cpp"
+    ],
+    "discipline": [
+      "Intelligence artificielle",
+      "Open source",
+      "Programming",
+      "Systèmes Design"
+    ],
+    "route": "/fr/publications/local-and-open-source-ai-systems/",
+    "identifier": "/fr/id/publication/local-and-open-source-ai-systems/",
+    "temporality": {
+      "creationDate": "2026-06-24",
+      "lastUpdated": "2026-06-25",
+      "releaseDate": "2026-06-25",
+      "creationYear": "2026"
+    }
+  },
+  {
+    "id": "ea:publication:metadata-cataloguing-and-cultural-memory-fr",
+    "legacyId": "metadata-cataloguing-and-cultural-memory-fr",
+    "kind": "publication",
+    "type": "publication",
+    "locale": "fr",
+    "translationOf": "ea:publication:metadata-cataloguing-and-cultural-memory",
+    "title": "Métadonnées, catalogage et mémoire culturelle",
+    "subtitle": "Technical Article",
+    "summary": "This article explains métadonnées comme a culturel mémoire layer, connecting catalogage, Dublin Core, PREMIS, METS, provenance, archives et graphee de connaissancess.",
+    "description": "A technical article on métadonnées, catalogage, culturel mémoire, preservation standards et Electronic Artefacts graphe records.",
+    "status": "active",
+    "maturity": "research",
+    "confidence": "published",
+    "visibility": "public",
+    "publicationClass": "published",
+    "tags": [
+      "Métadonnées",
+      "Catalogage",
+      "Archives",
+      "Culturel Mémoire"
+    ],
+    "discipline": [
+      "Archives",
+      "Systèmes de connaissance",
+      "Recherche Méthodes",
+      "History de Technology"
+    ],
+    "route": "/fr/publications/metadata-cataloguing-and-cultural-memory/",
+    "identifier": "/fr/id/publication/metadata-cataloguing-and-cultural-memory/",
+    "temporality": {
+      "creationDate": "2026-06-24",
+      "lastUpdated": "2026-06-25",
+      "releaseDate": "2026-06-25",
+      "creationYear": "2026"
+    }
+  },
+  {
+    "id": "ea:publication:microservices-modular-monoliths-and-system-boundaries-fr",
+    "legacyId": "microservices-modular-monoliths-and-system-boundaries-fr",
+    "kind": "publication",
+    "type": "publication",
+    "locale": "fr",
+    "translationOf": "ea:publication:microservices-modular-monoliths-and-system-boundaries",
+    "title": "Microservices, monolithes modulaires et frontières de système",
+    "subtitle": "Technical Article",
+    "summary": "A pragmatic comparison de microservices et modular monoliths through domain boundaries, données ownership, deployment, events, observability et team structure.",
+    "description": "Learn when microservices make sense, why modular monoliths sont often the better starting point, et how à define durable système boundaries.",
+    "status": "active",
+    "maturity": "research",
+    "confidence": "published",
+    "visibility": "public",
+    "publicationClass": "published",
+    "tags": [
+      "Microservices",
+      "Modular Monolith",
+      "Système Boundaries",
+      "Domain-Driven Design",
+      "Distributed Systèmes"
+    ],
+    "discipline": [
+      "Software Architecture",
+      "Systèmes Design",
+      "Programming",
+      "Distributed Systèmes"
+    ],
+    "route": "/fr/publications/microservices-modular-monoliths-and-system-boundaries/",
+    "identifier": "/fr/id/publication/microservices-modular-monoliths-and-system-boundaries/",
+    "temporality": {
+      "creationDate": "2026-06-24",
+      "lastUpdated": "2026-06-25",
+      "releaseDate": "2026-06-25",
+      "creationYear": "2026"
+    }
+  },
+  {
+    "id": "ea:publication:model-context-protocol-and-tool-using-ai-systems-fr",
+    "legacyId": "model-context-protocol-and-tool-using-ai-systems-fr",
+    "kind": "publication",
+    "type": "publication",
+    "locale": "fr",
+    "translationOf": "ea:publication:model-context-protocol-and-tool-using-ai-systems",
+    "title": "Model Context Protocol et systèmes d’IA utilisant des outils",
+    "subtitle": "Technical Article",
+    "summary": "A practical explanation de MCP comme an integration protocole pour resources, prompts, outils, consent, host boundaries et graphe-scoped AI workflows.",
+    "description": "Understand Modèle Context Protocole through hosts, clients, servers, resources, prompts, outils, security boundaries et contextual execution.",
+    "status": "active",
+    "maturity": "research",
+    "confidence": "published",
+    "visibility": "public",
+    "publicationClass": "published",
+    "tags": [
+      "Modèle Context Protocole",
+      "AI Agents",
+      "Outil Use",
+      "Exécution contextuelle",
+      "VASTE"
+    ],
+    "discipline": [
+      "Intelligence artificielle",
+      "Software Architecture",
+      "Systèmes Design"
+    ],
+    "route": "/fr/publications/model-context-protocol-and-tool-using-ai-systems/",
+    "identifier": "/fr/id/publication/model-context-protocol-and-tool-using-ai-systems/",
+    "temporality": {
+      "creationDate": "2026-06-24",
+      "lastUpdated": "2026-06-25",
+      "releaseDate": "2026-06-25",
+      "creationYear": "2026"
+    }
+  },
+  {
+    "id": "ea:publication:motion-design-time-and-interface-semantics-fr",
+    "legacyId": "motion-design-time-and-interface-semantics-fr",
+    "kind": "publication",
+    "type": "publication",
+    "locale": "fr",
+    "translationOf": "ea:publication:motion-design-time-and-interface-semantics",
+    "title": "Motion design, temps et sémantique d’interface",
+    "subtitle": "Technical Article",
+    "summary": "This article explains motion design comme a sémantique layer pour digital interfaces, connecting time, transition, attention, accessibility et Web Animations.",
+    "description": "A technical article on motion design, web animation, interface state, accessibility et temporal visuel systèmes.",
+    "status": "active",
+    "maturity": "research",
+    "confidence": "published",
+    "visibility": "public",
+    "publicationClass": "published",
+    "tags": [
+      "Motion design",
+      "Web Animations",
+      "Interface Design",
+      "Accessibility"
+    ],
+    "discipline": [
+      "Motion design",
+      "Design",
+      "Human Computer Interaction",
+      "Web Development"
+    ],
+    "route": "/fr/publications/motion-design-time-and-interface-semantics/",
+    "identifier": "/fr/id/publication/motion-design-time-and-interface-semantics/",
+    "temporality": {
+      "creationDate": "2026-06-24",
+      "lastUpdated": "2026-06-25",
+      "releaseDate": "2026-06-25",
+      "creationYear": "2026"
+    }
+  },
+  {
+    "id": "ea:publication:multimodal-ai-across-text-image-audio-and-video-fr",
+    "legacyId": "multimodal-ai-across-text-image-audio-and-video-fr",
+    "kind": "publication",
+    "type": "publication",
+    "locale": "fr",
+    "translationOf": "ea:publication:multimodal-ai-across-text-image-audio-and-video",
+    "title": "IA multimodale pour le texte, l’image, l’audio et la vidéo",
+    "subtitle": "Technical Article",
+    "summary": "A durable guide à multimodal AI architecture, shared representations, cross-modal retrieval, generation, temporal médias, provenance et creative applications.",
+    "description": "Learn how multimodal AI relie text, images, audio et video, et how à evaluate cross-modal systèmes pour creative et culturel use.",
+    "status": "active",
+    "maturity": "research",
+    "confidence": "published",
+    "visibility": "public",
+    "publicationClass": "published",
+    "tags": [
+      "IA multimodale",
+      "Vision Language",
+      "Audio AI",
+      "Video AI",
+      "Cross-Modal Retrieval"
+    ],
+    "discipline": [
+      "Intelligence artificielle",
+      "Machine Learning",
+      "Digital Art",
+      "Audio Engineering"
+    ],
+    "route": "/fr/publications/multimodal-ai-across-text-image-audio-and-video/",
+    "identifier": "/fr/id/publication/multimodal-ai-across-text-image-audio-and-video/",
+    "temporality": {
+      "creationDate": "2026-06-24",
+      "lastUpdated": "2026-06-25",
+      "releaseDate": "2026-06-25",
+      "creationYear": "2026"
+    }
+  },
+  {
+    "id": "ea:publication:observability-for-ai-agents-and-tool-calling-systems-fr",
+    "legacyId": "observability-for-ai-agents-and-tool-calling-systems-fr",
+    "kind": "publication",
+    "type": "publication",
+    "locale": "fr",
+    "translationOf": "ea:publication:observability-for-ai-agents-and-tool-calling-systems",
+    "title": "Observabilité des agents d’IA et des systèmes d’appel d’outils",
+    "subtitle": "Technical Article",
+    "summary": "A practical explanation de telemetry pour AI agents, outil calls, traces, events, approvals, failures, evaluations et graphe-runtime accountability.",
+    "description": "Understand observability pour AI agents et outil-calling systèmes through traces, metrics, logs, audit events et OpenTelemetry.",
+    "status": "active",
+    "maturity": "research",
+    "confidence": "published",
+    "visibility": "public",
+    "publicationClass": "published",
+    "tags": [
+      "Observability",
+      "AI Agents",
+      "Outil Calling",
+      "OpenTelemetry",
+      "Tracing"
+    ],
+    "discipline": [
+      "Intelligence artificielle",
+      "Software Architecture",
+      "Systèmes Design",
+      "Distributed Systèmes"
+    ],
+    "route": "/fr/publications/observability-for-ai-agents-and-tool-calling-systems/",
+    "identifier": "/fr/id/publication/observability-for-ai-agents-and-tool-calling-systems/",
+    "temporality": {
+      "creationDate": "2026-06-24",
+      "lastUpdated": "2026-06-25",
+      "releaseDate": "2026-06-25",
+      "creationYear": "2026"
+    }
+  },
+  {
+    "id": "ea:publication:ontologies-taxonomies-and-knowledge-modeling-fr",
+    "legacyId": "ontologies-taxonomies-and-knowledge-modeling-fr",
+    "kind": "publication",
+    "type": "publication",
+    "locale": "fr",
+    "translationOf": "ea:publication:ontologies-taxonomies-and-knowledge-modeling",
+    "title": "Ontologies, taxonomies et modélisation des connaissances",
+    "subtitle": "Technical Article",
+    "summary": "A practical guide à taxonomies, thesauri, folksonomies, ontologies, controlled vocabularies, OWL, SKOS et sustainable sémantique modèleing.",
+    "description": "Understand the differences between taxonomies et ontologies et learn how à design a durable knowledge modèle without overengineering.",
+    "status": "active",
+    "maturity": "research",
+    "confidence": "published",
+    "visibility": "public",
+    "publicationClass": "published",
+    "tags": [
+      "Ontologie",
+      "Taxonomy",
+      "SKOS",
+      "OWL",
+      "Knowledge Modèleing"
+    ],
+    "discipline": [
+      "Systèmes de connaissance",
+      "Information Architecture",
+      "Sémantique Web",
+      "Philosophy"
+    ],
+    "route": "/fr/publications/ontologies-taxonomies-and-knowledge-modeling/",
+    "identifier": "/fr/id/publication/ontologies-taxonomies-and-knowledge-modeling/",
+    "temporality": {
+      "creationDate": "2026-06-24",
+      "lastUpdated": "2026-06-25",
+      "releaseDate": "2026-06-25",
+      "creationYear": "2026"
+    }
+  },
+  {
+    "id": "ea:publication:open-source-as-cultural-infrastructure-fr",
+    "legacyId": "open-source-as-cultural-infrastructure-fr",
+    "kind": "publication",
+    "type": "publication",
+    "locale": "fr",
+    "translationOf": "ea:publication:open-source-as-cultural-infrastructure",
+    "title": "L’open source comme infrastructure culturelle",
+    "subtitle": "Technical Article",
+    "summary": "This article frames open source comme culturel infrastructure, explaining licenses, maintenance, creative outils, dependency chains, commons et public systèmes de connaissance.",
+    "description": "A technical article on open source software, maintainership, programmation créative, infrastructure et Electronic Artefacts knowledge culture.",
+    "status": "active",
+    "maturity": "research",
+    "confidence": "published",
+    "visibility": "public",
+    "publicationClass": "published",
+    "tags": [
+      "Open source",
+      "Programmation créative",
+      "Infrastructure",
+      "Maintainers"
+    ],
+    "discipline": [
+      "Open source",
+      "Programming",
+      "Programmation créative",
+      "Culture Internet"
+    ],
+    "route": "/fr/publications/open-source-as-cultural-infrastructure/",
+    "identifier": "/fr/id/publication/open-source-as-cultural-infrastructure/",
+    "temporality": {
+      "creationDate": "2026-06-24",
+      "lastUpdated": "2026-06-25",
+      "releaseDate": "2026-06-25",
+      "creationYear": "2026"
+    }
+  },
+  {
+    "id": "ea:publication:personal-knowledge-systems-and-digital-gardens-fr",
+    "legacyId": "personal-knowledge-systems-and-digital-gardens-fr",
+    "kind": "publication",
+    "type": "publication",
+    "locale": "fr",
+    "translationOf": "ea:publication:personal-knowledge-systems-and-digital-gardens",
+    "title": "Systèmes personnels de connaissance et jardins numériques",
+    "subtitle": "Technical Article",
+    "summary": "This article explains personal systèmes de connaissance et digital gardens comme durable practices pour notes, sources, backlinks, revision, public learning et recherche libraries.",
+    "description": "A technical article on personal systèmes de connaissance, digital gardens, backlinks, recherche mémoire et public knowledge hubs.",
+    "status": "active",
+    "maturity": "research",
+    "confidence": "published",
+    "visibility": "public",
+    "publicationClass": "published",
+    "tags": [
+      "Personal Knowledge Management",
+      "Digital Gardens",
+      "Backlinks",
+      "Recherche Méthodes"
+    ],
+    "discipline": [
+      "Systèmes de connaissance",
+      "Recherche Méthodes",
+      "Culture Internet",
+      "Archives"
+    ],
+    "route": "/fr/publications/personal-knowledge-systems-and-digital-gardens/",
+    "identifier": "/fr/id/publication/personal-knowledge-systems-and-digital-gardens/",
+    "temporality": {
+      "creationDate": "2026-06-24",
+      "lastUpdated": "2026-06-25",
+      "releaseDate": "2026-06-25",
+      "creationYear": "2026"
+    }
+  },
+  {
+    "id": "ea:publication:procedural-graphics-shaders-and-visual-systems-fr",
+    "legacyId": "procedural-graphics-shaders-and-visual-systems-fr",
+    "kind": "publication",
+    "type": "publication",
+    "locale": "fr",
+    "translationOf": "ea:publication:procedural-graphics-shaders-and-visual-systems",
+    "title": "Graphisme procédural, shaders et systèmes visuels",
+    "subtitle": "Technical Article",
+    "summary": "This article explains procedural grapheics through rules, shaders, parameters, WebGL, generative systèmes et visuel grammars pour digital art et interfaces.",
+    "description": "A technical article on procedural grapheics, shaders, WebGL, programmation créative et generative visuel systèmes.",
+    "status": "active",
+    "maturity": "research",
+    "confidence": "published",
+    "visibility": "public",
+    "publicationClass": "published",
+    "tags": [
+      "Graphisme procédural",
+      "Shaders",
+      "WebGL",
+      "Generative Art"
+    ],
+    "discipline": [
+      "Programmation créative",
+      "Digital Art",
+      "Visuel Culture",
+      "Web Development"
+    ],
+    "route": "/fr/publications/procedural-graphics-shaders-and-visual-systems/",
+    "identifier": "/fr/id/publication/procedural-graphics-shaders-and-visual-systems/",
+    "temporality": {
+      "creationDate": "2026-06-24",
+      "lastUpdated": "2026-06-25",
+      "releaseDate": "2026-06-25",
+      "creationYear": "2026"
+    }
+  },
+  {
+    "id": "ea:publication:prompt-injection-and-trust-boundaries-in-ai-knowledge-systems-fr",
+    "legacyId": "prompt-injection-and-trust-boundaries-in-ai-knowledge-systems-fr",
+    "kind": "publication",
+    "type": "publication",
+    "locale": "fr",
+    "translationOf": "ea:publication:prompt-injection-and-trust-boundaries-in-ai-knowledge-systems",
+    "title": "Injection de prompt et frontières de confiance dans les systèmes de connaissance IA",
+    "subtitle": "Technical Article",
+    "summary": "A security-focused article on prompt injection, retrieved content, outil use, MCP servers, trust boundaries, permissions et graphe-aware AI workflows.",
+    "description": "Understand prompt injection dans AI systèmes de connaissance through retrieval, agents, MCP outils, permissions, untrusted content et contextual execution.",
+    "status": "active",
+    "maturity": "research",
+    "confidence": "published",
+    "visibility": "public",
+    "publicationClass": "published",
+    "tags": [
+      "Prompt Injection",
+      "AI Security",
+      "AI Agents",
+      "MCP",
+      "Trust Boundaries"
+    ],
+    "discipline": [
+      "Intelligence artificielle",
+      "Security",
+      "Systèmes de connaissance",
+      "Software Architecture"
+    ],
+    "route": "/fr/publications/prompt-injection-and-trust-boundaries-in-ai-knowledge-systems/",
+    "identifier": "/fr/id/publication/prompt-injection-and-trust-boundaries-in-ai-knowledge-systems/",
+    "temporality": {
+      "creationDate": "2026-06-25",
+      "lastUpdated": "2026-06-25",
+      "releaseDate": "2026-06-25",
+      "creationYear": "2026"
+    }
+  },
+  {
+    "id": "ea:publication:redis-streams-for-orchestration-fr",
+    "legacyId": "redis-streams-for-orchestration-fr",
+    "kind": "publication",
+    "type": "publication",
+    "locale": "fr",
+    "translationOf": "ea:publication:redis-streams-for-orchestration",
+    "title": "Redis Streams pour l’orchestration",
+    "subtitle": "Technical Article",
+    "summary": "An implementation-oriented guide à Redis Streams, consumer groups, acknowledgements, pending entries, retries, idempotency, trimming et orchestration boundaries.",
+    "description": "Learn how Redis Streams works et how à use consumer groups, pending entries et idempotent workers pour reliable orchestration.",
+    "status": "active",
+    "maturity": "research",
+    "confidence": "published",
+    "visibility": "public",
+    "publicationClass": "published",
+    "tags": [
+      "Redis Streams",
+      "Orchestration",
+      "Consumer Groups",
+      "Event Processing",
+      "Idempotency"
+    ],
+    "discipline": [
+      "Software Architecture",
+      "Distributed Systèmes",
+      "Programming",
+      "Systèmes Design"
+    ],
+    "route": "/fr/publications/redis-streams-for-orchestration/",
+    "identifier": "/fr/id/publication/redis-streams-for-orchestration/",
+    "temporality": {
+      "creationDate": "2026-06-24",
+      "lastUpdated": "2026-06-25",
+      "releaseDate": "2026-06-25",
+      "creationYear": "2026"
+    }
+  },
+  {
+    "id": "ea:publication:responsible-ai-governance-for-creative-and-cultural-systems-fr",
+    "legacyId": "responsible-ai-governance-for-creative-and-cultural-systems-fr",
+    "kind": "publication",
+    "type": "publication",
+    "locale": "fr",
+    "translationOf": "ea:publication:responsible-ai-governance-for-creative-and-cultural-systems",
+    "title": "Gouvernance responsable de l’IA pour les systèmes créatifs et culturels",
+    "subtitle": "Technical Article",
+    "summary": "A practical gouvernance article pour AI dans creative studios, culturel archives et systèmes de connaissance, covering risk, review, provenance, rights et evaluation.",
+    "description": "Learn how responsible AI gouvernance applies à creative technology, culturel infrastructure, archives, generative médias et AI-assisted knowledge workflows.",
+    "status": "active",
+    "maturity": "research",
+    "confidence": "published",
+    "visibility": "public",
+    "publicationClass": "published",
+    "tags": [
+      "Responsible AI",
+      "AI Gouvernance",
+      "Creative Technology",
+      "Culturel Infrastructure",
+      "Provenance"
+    ],
+    "discipline": [
+      "Intelligence artificielle",
+      "Culturel Infrastructure",
+      "Systèmes de connaissance",
+      "Systèmes Design"
+    ],
+    "route": "/fr/publications/responsible-ai-governance-for-creative-and-cultural-systems/",
+    "identifier": "/fr/id/publication/responsible-ai-governance-for-creative-and-cultural-systems/",
+    "temporality": {
+      "creationDate": "2026-06-25",
+      "lastUpdated": "2026-06-25",
+      "releaseDate": "2026-06-25",
+      "creationYear": "2026"
+    }
+  },
+  {
+    "id": "ea:publication:retrieval-augmented-generation-and-knowledge-systems-fr",
+    "legacyId": "retrieval-augmented-generation-and-knowledge-systems-fr",
+    "kind": "publication",
+    "type": "publication",
+    "locale": "fr",
+    "translationOf": "ea:publication:retrieval-augmented-generation-and-knowledge-systems",
+    "title": "Génération augmentée par récupération et systèmes de connaissance",
+    "subtitle": "Technical Article",
+    "summary": "An end-à-end explanation de RAG architecture, ingestion, chunking, embeddings, hybrid retrieval, graphes, citations, permissions et evaluation.",
+    "description": "Learn how retrieval-augmented generation works et how à build source-grounded RAG systèmes avec métadonnées, graphee de connaissancess et evaluation.",
+    "status": "active",
+    "maturity": "research",
+    "confidence": "published",
+    "visibility": "public",
+    "publicationClass": "published",
+    "tags": [
+      "RAG",
+      "Graphe de connaissances",
+      "Vector Search",
+      "Embeddings",
+      "Citations"
+    ],
+    "discipline": [
+      "Intelligence artificielle",
+      "Systèmes de connaissance",
+      "Information Architecture",
+      "Machine Learning"
+    ],
+    "route": "/fr/publications/retrieval-augmented-generation-and-knowledge-systems/",
+    "identifier": "/fr/id/publication/retrieval-augmented-generation-and-knowledge-systems/",
+    "temporality": {
+      "creationDate": "2026-06-24",
+      "lastUpdated": "2026-06-25",
+      "releaseDate": "2026-06-25",
+      "creationYear": "2026"
+    }
+  },
+  {
+    "id": "ea:publication:runtime-engines-and-domain-operating-systems-fr",
+    "legacyId": "runtime-engines-and-domain-operating-systems-fr",
+    "kind": "publication",
+    "type": "publication",
+    "locale": "fr",
+    "translationOf": "ea:publication:runtime-engines-and-domain-operating-systems",
+    "title": "Moteurs runtime et systèmes d’exploitation de domaine",
+    "subtitle": "Technical Article",
+    "summary": "A systèmes-level guide à runtime engines, domain operating systèmes, identité, state, permissions, events, extensions et public projections.",
+    "description": "Understand runtime engines et domain operating systèmes, et how shared entités, permissions et events can support many applications.",
+    "status": "active",
+    "maturity": "research",
+    "confidence": "published",
+    "visibility": "public",
+    "publicationClass": "published",
+    "tags": [
+      "Runtime Engine",
+      "Domain OS",
+      "Business OS",
+      "VASTE",
+      "Composable Systèmes"
+    ],
+    "discipline": [
+      "Systèmes Design",
+      "Software Architecture",
+      "Programming",
+      "Systèmes de connaissance"
+    ],
+    "route": "/fr/publications/runtime-engines-and-domain-operating-systems/",
+    "identifier": "/fr/id/publication/runtime-engines-and-domain-operating-systems/",
+    "temporality": {
+      "creationDate": "2026-06-24",
+      "lastUpdated": "2026-06-25",
+      "releaseDate": "2026-06-25",
+      "creationYear": "2026"
+    }
+  },
+  {
+    "id": "ea:publication:signal-archaeology-audio-memory-and-machine-listening-fr",
+    "legacyId": "signal-archaeology-audio-memory-and-machine-listening-fr",
+    "kind": "publication",
+    "type": "publication",
+    "locale": "fr",
+    "translationOf": "ea:publication:signal-archaeology-audio-memory-and-machine-listening",
+    "title": "Archéologie du signal, mémoire audio et écoute machine",
+    "subtitle": "Technical Article",
+    "summary": "This article explains signal archaeology comme a way à read sonic et technical traces through audio analysis, provenance, mémoire et machine listening.",
+    "description": "A technical article on signal archaeology, audio mémoire, machine listening, ORETH et Palimpsests.",
+    "status": "active",
+    "maturity": "research",
+    "confidence": "published",
+    "visibility": "public",
+    "publicationClass": "published",
+    "tags": [
+      "Archéologie du signal",
+      "Audio",
+      "Machine Listening",
+      "ORETH",
+      "Palimpsests"
+    ],
+    "discipline": [
+      "Audio Engineering",
+      "Sound Design",
+      "Digital Art",
+      "Archives",
+      "Recherche Méthodes"
+    ],
+    "route": "/fr/publications/signal-archaeology-audio-memory-and-machine-listening/",
+    "identifier": "/fr/id/publication/signal-archaeology-audio-memory-and-machine-listening/",
+    "temporality": {
+      "creationDate": "2026-06-23",
+      "lastUpdated": "2026-06-25",
+      "releaseDate": "2026-06-25",
+      "creationYear": "2026"
+    }
+  },
+  {
+    "id": "ea:publication:systems-thinking-for-creative-practice-fr",
+    "legacyId": "systems-thinking-for-creative-practice-fr",
+    "kind": "publication",
+    "type": "publication",
+    "locale": "fr",
+    "translationOf": "ea:publication:systems-thinking-for-creative-practice",
+    "title": "Pensée systémique pour la pratique créative",
+    "subtitle": "Recherche Article",
+    "summary": "A practical introduction à systèmes, boundaries, feedback, stocks, flows, delays, leverage points et their use dans creative et technical work.",
+    "description": "Learn systèmes thinking through creative practice, software, studios et culturel projects, avec practical mapping et intervention méthodes.",
+    "status": "active",
+    "maturity": "research",
+    "confidence": "published",
+    "visibility": "public",
+    "publicationClass": "published",
+    "tags": [
+      "Pensée systémique",
+      "Creative Practice",
+      "Feedback",
+      "Complexity",
+      "Leverage Points"
+    ],
+    "discipline": [
+      "Systèmes Design",
+      "Cybernetics",
+      "Complexity",
+      "Design"
+    ],
+    "route": "/fr/publications/systems-thinking-for-creative-practice/",
+    "identifier": "/fr/id/publication/systems-thinking-for-creative-practice/",
+    "temporality": {
+      "creationDate": "2026-06-24",
+      "lastUpdated": "2026-06-25",
+      "releaseDate": "2026-06-25",
+      "creationYear": "2026"
+    }
+  },
+  {
+    "id": "ea:publication:typography-reading-systems-and-digital-interfaces-fr",
+    "legacyId": "typography-reading-systems-and-digital-interfaces-fr",
+    "kind": "publication",
+    "type": "publication",
+    "locale": "fr",
+    "translationOf": "ea:publication:typography-reading-systems-and-digital-interfaces",
+    "title": "Typographie, systèmes de lecture et interfaces numériques",
+    "subtitle": "Technical Article",
+    "summary": "This article explains typographey comme infrastructure pour digital reading, connecting type, layout, hierarchy, accessibility, CSS Fonts et long-form knowledge publishing.",
+    "description": "A technical article on typographey, reading systèmes, web interfaces, accessibility et Electronic Artefacts editorial design.",
+    "status": "active",
+    "maturity": "research",
+    "confidence": "published",
+    "visibility": "public",
+    "publicationClass": "published",
+    "tags": [
+      "Typographie",
+      "Reading Systèmes",
+      "Interface Design",
+      "Accessibility"
+    ],
+    "discipline": [
+      "Typographie",
+      "Design",
+      "Web Development",
+      "Human Computer Interaction"
+    ],
+    "route": "/fr/publications/typography-reading-systems-and-digital-interfaces/",
+    "identifier": "/fr/id/publication/typography-reading-systems-and-digital-interfaces/",
+    "temporality": {
+      "creationDate": "2026-06-24",
+      "lastUpdated": "2026-06-25",
+      "releaseDate": "2026-06-25",
+      "creationYear": "2026"
+    }
+  },
+  {
+    "id": "ea:publication:verifiable-credentials-for-cultural-archives-and-creator-identity-fr",
+    "legacyId": "verifiable-credentials-for-cultural-archives-and-creator-identity-fr",
+    "kind": "publication",
+    "type": "publication",
+    "locale": "fr",
+    "translationOf": "ea:publication:verifiable-credentials-for-cultural-archives-and-creator-identity",
+    "title": "Identifiants vérifiables pour les archives culturelles et l’identité des créateurs",
+    "subtitle": "Technical Article",
+    "summary": "A practical article on W3C Verifiable Credentials, creator identité, culturel archives, provenance, claims, privacy et machine-readable trust.",
+    "description": "Understand how verifiable credentials can support creator identité, archive provenance, rights workflows et trusted claims dans culturel systèmes de connaissance.",
+    "status": "active",
+    "maturity": "research",
+    "confidence": "published",
+    "visibility": "public",
+    "publicationClass": "published",
+    "tags": [
+      "Verifiable Credentials",
+      "Creator Identité",
+      "Provenance",
+      "Préservation numérique",
+      "Culturel Archives"
+    ],
+    "discipline": [
+      "Culturel Infrastructure",
+      "Systèmes de connaissance",
+      "Préservation numérique",
+      "Web Standards"
+    ],
+    "route": "/fr/publications/verifiable-credentials-for-cultural-archives-and-creator-identity/",
+    "identifier": "/fr/id/publication/verifiable-credentials-for-cultural-archives-and-creator-identity/",
+    "temporality": {
+      "creationDate": "2026-06-25",
+      "lastUpdated": "2026-06-25",
+      "releaseDate": "2026-06-25",
+      "creationYear": "2026"
+    }
+  },
+  {
+    "id": "ea:publication:web-audio-and-browser-based-sound-systems-fr",
+    "legacyId": "web-audio-and-browser-based-sound-systems-fr",
+    "kind": "publication",
+    "type": "publication",
+    "locale": "fr",
+    "translationOf": "ea:publication:web-audio-and-browser-based-sound-systems",
+    "title": "Web Audio et systèmes sonores dans le navigateur",
+    "subtitle": "Technical Article",
+    "summary": "This article explains Web Audio comme a navigateur-native sound architecture pour synthesis, processing, analysis, interactive essays, programmation créative et public audio outils.",
+    "description": "A technical article on Web Audio, audio graphes, navigateur sound, ORETH, machine listening et interactive médias.",
+    "status": "active",
+    "maturity": "research",
+    "confidence": "published",
+    "visibility": "public",
+    "publicationClass": "published",
+    "tags": [
+      "Audio web",
+      "Audio Graphe",
+      "Navigateur Sound",
+      "ORETH"
+    ],
+    "discipline": [
+      "Audio Engineering",
+      "Web Development",
+      "Programmation créative",
+      "Sound Design"
+    ],
+    "route": "/fr/publications/web-audio-and-browser-based-sound-systems/",
+    "identifier": "/fr/id/publication/web-audio-and-browser-based-sound-systems/",
+    "temporality": {
+      "creationDate": "2026-06-24",
+      "lastUpdated": "2026-06-25",
+      "releaseDate": "2026-06-25",
+      "creationYear": "2026"
+    }
+  },
+  {
+    "id": "ea:publication:webnn-and-local-ai-in-the-browser-fr",
+    "legacyId": "webnn-and-local-ai-in-the-browser-fr",
+    "kind": "publication",
+    "type": "publication",
+    "locale": "fr",
+    "translationOf": "ea:publication:webnn-and-local-ai-in-the-browser",
+    "title": "WebNN et IA locale dans le navigateur",
+    "subtitle": "Technical Article",
+    "summary": "A practical explanation de WebNN, navigateur-local inference, hardware acceleration, privacy limits, creative outils et web machine-learning architecture.",
+    "description": "Understand WebNN comme a navigateur API pour hardware-accelerated neural-network inference et local AI interaction design.",
+    "status": "active",
+    "maturity": "research",
+    "confidence": "published",
+    "visibility": "public",
+    "publicationClass": "published",
+    "tags": [
+      "WebNN",
+      "Navigateur AI",
+      "Local Inference",
+      "Web Machine Learning",
+      "HCI"
+    ],
+    "discipline": [
+      "Intelligence artificielle",
+      "Web Development",
+      "Human Computer Interaction",
+      "Creative Technology"
+    ],
+    "route": "/fr/publications/webnn-and-local-ai-in-the-browser/",
+    "identifier": "/fr/id/publication/webnn-and-local-ai-in-the-browser/",
+    "temporality": {
+      "creationDate": "2026-06-24",
+      "lastUpdated": "2026-06-25",
+      "releaseDate": "2026-06-25",
+      "creationYear": "2026"
+    }
+  },
+  {
+    "id": "ea:publication:why-graphs-are-more-powerful-than-folders-fr",
+    "legacyId": "why-graphs-are-more-powerful-than-folders-fr",
+    "kind": "publication",
+    "type": "publication",
+    "locale": "fr",
+    "translationOf": "ea:publication:why-graphs-are-more-powerful-than-folders",
+    "title": "Pourquoi les graphes sont plus puissants que les dossiers",
+    "subtitle": "Technical Article",
+    "summary": "A practical comparison de hierarchical folders et graphe modèles pour knowledge, projects, archives, identité, provenance et generated interfaces.",
+    "description": "Learn when graphe modèles outperform folder hierarchies, why relationships matter, et how à keep folders comme useful projections over connected données.",
+    "status": "active",
+    "maturity": "research",
+    "confidence": "published",
+    "visibility": "public",
+    "publicationClass": "published",
+    "tags": [
+      "Modélisation de graphe",
+      "Folders",
+      "Graphe de connaissances",
+      "Information Architecture",
+      "VASTE"
+    ],
+    "discipline": [
+      "Systèmes de connaissance",
+      "Systèmes Design",
+      "Information Architecture",
+      "Software Architecture"
+    ],
+    "route": "/fr/publications/why-graphs-are-more-powerful-than-folders/",
+    "identifier": "/fr/id/publication/why-graphs-are-more-powerful-than-folders/",
+    "temporality": {
+      "creationDate": "2026-06-24",
+      "lastUpdated": "2026-06-25",
+      "releaseDate": "2026-06-25",
+      "creationYear": "2026"
+    }
+  },
+  {
+    "id": "ea:researchField:runtime-theory-fr",
+    "legacyId": "runtime-theory-fr",
+    "kind": "researchField",
+    "type": "researchField",
+    "locale": "fr",
+    "translationOf": "ea:researchField:runtime-theory",
+    "title": "Théorie du runtime",
+    "subtitle": "Recherche field",
+    "summary": "Runtime Theory investigates the minimum identités, relations, contexts et event primitives required pour a coherent executable système.",
+    "description": "An active Electronic Artefacts recherche field connecting early VOID experiments, VASTE et the definition de graphe runtime.",
+    "status": "active",
+    "maturity": "research",
+    "confidence": "validated",
+    "visibility": "public",
+    "publicationClass": "canonical",
+    "tags": [
+      "Runtime",
+      "Theory",
+      "Execution",
+      "Events",
+      "Primitives"
+    ],
+    "discipline": [
+      "Technology",
+      "Recherche",
+      "Systèmes"
+    ],
+    "route": "/fr/research/fields/runtime-theory/",
+    "identifier": "/fr/id/research-field/runtime-theory/",
+    "temporality": {
+      "creationDate": "2024-01-01",
+      "lastUpdated": "2026-06-25",
+      "releaseDate": "2026-06-25",
+      "creationYear": "2024"
+    }
+  },
+  {
+    "id": "ea:technology:activitypub-fr",
+    "legacyId": "activitypub-fr",
+    "kind": "technology",
+    "type": "technology",
+    "locale": "fr",
+    "translationOf": "ea:technology:activitypub",
+    "title": "ActivityPub",
+    "summary": "ActivityPub est un protocole décentralisé normalisé par le W3C pour l’échange fédéré d’activités entre serveurs et entre clients et serveurs.",
+    "description": "Fiche technologique consacrée à la fédération, à la culture des réseaux et aux infrastructures du web social.",
+    "status": "active",
+    "maturity": "production",
+    "confidence": "canonical",
+    "visibility": "public",
+    "publicationClass": "canonical",
+    "tags": [
+      "ActivityPub",
+      "Fédération",
+      "Web social"
+    ],
+    "discipline": [
+      "Culture Internet",
+      "Culture des réseaux",
+      "Développement web"
+    ],
+    "route": "/fr/knowledge/technologies/activitypub/",
+    "identifier": "/fr/id/technology/activitypub/",
+    "temporality": {
+      "creationDate": "2026-06-24",
+      "lastUpdated": "2026-06-25",
+      "releaseDate": "2026-06-25",
+      "creationYear": "2026"
+    }
+  },
+  {
+    "id": "ea:technology:c2pa-fr",
+    "legacyId": "c2pa-fr",
+    "kind": "technology",
+    "type": "technology",
+    "locale": "fr",
+    "translationOf": "ea:technology:c2pa",
+    "title": "C2PA",
+    "summary": "C2PA est un technical standard family pour attaching verifiable provenance et content-credential métadonnées à médias assets.",
+    "description": "A technology record pour C2PA et Content Credentials comme provenance infrastructure pour digital médias.",
+    "status": "active",
+    "maturity": "development",
+    "confidence": "canonical",
+    "visibility": "public",
+    "publicationClass": "canonical",
+    "tags": [
+      "C2PA",
+      "Content Credentials",
+      "Provenance",
+      "Médias Authenticity"
+    ],
+    "discipline": [
+      "Préservation numérique",
+      "Systèmes de connaissance",
+      "Intelligence artificielle"
+    ],
+    "route": "/fr/knowledge/technologies/c2pa/",
+    "identifier": "/fr/id/technology/c2pa/",
+    "temporality": {
+      "creationDate": "2026-06-24",
+      "lastUpdated": "2026-06-25",
+      "releaseDate": "2026-06-25",
+      "creationYear": "2026"
+    }
+  },
+  {
+    "id": "ea:technology:cloudevents-fr",
+    "legacyId": "cloudevents-fr",
+    "kind": "technology",
+    "type": "technology",
+    "locale": "fr",
+    "translationOf": "ea:technology:cloudevents",
+    "title": "CloudEvents",
+    "summary": "CloudEvents est une spécification de la CNCF qui décrit les données d’événements dans une enveloppe commune et portable entre services et plateformes.",
+    "description": "Fiche technologique consacrée aux métadonnées d’événements interopérables.",
+    "status": "active",
+    "maturity": "production",
+    "confidence": "canonical",
+    "visibility": "public",
+    "publicationClass": "canonical",
+    "tags": [
+      "CloudEvents",
+      "Schéma événementiel",
+      "Interopérabilité"
+    ],
+    "discipline": [
+      "Architecture logicielle",
+      "Systèmes distribués",
+      "Programmation"
+    ],
+    "route": "/fr/knowledge/technologies/cloudevents/",
+    "identifier": "/fr/id/technology/cloudevents/",
+    "temporality": {
+      "creationDate": "2026-06-24",
+      "lastUpdated": "2026-06-25",
+      "releaseDate": "2026-06-25",
+      "creationYear": "2026"
+    }
+  },
+  {
+    "id": "ea:technology:css-fonts-fr",
+    "legacyId": "css-fonts-fr",
+    "kind": "technology",
+    "type": "technology",
+    "locale": "fr",
+    "translationOf": "ea:technology:css-fonts",
+    "title": "CSS Fonts",
+    "summary": "CSS Fonts définit la sélection des polices web, les faces typographiques et leur comportement dans les interfaces numériques et les documents web.",
+    "description": "Fiche technologique consacrée à la typographie dans le navigateur et aux systèmes de lecture.",
+    "status": "active",
+    "maturity": "production",
+    "confidence": "validated",
+    "visibility": "public",
+    "publicationClass": "canonical",
+    "tags": [
+      "CSS Fonts",
+      "Typographie",
+      "Web"
+    ],
+    "discipline": [
+      "Typographie",
+      "Développement web",
+      "Design"
+    ],
+    "route": "/fr/knowledge/technologies/css-fonts/",
+    "identifier": "/fr/id/technology/css-fonts/",
+    "temporality": {
+      "creationDate": "2026-06-24",
+      "lastUpdated": "2026-06-25",
+      "releaseDate": "2026-06-25",
+      "creationYear": "2026"
+    }
+  },
+  {
+    "id": "ea:technology:iiif-fr",
+    "legacyId": "iiif-fr",
+    "kind": "technology",
+    "type": "technology",
+    "locale": "fr",
+    "translationOf": "ea:technology:iiif",
+    "title": "IIIF",
+    "summary": "IIIF est un framework de APIs pour presenting, structuring et annotating digital representations de culturel et archival objects.",
+    "description": "A technology record pour IIIF comme interoperable presentation infrastructure pour compound culturel objects.",
+    "status": "active",
+    "maturity": "production",
+    "confidence": "canonical",
+    "visibility": "public",
+    "publicationClass": "canonical",
+    "tags": [
+      "IIIF",
+      "Digital Archives",
+      "Culturel Heritage",
+      "Presentation API"
+    ],
+    "discipline": [
+      "Préservation numérique",
+      "Culturel Infrastructure",
+      "Systèmes de connaissance"
+    ],
+    "route": "/fr/knowledge/technologies/iiif/",
+    "identifier": "/fr/id/technology/iiif/",
+    "temporality": {
+      "creationDate": "2026-06-24",
+      "lastUpdated": "2026-06-25",
+      "releaseDate": "2026-06-25",
+      "creationYear": "2026"
+    }
+  },
+  {
+    "id": "ea:technology:json-ld-fr",
+    "legacyId": "json-ld-fr",
+    "kind": "technology",
+    "type": "technology",
+    "locale": "fr",
+    "translationOf": "ea:technology:json-ld",
+    "title": "JSON-LD",
+    "subtitle": "JSON pour Données liées",
+    "summary": "JSON-LD est un W3C format pour serializing Données liées dans JSON, making sémantique graphe métadonnées compatible avec common web programming workflows.",
+    "description": "A technology record pour JSON-LD comme the structured données format used by Electronic Artefacts canonical pages.",
+    "status": "active",
+    "maturity": "production",
+    "confidence": "published",
+    "visibility": "public",
+    "publicationClass": "published",
+    "tags": [
+      "JSON-LD",
+      "Données liées",
+      "Structured Données",
+      "SEO"
+    ],
+    "discipline": [
+      "Web Development",
+      "Systèmes de connaissance",
+      "SEO"
+    ],
+    "route": "/fr/knowledge/technologies/json-ld/",
+    "identifier": "/fr/id/technology/json-ld/",
+    "temporality": {
+      "creationDate": "2020-07-16",
+      "lastUpdated": "2026-06-25",
+      "releaseDate": "2026-06-25",
+      "creationYear": "2020"
+    }
+  },
+  {
+    "id": "ea:technology:llama-cpp-fr",
+    "legacyId": "llama-cpp-fr",
+    "kind": "technology",
+    "type": "technology",
+    "locale": "fr",
+    "translationOf": "ea:technology:llama-cpp",
+    "title": "llama.cpp",
+    "summary": "llama.cpp est un moteur d’inférence libre en C et C++ permettant d’exécuter de grands modèles de langage sur du matériel grand public ou serveur.",
+    "description": "Fiche technologique consacrée à l’inférence locale, la quantification et au déploiement portable de modèles d’IA.",
+    "status": "active",
+    "maturity": "production",
+    "confidence": "canonical",
+    "visibility": "public",
+    "publicationClass": "canonical",
+    "tags": [
+      "llama.cpp",
+      "IA locale",
+      "Inférence",
+      "Quantification"
+    ],
+    "discipline": [
+      "Intelligence artificielle",
+      "Programmation",
+      "Logiciel libre"
+    ],
+    "route": "/fr/knowledge/technologies/llama-cpp/",
+    "identifier": "/fr/id/technology/llama-cpp/",
+    "temporality": {
+      "creationDate": "2026-06-24",
+      "lastUpdated": "2026-06-25",
+      "releaseDate": "2026-06-25",
+      "creationYear": "2026"
+    }
+  },
+  {
+    "id": "ea:technology:model-context-protocol-fr",
+    "legacyId": "model-context-protocol-fr",
+    "kind": "technology",
+    "type": "technology",
+    "locale": "fr",
+    "translationOf": "ea:technology:model-context-protocol",
+    "title": "Model Context Protocol",
+    "summary": "Modèle Context Protocole est un open protocole pour connecting language-modèle applications à external context, prompts et executable outils.",
+    "description": "A technology record pour MCP comme an integration protocole pour outil-using AI applications, resources et contextual workflows.",
+    "status": "active",
+    "maturity": "development",
+    "confidence": "canonical",
+    "visibility": "public",
+    "publicationClass": "canonical",
+    "tags": [
+      "MCP",
+      "AI Outils",
+      "Context Protocole",
+      "JSON-RPC"
+    ],
+    "discipline": [
+      "Intelligence artificielle",
+      "Software Architecture",
+      "Systèmes Design"
+    ],
+    "route": "/fr/knowledge/technologies/model-context-protocol/",
+    "identifier": "/fr/id/technology/model-context-protocol/",
+    "temporality": {
+      "creationDate": "2026-06-24",
+      "lastUpdated": "2026-06-25",
+      "releaseDate": "2026-06-25",
+      "creationYear": "2026"
+    }
+  },
+  {
+    "id": "ea:technology:opentelemetry-fr",
+    "legacyId": "opentelemetry-fr",
+    "kind": "technology",
+    "type": "technology",
+    "locale": "fr",
+    "translationOf": "ea:technology:opentelemetry",
+    "title": "OpenTelemetry",
+    "summary": "OpenTelemetry est un observability framework pour producing, collecting et standardizing telemetry such comme traces, metrics et logs.",
+    "description": "A technology record pour OpenTelemetry comme telemetry infrastructure pour distributed systèmes et AI outil workflows.",
+    "status": "active",
+    "maturity": "production",
+    "confidence": "canonical",
+    "visibility": "public",
+    "publicationClass": "canonical",
+    "tags": [
+      "OpenTelemetry",
+      "Observability",
+      "Tracing",
+      "Metrics"
+    ],
+    "discipline": [
+      "Software Architecture",
+      "Systèmes Design",
+      "Intelligence artificielle"
+    ],
+    "route": "/fr/knowledge/technologies/opentelemetry/",
+    "identifier": "/fr/id/technology/opentelemetry/",
+    "temporality": {
+      "creationDate": "2026-06-24",
+      "lastUpdated": "2026-06-25",
+      "releaseDate": "2026-06-25",
+      "creationYear": "2026"
+    }
+  },
+  {
+    "id": "ea:technology:owl-fr",
+    "legacyId": "owl-fr",
+    "kind": "technology",
+    "type": "technology",
+    "locale": "fr",
+    "translationOf": "ea:technology:owl",
+    "title": "OWL",
+    "summary": "OWL est un langage d’ontologie du W3C dont la sémantique formelle décrit classes, propriétés, individus et contraintes sur le Web sémantique.",
+    "description": "Fiche technologique consacrée à la publication d’ontologies formelles et au raisonnement.",
+    "status": "active",
+    "maturity": "production",
+    "confidence": "canonical",
+    "visibility": "public",
+    "publicationClass": "canonical",
+    "tags": [
+      "OWL",
+      "Ontologie",
+      "Web sémantique"
+    ],
+    "discipline": [
+      "Systèmes de connaissance",
+      "Web sémantique"
+    ],
+    "route": "/fr/knowledge/technologies/owl/",
+    "identifier": "/fr/id/technology/owl/",
+    "temporality": {
+      "creationDate": "2026-06-24",
+      "lastUpdated": "2026-06-25",
+      "releaseDate": "2026-06-25",
+      "creationYear": "2026"
+    }
+  },
+  {
+    "id": "ea:technology:rdf-fr",
+    "legacyId": "rdf-fr",
+    "kind": "technology",
+    "type": "technology",
+    "locale": "fr",
+    "translationOf": "ea:technology:rdf",
+    "title": "RDF",
+    "subtitle": "Resource Description Framework",
+    "summary": "RDF est un W3C graphe données modèle pour representing information comme subject-predicate-object statements about resources.",
+    "description": "A technology record pour RDF comme a reference modèle behind graphee de connaissancess, Données liées et sémantique publication.",
+    "status": "active",
+    "maturity": "production",
+    "confidence": "published",
+    "visibility": "public",
+    "publicationClass": "published",
+    "tags": [
+      "RDF",
+      "Sémantique Web",
+      "Données liées",
+      "Graphe"
+    ],
+    "discipline": [
+      "Web Development",
+      "Systèmes de connaissance"
+    ],
+    "route": "/fr/knowledge/technologies/rdf/",
+    "identifier": "/fr/id/technology/rdf/",
+    "temporality": {
+      "creationDate": "2014-02-25",
+      "lastUpdated": "2026-06-25",
+      "releaseDate": "2026-06-25",
+      "creationYear": "2014"
+    }
+  },
+  {
+    "id": "ea:technology:redis-streams-fr",
+    "legacyId": "redis-streams-fr",
+    "kind": "technology",
+    "type": "technology",
+    "locale": "fr",
+    "translationOf": "ea:technology:redis-streams",
+    "title": "Redis Streams",
+    "summary": "Redis Streams est un type de données de journal en ajout seul comprenant des entrées ordonnées, des lectures par plage, l’élagage et le traitement par groupes de consommateurs.",
+    "description": "Fiche technologique consacrée aux flux d’événements, à l’orchestration et au traitement en temps réel.",
+    "status": "active",
+    "maturity": "production",
+    "confidence": "canonical",
+    "visibility": "public",
+    "publicationClass": "canonical",
+    "tags": [
+      "Redis Streams",
+      "Journal d’événements",
+      "Groupes de consommateurs",
+      "Orchestration"
+    ],
+    "discipline": [
+      "Architecture logicielle",
+      "Programmation",
+      "Systèmes distribués"
+    ],
+    "route": "/fr/knowledge/technologies/redis-streams/",
+    "identifier": "/fr/id/technology/redis-streams/",
+    "temporality": {
+      "creationDate": "2026-06-24",
+      "lastUpdated": "2026-06-25",
+      "releaseDate": "2026-06-25",
+      "creationYear": "2026"
+    }
+  },
+  {
+    "id": "ea:technology:skos-fr",
+    "legacyId": "skos-fr",
+    "kind": "technology",
+    "type": "technology",
+    "locale": "fr",
+    "translationOf": "ea:technology:skos",
+    "title": "SKOS",
+    "summary": "SKOS est un modèle de données du W3C pour publier sur le Web des thésaurus, taxonomies, classifications et autres systèmes d’organisation des connaissances.",
+    "description": "Fiche technologique consacrée aux vocabulaires contrôlés et à l’organisation sémantique légère.",
+    "status": "active",
+    "maturity": "production",
+    "confidence": "canonical",
+    "visibility": "public",
+    "publicationClass": "canonical",
+    "tags": [
+      "SKOS",
+      "Taxonomie",
+      "Vocabulaire contrôlé"
+    ],
+    "discipline": [
+      "Systèmes de connaissance",
+      "Architecture de l’information",
+      "Web sémantique"
+    ],
+    "route": "/fr/knowledge/technologies/skos/",
+    "identifier": "/fr/id/technology/skos/",
+    "temporality": {
+      "creationDate": "2026-06-24",
+      "lastUpdated": "2026-06-25",
+      "releaseDate": "2026-06-25",
+      "creationYear": "2026"
+    }
+  },
+  {
+    "id": "ea:technology:transformer-architecture-fr",
+    "legacyId": "transformer-architecture-fr",
+    "kind": "technology",
+    "type": "technology",
+    "locale": "fr",
+    "translationOf": "ea:technology:transformer-architecture",
+    "title": "Architecture Transformer",
+    "summary": "Le transformer est une architecture de réseau neuronal fondée sur des mécanismes d’attention et le traitement parallèle de séquences.",
+    "description": "Fiche technologique consacrée à l’architecture qui sous-tend de nombreux modèles modernes de langage et multimodaux.",
+    "status": "active",
+    "maturity": "production",
+    "confidence": "canonical",
+    "visibility": "public",
+    "publicationClass": "canonical",
+    "tags": [
+      "Transformer",
+      "Attention",
+      "Réseaux neuronaux"
+    ],
+    "discipline": [
+      "Intelligence artificielle",
+      "Apprentissage automatique"
+    ],
+    "route": "/fr/knowledge/technologies/transformer-architecture/",
+    "identifier": "/fr/id/technology/transformer-architecture/",
+    "temporality": {
+      "creationDate": "2026-06-24",
+      "lastUpdated": "2026-06-25",
+      "releaseDate": "2026-06-25",
+      "creationYear": "2026"
+    }
+  },
+  {
+    "id": "ea:technology:web-animations-fr",
+    "legacyId": "web-animations-fr",
+    "kind": "technology",
+    "type": "technology",
+    "locale": "fr",
+    "translationOf": "ea:technology:web-animations",
+    "title": "Web Animations",
+    "summary": "Web Animations définit un modèle de temporalité et d’animation pour les changements de présentation des pages web ainsi que les interfaces de programmation associées.",
+    "description": "Fiche technologique consacrée au rythme, à la synchronisation et au mouvement des interfaces web.",
+    "status": "active",
+    "maturity": "production",
+    "confidence": "validated",
+    "visibility": "public",
+    "publicationClass": "canonical",
+    "tags": [
+      "Web Animations",
+      "Motion design",
+      "Interface"
+    ],
+    "discipline": [
+      "Motion design",
+      "Développement web",
+      "Interaction humain-machine"
+    ],
+    "route": "/fr/knowledge/technologies/web-animations/",
+    "identifier": "/fr/id/technology/web-animations/",
+    "temporality": {
+      "creationDate": "2026-06-24",
+      "lastUpdated": "2026-06-25",
+      "releaseDate": "2026-06-25",
+      "creationYear": "2026"
+    }
+  },
+  {
+    "id": "ea:technology:web-audio-api-fr",
+    "legacyId": "web-audio-api-fr",
+    "kind": "technology",
+    "type": "technology",
+    "locale": "fr",
+    "translationOf": "ea:technology:web-audio-api",
+    "title": "Web Audio API",
+    "summary": "The Web Audio API est un navigateur plateforme technology pour routing, synthesizing, processing et analyzing audio through connected audio nodes.",
+    "description": "A technology record pour navigateur-native audio processing et synthesis.",
+    "status": "active",
+    "maturity": "production",
+    "confidence": "canonical",
+    "visibility": "public",
+    "publicationClass": "canonical",
+    "tags": [
+      "Web Audio API",
+      "Navigateur Audio",
+      "Audio Graphe"
+    ],
+    "discipline": [
+      "Audio Engineering",
+      "Web Development",
+      "Programmation créative"
+    ],
+    "route": "/fr/knowledge/technologies/web-audio-api/",
+    "identifier": "/fr/id/technology/web-audio-api/",
+    "temporality": {
+      "creationDate": "2026-06-24",
+      "lastUpdated": "2026-06-25",
+      "releaseDate": "2026-06-25",
+      "creationYear": "2026"
+    }
+  },
+  {
+    "id": "ea:technology:webgl-fr",
+    "legacyId": "webgl-fr",
+    "kind": "technology",
+    "type": "technology",
+    "locale": "fr",
+    "translationOf": "ea:technology:webgl",
+    "title": "WebGL",
+    "summary": "WebGL est une technologie du web permettant de produire des graphismes interactifs en deux ou trois dimensions dans les navigateurs compatibles grâce à l’accélération GPU.",
+    "description": "Fiche technologique consacrée aux graphismes dans le navigateur et aux systèmes visuels fondés sur les shaders.",
+    "status": "active",
+    "maturity": "production",
+    "confidence": "canonical",
+    "visibility": "public",
+    "publicationClass": "canonical",
+    "tags": [
+      "WebGL",
+      "Shaders",
+      "Graphismes web"
+    ],
+    "discipline": [
+      "Code créatif",
+      "Développement web",
+      "Art numérique"
+    ],
+    "route": "/fr/knowledge/technologies/webgl/",
+    "identifier": "/fr/id/technology/webgl/",
+    "temporality": {
+      "creationDate": "2026-06-24",
+      "lastUpdated": "2026-06-25",
+      "releaseDate": "2026-06-25",
+      "creationYear": "2026"
+    }
+  },
+  {
+    "id": "ea:technology:webnn-fr",
+    "legacyId": "webnn-fr",
+    "kind": "technology",
+    "type": "technology",
+    "locale": "fr",
+    "translationOf": "ea:technology:webnn",
+    "title": "WebNN",
+    "summary": "WebNN est un W3C Web Machine Learning API pour hardware-accelerated neural-network inference dans web applications.",
+    "description": "A technology record pour navigateur-based machine-learning inference through the Web Neural Network API.",
+    "status": "active",
+    "maturity": "development",
+    "confidence": "canonical",
+    "visibility": "public",
+    "publicationClass": "canonical",
+    "tags": [
+      "WebNN",
+      "Navigateur AI",
+      "Local Inference",
+      "Web Machine Learning"
+    ],
+    "discipline": [
+      "Intelligence artificielle",
+      "Web Development",
+      "Human Computer Interaction"
+    ],
+    "route": "/fr/knowledge/technologies/webnn/",
+    "identifier": "/fr/id/technology/webnn/",
+    "temporality": {
+      "creationDate": "2026-06-24",
+      "lastUpdated": "2026-06-25",
+      "releaseDate": "2026-06-25",
+      "creationYear": "2026"
+    }
+  },
+  {
     "id": "ea:organization:electronic-artefacts",
     "legacyId": "electronic-artefacts",
     "kind": "organization",

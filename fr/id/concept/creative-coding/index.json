@@ -1,0 +1,88 @@
+{
+  "id": "ea:concept:creative-coding-fr",
+  "type": "concept",
+  "translationOf": "ea:concept:creative-coding",
+  "slug": {
+    "canonical": "creative-coding"
+  },
+  "title": "Programmation créative",
+  "definition": "Creative coding est le use de programming comme an artistic, design ou exploratory medium rather than only comme an engineering implementation outil.",
+  "abstract": "Creative coding relie software, visuel culture, sound, interaction, generative systèmes, education et experimental publishing.",
+  "description": "A canonical definition de programmation créative pour Electronic Artefacts knowledge articles, projects et programs.",
+  "locale": "fr",
+  "visibility": "public",
+  "publicationClass": "canonical",
+  "status": "active",
+  "maturity": "research",
+  "confidence": "validated",
+  "version": {
+    "version": "1.0.0",
+    "createdAt": "2026-06-23",
+    "publishedAt": "2026-06-25",
+    "modifiedAt": "2026-06-25"
+  },
+  "authors": [
+    {
+      "id": "ea:organization:electronic-artefacts"
+    }
+  ],
+  "publisher": "ea:organization:electronic-artefacts",
+  "tags": [
+    "Programmation créative",
+    "Digital Art",
+    "Programming",
+    "Generative Art",
+    "Interaction"
+  ],
+  "disciplines": [
+    "Programmation créative",
+    "Programming",
+    "Digital Art",
+    "Motion design",
+    "Sound Design"
+  ],
+  "scope": [
+    "Programming comme medium",
+    "Generative visuels",
+    "Interactive systèmes",
+    "Sound outils",
+    "Prototyping",
+    "Experimental publishing"
+  ],
+  "exclusions": [
+    "Routine implementation avec no artistic, design ou exploratory intent"
+  ],
+  "claims": [
+    "Creative coding est un bridge between technical literacy et culturel production.",
+    "The best programmation créative work makes process inspectable without reducing the work à code."
+  ],
+  "bodyHtml": "<h2 id=\"role\">Rôle</h2>\n<p>Programmation créative est documenté ici comme une entrée française du graphe public d’Electronic Artefacts. Creative coding relie software, visuel culture, sound, interaction, generative systèmes, education et experimental publishing.</p>\n<h2 id=\"usage\">Usage</h2>\n<p>Cette notion sert à relier les projets, publications et technologies qui partagent un même vocabulaire de conception. Creative coding est le use de programming comme an artistic, design ou exploratory medium rather than only comme an engineering implementation outil.</p>\n<h2 id=\"domaines\">Domaines</h2>\n<p>Cette entrée croise notamment les domaines suivants : Programmation créative, Programming, Digital Art, Motion design, Sound Design.</p>\n<h2 id=\"references\">Références</h2>\n<p>Les références principales sont conservées dans la fiche canonique et dans le graphe de connaissance public.</p>\n",
+  "headings": [
+    "Rôle",
+    "Usage",
+    "Domaines",
+    "Références"
+  ],
+  "headingItems": [
+    {
+      "level": 2,
+      "title": "Rôle",
+      "id": "role"
+    },
+    {
+      "level": 2,
+      "title": "Usage",
+      "id": "usage"
+    },
+    {
+      "level": 2,
+      "title": "Domaines",
+      "id": "domaines"
+    },
+    {
+      "level": 2,
+      "title": "Références",
+      "id": "references"
+    }
+  ]
+}
