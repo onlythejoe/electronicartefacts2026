@@ -13092,33 +13092,10 @@ window.EA_SEARCH = {
     <section class="zone-card hero latests-panel" id="latests">
       <div class="section-head">
         <p class="eyebrow">PROOF FIRST</p>
-        <h2>One current project, one runtime foundation.</h2>
-        <p class="lede">Start with visible work, then open the system line that explains how the studio thinks and builds.</p>
+        <h2>One runtime foundation.</h2>
+        <p class="lede">Open the system line that explains how the studio thinks and builds.</p>
       </div>
       <div class="latests-grid latests-grid--cinematic">
-        ${(() => {
-          const featured = featuredProjectForHome(["palimpsests"]);
-          if (!featured) return "";
-          return `
-            <article class="project-card project-card--featured${featured.id === "oeil-de-meg" ? " project-card--oeil-de-meg" : ""}" ${cardBaseAttrs(featured, { media: false })} ${cardLinkAttrs(featured.route || `./project.html?id=${encodeURIComponent(featured.id)}`, `Open ${featured.title}`)}>
-              ${cardOverlayLink(featured.route || `./project.html?id=${encodeURIComponent(featured.id)}`, `Open ${featured.title}`)}
-              ${projectButterflyBubble(featured, "hero")}
-              <div class="project-card__top">
-                <div>
-                  <p class="card__meta">${esc(featured.category || featured.type || "PROJECT")}</p>
-                  <h3 class="card__title">${esc(featured.title)}</h3>
-                </div>
-                ${statusBadge(featured.status, featured.statusLabel)}
-              </div>
-              ${cardCopy(featured.summary || featured.description, 2)}
-              ${tagRow(featured.tags || [], { limit: 4, compact: true })}
-              <div class="link-row">
-                <a class="tag" href="${esc(featured.route || `./project.html?id=${encodeURIComponent(featured.id)}`)}">Open project</a>
-                <a class="tag" href="./work.html">Work</a>
-              </div>
-            </article>
-          `;
-        })()}
         ${(() => {
           const vaste = entityById("vaste") || {};
           const vasteAttrs = `
@@ -13350,6 +13327,7 @@ window.EA_SEARCH = {
     nodes = [],
     actions = [],
     variant = "default",
+    showCore = true,
   }) => `
     <section class="zone-card hero graph-surface graph-surface--${esc(variant)}" data-graph-surface>
       <div class="graph-surface__content">
@@ -13379,10 +13357,12 @@ window.EA_SEARCH = {
         <div class="graph-surface__halo" aria-hidden="true"></div>
         <div class="graph-surface__ring graph-surface__ring--outer" aria-hidden="true"></div>
         <div class="graph-surface__ring graph-surface__ring--inner" aria-hidden="true"></div>
-        <div class="graph-surface__core" aria-hidden="true">
-          <strong>${esc(coreLabel || title)}</strong>
-          ${coreCopy ? `<small>${esc(coreCopy)}</small>` : ""}
-        </div>
+        ${showCore ? `
+          <div class="graph-surface__core" aria-hidden="true">
+            <strong>${esc(coreLabel || title)}</strong>
+            ${coreCopy ? `<small>${esc(coreCopy)}</small>` : ""}
+          </div>
+        ` : ""}
         ${nodes
           .map(
             (node, index) => {
@@ -13685,6 +13665,7 @@ window.EA_SEARCH = {
       coreLabel: "Electronic Artefacts",
       coreCopy: `${projects} projects / ${programs} programs / ${research} fields`,
       variant: "home",
+      showCore: false,
       nodes: [
         {
           label: "VASTE",

@@ -36,6 +36,7 @@
     nodes = [],
     actions = [],
     variant = "default",
+    showCore = true,
   }) => `
     <section class="zone-card hero graph-surface graph-surface--${esc(variant)}" data-graph-surface>
       <div class="graph-surface__content">
@@ -65,10 +66,12 @@
         <div class="graph-surface__halo" aria-hidden="true"></div>
         <div class="graph-surface__ring graph-surface__ring--outer" aria-hidden="true"></div>
         <div class="graph-surface__ring graph-surface__ring--inner" aria-hidden="true"></div>
-        <div class="graph-surface__core" aria-hidden="true">
-          <strong>${esc(coreLabel || title)}</strong>
-          ${coreCopy ? `<small>${esc(coreCopy)}</small>` : ""}
-        </div>
+        ${showCore ? `
+          <div class="graph-surface__core" aria-hidden="true">
+            <strong>${esc(coreLabel || title)}</strong>
+            ${coreCopy ? `<small>${esc(coreCopy)}</small>` : ""}
+          </div>
+        ` : ""}
         ${nodes
           .map(
             (node, index) => {
@@ -371,6 +374,7 @@
       coreLabel: "Electronic Artefacts",
       coreCopy: `${projects} projects / ${programs} programs / ${research} fields`,
       variant: "home",
+      showCore: false,
       nodes: [
         {
           label: "VASTE",

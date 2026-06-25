@@ -152,21 +152,33 @@ const writeHub = async (route: string, title: string, description: string, items
     acc[entity.type] = (acc[entity.type] || 0) + 1;
     return acc;
   }, {}));
-  const metrics = groups
-    .slice(0, 4)
-    .map(([type, count]) => {
-      const label = type.replace(/([A-Z])/g, " $1").toLowerCase();
-      return `<span><strong>${count}</strong><em>${escapeHtml(label)}</em></span>`;
-    })
-    .join("");
   const secondaryAction = route === "/knowledge/" ? "/knowledge/concepts/" : "/knowledge/";
   const secondaryLabel = route === "/knowledge/" ? "Concepts" : "Knowledge index";
-  const sceneNodes = groups
-    .slice(0, 4)
-    .map(([type], index) => {
+  const typeDescriptions: Record<string, string> = {
+    concept: "Definitions and durable terms",
+    publication: "Research notes and articles",
+    researchField: "Active research territories",
+    technology: "Protocols, tools and standards",
+    method: "Repeatable studio procedures",
+    framework: "Operational models",
+    project: "Public and client work",
+    program: "Runtimes and systems",
+    collection: "Curated neighborhoods",
+  };
+  const typeOverview = groups
+    .slice(0, 6)
+    .map(([type, count], index) => {
       const entity = items.find((candidate) => candidate.type === type);
       const href = entity ? routeForEntity(entity) : route;
-      return `<a class="knowledge-graph-stage__node knowledge-graph-stage__node--${index + 1}" href="${href}" data-depth="${(0.7 + index * 0.27).toFixed(2)}"><span>${String(index + 1).padStart(2, "0")}</span><strong>${escapeHtml(typeLabel(type))}</strong></a>`;
+      const label = typeLabel(type);
+      const description = typeDescriptions[type] || "Connected public records";
+      return `
+        <a class="knowledge-map-card knowledge-map-card--${escapeHtml(typeSlug(type))}" href="${href}">
+          <span class="knowledge-map-card__index">${String(index + 1).padStart(2, "0")}</span>
+          <strong>${escapeHtml(label)}</strong>
+          <em>${count} ${count === 1 ? "record" : "records"}</em>
+          <small>${escapeHtml(description)}</small>
+        </a>`;
     })
     .join("");
   const body = `
@@ -181,15 +193,15 @@ const writeHub = async (route: string, title: string, description: string, items
             <a class="button button--secondary" href="${secondaryAction}">${secondaryLabel}</a>
           </div>
         </div>
-        <div class="intent-hero__stage knowledge-graph-stage" data-intent-stage aria-label="Knowledge graph overview">
-          <div class="intent-hero__stage-label"><span>Addressable knowledge</span><strong>${items.length} connected records</strong></div>
-          <svg class="knowledge-graph-stage__lines" viewBox="0 0 600 440" aria-hidden="true">
-            <path d="M300 220 L112 116 M300 220 L478 102 M300 220 L108 334 M300 220 L492 326" />
-            <circle cx="300" cy="220" r="116" />
-          </svg>
-          <div class="knowledge-graph-stage__core" data-depth="1.3"><span>EA</span><strong>${escapeHtml(title)}</strong></div>
-          ${sceneNodes}
-          <div class="intent-hero__stats generated-hub-hero__metrics" aria-label="Knowledge inventory" data-depth="1.65">${metrics}</div>
+        <div class="intent-hero__stage knowledge-map-panel" data-intent-stage aria-label="Knowledge graph overview">
+          <div class="knowledge-map-panel__summary" data-depth="1.05">
+            <p class="card__meta">Addressable knowledge</p>
+            <strong>${items.length}</strong>
+            <span>connected records</span>
+          </div>
+          <nav class="knowledge-map-panel__types" aria-label="${escapeHtml(title)} record types">
+            ${typeOverview}
+          </nav>
         </div>
       </div>
     </section>
