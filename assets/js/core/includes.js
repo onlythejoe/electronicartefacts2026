@@ -1,6 +1,6 @@
 (function () {
   const includeCache = new Map();
-  const includeVersion = "26";
+  const includeVersion = "27";
 
   const resolveIncludeUrl = (key) => {
     if (!key) return null;

@@ -11837,7 +11837,7 @@ window.EA_SEARCH = {
 /* ==== assets/js/core/includes.js ==== */
 (function () {
   const includeCache = new Map();
-  const includeVersion = "26";
+  const includeVersion = "27";
 
   const resolveIncludeUrl = (key) => {
     if (!key) return null;
@@ -14335,6 +14335,121 @@ window.EA_SEARCH = {
     window.setTimeout(callback, 0);
   };
 
+  const initLanguageSwitcher = async () => {
+    const root = document.querySelector("[data-language-switcher]");
+    if (!root || root.dataset.boundLanguageSwitcher === "true") return;
+    root.dataset.boundLanguageSwitcher = "true";
+
+    const storageKey = "ea:language";
+    const supported = ["en", "fr"];
+    const labels = { en: "EN", fr: "FR" };
+    const trigger = root.querySelector("[data-language-trigger]");
+    const menu = root.querySelector("[data-language-menu]");
+    const current = root.querySelector("[data-language-current]");
+    const options = [...root.querySelectorAll("[data-language-option]")];
+
+    const normalizePath = (value) => {
+      const url = new URL(value, window.location.origin);
+      let path = url.pathname || "/";
+      if (path.endsWith("/index.html")) path = `${path.slice(0, -"index.html".length)}`;
+      if (!path.endsWith("/") && !path.includes(".")) path = `${path}/`;
+      return path || "/";
+    };
+
+    const routeLocale = (path) => path.startsWith("/fr/") || path === "/fr" ? "fr" : "en";
+
+    const preferredFromBrowser = () => {
+      const languages = navigator.languages?.length ? navigator.languages : [navigator.language].filter(Boolean);
+      const match = languages.map((language) => String(language).toLowerCase().split("-")[0]).find((language) => supported.includes(language));
+      return match || "en";
+    };
+
+    const readPreference = () => {
+      try {
+        const stored = window.localStorage.getItem(storageKey);
+        return supported.includes(stored) ? stored : null;
+      } catch {
+        return null;
+      }
+    };
+
+    const writePreference = (language) => {
+      try {
+        window.localStorage.setItem(storageKey, language);
+      } catch {
+        return;
+      }
+    };
+
+    const fetchAlternates = async () => {
+      try {
+        const response = await fetch("/generated/i18n-alternates.json", { credentials: "same-origin" });
+        if (!response.ok) return {};
+        return await response.json();
+      } catch {
+        return {};
+      }
+    };
+
+    const alternates = await fetchAlternates();
+    const currentPath = normalizePath(window.location.href);
+    const currentAlternates = alternates[currentPath] || alternates[normalizePath(currentPath)] || { [routeLocale(currentPath)]: currentPath };
+
+    const setOpen = (open) => {
+      root.classList.toggle("is-open", open);
+      trigger?.setAttribute("aria-expanded", open ? "true" : "false");
+      if (menu) menu.hidden = !open;
+    };
+
+    const sync = (language) => {
+      if (current) current.textContent = labels[language] || language.toUpperCase();
+      options.forEach((option) => {
+        const optionLanguage = option.getAttribute("data-language-option");
+        const available = Boolean(currentAlternates[optionLanguage]);
+        option.setAttribute("aria-checked", optionLanguage === language ? "true" : "false");
+        option.classList.toggle("is-unavailable", !available);
+        option.title = available ? "" : "Translation not available yet";
+      });
+      document.documentElement.dataset.preferredLanguage = language;
+    };
+
+    const navigateTo = (language, manual = false) => {
+      const target = currentAlternates[language];
+      const active = routeLocale(currentPath);
+      sync(language);
+      if (target && normalizePath(target) !== currentPath) {
+        window.location.assign(target);
+        return;
+      }
+      if (manual && language !== active && !target) toast(language === "fr" ? "French version not available yet" : "English version not available yet");
+    };
+
+    const stored = readPreference();
+    const preferred = stored || preferredFromBrowser();
+    sync(stored || routeLocale(currentPath));
+    if (preferred !== routeLocale(currentPath) && currentAlternates[preferred]) navigateTo(preferred);
+
+    trigger?.addEventListener("click", () => setOpen(!root.classList.contains("is-open")));
+    options.forEach((option) => {
+      option.addEventListener("click", () => {
+        const language = option.getAttribute("data-language-option");
+        if (!supported.includes(language)) return;
+        writePreference(language);
+        setOpen(false);
+        navigateTo(language, true);
+      });
+    });
+
+    document.addEventListener("click", (event) => {
+      if (event.target instanceof Node && root.contains(event.target)) return;
+      setOpen(false);
+    });
+
+    document.addEventListener("keydown", (event) => {
+      if (event.key === "Escape") setOpen(false);
+    });
+  };
+
   const applyFilters = (scope, filterState, cards = [...document.querySelectorAll("[data-filter-card]")]) => {
     const section = document.querySelector(`[data-filter-scope="${scope}"]`);
     if (!section) return;
@@ -16252,6 +16367,7 @@ window.EA_SEARCH = {
     applyFilters,
     initFilters,
     initSearch,
+    initLanguageSwitcher,
     initCardLinks,
     initContactDiscovery,
     initCapabilityMaps,
@@ -16272,7 +16388,7 @@ window.EA_SEARCH = {
   const { esc, setYear, slugify } = window.EA_UTILS;
   const { loadIncludes } = window.EA_INCLUDES;
   const { statusBadge, chip, tagRow, metadataList, linkRow, metricRail, cardLinkAttrs, cardOverlayLink } = window.EA_UI;
-  const { initFilters, initSearch, initCardLinks, initContactDiscovery, initCapabilityMaps, initUXEnhancements, refreshCardSurfaces, syncNavigationState, syncSeoMeta } = window.EA_BEHAVIORS;
+  const { initFilters, initSearch, initLanguageSwitcher, initCardLinks, initContactDiscovery, initCapabilityMaps, initUXEnhancements, refreshCardSurfaces, syncNavigationState, syncSeoMeta } = window.EA_BEHAVIORS;
   const {
     cardBaseAttrs,
     mediaFrom,
@@ -20791,6 +20907,7 @@ window.EA_SEARCH = {
     renderPageSections();
     await includesReady;
     syncNavigationState(current);
+    await initLanguageSwitcher();
     document.querySelectorAll(".site-main .zone-card").forEach((zone, index) => {
       zone.dataset.zoneIndex = String(index + 1);
       zone.style.setProperty("--zone-index", String(index + 1));

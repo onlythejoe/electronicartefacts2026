@@ -3,6 +3,7 @@ import test from "node:test";
 import path from "node:path";
 import { loadContent } from "../src/build/load-content.js";
 import { buildRoutes } from "../src/build/build-routes.js";
+import { buildI18nAlternates } from "../src/build/build-i18n-alternates.js";
 import { routeForEntity } from "../src/config/routes.js";
 import { validateGraph } from "../src/build/validate-graph.js";
 import type { Entity } from "../src/schema/entities.js";
@@ -41,4 +42,26 @@ test("allows the same slug in another locale when the entity id is distinct", as
   } as Entity;
 
   assert.doesNotThrow(() => validateGraph([...entities, frenchVestiges], []));
+});
+
+test("builds route alternates for translated entity groups", async () => {
+  const entities = await loadContent(path.resolve("."));
+  const vestiges = entities.find((entity) => entity.id === "ea:project:vestiges")!;
+  const frenchVestiges = {
+    ...vestiges,
+    id: "ea:project:vestiges-fr",
+    locale: "fr",
+    translationOf: vestiges.id,
+    slug: { canonical: vestiges.slug.canonical },
+  } as Entity;
+
+  const alternates = buildI18nAlternates([...entities, frenchVestiges]);
+  assert.deepEqual(alternates["/projects/vestiges/"], {
+    en: "/projects/vestiges/",
+    fr: "/fr/projects/vestiges/",
+  });
+  assert.deepEqual(alternates["/fr/projects/vestiges/"], {
+    en: "/projects/vestiges/",
+    fr: "/fr/projects/vestiges/",
+  });
 });

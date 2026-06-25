@@ -5,6 +5,7 @@ import { loadRelations } from "../src/build/load-relations.js";
 import { validateGraph } from "../src/build/validate-graph.js";
 import { buildRoutes } from "../src/build/build-routes.js";
 import { buildCatalog, isPublicEntity } from "../src/build/build-catalog.js";
+import { buildI18nAlternates } from "../src/build/build-i18n-alternates.js";
 import { routeToFile, writeJson, writeText } from "../src/build/write-output.js";
 import { metadataFor } from "../src/seo/metadata.js";
 import { buildAgentManifest, buildLlmsFullTxt, buildLlmsTxt } from "../src/seo/agent-index.js";
@@ -308,6 +309,7 @@ for (const view of graphViews) {
 }
 
 await writeJson(path.join(rootDir, "generated/public/catalog.json"), catalog);
+await writeJson(path.join(rootDir, "generated/i18n-alternates.json"), buildI18nAlternates(publicEntities));
 await writeJson(path.join(rootDir, "generated/manifest/routes.json"), publicRoutes);
 await writeJson(path.join(rootDir, "generated/manifest/entities.json"), publicEntities);
 await writeJson(path.join(rootDir, "generated/manifest/relations.json"), catalog.relations);

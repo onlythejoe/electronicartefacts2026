@@ -43,7 +43,7 @@ section[data-render] {
   right: var(--gutter);
   z-index: 2000;
   display: grid;
-  grid-template-columns: minmax(10.5rem, 0.55fr) minmax(0, 2.45fr);
+  grid-template-columns: minmax(10.5rem, 0.55fr) minmax(0, 2.45fr) auto;
   gap: 1rem;
   align-items: center;
   isolation: isolate;
@@ -79,6 +79,12 @@ section[data-render] {
   min-width: 0;
   overflow-x: auto;
   overflow-y: hidden;
+}
+
+.language-switcher {
+  position: relative;
+  justify-self: end;
+  z-index: 2;
 }
 
 .site-nav,
