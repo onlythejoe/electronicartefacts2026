@@ -7,9 +7,10 @@ import { buildRoutes } from "../src/build/build-routes.js";
 import { buildCatalog, isPublicEntity } from "../src/build/build-catalog.js";
 import { routeToFile, writeJson, writeText } from "../src/build/write-output.js";
 import { metadataFor } from "../src/seo/metadata.js";
+import { buildAgentManifest, buildLlmsFullTxt, buildLlmsTxt } from "../src/seo/agent-index.js";
 import { buildSitemap } from "../src/seo/sitemaps.js";
-import { jsonLdFor } from "../src/semantic/jsonld.js";
-import { routeForEntity } from "../src/config/routes.js";
+import { jsonLdFor, organizationNode, websiteNode } from "../src/semantic/jsonld.js";
+import { identifierPath, routeForEntity } from "../src/config/routes.js";
 import { renderLayout } from "../src/templates/layout.js";
 import { renderEntityPage } from "../src/templates/entity-page.js";
 import { renderIdentifierPage } from "../src/templates/identifier-page.js";
@@ -193,12 +194,45 @@ const writeHub = async (route: string, title: string, description: string, items
       <div class="section-head"><p class="eyebrow">GRAPH INDEX</p><h2>Browse the connected records.</h2><p class="lede">Every entry keeps its type, status, context and route into the wider knowledge system.</p></div>
 ${hubCards(items).trimStart()}
     </section>`;
+  const url = `https://electronicartefacts.com${route}`;
+  const itemListId = `${url}#itemlist`;
+  const hubJsonLd = {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "CollectionPage",
+        "@id": `${url}#webpage`,
+        url,
+        name: title,
+        description,
+        inLanguage: "en",
+        isPartOf: { "@id": "https://electronicartefacts.com/#website" },
+        publisher: { "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/" },
+        mainEntity: { "@id": itemListId },
+      },
+      {
+        "@type": "ItemList",
+        "@id": itemListId,
+        name: `${title} records`,
+        numberOfItems: items.length,
+        itemListElement: items.slice(0, 100).map((entity, index) => ({
+          "@type": "ListItem",
+          position: index + 1,
+          name: entity.title,
+          url: `https://electronicartefacts.com${routeForEntity(entity)}`,
+          item: { "@id": `https://electronicartefacts.com${identifierPath(entity)}` },
+        })),
+      },
+      organizationNode,
+      websiteNode,
+    ],
+  };
   await writeText(routeToFile(rootDir, route), renderLayout({
     metadata: hubMetadata(title, description, route),
     body,
     header,
     footer,
-    jsonLd: { "@context": "https://schema.org", "@type": "CollectionPage", name: title, url: `https://electronicartefacts.com${route}` },
+    jsonLd: hubJsonLd,
     pageClass: "generated-hub",
   }));
 };
@@ -220,7 +254,23 @@ await writeText(routeToFile(rootDir, "/search/"), renderLayout({
   body: searchBody,
   header,
   footer,
-  jsonLd: { "@context": "https://schema.org", "@type": "SearchResultsPage", name: "Electronic Artefacts Search" },
+  jsonLd: {
+    "@context": "https://schema.org",
+    "@graph": [
+      {
+        "@type": "SearchResultsPage",
+        "@id": "https://electronicartefacts.com/search/#webpage",
+        url: "https://electronicartefacts.com/search/",
+        name: "Electronic Artefacts Search",
+        description: "Search the public Electronic Artefacts knowledge graph across concepts, projects, programs, publications and research fields.",
+        inLanguage: "en",
+        isPartOf: { "@id": "https://electronicartefacts.com/#website" },
+        publisher: { "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/" },
+      },
+      organizationNode,
+      websiteNode,
+    ],
+  },
   pageClass: "search-generated",
 }));
 
@@ -245,5 +295,8 @@ await writeJson(path.join(rootDir, "generated/manifest/build.json"), {
   relations: catalog.relations.length,
 });
 await writeText(path.join(rootDir, "sitemap.xml"), buildSitemap(entities));
+await writeText(path.join(rootDir, "llms.txt"), buildLlmsTxt(entities));
+await writeText(path.join(rootDir, "llms-full.txt"), buildLlmsFullTxt(entities));
+await writeJson(path.join(rootDir, "agent-manifest.json"), buildAgentManifest(entities));
 
 process.stdout.write(`Generated ${publicEntities.length} canonical entity pages, ${routes.length} identifier routes, search data and graph neighborhoods.\n`);

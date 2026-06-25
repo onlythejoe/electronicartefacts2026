@@ -96,24 +96,37 @@ const citationsFor = (sources: SourceRef[] = []): Array<Record<string, unknown>>
     datePublished: source.publishedAt,
   }));
 
-const organizationNode = {
+export const organizationNode = {
   "@type": "Organization",
   "@id": `${site.origin}/id/organization/electronic-artefacts/`,
   name: site.name,
   url: `${site.origin}/`,
+  description: site.description,
   logo: {
     "@type": "ImageObject",
     url: `${site.origin}${site.logoImage}`,
   },
+  image: `${site.origin}${site.socialImage}`,
+  email: site.contactEmail,
+  sameAs: [...site.sameAs],
 };
 
-const websiteNode = {
+export const websiteNode = {
   "@type": "WebSite",
   "@id": `${site.origin}/#website`,
   url: `${site.origin}/`,
   name: site.name,
+  description: site.description,
   publisher: { "@id": `${site.origin}/id/organization/electronic-artefacts/` },
   inLanguage: site.language,
+  potentialAction: {
+    "@type": "SearchAction",
+    target: {
+      "@type": "EntryPoint",
+      urlTemplate: `${site.origin}/search/?q={search_term_string}`,
+    },
+    "query-input": "required name=search_term_string",
+  },
 };
 
 export const jsonLdFor = (entity: Entity) => {
@@ -122,6 +135,7 @@ export const jsonLdFor = (entity: Entity) => {
   const primary: Record<string, unknown> = compact({
     "@type": schemaType(entity),
     "@id": identifierUrl(entity),
+    identifier: entity.id,
     name: entity.title,
     headline: entity.type === "publication" ? entity.title : undefined,
     alternateName: entity.alternateNames,
@@ -178,14 +192,18 @@ export const jsonLdFor = (entity: Entity) => {
         datePublished: entity.version.publishedAt,
         dateModified: entity.version.modifiedAt,
         primaryImageOfPage: imageObjectFor(entity),
+        breadcrumb: { "@id": `${url}#breadcrumb` },
         mainEntity: { "@id": identifierUrl(entity) },
         isPartOf: { "@id": `${site.origin}/#website` },
+        publisher: { "@id": `${site.origin}/id/organization/electronic-artefacts/` },
+        isAccessibleForFree: true,
       },
       primary,
       organizationNode,
       websiteNode,
       {
         "@type": "BreadcrumbList",
+        "@id": `${url}#breadcrumb`,
         itemListElement: [
           { "@type": "ListItem", position: 1, name: "Electronic Artefacts", item: `${site.origin}/` },
           { "@type": "ListItem", position: 2, name: sectionName(entity), item: sectionUrl(entity) },

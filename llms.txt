@@ -1,0 +1,56 @@
+# Electronic Artefacts
+
+> Electronic Artefacts designs digital products, knowledge systems, cultural platforms and research-led experiences. The public site is a static knowledge graph with canonical HTML pages, stable entity identifiers, JSON-LD, search documents and graph exports.
+
+Use canonical HTML URLs for human-facing citations. Use identifier routes under /id/ and JSON-LD alternates for entity-level retrieval. The public graph is in English and is safe to crawl for search, retrieval and citation when robots.txt allows it.
+
+## Primary Entry Points
+
+- [Home](https://electronicartefacts.com/): Studio overview and main navigation.
+- [Knowledge](https://electronicartefacts.com/knowledge/): Canonical knowledge graph hub.
+- [Concepts](https://electronicartefacts.com/knowledge/concepts/): Definitions for core concepts.
+- [Technologies](https://electronicartefacts.com/knowledge/technologies/): Technical standards, platforms and protocols.
+- [Publications](https://electronicartefacts.com/publications/): Research notes and technical articles.
+- [Projects](https://electronicartefacts.com/projects.html): Selected work and case studies.
+- [Programs](https://electronicartefacts.com/programs.html): Software programs and runtime systems.
+- [Search](https://electronicartefacts.com/search/?q=knowledge%20graph): Public site search endpoint with q parameter.
+- [Contact](https://electronicartefacts.com/contact.html): Contact route for collaboration and inquiry.
+
+## Machine-Readable Resources
+
+- [Sitemap](https://electronicartefacts.com/sitemap.xml): Indexable public URLs.
+- [Agent manifest](https://electronicartefacts.com/agent-manifest.json): Structured map of public records and retrieval resources.
+- [Full LLM index](https://electronicartefacts.com/llms-full.txt): Complete public record list with summaries and identifier links.
+- [Search documents](https://electronicartefacts.com/search/documents.json): Public retrieval corpus used by site search.
+- [Public catalog](https://electronicartefacts.com/generated/public/catalog.json): Public entities, routes and relations.
+- [Graph entities](https://electronicartefacts.com/graph/entities.json): Public entity catalog export.
+- [Graph relations](https://electronicartefacts.com/graph/relations.json): Public relation export.
+
+## Canonical Records
+
+- [Electronic Artefacts](https://electronicartefacts.com/organizations/electronic-artefacts/): Electronic Artefacts connects research, software, design, cultural production and archival practice through a shared graph of projects, programs and knowledge.
+- [VASTE](https://electronicartefacts.com/programs/vaste/): VASTE connects Runtime Theory to implemented graph systems and can be evaluated through scoped repository access, technical pilots, implementation work and licensing conversations.
+- [Vestiges](https://electronicartefacts.com/projects/vestiges/): A knowledge-first product where provenance, contribution, discovery and professional services grow from one historized graph.
+- [AI Agents vs AI Workflows](https://electronicartefacts.com/publications/ai-agents-vs-ai-workflows/): Understand the difference between AI agents and AI workflows, when to use each architecture, and how to design reliable hybrid systems.
+- [Retrieval-Augmented Generation and Knowledge Systems](https://electronicartefacts.com/publications/retrieval-augmented-generation-and-knowledge-systems/): Learn how retrieval-augmented generation works and how to build source-grounded RAG systems with metadata, knowledge graphs and evaluation.
+- [AI Agent](https://electronicartefacts.com/knowledge/concepts/ai-agent/): An AI agent is a software system in which a model can select actions, use tools, observe results and adapt its next steps toward an objective within defined boundaries.
+- [Knowledge Graph](https://electronicartefacts.com/knowledge/concepts/knowledge-graph/): A knowledge graph is a structured network of entities, identifiers and typed relationships that makes knowledge navigable, queryable and reusable across contexts.
+- [Retrieval-Augmented Generation](https://electronicartefacts.com/knowledge/concepts/retrieval-augmented-generation/): Retrieval-augmented generation is an architecture that retrieves external information at query time and supplies selected evidence to a generative model before or during...
+- [Model Context Protocol](https://electronicartefacts.com/knowledge/technologies/model-context-protocol/): A technology record for MCP as an integration protocol for tool-using AI applications, resources and contextual workflows.
+- [ORETH](https://electronicartefacts.com/programs/oreth/): A public program record for ORETH as both an audio research system and the technical-cultural layer connected to Palimpsests.
+- [Palimpsests](https://electronicartefacts.com/projects/palimpsests/): A canonical project record for Palimpsests as a compound audio, visual and research publication within Electronic Artefacts.
+- [Runtime Theory](https://electronicartefacts.com/research/fields/runtime-theory/): An active Electronic Artefacts research field connecting early VOID experiments, VASTE and the definition of graph runtime.
+- [Algorithmic Composition and Rule-Based Music](https://electronicartefacts.com/publications/algorithmic-composition-and-rule-based-music/): A technical article on algorithmic composition, rule-based music, generative sound, cybernetics and Electronic Artefacts audio research.
+- [C2PA Content Credentials and Generative Media Provenance](https://electronicartefacts.com/publications/c2pa-content-credentials-and-generative-media-provenance/): Understand C2PA and Content Credentials for media provenance, generative AI labelling, archive trust and cultural production workflows.
+- [Contextual Execution and Graph Runtimes](https://electronicartefacts.com/publications/contextual-execution-and-graph-runtimes/): A technical article connecting contextual execution, graph runtime, Runtime Theory and VASTE.
+- [Creative Coding Pedagogy from Logo to p5.js](https://electronicartefacts.com/publications/creative-coding-pedagogy-from-logo-to-p5js/): A technical article on teaching creative coding, Processing, p5.js, computational media, open source and Electronic Artefacts learning culture.
+- [Digital Preservation and Living Archives](https://electronicartefacts.com/publications/digital-preservation-and-living-archives/): A technical article on digital preservation, living archives, file formats, provenance and Electronic Artefacts cultural records.
+- [Event-Driven Architecture and Event Streams](https://electronicartefacts.com/publications/event-driven-architecture-and-event-streams/): Learn event-driven architecture through event streams, delivery guarantees, schema evolution, idempotency, projections and runtime design.
+
+## Optional
+
+- [Legal notice](https://electronicartefacts.com/mentions-legales.html)
+- [Privacy policy](https://electronicartefacts.com/confidentialite.html)
+- [Archive collections](https://electronicartefacts.com/archive/collections/)
+
+Last curated source update: 2026-06-24

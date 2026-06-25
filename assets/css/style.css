@@ -1796,6 +1796,12 @@
     inset 0 1px 0 rgba(255, 255, 255, 0.34);
   color: #302219;
   isolation: isolate;
+  transition:
+    transform 260ms cubic-bezier(0.2, 0.8, 0.2, 1),
+    box-shadow 260ms ease,
+    border-color 260ms ease,
+    filter 260ms ease;
+  will-change: transform;
 }
 
 .signature-banner::before,
@@ -1882,6 +1888,9 @@
   object-position: center bottom;
   filter: drop-shadow(0 20px 34px rgba(42, 29, 21, 0.16));
   transform: translateY(2.5%);
+  transition:
+    transform 360ms cubic-bezier(0.2, 0.8, 0.2, 1),
+    filter 260ms ease;
   user-select: none;
   pointer-events: none;
 }
@@ -1921,6 +1930,16 @@
 .signature-banner:hover,
 .signature-banner:focus-within {
   transform: translateY(-2px);
+  border-color: rgba(99, 78, 62, 0.28);
+  box-shadow:
+    0 34px 68px rgba(67, 47, 31, 0.17),
+    inset 0 1px 0 rgba(255, 255, 255, 0.4);
+}
+
+.signature-banner:hover .signature-banner__image,
+.signature-banner:focus-within .signature-banner__image {
+  transform: translateY(1%) scale(1.018);
+  filter: drop-shadow(0 26px 42px rgba(42, 29, 21, 0.22));
 }
 
 .signature-banner:hover::before,
@@ -1934,6 +1953,10 @@
   gap: clamp(0.9rem, 1.8vw, 1.35rem);
   align-items: stretch;
   min-height: clamp(28rem, 54svh, 42rem);
+  transition:
+    border-color 240ms ease,
+    box-shadow 240ms ease,
+    background-color 240ms ease;
 }
 
 .detail-hero:not(.detail-hero--with-media) {
@@ -1972,6 +1995,12 @@
     linear-gradient(180deg, rgba(255, 255, 255, 0.05), rgba(255, 255, 255, 0.012)),
     rgba(255, 255, 255, 0.014);
   box-shadow: var(--shadow-soft);
+  transition:
+    transform 300ms cubic-bezier(0.2, 0.8, 0.2, 1),
+    border-color 240ms ease,
+    box-shadow 240ms ease,
+    filter 240ms ease;
+  will-change: transform;
 }
 
 .detail-hero__visual::after {
@@ -1991,6 +2020,30 @@
   min-height: 0;
   object-fit: cover;
   object-position: center;
+  transition:
+    transform 420ms cubic-bezier(0.2, 0.8, 0.2, 1),
+    filter 260ms ease;
+}
+
+.detail-hero:hover,
+.detail-hero:focus-within {
+  border-color: rgba(var(--project-rgb, 234, 220, 207), 0.18);
+  box-shadow: 0 32px 72px rgba(0, 0, 0, 0.38);
+}
+
+.detail-hero:hover .detail-hero__visual,
+.detail-hero:focus-within .detail-hero__visual {
+  transform: translateY(-2px);
+  border-color: rgba(var(--project-rgb, 234, 220, 207), 0.3);
+  box-shadow: 0 26px 52px rgba(0, 0, 0, 0.34);
+  filter: saturate(1.04) brightness(1.03);
+}
+
+.detail-hero:hover .detail-hero__visual .project-immersive__image,
+.detail-hero:hover .detail-hero__visual .project-gallery__media,
+.detail-hero:focus-within .detail-hero__visual .project-immersive__image,
+.detail-hero:focus-within .detail-hero__visual .project-gallery__media {
+  transform: scale(1.025);
 }
 
 .detail-hero__visual figcaption {
@@ -3948,7 +4001,8 @@
 .archive-card::after,
 .panel::after,
 .cross-nav-card::after,
-.stat-card::after {
+.stat-card::after,
+.detail-hero::after {
   content: "";
   position: absolute;
   inset: 0;
@@ -3964,7 +4018,9 @@
 .archive-card:hover::after,
 .panel:hover::after,
 .cross-nav-card:hover::after,
-.stat-card:hover::after {
+.stat-card:hover::after,
+.detail-hero:hover::after,
+.detail-hero:focus-within::after {
   opacity: 1;
 }
 
@@ -9763,6 +9819,11 @@ input:focus-visible {
   --intent-tone: 125, 211, 252;
   --intent-glow-x: 82%;
   --intent-glow-y: 16%;
+  --intent-pointer-x: 68%;
+  --intent-pointer-y: 32%;
+  --intent-spotlight-opacity: 0.12;
+  --intent-grid-opacity: 0.72;
+  --intent-energy: 0;
   --intent-rotate-x: 0deg;
   --intent-rotate-y: 0deg;
   min-height: clamp(32rem, 68svh, 46rem);
@@ -9772,9 +9833,42 @@ input:focus-visible {
     radial-gradient(circle at 14% 0%, rgba(255, 255, 255, 0.09), transparent 27%),
     linear-gradient(150deg, rgba(255, 255, 255, 0.056), rgba(255, 255, 255, 0.012) 58%),
     rgba(255, 255, 255, 0.018);
+  border-color: rgba(var(--intent-tone), 0.11);
+  box-shadow:
+    0 30px 74px rgba(0, 0, 0, 0.36),
+    inset 0 1px rgba(255, 255, 255, 0.055);
   perspective: 1400px;
   transform-style: preserve-3d;
-  transition: background 220ms ease-out;
+  transition:
+    background 260ms ease-out,
+    border-color 260ms ease,
+    box-shadow 260ms ease;
+}
+
+.intent-hero::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  border-radius: inherit;
+  background:
+    radial-gradient(circle at var(--intent-pointer-x) var(--intent-pointer-y), rgba(255, 255, 255, 0.2), transparent 23%),
+    radial-gradient(circle at var(--intent-pointer-x) var(--intent-pointer-y), rgba(var(--intent-tone), 0.2), transparent 34%),
+    linear-gradient(115deg, rgba(255, 255, 255, 0.055), transparent 38%);
+  mix-blend-mode: screen;
+  opacity: var(--intent-spotlight-opacity);
+  pointer-events: none;
+  transition: opacity 240ms ease;
+}
+
+.intent-hero.is-intent-active,
+.intent-hero:focus-within {
+  border-color: rgba(var(--intent-tone), 0.2);
+  box-shadow:
+    0 36px 84px rgba(0, 0, 0, 0.42),
+    0 0 0 1px rgba(var(--intent-tone), 0.035),
+    inset 0 1px rgba(255, 255, 255, 0.08);
 }
 
 .intent-hero::after {
@@ -9790,8 +9884,9 @@ input:focus-visible {
   background-size: clamp(2.8rem, 5vw, 4.5rem) clamp(2.8rem, 5vw, 4.5rem);
   mask-image: radial-gradient(circle at 68% 45%, #000 0, #000 38%, transparent 78%);
   -webkit-mask-image: radial-gradient(circle at 68% 45%, #000 0, #000 38%, transparent 78%);
-  opacity: 0.8;
+  opacity: var(--intent-grid-opacity);
   pointer-events: none;
+  transition: opacity 260ms ease;
 }
 
 .intent-hero--home {
@@ -9883,9 +9978,15 @@ input:focus-visible {
 .intent-hero__stage-label {
   --intent-shift-x: 0px;
   --intent-shift-y: 0px;
-  translate: var(--intent-shift-x) var(--intent-shift-y);
-  transition: translate 160ms ease-out;
-  will-change: translate;
+  --intent-shift-z: 0px;
+  --intent-active-scale: 1;
+  translate: var(--intent-shift-x) var(--intent-shift-y) var(--intent-shift-z);
+  scale: var(--intent-active-scale);
+  transition:
+    translate 260ms cubic-bezier(0.2, 0.8, 0.2, 1),
+    scale 220ms cubic-bezier(0.2, 0.8, 0.2, 1),
+    filter 220ms ease;
+  will-change: translate, scale, filter;
 }
 
 .intent-hero__copy > .eyebrow,
@@ -9921,7 +10022,10 @@ input:focus-visible {
   box-shadow: none;
   transform: rotateX(var(--intent-rotate-x)) rotateY(var(--intent-rotate-y));
   transform-style: preserve-3d;
-  transition: transform 190ms ease-out;
+  transition:
+    transform 280ms cubic-bezier(0.2, 0.8, 0.2, 1),
+    filter 240ms ease;
+  will-change: transform, filter;
 }
 
 .intent-hero__stage::before {
@@ -9937,7 +10041,9 @@ input:focus-visible {
   background-size: 3.5rem 3.5rem;
   mask-image: radial-gradient(circle at center, #000, transparent 82%);
   -webkit-mask-image: radial-gradient(circle at center, #000, transparent 82%);
+  opacity: var(--intent-grid-opacity);
   pointer-events: none;
+  transition: opacity 260ms ease;
 }
 
 .intent-hero__stage-label {
@@ -10687,6 +10793,90 @@ input:focus-visible {
   gap: var(--section-stack-gap);
 }
 
+.home-intent-stage__frame,
+.home-intent-stage__channels a,
+.intent-media-stack a,
+.projects-hero__frame,
+.archive-stack__sheet,
+.research-constellation__node,
+.about-orbit__node,
+.contact-signal__card,
+.knowledge-graph-stage__node,
+.intent-hero__stats span,
+.intent-hero__copy .button,
+.intent-hero__copy .chip,
+.intent-hero__copy .tag,
+.computation-field {
+  --intent-active-scale: 1;
+  scale: var(--intent-active-scale);
+  transition:
+    translate 260ms cubic-bezier(0.2, 0.8, 0.2, 1),
+    scale 220ms cubic-bezier(0.2, 0.8, 0.2, 1),
+    border-color 220ms ease,
+    background-color 220ms ease,
+    box-shadow 220ms ease,
+    filter 220ms ease,
+    opacity 220ms ease;
+  will-change: translate, scale, filter;
+}
+
+.home-intent-stage__frame img,
+.intent-media-stack img,
+.projects-hero__frame img,
+.archive-stack__sheet img {
+  transition:
+    transform 420ms cubic-bezier(0.2, 0.8, 0.2, 1),
+    filter 260ms ease;
+  will-change: transform;
+}
+
+.intent-hero .is-intent-layer-active,
+.home-intent-stage__frame:hover,
+.home-intent-stage__frame:focus-visible,
+.home-intent-stage__channels a:hover,
+.home-intent-stage__channels a:focus-visible,
+.intent-media-stack a:hover,
+.intent-media-stack a:focus-visible,
+.projects-hero__frame:hover,
+.projects-hero__frame:focus-visible,
+.archive-stack__sheet:hover,
+.archive-stack__sheet:focus-visible,
+.research-constellation__node:hover,
+.research-constellation__node:focus-visible,
+.about-orbit__node:hover,
+.about-orbit__node:focus-visible,
+.contact-signal__card:hover,
+.contact-signal__card:focus-within,
+.knowledge-graph-stage__node:hover,
+.knowledge-graph-stage__node:focus-within {
+  --intent-active-scale: 1.018;
+  border-color: rgba(var(--intent-tone), 0.36);
+  box-shadow:
+    0 30px 58px rgba(0, 0, 0, 0.38),
+    0 0 0 1px rgba(var(--intent-tone), 0.04),
+    inset 0 1px rgba(255, 255, 255, 0.08);
+  filter: saturate(1.08) brightness(1.045);
+}
+
+.intent-hero .is-intent-layer-active img,
+.home-intent-stage__frame:hover img,
+.home-intent-stage__frame:focus-visible img,
+.intent-media-stack a:hover img,
+.intent-media-stack a:focus-visible img,
+.projects-hero__frame:hover img,
+.projects-hero__frame:focus-visible img,
+.archive-stack__sheet:hover img,
+.archive-stack__sheet:focus-visible img {
+  transform: scale(1.035);
+}
+
+.home-intent-stage__orbit,
+.research-constellation__lines,
+.about-orbit__lines,
+.knowledge-graph-stage__lines {
+  animation: intent-halo-breathe 7.6s ease-in-out infinite;
+}
+
 @keyframes intent-pulse {
   0%,
   100% {
@@ -10697,6 +10887,19 @@ input:focus-visible {
   50% {
     opacity: 1;
     transform: scale(1.16);
+  }
+}
+
+@keyframes intent-halo-breathe {
+  0%,
+  100% {
+    opacity: 0.56;
+    filter: saturate(0.9);
+  }
+
+  50% {
+    opacity: 0.88;
+    filter: saturate(1.18);
   }
 }
 
@@ -10761,6 +10964,7 @@ input:focus-visible {
   .intent-hero__copy > .pill-cloud,
   .intent-hero__stage-label {
     translate: none;
+    scale: 1;
   }
 
   .intent-hero__stage-label {
@@ -10938,10 +11142,33 @@ input:focus-visible {
   .intent-hero__stage-label {
     transform: none !important;
     translate: none !important;
+    scale: 1 !important;
+  }
+
+  .home-intent-stage__frame,
+  .home-intent-stage__channels a,
+  .intent-media-stack a,
+  .projects-hero__frame,
+  .archive-stack__sheet,
+  .research-constellation__node,
+  .about-orbit__node,
+  .contact-signal__card,
+  .knowledge-graph-stage__node,
+  .intent-hero__stats span,
+  .intent-hero__copy .button,
+  .intent-hero__copy .chip,
+  .intent-hero__copy .tag,
+  .computation-field {
+    scale: 1 !important;
+    transition: none !important;
   }
 
   .research-constellation__pulse,
-  .archive-stack__scanner {
+  .archive-stack__scanner,
+  .home-intent-stage__orbit,
+  .research-constellation__lines,
+  .about-orbit__lines,
+  .knowledge-graph-stage__lines {
     animation: none;
   }
 }

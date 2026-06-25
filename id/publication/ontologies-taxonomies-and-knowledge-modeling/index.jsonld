@@ -15,16 +15,24 @@
         "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-search.jpg",
         "description": "Ontologies, Taxonomies and Knowledge Modeling"
       },
+      "breadcrumb": {
+        "@id": "https://electronicartefacts.com/publications/ontologies-taxonomies-and-knowledge-modeling/#breadcrumb"
+      },
       "mainEntity": {
         "@id": "https://electronicartefacts.com/id/publication/ontologies-taxonomies-and-knowledge-modeling/"
       },
       "isPartOf": {
         "@id": "https://electronicartefacts.com/#website"
-      }
+      },
+      "publisher": {
+        "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
+      },
+      "isAccessibleForFree": true
     },
     {
       "@type": "TechArticle",
       "@id": "https://electronicartefacts.com/id/publication/ontologies-taxonomies-and-knowledge-modeling/",
+      "identifier": "ea:publication:ontologies-taxonomies-and-knowledge-modeling",
       "name": "Ontologies, Taxonomies and Knowledge Modeling",
       "headline": "Ontologies, Taxonomies and Knowledge Modeling",
       "description": "A practical guide to taxonomies, thesauri, folksonomies, ontologies, controlled vocabularies, OWL, SKOS and sustainable semantic modeling.",
@@ -127,23 +135,41 @@
       "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/",
       "name": "Electronic Artefacts",
       "url": "https://electronicartefacts.com/",
+      "description": "Electronic Artefacts designs digital products, knowledge systems, cultural platforms and research-led experiences.",
       "logo": {
         "@type": "ImageObject",
         "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-logo.jpg"
-      }
+      },
+      "image": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-search.jpg",
+      "email": "electronic.artefacts@gmail.com",
+      "sameAs": [
+        "https://www.instagram.com/electronic.artefacts/",
+        "https://github.com/onlythejoe",
+        "https://soundcloud.com/electronic-artefacts"
+      ]
     },
     {
       "@type": "WebSite",
       "@id": "https://electronicartefacts.com/#website",
       "url": "https://electronicartefacts.com/",
       "name": "Electronic Artefacts",
+      "description": "Electronic Artefacts designs digital products, knowledge systems, cultural platforms and research-led experiences.",
       "publisher": {
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
-      "inLanguage": "en"
+      "inLanguage": "en",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://electronicartefacts.com/search/?q={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
+      }
     },
     {
       "@type": "BreadcrumbList",
+      "@id": "https://electronicartefacts.com/publications/ontologies-taxonomies-and-knowledge-modeling/#breadcrumb",
       "itemListElement": [
         {
           "@type": "ListItem",

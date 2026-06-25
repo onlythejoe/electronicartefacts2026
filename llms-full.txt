@@ -1,0 +1,637 @@
+# Electronic Artefacts Full Agent Index
+
+> Complete public canonical record list for retrieval agents, AI search systems and citation workflows.
+
+This file is generated from typed public records. Prefer each record's canonical HTML URL for user-facing links, its /id/ route for stable entity identity, and the linked JSON-LD file for structured extraction.
+
+## Retrieval Notes
+
+- Site language: en
+- Canonical origin: https://electronicartefacts.com
+- Search endpoint: https://electronicartefacts.com/search/?q={search_term_string}
+- Public records: 100
+- Last curated source update: 2026-06-24
+
+## organization
+
+- [Electronic Artefacts](https://electronicartefacts.com/organizations/electronic-artefacts/): Electronic Artefacts connects research, software, design, cultural production and archival practice through a shared graph of projects, programs and knowledge.
+  - Entity ID: ea:organization:electronic-artefacts
+  - Identifier: https://electronicartefacts.com/id/organization/electronic-artefacts/
+  - JSON-LD: https://electronicartefacts.com/id/organization/electronic-artefacts/index.jsonld
+  - Modified: 2026-06-22
+  - Keywords: Electronic Artefacts, Creative technology, Software, Research, Culture, Publishing
+
+## program
+
+- [ORETH](https://electronicartefacts.com/programs/oreth/): A public program record for ORETH as both an audio research system and the technical-cultural layer connected to Palimpsests.
+  - Entity ID: ea:program:oreth
+  - Identifier: https://electronicartefacts.com/id/program/oreth/
+  - JSON-LD: https://electronicartefacts.com/id/program/oreth/index.jsonld
+  - Modified: 2026-06-23
+  - Keywords: ORETH, Audio Intelligence, Machine Listening, Signal Processing, Sound Design, Palimpsests, Experimental Music, Music
+- [VASTE](https://electronicartefacts.com/programs/vaste/): VASTE connects Runtime Theory to implemented graph systems and can be evaluated through scoped repository access, technical pilots, implementation work and licensing conversations.
+  - Entity ID: ea:program:vaste
+  - Identifier: https://electronicartefacts.com/id/program/vaste/
+  - JSON-LD: https://electronicartefacts.com/id/program/vaste/index.jsonld
+  - Modified: 2026-06-22
+  - Keywords: VASTE, TypeScript, Graph, Context, Identity, Simulation, Knowledge, Technology
+
+## project
+
+- [Palimpsests](https://electronicartefacts.com/projects/palimpsests/): A canonical project record for Palimpsests as a compound audio, visual and research publication within Electronic Artefacts.
+  - Entity ID: ea:project:palimpsests
+  - Identifier: https://electronicartefacts.com/id/project/palimpsests/
+  - JSON-LD: https://electronicartefacts.com/id/project/palimpsests/index.jsonld
+  - Modified: 2026-06-23
+  - Keywords: Palimpsests, ORETH, Audio, Memory, Transmission, Signal, Digital Art, Music
+- [Vestiges](https://electronicartefacts.com/projects/vestiges/): A knowledge-first product where provenance, contribution, discovery and professional services grow from one historized graph.
+  - Entity ID: ea:project:vestiges
+  - Identifier: https://electronicartefacts.com/id/project/vestiges/
+  - JSON-LD: https://electronicartefacts.com/id/project/vestiges/index.jsonld
+  - Modified: 2026-06-24
+  - Keywords: Vestiges, VASTE, Knowledge Graph, Craft, Culture, Cultural Infrastructure, Technology, Knowledge Graphs
+
+## research field
+
+- [Runtime Theory](https://electronicartefacts.com/research/fields/runtime-theory/): An active Electronic Artefacts research field connecting early VOID experiments, VASTE and the definition of graph runtime.
+  - Entity ID: ea:researchField:runtime-theory
+  - Identifier: https://electronicartefacts.com/id/research-field/runtime-theory/
+  - JSON-LD: https://electronicartefacts.com/id/research-field/runtime-theory/index.jsonld
+  - Modified: 2026-06-22
+  - Keywords: Runtime Theory, Runtime, Theory, Execution, Events, Primitives, Technology, Research
+
+## publication
+
+- [AI Agents vs AI Workflows](https://electronicartefacts.com/publications/ai-agents-vs-ai-workflows/): Understand the difference between AI agents and AI workflows, when to use each architecture, and how to design reliable hybrid systems.
+  - Entity ID: ea:publication:ai-agents-vs-ai-workflows
+  - Identifier: https://electronicartefacts.com/id/publication/ai-agents-vs-ai-workflows/
+  - JSON-LD: https://electronicartefacts.com/id/publication/ai-agents-vs-ai-workflows/index.jsonld
+  - Modified: 2026-06-24
+  - Keywords: AI Agents vs AI Workflows, AI Agents, AI Workflows, Orchestration, Tool Use, Automation, Artificial Intelligence, Systems Design
+- [Algorithmic Composition and Rule-Based Music](https://electronicartefacts.com/publications/algorithmic-composition-and-rule-based-music/): A technical article on algorithmic composition, rule-based music, generative sound, cybernetics and Electronic Artefacts audio research.
+  - Entity ID: ea:publication:algorithmic-composition-and-rule-based-music
+  - Identifier: https://electronicartefacts.com/id/publication/algorithmic-composition-and-rule-based-music/
+  - JSON-LD: https://electronicartefacts.com/id/publication/algorithmic-composition-and-rule-based-music/index.jsonld
+  - Modified: 2026-06-24
+  - Keywords: Algorithmic Composition and Rule-Based Music, Algorithmic Composition, Electronic Music, Generative Music, ORETH, Music Production, Creative Coding, Cybernetics
+- [C2PA Content Credentials and Generative Media Provenance](https://electronicartefacts.com/publications/c2pa-content-credentials-and-generative-media-provenance/): Understand C2PA and Content Credentials for media provenance, generative AI labelling, archive trust and cultural production workflows.
+  - Entity ID: ea:publication:c2pa-content-credentials-and-generative-media-provenance
+  - Identifier: https://electronicartefacts.com/id/publication/c2pa-content-credentials-and-generative-media-provenance/
+  - JSON-LD: https://electronicartefacts.com/id/publication/c2pa-content-credentials-and-generative-media-provenance/index.jsonld
+  - Modified: 2026-06-24
+  - Keywords: C2PA Content Credentials and Generative Media Provenance, C2PA, Content Credentials, Provenance, Generative AI, Digital Preservation, Artificial Intelligence, Knowledge Systems
+- [Contextual Execution and Graph Runtimes](https://electronicartefacts.com/publications/contextual-execution-and-graph-runtimes/): A technical article connecting contextual execution, graph runtime, Runtime Theory and VASTE.
+  - Entity ID: ea:publication:contextual-execution-and-graph-runtimes
+  - Identifier: https://electronicartefacts.com/id/publication/contextual-execution-and-graph-runtimes/
+  - JSON-LD: https://electronicartefacts.com/id/publication/contextual-execution-and-graph-runtimes/index.jsonld
+  - Modified: 2026-06-23
+  - Keywords: Contextual Execution and Graph Runtimes, Contextual Execution, Graph Runtime, Runtime Theory, VASTE, Systems Design, Programming, Knowledge Systems
+- [Creative Coding Pedagogy from Logo to p5.js](https://electronicartefacts.com/publications/creative-coding-pedagogy-from-logo-to-p5js/): A technical article on teaching creative coding, Processing, p5.js, computational media, open source and Electronic Artefacts learning culture.
+  - Entity ID: ea:publication:creative-coding-pedagogy-from-logo-to-p5js
+  - Identifier: https://electronicartefacts.com/id/publication/creative-coding-pedagogy-from-logo-to-p5js/
+  - JSON-LD: https://electronicartefacts.com/id/publication/creative-coding-pedagogy-from-logo-to-p5js/index.jsonld
+  - Modified: 2026-06-24
+  - Keywords: Creative Coding Pedagogy from Logo to p5.js, Creative Coding, Processing, p5.js, Education, Programming, Design, Open Source
+- [Digital Preservation and Living Archives](https://electronicartefacts.com/publications/digital-preservation-and-living-archives/): A technical article on digital preservation, living archives, file formats, provenance and Electronic Artefacts cultural records.
+  - Entity ID: ea:publication:digital-preservation-and-living-archives
+  - Identifier: https://electronicartefacts.com/id/publication/digital-preservation-and-living-archives/
+  - JSON-LD: https://electronicartefacts.com/id/publication/digital-preservation-and-living-archives/index.jsonld
+  - Modified: 2026-06-23
+  - Keywords: Digital Preservation and Living Archives, Digital Preservation, Living Archive, Provenance, Palimpsests, Vestiges, Archives, Digital Art
+- [Event-Driven Architecture and Event Streams](https://electronicartefacts.com/publications/event-driven-architecture-and-event-streams/): Learn event-driven architecture through event streams, delivery guarantees, schema evolution, idempotency, projections and runtime design.
+  - Entity ID: ea:publication:event-driven-architecture-and-event-streams
+  - Identifier: https://electronicartefacts.com/id/publication/event-driven-architecture-and-event-streams/
+  - JSON-LD: https://electronicartefacts.com/id/publication/event-driven-architecture-and-event-streams/index.jsonld
+  - Modified: 2026-06-24
+  - Keywords: Event-Driven Architecture and Event Streams, Event-Driven Architecture, Event Streams, CloudEvents, Idempotency, Event Sourcing, Software Architecture, Systems Design
+- [Foundational Lineage #001](https://electronicartefacts.com/publications/foundational-lineage-001/): A concise record of the foundational research lineage connecting information architecture, taxonomy, runtime systems and public knowledge structures.
+  - Entity ID: ea:publication:foundational-lineage-001
+  - Identifier: https://electronicartefacts.com/id/publication/foundational-lineage-001/
+  - JSON-LD: https://electronicartefacts.com/id/publication/foundational-lineage-001/index.jsonld
+  - Modified: 2026-06-22
+  - Keywords: Foundational Lineage #001, Foundational, Lineage, Research, Information architecture
+- [Generative AI, Latent Space and Creative Workflows](https://electronicartefacts.com/publications/generative-ai-latent-space-and-creative-workflows/): A technical article on generative AI, latent space, creative workflows, provenance, augmented intelligence and responsible production.
+  - Entity ID: ea:publication:generative-ai-latent-space-and-creative-workflows
+  - Identifier: https://electronicartefacts.com/id/publication/generative-ai-latent-space-and-creative-workflows/
+  - JSON-LD: https://electronicartefacts.com/id/publication/generative-ai-latent-space-and-creative-workflows/index.jsonld
+  - Modified: 2026-06-24
+  - Keywords: Generative AI, Latent Space and Creative Workflows, Generative AI, Latent Space, Creative Workflows, Provenance, Artificial Intelligence, Machine Learning, Creative Coding
+- [Generative Systems, Cybernetics and Creative Coding](https://electronicartefacts.com/publications/generative-systems-cybernetics-and-creative-coding/): A technical article on generative systems, cybernetic feedback, creative coding, algorithmic composition and Electronic Artefacts projects.
+  - Entity ID: ea:publication:generative-systems-cybernetics-and-creative-coding
+  - Identifier: https://electronicartefacts.com/id/publication/generative-systems-cybernetics-and-creative-coding/
+  - JSON-LD: https://electronicartefacts.com/id/publication/generative-systems-cybernetics-and-creative-coding/index.jsonld
+  - Modified: 2026-06-23
+  - Keywords: Generative Systems, Cybernetics and Creative Coding, Generative Systems, Cybernetics, Creative Coding, Algorithmic Composition, Digital Art, Music Production, Systems Design
+- [How Large Language Models Actually Work](https://electronicartefacts.com/publications/how-large-language-models-actually-work/): Learn how LLMs work, from tokenization and training to attention, context windows, decoding, hallucinations, tools and evaluation.
+  - Entity ID: ea:publication:how-large-language-models-actually-work
+  - Identifier: https://electronicartefacts.com/id/publication/how-large-language-models-actually-work/
+  - JSON-LD: https://electronicartefacts.com/id/publication/how-large-language-models-actually-work/index.jsonld
+  - Modified: 2026-06-24
+  - Keywords: How Large Language Models Actually Work, LLM, Transformer, Attention, Tokenization, Inference, Artificial Intelligence, Machine Learning
+- [Human Computer Interaction for Creative Tools](https://electronicartefacts.com/publications/human-computer-interaction-for-creative-tools/): A technical article on HCI, creative tools, interface design, augmented intelligence, accessibility and Electronic Artefacts systems.
+  - Entity ID: ea:publication:human-computer-interaction-for-creative-tools
+  - Identifier: https://electronicartefacts.com/id/publication/human-computer-interaction-for-creative-tools/
+  - JSON-LD: https://electronicartefacts.com/id/publication/human-computer-interaction-for-creative-tools/index.jsonld
+  - Modified: 2026-06-24
+  - Keywords: Human Computer Interaction for Creative Tools, HCI, Creative Tools, Augmented Intelligence, Accessibility, Human Computer Interaction, Design, Creative Coding
+- [Hypertext and Augmented Knowledge Systems](https://electronicartefacts.com/publications/hypertext-and-augmented-knowledge-systems/): A technical article on hypertext, augmented intelligence, linked pages, knowledge graphs and Electronic Artefacts knowledge publishing.
+  - Entity ID: ea:publication:hypertext-and-augmented-knowledge-systems
+  - Identifier: https://electronicartefacts.com/id/publication/hypertext-and-augmented-knowledge-systems/
+  - JSON-LD: https://electronicartefacts.com/id/publication/hypertext-and-augmented-knowledge-systems/index.jsonld
+  - Modified: 2026-06-24
+  - Keywords: Hypertext and Augmented Knowledge Systems, Hypertext, Augmented Intelligence, Knowledge Graph, Linked Data, History of Technology, Knowledge Systems, Web Development
+- [IIIF and Compound Cultural Objects](https://electronicartefacts.com/publications/iiif-and-compound-cultural-objects/): Understand IIIF as presentation infrastructure for compound cultural objects, archives, manifests, canvases and annotations.
+  - Entity ID: ea:publication:iiif-and-compound-cultural-objects
+  - Identifier: https://electronicartefacts.com/id/publication/iiif-and-compound-cultural-objects/
+  - JSON-LD: https://electronicartefacts.com/id/publication/iiif-and-compound-cultural-objects/index.jsonld
+  - Modified: 2026-06-24
+  - Keywords: IIIF and Compound Cultural Objects, IIIF, Digital Archives, Cultural Objects, Metadata, Linked Data, Digital Preservation, Cultural Infrastructure
+- [Knowledge Graphs for Cultural Infrastructure](https://electronicartefacts.com/publications/knowledge-graphs-for-cultural-infrastructure/): A technical article on knowledge graphs, cultural heritage, provenance and public knowledge pages, connected to Vestiges and the Electronic Artefacts graph.
+  - Entity ID: ea:publication:knowledge-graphs-for-cultural-infrastructure
+  - Identifier: https://electronicartefacts.com/id/publication/knowledge-graphs-for-cultural-infrastructure/
+  - JSON-LD: https://electronicartefacts.com/id/publication/knowledge-graphs-for-cultural-infrastructure/index.jsonld
+  - Modified: 2026-06-23
+  - Keywords: Knowledge Graphs for Cultural Infrastructure, Knowledge Graph, Cultural Infrastructure, Linked Data, Provenance, Vestiges, Knowledge Systems, Archives
+- [Linked Data and Public Knowledge Pages](https://electronicartefacts.com/publications/linked-data-and-public-knowledge-pages/): A technical article on Linked Data, JSON-LD, canonical URLs, identifiers and SEO for static knowledge platforms.
+  - Entity ID: ea:publication:linked-data-and-public-knowledge-pages
+  - Identifier: https://electronicartefacts.com/id/publication/linked-data-and-public-knowledge-pages/
+  - JSON-LD: https://electronicartefacts.com/id/publication/linked-data-and-public-knowledge-pages/index.jsonld
+  - Modified: 2026-06-23
+  - Keywords: Linked Data and Public Knowledge Pages, Linked Data, JSON-LD, Structured Data, SEO, Knowledge Pages, Web Development, Knowledge Systems
+- [Local and Open Source AI Systems](https://electronicartefacts.com/publications/local-and-open-source-ai-systems/): Understand local AI and open-source AI systems, including model weights, quantization, llama.cpp, privacy, hardware and licensing.
+  - Entity ID: ea:publication:local-and-open-source-ai-systems
+  - Identifier: https://electronicartefacts.com/id/publication/local-and-open-source-ai-systems/
+  - JSON-LD: https://electronicartefacts.com/id/publication/local-and-open-source-ai-systems/index.jsonld
+  - Modified: 2026-06-24
+  - Keywords: Local and Open Source AI Systems, Local AI, Open Source AI, Open Weights, Quantization, llama.cpp, Artificial Intelligence, Open Source
+- [Metadata, Cataloguing and Cultural Memory](https://electronicartefacts.com/publications/metadata-cataloguing-and-cultural-memory/): A technical article on metadata, cataloguing, cultural memory, preservation standards and Electronic Artefacts graph records.
+  - Entity ID: ea:publication:metadata-cataloguing-and-cultural-memory
+  - Identifier: https://electronicartefacts.com/id/publication/metadata-cataloguing-and-cultural-memory/
+  - JSON-LD: https://electronicartefacts.com/id/publication/metadata-cataloguing-and-cultural-memory/index.jsonld
+  - Modified: 2026-06-24
+  - Keywords: Metadata, Cataloguing and Cultural Memory, Metadata, Cataloguing, Archives, Cultural Memory, Knowledge Systems, Research Methods, History of Technology
+- [Microservices, Modular Monoliths and System Boundaries](https://electronicartefacts.com/publications/microservices-modular-monoliths-and-system-boundaries/): Learn when microservices make sense, why modular monoliths are often the better starting point, and how to define durable system boundaries.
+  - Entity ID: ea:publication:microservices-modular-monoliths-and-system-boundaries
+  - Identifier: https://electronicartefacts.com/id/publication/microservices-modular-monoliths-and-system-boundaries/
+  - JSON-LD: https://electronicartefacts.com/id/publication/microservices-modular-monoliths-and-system-boundaries/index.jsonld
+  - Modified: 2026-06-24
+  - Keywords: Microservices, Modular Monoliths and System Boundaries, Microservices, Modular Monolith, System Boundaries, Domain-Driven Design, Distributed Systems, Software Architecture, Systems Design
+- [Model Context Protocol and Tool-Using AI Systems](https://electronicartefacts.com/publications/model-context-protocol-and-tool-using-ai-systems/): Understand Model Context Protocol through hosts, clients, servers, resources, prompts, tools, security boundaries and contextual execution.
+  - Entity ID: ea:publication:model-context-protocol-and-tool-using-ai-systems
+  - Identifier: https://electronicartefacts.com/id/publication/model-context-protocol-and-tool-using-ai-systems/
+  - JSON-LD: https://electronicartefacts.com/id/publication/model-context-protocol-and-tool-using-ai-systems/index.jsonld
+  - Modified: 2026-06-24
+  - Keywords: Model Context Protocol and Tool-Using AI Systems, Model Context Protocol, AI Agents, Tool Use, Contextual Execution, VASTE, Artificial Intelligence, Software Architecture
+- [Motion Design, Time and Interface Semantics](https://electronicartefacts.com/publications/motion-design-time-and-interface-semantics/): A technical article on motion design, web animation, interface state, accessibility and temporal visual systems.
+  - Entity ID: ea:publication:motion-design-time-and-interface-semantics
+  - Identifier: https://electronicartefacts.com/id/publication/motion-design-time-and-interface-semantics/
+  - JSON-LD: https://electronicartefacts.com/id/publication/motion-design-time-and-interface-semantics/index.jsonld
+  - Modified: 2026-06-24
+  - Keywords: Motion Design, Time and Interface Semantics, Motion Design, Web Animations, Interface Design, Accessibility, Design, Human Computer Interaction, Web Development
+- [Multimodal AI Across Text, Image, Audio and Video](https://electronicartefacts.com/publications/multimodal-ai-across-text-image-audio-and-video/): Learn how multimodal AI connects text, images, audio and video, and how to evaluate cross-modal systems for creative and cultural use.
+  - Entity ID: ea:publication:multimodal-ai-across-text-image-audio-and-video
+  - Identifier: https://electronicartefacts.com/id/publication/multimodal-ai-across-text-image-audio-and-video/
+  - JSON-LD: https://electronicartefacts.com/id/publication/multimodal-ai-across-text-image-audio-and-video/index.jsonld
+  - Modified: 2026-06-24
+  - Keywords: Multimodal AI Across Text, Image, Audio and Video, Multimodal AI, Vision Language, Audio AI, Video AI, Cross-Modal Retrieval, Artificial Intelligence, Machine Learning
+- [Observability for AI Agents and Tool-Calling Systems](https://electronicartefacts.com/publications/observability-for-ai-agents-and-tool-calling-systems/): Understand observability for AI agents and tool-calling systems through traces, metrics, logs, audit events and OpenTelemetry.
+  - Entity ID: ea:publication:observability-for-ai-agents-and-tool-calling-systems
+  - Identifier: https://electronicartefacts.com/id/publication/observability-for-ai-agents-and-tool-calling-systems/
+  - JSON-LD: https://electronicartefacts.com/id/publication/observability-for-ai-agents-and-tool-calling-systems/index.jsonld
+  - Modified: 2026-06-24
+  - Keywords: Observability for AI Agents and Tool-Calling Systems, Observability, AI Agents, Tool Calling, OpenTelemetry, Tracing, Artificial Intelligence, Software Architecture
+- [Ontologies, Taxonomies and Knowledge Modeling](https://electronicartefacts.com/publications/ontologies-taxonomies-and-knowledge-modeling/): Understand the differences between taxonomies and ontologies and learn how to design a durable knowledge model without overengineering.
+  - Entity ID: ea:publication:ontologies-taxonomies-and-knowledge-modeling
+  - Identifier: https://electronicartefacts.com/id/publication/ontologies-taxonomies-and-knowledge-modeling/
+  - JSON-LD: https://electronicartefacts.com/id/publication/ontologies-taxonomies-and-knowledge-modeling/index.jsonld
+  - Modified: 2026-06-24
+  - Keywords: Ontologies, Taxonomies and Knowledge Modeling, Ontology, Taxonomy, SKOS, OWL, Knowledge Modeling, Knowledge Systems, Information Architecture
+- [Open Source as Cultural Infrastructure](https://electronicartefacts.com/publications/open-source-as-cultural-infrastructure/): A technical article on open source software, maintainership, creative coding, infrastructure and Electronic Artefacts knowledge culture.
+  - Entity ID: ea:publication:open-source-as-cultural-infrastructure
+  - Identifier: https://electronicartefacts.com/id/publication/open-source-as-cultural-infrastructure/
+  - JSON-LD: https://electronicartefacts.com/id/publication/open-source-as-cultural-infrastructure/index.jsonld
+  - Modified: 2026-06-24
+  - Keywords: Open Source as Cultural Infrastructure, Open Source, Creative Coding, Infrastructure, Maintainers, Programming, Internet Culture
+- [Personal Knowledge Systems and Digital Gardens](https://electronicartefacts.com/publications/personal-knowledge-systems-and-digital-gardens/): A technical article on personal knowledge systems, digital gardens, backlinks, research memory and public knowledge hubs.
+  - Entity ID: ea:publication:personal-knowledge-systems-and-digital-gardens
+  - Identifier: https://electronicartefacts.com/id/publication/personal-knowledge-systems-and-digital-gardens/
+  - JSON-LD: https://electronicartefacts.com/id/publication/personal-knowledge-systems-and-digital-gardens/index.jsonld
+  - Modified: 2026-06-24
+  - Keywords: Personal Knowledge Systems and Digital Gardens, Personal Knowledge Management, Digital Gardens, Backlinks, Research Methods, Knowledge Systems, Internet Culture, Archives
+- [Procedural Graphics, Shaders and Visual Systems](https://electronicartefacts.com/publications/procedural-graphics-shaders-and-visual-systems/): A technical article on procedural graphics, shaders, WebGL, creative coding and generative visual systems.
+  - Entity ID: ea:publication:procedural-graphics-shaders-and-visual-systems
+  - Identifier: https://electronicartefacts.com/id/publication/procedural-graphics-shaders-and-visual-systems/
+  - JSON-LD: https://electronicartefacts.com/id/publication/procedural-graphics-shaders-and-visual-systems/index.jsonld
+  - Modified: 2026-06-24
+  - Keywords: Procedural Graphics, Shaders and Visual Systems, Procedural Graphics, Shaders, WebGL, Generative Art, Creative Coding, Digital Art, Visual Culture
+- [Redis Streams for Orchestration](https://electronicartefacts.com/publications/redis-streams-for-orchestration/): Learn how Redis Streams works and how to use consumer groups, pending entries and idempotent workers for reliable orchestration.
+  - Entity ID: ea:publication:redis-streams-for-orchestration
+  - Identifier: https://electronicartefacts.com/id/publication/redis-streams-for-orchestration/
+  - JSON-LD: https://electronicartefacts.com/id/publication/redis-streams-for-orchestration/index.jsonld
+  - Modified: 2026-06-24
+  - Keywords: Redis Streams for Orchestration, Redis Streams, Orchestration, Consumer Groups, Event Processing, Idempotency, Software Architecture, Distributed Systems
+- [Retrieval-Augmented Generation and Knowledge Systems](https://electronicartefacts.com/publications/retrieval-augmented-generation-and-knowledge-systems/): Learn how retrieval-augmented generation works and how to build source-grounded RAG systems with metadata, knowledge graphs and evaluation.
+  - Entity ID: ea:publication:retrieval-augmented-generation-and-knowledge-systems
+  - Identifier: https://electronicartefacts.com/id/publication/retrieval-augmented-generation-and-knowledge-systems/
+  - JSON-LD: https://electronicartefacts.com/id/publication/retrieval-augmented-generation-and-knowledge-systems/index.jsonld
+  - Modified: 2026-06-24
+  - Keywords: Retrieval-Augmented Generation and Knowledge Systems, RAG, Knowledge Graph, Vector Search, Embeddings, Citations, Artificial Intelligence, Knowledge Systems
+- [Runtime Engines and Domain Operating Systems](https://electronicartefacts.com/publications/runtime-engines-and-domain-operating-systems/): Understand runtime engines and domain operating systems, and how shared entities, permissions and events can support many applications.
+  - Entity ID: ea:publication:runtime-engines-and-domain-operating-systems
+  - Identifier: https://electronicartefacts.com/id/publication/runtime-engines-and-domain-operating-systems/
+  - JSON-LD: https://electronicartefacts.com/id/publication/runtime-engines-and-domain-operating-systems/index.jsonld
+  - Modified: 2026-06-24
+  - Keywords: Runtime Engines and Domain Operating Systems, Runtime Engine, Domain OS, Business OS, VASTE, Composable Systems, Systems Design, Software Architecture
+- [Signal Archaeology, Audio Memory and Machine Listening](https://electronicartefacts.com/publications/signal-archaeology-audio-memory-and-machine-listening/): A technical article on signal archaeology, audio memory, machine listening, ORETH and Palimpsests.
+  - Entity ID: ea:publication:signal-archaeology-audio-memory-and-machine-listening
+  - Identifier: https://electronicartefacts.com/id/publication/signal-archaeology-audio-memory-and-machine-listening/
+  - JSON-LD: https://electronicartefacts.com/id/publication/signal-archaeology-audio-memory-and-machine-listening/index.jsonld
+  - Modified: 2026-06-23
+  - Keywords: Signal Archaeology, Audio Memory and Machine Listening, Signal Archaeology, Audio, Machine Listening, ORETH, Palimpsests, Audio Engineering, Sound Design
+- [Systems Thinking for Creative Practice](https://electronicartefacts.com/publications/systems-thinking-for-creative-practice/): Learn systems thinking through creative practice, software, studios and cultural projects, with practical mapping and intervention methods.
+  - Entity ID: ea:publication:systems-thinking-for-creative-practice
+  - Identifier: https://electronicartefacts.com/id/publication/systems-thinking-for-creative-practice/
+  - JSON-LD: https://electronicartefacts.com/id/publication/systems-thinking-for-creative-practice/index.jsonld
+  - Modified: 2026-06-24
+  - Keywords: Systems Thinking for Creative Practice, Systems Thinking, Creative Practice, Feedback, Complexity, Leverage Points, Systems Design, Cybernetics
+- [Typography, Reading Systems and Digital Interfaces](https://electronicartefacts.com/publications/typography-reading-systems-and-digital-interfaces/): A technical article on typography, reading systems, web interfaces, accessibility and Electronic Artefacts editorial design.
+  - Entity ID: ea:publication:typography-reading-systems-and-digital-interfaces
+  - Identifier: https://electronicartefacts.com/id/publication/typography-reading-systems-and-digital-interfaces/
+  - JSON-LD: https://electronicartefacts.com/id/publication/typography-reading-systems-and-digital-interfaces/index.jsonld
+  - Modified: 2026-06-24
+  - Keywords: Typography, Reading Systems and Digital Interfaces, Typography, Reading Systems, Interface Design, Accessibility, Design, Web Development, Human Computer Interaction
+- [Web Audio and Browser-Based Sound Systems](https://electronicartefacts.com/publications/web-audio-and-browser-based-sound-systems/): A technical article on Web Audio, audio graphs, browser sound, ORETH, machine listening and interactive media.
+  - Entity ID: ea:publication:web-audio-and-browser-based-sound-systems
+  - Identifier: https://electronicartefacts.com/id/publication/web-audio-and-browser-based-sound-systems/
+  - JSON-LD: https://electronicartefacts.com/id/publication/web-audio-and-browser-based-sound-systems/index.jsonld
+  - Modified: 2026-06-24
+  - Keywords: Web Audio and Browser-Based Sound Systems, Web Audio, Audio Graph, Browser Sound, ORETH, Audio Engineering, Web Development, Creative Coding
+- [WebNN and Local AI in the Browser](https://electronicartefacts.com/publications/webnn-and-local-ai-in-the-browser/): Understand WebNN as a browser API for hardware-accelerated neural-network inference and local AI interaction design.
+  - Entity ID: ea:publication:webnn-and-local-ai-in-the-browser
+  - Identifier: https://electronicartefacts.com/id/publication/webnn-and-local-ai-in-the-browser/
+  - JSON-LD: https://electronicartefacts.com/id/publication/webnn-and-local-ai-in-the-browser/index.jsonld
+  - Modified: 2026-06-24
+  - Keywords: WebNN and Local AI in the Browser, WebNN, Browser AI, Local Inference, Web Machine Learning, HCI, Artificial Intelligence, Web Development
+- [Why Graphs Are More Powerful Than Folders](https://electronicartefacts.com/publications/why-graphs-are-more-powerful-than-folders/): Learn when graph models outperform folder hierarchies, why relationships matter, and how to keep folders as useful projections over connected data.
+  - Entity ID: ea:publication:why-graphs-are-more-powerful-than-folders
+  - Identifier: https://electronicartefacts.com/id/publication/why-graphs-are-more-powerful-than-folders/
+  - JSON-LD: https://electronicartefacts.com/id/publication/why-graphs-are-more-powerful-than-folders/index.jsonld
+  - Modified: 2026-06-24
+  - Keywords: Why Graphs Are More Powerful Than Folders, Graph Modeling, Folders, Knowledge Graph, Information Architecture, VASTE, Knowledge Systems, Systems Design
+
+## concept
+
+- [AI Agent](https://electronicartefacts.com/knowledge/concepts/ai-agent/): An AI agent is a software system in which a model can select actions, use tools, observe results and adapt its next steps toward an objective within defined boundaries.
+  - Entity ID: ea:concept:ai-agent
+  - Identifier: https://electronicartefacts.com/id/concept/ai-agent/
+  - JSON-LD: https://electronicartefacts.com/id/concept/ai-agent/index.jsonld
+  - Modified: 2026-06-24
+  - Keywords: AI Agent, AI Agents, Tool Use, Automation, Orchestration, Human Oversight, Artificial Intelligence, Systems Design
+- [Algorithmic Composition](https://electronicartefacts.com/knowledge/concepts/algorithmic-composition/): Algorithmic composition is the use of rules, procedures, probability, computation or formal systems to generate or organize musical material.
+  - Entity ID: ea:concept:algorithmic-composition
+  - Identifier: https://electronicartefacts.com/id/concept/algorithmic-composition/
+  - JSON-LD: https://electronicartefacts.com/id/concept/algorithmic-composition/index.jsonld
+  - Modified: 2026-06-24
+  - Keywords: Algorithmic Composition, Electronic Music, Generative Systems, Music Theory, Music Production, Creative Coding, Cybernetics
+- [Augmented Intelligence](https://electronicartefacts.com/knowledge/concepts/augmented-intelligence/): Augmented intelligence is the design of tools, interfaces and systems that expand human perception, reasoning, memory and creative capability.
+  - Entity ID: ea:concept:augmented-intelligence
+  - Identifier: https://electronicartefacts.com/id/concept/augmented-intelligence/
+  - JSON-LD: https://electronicartefacts.com/id/concept/augmented-intelligence/index.jsonld
+  - Modified: 2026-06-24
+  - Keywords: Augmented Intelligence, HCI, AI, Creative Tools, Human Computer Interaction, Artificial Intelligence, Knowledge Systems, Systems Design
+- [Autonomous System](https://electronicartefacts.com/knowledge/concepts/autonomous-system/): An autonomous system can perceive relevant state, select actions and adapt behavior toward objectives with limited direct human control during operation.
+  - Entity ID: ea:concept:autonomous-system
+  - Identifier: https://electronicartefacts.com/id/concept/autonomous-system/
+  - JSON-LD: https://electronicartefacts.com/id/concept/autonomous-system/index.jsonld
+  - Modified: 2026-06-24
+  - Keywords: Autonomous System, Autonomous Systems, AI Agents, Feedback, Governance, Human Oversight, Artificial Intelligence, Robotics
+- [Contextual Execution](https://electronicartefacts.com/knowledge/concepts/contextual-execution/): Contextual execution is the practice of making identity, state, permissions, relationships and operating context active constraints on what a system can do.
+  - Entity ID: ea:concept:contextual-execution
+  - Identifier: https://electronicartefacts.com/id/concept/contextual-execution/
+  - JSON-LD: https://electronicartefacts.com/id/concept/contextual-execution/index.jsonld
+  - Modified: 2026-06-23
+  - Keywords: Contextual Execution, Context, Execution, Runtime, Identity, Permissions, Systems Design, Programming
+- [Creative Coding](https://electronicartefacts.com/knowledge/concepts/creative-coding/): Creative coding is the use of programming as an artistic, design or exploratory medium rather than only as an engineering implementation tool.
+  - Entity ID: ea:concept:creative-coding
+  - Identifier: https://electronicartefacts.com/id/concept/creative-coding/
+  - JSON-LD: https://electronicartefacts.com/id/concept/creative-coding/index.jsonld
+  - Modified: 2026-06-23
+  - Keywords: Creative Coding, Digital Art, Programming, Generative Art, Interaction, Motion Design, Sound Design
+- [Cybernetic Feedback](https://electronicartefacts.com/knowledge/concepts/cybernetic-feedback/): Cybernetic feedback is the circulation of information about a system's state back into the system so that behavior can be regulated, adapted or transformed.
+  - Entity ID: ea:concept:cybernetic-feedback
+  - Identifier: https://electronicartefacts.com/id/concept/cybernetic-feedback/
+  - JSON-LD: https://electronicartefacts.com/id/concept/cybernetic-feedback/index.jsonld
+  - Modified: 2026-06-23
+  - Keywords: Cybernetic Feedback, Cybernetics, Feedback, Systems Theory, Control, Generative Systems, Complexity, Systems Design
+- [Digital Preservation](https://electronicartefacts.com/knowledge/concepts/digital-preservation/): Digital preservation is the long-term work of keeping digital objects understandable, authentic, usable and accessible despite changes in formats, software, hardware and context.
+  - Entity ID: ea:concept:digital-preservation
+  - Identifier: https://electronicartefacts.com/id/concept/digital-preservation/
+  - JSON-LD: https://electronicartefacts.com/id/concept/digital-preservation/index.jsonld
+  - Modified: 2026-06-23
+  - Keywords: Digital Preservation, Archive, File Formats, Provenance, Memory, Archives, History of Technology, Knowledge Systems
+- [Domain Operating System](https://electronicartefacts.com/knowledge/concepts/domain-operating-system/): A domain operating system is a shared runtime and information layer that coordinates identities, entities, permissions, workflows, events and interfaces for a specific field of activity.
+  - Entity ID: ea:concept:domain-operating-system
+  - Identifier: https://electronicartefacts.com/id/concept/domain-operating-system/
+  - JSON-LD: https://electronicartefacts.com/id/concept/domain-operating-system/index.jsonld
+  - Modified: 2026-06-24
+  - Keywords: Domain Operating System, Domain OS, Business OS, Runtime Engine, Platform Architecture, Composability, Systems Design, Software Architecture
+- [Entity Identity](https://electronicartefacts.com/knowledge/concepts/entity-identity/): Entity identity is the durable naming of a person, concept, project, program, publication or artefact so that references remain stable as descriptions evolve.
+  - Entity ID: ea:concept:entity-identity
+  - Identifier: https://electronicartefacts.com/id/concept/entity-identity/
+  - JSON-LD: https://electronicartefacts.com/id/concept/entity-identity/index.jsonld
+  - Modified: 2026-06-23
+  - Keywords: Entity Identity, Identity, URI, Canonical URL, Versioning, Knowledge Graph, Knowledge Systems, Web Development
+- [Event-Driven Architecture](https://electronicartefacts.com/knowledge/concepts/event-driven-architecture/): Event-driven architecture is a system design approach in which components publish, transport and react to records of state change rather than depending only on direct synchronous calls.
+  - Entity ID: ea:concept:event-driven-architecture
+  - Identifier: https://electronicartefacts.com/id/concept/event-driven-architecture/
+  - JSON-LD: https://electronicartefacts.com/id/concept/event-driven-architecture/index.jsonld
+  - Modified: 2026-06-24
+  - Keywords: Event-Driven Architecture, Event Streams, Messaging, Idempotency, Projections, Software Architecture, Systems Design, Programming
+- [Generative AI](https://electronicartefacts.com/knowledge/concepts/generative-ai/): Generative AI refers to machine-learning systems that produce or transform media such as text, image, audio, video, code or structured data from learned patterns.
+  - Entity ID: ea:concept:generative-ai
+  - Identifier: https://electronicartefacts.com/id/concept/generative-ai/
+  - JSON-LD: https://electronicartefacts.com/id/concept/generative-ai/index.jsonld
+  - Modified: 2026-06-24
+  - Keywords: Generative AI, Machine Learning, Provenance, Creative Workflows, Artificial Intelligence, Creative Coding, Digital Art
+- [Generative System](https://electronicartefacts.com/knowledge/concepts/generative-system/): A generative system is a rule-based, procedural or computational arrangement that produces variable outputs from defined constraints, materials and processes.
+  - Entity ID: ea:concept:generative-system
+  - Identifier: https://electronicartefacts.com/id/concept/generative-system/
+  - JSON-LD: https://electronicartefacts.com/id/concept/generative-system/index.jsonld
+  - Modified: 2026-06-23
+  - Keywords: Generative System, Generative Art, Creative Coding, Algorithmic Composition, Systems, Simulation, Digital Art, Design
+- [Graph Modeling](https://electronicartefacts.com/knowledge/concepts/graph-modeling/): Graph modeling represents a domain through addressable nodes, typed relationships and properties chosen to answer specific questions and support specific operations.
+  - Entity ID: ea:concept:graph-modeling
+  - Identifier: https://electronicartefacts.com/id/concept/graph-modeling/
+  - JSON-LD: https://electronicartefacts.com/id/concept/graph-modeling/index.jsonld
+  - Modified: 2026-06-24
+  - Keywords: Graph Modeling, Nodes, Relations, Domain Modeling, Knowledge Graph, Knowledge Systems, Systems Design, Information Architecture
+- [Graph Runtime](https://electronicartefacts.com/knowledge/concepts/graph-runtime/): A graph runtime is an execution environment in which addressable entities and typed relationships participate directly in contextual computation.
+  - Entity ID: ea:concept:graph-runtime
+  - Identifier: https://electronicartefacts.com/id/concept/graph-runtime/
+  - JSON-LD: https://electronicartefacts.com/id/concept/graph-runtime/index.jsonld
+  - Modified: 2026-06-22
+  - Keywords: Graph Runtime, Graph, Runtime, Context, Identity, Execution, Software architecture, Knowledge systems
+- [Human Computer Interaction](https://electronicartefacts.com/knowledge/concepts/human-computer-interaction/): Human computer interaction is the study and design of relationships between people, computational systems, interfaces, tasks, environments and cultures of use.
+  - Entity ID: ea:concept:human-computer-interaction
+  - Identifier: https://electronicartefacts.com/id/concept/human-computer-interaction/
+  - JSON-LD: https://electronicartefacts.com/id/concept/human-computer-interaction/index.jsonld
+  - Modified: 2026-06-24
+  - Keywords: Human Computer Interaction, HCI, Interface Design, Accessibility, Creative Tools, Design, Web Development, Artificial Intelligence
+- [Hypertext](https://electronicartefacts.com/knowledge/concepts/hypertext/): Hypertext is a system of non-linear text and media connected by links, allowing readers and machines to traverse knowledge through associations.
+  - Entity ID: ea:concept:hypertext
+  - Identifier: https://electronicartefacts.com/id/concept/hypertext/
+  - JSON-LD: https://electronicartefacts.com/id/concept/hypertext/index.jsonld
+  - Modified: 2026-06-24
+  - Keywords: Hypertext, Web, Knowledge Systems, Digital Archives, Internet Culture, Web Development, History of Technology
+- [Internet Culture](https://electronicartefacts.com/knowledge/concepts/internet-culture/): Internet culture is the set of social forms, aesthetics, protocols, communities, memes, archives and practices that emerge through networked communication.
+  - Entity ID: ea:concept:internet-culture
+  - Identifier: https://electronicartefacts.com/id/concept/internet-culture/
+  - JSON-LD: https://electronicartefacts.com/id/concept/internet-culture/index.jsonld
+  - Modified: 2026-06-24
+  - Keywords: Internet Culture, Network Culture, Memes, Archives, History of Technology
+- [Knowledge Graph](https://electronicartefacts.com/knowledge/concepts/knowledge-graph/): A knowledge graph is a structured network of entities, identifiers and typed relationships that makes knowledge navigable, queryable and reusable across contexts.
+  - Entity ID: ea:concept:knowledge-graph
+  - Identifier: https://electronicartefacts.com/id/concept/knowledge-graph/
+  - JSON-LD: https://electronicartefacts.com/id/concept/knowledge-graph/index.jsonld
+  - Modified: 2026-06-23
+  - Keywords: Knowledge Graph, Semantic Web, Entities, Relations, Search, Knowledge Systems, Information Architecture, Web Development
+- [Large Language Model](https://electronicartefacts.com/knowledge/concepts/large-language-model/): A large language model is a parameterized machine-learning model trained to predict and generate sequences of tokens from statistical patterns learned across large text or multimodal corpora.
+  - Entity ID: ea:concept:large-language-model
+  - Identifier: https://electronicartefacts.com/id/concept/large-language-model/
+  - JSON-LD: https://electronicartefacts.com/id/concept/large-language-model/index.jsonld
+  - Modified: 2026-06-24
+  - Keywords: Large Language Model, LLM, Transformer, Tokens, Inference, Language Models, Artificial Intelligence, Machine Learning
+- [Linked Data](https://electronicartefacts.com/knowledge/concepts/linked-data/): Linked Data is a web publishing approach that identifies things with stable URIs and connects them through machine-readable statements.
+  - Entity ID: ea:concept:linked-data
+  - Identifier: https://electronicartefacts.com/id/concept/linked-data/
+  - JSON-LD: https://electronicartefacts.com/id/concept/linked-data/index.jsonld
+  - Modified: 2026-06-23
+  - Keywords: Linked Data, Semantic Web, JSON-LD, RDF, URI, Knowledge Systems, Web Development, SEO
+- [Metadata](https://electronicartefacts.com/knowledge/concepts/metadata/): Metadata is structured information about a resource, such as title, creator, date, format, source, rights, subject, relation and preservation context.
+  - Entity ID: ea:concept:metadata
+  - Identifier: https://electronicartefacts.com/id/concept/metadata/
+  - JSON-LD: https://electronicartefacts.com/id/concept/metadata/index.jsonld
+  - Modified: 2026-06-24
+  - Keywords: Metadata, Archives, Cataloguing, Preservation, Knowledge Systems, Research Methods, Digital Preservation
+- [Microservice Architecture](https://electronicartefacts.com/knowledge/concepts/microservice-architecture/): Microservice architecture structures a software system as independently deployable services aligned with bounded capabilities and communicating through explicit contracts.
+  - Entity ID: ea:concept:microservice-architecture
+  - Identifier: https://electronicartefacts.com/id/concept/microservice-architecture/
+  - JSON-LD: https://electronicartefacts.com/id/concept/microservice-architecture/index.jsonld
+  - Modified: 2026-06-24
+  - Keywords: Microservice Architecture, Microservices, Modular Monolith, Service Boundaries, Distributed Systems, Software Architecture, Systems Design, Programming
+- [Motion Design](https://electronicartefacts.com/knowledge/concepts/motion-design/): Motion design is the use of time, movement, transition, rhythm and sequencing to structure visual communication and interface behavior.
+  - Entity ID: ea:concept:motion-design
+  - Identifier: https://electronicartefacts.com/id/concept/motion-design/
+  - JSON-LD: https://electronicartefacts.com/id/concept/motion-design/index.jsonld
+  - Modified: 2026-06-24
+  - Keywords: Motion Design, Animation, Interface, Visual Culture, Design, Human Computer Interaction, Web Development
+- [Multimodal AI](https://electronicartefacts.com/knowledge/concepts/multimodal-ai/): Multimodal AI describes systems that learn from, align, transform or generate more than one modality such as text, image, audio, video, sensor data or structured records.
+  - Entity ID: ea:concept:multimodal-ai
+  - Identifier: https://electronicartefacts.com/id/concept/multimodal-ai/
+  - JSON-LD: https://electronicartefacts.com/id/concept/multimodal-ai/index.jsonld
+  - Modified: 2026-06-24
+  - Keywords: Multimodal AI, Vision Language, Audio, Video, Cross-Modal Retrieval, Artificial Intelligence, Machine Learning, Digital Art
+- [Ontology](https://electronicartefacts.com/knowledge/concepts/ontology/): In knowledge engineering, an ontology is an explicit specification of the kinds of entities, properties, relationships and constraints used to represent a domain.
+  - Entity ID: ea:concept:ontology
+  - Identifier: https://electronicartefacts.com/id/concept/ontology/
+  - JSON-LD: https://electronicartefacts.com/id/concept/ontology/index.jsonld
+  - Modified: 2026-06-24
+  - Keywords: Ontology, Taxonomy, SKOS, OWL, Controlled Vocabulary, Knowledge Systems, Information Architecture, Philosophy
+- [Open Source](https://electronicartefacts.com/knowledge/concepts/open-source/): Open source is a software and cultural practice in which source code is made available under licenses that allow use, study, modification and redistribution.
+  - Entity ID: ea:concept:open-source
+  - Identifier: https://electronicartefacts.com/id/concept/open-source/
+  - JSON-LD: https://electronicartefacts.com/id/concept/open-source/index.jsonld
+  - Modified: 2026-06-24
+  - Keywords: Open Source, Software, Commons, Infrastructure, Programming, Creative Coding, Creative Business
+- [Open-Weight Model](https://electronicartefacts.com/knowledge/concepts/open-weight-model/): An open-weight model is a machine-learning model whose learned parameters are distributed for reuse under stated terms, without necessarily providing the training data, training code or freedoms required by open-source definitions.
+  - Entity ID: ea:concept:open-weight-model
+  - Identifier: https://electronicartefacts.com/id/concept/open-weight-model/
+  - JSON-LD: https://electronicartefacts.com/id/concept/open-weight-model/index.jsonld
+  - Modified: 2026-06-24
+  - Keywords: Open-Weight Model, Open Weights, Local AI, Model Licensing, Quantization, Artificial Intelligence, Open Source, Programming
+- [Personal Knowledge System](https://electronicartefacts.com/knowledge/concepts/personal-knowledge-system/): A personal knowledge system is a practice and tool environment for capturing, linking, revising and retrieving notes, sources, ideas and decisions over time.
+  - Entity ID: ea:concept:personal-knowledge-system
+  - Identifier: https://electronicartefacts.com/id/concept/personal-knowledge-system/
+  - JSON-LD: https://electronicartefacts.com/id/concept/personal-knowledge-system/index.jsonld
+  - Modified: 2026-06-24
+  - Keywords: Personal Knowledge System, Personal Knowledge Management, Digital Gardens, Notes, Research, Knowledge Systems, Research Methods, Internet Culture
+- [Procedural Graphics](https://electronicartefacts.com/knowledge/concepts/procedural-graphics/): Procedural graphics are images or visual systems generated from rules, algorithms, parameters, simulation or code rather than only manually drawn assets.
+  - Entity ID: ea:concept:procedural-graphics
+  - Identifier: https://electronicartefacts.com/id/concept/procedural-graphics/
+  - JSON-LD: https://electronicartefacts.com/id/concept/procedural-graphics/index.jsonld
+  - Modified: 2026-06-24
+  - Keywords: Procedural Graphics, Shaders, WebGL, Generative Art, Creative Coding, Visual Culture, Digital Art, Motion Design
+- [Provenance](https://electronicartefacts.com/knowledge/concepts/provenance/): Provenance is information about the people, activities, sources, transformations and decisions involved in producing a thing or piece of data.
+  - Entity ID: ea:concept:provenance
+  - Identifier: https://electronicartefacts.com/id/concept/provenance/
+  - JSON-LD: https://electronicartefacts.com/id/concept/provenance/index.jsonld
+  - Modified: 2026-06-23
+  - Keywords: Provenance, Sources, Evidence, Trust, Archive, Archives, Research Methods, Knowledge Systems
+- [Retrieval-Augmented Generation](https://electronicartefacts.com/knowledge/concepts/retrieval-augmented-generation/): Retrieval-augmented generation is an architecture that retrieves external information at query time and supplies selected evidence to a generative model before or during response production.
+  - Entity ID: ea:concept:retrieval-augmented-generation
+  - Identifier: https://electronicartefacts.com/id/concept/retrieval-augmented-generation/
+  - JSON-LD: https://electronicartefacts.com/id/concept/retrieval-augmented-generation/index.jsonld
+  - Modified: 2026-06-24
+  - Keywords: Retrieval-Augmented Generation, RAG, Retrieval, Embeddings, Vector Search, Grounding, Artificial Intelligence, Knowledge Systems
+- [Signal Archaeology](https://electronicartefacts.com/knowledge/concepts/signal-archaeology/): Signal archaeology is the interpretation of technical, sonic, visual or archival traces as evidence of hidden processes, transformations and histories.
+  - Entity ID: ea:concept:signal-archaeology
+  - Identifier: https://electronicartefacts.com/id/concept/signal-archaeology/
+  - JSON-LD: https://electronicartefacts.com/id/concept/signal-archaeology/index.jsonld
+  - Modified: 2026-06-23
+  - Keywords: Signal Archaeology, Audio, Archive, Memory, Machine Listening, Audio Engineering, Digital Art, Archives
+- [Systems Thinking](https://electronicartefacts.com/knowledge/concepts/systems-thinking/): Systems thinking is an approach that studies elements through their relationships, feedback, boundaries, delays, stocks, flows and patterns of behavior over time.
+  - Entity ID: ea:concept:systems-thinking
+  - Identifier: https://electronicartefacts.com/id/concept/systems-thinking/
+  - JSON-LD: https://electronicartefacts.com/id/concept/systems-thinking/index.jsonld
+  - Modified: 2026-06-24
+  - Keywords: Systems Thinking, Feedback, Boundaries, Leverage Points, Complexity, Systems Design, Cybernetics, Design
+- [Typography](https://electronicartefacts.com/knowledge/concepts/typography/): Typography is the design and arrangement of written language through typefaces, spacing, hierarchy, rhythm, scale and reading conditions.
+  - Entity ID: ea:concept:typography
+  - Identifier: https://electronicartefacts.com/id/concept/typography/
+  - JSON-LD: https://electronicartefacts.com/id/concept/typography/index.jsonld
+  - Modified: 2026-06-24
+  - Keywords: Typography, Reading, Interface Design, Accessibility, Design, Visual Culture, Web Development
+- [Web Audio](https://electronicartefacts.com/knowledge/concepts/web-audio/): Web audio is the use of browser-based audio APIs and related web technologies to synthesize, process, analyze, route and present sound.
+  - Entity ID: ea:concept:web-audio
+  - Identifier: https://electronicartefacts.com/id/concept/web-audio/
+  - JSON-LD: https://electronicartefacts.com/id/concept/web-audio/index.jsonld
+  - Modified: 2026-06-24
+  - Keywords: Web Audio, Browser, Sound Design, Creative Coding, Audio Engineering, Web Development
+
+## technology
+
+- [ActivityPub](https://electronicartefacts.com/knowledge/technologies/activitypub/): A technology record for federated network culture and social web infrastructure.
+  - Entity ID: ea:technology:activitypub
+  - Identifier: https://electronicartefacts.com/id/technology/activitypub/
+  - JSON-LD: https://electronicartefacts.com/id/technology/activitypub/index.jsonld
+  - Modified: 2026-06-24
+  - Keywords: ActivityPub, Federation, Social Web, Internet Culture, Network Culture, Web Development
+- [C2PA](https://electronicartefacts.com/knowledge/technologies/c2pa/): A technology record for C2PA and Content Credentials as provenance infrastructure for digital media.
+  - Entity ID: ea:technology:c2pa
+  - Identifier: https://electronicartefacts.com/id/technology/c2pa/
+  - JSON-LD: https://electronicartefacts.com/id/technology/c2pa/index.jsonld
+  - Modified: 2026-06-24
+  - Keywords: C2PA, Content Credentials, Coalition for Content Provenance and Authenticity, Provenance, Media Authenticity, Digital Preservation, Knowledge Systems, Artificial Intelligence
+- [CloudEvents](https://electronicartefacts.com/knowledge/technologies/cloudevents/): A technology record for interoperable event metadata across services and platforms.
+  - Entity ID: ea:technology:cloudevents
+  - Identifier: https://electronicartefacts.com/id/technology/cloudevents/
+  - JSON-LD: https://electronicartefacts.com/id/technology/cloudevents/index.jsonld
+  - Modified: 2026-06-24
+  - Keywords: CloudEvents, Event Schema, Interoperability, Software Architecture, Distributed Systems, Programming
+- [CSS Fonts](https://electronicartefacts.com/knowledge/technologies/css-fonts/): A technology record for browser typography and reading systems.
+  - Entity ID: ea:technology:css-fonts
+  - Identifier: https://electronicartefacts.com/id/technology/css-fonts/
+  - JSON-LD: https://electronicartefacts.com/id/technology/css-fonts/index.jsonld
+  - Modified: 2026-06-24
+  - Keywords: CSS Fonts, Typography, Web, Web Development, Design
+- [IIIF](https://electronicartefacts.com/knowledge/technologies/iiif/): A technology record for IIIF as interoperable presentation infrastructure for compound cultural objects.
+  - Entity ID: ea:technology:iiif
+  - Identifier: https://electronicartefacts.com/id/technology/iiif/
+  - JSON-LD: https://electronicartefacts.com/id/technology/iiif/index.jsonld
+  - Modified: 2026-06-24
+  - Keywords: IIIF, International Image Interoperability Framework, Digital Archives, Cultural Heritage, Presentation API, Digital Preservation, Cultural Infrastructure, Knowledge Systems
+- [JSON-LD](https://electronicartefacts.com/knowledge/technologies/json-ld/): A technology record for JSON-LD as the structured data format used by Electronic Artefacts canonical pages.
+  - Entity ID: ea:technology:json-ld
+  - Identifier: https://electronicartefacts.com/id/technology/json-ld/
+  - JSON-LD: https://electronicartefacts.com/id/technology/json-ld/index.jsonld
+  - Modified: 2026-06-23
+  - Keywords: JSON-LD, Linked Data, Structured Data, SEO, Web Development, Knowledge Systems
+- [llama.cpp](https://electronicartefacts.com/knowledge/technologies/llama-cpp/): A technology record for local model inference, quantization and portable AI deployment.
+  - Entity ID: ea:technology:llama-cpp
+  - Identifier: https://electronicartefacts.com/id/technology/llama-cpp/
+  - JSON-LD: https://electronicartefacts.com/id/technology/llama-cpp/index.jsonld
+  - Modified: 2026-06-24
+  - Keywords: llama.cpp, Local AI, Inference, Quantization, Artificial Intelligence, Programming, Open Source
+- [Model Context Protocol](https://electronicartefacts.com/knowledge/technologies/model-context-protocol/): A technology record for MCP as an integration protocol for tool-using AI applications, resources and contextual workflows.
+  - Entity ID: ea:technology:model-context-protocol
+  - Identifier: https://electronicartefacts.com/id/technology/model-context-protocol/
+  - JSON-LD: https://electronicartefacts.com/id/technology/model-context-protocol/index.jsonld
+  - Modified: 2026-06-24
+  - Keywords: Model Context Protocol, MCP, AI Tools, Context Protocol, JSON-RPC, Artificial Intelligence, Software Architecture, Systems Design
+- [OpenTelemetry](https://electronicartefacts.com/knowledge/technologies/opentelemetry/): A technology record for OpenTelemetry as telemetry infrastructure for distributed systems and AI tool workflows.
+  - Entity ID: ea:technology:opentelemetry
+  - Identifier: https://electronicartefacts.com/id/technology/opentelemetry/
+  - JSON-LD: https://electronicartefacts.com/id/technology/opentelemetry/index.jsonld
+  - Modified: 2026-06-24
+  - Keywords: OpenTelemetry, Observability, Tracing, Metrics, Software Architecture, Systems Design, Artificial Intelligence
+- [OWL](https://electronicartefacts.com/knowledge/technologies/owl/): A technology record for formal ontology publication and reasoning.
+  - Entity ID: ea:technology:owl
+  - Identifier: https://electronicartefacts.com/id/technology/owl/
+  - JSON-LD: https://electronicartefacts.com/id/technology/owl/index.jsonld
+  - Modified: 2026-06-24
+  - Keywords: OWL, Web Ontology Language, Ontology, Semantic Web, Knowledge Systems
+- [RDF](https://electronicartefacts.com/knowledge/technologies/rdf/): A technology record for RDF as a reference model behind knowledge graphs, Linked Data and semantic publication.
+  - Entity ID: ea:technology:rdf
+  - Identifier: https://electronicartefacts.com/id/technology/rdf/
+  - JSON-LD: https://electronicartefacts.com/id/technology/rdf/index.jsonld
+  - Modified: 2026-06-23
+  - Keywords: RDF, Semantic Web, Linked Data, Graph, Web Development, Knowledge Systems
+- [Redis Streams](https://electronicartefacts.com/knowledge/technologies/redis-streams/): A technology record for event streams, orchestration and real-time processing.
+  - Entity ID: ea:technology:redis-streams
+  - Identifier: https://electronicartefacts.com/id/technology/redis-streams/
+  - JSON-LD: https://electronicartefacts.com/id/technology/redis-streams/index.jsonld
+  - Modified: 2026-06-24
+  - Keywords: Redis Streams, Event Log, Consumer Groups, Orchestration, Software Architecture, Programming, Distributed Systems
+- [SKOS](https://electronicartefacts.com/knowledge/technologies/skos/): A technology record for controlled vocabularies and lightweight semantic organization.
+  - Entity ID: ea:technology:skos
+  - Identifier: https://electronicartefacts.com/id/technology/skos/
+  - JSON-LD: https://electronicartefacts.com/id/technology/skos/index.jsonld
+  - Modified: 2026-06-24
+  - Keywords: SKOS, Simple Knowledge Organization System, Taxonomy, Controlled Vocabulary, Knowledge Systems, Information Architecture, Semantic Web
+- [Transformer Architecture](https://electronicartefacts.com/knowledge/technologies/transformer-architecture/): A technology record for the architecture underlying many modern language and multimodal models.
+  - Entity ID: ea:technology:transformer-architecture
+  - Identifier: https://electronicartefacts.com/id/technology/transformer-architecture/
+  - JSON-LD: https://electronicartefacts.com/id/technology/transformer-architecture/index.jsonld
+  - Modified: 2026-06-24
+  - Keywords: Transformer Architecture, Transformer, Attention, Neural Networks, Artificial Intelligence, Machine Learning
+- [Web Animations](https://electronicartefacts.com/knowledge/technologies/web-animations/): A technology record for animation timing, synchronization and interface motion on the web.
+  - Entity ID: ea:technology:web-animations
+  - Identifier: https://electronicartefacts.com/id/technology/web-animations/
+  - JSON-LD: https://electronicartefacts.com/id/technology/web-animations/index.jsonld
+  - Modified: 2026-06-24
+  - Keywords: Web Animations, Motion Design, Interface, Web Development, Human Computer Interaction
+- [Web Audio API](https://electronicartefacts.com/knowledge/technologies/web-audio-api/): A technology record for browser-native audio processing and synthesis.
+  - Entity ID: ea:technology:web-audio-api
+  - Identifier: https://electronicartefacts.com/id/technology/web-audio-api/
+  - JSON-LD: https://electronicartefacts.com/id/technology/web-audio-api/index.jsonld
+  - Modified: 2026-06-24
+  - Keywords: Web Audio API, Browser Audio, Audio Graph, Audio Engineering, Web Development, Creative Coding
+- [WebGL](https://electronicartefacts.com/knowledge/technologies/webgl/): A technology record for browser graphics and shader-based visual systems.
+  - Entity ID: ea:technology:webgl
+  - Identifier: https://electronicartefacts.com/id/technology/webgl/
+  - JSON-LD: https://electronicartefacts.com/id/technology/webgl/index.jsonld
+  - Modified: 2026-06-24
+  - Keywords: WebGL, Shaders, Browser Graphics, Creative Coding, Web Development, Digital Art
+- [WebNN](https://electronicartefacts.com/knowledge/technologies/webnn/): A technology record for browser-based machine-learning inference through the Web Neural Network API.
+  - Entity ID: ea:technology:webnn
+  - Identifier: https://electronicartefacts.com/id/technology/webnn/
+  - JSON-LD: https://electronicartefacts.com/id/technology/webnn/index.jsonld
+  - Modified: 2026-06-24
+  - Keywords: WebNN, Web Neural Network API, Browser AI, Local Inference, Web Machine Learning, Artificial Intelligence, Web Development, Human Computer Interaction
+
+## collection
+
+- [Knowledge Hub Foundations](https://electronicartefacts.com/archive/collections/knowledge-hub-foundations/): A curated collection grouping foundational Knowledge Hub concepts, technologies, programs, projects and publications.
+  - Entity ID: ea:collection:knowledge-hub-foundations
+  - Identifier: https://electronicartefacts.com/id/collection/knowledge-hub-foundations/
+  - JSON-LD: https://electronicartefacts.com/id/collection/knowledge-hub-foundations/index.jsonld
+  - Modified: 2026-06-23
+  - Keywords: Knowledge Hub Foundations, Knowledge Hub, Editorial Collection, Foundations, Research Library, Semantic Publishing, Knowledge Systems, Archives
+- [Knowledge Hub Fourth Wave](https://electronicartefacts.com/archive/collections/knowledge-hub-fourth-wave/): A curated Electronic Artefacts collection about AI tool protocols, media provenance, browser-local inference, archive presentation and agent observability.
+  - Entity ID: ea:collection:knowledge-hub-fourth-wave
+  - Identifier: https://electronicartefacts.com/id/collection/knowledge-hub-fourth-wave/
+  - JSON-LD: https://electronicartefacts.com/id/collection/knowledge-hub-fourth-wave/index.jsonld
+  - Modified: 2026-06-24
+  - Keywords: Knowledge Hub Fourth Wave, Knowledge Hub, Fourth Wave, AI Protocols, Provenance, Cultural Infrastructure, Artificial Intelligence, Knowledge Systems
+- [Knowledge Hub Second Wave](https://electronicartefacts.com/archive/collections/knowledge-hub-second-wave/): A curated collection for the second Knowledge Hub expansion wave.
+  - Entity ID: ea:collection:knowledge-hub-second-wave
+  - Identifier: https://electronicartefacts.com/id/collection/knowledge-hub-second-wave/
+  - JSON-LD: https://electronicartefacts.com/id/collection/knowledge-hub-second-wave/index.jsonld
+  - Modified: 2026-06-24
+  - Keywords: Knowledge Hub Second Wave, Knowledge Hub, Second Wave, Editorial Collection, Research Library, Knowledge Systems, Creative Coding, Web Development
+- [Knowledge Hub Third Wave](https://electronicartefacts.com/archive/collections/knowledge-hub-third-wave/): A curated Electronic Artefacts collection about durable AI and systems architecture.
+  - Entity ID: ea:collection:knowledge-hub-third-wave
+  - Identifier: https://electronicartefacts.com/id/collection/knowledge-hub-third-wave/
+  - JSON-LD: https://electronicartefacts.com/id/collection/knowledge-hub-third-wave/index.jsonld
+  - Modified: 2026-06-24
+  - Keywords: Knowledge Hub Third Wave, Knowledge Hub, Third Wave, Artificial Intelligence, Systems Architecture, Graph Computing, Systems Design, Knowledge Systems

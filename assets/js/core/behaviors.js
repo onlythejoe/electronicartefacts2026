@@ -481,7 +481,7 @@
   const initCardSpotlight = (root = document) => {
     if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
     if (!window.matchMedia("(hover: hover) and (pointer: fine)").matches) return;
-    root.querySelectorAll(".project-card, .program-card, .archive-card, .panel, .cross-nav-card, .stat-card, .signature-banner").forEach((card) => {
+    root.querySelectorAll(".project-card, .program-card, .archive-card, .panel, .cross-nav-card, .stat-card, .signature-banner, .detail-hero").forEach((card) => {
       if (card.dataset.boundSpotlight === "true") return;
       card.dataset.boundSpotlight = "true";
       let rect = null;
@@ -1475,6 +1475,7 @@
   const initIntentHeroes = (root = document) => {
     const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     const coarsePointer = window.matchMedia("(hover: none), (pointer: coarse)").matches;
+    const finePointer = window.matchMedia("(hover: hover) and (pointer: fine)").matches;
     const automaticLayerSelector = [
       ".intent-hero__copy > .eyebrow",
       ".intent-hero__copy > .display-title",
@@ -1482,6 +1483,23 @@
       ".intent-hero__copy > .button-row",
       ".intent-hero__copy > .pill-cloud",
       ".intent-hero__stage-label",
+    ].join(",");
+    const activeLayerSelector = [
+      "[data-depth]",
+      ".intent-hero__copy .button",
+      ".intent-hero__copy .chip",
+      ".intent-hero__copy .tag",
+      ".home-intent-stage__frame",
+      ".home-intent-stage__channels a",
+      ".intent-media-stack a",
+      ".projects-hero__frame",
+      ".archive-stack__sheet",
+      ".research-constellation__node",
+      ".about-orbit__node",
+      ".contact-signal__card",
+      ".knowledge-graph-stage__node",
+      ".intent-hero__stats span",
+      ".computation-field",
     ].join(",");
     const layerDepth = (layer) => {
       const explicit = Number.parseFloat(layer.getAttribute("data-depth") || "");
@@ -1502,48 +1520,134 @@
       stage.dataset.intentHeroBound = "true";
 
       const layers = [...new Set([...scope.querySelectorAll("[data-depth]"), ...scope.querySelectorAll(automaticLayerSelector)])];
-      if (reduceMotion || coarsePointer || !layers.length) return;
+      const activeLayers = [...scope.querySelectorAll(activeLayerSelector)];
+      scope.classList.add("is-intent-ready");
+      layers.forEach((layer) => {
+        layer.style.setProperty("--intent-layer-depth", layerDepth(layer).toFixed(2));
+      });
+
+      if (reduceMotion || coarsePointer || !finePointer || !layers.length) return;
 
       let frame = 0;
       let targetX = 0;
       let targetY = 0;
       let currentX = 0;
       let currentY = 0;
+      let targetSpotlight = 0;
+      let currentSpotlight = 0;
+      let activeLayer = null;
+
+      const schedule = () => {
+        if (!frame) frame = requestAnimationFrame(render);
+      };
+
+      const setActiveLayer = (layer) => {
+        if (activeLayer === layer) return;
+        if (activeLayer) activeLayer.classList.remove("is-intent-layer-active");
+        activeLayer = layer;
+        if (activeLayer) activeLayer.classList.add("is-intent-layer-active");
+        scope.classList.toggle("has-intent-layer-active", Boolean(activeLayer));
+      };
+
+      const clearActiveLayer = () => {
+        setActiveLayer(null);
+      };
+
+      const updateTargetFromPoint = (clientX, clientY) => {
+        const rect = scope.getBoundingClientRect();
+        const x = Math.min(1, Math.max(0, (clientX - rect.left) / Math.max(1, rect.width)));
+        const y = Math.min(1, Math.max(0, (clientY - rect.top) / Math.max(1, rect.height)));
+        targetX = (x - 0.5) * 2;
+        targetY = (y - 0.5) * 2;
+        targetSpotlight = 1;
+        scope.style.setProperty("--intent-pointer-x", `${(x * 100).toFixed(2)}%`);
+        scope.style.setProperty("--intent-pointer-y", `${(y * 100).toFixed(2)}%`);
+        schedule();
+      };
+
+      const updateTargetFromElement = (element) => {
+        if (!element?.getBoundingClientRect) return;
+        const rect = element.getBoundingClientRect();
+        updateTargetFromPoint(rect.left + rect.width * 0.5, rect.top + rect.height * 0.5);
+      };
 
       const render = () => {
-        currentX += (targetX - currentX) * 0.12;
-        currentY += (targetY - currentY) * 0.12;
-        scope.style.setProperty("--intent-glow-x", `${(68 + currentX * 10).toFixed(2)}%`);
-        scope.style.setProperty("--intent-glow-y", `${(34 + currentY * 8).toFixed(2)}%`);
-        scope.style.setProperty("--intent-rotate-x", `${(-currentY * 1.1).toFixed(2)}deg`);
-        scope.style.setProperty("--intent-rotate-y", `${(currentX * 1.4).toFixed(2)}deg`);
+        currentX += (targetX - currentX) * 0.095;
+        currentY += (targetY - currentY) * 0.095;
+        currentSpotlight += (targetSpotlight - currentSpotlight) * 0.14;
+        const intentEnergy = Math.min(1, Math.hypot(currentX, currentY) * 0.34 + currentSpotlight * 0.52);
+        scope.style.setProperty("--intent-energy", intentEnergy.toFixed(3));
+        scope.style.setProperty("--intent-spotlight-opacity", (0.12 + currentSpotlight * 0.58).toFixed(3));
+        scope.style.setProperty("--intent-grid-opacity", (0.54 + intentEnergy * 0.24).toFixed(3));
+        scope.style.setProperty("--intent-glow-x", `${(68 + currentX * 12).toFixed(2)}%`);
+        scope.style.setProperty("--intent-glow-y", `${(34 + currentY * 9).toFixed(2)}%`);
+        scope.style.setProperty("--intent-rotate-x", `${(-currentY * 1.35).toFixed(2)}deg`);
+        scope.style.setProperty("--intent-rotate-y", `${(currentX * 1.75).toFixed(2)}deg`);
         layers.forEach((layer) => {
           const depth = layerDepth(layer);
-          layer.style.setProperty("--intent-shift-x", `${(currentX * depth * 5.8).toFixed(2)}px`);
-          layer.style.setProperty("--intent-shift-y", `${(currentY * depth * 5).toFixed(2)}px`);
+          const isActive = Boolean(activeLayer && (layer === activeLayer || layer.contains(activeLayer)));
+          const activeBoost = isActive ? 1.18 : 1;
+          layer.style.setProperty("--intent-shift-x", `${(currentX * depth * 7.2 * activeBoost).toFixed(2)}px`);
+          layer.style.setProperty("--intent-shift-y", `${(currentY * depth * 6.1 * activeBoost).toFixed(2)}px`);
+          layer.style.setProperty("--intent-shift-z", `${isActive ? Math.min(12, 2.4 + depth * 5.2).toFixed(2) : "0"}px`);
         });
 
-        if (Math.abs(targetX - currentX) > 0.002 || Math.abs(targetY - currentY) > 0.002) {
+        if (
+          Math.abs(targetX - currentX) > 0.0015 ||
+          Math.abs(targetY - currentY) > 0.0015 ||
+          Math.abs(targetSpotlight - currentSpotlight) > 0.01
+        ) {
           frame = requestAnimationFrame(render);
         } else {
           frame = 0;
         }
       };
 
-      const schedule = () => {
-        if (!frame) frame = requestAnimationFrame(render);
-      };
-
-      scope.addEventListener("pointermove", (event) => {
-        const rect = scope.getBoundingClientRect();
-        targetX = ((event.clientX - rect.left) / Math.max(1, rect.width) - 0.5) * 2;
-        targetY = ((event.clientY - rect.top) / Math.max(1, rect.height) - 0.5) * 2;
+      scope.addEventListener("pointerenter", () => {
+        scope.classList.add("is-intent-active");
+        targetSpotlight = 1;
         schedule();
+      });
+      scope.addEventListener("pointermove", (event) => {
+        scope.classList.add("is-intent-active");
+        updateTargetFromPoint(event.clientX, event.clientY);
+        if (!(event.target instanceof Element)) return;
+        const layer = event.target.closest(activeLayerSelector);
+        if (layer && scope.contains(layer)) setActiveLayer(layer);
       });
 
       scope.addEventListener("pointerleave", () => {
+        scope.classList.remove("is-intent-active");
+        clearActiveLayer();
         targetX = 0;
         targetY = 0;
+        targetSpotlight = 0;
+        schedule();
+      });
+
+      activeLayers.forEach((layer) => {
+        layer.addEventListener("pointerenter", () => setActiveLayer(layer));
+        layer.addEventListener("pointerleave", (event) => {
+          if (event.relatedTarget instanceof Node && layer.contains(event.relatedTarget)) return;
+          clearActiveLayer();
+        });
+      });
+
+      scope.addEventListener("focusin", (event) => {
+        if (!(event.target instanceof Element)) return;
+        scope.classList.add("is-intent-active");
+        const layer = event.target.closest(activeLayerSelector);
+        if (layer && scope.contains(layer)) setActiveLayer(layer);
+        updateTargetFromElement(layer || event.target);
+      });
+
+      scope.addEventListener("focusout", (event) => {
+        if (event.relatedTarget instanceof Node && scope.contains(event.relatedTarget)) return;
+        scope.classList.remove("is-intent-active");
+        clearActiveLayer();
+        targetX = 0;
+        targetY = 0;
+        targetSpotlight = 0;
         schedule();
       });
     });

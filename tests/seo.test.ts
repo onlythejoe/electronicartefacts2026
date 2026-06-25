@@ -2,6 +2,7 @@ import assert from "node:assert/strict";
 import test from "node:test";
 import path from "node:path";
 import { loadContent } from "../src/build/load-content.js";
+import { buildAgentManifest, buildLlmsTxt } from "../src/seo/agent-index.js";
 import { metadataFor } from "../src/seo/metadata.js";
 import { buildSitemap } from "../src/seo/sitemaps.js";
 import { jsonLdFor } from "../src/semantic/jsonld.js";
@@ -40,8 +41,12 @@ test("JSON-LD exposes site, publisher and article evidence", async () => {
   assert.ok(publication);
 
   const graph = jsonLdFor(publication)["@graph"] as Array<Record<string, unknown>>;
-  assert.ok(graph.some((node) => node["@type"] === "WebSite"));
-  assert.ok(graph.some((node) => node["@type"] === "Organization"));
+  const website = graph.find((node) => node["@type"] === "WebSite");
+  const organization = graph.find((node) => node["@type"] === "Organization");
+  assert.ok(website);
+  assert.ok(organization);
+  assert.deepEqual((website.potentialAction as Record<string, unknown>)["@type"], "SearchAction");
+  assert.ok(Array.isArray(organization.sameAs));
 
   const primary = graph.find((node) => node["@id"] === "https://electronicartefacts.com/id/publication/knowledge-graphs-for-cultural-infrastructure/");
   assert.ok(primary);
@@ -49,6 +54,11 @@ test("JSON-LD exposes site, publisher and article evidence", async () => {
   assert.ok(Array.isArray(primary.author));
   assert.ok(Array.isArray(primary.about));
   assert.ok(Array.isArray(primary.citation));
+
+  const webpage = graph.find((node) => node["@id"] === "https://electronicartefacts.com/publications/knowledge-graphs-for-cultural-infrastructure/#webpage");
+  assert.ok(webpage);
+  assert.deepEqual(webpage.breadcrumb, { "@id": "https://electronicartefacts.com/publications/knowledge-graphs-for-cultural-infrastructure/#breadcrumb" });
+  assert.ok(graph.some((node) => node["@id"] === "https://electronicartefacts.com/publications/knowledge-graphs-for-cultural-infrastructure/#breadcrumb"));
 });
 
 test("editorial panels expose structured fields on thin reference records", async () => {
@@ -71,6 +81,19 @@ test("sitemap excludes noindex generated search route", async () => {
   const sitemap = buildSitemap(entities);
 
   assert.doesNotMatch(sitemap, /https:\/\/electronicartefacts\.com\/search\//);
+});
+
+test("agent indexes expose canonical retrieval resources", async () => {
+  const entities = await loadContent(path.resolve("."));
+  const llms = buildLlmsTxt(entities);
+  const manifest = buildAgentManifest(entities);
+
+  assert.match(llms, /# Electronic Artefacts/);
+  assert.match(llms, /https:\/\/electronicartefacts\.com\/agent-manifest\.json/);
+  assert.match(llms, /https:\/\/electronicartefacts\.com\/search\/\?q=knowledge%20graph/);
+  assert.equal(manifest.retrievalPolicy.searchEndpoint, "https://electronicartefacts.com/search/?q={search_term_string}");
+  assert.ok(manifest.records.some((record) => record.id === "ea:concept:ai-agent"));
+  assert.ok(manifest.records.every((record) => record.url.startsWith("https://electronicartefacts.com/")));
 });
 
 test("identifier routes expose noindex canonical metadata and JSON-LD fallback", async () => {

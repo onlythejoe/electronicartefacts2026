@@ -15,16 +15,24 @@
         "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-search.jpg",
         "description": "Knowledge Hub Second Wave"
       },
+      "breadcrumb": {
+        "@id": "https://electronicartefacts.com/archive/collections/knowledge-hub-second-wave/#breadcrumb"
+      },
       "mainEntity": {
         "@id": "https://electronicartefacts.com/id/collection/knowledge-hub-second-wave/"
       },
       "isPartOf": {
         "@id": "https://electronicartefacts.com/#website"
-      }
+      },
+      "publisher": {
+        "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
+      },
+      "isAccessibleForFree": true
     },
     {
       "@type": "CreativeWork",
       "@id": "https://electronicartefacts.com/id/collection/knowledge-hub-second-wave/",
+      "identifier": "ea:collection:knowledge-hub-second-wave",
       "name": "Knowledge Hub Second Wave",
       "description": "Knowledge Hub Second Wave groups a larger expansion of Electronic Artefacts knowledge records across hypertext, open source, metadata, creative coding, web audio, motion, typography, HCI, algorithmic music and generative AI.",
       "url": "https://electronicartefacts.com/archive/collections/knowledge-hub-second-wave/",
@@ -75,23 +83,41 @@
       "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/",
       "name": "Electronic Artefacts",
       "url": "https://electronicartefacts.com/",
+      "description": "Electronic Artefacts designs digital products, knowledge systems, cultural platforms and research-led experiences.",
       "logo": {
         "@type": "ImageObject",
         "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-logo.jpg"
-      }
+      },
+      "image": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-search.jpg",
+      "email": "electronic.artefacts@gmail.com",
+      "sameAs": [
+        "https://www.instagram.com/electronic.artefacts/",
+        "https://github.com/onlythejoe",
+        "https://soundcloud.com/electronic-artefacts"
+      ]
     },
     {
       "@type": "WebSite",
       "@id": "https://electronicartefacts.com/#website",
       "url": "https://electronicartefacts.com/",
       "name": "Electronic Artefacts",
+      "description": "Electronic Artefacts designs digital products, knowledge systems, cultural platforms and research-led experiences.",
       "publisher": {
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
-      "inLanguage": "en"
+      "inLanguage": "en",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://electronicartefacts.com/search/?q={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
+      }
     },
     {
       "@type": "BreadcrumbList",
+      "@id": "https://electronicartefacts.com/archive/collections/knowledge-hub-second-wave/#breadcrumb",
       "itemListElement": [
         {
           "@type": "ListItem",

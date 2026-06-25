@@ -1,7 +1,44 @@
 User-agent: *
 Allow: /
 
-# Legacy search route is intentionally kept out of crawled index paths.
+# Legacy noindex route. Use /search/?q= for the generated search endpoint.
 Disallow: /search.html
 
+# OpenAI search and user-requested retrieval.
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+# Claude search and user-requested retrieval.
+User-agent: Claude-SearchBot
+Allow: /
+Crawl-delay: 1
+
+User-agent: Claude-User
+Allow: /
+Crawl-delay: 1
+
+# Perplexity search and user-requested retrieval.
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+# Generative AI grounding and model-improvement crawlers.
+User-agent: Google-Extended
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+Crawl-delay: 1
+
+# Agent-readable indexes.
 Sitemap: https://electronicartefacts.com/sitemap.xml
+# https://electronicartefacts.com/llms.txt
+# https://electronicartefacts.com/agent-manifest.json
