@@ -71,14 +71,28 @@
       <strong data-language-current>EN</strong>
     </button>
     <div class="language-switcher__menu" role="menu" hidden data-language-menu>
-      <button type="button" role="menuitemradio" aria-checked="true" data-language-option="en">
-        <span>English</span>
-        <strong>EN</strong>
-      </button>
-      <button type="button" role="menuitemradio" aria-checked="false" data-language-option="fr">
-        <span>Français</span>
-        <strong>FR</strong>
-      </button>
+      <div class="language-switcher__menu-shell">
+        <span class="language-switcher__eyebrow">Language</span>
+        <div class="language-switcher__rail" aria-label="Available languages">
+          <button type="button" role="menuitemradio" aria-checked="true" data-language-option="en">
+            <span class="language-switcher__option-dot" aria-hidden="true"></span>
+            <span class="language-switcher__option-copy">
+              <span>English</span>
+              <em>Original interface</em>
+            </span>
+            <strong>EN</strong>
+          </button>
+          <button type="button" role="menuitemradio" aria-checked="false" data-language-option="fr">
+            <span class="language-switcher__option-dot" aria-hidden="true"></span>
+            <span class="language-switcher__option-copy">
+              <span>Français</span>
+              <em>Version française</em>
+            </span>
+            <strong>FR</strong>
+          </button>
+        </div>
+        <span class="language-switcher__status" data-language-status>Current language</span>
+      </div>
     </div>
   </div>
 </div>

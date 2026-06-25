@@ -25,6 +25,7 @@
     const trigger = root.querySelector("[data-language-trigger]");
     const menu = root.querySelector("[data-language-menu]");
     const current = root.querySelector("[data-language-current]");
+    const status = root.querySelector("[data-language-status]");
     const options = [...root.querySelectorAll("[data-language-option]")];
     const translate = window.EA_I18N?.translateText || ((value) => value);
 
@@ -79,17 +80,29 @@
       root.classList.toggle("is-open", open);
       trigger?.setAttribute("aria-expanded", open ? "true" : "false");
       if (menu) menu.hidden = !open;
+      if (open) {
+        window.requestAnimationFrame(() => {
+          const checked = root.querySelector('[data-language-option][aria-checked="true"]');
+          if (checked instanceof HTMLElement) checked.focus({ preventScroll: true });
+        });
+      }
     };
 
     const sync = (language) => {
       if (current) current.textContent = labels[language] || language.toUpperCase();
+      let availableCount = 0;
       options.forEach((option) => {
         const optionLanguage = option.getAttribute("data-language-option");
         const available = Boolean(currentAlternates[optionLanguage]);
+        if (available) availableCount += 1;
         option.setAttribute("aria-checked", optionLanguage === language ? "true" : "false");
         option.classList.toggle("is-unavailable", !available);
         option.title = available ? "" : translate("Translation not available yet");
       });
+      if (status) {
+        const label = language === "fr" ? "Français actif" : "English active";
+        status.textContent = `${translate(label)} · ${availableCount}/${supported.length} ${translate("available")}`;
+      }
       document.documentElement.dataset.preferredLanguage = language;
     };
 
@@ -124,6 +137,18 @@
         writePreference(language);
         navigateTo(language, true);
       });
+    });
+
+    menu?.addEventListener("keydown", (event) => {
+      if (!["ArrowDown", "ArrowUp", "Home", "End"].includes(event.key)) return;
+      event.preventDefault();
+      const activeIndex = Math.max(0, options.indexOf(document.activeElement));
+      const nextIndex = event.key === "Home"
+        ? 0
+        : event.key === "End"
+          ? options.length - 1
+          : (activeIndex + (event.key === "ArrowDown" ? 1 : -1) + options.length) % options.length;
+      options[nextIndex]?.focus();
     });
 
     document.addEventListener("click", (event) => {
