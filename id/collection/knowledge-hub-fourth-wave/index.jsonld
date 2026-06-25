@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/archive/collections/knowledge-hub-fourth-wave/#webpage",
       "url": "https://electronicartefacts.com/archive/collections/knowledge-hub-fourth-wave/",
       "name": "Knowledge Hub Fourth Wave",
-      "description": "A curated Electronic Artefacts collection about AI tool protocols, media provenance, browser-local inference, archive presentation and agent observability.",
+      "description": "A curated Electronic Artefacts collection about AI tool protocols, media provenance, browser-local inference, archive presentation, agent observability, governance and knowledge graph SEO.",
       "inLanguage": "en",
       "datePublished": "2026-06-24",
       "dateModified": "2026-06-24",
@@ -34,7 +34,8 @@
       "@id": "https://electronicartefacts.com/id/collection/knowledge-hub-fourth-wave/",
       "identifier": "ea:collection:knowledge-hub-fourth-wave",
       "name": "Knowledge Hub Fourth Wave",
-      "description": "Knowledge Hub Fourth Wave groups articles and technology records about MCP, C2PA, WebNN, IIIF and OpenTelemetry for durable AI and cultural infrastructure.",
+      "abstract": "Knowledge Hub Fourth Wave groups articles and technology records about MCP, C2PA, WebNN, IIIF, OpenTelemetry, AI search, governance, prompt injection and verifiable identity.",
+      "description": "Knowledge Hub Fourth Wave groups articles and technology records about MCP, C2PA, WebNN, IIIF, OpenTelemetry, AI search, governance, prompt injection and verifiable identity.",
       "url": "https://electronicartefacts.com/archive/collections/knowledge-hub-fourth-wave/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/archive/collections/knowledge-hub-fourth-wave/#webpage"
@@ -58,6 +59,7 @@
         "Knowledge Hub",
         "Fourth Wave",
         "AI Protocols",
+        "AI Governance",
         "Provenance",
         "Cultural Infrastructure",
         "Artificial Intelligence",
@@ -76,7 +78,7 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 171
+      "wordCount": 199
     },
     {
       "@type": "Organization",
@@ -84,12 +86,48 @@
       "name": "Electronic Artefacts",
       "url": "https://electronicartefacts.com/",
       "description": "Electronic Artefacts designs digital products, knowledge systems, cultural platforms and research-led experiences.",
+      "keywords": [
+        "creative technology",
+        "knowledge graph",
+        "AI agents",
+        "retrieval-augmented generation",
+        "linked data",
+        "digital preservation",
+        "cultural infrastructure",
+        "software systems",
+        "research publishing"
+      ],
+      "knowsAbout": [
+        "AI agents",
+        "knowledge graphs",
+        "retrieval-augmented generation",
+        "linked data",
+        "JSON-LD",
+        "creative coding",
+        "digital preservation",
+        "cultural knowledge systems",
+        "software architecture",
+        "human-computer interaction",
+        "generative AI",
+        "provenance"
+      ],
       "logo": {
         "@type": "ImageObject",
         "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-logo.jpg"
       },
       "image": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-search.jpg",
       "email": "electronic.artefacts@gmail.com",
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "email": "electronic.artefacts@gmail.com",
+          "contactType": "inquiries",
+          "availableLanguage": [
+            "en",
+            "fr"
+          ]
+        }
+      ],
       "sameAs": [
         "https://www.instagram.com/electronic.artefacts/",
         "https://github.com/onlythejoe",
@@ -102,6 +140,18 @@
       "url": "https://electronicartefacts.com/",
       "name": "Electronic Artefacts",
       "description": "Electronic Artefacts designs digital products, knowledge systems, cultural platforms and research-led experiences.",
+      "keywords": [
+        "creative technology",
+        "knowledge graph",
+        "AI agents",
+        "retrieval-augmented generation",
+        "linked data",
+        "digital preservation",
+        "cultural infrastructure",
+        "software systems",
+        "research publishing"
+      ],
+      "dateModified": "2026-06-25",
       "publisher": {
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },

@@ -28,6 +28,14 @@
       "confidence": "published"
     },
     {
+      "id": "ea:publication:prompt-injection-and-trust-boundaries-in-ai-knowledge-systems",
+      "type": "publication",
+      "title": "Prompt Injection and Trust Boundaries in AI Knowledge Systems",
+      "route": "/publications/prompt-injection-and-trust-boundaries-in-ai-knowledge-systems/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
       "id": "ea:technology:model-context-protocol",
       "type": "technology",
       "title": "Model Context Protocol",
@@ -63,6 +71,15 @@
       "label": "Integrates with",
       "statement": "VASTE can integrate with MCP as a scoped interface for graph resources, prompts and controlled tools.",
       "confidence": "observed"
+    },
+    {
+      "id": "ear:prompt-injection-article-uses-mcp",
+      "source": "ea:publication:prompt-injection-and-trust-boundaries-in-ai-knowledge-systems",
+      "target": "ea:technology:model-context-protocol",
+      "predicate": "usesTechnology",
+      "label": "Uses technology",
+      "statement": "Prompt Injection and Trust Boundaries in AI Knowledge Systems uses MCP as a reference surface for resources, tools and host-side consent.",
+      "confidence": "published"
     }
   ]
 }

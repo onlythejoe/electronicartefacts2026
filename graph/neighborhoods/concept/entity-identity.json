@@ -28,6 +28,14 @@
       "confidence": "published"
     },
     {
+      "id": "ea:publication:verifiable-credentials-for-cultural-archives-and-creator-identity",
+      "type": "publication",
+      "title": "Verifiable Credentials for Cultural Archives and Creator Identity",
+      "route": "/publications/verifiable-credentials-for-cultural-archives-and-creator-identity/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
       "id": "ea:publication:why-graphs-are-more-powerful-than-folders",
       "type": "publication",
       "title": "Why Graphs Are More Powerful Than Folders",
@@ -37,6 +45,15 @@
     }
   ],
   "edges": [
+    {
+      "id": "ear:verifiable-credentials-article-documents-entity-identity",
+      "source": "ea:publication:verifiable-credentials-for-cultural-archives-and-creator-identity",
+      "target": "ea:concept:entity-identity",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Verifiable Credentials for Cultural Archives and Creator Identity connects signed claims to durable entity identity.",
+      "confidence": "published"
+    },
     {
       "id": "ear:knowledge-graphs-article-documents-entity-identity",
       "source": "ea:publication:knowledge-graphs-for-cultural-infrastructure",

@@ -76,6 +76,14 @@
       "confidence": "published"
     },
     {
+      "id": "ea:publication:responsible-ai-governance-for-creative-and-cultural-systems",
+      "type": "publication",
+      "title": "Responsible AI Governance for Creative and Cultural Systems",
+      "route": "/publications/responsible-ai-governance-for-creative-and-cultural-systems/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
       "id": "ea:publication:retrieval-augmented-generation-and-knowledge-systems",
       "type": "publication",
       "title": "Retrieval-Augmented Generation and Knowledge Systems",
@@ -90,6 +98,14 @@
       "route": "/publications/signal-archaeology-audio-memory-and-machine-listening/",
       "status": "active",
       "confidence": "published"
+    },
+    {
+      "id": "ea:publication:verifiable-credentials-for-cultural-archives-and-creator-identity",
+      "type": "publication",
+      "title": "Verifiable Credentials for Cultural Archives and Creator Identity",
+      "route": "/publications/verifiable-credentials-for-cultural-archives-and-creator-identity/",
+      "status": "active",
+      "confidence": "published"
     }
   ],
   "edges": [
@@ -100,6 +116,24 @@
       "predicate": "documents",
       "label": "Documents",
       "statement": "C2PA Content Credentials and Generative Media Provenance explains provenance as evidence rather than proof of truth.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:responsible-ai-governance-article-documents-provenance",
+      "source": "ea:publication:responsible-ai-governance-for-creative-and-cultural-systems",
+      "target": "ea:concept:provenance",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Responsible AI Governance for Creative and Cultural Systems treats provenance as a governance requirement for AI-assisted cultural records.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:verifiable-credentials-article-documents-provenance",
+      "source": "ea:publication:verifiable-credentials-for-cultural-archives-and-creator-identity",
+      "target": "ea:concept:provenance",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Verifiable Credentials for Cultural Archives and Creator Identity documents verifiable credentials as one layer of provenance evidence.",
       "confidence": "published"
     },
     {

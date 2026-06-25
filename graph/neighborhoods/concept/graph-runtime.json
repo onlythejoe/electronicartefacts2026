@@ -44,6 +44,14 @@
       "confidence": "published"
     },
     {
+      "id": "ea:publication:prompt-injection-and-trust-boundaries-in-ai-knowledge-systems",
+      "type": "publication",
+      "title": "Prompt Injection and Trust Boundaries in AI Knowledge Systems",
+      "route": "/publications/prompt-injection-and-trust-boundaries-in-ai-knowledge-systems/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
       "id": "ea:publication:runtime-engines-and-domain-operating-systems",
       "type": "publication",
       "title": "Runtime Engines and Domain Operating Systems",
@@ -61,6 +69,15 @@
     }
   ],
   "edges": [
+    {
+      "id": "ear:prompt-injection-article-documents-graph-runtime",
+      "source": "ea:publication:prompt-injection-and-trust-boundaries-in-ai-knowledge-systems",
+      "target": "ea:concept:graph-runtime",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Prompt Injection and Trust Boundaries in AI Knowledge Systems uses graph runtimes as a control layer for AI knowledge operations.",
+      "confidence": "published"
+    },
     {
       "id": "ear:contextual-execution-article-documents-graph-runtime",
       "source": "ea:publication:contextual-execution-and-graph-runtimes",

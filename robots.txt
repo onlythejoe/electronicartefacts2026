@@ -42,3 +42,7 @@ Crawl-delay: 1
 Sitemap: https://electronicartefacts.com/sitemap.xml
 # https://electronicartefacts.com/llms.txt
 # https://electronicartefacts.com/agent-manifest.json
+# https://electronicartefacts.com/opensearch.xml
+# https://electronicartefacts.com/graph/catalog.jsonld
+# https://electronicartefacts.com/humans.txt
+# https://electronicartefacts.com/.well-known/security.txt

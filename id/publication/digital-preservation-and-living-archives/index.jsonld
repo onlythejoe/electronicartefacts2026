@@ -35,6 +35,7 @@
       "identifier": "ea:publication:digital-preservation-and-living-archives",
       "name": "Digital Preservation and Living Archives",
       "headline": "Digital Preservation and Living Archives",
+      "abstract": "This article explains digital preservation as an active cultural practice that keeps digital objects, metadata, provenance and interpretation usable over time.",
       "description": "This article explains digital preservation as an active cultural practice that keeps digital objects, metadata, provenance and interpretation usable over time.",
       "url": "https://electronicartefacts.com/publications/digital-preservation-and-living-archives/",
       "mainEntityOfPage": {
@@ -124,6 +125,36 @@
         {
           "@id": "https://electronicartefacts.com/id/project/vestiges/"
         }
+      ],
+      "articleSection": [
+        "Archives",
+        "Digital Art",
+        "Knowledge Systems",
+        "History of Technology",
+        "Digital Preservation",
+        "Living Archive"
+      ],
+      "timeRequired": "PT6M",
+      "isBasedOn": [
+        {
+          "@type": "CreativeWork",
+          "name": "Digital Preservation Handbook",
+          "url": "https://www.dpconline.org/handbook",
+          "publisher": "Digital Preservation Coalition",
+          "datePublished": "2015-01-01"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Sustainability of Digital Formats",
+          "url": "https://www.loc.gov/preservation/digital/formats/",
+          "publisher": "Library of Congress"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Levels of Digital Preservation",
+          "url": "https://www.ndsa.org/publications/levels-of-digital-preservation/",
+          "publisher": "National Digital Stewardship Alliance"
+        }
       ]
     },
     {
@@ -132,12 +163,48 @@
       "name": "Electronic Artefacts",
       "url": "https://electronicartefacts.com/",
       "description": "Electronic Artefacts designs digital products, knowledge systems, cultural platforms and research-led experiences.",
+      "keywords": [
+        "creative technology",
+        "knowledge graph",
+        "AI agents",
+        "retrieval-augmented generation",
+        "linked data",
+        "digital preservation",
+        "cultural infrastructure",
+        "software systems",
+        "research publishing"
+      ],
+      "knowsAbout": [
+        "AI agents",
+        "knowledge graphs",
+        "retrieval-augmented generation",
+        "linked data",
+        "JSON-LD",
+        "creative coding",
+        "digital preservation",
+        "cultural knowledge systems",
+        "software architecture",
+        "human-computer interaction",
+        "generative AI",
+        "provenance"
+      ],
       "logo": {
         "@type": "ImageObject",
         "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-logo.jpg"
       },
       "image": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-search.jpg",
       "email": "electronic.artefacts@gmail.com",
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "email": "electronic.artefacts@gmail.com",
+          "contactType": "inquiries",
+          "availableLanguage": [
+            "en",
+            "fr"
+          ]
+        }
+      ],
       "sameAs": [
         "https://www.instagram.com/electronic.artefacts/",
         "https://github.com/onlythejoe",
@@ -150,6 +217,18 @@
       "url": "https://electronicartefacts.com/",
       "name": "Electronic Artefacts",
       "description": "Electronic Artefacts designs digital products, knowledge systems, cultural platforms and research-led experiences.",
+      "keywords": [
+        "creative technology",
+        "knowledge graph",
+        "AI agents",
+        "retrieval-augmented generation",
+        "linked data",
+        "digital preservation",
+        "cultural infrastructure",
+        "software systems",
+        "research publishing"
+      ],
+      "dateModified": "2026-06-25",
       "publisher": {
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },

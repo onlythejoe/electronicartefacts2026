@@ -1712,7 +1712,7 @@
     const nav = activeLink.closest(".site-nav");
     if (!nav || nav.scrollWidth <= nav.clientWidth) return;
     requestAnimationFrame(() => {
-      activeLink.scrollIntoView({ block: "nearest", inline: "center", behavior: "auto" });
+      activeLink.scrollIntoView({ block: "nearest", inline: "nearest", behavior: "auto" });
     });
   };
 

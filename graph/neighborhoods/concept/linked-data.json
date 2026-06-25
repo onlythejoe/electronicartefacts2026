@@ -12,6 +12,14 @@
       "confidence": "validated"
     },
     {
+      "id": "ea:publication:ai-search-structured-content-and-knowledge-graph-seo",
+      "type": "publication",
+      "title": "AI Search, Structured Content and Knowledge Graph SEO",
+      "route": "/publications/ai-search-structured-content-and-knowledge-graph-seo/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
       "id": "ea:publication:hypertext-and-augmented-knowledge-systems",
       "type": "publication",
       "title": "Hypertext and Augmented Knowledge Systems",
@@ -29,6 +37,15 @@
     }
   ],
   "edges": [
+    {
+      "id": "ear:ai-search-seo-article-documents-linked-data",
+      "source": "ea:publication:ai-search-structured-content-and-knowledge-graph-seo",
+      "target": "ea:concept:linked-data",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "AI Search, Structured Content and Knowledge Graph SEO explains how Linked Data supports crawlable, machine-readable public knowledge pages.",
+      "confidence": "published"
+    },
     {
       "id": "ear:linked-data-article-documents-linked-data",
       "source": "ea:publication:linked-data-and-public-knowledge-pages",

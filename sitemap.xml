@@ -1,20 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url><loc>https://electronicartefacts.com/</loc></url>
-  <url><loc>https://electronicartefacts.com/about.html</loc></url>
-  <url><loc>https://electronicartefacts.com/archive.html</loc></url>
-  <url><loc>https://electronicartefacts.com/contact.html</loc></url>
-  <url><loc>https://electronicartefacts.com/projects.html</loc></url>
-  <url><loc>https://electronicartefacts.com/programs.html</loc></url>
-  <url><loc>https://electronicartefacts.com/research.html</loc></url>
-  <url><loc>https://electronicartefacts.com/work.html</loc></url>
-  <url><loc>https://electronicartefacts.com/knowledge/</loc></url>
-  <url><loc>https://electronicartefacts.com/knowledge/concepts/</loc></url>
-  <url><loc>https://electronicartefacts.com/knowledge/methods/</loc></url>
-  <url><loc>https://electronicartefacts.com/knowledge/frameworks/</loc></url>
-  <url><loc>https://electronicartefacts.com/knowledge/technologies/</loc></url>
-  <url><loc>https://electronicartefacts.com/archive/collections/</loc></url>
-  <url><loc>https://electronicartefacts.com/publications/</loc></url>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+  xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url><loc>https://electronicartefacts.com/</loc><lastmod>2026-06-25</lastmod><image:image><image:loc>https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-search.jpg</image:loc></image:image></url>
+  <url><loc>https://electronicartefacts.com/about.html</loc><lastmod>2026-06-25</lastmod></url>
+  <url><loc>https://electronicartefacts.com/archive.html</loc><lastmod>2026-06-25</lastmod></url>
+  <url><loc>https://electronicartefacts.com/contact.html</loc><lastmod>2026-06-25</lastmod></url>
+  <url><loc>https://electronicartefacts.com/projects.html</loc><lastmod>2026-06-25</lastmod></url>
+  <url><loc>https://electronicartefacts.com/programs.html</loc><lastmod>2026-06-25</lastmod></url>
+  <url><loc>https://electronicartefacts.com/research.html</loc><lastmod>2026-06-25</lastmod></url>
+  <url><loc>https://electronicartefacts.com/work.html</loc><lastmod>2026-06-25</lastmod></url>
+  <url><loc>https://electronicartefacts.com/knowledge/</loc><lastmod>2026-06-25</lastmod></url>
+  <url><loc>https://electronicartefacts.com/knowledge/concepts/</loc><lastmod>2026-06-25</lastmod></url>
+  <url><loc>https://electronicartefacts.com/knowledge/methods/</loc><lastmod>2026-06-25</lastmod></url>
+  <url><loc>https://electronicartefacts.com/knowledge/frameworks/</loc><lastmod>2026-06-25</lastmod></url>
+  <url><loc>https://electronicartefacts.com/knowledge/technologies/</loc><lastmod>2026-06-25</lastmod></url>
+  <url><loc>https://electronicartefacts.com/archive/collections/</loc><lastmod>2026-06-25</lastmod></url>
+  <url><loc>https://electronicartefacts.com/publications/</loc><lastmod>2026-06-25</lastmod></url>
   <url><loc>https://electronicartefacts.com/archive/collections/knowledge-hub-foundations/</loc><lastmod>2026-06-23</lastmod></url>
   <url><loc>https://electronicartefacts.com/archive/collections/knowledge-hub-fourth-wave/</loc><lastmod>2026-06-24</lastmod></url>
   <url><loc>https://electronicartefacts.com/archive/collections/knowledge-hub-second-wave/</loc><lastmod>2026-06-24</lastmod></url>
@@ -58,9 +59,10 @@
   <url><loc>https://electronicartefacts.com/organizations/electronic-artefacts/</loc><lastmod>2026-06-22</lastmod></url>
   <url><loc>https://electronicartefacts.com/programs/oreth/</loc><lastmod>2026-06-23</lastmod></url>
   <url><loc>https://electronicartefacts.com/programs/vaste/</loc><lastmod>2026-06-22</lastmod></url>
-  <url><loc>https://electronicartefacts.com/projects/palimpsests/</loc><lastmod>2026-06-23</lastmod></url>
-  <url><loc>https://electronicartefacts.com/projects/vestiges/</loc><lastmod>2026-06-24</lastmod></url>
+  <url><loc>https://electronicartefacts.com/projects/palimpsests/</loc><lastmod>2026-06-23</lastmod><image:image><image:loc>https://electronicartefacts.com/assets/media/projects/palimpsests/palimpsests.jpg</image:loc></image:image></url>
+  <url><loc>https://electronicartefacts.com/projects/vestiges/</loc><lastmod>2026-06-24</lastmod><image:image><image:loc>https://electronicartefacts.com/assets/media/projects/vestiges/logo-vestiges.png</image:loc></image:image></url>
   <url><loc>https://electronicartefacts.com/publications/ai-agents-vs-ai-workflows/</loc><lastmod>2026-06-24</lastmod></url>
+  <url><loc>https://electronicartefacts.com/publications/ai-search-structured-content-and-knowledge-graph-seo/</loc><lastmod>2026-06-25</lastmod></url>
   <url><loc>https://electronicartefacts.com/publications/algorithmic-composition-and-rule-based-music/</loc><lastmod>2026-06-24</lastmod></url>
   <url><loc>https://electronicartefacts.com/publications/c2pa-content-credentials-and-generative-media-provenance/</loc><lastmod>2026-06-24</lastmod></url>
   <url><loc>https://electronicartefacts.com/publications/contextual-execution-and-graph-runtimes/</loc><lastmod>2026-06-23</lastmod></url>
@@ -87,12 +89,15 @@
   <url><loc>https://electronicartefacts.com/publications/open-source-as-cultural-infrastructure/</loc><lastmod>2026-06-24</lastmod></url>
   <url><loc>https://electronicartefacts.com/publications/personal-knowledge-systems-and-digital-gardens/</loc><lastmod>2026-06-24</lastmod></url>
   <url><loc>https://electronicartefacts.com/publications/procedural-graphics-shaders-and-visual-systems/</loc><lastmod>2026-06-24</lastmod></url>
+  <url><loc>https://electronicartefacts.com/publications/prompt-injection-and-trust-boundaries-in-ai-knowledge-systems/</loc><lastmod>2026-06-25</lastmod></url>
   <url><loc>https://electronicartefacts.com/publications/redis-streams-for-orchestration/</loc><lastmod>2026-06-24</lastmod></url>
+  <url><loc>https://electronicartefacts.com/publications/responsible-ai-governance-for-creative-and-cultural-systems/</loc><lastmod>2026-06-25</lastmod></url>
   <url><loc>https://electronicartefacts.com/publications/retrieval-augmented-generation-and-knowledge-systems/</loc><lastmod>2026-06-24</lastmod></url>
   <url><loc>https://electronicartefacts.com/publications/runtime-engines-and-domain-operating-systems/</loc><lastmod>2026-06-24</lastmod></url>
   <url><loc>https://electronicartefacts.com/publications/signal-archaeology-audio-memory-and-machine-listening/</loc><lastmod>2026-06-23</lastmod></url>
   <url><loc>https://electronicartefacts.com/publications/systems-thinking-for-creative-practice/</loc><lastmod>2026-06-24</lastmod></url>
   <url><loc>https://electronicartefacts.com/publications/typography-reading-systems-and-digital-interfaces/</loc><lastmod>2026-06-24</lastmod></url>
+  <url><loc>https://electronicartefacts.com/publications/verifiable-credentials-for-cultural-archives-and-creator-identity/</loc><lastmod>2026-06-25</lastmod></url>
   <url><loc>https://electronicartefacts.com/publications/web-audio-and-browser-based-sound-systems/</loc><lastmod>2026-06-24</lastmod></url>
   <url><loc>https://electronicartefacts.com/publications/webnn-and-local-ai-in-the-browser/</loc><lastmod>2026-06-24</lastmod></url>
   <url><loc>https://electronicartefacts.com/publications/why-graphs-are-more-powerful-than-folders/</loc><lastmod>2026-06-24</lastmod></url>

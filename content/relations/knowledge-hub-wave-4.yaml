@@ -257,3 +257,203 @@
   createdAt: "2026-06-24"
   reviewedAt: "2026-06-24"
   visibility: public
+
+- id: ear:ai-search-seo-article-documents-knowledge-graph
+  subject: ea:publication:ai-search-structured-content-and-knowledge-graph-seo
+  predicate: documents
+  object: ea:concept:knowledge-graph
+  statement: AI Search, Structured Content and Knowledge Graph SEO documents knowledge graphs as an SEO architecture for AI retrieval.
+  confidence: published
+  createdAt: "2026-06-25"
+  reviewedAt: "2026-06-25"
+  visibility: public
+
+- id: ear:ai-search-seo-article-documents-linked-data
+  subject: ea:publication:ai-search-structured-content-and-knowledge-graph-seo
+  predicate: documents
+  object: ea:concept:linked-data
+  statement: AI Search, Structured Content and Knowledge Graph SEO explains how Linked Data supports crawlable, machine-readable public knowledge pages.
+  confidence: published
+  createdAt: "2026-06-25"
+  reviewedAt: "2026-06-25"
+  visibility: public
+
+- id: ear:ai-search-seo-article-uses-json-ld
+  subject: ea:publication:ai-search-structured-content-and-knowledge-graph-seo
+  predicate: usesTechnology
+  object: ea:technology:json-ld
+  statement: AI Search, Structured Content and Knowledge Graph SEO uses JSON-LD as the structured data bridge between articles and graph records.
+  confidence: published
+  createdAt: "2026-06-25"
+  reviewedAt: "2026-06-25"
+  visibility: public
+
+- id: ear:ai-search-seo-article-documents-rag
+  subject: ea:publication:ai-search-structured-content-and-knowledge-graph-seo
+  predicate: documents
+  object: ea:concept:retrieval-augmented-generation
+  statement: AI Search, Structured Content and Knowledge Graph SEO connects AI search visibility to retrieval-augmented generation patterns.
+  confidence: published
+  createdAt: "2026-06-25"
+  reviewedAt: "2026-06-25"
+  visibility: public
+
+- id: ear:knowledge-hub-fourth-wave-has-ai-search-seo-article
+  subject: ea:publication:ai-search-structured-content-and-knowledge-graph-seo
+  predicate: memberOfCollection
+  object: ea:collection:knowledge-hub-fourth-wave
+  statement: AI Search, Structured Content and Knowledge Graph SEO is part of the fourth Knowledge Hub wave.
+  confidence: published
+  createdAt: "2026-06-25"
+  reviewedAt: "2026-06-25"
+  visibility: public
+
+- id: ear:responsible-ai-governance-article-documents-generative-ai
+  subject: ea:publication:responsible-ai-governance-for-creative-and-cultural-systems
+  predicate: documents
+  object: ea:concept:generative-ai
+  statement: Responsible AI Governance for Creative and Cultural Systems documents governance practices for generative AI use in creative systems.
+  confidence: published
+  createdAt: "2026-06-25"
+  reviewedAt: "2026-06-25"
+  visibility: public
+
+- id: ear:responsible-ai-governance-article-documents-augmented-intelligence
+  subject: ea:publication:responsible-ai-governance-for-creative-and-cultural-systems
+  predicate: documents
+  object: ea:concept:augmented-intelligence
+  statement: Responsible AI Governance for Creative and Cultural Systems frames responsible AI as augmented intelligence rather than unchecked replacement.
+  confidence: published
+  createdAt: "2026-06-25"
+  reviewedAt: "2026-06-25"
+  visibility: public
+
+- id: ear:responsible-ai-governance-article-documents-provenance
+  subject: ea:publication:responsible-ai-governance-for-creative-and-cultural-systems
+  predicate: documents
+  object: ea:concept:provenance
+  statement: Responsible AI Governance for Creative and Cultural Systems treats provenance as a governance requirement for AI-assisted cultural records.
+  confidence: published
+  createdAt: "2026-06-25"
+  reviewedAt: "2026-06-25"
+  visibility: public
+
+- id: ear:responsible-ai-governance-article-documents-contextual-execution
+  subject: ea:publication:responsible-ai-governance-for-creative-and-cultural-systems
+  predicate: documents
+  object: ea:concept:contextual-execution
+  statement: Responsible AI Governance for Creative and Cultural Systems links governance controls to contextual execution and permission boundaries.
+  confidence: published
+  createdAt: "2026-06-25"
+  reviewedAt: "2026-06-25"
+  visibility: public
+
+- id: ear:knowledge-hub-fourth-wave-has-responsible-ai-governance-article
+  subject: ea:publication:responsible-ai-governance-for-creative-and-cultural-systems
+  predicate: memberOfCollection
+  object: ea:collection:knowledge-hub-fourth-wave
+  statement: Responsible AI Governance for Creative and Cultural Systems is part of the fourth Knowledge Hub wave.
+  confidence: published
+  createdAt: "2026-06-25"
+  reviewedAt: "2026-06-25"
+  visibility: public
+
+- id: ear:prompt-injection-article-documents-ai-agent
+  subject: ea:publication:prompt-injection-and-trust-boundaries-in-ai-knowledge-systems
+  predicate: documents
+  object: ea:concept:ai-agent
+  statement: Prompt Injection and Trust Boundaries in AI Knowledge Systems documents prompt-injection risks for AI agents.
+  confidence: published
+  createdAt: "2026-06-25"
+  reviewedAt: "2026-06-25"
+  visibility: public
+
+- id: ear:prompt-injection-article-documents-contextual-execution
+  subject: ea:publication:prompt-injection-and-trust-boundaries-in-ai-knowledge-systems
+  predicate: documents
+  object: ea:concept:contextual-execution
+  statement: Prompt Injection and Trust Boundaries in AI Knowledge Systems explains why permissions should be enforced through contextual execution.
+  confidence: published
+  createdAt: "2026-06-25"
+  reviewedAt: "2026-06-25"
+  visibility: public
+
+- id: ear:prompt-injection-article-documents-graph-runtime
+  subject: ea:publication:prompt-injection-and-trust-boundaries-in-ai-knowledge-systems
+  predicate: documents
+  object: ea:concept:graph-runtime
+  statement: Prompt Injection and Trust Boundaries in AI Knowledge Systems uses graph runtimes as a control layer for AI knowledge operations.
+  confidence: published
+  createdAt: "2026-06-25"
+  reviewedAt: "2026-06-25"
+  visibility: public
+
+- id: ear:prompt-injection-article-uses-mcp
+  subject: ea:publication:prompt-injection-and-trust-boundaries-in-ai-knowledge-systems
+  predicate: usesTechnology
+  object: ea:technology:model-context-protocol
+  statement: Prompt Injection and Trust Boundaries in AI Knowledge Systems uses MCP as a reference surface for resources, tools and host-side consent.
+  confidence: published
+  createdAt: "2026-06-25"
+  reviewedAt: "2026-06-25"
+  visibility: public
+
+- id: ear:knowledge-hub-fourth-wave-has-prompt-injection-article
+  subject: ea:publication:prompt-injection-and-trust-boundaries-in-ai-knowledge-systems
+  predicate: memberOfCollection
+  object: ea:collection:knowledge-hub-fourth-wave
+  statement: Prompt Injection and Trust Boundaries in AI Knowledge Systems is part of the fourth Knowledge Hub wave.
+  confidence: published
+  createdAt: "2026-06-25"
+  reviewedAt: "2026-06-25"
+  visibility: public
+
+- id: ear:verifiable-credentials-article-documents-provenance
+  subject: ea:publication:verifiable-credentials-for-cultural-archives-and-creator-identity
+  predicate: documents
+  object: ea:concept:provenance
+  statement: Verifiable Credentials for Cultural Archives and Creator Identity documents verifiable credentials as one layer of provenance evidence.
+  confidence: published
+  createdAt: "2026-06-25"
+  reviewedAt: "2026-06-25"
+  visibility: public
+
+- id: ear:verifiable-credentials-article-documents-entity-identity
+  subject: ea:publication:verifiable-credentials-for-cultural-archives-and-creator-identity
+  predicate: documents
+  object: ea:concept:entity-identity
+  statement: Verifiable Credentials for Cultural Archives and Creator Identity connects signed claims to durable entity identity.
+  confidence: published
+  createdAt: "2026-06-25"
+  reviewedAt: "2026-06-25"
+  visibility: public
+
+- id: ear:verifiable-credentials-article-documents-digital-preservation
+  subject: ea:publication:verifiable-credentials-for-cultural-archives-and-creator-identity
+  predicate: documents
+  object: ea:concept:digital-preservation
+  statement: Verifiable Credentials for Cultural Archives and Creator Identity explains how credentials can support preservation events and archive trust.
+  confidence: published
+  createdAt: "2026-06-25"
+  reviewedAt: "2026-06-25"
+  visibility: public
+
+- id: ear:verifiable-credentials-article-uses-c2pa
+  subject: ea:publication:verifiable-credentials-for-cultural-archives-and-creator-identity
+  predicate: usesTechnology
+  object: ea:technology:c2pa
+  statement: Verifiable Credentials for Cultural Archives and Creator Identity compares W3C credentials with C2PA media provenance.
+  confidence: published
+  createdAt: "2026-06-25"
+  reviewedAt: "2026-06-25"
+  visibility: public
+
+- id: ear:knowledge-hub-fourth-wave-has-verifiable-credentials-article
+  subject: ea:publication:verifiable-credentials-for-cultural-archives-and-creator-identity
+  predicate: memberOfCollection
+  object: ea:collection:knowledge-hub-fourth-wave
+  statement: Verifiable Credentials for Cultural Archives and Creator Identity is part of the fourth Knowledge Hub wave.
+  confidence: published
+  createdAt: "2026-06-25"
+  reviewedAt: "2026-06-25"
+  visibility: public

@@ -34,6 +34,7 @@
       "@id": "https://electronicartefacts.com/id/concept/linked-data/",
       "identifier": "ea:concept:linked-data",
       "name": "Linked Data",
+      "abstract": "Linked Data gives public knowledge systems a way to make entities, pages, references and datasets interoperable across sites and software systems.",
       "description": "Linked Data is a web publishing approach that identifies things with stable URIs and connects them through machine-readable statements.",
       "url": "https://electronicartefacts.com/knowledge/concepts/linked-data/",
       "mainEntityOfPage": {
@@ -103,12 +104,48 @@
       "name": "Electronic Artefacts",
       "url": "https://electronicartefacts.com/",
       "description": "Electronic Artefacts designs digital products, knowledge systems, cultural platforms and research-led experiences.",
+      "keywords": [
+        "creative technology",
+        "knowledge graph",
+        "AI agents",
+        "retrieval-augmented generation",
+        "linked data",
+        "digital preservation",
+        "cultural infrastructure",
+        "software systems",
+        "research publishing"
+      ],
+      "knowsAbout": [
+        "AI agents",
+        "knowledge graphs",
+        "retrieval-augmented generation",
+        "linked data",
+        "JSON-LD",
+        "creative coding",
+        "digital preservation",
+        "cultural knowledge systems",
+        "software architecture",
+        "human-computer interaction",
+        "generative AI",
+        "provenance"
+      ],
       "logo": {
         "@type": "ImageObject",
         "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-logo.jpg"
       },
       "image": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-search.jpg",
       "email": "electronic.artefacts@gmail.com",
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "email": "electronic.artefacts@gmail.com",
+          "contactType": "inquiries",
+          "availableLanguage": [
+            "en",
+            "fr"
+          ]
+        }
+      ],
       "sameAs": [
         "https://www.instagram.com/electronic.artefacts/",
         "https://github.com/onlythejoe",
@@ -121,6 +158,18 @@
       "url": "https://electronicartefacts.com/",
       "name": "Electronic Artefacts",
       "description": "Electronic Artefacts designs digital products, knowledge systems, cultural platforms and research-led experiences.",
+      "keywords": [
+        "creative technology",
+        "knowledge graph",
+        "AI agents",
+        "retrieval-augmented generation",
+        "linked data",
+        "digital preservation",
+        "cultural infrastructure",
+        "software systems",
+        "research publishing"
+      ],
+      "dateModified": "2026-06-25",
       "publisher": {
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },

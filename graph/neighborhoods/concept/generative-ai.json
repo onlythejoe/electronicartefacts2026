@@ -26,9 +26,26 @@
       "route": "/publications/how-large-language-models-actually-work/",
       "status": "active",
       "confidence": "published"
+    },
+    {
+      "id": "ea:publication:responsible-ai-governance-for-creative-and-cultural-systems",
+      "type": "publication",
+      "title": "Responsible AI Governance for Creative and Cultural Systems",
+      "route": "/publications/responsible-ai-governance-for-creative-and-cultural-systems/",
+      "status": "active",
+      "confidence": "published"
     }
   ],
   "edges": [
+    {
+      "id": "ear:responsible-ai-governance-article-documents-generative-ai",
+      "source": "ea:publication:responsible-ai-governance-for-creative-and-cultural-systems",
+      "target": "ea:concept:generative-ai",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Responsible AI Governance for Creative and Cultural Systems documents governance practices for generative AI use in creative systems.",
+      "confidence": "published"
+    },
     {
       "id": "ear:generative-ai-article-documents-generative-ai",
       "source": "ea:publication:generative-ai-latent-space-and-creative-workflows",

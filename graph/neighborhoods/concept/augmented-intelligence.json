@@ -34,9 +34,26 @@
       "route": "/publications/hypertext-and-augmented-knowledge-systems/",
       "status": "active",
       "confidence": "published"
+    },
+    {
+      "id": "ea:publication:responsible-ai-governance-for-creative-and-cultural-systems",
+      "type": "publication",
+      "title": "Responsible AI Governance for Creative and Cultural Systems",
+      "route": "/publications/responsible-ai-governance-for-creative-and-cultural-systems/",
+      "status": "active",
+      "confidence": "published"
     }
   ],
   "edges": [
+    {
+      "id": "ear:responsible-ai-governance-article-documents-augmented-intelligence",
+      "source": "ea:publication:responsible-ai-governance-for-creative-and-cultural-systems",
+      "target": "ea:concept:augmented-intelligence",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Responsible AI Governance for Creative and Cultural Systems frames responsible AI as augmented intelligence rather than unchecked replacement.",
+      "confidence": "published"
+    },
     {
       "id": "ear:hypertext-article-documents-augmented-intelligence",
       "source": "ea:publication:hypertext-and-augmented-knowledge-systems",

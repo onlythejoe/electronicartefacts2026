@@ -35,6 +35,7 @@
       "identifier": "ea:publication:generative-systems-cybernetics-and-creative-coding",
       "name": "Generative Systems, Cybernetics and Creative Coding",
       "headline": "Generative Systems, Cybernetics and Creative Coding",
+      "abstract": "This article traces generative systems from cybernetic feedback and algorithmic art to creative coding, sound design and contemporary AI-assisted production.",
       "description": "This article traces generative systems from cybernetic feedback and algorithmic art to creative coding, sound design and contemporary AI-assisted production.",
       "url": "https://electronicartefacts.com/publications/generative-systems-cybernetics-and-creative-coding/",
       "mainEntityOfPage": {
@@ -125,6 +126,39 @@
         {
           "@id": "https://electronicartefacts.com/id/project/palimpsests/"
         }
+      ],
+      "articleSection": [
+        "Creative Coding",
+        "Digital Art",
+        "Music Production",
+        "Systems Design",
+        "Cybernetics",
+        "Generative Systems"
+      ],
+      "timeRequired": "PT7M",
+      "isBasedOn": [
+        {
+          "@type": "CreativeWork",
+          "name": "Cybernetics or Control and Communication in the Animal and the Machine",
+          "url": "https://direct.mit.edu/books/oa-monograph/4581/Cybernetics-or-Control-and-Communication-in-the",
+          "author": "Norbert Wiener",
+          "publisher": "MIT Press",
+          "datePublished": "1948-01-01"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "An Introduction to Cybernetics",
+          "author": "W. Ross Ashby",
+          "publisher": "Chapman and Hall",
+          "datePublished": "1956-01-01"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Formalized Music",
+          "author": "Iannis Xenakis",
+          "publisher": "Indiana University Press",
+          "datePublished": "1971-01-01"
+        }
       ]
     },
     {
@@ -133,12 +167,48 @@
       "name": "Electronic Artefacts",
       "url": "https://electronicartefacts.com/",
       "description": "Electronic Artefacts designs digital products, knowledge systems, cultural platforms and research-led experiences.",
+      "keywords": [
+        "creative technology",
+        "knowledge graph",
+        "AI agents",
+        "retrieval-augmented generation",
+        "linked data",
+        "digital preservation",
+        "cultural infrastructure",
+        "software systems",
+        "research publishing"
+      ],
+      "knowsAbout": [
+        "AI agents",
+        "knowledge graphs",
+        "retrieval-augmented generation",
+        "linked data",
+        "JSON-LD",
+        "creative coding",
+        "digital preservation",
+        "cultural knowledge systems",
+        "software architecture",
+        "human-computer interaction",
+        "generative AI",
+        "provenance"
+      ],
       "logo": {
         "@type": "ImageObject",
         "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-logo.jpg"
       },
       "image": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-search.jpg",
       "email": "electronic.artefacts@gmail.com",
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "email": "electronic.artefacts@gmail.com",
+          "contactType": "inquiries",
+          "availableLanguage": [
+            "en",
+            "fr"
+          ]
+        }
+      ],
       "sameAs": [
         "https://www.instagram.com/electronic.artefacts/",
         "https://github.com/onlythejoe",
@@ -151,6 +221,18 @@
       "url": "https://electronicartefacts.com/",
       "name": "Electronic Artefacts",
       "description": "Electronic Artefacts designs digital products, knowledge systems, cultural platforms and research-led experiences.",
+      "keywords": [
+        "creative technology",
+        "knowledge graph",
+        "AI agents",
+        "retrieval-augmented generation",
+        "linked data",
+        "digital preservation",
+        "cultural infrastructure",
+        "software systems",
+        "research publishing"
+      ],
+      "dateModified": "2026-06-25",
       "publisher": {
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },

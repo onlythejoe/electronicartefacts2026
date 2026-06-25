@@ -48,7 +48,7 @@
     "type": "collection",
     "title": "Knowledge Hub Fourth Wave",
     "alternateNames": [],
-    "abstract": "Knowledge Hub Fourth Wave groups articles and technology records about MCP, C2PA, WebNN, IIIF and OpenTelemetry for durable AI and cultural infrastructure.",
+    "abstract": "Knowledge Hub Fourth Wave groups articles and technology records about MCP, C2PA, WebNN, IIIF, OpenTelemetry, AI search, governance, prompt injection and verifiable identity.",
     "headings": [
       "Thesis",
       "Selection logic",
@@ -57,11 +57,12 @@
       "Internal pathways",
       "Future expansion"
     ],
-    "body": "Thesis The next layer of AI and cultural infrastructure is not only model capability. It is protocol design: context access, tool use, media provenance, local inference, object presentation and operational accountability. Selection logic This collection follows the AI and graph-runtime foundations by adding implementation-facing standards. MCP connects tools and context. C2PA connects media to provenance. WebNN brings local inference to the browser. IIIF structures compound cultural objects. OpenTelemetry makes runtime behavior observable. Editorial role The wave avoids product rankings. It focuses on stable concepts and standards that can support future Electronic Artefacts systems, especially VASTE, Vestiges, ORETH, Palimpsests and the Knowledge Hub. Current members The collection includes five long-form publications and five canonical technology records. Internal pathways AI readers can move from agents to MCP and observability. Archive readers can move from provenance to C2PA and IIIF. Web readers can move from multimodal AI to WebNN and local interaction design. Future expansion Future articles can add WebAssembly components, verifiable credentials, Solid data spaces, source entities, claim graphs and browser-based archive viewers.",
+    "body": "Thesis The next layer of AI and cultural infrastructure is not only model capability. It is protocol design: context access, tool use, media provenance, local inference, object presentation, operational accountability, governance and machine-readable trust. Selection logic This collection follows the AI and graph-runtime foundations by adding implementation-facing standards and operating practices. MCP connects tools and context. C2PA connects media to provenance. WebNN brings local inference to the browser. IIIF structures compound cultural objects. OpenTelemetry makes runtime behavior observable. AI search, governance, prompt-injection controls and verifiable credentials connect those protocols to public trust. Editorial role The wave avoids product rankings. It focuses on stable concepts and standards that can support future Electronic Artefacts systems, especially VASTE, Vestiges, ORETH, Palimpsests and the Knowledge Hub. Current members The collection includes nine long-form publications and five canonical technology records. Internal pathways AI readers can move from agents to MCP, observability and prompt-injection boundaries. Archive readers can move from provenance to C2PA, IIIF and verifiable credentials. Web readers can move from multimodal AI to WebNN, local interaction design and knowledge graph SEO. Future expansion Future articles can add WebAssembly components, Solid data spaces, source entities, claim graphs, browser-based archive viewers and EU-facing implementation playbooks.",
     "tags": [
       "Knowledge Hub",
       "Fourth Wave",
       "AI Protocols",
+      "AI Governance",
       "Provenance",
       "Cultural Infrastructure"
     ],
@@ -71,14 +72,22 @@
       "memberOfCollection C2PA Content Credentials and Generative Media Provenance is part of the fourth Knowledge Hub wave.",
       "memberOfCollection WebNN and Local AI in the Browser is part of the fourth Knowledge Hub wave.",
       "memberOfCollection IIIF and Compound Cultural Objects is part of the fourth Knowledge Hub wave.",
-      "memberOfCollection Observability for AI Agents and Tool-Calling Systems is part of the fourth Knowledge Hub wave."
+      "memberOfCollection Observability for AI Agents and Tool-Calling Systems is part of the fourth Knowledge Hub wave.",
+      "memberOfCollection AI Search, Structured Content and Knowledge Graph SEO is part of the fourth Knowledge Hub wave.",
+      "memberOfCollection Responsible AI Governance for Creative and Cultural Systems is part of the fourth Knowledge Hub wave.",
+      "memberOfCollection Prompt Injection and Trust Boundaries in AI Knowledge Systems is part of the fourth Knowledge Hub wave.",
+      "memberOfCollection Verifiable Credentials for Cultural Archives and Creator Identity is part of the fourth Knowledge Hub wave."
     ],
     "relatedEntityIds": [
       "ea:publication:model-context-protocol-and-tool-using-ai-systems",
       "ea:publication:c2pa-content-credentials-and-generative-media-provenance",
       "ea:publication:webnn-and-local-ai-in-the-browser",
       "ea:publication:iiif-and-compound-cultural-objects",
-      "ea:publication:observability-for-ai-agents-and-tool-calling-systems"
+      "ea:publication:observability-for-ai-agents-and-tool-calling-systems",
+      "ea:publication:ai-search-structured-content-and-knowledge-graph-seo",
+      "ea:publication:responsible-ai-governance-for-creative-and-cultural-systems",
+      "ea:publication:prompt-injection-and-trust-boundaries-in-ai-knowledge-systems",
+      "ea:publication:verifiable-credentials-for-cultural-archives-and-creator-identity"
     ],
     "status": "active",
     "confidence": "published",
@@ -222,11 +231,13 @@
     "relationLabels": [
       "documents Model Context Protocol and Tool-Using AI Systems explains how MCP relates to AI agents and deterministic workflows.",
       "documents Observability for AI Agents and Tool-Calling Systems explains why agents need traceable model and tool behavior.",
+      "documents Prompt Injection and Trust Boundaries in AI Knowledge Systems documents prompt-injection risks for AI agents.",
       "documents AI Agents vs AI Workflows documents model-directed agency and deterministic workflow boundaries."
     ],
     "relatedEntityIds": [
       "ea:publication:model-context-protocol-and-tool-using-ai-systems",
       "ea:publication:observability-for-ai-agents-and-tool-calling-systems",
+      "ea:publication:prompt-injection-and-trust-boundaries-in-ai-knowledge-systems",
       "ea:publication:ai-agents-vs-ai-workflows"
     ],
     "status": "active",
@@ -290,11 +301,13 @@
     ],
     "questions": [],
     "relationLabels": [
+      "documents Responsible AI Governance for Creative and Cultural Systems frames responsible AI as augmented intelligence rather than unchecked replacement.",
       "documents Hypertext and Augmented Knowledge Systems connects hypertext to augmented intelligence and human knowledge work.",
       "documents Human Computer Interaction for Creative Tools connects interface design to augmented intelligence.",
       "documents Generative AI, Latent Space and Creative Workflows connects generative AI to augmented intelligence."
     ],
     "relatedEntityIds": [
+      "ea:publication:responsible-ai-governance-for-creative-and-cultural-systems",
       "ea:publication:hypertext-and-augmented-knowledge-systems",
       "ea:publication:human-computer-interaction-for-creative-tools",
       "ea:publication:generative-ai-latent-space-and-creative-workflows"
@@ -366,6 +379,8 @@
     "relationLabels": [
       "documents Model Context Protocol and Tool-Using AI Systems connects MCP permissions to contextual execution boundaries.",
       "documents Observability for AI Agents and Tool-Calling Systems ties telemetry to context-aware permissions and runtime accountability.",
+      "documents Responsible AI Governance for Creative and Cultural Systems links governance controls to contextual execution and permission boundaries.",
+      "documents Prompt Injection and Trust Boundaries in AI Knowledge Systems explains why permissions should be enforced through contextual execution.",
       "appliesConcept VASTE applies contextual execution through identity-aware graph records, relations, permissions and event propagation.",
       "defines Runtime Theory defines the research boundary for contextual execution inside Electronic Artefacts.",
       "documents Contextual Execution and Graph Runtimes documents contextual execution as a runtime principle.",
@@ -376,6 +391,8 @@
     "relatedEntityIds": [
       "ea:publication:model-context-protocol-and-tool-using-ai-systems",
       "ea:publication:observability-for-ai-agents-and-tool-calling-systems",
+      "ea:publication:responsible-ai-governance-for-creative-and-cultural-systems",
+      "ea:publication:prompt-injection-and-trust-boundaries-in-ai-knowledge-systems",
       "ea:program:vaste",
       "ea:researchField:runtime-theory",
       "ea:publication:contextual-execution-and-graph-runtimes",
@@ -494,6 +511,7 @@
     "questions": [],
     "relationLabels": [
       "documents IIIF and Compound Cultural Objects connects object presentation structure to digital preservation practice.",
+      "documents Verifiable Credentials for Cultural Archives and Creator Identity explains how credentials can support preservation events and archive trust.",
       "appliesConcept Palimpsests applies digital preservation by treating audio, visual and research traces as a compound cultural record.",
       "documents Digital Preservation and Living Archives documents digital preservation as long-term care for digital objects and context.",
       "documents Signal Archaeology, Audio Memory and Machine Listening connects audio traces to digital preservation practice.",
@@ -503,6 +521,7 @@
     ],
     "relatedEntityIds": [
       "ea:publication:iiif-and-compound-cultural-objects",
+      "ea:publication:verifiable-credentials-for-cultural-archives-and-creator-identity",
       "ea:project:palimpsests",
       "ea:publication:digital-preservation-and-living-archives",
       "ea:publication:signal-archaeology-audio-memory-and-machine-listening",
@@ -579,11 +598,13 @@
     ],
     "questions": [],
     "relationLabels": [
+      "documents Verifiable Credentials for Cultural Archives and Creator Identity connects signed claims to durable entity identity.",
       "documents Knowledge Graphs for Cultural Infrastructure explains why stable entity identity matters for graph publishing.",
       "documents Linked Data and Public Knowledge Pages explains the difference between page URLs and entity identifiers.",
       "documents Why Graphs Are More Powerful Than Folders explains why entity identity should survive path changes."
     ],
     "relatedEntityIds": [
+      "ea:publication:verifiable-credentials-for-cultural-archives-and-creator-identity",
       "ea:publication:knowledge-graphs-for-cultural-infrastructure",
       "ea:publication:linked-data-and-public-knowledge-pages",
       "ea:publication:why-graphs-are-more-powerful-than-folders"
@@ -656,10 +677,12 @@
     ],
     "questions": [],
     "relationLabels": [
+      "documents Responsible AI Governance for Creative and Cultural Systems documents governance practices for generative AI use in creative systems.",
       "documents Generative AI, Latent Space and Creative Workflows documents generative AI as a creative workflow topic.",
       "documents How Large Language Models Actually Work situates LLMs within generative AI."
     ],
     "relatedEntityIds": [
+      "ea:publication:responsible-ai-governance-for-creative-and-cultural-systems",
       "ea:publication:generative-ai-latent-space-and-creative-workflows",
       "ea:publication:how-large-language-models-actually-work"
     ],
@@ -778,6 +801,7 @@
     ],
     "questions": [],
     "relationLabels": [
+      "documents Prompt Injection and Trust Boundaries in AI Knowledge Systems uses graph runtimes as a control layer for AI knowledge operations.",
       "documents Contextual Execution and Graph Runtimes explains how contextual execution extends the graph-runtime concept.",
       "documents Event-Driven Architecture and Event Streams explains event flow inside graph runtimes.",
       "documents Runtime Engines and Domain Operating Systems connects domain runtimes to graph execution.",
@@ -786,6 +810,7 @@
       "appliesConcept Vestiges applies graph-runtime principles to cultural, craft and human-knowledge infrastructure."
     ],
     "relatedEntityIds": [
+      "ea:publication:prompt-injection-and-trust-boundaries-in-ai-knowledge-systems",
       "ea:publication:contextual-execution-and-graph-runtimes",
       "ea:publication:event-driven-architecture-and-event-streams",
       "ea:publication:runtime-engines-and-domain-operating-systems",
@@ -933,6 +958,7 @@
     ],
     "questions": [],
     "relationLabels": [
+      "documents AI Search, Structured Content and Knowledge Graph SEO documents knowledge graphs as an SEO architecture for AI retrieval.",
       "appliesConcept Vestiges applies knowledge-graph principles to culture, craft, institutions, techniques and public knowledge pages.",
       "documents Knowledge Graphs for Cultural Infrastructure documents the knowledge-graph concept for cultural publishing.",
       "documents Hypertext and Augmented Knowledge Systems explains how knowledge graphs strengthen linked pages with explicit relations.",
@@ -941,6 +967,7 @@
       "documents Why Graphs Are More Powerful Than Folders explains knowledge graph identity and traversal."
     ],
     "relatedEntityIds": [
+      "ea:publication:ai-search-structured-content-and-knowledge-graph-seo",
       "ea:project:vestiges",
       "ea:publication:knowledge-graphs-for-cultural-infrastructure",
       "ea:publication:hypertext-and-augmented-knowledge-systems",
@@ -1016,10 +1043,12 @@
     ],
     "questions": [],
     "relationLabels": [
+      "documents AI Search, Structured Content and Knowledge Graph SEO explains how Linked Data supports crawlable, machine-readable public knowledge pages.",
       "documents Linked Data and Public Knowledge Pages documents Linked Data as a publishing discipline for public knowledge pages.",
       "documents Hypertext and Augmented Knowledge Systems links hypertext practice to Linked Data and stable identifiers."
     ],
     "relatedEntityIds": [
+      "ea:publication:ai-search-structured-content-and-knowledge-graph-seo",
       "ea:publication:linked-data-and-public-knowledge-pages",
       "ea:publication:hypertext-and-augmented-knowledge-systems"
     ],
@@ -1380,6 +1409,8 @@
     "questions": [],
     "relationLabels": [
       "documents C2PA Content Credentials and Generative Media Provenance explains provenance as evidence rather than proof of truth.",
+      "documents Responsible AI Governance for Creative and Cultural Systems treats provenance as a governance requirement for AI-assisted cultural records.",
+      "documents Verifiable Credentials for Cultural Archives and Creator Identity documents verifiable credentials as one layer of provenance evidence.",
       "documents Knowledge Graphs for Cultural Infrastructure frames provenance as a trust layer for cultural knowledge graphs.",
       "documents Digital Preservation and Living Archives explains provenance as a central layer of living archive practice.",
       "documents Signal Archaeology, Audio Memory and Machine Listening explains why signal interpretation needs provenance.",
@@ -1392,6 +1423,8 @@
     ],
     "relatedEntityIds": [
       "ea:publication:c2pa-content-credentials-and-generative-media-provenance",
+      "ea:publication:responsible-ai-governance-for-creative-and-cultural-systems",
+      "ea:publication:verifiable-credentials-for-cultural-archives-and-creator-identity",
       "ea:publication:knowledge-graphs-for-cultural-infrastructure",
       "ea:publication:digital-preservation-and-living-archives",
       "ea:publication:signal-archaeology-audio-memory-and-machine-listening",
@@ -1434,9 +1467,11 @@
     ],
     "questions": [],
     "relationLabels": [
+      "documents AI Search, Structured Content and Knowledge Graph SEO connects AI search visibility to retrieval-augmented generation patterns.",
       "documents Retrieval-Augmented Generation and Knowledge Systems documents RAG architecture end to end."
     ],
     "relatedEntityIds": [
+      "ea:publication:ai-search-structured-content-and-knowledge-graph-seo",
       "ea:publication:retrieval-augmented-generation-and-knowledge-systems"
     ],
     "status": "active",
@@ -1944,6 +1979,62 @@
     "status": "active",
     "confidence": "published",
     "modifiedAt": "2026-06-24"
+  },
+  {
+    "id": "ea:publication:ai-search-structured-content-and-knowledge-graph-seo",
+    "route": "/publications/ai-search-structured-content-and-knowledge-graph-seo/",
+    "type": "publication",
+    "format": "technicalArticle",
+    "title": "AI Search, Structured Content and Knowledge Graph SEO",
+    "alternateNames": [],
+    "abstract": "A practical article on AI search visibility, structured content, JSON-LD, entity identity, knowledge graph SEO and non-commodity editorial authority.",
+    "headings": [
+      "Problem",
+      "Introduction",
+      "Architecture",
+      "Search is becoming retrieval",
+      "Non-commodity expertise",
+      "Structured data",
+      "Entity-first SEO",
+      "Query fan-out",
+      "Content clusters",
+      "Crawlable technical base",
+      "Metrics",
+      "Electronic Artefacts applications",
+      "Implementation",
+      "Evidence",
+      "Limitations",
+      "Related concepts",
+      "Related technology",
+      "Glossary",
+      "References"
+    ],
+    "body": "Problem Search is moving deeper into retrieval, summarization and query expansion. Users increasingly ask broad questions, compare alternatives and expect an answer shaped from multiple sources. Many websites respond by producing more pages, more keyword variants and more generic AI-written summaries. That is the wrong direction. The durable problem is not how to trick an answer engine. It is how to make a public corpus worth retrieving, easy to crawl, structurally understandable and editorially distinct. AI search rewards the same foundations that matter to humans: useful content, clear ownership, visible sources, stable pages and meaningful internal connections. Introduction AI search does not eliminate SEO. It changes the operational center of gravity. A search system that uses retrieval-augmented generation still needs crawlable web pages, ranked sources and identifiable evidence. If a page is not indexable, if it has no visible value, or if its claims cannot be tied to an entity and source, it is weak material for both search engines and AI systems. Google’s guidance for generative AI search emphasizes useful, non-commodity content, technical clarity and crawlable pages. Structured data remains useful because it gives explicit clues about what a page describes. But structured data should not become invisible decoration. It should compress the same truth that readers can see. Electronic Artefacts is already well positioned for this shift because the site is not only a portfolio. It is a knowledge graph with publications, concepts, technologies, programs, projects, sources and relation statements. The SEO opportunity is to make that architecture legible as a coherent body of expertise. Architecture Knowledge graph SEO combines editorial content, entity identity, internal linking, structured data, source metadata, canonical URLs, sitemap coverage, search documents and graph relations. The page is the human surface. The entity record is the durable semantic object. JSON-LD, identifier routes and relation exports make the same object machine-readable. Search is becoming retrieval Generative search uses retrieval patterns to ground answers in indexed pages. That means the page still matters, but it is often consumed as a source fragment, not only as a ten-blue-links destination. This changes the kind of page that performs well. A shallow article optimized around one keyword variant may be less useful than a focused page that answers a real problem, defines terms, links to adjacent concepts and includes enough context to be quoted or cited. For Electronic Artefacts, the strongest pages are not generic explainers. They connect a topic to a system perspective: graph runtimes, archive provenance, local AI, creative tooling, media credentials or cultural infrastructure. That point of view is difficult to reproduce from commodity search results. Non-commodity expertise Non-commodity content contains something specific: a position, a workflow, an implementation model, a failure mode, a comparison, a system diagram, a critique or a domain example. It does not merely restate public definitions. An article about structured data can say that JSON-LD exists. A stronger article explains why structured data must match visible content, how identifier routes avoid confusing a page with the thing described, and how relation validation prevents a knowledge hub from decaying into broken links. This is the editorial standard Electronic Artefacts should keep. The site should answer questions that a serious reader or AI retrieval system would ask: what is the entity, why does it matter, what is the system boundary, what are the risks, what are the sources, and where should the reader go next? Structured data Structured data helps search systems understand the page. Schema.org Article, CreativeWork, Organization, DefinedTerm and related types can describe title, author, publisher, dates, description, subject, citation and image. The key rule is correspondence. Do not add structured data that the visible page does not support. If the JSON-LD says the article is about provenance, the page should visibly discuss provenance and link to the concept. If the structured data names a publisher, the page should have a clear publishing context. JSON-LD is useful because it lets static pages carry structured meaning without changing the visible design. But it should be generated from the canonical content model, not hand-written separately for each page. Entity-first SEO Keyword-first SEO asks what phrase a page should rank for. Entity-first SEO asks what thing the page describes and how that thing relates to the rest of the corpus. An entity-first article has a stable ID, canonical slug, subjects, sources, related concepts and relation statements. A query about “AI search structured data” may retrieve an article, but the system can also see connections to JSON-LD, metadata, knowledge graphs and RAG. This is especially important for a studio with multiple identities: creative technology studio, cultural infrastructure lab, archive system, AI research practice and software design partner. Entity structure lets those identities reinforce each other instead of competing as disconnected landing pages. Query fan-out AI search may expand a user’s query into related subqueries. A page that only targets one exact phrase can miss this broader retrieval behavior. A page that covers the problem space with clear sections has more useful entry points. For example, a user asking whether SEO still matters for AI search may also need structured data, crawlability, helpful content, RAG, citations and entity authority. One strong article can cover those dimensions without becoming a loose list of keywords. Headings matter because they expose the shape of the answer. Sections such as “Structured data”, “Entity-first SEO” and “Implementation” are not only helpful to readers. They are retrieval handles. Content clusters A knowledge hub should not create endless near-duplicate articles. It should build clusters with distinct roles. A concept page defines. A technology page documents a protocol. A publication explains an argument or workflow. A collection groups a research wave. For AI search, clusters help machines and readers understand topical authority. One article about knowledge graph SEO can link to Linked Data, JSON-LD, RAG, entity identity and knowledge graphs. Those pages then link outward to related publications and project contexts. This is stronger than a blog archive sorted only by date. It gives every article a place in a semantic network. Crawlable technical base The technical baseline remains simple: pages must be crawlable, indexable, canonical, fast enough, internally linked and available as server-rendered or statically generated HTML. Client-side enhancements should not be the only place where important content appears. Electronic Artefacts already follows this direction by generating HTML, JSON-LD, sitemaps, search documents, identifier routes and graph exports from typed content. That turns SEO from a manual afterthought into a build output. The remaining work is editorial depth. Search systems can reach the pages. The pages then need to deserve retrieval. Metrics AI search measurement is less tidy than classic ranking checks. Useful signals include indexed pages, crawl errors, search queries, click-through rate, impressions, pages with structured data, internal search behavior, cited pages from external AI experiences where visible, and conversions from deep knowledge pages. Qualitative review matters. If a page appears in search but attracts the wrong audience, the content may be too broad. If AI systems cite a page without capturing its nuance, the page may need stronger definitions and clearer headings. Metrics should be interpreted by cluster. A niche article may create value by supporting authority, internal linking and sales conversations even when direct traffic is modest. Electronic Artefacts applications Electronic Artefacts should use AI search as a reason to strengthen its knowledge architecture, not to flatten it into trend posts. The strongest SEO content will explain difficult intersections: AI agents and consent, provenance and synthetic media, local AI and privacy, graph runtimes and editorial tooling, metadata and cultural memory. The site can also act as proof of work. Every article can demonstrate the same discipline it advocates: stable IDs, visible sources, structured metadata, relationship panels and canonical pages. This creates a defensible brand position. Electronic Artefacts does not merely write about knowledge graphs. It publishes through one. Implementation Start with a focused editorial cluster around AI search and knowledge architecture. For each article, define the primary entity, search intent, related concepts, sources, internal links, claims and expected reader action. Generate JSON-LD from the same record that renders the page. Validate canonical URLs, sitemap inclusion, article schema, headings, citation metadata and relation statements. Avoid separate SEO-only content fields that drift away from the visible article. Review each page against a simple question: would this still be useful if search traffic disappeared? If yes, it is likely good material for both humans and AI retrieval. Evidence Google Search Central describes generative AI search as rooted in core Search ranking and quality systems, including retrieval patterns over indexed pages. Its structured data guidance explains that structured data gives explicit clues about page meaning, while its AI search guidance emphasizes useful, non-commodity content and crawlable technical foundations. Schema.org Article provides a shared vocabulary for describing article metadata. Electronic Artefacts already uses generated structured data, identifier routes and relation files to expose a machine-readable knowledge corpus. Limitations No markup guarantees inclusion in search results or AI answers. AI search interfaces may cite, summarize or omit sources in ways publishers cannot fully control. Structured data can improve clarity, but it cannot compensate for weak content, missing authority or poor crawlability. Knowledge graph SEO also requires maintenance. Broken relations, stale sources and duplicate entities weaken the corpus over time. Related concepts Read Linked Data , Knowledge Graph , Metadata , Entity Identity and Retrieval-Augmented Generation . Related technology See JSON-LD and RDF . Glossary AI search: search experiences that use generative AI, retrieval and summarization to answer user queries. Knowledge graph SEO: SEO based on entities, relations, sources and structured data rather than isolated keyword pages. Entity identity: a stable identifier for a concept, publication, project, organization or other knowledge object. Structured data: machine-readable metadata embedded in a page or linked from it. Non-commodity content: content with distinctive expertise, experience, evidence or point of view. References Google Search Central. Optimizing your website for generative AI features on Google Search. Google Search Central. Introduction to structured data markup in Google Search. Schema.org . Article.",
+    "tags": [
+      "AI Search",
+      "Knowledge Graph SEO",
+      "Structured Data",
+      "JSON-LD",
+      "Entity SEO"
+    ],
+    "questions": [],
+    "relationLabels": [
+      "documents AI Search, Structured Content and Knowledge Graph SEO documents knowledge graphs as an SEO architecture for AI retrieval.",
+      "documents AI Search, Structured Content and Knowledge Graph SEO explains how Linked Data supports crawlable, machine-readable public knowledge pages.",
+      "usesTechnology AI Search, Structured Content and Knowledge Graph SEO uses JSON-LD as the structured data bridge between articles and graph records.",
+      "documents AI Search, Structured Content and Knowledge Graph SEO connects AI search visibility to retrieval-augmented generation patterns.",
+      "memberOfCollection AI Search, Structured Content and Knowledge Graph SEO is part of the fourth Knowledge Hub wave."
+    ],
+    "relatedEntityIds": [
+      "ea:concept:knowledge-graph",
+      "ea:concept:linked-data",
+      "ea:technology:json-ld",
+      "ea:concept:retrieval-augmented-generation",
+      "ea:collection:knowledge-hub-fourth-wave"
+    ],
+    "status": "active",
+    "confidence": "published",
+    "modifiedAt": "2026-06-25"
   },
   {
     "id": "ea:publication:algorithmic-composition-and-rule-based-music",
@@ -3482,6 +3573,63 @@
     "modifiedAt": "2026-06-24"
   },
   {
+    "id": "ea:publication:prompt-injection-and-trust-boundaries-in-ai-knowledge-systems",
+    "route": "/publications/prompt-injection-and-trust-boundaries-in-ai-knowledge-systems/",
+    "type": "publication",
+    "format": "technicalArticle",
+    "title": "Prompt Injection and Trust Boundaries in AI Knowledge Systems",
+    "alternateNames": [],
+    "abstract": "A security-focused article on prompt injection, retrieved content, tool use, MCP servers, trust boundaries, permissions and graph-aware AI workflows.",
+    "headings": [
+      "Problem",
+      "Introduction",
+      "Architecture",
+      "Trust boundaries",
+      "Direct and indirect injection",
+      "Retrieval risks",
+      "Tool use",
+      "MCP surfaces",
+      "Output handling",
+      "Excessive agency",
+      "Observability",
+      "Graph-aware controls",
+      "Electronic Artefacts applications",
+      "Implementation",
+      "Evidence",
+      "Limitations",
+      "Related concepts",
+      "Related technology",
+      "Glossary",
+      "References"
+    ],
+    "body": "Problem AI knowledge systems read documents, retrieve web pages, inspect archives, call tools and sometimes write data. Prompt injection occurs when untrusted content manipulates the model into ignoring boundaries, revealing data, invoking tools or producing misleading output. The issue is not only malicious prompts from users. Indirect prompt injection can arrive through retrieved pages, comments, PDFs, emails, metadata fields, issue descriptions, transcript text or tool responses. If the system treats all text as instruction, every source becomes a potential command channel. Introduction Prompt injection is one of the defining security problems of language-model applications. OWASP lists prompt injection as a major LLM application risk, alongside insecure output handling, sensitive information disclosure, insecure plugin design and excessive agency. Knowledge systems are especially exposed because their value comes from reading external or semi-trusted material. A research assistant may retrieve public web pages. An archive assistant may parse contributor notes. A coding agent may inspect repository files. An MCP host may connect to multiple servers that expose resources and tools. The central design rule is simple: retrieved content is data, not authority. It can inform an answer, but it should not decide permissions, tool access, system instructions or publication policy. Architecture A prompt-injection-resistant architecture separates user intent, system policy, trusted instructions, retrieved evidence, tool authority, permission checks, output validation and audit records. The model may reason over data, but external controls decide what it can access and what actions it can take. Trust boundaries A trust boundary separates content with different authority. System instructions have one authority level. User requests have another. Retrieved documents, public web pages and archive records have lower authority because they may be wrong, malicious, outdated or outside the current task. A model does not naturally enforce these layers. It receives tokens. The application must structure context and controls so that lower-trust content cannot become higher-trust instruction. For Electronic Artefacts, a public Knowledge Hub article can explain a concept, but it should not be able to tell an agent to publish a page, read restricted files or ignore validation. Direct and indirect injection Direct injection happens when a user explicitly tells the model to bypass rules. Indirect injection happens when a model reads content that contains adversarial instructions. Indirect injection is more dangerous in retrieval and agent systems because the attacker may control a source that the user never sees. Examples include a web page that tells an assistant to reveal private context, a PDF that instructs a summarizer to ignore earlier instructions, or a project note that tries to trigger an external send tool. The mitigation is not to hope that the model can distinguish all attacks. The mitigation is to prevent untrusted content from gaining action authority. Retrieval risks RAG systems place retrieved text into the model context. That text may contain instructions, markup, hidden content, conflicting claims or malicious strings. A naive prompt such as “follow the provided document” creates a vulnerability because the document can redefine the task. Context assembly should label retrieved content as evidence. It should quote or delimit sources, preserve source identity and state that sources must not be followed as instructions. More importantly, tool access and permissions should be enforced outside the model. Retrieval filters also matter. If private material is retrieved into a conversation where it is not allowed, prompt-injection defenses after retrieval cannot undo the exposure. Tool use Tool use raises the stakes. A model that can only draft text may be manipulated into a bad answer. A model that can call tools may be manipulated into sending data, modifying records, opening URLs, deleting files or publishing content. Tool permissions should be narrow, typed and context-aware. A tool should not expose broad shell access when the system only needs relation validation. A read tool should not gain write authority because the model decides it is convenient. For write actions, require explicit approval and validation. The model can propose an edit. The runtime should check entity IDs, predicates, visibility, actor rights and source requirements before any mutation. MCP surfaces MCP separates hosts, clients, servers, resources, prompts and tools. That separation is useful, but it does not remove injection risk. A resource exposed by an MCP server can contain hostile instructions. A tool exposed by another server can have side effects. A host that composes them carelessly can create a data-to-action bridge. The host must remain the user’s trust surface. It should show which servers are connected, which resources were read and which tools are being requested. It should also enforce permissions even when a model output appears confident. MCP servers should expose precise capabilities. A graph server can provide validate_relation before it provides write_relation . A media server can expose read-only metadata before it exposes publishing tools. Output handling Model output is untrusted until validated. If output becomes HTML, SQL, shell commands, JSON patches, graph relations or API input, it needs schema checks and escaping. Insecure output handling turns a text-generation problem into a software exploit. For knowledge systems, validate citations, IDs, relation predicates, visibility and content policy. A model should not invent a concept ID and have the system accept it because the string looks plausible. Typed schemas are a security control. They reduce the amount of freeform text that can cross into executable action. Excessive agency Excessive agency appears when a system grants a model more autonomy than the task requires. An assistant that can browse, retrieve private files, edit records and publish pages has a large attack surface. If the task is only to summarize a public article, those powers are unnecessary. Least privilege applies to agents. Give the model the minimum context and tools needed for the current step. Add review gates before irreversible or external side effects. Autonomy should be earned by evaluation. A workflow that passes controlled tests can gain limited automation. It should not start with broad authority because the demo is impressive. Observability Prompt injection attempts should be observable. The system should record resource reads, suspicious tool requests, denied actions, policy decisions and validation failures. This helps teams find unsafe sources and improve boundaries. The transcript is not enough. A model may not report why it requested a tool. The runtime should independently log the resource, tool, actor, approval state and outcome. Observability also supports accountability. If a public page changes, the team should know whether the change came from a human edit, an AI proposal, a scheduled build or a tool call. Graph-aware controls A knowledge graph can enforce semantic boundaries. It can know that a publication may document a concept, that a project may use a technology, that a restricted entity cannot be linked from a public relation, and that some predicates require evidence. This gives AI systems less room to improvise structure. A model may propose a relation, but the graph runtime decides whether the relation is valid. A model may request a source, but contextual execution decides whether the actor can read it. Graph-aware controls turn prompt-injection mitigation into domain architecture, not only prompt wording. Electronic Artefacts applications VASTE should treat prompt injection as a core runtime concern. Any future assistant that reads the Knowledge Hub, edits relations, drafts archive metadata or calls MCP tools should assume that retrieved content is untrusted. The public site can also model good practice. Articles can cite sources, expose provenance and link entities without turning visible content into executable instructions. The graph remains the authority layer. For Palimpsests, ORETH and Vestiges, this matters because archives contain heterogeneous material: notes, filenames, captions, transcripts, comments and embedded metadata. All of it can inform interpretation. None of it should silently control tools. Implementation Start by classifying context into authority levels: system policy, developer workflow, user request, trusted internal record, retrieved public source, untrusted external source and model output. Keep those levels visible in prompts and code. Enforce permissions outside the model. Use allowlisted tools, typed schemas, relation validation, approval gates and output sanitization. For retrieval, apply access control before context assembly and label sources as evidence. Add telemetry for denied tool calls, validation failures and suspicious source patterns. Review those events regularly and convert recurring failures into tests. Evidence OWASP identifies prompt injection, insecure output handling, sensitive information disclosure, insecure plugin design and excessive agency as major LLM application risks. MCP defines a capability model around resources, prompts and tools, which makes host-side consent and authorization central. NIST AI RMF provides a broader risk-management frame for mapping and managing AI risks. These sources converge on a practical lesson: language-model behavior must be surrounded by explicit controls. Limitations No prompt can fully solve prompt injection. Model-level defenses, delimiters and refusal instructions help, but the robust controls live in architecture: permissions, validation, tool design, retrieval filtering and human approval. There is also a usability tradeoff. Too many approval prompts can train users to accept everything. Security controls should be precise enough to matter. Related concepts Read AI Agent , Contextual Execution , Retrieval-Augmented Generation and Graph Runtime . Related technology See Model Context Protocol and OpenTelemetry . Glossary Prompt injection: an attempt to manipulate a language model through instructions that conflict with system intent. Indirect prompt injection: prompt injection delivered through retrieved or external content. Trust boundary: a separation between inputs or components with different authority. Tool authority: the permission to perform actions outside text generation. Excessive agency: granting a model more autonomy or tool access than a task requires. References OWASP Foundation. OWASP Top 10 for Large Language Model Applications. Model Context Protocol. Specification. 2025-06-18. National Institute of Standards and Technology. AI Risk Management Framework.",
+    "tags": [
+      "Prompt Injection",
+      "AI Security",
+      "AI Agents",
+      "MCP",
+      "Trust Boundaries"
+    ],
+    "questions": [],
+    "relationLabels": [
+      "documents Prompt Injection and Trust Boundaries in AI Knowledge Systems documents prompt-injection risks for AI agents.",
+      "documents Prompt Injection and Trust Boundaries in AI Knowledge Systems explains why permissions should be enforced through contextual execution.",
+      "documents Prompt Injection and Trust Boundaries in AI Knowledge Systems uses graph runtimes as a control layer for AI knowledge operations.",
+      "usesTechnology Prompt Injection and Trust Boundaries in AI Knowledge Systems uses MCP as a reference surface for resources, tools and host-side consent.",
+      "memberOfCollection Prompt Injection and Trust Boundaries in AI Knowledge Systems is part of the fourth Knowledge Hub wave."
+    ],
+    "relatedEntityIds": [
+      "ea:concept:ai-agent",
+      "ea:concept:contextual-execution",
+      "ea:concept:graph-runtime",
+      "ea:technology:model-context-protocol",
+      "ea:collection:knowledge-hub-fourth-wave"
+    ],
+    "status": "active",
+    "confidence": "published",
+    "modifiedAt": "2026-06-25"
+  },
+  {
     "id": "ea:publication:redis-streams-for-orchestration",
     "route": "/publications/redis-streams-for-orchestration/",
     "type": "publication",
@@ -3545,6 +3693,63 @@
     "status": "active",
     "confidence": "published",
     "modifiedAt": "2026-06-24"
+  },
+  {
+    "id": "ea:publication:responsible-ai-governance-for-creative-and-cultural-systems",
+    "route": "/publications/responsible-ai-governance-for-creative-and-cultural-systems/",
+    "type": "publication",
+    "format": "technicalArticle",
+    "title": "Responsible AI Governance for Creative and Cultural Systems",
+    "alternateNames": [],
+    "abstract": "A practical governance article for AI in creative studios, cultural archives and knowledge systems, covering risk, review, provenance, rights and evaluation.",
+    "headings": [
+      "Problem",
+      "Introduction",
+      "Architecture",
+      "Use-case inventory",
+      "Risk classification",
+      "Human review",
+      "Provenance",
+      "Rights and copyright",
+      "Privacy",
+      "Evaluation",
+      "Documentation",
+      "Incident response",
+      "Electronic Artefacts applications",
+      "Implementation",
+      "Evidence",
+      "Limitations",
+      "Related concepts",
+      "Related articles",
+      "Glossary",
+      "References"
+    ],
+    "body": "Problem Creative and cultural organizations are adopting AI for writing, search, image generation, audio analysis, metadata drafting, translation, coding and operations. The risk is not only that a model produces a wrong answer. The larger risk is that AI quietly becomes infrastructure without clear ownership, review, source tracking, rights policy or incident response. Generic AI ethics statements do not solve this. A studio needs operational governance: what can be automated, what requires review, which materials can be sent to a model, how sources are recorded, how outputs are labelled, and when a system must refuse or escalate. Introduction Responsible AI governance is the discipline of deciding how AI systems are selected, designed, evaluated, deployed, monitored and retired. It includes legal obligations, but it is broader than compliance. It connects risk management, product design, editorial standards, security, privacy, rights and human judgment. The European AI Act and NIST AI Risk Management Framework make the direction clear. AI governance is moving from abstract principles toward documented roles, risk controls, transparency, accountability and lifecycle management. Even when a creative studio is not a foundation-model provider, it still acts as a deployer, integrator, publisher or downstream system designer. Electronic Artefacts should treat this as part of its design language. Systems such as VASTE, ORETH, Palimpsests and the Knowledge Hub can use AI, but they should expose provenance, preserve human agency and keep cultural interpretation separate from model output. Architecture A responsible AI governance architecture includes system inventory, use-case classification, data policy, model and vendor records, prompt and tool boundaries, human review, provenance capture, evaluation, incident handling, access control, audit events and public disclosure where appropriate. Use-case inventory Governance starts with an inventory. Teams need to know where AI is used before they can manage it. A use case might be public content generation, internal search, archive transcription, image variation, audio segmentation, metadata suggestion, code assistance, client communication or automated publishing. Each use case should record purpose, users, data sources, model provider, outputs, review level, affected people and failure consequences. This does not need to be bureaucratic. A small table is better than invisible adoption. The inventory should distinguish experiments from production systems. A private prototype that summarizes public articles is different from a workflow that rewrites client materials or publishes archive metadata. Risk classification Risk depends on context. The same model can be low risk for brainstorming titles and high risk for making decisions about people, rights or public evidence. A cultural archive has special concerns because metadata can affect attribution, reputation, cultural sensitivity and future interpretation. Classify use cases by impact. Low-impact assistance can use lighter review. Public claims, rights statements, personal data, restricted cultural material and irreversible publishing need stronger controls. The goal is not to block experimentation. It is to align review effort with consequence. Human review Human review should not be vague. A reviewer needs to know what they are checking: factual accuracy, source support, tone, rights, privacy, cultural sensitivity, accessibility, security or brand fit. For creative work, review also protects authorship. AI can propose, transform and annotate, but it should not silently overwrite artistic decisions. A useful system shows alternatives, preserves versions and makes acceptance explicit. In Electronic Artefacts terms, augmented intelligence is the preferred frame. AI should expand perception and memory while leaving accountable judgment with people. Provenance AI governance fails when outputs lose their origin. A text, image, audio annotation or metadata field should preserve enough provenance to explain how it was produced. That may include model, prompt template, source records, editor, date, tool version and review status. Provenance does not require publishing every private detail. It requires a trustworthy internal record and a public disclosure policy. A generated image may need a visible label. An AI-assisted metadata draft may need only an internal audit trail until approved. For archives and cultural infrastructure, provenance is not administrative overhead. It is part of the work’s future intelligibility. Rights and copyright Creative AI governance must include rights. Teams should know whether source material can be uploaded to a model provider, whether generated outputs can be published, whether training data issues affect procurement, and how collaborator agreements handle AI assistance. Rights and provenance are linked but not identical. A system can accurately record that an output was generated from a source and still lack permission to use that source. Conversely, a licensed workflow still needs clear attribution and transformation records. The safest default is to keep sensitive, client, unreleased and third-party material out of external models unless permission and contractual terms are explicit. Privacy AI tools often turn private work into external processing. A prompt may include names, locations, health details, credentials, drafts, contracts or unreleased project material. Governance must define what can leave local infrastructure. Privacy controls should operate before model calls. Redaction after generation is too late. For internal assistants, retrieval filters and model routing should depend on user role, task and data class. Local or open-weight systems may reduce provider exposure, but they do not remove privacy obligations. Logs, embeddings, caches and generated summaries can all retain sensitive information. Evaluation Responsible AI requires evaluation tied to the task. A metadata assistant should be tested for source support, field validity, hallucinated names and inappropriate confidence. A creative image workflow should be evaluated for rights, disclosure and process control. An agentic workflow should be evaluated for tool safety and permission boundaries. Evaluation should include adversarial cases, ambiguous sources and no-answer scenarios. A system that always produces something may be less trustworthy than one that can abstain. Keep evaluation records with model version, prompt version, corpus version and tool schema version. Otherwise, improvements and regressions cannot be explained. Documentation Documentation should be written for operators, reviewers and future maintainers. It should explain purpose, scope, known limits, data sources, review process, escalation path and public disclosure rules. For public systems, documentation can become part of trust. A Knowledge Hub page should identify its author, publisher, modification date and sources. A future AI-assisted page should also be able to say how AI was used if that use affects interpretation. Documentation is not a substitute for controls. It is the map that lets controls be inspected. Incident response AI incidents include factual errors, privacy leakage, unsafe tool calls, biased outputs, rights violations, prompt injection, unauthorized publication and misleading provenance. Governance needs a path for reporting, triage, correction and postmortem. A small studio can keep this lightweight. Define who can pause an AI workflow, how public corrections are issued, where audit events are stored and how affected records are reviewed. Incident response should feed back into evaluation. If a system fails in production, add a test that would have caught it. Electronic Artefacts applications For VASTE, governance means tool boundaries, graph permissions, audit events and context-aware execution. For ORETH, it means careful separation between machine listening measurements and artistic interpretation. For Palimpsests, it means documenting synthetic or transformed media without reducing the work to a warning label. For the Knowledge Hub, it means source-grounded editorial publishing. The common pattern is infrastructure with memory. Every AI action that changes knowledge, media or public representation should leave an accountable trace. Implementation Start with a one-page AI use-case register and a review checklist. For each workflow, define allowed data, prohibited data, model provider, output type, human reviewer, retention policy and disclosure rule. Then implement controls in the system: role-based retrieval, prompt templates under version control, tool schemas, approval gates, telemetry, provenance fields and validation. Do not rely on policy alone when code can prevent unsafe behavior. Finally, review the register quarterly or whenever a model, vendor, dataset or publication workflow changes. Evidence The European Commission describes the AI Act as a regulatory framework with a phased application timeline, including provisions already in effect and broader applicability on 2 August 2026. NIST’s AI Risk Management Framework provides a voluntary structure for mapping, measuring, managing and governing AI risk. NIST’s Generative AI Profile identifies risks and actions specific to generative AI systems. Together, these sources point toward operational lifecycle governance rather than one-time ethical declarations. Limitations This article is not legal advice. AI obligations depend on jurisdiction, role, sector, system use and contractual context. Governance can reduce risk, but it cannot eliminate uncertainty in fast-moving model, platform and regulatory environments. Small teams also need proportionality. A governance process that is too heavy will be ignored. The practical target is clear enough to guide real decisions. Related concepts Read Generative AI , Augmented Intelligence , Provenance , Systems Thinking and Contextual Execution . Related articles Continue with C2PA Content Credentials and Generative Media Provenance , Observability for AI Agents and Tool-Calling Systems and Retrieval-Augmented Generation and Knowledge Systems . Glossary AI governance: the operating system of decisions, controls and records around AI use. Use-case register: an inventory of where and why AI is used. Human review: accountable inspection of AI outputs against explicit criteria. Provenance: information about sources, transformations, people, tools and decisions. Incident: an AI-related failure that requires correction, containment or review. References European Commission. AI Act. National Institute of Standards and Technology. AI Risk Management Framework. National Institute of Standards and Technology. Artificial Intelligence Risk Management Framework Generative Artificial Intelligence Profile.",
+    "tags": [
+      "Responsible AI",
+      "AI Governance",
+      "Creative Technology",
+      "Cultural Infrastructure",
+      "Provenance"
+    ],
+    "questions": [],
+    "relationLabels": [
+      "documents Responsible AI Governance for Creative and Cultural Systems documents governance practices for generative AI use in creative systems.",
+      "documents Responsible AI Governance for Creative and Cultural Systems frames responsible AI as augmented intelligence rather than unchecked replacement.",
+      "documents Responsible AI Governance for Creative and Cultural Systems treats provenance as a governance requirement for AI-assisted cultural records.",
+      "documents Responsible AI Governance for Creative and Cultural Systems links governance controls to contextual execution and permission boundaries.",
+      "memberOfCollection Responsible AI Governance for Creative and Cultural Systems is part of the fourth Knowledge Hub wave."
+    ],
+    "relatedEntityIds": [
+      "ea:concept:generative-ai",
+      "ea:concept:augmented-intelligence",
+      "ea:concept:provenance",
+      "ea:concept:contextual-execution",
+      "ea:collection:knowledge-hub-fourth-wave"
+    ],
+    "status": "active",
+    "confidence": "published",
+    "modifiedAt": "2026-06-25"
   },
   {
     "id": "ea:publication:retrieval-augmented-generation-and-knowledge-systems",
@@ -3860,6 +4065,62 @@
     "modifiedAt": "2026-06-24"
   },
   {
+    "id": "ea:publication:verifiable-credentials-for-cultural-archives-and-creator-identity",
+    "route": "/publications/verifiable-credentials-for-cultural-archives-and-creator-identity/",
+    "type": "publication",
+    "format": "technicalArticle",
+    "title": "Verifiable Credentials for Cultural Archives and Creator Identity",
+    "alternateNames": [],
+    "abstract": "A practical article on W3C Verifiable Credentials, creator identity, cultural archives, provenance, claims, privacy and machine-readable trust.",
+    "headings": [
+      "Problem",
+      "Introduction",
+      "Architecture",
+      "Issuers, holders and verifiers",
+      "Claims and subjects",
+      "Creator identity",
+      "Archive provenance",
+      "C2PA comparison",
+      "Rights and permissions",
+      "Privacy",
+      "Trust policy",
+      "Electronic Artefacts applications",
+      "Implementation",
+      "Evidence",
+      "Limitations",
+      "Related concepts",
+      "Related technology",
+      "Glossary",
+      "References"
+    ],
+    "body": "Problem Creative and cultural systems need to know who made a work, who signed a statement, which organization published a record, what rights apply and which evidence supports a claim. Conventional web pages can say these things, but they are often difficult to verify, reuse or carry across systems. Verifiable credentials offer a way to express claims that can be cryptographically checked. The opportunity is significant for creator identity and archives. The danger is treating a signed claim as final truth rather than one piece of provenance. Introduction W3C Verifiable Credentials define a data model for claims made by an issuer about a subject and presented to a verifier. A credential might represent a driver’s license, membership, certificate, permission, authorship claim or institutional statement. The model includes issuer, subject, claims, proof, validity and related metadata. For cultural infrastructure, the interesting use is not only personal identity. Credentials can express machine-readable claims about creators, works, archive events, rights, collection membership, institutional approval or publication status. Electronic Artefacts already uses entity identity and provenance across public records. Verifiable credentials could extend that architecture by letting some claims become portable, signed and independently checkable while still remaining embedded in a wider graph of interpretation. Architecture A verifiable credential architecture contains issuers, holders, verifiers, credential subjects, claims, proof mechanisms, status, schemas, trust policy, privacy controls and graph records that contextualize the credential. The credential carries signed claims. The archive decides how those claims are interpreted. Issuers, holders and verifiers The basic roles are issuer, holder and verifier. The issuer makes a claim. The holder stores and presents the credential. The verifier checks the credential and decides whether to trust the issuer for that context. In cultural systems, those roles can be flexible. A creator may hold a credential issued by a studio. A museum may issue a credential about acquisition. A publishing platform may verify a creator credential before displaying attribution. An archive may verify an institutional credential before importing records. Trust is not automatic. A valid signature proves that a credential has not been tampered with and was issued by a key. It does not prove that the issuer is authoritative, honest or appropriate for every claim. Claims and subjects Credentials express claims about subjects. A subject can be a person, organization, work, event, dataset, project or other entity. This aligns with knowledge graph thinking because the claim needs a stable subject identity. For example, a credential could state that a specific organization published a project record on a date, that a creator contributed to a work, or that a rights review was completed. Those claims become more useful when subjects have stable IDs and canonical pages. The claim should be narrow enough to verify. “This work is authentic” is too broad. “This organization signed this publication record on this date” is clearer. Creator identity Creator identity is more than a display name. It may include pseudonyms, collectives, roles, periods of activity, works, rights, platforms and institutional references. Credentials can help creators carry specific claims across systems without depending entirely on platform profiles. A creator credential could support attribution, portfolio verification, contributor access or rights workflows. It should not force public exposure of legal identity when a pseudonymous or collective identity is the meaningful cultural identity. Designing for creators means supporting selective disclosure, role-specific claims and correction mechanisms. Identity infrastructure can protect creators or overexpose them depending on implementation. Archive provenance Archives can use credentials to strengthen provenance. A credential might attest to deposit, review, publication, transformation, rights clearance or preservation action. The credential can be stored alongside graph records and file metadata. This complements W3C PROV thinking. PROV models entities, activities and agents. Verifiable credentials can sign selected claims about those entities, activities and agents. The graph can then connect signed claims to visible records, sources and interpretation. Credentials should not replace archive description. They make some claims verifiable. They do not explain cultural significance by themselves. C2PA comparison C2PA focuses on media provenance attached to or associated with assets. Verifiable credentials are broader and can express many kinds of claims. The two approaches can work together. A media asset might carry C2PA Content Credentials describing file-level origin and edits. A cultural archive might also store verifiable credentials about creator identity, rights review or institutional publication. The public page can explain how these layers relate. The distinction matters. File-level provenance is not the same as creator identity. A signed creator credential is not the same as media transformation history. A robust archive can model both. Rights and permissions Rights workflows are promising but sensitive. A credential could express that a person granted permission for a specific use, that a license applies, or that a rights review was completed. But rights are legal and contextual. A credential should not oversimplify them. Use precise claim types, validity periods, jurisdiction notes and source references. Store the underlying agreement where appropriate. Allow revocation or status updates when a credential no longer applies. The public display should avoid implying broader permission than the credential actually grants. Privacy Credentials can leak information. Identifiers, signatures, issuer patterns and repeated presentations can enable correlation. W3C’s specification includes privacy considerations for identifier-based correlation, metadata and data minimization. Cultural archives need extra care because identity can be politically, socially or personally sensitive. Public recognition and privacy are not opposites, but they require design. Prefer minimal claims. A public record may need to verify an artist role without exposing a home address, legal name or unrelated identifiers. Trust policy Verification requires policy. Which issuers does the archive trust? For which claim types? Under which conditions? What happens when a key is rotated, a credential expires or an issuer is compromised? Without policy, verification becomes theater. A system can show a green check while users do not know what was actually verified. The interface should say what was checked and what was not. For Electronic Artefacts, trust policy could be graph-aware. The organization may trust itself for publication records, a collaborator for project contribution claims and a standards body for protocol documentation, but those are different trust relations. Electronic Artefacts applications Electronic Artefacts could use verifiable credentials to sign publication records, creator contribution claims, archive deposit events, rights-review milestones or project release statements. These credentials would not replace the Knowledge Hub. They would add a portable trust layer to selected claims. Palimpsests could benefit from credentials that distinguish creator contribution, media provenance and public release state. Vestiges could use credentials to connect archive objects to institutional statements. VASTE could validate credentials as part of contextual execution before granting access or publication authority. The most valuable use is selective. Not every relation needs a credential. Credentials should be reserved for claims where portability, verification or institutional trust changes the outcome. Implementation Start with one low-risk claim type: Electronic Artefacts signs a credential asserting that it published a specific public Knowledge Hub article with a canonical URL and date. Store the credential ID in the graph record and expose a human-readable verification note. Then test a contributor claim for a project with explicit consent. Define issuer identity, subject IDs, claim schema, revocation status, privacy policy and display language before expanding. Do not begin with broad identity wallets or legal rights automation. Begin with narrow, inspectable claims that improve provenance. Evidence W3C Verifiable Credentials Data Model v2.0 defines an extensible model for claims made by issuers about subjects and describes security, privacy, accessibility and internationalization considerations. W3C PROV provides a broader provenance model for entities, activities and agents. C2PA provides a media-specific provenance framework for content credentials. These standards point to a layered approach: signed claims, provenance graphs, media manifests and editorial context. Limitations Verifiable credentials do not solve trust by themselves. A false claim can be signed. A valid credential can be presented in a misleading context. A verifier can trust the wrong issuer. Privacy can be damaged by over-disclosure. The technology is strongest when claims are narrow, issuers are known, subjects have stable identity and verification policy is visible. Related concepts Read Provenance , Entity Identity , Digital Preservation and Linked Data . Related technology See C2PA , JSON-LD and RDF . Glossary Verifiable credential: a signed data object expressing claims made by an issuer about a subject. Issuer: the party that creates and signs a credential. Holder: the party that stores and presents a credential. Verifier: the party that checks a credential and decides whether to trust it. Selective disclosure: revealing only the claims needed for a specific interaction. References W3C. Verifiable Credentials Data Model v2.0. 2025. W3C. PROV-Overview. 2013. Coalition for Content Provenance and Authenticity. C2PA Specifications.",
+    "tags": [
+      "Verifiable Credentials",
+      "Creator Identity",
+      "Provenance",
+      "Digital Preservation",
+      "Cultural Archives"
+    ],
+    "questions": [],
+    "relationLabels": [
+      "documents Verifiable Credentials for Cultural Archives and Creator Identity documents verifiable credentials as one layer of provenance evidence.",
+      "documents Verifiable Credentials for Cultural Archives and Creator Identity connects signed claims to durable entity identity.",
+      "documents Verifiable Credentials for Cultural Archives and Creator Identity explains how credentials can support preservation events and archive trust.",
+      "usesTechnology Verifiable Credentials for Cultural Archives and Creator Identity compares W3C credentials with C2PA media provenance.",
+      "memberOfCollection Verifiable Credentials for Cultural Archives and Creator Identity is part of the fourth Knowledge Hub wave."
+    ],
+    "relatedEntityIds": [
+      "ea:concept:provenance",
+      "ea:concept:entity-identity",
+      "ea:concept:digital-preservation",
+      "ea:technology:c2pa",
+      "ea:collection:knowledge-hub-fourth-wave"
+    ],
+    "status": "active",
+    "confidence": "published",
+    "modifiedAt": "2026-06-25"
+  },
+  {
     "id": "ea:publication:web-audio-and-browser-based-sound-systems",
     "route": "/publications/web-audio-and-browser-based-sound-systems/",
     "type": "publication",
@@ -4134,11 +4395,13 @@
     "questions": [],
     "relationLabels": [
       "documents C2PA Content Credentials and Generative Media Provenance documents C2PA as media provenance infrastructure.",
-      "integratesWith Palimpsests can integrate with C2PA to attach signed provenance and production memory to public media derivatives."
+      "integratesWith Palimpsests can integrate with C2PA to attach signed provenance and production memory to public media derivatives.",
+      "usesTechnology Verifiable Credentials for Cultural Archives and Creator Identity compares W3C credentials with C2PA media provenance."
     ],
     "relatedEntityIds": [
       "ea:publication:c2pa-content-credentials-and-generative-media-provenance",
-      "ea:project:palimpsests"
+      "ea:project:palimpsests",
+      "ea:publication:verifiable-credentials-for-cultural-archives-and-creator-identity"
     ],
     "status": "active",
     "confidence": "canonical",
@@ -4257,9 +4520,11 @@
     ],
     "questions": [],
     "relationLabels": [
+      "usesTechnology AI Search, Structured Content and Knowledge Graph SEO uses JSON-LD as the structured data bridge between articles and graph records.",
       "usesTechnology Linked Data and Public Knowledge Pages uses JSON-LD as the practical structured-data format for static knowledge pages."
     ],
     "relatedEntityIds": [
+      "ea:publication:ai-search-structured-content-and-knowledge-graph-seo",
       "ea:publication:linked-data-and-public-knowledge-pages"
     ],
     "status": "active",
@@ -4321,12 +4586,14 @@
     "relationLabels": [
       "documents Model Context Protocol and Tool-Using AI Systems documents MCP as a capability protocol for AI tools, prompts and resources.",
       "usesTechnology Observability for AI Agents and Tool-Calling Systems uses MCP as the reference capability surface for tool telemetry.",
-      "integratesWith VASTE can integrate with MCP as a scoped interface for graph resources, prompts and controlled tools."
+      "integratesWith VASTE can integrate with MCP as a scoped interface for graph resources, prompts and controlled tools.",
+      "usesTechnology Prompt Injection and Trust Boundaries in AI Knowledge Systems uses MCP as a reference surface for resources, tools and host-side consent."
     ],
     "relatedEntityIds": [
       "ea:publication:model-context-protocol-and-tool-using-ai-systems",
       "ea:publication:observability-for-ai-agents-and-tool-calling-systems",
-      "ea:program:vaste"
+      "ea:program:vaste",
+      "ea:publication:prompt-injection-and-trust-boundaries-in-ai-knowledge-systems"
     ],
     "status": "active",
     "confidence": "canonical",

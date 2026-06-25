@@ -12,6 +12,14 @@
       "confidence": "canonical"
     },
     {
+      "id": "ea:publication:ai-search-structured-content-and-knowledge-graph-seo",
+      "type": "publication",
+      "title": "AI Search, Structured Content and Knowledge Graph SEO",
+      "route": "/publications/ai-search-structured-content-and-knowledge-graph-seo/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
       "id": "ea:publication:retrieval-augmented-generation-and-knowledge-systems",
       "type": "publication",
       "title": "Retrieval-Augmented Generation and Knowledge Systems",
@@ -21,6 +29,15 @@
     }
   ],
   "edges": [
+    {
+      "id": "ear:ai-search-seo-article-documents-rag",
+      "source": "ea:publication:ai-search-structured-content-and-knowledge-graph-seo",
+      "target": "ea:concept:retrieval-augmented-generation",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "AI Search, Structured Content and Knowledge Graph SEO connects AI search visibility to retrieval-augmented generation patterns.",
+      "confidence": "published"
+    },
     {
       "id": "ear:rag-article-documents-rag",
       "source": "ea:publication:retrieval-augmented-generation-and-knowledge-systems",

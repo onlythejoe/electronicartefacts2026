@@ -6,6 +6,13 @@
   const page = document.body.dataset.page || "home";
 
   const entityById = (id) => entityIndex[id] || null;
+  const scaleLength = (value, factor = 0.22) => {
+    const text = String(value || "0rem").trim();
+    const match = text.match(/^(-?\d+(?:\.\d+)?)rem$/);
+    if (!match) return text;
+    const scaled = Number(match[1]) * factor;
+    return `${Number(scaled.toFixed(3))}rem`;
+  };
 
   const navigationSection = ({ eyebrow, title, copy, cards = [] }) => `
     <section class="zone-card hero">
@@ -69,6 +76,9 @@
               const label = node.label || `Node ${index + 1}`;
               const note = node.note || "";
               const tone = String(node.tone || "").replace(/[^a-z0-9-]/gi, "").toLowerCase();
+              const x = node.x || "0rem";
+              const y = node.y || "0rem";
+              const z = node.z || "0rem";
               const classes = [
                 "graph-surface__node",
                 node.emphasis ? "is-emphasis" : "",
@@ -92,7 +102,7 @@
                   data-node-label="${esc(label)}"
                   data-node-note="${esc(note)}"
                   ${attrs}
-                  style="--x:${esc(node.x || "0rem")};--y:${esc(node.y || "0rem")};--z:${esc(node.z || "0rem")};--node-color:${esc(node.color || "rgba(234,220,207,0.9)")};"
+                  style="--x:${esc(x)};--y:${esc(y)};--z:${esc(z)};--mobile-x:${esc(scaleLength(x))};--mobile-y:${esc(scaleLength(y))};--mobile-z:${esc(scaleLength(z, 0.2))};--node-color:${esc(node.color || "rgba(234,220,207,0.9)")};"
                 >
                   <span class="graph-surface__node-pin" aria-hidden="true"></span>
                   <span class="graph-surface__node-body">

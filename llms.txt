@@ -21,6 +21,8 @@ Use canonical HTML URLs for human-facing citations. Use identifier routes under 
 - [Sitemap](https://electronicartefacts.com/sitemap.xml): Indexable public URLs.
 - [Agent manifest](https://electronicartefacts.com/agent-manifest.json): Structured map of public records and retrieval resources.
 - [Full LLM index](https://electronicartefacts.com/llms-full.txt): Complete public record list with summaries and identifier links.
+- [OpenSearch](https://electronicartefacts.com/opensearch.xml): Search description for /search/?q={searchTerms}.
+- [Knowledge graph catalog JSON-LD](https://electronicartefacts.com/graph/catalog.jsonld): DataCatalog/Dataset description of the public graph.
 - [Search documents](https://electronicartefacts.com/search/documents.json): Public retrieval corpus used by site search.
 - [Public catalog](https://electronicartefacts.com/generated/public/catalog.json): Public entities, routes and relations.
 - [Graph entities](https://electronicartefacts.com/graph/entities.json): Public entity catalog export.
@@ -40,17 +42,19 @@ Use canonical HTML URLs for human-facing citations. Use identifier routes under 
 - [ORETH](https://electronicartefacts.com/programs/oreth/): A public program record for ORETH as both an audio research system and the technical-cultural layer connected to Palimpsests.
 - [Palimpsests](https://electronicartefacts.com/projects/palimpsests/): A canonical project record for Palimpsests as a compound audio, visual and research publication within Electronic Artefacts.
 - [Runtime Theory](https://electronicartefacts.com/research/fields/runtime-theory/): An active Electronic Artefacts research field connecting early VOID experiments, VASTE and the definition of graph runtime.
+- [AI Search, Structured Content and Knowledge Graph SEO](https://electronicartefacts.com/publications/ai-search-structured-content-and-knowledge-graph-seo/): Understand how AI search changes SEO strategy through helpful content, structured data, crawlable pages, entity identity and knowledge graph architecture.
 - [Algorithmic Composition and Rule-Based Music](https://electronicartefacts.com/publications/algorithmic-composition-and-rule-based-music/): A technical article on algorithmic composition, rule-based music, generative sound, cybernetics and Electronic Artefacts audio research.
 - [C2PA Content Credentials and Generative Media Provenance](https://electronicartefacts.com/publications/c2pa-content-credentials-and-generative-media-provenance/): Understand C2PA and Content Credentials for media provenance, generative AI labelling, archive trust and cultural production workflows.
 - [Contextual Execution and Graph Runtimes](https://electronicartefacts.com/publications/contextual-execution-and-graph-runtimes/): A technical article connecting contextual execution, graph runtime, Runtime Theory and VASTE.
 - [Creative Coding Pedagogy from Logo to p5.js](https://electronicartefacts.com/publications/creative-coding-pedagogy-from-logo-to-p5js/): A technical article on teaching creative coding, Processing, p5.js, computational media, open source and Electronic Artefacts learning culture.
 - [Digital Preservation and Living Archives](https://electronicartefacts.com/publications/digital-preservation-and-living-archives/): A technical article on digital preservation, living archives, file formats, provenance and Electronic Artefacts cultural records.
-- [Event-Driven Architecture and Event Streams](https://electronicartefacts.com/publications/event-driven-architecture-and-event-streams/): Learn event-driven architecture through event streams, delivery guarantees, schema evolution, idempotency, projections and runtime design.
 
 ## Optional
 
 - [Legal notice](https://electronicartefacts.com/mentions-legales.html)
 - [Privacy policy](https://electronicartefacts.com/confidentialite.html)
 - [Archive collections](https://electronicartefacts.com/archive/collections/)
+- [Humans.txt](https://electronicartefacts.com/humans.txt)
+- [Security.txt](https://electronicartefacts.com/.well-known/security.txt)
 
-Last curated source update: 2026-06-24
+Last curated source update: 2026-06-25

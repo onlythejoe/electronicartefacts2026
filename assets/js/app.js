@@ -5252,9 +5252,9 @@ window.EA_PUBLIC_CATALOG = {
       "kind": "collection",
       "type": "collection",
       "title": "Knowledge Hub Fourth Wave",
-      "subtitle": "AI Protocols, Provenance and Cultural Interfaces",
-      "summary": "Knowledge Hub Fourth Wave groups articles and technology records about MCP, C2PA, WebNN, IIIF and OpenTelemetry for durable AI and cultural infrastructure.",
-      "description": "A curated Electronic Artefacts collection about AI tool protocols, media provenance, browser-local inference, archive presentation and agent observability.",
+      "subtitle": "AI Protocols, Provenance, Governance and Cultural Interfaces",
+      "summary": "Knowledge Hub Fourth Wave groups articles and technology records about MCP, C2PA, WebNN, IIIF, OpenTelemetry, AI search, governance, prompt injection and verifiable identity.",
+      "description": "A curated Electronic Artefacts collection about AI tool protocols, media provenance, browser-local inference, archive presentation, agent observability, governance and knowledge graph SEO.",
       "status": "active",
       "maturity": "research",
       "confidence": "published",
@@ -5264,6 +5264,7 @@ window.EA_PUBLIC_CATALOG = {
         "Knowledge Hub",
         "Fourth Wave",
         "AI Protocols",
+        "AI Governance",
         "Provenance",
         "Cultural Infrastructure"
       ],
@@ -6853,6 +6854,42 @@ window.EA_PUBLIC_CATALOG = {
       }
     },
     {
+      "id": "ea:publication:ai-search-structured-content-and-knowledge-graph-seo",
+      "legacyId": "ai-search-structured-content-and-knowledge-graph-seo",
+      "kind": "publication",
+      "type": "publication",
+      "title": "AI Search, Structured Content and Knowledge Graph SEO",
+      "subtitle": "Technical Article",
+      "summary": "A practical article on AI search visibility, structured content, JSON-LD, entity identity, knowledge graph SEO and non-commodity editorial authority.",
+      "description": "Understand how AI search changes SEO strategy through helpful content, structured data, crawlable pages, entity identity and knowledge graph architecture.",
+      "status": "active",
+      "maturity": "research",
+      "confidence": "published",
+      "visibility": "public",
+      "publicationClass": "published",
+      "tags": [
+        "AI Search",
+        "Knowledge Graph SEO",
+        "Structured Data",
+        "JSON-LD",
+        "Entity SEO"
+      ],
+      "discipline": [
+        "SEO",
+        "Knowledge Systems",
+        "Web Development",
+        "Information Architecture"
+      ],
+      "route": "/publications/ai-search-structured-content-and-knowledge-graph-seo/",
+      "identifier": "/id/publication/ai-search-structured-content-and-knowledge-graph-seo/",
+      "temporality": {
+        "creationDate": "2026-06-25",
+        "lastUpdated": "2026-06-25",
+        "releaseDate": "2026-06-25",
+        "creationYear": "2026"
+      }
+    },
+    {
       "id": "ea:publication:algorithmic-composition-and-rule-based-music",
       "legacyId": "algorithmic-composition-and-rule-based-music",
       "kind": "publication",
@@ -7773,6 +7810,42 @@ window.EA_PUBLIC_CATALOG = {
       }
     },
     {
+      "id": "ea:publication:prompt-injection-and-trust-boundaries-in-ai-knowledge-systems",
+      "legacyId": "prompt-injection-and-trust-boundaries-in-ai-knowledge-systems",
+      "kind": "publication",
+      "type": "publication",
+      "title": "Prompt Injection and Trust Boundaries in AI Knowledge Systems",
+      "subtitle": "Technical Article",
+      "summary": "A security-focused article on prompt injection, retrieved content, tool use, MCP servers, trust boundaries, permissions and graph-aware AI workflows.",
+      "description": "Understand prompt injection in AI knowledge systems through retrieval, agents, MCP tools, permissions, untrusted content and contextual execution.",
+      "status": "active",
+      "maturity": "research",
+      "confidence": "published",
+      "visibility": "public",
+      "publicationClass": "published",
+      "tags": [
+        "Prompt Injection",
+        "AI Security",
+        "AI Agents",
+        "MCP",
+        "Trust Boundaries"
+      ],
+      "discipline": [
+        "Artificial Intelligence",
+        "Security",
+        "Knowledge Systems",
+        "Software Architecture"
+      ],
+      "route": "/publications/prompt-injection-and-trust-boundaries-in-ai-knowledge-systems/",
+      "identifier": "/id/publication/prompt-injection-and-trust-boundaries-in-ai-knowledge-systems/",
+      "temporality": {
+        "creationDate": "2026-06-25",
+        "lastUpdated": "2026-06-25",
+        "releaseDate": "2026-06-25",
+        "creationYear": "2026"
+      }
+    },
+    {
       "id": "ea:publication:redis-streams-for-orchestration",
       "legacyId": "redis-streams-for-orchestration",
       "kind": "publication",
@@ -7805,6 +7878,42 @@ window.EA_PUBLIC_CATALOG = {
         "creationDate": "2026-06-24",
         "lastUpdated": "2026-06-24",
         "releaseDate": "2026-06-24",
+        "creationYear": "2026"
+      }
+    },
+    {
+      "id": "ea:publication:responsible-ai-governance-for-creative-and-cultural-systems",
+      "legacyId": "responsible-ai-governance-for-creative-and-cultural-systems",
+      "kind": "publication",
+      "type": "publication",
+      "title": "Responsible AI Governance for Creative and Cultural Systems",
+      "subtitle": "Technical Article",
+      "summary": "A practical governance article for AI in creative studios, cultural archives and knowledge systems, covering risk, review, provenance, rights and evaluation.",
+      "description": "Learn how responsible AI governance applies to creative technology, cultural infrastructure, archives, generative media and AI-assisted knowledge workflows.",
+      "status": "active",
+      "maturity": "research",
+      "confidence": "published",
+      "visibility": "public",
+      "publicationClass": "published",
+      "tags": [
+        "Responsible AI",
+        "AI Governance",
+        "Creative Technology",
+        "Cultural Infrastructure",
+        "Provenance"
+      ],
+      "discipline": [
+        "Artificial Intelligence",
+        "Cultural Infrastructure",
+        "Knowledge Systems",
+        "Systems Design"
+      ],
+      "route": "/publications/responsible-ai-governance-for-creative-and-cultural-systems/",
+      "identifier": "/id/publication/responsible-ai-governance-for-creative-and-cultural-systems/",
+      "temporality": {
+        "creationDate": "2026-06-25",
+        "lastUpdated": "2026-06-25",
+        "releaseDate": "2026-06-25",
         "creationYear": "2026"
       }
     },
@@ -7985,6 +8094,42 @@ window.EA_PUBLIC_CATALOG = {
         "creationDate": "2026-06-24",
         "lastUpdated": "2026-06-24",
         "releaseDate": "2026-06-24",
+        "creationYear": "2026"
+      }
+    },
+    {
+      "id": "ea:publication:verifiable-credentials-for-cultural-archives-and-creator-identity",
+      "legacyId": "verifiable-credentials-for-cultural-archives-and-creator-identity",
+      "kind": "publication",
+      "type": "publication",
+      "title": "Verifiable Credentials for Cultural Archives and Creator Identity",
+      "subtitle": "Technical Article",
+      "summary": "A practical article on W3C Verifiable Credentials, creator identity, cultural archives, provenance, claims, privacy and machine-readable trust.",
+      "description": "Understand how verifiable credentials can support creator identity, archive provenance, rights workflows and trusted claims in cultural knowledge systems.",
+      "status": "active",
+      "maturity": "research",
+      "confidence": "published",
+      "visibility": "public",
+      "publicationClass": "published",
+      "tags": [
+        "Verifiable Credentials",
+        "Creator Identity",
+        "Provenance",
+        "Digital Preservation",
+        "Cultural Archives"
+      ],
+      "discipline": [
+        "Cultural Infrastructure",
+        "Knowledge Systems",
+        "Digital Preservation",
+        "Web Standards"
+      ],
+      "route": "/publications/verifiable-credentials-for-cultural-archives-and-creator-identity/",
+      "identifier": "/id/publication/verifiable-credentials-for-cultural-archives-and-creator-identity/",
+      "temporality": {
+        "creationDate": "2026-06-25",
+        "lastUpdated": "2026-06-25",
+        "releaseDate": "2026-06-25",
         "creationYear": "2026"
       }
     },
@@ -9033,6 +9178,226 @@ window.EA_PUBLIC_CATALOG = {
       "confidence": "observed",
       "createdAt": "2026-06-24",
       "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:ai-search-seo-article-documents-knowledge-graph",
+      "subject": "ea:publication:ai-search-structured-content-and-knowledge-graph-seo",
+      "predicate": "documents",
+      "object": "ea:concept:knowledge-graph",
+      "statement": "AI Search, Structured Content and Knowledge Graph SEO documents knowledge graphs as an SEO architecture for AI retrieval.",
+      "confidence": "published",
+      "createdAt": "2026-06-25",
+      "reviewedAt": "2026-06-25",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:ai-search-seo-article-documents-linked-data",
+      "subject": "ea:publication:ai-search-structured-content-and-knowledge-graph-seo",
+      "predicate": "documents",
+      "object": "ea:concept:linked-data",
+      "statement": "AI Search, Structured Content and Knowledge Graph SEO explains how Linked Data supports crawlable, machine-readable public knowledge pages.",
+      "confidence": "published",
+      "createdAt": "2026-06-25",
+      "reviewedAt": "2026-06-25",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:ai-search-seo-article-uses-json-ld",
+      "subject": "ea:publication:ai-search-structured-content-and-knowledge-graph-seo",
+      "predicate": "usesTechnology",
+      "object": "ea:technology:json-ld",
+      "statement": "AI Search, Structured Content and Knowledge Graph SEO uses JSON-LD as the structured data bridge between articles and graph records.",
+      "confidence": "published",
+      "createdAt": "2026-06-25",
+      "reviewedAt": "2026-06-25",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:ai-search-seo-article-documents-rag",
+      "subject": "ea:publication:ai-search-structured-content-and-knowledge-graph-seo",
+      "predicate": "documents",
+      "object": "ea:concept:retrieval-augmented-generation",
+      "statement": "AI Search, Structured Content and Knowledge Graph SEO connects AI search visibility to retrieval-augmented generation patterns.",
+      "confidence": "published",
+      "createdAt": "2026-06-25",
+      "reviewedAt": "2026-06-25",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:knowledge-hub-fourth-wave-has-ai-search-seo-article",
+      "subject": "ea:publication:ai-search-structured-content-and-knowledge-graph-seo",
+      "predicate": "memberOfCollection",
+      "object": "ea:collection:knowledge-hub-fourth-wave",
+      "statement": "AI Search, Structured Content and Knowledge Graph SEO is part of the fourth Knowledge Hub wave.",
+      "confidence": "published",
+      "createdAt": "2026-06-25",
+      "reviewedAt": "2026-06-25",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:responsible-ai-governance-article-documents-generative-ai",
+      "subject": "ea:publication:responsible-ai-governance-for-creative-and-cultural-systems",
+      "predicate": "documents",
+      "object": "ea:concept:generative-ai",
+      "statement": "Responsible AI Governance for Creative and Cultural Systems documents governance practices for generative AI use in creative systems.",
+      "confidence": "published",
+      "createdAt": "2026-06-25",
+      "reviewedAt": "2026-06-25",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:responsible-ai-governance-article-documents-augmented-intelligence",
+      "subject": "ea:publication:responsible-ai-governance-for-creative-and-cultural-systems",
+      "predicate": "documents",
+      "object": "ea:concept:augmented-intelligence",
+      "statement": "Responsible AI Governance for Creative and Cultural Systems frames responsible AI as augmented intelligence rather than unchecked replacement.",
+      "confidence": "published",
+      "createdAt": "2026-06-25",
+      "reviewedAt": "2026-06-25",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:responsible-ai-governance-article-documents-provenance",
+      "subject": "ea:publication:responsible-ai-governance-for-creative-and-cultural-systems",
+      "predicate": "documents",
+      "object": "ea:concept:provenance",
+      "statement": "Responsible AI Governance for Creative and Cultural Systems treats provenance as a governance requirement for AI-assisted cultural records.",
+      "confidence": "published",
+      "createdAt": "2026-06-25",
+      "reviewedAt": "2026-06-25",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:responsible-ai-governance-article-documents-contextual-execution",
+      "subject": "ea:publication:responsible-ai-governance-for-creative-and-cultural-systems",
+      "predicate": "documents",
+      "object": "ea:concept:contextual-execution",
+      "statement": "Responsible AI Governance for Creative and Cultural Systems links governance controls to contextual execution and permission boundaries.",
+      "confidence": "published",
+      "createdAt": "2026-06-25",
+      "reviewedAt": "2026-06-25",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:knowledge-hub-fourth-wave-has-responsible-ai-governance-article",
+      "subject": "ea:publication:responsible-ai-governance-for-creative-and-cultural-systems",
+      "predicate": "memberOfCollection",
+      "object": "ea:collection:knowledge-hub-fourth-wave",
+      "statement": "Responsible AI Governance for Creative and Cultural Systems is part of the fourth Knowledge Hub wave.",
+      "confidence": "published",
+      "createdAt": "2026-06-25",
+      "reviewedAt": "2026-06-25",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:prompt-injection-article-documents-ai-agent",
+      "subject": "ea:publication:prompt-injection-and-trust-boundaries-in-ai-knowledge-systems",
+      "predicate": "documents",
+      "object": "ea:concept:ai-agent",
+      "statement": "Prompt Injection and Trust Boundaries in AI Knowledge Systems documents prompt-injection risks for AI agents.",
+      "confidence": "published",
+      "createdAt": "2026-06-25",
+      "reviewedAt": "2026-06-25",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:prompt-injection-article-documents-contextual-execution",
+      "subject": "ea:publication:prompt-injection-and-trust-boundaries-in-ai-knowledge-systems",
+      "predicate": "documents",
+      "object": "ea:concept:contextual-execution",
+      "statement": "Prompt Injection and Trust Boundaries in AI Knowledge Systems explains why permissions should be enforced through contextual execution.",
+      "confidence": "published",
+      "createdAt": "2026-06-25",
+      "reviewedAt": "2026-06-25",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:prompt-injection-article-documents-graph-runtime",
+      "subject": "ea:publication:prompt-injection-and-trust-boundaries-in-ai-knowledge-systems",
+      "predicate": "documents",
+      "object": "ea:concept:graph-runtime",
+      "statement": "Prompt Injection and Trust Boundaries in AI Knowledge Systems uses graph runtimes as a control layer for AI knowledge operations.",
+      "confidence": "published",
+      "createdAt": "2026-06-25",
+      "reviewedAt": "2026-06-25",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:prompt-injection-article-uses-mcp",
+      "subject": "ea:publication:prompt-injection-and-trust-boundaries-in-ai-knowledge-systems",
+      "predicate": "usesTechnology",
+      "object": "ea:technology:model-context-protocol",
+      "statement": "Prompt Injection and Trust Boundaries in AI Knowledge Systems uses MCP as a reference surface for resources, tools and host-side consent.",
+      "confidence": "published",
+      "createdAt": "2026-06-25",
+      "reviewedAt": "2026-06-25",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:knowledge-hub-fourth-wave-has-prompt-injection-article",
+      "subject": "ea:publication:prompt-injection-and-trust-boundaries-in-ai-knowledge-systems",
+      "predicate": "memberOfCollection",
+      "object": "ea:collection:knowledge-hub-fourth-wave",
+      "statement": "Prompt Injection and Trust Boundaries in AI Knowledge Systems is part of the fourth Knowledge Hub wave.",
+      "confidence": "published",
+      "createdAt": "2026-06-25",
+      "reviewedAt": "2026-06-25",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:verifiable-credentials-article-documents-provenance",
+      "subject": "ea:publication:verifiable-credentials-for-cultural-archives-and-creator-identity",
+      "predicate": "documents",
+      "object": "ea:concept:provenance",
+      "statement": "Verifiable Credentials for Cultural Archives and Creator Identity documents verifiable credentials as one layer of provenance evidence.",
+      "confidence": "published",
+      "createdAt": "2026-06-25",
+      "reviewedAt": "2026-06-25",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:verifiable-credentials-article-documents-entity-identity",
+      "subject": "ea:publication:verifiable-credentials-for-cultural-archives-and-creator-identity",
+      "predicate": "documents",
+      "object": "ea:concept:entity-identity",
+      "statement": "Verifiable Credentials for Cultural Archives and Creator Identity connects signed claims to durable entity identity.",
+      "confidence": "published",
+      "createdAt": "2026-06-25",
+      "reviewedAt": "2026-06-25",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:verifiable-credentials-article-documents-digital-preservation",
+      "subject": "ea:publication:verifiable-credentials-for-cultural-archives-and-creator-identity",
+      "predicate": "documents",
+      "object": "ea:concept:digital-preservation",
+      "statement": "Verifiable Credentials for Cultural Archives and Creator Identity explains how credentials can support preservation events and archive trust.",
+      "confidence": "published",
+      "createdAt": "2026-06-25",
+      "reviewedAt": "2026-06-25",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:verifiable-credentials-article-uses-c2pa",
+      "subject": "ea:publication:verifiable-credentials-for-cultural-archives-and-creator-identity",
+      "predicate": "usesTechnology",
+      "object": "ea:technology:c2pa",
+      "statement": "Verifiable Credentials for Cultural Archives and Creator Identity compares W3C credentials with C2PA media provenance.",
+      "confidence": "published",
+      "createdAt": "2026-06-25",
+      "reviewedAt": "2026-06-25",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:knowledge-hub-fourth-wave-has-verifiable-credentials-article",
+      "subject": "ea:publication:verifiable-credentials-for-cultural-archives-and-creator-identity",
+      "predicate": "memberOfCollection",
+      "object": "ea:collection:knowledge-hub-fourth-wave",
+      "statement": "Verifiable Credentials for Cultural Archives and Creator Identity is part of the fourth Knowledge Hub wave.",
+      "confidence": "published",
+      "createdAt": "2026-06-25",
+      "reviewedAt": "2026-06-25",
       "visibility": "public"
     },
     {
@@ -11107,6 +11472,7 @@ window.EA_PUBLIC_CATALOG = {
     "ea:project:palimpsests": "/projects/palimpsests/",
     "ea:project:vestiges": "/projects/vestiges/",
     "ea:publication:ai-agents-vs-ai-workflows": "/publications/ai-agents-vs-ai-workflows/",
+    "ea:publication:ai-search-structured-content-and-knowledge-graph-seo": "/publications/ai-search-structured-content-and-knowledge-graph-seo/",
     "ea:publication:algorithmic-composition-and-rule-based-music": "/publications/algorithmic-composition-and-rule-based-music/",
     "ea:publication:c2pa-content-credentials-and-generative-media-provenance": "/publications/c2pa-content-credentials-and-generative-media-provenance/",
     "ea:publication:contextual-execution-and-graph-runtimes": "/publications/contextual-execution-and-graph-runtimes/",
@@ -11133,12 +11499,15 @@ window.EA_PUBLIC_CATALOG = {
     "ea:publication:open-source-as-cultural-infrastructure": "/publications/open-source-as-cultural-infrastructure/",
     "ea:publication:personal-knowledge-systems-and-digital-gardens": "/publications/personal-knowledge-systems-and-digital-gardens/",
     "ea:publication:procedural-graphics-shaders-and-visual-systems": "/publications/procedural-graphics-shaders-and-visual-systems/",
+    "ea:publication:prompt-injection-and-trust-boundaries-in-ai-knowledge-systems": "/publications/prompt-injection-and-trust-boundaries-in-ai-knowledge-systems/",
     "ea:publication:redis-streams-for-orchestration": "/publications/redis-streams-for-orchestration/",
+    "ea:publication:responsible-ai-governance-for-creative-and-cultural-systems": "/publications/responsible-ai-governance-for-creative-and-cultural-systems/",
     "ea:publication:retrieval-augmented-generation-and-knowledge-systems": "/publications/retrieval-augmented-generation-and-knowledge-systems/",
     "ea:publication:runtime-engines-and-domain-operating-systems": "/publications/runtime-engines-and-domain-operating-systems/",
     "ea:publication:signal-archaeology-audio-memory-and-machine-listening": "/publications/signal-archaeology-audio-memory-and-machine-listening/",
     "ea:publication:systems-thinking-for-creative-practice": "/publications/systems-thinking-for-creative-practice/",
     "ea:publication:typography-reading-systems-and-digital-interfaces": "/publications/typography-reading-systems-and-digital-interfaces/",
+    "ea:publication:verifiable-credentials-for-cultural-archives-and-creator-identity": "/publications/verifiable-credentials-for-cultural-archives-and-creator-identity/",
     "ea:publication:web-audio-and-browser-based-sound-systems": "/publications/web-audio-and-browser-based-sound-systems/",
     "ea:publication:webnn-and-local-ai-in-the-browser": "/publications/webnn-and-local-ai-in-the-browser/",
     "ea:publication:why-graphs-are-more-powerful-than-folders": "/publications/why-graphs-are-more-powerful-than-folders/",
@@ -12951,6 +13320,13 @@ window.EA_SEARCH = {
   const page = document.body.dataset.page || "home";
 
   const entityById = (id) => entityIndex[id] || null;
+  const scaleLength = (value, factor = 0.22) => {
+    const text = String(value || "0rem").trim();
+    const match = text.match(/^(-?\d+(?:\.\d+)?)rem$/);
+    if (!match) return text;
+    const scaled = Number(match[1]) * factor;
+    return `${Number(scaled.toFixed(3))}rem`;
+  };
 
   const navigationSection = ({ eyebrow, title, copy, cards = [] }) => `
     <section class="zone-card hero">
@@ -13014,6 +13390,9 @@ window.EA_SEARCH = {
               const label = node.label || `Node ${index + 1}`;
               const note = node.note || "";
               const tone = String(node.tone || "").replace(/[^a-z0-9-]/gi, "").toLowerCase();
+              const x = node.x || "0rem";
+              const y = node.y || "0rem";
+              const z = node.z || "0rem";
               const classes = [
                 "graph-surface__node",
                 node.emphasis ? "is-emphasis" : "",
@@ -13037,7 +13416,7 @@ window.EA_SEARCH = {
                   data-node-label="${esc(label)}"
                   data-node-note="${esc(note)}"
                   ${attrs}
-                  style="--x:${esc(node.x || "0rem")};--y:${esc(node.y || "0rem")};--z:${esc(node.z || "0rem")};--node-color:${esc(node.color || "rgba(234,220,207,0.9)")};"
+                  style="--x:${esc(x)};--y:${esc(y)};--z:${esc(z)};--mobile-x:${esc(scaleLength(x))};--mobile-y:${esc(scaleLength(y))};--mobile-z:${esc(scaleLength(z, 0.2))};--node-color:${esc(node.color || "rgba(234,220,207,0.9)")};"
                 >
                   <span class="graph-surface__node-pin" aria-hidden="true"></span>
                   <span class="graph-surface__node-body">
@@ -15569,7 +15948,7 @@ window.EA_SEARCH = {
     const nav = activeLink.closest(".site-nav");
     if (!nav || nav.scrollWidth <= nav.clientWidth) return;
     requestAnimationFrame(() => {
-      activeLink.scrollIntoView({ block: "nearest", inline: "center", behavior: "auto" });
+      activeLink.scrollIntoView({ block: "nearest", inline: "nearest", behavior: "auto" });
     });
   };
 

@@ -8,7 +8,10 @@ import { buildCatalog, isPublicEntity } from "../src/build/build-catalog.js";
 import { routeToFile, writeJson, writeText } from "../src/build/write-output.js";
 import { metadataFor } from "../src/seo/metadata.js";
 import { buildAgentManifest, buildLlmsFullTxt, buildLlmsTxt } from "../src/seo/agent-index.js";
+import { buildKnowledgeGraphCatalogJsonLd } from "../src/seo/knowledge-catalog.js";
+import { buildOpenSearchDescription } from "../src/seo/opensearch.js";
 import { buildSitemap } from "../src/seo/sitemaps.js";
+import { buildHumansTxt, buildSecurityTxt } from "../src/seo/trust-files.js";
 import { jsonLdFor, organizationNode, websiteNode } from "../src/semantic/jsonld.js";
 import { identifierPath, routeForEntity } from "../src/config/routes.js";
 import { renderLayout } from "../src/templates/layout.js";
@@ -278,6 +281,7 @@ const graphViews = buildGraphViews(publicEntities, relations, routes);
 const catalog = buildCatalog(entities, relations, routes);
 await writeJson(path.join(rootDir, "graph/entities.json"), catalog.entities);
 await writeJson(path.join(rootDir, "graph/relations.json"), catalog.relations);
+await writeJson(path.join(rootDir, "graph/catalog.jsonld"), buildKnowledgeGraphCatalogJsonLd(entities, relations));
 for (const view of graphViews) {
   const entity = byId.get(view.focus)!;
   const type = entity.type === "researchField" ? "research-field" : entity.type;
@@ -295,8 +299,13 @@ await writeJson(path.join(rootDir, "generated/manifest/build.json"), {
   relations: catalog.relations.length,
 });
 await writeText(path.join(rootDir, "sitemap.xml"), buildSitemap(entities));
+await writeText(path.join(rootDir, "opensearch.xml"), buildOpenSearchDescription());
 await writeText(path.join(rootDir, "llms.txt"), buildLlmsTxt(entities));
 await writeText(path.join(rootDir, "llms-full.txt"), buildLlmsFullTxt(entities));
 await writeJson(path.join(rootDir, "agent-manifest.json"), buildAgentManifest(entities));
+await writeText(path.join(rootDir, "humans.txt"), buildHumansTxt());
+const securityTxt = buildSecurityTxt();
+await writeText(path.join(rootDir, "security.txt"), securityTxt);
+await writeText(path.join(rootDir, ".well-known/security.txt"), securityTxt);
 
 process.stdout.write(`Generated ${publicEntities.length} canonical entity pages, ${routes.length} identifier routes, search data and graph neighborhoods.\n`);

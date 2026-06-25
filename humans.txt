@@ -1,0 +1,29 @@
+/* TEAM */
+Site: Electronic Artefacts
+Contact: electronic.artefacts@gmail.com
+Location: France
+Language: English
+
+/* SITE */
+Canonical: https://electronicartefacts.com/
+Description: Electronic Artefacts designs digital products, knowledge systems, cultural platforms and research-led experiences.
+Knowledge graph: https://electronicartefacts.com/knowledge/
+Agent index: https://electronicartefacts.com/llms.txt
+Agent manifest: https://electronicartefacts.com/agent-manifest.json
+Public catalog: https://electronicartefacts.com/graph/catalog.jsonld
+Search: https://electronicartefacts.com/search/?q=knowledge%20graph
+Last updated: 2026-06-25
+
+/* TOPICS */
+- AI agents
+- knowledge graphs
+- retrieval-augmented generation
+- linked data
+- JSON-LD
+- creative coding
+- digital preservation
+- cultural knowledge systems
+- software architecture
+- human-computer interaction
+- generative AI
+- provenance

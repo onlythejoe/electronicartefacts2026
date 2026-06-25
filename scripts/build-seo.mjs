@@ -5,9 +5,35 @@ import { fileURLToPath } from "node:url";
 const rootDir = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const origin = "https://electronicartefacts.com";
 const siteDescription = "Electronic Artefacts designs digital products, knowledge systems, cultural platforms and research-led experiences.";
+const siteUpdatedAt = "2026-06-25";
 const socialImage = `${origin}/assets/media/projects/electronic-artefacts/electronic-artefacts-search.jpg`;
 const logoImage = `${origin}/assets/media/projects/electronic-artefacts/electronic-artefacts-logo.jpg`;
 const organizationId = `${origin}/id/organization/electronic-artefacts/`;
+const siteKeywords = [
+  "creative technology",
+  "knowledge graph",
+  "AI agents",
+  "retrieval-augmented generation",
+  "linked data",
+  "digital preservation",
+  "cultural infrastructure",
+  "software systems",
+  "research publishing",
+];
+const knowsAbout = [
+  "AI agents",
+  "knowledge graphs",
+  "retrieval-augmented generation",
+  "linked data",
+  "JSON-LD",
+  "creative coding",
+  "digital preservation",
+  "cultural knowledge systems",
+  "software architecture",
+  "human-computer interaction",
+  "generative AI",
+  "provenance",
+];
 const sameAs = [
   "https://www.instagram.com/electronic.artefacts/",
   "https://github.com/onlythejoe",
@@ -189,12 +215,22 @@ const seoMarkup = (file, config) => {
             name: "Electronic Artefacts",
             url: `${origin}/`,
             description: siteDescription,
+            keywords: siteKeywords,
+            knowsAbout,
             logo: {
               "@type": "ImageObject",
               url: logoImage,
             },
             image: socialImage,
             email: "electronic.artefacts@gmail.com",
+            contactPoint: [
+              {
+                "@type": "ContactPoint",
+                email: "electronic.artefacts@gmail.com",
+                contactType: "inquiries",
+                availableLanguage: ["en", "fr"],
+              },
+            ],
             sameAs,
           },
           {
@@ -203,6 +239,8 @@ const seoMarkup = (file, config) => {
             url: `${origin}/`,
             name: "Electronic Artefacts",
             description: siteDescription,
+            keywords: siteKeywords,
+            dateModified: siteUpdatedAt,
             publisher: { "@id": organizationId },
             inLanguage: "en",
             potentialAction: {
@@ -236,11 +274,15 @@ const seoMarkup = (file, config) => {
     <meta name="robots" content="${robots}" />
     <meta name="author" content="Electronic Artefacts" />
     <meta name="theme-color" content="#000000" />${canonicalMarkup}
+    <link rel="alternate" hreflang="en" href="${canonical}" />
+    <link rel="alternate" hreflang="x-default" href="${canonical}" />
     <link rel="icon" type="image/png" sizes="192x192" href="/assets/media/projects/electronic-artefacts/electronic-artefacts-icon-192.png" />
     <link rel="apple-touch-icon" sizes="192x192" href="/assets/media/projects/electronic-artefacts/electronic-artefacts-icon-192.png" />
     <link rel="manifest" href="/site.webmanifest" />
+    <link rel="alternate" type="application/ld+json" href="/graph/catalog.jsonld" title="Public knowledge graph catalog" />
     <link rel="alternate" type="text/plain" href="/llms.txt" title="LLM-readable site index" />
     <link rel="alternate" type="application/json" href="/agent-manifest.json" title="Agent manifest" />
+    <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="Electronic Artefacts Search" />
     <link rel="image_src" href="${socialImage}" />
     <meta property="og:title" content="${escapeHtml(config.title)}" />
     <meta property="og:description" content="${escapeHtml(config.description)}" />

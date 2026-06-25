@@ -35,6 +35,7 @@
       "identifier": "ea:publication:linked-data-and-public-knowledge-pages",
       "name": "Linked Data and Public Knowledge Pages",
       "headline": "Linked Data and Public Knowledge Pages",
+      "abstract": "This article explains how public knowledge pages can use stable URLs, JSON-LD, RDF-oriented identifiers and internal links to become useful to humans, search engines and AI systems.",
       "description": "This article explains how public knowledge pages can use stable URLs, JSON-LD, RDF-oriented identifiers and internal links to become useful to humans, search engines and AI systems.",
       "url": "https://electronicartefacts.com/publications/linked-data-and-public-knowledge-pages/",
       "mainEntityOfPage": {
@@ -120,6 +121,37 @@
         {
           "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
         }
+      ],
+      "articleSection": [
+        "Web Development",
+        "SEO",
+        "Knowledge Systems",
+        "Linked Data",
+        "JSON-LD",
+        "Structured Data"
+      ],
+      "timeRequired": "PT7M",
+      "isBasedOn": [
+        {
+          "@type": "CreativeWork",
+          "name": "Cool URIs for the Semantic Web",
+          "url": "https://www.w3.org/TR/cooluris/",
+          "publisher": "W3C",
+          "datePublished": "2008-12-03"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "JSON-LD 1.1",
+          "url": "https://www.w3.org/TR/json-ld11/",
+          "publisher": "W3C",
+          "datePublished": "2020-07-16"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Article",
+          "url": "https://schema.org/Article",
+          "publisher": "Schema.org"
+        }
       ]
     },
     {
@@ -128,12 +160,48 @@
       "name": "Electronic Artefacts",
       "url": "https://electronicartefacts.com/",
       "description": "Electronic Artefacts designs digital products, knowledge systems, cultural platforms and research-led experiences.",
+      "keywords": [
+        "creative technology",
+        "knowledge graph",
+        "AI agents",
+        "retrieval-augmented generation",
+        "linked data",
+        "digital preservation",
+        "cultural infrastructure",
+        "software systems",
+        "research publishing"
+      ],
+      "knowsAbout": [
+        "AI agents",
+        "knowledge graphs",
+        "retrieval-augmented generation",
+        "linked data",
+        "JSON-LD",
+        "creative coding",
+        "digital preservation",
+        "cultural knowledge systems",
+        "software architecture",
+        "human-computer interaction",
+        "generative AI",
+        "provenance"
+      ],
       "logo": {
         "@type": "ImageObject",
         "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-logo.jpg"
       },
       "image": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-search.jpg",
       "email": "electronic.artefacts@gmail.com",
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "email": "electronic.artefacts@gmail.com",
+          "contactType": "inquiries",
+          "availableLanguage": [
+            "en",
+            "fr"
+          ]
+        }
+      ],
       "sameAs": [
         "https://www.instagram.com/electronic.artefacts/",
         "https://github.com/onlythejoe",
@@ -146,6 +214,18 @@
       "url": "https://electronicartefacts.com/",
       "name": "Electronic Artefacts",
       "description": "Electronic Artefacts designs digital products, knowledge systems, cultural platforms and research-led experiences.",
+      "keywords": [
+        "creative technology",
+        "knowledge graph",
+        "AI agents",
+        "retrieval-augmented generation",
+        "linked data",
+        "digital preservation",
+        "cultural infrastructure",
+        "software systems",
+        "research publishing"
+      ],
+      "dateModified": "2026-06-25",
       "publisher": {
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },

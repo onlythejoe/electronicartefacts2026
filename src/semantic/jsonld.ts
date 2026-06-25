@@ -102,12 +102,22 @@ export const organizationNode = {
   name: site.name,
   url: `${site.origin}/`,
   description: site.description,
+  keywords: [...site.keywords],
+  knowsAbout: [...site.knowsAbout],
   logo: {
     "@type": "ImageObject",
     url: `${site.origin}${site.logoImage}`,
   },
   image: `${site.origin}${site.socialImage}`,
   email: site.contactEmail,
+  contactPoint: [
+    {
+      "@type": "ContactPoint",
+      email: site.contactEmail,
+      contactType: "inquiries",
+      availableLanguage: ["en", "fr"],
+    },
+  ],
   sameAs: [...site.sameAs],
 };
 
@@ -117,6 +127,8 @@ export const websiteNode = {
   url: `${site.origin}/`,
   name: site.name,
   description: site.description,
+  keywords: [...site.keywords],
+  dateModified: site.updatedAt,
   publisher: { "@id": `${site.origin}/id/organization/electronic-artefacts/` },
   inLanguage: site.language,
   potentialAction: {
@@ -132,6 +144,7 @@ export const websiteNode = {
 export const jsonLdFor = (entity: Entity) => {
   const url = `${site.origin}${routeForEntity(entity)}`;
   const keywords = unique([...(entity.tags || []), ...(entity.disciplines || [])]);
+  const words = wordCount(entity);
   const primary: Record<string, unknown> = compact({
     "@type": schemaType(entity),
     "@id": identifierUrl(entity),
@@ -139,6 +152,7 @@ export const jsonLdFor = (entity: Entity) => {
     name: entity.title,
     headline: entity.type === "publication" ? entity.title : undefined,
     alternateName: entity.alternateNames,
+    abstract: entity.abstract,
     description: entity.abstract,
     url,
     mainEntityOfPage: { "@id": `${url}#webpage` },
@@ -154,7 +168,7 @@ export const jsonLdFor = (entity: Entity) => {
     copyrightHolder: { "@id": `${site.origin}/id/organization/electronic-artefacts/` },
     license: entity.license,
     isAccessibleForFree: true,
-    wordCount: wordCount(entity),
+    wordCount: words,
     citation: citationsFor(entity.sources),
   });
   if (entity.definition) primary.description = entity.definition;
@@ -175,6 +189,10 @@ export const jsonLdFor = (entity: Entity) => {
     primary.citation = [entity.citation.preferred, ...citationsFor(entity.sources)];
     primary.about = refsToIds(entity.subjects);
     primary.mentions = refsToIds(entity.evidence || []);
+    primary.articleSection = unique([...(entity.disciplines || []), ...(entity.tags || [])]).slice(0, 6);
+    primary.timeRequired = `PT${Math.max(1, Math.ceil(words / 220))}M`;
+    const citedSources = citationsFor(entity.sources);
+    if (citedSources.length) primary.isBasedOn = citedSources;
   }
   if (entity.type === "project" && entity.socialLinks?.length) {
     primary.sameAs = entity.socialLinks.map((link) => link.href);

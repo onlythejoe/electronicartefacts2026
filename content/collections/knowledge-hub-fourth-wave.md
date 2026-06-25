@@ -4,9 +4,9 @@ type: collection
 slug:
   canonical: knowledge-hub-fourth-wave
 title: Knowledge Hub Fourth Wave
-subtitle: AI Protocols, Provenance and Cultural Interfaces
-abstract: Knowledge Hub Fourth Wave groups articles and technology records about MCP, C2PA, WebNN, IIIF and OpenTelemetry for durable AI and cultural infrastructure.
-description: A curated Electronic Artefacts collection about AI tool protocols, media provenance, browser-local inference, archive presentation and agent observability.
+subtitle: AI Protocols, Provenance, Governance and Cultural Interfaces
+abstract: Knowledge Hub Fourth Wave groups articles and technology records about MCP, C2PA, WebNN, IIIF, OpenTelemetry, AI search, governance, prompt injection and verifiable identity.
+description: A curated Electronic Artefacts collection about AI tool protocols, media provenance, browser-local inference, archive presentation, agent observability, governance and knowledge graph SEO.
 locale: en
 visibility: public
 publicationClass: published
@@ -21,7 +21,7 @@ version:
 authors:
   - id: ea:organization:electronic-artefacts
 publisher: ea:organization:electronic-artefacts
-thesis: Durable AI and cultural systems need protocols for context, provenance, local execution, object presentation and operational accountability.
+thesis: Durable AI and cultural systems need protocols for context, provenance, local execution, object presentation, operational accountability, governance and machine-readable trust.
 curator:
   - id: ea:organization:electronic-artefacts
 explicitMembers:
@@ -30,6 +30,10 @@ explicitMembers:
   - id: ea:publication:webnn-and-local-ai-in-the-browser
   - id: ea:publication:iiif-and-compound-cultural-objects
   - id: ea:publication:observability-for-ai-agents-and-tool-calling-systems
+  - id: ea:publication:ai-search-structured-content-and-knowledge-graph-seo
+  - id: ea:publication:responsible-ai-governance-for-creative-and-cultural-systems
+  - id: ea:publication:prompt-injection-and-trust-boundaries-in-ai-knowledge-systems
+  - id: ea:publication:verifiable-credentials-for-cultural-archives-and-creator-identity
   - id: ea:technology:model-context-protocol
   - id: ea:technology:c2pa
   - id: ea:technology:webnn
@@ -45,6 +49,7 @@ tags:
   - Knowledge Hub
   - Fourth Wave
   - AI Protocols
+  - AI Governance
   - Provenance
   - Cultural Infrastructure
 disciplines:
@@ -57,11 +62,11 @@ disciplines:
 
 ## Thesis
 
-The next layer of AI and cultural infrastructure is not only model capability. It is protocol design: context access, tool use, media provenance, local inference, object presentation and operational accountability.
+The next layer of AI and cultural infrastructure is not only model capability. It is protocol design: context access, tool use, media provenance, local inference, object presentation, operational accountability, governance and machine-readable trust.
 
 ## Selection logic
 
-This collection follows the AI and graph-runtime foundations by adding implementation-facing standards. MCP connects tools and context. C2PA connects media to provenance. WebNN brings local inference to the browser. IIIF structures compound cultural objects. OpenTelemetry makes runtime behavior observable.
+This collection follows the AI and graph-runtime foundations by adding implementation-facing standards and operating practices. MCP connects tools and context. C2PA connects media to provenance. WebNN brings local inference to the browser. IIIF structures compound cultural objects. OpenTelemetry makes runtime behavior observable. AI search, governance, prompt-injection controls and verifiable credentials connect those protocols to public trust.
 
 ## Editorial role
 
@@ -69,12 +74,12 @@ The wave avoids product rankings. It focuses on stable concepts and standards th
 
 ## Current members
 
-The collection includes five long-form publications and five canonical technology records.
+The collection includes nine long-form publications and five canonical technology records.
 
 ## Internal pathways
 
-AI readers can move from agents to MCP and observability. Archive readers can move from provenance to C2PA and IIIF. Web readers can move from multimodal AI to WebNN and local interaction design.
+AI readers can move from agents to MCP, observability and prompt-injection boundaries. Archive readers can move from provenance to C2PA, IIIF and verifiable credentials. Web readers can move from multimodal AI to WebNN, local interaction design and knowledge graph SEO.
 
 ## Future expansion
 
-Future articles can add WebAssembly components, verifiable credentials, Solid data spaces, source entities, claim graphs and browser-based archive viewers.
+Future articles can add WebAssembly components, Solid data spaces, source entities, claim graphs, browser-based archive viewers and EU-facing implementation playbooks.

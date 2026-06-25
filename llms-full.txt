@@ -9,8 +9,8 @@ This file is generated from typed public records. Prefer each record's canonical
 - Site language: en
 - Canonical origin: https://electronicartefacts.com
 - Search endpoint: https://electronicartefacts.com/search/?q={search_term_string}
-- Public records: 100
-- Last curated source update: 2026-06-24
+- Public records: 104
+- Last curated source update: 2026-06-25
 
 ## organization
 
@@ -68,6 +68,12 @@ This file is generated from typed public records. Prefer each record's canonical
   - JSON-LD: https://electronicartefacts.com/id/publication/ai-agents-vs-ai-workflows/index.jsonld
   - Modified: 2026-06-24
   - Keywords: AI Agents vs AI Workflows, AI Agents, AI Workflows, Orchestration, Tool Use, Automation, Artificial Intelligence, Systems Design
+- [AI Search, Structured Content and Knowledge Graph SEO](https://electronicartefacts.com/publications/ai-search-structured-content-and-knowledge-graph-seo/): Understand how AI search changes SEO strategy through helpful content, structured data, crawlable pages, entity identity and knowledge graph architecture.
+  - Entity ID: ea:publication:ai-search-structured-content-and-knowledge-graph-seo
+  - Identifier: https://electronicartefacts.com/id/publication/ai-search-structured-content-and-knowledge-graph-seo/
+  - JSON-LD: https://electronicartefacts.com/id/publication/ai-search-structured-content-and-knowledge-graph-seo/index.jsonld
+  - Modified: 2026-06-25
+  - Keywords: AI Search, Structured Content and Knowledge Graph SEO, AI Search, Knowledge Graph SEO, Structured Data, JSON-LD, Entity SEO, SEO, Knowledge Systems
 - [Algorithmic Composition and Rule-Based Music](https://electronicartefacts.com/publications/algorithmic-composition-and-rule-based-music/): A technical article on algorithmic composition, rule-based music, generative sound, cybernetics and Electronic Artefacts audio research.
   - Entity ID: ea:publication:algorithmic-composition-and-rule-based-music
   - Identifier: https://electronicartefacts.com/id/publication/algorithmic-composition-and-rule-based-music/
@@ -224,12 +230,24 @@ This file is generated from typed public records. Prefer each record's canonical
   - JSON-LD: https://electronicartefacts.com/id/publication/procedural-graphics-shaders-and-visual-systems/index.jsonld
   - Modified: 2026-06-24
   - Keywords: Procedural Graphics, Shaders and Visual Systems, Procedural Graphics, Shaders, WebGL, Generative Art, Creative Coding, Digital Art, Visual Culture
+- [Prompt Injection and Trust Boundaries in AI Knowledge Systems](https://electronicartefacts.com/publications/prompt-injection-and-trust-boundaries-in-ai-knowledge-systems/): Understand prompt injection in AI knowledge systems through retrieval, agents, MCP tools, permissions, untrusted content and contextual execution.
+  - Entity ID: ea:publication:prompt-injection-and-trust-boundaries-in-ai-knowledge-systems
+  - Identifier: https://electronicartefacts.com/id/publication/prompt-injection-and-trust-boundaries-in-ai-knowledge-systems/
+  - JSON-LD: https://electronicartefacts.com/id/publication/prompt-injection-and-trust-boundaries-in-ai-knowledge-systems/index.jsonld
+  - Modified: 2026-06-25
+  - Keywords: Prompt Injection and Trust Boundaries in AI Knowledge Systems, Prompt Injection, AI Security, AI Agents, MCP, Trust Boundaries, Artificial Intelligence, Security
 - [Redis Streams for Orchestration](https://electronicartefacts.com/publications/redis-streams-for-orchestration/): Learn how Redis Streams works and how to use consumer groups, pending entries and idempotent workers for reliable orchestration.
   - Entity ID: ea:publication:redis-streams-for-orchestration
   - Identifier: https://electronicartefacts.com/id/publication/redis-streams-for-orchestration/
   - JSON-LD: https://electronicartefacts.com/id/publication/redis-streams-for-orchestration/index.jsonld
   - Modified: 2026-06-24
   - Keywords: Redis Streams for Orchestration, Redis Streams, Orchestration, Consumer Groups, Event Processing, Idempotency, Software Architecture, Distributed Systems
+- [Responsible AI Governance for Creative and Cultural Systems](https://electronicartefacts.com/publications/responsible-ai-governance-for-creative-and-cultural-systems/): Learn how responsible AI governance applies to creative technology, cultural infrastructure, archives, generative media and AI-assisted knowledge workflows.
+  - Entity ID: ea:publication:responsible-ai-governance-for-creative-and-cultural-systems
+  - Identifier: https://electronicartefacts.com/id/publication/responsible-ai-governance-for-creative-and-cultural-systems/
+  - JSON-LD: https://electronicartefacts.com/id/publication/responsible-ai-governance-for-creative-and-cultural-systems/index.jsonld
+  - Modified: 2026-06-25
+  - Keywords: Responsible AI Governance for Creative and Cultural Systems, Responsible AI, AI Governance, Creative Technology, Cultural Infrastructure, Provenance, Artificial Intelligence, Knowledge Systems
 - [Retrieval-Augmented Generation and Knowledge Systems](https://electronicartefacts.com/publications/retrieval-augmented-generation-and-knowledge-systems/): Learn how retrieval-augmented generation works and how to build source-grounded RAG systems with metadata, knowledge graphs and evaluation.
   - Entity ID: ea:publication:retrieval-augmented-generation-and-knowledge-systems
   - Identifier: https://electronicartefacts.com/id/publication/retrieval-augmented-generation-and-knowledge-systems/
@@ -260,6 +278,12 @@ This file is generated from typed public records. Prefer each record's canonical
   - JSON-LD: https://electronicartefacts.com/id/publication/typography-reading-systems-and-digital-interfaces/index.jsonld
   - Modified: 2026-06-24
   - Keywords: Typography, Reading Systems and Digital Interfaces, Typography, Reading Systems, Interface Design, Accessibility, Design, Web Development, Human Computer Interaction
+- [Verifiable Credentials for Cultural Archives and Creator Identity](https://electronicartefacts.com/publications/verifiable-credentials-for-cultural-archives-and-creator-identity/): Understand how verifiable credentials can support creator identity, archive provenance, rights workflows and trusted claims in cultural knowledge systems.
+  - Entity ID: ea:publication:verifiable-credentials-for-cultural-archives-and-creator-identity
+  - Identifier: https://electronicartefacts.com/id/publication/verifiable-credentials-for-cultural-archives-and-creator-identity/
+  - JSON-LD: https://electronicartefacts.com/id/publication/verifiable-credentials-for-cultural-archives-and-creator-identity/index.jsonld
+  - Modified: 2026-06-25
+  - Keywords: Verifiable Credentials for Cultural Archives and Creator Identity, Verifiable Credentials, Creator Identity, Provenance, Digital Preservation, Cultural Archives, Cultural Infrastructure, Knowledge Systems
 - [Web Audio and Browser-Based Sound Systems](https://electronicartefacts.com/publications/web-audio-and-browser-based-sound-systems/): A technical article on Web Audio, audio graphs, browser sound, ORETH, machine listening and interactive media.
   - Entity ID: ea:publication:web-audio-and-browser-based-sound-systems
   - Identifier: https://electronicartefacts.com/id/publication/web-audio-and-browser-based-sound-systems/
@@ -617,12 +641,12 @@ This file is generated from typed public records. Prefer each record's canonical
   - JSON-LD: https://electronicartefacts.com/id/collection/knowledge-hub-foundations/index.jsonld
   - Modified: 2026-06-23
   - Keywords: Knowledge Hub Foundations, Knowledge Hub, Editorial Collection, Foundations, Research Library, Semantic Publishing, Knowledge Systems, Archives
-- [Knowledge Hub Fourth Wave](https://electronicartefacts.com/archive/collections/knowledge-hub-fourth-wave/): A curated Electronic Artefacts collection about AI tool protocols, media provenance, browser-local inference, archive presentation and agent observability.
+- [Knowledge Hub Fourth Wave](https://electronicartefacts.com/archive/collections/knowledge-hub-fourth-wave/): A curated Electronic Artefacts collection about AI tool protocols, media provenance, browser-local inference, archive presentation, agent observability, governance and knowledge graph SEO.
   - Entity ID: ea:collection:knowledge-hub-fourth-wave
   - Identifier: https://electronicartefacts.com/id/collection/knowledge-hub-fourth-wave/
   - JSON-LD: https://electronicartefacts.com/id/collection/knowledge-hub-fourth-wave/index.jsonld
   - Modified: 2026-06-24
-  - Keywords: Knowledge Hub Fourth Wave, Knowledge Hub, Fourth Wave, AI Protocols, Provenance, Cultural Infrastructure, Artificial Intelligence, Knowledge Systems
+  - Keywords: Knowledge Hub Fourth Wave, Knowledge Hub, Fourth Wave, AI Protocols, AI Governance, Provenance, Cultural Infrastructure, Artificial Intelligence
 - [Knowledge Hub Second Wave](https://electronicartefacts.com/archive/collections/knowledge-hub-second-wave/): A curated collection for the second Knowledge Hub expansion wave.
   - Entity ID: ea:collection:knowledge-hub-second-wave
   - Identifier: https://electronicartefacts.com/id/collection/knowledge-hub-second-wave/

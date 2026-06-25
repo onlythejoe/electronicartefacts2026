@@ -35,6 +35,7 @@
       "identifier": "ea:publication:systems-thinking-for-creative-practice",
       "name": "Systems Thinking for Creative Practice",
       "headline": "Systems Thinking for Creative Practice",
+      "abstract": "A practical introduction to systems, boundaries, feedback, stocks, flows, delays, leverage points and their use in creative and technical work.",
       "description": "A practical introduction to systems, boundaries, feedback, stocks, flows, delays, leverage points and their use in creative and technical work.",
       "url": "https://electronicartefacts.com/publications/systems-thinking-for-creative-practice/",
       "mainEntityOfPage": {
@@ -120,6 +121,33 @@
         {
           "@id": "https://electronicartefacts.com/id/concept/cybernetic-feedback/"
         }
+      ],
+      "articleSection": [
+        "Systems Design",
+        "Cybernetics",
+        "Complexity",
+        "Design",
+        "Systems Thinking",
+        "Creative Practice"
+      ],
+      "timeRequired": "PT9M",
+      "isBasedOn": [
+        {
+          "@type": "CreativeWork",
+          "name": "Thinking in Systems",
+          "url": "https://www.chelseagreen.com/product/thinking-in-systems/",
+          "author": "Donella H. Meadows",
+          "publisher": "Chelsea Green Publishing",
+          "datePublished": "2008-12-03"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "Cybernetics or Control and Communication in the Animal and the Machine",
+          "url": "https://direct.mit.edu/books/oa-monograph/4581/Cybernetics-or-Control-and-Communication-in-the",
+          "author": "Norbert Wiener",
+          "publisher": "MIT Press",
+          "datePublished": "1948-01-01"
+        }
       ]
     },
     {
@@ -128,12 +156,48 @@
       "name": "Electronic Artefacts",
       "url": "https://electronicartefacts.com/",
       "description": "Electronic Artefacts designs digital products, knowledge systems, cultural platforms and research-led experiences.",
+      "keywords": [
+        "creative technology",
+        "knowledge graph",
+        "AI agents",
+        "retrieval-augmented generation",
+        "linked data",
+        "digital preservation",
+        "cultural infrastructure",
+        "software systems",
+        "research publishing"
+      ],
+      "knowsAbout": [
+        "AI agents",
+        "knowledge graphs",
+        "retrieval-augmented generation",
+        "linked data",
+        "JSON-LD",
+        "creative coding",
+        "digital preservation",
+        "cultural knowledge systems",
+        "software architecture",
+        "human-computer interaction",
+        "generative AI",
+        "provenance"
+      ],
       "logo": {
         "@type": "ImageObject",
         "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-logo.jpg"
       },
       "image": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-search.jpg",
       "email": "electronic.artefacts@gmail.com",
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "email": "electronic.artefacts@gmail.com",
+          "contactType": "inquiries",
+          "availableLanguage": [
+            "en",
+            "fr"
+          ]
+        }
+      ],
       "sameAs": [
         "https://www.instagram.com/electronic.artefacts/",
         "https://github.com/onlythejoe",
@@ -146,6 +210,18 @@
       "url": "https://electronicartefacts.com/",
       "name": "Electronic Artefacts",
       "description": "Electronic Artefacts designs digital products, knowledge systems, cultural platforms and research-led experiences.",
+      "keywords": [
+        "creative technology",
+        "knowledge graph",
+        "AI agents",
+        "retrieval-augmented generation",
+        "linked data",
+        "digital preservation",
+        "cultural infrastructure",
+        "software systems",
+        "research publishing"
+      ],
+      "dateModified": "2026-06-25",
       "publisher": {
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },

@@ -35,6 +35,7 @@
       "identifier": "ea:publication:ontologies-taxonomies-and-knowledge-modeling",
       "name": "Ontologies, Taxonomies and Knowledge Modeling",
       "headline": "Ontologies, Taxonomies and Knowledge Modeling",
+      "abstract": "A practical guide to taxonomies, thesauri, folksonomies, ontologies, controlled vocabularies, OWL, SKOS and sustainable semantic modeling.",
       "description": "A practical guide to taxonomies, thesauri, folksonomies, ontologies, controlled vocabularies, OWL, SKOS and sustainable semantic modeling.",
       "url": "https://electronicartefacts.com/publications/ontologies-taxonomies-and-knowledge-modeling/",
       "mainEntityOfPage": {
@@ -128,6 +129,37 @@
         {
           "@id": "https://electronicartefacts.com/id/concept/knowledge-graph/"
         }
+      ],
+      "articleSection": [
+        "Knowledge Systems",
+        "Information Architecture",
+        "Semantic Web",
+        "Philosophy",
+        "Ontology",
+        "Taxonomy"
+      ],
+      "timeRequired": "PT10M",
+      "isBasedOn": [
+        {
+          "@type": "CreativeWork",
+          "name": "OWL 2 Web Ontology Language Document Overview",
+          "url": "https://www.w3.org/TR/owl2-overview/",
+          "publisher": "W3C",
+          "datePublished": "2012-12-11"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "SKOS Simple Knowledge Organization System Reference",
+          "url": "https://www.w3.org/TR/skos-reference/",
+          "publisher": "W3C",
+          "datePublished": "2009-08-18"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "The CIDOC Conceptual Reference Model",
+          "url": "https://www.cidoc-crm.org/",
+          "publisher": "CIDOC CRM Special Interest Group"
+        }
       ]
     },
     {
@@ -136,12 +168,48 @@
       "name": "Electronic Artefacts",
       "url": "https://electronicartefacts.com/",
       "description": "Electronic Artefacts designs digital products, knowledge systems, cultural platforms and research-led experiences.",
+      "keywords": [
+        "creative technology",
+        "knowledge graph",
+        "AI agents",
+        "retrieval-augmented generation",
+        "linked data",
+        "digital preservation",
+        "cultural infrastructure",
+        "software systems",
+        "research publishing"
+      ],
+      "knowsAbout": [
+        "AI agents",
+        "knowledge graphs",
+        "retrieval-augmented generation",
+        "linked data",
+        "JSON-LD",
+        "creative coding",
+        "digital preservation",
+        "cultural knowledge systems",
+        "software architecture",
+        "human-computer interaction",
+        "generative AI",
+        "provenance"
+      ],
       "logo": {
         "@type": "ImageObject",
         "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-logo.jpg"
       },
       "image": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-search.jpg",
       "email": "electronic.artefacts@gmail.com",
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "email": "electronic.artefacts@gmail.com",
+          "contactType": "inquiries",
+          "availableLanguage": [
+            "en",
+            "fr"
+          ]
+        }
+      ],
       "sameAs": [
         "https://www.instagram.com/electronic.artefacts/",
         "https://github.com/onlythejoe",
@@ -154,6 +222,18 @@
       "url": "https://electronicartefacts.com/",
       "name": "Electronic Artefacts",
       "description": "Electronic Artefacts designs digital products, knowledge systems, cultural platforms and research-led experiences.",
+      "keywords": [
+        "creative technology",
+        "knowledge graph",
+        "AI agents",
+        "retrieval-augmented generation",
+        "linked data",
+        "digital preservation",
+        "cultural infrastructure",
+        "software systems",
+        "research publishing"
+      ],
+      "dateModified": "2026-06-25",
       "publisher": {
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },

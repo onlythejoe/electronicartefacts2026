@@ -35,6 +35,7 @@
       "identifier": "ea:publication:knowledge-graphs-for-cultural-infrastructure",
       "name": "Knowledge Graphs for Cultural Infrastructure",
       "headline": "Knowledge Graphs for Cultural Infrastructure",
+      "abstract": "This article explains how knowledge graphs support cultural infrastructure by giving people, works, sources, concepts, projects and archives stable identities and explicit relations.",
       "description": "This article explains how knowledge graphs support cultural infrastructure by giving people, works, sources, concepts, projects and archives stable identities and explicit relations.",
       "url": "https://electronicartefacts.com/publications/knowledge-graphs-for-cultural-infrastructure/",
       "mainEntityOfPage": {
@@ -125,6 +126,37 @@
         {
           "@id": "https://electronicartefacts.com/id/program/vaste/"
         }
+      ],
+      "articleSection": [
+        "Knowledge Systems",
+        "Archives",
+        "Information Architecture",
+        "Research Methods",
+        "Knowledge Graph",
+        "Cultural Infrastructure"
+      ],
+      "timeRequired": "PT7M",
+      "isBasedOn": [
+        {
+          "@type": "CreativeWork",
+          "name": "RDF 1.1 Concepts and Abstract Syntax",
+          "url": "https://www.w3.org/TR/rdf11-concepts/",
+          "publisher": "W3C",
+          "datePublished": "2014-02-25"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "The CIDOC Conceptual Reference Model",
+          "url": "https://www.cidoc-crm.org/",
+          "publisher": "CIDOC CRM Special Interest Group"
+        },
+        {
+          "@type": "CreativeWork",
+          "name": "PROV-Overview",
+          "url": "https://www.w3.org/TR/prov-overview/",
+          "publisher": "W3C",
+          "datePublished": "2013-04-30"
+        }
       ]
     },
     {
@@ -133,12 +165,48 @@
       "name": "Electronic Artefacts",
       "url": "https://electronicartefacts.com/",
       "description": "Electronic Artefacts designs digital products, knowledge systems, cultural platforms and research-led experiences.",
+      "keywords": [
+        "creative technology",
+        "knowledge graph",
+        "AI agents",
+        "retrieval-augmented generation",
+        "linked data",
+        "digital preservation",
+        "cultural infrastructure",
+        "software systems",
+        "research publishing"
+      ],
+      "knowsAbout": [
+        "AI agents",
+        "knowledge graphs",
+        "retrieval-augmented generation",
+        "linked data",
+        "JSON-LD",
+        "creative coding",
+        "digital preservation",
+        "cultural knowledge systems",
+        "software architecture",
+        "human-computer interaction",
+        "generative AI",
+        "provenance"
+      ],
       "logo": {
         "@type": "ImageObject",
         "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-logo.jpg"
       },
       "image": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-search.jpg",
       "email": "electronic.artefacts@gmail.com",
+      "contactPoint": [
+        {
+          "@type": "ContactPoint",
+          "email": "electronic.artefacts@gmail.com",
+          "contactType": "inquiries",
+          "availableLanguage": [
+            "en",
+            "fr"
+          ]
+        }
+      ],
       "sameAs": [
         "https://www.instagram.com/electronic.artefacts/",
         "https://github.com/onlythejoe",
@@ -151,6 +219,18 @@
       "url": "https://electronicartefacts.com/",
       "name": "Electronic Artefacts",
       "description": "Electronic Artefacts designs digital products, knowledge systems, cultural platforms and research-led experiences.",
+      "keywords": [
+        "creative technology",
+        "knowledge graph",
+        "AI agents",
+        "retrieval-augmented generation",
+        "linked data",
+        "digital preservation",
+        "cultural infrastructure",
+        "software systems",
+        "research publishing"
+      ],
+      "dateModified": "2026-06-25",
       "publisher": {
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },

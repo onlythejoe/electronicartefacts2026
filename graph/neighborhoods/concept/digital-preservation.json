@@ -66,6 +66,14 @@
       "route": "/publications/signal-archaeology-audio-memory-and-machine-listening/",
       "status": "active",
       "confidence": "published"
+    },
+    {
+      "id": "ea:publication:verifiable-credentials-for-cultural-archives-and-creator-identity",
+      "type": "publication",
+      "title": "Verifiable Credentials for Cultural Archives and Creator Identity",
+      "route": "/publications/verifiable-credentials-for-cultural-archives-and-creator-identity/",
+      "status": "active",
+      "confidence": "published"
     }
   ],
   "edges": [
@@ -76,6 +84,15 @@
       "predicate": "documents",
       "label": "Documents",
       "statement": "IIIF and Compound Cultural Objects connects object presentation structure to digital preservation practice.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:verifiable-credentials-article-documents-digital-preservation",
+      "source": "ea:publication:verifiable-credentials-for-cultural-archives-and-creator-identity",
+      "target": "ea:concept:digital-preservation",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Verifiable Credentials for Cultural Archives and Creator Identity explains how credentials can support preservation events and archive trust.",
       "confidence": "published"
     },
     {

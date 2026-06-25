@@ -230,6 +230,11 @@
     "identifier": "/id/publication/ai-agents-vs-ai-workflows/"
   },
   {
+    "id": "ea:publication:ai-search-structured-content-and-knowledge-graph-seo",
+    "route": "/publications/ai-search-structured-content-and-knowledge-graph-seo/",
+    "identifier": "/id/publication/ai-search-structured-content-and-knowledge-graph-seo/"
+  },
+  {
     "id": "ea:publication:algorithmic-composition-and-rule-based-music",
     "route": "/publications/algorithmic-composition-and-rule-based-music/",
     "identifier": "/id/publication/algorithmic-composition-and-rule-based-music/"
@@ -360,9 +365,19 @@
     "identifier": "/id/publication/procedural-graphics-shaders-and-visual-systems/"
   },
   {
+    "id": "ea:publication:prompt-injection-and-trust-boundaries-in-ai-knowledge-systems",
+    "route": "/publications/prompt-injection-and-trust-boundaries-in-ai-knowledge-systems/",
+    "identifier": "/id/publication/prompt-injection-and-trust-boundaries-in-ai-knowledge-systems/"
+  },
+  {
     "id": "ea:publication:redis-streams-for-orchestration",
     "route": "/publications/redis-streams-for-orchestration/",
     "identifier": "/id/publication/redis-streams-for-orchestration/"
+  },
+  {
+    "id": "ea:publication:responsible-ai-governance-for-creative-and-cultural-systems",
+    "route": "/publications/responsible-ai-governance-for-creative-and-cultural-systems/",
+    "identifier": "/id/publication/responsible-ai-governance-for-creative-and-cultural-systems/"
   },
   {
     "id": "ea:publication:retrieval-augmented-generation-and-knowledge-systems",
@@ -388,6 +403,11 @@
     "id": "ea:publication:typography-reading-systems-and-digital-interfaces",
     "route": "/publications/typography-reading-systems-and-digital-interfaces/",
     "identifier": "/id/publication/typography-reading-systems-and-digital-interfaces/"
+  },
+  {
+    "id": "ea:publication:verifiable-credentials-for-cultural-archives-and-creator-identity",
+    "route": "/publications/verifiable-credentials-for-cultural-archives-and-creator-identity/",
+    "identifier": "/id/publication/verifiable-credentials-for-cultural-archives-and-creator-identity/"
   },
   {
     "id": "ea:publication:web-audio-and-browser-based-sound-systems",

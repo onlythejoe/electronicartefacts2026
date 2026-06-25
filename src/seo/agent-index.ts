@@ -119,6 +119,8 @@ Use canonical HTML URLs for human-facing citations. Use identifier routes under 
 - [Sitemap](${site.origin}/sitemap.xml): Indexable public URLs.
 - [Agent manifest](${site.origin}/agent-manifest.json): Structured map of public records and retrieval resources.
 - [Full LLM index](${site.origin}/llms-full.txt): Complete public record list with summaries and identifier links.
+- [OpenSearch](${site.origin}/opensearch.xml): Search description for /search/?q={searchTerms}.
+- [Knowledge graph catalog JSON-LD](${site.origin}/graph/catalog.jsonld): DataCatalog/Dataset description of the public graph.
 - [Search documents](${site.origin}/search/documents.json): Public retrieval corpus used by site search.
 - [Public catalog](${site.origin}/generated/public/catalog.json): Public entities, routes and relations.
 - [Graph entities](${site.origin}/graph/entities.json): Public entity catalog export.
@@ -133,6 +135,8 @@ ${featured.map(recordLink).join("\n")}
 - [Legal notice](${site.origin}/mentions-legales.html)
 - [Privacy policy](${site.origin}/confidentialite.html)
 - [Archive collections](${site.origin}/archive/collections/)
+- [Humans.txt](${site.origin}/humans.txt)
+- [Security.txt](${site.origin}/.well-known/security.txt)
 
 Last curated source update: ${maxModifiedAt(records)}
 `;
@@ -205,14 +209,22 @@ export const buildAgentManifest = (entities: Entity[]) => {
       searchEndpoint: `${site.origin}/search/?q={search_term_string}`,
       llmsTxt: `${site.origin}/llms.txt`,
       llmsFullTxt: `${site.origin}/llms-full.txt`,
+      opensearch: `${site.origin}/opensearch.xml`,
+      knowledgeGraphCatalog: `${site.origin}/graph/catalog.jsonld`,
       robotsTxt: `${site.origin}/robots.txt`,
+      humansTxt: `${site.origin}/humans.txt`,
+      securityTxt: `${site.origin}/.well-known/security.txt`,
     },
     resources: [
       { title: "Sitemap", url: `${site.origin}/sitemap.xml`, format: "application/xml" },
+      { title: "OpenSearch description", url: `${site.origin}/opensearch.xml`, format: "application/opensearchdescription+xml" },
+      { title: "Knowledge graph catalog JSON-LD", url: `${site.origin}/graph/catalog.jsonld`, format: "application/ld+json" },
       { title: "Public search documents", url: `${site.origin}/search/documents.json`, format: "application/json" },
       { title: "Public catalog", url: `${site.origin}/generated/public/catalog.json`, format: "application/json" },
       { title: "Graph entities", url: `${site.origin}/graph/entities.json`, format: "application/json" },
       { title: "Graph relations", url: `${site.origin}/graph/relations.json`, format: "application/json" },
+      { title: "Humans.txt", url: `${site.origin}/humans.txt`, format: "text/plain" },
+      { title: "Security.txt", url: `${site.origin}/.well-known/security.txt`, format: "text/plain" },
     ],
     countsByType,
     lastModified: maxModifiedAt(records),

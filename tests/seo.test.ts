@@ -2,9 +2,13 @@ import assert from "node:assert/strict";
 import test from "node:test";
 import path from "node:path";
 import { loadContent } from "../src/build/load-content.js";
+import { loadRelations } from "../src/build/load-relations.js";
 import { buildAgentManifest, buildLlmsTxt } from "../src/seo/agent-index.js";
+import { buildKnowledgeGraphCatalogJsonLd } from "../src/seo/knowledge-catalog.js";
 import { metadataFor } from "../src/seo/metadata.js";
+import { buildOpenSearchDescription } from "../src/seo/opensearch.js";
 import { buildSitemap } from "../src/seo/sitemaps.js";
+import { buildSecurityTxt } from "../src/seo/trust-files.js";
 import { jsonLdFor } from "../src/semantic/jsonld.js";
 import { buildRoutes } from "../src/build/build-routes.js";
 import { renderEditorialPanels } from "../src/templates/components/editorial-panels.js";
@@ -81,6 +85,9 @@ test("sitemap excludes noindex generated search route", async () => {
   const sitemap = buildSitemap(entities);
 
   assert.doesNotMatch(sitemap, /https:\/\/electronicartefacts\.com\/search\//);
+  assert.match(sitemap, /xmlns:image="http:\/\/www\.google\.com\/schemas\/sitemap-image\/1\.1"/);
+  assert.match(sitemap, /<loc>https:\/\/electronicartefacts\.com\/<\/loc><lastmod>2026-06-25<\/lastmod>/);
+  assert.match(sitemap, /<image:loc>https:\/\/electronicartefacts\.com\/assets\/media\/projects\/electronic-artefacts\/electronic-artefacts-search\.jpg<\/image:loc>/);
 });
 
 test("agent indexes expose canonical retrieval resources", async () => {
@@ -90,10 +97,30 @@ test("agent indexes expose canonical retrieval resources", async () => {
 
   assert.match(llms, /# Electronic Artefacts/);
   assert.match(llms, /https:\/\/electronicartefacts\.com\/agent-manifest\.json/);
+  assert.match(llms, /https:\/\/electronicartefacts\.com\/graph\/catalog\.jsonld/);
   assert.match(llms, /https:\/\/electronicartefacts\.com\/search\/\?q=knowledge%20graph/);
   assert.equal(manifest.retrievalPolicy.searchEndpoint, "https://electronicartefacts.com/search/?q={search_term_string}");
+  assert.equal(manifest.retrievalPolicy.knowledgeGraphCatalog, "https://electronicartefacts.com/graph/catalog.jsonld");
   assert.ok(manifest.records.some((record) => record.id === "ea:concept:ai-agent"));
   assert.ok(manifest.records.every((record) => record.url.startsWith("https://electronicartefacts.com/")));
+});
+
+test("machine contracts expose graph catalog, search and trust endpoints", async () => {
+  const root = path.resolve(".");
+  const entities = await loadContent(root);
+  const relations = await loadRelations(root);
+  const catalog = buildKnowledgeGraphCatalogJsonLd(entities, relations);
+  const graph = catalog["@graph"] as Array<Record<string, unknown>>;
+  const openSearch = buildOpenSearchDescription();
+  const securityTxt = buildSecurityTxt();
+
+  assert.ok(graph.some((node) => node["@type"] === "DataCatalog"));
+  assert.ok(graph.some((node) => node["@type"] === "Dataset"));
+  assert.ok(graph.some((node) => node["@id"] === "https://electronicartefacts.com/graph/catalog.jsonld#records"));
+  assert.match(openSearch, /application\/opensearchdescription\+xml|OpenSearchDescription/);
+  assert.match(openSearch, /https:\/\/electronicartefacts\.com\/search\/\?q=\{searchTerms\}/);
+  assert.match(securityTxt, /Contact: mailto:electronic\.artefacts@gmail\.com/);
+  assert.match(securityTxt, /Canonical: https:\/\/electronicartefacts\.com\/\.well-known\/security\.txt/);
 });
 
 test("identifier routes expose noindex canonical metadata and JSON-LD fallback", async () => {
