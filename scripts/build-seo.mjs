@@ -50,7 +50,7 @@ const pages = {
   "work.html": {
     title: "Selected Work | Electronic Artefacts",
     description:
-      "Explore digital products, knowledge platforms, creative technology and public systems designed by Electronic Artefacts.",
+      "Consulting, audits, SEO, branding, product design, development and R&D services by Electronic Artefacts.",
   },
   "projects.html": {
     title: "Projects | Electronic Artefacts",

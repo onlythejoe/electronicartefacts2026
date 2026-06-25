@@ -3087,12 +3087,12 @@
         rgb: "251, 191, 36",
       },
       {
-        mark: "MO",
-        kicker: "Movement",
-        title: "Motion and moving image",
-        copy: "Motion gives a system rhythm and continuity, from interface behaviour and title sequences to campaign films and spatial visual language.",
-        tools: ["After Effects", "Premiere Pro", "Cinema 4D", "Blender"],
-        outputs: ["Motion system", "Film", "Animation"],
+        mark: "AUD",
+        kicker: "Diagnosis",
+        title: "Audit, debugging and recovery",
+        copy: "When something is unclear, slow, invisible or broken, we isolate the causes and turn the diagnosis into a practical recovery plan.",
+        tools: ["Analytics", "Search Console", "Lighthouse", "Code review"],
+        outputs: ["Audit", "Fix list", "Recovery plan"],
         x: 87,
         y: 23,
         size: "7.2rem",
@@ -3276,9 +3276,9 @@
 
         <div class="capability-outcomes" aria-label="What the combined practice can produce">
           ${[
-            ["Brands and campaigns", "Identity, editorial direction, original imagery, motion and launch surfaces."],
+            ["Brands and campaigns", "Identity, editorial direction, original imagery, content systems and launch surfaces."],
             ["Products and platforms", "Research, product framing, UX, interface, engineering and operational workflows."],
-            ["Worlds and experiences", "Narrative, sound, moving image, 3D environments and interactive systems."],
+            ["Worlds and experiences", "Narrative, sound, image direction, 3D environments and interactive systems."],
             ["Knowledge and automation", "Taxonomies, archives, publishing tools, AI workflows and custom technical infrastructure."],
           ]
             .map(
@@ -3296,6 +3296,138 @@
         <div class="work-capabilities__closing">
           <p>Capabilities are combined around the problem, then carried through to a live, documented or reproducible result.</p>
           <a class="button button--secondary" href="./contact.html">Shape a capability mix</a>
+        </div>
+      </section>
+    `;
+  };
+
+  const renderWorkServices = () => {
+    const serviceGroups = [
+      {
+        meta: "Consulting",
+        title: "Strategy, diagnosis and decision support",
+        copy:
+          "Clarify what is blocked, what matters, what should be built, and what should be stopped before time and budget are spent in the wrong direction.",
+        services: [
+          "Discovery and strategic framing",
+          "Product, brand and platform diagnosis",
+          "Business, audience and offer analysis",
+          "Technical and operational due diligence",
+          "Roadmaps, prioritisation and decision memos",
+          "Stakeholder workshops and advisory sessions",
+        ],
+      },
+      {
+        meta: "Growth",
+        title: "Marketing, SEO and visibility systems",
+        copy:
+          "Connect positioning, content, technical SEO and analytics so the public surface can be found, understood and improved over time.",
+        services: [
+          "SEO audits and technical SEO fixes",
+          "Content strategy and search intent mapping",
+          "Metadata, schema, sitemaps and indexability",
+          "Landing pages, funnels and campaign structure",
+          "Analytics setup, dashboards and measurement plans",
+          "Marketing diagnostics and conversion improvements",
+        ],
+      },
+      {
+        meta: "Brand",
+        title: "Branding, communication and art direction",
+        copy:
+          "Give the project a recognisable voice, visual system and editorial logic that can hold across website, product, deck, social and internal material.",
+        services: [
+          "Positioning, naming and messaging",
+          "Visual identity and brand systems",
+          "Art direction and image direction",
+          "Editorial guidelines and copywriting",
+          "Pitch decks, presentations and sales material",
+          "Communication architecture and launch narratives",
+        ],
+      },
+      {
+        meta: "Product",
+        title: "UX, UI and digital product design",
+        copy:
+          "Turn a complex service, tool or content system into a usable product with clear flows, states, components and responsive interface rules.",
+        services: [
+          "User journeys and information architecture",
+          "Wireframes, prototypes and design systems",
+          "Interface design for web apps and tools",
+          "Accessibility and responsive UX reviews",
+          "Content models, taxonomies and CMS structures",
+          "Usability debugging and interface simplification",
+        ],
+      },
+      {
+        meta: "Build",
+        title: "Development, architecture and implementation",
+        copy:
+          "Move from strategy to working software: front ends, back ends, content pipelines, APIs, deployment and maintainable systems.",
+        services: [
+          "Static sites, landing pages and web applications",
+          "Front-end development and interaction systems",
+          "CMS, data models and publishing workflows",
+          "APIs, integrations and automation scripts",
+          "Performance, security and reliability hardening",
+          "Debugging, refactoring and production recovery",
+        ],
+      },
+      {
+        meta: "R&D",
+        title: "Research, automation and knowledge systems",
+        copy:
+          "Prototype the less standard work: AI workflows, knowledge graphs, archives, internal tools and custom systems that connect content, people and process.",
+        services: [
+          "R&D scoping and technical prototypes",
+          "AI assistants, workflows and tool integrations",
+          "Knowledge graphs, archives and semantic models",
+          "Custom dashboards and internal operating tools",
+          "Data cleanup, enrichment and migration",
+          "Documentation, handoff and team enablement",
+        ],
+      },
+    ];
+
+    return `
+      <section class="zone-card hero work-services" id="services">
+        <div class="section-head">
+          <p class="eyebrow">SERVICE FIELD</p>
+          <h2>Consulting, creative direction and implementation under one roof.</h2>
+          <p class="lede">Electronic Artefacts can enter at diagnosis, strategy, design, build, recovery or R&D level. The work can stay advisory, become a focused audit, or move all the way into production.</p>
+        </div>
+        <div class="work-services__grid">
+          ${serviceGroups
+            .map(
+              (group, index) => `
+                <article class="work-service-card">
+                  <div class="work-service-card__top">
+                    <span>${String(index + 1).padStart(2, "0")}</span>
+                    <p class="card__meta">${esc(group.meta)}</p>
+                  </div>
+                  <h3>${esc(group.title)}</h3>
+                  <p>${esc(group.copy)}</p>
+                  <ul>
+                    ${group.services.map((service) => `<li>${esc(service)}</li>`).join("")}
+                  </ul>
+                </article>
+              `,
+            )
+            .join("")}
+        </div>
+        <div class="work-services__scope">
+          <article>
+            <p class="card__meta">Typical entry points</p>
+            <strong>Audit, consulting, diagnostic, build, R&D, recovery.</strong>
+          </article>
+          <article>
+            <p class="card__meta">Useful when</p>
+            <strong>The problem crosses marketing, design, technology and operations.</strong>
+          </article>
+          <article>
+            <p class="card__meta">Output</p>
+            <strong>Clear decisions, working artefacts, implementation and documentation.</strong>
+          </article>
         </div>
       </section>
     `;
@@ -4196,7 +4328,7 @@
       </section>
     `;
   };
-  const renderWork = () => renderWorkOffer() + workTaxonomy() + catalogSectionWork();
+  const renderWork = () => renderWorkServices() + renderWorkOffer() + workTaxonomy() + catalogSectionWork();
   const renderResearch = () => researchFields() + researchPrograms() + researchNotes();
   const renderProgramsPage = () => renderPrograms() + pageLens("programs");
   const renderProjectsPage = () => renderProjects();
@@ -4299,6 +4431,7 @@
     },
     work: {
       "work-capabilities": renderWorkCapabilities,
+      "work-services": renderWorkServices,
       "work-offer": renderWorkOffer,
       "work-taxonomy": workTaxonomy,
       "work-catalog": catalogSectionWork,

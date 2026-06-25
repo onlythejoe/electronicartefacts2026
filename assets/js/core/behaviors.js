@@ -1784,7 +1784,7 @@
 
     const pageDescriptions = {
       index: fallbackDescription,
-      work: "Explore digital products, knowledge platforms, creative technology and public systems designed by Electronic Artefacts.",
+      work: "Consulting, audits, SEO, branding, product design, development and R&D services by Electronic Artefacts.",
       research: "Research across technology, knowledge systems, culture, governance, perception and creative production.",
       programs: "Explore Electronic Artefacts software programs available through repository access, pilots, implementation work and licensing conversations.",
       projects: "Explore Electronic Artefacts projects across software, cultural platforms, artistic production and client systems.",
