@@ -39,6 +39,13 @@ const sameAs = [
   "https://github.com/onlythejoe",
   "https://soundcloud.com/electronic-artefacts",
 ];
+const frenchRoutes = {
+  "index.html": "/fr/",
+  "work.html": "/fr/work.html",
+  "projects.html": "/fr/projects.html",
+  "about.html": "/fr/about.html",
+  "contact.html": "/fr/contact.html",
+};
 
 const pages = {
   "index.html": {
@@ -205,6 +212,7 @@ const seoMarkup = (file, config) => {
   const type = config.type || "website";
   const robots = config.robots || "index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1";
   const canonicalMarkup = `\n    <link rel="canonical" href="${canonical}" />`;
+  const frenchAlternate = frenchRoutes[file] ? `${origin}${frenchRoutes[file]}` : null;
   const schemaMarkup = `
     <script type="application/ld+json" data-seo-schema="webpage">
       ${JSON.stringify({
@@ -275,7 +283,7 @@ const seoMarkup = (file, config) => {
     <meta name="robots" content="${robots}" />
     <meta name="author" content="Electronic Artefacts" />
     <meta name="theme-color" content="#000000" />${canonicalMarkup}
-    <link rel="alternate" hreflang="en" href="${canonical}" />
+    <link rel="alternate" hreflang="en" href="${canonical}" />${frenchAlternate ? `\n    <link rel="alternate" hreflang="fr" href="${frenchAlternate}" />` : ""}
     <link rel="alternate" hreflang="x-default" href="${canonical}" />
     <link rel="icon" type="image/png" sizes="192x192" href="/assets/media/projects/electronic-artefacts/electronic-artefacts-icon-192.png" />
     <link rel="apple-touch-icon" sizes="192x192" href="/assets/media/projects/electronic-artefacts/electronic-artefacts-icon-192.png" />

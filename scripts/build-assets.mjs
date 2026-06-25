@@ -29,6 +29,7 @@ const jsSources = [
   "assets/js/catalog.js",
   "assets/js/core/utils.js",
   "assets/js/core/includes.js",
+  "assets/js/core/i18n.js",
   "assets/js/core/ui.js",
   "assets/js/core/view.js",
   "assets/js/core/surface.js",

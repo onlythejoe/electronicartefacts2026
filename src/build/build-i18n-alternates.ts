@@ -5,15 +5,15 @@ import type { Locale } from "../schema/entity.js";
 
 export type I18nAlternates = Record<string, Partial<Record<Locale, string>>>;
 
-const staticRoutes = [
-  "/",
-  "/about.html",
+const staticRoutes = ([
+  { route: "/", french: "/fr/" },
+  { route: "/about.html", french: "/fr/about.html" },
   "/archive.html",
-  "/contact.html",
-  "/projects.html",
+  { route: "/contact.html", french: "/fr/contact.html" },
+  { route: "/projects.html", french: "/fr/projects.html" },
   "/programs.html",
   "/research.html",
-  "/work.html",
+  { route: "/work.html", french: "/fr/work.html" },
   "/knowledge/",
   "/knowledge/concepts/",
   "/knowledge/methods/",
@@ -21,7 +21,8 @@ const staticRoutes = [
   "/knowledge/technologies/",
   "/archive/collections/",
   "/publications/",
-];
+] as Array<string | { route: string; french?: string }>)
+  .map((item) => typeof item === "string" ? { route: item } : item);
 
 const translationGroupKey = (entity: Entity): string =>
   entity.translationKey || entity.translationOf || entity.id;
@@ -33,9 +34,11 @@ const addAlias = (alternates: I18nAlternates, route: string, locales: Partial<Re
 export const buildI18nAlternates = (entities: Entity[]): I18nAlternates => {
   const alternates: I18nAlternates = {};
 
-  for (const route of staticRoutes) {
-    addAlias(alternates, route, { en: localizedRoute(route, "en") });
-    if (route === "/") addAlias(alternates, "/index.html", { en: "/" });
+  for (const { route, french } of staticRoutes) {
+    const locales = { en: localizedRoute(route, "en"), ...(french ? { fr: french } : {}) };
+    addAlias(alternates, route, locales);
+    if (french) addAlias(alternates, french, locales);
+    if (route === "/") addAlias(alternates, "/index.html", locales);
   }
 
   const groups = new Map<string, Entity[]>();

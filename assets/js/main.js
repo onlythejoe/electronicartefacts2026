@@ -4523,6 +4523,7 @@
     const includesReady = loadIncludes();
     renderPageSections();
     await includesReady;
+    window.EA_I18N?.localizeRoot(document);
     syncNavigationState(current);
     await initLanguageSwitcher();
     document.querySelectorAll(".site-main .zone-card").forEach((zone, index) => {

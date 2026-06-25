@@ -6,10 +6,10 @@
     if (!key) return null;
     const path =
       key === "header"
-        ? "./assets/partials/header.html"
+        ? "/assets/partials/header.html"
         : key === "footer"
-          ? "./assets/partials/footer.html"
-          : `./assets/partials/${key}`;
+          ? "/assets/partials/footer.html"
+          : `/assets/partials/${key}`;
     return `${path}?v=${includeVersion}`;
   };
 

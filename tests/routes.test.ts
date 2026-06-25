@@ -65,3 +65,11 @@ test("builds route alternates for translated entity groups", async () => {
     fr: "/fr/projects/vestiges/",
   });
 });
+
+test("builds route alternates for French pilot pages", async () => {
+  const alternates = buildI18nAlternates(await loadContent(path.resolve(".")));
+  assert.deepEqual(alternates["/"], { en: "/", fr: "/fr/" });
+  assert.deepEqual(alternates["/fr/"], { en: "/", fr: "/fr/" });
+  assert.deepEqual(alternates["/work.html"], { en: "/work.html", fr: "/fr/work.html" });
+  assert.deepEqual(alternates["/fr/contact.html"], { en: "/contact.html", fr: "/fr/contact.html" });
+});

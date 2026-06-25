@@ -2,7 +2,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "build": "npm run validate && tsx scripts/build-site.ts && node scripts/build-seo.mjs && node scripts/build-assets.mjs",
+    "build": "npm run validate && tsx scripts/build-site.ts && node scripts/build-seo.mjs && node scripts/build-i18n-pages.mjs && node scripts/build-assets.mjs",
     "seo": "node scripts/build-seo.mjs",
     "validate": "tsx scripts/validate-content.ts",
     "typecheck": "tsc --noEmit",

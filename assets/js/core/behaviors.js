@@ -26,6 +26,7 @@
     const menu = root.querySelector("[data-language-menu]");
     const current = root.querySelector("[data-language-current]");
     const options = [...root.querySelectorAll("[data-language-option]")];
+    const translate = window.EA_I18N?.translateText || ((value) => value);
 
     const normalizePath = (value) => {
       const url = new URL(value, window.location.origin);
@@ -87,7 +88,7 @@
         const available = Boolean(currentAlternates[optionLanguage]);
         option.setAttribute("aria-checked", optionLanguage === language ? "true" : "false");
         option.classList.toggle("is-unavailable", !available);
-        option.title = available ? "" : "Translation not available yet";
+        option.title = available ? "" : translate("Translation not available yet");
       });
       document.documentElement.dataset.preferredLanguage = language;
     };
@@ -100,7 +101,9 @@
         window.location.assign(target);
         return;
       }
-      if (manual && language !== active && !target) toast(language === "fr" ? "French version not available yet" : "English version not available yet");
+      if (manual && language !== active && !target) {
+        toast(translate(language === "fr" ? "French version not available yet" : "English version not available yet"));
+      }
     };
 
     const stored = readPreference();
@@ -113,8 +116,12 @@
       option.addEventListener("click", () => {
         const language = option.getAttribute("data-language-option");
         if (!supported.includes(language)) return;
-        writePreference(language);
         setOpen(false);
+        if (!currentAlternates[language]) {
+          navigateTo(language, true);
+          return;
+        }
+        writePreference(language);
         navigateTo(language, true);
       });
     });
@@ -1863,6 +1870,7 @@
 
   const syncSeoMeta = ({ current, entityById }) => {
     if (document.body.dataset.generatedPage === "true") return;
+    if (document.documentElement.lang === "fr") return;
     syncPageTitle({ current, entityById });
     document.documentElement.lang = "en";
 

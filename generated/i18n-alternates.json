@@ -1,9 +1,11 @@
 {
   "/": {
-    "en": "/"
+    "en": "/",
+    "fr": "/fr/"
   },
   "/about.html": {
-    "en": "/about.html"
+    "en": "/about.html",
+    "fr": "/fr/about.html"
   },
   "/archive.html": {
     "en": "/archive.html"
@@ -24,10 +26,32 @@
     "en": "/archive/collections/knowledge-hub-third-wave/"
   },
   "/contact.html": {
-    "en": "/contact.html"
+    "en": "/contact.html",
+    "fr": "/fr/contact.html"
+  },
+  "/fr/": {
+    "en": "/",
+    "fr": "/fr/"
+  },
+  "/fr/about.html": {
+    "en": "/about.html",
+    "fr": "/fr/about.html"
+  },
+  "/fr/contact.html": {
+    "en": "/contact.html",
+    "fr": "/fr/contact.html"
+  },
+  "/fr/projects.html": {
+    "en": "/projects.html",
+    "fr": "/fr/projects.html"
+  },
+  "/fr/work.html": {
+    "en": "/work.html",
+    "fr": "/fr/work.html"
   },
   "/index.html": {
-    "en": "/"
+    "en": "/",
+    "fr": "/fr/"
   },
   "/knowledge/": {
     "en": "/knowledge/"
@@ -219,7 +243,8 @@
     "en": "/programs/vaste/"
   },
   "/projects.html": {
-    "en": "/projects.html"
+    "en": "/projects.html",
+    "fr": "/fr/projects.html"
   },
   "/projects/palimpsests/": {
     "en": "/projects/palimpsests/"
@@ -357,6 +382,7 @@
     "en": "/research/fields/runtime-theory/"
   },
   "/work.html": {
-    "en": "/work.html"
+    "en": "/work.html",
+    "fr": "/fr/work.html"
   }
 }

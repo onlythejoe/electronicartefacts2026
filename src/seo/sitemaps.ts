@@ -29,15 +29,25 @@ const urlMarkup = ({ route, lastmod, image, alternates }: SitemapUrl): string =>
 };
 
 export const buildSitemap = (entities: Entity[]): string => {
+  const bilingual = (english: string, french: string) => [
+    { hreflang: "en", href: `${site.origin}${english}` },
+    { hreflang: "fr", href: `${site.origin}${french}` },
+    { hreflang: "x-default", href: `${site.origin}${english}` },
+  ];
   const staticRoutes: SitemapUrl[] = [
-    { route: "/", image: `${site.origin}${site.socialImage}` },
-    { route: "/about.html" },
+    { route: "/", image: `${site.origin}${site.socialImage}`, alternates: bilingual("/", "/fr/") },
+    { route: "/fr/", image: `${site.origin}${site.socialImage}`, alternates: bilingual("/", "/fr/") },
+    { route: "/about.html", alternates: bilingual("/about.html", "/fr/about.html") },
+    { route: "/fr/about.html", alternates: bilingual("/about.html", "/fr/about.html") },
     { route: "/archive.html" },
-    { route: "/contact.html" },
-    { route: "/projects.html" },
+    { route: "/contact.html", alternates: bilingual("/contact.html", "/fr/contact.html") },
+    { route: "/fr/contact.html", alternates: bilingual("/contact.html", "/fr/contact.html") },
+    { route: "/projects.html", alternates: bilingual("/projects.html", "/fr/projects.html") },
+    { route: "/fr/projects.html", alternates: bilingual("/projects.html", "/fr/projects.html") },
     { route: "/programs.html" },
     { route: "/research.html" },
-    { route: "/work.html" },
+    { route: "/work.html", alternates: bilingual("/work.html", "/fr/work.html") },
+    { route: "/fr/work.html", alternates: bilingual("/work.html", "/fr/work.html") },
     { route: "/knowledge/" },
     { route: "/knowledge/concepts/" },
     { route: "/knowledge/methods/" },
