@@ -66,7 +66,6 @@
     <a data-nav="programs" href="/programs.html">PROGRAMS</a>
     <a data-nav="research" href="/research.html">RESEARCH</a>
     <a data-nav="knowledge" href="/knowledge/">KNOWLEDGE</a>
-    <a data-nav="archive" href="/archive.html">ARCHIVE</a>
     <a data-nav="about" href="/about.html">ABOUT</a>
     <a data-nav="contact" href="/contact.html">CONTACT</a>
   </nav>
@@ -294,21 +293,31 @@
   </section>
       <section class="detail-grid article-detail-grid">
 
-  <section class="panel knowledge-panel">
-    <div class="section-head">
-      <p class="card__meta">Identity and publication</p>
-      <h2 class="card__title">Record metadata</h2>
+  <section class="panel knowledge-panel engagement-panel" data-engagement-panel data-like-key="ea:publication:event-driven-architecture-and-event-streams-fr">
+    <div class="engagement-panel__header">
+      <div>
+        <p class="card__meta">Save and share</p>
+        <h2 class="card__title">Architecture événementielle et flux d’événements</h2>
+      </div>
+      <span class="engagement-panel__status">Active</span>
     </div>
-    <dl class="metadata-list">
-      <div><dt>Entity ID</dt><dd>ea:publication:event-driven-architecture-and-event-streams-fr</dd></div>
-      <div><dt>Publication class</dt><dd>published</dd></div>
-      <div><dt>Status</dt><dd>active</dd></div>
-      <div><dt>Maturity</dt><dd>research</dd></div>
-      <div><dt>Confidence</dt><dd>published</dd></div>
-      <div><dt>Published</dt><dd>2026-06-25</dd></div>
-      <div><dt>Modified</dt><dd>2026-06-25</dd></div>
+    <div class="engagement-panel__actions" aria-label="Article actions">
+      <button class="engagement-action engagement-action--like" type="button" data-like-button aria-label="Like this article">
+        <span aria-hidden="true">♡</span>
+        <strong data-like-count>0</strong>
+      </button>
+      <button class="engagement-action" type="button" data-share-button>
+        <span aria-hidden="true">↗</span>
+        <strong>Share</strong>
+      </button>
+    </div>
+    <dl class="engagement-meta" aria-label="Compact article metadata">
+      <div><dt>Type</dt><dd>Publication</dd></div>
+      <div><dt>Maturity</dt><dd>Research</dd></div>
+      <div><dt>Updated</dt><dd>2026-06-25</dd></div>
       <div><dt>Version</dt><dd>1.0.0</dd></div>
     </dl>
+    <p class="engagement-panel__feedback" data-engagement-feedback aria-live="polite"></p>
   </section>
 
     <section class="panel knowledge-panel">

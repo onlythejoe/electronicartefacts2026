@@ -5,7 +5,7 @@
   const { esc, setYear, slugify } = window.EA_UTILS;
   const { loadIncludes } = window.EA_INCLUDES;
   const { statusBadge, chip, tagRow, metadataList, linkRow, metricRail, cardLinkAttrs, cardOverlayLink } = window.EA_UI;
-  const { initFilters, initSearch, initLanguageSwitcher, initCardLinks, initContactDiscovery, initCapabilityMaps, initUXEnhancements, refreshCardSurfaces, syncNavigationState, syncSeoMeta } = window.EA_BEHAVIORS;
+  const { initFilters, initSearch, initLanguageSwitcher, initCardLinks, initContactDiscovery, initCapabilityMaps, initUXEnhancements, initEngagementPanels, refreshCardSurfaces, syncNavigationState, syncSeoMeta } = window.EA_BEHAVIORS;
   const {
     cardBaseAttrs,
     mediaFrom,
@@ -990,24 +990,45 @@
     `;
   };
 
-  const metadataPanel = (item) =>
-    panelShell(
-      "Identity",
-      "Core facts, dates and classification for this work.",
-      metadataList([
-        { label: "Title", value: item.title },
-        { label: "Role", value: item.subtitle || item.type },
-        { label: "Status", value: statusLabelFor(item) },
-        { label: "Maturity", value: taxonomyLabel("maturity", item.maturity) },
-        { label: "Confidence", value: taxonomyLabel("confidence", item.confidence) },
-        { label: "Visibility", value: taxonomyLabel("visibility", item.visibility) },
-        { label: "Domain", value: item.domain },
-        { label: "System group", value: item.systemGroup },
-        { label: "Created", value: item.temporality?.creationYear },
-        { label: "Release date", value: item.temporality?.releaseDate },
-        { label: "Era", value: item.temporality?.era },
-      ]),
-    );
+  const metadataPanel = (item) => `
+    <section class="panel knowledge-panel engagement-panel" data-engagement-panel data-like-key="${esc(item.id || item.title || "record")}">
+      <div class="engagement-panel__header">
+        <div>
+          <p class="card__meta">Save and share</p>
+          <h2 class="card__title">${esc(item.title || "Record")}</h2>
+        </div>
+        <span class="engagement-panel__status">${esc(statusLabelFor(item))}</span>
+      </div>
+      <div class="engagement-panel__actions" aria-label="Article actions">
+        <button class="engagement-action engagement-action--like" type="button" data-like-button aria-label="Like this article">
+          <span aria-hidden="true">♡</span>
+          <strong data-like-count>0</strong>
+        </button>
+        <button class="engagement-action" type="button" data-share-button>
+          <span aria-hidden="true">↗</span>
+          <strong>Share</strong>
+        </button>
+      </div>
+      <dl class="engagement-meta" aria-label="Compact article metadata">
+        ${[
+          { label: "Type", value: item.subtitle || item.type || detailTypeLabel(item) },
+          { label: "Domain", value: item.domain || item.category },
+          { label: "Updated", value: item.temporality?.lastUpdated || item.temporality?.creationYear },
+        ]
+          .filter((pair) => pair.value)
+          .map(
+            (pair) => `
+              <div>
+                <dt>${esc(pair.label)}</dt>
+                <dd>${esc(pair.value)}</dd>
+              </div>
+            `,
+          )
+          .join("")}
+      </dl>
+      <p class="engagement-panel__feedback" data-engagement-feedback aria-live="polite"></p>
+    </section>
+  `;
 
   const tagsPanel = (item) =>
     panelShell(
@@ -4462,6 +4483,7 @@
     initContactDiscovery();
     initCapabilityMaps();
     initUXEnhancements(filterState);
+    initEngagementPanels();
     startVasteEngineAnimation();
     startComputationFieldAnimation();
     startGraphSurfaceAnimation();

@@ -19357,6 +19357,79 @@ window.EA_SEARCH = {
     }
   };
 
+  const initEngagementPanels = () => {
+    document.querySelectorAll("[data-engagement-panel]").forEach((panel) => {
+      if (panel.dataset.boundEngagement === "true") return;
+      panel.dataset.boundEngagement = "true";
+
+      const rawKey = panel.getAttribute("data-like-key") || window.location.pathname || "page";
+      const storageKey = `ea:article-likes:${slugify(rawKey) || "page"}`;
+      const countNode = panel.querySelector("[data-like-count]");
+      const likeButton = panel.querySelector("[data-like-button]");
+      const shareButton = panel.querySelector("[data-share-button]");
+      const feedback = panel.querySelector("[data-engagement-feedback]");
+
+      const readCount = () => {
+        try {
+          const value = Number(window.localStorage.getItem(storageKey) || "0");
+          return Number.isFinite(value) && value > 0 ? Math.floor(value) : 0;
+        } catch {
+          return 0;
+        }
+      };
+
+      const writeCount = (value) => {
+        try {
+          window.localStorage.setItem(storageKey, String(value));
+        } catch {
+          return;
+        }
+      };
+
+      const setFeedback = (message) => {
+        if (!feedback) return;
+        feedback.textContent = message;
+        window.clearTimeout(panel._engagementFeedbackTimer);
+        panel._engagementFeedbackTimer = window.setTimeout(() => {
+          feedback.textContent = "";
+        }, 2200);
+      };
+
+      const syncCount = (value) => {
+        if (countNode) countNode.textContent = String(value);
+        likeButton?.classList.toggle("has-likes", value > 0);
+      };
+
+      syncCount(readCount());
+
+      likeButton?.addEventListener("click", () => {
+        const next = readCount() + 1;
+        writeCount(next);
+        syncCount(next);
+        setFeedback(translate(next === 1 ? "Saved as a local like." : "Local like added."));
+      });
+
+      shareButton?.addEventListener("click", async () => {
+        const shareData = {
+          title: document.title || "Electronic Artefacts",
+          text: document.querySelector('meta[name="description"]')?.getAttribute("content") || "Electronic Artefacts article",
+          url: window.location.href,
+        };
+        try {
+          if (navigator.share) {
+            await navigator.share(shareData);
+            setFeedback(translate("Share sheet opened."));
+            return;
+          }
+          await navigator.clipboard.writeText(shareData.url);
+          setFeedback(translate("Link copied."));
+        } catch {
+          setFeedback(translate("Share unavailable."));
+        }
+      });
+    });
+  };
+
   const initCardLinks = () => {
     if (document.body.dataset.boundCardLinks === "true") return;
     document.body.dataset.boundCardLinks = "true";
@@ -21132,6 +21205,7 @@ window.EA_SEARCH = {
     initCardLinks,
     initContactDiscovery,
     initCapabilityMaps,
+    initEngagementPanels,
     initIntentHeroes,
     initUXEnhancements,
     refreshCardSurfaces,
@@ -21149,7 +21223,7 @@ window.EA_SEARCH = {
   const { esc, setYear, slugify } = window.EA_UTILS;
   const { loadIncludes } = window.EA_INCLUDES;
   const { statusBadge, chip, tagRow, metadataList, linkRow, metricRail, cardLinkAttrs, cardOverlayLink } = window.EA_UI;
-  const { initFilters, initSearch, initLanguageSwitcher, initCardLinks, initContactDiscovery, initCapabilityMaps, initUXEnhancements, refreshCardSurfaces, syncNavigationState, syncSeoMeta } = window.EA_BEHAVIORS;
+  const { initFilters, initSearch, initLanguageSwitcher, initCardLinks, initContactDiscovery, initCapabilityMaps, initUXEnhancements, initEngagementPanels, refreshCardSurfaces, syncNavigationState, syncSeoMeta } = window.EA_BEHAVIORS;
   const {
     cardBaseAttrs,
     mediaFrom,
@@ -22134,24 +22208,45 @@ window.EA_SEARCH = {
     `;
   };
 
-  const metadataPanel = (item) =>
-    panelShell(
-      "Identity",
-      "Core facts, dates and classification for this work.",
-      metadataList([
-        { label: "Title", value: item.title },
-        { label: "Role", value: item.subtitle || item.type },
-        { label: "Status", value: statusLabelFor(item) },
-        { label: "Maturity", value: taxonomyLabel("maturity", item.maturity) },
-        { label: "Confidence", value: taxonomyLabel("confidence", item.confidence) },
-        { label: "Visibility", value: taxonomyLabel("visibility", item.visibility) },
-        { label: "Domain", value: item.domain },
-        { label: "System group", value: item.systemGroup },
-        { label: "Created", value: item.temporality?.creationYear },
-        { label: "Release date", value: item.temporality?.releaseDate },
-        { label: "Era", value: item.temporality?.era },
-      ]),
-    );
+  const metadataPanel = (item) => `
+    <section class="panel knowledge-panel engagement-panel" data-engagement-panel data-like-key="${esc(item.id || item.title || "record")}">
+      <div class="engagement-panel__header">
+        <div>
+          <p class="card__meta">Save and share</p>
+          <h2 class="card__title">${esc(item.title || "Record")}</h2>
+        </div>
+        <span class="engagement-panel__status">${esc(statusLabelFor(item))}</span>
+      </div>
+      <div class="engagement-panel__actions" aria-label="Article actions">
+        <button class="engagement-action engagement-action--like" type="button" data-like-button aria-label="Like this article">
+          <span aria-hidden="true">♡</span>
+          <strong data-like-count>0</strong>
+        </button>
+        <button class="engagement-action" type="button" data-share-button>
+          <span aria-hidden="true">↗</span>
+          <strong>Share</strong>
+        </button>
+      </div>
+      <dl class="engagement-meta" aria-label="Compact article metadata">
+        ${[
+          { label: "Type", value: item.subtitle || item.type || detailTypeLabel(item) },
+          { label: "Domain", value: item.domain || item.category },
+          { label: "Updated", value: item.temporality?.lastUpdated || item.temporality?.creationYear },
+        ]
+          .filter((pair) => pair.value)
+          .map(
+            (pair) => `
+              <div>
+                <dt>${esc(pair.label)}</dt>
+                <dd>${esc(pair.value)}</dd>
+              </div>
+            `,
+          )
+          .join("")}
+      </dl>
+      <p class="engagement-panel__feedback" data-engagement-feedback aria-live="polite"></p>
+    </section>
+  `;
 
   const tagsPanel = (item) =>
     panelShell(
@@ -25606,6 +25701,7 @@ window.EA_SEARCH = {
     initContactDiscovery();
     initCapabilityMaps();
     initUXEnhancements(filterState);
+    initEngagementPanels();
     startVasteEngineAnimation();
     startComputationFieldAnimation();
     startGraphSurfaceAnimation();
