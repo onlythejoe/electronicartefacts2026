@@ -238,7 +238,7 @@ const renderRefCards = (
               <p class="card__meta">${escapeHtml(upperLabel(item.type))}</p>
               <h3 class="card__title"><a href="${escapeHtml(item.route)}">${escapeHtml(item.title)}</a></h3>
               <p class="card__copy">${escapeHtml(item.copy)}</p>
-              <div class="link-row"><a class="tag" href="${escapeHtml(item.route)}">Open record</a></div>
+              <div class="link-row"><a class="tag" href="${escapeHtml(item.route)}">Open page</a></div>
             </article>`;
         }).join("")}
       </div>
@@ -295,7 +295,7 @@ const renderProjectTabs = (
               <h3 class="card__title"><a href="${escapeHtml(item.route)}">${escapeHtml(item.title)}</a></h3>
               <p class="card__copy">${escapeHtml(item.copy)}</p>
             </article>`).join("")}</div>`
-        : `<p class="lede">Public evidence will appear here when records are attached to this project.</p>`,
+        : `<p class="lede">Public evidence will appear here when references are attached to this project.</p>`,
     },
   ];
 
@@ -305,7 +305,7 @@ const renderProjectTabs = (
         <div class="section-head">
           <p class="eyebrow">PROJECT READING</p>
           <h2>${isVestiges ? "Read Vestiges from thesis to evidence." : "A compact cockpit for the dossier."}</h2>
-          <p class="lede">${isVestiges ? "Move from the cultural problem to the graph model, contribution logic and current public evidence." : "Move between strategic framing, context, implementation logic and evidence without losing the surrounding page."}</p>
+          <p class="lede">${isVestiges ? "Move from the cultural problem to the contribution model and current public evidence." : "Move between strategic framing, context, implementation logic and evidence without losing the surrounding page."}</p>
         </div>
         <div class="project-command__nav" role="tablist" aria-label="Project dossier sections">
           ${tabs.map((tab, index) => `
@@ -345,9 +345,9 @@ const renderProjectSystem = (project: ProjectEntity): string => {
   return `
     <section class="zone-card hero project-intelligence" id="project-system">
       <div class="section-head">
-        <p class="eyebrow">PROJECT INTELLIGENCE</p>
+        <p class="eyebrow">PROJECT FRAME</p>
         <h2>${isVestiges ? "Knowledge, trust and activation in one operating model." : "Brief, context and operating frame in one place."}</h2>
-        <p class="lede">${isVestiges ? "Vestiges treats living know-how as shared infrastructure: addressable, attributable, reviewable and reusable across public and professional contexts." : "This section rebuilds itself from the structured project record, so the page stays precise when a project gains constraints, outcomes, media or evidence."}</p>
+        <p class="lede">${isVestiges ? "Vestiges treats living know-how as shared infrastructure: attributable, reviewable and reusable across public and professional contexts." : "This section gathers the brief, constraints, outcomes and public evidence into one readable project frame."}</p>
       </div>
       <div class="project-intelligence__grid">
         <article class="panel project-intelligence__card project-intelligence__card--lead">
@@ -393,7 +393,7 @@ const renderProjectMedia = (project: ProjectEntity): string => {
       <div class="section-head">
         <p class="eyebrow">MEDIA EVIDENCE</p>
         <h2>Visual and documentary material.</h2>
-        <p class="lede">When a project carries screenshots, marks, recordings or documents, this rail expands automatically from the project media list.</p>
+        <p class="lede">Screenshots, marks, recordings and documents appear here when they help show how the project works.</p>
       </div>
       <div class="project-immersive__rail project-immersive__rail--wide">
         ${gallery.map((media) => `
@@ -442,7 +442,7 @@ const renderProjectMoodboard = (project: ProjectEntity): string => {
         <div class="section-head">
           <p class="eyebrow">ART DIRECTION</p>
           <h2>${isVestiges ? "A restrained identity for living knowledge." : "Moodboard, marks and visual system."}</h2>
-          <p class="lede">${isVestiges ? "White space, black structure and archival restraint keep the identity quiet enough for many cultures, practices and sources to coexist." : "The board appears when the project carries identity, mood or visual-language material, and its assets stay tied to the project media record."}</p>
+          <p class="lede">${isVestiges ? "White space, black structure and archival restraint keep the identity quiet enough for many cultures, practices and sources to coexist." : "Identity, mood and visual-language material are gathered here when they help explain the project direction."}</p>
         </div>
         ${groups.length > 1 ? `
           <div class="project-moodboard__filters" aria-label="Moodboard asset filters">
@@ -517,8 +517,8 @@ const renderProjectDevelopment = (
     <section class="zone-card hero project-discipline project-discipline--dev" id="project-dev">
       <div class="section-head">
         <p class="eyebrow">DEVELOPMENT</p>
-        <h2>${isVestiges ? "A graph runtime for cultural transmission." : "Architecture, implementation logic and build surface."}</h2>
-        <p class="lede">${isVestiges ? "Stable identities, typed relations, provenance and contextual permissions turn cultural records into an executable and governable system." : "The technical read is generated from approach steps and typed implementation relations, then reinforced by current constraints and delivery state."}</p>
+        <h2>${isVestiges ? "A technical foundation for cultural transmission." : "Architecture, implementation logic and build surface."}</h2>
+        <p class="lede">${isVestiges ? "Stable identities, provenance and contextual permissions turn cultural material into a usable and governable system." : "The technical read combines approach steps, implementation choices, current constraints and delivery state."}</p>
       </div>
       <div class="project-discipline__grid">
         <article class="panel project-discipline__card project-discipline__card--lead">
@@ -536,9 +536,9 @@ const renderProjectDevelopment = (
             </ol>` : ""}
         </article>
         <article class="panel project-discipline__card">
-          <p class="card__meta">Implementation edges</p>
+          <p class="card__meta">Technical links</p>
           <h3 class="card__title">${escapeHtml(String(implementation.length))}</h3>
-          <p class="card__copy">${escapeHtml(implementation.length ? "Typed dependencies, frameworks or technologies are attached to the project graph." : "No typed implementation dependency is public yet.")}</p>
+          <p class="card__copy">${escapeHtml(implementation.length ? "Public technologies, frameworks or dependencies connected to the project." : "No public implementation dependency is listed yet.")}</p>
           ${implementation.length ? `
             <div class="project-discipline__links">
               ${implementation.slice(0, 5).map((item) => `<a class="tag" href="${escapeHtml(item.route)}">${escapeHtml(item.title)}</a>`).join("")}
@@ -550,7 +550,7 @@ const renderProjectDevelopment = (
           ${project.constraints?.length ? `
             <ul class="project-list">
               ${project.constraints.slice(0, 4).map((item) => `<li>${escapeHtml(item)}</li>`).join("")}
-            </ul>` : `<p class="card__copy">Technical constraints appear here as they are added to the project record.</p>`}
+            </ul>` : `<p class="card__copy">Technical constraints appear here when they are useful to the public dossier.</p>`}
         </article>
         <article class="panel project-discipline__card project-discipline__card--stack">
           <p class="card__meta">Build stack</p>
@@ -587,7 +587,7 @@ const renderProjectMarketing = (
       <div class="section-head">
         <p class="eyebrow">MARKETING</p>
         <h2>${isVestiges ? "From public knowledge to professional utility." : "Positioning, audience and proof."}</h2>
-        <p class="lede">${isVestiges ? "The offer begins with trustworthy discovery, then extends into contribution, learning, collaboration and specialist services." : "This view translates the project record into a public-facing offer: who it speaks to, what it promises and what can already be shown."}</p>
+        <p class="lede">${isVestiges ? "The offer begins with trustworthy discovery, then extends into contribution, learning, collaboration and specialist services." : "This view turns the project into a public-facing offer: who it speaks to, what it promises and what can already be shown."}</p>
       </div>
       <div class="project-marketing__grid">
         <article class="panel project-marketing__statement">
@@ -601,7 +601,7 @@ const renderProjectMarketing = (
           ${audience.length ? `
             <div class="project-discipline__links">
               ${audience.map((item) => `<a class="tag" href="${escapeHtml(item.route)}">${escapeHtml(item.title)}</a>`).join("")}
-            </div>` : `<p class="card__copy">Stakeholders become audience groups as the project record gets richer.</p>`}
+            </div>` : `<p class="card__copy">Audience groups appear here when they are useful to explain the project.</p>`}
         </article>
         <article class="panel project-discipline__card">
           <p class="card__meta">Proof</p>
@@ -634,9 +634,9 @@ const renderProjectGraph = (
     <section class="zone-card hero project-graph" id="project-graph" data-project-graph>
       <div class="project-graph__intro">
         <div class="section-head">
-          <p class="eyebrow">LOCAL GRAPH</p>
-          <h2>${escapeHtml(String(nodes.length))} typed connections around ${escapeHtml(project.title)}.</h2>
-          <p class="lede">The graph is generated from the same relationship records used by the accessible typed relationship list.</p>
+          <p class="eyebrow">RELATED CONTEXT</p>
+          <h2>${escapeHtml(String(nodes.length))} useful links around ${escapeHtml(project.title)}.</h2>
+          <p class="lede">Use these links to move from the project toward related people, systems, concepts and evidence.</p>
         </div>
         <article class="panel panel--soft project-graph__detail" data-project-graph-detail>
           <p class="card__meta" data-project-graph-label>${escapeHtml(first.label)}</p>
@@ -715,13 +715,13 @@ export const renderProjectPage = (
         <p class="lede">${escapeHtml(project.abstract)}</p>
         <div class="button-row button-row--compact">
           <a class="button button--primary" href="#project-brief">Read the brief</a>
-          <a class="button button--secondary" href="${hasGraph ? "#project-graph" : "#project-thesis"}">${hasGraph ? "Inspect graph" : "Read thesis"}</a>
+          <a class="button button--secondary" href="${hasGraph ? "#project-graph" : "#project-thesis"}">${hasGraph ? "See related context" : "Read thesis"}</a>
           ${(project.socialLinks || []).map((link) => `<a class="button button--secondary" href="${escapeHtml(link.href)}" target="_blank" rel="noreferrer">${escapeHtml(link.label)}</a>`).join("")}
         </div>
         <div class="metric-rail">
           ${renderMetric("Status", labelFrom(project.status), project.maturity, "surface")}
           ${renderMetric("Category", isVestiges ? "Flagship platform" : labelFrom(project.category), project.confidence, "research")}
-          ${renderMetric("Relations", String(connected.length), "typed edges", "system")}
+          ${renderMetric("Related", String(connected.length), "useful links", "system")}
           ${renderMetric("Media", String(mediaCount), mediaCount === 1 ? "asset" : "assets", "visual")}
         </div>
         ${renderChips(tags.slice(0, 10))}

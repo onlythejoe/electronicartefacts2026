@@ -1,0 +1,16 @@
+{
+  "id": "local:ea:framework:electronic-artefacts-lightweight-template",
+  "kind": "local",
+  "focus": "ea:framework:electronic-artefacts-lightweight-template",
+  "nodes": [
+    {
+      "id": "ea:framework:electronic-artefacts-lightweight-template",
+      "type": "framework",
+      "title": "Electronic Artefacts Lightweight Template",
+      "route": "/knowledge/frameworks/electronic-artefacts-lightweight-template/",
+      "status": "active",
+      "confidence": "published"
+    }
+  ],
+  "edges": []
+}

@@ -123,9 +123,9 @@ const renderArticleHero = (
         <p class="lede">${escapeHtml(entity.abstract)}</p>
         ${renderChipCloud(heroTags)}
       </div>
-      <aside class="article-hero__dashboard" aria-label="Article record summary">
+      <aside class="article-hero__dashboard" aria-label="Article summary">
         <div class="article-hero__dashboard-head">
-          <p class="card__meta">Publication record</p>
+          <p class="card__meta">Article</p>
           <strong>${escapeHtml(entity.version.version)}</strong>
         </div>
         <div class="article-stat-grid">
@@ -139,7 +139,7 @@ const renderArticleHero = (
           </span>
           <span>
             <strong>${escapeHtml(String(relationCount))}</strong>
-            <em>Relations</em>
+            <em>Related</em>
           </span>
           <span>
             <strong>${escapeHtml(published)}</strong>
@@ -195,14 +195,14 @@ const renderArticleContext = (
     </article>
     <article class="panel article-context-card">
       <div class="section-head">
-        <p class="card__meta">Knowledge graph</p>
+        <p class="card__meta">Related context</p>
         <h2 class="card__title">Evidence links</h2>
       </div>
       ${renderLinkedRefs(entity.evidence || entity.subjects, byId, routeById)}
     </article>
     <article class="panel article-context-card">
       <div class="section-head">
-        <p class="card__meta">Source trail</p>
+        <p class="card__meta">Sources</p>
         <h2 class="card__title">References</h2>
       </div>
       ${renderSourceList(entity.sources)}

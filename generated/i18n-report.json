@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-06-26T02:58:23.041Z",
+  "generatedAt": "2026-06-26T03:29:46.273Z",
   "staticPages": {
     "total": 26,
     "generated": 26,
@@ -10,13 +10,13 @@
     ]
   },
   "canonicalEntities": {
-    "english": 104,
-    "french": 104,
+    "english": 105,
+    "french": 105,
     "coveragePercent": 100
   },
   "editorialWords": {
-    "englishSourceWords": 70888,
-    "sourceWordsCoveredByFrenchRecords": 70888,
+    "englishSourceWords": 71106,
+    "sourceWordsCoveredByFrenchRecords": 71106,
     "coveragePercent": 100
   },
   "translatedEntityIds": [
@@ -60,6 +60,7 @@
     "ea:concept:systems-thinking",
     "ea:concept:typography",
     "ea:concept:web-audio",
+    "ea:framework:electronic-artefacts-lightweight-template",
     "ea:organization:electronic-artefacts",
     "ea:program:oreth",
     "ea:program:vaste",

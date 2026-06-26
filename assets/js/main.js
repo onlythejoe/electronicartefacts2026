@@ -166,13 +166,13 @@
       {
         label: "Systems & infrastructure",
         title: "How can complex systems remain legible, adaptable and governed?",
-        copy: "Runtime architecture, graph execution, information structures, simulation and organisational governance.",
+        copy: "Runtime architecture, information structures, simulation and organisational governance.",
         ids: ["runtime-theory", "systems-theory", "graph-runtime-studies", "governance-studies"],
       },
       {
         label: "Knowledge & transmission",
         title: "How does knowledge persist, circulate and become actionable?",
-        copy: "Taxonomy, memory, signals, archives and the relationships that make knowledge discoverable.",
+        copy: "Taxonomy, memory, archives and the relationships that make knowledge discoverable.",
         ids: ["information-studies", "signal-archaeology", "artifact-theory"],
       },
       {
@@ -241,8 +241,8 @@
       <section class="zone-card hero">
         <div class="section-head">
           <p class="eyebrow">FIELD DIRECTORY</p>
-          <h2>Open research fields.</h2>
-          <p class="lede">${publicFields.length} connected areas of inquiry. Open any field to inspect its projects, programs, artefacts and relations.</p>
+          <h2>Explore the research fields.</h2>
+          <p class="lede">${publicFields.length} areas of inquiry. Open any field to see the projects, notes and references around it.</p>
         </div>
         <div class="card-grid card-grid--three">
           ${publicFields.map((item, index) => researchCard(item, { href: `./entity.html?id=${encodeURIComponent(item.id)}`, index, hideLineage: true })).join("")}
@@ -266,7 +266,7 @@
         ${appliedPrograms.map(programCard).join("")}
       </div>
       <div class="link-row">
-        <a class="button button--secondary" href="./programs.html">Open the full program registry</a>
+        <a class="button button--secondary" href="./programs.html">See all programs</a>
         <a class="tag" href="https://www.vaste.space/" target="_blank" rel="noreferrer">Explore VASTE</a>
       </div>
     </section>
@@ -280,7 +280,7 @@
       <div class="section-head">
         <p class="eyebrow">RESEARCH RECORDS</p>
         <h2>Evidence stays attached to the work.</h2>
-        <p class="lede">Logs preserve decisions, tests and unresolved questions. They keep research inspectable after a prototype or project has moved on.</p>
+        <p class="lede">Logs preserve decisions, tests and unresolved questions, so useful learning remains visible after a prototype or project has moved on.</p>
       </div>
       <div class="card-grid card-grid--three">
         ${notes
@@ -308,8 +308,8 @@
           .join("")}
       </div>
       <div class="link-row">
-        <a class="button button--secondary" href="./archive.html">Browse the complete archive</a>
-        <a class="tag" href="./search.html">Search all records</a>
+        <a class="button button--secondary" href="./archive.html">Browse the archive</a>
+        <a class="tag" href="./search.html">Search the site</a>
       </div>
     </section>
   `;
@@ -320,7 +320,7 @@
       "archive",
       "ARCHIVE TAXONOMY",
       {
-        heading: "Archive as a library",
+        heading: "Archive as a working library",
         copy: "Filter by status, medium and discipline.",
       },
       [
@@ -819,11 +819,11 @@
     if (item.id === "vestiges") {
       return {
         title: "Read this as living knowledge infrastructure.",
-        intro: "Vestiges is the flagship public application of VASTE: a platform where people, practices, materials, places and institutions become durable identities inside one historized graph.",
+        intro: "Vestiges is the flagship public application of VASTE: a platform where people, practices, materials, places and institutions can be preserved, connected and revisited over time.",
         why: "The product preserves paths of transmission while making knowledge discoverable, attributable and useful across public, cultural and professional contexts.",
-        inspect: ["The living knowledge graph", "The contribution and trust model", "The path from public discovery to professional utility"],
-        proof: `${countLabel(item.graphNodeTypes?.length || 0, "node category", "node categories")}, ${countLabel(item.relationshipTypes?.length || 0, "relationship type")} and a VASTE-powered architecture for identity, provenance and context.`,
-        next: "Follow the system from stable graph identity to contribution, public projection and professional activation.",
+        inspect: ["The living knowledge base", "The contribution and trust model", "The path from public discovery to professional utility"],
+        proof: `${countLabel(item.graphNodeTypes?.length || 0, "knowledge category", "knowledge categories")}, ${countLabel(item.relationshipTypes?.length || 0, "relation type")} and a VASTE-powered architecture for identity, provenance and context.`,
+        next: "Follow the project from stable identity to contribution, public presentation and professional activation.",
         cta: item.links?.[0] || { label: "Explore VASTE", href: "https://www.vaste.space/" },
       };
     }
@@ -835,7 +835,7 @@
         why: "The central distinction is contractual and technical: UnionMob remains the external organisation, while UMOS remains Electronic Artefacts property and is made available through usage rights.",
         inspect: ["The project ownership and CTO role", "The official UnionMob identity and violet palette", "The separation between UnionMob and the licensed UMOS system"],
         proof: `${assetDocumentation} the supplied UnionMob identity, while the dossier records the CTO scope and software-rights model.`,
-        next: "Continue into the architecture to inspect the back-end, governance and operating-system contribution.",
+        next: "Continue into the architecture to understand the back-end, governance and operating-system contribution.",
         cta: item.links?.[0] || { label: "Explore Research", href: "./research.html" },
       };
     }
@@ -845,7 +845,7 @@
         title: "Read this as an artistic dossier.",
         intro: `${item.title} connects release logic, image memory and archive structure. The page keeps the work legible as a cultural object first, then opens the world around it.`,
         why: "The important point is the translation: fragments become acts, references become a world, and the archive becomes part of the work rather than a footnote.",
-        inspect: ["The opening frame for mood and authorship", "The act structure for narrative order", "The lineage around the work"],
+        inspect: ["The opening frame for mood and authorship", "The act structure for narrative order", "The context around the work"],
         proof: `${visualSupport} the dossier, with ${relationPhrase} around it.`,
         next: "Move from the thesis into the visual plates, then follow the album back into the wider Electronic Artefacts world.",
         cta: item.kind === "project" ? { label: "Open Dossier", href: `./project-rl.html?id=${encodeURIComponent(item.id)}` } : { label: "Open Archive", href: "./archive.html" },
@@ -870,7 +870,7 @@
         title: "Read this as an artist profile.",
         intro: profile.headline || `${item.title} is mapped through ${mediumPhrase} and connected work inside the Electronic Artefacts catalogue.`,
         why: profile.intro || "Artist pages give collaborators their own public context, then keep production work, credits and nearby projects connected underneath.",
-        inspect: ["The artist position", "The connected work", "The production or collaboration notes"],
+        inspect: ["The artist position", "The connected work", "The production and collaboration notes"],
         proof: `${status} status, ${galleryCount ? countLabel(galleryCount, "portrait asset") : "artist context"} and ${relationPhrase}.`,
         next: "Move from the profile into the connected project, or return to the work catalogue to compare the wider artistic line.",
         cta: item.links?.[0] || { label: "Open Work", href: "./work.html" },
@@ -882,7 +882,7 @@
         title: "Read this as a project dossier.",
         intro: `${item.title} sits inside the studio as ${typeLabel.toLowerCase()}, shaped by ${mediumPhrase}.`,
         why: "The page explains what the project is, where it comes from and which surrounding systems make it meaningful.",
-        inspect: ["The public angle", "The visual material", "The lineage and nearby work"],
+        inspect: ["The public angle", "The visual material", "The nearby work"],
         proof: `${status} status, ${galleryCount ? countLabel(galleryCount, "media item") : "visual material"} and ${relationPhrase}.`,
         next: "Open the extended dossier for the deeper reading, or move into the archive for adjacent fragments.",
         cta: { label: "Open Dossier", href: `./project-rl.html?id=${encodeURIComponent(item.id)}` },
@@ -894,7 +894,7 @@
         title: "Read this as an operating layer inside the ecosystem.",
         intro: `${item.title} explains a system role: ${item.domain || item.systemGroup || item.type || "program infrastructure"}.`,
         why: "Programs clarify how the studio thinks, builds and connects work behind the visible projects.",
-        inspect: ["The program profile for scope", "The system shape for operating context", "The network for dependencies and influence"],
+        inspect: ["The program scope", "The operating context", "The related projects and influences"],
         proof: `${status} status${dateLabel ? `, updated ${dateLabel}` : ""}, with ${relationPhrase}.`,
         next: "Follow the connected works to move from program logic into projects, research fields and archives.",
         cta: item.links?.[0] || { label: "View Programs", href: "./programs.html" },
@@ -906,7 +906,7 @@
         title: "Read this as a fragment with context attached.",
         intro: `${item.title} is a trace inside the archive: ${item.summary || item.description || typeLabel}.`,
         why: "Archive entries are useful when they keep the fragment connected to projects, research fields and dates.",
-        inspect: ["The field label for subject matter", "The date and status for placement", "Nearby entries for what to open next"],
+        inspect: ["The subject matter", "The date and status", "Nearby entries for what to open next"],
         proof: `${item.date || dateLabel || status} placement, with ${relationPhrase}.`,
         next: "Follow the related entries when you want the larger project or research line around this fragment.",
         cta: { label: "Open Archive", href: "./archive.html" },
@@ -917,7 +917,7 @@
         title: "Read this as a knowledge piece with a clear path outward.",
         intro: `${item.title} frames ${mediumPhrase} inside the Electronic Artefacts world.`,
       why: "The page gives the piece a public explanation first, then keeps the surrounding context available.",
-      inspect: ["The opening summary for meaning", "The signals for subject matter", "The relations for where it belongs"],
+      inspect: ["The opening summary", "The subject matter", "The related pages"],
       proof: `${status} status, ${relationPhrase}${dateLabel ? ` and ${dateLabel} temporal placement` : ""}.`,
       next: "Use the related works and collections to move through the archive without losing context.",
       cta: item.links?.[0] || { label: "Explore Research", href: "./research.html" },
@@ -940,7 +940,7 @@
       <section class="detail-grid detail-editorial-grid" aria-label="${esc(item.title)} reading guide">
         <article class="panel detail-editorial-card detail-editorial-card--lead">
           <div class="section-head">
-          <p class="card__meta">Reading guide</p>
+          <p class="card__meta">Guide</p>
             <h2 class="card__title">${esc(copy.title)}</h2>
             <p class="lede">${esc(copy.intro)}</p>
           </div>
@@ -951,7 +951,7 @@
           <p class="card__copy">${esc(copy.why)}</p>
         </article>
         <article class="panel detail-editorial-card">
-          <p class="card__meta">What to inspect</p>
+          <p class="card__meta">What to look at</p>
           <ul class="detail-editorial-list">
             ${copy.inspect.map((itemCopy) => `<li>${esc(itemCopy)}</li>`).join("")}
           </ul>
@@ -976,9 +976,9 @@
     return `
       <section class="panel knowledge-panel knowledge-panel--intro">
         <div class="section-head">
-          <p class="card__meta">Dossier notes</p>
+          <p class="card__meta">Dossier frame</p>
           <h2 class="card__title">A compact frame around the work.</h2>
-          <p class="lede">Classification, dates and relationships stay visible so the piece can be read in context.</p>
+          <p class="lede">Status, dates and related material stay close so the piece can be read in context.</p>
         </div>
         <div class="detail-reference-strip">
           <span><strong>${esc(statusLabelFor(item))}</strong><em>Status</em></span>
@@ -1382,7 +1382,7 @@
             <article class="panel panel--soft project-discipline__card">
               <p class="card__meta">Stack</p>
               <h3 class="card__title">${esc(stack.length ? countLabel(stack.length, "stack signal") : architecture.stack || item.program || "System stack")}</h3>
-              ${stack.length ? tagRow(stack, { compact: true, limit: 8 }) : `<p class="card__copy">${esc(architecture.stackCopy || "Stack details appear when the project record exposes them.")}</p>`}
+              ${stack.length ? tagRow(stack, { compact: true, limit: 8 }) : `<p class="card__copy">${esc(architecture.stackCopy || "Stack details appear when they are useful to the public dossier.")}</p>`}
             </article>
             <article class="panel panel--soft project-discipline__card">
               <p class="card__meta">Layers</p>
@@ -1395,7 +1395,7 @@
               ${
                 related.length
                   ? `<div class="project-discipline__links">${related.map((entry) => `<a class="tag" href="${esc(entryHref(entry))}">${esc(entry.title)}</a>`).join("")}</div>`
-                  : `<p class="card__copy">Runtime dependencies and related programs are shown when the graph records them.</p>`
+                  : `<p class="card__copy">Runtime dependencies and related programs are shown when they are public.</p>`
               }
             </article>
           </div>
@@ -1746,19 +1746,19 @@
         </div>`,
       ),
       panelShell(
-        "The living knowledge graph",
+        "The living knowledge base",
         "The system preserves both the entities and the paths through which knowledge moves.",
         `<div class="stack">
-          ${softPanel("Graph principle", "Every record keeps a durable identity", item.graphPrinciple || "")}
+          ${softPanel("Identity principle", "Every important element keeps a durable identity", item.graphPrinciple || "")}
           <div class="card-grid card-grid--two">
-            ${softPanel("Node families", `${item.graphNodeTypes?.length || 0} mapped families`, "People, organisations, techniques, materials, places, works and records can each become canonical knowledge surfaces.", chipList(item.graphNodeTypes, 12))}
+            ${softPanel("Knowledge families", `${item.graphNodeTypes?.length || 0} mapped families`, "People, organisations, techniques, materials, places and works can each become durable public surfaces.", chipList(item.graphNodeTypes, 12))}
             ${softPanel("Relationship vocabulary", `${item.relationshipTypes?.length || 0} explicit relations`, "Teaching, making, use, restoration, supply and certification reveal how know-how is transmitted.", chipList(item.relationshipTypes, 10))}
           </div>
         </div>`,
       ),
       panelShell(
         "Public discovery",
-        "Canonical pages and relation paths make the graph readable without separating publishing from the knowledge model.",
+        "Public pages and relation paths make the knowledge base readable without separating publishing from the model.",
         `<div class="stack">
           ${softPanel("Knowledge projection", "One canonical surface per node", item.seoModel || "")}
           ${chipList(["Public page", "Canonical URL", "Description", "Relations", "Media", "History", "Metadata"])}
@@ -1766,7 +1766,7 @@
       ),
       panelShell(
         "Contribution and trust",
-        "Expertise can enter the graph from workshops, schools, museums and institutions without losing authorship or editorial responsibility.",
+        "Expertise can enter from workshops, schools, museums and institutions without losing authorship or editorial responsibility.",
         `<div class="stack">
           ${softPanel("Participants", `${item.stakeholders?.length || 0} initial actor groups`, "Vestiges connects professional, cultural, educational, institutional and private actors.", chipList(item.stakeholders))}
           ${softPanel("Collaboration", "Distributed knowledge with governance", "Contributions remain attributable, contextual, reviewable and connected to the same shared graph.", chipList(item.collaborationCapabilities))}
@@ -1783,7 +1783,7 @@
         "Professional activation",
         "Services emerge from trusted knowledge and explicit relationships; they do not replace the platform's cultural purpose.",
         `<div class="stack">
-          ${softPanel("Service model", "Utility grows from the graph", "Professional workspaces, collaboration, learning, research and APIs can operate on top of the shared knowledge infrastructure.", chipList(item.economicModel))}
+          ${softPanel("Service model", "Utility grows from trusted knowledge", "Professional workspaces, collaboration, learning, research and APIs can operate on top of the shared knowledge infrastructure.", chipList(item.economicModel))}
         </div>`,
       ),
       panelShell(
@@ -2279,8 +2279,8 @@
           ])}
         </article>
         <article class="panel program-detail-panel">
-          <p class="card__meta">Reading signals</p>
-          <p class="card__copy">Mediums, disciplines and tags explain how to compare this program with nearby systems.</p>
+          <p class="card__meta">Reading cues</p>
+          <p class="card__copy">Mediums, disciplines and tags help compare this program with nearby systems.</p>
           ${tagRow([...(item.tags || []), ...(item.medium || []), ...(item.discipline || [])].filter(Boolean), { compact: true })}
         </article>
         <article class="panel program-detail-panel">
@@ -2732,11 +2732,11 @@
         <div class="section-head">
           <p class="eyebrow">CATALOG MATRIX</p>
           <h2>${esc(searchResultLabel(matchCount))}</h2>
-          <p class="lede">${esc(isFrench() ? `${items.length} entrées synthétiques affichées. Ouvrez un élément pour consulter la fiche complète.` : `Showing ${items.length} concise entries. Open an item for the complete record.`)}</p>
+          <p class="lede">${esc(isFrench() ? `${items.length} entrées synthétiques affichées. Ouvrez un élément pour consulter la page complète.` : `Showing ${items.length} concise entries. Open an item for the full page.`)}</p>
         </div>
         ${metricRail(
           [
-            { label: translate("MATCHES"), value: String(matchCount), note: translate("public records"), fill: metricFill(matchCount, totalCount), tone: "live" },
+            { label: translate("MATCHES"), value: String(matchCount), note: translate("public pages"), fill: metricFill(matchCount, totalCount), tone: "live" },
             { label: translate("SHOWN"), value: String(items.length), note: translate("current page"), fill: metricFill(items.length, Math.max(matchCount, 1)), tone: "visual" },
             { label: translate("TAGS"), value: String(tagCount), note: translate("visible labels"), fill: metricFill(tagCount, Math.max(tagCount, 1) * 2), tone: "archive" },
           ],
@@ -2995,8 +2995,8 @@
   const renderHomeOrientation = () =>
     orientationSection({
       eyebrow: "ORIENTATION",
-      title: "Explore Electronic Artefacts",
-      copy: "Choose the layer that fits your intent. Projects, research, programs and archive are different entrances into the same ecosystem.",
+        title: "Explore Electronic Artefacts",
+        copy: "Choose the path that fits your intent. Projects, research, programs and archive are different ways into the work.",
       cards: [
         {
           kicker: "Projects",
@@ -3010,7 +3010,7 @@
         {
           kicker: "Research",
           title: "Experimental investigations",
-          copy: "Follow the notes, theoretical branches and working questions that feed the rest of the system.",
+          copy: "Follow the notes, theoretical branches and working questions behind the work.",
           reason: "This is where the thinking behind the work becomes legible.",
           cta: "Enter Research",
           href: "./research.html",
@@ -3019,7 +3019,7 @@
         {
           kicker: "Programs",
           title: "Software systems and engines",
-          copy: "Inspect the runtime logic, internal frameworks and production systems that hold the ecosystem together.",
+          copy: "Understand the software foundations and production systems that hold the work together.",
           reason: "This is the operational core of the project.",
           cta: "View Programs",
           href: "./programs.html",
@@ -3040,13 +3040,13 @@
   const renderFeaturedPaths = () =>
     `${orientationSection({
       eyebrow: "FEATURED PATHS",
-      title: "Start from your real question.",
-      copy: "Choose the entry point that matches your intent before going deeper into the graph.",
+      title: "Choose what you need first.",
+      copy: "Start with the path that matches your intent: technology, delivery or cultural work.",
       cards: [
         {
           kicker: "Technology",
           title: "Understand the core runtime",
-          copy: "Open VASTE to inspect the strategic and technical foundation behind the wider family of systems.",
+          copy: "Open VASTE to understand the strategic and technical foundation behind the wider family of systems.",
           reason: "Best when architecture, scalability and the long-term platform thesis matter first.",
           cta: "Explore VASTE",
           href: "./vaste.html",
@@ -3054,7 +3054,7 @@
         },
         {
           kicker: "Delivery",
-          title: "Inspect applied work and outcomes",
+          title: "See applied work and outcomes",
           copy: "See how strategy, interface, content and implementation hold together across commissions and public products.",
           reason: "Best when you need evidence of execution under concrete constraints.",
           cta: "See Client Work",
@@ -3064,7 +3064,7 @@
         {
           kicker: "Culture",
           title: "Enter through Palimpsests",
-          copy: "Explore the musical and editorial surface where artistic production, memory and publication meet.",
+          copy: "Explore the musical and editorial space where artistic production, memory and publication meet.",
           reason: "Best when you want the cultural register before the technical system.",
           cta: "Enter Palimpsests",
           href: "./palimpsests.html",
@@ -3402,11 +3402,11 @@
         meta: "R&D",
         title: "Research, automation and knowledge systems",
         copy:
-          "Prototype the less standard work: AI workflows, knowledge graphs, archives, internal tools and custom systems that connect content, people and process.",
+          "Prototype the less standard work: AI workflows, archives, internal tools and custom systems that connect content, people and process.",
         services: [
           "R&D scoping and technical prototypes",
           "AI assistants, workflows and tool integrations",
-          "Knowledge graphs, archives and semantic models",
+          "Knowledge systems, archives and semantic models",
           "Custom dashboards and internal operating tools",
           "Data cleanup, enrichment and migration",
           "Documentation, handoff and team enablement",
@@ -3515,12 +3515,12 @@
         <article class="stat-card">
           <p class="card__meta">Evidence</p>
           <strong>Live or documented</strong>
-          <span>Case pages expose public screens, operational views, dossiers, media and performance signals when available.</span>
+          <span>Case pages show public screens, operational views, dossiers, media and performance evidence when available.</span>
         </article>
         <article class="stat-card">
           <p class="card__meta">Handoff</p>
           <strong>Reusable system</strong>
-          <span>The expected output is a maintained surface, workflow, repository or decision record, not a loose visual concept.</span>
+          <span>The expected output is a maintained surface, workflow, repository or documented decision, not a loose visual concept.</span>
         </article>
       </div>
       <div class="button-row">
@@ -3579,7 +3579,7 @@
           ${deliverables.length ? `<ul class="program-offer-card__list">${deliverables.map((entry) => `<li>${esc(entry)}</li>`).join("")}</ul>` : ""}
           ${classificationItems.length ? `<div class="tag-cluster tag-cluster--compact program-registry-card__chips">${classificationItems.map((entry) => chip(entry)).join("")}</div>` : ""}
           <div class="link-row">
-            <a class="tag" href="${esc(recordHref)}"${linkAttrs(recordHref)}>Open record</a>
+            <a class="tag" href="${esc(recordHref)}"${linkAttrs(recordHref)}>View program</a>
             <a class="tag" href="${esc(accessHref)}">Request repo access</a>
             ${options.official ? `<a class="tag" href="${esc(options.official)}" target="_blank" rel="noreferrer">Official site</a>` : ""}
           </div>
@@ -3760,7 +3760,7 @@
       {
         title: "VASTE",
         role: "Runtime, identity and knowledge infrastructure",
-        copy: "The core program coordinates graph execution, identity, permissions, context and long-lived knowledge structures.",
+        copy: "The core program coordinates identity, permissions, context and long-lived knowledge structures.",
         nodes: ["Knowledge Systems", "Identity Systems", "Simulation Systems", "Runtime Research"],
         exchanges: ["Powers Vestiges", "Frames repository access", "Feeds implementation work"],
         href: "https://www.vaste.space/",
@@ -3800,7 +3800,7 @@
         title: "TypeScript",
         mark: "TS",
         role: "Runtimes, interfaces and connected product systems",
-        copy: "Used where shared models, graph-shaped data, interactive product surfaces and repository-level contracts need to evolve together.",
+        copy: "Used where shared models, connected data, interactive product surfaces and repository-level contracts need to evolve together.",
         strengths: ["Typed models", "Web runtime", "Shared contracts"],
         systems: [
           { label: "VASTE", href: "https://www.vaste.space/" },
@@ -3845,7 +3845,7 @@
     const selectionGuide = [
       {
         title: "Need a runtime",
-        copy: "Start with VASTE when the problem is graph structure, identity, permissions, contextual execution or knowledge infrastructure.",
+        copy: "Start with VASTE when the problem is identity, permissions, contextual execution or knowledge infrastructure.",
       },
       {
         title: "Need production pipelines",

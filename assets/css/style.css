@@ -585,6 +585,56 @@
   font-size: 0.9rem;
 }
 
+.footer-signature {
+  position: relative;
+  gap: 0.42rem;
+  min-width: 0;
+  padding: 0.85rem;
+  border: 1px solid rgba(255, 255, 255, 0.11);
+  border-radius: 0.55rem;
+  background:
+    linear-gradient(135deg, rgba(255, 255, 255, 0.075), rgba(255, 255, 255, 0.018)),
+    rgba(8, 8, 10, 0.48);
+  box-shadow:
+    inset 0 1px 0 rgba(255, 255, 255, 0.08),
+    0 1rem 2.2rem rgba(0, 0, 0, 0.18);
+}
+
+.footer-signature::before {
+  content: "";
+  position: absolute;
+  top: 0.75rem;
+  right: 0.75rem;
+  width: 0.44rem;
+  height: 0.44rem;
+  border-radius: 999px;
+  background: rgba(247, 244, 239, 0.86);
+  box-shadow: 0 0 1.2rem rgba(247, 244, 239, 0.28);
+}
+
+.footer-signature__edition {
+  padding-right: 0.9rem;
+  color: rgba(247, 244, 239, 0.96);
+  font-size: 0.78rem;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  line-height: 1.25;
+  text-transform: uppercase;
+}
+
+.footer-signature__framework {
+  color: rgba(247, 244, 239, 0.96);
+  font-size: 0.95rem;
+  font-weight: 650;
+  line-height: 1.24;
+  text-decoration: none;
+  text-wrap: balance;
+}
+
+.footer-signature__framework:hover {
+  color: var(--accent);
+}
+
 .hero-rail {
   display: grid;
   gap: 0.85rem;
@@ -7496,6 +7546,7 @@ input:focus-visible {
   .shell-footer.zone-card {
     width: calc(100% - (var(--gutter) * 2));
     margin: 0 auto;
+    grid-template-columns: 1fr;
   }
 
   .brand-lockup {
@@ -7639,9 +7690,20 @@ input:focus-visible {
     grid-template-columns: 1fr;
   }
 
-  .footer-stack--right {
+  .footer-stack--right,
+  .footer-signature {
     justify-items: start;
     text-align: left;
+  }
+
+  .footer-signature::before {
+    left: 0.75rem;
+    right: auto;
+  }
+
+  .footer-signature__edition {
+    padding-right: 0;
+    padding-left: 0.9rem;
   }
 
   .project-architecture__grid,

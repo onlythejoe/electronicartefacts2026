@@ -133,8 +133,8 @@
           copy: "The next useful surface depends on what you came here for. These paths keep the structure intact while making the next move explicit.",
           cards: [
             { kicker: "Home", title: "Projects", copy: "Move into public works and collaborations.", reason: "Best if you want to see what the studio makes.", cta: "Browse Projects", href: "./projects.html" },
-            { kicker: "Home", title: "Research", copy: "Enter the theoretical and experimental branches.", reason: "Best if you want to understand the thinking behind the work.", cta: "Enter Research", href: "./research.html" },
-            { kicker: "Home", title: "Programs", copy: "Inspect the software systems and runtime stack.", reason: "Best if you want the operational core.", cta: "View Programs", href: "./programs.html" },
+            { kicker: "Home", title: "Research", copy: "Explore the theoretical and experimental branches.", reason: "Best if you want to understand the thinking behind the work.", cta: "Explore Research", href: "./research.html" },
+            { kicker: "Home", title: "Programs", copy: "Understand the software systems behind the work.", reason: "Best if you want the operational core.", cta: "View Programs", href: "./programs.html" },
             { kicker: "Home", title: "Archive", copy: "Browse traces, fragments and historical material.", reason: "Best if you want context and depth.", cta: "Open Archive", href: "./archive.html" },
           ],
         });
@@ -161,8 +161,8 @@
           copy: "Use these paths to move from the project map to the layers around it.",
           cards: [
             { kicker: "Next", title: "Work", copy: "Return to the studio and client-facing layer.", reason: "Best if you need the applied side.", cta: "Return to Work", href: "./work.html" },
-            { kicker: "Next", title: "Research", copy: "See the investigations that feed the projects.", reason: "Best if you want the thinking layer.", cta: "Enter Research", href: "./research.html" },
-            { kicker: "Next", title: "Archive", copy: "Inspect older fragments and traces.", reason: "Best if you want depth and continuity.", cta: "Open Archive", href: "./archive.html" },
+            { kicker: "Next", title: "Research", copy: "See the investigations that feed the projects.", reason: "Best if you want the thinking layer.", cta: "Explore Research", href: "./research.html" },
+            { kicker: "Next", title: "Archive", copy: "Browse older fragments and traces.", reason: "Best if you want depth and continuity.", cta: "Open Archive", href: "./archive.html" },
             { kicker: "Next", title: "Contact", copy: "Start a similar project or ask for a collaboration.", reason: "Best if you want to initiate a brief.", cta: "Start a Collaboration", href: "./contact.html" },
           ],
         });
@@ -175,7 +175,7 @@
           copy: "Use these paths to move from the software stack to its use, context and lineage.",
           cards: [
             { kicker: "Next", title: "VASTE", copy: "Go to the core runtime and strategic spine.", reason: "The main program explains the wider stack.", cta: "Explore VASTE", href: "./vaste.html" },
-            { kicker: "Next", title: "Research", copy: "See the theories and methods that inform the stack.", reason: "Useful when you want the conceptual layer.", cta: "Enter Research", href: "./research.html" },
+            { kicker: "Next", title: "Research", copy: "See the theories and methods that inform the stack.", reason: "Useful when you want the conceptual layer.", cta: "Explore Research", href: "./research.html" },
             { kicker: "Next", title: "About", copy: "Understand how programs fit into the ecosystem.", reason: "Useful for orientation and collaboration.", cta: "Understand the Ecosystem", href: "./about.html" },
             { kicker: "Next", title: "Contact", copy: "Discuss a program, partnership or implementation.", reason: "Useful when the stack becomes a brief.", cta: "Start a Collaboration", href: "./contact.html" },
           ],
@@ -190,7 +190,7 @@
           cards: [
             { kicker: "Next", title: "Programs", copy: "See the systems that grow out of research.", reason: "Useful if you want the operational expression.", cta: "View Programs", href: "./programs.html" },
             { kicker: "Next", title: "Projects", copy: "See how research translates into public works.", reason: "Useful if you want outputs rather than notes.", cta: "Browse Projects", href: "./projects.html" },
-            { kicker: "Next", title: "Archive", copy: "Inspect historical fragments and prior lines.", reason: "Useful for lineage and context.", cta: "Open Archive", href: "./archive.html" },
+            { kicker: "Next", title: "Archive", copy: "Browse historical fragments and prior lines.", reason: "Useful for lineage and context.", cta: "Open Archive", href: "./archive.html" },
             { kicker: "Next", title: "About", copy: "Return to the trunk and system model.", reason: "Useful when you need the ecosystem map.", cta: "Understand the Ecosystem", href: "./about.html" },
           ],
         });
@@ -203,7 +203,7 @@
           copy: "Use these paths to move from fragments into the living ecosystem.",
           cards: [
             { kicker: "Next", title: "Projects", copy: "See the current public-facing works.", reason: "Useful if you want what is active now.", cta: "Browse Projects", href: "./projects.html" },
-            { kicker: "Next", title: "Research", copy: "Go back to the working investigations.", reason: "Useful if you want the source material.", cta: "Enter Research", href: "./research.html" },
+            { kicker: "Next", title: "Research", copy: "Go back to the working investigations.", reason: "Useful if you want the source material.", cta: "Explore Research", href: "./research.html" },
             { kicker: "Next", title: "Contact", copy: "Ask for a collaboration or specific trace.", reason: "Useful when the archive leads to action.", cta: "Start a Collaboration", href: "./contact.html" },
             { kicker: "Next", title: "About", copy: "Re-read the ecosystem structure.", reason: "Useful if you need the trunk again.", cta: "Understand the Ecosystem", href: "./about.html" },
           ],
@@ -216,8 +216,8 @@
           title: "After the ecosystem model, follow the branches.",
           copy: "These pages show the parts of the system that matter most once the trunk is clear.",
           cards: [
-            { kicker: "Next", title: "Research", copy: "See where investigations begin.", reason: "Useful when you want the conceptual source.", cta: "Enter Research", href: "./research.html" },
-            { kicker: "Next", title: "Programs", copy: "Inspect the software systems and runtimes.", reason: "Useful when you want the operational layer.", cta: "View Programs", href: "./programs.html" },
+            { kicker: "Next", title: "Research", copy: "See where investigations begin.", reason: "Useful when you want the conceptual source.", cta: "Explore Research", href: "./research.html" },
+            { kicker: "Next", title: "Programs", copy: "Understand the software systems and runtimes.", reason: "Useful when you want the operational layer.", cta: "View Programs", href: "./programs.html" },
             { kicker: "Next", title: "Projects", copy: "See how the system becomes public work.", reason: "Useful when you want outputs and proof.", cta: "Browse Projects", href: "./projects.html" },
             { kicker: "Next", title: "Contact", copy: "Move from orientation to direct conversation.", reason: "Useful once the ecosystem makes sense.", cta: "Start a Collaboration", href: "./contact.html" },
           ],
@@ -245,7 +245,7 @@
           copy: "Use these paths to move from the runtime into its surrounding layers.",
           cards: [
             { kicker: "Next", title: "Programs", copy: "See the wider software system family.", reason: "Useful if you want the stack around the core.", cta: "View Programs", href: "./programs.html" },
-            { kicker: "Next", title: "Research", copy: "See the investigations that feed the runtime.", reason: "Useful if you want the methods behind it.", cta: "Enter Research", href: "./research.html" },
+            { kicker: "Next", title: "Research", copy: "See the investigations that feed the runtime.", reason: "Useful if you want the methods behind it.", cta: "Explore Research", href: "./research.html" },
             { kicker: "Next", title: "About", copy: "Rebuild the ecosystem model around the runtime.", reason: "Useful if you need the bigger picture.", cta: "Understand the Ecosystem", href: "./about.html" },
             { kicker: "Next", title: "Contact", copy: "Discuss the runtime or a related partnership.", reason: "Useful if VASTE is the reason you are here.", cta: "Start a Collaboration", href: "./contact.html" },
           ],
@@ -259,7 +259,7 @@
           copy: "Use these paths to move between the album, its memory layer and the broader studio system.",
           cards: [
             { kicker: "Next", title: "Archive", copy: "See the traces, fragments and related material.", reason: "Useful if you want the work's historical context.", cta: "Open Archive", href: "./archive.html" },
-            { kicker: "Next", title: "Research", copy: "Revisit the conceptual branches behind the work.", reason: "Useful if you want the source ideas.", cta: "Enter Research", href: "./research.html" },
+            { kicker: "Next", title: "Research", copy: "Revisit the conceptual branches behind the work.", reason: "Useful if you want the source ideas.", cta: "Explore Research", href: "./research.html" },
             { kicker: "Next", title: "Work", copy: "Move back into the studio and wider project field.", reason: "Useful if you want the wider practice.", cta: "See Client Work", href: "./work.html" },
             { kicker: "Next", title: "Contact", copy: "Discuss collaboration, publication or release.", reason: "Useful if the work suggests a new one.", cta: "Start a Collaboration", href: "./contact.html" },
           ],
@@ -277,7 +277,7 @@
           vestiges: [
             { kicker: "Runtime", title: "VASTE", copy: "Open the runtime that powers Vestiges.", reason: "Useful if you want the technical foundation.", cta: "Explore VASTE", href: "https://www.vaste.space/" },
             { kicker: "Next", title: "Programs", copy: "See the software and infrastructure layer around the product.", reason: "Useful if you want the wider system family.", cta: "View Programs", href: "./programs.html" },
-            { kicker: "Next", title: "Research", copy: "Inspect the graph, taxonomy and systems research that informs the platform.", reason: "Useful if you want the conceptual and technical sources.", cta: "Enter Research", href: "./research.html" },
+            { kicker: "Next", title: "Research", copy: "Explore the research, taxonomy and systems thinking that inform the platform.", reason: "Useful if you want the conceptual and technical sources.", cta: "Explore Research", href: "./research.html" },
             { kicker: "Next", title: "Contact", copy: "Discuss a platform, cultural institution or knowledge infrastructure collaboration.", reason: "Useful if Vestiges connects to your organisation.", cta: "Start a Collaboration", href: "./contact.html" },
           ],
           atypikhouse: [
@@ -288,7 +288,7 @@
           ],
           unionmob: [
             { kicker: "Technical asset", title: "Programs", copy: "See the Electronic Artefacts-owned systems behind the CTO contribution.", reason: "Useful for understanding the software layer without confusing it with UnionMob ownership.", cta: "View Programs", href: "./programs.html" },
-            { kicker: "Next", title: "Research", copy: "Inspect the investigations that inform it.", reason: "Useful if you want the conceptual layer.", cta: "Enter Research", href: "./research.html" },
+            { kicker: "Next", title: "Research", copy: "Explore the investigations that inform it.", reason: "Useful if you want the conceptual layer.", cta: "Explore Research", href: "./research.html" },
             { kicker: "Partnership", title: "Work", copy: "Review how Electronic Artefacts presents external technical collaborations.", reason: "Useful for comparing the CTO role with commissioned delivery.", cta: "See Work", href: "./work.html" },
             { kicker: "Next", title: "Contact", copy: "Discuss an external CTO, platform or coordination-system collaboration.", reason: "Useful when a project needs technical leadership with clear ownership boundaries.", cta: "Start a Collaboration", href: "./contact.html" },
           ],
@@ -315,7 +315,7 @@
           { kicker: "Core", title: "Work", copy: "Projects, music and technology.", reason: "The studio layer and applied outcomes.", cta: "Return to Work", href: "./work.html" },
           { kicker: "Core", title: "Projects", copy: "Public works and extended dossiers.", reason: "The public project constellation.", cta: "Browse Projects", href: "./projects.html" },
           { kicker: "Core", title: "Programs", copy: "All visible software programs.", reason: "The runtime and systems layer.", cta: "View Programs", href: "./programs.html" },
-          { kicker: "Core", title: "Research", copy: "Program, fields and notes.", reason: "The conceptual and experimental layer.", cta: "Enter Research", href: "./research.html" },
+          { kicker: "Core", title: "Research", copy: "Program, fields and notes.", reason: "The conceptual and experimental layer.", cta: "Explore Research", href: "./research.html" },
         ],
       });
     })();
@@ -416,7 +416,7 @@
         },
         {
           label: "Knowledge",
-          note: "Concept records",
+          note: "Concept pages",
           href: "./knowledge/",
           color: "rgba(52, 211, 153, 0.9)",
           tone: "knowledge",

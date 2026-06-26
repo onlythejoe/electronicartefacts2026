@@ -2974,6 +2974,46 @@
       }
     },
     {
+      "id": "ea:framework:electronic-artefacts-lightweight-template-fr",
+      "legacyId": "electronic-artefacts-lightweight-template-fr",
+      "kind": "framework",
+      "type": "framework",
+      "locale": "fr",
+      "translationOf": "ea:framework:electronic-artefacts-lightweight-template",
+      "title": "Electronic Artefacts Lightweight Template",
+      "subtitle": "Framework HTML, CSS et JavaScript léger",
+      "summary": "Electronic Artefacts Lightweight Template est un petit framework front-end destiné à composer des sites statiques éditoriaux avec HTML, CSS et JavaScript navigateur.",
+      "description": "Fiche canonique du framework léger Electronic Artefacts qui compose une partie de ce site public.",
+      "definition": "Framework léger en HTML, CSS et JavaScript utilisé par Electronic Artefacts pour composer des prototypes, des vitrines publiques et de petites interfaces de production.",
+      "status": "active",
+      "maturity": "production",
+      "confidence": "published",
+      "visibility": "public",
+      "publicationClass": "canonical",
+      "tags": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Site statique",
+        "Amélioration progressive",
+        "Framework front-end"
+      ],
+      "discipline": [
+        "Développement web",
+        "Design Technology",
+        "Technologies créatives",
+        "Systèmes de connaissance"
+      ],
+      "route": "/fr/knowledge/frameworks/electronic-artefacts-lightweight-template/",
+      "identifier": "/fr/id/framework/electronic-artefacts-lightweight-template/",
+      "temporality": {
+        "creationDate": "2026-01-01",
+        "lastUpdated": "2026-06-26",
+        "releaseDate": "2026-06-26",
+        "creationYear": "2026"
+      }
+    },
+    {
       "id": "ea:organization:electronic-artefacts-fr",
       "legacyId": "electronic-artefacts-fr",
       "kind": "organization",
@@ -5321,6 +5361,45 @@
         "creationDate": "2026-06-24",
         "lastUpdated": "2026-06-25",
         "releaseDate": "2026-06-25",
+        "creationYear": "2026"
+      }
+    },
+    {
+      "id": "ea:framework:electronic-artefacts-lightweight-template",
+      "legacyId": "electronic-artefacts-lightweight-template",
+      "kind": "framework",
+      "type": "framework",
+      "locale": "en",
+      "title": "Electronic Artefacts Lightweight Template",
+      "subtitle": "Vanilla HTML, CSS and JavaScript framework",
+      "summary": "Electronic Artefacts Lightweight Template is a small front-end framework for composing static, content-led websites with HTML, CSS and browser JavaScript.",
+      "description": "A canonical framework record for the lightweight Electronic Artefacts front-end system that composes part of this public website.",
+      "definition": "A lightweight vanilla HTML, CSS and JavaScript framework used by Electronic Artefacts for fast prototyping, public showcases and small production surfaces.",
+      "status": "active",
+      "maturity": "production",
+      "confidence": "published",
+      "visibility": "public",
+      "publicationClass": "canonical",
+      "tags": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Static Site",
+        "Progressive Enhancement",
+        "Front-end Framework"
+      ],
+      "discipline": [
+        "Web Development",
+        "Design Technology",
+        "Creative Technology",
+        "Knowledge Systems"
+      ],
+      "route": "/knowledge/frameworks/electronic-artefacts-lightweight-template/",
+      "identifier": "/id/framework/electronic-artefacts-lightweight-template/",
+      "temporality": {
+        "creationDate": "2026-01-01",
+        "lastUpdated": "2026-06-26",
+        "releaseDate": "2026-06-26",
         "creationYear": "2026"
       }
     },
@@ -10259,6 +10338,7 @@
     "ea:concept:systems-thinking-fr": "/fr/knowledge/concepts/systems-thinking/",
     "ea:concept:typography-fr": "/fr/knowledge/concepts/typography/",
     "ea:concept:web-audio-fr": "/fr/knowledge/concepts/web-audio/",
+    "ea:framework:electronic-artefacts-lightweight-template-fr": "/fr/knowledge/frameworks/electronic-artefacts-lightweight-template/",
     "ea:organization:electronic-artefacts-fr": "/fr/organizations/electronic-artefacts/",
     "ea:program:oreth-fr": "/fr/programs/oreth/",
     "ea:program:vaste-fr": "/fr/programs/vaste/",
@@ -10323,6 +10403,7 @@
     "ea:technology:web-audio-api-fr": "/fr/knowledge/technologies/web-audio-api/",
     "ea:technology:webgl-fr": "/fr/knowledge/technologies/webgl/",
     "ea:technology:webnn-fr": "/fr/knowledge/technologies/webnn/",
+    "ea:framework:electronic-artefacts-lightweight-template": "/knowledge/frameworks/electronic-artefacts-lightweight-template/",
     "ea:organization:electronic-artefacts": "/organizations/electronic-artefacts/",
     "ea:program:oreth": "/programs/oreth/",
     "ea:program:vaste": "/programs/vaste/",

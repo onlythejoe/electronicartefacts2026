@@ -79,7 +79,7 @@ test("editorial panels expose structured fields on thin reference records", asyn
   assert.match(html, /Technology role/);
   assert.match(html, /WebGL supports procedural graphics/);
   assert.match(html, /Official URL/);
-  assert.match(html, /Source trail/);
+  assert.match(html, /Sources/);
 });
 
 test("sitemap excludes noindex generated search route", async () => {

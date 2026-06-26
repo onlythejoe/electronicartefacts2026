@@ -290,6 +290,10 @@
     "en": "/knowledge/concepts/web-audio/",
     "fr": "/fr/knowledge/concepts/web-audio/"
   },
+  "/fr/knowledge/frameworks/electronic-artefacts-lightweight-template/": {
+    "fr": "/fr/knowledge/frameworks/electronic-artefacts-lightweight-template/",
+    "en": "/knowledge/frameworks/electronic-artefacts-lightweight-template/"
+  },
   "/fr/knowledge/technologies/activitypub/": {
     "fr": "/fr/knowledge/technologies/activitypub/",
     "en": "/knowledge/technologies/activitypub/"
@@ -750,6 +754,10 @@
   },
   "/knowledge/frameworks/": {
     "en": "/knowledge/frameworks/"
+  },
+  "/knowledge/frameworks/electronic-artefacts-lightweight-template/": {
+    "fr": "/fr/knowledge/frameworks/electronic-artefacts-lightweight-template/",
+    "en": "/knowledge/frameworks/electronic-artefacts-lightweight-template/"
   },
   "/knowledge/methods/": {
     "en": "/knowledge/methods/"

@@ -2854,6 +2854,37 @@
     "modifiedAt": "2026-06-25"
   },
   {
+    "id": "ea:framework:electronic-artefacts-lightweight-template-fr",
+    "locale": "fr",
+    "route": "/fr/knowledge/frameworks/electronic-artefacts-lightweight-template/",
+    "type": "framework",
+    "title": "Electronic Artefacts Lightweight Template",
+    "alternateNames": [],
+    "definition": "Framework léger en HTML, CSS et JavaScript utilisé par Electronic Artefacts pour composer des prototypes, des vitrines publiques et de petites interfaces de production.",
+    "abstract": "Electronic Artefacts Lightweight Template est un petit framework front-end destiné à composer des sites statiques éditoriaux avec HTML, CSS et JavaScript navigateur.",
+    "headings": [
+      "Rôle",
+      "Usage sur ce site",
+      "Principes",
+      "Limites"
+    ],
+    "body": "Rôle Electronic Artefacts Lightweight Template est le petit framework front-end utilisé par le studio pour assembler des surfaces web rapides et inspectables. Il privilégie le HTML statique, les partials réutilisables, le CSS groupé et des scripts JavaScript ciblés plutôt qu’une enveloppe applicative lourde côté client. Usage sur ce site Le site public Electronic Artefacts est composé en partie avec ce framework. Le contenu canonique vient de fiches typées et de pages HTML générées, tandis que la couche framework organise la navigation, la mise en page, les comportements d’interface, la recherche, le changement de langue et les améliorations progressives. L’objectif n’est pas de présenter ce framework comme une plateforme commerciale séparée. Il s’agit de la couche légère de composition derrière une partie du site lui-même : un système pratique pour rendre cohérentes les pages éditoriales, de recherche et de vitrine sans transformer chaque page en application web complète. Principes Les pages statiques doivent rester lisibles avant l’exécution de JavaScript. Les enrichissements d’interface doivent soutenir la navigation, la recherche, le partage et l’orientation sans remplacer le document. Le système CSS doit porter l’identité visuelle sans dépendre d’un design system externe. Les pages publiques doivent rester faciles à explorer, archiver et citer. Limites Le framework est volontairement petit. Il ne remplace pas VASTE, Forge ou les runtimes plus larges d’Electronic Artefacts. Il ne prétend pas non plus être la bonne base pour tous les produits. Son rôle est plus précis : composer des surfaces publiques légères lorsque HTML, CSS et JavaScript suffisent.",
+    "tags": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Site statique",
+      "Amélioration progressive",
+      "Framework front-end"
+    ],
+    "questions": [],
+    "relationLabels": [],
+    "relatedEntityIds": [],
+    "status": "active",
+    "confidence": "published",
+    "modifiedAt": "2026-06-26"
+  },
+  {
     "id": "ea:organization:electronic-artefacts-fr",
     "locale": "fr",
     "route": "/fr/organizations/electronic-artefacts/",
@@ -4817,6 +4848,37 @@
     "status": "active",
     "confidence": "canonical",
     "modifiedAt": "2026-06-25"
+  },
+  {
+    "id": "ea:framework:electronic-artefacts-lightweight-template",
+    "locale": "en",
+    "route": "/knowledge/frameworks/electronic-artefacts-lightweight-template/",
+    "type": "framework",
+    "title": "Electronic Artefacts Lightweight Template",
+    "alternateNames": [],
+    "definition": "A lightweight vanilla HTML, CSS and JavaScript framework used by Electronic Artefacts for fast prototyping, public showcases and small production surfaces.",
+    "abstract": "Electronic Artefacts Lightweight Template is a small front-end framework for composing static, content-led websites with HTML, CSS and browser JavaScript.",
+    "headings": [
+      "Role",
+      "Use on this site",
+      "Principles",
+      "Boundaries"
+    ],
+    "body": "Role Electronic Artefacts Lightweight Template is the small front-end framework used by the studio to assemble fast, inspectable web surfaces. It favours static HTML, reusable partials, bundled CSS and focused browser JavaScript rather than a heavy client-side application shell. Use on this site This public Electronic Artefacts website is composed in part with the framework. The canonical content comes from typed records and generated HTML, while the framework layer shapes navigation, layout, interface behaviours, search surfaces, language switching and progressive enhancements. The point is not to present the framework as a separate commercial platform. It is the lightweight composition layer behind parts of the site itself: a practical system for making editorial, research and showcase pages feel coherent without turning every page into a full web application. Principles Static pages should remain readable before JavaScript runs. Interface enhancements should support navigation, search, sharing and orientation without replacing the document. The CSS system should carry the visual identity without requiring a design-system dependency. Public pages should remain easy to crawl, archive and cite. Boundaries The framework is deliberately small. It does not replace VASTE, Forge or any larger Electronic Artefacts runtime. It also does not claim to be the right foundation for every product. Its role is narrower: compose lightweight public surfaces where HTML, CSS and JavaScript are enough.",
+    "tags": [
+      "HTML",
+      "CSS",
+      "JavaScript",
+      "Static Site",
+      "Progressive Enhancement",
+      "Front-end Framework"
+    ],
+    "questions": [],
+    "relationLabels": [],
+    "relatedEntityIds": [],
+    "status": "active",
+    "confidence": "published",
+    "modifiedAt": "2026-06-26"
   },
   {
     "id": "ea:organization:electronic-artefacts",

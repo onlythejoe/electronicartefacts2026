@@ -8182,6 +8182,46 @@ window.EA_PUBLIC_CATALOG = {
       }
     },
     {
+      "id": "ea:framework:electronic-artefacts-lightweight-template-fr",
+      "legacyId": "electronic-artefacts-lightweight-template-fr",
+      "kind": "framework",
+      "type": "framework",
+      "locale": "fr",
+      "translationOf": "ea:framework:electronic-artefacts-lightweight-template",
+      "title": "Electronic Artefacts Lightweight Template",
+      "subtitle": "Framework HTML, CSS et JavaScript léger",
+      "summary": "Electronic Artefacts Lightweight Template est un petit framework front-end destiné à composer des sites statiques éditoriaux avec HTML, CSS et JavaScript navigateur.",
+      "description": "Fiche canonique du framework léger Electronic Artefacts qui compose une partie de ce site public.",
+      "definition": "Framework léger en HTML, CSS et JavaScript utilisé par Electronic Artefacts pour composer des prototypes, des vitrines publiques et de petites interfaces de production.",
+      "status": "active",
+      "maturity": "production",
+      "confidence": "published",
+      "visibility": "public",
+      "publicationClass": "canonical",
+      "tags": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Site statique",
+        "Amélioration progressive",
+        "Framework front-end"
+      ],
+      "discipline": [
+        "Développement web",
+        "Design Technology",
+        "Technologies créatives",
+        "Systèmes de connaissance"
+      ],
+      "route": "/fr/knowledge/frameworks/electronic-artefacts-lightweight-template/",
+      "identifier": "/fr/id/framework/electronic-artefacts-lightweight-template/",
+      "temporality": {
+        "creationDate": "2026-01-01",
+        "lastUpdated": "2026-06-26",
+        "releaseDate": "2026-06-26",
+        "creationYear": "2026"
+      }
+    },
+    {
       "id": "ea:organization:electronic-artefacts-fr",
       "legacyId": "electronic-artefacts-fr",
       "kind": "organization",
@@ -10529,6 +10569,45 @@ window.EA_PUBLIC_CATALOG = {
         "creationDate": "2026-06-24",
         "lastUpdated": "2026-06-25",
         "releaseDate": "2026-06-25",
+        "creationYear": "2026"
+      }
+    },
+    {
+      "id": "ea:framework:electronic-artefacts-lightweight-template",
+      "legacyId": "electronic-artefacts-lightweight-template",
+      "kind": "framework",
+      "type": "framework",
+      "locale": "en",
+      "title": "Electronic Artefacts Lightweight Template",
+      "subtitle": "Vanilla HTML, CSS and JavaScript framework",
+      "summary": "Electronic Artefacts Lightweight Template is a small front-end framework for composing static, content-led websites with HTML, CSS and browser JavaScript.",
+      "description": "A canonical framework record for the lightweight Electronic Artefacts front-end system that composes part of this public website.",
+      "definition": "A lightweight vanilla HTML, CSS and JavaScript framework used by Electronic Artefacts for fast prototyping, public showcases and small production surfaces.",
+      "status": "active",
+      "maturity": "production",
+      "confidence": "published",
+      "visibility": "public",
+      "publicationClass": "canonical",
+      "tags": [
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Static Site",
+        "Progressive Enhancement",
+        "Front-end Framework"
+      ],
+      "discipline": [
+        "Web Development",
+        "Design Technology",
+        "Creative Technology",
+        "Knowledge Systems"
+      ],
+      "route": "/knowledge/frameworks/electronic-artefacts-lightweight-template/",
+      "identifier": "/id/framework/electronic-artefacts-lightweight-template/",
+      "temporality": {
+        "creationDate": "2026-01-01",
+        "lastUpdated": "2026-06-26",
+        "releaseDate": "2026-06-26",
         "creationYear": "2026"
       }
     },
@@ -15467,6 +15546,7 @@ window.EA_PUBLIC_CATALOG = {
     "ea:concept:systems-thinking-fr": "/fr/knowledge/concepts/systems-thinking/",
     "ea:concept:typography-fr": "/fr/knowledge/concepts/typography/",
     "ea:concept:web-audio-fr": "/fr/knowledge/concepts/web-audio/",
+    "ea:framework:electronic-artefacts-lightweight-template-fr": "/fr/knowledge/frameworks/electronic-artefacts-lightweight-template/",
     "ea:organization:electronic-artefacts-fr": "/fr/organizations/electronic-artefacts/",
     "ea:program:oreth-fr": "/fr/programs/oreth/",
     "ea:program:vaste-fr": "/fr/programs/vaste/",
@@ -15531,6 +15611,7 @@ window.EA_PUBLIC_CATALOG = {
     "ea:technology:web-audio-api-fr": "/fr/knowledge/technologies/web-audio-api/",
     "ea:technology:webgl-fr": "/fr/knowledge/technologies/webgl/",
     "ea:technology:webnn-fr": "/fr/knowledge/technologies/webnn/",
+    "ea:framework:electronic-artefacts-lightweight-template": "/knowledge/frameworks/electronic-artefacts-lightweight-template/",
     "ea:organization:electronic-artefacts": "/organizations/electronic-artefacts/",
     "ea:program:oreth": "/programs/oreth/",
     "ea:program:vaste": "/programs/vaste/",
@@ -16002,31 +16083,31 @@ window.EA_SEARCH = {
     "Live public proof": "Réalisation publique active",
     "PROOF FIRST": "LA PREUVE D’ABORD",
     "One runtime foundation.": "Un socle d’exécution commun.",
-    "Open the system line that explains how the studio thinks and builds.": "Découvrez le système qui structure la manière dont le studio pense et construit.",
+    "Understand the technical line behind how the studio thinks and builds.": "Comprendre la ligne technique derrière la manière dont le studio pense et construit.",
     "RUNTIME FOUNDATION": "SOCLE D’EXÉCUTION",
-    "Open the proprietary program behind the graph, identity and knowledge-system work.": "Découvrez le programme propriétaire derrière le graphe, l’identité et les systèmes de connaissance.",
+    "Open the proprietary program behind the identity and knowledge-system work.": "Découvrez le programme propriétaire derrière l’identité et les systèmes de connaissance.",
     "Graph systems": "Systèmes de graphes",
     "Research engine": "Moteur de recherche",
     "Explore VASTE": "Découvrir VASTE",
-    "Enter Research": "Explorer la recherche",
+    "Explore Research": "Explorer la recherche",
     "Quick preview": "Aperçu rapide",
     "FEATURED PATHS": "PARCOURS SÉLECTIONNÉS",
-    "Start from your real question.": "Partez de votre vraie question.",
-    "Choose the entry point that matches your intent before going deeper into the graph.": "Choisissez le point d’entrée qui correspond à votre intention avant d’explorer le graphe.",
+    "Choose what you need first.": "Choisissez d’abord ce dont vous avez besoin.",
+    "Start with the path that matches your intent: technology, delivery or cultural work.": "Commencez par le parcours qui correspond à votre intention : technologie, réalisation ou travail culturel.",
     "Technology": "Technologie",
     "Understand the core runtime": "Comprendre le moteur central",
-    "Open VASTE to inspect the strategic and technical foundation behind the wider family of systems.": "Découvrez VASTE pour comprendre le socle stratégique et technique de l’ensemble des systèmes.",
+    "Open VASTE to understand the strategic and technical foundation behind the wider family of systems.": "Découvrez VASTE pour comprendre le socle stratégique et technique de l’ensemble des systèmes.",
     "Why it matters": "Pourquoi c’est important",
     "Best when architecture, scalability and the long-term platform thesis matter first.": "À privilégier lorsque l’architecture, le passage à l’échelle et la vision de plateforme sont prioritaires.",
     "Delivery": "Réalisation",
-    "Inspect applied work and outcomes": "Examiner les réalisations et leurs résultats",
+    "See applied work and outcomes": "Voir les réalisations et leurs résultats",
     "See how strategy, interface, content and implementation hold together across commissions and public products.": "Voyez comment stratégie, interface, contenu et réalisation s’articulent dans les commandes et produits publics.",
     "Best when you need evidence of execution under concrete constraints.": "À privilégier lorsque vous cherchez des preuves de réalisation sous contraintes concrètes.",
     "See Client Work": "Voir les réalisations clients",
     "Enter through Palimpsests": "Entrer par Palimpsests",
-    "Explore the musical and editorial surface where artistic production, memory and publication meet.": "Explorez l’espace musical et éditorial où se rencontrent création artistique, mémoire et publication.",
+    "Explore the musical and editorial space where artistic production, memory and publication meet.": "Explorez l’espace musical et éditorial où se rencontrent création artistique, mémoire et publication.",
     "Best when you want the cultural register before the technical system.": "À privilégier pour découvrir le registre culturel avant le système technique.",
-    "Enter Palimpsests": "Découvrir Palimpsests",
+    "Discover Palimpsests": "Découvrir Palimpsests",
     "LAYER": "COUCHE",
     "Live ecosystem map.": "Cartographie vivante de l’écosystème.",
     "Real projects, programs and knowledge routes from the current Electronic Artefacts graph.": "Projets, programmes et parcours de connaissance issus du graphe actuel d’Electronic Artefacts.",
@@ -16036,7 +16117,7 @@ window.EA_SEARCH = {
     "Client work / live": "Réalisation client / active",
     "Album / culture": "Album / culture",
     "Research field": "Domaine de recherche",
-    "Concept records": "Fiches conceptuelles",
+    "Concept pages": "Pages conceptuelles",
     "Memory layer": "Couche mémorielle",
     "Album cycle": "Cycle d’album",
     "Five acts": "Cinq actes",
@@ -16050,18 +16131,18 @@ window.EA_SEARCH = {
     "Lead": "Projet principal",
     "Mode": "Mode",
     "Browse Projects": "Parcourir les projets",
-    "Browse Work Archive": "Voir les réalisations",
-    "Open project": "Ouvrir le projet",
-    "Work archive": "Réalisations",
+    "See More Work": "Voir plus de réalisations",
+    "View project": "Voir le projet",
+    "More work": "Autres réalisations",
     "MORE PATHS": "AUTRES PARCOURS",
     "CONTINUE EXPLORING": "POURSUIVRE L’EXPLORATION",
     "Use the ecosystem as a map, not a grid.": "Utilisez l’écosystème comme une carte, pas comme une grille.",
     "The next useful surface depends on what you came here for. These paths keep the structure intact while making the next move explicit.": "La prochaine destination dépend de votre objectif. Ces parcours préservent la structure tout en rendant l’étape suivante explicite.",
     "Move into public works and collaborations.": "Découvrez les réalisations publiques et les collaborations.",
     "Best if you want to see what the studio makes.": "Idéal pour voir ce que produit le studio.",
-    "Enter the theoretical and experimental branches.": "Explorez les branches théoriques et expérimentales.",
+    "Explore the theoretical and experimental branches.": "Explorez les branches théoriques et expérimentales.",
     "Best if you want to understand the thinking behind the work.": "Idéal pour comprendre la réflexion derrière les réalisations.",
-    "Inspect the software systems and runtime stack.": "Examinez les systèmes logiciels et leur socle d’exécution.",
+    "Understand the software systems behind the work.": "Comprendre les systèmes logiciels derrière le travail.",
     "Best if you want the operational core.": "Idéal pour découvrir le cœur opérationnel.",
     "Browse traces, fragments and historical material.": "Parcourez les traces, fragments et matériaux historiques.",
     "Best if you want context and depth.": "Idéal pour obtenir davantage de contexte et de profondeur.",
@@ -16197,8 +16278,8 @@ window.EA_SEARCH = {
     "Description": "Description",
     "Metadata": "Métadonnées",
     "Relationships": "Relations",
-    "Related records": "Fiches associées",
-    "Local graph": "Graphe local",
+    "Related context": "Contexte associé",
+    "Related": "Associé",
     "Sources": "Sources",
     "Citation": "Citation",
     "Version": "Version",
@@ -16214,9 +16295,9 @@ window.EA_SEARCH = {
     "Runtime signal": "Signal du moteur",
     "Information propagates through context, identity and execution layers.": "L’information se propage à travers les couches de contexte, d’identité et d’exécution.",
     "Identity and publication": "Identité et publication",
-    "Record metadata": "Métadonnées de la fiche",
-    "Entity ID": "Identifiant de l’entité",
-    "Publication class": "Classe de publication",
+    "Save and share": "Enregistrer et partager",
+    "Cite this page": "Citer cette page",
+    "Reference": "Référence",
     "Maturity": "Maturité",
     "Confidence": "Confiance",
     "Not published": "Non publié",
@@ -16240,16 +16321,16 @@ window.EA_SEARCH = {
     "From uncertainty to a reusable result.": "De l’incertitude à un résultat réutilisable.",
     "The process stays lightweight enough for exploration and structured enough to preserve what was learned.": "Le processus reste assez léger pour explorer et assez structuré pour préserver ce qui a été appris.",
     "FIELD DIRECTORY": "RÉPERTOIRE DES DOMAINES",
-    "Open research fields.": "Domaines de recherche ouverts.",
+    "Explore the research fields.": "Explorer les domaines de recherche.",
     "APPLIED RESEARCH": "RECHERCHE APPLIQUÉE",
     "When an investigation becomes a system.": "Quand une recherche devient un système.",
     "Programs hold long-running technical questions. They provide continuity between experiments, production constraints and reusable infrastructure.": "Les programmes portent des questions techniques de long terme. Ils assurent une continuité entre expérimentations, contraintes de production et infrastructures réutilisables.",
-    "Open the full program registry": "Ouvrir le registre complet des programmes",
+    "See all programs": "Voir tous les programmes",
     "RESEARCH RECORDS": "FICHES DE RECHERCHE",
     "Evidence stays attached to the work.": "Les preuves restent attachées au travail.",
-    "Logs preserve decisions, tests and unresolved questions. They keep research inspectable after a prototype or project has moved on.": "Les journaux préservent décisions, tests et questions non résolues. Ils maintiennent la recherche inspectable après l’évolution d’un prototype ou projet.",
-    "Browse the complete archive": "Parcourir toutes les archives",
-    "Search all records": "Rechercher dans toutes les fiches",
+    "Logs preserve decisions, tests and unresolved questions, so useful learning remains visible after a prototype or project has moved on.": "Les journaux préservent décisions, tests et questions non résolues, afin que les apprentissages utiles restent visibles après l’évolution d’un prototype ou projet.",
+    "Browse the archive": "Parcourir les archives",
+    "Search the site": "Rechercher sur le site",
     "ARCHIVE LIBRARY": "BIBLIOTHÈQUE DES ARCHIVES",
     "Browse by the form each trace currently takes.": "Parcourir selon la forme actuelle de chaque trace.",
     "Categories describe the artefact, not its final value. A document may become a product decision; a prototype may become a program; an audio fragment may become a release.": "Les catégories décrivent l’artefact, pas sa valeur finale. Un document peut devenir une décision produit, un prototype un programme et un fragment audio une publication.",
@@ -16390,6 +16471,10 @@ window.EA_SEARCH = {
     "Direct channels and links.": "Canaux directs et liens.",
     "Official external program.": "Programme externe officiel.",
     "Creative technology studio: client systems, proprietary platforms, research and artistic publishing.": "Studio de technologies créatives : systèmes clients, plateformes propriétaires, recherche et édition artistique.",
+    "Electronic Artefacts 2026": "Electronic Artefacts 2026",
+    "Powered in part by EA Light Framework": "Composé en partie avec EA Light Framework",
+    "Static HTML, CSS and JavaScript composition layer.": "Couche de composition statique HTML, CSS et JavaScript.",
+    "Site signature": "Signature du site",
     "Quick links": "Liens rapides",
     "Section unavailable.": "Section indisponible.",
     "This part of the page could not be displayed for the moment.": "Cette partie de la page ne peut pas être affichée pour le moment.",
@@ -16403,14 +16488,14 @@ window.EA_SEARCH = {
     "Try a broader query or clear the filters.": "Essayez une recherche plus large ou effacez les filtres.",
     "result": "résultat",
     "results": "résultats",
-    "public records": "fiches publiques",
+    "public pages": "pages publiques",
     "current page": "page actuelle",
     "visible labels": "libellés visibles",
     "MATCHES": "RÉSULTATS",
     "SHOWN": "AFFICHÉS",
     "TAGS": "MOTS-CLÉS",
     "Archive overview table": "Tableau de synthèse des archives",
-    "Open record": "Ouvrir la fiche",
+    "Open page": "Ouvrir la page",
     "Open card": "Ouvrir la carte",
     "Open Dossier": "Ouvrir le dossier",
     "Open Work": "Voir les réalisations",
@@ -17512,7 +17597,7 @@ window.EA_SEARCH = {
     if (!item) return [];
     if (item.id === "oeil-de-meg") return ["Photography CRM", "Portfolio", "Live site", "WordPress"];
     if (item.id === "palimpsests") return ["Album cycle", "ORETH", "Five acts", "Archive"];
-    if (item.id === "vestiges") return ["Living knowledge", "VASTE runtime", "Cultural graph", "Public infrastructure"];
+    if (item.id === "vestiges") return ["Living knowledge", "VASTE", "Cultural memory", "Public infrastructure"];
     if (item.id === "unionmob") return ["External project", "CTO", "UMOS licence", "Violet identity"];
 
     const pills = [
@@ -17527,13 +17612,13 @@ window.EA_SEARCH = {
 
   const projectReadAs = (item) => {
     if (!item) return "";
-    if (item.id === "palimpsests") return "Read as the artistic anchor: an album cycle, archive surface and ORETH world.";
-    if (item.id === "oeil-de-meg") return "Read as delivery proof: a live photography portfolio, CRM logic and performance dossier.";
-    if (item.id === "vestiges") return "Read as living knowledge infrastructure: a VASTE-powered graph connecting people, practices, materials and institutions.";
-    if (item.id === "unionmob") return "Read as an external CTO partnership: UnionMob belongs to Zarah Nkounkou; UMOS remains owned by Electronic Artefacts.";
-    if (item.category === "Client Work" || item.category === "External Work") return "Read as applied work: public-facing UX, visual evidence and delivery context.";
-    if (item.category === "Platform" || item.type === "Platform") return "Read as a system surface: product structure, workflow and operational logic.";
-    return `Read as ${item.category || item.type || "a project"} inside the Electronic Artefacts world.`;
+    if (item.id === "palimpsests") return "Album cycle, archive surface and ORETH world.";
+    if (item.id === "oeil-de-meg") return "Live photography portfolio with CRM logic and performance evidence.";
+    if (item.id === "vestiges") return "Platform for connecting people, practices, materials and institutions.";
+    if (item.id === "unionmob") return "External CTO partnership with a clear separation between UnionMob and UMOS.";
+    if (item.category === "Client Work" || item.category === "External Work") return "Applied work with public-facing UX, visual evidence and delivery context.";
+    if (item.category === "Platform" || item.type === "Platform") return "Product structure, workflow and operational logic.";
+    return `${item.category || item.type || "Project"} inside the Electronic Artefacts world.`;
   };
 
   const projectCard = (item) => `
@@ -17583,7 +17668,7 @@ window.EA_SEARCH = {
       <p class="project-card__editorial-note">${esc(projectReadAs(item))}</p>
       ${signalStrip(item)}
       ${tagRow(homeCardPills(item), { limit: 4, compact: true })}
-      ${linkRow({ label: "Open project", href })}
+      ${linkRow({ label: "View project", href })}
     </article>
   `;
   };
@@ -17627,7 +17712,7 @@ window.EA_SEARCH = {
         <p class="project-card__editorial-note">${esc(projectReadAs(item))}</p>
         ${signalStrip(item)}
         ${tagRow(homeCardPills(item), { limit: featured ? 4 : 2, compact: true })}
-        ${featured ? linkRow({ label: "Open project", href }, [{ label: "Work archive", href: "./work.html" }]) : ""}
+        ${featured ? linkRow({ label: "View project", href }, [{ label: "More work", href: "./work.html" }]) : ""}
       </article>
     `;
   };
@@ -17909,8 +17994,8 @@ window.EA_SEARCH = {
           copy: "Album cycle carried by ORETH. A single full surface, no nested panels.",
           tags: homeCardPills(palimpsests),
           actions: [
-            { label: "Enter Palimpsests", href: "./palimpsests.html" },
-            { label: "Open Archive", href: "./archive.html" },
+            { label: "Discover Palimpsests", href: "./palimpsests.html" },
+            { label: "Browse archive", href: "./archive.html" },
             { label: "Start a Collaboration", href: "./contact.html" },
           ],
         })}
@@ -17923,7 +18008,7 @@ window.EA_SEARCH = {
       <div class="section-head">
         <p class="eyebrow">PROOF FIRST</p>
         <h2>One runtime foundation.</h2>
-        <p class="lede">Open the system line that explains how the studio thinks and builds.</p>
+        <p class="lede">Understand the technical line behind how the studio thinks and builds.</p>
       </div>
       <div class="latests-grid latests-grid--cinematic">
         ${(() => {
@@ -17949,7 +18034,7 @@ window.EA_SEARCH = {
             <div class="vast-banner__content">
               <p class="card__meta">RUNTIME FOUNDATION</p>
               <h3 class="vast-banner__title">VASTE</h3>
-              <p class="vast-banner__copy">Open the proprietary program behind the graph, identity and knowledge-system work.</p>
+              <p class="vast-banner__copy">Open the proprietary program behind the identity and knowledge-system work.</p>
               <div class="pill-cloud vast-banner__chips" aria-label="VASTE attributes">
                 <span class="chip">Runtime</span>
                 <span class="chip">Graph systems</span>
@@ -17959,7 +18044,7 @@ window.EA_SEARCH = {
             ${vasteEngineMarkup()}
             <div class="button-row button-row--compact vast-banner__actions">
               <a class="button button--primary" href="https://www.vaste.space/" target="_blank" rel="noreferrer">Explore VASTE</a>
-              <a class="button button--secondary" href="./research.html">Enter Research</a>
+              <a class="button button--secondary" href="./research.html">Explore Research</a>
             </div>
           </div>
         </article>
@@ -17999,7 +18084,7 @@ window.EA_SEARCH = {
               ],
               { limit: 2, compact: true },
             )}
-            ${linkRow({ label: "Browse Projects", href: "./projects.html" }, [{ label: "Browse Work Archive", href: "./work.html" }])}
+            ${linkRow({ label: "Browse Projects", href: "./projects.html" }, [{ label: "See More Work", href: "./work.html" }])}
           </aside>
         </div>
         <div class="selected-works-panel__grid" role="list" aria-label="Selected works">
@@ -18016,7 +18101,7 @@ window.EA_SEARCH = {
         </div>
         <div class="link-row selected-works-panel__links">
           <a class="tag" href="./projects.html">Browse Projects</a>
-          <a class="tag" href="./work.html">Browse Work Archive</a>
+          <a class="tag" href="./work.html">See More Work</a>
         </div>
       </section>
     `;
@@ -18254,8 +18339,8 @@ window.EA_SEARCH = {
           copy: "The next useful surface depends on what you came here for. These paths keep the structure intact while making the next move explicit.",
           cards: [
             { kicker: "Home", title: "Projects", copy: "Move into public works and collaborations.", reason: "Best if you want to see what the studio makes.", cta: "Browse Projects", href: "./projects.html" },
-            { kicker: "Home", title: "Research", copy: "Enter the theoretical and experimental branches.", reason: "Best if you want to understand the thinking behind the work.", cta: "Enter Research", href: "./research.html" },
-            { kicker: "Home", title: "Programs", copy: "Inspect the software systems and runtime stack.", reason: "Best if you want the operational core.", cta: "View Programs", href: "./programs.html" },
+            { kicker: "Home", title: "Research", copy: "Explore the theoretical and experimental branches.", reason: "Best if you want to understand the thinking behind the work.", cta: "Explore Research", href: "./research.html" },
+            { kicker: "Home", title: "Programs", copy: "Understand the software systems behind the work.", reason: "Best if you want the operational core.", cta: "View Programs", href: "./programs.html" },
             { kicker: "Home", title: "Archive", copy: "Browse traces, fragments and historical material.", reason: "Best if you want context and depth.", cta: "Open Archive", href: "./archive.html" },
           ],
         });
@@ -18282,8 +18367,8 @@ window.EA_SEARCH = {
           copy: "Use these paths to move from the project map to the layers around it.",
           cards: [
             { kicker: "Next", title: "Work", copy: "Return to the studio and client-facing layer.", reason: "Best if you need the applied side.", cta: "Return to Work", href: "./work.html" },
-            { kicker: "Next", title: "Research", copy: "See the investigations that feed the projects.", reason: "Best if you want the thinking layer.", cta: "Enter Research", href: "./research.html" },
-            { kicker: "Next", title: "Archive", copy: "Inspect older fragments and traces.", reason: "Best if you want depth and continuity.", cta: "Open Archive", href: "./archive.html" },
+            { kicker: "Next", title: "Research", copy: "See the investigations that feed the projects.", reason: "Best if you want the thinking layer.", cta: "Explore Research", href: "./research.html" },
+            { kicker: "Next", title: "Archive", copy: "Browse older fragments and traces.", reason: "Best if you want depth and continuity.", cta: "Open Archive", href: "./archive.html" },
             { kicker: "Next", title: "Contact", copy: "Start a similar project or ask for a collaboration.", reason: "Best if you want to initiate a brief.", cta: "Start a Collaboration", href: "./contact.html" },
           ],
         });
@@ -18296,7 +18381,7 @@ window.EA_SEARCH = {
           copy: "Use these paths to move from the software stack to its use, context and lineage.",
           cards: [
             { kicker: "Next", title: "VASTE", copy: "Go to the core runtime and strategic spine.", reason: "The main program explains the wider stack.", cta: "Explore VASTE", href: "./vaste.html" },
-            { kicker: "Next", title: "Research", copy: "See the theories and methods that inform the stack.", reason: "Useful when you want the conceptual layer.", cta: "Enter Research", href: "./research.html" },
+            { kicker: "Next", title: "Research", copy: "See the theories and methods that inform the stack.", reason: "Useful when you want the conceptual layer.", cta: "Explore Research", href: "./research.html" },
             { kicker: "Next", title: "About", copy: "Understand how programs fit into the ecosystem.", reason: "Useful for orientation and collaboration.", cta: "Understand the Ecosystem", href: "./about.html" },
             { kicker: "Next", title: "Contact", copy: "Discuss a program, partnership or implementation.", reason: "Useful when the stack becomes a brief.", cta: "Start a Collaboration", href: "./contact.html" },
           ],
@@ -18311,7 +18396,7 @@ window.EA_SEARCH = {
           cards: [
             { kicker: "Next", title: "Programs", copy: "See the systems that grow out of research.", reason: "Useful if you want the operational expression.", cta: "View Programs", href: "./programs.html" },
             { kicker: "Next", title: "Projects", copy: "See how research translates into public works.", reason: "Useful if you want outputs rather than notes.", cta: "Browse Projects", href: "./projects.html" },
-            { kicker: "Next", title: "Archive", copy: "Inspect historical fragments and prior lines.", reason: "Useful for lineage and context.", cta: "Open Archive", href: "./archive.html" },
+            { kicker: "Next", title: "Archive", copy: "Browse historical fragments and prior lines.", reason: "Useful for lineage and context.", cta: "Open Archive", href: "./archive.html" },
             { kicker: "Next", title: "About", copy: "Return to the trunk and system model.", reason: "Useful when you need the ecosystem map.", cta: "Understand the Ecosystem", href: "./about.html" },
           ],
         });
@@ -18324,7 +18409,7 @@ window.EA_SEARCH = {
           copy: "Use these paths to move from fragments into the living ecosystem.",
           cards: [
             { kicker: "Next", title: "Projects", copy: "See the current public-facing works.", reason: "Useful if you want what is active now.", cta: "Browse Projects", href: "./projects.html" },
-            { kicker: "Next", title: "Research", copy: "Go back to the working investigations.", reason: "Useful if you want the source material.", cta: "Enter Research", href: "./research.html" },
+            { kicker: "Next", title: "Research", copy: "Go back to the working investigations.", reason: "Useful if you want the source material.", cta: "Explore Research", href: "./research.html" },
             { kicker: "Next", title: "Contact", copy: "Ask for a collaboration or specific trace.", reason: "Useful when the archive leads to action.", cta: "Start a Collaboration", href: "./contact.html" },
             { kicker: "Next", title: "About", copy: "Re-read the ecosystem structure.", reason: "Useful if you need the trunk again.", cta: "Understand the Ecosystem", href: "./about.html" },
           ],
@@ -18337,8 +18422,8 @@ window.EA_SEARCH = {
           title: "After the ecosystem model, follow the branches.",
           copy: "These pages show the parts of the system that matter most once the trunk is clear.",
           cards: [
-            { kicker: "Next", title: "Research", copy: "See where investigations begin.", reason: "Useful when you want the conceptual source.", cta: "Enter Research", href: "./research.html" },
-            { kicker: "Next", title: "Programs", copy: "Inspect the software systems and runtimes.", reason: "Useful when you want the operational layer.", cta: "View Programs", href: "./programs.html" },
+            { kicker: "Next", title: "Research", copy: "See where investigations begin.", reason: "Useful when you want the conceptual source.", cta: "Explore Research", href: "./research.html" },
+            { kicker: "Next", title: "Programs", copy: "Understand the software systems and runtimes.", reason: "Useful when you want the operational layer.", cta: "View Programs", href: "./programs.html" },
             { kicker: "Next", title: "Projects", copy: "See how the system becomes public work.", reason: "Useful when you want outputs and proof.", cta: "Browse Projects", href: "./projects.html" },
             { kicker: "Next", title: "Contact", copy: "Move from orientation to direct conversation.", reason: "Useful once the ecosystem makes sense.", cta: "Start a Collaboration", href: "./contact.html" },
           ],
@@ -18366,7 +18451,7 @@ window.EA_SEARCH = {
           copy: "Use these paths to move from the runtime into its surrounding layers.",
           cards: [
             { kicker: "Next", title: "Programs", copy: "See the wider software system family.", reason: "Useful if you want the stack around the core.", cta: "View Programs", href: "./programs.html" },
-            { kicker: "Next", title: "Research", copy: "See the investigations that feed the runtime.", reason: "Useful if you want the methods behind it.", cta: "Enter Research", href: "./research.html" },
+            { kicker: "Next", title: "Research", copy: "See the investigations that feed the runtime.", reason: "Useful if you want the methods behind it.", cta: "Explore Research", href: "./research.html" },
             { kicker: "Next", title: "About", copy: "Rebuild the ecosystem model around the runtime.", reason: "Useful if you need the bigger picture.", cta: "Understand the Ecosystem", href: "./about.html" },
             { kicker: "Next", title: "Contact", copy: "Discuss the runtime or a related partnership.", reason: "Useful if VASTE is the reason you are here.", cta: "Start a Collaboration", href: "./contact.html" },
           ],
@@ -18380,7 +18465,7 @@ window.EA_SEARCH = {
           copy: "Use these paths to move between the album, its memory layer and the broader studio system.",
           cards: [
             { kicker: "Next", title: "Archive", copy: "See the traces, fragments and related material.", reason: "Useful if you want the work's historical context.", cta: "Open Archive", href: "./archive.html" },
-            { kicker: "Next", title: "Research", copy: "Revisit the conceptual branches behind the work.", reason: "Useful if you want the source ideas.", cta: "Enter Research", href: "./research.html" },
+            { kicker: "Next", title: "Research", copy: "Revisit the conceptual branches behind the work.", reason: "Useful if you want the source ideas.", cta: "Explore Research", href: "./research.html" },
             { kicker: "Next", title: "Work", copy: "Move back into the studio and wider project field.", reason: "Useful if you want the wider practice.", cta: "See Client Work", href: "./work.html" },
             { kicker: "Next", title: "Contact", copy: "Discuss collaboration, publication or release.", reason: "Useful if the work suggests a new one.", cta: "Start a Collaboration", href: "./contact.html" },
           ],
@@ -18398,7 +18483,7 @@ window.EA_SEARCH = {
           vestiges: [
             { kicker: "Runtime", title: "VASTE", copy: "Open the runtime that powers Vestiges.", reason: "Useful if you want the technical foundation.", cta: "Explore VASTE", href: "https://www.vaste.space/" },
             { kicker: "Next", title: "Programs", copy: "See the software and infrastructure layer around the product.", reason: "Useful if you want the wider system family.", cta: "View Programs", href: "./programs.html" },
-            { kicker: "Next", title: "Research", copy: "Inspect the graph, taxonomy and systems research that informs the platform.", reason: "Useful if you want the conceptual and technical sources.", cta: "Enter Research", href: "./research.html" },
+            { kicker: "Next", title: "Research", copy: "Explore the research, taxonomy and systems thinking that inform the platform.", reason: "Useful if you want the conceptual and technical sources.", cta: "Explore Research", href: "./research.html" },
             { kicker: "Next", title: "Contact", copy: "Discuss a platform, cultural institution or knowledge infrastructure collaboration.", reason: "Useful if Vestiges connects to your organisation.", cta: "Start a Collaboration", href: "./contact.html" },
           ],
           atypikhouse: [
@@ -18409,7 +18494,7 @@ window.EA_SEARCH = {
           ],
           unionmob: [
             { kicker: "Technical asset", title: "Programs", copy: "See the Electronic Artefacts-owned systems behind the CTO contribution.", reason: "Useful for understanding the software layer without confusing it with UnionMob ownership.", cta: "View Programs", href: "./programs.html" },
-            { kicker: "Next", title: "Research", copy: "Inspect the investigations that inform it.", reason: "Useful if you want the conceptual layer.", cta: "Enter Research", href: "./research.html" },
+            { kicker: "Next", title: "Research", copy: "Explore the investigations that inform it.", reason: "Useful if you want the conceptual layer.", cta: "Explore Research", href: "./research.html" },
             { kicker: "Partnership", title: "Work", copy: "Review how Electronic Artefacts presents external technical collaborations.", reason: "Useful for comparing the CTO role with commissioned delivery.", cta: "See Work", href: "./work.html" },
             { kicker: "Next", title: "Contact", copy: "Discuss an external CTO, platform or coordination-system collaboration.", reason: "Useful when a project needs technical leadership with clear ownership boundaries.", cta: "Start a Collaboration", href: "./contact.html" },
           ],
@@ -18436,7 +18521,7 @@ window.EA_SEARCH = {
           { kicker: "Core", title: "Work", copy: "Projects, music and technology.", reason: "The studio layer and applied outcomes.", cta: "Return to Work", href: "./work.html" },
           { kicker: "Core", title: "Projects", copy: "Public works and extended dossiers.", reason: "The public project constellation.", cta: "Browse Projects", href: "./projects.html" },
           { kicker: "Core", title: "Programs", copy: "All visible software programs.", reason: "The runtime and systems layer.", cta: "View Programs", href: "./programs.html" },
-          { kicker: "Core", title: "Research", copy: "Program, fields and notes.", reason: "The conceptual and experimental layer.", cta: "Enter Research", href: "./research.html" },
+          { kicker: "Core", title: "Research", copy: "Program, fields and notes.", reason: "The conceptual and experimental layer.", cta: "Explore Research", href: "./research.html" },
         ],
       });
     })();
@@ -18537,7 +18622,7 @@ window.EA_SEARCH = {
         },
         {
           label: "Knowledge",
-          note: "Concept records",
+          note: "Concept pages",
           href: "./knowledge/",
           color: "rgba(52, 211, 153, 0.9)",
           tone: "knowledge",
@@ -21384,13 +21469,13 @@ window.EA_SEARCH = {
       {
         label: "Systems & infrastructure",
         title: "How can complex systems remain legible, adaptable and governed?",
-        copy: "Runtime architecture, graph execution, information structures, simulation and organisational governance.",
+        copy: "Runtime architecture, information structures, simulation and organisational governance.",
         ids: ["runtime-theory", "systems-theory", "graph-runtime-studies", "governance-studies"],
       },
       {
         label: "Knowledge & transmission",
         title: "How does knowledge persist, circulate and become actionable?",
-        copy: "Taxonomy, memory, signals, archives and the relationships that make knowledge discoverable.",
+        copy: "Taxonomy, memory, archives and the relationships that make knowledge discoverable.",
         ids: ["information-studies", "signal-archaeology", "artifact-theory"],
       },
       {
@@ -21459,8 +21544,8 @@ window.EA_SEARCH = {
       <section class="zone-card hero">
         <div class="section-head">
           <p class="eyebrow">FIELD DIRECTORY</p>
-          <h2>Open research fields.</h2>
-          <p class="lede">${publicFields.length} connected areas of inquiry. Open any field to inspect its projects, programs, artefacts and relations.</p>
+          <h2>Explore the research fields.</h2>
+          <p class="lede">${publicFields.length} areas of inquiry. Open any field to see the projects, notes and references around it.</p>
         </div>
         <div class="card-grid card-grid--three">
           ${publicFields.map((item, index) => researchCard(item, { href: `./entity.html?id=${encodeURIComponent(item.id)}`, index, hideLineage: true })).join("")}
@@ -21484,7 +21569,7 @@ window.EA_SEARCH = {
         ${appliedPrograms.map(programCard).join("")}
       </div>
       <div class="link-row">
-        <a class="button button--secondary" href="./programs.html">Open the full program registry</a>
+        <a class="button button--secondary" href="./programs.html">See all programs</a>
         <a class="tag" href="https://www.vaste.space/" target="_blank" rel="noreferrer">Explore VASTE</a>
       </div>
     </section>
@@ -21498,7 +21583,7 @@ window.EA_SEARCH = {
       <div class="section-head">
         <p class="eyebrow">RESEARCH RECORDS</p>
         <h2>Evidence stays attached to the work.</h2>
-        <p class="lede">Logs preserve decisions, tests and unresolved questions. They keep research inspectable after a prototype or project has moved on.</p>
+        <p class="lede">Logs preserve decisions, tests and unresolved questions, so useful learning remains visible after a prototype or project has moved on.</p>
       </div>
       <div class="card-grid card-grid--three">
         ${notes
@@ -21526,8 +21611,8 @@ window.EA_SEARCH = {
           .join("")}
       </div>
       <div class="link-row">
-        <a class="button button--secondary" href="./archive.html">Browse the complete archive</a>
-        <a class="tag" href="./search.html">Search all records</a>
+        <a class="button button--secondary" href="./archive.html">Browse the archive</a>
+        <a class="tag" href="./search.html">Search the site</a>
       </div>
     </section>
   `;
@@ -21538,7 +21623,7 @@ window.EA_SEARCH = {
       "archive",
       "ARCHIVE TAXONOMY",
       {
-        heading: "Archive as a library",
+        heading: "Archive as a working library",
         copy: "Filter by status, medium and discipline.",
       },
       [
@@ -22037,11 +22122,11 @@ window.EA_SEARCH = {
     if (item.id === "vestiges") {
       return {
         title: "Read this as living knowledge infrastructure.",
-        intro: "Vestiges is the flagship public application of VASTE: a platform where people, practices, materials, places and institutions become durable identities inside one historized graph.",
+        intro: "Vestiges is the flagship public application of VASTE: a platform where people, practices, materials, places and institutions can be preserved, connected and revisited over time.",
         why: "The product preserves paths of transmission while making knowledge discoverable, attributable and useful across public, cultural and professional contexts.",
-        inspect: ["The living knowledge graph", "The contribution and trust model", "The path from public discovery to professional utility"],
-        proof: `${countLabel(item.graphNodeTypes?.length || 0, "node category", "node categories")}, ${countLabel(item.relationshipTypes?.length || 0, "relationship type")} and a VASTE-powered architecture for identity, provenance and context.`,
-        next: "Follow the system from stable graph identity to contribution, public projection and professional activation.",
+        inspect: ["The living knowledge base", "The contribution and trust model", "The path from public discovery to professional utility"],
+        proof: `${countLabel(item.graphNodeTypes?.length || 0, "knowledge category", "knowledge categories")}, ${countLabel(item.relationshipTypes?.length || 0, "relation type")} and a VASTE-powered architecture for identity, provenance and context.`,
+        next: "Follow the project from stable identity to contribution, public presentation and professional activation.",
         cta: item.links?.[0] || { label: "Explore VASTE", href: "https://www.vaste.space/" },
       };
     }
@@ -22053,7 +22138,7 @@ window.EA_SEARCH = {
         why: "The central distinction is contractual and technical: UnionMob remains the external organisation, while UMOS remains Electronic Artefacts property and is made available through usage rights.",
         inspect: ["The project ownership and CTO role", "The official UnionMob identity and violet palette", "The separation between UnionMob and the licensed UMOS system"],
         proof: `${assetDocumentation} the supplied UnionMob identity, while the dossier records the CTO scope and software-rights model.`,
-        next: "Continue into the architecture to inspect the back-end, governance and operating-system contribution.",
+        next: "Continue into the architecture to understand the back-end, governance and operating-system contribution.",
         cta: item.links?.[0] || { label: "Explore Research", href: "./research.html" },
       };
     }
@@ -22063,7 +22148,7 @@ window.EA_SEARCH = {
         title: "Read this as an artistic dossier.",
         intro: `${item.title} connects release logic, image memory and archive structure. The page keeps the work legible as a cultural object first, then opens the world around it.`,
         why: "The important point is the translation: fragments become acts, references become a world, and the archive becomes part of the work rather than a footnote.",
-        inspect: ["The opening frame for mood and authorship", "The act structure for narrative order", "The lineage around the work"],
+        inspect: ["The opening frame for mood and authorship", "The act structure for narrative order", "The context around the work"],
         proof: `${visualSupport} the dossier, with ${relationPhrase} around it.`,
         next: "Move from the thesis into the visual plates, then follow the album back into the wider Electronic Artefacts world.",
         cta: item.kind === "project" ? { label: "Open Dossier", href: `./project-rl.html?id=${encodeURIComponent(item.id)}` } : { label: "Open Archive", href: "./archive.html" },
@@ -22088,7 +22173,7 @@ window.EA_SEARCH = {
         title: "Read this as an artist profile.",
         intro: profile.headline || `${item.title} is mapped through ${mediumPhrase} and connected work inside the Electronic Artefacts catalogue.`,
         why: profile.intro || "Artist pages give collaborators their own public context, then keep production work, credits and nearby projects connected underneath.",
-        inspect: ["The artist position", "The connected work", "The production or collaboration notes"],
+        inspect: ["The artist position", "The connected work", "The production and collaboration notes"],
         proof: `${status} status, ${galleryCount ? countLabel(galleryCount, "portrait asset") : "artist context"} and ${relationPhrase}.`,
         next: "Move from the profile into the connected project, or return to the work catalogue to compare the wider artistic line.",
         cta: item.links?.[0] || { label: "Open Work", href: "./work.html" },
@@ -22100,7 +22185,7 @@ window.EA_SEARCH = {
         title: "Read this as a project dossier.",
         intro: `${item.title} sits inside the studio as ${typeLabel.toLowerCase()}, shaped by ${mediumPhrase}.`,
         why: "The page explains what the project is, where it comes from and which surrounding systems make it meaningful.",
-        inspect: ["The public angle", "The visual material", "The lineage and nearby work"],
+        inspect: ["The public angle", "The visual material", "The nearby work"],
         proof: `${status} status, ${galleryCount ? countLabel(galleryCount, "media item") : "visual material"} and ${relationPhrase}.`,
         next: "Open the extended dossier for the deeper reading, or move into the archive for adjacent fragments.",
         cta: { label: "Open Dossier", href: `./project-rl.html?id=${encodeURIComponent(item.id)}` },
@@ -22112,7 +22197,7 @@ window.EA_SEARCH = {
         title: "Read this as an operating layer inside the ecosystem.",
         intro: `${item.title} explains a system role: ${item.domain || item.systemGroup || item.type || "program infrastructure"}.`,
         why: "Programs clarify how the studio thinks, builds and connects work behind the visible projects.",
-        inspect: ["The program profile for scope", "The system shape for operating context", "The network for dependencies and influence"],
+        inspect: ["The program scope", "The operating context", "The related projects and influences"],
         proof: `${status} status${dateLabel ? `, updated ${dateLabel}` : ""}, with ${relationPhrase}.`,
         next: "Follow the connected works to move from program logic into projects, research fields and archives.",
         cta: item.links?.[0] || { label: "View Programs", href: "./programs.html" },
@@ -22124,7 +22209,7 @@ window.EA_SEARCH = {
         title: "Read this as a fragment with context attached.",
         intro: `${item.title} is a trace inside the archive: ${item.summary || item.description || typeLabel}.`,
         why: "Archive entries are useful when they keep the fragment connected to projects, research fields and dates.",
-        inspect: ["The field label for subject matter", "The date and status for placement", "Nearby entries for what to open next"],
+        inspect: ["The subject matter", "The date and status", "Nearby entries for what to open next"],
         proof: `${item.date || dateLabel || status} placement, with ${relationPhrase}.`,
         next: "Follow the related entries when you want the larger project or research line around this fragment.",
         cta: { label: "Open Archive", href: "./archive.html" },
@@ -22135,7 +22220,7 @@ window.EA_SEARCH = {
         title: "Read this as a knowledge piece with a clear path outward.",
         intro: `${item.title} frames ${mediumPhrase} inside the Electronic Artefacts world.`,
       why: "The page gives the piece a public explanation first, then keeps the surrounding context available.",
-      inspect: ["The opening summary for meaning", "The signals for subject matter", "The relations for where it belongs"],
+      inspect: ["The opening summary", "The subject matter", "The related pages"],
       proof: `${status} status, ${relationPhrase}${dateLabel ? ` and ${dateLabel} temporal placement` : ""}.`,
       next: "Use the related works and collections to move through the archive without losing context.",
       cta: item.links?.[0] || { label: "Explore Research", href: "./research.html" },
@@ -22158,7 +22243,7 @@ window.EA_SEARCH = {
       <section class="detail-grid detail-editorial-grid" aria-label="${esc(item.title)} reading guide">
         <article class="panel detail-editorial-card detail-editorial-card--lead">
           <div class="section-head">
-          <p class="card__meta">Reading guide</p>
+          <p class="card__meta">Guide</p>
             <h2 class="card__title">${esc(copy.title)}</h2>
             <p class="lede">${esc(copy.intro)}</p>
           </div>
@@ -22169,7 +22254,7 @@ window.EA_SEARCH = {
           <p class="card__copy">${esc(copy.why)}</p>
         </article>
         <article class="panel detail-editorial-card">
-          <p class="card__meta">What to inspect</p>
+          <p class="card__meta">What to look at</p>
           <ul class="detail-editorial-list">
             ${copy.inspect.map((itemCopy) => `<li>${esc(itemCopy)}</li>`).join("")}
           </ul>
@@ -22194,9 +22279,9 @@ window.EA_SEARCH = {
     return `
       <section class="panel knowledge-panel knowledge-panel--intro">
         <div class="section-head">
-          <p class="card__meta">Dossier notes</p>
+          <p class="card__meta">Dossier frame</p>
           <h2 class="card__title">A compact frame around the work.</h2>
-          <p class="lede">Classification, dates and relationships stay visible so the piece can be read in context.</p>
+          <p class="lede">Status, dates and related material stay close so the piece can be read in context.</p>
         </div>
         <div class="detail-reference-strip">
           <span><strong>${esc(statusLabelFor(item))}</strong><em>Status</em></span>
@@ -22600,7 +22685,7 @@ window.EA_SEARCH = {
             <article class="panel panel--soft project-discipline__card">
               <p class="card__meta">Stack</p>
               <h3 class="card__title">${esc(stack.length ? countLabel(stack.length, "stack signal") : architecture.stack || item.program || "System stack")}</h3>
-              ${stack.length ? tagRow(stack, { compact: true, limit: 8 }) : `<p class="card__copy">${esc(architecture.stackCopy || "Stack details appear when the project record exposes them.")}</p>`}
+              ${stack.length ? tagRow(stack, { compact: true, limit: 8 }) : `<p class="card__copy">${esc(architecture.stackCopy || "Stack details appear when they are useful to the public dossier.")}</p>`}
             </article>
             <article class="panel panel--soft project-discipline__card">
               <p class="card__meta">Layers</p>
@@ -22613,7 +22698,7 @@ window.EA_SEARCH = {
               ${
                 related.length
                   ? `<div class="project-discipline__links">${related.map((entry) => `<a class="tag" href="${esc(entryHref(entry))}">${esc(entry.title)}</a>`).join("")}</div>`
-                  : `<p class="card__copy">Runtime dependencies and related programs are shown when the graph records them.</p>`
+                  : `<p class="card__copy">Runtime dependencies and related programs are shown when they are public.</p>`
               }
             </article>
           </div>
@@ -22964,19 +23049,19 @@ window.EA_SEARCH = {
         </div>`,
       ),
       panelShell(
-        "The living knowledge graph",
+        "The living knowledge base",
         "The system preserves both the entities and the paths through which knowledge moves.",
         `<div class="stack">
-          ${softPanel("Graph principle", "Every record keeps a durable identity", item.graphPrinciple || "")}
+          ${softPanel("Identity principle", "Every important element keeps a durable identity", item.graphPrinciple || "")}
           <div class="card-grid card-grid--two">
-            ${softPanel("Node families", `${item.graphNodeTypes?.length || 0} mapped families`, "People, organisations, techniques, materials, places, works and records can each become canonical knowledge surfaces.", chipList(item.graphNodeTypes, 12))}
+            ${softPanel("Knowledge families", `${item.graphNodeTypes?.length || 0} mapped families`, "People, organisations, techniques, materials, places and works can each become durable public surfaces.", chipList(item.graphNodeTypes, 12))}
             ${softPanel("Relationship vocabulary", `${item.relationshipTypes?.length || 0} explicit relations`, "Teaching, making, use, restoration, supply and certification reveal how know-how is transmitted.", chipList(item.relationshipTypes, 10))}
           </div>
         </div>`,
       ),
       panelShell(
         "Public discovery",
-        "Canonical pages and relation paths make the graph readable without separating publishing from the knowledge model.",
+        "Public pages and relation paths make the knowledge base readable without separating publishing from the model.",
         `<div class="stack">
           ${softPanel("Knowledge projection", "One canonical surface per node", item.seoModel || "")}
           ${chipList(["Public page", "Canonical URL", "Description", "Relations", "Media", "History", "Metadata"])}
@@ -22984,7 +23069,7 @@ window.EA_SEARCH = {
       ),
       panelShell(
         "Contribution and trust",
-        "Expertise can enter the graph from workshops, schools, museums and institutions without losing authorship or editorial responsibility.",
+        "Expertise can enter from workshops, schools, museums and institutions without losing authorship or editorial responsibility.",
         `<div class="stack">
           ${softPanel("Participants", `${item.stakeholders?.length || 0} initial actor groups`, "Vestiges connects professional, cultural, educational, institutional and private actors.", chipList(item.stakeholders))}
           ${softPanel("Collaboration", "Distributed knowledge with governance", "Contributions remain attributable, contextual, reviewable and connected to the same shared graph.", chipList(item.collaborationCapabilities))}
@@ -23001,7 +23086,7 @@ window.EA_SEARCH = {
         "Professional activation",
         "Services emerge from trusted knowledge and explicit relationships; they do not replace the platform's cultural purpose.",
         `<div class="stack">
-          ${softPanel("Service model", "Utility grows from the graph", "Professional workspaces, collaboration, learning, research and APIs can operate on top of the shared knowledge infrastructure.", chipList(item.economicModel))}
+          ${softPanel("Service model", "Utility grows from trusted knowledge", "Professional workspaces, collaboration, learning, research and APIs can operate on top of the shared knowledge infrastructure.", chipList(item.economicModel))}
         </div>`,
       ),
       panelShell(
@@ -23497,8 +23582,8 @@ window.EA_SEARCH = {
           ])}
         </article>
         <article class="panel program-detail-panel">
-          <p class="card__meta">Reading signals</p>
-          <p class="card__copy">Mediums, disciplines and tags explain how to compare this program with nearby systems.</p>
+          <p class="card__meta">Reading cues</p>
+          <p class="card__copy">Mediums, disciplines and tags help compare this program with nearby systems.</p>
           ${tagRow([...(item.tags || []), ...(item.medium || []), ...(item.discipline || [])].filter(Boolean), { compact: true })}
         </article>
         <article class="panel program-detail-panel">
@@ -23950,11 +24035,11 @@ window.EA_SEARCH = {
         <div class="section-head">
           <p class="eyebrow">CATALOG MATRIX</p>
           <h2>${esc(searchResultLabel(matchCount))}</h2>
-          <p class="lede">${esc(isFrench() ? `${items.length} entrées synthétiques affichées. Ouvrez un élément pour consulter la fiche complète.` : `Showing ${items.length} concise entries. Open an item for the complete record.`)}</p>
+          <p class="lede">${esc(isFrench() ? `${items.length} entrées synthétiques affichées. Ouvrez un élément pour consulter la page complète.` : `Showing ${items.length} concise entries. Open an item for the full page.`)}</p>
         </div>
         ${metricRail(
           [
-            { label: translate("MATCHES"), value: String(matchCount), note: translate("public records"), fill: metricFill(matchCount, totalCount), tone: "live" },
+            { label: translate("MATCHES"), value: String(matchCount), note: translate("public pages"), fill: metricFill(matchCount, totalCount), tone: "live" },
             { label: translate("SHOWN"), value: String(items.length), note: translate("current page"), fill: metricFill(items.length, Math.max(matchCount, 1)), tone: "visual" },
             { label: translate("TAGS"), value: String(tagCount), note: translate("visible labels"), fill: metricFill(tagCount, Math.max(tagCount, 1) * 2), tone: "archive" },
           ],
@@ -24213,8 +24298,8 @@ window.EA_SEARCH = {
   const renderHomeOrientation = () =>
     orientationSection({
       eyebrow: "ORIENTATION",
-      title: "Explore Electronic Artefacts",
-      copy: "Choose the layer that fits your intent. Projects, research, programs and archive are different entrances into the same ecosystem.",
+        title: "Explore Electronic Artefacts",
+        copy: "Choose the path that fits your intent. Projects, research, programs and archive are different ways into the work.",
       cards: [
         {
           kicker: "Projects",
@@ -24228,7 +24313,7 @@ window.EA_SEARCH = {
         {
           kicker: "Research",
           title: "Experimental investigations",
-          copy: "Follow the notes, theoretical branches and working questions that feed the rest of the system.",
+          copy: "Follow the notes, theoretical branches and working questions behind the work.",
           reason: "This is where the thinking behind the work becomes legible.",
           cta: "Enter Research",
           href: "./research.html",
@@ -24237,7 +24322,7 @@ window.EA_SEARCH = {
         {
           kicker: "Programs",
           title: "Software systems and engines",
-          copy: "Inspect the runtime logic, internal frameworks and production systems that hold the ecosystem together.",
+          copy: "Understand the software foundations and production systems that hold the work together.",
           reason: "This is the operational core of the project.",
           cta: "View Programs",
           href: "./programs.html",
@@ -24258,13 +24343,13 @@ window.EA_SEARCH = {
   const renderFeaturedPaths = () =>
     `${orientationSection({
       eyebrow: "FEATURED PATHS",
-      title: "Start from your real question.",
-      copy: "Choose the entry point that matches your intent before going deeper into the graph.",
+      title: "Choose what you need first.",
+      copy: "Start with the path that matches your intent: technology, delivery or cultural work.",
       cards: [
         {
           kicker: "Technology",
           title: "Understand the core runtime",
-          copy: "Open VASTE to inspect the strategic and technical foundation behind the wider family of systems.",
+          copy: "Open VASTE to understand the strategic and technical foundation behind the wider family of systems.",
           reason: "Best when architecture, scalability and the long-term platform thesis matter first.",
           cta: "Explore VASTE",
           href: "./vaste.html",
@@ -24272,7 +24357,7 @@ window.EA_SEARCH = {
         },
         {
           kicker: "Delivery",
-          title: "Inspect applied work and outcomes",
+          title: "See applied work and outcomes",
           copy: "See how strategy, interface, content and implementation hold together across commissions and public products.",
           reason: "Best when you need evidence of execution under concrete constraints.",
           cta: "See Client Work",
@@ -24282,7 +24367,7 @@ window.EA_SEARCH = {
         {
           kicker: "Culture",
           title: "Enter through Palimpsests",
-          copy: "Explore the musical and editorial surface where artistic production, memory and publication meet.",
+          copy: "Explore the musical and editorial space where artistic production, memory and publication meet.",
           reason: "Best when you want the cultural register before the technical system.",
           cta: "Enter Palimpsests",
           href: "./palimpsests.html",
@@ -24620,11 +24705,11 @@ window.EA_SEARCH = {
         meta: "R&D",
         title: "Research, automation and knowledge systems",
         copy:
-          "Prototype the less standard work: AI workflows, knowledge graphs, archives, internal tools and custom systems that connect content, people and process.",
+          "Prototype the less standard work: AI workflows, archives, internal tools and custom systems that connect content, people and process.",
         services: [
           "R&D scoping and technical prototypes",
           "AI assistants, workflows and tool integrations",
-          "Knowledge graphs, archives and semantic models",
+          "Knowledge systems, archives and semantic models",
           "Custom dashboards and internal operating tools",
           "Data cleanup, enrichment and migration",
           "Documentation, handoff and team enablement",
@@ -24733,12 +24818,12 @@ window.EA_SEARCH = {
         <article class="stat-card">
           <p class="card__meta">Evidence</p>
           <strong>Live or documented</strong>
-          <span>Case pages expose public screens, operational views, dossiers, media and performance signals when available.</span>
+          <span>Case pages show public screens, operational views, dossiers, media and performance evidence when available.</span>
         </article>
         <article class="stat-card">
           <p class="card__meta">Handoff</p>
           <strong>Reusable system</strong>
-          <span>The expected output is a maintained surface, workflow, repository or decision record, not a loose visual concept.</span>
+          <span>The expected output is a maintained surface, workflow, repository or documented decision, not a loose visual concept.</span>
         </article>
       </div>
       <div class="button-row">
@@ -24797,7 +24882,7 @@ window.EA_SEARCH = {
           ${deliverables.length ? `<ul class="program-offer-card__list">${deliverables.map((entry) => `<li>${esc(entry)}</li>`).join("")}</ul>` : ""}
           ${classificationItems.length ? `<div class="tag-cluster tag-cluster--compact program-registry-card__chips">${classificationItems.map((entry) => chip(entry)).join("")}</div>` : ""}
           <div class="link-row">
-            <a class="tag" href="${esc(recordHref)}"${linkAttrs(recordHref)}>Open record</a>
+            <a class="tag" href="${esc(recordHref)}"${linkAttrs(recordHref)}>View program</a>
             <a class="tag" href="${esc(accessHref)}">Request repo access</a>
             ${options.official ? `<a class="tag" href="${esc(options.official)}" target="_blank" rel="noreferrer">Official site</a>` : ""}
           </div>
@@ -24978,7 +25063,7 @@ window.EA_SEARCH = {
       {
         title: "VASTE",
         role: "Runtime, identity and knowledge infrastructure",
-        copy: "The core program coordinates graph execution, identity, permissions, context and long-lived knowledge structures.",
+        copy: "The core program coordinates identity, permissions, context and long-lived knowledge structures.",
         nodes: ["Knowledge Systems", "Identity Systems", "Simulation Systems", "Runtime Research"],
         exchanges: ["Powers Vestiges", "Frames repository access", "Feeds implementation work"],
         href: "https://www.vaste.space/",
@@ -25018,7 +25103,7 @@ window.EA_SEARCH = {
         title: "TypeScript",
         mark: "TS",
         role: "Runtimes, interfaces and connected product systems",
-        copy: "Used where shared models, graph-shaped data, interactive product surfaces and repository-level contracts need to evolve together.",
+        copy: "Used where shared models, connected data, interactive product surfaces and repository-level contracts need to evolve together.",
         strengths: ["Typed models", "Web runtime", "Shared contracts"],
         systems: [
           { label: "VASTE", href: "https://www.vaste.space/" },
@@ -25063,7 +25148,7 @@ window.EA_SEARCH = {
     const selectionGuide = [
       {
         title: "Need a runtime",
-        copy: "Start with VASTE when the problem is graph structure, identity, permissions, contextual execution or knowledge infrastructure.",
+        copy: "Start with VASTE when the problem is identity, permissions, contextual execution or knowledge infrastructure.",
       },
       {
         title: "Need production pipelines",

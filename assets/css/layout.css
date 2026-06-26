@@ -357,7 +357,9 @@ section[data-render] {
 .catalog-stack,
 .relationship-graph,
 .taxonomy-panel,
-.footer-stack {
+.footer-stack,
+.footer-main,
+.footer-signature {
   display: grid;
 }
 
@@ -412,18 +414,28 @@ section[data-render] {
   margin-top: 0.65rem;
 }
 
+.footer-main {
+  gap: 0.95rem;
+  min-width: min(100%, 34rem);
+  flex: 1 1 34rem;
+}
+
 .footer-stack {
   gap: 0.35rem;
   width: fit-content;
   max-width: 100%;
 }
 
+.footer-stack--brand {
+  max-width: 38rem;
+}
+
 .shell-footer.zone-card {
-  display: flex;
-  flex-wrap: wrap;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(min(100%, 18rem), 0.36fr);
   align-items: flex-start;
   justify-content: space-between;
-  gap: 1rem;
+  gap: clamp(1rem, 2.4vw, 2rem);
 }
 
 body.is-header-hidden .shell-header.zone-card {
@@ -432,7 +444,8 @@ body.is-header-hidden .shell-header.zone-card {
   pointer-events: none;
 }
 
-.footer-stack--right {
+.footer-stack--right,
+.footer-signature {
   justify-items: end;
   text-align: right;
 }

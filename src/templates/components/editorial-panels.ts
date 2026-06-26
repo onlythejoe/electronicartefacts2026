@@ -89,14 +89,14 @@ const panel = (eyebrow: string, title: string, body: string): string =>
     : "";
 
 const conceptPanels = (entity: ConceptEntity): string[] => [
-  panel("Definition scope", "What this concept includes", renderList(entity.scope)),
-  panel("Editorial claims", "Position maintained by Electronic Artefacts", renderList(entity.claims)),
-  panel("Boundaries", "What this concept excludes", renderList(entity.exclusions)),
+  panel("Scope", "What this covers", renderList(entity.scope)),
+  panel("Position", "What Electronic Artefacts keeps from it", renderList(entity.claims)),
+  panel("Limits", "What stays outside the frame", renderList(entity.exclusions)),
 ];
 
 const technologyPanels = (entity: TechnologyEntity): string[] => [
   panel("Technology role", "Why this technology matters here", `<p class="card__copy">${escapeHtml(entity.roleInEcosystem)}</p>`),
-  panel("Reference profile", "Category, versions and official source", `
+  panel("Reference", "Category, versions and official source", `
     <dl class="metadata-list">
       <div><dt>Category</dt><dd>${escapeHtml(labelFrom(entity.category))}</dd></div>
       ${entity.versions?.length ? `<div><dt>Versions</dt><dd>${escapeHtml(entity.versions.join(", "))}</dd></div>` : ""}
@@ -105,15 +105,15 @@ const technologyPanels = (entity: TechnologyEntity): string[] => [
 ];
 
 const programPanels = (entity: ProgramEntity): string[] => [
-  panel("Program mandate", "What the program is responsible for", `<p class="card__copy">${escapeHtml(entity.mandate)}</p>`),
-  panel("Capabilities", "Reusable operating surface", renderList(entity.capabilities)),
-  panel("Architecture", "Current system layers", renderList(entity.architecture)),
-  panel("Lifecycle", "Program lineage", renderList(entity.lifecycle)),
+  panel("Purpose", "What this program is built to handle", `<p class="card__copy">${escapeHtml(entity.mandate)}</p>`),
+  panel("Capabilities", "What it can support", renderList(entity.capabilities)),
+  panel("Architecture", "How it is organized", renderList(entity.architecture)),
+  panel("Lifecycle", "How the program evolves", renderList(entity.lifecycle)),
 ];
 
 const researchFieldPanels = (entity: ResearchFieldEntity): string[] => [
-  panel("Research questions", "Questions tracked by this field", renderList(entity.questions.map((item) => `${item.question} (${item.status})`))),
-  panel("Field scope", "What the research field covers", renderList(entity.scope)),
+  panel("Questions", "What this field is trying to clarify", renderList(entity.questions.map((item) => `${item.question} (${item.status})`))),
+  panel("Scope", "What this field covers", renderList(entity.scope)),
   panel("Findings", "Current findings and open questions", renderList([...(entity.findings || []), ...(entity.openQuestions || [])])),
 ];
 
@@ -122,16 +122,16 @@ const collectionPanels = (
   byId: Map<string, Entity>,
   routeById: Record<string, string>,
 ): string[] => [
-  panel("Collection thesis", "Why these records belong together", `<p class="card__copy">${escapeHtml(entity.thesis)}</p>`),
-  panel("Selection note", "Editorial inclusion logic", `<p class="card__copy">${escapeHtml(entity.selectionNote)}</p>`),
-  panel("Members", "Canonical records in this collection", renderRefs(entity.explicitMembers, byId, routeById)),
+  panel("Collection thesis", "Why these pages belong together", `<p class="card__copy">${escapeHtml(entity.thesis)}</p>`),
+  panel("Selection note", "Why this selection matters", `<p class="card__copy">${escapeHtml(entity.selectionNote)}</p>`),
+  panel("Included pages", "Articles and notions in this collection", renderRefs(entity.explicitMembers, byId, routeById)),
 ];
 
 const methodPanels = (entity: MethodEntity): string[] => [
   panel("Method purpose", "When this method is useful", `<p class="card__copy">${escapeHtml(entity.purpose)}</p>${renderList(entity.useWhen)}`),
-  panel("Inputs and outputs", "Operational requirements", `${renderTags([...entity.inputs, ...entity.outputs])}`),
+  panel("Inputs and outputs", "What the method needs and produces", `${renderTags([...entity.inputs, ...entity.outputs])}`),
   panel("Steps", "Repeatable procedure", renderList(entity.steps.map((step) => `${step.order}. ${step.title}: ${step.description}`))),
-  panel("Limitations", "Where the method should be constrained", renderList(entity.limitations)),
+  panel("Limitations", "Where the method has limits", renderList(entity.limitations)),
 ];
 
 const frameworkPanels = (
@@ -146,7 +146,7 @@ const frameworkPanels = (
 
 const generalPanels = (entity: Entity): string[] => [
   panel("Topics", "Tags and disciplines", renderTags([...(entity.tags || []), ...(entity.disciplines || [])])),
-  panel("Source trail", "References declared for this record", renderSourceList(entity.sources)),
+  panel("Sources", "References behind this page", renderSourceList(entity.sources)),
 ];
 
 export const renderEditorialPanels = (
@@ -170,9 +170,9 @@ export const renderEditorialPanels = (
   return `
     <section class="zone-card hero">
       <div class="section-head">
-        <p class="eyebrow">EDITORIAL SIGNALS</p>
-        <h2>Definitions, evidence and graph context.</h2>
-        <p class="lede">This section exposes the structured editorial fields behind the record so readers, crawlers and retrieval systems can evaluate scope, sources and relationships.</p>
+        <p class="eyebrow">REPÈRES</p>
+        <h2>Definition, sources and useful limits.</h2>
+        <p class="lede">Start here for the practical frame: what the page covers, what it leaves aside and which references support it.</p>
       </div>
       <div class="card-grid card-grid--two">
         ${panels.join("")}

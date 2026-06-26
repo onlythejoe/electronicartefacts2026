@@ -81,9 +81,10 @@
     "publication": 80,
     "concept": 72,
     "technology": 36,
+    "framework": 2,
     "collection": 8
   },
-  "lastModified": "2026-06-25",
+  "lastModified": "2026-06-26",
   "records": [
     {
       "id": "ea:organization:electronic-artefacts-fr",
@@ -5256,6 +5257,63 @@
       "confidence": "canonical",
       "publishedAt": "2026-06-24",
       "modifiedAt": "2026-06-24"
+    },
+    {
+      "id": "ea:framework:electronic-artefacts-lightweight-template-fr",
+      "locale": "fr",
+      "translationOf": "ea:framework:electronic-artefacts-lightweight-template",
+      "type": "framework",
+      "title": "Electronic Artefacts Lightweight Template",
+      "summary": "Framework léger en HTML, CSS et JavaScript utilisé par Electronic Artefacts pour composer des prototypes, des vitrines publiques et de petites interfaces de production.",
+      "url": "https://electronicartefacts.com/fr/knowledge/frameworks/electronic-artefacts-lightweight-template/",
+      "route": "/fr/knowledge/frameworks/electronic-artefacts-lightweight-template/",
+      "identifier": "https://electronicartefacts.com/fr/id/framework/electronic-artefacts-lightweight-template/",
+      "jsonLd": "https://electronicartefacts.com/fr/id/framework/electronic-artefacts-lightweight-template/index.jsonld",
+      "tags": [
+        "Electronic Artefacts Lightweight Template",
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Site statique",
+        "Amélioration progressive",
+        "Framework front-end",
+        "Développement web",
+        "Design Technology",
+        "Technologies créatives",
+        "Systèmes de connaissance"
+      ],
+      "status": "active",
+      "confidence": "published",
+      "publishedAt": "2026-06-26",
+      "modifiedAt": "2026-06-26"
+    },
+    {
+      "id": "ea:framework:electronic-artefacts-lightweight-template",
+      "locale": "en",
+      "type": "framework",
+      "title": "Electronic Artefacts Lightweight Template",
+      "summary": "A lightweight vanilla HTML, CSS and JavaScript framework used by Electronic Artefacts for fast prototyping, public showcases and small production surfaces.",
+      "url": "https://electronicartefacts.com/knowledge/frameworks/electronic-artefacts-lightweight-template/",
+      "route": "/knowledge/frameworks/electronic-artefacts-lightweight-template/",
+      "identifier": "https://electronicartefacts.com/id/framework/electronic-artefacts-lightweight-template/",
+      "jsonLd": "https://electronicartefacts.com/id/framework/electronic-artefacts-lightweight-template/index.jsonld",
+      "tags": [
+        "Electronic Artefacts Lightweight Template",
+        "HTML",
+        "CSS",
+        "JavaScript",
+        "Static Site",
+        "Progressive Enhancement",
+        "Front-end Framework",
+        "Web Development",
+        "Design Technology",
+        "Creative Technology",
+        "Knowledge Systems"
+      ],
+      "status": "active",
+      "confidence": "published",
+      "publishedAt": "2026-06-26",
+      "modifiedAt": "2026-06-26"
     },
     {
       "id": "ea:collection:knowledge-hub-foundations-fr",

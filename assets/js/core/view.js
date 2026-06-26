@@ -771,7 +771,7 @@
     if (!item) return [];
     if (item.id === "oeil-de-meg") return ["Photography CRM", "Portfolio", "Live site", "WordPress"];
     if (item.id === "palimpsests") return ["Album cycle", "ORETH", "Five acts", "Archive"];
-    if (item.id === "vestiges") return ["Living knowledge", "VASTE runtime", "Cultural graph", "Public infrastructure"];
+    if (item.id === "vestiges") return ["Living knowledge", "VASTE", "Cultural memory", "Public infrastructure"];
     if (item.id === "unionmob") return ["External project", "CTO", "UMOS licence", "Violet identity"];
 
     const pills = [
@@ -786,13 +786,13 @@
 
   const projectReadAs = (item) => {
     if (!item) return "";
-    if (item.id === "palimpsests") return "Read as the artistic anchor: an album cycle, archive surface and ORETH world.";
-    if (item.id === "oeil-de-meg") return "Read as delivery proof: a live photography portfolio, CRM logic and performance dossier.";
-    if (item.id === "vestiges") return "Read as living knowledge infrastructure: a VASTE-powered graph connecting people, practices, materials and institutions.";
-    if (item.id === "unionmob") return "Read as an external CTO partnership: UnionMob belongs to Zarah Nkounkou; UMOS remains owned by Electronic Artefacts.";
-    if (item.category === "Client Work" || item.category === "External Work") return "Read as applied work: public-facing UX, visual evidence and delivery context.";
-    if (item.category === "Platform" || item.type === "Platform") return "Read as a system surface: product structure, workflow and operational logic.";
-    return `Read as ${item.category || item.type || "a project"} inside the Electronic Artefacts world.`;
+    if (item.id === "palimpsests") return "Album cycle, archive surface and ORETH world.";
+    if (item.id === "oeil-de-meg") return "Live photography portfolio with CRM logic and performance evidence.";
+    if (item.id === "vestiges") return "Platform for connecting people, practices, materials and institutions.";
+    if (item.id === "unionmob") return "External CTO partnership with a clear separation between UnionMob and UMOS.";
+    if (item.category === "Client Work" || item.category === "External Work") return "Applied work with public-facing UX, visual evidence and delivery context.";
+    if (item.category === "Platform" || item.type === "Platform") return "Product structure, workflow and operational logic.";
+    return `${item.category || item.type || "Project"} inside the Electronic Artefacts world.`;
   };
 
   const projectCard = (item) => `
@@ -842,7 +842,7 @@
       <p class="project-card__editorial-note">${esc(projectReadAs(item))}</p>
       ${signalStrip(item)}
       ${tagRow(homeCardPills(item), { limit: 4, compact: true })}
-      ${linkRow({ label: "Open project", href })}
+      ${linkRow({ label: "View project", href })}
     </article>
   `;
   };
@@ -886,7 +886,7 @@
         <p class="project-card__editorial-note">${esc(projectReadAs(item))}</p>
         ${signalStrip(item)}
         ${tagRow(homeCardPills(item), { limit: featured ? 4 : 2, compact: true })}
-        ${featured ? linkRow({ label: "Open project", href }, [{ label: "Work archive", href: "./work.html" }]) : ""}
+        ${featured ? linkRow({ label: "View project", href }, [{ label: "More work", href: "./work.html" }]) : ""}
       </article>
     `;
   };
@@ -1168,8 +1168,8 @@
           copy: "Album cycle carried by ORETH. A single full surface, no nested panels.",
           tags: homeCardPills(palimpsests),
           actions: [
-            { label: "Enter Palimpsests", href: "./palimpsests.html" },
-            { label: "Open Archive", href: "./archive.html" },
+            { label: "Discover Palimpsests", href: "./palimpsests.html" },
+            { label: "Browse archive", href: "./archive.html" },
             { label: "Start a Collaboration", href: "./contact.html" },
           ],
         })}
@@ -1182,7 +1182,7 @@
       <div class="section-head">
         <p class="eyebrow">PROOF FIRST</p>
         <h2>One runtime foundation.</h2>
-        <p class="lede">Open the system line that explains how the studio thinks and builds.</p>
+        <p class="lede">Understand the technical line behind how the studio thinks and builds.</p>
       </div>
       <div class="latests-grid latests-grid--cinematic">
         ${(() => {
@@ -1208,7 +1208,7 @@
             <div class="vast-banner__content">
               <p class="card__meta">RUNTIME FOUNDATION</p>
               <h3 class="vast-banner__title">VASTE</h3>
-              <p class="vast-banner__copy">Open the proprietary program behind the graph, identity and knowledge-system work.</p>
+              <p class="vast-banner__copy">Open the proprietary program behind the identity and knowledge-system work.</p>
               <div class="pill-cloud vast-banner__chips" aria-label="VASTE attributes">
                 <span class="chip">Runtime</span>
                 <span class="chip">Graph systems</span>
@@ -1218,7 +1218,7 @@
             ${vasteEngineMarkup()}
             <div class="button-row button-row--compact vast-banner__actions">
               <a class="button button--primary" href="https://www.vaste.space/" target="_blank" rel="noreferrer">Explore VASTE</a>
-              <a class="button button--secondary" href="./research.html">Enter Research</a>
+              <a class="button button--secondary" href="./research.html">Explore Research</a>
             </div>
           </div>
         </article>
@@ -1258,7 +1258,7 @@
               ],
               { limit: 2, compact: true },
             )}
-            ${linkRow({ label: "Browse Projects", href: "./projects.html" }, [{ label: "Browse Work Archive", href: "./work.html" }])}
+            ${linkRow({ label: "Browse Projects", href: "./projects.html" }, [{ label: "See More Work", href: "./work.html" }])}
           </aside>
         </div>
         <div class="selected-works-panel__grid" role="list" aria-label="Selected works">
@@ -1275,7 +1275,7 @@
         </div>
         <div class="link-row selected-works-panel__links">
           <a class="tag" href="./projects.html">Browse Projects</a>
-          <a class="tag" href="./work.html">Browse Work Archive</a>
+          <a class="tag" href="./work.html">See More Work</a>
         </div>
       </section>
     `;

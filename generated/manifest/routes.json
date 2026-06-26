@@ -480,6 +480,12 @@
     "identifier": "/fr/id/concept/web-audio/"
   },
   {
+    "id": "ea:framework:electronic-artefacts-lightweight-template-fr",
+    "locale": "fr",
+    "route": "/fr/knowledge/frameworks/electronic-artefacts-lightweight-template/",
+    "identifier": "/fr/id/framework/electronic-artefacts-lightweight-template/"
+  },
+  {
     "id": "ea:organization:electronic-artefacts-fr",
     "locale": "fr",
     "route": "/fr/organizations/electronic-artefacts/",
@@ -862,6 +868,12 @@
     "locale": "fr",
     "route": "/fr/knowledge/technologies/webnn/",
     "identifier": "/fr/id/technology/webnn/"
+  },
+  {
+    "id": "ea:framework:electronic-artefacts-lightweight-template",
+    "locale": "en",
+    "route": "/knowledge/frameworks/electronic-artefacts-lightweight-template/",
+    "identifier": "/id/framework/electronic-artefacts-lightweight-template/"
   },
   {
     "id": "ea:organization:electronic-artefacts",

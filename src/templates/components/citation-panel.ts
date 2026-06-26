@@ -8,8 +8,8 @@ export const renderCitationPanel = (entity: Entity, canonicalUrl: string): strin
   return `
     <section class="panel knowledge-panel">
       <div class="section-head">
-        <p class="card__meta">Citation</p>
-        <h2 class="card__title">How to cite this record</h2>
+        <p class="card__meta">Reference</p>
+        <h2 class="card__title">Cite this page</h2>
       </div>
       <p class="card__copy">${escapeHtml(preferred)}</p>
       <div class="link-row"><a class="tag" href="${escapeHtml(canonicalUrl)}">Canonical URL</a></div>
