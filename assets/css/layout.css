@@ -160,6 +160,23 @@ section[data-render] {
   padding-inline: var(--scroll-rail-padding);
 }
 
+.work-offer .work-qualification + .button-row {
+  margin-top: clamp(1.15rem, 2.4vw, 1.8rem);
+}
+
+.work-offer > .card-grid--three + .work-qualification {
+  margin-top: clamp(1.15rem, 2.4vw, 1.8rem);
+}
+
+.project-card > .metric-rail .metric-pill--visual,
+.project-card > .metric-rail .metric-pill--archive {
+  display: none;
+}
+
+.projects-hero .intent-hero__stats {
+  display: none;
+}
+
 .project-card .tag-cluster,
 .program-card .tag-cluster,
 .archive-card .tag-cluster,

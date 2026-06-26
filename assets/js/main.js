@@ -52,6 +52,10 @@
   const timelineIndex = indexes.timelinesByEntityId || {};
   const activityIndex = indexes.activityByEntityId || {};
   const contactEmail = "electronic.artefacts@gmail.com";
+  const isFrench = () => window.EA_I18N?.locale === "fr";
+  const translate = (value) => window.EA_I18N?.translateText?.(value) || value;
+  const countEntries = (count) => isFrench() ? `${count} ${count > 1 ? "entrées" : "entrée"}` : `${count} ${count === 1 ? "entry" : "entries"}`;
+  const searchResultLabel = (count) => isFrench() ? `${count} ${count > 1 ? "résultats" : "résultat"}` : `${count} ${count === 1 ? "result" : "results"}`;
   const mailto = (subject, body = "") =>
     `mailto:${contactEmail}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
   const programAccessMailto = mailto(
@@ -434,7 +438,7 @@
                 <section class="archive-section">
                   <div class="section-head">
                     <h3>${esc(category)}</h3>
-                    <p class="lede">${esc(items.length)} entries</p>
+                    <p class="lede">${esc(countEntries(items.length))}</p>
                   </div>
                   <div class="archive-rail-shell">
                     <div class="archive-rail">
@@ -2706,14 +2710,14 @@
       <section class="zone-card hero catalog-overview">
         <div class="section-head">
           <p class="eyebrow">CATALOG MATRIX</p>
-          <h2>${esc(matchCount)} ${matchCount === 1 ? "result" : "results"}</h2>
-          <p class="lede">Showing ${esc(items.length)} concise entries. Open an item for the complete record.</p>
+          <h2>${esc(searchResultLabel(matchCount))}</h2>
+          <p class="lede">${esc(isFrench() ? `${items.length} entrées synthétiques affichées. Ouvrez un élément pour consulter la fiche complète.` : `Showing ${items.length} concise entries. Open an item for the complete record.`)}</p>
         </div>
         ${metricRail(
           [
-            { label: "MATCHES", value: String(matchCount), note: "public records", fill: metricFill(matchCount, totalCount), tone: "live" },
-            { label: "SHOWN", value: String(items.length), note: "current page", fill: metricFill(items.length, Math.max(matchCount, 1)), tone: "visual" },
-            { label: "TAGS", value: String(tagCount), note: "visible labels", fill: metricFill(tagCount, Math.max(tagCount, 1) * 2), tone: "archive" },
+            { label: translate("MATCHES"), value: String(matchCount), note: translate("public records"), fill: metricFill(matchCount, totalCount), tone: "live" },
+            { label: translate("SHOWN"), value: String(items.length), note: translate("current page"), fill: metricFill(items.length, Math.max(matchCount, 1)), tone: "visual" },
+            { label: translate("TAGS"), value: String(tagCount), note: translate("visible labels"), fill: metricFill(tagCount, Math.max(tagCount, 1) * 2), tone: "archive" },
           ],
           { limit: 3, compact: true },
         )}
@@ -4093,29 +4097,6 @@
         ].filter(Boolean),
       },
     ].filter((group) => group.items.length);
-    const projectPathways = [
-      {
-        kicker: "For the artistic line",
-        title: "Enter Palimpsests first.",
-        copy: "It is the clearest path into ORETH, memory, traces and the label layer.",
-        href: "./palimpsests.html",
-        cta: "Open Palimpsests",
-      },
-      {
-        kicker: "For proof of delivery",
-        title: "Compare the applied surfaces.",
-        copy: "Client work and product-shaped systems show how the studio handles public pages, visual evidence and workflow.",
-        href: "./work.html",
-        cta: "See Client Work",
-      },
-      {
-        kicker: "For the system behind it",
-        title: "Move into programs and research.",
-        copy: "VASTE, Forge and the wider research field explain the operating model beneath the visible projects.",
-        href: "./programs.html",
-        cta: "View Programs",
-      },
-    ];
     const indexedGroups = grouped.map((group, index) => {
       const key = slugify(group.label) || `group-${index + 1}`;
       const categories = [
@@ -4157,38 +4138,7 @@
               <img src="./assets/media/projects/oeil-de-meg/oeil-de-meg-pagespeed-desktop.png" alt="L’Œil de Meg PageSpeed desktop report" loading="lazy" />
               <figcaption><span>Delivery proof</span><strong>L’Œil de Meg</strong></figcaption>
             </a>
-            ${intentHeroStats(
-              [
-                { value: "03", label: "output modes" },
-                { value: String(publicProjectCount).padStart(2, "0"), label: "public projects" },
-                { value: "LIVE", label: "active delivery" },
-              ],
-              "Project statistics",
-            )}
           </div>
-        </div>
-      </section>
-      <section class="zone-card hero project-pathways-panel">
-        <div class="section-head">
-          <p class="eyebrow">HOW TO READ THIS PAGE</p>
-          <h2>Choose the path that matches your intent.</h2>
-          <p class="lede">The same body of work can be read as art, delivery proof or systems research. These three paths make that choice explicit.</p>
-        </div>
-        <div class="card-grid card-grid--three project-pathways-grid">
-          ${projectPathways
-            .map(
-              (item) => `
-                <article class="panel panel--soft project-pathway-card">
-                  <p class="card__meta">${esc(item.kicker)}</p>
-                  <h3 class="card__title">${esc(item.title)}</h3>
-                  <p class="card__copy">${esc(item.copy)}</p>
-                  <div class="link-row">
-                    <a class="tag" href="${esc(item.href)}">${esc(item.cta)}</a>
-                  </div>
-                </article>
-              `,
-            )
-            .join("")}
         </div>
       </section>
       ${pageLens("projects")}

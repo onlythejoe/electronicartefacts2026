@@ -1,5 +1,7 @@
 (function () {
   const esc = window.EA_UTILS?.esc || ((value) => String(value ?? ""));
+  const isFrench = () => window.EA_I18N?.locale === "fr";
+  const translate = (value) => window.EA_I18N?.translateText?.(value) || value;
   const slugify = window.EA_UTILS?.slugify || ((value) =>
     String(value ?? "")
       .toLowerCase()
@@ -185,7 +187,7 @@
       const summary = section.querySelector(".filter-summary");
       if (!scope || !summary) return;
       const count = summary.querySelector("[data-filter-count]");
-      if (count) count.textContent = `${visible} visible`;
+      if (count) count.textContent = isFrench() ? `${visible} visibles` : `${visible} visible`;
       const active = Object.values(filterState.get(scope) || {}).some((value) => value && value !== "all");
       summary.classList.toggle("has-active-filters", active);
       const tray = summary.querySelector("[data-active-filter-tray]");
@@ -800,10 +802,10 @@
       summary.className = "filter-summary";
       summary.innerHTML = `
         <div class="filter-summary__status">
-          <span data-filter-count>0 visible</span>
+          <span data-filter-count>${isFrench() ? "0 visibles" : "0 visible"}</span>
           <div class="active-filter-tray" data-active-filter-tray></div>
         </div>
-        <button class="filter-reset" type="button" data-filter-reset>Reset filters</button>
+        <button class="filter-reset" type="button" data-filter-reset>${esc(translate("Reset filters"))}</button>
       `;
       const drawer = section.querySelector("[data-taxonomy-drawer]");
       const insertBefore = drawer || section.querySelector(".taxonomy-grid") || section.firstElementChild;
@@ -884,7 +886,7 @@
     button.type = "button";
     button.setAttribute("aria-label", "Open quick navigation");
     button.setAttribute("title", "Open quick navigation");
-    button.innerHTML = "<span>Search</span><kbd>⌘K</kbd>";
+    button.innerHTML = `<span>${esc(translate("Search"))}</span><kbd>⌘K</kbd>`;
 
     const palette = document.createElement("div");
     palette.className = "command-palette";
@@ -892,11 +894,11 @@
     palette.setAttribute("data-command-palette", "");
     palette.innerHTML = `
       <div class="command-palette__backdrop" data-command-close></div>
-      <section class="command-palette__panel" role="dialog" aria-modal="true" aria-label="Quick navigation">
+      <section class="command-palette__panel" role="dialog" aria-modal="true" aria-label="${esc(translate("Quick navigation"))}">
         <div class="command-palette__search">
           <span aria-hidden="true">⌕</span>
-          <input type="search" placeholder="Search pages, projects and programs..." data-command-input />
-          <button type="button" data-command-close aria-label="Close quick navigation">Esc</button>
+          <input type="search" placeholder="${esc(translate("Search pages, projects and programs..."))}" data-command-input />
+          <button type="button" data-command-close aria-label="${esc(translate("Close quick navigation"))}">Esc</button>
         </div>
         <div class="command-palette__results" data-command-results></div>
       </section>

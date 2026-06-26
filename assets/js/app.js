@@ -15649,6 +15649,9 @@ window.EA_SEARCH = {
   const activity = window.EA_ACTIVITY || [];
   const collections = window.EA_COLLECTIONS || [];
   const publicCatalog = window.EA_PUBLIC_CATALOG || {};
+  const pageLocale = document.documentElement.lang === "fr" || window.location.pathname.startsWith("/fr/")
+    ? "fr"
+    : "en";
   const normalizeTitle = (value) =>
     String(value ?? "")
       .toLowerCase()
@@ -15656,6 +15659,38 @@ window.EA_SEARCH = {
       .replace(/[^a-z0-9]+/g, "-")
       .replace(/^-+|-+$/g, "");
   const isPublic = (item) => !["internal", "restricted"].includes(item?.visibility);
+
+  const catalogEntities = Array.isArray(publicCatalog.entities) ? publicCatalog.entities : [];
+  const catalogById = Object.fromEntries(catalogEntities.map((item) => [item.id, item]));
+  const catalogByLegacyId = Object.fromEntries(catalogEntities.filter((item) => item.legacyId).map((item) => [item.legacyId, item]));
+  const translatedBySourceId = catalogEntities.reduce((acc, item) => {
+    if (item.locale === pageLocale && item.translationOf) acc[item.translationOf] = item;
+    return acc;
+  }, {});
+
+  const localizedCatalogRecordFor = (item) => {
+    if (pageLocale === "en" || !item?.id) return null;
+    const source = catalogByLegacyId[item.id] || catalogById[item.id];
+    return translatedBySourceId[source?.id] || null;
+  };
+
+  const localizeEntity = (item) => {
+    const localized = localizedCatalogRecordFor(item);
+    if (!localized) return item;
+    return {
+      ...item,
+      title: localized.title || item.title,
+      subtitle: localized.subtitle || item.subtitle,
+      summary: localized.summary || item.summary,
+      description: localized.description || item.description,
+      tags: localized.tags?.length ? localized.tags : item.tags,
+      discipline: localized.discipline?.length ? localized.discipline : item.discipline,
+      route: localized.route || item.route,
+      locale: localized.locale,
+      canonicalId: localized.translationOf || item.canonicalId,
+      localizedId: localized.id,
+    };
+  };
 
   const flattenEntities = () =>
     [
@@ -15676,6 +15711,7 @@ window.EA_SEARCH = {
       })),
     ]
       .filter(isPublic)
+      .map(localizeEntity)
       .map((item) => ({
       ...item,
       titleSlug: normalizeTitle(item.title),
@@ -15722,9 +15758,22 @@ window.EA_SEARCH = {
     getSearchIndex,
   };
   const routeById = { ...(publicCatalog.routes || {}) };
-  (publicCatalog.entities || []).forEach((item) => {
+  catalogEntities.forEach((item) => {
     if (item.legacyId && item.route) routeById[item.legacyId] = item.route;
   });
+  if (pageLocale !== "en") {
+    catalogEntities
+      .filter((item) => item.locale === pageLocale && item.route)
+      .forEach((item) => {
+        routeById[item.id] = item.route;
+        if (item.legacyId) routeById[item.legacyId] = item.route;
+        const source = item.translationOf ? catalogById[item.translationOf] : null;
+        if (source) {
+          routeById[source.id] = item.route;
+          if (source.legacyId) routeById[source.legacyId] = item.route;
+        }
+      });
+  }
   const routeFor = (itemOrId) => {
     const id = typeof itemOrId === "string" ? itemOrId : itemOrId?.id;
     if (!id) return "";
@@ -16346,6 +16395,128 @@ window.EA_SEARCH = {
     "This part of the page could not be displayed for the moment.": "Cette partie de la page ne peut pas être affichée pour le moment.",
     "Notice": "Information",
     "Please continue with the rest of the page.": "Vous pouvez poursuivre avec le reste de la page.",
+    "Quick navigation": "Navigation rapide",
+    "Close quick navigation": "Fermer la navigation rapide",
+    "Search pages, projects and programs...": "Rechercher pages, projets et programmes…",
+    "Reset filters": "Réinitialiser les filtres",
+    "Nothing matched.": "Aucun résultat.",
+    "Try a broader query or clear the filters.": "Essayez une recherche plus large ou effacez les filtres.",
+    "result": "résultat",
+    "results": "résultats",
+    "public records": "fiches publiques",
+    "current page": "page actuelle",
+    "visible labels": "libellés visibles",
+    "MATCHES": "RÉSULTATS",
+    "SHOWN": "AFFICHÉS",
+    "TAGS": "MOTS-CLÉS",
+    "Archive overview table": "Tableau de synthèse des archives",
+    "Open record": "Ouvrir la fiche",
+    "Open card": "Ouvrir la carte",
+    "Open Dossier": "Ouvrir le dossier",
+    "Open Work": "Voir les réalisations",
+    "Explore Research": "Explorer la recherche",
+    "View Programs": "Voir les programmes",
+    "View Forge": "Voir Forge",
+    "Open Vestiges": "Ouvrir Vestiges",
+    "Archive as a library": "Les archives comme bibliothèque",
+    "Filter by status, medium and discipline.": "Filtrer par état, support et discipline.",
+    "Filter by status, discipline, medium and visibility.": "Filtrer par état, discipline, support et visibilité.",
+    "Research log": "Journal de recherche",
+    "Status": "État",
+    "Category": "Catégorie",
+    "Discipline": "Discipline",
+    "Medium": "Support",
+    "Year": "Année",
+    "Entity Type": "Type d’entité",
+    "Research Field": "Domaine de recherche",
+    "Audio": "Audio",
+    "Visual": "Visuel",
+    "Photography": "Photographie",
+    "Software": "Logiciel",
+    "Runtime": "Moteur",
+    "Writing": "Écriture",
+    "Film": "Film",
+    "Installation": "Installation",
+    "Interactive": "Interactif",
+    "Performance": "Performance",
+    "Design": "Design",
+    "Art Direction": "Direction artistique",
+    "Branding": "Identité de marque",
+    "Systems": "Systèmes",
+    "Narrative": "Narration",
+    "Worldbuilding": "Construction d’univers",
+    "Architecture": "Architecture",
+    "Development": "Développement",
+    "Client Work": "Réalisation client",
+    "External Collaboration": "Collaboration externe",
+    "Research Initiative": "Initiative de recherche",
+    "Framework": "Cadre technique",
+    "Tool": "Outil",
+    "Documents": "Documents",
+    "Prototypes": "Prototypes",
+    "Corrupted Concepts": "Concepts altérés",
+    "Unreleased": "Non publié",
+    "Public": "Public",
+    "Active": "Actif",
+    "Archived": "Archivé",
+    "Speculative": "Spéculatif",
+    "Observed": "Observé",
+    "Validated": "Validé",
+    "Canonical": "Canonique",
+    "Internal": "Interne",
+    "Restricted": "Restreint",
+    "Released": "Publié",
+    "Deprecated": "Obsolète",
+    "Production": "Production",
+    "Experimental": "Expérimental",
+    "Album": "Album",
+    "Platform": "Plateforme",
+    "Universe": "Univers",
+    "Publication": "Publication",
+    "Knowledge Systems": "Systèmes de connaissance",
+    "Archives": "Archives",
+    "Creative Coding": "Code créatif",
+    "Audio Engineering": "Ingénierie audio",
+    "Digital Art": "Art numérique",
+    "Artificial Intelligence": "Intelligence artificielle",
+    "Digital Preservation": "Préservation numérique",
+    "Software Architecture": "Architecture logicielle",
+    "Cultural Infrastructure": "Infrastructure culturelle",
+    "Web Development": "Développement web",
+    "Editorial Collection": "Collection éditoriale",
+    "Research Library": "Bibliothèque de recherche",
+    "Foundations": "Fondations",
+    "Second Wave": "Deuxième vague",
+    "Fourth Wave": "Quatrième vague",
+    "AI Protocols": "Protocoles d’IA",
+    "AI Governance": "Gouvernance de l’IA",
+    "Provenance": "Provenance",
+    "Origin": "Origine",
+    "Parent": "Parent",
+    "Children": "Enfants",
+    "Dependencies": "Dépendances",
+    "Influences": "Influences",
+    "Derived From": "Dérivé de",
+    "Inspired By": "Inspiré par",
+    "Powered By": "Propulsé par",
+    "Produced By": "Produit par",
+    "Published By": "Publié par",
+    "Maintained By": "Maintenu par",
+    "Part Of": "Fait partie de",
+    "Related To": "Associé à",
+    "What Electronic Artefacts is.": "Ce qu’est Electronic Artefacts.",
+    "Institutional role": "Rôle institutionnel",
+    "Operating cycle": "Cycle opérationnel",
+    "The four operating layers.": "Les quatre couches opérationnelles.",
+    "Each layer has a distinct role. None of them works alone.": "Chaque couche a un rôle distinct. Aucune ne fonctionne seule.",
+    "Reusable systems and runtimes.": "Systèmes et moteurs réutilisables.",
+    "Public works and commissions.": "Œuvres publiques et commandes.",
+    "Traces, fragments and memory.": "Traces, fragments et mémoire.",
+    "How the named entities fit.": "La place des entités nommées.",
+    "Production system.": "Système de production.",
+    "Artistic translation.": "Traduction artistique.",
+    "Applied surfaces.": "Interfaces appliquées.",
+    "Core runtime.": "Moteur central.",
   };
 
   const normalizeWhitespace = (value) => value.replace(/\s+/g, " ").trim();
@@ -16368,8 +16539,21 @@ window.EA_SEARCH = {
       ? url.pathname.slice(3) || "/"
       : url.pathname;
     const target = translatedPages.get(englishPath);
-    url.pathname = target || englishPath;
+    if (target) {
+      url.pathname = target;
+    } else if (!url.pathname.startsWith("/fr/") && isLocalizablePath(englishPath)) {
+      url.pathname = englishPath === "/" ? "/fr/" : `/fr${englishPath}`;
+    } else {
+      url.pathname = target || englishPath;
+    }
     return `${url.pathname}${url.search}${url.hash}`;
+  };
+
+  const isLocalizablePath = (path) => {
+    if (!path || path.startsWith("/assets/") || path.startsWith("/graph/") || path.startsWith("/generated/")) return false;
+    if (path === "/") return true;
+    if (path.endsWith("/")) return true;
+    return /\.html$/.test(path);
   };
 
   const localizeRoot = (root = document) => {
@@ -17239,8 +17423,6 @@ window.EA_SEARCH = {
     const variants = {
       project: [
         { label: "STATUS", value: statusValue, note: updatedYear ? `Updated ${updatedYear}` : "", fill: 0.92, tone: "live" },
-        { label: "SIGNALS", value: `${signalCount}`, note: countLabel(signalCount, "cue"), fill: metricFill(signalCount, 8), tone: "visual" },
-        { label: "MEDIA", value: `${galleryCount}`, note: countLabel(galleryCount, "asset"), fill: metricFill(galleryCount, 12), tone: "archive" },
       ],
       archive: [
         { label: "FIELD", value: item.researchField || item.category || item.type || "Archive", note: item.project || "", fill: 0.82, tone: "archive" },
@@ -17260,11 +17442,10 @@ window.EA_SEARCH = {
       program: [
         { label: "STATUS", value: statusValue, note: updatedYear ? `Updated ${updatedYear}` : "", fill: 0.92, tone: "live" },
         { label: "DOMAIN", value: item.domain || item.systemGroup || item.type || "Program", note: item.category || "", fill: 0.78, tone: "system" },
-        { label: "SIGNALS", value: `${signalCount}`, note: countLabel(signalCount, "cue"), fill: metricFill(signalCount, 8), tone: "research" },
       ],
     };
 
-    return metricRail(variants[mode] || variants.project, { limit: 3, compact: true });
+    return metricRail((variants[mode] || variants.project).filter(Boolean), { limit: 3, compact: true });
   };
 
   const countLabel = (count, singular, plural = `${singular}s`) => `${count} ${count === 1 ? singular : plural}`;
@@ -17376,7 +17557,7 @@ window.EA_SEARCH = {
       ${summaryMetrics(item, "project")}
       ${metadataList([
         { label: "Artist", value: item.artist },
-        { label: "Program", value: item.program },
+        { label: "Program", value: item.program === "electronic-artefacts" ? "" : item.program },
       ])}
     </article>
   `;
@@ -17496,10 +17677,11 @@ window.EA_SEARCH = {
           <span>Programs</span>
           <strong>${esc((item.relatedPrograms || []).length)}</strong>
         </div>
-        <div class="research-dossier-card__fact">
-          <span>Artefacts</span>
-          <strong>${esc((item.relatedArtefacts || []).length)}</strong>
-        </div>
+        ${(item.relatedArtefacts || []).length ? `
+          <div class="research-dossier-card__fact">
+            <span>Artefacts</span>
+            <strong>${esc((item.relatedArtefacts || []).length)}</strong>
+          </div>` : ""}
       </div>
       <div class="tag-cluster tag-cluster--compact research-dossier-card__signals">
         ${[
@@ -18865,6 +19047,8 @@ window.EA_SEARCH = {
 /* ==== assets/js/core/behaviors.js ==== */
 (function () {
   const esc = window.EA_UTILS?.esc || ((value) => String(value ?? ""));
+  const isFrench = () => window.EA_I18N?.locale === "fr";
+  const translate = (value) => window.EA_I18N?.translateText?.(value) || value;
   const slugify = window.EA_UTILS?.slugify || ((value) =>
     String(value ?? "")
       .toLowerCase()
@@ -19050,7 +19234,7 @@ window.EA_SEARCH = {
       const summary = section.querySelector(".filter-summary");
       if (!scope || !summary) return;
       const count = summary.querySelector("[data-filter-count]");
-      if (count) count.textContent = `${visible} visible`;
+      if (count) count.textContent = isFrench() ? `${visible} visibles` : `${visible} visible`;
       const active = Object.values(filterState.get(scope) || {}).some((value) => value && value !== "all");
       summary.classList.toggle("has-active-filters", active);
       const tray = summary.querySelector("[data-active-filter-tray]");
@@ -19665,10 +19849,10 @@ window.EA_SEARCH = {
       summary.className = "filter-summary";
       summary.innerHTML = `
         <div class="filter-summary__status">
-          <span data-filter-count>0 visible</span>
+          <span data-filter-count>${isFrench() ? "0 visibles" : "0 visible"}</span>
           <div class="active-filter-tray" data-active-filter-tray></div>
         </div>
-        <button class="filter-reset" type="button" data-filter-reset>Reset filters</button>
+        <button class="filter-reset" type="button" data-filter-reset>${esc(translate("Reset filters"))}</button>
       `;
       const drawer = section.querySelector("[data-taxonomy-drawer]");
       const insertBefore = drawer || section.querySelector(".taxonomy-grid") || section.firstElementChild;
@@ -19749,7 +19933,7 @@ window.EA_SEARCH = {
     button.type = "button";
     button.setAttribute("aria-label", "Open quick navigation");
     button.setAttribute("title", "Open quick navigation");
-    button.innerHTML = "<span>Search</span><kbd>⌘K</kbd>";
+    button.innerHTML = `<span>${esc(translate("Search"))}</span><kbd>⌘K</kbd>`;
 
     const palette = document.createElement("div");
     palette.className = "command-palette";
@@ -19757,11 +19941,11 @@ window.EA_SEARCH = {
     palette.setAttribute("data-command-palette", "");
     palette.innerHTML = `
       <div class="command-palette__backdrop" data-command-close></div>
-      <section class="command-palette__panel" role="dialog" aria-modal="true" aria-label="Quick navigation">
+      <section class="command-palette__panel" role="dialog" aria-modal="true" aria-label="${esc(translate("Quick navigation"))}">
         <div class="command-palette__search">
           <span aria-hidden="true">⌕</span>
-          <input type="search" placeholder="Search pages, projects and programs..." data-command-input />
-          <button type="button" data-command-close aria-label="Close quick navigation">Esc</button>
+          <input type="search" placeholder="${esc(translate("Search pages, projects and programs..."))}" data-command-input />
+          <button type="button" data-command-close aria-label="${esc(translate("Close quick navigation"))}">Esc</button>
         </div>
         <div class="command-palette__results" data-command-results></div>
       </section>
@@ -21012,6 +21196,10 @@ window.EA_SEARCH = {
   const timelineIndex = indexes.timelinesByEntityId || {};
   const activityIndex = indexes.activityByEntityId || {};
   const contactEmail = "electronic.artefacts@gmail.com";
+  const isFrench = () => window.EA_I18N?.locale === "fr";
+  const translate = (value) => window.EA_I18N?.translateText?.(value) || value;
+  const countEntries = (count) => isFrench() ? `${count} ${count > 1 ? "entrées" : "entrée"}` : `${count} ${count === 1 ? "entry" : "entries"}`;
+  const searchResultLabel = (count) => isFrench() ? `${count} ${count > 1 ? "résultats" : "résultat"}` : `${count} ${count === 1 ? "result" : "results"}`;
   const mailto = (subject, body = "") =>
     `mailto:${contactEmail}?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
   const programAccessMailto = mailto(
@@ -21394,7 +21582,7 @@ window.EA_SEARCH = {
                 <section class="archive-section">
                   <div class="section-head">
                     <h3>${esc(category)}</h3>
-                    <p class="lede">${esc(items.length)} entries</p>
+                    <p class="lede">${esc(countEntries(items.length))}</p>
                   </div>
                   <div class="archive-rail-shell">
                     <div class="archive-rail">
@@ -23666,14 +23854,14 @@ window.EA_SEARCH = {
       <section class="zone-card hero catalog-overview">
         <div class="section-head">
           <p class="eyebrow">CATALOG MATRIX</p>
-          <h2>${esc(matchCount)} ${matchCount === 1 ? "result" : "results"}</h2>
-          <p class="lede">Showing ${esc(items.length)} concise entries. Open an item for the complete record.</p>
+          <h2>${esc(searchResultLabel(matchCount))}</h2>
+          <p class="lede">${esc(isFrench() ? `${items.length} entrées synthétiques affichées. Ouvrez un élément pour consulter la fiche complète.` : `Showing ${items.length} concise entries. Open an item for the complete record.`)}</p>
         </div>
         ${metricRail(
           [
-            { label: "MATCHES", value: String(matchCount), note: "public records", fill: metricFill(matchCount, totalCount), tone: "live" },
-            { label: "SHOWN", value: String(items.length), note: "current page", fill: metricFill(items.length, Math.max(matchCount, 1)), tone: "visual" },
-            { label: "TAGS", value: String(tagCount), note: "visible labels", fill: metricFill(tagCount, Math.max(tagCount, 1) * 2), tone: "archive" },
+            { label: translate("MATCHES"), value: String(matchCount), note: translate("public records"), fill: metricFill(matchCount, totalCount), tone: "live" },
+            { label: translate("SHOWN"), value: String(items.length), note: translate("current page"), fill: metricFill(items.length, Math.max(matchCount, 1)), tone: "visual" },
+            { label: translate("TAGS"), value: String(tagCount), note: translate("visible labels"), fill: metricFill(tagCount, Math.max(tagCount, 1) * 2), tone: "archive" },
           ],
           { limit: 3, compact: true },
         )}
@@ -25053,29 +25241,6 @@ window.EA_SEARCH = {
         ].filter(Boolean),
       },
     ].filter((group) => group.items.length);
-    const projectPathways = [
-      {
-        kicker: "For the artistic line",
-        title: "Enter Palimpsests first.",
-        copy: "It is the clearest path into ORETH, memory, traces and the label layer.",
-        href: "./palimpsests.html",
-        cta: "Open Palimpsests",
-      },
-      {
-        kicker: "For proof of delivery",
-        title: "Compare the applied surfaces.",
-        copy: "Client work and product-shaped systems show how the studio handles public pages, visual evidence and workflow.",
-        href: "./work.html",
-        cta: "See Client Work",
-      },
-      {
-        kicker: "For the system behind it",
-        title: "Move into programs and research.",
-        copy: "VASTE, Forge and the wider research field explain the operating model beneath the visible projects.",
-        href: "./programs.html",
-        cta: "View Programs",
-      },
-    ];
     const indexedGroups = grouped.map((group, index) => {
       const key = slugify(group.label) || `group-${index + 1}`;
       const categories = [
@@ -25117,38 +25282,7 @@ window.EA_SEARCH = {
               <img src="./assets/media/projects/oeil-de-meg/oeil-de-meg-pagespeed-desktop.png" alt="L’Œil de Meg PageSpeed desktop report" loading="lazy" />
               <figcaption><span>Delivery proof</span><strong>L’Œil de Meg</strong></figcaption>
             </a>
-            ${intentHeroStats(
-              [
-                { value: "03", label: "output modes" },
-                { value: String(publicProjectCount).padStart(2, "0"), label: "public projects" },
-                { value: "LIVE", label: "active delivery" },
-              ],
-              "Project statistics",
-            )}
           </div>
-        </div>
-      </section>
-      <section class="zone-card hero project-pathways-panel">
-        <div class="section-head">
-          <p class="eyebrow">HOW TO READ THIS PAGE</p>
-          <h2>Choose the path that matches your intent.</h2>
-          <p class="lede">The same body of work can be read as art, delivery proof or systems research. These three paths make that choice explicit.</p>
-        </div>
-        <div class="card-grid card-grid--three project-pathways-grid">
-          ${projectPathways
-            .map(
-              (item) => `
-                <article class="panel panel--soft project-pathway-card">
-                  <p class="card__meta">${esc(item.kicker)}</p>
-                  <h3 class="card__title">${esc(item.title)}</h3>
-                  <p class="card__copy">${esc(item.copy)}</p>
-                  <div class="link-row">
-                    <a class="tag" href="${esc(item.href)}">${esc(item.cta)}</a>
-                  </div>
-                </article>
-              `,
-            )
-            .join("")}
         </div>
       </section>
       ${pageLens("projects")}

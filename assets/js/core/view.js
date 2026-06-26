@@ -682,8 +682,6 @@
     const variants = {
       project: [
         { label: "STATUS", value: statusValue, note: updatedYear ? `Updated ${updatedYear}` : "", fill: 0.92, tone: "live" },
-        { label: "SIGNALS", value: `${signalCount}`, note: countLabel(signalCount, "cue"), fill: metricFill(signalCount, 8), tone: "visual" },
-        { label: "MEDIA", value: `${galleryCount}`, note: countLabel(galleryCount, "asset"), fill: metricFill(galleryCount, 12), tone: "archive" },
       ],
       archive: [
         { label: "FIELD", value: item.researchField || item.category || item.type || "Archive", note: item.project || "", fill: 0.82, tone: "archive" },
@@ -703,11 +701,10 @@
       program: [
         { label: "STATUS", value: statusValue, note: updatedYear ? `Updated ${updatedYear}` : "", fill: 0.92, tone: "live" },
         { label: "DOMAIN", value: item.domain || item.systemGroup || item.type || "Program", note: item.category || "", fill: 0.78, tone: "system" },
-        { label: "SIGNALS", value: `${signalCount}`, note: countLabel(signalCount, "cue"), fill: metricFill(signalCount, 8), tone: "research" },
       ],
     };
 
-    return metricRail(variants[mode] || variants.project, { limit: 3, compact: true });
+    return metricRail((variants[mode] || variants.project).filter(Boolean), { limit: 3, compact: true });
   };
 
   const countLabel = (count, singular, plural = `${singular}s`) => `${count} ${count === 1 ? singular : plural}`;
@@ -819,7 +816,7 @@
       ${summaryMetrics(item, "project")}
       ${metadataList([
         { label: "Artist", value: item.artist },
-        { label: "Program", value: item.program },
+        { label: "Program", value: item.program === "electronic-artefacts" ? "" : item.program },
       ])}
     </article>
   `;
@@ -939,10 +936,11 @@
           <span>Programs</span>
           <strong>${esc((item.relatedPrograms || []).length)}</strong>
         </div>
-        <div class="research-dossier-card__fact">
-          <span>Artefacts</span>
-          <strong>${esc((item.relatedArtefacts || []).length)}</strong>
-        </div>
+        ${(item.relatedArtefacts || []).length ? `
+          <div class="research-dossier-card__fact">
+            <span>Artefacts</span>
+            <strong>${esc((item.relatedArtefacts || []).length)}</strong>
+          </div>` : ""}
       </div>
       <div class="tag-cluster tag-cluster--compact research-dossier-card__signals">
         ${[

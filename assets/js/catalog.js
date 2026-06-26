@@ -6,6 +6,9 @@
   const activity = window.EA_ACTIVITY || [];
   const collections = window.EA_COLLECTIONS || [];
   const publicCatalog = window.EA_PUBLIC_CATALOG || {};
+  const pageLocale = document.documentElement.lang === "fr" || window.location.pathname.startsWith("/fr/")
+    ? "fr"
+    : "en";
   const normalizeTitle = (value) =>
     String(value ?? "")
       .toLowerCase()
@@ -13,6 +16,38 @@
       .replace(/[^a-z0-9]+/g, "-")
       .replace(/^-+|-+$/g, "");
   const isPublic = (item) => !["internal", "restricted"].includes(item?.visibility);
+
+  const catalogEntities = Array.isArray(publicCatalog.entities) ? publicCatalog.entities : [];
+  const catalogById = Object.fromEntries(catalogEntities.map((item) => [item.id, item]));
+  const catalogByLegacyId = Object.fromEntries(catalogEntities.filter((item) => item.legacyId).map((item) => [item.legacyId, item]));
+  const translatedBySourceId = catalogEntities.reduce((acc, item) => {
+    if (item.locale === pageLocale && item.translationOf) acc[item.translationOf] = item;
+    return acc;
+  }, {});
+
+  const localizedCatalogRecordFor = (item) => {
+    if (pageLocale === "en" || !item?.id) return null;
+    const source = catalogByLegacyId[item.id] || catalogById[item.id];
+    return translatedBySourceId[source?.id] || null;
+  };
+
+  const localizeEntity = (item) => {
+    const localized = localizedCatalogRecordFor(item);
+    if (!localized) return item;
+    return {
+      ...item,
+      title: localized.title || item.title,
+      subtitle: localized.subtitle || item.subtitle,
+      summary: localized.summary || item.summary,
+      description: localized.description || item.description,
+      tags: localized.tags?.length ? localized.tags : item.tags,
+      discipline: localized.discipline?.length ? localized.discipline : item.discipline,
+      route: localized.route || item.route,
+      locale: localized.locale,
+      canonicalId: localized.translationOf || item.canonicalId,
+      localizedId: localized.id,
+    };
+  };
 
   const flattenEntities = () =>
     [
@@ -33,6 +68,7 @@
       })),
     ]
       .filter(isPublic)
+      .map(localizeEntity)
       .map((item) => ({
       ...item,
       titleSlug: normalizeTitle(item.title),
@@ -79,9 +115,22 @@
     getSearchIndex,
   };
   const routeById = { ...(publicCatalog.routes || {}) };
-  (publicCatalog.entities || []).forEach((item) => {
+  catalogEntities.forEach((item) => {
     if (item.legacyId && item.route) routeById[item.legacyId] = item.route;
   });
+  if (pageLocale !== "en") {
+    catalogEntities
+      .filter((item) => item.locale === pageLocale && item.route)
+      .forEach((item) => {
+        routeById[item.id] = item.route;
+        if (item.legacyId) routeById[item.legacyId] = item.route;
+        const source = item.translationOf ? catalogById[item.translationOf] : null;
+        if (source) {
+          routeById[source.id] = item.route;
+          if (source.legacyId) routeById[source.legacyId] = item.route;
+        }
+      });
+  }
   const routeFor = (itemOrId) => {
     const id = typeof itemOrId === "string" ? itemOrId : itemOrId?.id;
     if (!id) return "";
