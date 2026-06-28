@@ -5,15 +5,15 @@
       "@type": "WebPage",
       "@id": "https://electronicartefacts.com/fr/publications/ai-agents-vs-ai-workflows/#webpage",
       "url": "https://electronicartefacts.com/fr/publications/ai-agents-vs-ai-workflows/",
-      "name": "Agents d’IA et workflows d’IA",
-      "description": "Understand the difference between AI agents et AI workflows, when à use each architecture, et how à design reliable hybrid systèmes.",
+      "name": "Agents d'IA et workflows d'IA",
+      "description": "Agents d'IA et workflows d'IA propose une synthèse claire en français sur le sujet \"Agents d'IA et workflows d'IA\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
       "primaryImageOfPage": {
         "@type": "ImageObject",
         "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-search.jpg",
-        "description": "Agents d’IA et workflows d’IA"
+        "description": "Agents d'IA et workflows d'IA"
       },
       "breadcrumb": {
         "@id": "https://electronicartefacts.com/fr/publications/ai-agents-vs-ai-workflows/#breadcrumb"
@@ -33,10 +33,10 @@
       "@type": "TechArticle",
       "@id": "https://electronicartefacts.com/fr/id/publication/ai-agents-vs-ai-workflows/",
       "identifier": "ea:publication:ai-agents-vs-ai-workflows-fr",
-      "name": "Agents d’IA et workflows d’IA",
-      "headline": "Agents d’IA et workflows d’IA",
-      "abstract": "A practical comparison de modèle-directed agents, deterministic workflows, hybrid orchestration, outil permissions, mémoire, evaluation et human oversight.",
-      "description": "A practical comparison de modèle-directed agents, deterministic workflows, hybrid orchestration, outil permissions, mémoire, evaluation et human oversight.",
+      "name": "Agents d'IA et workflows d'IA",
+      "headline": "Agents d'IA et workflows d'IA",
+      "abstract": "Agents d'IA et workflows d'IA propose une synthèse claire en français sur le sujet \"Agents d'IA et workflows d'IA\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
+      "description": "Agents d'IA et workflows d'IA propose une synthèse claire en français sur le sujet \"Agents d'IA et workflows d'IA\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
       "url": "https://electronicartefacts.com/fr/publications/ai-agents-vs-ai-workflows/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/publications/ai-agents-vs-ai-workflows/#webpage"
@@ -44,7 +44,7 @@
       "image": {
         "@type": "ImageObject",
         "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-search.jpg",
-        "description": "Agents d’IA et workflows d’IA"
+        "description": "Agents d'IA et workflows d'IA"
       },
       "author": [
         {
@@ -57,15 +57,15 @@
         }
       ],
       "keywords": [
-        "AI Agents",
+        "agents d'IA",
         "AI Workflows",
-        "Orchestration",
-        "Outil Use",
-        "Automation",
-        "Intelligence artificielle",
-        "Systèmes Design",
-        "Software Architecture",
-        "Human Computer Interaction"
+        "orchestration",
+        "usage d'outils",
+        "automatisation",
+        "intelligence artificielle",
+        "conception de systèmes",
+        "architecture logicielle",
+        "interaction humain-machine"
       ],
       "inLanguage": "fr",
       "dateCreated": "2026-06-24",
@@ -78,14 +78,14 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 159,
+      "wordCount": 141,
       "citation": [
-        "Electronic Artefacts. \"AI Agents vs AI Workflows.\" Technical article, version 1.0.0, 2026.",
+        "Electronic Artefacts. \"Agents d'IA et workflows d'IA\". Article technique, version 1.0.0, 2026.",
         {
           "@type": "CreativeWork",
           "name": "Building Effective Agents",
           "url": "https://www.anthropic.com/engineering/building-effective-agents",
-          "author": "Erik Schluntz et Barry Zhang",
+          "author": "Erik Schluntz and Barry Zhang",
           "publisher": "Anthropic",
           "datePublished": "2024-12-19"
         },
@@ -123,11 +123,11 @@
         }
       ],
       "articleSection": [
-        "Intelligence artificielle",
-        "Systèmes Design",
-        "Software Architecture",
-        "Human Computer Interaction",
-        "AI Agents",
+        "intelligence artificielle",
+        "conception de systèmes",
+        "architecture logicielle",
+        "interaction humain-machine",
+        "agents d'IA",
         "AI Workflows"
       ],
       "timeRequired": "PT1M",
@@ -136,7 +136,7 @@
           "@type": "CreativeWork",
           "name": "Building Effective Agents",
           "url": "https://www.anthropic.com/engineering/building-effective-agents",
-          "author": "Erik Schluntz et Barry Zhang",
+          "author": "Erik Schluntz and Barry Zhang",
           "publisher": "Anthropic",
           "datePublished": "2024-12-19"
         },
@@ -253,7 +253,7 @@
         {
           "@type": "ListItem",
           "position": 3,
-          "name": "Agents d’IA et workflows d’IA",
+          "name": "Agents d'IA et workflows d'IA",
           "item": "https://electronicartefacts.com/fr/publications/ai-agents-vs-ai-workflows/"
         }
       ]

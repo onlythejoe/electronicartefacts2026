@@ -9,8 +9,8 @@
   "alternateNames": [
     "Web Neural Network API"
   ],
-  "abstract": "WebNN est un W3C Web Machine Learning API pour hardware-accelerated neural-network inference dans web applications.",
-  "description": "A technology record pour navigateur-based machine-learning inference through the Web Neural Network API.",
+  "abstract": "WebNN est présenté comme une technologie de référence pour comprendre son rôle dans l'écosystème Electronic Artefacts, ses usages, ses limites et sa place dans les systèmes numériques contemporains.",
+  "description": "WebNN est présenté comme une technologie de référence pour comprendre son rôle dans l'écosystème Electronic Artefacts, ses usages, ses limites et sa place dans les systèmes numériques contemporains.",
   "locale": "fr",
   "visibility": "public",
   "publicationClass": "canonical",
@@ -31,14 +31,14 @@
   "publisher": "ea:organization:electronic-artefacts",
   "tags": [
     "WebNN",
-    "Navigateur AI",
+    "Browser AI",
     "Local Inference",
     "Web Machine Learning"
   ],
   "disciplines": [
-    "Intelligence artificielle",
+    "intelligence artificielle",
     "Web Development",
-    "Human Computer Interaction"
+    "interaction humain-machine"
   ],
   "sources": [
     {
@@ -50,13 +50,13 @@
     }
   ],
   "category": "platform",
-  "roleInEcosystem": "WebNN exposes a web-facing abstraction pour neural-network inference acceleration across operating-système et hardware backends.",
+  "roleInEcosystem": "WebNN sert de repère technique pour évaluer le sujet \"WebNN\" dans le graphe public d'Electronic Artefacts, ses usages possibles et ses conséquences dans l'écosystème Electronic Artefacts.",
   "officialUrl": "https://www.w3.org/TR/webnn/",
-  "bodyHtml": "<h2 id=\"role\">Rôle</h2>\n<p>WebNN est documenté ici comme une entrée française du graphe public d’Electronic Artefacts. WebNN est un W3C Web Machine Learning API pour hardware-accelerated neural-network inference dans web applications.</p>\n<h2 id=\"usage\">Usage</h2>\n<p>Cette technologie sert de repère pour évaluer les choix d’architecture, les dépendances et les possibilités d’implémentation. WebNN exposes a web-facing abstraction pour neural-network inference acceleration across operating-système et hardware backends.</p>\n<h2 id=\"domaines\">Domaines</h2>\n<p>Cette entrée croise notamment les domaines suivants : Intelligence artificielle, Web Development, Human Computer Interaction.</p>\n<h2 id=\"references\">Références</h2>\n<p>Les références principales restent les sources indiquées dans la fiche canonique, notamment Web Neural Network API.</p>\n",
+  "bodyHtml": "<h2 id=\"role\">Rôle</h2>\n<p>WebNN est documenté comme technologie de référence pour le sujet “WebNN” dans le graphe public d’Electronic Artefacts.</p>\n<h2 id=\"usage\">Usage</h2>\n<p>Cette fiche aide à situer la technologie dans l’écosystème Electronic Artefacts : ce qu’elle permet, quand elle devient pertinente et comment elle dialogue avec les autres composants du graphe.</p>\n<h2 id=\"points-d-attention\">Points d’attention</h2>\n<ul>\n<li>Les usages sont décrits en français sans masquer les noms propres, acronymes ou standards techniques.</li>\n<li>Les limites restent contextualisées par rapport aux projets, aux publications et aux contraintes d’implémentation.</li>\n</ul>\n<h2 id=\"references\">Références</h2>\n<p>Les sources principales restent disponibles dans le bloc de références de la fiche.</p>\n",
   "headings": [
     "Rôle",
     "Usage",
-    "Domaines",
+    "Points d'attention",
     "Références"
   ],
   "headingItems": [
@@ -72,8 +72,8 @@
     },
     {
       "level": 2,
-      "title": "Domaines",
-      "id": "domaines"
+      "title": "Points d'attention",
+      "id": "points-d-attention"
     },
     {
       "level": 2,

@@ -5,15 +5,15 @@
       "@type": "WebPage",
       "@id": "https://electronicartefacts.com/fr/publications/observability-for-ai-agents-and-tool-calling-systems/#webpage",
       "url": "https://electronicartefacts.com/fr/publications/observability-for-ai-agents-and-tool-calling-systems/",
-      "name": "Observabilité des agents d’IA et des systèmes d’appel d’outils",
-      "description": "Understand observability pour AI agents et outil-calling systèmes through traces, metrics, logs, audit events et OpenTelemetry.",
+      "name": "Observabilité des agents d'IA et des systèmes d'appel d'outils",
+      "description": "Observabilité des agents d'IA et des systèmes d'appel d'outils propose une synthèse claire en français sur le sujet \"Observabilité des agents d'IA et des systèmes d'appel d'outils\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
       "primaryImageOfPage": {
         "@type": "ImageObject",
         "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-search.jpg",
-        "description": "Observabilité des agents d’IA et des systèmes d’appel d’outils"
+        "description": "Observabilité des agents d'IA et des systèmes d'appel d'outils"
       },
       "breadcrumb": {
         "@id": "https://electronicartefacts.com/fr/publications/observability-for-ai-agents-and-tool-calling-systems/#breadcrumb"
@@ -33,10 +33,10 @@
       "@type": "TechArticle",
       "@id": "https://electronicartefacts.com/fr/id/publication/observability-for-ai-agents-and-tool-calling-systems/",
       "identifier": "ea:publication:observability-for-ai-agents-and-tool-calling-systems-fr",
-      "name": "Observabilité des agents d’IA et des systèmes d’appel d’outils",
-      "headline": "Observabilité des agents d’IA et des systèmes d’appel d’outils",
-      "abstract": "A practical explanation de telemetry pour AI agents, outil calls, traces, events, approvals, failures, evaluations et graphe-runtime accountability.",
-      "description": "A practical explanation de telemetry pour AI agents, outil calls, traces, events, approvals, failures, evaluations et graphe-runtime accountability.",
+      "name": "Observabilité des agents d'IA et des systèmes d'appel d'outils",
+      "headline": "Observabilité des agents d'IA et des systèmes d'appel d'outils",
+      "abstract": "Observabilité des agents d'IA et des systèmes d'appel d'outils propose une synthèse claire en français sur le sujet \"Observabilité des agents d'IA et des systèmes d'appel d'outils\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
+      "description": "Observabilité des agents d'IA et des systèmes d'appel d'outils propose une synthèse claire en français sur le sujet \"Observabilité des agents d'IA et des systèmes d'appel d'outils\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
       "url": "https://electronicartefacts.com/fr/publications/observability-for-ai-agents-and-tool-calling-systems/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/publications/observability-for-ai-agents-and-tool-calling-systems/#webpage"
@@ -44,7 +44,7 @@
       "image": {
         "@type": "ImageObject",
         "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-search.jpg",
-        "description": "Observabilité des agents d’IA et des systèmes d’appel d’outils"
+        "description": "Observabilité des agents d'IA et des systèmes d'appel d'outils"
       },
       "author": [
         {
@@ -58,14 +58,14 @@
       ],
       "keywords": [
         "Observability",
-        "AI Agents",
-        "Outil Calling",
+        "agents d'IA",
+        "Tool Calling",
         "OpenTelemetry",
         "Tracing",
-        "Intelligence artificielle",
-        "Software Architecture",
-        "Systèmes Design",
-        "Distributed Systèmes"
+        "intelligence artificielle",
+        "architecture logicielle",
+        "conception de systèmes",
+        "Distributed Systems"
       ],
       "inLanguage": "fr",
       "dateCreated": "2026-06-24",
@@ -78,18 +78,18 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 169,
+      "wordCount": 149,
       "citation": [
-        "Electronic Artefacts. \"Observability pour AI Agents et Outil-Calling Systèmes.\" Technical article, version 1.0.0, 2026.",
+        "Electronic Artefacts. \"Observabilité des agents d'IA et des systèmes d'appel d'outils\". Article technique, version 1.0.0, 2026.",
         {
           "@type": "CreativeWork",
-          "name": "OpenTelemetry Sémantique Conventions 1.42.0",
+          "name": "OpenTelemetry Semantic Conventions 1.42.0",
           "url": "https://opentelemetry.io/docs/specs/semconv/",
           "publisher": "OpenTelemetry"
         },
         {
           "@type": "CreativeWork",
-          "name": "Modèle Context Protocole Specification",
+          "name": "Model Context Protocol Specification",
           "url": "https://modelcontextprotocol.io/specification/2025-06-18",
           "publisher": "Model Context Protocol"
         },
@@ -126,24 +126,24 @@
         }
       ],
       "articleSection": [
-        "Intelligence artificielle",
-        "Software Architecture",
-        "Systèmes Design",
-        "Distributed Systèmes",
+        "intelligence artificielle",
+        "architecture logicielle",
+        "conception de systèmes",
+        "Distributed Systems",
         "Observability",
-        "AI Agents"
+        "agents d'IA"
       ],
       "timeRequired": "PT1M",
       "isBasedOn": [
         {
           "@type": "CreativeWork",
-          "name": "OpenTelemetry Sémantique Conventions 1.42.0",
+          "name": "OpenTelemetry Semantic Conventions 1.42.0",
           "url": "https://opentelemetry.io/docs/specs/semconv/",
           "publisher": "OpenTelemetry"
         },
         {
           "@type": "CreativeWork",
-          "name": "Modèle Context Protocole Specification",
+          "name": "Model Context Protocol Specification",
           "url": "https://modelcontextprotocol.io/specification/2025-06-18",
           "publisher": "Model Context Protocol"
         },
@@ -259,7 +259,7 @@
         {
           "@type": "ListItem",
           "position": 3,
-          "name": "Observabilité des agents d’IA et des systèmes d’appel d’outils",
+          "name": "Observabilité des agents d'IA et des systèmes d'appel d'outils",
           "item": "https://electronicartefacts.com/fr/publications/observability-for-ai-agents-and-tool-calling-systems/"
         }
       ]

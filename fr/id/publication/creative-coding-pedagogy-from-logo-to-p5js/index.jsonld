@@ -5,15 +5,15 @@
       "@type": "WebPage",
       "@id": "https://electronicartefacts.com/fr/publications/creative-coding-pedagogy-from-logo-to-p5js/#webpage",
       "url": "https://electronicartefacts.com/fr/publications/creative-coding-pedagogy-from-logo-to-p5js/",
-      "name": "Pédagogie du creative coding, de Logo à p5.js",
-      "description": "A technical article on teaching programmation créative, Processing, p5.js, computational médias, open source et Electronic Artefacts learning culture.",
+      "name": "Pédagogie de la programmation créative, de Logo à p5.js",
+      "description": "Pédagogie de la programmation créative, de Logo à p5.js propose une synthèse claire en français sur le sujet \"Pédagogie de la programmation créative, de Logo à p5.js\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
       "primaryImageOfPage": {
         "@type": "ImageObject",
         "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-search.jpg",
-        "description": "Pédagogie du creative coding, de Logo à p5.js"
+        "description": "Pédagogie de la programmation créative, de Logo à p5.js"
       },
       "breadcrumb": {
         "@id": "https://electronicartefacts.com/fr/publications/creative-coding-pedagogy-from-logo-to-p5js/#breadcrumb"
@@ -33,10 +33,10 @@
       "@type": "TechArticle",
       "@id": "https://electronicartefacts.com/fr/id/publication/creative-coding-pedagogy-from-logo-to-p5js/",
       "identifier": "ea:publication:creative-coding-pedagogy-from-logo-to-p5js-fr",
-      "name": "Pédagogie du creative coding, de Logo à p5.js",
-      "headline": "Pédagogie du creative coding, de Logo à p5.js",
-      "abstract": "This article explains programmation créative pedagogy through exploratory programming, computational literacy, Processing, p5.js, visuel feedback et open learning communities.",
-      "description": "This article explains programmation créative pedagogy through exploratory programming, computational literacy, Processing, p5.js, visuel feedback et open learning communities.",
+      "name": "Pédagogie de la programmation créative, de Logo à p5.js",
+      "headline": "Pédagogie de la programmation créative, de Logo à p5.js",
+      "abstract": "Pédagogie de la programmation créative, de Logo à p5.js propose une synthèse claire en français sur le sujet \"Pédagogie de la programmation créative, de Logo à p5.js\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
+      "description": "Pédagogie de la programmation créative, de Logo à p5.js propose une synthèse claire en français sur le sujet \"Pédagogie de la programmation créative, de Logo à p5.js\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
       "url": "https://electronicartefacts.com/fr/publications/creative-coding-pedagogy-from-logo-to-p5js/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/publications/creative-coding-pedagogy-from-logo-to-p5js/#webpage"
@@ -44,7 +44,7 @@
       "image": {
         "@type": "ImageObject",
         "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-search.jpg",
-        "description": "Pédagogie du creative coding, de Logo à p5.js"
+        "description": "Pédagogie de la programmation créative, de Logo à p5.js"
       },
       "author": [
         {
@@ -57,13 +57,13 @@
         }
       ],
       "keywords": [
-        "Programmation créative",
+        "programmation créative",
         "Processing",
         "p5.js",
         "Education",
         "Programming",
-        "Design",
-        "Open source"
+        "design",
+        "Open Source"
       ],
       "inLanguage": "fr",
       "dateCreated": "2026-06-24",
@@ -76,9 +76,9 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 157,
+      "wordCount": 149,
       "citation": [
-        "Electronic Artefacts. \"Programmation créative Pedagogy from Logo à p5.js.\" Technical article, version 1.0.0, 2026.",
+        "Electronic Artefacts. \"Pédagogie de la programmation créative, de Logo à p5.js\". Article technique, version 1.0.0, 2026.",
         {
           "@type": "CreativeWork",
           "name": "Processing Overview",
@@ -115,10 +115,10 @@
         }
       ],
       "articleSection": [
-        "Programmation créative",
+        "programmation créative",
         "Programming",
-        "Design",
-        "Open source",
+        "design",
+        "Open Source",
         "Processing",
         "p5.js"
       ],
@@ -242,7 +242,7 @@
         {
           "@type": "ListItem",
           "position": 3,
-          "name": "Pédagogie du creative coding, de Logo à p5.js",
+          "name": "Pédagogie de la programmation créative, de Logo à p5.js",
           "item": "https://electronicartefacts.com/fr/publications/creative-coding-pedagogy-from-logo-to-p5js/"
         }
       ]

@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/knowledge/concepts/open-source/#webpage",
       "url": "https://electronicartefacts.com/fr/knowledge/concepts/open-source/",
       "name": "Open source",
-      "description": "A canonical concept record pour open source software et culturel infrastructure.",
+      "description": "Open source définit un repère conceptuel en français pour comprendre les pratiques de publication, maintenance et cooperation fondees sur du code et des ressources ouverts et ses liens avec les projets, technologies et publications du graphe.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
@@ -34,8 +34,8 @@
       "@id": "https://electronicartefacts.com/fr/id/concept/open-source/",
       "identifier": "ea:concept:open-source-fr",
       "name": "Open source",
-      "abstract": "Open source is both a licensing modèle et a culturel infrastructure pour software, creative outils, public knowledge, maintainership et technical education.",
-      "description": "Open source est un software et culturel practice dans which source code is made available under licenses that allow use, study, modification et redistribution.",
+      "abstract": "Open source définit un repère conceptuel en français pour comprendre les pratiques de publication, maintenance et cooperation fondees sur du code et des ressources ouverts et ses liens avec les projets, technologies et publications du graphe.",
+      "description": "Open source désigne les pratiques de publication, maintenance et cooperation fondees sur du code et des ressources ouverts.",
       "url": "https://electronicartefacts.com/fr/knowledge/concepts/open-source/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/knowledge/concepts/open-source/#webpage"
@@ -56,12 +56,12 @@
         }
       ],
       "keywords": [
-        "Open source",
+        "Open Source",
         "Software",
         "Commons",
         "Infrastructure",
         "Programming",
-        "Programmation créative",
+        "programmation créative",
         "Creative Business"
       ],
       "inLanguage": "fr",
@@ -75,11 +75,11 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 111,
+      "wordCount": 91,
       "citation": [
         {
           "@type": "CreativeWork",
-          "name": "The Open source Definition",
+          "name": "The Open Source Definition",
           "url": "https://opensource.org/osd",
           "publisher": "Open Source Initiative"
         }

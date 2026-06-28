@@ -5,15 +5,15 @@
       "@type": "WebPage",
       "@id": "https://electronicartefacts.com/fr/publications/model-context-protocol-and-tool-using-ai-systems/#webpage",
       "url": "https://electronicartefacts.com/fr/publications/model-context-protocol-and-tool-using-ai-systems/",
-      "name": "Model Context Protocol et systèmes d’IA utilisant des outils",
-      "description": "Understand Modèle Context Protocole through hosts, clients, servers, resources, prompts, outils, security boundaries et contextual execution.",
+      "name": "Model Context Protocol et systèmes d'IA utilisant des outils",
+      "description": "Model Context Protocol et systèmes d'IA utilisant des outils propose une synthèse claire en français sur le sujet \"Model Context Protocol et systèmes d'IA utilisant des outils\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
       "primaryImageOfPage": {
         "@type": "ImageObject",
         "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-search.jpg",
-        "description": "Model Context Protocol et systèmes d’IA utilisant des outils"
+        "description": "Model Context Protocol et systèmes d'IA utilisant des outils"
       },
       "breadcrumb": {
         "@id": "https://electronicartefacts.com/fr/publications/model-context-protocol-and-tool-using-ai-systems/#breadcrumb"
@@ -33,10 +33,10 @@
       "@type": "TechArticle",
       "@id": "https://electronicartefacts.com/fr/id/publication/model-context-protocol-and-tool-using-ai-systems/",
       "identifier": "ea:publication:model-context-protocol-and-tool-using-ai-systems-fr",
-      "name": "Model Context Protocol et systèmes d’IA utilisant des outils",
-      "headline": "Model Context Protocol et systèmes d’IA utilisant des outils",
-      "abstract": "A practical explanation de MCP comme an integration protocole pour resources, prompts, outils, consent, host boundaries et graphe-scoped AI workflows.",
-      "description": "A practical explanation de MCP comme an integration protocole pour resources, prompts, outils, consent, host boundaries et graphe-scoped AI workflows.",
+      "name": "Model Context Protocol et systèmes d'IA utilisant des outils",
+      "headline": "Model Context Protocol et systèmes d'IA utilisant des outils",
+      "abstract": "Model Context Protocol et systèmes d'IA utilisant des outils propose une synthèse claire en français sur le sujet \"Model Context Protocol et systèmes d'IA utilisant des outils\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
+      "description": "Model Context Protocol et systèmes d'IA utilisant des outils propose une synthèse claire en français sur le sujet \"Model Context Protocol et systèmes d'IA utilisant des outils\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
       "url": "https://electronicartefacts.com/fr/publications/model-context-protocol-and-tool-using-ai-systems/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/publications/model-context-protocol-and-tool-using-ai-systems/#webpage"
@@ -44,7 +44,7 @@
       "image": {
         "@type": "ImageObject",
         "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-search.jpg",
-        "description": "Model Context Protocol et systèmes d’IA utilisant des outils"
+        "description": "Model Context Protocol et systèmes d'IA utilisant des outils"
       },
       "author": [
         {
@@ -57,14 +57,14 @@
         }
       ],
       "keywords": [
-        "Modèle Context Protocole",
-        "AI Agents",
-        "Outil Use",
-        "Exécution contextuelle",
+        "Model Context Protocol",
+        "agents d'IA",
+        "usage d'outils",
+        "Contextual Exécution",
         "VASTE",
-        "Intelligence artificielle",
-        "Software Architecture",
-        "Systèmes Design"
+        "intelligence artificielle",
+        "architecture logicielle",
+        "conception de systèmes"
       ],
       "inLanguage": "fr",
       "dateCreated": "2026-06-24",
@@ -77,12 +77,12 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 172,
+      "wordCount": 149,
       "citation": [
-        "Electronic Artefacts. \"Modèle Context Protocole et Outil-Using AI Systèmes.\" Technical article, version 1.0.0, 2026.",
+        "Electronic Artefacts. \"Model Context Protocol et systèmes d'IA utilisant des outils\". Article technique, version 1.0.0, 2026.",
         {
           "@type": "CreativeWork",
-          "name": "Modèle Context Protocole Specification",
+          "name": "Model Context Protocol Specification",
           "url": "https://modelcontextprotocol.io/specification/2025-06-18",
           "publisher": "Model Context Protocol"
         },
@@ -94,7 +94,7 @@
         },
         {
           "@type": "CreativeWork",
-          "name": "Language Server Protocole Specification",
+          "name": "Language Server Protocol Specification",
           "url": "https://microsoft.github.io/language-server-protocol/",
           "publisher": "Microsoft"
         }
@@ -125,18 +125,18 @@
         }
       ],
       "articleSection": [
-        "Intelligence artificielle",
-        "Software Architecture",
-        "Systèmes Design",
-        "Modèle Context Protocole",
-        "AI Agents",
-        "Outil Use"
+        "intelligence artificielle",
+        "architecture logicielle",
+        "conception de systèmes",
+        "Model Context Protocol",
+        "agents d'IA",
+        "usage d'outils"
       ],
       "timeRequired": "PT1M",
       "isBasedOn": [
         {
           "@type": "CreativeWork",
-          "name": "Modèle Context Protocole Specification",
+          "name": "Model Context Protocol Specification",
           "url": "https://modelcontextprotocol.io/specification/2025-06-18",
           "publisher": "Model Context Protocol"
         },
@@ -148,7 +148,7 @@
         },
         {
           "@type": "CreativeWork",
-          "name": "Language Server Protocole Specification",
+          "name": "Language Server Protocol Specification",
           "url": "https://microsoft.github.io/language-server-protocol/",
           "publisher": "Microsoft"
         }
@@ -258,7 +258,7 @@
         {
           "@type": "ListItem",
           "position": 3,
-          "name": "Model Context Protocol et systèmes d’IA utilisant des outils",
+          "name": "Model Context Protocol et systèmes d'IA utilisant des outils",
           "item": "https://electronicartefacts.com/fr/publications/model-context-protocol-and-tool-using-ai-systems/"
         }
       ]

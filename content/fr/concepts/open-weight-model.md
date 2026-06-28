@@ -4,13 +4,14 @@ type: concept
 slug:
   canonical: open-weight-model
 title: Open-Weight Model
-definition: An open-weight modèle est un machine-learning modèle whose learned
-  parameters sont distributed pour reuse under stated terms, without necessarily
-  providing the training données, training code ou freedoms required by
-  open-source definitions.
-abstract: Open-weight modèles enable local inference et adaptation but must be
-  distinguished from fully open-source AI systèmes.
-description: A canonical definition pour local AI, modèle licensing et digital independence.
+definition: Open-Weight Model désigne les modèles dont les poids sont publies pour permettre
+  l'execution, l'audit ou l'adaptation locale.
+abstract: Open-Weight Model définit un repère conceptuel en français pour comprendre les modèles
+  dont les poids sont publies pour permettre l'execution, l'audit ou l'adaptation locale et ses
+  liens avec les projets, technologies et publications du graphe.
+description: Open-Weight Model définit un repère conceptuel en français pour comprendre les modèles
+  dont les poids sont publies pour permettre l'execution, l'audit ou l'adaptation locale et ses
+  liens avec les projets, technologies et publications du graphe.
 locale: fr
 visibility: public
 publicationClass: canonical
@@ -26,33 +27,31 @@ authors:
   - id: ea:organization:electronic-artefacts
 publisher: ea:organization:electronic-artefacts
 scope:
-  - Modèle weights
-  - Local inference
-  - Licensing
-  - Quantization
-  - Adaptation
+  - définition du sujet
+  - contexte d'usage
+  - liens avec le graphe
+  - références associées
 exclusions:
-  - A claim that downloadable weights automatically make an AI système open
-    source
-  - A hosted API avec no distributable modèle parameters
+  - les usages purement promotionnels sans définition vérifiable
+  - les exemples déconnectés des sources, relations ou contraintes du graphe
 claims:
-  - Open weights can improve autonomy et inspectability without providing full
-    training reproducibility.
-  - Modèle licenses, données information, code availability et use restrictions
-    must be evaluated separately.
+  - Open-Weight Model devient utile lorsque sa définition reste reliée à des sources, des pratiques
+    et des objets observables.
+  - La fiche sert de vocabulaire commun pour relier projets, publications et technologies sans
+    mélanger les langues.
 sources:
-  - title: The Open source AI Definition 1.0
+  - title: The Open Source AI Definition 1.0
     publisher: Open Source Initiative
     accessedAt: 2026-06-24
     url: https://opensource.org/ai/open-source-ai-definition
 tags:
   - Open Weights
   - Local AI
-  - Modèle Licensing
+  - Model Licensing
   - Quantization
 disciplines:
-  - Intelligence artificielle
-  - Open source
+  - intelligence artificielle
+  - Open Source
   - Programming
   - Digital Independence
 translationOf: ea:concept:open-weight-model
@@ -60,16 +59,16 @@ translationOf: ea:concept:open-weight-model
 
 ## Rôle
 
-Open-Weight Model est documenté ici comme une entrée française du graphe public d’Electronic Artefacts. Open-weight modèles enable local inference et adaptation but must be distinguished from fully open-source AI systèmes.
+Open-Weight Model est documenté comme notion de référence pour comprendre les modèles dont les poids sont publies pour permettre l'execution, l'audit ou l'adaptation locale.
 
 ## Usage
 
-Cette notion sert à relier les projets, publications et technologies qui partagent un même vocabulaire de conception. An open-weight modèle est un machine-learning modèle whose learned parameters sont distributed pour reuse under stated terms, without necessarily providing the training données, training code ou freedoms required by open-source definitions.
+Cette fiche relie la notion aux projets, publications et technologies qui partagent un même vocabulaire de conception. Elle sert de point d'appui pour naviguer dans le graphe en version française.
 
-## Domaines
+## Périmètre
 
-Cette entrée croise notamment les domaines suivants : Intelligence artificielle, Open source, Programming, Digital Independence.
+La notion est abordée par ses définitions, ses usages, ses limites et ses relations avec les autres objets documentés.
 
 ## Références
 
-Les références principales restent les sources indiquées dans la fiche canonique, notamment The Open Source AI Definition 1.0.
+Les sources principales restent disponibles dans le bloc de références de la fiche.

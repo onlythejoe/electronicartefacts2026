@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/knowledge/concepts/internet-culture/#webpage",
       "url": "https://electronicartefacts.com/fr/knowledge/concepts/internet-culture/",
       "name": "Culture Internet",
-      "description": "A canonical concept record pour networked culturel production et mémoire.",
+      "description": "Culture Internet définit un repère conceptuel en français pour comprendre les formes culturelles, communautaires et techniques qui emergent des reseaux numériques et ses liens avec les projets, technologies et publications du graphe.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
@@ -34,8 +34,8 @@
       "@id": "https://electronicartefacts.com/fr/id/concept/internet-culture/",
       "identifier": "ea:concept:internet-culture-fr",
       "name": "Culture Internet",
-      "abstract": "Internet culture relie network protocoles, web publishing, plateforme communities, memes, archives, open source, digital folklore et public systèmes de connaissance.",
-      "description": "Internet culture est le set de social forms, aesthetics, protocoles, communities, memes, archives et practices that emerge through networked communication.",
+      "abstract": "Culture Internet définit un repère conceptuel en français pour comprendre les formes culturelles, communautaires et techniques qui emergent des reseaux numériques et ses liens avec les projets, technologies et publications du graphe.",
+      "description": "Culture Internet désigne les formes culturelles, communautaires et techniques qui emergent des reseaux numériques.",
       "url": "https://electronicartefacts.com/fr/knowledge/concepts/internet-culture/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/knowledge/concepts/internet-culture/#webpage"
@@ -56,11 +56,11 @@
         }
       ],
       "keywords": [
-        "Culture Internet",
+        "Internet Culture",
         "Network Culture",
         "Memes",
         "Archives",
-        "History de Technology"
+        "History of Technology"
       ],
       "inLanguage": "fr",
       "dateCreated": "2026-06-24",
@@ -73,7 +73,7 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 104,
+      "wordCount": 87,
       "citation": [
         {
           "@type": "CreativeWork",

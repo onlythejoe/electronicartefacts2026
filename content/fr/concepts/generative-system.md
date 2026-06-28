@@ -4,14 +4,14 @@ type: concept
 slug:
   canonical: generative-system
 title: Système génératif
-definition: A generative système est un rule-based, procedural ou computational
-  arrangement that produces variable outputs from defined constraints, materials
-  et processes.
-abstract: Generative systèmes connect programmation créative, cybernetics,
-  algorithmic composition, simulation, design outils et AI by shifting
-  authorship toward rules, feedback et selection.
-description: A canonical definition de generative système pour programmation
-  créative, sound design, design automation et Electronic Artefacts projects.
+definition: Système génératif désigne les systèmes qui produisent des formes à partir de regles, de
+  contraintes et de boucles de sélection.
+abstract: Système génératif définit un repère conceptuel en français pour comprendre les systèmes
+  qui produisent des formes à partir de regles, de contraintes et de boucles de sélection et ses
+  liens avec les projets, technologies et publications du graphe.
+description: Système génératif définit un repère conceptuel en français pour comprendre les systèmes
+  qui produisent des formes à partir de regles, de contraintes et de boucles de sélection et ses
+  liens avec les projets, technologies et publications du graphe.
 locale: fr
 visibility: public
 publicationClass: canonical
@@ -27,47 +27,45 @@ authors:
   - id: ea:organization:electronic-artefacts
 publisher: ea:organization:electronic-artefacts
 scope:
-  - Rules
-  - Parameters
-  - Variation
-  - Selection
-  - Feedback
-  - Creative coding
+  - définition du sujet
+  - contexte d'usage
+  - liens avec le graphe
+  - références associées
 exclusions:
-  - A random output avec no meaningful constraints
-  - A manual batch process mislabeled comme generative
+  - les usages purement promotionnels sans définition vérifiable
+  - les exemples déconnectés des sources, relations ou contraintes du graphe
 claims:
-  - Generative systèmes sont best understood through constraints, not novelty
-    alone.
-  - Creative authorship dans generative work includes rule design, material
-    selection et curation de outputs.
+  - Système génératif devient utile lorsque sa définition reste reliée à des sources, des pratiques
+    et des objets observables.
+  - La fiche sert de vocabulaire commun pour relier projets, publications et technologies sans
+    mélanger les langues.
 tags:
   - Generative Art
-  - Programmation créative
-  - Composition algorithmique
-  - Systèmes
+  - programmation créative
+  - Algorithmic Composition
+  - Systems
   - Simulation
 disciplines:
   - Digital Art
-  - Programmation créative
-  - Design
+  - programmation créative
+  - design
   - Music Production
-  - Systèmes Design
+  - conception de systèmes
 translationOf: ea:concept:generative-system
 ---
 
 ## Rôle
 
-Système génératif est documenté ici comme une entrée française du graphe public d’Electronic Artefacts. Generative systèmes connect programmation créative, cybernetics, algorithmic composition, simulation, design outils et AI by shifting authorship toward rules, feedback et selection.
+Système génératif est documenté comme notion de référence pour comprendre les systèmes qui produisent des formes à partir de regles, de contraintes et de boucles de sélection.
 
 ## Usage
 
-Cette notion sert à relier les projets, publications et technologies qui partagent un même vocabulaire de conception. A generative système est un rule-based, procedural ou computational arrangement that produces variable outputs from defined constraints, materials et processes.
+Cette fiche relie la notion aux projets, publications et technologies qui partagent un même vocabulaire de conception. Elle sert de point d'appui pour naviguer dans le graphe en version française.
 
-## Domaines
+## Périmètre
 
-Cette entrée croise notamment les domaines suivants : Digital Art, Programmation créative, Design, Music Production, Systèmes Design.
+La notion est abordée par ses définitions, ses usages, ses limites et ses relations avec les autres objets documentés.
 
 ## Références
 
-Les références principales sont conservées dans la fiche canonique et dans le graphe de connaissance public.
+Les sources associées sont conservées dans la fiche canonique du graphe.

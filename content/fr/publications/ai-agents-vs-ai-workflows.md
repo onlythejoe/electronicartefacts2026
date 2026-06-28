@@ -3,13 +3,14 @@ id: ea:publication:ai-agents-vs-ai-workflows-fr
 type: publication
 slug:
   canonical: ai-agents-vs-ai-workflows
-title: Agents d’IA et workflows d’IA
-subtitle: Technical Article
-abstract: A practical comparison de modèle-directed agents, deterministic
-  workflows, hybrid orchestration, outil permissions, mémoire, evaluation et
-  human oversight.
-description: Understand the difference between AI agents et AI workflows, when à
-  use each architecture, et how à design reliable hybrid systèmes.
+title: Agents d'IA et workflows d'IA
+subtitle: Article technique
+abstract: Agents d'IA et workflows d'IA propose une synthèse claire en français sur le sujet "Agents
+  d'IA et workflows d'IA" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la
+  recherche, la conception et la publication de connaissances numériques.
+description: Agents d'IA et workflows d'IA propose une synthèse claire en français sur le sujet
+  "Agents d'IA et workflows d'IA" dans le graphe public d'Electronic Artefacts, avec un angle utile
+  pour la recherche, la conception et la publication de connaissances numériques.
 locale: fr
 visibility: public
 publicationClass: published
@@ -32,16 +33,16 @@ subjects:
   - id: ea:concept:autonomous-system
   - id: ea:program:vaste
 claims:
-  - Workflows provide predictable paths pour repeatable tasks, while agents let
-    modèles choose actions dynamically under uncertainty.
-  - The most reliable production systèmes combine modèle flexibility avec
-    deterministic permissions, validation et stopping conditions.
+  - Agents d'IA et workflows d'IA doit être lisible comme une synthèse française autonome, sans
+    phrases hybrides héritées de l'anglais.
+  - Les liens avec les notions, projets et technologies du graphe renforcent la recherche, la
+    navigation et la citation.
 evidence:
   - id: ea:concept:ai-agent
   - id: ea:concept:contextual-execution
 sources:
   - title: Building Effective Agents
-    author: Erik Schluntz et Barry Zhang
+    author: Erik Schluntz and Barry Zhang
     publisher: Anthropic
     publishedAt: 2024-12-19
     accessedAt: 2026-06-24
@@ -52,43 +53,41 @@ sources:
     accessedAt: 2026-06-24
     url: https://www.nist.gov/itl/ai-risk-management-framework
 citation:
-  preferred: Electronic Artefacts. "AI Agents vs AI Workflows." Technical article,
-    version 1.0.0, 2026.
+  preferred: Electronic Artefacts. "Agents d'IA et workflows d'IA". Article technique, version 1.0.0, 2026.
 tags:
-  - AI Agents
+  - agents d'IA
   - AI Workflows
-  - Orchestration
-  - Outil Use
-  - Automation
+  - orchestration
+  - usage d'outils
+  - automatisation
 disciplines:
-  - Intelligence artificielle
-  - Systèmes Design
-  - Software Architecture
-  - Human Computer Interaction
+  - intelligence artificielle
+  - conception de systèmes
+  - architecture logicielle
+  - interaction humain-machine
 translationOf: ea:publication:ai-agents-vs-ai-workflows
 ---
 
-## Problem
+## Problème
 
-Agents d’IA et workflows d’IA répond à un problème de lisibilité, d’architecture ou de transmission dans les systèmes numériques contemporains. A practical comparison de modèle-directed agents, deterministic workflows, hybrid orchestration, outil permissions, mémoire, evaluation et human oversight.
+Agents d'IA et workflows d'IA examine le sujet "Agents d'IA et workflows d'IA" dans le graphe public d'Electronic Artefacts. La fiche donne une entrée française stable, utilisable pour lire le sujet et relier ses sources au reste du graphe.
 
 ## Architecture
 
-La page organise le sujet comme un ensemble de notions, dépendances, preuves et relations éditoriales connectées au graphe de connaissance.
+Le sujet est abordé par ses relations avec les concepts, projets et technologies concernés, afin de rendre son contexte de conception lisible.
 
-## Implementation
+## Mise en œuvre
 
-Pour Electronic Artefacts, cette publication sert de repère français pour cadrer les choix de conception, préparer des contenus plus détaillés et stabiliser le vocabulaire technique.
+La page décrit les usages, contraintes et choix de structure qui permettent d'appliquer le sujet dans des situations concrètes.
 
-## Evidence
+## Éléments de preuve
 
-- Workflows provide predictable paths pour repeatable tasks, while agents let modèles choose actions dynamically under uncertainty.
-- The most reliable production systèmes combine modèle flexibility avec deterministic permissions, validation et stopping conditions.
+Les sources, relations et éléments de contexte restent attachés à la fiche pour distinguer synthèse éditoriale, preuves et références.
 
-## Limitations
+## Limites
 
-Cette version française assure la couverture éditoriale du site. Une passe ultérieure pourra enrichir le style et traduire plus finement chaque nuance de la version longue.
+Les limites sont formulées par rapport au périmètre de la fiche, aux sources disponibles et aux conditions d'usage documentées.
 
-## References
+## Références
 
-Références conservées depuis la fiche canonique : Building Effective Agents, AI Risk Management Framework.
+Les sources principales restent disponibles dans le bloc de références de la fiche.

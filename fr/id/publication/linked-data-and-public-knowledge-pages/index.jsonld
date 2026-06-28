@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/publications/linked-data-and-public-knowledge-pages/#webpage",
       "url": "https://electronicartefacts.com/fr/publications/linked-data-and-public-knowledge-pages/",
       "name": "Données liées et pages publiques de connaissance",
-      "description": "A technical article on Données liées, JSON-LD, canonical URLs, identifiers et SEO pour static knowledge plateformes.",
+      "description": "Données liées et pages publiques de connaissance propose une synthèse claire en français sur le sujet \"Données liées et pages publiques de connaissance\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
@@ -35,8 +35,8 @@
       "identifier": "ea:publication:linked-data-and-public-knowledge-pages-fr",
       "name": "Données liées et pages publiques de connaissance",
       "headline": "Données liées et pages publiques de connaissance",
-      "abstract": "This article explains how public knowledge pages can use stable URLs, JSON-LD, RDF-oriented identifiers et internal links à become useful à humans, search engines et AI systèmes.",
-      "description": "This article explains how public knowledge pages can use stable URLs, JSON-LD, RDF-oriented identifiers et internal links à become useful à humans, search engines et AI systèmes.",
+      "abstract": "Données liées et pages publiques de connaissance propose une synthèse claire en français sur le sujet \"Données liées et pages publiques de connaissance\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
+      "description": "Données liées et pages publiques de connaissance propose une synthèse claire en français sur le sujet \"Données liées et pages publiques de connaissance\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
       "url": "https://electronicartefacts.com/fr/publications/linked-data-and-public-knowledge-pages/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/publications/linked-data-and-public-knowledge-pages/#webpage"
@@ -57,13 +57,13 @@
         }
       ],
       "keywords": [
-        "Données liées",
+        "Linked Data",
         "JSON-LD",
-        "Structured Données",
+        "Structured Data",
         "SEO",
         "Knowledge Pages",
         "Web Development",
-        "Systèmes de connaissance"
+        "Knowledge Systems"
       ],
       "inLanguage": "fr",
       "dateCreated": "2026-06-23",
@@ -76,12 +76,12 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 172,
+      "wordCount": 145,
       "citation": [
-        "Electronic Artefacts. \"Données liées et Public Knowledge Pages.\" Technical article, version 1.0.0, 2026.",
+        "Electronic Artefacts. \"Données liées et pages publiques de connaissance\". Article technique, version 1.0.0, 2026.",
         {
           "@type": "CreativeWork",
-          "name": "Cool URIs pour the Sémantique Web",
+          "name": "Cool URIs for the Semantic Web",
           "url": "https://www.w3.org/TR/cooluris/",
           "publisher": "W3C",
           "datePublished": "2008-12-03"
@@ -125,16 +125,16 @@
       "articleSection": [
         "Web Development",
         "SEO",
-        "Systèmes de connaissance",
-        "Données liées",
+        "Knowledge Systems",
+        "Linked Data",
         "JSON-LD",
-        "Structured Données"
+        "Structured Data"
       ],
       "timeRequired": "PT1M",
       "isBasedOn": [
         {
           "@type": "CreativeWork",
-          "name": "Cool URIs pour the Sémantique Web",
+          "name": "Cool URIs for the Semantic Web",
           "url": "https://www.w3.org/TR/cooluris/",
           "publisher": "W3C",
           "datePublished": "2008-12-03"

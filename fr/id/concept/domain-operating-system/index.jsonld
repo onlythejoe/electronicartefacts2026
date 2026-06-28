@@ -5,15 +5,15 @@
       "@type": "WebPage",
       "@id": "https://electronicartefacts.com/fr/knowledge/concepts/domain-operating-system/#webpage",
       "url": "https://electronicartefacts.com/fr/knowledge/concepts/domain-operating-system/",
-      "name": "Système d’exploitation de domaine",
-      "description": "An Electronic Artefacts concept pour business operating systèmes, runtime engines et shared domain plateformes.",
+      "name": "Système d'exploitation de domaine",
+      "description": "Système d'exploitation de domaine définit un repère conceptuel en français pour comprendre le sujet \"Système d'exploitation de domaine\" dans le graphe public d'Electronic Artefacts et ses liens avec les projets, technologies et publications du graphe.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
       "primaryImageOfPage": {
         "@type": "ImageObject",
         "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-search.jpg",
-        "description": "Système d’exploitation de domaine"
+        "description": "Système d'exploitation de domaine"
       },
       "breadcrumb": {
         "@id": "https://electronicartefacts.com/fr/knowledge/concepts/domain-operating-system/#breadcrumb"
@@ -33,9 +33,9 @@
       "@type": "DefinedTerm",
       "@id": "https://electronicartefacts.com/fr/id/concept/domain-operating-system/",
       "identifier": "ea:concept:domain-operating-system-fr",
-      "name": "Système d’exploitation de domaine",
-      "abstract": "A domain operating système turns repeated domain rules into reusable infrastructure without claiming à replace a general-purpose computer operating système.",
-      "description": "A domain operating système est un shared runtime et information layer that coordinates identités, entités, permissions, workflows, events et interfaces pour a specific field de activity.",
+      "name": "Système d'exploitation de domaine",
+      "abstract": "Système d'exploitation de domaine définit un repère conceptuel en français pour comprendre le sujet \"Système d'exploitation de domaine\" dans le graphe public d'Electronic Artefacts et ses liens avec les projets, technologies et publications du graphe.",
+      "description": "Système d'exploitation de domaine désigne le sujet \"Système d'exploitation de domaine\" dans le graphe public d'Electronic Artefacts.",
       "url": "https://electronicartefacts.com/fr/knowledge/concepts/domain-operating-system/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/knowledge/concepts/domain-operating-system/#webpage"
@@ -43,7 +43,7 @@
       "image": {
         "@type": "ImageObject",
         "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-search.jpg",
-        "description": "Système d’exploitation de domaine"
+        "description": "Système d'exploitation de domaine"
       },
       "author": [
         {
@@ -59,12 +59,12 @@
         "Domain OS",
         "Business OS",
         "Runtime Engine",
-        "Plateforme Architecture",
+        "Platform Architecture",
         "Composability",
-        "Systèmes Design",
-        "Software Architecture",
+        "conception de systèmes",
+        "architecture logicielle",
         "Programming",
-        "Systèmes de connaissance"
+        "Knowledge Systems"
       ],
       "inLanguage": "fr",
       "dateCreated": "2026-06-24",
@@ -77,7 +77,7 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 115,
+      "wordCount": 88,
       "inDefinedTermSet": "https://electronicartefacts.com/knowledge/concepts/",
       "termCode": "domain-operating-system"
     },
@@ -185,7 +185,7 @@
         {
           "@type": "ListItem",
           "position": 3,
-          "name": "Système d’exploitation de domaine",
+          "name": "Système d'exploitation de domaine",
           "item": "https://electronicartefacts.com/fr/knowledge/concepts/domain-operating-system/"
         }
       ]

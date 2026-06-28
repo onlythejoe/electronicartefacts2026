@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/knowledge/technologies/activitypub/#webpage",
       "url": "https://electronicartefacts.com/fr/knowledge/technologies/activitypub/",
       "name": "ActivityPub",
-      "description": "Fiche technologique consacrée à la fédération, à la culture des réseaux et aux infrastructures du web social.",
+      "description": "ActivityPub est présenté comme une technologie de référence pour comprendre son rôle dans l'écosystème Electronic Artefacts, ses usages, ses limites et sa place dans les systèmes numériques contemporains.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
@@ -34,8 +34,8 @@
       "@id": "https://electronicartefacts.com/fr/id/technology/activitypub/",
       "identifier": "ea:technology:activitypub-fr",
       "name": "ActivityPub",
-      "abstract": "ActivityPub est un protocole décentralisé normalisé par le W3C pour l’échange fédéré d’activités entre serveurs et entre clients et serveurs.",
-      "description": "ActivityPub est un protocole décentralisé normalisé par le W3C pour l’échange fédéré d’activités entre serveurs et entre clients et serveurs.",
+      "abstract": "ActivityPub est présenté comme une technologie de référence pour comprendre son rôle dans l'écosystème Electronic Artefacts, ses usages, ses limites et sa place dans les systèmes numériques contemporains.",
+      "description": "ActivityPub est présenté comme une technologie de référence pour comprendre son rôle dans l'écosystème Electronic Artefacts, ses usages, ses limites et sa place dans les systèmes numériques contemporains.",
       "url": "https://electronicartefacts.com/fr/knowledge/technologies/activitypub/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/knowledge/technologies/activitypub/#webpage"
@@ -57,11 +57,11 @@
       ],
       "keywords": [
         "ActivityPub",
-        "Fédération",
-        "Web social",
-        "Culture Internet",
-        "Culture des réseaux",
-        "Développement web"
+        "Federation",
+        "Social Web",
+        "Internet Culture",
+        "Network Culture",
+        "Web Development"
       ],
       "inLanguage": "fr",
       "dateCreated": "2026-06-24",
@@ -74,7 +74,7 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 45,
+      "wordCount": 93,
       "citation": [
         {
           "@type": "CreativeWork",

@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/knowledge/technologies/transformer-architecture/#webpage",
       "url": "https://electronicartefacts.com/fr/knowledge/technologies/transformer-architecture/",
       "name": "Architecture Transformer",
-      "description": "Fiche technologique consacrée à l’architecture qui sous-tend de nombreux modèles modernes de langage et multimodaux.",
+      "description": "Architecture Transformer est présenté comme une technologie de référence pour comprendre son rôle dans l'écosystème Electronic Artefacts, ses usages, ses limites et sa place dans les systèmes numériques contemporains.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
@@ -34,8 +34,8 @@
       "@id": "https://electronicartefacts.com/fr/id/technology/transformer-architecture/",
       "identifier": "ea:technology:transformer-architecture-fr",
       "name": "Architecture Transformer",
-      "abstract": "Le transformer est une architecture de réseau neuronal fondée sur des mécanismes d’attention et le traitement parallèle de séquences.",
-      "description": "Le transformer est une architecture de réseau neuronal fondée sur des mécanismes d’attention et le traitement parallèle de séquences.",
+      "abstract": "Architecture Transformer est présenté comme une technologie de référence pour comprendre son rôle dans l'écosystème Electronic Artefacts, ses usages, ses limites et sa place dans les systèmes numériques contemporains.",
+      "description": "Architecture Transformer est présenté comme une technologie de référence pour comprendre son rôle dans l'écosystème Electronic Artefacts, ses usages, ses limites et sa place dans les systèmes numériques contemporains.",
       "url": "https://electronicartefacts.com/fr/knowledge/technologies/transformer-architecture/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/knowledge/technologies/transformer-architecture/#webpage"
@@ -58,9 +58,9 @@
       "keywords": [
         "Transformer",
         "Attention",
-        "Réseaux neuronaux",
-        "Intelligence artificielle",
-        "Apprentissage automatique"
+        "Neural Networks",
+        "intelligence artificielle",
+        "Machine Learning"
       ],
       "inLanguage": "fr",
       "dateCreated": "2026-06-24",
@@ -73,7 +73,7 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 70,
+      "wordCount": 95,
       "citation": [
         {
           "@type": "CreativeWork",

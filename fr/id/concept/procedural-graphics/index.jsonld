@@ -5,15 +5,15 @@
       "@type": "WebPage",
       "@id": "https://electronicartefacts.com/fr/knowledge/concepts/procedural-graphics/#webpage",
       "url": "https://electronicartefacts.com/fr/knowledge/concepts/procedural-graphics/",
-      "name": "Graphisme procédural",
-      "description": "A canonical concept record pour rule-based visuel generation.",
+      "name": "Graphisme procedural",
+      "description": "Graphisme procedural définit un repère conceptuel en français pour comprendre les images et formes visuelles generees par algorithmes, shaders ou regles parametriques et ses liens avec les projets, technologies et publications du graphe.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
       "primaryImageOfPage": {
         "@type": "ImageObject",
         "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-search.jpg",
-        "description": "Graphisme procédural"
+        "description": "Graphisme procedural"
       },
       "breadcrumb": {
         "@id": "https://electronicartefacts.com/fr/knowledge/concepts/procedural-graphics/#breadcrumb"
@@ -33,9 +33,9 @@
       "@type": "DefinedTerm",
       "@id": "https://electronicartefacts.com/fr/id/concept/procedural-graphics/",
       "identifier": "ea:concept:procedural-graphics-fr",
-      "name": "Graphisme procédural",
-      "abstract": "Procedural grapheics connect shaders, generative systèmes, motion design, programmation créative, visuel culture et real-time web interfaces.",
-      "description": "Procedural grapheics sont images ou visuel systèmes generated from rules, algorithms, parameters, simulation ou code rather than only manually drawn assets.",
+      "name": "Graphisme procedural",
+      "abstract": "Graphisme procedural définit un repère conceptuel en français pour comprendre les images et formes visuelles generees par algorithmes, shaders ou regles parametriques et ses liens avec les projets, technologies et publications du graphe.",
+      "description": "Graphisme procedural désigne les images et formes visuelles generees par algorithmes, shaders ou regles parametriques.",
       "url": "https://electronicartefacts.com/fr/knowledge/concepts/procedural-graphics/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/knowledge/concepts/procedural-graphics/#webpage"
@@ -43,7 +43,7 @@
       "image": {
         "@type": "ImageObject",
         "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-search.jpg",
-        "description": "Graphisme procédural"
+        "description": "Graphisme procedural"
       },
       "author": [
         {
@@ -56,14 +56,14 @@
         }
       ],
       "keywords": [
-        "Graphisme procédural",
+        "Procedural Graphics",
         "Shaders",
         "WebGL",
         "Generative Art",
-        "Programmation créative",
-        "Visuel Culture",
+        "programmation créative",
+        "Visual Culture",
         "Digital Art",
-        "Motion design"
+        "Motion Design"
       ],
       "inLanguage": "fr",
       "dateCreated": "2026-06-24",
@@ -76,7 +76,7 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 104,
+      "wordCount": 86,
       "inDefinedTermSet": "https://electronicartefacts.com/knowledge/concepts/",
       "termCode": "procedural-graphics"
     },
@@ -184,7 +184,7 @@
         {
           "@type": "ListItem",
           "position": 3,
-          "name": "Graphisme procédural",
+          "name": "Graphisme procedural",
           "item": "https://electronicartefacts.com/fr/knowledge/concepts/procedural-graphics/"
         }
       ]

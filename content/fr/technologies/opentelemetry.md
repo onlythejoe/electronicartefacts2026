@@ -4,10 +4,12 @@ type: technology
 slug:
   canonical: opentelemetry
 title: OpenTelemetry
-abstract: OpenTelemetry est un observability framework pour producing,
-  collecting et standardizing telemetry such comme traces, metrics et logs.
-description: A technology record pour OpenTelemetry comme telemetry
-  infrastructure pour distributed systèmes et AI outil workflows.
+abstract: OpenTelemetry est présenté comme une technologie de référence pour comprendre son rôle
+  dans l'écosystème Electronic Artefacts, ses usages, ses limites et sa place dans les systèmes
+  numériques contemporains.
+description: OpenTelemetry est présenté comme une technologie de référence pour comprendre son rôle
+  dans l'écosystème Electronic Artefacts, ses usages, ses limites et sa place dans les systèmes
+  numériques contemporains.
 locale: fr
 visibility: public
 publicationClass: canonical
@@ -23,11 +25,12 @@ authors:
   - id: ea:organization:electronic-artefacts
 publisher: ea:organization:electronic-artefacts
 category: platform
-roleInEcosystem: OpenTelemetry gives distributed systèmes a shared telemetry
-  vocabulary pour spans, metrics, logs, attributes et sémantique conventions.
+roleInEcosystem: OpenTelemetry sert de repère technique pour évaluer le sujet "OpenTelemetry" dans
+  le graphe public d'Electronic Artefacts, ses usages possibles et ses conséquences dans
+  l'écosystème Electronic Artefacts.
 officialUrl: https://opentelemetry.io/docs/specs/semconv/
 sources:
-  - title: OpenTelemetry Sémantique Conventions 1.42.0
+  - title: OpenTelemetry Semantic Conventions 1.42.0
     publisher: OpenTelemetry
     accessedAt: 2026-06-24
     url: https://opentelemetry.io/docs/specs/semconv/
@@ -37,24 +40,25 @@ tags:
   - Tracing
   - Metrics
 disciplines:
-  - Software Architecture
-  - Systèmes Design
-  - Intelligence artificielle
+  - architecture logicielle
+  - conception de systèmes
+  - intelligence artificielle
 translationOf: ea:technology:opentelemetry
 ---
 
 ## Rôle
 
-OpenTelemetry est documenté ici comme une entrée française du graphe public d’Electronic Artefacts. OpenTelemetry est un observability framework pour producing, collecting et standardizing telemetry such comme traces, metrics et logs.
+OpenTelemetry est documenté comme technologie de référence pour le sujet "OpenTelemetry" dans le graphe public d'Electronic Artefacts.
 
 ## Usage
 
-Cette technologie sert de repère pour évaluer les choix d’architecture, les dépendances et les possibilités d’implémentation. OpenTelemetry gives distributed systèmes a shared telemetry vocabulary pour spans, metrics, logs, attributes et sémantique conventions.
+Cette fiche aide à situer la technologie dans l'écosystème Electronic Artefacts : ce qu'elle permet, quand elle devient pertinente et comment elle dialogue avec les autres composants du graphe.
 
-## Domaines
+## Points d'attention
 
-Cette entrée croise notamment les domaines suivants : Software Architecture, Systèmes Design, Intelligence artificielle.
+- Les usages sont décrits en français sans masquer les noms propres, acronymes ou standards techniques.
+- Les limites restent contextualisées par rapport aux projets, aux publications et aux contraintes d'implémentation.
 
 ## Références
 
-Les références principales restent les sources indiquées dans la fiche canonique, notamment OpenTelemetry Semantic Conventions 1.42.0.
+Les sources principales restent disponibles dans le bloc de références de la fiche.

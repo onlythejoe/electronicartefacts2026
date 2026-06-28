@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/knowledge/technologies/cloudevents/#webpage",
       "url": "https://electronicartefacts.com/fr/knowledge/technologies/cloudevents/",
       "name": "CloudEvents",
-      "description": "Fiche technologique consacrée aux métadonnées d’événements interopérables.",
+      "description": "CloudEvents est présenté comme une technologie de référence pour comprendre son rôle dans l'écosystème Electronic Artefacts, ses usages, ses limites et sa place dans les systèmes numériques contemporains.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
@@ -34,8 +34,8 @@
       "@id": "https://electronicartefacts.com/fr/id/technology/cloudevents/",
       "identifier": "ea:technology:cloudevents-fr",
       "name": "CloudEvents",
-      "abstract": "CloudEvents est une spécification de la CNCF qui décrit les données d’événements dans une enveloppe commune et portable entre services et plateformes.",
-      "description": "CloudEvents est une spécification de la CNCF qui décrit les données d’événements dans une enveloppe commune et portable entre services et plateformes.",
+      "abstract": "CloudEvents est présenté comme une technologie de référence pour comprendre son rôle dans l'écosystème Electronic Artefacts, ses usages, ses limites et sa place dans les systèmes numériques contemporains.",
+      "description": "CloudEvents est présenté comme une technologie de référence pour comprendre son rôle dans l'écosystème Electronic Artefacts, ses usages, ses limites et sa place dans les systèmes numériques contemporains.",
       "url": "https://electronicartefacts.com/fr/knowledge/technologies/cloudevents/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/knowledge/technologies/cloudevents/#webpage"
@@ -57,11 +57,11 @@
       ],
       "keywords": [
         "CloudEvents",
-        "Schéma événementiel",
-        "Interopérabilité",
-        "Architecture logicielle",
-        "Systèmes distribués",
-        "Programmation"
+        "Event Schema",
+        "Interoperability",
+        "architecture logicielle",
+        "Distributed Systems",
+        "Programming"
       ],
       "inLanguage": "fr",
       "dateCreated": "2026-06-24",
@@ -74,7 +74,7 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 44,
+      "wordCount": 93,
       "citation": [
         {
           "@type": "CreativeWork",

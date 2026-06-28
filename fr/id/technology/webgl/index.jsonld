@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/knowledge/technologies/webgl/#webpage",
       "url": "https://electronicartefacts.com/fr/knowledge/technologies/webgl/",
       "name": "WebGL",
-      "description": "Fiche technologique consacrée aux graphismes dans le navigateur et aux systèmes visuels fondés sur les shaders.",
+      "description": "WebGL est présenté comme une technologie de référence pour comprendre son rôle dans l'écosystème Electronic Artefacts, ses usages, ses limites et sa place dans les systèmes numériques contemporains.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
@@ -34,8 +34,8 @@
       "@id": "https://electronicartefacts.com/fr/id/technology/webgl/",
       "identifier": "ea:technology:webgl-fr",
       "name": "WebGL",
-      "abstract": "WebGL est une technologie du web permettant de produire des graphismes interactifs en deux ou trois dimensions dans les navigateurs compatibles grâce à l’accélération GPU.",
-      "description": "WebGL est une technologie du web permettant de produire des graphismes interactifs en deux ou trois dimensions dans les navigateurs compatibles grâce à l’accélération GPU.",
+      "abstract": "WebGL est présenté comme une technologie de référence pour comprendre son rôle dans l'écosystème Electronic Artefacts, ses usages, ses limites et sa place dans les systèmes numériques contemporains.",
+      "description": "WebGL est présenté comme une technologie de référence pour comprendre son rôle dans l'écosystème Electronic Artefacts, ses usages, ses limites et sa place dans les systèmes numériques contemporains.",
       "url": "https://electronicartefacts.com/fr/knowledge/technologies/webgl/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/knowledge/technologies/webgl/#webpage"
@@ -58,10 +58,10 @@
       "keywords": [
         "WebGL",
         "Shaders",
-        "Graphismes web",
-        "Code créatif",
-        "Développement web",
-        "Art numérique"
+        "Browser Graphics",
+        "programmation créative",
+        "Web Development",
+        "Digital Art"
       ],
       "inLanguage": "fr",
       "dateCreated": "2026-06-24",
@@ -74,7 +74,7 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 57,
+      "wordCount": 93,
       "citation": [
         {
           "@type": "CreativeWork",

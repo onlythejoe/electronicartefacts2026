@@ -4,10 +4,12 @@ type: technology
 slug:
   canonical: web-audio-api
 title: Web Audio API
-abstract: The Web Audio API est un navigateur plateforme technology pour
-  routing, synthesizing, processing et analyzing audio through connected audio
-  nodes.
-description: A technology record pour navigateur-native audio processing et synthesis.
+abstract: Web Audio API est présenté comme une technologie de référence pour comprendre son rôle
+  dans l'écosystème Electronic Artefacts, ses usages, ses limites et sa place dans les systèmes
+  numériques contemporains.
+description: Web Audio API est présenté comme une technologie de référence pour comprendre son rôle
+  dans l'écosystème Electronic Artefacts, ses usages, ses limites et sa place dans les systèmes
+  numériques contemporains.
 locale: fr
 visibility: public
 publicationClass: canonical
@@ -23,9 +25,9 @@ authors:
   - id: ea:organization:electronic-artefacts
 publisher: ea:organization:electronic-artefacts
 category: platform
-roleInEcosystem: The Web Audio API supports interactive sound, analysis,
-  synthesis et navigateur-based audio outils pour Electronic Artefacts
-  recherche.
+roleInEcosystem: Web Audio API sert de repère technique pour évaluer le sujet "Web Audio API" dans
+  le graphe public d'Electronic Artefacts, ses usages possibles et ses conséquences dans
+  l'écosystème Electronic Artefacts.
 officialUrl: https://www.w3.org/TR/webaudio/
 sources:
   - title: Web Audio API 1.1
@@ -35,27 +37,28 @@ sources:
     url: https://www.w3.org/TR/webaudio/
 tags:
   - Web Audio API
-  - Navigateur Audio
-  - Audio Graphe
+  - Browser Audio
+  - Audio Graph
 disciplines:
   - Audio Engineering
   - Web Development
-  - Programmation créative
+  - programmation créative
 translationOf: ea:technology:web-audio-api
 ---
 
 ## Rôle
 
-Web Audio API est documenté ici comme une entrée française du graphe public d’Electronic Artefacts. The Web Audio API est un navigateur plateforme technology pour routing, synthesizing, processing et analyzing audio through connected audio nodes.
+Web Audio API est documenté comme technologie de référence pour le sujet "Web Audio API" dans le graphe public d'Electronic Artefacts.
 
 ## Usage
 
-Cette technologie sert de repère pour évaluer les choix d’architecture, les dépendances et les possibilités d’implémentation. The Web Audio API supports interactive sound, analysis, synthesis et navigateur-based audio outils pour Electronic Artefacts recherche.
+Cette fiche aide à situer la technologie dans l'écosystème Electronic Artefacts : ce qu'elle permet, quand elle devient pertinente et comment elle dialogue avec les autres composants du graphe.
 
-## Domaines
+## Points d'attention
 
-Cette entrée croise notamment les domaines suivants : Audio Engineering, Web Development, Programmation créative.
+- Les usages sont décrits en français sans masquer les noms propres, acronymes ou standards techniques.
+- Les limites restent contextualisées par rapport aux projets, aux publications et aux contraintes d'implémentation.
 
 ## Références
 
-Les références principales restent les sources indiquées dans la fiche canonique, notamment Web Audio API 1.1.
+Les sources principales restent disponibles dans le bloc de références de la fiche.

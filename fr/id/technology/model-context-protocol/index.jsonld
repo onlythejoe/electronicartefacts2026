@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/knowledge/technologies/model-context-protocol/#webpage",
       "url": "https://electronicartefacts.com/fr/knowledge/technologies/model-context-protocol/",
       "name": "Model Context Protocol",
-      "description": "A technology record pour MCP comme an integration protocole pour outil-using AI applications, resources et contextual workflows.",
+      "description": "Model Context Protocol est présenté comme une technologie de référence pour comprendre son rôle dans l'écosystème Electronic Artefacts, ses usages, ses limites et sa place dans les systèmes numériques contemporains.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
@@ -37,8 +37,8 @@
       "alternateName": [
         "MCP"
       ],
-      "abstract": "Modèle Context Protocole est un open protocole pour connecting language-modèle applications à external context, prompts et executable outils.",
-      "description": "Modèle Context Protocole est un open protocole pour connecting language-modèle applications à external context, prompts et executable outils.",
+      "abstract": "Model Context Protocol est présenté comme une technologie de référence pour comprendre son rôle dans l'écosystème Electronic Artefacts, ses usages, ses limites et sa place dans les systèmes numériques contemporains.",
+      "description": "Model Context Protocol est présenté comme une technologie de référence pour comprendre son rôle dans l'écosystème Electronic Artefacts, ses usages, ses limites et sa place dans les systèmes numériques contemporains.",
       "url": "https://electronicartefacts.com/fr/knowledge/technologies/model-context-protocol/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/knowledge/technologies/model-context-protocol/#webpage"
@@ -60,12 +60,12 @@
       ],
       "keywords": [
         "MCP",
-        "AI Outils",
-        "Context Protocole",
+        "outils d'IA",
+        "protocole de contexte",
         "JSON-RPC",
-        "Intelligence artificielle",
-        "Software Architecture",
-        "Systèmes Design"
+        "intelligence artificielle",
+        "architecture logicielle",
+        "conception de systèmes"
       ],
       "inLanguage": "fr",
       "dateCreated": "2026-06-24",
@@ -78,11 +78,11 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 100,
+      "wordCount": 97,
       "citation": [
         {
           "@type": "CreativeWork",
-          "name": "Modèle Context Protocole Specification",
+          "name": "Model Context Protocol Specification",
           "url": "https://modelcontextprotocol.io/specification/2025-06-18",
           "publisher": "Model Context Protocol"
         }

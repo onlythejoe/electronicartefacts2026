@@ -5,10 +5,10 @@
   "slug": {
     "canonical": "open-source-as-cultural-infrastructure"
   },
-  "title": "L’open source comme infrastructure culturelle",
-  "subtitle": "Technical Article",
-  "abstract": "This article frames open source comme culturel infrastructure, explaining licenses, maintenance, creative outils, dependency chains, commons et public systèmes de connaissance.",
-  "description": "A technical article on open source software, maintainership, programmation créative, infrastructure et Electronic Artefacts knowledge culture.",
+  "title": "L'open source comme infrastructure culturelle",
+  "subtitle": "Article technique",
+  "abstract": "L'open source comme infrastructure culturelle propose une synthèse claire en français sur le sujet \"L'open source comme infrastructure culturelle\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
+  "description": "L'open source comme infrastructure culturelle propose une synthèse claire en français sur le sujet \"L'open source comme infrastructure culturelle\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
   "locale": "fr",
   "visibility": "public",
   "publicationClass": "published",
@@ -28,20 +28,20 @@
   ],
   "publisher": "ea:organization:electronic-artefacts",
   "tags": [
-    "Open source",
-    "Programmation créative",
+    "Open Source",
+    "programmation créative",
     "Infrastructure",
     "Maintainers"
   ],
   "disciplines": [
-    "Open source",
+    "Open Source",
     "Programming",
-    "Programmation créative",
-    "Culture Internet"
+    "programmation créative",
+    "Internet Culture"
   ],
   "sources": [
     {
-      "title": "The Open source Definition",
+      "title": "The Open Source Definition",
       "url": "https://opensource.org/osd",
       "publisher": "Open Source Initiative",
       "accessedAt": "2026-06-24"
@@ -69,8 +69,8 @@
     }
   ],
   "claims": [
-    "Open source is culturel infrastructure because shared code shapes what artists, rechercheers et developers can build.",
-    "Access à code is not enough; open source depends on licensing, maintenance, gouvernance et documentation."
+    "L'open source comme infrastructure culturelle doit être lisible comme une synthèse française autonome, sans phrases hybrides héritées de l'anglais.",
+    "Les liens avec les notions, projets et technologies du graphe renforcent la recherche, la navigation et la citation."
   ],
   "evidence": [
     {
@@ -81,22 +81,22 @@
     }
   ],
   "citation": {
-    "preferred": "Electronic Artefacts. \"Open source comme Culturel Infrastructure.\" Technical article, version 1.0.0, 2026."
+    "preferred": "Electronic Artefacts. \"L'open source comme infrastructure culturelle\". Article technique, version 1.0.0, 2026."
   },
-  "bodyHtml": "<h2 id=\"problem\">Problem</h2>\n<p>L’open source comme infrastructure culturelle répond à un problème de lisibilité, d’architecture ou de transmission dans les systèmes numériques contemporains. This article frames open source comme culturel infrastructure, explaining licenses, maintenance, creative outils, dependency chains, commons et public systèmes de connaissance.</p>\n<h2 id=\"architecture\">Architecture</h2>\n<p>La page organise le sujet comme un ensemble de notions, dépendances, preuves et relations éditoriales connectées au graphe de connaissance.</p>\n<h2 id=\"implementation\">Implementation</h2>\n<p>Pour Electronic Artefacts, cette publication sert de repère français pour cadrer les choix de conception, préparer des contenus plus détaillés et stabiliser le vocabulaire technique.</p>\n<h2 id=\"evidence\">Evidence</h2>\n<ul>\n<li>Open source is culturel infrastructure because shared code shapes what artists, rechercheers et developers can build.</li>\n<li>Access à code is not enough; open source depends on licensing, maintenance, gouvernance et documentation.</li>\n</ul>\n<h2 id=\"limitations\">Limitations</h2>\n<p>Cette version française assure la couverture éditoriale du site. Une passe ultérieure pourra enrichir le style et traduire plus finement chaque nuance de la version longue.</p>\n<h2 id=\"references\">References</h2>\n<p>Références conservées depuis la fiche canonique : The Open Source Definition, p5.js.</p>\n",
+  "bodyHtml": "<h2 id=\"probleme\">Problème</h2>\n<p>L’open source comme infrastructure culturelle examine le sujet “L’open source comme infrastructure culturelle” dans le graphe public d’Electronic Artefacts. La fiche donne une entrée française stable, utilisable pour lire le sujet et relier ses sources au reste du graphe.</p>\n<h2 id=\"architecture\">Architecture</h2>\n<p>Le sujet est abordé par ses relations avec les concepts, projets et technologies concernés, afin de rendre son contexte de conception lisible.</p>\n<h2 id=\"mise-en-uvre\">Mise en œuvre</h2>\n<p>La page décrit les usages, contraintes et choix de structure qui permettent d’appliquer le sujet dans des situations concrètes.</p>\n<h2 id=\"elements-de-preuve\">Éléments de preuve</h2>\n<p>Les sources, relations et éléments de contexte restent attachés à la fiche pour distinguer synthèse éditoriale, preuves et références.</p>\n<h2 id=\"limites\">Limites</h2>\n<p>Les limites sont formulées par rapport au périmètre de la fiche, aux sources disponibles et aux conditions d’usage documentées.</p>\n<h2 id=\"references\">Références</h2>\n<p>Les sources principales restent disponibles dans le bloc de références de la fiche.</p>\n",
   "headings": [
-    "Problem",
+    "Problème",
     "Architecture",
-    "Implementation",
-    "Evidence",
-    "Limitations",
-    "References"
+    "Mise en œuvre",
+    "Éléments de preuve",
+    "Limites",
+    "Références"
   ],
   "headingItems": [
     {
       "level": 2,
-      "title": "Problem",
-      "id": "problem"
+      "title": "Problème",
+      "id": "probleme"
     },
     {
       "level": 2,
@@ -105,22 +105,22 @@
     },
     {
       "level": 2,
-      "title": "Implementation",
-      "id": "implementation"
+      "title": "Mise en œuvre",
+      "id": "mise-en-uvre"
     },
     {
       "level": 2,
-      "title": "Evidence",
-      "id": "evidence"
+      "title": "Éléments de preuve",
+      "id": "elements-de-preuve"
     },
     {
       "level": 2,
-      "title": "Limitations",
-      "id": "limitations"
+      "title": "Limites",
+      "id": "limites"
     },
     {
       "level": 2,
-      "title": "References",
+      "title": "Références",
       "id": "references"
     }
   ]

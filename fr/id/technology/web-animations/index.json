@@ -6,8 +6,8 @@
     "canonical": "web-animations"
   },
   "title": "Web Animations",
-  "abstract": "Web Animations définit un modèle de temporalité et d’animation pour les changements de présentation des pages web ainsi que les interfaces de programmation associées.",
-  "description": "Fiche technologique consacrée au rythme, à la synchronisation et au mouvement des interfaces web.",
+  "abstract": "Web Animations est présenté comme une technologie de référence pour comprendre son rôle dans l'écosystème Electronic Artefacts, ses usages, ses limites et sa place dans les systèmes numériques contemporains.",
+  "description": "Web Animations est présenté comme une technologie de référence pour comprendre son rôle dans l'écosystème Electronic Artefacts, ses usages, ses limites et sa place dans les systèmes numériques contemporains.",
   "locale": "fr",
   "visibility": "public",
   "publicationClass": "canonical",
@@ -28,13 +28,13 @@
   "publisher": "ea:organization:electronic-artefacts",
   "tags": [
     "Web Animations",
-    "Motion design",
+    "Motion Design",
     "Interface"
   ],
   "disciplines": [
-    "Motion design",
-    "Développement web",
-    "Interaction humain-machine"
+    "Motion Design",
+    "Web Development",
+    "interaction humain-machine"
   ],
   "sources": [
     {
@@ -46,12 +46,13 @@
     }
   ],
   "category": "platform",
-  "roleInEcosystem": "Web Animations aide Electronic Artefacts à traiter le mouvement comme une couche temporelle d’interface et de narration plutôt que comme une décoration.",
+  "roleInEcosystem": "Web Animations sert de repère technique pour évaluer le sujet \"Web Animations\" dans le graphe public d'Electronic Artefacts, ses usages possibles et ses conséquences dans l'écosystème Electronic Artefacts.",
   "officialUrl": "https://www.w3.org/TR/web-animations-1/",
-  "bodyHtml": "<h2 id=\"role\">Rôle</h2>\n<p>Web Animations fournit un modèle de temporalité, de lecture et de synchronisation dans les interfaces du navigateur.</p>\n<h2 id=\"usage\">Usage</h2>\n<p>Electronic Artefacts peut l’utiliser pour le mouvement d’interface, les essais interactifs et les transitions d’état clarifiant la navigation graphique.</p>\n<h2 id=\"references\">Références</h2>\n<p>Consulter la spécification Web Animations du W3C.</p>\n",
+  "bodyHtml": "<h2 id=\"role\">Rôle</h2>\n<p>Web Animations est documenté comme technologie de référence pour le sujet “Web Animations” dans le graphe public d’Electronic Artefacts.</p>\n<h2 id=\"usage\">Usage</h2>\n<p>Cette fiche aide à situer la technologie dans l’écosystème Electronic Artefacts : ce qu’elle permet, quand elle devient pertinente et comment elle dialogue avec les autres composants du graphe.</p>\n<h2 id=\"points-d-attention\">Points d’attention</h2>\n<ul>\n<li>Les usages sont décrits en français sans masquer les noms propres, acronymes ou standards techniques.</li>\n<li>Les limites restent contextualisées par rapport aux projets, aux publications et aux contraintes d’implémentation.</li>\n</ul>\n<h2 id=\"references\">Références</h2>\n<p>Les sources principales restent disponibles dans le bloc de références de la fiche.</p>\n",
   "headings": [
     "Rôle",
     "Usage",
+    "Points d'attention",
     "Références"
   ],
   "headingItems": [
@@ -64,6 +65,11 @@
       "level": 2,
       "title": "Usage",
       "id": "usage"
+    },
+    {
+      "level": 2,
+      "title": "Points d'attention",
+      "id": "points-d-attention"
     },
     {
       "level": 2,

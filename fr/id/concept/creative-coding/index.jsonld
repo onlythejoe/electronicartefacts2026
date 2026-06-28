@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/knowledge/concepts/creative-coding/#webpage",
       "url": "https://electronicartefacts.com/fr/knowledge/concepts/creative-coding/",
       "name": "Programmation créative",
-      "description": "A canonical definition de programmation créative pour Electronic Artefacts knowledge articles, projects et programs.",
+      "description": "Programmation créative définit un repère conceptuel en français pour comprendre l'usage du code comme médium artistique, exploratoire ou pedagogique et ses liens avec les projets, technologies et publications du graphe.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
@@ -34,8 +34,8 @@
       "@id": "https://electronicartefacts.com/fr/id/concept/creative-coding/",
       "identifier": "ea:concept:creative-coding-fr",
       "name": "Programmation créative",
-      "abstract": "Creative coding relie software, visuel culture, sound, interaction, generative systèmes, education et experimental publishing.",
-      "description": "Creative coding est le use de programming comme an artistic, design ou exploratory medium rather than only comme an engineering implementation outil.",
+      "abstract": "Programmation créative définit un repère conceptuel en français pour comprendre l'usage du code comme médium artistique, exploratoire ou pedagogique et ses liens avec les projets, technologies et publications du graphe.",
+      "description": "Programmation créative désigne l'usage du code comme médium artistique, exploratoire ou pedagogique.",
       "url": "https://electronicartefacts.com/fr/knowledge/concepts/creative-coding/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/knowledge/concepts/creative-coding/#webpage"
@@ -56,12 +56,12 @@
         }
       ],
       "keywords": [
-        "Programmation créative",
+        "programmation créative",
         "Digital Art",
         "Programming",
         "Generative Art",
         "Interaction",
-        "Motion design",
+        "Motion Design",
         "Sound Design"
       ],
       "inLanguage": "fr",
@@ -75,7 +75,7 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 104,
+      "wordCount": 83,
       "inDefinedTermSet": "https://electronicartefacts.com/knowledge/concepts/",
       "termCode": "creative-coding"
     },

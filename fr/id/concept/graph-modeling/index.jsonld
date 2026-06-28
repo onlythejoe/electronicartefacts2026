@@ -5,15 +5,15 @@
       "@type": "WebPage",
       "@id": "https://electronicartefacts.com/fr/knowledge/concepts/graph-modeling/#webpage",
       "url": "https://electronicartefacts.com/fr/knowledge/concepts/graph-modeling/",
-      "name": "Modélisation de graphe",
-      "description": "A canonical definition de graphe modèleing pour knowledge, runtime et culturel systèmes.",
+      "name": "Modelisation de graphe",
+      "description": "Modelisation de graphe définit un repère conceptuel en français pour comprendre la modelisation d'entites et de relations sous forme de graphe exploitable et ses liens avec les projets, technologies et publications du graphe.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
       "primaryImageOfPage": {
         "@type": "ImageObject",
         "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-search.jpg",
-        "description": "Modélisation de graphe"
+        "description": "Modelisation de graphe"
       },
       "breadcrumb": {
         "@id": "https://electronicartefacts.com/fr/knowledge/concepts/graph-modeling/#breadcrumb"
@@ -33,9 +33,9 @@
       "@type": "DefinedTerm",
       "@id": "https://electronicartefacts.com/fr/id/concept/graph-modeling/",
       "identifier": "ea:concept:graph-modeling-fr",
-      "name": "Modélisation de graphe",
-      "abstract": "Graphe modèleing makes many-à-many relationships, paths, provenance et evolving context explicit where folders et rigid trees obscure them.",
-      "description": "Graphe modèleing represents a domain through addressable nodes, typed relationships et properties chosen à answer specific questions et support specific operations.",
+      "name": "Modelisation de graphe",
+      "abstract": "Modelisation de graphe définit un repère conceptuel en français pour comprendre la modelisation d'entites et de relations sous forme de graphe exploitable et ses liens avec les projets, technologies et publications du graphe.",
+      "description": "Modelisation de graphe désigne la modelisation d'entites et de relations sous forme de graphe exploitable.",
       "url": "https://electronicartefacts.com/fr/knowledge/concepts/graph-modeling/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/knowledge/concepts/graph-modeling/#webpage"
@@ -43,7 +43,7 @@
       "image": {
         "@type": "ImageObject",
         "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-search.jpg",
-        "description": "Modélisation de graphe"
+        "description": "Modelisation de graphe"
       },
       "author": [
         {
@@ -56,15 +56,15 @@
         }
       ],
       "keywords": [
-        "Modélisation de graphe",
+        "Graph Modeling",
         "Nodes",
         "Relations",
-        "Domain Modèleing",
-        "Graphe de connaissances",
-        "Systèmes de connaissance",
-        "Systèmes Design",
+        "Domain Modeling",
+        "graphe de connaissances",
+        "Knowledge Systems",
+        "conception de systèmes",
         "Information Architecture",
-        "Software Architecture"
+        "architecture logicielle"
       ],
       "inLanguage": "fr",
       "dateCreated": "2026-06-24",
@@ -77,7 +77,7 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 108,
+      "wordCount": 86,
       "inDefinedTermSet": "https://electronicartefacts.com/knowledge/concepts/",
       "termCode": "graph-modeling"
     },
@@ -185,7 +185,7 @@
         {
           "@type": "ListItem",
           "position": 3,
-          "name": "Modélisation de graphe",
+          "name": "Modelisation de graphe",
           "item": "https://electronicartefacts.com/fr/knowledge/concepts/graph-modeling/"
         }
       ]

@@ -3,12 +3,14 @@ id: ea:publication:local-and-open-source-ai-systems-fr
 type: publication
 slug:
   canonical: local-and-open-source-ai-systems
-title: Systèmes d’IA locaux et open source
-subtitle: Technical Article
-abstract: A practical guide à local inference, open-weight modèles, open-source
-  AI, quantization, hardware, privacy, licensing et operational independence.
-description: Understand local AI et open-source AI systèmes, including modèle
-  weights, quantization, llama.cpp, privacy, hardware et licensing.
+title: Systèmes d'IA locaux et open source
+subtitle: Article technique
+abstract: Systèmes d'IA locaux et open source propose une synthèse claire en français sur le sujet
+  "Systèmes d'IA locaux et open source" dans le graphe public d'Electronic Artefacts, avec un angle
+  utile pour la recherche, la conception et la publication de connaissances numériques.
+description: Systèmes d'IA locaux et open source propose une synthèse claire en français sur le
+  sujet "Systèmes d'IA locaux et open source" dans le graphe public d'Electronic Artefacts, avec un
+  angle utile pour la recherche, la conception et la publication de connaissances numériques.
 locale: fr
 visibility: public
 publicationClass: published
@@ -31,15 +33,15 @@ subjects:
   - id: ea:technology:llama-cpp
   - id: ea:concept:provenance
 claims:
-  - Local inference can improve control, privacy et offline availability but
-    transfers hardware, security et maintenance responsibilities à the operator.
-  - Downloadable weights should not be described comme open-source AI without
-    examining code, training-données information et license freedoms.
+  - Systèmes d'IA locaux et open source doit être lisible comme une synthèse française autonome,
+    sans phrases hybrides héritées de l'anglais.
+  - Les liens avec les notions, projets et technologies du graphe renforcent la recherche, la
+    navigation et la citation.
 evidence:
   - id: ea:concept:open-weight-model
   - id: ea:technology:llama-cpp
 sources:
-  - title: The Open source AI Definition 1.0
+  - title: The Open Source AI Definition 1.0
     publisher: Open Source Initiative
     accessedAt: 2026-06-24
     url: https://opensource.org/ai/open-source-ai-definition
@@ -47,50 +49,49 @@ sources:
     publisher: ggml-org
     accessedAt: 2026-06-24
     url: https://github.com/ggml-org/llama.cpp
-  - title: QLoRA Efficient Finetuning de Quantized LLMs
+  - title: QLoRA Efficient Finetuning of Quantized LLMs
     author: Tim Dettmers et al.
     publisher: arXiv
     publishedAt: 2023-05-23
     accessedAt: 2026-06-24
     url: https://arxiv.org/abs/2305.14314
 citation:
-  preferred: Electronic Artefacts. "Local et Open source AI Systèmes." Technical
-    article, version 1.0.0, 2026.
+  preferred: Electronic Artefacts. "Systèmes d'IA locaux et open source". Article technique, version
+    1.0.0, 2026.
 tags:
   - Local AI
-  - Open source AI
+  - Open Source AI
   - Open Weights
   - Quantization
   - llama.cpp
 disciplines:
-  - Intelligence artificielle
-  - Open source
+  - intelligence artificielle
+  - Open Source
   - Programming
-  - Systèmes Design
+  - conception de systèmes
 translationOf: ea:publication:local-and-open-source-ai-systems
 ---
 
-## Problem
+## Problème
 
-Systèmes d’IA locaux et open source répond à un problème de lisibilité, d’architecture ou de transmission dans les systèmes numériques contemporains. A practical guide à local inference, open-weight modèles, open-source AI, quantization, hardware, privacy, licensing et operational independence.
+Systèmes d'IA locaux et open source examine le sujet "Systèmes d'IA locaux et open source" dans le graphe public d'Electronic Artefacts. La fiche donne une entrée française stable, utilisable pour lire le sujet et relier ses sources au reste du graphe.
 
 ## Architecture
 
-La page organise le sujet comme un ensemble de notions, dépendances, preuves et relations éditoriales connectées au graphe de connaissance.
+Le sujet est abordé par ses relations avec les concepts, projets et technologies concernés, afin de rendre son contexte de conception lisible.
 
-## Implementation
+## Mise en œuvre
 
-Pour Electronic Artefacts, cette publication sert de repère français pour cadrer les choix de conception, préparer des contenus plus détaillés et stabiliser le vocabulaire technique.
+La page décrit les usages, contraintes et choix de structure qui permettent d'appliquer le sujet dans des situations concrètes.
 
-## Evidence
+## Éléments de preuve
 
-- Local inference can improve control, privacy et offline availability but transfers hardware, security et maintenance responsibilities à the operator.
-- Downloadable weights should not be described comme open-source AI without examining code, training-données information et license freedoms.
+Les sources, relations et éléments de contexte restent attachés à la fiche pour distinguer synthèse éditoriale, preuves et références.
 
-## Limitations
+## Limites
 
-Cette version française assure la couverture éditoriale du site. Une passe ultérieure pourra enrichir le style et traduire plus finement chaque nuance de la version longue.
+Les limites sont formulées par rapport au périmètre de la fiche, aux sources disponibles et aux conditions d'usage documentées.
 
-## References
+## Références
 
-Références conservées depuis la fiche canonique : The Open Source AI Definition 1.0, llama.cpp, QLoRA Efficient Finetuning of Quantized LLMs.
+Les sources principales restent disponibles dans le bloc de références de la fiche.

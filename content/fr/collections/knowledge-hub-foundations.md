@@ -5,11 +5,12 @@ slug:
   canonical: knowledge-hub-foundations
 title: Fondations du hub de connaissance
 subtitle: Editorial Collection
-abstract: Knowledge Hub Foundations curates the first expansion wave de
-  Electronic Artefacts knowledge records around graphe systèmes, preservation,
-  generative systèmes, signal, audio et public sémantique publishing.
-description: A curated collection grouping foundational Knowledge Hub concepts,
-  technologies, programs, projects et publications.
+abstract: Fondations du hub de connaissance organise des fiches reliées autour de le sujet
+  "Fondations du hub de connaissance" dans le graphe public d'Electronic Artefacts, afin de donner
+  une progression lisible aux archives de connaissance d'Electronic Artefacts.
+description: Fondations du hub de connaissance organise des fiches reliées autour de le sujet
+  "Fondations du hub de connaissance" dans le graphe public d'Electronic Artefacts, afin de donner
+  une progression lisible aux archives de connaissance d'Electronic Artefacts.
 locale: fr
 visibility: public
 publicationClass: published
@@ -24,9 +25,8 @@ version:
 authors:
   - id: ea:organization:electronic-artefacts
 publisher: ea:organization:electronic-artefacts
-thesis: The Knowledge Hub should begin avec durable foundation records that
-  explain graphe publishing, sémantique identité, preservation, generative
-  systèmes et audio-signal interpretation.
+thesis: Fondations du hub de connaissance propose une lecture organisee de 20 fiches reliées par un
+  même axe editorial.
 curator:
   - id: ea:organization:electronic-artefacts
 explicitMembers:
@@ -50,19 +50,18 @@ explicitMembers:
   - id: ea:technology:json-ld
   - id: ea:program:oreth
   - id: ea:project:palimpsests
-selectionNote: This collection privileges evergreen, interconnected reference
-  material that can support future recherche, SEO, AI retrieval et internal
-  graphe expansion.
+selectionNote: La sélection privilégie des contenus stables, reliables et utiles pour parcourir le
+  hub de connaissance en français.
 tags:
   - Knowledge Hub
   - Editorial Collection
   - Foundations
-  - Recherche Library
-  - Sémantique Publishing
+  - Research Library
+  - Semantic Publishing
 disciplines:
-  - Systèmes de connaissance
+  - Knowledge Systems
   - Archives
-  - Programmation créative
+  - programmation créative
   - Audio Engineering
   - Digital Art
 translationOf: ea:collection:knowledge-hub-foundations
@@ -70,16 +69,16 @@ translationOf: ea:collection:knowledge-hub-foundations
 
 ## Intention
 
-Fondations du hub de connaissance est documenté ici comme une entrée française du graphe public d’Electronic Artefacts. Knowledge Hub Foundations curates the first expansion wave de Electronic Artefacts knowledge records around graphe systèmes, preservation, generative systèmes, signal, audio et public sémantique publishing.
+Fondations du hub de connaissance rassemble des fiches qui partagent un même axe de lecture autour de le sujet "Fondations du hub de connaissance" dans le graphe public d'Electronic Artefacts.
 
-## Sélection
+## Selection
 
-This collection privileges evergreen, interconnected reference material that can support future recherche, SEO, AI retrieval et internal graphe expansion.
+La collection organise les contenus par proximité éditoriale, par utilité de navigation et par potentiel de liens internes. Elle permet de parcourir le hub de connaissance sans perdre la cohérence du sujet.
 
 ## Usage
 
-Cette collection facilite la navigation entre des objets liés et donne une entrée française cohérente aux archives de connaissance.
+Cette entrée sert de repère pour explorer plusieurs publications ou notions depuis une même page française.
 
 ## Références
 
-Les références principales sont conservées dans la fiche canonique et dans le graphe de connaissance public.
+Les sources associées sont conservées dans la fiche canonique du graphe.

@@ -9,8 +9,8 @@
   "alternateNames": [
     "Web Ontology Language"
   ],
-  "abstract": "OWL est un langage d’ontologie du W3C dont la sémantique formelle décrit classes, propriétés, individus et contraintes sur le Web sémantique.",
-  "description": "Fiche technologique consacrée à la publication d’ontologies formelles et au raisonnement.",
+  "abstract": "OWL est présenté comme une technologie de référence pour comprendre son rôle dans l'écosystème Electronic Artefacts, ses usages, ses limites et sa place dans les systèmes numériques contemporains.",
+  "description": "OWL est présenté comme une technologie de référence pour comprendre son rôle dans l'écosystème Electronic Artefacts, ses usages, ses limites et sa place dans les systèmes numériques contemporains.",
   "locale": "fr",
   "visibility": "public",
   "publicationClass": "canonical",
@@ -31,12 +31,12 @@
   "publisher": "ea:organization:electronic-artefacts",
   "tags": [
     "OWL",
-    "Ontologie",
-    "Web sémantique"
+    "Ontology",
+    "Semantic Web"
   ],
   "disciplines": [
-    "Systèmes de connaissance",
-    "Web sémantique"
+    "Knowledge Systems",
+    "Semantic Web"
   ],
   "sources": [
     {
@@ -48,12 +48,13 @@
     }
   ],
   "category": "language",
-  "roleInEcosystem": "OWL fournit une référence formelle pour la sémantique des ontologies, les contraintes et l’inférence au-delà des taxonomies légères.",
+  "roleInEcosystem": "OWL sert de repère technique pour évaluer le sujet \"OWL\" dans le graphe public d'Electronic Artefacts, ses usages possibles et ses conséquences dans l'écosystème Electronic Artefacts.",
   "officialUrl": "https://www.w3.org/TR/owl2-overview/",
-  "bodyHtml": "<h2 id=\"role\">Rôle</h2>\n<p>OWL formalise classes, propriétés et contraintes d’un domaine avec une sémantique capable de soutenir le raisonnement automatisé.</p>\n<h2 id=\"usage\">Usage</h2>\n<p>Il sert de référence lorsque Electronic Artefacts a besoin d’une interopérabilité ou d’une inférence plus forte que celle offerte par son schéma pragmatique d’entités.</p>\n<h2 id=\"references\">Références</h2>\n<p>Consulter OWL 2, RDF et les ressources sur les ontologies.</p>\n",
+  "bodyHtml": "<h2 id=\"role\">Rôle</h2>\n<p>OWL est documenté comme technologie de référence pour le sujet “OWL” dans le graphe public d’Electronic Artefacts.</p>\n<h2 id=\"usage\">Usage</h2>\n<p>Cette fiche aide à situer la technologie dans l’écosystème Electronic Artefacts : ce qu’elle permet, quand elle devient pertinente et comment elle dialogue avec les autres composants du graphe.</p>\n<h2 id=\"points-d-attention\">Points d’attention</h2>\n<ul>\n<li>Les usages sont décrits en français sans masquer les noms propres, acronymes ou standards techniques.</li>\n<li>Les limites restent contextualisées par rapport aux projets, aux publications et aux contraintes d’implémentation.</li>\n</ul>\n<h2 id=\"references\">Références</h2>\n<p>Les sources principales restent disponibles dans le bloc de références de la fiche.</p>\n",
   "headings": [
     "Rôle",
     "Usage",
+    "Points d'attention",
     "Références"
   ],
   "headingItems": [
@@ -66,6 +67,11 @@
       "level": 2,
       "title": "Usage",
       "id": "usage"
+    },
+    {
+      "level": 2,
+      "title": "Points d'attention",
+      "id": "points-d-attention"
     },
     {
       "level": 2,

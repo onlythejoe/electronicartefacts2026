@@ -5,15 +5,15 @@
       "@type": "WebPage",
       "@id": "https://electronicartefacts.com/fr/knowledge/concepts/entity-identity/#webpage",
       "url": "https://electronicartefacts.com/fr/knowledge/concepts/entity-identity/",
-      "name": "Identité d’entité",
-      "description": "A canonical definition de entité identité pour graphe publishing, sémantique URLs, archives et Electronic Artefacts records.",
+      "name": "Identité d'entite",
+      "description": "Identité d'entite définit un repère conceptuel en français pour comprendre le sujet \"Identité d'entite\" dans le graphe public d'Electronic Artefacts et ses liens avec les projets, technologies et publications du graphe.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
       "primaryImageOfPage": {
         "@type": "ImageObject",
         "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-search.jpg",
-        "description": "Identité d’entité"
+        "description": "Identité d'entite"
       },
       "breadcrumb": {
         "@id": "https://electronicartefacts.com/fr/knowledge/concepts/entity-identity/#breadcrumb"
@@ -33,9 +33,9 @@
       "@type": "DefinedTerm",
       "@id": "https://electronicartefacts.com/fr/id/concept/entity-identity/",
       "identifier": "ea:concept:entity-identity-fr",
-      "name": "Identité d’entité",
-      "abstract": "Entité identité gives systèmes de connaissance a way à cite things without confusing names, pages, files, versions et changing descriptions.",
-      "description": "Entité identité est le durable naming de a person, concept, project, program, publication ou artefact so that references remain stable comme descriptions evolve.",
+      "name": "Identité d'entite",
+      "abstract": "Identité d'entite définit un repère conceptuel en français pour comprendre le sujet \"Identité d'entite\" dans le graphe public d'Electronic Artefacts et ses liens avec les projets, technologies et publications du graphe.",
+      "description": "Identité d'entite désigne le sujet \"Identité d'entite\" dans le graphe public d'Electronic Artefacts.",
       "url": "https://electronicartefacts.com/fr/knowledge/concepts/entity-identity/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/knowledge/concepts/entity-identity/#webpage"
@@ -43,7 +43,7 @@
       "image": {
         "@type": "ImageObject",
         "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-search.jpg",
-        "description": "Identité d’entité"
+        "description": "Identité d'entite"
       },
       "author": [
         {
@@ -56,12 +56,12 @@
         }
       ],
       "keywords": [
-        "Identité",
+        "Identity",
         "URI",
         "Canonical URL",
         "Versioning",
-        "Graphe de connaissances",
-        "Systèmes de connaissance",
+        "graphe de connaissances",
+        "Knowledge Systems",
         "Web Development",
         "Archives"
       ],
@@ -76,18 +76,18 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 117,
+      "wordCount": 86,
       "citation": [
         {
           "@type": "CreativeWork",
-          "name": "RDF 1.1 Concepts et Abstract Syntax",
+          "name": "RDF 1.1 Concepts and Abstract Syntax",
           "url": "https://www.w3.org/TR/rdf11-concepts/",
           "publisher": "W3C",
           "datePublished": "2014-02-25"
         },
         {
           "@type": "CreativeWork",
-          "name": "Cool URIs pour the Sémantique Web",
+          "name": "Cool URIs for the Semantic Web",
           "url": "https://www.w3.org/TR/cooluris/",
           "publisher": "W3C",
           "datePublished": "2008-12-03"
@@ -200,7 +200,7 @@
         {
           "@type": "ListItem",
           "position": 3,
-          "name": "Identité d’entité",
+          "name": "Identité d'entite",
           "item": "https://electronicartefacts.com/fr/knowledge/concepts/entity-identity/"
         }
       ]

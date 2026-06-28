@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/knowledge/concepts/human-computer-interaction/#webpage",
       "url": "https://electronicartefacts.com/fr/knowledge/concepts/human-computer-interaction/",
       "name": "Human Computer Interaction",
-      "description": "A canonical concept record pour HCI comme a design et recherche discipline.",
+      "description": "Human Computer Interaction définit un repère conceptuel en français pour comprendre la conception des interactions entre personnes, interfaces, outils et environnements informatiques et ses liens avec les projets, technologies et publications du graphe.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
@@ -34,8 +34,8 @@
       "@id": "https://electronicartefacts.com/fr/id/concept/human-computer-interaction/",
       "identifier": "ea:concept:human-computer-interaction-fr",
       "name": "Human Computer Interaction",
-      "abstract": "HCI relie interface design, accessibility, creative outils, augmented intelligence, software ergonomics et the social consequences de computation.",
-      "description": "Human computer interaction est le study et design de relationships between people, computational systèmes, interfaces, tasks, environments et cultures de use.",
+      "abstract": "Human Computer Interaction définit un repère conceptuel en français pour comprendre la conception des interactions entre personnes, interfaces, outils et environnements informatiques et ses liens avec les projets, technologies et publications du graphe.",
+      "description": "Human Computer Interaction désigne la conception des interactions entre personnes, interfaces, outils et environnements informatiques.",
       "url": "https://electronicartefacts.com/fr/knowledge/concepts/human-computer-interaction/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/knowledge/concepts/human-computer-interaction/#webpage"
@@ -56,14 +56,13 @@
         }
       ],
       "keywords": [
-        "HCI",
+        "interaction humain-machine",
         "Interface Design",
-        "Accessibility",
-        "Creative Outils",
-        "Human Computer Interaction",
-        "Design",
+        "accessibilité",
+        "outils créatifs",
+        "design",
         "Web Development",
-        "Intelligence artificielle"
+        "intelligence artificielle"
       ],
       "inLanguage": "fr",
       "dateCreated": "2026-06-24",
@@ -76,7 +75,7 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 105,
+      "wordCount": 88,
       "citation": [
         {
           "@type": "CreativeWork",

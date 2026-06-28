@@ -5,10 +5,10 @@
   "slug": {
     "canonical": "ai-search-structured-content-and-knowledge-graph-seo"
   },
-  "title": "Recherche IA, contenu structuré et SEO par graphe de connaissances",
-  "subtitle": "Technical Article",
-  "abstract": "A practical article on AI search visibility, structured content, JSON-LD, entité identité, graphee de connaissances SEO et non-commodity editorial authority.",
-  "description": "Understand how AI search changes SEO strategy through helpful content, structured données, crawlable pages, entité identité et graphee de connaissances architecture.",
+  "title": "Recherche IA, contenu structure et SEO par graphe de connaissances",
+  "subtitle": "Article technique",
+  "abstract": "Recherche IA, contenu structure et SEO par graphe de connaissances propose une synthèse claire en français sur le sujet \"Recherche IA, contenu structure et SEO par graphe de connaissances\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
+  "description": "Recherche IA, contenu structure et SEO par graphe de connaissances propose une synthèse claire en français sur le sujet \"Recherche IA, contenu structure et SEO par graphe de connaissances\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
   "locale": "fr",
   "visibility": "public",
   "publicationClass": "published",
@@ -29,26 +29,26 @@
   "publisher": "ea:organization:electronic-artefacts",
   "tags": [
     "AI Search",
-    "Graphee de connaissances SEO",
-    "Structured Données",
+    "SEO par graphe de connaissances",
+    "Structured Data",
     "JSON-LD",
-    "Entité SEO"
+    "Entity SEO"
   ],
   "disciplines": [
     "SEO",
-    "Systèmes de connaissance",
+    "Knowledge Systems",
     "Web Development",
     "Information Architecture"
   ],
   "sources": [
     {
-      "title": "Optimizing your website pour generative AI features on Google Search",
+      "title": "Optimizing your website for generative AI features on Google Search",
       "url": "https://developers.google.com/search/docs/fundamentals/ai-optimization-guide",
       "publisher": "Google Search Central",
       "accessedAt": "2026-06-25"
     },
     {
-      "title": "Introduction à structured données markup dans Google Search",
+      "title": "Introduction to structured data markup in Google Search",
       "url": "https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data",
       "publisher": "Google Search Central",
       "accessedAt": "2026-06-25"
@@ -82,8 +82,8 @@
     }
   ],
   "claims": [
-    "AI search visibility depends on useful, crawlable, attributable content rather than a separate layer de generative-engine tricks.",
-    "Knowledge graphe SEO relie entités, sources, relations et structured données so that humans et retrieval systèmes can understand a site comme a coherent corpus."
+    "Recherche IA, contenu structure et SEO par graphe de connaissances doit être lisible comme une synthèse française autonome, sans phrases hybrides héritées de l'anglais.",
+    "Les liens avec les notions, projets et technologies du graphe renforcent la recherche, la navigation et la citation."
   ],
   "evidence": [
     {
@@ -94,22 +94,22 @@
     }
   ],
   "citation": {
-    "preferred": "Electronic Artefacts. \"AI Search, Structured Content et Graphee de connaissances SEO.\" Technical article, version 1.0.0, 2026."
+    "preferred": "Electronic Artefacts. \"Recherche IA, contenu structure et SEO par graphe de connaissances\". Article technique, version 1.0.0, 2026."
   },
-  "bodyHtml": "<h2 id=\"problem\">Problem</h2>\n<p>Recherche IA, contenu structuré et SEO par graphe de connaissances répond à un problème de lisibilité, d’architecture ou de transmission dans les systèmes numériques contemporains. A practical article on AI search visibility, structured content, JSON-LD, entité identité, graphee de connaissances SEO et non-commodity editorial authority.</p>\n<h2 id=\"architecture\">Architecture</h2>\n<p>La page organise le sujet comme un ensemble de notions, dépendances, preuves et relations éditoriales connectées au graphe de connaissance.</p>\n<h2 id=\"implementation\">Implementation</h2>\n<p>Pour Electronic Artefacts, cette publication sert de repère français pour cadrer les choix de conception, préparer des contenus plus détaillés et stabiliser le vocabulaire technique.</p>\n<h2 id=\"evidence\">Evidence</h2>\n<ul>\n<li>AI search visibility depends on useful, crawlable, attributable content rather than a separate layer de generative-engine tricks.</li>\n<li>Knowledge graphe SEO relie entités, sources, relations et structured données so that humans et retrieval systèmes can understand a site comme a coherent corpus.</li>\n</ul>\n<h2 id=\"limitations\">Limitations</h2>\n<p>Cette version française assure la couverture éditoriale du site. Une passe ultérieure pourra enrichir le style et traduire plus finement chaque nuance de la version longue.</p>\n<h2 id=\"references\">References</h2>\n<p>Références conservées depuis la fiche canonique : Optimizing your website for generative AI features on Google Search, Introduction to structured data markup in Google Search, Article.</p>\n",
+  "bodyHtml": "<h2 id=\"probleme\">Problème</h2>\n<p>Recherche IA, contenu structure et SEO par graphe de connaissances examine le sujet “Recherche IA, contenu structure et SEO par graphe de connaissances” dans le graphe public d’Electronic Artefacts. La fiche donne une entrée française stable, utilisable pour lire le sujet et relier ses sources au reste du graphe.</p>\n<h2 id=\"architecture\">Architecture</h2>\n<p>Le sujet est abordé par ses relations avec les concepts, projets et technologies concernés, afin de rendre son contexte de conception lisible.</p>\n<h2 id=\"mise-en-uvre\">Mise en œuvre</h2>\n<p>La page décrit les usages, contraintes et choix de structure qui permettent d’appliquer le sujet dans des situations concrètes.</p>\n<h2 id=\"elements-de-preuve\">Éléments de preuve</h2>\n<p>Les sources, relations et éléments de contexte restent attachés à la fiche pour distinguer synthèse éditoriale, preuves et références.</p>\n<h2 id=\"limites\">Limites</h2>\n<p>Les limites sont formulées par rapport au périmètre de la fiche, aux sources disponibles et aux conditions d’usage documentées.</p>\n<h2 id=\"references\">Références</h2>\n<p>Les sources principales restent disponibles dans le bloc de références de la fiche.</p>\n",
   "headings": [
-    "Problem",
+    "Problème",
     "Architecture",
-    "Implementation",
-    "Evidence",
-    "Limitations",
-    "References"
+    "Mise en œuvre",
+    "Éléments de preuve",
+    "Limites",
+    "Références"
   ],
   "headingItems": [
     {
       "level": 2,
-      "title": "Problem",
-      "id": "problem"
+      "title": "Problème",
+      "id": "probleme"
     },
     {
       "level": 2,
@@ -118,22 +118,22 @@
     },
     {
       "level": 2,
-      "title": "Implementation",
-      "id": "implementation"
+      "title": "Mise en œuvre",
+      "id": "mise-en-uvre"
     },
     {
       "level": 2,
-      "title": "Evidence",
-      "id": "evidence"
+      "title": "Éléments de preuve",
+      "id": "elements-de-preuve"
     },
     {
       "level": 2,
-      "title": "Limitations",
-      "id": "limitations"
+      "title": "Limites",
+      "id": "limites"
     },
     {
       "level": 2,
-      "title": "References",
+      "title": "Références",
       "id": "references"
     }
   ]

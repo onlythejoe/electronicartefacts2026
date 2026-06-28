@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/publications/why-graphs-are-more-powerful-than-folders/#webpage",
       "url": "https://electronicartefacts.com/fr/publications/why-graphs-are-more-powerful-than-folders/",
       "name": "Pourquoi les graphes sont plus puissants que les dossiers",
-      "description": "Learn when graphe modèles outperform folder hierarchies, why relationships matter, et how à keep folders comme useful projections over connected données.",
+      "description": "Pourquoi les graphes sont plus puissants que les dossiers propose une synthèse claire en français sur le sujet \"Pourquoi les graphes sont plus puissants que les dossiers\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
@@ -35,8 +35,8 @@
       "identifier": "ea:publication:why-graphs-are-more-powerful-than-folders-fr",
       "name": "Pourquoi les graphes sont plus puissants que les dossiers",
       "headline": "Pourquoi les graphes sont plus puissants que les dossiers",
-      "abstract": "A practical comparison de hierarchical folders et graphe modèles pour knowledge, projects, archives, identité, provenance et generated interfaces.",
-      "description": "A practical comparison de hierarchical folders et graphe modèles pour knowledge, projects, archives, identité, provenance et generated interfaces.",
+      "abstract": "Pourquoi les graphes sont plus puissants que les dossiers propose une synthèse claire en français sur le sujet \"Pourquoi les graphes sont plus puissants que les dossiers\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
+      "description": "Pourquoi les graphes sont plus puissants que les dossiers propose une synthèse claire en français sur le sujet \"Pourquoi les graphes sont plus puissants que les dossiers\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
       "url": "https://electronicartefacts.com/fr/publications/why-graphs-are-more-powerful-than-folders/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/publications/why-graphs-are-more-powerful-than-folders/#webpage"
@@ -57,14 +57,14 @@
         }
       ],
       "keywords": [
-        "Modélisation de graphe",
+        "Graph Modeling",
         "Folders",
-        "Graphe de connaissances",
+        "graphe de connaissances",
         "Information Architecture",
         "VASTE",
-        "Systèmes de connaissance",
-        "Systèmes Design",
-        "Software Architecture"
+        "Knowledge Systems",
+        "conception de systèmes",
+        "architecture logicielle"
       ],
       "inLanguage": "fr",
       "dateCreated": "2026-06-24",
@@ -77,20 +77,20 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 167,
+      "wordCount": 149,
       "citation": [
-        "Electronic Artefacts. \"Why Graphes Are More Powerful Than Folders.\" Technical article, version 1.0.0, 2026.",
+        "Electronic Artefacts. \"Pourquoi les graphes sont plus puissants que les dossiers\". Article technique, version 1.0.0, 2026.",
         {
           "@type": "CreativeWork",
-          "name": "RDF 1.1 Concepts et Abstract Syntax",
+          "name": "RDF 1.1 Concepts and Abstract Syntax",
           "url": "https://www.w3.org/TR/rdf11-concepts/",
-          "author": "Richard Cyganiak, David Wood et Markus Lanthaler",
+          "author": "Richard Cyganiak, David Wood and Markus Lanthaler",
           "publisher": "W3C",
           "datePublished": "2014-02-25"
         },
         {
           "@type": "CreativeWork",
-          "name": "The CIDOC Conceptual Reference Modèle",
+          "name": "The CIDOC Conceptual Reference Model",
           "url": "https://www.cidoc-crm.org/",
           "publisher": "CIDOC CRM Special Interest Group"
         }
@@ -124,26 +124,26 @@
         }
       ],
       "articleSection": [
-        "Systèmes de connaissance",
-        "Systèmes Design",
+        "Knowledge Systems",
+        "conception de systèmes",
         "Information Architecture",
-        "Software Architecture",
-        "Modélisation de graphe",
+        "architecture logicielle",
+        "Graph Modeling",
         "Folders"
       ],
       "timeRequired": "PT1M",
       "isBasedOn": [
         {
           "@type": "CreativeWork",
-          "name": "RDF 1.1 Concepts et Abstract Syntax",
+          "name": "RDF 1.1 Concepts and Abstract Syntax",
           "url": "https://www.w3.org/TR/rdf11-concepts/",
-          "author": "Richard Cyganiak, David Wood et Markus Lanthaler",
+          "author": "Richard Cyganiak, David Wood and Markus Lanthaler",
           "publisher": "W3C",
           "datePublished": "2014-02-25"
         },
         {
           "@type": "CreativeWork",
-          "name": "The CIDOC Conceptual Reference Modèle",
+          "name": "The CIDOC Conceptual Reference Model",
           "url": "https://www.cidoc-crm.org/",
           "publisher": "CIDOC CRM Special Interest Group"
         }

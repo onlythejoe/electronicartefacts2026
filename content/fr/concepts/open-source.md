@@ -4,14 +4,14 @@ type: concept
 slug:
   canonical: open-source
 title: Open source
-definition: Open source est un software et culturel practice dans which source
-  code is made available under licenses that allow use, study, modification et
-  redistribution.
-abstract: Open source is both a licensing modèle et a culturel infrastructure
-  pour software, creative outils, public knowledge, maintainership et technical
-  education.
-description: A canonical concept record pour open source software et culturel
-  infrastructure.
+definition: Open source désigne les pratiques de publication, maintenance et cooperation fondees sur
+  du code et des ressources ouverts.
+abstract: Open source définit un repère conceptuel en français pour comprendre les pratiques de
+  publication, maintenance et cooperation fondees sur du code et des ressources ouverts et ses liens
+  avec les projets, technologies et publications du graphe.
+description: Open source définit un repère conceptuel en français pour comprendre les pratiques de
+  publication, maintenance et cooperation fondees sur du code et des ressources ouverts et ses liens
+  avec les projets, technologies et publications du graphe.
 locale: fr
 visibility: public
 publicationClass: canonical
@@ -27,49 +27,48 @@ authors:
   - id: ea:organization:electronic-artefacts
 publisher: ea:organization:electronic-artefacts
 scope:
-  - Software licenses
-  - Commons
-  - Maintainers
-  - Creative outils
-  - Culturel infrastructure
+  - définition du sujet
+  - contexte d'usage
+  - liens avec le graphe
+  - références associées
 exclusions:
-  - Source-available software whose license blocks modification ou reuse
-  - Public code without clear rights ou maintenance context
+  - les usages purement promotionnels sans définition vérifiable
+  - les exemples déconnectés des sources, relations ou contraintes du graphe
 claims:
-  - Open source is infrastructure because many culturel et technical systèmes
-    depend on shared code.
-  - Open source value depends on maintenance, gouvernance et documentation, not
-    access alone.
+  - Open source devient utile lorsque sa définition reste reliée à des sources, des pratiques et des
+    objets observables.
+  - La fiche sert de vocabulaire commun pour relier projets, publications et technologies sans
+    mélanger les langues.
 sources:
-  - title: The Open source Definition
+  - title: The Open Source Definition
     publisher: Open Source Initiative
     accessedAt: 2026-06-24
     url: https://opensource.org/osd
 tags:
-  - Open source
+  - Open Source
   - Software
   - Commons
   - Infrastructure
 disciplines:
-  - Open source
+  - Open Source
   - Programming
-  - Programmation créative
+  - programmation créative
   - Creative Business
 translationOf: ea:concept:open-source
 ---
 
 ## Rôle
 
-Open source est documenté ici comme une entrée française du graphe public d’Electronic Artefacts. Open source is both a licensing modèle et a culturel infrastructure pour software, creative outils, public knowledge, maintainership et technical education.
+Open source est documenté comme notion de référence pour comprendre les pratiques de publication, maintenance et cooperation fondees sur du code et des ressources ouverts.
 
 ## Usage
 
-Cette notion sert à relier les projets, publications et technologies qui partagent un même vocabulaire de conception. Open source est un software et culturel practice dans which source code is made available under licenses that allow use, study, modification et redistribution.
+Cette fiche relie la notion aux projets, publications et technologies qui partagent un même vocabulaire de conception. Elle sert de point d'appui pour naviguer dans le graphe en version française.
 
-## Domaines
+## Périmètre
 
-Cette entrée croise notamment les domaines suivants : Open source, Programming, Programmation créative, Creative Business.
+La notion est abordée par ses définitions, ses usages, ses limites et ses relations avec les autres objets documentés.
 
 ## Références
 
-Les références principales restent les sources indiquées dans la fiche canonique, notamment The Open Source Definition.
+Les sources principales restent disponibles dans le bloc de références de la fiche.

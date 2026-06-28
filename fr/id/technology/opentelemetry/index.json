@@ -6,8 +6,8 @@
     "canonical": "opentelemetry"
   },
   "title": "OpenTelemetry",
-  "abstract": "OpenTelemetry est un observability framework pour producing, collecting et standardizing telemetry such comme traces, metrics et logs.",
-  "description": "A technology record pour OpenTelemetry comme telemetry infrastructure pour distributed systèmes et AI outil workflows.",
+  "abstract": "OpenTelemetry est présenté comme une technologie de référence pour comprendre son rôle dans l'écosystème Electronic Artefacts, ses usages, ses limites et sa place dans les systèmes numériques contemporains.",
+  "description": "OpenTelemetry est présenté comme une technologie de référence pour comprendre son rôle dans l'écosystème Electronic Artefacts, ses usages, ses limites et sa place dans les systèmes numériques contemporains.",
   "locale": "fr",
   "visibility": "public",
   "publicationClass": "canonical",
@@ -33,26 +33,26 @@
     "Metrics"
   ],
   "disciplines": [
-    "Software Architecture",
-    "Systèmes Design",
-    "Intelligence artificielle"
+    "architecture logicielle",
+    "conception de systèmes",
+    "intelligence artificielle"
   ],
   "sources": [
     {
-      "title": "OpenTelemetry Sémantique Conventions 1.42.0",
+      "title": "OpenTelemetry Semantic Conventions 1.42.0",
       "url": "https://opentelemetry.io/docs/specs/semconv/",
       "publisher": "OpenTelemetry",
       "accessedAt": "2026-06-24"
     }
   ],
   "category": "platform",
-  "roleInEcosystem": "OpenTelemetry gives distributed systèmes a shared telemetry vocabulary pour spans, metrics, logs, attributes et sémantique conventions.",
+  "roleInEcosystem": "OpenTelemetry sert de repère technique pour évaluer le sujet \"OpenTelemetry\" dans le graphe public d'Electronic Artefacts, ses usages possibles et ses conséquences dans l'écosystème Electronic Artefacts.",
   "officialUrl": "https://opentelemetry.io/docs/specs/semconv/",
-  "bodyHtml": "<h2 id=\"role\">Rôle</h2>\n<p>OpenTelemetry est documenté ici comme une entrée française du graphe public d’Electronic Artefacts. OpenTelemetry est un observability framework pour producing, collecting et standardizing telemetry such comme traces, metrics et logs.</p>\n<h2 id=\"usage\">Usage</h2>\n<p>Cette technologie sert de repère pour évaluer les choix d’architecture, les dépendances et les possibilités d’implémentation. OpenTelemetry gives distributed systèmes a shared telemetry vocabulary pour spans, metrics, logs, attributes et sémantique conventions.</p>\n<h2 id=\"domaines\">Domaines</h2>\n<p>Cette entrée croise notamment les domaines suivants : Software Architecture, Systèmes Design, Intelligence artificielle.</p>\n<h2 id=\"references\">Références</h2>\n<p>Les références principales restent les sources indiquées dans la fiche canonique, notamment OpenTelemetry Semantic Conventions 1.42.0.</p>\n",
+  "bodyHtml": "<h2 id=\"role\">Rôle</h2>\n<p>OpenTelemetry est documenté comme technologie de référence pour le sujet “OpenTelemetry” dans le graphe public d’Electronic Artefacts.</p>\n<h2 id=\"usage\">Usage</h2>\n<p>Cette fiche aide à situer la technologie dans l’écosystème Electronic Artefacts : ce qu’elle permet, quand elle devient pertinente et comment elle dialogue avec les autres composants du graphe.</p>\n<h2 id=\"points-d-attention\">Points d’attention</h2>\n<ul>\n<li>Les usages sont décrits en français sans masquer les noms propres, acronymes ou standards techniques.</li>\n<li>Les limites restent contextualisées par rapport aux projets, aux publications et aux contraintes d’implémentation.</li>\n</ul>\n<h2 id=\"references\">Références</h2>\n<p>Les sources principales restent disponibles dans le bloc de références de la fiche.</p>\n",
   "headings": [
     "Rôle",
     "Usage",
-    "Domaines",
+    "Points d'attention",
     "Références"
   ],
   "headingItems": [
@@ -68,8 +68,8 @@
     },
     {
       "level": 2,
-      "title": "Domaines",
-      "id": "domaines"
+      "title": "Points d'attention",
+      "id": "points-d-attention"
     },
     {
       "level": 2,

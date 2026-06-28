@@ -4,13 +4,14 @@ type: concept
 slug:
   canonical: generative-ai
 title: IA générative
-definition: Generative AI refers à machine-learning systèmes that produce ou
-  transform médias such comme text, image, audio, video, code ou structured
-  données from learned patterns.
-abstract: Generative AI relie machine learning, creative workflows, latent
-  spaces, risk management, provenance, authorship et culturel production.
-description: A canonical concept record pour generative AI dans creative et
-  systèmes de connaissance.
+definition: IA générative désigne les systèmes d'IA capables de produire ou transformer du texte,
+  des images, du son, de la video, du code ou des données structurees.
+abstract: IA générative définit un repère conceptuel en français pour comprendre les systèmes d'IA
+  capables de produire ou transformer du texte, des images, du son, de la video, du code ou des
+  données structurees et ses liens avec les projets, technologies et publications du graphe.
+description: IA générative définit un repère conceptuel en français pour comprendre les systèmes
+  d'IA capables de produire ou transformer du texte, des images, du son, de la video, du code ou des
+  données structurees et ses liens avec les projets, technologies et publications du graphe.
 locale: fr
 visibility: public
 publicationClass: canonical
@@ -26,20 +27,18 @@ authors:
   - id: ea:organization:electronic-artefacts
 publisher: ea:organization:electronic-artefacts
 scope:
-  - Machine learning
-  - Médias generation
-  - Latent spaces
-  - Creative workflows
-  - Provenance
+  - définition du sujet
+  - contexte d'usage
+  - liens avec le graphe
+  - références associées
 exclusions:
-  - Rule-based generation avec no learned modèle
-  - Claims de autonomous creativity that erase human, donnéesset et
-    infrastructure roles
+  - les usages purement promotionnels sans définition vérifiable
+  - les exemples déconnectés des sources, relations ou contraintes du graphe
 claims:
-  - Generative AI should be evaluated through provenance, constraints, use
-    context et human judgment.
-  - Creative use de generative AI is stronger when it documents prompts,
-    sources, edits, selection et rights.
+  - IA générative devient utile lorsque sa définition reste reliée à des sources, des pratiques et
+    des objets observables.
+  - La fiche sert de vocabulaire commun pour relier projets, publications et technologies sans
+    mélanger les langues.
 sources:
   - title: AI Risk Management Framework
     publisher: NIST
@@ -47,30 +46,30 @@ sources:
     accessedAt: 2026-06-24
     url: https://www.nist.gov/itl/ai-risk-management-framework
 tags:
-  - IA générative
+  - Generative AI
   - Machine Learning
   - Provenance
   - Creative Workflows
 disciplines:
-  - Intelligence artificielle
+  - intelligence artificielle
   - Machine Learning
-  - Programmation créative
+  - programmation créative
   - Digital Art
 translationOf: ea:concept:generative-ai
 ---
 
 ## Rôle
 
-IA générative est documenté ici comme une entrée française du graphe public d’Electronic Artefacts. Generative AI relie machine learning, creative workflows, latent spaces, risk management, provenance, authorship et culturel production.
+IA générative est documenté comme notion de référence pour comprendre les systèmes d'IA capables de produire ou transformer du texte, des images, du son, de la video, du code ou des données structurees.
 
 ## Usage
 
-Cette notion sert à relier les projets, publications et technologies qui partagent un même vocabulaire de conception. Generative AI refers à machine-learning systèmes that produce ou transform médias such comme text, image, audio, video, code ou structured données from learned patterns.
+Cette fiche relie la notion aux projets, publications et technologies qui partagent un même vocabulaire de conception. Elle sert de point d'appui pour naviguer dans le graphe en version française.
 
-## Domaines
+## Périmètre
 
-Cette entrée croise notamment les domaines suivants : Intelligence artificielle, Machine Learning, Programmation créative, Digital Art.
+La notion est abordée par ses définitions, ses usages, ses limites et ses relations avec les autres objets documentés.
 
 ## Références
 
-Les références principales restent les sources indiquées dans la fiche canonique, notamment AI Risk Management Framework.
+Les sources principales restent disponibles dans le bloc de références de la fiche.

@@ -5,10 +5,10 @@
   "slug": {
     "canonical": "observability-for-ai-agents-and-tool-calling-systems"
   },
-  "title": "Observabilité des agents d’IA et des systèmes d’appel d’outils",
-  "subtitle": "Technical Article",
-  "abstract": "A practical explanation de telemetry pour AI agents, outil calls, traces, events, approvals, failures, evaluations et graphe-runtime accountability.",
-  "description": "Understand observability pour AI agents et outil-calling systèmes through traces, metrics, logs, audit events et OpenTelemetry.",
+  "title": "Observabilité des agents d'IA et des systèmes d'appel d'outils",
+  "subtitle": "Article technique",
+  "abstract": "Observabilité des agents d'IA et des systèmes d'appel d'outils propose une synthèse claire en français sur le sujet \"Observabilité des agents d'IA et des systèmes d'appel d'outils\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
+  "description": "Observabilité des agents d'IA et des systèmes d'appel d'outils propose une synthèse claire en français sur le sujet \"Observabilité des agents d'IA et des systèmes d'appel d'outils\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
   "locale": "fr",
   "visibility": "public",
   "publicationClass": "published",
@@ -29,26 +29,26 @@
   "publisher": "ea:organization:electronic-artefacts",
   "tags": [
     "Observability",
-    "AI Agents",
-    "Outil Calling",
+    "agents d'IA",
+    "Tool Calling",
     "OpenTelemetry",
     "Tracing"
   ],
   "disciplines": [
-    "Intelligence artificielle",
-    "Software Architecture",
-    "Systèmes Design",
-    "Distributed Systèmes"
+    "intelligence artificielle",
+    "architecture logicielle",
+    "conception de systèmes",
+    "Distributed Systems"
   ],
   "sources": [
     {
-      "title": "OpenTelemetry Sémantique Conventions 1.42.0",
+      "title": "OpenTelemetry Semantic Conventions 1.42.0",
       "url": "https://opentelemetry.io/docs/specs/semconv/",
       "publisher": "OpenTelemetry",
       "accessedAt": "2026-06-24"
     },
     {
-      "title": "Modèle Context Protocole Specification",
+      "title": "Model Context Protocol Specification",
       "url": "https://modelcontextprotocol.io/specification/2025-06-18",
       "publisher": "Model Context Protocol",
       "accessedAt": "2026-06-24"
@@ -79,8 +79,8 @@
     }
   ],
   "claims": [
-    "AI agents require observability across modèle calls, outil calls, approvals, retrieved context et external side effects.",
-    "Agent telemetry should record operational behavior et accountability métadonnées without storing sensitive prompts ou private content by default."
+    "Observabilité des agents d'IA et des systèmes d'appel d'outils doit être lisible comme une synthèse française autonome, sans phrases hybrides héritées de l'anglais.",
+    "Les liens avec les notions, projets et technologies du graphe renforcent la recherche, la navigation et la citation."
   ],
   "evidence": [
     {
@@ -91,22 +91,22 @@
     }
   ],
   "citation": {
-    "preferred": "Electronic Artefacts. \"Observability pour AI Agents et Outil-Calling Systèmes.\" Technical article, version 1.0.0, 2026."
+    "preferred": "Electronic Artefacts. \"Observabilité des agents d'IA et des systèmes d'appel d'outils\". Article technique, version 1.0.0, 2026."
   },
-  "bodyHtml": "<h2 id=\"problem\">Problem</h2>\n<p>Observabilité des agents d’IA et des systèmes d’appel d’outils répond à un problème de lisibilité, d’architecture ou de transmission dans les systèmes numériques contemporains. A practical explanation de telemetry pour AI agents, outil calls, traces, events, approvals, failures, evaluations et graphe-runtime accountability.</p>\n<h2 id=\"architecture\">Architecture</h2>\n<p>La page organise le sujet comme un ensemble de notions, dépendances, preuves et relations éditoriales connectées au graphe de connaissance.</p>\n<h2 id=\"implementation\">Implementation</h2>\n<p>Pour Electronic Artefacts, cette publication sert de repère français pour cadrer les choix de conception, préparer des contenus plus détaillés et stabiliser le vocabulaire technique.</p>\n<h2 id=\"evidence\">Evidence</h2>\n<ul>\n<li>AI agents require observability across modèle calls, outil calls, approvals, retrieved context et external side effects.</li>\n<li>Agent telemetry should record operational behavior et accountability métadonnées without storing sensitive prompts ou private content by default.</li>\n</ul>\n<h2 id=\"limitations\">Limitations</h2>\n<p>Cette version française assure la couverture éditoriale du site. Une passe ultérieure pourra enrichir le style et traduire plus finement chaque nuance de la version longue.</p>\n<h2 id=\"references\">References</h2>\n<p>Références conservées depuis la fiche canonique : OpenTelemetry Semantic Conventions 1.42.0, Model Context Protocol Specification, CloudEvents.</p>\n",
+  "bodyHtml": "<h2 id=\"probleme\">Problème</h2>\n<p>Observabilité des agents d’IA et des systèmes d’appel d’outils examine le sujet “Observabilité des agents d’IA et des systèmes d’appel d’outils” dans le graphe public d’Electronic Artefacts. La fiche donne une entrée française stable, utilisable pour lire le sujet et relier ses sources au reste du graphe.</p>\n<h2 id=\"architecture\">Architecture</h2>\n<p>Le sujet est abordé par ses relations avec les concepts, projets et technologies concernés, afin de rendre son contexte de conception lisible.</p>\n<h2 id=\"mise-en-uvre\">Mise en œuvre</h2>\n<p>La page décrit les usages, contraintes et choix de structure qui permettent d’appliquer le sujet dans des situations concrètes.</p>\n<h2 id=\"elements-de-preuve\">Éléments de preuve</h2>\n<p>Les sources, relations et éléments de contexte restent attachés à la fiche pour distinguer synthèse éditoriale, preuves et références.</p>\n<h2 id=\"limites\">Limites</h2>\n<p>Les limites sont formulées par rapport au périmètre de la fiche, aux sources disponibles et aux conditions d’usage documentées.</p>\n<h2 id=\"references\">Références</h2>\n<p>Les sources principales restent disponibles dans le bloc de références de la fiche.</p>\n",
   "headings": [
-    "Problem",
+    "Problème",
     "Architecture",
-    "Implementation",
-    "Evidence",
-    "Limitations",
-    "References"
+    "Mise en œuvre",
+    "Éléments de preuve",
+    "Limites",
+    "Références"
   ],
   "headingItems": [
     {
       "level": 2,
-      "title": "Problem",
-      "id": "problem"
+      "title": "Problème",
+      "id": "probleme"
     },
     {
       "level": 2,
@@ -115,22 +115,22 @@
     },
     {
       "level": 2,
-      "title": "Implementation",
-      "id": "implementation"
+      "title": "Mise en œuvre",
+      "id": "mise-en-uvre"
     },
     {
       "level": 2,
-      "title": "Evidence",
-      "id": "evidence"
+      "title": "Éléments de preuve",
+      "id": "elements-de-preuve"
     },
     {
       "level": 2,
-      "title": "Limitations",
-      "id": "limitations"
+      "title": "Limites",
+      "id": "limites"
     },
     {
       "level": 2,
-      "title": "References",
+      "title": "Références",
       "id": "references"
     }
   ]

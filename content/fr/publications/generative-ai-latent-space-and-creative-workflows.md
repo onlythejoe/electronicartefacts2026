@@ -4,12 +4,15 @@ type: publication
 slug:
   canonical: generative-ai-latent-space-and-creative-workflows
 title: IA générative, espace latent et workflows créatifs
-subtitle: Technical Article
-abstract: This article explains generative AI comme a creative workflow topic,
-  covering latent spaces, prompts, provenance, risk, evaluation, authorship et
-  Electronic Artefacts systèmes.
-description: A technical article on generative AI, latent space, creative
-  workflows, provenance, augmented intelligence et responsible production.
+subtitle: Article technique
+abstract: IA générative, espace latent et workflows créatifs propose une synthèse claire en français
+  sur le sujet "IA générative, espace latent et workflows créatifs" dans le graphe public
+  d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de
+  connaissances numériques.
+description: IA générative, espace latent et workflows créatifs propose une synthèse claire en
+  français sur le sujet "IA générative, espace latent et workflows créatifs" dans le graphe public
+  d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de
+  connaissances numériques.
 locale: fr
 visibility: public
 publicationClass: published
@@ -32,10 +35,10 @@ subjects:
   - id: ea:concept:generative-system
   - id: ea:concept:human-computer-interaction
 claims:
-  - Generative AI is best understood comme part de a workflow that includes
-    sources, prompts, constraints, modèle behavior, selection et editing.
-  - Creative use de generative AI requires provenance et evaluation rather than
-    output novelty alone.
+  - IA générative, espace latent et workflows créatifs doit être lisible comme une synthèse
+    française autonome, sans phrases hybrides héritées de l'anglais.
+  - Les liens avec les notions, projets et technologies du graphe renforcent la recherche, la
+    navigation et la citation.
 evidence:
   - id: ea:concept:generative-ai
   - id: ea:concept:provenance
@@ -52,42 +55,41 @@ sources:
     accessedAt: 2026-06-24
     url: https://arxiv.org/abs/1706.03762
 citation:
-  preferred: Electronic Artefacts. "Generative AI, Latent Space et Creative
-    Workflows." Technical article, version 1.0.0, 2026.
+  preferred: Electronic Artefacts. "IA générative, espace latent et workflows créatifs". Article
+    technique, version 1.0.0, 2026.
 tags:
-  - IA générative
+  - Generative AI
   - Latent Space
   - Creative Workflows
   - Provenance
 disciplines:
-  - Intelligence artificielle
+  - intelligence artificielle
   - Machine Learning
-  - Programmation créative
-  - Human Computer Interaction
+  - programmation créative
+  - interaction humain-machine
 translationOf: ea:publication:generative-ai-latent-space-and-creative-workflows
 ---
 
-## Problem
+## Problème
 
-IA générative, espace latent et workflows créatifs répond à un problème de lisibilité, d’architecture ou de transmission dans les systèmes numériques contemporains. This article explains generative AI comme a creative workflow topic, covering latent spaces, prompts, provenance, risk, evaluation, authorship et Electronic Artefacts systèmes.
+IA générative, espace latent et workflows créatifs examine le sujet "IA générative, espace latent et workflows créatifs" dans le graphe public d'Electronic Artefacts. La fiche donne une entrée française stable, utilisable pour lire le sujet et relier ses sources au reste du graphe.
 
 ## Architecture
 
-La page organise le sujet comme un ensemble de notions, dépendances, preuves et relations éditoriales connectées au graphe de connaissance.
+Le sujet est abordé par ses relations avec les concepts, projets et technologies concernés, afin de rendre son contexte de conception lisible.
 
-## Implementation
+## Mise en œuvre
 
-Pour Electronic Artefacts, cette publication sert de repère français pour cadrer les choix de conception, préparer des contenus plus détaillés et stabiliser le vocabulaire technique.
+La page décrit les usages, contraintes et choix de structure qui permettent d'appliquer le sujet dans des situations concrètes.
 
-## Evidence
+## Éléments de preuve
 
-- Generative AI is best understood comme part de a workflow that includes sources, prompts, constraints, modèle behavior, selection et editing.
-- Creative use de generative AI requires provenance et evaluation rather than output novelty alone.
+Les sources, relations et éléments de contexte restent attachés à la fiche pour distinguer synthèse éditoriale, preuves et références.
 
-## Limitations
+## Limites
 
-Cette version française assure la couverture éditoriale du site. Une passe ultérieure pourra enrichir le style et traduire plus finement chaque nuance de la version longue.
+Les limites sont formulées par rapport au périmètre de la fiche, aux sources disponibles et aux conditions d'usage documentées.
 
-## References
+## Références
 
-Références conservées depuis la fiche canonique : AI Risk Management Framework, Attention Is All You Need.
+Les sources principales restent disponibles dans le bloc de références de la fiche.

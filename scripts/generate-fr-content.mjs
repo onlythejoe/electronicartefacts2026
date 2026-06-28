@@ -360,3 +360,4 @@ for (const file of englishFiles.sort()) {
 }
 
 process.stdout.write(`Created ${created} missing French content records.\n`);
+await import("./normalize-fr-content.mjs");

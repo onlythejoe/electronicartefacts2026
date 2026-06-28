@@ -6,9 +6,9 @@
     "canonical": "event-driven-architecture"
   },
   "title": "Architecture événementielle",
-  "definition": "Event-driven architecture est un système design approach dans which components publish, transport et react à records de state change rather than depending only on direct synchronous calls.",
-  "abstract": "Event-driven architecture relie event producers, brokers ou logs, consumers, schemas, delivery sémantiques, projections et observability.",
-  "description": "A canonical definition de event-driven architecture pour runtimes, workflows et distributed systèmes.",
+  "definition": "Architecture événementielle désigne les architectures ou les changements d'etat sont publies sous forme d'evenements et consommes par des composants decouples.",
+  "abstract": "Architecture événementielle définit un repère conceptuel en français pour comprendre les architectures ou les changements d'etat sont publies sous forme d'evenements et consommes par des composants decouples et ses liens avec les projets, technologies et publications du graphe.",
+  "description": "Architecture événementielle définit un repère conceptuel en français pour comprendre les architectures ou les changements d'etat sont publies sous forme d'evenements et consommes par des composants decouples et ses liens avec les projets, technologies et publications du graphe.",
   "locale": "fr",
   "visibility": "public",
   "publicationClass": "canonical",
@@ -28,17 +28,17 @@
   ],
   "publisher": "ea:organization:electronic-artefacts",
   "tags": [
-    "Architecture événementielle",
+    "Event-Driven Architecture",
     "Event Streams",
     "Messaging",
     "Idempotency",
     "Projections"
   ],
   "disciplines": [
-    "Software Architecture",
-    "Systèmes Design",
+    "architecture logicielle",
+    "conception de systèmes",
     "Programming",
-    "Distributed Systèmes"
+    "Distributed Systems"
   ],
   "sources": [
     {
@@ -49,26 +49,24 @@
     }
   ],
   "scope": [
-    "Events",
-    "Producers et consumers",
-    "Streams et brokers",
-    "Delivery sémantiques",
-    "Idempotency",
-    "Projections"
+    "définition du sujet",
+    "contexte d'usage",
+    "liens avec le graphe",
+    "références associées"
   ],
   "exclusions": [
-    "Renaming arbitrary messages comme events without recording a meaningful state change",
-    "Assuming asynchronous transport removes the need pour contracts et failure handling"
+    "les usages purement promotionnels sans définition vérifiable",
+    "les exemples déconnectés des sources, relations ou contraintes du graphe"
   ],
   "claims": [
-    "Events reduce temporal coupling but introduce ordering, duplication, replay et observability concerns.",
-    "Durable event systèmes require explicit schemas, identifiers et consumer behavior."
+    "Architecture événementielle devient utile lorsque sa définition reste reliée à des sources, des pratiques et des objets observables.",
+    "La fiche sert de vocabulaire commun pour relier projets, publications et technologies sans mélanger les langues."
   ],
-  "bodyHtml": "<h2 id=\"role\">Rôle</h2>\n<p>Architecture événementielle est documenté ici comme une entrée française du graphe public d’Electronic Artefacts. Event-driven architecture relie event producers, brokers ou logs, consumers, schemas, delivery sémantiques, projections et observability.</p>\n<h2 id=\"usage\">Usage</h2>\n<p>Cette notion sert à relier les projets, publications et technologies qui partagent un même vocabulaire de conception. Event-driven architecture est un système design approach dans which components publish, transport et react à records de state change rather than depending only on direct synchronous calls.</p>\n<h2 id=\"domaines\">Domaines</h2>\n<p>Cette entrée croise notamment les domaines suivants : Software Architecture, Systèmes Design, Programming, Distributed Systèmes.</p>\n<h2 id=\"references\">Références</h2>\n<p>Les références principales restent les sources indiquées dans la fiche canonique, notamment CloudEvents.</p>\n",
+  "bodyHtml": "<h2 id=\"role\">Rôle</h2>\n<p>Architecture événementielle est documenté comme notion de référence pour comprendre les architectures ou les changements d’etat sont publies sous forme d’evenements et consommes par des composants decouples.</p>\n<h2 id=\"usage\">Usage</h2>\n<p>Cette fiche relie la notion aux projets, publications et technologies qui partagent un même vocabulaire de conception. Elle sert de point d’appui pour naviguer dans le graphe en version française.</p>\n<h2 id=\"perimetre\">Périmètre</h2>\n<p>La notion est abordée par ses définitions, ses usages, ses limites et ses relations avec les autres objets documentés.</p>\n<h2 id=\"references\">Références</h2>\n<p>Les sources principales restent disponibles dans le bloc de références de la fiche.</p>\n",
   "headings": [
     "Rôle",
     "Usage",
-    "Domaines",
+    "Périmètre",
     "Références"
   ],
   "headingItems": [
@@ -84,8 +82,8 @@
     },
     {
       "level": 2,
-      "title": "Domaines",
-      "id": "domaines"
+      "title": "Périmètre",
+      "id": "perimetre"
     },
     {
       "level": 2,

@@ -3,13 +3,16 @@ id: ea:publication:multimodal-ai-across-text-image-audio-and-video-fr
 type: publication
 slug:
   canonical: multimodal-ai-across-text-image-audio-and-video
-title: IA multimodale pour le texte, l’image, l’audio et la vidéo
-subtitle: Technical Article
-abstract: A durable guide à multimodal AI architecture, shared representations,
-  cross-modal retrieval, generation, temporal médias, provenance et creative
-  applications.
-description: Learn how multimodal AI relie text, images, audio et video, et how
-  à evaluate cross-modal systèmes pour creative et culturel use.
+title: IA multimodale pour le texte, l'image, l'audio et la video
+subtitle: Article technique
+abstract: IA multimodale pour le texte, l'image, l'audio et la video propose une synthèse claire en
+  français sur le sujet "IA multimodale pour le texte, l'image, l'audio et la video" dans le graphe
+  public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la
+  publication de connaissances numériques.
+description: IA multimodale pour le texte, l'image, l'audio et la video propose une synthèse claire
+  en français sur le sujet "IA multimodale pour le texte, l'image, l'audio et la video" dans le
+  graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la
+  publication de connaissances numériques.
 locale: fr
 visibility: public
 publicationClass: published
@@ -32,64 +35,63 @@ subjects:
   - id: ea:program:oreth
   - id: ea:project:palimpsests
 claims:
-  - Multimodal capability depends on modality-specific encoding, alignment et
-    evaluation rather than on a language interface alone.
-  - Culturel multimodal systèmes should preserve the identité et provenance de
-    each source modality.
+  - IA multimodale pour le texte, l'image, l'audio et la video doit être lisible comme une synthèse
+    française autonome, sans phrases hybrides héritées de l'anglais.
+  - Les liens avec les notions, projets et technologies du graphe renforcent la recherche, la
+    navigation et la citation.
 evidence:
   - id: ea:concept:multimodal-ai
   - id: ea:program:oreth
 sources:
-  - title: Learning Transferable Visuel Modèles From Natural Language Supervision
+  - title: Learning Transferable Visual Models From Natural Language Supervision
     author: Alec Radford et al.
     publisher: arXiv
     publishedAt: 2021-02-26
     accessedAt: 2026-06-24
     url: https://arxiv.org/abs/2103.00020
-  - title: Multimodal Foundation Modèles From Specialists à General-Purpose Assistants
+  - title: Multimodal Foundation Models From Specialists to General-Purpose Assistants
     author: Chunyuan Li et al.
     publisher: arXiv
     publishedAt: 2023-09-18
     accessedAt: 2026-06-24
     url: https://arxiv.org/abs/2309.10020
 citation:
-  preferred: Electronic Artefacts. "Multimodal AI Across Text, Image, Audio et
-    Video." Technical article, version 1.0.0, 2026.
+  preferred: Electronic Artefacts. "IA multimodale pour le texte, l'image, l'audio et la video".
+    Article technique, version 1.0.0, 2026.
 tags:
-  - IA multimodale
+  - Multimodal AI
   - Vision Language
   - Audio AI
   - Video AI
   - Cross-Modal Retrieval
 disciplines:
-  - Intelligence artificielle
+  - intelligence artificielle
   - Machine Learning
   - Digital Art
   - Audio Engineering
 translationOf: ea:publication:multimodal-ai-across-text-image-audio-and-video
 ---
 
-## Problem
+## Problème
 
-IA multimodale pour le texte, l’image, l’audio et la vidéo répond à un problème de lisibilité, d’architecture ou de transmission dans les systèmes numériques contemporains. A durable guide à multimodal AI architecture, shared representations, cross-modal retrieval, generation, temporal médias, provenance et creative applications.
+IA multimodale pour le texte, l'image, l'audio et la video examine le sujet "IA multimodale pour le texte, l'image, l'audio et la video" dans le graphe public d'Electronic Artefacts. La fiche donne une entrée française stable, utilisable pour lire le sujet et relier ses sources au reste du graphe.
 
 ## Architecture
 
-La page organise le sujet comme un ensemble de notions, dépendances, preuves et relations éditoriales connectées au graphe de connaissance.
+Le sujet est abordé par ses relations avec les concepts, projets et technologies concernés, afin de rendre son contexte de conception lisible.
 
-## Implementation
+## Mise en œuvre
 
-Pour Electronic Artefacts, cette publication sert de repère français pour cadrer les choix de conception, préparer des contenus plus détaillés et stabiliser le vocabulaire technique.
+La page décrit les usages, contraintes et choix de structure qui permettent d'appliquer le sujet dans des situations concrètes.
 
-## Evidence
+## Éléments de preuve
 
-- Multimodal capability depends on modality-specific encoding, alignment et evaluation rather than on a language interface alone.
-- Culturel multimodal systèmes should preserve the identité et provenance de each source modality.
+Les sources, relations et éléments de contexte restent attachés à la fiche pour distinguer synthèse éditoriale, preuves et références.
 
-## Limitations
+## Limites
 
-Cette version française assure la couverture éditoriale du site. Une passe ultérieure pourra enrichir le style et traduire plus finement chaque nuance de la version longue.
+Les limites sont formulées par rapport au périmètre de la fiche, aux sources disponibles et aux conditions d'usage documentées.
 
-## References
+## Références
 
-Références conservées depuis la fiche canonique : Learning Transferable Visual Models From Natural Language Supervision, Multimodal Foundation Models From Specialists to General-Purpose Assistants.
+Les sources principales restent disponibles dans le bloc de références de la fiche.

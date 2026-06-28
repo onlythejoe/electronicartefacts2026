@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/publications/foundational-lineage-001/#webpage",
       "url": "https://electronicartefacts.com/fr/publications/foundational-lineage-001/",
       "name": "Foundational Lineage #001",
-      "description": "A concise record de the foundational recherche lineage connecting information architecture, taxonomy, runtime systèmes et public knowledge structures.",
+      "description": "Foundational Lineage #001 propose une synthèse claire en français sur le sujet \"Foundational Lineage #001\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
@@ -35,8 +35,8 @@
       "identifier": "ea:publication:foundational-lineage-001-fr",
       "name": "Foundational Lineage #001",
       "headline": "Foundational Lineage #001",
-      "abstract": "This recherche note records early architecture, communication-système et documentation threads that led à Electronic Artefacts, Runtime Theory et VASTE.",
-      "description": "This recherche note records early architecture, communication-système et documentation threads that led à Electronic Artefacts, Runtime Theory et VASTE.",
+      "abstract": "Foundational Lineage #001 propose une synthèse claire en français sur le sujet \"Foundational Lineage #001\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
+      "description": "Foundational Lineage #001 propose une synthèse claire en français sur le sujet \"Foundational Lineage #001\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
       "url": "https://electronicartefacts.com/fr/publications/foundational-lineage-001/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/publications/foundational-lineage-001/#webpage"
@@ -59,7 +59,7 @@
       "keywords": [
         "Foundational",
         "Lineage",
-        "Recherche",
+        "Research",
         "Information architecture"
       ],
       "inLanguage": "fr",
@@ -73,9 +73,9 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 134,
+      "wordCount": 131,
       "citation": [
-        "Electronic Artefacts. “Foundational Lineage #001.” Recherche note, version 1.0.0, 2026."
+        "Electronic Artefacts. \"Foundational Lineage #001\". Article technique, version 1.0.0, 2026."
       ],
       "about": [
         {
@@ -93,7 +93,7 @@
       "articleSection": [
         "Foundational",
         "Lineage",
-        "Recherche",
+        "Research",
         "Information architecture"
       ],
       "timeRequired": "PT1M"

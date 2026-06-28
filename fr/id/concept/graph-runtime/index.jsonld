@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/knowledge/concepts/graph-runtime/#webpage",
       "url": "https://electronicartefacts.com/fr/knowledge/concepts/graph-runtime/",
       "name": "Runtime de graphe",
-      "description": "A canonical definition de graphe runtime, its scope, applications et relationship à VASTE, Runtime Theory et Vestiges.",
+      "description": "Runtime de graphe définit un repère conceptuel en français pour comprendre les environnements d'execution ou les entités, relations, permissions et événements du graphe participent directement au calcul et ses liens avec les projets, technologies et publications du graphe.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
@@ -34,8 +34,8 @@
       "@id": "https://electronicartefacts.com/fr/id/concept/graph-runtime/",
       "identifier": "ea:concept:graph-runtime-fr",
       "name": "Runtime de graphe",
-      "abstract": "Electronic Artefacts uses graphe runtime à describe systèmes where entités, relationships, identité, context et events form an executable structure rather than a passive données modèle.",
-      "description": "A graphe runtime est un execution environment dans which addressable entités et typed relationships participate directly dans contextual computation.",
+      "abstract": "Runtime de graphe définit un repère conceptuel en français pour comprendre les environnements d'execution ou les entités, relations, permissions et événements du graphe participent directement au calcul et ses liens avec les projets, technologies et publications du graphe.",
+      "description": "Runtime de graphe désigne les environnements d'execution ou les entités, relations, permissions et événements du graphe participent directement au calcul.",
       "url": "https://electronicartefacts.com/fr/knowledge/concepts/graph-runtime/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/knowledge/concepts/graph-runtime/#webpage"
@@ -56,13 +56,13 @@
         }
       ],
       "keywords": [
-        "Graphe",
+        "Graph",
         "Runtime",
         "Context",
-        "Identité",
-        "Execution",
+        "Identity",
+        "Exécution",
         "Software architecture",
-        "Knowledge systèmes"
+        "Knowledge systems"
       ],
       "inLanguage": "fr",
       "dateCreated": "2024-01-01",
@@ -75,7 +75,7 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 108,
+      "wordCount": 91,
       "inDefinedTermSet": "https://electronicartefacts.com/knowledge/concepts/",
       "termCode": "graph-runtime"
     },

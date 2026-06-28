@@ -6,14 +6,14 @@ slug:
 title: Grand modèle de langage
 alternateNames:
   - LLM
-definition: A large language modèle est un parameterized machine-learning modèle
-  trained à predict et generate sequences de tokens from statistical patterns
-  learned across large text ou multimodal corpora.
-abstract: Large language modèles combine tokenization, embeddings, transformer
-  layers, attention, training objectives et probabilistic decoding à generate ou
-  transform language.
-description: A canonical definition de large language modèles, their operating
-  principles, capabilities et limitations.
+definition: Grand modèle de langage désigne les grands modèles de langage entraines à predire et
+  generer des sequences de tokens à partir de corpus massifs.
+abstract: Grand modèle de langage définit un repère conceptuel en français pour comprendre les
+  grands modèles de langage entraines à predire et generer des sequences de tokens à partir de
+  corpus massifs et ses liens avec les projets, technologies et publications du graphe.
+description: Grand modèle de langage définit un repère conceptuel en français pour comprendre les
+  grands modèles de langage entraines à predire et generer des sequences de tokens à partir de
+  corpus massifs et ses liens avec les projets, technologies et publications du graphe.
 locale: fr
 visibility: public
 publicationClass: canonical
@@ -29,22 +29,18 @@ authors:
   - id: ea:organization:electronic-artefacts
 publisher: ea:organization:electronic-artefacts
 scope:
-  - Tokenization
-  - Embeddings
-  - Transformer architecture
-  - Pretraining et adaptation
-  - Inference et decoding
-  - Context windows
+  - définition du sujet
+  - contexte d'usage
+  - liens avec le graphe
+  - références associées
 exclusions:
-  - A donnéesbase that retrieves stored sentences without a learned generative
-    modèle
-  - A claim that generated text represents understanding, truth ou agency by
-    itself
+  - les usages purement promotionnels sans définition vérifiable
+  - les exemples déconnectés des sources, relations ou contraintes du graphe
 claims:
-  - Large language modèles generate token sequences from learned probability
-    distributions rather than retrieving a single memorized answer.
-  - Modèle capability depends on architecture, données, training, inference
-    configuration, outils et evaluation context.
+  - Grand modèle de langage devient utile lorsque sa définition reste reliée à des sources, des
+    pratiques et des objets observables.
+  - La fiche sert de vocabulaire commun pour relier projets, publications et technologies sans
+    mélanger les langues.
 sources:
   - title: Attention Is All You Need
     author: Ashish Vaswani et al.
@@ -57,27 +53,27 @@ tags:
   - Transformer
   - Tokens
   - Inference
-  - Language Modèles
+  - Language Models
 disciplines:
-  - Intelligence artificielle
+  - intelligence artificielle
   - Machine Learning
   - Programming
-  - Systèmes de connaissance
+  - Knowledge Systems
 translationOf: ea:concept:large-language-model
 ---
 
 ## Rôle
 
-Grand modèle de langage est documenté ici comme une entrée française du graphe public d’Electronic Artefacts. Large language modèles combine tokenization, embeddings, transformer layers, attention, training objectives et probabilistic decoding à generate ou transform language.
+Grand modèle de langage est documenté comme notion de référence pour comprendre les grands modèles de langage entraines à predire et generer des sequences de tokens à partir de corpus massifs.
 
 ## Usage
 
-Cette notion sert à relier les projets, publications et technologies qui partagent un même vocabulaire de conception. A large language modèle est un parameterized machine-learning modèle trained à predict et generate sequences de tokens from statistical patterns learned across large text ou multimodal corpora.
+Cette fiche relie la notion aux projets, publications et technologies qui partagent un même vocabulaire de conception. Elle sert de point d'appui pour naviguer dans le graphe en version française.
 
-## Domaines
+## Périmètre
 
-Cette entrée croise notamment les domaines suivants : Intelligence artificielle, Machine Learning, Programming, Systèmes de connaissance.
+La notion est abordée par ses définitions, ses usages, ses limites et ses relations avec les autres objets documentés.
 
 ## Références
 
-Les références principales restent les sources indiquées dans la fiche canonique, notamment Attention Is All You Need.
+Les sources principales restent disponibles dans le bloc de références de la fiche.

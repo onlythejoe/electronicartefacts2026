@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/knowledge/technologies/iiif/#webpage",
       "url": "https://electronicartefacts.com/fr/knowledge/technologies/iiif/",
       "name": "IIIF",
-      "description": "A technology record pour IIIF comme interoperable presentation infrastructure pour compound culturel objects.",
+      "description": "IIIF est présenté comme une technologie de référence pour comprendre son rôle dans l'écosystème Electronic Artefacts, ses usages, ses limites et sa place dans les systèmes numériques contemporains.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
@@ -37,8 +37,8 @@
       "alternateName": [
         "International Image Interoperability Framework"
       ],
-      "abstract": "IIIF est un framework de APIs pour presenting, structuring et annotating digital representations de culturel et archival objects.",
-      "description": "IIIF est un framework de APIs pour presenting, structuring et annotating digital representations de culturel et archival objects.",
+      "abstract": "IIIF est présenté comme une technologie de référence pour comprendre son rôle dans l'écosystème Electronic Artefacts, ses usages, ses limites et sa place dans les systèmes numériques contemporains.",
+      "description": "IIIF est présenté comme une technologie de référence pour comprendre son rôle dans l'écosystème Electronic Artefacts, ses usages, ses limites et sa place dans les systèmes numériques contemporains.",
       "url": "https://electronicartefacts.com/fr/knowledge/technologies/iiif/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/knowledge/technologies/iiif/#webpage"
@@ -61,11 +61,11 @@
       "keywords": [
         "IIIF",
         "Digital Archives",
-        "Culturel Heritage",
+        "Cultural Heritage",
         "Presentation API",
-        "Préservation numérique",
-        "Culturel Infrastructure",
-        "Systèmes de connaissance"
+        "Digital Préservation",
+        "Cultural Infrastructure",
+        "Knowledge Systems"
       ],
       "inLanguage": "fr",
       "dateCreated": "2026-06-24",
@@ -78,7 +78,7 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 99,
+      "wordCount": 93,
       "citation": [
         {
           "@type": "CreativeWork",

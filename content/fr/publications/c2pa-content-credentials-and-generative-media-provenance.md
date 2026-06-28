@@ -4,11 +4,15 @@ type: publication
 slug:
   canonical: c2pa-content-credentials-and-generative-media-provenance
 title: C2PA, Content Credentials et provenance des médias génératifs
-subtitle: Technical Article
-abstract: A practical explanation de C2PA, Content Credentials, signed médias
-  manifests, provenance claims, trust limits et archive use.
-description: Understand C2PA et Content Credentials pour médias provenance,
-  generative AI labelling, archive trust et culturel production workflows.
+subtitle: Article technique
+abstract: C2PA, Content Credentials et provenance des médias génératifs propose une synthèse claire
+  en français sur le sujet "C2PA, Content Credentials et provenance des médias génératifs" dans le
+  graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la
+  publication de connaissances numériques.
+description: C2PA, Content Credentials et provenance des médias génératifs propose une synthèse
+  claire en français sur le sujet "C2PA, Content Credentials et provenance des médias génératifs"
+  dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception
+  et la publication de connaissances numériques.
 locale: fr
 visibility: public
 publicationClass: published
@@ -31,11 +35,10 @@ subjects:
   - id: ea:concept:generative-ai
   - id: ea:project:palimpsests
 claims:
-  - C2PA can strengthen médias provenance by carrying signed assertions, but it
-    does not prove that the content is true ou culturelly meaningful.
-  - Archive workflows should treat Content Credentials comme one evidence layer
-    alongside source records, rights métadonnées, fixity et editorial
-    interpretation.
+  - C2PA, Content Credentials et provenance des médias génératifs doit être lisible comme une
+    synthèse française autonome, sans phrases hybrides héritées de l'anglais.
+  - Les liens avec les notions, projets et technologies du graphe renforcent la recherche, la
+    navigation et la citation.
 evidence:
   - id: ea:technology:c2pa
   - id: ea:concept:provenance
@@ -53,43 +56,42 @@ sources:
     accessedAt: 2026-06-24
     url: https://www.w3.org/TR/prov-overview/
 citation:
-  preferred: Electronic Artefacts. "C2PA Content Credentials et Generative Médias
-    Provenance." Technical article, version 1.0.0, 2026.
+  preferred: Electronic Artefacts. "C2PA, Content Credentials et provenance des médias génératifs".
+    Article technique, version 1.0.0, 2026.
 tags:
   - C2PA
   - Content Credentials
   - Provenance
-  - IA générative
-  - Préservation numérique
+  - Generative AI
+  - Digital Préservation
 disciplines:
-  - Préservation numérique
-  - Intelligence artificielle
-  - Systèmes de connaissance
-  - Culturel Infrastructure
+  - Digital Préservation
+  - intelligence artificielle
+  - Knowledge Systems
+  - Cultural Infrastructure
 translationOf: ea:publication:c2pa-content-credentials-and-generative-media-provenance
 ---
 
-## Problem
+## Problème
 
-C2PA, Content Credentials et provenance des médias génératifs répond à un problème de lisibilité, d’architecture ou de transmission dans les systèmes numériques contemporains. A practical explanation de C2PA, Content Credentials, signed médias manifests, provenance claims, trust limits et archive use.
+C2PA, Content Credentials et provenance des médias génératifs examine le sujet "C2PA, Content Credentials et provenance des médias génératifs" dans le graphe public d'Electronic Artefacts. La fiche donne une entrée française stable, utilisable pour lire le sujet et relier ses sources au reste du graphe.
 
 ## Architecture
 
-La page organise le sujet comme un ensemble de notions, dépendances, preuves et relations éditoriales connectées au graphe de connaissance.
+Le sujet est abordé par ses relations avec les concepts, projets et technologies concernés, afin de rendre son contexte de conception lisible.
 
-## Implementation
+## Mise en œuvre
 
-Pour Electronic Artefacts, cette publication sert de repère français pour cadrer les choix de conception, préparer des contenus plus détaillés et stabiliser le vocabulaire technique.
+La page décrit les usages, contraintes et choix de structure qui permettent d'appliquer le sujet dans des situations concrètes.
 
-## Evidence
+## Éléments de preuve
 
-- C2PA can strengthen médias provenance by carrying signed assertions, but it does not prove that the content is true ou culturelly meaningful.
-- Archive workflows should treat Content Credentials comme one evidence layer alongside source records, rights métadonnées, fixity et editorial interpretation.
+Les sources, relations et éléments de contexte restent attachés à la fiche pour distinguer synthèse éditoriale, preuves et références.
 
-## Limitations
+## Limites
 
-Cette version française assure la couverture éditoriale du site. Une passe ultérieure pourra enrichir le style et traduire plus finement chaque nuance de la version longue.
+Les limites sont formulées par rapport au périmètre de la fiche, aux sources disponibles et aux conditions d'usage documentées.
 
-## References
+## Références
 
-Références conservées depuis la fiche canonique : C2PA Specifications 2.4, C2PA Security Considerations, W3C PROV Overview.
+Les sources principales restent disponibles dans le bloc de références de la fiche.

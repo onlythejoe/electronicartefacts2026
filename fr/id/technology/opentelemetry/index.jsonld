@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/knowledge/technologies/opentelemetry/#webpage",
       "url": "https://electronicartefacts.com/fr/knowledge/technologies/opentelemetry/",
       "name": "OpenTelemetry",
-      "description": "A technology record pour OpenTelemetry comme telemetry infrastructure pour distributed systèmes et AI outil workflows.",
+      "description": "OpenTelemetry est présenté comme une technologie de référence pour comprendre son rôle dans l'écosystème Electronic Artefacts, ses usages, ses limites et sa place dans les systèmes numériques contemporains.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
@@ -34,8 +34,8 @@
       "@id": "https://electronicartefacts.com/fr/id/technology/opentelemetry/",
       "identifier": "ea:technology:opentelemetry-fr",
       "name": "OpenTelemetry",
-      "abstract": "OpenTelemetry est un observability framework pour producing, collecting et standardizing telemetry such comme traces, metrics et logs.",
-      "description": "OpenTelemetry est un observability framework pour producing, collecting et standardizing telemetry such comme traces, metrics et logs.",
+      "abstract": "OpenTelemetry est présenté comme une technologie de référence pour comprendre son rôle dans l'écosystème Electronic Artefacts, ses usages, ses limites et sa place dans les systèmes numériques contemporains.",
+      "description": "OpenTelemetry est présenté comme une technologie de référence pour comprendre son rôle dans l'écosystème Electronic Artefacts, ses usages, ses limites et sa place dans les systèmes numériques contemporains.",
       "url": "https://electronicartefacts.com/fr/knowledge/technologies/opentelemetry/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/knowledge/technologies/opentelemetry/#webpage"
@@ -60,9 +60,9 @@
         "Observability",
         "Tracing",
         "Metrics",
-        "Software Architecture",
-        "Systèmes Design",
-        "Intelligence artificielle"
+        "architecture logicielle",
+        "conception de systèmes",
+        "intelligence artificielle"
       ],
       "inLanguage": "fr",
       "dateCreated": "2026-06-24",
@@ -75,11 +75,11 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 96,
+      "wordCount": 93,
       "citation": [
         {
           "@type": "CreativeWork",
-          "name": "OpenTelemetry Sémantique Conventions 1.42.0",
+          "name": "OpenTelemetry Semantic Conventions 1.42.0",
           "url": "https://opentelemetry.io/docs/specs/semconv/",
           "publisher": "OpenTelemetry"
         }

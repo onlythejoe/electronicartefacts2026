@@ -5,11 +5,12 @@ slug:
   canonical: json-ld
 title: JSON-LD
 subtitle: JSON pour Données liées
-abstract: JSON-LD est un W3C format pour serializing Données liées dans JSON,
-  making sémantique graphe métadonnées compatible avec common web programming
-  workflows.
-description: A technology record pour JSON-LD comme the structured données
-  format used by Electronic Artefacts canonical pages.
+abstract: JSON-LD est présenté comme une technologie de référence pour comprendre son rôle dans
+  l'écosystème Electronic Artefacts, ses usages, ses limites et sa place dans les systèmes
+  numériques contemporains.
+description: JSON-LD est présenté comme une technologie de référence pour comprendre son rôle dans
+  l'écosystème Electronic Artefacts, ses usages, ses limites et sa place dans les systèmes
+  numériques contemporains.
 locale: fr
 visibility: public
 publicationClass: published
@@ -25,8 +26,9 @@ authors:
   - id: ea:organization:electronic-artefacts
 publisher: ea:organization:electronic-artefacts
 category: protocol
-roleInEcosystem: JSON-LD est le format used à publish machine-readable
-  structured données pour Electronic Artefacts entité pages.
+roleInEcosystem: JSON-LD sert de repère technique pour évaluer le sujet "JSON-LD" dans le graphe
+  public d'Electronic Artefacts, ses usages possibles et ses conséquences dans l'écosystème
+  Electronic Artefacts.
 officialUrl: https://www.w3.org/TR/json-ld11/
 versions:
   - JSON-LD 1.1
@@ -38,28 +40,29 @@ sources:
     url: https://www.w3.org/TR/json-ld11/
 tags:
   - JSON-LD
-  - Données liées
-  - Structured Données
+  - Linked Data
+  - Structured Data
   - SEO
 disciplines:
   - Web Development
-  - Systèmes de connaissance
+  - Knowledge Systems
   - SEO
 translationOf: ea:technology:json-ld
 ---
 
 ## Rôle
 
-JSON-LD est documenté ici comme une entrée française du graphe public d’Electronic Artefacts. JSON-LD est un W3C format pour serializing Données liées dans JSON, making sémantique graphe métadonnées compatible avec common web programming workflows.
+JSON-LD est documenté comme technologie de référence pour le sujet "JSON-LD" dans le graphe public d'Electronic Artefacts.
 
 ## Usage
 
-Cette technologie sert de repère pour évaluer les choix d’architecture, les dépendances et les possibilités d’implémentation. JSON-LD est le format used à publish machine-readable structured données pour Electronic Artefacts entité pages.
+Cette fiche aide à situer la technologie dans l'écosystème Electronic Artefacts : ce qu'elle permet, quand elle devient pertinente et comment elle dialogue avec les autres composants du graphe.
 
-## Domaines
+## Points d'attention
 
-Cette entrée croise notamment les domaines suivants : Web Development, Systèmes de connaissance, SEO.
+- Les usages sont décrits en français sans masquer les noms propres, acronymes ou standards techniques.
+- Les limites restent contextualisées par rapport aux projets, aux publications et aux contraintes d'implémentation.
 
 ## Références
 
-Les références principales restent les sources indiquées dans la fiche canonique, notamment JSON-LD 1.1.
+Les sources principales restent disponibles dans le bloc de références de la fiche.

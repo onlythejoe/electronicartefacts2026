@@ -3,13 +3,16 @@ id: ea:publication:procedural-graphics-shaders-and-visual-systems-fr
 type: publication
 slug:
   canonical: procedural-graphics-shaders-and-visual-systems
-title: Graphisme procédural, shaders et systèmes visuels
-subtitle: Technical Article
-abstract: This article explains procedural grapheics through rules, shaders,
-  parameters, WebGL, generative systèmes et visuel grammars pour digital art et
-  interfaces.
-description: A technical article on procedural grapheics, shaders, WebGL,
-  programmation créative et generative visuel systèmes.
+title: Graphisme procedural, shaders et systèmes visuels
+subtitle: Article technique
+abstract: Graphisme procedural, shaders et systèmes visuels propose une synthèse claire en français
+  sur le sujet "Graphisme procedural, shaders et systèmes visuels" dans le graphe public
+  d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de
+  connaissances numériques.
+description: Graphisme procedural, shaders et systèmes visuels propose une synthèse claire en
+  français sur le sujet "Graphisme procedural, shaders et systèmes visuels" dans le graphe public
+  d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de
+  connaissances numériques.
 locale: fr
 visibility: public
 publicationClass: published
@@ -32,10 +35,10 @@ subjects:
   - id: ea:concept:creative-coding
   - id: ea:concept:motion-design
 claims:
-  - Procedural grapheics sont strongest when rules express a visuel grammar
-    rather than arbitrary variation.
-  - Shaders et WebGL make procedural visuel systèmes public, interactive et
-    inspectable dans navigateurs.
+  - Graphisme procedural, shaders et systèmes visuels doit être lisible comme une synthèse française
+    autonome, sans phrases hybrides héritées de l'anglais.
+  - Les liens avec les notions, projets et technologies du graphe renforcent la recherche, la
+    navigation et la citation.
 evidence:
   - id: ea:concept:procedural-graphics
   - id: ea:technology:webgl
@@ -45,42 +48,41 @@ sources:
     accessedAt: 2026-06-24
     url: https://www.khronos.org/webgl/
 citation:
-  preferred: Electronic Artefacts. "Procedural Grapheics, Shaders et Visuel
-    Systèmes." Technical article, version 1.0.0, 2026.
+  preferred: Electronic Artefacts. "Graphisme procedural, shaders et systèmes visuels". Article
+    technique, version 1.0.0, 2026.
 tags:
-  - Graphisme procédural
+  - Procedural Graphics
   - Shaders
   - WebGL
   - Generative Art
 disciplines:
-  - Programmation créative
+  - programmation créative
   - Digital Art
-  - Visuel Culture
+  - Visual Culture
   - Web Development
 translationOf: ea:publication:procedural-graphics-shaders-and-visual-systems
 ---
 
-## Problem
+## Problème
 
-Graphisme procédural, shaders et systèmes visuels répond à un problème de lisibilité, d’architecture ou de transmission dans les systèmes numériques contemporains. This article explains procedural grapheics through rules, shaders, parameters, WebGL, generative systèmes et visuel grammars pour digital art et interfaces.
+Graphisme procedural, shaders et systèmes visuels examine le sujet "Graphisme procedural, shaders et systèmes visuels" dans le graphe public d'Electronic Artefacts. La fiche donne une entrée française stable, utilisable pour lire le sujet et relier ses sources au reste du graphe.
 
 ## Architecture
 
-La page organise le sujet comme un ensemble de notions, dépendances, preuves et relations éditoriales connectées au graphe de connaissance.
+Le sujet est abordé par ses relations avec les concepts, projets et technologies concernés, afin de rendre son contexte de conception lisible.
 
-## Implementation
+## Mise en œuvre
 
-Pour Electronic Artefacts, cette publication sert de repère français pour cadrer les choix de conception, préparer des contenus plus détaillés et stabiliser le vocabulaire technique.
+La page décrit les usages, contraintes et choix de structure qui permettent d'appliquer le sujet dans des situations concrètes.
 
-## Evidence
+## Éléments de preuve
 
-- Procedural grapheics sont strongest when rules express a visuel grammar rather than arbitrary variation.
-- Shaders et WebGL make procedural visuel systèmes public, interactive et inspectable dans navigateurs.
+Les sources, relations et éléments de contexte restent attachés à la fiche pour distinguer synthèse éditoriale, preuves et références.
 
-## Limitations
+## Limites
 
-Cette version française assure la couverture éditoriale du site. Une passe ultérieure pourra enrichir le style et traduire plus finement chaque nuance de la version longue.
+Les limites sont formulées par rapport au périmètre de la fiche, aux sources disponibles et aux conditions d'usage documentées.
 
-## References
+## Références
 
-Références conservées depuis la fiche canonique : WebGL.
+Les sources principales restent disponibles dans le bloc de références de la fiche.

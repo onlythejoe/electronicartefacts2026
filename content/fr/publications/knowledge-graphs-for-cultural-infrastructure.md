@@ -4,13 +4,15 @@ type: publication
 slug:
   canonical: knowledge-graphs-for-cultural-infrastructure
 title: Graphes de connaissances pour les infrastructures culturelles
-subtitle: Technical Article
-abstract: This article explains how graphee de connaissancess support culturel
-  infrastructure by giving people, works, sources, concepts, projects et
-  archives stable identités et explicit relations.
-description: A technical article on graphee de connaissancess, culturel
-  heritage, provenance et public knowledge pages, connected à Vestiges et the
-  Electronic Artefacts graphe.
+subtitle: Article technique
+abstract: Graphes de connaissances pour les infrastructures culturelles propose une synthèse claire
+  en français sur le sujet "Graphes de connaissances pour les infrastructures culturelles" dans le
+  graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la
+  publication de connaissances numériques.
+description: Graphes de connaissances pour les infrastructures culturelles propose une synthèse
+  claire en français sur le sujet "Graphes de connaissances pour les infrastructures culturelles"
+  dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception
+  et la publication de connaissances numériques.
 locale: fr
 visibility: public
 publicationClass: published
@@ -33,21 +35,20 @@ subjects:
   - id: ea:technology:rdf
   - id: ea:project:vestiges
 claims:
-  - Culturel graphee de connaissancess sont useful when they preserve
-    provenance, uncertainty et relationship sémantiques rather than only
-    connectivity.
-  - A public graphe can be built from static pages if records, routes,
-    structured données et relations sont generated from typed sources.
+  - Graphes de connaissances pour les infrastructures culturelles doit être lisible comme une
+    synthèse française autonome, sans phrases hybrides héritées de l'anglais.
+  - Les liens avec les notions, projets et technologies du graphe renforcent la recherche, la
+    navigation et la citation.
 evidence:
   - id: ea:project:vestiges
   - id: ea:program:vaste
 sources:
-  - title: RDF 1.1 Concepts et Abstract Syntax
+  - title: RDF 1.1 Concepts and Abstract Syntax
     publisher: W3C
     publishedAt: 2014-02-25
     accessedAt: 2026-06-23
     url: https://www.w3.org/TR/rdf11-concepts/
-  - title: The CIDOC Conceptual Reference Modèle
+  - title: The CIDOC Conceptual Reference Model
     publisher: CIDOC CRM Special Interest Group
     accessedAt: 2026-06-23
     url: https://www.cidoc-crm.org/
@@ -57,43 +58,42 @@ sources:
     accessedAt: 2026-06-23
     url: https://www.w3.org/TR/prov-overview/
 citation:
-  preferred: Electronic Artefacts. "Graphee de connaissancess pour Culturel
-    Infrastructure." Technical article, version 1.0.0, 2026.
+  preferred: Electronic Artefacts. "Graphes de connaissances pour les infrastructures culturelles".
+    Article technique, version 1.0.0, 2026.
 tags:
-  - Graphe de connaissances
-  - Culturel Infrastructure
-  - Données liées
+  - graphe de connaissances
+  - Cultural Infrastructure
+  - Linked Data
   - Provenance
   - Vestiges
 disciplines:
-  - Systèmes de connaissance
+  - Knowledge Systems
   - Archives
   - Information Architecture
-  - Recherche Méthodes
+  - Research Methods
 translationOf: ea:publication:knowledge-graphs-for-cultural-infrastructure
 ---
 
-## Problem
+## Problème
 
-Graphes de connaissances pour les infrastructures culturelles répond à un problème de lisibilité, d’architecture ou de transmission dans les systèmes numériques contemporains. This article explains how graphee de connaissancess support culturel infrastructure by giving people, works, sources, concepts, projects et archives stable identités et explicit relations.
+Graphes de connaissances pour les infrastructures culturelles examine le sujet "Graphes de connaissances pour les infrastructures culturelles" dans le graphe public d'Electronic Artefacts. La fiche donne une entrée française stable, utilisable pour lire le sujet et relier ses sources au reste du graphe.
 
 ## Architecture
 
-La page organise le sujet comme un ensemble de notions, dépendances, preuves et relations éditoriales connectées au graphe de connaissance.
+Le sujet est abordé par ses relations avec les concepts, projets et technologies concernés, afin de rendre son contexte de conception lisible.
 
-## Implementation
+## Mise en œuvre
 
-Pour Electronic Artefacts, cette publication sert de repère français pour cadrer les choix de conception, préparer des contenus plus détaillés et stabiliser le vocabulaire technique.
+La page décrit les usages, contraintes et choix de structure qui permettent d'appliquer le sujet dans des situations concrètes.
 
-## Evidence
+## Éléments de preuve
 
-- Culturel graphee de connaissancess sont useful when they preserve provenance, uncertainty et relationship sémantiques rather than only connectivity.
-- A public graphe can be built from static pages if records, routes, structured données et relations sont generated from typed sources.
+Les sources, relations et éléments de contexte restent attachés à la fiche pour distinguer synthèse éditoriale, preuves et références.
 
-## Limitations
+## Limites
 
-Cette version française assure la couverture éditoriale du site. Une passe ultérieure pourra enrichir le style et traduire plus finement chaque nuance de la version longue.
+Les limites sont formulées par rapport au périmètre de la fiche, aux sources disponibles et aux conditions d'usage documentées.
 
-## References
+## Références
 
-Références conservées depuis la fiche canonique : RDF 1.1 Concepts and Abstract Syntax, The CIDOC Conceptual Reference Model, PROV-Overview.
+Les sources principales restent disponibles dans le bloc de références de la fiche.

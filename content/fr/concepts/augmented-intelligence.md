@@ -4,13 +4,14 @@ type: concept
 slug:
   canonical: augmented-intelligence
 title: Intelligence augmentée
-definition: Augmented intelligence est le design de outils, interfaces et
-  systèmes that expand human perception, reasoning, mémoire et creative
-  capability.
-abstract: Augmented intelligence reframes computation comme a partner dans human
-  work, linking HCI, AI, systèmes de connaissance, creative outils et Electronic
-  Artefacts runtime recherche.
-description: A canonical concept record pour human-centered computational augmentation.
+definition: Intelligence augmentée désigne les outils qui etendent la perception, la mémoire et le
+  raisonnement humains sans remplacer le jugement humain.
+abstract: Intelligence augmentée définit un repère conceptuel en français pour comprendre les outils
+  qui etendent la perception, la mémoire et le raisonnement humains sans remplacer le jugement
+  humain et ses liens avec les projets, technologies et publications du graphe.
+description: Intelligence augmentée définit un repère conceptuel en français pour comprendre les
+  outils qui etendent la perception, la mémoire et le raisonnement humains sans remplacer le
+  jugement humain et ses liens avec les projets, technologies et publications du graphe.
 locale: fr
 visibility: public
 publicationClass: canonical
@@ -26,18 +27,18 @@ authors:
   - id: ea:organization:electronic-artefacts
 publisher: ea:organization:electronic-artefacts
 scope:
-  - Human-computer interaction
-  - Creative outils
-  - AI assistance
-  - Knowledge work
-  - Interface design
+  - définition du sujet
+  - contexte d'usage
+  - liens avec le graphe
+  - références associées
 exclusions:
-  - Claims that autonomous systèmes replace human judgment dans all contexts
-  - Productivity automation avec no support pour understanding ou agency
+  - les usages purement promotionnels sans définition vérifiable
+  - les exemples déconnectés des sources, relations ou contraintes du graphe
 claims:
-  - Augmentation est un better frame than replacement pour many creative et
-    recherche systèmes.
-  - Good augmented systèmes preserve context, reversibility et user judgment.
+  - Intelligence augmentée devient utile lorsque sa définition reste reliée à des sources, des
+    pratiques et des objets observables.
+  - La fiche sert de vocabulaire commun pour relier projets, publications et technologies sans
+    mélanger les langues.
 sources:
   - title: Augmenting Human Intellect
     author: Douglas C. Engelbart
@@ -46,30 +47,30 @@ sources:
     accessedAt: 2026-06-24
     url: https://dougengelbart.org/content/view/138/000/
 tags:
-  - Intelligence augmentée
-  - HCI
+  - intelligence augmentée
+  - interaction humain-machine
   - AI
-  - Creative Outils
+  - outils créatifs
 disciplines:
-  - Human Computer Interaction
-  - Intelligence artificielle
-  - Systèmes de connaissance
-  - Systèmes Design
+  - interaction humain-machine
+  - intelligence artificielle
+  - Knowledge Systems
+  - conception de systèmes
 translationOf: ea:concept:augmented-intelligence
 ---
 
 ## Rôle
 
-Intelligence augmentée est documenté ici comme une entrée française du graphe public d’Electronic Artefacts. Augmented intelligence reframes computation comme a partner dans human work, linking HCI, AI, systèmes de connaissance, creative outils et Electronic Artefacts runtime recherche.
+Intelligence augmentée est documenté comme notion de référence pour comprendre les outils qui etendent la perception, la mémoire et le raisonnement humains sans remplacer le jugement humain.
 
 ## Usage
 
-Cette notion sert à relier les projets, publications et technologies qui partagent un même vocabulaire de conception. Augmented intelligence est le design de outils, interfaces et systèmes that expand human perception, reasoning, mémoire et creative capability.
+Cette fiche relie la notion aux projets, publications et technologies qui partagent un même vocabulaire de conception. Elle sert de point d'appui pour naviguer dans le graphe en version française.
 
-## Domaines
+## Périmètre
 
-Cette entrée croise notamment les domaines suivants : Human Computer Interaction, Intelligence artificielle, Systèmes de connaissance, Systèmes Design.
+La notion est abordée par ses définitions, ses usages, ses limites et ses relations avec les autres objets documentés.
 
 ## Références
 
-Les références principales restent les sources indiquées dans la fiche canonique, notamment Augmenting Human Intellect.
+Les sources principales restent disponibles dans le bloc de références de la fiche.

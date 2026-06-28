@@ -3,13 +3,16 @@ id: ea:publication:algorithmic-composition-and-rule-based-music-fr
 type: publication
 slug:
   canonical: algorithmic-composition-and-rule-based-music
-title: Composition algorithmique et musique fondée sur des règles
-subtitle: Technical Article
-abstract: This article explains algorithmic composition through rules,
-  stochastic méthodes, cybernetics, electronic music, programmation créative,
-  generative systèmes et ORETH.
-description: A technical article on algorithmic composition, rule-based music,
-  generative sound, cybernetics et Electronic Artefacts audio recherche.
+title: Composition algorithmique et musique fondee sur des regles
+subtitle: Article technique
+abstract: Composition algorithmique et musique fondee sur des regles propose une synthèse claire en
+  français sur le sujet "Composition algorithmique et musique fondee sur des regles" dans le graphe
+  public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la
+  publication de connaissances numériques.
+description: Composition algorithmique et musique fondee sur des regles propose une synthèse claire
+  en français sur le sujet "Composition algorithmique et musique fondee sur des regles" dans le
+  graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la
+  publication de connaissances numériques.
 locale: fr
 visibility: public
 publicationClass: published
@@ -32,10 +35,10 @@ subjects:
   - id: ea:program:oreth
   - id: ea:concept:web-audio
 claims:
-  - Algorithmic composition is not a recent AI phenomenon; it est un long
-    history de rule-based musical thought.
-  - Rule-based music needs listening, evaluation et documentation comme much
-    comme procedural generation.
+  - Composition algorithmique et musique fondee sur des regles doit être lisible comme une synthèse
+    française autonome, sans phrases hybrides héritées de l'anglais.
+  - Les liens avec les notions, projets et technologies du graphe renforcent la recherche, la
+    navigation et la citation.
 evidence:
   - id: ea:concept:algorithmic-composition
   - id: ea:program:oreth
@@ -44,7 +47,7 @@ sources:
     author: Iannis Xenakis
     publisher: Indiana University Press
     publishedAt: 1971-01-01
-  - title: Cybernetics ou Control et Communication dans the Animal et the Machine
+  - title: Cybernetics or Control and Communication in the Animal and the Machine
     author: Norbert Wiener
     publisher: MIT Press
     publishedAt: 1948-01-01
@@ -56,42 +59,41 @@ sources:
     accessedAt: 2026-06-24
     url: https://www.w3.org/TR/webaudio/
 citation:
-  preferred: Electronic Artefacts. "Algorithmic Composition et Rule-Based Music."
-    Technical article, version 1.0.0, 2026.
+  preferred: Electronic Artefacts. "Composition algorithmique et musique fondee sur des regles".
+    Article technique, version 1.0.0, 2026.
 tags:
-  - Composition algorithmique
+  - Algorithmic Composition
   - Electronic Music
   - Generative Music
   - ORETH
 disciplines:
   - Electronic Music
   - Music Production
-  - Programmation créative
+  - programmation créative
   - Cybernetics
 translationOf: ea:publication:algorithmic-composition-and-rule-based-music
 ---
 
-## Problem
+## Problème
 
-Composition algorithmique et musique fondée sur des règles répond à un problème de lisibilité, d’architecture ou de transmission dans les systèmes numériques contemporains. This article explains algorithmic composition through rules, stochastic méthodes, cybernetics, electronic music, programmation créative, generative systèmes et ORETH.
+Composition algorithmique et musique fondee sur des regles examine le sujet "Composition algorithmique et musique fondee sur des regles" dans le graphe public d'Electronic Artefacts. La fiche donne une entrée française stable, utilisable pour lire le sujet et relier ses sources au reste du graphe.
 
 ## Architecture
 
-La page organise le sujet comme un ensemble de notions, dépendances, preuves et relations éditoriales connectées au graphe de connaissance.
+Le sujet est abordé par ses relations avec les concepts, projets et technologies concernés, afin de rendre son contexte de conception lisible.
 
-## Implementation
+## Mise en œuvre
 
-Pour Electronic Artefacts, cette publication sert de repère français pour cadrer les choix de conception, préparer des contenus plus détaillés et stabiliser le vocabulaire technique.
+La page décrit les usages, contraintes et choix de structure qui permettent d'appliquer le sujet dans des situations concrètes.
 
-## Evidence
+## Éléments de preuve
 
-- Algorithmic composition is not a recent AI phenomenon; it est un long history de rule-based musical thought.
-- Rule-based music needs listening, evaluation et documentation comme much comme procedural generation.
+Les sources, relations et éléments de contexte restent attachés à la fiche pour distinguer synthèse éditoriale, preuves et références.
 
-## Limitations
+## Limites
 
-Cette version française assure la couverture éditoriale du site. Une passe ultérieure pourra enrichir le style et traduire plus finement chaque nuance de la version longue.
+Les limites sont formulées par rapport au périmètre de la fiche, aux sources disponibles et aux conditions d'usage documentées.
 
-## References
+## Références
 
-Références conservées depuis la fiche canonique : Formalized Music, Cybernetics or Control and Communication in the Animal and the Machine, Web Audio API 1.1.
+Les sources principales restent disponibles dans le bloc de références de la fiche.

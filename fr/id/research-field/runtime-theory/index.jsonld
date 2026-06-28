@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/research/fields/runtime-theory/#webpage",
       "url": "https://electronicartefacts.com/fr/research/fields/runtime-theory/",
       "name": "Théorie du runtime",
-      "description": "An active Electronic Artefacts recherche field connecting early VOID experiments, VASTE et the definition de graphe runtime.",
+      "description": "Théorie du runtime cadre un champ de recherche suivi par Electronic Artefacts, en reliant questions ouvertes, prototypes, sources et hypothèses de travail.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
@@ -34,8 +34,8 @@
       "@id": "https://electronicartefacts.com/fr/id/research-field/runtime-theory/",
       "identifier": "ea:researchField:runtime-theory-fr",
       "name": "Théorie du runtime",
-      "abstract": "Runtime Theory investigates the minimum identités, relations, contexts et event primitives required pour a coherent executable système.",
-      "description": "Runtime Theory investigates the minimum identités, relations, contexts et event primitives required pour a coherent executable système.",
+      "abstract": "Théorie du runtime cadre un champ de recherche suivi par Electronic Artefacts, en reliant questions ouvertes, prototypes, sources et hypothèses de travail.",
+      "description": "Théorie du runtime cadre un champ de recherche suivi par Electronic Artefacts, en reliant questions ouvertes, prototypes, sources et hypothèses de travail.",
       "url": "https://electronicartefacts.com/fr/research/fields/runtime-theory/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/research/fields/runtime-theory/#webpage"
@@ -58,12 +58,12 @@
       "keywords": [
         "Runtime",
         "Theory",
-        "Execution",
+        "Exécution",
         "Events",
         "Primitives",
         "Technology",
-        "Recherche",
-        "Systèmes"
+        "Research",
+        "Systems"
       ],
       "inLanguage": "fr",
       "dateCreated": "2024-01-01",
@@ -76,7 +76,7 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 90
+      "wordCount": 102
     },
     {
       "@type": "Organization",

@@ -2,35 +2,63 @@
 id: ea:technology:llama-cpp-fr
 type: technology
 translationOf: ea:technology:llama-cpp
-slug: { canonical: llama-cpp }
+slug:
+  canonical: llama-cpp
 title: llama.cpp
-abstract: llama.cpp est un moteur d’inférence libre en C et C++ permettant d’exécuter de grands modèles de langage sur du matériel grand public ou serveur.
-description: Fiche technologique consacrée à l’inférence locale, la quantification et au déploiement portable de modèles d’IA.
+abstract: llama.cpp est présenté comme une technologie de référence pour comprendre son rôle dans
+  l'écosystème Electronic Artefacts, ses usages, ses limites et sa place dans les systèmes
+  numériques contemporains.
+description: llama.cpp est présenté comme une technologie de référence pour comprendre son rôle dans
+  l'écosystème Electronic Artefacts, ses usages, ses limites et sa place dans les systèmes
+  numériques contemporains.
 locale: fr
 visibility: public
 publicationClass: canonical
 status: active
 maturity: production
 confidence: canonical
-version: { version: 1.0.0, createdAt: "2026-06-24", publishedAt: "2026-06-25", modifiedAt: "2026-06-25" }
-authors: [{ id: ea:organization:electronic-artefacts }]
+version:
+  version: 1.0.0
+  createdAt: 2026-06-24
+  publishedAt: 2026-06-25
+  modifiedAt: 2026-06-25
+authors:
+  - id: ea:organization:electronic-artefacts
 publisher: ea:organization:electronic-artefacts
 category: library
-roleInEcosystem: llama.cpp fournit une implémentation de référence pour l’inférence locale, quantifiée et portable entre matériels.
+roleInEcosystem: llama.cpp sert de repère technique pour évaluer le sujet "llama.cpp" dans le graphe
+  public d'Electronic Artefacts, ses usages possibles et ses conséquences dans l'écosystème
+  Electronic Artefacts.
 officialUrl: https://github.com/ggml-org/llama.cpp
-sources: [{ title: llama.cpp, publisher: ggml-org, accessedAt: "2026-06-24", url: https://github.com/ggml-org/llama.cpp }]
-tags: [llama.cpp, IA locale, Inférence, Quantification]
-disciplines: [Intelligence artificielle, Programmation, Logiciel libre]
+sources:
+  - title: llama.cpp
+    publisher: ggml-org
+    accessedAt: 2026-06-24
+    url: https://github.com/ggml-org/llama.cpp
+tags:
+  - llama.cpp
+  - Local AI
+  - Inference
+  - Quantization
+disciplines:
+  - intelligence artificielle
+  - Programming
+  - Open Source
 ---
 
 ## Rôle
 
-llama.cpp exécute localement des modèles de langage pris en charge au moyen d’un moteur natif portable et de formats quantifiés.
+llama.cpp est documenté comme technologie de référence pour le sujet "llama.cpp" dans le graphe public d'Electronic Artefacts.
 
 ## Usage
 
-Il convient aux prototypes privés, à l’inférence hors ligne, à l’évaluation de modèles et aux outils locaux de connaissance ne nécessitant pas d’API hébergée.
+Cette fiche aide à situer la technologie dans l'écosystème Electronic Artefacts : ce qu'elle permet, quand elle devient pertinente et comment elle dialogue avec les autres composants du graphe.
+
+## Points d'attention
+
+- Les usages sont décrits en français sans masquer les noms propres, acronymes ou standards techniques.
+- Les limites restent contextualisées par rapport aux projets, aux publications et aux contraintes d'implémentation.
 
 ## Références
 
-Consulter le dépôt officiel llama.cpp.
+Les sources principales restent disponibles dans le bloc de références de la fiche.

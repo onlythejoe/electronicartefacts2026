@@ -3,13 +3,16 @@ id: ea:publication:motion-design-time-and-interface-semantics-fr
 type: publication
 slug:
   canonical: motion-design-time-and-interface-semantics
-title: Motion design, temps et sémantique d’interface
-subtitle: Technical Article
-abstract: This article explains motion design comme a sémantique layer pour
-  digital interfaces, connecting time, transition, attention, accessibility et
-  Web Animations.
-description: A technical article on motion design, web animation, interface
-  state, accessibility et temporal visuel systèmes.
+title: Motion design, temps et sémantique d'interface
+subtitle: Article technique
+abstract: Motion design, temps et sémantique d'interface propose une synthèse claire en français sur
+  le sujet "Motion design, temps et sémantique d'interface" dans le graphe public d'Electronic
+  Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances
+  numériques.
+description: Motion design, temps et sémantique d'interface propose une synthèse claire en français
+  sur le sujet "Motion design, temps et sémantique d'interface" dans le graphe public d'Electronic
+  Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances
+  numériques.
 locale: fr
 visibility: public
 publicationClass: published
@@ -31,10 +34,10 @@ subjects:
   - id: ea:concept:human-computer-interaction
   - id: ea:concept:typography
 claims:
-  - Motion design communicates state, causality et attention when it is treated
-    comme interface sémantiques.
-  - Responsible motion requires timing discipline, reduced-motion support et
-    clear relation à content.
+  - Motion design, temps et sémantique d'interface doit être lisible comme une synthèse française
+    autonome, sans phrases hybrides héritées de l'anglais.
+  - Les liens avec les notions, projets et technologies du graphe renforcent la recherche, la
+    navigation et la citation.
 evidence:
   - id: ea:concept:motion-design
   - id: ea:technology:web-animations
@@ -49,42 +52,41 @@ sources:
     accessedAt: 2026-06-24
     url: https://www.w3.org/WAI/standards-guidelines/wcag/
 citation:
-  preferred: Electronic Artefacts. "Motion Design, Time et Interface Sémantiques."
-    Technical article, version 1.0.0, 2026.
+  preferred: Electronic Artefacts. "Motion design, temps et sémantique d'interface". Article
+    technique, version 1.0.0, 2026.
 tags:
-  - Motion design
+  - Motion Design
   - Web Animations
   - Interface Design
-  - Accessibility
+  - accessibilité
 disciplines:
-  - Motion design
-  - Design
-  - Human Computer Interaction
+  - Motion Design
+  - design
+  - interaction humain-machine
   - Web Development
 translationOf: ea:publication:motion-design-time-and-interface-semantics
 ---
 
-## Problem
+## Problème
 
-Motion design, temps et sémantique d’interface répond à un problème de lisibilité, d’architecture ou de transmission dans les systèmes numériques contemporains. This article explains motion design comme a sémantique layer pour digital interfaces, connecting time, transition, attention, accessibility et Web Animations.
+Motion design, temps et sémantique d'interface examine le sujet "Motion design, temps et sémantique d'interface" dans le graphe public d'Electronic Artefacts. La fiche donne une entrée française stable, utilisable pour lire le sujet et relier ses sources au reste du graphe.
 
 ## Architecture
 
-La page organise le sujet comme un ensemble de notions, dépendances, preuves et relations éditoriales connectées au graphe de connaissance.
+Le sujet est abordé par ses relations avec les concepts, projets et technologies concernés, afin de rendre son contexte de conception lisible.
 
-## Implementation
+## Mise en œuvre
 
-Pour Electronic Artefacts, cette publication sert de repère français pour cadrer les choix de conception, préparer des contenus plus détaillés et stabiliser le vocabulaire technique.
+La page décrit les usages, contraintes et choix de structure qui permettent d'appliquer le sujet dans des situations concrètes.
 
-## Evidence
+## Éléments de preuve
 
-- Motion design communicates state, causality et attention when it is treated comme interface sémantiques.
-- Responsible motion requires timing discipline, reduced-motion support et clear relation à content.
+Les sources, relations et éléments de contexte restent attachés à la fiche pour distinguer synthèse éditoriale, preuves et références.
 
-## Limitations
+## Limites
 
-Cette version française assure la couverture éditoriale du site. Une passe ultérieure pourra enrichir le style et traduire plus finement chaque nuance de la version longue.
+Les limites sont formulées par rapport au périmètre de la fiche, aux sources disponibles et aux conditions d'usage documentées.
 
-## References
+## Références
 
-Références conservées depuis la fiche canonique : Web Animations, WCAG 2 Overview.
+Les sources principales restent disponibles dans le bloc de références de la fiche.

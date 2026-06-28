@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/publications/how-large-language-models-actually-work/#webpage",
       "url": "https://electronicartefacts.com/fr/publications/how-large-language-models-actually-work/",
       "name": "Comment fonctionnent vraiment les grands modèles de langage",
-      "description": "Learn how LLMs work, from tokenization et training à attention, context windows, decoding, hallucinations, outils et evaluation.",
+      "description": "Comment fonctionnent vraiment les grands modèles de langage propose une synthèse claire en français sur le sujet \"Comment fonctionnent vraiment les grands modèles de langage\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
@@ -35,8 +35,8 @@
       "identifier": "ea:publication:how-large-language-models-actually-work-fr",
       "name": "Comment fonctionnent vraiment les grands modèles de langage",
       "headline": "Comment fonctionnent vraiment les grands modèles de langage",
-      "abstract": "A grounded explanation de how large language modèles turn tokens into predictions through embeddings, transformer layers, attention, training et probabilistic inference.",
-      "description": "A grounded explanation de how large language modèles turn tokens into predictions through embeddings, transformer layers, attention, training et probabilistic inference.",
+      "abstract": "Comment fonctionnent vraiment les grands modèles de langage propose une synthèse claire en français sur le sujet \"Comment fonctionnent vraiment les grands modèles de langage\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
+      "description": "Comment fonctionnent vraiment les grands modèles de langage propose une synthèse claire en français sur le sujet \"Comment fonctionnent vraiment les grands modèles de langage\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
       "url": "https://electronicartefacts.com/fr/publications/how-large-language-models-actually-work/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/publications/how-large-language-models-actually-work/#webpage"
@@ -62,10 +62,10 @@
         "Attention",
         "Tokenization",
         "Inference",
-        "Intelligence artificielle",
+        "intelligence artificielle",
         "Machine Learning",
         "Programming",
-        "Systèmes de connaissance"
+        "Knowledge Systems"
       ],
       "inLanguage": "fr",
       "dateCreated": "2026-06-24",
@@ -78,9 +78,9 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 179,
+      "wordCount": 147,
       "citation": [
-        "Electronic Artefacts. \"How Large Language Modèles Actually Work.\" Technical article, version 1.0.0, 2026.",
+        "Electronic Artefacts. \"Comment fonctionnent vraiment les grands modèles de langage\". Article technique, version 1.0.0, 2026.",
         {
           "@type": "CreativeWork",
           "name": "Attention Is All You Need",
@@ -91,7 +91,7 @@
         },
         {
           "@type": "CreativeWork",
-          "name": "On the Opportunities et Risks de Foundation Modèles",
+          "name": "On the Opportunities and Risks of Foundation Models",
           "url": "https://arxiv.org/abs/2108.07258",
           "author": "Rishi Bommasani et al.",
           "publisher": "Stanford Center for Research on Foundation Models",
@@ -124,10 +124,10 @@
         }
       ],
       "articleSection": [
-        "Intelligence artificielle",
+        "intelligence artificielle",
         "Machine Learning",
         "Programming",
-        "Systèmes de connaissance",
+        "Knowledge Systems",
         "LLM",
         "Transformer"
       ],
@@ -143,7 +143,7 @@
         },
         {
           "@type": "CreativeWork",
-          "name": "On the Opportunities et Risks de Foundation Modèles",
+          "name": "On the Opportunities and Risks of Foundation Models",
           "url": "https://arxiv.org/abs/2108.07258",
           "author": "Rishi Bommasani et al.",
           "publisher": "Stanford Center for Research on Foundation Models",

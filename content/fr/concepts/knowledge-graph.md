@@ -4,14 +4,14 @@ type: concept
 slug:
   canonical: knowledge-graph
 title: Graphe de connaissances
-definition: A graphee de connaissances est un structured network de entités,
-  identifiers et typed relationships that makes knowledge navigable, queryable
-  et reusable across contexts.
-abstract: Electronic Artefacts uses graphee de connaissances à describe public
-  systèmes de connaissance where concepts, projects, programs, publications,
-  sources et artefacts keep stable identités et typed relations.
-description: A canonical definition de graphee de connaissances pour culturel,
-  technical et recherche publishing.
+definition: Graphe de connaissances désigne les graphes de connaissances qui structurent des
+  entités, des relations, des sources et des preuves.
+abstract: Graphe de connaissances définit un repère conceptuel en français pour comprendre les
+  graphes de connaissances qui structurent des entités, des relations, des sources et des preuves et
+  ses liens avec les projets, technologies et publications du graphe.
+description: Graphe de connaissances définit un repère conceptuel en français pour comprendre les
+  graphes de connaissances qui structurent des entités, des relations, des sources et des preuves et
+  ses liens avec les projets, technologies et publications du graphe.
 locale: fr
 visibility: public
 publicationClass: canonical
@@ -27,57 +27,55 @@ authors:
   - id: ea:organization:electronic-artefacts
 publisher: ea:organization:electronic-artefacts
 scope:
-  - Entité identité
-  - Typed relationships
-  - Sémantique publication
-  - Knowledge retrieval
-  - Culturel infrastructure
+  - définition du sujet
+  - contexte d'usage
+  - liens avec le graphe
+  - références associées
 exclusions:
-  - A decorative network visuelization avec no stable identifiers
-  - A tag cloud without explicit relation sémantiques
-  - A donnéesbase schema that is never exposed comme public knowledge
+  - les usages purement promotionnels sans définition vérifiable
+  - les exemples déconnectés des sources, relations ou contraintes du graphe
 claims:
-  - A graphee de connaissances becomes durable when entités, relations, sources
-    et versions sont explicit.
-  - Culturel graphee de connaissancess require provenance et interpretive
-    context, not only donnéesbase connectivity.
+  - Graphe de connaissances devient utile lorsque sa définition reste reliée à des sources, des
+    pratiques et des objets observables.
+  - La fiche sert de vocabulaire commun pour relier projets, publications et technologies sans
+    mélanger les langues.
 sources:
-  - title: RDF 1.1 Concepts et Abstract Syntax
-    author: Richard Cyganiak, David Wood et Markus Lanthaler
+  - title: RDF 1.1 Concepts and Abstract Syntax
+    author: Richard Cyganiak, David Wood and Markus Lanthaler
     publisher: W3C
     publishedAt: 2014-02-25
     accessedAt: 2026-06-23
     url: https://www.w3.org/TR/rdf11-concepts/
-  - title: The CIDOC Conceptual Reference Modèle
+  - title: The CIDOC Conceptual Reference Model
     publisher: CIDOC CRM Special Interest Group
     accessedAt: 2026-06-23
     url: https://www.cidoc-crm.org/
 tags:
-  - Graphe de connaissances
-  - Sémantique Web
-  - Entités
+  - graphe de connaissances
+  - Semantic Web
+  - Entities
   - Relations
   - Search
 disciplines:
-  - Systèmes de connaissance
+  - Knowledge Systems
   - Information Architecture
   - Web Development
-  - Recherche
+  - Research
 translationOf: ea:concept:knowledge-graph
 ---
 
 ## Rôle
 
-Graphe de connaissances est documenté ici comme une entrée française du graphe public d’Electronic Artefacts. Electronic Artefacts uses graphee de connaissances à describe public systèmes de connaissance where concepts, projects, programs, publications, sources et artefacts keep stable identités et typed relations.
+Graphe de connaissances est documenté comme notion de référence pour comprendre les graphes de connaissances qui structurent des entités, des relations, des sources et des preuves.
 
 ## Usage
 
-Cette notion sert à relier les projets, publications et technologies qui partagent un même vocabulaire de conception. A graphee de connaissances est un structured network de entités, identifiers et typed relationships that makes knowledge navigable, queryable et reusable across contexts.
+Cette fiche relie la notion aux projets, publications et technologies qui partagent un même vocabulaire de conception. Elle sert de point d'appui pour naviguer dans le graphe en version française.
 
-## Domaines
+## Périmètre
 
-Cette entrée croise notamment les domaines suivants : Systèmes de connaissance, Information Architecture, Web Development, Recherche.
+La notion est abordée par ses définitions, ses usages, ses limites et ses relations avec les autres objets documentés.
 
 ## Références
 
-Les références principales restent les sources indiquées dans la fiche canonique, notamment RDF 1.1 Concepts and Abstract Syntax et The CIDOC Conceptual Reference Model.
+Les sources principales restent disponibles dans le bloc de références de la fiche.

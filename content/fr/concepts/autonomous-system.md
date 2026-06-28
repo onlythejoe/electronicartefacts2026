@@ -4,13 +4,14 @@ type: concept
 slug:
   canonical: autonomous-system
 title: Système autonome
-definition: An autonomous système can perceive relevant state, select actions et
-  adapt behavior toward objectives avec limited direct human control during
-  operation.
-abstract: Autonomous systèmes combine sensing, modèles, planning, execution,
-  feedback, constraints, gouvernance et human intervention paths.
-description: A canonical definition connecting AI agents, robotics, runtime
-  systèmes et responsible control.
+definition: Système autonome désigne les systèmes capables de poursuivre un objectif sans
+  intervention permanente, avec des limites de controle explicites.
+abstract: Système autonome définit un repère conceptuel en français pour comprendre les systèmes
+  capables de poursuivre un objectif sans intervention permanente, avec des limites de controle
+  explicites et ses liens avec les projets, technologies et publications du graphe.
+description: Système autonome définit un repère conceptuel en français pour comprendre les systèmes
+  capables de poursuivre un objectif sans intervention permanente, avec des limites de controle
+  explicites et ses liens avec les projets, technologies et publications du graphe.
 locale: fr
 visibility: public
 publicationClass: canonical
@@ -26,20 +27,18 @@ authors:
   - id: ea:organization:electronic-artefacts
 publisher: ea:organization:electronic-artefacts
 scope:
-  - Perception
-  - Planning
-  - Action
-  - Feedback
-  - Human oversight
-  - Operational boundaries
+  - définition du sujet
+  - contexte d'usage
+  - liens avec le graphe
+  - références associées
 exclusions:
-  - A système described comme autonomous solely because it runs unattended
-  - Unlimited authority without goals, constraints ou intervention mechanisms
+  - les usages purement promotionnels sans définition vérifiable
+  - les exemples déconnectés des sources, relations ou contraintes du graphe
 claims:
-  - Autonomy is always bounded by système design, available actions et operating
-    environment.
-  - Higher autonomy requires stronger observability, testing, fallback et
-    gouvernance.
+  - Système autonome devient utile lorsque sa définition reste reliée à des sources, des pratiques
+    et des objets observables.
+  - La fiche sert de vocabulaire commun pour relier projets, publications et technologies sans
+    mélanger les langues.
 sources:
   - title: AI Risk Management Framework
     publisher: NIST
@@ -47,31 +46,31 @@ sources:
     accessedAt: 2026-06-24
     url: https://www.nist.gov/itl/ai-risk-management-framework
 tags:
-  - Autonomous Systèmes
-  - AI Agents
+  - Autonomous Systems
+  - agents d'IA
   - Feedback
-  - Gouvernance
-  - Human Oversight
+  - Governance
+  - supervision humaine
 disciplines:
-  - Intelligence artificielle
+  - intelligence artificielle
   - Robotics
-  - Systèmes Design
+  - conception de systèmes
   - Cybernetics
 translationOf: ea:concept:autonomous-system
 ---
 
 ## Rôle
 
-Système autonome est documenté ici comme une entrée française du graphe public d’Electronic Artefacts. Autonomous systèmes combine sensing, modèles, planning, execution, feedback, constraints, gouvernance et human intervention paths.
+Système autonome est documenté comme notion de référence pour comprendre les systèmes capables de poursuivre un objectif sans intervention permanente, avec des limites de controle explicites.
 
 ## Usage
 
-Cette notion sert à relier les projets, publications et technologies qui partagent un même vocabulaire de conception. An autonomous système can perceive relevant state, select actions et adapt behavior toward objectives avec limited direct human control during operation.
+Cette fiche relie la notion aux projets, publications et technologies qui partagent un même vocabulaire de conception. Elle sert de point d'appui pour naviguer dans le graphe en version française.
 
-## Domaines
+## Périmètre
 
-Cette entrée croise notamment les domaines suivants : Intelligence artificielle, Robotics, Systèmes Design, Cybernetics.
+La notion est abordée par ses définitions, ses usages, ses limites et ses relations avec les autres objets documentés.
 
 ## Références
 
-Les références principales restent les sources indiquées dans la fiche canonique, notamment AI Risk Management Framework.
+Les sources principales restent disponibles dans le bloc de références de la fiche.

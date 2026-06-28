@@ -74,41 +74,49 @@ const pages = {
     description:
       "Electronic Artefacts designs digital products, knowledge systems, cultural platforms and research-led experiences.",
     canonical: "/",
+    h1: "Creative systems made visible.",
   },
   "work.html": {
     title: "Selected Work | Electronic Artefacts",
     description:
       "Consulting, audits, SEO, branding, product design, development and R&D services by Electronic Artefacts.",
+    h1: "Client systems and product surfaces.",
   },
   "projects.html": {
     title: "Projects | Electronic Artefacts",
     description:
       "Explore Electronic Artefacts projects across software, cultural platforms, artistic production and client systems.",
+    h1: "Projects, from art systems to applied surfaces.",
   },
   "programs.html": {
     title: "Programs, Repo Access and Runtimes | Electronic Artefacts",
     description:
       "Explore Electronic Artefacts software programs available through repository access, pilots, implementation work and licensing conversations.",
+    h1: "Programs for repo access, pilots and licensing.",
   },
   "research.html": {
     title: "Research | Electronic Artefacts",
     description:
       "Research across technology, knowledge systems, culture, governance, perception and creative production.",
+    h1: "Ideas become systems, methods and works.",
   },
   "archive.html": {
     title: "Archive | Electronic Artefacts",
     description:
       "Browse releases, prototypes, documents, research logs and unfinished material preserved by Electronic Artefacts.",
+    h1: "Nothing useful should disappear.",
   },
   "about.html": {
     title: "About the Studio | Electronic Artefacts",
     description:
       "Electronic Artefacts is an independent creative technology studio connecting research, software, design and cultural production.",
+    h1: "A studio before an ecosystem.",
   },
   "contact.html": {
     title: "Contact | Electronic Artefacts",
     description:
       "Contact Electronic Artefacts about digital products, knowledge systems, cultural platforms and creative technology.",
+    h1: "Start with the problem, not the format.",
   },
   "palimpsests.html": {
     title: "Palimpsests Redirect | Electronic Artefacts",
@@ -335,6 +343,13 @@ const seoMarkup = (file, config) => {
     <!-- /SEO -->`.replace(/[ \t]+$/gm, "");
 };
 
+const injectSeoH1 = (html, config) => {
+  if (!config.h1) return html;
+  const h1 = `      <h1 class="sr-only" data-seo-h1>${escapeHtml(config.h1)}</h1>\n`;
+  const withoutExisting = html.replace(/\s*<h1 class="sr-only" data-seo-h1>[\s\S]*?<\/h1>\s*/g, "\n");
+  return withoutExisting.replace(/(<main\b[^>]*>\s*)/, `$1\n${h1}`);
+};
+
 for (const [file, config] of Object.entries(pages)) {
   const absolutePath = path.join(rootDir, file);
   let html = await readFile(absolutePath, "utf8");
@@ -353,6 +368,8 @@ for (const [file, config] of Object.entries(pages)) {
       .replace(/\s*<title>[\s\S]*?<\/title>/, "")
       .replace(/(\s*<meta\s+name="color-scheme"[^>]*\/>)/, `$1\n${block}`);
   }
+
+  html = injectSeoH1(html, config);
 
   await writeFile(absolutePath, html);
 }

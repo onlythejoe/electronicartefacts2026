@@ -6,9 +6,9 @@
     "canonical": "multimodal-ai"
   },
   "title": "IA multimodale",
-  "definition": "Multimodal AI décrit systèmes that learn from, align, transform ou generate more than one modality such comme text, image, audio, video, sensor données ou structured records.",
-  "abstract": "Multimodal AI relie representation learning, modality encoders, shared embedding spaces, generation, alignment et cross-modal interfaces.",
-  "description": "A canonical definition de multimodal AI pour creative systèmes, archives et machine perception.",
+  "definition": "IA multimodale désigne les systèmes d'IA capables de traiter plusieurs modalites comme le texte, l'image, l'audio ou la video.",
+  "abstract": "IA multimodale définit un repère conceptuel en français pour comprendre les systèmes d'IA capables de traiter plusieurs modalites comme le texte, l'image, l'audio ou la video et ses liens avec les projets, technologies et publications du graphe.",
+  "description": "IA multimodale définit un repère conceptuel en français pour comprendre les systèmes d'IA capables de traiter plusieurs modalites comme le texte, l'image, l'audio ou la video et ses liens avec les projets, technologies et publications du graphe.",
   "locale": "fr",
   "visibility": "public",
   "publicationClass": "canonical",
@@ -28,21 +28,21 @@
   ],
   "publisher": "ea:organization:electronic-artefacts",
   "tags": [
-    "IA multimodale",
+    "Multimodal AI",
     "Vision Language",
     "Audio",
     "Video",
     "Cross-Modal Retrieval"
   ],
   "disciplines": [
-    "Intelligence artificielle",
+    "intelligence artificielle",
     "Machine Learning",
     "Digital Art",
     "Audio Engineering"
   ],
   "sources": [
     {
-      "title": "Learning Transferable Visuel Modèles From Natural Language Supervision",
+      "title": "Learning Transferable Visual Models From Natural Language Supervision",
       "url": "https://arxiv.org/abs/2103.00020",
       "author": "Alec Radford et al.",
       "publisher": "arXiv",
@@ -51,26 +51,24 @@
     }
   ],
   "scope": [
-    "Text et image",
-    "Audio et speech",
-    "Video et time",
-    "Shared representations",
-    "Cross-modal retrieval",
-    "Multimodal generation"
+    "définition du sujet",
+    "contexte d'usage",
+    "liens avec le graphe",
+    "références associées"
   ],
   "exclusions": [
-    "A page that merely places unrelated médias formats beside one another",
-    "Assuming that competence dans one modality transfers equally à all others"
+    "les usages purement promotionnels sans définition vérifiable",
+    "les exemples déconnectés des sources, relations ou contraintes du graphe"
   ],
   "claims": [
-    "Multimodal systèmes depend on how modalities sont encoded, aligned et evaluated.",
-    "Cross-modal interfaces create new creative possibilities et new provenance risks."
+    "IA multimodale devient utile lorsque sa définition reste reliée à des sources, des pratiques et des objets observables.",
+    "La fiche sert de vocabulaire commun pour relier projets, publications et technologies sans mélanger les langues."
   ],
-  "bodyHtml": "<h2 id=\"role\">Rôle</h2>\n<p>IA multimodale est documenté ici comme une entrée française du graphe public d’Electronic Artefacts. Multimodal AI relie representation learning, modality encoders, shared embedding spaces, generation, alignment et cross-modal interfaces.</p>\n<h2 id=\"usage\">Usage</h2>\n<p>Cette notion sert à relier les projets, publications et technologies qui partagent un même vocabulaire de conception. Multimodal AI décrit systèmes that learn from, align, transform ou generate more than one modality such comme text, image, audio, video, sensor données ou structured records.</p>\n<h2 id=\"domaines\">Domaines</h2>\n<p>Cette entrée croise notamment les domaines suivants : Intelligence artificielle, Machine Learning, Digital Art, Audio Engineering.</p>\n<h2 id=\"references\">Références</h2>\n<p>Les références principales restent les sources indiquées dans la fiche canonique, notamment Learning Transferable Visual Models From Natural Language Supervision.</p>\n",
+  "bodyHtml": "<h2 id=\"role\">Rôle</h2>\n<p>IA multimodale est documenté comme notion de référence pour comprendre les systèmes d’IA capables de traiter plusieurs modalites comme le texte, l’image, l’audio ou la video.</p>\n<h2 id=\"usage\">Usage</h2>\n<p>Cette fiche relie la notion aux projets, publications et technologies qui partagent un même vocabulaire de conception. Elle sert de point d’appui pour naviguer dans le graphe en version française.</p>\n<h2 id=\"perimetre\">Périmètre</h2>\n<p>La notion est abordée par ses définitions, ses usages, ses limites et ses relations avec les autres objets documentés.</p>\n<h2 id=\"references\">Références</h2>\n<p>Les sources principales restent disponibles dans le bloc de références de la fiche.</p>\n",
   "headings": [
     "Rôle",
     "Usage",
-    "Domaines",
+    "Périmètre",
     "Références"
   ],
   "headingItems": [
@@ -86,8 +84,8 @@
     },
     {
       "level": 2,
-      "title": "Domaines",
-      "id": "domaines"
+      "title": "Périmètre",
+      "id": "perimetre"
     },
     {
       "level": 2,

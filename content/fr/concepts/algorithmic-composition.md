@@ -4,14 +4,14 @@ type: concept
 slug:
   canonical: algorithmic-composition
 title: Composition algorithmique
-definition: Algorithmic composition est le use de rules, procedures,
-  probability, computation ou formal systèmes à generate ou organize musical
-  material.
-abstract: Algorithmic composition relie music theory, computation, cybernetics,
-  generative systèmes et electronic music by treating composition comme the
-  design de procedures comme well comme sounds.
-description: A canonical concept record pour rule-based et computational
-  approaches à musical composition.
+definition: Composition algorithmique désigne le sujet "Composition algorithmique" dans le graphe
+  public d'Electronic Artefacts.
+abstract: Composition algorithmique définit un repère conceptuel en français pour comprendre le
+  sujet "Composition algorithmique" dans le graphe public d'Electronic Artefacts et ses liens avec
+  les projets, technologies et publications du graphe.
+description: Composition algorithmique définit un repère conceptuel en français pour comprendre le
+  sujet "Composition algorithmique" dans le graphe public d'Electronic Artefacts et ses liens avec
+  les projets, technologies et publications du graphe.
 locale: fr
 visibility: public
 publicationClass: canonical
@@ -27,49 +27,48 @@ authors:
   - id: ea:organization:electronic-artefacts
 publisher: ea:organization:electronic-artefacts
 scope:
-  - Rule-based music
-  - Stochastic composition
-  - Generative systèmes
-  - Sequencing et synthesis
-  - Electronic music history
+  - définition du sujet
+  - contexte d'usage
+  - liens avec le graphe
+  - références associées
 exclusions:
-  - Automatic playlist generation avec no compositional rule système
-  - Random note generation avec no aesthetic ou structural evaluation
+  - les usages purement promotionnels sans définition vérifiable
+  - les exemples déconnectés des sources, relations ou contraintes du graphe
 claims:
-  - Algorithmic composition est un historical bridge between formal music
-    practice et computational creativity.
-  - Durable algorithmic work requires documentation de rules, parameters,
-    materials et selection criteria.
+  - Composition algorithmique devient utile lorsque sa définition reste reliée à des sources, des
+    pratiques et des objets observables.
+  - La fiche sert de vocabulaire commun pour relier projets, publications et technologies sans
+    mélanger les langues.
 sources:
   - title: Formalized Music
     author: Iannis Xenakis
     publisher: Indiana University Press
     publishedAt: 1971-01-01
 tags:
-  - Composition algorithmique
+  - Algorithmic Composition
   - Electronic Music
-  - Generative Systèmes
+  - Generative Systems
   - Music Theory
 disciplines:
   - Electronic Music
   - Music Production
-  - Programmation créative
+  - programmation créative
   - Cybernetics
 translationOf: ea:concept:algorithmic-composition
 ---
 
 ## Rôle
 
-Composition algorithmique est documenté ici comme une entrée française du graphe public d’Electronic Artefacts. Algorithmic composition relie music theory, computation, cybernetics, generative systèmes et electronic music by treating composition comme the design de procedures comme well comme sounds.
+Composition algorithmique est documenté comme notion de référence pour comprendre le sujet "Composition algorithmique" dans le graphe public d'Electronic Artefacts.
 
 ## Usage
 
-Cette notion sert à relier les projets, publications et technologies qui partagent un même vocabulaire de conception. Algorithmic composition est le use de rules, procedures, probability, computation ou formal systèmes à generate ou organize musical material.
+Cette fiche relie la notion aux projets, publications et technologies qui partagent un même vocabulaire de conception. Elle sert de point d'appui pour naviguer dans le graphe en version française.
 
-## Domaines
+## Périmètre
 
-Cette entrée croise notamment les domaines suivants : Electronic Music, Music Production, Programmation créative, Cybernetics.
+La notion est abordée par ses définitions, ses usages, ses limites et ses relations avec les autres objets documentés.
 
 ## Références
 
-Les références principales restent les sources indiquées dans la fiche canonique, notamment Formalized Music.
+Les sources principales restent disponibles dans le bloc de références de la fiche.

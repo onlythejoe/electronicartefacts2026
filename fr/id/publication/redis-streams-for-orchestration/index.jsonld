@@ -5,15 +5,15 @@
       "@type": "WebPage",
       "@id": "https://electronicartefacts.com/fr/publications/redis-streams-for-orchestration/#webpage",
       "url": "https://electronicartefacts.com/fr/publications/redis-streams-for-orchestration/",
-      "name": "Redis Streams pour l’orchestration",
-      "description": "Learn how Redis Streams works et how à use consumer groups, pending entries et idempotent workers pour reliable orchestration.",
+      "name": "Redis Streams pour l'orchestration",
+      "description": "Redis Streams pour l'orchestration propose une synthèse claire en français sur le sujet \"Redis Streams pour l'orchestration\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
       "primaryImageOfPage": {
         "@type": "ImageObject",
         "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-search.jpg",
-        "description": "Redis Streams pour l’orchestration"
+        "description": "Redis Streams pour l'orchestration"
       },
       "breadcrumb": {
         "@id": "https://electronicartefacts.com/fr/publications/redis-streams-for-orchestration/#breadcrumb"
@@ -33,10 +33,10 @@
       "@type": "TechArticle",
       "@id": "https://electronicartefacts.com/fr/id/publication/redis-streams-for-orchestration/",
       "identifier": "ea:publication:redis-streams-for-orchestration-fr",
-      "name": "Redis Streams pour l’orchestration",
-      "headline": "Redis Streams pour l’orchestration",
-      "abstract": "An implementation-oriented guide à Redis Streams, consumer groups, acknowledgements, pending entries, retries, idempotency, trimming et orchestration boundaries.",
-      "description": "An implementation-oriented guide à Redis Streams, consumer groups, acknowledgements, pending entries, retries, idempotency, trimming et orchestration boundaries.",
+      "name": "Redis Streams pour l'orchestration",
+      "headline": "Redis Streams pour l'orchestration",
+      "abstract": "Redis Streams pour l'orchestration propose une synthèse claire en français sur le sujet \"Redis Streams pour l'orchestration\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
+      "description": "Redis Streams pour l'orchestration propose une synthèse claire en français sur le sujet \"Redis Streams pour l'orchestration\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
       "url": "https://electronicartefacts.com/fr/publications/redis-streams-for-orchestration/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/publications/redis-streams-for-orchestration/#webpage"
@@ -44,7 +44,7 @@
       "image": {
         "@type": "ImageObject",
         "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-search.jpg",
-        "description": "Redis Streams pour l’orchestration"
+        "description": "Redis Streams pour l'orchestration"
       },
       "author": [
         {
@@ -58,14 +58,14 @@
       ],
       "keywords": [
         "Redis Streams",
-        "Orchestration",
+        "orchestration",
         "Consumer Groups",
         "Event Processing",
         "Idempotency",
-        "Software Architecture",
-        "Distributed Systèmes",
+        "architecture logicielle",
+        "Distributed Systems",
         "Programming",
-        "Systèmes Design"
+        "conception de systèmes"
       ],
       "inLanguage": "fr",
       "dateCreated": "2026-06-24",
@@ -78,9 +78,9 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 150,
+      "wordCount": 139,
       "citation": [
-        "Electronic Artefacts. \"Redis Streams pour Orchestration.\" Technical article, version 1.0.0, 2026.",
+        "Electronic Artefacts. \"Redis Streams pour l'orchestration\". Article technique, version 1.0.0, 2026.",
         {
           "@type": "CreativeWork",
           "name": "Redis Streams",
@@ -123,12 +123,12 @@
         }
       ],
       "articleSection": [
-        "Software Architecture",
-        "Distributed Systèmes",
+        "architecture logicielle",
+        "Distributed Systems",
         "Programming",
-        "Systèmes Design",
+        "conception de systèmes",
         "Redis Streams",
-        "Orchestration"
+        "orchestration"
       ],
       "timeRequired": "PT1M",
       "isBasedOn": [
@@ -256,7 +256,7 @@
         {
           "@type": "ListItem",
           "position": 3,
-          "name": "Redis Streams pour l’orchestration",
+          "name": "Redis Streams pour l'orchestration",
           "item": "https://electronicartefacts.com/fr/publications/redis-streams-for-orchestration/"
         }
       ]

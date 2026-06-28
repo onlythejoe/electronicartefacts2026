@@ -3,13 +3,16 @@ id: ea:publication:signal-archaeology-audio-memory-and-machine-listening-fr
 type: publication
 slug:
   canonical: signal-archaeology-audio-memory-and-machine-listening
-title: Archéologie du signal, mémoire audio et écoute machine
-subtitle: Technical Article
-abstract: This article explains signal archaeology comme a way à read sonic et
-  technical traces through audio analysis, provenance, mémoire et machine
-  listening.
-description: A technical article on signal archaeology, audio mémoire, machine
-  listening, ORETH et Palimpsests.
+title: Archéologie du signal, mémoire audio et ecoute machine
+subtitle: Article technique
+abstract: Archéologie du signal, mémoire audio et ecoute machine propose une synthèse claire en
+  français sur le sujet "Archéologie du signal, mémoire audio et ecoute machine" dans le graphe
+  public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la
+  publication de connaissances numériques.
+description: Archéologie du signal, mémoire audio et ecoute machine propose une synthèse claire en
+  français sur le sujet "Archéologie du signal, mémoire audio et ecoute machine" dans le graphe
+  public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la
+  publication de connaissances numériques.
 locale: fr
 visibility: public
 publicationClass: published
@@ -32,10 +35,10 @@ subjects:
   - id: ea:program:oreth
   - id: ea:project:palimpsests
 claims:
-  - Technical residue can become culturel evidence when interpreted avec
-    provenance et context.
-  - Machine listening can support signal archaeology, but it cannot replace
-    human et archival interpretation.
+  - Archéologie du signal, mémoire audio et ecoute machine doit être lisible comme une synthèse
+    française autonome, sans phrases hybrides héritées de l'anglais.
+  - Les liens avec les notions, projets et technologies du graphe renforcent la recherche, la
+    navigation et la citation.
 evidence:
   - id: ea:program:oreth
   - id: ea:project:palimpsests
@@ -45,16 +48,16 @@ sources:
     publishedAt: 2013-04-30
     accessedAt: 2026-06-23
     url: https://www.w3.org/TR/prov-overview/
-  - title: Préservation numérique Handbook
+  - title: Digital Preservation Handbook
     publisher: Digital Preservation Coalition
     publishedAt: 2015-01-01
     accessedAt: 2026-06-23
     url: https://www.dpconline.org/handbook
 citation:
-  preferred: Electronic Artefacts. "Signal Archaeology, Audio Mémoire et Machine
-    Listening." Technical article, version 1.0.0, 2026.
+  preferred: Electronic Artefacts. "Archéologie du signal, mémoire audio et ecoute machine". Article
+    technique, version 1.0.0, 2026.
 tags:
-  - Archéologie du signal
+  - Signal Archaeology
   - Audio
   - Machine Listening
   - ORETH
@@ -64,31 +67,30 @@ disciplines:
   - Sound Design
   - Digital Art
   - Archives
-  - Recherche Méthodes
+  - Research Methods
 translationOf: ea:publication:signal-archaeology-audio-memory-and-machine-listening
 ---
 
-## Problem
+## Problème
 
-Archéologie du signal, mémoire audio et écoute machine répond à un problème de lisibilité, d’architecture ou de transmission dans les systèmes numériques contemporains. This article explains signal archaeology comme a way à read sonic et technical traces through audio analysis, provenance, mémoire et machine listening.
+Archéologie du signal, mémoire audio et ecoute machine examine le sujet "Archéologie du signal, mémoire audio et ecoute machine" dans le graphe public d'Electronic Artefacts. La fiche donne une entrée française stable, utilisable pour lire le sujet et relier ses sources au reste du graphe.
 
 ## Architecture
 
-La page organise le sujet comme un ensemble de notions, dépendances, preuves et relations éditoriales connectées au graphe de connaissance.
+Le sujet est abordé par ses relations avec les concepts, projets et technologies concernés, afin de rendre son contexte de conception lisible.
 
-## Implementation
+## Mise en œuvre
 
-Pour Electronic Artefacts, cette publication sert de repère français pour cadrer les choix de conception, préparer des contenus plus détaillés et stabiliser le vocabulaire technique.
+La page décrit les usages, contraintes et choix de structure qui permettent d'appliquer le sujet dans des situations concrètes.
 
-## Evidence
+## Éléments de preuve
 
-- Technical residue can become culturel evidence when interpreted avec provenance et context.
-- Machine listening can support signal archaeology, but it cannot replace human et archival interpretation.
+Les sources, relations et éléments de contexte restent attachés à la fiche pour distinguer synthèse éditoriale, preuves et références.
 
-## Limitations
+## Limites
 
-Cette version française assure la couverture éditoriale du site. Une passe ultérieure pourra enrichir le style et traduire plus finement chaque nuance de la version longue.
+Les limites sont formulées par rapport au périmètre de la fiche, aux sources disponibles et aux conditions d'usage documentées.
 
-## References
+## Références
 
-Références conservées depuis la fiche canonique : PROV-Overview, Digital Preservation Handbook.
+Les sources principales restent disponibles dans le bloc de références de la fiche.

@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/publications/personal-knowledge-systems-and-digital-gardens/#webpage",
       "url": "https://electronicartefacts.com/fr/publications/personal-knowledge-systems-and-digital-gardens/",
       "name": "Systèmes personnels de connaissance et jardins numériques",
-      "description": "A technical article on personal systèmes de connaissance, digital gardens, backlinks, recherche mémoire et public knowledge hubs.",
+      "description": "Systèmes personnels de connaissance et jardins numériques propose une synthèse claire en français sur le sujet \"Systèmes personnels de connaissance et jardins numériques\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
@@ -35,8 +35,8 @@
       "identifier": "ea:publication:personal-knowledge-systems-and-digital-gardens-fr",
       "name": "Systèmes personnels de connaissance et jardins numériques",
       "headline": "Systèmes personnels de connaissance et jardins numériques",
-      "abstract": "This article explains personal systèmes de connaissance et digital gardens comme durable practices pour notes, sources, backlinks, revision, public learning et recherche libraries.",
-      "description": "This article explains personal systèmes de connaissance et digital gardens comme durable practices pour notes, sources, backlinks, revision, public learning et recherche libraries.",
+      "abstract": "Systèmes personnels de connaissance et jardins numériques propose une synthèse claire en français sur le sujet \"Systèmes personnels de connaissance et jardins numériques\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
+      "description": "Systèmes personnels de connaissance et jardins numériques propose une synthèse claire en français sur le sujet \"Systèmes personnels de connaissance et jardins numériques\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
       "url": "https://electronicartefacts.com/fr/publications/personal-knowledge-systems-and-digital-gardens/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/publications/personal-knowledge-systems-and-digital-gardens/#webpage"
@@ -60,9 +60,9 @@
         "Personal Knowledge Management",
         "Digital Gardens",
         "Backlinks",
-        "Recherche Méthodes",
-        "Systèmes de connaissance",
-        "Culture Internet",
+        "Research Methods",
+        "Knowledge Systems",
+        "Internet Culture",
         "Archives"
       ],
       "inLanguage": "fr",
@@ -76,9 +76,9 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 165,
+      "wordCount": 145,
       "citation": [
-        "Electronic Artefacts. \"Personal Systèmes de connaissance et Digital Gardens.\" Technical article, version 1.0.0, 2026.",
+        "Electronic Artefacts. \"Systèmes personnels de connaissance et jardins numériques\". Article technique, version 1.0.0, 2026.",
         {
           "@type": "CreativeWork",
           "name": "As We May Think",
@@ -89,7 +89,7 @@
         },
         {
           "@type": "CreativeWork",
-          "name": "DCMI Métadonnées Terms",
+          "name": "DCMI Metadata Terms",
           "url": "https://www.dublincore.org/specifications/dublin-core/dcmi-terms/",
           "publisher": "Dublin Core Metadata Initiative",
           "datePublished": "2020-01-20"
@@ -121,9 +121,9 @@
         }
       ],
       "articleSection": [
-        "Systèmes de connaissance",
-        "Recherche Méthodes",
-        "Culture Internet",
+        "Knowledge Systems",
+        "Research Methods",
+        "Internet Culture",
         "Archives",
         "Personal Knowledge Management",
         "Digital Gardens"
@@ -140,7 +140,7 @@
         },
         {
           "@type": "CreativeWork",
-          "name": "DCMI Métadonnées Terms",
+          "name": "DCMI Metadata Terms",
           "url": "https://www.dublincore.org/specifications/dublin-core/dcmi-terms/",
           "publisher": "Dublin Core Metadata Initiative",
           "datePublished": "2020-01-20"

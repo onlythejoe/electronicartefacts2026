@@ -5,15 +5,15 @@
       "@type": "WebPage",
       "@id": "https://electronicartefacts.com/fr/knowledge/concepts/retrieval-augmented-generation/#webpage",
       "url": "https://electronicartefacts.com/fr/knowledge/concepts/retrieval-augmented-generation/",
-      "name": "Génération augmentée par récupération",
-      "description": "A canonical definition de retrieval-augmented generation pour systèmes de connaissance et source-grounded AI.",
+      "name": "Génération augmentée par recuperation",
+      "description": "Génération augmentée par recuperation définit un repère conceptuel en français pour comprendre les architectures qui recuperent des sources externes avant ou pendant la generation d'une reponse par IA et ses liens avec les projets, technologies et publications du graphe.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
       "primaryImageOfPage": {
         "@type": "ImageObject",
         "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-search.jpg",
-        "description": "Génération augmentée par récupération"
+        "description": "Génération augmentée par recuperation"
       },
       "breadcrumb": {
         "@id": "https://electronicartefacts.com/fr/knowledge/concepts/retrieval-augmented-generation/#breadcrumb"
@@ -33,12 +33,12 @@
       "@type": "DefinedTerm",
       "@id": "https://electronicartefacts.com/fr/id/concept/retrieval-augmented-generation/",
       "identifier": "ea:concept:retrieval-augmented-generation-fr",
-      "name": "Génération augmentée par récupération",
+      "name": "Génération augmentée par recuperation",
       "alternateName": [
         "RAG"
       ],
-      "abstract": "RAG relie search, embeddings, document segmentation, métadonnées, provenance, context assembly, language modèles et answer evaluation.",
-      "description": "Retrieval-augmented generation est un architecture that retrieves external information at query time et supplies selected evidence à a generative modèle before ou during response production.",
+      "abstract": "Génération augmentée par recuperation définit un repère conceptuel en français pour comprendre les architectures qui recuperent des sources externes avant ou pendant la generation d'une reponse par IA et ses liens avec les projets, technologies et publications du graphe.",
+      "description": "Génération augmentée par recuperation désigne les architectures qui recuperent des sources externes avant ou pendant la generation d'une reponse par IA.",
       "url": "https://electronicartefacts.com/fr/knowledge/concepts/retrieval-augmented-generation/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/knowledge/concepts/retrieval-augmented-generation/#webpage"
@@ -46,7 +46,7 @@
       "image": {
         "@type": "ImageObject",
         "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-search.jpg",
-        "description": "Génération augmentée par récupération"
+        "description": "Génération augmentée par recuperation"
       },
       "author": [
         {
@@ -64,8 +64,8 @@
         "Embeddings",
         "Vector Search",
         "Grounding",
-        "Intelligence artificielle",
-        "Systèmes de connaissance",
+        "intelligence artificielle",
+        "Knowledge Systems",
         "Information Architecture",
         "Machine Learning"
       ],
@@ -80,11 +80,11 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 112,
+      "wordCount": 94,
       "citation": [
         {
           "@type": "CreativeWork",
-          "name": "Retrieval-Augmented Generation pour Knowledge-Intensive NLP Tasks",
+          "name": "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks",
           "url": "https://arxiv.org/abs/2005.11401",
           "author": "Patrick Lewis et al.",
           "publisher": "arXiv",
@@ -198,7 +198,7 @@
         {
           "@type": "ListItem",
           "position": 3,
-          "name": "Génération augmentée par récupération",
+          "name": "Génération augmentée par recuperation",
           "item": "https://electronicartefacts.com/fr/knowledge/concepts/retrieval-augmented-generation/"
         }
       ]

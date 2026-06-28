@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/knowledge/concepts/motion-design/#webpage",
       "url": "https://electronicartefacts.com/fr/knowledge/concepts/motion-design/",
       "name": "Motion design",
-      "description": "A canonical concept record pour motion comme a design et interface discipline.",
+      "description": "Motion design définit un repère conceptuel en français pour comprendre le mouvement comme langage d'interface, de rythme, d'attention et de transition et ses liens avec les projets, technologies et publications du graphe.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
@@ -34,8 +34,8 @@
       "@id": "https://electronicartefacts.com/fr/id/concept/motion-design/",
       "identifier": "ea:concept:motion-design-fr",
       "name": "Motion design",
-      "abstract": "Motion design relie visuel culture, interface sémantiques, typographey, animation, sound, choreographey et web interaction.",
-      "description": "Motion design est le use de time, movement, transition, rhythm et sequencing à structure visuel communication et interface behavior.",
+      "abstract": "Motion design définit un repère conceptuel en français pour comprendre le mouvement comme langage d'interface, de rythme, d'attention et de transition et ses liens avec les projets, technologies et publications du graphe.",
+      "description": "Motion design désigne le mouvement comme langage d'interface, de rythme, d'attention et de transition.",
       "url": "https://electronicartefacts.com/fr/knowledge/concepts/motion-design/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/knowledge/concepts/motion-design/#webpage"
@@ -56,12 +56,12 @@
         }
       ],
       "keywords": [
-        "Motion design",
+        "Motion Design",
         "Animation",
         "Interface",
-        "Visuel Culture",
-        "Design",
-        "Human Computer Interaction",
+        "Visual Culture",
+        "design",
+        "interaction humain-machine",
         "Web Development"
       ],
       "inLanguage": "fr",
@@ -75,7 +75,7 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 98,
+      "wordCount": 87,
       "citation": [
         {
           "@type": "CreativeWork",

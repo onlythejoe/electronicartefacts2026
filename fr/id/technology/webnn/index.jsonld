@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/knowledge/technologies/webnn/#webpage",
       "url": "https://electronicartefacts.com/fr/knowledge/technologies/webnn/",
       "name": "WebNN",
-      "description": "A technology record pour navigateur-based machine-learning inference through the Web Neural Network API.",
+      "description": "WebNN est présenté comme une technologie de référence pour comprendre son rôle dans l'écosystème Electronic Artefacts, ses usages, ses limites et sa place dans les systèmes numériques contemporains.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
@@ -37,8 +37,8 @@
       "alternateName": [
         "Web Neural Network API"
       ],
-      "abstract": "WebNN est un W3C Web Machine Learning API pour hardware-accelerated neural-network inference dans web applications.",
-      "description": "WebNN est un W3C Web Machine Learning API pour hardware-accelerated neural-network inference dans web applications.",
+      "abstract": "WebNN est présenté comme une technologie de référence pour comprendre son rôle dans l'écosystème Electronic Artefacts, ses usages, ses limites et sa place dans les systèmes numériques contemporains.",
+      "description": "WebNN est présenté comme une technologie de référence pour comprendre son rôle dans l'écosystème Electronic Artefacts, ses usages, ses limites et sa place dans les systèmes numériques contemporains.",
       "url": "https://electronicartefacts.com/fr/knowledge/technologies/webnn/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/knowledge/technologies/webnn/#webpage"
@@ -60,12 +60,12 @@
       ],
       "keywords": [
         "WebNN",
-        "Navigateur AI",
+        "Browser AI",
         "Local Inference",
         "Web Machine Learning",
-        "Intelligence artificielle",
+        "intelligence artificielle",
         "Web Development",
-        "Human Computer Interaction"
+        "interaction humain-machine"
       ],
       "inLanguage": "fr",
       "dateCreated": "2026-06-24",

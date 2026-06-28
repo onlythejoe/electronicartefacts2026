@@ -4,13 +4,14 @@ type: concept
 slug:
   canonical: internet-culture
 title: Culture Internet
-definition: Internet culture est le set de social forms, aesthetics, protocoles,
-  communities, memes, archives et practices that emerge through networked
-  communication.
-abstract: Internet culture relie network protocoles, web publishing, plateforme
-  communities, memes, archives, open source, digital folklore et public systèmes
-  de connaissance.
-description: A canonical concept record pour networked culturel production et mémoire.
+definition: Culture Internet désigne les formes culturelles, communautaires et techniques qui
+  emergent des reseaux numériques.
+abstract: Culture Internet définit un repère conceptuel en français pour comprendre les formes
+  culturelles, communautaires et techniques qui emergent des reseaux numériques et ses liens avec
+  les projets, technologies et publications du graphe.
+description: Culture Internet définit un repère conceptuel en français pour comprendre les formes
+  culturelles, communautaires et techniques qui emergent des reseaux numériques et ses liens avec
+  les projets, technologies et publications du graphe.
 locale: fr
 visibility: public
 publicationClass: canonical
@@ -26,19 +27,18 @@ authors:
   - id: ea:organization:electronic-artefacts
 publisher: ea:organization:electronic-artefacts
 scope:
-  - Network culture
-  - Memes
-  - Plateformes
-  - Web archives
-  - Communities
+  - définition du sujet
+  - contexte d'usage
+  - liens avec le graphe
+  - références associées
 exclusions:
-  - Offline culturel forms avec no networked circulation ou médiastion
-  - Plateforme marketing analysis without culturel ou technical context
+  - les usages purement promotionnels sans définition vérifiable
+  - les exemples déconnectés des sources, relations ou contraintes du graphe
 claims:
-  - Internet culture depends on technical protocoles et social interpretation at
-    the same time.
-  - Durable study de internet culture requires preservation de context, not only
-    screenshots ou metrics.
+  - Culture Internet devient utile lorsque sa définition reste reliée à des sources, des pratiques
+    et des objets observables.
+  - La fiche sert de vocabulaire commun pour relier projets, publications et technologies sans
+    mélanger les langues.
 sources:
   - title: ActivityPub
     publisher: W3C
@@ -46,30 +46,30 @@ sources:
     accessedAt: 2026-06-24
     url: https://www.w3.org/TR/activitypub/
 tags:
-  - Culture Internet
+  - Internet Culture
   - Network Culture
   - Memes
   - Archives
 disciplines:
-  - Culture Internet
+  - Internet Culture
   - Network Culture
   - Archives
-  - History de Technology
+  - History of Technology
 translationOf: ea:concept:internet-culture
 ---
 
 ## Rôle
 
-Culture Internet est documenté ici comme une entrée française du graphe public d’Electronic Artefacts. Internet culture relie network protocoles, web publishing, plateforme communities, memes, archives, open source, digital folklore et public systèmes de connaissance.
+Culture Internet est documenté comme notion de référence pour comprendre les formes culturelles, communautaires et techniques qui emergent des reseaux numériques.
 
 ## Usage
 
-Cette notion sert à relier les projets, publications et technologies qui partagent un même vocabulaire de conception. Internet culture est le set de social forms, aesthetics, protocoles, communities, memes, archives et practices that emerge through networked communication.
+Cette fiche relie la notion aux projets, publications et technologies qui partagent un même vocabulaire de conception. Elle sert de point d'appui pour naviguer dans le graphe en version française.
 
-## Domaines
+## Périmètre
 
-Cette entrée croise notamment les domaines suivants : Culture Internet, Network Culture, Archives, History de Technology.
+La notion est abordée par ses définitions, ses usages, ses limites et ses relations avec les autres objets documentés.
 
 ## Références
 
-Les références principales restent les sources indiquées dans la fiche canonique, notamment ActivityPub.
+Les sources principales restent disponibles dans le bloc de références de la fiche.

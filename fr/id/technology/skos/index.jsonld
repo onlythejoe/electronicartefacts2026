@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/knowledge/technologies/skos/#webpage",
       "url": "https://electronicartefacts.com/fr/knowledge/technologies/skos/",
       "name": "SKOS",
-      "description": "Fiche technologique consacrée aux vocabulaires contrôlés et à l’organisation sémantique légère.",
+      "description": "SKOS est présenté comme une technologie de référence pour comprendre son rôle dans l'écosystème Electronic Artefacts, ses usages, ses limites et sa place dans les systèmes numériques contemporains.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
@@ -37,8 +37,8 @@
       "alternateName": [
         "Simple Knowledge Organization System"
       ],
-      "abstract": "SKOS est un modèle de données du W3C pour publier sur le Web des thésaurus, taxonomies, classifications et autres systèmes d’organisation des connaissances.",
-      "description": "SKOS est un modèle de données du W3C pour publier sur le Web des thésaurus, taxonomies, classifications et autres systèmes d’organisation des connaissances.",
+      "abstract": "SKOS est présenté comme une technologie de référence pour comprendre son rôle dans l'écosystème Electronic Artefacts, ses usages, ses limites et sa place dans les systèmes numériques contemporains.",
+      "description": "SKOS est présenté comme une technologie de référence pour comprendre son rôle dans l'écosystème Electronic Artefacts, ses usages, ses limites et sa place dans les systèmes numériques contemporains.",
       "url": "https://electronicartefacts.com/fr/knowledge/technologies/skos/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/knowledge/technologies/skos/#webpage"
@@ -60,11 +60,11 @@
       ],
       "keywords": [
         "SKOS",
-        "Taxonomie",
-        "Vocabulaire contrôlé",
-        "Systèmes de connaissance",
-        "Architecture de l’information",
-        "Web sémantique"
+        "Taxonomy",
+        "Controlled Vocabulary",
+        "Knowledge Systems",
+        "Information Architecture",
+        "Semantic Web"
       ],
       "inLanguage": "fr",
       "dateCreated": "2026-06-24",
@@ -77,7 +77,7 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 44,
+      "wordCount": 93,
       "citation": [
         {
           "@type": "CreativeWork",

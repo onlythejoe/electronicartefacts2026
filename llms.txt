@@ -47,7 +47,7 @@ Use canonical HTML URLs for human-facing citations. Use identifier routes under 
 - [Palimpsests](https://electronicartefacts.com/projects/palimpsests/): A canonical project record for Palimpsests as a compound audio, visual and research publication within Electronic Artefacts.
 - [Vestiges](https://electronicartefacts.com/fr/projects/vestiges/): Un produit centré sur la connaissance où provenance, contribution, découverte et services professionnels émergent d’un même graphe historisé.
 - [Runtime Theory](https://electronicartefacts.com/research/fields/runtime-theory/): An active Electronic Artefacts research field connecting early VOID experiments, VASTE and the definition of graph runtime.
-- [Théorie du runtime](https://electronicartefacts.com/fr/research/fields/runtime-theory/): An active Electronic Artefacts recherche field connecting early VOID experiments, VASTE et the definition de graphe runtime.
+- [Théorie du runtime](https://electronicartefacts.com/fr/research/fields/runtime-theory/): Théorie du runtime cadre un champ de recherche suivi par Electronic Artefacts, en reliant questions ouvertes, prototypes, sources et hypothèses de travail.
 
 ## Optional
 

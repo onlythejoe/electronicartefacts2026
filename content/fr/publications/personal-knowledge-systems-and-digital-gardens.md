@@ -4,12 +4,15 @@ type: publication
 slug:
   canonical: personal-knowledge-systems-and-digital-gardens
 title: Systèmes personnels de connaissance et jardins numériques
-subtitle: Technical Article
-abstract: This article explains personal systèmes de connaissance et digital
-  gardens comme durable practices pour notes, sources, backlinks, revision,
-  public learning et recherche libraries.
-description: A technical article on personal systèmes de connaissance, digital
-  gardens, backlinks, recherche mémoire et public knowledge hubs.
+subtitle: Article technique
+abstract: Systèmes personnels de connaissance et jardins numériques propose une synthèse claire en
+  français sur le sujet "Systèmes personnels de connaissance et jardins numériques" dans le graphe
+  public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la
+  publication de connaissances numériques.
+description: Systèmes personnels de connaissance et jardins numériques propose une synthèse claire
+  en français sur le sujet "Systèmes personnels de connaissance et jardins numériques" dans le
+  graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la
+  publication de connaissances numériques.
 locale: fr
 visibility: public
 publicationClass: published
@@ -32,10 +35,10 @@ subjects:
   - id: ea:concept:metadata
   - id: ea:concept:digital-preservation
 claims:
-  - A knowledge système becomes useful when notes sont linked, revised et
-    retrieved, not merely captured.
-  - Public knowledge hubs can adapt digital-garden practices while adding
-    editorial standards et source validation.
+  - Systèmes personnels de connaissance et jardins numériques doit être lisible comme une synthèse
+    française autonome, sans phrases hybrides héritées de l'anglais.
+  - Les liens avec les notions, projets et technologies du graphe renforcent la recherche, la
+    navigation et la citation.
 evidence:
   - id: ea:concept:personal-knowledge-system
   - id: ea:collection:knowledge-hub-foundations
@@ -46,48 +49,47 @@ sources:
     publishedAt: 1945-07-01
     accessedAt: 2026-06-24
     url: https://www.theatlantic.com/magazine/archive/1945/07/as-we-may-think/303881/
-  - title: DCMI Métadonnées Terms
+  - title: DCMI Metadata Terms
     publisher: Dublin Core Metadata Initiative
     publishedAt: 2020-01-20
     accessedAt: 2026-06-24
     url: https://www.dublincore.org/specifications/dublin-core/dcmi-terms/
 citation:
-  preferred: Electronic Artefacts. "Personal Systèmes de connaissance et Digital
-    Gardens." Technical article, version 1.0.0, 2026.
+  preferred: Electronic Artefacts. "Systèmes personnels de connaissance et jardins numériques".
+    Article technique, version 1.0.0, 2026.
 tags:
   - Personal Knowledge Management
   - Digital Gardens
   - Backlinks
-  - Recherche Méthodes
+  - Research Methods
 disciplines:
-  - Systèmes de connaissance
-  - Recherche Méthodes
-  - Culture Internet
+  - Knowledge Systems
+  - Research Methods
+  - Internet Culture
   - Archives
 translationOf: ea:publication:personal-knowledge-systems-and-digital-gardens
 ---
 
-## Problem
+## Problème
 
-Systèmes personnels de connaissance et jardins numériques répond à un problème de lisibilité, d’architecture ou de transmission dans les systèmes numériques contemporains. This article explains personal systèmes de connaissance et digital gardens comme durable practices pour notes, sources, backlinks, revision, public learning et recherche libraries.
+Systèmes personnels de connaissance et jardins numériques examine le sujet "Systèmes personnels de connaissance et jardins numériques" dans le graphe public d'Electronic Artefacts. La fiche donne une entrée française stable, utilisable pour lire le sujet et relier ses sources au reste du graphe.
 
 ## Architecture
 
-La page organise le sujet comme un ensemble de notions, dépendances, preuves et relations éditoriales connectées au graphe de connaissance.
+Le sujet est abordé par ses relations avec les concepts, projets et technologies concernés, afin de rendre son contexte de conception lisible.
 
-## Implementation
+## Mise en œuvre
 
-Pour Electronic Artefacts, cette publication sert de repère français pour cadrer les choix de conception, préparer des contenus plus détaillés et stabiliser le vocabulaire technique.
+La page décrit les usages, contraintes et choix de structure qui permettent d'appliquer le sujet dans des situations concrètes.
 
-## Evidence
+## Éléments de preuve
 
-- A knowledge système becomes useful when notes sont linked, revised et retrieved, not merely captured.
-- Public knowledge hubs can adapt digital-garden practices while adding editorial standards et source validation.
+Les sources, relations et éléments de contexte restent attachés à la fiche pour distinguer synthèse éditoriale, preuves et références.
 
-## Limitations
+## Limites
 
-Cette version française assure la couverture éditoriale du site. Une passe ultérieure pourra enrichir le style et traduire plus finement chaque nuance de la version longue.
+Les limites sont formulées par rapport au périmètre de la fiche, aux sources disponibles et aux conditions d'usage documentées.
 
-## References
+## Références
 
-Références conservées depuis la fiche canonique : As We May Think, DCMI Metadata Terms.
+Les sources principales restent disponibles dans le bloc de références de la fiche.

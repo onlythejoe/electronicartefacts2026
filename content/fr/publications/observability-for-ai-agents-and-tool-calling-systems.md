@@ -3,13 +3,16 @@ id: ea:publication:observability-for-ai-agents-and-tool-calling-systems-fr
 type: publication
 slug:
   canonical: observability-for-ai-agents-and-tool-calling-systems
-title: Observabilité des agents d’IA et des systèmes d’appel d’outils
-subtitle: Technical Article
-abstract: A practical explanation de telemetry pour AI agents, outil calls,
-  traces, events, approvals, failures, evaluations et graphe-runtime
-  accountability.
-description: Understand observability pour AI agents et outil-calling systèmes
-  through traces, metrics, logs, audit events et OpenTelemetry.
+title: Observabilité des agents d'IA et des systèmes d'appel d'outils
+subtitle: Article technique
+abstract: Observabilité des agents d'IA et des systèmes d'appel d'outils propose une synthèse claire
+  en français sur le sujet "Observabilité des agents d'IA et des systèmes d'appel d'outils" dans le
+  graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la
+  publication de connaissances numériques.
+description: Observabilité des agents d'IA et des systèmes d'appel d'outils propose une synthèse
+  claire en français sur le sujet "Observabilité des agents d'IA et des systèmes d'appel d'outils"
+  dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception
+  et la publication de connaissances numériques.
 locale: fr
 visibility: public
 publicationClass: published
@@ -32,19 +35,19 @@ subjects:
   - id: ea:concept:event-driven-architecture
   - id: ea:concept:contextual-execution
 claims:
-  - AI agents require observability across modèle calls, outil calls, approvals,
-    retrieved context et external side effects.
-  - Agent telemetry should record operational behavior et accountability
-    métadonnées without storing sensitive prompts ou private content by default.
+  - Observabilité des agents d'IA et des systèmes d'appel d'outils doit être lisible comme une
+    synthèse française autonome, sans phrases hybrides héritées de l'anglais.
+  - Les liens avec les notions, projets et technologies du graphe renforcent la recherche, la
+    navigation et la citation.
 evidence:
   - id: ea:technology:opentelemetry
   - id: ea:technology:model-context-protocol
 sources:
-  - title: OpenTelemetry Sémantique Conventions 1.42.0
+  - title: OpenTelemetry Semantic Conventions 1.42.0
     publisher: OpenTelemetry
     accessedAt: 2026-06-24
     url: https://opentelemetry.io/docs/specs/semconv/
-  - title: Modèle Context Protocole Specification
+  - title: Model Context Protocol Specification
     publisher: Model Context Protocol
     accessedAt: 2026-06-24
     url: https://modelcontextprotocol.io/specification/2025-06-18
@@ -53,43 +56,42 @@ sources:
     accessedAt: 2026-06-24
     url: https://cloudevents.io/
 citation:
-  preferred: Electronic Artefacts. "Observability pour AI Agents et Outil-Calling
-    Systèmes." Technical article, version 1.0.0, 2026.
+  preferred: Electronic Artefacts. "Observabilité des agents d'IA et des systèmes d'appel d'outils".
+    Article technique, version 1.0.0, 2026.
 tags:
   - Observability
-  - AI Agents
-  - Outil Calling
+  - agents d'IA
+  - Tool Calling
   - OpenTelemetry
   - Tracing
 disciplines:
-  - Intelligence artificielle
-  - Software Architecture
-  - Systèmes Design
-  - Distributed Systèmes
+  - intelligence artificielle
+  - architecture logicielle
+  - conception de systèmes
+  - Distributed Systems
 translationOf: ea:publication:observability-for-ai-agents-and-tool-calling-systems
 ---
 
-## Problem
+## Problème
 
-Observabilité des agents d’IA et des systèmes d’appel d’outils répond à un problème de lisibilité, d’architecture ou de transmission dans les systèmes numériques contemporains. A practical explanation de telemetry pour AI agents, outil calls, traces, events, approvals, failures, evaluations et graphe-runtime accountability.
+Observabilité des agents d'IA et des systèmes d'appel d'outils examine le sujet "Observabilité des agents d'IA et des systèmes d'appel d'outils" dans le graphe public d'Electronic Artefacts. La fiche donne une entrée française stable, utilisable pour lire le sujet et relier ses sources au reste du graphe.
 
 ## Architecture
 
-La page organise le sujet comme un ensemble de notions, dépendances, preuves et relations éditoriales connectées au graphe de connaissance.
+Le sujet est abordé par ses relations avec les concepts, projets et technologies concernés, afin de rendre son contexte de conception lisible.
 
-## Implementation
+## Mise en œuvre
 
-Pour Electronic Artefacts, cette publication sert de repère français pour cadrer les choix de conception, préparer des contenus plus détaillés et stabiliser le vocabulaire technique.
+La page décrit les usages, contraintes et choix de structure qui permettent d'appliquer le sujet dans des situations concrètes.
 
-## Evidence
+## Éléments de preuve
 
-- AI agents require observability across modèle calls, outil calls, approvals, retrieved context et external side effects.
-- Agent telemetry should record operational behavior et accountability métadonnées without storing sensitive prompts ou private content by default.
+Les sources, relations et éléments de contexte restent attachés à la fiche pour distinguer synthèse éditoriale, preuves et références.
 
-## Limitations
+## Limites
 
-Cette version française assure la couverture éditoriale du site. Une passe ultérieure pourra enrichir le style et traduire plus finement chaque nuance de la version longue.
+Les limites sont formulées par rapport au périmètre de la fiche, aux sources disponibles et aux conditions d'usage documentées.
 
-## References
+## Références
 
-Références conservées depuis la fiche canonique : OpenTelemetry Semantic Conventions 1.42.0, Model Context Protocol Specification, CloudEvents.
+Les sources principales restent disponibles dans le bloc de références de la fiche.

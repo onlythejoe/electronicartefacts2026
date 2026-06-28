@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/knowledge/concepts/provenance/#webpage",
       "url": "https://electronicartefacts.com/fr/knowledge/concepts/provenance/",
       "name": "Provenance",
-      "description": "A canonical definition de provenance pour Electronic Artefacts publications, artefacts, archives et graphe relations.",
+      "description": "Provenance définit un repère conceptuel en français pour comprendre les informations qui documentent l'origine, les transformations, les decisions et la chaine de responsabilite d'un objet et ses liens avec les projets, technologies et publications du graphe.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
@@ -34,8 +34,8 @@
       "@id": "https://electronicartefacts.com/fr/id/concept/provenance/",
       "identifier": "ea:concept:provenance-fr",
       "name": "Provenance",
-      "abstract": "Provenance helps readers assess reliability, rights, authorship, lineage, context et trust across recherche, archive, software et culturel records.",
-      "description": "Provenance is information about the people, activities, sources, transformations et decisions involved dans producing a thing ou piece de données.",
+      "abstract": "Provenance définit un repère conceptuel en français pour comprendre les informations qui documentent l'origine, les transformations, les decisions et la chaine de responsabilite d'un objet et ses liens avec les projets, technologies et publications du graphe.",
+      "description": "Provenance désigne les informations qui documentent l'origine, les transformations, les decisions et la chaine de responsabilite d'un objet.",
       "url": "https://electronicartefacts.com/fr/knowledge/concepts/provenance/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/knowledge/concepts/provenance/#webpage"
@@ -62,8 +62,8 @@
         "Trust",
         "Archive",
         "Archives",
-        "Recherche Méthodes",
-        "Systèmes de connaissance"
+        "Research Methods",
+        "Knowledge Systems"
       ],
       "inLanguage": "fr",
       "dateCreated": "2026-06-23",
@@ -76,7 +76,7 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 99,
+      "wordCount": 91,
       "citation": [
         {
           "@type": "CreativeWork",

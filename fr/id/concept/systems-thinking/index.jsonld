@@ -5,15 +5,15 @@
       "@type": "WebPage",
       "@id": "https://electronicartefacts.com/fr/knowledge/concepts/systems-thinking/#webpage",
       "url": "https://electronicartefacts.com/fr/knowledge/concepts/systems-thinking/",
-      "name": "Pensée systémique",
-      "description": "A canonical definition de systèmes thinking pour creative practice, software architecture et organizational design.",
+      "name": "Pensée systemique",
+      "description": "Pensée systemique définit un repère conceptuel en français pour comprendre la lecture des situations par relations, limites, boucles, flux, delais et points de levier et ses liens avec les projets, technologies et publications du graphe.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
       "primaryImageOfPage": {
         "@type": "ImageObject",
         "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-search.jpg",
-        "description": "Pensée systémique"
+        "description": "Pensée systemique"
       },
       "breadcrumb": {
         "@id": "https://electronicartefacts.com/fr/knowledge/concepts/systems-thinking/#breadcrumb"
@@ -33,9 +33,9 @@
       "@type": "DefinedTerm",
       "@id": "https://electronicartefacts.com/fr/id/concept/systems-thinking/",
       "identifier": "ea:concept:systems-thinking-fr",
-      "name": "Pensée systémique",
-      "abstract": "Systèmes thinking helps creators et technologists understand why local interventions can produce indirect, delayed ou counterintuitive effects.",
-      "description": "Systèmes thinking est un approach that studies elements through their relationships, feedback, boundaries, delays, stocks, flows et patterns de behavior over time.",
+      "name": "Pensée systemique",
+      "abstract": "Pensée systemique définit un repère conceptuel en français pour comprendre la lecture des situations par relations, limites, boucles, flux, delais et points de levier et ses liens avec les projets, technologies et publications du graphe.",
+      "description": "Pensée systemique désigne la lecture des situations par relations, limites, boucles, flux, delais et points de levier.",
       "url": "https://electronicartefacts.com/fr/knowledge/concepts/systems-thinking/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/knowledge/concepts/systems-thinking/#webpage"
@@ -43,7 +43,7 @@
       "image": {
         "@type": "ImageObject",
         "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-search.jpg",
-        "description": "Pensée systémique"
+        "description": "Pensée systemique"
       },
       "author": [
         {
@@ -56,14 +56,14 @@
         }
       ],
       "keywords": [
-        "Pensée systémique",
+        "Systems Thinking",
         "Feedback",
         "Boundaries",
         "Leverage Points",
         "Complexity",
-        "Systèmes Design",
+        "conception de systèmes",
         "Cybernetics",
-        "Design"
+        "design"
       ],
       "inLanguage": "fr",
       "dateCreated": "2026-06-24",
@@ -76,11 +76,11 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 102,
+      "wordCount": 90,
       "citation": [
         {
           "@type": "CreativeWork",
-          "name": "Thinking dans Systèmes",
+          "name": "Thinking in Systems",
           "url": "https://www.chelseagreen.com/product/thinking-in-systems/",
           "author": "Donella H. Meadows",
           "publisher": "Chelsea Green Publishing",
@@ -194,7 +194,7 @@
         {
           "@type": "ListItem",
           "position": 3,
-          "name": "Pensée systémique",
+          "name": "Pensée systemique",
           "item": "https://electronicartefacts.com/fr/knowledge/concepts/systems-thinking/"
         }
       ]

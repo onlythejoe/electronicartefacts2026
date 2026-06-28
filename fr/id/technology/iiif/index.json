@@ -9,8 +9,8 @@
   "alternateNames": [
     "International Image Interoperability Framework"
   ],
-  "abstract": "IIIF est un framework de APIs pour presenting, structuring et annotating digital representations de culturel et archival objects.",
-  "description": "A technology record pour IIIF comme interoperable presentation infrastructure pour compound culturel objects.",
+  "abstract": "IIIF est présenté comme une technologie de référence pour comprendre son rôle dans l'écosystème Electronic Artefacts, ses usages, ses limites et sa place dans les systèmes numériques contemporains.",
+  "description": "IIIF est présenté comme une technologie de référence pour comprendre son rôle dans l'écosystème Electronic Artefacts, ses usages, ses limites et sa place dans les systèmes numériques contemporains.",
   "locale": "fr",
   "visibility": "public",
   "publicationClass": "canonical",
@@ -32,13 +32,13 @@
   "tags": [
     "IIIF",
     "Digital Archives",
-    "Culturel Heritage",
+    "Cultural Heritage",
     "Presentation API"
   ],
   "disciplines": [
-    "Préservation numérique",
-    "Culturel Infrastructure",
-    "Systèmes de connaissance"
+    "Digital Préservation",
+    "Cultural Infrastructure",
+    "Knowledge Systems"
   ],
   "sources": [
     {
@@ -49,13 +49,13 @@
     }
   ],
   "category": "protocol",
-  "roleInEcosystem": "IIIF fournit interoperable resource structures such comme collections, manifests, canvases, ranges et annotations pour culturel object presentation.",
+  "roleInEcosystem": "IIIF sert de repère technique pour évaluer le sujet \"IIIF\" dans le graphe public d'Electronic Artefacts, ses usages possibles et ses conséquences dans l'écosystème Electronic Artefacts.",
   "officialUrl": "https://iiif.io/api/presentation/3.0/",
-  "bodyHtml": "<h2 id=\"role\">Rôle</h2>\n<p>IIIF est documenté ici comme une entrée française du graphe public d’Electronic Artefacts. IIIF est un framework de APIs pour presenting, structuring et annotating digital representations de culturel et archival objects.</p>\n<h2 id=\"usage\">Usage</h2>\n<p>Cette technologie sert de repère pour évaluer les choix d’architecture, les dépendances et les possibilités d’implémentation. IIIF fournit interoperable resource structures such comme collections, manifests, canvases, ranges et annotations pour culturel object presentation.</p>\n<h2 id=\"domaines\">Domaines</h2>\n<p>Cette entrée croise notamment les domaines suivants : Préservation numérique, Culturel Infrastructure, Systèmes de connaissance.</p>\n<h2 id=\"references\">Références</h2>\n<p>Les références principales restent les sources indiquées dans la fiche canonique, notamment IIIF Presentation API 3.0.</p>\n",
+  "bodyHtml": "<h2 id=\"role\">Rôle</h2>\n<p>IIIF est documenté comme technologie de référence pour le sujet “IIIF” dans le graphe public d’Electronic Artefacts.</p>\n<h2 id=\"usage\">Usage</h2>\n<p>Cette fiche aide à situer la technologie dans l’écosystème Electronic Artefacts : ce qu’elle permet, quand elle devient pertinente et comment elle dialogue avec les autres composants du graphe.</p>\n<h2 id=\"points-d-attention\">Points d’attention</h2>\n<ul>\n<li>Les usages sont décrits en français sans masquer les noms propres, acronymes ou standards techniques.</li>\n<li>Les limites restent contextualisées par rapport aux projets, aux publications et aux contraintes d’implémentation.</li>\n</ul>\n<h2 id=\"references\">Références</h2>\n<p>Les sources principales restent disponibles dans le bloc de références de la fiche.</p>\n",
   "headings": [
     "Rôle",
     "Usage",
-    "Domaines",
+    "Points d'attention",
     "Références"
   ],
   "headingItems": [
@@ -71,8 +71,8 @@
     },
     {
       "level": 2,
-      "title": "Domaines",
-      "id": "domaines"
+      "title": "Points d'attention",
+      "id": "points-d-attention"
     },
     {
       "level": 2,

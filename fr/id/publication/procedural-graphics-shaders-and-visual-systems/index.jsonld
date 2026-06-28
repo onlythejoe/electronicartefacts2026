@@ -5,15 +5,15 @@
       "@type": "WebPage",
       "@id": "https://electronicartefacts.com/fr/publications/procedural-graphics-shaders-and-visual-systems/#webpage",
       "url": "https://electronicartefacts.com/fr/publications/procedural-graphics-shaders-and-visual-systems/",
-      "name": "Graphisme procédural, shaders et systèmes visuels",
-      "description": "A technical article on procedural grapheics, shaders, WebGL, programmation créative et generative visuel systèmes.",
+      "name": "Graphisme procedural, shaders et systèmes visuels",
+      "description": "Graphisme procedural, shaders et systèmes visuels propose une synthèse claire en français sur le sujet \"Graphisme procedural, shaders et systèmes visuels\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
       "primaryImageOfPage": {
         "@type": "ImageObject",
         "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-search.jpg",
-        "description": "Graphisme procédural, shaders et systèmes visuels"
+        "description": "Graphisme procedural, shaders et systèmes visuels"
       },
       "breadcrumb": {
         "@id": "https://electronicartefacts.com/fr/publications/procedural-graphics-shaders-and-visual-systems/#breadcrumb"
@@ -33,10 +33,10 @@
       "@type": "TechArticle",
       "@id": "https://electronicartefacts.com/fr/id/publication/procedural-graphics-shaders-and-visual-systems/",
       "identifier": "ea:publication:procedural-graphics-shaders-and-visual-systems-fr",
-      "name": "Graphisme procédural, shaders et systèmes visuels",
-      "headline": "Graphisme procédural, shaders et systèmes visuels",
-      "abstract": "This article explains procedural grapheics through rules, shaders, parameters, WebGL, generative systèmes et visuel grammars pour digital art et interfaces.",
-      "description": "This article explains procedural grapheics through rules, shaders, parameters, WebGL, generative systèmes et visuel grammars pour digital art et interfaces.",
+      "name": "Graphisme procedural, shaders et systèmes visuels",
+      "headline": "Graphisme procedural, shaders et systèmes visuels",
+      "abstract": "Graphisme procedural, shaders et systèmes visuels propose une synthèse claire en français sur le sujet \"Graphisme procedural, shaders et systèmes visuels\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
+      "description": "Graphisme procedural, shaders et systèmes visuels propose une synthèse claire en français sur le sujet \"Graphisme procedural, shaders et systèmes visuels\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
       "url": "https://electronicartefacts.com/fr/publications/procedural-graphics-shaders-and-visual-systems/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/publications/procedural-graphics-shaders-and-visual-systems/#webpage"
@@ -44,7 +44,7 @@
       "image": {
         "@type": "ImageObject",
         "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-search.jpg",
-        "description": "Graphisme procédural, shaders et systèmes visuels"
+        "description": "Graphisme procedural, shaders et systèmes visuels"
       },
       "author": [
         {
@@ -57,13 +57,13 @@
         }
       ],
       "keywords": [
-        "Graphisme procédural",
+        "Procedural Graphics",
         "Shaders",
         "WebGL",
         "Generative Art",
-        "Programmation créative",
+        "programmation créative",
         "Digital Art",
-        "Visuel Culture",
+        "Visual Culture",
         "Web Development"
       ],
       "inLanguage": "fr",
@@ -77,9 +77,9 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 153,
+      "wordCount": 143,
       "citation": [
-        "Electronic Artefacts. \"Procedural Grapheics, Shaders et Visuel Systèmes.\" Technical article, version 1.0.0, 2026.",
+        "Electronic Artefacts. \"Graphisme procedural, shaders et systèmes visuels\". Article technique, version 1.0.0, 2026.",
         {
           "@type": "CreativeWork",
           "name": "WebGL",
@@ -113,11 +113,11 @@
         }
       ],
       "articleSection": [
-        "Programmation créative",
+        "programmation créative",
         "Digital Art",
-        "Visuel Culture",
+        "Visual Culture",
         "Web Development",
-        "Graphisme procédural",
+        "Procedural Graphics",
         "Shaders"
       ],
       "timeRequired": "PT1M",
@@ -234,7 +234,7 @@
         {
           "@type": "ListItem",
           "position": 3,
-          "name": "Graphisme procédural, shaders et systèmes visuels",
+          "name": "Graphisme procedural, shaders et systèmes visuels",
           "item": "https://electronicartefacts.com/fr/publications/procedural-graphics-shaders-and-visual-systems/"
         }
       ]

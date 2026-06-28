@@ -5,10 +5,10 @@
   "slug": {
     "canonical": "knowledge-hub-third-wave"
   },
-  "title": "Hub de connaissance, troisième vague",
+  "title": "Hub de connaissance, troisieme vague",
   "subtitle": "AI, Systèmes et Graphe Computing",
-  "abstract": "Knowledge Hub Third Wave groups a major expansion across LLMs, AI agents, local AI, RAG, multimodal systèmes, systèmes thinking, ontologies, graphe modèleing, event streams, Redis, microservices et domain runtimes.",
-  "description": "A curated Electronic Artefacts collection about durable AI et systèmes architecture.",
+  "abstract": "Hub de connaissance, troisieme vague organise des fiches reliées autour de le sujet \"Hub de connaissance, troisieme vague\" dans le graphe public d'Electronic Artefacts, afin de donner une progression lisible aux archives de connaissance d'Electronic Artefacts.",
+  "description": "Hub de connaissance, troisieme vague organise des fiches reliées autour de le sujet \"Hub de connaissance, troisieme vague\" dans le graphe public d'Electronic Artefacts, afin de donner une progression lisible aux archives de connaissance d'Electronic Artefacts.",
   "locale": "fr",
   "visibility": "public",
   "publicationClass": "published",
@@ -30,18 +30,18 @@
   "tags": [
     "Knowledge Hub",
     "Third Wave",
-    "Intelligence artificielle",
-    "Systèmes Architecture",
-    "Graphe Computing"
+    "intelligence artificielle",
+    "Systems Architecture",
+    "Graph Computing"
   ],
   "disciplines": [
-    "Intelligence artificielle",
-    "Systèmes Design",
-    "Systèmes de connaissance",
-    "Software Architecture",
+    "intelligence artificielle",
+    "conception de systèmes",
+    "Knowledge Systems",
+    "architecture logicielle",
     "Creative Technology"
   ],
-  "thesis": "Durable AI knowledge requires systèmes architecture, source grounding, sémantique identité et human gouvernance; graphe runtimes connect those concerns à Electronic Artefacts programs et projects.",
+  "thesis": "Hub de connaissance, troisieme vague propose une lecture organisee de 30 fiches reliées par un même axe editorial.",
   "curator": [
     {
       "id": "ea:organization:electronic-artefacts"
@@ -139,11 +139,11 @@
       "id": "ea:technology:skos"
     }
   ],
-  "selectionNote": "The collection prioritizes evergreen questions avec high search demand et strong structural links à VASTE, Vestiges, ORETH, Palimpsests et the public Knowledge Hub.",
-  "bodyHtml": "<h2 id=\"intention\">Intention</h2>\n<p>Hub de connaissance, troisième vague est documenté ici comme une entrée française du graphe public d’Electronic Artefacts. Knowledge Hub Third Wave groups a major expansion across LLMs, AI agents, local AI, RAG, multimodal systèmes, systèmes thinking, ontologies, graphe modèleing, event streams, Redis, microservices et domain runtimes.</p>\n<h2 id=\"selection\">Sélection</h2>\n<p>The collection prioritizes evergreen questions avec high search demand et strong structural links à VASTE, Vestiges, ORETH, Palimpsests et the public Knowledge Hub.</p>\n<h2 id=\"usage\">Usage</h2>\n<p>Cette collection facilite la navigation entre des objets liés et donne une entrée française cohérente aux archives de connaissance.</p>\n<h2 id=\"references\">Références</h2>\n<p>Les références principales sont conservées dans la fiche canonique et dans le graphe de connaissance public.</p>\n",
+  "selectionNote": "La sélection privilégie des contenus stables, reliables et utiles pour parcourir le hub de connaissance en français.",
+  "bodyHtml": "<h2 id=\"intention\">Intention</h2>\n<p>Hub de connaissance, troisieme vague rassemble des fiches qui partagent un même axe de lecture autour de le sujet “Hub de connaissance, troisieme vague” dans le graphe public d’Electronic Artefacts.</p>\n<h2 id=\"selection\">Selection</h2>\n<p>La collection organise les contenus par proximité éditoriale, par utilité de navigation et par potentiel de liens internes. Elle permet de parcourir le hub de connaissance sans perdre la cohérence du sujet.</p>\n<h2 id=\"usage\">Usage</h2>\n<p>Cette entrée sert de repère pour explorer plusieurs publications ou notions depuis une même page française.</p>\n<h2 id=\"references\">Références</h2>\n<p>Les sources associées sont conservées dans la fiche canonique du graphe.</p>\n",
   "headings": [
     "Intention",
-    "Sélection",
+    "Selection",
     "Usage",
     "Références"
   ],
@@ -155,7 +155,7 @@
     },
     {
       "level": 2,
-      "title": "Sélection",
+      "title": "Selection",
       "id": "selection"
     },
     {

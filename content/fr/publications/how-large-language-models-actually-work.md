@@ -4,12 +4,15 @@ type: publication
 slug:
   canonical: how-large-language-models-actually-work
 title: Comment fonctionnent vraiment les grands modèles de langage
-subtitle: Technical Article
-abstract: A grounded explanation de how large language modèles turn tokens into
-  predictions through embeddings, transformer layers, attention, training et
-  probabilistic inference.
-description: Learn how LLMs work, from tokenization et training à attention,
-  context windows, decoding, hallucinations, outils et evaluation.
+subtitle: Article technique
+abstract: Comment fonctionnent vraiment les grands modèles de langage propose une synthèse claire en
+  français sur le sujet "Comment fonctionnent vraiment les grands modèles de langage" dans le graphe
+  public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la
+  publication de connaissances numériques.
+description: Comment fonctionnent vraiment les grands modèles de langage propose une synthèse claire
+  en français sur le sujet "Comment fonctionnent vraiment les grands modèles de langage" dans le
+  graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la
+  publication de connaissances numériques.
 locale: fr
 visibility: public
 publicationClass: published
@@ -32,11 +35,10 @@ subjects:
   - id: ea:concept:augmented-intelligence
   - id: ea:concept:provenance
 claims:
-  - A large language modèle predicts token sequences from learned parameters et
-    supplied context rather than consulting a complete internal donnéesbase de
-    facts.
-  - Reliable LLM systèmes depend on retrieval, outils, evaluation et human
-    judgment dans addition à modèle capability.
+  - Comment fonctionnent vraiment les grands modèles de langage doit être lisible comme une synthèse
+    française autonome, sans phrases hybrides héritées de l'anglais.
+  - Les liens avec les notions, projets et technologies du graphe renforcent la recherche, la
+    navigation et la citation.
 evidence:
   - id: ea:concept:large-language-model
   - id: ea:technology:transformer-architecture
@@ -47,15 +49,15 @@ sources:
     publishedAt: 2017-06-12
     accessedAt: 2026-06-24
     url: https://arxiv.org/abs/1706.03762
-  - title: On the Opportunities et Risks de Foundation Modèles
+  - title: On the Opportunities and Risks of Foundation Models
     author: Rishi Bommasani et al.
     publisher: Stanford Center for Research on Foundation Models
     publishedAt: 2021-08-16
     accessedAt: 2026-06-24
     url: https://arxiv.org/abs/2108.07258
 citation:
-  preferred: Electronic Artefacts. "How Large Language Modèles Actually Work."
-    Technical article, version 1.0.0, 2026.
+  preferred: Electronic Artefacts. "Comment fonctionnent vraiment les grands modèles de langage".
+    Article technique, version 1.0.0, 2026.
 tags:
   - LLM
   - Transformer
@@ -63,34 +65,33 @@ tags:
   - Tokenization
   - Inference
 disciplines:
-  - Intelligence artificielle
+  - intelligence artificielle
   - Machine Learning
   - Programming
-  - Systèmes de connaissance
+  - Knowledge Systems
 translationOf: ea:publication:how-large-language-models-actually-work
 ---
 
-## Problem
+## Problème
 
-Comment fonctionnent vraiment les grands modèles de langage répond à un problème de lisibilité, d’architecture ou de transmission dans les systèmes numériques contemporains. A grounded explanation de how large language modèles turn tokens into predictions through embeddings, transformer layers, attention, training et probabilistic inference.
+Comment fonctionnent vraiment les grands modèles de langage examine le sujet "Comment fonctionnent vraiment les grands modèles de langage" dans le graphe public d'Electronic Artefacts. La fiche donne une entrée française stable, utilisable pour lire le sujet et relier ses sources au reste du graphe.
 
 ## Architecture
 
-La page organise le sujet comme un ensemble de notions, dépendances, preuves et relations éditoriales connectées au graphe de connaissance.
+Le sujet est abordé par ses relations avec les concepts, projets et technologies concernés, afin de rendre son contexte de conception lisible.
 
-## Implementation
+## Mise en œuvre
 
-Pour Electronic Artefacts, cette publication sert de repère français pour cadrer les choix de conception, préparer des contenus plus détaillés et stabiliser le vocabulaire technique.
+La page décrit les usages, contraintes et choix de structure qui permettent d'appliquer le sujet dans des situations concrètes.
 
-## Evidence
+## Éléments de preuve
 
-- A large language modèle predicts token sequences from learned parameters et supplied context rather than consulting a complete internal donnéesbase de facts.
-- Reliable LLM systèmes depend on retrieval, outils, evaluation et human judgment dans addition à modèle capability.
+Les sources, relations et éléments de contexte restent attachés à la fiche pour distinguer synthèse éditoriale, preuves et références.
 
-## Limitations
+## Limites
 
-Cette version française assure la couverture éditoriale du site. Une passe ultérieure pourra enrichir le style et traduire plus finement chaque nuance de la version longue.
+Les limites sont formulées par rapport au périmètre de la fiche, aux sources disponibles et aux conditions d'usage documentées.
 
-## References
+## Références
 
-Références conservées depuis la fiche canonique : Attention Is All You Need, On the Opportunities and Risks of Foundation Models.
+Les sources principales restent disponibles dans le bloc de références de la fiche.

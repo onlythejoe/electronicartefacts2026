@@ -4,14 +4,16 @@ type: concept
 slug:
   canonical: graph-runtime
 title: Runtime de graphe
-definition: A graphe runtime est un execution environment dans which addressable
-  entités et typed relationships participate directly dans contextual
-  computation.
-abstract: Electronic Artefacts uses graphe runtime à describe systèmes where
-  entités, relationships, identité, context et events form an executable
-  structure rather than a passive données modèle.
-description: A canonical definition de graphe runtime, its scope, applications
-  et relationship à VASTE, Runtime Theory et Vestiges.
+definition: Runtime de graphe désigne les environnements d'execution ou les entités, relations,
+  permissions et événements du graphe participent directement au calcul.
+abstract: Runtime de graphe définit un repère conceptuel en français pour comprendre les
+  environnements d'execution ou les entités, relations, permissions et événements du graphe
+  participent directement au calcul et ses liens avec les projets, technologies et publications du
+  graphe.
+description: Runtime de graphe définit un repère conceptuel en français pour comprendre les
+  environnements d'execution ou les entités, relations, permissions et événements du graphe
+  participent directement au calcul et ses liens avec les projets, technologies et publications du
+  graphe.
 locale: fr
 visibility: public
 publicationClass: canonical
@@ -27,43 +29,42 @@ authors:
   - id: ea:organization:electronic-artefacts
 publisher: ea:organization:electronic-artefacts
 scope:
-  - Addressable entités
-  - Typed relationships
-  - Contextual execution
-  - Identité
-  - Events et propagation
+  - définition du sujet
+  - contexte d'usage
+  - liens avec le graphe
+  - références associées
 exclusions:
-  - A static graphe visuelization without execution sémantiques
-  - A generic graphee de connaissances used only pour retrieval
+  - les usages purement promotionnels sans définition vérifiable
+  - les exemples déconnectés des sources, relations ou contraintes du graphe
 claims:
-  - Graphe structure can participate dans execution rather than remain only a
-    representation de données.
-  - Context et identité must be explicit pour graphe-based execution à remain
-    governable.
+  - Runtime de graphe devient utile lorsque sa définition reste reliée à des sources, des pratiques
+    et des objets observables.
+  - La fiche sert de vocabulaire commun pour relier projets, publications et technologies sans
+    mélanger les langues.
 tags:
-  - Graphe
+  - Graph
   - Runtime
   - Context
-  - Identité
-  - Execution
+  - Identity
+  - Exécution
 disciplines:
   - Software architecture
-  - Knowledge systèmes
+  - Knowledge systems
 translationOf: ea:concept:graph-runtime
 ---
 
 ## Rôle
 
-Runtime de graphe est documenté ici comme une entrée française du graphe public d’Electronic Artefacts. Electronic Artefacts uses graphe runtime à describe systèmes where entités, relationships, identité, context et events form an executable structure rather than a passive données modèle.
+Runtime de graphe est documenté comme notion de référence pour comprendre les environnements d'execution ou les entités, relations, permissions et événements du graphe participent directement au calcul.
 
 ## Usage
 
-Cette notion sert à relier les projets, publications et technologies qui partagent un même vocabulaire de conception. A graphe runtime est un execution environment dans which addressable entités et typed relationships participate directly dans contextual computation.
+Cette fiche relie la notion aux projets, publications et technologies qui partagent un même vocabulaire de conception. Elle sert de point d'appui pour naviguer dans le graphe en version française.
 
-## Domaines
+## Périmètre
 
-Cette entrée croise notamment les domaines suivants : Software architecture, Knowledge systèmes.
+La notion est abordée par ses définitions, ses usages, ses limites et ses relations avec les autres objets documentés.
 
 ## Références
 
-Les références principales sont conservées dans la fiche canonique et dans le graphe de connaissance public.
+Les sources associées sont conservées dans la fiche canonique du graphe.

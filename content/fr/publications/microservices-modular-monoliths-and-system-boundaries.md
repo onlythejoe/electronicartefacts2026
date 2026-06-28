@@ -3,13 +3,16 @@ id: ea:publication:microservices-modular-monoliths-and-system-boundaries-fr
 type: publication
 slug:
   canonical: microservices-modular-monoliths-and-system-boundaries
-title: Microservices, monolithes modulaires et frontières de système
-subtitle: Technical Article
-abstract: A pragmatic comparison de microservices et modular monoliths through
-  domain boundaries, données ownership, deployment, events, observability et
-  team structure.
-description: Learn when microservices make sense, why modular monoliths sont
-  often the better starting point, et how à define durable système boundaries.
+title: Microservices, monolithes modulaires et frontieres de système
+subtitle: Article technique
+abstract: Microservices, monolithes modulaires et frontieres de système propose une synthèse claire
+  en français sur le sujet "Microservices, monolithes modulaires et frontieres de système" dans le
+  graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la
+  publication de connaissances numériques.
+description: Microservices, monolithes modulaires et frontieres de système propose une synthèse
+  claire en français sur le sujet "Microservices, monolithes modulaires et frontieres de système"
+  dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception
+  et la publication de connaissances numériques.
 locale: fr
 visibility: public
 publicationClass: published
@@ -32,16 +35,16 @@ subjects:
   - id: ea:concept:contextual-execution
   - id: ea:program:vaste
 claims:
-  - Service boundaries should follow domain ownership, independent evolution et
-    operational requirements rather than technical fashion.
-  - A modular monolith preserves simpler transactions et operations while
-    establishing boundaries that can later become services.
+  - Microservices, monolithes modulaires et frontieres de système doit être lisible comme une
+    synthèse française autonome, sans phrases hybrides héritées de l'anglais.
+  - Les liens avec les notions, projets et technologies du graphe renforcent la recherche, la
+    navigation et la citation.
 evidence:
   - id: ea:concept:microservice-architecture
   - id: ea:concept:systems-thinking
 sources:
   - title: Microservices
-    author: James Lewis et Martin Fowler
+    author: James Lewis and Martin Fowler
     publisher: MartinFowler.com
     publishedAt: 2014-03-25
     accessedAt: 2026-06-24
@@ -59,43 +62,42 @@ sources:
     accessedAt: 2026-06-24
     url: https://www.domainlanguage.com/ddd/reference/
 citation:
-  preferred: Electronic Artefacts. "Microservices, Modular Monoliths et Système
-    Boundaries." Technical article, version 1.0.0, 2026.
+  preferred: Electronic Artefacts. "Microservices, monolithes modulaires et frontieres de système".
+    Article technique, version 1.0.0, 2026.
 tags:
   - Microservices
   - Modular Monolith
-  - Système Boundaries
+  - System Boundaries
   - Domain-Driven Design
-  - Distributed Systèmes
+  - Distributed Systems
 disciplines:
-  - Software Architecture
-  - Systèmes Design
+  - architecture logicielle
+  - conception de systèmes
   - Programming
-  - Distributed Systèmes
+  - Distributed Systems
 translationOf: ea:publication:microservices-modular-monoliths-and-system-boundaries
 ---
 
-## Problem
+## Problème
 
-Microservices, monolithes modulaires et frontières de système répond à un problème de lisibilité, d’architecture ou de transmission dans les systèmes numériques contemporains. A pragmatic comparison de microservices et modular monoliths through domain boundaries, données ownership, deployment, events, observability et team structure.
+Microservices, monolithes modulaires et frontieres de système examine le sujet "Microservices, monolithes modulaires et frontieres de système" dans le graphe public d'Electronic Artefacts. La fiche donne une entrée française stable, utilisable pour lire le sujet et relier ses sources au reste du graphe.
 
 ## Architecture
 
-La page organise le sujet comme un ensemble de notions, dépendances, preuves et relations éditoriales connectées au graphe de connaissance.
+Le sujet est abordé par ses relations avec les concepts, projets et technologies concernés, afin de rendre son contexte de conception lisible.
 
-## Implementation
+## Mise en œuvre
 
-Pour Electronic Artefacts, cette publication sert de repère français pour cadrer les choix de conception, préparer des contenus plus détaillés et stabiliser le vocabulaire technique.
+La page décrit les usages, contraintes et choix de structure qui permettent d'appliquer le sujet dans des situations concrètes.
 
-## Evidence
+## Éléments de preuve
 
-- Service boundaries should follow domain ownership, independent evolution et operational requirements rather than technical fashion.
-- A modular monolith preserves simpler transactions et operations while establishing boundaries that can later become services.
+Les sources, relations et éléments de contexte restent attachés à la fiche pour distinguer synthèse éditoriale, preuves et références.
 
-## Limitations
+## Limites
 
-Cette version française assure la couverture éditoriale du site. Une passe ultérieure pourra enrichir le style et traduire plus finement chaque nuance de la version longue.
+Les limites sont formulées par rapport au périmètre de la fiche, aux sources disponibles et aux conditions d'usage documentées.
 
-## References
+## Références
 
-Références conservées depuis la fiche canonique : Microservices, MonolithFirst, Domain-Driven Design Reference.
+Les sources principales restent disponibles dans le bloc de références de la fiche.

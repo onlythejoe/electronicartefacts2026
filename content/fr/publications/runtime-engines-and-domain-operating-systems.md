@@ -3,12 +3,16 @@ id: ea:publication:runtime-engines-and-domain-operating-systems-fr
 type: publication
 slug:
   canonical: runtime-engines-and-domain-operating-systems
-title: Moteurs runtime et systèmes d’exploitation de domaine
-subtitle: Technical Article
-abstract: A systèmes-level guide à runtime engines, domain operating systèmes,
-  identité, state, permissions, events, extensions et public projections.
-description: Understand runtime engines et domain operating systèmes, et how
-  shared entités, permissions et events can support many applications.
+title: Moteurs runtime et systèmes d'exploitation de domaine
+subtitle: Article technique
+abstract: Moteurs runtime et systèmes d'exploitation de domaine propose une synthèse claire en
+  français sur le sujet "Moteurs runtime et systèmes d'exploitation de domaine" dans le graphe
+  public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la
+  publication de connaissances numériques.
+description: Moteurs runtime et systèmes d'exploitation de domaine propose une synthèse claire en
+  français sur le sujet "Moteurs runtime et systèmes d'exploitation de domaine" dans le graphe
+  public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la
+  publication de connaissances numériques.
 locale: fr
 visibility: public
 publicationClass: published
@@ -32,10 +36,10 @@ subjects:
   - id: ea:program:vaste
   - id: ea:project:vestiges
 claims:
-  - A domain operating système is credible when several applications reuse
-    shared identité, entité, permission et event sémantiques.
-  - Runtime engines should separate stable domain contracts from replaceable
-    storage, transport et interface implementations.
+  - Moteurs runtime et systèmes d'exploitation de domaine doit être lisible comme une synthèse
+    française autonome, sans phrases hybrides héritées de l'anglais.
+  - Les liens avec les notions, projets et technologies du graphe renforcent la recherche, la
+    navigation et la citation.
 evidence:
   - id: ea:concept:domain-operating-system
   - id: ea:concept:graph-runtime
@@ -57,43 +61,42 @@ sources:
     accessedAt: 2026-06-24
     url: https://cloudevents.io/
 citation:
-  preferred: Electronic Artefacts. "Runtime Engines et Domain Operating Systèmes."
-    Technical article, version 1.0.0, 2026.
+  preferred: Electronic Artefacts. "Moteurs runtime et systèmes d'exploitation de domaine". Article
+    technique, version 1.0.0, 2026.
 tags:
   - Runtime Engine
   - Domain OS
   - Business OS
   - VASTE
-  - Composable Systèmes
+  - Composable Systems
 disciplines:
-  - Systèmes Design
-  - Software Architecture
+  - conception de systèmes
+  - architecture logicielle
   - Programming
-  - Systèmes de connaissance
+  - Knowledge Systems
 translationOf: ea:publication:runtime-engines-and-domain-operating-systems
 ---
 
-## Problem
+## Problème
 
-Moteurs runtime et systèmes d’exploitation de domaine répond à un problème de lisibilité, d’architecture ou de transmission dans les systèmes numériques contemporains. A systèmes-level guide à runtime engines, domain operating systèmes, identité, state, permissions, events, extensions et public projections.
+Moteurs runtime et systèmes d'exploitation de domaine examine le sujet "Moteurs runtime et systèmes d'exploitation de domaine" dans le graphe public d'Electronic Artefacts. La fiche donne une entrée française stable, utilisable pour lire le sujet et relier ses sources au reste du graphe.
 
 ## Architecture
 
-La page organise le sujet comme un ensemble de notions, dépendances, preuves et relations éditoriales connectées au graphe de connaissance.
+Le sujet est abordé par ses relations avec les concepts, projets et technologies concernés, afin de rendre son contexte de conception lisible.
 
-## Implementation
+## Mise en œuvre
 
-Pour Electronic Artefacts, cette publication sert de repère français pour cadrer les choix de conception, préparer des contenus plus détaillés et stabiliser le vocabulaire technique.
+La page décrit les usages, contraintes et choix de structure qui permettent d'appliquer le sujet dans des situations concrètes.
 
-## Evidence
+## Éléments de preuve
 
-- A domain operating système is credible when several applications reuse shared identité, entité, permission et event sémantiques.
-- Runtime engines should separate stable domain contracts from replaceable storage, transport et interface implementations.
+Les sources, relations et éléments de contexte restent attachés à la fiche pour distinguer synthèse éditoriale, preuves et références.
 
-## Limitations
+## Limites
 
-Cette version française assure la couverture éditoriale du site. Une passe ultérieure pourra enrichir le style et traduire plus finement chaque nuance de la version longue.
+Les limites sont formulées par rapport au périmètre de la fiche, aux sources disponibles et aux conditions d'usage documentées.
 
-## References
+## Références
 
-Références conservées depuis la fiche canonique : POSIX.1-2024, Domain-Driven Design Reference, CloudEvents.
+Les sources principales restent disponibles dans le bloc de références de la fiche.

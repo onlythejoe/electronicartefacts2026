@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/knowledge/concepts/digital-preservation/#webpage",
       "url": "https://electronicartefacts.com/fr/knowledge/concepts/digital-preservation/",
       "name": "Préservation numérique",
-      "description": "A canonical definition de préservation numérique pour Electronic Artefacts archives, Palimpsests, Vestiges et knowledge infrastructure.",
+      "description": "Préservation numérique définit un repère conceptuel en français pour comprendre la conservation active des objets numériques, de leurs formats, de leurs droits et de leurs contextes d'interpretation et ses liens avec les projets, technologies et publications du graphe.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
@@ -34,8 +34,8 @@
       "@id": "https://electronicartefacts.com/fr/id/concept/digital-preservation/",
       "identifier": "ea:concept:digital-preservation-fr",
       "name": "Préservation numérique",
-      "abstract": "Digital preservation relie file formats, métadonnées, provenance, storage, rights, migration et interpretation into a long-term care practice pour digital culture.",
-      "description": "Digital preservation est le long-term work de keeping digital objects understandable, authentic, usable et accessible despite changes dans formats, software, hardware et context.",
+      "abstract": "Préservation numérique définit un repère conceptuel en français pour comprendre la conservation active des objets numériques, de leurs formats, de leurs droits et de leurs contextes d'interpretation et ses liens avec les projets, technologies et publications du graphe.",
+      "description": "Préservation numérique désigne la conservation active des objets numériques, de leurs formats, de leurs droits et de leurs contextes d'interpretation.",
       "url": "https://electronicartefacts.com/fr/knowledge/concepts/digital-preservation/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/knowledge/concepts/digital-preservation/#webpage"
@@ -56,14 +56,14 @@
         }
       ],
       "keywords": [
-        "Préservation numérique",
+        "Digital Préservation",
         "Archive",
         "File Formats",
         "Provenance",
-        "Mémoire",
+        "Memory",
         "Archives",
-        "History de Technology",
-        "Systèmes de connaissance",
+        "History of Technology",
+        "Knowledge Systems",
         "Digital Art"
       ],
       "inLanguage": "fr",
@@ -77,18 +77,18 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 115,
+      "wordCount": 93,
       "citation": [
         {
           "@type": "CreativeWork",
-          "name": "Préservation numérique Handbook",
+          "name": "Digital Preservation Handbook",
           "url": "https://www.dpconline.org/handbook",
           "publisher": "Digital Preservation Coalition",
           "datePublished": "2015-01-01"
         },
         {
           "@type": "CreativeWork",
-          "name": "Sustainability de Digital Formats",
+          "name": "Sustainability of Digital Formats",
           "url": "https://www.loc.gov/preservation/digital/formats/",
           "publisher": "Library of Congress"
         }

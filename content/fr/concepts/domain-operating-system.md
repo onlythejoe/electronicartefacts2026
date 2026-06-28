@@ -3,15 +3,15 @@ id: ea:concept:domain-operating-system-fr
 type: concept
 slug:
   canonical: domain-operating-system
-title: Système d’exploitation de domaine
-definition: A domain operating système est un shared runtime et information
-  layer that coordinates identités, entités, permissions, workflows, events et
-  interfaces pour a specific field de activity.
-abstract: A domain operating système turns repeated domain rules into reusable
-  infrastructure without claiming à replace a general-purpose computer operating
-  système.
-description: An Electronic Artefacts concept pour business operating systèmes,
-  runtime engines et shared domain plateformes.
+title: Système d'exploitation de domaine
+definition: Système d'exploitation de domaine désigne le sujet "Système d'exploitation de domaine"
+  dans le graphe public d'Electronic Artefacts.
+abstract: Système d'exploitation de domaine définit un repère conceptuel en français pour comprendre
+  le sujet "Système d'exploitation de domaine" dans le graphe public d'Electronic Artefacts et ses
+  liens avec les projets, technologies et publications du graphe.
+description: Système d'exploitation de domaine définit un repère conceptuel en français pour
+  comprendre le sujet "Système d'exploitation de domaine" dans le graphe public d'Electronic
+  Artefacts et ses liens avec les projets, technologies et publications du graphe.
 locale: fr
 visibility: public
 publicationClass: canonical
@@ -27,48 +27,44 @@ authors:
   - id: ea:organization:electronic-artefacts
 publisher: ea:organization:electronic-artefacts
 scope:
-  - Domain entités
-  - Identité et permissions
-  - Workflows
-  - Event execution
-  - Shared services
-  - Public et private projections
+  - définition du sujet
+  - contexte d'usage
+  - liens avec le graphe
+  - références associées
 exclusions:
-  - Marketing language pour a conventional dashboard avec no shared runtime
-    sémantiques
-  - A replacement pour the kernel, hardware abstraction ou process modèle de a
-    general-purpose OS
+  - les usages purement promotionnels sans définition vérifiable
+  - les exemples déconnectés des sources, relations ou contraintes du graphe
 claims:
-  - A domain operating système becomes credible when multiple applications reuse
-    the same identités, rules et event sémantiques.
-  - Domain infrastructure should expose extension points without centralizing
-    every concern.
+  - Système d'exploitation de domaine devient utile lorsque sa définition reste reliée à des
+    sources, des pratiques et des objets observables.
+  - La fiche sert de vocabulaire commun pour relier projets, publications et technologies sans
+    mélanger les langues.
 tags:
   - Domain OS
   - Business OS
   - Runtime Engine
-  - Plateforme Architecture
+  - Platform Architecture
   - Composability
 disciplines:
-  - Systèmes Design
-  - Software Architecture
+  - conception de systèmes
+  - architecture logicielle
   - Programming
-  - Systèmes de connaissance
+  - Knowledge Systems
 translationOf: ea:concept:domain-operating-system
 ---
 
 ## Rôle
 
-Système d’exploitation de domaine est documenté ici comme une entrée française du graphe public d’Electronic Artefacts. A domain operating système turns repeated domain rules into reusable infrastructure without claiming à replace a general-purpose computer operating système.
+Système d'exploitation de domaine est documenté comme notion de référence pour comprendre le sujet "Système d'exploitation de domaine" dans le graphe public d'Electronic Artefacts.
 
 ## Usage
 
-Cette notion sert à relier les projets, publications et technologies qui partagent un même vocabulaire de conception. A domain operating système est un shared runtime et information layer that coordinates identités, entités, permissions, workflows, events et interfaces pour a specific field de activity.
+Cette fiche relie la notion aux projets, publications et technologies qui partagent un même vocabulaire de conception. Elle sert de point d'appui pour naviguer dans le graphe en version française.
 
-## Domaines
+## Périmètre
 
-Cette entrée croise notamment les domaines suivants : Systèmes Design, Software Architecture, Programming, Systèmes de connaissance.
+La notion est abordée par ses définitions, ses usages, ses limites et ses relations avec les autres objets documentés.
 
 ## Références
 
-Les références principales sont conservées dans la fiche canonique et dans le graphe de connaissance public.
+Les sources associées sont conservées dans la fiche canonique du graphe.

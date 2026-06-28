@@ -3,14 +3,15 @@ id: ea:concept:cybernetic-feedback-fr
 type: concept
 slug:
   canonical: cybernetic-feedback
-title: Rétroaction cybernétique
-definition: Cybernetic feedback est le circulation de information about a
-  système's state back into the système so that behavior can be regulated,
-  adapted ou transformed.
-abstract: Cybernetic feedback relie control, communication, systèmes theory,
-  generative art, machine listening, adaptive interfaces et runtime gouvernance.
-description: A canonical definition de cybernetic feedback pour Electronic
-  Artefacts recherche, creative systèmes et historical technology context.
+title: Rétroaction cybernetique
+definition: Rétroaction cybernetique désigne les boucles de retroaction qui relient mesure, action,
+  correction et comportement systemique.
+abstract: Rétroaction cybernetique définit un repère conceptuel en français pour comprendre les
+  boucles de retroaction qui relient mesure, action, correction et comportement systemique et ses
+  liens avec les projets, technologies et publications du graphe.
+description: Rétroaction cybernetique définit un repère conceptuel en français pour comprendre les
+  boucles de retroaction qui relient mesure, action, correction et comportement systemique et ses
+  liens avec les projets, technologies et publications du graphe.
 locale: fr
 visibility: public
 publicationClass: canonical
@@ -26,22 +27,20 @@ authors:
   - id: ea:organization:electronic-artefacts
 publisher: ea:organization:electronic-artefacts
 scope:
-  - Feedback
-  - Regulation
-  - Control
-  - Communication
-  - Adaptation
-  - Système state
+  - définition du sujet
+  - contexte d'usage
+  - liens avec le graphe
+  - références associées
 exclusions:
-  - Any loop avec no state observation ou corrective effect
-  - A metaphor pour complexity without operational meaning
+  - les usages purement promotionnels sans définition vérifiable
+  - les exemples déconnectés des sources, relations ou contraintes du graphe
 claims:
-  - Feedback est un core concept pour understanding adaptive creative et
-    technical systèmes.
-  - Cybernetic language should be used precisely because it carries both
-    technical et culturel history.
+  - Rétroaction cybernetique devient utile lorsque sa définition reste reliée à des sources, des
+    pratiques et des objets observables.
+  - La fiche sert de vocabulaire commun pour relier projets, publications et technologies sans
+    mélanger les langues.
 sources:
-  - title: Cybernetics ou Control et Communication dans the Animal et the Machine
+  - title: Cybernetics or Control and Communication in the Animal and the Machine
     author: Norbert Wiener
     publisher: MIT Press
     publishedAt: 1948-01-01
@@ -50,29 +49,29 @@ sources:
 tags:
   - Cybernetics
   - Feedback
-  - Systèmes Theory
+  - Systems Theory
   - Control
-  - Generative Systèmes
+  - Generative Systems
 disciplines:
   - Cybernetics
   - Complexity
-  - Systèmes Design
+  - conception de systèmes
   - Digital Art
 translationOf: ea:concept:cybernetic-feedback
 ---
 
 ## Rôle
 
-Rétroaction cybernétique est documenté ici comme une entrée française du graphe public d’Electronic Artefacts. Cybernetic feedback relie control, communication, systèmes theory, generative art, machine listening, adaptive interfaces et runtime gouvernance.
+Rétroaction cybernetique est documenté comme notion de référence pour comprendre les boucles de retroaction qui relient mesure, action, correction et comportement systemique.
 
 ## Usage
 
-Cette notion sert à relier les projets, publications et technologies qui partagent un même vocabulaire de conception. Cybernetic feedback est le circulation de information about a système's state back into the système so that behavior can be regulated, adapted ou transformed.
+Cette fiche relie la notion aux projets, publications et technologies qui partagent un même vocabulaire de conception. Elle sert de point d'appui pour naviguer dans le graphe en version française.
 
-## Domaines
+## Périmètre
 
-Cette entrée croise notamment les domaines suivants : Cybernetics, Complexity, Systèmes Design, Digital Art.
+La notion est abordée par ses définitions, ses usages, ses limites et ses relations avec les autres objets documentés.
 
 ## Références
 
-Les références principales restent les sources indiquées dans la fiche canonique, notamment Cybernetics or Control and Communication in the Animal and the Machine.
+Les sources principales restent disponibles dans le bloc de références de la fiche.

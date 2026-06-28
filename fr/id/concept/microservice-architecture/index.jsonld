@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/knowledge/concepts/microservice-architecture/#webpage",
       "url": "https://electronicartefacts.com/fr/knowledge/concepts/microservice-architecture/",
       "name": "Architecture de microservices",
-      "description": "A canonical definition comparing microservices avec modular monoliths et service-oriented systèmes.",
+      "description": "Architecture de microservices définit un repère conceptuel en français pour comprendre les architectures de services separes par domaine, contrat et responsabilite opérationnelle et ses liens avec les projets, technologies et publications du graphe.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
@@ -34,8 +34,8 @@
       "@id": "https://electronicartefacts.com/fr/id/concept/microservice-architecture/",
       "identifier": "ea:concept:microservice-architecture-fr",
       "name": "Architecture de microservices",
-      "abstract": "Microservices can improve independent evolution et scaling but add network, données, deployment, observability et organizational complexity.",
-      "description": "Microservice architecture structures a software système comme independently deployable services aligned avec bounded capabilities et communicating through explicit contracts.",
+      "abstract": "Architecture de microservices définit un repère conceptuel en français pour comprendre les architectures de services separes par domaine, contrat et responsabilite opérationnelle et ses liens avec les projets, technologies et publications du graphe.",
+      "description": "Architecture de microservices désigne les architectures de services separes par domaine, contrat et responsabilite opérationnelle.",
       "url": "https://electronicartefacts.com/fr/knowledge/concepts/microservice-architecture/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/knowledge/concepts/microservice-architecture/#webpage"
@@ -59,9 +59,9 @@
         "Microservices",
         "Modular Monolith",
         "Service Boundaries",
-        "Distributed Systèmes",
-        "Software Architecture",
-        "Systèmes Design",
+        "Distributed Systems",
+        "architecture logicielle",
+        "conception de systèmes",
         "Programming"
       ],
       "inLanguage": "fr",
@@ -75,13 +75,13 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 97,
+      "wordCount": 88,
       "citation": [
         {
           "@type": "CreativeWork",
           "name": "Microservices",
           "url": "https://martinfowler.com/articles/microservices.html",
-          "author": "James Lewis et Martin Fowler",
+          "author": "James Lewis and Martin Fowler",
           "publisher": "MartinFowler.com",
           "datePublished": "2014-03-25"
         }

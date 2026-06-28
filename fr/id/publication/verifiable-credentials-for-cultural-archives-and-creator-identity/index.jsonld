@@ -5,15 +5,15 @@
       "@type": "WebPage",
       "@id": "https://electronicartefacts.com/fr/publications/verifiable-credentials-for-cultural-archives-and-creator-identity/#webpage",
       "url": "https://electronicartefacts.com/fr/publications/verifiable-credentials-for-cultural-archives-and-creator-identity/",
-      "name": "Identifiants vérifiables pour les archives culturelles et l’identité des créateurs",
-      "description": "Understand how verifiable credentials can support creator identité, archive provenance, rights workflows et trusted claims dans culturel systèmes de connaissance.",
+      "name": "Identifiants vérifiables pour les archives culturelles et l'identité des createurs",
+      "description": "Identifiants vérifiables pour les archives culturelles et l'identité des createurs propose une synthèse claire en français sur le sujet \"Identifiants vérifiables pour les archives culturelles et l'identité des createurs\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
       "primaryImageOfPage": {
         "@type": "ImageObject",
         "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-search.jpg",
-        "description": "Identifiants vérifiables pour les archives culturelles et l’identité des créateurs"
+        "description": "Identifiants vérifiables pour les archives culturelles et l'identité des createurs"
       },
       "breadcrumb": {
         "@id": "https://electronicartefacts.com/fr/publications/verifiable-credentials-for-cultural-archives-and-creator-identity/#breadcrumb"
@@ -33,10 +33,10 @@
       "@type": "TechArticle",
       "@id": "https://electronicartefacts.com/fr/id/publication/verifiable-credentials-for-cultural-archives-and-creator-identity/",
       "identifier": "ea:publication:verifiable-credentials-for-cultural-archives-and-creator-identity-fr",
-      "name": "Identifiants vérifiables pour les archives culturelles et l’identité des créateurs",
-      "headline": "Identifiants vérifiables pour les archives culturelles et l’identité des créateurs",
-      "abstract": "A practical article on W3C Verifiable Credentials, creator identité, culturel archives, provenance, claims, privacy et machine-readable trust.",
-      "description": "A practical article on W3C Verifiable Credentials, creator identité, culturel archives, provenance, claims, privacy et machine-readable trust.",
+      "name": "Identifiants vérifiables pour les archives culturelles et l'identité des createurs",
+      "headline": "Identifiants vérifiables pour les archives culturelles et l'identité des createurs",
+      "abstract": "Identifiants vérifiables pour les archives culturelles et l'identité des createurs propose une synthèse claire en français sur le sujet \"Identifiants vérifiables pour les archives culturelles et l'identité des createurs\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
+      "description": "Identifiants vérifiables pour les archives culturelles et l'identité des createurs propose une synthèse claire en français sur le sujet \"Identifiants vérifiables pour les archives culturelles et l'identité des createurs\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
       "url": "https://electronicartefacts.com/fr/publications/verifiable-credentials-for-cultural-archives-and-creator-identity/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/publications/verifiable-credentials-for-cultural-archives-and-creator-identity/#webpage"
@@ -44,7 +44,7 @@
       "image": {
         "@type": "ImageObject",
         "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-search.jpg",
-        "description": "Identifiants vérifiables pour les archives culturelles et l’identité des créateurs"
+        "description": "Identifiants vérifiables pour les archives culturelles et l'identité des createurs"
       },
       "author": [
         {
@@ -58,12 +58,12 @@
       ],
       "keywords": [
         "Verifiable Credentials",
-        "Creator Identité",
+        "Creator Identity",
         "Provenance",
-        "Préservation numérique",
-        "Culturel Archives",
-        "Culturel Infrastructure",
-        "Systèmes de connaissance",
+        "Digital Préservation",
+        "Cultural Archives",
+        "Cultural Infrastructure",
+        "Knowledge Systems",
         "Web Standards"
       ],
       "inLanguage": "fr",
@@ -77,12 +77,12 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 176,
+      "wordCount": 151,
       "citation": [
-        "Electronic Artefacts. \"Verifiable Credentials pour Culturel Archives et Creator Identité.\" Technical article, version 1.0.0, 2026.",
+        "Electronic Artefacts. \"Identifiants vérifiables pour les archives culturelles et l'identité des createurs\". Article technique, version 1.0.0, 2026.",
         {
           "@type": "CreativeWork",
-          "name": "Verifiable Credentials Données Modèle v2.0",
+          "name": "Verifiable Credentials Data Model v2.0",
           "url": "https://www.w3.org/TR/vc-data-model-2.0/",
           "publisher": "W3C",
           "datePublished": "2025-05-15"
@@ -127,18 +127,18 @@
         }
       ],
       "articleSection": [
-        "Culturel Infrastructure",
-        "Systèmes de connaissance",
-        "Préservation numérique",
+        "Cultural Infrastructure",
+        "Knowledge Systems",
+        "Digital Préservation",
         "Web Standards",
         "Verifiable Credentials",
-        "Creator Identité"
+        "Creator Identity"
       ],
       "timeRequired": "PT1M",
       "isBasedOn": [
         {
           "@type": "CreativeWork",
-          "name": "Verifiable Credentials Données Modèle v2.0",
+          "name": "Verifiable Credentials Data Model v2.0",
           "url": "https://www.w3.org/TR/vc-data-model-2.0/",
           "publisher": "W3C",
           "datePublished": "2025-05-15"
@@ -262,7 +262,7 @@
         {
           "@type": "ListItem",
           "position": 3,
-          "name": "Identifiants vérifiables pour les archives culturelles et l’identité des créateurs",
+          "name": "Identifiants vérifiables pour les archives culturelles et l'identité des createurs",
           "item": "https://electronicartefacts.com/fr/publications/verifiable-credentials-for-cultural-archives-and-creator-identity/"
         }
       ]

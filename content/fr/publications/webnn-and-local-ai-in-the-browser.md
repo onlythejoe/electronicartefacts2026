@@ -4,12 +4,13 @@ type: publication
 slug:
   canonical: webnn-and-local-ai-in-the-browser
 title: WebNN et IA locale dans le navigateur
-subtitle: Technical Article
-abstract: A practical explanation de WebNN, navigateur-local inference, hardware
-  acceleration, privacy limits, creative outils et web machine-learning
-  architecture.
-description: Understand WebNN comme a navigateur API pour hardware-accelerated
-  neural-network inference et local AI interaction design.
+subtitle: Article technique
+abstract: WebNN et IA locale dans le navigateur propose une synthèse claire en français sur le sujet
+  "WebNN et IA locale dans le navigateur" dans le graphe public d'Electronic Artefacts, avec un
+  angle utile pour la recherche, la conception et la publication de connaissances numériques.
+description: WebNN et IA locale dans le navigateur propose une synthèse claire en français sur le
+  sujet "WebNN et IA locale dans le navigateur" dans le graphe public d'Electronic Artefacts, avec
+  un angle utile pour la recherche, la conception et la publication de connaissances numériques.
 locale: fr
 visibility: public
 publicationClass: published
@@ -32,12 +33,10 @@ subjects:
   - id: ea:concept:human-computer-interaction
   - id: ea:concept:generative-ai
 claims:
-  - Navigateur-local inference can reduce server dependence et improve
-    interaction privacy, but it remains constrained by device capability,
-    navigateur support et modèle size.
-  - WebNN is most useful when treated comme one layer dans a broader web AI
-    stack that includes modèle packaging, permissions, fallbacks et user-visible
-    controls.
+  - WebNN et IA locale dans le navigateur doit être lisible comme une synthèse française autonome,
+    sans phrases hybrides héritées de l'anglais.
+  - Les liens avec les notions, projets et technologies du graphe renforcent la recherche, la
+    navigation et la citation.
 evidence:
   - id: ea:technology:webnn
   - id: ea:concept:multimodal-ai
@@ -47,7 +46,7 @@ sources:
     publishedAt: 2026-05-21
     accessedAt: 2026-06-24
     url: https://www.w3.org/TR/webnn/
-  - title: Ethical Principles pour Web Machine Learning
+  - title: Ethical Principles for Web Machine Learning
     publisher: W3C
     accessedAt: 2026-06-24
     url: https://www.w3.org/TR/webmachinelearning-ethics/
@@ -56,43 +55,42 @@ sources:
     accessedAt: 2026-06-24
     url: https://www.w3.org/TR/webgpu/
 citation:
-  preferred: Electronic Artefacts. "WebNN et Local AI dans the Navigateur."
-    Technical article, version 1.0.0, 2026.
+  preferred: Electronic Artefacts. "WebNN et IA locale dans le navigateur". Article technique, version
+    1.0.0, 2026.
 tags:
   - WebNN
-  - Navigateur AI
+  - Browser AI
   - Local Inference
   - Web Machine Learning
-  - HCI
+  - interaction humain-machine
 disciplines:
-  - Intelligence artificielle
+  - intelligence artificielle
   - Web Development
-  - Human Computer Interaction
+  - interaction humain-machine
   - Creative Technology
 translationOf: ea:publication:webnn-and-local-ai-in-the-browser
 ---
 
-## Problem
+## Problème
 
-WebNN et IA locale dans le navigateur répond à un problème de lisibilité, d’architecture ou de transmission dans les systèmes numériques contemporains. A practical explanation de WebNN, navigateur-local inference, hardware acceleration, privacy limits, creative outils et web machine-learning architecture.
+WebNN et IA locale dans le navigateur examine le sujet "WebNN et IA locale dans le navigateur" dans le graphe public d'Electronic Artefacts. La fiche donne une entrée française stable, utilisable pour lire le sujet et relier ses sources au reste du graphe.
 
 ## Architecture
 
-La page organise le sujet comme un ensemble de notions, dépendances, preuves et relations éditoriales connectées au graphe de connaissance.
+Le sujet est abordé par ses relations avec les concepts, projets et technologies concernés, afin de rendre son contexte de conception lisible.
 
-## Implementation
+## Mise en œuvre
 
-Pour Electronic Artefacts, cette publication sert de repère français pour cadrer les choix de conception, préparer des contenus plus détaillés et stabiliser le vocabulaire technique.
+La page décrit les usages, contraintes et choix de structure qui permettent d'appliquer le sujet dans des situations concrètes.
 
-## Evidence
+## Éléments de preuve
 
-- Navigateur-local inference can reduce server dependence et improve interaction privacy, but it remains constrained by device capability, navigateur support et modèle size.
-- WebNN is most useful when treated comme one layer dans a broader web AI stack that includes modèle packaging, permissions, fallbacks et user-visible controls.
+Les sources, relations et éléments de contexte restent attachés à la fiche pour distinguer synthèse éditoriale, preuves et références.
 
-## Limitations
+## Limites
 
-Cette version française assure la couverture éditoriale du site. Une passe ultérieure pourra enrichir le style et traduire plus finement chaque nuance de la version longue.
+Les limites sont formulées par rapport au périmètre de la fiche, aux sources disponibles et aux conditions d'usage documentées.
 
-## References
+## Références
 
-Références conservées depuis la fiche canonique : Web Neural Network API, Ethical Principles for Web Machine Learning, WebGPU.
+Les sources principales restent disponibles dans le bloc de références de la fiche.

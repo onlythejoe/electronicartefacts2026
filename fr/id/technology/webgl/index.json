@@ -6,8 +6,8 @@
     "canonical": "webgl"
   },
   "title": "WebGL",
-  "abstract": "WebGL est une technologie du web permettant de produire des graphismes interactifs en deux ou trois dimensions dans les navigateurs compatibles grâce à l’accélération GPU.",
-  "description": "Fiche technologique consacrée aux graphismes dans le navigateur et aux systèmes visuels fondés sur les shaders.",
+  "abstract": "WebGL est présenté comme une technologie de référence pour comprendre son rôle dans l'écosystème Electronic Artefacts, ses usages, ses limites et sa place dans les systèmes numériques contemporains.",
+  "description": "WebGL est présenté comme une technologie de référence pour comprendre son rôle dans l'écosystème Electronic Artefacts, ses usages, ses limites et sa place dans les systèmes numériques contemporains.",
   "locale": "fr",
   "visibility": "public",
   "publicationClass": "canonical",
@@ -29,12 +29,12 @@
   "tags": [
     "WebGL",
     "Shaders",
-    "Graphismes web"
+    "Browser Graphics"
   ],
   "disciplines": [
-    "Code créatif",
-    "Développement web",
-    "Art numérique"
+    "programmation créative",
+    "Web Development",
+    "Digital Art"
   ],
   "sources": [
     {
@@ -45,12 +45,13 @@
     }
   ],
   "category": "platform",
-  "roleInEcosystem": "WebGL soutient les graphismes procéduraux, les expériences de shaders, les visuels en temps réel et les interfaces culturelles interactives.",
+  "roleInEcosystem": "WebGL sert de repère technique pour évaluer le sujet \"WebGL\" dans le graphe public d'Electronic Artefacts, ses usages possibles et ses conséquences dans l'écosystème Electronic Artefacts.",
   "officialUrl": "https://www.khronos.org/webgl/",
-  "bodyHtml": "<h2 id=\"role\">Rôle</h2>\n<p>WebGL rend les graphismes accélérés par GPU accessibles sur le web. Cette technologie est pertinente pour les shaders, les systèmes visuels procéduraux et les artefacts publics interactifs.</p>\n<h2 id=\"usage\">Usage</h2>\n<p>Electronic Artefacts peut utiliser WebGL pour des visuels génératifs, des systèmes de mouvement et des interfaces spatiales natives du navigateur.</p>\n<h2 id=\"references\">Références</h2>\n<p>Consulter les ressources WebGL du Khronos Group.</p>\n",
+  "bodyHtml": "<h2 id=\"role\">Rôle</h2>\n<p>WebGL est documenté comme technologie de référence pour le sujet “WebGL” dans le graphe public d’Electronic Artefacts.</p>\n<h2 id=\"usage\">Usage</h2>\n<p>Cette fiche aide à situer la technologie dans l’écosystème Electronic Artefacts : ce qu’elle permet, quand elle devient pertinente et comment elle dialogue avec les autres composants du graphe.</p>\n<h2 id=\"points-d-attention\">Points d’attention</h2>\n<ul>\n<li>Les usages sont décrits en français sans masquer les noms propres, acronymes ou standards techniques.</li>\n<li>Les limites restent contextualisées par rapport aux projets, aux publications et aux contraintes d’implémentation.</li>\n</ul>\n<h2 id=\"references\">Références</h2>\n<p>Les sources principales restent disponibles dans le bloc de références de la fiche.</p>\n",
   "headings": [
     "Rôle",
     "Usage",
+    "Points d'attention",
     "Références"
   ],
   "headingItems": [
@@ -63,6 +64,11 @@
       "level": 2,
       "title": "Usage",
       "id": "usage"
+    },
+    {
+      "level": 2,
+      "title": "Points d'attention",
+      "id": "points-d-attention"
     },
     {
       "level": 2,

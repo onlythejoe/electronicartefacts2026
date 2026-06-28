@@ -3,14 +3,16 @@ id: ea:publication:open-source-as-cultural-infrastructure-fr
 type: publication
 slug:
   canonical: open-source-as-cultural-infrastructure
-title: L’open source comme infrastructure culturelle
-subtitle: Technical Article
-abstract: This article frames open source comme culturel infrastructure,
-  explaining licenses, maintenance, creative outils, dependency chains, commons
-  et public systèmes de connaissance.
-description: A technical article on open source software, maintainership,
-  programmation créative, infrastructure et Electronic Artefacts knowledge
-  culture.
+title: L'open source comme infrastructure culturelle
+subtitle: Article technique
+abstract: L'open source comme infrastructure culturelle propose une synthèse claire en français sur
+  le sujet "L'open source comme infrastructure culturelle" dans le graphe public d'Electronic
+  Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances
+  numériques.
+description: L'open source comme infrastructure culturelle propose une synthèse claire en français
+  sur le sujet "L'open source comme infrastructure culturelle" dans le graphe public d'Electronic
+  Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances
+  numériques.
 locale: fr
 visibility: public
 publicationClass: published
@@ -32,15 +34,15 @@ subjects:
   - id: ea:concept:internet-culture
   - id: ea:concept:digital-preservation
 claims:
-  - Open source is culturel infrastructure because shared code shapes what
-    artists, rechercheers et developers can build.
-  - Access à code is not enough; open source depends on licensing, maintenance,
-    gouvernance et documentation.
+  - L'open source comme infrastructure culturelle doit être lisible comme une synthèse française
+    autonome, sans phrases hybrides héritées de l'anglais.
+  - Les liens avec les notions, projets et technologies du graphe renforcent la recherche, la
+    navigation et la citation.
 evidence:
   - id: ea:concept:open-source
   - id: ea:concept:creative-coding
 sources:
-  - title: The Open source Definition
+  - title: The Open Source Definition
     publisher: Open Source Initiative
     accessedAt: 2026-06-24
     url: https://opensource.org/osd
@@ -49,42 +51,41 @@ sources:
     accessedAt: 2026-06-24
     url: https://p5js.org/
 citation:
-  preferred: Electronic Artefacts. "Open source comme Culturel Infrastructure."
-    Technical article, version 1.0.0, 2026.
+  preferred: Electronic Artefacts. "L'open source comme infrastructure culturelle". Article technique,
+    version 1.0.0, 2026.
 tags:
-  - Open source
-  - Programmation créative
+  - Open Source
+  - programmation créative
   - Infrastructure
   - Maintainers
 disciplines:
-  - Open source
+  - Open Source
   - Programming
-  - Programmation créative
-  - Culture Internet
+  - programmation créative
+  - Internet Culture
 translationOf: ea:publication:open-source-as-cultural-infrastructure
 ---
 
-## Problem
+## Problème
 
-L’open source comme infrastructure culturelle répond à un problème de lisibilité, d’architecture ou de transmission dans les systèmes numériques contemporains. This article frames open source comme culturel infrastructure, explaining licenses, maintenance, creative outils, dependency chains, commons et public systèmes de connaissance.
+L'open source comme infrastructure culturelle examine le sujet "L'open source comme infrastructure culturelle" dans le graphe public d'Electronic Artefacts. La fiche donne une entrée française stable, utilisable pour lire le sujet et relier ses sources au reste du graphe.
 
 ## Architecture
 
-La page organise le sujet comme un ensemble de notions, dépendances, preuves et relations éditoriales connectées au graphe de connaissance.
+Le sujet est abordé par ses relations avec les concepts, projets et technologies concernés, afin de rendre son contexte de conception lisible.
 
-## Implementation
+## Mise en œuvre
 
-Pour Electronic Artefacts, cette publication sert de repère français pour cadrer les choix de conception, préparer des contenus plus détaillés et stabiliser le vocabulaire technique.
+La page décrit les usages, contraintes et choix de structure qui permettent d'appliquer le sujet dans des situations concrètes.
 
-## Evidence
+## Éléments de preuve
 
-- Open source is culturel infrastructure because shared code shapes what artists, rechercheers et developers can build.
-- Access à code is not enough; open source depends on licensing, maintenance, gouvernance et documentation.
+Les sources, relations et éléments de contexte restent attachés à la fiche pour distinguer synthèse éditoriale, preuves et références.
 
-## Limitations
+## Limites
 
-Cette version française assure la couverture éditoriale du site. Une passe ultérieure pourra enrichir le style et traduire plus finement chaque nuance de la version longue.
+Les limites sont formulées par rapport au périmètre de la fiche, aux sources disponibles et aux conditions d'usage documentées.
 
-## References
+## Références
 
-Références conservées depuis la fiche canonique : The Open Source Definition, p5.js.
+Les sources principales restent disponibles dans le bloc de références de la fiche.

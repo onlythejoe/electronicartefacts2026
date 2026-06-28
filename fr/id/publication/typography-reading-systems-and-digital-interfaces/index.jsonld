@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/publications/typography-reading-systems-and-digital-interfaces/#webpage",
       "url": "https://electronicartefacts.com/fr/publications/typography-reading-systems-and-digital-interfaces/",
       "name": "Typographie, systèmes de lecture et interfaces numériques",
-      "description": "A technical article on typographey, reading systèmes, web interfaces, accessibility et Electronic Artefacts editorial design.",
+      "description": "Typographie, systèmes de lecture et interfaces numériques propose une synthèse claire en français sur le sujet \"Typographie, systèmes de lecture et interfaces numériques\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
@@ -35,8 +35,8 @@
       "identifier": "ea:publication:typography-reading-systems-and-digital-interfaces-fr",
       "name": "Typographie, systèmes de lecture et interfaces numériques",
       "headline": "Typographie, systèmes de lecture et interfaces numériques",
-      "abstract": "This article explains typographey comme infrastructure pour digital reading, connecting type, layout, hierarchy, accessibility, CSS Fonts et long-form knowledge publishing.",
-      "description": "This article explains typographey comme infrastructure pour digital reading, connecting type, layout, hierarchy, accessibility, CSS Fonts et long-form knowledge publishing.",
+      "abstract": "Typographie, systèmes de lecture et interfaces numériques propose une synthèse claire en français sur le sujet \"Typographie, systèmes de lecture et interfaces numériques\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
+      "description": "Typographie, systèmes de lecture et interfaces numériques propose une synthèse claire en français sur le sujet \"Typographie, systèmes de lecture et interfaces numériques\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
       "url": "https://electronicartefacts.com/fr/publications/typography-reading-systems-and-digital-interfaces/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/publications/typography-reading-systems-and-digital-interfaces/#webpage"
@@ -57,13 +57,13 @@
         }
       ],
       "keywords": [
-        "Typographie",
-        "Reading Systèmes",
+        "Typography",
+        "Reading Systems",
         "Interface Design",
-        "Accessibility",
-        "Design",
+        "accessibilité",
+        "design",
         "Web Development",
-        "Human Computer Interaction"
+        "interaction humain-machine"
       ],
       "inLanguage": "fr",
       "dateCreated": "2026-06-24",
@@ -76,9 +76,9 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 164,
+      "wordCount": 145,
       "citation": [
-        "Electronic Artefacts. \"Typographey, Reading Systèmes et Digital Interfaces.\" Technical article, version 1.0.0, 2026.",
+        "Electronic Artefacts. \"Typographie, systèmes de lecture et interfaces numériques\". Article technique, version 1.0.0, 2026.",
         {
           "@type": "CreativeWork",
           "name": "CSS Fonts Module Level 4",
@@ -115,11 +115,11 @@
         }
       ],
       "articleSection": [
-        "Typographie",
-        "Design",
+        "Typography",
+        "design",
         "Web Development",
-        "Human Computer Interaction",
-        "Reading Systèmes",
+        "interaction humain-machine",
+        "Reading Systems",
         "Interface Design"
       ],
       "timeRequired": "PT1M",

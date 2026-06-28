@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/publications/digital-preservation-and-living-archives/#webpage",
       "url": "https://electronicartefacts.com/fr/publications/digital-preservation-and-living-archives/",
       "name": "Préservation numérique et archives vivantes",
-      "description": "A technical article on préservation numérique, living archives, file formats, provenance et Electronic Artefacts culturel records.",
+      "description": "Préservation numérique et archives vivantes propose une synthèse claire en français sur le sujet \"Préservation numérique et archives vivantes\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
@@ -35,8 +35,8 @@
       "identifier": "ea:publication:digital-preservation-and-living-archives-fr",
       "name": "Préservation numérique et archives vivantes",
       "headline": "Préservation numérique et archives vivantes",
-      "abstract": "This article explains préservation numérique comme an active culturel practice that keeps digital objects, métadonnées, provenance et interpretation usable over time.",
-      "description": "This article explains préservation numérique comme an active culturel practice that keeps digital objects, métadonnées, provenance et interpretation usable over time.",
+      "abstract": "Préservation numérique et archives vivantes propose une synthèse claire en français sur le sujet \"Préservation numérique et archives vivantes\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
+      "description": "Préservation numérique et archives vivantes propose une synthèse claire en français sur le sujet \"Préservation numérique et archives vivantes\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
       "url": "https://electronicartefacts.com/fr/publications/digital-preservation-and-living-archives/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/publications/digital-preservation-and-living-archives/#webpage"
@@ -57,15 +57,15 @@
         }
       ],
       "keywords": [
-        "Préservation numérique",
+        "Digital Préservation",
         "Living Archive",
         "Provenance",
         "Palimpsests",
         "Vestiges",
         "Archives",
         "Digital Art",
-        "Systèmes de connaissance",
-        "History de Technology"
+        "Knowledge Systems",
+        "History of Technology"
       ],
       "inLanguage": "fr",
       "dateCreated": "2026-06-23",
@@ -78,25 +78,25 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 165,
+      "wordCount": 141,
       "citation": [
-        "Electronic Artefacts. \"Préservation numérique et Living Archives.\" Technical article, version 1.0.0, 2026.",
+        "Electronic Artefacts. \"Préservation numérique et archives vivantes\". Article technique, version 1.0.0, 2026.",
         {
           "@type": "CreativeWork",
-          "name": "Préservation numérique Handbook",
+          "name": "Digital Preservation Handbook",
           "url": "https://www.dpconline.org/handbook",
           "publisher": "Digital Preservation Coalition",
           "datePublished": "2015-01-01"
         },
         {
           "@type": "CreativeWork",
-          "name": "Sustainability de Digital Formats",
+          "name": "Sustainability of Digital Formats",
           "url": "https://www.loc.gov/preservation/digital/formats/",
           "publisher": "Library of Congress"
         },
         {
           "@type": "CreativeWork",
-          "name": "Levels de Préservation numérique",
+          "name": "Levels of Digital Preservation",
           "url": "https://www.ndsa.org/publications/levels-of-digital-preservation/",
           "publisher": "National Digital Stewardship Alliance"
         }
@@ -129,29 +129,29 @@
       "articleSection": [
         "Archives",
         "Digital Art",
-        "Systèmes de connaissance",
-        "History de Technology",
-        "Préservation numérique",
+        "Knowledge Systems",
+        "History of Technology",
+        "Digital Préservation",
         "Living Archive"
       ],
       "timeRequired": "PT1M",
       "isBasedOn": [
         {
           "@type": "CreativeWork",
-          "name": "Préservation numérique Handbook",
+          "name": "Digital Preservation Handbook",
           "url": "https://www.dpconline.org/handbook",
           "publisher": "Digital Preservation Coalition",
           "datePublished": "2015-01-01"
         },
         {
           "@type": "CreativeWork",
-          "name": "Sustainability de Digital Formats",
+          "name": "Sustainability of Digital Formats",
           "url": "https://www.loc.gov/preservation/digital/formats/",
           "publisher": "Library of Congress"
         },
         {
           "@type": "CreativeWork",
-          "name": "Levels de Préservation numérique",
+          "name": "Levels of Digital Preservation",
           "url": "https://www.ndsa.org/publications/levels-of-digital-preservation/",
           "publisher": "National Digital Stewardship Alliance"
         }

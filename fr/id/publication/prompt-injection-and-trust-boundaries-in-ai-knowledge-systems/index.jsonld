@@ -5,15 +5,15 @@
       "@type": "WebPage",
       "@id": "https://electronicartefacts.com/fr/publications/prompt-injection-and-trust-boundaries-in-ai-knowledge-systems/#webpage",
       "url": "https://electronicartefacts.com/fr/publications/prompt-injection-and-trust-boundaries-in-ai-knowledge-systems/",
-      "name": "Injection de prompt et frontières de confiance dans les systèmes de connaissance IA",
-      "description": "Understand prompt injection dans AI systèmes de connaissance through retrieval, agents, MCP outils, permissions, untrusted content et contextual execution.",
+      "name": "Injection de prompt et frontieres de confiance dans les systèmes de connaissance IA",
+      "description": "Injection de prompt et frontieres de confiance dans les systèmes de connaissance IA propose une synthèse claire en français sur le sujet \"Injection de prompt et frontieres de confiance dans les systèmes de connaissance IA\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
       "primaryImageOfPage": {
         "@type": "ImageObject",
         "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-search.jpg",
-        "description": "Injection de prompt et frontières de confiance dans les systèmes de connaissance IA"
+        "description": "Injection de prompt et frontieres de confiance dans les systèmes de connaissance IA"
       },
       "breadcrumb": {
         "@id": "https://electronicartefacts.com/fr/publications/prompt-injection-and-trust-boundaries-in-ai-knowledge-systems/#breadcrumb"
@@ -33,10 +33,10 @@
       "@type": "TechArticle",
       "@id": "https://electronicartefacts.com/fr/id/publication/prompt-injection-and-trust-boundaries-in-ai-knowledge-systems/",
       "identifier": "ea:publication:prompt-injection-and-trust-boundaries-in-ai-knowledge-systems-fr",
-      "name": "Injection de prompt et frontières de confiance dans les systèmes de connaissance IA",
-      "headline": "Injection de prompt et frontières de confiance dans les systèmes de connaissance IA",
-      "abstract": "A security-focused article on prompt injection, retrieved content, outil use, MCP servers, trust boundaries, permissions et graphe-aware AI workflows.",
-      "description": "A security-focused article on prompt injection, retrieved content, outil use, MCP servers, trust boundaries, permissions et graphe-aware AI workflows.",
+      "name": "Injection de prompt et frontieres de confiance dans les systèmes de connaissance IA",
+      "headline": "Injection de prompt et frontieres de confiance dans les systèmes de connaissance IA",
+      "abstract": "Injection de prompt et frontieres de confiance dans les systèmes de connaissance IA propose une synthèse claire en français sur le sujet \"Injection de prompt et frontieres de confiance dans les systèmes de connaissance IA\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
+      "description": "Injection de prompt et frontieres de confiance dans les systèmes de connaissance IA propose une synthèse claire en français sur le sujet \"Injection de prompt et frontieres de confiance dans les systèmes de connaissance IA\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
       "url": "https://electronicartefacts.com/fr/publications/prompt-injection-and-trust-boundaries-in-ai-knowledge-systems/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/publications/prompt-injection-and-trust-boundaries-in-ai-knowledge-systems/#webpage"
@@ -44,7 +44,7 @@
       "image": {
         "@type": "ImageObject",
         "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-search.jpg",
-        "description": "Injection de prompt et frontières de confiance dans les systèmes de connaissance IA"
+        "description": "Injection de prompt et frontieres de confiance dans les systèmes de connaissance IA"
       },
       "author": [
         {
@@ -59,13 +59,13 @@
       "keywords": [
         "Prompt Injection",
         "AI Security",
-        "AI Agents",
+        "agents d'IA",
         "MCP",
         "Trust Boundaries",
-        "Intelligence artificielle",
+        "intelligence artificielle",
         "Security",
-        "Systèmes de connaissance",
-        "Software Architecture"
+        "Knowledge Systems",
+        "architecture logicielle"
       ],
       "inLanguage": "fr",
       "dateCreated": "2026-06-25",
@@ -78,18 +78,18 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 189,
+      "wordCount": 157,
       "citation": [
-        "Electronic Artefacts. \"Prompt Injection et Trust Boundaries dans AI Systèmes de connaissance.\" Technical article, version 1.0.0, 2026.",
+        "Electronic Artefacts. \"Injection de prompt et frontieres de confiance dans les systèmes de connaissance IA\". Article technique, version 1.0.0, 2026.",
         {
           "@type": "CreativeWork",
-          "name": "OWASP Top 10 pour Large Language Modèle Applications",
+          "name": "OWASP Top 10 for Large Language Model Applications",
           "url": "https://owasp.org/www-project-top-10-for-large-language-model-applications/",
           "publisher": "OWASP Foundation"
         },
         {
           "@type": "CreativeWork",
-          "name": "Modèle Context Protocole Specification",
+          "name": "Model Context Protocol Specification",
           "url": "https://modelcontextprotocol.io/specification/2025-06-18",
           "publisher": "Model Context Protocol"
         },
@@ -126,10 +126,10 @@
         }
       ],
       "articleSection": [
-        "Intelligence artificielle",
+        "intelligence artificielle",
         "Security",
-        "Systèmes de connaissance",
-        "Software Architecture",
+        "Knowledge Systems",
+        "architecture logicielle",
         "Prompt Injection",
         "AI Security"
       ],
@@ -137,13 +137,13 @@
       "isBasedOn": [
         {
           "@type": "CreativeWork",
-          "name": "OWASP Top 10 pour Large Language Modèle Applications",
+          "name": "OWASP Top 10 for Large Language Model Applications",
           "url": "https://owasp.org/www-project-top-10-for-large-language-model-applications/",
           "publisher": "OWASP Foundation"
         },
         {
           "@type": "CreativeWork",
-          "name": "Modèle Context Protocole Specification",
+          "name": "Model Context Protocol Specification",
           "url": "https://modelcontextprotocol.io/specification/2025-06-18",
           "publisher": "Model Context Protocol"
         },
@@ -259,7 +259,7 @@
         {
           "@type": "ListItem",
           "position": 3,
-          "name": "Injection de prompt et frontières de confiance dans les systèmes de connaissance IA",
+          "name": "Injection de prompt et frontieres de confiance dans les systèmes de connaissance IA",
           "item": "https://electronicartefacts.com/fr/publications/prompt-injection-and-trust-boundaries-in-ai-knowledge-systems/"
         }
       ]

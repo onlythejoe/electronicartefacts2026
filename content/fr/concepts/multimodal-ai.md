@@ -4,13 +4,14 @@ type: concept
 slug:
   canonical: multimodal-ai
 title: IA multimodale
-definition: Multimodal AI décrit systèmes that learn from, align, transform ou
-  generate more than one modality such comme text, image, audio, video, sensor
-  données ou structured records.
-abstract: Multimodal AI relie representation learning, modality encoders, shared
-  embedding spaces, generation, alignment et cross-modal interfaces.
-description: A canonical definition de multimodal AI pour creative systèmes,
-  archives et machine perception.
+definition: IA multimodale désigne les systèmes d'IA capables de traiter plusieurs modalites comme
+  le texte, l'image, l'audio ou la video.
+abstract: IA multimodale définit un repère conceptuel en français pour comprendre les systèmes d'IA
+  capables de traiter plusieurs modalites comme le texte, l'image, l'audio ou la video et ses liens
+  avec les projets, technologies et publications du graphe.
+description: IA multimodale définit un repère conceptuel en français pour comprendre les systèmes
+  d'IA capables de traiter plusieurs modalites comme le texte, l'image, l'audio ou la video et ses
+  liens avec les projets, technologies et publications du graphe.
 locale: fr
 visibility: public
 publicationClass: canonical
@@ -26,35 +27,33 @@ authors:
   - id: ea:organization:electronic-artefacts
 publisher: ea:organization:electronic-artefacts
 scope:
-  - Text et image
-  - Audio et speech
-  - Video et time
-  - Shared representations
-  - Cross-modal retrieval
-  - Multimodal generation
+  - définition du sujet
+  - contexte d'usage
+  - liens avec le graphe
+  - références associées
 exclusions:
-  - A page that merely places unrelated médias formats beside one another
-  - Assuming that competence dans one modality transfers equally à all others
+  - les usages purement promotionnels sans définition vérifiable
+  - les exemples déconnectés des sources, relations ou contraintes du graphe
 claims:
-  - Multimodal systèmes depend on how modalities sont encoded, aligned et
-    evaluated.
-  - Cross-modal interfaces create new creative possibilities et new provenance
-    risks.
+  - IA multimodale devient utile lorsque sa définition reste reliée à des sources, des pratiques et
+    des objets observables.
+  - La fiche sert de vocabulaire commun pour relier projets, publications et technologies sans
+    mélanger les langues.
 sources:
-  - title: Learning Transferable Visuel Modèles From Natural Language Supervision
+  - title: Learning Transferable Visual Models From Natural Language Supervision
     author: Alec Radford et al.
     publisher: arXiv
     publishedAt: 2021-02-26
     accessedAt: 2026-06-24
     url: https://arxiv.org/abs/2103.00020
 tags:
-  - IA multimodale
+  - Multimodal AI
   - Vision Language
   - Audio
   - Video
   - Cross-Modal Retrieval
 disciplines:
-  - Intelligence artificielle
+  - intelligence artificielle
   - Machine Learning
   - Digital Art
   - Audio Engineering
@@ -63,16 +62,16 @@ translationOf: ea:concept:multimodal-ai
 
 ## Rôle
 
-IA multimodale est documenté ici comme une entrée française du graphe public d’Electronic Artefacts. Multimodal AI relie representation learning, modality encoders, shared embedding spaces, generation, alignment et cross-modal interfaces.
+IA multimodale est documenté comme notion de référence pour comprendre les systèmes d'IA capables de traiter plusieurs modalites comme le texte, l'image, l'audio ou la video.
 
 ## Usage
 
-Cette notion sert à relier les projets, publications et technologies qui partagent un même vocabulaire de conception. Multimodal AI décrit systèmes that learn from, align, transform ou generate more than one modality such comme text, image, audio, video, sensor données ou structured records.
+Cette fiche relie la notion aux projets, publications et technologies qui partagent un même vocabulaire de conception. Elle sert de point d'appui pour naviguer dans le graphe en version française.
 
-## Domaines
+## Périmètre
 
-Cette entrée croise notamment les domaines suivants : Intelligence artificielle, Machine Learning, Digital Art, Audio Engineering.
+La notion est abordée par ses définitions, ses usages, ses limites et ses relations avec les autres objets documentés.
 
 ## Références
 
-Les références principales restent les sources indiquées dans la fiche canonique, notamment Learning Transferable Visual Models From Natural Language Supervision.
+Les sources principales restent disponibles dans le bloc de références de la fiche.

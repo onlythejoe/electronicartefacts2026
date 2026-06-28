@@ -5,15 +5,15 @@
       "@type": "WebPage",
       "@id": "https://electronicartefacts.com/fr/publications/generative-systems-cybernetics-and-creative-coding/#webpage",
       "url": "https://electronicartefacts.com/fr/publications/generative-systems-cybernetics-and-creative-coding/",
-      "name": "Systèmes génératifs, cybernétique et programmation créative",
-      "description": "A technical article on generative systèmes, cybernetic feedback, programmation créative, algorithmic composition et Electronic Artefacts projects.",
+      "name": "Systèmes génératifs, cybernetique et programmation créative",
+      "description": "Systèmes génératifs, cybernetique et programmation créative propose une synthèse claire en français sur le sujet \"Systèmes génératifs, cybernetique et programmation créative\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
       "primaryImageOfPage": {
         "@type": "ImageObject",
         "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-search.jpg",
-        "description": "Systèmes génératifs, cybernétique et programmation créative"
+        "description": "Systèmes génératifs, cybernetique et programmation créative"
       },
       "breadcrumb": {
         "@id": "https://electronicartefacts.com/fr/publications/generative-systems-cybernetics-and-creative-coding/#breadcrumb"
@@ -33,10 +33,10 @@
       "@type": "TechArticle",
       "@id": "https://electronicartefacts.com/fr/id/publication/generative-systems-cybernetics-and-creative-coding/",
       "identifier": "ea:publication:generative-systems-cybernetics-and-creative-coding-fr",
-      "name": "Systèmes génératifs, cybernétique et programmation créative",
-      "headline": "Systèmes génératifs, cybernétique et programmation créative",
-      "abstract": "This article traces generative systèmes from cybernetic feedback et algorithmic art à programmation créative, sound design et contemporary AI-assisted production.",
-      "description": "This article traces generative systèmes from cybernetic feedback et algorithmic art à programmation créative, sound design et contemporary AI-assisted production.",
+      "name": "Systèmes génératifs, cybernetique et programmation créative",
+      "headline": "Systèmes génératifs, cybernetique et programmation créative",
+      "abstract": "Systèmes génératifs, cybernetique et programmation créative propose une synthèse claire en français sur le sujet \"Systèmes génératifs, cybernetique et programmation créative\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
+      "description": "Systèmes génératifs, cybernetique et programmation créative propose une synthèse claire en français sur le sujet \"Systèmes génératifs, cybernetique et programmation créative\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
       "url": "https://electronicartefacts.com/fr/publications/generative-systems-cybernetics-and-creative-coding/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/publications/generative-systems-cybernetics-and-creative-coding/#webpage"
@@ -44,7 +44,7 @@
       "image": {
         "@type": "ImageObject",
         "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-search.jpg",
-        "description": "Systèmes génératifs, cybernétique et programmation créative"
+        "description": "Systèmes génératifs, cybernetique et programmation créative"
       },
       "author": [
         {
@@ -57,13 +57,13 @@
         }
       ],
       "keywords": [
-        "Generative Systèmes",
+        "Generative Systems",
         "Cybernetics",
-        "Programmation créative",
-        "Composition algorithmique",
+        "programmation créative",
+        "Algorithmic Composition",
         "Digital Art",
         "Music Production",
-        "Systèmes Design"
+        "conception de systèmes"
       ],
       "inLanguage": "fr",
       "dateCreated": "2026-06-23",
@@ -76,12 +76,12 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 172,
+      "wordCount": 143,
       "citation": [
-        "Electronic Artefacts. \"Generative Systèmes, Cybernetics et Programmation créative.\" Technical article, version 1.0.0, 2026.",
+        "Electronic Artefacts. \"Systèmes génératifs, cybernetique et programmation créative\". Article technique, version 1.0.0, 2026.",
         {
           "@type": "CreativeWork",
-          "name": "Cybernetics ou Control et Communication dans the Animal et the Machine",
+          "name": "Cybernetics or Control and Communication in the Animal and the Machine",
           "url": "https://direct.mit.edu/books/oa-monograph/4581/Cybernetics-or-Control-and-Communication-in-the",
           "author": "Norbert Wiener",
           "publisher": "MIT Press",
@@ -89,7 +89,7 @@
         },
         {
           "@type": "CreativeWork",
-          "name": "An Introduction à Cybernetics",
+          "name": "An Introduction to Cybernetics",
           "author": "W. Ross Ashby",
           "publisher": "Chapman and Hall",
           "datePublished": "1956-01-01"
@@ -128,18 +128,18 @@
         }
       ],
       "articleSection": [
-        "Programmation créative",
+        "programmation créative",
         "Digital Art",
         "Music Production",
-        "Systèmes Design",
+        "conception de systèmes",
         "Cybernetics",
-        "Generative Systèmes"
+        "Generative Systems"
       ],
       "timeRequired": "PT1M",
       "isBasedOn": [
         {
           "@type": "CreativeWork",
-          "name": "Cybernetics ou Control et Communication dans the Animal et the Machine",
+          "name": "Cybernetics or Control and Communication in the Animal and the Machine",
           "url": "https://direct.mit.edu/books/oa-monograph/4581/Cybernetics-or-Control-and-Communication-in-the",
           "author": "Norbert Wiener",
           "publisher": "MIT Press",
@@ -147,7 +147,7 @@
         },
         {
           "@type": "CreativeWork",
-          "name": "An Introduction à Cybernetics",
+          "name": "An Introduction to Cybernetics",
           "author": "W. Ross Ashby",
           "publisher": "Chapman and Hall",
           "datePublished": "1956-01-01"
@@ -265,7 +265,7 @@
         {
           "@type": "ListItem",
           "position": 3,
-          "name": "Systèmes génératifs, cybernétique et programmation créative",
+          "name": "Systèmes génératifs, cybernetique et programmation créative",
           "item": "https://electronicartefacts.com/fr/publications/generative-systems-cybernetics-and-creative-coding/"
         }
       ]

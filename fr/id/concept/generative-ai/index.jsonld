@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/knowledge/concepts/generative-ai/#webpage",
       "url": "https://electronicartefacts.com/fr/knowledge/concepts/generative-ai/",
       "name": "IA générative",
-      "description": "A canonical concept record pour generative AI dans creative et systèmes de connaissance.",
+      "description": "IA générative définit un repère conceptuel en français pour comprendre les systèmes d'IA capables de produire ou transformer du texte, des images, du son, de la video, du code ou des données structurees et ses liens avec les projets, technologies et publications du graphe.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
@@ -34,8 +34,8 @@
       "@id": "https://electronicartefacts.com/fr/id/concept/generative-ai/",
       "identifier": "ea:concept:generative-ai-fr",
       "name": "IA générative",
-      "abstract": "Generative AI relie machine learning, creative workflows, latent spaces, risk management, provenance, authorship et culturel production.",
-      "description": "Generative AI refers à machine-learning systèmes that produce ou transform médias such comme text, image, audio, video, code ou structured données from learned patterns.",
+      "abstract": "IA générative définit un repère conceptuel en français pour comprendre les systèmes d'IA capables de produire ou transformer du texte, des images, du son, de la video, du code ou des données structurees et ses liens avec les projets, technologies et publications du graphe.",
+      "description": "IA générative désigne les systèmes d'IA capables de produire ou transformer du texte, des images, du son, de la video, du code ou des données structurees.",
       "url": "https://electronicartefacts.com/fr/knowledge/concepts/generative-ai/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/knowledge/concepts/generative-ai/#webpage"
@@ -56,12 +56,12 @@
         }
       ],
       "keywords": [
-        "IA générative",
+        "Generative AI",
         "Machine Learning",
         "Provenance",
         "Creative Workflows",
-        "Intelligence artificielle",
-        "Programmation créative",
+        "intelligence artificielle",
+        "programmation créative",
         "Digital Art"
       ],
       "inLanguage": "fr",
@@ -75,7 +75,7 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 107,
+      "wordCount": 99,
       "citation": [
         {
           "@type": "CreativeWork",

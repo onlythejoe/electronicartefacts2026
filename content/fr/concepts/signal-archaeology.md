@@ -4,14 +4,14 @@ type: concept
 slug:
   canonical: signal-archaeology
 title: Archéologie du signal
-definition: Signal archaeology est le interpretation de technical, sonic, visuel
-  ou archival traces comme evidence de hidden processes, transformations et
-  histories.
-abstract: Signal archaeology gives Electronic Artefacts a way à connect audio
-  analysis, médias residue, archival provenance, mémoire et culturel
-  interpretation.
-description: A canonical Electronic Artefacts concept linking ORETH,
-  Palimpsests, préservation numérique, provenance et machine listening.
+definition: Archéologie du signal désigne l'analyse des traces sonores, médiatiques et techniques
+  pour rendre lisibles des mémoires enfouies.
+abstract: Archéologie du signal définit un repère conceptuel en français pour comprendre l'analyse
+  des traces sonores, médiatiques et techniques pour rendre lisibles des mémoires enfouies et ses
+  liens avec les projets, technologies et publications du graphe.
+description: Archéologie du signal définit un repère conceptuel en français pour comprendre
+  l'analyse des traces sonores, médiatiques et techniques pour rendre lisibles des mémoires enfouies
+  et ses liens avec les projets, technologies et publications du graphe.
 locale: fr
 visibility: public
 publicationClass: canonical
@@ -27,44 +27,44 @@ authors:
   - id: ea:organization:electronic-artefacts
 publisher: ea:organization:electronic-artefacts
 scope:
-  - Audio residue
-  - Médias traces
-  - Provenance
-  - Archive interpretation
-  - Machine listening
-  - Mémoire
+  - définition du sujet
+  - contexte d'usage
+  - liens avec le graphe
+  - références associées
 exclusions:
-  - Nostalgic aesthetics avec no evidential méthode
-  - Forensic certainty where only interpretation is available
+  - les usages purement promotionnels sans définition vérifiable
+  - les exemples déconnectés des sources, relations ou contraintes du graphe
 claims:
-  - Technical residue can become culturel evidence when it is contextualized.
-  - Machine listening can support interpretation but cannot replace provenance.
+  - Archéologie du signal devient utile lorsque sa définition reste reliée à des sources, des
+    pratiques et des objets observables.
+  - La fiche sert de vocabulaire commun pour relier projets, publications et technologies sans
+    mélanger les langues.
 tags:
-  - Archéologie du signal
+  - Signal Archaeology
   - Audio
   - Archive
-  - Mémoire
+  - Memory
   - Machine Listening
 disciplines:
   - Audio Engineering
   - Digital Art
   - Archives
-  - Recherche Méthodes
+  - Research Methods
 translationOf: ea:concept:signal-archaeology
 ---
 
 ## Rôle
 
-Archéologie du signal est documenté ici comme une entrée française du graphe public d’Electronic Artefacts. Signal archaeology gives Electronic Artefacts a way à connect audio analysis, médias residue, archival provenance, mémoire et culturel interpretation.
+Archéologie du signal est documenté comme notion de référence pour comprendre l'analyse des traces sonores, médiatiques et techniques pour rendre lisibles des mémoires enfouies.
 
 ## Usage
 
-Cette notion sert à relier les projets, publications et technologies qui partagent un même vocabulaire de conception. Signal archaeology est le interpretation de technical, sonic, visuel ou archival traces comme evidence de hidden processes, transformations et histories.
+Cette fiche relie la notion aux projets, publications et technologies qui partagent un même vocabulaire de conception. Elle sert de point d'appui pour naviguer dans le graphe en version française.
 
-## Domaines
+## Périmètre
 
-Cette entrée croise notamment les domaines suivants : Audio Engineering, Digital Art, Archives, Recherche Méthodes.
+La notion est abordée par ses définitions, ses usages, ses limites et ses relations avec les autres objets documentés.
 
 ## Références
 
-Les références principales sont conservées dans la fiche canonique et dans le graphe de connaissance public.
+Les sources associées sont conservées dans la fiche canonique du graphe.

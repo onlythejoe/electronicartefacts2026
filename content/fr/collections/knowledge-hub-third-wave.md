@@ -3,13 +3,14 @@ id: ea:collection:knowledge-hub-third-wave-fr
 type: collection
 slug:
   canonical: knowledge-hub-third-wave
-title: Hub de connaissance, troisième vague
+title: Hub de connaissance, troisieme vague
 subtitle: AI, Systèmes et Graphe Computing
-abstract: Knowledge Hub Third Wave groups a major expansion across LLMs, AI
-  agents, local AI, RAG, multimodal systèmes, systèmes thinking, ontologies,
-  graphe modèleing, event streams, Redis, microservices et domain runtimes.
-description: A curated Electronic Artefacts collection about durable AI et
-  systèmes architecture.
+abstract: Hub de connaissance, troisieme vague organise des fiches reliées autour de le sujet "Hub
+  de connaissance, troisieme vague" dans le graphe public d'Electronic Artefacts, afin de donner une
+  progression lisible aux archives de connaissance d'Electronic Artefacts.
+description: Hub de connaissance, troisieme vague organise des fiches reliées autour de le sujet
+  "Hub de connaissance, troisieme vague" dans le graphe public d'Electronic Artefacts, afin de
+  donner une progression lisible aux archives de connaissance d'Electronic Artefacts.
 locale: fr
 visibility: public
 publicationClass: published
@@ -24,9 +25,8 @@ version:
 authors:
   - id: ea:organization:electronic-artefacts
 publisher: ea:organization:electronic-artefacts
-thesis: Durable AI knowledge requires systèmes architecture, source grounding,
-  sémantique identité et human gouvernance; graphe runtimes connect those
-  concerns à Electronic Artefacts programs et projects.
+thesis: Hub de connaissance, troisieme vague propose une lecture organisee de 30 fiches reliées par
+  un même axe editorial.
 curator:
   - id: ea:organization:electronic-artefacts
 explicitMembers:
@@ -60,36 +60,35 @@ explicitMembers:
   - id: ea:technology:cloudevents
   - id: ea:technology:owl
   - id: ea:technology:skos
-selectionNote: The collection prioritizes evergreen questions avec high search
-  demand et strong structural links à VASTE, Vestiges, ORETH, Palimpsests et the
-  public Knowledge Hub.
+selectionNote: La sélection privilégie des contenus stables, reliables et utiles pour parcourir le
+  hub de connaissance en français.
 tags:
   - Knowledge Hub
   - Third Wave
-  - Intelligence artificielle
-  - Systèmes Architecture
-  - Graphe Computing
+  - intelligence artificielle
+  - Systems Architecture
+  - Graph Computing
 disciplines:
-  - Intelligence artificielle
-  - Systèmes Design
-  - Systèmes de connaissance
-  - Software Architecture
+  - intelligence artificielle
+  - conception de systèmes
+  - Knowledge Systems
+  - architecture logicielle
   - Creative Technology
 translationOf: ea:collection:knowledge-hub-third-wave
 ---
 
 ## Intention
 
-Hub de connaissance, troisième vague est documenté ici comme une entrée française du graphe public d’Electronic Artefacts. Knowledge Hub Third Wave groups a major expansion across LLMs, AI agents, local AI, RAG, multimodal systèmes, systèmes thinking, ontologies, graphe modèleing, event streams, Redis, microservices et domain runtimes.
+Hub de connaissance, troisieme vague rassemble des fiches qui partagent un même axe de lecture autour de le sujet "Hub de connaissance, troisieme vague" dans le graphe public d'Electronic Artefacts.
 
-## Sélection
+## Selection
 
-The collection prioritizes evergreen questions avec high search demand et strong structural links à VASTE, Vestiges, ORETH, Palimpsests et the public Knowledge Hub.
+La collection organise les contenus par proximité éditoriale, par utilité de navigation et par potentiel de liens internes. Elle permet de parcourir le hub de connaissance sans perdre la cohérence du sujet.
 
 ## Usage
 
-Cette collection facilite la navigation entre des objets liés et donne une entrée française cohérente aux archives de connaissance.
+Cette entrée sert de repère pour explorer plusieurs publications ou notions depuis une même page française.
 
 ## Références
 
-Les références principales sont conservées dans la fiche canonique et dans le graphe de connaissance public.
+Les sources associées sont conservées dans la fiche canonique du graphe.

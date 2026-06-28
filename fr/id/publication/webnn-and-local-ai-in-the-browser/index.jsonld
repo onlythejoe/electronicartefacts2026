@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/publications/webnn-and-local-ai-in-the-browser/#webpage",
       "url": "https://electronicartefacts.com/fr/publications/webnn-and-local-ai-in-the-browser/",
       "name": "WebNN et IA locale dans le navigateur",
-      "description": "Understand WebNN comme a navigateur API pour hardware-accelerated neural-network inference et local AI interaction design.",
+      "description": "WebNN et IA locale dans le navigateur propose une synthèse claire en français sur le sujet \"WebNN et IA locale dans le navigateur\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
@@ -35,8 +35,8 @@
       "identifier": "ea:publication:webnn-and-local-ai-in-the-browser-fr",
       "name": "WebNN et IA locale dans le navigateur",
       "headline": "WebNN et IA locale dans le navigateur",
-      "abstract": "A practical explanation de WebNN, navigateur-local inference, hardware acceleration, privacy limits, creative outils et web machine-learning architecture.",
-      "description": "A practical explanation de WebNN, navigateur-local inference, hardware acceleration, privacy limits, creative outils et web machine-learning architecture.",
+      "abstract": "WebNN et IA locale dans le navigateur propose une synthèse claire en français sur le sujet \"WebNN et IA locale dans le navigateur\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
+      "description": "WebNN et IA locale dans le navigateur propose une synthèse claire en français sur le sujet \"WebNN et IA locale dans le navigateur\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
       "url": "https://electronicartefacts.com/fr/publications/webnn-and-local-ai-in-the-browser/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/publications/webnn-and-local-ai-in-the-browser/#webpage"
@@ -58,13 +58,12 @@
       ],
       "keywords": [
         "WebNN",
-        "Navigateur AI",
+        "Browser AI",
         "Local Inference",
         "Web Machine Learning",
-        "HCI",
-        "Intelligence artificielle",
+        "interaction humain-machine",
+        "intelligence artificielle",
         "Web Development",
-        "Human Computer Interaction",
         "Creative Technology"
       ],
       "inLanguage": "fr",
@@ -78,9 +77,9 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 180,
+      "wordCount": 145,
       "citation": [
-        "Electronic Artefacts. \"WebNN et Local AI dans the Navigateur.\" Technical article, version 1.0.0, 2026.",
+        "Electronic Artefacts. \"WebNN et IA locale dans le navigateur\". Article technique, version 1.0.0, 2026.",
         {
           "@type": "CreativeWork",
           "name": "Web Neural Network API",
@@ -90,7 +89,7 @@
         },
         {
           "@type": "CreativeWork",
-          "name": "Ethical Principles pour Web Machine Learning",
+          "name": "Ethical Principles for Web Machine Learning",
           "url": "https://www.w3.org/TR/webmachinelearning-ethics/",
           "publisher": "W3C"
         },
@@ -127,12 +126,12 @@
         }
       ],
       "articleSection": [
-        "Intelligence artificielle",
+        "intelligence artificielle",
         "Web Development",
-        "Human Computer Interaction",
+        "interaction humain-machine",
         "Creative Technology",
         "WebNN",
-        "Navigateur AI"
+        "Browser AI"
       ],
       "timeRequired": "PT1M",
       "isBasedOn": [
@@ -145,7 +144,7 @@
         },
         {
           "@type": "CreativeWork",
-          "name": "Ethical Principles pour Web Machine Learning",
+          "name": "Ethical Principles for Web Machine Learning",
           "url": "https://www.w3.org/TR/webmachinelearning-ethics/",
           "publisher": "W3C"
         },

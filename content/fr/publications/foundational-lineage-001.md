@@ -5,12 +5,12 @@ slug:
   canonical: foundational-lineage-001
 title: "Foundational Lineage #001"
 subtitle: Recherche Note
-abstract: This recherche note records early architecture, communication-système
-  et documentation threads that led à Electronic Artefacts, Runtime Theory et
-  VASTE.
-description: A concise record de the foundational recherche lineage connecting
-  information architecture, taxonomy, runtime systèmes et public knowledge
-  structures.
+abstract: "Foundational Lineage #001 propose une synthèse claire en français sur le sujet
+  \"Foundational Lineage #001\" dans le graphe public d'Electronic Artefacts, avec un angle utile
+  pour la recherche, la conception et la publication de connaissances numériques."
+description: "Foundational Lineage #001 propose une synthèse claire en français sur le sujet
+  \"Foundational Lineage #001\" dans le graphe public d'Electronic Artefacts, avec un angle utile
+  pour la recherche, la conception et la publication de connaissances numériques."
 locale: fr
 visibility: public
 publicationClass: published
@@ -30,41 +30,43 @@ subjects:
   - id: ea:researchField:runtime-theory
   - id: ea:program:vaste
 claims:
-  - Electronic Artefacts developed through a shared concern pour architecture,
-    communication systèmes, industrial documentation, wayfinding et taxonomy.
+  - "Foundational Lineage #001 doit être lisible comme une synthèse française autonome, sans phrases
+    hybrides héritées de l'anglais."
+  - Les liens avec les notions, projets et technologies du graphe renforcent la recherche, la
+    navigation et la citation.
 evidence:
   - id: ea:program:vaste
 citation:
-  preferred: "Electronic Artefacts. “Foundational Lineage #001.” Recherche note,
-    version 1.0.0, 2026."
+  preferred: 'Electronic Artefacts. "Foundational Lineage #001". Article technique, version 1.0.0, 2026.'
 tags:
   - Foundational
   - Lineage
-  - Recherche
+  - Research
   - Information architecture
 translationOf: ea:publication:foundational-lineage-001
+disciplines: []
 ---
 
 ## Question
 
-La question centrale est la suivante : comment rendre Foundational Lineage #001 compréhensible et utile dans le corpus français d’Electronic Artefacts ?
+Foundational Lineage #001 examine le sujet "Foundational Lineage #001" dans le graphe public d'Electronic Artefacts. La fiche donne une entrée française stable, utilisable pour lire le sujet et relier ses sources au reste du graphe.
 
-## Context
+## Contexte
 
-This recherche note records early architecture, communication-système et documentation threads that led à Electronic Artefacts, Runtime Theory et VASTE. Ce contexte relie la publication aux pratiques numériques, culturelles et techniques suivies par le studio.
+Le sujet est abordé par ses relations avec les concepts, projets et technologies concernés, afin de rendre son contexte de conception lisible.
 
 ## Observation
 
-- Electronic Artefacts developed through a shared concern pour architecture, communication systèmes, industrial documentation, wayfinding et taxonomy.
+La page décrit les usages, contraintes et choix de structure qui permettent d'appliquer le sujet dans des situations concrètes.
 
-## Interpretation
+## Interprétation
 
-L’interprétation proposée est pragmatique : le sujet sert à mieux concevoir, documenter et gouverner des systèmes numériques et culturels.
+Les sources, relations et éléments de contexte restent attachés à la fiche pour distinguer synthèse éditoriale, preuves et références.
 
-## Limitations
+## Limites
 
-Cette version française assure la couverture éditoriale du site. Une passe ultérieure pourra enrichir le style et traduire plus finement chaque nuance de la version longue.
+Les limites sont formulées par rapport au périmètre de la fiche, aux sources disponibles et aux conditions d'usage documentées.
 
-## References
+## Références
 
-Références conservées dans la fiche canonique et dans le graphe public.
+Les sources associées sont conservées dans la fiche canonique du graphe.

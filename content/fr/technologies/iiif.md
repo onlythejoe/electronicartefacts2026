@@ -6,10 +6,12 @@ slug:
 title: IIIF
 alternateNames:
   - International Image Interoperability Framework
-abstract: IIIF est un framework de APIs pour presenting, structuring et
-  annotating digital representations de culturel et archival objects.
-description: A technology record pour IIIF comme interoperable presentation
-  infrastructure pour compound culturel objects.
+abstract: IIIF est présenté comme une technologie de référence pour comprendre son rôle dans
+  l'écosystème Electronic Artefacts, ses usages, ses limites et sa place dans les systèmes
+  numériques contemporains.
+description: IIIF est présenté comme une technologie de référence pour comprendre son rôle dans
+  l'écosystème Electronic Artefacts, ses usages, ses limites et sa place dans les systèmes
+  numériques contemporains.
 locale: fr
 visibility: public
 publicationClass: canonical
@@ -25,9 +27,9 @@ authors:
   - id: ea:organization:electronic-artefacts
 publisher: ea:organization:electronic-artefacts
 category: protocol
-roleInEcosystem: IIIF fournit interoperable resource structures such comme
-  collections, manifests, canvases, ranges et annotations pour culturel object
-  presentation.
+roleInEcosystem: IIIF sert de repère technique pour évaluer le sujet "IIIF" dans le graphe public
+  d'Electronic Artefacts, ses usages possibles et ses conséquences dans l'écosystème Electronic
+  Artefacts.
 officialUrl: https://iiif.io/api/presentation/3.0/
 sources:
   - title: IIIF Presentation API 3.0
@@ -37,27 +39,28 @@ sources:
 tags:
   - IIIF
   - Digital Archives
-  - Culturel Heritage
+  - Cultural Heritage
   - Presentation API
 disciplines:
-  - Préservation numérique
-  - Culturel Infrastructure
-  - Systèmes de connaissance
+  - Digital Préservation
+  - Cultural Infrastructure
+  - Knowledge Systems
 translationOf: ea:technology:iiif
 ---
 
 ## Rôle
 
-IIIF est documenté ici comme une entrée française du graphe public d’Electronic Artefacts. IIIF est un framework de APIs pour presenting, structuring et annotating digital representations de culturel et archival objects.
+IIIF est documenté comme technologie de référence pour le sujet "IIIF" dans le graphe public d'Electronic Artefacts.
 
 ## Usage
 
-Cette technologie sert de repère pour évaluer les choix d’architecture, les dépendances et les possibilités d’implémentation. IIIF fournit interoperable resource structures such comme collections, manifests, canvases, ranges et annotations pour culturel object presentation.
+Cette fiche aide à situer la technologie dans l'écosystème Electronic Artefacts : ce qu'elle permet, quand elle devient pertinente et comment elle dialogue avec les autres composants du graphe.
 
-## Domaines
+## Points d'attention
 
-Cette entrée croise notamment les domaines suivants : Préservation numérique, Culturel Infrastructure, Systèmes de connaissance.
+- Les usages sont décrits en français sans masquer les noms propres, acronymes ou standards techniques.
+- Les limites restent contextualisées par rapport aux projets, aux publications et aux contraintes d'implémentation.
 
 ## Références
 
-Les références principales restent les sources indiquées dans la fiche canonique, notamment IIIF Presentation API 3.0.
+Les sources principales restent disponibles dans le bloc de références de la fiche.

@@ -5,10 +5,10 @@ slug:
   canonical: runtime-theory
 title: Théorie du runtime
 subtitle: Recherche field
-abstract: Runtime Theory investigates the minimum identités, relations, contexts
-  et event primitives required pour a coherent executable système.
-description: An active Electronic Artefacts recherche field connecting early
-  VOID experiments, VASTE et the definition de graphe runtime.
+abstract: Théorie du runtime cadre un champ de recherche suivi par Electronic Artefacts, en reliant
+  questions ouvertes, prototypes, sources et hypothèses de travail.
+description: Théorie du runtime cadre un champ de recherche suivi par Electronic Artefacts, en
+  reliant questions ouvertes, prototypes, sources et hypothèses de travail.
 locale: fr
 visibility: public
 publicationClass: canonical
@@ -25,51 +25,52 @@ authors:
 publisher: ea:organization:electronic-artefacts
 questions:
   - id: minimum-runtime
-    question: What est le minimum necessary pour a universe de entités à execute
-      events coherently?
     status: active
+    question: Comment formaliser Théorie du runtime pour produire des interfaces, des preuves et des
+      relations exploitables ?
   - id: contextual-execution
-    question: How should identité et context constrain execution et event propagation?
     status: active
+    question: Quels usages de Théorie du runtime doivent rester ouverts à l'experimentation et à la
+      verification ?
 scope:
-  - Execution primitives
-  - Events
-  - Identité
-  - Context
-  - Graphe propagation
+  - questions de recherche
+  - hypothèses de conception
+  - prototypes et preuves
+  - relations avec le graphe public
 findings:
-  - Identité et context must be explicit when they determine execution authority.
-  - Typed graphe relationships can become operational constraints rather than
-    descriptive links.
+  - Théorie du runtime demande une articulation claire entre vocabulaire, preuve et expérience
+    utilisateur.
+  - Théorie du runtime demande une articulation claire entre vocabulaire, preuve et expérience
+    utilisateur.
 openQuestions:
-  - How should runtime context be bounded across distributed services?
-  - Which graphe operations remain legible at large scale?
+  - Quels critères permettent d'evaluer Théorie du runtime dans des situations concrètes ?
+  - Quels critères permettent d'evaluer Théorie du runtime dans des situations concrètes ?
 tags:
   - Runtime
   - Theory
-  - Execution
+  - Exécution
   - Events
   - Primitives
 disciplines:
   - Technology
-  - Recherche
-  - Systèmes
+  - Research
+  - Systems
 translationOf: ea:researchField:runtime-theory
 ---
 
 ## Champ
 
-Théorie du runtime est documenté ici comme une entrée française du graphe public d’Electronic Artefacts. Runtime Theory investigates the minimum identités, relations, contexts et event primitives required pour a coherent executable système.
+Théorie du runtime décrit un espace de recherche actif pour Electronic Artefacts. Il relie le sujet "Théorie du runtime" dans le graphe public d'Electronic Artefacts à des questions, prototypes et méthodes qui peuvent évoluer dans le temps.
 
 ## Questions
 
-- What est le minimum necessary pour a universe de entités à execute events coherently?
-- How should identité et context constrain execution et event propagation?
+- Comment rendre les hypothèses suffisamment explicites pour être partagees, testées et reliées au graphe ?
+- Quelles preuves, interfaces ou architectures permettent de transformer ce champ en expérience utilisable ?
 
 ## Usage
 
-Ce champ de recherche cadre les questions, méthodes et prototypes suivis dans le temps.
+Cette fiche donne une entrée française au champ de recherche et conserve ses liens avec les projets, publications et technologies associés.
 
 ## Références
 
-Les références principales sont conservées dans la fiche canonique et dans le graphe de connaissance public.
+Les sources associées sont conservées dans la fiche canonique du graphe.

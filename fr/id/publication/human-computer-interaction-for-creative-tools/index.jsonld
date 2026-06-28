@@ -5,15 +5,15 @@
       "@type": "WebPage",
       "@id": "https://electronicartefacts.com/fr/publications/human-computer-interaction-for-creative-tools/#webpage",
       "url": "https://electronicartefacts.com/fr/publications/human-computer-interaction-for-creative-tools/",
-      "name": "Human Computer Interaction for Creative Tools",
-      "description": "A technical article on HCI, creative outils, interface design, augmented intelligence, accessibility et Electronic Artefacts systèmes.",
+      "name": "Interaction humain-machine pour les outils créatifs",
+      "description": "Interaction humain-machine pour les outils créatifs propose une synthèse claire en français sur le sujet \"Interaction humain-machine pour les outils créatifs\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
       "primaryImageOfPage": {
         "@type": "ImageObject",
         "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-search.jpg",
-        "description": "Human Computer Interaction for Creative Tools"
+        "description": "Interaction humain-machine pour les outils créatifs"
       },
       "breadcrumb": {
         "@id": "https://electronicartefacts.com/fr/publications/human-computer-interaction-for-creative-tools/#breadcrumb"
@@ -33,10 +33,10 @@
       "@type": "TechArticle",
       "@id": "https://electronicartefacts.com/fr/id/publication/human-computer-interaction-for-creative-tools/",
       "identifier": "ea:publication:human-computer-interaction-for-creative-tools-fr",
-      "name": "Human Computer Interaction for Creative Tools",
-      "headline": "Human Computer Interaction for Creative Tools",
-      "abstract": "This article explains HCI pour creative outils, focusing on feedback, agency, flow, error recovery, accessibility, augmented intelligence et computational médias.",
-      "description": "This article explains HCI pour creative outils, focusing on feedback, agency, flow, error recovery, accessibility, augmented intelligence et computational médias.",
+      "name": "Interaction humain-machine pour les outils créatifs",
+      "headline": "Interaction humain-machine pour les outils créatifs",
+      "abstract": "Interaction humain-machine pour les outils créatifs propose une synthèse claire en français sur le sujet \"Interaction humain-machine pour les outils créatifs\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
+      "description": "Interaction humain-machine pour les outils créatifs propose une synthèse claire en français sur le sujet \"Interaction humain-machine pour les outils créatifs\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
       "url": "https://electronicartefacts.com/fr/publications/human-computer-interaction-for-creative-tools/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/publications/human-computer-interaction-for-creative-tools/#webpage"
@@ -44,7 +44,7 @@
       "image": {
         "@type": "ImageObject",
         "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-search.jpg",
-        "description": "Human Computer Interaction for Creative Tools"
+        "description": "Interaction humain-machine pour les outils créatifs"
       },
       "author": [
         {
@@ -57,14 +57,13 @@
         }
       ],
       "keywords": [
-        "HCI",
-        "Creative Outils",
-        "Intelligence augmentée",
-        "Accessibility",
-        "Human Computer Interaction",
-        "Design",
-        "Programmation créative",
-        "Intelligence artificielle"
+        "interaction humain-machine",
+        "outils créatifs",
+        "intelligence augmentée",
+        "accessibilité",
+        "design",
+        "programmation créative",
+        "intelligence artificielle"
       ],
       "inLanguage": "fr",
       "dateCreated": "2026-06-24",
@@ -77,9 +76,9 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 159,
+      "wordCount": 143,
       "citation": [
-        "Electronic Artefacts. \"Human Computer Interaction pour Creative Outils.\" Technical article, version 1.0.0, 2026.",
+        "Electronic Artefacts. \"Interaction humain-machine pour les outils créatifs\". Article technique, version 1.0.0, 2026.",
         {
           "@type": "CreativeWork",
           "name": "Augmenting Human Intellect",
@@ -121,12 +120,12 @@
         }
       ],
       "articleSection": [
-        "Human Computer Interaction",
-        "Design",
-        "Programmation créative",
-        "Intelligence artificielle",
-        "HCI",
-        "Creative Outils"
+        "interaction humain-machine",
+        "design",
+        "programmation créative",
+        "intelligence artificielle",
+        "outils créatifs",
+        "intelligence augmentée"
       ],
       "timeRequired": "PT1M",
       "isBasedOn": [
@@ -250,7 +249,7 @@
         {
           "@type": "ListItem",
           "position": 3,
-          "name": "Human Computer Interaction for Creative Tools",
+          "name": "Interaction humain-machine pour les outils créatifs",
           "item": "https://electronicartefacts.com/fr/publications/human-computer-interaction-for-creative-tools/"
         }
       ]

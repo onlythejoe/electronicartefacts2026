@@ -7,8 +7,8 @@
   },
   "title": "Théorie du runtime",
   "subtitle": "Recherche field",
-  "abstract": "Runtime Theory investigates the minimum identités, relations, contexts et event primitives required pour a coherent executable système.",
-  "description": "An active Electronic Artefacts recherche field connecting early VOID experiments, VASTE et the definition de graphe runtime.",
+  "abstract": "Théorie du runtime cadre un champ de recherche suivi par Electronic Artefacts, en reliant questions ouvertes, prototypes, sources et hypothèses de travail.",
+  "description": "Théorie du runtime cadre un champ de recherche suivi par Electronic Artefacts, en reliant questions ouvertes, prototypes, sources et hypothèses de travail.",
   "locale": "fr",
   "visibility": "public",
   "publicationClass": "canonical",
@@ -30,43 +30,42 @@
   "tags": [
     "Runtime",
     "Theory",
-    "Execution",
+    "Exécution",
     "Events",
     "Primitives"
   ],
   "disciplines": [
     "Technology",
-    "Recherche",
-    "Systèmes"
+    "Research",
+    "Systems"
   ],
   "questions": [
     {
       "id": "minimum-runtime",
-      "question": "What est le minimum necessary pour a universe de entités à execute events coherently?",
+      "question": "Comment formaliser Théorie du runtime pour produire des interfaces, des preuves et des relations exploitables ?",
       "status": "active"
     },
     {
       "id": "contextual-execution",
-      "question": "How should identité et context constrain execution et event propagation?",
+      "question": "Quels usages de Théorie du runtime doivent rester ouverts à l'experimentation et à la verification ?",
       "status": "active"
     }
   ],
   "scope": [
-    "Execution primitives",
-    "Events",
-    "Identité",
-    "Context",
-    "Graphe propagation"
+    "questions de recherche",
+    "hypothèses de conception",
+    "prototypes et preuves",
+    "relations avec le graphe public"
   ],
   "findings": [
-    "Identité et context must be explicit when they determine execution authority.",
-    "Typed graphe relationships can become operational constraints rather than descriptive links."
+    "Théorie du runtime demande une articulation claire entre vocabulaire, preuve et expérience utilisateur.",
+    "Théorie du runtime demande une articulation claire entre vocabulaire, preuve et expérience utilisateur."
   ],
   "openQuestions": [
-    "How should runtime context be bounded across distributed services?",
-    "Which graphe operations remain legible at large scale?"
+    "Quels critères permettent d'evaluer Théorie du runtime dans des situations concrètes ?",
+    "Quels critères permettent d'evaluer Théorie du runtime dans des situations concrètes ?"
   ],
-  "bodyHtml": "<h2 id=\"champ\">Champ</h2>\n<p>Théorie du runtime est documenté ici comme une entrée française du graphe public d’Electronic Artefacts. Runtime Theory investigates the minimum identités, relations, contexts et event primitives required pour a coherent executable système.</p>\n<h2 id=\"questions\">Questions</h2>\n<ul>\n<li>What est le minimum necessary pour a universe de entités à execute events coherently?</li>\n<li>How should identité et context constrain execution et event propagation?</li>\n</ul>\n<h2 id=\"usage\">Usage</h2>\n<p>Ce champ de recherche cadre les questions, méthodes et prototypes suivis dans le temps.</p>\n<h2 id=\"references\">Références</h2>\n<p>Les références principales sont conservées dans la fiche canonique et dans le graphe de connaissance public.</p>\n",
+  "bodyHtml": "<h2 id=\"champ\">Champ</h2>\n<p>Théorie du runtime décrit un espace de recherche actif pour Electronic Artefacts. Il relie le sujet “Théorie du runtime” dans le graphe public d’Electronic Artefacts à des questions, prototypes et méthodes qui peuvent évoluer dans le temps.</p>\n<h2 id=\"questions\">Questions</h2>\n<ul>\n<li>Comment rendre les hypothèses suffisamment explicites pour être partagees, testées et reliées au graphe ?</li>\n<li>Quelles preuves, interfaces ou architectures permettent de transformer ce champ en expérience utilisable ?</li>\n</ul>\n<h2 id=\"usage\">Usage</h2>\n<p>Cette fiche donne une entrée française au champ de recherche et conserve ses liens avec les projets, publications et technologies associés.</p>\n<h2 id=\"references\">Références</h2>\n<p>Les sources associées sont conservées dans la fiche canonique du graphe.</p>\n",
   "headings": [
     "Champ",
     "Questions",

@@ -3,6 +3,8 @@
   "type": "module",
   "scripts": {
     "build": "npm run validate && tsx scripts/build-site.ts && node scripts/build-seo.mjs && node scripts/build-i18n-pages.mjs && node scripts/build-assets.mjs && node scripts/report-i18n.mjs",
+    "audit:language": "node scripts/audit-language-surface.mjs",
+    "audit:seo": "node scripts/audit-seo-surface.mjs",
     "i18n:report": "node scripts/report-i18n.mjs",
     "seo": "node scripts/build-seo.mjs",
     "validate": "tsx scripts/validate-content.ts",

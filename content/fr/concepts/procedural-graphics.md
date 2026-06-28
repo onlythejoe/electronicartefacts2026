@@ -3,13 +3,15 @@ id: ea:concept:procedural-graphics-fr
 type: concept
 slug:
   canonical: procedural-graphics
-title: Graphisme procédural
-definition: Procedural grapheics sont images ou visuel systèmes generated from
-  rules, algorithms, parameters, simulation ou code rather than only manually
-  drawn assets.
-abstract: Procedural grapheics connect shaders, generative systèmes, motion
-  design, programmation créative, visuel culture et real-time web interfaces.
-description: A canonical concept record pour rule-based visuel generation.
+title: Graphisme procedural
+definition: Graphisme procedural désigne les images et formes visuelles generees par algorithmes,
+  shaders ou regles parametriques.
+abstract: Graphisme procedural définit un repère conceptuel en français pour comprendre les images
+  et formes visuelles generees par algorithmes, shaders ou regles parametriques et ses liens avec
+  les projets, technologies et publications du graphe.
+description: Graphisme procedural définit un repère conceptuel en français pour comprendre les
+  images et formes visuelles generees par algorithmes, shaders ou regles parametriques et ses liens
+  avec les projets, technologies et publications du graphe.
 locale: fr
 visibility: public
 publicationClass: canonical
@@ -25,45 +27,43 @@ authors:
   - id: ea:organization:electronic-artefacts
 publisher: ea:organization:electronic-artefacts
 scope:
-  - Shaders
-  - Generative visuels
-  - Simulation
-  - WebGL
-  - Creative coding
+  - définition du sujet
+  - contexte d'usage
+  - liens avec le graphe
+  - références associées
 exclusions:
-  - Static illustration exported from manual design software avec no procedural
-    layer
-  - Randomized decoration avec no coherent visuel système
+  - les usages purement promotionnels sans définition vérifiable
+  - les exemples déconnectés des sources, relations ou contraintes du graphe
 claims:
-  - Procedural grapheics sont strongest when parameters express a visuel grammar
-    rather than arbitrary variation.
-  - Preservation de procedural visuels requires code, parameters, runtime
-    context et output records.
+  - Graphisme procedural devient utile lorsque sa définition reste reliée à des sources, des
+    pratiques et des objets observables.
+  - La fiche sert de vocabulaire commun pour relier projets, publications et technologies sans
+    mélanger les langues.
 tags:
-  - Graphisme procédural
+  - Procedural Graphics
   - Shaders
   - WebGL
   - Generative Art
 disciplines:
-  - Programmation créative
-  - Visuel Culture
+  - programmation créative
+  - Visual Culture
   - Digital Art
-  - Motion design
+  - Motion Design
 translationOf: ea:concept:procedural-graphics
 ---
 
 ## Rôle
 
-Graphisme procédural est documenté ici comme une entrée française du graphe public d’Electronic Artefacts. Procedural grapheics connect shaders, generative systèmes, motion design, programmation créative, visuel culture et real-time web interfaces.
+Graphisme procedural est documenté comme notion de référence pour comprendre les images et formes visuelles generees par algorithmes, shaders ou regles parametriques.
 
 ## Usage
 
-Cette notion sert à relier les projets, publications et technologies qui partagent un même vocabulaire de conception. Procedural grapheics sont images ou visuel systèmes generated from rules, algorithms, parameters, simulation ou code rather than only manually drawn assets.
+Cette fiche relie la notion aux projets, publications et technologies qui partagent un même vocabulaire de conception. Elle sert de point d'appui pour naviguer dans le graphe en version française.
 
-## Domaines
+## Périmètre
 
-Cette entrée croise notamment les domaines suivants : Programmation créative, Visuel Culture, Digital Art, Motion design.
+La notion est abordée par ses définitions, ses usages, ses limites et ses relations avec les autres objets documentés.
 
 ## Références
 
-Les références principales sont conservées dans la fiche canonique et dans le graphe de connaissance public.
+Les sources associées sont conservées dans la fiche canonique du graphe.

@@ -4,12 +4,14 @@ type: concept
 slug:
   canonical: typography
 title: Typographie
-definition: Typographey est le design et arrangement de written language through
-  typefaces, spacing, hierarchy, rhythm, scale et reading conditions.
-abstract: Typographey relie design, reading systèmes, accessibility, visuel
-  culture, web interfaces et long-form knowledge publishing.
-description: A canonical concept record pour typographey dans digital interfaces
-  et culturel publishing.
+definition: Typographie désigne la composition du texte par caracteres, espacements, hierarchie,
+  rythme et conditions de lecture.
+abstract: Typographie définit un repère conceptuel en français pour comprendre la composition du
+  texte par caracteres, espacements, hierarchie, rythme et conditions de lecture et ses liens avec
+  les projets, technologies et publications du graphe.
+description: Typographie définit un repère conceptuel en français pour comprendre la composition du
+  texte par caracteres, espacements, hierarchie, rythme et conditions de lecture et ses liens avec
+  les projets, technologies et publications du graphe.
 locale: fr
 visibility: public
 publicationClass: canonical
@@ -25,49 +27,48 @@ authors:
   - id: ea:organization:electronic-artefacts
 publisher: ea:organization:electronic-artefacts
 scope:
-  - Reading systèmes
-  - Typefaces
-  - Layout
-  - Accessibility
-  - Interface hierarchy
+  - définition du sujet
+  - contexte d'usage
+  - liens avec le graphe
+  - références associées
 exclusions:
-  - Font selection avec no concern pour reading, hierarchy ou context
-  - Decorative lettering unrelated à content structure
+  - les usages purement promotionnels sans définition vérifiable
+  - les exemples déconnectés des sources, relations ou contraintes du graphe
 claims:
-  - Typographey is infrastructure pour knowledge because it shapes reading,
-    scanning et comprehension.
-  - Digital typographey must account pour responsive layouts, accessibility et
-    long-term rendering conditions.
+  - Typographie devient utile lorsque sa définition reste reliée à des sources, des pratiques et des
+    objets observables.
+  - La fiche sert de vocabulaire commun pour relier projets, publications et technologies sans
+    mélanger les langues.
 sources:
   - title: CSS Fonts Module Level 4
     publisher: W3C
     accessedAt: 2026-06-24
     url: https://www.w3.org/TR/css-fonts-4/
 tags:
-  - Typographie
+  - Typography
   - Reading
   - Interface Design
-  - Accessibility
+  - accessibilité
 disciplines:
-  - Typographie
-  - Design
-  - Visuel Culture
+  - Typography
+  - design
+  - Visual Culture
   - Web Development
 translationOf: ea:concept:typography
 ---
 
 ## Rôle
 
-Typographie est documenté ici comme une entrée française du graphe public d’Electronic Artefacts. Typographey relie design, reading systèmes, accessibility, visuel culture, web interfaces et long-form knowledge publishing.
+Typographie est documenté comme notion de référence pour comprendre la composition du texte par caracteres, espacements, hierarchie, rythme et conditions de lecture.
 
 ## Usage
 
-Cette notion sert à relier les projets, publications et technologies qui partagent un même vocabulaire de conception. Typographey est le design et arrangement de written language through typefaces, spacing, hierarchy, rhythm, scale et reading conditions.
+Cette fiche relie la notion aux projets, publications et technologies qui partagent un même vocabulaire de conception. Elle sert de point d'appui pour naviguer dans le graphe en version française.
 
-## Domaines
+## Périmètre
 
-Cette entrée croise notamment les domaines suivants : Typographie, Design, Visuel Culture, Web Development.
+La notion est abordée par ses définitions, ses usages, ses limites et ses relations avec les autres objets documentés.
 
 ## Références
 
-Les références principales restent les sources indiquées dans la fiche canonique, notamment CSS Fonts Module Level 4.
+Les sources principales restent disponibles dans le bloc de références de la fiche.

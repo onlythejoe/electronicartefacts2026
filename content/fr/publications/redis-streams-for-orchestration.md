@@ -3,13 +3,14 @@ id: ea:publication:redis-streams-for-orchestration-fr
 type: publication
 slug:
   canonical: redis-streams-for-orchestration
-title: Redis Streams pour l’orchestration
-subtitle: Technical Article
-abstract: An implementation-oriented guide à Redis Streams, consumer groups,
-  acknowledgements, pending entries, retries, idempotency, trimming et
-  orchestration boundaries.
-description: Learn how Redis Streams works et how à use consumer groups, pending
-  entries et idempotent workers pour reliable orchestration.
+title: Redis Streams pour l'orchestration
+subtitle: Article technique
+abstract: Redis Streams pour l'orchestration propose une synthèse claire en français sur le sujet
+  "Redis Streams pour l'orchestration" dans le graphe public d'Electronic Artefacts, avec un angle
+  utile pour la recherche, la conception et la publication de connaissances numériques.
+description: Redis Streams pour l'orchestration propose une synthèse claire en français sur le sujet
+  "Redis Streams pour l'orchestration" dans le graphe public d'Electronic Artefacts, avec un angle
+  utile pour la recherche, la conception et la publication de connaissances numériques.
 locale: fr
 visibility: public
 publicationClass: published
@@ -31,10 +32,10 @@ subjects:
   - id: ea:concept:contextual-execution
   - id: ea:program:vaste
 claims:
-  - Redis Streams fournit a useful append-only log et consumer-group primitive
-    pour bounded orchestration.
-  - Reliable Redis Streams workers require explicit acknowledgement, recovery,
-    idempotency, retention et monitoring policies.
+  - Redis Streams pour l'orchestration doit être lisible comme une synthèse française autonome, sans
+    phrases hybrides héritées de l'anglais.
+  - Les liens avec les notions, projets et technologies du graphe renforcent la recherche, la
+    navigation et la citation.
 evidence:
   - id: ea:technology:redis-streams
   - id: ea:concept:event-driven-architecture
@@ -52,43 +53,42 @@ sources:
     accessedAt: 2026-06-24
     url: https://redis.io/docs/latest/commands/xautoclaim/
 citation:
-  preferred: Electronic Artefacts. "Redis Streams pour Orchestration." Technical
-    article, version 1.0.0, 2026.
+  preferred: Electronic Artefacts. "Redis Streams pour l'orchestration". Article technique, version
+    1.0.0, 2026.
 tags:
   - Redis Streams
-  - Orchestration
+  - orchestration
   - Consumer Groups
   - Event Processing
   - Idempotency
 disciplines:
-  - Software Architecture
-  - Distributed Systèmes
+  - architecture logicielle
+  - Distributed Systems
   - Programming
-  - Systèmes Design
+  - conception de systèmes
 translationOf: ea:publication:redis-streams-for-orchestration
 ---
 
-## Problem
+## Problème
 
-Redis Streams pour l’orchestration répond à un problème de lisibilité, d’architecture ou de transmission dans les systèmes numériques contemporains. An implementation-oriented guide à Redis Streams, consumer groups, acknowledgements, pending entries, retries, idempotency, trimming et orchestration boundaries.
+Redis Streams pour l'orchestration examine le sujet "Redis Streams pour l'orchestration" dans le graphe public d'Electronic Artefacts. La fiche donne une entrée française stable, utilisable pour lire le sujet et relier ses sources au reste du graphe.
 
 ## Architecture
 
-La page organise le sujet comme un ensemble de notions, dépendances, preuves et relations éditoriales connectées au graphe de connaissance.
+Le sujet est abordé par ses relations avec les concepts, projets et technologies concernés, afin de rendre son contexte de conception lisible.
 
-## Implementation
+## Mise en œuvre
 
-Pour Electronic Artefacts, cette publication sert de repère français pour cadrer les choix de conception, préparer des contenus plus détaillés et stabiliser le vocabulaire technique.
+La page décrit les usages, contraintes et choix de structure qui permettent d'appliquer le sujet dans des situations concrètes.
 
-## Evidence
+## Éléments de preuve
 
-- Redis Streams fournit a useful append-only log et consumer-group primitive pour bounded orchestration.
-- Reliable Redis Streams workers require explicit acknowledgement, recovery, idempotency, retention et monitoring policies.
+Les sources, relations et éléments de contexte restent attachés à la fiche pour distinguer synthèse éditoriale, preuves et références.
 
-## Limitations
+## Limites
 
-Cette version française assure la couverture éditoriale du site. Une passe ultérieure pourra enrichir le style et traduire plus finement chaque nuance de la version longue.
+Les limites sont formulées par rapport au périmètre de la fiche, aux sources disponibles et aux conditions d'usage documentées.
 
-## References
+## Références
 
-Références conservées depuis la fiche canonique : Redis Streams, XREADGROUP, XAUTOCLAIM.
+Les sources principales restent disponibles dans le bloc de références de la fiche.

@@ -6,9 +6,9 @@
     "canonical": "c2pa-content-credentials-and-generative-media-provenance"
   },
   "title": "C2PA, Content Credentials et provenance des médias génératifs",
-  "subtitle": "Technical Article",
-  "abstract": "A practical explanation de C2PA, Content Credentials, signed médias manifests, provenance claims, trust limits et archive use.",
-  "description": "Understand C2PA et Content Credentials pour médias provenance, generative AI labelling, archive trust et culturel production workflows.",
+  "subtitle": "Article technique",
+  "abstract": "C2PA, Content Credentials et provenance des médias génératifs propose une synthèse claire en français sur le sujet \"C2PA, Content Credentials et provenance des médias génératifs\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
+  "description": "C2PA, Content Credentials et provenance des médias génératifs propose une synthèse claire en français sur le sujet \"C2PA, Content Credentials et provenance des médias génératifs\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
   "locale": "fr",
   "visibility": "public",
   "publicationClass": "published",
@@ -31,14 +31,14 @@
     "C2PA",
     "Content Credentials",
     "Provenance",
-    "IA générative",
-    "Préservation numérique"
+    "Generative AI",
+    "Digital Préservation"
   ],
   "disciplines": [
-    "Préservation numérique",
-    "Intelligence artificielle",
-    "Systèmes de connaissance",
-    "Culturel Infrastructure"
+    "Digital Préservation",
+    "intelligence artificielle",
+    "Knowledge Systems",
+    "Cultural Infrastructure"
   ],
   "sources": [
     {
@@ -79,8 +79,8 @@
     }
   ],
   "claims": [
-    "C2PA can strengthen médias provenance by carrying signed assertions, but it does not prove that the content is true ou culturelly meaningful.",
-    "Archive workflows should treat Content Credentials comme one evidence layer alongside source records, rights métadonnées, fixity et editorial interpretation."
+    "C2PA, Content Credentials et provenance des médias génératifs doit être lisible comme une synthèse française autonome, sans phrases hybrides héritées de l'anglais.",
+    "Les liens avec les notions, projets et technologies du graphe renforcent la recherche, la navigation et la citation."
   ],
   "evidence": [
     {
@@ -91,22 +91,22 @@
     }
   ],
   "citation": {
-    "preferred": "Electronic Artefacts. \"C2PA Content Credentials et Generative Médias Provenance.\" Technical article, version 1.0.0, 2026."
+    "preferred": "Electronic Artefacts. \"C2PA, Content Credentials et provenance des médias génératifs\". Article technique, version 1.0.0, 2026."
   },
-  "bodyHtml": "<h2 id=\"problem\">Problem</h2>\n<p>C2PA, Content Credentials et provenance des médias génératifs répond à un problème de lisibilité, d’architecture ou de transmission dans les systèmes numériques contemporains. A practical explanation de C2PA, Content Credentials, signed médias manifests, provenance claims, trust limits et archive use.</p>\n<h2 id=\"architecture\">Architecture</h2>\n<p>La page organise le sujet comme un ensemble de notions, dépendances, preuves et relations éditoriales connectées au graphe de connaissance.</p>\n<h2 id=\"implementation\">Implementation</h2>\n<p>Pour Electronic Artefacts, cette publication sert de repère français pour cadrer les choix de conception, préparer des contenus plus détaillés et stabiliser le vocabulaire technique.</p>\n<h2 id=\"evidence\">Evidence</h2>\n<ul>\n<li>C2PA can strengthen médias provenance by carrying signed assertions, but it does not prove that the content is true ou culturelly meaningful.</li>\n<li>Archive workflows should treat Content Credentials comme one evidence layer alongside source records, rights métadonnées, fixity et editorial interpretation.</li>\n</ul>\n<h2 id=\"limitations\">Limitations</h2>\n<p>Cette version française assure la couverture éditoriale du site. Une passe ultérieure pourra enrichir le style et traduire plus finement chaque nuance de la version longue.</p>\n<h2 id=\"references\">References</h2>\n<p>Références conservées depuis la fiche canonique : C2PA Specifications 2.4, C2PA Security Considerations, W3C PROV Overview.</p>\n",
+  "bodyHtml": "<h2 id=\"probleme\">Problème</h2>\n<p>C2PA, Content Credentials et provenance des médias génératifs examine le sujet “C2PA, Content Credentials et provenance des médias génératifs” dans le graphe public d’Electronic Artefacts. La fiche donne une entrée française stable, utilisable pour lire le sujet et relier ses sources au reste du graphe.</p>\n<h2 id=\"architecture\">Architecture</h2>\n<p>Le sujet est abordé par ses relations avec les concepts, projets et technologies concernés, afin de rendre son contexte de conception lisible.</p>\n<h2 id=\"mise-en-uvre\">Mise en œuvre</h2>\n<p>La page décrit les usages, contraintes et choix de structure qui permettent d’appliquer le sujet dans des situations concrètes.</p>\n<h2 id=\"elements-de-preuve\">Éléments de preuve</h2>\n<p>Les sources, relations et éléments de contexte restent attachés à la fiche pour distinguer synthèse éditoriale, preuves et références.</p>\n<h2 id=\"limites\">Limites</h2>\n<p>Les limites sont formulées par rapport au périmètre de la fiche, aux sources disponibles et aux conditions d’usage documentées.</p>\n<h2 id=\"references\">Références</h2>\n<p>Les sources principales restent disponibles dans le bloc de références de la fiche.</p>\n",
   "headings": [
-    "Problem",
+    "Problème",
     "Architecture",
-    "Implementation",
-    "Evidence",
-    "Limitations",
-    "References"
+    "Mise en œuvre",
+    "Éléments de preuve",
+    "Limites",
+    "Références"
   ],
   "headingItems": [
     {
       "level": 2,
-      "title": "Problem",
-      "id": "problem"
+      "title": "Problème",
+      "id": "probleme"
     },
     {
       "level": 2,
@@ -115,22 +115,22 @@
     },
     {
       "level": 2,
-      "title": "Implementation",
-      "id": "implementation"
+      "title": "Mise en œuvre",
+      "id": "mise-en-uvre"
     },
     {
       "level": 2,
-      "title": "Evidence",
-      "id": "evidence"
+      "title": "Éléments de preuve",
+      "id": "elements-de-preuve"
     },
     {
       "level": 2,
-      "title": "Limitations",
-      "id": "limitations"
+      "title": "Limites",
+      "id": "limites"
     },
     {
       "level": 2,
-      "title": "References",
+      "title": "Références",
       "id": "references"
     }
   ]

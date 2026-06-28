@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/publications/contextual-execution-and-graph-runtimes/#webpage",
       "url": "https://electronicartefacts.com/fr/publications/contextual-execution-and-graph-runtimes/",
       "name": "Exécution contextuelle et runtimes de graphe",
-      "description": "A technical article connecting contextual execution, graphe runtime, Runtime Theory et VASTE.",
+      "description": "Exécution contextuelle et runtimes de graphe propose une synthèse claire en français sur le sujet \"Exécution contextuelle et runtimes de graphe\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
@@ -35,8 +35,8 @@
       "identifier": "ea:publication:contextual-execution-and-graph-runtimes-fr",
       "name": "Exécution contextuelle et runtimes de graphe",
       "headline": "Exécution contextuelle et runtimes de graphe",
-      "abstract": "This article explains contextual execution comme a runtime principle pour systèmes where identité, relations, permissions et state influence what operations can occur.",
-      "description": "This article explains contextual execution comme a runtime principle pour systèmes where identité, relations, permissions et state influence what operations can occur.",
+      "abstract": "Exécution contextuelle et runtimes de graphe propose une synthèse claire en français sur le sujet \"Exécution contextuelle et runtimes de graphe\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
+      "description": "Exécution contextuelle et runtimes de graphe propose une synthèse claire en français sur le sujet \"Exécution contextuelle et runtimes de graphe\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
       "url": "https://electronicartefacts.com/fr/publications/contextual-execution-and-graph-runtimes/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/publications/contextual-execution-and-graph-runtimes/#webpage"
@@ -57,14 +57,14 @@
         }
       ],
       "keywords": [
-        "Exécution contextuelle",
-        "Runtime de graphe",
-        "Théorie du runtime",
+        "Contextual Exécution",
+        "Graph Runtime",
+        "Runtime Theory",
         "VASTE",
-        "Systèmes Design",
+        "conception de systèmes",
         "Programming",
-        "Systèmes de connaissance",
-        "Software Architecture"
+        "Knowledge Systems",
+        "architecture logicielle"
       ],
       "inLanguage": "fr",
       "dateCreated": "2026-06-23",
@@ -77,9 +77,9 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 159,
+      "wordCount": 141,
       "citation": [
-        "Electronic Artefacts. \"Contextual Execution et Graphe Runtimes.\" Technical article, version 1.0.0, 2026."
+        "Electronic Artefacts. \"Exécution contextuelle et runtimes de graphe\". Article technique, version 1.0.0, 2026."
       ],
       "about": [
         {
@@ -107,12 +107,12 @@
         }
       ],
       "articleSection": [
-        "Systèmes Design",
+        "conception de systèmes",
         "Programming",
-        "Systèmes de connaissance",
-        "Software Architecture",
-        "Exécution contextuelle",
-        "Runtime de graphe"
+        "Knowledge Systems",
+        "architecture logicielle",
+        "Contextual Exécution",
+        "Graph Runtime"
       ],
       "timeRequired": "PT1M"
     },

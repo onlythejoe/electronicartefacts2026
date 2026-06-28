@@ -6,7 +6,7 @@
     {
       "id": "ea:concept:ai-agent-fr",
       "type": "concept",
-      "title": "Agent d’IA",
+      "title": "Agent d'IA",
       "route": "/fr/knowledge/concepts/ai-agent/",
       "status": "active",
       "confidence": "validated"

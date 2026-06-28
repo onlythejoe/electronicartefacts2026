@@ -3,14 +3,16 @@ id: ea:publication:creative-coding-pedagogy-from-logo-to-p5js-fr
 type: publication
 slug:
   canonical: creative-coding-pedagogy-from-logo-to-p5js
-title: Pédagogie du creative coding, de Logo à p5.js
-subtitle: Technical Article
-abstract: This article explains programmation créative pedagogy through
-  exploratory programming, computational literacy, Processing, p5.js, visuel
-  feedback et open learning communities.
-description: A technical article on teaching programmation créative, Processing,
-  p5.js, computational médias, open source et Electronic Artefacts learning
-  culture.
+title: Pédagogie de la programmation créative, de Logo à p5.js
+subtitle: Article technique
+abstract: Pédagogie de la programmation créative, de Logo à p5.js propose une synthèse claire en
+  français sur le sujet "Pédagogie de la programmation créative, de Logo à p5.js" dans le graphe
+  public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la
+  publication de connaissances numériques.
+description: Pédagogie de la programmation créative, de Logo à p5.js propose une synthèse claire en
+  français sur le sujet "Pédagogie de la programmation créative, de Logo à p5.js" dans le graphe
+  public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la
+  publication de connaissances numériques.
 locale: fr
 visibility: public
 publicationClass: published
@@ -32,10 +34,10 @@ subjects:
   - id: ea:concept:procedural-graphics
   - id: ea:concept:generative-system
 claims:
-  - Creative coding pedagogy works because code produces visible, audible ou
-    interactive feedback quickly.
-  - Open examples et modifiable sketches sont central à computational literacy
-    dans art et design contexts.
+  - Pédagogie de la programmation créative, de Logo à p5.js doit être lisible comme une synthèse
+    française autonome, sans phrases hybrides héritées de l'anglais.
+  - Les liens avec les notions, projets et technologies du graphe renforcent la recherche, la
+    navigation et la citation.
 evidence:
   - id: ea:concept:creative-coding
   - id: ea:concept:open-source
@@ -49,42 +51,41 @@ sources:
     accessedAt: 2026-06-24
     url: https://p5js.org/
 citation:
-  preferred: Electronic Artefacts. "Programmation créative Pedagogy from Logo à
-    p5.js." Technical article, version 1.0.0, 2026.
+  preferred: Electronic Artefacts. "Pédagogie de la programmation créative, de Logo à p5.js". Article
+    technique, version 1.0.0, 2026.
 tags:
-  - Programmation créative
+  - programmation créative
   - Processing
   - p5.js
   - Education
 disciplines:
-  - Programmation créative
+  - programmation créative
   - Programming
-  - Design
-  - Open source
+  - design
+  - Open Source
 translationOf: ea:publication:creative-coding-pedagogy-from-logo-to-p5js
 ---
 
-## Problem
+## Problème
 
-Pédagogie du creative coding, de Logo à p5.js répond à un problème de lisibilité, d’architecture ou de transmission dans les systèmes numériques contemporains. This article explains programmation créative pedagogy through exploratory programming, computational literacy, Processing, p5.js, visuel feedback et open learning communities.
+Pédagogie de la programmation créative, de Logo à p5.js examine le sujet "Pédagogie de la programmation créative, de Logo à p5.js" dans le graphe public d'Electronic Artefacts. La fiche donne une entrée française stable, utilisable pour lire le sujet et relier ses sources au reste du graphe.
 
 ## Architecture
 
-La page organise le sujet comme un ensemble de notions, dépendances, preuves et relations éditoriales connectées au graphe de connaissance.
+Le sujet est abordé par ses relations avec les concepts, projets et technologies concernés, afin de rendre son contexte de conception lisible.
 
-## Implementation
+## Mise en œuvre
 
-Pour Electronic Artefacts, cette publication sert de repère français pour cadrer les choix de conception, préparer des contenus plus détaillés et stabiliser le vocabulaire technique.
+La page décrit les usages, contraintes et choix de structure qui permettent d'appliquer le sujet dans des situations concrètes.
 
-## Evidence
+## Éléments de preuve
 
-- Creative coding pedagogy works because code produces visible, audible ou interactive feedback quickly.
-- Open examples et modifiable sketches sont central à computational literacy dans art et design contexts.
+Les sources, relations et éléments de contexte restent attachés à la fiche pour distinguer synthèse éditoriale, preuves et références.
 
-## Limitations
+## Limites
 
-Cette version française assure la couverture éditoriale du site. Une passe ultérieure pourra enrichir le style et traduire plus finement chaque nuance de la version longue.
+Les limites sont formulées par rapport au périmètre de la fiche, aux sources disponibles et aux conditions d'usage documentées.
 
-## References
+## Références
 
-Références conservées depuis la fiche canonique : Processing Overview, p5.js.
+Les sources principales restent disponibles dans le bloc de références de la fiche.

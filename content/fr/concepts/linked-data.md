@@ -4,13 +4,14 @@ type: concept
 slug:
   canonical: linked-data
 title: Données liées
-definition: Données liées est un web publishing approach that identifies things
-  avec stable URIs et relie them through machine-readable statements.
-abstract: Données liées gives public systèmes de connaissance a way à make
-  entités, pages, references et donnéessets interoperable across sites et
-  software systèmes.
-description: A canonical definition de Données liées comme it applies à
-  Electronic Artefacts, JSON-LD, RDF, SEO et public knowledge pages.
+definition: Données liées désigne les données publiees avec des identifiants et des relations
+  exploitables par le Web sémantique.
+abstract: Données liées définit un repère conceptuel en français pour comprendre les données
+  publiees avec des identifiants et des relations exploitables par le Web sémantique et ses liens
+  avec les projets, technologies et publications du graphe.
+description: Données liées définit un repère conceptuel en français pour comprendre les données
+  publiees avec des identifiants et des relations exploitables par le Web sémantique et ses liens
+  avec les projets, technologies et publications du graphe.
 locale: fr
 visibility: public
 publicationClass: canonical
@@ -26,22 +27,21 @@ authors:
   - id: ea:organization:electronic-artefacts
 publisher: ea:organization:electronic-artefacts
 scope:
-  - Stable URIs
-  - Entité identifiers
-  - RDF statements
-  - JSON-LD publication
-  - Sémantique web interoperability
+  - définition du sujet
+  - contexte d'usage
+  - liens avec le graphe
+  - références associées
 exclusions:
-  - Unstructured hyperlinks without machine-readable entité identité
-  - Private donnéesbase IDs that never resolve à public records
+  - les usages purement promotionnels sans définition vérifiable
+  - les exemples déconnectés des sources, relations ou contraintes du graphe
 claims:
-  - Données liées principles sont useful even when a site remains statically
-    generated.
-  - Public knowledge pages should distinguish the page URL from the entité
-    identifier it décrit.
+  - Données liées devient utile lorsque sa définition reste reliée à des sources, des pratiques et
+    des objets observables.
+  - La fiche sert de vocabulaire commun pour relier projets, publications et technologies sans
+    mélanger les langues.
 sources:
-  - title: Cool URIs pour the Sémantique Web
-    author: Leo Sauermann et Richard Cyganiak
+  - title: Cool URIs for the Semantic Web
+    author: Leo Sauermann and Richard Cyganiak
     publisher: W3C
     publishedAt: 2008-12-03
     accessedAt: 2026-06-23
@@ -52,13 +52,13 @@ sources:
     accessedAt: 2026-06-23
     url: https://www.w3.org/TR/json-ld11/
 tags:
-  - Données liées
-  - Sémantique Web
+  - Linked Data
+  - Semantic Web
   - JSON-LD
   - RDF
   - URI
 disciplines:
-  - Systèmes de connaissance
+  - Knowledge Systems
   - Web Development
   - SEO
   - Information Architecture
@@ -67,16 +67,16 @@ translationOf: ea:concept:linked-data
 
 ## Rôle
 
-Données liées est documenté ici comme une entrée française du graphe public d’Electronic Artefacts. Données liées gives public systèmes de connaissance a way à make entités, pages, references et donnéessets interoperable across sites et software systèmes.
+Données liées est documenté comme notion de référence pour comprendre les données publiees avec des identifiants et des relations exploitables par le Web sémantique.
 
 ## Usage
 
-Cette notion sert à relier les projets, publications et technologies qui partagent un même vocabulaire de conception. Données liées est un web publishing approach that identifies things avec stable URIs et relie them through machine-readable statements.
+Cette fiche relie la notion aux projets, publications et technologies qui partagent un même vocabulaire de conception. Elle sert de point d'appui pour naviguer dans le graphe en version française.
 
-## Domaines
+## Périmètre
 
-Cette entrée croise notamment les domaines suivants : Systèmes de connaissance, Web Development, SEO, Information Architecture.
+La notion est abordée par ses définitions, ses usages, ses limites et ses relations avec les autres objets documentés.
 
 ## Références
 
-Les références principales restent les sources indiquées dans la fiche canonique, notamment Cool URIs for the Semantic Web et JSON-LD 1.1.
+Les sources principales restent disponibles dans le bloc de références de la fiche.

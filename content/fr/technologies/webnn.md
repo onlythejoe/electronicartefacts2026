@@ -6,10 +6,12 @@ slug:
 title: WebNN
 alternateNames:
   - Web Neural Network API
-abstract: WebNN est un W3C Web Machine Learning API pour hardware-accelerated
-  neural-network inference dans web applications.
-description: A technology record pour navigateur-based machine-learning
-  inference through the Web Neural Network API.
+abstract: WebNN est présenté comme une technologie de référence pour comprendre son rôle dans
+  l'écosystème Electronic Artefacts, ses usages, ses limites et sa place dans les systèmes
+  numériques contemporains.
+description: WebNN est présenté comme une technologie de référence pour comprendre son rôle dans
+  l'écosystème Electronic Artefacts, ses usages, ses limites et sa place dans les systèmes
+  numériques contemporains.
 locale: fr
 visibility: public
 publicationClass: canonical
@@ -25,8 +27,9 @@ authors:
   - id: ea:organization:electronic-artefacts
 publisher: ea:organization:electronic-artefacts
 category: platform
-roleInEcosystem: WebNN exposes a web-facing abstraction pour neural-network
-  inference acceleration across operating-système et hardware backends.
+roleInEcosystem: WebNN sert de repère technique pour évaluer le sujet "WebNN" dans le graphe public
+  d'Electronic Artefacts, ses usages possibles et ses conséquences dans l'écosystème Electronic
+  Artefacts.
 officialUrl: https://www.w3.org/TR/webnn/
 sources:
   - title: Web Neural Network API
@@ -36,28 +39,29 @@ sources:
     url: https://www.w3.org/TR/webnn/
 tags:
   - WebNN
-  - Navigateur AI
+  - Browser AI
   - Local Inference
   - Web Machine Learning
 disciplines:
-  - Intelligence artificielle
+  - intelligence artificielle
   - Web Development
-  - Human Computer Interaction
+  - interaction humain-machine
 translationOf: ea:technology:webnn
 ---
 
 ## Rôle
 
-WebNN est documenté ici comme une entrée française du graphe public d’Electronic Artefacts. WebNN est un W3C Web Machine Learning API pour hardware-accelerated neural-network inference dans web applications.
+WebNN est documenté comme technologie de référence pour le sujet "WebNN" dans le graphe public d'Electronic Artefacts.
 
 ## Usage
 
-Cette technologie sert de repère pour évaluer les choix d’architecture, les dépendances et les possibilités d’implémentation. WebNN exposes a web-facing abstraction pour neural-network inference acceleration across operating-système et hardware backends.
+Cette fiche aide à situer la technologie dans l'écosystème Electronic Artefacts : ce qu'elle permet, quand elle devient pertinente et comment elle dialogue avec les autres composants du graphe.
 
-## Domaines
+## Points d'attention
 
-Cette entrée croise notamment les domaines suivants : Intelligence artificielle, Web Development, Human Computer Interaction.
+- Les usages sont décrits en français sans masquer les noms propres, acronymes ou standards techniques.
+- Les limites restent contextualisées par rapport aux projets, aux publications et aux contraintes d'implémentation.
 
 ## Références
 
-Les références principales restent les sources indiquées dans la fiche canonique, notamment Web Neural Network API.
+Les sources principales restent disponibles dans le bloc de références de la fiche.

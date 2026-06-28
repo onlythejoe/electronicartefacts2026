@@ -4,12 +4,14 @@ type: concept
 slug:
   canonical: human-computer-interaction
 title: Human Computer Interaction
-definition: Human computer interaction est le study et design de relationships
-  between people, computational systèmes, interfaces, tasks, environments et
-  cultures de use.
-abstract: HCI relie interface design, accessibility, creative outils, augmented
-  intelligence, software ergonomics et the social consequences de computation.
-description: A canonical concept record pour HCI comme a design et recherche discipline.
+definition: Human Computer Interaction désigne la conception des interactions entre personnes,
+  interfaces, outils et environnements informatiques.
+abstract: Human Computer Interaction définit un repère conceptuel en français pour comprendre la
+  conception des interactions entre personnes, interfaces, outils et environnements informatiques et
+  ses liens avec les projets, technologies et publications du graphe.
+description: Human Computer Interaction définit un repère conceptuel en français pour comprendre la
+  conception des interactions entre personnes, interfaces, outils et environnements informatiques et
+  ses liens avec les projets, technologies et publications du graphe.
 locale: fr
 visibility: public
 publicationClass: canonical
@@ -25,48 +27,48 @@ authors:
   - id: ea:organization:electronic-artefacts
 publisher: ea:organization:electronic-artefacts
 scope:
-  - Interface design
-  - Usability
-  - Accessibility
-  - Creative outils
-  - Augmented intelligence
+  - définition du sujet
+  - contexte d'usage
+  - liens avec le graphe
+  - références associées
 exclusions:
-  - Pure visuel styling avec no relation à interaction, cognition ou use
-  - Automation design that ignores human agency et error recovery
+  - les usages purement promotionnels sans définition vérifiable
+  - les exemples déconnectés des sources, relations ou contraintes du graphe
 claims:
-  - HCI is central à creative outils because interfaces shape what creators can
-    perceive et attempt.
-  - Good interfaces expose state, preserve agency et make recovery possible.
+  - Human Computer Interaction devient utile lorsque sa définition reste reliée à des sources, des
+    pratiques et des objets observables.
+  - La fiche sert de vocabulaire commun pour relier projets, publications et technologies sans
+    mélanger les langues.
 sources:
   - title: WCAG 2 Overview
     publisher: W3C Web Accessibility Initiative
     accessedAt: 2026-06-24
     url: https://www.w3.org/WAI/standards-guidelines/wcag/
 tags:
-  - HCI
+  - interaction humain-machine
   - Interface Design
-  - Accessibility
-  - Creative Outils
+  - accessibilité
+  - outils créatifs
 disciplines:
-  - Human Computer Interaction
-  - Design
+  - interaction humain-machine
+  - design
   - Web Development
-  - Intelligence artificielle
+  - intelligence artificielle
 translationOf: ea:concept:human-computer-interaction
 ---
 
 ## Rôle
 
-Human Computer Interaction est documenté ici comme une entrée française du graphe public d’Electronic Artefacts. HCI relie interface design, accessibility, creative outils, augmented intelligence, software ergonomics et the social consequences de computation.
+Human Computer Interaction est documenté comme notion de référence pour comprendre la conception des interactions entre personnes, interfaces, outils et environnements informatiques.
 
 ## Usage
 
-Cette notion sert à relier les projets, publications et technologies qui partagent un même vocabulaire de conception. Human computer interaction est le study et design de relationships between people, computational systèmes, interfaces, tasks, environments et cultures de use.
+Cette fiche relie la notion aux projets, publications et technologies qui partagent un même vocabulaire de conception. Elle sert de point d'appui pour naviguer dans le graphe en version française.
 
-## Domaines
+## Périmètre
 
-Cette entrée croise notamment les domaines suivants : Human Computer Interaction, Design, Web Development, Intelligence artificielle.
+La notion est abordée par ses définitions, ses usages, ses limites et ses relations avec les autres objets documentés.
 
 ## Références
 
-Les références principales restent les sources indiquées dans la fiche canonique, notamment WCAG 2 Overview.
+Les sources principales restent disponibles dans le bloc de références de la fiche.

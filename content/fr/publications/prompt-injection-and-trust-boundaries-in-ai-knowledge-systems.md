@@ -3,15 +3,16 @@ id: ea:publication:prompt-injection-and-trust-boundaries-in-ai-knowledge-systems
 type: publication
 slug:
   canonical: prompt-injection-and-trust-boundaries-in-ai-knowledge-systems
-title: Injection de prompt et frontières de confiance dans les systèmes de
-  connaissance IA
-subtitle: Technical Article
-abstract: A security-focused article on prompt injection, retrieved content,
-  outil use, MCP servers, trust boundaries, permissions et graphe-aware AI
-  workflows.
-description: Understand prompt injection dans AI systèmes de connaissance
-  through retrieval, agents, MCP outils, permissions, untrusted content et
-  contextual execution.
+title: Injection de prompt et frontieres de confiance dans les systèmes de connaissance IA
+subtitle: Article technique
+abstract: Injection de prompt et frontieres de confiance dans les systèmes de connaissance IA
+  propose une synthèse claire en français sur le sujet "Injection de prompt et frontieres de
+  confiance dans les systèmes de connaissance IA" dans le graphe public d'Electronic Artefacts, avec
+  un angle utile pour la recherche, la conception et la publication de connaissances numériques.
+description: Injection de prompt et frontieres de confiance dans les systèmes de connaissance IA
+  propose une synthèse claire en français sur le sujet "Injection de prompt et frontieres de
+  confiance dans les systèmes de connaissance IA" dans le graphe public d'Electronic Artefacts, avec
+  un angle utile pour la recherche, la conception et la publication de connaissances numériques.
 locale: fr
 visibility: public
 publicationClass: published
@@ -34,20 +35,19 @@ subjects:
   - id: ea:concept:graph-runtime
   - id: ea:technology:model-context-protocol
 claims:
-  - Prompt injection est un trust-boundary failure where untrusted content can
-    influence modèle behavior beyond its authority.
-  - AI systèmes de connaissance should treat retrieved pages, archive records et
-    outil responses comme données, while policy, permissions et outil authority
-    remain outside the modèle transcript.
+  - Injection de prompt et frontieres de confiance dans les systèmes de connaissance IA doit être
+    lisible comme une synthèse française autonome, sans phrases hybrides héritées de l'anglais.
+  - Les liens avec les notions, projets et technologies du graphe renforcent la recherche, la
+    navigation et la citation.
 evidence:
   - id: ea:concept:ai-agent
   - id: ea:technology:model-context-protocol
 sources:
-  - title: OWASP Top 10 pour Large Language Modèle Applications
+  - title: OWASP Top 10 for Large Language Model Applications
     publisher: OWASP Foundation
     accessedAt: 2026-06-25
     url: https://owasp.org/www-project-top-10-for-large-language-model-applications/
-  - title: Modèle Context Protocole Specification
+  - title: Model Context Protocol Specification
     publisher: Model Context Protocol
     accessedAt: 2026-06-25
     url: https://modelcontextprotocol.io/specification/2025-06-18
@@ -56,43 +56,42 @@ sources:
     accessedAt: 2026-06-25
     url: https://www.nist.gov/itl/ai-risk-management-framework
 citation:
-  preferred: Electronic Artefacts. "Prompt Injection et Trust Boundaries dans AI
-    Systèmes de connaissance." Technical article, version 1.0.0, 2026.
+  preferred: Electronic Artefacts. "Injection de prompt et frontieres de confiance dans les systèmes
+    de connaissance IA". Article technique, version 1.0.0, 2026.
 tags:
   - Prompt Injection
   - AI Security
-  - AI Agents
+  - agents d'IA
   - MCP
   - Trust Boundaries
 disciplines:
-  - Intelligence artificielle
+  - intelligence artificielle
   - Security
-  - Systèmes de connaissance
-  - Software Architecture
+  - Knowledge Systems
+  - architecture logicielle
 translationOf: ea:publication:prompt-injection-and-trust-boundaries-in-ai-knowledge-systems
 ---
 
-## Problem
+## Problème
 
-Injection de prompt et frontières de confiance dans les systèmes de connaissance IA répond à un problème de lisibilité, d’architecture ou de transmission dans les systèmes numériques contemporains. A security-focused article on prompt injection, retrieved content, outil use, MCP servers, trust boundaries, permissions et graphe-aware AI workflows.
+Injection de prompt et frontieres de confiance dans les systèmes de connaissance IA examine le sujet "Injection de prompt et frontieres de confiance dans les systèmes de connaissance IA" dans le graphe public d'Electronic Artefacts. La fiche donne une entrée française stable, utilisable pour lire le sujet et relier ses sources au reste du graphe.
 
 ## Architecture
 
-La page organise le sujet comme un ensemble de notions, dépendances, preuves et relations éditoriales connectées au graphe de connaissance.
+Le sujet est abordé par ses relations avec les concepts, projets et technologies concernés, afin de rendre son contexte de conception lisible.
 
-## Implementation
+## Mise en œuvre
 
-Pour Electronic Artefacts, cette publication sert de repère français pour cadrer les choix de conception, préparer des contenus plus détaillés et stabiliser le vocabulaire technique.
+La page décrit les usages, contraintes et choix de structure qui permettent d'appliquer le sujet dans des situations concrètes.
 
-## Evidence
+## Éléments de preuve
 
-- Prompt injection est un trust-boundary failure where untrusted content can influence modèle behavior beyond its authority.
-- AI systèmes de connaissance should treat retrieved pages, archive records et outil responses comme données, while policy, permissions et outil authority remain outside the modèle transcript.
+Les sources, relations et éléments de contexte restent attachés à la fiche pour distinguer synthèse éditoriale, preuves et références.
 
-## Limitations
+## Limites
 
-Cette version française assure la couverture éditoriale du site. Une passe ultérieure pourra enrichir le style et traduire plus finement chaque nuance de la version longue.
+Les limites sont formulées par rapport au périmètre de la fiche, aux sources disponibles et aux conditions d'usage documentées.
 
-## References
+## Références
 
-Références conservées depuis la fiche canonique : OWASP Top 10 for Large Language Model Applications, Model Context Protocol Specification, AI Risk Management Framework.
+Les sources principales restent disponibles dans le bloc de références de la fiche.

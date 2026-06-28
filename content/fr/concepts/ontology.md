@@ -4,13 +4,14 @@ type: concept
 slug:
   canonical: ontology
 title: Ontologie
-definition: In knowledge engineering, an ontology est un explicit specification
-  de the kinds de entités, properties, relationships et constraints used à
-  represent a domain.
-abstract: Ontologies make domain meaning explicit et interoperable, while
-  taxonomies organize concepts primarily through classification et hierarchy.
-description: A canonical definition distinguishing ontology, taxonomy, thesaurus
-  et folksonomy.
+definition: Ontologie désigne les modèles conceptuels qui définissent classes, proprietes, relations
+  et contraintes d'un domaine.
+abstract: Ontologie définit un repère conceptuel en français pour comprendre les modèles conceptuels
+  qui définissent classes, proprietes, relations et contraintes d'un domaine et ses liens avec les
+  projets, technologies et publications du graphe.
+description: Ontologie définit un repère conceptuel en français pour comprendre les modèles
+  conceptuels qui définissent classes, proprietes, relations et contraintes d'un domaine et ses
+  liens avec les projets, technologies et publications du graphe.
 locale: fr
 visibility: public
 publicationClass: canonical
@@ -26,57 +27,55 @@ authors:
   - id: ea:organization:electronic-artefacts
 publisher: ea:organization:electronic-artefacts
 scope:
-  - Entité classes
-  - Properties
-  - Relations
-  - Constraints
-  - Shared domain meaning
-  - Sémantique interoperability
+  - définition du sujet
+  - contexte d'usage
+  - liens avec le graphe
+  - références associées
 exclusions:
-  - A list de tags avec no defined meaning
-  - A navigation menu presented comme a complete modèle de a domain
+  - les usages purement promotionnels sans définition vérifiable
+  - les exemples déconnectés des sources, relations ou contraintes du graphe
 claims:
-  - Ontologies should formalize distinctions that produce real retrieval,
-    validation ou interoperability value.
-  - Lightweight vocabularies sont often more sustainable than premature formal
-    complexity.
+  - Ontologie devient utile lorsque sa définition reste reliée à des sources, des pratiques et des
+    objets observables.
+  - La fiche sert de vocabulaire commun pour relier projets, publications et technologies sans
+    mélanger les langues.
 sources:
   - title: OWL 2 Web Ontology Language Document Overview
     publisher: W3C
     publishedAt: 2012-12-11
     accessedAt: 2026-06-24
     url: https://www.w3.org/TR/owl2-overview/
-  - title: SKOS Simple Knowledge Organization Système Reference
+  - title: SKOS Simple Knowledge Organization System Reference
     publisher: W3C
     publishedAt: 2009-08-18
     accessedAt: 2026-06-24
     url: https://www.w3.org/TR/skos-reference/
 tags:
-  - Ontologie
+  - Ontology
   - Taxonomy
   - SKOS
   - OWL
   - Controlled Vocabulary
 disciplines:
-  - Systèmes de connaissance
+  - Knowledge Systems
   - Information Architecture
   - Philosophy
-  - Sémantique Web
+  - Semantic Web
 translationOf: ea:concept:ontology
 ---
 
 ## Rôle
 
-Ontologie est documenté ici comme une entrée française du graphe public d’Electronic Artefacts. Ontologies make domain meaning explicit et interoperable, while taxonomies organize concepts primarily through classification et hierarchy.
+Ontologie est documenté comme notion de référence pour comprendre les modèles conceptuels qui définissent classes, proprietes, relations et contraintes d'un domaine.
 
 ## Usage
 
-Cette notion sert à relier les projets, publications et technologies qui partagent un même vocabulaire de conception. In knowledge engineering, an ontology est un explicit specification de the kinds de entités, properties, relationships et constraints used à represent a domain.
+Cette fiche relie la notion aux projets, publications et technologies qui partagent un même vocabulaire de conception. Elle sert de point d'appui pour naviguer dans le graphe en version française.
 
-## Domaines
+## Périmètre
 
-Cette entrée croise notamment les domaines suivants : Systèmes de connaissance, Information Architecture, Philosophy, Sémantique Web.
+La notion est abordée par ses définitions, ses usages, ses limites et ses relations avec les autres objets documentés.
 
 ## Références
 
-Les références principales restent les sources indiquées dans la fiche canonique, notamment OWL 2 Web Ontology Language Document Overview et SKOS Simple Knowledge Organization System Reference.
+Les sources principales restent disponibles dans le bloc de références de la fiche.

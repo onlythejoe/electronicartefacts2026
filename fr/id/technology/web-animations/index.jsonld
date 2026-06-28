@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/knowledge/technologies/web-animations/#webpage",
       "url": "https://electronicartefacts.com/fr/knowledge/technologies/web-animations/",
       "name": "Web Animations",
-      "description": "Fiche technologique consacrée au rythme, à la synchronisation et au mouvement des interfaces web.",
+      "description": "Web Animations est présenté comme une technologie de référence pour comprendre son rôle dans l'écosystème Electronic Artefacts, ses usages, ses limites et sa place dans les systèmes numériques contemporains.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
@@ -34,8 +34,8 @@
       "@id": "https://electronicartefacts.com/fr/id/technology/web-animations/",
       "identifier": "ea:technology:web-animations-fr",
       "name": "Web Animations",
-      "abstract": "Web Animations définit un modèle de temporalité et d’animation pour les changements de présentation des pages web ainsi que les interfaces de programmation associées.",
-      "description": "Web Animations définit un modèle de temporalité et d’animation pour les changements de présentation des pages web ainsi que les interfaces de programmation associées.",
+      "abstract": "Web Animations est présenté comme une technologie de référence pour comprendre son rôle dans l'écosystème Electronic Artefacts, ses usages, ses limites et sa place dans les systèmes numériques contemporains.",
+      "description": "Web Animations est présenté comme une technologie de référence pour comprendre son rôle dans l'écosystème Electronic Artefacts, ses usages, ses limites et sa place dans les systèmes numériques contemporains.",
       "url": "https://electronicartefacts.com/fr/knowledge/technologies/web-animations/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/knowledge/technologies/web-animations/#webpage"
@@ -57,10 +57,10 @@
       ],
       "keywords": [
         "Web Animations",
-        "Motion design",
+        "Motion Design",
         "Interface",
-        "Développement web",
-        "Interaction humain-machine"
+        "Web Development",
+        "interaction humain-machine"
       ],
       "inLanguage": "fr",
       "dateCreated": "2026-06-24",
@@ -73,7 +73,7 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 46,
+      "wordCount": 95,
       "citation": [
         {
           "@type": "CreativeWork",

@@ -6,10 +6,12 @@ slug:
 title: Model Context Protocol
 alternateNames:
   - MCP
-abstract: Modèle Context Protocole est un open protocole pour connecting
-  language-modèle applications à external context, prompts et executable outils.
-description: A technology record pour MCP comme an integration protocole pour
-  outil-using AI applications, resources et contextual workflows.
+abstract: Model Context Protocol est présenté comme une technologie de référence pour comprendre son
+  rôle dans l'écosystème Electronic Artefacts, ses usages, ses limites et sa place dans les systèmes
+  numériques contemporains.
+description: Model Context Protocol est présenté comme une technologie de référence pour comprendre
+  son rôle dans l'écosystème Electronic Artefacts, ses usages, ses limites et sa place dans les
+  systèmes numériques contemporains.
 locale: fr
 visibility: public
 publicationClass: canonical
@@ -25,39 +27,40 @@ authors:
   - id: ea:organization:electronic-artefacts
 publisher: ea:organization:electronic-artefacts
 category: protocol
-roleInEcosystem: Modèle Context Protocole fournit a shared host-client-server
-  modèle pour exposing resources, prompts et outils à language-modèle
-  applications.
+roleInEcosystem: Model Context Protocol sert de repère technique pour évaluer le sujet "Model
+  Context Protocol" dans le graphe public d'Electronic Artefacts, ses usages possibles et ses
+  conséquences dans l'écosystème Electronic Artefacts.
 officialUrl: https://modelcontextprotocol.io/specification/2025-06-18
 sources:
-  - title: Modèle Context Protocole Specification
+  - title: Model Context Protocol Specification
     publisher: Model Context Protocol
     accessedAt: 2026-06-24
     url: https://modelcontextprotocol.io/specification/2025-06-18
 tags:
   - MCP
-  - AI Outils
-  - Context Protocole
+  - outils d'IA
+  - protocole de contexte
   - JSON-RPC
 disciplines:
-  - Intelligence artificielle
-  - Software Architecture
-  - Systèmes Design
+  - intelligence artificielle
+  - architecture logicielle
+  - conception de systèmes
 translationOf: ea:technology:model-context-protocol
 ---
 
 ## Rôle
 
-Model Context Protocol est documenté ici comme une entrée française du graphe public d’Electronic Artefacts. Modèle Context Protocole est un open protocole pour connecting language-modèle applications à external context, prompts et executable outils.
+Model Context Protocol est documenté comme technologie de référence pour le sujet "Model Context Protocol" dans le graphe public d'Electronic Artefacts.
 
 ## Usage
 
-Cette technologie sert de repère pour évaluer les choix d’architecture, les dépendances et les possibilités d’implémentation. Modèle Context Protocole fournit a shared host-client-server modèle pour exposing resources, prompts et outils à language-modèle applications.
+Cette fiche aide à situer la technologie dans l'écosystème Electronic Artefacts : ce qu'elle permet, quand elle devient pertinente et comment elle dialogue avec les autres composants du graphe.
 
-## Domaines
+## Points d'attention
 
-Cette entrée croise notamment les domaines suivants : Intelligence artificielle, Software Architecture, Systèmes Design.
+- Les usages sont décrits en français sans masquer les noms propres, acronymes ou standards techniques.
+- Les limites restent contextualisées par rapport aux projets, aux publications et aux contraintes d'implémentation.
 
 ## Références
 
-Les références principales restent les sources indiquées dans la fiche canonique, notamment Model Context Protocol Specification.
+Les sources principales restent disponibles dans le bloc de références de la fiche.

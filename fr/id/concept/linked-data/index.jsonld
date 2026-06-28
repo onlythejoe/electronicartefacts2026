@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/knowledge/concepts/linked-data/#webpage",
       "url": "https://electronicartefacts.com/fr/knowledge/concepts/linked-data/",
       "name": "Données liées",
-      "description": "A canonical definition de Données liées comme it applies à Electronic Artefacts, JSON-LD, RDF, SEO et public knowledge pages.",
+      "description": "Données liées définit un repère conceptuel en français pour comprendre les données publiees avec des identifiants et des relations exploitables par le Web sémantique et ses liens avec les projets, technologies et publications du graphe.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
@@ -34,8 +34,8 @@
       "@id": "https://electronicartefacts.com/fr/id/concept/linked-data/",
       "identifier": "ea:concept:linked-data-fr",
       "name": "Données liées",
-      "abstract": "Données liées gives public systèmes de connaissance a way à make entités, pages, references et donnéessets interoperable across sites et software systèmes.",
-      "description": "Données liées est un web publishing approach that identifies things avec stable URIs et relie them through machine-readable statements.",
+      "abstract": "Données liées définit un repère conceptuel en français pour comprendre les données publiees avec des identifiants et des relations exploitables par le Web sémantique et ses liens avec les projets, technologies et publications du graphe.",
+      "description": "Données liées désigne les données publiees avec des identifiants et des relations exploitables par le Web sémantique.",
       "url": "https://electronicartefacts.com/fr/knowledge/concepts/linked-data/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/knowledge/concepts/linked-data/#webpage"
@@ -56,12 +56,12 @@
         }
       ],
       "keywords": [
-        "Données liées",
-        "Sémantique Web",
+        "Linked Data",
+        "Semantic Web",
         "JSON-LD",
         "RDF",
         "URI",
-        "Systèmes de connaissance",
+        "Knowledge Systems",
         "Web Development",
         "SEO",
         "Information Architecture"
@@ -77,13 +77,13 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 113,
+      "wordCount": 90,
       "citation": [
         {
           "@type": "CreativeWork",
-          "name": "Cool URIs pour the Sémantique Web",
+          "name": "Cool URIs for the Semantic Web",
           "url": "https://www.w3.org/TR/cooluris/",
-          "author": "Leo Sauermann et Richard Cyganiak",
+          "author": "Leo Sauermann and Richard Cyganiak",
           "publisher": "W3C",
           "datePublished": "2008-12-03"
         },

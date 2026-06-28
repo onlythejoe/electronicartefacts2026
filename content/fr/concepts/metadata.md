@@ -4,14 +4,14 @@ type: concept
 slug:
   canonical: metadata
 title: Métadonnées
-definition: Métadonnées is structured information about a resource, such comme
-  title, creator, date, format, source, rights, subject, relation et
-  preservation context.
-abstract: Métadonnées est le descriptive, administrative, structural et
-  preservation layer that makes archives, catalogues, digital objects et graphee
-  de connaissancess usable over time.
-description: A canonical concept record pour métadonnées dans culturel et
-  technical systèmes.
+definition: Métadonnées désigne les métadonnées qui rendent des contenus décrits, recherchables,
+  citables et reliables.
+abstract: Métadonnées définit un repère conceptuel en français pour comprendre les métadonnées qui
+  rendent des contenus décrits, recherchables, citables et reliables et ses liens avec les projets,
+  technologies et publications du graphe.
+description: Métadonnées définit un repère conceptuel en français pour comprendre les métadonnées
+  qui rendent des contenus décrits, recherchables, citables et reliables et ses liens avec les
+  projets, technologies et publications du graphe.
 locale: fr
 visibility: public
 publicationClass: canonical
@@ -27,50 +27,49 @@ authors:
   - id: ea:organization:electronic-artefacts
 publisher: ea:organization:electronic-artefacts
 scope:
-  - Descriptive métadonnées
-  - Administrative métadonnées
-  - Structural métadonnées
-  - Preservation métadonnées
-  - Catalogage
+  - définition du sujet
+  - contexte d'usage
+  - liens avec le graphe
+  - références associées
 exclusions:
-  - Decorative labels that cannot be used pour retrieval ou interpretation
-  - Analytics données that décrit user behavior but not the resource
+  - les usages purement promotionnels sans définition vérifiable
+  - les exemples déconnectés des sources, relations ou contraintes du graphe
 claims:
-  - Métadonnées becomes culturel mémoire when it preserves source, context,
-    rights et relation.
-  - Poor métadonnées can make digital work effectively invisible even when files
-    still exist.
+  - Métadonnées devient utile lorsque sa définition reste reliée à des sources, des pratiques et des
+    objets observables.
+  - La fiche sert de vocabulaire commun pour relier projets, publications et technologies sans
+    mélanger les langues.
 sources:
-  - title: DCMI Métadonnées Terms
+  - title: DCMI Metadata Terms
     publisher: Dublin Core Metadata Initiative
     publishedAt: 2020-01-20
     accessedAt: 2026-06-24
     url: https://www.dublincore.org/specifications/dublin-core/dcmi-terms/
 tags:
-  - Métadonnées
+  - Metadata
   - Archives
-  - Catalogage
-  - Preservation
+  - Cataloguing
+  - Préservation
 disciplines:
   - Archives
-  - Systèmes de connaissance
-  - Recherche Méthodes
-  - Préservation numérique
+  - Knowledge Systems
+  - Research Methods
+  - Digital Préservation
 translationOf: ea:concept:metadata
 ---
 
 ## Rôle
 
-Métadonnées est documenté ici comme une entrée française du graphe public d’Electronic Artefacts. Métadonnées est le descriptive, administrative, structural et preservation layer that makes archives, catalogues, digital objects et graphee de connaissancess usable over time.
+Métadonnées est documenté comme notion de référence pour comprendre les métadonnées qui rendent des contenus décrits, recherchables, citables et reliables.
 
 ## Usage
 
-Cette notion sert à relier les projets, publications et technologies qui partagent un même vocabulaire de conception. Métadonnées is structured information about a resource, such comme title, creator, date, format, source, rights, subject, relation et preservation context.
+Cette fiche relie la notion aux projets, publications et technologies qui partagent un même vocabulaire de conception. Elle sert de point d'appui pour naviguer dans le graphe en version française.
 
-## Domaines
+## Périmètre
 
-Cette entrée croise notamment les domaines suivants : Archives, Systèmes de connaissance, Recherche Méthodes, Préservation numérique.
+La notion est abordée par ses définitions, ses usages, ses limites et ses relations avec les autres objets documentés.
 
 ## Références
 
-Les références principales restent les sources indiquées dans la fiche canonique, notamment DCMI Metadata Terms.
+Les sources principales restent disponibles dans le bloc de références de la fiche.

@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/publications/metadata-cataloguing-and-cultural-memory/#webpage",
       "url": "https://electronicartefacts.com/fr/publications/metadata-cataloguing-and-cultural-memory/",
       "name": "Métadonnées, catalogage et mémoire culturelle",
-      "description": "A technical article on métadonnées, catalogage, culturel mémoire, preservation standards et Electronic Artefacts graphe records.",
+      "description": "Métadonnées, catalogage et mémoire culturelle propose une synthèse claire en français sur le sujet \"Métadonnées, catalogage et mémoire culturelle\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
@@ -35,8 +35,8 @@
       "identifier": "ea:publication:metadata-cataloguing-and-cultural-memory-fr",
       "name": "Métadonnées, catalogage et mémoire culturelle",
       "headline": "Métadonnées, catalogage et mémoire culturelle",
-      "abstract": "This article explains métadonnées comme a culturel mémoire layer, connecting catalogage, Dublin Core, PREMIS, METS, provenance, archives et graphee de connaissancess.",
-      "description": "This article explains métadonnées comme a culturel mémoire layer, connecting catalogage, Dublin Core, PREMIS, METS, provenance, archives et graphee de connaissancess.",
+      "abstract": "Métadonnées, catalogage et mémoire culturelle propose une synthèse claire en français sur le sujet \"Métadonnées, catalogage et mémoire culturelle\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
+      "description": "Métadonnées, catalogage et mémoire culturelle propose une synthèse claire en français sur le sujet \"Métadonnées, catalogage et mémoire culturelle\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
       "url": "https://electronicartefacts.com/fr/publications/metadata-cataloguing-and-cultural-memory/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/publications/metadata-cataloguing-and-cultural-memory/#webpage"
@@ -57,13 +57,13 @@
         }
       ],
       "keywords": [
-        "Métadonnées",
-        "Catalogage",
+        "Metadata",
+        "Cataloguing",
         "Archives",
-        "Culturel Mémoire",
-        "Systèmes de connaissance",
-        "Recherche Méthodes",
-        "History de Technology"
+        "Cultural Memory",
+        "Knowledge Systems",
+        "Research Methods",
+        "History of Technology"
       ],
       "inLanguage": "fr",
       "dateCreated": "2026-06-24",
@@ -76,25 +76,25 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 168,
+      "wordCount": 141,
       "citation": [
-        "Electronic Artefacts. \"Métadonnées, Catalogage et Culturel Mémoire.\" Technical article, version 1.0.0, 2026.",
+        "Electronic Artefacts. \"Métadonnées, catalogage et mémoire culturelle\". Article technique, version 1.0.0, 2026.",
         {
           "@type": "CreativeWork",
-          "name": "DCMI Métadonnées Terms",
+          "name": "DCMI Metadata Terms",
           "url": "https://www.dublincore.org/specifications/dublin-core/dcmi-terms/",
           "publisher": "Dublin Core Metadata Initiative",
           "datePublished": "2020-01-20"
         },
         {
           "@type": "CreativeWork",
-          "name": "Métadonnées Encoding et Transmission Standard",
+          "name": "Metadata Encoding and Transmission Standard",
           "url": "https://www.loc.gov/standards/mets/",
           "publisher": "Library of Congress"
         },
         {
           "@type": "CreativeWork",
-          "name": "PREMIS Preservation Métadonnées",
+          "name": "PREMIS Preservation Metadata",
           "url": "https://www.loc.gov/standards/premis/",
           "publisher": "Library of Congress"
         }
@@ -126,30 +126,30 @@
       ],
       "articleSection": [
         "Archives",
-        "Systèmes de connaissance",
-        "Recherche Méthodes",
-        "History de Technology",
-        "Métadonnées",
-        "Catalogage"
+        "Knowledge Systems",
+        "Research Methods",
+        "History of Technology",
+        "Metadata",
+        "Cataloguing"
       ],
       "timeRequired": "PT1M",
       "isBasedOn": [
         {
           "@type": "CreativeWork",
-          "name": "DCMI Métadonnées Terms",
+          "name": "DCMI Metadata Terms",
           "url": "https://www.dublincore.org/specifications/dublin-core/dcmi-terms/",
           "publisher": "Dublin Core Metadata Initiative",
           "datePublished": "2020-01-20"
         },
         {
           "@type": "CreativeWork",
-          "name": "Métadonnées Encoding et Transmission Standard",
+          "name": "Metadata Encoding and Transmission Standard",
           "url": "https://www.loc.gov/standards/mets/",
           "publisher": "Library of Congress"
         },
         {
           "@type": "CreativeWork",
-          "name": "PREMIS Preservation Métadonnées",
+          "name": "PREMIS Preservation Metadata",
           "url": "https://www.loc.gov/standards/premis/",
           "publisher": "Library of Congress"
         }

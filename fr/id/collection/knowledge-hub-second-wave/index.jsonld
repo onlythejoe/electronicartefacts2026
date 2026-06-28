@@ -5,15 +5,15 @@
       "@type": "WebPage",
       "@id": "https://electronicartefacts.com/fr/archive/collections/knowledge-hub-second-wave/#webpage",
       "url": "https://electronicartefacts.com/fr/archive/collections/knowledge-hub-second-wave/",
-      "name": "Hub de connaissance, deuxième vague",
-      "description": "A curated collection pour the second Knowledge Hub expansion wave.",
+      "name": "Hub de connaissance, deuxieme vague",
+      "description": "Hub de connaissance, deuxieme vague organise des fiches reliées autour de le sujet \"Hub de connaissance, deuxieme vague\" dans le graphe public d'Electronic Artefacts, afin de donner une progression lisible aux archives de connaissance d'Electronic Artefacts.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
       "primaryImageOfPage": {
         "@type": "ImageObject",
         "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-search.jpg",
-        "description": "Hub de connaissance, deuxième vague"
+        "description": "Hub de connaissance, deuxieme vague"
       },
       "breadcrumb": {
         "@id": "https://electronicartefacts.com/fr/archive/collections/knowledge-hub-second-wave/#breadcrumb"
@@ -33,9 +33,9 @@
       "@type": "CreativeWork",
       "@id": "https://electronicartefacts.com/fr/id/collection/knowledge-hub-second-wave/",
       "identifier": "ea:collection:knowledge-hub-second-wave-fr",
-      "name": "Hub de connaissance, deuxième vague",
-      "abstract": "Knowledge Hub Second Wave groups a larger expansion de Electronic Artefacts knowledge records across hypertext, open source, métadonnées, programmation créative, web audio, motion, typographey, HCI, algorithmic music et generative AI.",
-      "description": "Knowledge Hub Second Wave groups a larger expansion de Electronic Artefacts knowledge records across hypertext, open source, métadonnées, programmation créative, web audio, motion, typographey, HCI, algorithmic music et generative AI.",
+      "name": "Hub de connaissance, deuxieme vague",
+      "abstract": "Hub de connaissance, deuxieme vague organise des fiches reliées autour de le sujet \"Hub de connaissance, deuxieme vague\" dans le graphe public d'Electronic Artefacts, afin de donner une progression lisible aux archives de connaissance d'Electronic Artefacts.",
+      "description": "Hub de connaissance, deuxieme vague organise des fiches reliées autour de le sujet \"Hub de connaissance, deuxieme vague\" dans le graphe public d'Electronic Artefacts, afin de donner une progression lisible aux archives de connaissance d'Electronic Artefacts.",
       "url": "https://electronicartefacts.com/fr/archive/collections/knowledge-hub-second-wave/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/archive/collections/knowledge-hub-second-wave/#webpage"
@@ -43,7 +43,7 @@
       "image": {
         "@type": "ImageObject",
         "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-search.jpg",
-        "description": "Hub de connaissance, deuxième vague"
+        "description": "Hub de connaissance, deuxieme vague"
       },
       "author": [
         {
@@ -59,12 +59,12 @@
         "Knowledge Hub",
         "Second Wave",
         "Editorial Collection",
-        "Recherche Library",
-        "Systèmes de connaissance",
-        "Programmation créative",
+        "Research Library",
+        "Knowledge Systems",
+        "programmation créative",
         "Web Development",
-        "Design",
-        "Intelligence artificielle"
+        "design",
+        "intelligence artificielle"
       ],
       "inLanguage": "fr",
       "dateCreated": "2026-06-24",
@@ -77,7 +77,7 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 110
+      "wordCount": 93
     },
     {
       "@type": "Organization",
@@ -183,7 +183,7 @@
         {
           "@type": "ListItem",
           "position": 3,
-          "name": "Hub de connaissance, deuxième vague",
+          "name": "Hub de connaissance, deuxieme vague",
           "item": "https://electronicartefacts.com/fr/archive/collections/knowledge-hub-second-wave/"
         }
       ]

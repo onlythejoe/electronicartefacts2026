@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/archive/collections/knowledge-hub-foundations/#webpage",
       "url": "https://electronicartefacts.com/fr/archive/collections/knowledge-hub-foundations/",
       "name": "Fondations du hub de connaissance",
-      "description": "A curated collection grouping foundational Knowledge Hub concepts, technologies, programs, projects et publications.",
+      "description": "Fondations du hub de connaissance organise des fiches reliées autour de le sujet \"Fondations du hub de connaissance\" dans le graphe public d'Electronic Artefacts, afin de donner une progression lisible aux archives de connaissance d'Electronic Artefacts.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
@@ -34,8 +34,8 @@
       "@id": "https://electronicartefacts.com/fr/id/collection/knowledge-hub-foundations/",
       "identifier": "ea:collection:knowledge-hub-foundations-fr",
       "name": "Fondations du hub de connaissance",
-      "abstract": "Knowledge Hub Foundations curates the first expansion wave de Electronic Artefacts knowledge records around graphe systèmes, preservation, generative systèmes, signal, audio et public sémantique publishing.",
-      "description": "Knowledge Hub Foundations curates the first expansion wave de Electronic Artefacts knowledge records around graphe systèmes, preservation, generative systèmes, signal, audio et public sémantique publishing.",
+      "abstract": "Fondations du hub de connaissance organise des fiches reliées autour de le sujet \"Fondations du hub de connaissance\" dans le graphe public d'Electronic Artefacts, afin de donner une progression lisible aux archives de connaissance d'Electronic Artefacts.",
+      "description": "Fondations du hub de connaissance organise des fiches reliées autour de le sujet \"Fondations du hub de connaissance\" dans le graphe public d'Electronic Artefacts, afin de donner une progression lisible aux archives de connaissance d'Electronic Artefacts.",
       "url": "https://electronicartefacts.com/fr/archive/collections/knowledge-hub-foundations/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/archive/collections/knowledge-hub-foundations/#webpage"
@@ -59,11 +59,11 @@
         "Knowledge Hub",
         "Editorial Collection",
         "Foundations",
-        "Recherche Library",
-        "Sémantique Publishing",
-        "Systèmes de connaissance",
+        "Research Library",
+        "Semantic Publishing",
+        "Knowledge Systems",
         "Archives",
-        "Programmation créative",
+        "programmation créative",
         "Audio Engineering",
         "Digital Art"
       ],
@@ -78,7 +78,7 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 100
+      "wordCount": 93
     },
     {
       "@type": "Organization",

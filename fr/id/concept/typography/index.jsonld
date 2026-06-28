@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/knowledge/concepts/typography/#webpage",
       "url": "https://electronicartefacts.com/fr/knowledge/concepts/typography/",
       "name": "Typographie",
-      "description": "A canonical concept record pour typographey dans digital interfaces et culturel publishing.",
+      "description": "Typographie définit un repère conceptuel en français pour comprendre la composition du texte par caracteres, espacements, hierarchie, rythme et conditions de lecture et ses liens avec les projets, technologies et publications du graphe.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
@@ -34,8 +34,8 @@
       "@id": "https://electronicartefacts.com/fr/id/concept/typography/",
       "identifier": "ea:concept:typography-fr",
       "name": "Typographie",
-      "abstract": "Typographey relie design, reading systèmes, accessibility, visuel culture, web interfaces et long-form knowledge publishing.",
-      "description": "Typographey est le design et arrangement de written language through typefaces, spacing, hierarchy, rhythm, scale et reading conditions.",
+      "abstract": "Typographie définit un repère conceptuel en français pour comprendre la composition du texte par caracteres, espacements, hierarchie, rythme et conditions de lecture et ses liens avec les projets, technologies et publications du graphe.",
+      "description": "Typographie désigne la composition du texte par caracteres, espacements, hierarchie, rythme et conditions de lecture.",
       "url": "https://electronicartefacts.com/fr/knowledge/concepts/typography/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/knowledge/concepts/typography/#webpage"
@@ -56,12 +56,12 @@
         }
       ],
       "keywords": [
-        "Typographie",
+        "Typography",
         "Reading",
         "Interface Design",
-        "Accessibility",
-        "Design",
-        "Visuel Culture",
+        "accessibilité",
+        "design",
+        "Visual Culture",
         "Web Development"
       ],
       "inLanguage": "fr",
@@ -75,7 +75,7 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 97,
+      "wordCount": 88,
       "citation": [
         {
           "@type": "CreativeWork",

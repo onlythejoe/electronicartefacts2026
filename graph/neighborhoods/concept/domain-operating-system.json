@@ -6,7 +6,7 @@
     {
       "id": "ea:concept:domain-operating-system-fr",
       "type": "concept",
-      "title": "Système d’exploitation de domaine",
+      "title": "Système d'exploitation de domaine",
       "route": "/fr/knowledge/concepts/domain-operating-system/",
       "status": "active",
       "confidence": "observed"

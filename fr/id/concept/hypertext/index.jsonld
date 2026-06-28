@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/knowledge/concepts/hypertext/#webpage",
       "url": "https://electronicartefacts.com/fr/knowledge/concepts/hypertext/",
       "name": "Hypertexte",
-      "description": "A canonical concept record pour linked textual et médias systèmes.",
+      "description": "Hypertexte définit un repère conceptuel en français pour comprendre les structures de lecture et d'ecriture fondees sur des liens, des parcours et des références croisables et ses liens avec les projets, technologies et publications du graphe.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
@@ -34,8 +34,8 @@
       "@id": "https://electronicartefacts.com/fr/id/concept/hypertext/",
       "identifier": "ea:concept:hypertext-fr",
       "name": "Hypertexte",
-      "abstract": "Hypertext est un foundational concept pour the web, digital archives, graphee de connaissancess, digital gardens, public notes et Electronic Artefacts knowledge publishing.",
-      "description": "Hypertext est un système de non-linear text et médias connected by links, allowing readers et machines à traverse knowledge through associations.",
+      "abstract": "Hypertexte définit un repère conceptuel en français pour comprendre les structures de lecture et d'ecriture fondees sur des liens, des parcours et des références croisables et ses liens avec les projets, technologies et publications du graphe.",
+      "description": "Hypertexte désigne les structures de lecture et d'ecriture fondees sur des liens, des parcours et des références croisables.",
       "url": "https://electronicartefacts.com/fr/knowledge/concepts/hypertext/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/knowledge/concepts/hypertext/#webpage"
@@ -56,13 +56,13 @@
         }
       ],
       "keywords": [
-        "Hypertexte",
+        "Hypertext",
         "Web",
-        "Systèmes de connaissance",
+        "Knowledge Systems",
         "Digital Archives",
-        "Culture Internet",
+        "Internet Culture",
         "Web Development",
-        "History de Technology"
+        "History of Technology"
       ],
       "inLanguage": "fr",
       "dateCreated": "2026-06-24",
@@ -75,7 +75,7 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 115,
+      "wordCount": 91,
       "citation": [
         {
           "@type": "CreativeWork",

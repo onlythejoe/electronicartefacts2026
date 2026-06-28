@@ -3,15 +3,14 @@ id: ea:collection:knowledge-hub-fourth-wave-fr
 type: collection
 slug:
   canonical: knowledge-hub-fourth-wave
-title: Hub de connaissance, quatrième vague
+title: Hub de connaissance, quatrieme vague
 subtitle: AI Protocoles, Provenance, Gouvernance et Culturel Interfaces
-abstract: Knowledge Hub Fourth Wave groups articles et technology records about
-  MCP, C2PA, WebNN, IIIF, OpenTelemetry, AI search, gouvernance, prompt
-  injection et verifiable identité.
-description: A curated Electronic Artefacts collection about AI outil
-  protocoles, médias provenance, navigateur-local inference, archive
-  presentation, agent observability, gouvernance et graphee de connaissances
-  SEO.
+abstract: Hub de connaissance, quatrieme vague organise des fiches reliées autour de le sujet "Hub
+  de connaissance, quatrieme vague" dans le graphe public d'Electronic Artefacts, afin de donner une
+  progression lisible aux archives de connaissance d'Electronic Artefacts.
+description: Hub de connaissance, quatrieme vague organise des fiches reliées autour de le sujet
+  "Hub de connaissance, quatrieme vague" dans le graphe public d'Electronic Artefacts, afin de
+  donner une progression lisible aux archives de connaissance d'Electronic Artefacts.
 locale: fr
 visibility: public
 publicationClass: published
@@ -26,9 +25,8 @@ version:
 authors:
   - id: ea:organization:electronic-artefacts
 publisher: ea:organization:electronic-artefacts
-thesis: Durable AI et culturel systèmes need protocoles pour context,
-  provenance, local execution, object presentation, operational accountability,
-  gouvernance et machine-readable trust.
+thesis: Hub de connaissance, quatrieme vague propose une lecture organisee de 19 fiches reliées par
+  un même axe editorial.
 curator:
   - id: ea:organization:electronic-artefacts
 explicitMembers:
@@ -51,37 +49,36 @@ explicitMembers:
   - id: ea:concept:digital-preservation
   - id: ea:concept:multimodal-ai
   - id: ea:concept:contextual-execution
-selectionNote: The collection prioritizes standards et protocoles that can
-  connect existing Electronic Artefacts themes à practical implementation
-  surfaces.
+selectionNote: La sélection privilégie des contenus stables, reliables et utiles pour parcourir le
+  hub de connaissance en français.
 tags:
   - Knowledge Hub
   - Fourth Wave
-  - AI Protocoles
-  - AI Gouvernance
+  - AI Protocols
+  - AI Governance
   - Provenance
-  - Culturel Infrastructure
+  - Cultural Infrastructure
 disciplines:
-  - Intelligence artificielle
-  - Systèmes de connaissance
-  - Préservation numérique
-  - Software Architecture
-  - Culturel Infrastructure
+  - intelligence artificielle
+  - Knowledge Systems
+  - Digital Préservation
+  - architecture logicielle
+  - Cultural Infrastructure
 translationOf: ea:collection:knowledge-hub-fourth-wave
 ---
 
 ## Intention
 
-Hub de connaissance, quatrième vague est documenté ici comme une entrée française du graphe public d’Electronic Artefacts. Knowledge Hub Fourth Wave groups articles et technology records about MCP, C2PA, WebNN, IIIF, OpenTelemetry, AI search, gouvernance, prompt injection et verifiable identité.
+Hub de connaissance, quatrieme vague rassemble des fiches qui partagent un même axe de lecture autour de le sujet "Hub de connaissance, quatrieme vague" dans le graphe public d'Electronic Artefacts.
 
-## Sélection
+## Selection
 
-The collection prioritizes standards et protocoles that can connect existing Electronic Artefacts themes à practical implementation surfaces.
+La collection organise les contenus par proximité éditoriale, par utilité de navigation et par potentiel de liens internes. Elle permet de parcourir le hub de connaissance sans perdre la cohérence du sujet.
 
 ## Usage
 
-Cette collection facilite la navigation entre des objets liés et donne une entrée française cohérente aux archives de connaissance.
+Cette entrée sert de repère pour explorer plusieurs publications ou notions depuis une même page française.
 
 ## Références
 
-Les références principales sont conservées dans la fiche canonique et dans le graphe de connaissance public.
+Les sources associées sont conservées dans la fiche canonique du graphe.

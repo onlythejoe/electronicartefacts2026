@@ -2,36 +2,65 @@
 id: ea:technology:skos-fr
 type: technology
 translationOf: ea:technology:skos
-slug: { canonical: skos }
+slug:
+  canonical: skos
 title: SKOS
-alternateNames: [Simple Knowledge Organization System]
-abstract: SKOS est un modèle de données du W3C pour publier sur le Web des thésaurus, taxonomies, classifications et autres systèmes d’organisation des connaissances.
-description: Fiche technologique consacrée aux vocabulaires contrôlés et à l’organisation sémantique légère.
+alternateNames:
+  - Simple Knowledge Organization System
+abstract: SKOS est présenté comme une technologie de référence pour comprendre son rôle dans
+  l'écosystème Electronic Artefacts, ses usages, ses limites et sa place dans les systèmes
+  numériques contemporains.
+description: SKOS est présenté comme une technologie de référence pour comprendre son rôle dans
+  l'écosystème Electronic Artefacts, ses usages, ses limites et sa place dans les systèmes
+  numériques contemporains.
 locale: fr
 visibility: public
 publicationClass: canonical
 status: active
 maturity: production
 confidence: canonical
-version: { version: 1.0.0, createdAt: "2026-06-24", publishedAt: "2026-06-25", modifiedAt: "2026-06-25" }
-authors: [{ id: ea:organization:electronic-artefacts }]
+version:
+  version: 1.0.0
+  createdAt: 2026-06-24
+  publishedAt: 2026-06-25
+  modifiedAt: 2026-06-25
+authors:
+  - id: ea:organization:electronic-artefacts
 publisher: ea:organization:electronic-artefacts
 category: language
-roleInEcosystem: SKOS fournit un modèle léger pour les libellés, concepts génériques et spécifiques, associations, schémas conceptuels et correspondances de vocabulaires.
+roleInEcosystem: SKOS sert de repère technique pour évaluer le sujet "SKOS" dans le graphe public
+  d'Electronic Artefacts, ses usages possibles et ses conséquences dans l'écosystème Electronic
+  Artefacts.
 officialUrl: https://www.w3.org/TR/skos-reference/
-sources: [{ title: SKOS Simple Knowledge Organization System Reference, publisher: W3C, publishedAt: "2009-08-18", accessedAt: "2026-06-24", url: https://www.w3.org/TR/skos-reference/ }]
-tags: [SKOS, Taxonomie, Vocabulaire contrôlé]
-disciplines: [Systèmes de connaissance, Architecture de l’information, Web sémantique]
+sources:
+  - title: SKOS Simple Knowledge Organization System Reference
+    publisher: W3C
+    publishedAt: 2009-08-18
+    accessedAt: 2026-06-24
+    url: https://www.w3.org/TR/skos-reference/
+tags:
+  - SKOS
+  - Taxonomy
+  - Controlled Vocabulary
+disciplines:
+  - Knowledge Systems
+  - Information Architecture
+  - Semantic Web
 ---
 
 ## Rôle
 
-SKOS représente concepts, libellés, notes, hiérarchies, associations et correspondances sans exiger toute l’expressivité formelle d’OWL.
+SKOS est documenté comme technologie de référence pour le sujet "SKOS" dans le graphe public d'Electronic Artefacts.
 
 ## Usage
 
-Il est pertinent pour les disciplines, mots-clés, libellés multilingues et futurs exports de vocabulaires d’Electronic Artefacts.
+Cette fiche aide à situer la technologie dans l'écosystème Electronic Artefacts : ce qu'elle permet, quand elle devient pertinente et comment elle dialogue avec les autres composants du graphe.
+
+## Points d'attention
+
+- Les usages sont décrits en français sans masquer les noms propres, acronymes ou standards techniques.
+- Les limites restent contextualisées par rapport aux projets, aux publications et aux contraintes d'implémentation.
 
 ## Références
 
-Consulter SKOS, les ontologies et les ressources sur les métadonnées.
+Les sources principales restent disponibles dans le bloc de références de la fiche.

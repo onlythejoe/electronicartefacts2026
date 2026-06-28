@@ -3,14 +3,15 @@ id: ea:concept:graph-modeling-fr
 type: concept
 slug:
   canonical: graph-modeling
-title: Modélisation de graphe
-definition: Graphe modèleing represents a domain through addressable nodes,
-  typed relationships et properties chosen à answer specific questions et
-  support specific operations.
-abstract: Graphe modèleing makes many-à-many relationships, paths, provenance et
-  evolving context explicit where folders et rigid trees obscure them.
-description: A canonical definition de graphe modèleing pour knowledge, runtime
-  et culturel systèmes.
+title: Modelisation de graphe
+definition: Modelisation de graphe désigne la modelisation d'entites et de relations sous forme de
+  graphe exploitable.
+abstract: Modelisation de graphe définit un repère conceptuel en français pour comprendre la
+  modelisation d'entites et de relations sous forme de graphe exploitable et ses liens avec les
+  projets, technologies et publications du graphe.
+description: Modelisation de graphe définit un repère conceptuel en français pour comprendre la
+  modelisation d'entites et de relations sous forme de graphe exploitable et ses liens avec les
+  projets, technologies et publications du graphe.
 locale: fr
 visibility: public
 publicationClass: canonical
@@ -26,46 +27,44 @@ authors:
   - id: ea:organization:electronic-artefacts
 publisher: ea:organization:electronic-artefacts
 scope:
-  - Nodes
-  - Typed relationships
-  - Properties
-  - Paths
-  - Constraints
-  - Temporal context
+  - définition du sujet
+  - contexte d'usage
+  - liens avec le graphe
+  - références associées
 exclusions:
-  - Turning every field into a node without a query ou reuse requirement
-  - Assuming a graphe donnéesbase automatically produces a good domain modèle
+  - les usages purement promotionnels sans définition vérifiable
+  - les exemples déconnectés des sources, relations ou contraintes du graphe
 claims:
-  - Graphes sont strongest when relationships sont first-class et many valid
-    paths must coexist.
-  - Trees et folders remain useful projections even when the underlying modèle
-    est un graphe.
+  - Modelisation de graphe devient utile lorsque sa définition reste reliée à des sources, des
+    pratiques et des objets observables.
+  - La fiche sert de vocabulaire commun pour relier projets, publications et technologies sans
+    mélanger les langues.
 tags:
-  - Modélisation de graphe
+  - Graph Modeling
   - Nodes
   - Relations
-  - Domain Modèleing
-  - Graphe de connaissances
+  - Domain Modeling
+  - graphe de connaissances
 disciplines:
-  - Systèmes de connaissance
-  - Systèmes Design
+  - Knowledge Systems
+  - conception de systèmes
   - Information Architecture
-  - Software Architecture
+  - architecture logicielle
 translationOf: ea:concept:graph-modeling
 ---
 
 ## Rôle
 
-Modélisation de graphe est documenté ici comme une entrée française du graphe public d’Electronic Artefacts. Graphe modèleing makes many-à-many relationships, paths, provenance et evolving context explicit where folders et rigid trees obscure them.
+Modelisation de graphe est documenté comme notion de référence pour comprendre la modelisation d'entites et de relations sous forme de graphe exploitable.
 
 ## Usage
 
-Cette notion sert à relier les projets, publications et technologies qui partagent un même vocabulaire de conception. Graphe modèleing represents a domain through addressable nodes, typed relationships et properties chosen à answer specific questions et support specific operations.
+Cette fiche relie la notion aux projets, publications et technologies qui partagent un même vocabulaire de conception. Elle sert de point d'appui pour naviguer dans le graphe en version française.
 
-## Domaines
+## Périmètre
 
-Cette entrée croise notamment les domaines suivants : Systèmes de connaissance, Systèmes Design, Information Architecture, Software Architecture.
+La notion est abordée par ses définitions, ses usages, ses limites et ses relations avec les autres objets documentés.
 
 ## Références
 
-Les références principales sont conservées dans la fiche canonique et dans le graphe de connaissance public.
+Les sources associées sont conservées dans la fiche canonique du graphe.

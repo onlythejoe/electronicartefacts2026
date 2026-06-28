@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/knowledge/concepts/ontology/#webpage",
       "url": "https://electronicartefacts.com/fr/knowledge/concepts/ontology/",
       "name": "Ontologie",
-      "description": "A canonical definition distinguishing ontology, taxonomy, thesaurus et folksonomy.",
+      "description": "Ontologie définit un repère conceptuel en français pour comprendre les modèles conceptuels qui définissent classes, proprietes, relations et contraintes d'un domaine et ses liens avec les projets, technologies et publications du graphe.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
@@ -34,8 +34,8 @@
       "@id": "https://electronicartefacts.com/fr/id/concept/ontology/",
       "identifier": "ea:concept:ontology-fr",
       "name": "Ontologie",
-      "abstract": "Ontologies make domain meaning explicit et interoperable, while taxonomies organize concepts primarily through classification et hierarchy.",
-      "description": "In knowledge engineering, an ontology est un explicit specification de the kinds de entités, properties, relationships et constraints used à represent a domain.",
+      "abstract": "Ontologie définit un repère conceptuel en français pour comprendre les modèles conceptuels qui définissent classes, proprietes, relations et contraintes d'un domaine et ses liens avec les projets, technologies et publications du graphe.",
+      "description": "Ontologie désigne les modèles conceptuels qui définissent classes, proprietes, relations et contraintes d'un domaine.",
       "url": "https://electronicartefacts.com/fr/knowledge/concepts/ontology/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/knowledge/concepts/ontology/#webpage"
@@ -56,15 +56,15 @@
         }
       ],
       "keywords": [
-        "Ontologie",
+        "Ontology",
         "Taxonomy",
         "SKOS",
         "OWL",
         "Controlled Vocabulary",
-        "Systèmes de connaissance",
+        "Knowledge Systems",
         "Information Architecture",
         "Philosophy",
-        "Sémantique Web"
+        "Semantic Web"
       ],
       "inLanguage": "fr",
       "dateCreated": "2026-06-24",
@@ -77,7 +77,7 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 115,
+      "wordCount": 87,
       "citation": [
         {
           "@type": "CreativeWork",
@@ -88,7 +88,7 @@
         },
         {
           "@type": "CreativeWork",
-          "name": "SKOS Simple Knowledge Organization Système Reference",
+          "name": "SKOS Simple Knowledge Organization System Reference",
           "url": "https://www.w3.org/TR/skos-reference/",
           "publisher": "W3C",
           "datePublished": "2009-08-18"

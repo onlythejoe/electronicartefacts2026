@@ -4,14 +4,14 @@ type: concept
 slug:
   canonical: contextual-execution
 title: Exécution contextuelle
-definition: Contextual execution est le practice de making identité, state,
-  permissions, relationships et operating context active constraints on what a
-  système can do.
-abstract: Contextual execution décrit runtime behavior where an operation is
-  evaluated through entité identité, graphe relations, permissions, temporal
-  state et intended scope.
-description: A canonical Electronic Artefacts concept connecting graphe runtime,
-  Runtime Theory, VASTE et identité-aware systèmes.
+definition: Exécution contextuelle désigne le sujet "Exécution contextuelle" dans le graphe public
+  d'Electronic Artefacts.
+abstract: Exécution contextuelle définit un repère conceptuel en français pour comprendre le sujet
+  "Exécution contextuelle" dans le graphe public d'Electronic Artefacts et ses liens avec les
+  projets, technologies et publications du graphe.
+description: Exécution contextuelle définit un repère conceptuel en français pour comprendre le
+  sujet "Exécution contextuelle" dans le graphe public d'Electronic Artefacts et ses liens avec les
+  projets, technologies et publications du graphe.
 locale: fr
 visibility: public
 publicationClass: canonical
@@ -27,44 +27,44 @@ authors:
   - id: ea:organization:electronic-artefacts
 publisher: ea:organization:electronic-artefacts
 scope:
-  - Runtime context
-  - Identité
-  - Permissions
-  - Graphe relations
-  - Event propagation
+  - définition du sujet
+  - contexte d'usage
+  - liens avec le graphe
+  - références associées
 exclusions:
-  - A global function call avec no relation à user, state ou entité context
-  - A static label that is never used by execution logic
+  - les usages purement promotionnels sans définition vérifiable
+  - les exemples déconnectés des sources, relations ou contraintes du graphe
 claims:
-  - Context becomes a runtime concern when it changes whether an operation is
-    allowed ou meaningful.
-  - Graphe runtimes need explicit context boundaries à remain governable.
+  - Exécution contextuelle devient utile lorsque sa définition reste reliée à des sources, des
+    pratiques et des objets observables.
+  - La fiche sert de vocabulaire commun pour relier projets, publications et technologies sans
+    mélanger les langues.
 tags:
   - Context
-  - Execution
+  - Exécution
   - Runtime
-  - Identité
+  - Identity
   - Permissions
 disciplines:
-  - Systèmes Design
+  - conception de systèmes
   - Programming
-  - Systèmes de connaissance
-  - Software Architecture
+  - Knowledge Systems
+  - architecture logicielle
 translationOf: ea:concept:contextual-execution
 ---
 
 ## Rôle
 
-Exécution contextuelle est documenté ici comme une entrée française du graphe public d’Electronic Artefacts. Contextual execution décrit runtime behavior where an operation is evaluated through entité identité, graphe relations, permissions, temporal state et intended scope.
+Exécution contextuelle est documenté comme notion de référence pour comprendre le sujet "Exécution contextuelle" dans le graphe public d'Electronic Artefacts.
 
 ## Usage
 
-Cette notion sert à relier les projets, publications et technologies qui partagent un même vocabulaire de conception. Contextual execution est le practice de making identité, state, permissions, relationships et operating context active constraints on what a système can do.
+Cette fiche relie la notion aux projets, publications et technologies qui partagent un même vocabulaire de conception. Elle sert de point d'appui pour naviguer dans le graphe en version française.
 
-## Domaines
+## Périmètre
 
-Cette entrée croise notamment les domaines suivants : Systèmes Design, Programming, Systèmes de connaissance, Software Architecture.
+La notion est abordée par ses définitions, ses usages, ses limites et ses relations avec les autres objets documentés.
 
 ## Références
 
-Les références principales sont conservées dans la fiche canonique et dans le graphe de connaissance public.
+Les sources associées sont conservées dans la fiche canonique du graphe.

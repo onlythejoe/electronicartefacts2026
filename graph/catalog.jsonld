@@ -85,7 +85,7 @@
         {
           "@type": "ListItem",
           "position": 2,
-          "name": "Hub de connaissance, deuxième vague",
+          "name": "Hub de connaissance, deuxieme vague",
           "url": "https://electronicartefacts.com/fr/archive/collections/knowledge-hub-second-wave/",
           "item": {
             "@id": "https://electronicartefacts.com/fr/id/collection/knowledge-hub-second-wave/"
@@ -94,7 +94,7 @@
         {
           "@type": "ListItem",
           "position": 3,
-          "name": "Hub de connaissance, quatrième vague",
+          "name": "Hub de connaissance, quatrieme vague",
           "url": "https://electronicartefacts.com/fr/archive/collections/knowledge-hub-fourth-wave/",
           "item": {
             "@id": "https://electronicartefacts.com/fr/id/collection/knowledge-hub-fourth-wave/"
@@ -103,7 +103,7 @@
         {
           "@type": "ListItem",
           "position": 4,
-          "name": "Hub de connaissance, troisième vague",
+          "name": "Hub de connaissance, troisieme vague",
           "url": "https://electronicartefacts.com/fr/archive/collections/knowledge-hub-third-wave/",
           "item": {
             "@id": "https://electronicartefacts.com/fr/id/collection/knowledge-hub-third-wave/"
@@ -148,7 +148,7 @@
         {
           "@type": "ListItem",
           "position": 9,
-          "name": "Agent d’IA",
+          "name": "Agent d'IA",
           "url": "https://electronicartefacts.com/fr/knowledge/concepts/ai-agent/",
           "item": {
             "@id": "https://electronicartefacts.com/fr/id/concept/ai-agent/"
@@ -328,7 +328,7 @@
         {
           "@type": "ListItem",
           "position": 29,
-          "name": "Génération augmentée par récupération",
+          "name": "Génération augmentée par recuperation",
           "url": "https://electronicartefacts.com/fr/knowledge/concepts/retrieval-augmented-generation/",
           "item": {
             "@id": "https://electronicartefacts.com/fr/id/concept/retrieval-augmented-generation/"
@@ -391,7 +391,7 @@
         {
           "@type": "ListItem",
           "position": 36,
-          "name": "Graphisme procédural",
+          "name": "Graphisme procedural",
           "url": "https://electronicartefacts.com/fr/knowledge/concepts/procedural-graphics/",
           "item": {
             "@id": "https://electronicartefacts.com/fr/id/concept/procedural-graphics/"
@@ -454,7 +454,7 @@
         {
           "@type": "ListItem",
           "position": 43,
-          "name": "Identité d’entité",
+          "name": "Identité d'entite",
           "url": "https://electronicartefacts.com/fr/knowledge/concepts/entity-identity/",
           "item": {
             "@id": "https://electronicartefacts.com/fr/id/concept/entity-identity/"
@@ -535,7 +535,7 @@
         {
           "@type": "ListItem",
           "position": 52,
-          "name": "Modélisation de graphe",
+          "name": "Modelisation de graphe",
           "url": "https://electronicartefacts.com/fr/knowledge/concepts/graph-modeling/",
           "item": {
             "@id": "https://electronicartefacts.com/fr/id/concept/graph-modeling/"
@@ -625,7 +625,7 @@
         {
           "@type": "ListItem",
           "position": 62,
-          "name": "Pensée systémique",
+          "name": "Pensée systemique",
           "url": "https://electronicartefacts.com/fr/knowledge/concepts/systems-thinking/",
           "item": {
             "@id": "https://electronicartefacts.com/fr/id/concept/systems-thinking/"
@@ -697,7 +697,7 @@
         {
           "@type": "ListItem",
           "position": 70,
-          "name": "Rétroaction cybernétique",
+          "name": "Rétroaction cybernetique",
           "url": "https://electronicartefacts.com/fr/knowledge/concepts/cybernetic-feedback/",
           "item": {
             "@id": "https://electronicartefacts.com/fr/id/concept/cybernetic-feedback/"
@@ -733,7 +733,7 @@
         {
           "@type": "ListItem",
           "position": 74,
-          "name": "Système d’exploitation de domaine",
+          "name": "Système d'exploitation de domaine",
           "url": "https://electronicartefacts.com/fr/knowledge/concepts/domain-operating-system/",
           "item": {
             "@id": "https://electronicartefacts.com/fr/id/concept/domain-operating-system/"
@@ -904,7 +904,7 @@
         {
           "@type": "ListItem",
           "position": 93,
-          "name": "Agents d’IA et workflows d’IA",
+          "name": "Agents d'IA et workflows d'IA",
           "url": "https://electronicartefacts.com/fr/publications/ai-agents-vs-ai-workflows/",
           "item": {
             "@id": "https://electronicartefacts.com/fr/id/publication/ai-agents-vs-ai-workflows/"
@@ -940,7 +940,7 @@
         {
           "@type": "ListItem",
           "position": 97,
-          "name": "Archéologie du signal, mémoire audio et écoute machine",
+          "name": "Archéologie du signal, mémoire audio et ecoute machine",
           "url": "https://electronicartefacts.com/fr/publications/signal-archaeology-audio-memory-and-machine-listening/",
           "item": {
             "@id": "https://electronicartefacts.com/fr/id/publication/signal-archaeology-audio-memory-and-machine-listening/"
@@ -949,7 +949,7 @@
         {
           "@type": "ListItem",
           "position": 98,
-          "name": "Architecture événementielle et flux d’événements",
+          "name": "Architecture événementielle et flux d'evenements",
           "url": "https://electronicartefacts.com/fr/publications/event-driven-architecture-and-event-streams/",
           "item": {
             "@id": "https://electronicartefacts.com/fr/id/publication/event-driven-architecture-and-event-streams/"
@@ -985,7 +985,7 @@
         {
           "@type": "ListItem",
           "position": 102,
-          "name": "Composition algorithmique et musique fondée sur des règles",
+          "name": "Composition algorithmique et musique fondee sur des regles",
           "url": "https://electronicartefacts.com/fr/publications/algorithmic-composition-and-rule-based-music/",
           "item": {
             "@id": "https://electronicartefacts.com/fr/id/publication/algorithmic-composition-and-rule-based-music/"
@@ -1066,7 +1066,7 @@
         {
           "@type": "ListItem",
           "position": 111,
-          "name": "Génération augmentée par récupération et systèmes de connaissance",
+          "name": "Génération augmentée par recuperation et systèmes de connaissance",
           "url": "https://electronicartefacts.com/fr/publications/retrieval-augmented-generation-and-knowledge-systems/",
           "item": {
             "@id": "https://electronicartefacts.com/fr/id/publication/retrieval-augmented-generation-and-knowledge-systems/"
@@ -1093,7 +1093,7 @@
         {
           "@type": "ListItem",
           "position": 114,
-          "name": "Gouvernance responsable de l’IA pour les systèmes créatifs et culturels",
+          "name": "Gouvernance responsable de l'IA pour les systèmes créatifs et culturels",
           "url": "https://electronicartefacts.com/fr/publications/responsible-ai-governance-for-creative-and-cultural-systems/",
           "item": {
             "@id": "https://electronicartefacts.com/fr/id/publication/responsible-ai-governance-for-creative-and-cultural-systems/"
@@ -1111,7 +1111,7 @@
         {
           "@type": "ListItem",
           "position": 116,
-          "name": "Graphisme procédural, shaders et systèmes visuels",
+          "name": "Graphisme procedural, shaders et systèmes visuels",
           "url": "https://electronicartefacts.com/fr/publications/procedural-graphics-shaders-and-visual-systems/",
           "item": {
             "@id": "https://electronicartefacts.com/fr/id/publication/procedural-graphics-shaders-and-visual-systems/"
@@ -1130,15 +1130,6 @@
           "@type": "ListItem",
           "position": 118,
           "name": "Human Computer Interaction for Creative Tools",
-          "url": "https://electronicartefacts.com/fr/publications/human-computer-interaction-for-creative-tools/",
-          "item": {
-            "@id": "https://electronicartefacts.com/fr/id/publication/human-computer-interaction-for-creative-tools/"
-          }
-        },
-        {
-          "@type": "ListItem",
-          "position": 119,
-          "name": "Human Computer Interaction for Creative Tools",
           "url": "https://electronicartefacts.com/publications/human-computer-interaction-for-creative-tools/",
           "item": {
             "@id": "https://electronicartefacts.com/id/publication/human-computer-interaction-for-creative-tools/"
@@ -1146,7 +1137,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 120,
+          "position": 119,
           "name": "Hypertext and Augmented Knowledge Systems",
           "url": "https://electronicartefacts.com/publications/hypertext-and-augmented-knowledge-systems/",
           "item": {
@@ -1155,7 +1146,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 121,
+          "position": 120,
           "name": "Hypertexte et systèmes de connaissance augmentée",
           "url": "https://electronicartefacts.com/fr/publications/hypertext-and-augmented-knowledge-systems/",
           "item": {
@@ -1164,7 +1155,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 122,
+          "position": 121,
           "name": "IA générative, espace latent et workflows créatifs",
           "url": "https://electronicartefacts.com/fr/publications/generative-ai-latent-space-and-creative-workflows/",
           "item": {
@@ -1173,8 +1164,8 @@
         },
         {
           "@type": "ListItem",
-          "position": 123,
-          "name": "IA multimodale pour le texte, l’image, l’audio et la vidéo",
+          "position": 122,
+          "name": "IA multimodale pour le texte, l'image, l'audio et la video",
           "url": "https://electronicartefacts.com/fr/publications/multimodal-ai-across-text-image-audio-and-video/",
           "item": {
             "@id": "https://electronicartefacts.com/fr/id/publication/multimodal-ai-across-text-image-audio-and-video/"
@@ -1182,8 +1173,8 @@
         },
         {
           "@type": "ListItem",
-          "position": 124,
-          "name": "Identifiants vérifiables pour les archives culturelles et l’identité des créateurs",
+          "position": 123,
+          "name": "Identifiants vérifiables pour les archives culturelles et l'identité des createurs",
           "url": "https://electronicartefacts.com/fr/publications/verifiable-credentials-for-cultural-archives-and-creator-identity/",
           "item": {
             "@id": "https://electronicartefacts.com/fr/id/publication/verifiable-credentials-for-cultural-archives-and-creator-identity/"
@@ -1191,7 +1182,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 125,
+          "position": 124,
           "name": "IIIF and Compound Cultural Objects",
           "url": "https://electronicartefacts.com/publications/iiif-and-compound-cultural-objects/",
           "item": {
@@ -1200,8 +1191,8 @@
         },
         {
           "@type": "ListItem",
-          "position": 126,
-          "name": "IIIF et objets culturels composés",
+          "position": 125,
+          "name": "IIIF et objets culturels composes",
           "url": "https://electronicartefacts.com/fr/publications/iiif-and-compound-cultural-objects/",
           "item": {
             "@id": "https://electronicartefacts.com/fr/id/publication/iiif-and-compound-cultural-objects/"
@@ -1209,11 +1200,20 @@
         },
         {
           "@type": "ListItem",
-          "position": 127,
-          "name": "Injection de prompt et frontières de confiance dans les systèmes de connaissance IA",
+          "position": 126,
+          "name": "Injection de prompt et frontieres de confiance dans les systèmes de connaissance IA",
           "url": "https://electronicartefacts.com/fr/publications/prompt-injection-and-trust-boundaries-in-ai-knowledge-systems/",
           "item": {
             "@id": "https://electronicartefacts.com/fr/id/publication/prompt-injection-and-trust-boundaries-in-ai-knowledge-systems/"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 127,
+          "name": "Interaction humain-machine pour les outils créatifs",
+          "url": "https://electronicartefacts.com/fr/publications/human-computer-interaction-for-creative-tools/",
+          "item": {
+            "@id": "https://electronicartefacts.com/fr/id/publication/human-computer-interaction-for-creative-tools/"
           }
         },
         {
@@ -1228,7 +1228,7 @@
         {
           "@type": "ListItem",
           "position": 129,
-          "name": "L’open source comme infrastructure culturelle",
+          "name": "L'open source comme infrastructure culturelle",
           "url": "https://electronicartefacts.com/fr/publications/open-source-as-cultural-infrastructure/",
           "item": {
             "@id": "https://electronicartefacts.com/fr/id/publication/open-source-as-cultural-infrastructure/"
@@ -1282,7 +1282,7 @@
         {
           "@type": "ListItem",
           "position": 135,
-          "name": "Microservices, monolithes modulaires et frontières de système",
+          "name": "Microservices, monolithes modulaires et frontieres de système",
           "url": "https://electronicartefacts.com/fr/publications/microservices-modular-monoliths-and-system-boundaries/",
           "item": {
             "@id": "https://electronicartefacts.com/fr/id/publication/microservices-modular-monoliths-and-system-boundaries/"
@@ -1300,7 +1300,7 @@
         {
           "@type": "ListItem",
           "position": 137,
-          "name": "Model Context Protocol et systèmes d’IA utilisant des outils",
+          "name": "Model Context Protocol et systèmes d'IA utilisant des outils",
           "url": "https://electronicartefacts.com/fr/publications/model-context-protocol-and-tool-using-ai-systems/",
           "item": {
             "@id": "https://electronicartefacts.com/fr/id/publication/model-context-protocol-and-tool-using-ai-systems/"
@@ -1309,7 +1309,7 @@
         {
           "@type": "ListItem",
           "position": 138,
-          "name": "Moteurs runtime et systèmes d’exploitation de domaine",
+          "name": "Moteurs runtime et systèmes d'exploitation de domaine",
           "url": "https://electronicartefacts.com/fr/publications/runtime-engines-and-domain-operating-systems/",
           "item": {
             "@id": "https://electronicartefacts.com/fr/id/publication/runtime-engines-and-domain-operating-systems/"
@@ -1318,7 +1318,7 @@
         {
           "@type": "ListItem",
           "position": 139,
-          "name": "Motion design, temps et sémantique d’interface",
+          "name": "Motion design, temps et sémantique d'interface",
           "url": "https://electronicartefacts.com/fr/publications/motion-design-time-and-interface-semantics/",
           "item": {
             "@id": "https://electronicartefacts.com/fr/id/publication/motion-design-time-and-interface-semantics/"
@@ -1345,7 +1345,7 @@
         {
           "@type": "ListItem",
           "position": 142,
-          "name": "Observabilité des agents d’IA et des systèmes d’appel d’outils",
+          "name": "Observabilité des agents d'IA et des systèmes d'appel d'outils",
           "url": "https://electronicartefacts.com/fr/publications/observability-for-ai-agents-and-tool-calling-systems/",
           "item": {
             "@id": "https://electronicartefacts.com/fr/id/publication/observability-for-ai-agents-and-tool-calling-systems/"
@@ -1372,7 +1372,7 @@
         {
           "@type": "ListItem",
           "position": 145,
-          "name": "Ontologies, taxonomies et modélisation des connaissances",
+          "name": "Ontologies, taxonomies et modelisation des connaissances",
           "url": "https://electronicartefacts.com/fr/publications/ontologies-taxonomies-and-knowledge-modeling/",
           "item": {
             "@id": "https://electronicartefacts.com/fr/id/publication/ontologies-taxonomies-and-knowledge-modeling/"
@@ -1390,7 +1390,7 @@
         {
           "@type": "ListItem",
           "position": 147,
-          "name": "Pédagogie du creative coding, de Logo à p5.js",
+          "name": "Pédagogie de la programmation créative, de Logo à p5.js",
           "url": "https://electronicartefacts.com/fr/publications/creative-coding-pedagogy-from-logo-to-p5js/",
           "item": {
             "@id": "https://electronicartefacts.com/fr/id/publication/creative-coding-pedagogy-from-logo-to-p5js/"
@@ -1399,7 +1399,7 @@
         {
           "@type": "ListItem",
           "position": 148,
-          "name": "Pensée systémique pour la pratique créative",
+          "name": "Pensée systemique pour la pratique créative",
           "url": "https://electronicartefacts.com/fr/publications/systems-thinking-for-creative-practice/",
           "item": {
             "@id": "https://electronicartefacts.com/fr/id/publication/systems-thinking-for-creative-practice/"
@@ -1453,7 +1453,7 @@
         {
           "@type": "ListItem",
           "position": 154,
-          "name": "Recherche IA, contenu structuré et SEO par graphe de connaissances",
+          "name": "Recherche IA, contenu structure et SEO par graphe de connaissances",
           "url": "https://electronicartefacts.com/fr/publications/ai-search-structured-content-and-knowledge-graph-seo/",
           "item": {
             "@id": "https://electronicartefacts.com/fr/id/publication/ai-search-structured-content-and-knowledge-graph-seo/"
@@ -1471,7 +1471,7 @@
         {
           "@type": "ListItem",
           "position": 156,
-          "name": "Redis Streams pour l’orchestration",
+          "name": "Redis Streams pour l'orchestration",
           "url": "https://electronicartefacts.com/fr/publications/redis-streams-for-orchestration/",
           "item": {
             "@id": "https://electronicartefacts.com/fr/id/publication/redis-streams-for-orchestration/"
@@ -1516,7 +1516,7 @@
         {
           "@type": "ListItem",
           "position": 161,
-          "name": "Systèmes d’IA locaux et open source",
+          "name": "Systèmes d'IA locaux et open source",
           "url": "https://electronicartefacts.com/fr/publications/local-and-open-source-ai-systems/",
           "item": {
             "@id": "https://electronicartefacts.com/fr/id/publication/local-and-open-source-ai-systems/"
@@ -1525,7 +1525,7 @@
         {
           "@type": "ListItem",
           "position": 162,
-          "name": "Systèmes génératifs, cybernétique et programmation créative",
+          "name": "Systèmes génératifs, cybernetique et programmation créative",
           "url": "https://electronicartefacts.com/fr/publications/generative-systems-cybernetics-and-creative-coding/",
           "item": {
             "@id": "https://electronicartefacts.com/fr/id/publication/generative-systems-cybernetics-and-creative-coding/"

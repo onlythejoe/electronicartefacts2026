@@ -3,12 +3,16 @@ id: ea:publication:ontologies-taxonomies-and-knowledge-modeling-fr
 type: publication
 slug:
   canonical: ontologies-taxonomies-and-knowledge-modeling
-title: Ontologies, taxonomies et modélisation des connaissances
-subtitle: Technical Article
-abstract: A practical guide à taxonomies, thesauri, folksonomies, ontologies,
-  controlled vocabularies, OWL, SKOS et sustainable sémantique modèleing.
-description: Understand the differences between taxonomies et ontologies et
-  learn how à design a durable knowledge modèle without overengineering.
+title: Ontologies, taxonomies et modelisation des connaissances
+subtitle: Article technique
+abstract: Ontologies, taxonomies et modelisation des connaissances propose une synthèse claire en
+  français sur le sujet "Ontologies, taxonomies et modelisation des connaissances" dans le graphe
+  public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la
+  publication de connaissances numériques.
+description: Ontologies, taxonomies et modelisation des connaissances propose une synthèse claire en
+  français sur le sujet "Ontologies, taxonomies et modelisation des connaissances" dans le graphe
+  public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la
+  publication de connaissances numériques.
 locale: fr
 visibility: public
 publicationClass: published
@@ -32,10 +36,10 @@ subjects:
   - id: ea:technology:skos
   - id: ea:project:vestiges
 claims:
-  - Taxonomies classify concepts, while ontologies specify richer domain
-    entités, properties, relations et constraints.
-  - Durable knowledge modèles should begin avec real questions et
-    interoperability needs rather than maximal formal expressivity.
+  - Ontologies, taxonomies et modelisation des connaissances doit être lisible comme une synthèse
+    française autonome, sans phrases hybrides héritées de l'anglais.
+  - Les liens avec les notions, projets et technologies du graphe renforcent la recherche, la
+    navigation et la citation.
 evidence:
   - id: ea:concept:ontology
   - id: ea:concept:knowledge-graph
@@ -45,53 +49,52 @@ sources:
     publishedAt: 2012-12-11
     accessedAt: 2026-06-24
     url: https://www.w3.org/TR/owl2-overview/
-  - title: SKOS Simple Knowledge Organization Système Reference
+  - title: SKOS Simple Knowledge Organization System Reference
     publisher: W3C
     publishedAt: 2009-08-18
     accessedAt: 2026-06-24
     url: https://www.w3.org/TR/skos-reference/
-  - title: The CIDOC Conceptual Reference Modèle
+  - title: The CIDOC Conceptual Reference Model
     publisher: CIDOC CRM Special Interest Group
     accessedAt: 2026-06-24
     url: https://www.cidoc-crm.org/
 citation:
-  preferred: Electronic Artefacts. "Ontologies, Taxonomies et Knowledge
-    Modèleing." Technical article, version 1.0.0, 2026.
+  preferred: Electronic Artefacts. "Ontologies, taxonomies et modelisation des connaissances". Article
+    technique, version 1.0.0, 2026.
 tags:
-  - Ontologie
+  - Ontology
   - Taxonomy
   - SKOS
   - OWL
-  - Knowledge Modèleing
+  - Knowledge Modeling
 disciplines:
-  - Systèmes de connaissance
+  - Knowledge Systems
   - Information Architecture
-  - Sémantique Web
+  - Semantic Web
   - Philosophy
 translationOf: ea:publication:ontologies-taxonomies-and-knowledge-modeling
 ---
 
-## Problem
+## Problème
 
-Ontologies, taxonomies et modélisation des connaissances répond à un problème de lisibilité, d’architecture ou de transmission dans les systèmes numériques contemporains. A practical guide à taxonomies, thesauri, folksonomies, ontologies, controlled vocabularies, OWL, SKOS et sustainable sémantique modèleing.
+Ontologies, taxonomies et modelisation des connaissances examine le sujet "Ontologies, taxonomies et modelisation des connaissances" dans le graphe public d'Electronic Artefacts. La fiche donne une entrée française stable, utilisable pour lire le sujet et relier ses sources au reste du graphe.
 
 ## Architecture
 
-La page organise le sujet comme un ensemble de notions, dépendances, preuves et relations éditoriales connectées au graphe de connaissance.
+Le sujet est abordé par ses relations avec les concepts, projets et technologies concernés, afin de rendre son contexte de conception lisible.
 
-## Implementation
+## Mise en œuvre
 
-Pour Electronic Artefacts, cette publication sert de repère français pour cadrer les choix de conception, préparer des contenus plus détaillés et stabiliser le vocabulaire technique.
+La page décrit les usages, contraintes et choix de structure qui permettent d'appliquer le sujet dans des situations concrètes.
 
-## Evidence
+## Éléments de preuve
 
-- Taxonomies classify concepts, while ontologies specify richer domain entités, properties, relations et constraints.
-- Durable knowledge modèles should begin avec real questions et interoperability needs rather than maximal formal expressivity.
+Les sources, relations et éléments de contexte restent attachés à la fiche pour distinguer synthèse éditoriale, preuves et références.
 
-## Limitations
+## Limites
 
-Cette version française assure la couverture éditoriale du site. Une passe ultérieure pourra enrichir le style et traduire plus finement chaque nuance de la version longue.
+Les limites sont formulées par rapport au périmètre de la fiche, aux sources disponibles et aux conditions d'usage documentées.
 
-## References
+## Références
 
-Références conservées depuis la fiche canonique : OWL 2 Web Ontology Language Document Overview, SKOS Simple Knowledge Organization System Reference, The CIDOC Conceptual Reference Model.
+Les sources principales restent disponibles dans le bloc de références de la fiche.

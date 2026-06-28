@@ -4,13 +4,14 @@ type: concept
 slug:
   canonical: microservice-architecture
 title: Architecture de microservices
-definition: Microservice architecture structures a software système comme
-  independently deployable services aligned avec bounded capabilities et
-  communicating through explicit contracts.
-abstract: Microservices can improve independent evolution et scaling but add
-  network, données, deployment, observability et organizational complexity.
-description: A canonical definition comparing microservices avec modular
-  monoliths et service-oriented systèmes.
+definition: Architecture de microservices désigne les architectures de services separes par domaine,
+  contrat et responsabilite opérationnelle.
+abstract: Architecture de microservices définit un repère conceptuel en français pour comprendre les
+  architectures de services separes par domaine, contrat et responsabilite opérationnelle et ses
+  liens avec les projets, technologies et publications du graphe.
+description: Architecture de microservices définit un repère conceptuel en français pour comprendre
+  les architectures de services separes par domaine, contrat et responsabilite opérationnelle et ses
+  liens avec les projets, technologies et publications du graphe.
 locale: fr
 visibility: public
 publicationClass: canonical
@@ -26,24 +27,21 @@ authors:
   - id: ea:organization:electronic-artefacts
 publisher: ea:organization:electronic-artefacts
 scope:
-  - Service boundaries
-  - Independent deployment
-  - API et event contracts
-  - Données ownership
-  - Observability
-  - Team topology
+  - définition du sujet
+  - contexte d'usage
+  - liens avec le graphe
+  - références associées
 exclusions:
-  - Splitting an application into many processes without coherent domain
-    boundaries
-  - Treating microservices comme the default architecture pour small systèmes
+  - les usages purement promotionnels sans définition vérifiable
+  - les exemples déconnectés des sources, relations ou contraintes du graphe
 claims:
-  - Microservice value depends on organizational et domain boundaries, not
-    service count.
-  - A modular monolith is often the stronger starting architecture when
-    independent deployment is not required.
+  - Architecture de microservices devient utile lorsque sa définition reste reliée à des sources,
+    des pratiques et des objets observables.
+  - La fiche sert de vocabulaire commun pour relier projets, publications et technologies sans
+    mélanger les langues.
 sources:
   - title: Microservices
-    author: James Lewis et Martin Fowler
+    author: James Lewis and Martin Fowler
     publisher: MartinFowler.com
     publishedAt: 2014-03-25
     accessedAt: 2026-06-24
@@ -52,26 +50,26 @@ tags:
   - Microservices
   - Modular Monolith
   - Service Boundaries
-  - Distributed Systèmes
+  - Distributed Systems
 disciplines:
-  - Software Architecture
-  - Systèmes Design
+  - architecture logicielle
+  - conception de systèmes
   - Programming
 translationOf: ea:concept:microservice-architecture
 ---
 
 ## Rôle
 
-Architecture de microservices est documenté ici comme une entrée française du graphe public d’Electronic Artefacts. Microservices can improve independent evolution et scaling but add network, données, deployment, observability et organizational complexity.
+Architecture de microservices est documenté comme notion de référence pour comprendre les architectures de services separes par domaine, contrat et responsabilite opérationnelle.
 
 ## Usage
 
-Cette notion sert à relier les projets, publications et technologies qui partagent un même vocabulaire de conception. Microservice architecture structures a software système comme independently deployable services aligned avec bounded capabilities et communicating through explicit contracts.
+Cette fiche relie la notion aux projets, publications et technologies qui partagent un même vocabulaire de conception. Elle sert de point d'appui pour naviguer dans le graphe en version française.
 
-## Domaines
+## Périmètre
 
-Cette entrée croise notamment les domaines suivants : Software Architecture, Systèmes Design, Programming.
+La notion est abordée par ses définitions, ses usages, ses limites et ses relations avec les autres objets documentés.
 
 ## Références
 
-Les références principales restent les sources indiquées dans la fiche canonique, notamment Microservices.
+Les sources principales restent disponibles dans le bloc de références de la fiche.

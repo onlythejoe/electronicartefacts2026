@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/publications/hypertext-and-augmented-knowledge-systems/#webpage",
       "url": "https://electronicartefacts.com/fr/publications/hypertext-and-augmented-knowledge-systems/",
       "name": "Hypertexte et systèmes de connaissance augmentée",
-      "description": "A technical article on hypertext, augmented intelligence, linked pages, graphee de connaissancess et Electronic Artefacts knowledge publishing.",
+      "description": "Hypertexte et systèmes de connaissance augmentée propose une synthèse claire en français sur le sujet \"Hypertexte et systèmes de connaissance augmentée\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
@@ -35,8 +35,8 @@
       "identifier": "ea:publication:hypertext-and-augmented-knowledge-systems-fr",
       "name": "Hypertexte et systèmes de connaissance augmentée",
       "headline": "Hypertexte et systèmes de connaissance augmentée",
-      "abstract": "This article explains hypertext comme a long-term knowledge architecture, connecting Vannevar Bush, Douglas Engelbart, web links, graphee de connaissancess et augmented intelligence.",
-      "description": "This article explains hypertext comme a long-term knowledge architecture, connecting Vannevar Bush, Douglas Engelbart, web links, graphee de connaissancess et augmented intelligence.",
+      "abstract": "Hypertexte et systèmes de connaissance augmentée propose une synthèse claire en français sur le sujet \"Hypertexte et systèmes de connaissance augmentée\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
+      "description": "Hypertexte et systèmes de connaissance augmentée propose une synthèse claire en français sur le sujet \"Hypertexte et systèmes de connaissance augmentée\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
       "url": "https://electronicartefacts.com/fr/publications/hypertext-and-augmented-knowledge-systems/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/publications/hypertext-and-augmented-knowledge-systems/#webpage"
@@ -57,14 +57,14 @@
         }
       ],
       "keywords": [
-        "Hypertexte",
-        "Intelligence augmentée",
-        "Graphe de connaissances",
-        "Données liées",
-        "History de Technology",
-        "Systèmes de connaissance",
+        "Hypertext",
+        "intelligence augmentée",
+        "graphe de connaissances",
+        "Linked Data",
+        "History of Technology",
+        "Knowledge Systems",
         "Web Development",
-        "Human Computer Interaction"
+        "interaction humain-machine"
       ],
       "inLanguage": "fr",
       "dateCreated": "2026-06-24",
@@ -77,9 +77,9 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 170,
+      "wordCount": 143,
       "citation": [
-        "Electronic Artefacts. \"Hypertext et Augmented Systèmes de connaissance.\" Technical article, version 1.0.0, 2026.",
+        "Electronic Artefacts. \"Hypertexte et systèmes de connaissance augmentée\". Article technique, version 1.0.0, 2026.",
         {
           "@type": "CreativeWork",
           "name": "As We May Think",
@@ -100,7 +100,7 @@
           "@type": "CreativeWork",
           "name": "Uniform Resource Identifier (URI) Generic Syntax",
           "url": "https://www.rfc-editor.org/info/rfc3986/",
-          "author": "Tim Berners-Lee, Roy Fielding et Larry Masinter",
+          "author": "Tim Berners-Lee, Roy Fielding and Larry Masinter",
           "publisher": "RFC Editor",
           "datePublished": "2005-01-01"
         }
@@ -131,12 +131,12 @@
         }
       ],
       "articleSection": [
-        "Systèmes de connaissance",
-        "History de Technology",
+        "Knowledge Systems",
+        "History of Technology",
         "Web Development",
-        "Human Computer Interaction",
-        "Hypertexte",
-        "Intelligence augmentée"
+        "interaction humain-machine",
+        "Hypertext",
+        "intelligence augmentée"
       ],
       "timeRequired": "PT1M",
       "isBasedOn": [
@@ -160,7 +160,7 @@
           "@type": "CreativeWork",
           "name": "Uniform Resource Identifier (URI) Generic Syntax",
           "url": "https://www.rfc-editor.org/info/rfc3986/",
-          "author": "Tim Berners-Lee, Roy Fielding et Larry Masinter",
+          "author": "Tim Berners-Lee, Roy Fielding and Larry Masinter",
           "publisher": "RFC Editor",
           "datePublished": "2005-01-01"
         }

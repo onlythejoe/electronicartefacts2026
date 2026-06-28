@@ -4,12 +4,14 @@ type: concept
 slug:
   canonical: personal-knowledge-system
 title: Système personnel de connaissance
-definition: A personal knowledge système est un practice et outil environment
-  pour capturing, linking, revising et retrieving notes, sources, ideas et
-  decisions over time.
-abstract: Personal systèmes de connaissance connect digital gardens, wikis, note
-  archives, recherche méthodes, backlinks et long-term intellectual mémoire.
-description: A canonical concept record pour durable note et knowledge practices.
+definition: Système personnel de connaissance désigne les systèmes personnels d'organisation de
+  notes, sources, idees et connexions.
+abstract: Système personnel de connaissance définit un repère conceptuel en français pour comprendre
+  les systèmes personnels d'organisation de notes, sources, idees et connexions et ses liens avec
+  les projets, technologies et publications du graphe.
+description: Système personnel de connaissance définit un repère conceptuel en français pour
+  comprendre les systèmes personnels d'organisation de notes, sources, idees et connexions et ses
+  liens avec les projets, technologies et publications du graphe.
 locale: fr
 visibility: public
 publicationClass: canonical
@@ -25,44 +27,43 @@ authors:
   - id: ea:organization:electronic-artefacts
 publisher: ea:organization:electronic-artefacts
 scope:
-  - Notes
-  - Backlinks
-  - Digital gardens
-  - Recherche mémoire
-  - Retrieval
+  - définition du sujet
+  - contexte d'usage
+  - liens avec le graphe
+  - références associées
 exclusions:
-  - A task list avec no durable knowledge layer
-  - A document dump avec no structure ou review process
+  - les usages purement promotionnels sans définition vérifiable
+  - les exemples déconnectés des sources, relations ou contraintes du graphe
 claims:
-  - A useful knowledge système depends on retrieval et revision comme much comme
-    capture.
-  - Public knowledge hubs can borrow from personal knowledge practices while
-    adding editorial validation.
+  - Système personnel de connaissance devient utile lorsque sa définition reste reliée à des
+    sources, des pratiques et des objets observables.
+  - La fiche sert de vocabulaire commun pour relier projets, publications et technologies sans
+    mélanger les langues.
 tags:
   - Personal Knowledge Management
   - Digital Gardens
   - Notes
-  - Recherche
+  - Research
 disciplines:
-  - Systèmes de connaissance
-  - Recherche Méthodes
-  - Culture Internet
+  - Knowledge Systems
+  - Research Methods
+  - Internet Culture
   - Writing
 translationOf: ea:concept:personal-knowledge-system
 ---
 
 ## Rôle
 
-Système personnel de connaissance est documenté ici comme une entrée française du graphe public d’Electronic Artefacts. Personal systèmes de connaissance connect digital gardens, wikis, note archives, recherche méthodes, backlinks et long-term intellectual mémoire.
+Système personnel de connaissance est documenté comme notion de référence pour comprendre les systèmes personnels d'organisation de notes, sources, idees et connexions.
 
 ## Usage
 
-Cette notion sert à relier les projets, publications et technologies qui partagent un même vocabulaire de conception. A personal knowledge système est un practice et outil environment pour capturing, linking, revising et retrieving notes, sources, ideas et decisions over time.
+Cette fiche relie la notion aux projets, publications et technologies qui partagent un même vocabulaire de conception. Elle sert de point d'appui pour naviguer dans le graphe en version française.
 
-## Domaines
+## Périmètre
 
-Cette entrée croise notamment les domaines suivants : Systèmes de connaissance, Recherche Méthodes, Culture Internet, Writing.
+La notion est abordée par ses définitions, ses usages, ses limites et ses relations avec les autres objets documentés.
 
 ## Références
 
-Les références principales sont conservées dans la fiche canonique et dans le graphe de connaissance public.
+Les sources associées sont conservées dans la fiche canonique du graphe.

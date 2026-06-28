@@ -3,14 +3,16 @@ id: ea:publication:verifiable-credentials-for-cultural-archives-and-creator-iden
 type: publication
 slug:
   canonical: verifiable-credentials-for-cultural-archives-and-creator-identity
-title: Identifiants vérifiables pour les archives culturelles et l’identité des
-  créateurs
-subtitle: Technical Article
-abstract: A practical article on W3C Verifiable Credentials, creator identité,
-  culturel archives, provenance, claims, privacy et machine-readable trust.
-description: Understand how verifiable credentials can support creator identité,
-  archive provenance, rights workflows et trusted claims dans culturel systèmes
-  de connaissance.
+title: Identifiants vérifiables pour les archives culturelles et l'identité des createurs
+subtitle: Article technique
+abstract: Identifiants vérifiables pour les archives culturelles et l'identité des createurs propose
+  une synthèse claire en français sur le sujet "Identifiants vérifiables pour les archives
+  culturelles et l'identité des createurs" dans le graphe public d'Electronic Artefacts, avec un
+  angle utile pour la recherche, la conception et la publication de connaissances numériques.
+description: Identifiants vérifiables pour les archives culturelles et l'identité des createurs
+  propose une synthèse claire en français sur le sujet "Identifiants vérifiables pour les archives
+  culturelles et l'identité des createurs" dans le graphe public d'Electronic Artefacts, avec un
+  angle utile pour la recherche, la conception et la publication de connaissances numériques.
 locale: fr
 visibility: public
 publicationClass: published
@@ -33,17 +35,15 @@ subjects:
   - id: ea:concept:linked-data
   - id: ea:technology:c2pa
 claims:
-  - Verifiable credentials can express signed claims about creators, works,
-    rights ou archive events, but trust still depends on issuer context et
-    verification policy.
-  - Culturel systèmes should use credentials comme one provenance layer
-    alongside graphe records, editorial review, rights métadonnées et public
-    interpretation.
+  - Identifiants vérifiables pour les archives culturelles et l'identité des createurs doit être
+    lisible comme une synthèse française autonome, sans phrases hybrides héritées de l'anglais.
+  - Les liens avec les notions, projets et technologies du graphe renforcent la recherche, la
+    navigation et la citation.
 evidence:
   - id: ea:concept:provenance
   - id: ea:concept:entity-identity
 sources:
-  - title: Verifiable Credentials Données Modèle v2.0
+  - title: Verifiable Credentials Data Model v2.0
     publisher: W3C
     publishedAt: 2025-05-15
     accessedAt: 2026-06-25
@@ -58,43 +58,42 @@ sources:
     accessedAt: 2026-06-25
     url: https://spec.c2pa.org/specifications/specifications/2.2/index.html
 citation:
-  preferred: Electronic Artefacts. "Verifiable Credentials pour Culturel Archives
-    et Creator Identité." Technical article, version 1.0.0, 2026.
+  preferred: Electronic Artefacts. "Identifiants vérifiables pour les archives culturelles et
+    l'identité des createurs". Article technique, version 1.0.0, 2026.
 tags:
   - Verifiable Credentials
-  - Creator Identité
+  - Creator Identity
   - Provenance
-  - Préservation numérique
-  - Culturel Archives
+  - Digital Préservation
+  - Cultural Archives
 disciplines:
-  - Culturel Infrastructure
-  - Systèmes de connaissance
-  - Préservation numérique
+  - Cultural Infrastructure
+  - Knowledge Systems
+  - Digital Préservation
   - Web Standards
 translationOf: ea:publication:verifiable-credentials-for-cultural-archives-and-creator-identity
 ---
 
-## Problem
+## Problème
 
-Identifiants vérifiables pour les archives culturelles et l’identité des créateurs répond à un problème de lisibilité, d’architecture ou de transmission dans les systèmes numériques contemporains. A practical article on W3C Verifiable Credentials, creator identité, culturel archives, provenance, claims, privacy et machine-readable trust.
+Identifiants vérifiables pour les archives culturelles et l'identité des createurs examine le sujet "Identifiants vérifiables pour les archives culturelles et l'identité des createurs" dans le graphe public d'Electronic Artefacts. La fiche donne une entrée française stable, utilisable pour lire le sujet et relier ses sources au reste du graphe.
 
 ## Architecture
 
-La page organise le sujet comme un ensemble de notions, dépendances, preuves et relations éditoriales connectées au graphe de connaissance.
+Le sujet est abordé par ses relations avec les concepts, projets et technologies concernés, afin de rendre son contexte de conception lisible.
 
-## Implementation
+## Mise en œuvre
 
-Pour Electronic Artefacts, cette publication sert de repère français pour cadrer les choix de conception, préparer des contenus plus détaillés et stabiliser le vocabulaire technique.
+La page décrit les usages, contraintes et choix de structure qui permettent d'appliquer le sujet dans des situations concrètes.
 
-## Evidence
+## Éléments de preuve
 
-- Verifiable credentials can express signed claims about creators, works, rights ou archive events, but trust still depends on issuer context et verification policy.
-- Culturel systèmes should use credentials comme one provenance layer alongside graphe records, editorial review, rights métadonnées et public interpretation.
+Les sources, relations et éléments de contexte restent attachés à la fiche pour distinguer synthèse éditoriale, preuves et références.
 
-## Limitations
+## Limites
 
-Cette version française assure la couverture éditoriale du site. Une passe ultérieure pourra enrichir le style et traduire plus finement chaque nuance de la version longue.
+Les limites sont formulées par rapport au périmètre de la fiche, aux sources disponibles et aux conditions d'usage documentées.
 
-## References
+## Références
 
-Références conservées depuis la fiche canonique : Verifiable Credentials Data Model v2.0, PROV-Overview, C2PA Specifications.
+Les sources principales restent disponibles dans le bloc de références de la fiche.

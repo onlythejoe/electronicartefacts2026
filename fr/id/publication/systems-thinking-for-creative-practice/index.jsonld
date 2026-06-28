@@ -5,15 +5,15 @@
       "@type": "WebPage",
       "@id": "https://electronicartefacts.com/fr/publications/systems-thinking-for-creative-practice/#webpage",
       "url": "https://electronicartefacts.com/fr/publications/systems-thinking-for-creative-practice/",
-      "name": "Pensée systémique pour la pratique créative",
-      "description": "Learn systèmes thinking through creative practice, software, studios et culturel projects, avec practical mapping et intervention méthodes.",
+      "name": "Pensée systemique pour la pratique créative",
+      "description": "Pensée systemique pour la pratique créative propose une synthèse claire en français sur le sujet \"Pensée systemique pour la pratique créative\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
       "primaryImageOfPage": {
         "@type": "ImageObject",
         "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-search.jpg",
-        "description": "Pensée systémique pour la pratique créative"
+        "description": "Pensée systemique pour la pratique créative"
       },
       "breadcrumb": {
         "@id": "https://electronicartefacts.com/fr/publications/systems-thinking-for-creative-practice/#breadcrumb"
@@ -33,10 +33,10 @@
       "@type": "TechArticle",
       "@id": "https://electronicartefacts.com/fr/id/publication/systems-thinking-for-creative-practice/",
       "identifier": "ea:publication:systems-thinking-for-creative-practice-fr",
-      "name": "Pensée systémique pour la pratique créative",
-      "headline": "Pensée systémique pour la pratique créative",
-      "abstract": "A practical introduction à systèmes, boundaries, feedback, stocks, flows, delays, leverage points et their use dans creative et technical work.",
-      "description": "A practical introduction à systèmes, boundaries, feedback, stocks, flows, delays, leverage points et their use dans creative et technical work.",
+      "name": "Pensée systemique pour la pratique créative",
+      "headline": "Pensée systemique pour la pratique créative",
+      "abstract": "Pensée systemique pour la pratique créative propose une synthèse claire en français sur le sujet \"Pensée systemique pour la pratique créative\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
+      "description": "Pensée systemique pour la pratique créative propose une synthèse claire en français sur le sujet \"Pensée systemique pour la pratique créative\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
       "url": "https://electronicartefacts.com/fr/publications/systems-thinking-for-creative-practice/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/publications/systems-thinking-for-creative-practice/#webpage"
@@ -44,7 +44,7 @@
       "image": {
         "@type": "ImageObject",
         "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-search.jpg",
-        "description": "Pensée systémique pour la pratique créative"
+        "description": "Pensée systemique pour la pratique créative"
       },
       "author": [
         {
@@ -57,14 +57,14 @@
         }
       ],
       "keywords": [
-        "Pensée systémique",
+        "Systems Thinking",
         "Creative Practice",
         "Feedback",
         "Complexity",
         "Leverage Points",
-        "Systèmes Design",
+        "conception de systèmes",
         "Cybernetics",
-        "Design"
+        "design"
       ],
       "inLanguage": "fr",
       "dateCreated": "2026-06-24",
@@ -77,12 +77,12 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 174,
+      "wordCount": 143,
       "citation": [
-        "Electronic Artefacts. \"Systèmes Thinking pour Creative Practice.\" Recherche article, version 1.0.0, 2026.",
+        "Electronic Artefacts. \"Pensée systemique pour la pratique créative\". Article technique, version 1.0.0, 2026.",
         {
           "@type": "CreativeWork",
-          "name": "Thinking dans Systèmes",
+          "name": "Thinking in Systems",
           "url": "https://www.chelseagreen.com/product/thinking-in-systems/",
           "author": "Donella H. Meadows",
           "publisher": "Chelsea Green Publishing",
@@ -90,7 +90,7 @@
         },
         {
           "@type": "CreativeWork",
-          "name": "Cybernetics ou Control et Communication dans the Animal et the Machine",
+          "name": "Cybernetics or Control and Communication in the Animal and the Machine",
           "url": "https://direct.mit.edu/books/oa-monograph/4581/Cybernetics-or-Control-and-Communication-in-the",
           "author": "Norbert Wiener",
           "publisher": "MIT Press",
@@ -123,18 +123,18 @@
         }
       ],
       "articleSection": [
-        "Systèmes Design",
+        "conception de systèmes",
         "Cybernetics",
         "Complexity",
-        "Design",
-        "Pensée systémique",
+        "design",
+        "Systems Thinking",
         "Creative Practice"
       ],
       "timeRequired": "PT1M",
       "isBasedOn": [
         {
           "@type": "CreativeWork",
-          "name": "Thinking dans Systèmes",
+          "name": "Thinking in Systems",
           "url": "https://www.chelseagreen.com/product/thinking-in-systems/",
           "author": "Donella H. Meadows",
           "publisher": "Chelsea Green Publishing",
@@ -142,7 +142,7 @@
         },
         {
           "@type": "CreativeWork",
-          "name": "Cybernetics ou Control et Communication dans the Animal et the Machine",
+          "name": "Cybernetics or Control and Communication in the Animal and the Machine",
           "url": "https://direct.mit.edu/books/oa-monograph/4581/Cybernetics-or-Control-and-Communication-in-the",
           "author": "Norbert Wiener",
           "publisher": "MIT Press",
@@ -254,7 +254,7 @@
         {
           "@type": "ListItem",
           "position": 3,
-          "name": "Pensée systémique pour la pratique créative",
+          "name": "Pensée systemique pour la pratique créative",
           "item": "https://electronicartefacts.com/fr/publications/systems-thinking-for-creative-practice/"
         }
       ]

@@ -4,14 +4,14 @@ type: concept
 slug:
   canonical: digital-preservation
 title: Préservation numérique
-definition: Digital preservation est le long-term work de keeping digital
-  objects understandable, authentic, usable et accessible despite changes dans
-  formats, software, hardware et context.
-abstract: Digital preservation relie file formats, métadonnées, provenance,
-  storage, rights, migration et interpretation into a long-term care practice
-  pour digital culture.
-description: A canonical definition de préservation numérique pour Electronic
-  Artefacts archives, Palimpsests, Vestiges et knowledge infrastructure.
+definition: Préservation numérique désigne la conservation active des objets numériques, de leurs
+  formats, de leurs droits et de leurs contextes d'interpretation.
+abstract: Préservation numérique définit un repère conceptuel en français pour comprendre la
+  conservation active des objets numériques, de leurs formats, de leurs droits et de leurs contextes
+  d'interpretation et ses liens avec les projets, technologies et publications du graphe.
+description: Préservation numérique définit un repère conceptuel en français pour comprendre la
+  conservation active des objets numériques, de leurs formats, de leurs droits et de leurs contextes
+  d'interpretation et ses liens avec les projets, technologies et publications du graphe.
 locale: fr
 visibility: public
 publicationClass: canonical
@@ -27,58 +27,55 @@ authors:
   - id: ea:organization:electronic-artefacts
 publisher: ea:organization:electronic-artefacts
 scope:
-  - Long-term access
-  - File formats
-  - Métadonnées
-  - Provenance
-  - Fixity
-  - Migration
-  - Interpretation
+  - définition du sujet
+  - contexte d'usage
+  - liens avec le graphe
+  - références associées
 exclusions:
-  - Backup alone
-  - Cloud storage avec no métadonnées ou preservation plan
+  - les usages purement promotionnels sans définition vérifiable
+  - les exemples déconnectés des sources, relations ou contraintes du graphe
 claims:
-  - Digital preservation est un culturel et interpretive practice, not only a
-    storage problem.
-  - Born-digital artistic work requires preservation de context comme well comme
-    files.
+  - Préservation numérique devient utile lorsque sa définition reste reliée à des sources, des
+    pratiques et des objets observables.
+  - La fiche sert de vocabulaire commun pour relier projets, publications et technologies sans
+    mélanger les langues.
 sources:
-  - title: Préservation numérique Handbook
+  - title: Digital Preservation Handbook
     publisher: Digital Preservation Coalition
     publishedAt: 2015-01-01
     accessedAt: 2026-06-23
     url: https://www.dpconline.org/handbook
-  - title: Sustainability de Digital Formats
+  - title: Sustainability of Digital Formats
     publisher: Library of Congress
     accessedAt: 2026-06-23
     locator: Last updated 2024-06-18
     url: https://www.loc.gov/preservation/digital/formats/
 tags:
-  - Préservation numérique
+  - Digital Préservation
   - Archive
   - File Formats
   - Provenance
-  - Mémoire
+  - Memory
 disciplines:
   - Archives
-  - History de Technology
-  - Systèmes de connaissance
+  - History of Technology
+  - Knowledge Systems
   - Digital Art
 translationOf: ea:concept:digital-preservation
 ---
 
 ## Rôle
 
-Préservation numérique est documenté ici comme une entrée française du graphe public d’Electronic Artefacts. Digital preservation relie file formats, métadonnées, provenance, storage, rights, migration et interpretation into a long-term care practice pour digital culture.
+Préservation numérique est documenté comme notion de référence pour comprendre la conservation active des objets numériques, de leurs formats, de leurs droits et de leurs contextes d'interpretation.
 
 ## Usage
 
-Cette notion sert à relier les projets, publications et technologies qui partagent un même vocabulaire de conception. Digital preservation est le long-term work de keeping digital objects understandable, authentic, usable et accessible despite changes dans formats, software, hardware et context.
+Cette fiche relie la notion aux projets, publications et technologies qui partagent un même vocabulaire de conception. Elle sert de point d'appui pour naviguer dans le graphe en version française.
 
-## Domaines
+## Périmètre
 
-Cette entrée croise notamment les domaines suivants : Archives, History de Technology, Systèmes de connaissance, Digital Art.
+La notion est abordée par ses définitions, ses usages, ses limites et ses relations avec les autres objets documentés.
 
 ## Références
 
-Les références principales restent les sources indiquées dans la fiche canonique, notamment Digital Preservation Handbook et Sustainability of Digital Formats.
+Les sources principales restent disponibles dans le bloc de références de la fiche.

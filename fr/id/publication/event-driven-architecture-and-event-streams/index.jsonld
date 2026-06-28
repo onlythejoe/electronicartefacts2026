@@ -5,15 +5,15 @@
       "@type": "WebPage",
       "@id": "https://electronicartefacts.com/fr/publications/event-driven-architecture-and-event-streams/#webpage",
       "url": "https://electronicartefacts.com/fr/publications/event-driven-architecture-and-event-streams/",
-      "name": "Architecture événementielle et flux d’événements",
-      "description": "Learn event-driven architecture through event streams, delivery guarantees, schema evolution, idempotency, projections et runtime design.",
+      "name": "Architecture événementielle et flux d'evenements",
+      "description": "Architecture événementielle et flux d'evenements propose une synthèse claire en français sur le sujet \"Architecture événementielle et flux d'evenements\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
       "primaryImageOfPage": {
         "@type": "ImageObject",
         "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-search.jpg",
-        "description": "Architecture événementielle et flux d’événements"
+        "description": "Architecture événementielle et flux d'evenements"
       },
       "breadcrumb": {
         "@id": "https://electronicartefacts.com/fr/publications/event-driven-architecture-and-event-streams/#breadcrumb"
@@ -33,10 +33,10 @@
       "@type": "TechArticle",
       "@id": "https://electronicartefacts.com/fr/id/publication/event-driven-architecture-and-event-streams/",
       "identifier": "ea:publication:event-driven-architecture-and-event-streams-fr",
-      "name": "Architecture événementielle et flux d’événements",
-      "headline": "Architecture événementielle et flux d’événements",
-      "abstract": "A practical explanation de events, commands, queues, logs, brokers, schemas, delivery sémantiques, idempotency, projections, replay et observability.",
-      "description": "A practical explanation de events, commands, queues, logs, brokers, schemas, delivery sémantiques, idempotency, projections, replay et observability.",
+      "name": "Architecture événementielle et flux d'evenements",
+      "headline": "Architecture événementielle et flux d'evenements",
+      "abstract": "Architecture événementielle et flux d'evenements propose une synthèse claire en français sur le sujet \"Architecture événementielle et flux d'evenements\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
+      "description": "Architecture événementielle et flux d'evenements propose une synthèse claire en français sur le sujet \"Architecture événementielle et flux d'evenements\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
       "url": "https://electronicartefacts.com/fr/publications/event-driven-architecture-and-event-streams/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/publications/event-driven-architecture-and-event-streams/#webpage"
@@ -44,7 +44,7 @@
       "image": {
         "@type": "ImageObject",
         "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-search.jpg",
-        "description": "Architecture événementielle et flux d’événements"
+        "description": "Architecture événementielle et flux d'evenements"
       },
       "author": [
         {
@@ -57,14 +57,14 @@
         }
       ],
       "keywords": [
-        "Architecture événementielle",
+        "Event-Driven Architecture",
         "Event Streams",
         "CloudEvents",
         "Idempotency",
         "Event Sourcing",
-        "Software Architecture",
-        "Systèmes Design",
-        "Distributed Systèmes",
+        "architecture logicielle",
+        "conception de systèmes",
+        "Distributed Systems",
         "Programming"
       ],
       "inLanguage": "fr",
@@ -78,9 +78,9 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 153,
+      "wordCount": 141,
       "citation": [
-        "Electronic Artefacts. \"Event-Driven Architecture et Event Streams.\" Technical article, version 1.0.0, 2026.",
+        "Electronic Artefacts. \"Architecture événementielle et flux d'evenements\". Article technique, version 1.0.0, 2026.",
         {
           "@type": "CreativeWork",
           "name": "CloudEvents",
@@ -128,11 +128,11 @@
         }
       ],
       "articleSection": [
-        "Software Architecture",
-        "Systèmes Design",
-        "Distributed Systèmes",
+        "architecture logicielle",
+        "conception de systèmes",
+        "Distributed Systems",
         "Programming",
-        "Architecture événementielle",
+        "Event-Driven Architecture",
         "Event Streams"
       ],
       "timeRequired": "PT1M",
@@ -263,7 +263,7 @@
         {
           "@type": "ListItem",
           "position": 3,
-          "name": "Architecture événementielle et flux d’événements",
+          "name": "Architecture événementielle et flux d'evenements",
           "item": "https://electronicartefacts.com/fr/publications/event-driven-architecture-and-event-streams/"
         }
       ]

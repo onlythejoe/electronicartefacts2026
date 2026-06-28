@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/publications/knowledge-graphs-for-cultural-infrastructure/#webpage",
       "url": "https://electronicartefacts.com/fr/publications/knowledge-graphs-for-cultural-infrastructure/",
       "name": "Graphes de connaissances pour les infrastructures culturelles",
-      "description": "A technical article on graphee de connaissancess, culturel heritage, provenance et public knowledge pages, connected à Vestiges et the Electronic Artefacts graphe.",
+      "description": "Graphes de connaissances pour les infrastructures culturelles propose une synthèse claire en français sur le sujet \"Graphes de connaissances pour les infrastructures culturelles\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
@@ -35,8 +35,8 @@
       "identifier": "ea:publication:knowledge-graphs-for-cultural-infrastructure-fr",
       "name": "Graphes de connaissances pour les infrastructures culturelles",
       "headline": "Graphes de connaissances pour les infrastructures culturelles",
-      "abstract": "This article explains how graphee de connaissancess support culturel infrastructure by giving people, works, sources, concepts, projects et archives stable identités et explicit relations.",
-      "description": "This article explains how graphee de connaissancess support culturel infrastructure by giving people, works, sources, concepts, projects et archives stable identités et explicit relations.",
+      "abstract": "Graphes de connaissances pour les infrastructures culturelles propose une synthèse claire en français sur le sujet \"Graphes de connaissances pour les infrastructures culturelles\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
+      "description": "Graphes de connaissances pour les infrastructures culturelles propose une synthèse claire en français sur le sujet \"Graphes de connaissances pour les infrastructures culturelles\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
       "url": "https://electronicartefacts.com/fr/publications/knowledge-graphs-for-cultural-infrastructure/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/publications/knowledge-graphs-for-cultural-infrastructure/#webpage"
@@ -57,15 +57,15 @@
         }
       ],
       "keywords": [
-        "Graphe de connaissances",
-        "Culturel Infrastructure",
-        "Données liées",
+        "graphe de connaissances",
+        "Cultural Infrastructure",
+        "Linked Data",
         "Provenance",
         "Vestiges",
-        "Systèmes de connaissance",
+        "Knowledge Systems",
         "Archives",
         "Information Architecture",
-        "Recherche Méthodes"
+        "Research Methods"
       ],
       "inLanguage": "fr",
       "dateCreated": "2026-06-23",
@@ -78,19 +78,19 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 181,
+      "wordCount": 145,
       "citation": [
-        "Electronic Artefacts. \"Graphee de connaissancess pour Culturel Infrastructure.\" Technical article, version 1.0.0, 2026.",
+        "Electronic Artefacts. \"Graphes de connaissances pour les infrastructures culturelles\". Article technique, version 1.0.0, 2026.",
         {
           "@type": "CreativeWork",
-          "name": "RDF 1.1 Concepts et Abstract Syntax",
+          "name": "RDF 1.1 Concepts and Abstract Syntax",
           "url": "https://www.w3.org/TR/rdf11-concepts/",
           "publisher": "W3C",
           "datePublished": "2014-02-25"
         },
         {
           "@type": "CreativeWork",
-          "name": "The CIDOC Conceptual Reference Modèle",
+          "name": "The CIDOC Conceptual Reference Model",
           "url": "https://www.cidoc-crm.org/",
           "publisher": "CIDOC CRM Special Interest Group"
         },
@@ -128,25 +128,25 @@
         }
       ],
       "articleSection": [
-        "Systèmes de connaissance",
+        "Knowledge Systems",
         "Archives",
         "Information Architecture",
-        "Recherche Méthodes",
-        "Graphe de connaissances",
-        "Culturel Infrastructure"
+        "Research Methods",
+        "graphe de connaissances",
+        "Cultural Infrastructure"
       ],
       "timeRequired": "PT1M",
       "isBasedOn": [
         {
           "@type": "CreativeWork",
-          "name": "RDF 1.1 Concepts et Abstract Syntax",
+          "name": "RDF 1.1 Concepts and Abstract Syntax",
           "url": "https://www.w3.org/TR/rdf11-concepts/",
           "publisher": "W3C",
           "datePublished": "2014-02-25"
         },
         {
           "@type": "CreativeWork",
-          "name": "The CIDOC Conceptual Reference Modèle",
+          "name": "The CIDOC Conceptual Reference Model",
           "url": "https://www.cidoc-crm.org/",
           "publisher": "CIDOC CRM Special Interest Group"
         },

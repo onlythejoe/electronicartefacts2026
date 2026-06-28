@@ -3,14 +3,15 @@ id: ea:concept:systems-thinking-fr
 type: concept
 slug:
   canonical: systems-thinking
-title: Pensée systémique
-definition: Systèmes thinking est un approach that studies elements through
-  their relationships, feedback, boundaries, delays, stocks, flows et patterns
-  de behavior over time.
-abstract: Systèmes thinking helps creators et technologists understand why local
-  interventions can produce indirect, delayed ou counterintuitive effects.
-description: A canonical definition de systèmes thinking pour creative practice,
-  software architecture et organizational design.
+title: Pensée systemique
+definition: Pensée systemique désigne la lecture des situations par relations, limites, boucles,
+  flux, delais et points de levier.
+abstract: Pensée systemique définit un repère conceptuel en français pour comprendre la lecture des
+  situations par relations, limites, boucles, flux, delais et points de levier et ses liens avec les
+  projets, technologies et publications du graphe.
+description: Pensée systemique définit un repère conceptuel en français pour comprendre la lecture
+  des situations par relations, limites, boucles, flux, delais et points de levier et ses liens avec
+  les projets, technologies et publications du graphe.
 locale: fr
 visibility: public
 publicationClass: canonical
@@ -26,54 +27,51 @@ authors:
   - id: ea:organization:electronic-artefacts
 publisher: ea:organization:electronic-artefacts
 scope:
-  - Système boundaries
-  - Relationships
-  - Feedback loops
-  - Stocks et flows
-  - Delays
-  - Leverage points
+  - définition du sujet
+  - contexte d'usage
+  - liens avec le graphe
+  - références associées
 exclusions:
-  - Calling any complicated object a système without defining its elements et
-    relations
-  - Treating a diagram comme proof that système behavior is understood
+  - les usages purement promotionnels sans définition vérifiable
+  - les exemples déconnectés des sources, relations ou contraintes du graphe
 claims:
-  - Système behavior often emerges from structure et feedback rather than
-    isolated components.
-  - Creative et technical interventions should account pour second-order effects
-    et delayed feedback.
+  - Pensée systemique devient utile lorsque sa définition reste reliée à des sources, des pratiques
+    et des objets observables.
+  - La fiche sert de vocabulaire commun pour relier projets, publications et technologies sans
+    mélanger les langues.
 sources:
-  - title: Thinking dans Systèmes
+  - title: Thinking in Systems
     author: Donella H. Meadows
     publisher: Chelsea Green Publishing
     publishedAt: 2008-12-03
     accessedAt: 2026-06-24
     url: https://www.chelseagreen.com/product/thinking-in-systems/
 tags:
-  - Pensée systémique
+  - Systems Thinking
   - Feedback
   - Boundaries
   - Leverage Points
   - Complexity
 disciplines:
-  - Systèmes Design
+  - conception de systèmes
   - Cybernetics
   - Complexity
-  - Design
+  - design
 translationOf: ea:concept:systems-thinking
 ---
 
 ## Rôle
 
-Pensée systémique est documenté ici comme une entrée française du graphe public d’Electronic Artefacts. Systèmes thinking helps creators et technologists understand why local interventions can produce indirect, delayed ou counterintuitive effects.
+Pensée systemique est documenté comme notion de référence pour comprendre la lecture des situations par relations, limites, boucles, flux, delais et points de levier.
 
 ## Usage
 
-Cette notion sert à relier les projets, publications et technologies qui partagent un même vocabulaire de conception. Systèmes thinking est un approach that studies elements through their relationships, feedback, boundaries, delays, stocks, flows et patterns de behavior over time.
+Cette fiche relie la notion aux projets, publications et technologies qui partagent un même vocabulaire de conception. Elle sert de point d'appui pour naviguer dans le graphe en version française.
 
-## Domaines
+## Périmètre
 
-Cette entrée croise notamment les domaines suivants : Systèmes Design, Cybernetics, Complexity, Design.
+La notion est abordée par ses définitions, ses usages, ses limites et ses relations avec les autres objets documentés.
 
 ## Références
 
-Les références principales restent les sources indiquées dans la fiche canonique, notamment Thinking in Systems.
+Les sources principales restent disponibles dans le bloc de références de la fiche.

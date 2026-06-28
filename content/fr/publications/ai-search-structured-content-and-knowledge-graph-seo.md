@@ -3,14 +3,16 @@ id: ea:publication:ai-search-structured-content-and-knowledge-graph-seo-fr
 type: publication
 slug:
   canonical: ai-search-structured-content-and-knowledge-graph-seo
-title: Recherche IA, contenu structuré et SEO par graphe de connaissances
-subtitle: Technical Article
-abstract: A practical article on AI search visibility, structured content,
-  JSON-LD, entité identité, graphee de connaissances SEO et non-commodity
-  editorial authority.
-description: Understand how AI search changes SEO strategy through helpful
-  content, structured données, crawlable pages, entité identité et graphee de
-  connaissances architecture.
+title: Recherche IA, contenu structure et SEO par graphe de connaissances
+subtitle: Article technique
+abstract: Recherche IA, contenu structure et SEO par graphe de connaissances propose une synthèse
+  claire en français sur le sujet "Recherche IA, contenu structure et SEO par graphe de
+  connaissances" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la
+  recherche, la conception et la publication de connaissances numériques.
+description: Recherche IA, contenu structure et SEO par graphe de connaissances propose une synthèse
+  claire en français sur le sujet "Recherche IA, contenu structure et SEO par graphe de
+  connaissances" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la
+  recherche, la conception et la publication de connaissances numériques.
 locale: fr
 visibility: public
 publicationClass: published
@@ -34,20 +36,19 @@ subjects:
   - id: ea:concept:retrieval-augmented-generation
   - id: ea:technology:json-ld
 claims:
-  - AI search visibility depends on useful, crawlable, attributable content
-    rather than a separate layer de generative-engine tricks.
-  - Knowledge graphe SEO relie entités, sources, relations et structured données
-    so that humans et retrieval systèmes can understand a site comme a coherent
-    corpus.
+  - Recherche IA, contenu structure et SEO par graphe de connaissances doit être lisible comme une
+    synthèse française autonome, sans phrases hybrides héritées de l'anglais.
+  - Les liens avec les notions, projets et technologies du graphe renforcent la recherche, la
+    navigation et la citation.
 evidence:
   - id: ea:concept:linked-data
   - id: ea:technology:json-ld
 sources:
-  - title: Optimizing your website pour generative AI features on Google Search
+  - title: Optimizing your website for generative AI features on Google Search
     publisher: Google Search Central
     accessedAt: 2026-06-25
     url: https://developers.google.com/search/docs/fundamentals/ai-optimization-guide
-  - title: Introduction à structured données markup dans Google Search
+  - title: Introduction to structured data markup in Google Search
     publisher: Google Search Central
     accessedAt: 2026-06-25
     url: https://developers.google.com/search/docs/appearance/structured-data/intro-structured-data
@@ -56,43 +57,42 @@ sources:
     accessedAt: 2026-06-25
     url: https://schema.org/Article
 citation:
-  preferred: Electronic Artefacts. "AI Search, Structured Content et Graphee de
-    connaissances SEO." Technical article, version 1.0.0, 2026.
+  preferred: Electronic Artefacts. "Recherche IA, contenu structure et SEO par graphe de
+    connaissances". Article technique, version 1.0.0, 2026.
 tags:
   - AI Search
-  - Graphee de connaissances SEO
-  - Structured Données
+  - SEO par graphe de connaissances
+  - Structured Data
   - JSON-LD
-  - Entité SEO
+  - Entity SEO
 disciplines:
   - SEO
-  - Systèmes de connaissance
+  - Knowledge Systems
   - Web Development
   - Information Architecture
 translationOf: ea:publication:ai-search-structured-content-and-knowledge-graph-seo
 ---
 
-## Problem
+## Problème
 
-Recherche IA, contenu structuré et SEO par graphe de connaissances répond à un problème de lisibilité, d’architecture ou de transmission dans les systèmes numériques contemporains. A practical article on AI search visibility, structured content, JSON-LD, entité identité, graphee de connaissances SEO et non-commodity editorial authority.
+Recherche IA, contenu structure et SEO par graphe de connaissances examine le sujet "Recherche IA, contenu structure et SEO par graphe de connaissances" dans le graphe public d'Electronic Artefacts. La fiche donne une entrée française stable, utilisable pour lire le sujet et relier ses sources au reste du graphe.
 
 ## Architecture
 
-La page organise le sujet comme un ensemble de notions, dépendances, preuves et relations éditoriales connectées au graphe de connaissance.
+Le sujet est abordé par ses relations avec les concepts, projets et technologies concernés, afin de rendre son contexte de conception lisible.
 
-## Implementation
+## Mise en œuvre
 
-Pour Electronic Artefacts, cette publication sert de repère français pour cadrer les choix de conception, préparer des contenus plus détaillés et stabiliser le vocabulaire technique.
+La page décrit les usages, contraintes et choix de structure qui permettent d'appliquer le sujet dans des situations concrètes.
 
-## Evidence
+## Éléments de preuve
 
-- AI search visibility depends on useful, crawlable, attributable content rather than a separate layer de generative-engine tricks.
-- Knowledge graphe SEO relie entités, sources, relations et structured données so that humans et retrieval systèmes can understand a site comme a coherent corpus.
+Les sources, relations et éléments de contexte restent attachés à la fiche pour distinguer synthèse éditoriale, preuves et références.
 
-## Limitations
+## Limites
 
-Cette version française assure la couverture éditoriale du site. Une passe ultérieure pourra enrichir le style et traduire plus finement chaque nuance de la version longue.
+Les limites sont formulées par rapport au périmètre de la fiche, aux sources disponibles et aux conditions d'usage documentées.
 
-## References
+## Références
 
-Références conservées depuis la fiche canonique : Optimizing your website for generative AI features on Google Search, Introduction to structured data markup in Google Search, Article.
+Les sources principales restent disponibles dans le bloc de références de la fiche.

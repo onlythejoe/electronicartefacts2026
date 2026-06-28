@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/knowledge/technologies/rdf/#webpage",
       "url": "https://electronicartefacts.com/fr/knowledge/technologies/rdf/",
       "name": "RDF",
-      "description": "A technology record pour RDF comme a reference modèle behind graphee de connaissancess, Données liées et sémantique publication.",
+      "description": "RDF est présenté comme une technologie de référence pour comprendre son rôle dans l'écosystème Electronic Artefacts, ses usages, ses limites et sa place dans les systèmes numériques contemporains.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
@@ -34,8 +34,8 @@
       "@id": "https://electronicartefacts.com/fr/id/technology/rdf/",
       "identifier": "ea:technology:rdf-fr",
       "name": "RDF",
-      "abstract": "RDF est un W3C graphe données modèle pour representing information comme subject-predicate-object statements about resources.",
-      "description": "RDF est un W3C graphe données modèle pour representing information comme subject-predicate-object statements about resources.",
+      "abstract": "RDF est présenté comme une technologie de référence pour comprendre son rôle dans l'écosystème Electronic Artefacts, ses usages, ses limites et sa place dans les systèmes numériques contemporains.",
+      "description": "RDF est présenté comme une technologie de référence pour comprendre son rôle dans l'écosystème Electronic Artefacts, ses usages, ses limites et sa place dans les systèmes numériques contemporains.",
       "url": "https://electronicartefacts.com/fr/knowledge/technologies/rdf/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/knowledge/technologies/rdf/#webpage"
@@ -57,11 +57,11 @@
       ],
       "keywords": [
         "RDF",
-        "Sémantique Web",
-        "Données liées",
-        "Graphe",
+        "Semantic Web",
+        "Linked Data",
+        "Graph",
         "Web Development",
-        "Systèmes de connaissance"
+        "Knowledge Systems"
       ],
       "inLanguage": "fr",
       "dateCreated": "2014-02-25",
@@ -74,11 +74,11 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 95,
+      "wordCount": 93,
       "citation": [
         {
           "@type": "CreativeWork",
-          "name": "RDF 1.1 Concepts et Abstract Syntax",
+          "name": "RDF 1.1 Concepts and Abstract Syntax",
           "url": "https://www.w3.org/TR/rdf11-concepts/",
           "publisher": "W3C",
           "datePublished": "2014-02-25"

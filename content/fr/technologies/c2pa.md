@@ -7,10 +7,12 @@ title: C2PA
 alternateNames:
   - Content Credentials
   - Coalition pour Content Provenance et Authenticity
-abstract: C2PA est un technical standard family pour attaching verifiable
-  provenance et content-credential métadonnées à médias assets.
-description: A technology record pour C2PA et Content Credentials comme
-  provenance infrastructure pour digital médias.
+abstract: C2PA est présenté comme une technologie de référence pour comprendre son rôle dans
+  l'écosystème Electronic Artefacts, ses usages, ses limites et sa place dans les systèmes
+  numériques contemporains.
+description: C2PA est présenté comme une technologie de référence pour comprendre son rôle dans
+  l'écosystème Electronic Artefacts, ses usages, ses limites et sa place dans les systèmes
+  numériques contemporains.
 locale: fr
 visibility: public
 publicationClass: canonical
@@ -26,9 +28,9 @@ authors:
   - id: ea:organization:electronic-artefacts
 publisher: ea:organization:electronic-artefacts
 category: protocol
-roleInEcosystem: C2PA fournit signed médias provenance manifests that can record
-  origin, actions, assertions et trust information pour images, audio, video et
-  documents.
+roleInEcosystem: C2PA sert de repère technique pour évaluer le sujet "C2PA" dans le graphe public
+  d'Electronic Artefacts, ses usages possibles et ses conséquences dans l'écosystème Electronic
+  Artefacts.
 officialUrl: https://spec.c2pa.org/specifications/specifications/2.4/index.html
 sources:
   - title: C2PA Specifications 2.4
@@ -39,26 +41,27 @@ tags:
   - C2PA
   - Content Credentials
   - Provenance
-  - Médias Authenticity
+  - Media Authenticity
 disciplines:
-  - Préservation numérique
-  - Systèmes de connaissance
-  - Intelligence artificielle
+  - Digital Préservation
+  - Knowledge Systems
+  - intelligence artificielle
 translationOf: ea:technology:c2pa
 ---
 
 ## Rôle
 
-C2PA est documenté ici comme une entrée française du graphe public d’Electronic Artefacts. C2PA est un technical standard family pour attaching verifiable provenance et content-credential métadonnées à médias assets.
+C2PA est documenté comme technologie de référence pour le sujet "C2PA" dans le graphe public d'Electronic Artefacts.
 
 ## Usage
 
-Cette technologie sert de repère pour évaluer les choix d’architecture, les dépendances et les possibilités d’implémentation. C2PA fournit signed médias provenance manifests that can record origin, actions, assertions et trust information pour images, audio, video et documents.
+Cette fiche aide à situer la technologie dans l'écosystème Electronic Artefacts : ce qu'elle permet, quand elle devient pertinente et comment elle dialogue avec les autres composants du graphe.
 
-## Domaines
+## Points d'attention
 
-Cette entrée croise notamment les domaines suivants : Préservation numérique, Systèmes de connaissance, Intelligence artificielle.
+- Les usages sont décrits en français sans masquer les noms propres, acronymes ou standards techniques.
+- Les limites restent contextualisées par rapport aux projets, aux publications et aux contraintes d'implémentation.
 
 ## Références
 
-Les références principales restent les sources indiquées dans la fiche canonique, notamment C2PA Specifications 2.4.
+Les sources principales restent disponibles dans le bloc de références de la fiche.

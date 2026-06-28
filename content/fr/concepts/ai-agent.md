@@ -3,14 +3,15 @@ id: ea:concept:ai-agent-fr
 type: concept
 slug:
   canonical: ai-agent
-title: Agent d’IA
-definition: An AI agent est un software système dans which a modèle can select
-  actions, use outils, observe results et adapt its next steps toward an
-  objective within defined boundaries.
-abstract: AI agents combine modèles, outils, mémoire, environmental feedback,
-  stopping conditions, permissions et evaluation dans an iterative action loop.
-description: A canonical definition distinguishing AI agents from fixed AI
-  workflows et conventional automation.
+title: Agent d'IA
+definition: Agent d'IA désigne les agents logiciels capables d'observer un contexte, de choisir une
+  action et de mobiliser des outils avec une autonomie encadrée.
+abstract: Agent d'IA définit un repère conceptuel en français pour comprendre les agents logiciels
+  capables d'observer un contexte, de choisir une action et de mobiliser des outils avec une
+  autonomie encadrée et ses liens avec les projets, technologies et publications du graphe.
+description: Agent d'IA définit un repère conceptuel en français pour comprendre les agents
+  logiciels capables d'observer un contexte, de choisir une action et de mobiliser des outils avec
+  une autonomie encadrée et ses liens avec les projets, technologies et publications du graphe.
 locale: fr
 visibility: public
 publicationClass: canonical
@@ -26,53 +27,51 @@ authors:
   - id: ea:organization:electronic-artefacts
 publisher: ea:organization:electronic-artefacts
 scope:
-  - Outil use
-  - Planning
-  - Environmental feedback
-  - Mémoire et state
-  - Permissions
-  - Stopping conditions
+  - définition du sujet
+  - contexte d'usage
+  - liens avec le graphe
+  - références associées
 exclusions:
-  - A fixed sequence de modèle calls avec no modèle-directed action selection
-  - Unbounded autonomy avec no observable state ou control surface
+  - les usages purement promotionnels sans définition vérifiable
+  - les exemples déconnectés des sources, relations ou contraintes du graphe
 claims:
-  - Agency est un architectural property de the whole système, not a property de
-    the modèle output alone.
-  - Agents require stronger permissions, observability et evaluation than
-    deterministic workflows.
+  - Agent d'IA devient utile lorsque sa définition reste reliée à des sources, des pratiques et des
+    objets observables.
+  - La fiche sert de vocabulaire commun pour relier projets, publications et technologies sans
+    mélanger les langues.
 sources:
   - title: Building Effective Agents
-    author: Erik Schluntz et Barry Zhang
+    author: Erik Schluntz and Barry Zhang
     publisher: Anthropic
     publishedAt: 2024-12-19
     accessedAt: 2026-06-24
     url: https://www.anthropic.com/engineering/building-effective-agents
 tags:
-  - AI Agents
-  - Outil Use
-  - Automation
-  - Orchestration
-  - Human Oversight
+  - agents d'IA
+  - usage d'outils
+  - automatisation
+  - orchestration
+  - supervision humaine
 disciplines:
-  - Intelligence artificielle
-  - Systèmes Design
-  - Human Computer Interaction
-  - Software Architecture
+  - intelligence artificielle
+  - conception de systèmes
+  - interaction humain-machine
+  - architecture logicielle
 translationOf: ea:concept:ai-agent
 ---
 
 ## Rôle
 
-Agent d’IA est documenté ici comme une entrée française du graphe public d’Electronic Artefacts. AI agents combine modèles, outils, mémoire, environmental feedback, stopping conditions, permissions et evaluation dans an iterative action loop.
+Agent d'IA est documenté comme notion de référence pour comprendre les agents logiciels capables d'observer un contexte, de choisir une action et de mobiliser des outils avec une autonomie encadrée.
 
 ## Usage
 
-Cette notion sert à relier les projets, publications et technologies qui partagent un même vocabulaire de conception. An AI agent est un software système dans which a modèle can select actions, use outils, observe results et adapt its next steps toward an objective within defined boundaries.
+Cette fiche relie la notion aux projets, publications et technologies qui partagent un même vocabulaire de conception. Elle sert de point d'appui pour naviguer dans le graphe en version française.
 
-## Domaines
+## Périmètre
 
-Cette entrée croise notamment les domaines suivants : Intelligence artificielle, Systèmes Design, Human Computer Interaction, Software Architecture.
+La notion est abordée par ses définitions, ses usages, ses limites et ses relations avec les autres objets documentés.
 
 ## Références
 
-Les références principales restent les sources indiquées dans la fiche canonique, notamment Building Effective Agents.
+Les sources principales restent disponibles dans le bloc de références de la fiche.

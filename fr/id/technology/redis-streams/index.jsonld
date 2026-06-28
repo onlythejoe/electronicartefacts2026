@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/knowledge/technologies/redis-streams/#webpage",
       "url": "https://electronicartefacts.com/fr/knowledge/technologies/redis-streams/",
       "name": "Redis Streams",
-      "description": "Fiche technologique consacrée aux flux d’événements, à l’orchestration et au traitement en temps réel.",
+      "description": "Redis Streams est présenté comme une technologie de référence pour comprendre son rôle dans l'écosystème Electronic Artefacts, ses usages, ses limites et sa place dans les systèmes numériques contemporains.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
@@ -34,8 +34,8 @@
       "@id": "https://electronicartefacts.com/fr/id/technology/redis-streams/",
       "identifier": "ea:technology:redis-streams-fr",
       "name": "Redis Streams",
-      "abstract": "Redis Streams est un type de données de journal en ajout seul comprenant des entrées ordonnées, des lectures par plage, l’élagage et le traitement par groupes de consommateurs.",
-      "description": "Redis Streams est un type de données de journal en ajout seul comprenant des entrées ordonnées, des lectures par plage, l’élagage et le traitement par groupes de consommateurs.",
+      "abstract": "Redis Streams est présenté comme une technologie de référence pour comprendre son rôle dans l'écosystème Electronic Artefacts, ses usages, ses limites et sa place dans les systèmes numériques contemporains.",
+      "description": "Redis Streams est présenté comme une technologie de référence pour comprendre son rôle dans l'écosystème Electronic Artefacts, ses usages, ses limites et sa place dans les systèmes numériques contemporains.",
       "url": "https://electronicartefacts.com/fr/knowledge/technologies/redis-streams/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/knowledge/technologies/redis-streams/#webpage"
@@ -57,12 +57,12 @@
       ],
       "keywords": [
         "Redis Streams",
-        "Journal d’événements",
-        "Groupes de consommateurs",
-        "Orchestration",
-        "Architecture logicielle",
-        "Programmation",
-        "Systèmes distribués"
+        "Event Log",
+        "Consumer Groups",
+        "orchestration",
+        "architecture logicielle",
+        "Programming",
+        "Distributed Systems"
       ],
       "inLanguage": "fr",
       "dateCreated": "2026-06-24",
@@ -75,7 +75,7 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 64,
+      "wordCount": 95,
       "citation": [
         {
           "@type": "CreativeWork",

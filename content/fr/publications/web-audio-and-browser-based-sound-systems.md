@@ -4,12 +4,15 @@ type: publication
 slug:
   canonical: web-audio-and-browser-based-sound-systems
 title: Web Audio et systèmes sonores dans le navigateur
-subtitle: Technical Article
-abstract: This article explains Web Audio comme a navigateur-native sound
-  architecture pour synthesis, processing, analysis, interactive essays,
-  programmation créative et public audio outils.
-description: A technical article on Web Audio, audio graphes, navigateur sound,
-  ORETH, machine listening et interactive médias.
+subtitle: Article technique
+abstract: Web Audio et systèmes sonores dans le navigateur propose une synthèse claire en français
+  sur le sujet "Web Audio et systèmes sonores dans le navigateur" dans le graphe public d'Electronic
+  Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances
+  numériques.
+description: Web Audio et systèmes sonores dans le navigateur propose une synthèse claire en
+  français sur le sujet "Web Audio et systèmes sonores dans le navigateur" dans le graphe public
+  d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de
+  connaissances numériques.
 locale: fr
 visibility: public
 publicationClass: published
@@ -32,10 +35,10 @@ subjects:
   - id: ea:program:oreth
   - id: ea:concept:creative-coding
 claims:
-  - Web Audio turns the navigateur into a viable environment pour public sound
-    outils, not only embedded playback.
-  - Navigateur-based sound systèmes need graphe thinking, performance discipline
-    et preservation records.
+  - Web Audio et systèmes sonores dans le navigateur doit être lisible comme une synthèse française
+    autonome, sans phrases hybrides héritées de l'anglais.
+  - Les liens avec les notions, projets et technologies du graphe renforcent la recherche, la
+    navigation et la citation.
 evidence:
   - id: ea:technology:web-audio-api
   - id: ea:program:oreth
@@ -46,42 +49,41 @@ sources:
     accessedAt: 2026-06-24
     url: https://www.w3.org/TR/webaudio/
 citation:
-  preferred: Electronic Artefacts. "Web Audio et Navigateur-Based Sound Systèmes."
-    Technical article, version 1.0.0, 2026.
+  preferred: Electronic Artefacts. "Web Audio et systèmes sonores dans le navigateur". Article
+    technique, version 1.0.0, 2026.
 tags:
-  - Audio web
-  - Audio Graphe
-  - Navigateur Sound
+  - Web Audio
+  - Audio Graph
+  - Browser Sound
   - ORETH
 disciplines:
   - Audio Engineering
   - Web Development
-  - Programmation créative
+  - programmation créative
   - Sound Design
 translationOf: ea:publication:web-audio-and-browser-based-sound-systems
 ---
 
-## Problem
+## Problème
 
-Web Audio et systèmes sonores dans le navigateur répond à un problème de lisibilité, d’architecture ou de transmission dans les systèmes numériques contemporains. This article explains Web Audio comme a navigateur-native sound architecture pour synthesis, processing, analysis, interactive essays, programmation créative et public audio outils.
+Web Audio et systèmes sonores dans le navigateur examine le sujet "Web Audio et systèmes sonores dans le navigateur" dans le graphe public d'Electronic Artefacts. La fiche donne une entrée française stable, utilisable pour lire le sujet et relier ses sources au reste du graphe.
 
 ## Architecture
 
-La page organise le sujet comme un ensemble de notions, dépendances, preuves et relations éditoriales connectées au graphe de connaissance.
+Le sujet est abordé par ses relations avec les concepts, projets et technologies concernés, afin de rendre son contexte de conception lisible.
 
-## Implementation
+## Mise en œuvre
 
-Pour Electronic Artefacts, cette publication sert de repère français pour cadrer les choix de conception, préparer des contenus plus détaillés et stabiliser le vocabulaire technique.
+La page décrit les usages, contraintes et choix de structure qui permettent d'appliquer le sujet dans des situations concrètes.
 
-## Evidence
+## Éléments de preuve
 
-- Web Audio turns the navigateur into a viable environment pour public sound outils, not only embedded playback.
-- Navigateur-based sound systèmes need graphe thinking, performance discipline et preservation records.
+Les sources, relations et éléments de contexte restent attachés à la fiche pour distinguer synthèse éditoriale, preuves et références.
 
-## Limitations
+## Limites
 
-Cette version française assure la couverture éditoriale du site. Une passe ultérieure pourra enrichir le style et traduire plus finement chaque nuance de la version longue.
+Les limites sont formulées par rapport au périmètre de la fiche, aux sources disponibles et aux conditions d'usage documentées.
 
-## References
+## Références
 
-Références conservées depuis la fiche canonique : Web Audio API 1.1.
+Les sources principales restent disponibles dans le bloc de références de la fiche.

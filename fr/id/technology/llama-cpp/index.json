@@ -6,8 +6,8 @@
     "canonical": "llama-cpp"
   },
   "title": "llama.cpp",
-  "abstract": "llama.cpp est un moteur d’inférence libre en C et C++ permettant d’exécuter de grands modèles de langage sur du matériel grand public ou serveur.",
-  "description": "Fiche technologique consacrée à l’inférence locale, la quantification et au déploiement portable de modèles d’IA.",
+  "abstract": "llama.cpp est présenté comme une technologie de référence pour comprendre son rôle dans l'écosystème Electronic Artefacts, ses usages, ses limites et sa place dans les systèmes numériques contemporains.",
+  "description": "llama.cpp est présenté comme une technologie de référence pour comprendre son rôle dans l'écosystème Electronic Artefacts, ses usages, ses limites et sa place dans les systèmes numériques contemporains.",
   "locale": "fr",
   "visibility": "public",
   "publicationClass": "canonical",
@@ -28,14 +28,14 @@
   "publisher": "ea:organization:electronic-artefacts",
   "tags": [
     "llama.cpp",
-    "IA locale",
-    "Inférence",
-    "Quantification"
+    "Local AI",
+    "Inference",
+    "Quantization"
   ],
   "disciplines": [
-    "Intelligence artificielle",
-    "Programmation",
-    "Logiciel libre"
+    "intelligence artificielle",
+    "Programming",
+    "Open Source"
   ],
   "sources": [
     {
@@ -46,12 +46,13 @@
     }
   ],
   "category": "library",
-  "roleInEcosystem": "llama.cpp fournit une implémentation de référence pour l’inférence locale, quantifiée et portable entre matériels.",
+  "roleInEcosystem": "llama.cpp sert de repère technique pour évaluer le sujet \"llama.cpp\" dans le graphe public d'Electronic Artefacts, ses usages possibles et ses conséquences dans l'écosystème Electronic Artefacts.",
   "officialUrl": "https://github.com/ggml-org/llama.cpp",
-  "bodyHtml": "<h2 id=\"role\">Rôle</h2>\n<p>llama.cpp exécute localement des modèles de langage pris en charge au moyen d’un moteur natif portable et de formats quantifiés.</p>\n<h2 id=\"usage\">Usage</h2>\n<p>Il convient aux prototypes privés, à l’inférence hors ligne, à l’évaluation de modèles et aux outils locaux de connaissance ne nécessitant pas d’API hébergée.</p>\n<h2 id=\"references\">Références</h2>\n<p>Consulter le dépôt officiel llama.cpp.</p>\n",
+  "bodyHtml": "<h2 id=\"role\">Rôle</h2>\n<p>llama.cpp est documenté comme technologie de référence pour le sujet “llama.cpp” dans le graphe public d’Electronic Artefacts.</p>\n<h2 id=\"usage\">Usage</h2>\n<p>Cette fiche aide à situer la technologie dans l’écosystème Electronic Artefacts : ce qu’elle permet, quand elle devient pertinente et comment elle dialogue avec les autres composants du graphe.</p>\n<h2 id=\"points-d-attention\">Points d’attention</h2>\n<ul>\n<li>Les usages sont décrits en français sans masquer les noms propres, acronymes ou standards techniques.</li>\n<li>Les limites restent contextualisées par rapport aux projets, aux publications et aux contraintes d’implémentation.</li>\n</ul>\n<h2 id=\"references\">Références</h2>\n<p>Les sources principales restent disponibles dans le bloc de références de la fiche.</p>\n",
   "headings": [
     "Rôle",
     "Usage",
+    "Points d'attention",
     "Références"
   ],
   "headingItems": [
@@ -64,6 +65,11 @@
       "level": 2,
       "title": "Usage",
       "id": "usage"
+    },
+    {
+      "level": 2,
+      "title": "Points d'attention",
+      "id": "points-d-attention"
     },
     {
       "level": 2,

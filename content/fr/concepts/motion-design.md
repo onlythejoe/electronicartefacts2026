@@ -4,11 +4,14 @@ type: concept
 slug:
   canonical: motion-design
 title: Motion design
-definition: Motion design est le use de time, movement, transition, rhythm et
-  sequencing à structure visuel communication et interface behavior.
-abstract: Motion design relie visuel culture, interface sémantiques,
-  typographey, animation, sound, choreographey et web interaction.
-description: A canonical concept record pour motion comme a design et interface discipline.
+definition: Motion design désigne le mouvement comme langage d'interface, de rythme, d'attention et
+  de transition.
+abstract: Motion design définit un repère conceptuel en français pour comprendre le mouvement comme
+  langage d'interface, de rythme, d'attention et de transition et ses liens avec les projets,
+  technologies et publications du graphe.
+description: Motion design définit un repère conceptuel en français pour comprendre le mouvement
+  comme langage d'interface, de rythme, d'attention et de transition et ses liens avec les projets,
+  technologies et publications du graphe.
 locale: fr
 visibility: public
 publicationClass: canonical
@@ -24,17 +27,18 @@ authors:
   - id: ea:organization:electronic-artefacts
 publisher: ea:organization:electronic-artefacts
 scope:
-  - Animation
-  - Time
-  - Interface transitions
-  - Rhythm
-  - Visuel communication
+  - définition du sujet
+  - contexte d'usage
+  - liens avec le graphe
+  - références associées
 exclusions:
-  - Decorative movement that does not clarify state, hierarchy ou meaning
-  - Animation that blocks access à content ou control
+  - les usages purement promotionnels sans définition vérifiable
+  - les exemples déconnectés des sources, relations ou contraintes du graphe
 claims:
-  - Motion design can communicate state, causality, continuity et attention.
-  - Motion should be treated comme interface sémantiques, not only decoration.
+  - Motion design devient utile lorsque sa définition reste reliée à des sources, des pratiques et
+    des objets observables.
+  - La fiche sert de vocabulaire commun pour relier projets, publications et technologies sans
+    mélanger les langues.
 sources:
   - title: Web Animations
     publisher: W3C
@@ -42,30 +46,30 @@ sources:
     accessedAt: 2026-06-24
     url: https://www.w3.org/TR/web-animations-1/
 tags:
-  - Motion design
+  - Motion Design
   - Animation
   - Interface
-  - Visuel Culture
+  - Visual Culture
 disciplines:
-  - Motion design
-  - Design
-  - Human Computer Interaction
+  - Motion Design
+  - design
+  - interaction humain-machine
   - Web Development
 translationOf: ea:concept:motion-design
 ---
 
 ## Rôle
 
-Motion design est documenté ici comme une entrée française du graphe public d’Electronic Artefacts. Motion design relie visuel culture, interface sémantiques, typographey, animation, sound, choreographey et web interaction.
+Motion design est documenté comme notion de référence pour comprendre le mouvement comme langage d'interface, de rythme, d'attention et de transition.
 
 ## Usage
 
-Cette notion sert à relier les projets, publications et technologies qui partagent un même vocabulaire de conception. Motion design est le use de time, movement, transition, rhythm et sequencing à structure visuel communication et interface behavior.
+Cette fiche relie la notion aux projets, publications et technologies qui partagent un même vocabulaire de conception. Elle sert de point d'appui pour naviguer dans le graphe en version française.
 
-## Domaines
+## Périmètre
 
-Cette entrée croise notamment les domaines suivants : Motion design, Design, Human Computer Interaction, Web Development.
+La notion est abordée par ses définitions, ses usages, ses limites et ses relations avec les autres objets documentés.
 
 ## Références
 
-Les références principales restent les sources indiquées dans la fiche canonique, notamment Web Animations.
+Les sources principales restent disponibles dans le bloc de références de la fiche.

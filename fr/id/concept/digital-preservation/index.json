@@ -6,9 +6,9 @@
     "canonical": "digital-preservation"
   },
   "title": "Préservation numérique",
-  "definition": "Digital preservation est le long-term work de keeping digital objects understandable, authentic, usable et accessible despite changes dans formats, software, hardware et context.",
-  "abstract": "Digital preservation relie file formats, métadonnées, provenance, storage, rights, migration et interpretation into a long-term care practice pour digital culture.",
-  "description": "A canonical definition de préservation numérique pour Electronic Artefacts archives, Palimpsests, Vestiges et knowledge infrastructure.",
+  "definition": "Préservation numérique désigne la conservation active des objets numériques, de leurs formats, de leurs droits et de leurs contextes d'interpretation.",
+  "abstract": "Préservation numérique définit un repère conceptuel en français pour comprendre la conservation active des objets numériques, de leurs formats, de leurs droits et de leurs contextes d'interpretation et ses liens avec les projets, technologies et publications du graphe.",
+  "description": "Préservation numérique définit un repère conceptuel en français pour comprendre la conservation active des objets numériques, de leurs formats, de leurs droits et de leurs contextes d'interpretation et ses liens avec les projets, technologies et publications du graphe.",
   "locale": "fr",
   "visibility": "public",
   "publicationClass": "canonical",
@@ -28,28 +28,28 @@
   ],
   "publisher": "ea:organization:electronic-artefacts",
   "tags": [
-    "Préservation numérique",
+    "Digital Préservation",
     "Archive",
     "File Formats",
     "Provenance",
-    "Mémoire"
+    "Memory"
   ],
   "disciplines": [
     "Archives",
-    "History de Technology",
-    "Systèmes de connaissance",
+    "History of Technology",
+    "Knowledge Systems",
     "Digital Art"
   ],
   "sources": [
     {
-      "title": "Préservation numérique Handbook",
+      "title": "Digital Preservation Handbook",
       "url": "https://www.dpconline.org/handbook",
       "publisher": "Digital Preservation Coalition",
       "publishedAt": "2015-01-01",
       "accessedAt": "2026-06-23"
     },
     {
-      "title": "Sustainability de Digital Formats",
+      "title": "Sustainability of Digital Formats",
       "url": "https://www.loc.gov/preservation/digital/formats/",
       "publisher": "Library of Congress",
       "accessedAt": "2026-06-23",
@@ -57,27 +57,24 @@
     }
   ],
   "scope": [
-    "Long-term access",
-    "File formats",
-    "Métadonnées",
-    "Provenance",
-    "Fixity",
-    "Migration",
-    "Interpretation"
+    "définition du sujet",
+    "contexte d'usage",
+    "liens avec le graphe",
+    "références associées"
   ],
   "exclusions": [
-    "Backup alone",
-    "Cloud storage avec no métadonnées ou preservation plan"
+    "les usages purement promotionnels sans définition vérifiable",
+    "les exemples déconnectés des sources, relations ou contraintes du graphe"
   ],
   "claims": [
-    "Digital preservation est un culturel et interpretive practice, not only a storage problem.",
-    "Born-digital artistic work requires preservation de context comme well comme files."
+    "Préservation numérique devient utile lorsque sa définition reste reliée à des sources, des pratiques et des objets observables.",
+    "La fiche sert de vocabulaire commun pour relier projets, publications et technologies sans mélanger les langues."
   ],
-  "bodyHtml": "<h2 id=\"role\">Rôle</h2>\n<p>Préservation numérique est documenté ici comme une entrée française du graphe public d’Electronic Artefacts. Digital preservation relie file formats, métadonnées, provenance, storage, rights, migration et interpretation into a long-term care practice pour digital culture.</p>\n<h2 id=\"usage\">Usage</h2>\n<p>Cette notion sert à relier les projets, publications et technologies qui partagent un même vocabulaire de conception. Digital preservation est le long-term work de keeping digital objects understandable, authentic, usable et accessible despite changes dans formats, software, hardware et context.</p>\n<h2 id=\"domaines\">Domaines</h2>\n<p>Cette entrée croise notamment les domaines suivants : Archives, History de Technology, Systèmes de connaissance, Digital Art.</p>\n<h2 id=\"references\">Références</h2>\n<p>Les références principales restent les sources indiquées dans la fiche canonique, notamment Digital Preservation Handbook et Sustainability of Digital Formats.</p>\n",
+  "bodyHtml": "<h2 id=\"role\">Rôle</h2>\n<p>Préservation numérique est documenté comme notion de référence pour comprendre la conservation active des objets numériques, de leurs formats, de leurs droits et de leurs contextes d’interpretation.</p>\n<h2 id=\"usage\">Usage</h2>\n<p>Cette fiche relie la notion aux projets, publications et technologies qui partagent un même vocabulaire de conception. Elle sert de point d’appui pour naviguer dans le graphe en version française.</p>\n<h2 id=\"perimetre\">Périmètre</h2>\n<p>La notion est abordée par ses définitions, ses usages, ses limites et ses relations avec les autres objets documentés.</p>\n<h2 id=\"references\">Références</h2>\n<p>Les sources principales restent disponibles dans le bloc de références de la fiche.</p>\n",
   "headings": [
     "Rôle",
     "Usage",
-    "Domaines",
+    "Périmètre",
     "Références"
   ],
   "headingItems": [
@@ -93,8 +90,8 @@
     },
     {
       "level": 2,
-      "title": "Domaines",
-      "id": "domaines"
+      "title": "Périmètre",
+      "id": "perimetre"
     },
     {
       "level": 2,

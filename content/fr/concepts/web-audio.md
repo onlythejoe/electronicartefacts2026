@@ -4,11 +4,14 @@ type: concept
 slug:
   canonical: web-audio
 title: Audio web
-definition: Web audio est le use de navigateur-based audio APIs et related web
-  technologies à synthesize, process, analyze, route et present sound.
-abstract: Web audio relie sound design, navigateur runtimes, interactive médias,
-  programmation créative et public sound outils.
-description: A canonical concept record pour audio systèmes built on the web plateforme.
+definition: Audio web désigne les API audio du navigateur et les systèmes sonores interactifs
+  produits sur le Web.
+abstract: Audio web définit un repère conceptuel en français pour comprendre les API audio du
+  navigateur et les systèmes sonores interactifs produits sur le Web et ses liens avec les projets,
+  technologies et publications du graphe.
+description: Audio web définit un repère conceptuel en français pour comprendre les API audio du
+  navigateur et les systèmes sonores interactifs produits sur le Web et ses liens avec les projets,
+  technologies et publications du graphe.
 locale: fr
 visibility: public
 publicationClass: canonical
@@ -24,19 +27,18 @@ authors:
   - id: ea:organization:electronic-artefacts
 publisher: ea:organization:electronic-artefacts
 scope:
-  - Navigateur audio
-  - Synthesis
-  - Audio analysis
-  - Interactive sound
-  - Creative coding
+  - définition du sujet
+  - contexte d'usage
+  - liens avec le graphe
+  - références associées
 exclusions:
-  - Embedded audio playback avec no processing ou interaction layer
-  - Native audio software avec no navigateur runtime
+  - les usages purement promotionnels sans définition vérifiable
+  - les exemples déconnectés des sources, relations ou contraintes du graphe
 claims:
-  - Web audio turns the navigateur into a viable medium pour interactive sound
-    systèmes.
-  - Navigateur sound work needs careful attention à latency, permissions,
-    performance et preservation.
+  - Audio web devient utile lorsque sa définition reste reliée à des sources, des pratiques et des
+    objets observables.
+  - La fiche sert de vocabulaire commun pour relier projets, publications et technologies sans
+    mélanger les langues.
 sources:
   - title: Web Audio API 1.1
     publisher: W3C
@@ -44,30 +46,30 @@ sources:
     accessedAt: 2026-06-24
     url: https://www.w3.org/TR/webaudio/
 tags:
-  - Audio web
-  - Navigateur
+  - Web Audio
+  - Browser
   - Sound Design
-  - Programmation créative
+  - programmation créative
 disciplines:
   - Audio Engineering
   - Web Development
-  - Programmation créative
+  - programmation créative
   - Sound Design
 translationOf: ea:concept:web-audio
 ---
 
 ## Rôle
 
-Audio web est documenté ici comme une entrée française du graphe public d’Electronic Artefacts. Web audio relie sound design, navigateur runtimes, interactive médias, programmation créative et public sound outils.
+Audio web est documenté comme notion de référence pour comprendre les API audio du navigateur et les systèmes sonores interactifs produits sur le Web.
 
 ## Usage
 
-Cette notion sert à relier les projets, publications et technologies qui partagent un même vocabulaire de conception. Web audio est le use de navigateur-based audio APIs et related web technologies à synthesize, process, analyze, route et present sound.
+Cette fiche relie la notion aux projets, publications et technologies qui partagent un même vocabulaire de conception. Elle sert de point d'appui pour naviguer dans le graphe en version française.
 
-## Domaines
+## Périmètre
 
-Cette entrée croise notamment les domaines suivants : Audio Engineering, Web Development, Programmation créative, Sound Design.
+La notion est abordée par ses définitions, ses usages, ses limites et ses relations avec les autres objets documentés.
 
 ## Références
 
-Les références principales restent les sources indiquées dans la fiche canonique, notamment Web Audio API 1.1.
+Les sources principales restent disponibles dans le bloc de références de la fiche.

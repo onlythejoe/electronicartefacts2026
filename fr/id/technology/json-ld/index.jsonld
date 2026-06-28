@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/knowledge/technologies/json-ld/#webpage",
       "url": "https://electronicartefacts.com/fr/knowledge/technologies/json-ld/",
       "name": "JSON-LD",
-      "description": "A technology record pour JSON-LD comme the structured données format used by Electronic Artefacts canonical pages.",
+      "description": "JSON-LD est présenté comme une technologie de référence pour comprendre son rôle dans l'écosystème Electronic Artefacts, ses usages, ses limites et sa place dans les systèmes numériques contemporains.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
@@ -34,8 +34,8 @@
       "@id": "https://electronicartefacts.com/fr/id/technology/json-ld/",
       "identifier": "ea:technology:json-ld-fr",
       "name": "JSON-LD",
-      "abstract": "JSON-LD est un W3C format pour serializing Données liées dans JSON, making sémantique graphe métadonnées compatible avec common web programming workflows.",
-      "description": "JSON-LD est un W3C format pour serializing Données liées dans JSON, making sémantique graphe métadonnées compatible avec common web programming workflows.",
+      "abstract": "JSON-LD est présenté comme une technologie de référence pour comprendre son rôle dans l'écosystème Electronic Artefacts, ses usages, ses limites et sa place dans les systèmes numériques contemporains.",
+      "description": "JSON-LD est présenté comme une technologie de référence pour comprendre son rôle dans l'écosystème Electronic Artefacts, ses usages, ses limites et sa place dans les systèmes numériques contemporains.",
       "url": "https://electronicartefacts.com/fr/knowledge/technologies/json-ld/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/knowledge/technologies/json-ld/#webpage"
@@ -57,11 +57,11 @@
       ],
       "keywords": [
         "JSON-LD",
-        "Données liées",
-        "Structured Données",
+        "Linked Data",
+        "Structured Data",
         "SEO",
         "Web Development",
-        "Systèmes de connaissance"
+        "Knowledge Systems"
       ],
       "inLanguage": "fr",
       "dateCreated": "2020-07-16",
@@ -74,7 +74,7 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 97,
+      "wordCount": 93,
       "citation": [
         {
           "@type": "CreativeWork",

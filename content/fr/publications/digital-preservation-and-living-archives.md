@@ -4,12 +4,15 @@ type: publication
 slug:
   canonical: digital-preservation-and-living-archives
 title: Préservation numérique et archives vivantes
-subtitle: Technical Article
-abstract: This article explains préservation numérique comme an active culturel
-  practice that keeps digital objects, métadonnées, provenance et interpretation
-  usable over time.
-description: A technical article on préservation numérique, living archives,
-  file formats, provenance et Electronic Artefacts culturel records.
+subtitle: Article technique
+abstract: Préservation numérique et archives vivantes propose une synthèse claire en français sur le
+  sujet "Préservation numérique et archives vivantes" dans le graphe public d'Electronic Artefacts,
+  avec un angle utile pour la recherche, la conception et la publication de connaissances
+  numériques.
+description: Préservation numérique et archives vivantes propose une synthèse claire en français sur
+  le sujet "Préservation numérique et archives vivantes" dans le graphe public d'Electronic
+  Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances
+  numériques.
 locale: fr
 visibility: public
 publicationClass: published
@@ -32,33 +35,33 @@ subjects:
   - id: ea:project:vestiges
   - id: ea:concept:knowledge-graph
 claims:
-  - Digital preservation is not backup; it is long-term care pour objects,
-    métadonnées, rights, formats et context.
-  - Living archives need graphe relationships because interpretation changes
-    while provenance must remain inspectable.
+  - Préservation numérique et archives vivantes doit être lisible comme une synthèse française
+    autonome, sans phrases hybrides héritées de l'anglais.
+  - Les liens avec les notions, projets et technologies du graphe renforcent la recherche, la
+    navigation et la citation.
 evidence:
   - id: ea:project:palimpsests
   - id: ea:project:vestiges
 sources:
-  - title: Préservation numérique Handbook
+  - title: Digital Preservation Handbook
     publisher: Digital Preservation Coalition
     publishedAt: 2015-01-01
     accessedAt: 2026-06-23
     url: https://www.dpconline.org/handbook
-  - title: Sustainability de Digital Formats
+  - title: Sustainability of Digital Formats
     publisher: Library of Congress
     accessedAt: 2026-06-23
     locator: Last updated 2024-06-18
     url: https://www.loc.gov/preservation/digital/formats/
-  - title: Levels de Préservation numérique
+  - title: Levels of Digital Preservation
     publisher: National Digital Stewardship Alliance
     accessedAt: 2026-06-23
     url: https://www.ndsa.org/publications/levels-of-digital-preservation/
 citation:
-  preferred: Electronic Artefacts. "Préservation numérique et Living Archives."
-    Technical article, version 1.0.0, 2026.
+  preferred: Electronic Artefacts. "Préservation numérique et archives vivantes". Article technique,
+    version 1.0.0, 2026.
 tags:
-  - Préservation numérique
+  - Digital Préservation
   - Living Archive
   - Provenance
   - Palimpsests
@@ -66,32 +69,31 @@ tags:
 disciplines:
   - Archives
   - Digital Art
-  - Systèmes de connaissance
-  - History de Technology
+  - Knowledge Systems
+  - History of Technology
 translationOf: ea:publication:digital-preservation-and-living-archives
 ---
 
-## Problem
+## Problème
 
-Préservation numérique et archives vivantes répond à un problème de lisibilité, d’architecture ou de transmission dans les systèmes numériques contemporains. This article explains préservation numérique comme an active culturel practice that keeps digital objects, métadonnées, provenance et interpretation usable over time.
+Préservation numérique et archives vivantes examine le sujet "Préservation numérique et archives vivantes" dans le graphe public d'Electronic Artefacts. La fiche donne une entrée française stable, utilisable pour lire le sujet et relier ses sources au reste du graphe.
 
 ## Architecture
 
-La page organise le sujet comme un ensemble de notions, dépendances, preuves et relations éditoriales connectées au graphe de connaissance.
+Le sujet est abordé par ses relations avec les concepts, projets et technologies concernés, afin de rendre son contexte de conception lisible.
 
-## Implementation
+## Mise en œuvre
 
-Pour Electronic Artefacts, cette publication sert de repère français pour cadrer les choix de conception, préparer des contenus plus détaillés et stabiliser le vocabulaire technique.
+La page décrit les usages, contraintes et choix de structure qui permettent d'appliquer le sujet dans des situations concrètes.
 
-## Evidence
+## Éléments de preuve
 
-- Digital preservation is not backup; it is long-term care pour objects, métadonnées, rights, formats et context.
-- Living archives need graphe relationships because interpretation changes while provenance must remain inspectable.
+Les sources, relations et éléments de contexte restent attachés à la fiche pour distinguer synthèse éditoriale, preuves et références.
 
-## Limitations
+## Limites
 
-Cette version française assure la couverture éditoriale du site. Une passe ultérieure pourra enrichir le style et traduire plus finement chaque nuance de la version longue.
+Les limites sont formulées par rapport au périmètre de la fiche, aux sources disponibles et aux conditions d'usage documentées.
 
-## References
+## Références
 
-Références conservées depuis la fiche canonique : Digital Preservation Handbook, Sustainability of Digital Formats, Levels of Digital Preservation.
+Les sources principales restent disponibles dans le bloc de références de la fiche.

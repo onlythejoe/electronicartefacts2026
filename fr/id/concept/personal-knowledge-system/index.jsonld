@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/knowledge/concepts/personal-knowledge-system/#webpage",
       "url": "https://electronicartefacts.com/fr/knowledge/concepts/personal-knowledge-system/",
       "name": "Système personnel de connaissance",
-      "description": "A canonical concept record pour durable note et knowledge practices.",
+      "description": "Système personnel de connaissance définit un repère conceptuel en français pour comprendre les systèmes personnels d'organisation de notes, sources, idees et connexions et ses liens avec les projets, technologies et publications du graphe.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
@@ -34,8 +34,8 @@
       "@id": "https://electronicartefacts.com/fr/id/concept/personal-knowledge-system/",
       "identifier": "ea:concept:personal-knowledge-system-fr",
       "name": "Système personnel de connaissance",
-      "abstract": "Personal systèmes de connaissance connect digital gardens, wikis, note archives, recherche méthodes, backlinks et long-term intellectual mémoire.",
-      "description": "A personal knowledge système est un practice et outil environment pour capturing, linking, revising et retrieving notes, sources, ideas et decisions over time.",
+      "abstract": "Système personnel de connaissance définit un repère conceptuel en français pour comprendre les systèmes personnels d'organisation de notes, sources, idees et connexions et ses liens avec les projets, technologies et publications du graphe.",
+      "description": "Système personnel de connaissance désigne les systèmes personnels d'organisation de notes, sources, idees et connexions.",
       "url": "https://electronicartefacts.com/fr/knowledge/concepts/personal-knowledge-system/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/knowledge/concepts/personal-knowledge-system/#webpage"
@@ -59,10 +59,10 @@
         "Personal Knowledge Management",
         "Digital Gardens",
         "Notes",
-        "Recherche",
-        "Systèmes de connaissance",
-        "Recherche Méthodes",
-        "Culture Internet",
+        "Research",
+        "Knowledge Systems",
+        "Research Methods",
+        "Internet Culture",
         "Writing"
       ],
       "inLanguage": "fr",
@@ -76,7 +76,7 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 109,
+      "wordCount": 86,
       "inDefinedTermSet": "https://electronicartefacts.com/knowledge/concepts/",
       "termCode": "personal-knowledge-system"
     },

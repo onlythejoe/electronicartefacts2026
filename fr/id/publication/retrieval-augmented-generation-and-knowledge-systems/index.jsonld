@@ -5,15 +5,15 @@
       "@type": "WebPage",
       "@id": "https://electronicartefacts.com/fr/publications/retrieval-augmented-generation-and-knowledge-systems/#webpage",
       "url": "https://electronicartefacts.com/fr/publications/retrieval-augmented-generation-and-knowledge-systems/",
-      "name": "Génération augmentée par récupération et systèmes de connaissance",
-      "description": "Learn how retrieval-augmented generation works et how à build source-grounded RAG systèmes avec métadonnées, graphee de connaissancess et evaluation.",
+      "name": "Génération augmentée par recuperation et systèmes de connaissance",
+      "description": "Génération augmentée par recuperation et systèmes de connaissance propose une synthèse claire en français sur le sujet \"Génération augmentée par recuperation et systèmes de connaissance\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
       "primaryImageOfPage": {
         "@type": "ImageObject",
         "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-search.jpg",
-        "description": "Génération augmentée par récupération et systèmes de connaissance"
+        "description": "Génération augmentée par recuperation et systèmes de connaissance"
       },
       "breadcrumb": {
         "@id": "https://electronicartefacts.com/fr/publications/retrieval-augmented-generation-and-knowledge-systems/#breadcrumb"
@@ -33,10 +33,10 @@
       "@type": "TechArticle",
       "@id": "https://electronicartefacts.com/fr/id/publication/retrieval-augmented-generation-and-knowledge-systems/",
       "identifier": "ea:publication:retrieval-augmented-generation-and-knowledge-systems-fr",
-      "name": "Génération augmentée par récupération et systèmes de connaissance",
-      "headline": "Génération augmentée par récupération et systèmes de connaissance",
-      "abstract": "An end-à-end explanation de RAG architecture, ingestion, chunking, embeddings, hybrid retrieval, graphes, citations, permissions et evaluation.",
-      "description": "An end-à-end explanation de RAG architecture, ingestion, chunking, embeddings, hybrid retrieval, graphes, citations, permissions et evaluation.",
+      "name": "Génération augmentée par recuperation et systèmes de connaissance",
+      "headline": "Génération augmentée par recuperation et systèmes de connaissance",
+      "abstract": "Génération augmentée par recuperation et systèmes de connaissance propose une synthèse claire en français sur le sujet \"Génération augmentée par recuperation et systèmes de connaissance\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
+      "description": "Génération augmentée par recuperation et systèmes de connaissance propose une synthèse claire en français sur le sujet \"Génération augmentée par recuperation et systèmes de connaissance\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
       "url": "https://electronicartefacts.com/fr/publications/retrieval-augmented-generation-and-knowledge-systems/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/publications/retrieval-augmented-generation-and-knowledge-systems/#webpage"
@@ -44,7 +44,7 @@
       "image": {
         "@type": "ImageObject",
         "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-search.jpg",
-        "description": "Génération augmentée par récupération et systèmes de connaissance"
+        "description": "Génération augmentée par recuperation et systèmes de connaissance"
       },
       "author": [
         {
@@ -58,12 +58,12 @@
       ],
       "keywords": [
         "RAG",
-        "Graphe de connaissances",
+        "graphe de connaissances",
         "Vector Search",
         "Embeddings",
         "Citations",
-        "Intelligence artificielle",
-        "Systèmes de connaissance",
+        "intelligence artificielle",
+        "Knowledge Systems",
         "Information Architecture",
         "Machine Learning"
       ],
@@ -78,12 +78,12 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 164,
+      "wordCount": 147,
       "citation": [
-        "Electronic Artefacts. \"Retrieval-Augmented Generation et Systèmes de connaissance.\" Technical article, version 1.0.0, 2026.",
+        "Electronic Artefacts. \"Génération augmentée par recuperation et systèmes de connaissance\". Article technique, version 1.0.0, 2026.",
         {
           "@type": "CreativeWork",
-          "name": "Retrieval-Augmented Generation pour Knowledge-Intensive NLP Tasks",
+          "name": "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks",
           "url": "https://arxiv.org/abs/2005.11401",
           "author": "Patrick Lewis et al.",
           "publisher": "arXiv",
@@ -127,18 +127,18 @@
         }
       ],
       "articleSection": [
-        "Intelligence artificielle",
-        "Systèmes de connaissance",
+        "intelligence artificielle",
+        "Knowledge Systems",
         "Information Architecture",
         "Machine Learning",
         "RAG",
-        "Graphe de connaissances"
+        "graphe de connaissances"
       ],
       "timeRequired": "PT1M",
       "isBasedOn": [
         {
           "@type": "CreativeWork",
-          "name": "Retrieval-Augmented Generation pour Knowledge-Intensive NLP Tasks",
+          "name": "Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks",
           "url": "https://arxiv.org/abs/2005.11401",
           "author": "Patrick Lewis et al.",
           "publisher": "arXiv",
@@ -258,7 +258,7 @@
         {
           "@type": "ListItem",
           "position": 3,
-          "name": "Génération augmentée par récupération et systèmes de connaissance",
+          "name": "Génération augmentée par recuperation et systèmes de connaissance",
           "item": "https://electronicartefacts.com/fr/publications/retrieval-augmented-generation-and-knowledge-systems/"
         }
       ]

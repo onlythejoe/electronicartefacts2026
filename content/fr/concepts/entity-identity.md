@@ -3,14 +3,15 @@ id: ea:concept:entity-identity-fr
 type: concept
 slug:
   canonical: entity-identity
-title: Identité d’entité
-definition: Entité identité est le durable naming de a person, concept, project,
-  program, publication ou artefact so that references remain stable comme
-  descriptions evolve.
-abstract: Entité identité gives systèmes de connaissance a way à cite things
-  without confusing names, pages, files, versions et changing descriptions.
-description: A canonical definition de entité identité pour graphe publishing,
-  sémantique URLs, archives et Electronic Artefacts records.
+title: Identité d'entite
+definition: Identité d'entite désigne le sujet "Identité d'entite" dans le graphe public
+  d'Electronic Artefacts.
+abstract: Identité d'entite définit un repère conceptuel en français pour comprendre le sujet
+  "Identité d'entite" dans le graphe public d'Electronic Artefacts et ses liens avec les projets,
+  technologies et publications du graphe.
+description: Identité d'entite définit un repère conceptuel en français pour comprendre le sujet
+  "Identité d'entite" dans le graphe public d'Electronic Artefacts et ses liens avec les projets,
+  technologies et publications du graphe.
 locale: fr
 visibility: public
 publicationClass: canonical
@@ -26,37 +27,37 @@ authors:
   - id: ea:organization:electronic-artefacts
 publisher: ea:organization:electronic-artefacts
 scope:
-  - Identifiers
-  - Slugs
-  - Canonical URLs
-  - Identifier routes
-  - Versioned descriptions
+  - définition du sujet
+  - contexte d'usage
+  - liens avec le graphe
+  - références associées
 exclusions:
-  - A display title that changes without preserving a canonical identifier
-  - A file path used comme the only identité de an intellectual object
+  - les usages purement promotionnels sans définition vérifiable
+  - les exemples déconnectés des sources, relations ou contraintes du graphe
 claims:
-  - Entité identité est un prerequisite pour durable internal linking.
-  - Public graphee de connaissancess need stable identifiers even when pages
-    sont redesigned.
+  - Identité d'entite devient utile lorsque sa définition reste reliée à des sources, des pratiques
+    et des objets observables.
+  - La fiche sert de vocabulaire commun pour relier projets, publications et technologies sans
+    mélanger les langues.
 sources:
-  - title: RDF 1.1 Concepts et Abstract Syntax
+  - title: RDF 1.1 Concepts and Abstract Syntax
     publisher: W3C
     publishedAt: 2014-02-25
     accessedAt: 2026-06-23
     url: https://www.w3.org/TR/rdf11-concepts/
-  - title: Cool URIs pour the Sémantique Web
+  - title: Cool URIs for the Semantic Web
     publisher: W3C
     publishedAt: 2008-12-03
     accessedAt: 2026-06-23
     url: https://www.w3.org/TR/cooluris/
 tags:
-  - Identité
+  - Identity
   - URI
   - Canonical URL
   - Versioning
-  - Graphe de connaissances
+  - graphe de connaissances
 disciplines:
-  - Systèmes de connaissance
+  - Knowledge Systems
   - Web Development
   - Archives
 translationOf: ea:concept:entity-identity
@@ -64,16 +65,16 @@ translationOf: ea:concept:entity-identity
 
 ## Rôle
 
-Identité d’entité est documenté ici comme une entrée française du graphe public d’Electronic Artefacts. Entité identité gives systèmes de connaissance a way à cite things without confusing names, pages, files, versions et changing descriptions.
+Identité d'entite est documenté comme notion de référence pour comprendre le sujet "Identité d'entite" dans le graphe public d'Electronic Artefacts.
 
 ## Usage
 
-Cette notion sert à relier les projets, publications et technologies qui partagent un même vocabulaire de conception. Entité identité est le durable naming de a person, concept, project, program, publication ou artefact so that references remain stable comme descriptions evolve.
+Cette fiche relie la notion aux projets, publications et technologies qui partagent un même vocabulaire de conception. Elle sert de point d'appui pour naviguer dans le graphe en version française.
 
-## Domaines
+## Périmètre
 
-Cette entrée croise notamment les domaines suivants : Systèmes de connaissance, Web Development, Archives.
+La notion est abordée par ses définitions, ses usages, ses limites et ses relations avec les autres objets documentés.
 
 ## Références
 
-Les références principales restent les sources indiquées dans la fiche canonique, notamment RDF 1.1 Concepts and Abstract Syntax et Cool URIs for the Semantic Web.
+Les sources principales restent disponibles dans le bloc de références de la fiche.

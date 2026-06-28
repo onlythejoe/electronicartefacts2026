@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/knowledge/concepts/large-language-model/#webpage",
       "url": "https://electronicartefacts.com/fr/knowledge/concepts/large-language-model/",
       "name": "Grand modèle de langage",
-      "description": "A canonical definition de large language modèles, their operating principles, capabilities et limitations.",
+      "description": "Grand modèle de langage définit un repère conceptuel en français pour comprendre les grands modèles de langage entraines à predire et generer des sequences de tokens à partir de corpus massifs et ses liens avec les projets, technologies et publications du graphe.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
@@ -37,8 +37,8 @@
       "alternateName": [
         "LLM"
       ],
-      "abstract": "Large language modèles combine tokenization, embeddings, transformer layers, attention, training objectives et probabilistic decoding à generate ou transform language.",
-      "description": "A large language modèle est un parameterized machine-learning modèle trained à predict et generate sequences de tokens from statistical patterns learned across large text ou multimodal corpora.",
+      "abstract": "Grand modèle de langage définit un repère conceptuel en français pour comprendre les grands modèles de langage entraines à predire et generer des sequences de tokens à partir de corpus massifs et ses liens avec les projets, technologies et publications du graphe.",
+      "description": "Grand modèle de langage désigne les grands modèles de langage entraines à predire et generer des sequences de tokens à partir de corpus massifs.",
       "url": "https://electronicartefacts.com/fr/knowledge/concepts/large-language-model/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/knowledge/concepts/large-language-model/#webpage"
@@ -63,11 +63,11 @@
         "Transformer",
         "Tokens",
         "Inference",
-        "Language Modèles",
-        "Intelligence artificielle",
+        "Language Models",
+        "intelligence artificielle",
         "Machine Learning",
         "Programming",
-        "Systèmes de connaissance"
+        "Knowledge Systems"
       ],
       "inLanguage": "fr",
       "dateCreated": "2026-06-24",
@@ -80,7 +80,7 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 116,
+      "wordCount": 97,
       "citation": [
         {
           "@type": "CreativeWork",

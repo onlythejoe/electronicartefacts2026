@@ -5,15 +5,15 @@
       "@type": "WebPage",
       "@id": "https://electronicartefacts.com/fr/knowledge/concepts/ai-agent/#webpage",
       "url": "https://electronicartefacts.com/fr/knowledge/concepts/ai-agent/",
-      "name": "Agent d’IA",
-      "description": "A canonical definition distinguishing AI agents from fixed AI workflows et conventional automation.",
+      "name": "Agent d'IA",
+      "description": "Agent d'IA définit un repère conceptuel en français pour comprendre les agents logiciels capables d'observer un contexte, de choisir une action et de mobiliser des outils avec une autonomie encadrée et ses liens avec les projets, technologies et publications du graphe.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
       "primaryImageOfPage": {
         "@type": "ImageObject",
         "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-search.jpg",
-        "description": "Agent d’IA"
+        "description": "Agent d'IA"
       },
       "breadcrumb": {
         "@id": "https://electronicartefacts.com/fr/knowledge/concepts/ai-agent/#breadcrumb"
@@ -33,9 +33,9 @@
       "@type": "DefinedTerm",
       "@id": "https://electronicartefacts.com/fr/id/concept/ai-agent/",
       "identifier": "ea:concept:ai-agent-fr",
-      "name": "Agent d’IA",
-      "abstract": "AI agents combine modèles, outils, mémoire, environmental feedback, stopping conditions, permissions et evaluation dans an iterative action loop.",
-      "description": "An AI agent est un software système dans which a modèle can select actions, use outils, observe results et adapt its next steps toward an objective within defined boundaries.",
+      "name": "Agent d'IA",
+      "abstract": "Agent d'IA définit un repère conceptuel en français pour comprendre les agents logiciels capables d'observer un contexte, de choisir une action et de mobiliser des outils avec une autonomie encadrée et ses liens avec les projets, technologies et publications du graphe.",
+      "description": "Agent d'IA désigne les agents logiciels capables d'observer un contexte, de choisir une action et de mobiliser des outils avec une autonomie encadrée.",
       "url": "https://electronicartefacts.com/fr/knowledge/concepts/ai-agent/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/knowledge/concepts/ai-agent/#webpage"
@@ -43,7 +43,7 @@
       "image": {
         "@type": "ImageObject",
         "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-search.jpg",
-        "description": "Agent d’IA"
+        "description": "Agent d'IA"
       },
       "author": [
         {
@@ -56,15 +56,15 @@
         }
       ],
       "keywords": [
-        "AI Agents",
-        "Outil Use",
-        "Automation",
-        "Orchestration",
-        "Human Oversight",
-        "Intelligence artificielle",
-        "Systèmes Design",
-        "Human Computer Interaction",
-        "Software Architecture"
+        "agents d'IA",
+        "usage d'outils",
+        "automatisation",
+        "orchestration",
+        "supervision humaine",
+        "intelligence artificielle",
+        "conception de systèmes",
+        "interaction humain-machine",
+        "architecture logicielle"
       ],
       "inLanguage": "fr",
       "dateCreated": "2026-06-24",
@@ -77,13 +77,13 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 114,
+      "wordCount": 96,
       "citation": [
         {
           "@type": "CreativeWork",
           "name": "Building Effective Agents",
           "url": "https://www.anthropic.com/engineering/building-effective-agents",
-          "author": "Erik Schluntz et Barry Zhang",
+          "author": "Erik Schluntz and Barry Zhang",
           "publisher": "Anthropic",
           "datePublished": "2024-12-19"
         }
@@ -195,7 +195,7 @@
         {
           "@type": "ListItem",
           "position": 3,
-          "name": "Agent d’IA",
+          "name": "Agent d'IA",
           "item": "https://electronicartefacts.com/fr/knowledge/concepts/ai-agent/"
         }
       ]

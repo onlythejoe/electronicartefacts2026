@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/knowledge/concepts/augmented-intelligence/#webpage",
       "url": "https://electronicartefacts.com/fr/knowledge/concepts/augmented-intelligence/",
       "name": "Intelligence augmentée",
-      "description": "A canonical concept record pour human-centered computational augmentation.",
+      "description": "Intelligence augmentée définit un repère conceptuel en français pour comprendre les outils qui etendent la perception, la mémoire et le raisonnement humains sans remplacer le jugement humain et ses liens avec les projets, technologies et publications du graphe.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
@@ -34,8 +34,8 @@
       "@id": "https://electronicartefacts.com/fr/id/concept/augmented-intelligence/",
       "identifier": "ea:concept:augmented-intelligence-fr",
       "name": "Intelligence augmentée",
-      "abstract": "Augmented intelligence reframes computation comme a partner dans human work, linking HCI, AI, systèmes de connaissance, creative outils et Electronic Artefacts runtime recherche.",
-      "description": "Augmented intelligence est le design de outils, interfaces et systèmes that expand human perception, reasoning, mémoire et creative capability.",
+      "abstract": "Intelligence augmentée définit un repère conceptuel en français pour comprendre les outils qui etendent la perception, la mémoire et le raisonnement humains sans remplacer le jugement humain et ses liens avec les projets, technologies et publications du graphe.",
+      "description": "Intelligence augmentée désigne les outils qui etendent la perception, la mémoire et le raisonnement humains sans remplacer le jugement humain.",
       "url": "https://electronicartefacts.com/fr/knowledge/concepts/augmented-intelligence/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/knowledge/concepts/augmented-intelligence/#webpage"
@@ -56,14 +56,13 @@
         }
       ],
       "keywords": [
-        "Intelligence augmentée",
-        "HCI",
+        "intelligence augmentée",
+        "interaction humain-machine",
         "AI",
-        "Creative Outils",
-        "Human Computer Interaction",
-        "Intelligence artificielle",
-        "Systèmes de connaissance",
-        "Systèmes Design"
+        "outils créatifs",
+        "intelligence artificielle",
+        "Knowledge Systems",
+        "conception de systèmes"
       ],
       "inLanguage": "fr",
       "dateCreated": "2026-06-24",
@@ -76,7 +75,7 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 110,
+      "wordCount": 93,
       "citation": [
         {
           "@type": "CreativeWork",

@@ -3,12 +3,14 @@ id: ea:publication:iiif-and-compound-cultural-objects-fr
 type: publication
 slug:
   canonical: iiif-and-compound-cultural-objects
-title: IIIF et objets culturels composés
-subtitle: Technical Article
-abstract: A practical explanation de IIIF Presentation API concepts, compound
-  objects, manifests, canvases, annotations et culturel archive interfaces.
-description: Understand IIIF comme presentation infrastructure pour compound
-  culturel objects, archives, manifests, canvases et annotations.
+title: IIIF et objets culturels composes
+subtitle: Article technique
+abstract: IIIF et objets culturels composes propose une synthèse claire en français sur le sujet
+  "IIIF et objets culturels composes" dans le graphe public d'Electronic Artefacts, avec un angle
+  utile pour la recherche, la conception et la publication de connaissances numériques.
+description: IIIF et objets culturels composes propose une synthèse claire en français sur le sujet
+  "IIIF et objets culturels composes" dans le graphe public d'Electronic Artefacts, avec un angle
+  utile pour la recherche, la conception et la publication de connaissances numériques.
 locale: fr
 visibility: public
 publicationClass: published
@@ -31,10 +33,10 @@ subjects:
   - id: ea:concept:metadata
   - id: ea:project:vestiges
 claims:
-  - IIIF is useful pour culturel infrastructure because it modèles compound
-    objects comme presentable structures rather than isolated files.
-  - IIIF should be paired avec richer métadonnées et graphee de connaissancess
-    when discovery, interpretation et sémantique search sont required.
+  - IIIF et objets culturels composes doit être lisible comme une synthèse française autonome, sans
+    phrases hybrides héritées de l'anglais.
+  - Les liens avec les notions, projets et technologies du graphe renforcent la recherche, la
+    navigation et la citation.
 evidence:
   - id: ea:technology:iiif
   - id: ea:concept:digital-preservation
@@ -52,43 +54,42 @@ sources:
     accessedAt: 2026-06-24
     url: https://www.w3.org/TR/json-ld11/
 citation:
-  preferred: Electronic Artefacts. "IIIF et Compound Culturel Objects." Technical
-    article, version 1.0.0, 2026.
+  preferred: Electronic Artefacts. "IIIF et objets culturels composes". Article technique, version
+    1.0.0, 2026.
 tags:
   - IIIF
   - Digital Archives
-  - Culturel Objects
-  - Métadonnées
-  - Données liées
+  - Cultural Objects
+  - Metadata
+  - Linked Data
 disciplines:
-  - Préservation numérique
-  - Culturel Infrastructure
-  - Systèmes de connaissance
+  - Digital Préservation
+  - Cultural Infrastructure
+  - Knowledge Systems
   - Web Development
 translationOf: ea:publication:iiif-and-compound-cultural-objects
 ---
 
-## Problem
+## Problème
 
-IIIF et objets culturels composés répond à un problème de lisibilité, d’architecture ou de transmission dans les systèmes numériques contemporains. A practical explanation de IIIF Presentation API concepts, compound objects, manifests, canvases, annotations et culturel archive interfaces.
+IIIF et objets culturels composes examine le sujet "IIIF et objets culturels composes" dans le graphe public d'Electronic Artefacts. La fiche donne une entrée française stable, utilisable pour lire le sujet et relier ses sources au reste du graphe.
 
 ## Architecture
 
-La page organise le sujet comme un ensemble de notions, dépendances, preuves et relations éditoriales connectées au graphe de connaissance.
+Le sujet est abordé par ses relations avec les concepts, projets et technologies concernés, afin de rendre son contexte de conception lisible.
 
-## Implementation
+## Mise en œuvre
 
-Pour Electronic Artefacts, cette publication sert de repère français pour cadrer les choix de conception, préparer des contenus plus détaillés et stabiliser le vocabulaire technique.
+La page décrit les usages, contraintes et choix de structure qui permettent d'appliquer le sujet dans des situations concrètes.
 
-## Evidence
+## Éléments de preuve
 
-- IIIF is useful pour culturel infrastructure because it modèles compound objects comme presentable structures rather than isolated files.
-- IIIF should be paired avec richer métadonnées et graphee de connaissancess when discovery, interpretation et sémantique search sont required.
+Les sources, relations et éléments de contexte restent attachés à la fiche pour distinguer synthèse éditoriale, preuves et références.
 
-## Limitations
+## Limites
 
-Cette version française assure la couverture éditoriale du site. Une passe ultérieure pourra enrichir le style et traduire plus finement chaque nuance de la version longue.
+Les limites sont formulées par rapport au périmètre de la fiche, aux sources disponibles et aux conditions d'usage documentées.
 
-## References
+## Références
 
-Références conservées depuis la fiche canonique : IIIF Presentation API 3.0, IIIF Image API 3.0, JSON-LD 1.1.
+Les sources principales restent disponibles dans le bloc de références de la fiche.

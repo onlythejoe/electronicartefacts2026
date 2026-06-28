@@ -5,10 +5,12 @@ slug:
   canonical: rdf
 title: RDF
 subtitle: Resource Description Framework
-abstract: RDF est un W3C graphe données modèle pour representing information
-  comme subject-predicate-object statements about resources.
-description: A technology record pour RDF comme a reference modèle behind
-  graphee de connaissancess, Données liées et sémantique publication.
+abstract: RDF est présenté comme une technologie de référence pour comprendre son rôle dans
+  l'écosystème Electronic Artefacts, ses usages, ses limites et sa place dans les systèmes
+  numériques contemporains.
+description: RDF est présenté comme une technologie de référence pour comprendre son rôle dans
+  l'écosystème Electronic Artefacts, ses usages, ses limites et sa place dans les systèmes
+  numériques contemporains.
 locale: fr
 visibility: public
 publicationClass: published
@@ -24,40 +26,42 @@ authors:
   - id: ea:organization:electronic-artefacts
 publisher: ea:organization:electronic-artefacts
 category: protocol
-roleInEcosystem: RDF fournit the reference graphe modèle pour thinking about
-  entités, predicates, resources, identifiers et sémantique interoperability.
+roleInEcosystem: RDF sert de repère technique pour évaluer le sujet "RDF" dans le graphe public
+  d'Electronic Artefacts, ses usages possibles et ses conséquences dans l'écosystème Electronic
+  Artefacts.
 officialUrl: https://www.w3.org/TR/rdf11-concepts/
 versions:
   - RDF 1.1
 sources:
-  - title: RDF 1.1 Concepts et Abstract Syntax
+  - title: RDF 1.1 Concepts and Abstract Syntax
     publisher: W3C
     publishedAt: 2014-02-25
     accessedAt: 2026-06-23
     url: https://www.w3.org/TR/rdf11-concepts/
 tags:
   - RDF
-  - Sémantique Web
-  - Données liées
-  - Graphe
+  - Semantic Web
+  - Linked Data
+  - Graph
 disciplines:
   - Web Development
-  - Systèmes de connaissance
+  - Knowledge Systems
 translationOf: ea:technology:rdf
 ---
 
 ## Rôle
 
-RDF est documenté ici comme une entrée française du graphe public d’Electronic Artefacts. RDF est un W3C graphe données modèle pour representing information comme subject-predicate-object statements about resources.
+RDF est documenté comme technologie de référence pour le sujet "RDF" dans le graphe public d'Electronic Artefacts.
 
 ## Usage
 
-Cette technologie sert de repère pour évaluer les choix d’architecture, les dépendances et les possibilités d’implémentation. RDF fournit the reference graphe modèle pour thinking about entités, predicates, resources, identifiers et sémantique interoperability.
+Cette fiche aide à situer la technologie dans l'écosystème Electronic Artefacts : ce qu'elle permet, quand elle devient pertinente et comment elle dialogue avec les autres composants du graphe.
 
-## Domaines
+## Points d'attention
 
-Cette entrée croise notamment les domaines suivants : Web Development, Systèmes de connaissance.
+- Les usages sont décrits en français sans masquer les noms propres, acronymes ou standards techniques.
+- Les limites restent contextualisées par rapport aux projets, aux publications et aux contraintes d'implémentation.
 
 ## Références
 
-Les références principales restent les sources indiquées dans la fiche canonique, notamment RDF 1.1 Concepts and Abstract Syntax.
+Les sources principales restent disponibles dans le bloc de références de la fiche.

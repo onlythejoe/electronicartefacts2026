@@ -6,8 +6,8 @@
     "canonical": "activitypub"
   },
   "title": "ActivityPub",
-  "abstract": "ActivityPub est un protocole décentralisé normalisé par le W3C pour l’échange fédéré d’activités entre serveurs et entre clients et serveurs.",
-  "description": "Fiche technologique consacrée à la fédération, à la culture des réseaux et aux infrastructures du web social.",
+  "abstract": "ActivityPub est présenté comme une technologie de référence pour comprendre son rôle dans l'écosystème Electronic Artefacts, ses usages, ses limites et sa place dans les systèmes numériques contemporains.",
+  "description": "ActivityPub est présenté comme une technologie de référence pour comprendre son rôle dans l'écosystème Electronic Artefacts, ses usages, ses limites et sa place dans les systèmes numériques contemporains.",
   "locale": "fr",
   "visibility": "public",
   "publicationClass": "canonical",
@@ -28,13 +28,13 @@
   "publisher": "ea:organization:electronic-artefacts",
   "tags": [
     "ActivityPub",
-    "Fédération",
-    "Web social"
+    "Federation",
+    "Social Web"
   ],
   "disciplines": [
-    "Culture Internet",
-    "Culture des réseaux",
-    "Développement web"
+    "Internet Culture",
+    "Network Culture",
+    "Web Development"
   ],
   "sources": [
     {
@@ -46,12 +46,13 @@
     }
   ],
   "category": "protocol",
-  "roleInEcosystem": "ActivityPub constitue une référence pour la culture des réseaux, la fédération, les protocoles sociaux et la distribution publique de connaissances.",
+  "roleInEcosystem": "ActivityPub sert de repère technique pour évaluer le sujet \"ActivityPub\" dans le graphe public d'Electronic Artefacts, ses usages possibles et ses conséquences dans l'écosystème Electronic Artefacts.",
   "officialUrl": "https://www.w3.org/TR/activitypub/",
-  "bodyHtml": "<h2 id=\"role\">Rôle</h2>\n<p>ActivityPub est un protocole de référence pour les systèmes sociaux fédérés et l’échange décentralisé d’activités.</p>\n<h2 id=\"usage\">Usage</h2>\n<p>Electronic Artefacts peut l’utiliser comme source conceptuelle pour ses recherches sur la culture des réseaux, la distribution et le web social.</p>\n<h2 id=\"references\">Références</h2>\n<p>Consulter la recommandation ActivityPub du W3C.</p>\n",
+  "bodyHtml": "<h2 id=\"role\">Rôle</h2>\n<p>ActivityPub est documenté comme technologie de référence pour le sujet “ActivityPub” dans le graphe public d’Electronic Artefacts.</p>\n<h2 id=\"usage\">Usage</h2>\n<p>Cette fiche aide à situer la technologie dans l’écosystème Electronic Artefacts : ce qu’elle permet, quand elle devient pertinente et comment elle dialogue avec les autres composants du graphe.</p>\n<h2 id=\"points-d-attention\">Points d’attention</h2>\n<ul>\n<li>Les usages sont décrits en français sans masquer les noms propres, acronymes ou standards techniques.</li>\n<li>Les limites restent contextualisées par rapport aux projets, aux publications et aux contraintes d’implémentation.</li>\n</ul>\n<h2 id=\"references\">Références</h2>\n<p>Les sources principales restent disponibles dans le bloc de références de la fiche.</p>\n",
   "headings": [
     "Rôle",
     "Usage",
+    "Points d'attention",
     "Références"
   ],
   "headingItems": [
@@ -64,6 +65,11 @@
       "level": 2,
       "title": "Usage",
       "id": "usage"
+    },
+    {
+      "level": 2,
+      "title": "Points d'attention",
+      "id": "points-d-attention"
     },
     {
       "level": 2,

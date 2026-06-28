@@ -3,16 +3,17 @@ id: ea:concept:retrieval-augmented-generation-fr
 type: concept
 slug:
   canonical: retrieval-augmented-generation
-title: Génération augmentée par récupération
+title: Génération augmentée par recuperation
 alternateNames:
   - RAG
-definition: Retrieval-augmented generation est un architecture that retrieves
-  external information at query time et supplies selected evidence à a
-  generative modèle before ou during response production.
-abstract: RAG relie search, embeddings, document segmentation, métadonnées,
-  provenance, context assembly, language modèles et answer evaluation.
-description: A canonical definition de retrieval-augmented generation pour
-  systèmes de connaissance et source-grounded AI.
+definition: Génération augmentée par recuperation désigne les architectures qui recuperent des
+  sources externes avant ou pendant la generation d'une reponse par IA.
+abstract: Génération augmentée par recuperation définit un repère conceptuel en français pour
+  comprendre les architectures qui recuperent des sources externes avant ou pendant la generation
+  d'une reponse par IA et ses liens avec les projets, technologies et publications du graphe.
+description: Génération augmentée par recuperation définit un repère conceptuel en français pour
+  comprendre les architectures qui recuperent des sources externes avant ou pendant la generation
+  d'une reponse par IA et ses liens avec les projets, technologies et publications du graphe.
 locale: fr
 visibility: public
 publicationClass: canonical
@@ -28,21 +29,20 @@ authors:
   - id: ea:organization:electronic-artefacts
 publisher: ea:organization:electronic-artefacts
 scope:
-  - Information retrieval
-  - Embeddings et indexes
-  - Context assembly
-  - Source grounding
-  - Citation
-  - Evaluation
+  - définition du sujet
+  - contexte d'usage
+  - liens avec le graphe
+  - références associées
 exclusions:
-  - Adding an entire uncontrolled document dump à a prompt
-  - Assuming retrieval guarantees that generated claims sont supported
+  - les usages purement promotionnels sans définition vérifiable
+  - les exemples déconnectés des sources, relations ou contraintes du graphe
 claims:
-  - RAG separates updonnéesble external knowledge from modèle parameters.
-  - Retrieval quality, chunk design, métadonnées et answer attribution determine
-    système reliability.
+  - Génération augmentée par recuperation devient utile lorsque sa définition reste reliée à des
+    sources, des pratiques et des objets observables.
+  - La fiche sert de vocabulaire commun pour relier projets, publications et technologies sans
+    mélanger les langues.
 sources:
-  - title: Retrieval-Augmented Generation pour Knowledge-Intensive NLP Tasks
+  - title: Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks
     author: Patrick Lewis et al.
     publisher: arXiv
     publishedAt: 2020-05-22
@@ -55,8 +55,8 @@ tags:
   - Vector Search
   - Grounding
 disciplines:
-  - Intelligence artificielle
-  - Systèmes de connaissance
+  - intelligence artificielle
+  - Knowledge Systems
   - Information Architecture
   - Machine Learning
 translationOf: ea:concept:retrieval-augmented-generation
@@ -64,16 +64,16 @@ translationOf: ea:concept:retrieval-augmented-generation
 
 ## Rôle
 
-Génération augmentée par récupération est documenté ici comme une entrée française du graphe public d’Electronic Artefacts. RAG relie search, embeddings, document segmentation, métadonnées, provenance, context assembly, language modèles et answer evaluation.
+Génération augmentée par recuperation est documenté comme notion de référence pour comprendre les architectures qui recuperent des sources externes avant ou pendant la generation d'une reponse par IA.
 
 ## Usage
 
-Cette notion sert à relier les projets, publications et technologies qui partagent un même vocabulaire de conception. Retrieval-augmented generation est un architecture that retrieves external information at query time et supplies selected evidence à a generative modèle before ou during response production.
+Cette fiche relie la notion aux projets, publications et technologies qui partagent un même vocabulaire de conception. Elle sert de point d'appui pour naviguer dans le graphe en version française.
 
-## Domaines
+## Périmètre
 
-Cette entrée croise notamment les domaines suivants : Intelligence artificielle, Systèmes de connaissance, Information Architecture, Machine Learning.
+La notion est abordée par ses définitions, ses usages, ses limites et ses relations avec les autres objets documentés.
 
 ## Références
 
-Les références principales restent les sources indiquées dans la fiche canonique, notamment Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks.
+Les sources principales restent disponibles dans le bloc de références de la fiche.

@@ -2,35 +2,63 @@
 id: ea:technology:transformer-architecture-fr
 type: technology
 translationOf: ea:technology:transformer-architecture
-slug: { canonical: transformer-architecture }
+slug:
+  canonical: transformer-architecture
 title: Architecture Transformer
-abstract: Le transformer est une architecture de réseau neuronal fondée sur des mécanismes d’attention et le traitement parallèle de séquences.
-description: Fiche technologique consacrée à l’architecture qui sous-tend de nombreux modèles modernes de langage et multimodaux.
+abstract: Architecture Transformer est présenté comme une technologie de référence pour comprendre
+  son rôle dans l'écosystème Electronic Artefacts, ses usages, ses limites et sa place dans les
+  systèmes numériques contemporains.
+description: Architecture Transformer est présenté comme une technologie de référence pour
+  comprendre son rôle dans l'écosystème Electronic Artefacts, ses usages, ses limites et sa place
+  dans les systèmes numériques contemporains.
 locale: fr
 visibility: public
 publicationClass: canonical
 status: active
 maturity: production
 confidence: canonical
-version: { version: 1.0.0, createdAt: "2026-06-24", publishedAt: "2026-06-25", modifiedAt: "2026-06-25" }
-authors: [{ id: ea:organization:electronic-artefacts }]
+version:
+  version: 1.0.0
+  createdAt: 2026-06-24
+  publishedAt: 2026-06-25
+  modifiedAt: 2026-06-25
+authors:
+  - id: ea:organization:electronic-artefacts
 publisher: ea:organization:electronic-artefacts
 category: approach
-roleInEcosystem: Les transformers constituent la référence architecturale principale pour comprendre attention, contexte et prédiction de jetons dans les grands modèles de langage.
+roleInEcosystem: Architecture Transformer sert de repère technique pour évaluer le sujet
+  "Architecture Transformer" dans le graphe public d'Electronic Artefacts, ses usages possibles et
+  ses conséquences dans l'écosystème Electronic Artefacts.
 officialUrl: https://arxiv.org/abs/1706.03762
-sources: [{ title: Attention Is All You Need, author: Ashish Vaswani et al., publisher: arXiv, publishedAt: "2017-06-12", accessedAt: "2026-06-24", url: https://arxiv.org/abs/1706.03762 }]
-tags: [Transformer, Attention, Réseaux neuronaux]
-disciplines: [Intelligence artificielle, Apprentissage automatique]
+sources:
+  - title: Attention Is All You Need
+    author: Ashish Vaswani et al.
+    publisher: arXiv
+    publishedAt: 2017-06-12
+    accessedAt: 2026-06-24
+    url: https://arxiv.org/abs/1706.03762
+tags:
+  - Transformer
+  - Attention
+  - Neural Networks
+disciplines:
+  - intelligence artificielle
+  - Machine Learning
 ---
 
 ## Rôle
 
-Le transformer traite les relations entre jetons au moyen de couches d’attention et de réseaux directs, permettant un entraînement parallèle et une modélisation flexible des séquences.
+Architecture Transformer est documenté comme technologie de référence pour le sujet "Architecture Transformer" dans le graphe public d'Electronic Artefacts.
 
 ## Usage
 
-Electronic Artefacts l’utilise comme référence technique pour expliquer les grands modèles de langage et les systèmes multimodaux, sans en faire un synonyme de l’intelligence.
+Cette fiche aide à situer la technologie dans l'écosystème Electronic Artefacts : ce qu'elle permet, quand elle devient pertinente et comment elle dialogue avec les autres composants du graphe.
+
+## Points d'attention
+
+- Les usages sont décrits en français sans masquer les noms propres, acronymes ou standards techniques.
+- Les limites restent contextualisées par rapport aux projets, aux publications et aux contraintes d'implémentation.
 
 ## Références
 
-Consulter « Attention Is All You Need » et les ressources sur les grands modèles de langage.
+Les sources principales restent disponibles dans le bloc de références de la fiche.

@@ -4,12 +4,14 @@ type: concept
 slug:
   canonical: hypertext
 title: Hypertexte
-definition: Hypertext est un système de non-linear text et médias connected by
-  links, allowing readers et machines à traverse knowledge through associations.
-abstract: Hypertext est un foundational concept pour the web, digital archives,
-  graphee de connaissancess, digital gardens, public notes et Electronic
-  Artefacts knowledge publishing.
-description: A canonical concept record pour linked textual et médias systèmes.
+definition: Hypertexte désigne les structures de lecture et d'ecriture fondees sur des liens, des
+  parcours et des références croisables.
+abstract: Hypertexte définit un repère conceptuel en français pour comprendre les structures de
+  lecture et d'ecriture fondees sur des liens, des parcours et des références croisables et ses
+  liens avec les projets, technologies et publications du graphe.
+description: Hypertexte définit un repère conceptuel en français pour comprendre les structures de
+  lecture et d'ecriture fondees sur des liens, des parcours et des références croisables et ses
+  liens avec les projets, technologies et publications du graphe.
 locale: fr
 visibility: public
 publicationClass: canonical
@@ -25,19 +27,18 @@ authors:
   - id: ea:organization:electronic-artefacts
 publisher: ea:organization:electronic-artefacts
 scope:
-  - Non-linear reading
-  - Linking
-  - Web pages
-  - Digital archives
-  - Knowledge systèmes
+  - définition du sujet
+  - contexte d'usage
+  - liens avec le graphe
+  - références associées
 exclusions:
-  - A linear PDF avec no meaningful internal ou external links
-  - A navigation menu that does not change the structure de knowledge
+  - les usages purement promotionnels sans définition vérifiable
+  - les exemples déconnectés des sources, relations ou contraintes du graphe
 claims:
-  - Hypertext becomes more valuable when links carry sémantique et editorial
-    intent.
-  - Graphees de connaissances extend hypertext by making the identité et type de
-    links explicit.
+  - Hypertexte devient utile lorsque sa définition reste reliée à des sources, des pratiques et des
+    objets observables.
+  - La fiche sert de vocabulaire commun pour relier projets, publications et technologies sans
+    mélanger les langues.
 sources:
   - title: As We May Think
     author: Vannevar Bush
@@ -52,30 +53,30 @@ sources:
     accessedAt: 2026-06-24
     url: https://dougengelbart.org/content/view/138/000/
 tags:
-  - Hypertexte
+  - Hypertext
   - Web
-  - Systèmes de connaissance
+  - Knowledge Systems
   - Digital Archives
 disciplines:
-  - Systèmes de connaissance
-  - Culture Internet
+  - Knowledge Systems
+  - Internet Culture
   - Web Development
-  - History de Technology
+  - History of Technology
 translationOf: ea:concept:hypertext
 ---
 
 ## Rôle
 
-Hypertexte est documenté ici comme une entrée française du graphe public d’Electronic Artefacts. Hypertext est un foundational concept pour the web, digital archives, graphee de connaissancess, digital gardens, public notes et Electronic Artefacts knowledge publishing.
+Hypertexte est documenté comme notion de référence pour comprendre les structures de lecture et d'ecriture fondees sur des liens, des parcours et des références croisables.
 
 ## Usage
 
-Cette notion sert à relier les projets, publications et technologies qui partagent un même vocabulaire de conception. Hypertext est un système de non-linear text et médias connected by links, allowing readers et machines à traverse knowledge through associations.
+Cette fiche relie la notion aux projets, publications et technologies qui partagent un même vocabulaire de conception. Elle sert de point d'appui pour naviguer dans le graphe en version française.
 
-## Domaines
+## Périmètre
 
-Cette entrée croise notamment les domaines suivants : Systèmes de connaissance, Culture Internet, Web Development, History de Technology.
+La notion est abordée par ses définitions, ses usages, ses limites et ses relations avec les autres objets documentés.
 
 ## Références
 
-Les références principales restent les sources indiquées dans la fiche canonique, notamment As We May Think et Augmenting Human Intellect.
+Les sources principales restent disponibles dans le bloc de références de la fiche.

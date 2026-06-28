@@ -4,13 +4,14 @@ type: concept
 slug:
   canonical: event-driven-architecture
 title: Architecture événementielle
-definition: Event-driven architecture est un système design approach dans which
-  components publish, transport et react à records de state change rather than
-  depending only on direct synchronous calls.
-abstract: Event-driven architecture relie event producers, brokers ou logs,
-  consumers, schemas, delivery sémantiques, projections et observability.
-description: A canonical definition de event-driven architecture pour runtimes,
-  workflows et distributed systèmes.
+definition: Architecture événementielle désigne les architectures ou les changements d'etat sont
+  publies sous forme d'evenements et consommes par des composants decouples.
+abstract: Architecture événementielle définit un repère conceptuel en français pour comprendre les
+  architectures ou les changements d'etat sont publies sous forme d'evenements et consommes par des
+  composants decouples et ses liens avec les projets, technologies et publications du graphe.
+description: Architecture événementielle définit un repère conceptuel en français pour comprendre
+  les architectures ou les changements d'etat sont publies sous forme d'evenements et consommes par
+  des composants decouples et ses liens avec les projets, technologies et publications du graphe.
 locale: fr
 visibility: public
 publicationClass: canonical
@@ -26,53 +27,49 @@ authors:
   - id: ea:organization:electronic-artefacts
 publisher: ea:organization:electronic-artefacts
 scope:
-  - Events
-  - Producers et consumers
-  - Streams et brokers
-  - Delivery sémantiques
-  - Idempotency
-  - Projections
+  - définition du sujet
+  - contexte d'usage
+  - liens avec le graphe
+  - références associées
 exclusions:
-  - Renaming arbitrary messages comme events without recording a meaningful
-    state change
-  - Assuming asynchronous transport removes the need pour contracts et failure
-    handling
+  - les usages purement promotionnels sans définition vérifiable
+  - les exemples déconnectés des sources, relations ou contraintes du graphe
 claims:
-  - Events reduce temporal coupling but introduce ordering, duplication, replay
-    et observability concerns.
-  - Durable event systèmes require explicit schemas, identifiers et consumer
-    behavior.
+  - Architecture événementielle devient utile lorsque sa définition reste reliée à des sources, des
+    pratiques et des objets observables.
+  - La fiche sert de vocabulaire commun pour relier projets, publications et technologies sans
+    mélanger les langues.
 sources:
   - title: CloudEvents
     publisher: Cloud Native Computing Foundation
     accessedAt: 2026-06-24
     url: https://cloudevents.io/
 tags:
-  - Architecture événementielle
+  - Event-Driven Architecture
   - Event Streams
   - Messaging
   - Idempotency
   - Projections
 disciplines:
-  - Software Architecture
-  - Systèmes Design
+  - architecture logicielle
+  - conception de systèmes
   - Programming
-  - Distributed Systèmes
+  - Distributed Systems
 translationOf: ea:concept:event-driven-architecture
 ---
 
 ## Rôle
 
-Architecture événementielle est documenté ici comme une entrée française du graphe public d’Electronic Artefacts. Event-driven architecture relie event producers, brokers ou logs, consumers, schemas, delivery sémantiques, projections et observability.
+Architecture événementielle est documenté comme notion de référence pour comprendre les architectures ou les changements d'etat sont publies sous forme d'evenements et consommes par des composants decouples.
 
 ## Usage
 
-Cette notion sert à relier les projets, publications et technologies qui partagent un même vocabulaire de conception. Event-driven architecture est un système design approach dans which components publish, transport et react à records de state change rather than depending only on direct synchronous calls.
+Cette fiche relie la notion aux projets, publications et technologies qui partagent un même vocabulaire de conception. Elle sert de point d'appui pour naviguer dans le graphe en version française.
 
-## Domaines
+## Périmètre
 
-Cette entrée croise notamment les domaines suivants : Software Architecture, Systèmes Design, Programming, Distributed Systèmes.
+La notion est abordée par ses définitions, ses usages, ses limites et ses relations avec les autres objets documentés.
 
 ## Références
 
-Les références principales restent les sources indiquées dans la fiche canonique, notamment CloudEvents.
+Les sources principales restent disponibles dans le bloc de références de la fiche.

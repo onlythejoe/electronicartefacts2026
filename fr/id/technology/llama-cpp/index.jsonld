@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/knowledge/technologies/llama-cpp/#webpage",
       "url": "https://electronicartefacts.com/fr/knowledge/technologies/llama-cpp/",
       "name": "llama.cpp",
-      "description": "Fiche technologique consacrée à l’inférence locale, la quantification et au déploiement portable de modèles d’IA.",
+      "description": "llama.cpp est présenté comme une technologie de référence pour comprendre son rôle dans l'écosystème Electronic Artefacts, ses usages, ses limites et sa place dans les systèmes numériques contemporains.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
@@ -34,8 +34,8 @@
       "@id": "https://electronicartefacts.com/fr/id/technology/llama-cpp/",
       "identifier": "ea:technology:llama-cpp-fr",
       "name": "llama.cpp",
-      "abstract": "llama.cpp est un moteur d’inférence libre en C et C++ permettant d’exécuter de grands modèles de langage sur du matériel grand public ou serveur.",
-      "description": "llama.cpp est un moteur d’inférence libre en C et C++ permettant d’exécuter de grands modèles de langage sur du matériel grand public ou serveur.",
+      "abstract": "llama.cpp est présenté comme une technologie de référence pour comprendre son rôle dans l'écosystème Electronic Artefacts, ses usages, ses limites et sa place dans les systèmes numériques contemporains.",
+      "description": "llama.cpp est présenté comme une technologie de référence pour comprendre son rôle dans l'écosystème Electronic Artefacts, ses usages, ses limites et sa place dans les systèmes numériques contemporains.",
       "url": "https://electronicartefacts.com/fr/knowledge/technologies/llama-cpp/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/knowledge/technologies/llama-cpp/#webpage"
@@ -57,12 +57,12 @@
       ],
       "keywords": [
         "llama.cpp",
-        "IA locale",
-        "Inférence",
-        "Quantification",
-        "Intelligence artificielle",
-        "Programmation",
-        "Logiciel libre"
+        "Local AI",
+        "Inference",
+        "Quantization",
+        "intelligence artificielle",
+        "Programming",
+        "Open Source"
       ],
       "inLanguage": "fr",
       "dateCreated": "2026-06-24",
@@ -75,7 +75,7 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 52,
+      "wordCount": 93,
       "citation": [
         {
           "@type": "CreativeWork",

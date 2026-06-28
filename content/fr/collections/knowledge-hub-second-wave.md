@@ -3,13 +3,14 @@ id: ea:collection:knowledge-hub-second-wave-fr
 type: collection
 slug:
   canonical: knowledge-hub-second-wave
-title: Hub de connaissance, deuxième vague
+title: Hub de connaissance, deuxieme vague
 subtitle: Editorial Collection
-abstract: Knowledge Hub Second Wave groups a larger expansion de Electronic
-  Artefacts knowledge records across hypertext, open source, métadonnées,
-  programmation créative, web audio, motion, typographey, HCI, algorithmic music
-  et generative AI.
-description: A curated collection pour the second Knowledge Hub expansion wave.
+abstract: Hub de connaissance, deuxieme vague organise des fiches reliées autour de le sujet "Hub de
+  connaissance, deuxieme vague" dans le graphe public d'Electronic Artefacts, afin de donner une
+  progression lisible aux archives de connaissance d'Electronic Artefacts.
+description: Hub de connaissance, deuxieme vague organise des fiches reliées autour de le sujet "Hub
+  de connaissance, deuxieme vague" dans le graphe public d'Electronic Artefacts, afin de donner une
+  progression lisible aux archives de connaissance d'Electronic Artefacts.
 locale: fr
 visibility: public
 publicationClass: published
@@ -24,9 +25,8 @@ version:
 authors:
   - id: ea:organization:electronic-artefacts
 publisher: ea:organization:electronic-artefacts
-thesis: The second Knowledge Hub wave expands from graphe foundations into
-  durable culturel et technical fields that can attract search traffic while
-  strengthening Electronic Artefacts comme an open recherche library.
+thesis: Hub de connaissance, deuxieme vague propose une lecture organisee de 30 fiches reliées par
+  un même axe editorial.
 curator:
   - id: ea:organization:electronic-artefacts
 explicitMembers:
@@ -60,35 +60,34 @@ explicitMembers:
   - id: ea:technology:web-animations
   - id: ea:technology:css-fonts
   - id: ea:technology:activitypub
-selectionNote: This wave prioritizes evergreen topics avec strong search intent,
-  deep internal linking potential et long-term relevance à creative technology,
-  archives et systèmes de connaissance.
+selectionNote: La sélection privilégie des contenus stables, reliables et utiles pour parcourir le
+  hub de connaissance en français.
 tags:
   - Knowledge Hub
   - Second Wave
   - Editorial Collection
-  - Recherche Library
+  - Research Library
 disciplines:
-  - Systèmes de connaissance
-  - Programmation créative
+  - Knowledge Systems
+  - programmation créative
   - Web Development
-  - Design
-  - Intelligence artificielle
+  - design
+  - intelligence artificielle
 translationOf: ea:collection:knowledge-hub-second-wave
 ---
 
 ## Intention
 
-Hub de connaissance, deuxième vague est documenté ici comme une entrée française du graphe public d’Electronic Artefacts. Knowledge Hub Second Wave groups a larger expansion de Electronic Artefacts knowledge records across hypertext, open source, métadonnées, programmation créative, web audio, motion, typographey, HCI, algorithmic music et generative AI.
+Hub de connaissance, deuxieme vague rassemble des fiches qui partagent un même axe de lecture autour de le sujet "Hub de connaissance, deuxieme vague" dans le graphe public d'Electronic Artefacts.
 
-## Sélection
+## Selection
 
-This wave prioritizes evergreen topics avec strong search intent, deep internal linking potential et long-term relevance à creative technology, archives et systèmes de connaissance.
+La collection organise les contenus par proximité éditoriale, par utilité de navigation et par potentiel de liens internes. Elle permet de parcourir le hub de connaissance sans perdre la cohérence du sujet.
 
 ## Usage
 
-Cette collection facilite la navigation entre des objets liés et donne une entrée française cohérente aux archives de connaissance.
+Cette entrée sert de repère pour explorer plusieurs publications ou notions depuis une même page française.
 
 ## Références
 
-Les références principales sont conservées dans la fiche canonique et dans le graphe de connaissance public.
+Les sources associées sont conservées dans la fiche canonique du graphe.
