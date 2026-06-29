@@ -19734,6 +19734,13 @@ window.EA_SEARCH = {
       const outputs = map.querySelector("[data-capability-reader-outputs]");
       if (!nodes.length || !kicker || !title || !copy || !tools || !outputs) return;
 
+      const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      let rafId = 0;
+      let width = 1;
+      let height = 1;
+      let frameActive = false;
+      const bubbleState = [];
+
       const renderTokens = (target, value) => {
         target.replaceChildren(
           ...String(value || "")
@@ -19760,11 +19767,176 @@ window.EA_SEARCH = {
         renderTokens(outputs, node.dataset.capabilityOutputs);
       };
 
+      const measure = () => {
+        const rect = map.getBoundingClientRect();
+        width = Math.max(1, rect.width);
+        height = Math.max(1, rect.height);
+      };
+
+      const initBubbleState = () => {
+        bubbleState.length = 0;
+        nodes.forEach((node, index) => {
+          const computed = window.getComputedStyle(node);
+          const leftPct = Number.parseFloat(
+            computed.getPropertyValue("--cap-x")
+            || node.style.getPropertyValue("--cap-x")
+            || node.dataset.capabilityX
+            || "50",
+          );
+          const topPct = Number.parseFloat(
+            computed.getPropertyValue("--cap-y")
+            || node.style.getPropertyValue("--cap-y")
+            || node.dataset.capabilityY
+            || "50",
+          );
+          const sizeValue = computed.getPropertyValue("--cap-size")
+            || node.style.getPropertyValue("--cap-size")
+            || node.dataset.capabilitySize
+            || "7rem";
+          const baseWidth = Number.parseFloat(sizeValue) || 112;
+          const baseR = Math.max(44, baseWidth / 2);
+          const x = (leftPct / 100) * width;
+          const y = (topPct / 100) * height;
+          bubbleState.push({
+            el: node,
+            x,
+            y,
+            px: x,
+            py: y,
+            r: baseR,
+            baseR,
+            hover: index === 0,
+          });
+          node.style.willChange = "left, top, width, height, transform";
+        });
+      };
+
+      const syncInfo = (node) => {
+        if (!node) return;
+        activate(node);
+      };
+
+      const frame = () => {
+        if (!bubbleState.length) return;
+        const cx = width * 0.5;
+        const cy = height * 0.5;
+        const attraction = 0.03;
+        const hoverScale = 1.2;
+        const iterations = 3;
+
+        bubbleState.forEach((bubble) => {
+          bubble.px = bubble.x;
+          bubble.py = bubble.y;
+        });
+
+        bubbleState.forEach((bubble) => {
+          bubble.x += (cx - bubble.x) * attraction;
+          bubble.y += (cy - bubble.y) * attraction;
+        });
+
+        for (let iter = 0; iter < iterations; iter += 1) {
+          for (let i = 0; i < bubbleState.length; i += 1) {
+            for (let j = i + 1; j < bubbleState.length; j += 1) {
+              const a = bubbleState[i];
+              const b = bubbleState[j];
+              let dx = b.x - a.x;
+              let dy = b.y - a.y;
+              let distSq = dx * dx + dy * dy;
+              if (!distSq) {
+                dx = 0.0001;
+                dy = 0.0001;
+                distSq = dx * dx + dy * dy;
+              }
+              const dist = Math.sqrt(distSq);
+              const targetRa = a.hover ? a.baseR * hoverScale : a.baseR;
+              const targetRb = b.hover ? b.baseR * hoverScale : b.baseR;
+              const minDist = targetRa + targetRb + 8;
+              if (dist < minDist) {
+                const overlap = minDist - dist;
+                const nx = dx / dist;
+                const ny = dy / dist;
+                const corr = overlap * 0.5;
+                a.x -= nx * corr;
+                a.y -= ny * corr;
+                b.x += nx * corr;
+                b.y += ny * corr;
+              }
+            }
+          }
+        }
+
+        bubbleState.forEach((bubble) => {
+          const targetR = bubble.hover ? bubble.baseR * hoverScale : bubble.baseR;
+          bubble.r += (targetR - bubble.r) * 0.18;
+          const r = bubble.r;
+          bubble.x = Math.min(Math.max(bubble.x, r), width - r);
+          bubble.y = Math.min(Math.max(bubble.y, r), height - r);
+
+          bubble.el.style.left = `${(bubble.x / width) * 100}%`;
+          bubble.el.style.top = `${(bubble.y / height) * 100}%`;
+          bubble.el.style.width = `${bubble.r * 2}px`;
+          bubble.el.style.height = `${bubble.r * 2}px`;
+        });
+
+        rafId = window.requestAnimationFrame(frame);
+      };
+
+      const start = () => {
+        if (frameActive || reduceMotion) return;
+        frameActive = true;
+        rafId = window.requestAnimationFrame(frame);
+      };
+
+      const stop = () => {
+        frameActive = false;
+        window.cancelAnimationFrame(rafId);
+      };
+
+      measure();
+      initBubbleState();
+
+      const syncFromPointer = (node) => {
+        bubbleState.forEach((bubble) => {
+          bubble.hover = bubble.el === node;
+          const isActive = bubble.el === node;
+          bubble.el.classList.toggle("is-active", isActive);
+          bubble.el.setAttribute("aria-pressed", isActive ? "true" : "false");
+        });
+        syncInfo(node);
+        start();
+      };
+
       nodes.forEach((node) => {
-        node.addEventListener("pointerenter", () => activate(node));
-        node.addEventListener("focus", () => activate(node));
-        node.addEventListener("click", () => activate(node));
+        node.addEventListener("pointerenter", () => syncFromPointer(node));
+        node.addEventListener("focus", () => syncFromPointer(node));
+        node.addEventListener("click", () => syncFromPointer(node));
       });
+
+      if (bubbleState[0]) activate(bubbleState[0].el);
+      if (!reduceMotion) start();
+
+      const resize = () => {
+        const previousWidth = width;
+        const previousHeight = height;
+        measure();
+        const scaleX = width / previousWidth;
+        const scaleY = height / previousHeight;
+        bubbleState.forEach((bubble) => {
+          bubble.x *= scaleX;
+          bubble.y *= scaleY;
+          bubble.px *= scaleX;
+          bubble.py *= scaleY;
+        });
+      };
+
+      if (typeof ResizeObserver !== "undefined") {
+        const observer = new ResizeObserver(() => {
+          resize();
+        });
+        observer.observe(map);
+      } else {
+        window.addEventListener("resize", resize, { passive: true });
+      }
     });
   };
 
