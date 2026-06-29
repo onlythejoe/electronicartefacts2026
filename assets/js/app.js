@@ -16776,16 +16776,17 @@ window.EA_SEARCH = {
     if (locale !== "fr" || !value || /^(mailto:|tel:|https?:|#)/.test(value)) return value;
     const url = new URL(value, window.location.origin);
     if (url.origin !== window.location.origin) return value;
-    const englishPath = url.pathname.startsWith("/fr/")
-      ? url.pathname.slice(3) || "/"
-      : url.pathname;
+    if (url.pathname === "/fr" || url.pathname.startsWith("/fr/")) {
+      return `${url.pathname}${url.search}${url.hash}`;
+    }
+    const englishPath = url.pathname;
     const target = translatedPages.get(englishPath);
     if (target) {
       url.pathname = target;
-    } else if (!url.pathname.startsWith("/fr/") && isLocalizablePath(englishPath)) {
+    } else if (isLocalizablePath(englishPath)) {
       url.pathname = englishPath === "/" ? "/fr/" : `/fr${englishPath}`;
     } else {
-      url.pathname = target || englishPath;
+      return value;
     }
     return `${url.pathname}${url.search}${url.hash}`;
   };
@@ -16800,21 +16801,34 @@ window.EA_SEARCH = {
   const localizeRoot = (root = document) => {
     if (locale !== "fr") return;
 
-    const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, {
-      acceptNode(node) {
-        if (!node.nodeValue?.trim()) return NodeFilter.FILTER_REJECT;
-        if (["SCRIPT", "STYLE"].includes(node.parentElement?.tagName || "")) return NodeFilter.FILTER_REJECT;
-        return NodeFilter.FILTER_ACCEPT;
-      },
-    });
+    const acceptsTextNode = (node) => {
+      if (!node.nodeValue?.trim()) return false;
+      return !["SCRIPT", "STYLE"].includes(node.parentElement?.tagName || "");
+    };
     const textNodes = [];
-    while (walker.nextNode()) textNodes.push(walker.currentNode);
+    if (root?.nodeType === 3) {
+      if (acceptsTextNode(root)) textNodes.push(root);
+    } else {
+      const walker = document.createTreeWalker(root, NodeFilter.SHOW_TEXT, {
+        acceptNode(node) {
+          return acceptsTextNode(node) ? NodeFilter.FILTER_ACCEPT : NodeFilter.FILTER_REJECT;
+        },
+      });
+      while (walker.nextNode()) textNodes.push(walker.currentNode);
+    }
     textNodes.forEach((node) => {
       const translated = translateText(node.nodeValue || "");
       if (translated !== node.nodeValue) node.nodeValue = translated;
     });
 
-    root.querySelectorAll?.("[placeholder], [title], [aria-label]").forEach((element) => {
+    const elementsIncludingRoot = (selector) => {
+      const elements = [];
+      if (root?.nodeType === 1 && root.matches?.(selector)) elements.push(root);
+      root.querySelectorAll?.(selector).forEach((element) => elements.push(element));
+      return elements;
+    };
+
+    elementsIncludingRoot("[placeholder], [title], [aria-label]").forEach((element) => {
       ["placeholder", "title", "aria-label"].forEach((attribute) => {
         const value = element.getAttribute(attribute);
         if (!value) return;
@@ -16822,7 +16836,7 @@ window.EA_SEARCH = {
         if (translated !== value) element.setAttribute(attribute, translated);
       });
     });
-    root.querySelectorAll?.("a[href]").forEach((link) => {
+    elementsIncludingRoot("a[href]").forEach((link) => {
       const value = link.getAttribute("href");
       const localized = localizeHref(value);
       if (localized !== value) link.setAttribute("href", localized);
@@ -16831,12 +16845,32 @@ window.EA_SEARCH = {
 
   if (locale === "fr") {
     let localizationQueued = false;
-    const observer = new MutationObserver(() => {
+    const pendingRoots = new Set();
+    const queueLocalization = (root) => {
+      if (root) pendingRoots.add(root);
       if (localizationQueued) return;
       localizationQueued = true;
       window.queueMicrotask(() => {
         localizationQueued = false;
-        localizeRoot(document);
+        const roots = [...pendingRoots];
+        pendingRoots.clear();
+        roots.forEach((pendingRoot) => {
+          if (pendingRoot?.isConnected === false) return;
+          localizeRoot(pendingRoot);
+        });
+      });
+    };
+    const observer = new MutationObserver((mutations) => {
+      mutations.forEach((mutation) => {
+        if (mutation.type === "childList" && mutation.addedNodes.length) {
+          queueLocalization(mutation.target);
+          return;
+        }
+        if (mutation.type === "characterData") {
+          queueLocalization(mutation.target.parentElement || mutation.target);
+          return;
+        }
+        if (mutation.type === "attributes") queueLocalization(mutation.target);
       });
     });
     observer.observe(document.documentElement, {
