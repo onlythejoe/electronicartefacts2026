@@ -4,7 +4,7 @@ type: researchField
 slug:
   canonical: runtime-theory
 title: Théorie du runtime
-subtitle: Recherche field
+subtitle: Champ de recherche
 abstract: Théorie du runtime cadre un champ de recherche suivi par Electronic Artefacts, en reliant
   questions ouvertes, prototypes, sources et hypothèses de travail.
 description: Théorie du runtime cadre un champ de recherche suivi par Electronic Artefacts, en
@@ -30,8 +30,8 @@ questions:
       relations exploitables ?
   - id: contextual-execution
     status: active
-    question: Quels usages de Théorie du runtime doivent rester ouverts à l'experimentation et à la
-      verification ?
+    question: Quels usages de Théorie du runtime doivent rester ouverts à l'expérimentation et à la
+      vérification ?
 scope:
   - questions de recherche
   - hypothèses de conception
@@ -40,11 +40,8 @@ scope:
 findings:
   - Théorie du runtime demande une articulation claire entre vocabulaire, preuve et expérience
     utilisateur.
-  - Théorie du runtime demande une articulation claire entre vocabulaire, preuve et expérience
-    utilisateur.
 openQuestions:
-  - Quels critères permettent d'evaluer Théorie du runtime dans des situations concrètes ?
-  - Quels critères permettent d'evaluer Théorie du runtime dans des situations concrètes ?
+  - Quels critères permettent d'évaluer Théorie du runtime dans des situations concrètes ?
 tags:
   - Runtime
   - Theory
@@ -52,9 +49,9 @@ tags:
   - Events
   - Primitives
 disciplines:
-  - Technology
+  - Technologie
   - Research
-  - Systems
+  - Systèmes
 translationOf: ea:researchField:runtime-theory
 ---
 
@@ -64,7 +61,7 @@ Théorie du runtime décrit un espace de recherche actif pour Electronic Artefac
 
 ## Questions
 
-- Comment rendre les hypothèses suffisamment explicites pour être partagees, testées et reliées au graphe ?
+- Comment rendre les hypothèses suffisamment explicites pour être partagées, testées et reliées au graphe ?
 - Quelles preuves, interfaces ou architectures permettent de transformer ce champ en expérience utilisable ?
 
 ## Usage

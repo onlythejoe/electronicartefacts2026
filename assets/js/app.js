@@ -7404,10 +7404,10 @@ window.EA_PUBLIC_CATALOG = {
       "type": "concept",
       "locale": "fr",
       "translationOf": "ea:concept:human-computer-interaction",
-      "title": "Human Computer Interaction",
-      "summary": "Human Computer Interaction définit un repère conceptuel en français pour comprendre la conception des interactions entre personnes, interfaces, outils et environnements informatiques et ses liens avec les projets, technologies et publications du graphe.",
-      "description": "Human Computer Interaction définit un repère conceptuel en français pour comprendre la conception des interactions entre personnes, interfaces, outils et environnements informatiques et ses liens avec les projets, technologies et publications du graphe.",
-      "definition": "Human Computer Interaction désigne la conception des interactions entre personnes, interfaces, outils et environnements informatiques.",
+      "title": "Interaction humain-machine",
+      "summary": "Interaction humain-machine définit un repère conceptuel en français pour comprendre la conception des interactions entre personnes, interfaces, outils et environnements informatiques et ses liens avec les projets, technologies et publications du graphe.",
+      "description": "Interaction humain-machine définit un repère conceptuel en français pour comprendre la conception des interactions entre personnes, interfaces, outils et environnements informatiques et ses liens avec les projets, technologies et publications du graphe.",
+      "definition": "Interaction humain-machine désigne la conception des interactions entre personnes, interfaces, outils et environnements informatiques.",
       "status": "active",
       "maturity": "research",
       "confidence": "canonical",
@@ -7852,10 +7852,10 @@ window.EA_PUBLIC_CATALOG = {
       "type": "concept",
       "locale": "fr",
       "translationOf": "ea:concept:open-weight-model",
-      "title": "Open-Weight Model",
-      "summary": "Open-Weight Model définit un repère conceptuel en français pour comprendre les modèles dont les poids sont publies pour permettre l'execution, l'audit ou l'adaptation locale et ses liens avec les projets, technologies et publications du graphe.",
-      "description": "Open-Weight Model définit un repère conceptuel en français pour comprendre les modèles dont les poids sont publies pour permettre l'execution, l'audit ou l'adaptation locale et ses liens avec les projets, technologies et publications du graphe.",
-      "definition": "Open-Weight Model désigne les modèles dont les poids sont publies pour permettre l'execution, l'audit ou l'adaptation locale.",
+      "title": "Modèle à poids ouverts",
+      "summary": "Modèle à poids ouverts définit un repère conceptuel en français pour comprendre les modèles dont les poids sont publiés pour permettre l'exécution, l'audit ou l'adaptation locale et ses liens avec les projets, technologies et publications du graphe.",
+      "description": "Modèle à poids ouverts définit un repère conceptuel en français pour comprendre les modèles dont les poids sont publiés pour permettre l'exécution, l'audit ou l'adaptation locale et ses liens avec les projets, technologies et publications du graphe.",
+      "definition": "Modèle à poids ouverts désigne les modèles dont les poids sont publiés pour permettre l'exécution, l'audit ou l'adaptation locale.",
       "status": "active",
       "maturity": "research",
       "confidence": "validated",
@@ -7926,10 +7926,10 @@ window.EA_PUBLIC_CATALOG = {
       "type": "concept",
       "locale": "fr",
       "translationOf": "ea:concept:procedural-graphics",
-      "title": "Graphisme procedural",
-      "summary": "Graphisme procedural définit un repère conceptuel en français pour comprendre les images et formes visuelles generees par algorithmes, shaders ou regles parametriques et ses liens avec les projets, technologies et publications du graphe.",
-      "description": "Graphisme procedural définit un repère conceptuel en français pour comprendre les images et formes visuelles generees par algorithmes, shaders ou regles parametriques et ses liens avec les projets, technologies et publications du graphe.",
-      "definition": "Graphisme procedural désigne les images et formes visuelles generees par algorithmes, shaders ou regles parametriques.",
+      "title": "Graphisme procédural",
+      "summary": "Graphisme procédural définit un repère conceptuel en français pour comprendre les images et formes visuelles générées par algorithmes, shaders ou règles paramétriques et ses liens avec les projets, technologies et publications du graphe.",
+      "description": "Graphisme procédural définit un repère conceptuel en français pour comprendre les images et formes visuelles générées par algorithmes, shaders ou règles paramétriques et ses liens avec les projets, technologies et publications du graphe.",
+      "definition": "Graphisme procédural désigne les images et formes visuelles générées par algorithmes, shaders ou règles paramétriques.",
       "status": "active",
       "maturity": "research",
       "confidence": "canonical",
@@ -8000,10 +8000,10 @@ window.EA_PUBLIC_CATALOG = {
       "type": "concept",
       "locale": "fr",
       "translationOf": "ea:concept:retrieval-augmented-generation",
-      "title": "Génération augmentée par recuperation",
-      "summary": "Génération augmentée par recuperation définit un repère conceptuel en français pour comprendre les architectures qui recuperent des sources externes avant ou pendant la generation d'une reponse par IA et ses liens avec les projets, technologies et publications du graphe.",
-      "description": "Génération augmentée par recuperation définit un repère conceptuel en français pour comprendre les architectures qui recuperent des sources externes avant ou pendant la generation d'une reponse par IA et ses liens avec les projets, technologies et publications du graphe.",
-      "definition": "Génération augmentée par recuperation désigne les architectures qui recuperent des sources externes avant ou pendant la generation d'une reponse par IA.",
+      "title": "Génération augmentée par récupération",
+      "summary": "Génération augmentée par récupération définit un repère conceptuel en français pour comprendre les architectures qui récupèrent des sources externes avant ou pendant la génération d'une réponse par IA et ses liens avec les projets, technologies et publications du graphe.",
+      "description": "Génération augmentée par récupération définit un repère conceptuel en français pour comprendre les architectures qui récupèrent des sources externes avant ou pendant la génération d'une réponse par IA et ses liens avec les projets, technologies et publications du graphe.",
+      "definition": "Génération augmentée par récupération désigne les architectures qui récupèrent des sources externes avant ou pendant la génération d'une réponse par IA.",
       "status": "active",
       "maturity": "research",
       "confidence": "canonical",
@@ -9430,10 +9430,10 @@ window.EA_PUBLIC_CATALOG = {
       "type": "publication",
       "locale": "fr",
       "translationOf": "ea:publication:procedural-graphics-shaders-and-visual-systems",
-      "title": "Graphisme procedural, shaders et systèmes visuels",
+      "title": "Graphisme procédural, shaders et systèmes visuels",
       "subtitle": "Article technique",
-      "summary": "Graphisme procedural, shaders et systèmes visuels propose une synthèse claire en français sur le sujet \"Graphisme procedural, shaders et systèmes visuels\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
-      "description": "Graphisme procedural, shaders et systèmes visuels propose une synthèse claire en français sur le sujet \"Graphisme procedural, shaders et systèmes visuels\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
+      "summary": "Graphisme procédural, shaders et systèmes visuels propose une synthèse claire en français sur le sujet \"Graphisme procédural, shaders et systèmes visuels\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
+      "description": "Graphisme procédural, shaders et systèmes visuels propose une synthèse claire en français sur le sujet \"Graphisme procédural, shaders et systèmes visuels\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
       "status": "active",
       "maturity": "research",
       "confidence": "published",
@@ -9581,10 +9581,10 @@ window.EA_PUBLIC_CATALOG = {
       "type": "publication",
       "locale": "fr",
       "translationOf": "ea:publication:retrieval-augmented-generation-and-knowledge-systems",
-      "title": "Génération augmentée par recuperation et systèmes de connaissance",
+      "title": "Génération augmentée par récupération et systèmes de connaissance",
       "subtitle": "Article technique",
-      "summary": "Génération augmentée par recuperation et systèmes de connaissance propose une synthèse claire en français sur le sujet \"Génération augmentée par recuperation et systèmes de connaissance\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
-      "description": "Génération augmentée par recuperation et systèmes de connaissance propose une synthèse claire en français sur le sujet \"Génération augmentée par recuperation et systèmes de connaissance\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
+      "summary": "Génération augmentée par récupération et systèmes de connaissance propose une synthèse claire en français sur le sujet \"Génération augmentée par récupération et systèmes de connaissance\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
+      "description": "Génération augmentée par récupération et systèmes de connaissance propose une synthèse claire en français sur le sujet \"Génération augmentée par récupération et systèmes de connaissance\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
       "status": "active",
       "maturity": "research",
       "confidence": "published",
@@ -9771,10 +9771,10 @@ window.EA_PUBLIC_CATALOG = {
       "type": "publication",
       "locale": "fr",
       "translationOf": "ea:publication:verifiable-credentials-for-cultural-archives-and-creator-identity",
-      "title": "Identifiants vérifiables pour les archives culturelles et l'identité des createurs",
+      "title": "Identifiants vérifiables pour les archives culturelles et l'identité des créateurs",
       "subtitle": "Article technique",
-      "summary": "Identifiants vérifiables pour les archives culturelles et l'identité des createurs propose une synthèse claire en français sur le sujet \"Identifiants vérifiables pour les archives culturelles et l'identité des createurs\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
-      "description": "Identifiants vérifiables pour les archives culturelles et l'identité des createurs propose une synthèse claire en français sur le sujet \"Identifiants vérifiables pour les archives culturelles et l'identité des createurs\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
+      "summary": "Identifiants vérifiables pour les archives culturelles et l'identité des créateurs propose une synthèse claire en français sur le sujet \"Identifiants vérifiables pour les archives culturelles et l'identité des créateurs\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
+      "description": "Identifiants vérifiables pour les archives culturelles et l'identité des créateurs propose une synthèse claire en français sur le sujet \"Identifiants vérifiables pour les archives culturelles et l'identité des créateurs\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
       "status": "active",
       "maturity": "research",
       "confidence": "published",
@@ -9923,7 +9923,7 @@ window.EA_PUBLIC_CATALOG = {
       "locale": "fr",
       "translationOf": "ea:researchField:runtime-theory",
       "title": "Théorie du runtime",
-      "subtitle": "Recherche field",
+      "subtitle": "Champ de recherche",
       "summary": "Théorie du runtime cadre un champ de recherche suivi par Electronic Artefacts, en reliant questions ouvertes, prototypes, sources et hypothèses de travail.",
       "description": "Théorie du runtime cadre un champ de recherche suivi par Electronic Artefacts, en reliant questions ouvertes, prototypes, sources et hypothèses de travail.",
       "status": "active",
@@ -9939,9 +9939,9 @@ window.EA_PUBLIC_CATALOG = {
         "Primitives"
       ],
       "discipline": [
-        "Technology",
+        "Technologie",
         "Research",
-        "Systems"
+        "Systèmes"
       ],
       "route": "/fr/research/fields/runtime-theory/",
       "identifier": "/fr/id/research-field/runtime-theory/",
@@ -24596,12 +24596,7 @@ window.EA_SEARCH = {
     const lead = ranked[0] || entityById("vestiges");
     const system = ranked.find((item) => item.id === "unionmob") || ranked.find((item) => item.id !== lead?.id);
     const publicProof = entityById("oeil-de-meg") || ranked.find((item) => ![lead?.id, system?.id].includes(item.id));
-    const distinct = [lead, system, publicProof].filter((item, index, items) => item && items.findIndex((candidate) => candidate?.id === item.id) === index);
-    const latestDate = distinct
-      .map((item) => item?.temporality?.lastUpdated || "")
-      .filter(Boolean)
-      .sort()
-      .reverse()[0] || "2026";
+    const leadKicker = isFrench() ? "Notre prochain Flagship" : "Our next flagship";
 
     return `
       <section class="zone-card hero home-cinematic-hero intent-hero intent-hero--home">
@@ -24624,7 +24619,7 @@ window.EA_SEARCH = {
           <aside class="intent-hero__stage home-intent-stage" data-intent-stage aria-label="Current Electronic Artefacts projects">
             <div class="intent-hero__stage-label"><span>Now showing</span><strong>Current products and public work</strong></div>
             <div class="home-intent-stage__orbit" aria-hidden="true"></div>
-            ${homeHeroFrame(lead, "home-intent-stage__frame--lead", { depth: 0.82, kicker: "Latest platform", eager: true })}
+            ${homeHeroFrame(lead, "home-intent-stage__frame--lead", { depth: 0.82, kicker: leadKicker, eager: true })}
             ${homeHeroFrame(system, "home-intent-stage__frame--system", { depth: 1.35, kicker: system?.id === "unionmob" ? "External CTO partnership" : "Product system" })}
             ${homeHeroFrame(publicProof, "home-intent-stage__frame--proof", { depth: 1.62, kicker: "Live public proof" })}
             <div class="home-intent-stage__channels" data-depth="1.42" aria-label="Instagram channels">
@@ -24637,14 +24632,6 @@ window.EA_SEARCH = {
                 <span>@creativestuff.jpg</span>
               </a>
             </div>
-            ${intentHeroStats(
-              [
-                { value: String(distinct.length).padStart(2, "0"), label: "current spotlights" },
-                { value: latestDate.slice(5).replace("-", "."), label: "latest update" },
-                { value: "LIVE", label: "public surfaces" },
-              ],
-              "Current studio statistics",
-            )}
           </aside>
         </div>
       </section>

@@ -94,7 +94,7 @@ This file is generated from typed public records. Prefer each record's canonical
   - Identifier: https://electronicartefacts.com/fr/id/research-field/runtime-theory/
   - JSON-LD: https://electronicartefacts.com/fr/id/research-field/runtime-theory/index.jsonld
   - Modified: 2026-06-25
-  - Keywords: Théorie du runtime, Runtime, Theory, Exécution, Events, Primitives, Technology, Research
+  - Keywords: Théorie du runtime, Runtime, Theory, Exécution, Events, Primitives, Technologie, Research
 
 ## publication
 
@@ -206,12 +206,12 @@ This file is generated from typed public records. Prefer each record's canonical
   - JSON-LD: https://electronicartefacts.com/id/publication/foundational-lineage-001/index.jsonld
   - Modified: 2026-06-22
   - Keywords: Foundational Lineage #001, Foundational, Lineage, Research, Information architecture
-- [Génération augmentée par recuperation et systèmes de connaissance](https://electronicartefacts.com/fr/publications/retrieval-augmented-generation-and-knowledge-systems/): Génération augmentée par recuperation et systèmes de connaissance propose une synthèse claire en français sur le sujet "Génération augmentée par recuperation et systèmes de connaissance" dans le graphe public d'Electronic Artefacts, avec un angle utile...
+- [Génération augmentée par récupération et systèmes de connaissance](https://electronicartefacts.com/fr/publications/retrieval-augmented-generation-and-knowledge-systems/): Génération augmentée par récupération et systèmes de connaissance propose une synthèse claire en français sur le sujet "Génération augmentée par récupération et systèmes de connaissance" dans le graphe public d'Electronic Artefacts, avec un angle utile...
   - Entity ID: ea:publication:retrieval-augmented-generation-and-knowledge-systems-fr
   - Identifier: https://electronicartefacts.com/fr/id/publication/retrieval-augmented-generation-and-knowledge-systems/
   - JSON-LD: https://electronicartefacts.com/fr/id/publication/retrieval-augmented-generation-and-knowledge-systems/index.jsonld
   - Modified: 2026-06-25
-  - Keywords: Génération augmentée par recuperation et systèmes de connaissance, RAG, graphe de connaissances, Vector Search, Embeddings, Citations, intelligence artificielle, Knowledge Systems
+  - Keywords: Génération augmentée par récupération et systèmes de connaissance, RAG, graphe de connaissances, Vector Search, Embeddings, Citations, intelligence artificielle, Knowledge Systems
 - [Generative AI, Latent Space and Creative Workflows](https://electronicartefacts.com/publications/generative-ai-latent-space-and-creative-workflows/): A technical article on generative AI, latent space, creative workflows, provenance, augmented intelligence and responsible production.
   - Entity ID: ea:publication:generative-ai-latent-space-and-creative-workflows
   - Identifier: https://electronicartefacts.com/id/publication/generative-ai-latent-space-and-creative-workflows/
@@ -236,12 +236,12 @@ This file is generated from typed public records. Prefer each record's canonical
   - JSON-LD: https://electronicartefacts.com/fr/id/publication/knowledge-graphs-for-cultural-infrastructure/index.jsonld
   - Modified: 2026-06-25
   - Keywords: Graphes de connaissances pour les infrastructures culturelles, graphe de connaissances, Cultural Infrastructure, Linked Data, Provenance, Vestiges, Knowledge Systems, Archives
-- [Graphisme procedural, shaders et systèmes visuels](https://electronicartefacts.com/fr/publications/procedural-graphics-shaders-and-visual-systems/): Graphisme procedural, shaders et systèmes visuels propose une synthèse claire en français sur le sujet "Graphisme procedural, shaders et systèmes visuels" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et...
+- [Graphisme procédural, shaders et systèmes visuels](https://electronicartefacts.com/fr/publications/procedural-graphics-shaders-and-visual-systems/): Graphisme procédural, shaders et systèmes visuels propose une synthèse claire en français sur le sujet "Graphisme procédural, shaders et systèmes visuels" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et...
   - Entity ID: ea:publication:procedural-graphics-shaders-and-visual-systems-fr
   - Identifier: https://electronicartefacts.com/fr/id/publication/procedural-graphics-shaders-and-visual-systems/
   - JSON-LD: https://electronicartefacts.com/fr/id/publication/procedural-graphics-shaders-and-visual-systems/index.jsonld
   - Modified: 2026-06-25
-  - Keywords: Graphisme procedural, shaders et systèmes visuels, Procedural Graphics, Shaders, WebGL, Generative Art, programmation créative, Digital Art, Visual Culture
+  - Keywords: Graphisme procédural, shaders et systèmes visuels, Procedural Graphics, Shaders, WebGL, Generative Art, programmation créative, Digital Art, Visual Culture
 - [How Large Language Models Actually Work](https://electronicartefacts.com/publications/how-large-language-models-actually-work/): Learn how LLMs work, from tokenization and training to attention, context windows, decoding, hallucinations, tools and evaluation.
   - Entity ID: ea:publication:how-large-language-models-actually-work
   - Identifier: https://electronicartefacts.com/id/publication/how-large-language-models-actually-work/
@@ -278,12 +278,12 @@ This file is generated from typed public records. Prefer each record's canonical
   - JSON-LD: https://electronicartefacts.com/fr/id/publication/multimodal-ai-across-text-image-audio-and-video/index.jsonld
   - Modified: 2026-06-25
   - Keywords: IA multimodale pour le texte, l'image, l'audio et la video, Multimodal AI, Vision Language, Audio AI, Video AI, Cross-Modal Retrieval, intelligence artificielle, Machine Learning
-- [Identifiants vérifiables pour les archives culturelles et l'identité des createurs](https://electronicartefacts.com/fr/publications/verifiable-credentials-for-cultural-archives-and-creator-identity/): Identifiants vérifiables pour les archives culturelles et l'identité des createurs propose une synthèse claire en français sur le sujet "Identifiants vérifiables pour les archives culturelles et l'identité des createurs" dans le graphe public d'Electronic...
+- [Identifiants vérifiables pour les archives culturelles et l'identité des créateurs](https://electronicartefacts.com/fr/publications/verifiable-credentials-for-cultural-archives-and-creator-identity/): Identifiants vérifiables pour les archives culturelles et l'identité des créateurs propose une synthèse claire en français sur le sujet "Identifiants vérifiables pour les archives culturelles et l'identité des créateurs" dans le graphe public d'Electronic...
   - Entity ID: ea:publication:verifiable-credentials-for-cultural-archives-and-creator-identity-fr
   - Identifier: https://electronicartefacts.com/fr/id/publication/verifiable-credentials-for-cultural-archives-and-creator-identity/
   - JSON-LD: https://electronicartefacts.com/fr/id/publication/verifiable-credentials-for-cultural-archives-and-creator-identity/index.jsonld
   - Modified: 2026-06-25
-  - Keywords: Identifiants vérifiables pour les archives culturelles et l'identité des createurs, Verifiable Credentials, Creator Identity, Provenance, Digital Préservation, Cultural Archives, Cultural Infrastructure, Knowledge Systems
+  - Keywords: Identifiants vérifiables pour les archives culturelles et l'identité des créateurs, Verifiable Credentials, Creator Identity, Provenance, Digital Préservation, Cultural Archives, Cultural Infrastructure, Knowledge Systems
 - [IIIF and Compound Cultural Objects](https://electronicartefacts.com/publications/iiif-and-compound-cultural-objects/): Understand IIIF as presentation infrastructure for compound cultural objects, archives, manifests, canvases and annotations.
   - Entity ID: ea:publication:iiif-and-compound-cultural-objects
   - Identifier: https://electronicartefacts.com/id/publication/iiif-and-compound-cultural-objects/
@@ -701,12 +701,12 @@ This file is generated from typed public records. Prefer each record's canonical
   - JSON-LD: https://electronicartefacts.com/fr/id/concept/contextual-execution/index.jsonld
   - Modified: 2026-06-25
   - Keywords: Exécution contextuelle, Context, Exécution, Runtime, Identity, Permissions, conception de systèmes, Programming
-- [Génération augmentée par recuperation](https://electronicartefacts.com/fr/knowledge/concepts/retrieval-augmented-generation/): Génération augmentée par recuperation désigne les architectures qui recuperent des sources externes avant ou pendant la generation d'une reponse par IA.
+- [Génération augmentée par récupération](https://electronicartefacts.com/fr/knowledge/concepts/retrieval-augmented-generation/): Génération augmentée par récupération désigne les architectures qui récupèrent des sources externes avant ou pendant la génération d'une réponse par IA.
   - Entity ID: ea:concept:retrieval-augmented-generation-fr
   - Identifier: https://electronicartefacts.com/fr/id/concept/retrieval-augmented-generation/
   - JSON-LD: https://electronicartefacts.com/fr/id/concept/retrieval-augmented-generation/index.jsonld
   - Modified: 2026-06-25
-  - Keywords: Génération augmentée par recuperation, RAG, Retrieval, Embeddings, Vector Search, Grounding, intelligence artificielle, Knowledge Systems
+  - Keywords: Génération augmentée par récupération, RAG, Retrieval, Embeddings, Vector Search, Grounding, intelligence artificielle, Knowledge Systems
 - [Generative AI](https://electronicartefacts.com/knowledge/concepts/generative-ai/): Generative AI refers to machine-learning systems that produce or transform media such as text, image, audio, video, code or structured data from learned patterns.
   - Entity ID: ea:concept:generative-ai
   - Identifier: https://electronicartefacts.com/id/concept/generative-ai/
@@ -743,24 +743,18 @@ This file is generated from typed public records. Prefer each record's canonical
   - JSON-LD: https://electronicartefacts.com/fr/id/concept/knowledge-graph/index.jsonld
   - Modified: 2026-06-25
   - Keywords: Graphe de connaissances, graphe de connaissances, Semantic Web, Entities, Relations, Search, Knowledge Systems, Information Architecture
-- [Graphisme procedural](https://electronicartefacts.com/fr/knowledge/concepts/procedural-graphics/): Graphisme procedural désigne les images et formes visuelles generees par algorithmes, shaders ou regles parametriques.
+- [Graphisme procédural](https://electronicartefacts.com/fr/knowledge/concepts/procedural-graphics/): Graphisme procédural désigne les images et formes visuelles générées par algorithmes, shaders ou règles paramétriques.
   - Entity ID: ea:concept:procedural-graphics-fr
   - Identifier: https://electronicartefacts.com/fr/id/concept/procedural-graphics/
   - JSON-LD: https://electronicartefacts.com/fr/id/concept/procedural-graphics/index.jsonld
   - Modified: 2026-06-25
-  - Keywords: Graphisme procedural, Procedural Graphics, Shaders, WebGL, Generative Art, programmation créative, Visual Culture, Digital Art
+  - Keywords: Graphisme procédural, Procedural Graphics, Shaders, WebGL, Generative Art, programmation créative, Visual Culture, Digital Art
 - [Human Computer Interaction](https://electronicartefacts.com/knowledge/concepts/human-computer-interaction/): Human computer interaction is the study and design of relationships between people, computational systems, interfaces, tasks, environments and cultures of use.
   - Entity ID: ea:concept:human-computer-interaction
   - Identifier: https://electronicartefacts.com/id/concept/human-computer-interaction/
   - JSON-LD: https://electronicartefacts.com/id/concept/human-computer-interaction/index.jsonld
   - Modified: 2026-06-24
   - Keywords: Human Computer Interaction, HCI, Interface Design, Accessibility, Creative Tools, Design, Web Development, Artificial Intelligence
-- [Human Computer Interaction](https://electronicartefacts.com/fr/knowledge/concepts/human-computer-interaction/): Human Computer Interaction désigne la conception des interactions entre personnes, interfaces, outils et environnements informatiques.
-  - Entity ID: ea:concept:human-computer-interaction-fr
-  - Identifier: https://electronicartefacts.com/fr/id/concept/human-computer-interaction/
-  - JSON-LD: https://electronicartefacts.com/fr/id/concept/human-computer-interaction/index.jsonld
-  - Modified: 2026-06-25
-  - Keywords: Human Computer Interaction, interaction humain-machine, Interface Design, accessibilité, outils créatifs, design, Web Development, intelligence artificielle
 - [Hypertext](https://electronicartefacts.com/knowledge/concepts/hypertext/): Hypertext is a system of non-linear text and media connected by links, allowing readers and machines to traverse knowledge through associations.
   - Entity ID: ea:concept:hypertext
   - Identifier: https://electronicartefacts.com/id/concept/hypertext/
@@ -797,6 +791,12 @@ This file is generated from typed public records. Prefer each record's canonical
   - JSON-LD: https://electronicartefacts.com/fr/id/concept/augmented-intelligence/index.jsonld
   - Modified: 2026-06-25
   - Keywords: Intelligence augmentée, intelligence augmentée, interaction humain-machine, AI, outils créatifs, intelligence artificielle, Knowledge Systems, conception de systèmes
+- [Interaction humain-machine](https://electronicartefacts.com/fr/knowledge/concepts/human-computer-interaction/): Interaction humain-machine désigne la conception des interactions entre personnes, interfaces, outils et environnements informatiques.
+  - Entity ID: ea:concept:human-computer-interaction-fr
+  - Identifier: https://electronicartefacts.com/fr/id/concept/human-computer-interaction/
+  - JSON-LD: https://electronicartefacts.com/fr/id/concept/human-computer-interaction/index.jsonld
+  - Modified: 2026-06-25
+  - Keywords: Interaction humain-machine, interaction humain-machine, Interface Design, accessibilité, outils créatifs, design, Web Development, intelligence artificielle
 - [Internet Culture](https://electronicartefacts.com/knowledge/concepts/internet-culture/): Internet culture is the set of social forms, aesthetics, protocols, communities, memes, archives and practices that emerge through networked communication.
   - Entity ID: ea:concept:internet-culture
   - Identifier: https://electronicartefacts.com/id/concept/internet-culture/
@@ -839,6 +839,12 @@ This file is generated from typed public records. Prefer each record's canonical
   - JSON-LD: https://electronicartefacts.com/id/concept/microservice-architecture/index.jsonld
   - Modified: 2026-06-24
   - Keywords: Microservice Architecture, Microservices, Modular Monolith, Service Boundaries, Distributed Systems, Software Architecture, Systems Design, Programming
+- [Modèle à poids ouverts](https://electronicartefacts.com/fr/knowledge/concepts/open-weight-model/): Modèle à poids ouverts désigne les modèles dont les poids sont publiés pour permettre l'exécution, l'audit ou l'adaptation locale.
+  - Entity ID: ea:concept:open-weight-model-fr
+  - Identifier: https://electronicartefacts.com/fr/id/concept/open-weight-model/
+  - JSON-LD: https://electronicartefacts.com/fr/id/concept/open-weight-model/index.jsonld
+  - Modified: 2026-06-25
+  - Keywords: Modèle à poids ouverts, Open Weights, Local AI, Model Licensing, Quantization, intelligence artificielle, Open Source, Programming
 - [Modelisation de graphe](https://electronicartefacts.com/fr/knowledge/concepts/graph-modeling/): Modelisation de graphe désigne la modelisation d'entites et de relations sous forme de graphe exploitable.
   - Entity ID: ea:concept:graph-modeling-fr
   - Identifier: https://electronicartefacts.com/fr/id/concept/graph-modeling/
@@ -893,12 +899,6 @@ This file is generated from typed public records. Prefer each record's canonical
   - JSON-LD: https://electronicartefacts.com/id/concept/open-weight-model/index.jsonld
   - Modified: 2026-06-24
   - Keywords: Open-Weight Model, Open Weights, Local AI, Model Licensing, Quantization, Artificial Intelligence, Open Source, Programming
-- [Open-Weight Model](https://electronicartefacts.com/fr/knowledge/concepts/open-weight-model/): Open-Weight Model désigne les modèles dont les poids sont publies pour permettre l'execution, l'audit ou l'adaptation locale.
-  - Entity ID: ea:concept:open-weight-model-fr
-  - Identifier: https://electronicartefacts.com/fr/id/concept/open-weight-model/
-  - JSON-LD: https://electronicartefacts.com/fr/id/concept/open-weight-model/index.jsonld
-  - Modified: 2026-06-25
-  - Keywords: Open-Weight Model, Open Weights, Local AI, Model Licensing, Quantization, intelligence artificielle, Open Source, Programming
 - [Pensée systemique](https://electronicartefacts.com/fr/knowledge/concepts/systems-thinking/): Pensée systemique désigne la lecture des situations par relations, limites, boucles, flux, delais et points de levier.
   - Entity ID: ea:concept:systems-thinking-fr
   - Identifier: https://electronicartefacts.com/fr/id/concept/systems-thinking/

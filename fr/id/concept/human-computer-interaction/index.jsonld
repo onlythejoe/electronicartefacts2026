@@ -5,15 +5,15 @@
       "@type": "WebPage",
       "@id": "https://electronicartefacts.com/fr/knowledge/concepts/human-computer-interaction/#webpage",
       "url": "https://electronicartefacts.com/fr/knowledge/concepts/human-computer-interaction/",
-      "name": "Human Computer Interaction",
-      "description": "Human Computer Interaction définit un repère conceptuel en français pour comprendre la conception des interactions entre personnes, interfaces, outils et environnements informatiques et ses liens avec les projets, technologies et publications du graphe.",
+      "name": "Interaction humain-machine",
+      "description": "Interaction humain-machine définit un repère conceptuel en français pour comprendre la conception des interactions entre personnes, interfaces, outils et environnements informatiques et ses liens avec les projets, technologies et publications du graphe.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
       "primaryImageOfPage": {
         "@type": "ImageObject",
         "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-search.jpg",
-        "description": "Human Computer Interaction"
+        "description": "Interaction humain-machine"
       },
       "breadcrumb": {
         "@id": "https://electronicartefacts.com/fr/knowledge/concepts/human-computer-interaction/#breadcrumb"
@@ -33,9 +33,9 @@
       "@type": "DefinedTerm",
       "@id": "https://electronicartefacts.com/fr/id/concept/human-computer-interaction/",
       "identifier": "ea:concept:human-computer-interaction-fr",
-      "name": "Human Computer Interaction",
-      "abstract": "Human Computer Interaction définit un repère conceptuel en français pour comprendre la conception des interactions entre personnes, interfaces, outils et environnements informatiques et ses liens avec les projets, technologies et publications du graphe.",
-      "description": "Human Computer Interaction désigne la conception des interactions entre personnes, interfaces, outils et environnements informatiques.",
+      "name": "Interaction humain-machine",
+      "abstract": "Interaction humain-machine définit un repère conceptuel en français pour comprendre la conception des interactions entre personnes, interfaces, outils et environnements informatiques et ses liens avec les projets, technologies et publications du graphe.",
+      "description": "Interaction humain-machine désigne la conception des interactions entre personnes, interfaces, outils et environnements informatiques.",
       "url": "https://electronicartefacts.com/fr/knowledge/concepts/human-computer-interaction/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/knowledge/concepts/human-computer-interaction/#webpage"
@@ -43,7 +43,7 @@
       "image": {
         "@type": "ImageObject",
         "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-search.jpg",
-        "description": "Human Computer Interaction"
+        "description": "Interaction humain-machine"
       },
       "author": [
         {
@@ -75,7 +75,7 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 88,
+      "wordCount": 87,
       "citation": [
         {
           "@type": "CreativeWork",
@@ -191,7 +191,7 @@
         {
           "@type": "ListItem",
           "position": 3,
-          "name": "Human Computer Interaction",
+          "name": "Interaction humain-machine",
           "item": "https://electronicartefacts.com/fr/knowledge/concepts/human-computer-interaction/"
         }
       ]

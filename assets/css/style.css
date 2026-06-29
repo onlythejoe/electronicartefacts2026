@@ -632,7 +632,7 @@
 .vast-banner__content {
   display: grid;
   gap: 0.5rem;
-  max-width: 20rem;
+  max-width: min(28rem, 100%);
 }
 
 .vast-banner__title {
@@ -652,6 +652,8 @@
 
 .vast-banner__chips {
   margin-top: 0.15rem;
+  max-width: 100%;
+  flex-wrap: wrap;
 }
 
 .vast-banner__chips .chip {
@@ -10390,6 +10392,19 @@ input:focus-visible {
 .home-intent-stage__frame[data-entry-id="vestiges"] figcaption span,
 .home-intent-stage__frame[data-entry-id="vestiges"] figcaption strong {
   color: #1b1a18;
+}
+
+.home-intent-stage__frame--proof {
+  background:
+    radial-gradient(circle at 52% 28%, rgba(255, 255, 255, 0.12), transparent 30%),
+    linear-gradient(145deg, #ff9b31, #f26b1d 68%, #d95211);
+}
+
+.home-intent-stage__frame--proof img {
+  object-fit: contain;
+  object-position: center;
+  padding: clamp(0.8rem, 2.4vw, 1.35rem);
+  filter: none;
 }
 
 .home-intent-stage__frame--lead {

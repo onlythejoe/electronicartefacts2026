@@ -3,17 +3,17 @@ id: ea:concept:retrieval-augmented-generation-fr
 type: concept
 slug:
   canonical: retrieval-augmented-generation
-title: Génération augmentée par recuperation
+title: Génération augmentée par récupération
 alternateNames:
   - RAG
-definition: Génération augmentée par recuperation désigne les architectures qui recuperent des
-  sources externes avant ou pendant la generation d'une reponse par IA.
-abstract: Génération augmentée par recuperation définit un repère conceptuel en français pour
-  comprendre les architectures qui recuperent des sources externes avant ou pendant la generation
-  d'une reponse par IA et ses liens avec les projets, technologies et publications du graphe.
-description: Génération augmentée par recuperation définit un repère conceptuel en français pour
-  comprendre les architectures qui recuperent des sources externes avant ou pendant la generation
-  d'une reponse par IA et ses liens avec les projets, technologies et publications du graphe.
+definition: Génération augmentée par récupération désigne les architectures qui récupèrent des
+  sources externes avant ou pendant la génération d'une réponse par IA.
+abstract: Génération augmentée par récupération définit un repère conceptuel en français pour
+  comprendre les architectures qui récupèrent des sources externes avant ou pendant la génération
+  d'une réponse par IA et ses liens avec les projets, technologies et publications du graphe.
+description: Génération augmentée par récupération définit un repère conceptuel en français pour
+  comprendre les architectures qui récupèrent des sources externes avant ou pendant la génération
+  d'une réponse par IA et ses liens avec les projets, technologies et publications du graphe.
 locale: fr
 visibility: public
 publicationClass: canonical
@@ -37,7 +37,7 @@ exclusions:
   - les usages purement promotionnels sans définition vérifiable
   - les exemples déconnectés des sources, relations ou contraintes du graphe
 claims:
-  - Génération augmentée par recuperation devient utile lorsque sa définition reste reliée à des
+  - Génération augmentée par récupération devient utile lorsque sa définition reste reliée à des
     sources, des pratiques et des objets observables.
   - La fiche sert de vocabulaire commun pour relier projets, publications et technologies sans
     mélanger les langues.
@@ -64,7 +64,7 @@ translationOf: ea:concept:retrieval-augmented-generation
 
 ## Rôle
 
-Génération augmentée par recuperation est documenté comme notion de référence pour comprendre les architectures qui recuperent des sources externes avant ou pendant la generation d'une reponse par IA.
+Génération augmentée par récupération est documentée comme notion de référence pour comprendre les architectures qui récupèrent des sources externes avant ou pendant la génération d'une réponse par IA.
 
 ## Usage
 

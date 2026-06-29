@@ -6,7 +6,7 @@
     {
       "id": "ea:concept:human-computer-interaction-fr",
       "type": "concept",
-      "title": "Human Computer Interaction",
+      "title": "Interaction humain-machine",
       "route": "/fr/knowledge/concepts/human-computer-interaction/",
       "status": "active",
       "confidence": "canonical"

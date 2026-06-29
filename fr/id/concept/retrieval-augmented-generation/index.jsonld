@@ -5,15 +5,15 @@
       "@type": "WebPage",
       "@id": "https://electronicartefacts.com/fr/knowledge/concepts/retrieval-augmented-generation/#webpage",
       "url": "https://electronicartefacts.com/fr/knowledge/concepts/retrieval-augmented-generation/",
-      "name": "Génération augmentée par recuperation",
-      "description": "Génération augmentée par recuperation définit un repère conceptuel en français pour comprendre les architectures qui recuperent des sources externes avant ou pendant la generation d'une reponse par IA et ses liens avec les projets, technologies et publications du graphe.",
+      "name": "Génération augmentée par récupération",
+      "description": "Génération augmentée par récupération définit un repère conceptuel en français pour comprendre les architectures qui récupèrent des sources externes avant ou pendant la génération d'une réponse par IA et ses liens avec les projets, technologies et publications du graphe.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
       "primaryImageOfPage": {
         "@type": "ImageObject",
         "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-search.jpg",
-        "description": "Génération augmentée par recuperation"
+        "description": "Génération augmentée par récupération"
       },
       "breadcrumb": {
         "@id": "https://electronicartefacts.com/fr/knowledge/concepts/retrieval-augmented-generation/#breadcrumb"
@@ -33,12 +33,12 @@
       "@type": "DefinedTerm",
       "@id": "https://electronicartefacts.com/fr/id/concept/retrieval-augmented-generation/",
       "identifier": "ea:concept:retrieval-augmented-generation-fr",
-      "name": "Génération augmentée par recuperation",
+      "name": "Génération augmentée par récupération",
       "alternateName": [
         "RAG"
       ],
-      "abstract": "Génération augmentée par recuperation définit un repère conceptuel en français pour comprendre les architectures qui recuperent des sources externes avant ou pendant la generation d'une reponse par IA et ses liens avec les projets, technologies et publications du graphe.",
-      "description": "Génération augmentée par recuperation désigne les architectures qui recuperent des sources externes avant ou pendant la generation d'une reponse par IA.",
+      "abstract": "Génération augmentée par récupération définit un repère conceptuel en français pour comprendre les architectures qui récupèrent des sources externes avant ou pendant la génération d'une réponse par IA et ses liens avec les projets, technologies et publications du graphe.",
+      "description": "Génération augmentée par récupération désigne les architectures qui récupèrent des sources externes avant ou pendant la génération d'une réponse par IA.",
       "url": "https://electronicartefacts.com/fr/knowledge/concepts/retrieval-augmented-generation/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/knowledge/concepts/retrieval-augmented-generation/#webpage"
@@ -46,7 +46,7 @@
       "image": {
         "@type": "ImageObject",
         "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-search.jpg",
-        "description": "Génération augmentée par recuperation"
+        "description": "Génération augmentée par récupération"
       },
       "author": [
         {
@@ -198,7 +198,7 @@
         {
           "@type": "ListItem",
           "position": 3,
-          "name": "Génération augmentée par recuperation",
+          "name": "Génération augmentée par récupération",
           "item": "https://electronicartefacts.com/fr/knowledge/concepts/retrieval-augmented-generation/"
         }
       ]

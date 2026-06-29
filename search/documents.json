@@ -2236,17 +2236,17 @@
     "locale": "fr",
     "route": "/fr/knowledge/concepts/human-computer-interaction/",
     "type": "concept",
-    "title": "Human Computer Interaction",
+    "title": "Interaction humain-machine",
     "alternateNames": [],
-    "definition": "Human Computer Interaction désigne la conception des interactions entre personnes, interfaces, outils et environnements informatiques.",
-    "abstract": "Human Computer Interaction définit un repère conceptuel en français pour comprendre la conception des interactions entre personnes, interfaces, outils et environnements informatiques et ses liens avec les projets, technologies et publications du graphe.",
+    "definition": "Interaction humain-machine désigne la conception des interactions entre personnes, interfaces, outils et environnements informatiques.",
+    "abstract": "Interaction humain-machine définit un repère conceptuel en français pour comprendre la conception des interactions entre personnes, interfaces, outils et environnements informatiques et ses liens avec les projets, technologies et publications du graphe.",
     "headings": [
       "Rôle",
       "Usage",
       "Périmètre",
       "Références"
     ],
-    "body": "Rôle Human Computer Interaction est documenté comme notion de référence pour comprendre la conception des interactions entre personnes, interfaces, outils et environnements informatiques. Usage Cette fiche relie la notion aux projets, publications et technologies qui partagent un même vocabulaire de conception. Elle sert de point d’appui pour naviguer dans le graphe en version française. Périmètre La notion est abordée par ses définitions, ses usages, ses limites et ses relations avec les autres objets documentés. Références Les sources principales restent disponibles dans le bloc de références de la fiche.",
+    "body": "Rôle Interaction humain-machine est documenté comme notion de référence pour comprendre la conception des interactions entre personnes, interfaces, outils et environnements informatiques. Usage Cette fiche relie la notion aux projets, publications et technologies qui partagent un même vocabulaire de conception. Elle sert de point d’appui pour naviguer dans le graphe en version française. Périmètre La notion est abordée par ses définitions, ses usages, ses limites et ses relations avec les autres objets documentés. Références Les sources principales restent disponibles dans le bloc de références de la fiche.",
     "tags": [
       "interaction humain-machine",
       "Interface Design",
@@ -2591,17 +2591,17 @@
     "locale": "fr",
     "route": "/fr/knowledge/concepts/open-weight-model/",
     "type": "concept",
-    "title": "Open-Weight Model",
+    "title": "Modèle à poids ouverts",
     "alternateNames": [],
-    "definition": "Open-Weight Model désigne les modèles dont les poids sont publies pour permettre l'execution, l'audit ou l'adaptation locale.",
-    "abstract": "Open-Weight Model définit un repère conceptuel en français pour comprendre les modèles dont les poids sont publies pour permettre l'execution, l'audit ou l'adaptation locale et ses liens avec les projets, technologies et publications du graphe.",
+    "definition": "Modèle à poids ouverts désigne les modèles dont les poids sont publiés pour permettre l'exécution, l'audit ou l'adaptation locale.",
+    "abstract": "Modèle à poids ouverts définit un repère conceptuel en français pour comprendre les modèles dont les poids sont publiés pour permettre l'exécution, l'audit ou l'adaptation locale et ses liens avec les projets, technologies et publications du graphe.",
     "headings": [
       "Rôle",
       "Usage",
       "Périmètre",
       "Références"
     ],
-    "body": "Rôle Open-Weight Model est documenté comme notion de référence pour comprendre les modèles dont les poids sont publies pour permettre l’execution, l’audit ou l’adaptation locale. Usage Cette fiche relie la notion aux projets, publications et technologies qui partagent un même vocabulaire de conception. Elle sert de point d’appui pour naviguer dans le graphe en version française. Périmètre La notion est abordée par ses définitions, ses usages, ses limites et ses relations avec les autres objets documentés. Références Les sources principales restent disponibles dans le bloc de références de la fiche.",
+    "body": "Rôle Modèle à poids ouverts est documenté comme notion de référence pour comprendre les modèles dont les poids sont publiés pour permettre l’exécution, l’audit ou l’adaptation locale. Usage Cette fiche relie la notion aux projets, publications et technologies qui partagent un même vocabulaire de conception. Elle sert de point d’appui pour naviguer dans le graphe en version française. Périmètre La notion est abordée par ses définitions, ses usages, ses limites et ses relations avec les autres objets documentés. Références Les sources principales restent disponibles dans le bloc de références de la fiche.",
     "tags": [
       "Open Weights",
       "Local AI",
@@ -2649,17 +2649,17 @@
     "locale": "fr",
     "route": "/fr/knowledge/concepts/procedural-graphics/",
     "type": "concept",
-    "title": "Graphisme procedural",
+    "title": "Graphisme procédural",
     "alternateNames": [],
-    "definition": "Graphisme procedural désigne les images et formes visuelles generees par algorithmes, shaders ou regles parametriques.",
-    "abstract": "Graphisme procedural définit un repère conceptuel en français pour comprendre les images et formes visuelles generees par algorithmes, shaders ou regles parametriques et ses liens avec les projets, technologies et publications du graphe.",
+    "definition": "Graphisme procédural désigne les images et formes visuelles générées par algorithmes, shaders ou règles paramétriques.",
+    "abstract": "Graphisme procédural définit un repère conceptuel en français pour comprendre les images et formes visuelles générées par algorithmes, shaders ou règles paramétriques et ses liens avec les projets, technologies et publications du graphe.",
     "headings": [
       "Rôle",
       "Usage",
       "Périmètre",
       "Références"
     ],
-    "body": "Rôle Graphisme procedural est documenté comme notion de référence pour comprendre les images et formes visuelles generees par algorithmes, shaders ou regles parametriques. Usage Cette fiche relie la notion aux projets, publications et technologies qui partagent un même vocabulaire de conception. Elle sert de point d’appui pour naviguer dans le graphe en version française. Périmètre La notion est abordée par ses définitions, ses usages, ses limites et ses relations avec les autres objets documentés. Références Les sources associées sont conservées dans la fiche canonique du graphe.",
+    "body": "Rôle Graphisme procédural est documenté comme notion de référence pour comprendre les images et formes visuelles générées par algorithmes, shaders ou règles paramétriques. Usage Cette fiche relie la notion aux projets, publications et technologies qui partagent un même vocabulaire de conception. Elle sert de point d’appui pour naviguer dans le graphe en version française. Périmètre La notion est abordée par ses définitions, ses usages, ses limites et ses relations avec les autres objets documentés. Références Les sources associées sont conservées dans la fiche canonique du graphe.",
     "tags": [
       "Procedural Graphics",
       "Shaders",
@@ -2708,19 +2708,19 @@
     "locale": "fr",
     "route": "/fr/knowledge/concepts/retrieval-augmented-generation/",
     "type": "concept",
-    "title": "Génération augmentée par recuperation",
+    "title": "Génération augmentée par récupération",
     "alternateNames": [
       "RAG"
     ],
-    "definition": "Génération augmentée par recuperation désigne les architectures qui recuperent des sources externes avant ou pendant la generation d'une reponse par IA.",
-    "abstract": "Génération augmentée par recuperation définit un repère conceptuel en français pour comprendre les architectures qui recuperent des sources externes avant ou pendant la generation d'une reponse par IA et ses liens avec les projets, technologies et publications du graphe.",
+    "definition": "Génération augmentée par récupération désigne les architectures qui récupèrent des sources externes avant ou pendant la génération d'une réponse par IA.",
+    "abstract": "Génération augmentée par récupération définit un repère conceptuel en français pour comprendre les architectures qui récupèrent des sources externes avant ou pendant la génération d'une réponse par IA et ses liens avec les projets, technologies et publications du graphe.",
     "headings": [
       "Rôle",
       "Usage",
       "Périmètre",
       "Références"
     ],
-    "body": "Rôle Génération augmentée par recuperation est documenté comme notion de référence pour comprendre les architectures qui recuperent des sources externes avant ou pendant la generation d’une reponse par IA. Usage Cette fiche relie la notion aux projets, publications et technologies qui partagent un même vocabulaire de conception. Elle sert de point d’appui pour naviguer dans le graphe en version française. Périmètre La notion est abordée par ses définitions, ses usages, ses limites et ses relations avec les autres objets documentés. Références Les sources principales restent disponibles dans le bloc de références de la fiche.",
+    "body": "Rôle Génération augmentée par récupération est documentée comme notion de référence pour comprendre les architectures qui récupèrent des sources externes avant ou pendant la génération d’une réponse par IA. Usage Cette fiche relie la notion aux projets, publications et technologies qui partagent un même vocabulaire de conception. Elle sert de point d’appui pour naviguer dans le graphe en version française. Périmètre La notion est abordée par ses définitions, ses usages, ses limites et ses relations avec les autres objets documentés. Références Les sources principales restent disponibles dans le bloc de références de la fiche.",
     "tags": [
       "RAG",
       "Retrieval",
@@ -3912,9 +3912,9 @@
     "route": "/fr/publications/procedural-graphics-shaders-and-visual-systems/",
     "type": "publication",
     "format": "technicalArticle",
-    "title": "Graphisme procedural, shaders et systèmes visuels",
+    "title": "Graphisme procédural, shaders et systèmes visuels",
     "alternateNames": [],
-    "abstract": "Graphisme procedural, shaders et systèmes visuels propose une synthèse claire en français sur le sujet \"Graphisme procedural, shaders et systèmes visuels\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
+    "abstract": "Graphisme procédural, shaders et systèmes visuels propose une synthèse claire en français sur le sujet \"Graphisme procédural, shaders et systèmes visuels\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
     "headings": [
       "Problème",
       "Architecture",
@@ -3923,7 +3923,7 @@
       "Limites",
       "Références"
     ],
-    "body": "Problème Graphisme procedural, shaders et systèmes visuels examine le sujet “Graphisme procedural, shaders et systèmes visuels” dans le graphe public d’Electronic Artefacts. La fiche donne une entrée française stable, utilisable pour lire le sujet et relier ses sources au reste du graphe. Architecture Le sujet est abordé par ses relations avec les concepts, projets et technologies concernés, afin de rendre son contexte de conception lisible. Mise en œuvre La page décrit les usages, contraintes et choix de structure qui permettent d’appliquer le sujet dans des situations concrètes. Éléments de preuve Les sources, relations et éléments de contexte restent attachés à la fiche pour distinguer synthèse éditoriale, preuves et références. Limites Les limites sont formulées par rapport au périmètre de la fiche, aux sources disponibles et aux conditions d’usage documentées. Références Les sources principales restent disponibles dans le bloc de références de la fiche.",
+    "body": "Problème Graphisme procédural, shaders et systèmes visuels examine le sujet “Graphisme procédural, shaders et systèmes visuels” dans le graphe public d’Electronic Artefacts. La fiche donne une entrée française stable, utilisable pour lire le sujet et relier ses sources au reste du graphe. Architecture Le sujet est abordé par ses relations avec les concepts, projets et technologies concernés, afin de rendre son contexte de conception lisible. Mise en œuvre La page décrit les usages, contraintes et choix de structure qui permettent d’appliquer le sujet dans des situations concrètes. Éléments de preuve Les sources, relations et éléments de contexte restent attachés à la fiche pour distinguer synthèse éditoriale, preuves et références. Limites Les limites sont formulées par rapport au périmètre de la fiche, aux sources disponibles et aux conditions d’usage documentées. Références Les sources principales restent disponibles dans le bloc de références de la fiche.",
     "tags": [
       "Procedural Graphics",
       "Shaders",
@@ -4039,9 +4039,9 @@
     "route": "/fr/publications/retrieval-augmented-generation-and-knowledge-systems/",
     "type": "publication",
     "format": "technicalArticle",
-    "title": "Génération augmentée par recuperation et systèmes de connaissance",
+    "title": "Génération augmentée par récupération et systèmes de connaissance",
     "alternateNames": [],
-    "abstract": "Génération augmentée par recuperation et systèmes de connaissance propose une synthèse claire en français sur le sujet \"Génération augmentée par recuperation et systèmes de connaissance\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
+    "abstract": "Génération augmentée par récupération et systèmes de connaissance propose une synthèse claire en français sur le sujet \"Génération augmentée par récupération et systèmes de connaissance\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
     "headings": [
       "Problème",
       "Architecture",
@@ -4050,7 +4050,7 @@
       "Limites",
       "Références"
     ],
-    "body": "Problème Génération augmentée par recuperation et systèmes de connaissance examine le sujet “Génération augmentée par recuperation et systèmes de connaissance” dans le graphe public d’Electronic Artefacts. La fiche donne une entrée française stable, utilisable pour lire le sujet et relier ses sources au reste du graphe. Architecture Le sujet est abordé par ses relations avec les concepts, projets et technologies concernés, afin de rendre son contexte de conception lisible. Mise en œuvre La page décrit les usages, contraintes et choix de structure qui permettent d’appliquer le sujet dans des situations concrètes. Éléments de preuve Les sources, relations et éléments de contexte restent attachés à la fiche pour distinguer synthèse éditoriale, preuves et références. Limites Les limites sont formulées par rapport au périmètre de la fiche, aux sources disponibles et aux conditions d’usage documentées. Références Les sources principales restent disponibles dans le bloc de références de la fiche.",
+    "body": "Problème Génération augmentée par récupération et systèmes de connaissance examine le sujet “Génération augmentée par récupération et systèmes de connaissance” dans le graphe public d’Electronic Artefacts. La fiche donne une entrée française stable, utilisable pour lire le sujet et relier ses sources au reste du graphe. Architecture Le sujet est abordé par ses relations avec les concepts, projets et technologies concernés, afin de rendre son contexte de conception lisible. Mise en œuvre La page décrit les usages, contraintes et choix de structure qui permettent d’appliquer le sujet dans des situations concrètes. Éléments de preuve Les sources, relations et éléments de contexte restent attachés à la fiche pour distinguer synthèse éditoriale, preuves et références. Limites Les limites sont formulées par rapport au périmètre de la fiche, aux sources disponibles et aux conditions d’usage documentées. Références Les sources principales restent disponibles dans le bloc de références de la fiche.",
     "tags": [
       "RAG",
       "graphe de connaissances",
@@ -4198,9 +4198,9 @@
     "route": "/fr/publications/verifiable-credentials-for-cultural-archives-and-creator-identity/",
     "type": "publication",
     "format": "technicalArticle",
-    "title": "Identifiants vérifiables pour les archives culturelles et l'identité des createurs",
+    "title": "Identifiants vérifiables pour les archives culturelles et l'identité des créateurs",
     "alternateNames": [],
-    "abstract": "Identifiants vérifiables pour les archives culturelles et l'identité des createurs propose une synthèse claire en français sur le sujet \"Identifiants vérifiables pour les archives culturelles et l'identité des createurs\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
+    "abstract": "Identifiants vérifiables pour les archives culturelles et l'identité des créateurs propose une synthèse claire en français sur le sujet \"Identifiants vérifiables pour les archives culturelles et l'identité des créateurs\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
     "headings": [
       "Problème",
       "Architecture",
@@ -4209,7 +4209,7 @@
       "Limites",
       "Références"
     ],
-    "body": "Problème Identifiants vérifiables pour les archives culturelles et l’identité des createurs examine le sujet “Identifiants vérifiables pour les archives culturelles et l’identité des createurs” dans le graphe public d’Electronic Artefacts. La fiche donne une entrée française stable, utilisable pour lire le sujet et relier ses sources au reste du graphe. Architecture Le sujet est abordé par ses relations avec les concepts, projets et technologies concernés, afin de rendre son contexte de conception lisible. Mise en œuvre La page décrit les usages, contraintes et choix de structure qui permettent d’appliquer le sujet dans des situations concrètes. Éléments de preuve Les sources, relations et éléments de contexte restent attachés à la fiche pour distinguer synthèse éditoriale, preuves et références. Limites Les limites sont formulées par rapport au périmètre de la fiche, aux sources disponibles et aux conditions d’usage documentées. Références Les sources principales restent disponibles dans le bloc de références de la fiche.",
+    "body": "Problème Identifiants vérifiables pour les archives culturelles et l’identité des créateurs examine le sujet “Identifiants vérifiables pour les archives culturelles et l’identité des créateurs” dans le graphe public d’Electronic Artefacts. La fiche donne une entrée française stable, utilisable pour lire le sujet et relier ses sources au reste du graphe. Architecture Le sujet est abordé par ses relations avec les concepts, projets et technologies concernés, afin de rendre son contexte de conception lisible. Mise en œuvre La page décrit les usages, contraintes et choix de structure qui permettent d’appliquer le sujet dans des situations concrètes. Éléments de preuve Les sources, relations et éléments de contexte restent attachés à la fiche pour distinguer synthèse éditoriale, preuves et références. Limites Les limites sont formulées par rapport au périmètre de la fiche, aux sources disponibles et aux conditions d’usage documentées. Références Les sources principales restent disponibles dans le bloc de références de la fiche.",
     "tags": [
       "Verifiable Credentials",
       "Creator Identity",
@@ -4333,7 +4333,7 @@
       "Usage",
       "Références"
     ],
-    "body": "Champ Théorie du runtime décrit un espace de recherche actif pour Electronic Artefacts. Il relie le sujet “Théorie du runtime” dans le graphe public d’Electronic Artefacts à des questions, prototypes et méthodes qui peuvent évoluer dans le temps. Questions Comment rendre les hypothèses suffisamment explicites pour être partagees, testées et reliées au graphe ? Quelles preuves, interfaces ou architectures permettent de transformer ce champ en expérience utilisable ? Usage Cette fiche donne une entrée française au champ de recherche et conserve ses liens avec les projets, publications et technologies associés. Références Les sources associées sont conservées dans la fiche canonique du graphe.",
+    "body": "Champ Théorie du runtime décrit un espace de recherche actif pour Electronic Artefacts. Il relie le sujet “Théorie du runtime” dans le graphe public d’Electronic Artefacts à des questions, prototypes et méthodes qui peuvent évoluer dans le temps. Questions Comment rendre les hypothèses suffisamment explicites pour être partagées, testées et reliées au graphe ? Quelles preuves, interfaces ou architectures permettent de transformer ce champ en expérience utilisable ? Usage Cette fiche donne une entrée française au champ de recherche et conserve ses liens avec les projets, publications et technologies associés. Références Les sources associées sont conservées dans la fiche canonique du graphe.",
     "tags": [
       "Runtime",
       "Theory",
@@ -4343,7 +4343,7 @@
     ],
     "questions": [
       "Comment formaliser Théorie du runtime pour produire des interfaces, des preuves et des relations exploitables ?",
-      "Quels usages de Théorie du runtime doivent rester ouverts à l'experimentation et à la verification ?"
+      "Quels usages de Théorie du runtime doivent rester ouverts à l'expérimentation et à la vérification ?"
     ],
     "relationLabels": [],
     "relatedEntityIds": [],

@@ -3,14 +3,14 @@ id: ea:concept:open-weight-model-fr
 type: concept
 slug:
   canonical: open-weight-model
-title: Open-Weight Model
-definition: Open-Weight Model désigne les modèles dont les poids sont publies pour permettre
-  l'execution, l'audit ou l'adaptation locale.
-abstract: Open-Weight Model définit un repère conceptuel en français pour comprendre les modèles
-  dont les poids sont publies pour permettre l'execution, l'audit ou l'adaptation locale et ses
+title: Modèle à poids ouverts
+definition: Modèle à poids ouverts désigne les modèles dont les poids sont publiés pour permettre
+  l'exécution, l'audit ou l'adaptation locale.
+abstract: Modèle à poids ouverts définit un repère conceptuel en français pour comprendre les modèles
+  dont les poids sont publiés pour permettre l'exécution, l'audit ou l'adaptation locale et ses
   liens avec les projets, technologies et publications du graphe.
-description: Open-Weight Model définit un repère conceptuel en français pour comprendre les modèles
-  dont les poids sont publies pour permettre l'execution, l'audit ou l'adaptation locale et ses
+description: Modèle à poids ouverts définit un repère conceptuel en français pour comprendre les modèles
+  dont les poids sont publiés pour permettre l'exécution, l'audit ou l'adaptation locale et ses
   liens avec les projets, technologies et publications du graphe.
 locale: fr
 visibility: public
@@ -35,7 +35,7 @@ exclusions:
   - les usages purement promotionnels sans définition vérifiable
   - les exemples déconnectés des sources, relations ou contraintes du graphe
 claims:
-  - Open-Weight Model devient utile lorsque sa définition reste reliée à des sources, des pratiques
+  - Modèle à poids ouverts devient utile lorsque sa définition reste reliée à des sources, des pratiques
     et des objets observables.
   - La fiche sert de vocabulaire commun pour relier projets, publications et technologies sans
     mélanger les langues.
@@ -59,7 +59,7 @@ translationOf: ea:concept:open-weight-model
 
 ## Rôle
 
-Open-Weight Model est documenté comme notion de référence pour comprendre les modèles dont les poids sont publies pour permettre l'execution, l'audit ou l'adaptation locale.
+Modèle à poids ouverts est documenté comme notion de référence pour comprendre les modèles dont les poids sont publiés pour permettre l'exécution, l'audit ou l'adaptation locale.
 
 ## Usage
 

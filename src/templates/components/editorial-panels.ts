@@ -59,19 +59,22 @@ const renderSourceList = (sources?: SourceRef[]): string => {
     </ol>`;
 };
 
-const refTitle = (ref: EntityRef, byId: Map<string, Entity>): string =>
-  ref.label || byId.get(ref.id)?.title || ref.id;
+const refTitle = (ref: EntityRef, byId: Map<string, Entity>, locale?: string): string =>
+  locale === "fr"
+    ? byId.get(ref.id)?.title || ref.label || ref.id
+    : ref.label || byId.get(ref.id)?.title || ref.id;
 
 const renderRefs = (
   refs: EntityRef[] = [],
   byId: Map<string, Entity>,
   routeById: Record<string, string>,
+  locale?: string,
 ): string => {
   if (!refs.length) return "";
   return `
     <div class="article-link-cloud">
       ${refs.map((ref) => `
-        <a class="tag" href="${escapeHtml(routeById[ref.id] || "#")}">${escapeHtml(refTitle(ref, byId))}</a>
+        <a class="tag" href="${escapeHtml(routeById[ref.id] || "#")}">${escapeHtml(refTitle(ref, byId, locale))}</a>
       `).join("")}
     </div>`;
 };
@@ -124,7 +127,7 @@ const collectionPanels = (
 ): string[] => [
   panel("Collection thesis", "Why these pages belong together", `<p class="card__copy">${escapeHtml(entity.thesis)}</p>`),
   panel("Selection note", "Why this selection matters", `<p class="card__copy">${escapeHtml(entity.selectionNote)}</p>`),
-  panel("Included pages", "Articles and notions in this collection", renderRefs(entity.explicitMembers, byId, routeById)),
+  panel("Included pages", "Articles and notions in this collection", renderRefs(entity.explicitMembers, byId, routeById, entity.locale)),
 ];
 
 const methodPanels = (entity: MethodEntity): string[] => [
@@ -140,7 +143,7 @@ const frameworkPanels = (
   routeById: Record<string, string>,
 ): string[] => [
   panel("Principles", "Framework commitments", renderList(entity.principles)),
-  panel("Components", "Linked framework components", renderRefs(entity.components, byId, routeById)),
+  panel("Components", "Linked framework components", renderRefs(entity.components, byId, routeById, entity.locale)),
   panel("Limitations", "Known constraints", renderList(entity.limitations)),
 ];
 

@@ -5,15 +5,15 @@
       "@type": "WebPage",
       "@id": "https://electronicartefacts.com/fr/knowledge/concepts/open-weight-model/#webpage",
       "url": "https://electronicartefacts.com/fr/knowledge/concepts/open-weight-model/",
-      "name": "Open-Weight Model",
-      "description": "Open-Weight Model définit un repère conceptuel en français pour comprendre les modèles dont les poids sont publies pour permettre l'execution, l'audit ou l'adaptation locale et ses liens avec les projets, technologies et publications du graphe.",
+      "name": "Modèle à poids ouverts",
+      "description": "Modèle à poids ouverts définit un repère conceptuel en français pour comprendre les modèles dont les poids sont publiés pour permettre l'exécution, l'audit ou l'adaptation locale et ses liens avec les projets, technologies et publications du graphe.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
       "primaryImageOfPage": {
         "@type": "ImageObject",
         "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-search.jpg",
-        "description": "Open-Weight Model"
+        "description": "Modèle à poids ouverts"
       },
       "breadcrumb": {
         "@id": "https://electronicartefacts.com/fr/knowledge/concepts/open-weight-model/#breadcrumb"
@@ -33,9 +33,9 @@
       "@type": "DefinedTerm",
       "@id": "https://electronicartefacts.com/fr/id/concept/open-weight-model/",
       "identifier": "ea:concept:open-weight-model-fr",
-      "name": "Open-Weight Model",
-      "abstract": "Open-Weight Model définit un repère conceptuel en français pour comprendre les modèles dont les poids sont publies pour permettre l'execution, l'audit ou l'adaptation locale et ses liens avec les projets, technologies et publications du graphe.",
-      "description": "Open-Weight Model désigne les modèles dont les poids sont publies pour permettre l'execution, l'audit ou l'adaptation locale.",
+      "name": "Modèle à poids ouverts",
+      "abstract": "Modèle à poids ouverts définit un repère conceptuel en français pour comprendre les modèles dont les poids sont publiés pour permettre l'exécution, l'audit ou l'adaptation locale et ses liens avec les projets, technologies et publications du graphe.",
+      "description": "Modèle à poids ouverts désigne les modèles dont les poids sont publiés pour permettre l'exécution, l'audit ou l'adaptation locale.",
       "url": "https://electronicartefacts.com/fr/knowledge/concepts/open-weight-model/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/knowledge/concepts/open-weight-model/#webpage"
@@ -43,7 +43,7 @@
       "image": {
         "@type": "ImageObject",
         "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-search.jpg",
-        "description": "Open-Weight Model"
+        "description": "Modèle à poids ouverts"
       },
       "author": [
         {
@@ -76,7 +76,7 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 90,
+      "wordCount": 92,
       "citation": [
         {
           "@type": "CreativeWork",
@@ -192,7 +192,7 @@
         {
           "@type": "ListItem",
           "position": 3,
-          "name": "Open-Weight Model",
+          "name": "Modèle à poids ouverts",
           "item": "https://electronicartefacts.com/fr/knowledge/concepts/open-weight-model/"
         }
       ]

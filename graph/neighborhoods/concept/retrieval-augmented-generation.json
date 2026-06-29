@@ -6,7 +6,7 @@
     {
       "id": "ea:concept:retrieval-augmented-generation-fr",
       "type": "concept",
-      "title": "Génération augmentée par recuperation",
+      "title": "Génération augmentée par récupération",
       "route": "/fr/knowledge/concepts/retrieval-augmented-generation/",
       "status": "active",
       "confidence": "canonical"

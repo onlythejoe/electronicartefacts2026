@@ -263,6 +263,7 @@ for (const page of pages) {
       seoBlock(page),
     )
     .replace(/(<h1 class="sr-only" data-seo-h1>)[\s\S]*?(<\/h1>)/, `$1${escapeHtml(page.h1 || page.title)}$2`)
+    .replaceAll("Go to Work", "Aller aux expertises")
     .replaceAll('href="./assets/', 'href="/assets/')
     .replaceAll('src="./assets/', 'src="/assets/')
     .replace('<body data-page=', '<body data-locale="fr" data-page=');

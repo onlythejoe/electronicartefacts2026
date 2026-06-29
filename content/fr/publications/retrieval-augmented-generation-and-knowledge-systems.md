@@ -3,14 +3,14 @@ id: ea:publication:retrieval-augmented-generation-and-knowledge-systems-fr
 type: publication
 slug:
   canonical: retrieval-augmented-generation-and-knowledge-systems
-title: Génération augmentée par recuperation et systèmes de connaissance
+title: Génération augmentée par récupération et systèmes de connaissance
 subtitle: Article technique
-abstract: Génération augmentée par recuperation et systèmes de connaissance propose une synthèse
-  claire en français sur le sujet "Génération augmentée par recuperation et systèmes de
+abstract: Génération augmentée par récupération et systèmes de connaissance propose une synthèse
+  claire en français sur le sujet "Génération augmentée par récupération et systèmes de
   connaissance" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche,
   la conception et la publication de connaissances numériques.
-description: Génération augmentée par recuperation et systèmes de connaissance propose une synthèse
-  claire en français sur le sujet "Génération augmentée par recuperation et systèmes de
+description: Génération augmentée par récupération et systèmes de connaissance propose une synthèse
+  claire en français sur le sujet "Génération augmentée par récupération et systèmes de
   connaissance" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche,
   la conception et la publication de connaissances numériques.
 locale: fr
@@ -36,7 +36,7 @@ subjects:
   - id: ea:concept:large-language-model
   - id: ea:program:vaste
 claims:
-  - Génération augmentée par recuperation et systèmes de connaissance doit être lisible comme une
+  - Génération augmentée par récupération et systèmes de connaissance doit être lisible comme une
     synthèse française autonome, sans phrases hybrides héritées de l'anglais.
   - Les liens avec les notions, projets et technologies du graphe renforcent la recherche, la
     navigation et la citation.
@@ -57,7 +57,7 @@ sources:
     accessedAt: 2026-06-24
     url: https://arxiv.org/abs/2305.06983
 citation:
-  preferred: Electronic Artefacts. "Génération augmentée par recuperation et systèmes de
+  preferred: Electronic Artefacts. "Génération augmentée par récupération et systèmes de
     connaissance". Article technique, version 1.0.0, 2026.
 tags:
   - RAG
@@ -75,7 +75,7 @@ translationOf: ea:publication:retrieval-augmented-generation-and-knowledge-syste
 
 ## Problème
 
-Génération augmentée par recuperation et systèmes de connaissance examine le sujet "Génération augmentée par recuperation et systèmes de connaissance" dans le graphe public d'Electronic Artefacts. La fiche donne une entrée française stable, utilisable pour lire le sujet et relier ses sources au reste du graphe.
+Génération augmentée par récupération et systèmes de connaissance examine le sujet "Génération augmentée par récupération et systèmes de connaissance" dans le graphe public d'Electronic Artefacts. La fiche donne une entrée française stable, utilisable pour lire le sujet et relier ses sources au reste du graphe.
 
 ## Architecture
 

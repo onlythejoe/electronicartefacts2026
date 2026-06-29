@@ -3,14 +3,14 @@ id: ea:concept:procedural-graphics-fr
 type: concept
 slug:
   canonical: procedural-graphics
-title: Graphisme procedural
-definition: Graphisme procedural désigne les images et formes visuelles generees par algorithmes,
-  shaders ou regles parametriques.
-abstract: Graphisme procedural définit un repère conceptuel en français pour comprendre les images
-  et formes visuelles generees par algorithmes, shaders ou regles parametriques et ses liens avec
+title: Graphisme procédural
+definition: Graphisme procédural désigne les images et formes visuelles générées par algorithmes,
+  shaders ou règles paramétriques.
+abstract: Graphisme procédural définit un repère conceptuel en français pour comprendre les images
+  et formes visuelles générées par algorithmes, shaders ou règles paramétriques et ses liens avec
   les projets, technologies et publications du graphe.
-description: Graphisme procedural définit un repère conceptuel en français pour comprendre les
-  images et formes visuelles generees par algorithmes, shaders ou regles parametriques et ses liens
+description: Graphisme procédural définit un repère conceptuel en français pour comprendre les
+  images et formes visuelles générées par algorithmes, shaders ou règles paramétriques et ses liens
   avec les projets, technologies et publications du graphe.
 locale: fr
 visibility: public
@@ -35,7 +35,7 @@ exclusions:
   - les usages purement promotionnels sans définition vérifiable
   - les exemples déconnectés des sources, relations ou contraintes du graphe
 claims:
-  - Graphisme procedural devient utile lorsque sa définition reste reliée à des sources, des
+  - Graphisme procédural devient utile lorsque sa définition reste reliée à des sources, des
     pratiques et des objets observables.
   - La fiche sert de vocabulaire commun pour relier projets, publications et technologies sans
     mélanger les langues.
@@ -54,7 +54,7 @@ translationOf: ea:concept:procedural-graphics
 
 ## Rôle
 
-Graphisme procedural est documenté comme notion de référence pour comprendre les images et formes visuelles generees par algorithmes, shaders ou regles parametriques.
+Graphisme procédural est documenté comme notion de référence pour comprendre les images et formes visuelles générées par algorithmes, shaders ou règles paramétriques.
 
 ## Usage
 

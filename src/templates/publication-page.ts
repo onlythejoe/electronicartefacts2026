@@ -37,8 +37,10 @@ const renderChipCloud = (items: string[], className = "pill-cloud"): string => {
     </div>`;
 };
 
-const refTitle = (ref: EntityRef, byId: Map<string, Entity>): string =>
-  ref.label || byId.get(ref.id)?.title || ref.id;
+const refTitle = (ref: EntityRef, byId: Map<string, Entity>, locale?: string): string =>
+  locale === "fr"
+    ? byId.get(ref.id)?.title || ref.label || ref.id
+    : ref.label || byId.get(ref.id)?.title || ref.id;
 
 const refRoute = (ref: EntityRef, routeById: Record<string, string>): string =>
   routeById[ref.id] || "#";
@@ -47,13 +49,14 @@ const renderLinkedRefs = (
   refs: EntityRef[] = [],
   byId: Map<string, Entity>,
   routeById: Record<string, string>,
+  locale?: string,
 ): string => {
   if (!refs.length) return `<p class="card__copy">No explicit linked entities.</p>`;
 
   return `
     <div class="article-link-cloud">
       ${refs.map((ref) => `
-        <a class="tag" href="${escapeHtml(refRoute(ref, routeById))}">${escapeHtml(refTitle(ref, byId))}</a>
+        <a class="tag" href="${escapeHtml(refRoute(ref, routeById))}">${escapeHtml(refTitle(ref, byId, locale))}</a>
       `).join("")}
     </div>`;
 };
@@ -148,7 +151,7 @@ const renderArticleHero = (
         </div>
         <div class="article-hero__subjects">
           <p class="card__meta">Primary subjects</p>
-          ${renderLinkedRefs(entity.subjects.slice(0, 5), byId, routeById)}
+          ${renderLinkedRefs(entity.subjects.slice(0, 5), byId, routeById, entity.locale)}
         </div>
       </aside>
     </section>`;
@@ -198,7 +201,7 @@ const renderArticleContext = (
         <p class="card__meta">Related context</p>
         <h2 class="card__title">Evidence links</h2>
       </div>
-      ${renderLinkedRefs(entity.evidence || entity.subjects, byId, routeById)}
+      ${renderLinkedRefs(entity.evidence || entity.subjects, byId, routeById, entity.locale)}
     </article>
     <article class="panel article-context-card">
       <div class="section-head">

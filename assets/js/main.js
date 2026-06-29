@@ -2925,12 +2925,7 @@
     const lead = ranked[0] || entityById("vestiges");
     const system = ranked.find((item) => item.id === "unionmob") || ranked.find((item) => item.id !== lead?.id);
     const publicProof = entityById("oeil-de-meg") || ranked.find((item) => ![lead?.id, system?.id].includes(item.id));
-    const distinct = [lead, system, publicProof].filter((item, index, items) => item && items.findIndex((candidate) => candidate?.id === item.id) === index);
-    const latestDate = distinct
-      .map((item) => item?.temporality?.lastUpdated || "")
-      .filter(Boolean)
-      .sort()
-      .reverse()[0] || "2026";
+    const leadKicker = isFrench() ? "Notre prochain Flagship" : "Our next flagship";
 
     return `
       <section class="zone-card hero home-cinematic-hero intent-hero intent-hero--home">
@@ -2953,7 +2948,7 @@
           <aside class="intent-hero__stage home-intent-stage" data-intent-stage aria-label="Current Electronic Artefacts projects">
             <div class="intent-hero__stage-label"><span>Now showing</span><strong>Current products and public work</strong></div>
             <div class="home-intent-stage__orbit" aria-hidden="true"></div>
-            ${homeHeroFrame(lead, "home-intent-stage__frame--lead", { depth: 0.82, kicker: "Latest platform", eager: true })}
+            ${homeHeroFrame(lead, "home-intent-stage__frame--lead", { depth: 0.82, kicker: leadKicker, eager: true })}
             ${homeHeroFrame(system, "home-intent-stage__frame--system", { depth: 1.35, kicker: system?.id === "unionmob" ? "External CTO partnership" : "Product system" })}
             ${homeHeroFrame(publicProof, "home-intent-stage__frame--proof", { depth: 1.62, kicker: "Live public proof" })}
             <div class="home-intent-stage__channels" data-depth="1.42" aria-label="Instagram channels">
@@ -2966,14 +2961,6 @@
                 <span>@creativestuff.jpg</span>
               </a>
             </div>
-            ${intentHeroStats(
-              [
-                { value: String(distinct.length).padStart(2, "0"), label: "current spotlights" },
-                { value: latestDate.slice(5).replace("-", "."), label: "latest update" },
-                { value: "LIVE", label: "public surfaces" },
-              ],
-              "Current studio statistics",
-            )}
           </aside>
         </div>
       </section>

@@ -38,6 +38,27 @@ const publicDefaultLocaleEntities = publicEntities.filter((entity) => entity.loc
 const publicIds = new Set(publicEntities.map((entity) => entity.id));
 const publicRoutes = routes.filter((route) => publicIds.has(route.id));
 const i18nAlternates = buildI18nAlternates(publicEntities);
+const localizedViews = new Map<string, { byId: Map<string, Entity>; routeById: Record<string, string> }>();
+
+const localizedViewFor = (locale: string) => {
+  const cached = localizedViews.get(locale);
+  if (cached) return cached;
+
+  const viewById = new Map(byId);
+  const viewRouteById = { ...routeById };
+
+  for (const candidate of publicEntities) {
+    if (candidate.locale !== locale || !candidate.translationOf) continue;
+    viewById.set(candidate.translationOf, candidate);
+    viewById.set(candidate.id, candidate);
+    viewRouteById[candidate.translationOf] = routeForEntity(candidate);
+    viewRouteById[candidate.id] = routeForEntity(candidate);
+  }
+
+  const view = { byId: viewById, routeById: viewRouteById };
+  localizedViews.set(locale, view);
+  return view;
+};
 
 const rootifyPartials = (html: string): string =>
   html
@@ -50,6 +71,7 @@ const footer = rootifyPartials(await readFile(path.join(rootDir, "assets/partial
 for (const entity of publicEntities) {
   const route = routeForEntity(entity);
   const routeAlternates = i18nAlternates[route];
+  const { byId: localById, routeById: localRouteById } = localizedViewFor(entity.locale);
   const metadata = {
     ...metadataFor(entity),
     ...(routeAlternates
@@ -67,8 +89,8 @@ for (const entity of publicEntities) {
       : {}),
   };
   const body = entity.type === "publication"
-    ? renderPublicationPage(entity as PublicationEntity, relations, byId, routeById)
-    : renderEntityPage(entity, relations, byId, routeById);
+    ? renderPublicationPage(entity as PublicationEntity, relations, localById, localRouteById)
+    : renderEntityPage(entity, relations, localById, localRouteById);
   const html = renderLayout({
     metadata,
     body,

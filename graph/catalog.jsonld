@@ -328,7 +328,7 @@
         {
           "@type": "ListItem",
           "position": 29,
-          "name": "Génération augmentée par recuperation",
+          "name": "Génération augmentée par récupération",
           "url": "https://electronicartefacts.com/fr/knowledge/concepts/retrieval-augmented-generation/",
           "item": {
             "@id": "https://electronicartefacts.com/fr/id/concept/retrieval-augmented-generation/"
@@ -391,7 +391,7 @@
         {
           "@type": "ListItem",
           "position": 36,
-          "name": "Graphisme procedural",
+          "name": "Graphisme procédural",
           "url": "https://electronicartefacts.com/fr/knowledge/concepts/procedural-graphics/",
           "item": {
             "@id": "https://electronicartefacts.com/fr/id/concept/procedural-graphics/"
@@ -409,15 +409,6 @@
         {
           "@type": "ListItem",
           "position": 38,
-          "name": "Human Computer Interaction",
-          "url": "https://electronicartefacts.com/fr/knowledge/concepts/human-computer-interaction/",
-          "item": {
-            "@id": "https://electronicartefacts.com/fr/id/concept/human-computer-interaction/"
-          }
-        },
-        {
-          "@type": "ListItem",
-          "position": 39,
           "name": "Hypertext",
           "url": "https://electronicartefacts.com/knowledge/concepts/hypertext/",
           "item": {
@@ -426,7 +417,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 40,
+          "position": 39,
           "name": "Hypertexte",
           "url": "https://electronicartefacts.com/fr/knowledge/concepts/hypertext/",
           "item": {
@@ -435,7 +426,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 41,
+          "position": 40,
           "name": "IA générative",
           "url": "https://electronicartefacts.com/fr/knowledge/concepts/generative-ai/",
           "item": {
@@ -444,7 +435,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 42,
+          "position": 41,
           "name": "IA multimodale",
           "url": "https://electronicartefacts.com/fr/knowledge/concepts/multimodal-ai/",
           "item": {
@@ -453,7 +444,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 43,
+          "position": 42,
           "name": "Identité d'entite",
           "url": "https://electronicartefacts.com/fr/knowledge/concepts/entity-identity/",
           "item": {
@@ -462,11 +453,20 @@
         },
         {
           "@type": "ListItem",
-          "position": 44,
+          "position": 43,
           "name": "Intelligence augmentée",
           "url": "https://electronicartefacts.com/fr/knowledge/concepts/augmented-intelligence/",
           "item": {
             "@id": "https://electronicartefacts.com/fr/id/concept/augmented-intelligence/"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 44,
+          "name": "Interaction humain-machine",
+          "url": "https://electronicartefacts.com/fr/knowledge/concepts/human-computer-interaction/",
+          "item": {
+            "@id": "https://electronicartefacts.com/fr/id/concept/human-computer-interaction/"
           }
         },
         {
@@ -535,6 +535,15 @@
         {
           "@type": "ListItem",
           "position": 52,
+          "name": "Modèle à poids ouverts",
+          "url": "https://electronicartefacts.com/fr/knowledge/concepts/open-weight-model/",
+          "item": {
+            "@id": "https://electronicartefacts.com/fr/id/concept/open-weight-model/"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 53,
           "name": "Modelisation de graphe",
           "url": "https://electronicartefacts.com/fr/knowledge/concepts/graph-modeling/",
           "item": {
@@ -543,7 +552,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 53,
+          "position": 54,
           "name": "Motion design",
           "url": "https://electronicartefacts.com/fr/knowledge/concepts/motion-design/",
           "item": {
@@ -552,7 +561,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 54,
+          "position": 55,
           "name": "Motion Design",
           "url": "https://electronicartefacts.com/knowledge/concepts/motion-design/",
           "item": {
@@ -561,7 +570,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 55,
+          "position": 56,
           "name": "Multimodal AI",
           "url": "https://electronicartefacts.com/knowledge/concepts/multimodal-ai/",
           "item": {
@@ -570,7 +579,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 56,
+          "position": 57,
           "name": "Ontologie",
           "url": "https://electronicartefacts.com/fr/knowledge/concepts/ontology/",
           "item": {
@@ -579,7 +588,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 57,
+          "position": 58,
           "name": "Ontology",
           "url": "https://electronicartefacts.com/knowledge/concepts/ontology/",
           "item": {
@@ -588,7 +597,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 58,
+          "position": 59,
           "name": "Open source",
           "url": "https://electronicartefacts.com/fr/knowledge/concepts/open-source/",
           "item": {
@@ -597,7 +606,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 59,
+          "position": 60,
           "name": "Open Source",
           "url": "https://electronicartefacts.com/knowledge/concepts/open-source/",
           "item": {
@@ -606,20 +615,11 @@
         },
         {
           "@type": "ListItem",
-          "position": 60,
+          "position": 61,
           "name": "Open-Weight Model",
           "url": "https://electronicartefacts.com/knowledge/concepts/open-weight-model/",
           "item": {
             "@id": "https://electronicartefacts.com/id/concept/open-weight-model/"
-          }
-        },
-        {
-          "@type": "ListItem",
-          "position": 61,
-          "name": "Open-Weight Model",
-          "url": "https://electronicartefacts.com/fr/knowledge/concepts/open-weight-model/",
-          "item": {
-            "@id": "https://electronicartefacts.com/fr/id/concept/open-weight-model/"
           }
         },
         {
@@ -1066,7 +1066,7 @@
         {
           "@type": "ListItem",
           "position": 111,
-          "name": "Génération augmentée par recuperation et systèmes de connaissance",
+          "name": "Génération augmentée par récupération et systèmes de connaissance",
           "url": "https://electronicartefacts.com/fr/publications/retrieval-augmented-generation-and-knowledge-systems/",
           "item": {
             "@id": "https://electronicartefacts.com/fr/id/publication/retrieval-augmented-generation-and-knowledge-systems/"
@@ -1111,7 +1111,7 @@
         {
           "@type": "ListItem",
           "position": 116,
-          "name": "Graphisme procedural, shaders et systèmes visuels",
+          "name": "Graphisme procédural, shaders et systèmes visuels",
           "url": "https://electronicartefacts.com/fr/publications/procedural-graphics-shaders-and-visual-systems/",
           "item": {
             "@id": "https://electronicartefacts.com/fr/id/publication/procedural-graphics-shaders-and-visual-systems/"
@@ -1174,7 +1174,7 @@
         {
           "@type": "ListItem",
           "position": 123,
-          "name": "Identifiants vérifiables pour les archives culturelles et l'identité des createurs",
+          "name": "Identifiants vérifiables pour les archives culturelles et l'identité des créateurs",
           "url": "https://electronicartefacts.com/fr/publications/verifiable-credentials-for-cultural-archives-and-creator-identity/",
           "item": {
             "@id": "https://electronicartefacts.com/fr/id/publication/verifiable-credentials-for-cultural-archives-and-creator-identity/"

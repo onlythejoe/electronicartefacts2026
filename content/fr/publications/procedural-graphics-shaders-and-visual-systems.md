@@ -3,14 +3,14 @@ id: ea:publication:procedural-graphics-shaders-and-visual-systems-fr
 type: publication
 slug:
   canonical: procedural-graphics-shaders-and-visual-systems
-title: Graphisme procedural, shaders et systèmes visuels
+title: Graphisme procédural, shaders et systèmes visuels
 subtitle: Article technique
-abstract: Graphisme procedural, shaders et systèmes visuels propose une synthèse claire en français
-  sur le sujet "Graphisme procedural, shaders et systèmes visuels" dans le graphe public
+abstract: Graphisme procédural, shaders et systèmes visuels propose une synthèse claire en français
+  sur le sujet "Graphisme procédural, shaders et systèmes visuels" dans le graphe public
   d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de
   connaissances numériques.
-description: Graphisme procedural, shaders et systèmes visuels propose une synthèse claire en
-  français sur le sujet "Graphisme procedural, shaders et systèmes visuels" dans le graphe public
+description: Graphisme procédural, shaders et systèmes visuels propose une synthèse claire en
+  français sur le sujet "Graphisme procédural, shaders et systèmes visuels" dans le graphe public
   d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de
   connaissances numériques.
 locale: fr
@@ -35,7 +35,7 @@ subjects:
   - id: ea:concept:creative-coding
   - id: ea:concept:motion-design
 claims:
-  - Graphisme procedural, shaders et systèmes visuels doit être lisible comme une synthèse française
+  - Graphisme procédural, shaders et systèmes visuels doit être lisible comme une synthèse française
     autonome, sans phrases hybrides héritées de l'anglais.
   - Les liens avec les notions, projets et technologies du graphe renforcent la recherche, la
     navigation et la citation.
@@ -48,7 +48,7 @@ sources:
     accessedAt: 2026-06-24
     url: https://www.khronos.org/webgl/
 citation:
-  preferred: Electronic Artefacts. "Graphisme procedural, shaders et systèmes visuels". Article
+  preferred: Electronic Artefacts. "Graphisme procédural, shaders et systèmes visuels". Article
     technique, version 1.0.0, 2026.
 tags:
   - Procedural Graphics
@@ -65,7 +65,7 @@ translationOf: ea:publication:procedural-graphics-shaders-and-visual-systems
 
 ## Problème
 
-Graphisme procedural, shaders et systèmes visuels examine le sujet "Graphisme procedural, shaders et systèmes visuels" dans le graphe public d'Electronic Artefacts. La fiche donne une entrée française stable, utilisable pour lire le sujet et relier ses sources au reste du graphe.
+Graphisme procédural, shaders et systèmes visuels examine le sujet "Graphisme procédural, shaders et systèmes visuels" dans le graphe public d'Electronic Artefacts. La fiche donne une entrée française stable, utilisable pour lire le sujet et relier ses sources au reste du graphe.
 
 ## Architecture
 

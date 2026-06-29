@@ -3,13 +3,13 @@ id: ea:concept:human-computer-interaction-fr
 type: concept
 slug:
   canonical: human-computer-interaction
-title: Human Computer Interaction
-definition: Human Computer Interaction désigne la conception des interactions entre personnes,
+title: Interaction humain-machine
+definition: Interaction humain-machine désigne la conception des interactions entre personnes,
   interfaces, outils et environnements informatiques.
-abstract: Human Computer Interaction définit un repère conceptuel en français pour comprendre la
+abstract: Interaction humain-machine définit un repère conceptuel en français pour comprendre la
   conception des interactions entre personnes, interfaces, outils et environnements informatiques et
   ses liens avec les projets, technologies et publications du graphe.
-description: Human Computer Interaction définit un repère conceptuel en français pour comprendre la
+description: Interaction humain-machine définit un repère conceptuel en français pour comprendre la
   conception des interactions entre personnes, interfaces, outils et environnements informatiques et
   ses liens avec les projets, technologies et publications du graphe.
 locale: fr
@@ -35,7 +35,7 @@ exclusions:
   - les usages purement promotionnels sans définition vérifiable
   - les exemples déconnectés des sources, relations ou contraintes du graphe
 claims:
-  - Human Computer Interaction devient utile lorsque sa définition reste reliée à des sources, des
+  - Interaction humain-machine devient utile lorsque sa définition reste reliée à des sources, des
     pratiques et des objets observables.
   - La fiche sert de vocabulaire commun pour relier projets, publications et technologies sans
     mélanger les langues.
@@ -59,7 +59,7 @@ translationOf: ea:concept:human-computer-interaction
 
 ## Rôle
 
-Human Computer Interaction est documenté comme notion de référence pour comprendre la conception des interactions entre personnes, interfaces, outils et environnements informatiques.
+Interaction humain-machine est documenté comme notion de référence pour comprendre la conception des interactions entre personnes, interfaces, outils et environnements informatiques.
 
 ## Usage
 
