@@ -40,8 +40,8 @@ sources:
 tags:
   - WebNN
   - IA dans le navigateur
-  - Inférence locale
-  - Apprentissage automatique Web
+  - inférence locale
+  - apprentissage automatique Web
 disciplines:
   - intelligence artificielle
   - développement web

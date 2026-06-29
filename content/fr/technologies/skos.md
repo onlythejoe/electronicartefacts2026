@@ -43,7 +43,7 @@ tags:
   - Taxonomy
   - Controlled Vocabulary
 disciplines:
-  - Knowledge Systems
+  - systèmes de connaissance
   - Information Architecture
   - Semantic Web
 ---

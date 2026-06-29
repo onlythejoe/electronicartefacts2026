@@ -5,15 +5,15 @@
       "@type": "WebPage",
       "@id": "https://electronicartefacts.com/fr/knowledge/concepts/open-source/#webpage",
       "url": "https://electronicartefacts.com/fr/knowledge/concepts/open-source/",
-      "name": "Open source",
-      "description": "Open source définit un repère conceptuel en français pour comprendre les pratiques de publication, maintenance et cooperation fondees sur du code et des ressources ouverts et ses liens avec les projets, technologies et publications du graphe.",
+      "name": "open source",
+      "description": "open source définit un repère conceptuel en français pour comprendre les pratiques de publication, maintenance et cooperation fondees sur du code et des ressources ouverts et ses liens avec les projets, technologies et publications du graphe.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
       "primaryImageOfPage": {
         "@type": "ImageObject",
         "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-search.jpg",
-        "description": "Open source"
+        "description": "open source"
       },
       "breadcrumb": {
         "@id": "https://electronicartefacts.com/fr/knowledge/concepts/open-source/#breadcrumb"
@@ -33,9 +33,9 @@
       "@type": "DefinedTerm",
       "@id": "https://electronicartefacts.com/fr/id/concept/open-source/",
       "identifier": "ea:concept:open-source-fr",
-      "name": "Open source",
-      "abstract": "Open source définit un repère conceptuel en français pour comprendre les pratiques de publication, maintenance et cooperation fondees sur du code et des ressources ouverts et ses liens avec les projets, technologies et publications du graphe.",
-      "description": "Open source désigne les pratiques de publication, maintenance et cooperation fondees sur du code et des ressources ouverts.",
+      "name": "open source",
+      "abstract": "open source définit un repère conceptuel en français pour comprendre les pratiques de publication, maintenance et cooperation fondees sur du code et des ressources ouverts et ses liens avec les projets, technologies et publications du graphe.",
+      "description": "open source désigne les pratiques de publication, maintenance et cooperation fondees sur du code et des ressources ouverts.",
       "url": "https://electronicartefacts.com/fr/knowledge/concepts/open-source/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/knowledge/concepts/open-source/#webpage"
@@ -43,7 +43,7 @@
       "image": {
         "@type": "ImageObject",
         "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-search.jpg",
-        "description": "Open source"
+        "description": "open source"
       },
       "author": [
         {
@@ -57,12 +57,12 @@
       ],
       "keywords": [
         "open source",
-        "Logiciel",
-        "Communs",
-        "Infrastructure",
+        "logiciel",
+        "communs",
+        "infrastructure",
         "programmation",
         "programmation créative",
-        "Activités créatives"
+        "activité créative"
       ],
       "inLanguage": "fr",
       "dateCreated": "2026-06-24",
@@ -191,7 +191,7 @@
         {
           "@type": "ListItem",
           "position": 3,
-          "name": "Open source",
+          "name": "open source",
           "item": "https://electronicartefacts.com/fr/knowledge/concepts/open-source/"
         }
       ]

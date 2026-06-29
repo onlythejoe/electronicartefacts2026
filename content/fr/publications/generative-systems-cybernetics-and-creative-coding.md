@@ -65,10 +65,10 @@ tags:
   - Cybernetics
   - programmation créative
   - Algorithmic Composition
-  - Digital Art
+  - art numérique
 disciplines:
   - programmation créative
-  - Digital Art
+  - art numérique
   - Music Production
   - conception de systèmes
   - Cybernetics

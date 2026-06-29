@@ -56,12 +56,12 @@ citation:
 tags:
   - Typography
   - Reading Systems
-  - Interface Design
+  - conception d'interface
   - accessibilité
 disciplines:
   - Typography
   - design
-  - Web Development
+  - développement web
   - interaction humain-machine
 translationOf: ea:publication:typography-reading-systems-and-digital-interfaces
 ---

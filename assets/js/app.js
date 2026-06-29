@@ -6684,26 +6684,26 @@ window.EA_PUBLIC_CATALOG = {
       "translationOf": "ea:collection:knowledge-hub-foundations",
       "title": "Fondations du hub de connaissance",
       "subtitle": "Collection éditoriale",
-      "summary": "Fondations du hub de connaissance organise des fiches reliées autour de le sujet \"Fondations du hub de connaissance\" dans le graphe public d'Electronic Artefacts, afin de donner une progression lisible aux archives de connaissance d'Electronic Artefacts.",
-      "description": "Fondations du hub de connaissance organise des fiches reliées autour de le sujet \"Fondations du hub de connaissance\" dans le graphe public d'Electronic Artefacts, afin de donner une progression lisible aux archives de connaissance d'Electronic Artefacts.",
+      "summary": "Fondations du hub de connaissance rassemble des fiches liées par un même axe éditorial, afin de donner une progression lisible aux archives de connaissance d'Electronic Artefacts.",
+      "description": "Fondations du hub de connaissance rassemble des fiches liées par un même axe éditorial, afin de donner une progression lisible aux archives de connaissance d'Electronic Artefacts.",
       "status": "active",
       "maturity": "research",
       "confidence": "published",
       "visibility": "public",
       "publicationClass": "published",
       "tags": [
-        "Hub de connaissance",
-        "Collection éditoriale",
-        "Fondations",
-        "Bibliothèque de recherche",
-        "Publication sémantique"
+        "hub de connaissance",
+        "collection éditoriale",
+        "fondations",
+        "bibliothèque de recherche",
+        "Semantic Publishing"
       ],
       "discipline": [
-        "Systèmes de connaissance",
+        "systèmes de connaissance",
         "archives",
         "programmation créative",
-        "Ingénierie audio",
-        "Art numérique"
+        "ingénierie audio",
+        "art numérique"
       ],
       "route": "/fr/archive/collections/knowledge-hub-foundations/",
       "identifier": "/fr/id/collection/knowledge-hub-foundations/",
@@ -6721,29 +6721,29 @@ window.EA_PUBLIC_CATALOG = {
       "type": "collection",
       "locale": "fr",
       "translationOf": "ea:collection:knowledge-hub-fourth-wave",
-      "title": "Hub de connaissance, quatrieme vague",
+      "title": "Hub de connaissance, quatrième vague",
       "subtitle": "Protocoles d'IA, provenance, gouvernance et interfaces culturelles",
-      "summary": "Hub de connaissance, quatrieme vague organise des fiches reliées autour de le sujet \"Hub de connaissance, quatrieme vague\" dans le graphe public d'Electronic Artefacts, afin de donner une progression lisible aux archives de connaissance d'Electronic Artefacts.",
-      "description": "Hub de connaissance, quatrieme vague organise des fiches reliées autour de le sujet \"Hub de connaissance, quatrieme vague\" dans le graphe public d'Electronic Artefacts, afin de donner une progression lisible aux archives de connaissance d'Electronic Artefacts.",
+      "summary": "Hub de connaissance, quatrième vague rassemble des fiches liées par un même axe éditorial, afin de donner une progression lisible aux archives de connaissance d'Electronic Artefacts.",
+      "description": "Hub de connaissance, quatrième vague rassemble des fiches liées par un même axe éditorial, afin de donner une progression lisible aux archives de connaissance d'Electronic Artefacts.",
       "status": "active",
       "maturity": "research",
       "confidence": "published",
       "visibility": "public",
       "publicationClass": "published",
       "tags": [
-        "Hub de connaissance",
-        "Quatrième vague",
-        "Protocoles d'IA",
-        "Gouvernance de l'IA",
+        "hub de connaissance",
+        "quatrième vague",
+        "protocoles d'IA",
+        "gouvernance de l'IA",
         "Provenance",
-        "Infrastructure culturelle"
+        "infrastructure culturelle"
       ],
       "discipline": [
         "intelligence artificielle",
-        "Systèmes de connaissance",
-        "préservation numérique",
+        "systèmes de connaissance",
+        "Digital Préservation",
         "architecture logicielle",
-        "Infrastructure culturelle"
+        "infrastructure culturelle"
       ],
       "route": "/fr/archive/collections/knowledge-hub-fourth-wave/",
       "identifier": "/fr/id/collection/knowledge-hub-fourth-wave/",
@@ -6761,25 +6761,25 @@ window.EA_PUBLIC_CATALOG = {
       "type": "collection",
       "locale": "fr",
       "translationOf": "ea:collection:knowledge-hub-second-wave",
-      "title": "Hub de connaissance, deuxieme vague",
+      "title": "Hub de connaissance, deuxième vague",
       "subtitle": "Collection éditoriale",
-      "summary": "Hub de connaissance, deuxieme vague organise des fiches reliées autour de le sujet \"Hub de connaissance, deuxieme vague\" dans le graphe public d'Electronic Artefacts, afin de donner une progression lisible aux archives de connaissance d'Electronic Artefacts.",
-      "description": "Hub de connaissance, deuxieme vague organise des fiches reliées autour de le sujet \"Hub de connaissance, deuxieme vague\" dans le graphe public d'Electronic Artefacts, afin de donner une progression lisible aux archives de connaissance d'Electronic Artefacts.",
+      "summary": "Hub de connaissance, deuxième vague rassemble des fiches liées par un même axe éditorial, afin de donner une progression lisible aux archives de connaissance d'Electronic Artefacts.",
+      "description": "Hub de connaissance, deuxième vague rassemble des fiches liées par un même axe éditorial, afin de donner une progression lisible aux archives de connaissance d'Electronic Artefacts.",
       "status": "active",
       "maturity": "research",
       "confidence": "published",
       "visibility": "public",
       "publicationClass": "published",
       "tags": [
-        "Hub de connaissance",
-        "Deuxième vague",
-        "Collection éditoriale",
-        "Bibliothèque de recherche"
+        "hub de connaissance",
+        "deuxième vague",
+        "collection éditoriale",
+        "bibliothèque de recherche"
       ],
       "discipline": [
-        "Systèmes de connaissance",
+        "systèmes de connaissance",
         "programmation créative",
-        "Développement web",
+        "développement web",
         "design",
         "intelligence artificielle"
       ],
@@ -6799,28 +6799,28 @@ window.EA_PUBLIC_CATALOG = {
       "type": "collection",
       "locale": "fr",
       "translationOf": "ea:collection:knowledge-hub-third-wave",
-      "title": "Hub de connaissance, troisieme vague",
+      "title": "Hub de connaissance, troisième vague",
       "subtitle": "IA, systèmes et calcul sur graphe",
-      "summary": "Hub de connaissance, troisieme vague organise des fiches reliées autour de le sujet \"Hub de connaissance, troisieme vague\" dans le graphe public d'Electronic Artefacts, afin de donner une progression lisible aux archives de connaissance d'Electronic Artefacts.",
-      "description": "Hub de connaissance, troisieme vague organise des fiches reliées autour de le sujet \"Hub de connaissance, troisieme vague\" dans le graphe public d'Electronic Artefacts, afin de donner une progression lisible aux archives de connaissance d'Electronic Artefacts.",
+      "summary": "Hub de connaissance, troisième vague rassemble des fiches liées par un même axe éditorial, afin de donner une progression lisible aux archives de connaissance d'Electronic Artefacts.",
+      "description": "Hub de connaissance, troisième vague rassemble des fiches liées par un même axe éditorial, afin de donner une progression lisible aux archives de connaissance d'Electronic Artefacts.",
       "status": "active",
       "maturity": "research",
       "confidence": "published",
       "visibility": "public",
       "publicationClass": "published",
       "tags": [
-        "Hub de connaissance",
-        "Troisième vague",
+        "hub de connaissance",
+        "troisième vague",
         "intelligence artificielle",
-        "Architecture des systèmes",
-        "Calcul sur graphe"
+        "architecture des systèmes",
+        "calcul sur graphe"
       ],
       "discipline": [
         "intelligence artificielle",
         "conception de systèmes",
-        "Systèmes de connaissance",
+        "systèmes de connaissance",
         "architecture logicielle",
-        "Technologies créatives"
+        "technologies créatives"
       ],
       "route": "/fr/archive/collections/knowledge-hub-third-wave/",
       "identifier": "/fr/id/collection/knowledge-hub-third-wave/",
@@ -6931,7 +6931,7 @@ window.EA_PUBLIC_CATALOG = {
       "discipline": [
         "interaction humain-machine",
         "intelligence artificielle",
-        "Knowledge Systems",
+        "systèmes de connaissance",
         "conception de systèmes"
       ],
       "route": "/fr/knowledge/concepts/augmented-intelligence/",
@@ -7006,8 +7006,8 @@ window.EA_PUBLIC_CATALOG = {
       ],
       "discipline": [
         "conception de systèmes",
-        "Programming",
-        "Knowledge Systems",
+        "programmation",
+        "systèmes de connaissance",
         "architecture logicielle"
       ],
       "route": "/fr/knowledge/concepts/contextual-execution/",
@@ -7037,15 +7037,15 @@ window.EA_PUBLIC_CATALOG = {
       "publicationClass": "canonical",
       "tags": [
         "programmation créative",
-        "Digital Art",
-        "Programming",
+        "art numérique",
+        "programmation",
         "Generative Art",
         "Interaction"
       ],
       "discipline": [
         "programmation créative",
-        "Programming",
-        "Digital Art",
+        "programmation",
+        "art numérique",
         "Motion Design",
         "Sound Design"
       ],
@@ -7085,7 +7085,7 @@ window.EA_PUBLIC_CATALOG = {
         "Cybernetics",
         "Complexity",
         "conception de systèmes",
-        "Digital Art"
+        "art numérique"
       ],
       "route": "/fr/knowledge/concepts/cybernetic-feedback/",
       "identifier": "/fr/id/concept/cybernetic-feedback/",
@@ -7120,10 +7120,10 @@ window.EA_PUBLIC_CATALOG = {
         "Memory"
       ],
       "discipline": [
-        "Archives",
-        "History of Technology",
-        "Knowledge Systems",
-        "Digital Art"
+        "archives",
+        "histoire des technologies",
+        "systèmes de connaissance",
+        "art numérique"
       ],
       "route": "/fr/knowledge/concepts/digital-preservation/",
       "identifier": "/fr/id/concept/digital-preservation/",
@@ -7151,17 +7151,17 @@ window.EA_PUBLIC_CATALOG = {
       "visibility": "public",
       "publicationClass": "canonical",
       "tags": [
-        "Système d'exploitation de domaine",
-        "Système d'exploitation métier",
-        "Moteur d'exécution",
-        "Architecture de plateforme",
-        "Composabilité"
+        "système d'exploitation de domaine",
+        "système d'exploitation métier",
+        "moteur d'exécution",
+        "Platform Architecture",
+        "Composability"
       ],
       "discipline": [
         "conception de systèmes",
         "architecture logicielle",
         "programmation",
-        "Systèmes de connaissance"
+        "systèmes de connaissance"
       ],
       "route": "/fr/knowledge/concepts/domain-operating-system/",
       "identifier": "/fr/id/concept/domain-operating-system/",
@@ -7196,9 +7196,9 @@ window.EA_PUBLIC_CATALOG = {
         "graphe de connaissances"
       ],
       "discipline": [
-        "Knowledge Systems",
-        "Web Development",
-        "Archives"
+        "systèmes de connaissance",
+        "développement web",
+        "archives"
       ],
       "route": "/fr/knowledge/concepts/entity-identity/",
       "identifier": "/fr/id/concept/entity-identity/",
@@ -7235,7 +7235,7 @@ window.EA_PUBLIC_CATALOG = {
       "discipline": [
         "architecture logicielle",
         "conception de systèmes",
-        "Programming",
+        "programmation",
         "Distributed Systems"
       ],
       "route": "/fr/knowledge/concepts/event-driven-architecture/",
@@ -7265,15 +7265,15 @@ window.EA_PUBLIC_CATALOG = {
       "publicationClass": "canonical",
       "tags": [
         "Generative AI",
-        "Machine Learning",
+        "apprentissage automatique",
         "Provenance",
         "Creative Workflows"
       ],
       "discipline": [
         "intelligence artificielle",
-        "Machine Learning",
+        "apprentissage automatique",
         "programmation créative",
-        "Digital Art"
+        "art numérique"
       ],
       "route": "/fr/knowledge/concepts/generative-ai/",
       "identifier": "/fr/id/concept/generative-ai/",
@@ -7308,7 +7308,7 @@ window.EA_PUBLIC_CATALOG = {
         "Simulation"
       ],
       "discipline": [
-        "Digital Art",
+        "art numérique",
         "programmation créative",
         "design",
         "Music Production",
@@ -7347,7 +7347,7 @@ window.EA_PUBLIC_CATALOG = {
         "graphe de connaissances"
       ],
       "discipline": [
-        "Knowledge Systems",
+        "systèmes de connaissance",
         "conception de systèmes",
         "Information Architecture",
         "architecture logicielle"
@@ -7385,7 +7385,7 @@ window.EA_PUBLIC_CATALOG = {
         "Exécution"
       ],
       "discipline": [
-        "Software architecture",
+        "architecture logicielle",
         "Knowledge systems"
       ],
       "route": "/fr/knowledge/concepts/graph-runtime/",
@@ -7415,14 +7415,14 @@ window.EA_PUBLIC_CATALOG = {
       "publicationClass": "canonical",
       "tags": [
         "interaction humain-machine",
-        "Interface Design",
+        "conception d'interface",
         "accessibilité",
         "outils créatifs"
       ],
       "discipline": [
         "interaction humain-machine",
         "design",
-        "Web Development",
+        "développement web",
         "intelligence artificielle"
       ],
       "route": "/fr/knowledge/concepts/human-computer-interaction/",
@@ -7453,14 +7453,14 @@ window.EA_PUBLIC_CATALOG = {
       "tags": [
         "Hypertext",
         "Web",
-        "Knowledge Systems",
+        "systèmes de connaissance",
         "Digital Archives"
       ],
       "discipline": [
-        "Knowledge Systems",
-        "Internet Culture",
-        "Web Development",
-        "History of Technology"
+        "systèmes de connaissance",
+        "culture Internet",
+        "développement web",
+        "histoire des technologies"
       ],
       "route": "/fr/knowledge/concepts/hypertext/",
       "identifier": "/fr/id/concept/hypertext/",
@@ -7488,16 +7488,16 @@ window.EA_PUBLIC_CATALOG = {
       "visibility": "public",
       "publicationClass": "canonical",
       "tags": [
-        "Internet Culture",
-        "Network Culture",
-        "Memes",
-        "Archives"
+        "culture Internet",
+        "culture des réseaux",
+        "mèmes",
+        "archives"
       ],
       "discipline": [
-        "Internet Culture",
-        "Network Culture",
-        "Archives",
-        "History of Technology"
+        "culture Internet",
+        "culture des réseaux",
+        "archives",
+        "histoire des technologies"
       ],
       "route": "/fr/knowledge/concepts/internet-culture/",
       "identifier": "/fr/id/concept/internet-culture/",
@@ -7532,9 +7532,9 @@ window.EA_PUBLIC_CATALOG = {
         "Search"
       ],
       "discipline": [
-        "Knowledge Systems",
+        "systèmes de connaissance",
         "Information Architecture",
-        "Web Development",
+        "développement web",
         "Research"
       ],
       "route": "/fr/knowledge/concepts/knowledge-graph/",
@@ -7566,14 +7566,14 @@ window.EA_PUBLIC_CATALOG = {
         "LLM",
         "Transformer",
         "Tokens",
-        "Inférence",
-        "Modèles de langage"
+        "inférence",
+        "modèles de langage"
       ],
       "discipline": [
         "intelligence artificielle",
         "apprentissage automatique",
         "programmation",
-        "Systèmes de connaissance"
+        "systèmes de connaissance"
       ],
       "route": "/fr/knowledge/concepts/large-language-model/",
       "identifier": "/fr/id/concept/large-language-model/",
@@ -7608,8 +7608,8 @@ window.EA_PUBLIC_CATALOG = {
         "URI"
       ],
       "discipline": [
-        "Knowledge Systems",
-        "Web Development",
+        "systèmes de connaissance",
+        "développement web",
         "SEO",
         "Information Architecture"
       ],
@@ -7640,14 +7640,14 @@ window.EA_PUBLIC_CATALOG = {
       "publicationClass": "canonical",
       "tags": [
         "Metadata",
-        "Archives",
+        "archives",
         "Cataloguing",
         "Préservation"
       ],
       "discipline": [
-        "Archives",
-        "Knowledge Systems",
-        "Research Methods",
+        "archives",
+        "systèmes de connaissance",
+        "méthodes de recherche",
         "Digital Préservation"
       ],
       "route": "/fr/knowledge/concepts/metadata/",
@@ -7684,7 +7684,7 @@ window.EA_PUBLIC_CATALOG = {
       "discipline": [
         "architecture logicielle",
         "conception de systèmes",
-        "Programming"
+        "programmation"
       ],
       "route": "/fr/knowledge/concepts/microservice-architecture/",
       "identifier": "/fr/id/concept/microservice-architecture/",
@@ -7715,13 +7715,13 @@ window.EA_PUBLIC_CATALOG = {
         "Motion Design",
         "Animation",
         "Interface",
-        "Visual Culture"
+        "culture visuelle"
       ],
       "discipline": [
         "Motion Design",
         "design",
         "interaction humain-machine",
-        "Web Development"
+        "développement web"
       ],
       "route": "/fr/knowledge/concepts/motion-design/",
       "identifier": "/fr/id/concept/motion-design/",
@@ -7757,9 +7757,9 @@ window.EA_PUBLIC_CATALOG = {
       ],
       "discipline": [
         "intelligence artificielle",
-        "Machine Learning",
-        "Digital Art",
-        "Audio Engineering"
+        "apprentissage automatique",
+        "art numérique",
+        "ingénierie audio"
       ],
       "route": "/fr/knowledge/concepts/multimodal-ai/",
       "identifier": "/fr/id/concept/multimodal-ai/",
@@ -7794,7 +7794,7 @@ window.EA_PUBLIC_CATALOG = {
         "Controlled Vocabulary"
       ],
       "discipline": [
-        "Knowledge Systems",
+        "systèmes de connaissance",
         "Information Architecture",
         "Philosophy",
         "Semantic Web"
@@ -7815,10 +7815,10 @@ window.EA_PUBLIC_CATALOG = {
       "type": "concept",
       "locale": "fr",
       "translationOf": "ea:concept:open-source",
-      "title": "Open source",
-      "summary": "Open source définit un repère conceptuel en français pour comprendre les pratiques de publication, maintenance et cooperation fondees sur du code et des ressources ouverts et ses liens avec les projets, technologies et publications du graphe.",
-      "description": "Open source définit un repère conceptuel en français pour comprendre les pratiques de publication, maintenance et cooperation fondees sur du code et des ressources ouverts et ses liens avec les projets, technologies et publications du graphe.",
-      "definition": "Open source désigne les pratiques de publication, maintenance et cooperation fondees sur du code et des ressources ouverts.",
+      "title": "open source",
+      "summary": "open source définit un repère conceptuel en français pour comprendre les pratiques de publication, maintenance et cooperation fondees sur du code et des ressources ouverts et ses liens avec les projets, technologies et publications du graphe.",
+      "description": "open source définit un repère conceptuel en français pour comprendre les pratiques de publication, maintenance et cooperation fondees sur du code et des ressources ouverts et ses liens avec les projets, technologies et publications du graphe.",
+      "definition": "open source désigne les pratiques de publication, maintenance et cooperation fondees sur du code et des ressources ouverts.",
       "status": "active",
       "maturity": "research",
       "confidence": "canonical",
@@ -7826,15 +7826,15 @@ window.EA_PUBLIC_CATALOG = {
       "publicationClass": "canonical",
       "tags": [
         "open source",
-        "Logiciel",
-        "Communs",
-        "Infrastructure"
+        "logiciel",
+        "communs",
+        "infrastructure"
       ],
       "discipline": [
         "open source",
         "programmation",
         "programmation créative",
-        "Activités créatives"
+        "activité créative"
       ],
       "route": "/fr/knowledge/concepts/open-source/",
       "identifier": "/fr/id/concept/open-source/",
@@ -7862,16 +7862,16 @@ window.EA_PUBLIC_CATALOG = {
       "visibility": "public",
       "publicationClass": "canonical",
       "tags": [
-        "Open Weights",
-        "Local AI",
-        "Model Licensing",
-        "Quantization"
+        "poids ouverts",
+        "IA locale",
+        "licence de modèle",
+        "quantification"
       ],
       "discipline": [
         "intelligence artificielle",
-        "Open Source",
-        "Programming",
-        "Digital Independence"
+        "open source",
+        "programmation",
+        "indépendance numérique"
       ],
       "route": "/fr/knowledge/concepts/open-weight-model/",
       "identifier": "/fr/id/concept/open-weight-model/",
@@ -7899,15 +7899,15 @@ window.EA_PUBLIC_CATALOG = {
       "visibility": "public",
       "publicationClass": "canonical",
       "tags": [
-        "Personal Knowledge Management",
-        "Digital Gardens",
+        "gestion personnelle des connaissances",
+        "jardins numériques",
         "Notes",
         "Research"
       ],
       "discipline": [
-        "Knowledge Systems",
-        "Research Methods",
-        "Internet Culture",
+        "systèmes de connaissance",
+        "méthodes de recherche",
+        "culture Internet",
         "Writing"
       ],
       "route": "/fr/knowledge/concepts/personal-knowledge-system/",
@@ -7943,8 +7943,8 @@ window.EA_PUBLIC_CATALOG = {
       ],
       "discipline": [
         "programmation créative",
-        "Visual Culture",
-        "Digital Art",
+        "culture visuelle",
+        "art numérique",
         "Motion Design"
       ],
       "route": "/fr/knowledge/concepts/procedural-graphics/",
@@ -7980,9 +7980,9 @@ window.EA_PUBLIC_CATALOG = {
         "Archive"
       ],
       "discipline": [
-        "Archives",
-        "Research Methods",
-        "Knowledge Systems"
+        "archives",
+        "méthodes de recherche",
+        "systèmes de connaissance"
       ],
       "route": "/fr/knowledge/concepts/provenance/",
       "identifier": "/fr/id/concept/provenance/",
@@ -8018,9 +8018,9 @@ window.EA_PUBLIC_CATALOG = {
       ],
       "discipline": [
         "intelligence artificielle",
-        "Knowledge Systems",
+        "systèmes de connaissance",
         "Information Architecture",
-        "Machine Learning"
+        "apprentissage automatique"
       ],
       "route": "/fr/knowledge/concepts/retrieval-augmented-generation/",
       "identifier": "/fr/id/concept/retrieval-augmented-generation/",
@@ -8055,10 +8055,10 @@ window.EA_PUBLIC_CATALOG = {
         "Machine Listening"
       ],
       "discipline": [
-        "Audio Engineering",
-        "Digital Art",
-        "Archives",
-        "Research Methods"
+        "ingénierie audio",
+        "art numérique",
+        "archives",
+        "méthodes de recherche"
       ],
       "route": "/fr/knowledge/concepts/signal-archaeology/",
       "identifier": "/fr/id/concept/signal-archaeology/",
@@ -8076,10 +8076,10 @@ window.EA_PUBLIC_CATALOG = {
       "type": "concept",
       "locale": "fr",
       "translationOf": "ea:concept:systems-thinking",
-      "title": "Pensée systemique",
-      "summary": "Pensée systemique définit un repère conceptuel en français pour comprendre la lecture des situations par relations, limites, boucles, flux, delais et points de levier et ses liens avec les projets, technologies et publications du graphe.",
-      "description": "Pensée systemique définit un repère conceptuel en français pour comprendre la lecture des situations par relations, limites, boucles, flux, delais et points de levier et ses liens avec les projets, technologies et publications du graphe.",
-      "definition": "Pensée systemique désigne la lecture des situations par relations, limites, boucles, flux, delais et points de levier.",
+      "title": "Pensée systémique",
+      "summary": "Pensée systémique définit un repère conceptuel en français pour comprendre la lecture des situations par relations, limites, boucles, flux, delais et points de levier et ses liens avec les projets, technologies et publications du graphe.",
+      "description": "Pensée systémique définit un repère conceptuel en français pour comprendre la lecture des situations par relations, limites, boucles, flux, delais et points de levier et ses liens avec les projets, technologies et publications du graphe.",
+      "definition": "Pensée systémique désigne la lecture des situations par relations, limites, boucles, flux, delais et points de levier.",
       "status": "active",
       "maturity": "research",
       "confidence": "canonical",
@@ -8126,14 +8126,14 @@ window.EA_PUBLIC_CATALOG = {
       "tags": [
         "Typography",
         "Reading",
-        "Interface Design",
+        "conception d'interface",
         "accessibilité"
       ],
       "discipline": [
         "Typography",
         "design",
-        "Visual Culture",
-        "Web Development"
+        "culture visuelle",
+        "développement web"
       ],
       "route": "/fr/knowledge/concepts/typography/",
       "identifier": "/fr/id/concept/typography/",
@@ -8167,8 +8167,8 @@ window.EA_PUBLIC_CATALOG = {
         "programmation créative"
       ],
       "discipline": [
-        "Audio Engineering",
-        "Web Development",
+        "ingénierie audio",
+        "développement web",
         "programmation créative",
         "Sound Design"
       ],
@@ -8208,7 +8208,7 @@ window.EA_PUBLIC_CATALOG = {
       ],
       "discipline": [
         "Développement web",
-        "Design Technology",
+        "Technologies de design",
         "Technologies créatives",
         "Systèmes de connaissance"
       ],
@@ -8430,7 +8430,7 @@ window.EA_PUBLIC_CATALOG = {
       "publicationClass": "published",
       "tags": [
         "agents d'IA",
-        "AI Workflows",
+        "workflows d'IA",
         "orchestration",
         "usage d'outils",
         "automatisation"
@@ -8457,17 +8457,17 @@ window.EA_PUBLIC_CATALOG = {
       "type": "publication",
       "locale": "fr",
       "translationOf": "ea:publication:ai-search-structured-content-and-knowledge-graph-seo",
-      "title": "Recherche IA, contenu structure et SEO par graphe de connaissances",
+      "title": "Recherche IA, contenu structuré et SEO par graphe de connaissances",
       "subtitle": "Article technique",
-      "summary": "Recherche IA, contenu structure et SEO par graphe de connaissances propose une synthèse claire en français sur le sujet \"Recherche IA, contenu structure et SEO par graphe de connaissances\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
-      "description": "Recherche IA, contenu structure et SEO par graphe de connaissances propose une synthèse claire en français sur le sujet \"Recherche IA, contenu structure et SEO par graphe de connaissances\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
+      "summary": "Recherche IA, contenu structuré et SEO par graphe de connaissances propose une synthèse claire en français sur le sujet \"Recherche IA, contenu structuré et SEO par graphe de connaissances\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
+      "description": "Recherche IA, contenu structuré et SEO par graphe de connaissances propose une synthèse claire en français sur le sujet \"Recherche IA, contenu structuré et SEO par graphe de connaissances\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
       "status": "active",
       "maturity": "research",
       "confidence": "published",
       "visibility": "public",
       "publicationClass": "published",
       "tags": [
-        "AI Search",
+        "recherche IA",
         "SEO par graphe de connaissances",
         "Structured Data",
         "JSON-LD",
@@ -8475,8 +8475,8 @@ window.EA_PUBLIC_CATALOG = {
       ],
       "discipline": [
         "SEO",
-        "Knowledge Systems",
-        "Web Development",
+        "systèmes de connaissance",
+        "développement web",
         "Information Architecture"
       ],
       "route": "/fr/publications/ai-search-structured-content-and-knowledge-graph-seo/",
@@ -8551,8 +8551,8 @@ window.EA_PUBLIC_CATALOG = {
       "discipline": [
         "Digital Préservation",
         "intelligence artificielle",
-        "Knowledge Systems",
-        "Cultural Infrastructure"
+        "systèmes de connaissance",
+        "infrastructure culturelle"
       ],
       "route": "/fr/publications/c2pa-content-credentials-and-generative-media-provenance/",
       "identifier": "/fr/id/publication/c2pa-content-credentials-and-generative-media-provenance/",
@@ -8588,8 +8588,8 @@ window.EA_PUBLIC_CATALOG = {
       ],
       "discipline": [
         "conception de systèmes",
-        "Programming",
-        "Knowledge Systems",
+        "programmation",
+        "systèmes de connaissance",
         "architecture logicielle"
       ],
       "route": "/fr/publications/contextual-execution-and-graph-runtimes/",
@@ -8625,9 +8625,9 @@ window.EA_PUBLIC_CATALOG = {
       ],
       "discipline": [
         "programmation créative",
-        "Programming",
+        "programmation",
         "design",
-        "Open Source"
+        "open source"
       ],
       "route": "/fr/publications/creative-coding-pedagogy-from-logo-to-p5js/",
       "identifier": "/fr/id/publication/creative-coding-pedagogy-from-logo-to-p5js/",
@@ -8662,10 +8662,10 @@ window.EA_PUBLIC_CATALOG = {
         "Vestiges"
       ],
       "discipline": [
-        "Archives",
-        "Digital Art",
-        "Knowledge Systems",
-        "History of Technology"
+        "archives",
+        "art numérique",
+        "systèmes de connaissance",
+        "histoire des technologies"
       ],
       "route": "/fr/publications/digital-preservation-and-living-archives/",
       "identifier": "/fr/id/publication/digital-preservation-and-living-archives/",
@@ -8703,7 +8703,7 @@ window.EA_PUBLIC_CATALOG = {
         "architecture logicielle",
         "conception de systèmes",
         "Distributed Systems",
-        "Programming"
+        "programmation"
       ],
       "route": "/fr/publications/event-driven-architecture-and-event-streams/",
       "identifier": "/fr/id/publication/event-driven-architecture-and-event-streams/",
@@ -8770,7 +8770,7 @@ window.EA_PUBLIC_CATALOG = {
       ],
       "discipline": [
         "intelligence artificielle",
-        "Machine Learning",
+        "apprentissage automatique",
         "programmation créative",
         "interaction humain-machine"
       ],
@@ -8804,11 +8804,11 @@ window.EA_PUBLIC_CATALOG = {
         "Cybernetics",
         "programmation créative",
         "Algorithmic Composition",
-        "Digital Art"
+        "art numérique"
       ],
       "discipline": [
         "programmation créative",
-        "Digital Art",
+        "art numérique",
         "Music Production",
         "conception de systèmes",
         "Cybernetics"
@@ -8843,13 +8843,13 @@ window.EA_PUBLIC_CATALOG = {
         "Transformer",
         "Attention",
         "Tokenization",
-        "Inference"
+        "inférence"
       ],
       "discipline": [
         "intelligence artificielle",
-        "Machine Learning",
-        "Programming",
-        "Knowledge Systems"
+        "apprentissage automatique",
+        "programmation",
+        "systèmes de connaissance"
       ],
       "route": "/fr/publications/how-large-language-models-actually-work/",
       "identifier": "/fr/id/publication/how-large-language-models-actually-work/",
@@ -8918,12 +8918,12 @@ window.EA_PUBLIC_CATALOG = {
         "intelligence augmentée",
         "graphe de connaissances",
         "Linked Data",
-        "History of Technology"
+        "histoire des technologies"
       ],
       "discipline": [
-        "Knowledge Systems",
-        "History of Technology",
-        "Web Development",
+        "systèmes de connaissance",
+        "histoire des technologies",
+        "développement web",
         "interaction humain-machine"
       ],
       "route": "/fr/publications/hypertext-and-augmented-knowledge-systems/",
@@ -8960,9 +8960,9 @@ window.EA_PUBLIC_CATALOG = {
       ],
       "discipline": [
         "Digital Préservation",
-        "Cultural Infrastructure",
-        "Knowledge Systems",
-        "Web Development"
+        "infrastructure culturelle",
+        "systèmes de connaissance",
+        "développement web"
       ],
       "route": "/fr/publications/iiif-and-compound-cultural-objects/",
       "identifier": "/fr/id/publication/iiif-and-compound-cultural-objects/",
@@ -8991,16 +8991,16 @@ window.EA_PUBLIC_CATALOG = {
       "publicationClass": "published",
       "tags": [
         "graphe de connaissances",
-        "Cultural Infrastructure",
+        "infrastructure culturelle",
         "Linked Data",
         "Provenance",
         "Vestiges"
       ],
       "discipline": [
-        "Knowledge Systems",
-        "Archives",
+        "systèmes de connaissance",
+        "archives",
         "Information Architecture",
-        "Research Methods"
+        "méthodes de recherche"
       ],
       "route": "/fr/publications/knowledge-graphs-for-cultural-infrastructure/",
       "identifier": "/fr/id/publication/knowledge-graphs-for-cultural-infrastructure/",
@@ -9035,9 +9035,9 @@ window.EA_PUBLIC_CATALOG = {
         "Knowledge Pages"
       ],
       "discipline": [
-        "Web Development",
+        "développement web",
         "SEO",
-        "Knowledge Systems"
+        "systèmes de connaissance"
       ],
       "route": "/fr/publications/linked-data-and-public-knowledge-pages/",
       "identifier": "/fr/id/publication/linked-data-and-public-knowledge-pages/",
@@ -9055,10 +9055,10 @@ window.EA_PUBLIC_CATALOG = {
       "type": "publication",
       "locale": "fr",
       "translationOf": "ea:publication:local-and-open-source-ai-systems",
-      "title": "Systèmes d'IA locaux et open source",
+      "title": "Systèmes d’IA locaux et open source",
       "subtitle": "Article technique",
-      "summary": "Systèmes d'IA locaux et open source propose une synthèse claire en français sur le sujet \"Systèmes d'IA locaux et open source\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
-      "description": "Systèmes d'IA locaux et open source propose une synthèse claire en français sur le sujet \"Systèmes d'IA locaux et open source\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
+      "summary": "Systèmes d’IA locaux et open source propose une synthèse claire en français sur le sujet \"Systèmes d’IA locaux et open source\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
+      "description": "Systèmes d’IA locaux et open source propose une synthèse claire en français sur le sujet \"Systèmes d’IA locaux et open source\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
       "status": "active",
       "maturity": "research",
       "confidence": "published",
@@ -9067,8 +9067,8 @@ window.EA_PUBLIC_CATALOG = {
       "tags": [
         "IA locale",
         "IA open source",
-        "Poids ouverts",
-        "Quantification",
+        "poids ouverts",
+        "quantification",
         "llama.cpp"
       ],
       "discipline": [
@@ -9105,14 +9105,14 @@ window.EA_PUBLIC_CATALOG = {
       "tags": [
         "Metadata",
         "Cataloguing",
-        "Archives",
+        "archives",
         "Cultural Memory"
       ],
       "discipline": [
-        "Archives",
-        "Knowledge Systems",
-        "Research Methods",
-        "History of Technology"
+        "archives",
+        "systèmes de connaissance",
+        "méthodes de recherche",
+        "histoire des technologies"
       ],
       "route": "/fr/publications/metadata-cataloguing-and-cultural-memory/",
       "identifier": "/fr/id/publication/metadata-cataloguing-and-cultural-memory/",
@@ -9149,7 +9149,7 @@ window.EA_PUBLIC_CATALOG = {
       "discipline": [
         "architecture logicielle",
         "conception de systèmes",
-        "Programming",
+        "programmation",
         "Distributed Systems"
       ],
       "route": "/fr/publications/microservices-modular-monoliths-and-system-boundaries/",
@@ -9217,14 +9217,14 @@ window.EA_PUBLIC_CATALOG = {
       "tags": [
         "Motion Design",
         "Web Animations",
-        "Interface Design",
+        "conception d'interface",
         "accessibilité"
       ],
       "discipline": [
         "Motion Design",
         "design",
         "interaction humain-machine",
-        "Web Development"
+        "développement web"
       ],
       "route": "/fr/publications/motion-design-time-and-interface-semantics/",
       "identifier": "/fr/id/publication/motion-design-time-and-interface-semantics/",
@@ -9260,9 +9260,9 @@ window.EA_PUBLIC_CATALOG = {
       ],
       "discipline": [
         "intelligence artificielle",
-        "Machine Learning",
-        "Digital Art",
-        "Audio Engineering"
+        "apprentissage automatique",
+        "art numérique",
+        "ingénierie audio"
       ],
       "route": "/fr/publications/multimodal-ai-across-text-image-audio-and-video/",
       "identifier": "/fr/id/publication/multimodal-ai-across-text-image-audio-and-video/",
@@ -9335,7 +9335,7 @@ window.EA_PUBLIC_CATALOG = {
         "Knowledge Modeling"
       ],
       "discipline": [
-        "Knowledge Systems",
+        "systèmes de connaissance",
         "Information Architecture",
         "Semantic Web",
         "Philosophy"
@@ -9356,26 +9356,26 @@ window.EA_PUBLIC_CATALOG = {
       "type": "publication",
       "locale": "fr",
       "translationOf": "ea:publication:open-source-as-cultural-infrastructure",
-      "title": "L'open source comme infrastructure culturelle",
+      "title": "L’open source comme infrastructure culturelle",
       "subtitle": "Article technique",
-      "summary": "L'open source comme infrastructure culturelle propose une synthèse claire en français sur le sujet \"L'open source comme infrastructure culturelle\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
-      "description": "L'open source comme infrastructure culturelle propose une synthèse claire en français sur le sujet \"L'open source comme infrastructure culturelle\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
+      "summary": "L’open source comme infrastructure culturelle propose une synthèse claire en français sur le sujet \"L’open source comme infrastructure culturelle\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
+      "description": "L’open source comme infrastructure culturelle propose une synthèse claire en français sur le sujet \"L’open source comme infrastructure culturelle\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
       "status": "active",
       "maturity": "research",
       "confidence": "published",
       "visibility": "public",
       "publicationClass": "published",
       "tags": [
-        "Open Source",
+        "open source",
         "programmation créative",
-        "Infrastructure",
-        "Maintainers"
+        "infrastructure",
+        "mainteneurs"
       ],
       "discipline": [
-        "Open Source",
-        "Programming",
+        "open source",
+        "programmation",
         "programmation créative",
-        "Internet Culture"
+        "culture Internet"
       ],
       "route": "/fr/publications/open-source-as-cultural-infrastructure/",
       "identifier": "/fr/id/publication/open-source-as-cultural-infrastructure/",
@@ -9403,16 +9403,16 @@ window.EA_PUBLIC_CATALOG = {
       "visibility": "public",
       "publicationClass": "published",
       "tags": [
-        "Personal Knowledge Management",
-        "Digital Gardens",
-        "Backlinks",
-        "Research Methods"
+        "gestion personnelle des connaissances",
+        "jardins numériques",
+        "liens entrants",
+        "méthodes de recherche"
       ],
       "discipline": [
-        "Knowledge Systems",
-        "Research Methods",
-        "Internet Culture",
-        "Archives"
+        "systèmes de connaissance",
+        "méthodes de recherche",
+        "culture Internet",
+        "archives"
       ],
       "route": "/fr/publications/personal-knowledge-systems-and-digital-gardens/",
       "identifier": "/fr/id/publication/personal-knowledge-systems-and-digital-gardens/",
@@ -9447,9 +9447,9 @@ window.EA_PUBLIC_CATALOG = {
       ],
       "discipline": [
         "programmation créative",
-        "Digital Art",
-        "Visual Culture",
-        "Web Development"
+        "art numérique",
+        "culture visuelle",
+        "développement web"
       ],
       "route": "/fr/publications/procedural-graphics-shaders-and-visual-systems/",
       "identifier": "/fr/id/publication/procedural-graphics-shaders-and-visual-systems/",
@@ -9467,10 +9467,10 @@ window.EA_PUBLIC_CATALOG = {
       "type": "publication",
       "locale": "fr",
       "translationOf": "ea:publication:prompt-injection-and-trust-boundaries-in-ai-knowledge-systems",
-      "title": "Injection de prompt et frontieres de confiance dans les systèmes de connaissance IA",
+      "title": "Injection de prompt et frontières de confiance dans les systèmes de connaissance IA",
       "subtitle": "Article technique",
-      "summary": "Injection de prompt et frontieres de confiance dans les systèmes de connaissance IA propose une synthèse claire en français sur le sujet \"Injection de prompt et frontieres de confiance dans les systèmes de connaissance IA\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
-      "description": "Injection de prompt et frontieres de confiance dans les systèmes de connaissance IA propose une synthèse claire en français sur le sujet \"Injection de prompt et frontieres de confiance dans les systèmes de connaissance IA\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
+      "summary": "Injection de prompt et frontières de confiance dans les systèmes de connaissance IA propose une synthèse claire en français sur le sujet \"Injection de prompt et frontières de confiance dans les systèmes de connaissance IA\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
+      "description": "Injection de prompt et frontières de confiance dans les systèmes de connaissance IA propose une synthèse claire en français sur le sujet \"Injection de prompt et frontières de confiance dans les systèmes de connaissance IA\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
       "status": "active",
       "maturity": "research",
       "confidence": "published",
@@ -9486,7 +9486,7 @@ window.EA_PUBLIC_CATALOG = {
       "discipline": [
         "intelligence artificielle",
         "Security",
-        "Knowledge Systems",
+        "systèmes de connaissance",
         "architecture logicielle"
       ],
       "route": "/fr/publications/prompt-injection-and-trust-boundaries-in-ai-knowledge-systems/",
@@ -9505,10 +9505,10 @@ window.EA_PUBLIC_CATALOG = {
       "type": "publication",
       "locale": "fr",
       "translationOf": "ea:publication:redis-streams-for-orchestration",
-      "title": "Redis Streams pour l'orchestration",
+      "title": "Redis Streams pour l’orchestration",
       "subtitle": "Article technique",
-      "summary": "Redis Streams pour l'orchestration propose une synthèse claire en français sur le sujet \"Redis Streams pour l'orchestration\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
-      "description": "Redis Streams pour l'orchestration propose une synthèse claire en français sur le sujet \"Redis Streams pour l'orchestration\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
+      "summary": "Redis Streams pour l’orchestration propose une synthèse claire en français sur le sujet \"Redis Streams pour l’orchestration\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
+      "description": "Redis Streams pour l’orchestration propose une synthèse claire en français sur le sujet \"Redis Streams pour l’orchestration\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
       "status": "active",
       "maturity": "research",
       "confidence": "published",
@@ -9524,7 +9524,7 @@ window.EA_PUBLIC_CATALOG = {
       "discipline": [
         "architecture logicielle",
         "Distributed Systems",
-        "Programming",
+        "programmation",
         "conception de systèmes"
       ],
       "route": "/fr/publications/redis-streams-for-orchestration/",
@@ -9554,15 +9554,15 @@ window.EA_PUBLIC_CATALOG = {
       "publicationClass": "published",
       "tags": [
         "Responsible AI",
-        "AI Governance",
-        "Creative Technology",
-        "Cultural Infrastructure",
+        "gouvernance de l'IA",
+        "technologies créatives",
+        "infrastructure culturelle",
         "Provenance"
       ],
       "discipline": [
         "intelligence artificielle",
-        "Cultural Infrastructure",
-        "Knowledge Systems",
+        "infrastructure culturelle",
+        "systèmes de connaissance",
         "conception de systèmes"
       ],
       "route": "/fr/publications/responsible-ai-governance-for-creative-and-cultural-systems/",
@@ -9599,9 +9599,9 @@ window.EA_PUBLIC_CATALOG = {
       ],
       "discipline": [
         "intelligence artificielle",
-        "Knowledge Systems",
+        "systèmes de connaissance",
         "Information Architecture",
-        "Machine Learning"
+        "apprentissage automatique"
       ],
       "route": "/fr/publications/retrieval-augmented-generation-and-knowledge-systems/",
       "identifier": "/fr/id/publication/retrieval-augmented-generation-and-knowledge-systems/",
@@ -9629,17 +9629,17 @@ window.EA_PUBLIC_CATALOG = {
       "visibility": "public",
       "publicationClass": "published",
       "tags": [
-        "Moteur d'exécution",
-        "Système d'exploitation de domaine",
-        "Système d'exploitation métier",
+        "moteur d'exécution",
+        "système d'exploitation de domaine",
+        "système d'exploitation métier",
         "VASTE",
-        "Systèmes composables"
+        "systèmes composables"
       ],
       "discipline": [
         "conception de systèmes",
         "architecture logicielle",
         "programmation",
-        "Systèmes de connaissance"
+        "systèmes de connaissance"
       ],
       "route": "/fr/publications/runtime-engines-and-domain-operating-systems/",
       "identifier": "/fr/id/publication/runtime-engines-and-domain-operating-systems/",
@@ -9657,10 +9657,10 @@ window.EA_PUBLIC_CATALOG = {
       "type": "publication",
       "locale": "fr",
       "translationOf": "ea:publication:signal-archaeology-audio-memory-and-machine-listening",
-      "title": "Archéologie du signal, mémoire audio et ecoute machine",
+      "title": "Archéologie du signal, mémoire audio et écoute machine",
       "subtitle": "Article technique",
-      "summary": "Archéologie du signal, mémoire audio et ecoute machine propose une synthèse claire en français sur le sujet \"Archéologie du signal, mémoire audio et ecoute machine\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
-      "description": "Archéologie du signal, mémoire audio et ecoute machine propose une synthèse claire en français sur le sujet \"Archéologie du signal, mémoire audio et ecoute machine\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
+      "summary": "Archéologie du signal, mémoire audio et écoute machine propose une synthèse claire en français sur le sujet \"Archéologie du signal, mémoire audio et écoute machine\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
+      "description": "Archéologie du signal, mémoire audio et écoute machine propose une synthèse claire en français sur le sujet \"Archéologie du signal, mémoire audio et écoute machine\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
       "status": "active",
       "maturity": "research",
       "confidence": "published",
@@ -9674,11 +9674,11 @@ window.EA_PUBLIC_CATALOG = {
         "Palimpsests"
       ],
       "discipline": [
-        "Audio Engineering",
+        "ingénierie audio",
         "Sound Design",
-        "Digital Art",
-        "Archives",
-        "Research Methods"
+        "art numérique",
+        "archives",
+        "méthodes de recherche"
       ],
       "route": "/fr/publications/signal-archaeology-audio-memory-and-machine-listening/",
       "identifier": "/fr/id/publication/signal-archaeology-audio-memory-and-machine-listening/",
@@ -9696,10 +9696,10 @@ window.EA_PUBLIC_CATALOG = {
       "type": "publication",
       "locale": "fr",
       "translationOf": "ea:publication:systems-thinking-for-creative-practice",
-      "title": "Pensée systemique pour la pratique créative",
+      "title": "Pensée systémique pour la pratique créative",
       "subtitle": "Recherche Article",
-      "summary": "Pensée systemique pour la pratique créative propose une synthèse claire en français sur le sujet \"Pensée systemique pour la pratique créative\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
-      "description": "Pensée systemique pour la pratique créative propose une synthèse claire en français sur le sujet \"Pensée systemique pour la pratique créative\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
+      "summary": "Pensée systémique pour la pratique créative propose une synthèse claire en français sur le sujet \"Pensée systémique pour la pratique créative\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
+      "description": "Pensée systémique pour la pratique créative propose une synthèse claire en français sur le sujet \"Pensée systémique pour la pratique créative\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
       "status": "active",
       "maturity": "research",
       "confidence": "published",
@@ -9746,13 +9746,13 @@ window.EA_PUBLIC_CATALOG = {
       "tags": [
         "Typography",
         "Reading Systems",
-        "Interface Design",
+        "conception d'interface",
         "accessibilité"
       ],
       "discipline": [
         "Typography",
         "design",
-        "Web Development",
+        "développement web",
         "interaction humain-machine"
       ],
       "route": "/fr/publications/typography-reading-systems-and-digital-interfaces/",
@@ -9771,10 +9771,10 @@ window.EA_PUBLIC_CATALOG = {
       "type": "publication",
       "locale": "fr",
       "translationOf": "ea:publication:verifiable-credentials-for-cultural-archives-and-creator-identity",
-      "title": "Identifiants vérifiables pour les archives culturelles et l'identité des créateurs",
+      "title": "Identifiants vérifiables pour les archives culturelles et l’identité des créateurs",
       "subtitle": "Article technique",
-      "summary": "Identifiants vérifiables pour les archives culturelles et l'identité des créateurs propose une synthèse claire en français sur le sujet \"Identifiants vérifiables pour les archives culturelles et l'identité des créateurs\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
-      "description": "Identifiants vérifiables pour les archives culturelles et l'identité des créateurs propose une synthèse claire en français sur le sujet \"Identifiants vérifiables pour les archives culturelles et l'identité des créateurs\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
+      "summary": "Identifiants vérifiables pour les archives culturelles et l’identité des créateurs propose une synthèse claire en français sur le sujet \"Identifiants vérifiables pour les archives culturelles et l’identité des créateurs\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
+      "description": "Identifiants vérifiables pour les archives culturelles et l’identité des créateurs propose une synthèse claire en français sur le sujet \"Identifiants vérifiables pour les archives culturelles et l’identité des créateurs\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
       "status": "active",
       "maturity": "research",
       "confidence": "published",
@@ -9788,8 +9788,8 @@ window.EA_PUBLIC_CATALOG = {
         "Cultural Archives"
       ],
       "discipline": [
-        "Cultural Infrastructure",
-        "Knowledge Systems",
+        "infrastructure culturelle",
+        "systèmes de connaissance",
         "Digital Préservation",
         "Web Standards"
       ],
@@ -9825,8 +9825,8 @@ window.EA_PUBLIC_CATALOG = {
         "ORETH"
       ],
       "discipline": [
-        "Audio Engineering",
-        "Web Development",
+        "ingénierie audio",
+        "développement web",
         "programmation créative",
         "Sound Design"
       ],
@@ -9858,8 +9858,8 @@ window.EA_PUBLIC_CATALOG = {
       "tags": [
         "WebNN",
         "IA dans le navigateur",
-        "Inférence locale",
-        "Apprentissage automatique Web",
+        "inférence locale",
+        "apprentissage automatique Web",
         "interaction humain-machine"
       ],
       "discipline": [
@@ -9901,7 +9901,7 @@ window.EA_PUBLIC_CATALOG = {
         "VASTE"
       ],
       "discipline": [
-        "Knowledge Systems",
+        "systèmes de connaissance",
         "conception de systèmes",
         "Information Architecture",
         "architecture logicielle"
@@ -9973,9 +9973,9 @@ window.EA_PUBLIC_CATALOG = {
         "Social Web"
       ],
       "discipline": [
-        "Internet Culture",
-        "Network Culture",
-        "Web Development"
+        "culture Internet",
+        "culture des réseaux",
+        "développement web"
       ],
       "route": "/fr/knowledge/technologies/activitypub/",
       "identifier": "/fr/id/technology/activitypub/",
@@ -10009,7 +10009,7 @@ window.EA_PUBLIC_CATALOG = {
       ],
       "discipline": [
         "Digital Préservation",
-        "Knowledge Systems",
+        "systèmes de connaissance",
         "intelligence artificielle"
       ],
       "route": "/fr/knowledge/technologies/c2pa/",
@@ -10044,7 +10044,7 @@ window.EA_PUBLIC_CATALOG = {
       "discipline": [
         "architecture logicielle",
         "Distributed Systems",
-        "Programming"
+        "programmation"
       ],
       "route": "/fr/knowledge/technologies/cloudevents/",
       "identifier": "/fr/id/technology/cloudevents/",
@@ -10077,7 +10077,7 @@ window.EA_PUBLIC_CATALOG = {
       ],
       "discipline": [
         "Typography",
-        "Web Development",
+        "développement web",
         "design"
       ],
       "route": "/fr/knowledge/technologies/css-fonts/",
@@ -10112,8 +10112,8 @@ window.EA_PUBLIC_CATALOG = {
       ],
       "discipline": [
         "Digital Préservation",
-        "Cultural Infrastructure",
-        "Knowledge Systems"
+        "infrastructure culturelle",
+        "systèmes de connaissance"
       ],
       "route": "/fr/knowledge/technologies/iiif/",
       "identifier": "/fr/id/technology/iiif/",
@@ -10147,8 +10147,8 @@ window.EA_PUBLIC_CATALOG = {
         "SEO"
       ],
       "discipline": [
-        "Web Development",
-        "Knowledge Systems",
+        "développement web",
+        "systèmes de connaissance",
         "SEO"
       ],
       "route": "/fr/knowledge/technologies/json-ld/",
@@ -10177,14 +10177,14 @@ window.EA_PUBLIC_CATALOG = {
       "publicationClass": "canonical",
       "tags": [
         "llama.cpp",
-        "Local AI",
-        "Inference",
-        "Quantization"
+        "IA locale",
+        "inférence",
+        "quantification"
       ],
       "discipline": [
         "intelligence artificielle",
-        "Programming",
-        "Open Source"
+        "programmation",
+        "open source"
       ],
       "route": "/fr/knowledge/technologies/llama-cpp/",
       "identifier": "/fr/id/technology/llama-cpp/",
@@ -10286,7 +10286,7 @@ window.EA_PUBLIC_CATALOG = {
         "Semantic Web"
       ],
       "discipline": [
-        "Knowledge Systems",
+        "systèmes de connaissance",
         "Semantic Web"
       ],
       "route": "/fr/knowledge/technologies/owl/",
@@ -10321,8 +10321,8 @@ window.EA_PUBLIC_CATALOG = {
         "Graph"
       ],
       "discipline": [
-        "Web Development",
-        "Knowledge Systems"
+        "développement web",
+        "systèmes de connaissance"
       ],
       "route": "/fr/knowledge/technologies/rdf/",
       "identifier": "/fr/id/technology/rdf/",
@@ -10356,7 +10356,7 @@ window.EA_PUBLIC_CATALOG = {
       ],
       "discipline": [
         "architecture logicielle",
-        "Programming",
+        "programmation",
         "Distributed Systems"
       ],
       "route": "/fr/knowledge/technologies/redis-streams/",
@@ -10389,7 +10389,7 @@ window.EA_PUBLIC_CATALOG = {
         "Controlled Vocabulary"
       ],
       "discipline": [
-        "Knowledge Systems",
+        "systèmes de connaissance",
         "Information Architecture",
         "Semantic Web"
       ],
@@ -10424,7 +10424,7 @@ window.EA_PUBLIC_CATALOG = {
       ],
       "discipline": [
         "intelligence artificielle",
-        "Machine Learning"
+        "apprentissage automatique"
       ],
       "route": "/fr/knowledge/technologies/transformer-architecture/",
       "identifier": "/fr/id/technology/transformer-architecture/",
@@ -10457,7 +10457,7 @@ window.EA_PUBLIC_CATALOG = {
       ],
       "discipline": [
         "Motion Design",
-        "Web Development",
+        "développement web",
         "interaction humain-machine"
       ],
       "route": "/fr/knowledge/technologies/web-animations/",
@@ -10490,8 +10490,8 @@ window.EA_PUBLIC_CATALOG = {
         "Audio Graph"
       ],
       "discipline": [
-        "Audio Engineering",
-        "Web Development",
+        "ingénierie audio",
+        "développement web",
         "programmation créative"
       ],
       "route": "/fr/knowledge/technologies/web-audio-api/",
@@ -10525,8 +10525,8 @@ window.EA_PUBLIC_CATALOG = {
       ],
       "discipline": [
         "programmation créative",
-        "Web Development",
-        "Digital Art"
+        "développement web",
+        "art numérique"
       ],
       "route": "/fr/knowledge/technologies/webgl/",
       "identifier": "/fr/id/technology/webgl/",
@@ -10555,8 +10555,8 @@ window.EA_PUBLIC_CATALOG = {
       "tags": [
         "WebNN",
         "IA dans le navigateur",
-        "Inférence locale",
-        "Apprentissage automatique Web"
+        "inférence locale",
+        "apprentissage automatique Web"
       ],
       "discipline": [
         "intelligence artificielle",

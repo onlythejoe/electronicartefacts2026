@@ -4417,8 +4417,8 @@
     },
     "title": "Fondations du hub de connaissance",
     "subtitle": "Collection éditoriale",
-    "abstract": "Fondations du hub de connaissance organise des fiches reliées autour de le sujet \"Fondations du hub de connaissance\" dans le graphe public d'Electronic Artefacts, afin de donner une progression lisible aux archives de connaissance d'Electronic Artefacts.",
-    "description": "Fondations du hub de connaissance organise des fiches reliées autour de le sujet \"Fondations du hub de connaissance\" dans le graphe public d'Electronic Artefacts, afin de donner une progression lisible aux archives de connaissance d'Electronic Artefacts.",
+    "abstract": "Fondations du hub de connaissance rassemble des fiches liées par un même axe éditorial, afin de donner une progression lisible aux archives de connaissance d'Electronic Artefacts.",
+    "description": "Fondations du hub de connaissance rassemble des fiches liées par un même axe éditorial, afin de donner une progression lisible aux archives de connaissance d'Electronic Artefacts.",
     "locale": "fr",
     "visibility": "public",
     "publicationClass": "published",
@@ -4438,18 +4438,18 @@
     ],
     "publisher": "ea:organization:electronic-artefacts",
     "tags": [
-      "Hub de connaissance",
-      "Collection éditoriale",
-      "Fondations",
-      "Bibliothèque de recherche",
-      "Publication sémantique"
+      "hub de connaissance",
+      "collection éditoriale",
+      "fondations",
+      "bibliothèque de recherche",
+      "Semantic Publishing"
     ],
     "disciplines": [
-      "Systèmes de connaissance",
+      "systèmes de connaissance",
       "archives",
       "programmation créative",
-      "Ingénierie audio",
-      "Art numérique"
+      "ingénierie audio",
+      "art numérique"
     ],
     "thesis": "Fondations du hub de connaissance propose une lecture organisee de 20 fiches reliées par un même axe editorial.",
     "curator": [
@@ -4520,10 +4520,10 @@
       }
     ],
     "selectionNote": "La sélection privilégie des contenus stables, reliables et utiles pour parcourir le hub de connaissance en français.",
-    "bodyHtml": "<h2 id=\"intention\">Intention</h2>\n<p>Fondations du hub de connaissance rassemble des fiches qui partagent un même axe de lecture autour de le sujet “Fondations du hub de connaissance” dans le graphe public d’Electronic Artefacts.</p>\n<h2 id=\"selection\">Selection</h2>\n<p>La collection organise les contenus par proximité éditoriale, par utilité de navigation et par potentiel de liens internes. Elle permet de parcourir le hub de connaissance sans perdre la cohérence du sujet.</p>\n<h2 id=\"usage\">Usage</h2>\n<p>Cette entrée sert de repère pour explorer plusieurs publications ou notions depuis une même page française.</p>\n<h2 id=\"references\">Références</h2>\n<p>Les sources associées sont conservées dans la fiche canonique du graphe.</p>\n",
+    "bodyHtml": "<h2 id=\"intention\">Intention</h2>\n<p>Fondations du hub de connaissance rassemble des fiches liées par un même axe éditorial.</p>\n<h2 id=\"selection\">Sélection</h2>\n<p>La collection organise les contenus par proximité éditoriale, par utilité de navigation et par potentiel de liens internes. Elle permet de parcourir le hub de connaissance sans perdre la cohérence du sujet.</p>\n<h2 id=\"usage\">Usage</h2>\n<p>Cette entrée sert de repère pour explorer plusieurs publications ou notions depuis une même page française.</p>\n<h2 id=\"references\">Références</h2>\n<p>Les sources associées sont conservées dans la fiche canonique du graphe.</p>\n",
     "headings": [
       "Intention",
-      "Selection",
+      "Sélection",
       "Usage",
       "Références"
     ],
@@ -4535,7 +4535,7 @@
       },
       {
         "level": 2,
-        "title": "Selection",
+        "title": "Sélection",
         "id": "selection"
       },
       {
@@ -4557,10 +4557,10 @@
     "slug": {
       "canonical": "knowledge-hub-fourth-wave"
     },
-    "title": "Hub de connaissance, quatrieme vague",
+    "title": "Hub de connaissance, quatrième vague",
     "subtitle": "Protocoles d'IA, provenance, gouvernance et interfaces culturelles",
-    "abstract": "Hub de connaissance, quatrieme vague organise des fiches reliées autour de le sujet \"Hub de connaissance, quatrieme vague\" dans le graphe public d'Electronic Artefacts, afin de donner une progression lisible aux archives de connaissance d'Electronic Artefacts.",
-    "description": "Hub de connaissance, quatrieme vague organise des fiches reliées autour de le sujet \"Hub de connaissance, quatrieme vague\" dans le graphe public d'Electronic Artefacts, afin de donner une progression lisible aux archives de connaissance d'Electronic Artefacts.",
+    "abstract": "Hub de connaissance, quatrième vague rassemble des fiches liées par un même axe éditorial, afin de donner une progression lisible aux archives de connaissance d'Electronic Artefacts.",
+    "description": "Hub de connaissance, quatrième vague rassemble des fiches liées par un même axe éditorial, afin de donner une progression lisible aux archives de connaissance d'Electronic Artefacts.",
     "locale": "fr",
     "visibility": "public",
     "publicationClass": "published",
@@ -4580,21 +4580,21 @@
     ],
     "publisher": "ea:organization:electronic-artefacts",
     "tags": [
-      "Hub de connaissance",
-      "Quatrième vague",
-      "Protocoles d'IA",
-      "Gouvernance de l'IA",
+      "hub de connaissance",
+      "quatrième vague",
+      "protocoles d'IA",
+      "gouvernance de l'IA",
       "Provenance",
-      "Infrastructure culturelle"
+      "infrastructure culturelle"
     ],
     "disciplines": [
       "intelligence artificielle",
-      "Systèmes de connaissance",
-      "préservation numérique",
+      "systèmes de connaissance",
+      "Digital Préservation",
       "architecture logicielle",
-      "Infrastructure culturelle"
+      "infrastructure culturelle"
     ],
-    "thesis": "Hub de connaissance, quatrieme vague propose une lecture organisee de 19 fiches reliées par un même axe editorial.",
+    "thesis": "Hub de connaissance, quatrième vague propose une lecture organisee de 19 fiches reliées par un même axe editorial.",
     "curator": [
       {
         "id": "ea:organization:electronic-artefacts"
@@ -4660,10 +4660,10 @@
       }
     ],
     "selectionNote": "La sélection privilégie des contenus stables, reliables et utiles pour parcourir le hub de connaissance en français.",
-    "bodyHtml": "<h2 id=\"intention\">Intention</h2>\n<p>Hub de connaissance, quatrieme vague rassemble des fiches qui partagent un même axe de lecture autour de le sujet “Hub de connaissance, quatrieme vague” dans le graphe public d’Electronic Artefacts.</p>\n<h2 id=\"selection\">Selection</h2>\n<p>La collection organise les contenus par proximité éditoriale, par utilité de navigation et par potentiel de liens internes. Elle permet de parcourir le hub de connaissance sans perdre la cohérence du sujet.</p>\n<h2 id=\"usage\">Usage</h2>\n<p>Cette entrée sert de repère pour explorer plusieurs publications ou notions depuis une même page française.</p>\n<h2 id=\"references\">Références</h2>\n<p>Les sources associées sont conservées dans la fiche canonique du graphe.</p>\n",
+    "bodyHtml": "<h2 id=\"intention\">Intention</h2>\n<p>Hub de connaissance, quatrième vague rassemble des fiches liées par un même axe éditorial.</p>\n<h2 id=\"selection\">Sélection</h2>\n<p>La collection organise les contenus par proximité éditoriale, par utilité de navigation et par potentiel de liens internes. Elle permet de parcourir le hub de connaissance sans perdre la cohérence du sujet.</p>\n<h2 id=\"usage\">Usage</h2>\n<p>Cette entrée sert de repère pour explorer plusieurs publications ou notions depuis une même page française.</p>\n<h2 id=\"references\">Références</h2>\n<p>Les sources associées sont conservées dans la fiche canonique du graphe.</p>\n",
     "headings": [
       "Intention",
-      "Selection",
+      "Sélection",
       "Usage",
       "Références"
     ],
@@ -4675,7 +4675,7 @@
       },
       {
         "level": 2,
-        "title": "Selection",
+        "title": "Sélection",
         "id": "selection"
       },
       {
@@ -4697,10 +4697,10 @@
     "slug": {
       "canonical": "knowledge-hub-second-wave"
     },
-    "title": "Hub de connaissance, deuxieme vague",
+    "title": "Hub de connaissance, deuxième vague",
     "subtitle": "Collection éditoriale",
-    "abstract": "Hub de connaissance, deuxieme vague organise des fiches reliées autour de le sujet \"Hub de connaissance, deuxieme vague\" dans le graphe public d'Electronic Artefacts, afin de donner une progression lisible aux archives de connaissance d'Electronic Artefacts.",
-    "description": "Hub de connaissance, deuxieme vague organise des fiches reliées autour de le sujet \"Hub de connaissance, deuxieme vague\" dans le graphe public d'Electronic Artefacts, afin de donner une progression lisible aux archives de connaissance d'Electronic Artefacts.",
+    "abstract": "Hub de connaissance, deuxième vague rassemble des fiches liées par un même axe éditorial, afin de donner une progression lisible aux archives de connaissance d'Electronic Artefacts.",
+    "description": "Hub de connaissance, deuxième vague rassemble des fiches liées par un même axe éditorial, afin de donner une progression lisible aux archives de connaissance d'Electronic Artefacts.",
     "locale": "fr",
     "visibility": "public",
     "publicationClass": "published",
@@ -4720,19 +4720,19 @@
     ],
     "publisher": "ea:organization:electronic-artefacts",
     "tags": [
-      "Hub de connaissance",
-      "Deuxième vague",
-      "Collection éditoriale",
-      "Bibliothèque de recherche"
+      "hub de connaissance",
+      "deuxième vague",
+      "collection éditoriale",
+      "bibliothèque de recherche"
     ],
     "disciplines": [
-      "Systèmes de connaissance",
+      "systèmes de connaissance",
       "programmation créative",
-      "Développement web",
+      "développement web",
       "design",
       "intelligence artificielle"
     ],
-    "thesis": "Hub de connaissance, deuxieme vague propose une lecture organisee de 30 fiches reliées par un même axe editorial.",
+    "thesis": "Hub de connaissance, deuxième vague propose une lecture organisee de 30 fiches reliées par un même axe editorial.",
     "curator": [
       {
         "id": "ea:organization:electronic-artefacts"
@@ -4831,10 +4831,10 @@
       }
     ],
     "selectionNote": "La sélection privilégie des contenus stables, reliables et utiles pour parcourir le hub de connaissance en français.",
-    "bodyHtml": "<h2 id=\"intention\">Intention</h2>\n<p>Hub de connaissance, deuxieme vague rassemble des fiches qui partagent un même axe de lecture autour de le sujet “Hub de connaissance, deuxieme vague” dans le graphe public d’Electronic Artefacts.</p>\n<h2 id=\"selection\">Selection</h2>\n<p>La collection organise les contenus par proximité éditoriale, par utilité de navigation et par potentiel de liens internes. Elle permet de parcourir le hub de connaissance sans perdre la cohérence du sujet.</p>\n<h2 id=\"usage\">Usage</h2>\n<p>Cette entrée sert de repère pour explorer plusieurs publications ou notions depuis une même page française.</p>\n<h2 id=\"references\">Références</h2>\n<p>Les sources associées sont conservées dans la fiche canonique du graphe.</p>\n",
+    "bodyHtml": "<h2 id=\"intention\">Intention</h2>\n<p>Hub de connaissance, deuxième vague rassemble des fiches liées par un même axe éditorial.</p>\n<h2 id=\"selection\">Sélection</h2>\n<p>La collection organise les contenus par proximité éditoriale, par utilité de navigation et par potentiel de liens internes. Elle permet de parcourir le hub de connaissance sans perdre la cohérence du sujet.</p>\n<h2 id=\"usage\">Usage</h2>\n<p>Cette entrée sert de repère pour explorer plusieurs publications ou notions depuis une même page française.</p>\n<h2 id=\"references\">Références</h2>\n<p>Les sources associées sont conservées dans la fiche canonique du graphe.</p>\n",
     "headings": [
       "Intention",
-      "Selection",
+      "Sélection",
       "Usage",
       "Références"
     ],
@@ -4846,7 +4846,7 @@
       },
       {
         "level": 2,
-        "title": "Selection",
+        "title": "Sélection",
         "id": "selection"
       },
       {
@@ -4868,10 +4868,10 @@
     "slug": {
       "canonical": "knowledge-hub-third-wave"
     },
-    "title": "Hub de connaissance, troisieme vague",
+    "title": "Hub de connaissance, troisième vague",
     "subtitle": "IA, systèmes et calcul sur graphe",
-    "abstract": "Hub de connaissance, troisieme vague organise des fiches reliées autour de le sujet \"Hub de connaissance, troisieme vague\" dans le graphe public d'Electronic Artefacts, afin de donner une progression lisible aux archives de connaissance d'Electronic Artefacts.",
-    "description": "Hub de connaissance, troisieme vague organise des fiches reliées autour de le sujet \"Hub de connaissance, troisieme vague\" dans le graphe public d'Electronic Artefacts, afin de donner une progression lisible aux archives de connaissance d'Electronic Artefacts.",
+    "abstract": "Hub de connaissance, troisième vague rassemble des fiches liées par un même axe éditorial, afin de donner une progression lisible aux archives de connaissance d'Electronic Artefacts.",
+    "description": "Hub de connaissance, troisième vague rassemble des fiches liées par un même axe éditorial, afin de donner une progression lisible aux archives de connaissance d'Electronic Artefacts.",
     "locale": "fr",
     "visibility": "public",
     "publicationClass": "published",
@@ -4891,20 +4891,20 @@
     ],
     "publisher": "ea:organization:electronic-artefacts",
     "tags": [
-      "Hub de connaissance",
-      "Troisième vague",
+      "hub de connaissance",
+      "troisième vague",
       "intelligence artificielle",
-      "Architecture des systèmes",
-      "Calcul sur graphe"
+      "architecture des systèmes",
+      "calcul sur graphe"
     ],
     "disciplines": [
       "intelligence artificielle",
       "conception de systèmes",
-      "Systèmes de connaissance",
+      "systèmes de connaissance",
       "architecture logicielle",
-      "Technologies créatives"
+      "technologies créatives"
     ],
-    "thesis": "Hub de connaissance, troisieme vague propose une lecture organisee de 30 fiches reliées par un même axe editorial.",
+    "thesis": "Hub de connaissance, troisième vague propose une lecture organisee de 30 fiches reliées par un même axe editorial.",
     "curator": [
       {
         "id": "ea:organization:electronic-artefacts"
@@ -5003,10 +5003,10 @@
       }
     ],
     "selectionNote": "La sélection privilégie des contenus stables, reliables et utiles pour parcourir le hub de connaissance en français.",
-    "bodyHtml": "<h2 id=\"intention\">Intention</h2>\n<p>Hub de connaissance, troisieme vague rassemble des fiches qui partagent un même axe de lecture autour de le sujet “Hub de connaissance, troisieme vague” dans le graphe public d’Electronic Artefacts.</p>\n<h2 id=\"selection\">Selection</h2>\n<p>La collection organise les contenus par proximité éditoriale, par utilité de navigation et par potentiel de liens internes. Elle permet de parcourir le hub de connaissance sans perdre la cohérence du sujet.</p>\n<h2 id=\"usage\">Usage</h2>\n<p>Cette entrée sert de repère pour explorer plusieurs publications ou notions depuis une même page française.</p>\n<h2 id=\"references\">Références</h2>\n<p>Les sources associées sont conservées dans la fiche canonique du graphe.</p>\n",
+    "bodyHtml": "<h2 id=\"intention\">Intention</h2>\n<p>Hub de connaissance, troisième vague rassemble des fiches liées par un même axe éditorial.</p>\n<h2 id=\"selection\">Sélection</h2>\n<p>La collection organise les contenus par proximité éditoriale, par utilité de navigation et par potentiel de liens internes. Elle permet de parcourir le hub de connaissance sans perdre la cohérence du sujet.</p>\n<h2 id=\"usage\">Usage</h2>\n<p>Cette entrée sert de repère pour explorer plusieurs publications ou notions depuis une même page française.</p>\n<h2 id=\"references\">Références</h2>\n<p>Les sources associées sont conservées dans la fiche canonique du graphe.</p>\n",
     "headings": [
       "Intention",
-      "Selection",
+      "Sélection",
       "Usage",
       "Références"
     ],
@@ -5018,7 +5018,7 @@
       },
       {
         "level": 2,
-        "title": "Selection",
+        "title": "Sélection",
         "id": "selection"
       },
       {
@@ -5260,7 +5260,7 @@
     "disciplines": [
       "interaction humain-machine",
       "intelligence artificielle",
-      "Knowledge Systems",
+      "systèmes de connaissance",
       "conception de systèmes"
     ],
     "sources": [
@@ -5450,8 +5450,8 @@
     ],
     "disciplines": [
       "conception de systèmes",
-      "Programming",
-      "Knowledge Systems",
+      "programmation",
+      "systèmes de connaissance",
       "architecture logicielle"
     ],
     "scope": [
@@ -5529,15 +5529,15 @@
     "publisher": "ea:organization:electronic-artefacts",
     "tags": [
       "programmation créative",
-      "Digital Art",
-      "Programming",
+      "art numérique",
+      "programmation",
       "Generative Art",
       "Interaction"
     ],
     "disciplines": [
       "programmation créative",
-      "Programming",
-      "Digital Art",
+      "programmation",
+      "art numérique",
       "Motion Design",
       "Sound Design"
     ],
@@ -5625,7 +5625,7 @@
       "Cybernetics",
       "Complexity",
       "conception de systèmes",
-      "Digital Art"
+      "art numérique"
     ],
     "sources": [
       {
@@ -5718,10 +5718,10 @@
       "Memory"
     ],
     "disciplines": [
-      "Archives",
-      "History of Technology",
-      "Knowledge Systems",
-      "Digital Art"
+      "archives",
+      "histoire des technologies",
+      "systèmes de connaissance",
+      "art numérique"
     ],
     "sources": [
       {
@@ -5813,17 +5813,17 @@
     ],
     "publisher": "ea:organization:electronic-artefacts",
     "tags": [
-      "Système d'exploitation de domaine",
-      "Système d'exploitation métier",
-      "Moteur d'exécution",
-      "Architecture de plateforme",
-      "Composabilité"
+      "système d'exploitation de domaine",
+      "système d'exploitation métier",
+      "moteur d'exécution",
+      "Platform Architecture",
+      "Composability"
     ],
     "disciplines": [
       "conception de systèmes",
       "architecture logicielle",
       "programmation",
-      "Systèmes de connaissance"
+      "systèmes de connaissance"
     ],
     "scope": [
       "définition du sujet",
@@ -5906,9 +5906,9 @@
       "graphe de connaissances"
     ],
     "disciplines": [
-      "Knowledge Systems",
-      "Web Development",
-      "Archives"
+      "systèmes de connaissance",
+      "développement web",
+      "archives"
     ],
     "sources": [
       {
@@ -6009,7 +6009,7 @@
     "disciplines": [
       "architecture logicielle",
       "conception de systèmes",
-      "Programming",
+      "programmation",
       "Distributed Systems"
     ],
     "sources": [
@@ -6095,15 +6095,15 @@
     "publisher": "ea:organization:electronic-artefacts",
     "tags": [
       "Generative AI",
-      "Machine Learning",
+      "apprentissage automatique",
       "Provenance",
       "Creative Workflows"
     ],
     "disciplines": [
       "intelligence artificielle",
-      "Machine Learning",
+      "apprentissage automatique",
       "programmation créative",
-      "Digital Art"
+      "art numérique"
     ],
     "sources": [
       {
@@ -6195,7 +6195,7 @@
       "Simulation"
     ],
     "disciplines": [
-      "Digital Art",
+      "art numérique",
       "programmation créative",
       "design",
       "Music Production",
@@ -6282,7 +6282,7 @@
       "graphe de connaissances"
     ],
     "disciplines": [
-      "Knowledge Systems",
+      "systèmes de connaissance",
       "conception de systèmes",
       "Information Architecture",
       "architecture logicielle"
@@ -6368,7 +6368,7 @@
       "Exécution"
     ],
     "disciplines": [
-      "Software architecture",
+      "architecture logicielle",
       "Knowledge systems"
     ],
     "scope": [
@@ -6446,14 +6446,14 @@
     "publisher": "ea:organization:electronic-artefacts",
     "tags": [
       "interaction humain-machine",
-      "Interface Design",
+      "conception d'interface",
       "accessibilité",
       "outils créatifs"
     ],
     "disciplines": [
       "interaction humain-machine",
       "design",
-      "Web Development",
+      "développement web",
       "intelligence artificielle"
     ],
     "sources": [
@@ -6540,14 +6540,14 @@
     "tags": [
       "Hypertext",
       "Web",
-      "Knowledge Systems",
+      "systèmes de connaissance",
       "Digital Archives"
     ],
     "disciplines": [
-      "Knowledge Systems",
-      "Internet Culture",
-      "Web Development",
-      "History of Technology"
+      "systèmes de connaissance",
+      "culture Internet",
+      "développement web",
+      "histoire des technologies"
     ],
     "sources": [
       {
@@ -6641,16 +6641,16 @@
     ],
     "publisher": "ea:organization:electronic-artefacts",
     "tags": [
-      "Internet Culture",
-      "Network Culture",
-      "Memes",
-      "Archives"
+      "culture Internet",
+      "culture des réseaux",
+      "mèmes",
+      "archives"
     ],
     "disciplines": [
-      "Internet Culture",
-      "Network Culture",
-      "Archives",
-      "History of Technology"
+      "culture Internet",
+      "culture des réseaux",
+      "archives",
+      "histoire des technologies"
     ],
     "sources": [
       {
@@ -6742,9 +6742,9 @@
       "Search"
     ],
     "disciplines": [
-      "Knowledge Systems",
+      "systèmes de connaissance",
       "Information Architecture",
-      "Web Development",
+      "développement web",
       "Research"
     ],
     "sources": [
@@ -6843,14 +6843,14 @@
       "LLM",
       "Transformer",
       "Tokens",
-      "Inférence",
-      "Modèles de langage"
+      "inférence",
+      "modèles de langage"
     ],
     "disciplines": [
       "intelligence artificielle",
       "apprentissage automatique",
       "programmation",
-      "Systèmes de connaissance"
+      "systèmes de connaissance"
     ],
     "sources": [
       {
@@ -6943,8 +6943,8 @@
       "URI"
     ],
     "disciplines": [
-      "Knowledge Systems",
-      "Web Development",
+      "systèmes de connaissance",
+      "développement web",
       "SEO",
       "Information Architecture"
     ],
@@ -7040,14 +7040,14 @@
     "publisher": "ea:organization:electronic-artefacts",
     "tags": [
       "Metadata",
-      "Archives",
+      "archives",
       "Cataloguing",
       "Préservation"
     ],
     "disciplines": [
-      "Archives",
-      "Knowledge Systems",
-      "Research Methods",
+      "archives",
+      "systèmes de connaissance",
+      "méthodes de recherche",
       "Digital Préservation"
     ],
     "sources": [
@@ -7141,7 +7141,7 @@
     "disciplines": [
       "architecture logicielle",
       "conception de systèmes",
-      "Programming"
+      "programmation"
     ],
     "sources": [
       {
@@ -7230,13 +7230,13 @@
       "Motion Design",
       "Animation",
       "Interface",
-      "Visual Culture"
+      "culture visuelle"
     ],
     "disciplines": [
       "Motion Design",
       "design",
       "interaction humain-machine",
-      "Web Development"
+      "développement web"
     ],
     "sources": [
       {
@@ -7329,9 +7329,9 @@
     ],
     "disciplines": [
       "intelligence artificielle",
-      "Machine Learning",
-      "Digital Art",
-      "Audio Engineering"
+      "apprentissage automatique",
+      "art numérique",
+      "ingénierie audio"
     ],
     "sources": [
       {
@@ -7424,7 +7424,7 @@
       "Controlled Vocabulary"
     ],
     "disciplines": [
-      "Knowledge Systems",
+      "systèmes de connaissance",
       "Information Architecture",
       "Philosophy",
       "Semantic Web"
@@ -7496,10 +7496,10 @@
     "slug": {
       "canonical": "open-source"
     },
-    "title": "Open source",
-    "definition": "Open source désigne les pratiques de publication, maintenance et cooperation fondees sur du code et des ressources ouverts.",
-    "abstract": "Open source définit un repère conceptuel en français pour comprendre les pratiques de publication, maintenance et cooperation fondees sur du code et des ressources ouverts et ses liens avec les projets, technologies et publications du graphe.",
-    "description": "Open source définit un repère conceptuel en français pour comprendre les pratiques de publication, maintenance et cooperation fondees sur du code et des ressources ouverts et ses liens avec les projets, technologies et publications du graphe.",
+    "title": "open source",
+    "definition": "open source désigne les pratiques de publication, maintenance et cooperation fondees sur du code et des ressources ouverts.",
+    "abstract": "open source définit un repère conceptuel en français pour comprendre les pratiques de publication, maintenance et cooperation fondees sur du code et des ressources ouverts et ses liens avec les projets, technologies et publications du graphe.",
+    "description": "open source définit un repère conceptuel en français pour comprendre les pratiques de publication, maintenance et cooperation fondees sur du code et des ressources ouverts et ses liens avec les projets, technologies et publications du graphe.",
     "locale": "fr",
     "visibility": "public",
     "publicationClass": "canonical",
@@ -7520,15 +7520,15 @@
     "publisher": "ea:organization:electronic-artefacts",
     "tags": [
       "open source",
-      "Logiciel",
-      "Communs",
-      "Infrastructure"
+      "logiciel",
+      "communs",
+      "infrastructure"
     ],
     "disciplines": [
       "open source",
       "programmation",
       "programmation créative",
-      "Activités créatives"
+      "activité créative"
     ],
     "sources": [
       {
@@ -7549,10 +7549,10 @@
       "les exemples déconnectés des sources, relations ou contraintes du graphe"
     ],
     "claims": [
-      "Open source devient utile lorsque sa définition reste reliée à des sources, des pratiques et des objets observables.",
+      "open source devient utile lorsque sa définition reste reliée à des sources, des pratiques et des objets observables.",
       "La fiche sert de vocabulaire commun pour relier projets, publications et technologies sans mélanger les langues."
     ],
-    "bodyHtml": "<h2 id=\"role\">Rôle</h2>\n<p>Open source est documenté comme notion de référence pour comprendre les pratiques de publication, maintenance et cooperation fondees sur du code et des ressources ouverts.</p>\n<h2 id=\"usage\">Usage</h2>\n<p>Cette fiche relie la notion aux projets, publications et technologies qui partagent un même vocabulaire de conception. Elle sert de point d’appui pour naviguer dans le graphe en version française.</p>\n<h2 id=\"perimetre\">Périmètre</h2>\n<p>La notion est abordée par ses définitions, ses usages, ses limites et ses relations avec les autres objets documentés.</p>\n<h2 id=\"references\">Références</h2>\n<p>Les sources principales restent disponibles dans le bloc de références de la fiche.</p>\n",
+    "bodyHtml": "<h2 id=\"role\">Rôle</h2>\n<p>open source est documenté comme notion de référence pour comprendre les pratiques de publication, maintenance et cooperation fondees sur du code et des ressources ouverts.</p>\n<h2 id=\"usage\">Usage</h2>\n<p>Cette fiche relie la notion aux projets, publications et technologies qui partagent un même vocabulaire de conception. Elle sert de point d’appui pour naviguer dans le graphe en version française.</p>\n<h2 id=\"perimetre\">Périmètre</h2>\n<p>La notion est abordée par ses définitions, ses usages, ses limites et ses relations avec les autres objets documentés.</p>\n<h2 id=\"references\">Références</h2>\n<p>Les sources principales restent disponibles dans le bloc de références de la fiche.</p>\n",
     "headings": [
       "Rôle",
       "Usage",
@@ -7612,16 +7612,16 @@
     ],
     "publisher": "ea:organization:electronic-artefacts",
     "tags": [
-      "Open Weights",
-      "Local AI",
-      "Model Licensing",
-      "Quantization"
+      "poids ouverts",
+      "IA locale",
+      "licence de modèle",
+      "quantification"
     ],
     "disciplines": [
       "intelligence artificielle",
-      "Open Source",
-      "Programming",
-      "Digital Independence"
+      "open source",
+      "programmation",
+      "indépendance numérique"
     ],
     "sources": [
       {
@@ -7705,15 +7705,15 @@
     ],
     "publisher": "ea:organization:electronic-artefacts",
     "tags": [
-      "Personal Knowledge Management",
-      "Digital Gardens",
+      "gestion personnelle des connaissances",
+      "jardins numériques",
       "Notes",
       "Research"
     ],
     "disciplines": [
-      "Knowledge Systems",
-      "Research Methods",
-      "Internet Culture",
+      "systèmes de connaissance",
+      "méthodes de recherche",
+      "culture Internet",
       "Writing"
     ],
     "scope": [
@@ -7797,8 +7797,8 @@
     ],
     "disciplines": [
       "programmation créative",
-      "Visual Culture",
-      "Digital Art",
+      "culture visuelle",
+      "art numérique",
       "Motion Design"
     ],
     "scope": [
@@ -7882,9 +7882,9 @@
       "Archive"
     ],
     "disciplines": [
-      "Archives",
-      "Research Methods",
-      "Knowledge Systems"
+      "archives",
+      "méthodes de recherche",
+      "systèmes de connaissance"
     ],
     "sources": [
       {
@@ -7980,9 +7980,9 @@
     ],
     "disciplines": [
       "intelligence artificielle",
-      "Knowledge Systems",
+      "systèmes de connaissance",
       "Information Architecture",
-      "Machine Learning"
+      "apprentissage automatique"
     ],
     "sources": [
       {
@@ -8075,10 +8075,10 @@
       "Machine Listening"
     ],
     "disciplines": [
-      "Audio Engineering",
-      "Digital Art",
-      "Archives",
-      "Research Methods"
+      "ingénierie audio",
+      "art numérique",
+      "archives",
+      "méthodes de recherche"
     ],
     "scope": [
       "définition du sujet",
@@ -8131,10 +8131,10 @@
     "slug": {
       "canonical": "systems-thinking"
     },
-    "title": "Pensée systemique",
-    "definition": "Pensée systemique désigne la lecture des situations par relations, limites, boucles, flux, delais et points de levier.",
-    "abstract": "Pensée systemique définit un repère conceptuel en français pour comprendre la lecture des situations par relations, limites, boucles, flux, delais et points de levier et ses liens avec les projets, technologies et publications du graphe.",
-    "description": "Pensée systemique définit un repère conceptuel en français pour comprendre la lecture des situations par relations, limites, boucles, flux, delais et points de levier et ses liens avec les projets, technologies et publications du graphe.",
+    "title": "Pensée systémique",
+    "definition": "Pensée systémique désigne la lecture des situations par relations, limites, boucles, flux, delais et points de levier.",
+    "abstract": "Pensée systémique définit un repère conceptuel en français pour comprendre la lecture des situations par relations, limites, boucles, flux, delais et points de levier et ses liens avec les projets, technologies et publications du graphe.",
+    "description": "Pensée systémique définit un repère conceptuel en français pour comprendre la lecture des situations par relations, limites, boucles, flux, delais et points de levier et ses liens avec les projets, technologies et publications du graphe.",
     "locale": "fr",
     "visibility": "public",
     "publicationClass": "canonical",
@@ -8187,10 +8187,10 @@
       "les exemples déconnectés des sources, relations ou contraintes du graphe"
     ],
     "claims": [
-      "Pensée systemique devient utile lorsque sa définition reste reliée à des sources, des pratiques et des objets observables.",
+      "Pensée systémique devient utile lorsque sa définition reste reliée à des sources, des pratiques et des objets observables.",
       "La fiche sert de vocabulaire commun pour relier projets, publications et technologies sans mélanger les langues."
     ],
-    "bodyHtml": "<h2 id=\"role\">Rôle</h2>\n<p>Pensée systemique est documenté comme notion de référence pour comprendre la lecture des situations par relations, limites, boucles, flux, delais et points de levier.</p>\n<h2 id=\"usage\">Usage</h2>\n<p>Cette fiche relie la notion aux projets, publications et technologies qui partagent un même vocabulaire de conception. Elle sert de point d’appui pour naviguer dans le graphe en version française.</p>\n<h2 id=\"perimetre\">Périmètre</h2>\n<p>La notion est abordée par ses définitions, ses usages, ses limites et ses relations avec les autres objets documentés.</p>\n<h2 id=\"references\">Références</h2>\n<p>Les sources principales restent disponibles dans le bloc de références de la fiche.</p>\n",
+    "bodyHtml": "<h2 id=\"role\">Rôle</h2>\n<p>Pensée systémique est documenté comme notion de référence pour comprendre la lecture des situations par relations, limites, boucles, flux, delais et points de levier.</p>\n<h2 id=\"usage\">Usage</h2>\n<p>Cette fiche relie la notion aux projets, publications et technologies qui partagent un même vocabulaire de conception. Elle sert de point d’appui pour naviguer dans le graphe en version française.</p>\n<h2 id=\"perimetre\">Périmètre</h2>\n<p>La notion est abordée par ses définitions, ses usages, ses limites et ses relations avec les autres objets documentés.</p>\n<h2 id=\"references\">Références</h2>\n<p>Les sources principales restent disponibles dans le bloc de références de la fiche.</p>\n",
     "headings": [
       "Rôle",
       "Usage",
@@ -8252,14 +8252,14 @@
     "tags": [
       "Typography",
       "Reading",
-      "Interface Design",
+      "conception d'interface",
       "accessibilité"
     ],
     "disciplines": [
       "Typography",
       "design",
-      "Visual Culture",
-      "Web Development"
+      "culture visuelle",
+      "développement web"
     ],
     "sources": [
       {
@@ -8349,8 +8349,8 @@
       "programmation créative"
     ],
     "disciplines": [
-      "Audio Engineering",
-      "Web Development",
+      "ingénierie audio",
+      "développement web",
       "programmation créative",
       "Sound Design"
     ],
@@ -8447,7 +8447,7 @@
     ],
     "disciplines": [
       "Développement web",
-      "Design Technology",
+      "Technologies de design",
       "Technologies créatives",
       "Systèmes de connaissance"
     ],
@@ -9212,7 +9212,7 @@
     "publisher": "ea:organization:electronic-artefacts",
     "tags": [
       "agents d'IA",
-      "AI Workflows",
+      "workflows d'IA",
       "orchestration",
       "usage d'outils",
       "automatisation"
@@ -9322,10 +9322,10 @@
     "slug": {
       "canonical": "ai-search-structured-content-and-knowledge-graph-seo"
     },
-    "title": "Recherche IA, contenu structure et SEO par graphe de connaissances",
+    "title": "Recherche IA, contenu structuré et SEO par graphe de connaissances",
     "subtitle": "Article technique",
-    "abstract": "Recherche IA, contenu structure et SEO par graphe de connaissances propose une synthèse claire en français sur le sujet \"Recherche IA, contenu structure et SEO par graphe de connaissances\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
-    "description": "Recherche IA, contenu structure et SEO par graphe de connaissances propose une synthèse claire en français sur le sujet \"Recherche IA, contenu structure et SEO par graphe de connaissances\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
+    "abstract": "Recherche IA, contenu structuré et SEO par graphe de connaissances propose une synthèse claire en français sur le sujet \"Recherche IA, contenu structuré et SEO par graphe de connaissances\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
+    "description": "Recherche IA, contenu structuré et SEO par graphe de connaissances propose une synthèse claire en français sur le sujet \"Recherche IA, contenu structuré et SEO par graphe de connaissances\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
     "locale": "fr",
     "visibility": "public",
     "publicationClass": "published",
@@ -9345,7 +9345,7 @@
     ],
     "publisher": "ea:organization:electronic-artefacts",
     "tags": [
-      "AI Search",
+      "recherche IA",
       "SEO par graphe de connaissances",
       "Structured Data",
       "JSON-LD",
@@ -9353,8 +9353,8 @@
     ],
     "disciplines": [
       "SEO",
-      "Knowledge Systems",
-      "Web Development",
+      "systèmes de connaissance",
+      "développement web",
       "Information Architecture"
     ],
     "sources": [
@@ -9399,7 +9399,7 @@
       }
     ],
     "claims": [
-      "Recherche IA, contenu structure et SEO par graphe de connaissances doit être lisible comme une synthèse française autonome, sans phrases hybrides héritées de l'anglais.",
+      "Recherche IA, contenu structuré et SEO par graphe de connaissances doit être lisible comme une synthèse française autonome, sans phrases hybrides héritées de l'anglais.",
       "Les liens avec les notions, projets et technologies du graphe renforcent la recherche, la navigation et la citation."
     ],
     "evidence": [
@@ -9411,9 +9411,9 @@
       }
     ],
     "citation": {
-      "preferred": "Electronic Artefacts. \"Recherche IA, contenu structure et SEO par graphe de connaissances\". Article technique, version 1.0.0, 2026."
+      "preferred": "Electronic Artefacts. \"Recherche IA, contenu structuré et SEO par graphe de connaissances\". Article technique, version 1.0.0, 2026."
     },
-    "bodyHtml": "<h2 id=\"probleme\">Problème</h2>\n<p>Recherche IA, contenu structure et SEO par graphe de connaissances examine le sujet “Recherche IA, contenu structure et SEO par graphe de connaissances” dans le graphe public d’Electronic Artefacts. La fiche donne une entrée française stable, utilisable pour lire le sujet et relier ses sources au reste du graphe.</p>\n<h2 id=\"architecture\">Architecture</h2>\n<p>Le sujet est abordé par ses relations avec les concepts, projets et technologies concernés, afin de rendre son contexte de conception lisible.</p>\n<h2 id=\"mise-en-uvre\">Mise en œuvre</h2>\n<p>La page décrit les usages, contraintes et choix de structure qui permettent d’appliquer le sujet dans des situations concrètes.</p>\n<h2 id=\"elements-de-preuve\">Éléments de preuve</h2>\n<p>Les sources, relations et éléments de contexte restent attachés à la fiche pour distinguer synthèse éditoriale, preuves et références.</p>\n<h2 id=\"limites\">Limites</h2>\n<p>Les limites sont formulées par rapport au périmètre de la fiche, aux sources disponibles et aux conditions d’usage documentées.</p>\n<h2 id=\"references\">Références</h2>\n<p>Les sources principales restent disponibles dans le bloc de références de la fiche.</p>\n",
+    "bodyHtml": "<h2 id=\"probleme\">Problème</h2>\n<p>Recherche IA, contenu structuré et SEO par graphe de connaissances examine le sujet “Recherche IA, contenu structuré et SEO par graphe de connaissances” dans le graphe public d’Electronic Artefacts. La fiche donne une entrée française stable, utilisable pour lire le sujet et relier ses sources au reste du graphe.</p>\n<h2 id=\"architecture\">Architecture</h2>\n<p>Le sujet est abordé par ses relations avec les concepts, projets et technologies concernés, afin de rendre son contexte de conception lisible.</p>\n<h2 id=\"mise-en-uvre\">Mise en œuvre</h2>\n<p>La page décrit les usages, contraintes et choix de structure qui permettent d’appliquer le sujet dans des situations concrètes.</p>\n<h2 id=\"elements-de-preuve\">Éléments de preuve</h2>\n<p>Les sources, relations et éléments de contexte restent attachés à la fiche pour distinguer synthèse éditoriale, preuves et références.</p>\n<h2 id=\"limites\">Limites</h2>\n<p>Les limites sont formulées par rapport au périmètre de la fiche, aux sources disponibles et aux conditions d’usage documentées.</p>\n<h2 id=\"references\">Références</h2>\n<p>Les sources principales restent disponibles dans le bloc de références de la fiche.</p>\n",
     "headings": [
       "Problème",
       "Architecture",
@@ -9633,8 +9633,8 @@
     "disciplines": [
       "Digital Préservation",
       "intelligence artificielle",
-      "Knowledge Systems",
-      "Cultural Infrastructure"
+      "systèmes de connaissance",
+      "infrastructure culturelle"
     ],
     "sources": [
       {
@@ -9769,8 +9769,8 @@
     ],
     "disciplines": [
       "conception de systèmes",
-      "Programming",
-      "Knowledge Systems",
+      "programmation",
+      "systèmes de connaissance",
       "architecture logicielle"
     ],
     "format": "technicalArticle",
@@ -9885,9 +9885,9 @@
     ],
     "disciplines": [
       "programmation créative",
-      "Programming",
+      "programmation",
       "design",
-      "Open Source"
+      "open source"
     ],
     "sources": [
       {
@@ -10012,10 +10012,10 @@
       "Vestiges"
     ],
     "disciplines": [
-      "Archives",
-      "Digital Art",
-      "Knowledge Systems",
-      "History of Technology"
+      "archives",
+      "art numérique",
+      "systèmes de connaissance",
+      "histoire des technologies"
     ],
     "sources": [
       {
@@ -10154,7 +10154,7 @@
       "architecture logicielle",
       "conception de systèmes",
       "Distributed Systems",
-      "Programming"
+      "programmation"
     ],
     "sources": [
       {
@@ -10389,7 +10389,7 @@
     ],
     "disciplines": [
       "intelligence artificielle",
-      "Machine Learning",
+      "apprentissage automatique",
       "programmation créative",
       "interaction humain-machine"
     ],
@@ -10519,11 +10519,11 @@
       "Cybernetics",
       "programmation créative",
       "Algorithmic Composition",
-      "Digital Art"
+      "art numérique"
     ],
     "disciplines": [
       "programmation créative",
-      "Digital Art",
+      "art numérique",
       "Music Production",
       "conception de systèmes",
       "Cybernetics"
@@ -10659,13 +10659,13 @@
       "Transformer",
       "Attention",
       "Tokenization",
-      "Inference"
+      "inférence"
     ],
     "disciplines": [
       "intelligence artificielle",
-      "Machine Learning",
-      "Programming",
-      "Knowledge Systems"
+      "apprentissage automatique",
+      "programmation",
+      "systèmes de connaissance"
     ],
     "sources": [
       {
@@ -10926,12 +10926,12 @@
       "intelligence augmentée",
       "graphe de connaissances",
       "Linked Data",
-      "History of Technology"
+      "histoire des technologies"
     ],
     "disciplines": [
-      "Knowledge Systems",
-      "History of Technology",
-      "Web Development",
+      "systèmes de connaissance",
+      "histoire des technologies",
+      "développement web",
       "interaction humain-machine"
     ],
     "sources": [
@@ -11073,9 +11073,9 @@
     ],
     "disciplines": [
       "Digital Préservation",
-      "Cultural Infrastructure",
-      "Knowledge Systems",
-      "Web Development"
+      "infrastructure culturelle",
+      "systèmes de connaissance",
+      "développement web"
     ],
     "sources": [
       {
@@ -11203,16 +11203,16 @@
     "publisher": "ea:organization:electronic-artefacts",
     "tags": [
       "graphe de connaissances",
-      "Cultural Infrastructure",
+      "infrastructure culturelle",
       "Linked Data",
       "Provenance",
       "Vestiges"
     ],
     "disciplines": [
-      "Knowledge Systems",
-      "Archives",
+      "systèmes de connaissance",
+      "archives",
       "Information Architecture",
-      "Research Methods"
+      "méthodes de recherche"
     ],
     "sources": [
       {
@@ -11348,9 +11348,9 @@
       "Knowledge Pages"
     ],
     "disciplines": [
-      "Web Development",
+      "développement web",
       "SEO",
-      "Knowledge Systems"
+      "systèmes de connaissance"
     ],
     "sources": [
       {
@@ -11453,10 +11453,10 @@
     "slug": {
       "canonical": "local-and-open-source-ai-systems"
     },
-    "title": "Systèmes d'IA locaux et open source",
+    "title": "Systèmes d’IA locaux et open source",
     "subtitle": "Article technique",
-    "abstract": "Systèmes d'IA locaux et open source propose une synthèse claire en français sur le sujet \"Systèmes d'IA locaux et open source\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
-    "description": "Systèmes d'IA locaux et open source propose une synthèse claire en français sur le sujet \"Systèmes d'IA locaux et open source\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
+    "abstract": "Systèmes d’IA locaux et open source propose une synthèse claire en français sur le sujet \"Systèmes d’IA locaux et open source\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
+    "description": "Systèmes d’IA locaux et open source propose une synthèse claire en français sur le sujet \"Systèmes d’IA locaux et open source\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
     "locale": "fr",
     "visibility": "public",
     "publicationClass": "published",
@@ -11478,8 +11478,8 @@
     "tags": [
       "IA locale",
       "IA open source",
-      "Poids ouverts",
-      "Quantification",
+      "poids ouverts",
+      "quantification",
       "llama.cpp"
     ],
     "disciplines": [
@@ -11529,7 +11529,7 @@
       }
     ],
     "claims": [
-      "Systèmes d'IA locaux et open source doit être lisible comme une synthèse française autonome, sans phrases hybrides héritées de l'anglais.",
+      "Systèmes d’IA locaux et open source doit être lisible comme une synthèse française autonome, sans phrases hybrides héritées de l'anglais.",
       "Les liens avec les notions, projets et technologies du graphe renforcent la recherche, la navigation et la citation."
     ],
     "evidence": [
@@ -11541,7 +11541,7 @@
       }
     ],
     "citation": {
-      "preferred": "Electronic Artefacts. \"Systèmes d'IA locaux et open source\". Article technique, version 1.0.0, 2026."
+      "preferred": "Electronic Artefacts. \"Systèmes d’IA locaux et open source\". Article technique, version 1.0.0, 2026."
     },
     "bodyHtml": "<h2 id=\"probleme\">Problème</h2>\n<p>Systèmes d’IA locaux et open source examine le sujet “Systèmes d’IA locaux et open source” dans le graphe public d’Electronic Artefacts. La fiche donne une entrée française stable, utilisable pour lire le sujet et relier ses sources au reste du graphe.</p>\n<h2 id=\"architecture\">Architecture</h2>\n<p>Le sujet est abordé par ses relations avec les concepts, projets et technologies concernés, afin de rendre son contexte de conception lisible.</p>\n<h2 id=\"mise-en-uvre\">Mise en œuvre</h2>\n<p>La page décrit les usages, contraintes et choix de structure qui permettent d’appliquer le sujet dans des situations concrètes.</p>\n<h2 id=\"elements-de-preuve\">Éléments de preuve</h2>\n<p>Les sources, relations et éléments de contexte restent attachés à la fiche pour distinguer synthèse éditoriale, preuves et références.</p>\n<h2 id=\"limites\">Limites</h2>\n<p>Les limites sont formulées par rapport au périmètre de la fiche, aux sources disponibles et aux conditions d’usage documentées.</p>\n<h2 id=\"references\">Références</h2>\n<p>Les sources principales restent disponibles dans le bloc de références de la fiche.</p>\n",
     "headings": [
@@ -11617,14 +11617,14 @@
     "tags": [
       "Metadata",
       "Cataloguing",
-      "Archives",
+      "archives",
       "Cultural Memory"
     ],
     "disciplines": [
-      "Archives",
-      "Knowledge Systems",
-      "Research Methods",
-      "History of Technology"
+      "archives",
+      "systèmes de connaissance",
+      "méthodes de recherche",
+      "histoire des technologies"
     ],
     "sources": [
       {
@@ -11761,7 +11761,7 @@
     "disciplines": [
       "architecture logicielle",
       "conception de systèmes",
-      "Programming",
+      "programmation",
       "Distributed Systems"
     ],
     "sources": [
@@ -12033,14 +12033,14 @@
     "tags": [
       "Motion Design",
       "Web Animations",
-      "Interface Design",
+      "conception d'interface",
       "accessibilité"
     ],
     "disciplines": [
       "Motion Design",
       "design",
       "interaction humain-machine",
-      "Web Development"
+      "développement web"
     ],
     "sources": [
       {
@@ -12167,9 +12167,9 @@
     ],
     "disciplines": [
       "intelligence artificielle",
-      "Machine Learning",
-      "Digital Art",
-      "Audio Engineering"
+      "apprentissage automatique",
+      "art numérique",
+      "ingénierie audio"
     ],
     "sources": [
       {
@@ -12438,7 +12438,7 @@
       "Knowledge Modeling"
     ],
     "disciplines": [
-      "Knowledge Systems",
+      "systèmes de connaissance",
       "Information Architecture",
       "Semantic Web",
       "Philosophy"
@@ -12550,10 +12550,10 @@
     "slug": {
       "canonical": "open-source-as-cultural-infrastructure"
     },
-    "title": "L'open source comme infrastructure culturelle",
+    "title": "L’open source comme infrastructure culturelle",
     "subtitle": "Article technique",
-    "abstract": "L'open source comme infrastructure culturelle propose une synthèse claire en français sur le sujet \"L'open source comme infrastructure culturelle\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
-    "description": "L'open source comme infrastructure culturelle propose une synthèse claire en français sur le sujet \"L'open source comme infrastructure culturelle\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
+    "abstract": "L’open source comme infrastructure culturelle propose une synthèse claire en français sur le sujet \"L’open source comme infrastructure culturelle\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
+    "description": "L’open source comme infrastructure culturelle propose une synthèse claire en français sur le sujet \"L’open source comme infrastructure culturelle\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
     "locale": "fr",
     "visibility": "public",
     "publicationClass": "published",
@@ -12573,16 +12573,16 @@
     ],
     "publisher": "ea:organization:electronic-artefacts",
     "tags": [
-      "Open Source",
+      "open source",
       "programmation créative",
-      "Infrastructure",
-      "Maintainers"
+      "infrastructure",
+      "mainteneurs"
     ],
     "disciplines": [
-      "Open Source",
-      "Programming",
+      "open source",
+      "programmation",
       "programmation créative",
-      "Internet Culture"
+      "culture Internet"
     ],
     "sources": [
       {
@@ -12614,7 +12614,7 @@
       }
     ],
     "claims": [
-      "L'open source comme infrastructure culturelle doit être lisible comme une synthèse française autonome, sans phrases hybrides héritées de l'anglais.",
+      "L’open source comme infrastructure culturelle doit être lisible comme une synthèse française autonome, sans phrases hybrides héritées de l'anglais.",
       "Les liens avec les notions, projets et technologies du graphe renforcent la recherche, la navigation et la citation."
     ],
     "evidence": [
@@ -12626,7 +12626,7 @@
       }
     ],
     "citation": {
-      "preferred": "Electronic Artefacts. \"L'open source comme infrastructure culturelle\". Article technique, version 1.0.0, 2026."
+      "preferred": "Electronic Artefacts. \"L’open source comme infrastructure culturelle\". Article technique, version 1.0.0, 2026."
     },
     "bodyHtml": "<h2 id=\"probleme\">Problème</h2>\n<p>L’open source comme infrastructure culturelle examine le sujet “L’open source comme infrastructure culturelle” dans le graphe public d’Electronic Artefacts. La fiche donne une entrée française stable, utilisable pour lire le sujet et relier ses sources au reste du graphe.</p>\n<h2 id=\"architecture\">Architecture</h2>\n<p>Le sujet est abordé par ses relations avec les concepts, projets et technologies concernés, afin de rendre son contexte de conception lisible.</p>\n<h2 id=\"mise-en-uvre\">Mise en œuvre</h2>\n<p>La page décrit les usages, contraintes et choix de structure qui permettent d’appliquer le sujet dans des situations concrètes.</p>\n<h2 id=\"elements-de-preuve\">Éléments de preuve</h2>\n<p>Les sources, relations et éléments de contexte restent attachés à la fiche pour distinguer synthèse éditoriale, preuves et références.</p>\n<h2 id=\"limites\">Limites</h2>\n<p>Les limites sont formulées par rapport au périmètre de la fiche, aux sources disponibles et aux conditions d’usage documentées.</p>\n<h2 id=\"references\">Références</h2>\n<p>Les sources principales restent disponibles dans le bloc de références de la fiche.</p>\n",
     "headings": [
@@ -12700,16 +12700,16 @@
     ],
     "publisher": "ea:organization:electronic-artefacts",
     "tags": [
-      "Personal Knowledge Management",
-      "Digital Gardens",
-      "Backlinks",
-      "Research Methods"
+      "gestion personnelle des connaissances",
+      "jardins numériques",
+      "liens entrants",
+      "méthodes de recherche"
     ],
     "disciplines": [
-      "Knowledge Systems",
-      "Research Methods",
-      "Internet Culture",
-      "Archives"
+      "systèmes de connaissance",
+      "méthodes de recherche",
+      "culture Internet",
+      "archives"
     ],
     "sources": [
       {
@@ -12840,9 +12840,9 @@
     ],
     "disciplines": [
       "programmation créative",
-      "Digital Art",
-      "Visual Culture",
-      "Web Development"
+      "art numérique",
+      "culture visuelle",
+      "développement web"
     ],
     "sources": [
       {
@@ -12934,10 +12934,10 @@
     "slug": {
       "canonical": "prompt-injection-and-trust-boundaries-in-ai-knowledge-systems"
     },
-    "title": "Injection de prompt et frontieres de confiance dans les systèmes de connaissance IA",
+    "title": "Injection de prompt et frontières de confiance dans les systèmes de connaissance IA",
     "subtitle": "Article technique",
-    "abstract": "Injection de prompt et frontieres de confiance dans les systèmes de connaissance IA propose une synthèse claire en français sur le sujet \"Injection de prompt et frontieres de confiance dans les systèmes de connaissance IA\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
-    "description": "Injection de prompt et frontieres de confiance dans les systèmes de connaissance IA propose une synthèse claire en français sur le sujet \"Injection de prompt et frontieres de confiance dans les systèmes de connaissance IA\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
+    "abstract": "Injection de prompt et frontières de confiance dans les systèmes de connaissance IA propose une synthèse claire en français sur le sujet \"Injection de prompt et frontières de confiance dans les systèmes de connaissance IA\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
+    "description": "Injection de prompt et frontières de confiance dans les systèmes de connaissance IA propose une synthèse claire en français sur le sujet \"Injection de prompt et frontières de confiance dans les systèmes de connaissance IA\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
     "locale": "fr",
     "visibility": "public",
     "publicationClass": "published",
@@ -12966,7 +12966,7 @@
     "disciplines": [
       "intelligence artificielle",
       "Security",
-      "Knowledge Systems",
+      "systèmes de connaissance",
       "architecture logicielle"
     ],
     "sources": [
@@ -13008,7 +13008,7 @@
       }
     ],
     "claims": [
-      "Injection de prompt et frontieres de confiance dans les systèmes de connaissance IA doit être lisible comme une synthèse française autonome, sans phrases hybrides héritées de l'anglais.",
+      "Injection de prompt et frontières de confiance dans les systèmes de connaissance IA doit être lisible comme une synthèse française autonome, sans phrases hybrides héritées de l'anglais.",
       "Les liens avec les notions, projets et technologies du graphe renforcent la recherche, la navigation et la citation."
     ],
     "evidence": [
@@ -13020,9 +13020,9 @@
       }
     ],
     "citation": {
-      "preferred": "Electronic Artefacts. \"Injection de prompt et frontieres de confiance dans les systèmes de connaissance IA\". Article technique, version 1.0.0, 2026."
+      "preferred": "Electronic Artefacts. \"Injection de prompt et frontières de confiance dans les systèmes de connaissance IA\". Article technique, version 1.0.0, 2026."
     },
-    "bodyHtml": "<h2 id=\"probleme\">Problème</h2>\n<p>Injection de prompt et frontieres de confiance dans les systèmes de connaissance IA examine le sujet “Injection de prompt et frontieres de confiance dans les systèmes de connaissance IA” dans le graphe public d’Electronic Artefacts. La fiche donne une entrée française stable, utilisable pour lire le sujet et relier ses sources au reste du graphe.</p>\n<h2 id=\"architecture\">Architecture</h2>\n<p>Le sujet est abordé par ses relations avec les concepts, projets et technologies concernés, afin de rendre son contexte de conception lisible.</p>\n<h2 id=\"mise-en-uvre\">Mise en œuvre</h2>\n<p>La page décrit les usages, contraintes et choix de structure qui permettent d’appliquer le sujet dans des situations concrètes.</p>\n<h2 id=\"elements-de-preuve\">Éléments de preuve</h2>\n<p>Les sources, relations et éléments de contexte restent attachés à la fiche pour distinguer synthèse éditoriale, preuves et références.</p>\n<h2 id=\"limites\">Limites</h2>\n<p>Les limites sont formulées par rapport au périmètre de la fiche, aux sources disponibles et aux conditions d’usage documentées.</p>\n<h2 id=\"references\">Références</h2>\n<p>Les sources principales restent disponibles dans le bloc de références de la fiche.</p>\n",
+    "bodyHtml": "<h2 id=\"probleme\">Problème</h2>\n<p>Injection de prompt et frontières de confiance dans les systèmes de connaissance IA examine le sujet “Injection de prompt et frontières de confiance dans les systèmes de connaissance IA” dans le graphe public d’Electronic Artefacts. La fiche donne une entrée française stable, utilisable pour lire le sujet et relier ses sources au reste du graphe.</p>\n<h2 id=\"architecture\">Architecture</h2>\n<p>Le sujet est abordé par ses relations avec les concepts, projets et technologies concernés, afin de rendre son contexte de conception lisible.</p>\n<h2 id=\"mise-en-uvre\">Mise en œuvre</h2>\n<p>La page décrit les usages, contraintes et choix de structure qui permettent d’appliquer le sujet dans des situations concrètes.</p>\n<h2 id=\"elements-de-preuve\">Éléments de preuve</h2>\n<p>Les sources, relations et éléments de contexte restent attachés à la fiche pour distinguer synthèse éditoriale, preuves et références.</p>\n<h2 id=\"limites\">Limites</h2>\n<p>Les limites sont formulées par rapport au périmètre de la fiche, aux sources disponibles et aux conditions d’usage documentées.</p>\n<h2 id=\"references\">Références</h2>\n<p>Les sources principales restent disponibles dans le bloc de références de la fiche.</p>\n",
     "headings": [
       "Problème",
       "Architecture",
@@ -13071,10 +13071,10 @@
     "slug": {
       "canonical": "redis-streams-for-orchestration"
     },
-    "title": "Redis Streams pour l'orchestration",
+    "title": "Redis Streams pour l’orchestration",
     "subtitle": "Article technique",
-    "abstract": "Redis Streams pour l'orchestration propose une synthèse claire en français sur le sujet \"Redis Streams pour l'orchestration\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
-    "description": "Redis Streams pour l'orchestration propose une synthèse claire en français sur le sujet \"Redis Streams pour l'orchestration\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
+    "abstract": "Redis Streams pour l’orchestration propose une synthèse claire en français sur le sujet \"Redis Streams pour l’orchestration\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
+    "description": "Redis Streams pour l’orchestration propose une synthèse claire en français sur le sujet \"Redis Streams pour l’orchestration\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
     "locale": "fr",
     "visibility": "public",
     "publicationClass": "published",
@@ -13103,7 +13103,7 @@
     "disciplines": [
       "architecture logicielle",
       "Distributed Systems",
-      "Programming",
+      "programmation",
       "conception de systèmes"
     ],
     "sources": [
@@ -13142,7 +13142,7 @@
       }
     ],
     "claims": [
-      "Redis Streams pour l'orchestration doit être lisible comme une synthèse française autonome, sans phrases hybrides héritées de l'anglais.",
+      "Redis Streams pour l’orchestration doit être lisible comme une synthèse française autonome, sans phrases hybrides héritées de l'anglais.",
       "Les liens avec les notions, projets et technologies du graphe renforcent la recherche, la navigation et la citation."
     ],
     "evidence": [
@@ -13154,7 +13154,7 @@
       }
     ],
     "citation": {
-      "preferred": "Electronic Artefacts. \"Redis Streams pour l'orchestration\". Article technique, version 1.0.0, 2026."
+      "preferred": "Electronic Artefacts. \"Redis Streams pour l’orchestration\". Article technique, version 1.0.0, 2026."
     },
     "bodyHtml": "<h2 id=\"probleme\">Problème</h2>\n<p>Redis Streams pour l’orchestration examine le sujet “Redis Streams pour l’orchestration” dans le graphe public d’Electronic Artefacts. La fiche donne une entrée française stable, utilisable pour lire le sujet et relier ses sources au reste du graphe.</p>\n<h2 id=\"architecture\">Architecture</h2>\n<p>Le sujet est abordé par ses relations avec les concepts, projets et technologies concernés, afin de rendre son contexte de conception lisible.</p>\n<h2 id=\"mise-en-uvre\">Mise en œuvre</h2>\n<p>La page décrit les usages, contraintes et choix de structure qui permettent d’appliquer le sujet dans des situations concrètes.</p>\n<h2 id=\"elements-de-preuve\">Éléments de preuve</h2>\n<p>Les sources, relations et éléments de contexte restent attachés à la fiche pour distinguer synthèse éditoriale, preuves et références.</p>\n<h2 id=\"limites\">Limites</h2>\n<p>Les limites sont formulées par rapport au périmètre de la fiche, aux sources disponibles et aux conditions d’usage documentées.</p>\n<h2 id=\"references\">Références</h2>\n<p>Les sources principales restent disponibles dans le bloc de références de la fiche.</p>\n",
     "headings": [
@@ -13229,15 +13229,15 @@
     "publisher": "ea:organization:electronic-artefacts",
     "tags": [
       "Responsible AI",
-      "AI Governance",
-      "Creative Technology",
-      "Cultural Infrastructure",
+      "gouvernance de l'IA",
+      "technologies créatives",
+      "infrastructure culturelle",
       "Provenance"
     ],
     "disciplines": [
       "intelligence artificielle",
-      "Cultural Infrastructure",
-      "Knowledge Systems",
+      "infrastructure culturelle",
+      "systèmes de connaissance",
       "conception de systèmes"
     ],
     "sources": [
@@ -13374,9 +13374,9 @@
     ],
     "disciplines": [
       "intelligence artificielle",
-      "Knowledge Systems",
+      "systèmes de connaissance",
       "Information Architecture",
-      "Machine Learning"
+      "apprentissage automatique"
     ],
     "sources": [
       {
@@ -13504,17 +13504,17 @@
     ],
     "publisher": "ea:organization:electronic-artefacts",
     "tags": [
-      "Moteur d'exécution",
-      "Système d'exploitation de domaine",
-      "Système d'exploitation métier",
+      "moteur d'exécution",
+      "système d'exploitation de domaine",
+      "système d'exploitation métier",
       "VASTE",
-      "Systèmes composables"
+      "systèmes composables"
     ],
     "disciplines": [
       "conception de systèmes",
       "architecture logicielle",
       "programmation",
-      "Systèmes de connaissance"
+      "systèmes de connaissance"
     ],
     "sources": [
       {
@@ -13627,10 +13627,10 @@
     "slug": {
       "canonical": "signal-archaeology-audio-memory-and-machine-listening"
     },
-    "title": "Archéologie du signal, mémoire audio et ecoute machine",
+    "title": "Archéologie du signal, mémoire audio et écoute machine",
     "subtitle": "Article technique",
-    "abstract": "Archéologie du signal, mémoire audio et ecoute machine propose une synthèse claire en français sur le sujet \"Archéologie du signal, mémoire audio et ecoute machine\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
-    "description": "Archéologie du signal, mémoire audio et ecoute machine propose une synthèse claire en français sur le sujet \"Archéologie du signal, mémoire audio et ecoute machine\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
+    "abstract": "Archéologie du signal, mémoire audio et écoute machine propose une synthèse claire en français sur le sujet \"Archéologie du signal, mémoire audio et écoute machine\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
+    "description": "Archéologie du signal, mémoire audio et écoute machine propose une synthèse claire en français sur le sujet \"Archéologie du signal, mémoire audio et écoute machine\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
     "locale": "fr",
     "visibility": "public",
     "publicationClass": "published",
@@ -13657,11 +13657,11 @@
       "Palimpsests"
     ],
     "disciplines": [
-      "Audio Engineering",
+      "ingénierie audio",
       "Sound Design",
-      "Digital Art",
-      "Archives",
-      "Research Methods"
+      "art numérique",
+      "archives",
+      "méthodes de recherche"
     ],
     "sources": [
       {
@@ -13698,7 +13698,7 @@
       }
     ],
     "claims": [
-      "Archéologie du signal, mémoire audio et ecoute machine doit être lisible comme une synthèse française autonome, sans phrases hybrides héritées de l'anglais.",
+      "Archéologie du signal, mémoire audio et écoute machine doit être lisible comme une synthèse française autonome, sans phrases hybrides héritées de l'anglais.",
       "Les liens avec les notions, projets et technologies du graphe renforcent la recherche, la navigation et la citation."
     ],
     "evidence": [
@@ -13710,9 +13710,9 @@
       }
     ],
     "citation": {
-      "preferred": "Electronic Artefacts. \"Archéologie du signal, mémoire audio et ecoute machine\". Article technique, version 1.0.0, 2026."
+      "preferred": "Electronic Artefacts. \"Archéologie du signal, mémoire audio et écoute machine\". Article technique, version 1.0.0, 2026."
     },
-    "bodyHtml": "<h2 id=\"probleme\">Problème</h2>\n<p>Archéologie du signal, mémoire audio et ecoute machine examine le sujet “Archéologie du signal, mémoire audio et ecoute machine” dans le graphe public d’Electronic Artefacts. La fiche donne une entrée française stable, utilisable pour lire le sujet et relier ses sources au reste du graphe.</p>\n<h2 id=\"architecture\">Architecture</h2>\n<p>Le sujet est abordé par ses relations avec les concepts, projets et technologies concernés, afin de rendre son contexte de conception lisible.</p>\n<h2 id=\"mise-en-uvre\">Mise en œuvre</h2>\n<p>La page décrit les usages, contraintes et choix de structure qui permettent d’appliquer le sujet dans des situations concrètes.</p>\n<h2 id=\"elements-de-preuve\">Éléments de preuve</h2>\n<p>Les sources, relations et éléments de contexte restent attachés à la fiche pour distinguer synthèse éditoriale, preuves et références.</p>\n<h2 id=\"limites\">Limites</h2>\n<p>Les limites sont formulées par rapport au périmètre de la fiche, aux sources disponibles et aux conditions d’usage documentées.</p>\n<h2 id=\"references\">Références</h2>\n<p>Les sources principales restent disponibles dans le bloc de références de la fiche.</p>\n",
+    "bodyHtml": "<h2 id=\"probleme\">Problème</h2>\n<p>Archéologie du signal, mémoire audio et écoute machine examine le sujet “Archéologie du signal, mémoire audio et écoute machine” dans le graphe public d’Electronic Artefacts. La fiche donne une entrée française stable, utilisable pour lire le sujet et relier ses sources au reste du graphe.</p>\n<h2 id=\"architecture\">Architecture</h2>\n<p>Le sujet est abordé par ses relations avec les concepts, projets et technologies concernés, afin de rendre son contexte de conception lisible.</p>\n<h2 id=\"mise-en-uvre\">Mise en œuvre</h2>\n<p>La page décrit les usages, contraintes et choix de structure qui permettent d’appliquer le sujet dans des situations concrètes.</p>\n<h2 id=\"elements-de-preuve\">Éléments de preuve</h2>\n<p>Les sources, relations et éléments de contexte restent attachés à la fiche pour distinguer synthèse éditoriale, preuves et références.</p>\n<h2 id=\"limites\">Limites</h2>\n<p>Les limites sont formulées par rapport au périmètre de la fiche, aux sources disponibles et aux conditions d’usage documentées.</p>\n<h2 id=\"references\">Références</h2>\n<p>Les sources principales restent disponibles dans le bloc de références de la fiche.</p>\n",
     "headings": [
       "Problème",
       "Architecture",
@@ -13761,10 +13761,10 @@
     "slug": {
       "canonical": "systems-thinking-for-creative-practice"
     },
-    "title": "Pensée systemique pour la pratique créative",
+    "title": "Pensée systémique pour la pratique créative",
     "subtitle": "Recherche Article",
-    "abstract": "Pensée systemique pour la pratique créative propose une synthèse claire en français sur le sujet \"Pensée systemique pour la pratique créative\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
-    "description": "Pensée systemique pour la pratique créative propose une synthèse claire en français sur le sujet \"Pensée systemique pour la pratique créative\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
+    "abstract": "Pensée systémique pour la pratique créative propose une synthèse claire en français sur le sujet \"Pensée systémique pour la pratique créative\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
+    "description": "Pensée systémique pour la pratique créative propose une synthèse claire en français sur le sujet \"Pensée systémique pour la pratique créative\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
     "locale": "fr",
     "visibility": "public",
     "publicationClass": "published",
@@ -13833,7 +13833,7 @@
       }
     ],
     "claims": [
-      "Pensée systemique pour la pratique créative doit être lisible comme une synthèse française autonome, sans phrases hybrides héritées de l'anglais.",
+      "Pensée systémique pour la pratique créative doit être lisible comme une synthèse française autonome, sans phrases hybrides héritées de l'anglais.",
       "Les liens avec les notions, projets et technologies du graphe renforcent la recherche, la navigation et la citation."
     ],
     "evidence": [
@@ -13845,9 +13845,9 @@
       }
     ],
     "citation": {
-      "preferred": "Electronic Artefacts. \"Pensée systemique pour la pratique créative\". Article technique, version 1.0.0, 2026."
+      "preferred": "Electronic Artefacts. \"Pensée systémique pour la pratique créative\". Article technique, version 1.0.0, 2026."
     },
-    "bodyHtml": "<h2 id=\"probleme\">Problème</h2>\n<p>Pensée systemique pour la pratique créative examine le sujet “Pensée systemique pour la pratique créative” dans le graphe public d’Electronic Artefacts. La fiche donne une entrée française stable, utilisable pour lire le sujet et relier ses sources au reste du graphe.</p>\n<h2 id=\"architecture\">Architecture</h2>\n<p>Le sujet est abordé par ses relations avec les concepts, projets et technologies concernés, afin de rendre son contexte de conception lisible.</p>\n<h2 id=\"mise-en-uvre\">Mise en œuvre</h2>\n<p>La page décrit les usages, contraintes et choix de structure qui permettent d’appliquer le sujet dans des situations concrètes.</p>\n<h2 id=\"elements-de-preuve\">Éléments de preuve</h2>\n<p>Les sources, relations et éléments de contexte restent attachés à la fiche pour distinguer synthèse éditoriale, preuves et références.</p>\n<h2 id=\"limites\">Limites</h2>\n<p>Les limites sont formulées par rapport au périmètre de la fiche, aux sources disponibles et aux conditions d’usage documentées.</p>\n<h2 id=\"references\">Références</h2>\n<p>Les sources principales restent disponibles dans le bloc de références de la fiche.</p>\n",
+    "bodyHtml": "<h2 id=\"probleme\">Problème</h2>\n<p>Pensée systémique pour la pratique créative examine le sujet “Pensée systémique pour la pratique créative” dans le graphe public d’Electronic Artefacts. La fiche donne une entrée française stable, utilisable pour lire le sujet et relier ses sources au reste du graphe.</p>\n<h2 id=\"architecture\">Architecture</h2>\n<p>Le sujet est abordé par ses relations avec les concepts, projets et technologies concernés, afin de rendre son contexte de conception lisible.</p>\n<h2 id=\"mise-en-uvre\">Mise en œuvre</h2>\n<p>La page décrit les usages, contraintes et choix de structure qui permettent d’appliquer le sujet dans des situations concrètes.</p>\n<h2 id=\"elements-de-preuve\">Éléments de preuve</h2>\n<p>Les sources, relations et éléments de contexte restent attachés à la fiche pour distinguer synthèse éditoriale, preuves et références.</p>\n<h2 id=\"limites\">Limites</h2>\n<p>Les limites sont formulées par rapport au périmètre de la fiche, aux sources disponibles et aux conditions d’usage documentées.</p>\n<h2 id=\"references\">Références</h2>\n<p>Les sources principales restent disponibles dans le bloc de références de la fiche.</p>\n",
     "headings": [
       "Problème",
       "Architecture",
@@ -13921,13 +13921,13 @@
     "tags": [
       "Typography",
       "Reading Systems",
-      "Interface Design",
+      "conception d'interface",
       "accessibilité"
     ],
     "disciplines": [
       "Typography",
       "design",
-      "Web Development",
+      "développement web",
       "interaction humain-machine"
     ],
     "sources": [
@@ -14023,10 +14023,10 @@
     "slug": {
       "canonical": "verifiable-credentials-for-cultural-archives-and-creator-identity"
     },
-    "title": "Identifiants vérifiables pour les archives culturelles et l'identité des créateurs",
+    "title": "Identifiants vérifiables pour les archives culturelles et l’identité des créateurs",
     "subtitle": "Article technique",
-    "abstract": "Identifiants vérifiables pour les archives culturelles et l'identité des créateurs propose une synthèse claire en français sur le sujet \"Identifiants vérifiables pour les archives culturelles et l'identité des créateurs\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
-    "description": "Identifiants vérifiables pour les archives culturelles et l'identité des créateurs propose une synthèse claire en français sur le sujet \"Identifiants vérifiables pour les archives culturelles et l'identité des créateurs\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
+    "abstract": "Identifiants vérifiables pour les archives culturelles et l’identité des créateurs propose une synthèse claire en français sur le sujet \"Identifiants vérifiables pour les archives culturelles et l’identité des créateurs\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
+    "description": "Identifiants vérifiables pour les archives culturelles et l’identité des créateurs propose une synthèse claire en français sur le sujet \"Identifiants vérifiables pour les archives culturelles et l’identité des créateurs\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
     "locale": "fr",
     "visibility": "public",
     "publicationClass": "published",
@@ -14053,8 +14053,8 @@
       "Cultural Archives"
     ],
     "disciplines": [
-      "Cultural Infrastructure",
-      "Knowledge Systems",
+      "infrastructure culturelle",
+      "systèmes de connaissance",
       "Digital Préservation",
       "Web Standards"
     ],
@@ -14099,7 +14099,7 @@
       }
     ],
     "claims": [
-      "Identifiants vérifiables pour les archives culturelles et l'identité des créateurs doit être lisible comme une synthèse française autonome, sans phrases hybrides héritées de l'anglais.",
+      "Identifiants vérifiables pour les archives culturelles et l’identité des créateurs doit être lisible comme une synthèse française autonome, sans phrases hybrides héritées de l'anglais.",
       "Les liens avec les notions, projets et technologies du graphe renforcent la recherche, la navigation et la citation."
     ],
     "evidence": [
@@ -14111,7 +14111,7 @@
       }
     ],
     "citation": {
-      "preferred": "Electronic Artefacts. \"Identifiants vérifiables pour les archives culturelles et l'identité des créateurs\". Article technique, version 1.0.0, 2026."
+      "preferred": "Electronic Artefacts. \"Identifiants vérifiables pour les archives culturelles et l’identité des créateurs\". Article technique, version 1.0.0, 2026."
     },
     "bodyHtml": "<h2 id=\"probleme\">Problème</h2>\n<p>Identifiants vérifiables pour les archives culturelles et l’identité des créateurs examine le sujet “Identifiants vérifiables pour les archives culturelles et l’identité des créateurs” dans le graphe public d’Electronic Artefacts. La fiche donne une entrée française stable, utilisable pour lire le sujet et relier ses sources au reste du graphe.</p>\n<h2 id=\"architecture\">Architecture</h2>\n<p>Le sujet est abordé par ses relations avec les concepts, projets et technologies concernés, afin de rendre son contexte de conception lisible.</p>\n<h2 id=\"mise-en-uvre\">Mise en œuvre</h2>\n<p>La page décrit les usages, contraintes et choix de structure qui permettent d’appliquer le sujet dans des situations concrètes.</p>\n<h2 id=\"elements-de-preuve\">Éléments de preuve</h2>\n<p>Les sources, relations et éléments de contexte restent attachés à la fiche pour distinguer synthèse éditoriale, preuves et références.</p>\n<h2 id=\"limites\">Limites</h2>\n<p>Les limites sont formulées par rapport au périmètre de la fiche, aux sources disponibles et aux conditions d’usage documentées.</p>\n<h2 id=\"references\">Références</h2>\n<p>Les sources principales restent disponibles dans le bloc de références de la fiche.</p>\n",
     "headings": [
@@ -14191,8 +14191,8 @@
       "ORETH"
     ],
     "disciplines": [
-      "Audio Engineering",
-      "Web Development",
+      "ingénierie audio",
+      "développement web",
       "programmation créative",
       "Sound Design"
     ],
@@ -14312,8 +14312,8 @@
     "tags": [
       "WebNN",
       "IA dans le navigateur",
-      "Inférence locale",
-      "Apprentissage automatique Web",
+      "inférence locale",
+      "apprentissage automatique Web",
       "interaction humain-machine"
     ],
     "disciplines": [
@@ -14455,7 +14455,7 @@
       "VASTE"
     ],
     "disciplines": [
-      "Knowledge Systems",
+      "systèmes de connaissance",
       "conception de systèmes",
       "Information Architecture",
       "architecture logicielle"
@@ -14683,9 +14683,9 @@
       "Social Web"
     ],
     "disciplines": [
-      "Internet Culture",
-      "Network Culture",
-      "Web Development"
+      "culture Internet",
+      "culture des réseaux",
+      "développement web"
     ],
     "sources": [
       {
@@ -14769,7 +14769,7 @@
     ],
     "disciplines": [
       "Digital Préservation",
-      "Knowledge Systems",
+      "systèmes de connaissance",
       "intelligence artificielle"
     ],
     "sources": [
@@ -14849,7 +14849,7 @@
     "disciplines": [
       "architecture logicielle",
       "Distributed Systems",
-      "Programming"
+      "programmation"
     ],
     "sources": [
       {
@@ -14927,7 +14927,7 @@
     ],
     "disciplines": [
       "Typography",
-      "Web Development",
+      "développement web",
       "design"
     ],
     "sources": [
@@ -15010,8 +15010,8 @@
     ],
     "disciplines": [
       "Digital Préservation",
-      "Cultural Infrastructure",
-      "Knowledge Systems"
+      "infrastructure culturelle",
+      "systèmes de connaissance"
     ],
     "sources": [
       {
@@ -15090,8 +15090,8 @@
       "SEO"
     ],
     "disciplines": [
-      "Web Development",
-      "Knowledge Systems",
+      "développement web",
+      "systèmes de connaissance",
       "SEO"
     ],
     "sources": [
@@ -15169,14 +15169,14 @@
     "publisher": "ea:organization:electronic-artefacts",
     "tags": [
       "llama.cpp",
-      "Local AI",
-      "Inference",
-      "Quantization"
+      "IA locale",
+      "inférence",
+      "quantification"
     ],
     "disciplines": [
       "intelligence artificielle",
-      "Programming",
-      "Open Source"
+      "programmation",
+      "open source"
     ],
     "sources": [
       {
@@ -15419,7 +15419,7 @@
       "Semantic Web"
     ],
     "disciplines": [
-      "Knowledge Systems",
+      "systèmes de connaissance",
       "Semantic Web"
     ],
     "sources": [
@@ -15500,8 +15500,8 @@
       "Graph"
     ],
     "disciplines": [
-      "Web Development",
-      "Knowledge Systems"
+      "développement web",
+      "systèmes de connaissance"
     ],
     "sources": [
       {
@@ -15584,7 +15584,7 @@
     ],
     "disciplines": [
       "architecture logicielle",
-      "Programming",
+      "programmation",
       "Distributed Systems"
     ],
     "sources": [
@@ -15665,7 +15665,7 @@
       "Controlled Vocabulary"
     ],
     "disciplines": [
-      "Knowledge Systems",
+      "systèmes de connaissance",
       "Information Architecture",
       "Semantic Web"
     ],
@@ -15746,7 +15746,7 @@
     ],
     "disciplines": [
       "intelligence artificielle",
-      "Machine Learning"
+      "apprentissage automatique"
     ],
     "sources": [
       {
@@ -15826,7 +15826,7 @@
     ],
     "disciplines": [
       "Motion Design",
-      "Web Development",
+      "développement web",
       "interaction humain-machine"
     ],
     "sources": [
@@ -15905,8 +15905,8 @@
       "Audio Graph"
     ],
     "disciplines": [
-      "Audio Engineering",
-      "Web Development",
+      "ingénierie audio",
+      "développement web",
       "programmation créative"
     ],
     "sources": [
@@ -15986,8 +15986,8 @@
     ],
     "disciplines": [
       "programmation créative",
-      "Web Development",
-      "Digital Art"
+      "développement web",
+      "art numérique"
     ],
     "sources": [
       {
@@ -16064,8 +16064,8 @@
     "tags": [
       "WebNN",
       "IA dans le navigateur",
-      "Inférence locale",
-      "Apprentissage automatique Web"
+      "inférence locale",
+      "apprentissage automatique Web"
     ],
     "disciplines": [
       "intelligence artificielle",

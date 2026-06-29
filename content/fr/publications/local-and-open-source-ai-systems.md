@@ -3,13 +3,13 @@ id: ea:publication:local-and-open-source-ai-systems-fr
 type: publication
 slug:
   canonical: local-and-open-source-ai-systems
-title: Systèmes d'IA locaux et open source
+title: Systèmes d’IA locaux et open source
 subtitle: Article technique
-abstract: Systèmes d'IA locaux et open source propose une synthèse claire en français sur le sujet
-  "Systèmes d'IA locaux et open source" dans le graphe public d'Electronic Artefacts, avec un angle
+abstract: Systèmes d’IA locaux et open source propose une synthèse claire en français sur le sujet
+  "Systèmes d’IA locaux et open source" dans le graphe public d'Electronic Artefacts, avec un angle
   utile pour la recherche, la conception et la publication de connaissances numériques.
-description: Systèmes d'IA locaux et open source propose une synthèse claire en français sur le
-  sujet "Systèmes d'IA locaux et open source" dans le graphe public d'Electronic Artefacts, avec un
+description: Systèmes d’IA locaux et open source propose une synthèse claire en français sur le
+  sujet "Systèmes d’IA locaux et open source" dans le graphe public d'Electronic Artefacts, avec un
   angle utile pour la recherche, la conception et la publication de connaissances numériques.
 locale: fr
 visibility: public
@@ -33,7 +33,7 @@ subjects:
   - id: ea:technology:llama-cpp
   - id: ea:concept:provenance
 claims:
-  - Systèmes d'IA locaux et open source doit être lisible comme une synthèse française autonome,
+  - Systèmes d’IA locaux et open source doit être lisible comme une synthèse française autonome,
     sans phrases hybrides héritées de l'anglais.
   - Les liens avec les notions, projets et technologies du graphe renforcent la recherche, la
     navigation et la citation.
@@ -56,13 +56,13 @@ sources:
     accessedAt: 2026-06-24
     url: https://arxiv.org/abs/2305.14314
 citation:
-  preferred: Electronic Artefacts. "Systèmes d'IA locaux et open source". Article technique, version
+  preferred: Electronic Artefacts. "Systèmes d’IA locaux et open source". Article technique, version
     1.0.0, 2026.
 tags:
   - IA locale
   - IA open source
-  - Poids ouverts
-  - Quantification
+  - poids ouverts
+  - quantification
   - llama.cpp
 disciplines:
   - intelligence artificielle
@@ -74,7 +74,7 @@ translationOf: ea:publication:local-and-open-source-ai-systems
 
 ## Problème
 
-Systèmes d'IA locaux et open source examine le sujet "Systèmes d'IA locaux et open source" dans le graphe public d'Electronic Artefacts. La fiche donne une entrée française stable, utilisable pour lire le sujet et relier ses sources au reste du graphe.
+Systèmes d’IA locaux et open source examine le sujet "Systèmes d’IA locaux et open source" dans le graphe public d'Electronic Artefacts. La fiche donne une entrée française stable, utilisable pour lire le sujet et relier ses sources au reste du graphe.
 
 ## Architecture
 

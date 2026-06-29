@@ -3,14 +3,14 @@ id: ea:publication:prompt-injection-and-trust-boundaries-in-ai-knowledge-systems
 type: publication
 slug:
   canonical: prompt-injection-and-trust-boundaries-in-ai-knowledge-systems
-title: Injection de prompt et frontieres de confiance dans les systèmes de connaissance IA
+title: Injection de prompt et frontières de confiance dans les systèmes de connaissance IA
 subtitle: Article technique
-abstract: Injection de prompt et frontieres de confiance dans les systèmes de connaissance IA
-  propose une synthèse claire en français sur le sujet "Injection de prompt et frontieres de
+abstract: Injection de prompt et frontières de confiance dans les systèmes de connaissance IA
+  propose une synthèse claire en français sur le sujet "Injection de prompt et frontières de
   confiance dans les systèmes de connaissance IA" dans le graphe public d'Electronic Artefacts, avec
   un angle utile pour la recherche, la conception et la publication de connaissances numériques.
-description: Injection de prompt et frontieres de confiance dans les systèmes de connaissance IA
-  propose une synthèse claire en français sur le sujet "Injection de prompt et frontieres de
+description: Injection de prompt et frontières de confiance dans les systèmes de connaissance IA
+  propose une synthèse claire en français sur le sujet "Injection de prompt et frontières de
   confiance dans les systèmes de connaissance IA" dans le graphe public d'Electronic Artefacts, avec
   un angle utile pour la recherche, la conception et la publication de connaissances numériques.
 locale: fr
@@ -35,7 +35,7 @@ subjects:
   - id: ea:concept:graph-runtime
   - id: ea:technology:model-context-protocol
 claims:
-  - Injection de prompt et frontieres de confiance dans les systèmes de connaissance IA doit être
+  - Injection de prompt et frontières de confiance dans les systèmes de connaissance IA doit être
     lisible comme une synthèse française autonome, sans phrases hybrides héritées de l'anglais.
   - Les liens avec les notions, projets et technologies du graphe renforcent la recherche, la
     navigation et la citation.
@@ -56,7 +56,7 @@ sources:
     accessedAt: 2026-06-25
     url: https://www.nist.gov/itl/ai-risk-management-framework
 citation:
-  preferred: Electronic Artefacts. "Injection de prompt et frontieres de confiance dans les systèmes
+  preferred: Electronic Artefacts. "Injection de prompt et frontières de confiance dans les systèmes
     de connaissance IA". Article technique, version 1.0.0, 2026.
 tags:
   - Prompt Injection
@@ -67,14 +67,14 @@ tags:
 disciplines:
   - intelligence artificielle
   - Security
-  - Knowledge Systems
+  - systèmes de connaissance
   - architecture logicielle
 translationOf: ea:publication:prompt-injection-and-trust-boundaries-in-ai-knowledge-systems
 ---
 
 ## Problème
 
-Injection de prompt et frontieres de confiance dans les systèmes de connaissance IA examine le sujet "Injection de prompt et frontieres de confiance dans les systèmes de connaissance IA" dans le graphe public d'Electronic Artefacts. La fiche donne une entrée française stable, utilisable pour lire le sujet et relier ses sources au reste du graphe.
+Injection de prompt et frontières de confiance dans les systèmes de connaissance IA examine le sujet "Injection de prompt et frontières de confiance dans les systèmes de connaissance IA" dans le graphe public d'Electronic Artefacts. La fiche donne une entrée française stable, utilisable pour lire le sujet et relier ses sources au reste du graphe.
 
 ## Architecture
 

@@ -3,15 +3,15 @@ id: ea:publication:verifiable-credentials-for-cultural-archives-and-creator-iden
 type: publication
 slug:
   canonical: verifiable-credentials-for-cultural-archives-and-creator-identity
-title: Identifiants vérifiables pour les archives culturelles et l'identité des créateurs
+title: Identifiants vérifiables pour les archives culturelles et l’identité des créateurs
 subtitle: Article technique
-abstract: Identifiants vérifiables pour les archives culturelles et l'identité des créateurs propose
+abstract: Identifiants vérifiables pour les archives culturelles et l’identité des créateurs propose
   une synthèse claire en français sur le sujet "Identifiants vérifiables pour les archives
-  culturelles et l'identité des créateurs" dans le graphe public d'Electronic Artefacts, avec un
+  culturelles et l’identité des créateurs" dans le graphe public d'Electronic Artefacts, avec un
   angle utile pour la recherche, la conception et la publication de connaissances numériques.
-description: Identifiants vérifiables pour les archives culturelles et l'identité des créateurs
+description: Identifiants vérifiables pour les archives culturelles et l’identité des créateurs
   propose une synthèse claire en français sur le sujet "Identifiants vérifiables pour les archives
-  culturelles et l'identité des créateurs" dans le graphe public d'Electronic Artefacts, avec un
+  culturelles et l’identité des créateurs" dans le graphe public d'Electronic Artefacts, avec un
   angle utile pour la recherche, la conception et la publication de connaissances numériques.
 locale: fr
 visibility: public
@@ -35,7 +35,7 @@ subjects:
   - id: ea:concept:linked-data
   - id: ea:technology:c2pa
 claims:
-  - Identifiants vérifiables pour les archives culturelles et l'identité des créateurs doit être
+  - Identifiants vérifiables pour les archives culturelles et l’identité des créateurs doit être
     lisible comme une synthèse française autonome, sans phrases hybrides héritées de l'anglais.
   - Les liens avec les notions, projets et technologies du graphe renforcent la recherche, la
     navigation et la citation.
@@ -59,7 +59,7 @@ sources:
     url: https://spec.c2pa.org/specifications/specifications/2.2/index.html
 citation:
   preferred: Electronic Artefacts. "Identifiants vérifiables pour les archives culturelles et
-    l'identité des créateurs". Article technique, version 1.0.0, 2026.
+    l’identité des créateurs". Article technique, version 1.0.0, 2026.
 tags:
   - Verifiable Credentials
   - Creator Identity
@@ -67,8 +67,8 @@ tags:
   - Digital Préservation
   - Cultural Archives
 disciplines:
-  - Cultural Infrastructure
-  - Knowledge Systems
+  - infrastructure culturelle
+  - systèmes de connaissance
   - Digital Préservation
   - Web Standards
 translationOf: ea:publication:verifiable-credentials-for-cultural-archives-and-creator-identity
@@ -76,7 +76,7 @@ translationOf: ea:publication:verifiable-credentials-for-cultural-archives-and-c
 
 ## Problème
 
-Identifiants vérifiables pour les archives culturelles et l'identité des créateurs examine le sujet "Identifiants vérifiables pour les archives culturelles et l'identité des créateurs" dans le graphe public d'Electronic Artefacts. La fiche donne une entrée française stable, utilisable pour lire le sujet et relier ses sources au reste du graphe.
+Identifiants vérifiables pour les archives culturelles et l’identité des créateurs examine le sujet "Identifiants vérifiables pour les archives culturelles et l’identité des créateurs" dans le graphe public d'Electronic Artefacts. La fiche donne une entrée française stable, utilisable pour lire le sujet et relier ses sources au reste du graphe.
 
 ## Architecture
 

@@ -59,10 +59,10 @@
       "keywords": [
         "Typography",
         "Reading Systems",
-        "Interface Design",
+        "conception d'interface",
         "accessibilité",
         "design",
-        "Web Development",
+        "développement web",
         "interaction humain-machine"
       ],
       "inLanguage": "fr",
@@ -117,10 +117,10 @@
       "articleSection": [
         "Typography",
         "design",
-        "Web Development",
+        "développement web",
         "interaction humain-machine",
         "Reading Systems",
-        "Interface Design"
+        "conception d'interface"
       ],
       "timeRequired": "PT1M",
       "isBasedOn": [

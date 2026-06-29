@@ -44,8 +44,8 @@ tags:
   - Linked Data
   - Graph
 disciplines:
-  - Web Development
-  - Knowledge Systems
+  - développement web
+  - systèmes de connaissance
 translationOf: ea:technology:rdf
 ---
 

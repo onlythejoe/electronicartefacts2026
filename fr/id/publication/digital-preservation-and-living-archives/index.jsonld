@@ -62,10 +62,10 @@
         "Provenance",
         "Palimpsests",
         "Vestiges",
-        "Archives",
-        "Digital Art",
-        "Knowledge Systems",
-        "History of Technology"
+        "archives",
+        "art numérique",
+        "systèmes de connaissance",
+        "histoire des technologies"
       ],
       "inLanguage": "fr",
       "dateCreated": "2026-06-23",
@@ -127,10 +127,10 @@
         }
       ],
       "articleSection": [
-        "Archives",
-        "Digital Art",
-        "Knowledge Systems",
-        "History of Technology",
+        "archives",
+        "art numérique",
+        "systèmes de connaissance",
+        "histoire des technologies",
         "Digital Préservation",
         "Living Archive"
       ],

@@ -56,7 +56,7 @@ citation:
   preferred: Electronic Artefacts. "Agents d'IA et workflows d'IA". Article technique, version 1.0.0, 2026.
 tags:
   - agents d'IA
-  - AI Workflows
+  - workflows d'IA
   - orchestration
   - usage d'outils
   - automatisation

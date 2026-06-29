@@ -47,8 +47,8 @@ tags:
   - Permissions
 disciplines:
   - conception de systèmes
-  - Programming
-  - Knowledge Systems
+  - programmation
+  - systèmes de connaissance
   - architecture logicielle
 translationOf: ea:concept:contextual-execution
 ---

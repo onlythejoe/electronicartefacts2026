@@ -57,9 +57,9 @@ tags:
   - Generative Art
 disciplines:
   - programmation créative
-  - Digital Art
-  - Visual Culture
-  - Web Development
+  - art numérique
+  - culture visuelle
+  - développement web
 translationOf: ea:publication:procedural-graphics-shaders-and-visual-systems
 ---
 

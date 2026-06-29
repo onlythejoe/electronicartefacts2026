@@ -56,7 +56,7 @@ disciplines:
   - Cybernetics
   - Complexity
   - conception de systèmes
-  - Digital Art
+  - art numérique
 translationOf: ea:concept:cybernetic-feedback
 ---
 

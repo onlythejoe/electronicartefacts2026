@@ -61,14 +61,14 @@ citation:
     culturels". Article technique, version 1.0.0, 2026.
 tags:
   - Responsible AI
-  - AI Governance
-  - Creative Technology
-  - Cultural Infrastructure
+  - gouvernance de l'IA
+  - technologies créatives
+  - infrastructure culturelle
   - Provenance
 disciplines:
   - intelligence artificielle
-  - Cultural Infrastructure
-  - Knowledge Systems
+  - infrastructure culturelle
+  - systèmes de connaissance
   - conception de systèmes
 translationOf: ea:publication:responsible-ai-governance-for-creative-and-cultural-systems
 ---

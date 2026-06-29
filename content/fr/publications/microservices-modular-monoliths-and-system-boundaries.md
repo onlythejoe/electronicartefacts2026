@@ -73,7 +73,7 @@ tags:
 disciplines:
   - architecture logicielle
   - conception de systèmes
-  - Programming
+  - programmation
   - Distributed Systems
 translationOf: ea:publication:microservices-modular-monoliths-and-system-boundaries
 ---

@@ -68,7 +68,7 @@ tags:
   - OWL
   - Knowledge Modeling
 disciplines:
-  - Knowledge Systems
+  - systèmes de connaissance
   - Information Architecture
   - Semantic Web
   - Philosophy

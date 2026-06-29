@@ -64,9 +64,9 @@ tags:
   - Linked Data
 disciplines:
   - Digital Préservation
-  - Cultural Infrastructure
-  - Knowledge Systems
-  - Web Development
+  - infrastructure culturelle
+  - systèmes de connaissance
+  - développement web
 translationOf: ea:publication:iiif-and-compound-cultural-objects
 ---
 

@@ -64,7 +64,7 @@ tags:
   - Information Architecture
   - VASTE
 disciplines:
-  - Knowledge Systems
+  - systèmes de connaissance
   - conception de systèmes
   - Information Architecture
   - architecture logicielle

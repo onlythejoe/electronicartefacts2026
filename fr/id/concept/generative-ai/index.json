@@ -29,15 +29,15 @@
   "publisher": "ea:organization:electronic-artefacts",
   "tags": [
     "Generative AI",
-    "Machine Learning",
+    "apprentissage automatique",
     "Provenance",
     "Creative Workflows"
   ],
   "disciplines": [
     "intelligence artificielle",
-    "Machine Learning",
+    "apprentissage automatique",
     "programmation créative",
-    "Digital Art"
+    "art numérique"
   ],
   "sources": [
     {

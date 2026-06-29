@@ -42,7 +42,7 @@ tags:
 disciplines:
   - architecture logicielle
   - Distributed Systems
-  - Programming
+  - programmation
 ---
 
 ## Rôle

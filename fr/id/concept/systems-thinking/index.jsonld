@@ -5,15 +5,15 @@
       "@type": "WebPage",
       "@id": "https://electronicartefacts.com/fr/knowledge/concepts/systems-thinking/#webpage",
       "url": "https://electronicartefacts.com/fr/knowledge/concepts/systems-thinking/",
-      "name": "Pensée systemique",
-      "description": "Pensée systemique définit un repère conceptuel en français pour comprendre la lecture des situations par relations, limites, boucles, flux, delais et points de levier et ses liens avec les projets, technologies et publications du graphe.",
+      "name": "Pensée systémique",
+      "description": "Pensée systémique définit un repère conceptuel en français pour comprendre la lecture des situations par relations, limites, boucles, flux, delais et points de levier et ses liens avec les projets, technologies et publications du graphe.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
       "primaryImageOfPage": {
         "@type": "ImageObject",
         "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-search.jpg",
-        "description": "Pensée systemique"
+        "description": "Pensée systémique"
       },
       "breadcrumb": {
         "@id": "https://electronicartefacts.com/fr/knowledge/concepts/systems-thinking/#breadcrumb"
@@ -33,9 +33,9 @@
       "@type": "DefinedTerm",
       "@id": "https://electronicartefacts.com/fr/id/concept/systems-thinking/",
       "identifier": "ea:concept:systems-thinking-fr",
-      "name": "Pensée systemique",
-      "abstract": "Pensée systemique définit un repère conceptuel en français pour comprendre la lecture des situations par relations, limites, boucles, flux, delais et points de levier et ses liens avec les projets, technologies et publications du graphe.",
-      "description": "Pensée systemique désigne la lecture des situations par relations, limites, boucles, flux, delais et points de levier.",
+      "name": "Pensée systémique",
+      "abstract": "Pensée systémique définit un repère conceptuel en français pour comprendre la lecture des situations par relations, limites, boucles, flux, delais et points de levier et ses liens avec les projets, technologies et publications du graphe.",
+      "description": "Pensée systémique désigne la lecture des situations par relations, limites, boucles, flux, delais et points de levier.",
       "url": "https://electronicartefacts.com/fr/knowledge/concepts/systems-thinking/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/knowledge/concepts/systems-thinking/#webpage"
@@ -43,7 +43,7 @@
       "image": {
         "@type": "ImageObject",
         "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-search.jpg",
-        "description": "Pensée systemique"
+        "description": "Pensée systémique"
       },
       "author": [
         {
@@ -194,7 +194,7 @@
         {
           "@type": "ListItem",
           "position": 3,
-          "name": "Pensée systemique",
+          "name": "Pensée systémique",
           "item": "https://electronicartefacts.com/fr/knowledge/concepts/systems-thinking/"
         }
       ]

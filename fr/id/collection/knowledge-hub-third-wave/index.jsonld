@@ -5,15 +5,15 @@
       "@type": "WebPage",
       "@id": "https://electronicartefacts.com/fr/archive/collections/knowledge-hub-third-wave/#webpage",
       "url": "https://electronicartefacts.com/fr/archive/collections/knowledge-hub-third-wave/",
-      "name": "Hub de connaissance, troisieme vague",
-      "description": "Hub de connaissance, troisieme vague organise des fiches reliées autour de le sujet \"Hub de connaissance, troisieme vague\" dans le graphe public d'Electronic Artefacts, afin de donner une progression lisible aux archives de connaissance d'Electronic Artefacts.",
+      "name": "Hub de connaissance, troisième vague",
+      "description": "Hub de connaissance, troisième vague rassemble des fiches liées par un même axe éditorial, afin de donner une progression lisible aux archives de connaissance d'Electronic Artefacts.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
       "primaryImageOfPage": {
         "@type": "ImageObject",
         "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-search.jpg",
-        "description": "Hub de connaissance, troisieme vague"
+        "description": "Hub de connaissance, troisième vague"
       },
       "breadcrumb": {
         "@id": "https://electronicartefacts.com/fr/archive/collections/knowledge-hub-third-wave/#breadcrumb"
@@ -33,9 +33,9 @@
       "@type": "CreativeWork",
       "@id": "https://electronicartefacts.com/fr/id/collection/knowledge-hub-third-wave/",
       "identifier": "ea:collection:knowledge-hub-third-wave-fr",
-      "name": "Hub de connaissance, troisieme vague",
-      "abstract": "Hub de connaissance, troisieme vague organise des fiches reliées autour de le sujet \"Hub de connaissance, troisieme vague\" dans le graphe public d'Electronic Artefacts, afin de donner une progression lisible aux archives de connaissance d'Electronic Artefacts.",
-      "description": "Hub de connaissance, troisieme vague organise des fiches reliées autour de le sujet \"Hub de connaissance, troisieme vague\" dans le graphe public d'Electronic Artefacts, afin de donner une progression lisible aux archives de connaissance d'Electronic Artefacts.",
+      "name": "Hub de connaissance, troisième vague",
+      "abstract": "Hub de connaissance, troisième vague rassemble des fiches liées par un même axe éditorial, afin de donner une progression lisible aux archives de connaissance d'Electronic Artefacts.",
+      "description": "Hub de connaissance, troisième vague rassemble des fiches liées par un même axe éditorial, afin de donner une progression lisible aux archives de connaissance d'Electronic Artefacts.",
       "url": "https://electronicartefacts.com/fr/archive/collections/knowledge-hub-third-wave/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/archive/collections/knowledge-hub-third-wave/#webpage"
@@ -43,7 +43,7 @@
       "image": {
         "@type": "ImageObject",
         "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-search.jpg",
-        "description": "Hub de connaissance, troisieme vague"
+        "description": "Hub de connaissance, troisième vague"
       },
       "author": [
         {
@@ -56,15 +56,15 @@
         }
       ],
       "keywords": [
-        "Hub de connaissance",
-        "Troisième vague",
+        "hub de connaissance",
+        "troisième vague",
         "intelligence artificielle",
-        "Architecture des systèmes",
-        "Calcul sur graphe",
+        "architecture des systèmes",
+        "calcul sur graphe",
         "conception de systèmes",
-        "Systèmes de connaissance",
+        "systèmes de connaissance",
         "architecture logicielle",
-        "Technologies créatives"
+        "technologies créatives"
       ],
       "inLanguage": "fr",
       "dateCreated": "2026-06-24",
@@ -77,7 +77,7 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 93
+      "wordCount": 77
     },
     {
       "@type": "Organization",
@@ -183,7 +183,7 @@
         {
           "@type": "ListItem",
           "position": 3,
-          "name": "Hub de connaissance, troisieme vague",
+          "name": "Hub de connaissance, troisième vague",
           "item": "https://electronicartefacts.com/fr/archive/collections/knowledge-hub-third-wave/"
         }
       ]

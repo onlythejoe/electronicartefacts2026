@@ -57,15 +57,15 @@
         }
       ],
       "keywords": [
-        "Moteur d'exécution",
-        "Système d'exploitation de domaine",
-        "Système d'exploitation métier",
+        "moteur d'exécution",
+        "système d'exploitation de domaine",
+        "système d'exploitation métier",
         "VASTE",
-        "Systèmes composables",
+        "systèmes composables",
         "conception de systèmes",
         "architecture logicielle",
         "programmation",
-        "Systèmes de connaissance"
+        "systèmes de connaissance"
       ],
       "inLanguage": "fr",
       "dateCreated": "2026-06-24",
@@ -138,9 +138,9 @@
         "conception de systèmes",
         "architecture logicielle",
         "programmation",
-        "Systèmes de connaissance",
-        "Moteur d'exécution",
-        "Système d'exploitation de domaine"
+        "systèmes de connaissance",
+        "moteur d'exécution",
+        "système d'exploitation de domaine"
       ],
       "timeRequired": "PT1M",
       "isBasedOn": [

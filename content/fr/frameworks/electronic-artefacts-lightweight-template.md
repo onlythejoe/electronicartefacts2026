@@ -42,7 +42,7 @@ tags:
   - Framework front-end
 disciplines:
   - Développement web
-  - Design Technology
+  - Technologies de design
   - Technologies créatives
   - Systèmes de connaissance
 ---

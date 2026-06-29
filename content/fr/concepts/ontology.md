@@ -57,7 +57,7 @@ tags:
   - OWL
   - Controlled Vocabulary
 disciplines:
-  - Knowledge Systems
+  - systèmes de connaissance
   - Information Architecture
   - Philosophy
   - Semantic Web

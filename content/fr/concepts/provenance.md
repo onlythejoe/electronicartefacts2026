@@ -52,9 +52,9 @@ tags:
   - Trust
   - Archive
 disciplines:
-  - Archives
-  - Research Methods
-  - Knowledge Systems
+  - archives
+  - méthodes de recherche
+  - systèmes de connaissance
 translationOf: ea:concept:provenance
 ---
 

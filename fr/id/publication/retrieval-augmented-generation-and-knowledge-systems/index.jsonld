@@ -63,9 +63,9 @@
         "Embeddings",
         "Citations",
         "intelligence artificielle",
-        "Knowledge Systems",
+        "systèmes de connaissance",
         "Information Architecture",
-        "Machine Learning"
+        "apprentissage automatique"
       ],
       "inLanguage": "fr",
       "dateCreated": "2026-06-24",
@@ -128,9 +128,9 @@
       ],
       "articleSection": [
         "intelligence artificielle",
-        "Knowledge Systems",
+        "systèmes de connaissance",
         "Information Architecture",
-        "Machine Learning",
+        "apprentissage automatique",
         "RAG",
         "graphe de connaissances"
       ],

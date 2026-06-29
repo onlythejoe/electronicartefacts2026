@@ -47,14 +47,14 @@ sources:
     url: https://www.nist.gov/itl/ai-risk-management-framework
 tags:
   - Generative AI
-  - Machine Learning
+  - apprentissage automatique
   - Provenance
   - Creative Workflows
 disciplines:
   - intelligence artificielle
-  - Machine Learning
+  - apprentissage automatique
   - programmation créative
-  - Digital Art
+  - art numérique
 translationOf: ea:concept:generative-ai
 ---
 

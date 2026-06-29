@@ -43,8 +43,8 @@ tags:
   - Presentation API
 disciplines:
   - Digital Préservation
-  - Cultural Infrastructure
-  - Knowledge Systems
+  - infrastructure culturelle
+  - systèmes de connaissance
 translationOf: ea:technology:iiif
 ---
 

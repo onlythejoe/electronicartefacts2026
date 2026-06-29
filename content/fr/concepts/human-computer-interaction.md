@@ -46,13 +46,13 @@ sources:
     url: https://www.w3.org/WAI/standards-guidelines/wcag/
 tags:
   - interaction humain-machine
-  - Interface Design
+  - conception d'interface
   - accessibilité
   - outils créatifs
 disciplines:
   - interaction humain-machine
   - design
-  - Web Development
+  - développement web
   - intelligence artificielle
 translationOf: ea:concept:human-computer-interaction
 ---

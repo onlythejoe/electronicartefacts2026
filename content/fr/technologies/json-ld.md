@@ -44,8 +44,8 @@ tags:
   - Structured Data
   - SEO
 disciplines:
-  - Web Development
-  - Knowledge Systems
+  - développement web
+  - systèmes de connaissance
   - SEO
 translationOf: ea:technology:json-ld
 ---

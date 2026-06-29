@@ -41,9 +41,9 @@ tags:
   - Federation
   - Social Web
 disciplines:
-  - Internet Culture
-  - Network Culture
-  - Web Development
+  - culture Internet
+  - culture des réseaux
+  - développement web
 ---
 
 ## Rôle

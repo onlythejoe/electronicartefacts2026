@@ -57,9 +57,9 @@ tags:
   - Versioning
   - graphe de connaissances
 disciplines:
-  - Knowledge Systems
-  - Web Development
-  - Archives
+  - systèmes de connaissance
+  - développement web
+  - archives
 translationOf: ea:concept:entity-identity
 ---
 

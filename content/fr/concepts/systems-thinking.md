@@ -3,13 +3,13 @@ id: ea:concept:systems-thinking-fr
 type: concept
 slug:
   canonical: systems-thinking
-title: Pensée systemique
-definition: Pensée systemique désigne la lecture des situations par relations, limites, boucles,
+title: Pensée systémique
+definition: Pensée systémique désigne la lecture des situations par relations, limites, boucles,
   flux, delais et points de levier.
-abstract: Pensée systemique définit un repère conceptuel en français pour comprendre la lecture des
+abstract: Pensée systémique définit un repère conceptuel en français pour comprendre la lecture des
   situations par relations, limites, boucles, flux, delais et points de levier et ses liens avec les
   projets, technologies et publications du graphe.
-description: Pensée systemique définit un repère conceptuel en français pour comprendre la lecture
+description: Pensée systémique définit un repère conceptuel en français pour comprendre la lecture
   des situations par relations, limites, boucles, flux, delais et points de levier et ses liens avec
   les projets, technologies et publications du graphe.
 locale: fr
@@ -35,7 +35,7 @@ exclusions:
   - les usages purement promotionnels sans définition vérifiable
   - les exemples déconnectés des sources, relations ou contraintes du graphe
 claims:
-  - Pensée systemique devient utile lorsque sa définition reste reliée à des sources, des pratiques
+  - Pensée systémique devient utile lorsque sa définition reste reliée à des sources, des pratiques
     et des objets observables.
   - La fiche sert de vocabulaire commun pour relier projets, publications et technologies sans
     mélanger les langues.
@@ -62,7 +62,7 @@ translationOf: ea:concept:systems-thinking
 
 ## Rôle
 
-Pensée systemique est documenté comme notion de référence pour comprendre la lecture des situations par relations, limites, boucles, flux, delais et points de levier.
+Pensée systémique est documenté comme notion de référence pour comprendre la lecture des situations par relations, limites, boucles, flux, delais et points de levier.
 
 ## Usage
 

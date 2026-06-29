@@ -40,8 +40,8 @@ tags:
   - Browser Audio
   - Audio Graph
 disciplines:
-  - Audio Engineering
-  - Web Development
+  - ingénierie audio
+  - développement web
   - programmation créative
 translationOf: ea:technology:web-audio-api
 ---

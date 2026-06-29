@@ -47,13 +47,13 @@ sources:
     url: https://www.dublincore.org/specifications/dublin-core/dcmi-terms/
 tags:
   - Metadata
-  - Archives
+  - archives
   - Cataloguing
   - Préservation
 disciplines:
-  - Archives
-  - Knowledge Systems
-  - Research Methods
+  - archives
+  - systèmes de connaissance
+  - méthodes de recherche
   - Digital Préservation
 translationOf: ea:concept:metadata
 ---

@@ -63,12 +63,12 @@ tags:
   - Transformer
   - Attention
   - Tokenization
-  - Inference
+  - inférence
 disciplines:
   - intelligence artificielle
-  - Machine Learning
-  - Programming
-  - Knowledge Systems
+  - apprentissage automatique
+  - programmation
+  - systèmes de connaissance
 translationOf: ea:publication:how-large-language-models-actually-work
 ---
 

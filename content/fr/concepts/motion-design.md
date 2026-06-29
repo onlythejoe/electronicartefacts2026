@@ -49,12 +49,12 @@ tags:
   - Motion Design
   - Animation
   - Interface
-  - Visual Culture
+  - culture visuelle
 disciplines:
   - Motion Design
   - design
   - interaction humain-machine
-  - Web Development
+  - développement web
 translationOf: ea:concept:motion-design
 ---
 

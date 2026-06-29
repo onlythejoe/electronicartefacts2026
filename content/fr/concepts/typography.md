@@ -47,13 +47,13 @@ sources:
 tags:
   - Typography
   - Reading
-  - Interface Design
+  - conception d'interface
   - accessibilité
 disciplines:
   - Typography
   - design
-  - Visual Culture
-  - Web Development
+  - culture visuelle
+  - développement web
 translationOf: ea:concept:typography
 ---
 

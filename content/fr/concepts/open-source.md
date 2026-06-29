@@ -3,13 +3,13 @@ id: ea:concept:open-source-fr
 type: concept
 slug:
   canonical: open-source
-title: Open source
-definition: Open source désigne les pratiques de publication, maintenance et cooperation fondees sur
+title: open source
+definition: open source désigne les pratiques de publication, maintenance et cooperation fondees sur
   du code et des ressources ouverts.
-abstract: Open source définit un repère conceptuel en français pour comprendre les pratiques de
+abstract: open source définit un repère conceptuel en français pour comprendre les pratiques de
   publication, maintenance et cooperation fondees sur du code et des ressources ouverts et ses liens
   avec les projets, technologies et publications du graphe.
-description: Open source définit un repère conceptuel en français pour comprendre les pratiques de
+description: open source définit un repère conceptuel en français pour comprendre les pratiques de
   publication, maintenance et cooperation fondees sur du code et des ressources ouverts et ses liens
   avec les projets, technologies et publications du graphe.
 locale: fr
@@ -35,7 +35,7 @@ exclusions:
   - les usages purement promotionnels sans définition vérifiable
   - les exemples déconnectés des sources, relations ou contraintes du graphe
 claims:
-  - Open source devient utile lorsque sa définition reste reliée à des sources, des pratiques et des
+  - open source devient utile lorsque sa définition reste reliée à des sources, des pratiques et des
     objets observables.
   - La fiche sert de vocabulaire commun pour relier projets, publications et technologies sans
     mélanger les langues.
@@ -46,20 +46,20 @@ sources:
     url: https://opensource.org/osd
 tags:
   - open source
-  - Logiciel
-  - Communs
-  - Infrastructure
+  - logiciel
+  - communs
+  - infrastructure
 disciplines:
   - open source
   - programmation
   - programmation créative
-  - Activités créatives
+  - activité créative
 translationOf: ea:concept:open-source
 ---
 
 ## Rôle
 
-Open source est documenté comme notion de référence pour comprendre les pratiques de publication, maintenance et cooperation fondees sur du code et des ressources ouverts.
+open source est documenté comme notion de référence pour comprendre les pratiques de publication, maintenance et cooperation fondees sur du code et des ressources ouverts.
 
 ## Usage
 

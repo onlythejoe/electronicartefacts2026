@@ -45,15 +45,15 @@ sources:
     accessedAt: 2026-06-24
     url: https://opensource.org/ai/open-source-ai-definition
 tags:
-  - Open Weights
-  - Local AI
-  - Model Licensing
-  - Quantization
+  - poids ouverts
+  - IA locale
+  - licence de modèle
+  - quantification
 disciplines:
   - intelligence artificielle
-  - Open Source
-  - Programming
-  - Digital Independence
+  - open source
+  - programmation
+  - indépendance numérique
 translationOf: ea:concept:open-weight-model
 ---
 

@@ -46,8 +46,8 @@ tags:
   - Generative Art
 disciplines:
   - programmation créative
-  - Visual Culture
-  - Digital Art
+  - culture visuelle
+  - art numérique
   - Motion Design
 translationOf: ea:concept:procedural-graphics
 ---

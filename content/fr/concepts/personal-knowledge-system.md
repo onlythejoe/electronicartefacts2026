@@ -40,14 +40,14 @@ claims:
   - La fiche sert de vocabulaire commun pour relier projets, publications et technologies sans
     mélanger les langues.
 tags:
-  - Personal Knowledge Management
-  - Digital Gardens
+  - gestion personnelle des connaissances
+  - jardins numériques
   - Notes
   - Research
 disciplines:
-  - Knowledge Systems
-  - Research Methods
-  - Internet Culture
+  - systèmes de connaissance
+  - méthodes de recherche
+  - culture Internet
   - Writing
 translationOf: ea:concept:personal-knowledge-system
 ---

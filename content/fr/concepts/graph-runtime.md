@@ -48,7 +48,7 @@ tags:
   - Identity
   - Exécution
 disciplines:
-  - Software architecture
+  - architecture logicielle
   - Knowledge systems
 translationOf: ea:concept:graph-runtime
 ---

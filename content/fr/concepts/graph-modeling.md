@@ -46,7 +46,7 @@ tags:
   - Domain Modeling
   - graphe de connaissances
 disciplines:
-  - Knowledge Systems
+  - systèmes de connaissance
   - conception de systèmes
   - Information Architecture
   - architecture logicielle

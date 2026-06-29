@@ -51,8 +51,8 @@ tags:
   - Sound Design
   - programmation créative
 disciplines:
-  - Audio Engineering
-  - Web Development
+  - ingénierie audio
+  - développement web
   - programmation créative
   - Sound Design
 translationOf: ea:concept:web-audio

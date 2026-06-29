@@ -63,9 +63,9 @@
         "Metadata",
         "Linked Data",
         "Digital Préservation",
-        "Cultural Infrastructure",
-        "Knowledge Systems",
-        "Web Development"
+        "infrastructure culturelle",
+        "systèmes de connaissance",
+        "développement web"
       ],
       "inLanguage": "fr",
       "dateCreated": "2026-06-24",
@@ -127,9 +127,9 @@
       ],
       "articleSection": [
         "Digital Préservation",
-        "Cultural Infrastructure",
-        "Knowledge Systems",
-        "Web Development",
+        "infrastructure culturelle",
+        "systèmes de connaissance",
+        "développement web",
         "IIIF",
         "Digital Archives"
       ],

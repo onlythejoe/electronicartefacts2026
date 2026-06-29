@@ -66,9 +66,9 @@ tags:
   - SEO
   - Knowledge Pages
 disciplines:
-  - Web Development
+  - développement web
   - SEO
-  - Knowledge Systems
+  - systèmes de connaissance
 translationOf: ea:publication:linked-data-and-public-knowledge-pages
 ---
 

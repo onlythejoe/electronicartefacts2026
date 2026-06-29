@@ -57,9 +57,9 @@ tags:
   - Relations
   - Search
 disciplines:
-  - Knowledge Systems
+  - systèmes de connaissance
   - Information Architecture
-  - Web Development
+  - développement web
   - Research
 translationOf: ea:concept:knowledge-graph
 ---

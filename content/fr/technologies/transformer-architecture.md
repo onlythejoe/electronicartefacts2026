@@ -43,7 +43,7 @@ tags:
   - Neural Networks
 disciplines:
   - intelligence artificielle
-  - Machine Learning
+  - apprentissage automatique
 ---
 
 ## Rôle

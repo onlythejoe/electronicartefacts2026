@@ -57,10 +57,10 @@ tags:
   - Provenance
   - Memory
 disciplines:
-  - Archives
-  - History of Technology
-  - Knowledge Systems
-  - Digital Art
+  - archives
+  - histoire des technologies
+  - systèmes de connaissance
+  - art numérique
 translationOf: ea:concept:digital-preservation
 ---
 

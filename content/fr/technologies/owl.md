@@ -43,7 +43,7 @@ tags:
   - Ontology
   - Semantic Web
 disciplines:
-  - Knowledge Systems
+  - systèmes de connaissance
   - Semantic Web
 ---
 

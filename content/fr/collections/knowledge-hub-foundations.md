@@ -5,12 +5,10 @@ slug:
   canonical: knowledge-hub-foundations
 title: Fondations du hub de connaissance
 subtitle: Collection éditoriale
-abstract: Fondations du hub de connaissance organise des fiches reliées autour de le sujet
-  "Fondations du hub de connaissance" dans le graphe public d'Electronic Artefacts, afin de donner
-  une progression lisible aux archives de connaissance d'Electronic Artefacts.
-description: Fondations du hub de connaissance organise des fiches reliées autour de le sujet
-  "Fondations du hub de connaissance" dans le graphe public d'Electronic Artefacts, afin de donner
-  une progression lisible aux archives de connaissance d'Electronic Artefacts.
+abstract: Fondations du hub de connaissance rassemble des fiches liées par un même axe éditorial,
+  afin de donner une progression lisible aux archives de connaissance d'Electronic Artefacts.
+description: Fondations du hub de connaissance rassemble des fiches liées par un même axe éditorial,
+  afin de donner une progression lisible aux archives de connaissance d'Electronic Artefacts.
 locale: fr
 visibility: public
 publicationClass: published
@@ -53,25 +51,25 @@ explicitMembers:
 selectionNote: La sélection privilégie des contenus stables, reliables et utiles pour parcourir le
   hub de connaissance en français.
 tags:
-  - Hub de connaissance
-  - Collection éditoriale
-  - Fondations
-  - Bibliothèque de recherche
-  - Publication sémantique
+  - hub de connaissance
+  - collection éditoriale
+  - fondations
+  - bibliothèque de recherche
+  - Semantic Publishing
 disciplines:
-  - Systèmes de connaissance
+  - systèmes de connaissance
   - archives
   - programmation créative
-  - Ingénierie audio
-  - Art numérique
+  - ingénierie audio
+  - art numérique
 translationOf: ea:collection:knowledge-hub-foundations
 ---
 
 ## Intention
 
-Fondations du hub de connaissance rassemble des fiches qui partagent un même axe de lecture autour de le sujet "Fondations du hub de connaissance" dans le graphe public d'Electronic Artefacts.
+Fondations du hub de connaissance rassemble des fiches liées par un même axe éditorial.
 
-## Selection
+## Sélection
 
 La collection organise les contenus par proximité éditoriale, par utilité de navigation et par potentiel de liens internes. Elle permet de parcourir le hub de connaissance sans perdre la cohérence du sujet.
 

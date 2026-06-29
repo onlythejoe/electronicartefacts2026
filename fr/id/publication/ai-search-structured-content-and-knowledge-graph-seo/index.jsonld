@@ -5,15 +5,15 @@
       "@type": "WebPage",
       "@id": "https://electronicartefacts.com/fr/publications/ai-search-structured-content-and-knowledge-graph-seo/#webpage",
       "url": "https://electronicartefacts.com/fr/publications/ai-search-structured-content-and-knowledge-graph-seo/",
-      "name": "Recherche IA, contenu structure et SEO par graphe de connaissances",
-      "description": "Recherche IA, contenu structure et SEO par graphe de connaissances propose une synthèse claire en français sur le sujet \"Recherche IA, contenu structure et SEO par graphe de connaissances\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
+      "name": "Recherche IA, contenu structuré et SEO par graphe de connaissances",
+      "description": "Recherche IA, contenu structuré et SEO par graphe de connaissances propose une synthèse claire en français sur le sujet \"Recherche IA, contenu structuré et SEO par graphe de connaissances\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
       "primaryImageOfPage": {
         "@type": "ImageObject",
         "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-search.jpg",
-        "description": "Recherche IA, contenu structure et SEO par graphe de connaissances"
+        "description": "Recherche IA, contenu structuré et SEO par graphe de connaissances"
       },
       "breadcrumb": {
         "@id": "https://electronicartefacts.com/fr/publications/ai-search-structured-content-and-knowledge-graph-seo/#breadcrumb"
@@ -33,10 +33,10 @@
       "@type": "TechArticle",
       "@id": "https://electronicartefacts.com/fr/id/publication/ai-search-structured-content-and-knowledge-graph-seo/",
       "identifier": "ea:publication:ai-search-structured-content-and-knowledge-graph-seo-fr",
-      "name": "Recherche IA, contenu structure et SEO par graphe de connaissances",
-      "headline": "Recherche IA, contenu structure et SEO par graphe de connaissances",
-      "abstract": "Recherche IA, contenu structure et SEO par graphe de connaissances propose une synthèse claire en français sur le sujet \"Recherche IA, contenu structure et SEO par graphe de connaissances\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
-      "description": "Recherche IA, contenu structure et SEO par graphe de connaissances propose une synthèse claire en français sur le sujet \"Recherche IA, contenu structure et SEO par graphe de connaissances\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
+      "name": "Recherche IA, contenu structuré et SEO par graphe de connaissances",
+      "headline": "Recherche IA, contenu structuré et SEO par graphe de connaissances",
+      "abstract": "Recherche IA, contenu structuré et SEO par graphe de connaissances propose une synthèse claire en français sur le sujet \"Recherche IA, contenu structuré et SEO par graphe de connaissances\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
+      "description": "Recherche IA, contenu structuré et SEO par graphe de connaissances propose une synthèse claire en français sur le sujet \"Recherche IA, contenu structuré et SEO par graphe de connaissances\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
       "url": "https://electronicartefacts.com/fr/publications/ai-search-structured-content-and-knowledge-graph-seo/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/publications/ai-search-structured-content-and-knowledge-graph-seo/#webpage"
@@ -44,7 +44,7 @@
       "image": {
         "@type": "ImageObject",
         "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-search.jpg",
-        "description": "Recherche IA, contenu structure et SEO par graphe de connaissances"
+        "description": "Recherche IA, contenu structuré et SEO par graphe de connaissances"
       },
       "author": [
         {
@@ -57,14 +57,14 @@
         }
       ],
       "keywords": [
-        "AI Search",
+        "recherche IA",
         "SEO par graphe de connaissances",
         "Structured Data",
         "JSON-LD",
         "Entity SEO",
         "SEO",
-        "Knowledge Systems",
-        "Web Development",
+        "systèmes de connaissance",
+        "développement web",
         "Information Architecture"
       ],
       "inLanguage": "fr",
@@ -80,7 +80,7 @@
       "isAccessibleForFree": true,
       "wordCount": 151,
       "citation": [
-        "Electronic Artefacts. \"Recherche IA, contenu structure et SEO par graphe de connaissances\". Article technique, version 1.0.0, 2026.",
+        "Electronic Artefacts. \"Recherche IA, contenu structuré et SEO par graphe de connaissances\". Article technique, version 1.0.0, 2026.",
         {
           "@type": "CreativeWork",
           "name": "Optimizing your website for generative AI features on Google Search",
@@ -130,10 +130,10 @@
       ],
       "articleSection": [
         "SEO",
-        "Knowledge Systems",
-        "Web Development",
+        "systèmes de connaissance",
+        "développement web",
         "Information Architecture",
-        "AI Search",
+        "recherche IA",
         "SEO par graphe de connaissances"
       ],
       "timeRequired": "PT1M",
@@ -262,7 +262,7 @@
         {
           "@type": "ListItem",
           "position": 3,
-          "name": "Recherche IA, contenu structure et SEO par graphe de connaissances",
+          "name": "Recherche IA, contenu structuré et SEO par graphe de connaissances",
           "item": "https://electronicartefacts.com/fr/publications/ai-search-structured-content-and-knowledge-graph-seo/"
         }
       ]

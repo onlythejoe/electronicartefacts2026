@@ -61,11 +61,11 @@
         "Transformer",
         "Attention",
         "Tokenization",
-        "Inference",
+        "inférence",
         "intelligence artificielle",
-        "Machine Learning",
-        "Programming",
-        "Knowledge Systems"
+        "apprentissage automatique",
+        "programmation",
+        "systèmes de connaissance"
       ],
       "inLanguage": "fr",
       "dateCreated": "2026-06-24",
@@ -125,9 +125,9 @@
       ],
       "articleSection": [
         "intelligence artificielle",
-        "Machine Learning",
-        "Programming",
-        "Knowledge Systems",
+        "apprentissage automatique",
+        "programmation",
+        "systèmes de connaissance",
         "LLM",
         "Transformer"
       ],

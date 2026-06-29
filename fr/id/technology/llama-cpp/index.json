@@ -28,14 +28,14 @@
   "publisher": "ea:organization:electronic-artefacts",
   "tags": [
     "llama.cpp",
-    "Local AI",
-    "Inference",
-    "Quantization"
+    "IA locale",
+    "inférence",
+    "quantification"
   ],
   "disciplines": [
     "intelligence artificielle",
-    "Programming",
-    "Open Source"
+    "programmation",
+    "open source"
   ],
   "sources": [
     {

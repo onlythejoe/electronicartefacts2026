@@ -58,8 +58,8 @@ tags:
   - RDF
   - URI
 disciplines:
-  - Knowledge Systems
-  - Web Development
+  - systèmes de connaissance
+  - développement web
   - SEO
   - Information Architecture
 translationOf: ea:concept:linked-data

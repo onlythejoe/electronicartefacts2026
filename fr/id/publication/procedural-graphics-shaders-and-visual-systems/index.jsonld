@@ -62,9 +62,9 @@
         "WebGL",
         "Generative Art",
         "programmation créative",
-        "Digital Art",
-        "Visual Culture",
-        "Web Development"
+        "art numérique",
+        "culture visuelle",
+        "développement web"
       ],
       "inLanguage": "fr",
       "dateCreated": "2026-06-24",
@@ -114,9 +114,9 @@
       ],
       "articleSection": [
         "programmation créative",
-        "Digital Art",
-        "Visual Culture",
-        "Web Development",
+        "art numérique",
+        "culture visuelle",
+        "développement web",
         "Procedural Graphics",
         "Shaders"
       ],

@@ -62,8 +62,8 @@
         "Structured Data",
         "SEO",
         "Knowledge Pages",
-        "Web Development",
-        "Knowledge Systems"
+        "développement web",
+        "systèmes de connaissance"
       ],
       "inLanguage": "fr",
       "dateCreated": "2026-06-23",
@@ -123,9 +123,9 @@
         }
       ],
       "articleSection": [
-        "Web Development",
+        "développement web",
         "SEO",
-        "Knowledge Systems",
+        "systèmes de connaissance",
         "Linked Data",
         "JSON-LD",
         "Structured Data"

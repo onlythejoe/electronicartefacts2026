@@ -64,16 +64,16 @@ citation:
   preferred: Electronic Artefacts. "Moteurs d'exécution et systèmes d'exploitation de domaine".
     Article technique, version 1.0.0, 2026.
 tags:
-  - Moteur d'exécution
-  - Système d'exploitation de domaine
-  - Système d'exploitation métier
+  - moteur d'exécution
+  - système d'exploitation de domaine
+  - système d'exploitation métier
   - VASTE
-  - Systèmes composables
+  - systèmes composables
 disciplines:
   - conception de systèmes
   - architecture logicielle
   - programmation
-  - Systèmes de connaissance
+  - systèmes de connaissance
 translationOf: ea:publication:runtime-engines-and-domain-operating-systems
 ---
 

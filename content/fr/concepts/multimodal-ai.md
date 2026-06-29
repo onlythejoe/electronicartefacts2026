@@ -54,9 +54,9 @@ tags:
   - Cross-Modal Retrieval
 disciplines:
   - intelligence artificielle
-  - Machine Learning
-  - Digital Art
-  - Audio Engineering
+  - apprentissage automatique
+  - art numérique
+  - ingénierie audio
 translationOf: ea:concept:multimodal-ai
 ---
 

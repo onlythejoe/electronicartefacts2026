@@ -55,13 +55,13 @@ sources:
 tags:
   - Hypertext
   - Web
-  - Knowledge Systems
+  - systèmes de connaissance
   - Digital Archives
 disciplines:
-  - Knowledge Systems
-  - Internet Culture
-  - Web Development
-  - History of Technology
+  - systèmes de connaissance
+  - culture Internet
+  - développement web
+  - histoire des technologies
 translationOf: ea:concept:hypertext
 ---
 

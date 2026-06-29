@@ -64,7 +64,7 @@ tags:
   - Provenance
 disciplines:
   - intelligence artificielle
-  - Machine Learning
+  - apprentissage automatique
   - programmation créative
   - interaction humain-machine
 translationOf: ea:publication:generative-ai-latent-space-and-creative-workflows

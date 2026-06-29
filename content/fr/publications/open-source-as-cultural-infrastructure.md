@@ -3,14 +3,14 @@ id: ea:publication:open-source-as-cultural-infrastructure-fr
 type: publication
 slug:
   canonical: open-source-as-cultural-infrastructure
-title: L'open source comme infrastructure culturelle
+title: L’open source comme infrastructure culturelle
 subtitle: Article technique
-abstract: L'open source comme infrastructure culturelle propose une synthèse claire en français sur
-  le sujet "L'open source comme infrastructure culturelle" dans le graphe public d'Electronic
+abstract: L’open source comme infrastructure culturelle propose une synthèse claire en français sur
+  le sujet "L’open source comme infrastructure culturelle" dans le graphe public d'Electronic
   Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances
   numériques.
-description: L'open source comme infrastructure culturelle propose une synthèse claire en français
-  sur le sujet "L'open source comme infrastructure culturelle" dans le graphe public d'Electronic
+description: L’open source comme infrastructure culturelle propose une synthèse claire en français
+  sur le sujet "L’open source comme infrastructure culturelle" dans le graphe public d'Electronic
   Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances
   numériques.
 locale: fr
@@ -34,7 +34,7 @@ subjects:
   - id: ea:concept:internet-culture
   - id: ea:concept:digital-preservation
 claims:
-  - L'open source comme infrastructure culturelle doit être lisible comme une synthèse française
+  - L’open source comme infrastructure culturelle doit être lisible comme une synthèse française
     autonome, sans phrases hybrides héritées de l'anglais.
   - Les liens avec les notions, projets et technologies du graphe renforcent la recherche, la
     navigation et la citation.
@@ -51,24 +51,24 @@ sources:
     accessedAt: 2026-06-24
     url: https://p5js.org/
 citation:
-  preferred: Electronic Artefacts. "L'open source comme infrastructure culturelle". Article technique,
+  preferred: Electronic Artefacts. "L’open source comme infrastructure culturelle". Article technique,
     version 1.0.0, 2026.
 tags:
-  - Open Source
+  - open source
   - programmation créative
-  - Infrastructure
-  - Maintainers
+  - infrastructure
+  - mainteneurs
 disciplines:
-  - Open Source
-  - Programming
+  - open source
+  - programmation
   - programmation créative
-  - Internet Culture
+  - culture Internet
 translationOf: ea:publication:open-source-as-cultural-infrastructure
 ---
 
 ## Problème
 
-L'open source comme infrastructure culturelle examine le sujet "L'open source comme infrastructure culturelle" dans le graphe public d'Electronic Artefacts. La fiche donne une entrée française stable, utilisable pour lire le sujet et relier ses sources au reste du graphe.
+L’open source comme infrastructure culturelle examine le sujet "L’open source comme infrastructure culturelle" dans le graphe public d'Electronic Artefacts. La fiche donne une entrée française stable, utilisable pour lire le sujet et relier ses sources au reste du graphe.
 
 ## Architecture
 

@@ -58,14 +58,14 @@
       ],
       "keywords": [
         "graphe de connaissances",
-        "Cultural Infrastructure",
+        "infrastructure culturelle",
         "Linked Data",
         "Provenance",
         "Vestiges",
-        "Knowledge Systems",
-        "Archives",
+        "systèmes de connaissance",
+        "archives",
         "Information Architecture",
-        "Research Methods"
+        "méthodes de recherche"
       ],
       "inLanguage": "fr",
       "dateCreated": "2026-06-23",
@@ -128,12 +128,12 @@
         }
       ],
       "articleSection": [
-        "Knowledge Systems",
-        "Archives",
+        "systèmes de connaissance",
+        "archives",
         "Information Architecture",
-        "Research Methods",
+        "méthodes de recherche",
         "graphe de connaissances",
-        "Cultural Infrastructure"
+        "infrastructure culturelle"
       ],
       "timeRequired": "PT1M",
       "isBasedOn": [

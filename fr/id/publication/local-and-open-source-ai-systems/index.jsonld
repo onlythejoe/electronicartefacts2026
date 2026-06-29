@@ -5,15 +5,15 @@
       "@type": "WebPage",
       "@id": "https://electronicartefacts.com/fr/publications/local-and-open-source-ai-systems/#webpage",
       "url": "https://electronicartefacts.com/fr/publications/local-and-open-source-ai-systems/",
-      "name": "Systèmes d'IA locaux et open source",
-      "description": "Systèmes d'IA locaux et open source propose une synthèse claire en français sur le sujet \"Systèmes d'IA locaux et open source\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
+      "name": "Systèmes d’IA locaux et open source",
+      "description": "Systèmes d’IA locaux et open source propose une synthèse claire en français sur le sujet \"Systèmes d’IA locaux et open source\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
       "primaryImageOfPage": {
         "@type": "ImageObject",
         "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-search.jpg",
-        "description": "Systèmes d'IA locaux et open source"
+        "description": "Systèmes d’IA locaux et open source"
       },
       "breadcrumb": {
         "@id": "https://electronicartefacts.com/fr/publications/local-and-open-source-ai-systems/#breadcrumb"
@@ -33,10 +33,10 @@
       "@type": "TechArticle",
       "@id": "https://electronicartefacts.com/fr/id/publication/local-and-open-source-ai-systems/",
       "identifier": "ea:publication:local-and-open-source-ai-systems-fr",
-      "name": "Systèmes d'IA locaux et open source",
-      "headline": "Systèmes d'IA locaux et open source",
-      "abstract": "Systèmes d'IA locaux et open source propose une synthèse claire en français sur le sujet \"Systèmes d'IA locaux et open source\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
-      "description": "Systèmes d'IA locaux et open source propose une synthèse claire en français sur le sujet \"Systèmes d'IA locaux et open source\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
+      "name": "Systèmes d’IA locaux et open source",
+      "headline": "Systèmes d’IA locaux et open source",
+      "abstract": "Systèmes d’IA locaux et open source propose une synthèse claire en français sur le sujet \"Systèmes d’IA locaux et open source\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
+      "description": "Systèmes d’IA locaux et open source propose une synthèse claire en français sur le sujet \"Systèmes d’IA locaux et open source\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
       "url": "https://electronicartefacts.com/fr/publications/local-and-open-source-ai-systems/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/publications/local-and-open-source-ai-systems/#webpage"
@@ -44,7 +44,7 @@
       "image": {
         "@type": "ImageObject",
         "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-search.jpg",
-        "description": "Systèmes d'IA locaux et open source"
+        "description": "Systèmes d’IA locaux et open source"
       },
       "author": [
         {
@@ -59,8 +59,8 @@
       "keywords": [
         "IA locale",
         "IA open source",
-        "Poids ouverts",
-        "Quantification",
+        "poids ouverts",
+        "quantification",
         "llama.cpp",
         "intelligence artificielle",
         "open source",
@@ -80,7 +80,7 @@
       "isAccessibleForFree": true,
       "wordCount": 143,
       "citation": [
-        "Electronic Artefacts. \"Systèmes d'IA locaux et open source\". Article technique, version 1.0.0, 2026.",
+        "Electronic Artefacts. \"Systèmes d’IA locaux et open source\". Article technique, version 1.0.0, 2026.",
         {
           "@type": "CreativeWork",
           "name": "The Open Source AI Definition 1.0",
@@ -263,7 +263,7 @@
         {
           "@type": "ListItem",
           "position": 3,
-          "name": "Systèmes d'IA locaux et open source",
+          "name": "Systèmes d’IA locaux et open source",
           "item": "https://electronicartefacts.com/fr/publications/local-and-open-source-ai-systems/"
         }
       ]

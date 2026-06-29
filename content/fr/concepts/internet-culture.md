@@ -46,15 +46,15 @@ sources:
     accessedAt: 2026-06-24
     url: https://www.w3.org/TR/activitypub/
 tags:
-  - Internet Culture
-  - Network Culture
-  - Memes
-  - Archives
+  - culture Internet
+  - culture des réseaux
+  - mèmes
+  - archives
 disciplines:
-  - Internet Culture
-  - Network Culture
-  - Archives
-  - History of Technology
+  - culture Internet
+  - culture des réseaux
+  - archives
+  - histoire des technologies
 translationOf: ea:concept:internet-culture
 ---
 

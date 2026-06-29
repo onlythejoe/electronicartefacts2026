@@ -57,8 +57,8 @@ tags:
   - Browser Sound
   - ORETH
 disciplines:
-  - Audio Engineering
-  - Web Development
+  - ingénierie audio
+  - développement web
   - programmation créative
   - Sound Design
 translationOf: ea:publication:web-audio-and-browser-based-sound-systems

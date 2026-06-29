@@ -62,13 +62,13 @@ citation:
 tags:
   - Metadata
   - Cataloguing
-  - Archives
+  - archives
   - Cultural Memory
 disciplines:
-  - Archives
-  - Knowledge Systems
-  - Research Methods
-  - History of Technology
+  - archives
+  - systèmes de connaissance
+  - méthodes de recherche
+  - histoire des technologies
 translationOf: ea:publication:metadata-cataloguing-and-cultural-memory
 ---
 

@@ -67,8 +67,8 @@ tags:
 disciplines:
   - Digital Préservation
   - intelligence artificielle
-  - Knowledge Systems
-  - Cultural Infrastructure
+  - systèmes de connaissance
+  - infrastructure culturelle
 translationOf: ea:publication:c2pa-content-credentials-and-generative-media-provenance
 ---
 

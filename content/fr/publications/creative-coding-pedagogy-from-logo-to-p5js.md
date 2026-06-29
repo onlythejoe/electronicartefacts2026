@@ -60,9 +60,9 @@ tags:
   - Education
 disciplines:
   - programmation créative
-  - Programming
+  - programmation
   - design
-  - Open Source
+  - open source
 translationOf: ea:publication:creative-coding-pedagogy-from-logo-to-p5js
 ---
 

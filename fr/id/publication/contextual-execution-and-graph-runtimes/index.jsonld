@@ -62,8 +62,8 @@
         "Runtime Theory",
         "VASTE",
         "conception de systèmes",
-        "Programming",
-        "Knowledge Systems",
+        "programmation",
+        "systèmes de connaissance",
         "architecture logicielle"
       ],
       "inLanguage": "fr",
@@ -108,8 +108,8 @@
       ],
       "articleSection": [
         "conception de systèmes",
-        "Programming",
-        "Knowledge Systems",
+        "programmation",
+        "systèmes de connaissance",
         "architecture logicielle",
         "Contextual Exécution",
         "Graph Runtime"

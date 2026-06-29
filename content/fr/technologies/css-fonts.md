@@ -41,7 +41,7 @@ tags:
   - Web
 disciplines:
   - Typography
-  - Web Development
+  - développement web
   - design
 ---
 

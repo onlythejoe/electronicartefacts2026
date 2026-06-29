@@ -54,7 +54,7 @@ tags:
 disciplines:
   - interaction humain-machine
   - intelligence artificielle
-  - Knowledge Systems
+  - systèmes de connaissance
   - conception de systèmes
 translationOf: ea:concept:augmented-intelligence
 ---

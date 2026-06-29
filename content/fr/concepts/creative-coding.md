@@ -41,14 +41,14 @@ claims:
     mélanger les langues.
 tags:
   - programmation créative
-  - Digital Art
-  - Programming
+  - art numérique
+  - programmation
   - Generative Art
   - Interaction
 disciplines:
   - programmation créative
-  - Programming
-  - Digital Art
+  - programmation
+  - art numérique
   - Motion Design
   - Sound Design
 translationOf: ea:concept:creative-coding

@@ -46,10 +46,10 @@ tags:
   - Memory
   - Machine Listening
 disciplines:
-  - Audio Engineering
-  - Digital Art
-  - Archives
-  - Research Methods
+  - ingénierie audio
+  - art numérique
+  - archives
+  - méthodes de recherche
 translationOf: ea:concept:signal-archaeology
 ---
 

@@ -60,8 +60,8 @@ citation:
 tags:
   - WebNN
   - IA dans le navigateur
-  - Inférence locale
-  - Apprentissage automatique Web
+  - inférence locale
+  - apprentissage automatique Web
   - interaction humain-machine
 disciplines:
   - intelligence artificielle

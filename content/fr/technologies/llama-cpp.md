@@ -37,13 +37,13 @@ sources:
     url: https://github.com/ggml-org/llama.cpp
 tags:
   - llama.cpp
-  - Local AI
-  - Inference
-  - Quantization
+  - IA locale
+  - inférence
+  - quantification
 disciplines:
   - intelligence artificielle
-  - Programming
-  - Open Source
+  - programmation
+  - open source
 ---
 
 ## Rôle

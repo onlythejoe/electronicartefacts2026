@@ -5,15 +5,15 @@
       "@type": "WebPage",
       "@id": "https://electronicartefacts.com/fr/archive/collections/knowledge-hub-fourth-wave/#webpage",
       "url": "https://electronicartefacts.com/fr/archive/collections/knowledge-hub-fourth-wave/",
-      "name": "Hub de connaissance, quatrieme vague",
-      "description": "Hub de connaissance, quatrieme vague organise des fiches reliées autour de le sujet \"Hub de connaissance, quatrieme vague\" dans le graphe public d'Electronic Artefacts, afin de donner une progression lisible aux archives de connaissance d'Electronic Artefacts.",
+      "name": "Hub de connaissance, quatrième vague",
+      "description": "Hub de connaissance, quatrième vague rassemble des fiches liées par un même axe éditorial, afin de donner une progression lisible aux archives de connaissance d'Electronic Artefacts.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
       "primaryImageOfPage": {
         "@type": "ImageObject",
         "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-search.jpg",
-        "description": "Hub de connaissance, quatrieme vague"
+        "description": "Hub de connaissance, quatrième vague"
       },
       "breadcrumb": {
         "@id": "https://electronicartefacts.com/fr/archive/collections/knowledge-hub-fourth-wave/#breadcrumb"
@@ -33,9 +33,9 @@
       "@type": "CreativeWork",
       "@id": "https://electronicartefacts.com/fr/id/collection/knowledge-hub-fourth-wave/",
       "identifier": "ea:collection:knowledge-hub-fourth-wave-fr",
-      "name": "Hub de connaissance, quatrieme vague",
-      "abstract": "Hub de connaissance, quatrieme vague organise des fiches reliées autour de le sujet \"Hub de connaissance, quatrieme vague\" dans le graphe public d'Electronic Artefacts, afin de donner une progression lisible aux archives de connaissance d'Electronic Artefacts.",
-      "description": "Hub de connaissance, quatrieme vague organise des fiches reliées autour de le sujet \"Hub de connaissance, quatrieme vague\" dans le graphe public d'Electronic Artefacts, afin de donner une progression lisible aux archives de connaissance d'Electronic Artefacts.",
+      "name": "Hub de connaissance, quatrième vague",
+      "abstract": "Hub de connaissance, quatrième vague rassemble des fiches liées par un même axe éditorial, afin de donner une progression lisible aux archives de connaissance d'Electronic Artefacts.",
+      "description": "Hub de connaissance, quatrième vague rassemble des fiches liées par un même axe éditorial, afin de donner une progression lisible aux archives de connaissance d'Electronic Artefacts.",
       "url": "https://electronicartefacts.com/fr/archive/collections/knowledge-hub-fourth-wave/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/archive/collections/knowledge-hub-fourth-wave/#webpage"
@@ -43,7 +43,7 @@
       "image": {
         "@type": "ImageObject",
         "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-search.jpg",
-        "description": "Hub de connaissance, quatrieme vague"
+        "description": "Hub de connaissance, quatrième vague"
       },
       "author": [
         {
@@ -56,15 +56,15 @@
         }
       ],
       "keywords": [
-        "Hub de connaissance",
-        "Quatrième vague",
-        "Protocoles d'IA",
-        "Gouvernance de l'IA",
+        "hub de connaissance",
+        "quatrième vague",
+        "protocoles d'IA",
+        "gouvernance de l'IA",
         "Provenance",
-        "Infrastructure culturelle",
+        "infrastructure culturelle",
         "intelligence artificielle",
-        "Systèmes de connaissance",
-        "préservation numérique",
+        "systèmes de connaissance",
+        "Digital Préservation",
         "architecture logicielle"
       ],
       "inLanguage": "fr",
@@ -78,7 +78,7 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 93
+      "wordCount": 77
     },
     {
       "@type": "Organization",
@@ -184,7 +184,7 @@
         {
           "@type": "ListItem",
           "position": 3,
-          "name": "Hub de connaissance, quatrieme vague",
+          "name": "Hub de connaissance, quatrième vague",
           "item": "https://electronicartefacts.com/fr/archive/collections/knowledge-hub-fourth-wave/"
         }
       ]

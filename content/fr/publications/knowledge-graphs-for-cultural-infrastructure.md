@@ -62,15 +62,15 @@ citation:
     Article technique, version 1.0.0, 2026.
 tags:
   - graphe de connaissances
-  - Cultural Infrastructure
+  - infrastructure culturelle
   - Linked Data
   - Provenance
   - Vestiges
 disciplines:
-  - Knowledge Systems
-  - Archives
+  - systèmes de connaissance
+  - archives
   - Information Architecture
-  - Research Methods
+  - méthodes de recherche
 translationOf: ea:publication:knowledge-graphs-for-cultural-infrastructure
 ---
 

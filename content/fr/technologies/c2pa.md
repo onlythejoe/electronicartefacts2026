@@ -44,7 +44,7 @@ tags:
   - Media Authenticity
 disciplines:
   - Digital Préservation
-  - Knowledge Systems
+  - systèmes de connaissance
   - intelligence artificielle
 translationOf: ea:technology:c2pa
 ---

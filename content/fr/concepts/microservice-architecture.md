@@ -54,7 +54,7 @@ tags:
 disciplines:
   - architecture logicielle
   - conception de systèmes
-  - Programming
+  - programmation
 translationOf: ea:concept:microservice-architecture
 ---
 

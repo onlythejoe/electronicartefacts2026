@@ -5,15 +5,15 @@
       "@type": "WebPage",
       "@id": "https://electronicartefacts.com/fr/publications/signal-archaeology-audio-memory-and-machine-listening/#webpage",
       "url": "https://electronicartefacts.com/fr/publications/signal-archaeology-audio-memory-and-machine-listening/",
-      "name": "Archéologie du signal, mémoire audio et ecoute machine",
-      "description": "Archéologie du signal, mémoire audio et ecoute machine propose une synthèse claire en français sur le sujet \"Archéologie du signal, mémoire audio et ecoute machine\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
+      "name": "Archéologie du signal, mémoire audio et écoute machine",
+      "description": "Archéologie du signal, mémoire audio et écoute machine propose une synthèse claire en français sur le sujet \"Archéologie du signal, mémoire audio et écoute machine\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
       "primaryImageOfPage": {
         "@type": "ImageObject",
         "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-search.jpg",
-        "description": "Archéologie du signal, mémoire audio et ecoute machine"
+        "description": "Archéologie du signal, mémoire audio et écoute machine"
       },
       "breadcrumb": {
         "@id": "https://electronicartefacts.com/fr/publications/signal-archaeology-audio-memory-and-machine-listening/#breadcrumb"
@@ -33,10 +33,10 @@
       "@type": "TechArticle",
       "@id": "https://electronicartefacts.com/fr/id/publication/signal-archaeology-audio-memory-and-machine-listening/",
       "identifier": "ea:publication:signal-archaeology-audio-memory-and-machine-listening-fr",
-      "name": "Archéologie du signal, mémoire audio et ecoute machine",
-      "headline": "Archéologie du signal, mémoire audio et ecoute machine",
-      "abstract": "Archéologie du signal, mémoire audio et ecoute machine propose une synthèse claire en français sur le sujet \"Archéologie du signal, mémoire audio et ecoute machine\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
-      "description": "Archéologie du signal, mémoire audio et ecoute machine propose une synthèse claire en français sur le sujet \"Archéologie du signal, mémoire audio et ecoute machine\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
+      "name": "Archéologie du signal, mémoire audio et écoute machine",
+      "headline": "Archéologie du signal, mémoire audio et écoute machine",
+      "abstract": "Archéologie du signal, mémoire audio et écoute machine propose une synthèse claire en français sur le sujet \"Archéologie du signal, mémoire audio et écoute machine\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
+      "description": "Archéologie du signal, mémoire audio et écoute machine propose une synthèse claire en français sur le sujet \"Archéologie du signal, mémoire audio et écoute machine\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
       "url": "https://electronicartefacts.com/fr/publications/signal-archaeology-audio-memory-and-machine-listening/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/publications/signal-archaeology-audio-memory-and-machine-listening/#webpage"
@@ -44,7 +44,7 @@
       "image": {
         "@type": "ImageObject",
         "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-search.jpg",
-        "description": "Archéologie du signal, mémoire audio et ecoute machine"
+        "description": "Archéologie du signal, mémoire audio et écoute machine"
       },
       "author": [
         {
@@ -62,11 +62,11 @@
         "Machine Listening",
         "ORETH",
         "Palimpsests",
-        "Audio Engineering",
+        "ingénierie audio",
         "Sound Design",
-        "Digital Art",
-        "Archives",
-        "Research Methods"
+        "art numérique",
+        "archives",
+        "méthodes de recherche"
       ],
       "inLanguage": "fr",
       "dateCreated": "2026-06-23",
@@ -81,7 +81,7 @@
       "isAccessibleForFree": true,
       "wordCount": 147,
       "citation": [
-        "Electronic Artefacts. \"Archéologie du signal, mémoire audio et ecoute machine\". Article technique, version 1.0.0, 2026.",
+        "Electronic Artefacts. \"Archéologie du signal, mémoire audio et écoute machine\". Article technique, version 1.0.0, 2026.",
         {
           "@type": "CreativeWork",
           "name": "PROV-Overview",
@@ -123,11 +123,11 @@
         }
       ],
       "articleSection": [
-        "Audio Engineering",
+        "ingénierie audio",
         "Sound Design",
-        "Digital Art",
-        "Archives",
-        "Research Methods",
+        "art numérique",
+        "archives",
+        "méthodes de recherche",
         "Signal Archaeology"
       ],
       "timeRequired": "PT1M",
@@ -252,7 +252,7 @@
         {
           "@type": "ListItem",
           "position": 3,
-          "name": "Archéologie du signal, mémoire audio et ecoute machine",
+          "name": "Archéologie du signal, mémoire audio et écoute machine",
           "item": "https://electronicartefacts.com/fr/publications/signal-archaeology-audio-memory-and-machine-listening/"
         }
       ]

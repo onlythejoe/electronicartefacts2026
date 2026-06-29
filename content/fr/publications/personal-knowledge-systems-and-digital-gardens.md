@@ -58,15 +58,15 @@ citation:
   preferred: Electronic Artefacts. "Systèmes personnels de connaissance et jardins numériques".
     Article technique, version 1.0.0, 2026.
 tags:
-  - Personal Knowledge Management
-  - Digital Gardens
-  - Backlinks
-  - Research Methods
+  - gestion personnelle des connaissances
+  - jardins numériques
+  - liens entrants
+  - méthodes de recherche
 disciplines:
-  - Knowledge Systems
-  - Research Methods
-  - Internet Culture
-  - Archives
+  - systèmes de connaissance
+  - méthodes de recherche
+  - culture Internet
+  - archives
 translationOf: ea:publication:personal-knowledge-systems-and-digital-gardens
 ---
 

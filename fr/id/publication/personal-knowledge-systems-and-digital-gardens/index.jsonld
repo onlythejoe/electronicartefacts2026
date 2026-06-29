@@ -57,13 +57,13 @@
         }
       ],
       "keywords": [
-        "Personal Knowledge Management",
-        "Digital Gardens",
-        "Backlinks",
-        "Research Methods",
-        "Knowledge Systems",
-        "Internet Culture",
-        "Archives"
+        "gestion personnelle des connaissances",
+        "jardins numériques",
+        "liens entrants",
+        "méthodes de recherche",
+        "systèmes de connaissance",
+        "culture Internet",
+        "archives"
       ],
       "inLanguage": "fr",
       "dateCreated": "2026-06-24",
@@ -121,12 +121,12 @@
         }
       ],
       "articleSection": [
-        "Knowledge Systems",
-        "Research Methods",
-        "Internet Culture",
-        "Archives",
-        "Personal Knowledge Management",
-        "Digital Gardens"
+        "systèmes de connaissance",
+        "méthodes de recherche",
+        "culture Internet",
+        "archives",
+        "gestion personnelle des connaissances",
+        "jardins numériques"
       ],
       "timeRequired": "PT1M",
       "isBasedOn": [

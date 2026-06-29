@@ -85,7 +85,7 @@
         {
           "@type": "ListItem",
           "position": 2,
-          "name": "Hub de connaissance, deuxieme vague",
+          "name": "Hub de connaissance, deuxième vague",
           "url": "https://electronicartefacts.com/fr/archive/collections/knowledge-hub-second-wave/",
           "item": {
             "@id": "https://electronicartefacts.com/fr/id/collection/knowledge-hub-second-wave/"
@@ -94,7 +94,7 @@
         {
           "@type": "ListItem",
           "position": 3,
-          "name": "Hub de connaissance, quatrieme vague",
+          "name": "Hub de connaissance, quatrième vague",
           "url": "https://electronicartefacts.com/fr/archive/collections/knowledge-hub-fourth-wave/",
           "item": {
             "@id": "https://electronicartefacts.com/fr/id/collection/knowledge-hub-fourth-wave/"
@@ -103,7 +103,7 @@
         {
           "@type": "ListItem",
           "position": 4,
-          "name": "Hub de connaissance, troisieme vague",
+          "name": "Hub de connaissance, troisième vague",
           "url": "https://electronicartefacts.com/fr/archive/collections/knowledge-hub-third-wave/",
           "item": {
             "@id": "https://electronicartefacts.com/fr/id/collection/knowledge-hub-third-wave/"
@@ -598,7 +598,7 @@
         {
           "@type": "ListItem",
           "position": 59,
-          "name": "Open source",
+          "name": "open source",
           "url": "https://electronicartefacts.com/fr/knowledge/concepts/open-source/",
           "item": {
             "@id": "https://electronicartefacts.com/fr/id/concept/open-source/"
@@ -625,7 +625,7 @@
         {
           "@type": "ListItem",
           "position": 62,
-          "name": "Pensée systemique",
+          "name": "Pensée systémique",
           "url": "https://electronicartefacts.com/fr/knowledge/concepts/systems-thinking/",
           "item": {
             "@id": "https://electronicartefacts.com/fr/id/concept/systems-thinking/"
@@ -940,7 +940,7 @@
         {
           "@type": "ListItem",
           "position": 97,
-          "name": "Archéologie du signal, mémoire audio et ecoute machine",
+          "name": "Archéologie du signal, mémoire audio et écoute machine",
           "url": "https://electronicartefacts.com/fr/publications/signal-archaeology-audio-memory-and-machine-listening/",
           "item": {
             "@id": "https://electronicartefacts.com/fr/id/publication/signal-archaeology-audio-memory-and-machine-listening/"
@@ -1174,7 +1174,7 @@
         {
           "@type": "ListItem",
           "position": 123,
-          "name": "Identifiants vérifiables pour les archives culturelles et l'identité des créateurs",
+          "name": "Identifiants vérifiables pour les archives culturelles et l’identité des créateurs",
           "url": "https://electronicartefacts.com/fr/publications/verifiable-credentials-for-cultural-archives-and-creator-identity/",
           "item": {
             "@id": "https://electronicartefacts.com/fr/id/publication/verifiable-credentials-for-cultural-archives-and-creator-identity/"
@@ -1201,7 +1201,7 @@
         {
           "@type": "ListItem",
           "position": 126,
-          "name": "Injection de prompt et frontieres de confiance dans les systèmes de connaissance IA",
+          "name": "Injection de prompt et frontières de confiance dans les systèmes de connaissance IA",
           "url": "https://electronicartefacts.com/fr/publications/prompt-injection-and-trust-boundaries-in-ai-knowledge-systems/",
           "item": {
             "@id": "https://electronicartefacts.com/fr/id/publication/prompt-injection-and-trust-boundaries-in-ai-knowledge-systems/"
@@ -1228,7 +1228,7 @@
         {
           "@type": "ListItem",
           "position": 129,
-          "name": "L'open source comme infrastructure culturelle",
+          "name": "L’open source comme infrastructure culturelle",
           "url": "https://electronicartefacts.com/fr/publications/open-source-as-cultural-infrastructure/",
           "item": {
             "@id": "https://electronicartefacts.com/fr/id/publication/open-source-as-cultural-infrastructure/"
@@ -1399,7 +1399,7 @@
         {
           "@type": "ListItem",
           "position": 148,
-          "name": "Pensée systemique pour la pratique créative",
+          "name": "Pensée systémique pour la pratique créative",
           "url": "https://electronicartefacts.com/fr/publications/systems-thinking-for-creative-practice/",
           "item": {
             "@id": "https://electronicartefacts.com/fr/id/publication/systems-thinking-for-creative-practice/"
@@ -1453,7 +1453,7 @@
         {
           "@type": "ListItem",
           "position": 154,
-          "name": "Recherche IA, contenu structure et SEO par graphe de connaissances",
+          "name": "Recherche IA, contenu structuré et SEO par graphe de connaissances",
           "url": "https://electronicartefacts.com/fr/publications/ai-search-structured-content-and-knowledge-graph-seo/",
           "item": {
             "@id": "https://electronicartefacts.com/fr/id/publication/ai-search-structured-content-and-knowledge-graph-seo/"
@@ -1471,7 +1471,7 @@
         {
           "@type": "ListItem",
           "position": 156,
-          "name": "Redis Streams pour l'orchestration",
+          "name": "Redis Streams pour l’orchestration",
           "url": "https://electronicartefacts.com/fr/publications/redis-streams-for-orchestration/",
           "item": {
             "@id": "https://electronicartefacts.com/fr/id/publication/redis-streams-for-orchestration/"
@@ -1516,7 +1516,7 @@
         {
           "@type": "ListItem",
           "position": 161,
-          "name": "Systèmes d'IA locaux et open source",
+          "name": "Systèmes d’IA locaux et open source",
           "url": "https://electronicartefacts.com/fr/publications/local-and-open-source-ai-systems/",
           "item": {
             "@id": "https://electronicartefacts.com/fr/id/publication/local-and-open-source-ai-systems/"

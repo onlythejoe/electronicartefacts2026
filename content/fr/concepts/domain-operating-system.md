@@ -40,16 +40,16 @@ claims:
   - La fiche sert de vocabulaire commun pour relier projets, publications et technologies sans
     mélanger les langues.
 tags:
-  - Système d'exploitation de domaine
-  - Système d'exploitation métier
-  - Moteur d'exécution
-  - Architecture de plateforme
-  - Composabilité
+  - système d'exploitation de domaine
+  - système d'exploitation métier
+  - moteur d'exécution
+  - Platform Architecture
+  - Composability
 disciplines:
   - conception de systèmes
   - architecture logicielle
   - programmation
-  - Systèmes de connaissance
+  - systèmes de connaissance
 translationOf: ea:concept:domain-operating-system
 ---
 

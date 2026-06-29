@@ -3,14 +3,14 @@ id: ea:publication:ai-search-structured-content-and-knowledge-graph-seo-fr
 type: publication
 slug:
   canonical: ai-search-structured-content-and-knowledge-graph-seo
-title: Recherche IA, contenu structure et SEO par graphe de connaissances
+title: Recherche IA, contenu structuré et SEO par graphe de connaissances
 subtitle: Article technique
-abstract: Recherche IA, contenu structure et SEO par graphe de connaissances propose une synthèse
-  claire en français sur le sujet "Recherche IA, contenu structure et SEO par graphe de
+abstract: Recherche IA, contenu structuré et SEO par graphe de connaissances propose une synthèse
+  claire en français sur le sujet "Recherche IA, contenu structuré et SEO par graphe de
   connaissances" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la
   recherche, la conception et la publication de connaissances numériques.
-description: Recherche IA, contenu structure et SEO par graphe de connaissances propose une synthèse
-  claire en français sur le sujet "Recherche IA, contenu structure et SEO par graphe de
+description: Recherche IA, contenu structuré et SEO par graphe de connaissances propose une synthèse
+  claire en français sur le sujet "Recherche IA, contenu structuré et SEO par graphe de
   connaissances" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la
   recherche, la conception et la publication de connaissances numériques.
 locale: fr
@@ -36,7 +36,7 @@ subjects:
   - id: ea:concept:retrieval-augmented-generation
   - id: ea:technology:json-ld
 claims:
-  - Recherche IA, contenu structure et SEO par graphe de connaissances doit être lisible comme une
+  - Recherche IA, contenu structuré et SEO par graphe de connaissances doit être lisible comme une
     synthèse française autonome, sans phrases hybrides héritées de l'anglais.
   - Les liens avec les notions, projets et technologies du graphe renforcent la recherche, la
     navigation et la citation.
@@ -57,25 +57,25 @@ sources:
     accessedAt: 2026-06-25
     url: https://schema.org/Article
 citation:
-  preferred: Electronic Artefacts. "Recherche IA, contenu structure et SEO par graphe de
+  preferred: Electronic Artefacts. "Recherche IA, contenu structuré et SEO par graphe de
     connaissances". Article technique, version 1.0.0, 2026.
 tags:
-  - AI Search
+  - recherche IA
   - SEO par graphe de connaissances
   - Structured Data
   - JSON-LD
   - Entity SEO
 disciplines:
   - SEO
-  - Knowledge Systems
-  - Web Development
+  - systèmes de connaissance
+  - développement web
   - Information Architecture
 translationOf: ea:publication:ai-search-structured-content-and-knowledge-graph-seo
 ---
 
 ## Problème
 
-Recherche IA, contenu structure et SEO par graphe de connaissances examine le sujet "Recherche IA, contenu structure et SEO par graphe de connaissances" dans le graphe public d'Electronic Artefacts. La fiche donne une entrée française stable, utilisable pour lire le sujet et relier ses sources au reste du graphe.
+Recherche IA, contenu structuré et SEO par graphe de connaissances examine le sujet "Recherche IA, contenu structuré et SEO par graphe de connaissances" dans le graphe public d'Electronic Artefacts. La fiche donne une entrée française stable, utilisable pour lire le sujet et relier ses sources au reste du graphe.
 
 ## Architecture
 

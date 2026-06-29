@@ -3,14 +3,14 @@ id: ea:publication:signal-archaeology-audio-memory-and-machine-listening-fr
 type: publication
 slug:
   canonical: signal-archaeology-audio-memory-and-machine-listening
-title: Archéologie du signal, mémoire audio et ecoute machine
+title: Archéologie du signal, mémoire audio et écoute machine
 subtitle: Article technique
-abstract: Archéologie du signal, mémoire audio et ecoute machine propose une synthèse claire en
-  français sur le sujet "Archéologie du signal, mémoire audio et ecoute machine" dans le graphe
+abstract: Archéologie du signal, mémoire audio et écoute machine propose une synthèse claire en
+  français sur le sujet "Archéologie du signal, mémoire audio et écoute machine" dans le graphe
   public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la
   publication de connaissances numériques.
-description: Archéologie du signal, mémoire audio et ecoute machine propose une synthèse claire en
-  français sur le sujet "Archéologie du signal, mémoire audio et ecoute machine" dans le graphe
+description: Archéologie du signal, mémoire audio et écoute machine propose une synthèse claire en
+  français sur le sujet "Archéologie du signal, mémoire audio et écoute machine" dans le graphe
   public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la
   publication de connaissances numériques.
 locale: fr
@@ -35,7 +35,7 @@ subjects:
   - id: ea:program:oreth
   - id: ea:project:palimpsests
 claims:
-  - Archéologie du signal, mémoire audio et ecoute machine doit être lisible comme une synthèse
+  - Archéologie du signal, mémoire audio et écoute machine doit être lisible comme une synthèse
     française autonome, sans phrases hybrides héritées de l'anglais.
   - Les liens avec les notions, projets et technologies du graphe renforcent la recherche, la
     navigation et la citation.
@@ -54,7 +54,7 @@ sources:
     accessedAt: 2026-06-23
     url: https://www.dpconline.org/handbook
 citation:
-  preferred: Electronic Artefacts. "Archéologie du signal, mémoire audio et ecoute machine". Article
+  preferred: Electronic Artefacts. "Archéologie du signal, mémoire audio et écoute machine". Article
     technique, version 1.0.0, 2026.
 tags:
   - Signal Archaeology
@@ -63,17 +63,17 @@ tags:
   - ORETH
   - Palimpsests
 disciplines:
-  - Audio Engineering
+  - ingénierie audio
   - Sound Design
-  - Digital Art
-  - Archives
-  - Research Methods
+  - art numérique
+  - archives
+  - méthodes de recherche
 translationOf: ea:publication:signal-archaeology-audio-memory-and-machine-listening
 ---
 
 ## Problème
 
-Archéologie du signal, mémoire audio et ecoute machine examine le sujet "Archéologie du signal, mémoire audio et ecoute machine" dans le graphe public d'Electronic Artefacts. La fiche donne une entrée française stable, utilisable pour lire le sujet et relier ses sources au reste du graphe.
+Archéologie du signal, mémoire audio et écoute machine examine le sujet "Archéologie du signal, mémoire audio et écoute machine" dans le graphe public d'Electronic Artefacts. La fiche donne une entrée française stable, utilisable pour lire le sujet et relier ses sources au reste du graphe.
 
 ## Architecture
 

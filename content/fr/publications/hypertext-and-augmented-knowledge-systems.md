@@ -69,11 +69,11 @@ tags:
   - intelligence augmentée
   - graphe de connaissances
   - Linked Data
-  - History of Technology
+  - histoire des technologies
 disciplines:
-  - Knowledge Systems
-  - History of Technology
-  - Web Development
+  - systèmes de connaissance
+  - histoire des technologies
+  - développement web
   - interaction humain-machine
 translationOf: ea:publication:hypertext-and-augmented-knowledge-systems
 ---

@@ -124,12 +124,24 @@ const titleMap = new Map(Object.entries({
   "Business OS": "Système d'exploitation métier",
   "Composable Systems": "Systèmes composables",
   "Knowledge Systems": "Systèmes de connaissance",
+  "Local Inference": "Inférence locale",
   "Structured Data": "Données structurées",
   "Entity SEO": "SEO d'entité",
   "Third Wave": "Troisième vague",
   "Fourth Wave": "Quatrième vague",
   "Second Wave": "Deuxième vague",
   "Foundations": "Fondations",
+  "Software": "Logiciel",
+  "Commons": "Communs",
+  "Design Technology": "Technologies de design",
+  "Infrastructure": "Infrastructure",
+  "Open Source AI": "IA open source",
+  "Ethical Principles for Web Machine Learning": "Principes éthiques pour l'apprentissage automatique Web",
+  "Inference": "Inférence",
+  "Language Models": "Modèles de langage",
+  "Open Source": "open source",
+  "Open Source Initiative": "Open Source Initiative",
+  "Open Weights": "poids ouverts",
   "Open Source as Cultural Infrastructure": "L'open source comme infrastructure culturelle",
   "Open Weight Model": "Modèle à poids ouverts",
   "Personal Knowledge System": "Système personnel de connaissance",
@@ -346,7 +358,7 @@ const bodyFor = (entity) => {
   }
 
   if (entity.type === "collection") {
-    return `## Intention\n\n${topicSentence(entity)}\n\n## Sélection\n\n${translateString(entity.selectionNote || entity.thesis || abstract)}\n\n## Usage\n\nCette collection facilite la navigation entre des objets liés et donne une entrée française cohérente aux archives de connaissance.\n\n## Références\n\n${sourceLine}\n`;
+    return `## Intention\n\n${title} rassemble des fiches liées par un même axe éditorial.\n\n## Sélection\n\n${translateString(entity.selectionNote || entity.thesis || abstract)}\n\n## Usage\n\nCette collection facilite la navigation entre des objets liés et donne une entrée française cohérente aux archives de connaissance.\n\n## Références\n\n${sourceLine}\n`;
   }
 
   if (entity.type === "researchField") {

@@ -57,13 +57,13 @@ citation:
 tags:
   - Motion Design
   - Web Animations
-  - Interface Design
+  - conception d'interface
   - accessibilité
 disciplines:
   - Motion Design
   - design
   - interaction humain-machine
-  - Web Development
+  - développement web
 translationOf: ea:publication:motion-design-time-and-interface-semantics
 ---
 

@@ -67,9 +67,9 @@ tags:
   - Citations
 disciplines:
   - intelligence artificielle
-  - Knowledge Systems
+  - systèmes de connaissance
   - Information Architecture
-  - Machine Learning
+  - apprentissage automatique
 translationOf: ea:publication:retrieval-augmented-generation-and-knowledge-systems
 ---
 

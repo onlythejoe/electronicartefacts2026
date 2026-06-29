@@ -70,7 +70,7 @@ disciplines:
   - architecture logicielle
   - conception de systèmes
   - Distributed Systems
-  - Programming
+  - programmation
 translationOf: ea:publication:event-driven-architecture-and-event-streams
 ---
 

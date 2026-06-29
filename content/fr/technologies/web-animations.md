@@ -42,7 +42,7 @@ tags:
   - Interface
 disciplines:
   - Motion Design
-  - Web Development
+  - développement web
   - interaction humain-machine
 ---
 

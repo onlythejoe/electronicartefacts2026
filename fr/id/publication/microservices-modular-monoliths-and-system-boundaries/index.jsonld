@@ -64,7 +64,7 @@
         "Distributed Systems",
         "architecture logicielle",
         "conception de systèmes",
-        "Programming"
+        "programmation"
       ],
       "inLanguage": "fr",
       "dateCreated": "2026-06-24",
@@ -133,7 +133,7 @@
       "articleSection": [
         "architecture logicielle",
         "conception de systèmes",
-        "Programming",
+        "programmation",
         "Distributed Systems",
         "Microservices",
         "Modular Monolith"

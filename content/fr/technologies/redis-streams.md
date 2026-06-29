@@ -42,7 +42,7 @@ tags:
   - orchestration
 disciplines:
   - architecture logicielle
-  - Programming
+  - programmation
   - Distributed Systems
 ---
 

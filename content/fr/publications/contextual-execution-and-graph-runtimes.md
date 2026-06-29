@@ -53,8 +53,8 @@ tags:
   - conception de systèmes
 disciplines:
   - conception de systèmes
-  - Programming
-  - Knowledge Systems
+  - programmation
+  - systèmes de connaissance
   - architecture logicielle
 translationOf: ea:publication:contextual-execution-and-graph-runtimes
 ---

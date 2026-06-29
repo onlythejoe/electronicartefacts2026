@@ -669,45 +669,45 @@
       5,
       1,
       null,
-      26,
+      25,
       4,
       1,
       10,
       1,
-      70
+      64
     ],
     "41": [
       5,
       1,
       null,
-      26,
+      25,
       4,
       1,
       13,
       1,
-      72
+      66
     ],
     "42": [
       5,
       1,
       null,
-      26,
+      25,
       4,
       1,
       9,
       1,
-      72
+      66
     ],
     "43": [
       5,
       1,
       null,
-      26,
+      25,
       4,
       1,
       13,
       1,
-      72
+      66
     ],
     "44": [
       3,
@@ -881,7 +881,7 @@
       32,
       4,
       1,
-      8,
+      9,
       1,
       71
     ],
@@ -892,7 +892,7 @@
       31,
       4,
       1,
-      6,
+      7,
       1,
       70
     ],
@@ -903,7 +903,7 @@
       30,
       4,
       1,
-      5,
+      6,
       1,
       70
     ],
@@ -1013,7 +1013,7 @@
       34,
       4,
       1,
-      7,
+      8,
       1,
       75
     ],
@@ -1024,7 +1024,7 @@
       31,
       4,
       1,
-      7,
+      8,
       1,
       69
     ],
@@ -1090,7 +1090,7 @@
       31,
       4,
       1,
-      5,
+      6,
       1,
       70
     ],
@@ -1178,7 +1178,7 @@
       32,
       10,
       1,
-      9,
+      8,
       1,
       92
     ],
@@ -1191,7 +1191,7 @@
       1,
       12,
       1,
-      94
+      95
     ],
     "88": [
       8,
@@ -1409,7 +1409,7 @@
       34,
       10,
       1,
-      6,
+      8,
       1,
       94
     ],
@@ -1464,7 +1464,7 @@
       33,
       10,
       1,
-      8,
+      11,
       1,
       94
     ],
@@ -1508,7 +1508,7 @@
       37,
       10,
       1,
-      8,
+      11,
       1,
       96
     ],
@@ -1563,7 +1563,7 @@
       33,
       10,
       1,
-      6,
+      7,
       1,
       94
     ],
@@ -2540,12 +2540,12 @@
     3.876190476190477,
     1.1619047619047616,
     18.89353965837983,
-    25.761904761904763,
+    25.74285714285714,
     12.519047619047623,
     1.2238095238095246,
-    7.057142857142857,
+    7.123809523809523,
     19.53333333333334,
-    204.38095238095238
+    204.27142857142857
   ],
   "storedFields": {
     "0": {
@@ -3030,7 +3030,7 @@
       "route": "/fr/archive/collections/knowledge-hub-foundations/",
       "type": "collection",
       "title": "Fondations du hub de connaissance",
-      "abstract": "Fondations du hub de connaissance organise des fiches reliées autour de le sujet \"Fondations du hub de connaissance\" dans le graphe public d'Electronic Artefacts, afin de donner une progression lisible aux archives de connaissance d'Electronic Artefacts.",
+      "abstract": "Fondations du hub de connaissance rassemble des fiches liées par un même axe éditorial, afin de donner une progression lisible aux archives de connaissance d'Electronic Artefacts.",
       "status": "active",
       "confidence": "published",
       "modifiedAt": "2026-06-25"
@@ -3040,8 +3040,8 @@
       "locale": "fr",
       "route": "/fr/archive/collections/knowledge-hub-fourth-wave/",
       "type": "collection",
-      "title": "Hub de connaissance, quatrieme vague",
-      "abstract": "Hub de connaissance, quatrieme vague organise des fiches reliées autour de le sujet \"Hub de connaissance, quatrieme vague\" dans le graphe public d'Electronic Artefacts, afin de donner une progression lisible aux archives de connaissance d'Electronic Artefacts.",
+      "title": "Hub de connaissance, quatrième vague",
+      "abstract": "Hub de connaissance, quatrième vague rassemble des fiches liées par un même axe éditorial, afin de donner une progression lisible aux archives de connaissance d'Electronic Artefacts.",
       "status": "active",
       "confidence": "published",
       "modifiedAt": "2026-06-25"
@@ -3051,8 +3051,8 @@
       "locale": "fr",
       "route": "/fr/archive/collections/knowledge-hub-second-wave/",
       "type": "collection",
-      "title": "Hub de connaissance, deuxieme vague",
-      "abstract": "Hub de connaissance, deuxieme vague organise des fiches reliées autour de le sujet \"Hub de connaissance, deuxieme vague\" dans le graphe public d'Electronic Artefacts, afin de donner une progression lisible aux archives de connaissance d'Electronic Artefacts.",
+      "title": "Hub de connaissance, deuxième vague",
+      "abstract": "Hub de connaissance, deuxième vague rassemble des fiches liées par un même axe éditorial, afin de donner une progression lisible aux archives de connaissance d'Electronic Artefacts.",
       "status": "active",
       "confidence": "published",
       "modifiedAt": "2026-06-25"
@@ -3062,8 +3062,8 @@
       "locale": "fr",
       "route": "/fr/archive/collections/knowledge-hub-third-wave/",
       "type": "collection",
-      "title": "Hub de connaissance, troisieme vague",
-      "abstract": "Hub de connaissance, troisieme vague organise des fiches reliées autour de le sujet \"Hub de connaissance, troisieme vague\" dans le graphe public d'Electronic Artefacts, afin de donner une progression lisible aux archives de connaissance d'Electronic Artefacts.",
+      "title": "Hub de connaissance, troisième vague",
+      "abstract": "Hub de connaissance, troisième vague rassemble des fiches liées par un même axe éditorial, afin de donner une progression lisible aux archives de connaissance d'Electronic Artefacts.",
       "status": "active",
       "confidence": "published",
       "modifiedAt": "2026-06-25"
@@ -3385,9 +3385,9 @@
       "locale": "fr",
       "route": "/fr/knowledge/concepts/open-source/",
       "type": "concept",
-      "title": "Open source",
-      "definition": "Open source désigne les pratiques de publication, maintenance et cooperation fondees sur du code et des ressources ouverts.",
-      "abstract": "Open source définit un repère conceptuel en français pour comprendre les pratiques de publication, maintenance et cooperation fondees sur du code et des ressources ouverts et ses liens avec les projets, technologies et publications du graphe.",
+      "title": "open source",
+      "definition": "open source désigne les pratiques de publication, maintenance et cooperation fondees sur du code et des ressources ouverts.",
+      "abstract": "open source définit un repère conceptuel en français pour comprendre les pratiques de publication, maintenance et cooperation fondees sur du code et des ressources ouverts et ses liens avec les projets, technologies et publications du graphe.",
       "status": "active",
       "confidence": "canonical",
       "modifiedAt": "2026-06-25"
@@ -3469,9 +3469,9 @@
       "locale": "fr",
       "route": "/fr/knowledge/concepts/systems-thinking/",
       "type": "concept",
-      "title": "Pensée systemique",
-      "definition": "Pensée systemique désigne la lecture des situations par relations, limites, boucles, flux, delais et points de levier.",
-      "abstract": "Pensée systemique définit un repère conceptuel en français pour comprendre la lecture des situations par relations, limites, boucles, flux, delais et points de levier et ses liens avec les projets, technologies et publications du graphe.",
+      "title": "Pensée systémique",
+      "definition": "Pensée systémique désigne la lecture des situations par relations, limites, boucles, flux, delais et points de levier.",
+      "abstract": "Pensée systémique définit un repère conceptuel en français pour comprendre la lecture des situations par relations, limites, boucles, flux, delais et points de levier et ses liens avec les projets, technologies et publications du graphe.",
       "status": "active",
       "confidence": "canonical",
       "modifiedAt": "2026-06-25"
@@ -3585,8 +3585,8 @@
       "route": "/fr/publications/ai-search-structured-content-and-knowledge-graph-seo/",
       "type": "publication",
       "format": "technicalArticle",
-      "title": "Recherche IA, contenu structure et SEO par graphe de connaissances",
-      "abstract": "Recherche IA, contenu structure et SEO par graphe de connaissances propose une synthèse claire en français sur le sujet \"Recherche IA, contenu structure et SEO par graphe de connaissances\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
+      "title": "Recherche IA, contenu structuré et SEO par graphe de connaissances",
+      "abstract": "Recherche IA, contenu structuré et SEO par graphe de connaissances propose une synthèse claire en français sur le sujet \"Recherche IA, contenu structuré et SEO par graphe de connaissances\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
       "status": "active",
       "confidence": "published",
       "modifiedAt": "2026-06-25"
@@ -3777,8 +3777,8 @@
       "route": "/fr/publications/local-and-open-source-ai-systems/",
       "type": "publication",
       "format": "technicalArticle",
-      "title": "Systèmes d'IA locaux et open source",
-      "abstract": "Systèmes d'IA locaux et open source propose une synthèse claire en français sur le sujet \"Systèmes d'IA locaux et open source\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
+      "title": "Systèmes d’IA locaux et open source",
+      "abstract": "Systèmes d’IA locaux et open source propose une synthèse claire en français sur le sujet \"Systèmes d’IA locaux et open source\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
       "status": "active",
       "confidence": "published",
       "modifiedAt": "2026-06-25"
@@ -3873,8 +3873,8 @@
       "route": "/fr/publications/open-source-as-cultural-infrastructure/",
       "type": "publication",
       "format": "technicalArticle",
-      "title": "L'open source comme infrastructure culturelle",
-      "abstract": "L'open source comme infrastructure culturelle propose une synthèse claire en français sur le sujet \"L'open source comme infrastructure culturelle\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
+      "title": "L’open source comme infrastructure culturelle",
+      "abstract": "L’open source comme infrastructure culturelle propose une synthèse claire en français sur le sujet \"L’open source comme infrastructure culturelle\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
       "status": "active",
       "confidence": "published",
       "modifiedAt": "2026-06-25"
@@ -3909,8 +3909,8 @@
       "route": "/fr/publications/prompt-injection-and-trust-boundaries-in-ai-knowledge-systems/",
       "type": "publication",
       "format": "technicalArticle",
-      "title": "Injection de prompt et frontieres de confiance dans les systèmes de connaissance IA",
-      "abstract": "Injection de prompt et frontieres de confiance dans les systèmes de connaissance IA propose une synthèse claire en français sur le sujet \"Injection de prompt et frontieres de confiance dans les systèmes de connaissance IA\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
+      "title": "Injection de prompt et frontières de confiance dans les systèmes de connaissance IA",
+      "abstract": "Injection de prompt et frontières de confiance dans les systèmes de connaissance IA propose une synthèse claire en français sur le sujet \"Injection de prompt et frontières de confiance dans les systèmes de connaissance IA\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
       "status": "active",
       "confidence": "published",
       "modifiedAt": "2026-06-25"
@@ -3921,8 +3921,8 @@
       "route": "/fr/publications/redis-streams-for-orchestration/",
       "type": "publication",
       "format": "technicalArticle",
-      "title": "Redis Streams pour l'orchestration",
-      "abstract": "Redis Streams pour l'orchestration propose une synthèse claire en français sur le sujet \"Redis Streams pour l'orchestration\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
+      "title": "Redis Streams pour l’orchestration",
+      "abstract": "Redis Streams pour l’orchestration propose une synthèse claire en français sur le sujet \"Redis Streams pour l’orchestration\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
       "status": "active",
       "confidence": "published",
       "modifiedAt": "2026-06-25"
@@ -3969,8 +3969,8 @@
       "route": "/fr/publications/signal-archaeology-audio-memory-and-machine-listening/",
       "type": "publication",
       "format": "technicalArticle",
-      "title": "Archéologie du signal, mémoire audio et ecoute machine",
-      "abstract": "Archéologie du signal, mémoire audio et ecoute machine propose une synthèse claire en français sur le sujet \"Archéologie du signal, mémoire audio et ecoute machine\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
+      "title": "Archéologie du signal, mémoire audio et écoute machine",
+      "abstract": "Archéologie du signal, mémoire audio et écoute machine propose une synthèse claire en français sur le sujet \"Archéologie du signal, mémoire audio et écoute machine\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
       "status": "active",
       "confidence": "published",
       "modifiedAt": "2026-06-25"
@@ -3981,8 +3981,8 @@
       "route": "/fr/publications/systems-thinking-for-creative-practice/",
       "type": "publication",
       "format": "technicalArticle",
-      "title": "Pensée systemique pour la pratique créative",
-      "abstract": "Pensée systemique pour la pratique créative propose une synthèse claire en français sur le sujet \"Pensée systemique pour la pratique créative\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
+      "title": "Pensée systémique pour la pratique créative",
+      "abstract": "Pensée systémique pour la pratique créative propose une synthèse claire en français sur le sujet \"Pensée systémique pour la pratique créative\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
       "status": "active",
       "confidence": "published",
       "modifiedAt": "2026-06-25"
@@ -4005,8 +4005,8 @@
       "route": "/fr/publications/verifiable-credentials-for-cultural-archives-and-creator-identity/",
       "type": "publication",
       "format": "technicalArticle",
-      "title": "Identifiants vérifiables pour les archives culturelles et l'identité des créateurs",
-      "abstract": "Identifiants vérifiables pour les archives culturelles et l'identité des créateurs propose une synthèse claire en français sur le sujet \"Identifiants vérifiables pour les archives culturelles et l'identité des créateurs\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
+      "title": "Identifiants vérifiables pour les archives culturelles et l’identité des créateurs",
+      "abstract": "Identifiants vérifiables pour les archives culturelles et l’identité des créateurs propose une synthèse claire en français sur le sujet \"Identifiants vérifiables pour les archives culturelles et l’identité des créateurs\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
       "status": "active",
       "confidence": "published",
       "modifiedAt": "2026-06-25"
@@ -5201,10 +5201,6 @@
           "81": 1
         },
         "8": {
-          "40": 1,
-          "41": 1,
-          "42": 1,
-          "43": 1,
           "44": 1,
           "45": 1,
           "46": 2,
@@ -5381,8 +5377,6 @@
         },
         "6": {
           "31": 1,
-          "71": 1,
-          "133": 1,
           "168": 1,
           "198": 1
         },
@@ -5397,7 +5391,9 @@
       "quantification",
       {
         "6": {
-          "103": 1
+          "71": 1,
+          "103": 1,
+          "133": 1
         }
       }
     ],
@@ -5412,22 +5408,17 @@
     [
       "quatrième",
       {
-        "6": {
-          "41": 1
-        }
-      }
-    ],
-    [
-      "quatrieme",
-      {
         "0": {
           "41": 1
         },
         "3": {
-          "41": 2
+          "41": 1
+        },
+        "6": {
+          "41": 1
         },
         "8": {
-          "41": 2
+          "41": 1
         }
       }
     ],
@@ -6398,12 +6389,19 @@
     [
       "écoute",
       {
+        "0": {
+          "119": 1
+        },
+        "3": {
+          "119": 2
+        },
         "4": {
           "82": 1
         },
         "8": {
           "82": 4,
-          "84": 1
+          "84": 1,
+          "119": 2
         }
       }
     ],
@@ -6529,11 +6527,10 @@
       }
     ],
     [
-      "éditorial",
+      "éditoriaux",
       {
-        "8": {
-          "84": 1,
-          "85": 2
+        "3": {
+          "80": 1
         }
       }
     ],
@@ -6607,10 +6604,21 @@
       }
     ],
     [
-      "éditoriaux",
+      "éditorial",
       {
         "3": {
-          "80": 1
+          "40": 1,
+          "41": 1,
+          "42": 1,
+          "43": 1
+        },
+        "8": {
+          "40": 1,
+          "41": 1,
+          "42": 1,
+          "43": 1,
+          "84": 1,
+          "85": 2
         }
       }
     ],
@@ -7218,11 +7226,8 @@
           "20": 1,
           "22": 1,
           "32": 1,
-          "60": 1,
-          "72": 1,
           "102": 1,
           "110": 1,
-          "112": 1,
           "148": 1,
           "150": 1,
           "152": 1,
@@ -7405,6 +7410,10 @@
         },
         "3": {
           "112": 2
+        },
+        "6": {
+          "72": 1,
+          "112": 1
         },
         "8": {
           "112": 2
@@ -8012,9 +8021,9 @@
           "43": 1
         },
         "3": {
-          "41": 2,
-          "42": 2,
-          "43": 2
+          "41": 1,
+          "42": 1,
+          "43": 1
         },
         "6": {
           "41": 1,
@@ -8027,9 +8036,9 @@
           "17": 1,
           "22": 1,
           "25": 1,
-          "41": 2,
-          "42": 2,
-          "43": 2,
+          "41": 1,
+          "42": 1,
+          "43": 1,
           "151": 2,
           "153": 1,
           "155": 1,
@@ -8617,15 +8626,6 @@
       }
     ],
     [
-      "visuelle",
-      {
-        "8": {
-          "80": 1,
-          "85": 1
-        }
-      }
-    ],
-    [
       "visuelles",
       {
         "2": {
@@ -8636,6 +8636,18 @@
         },
         "8": {
           "73": 1
+        }
+      }
+    ],
+    [
+      "visuelle",
+      {
+        "6": {
+          "67": 1
+        },
+        "8": {
+          "80": 1,
+          "85": 1
         }
       }
     ],
@@ -8741,8 +8753,7 @@
           "178": 1
         },
         "6": {
-          "27": 1,
-          "67": 1
+          "27": 1
         },
         "7": {
           "2": 1,
@@ -9497,6 +9508,10 @@
           "143": 1,
           "144": 1
         },
+        "6": {
+          "72": 1,
+          "112": 1
+        },
         "8": {
           "51": 1,
           "61": 1,
@@ -9520,6 +9535,10 @@
         "3": {
           "51": 1,
           "92": 2
+        },
+        "6": {
+          "49": 1,
+          "96": 1
         },
         "8": {
           "51": 1,
@@ -10275,8 +10294,7 @@
           "209": 1
         },
         "6": {
-          "21": 1,
-          "61": 1
+          "21": 1
         },
         "8": {
           "22": 1,
@@ -11999,149 +12017,6 @@
       }
     ],
     [
-      "un",
-      {
-        "2": {
-          "44": 1,
-          "47": 1,
-          "69": 1,
-          "74": 1
-        },
-        "3": {
-          "44": 2,
-          "45": 1,
-          "46": 1,
-          "47": 2,
-          "48": 1,
-          "49": 1,
-          "50": 1,
-          "51": 1,
-          "52": 1,
-          "53": 1,
-          "54": 1,
-          "55": 1,
-          "56": 1,
-          "57": 1,
-          "58": 1,
-          "59": 1,
-          "60": 1,
-          "61": 1,
-          "62": 1,
-          "63": 1,
-          "64": 1,
-          "65": 1,
-          "66": 1,
-          "67": 1,
-          "68": 1,
-          "69": 2,
-          "70": 1,
-          "71": 1,
-          "72": 1,
-          "73": 1,
-          "74": 2,
-          "75": 1,
-          "76": 1,
-          "77": 1,
-          "78": 1,
-          "79": 1,
-          "80": 1,
-          "81": 1,
-          "82": 1,
-          "84": 1,
-          "86": 1,
-          "87": 1,
-          "88": 1,
-          "89": 1,
-          "90": 1,
-          "91": 1,
-          "92": 1,
-          "93": 1,
-          "94": 1,
-          "95": 1,
-          "96": 1,
-          "97": 1,
-          "98": 1,
-          "99": 1,
-          "100": 1,
-          "101": 1,
-          "102": 1,
-          "103": 1,
-          "104": 1,
-          "105": 1,
-          "106": 1,
-          "107": 1,
-          "108": 1,
-          "109": 1,
-          "110": 1,
-          "111": 1,
-          "112": 1,
-          "113": 1,
-          "114": 1,
-          "115": 1,
-          "116": 1,
-          "117": 1,
-          "118": 1,
-          "119": 1,
-          "120": 1,
-          "121": 1,
-          "122": 1,
-          "123": 1,
-          "124": 1,
-          "125": 1,
-          "126": 1
-        },
-        "8": {
-          "40": 1,
-          "41": 1,
-          "42": 1,
-          "43": 1,
-          "44": 2,
-          "45": 1,
-          "46": 1,
-          "47": 2,
-          "48": 1,
-          "49": 1,
-          "50": 1,
-          "51": 1,
-          "52": 1,
-          "53": 1,
-          "54": 1,
-          "55": 1,
-          "56": 1,
-          "57": 1,
-          "58": 1,
-          "59": 1,
-          "60": 1,
-          "61": 1,
-          "62": 1,
-          "63": 1,
-          "64": 1,
-          "65": 1,
-          "66": 1,
-          "67": 1,
-          "68": 1,
-          "69": 2,
-          "70": 1,
-          "71": 1,
-          "72": 1,
-          "73": 1,
-          "74": 2,
-          "75": 1,
-          "76": 1,
-          "77": 1,
-          "78": 1,
-          "79": 1,
-          "80": 2,
-          "81": 7,
-          "82": 2,
-          "83": 16,
-          "84": 7,
-          "85": 10,
-          "126": 1
-        }
-      }
-    ],
-    [
       "unexplained",
       {
         "8": {
@@ -12307,6 +12182,153 @@
         "8": {
           "28": 1,
           "173": 3
+        }
+      }
+    ],
+    [
+      "un",
+      {
+        "2": {
+          "44": 1,
+          "47": 1,
+          "69": 1,
+          "74": 1
+        },
+        "3": {
+          "40": 1,
+          "41": 1,
+          "42": 1,
+          "43": 1,
+          "44": 2,
+          "45": 1,
+          "46": 1,
+          "47": 2,
+          "48": 1,
+          "49": 1,
+          "50": 1,
+          "51": 1,
+          "52": 1,
+          "53": 1,
+          "54": 1,
+          "55": 1,
+          "56": 1,
+          "57": 1,
+          "58": 1,
+          "59": 1,
+          "60": 1,
+          "61": 1,
+          "62": 1,
+          "63": 1,
+          "64": 1,
+          "65": 1,
+          "66": 1,
+          "67": 1,
+          "68": 1,
+          "69": 2,
+          "70": 1,
+          "71": 1,
+          "72": 1,
+          "73": 1,
+          "74": 2,
+          "75": 1,
+          "76": 1,
+          "77": 1,
+          "78": 1,
+          "79": 1,
+          "80": 1,
+          "81": 1,
+          "82": 1,
+          "84": 1,
+          "86": 1,
+          "87": 1,
+          "88": 1,
+          "89": 1,
+          "90": 1,
+          "91": 1,
+          "92": 1,
+          "93": 1,
+          "94": 1,
+          "95": 1,
+          "96": 1,
+          "97": 1,
+          "98": 1,
+          "99": 1,
+          "100": 1,
+          "101": 1,
+          "102": 1,
+          "103": 1,
+          "104": 1,
+          "105": 1,
+          "106": 1,
+          "107": 1,
+          "108": 1,
+          "109": 1,
+          "110": 1,
+          "111": 1,
+          "112": 1,
+          "113": 1,
+          "114": 1,
+          "115": 1,
+          "116": 1,
+          "117": 1,
+          "118": 1,
+          "119": 1,
+          "120": 1,
+          "121": 1,
+          "122": 1,
+          "123": 1,
+          "124": 1,
+          "125": 1,
+          "126": 1
+        },
+        "8": {
+          "40": 1,
+          "41": 1,
+          "42": 1,
+          "43": 1,
+          "44": 2,
+          "45": 1,
+          "46": 1,
+          "47": 2,
+          "48": 1,
+          "49": 1,
+          "50": 1,
+          "51": 1,
+          "52": 1,
+          "53": 1,
+          "54": 1,
+          "55": 1,
+          "56": 1,
+          "57": 1,
+          "58": 1,
+          "59": 1,
+          "60": 1,
+          "61": 1,
+          "62": 1,
+          "63": 1,
+          "64": 1,
+          "65": 1,
+          "66": 1,
+          "67": 1,
+          "68": 1,
+          "69": 2,
+          "70": 1,
+          "71": 1,
+          "72": 1,
+          "73": 1,
+          "74": 2,
+          "75": 1,
+          "76": 1,
+          "77": 1,
+          "78": 1,
+          "79": 1,
+          "80": 2,
+          "81": 7,
+          "82": 2,
+          "83": 16,
+          "84": 7,
+          "85": 10,
+          "126": 1
         }
       }
     ],
@@ -13648,6 +13670,7 @@
           "126": 1
         },
         "6": {
+          "71": 1,
           "103": 1
         },
         "8": {
@@ -14544,7 +14567,6 @@
           "30": 1,
           "31": 1,
           "70": 1,
-          "71": 1,
           "103": 1,
           "111": 1,
           "168": 2,
@@ -15507,12 +15529,6 @@
     [
       "organise",
       {
-        "3": {
-          "40": 1,
-          "41": 1,
-          "42": 1,
-          "43": 1
-        },
         "8": {
           "40": 1,
           "41": 1,
@@ -16638,7 +16654,6 @@
           "191": 1
         },
         "6": {
-          "99": 1,
           "164": 1
         },
         "7": {
@@ -17703,22 +17718,17 @@
     [
       "troisième",
       {
-        "6": {
-          "43": 1
-        }
-      }
-    ],
-    [
-      "troisieme",
-      {
         "0": {
           "43": 1
         },
         "3": {
-          "43": 2
+          "43": 1
+        },
+        "6": {
+          "43": 1
         },
         "8": {
-          "43": 2
+          "43": 1
         }
       }
     ],
@@ -19786,7 +19796,9 @@
           "175": 1
         },
         "6": {
-          "81": 1
+          "81": 1,
+          "99": 1,
+          "116": 1
         },
         "8": {
           "44": 1,
@@ -19897,8 +19909,6 @@
           "189": 1
         },
         "6": {
-          "99": 1,
-          "116": 1,
           "146": 1,
           "164": 1,
           "181": 1
@@ -22774,7 +22784,6 @@
           "177": 1
         },
         "6": {
-          "112": 1,
           "177": 1
         },
         "8": {
@@ -26165,7 +26174,6 @@
       {
         "6": {
           "31": 1,
-          "71": 1,
           "168": 1
         },
         "8": {
@@ -27243,12 +27251,16 @@
           "41": 2,
           "44": 1,
           "47": 1,
-          "86": 1,
+          "71": 1,
+          "86": 2,
+          "87": 1,
           "103": 2,
           "106": 1,
           "109": 1,
           "114": 1,
+          "116": 1,
           "124": 1,
+          "133": 1,
           "134": 1,
           "144": 1
         },
@@ -30696,8 +30708,6 @@
         },
         "6": {
           "23": 1,
-          "97": 1,
-          "133": 1,
           "162": 1,
           "189": 1,
           "198": 1,
@@ -30982,7 +30992,9 @@
       {
         "6": {
           "63": 1,
+          "97": 1,
           "124": 1,
+          "133": 1,
           "144": 1
         }
       }
@@ -32483,6 +32495,14 @@
       }
     ],
     [
+      "mèmes",
+      {
+        "6": {
+          "61": 1
+        }
+      }
+    ],
+    [
       "médias",
       {
         "0": {
@@ -32528,6 +32548,9 @@
     [
       "méthodes",
       {
+        "6": {
+          "112": 1
+        },
         "8": {
           "126": 1
         }
@@ -32618,6 +32641,12 @@
     [
       "même",
       {
+        "3": {
+          "40": 1,
+          "41": 1,
+          "42": 1,
+          "43": 1
+        },
         "8": {
           "40": 2,
           "41": 2,
@@ -34230,6 +34259,9 @@
           "63": 1,
           "71": 1
         },
+        "6": {
+          "71": 1
+        },
         "8": {
           "63": 1,
           "71": 1,
@@ -34657,7 +34689,6 @@
         },
         "6": {
           "31": 1,
-          "71": 1,
           "106": 1,
           "171": 1
         },
@@ -35504,7 +35535,6 @@
           "153": 1
         },
         "6": {
-          "112": 1,
           "177": 1
         },
         "8": {
@@ -35668,8 +35698,7 @@
           "21": 1
         },
         "6": {
-          "21": 1,
-          "61": 1
+          "21": 1
         },
         "8": {
           "21": 1
@@ -36064,6 +36093,9 @@
     [
       "mainteneurs",
       {
+        "6": {
+          "111": 1
+        },
         "8": {
           "83": 1
         }
@@ -36151,7 +36183,6 @@
       "maintainers",
       {
         "6": {
-          "111": 1,
           "176": 1
         },
         "8": {
@@ -36622,8 +36653,6 @@
         },
         "6": {
           "32": 1,
-          "72": 1,
-          "112": 1,
           "177": 1
         },
         "8": {
@@ -37221,7 +37250,6 @@
           "15": 1,
           "36": 1,
           "46": 1,
-          "55": 1,
           "59": 1,
           "76": 1,
           "98": 1,
@@ -37719,10 +37747,10 @@
           "75": 1
         },
         "3": {
-          "40": 2,
-          "41": 2,
-          "42": 2,
-          "43": 2,
+          "40": 1,
+          "41": 1,
+          "42": 1,
+          "43": 1,
           "44": 2,
           "45": 1,
           "48": 1,
@@ -37808,18 +37836,18 @@
           "44": 2,
           "47": 1,
           "52": 3,
-          "86": 2,
+          "59": 1,
+          "78": 1,
+          "86": 3,
           "106": 2,
+          "107": 1,
           "109": 1,
           "114": 1,
           "118": 3,
+          "121": 1,
           "134": 1
         },
         "8": {
-          "40": 1,
-          "41": 1,
-          "42": 1,
-          "43": 1,
           "44": 3,
           "45": 2,
           "46": 1,
@@ -38234,10 +38262,6 @@
           "53": 1
         },
         "3": {
-          "40": 1,
-          "41": 1,
-          "42": 1,
-          "43": 1,
           "45": 1,
           "48": 1,
           "52": 1,
@@ -38306,10 +38330,10 @@
           "144": 1
         },
         "8": {
-          "40": 2,
-          "41": 2,
-          "42": 2,
-          "43": 2,
+          "40": 1,
+          "41": 1,
+          "42": 1,
+          "43": 1,
           "44": 2,
           "45": 3,
           "46": 2,
@@ -40410,22 +40434,17 @@
     [
       "deuxième",
       {
-        "6": {
-          "42": 1
-        }
-      }
-    ],
-    [
-      "deuxieme",
-      {
         "0": {
           "42": 1
         },
         "3": {
-          "42": 2
+          "42": 1
+        },
+        "6": {
+          "42": 1
         },
         "8": {
-          "42": 2
+          "42": 1
         }
       }
     ],
@@ -40483,10 +40502,10 @@
           "80": 2
         },
         "3": {
-          "40": 5,
-          "41": 5,
-          "42": 5,
-          "43": 5,
+          "40": 3,
+          "41": 3,
+          "42": 3,
+          "43": 3,
           "44": 2,
           "47": 2,
           "50": 1,
@@ -40621,27 +40640,31 @@
           "41": 2,
           "42": 2,
           "43": 1,
-          "52": 2,
+          "52": 1,
           "53": 1,
           "57": 1,
+          "60": 1,
           "62": 1,
           "63": 1,
+          "71": 1,
           "81": 1,
           "85": 1,
           "87": 1,
           "90": 1,
           "99": 1,
           "101": 1,
+          "112": 1,
+          "116": 1,
           "117": 1,
           "118": 1,
           "125": 1,
           "134": 1
         },
         "8": {
-          "40": 9,
-          "41": 9,
-          "42": 9,
-          "43": 9,
+          "40": 6,
+          "41": 6,
+          "42": 6,
+          "43": 6,
           "44": 7,
           "45": 5,
           "46": 5,
@@ -41886,14 +41909,11 @@
           "27": 1,
           "38": 1,
           "39": 1,
-          "59": 1,
           "67": 1,
-          "78": 1,
           "79": 1,
           "81": 1,
           "105": 1,
-          "107": 2,
-          "121": 1,
+          "107": 1,
           "141": 1,
           "147": 1,
           "155": 1,
@@ -42102,7 +42122,11 @@
           "126": 3
         },
         "6": {
-          "43": 1
+          "43": 1,
+          "61": 1,
+          "72": 1,
+          "99": 1,
+          "112": 1
         },
         "8": {
           "40": 1,
@@ -42460,7 +42484,7 @@
           "79": 1
         },
         "3": {
-          "40": 2,
+          "40": 1,
           "44": 1,
           "45": 1,
           "46": 1,
@@ -42511,7 +42535,7 @@
           "82": 1
         },
         "8": {
-          "40": 4,
+          "40": 3,
           "41": 2,
           "42": 2,
           "43": 2,
@@ -42776,15 +42800,11 @@
           "11": 1,
           "20": 1,
           "32": 1,
-          "49": 1,
           "51": 1,
           "60": 1,
-          "72": 1,
           "89": 1,
           "92": 1,
-          "96": 1,
           "100": 1,
-          "112": 1,
           "122": 1,
           "131": 1,
           "149": 1,
@@ -44910,6 +44930,9 @@
     [
       "histoire",
       {
+        "6": {
+          "99": 1
+        },
         "8": {
           "85": 1
         }
@@ -45016,7 +45039,6 @@
           "188": 1
         },
         "6": {
-          "99": 1,
           "164": 1
         },
         "8": {
@@ -46020,10 +46042,10 @@
           "1": 1,
           "2": 1,
           "3": 1,
-          "40": 2,
-          "41": 2,
-          "42": 2,
-          "43": 2
+          "40": 1,
+          "41": 1,
+          "42": 1,
+          "43": 1
         },
         "4": {
           "170": 1,
@@ -46093,10 +46115,10 @@
           "35": 1,
           "37": 1,
           "38": 1,
-          "40": 3,
-          "41": 3,
-          "42": 3,
-          "43": 3,
+          "40": 2,
+          "41": 2,
+          "42": 2,
+          "43": 2,
           "149": 1,
           "151": 1,
           "152": 2,
@@ -46264,7 +46286,8 @@
           "126": 1
         },
         "6": {
-          "41": 1
+          "41": 1,
+          "116": 1
         },
         "8": {
           "49": 1,
@@ -46505,10 +46528,6 @@
           "121": 2
         },
         "8": {
-          "40": 1,
-          "41": 1,
-          "42": 1,
-          "43": 1,
           "60": 1,
           "77": 1,
           "78": 1,
@@ -46603,6 +46622,195 @@
           "186": 1,
           "187": 2,
           "189": 3
+        }
+      }
+    ],
+    [
+      "le",
+      {
+        "0": {
+          "108": 1,
+          "123": 1,
+          "124": 1
+        },
+        "2": {
+          "45": 2,
+          "46": 2,
+          "48": 2,
+          "52": 2,
+          "53": 2,
+          "64": 1,
+          "67": 1,
+          "68": 1,
+          "79": 1
+        },
+        "3": {
+          "45": 2,
+          "46": 2,
+          "48": 2,
+          "52": 2,
+          "53": 2,
+          "64": 1,
+          "67": 1,
+          "68": 1,
+          "79": 1,
+          "82": 1,
+          "83": 1,
+          "86": 2,
+          "87": 2,
+          "88": 2,
+          "89": 2,
+          "90": 2,
+          "91": 2,
+          "92": 2,
+          "93": 2,
+          "94": 2,
+          "95": 2,
+          "96": 2,
+          "97": 2,
+          "98": 2,
+          "99": 2,
+          "100": 2,
+          "101": 2,
+          "102": 2,
+          "103": 2,
+          "104": 2,
+          "105": 2,
+          "106": 2,
+          "107": 2,
+          "108": 4,
+          "109": 2,
+          "110": 2,
+          "111": 2,
+          "112": 2,
+          "113": 2,
+          "114": 2,
+          "115": 2,
+          "116": 2,
+          "117": 2,
+          "118": 2,
+          "119": 2,
+          "120": 2,
+          "121": 2,
+          "122": 2,
+          "123": 4,
+          "124": 4,
+          "125": 2
+        },
+        "4": {
+          "81": 1,
+          "85": 2
+        },
+        "6": {
+          "124": 1,
+          "144": 1
+        },
+        "8": {
+          "40": 1,
+          "41": 1,
+          "42": 1,
+          "43": 1,
+          "44": 2,
+          "45": 4,
+          "46": 4,
+          "47": 2,
+          "48": 3,
+          "49": 1,
+          "50": 2,
+          "51": 2,
+          "52": 3,
+          "53": 4,
+          "54": 2,
+          "55": 2,
+          "56": 1,
+          "57": 1,
+          "58": 1,
+          "59": 2,
+          "60": 2,
+          "61": 2,
+          "62": 2,
+          "63": 2,
+          "64": 3,
+          "65": 2,
+          "66": 2,
+          "67": 3,
+          "68": 3,
+          "69": 2,
+          "70": 2,
+          "71": 2,
+          "72": 1,
+          "73": 1,
+          "74": 2,
+          "75": 2,
+          "76": 1,
+          "77": 2,
+          "78": 2,
+          "79": 3,
+          "80": 11,
+          "81": 5,
+          "82": 5,
+          "83": 14,
+          "84": 7,
+          "85": 7,
+          "86": 6,
+          "87": 6,
+          "88": 6,
+          "89": 6,
+          "90": 5,
+          "91": 6,
+          "92": 6,
+          "93": 6,
+          "94": 5,
+          "95": 6,
+          "96": 6,
+          "97": 6,
+          "98": 6,
+          "99": 6,
+          "100": 6,
+          "101": 6,
+          "102": 6,
+          "103": 6,
+          "104": 6,
+          "105": 6,
+          "106": 6,
+          "107": 6,
+          "108": 8,
+          "109": 6,
+          "110": 6,
+          "111": 6,
+          "112": 6,
+          "113": 6,
+          "114": 6,
+          "115": 6,
+          "116": 6,
+          "117": 6,
+          "118": 6,
+          "119": 6,
+          "120": 6,
+          "121": 6,
+          "122": 6,
+          "123": 8,
+          "124": 8,
+          "125": 6,
+          "126": 3,
+          "127": 3,
+          "128": 3,
+          "129": 3,
+          "130": 3,
+          "131": 3,
+          "132": 3,
+          "133": 3,
+          "134": 3,
+          "135": 3,
+          "136": 3,
+          "137": 3,
+          "138": 3,
+          "139": 3,
+          "140": 3,
+          "141": 3,
+          "142": 3,
+          "143": 3,
+          "144": 3
         }
       }
     ],
@@ -46849,199 +47057,6 @@
       }
     ],
     [
-      "le",
-      {
-        "0": {
-          "108": 1,
-          "123": 1,
-          "124": 1
-        },
-        "2": {
-          "45": 2,
-          "46": 2,
-          "48": 2,
-          "52": 2,
-          "53": 2,
-          "64": 1,
-          "67": 1,
-          "68": 1,
-          "79": 1
-        },
-        "3": {
-          "40": 2,
-          "41": 2,
-          "42": 2,
-          "43": 2,
-          "45": 2,
-          "46": 2,
-          "48": 2,
-          "52": 2,
-          "53": 2,
-          "64": 1,
-          "67": 1,
-          "68": 1,
-          "79": 1,
-          "82": 1,
-          "83": 1,
-          "86": 2,
-          "87": 2,
-          "88": 2,
-          "89": 2,
-          "90": 2,
-          "91": 2,
-          "92": 2,
-          "93": 2,
-          "94": 2,
-          "95": 2,
-          "96": 2,
-          "97": 2,
-          "98": 2,
-          "99": 2,
-          "100": 2,
-          "101": 2,
-          "102": 2,
-          "103": 2,
-          "104": 2,
-          "105": 2,
-          "106": 2,
-          "107": 2,
-          "108": 4,
-          "109": 2,
-          "110": 2,
-          "111": 2,
-          "112": 2,
-          "113": 2,
-          "114": 2,
-          "115": 2,
-          "116": 2,
-          "117": 2,
-          "118": 2,
-          "119": 2,
-          "120": 2,
-          "121": 2,
-          "122": 2,
-          "123": 4,
-          "124": 4,
-          "125": 2
-        },
-        "4": {
-          "81": 1,
-          "85": 2
-        },
-        "6": {
-          "124": 1,
-          "144": 1
-        },
-        "8": {
-          "40": 3,
-          "41": 3,
-          "42": 3,
-          "43": 3,
-          "44": 2,
-          "45": 4,
-          "46": 4,
-          "47": 2,
-          "48": 3,
-          "49": 1,
-          "50": 2,
-          "51": 2,
-          "52": 3,
-          "53": 4,
-          "54": 2,
-          "55": 2,
-          "56": 1,
-          "57": 1,
-          "58": 1,
-          "59": 2,
-          "60": 2,
-          "61": 2,
-          "62": 2,
-          "63": 2,
-          "64": 3,
-          "65": 2,
-          "66": 2,
-          "67": 3,
-          "68": 3,
-          "69": 2,
-          "70": 2,
-          "71": 2,
-          "72": 1,
-          "73": 1,
-          "74": 2,
-          "75": 2,
-          "76": 1,
-          "77": 2,
-          "78": 2,
-          "79": 3,
-          "80": 11,
-          "81": 5,
-          "82": 5,
-          "83": 14,
-          "84": 7,
-          "85": 7,
-          "86": 6,
-          "87": 6,
-          "88": 6,
-          "89": 6,
-          "90": 5,
-          "91": 6,
-          "92": 6,
-          "93": 6,
-          "94": 5,
-          "95": 6,
-          "96": 6,
-          "97": 6,
-          "98": 6,
-          "99": 6,
-          "100": 6,
-          "101": 6,
-          "102": 6,
-          "103": 6,
-          "104": 6,
-          "105": 6,
-          "106": 6,
-          "107": 6,
-          "108": 8,
-          "109": 6,
-          "110": 6,
-          "111": 6,
-          "112": 6,
-          "113": 6,
-          "114": 6,
-          "115": 6,
-          "116": 6,
-          "117": 6,
-          "118": 6,
-          "119": 6,
-          "120": 6,
-          "121": 6,
-          "122": 6,
-          "123": 8,
-          "124": 8,
-          "125": 6,
-          "126": 3,
-          "127": 3,
-          "128": 3,
-          "129": 3,
-          "130": 3,
-          "131": 3,
-          "132": 3,
-          "133": 3,
-          "134": 3,
-          "135": 3,
-          "136": 3,
-          "137": 3,
-          "138": 3,
-          "139": 3,
-          "140": 3,
-          "141": 3,
-          "142": 3,
-          "143": 3,
-          "144": 3
-        }
-      }
-    ],
-    [
       "leaving",
       {
         "8": {
@@ -47223,7 +47238,6 @@
         },
         "6": {
           "15": 1,
-          "55": 1,
           "189": 1,
           "209": 1
         },
@@ -48391,8 +48405,10 @@
           "124": 2
         },
         "6": {
+          "71": 1,
           "103": 1,
           "124": 1,
+          "133": 1,
           "144": 1
         },
         "8": {
@@ -48432,8 +48448,6 @@
         },
         "6": {
           "31": 1,
-          "71": 1,
-          "133": 1,
           "168": 1,
           "189": 1,
           "198": 1,
@@ -49133,6 +49147,9 @@
           "78": 1,
           "79": 1
         },
+        "6": {
+          "112": 1
+        },
         "8": {
           "40": 1,
           "41": 1,
@@ -49180,91 +49197,6 @@
       {
         "8": {
           "83": 1
-        }
-      }
-    ],
-    [
-      "licence",
-      {
-        "8": {
-          "83": 6
-        }
-      }
-    ],
-    [
-      "licencié",
-      {
-        "8": {
-          "83": 1
-        }
-      }
-    ],
-    [
-      "licensed",
-      {
-        "8": {
-          "148": 1,
-          "181": 1
-        }
-      }
-    ],
-    [
-      "license",
-      {
-        "8": {
-          "31": 1,
-          "148": 2,
-          "168": 6,
-          "176": 6,
-          "185": 1,
-          "187": 2,
-          "189": 1
-        }
-      }
-    ],
-    [
-      "licenses",
-      {
-        "2": {
-          "30": 1
-        },
-        "3": {
-          "176": 1
-        },
-        "8": {
-          "30": 1,
-          "168": 1,
-          "176": 3,
-          "186": 1
-        }
-      }
-    ],
-    [
-      "licensing",
-      {
-        "3": {
-          "30": 1,
-          "168": 1
-        },
-        "4": {
-          "168": 1
-        },
-        "6": {
-          "31": 1,
-          "71": 1
-        },
-        "7": {
-          "30": 2,
-          "168": 1,
-          "176": 1
-        },
-        "8": {
-          "31": 1,
-          "148": 3,
-          "157": 1,
-          "162": 1,
-          "168": 2,
-          "176": 4
         }
       }
     ],
@@ -49324,22 +49256,89 @@
       }
     ],
     [
-      "liées",
+      "licencié",
       {
-        "0": {
-          "64": 1,
-          "102": 1
-        },
-        "2": {
-          "64": 1
-        },
-        "3": {
-          "64": 1,
-          "102": 2
+        "8": {
+          "83": 1
+        }
+      }
+    ],
+    [
+      "licence",
+      {
+        "6": {
+          "71": 1
         },
         "8": {
-          "64": 1,
-          "102": 2
+          "83": 6
+        }
+      }
+    ],
+    [
+      "licensed",
+      {
+        "8": {
+          "148": 1,
+          "181": 1
+        }
+      }
+    ],
+    [
+      "license",
+      {
+        "8": {
+          "31": 1,
+          "148": 2,
+          "168": 6,
+          "176": 6,
+          "185": 1,
+          "187": 2,
+          "189": 1
+        }
+      }
+    ],
+    [
+      "licenses",
+      {
+        "2": {
+          "30": 1
+        },
+        "3": {
+          "176": 1
+        },
+        "8": {
+          "30": 1,
+          "168": 1,
+          "176": 3,
+          "186": 1
+        }
+      }
+    ],
+    [
+      "licensing",
+      {
+        "3": {
+          "30": 1,
+          "168": 1
+        },
+        "4": {
+          "168": 1
+        },
+        "6": {
+          "31": 1
+        },
+        "7": {
+          "30": 2,
+          "168": 1,
+          "176": 1
+        },
+        "8": {
+          "31": 1,
+          "148": 3,
+          "157": 1,
+          "162": 1,
+          "168": 2,
+          "176": 4
         }
       }
     ],
@@ -49525,6 +49524,34 @@
           "123": 1,
           "124": 1,
           "125": 1
+        }
+      }
+    ],
+    [
+      "liées",
+      {
+        "0": {
+          "64": 1,
+          "102": 1
+        },
+        "2": {
+          "64": 1
+        },
+        "3": {
+          "40": 1,
+          "41": 1,
+          "42": 1,
+          "43": 1,
+          "64": 1,
+          "102": 2
+        },
+        "8": {
+          "40": 1,
+          "41": 1,
+          "42": 1,
+          "43": 1,
+          "64": 1,
+          "102": 2
         }
       }
     ],
@@ -51666,7 +51693,8 @@
       "créatives",
       {
         "6": {
-          "81": 1
+          "81": 1,
+          "116": 1
         },
         "8": {
           "81": 1
@@ -52250,7 +52278,6 @@
           "39": 1,
           "55": 1,
           "95": 1,
-          "116": 1,
           "120": 1,
           "146": 1,
           "156": 1,
@@ -57068,18 +57095,11 @@
       }
     ],
     [
-      "composabilité",
-      {
-        "6": {
-          "52": 1
-        }
-      }
-    ],
-    [
       "composability",
       {
         "6": {
-          "12": 1
+          "12": 1,
+          "52": 1
         },
         "8": {
           "168": 1,
@@ -57778,9 +57798,11 @@
           "53": 1,
           "57": 1,
           "62": 1,
+          "72": 1,
           "87": 1,
           "99": 1,
           "101": 1,
+          "112": 1,
           "117": 1,
           "125": 1
         },
@@ -57812,10 +57834,10 @@
           "72": 1
         },
         "3": {
-          "40": 3,
-          "41": 3,
-          "42": 3,
-          "43": 3,
+          "40": 2,
+          "41": 2,
+          "42": 2,
+          "43": 2,
           "72": 1,
           "81": 1,
           "99": 2,
@@ -57829,15 +57851,16 @@
           "41": 1,
           "42": 1,
           "43": 1,
+          "60": 1,
           "81": 1,
           "83": 1,
           "85": 1
         },
         "8": {
-          "40": 3,
-          "41": 3,
-          "42": 3,
-          "43": 3,
+          "40": 2,
+          "41": 2,
+          "42": 2,
+          "43": 2,
           "72": 1,
           "81": 1,
           "83": 7,
@@ -58159,7 +58182,11 @@
           "125": 1
         },
         "6": {
-          "90": 1
+          "59": 1,
+          "78": 1,
+          "90": 1,
+          "107": 1,
+          "121": 1
         },
         "8": {
           "44": 1,
@@ -60672,7 +60699,9 @@
         },
         "6": {
           "41": 1,
-          "85": 1
+          "85": 1,
+          "101": 1,
+          "116": 1
         },
         "8": {
           "85": 1,
@@ -60802,9 +60831,7 @@
         "6": {
           "1": 1,
           "100": 1,
-          "101": 1,
           "104": 1,
-          "116": 1,
           "122": 1,
           "131": 1,
           "150": 1,
@@ -61267,31 +61294,6 @@
       }
     ],
     [
-      "résidus",
-      {
-        "8": {
-          "84": 1
-        }
-      }
-    ],
-    [
-      "résultats",
-      {
-        "8": {
-          "82": 2
-        }
-      }
-    ],
-    [
-      "résultat",
-      {
-        "8": {
-          "82": 1,
-          "84": 1
-        }
-      }
-    ],
-    [
       "réactivation",
       {
         "8": {
@@ -61379,6 +61381,39 @@
         "8": {
           "82": 1,
           "84": 1
+        }
+      }
+    ],
+    [
+      "résidus",
+      {
+        "8": {
+          "84": 1
+        }
+      }
+    ],
+    [
+      "résultats",
+      {
+        "8": {
+          "82": 2
+        }
+      }
+    ],
+    [
+      "résultat",
+      {
+        "8": {
+          "82": 1,
+          "84": 1
+        }
+      }
+    ],
+    [
+      "réseaux",
+      {
+        "6": {
+          "61": 1
         }
       }
     ],
@@ -63094,6 +63129,12 @@
     [
       "rassemble",
       {
+        "3": {
+          "40": 1,
+          "41": 1,
+          "42": 1,
+          "43": 1
+        },
         "8": {
           "40": 1,
           "41": 1,
@@ -66188,7 +66229,9 @@
           "40": 1,
           "42": 1,
           "81": 1,
-          "82": 1
+          "82": 1,
+          "87": 1,
+          "112": 1
         },
         "8": {
           "80": 3,
@@ -67110,24 +67153,18 @@
       }
     ],
     [
-      "reliée",
+      "reliées",
       {
         "8": {
-          "85": 1
+          "126": 1
         }
       }
     ],
     [
-      "reliées",
+      "reliée",
       {
-        "3": {
-          "40": 1,
-          "41": 1,
-          "42": 1,
-          "43": 1
-        },
         "8": {
-          "126": 1
+          "85": 1
         }
       }
     ],
@@ -68819,7 +68856,6 @@
           "32": 1,
           "72": 1,
           "94": 1,
-          "112": 1,
           "146": 1,
           "159": 1,
           "177": 1
@@ -69582,9 +69618,6 @@
         "3": {
           "85": 1
         },
-        "6": {
-          "52": 1
-        },
         "8": {
           "80": 1,
           "81": 1,
@@ -69604,7 +69637,8 @@
           "208": 1
         },
         "6": {
-          "12": 1
+          "12": 1,
+          "52": 1
         },
         "8": {
           "21": 2,
@@ -69989,6 +70023,7 @@
         },
         "6": {
           "0": 1,
+          "40": 1,
           "146": 1
         },
         "7": {
@@ -70112,9 +70147,6 @@
         "4": {
           "81": 1,
           "184": 1
-        },
-        "6": {
-          "40": 1
         },
         "7": {
           "25": 1,
@@ -70321,10 +70353,6 @@
           "24": 1,
           "30": 1,
           "39": 1,
-          "40": 1,
-          "41": 1,
-          "42": 1,
-          "43": 1,
           "45": 1,
           "48": 1,
           "52": 1,
@@ -70414,10 +70442,6 @@
           "33": 1,
           "34": 1,
           "39": 1,
-          "40": 1,
-          "41": 1,
-          "42": 1,
-          "43": 1,
           "45": 1,
           "48": 1,
           "52": 1,
@@ -71104,6 +71128,7 @@
           "71": 2
         },
         "6": {
+          "71": 1,
           "103": 1
         },
         "8": {
@@ -71921,6 +71946,15 @@
       }
     ],
     [
+      "personnelle",
+      {
+        "6": {
+          "72": 1,
+          "112": 1
+        }
+      }
+    ],
+    [
       "personnels",
       {
         "0": {
@@ -72029,8 +72063,6 @@
         },
         "6": {
           "32": 1,
-          "72": 1,
-          "112": 1,
           "177": 1
         },
         "7": {
@@ -75492,7 +75524,7 @@
           "96": 2
         },
         "6": {
-          "49": 1,
+          "49": 2,
           "56": 1,
           "79": 1,
           "91": 1,
@@ -75518,8 +75550,7 @@
           "206": 1
         },
         "6": {
-          "9": 1,
-          "49": 1
+          "9": 1
         },
         "8": {
           "9": 1,
@@ -77452,6 +77483,10 @@
           "80": 1
         },
         "3": {
+          "40": 1,
+          "41": 1,
+          "42": 1,
+          "43": 1,
           "54": 1,
           "64": 1,
           "66": 1,
@@ -77469,10 +77504,10 @@
           "87": 1
         },
         "8": {
-          "40": 3,
-          "41": 3,
-          "42": 3,
-          "43": 3,
+          "40": 4,
+          "41": 4,
+          "42": 4,
+          "43": 4,
           "44": 1,
           "45": 1,
           "46": 1,
@@ -77645,10 +77680,6 @@
       "partagent",
       {
         "8": {
-          "40": 1,
-          "41": 1,
-          "42": 1,
-          "43": 1,
           "44": 1,
           "45": 1,
           "46": 1,
@@ -78387,6 +78418,12 @@
     [
       "axe",
       {
+        "3": {
+          "40": 1,
+          "41": 1,
+          "42": 1,
+          "43": 1
+        },
         "8": {
           "40": 1,
           "41": 1,
@@ -78887,6 +78924,7 @@
           "82": 1
         },
         "6": {
+          "55": 1,
           "82": 1,
           "124": 1,
           "144": 1
@@ -82140,19 +82178,6 @@
       }
     ],
     [
-      "automatique",
-      {
-        "3": {
-          "82": 1
-        },
-        "6": {
-          "82": 1,
-          "124": 1,
-          "144": 1
-        }
-      }
-    ],
-    [
       "automatisés",
       {
         "8": {
@@ -82169,6 +82194,20 @@
         },
         "8": {
           "81": 1
+        }
+      }
+    ],
+    [
+      "automatique",
+      {
+        "3": {
+          "82": 1
+        },
+        "6": {
+          "55": 1,
+          "82": 1,
+          "124": 1,
+          "144": 1
         }
       }
     ],
@@ -82200,17 +82239,7 @@
     [
       "autour",
       {
-        "3": {
-          "40": 1,
-          "41": 1,
-          "42": 1,
-          "43": 1
-        },
         "8": {
-          "40": 1,
-          "41": 1,
-          "42": 1,
-          "43": 1,
           "84": 1
         }
       }
@@ -85028,15 +85057,11 @@
           "46": 1,
           "55": 1,
           "68": 1,
-          "71": 1,
-          "86": 1,
-          "87": 1,
           "89": 1,
           "95": 1,
           "108": 3,
           "114": 1,
-          "116": 2,
-          "133": 1,
+          "116": 1,
           "151": 2,
           "152": 1,
           "154": 1,
@@ -87051,10 +87076,10 @@
           "20": 1,
           "22": 2,
           "36": 1,
-          "40": 2,
-          "41": 2,
-          "42": 2,
-          "43": 2,
+          "40": 1,
+          "41": 1,
+          "42": 1,
+          "43": 1,
           "45": 1,
           "48": 1,
           "52": 1,
@@ -87238,10 +87263,6 @@
           "37": 1,
           "38": 1,
           "39": 1,
-          "40": 1,
-          "41": 1,
-          "42": 1,
-          "43": 1,
           "45": 1,
           "48": 1,
           "52": 1,
@@ -87904,20 +87925,6 @@
       }
     ],
     [
-      "sélection",
-      {
-        "2": {
-          "56": 1
-        },
-        "3": {
-          "56": 1
-        },
-        "8": {
-          "56": 1
-        }
-      }
-    ],
-    [
       "sémantiques",
       {
         "8": {
@@ -87938,13 +87945,34 @@
           "64": 1,
           "107": 2
         },
-        "6": {
-          "40": 1
-        },
         "8": {
           "64": 1,
           "83": 2,
           "107": 2
+        }
+      }
+    ],
+    [
+      "sélection",
+      {
+        "2": {
+          "56": 1
+        },
+        "3": {
+          "56": 1
+        },
+        "4": {
+          "40": 1,
+          "41": 1,
+          "42": 1,
+          "43": 1
+        },
+        "8": {
+          "40": 1,
+          "41": 1,
+          "42": 1,
+          "43": 1,
+          "56": 1
         }
       }
     ],
@@ -89047,6 +89075,26 @@
       }
     ],
     [
+      "systémique",
+      {
+        "0": {
+          "77": 1,
+          "120": 1
+        },
+        "2": {
+          "77": 1
+        },
+        "3": {
+          "77": 1,
+          "120": 2
+        },
+        "8": {
+          "77": 1,
+          "120": 2
+        }
+      }
+    ],
+    [
       "système",
       {
         "0": {
@@ -89154,6 +89202,7 @@
         },
         "6": {
           "43": 1,
+          "60": 1,
           "81": 1,
           "90": 1,
           "118": 1
@@ -89194,23 +89243,14 @@
     [
       "systemique",
       {
-        "0": {
-          "77": 1,
-          "120": 1
-        },
         "2": {
-          "50": 1,
-          "77": 1
+          "50": 1
         },
         "3": {
-          "50": 1,
-          "77": 1,
-          "120": 2
+          "50": 1
         },
         "8": {
-          "50": 1,
-          "77": 1,
-          "120": 2
+          "50": 1
         }
       }
     ],
@@ -89424,7 +89464,6 @@
           "47": 1,
           "50": 2,
           "56": 1,
-          "60": 1,
           "66": 1,
           "77": 1,
           "96": 1,
@@ -93152,8 +93191,15 @@
     [
       "structuré",
       {
+        "0": {
+          "87": 1
+        },
+        "3": {
+          "87": 2
+        },
         "8": {
-          "85": 1
+          "85": 1,
+          "87": 2
         }
       }
     ],
@@ -93239,15 +93285,11 @@
     [
       "structure",
       {
-        "0": {
-          "87": 1
-        },
         "2": {
           "27": 1
         },
         "3": {
           "18": 1,
-          "87": 2,
           "170": 1
         },
         "4": {
@@ -93270,7 +93312,7 @@
           "83": 1,
           "84": 3,
           "86": 1,
-          "87": 3,
+          "87": 1,
           "88": 1,
           "89": 1,
           "90": 1,
@@ -94004,10 +94046,6 @@
           "53": 1
         },
         "3": {
-          "40": 1,
-          "41": 1,
-          "42": 1,
-          "43": 1,
           "45": 1,
           "48": 1,
           "52": 1,
@@ -94054,10 +94092,10 @@
           "125": 1
         },
         "8": {
-          "40": 2,
-          "41": 2,
-          "42": 2,
-          "43": 2,
+          "40": 1,
+          "41": 1,
+          "42": 1,
+          "43": 1,
           "45": 1,
           "48": 1,
           "52": 1,
@@ -95756,6 +95794,7 @@
           "0": 1,
           "22": 1,
           "24": 1,
+          "40": 1,
           "62": 1,
           "64": 1,
           "136": 1,
@@ -96935,10 +96974,6 @@
           "1": 1,
           "2": 1,
           "3": 1,
-          "40": 1,
-          "41": 1,
-          "42": 1,
-          "43": 1,
           "168": 1
         },
         "7": {
@@ -96952,10 +96987,6 @@
           "3": 1,
           "5": 1,
           "11": 2,
-          "40": 1,
-          "41": 1,
-          "42": 1,
-          "43": 1,
           "153": 7,
           "157": 3,
           "160": 4,
@@ -97320,7 +97351,6 @@
           "35": 1,
           "62": 1,
           "75": 1,
-          "87": 1,
           "117": 1,
           "152": 1,
           "182": 1
@@ -97776,6 +97806,15 @@
         "8": {
           "84": 1,
           "85": 1
+        }
+      }
+    ],
+    [
+      "gestion",
+      {
+        "6": {
+          "72": 1,
+          "112": 1
         }
       }
     ],
@@ -98424,8 +98463,6 @@
         },
         "6": {
           "32": 1,
-          "72": 1,
-          "112": 1,
           "177": 1
         },
         "7": {
@@ -98619,7 +98656,6 @@
           "1": 1,
           "7": 1,
           "47": 1,
-          "116": 1,
           "181": 1
         },
         "7": {
@@ -98662,7 +98698,8 @@
           "116": 2
         },
         "6": {
-          "41": 1
+          "41": 1,
+          "116": 1
         },
         "8": {
           "116": 2
@@ -99203,10 +99240,6 @@
           "62": 1
         },
         "3": {
-          "40": 1,
-          "41": 1,
-          "42": 1,
-          "43": 1,
           "44": 1,
           "45": 2,
           "46": 1,
@@ -99301,10 +99334,10 @@
           "125": 1
         },
         "8": {
-          "40": 2,
-          "41": 2,
-          "42": 2,
-          "43": 2,
+          "40": 1,
+          "41": 1,
+          "42": 1,
+          "43": 1,
           "44": 1,
           "45": 2,
           "46": 1,
@@ -99875,20 +99908,6 @@
       }
     ],
     [
-      "ecoute",
-      {
-        "0": {
-          "119": 1
-        },
-        "3": {
-          "119": 2
-        },
-        "8": {
-          "119": 2
-        }
-      }
-    ],
-    [
       "economics",
       {
         "4": {
@@ -100105,10 +100124,10 @@
           "20": 1,
           "22": 1,
           "36": 1,
-          "40": 2,
-          "41": 2,
-          "42": 2,
-          "43": 2,
+          "40": 1,
+          "41": 1,
+          "42": 1,
+          "43": 1,
           "45": 1,
           "48": 1,
           "52": 1,
@@ -100299,10 +100318,6 @@
           "37": 1,
           "38": 1,
           "39": 1,
-          "40": 1,
-          "41": 1,
-          "42": 1,
-          "43": 1,
           "45": 1,
           "48": 1,
           "52": 1,
@@ -103620,6 +103635,14 @@
       }
     ],
     [
+      "entrants",
+      {
+        "6": {
+          "112": 1
+        }
+      }
+    ],
+    [
       "entraines",
       {
         "2": {
@@ -106892,24 +106915,28 @@
       "frontieres",
       {
         "0": {
-          "105": 1,
-          "114": 1
+          "105": 1
         },
         "3": {
-          "105": 2,
-          "114": 2
+          "105": 2
         },
         "8": {
-          "105": 2,
-          "114": 2
+          "105": 2
         }
       }
     ],
     [
       "frontières",
       {
+        "0": {
+          "114": 1
+        },
+        "3": {
+          "114": 2
+        },
         "8": {
-          "83": 1
+          "83": 1,
+          "114": 2
         }
       }
     ],
@@ -108305,13 +108332,13 @@
           "40": 1
         },
         "3": {
-          "40": 2
+          "40": 1
         },
         "6": {
           "40": 1
         },
         "8": {
-          "40": 2,
+          "40": 1,
           "83": 1
         }
       }

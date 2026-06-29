@@ -5,15 +5,15 @@
       "@type": "WebPage",
       "@id": "https://electronicartefacts.com/fr/publications/systems-thinking-for-creative-practice/#webpage",
       "url": "https://electronicartefacts.com/fr/publications/systems-thinking-for-creative-practice/",
-      "name": "Pensée systemique pour la pratique créative",
-      "description": "Pensée systemique pour la pratique créative propose une synthèse claire en français sur le sujet \"Pensée systemique pour la pratique créative\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
+      "name": "Pensée systémique pour la pratique créative",
+      "description": "Pensée systémique pour la pratique créative propose une synthèse claire en français sur le sujet \"Pensée systémique pour la pratique créative\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
       "primaryImageOfPage": {
         "@type": "ImageObject",
         "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-search.jpg",
-        "description": "Pensée systemique pour la pratique créative"
+        "description": "Pensée systémique pour la pratique créative"
       },
       "breadcrumb": {
         "@id": "https://electronicartefacts.com/fr/publications/systems-thinking-for-creative-practice/#breadcrumb"
@@ -33,10 +33,10 @@
       "@type": "TechArticle",
       "@id": "https://electronicartefacts.com/fr/id/publication/systems-thinking-for-creative-practice/",
       "identifier": "ea:publication:systems-thinking-for-creative-practice-fr",
-      "name": "Pensée systemique pour la pratique créative",
-      "headline": "Pensée systemique pour la pratique créative",
-      "abstract": "Pensée systemique pour la pratique créative propose une synthèse claire en français sur le sujet \"Pensée systemique pour la pratique créative\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
-      "description": "Pensée systemique pour la pratique créative propose une synthèse claire en français sur le sujet \"Pensée systemique pour la pratique créative\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
+      "name": "Pensée systémique pour la pratique créative",
+      "headline": "Pensée systémique pour la pratique créative",
+      "abstract": "Pensée systémique pour la pratique créative propose une synthèse claire en français sur le sujet \"Pensée systémique pour la pratique créative\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
+      "description": "Pensée systémique pour la pratique créative propose une synthèse claire en français sur le sujet \"Pensée systémique pour la pratique créative\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
       "url": "https://electronicartefacts.com/fr/publications/systems-thinking-for-creative-practice/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/publications/systems-thinking-for-creative-practice/#webpage"
@@ -44,7 +44,7 @@
       "image": {
         "@type": "ImageObject",
         "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-search.jpg",
-        "description": "Pensée systemique pour la pratique créative"
+        "description": "Pensée systémique pour la pratique créative"
       },
       "author": [
         {
@@ -79,7 +79,7 @@
       "isAccessibleForFree": true,
       "wordCount": 143,
       "citation": [
-        "Electronic Artefacts. \"Pensée systemique pour la pratique créative\". Article technique, version 1.0.0, 2026.",
+        "Electronic Artefacts. \"Pensée systémique pour la pratique créative\". Article technique, version 1.0.0, 2026.",
         {
           "@type": "CreativeWork",
           "name": "Thinking in Systems",
@@ -254,7 +254,7 @@
         {
           "@type": "ListItem",
           "position": 3,
-          "name": "Pensée systemique pour la pratique créative",
+          "name": "Pensée systémique pour la pratique créative",
           "item": "https://electronicartefacts.com/fr/publications/systems-thinking-for-creative-practice/"
         }
       ]

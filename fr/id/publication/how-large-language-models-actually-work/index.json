@@ -32,13 +32,13 @@
     "Transformer",
     "Attention",
     "Tokenization",
-    "Inference"
+    "inférence"
   ],
   "disciplines": [
     "intelligence artificielle",
-    "Machine Learning",
-    "Programming",
-    "Knowledge Systems"
+    "apprentissage automatique",
+    "programmation",
+    "systèmes de connaissance"
   ],
   "sources": [
     {

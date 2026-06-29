@@ -5,15 +5,15 @@
       "@type": "WebPage",
       "@id": "https://electronicartefacts.com/fr/publications/redis-streams-for-orchestration/#webpage",
       "url": "https://electronicartefacts.com/fr/publications/redis-streams-for-orchestration/",
-      "name": "Redis Streams pour l'orchestration",
-      "description": "Redis Streams pour l'orchestration propose une synthèse claire en français sur le sujet \"Redis Streams pour l'orchestration\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
+      "name": "Redis Streams pour l’orchestration",
+      "description": "Redis Streams pour l’orchestration propose une synthèse claire en français sur le sujet \"Redis Streams pour l’orchestration\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
       "primaryImageOfPage": {
         "@type": "ImageObject",
         "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-search.jpg",
-        "description": "Redis Streams pour l'orchestration"
+        "description": "Redis Streams pour l’orchestration"
       },
       "breadcrumb": {
         "@id": "https://electronicartefacts.com/fr/publications/redis-streams-for-orchestration/#breadcrumb"
@@ -33,10 +33,10 @@
       "@type": "TechArticle",
       "@id": "https://electronicartefacts.com/fr/id/publication/redis-streams-for-orchestration/",
       "identifier": "ea:publication:redis-streams-for-orchestration-fr",
-      "name": "Redis Streams pour l'orchestration",
-      "headline": "Redis Streams pour l'orchestration",
-      "abstract": "Redis Streams pour l'orchestration propose une synthèse claire en français sur le sujet \"Redis Streams pour l'orchestration\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
-      "description": "Redis Streams pour l'orchestration propose une synthèse claire en français sur le sujet \"Redis Streams pour l'orchestration\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
+      "name": "Redis Streams pour l’orchestration",
+      "headline": "Redis Streams pour l’orchestration",
+      "abstract": "Redis Streams pour l’orchestration propose une synthèse claire en français sur le sujet \"Redis Streams pour l’orchestration\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
+      "description": "Redis Streams pour l’orchestration propose une synthèse claire en français sur le sujet \"Redis Streams pour l’orchestration\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
       "url": "https://electronicartefacts.com/fr/publications/redis-streams-for-orchestration/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/publications/redis-streams-for-orchestration/#webpage"
@@ -44,7 +44,7 @@
       "image": {
         "@type": "ImageObject",
         "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-search.jpg",
-        "description": "Redis Streams pour l'orchestration"
+        "description": "Redis Streams pour l’orchestration"
       },
       "author": [
         {
@@ -64,7 +64,7 @@
         "Idempotency",
         "architecture logicielle",
         "Distributed Systems",
-        "Programming",
+        "programmation",
         "conception de systèmes"
       ],
       "inLanguage": "fr",
@@ -80,7 +80,7 @@
       "isAccessibleForFree": true,
       "wordCount": 139,
       "citation": [
-        "Electronic Artefacts. \"Redis Streams pour l'orchestration\". Article technique, version 1.0.0, 2026.",
+        "Electronic Artefacts. \"Redis Streams pour l’orchestration\". Article technique, version 1.0.0, 2026.",
         {
           "@type": "CreativeWork",
           "name": "Redis Streams",
@@ -125,7 +125,7 @@
       "articleSection": [
         "architecture logicielle",
         "Distributed Systems",
-        "Programming",
+        "programmation",
         "conception de systèmes",
         "Redis Streams",
         "orchestration"
@@ -256,7 +256,7 @@
         {
           "@type": "ListItem",
           "position": 3,
-          "name": "Redis Streams pour l'orchestration",
+          "name": "Redis Streams pour l’orchestration",
           "item": "https://electronicartefacts.com/fr/publications/redis-streams-for-orchestration/"
         }
       ]

@@ -3,14 +3,13 @@ id: ea:collection:knowledge-hub-third-wave-fr
 type: collection
 slug:
   canonical: knowledge-hub-third-wave
-title: Hub de connaissance, troisieme vague
+title: Hub de connaissance, troisième vague
 subtitle: IA, systèmes et calcul sur graphe
-abstract: Hub de connaissance, troisieme vague organise des fiches reliées autour de le sujet "Hub
-  de connaissance, troisieme vague" dans le graphe public d'Electronic Artefacts, afin de donner une
-  progression lisible aux archives de connaissance d'Electronic Artefacts.
-description: Hub de connaissance, troisieme vague organise des fiches reliées autour de le sujet
-  "Hub de connaissance, troisieme vague" dans le graphe public d'Electronic Artefacts, afin de
-  donner une progression lisible aux archives de connaissance d'Electronic Artefacts.
+abstract: Hub de connaissance, troisième vague rassemble des fiches liées par un même axe éditorial,
+  afin de donner une progression lisible aux archives de connaissance d'Electronic Artefacts.
+description: Hub de connaissance, troisième vague rassemble des fiches liées par un même axe
+  éditorial, afin de donner une progression lisible aux archives de connaissance d'Electronic
+  Artefacts.
 locale: fr
 visibility: public
 publicationClass: published
@@ -25,7 +24,7 @@ version:
 authors:
   - id: ea:organization:electronic-artefacts
 publisher: ea:organization:electronic-artefacts
-thesis: Hub de connaissance, troisieme vague propose une lecture organisee de 30 fiches reliées par
+thesis: Hub de connaissance, troisième vague propose une lecture organisee de 30 fiches reliées par
   un même axe editorial.
 curator:
   - id: ea:organization:electronic-artefacts
@@ -63,25 +62,25 @@ explicitMembers:
 selectionNote: La sélection privilégie des contenus stables, reliables et utiles pour parcourir le
   hub de connaissance en français.
 tags:
-  - Hub de connaissance
-  - Troisième vague
+  - hub de connaissance
+  - troisième vague
   - intelligence artificielle
-  - Architecture des systèmes
-  - Calcul sur graphe
+  - architecture des systèmes
+  - calcul sur graphe
 disciplines:
   - intelligence artificielle
   - conception de systèmes
-  - Systèmes de connaissance
+  - systèmes de connaissance
   - architecture logicielle
-  - Technologies créatives
+  - technologies créatives
 translationOf: ea:collection:knowledge-hub-third-wave
 ---
 
 ## Intention
 
-Hub de connaissance, troisieme vague rassemble des fiches qui partagent un même axe de lecture autour de le sujet "Hub de connaissance, troisieme vague" dans le graphe public d'Electronic Artefacts.
+Hub de connaissance, troisième vague rassemble des fiches liées par un même axe éditorial.
 
-## Selection
+## Sélection
 
 La collection organise les contenus par proximité éditoriale, par utilité de navigation et par potentiel de liens internes. Elle permet de parcourir le hub de connaissance sans perdre la cohérence du sujet.
 

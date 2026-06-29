@@ -5,10 +5,10 @@
   "slug": {
     "canonical": "knowledge-hub-second-wave"
   },
-  "title": "Hub de connaissance, deuxieme vague",
+  "title": "Hub de connaissance, deuxième vague",
   "subtitle": "Collection éditoriale",
-  "abstract": "Hub de connaissance, deuxieme vague organise des fiches reliées autour de le sujet \"Hub de connaissance, deuxieme vague\" dans le graphe public d'Electronic Artefacts, afin de donner une progression lisible aux archives de connaissance d'Electronic Artefacts.",
-  "description": "Hub de connaissance, deuxieme vague organise des fiches reliées autour de le sujet \"Hub de connaissance, deuxieme vague\" dans le graphe public d'Electronic Artefacts, afin de donner une progression lisible aux archives de connaissance d'Electronic Artefacts.",
+  "abstract": "Hub de connaissance, deuxième vague rassemble des fiches liées par un même axe éditorial, afin de donner une progression lisible aux archives de connaissance d'Electronic Artefacts.",
+  "description": "Hub de connaissance, deuxième vague rassemble des fiches liées par un même axe éditorial, afin de donner une progression lisible aux archives de connaissance d'Electronic Artefacts.",
   "locale": "fr",
   "visibility": "public",
   "publicationClass": "published",
@@ -28,19 +28,19 @@
   ],
   "publisher": "ea:organization:electronic-artefacts",
   "tags": [
-    "Hub de connaissance",
-    "Deuxième vague",
-    "Collection éditoriale",
-    "Bibliothèque de recherche"
+    "hub de connaissance",
+    "deuxième vague",
+    "collection éditoriale",
+    "bibliothèque de recherche"
   ],
   "disciplines": [
-    "Systèmes de connaissance",
+    "systèmes de connaissance",
     "programmation créative",
-    "Développement web",
+    "développement web",
     "design",
     "intelligence artificielle"
   ],
-  "thesis": "Hub de connaissance, deuxieme vague propose une lecture organisee de 30 fiches reliées par un même axe editorial.",
+  "thesis": "Hub de connaissance, deuxième vague propose une lecture organisee de 30 fiches reliées par un même axe editorial.",
   "curator": [
     {
       "id": "ea:organization:electronic-artefacts"
@@ -139,10 +139,10 @@
     }
   ],
   "selectionNote": "La sélection privilégie des contenus stables, reliables et utiles pour parcourir le hub de connaissance en français.",
-  "bodyHtml": "<h2 id=\"intention\">Intention</h2>\n<p>Hub de connaissance, deuxieme vague rassemble des fiches qui partagent un même axe de lecture autour de le sujet “Hub de connaissance, deuxieme vague” dans le graphe public d’Electronic Artefacts.</p>\n<h2 id=\"selection\">Selection</h2>\n<p>La collection organise les contenus par proximité éditoriale, par utilité de navigation et par potentiel de liens internes. Elle permet de parcourir le hub de connaissance sans perdre la cohérence du sujet.</p>\n<h2 id=\"usage\">Usage</h2>\n<p>Cette entrée sert de repère pour explorer plusieurs publications ou notions depuis une même page française.</p>\n<h2 id=\"references\">Références</h2>\n<p>Les sources associées sont conservées dans la fiche canonique du graphe.</p>\n",
+  "bodyHtml": "<h2 id=\"intention\">Intention</h2>\n<p>Hub de connaissance, deuxième vague rassemble des fiches liées par un même axe éditorial.</p>\n<h2 id=\"selection\">Sélection</h2>\n<p>La collection organise les contenus par proximité éditoriale, par utilité de navigation et par potentiel de liens internes. Elle permet de parcourir le hub de connaissance sans perdre la cohérence du sujet.</p>\n<h2 id=\"usage\">Usage</h2>\n<p>Cette entrée sert de repère pour explorer plusieurs publications ou notions depuis une même page française.</p>\n<h2 id=\"references\">Références</h2>\n<p>Les sources associées sont conservées dans la fiche canonique du graphe.</p>\n",
   "headings": [
     "Intention",
-    "Selection",
+    "Sélection",
     "Usage",
     "Références"
   ],
@@ -154,7 +154,7 @@
     },
     {
       "level": 2,
-      "title": "Selection",
+      "title": "Sélection",
       "id": "selection"
     },
     {

@@ -67,10 +67,10 @@ tags:
   - Palimpsests
   - Vestiges
 disciplines:
-  - Archives
-  - Digital Art
-  - Knowledge Systems
-  - History of Technology
+  - archives
+  - art numérique
+  - systèmes de connaissance
+  - histoire des technologies
 translationOf: ea:publication:digital-preservation-and-living-archives
 ---
 

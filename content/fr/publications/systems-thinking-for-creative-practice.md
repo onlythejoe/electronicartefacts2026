@@ -3,14 +3,14 @@ id: ea:publication:systems-thinking-for-creative-practice-fr
 type: publication
 slug:
   canonical: systems-thinking-for-creative-practice
-title: Pensée systemique pour la pratique créative
+title: Pensée systémique pour la pratique créative
 subtitle: Recherche Article
-abstract: Pensée systemique pour la pratique créative propose une synthèse claire en français sur le
-  sujet "Pensée systemique pour la pratique créative" dans le graphe public d'Electronic Artefacts,
+abstract: Pensée systémique pour la pratique créative propose une synthèse claire en français sur le
+  sujet "Pensée systémique pour la pratique créative" dans le graphe public d'Electronic Artefacts,
   avec un angle utile pour la recherche, la conception et la publication de connaissances
   numériques.
-description: Pensée systemique pour la pratique créative propose une synthèse claire en français sur
-  le sujet "Pensée systemique pour la pratique créative" dans le graphe public d'Electronic
+description: Pensée systémique pour la pratique créative propose une synthèse claire en français sur
+  le sujet "Pensée systémique pour la pratique créative" dans le graphe public d'Electronic
   Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances
   numériques.
 locale: fr
@@ -35,7 +35,7 @@ subjects:
   - id: ea:concept:graph-modeling
   - id: ea:program:vaste
 claims:
-  - Pensée systemique pour la pratique créative doit être lisible comme une synthèse française
+  - Pensée systémique pour la pratique créative doit être lisible comme une synthèse française
     autonome, sans phrases hybrides héritées de l'anglais.
   - Les liens avec les notions, projets et technologies du graphe renforcent la recherche, la
     navigation et la citation.
@@ -56,7 +56,7 @@ sources:
     accessedAt: 2026-06-24
     url: https://direct.mit.edu/books/oa-monograph/4581/Cybernetics-or-Control-and-Communication-in-the
 citation:
-  preferred: Electronic Artefacts. "Pensée systemique pour la pratique créative". Article technique,
+  preferred: Electronic Artefacts. "Pensée systémique pour la pratique créative". Article technique,
     version 1.0.0, 2026.
 tags:
   - Systems Thinking
@@ -74,7 +74,7 @@ translationOf: ea:publication:systems-thinking-for-creative-practice
 
 ## Problème
 
-Pensée systemique pour la pratique créative examine le sujet "Pensée systemique pour la pratique créative" dans le graphe public d'Electronic Artefacts. La fiche donne une entrée française stable, utilisable pour lire le sujet et relier ses sources au reste du graphe.
+Pensée systémique pour la pratique créative examine le sujet "Pensée systémique pour la pratique créative" dans le graphe public d'Electronic Artefacts. La fiche donne une entrée française stable, utilisable pour lire le sujet et relier ses sources au reste du graphe.
 
 ## Architecture
 

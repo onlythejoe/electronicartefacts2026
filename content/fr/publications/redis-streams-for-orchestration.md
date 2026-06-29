@@ -3,13 +3,13 @@ id: ea:publication:redis-streams-for-orchestration-fr
 type: publication
 slug:
   canonical: redis-streams-for-orchestration
-title: Redis Streams pour l'orchestration
+title: Redis Streams pour l’orchestration
 subtitle: Article technique
-abstract: Redis Streams pour l'orchestration propose une synthèse claire en français sur le sujet
-  "Redis Streams pour l'orchestration" dans le graphe public d'Electronic Artefacts, avec un angle
+abstract: Redis Streams pour l’orchestration propose une synthèse claire en français sur le sujet
+  "Redis Streams pour l’orchestration" dans le graphe public d'Electronic Artefacts, avec un angle
   utile pour la recherche, la conception et la publication de connaissances numériques.
-description: Redis Streams pour l'orchestration propose une synthèse claire en français sur le sujet
-  "Redis Streams pour l'orchestration" dans le graphe public d'Electronic Artefacts, avec un angle
+description: Redis Streams pour l’orchestration propose une synthèse claire en français sur le sujet
+  "Redis Streams pour l’orchestration" dans le graphe public d'Electronic Artefacts, avec un angle
   utile pour la recherche, la conception et la publication de connaissances numériques.
 locale: fr
 visibility: public
@@ -32,7 +32,7 @@ subjects:
   - id: ea:concept:contextual-execution
   - id: ea:program:vaste
 claims:
-  - Redis Streams pour l'orchestration doit être lisible comme une synthèse française autonome, sans
+  - Redis Streams pour l’orchestration doit être lisible comme une synthèse française autonome, sans
     phrases hybrides héritées de l'anglais.
   - Les liens avec les notions, projets et technologies du graphe renforcent la recherche, la
     navigation et la citation.
@@ -53,7 +53,7 @@ sources:
     accessedAt: 2026-06-24
     url: https://redis.io/docs/latest/commands/xautoclaim/
 citation:
-  preferred: Electronic Artefacts. "Redis Streams pour l'orchestration". Article technique, version
+  preferred: Electronic Artefacts. "Redis Streams pour l’orchestration". Article technique, version
     1.0.0, 2026.
 tags:
   - Redis Streams
@@ -64,14 +64,14 @@ tags:
 disciplines:
   - architecture logicielle
   - Distributed Systems
-  - Programming
+  - programmation
   - conception de systèmes
 translationOf: ea:publication:redis-streams-for-orchestration
 ---
 
 ## Problème
 
-Redis Streams pour l'orchestration examine le sujet "Redis Streams pour l'orchestration" dans le graphe public d'Electronic Artefacts. La fiche donne une entrée française stable, utilisable pour lire le sujet et relier ses sources au reste du graphe.
+Redis Streams pour l’orchestration examine le sujet "Redis Streams pour l’orchestration" dans le graphe public d'Electronic Artefacts. La fiche donne une entrée française stable, utilisable pour lire le sujet et relier ses sources au reste du graphe.
 
 ## Architecture
 

@@ -41,8 +41,8 @@ tags:
   - Browser Graphics
 disciplines:
   - programmation créative
-  - Web Development
-  - Digital Art
+  - développement web
+  - art numérique
 ---
 
 ## Rôle

@@ -46,7 +46,7 @@ tags:
   - Systems
   - Simulation
 disciplines:
-  - Digital Art
+  - art numérique
   - programmation créative
   - design
   - Music Production
