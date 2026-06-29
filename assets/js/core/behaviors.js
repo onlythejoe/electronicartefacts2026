@@ -477,6 +477,8 @@
           const y = (topPct / 100) * height;
           bubbleState.push({
             el: node,
+            ax: x,
+            ay: y,
             x,
             y,
             px: x,
@@ -496,11 +498,9 @@
 
       const frame = () => {
         if (!bubbleState.length) return;
-        const cx = width * 0.5;
-        const cy = height * 0.5;
-        const attraction = 0.022;
+        const attraction = 0.02;
         const hoverScale = 1.28;
-        const iterations = 4;
+        const iterations = 5;
 
         bubbleState.forEach((bubble) => {
           bubble.px = bubble.x;
@@ -508,8 +508,8 @@
         });
 
         bubbleState.forEach((bubble) => {
-          bubble.x += (cx - bubble.x) * attraction;
-          bubble.y += (cy - bubble.y) * attraction;
+          bubble.x += (bubble.ax - bubble.x) * attraction;
+          bubble.y += (bubble.ay - bubble.y) * attraction;
         });
 
         for (let iter = 0; iter < iterations; iter += 1) {
@@ -528,7 +528,7 @@
               const dist = Math.sqrt(distSq);
               const targetRa = a.hover ? a.baseR * hoverScale : a.baseR;
               const targetRb = b.hover ? b.baseR * hoverScale : b.baseR;
-              const minDist = targetRa + targetRb + 18;
+              const minDist = targetRa + targetRb + 30;
               if (dist < minDist) {
                 const overlap = minDist - dist;
                 const nx = dx / dist;
