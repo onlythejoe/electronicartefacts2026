@@ -52,13 +52,13 @@ tags:
   - LLM
   - Transformer
   - Tokens
-  - Inference
-  - Language Models
+  - Inférence
+  - Modèles de langage
 disciplines:
   - intelligence artificielle
-  - Machine Learning
-  - Programming
-  - Knowledge Systems
+  - apprentissage automatique
+  - programmation
+  - Systèmes de connaissance
 translationOf: ea:concept:large-language-model
 ---
 

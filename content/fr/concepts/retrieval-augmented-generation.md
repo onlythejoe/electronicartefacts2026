@@ -6,14 +6,14 @@ slug:
 title: Génération augmentée par récupération
 alternateNames:
   - RAG
-definition: Génération augmentée par récupération désigne les architectures qui récupèrent des
-  sources externes avant ou pendant la génération d'une réponse par IA.
+definition: Génération augmentée par récupération désigne les architectures qui recuperent des
+  sources externes avant ou pendant la generation d'une reponse par IA.
 abstract: Génération augmentée par récupération définit un repère conceptuel en français pour
-  comprendre les architectures qui récupèrent des sources externes avant ou pendant la génération
-  d'une réponse par IA et ses liens avec les projets, technologies et publications du graphe.
+  comprendre les architectures qui recuperent des sources externes avant ou pendant la generation
+  d'une reponse par IA et ses liens avec les projets, technologies et publications du graphe.
 description: Génération augmentée par récupération définit un repère conceptuel en français pour
-  comprendre les architectures qui récupèrent des sources externes avant ou pendant la génération
-  d'une réponse par IA et ses liens avec les projets, technologies et publications du graphe.
+  comprendre les architectures qui recuperent des sources externes avant ou pendant la generation
+  d'une reponse par IA et ses liens avec les projets, technologies et publications du graphe.
 locale: fr
 visibility: public
 publicationClass: canonical
@@ -64,7 +64,7 @@ translationOf: ea:concept:retrieval-augmented-generation
 
 ## Rôle
 
-Génération augmentée par récupération est documentée comme notion de référence pour comprendre les architectures qui récupèrent des sources externes avant ou pendant la génération d'une réponse par IA.
+Génération augmentée par récupération est documenté comme notion de référence pour comprendre les architectures qui recuperent des sources externes avant ou pendant la generation d'une reponse par IA.
 
 ## Usage
 

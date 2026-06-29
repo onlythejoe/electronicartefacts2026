@@ -1684,11 +1684,11 @@
     ],
     "body": "Intention Fondations du hub de connaissance rassemble des fiches qui partagent un même axe de lecture autour de le sujet “Fondations du hub de connaissance” dans le graphe public d’Electronic Artefacts. Selection La collection organise les contenus par proximité éditoriale, par utilité de navigation et par potentiel de liens internes. Elle permet de parcourir le hub de connaissance sans perdre la cohérence du sujet. Usage Cette entrée sert de repère pour explorer plusieurs publications ou notions depuis une même page française. Références Les sources associées sont conservées dans la fiche canonique du graphe.",
     "tags": [
-      "Knowledge Hub",
-      "Editorial Collection",
-      "Foundations",
-      "Research Library",
-      "Semantic Publishing"
+      "Hub de connaissance",
+      "Collection éditoriale",
+      "Fondations",
+      "Bibliothèque de recherche",
+      "Publication sémantique"
     ],
     "questions": [],
     "relationLabels": [],
@@ -1713,12 +1713,12 @@
     ],
     "body": "Intention Hub de connaissance, quatrieme vague rassemble des fiches qui partagent un même axe de lecture autour de le sujet “Hub de connaissance, quatrieme vague” dans le graphe public d’Electronic Artefacts. Selection La collection organise les contenus par proximité éditoriale, par utilité de navigation et par potentiel de liens internes. Elle permet de parcourir le hub de connaissance sans perdre la cohérence du sujet. Usage Cette entrée sert de repère pour explorer plusieurs publications ou notions depuis une même page française. Références Les sources associées sont conservées dans la fiche canonique du graphe.",
     "tags": [
-      "Knowledge Hub",
-      "Fourth Wave",
-      "AI Protocols",
-      "AI Governance",
+      "Hub de connaissance",
+      "Quatrième vague",
+      "Protocoles d'IA",
+      "Gouvernance de l'IA",
       "Provenance",
-      "Cultural Infrastructure"
+      "Infrastructure culturelle"
     ],
     "questions": [],
     "relationLabels": [],
@@ -1743,10 +1743,10 @@
     ],
     "body": "Intention Hub de connaissance, deuxieme vague rassemble des fiches qui partagent un même axe de lecture autour de le sujet “Hub de connaissance, deuxieme vague” dans le graphe public d’Electronic Artefacts. Selection La collection organise les contenus par proximité éditoriale, par utilité de navigation et par potentiel de liens internes. Elle permet de parcourir le hub de connaissance sans perdre la cohérence du sujet. Usage Cette entrée sert de repère pour explorer plusieurs publications ou notions depuis une même page française. Références Les sources associées sont conservées dans la fiche canonique du graphe.",
     "tags": [
-      "Knowledge Hub",
-      "Second Wave",
-      "Editorial Collection",
-      "Research Library"
+      "Hub de connaissance",
+      "Deuxième vague",
+      "Collection éditoriale",
+      "Bibliothèque de recherche"
     ],
     "questions": [],
     "relationLabels": [],
@@ -1771,11 +1771,11 @@
     ],
     "body": "Intention Hub de connaissance, troisieme vague rassemble des fiches qui partagent un même axe de lecture autour de le sujet “Hub de connaissance, troisieme vague” dans le graphe public d’Electronic Artefacts. Selection La collection organise les contenus par proximité éditoriale, par utilité de navigation et par potentiel de liens internes. Elle permet de parcourir le hub de connaissance sans perdre la cohérence du sujet. Usage Cette entrée sert de repère pour explorer plusieurs publications ou notions depuis une même page française. Références Les sources associées sont conservées dans la fiche canonique du graphe.",
     "tags": [
-      "Knowledge Hub",
-      "Third Wave",
+      "Hub de connaissance",
+      "Troisième vague",
       "intelligence artificielle",
-      "Systems Architecture",
-      "Graph Computing"
+      "Architecture des systèmes",
+      "Calcul sur graphe"
     ],
     "questions": [],
     "relationLabels": [],
@@ -2039,11 +2039,11 @@
     ],
     "body": "Rôle Système d’exploitation de domaine est documenté comme notion de référence pour comprendre le sujet “Système d’exploitation de domaine” dans le graphe public d’Electronic Artefacts. Usage Cette fiche relie la notion aux projets, publications et technologies qui partagent un même vocabulaire de conception. Elle sert de point d’appui pour naviguer dans le graphe en version française. Périmètre La notion est abordée par ses définitions, ses usages, ses limites et ses relations avec les autres objets documentés. Références Les sources associées sont conservées dans la fiche canonique du graphe.",
     "tags": [
-      "Domain OS",
-      "Business OS",
-      "Runtime Engine",
-      "Platform Architecture",
-      "Composability"
+      "Système d'exploitation de domaine",
+      "Système d'exploitation métier",
+      "Moteur d'exécution",
+      "Architecture de plateforme",
+      "Composabilité"
     ],
     "questions": [],
     "relationLabels": [],
@@ -2370,8 +2370,8 @@
       "LLM",
       "Transformer",
       "Tokens",
-      "Inference",
-      "Language Models"
+      "Inférence",
+      "Modèles de langage"
     ],
     "questions": [],
     "relationLabels": [],
@@ -2574,9 +2574,9 @@
     ],
     "body": "Rôle Open source est documenté comme notion de référence pour comprendre les pratiques de publication, maintenance et cooperation fondees sur du code et des ressources ouverts. Usage Cette fiche relie la notion aux projets, publications et technologies qui partagent un même vocabulaire de conception. Elle sert de point d’appui pour naviguer dans le graphe en version française. Périmètre La notion est abordée par ses définitions, ses usages, ses limites et ses relations avec les autres objets documentés. Références Les sources principales restent disponibles dans le bloc de références de la fiche.",
     "tags": [
-      "Open Source",
-      "Software",
-      "Commons",
+      "open source",
+      "Logiciel",
+      "Communs",
       "Infrastructure"
     ],
     "questions": [],
@@ -2593,15 +2593,15 @@
     "type": "concept",
     "title": "Modèle à poids ouverts",
     "alternateNames": [],
-    "definition": "Modèle à poids ouverts désigne les modèles dont les poids sont publiés pour permettre l'exécution, l'audit ou l'adaptation locale.",
-    "abstract": "Modèle à poids ouverts définit un repère conceptuel en français pour comprendre les modèles dont les poids sont publiés pour permettre l'exécution, l'audit ou l'adaptation locale et ses liens avec les projets, technologies et publications du graphe.",
+    "definition": "Modèle à poids ouverts désigne les modèles dont les poids sont publies pour permettre l'execution, l'audit ou l'adaptation locale.",
+    "abstract": "Modèle à poids ouverts définit un repère conceptuel en français pour comprendre les modèles dont les poids sont publies pour permettre l'execution, l'audit ou l'adaptation locale et ses liens avec les projets, technologies et publications du graphe.",
     "headings": [
       "Rôle",
       "Usage",
       "Périmètre",
       "Références"
     ],
-    "body": "Rôle Modèle à poids ouverts est documenté comme notion de référence pour comprendre les modèles dont les poids sont publiés pour permettre l’exécution, l’audit ou l’adaptation locale. Usage Cette fiche relie la notion aux projets, publications et technologies qui partagent un même vocabulaire de conception. Elle sert de point d’appui pour naviguer dans le graphe en version française. Périmètre La notion est abordée par ses définitions, ses usages, ses limites et ses relations avec les autres objets documentés. Références Les sources principales restent disponibles dans le bloc de références de la fiche.",
+    "body": "Rôle Modèle à poids ouverts est documenté comme notion de référence pour comprendre les modèles dont les poids sont publies pour permettre l’execution, l’audit ou l’adaptation locale. Usage Cette fiche relie la notion aux projets, publications et technologies qui partagent un même vocabulaire de conception. Elle sert de point d’appui pour naviguer dans le graphe en version française. Périmètre La notion est abordée par ses définitions, ses usages, ses limites et ses relations avec les autres objets documentés. Références Les sources principales restent disponibles dans le bloc de références de la fiche.",
     "tags": [
       "Open Weights",
       "Local AI",
@@ -2651,15 +2651,15 @@
     "type": "concept",
     "title": "Graphisme procédural",
     "alternateNames": [],
-    "definition": "Graphisme procédural désigne les images et formes visuelles générées par algorithmes, shaders ou règles paramétriques.",
-    "abstract": "Graphisme procédural définit un repère conceptuel en français pour comprendre les images et formes visuelles générées par algorithmes, shaders ou règles paramétriques et ses liens avec les projets, technologies et publications du graphe.",
+    "definition": "Graphisme procédural désigne les images et formes visuelles generees par algorithmes, shaders ou regles parametriques.",
+    "abstract": "Graphisme procédural définit un repère conceptuel en français pour comprendre les images et formes visuelles generees par algorithmes, shaders ou regles parametriques et ses liens avec les projets, technologies et publications du graphe.",
     "headings": [
       "Rôle",
       "Usage",
       "Périmètre",
       "Références"
     ],
-    "body": "Rôle Graphisme procédural est documenté comme notion de référence pour comprendre les images et formes visuelles générées par algorithmes, shaders ou règles paramétriques. Usage Cette fiche relie la notion aux projets, publications et technologies qui partagent un même vocabulaire de conception. Elle sert de point d’appui pour naviguer dans le graphe en version française. Périmètre La notion est abordée par ses définitions, ses usages, ses limites et ses relations avec les autres objets documentés. Références Les sources associées sont conservées dans la fiche canonique du graphe.",
+    "body": "Rôle Graphisme procédural est documenté comme notion de référence pour comprendre les images et formes visuelles generees par algorithmes, shaders ou regles parametriques. Usage Cette fiche relie la notion aux projets, publications et technologies qui partagent un même vocabulaire de conception. Elle sert de point d’appui pour naviguer dans le graphe en version française. Périmètre La notion est abordée par ses définitions, ses usages, ses limites et ses relations avec les autres objets documentés. Références Les sources associées sont conservées dans la fiche canonique du graphe.",
     "tags": [
       "Procedural Graphics",
       "Shaders",
@@ -2712,15 +2712,15 @@
     "alternateNames": [
       "RAG"
     ],
-    "definition": "Génération augmentée par récupération désigne les architectures qui récupèrent des sources externes avant ou pendant la génération d'une réponse par IA.",
-    "abstract": "Génération augmentée par récupération définit un repère conceptuel en français pour comprendre les architectures qui récupèrent des sources externes avant ou pendant la génération d'une réponse par IA et ses liens avec les projets, technologies et publications du graphe.",
+    "definition": "Génération augmentée par récupération désigne les architectures qui recuperent des sources externes avant ou pendant la generation d'une reponse par IA.",
+    "abstract": "Génération augmentée par récupération définit un repère conceptuel en français pour comprendre les architectures qui recuperent des sources externes avant ou pendant la generation d'une reponse par IA et ses liens avec les projets, technologies et publications du graphe.",
     "headings": [
       "Rôle",
       "Usage",
       "Périmètre",
       "Références"
     ],
-    "body": "Rôle Génération augmentée par récupération est documentée comme notion de référence pour comprendre les architectures qui récupèrent des sources externes avant ou pendant la génération d’une réponse par IA. Usage Cette fiche relie la notion aux projets, publications et technologies qui partagent un même vocabulaire de conception. Elle sert de point d’appui pour naviguer dans le graphe en version française. Périmètre La notion est abordée par ses définitions, ses usages, ses limites et ses relations avec les autres objets documentés. Références Les sources principales restent disponibles dans le bloc de références de la fiche.",
+    "body": "Rôle Génération augmentée par récupération est documenté comme notion de référence pour comprendre les architectures qui recuperent des sources externes avant ou pendant la generation d’une reponse par IA. Usage Cette fiche relie la notion aux projets, publications et technologies qui partagent un même vocabulaire de conception. Elle sert de point d’appui pour naviguer dans le graphe en version française. Périmètre La notion est abordée par ses définitions, ses usages, ses limites et ses relations avec les autres objets documentés. Références Les sources principales restent disponibles dans le bloc de références de la fiche.",
     "tags": [
       "RAG",
       "Retrieval",
@@ -3609,10 +3609,10 @@
     ],
     "body": "Problème Systèmes d’IA locaux et open source examine le sujet “Systèmes d’IA locaux et open source” dans le graphe public d’Electronic Artefacts. La fiche donne une entrée française stable, utilisable pour lire le sujet et relier ses sources au reste du graphe. Architecture Le sujet est abordé par ses relations avec les concepts, projets et technologies concernés, afin de rendre son contexte de conception lisible. Mise en œuvre La page décrit les usages, contraintes et choix de structure qui permettent d’appliquer le sujet dans des situations concrètes. Éléments de preuve Les sources, relations et éléments de contexte restent attachés à la fiche pour distinguer synthèse éditoriale, preuves et références. Limites Les limites sont formulées par rapport au périmètre de la fiche, aux sources disponibles et aux conditions d’usage documentées. Références Les sources principales restent disponibles dans le bloc de références de la fiche.",
     "tags": [
-      "Local AI",
-      "Open Source AI",
-      "Open Weights",
-      "Quantization",
+      "IA locale",
+      "IA open source",
+      "Poids ouverts",
+      "Quantification",
       "llama.cpp"
     ],
     "questions": [],
@@ -4071,9 +4071,9 @@
     "route": "/fr/publications/runtime-engines-and-domain-operating-systems/",
     "type": "publication",
     "format": "technicalArticle",
-    "title": "Moteurs runtime et systèmes d'exploitation de domaine",
+    "title": "Moteurs d'exécution et systèmes d'exploitation de domaine",
     "alternateNames": [],
-    "abstract": "Moteurs runtime et systèmes d'exploitation de domaine propose une synthèse claire en français sur le sujet \"Moteurs runtime et systèmes d'exploitation de domaine\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
+    "abstract": "Moteurs d'exécution et systèmes d'exploitation de domaine propose une synthèse claire en français sur le sujet \"Moteurs d'exécution et systèmes d'exploitation de domaine\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
     "headings": [
       "Problème",
       "Architecture",
@@ -4082,13 +4082,13 @@
       "Limites",
       "Références"
     ],
-    "body": "Problème Moteurs runtime et systèmes d’exploitation de domaine examine le sujet “Moteurs runtime et systèmes d’exploitation de domaine” dans le graphe public d’Electronic Artefacts. La fiche donne une entrée française stable, utilisable pour lire le sujet et relier ses sources au reste du graphe. Architecture Le sujet est abordé par ses relations avec les concepts, projets et technologies concernés, afin de rendre son contexte de conception lisible. Mise en œuvre La page décrit les usages, contraintes et choix de structure qui permettent d’appliquer le sujet dans des situations concrètes. Éléments de preuve Les sources, relations et éléments de contexte restent attachés à la fiche pour distinguer synthèse éditoriale, preuves et références. Limites Les limites sont formulées par rapport au périmètre de la fiche, aux sources disponibles et aux conditions d’usage documentées. Références Les sources principales restent disponibles dans le bloc de références de la fiche.",
+    "body": "Problème Moteurs d’exécution et systèmes d’exploitation de domaine examine le sujet “Moteurs d’exécution et systèmes d’exploitation de domaine” dans le graphe public d’Electronic Artefacts. La fiche donne une entrée française stable, utilisable pour lire le sujet et relier ses sources au reste du graphe. Architecture Le sujet est abordé par ses relations avec les concepts, projets et technologies concernés, afin de rendre son contexte de conception lisible. Mise en œuvre La page décrit les usages, contraintes et choix de structure qui permettent d’appliquer le sujet dans des situations concrètes. Éléments de preuve Les sources, relations et éléments de contexte restent attachés à la fiche pour distinguer synthèse éditoriale, preuves et références. Limites Les limites sont formulées par rapport au périmètre de la fiche, aux sources disponibles et aux conditions d’usage documentées. Références Les sources principales restent disponibles dans le bloc de références de la fiche.",
     "tags": [
-      "Runtime Engine",
-      "Domain OS",
-      "Business OS",
+      "Moteur d'exécution",
+      "Système d'exploitation de domaine",
+      "Système d'exploitation métier",
       "VASTE",
-      "Composable Systems"
+      "Systèmes composables"
     ],
     "questions": [],
     "relationLabels": [],
@@ -4275,9 +4275,9 @@
     "body": "Problème WebNN et IA locale dans le navigateur examine le sujet “WebNN et IA locale dans le navigateur” dans le graphe public d’Electronic Artefacts. La fiche donne une entrée française stable, utilisable pour lire le sujet et relier ses sources au reste du graphe. Architecture Le sujet est abordé par ses relations avec les concepts, projets et technologies concernés, afin de rendre son contexte de conception lisible. Mise en œuvre La page décrit les usages, contraintes et choix de structure qui permettent d’appliquer le sujet dans des situations concrètes. Éléments de preuve Les sources, relations et éléments de contexte restent attachés à la fiche pour distinguer synthèse éditoriale, preuves et références. Limites Les limites sont formulées par rapport au périmètre de la fiche, aux sources disponibles et aux conditions d’usage documentées. Références Les sources principales restent disponibles dans le bloc de références de la fiche.",
     "tags": [
       "WebNN",
-      "Browser AI",
-      "Local Inference",
-      "Web Machine Learning",
+      "IA dans le navigateur",
+      "Inférence locale",
+      "Apprentissage automatique Web",
       "interaction humain-machine"
     ],
     "questions": [],
@@ -4333,7 +4333,7 @@
       "Usage",
       "Références"
     ],
-    "body": "Champ Théorie du runtime décrit un espace de recherche actif pour Electronic Artefacts. Il relie le sujet “Théorie du runtime” dans le graphe public d’Electronic Artefacts à des questions, prototypes et méthodes qui peuvent évoluer dans le temps. Questions Comment rendre les hypothèses suffisamment explicites pour être partagées, testées et reliées au graphe ? Quelles preuves, interfaces ou architectures permettent de transformer ce champ en expérience utilisable ? Usage Cette fiche donne une entrée française au champ de recherche et conserve ses liens avec les projets, publications et technologies associés. Références Les sources associées sont conservées dans la fiche canonique du graphe.",
+    "body": "Champ Théorie du runtime décrit un espace de recherche actif pour Electronic Artefacts. Il relie le sujet “Théorie du runtime” dans le graphe public d’Electronic Artefacts à des questions, prototypes et méthodes qui peuvent évoluer dans le temps. Questions Comment rendre les hypothèses suffisamment explicites pour être partagees, testées et reliées au graphe ? Quelles preuves, interfaces ou architectures permettent de transformer ce champ en expérience utilisable ? Usage Cette fiche donne une entrée française au champ de recherche et conserve ses liens avec les projets, publications et technologies associés. Références Les sources associées sont conservées dans la fiche canonique du graphe.",
     "tags": [
       "Runtime",
       "Theory",
@@ -4343,7 +4343,7 @@
     ],
     "questions": [
       "Comment formaliser Théorie du runtime pour produire des interfaces, des preuves et des relations exploitables ?",
-      "Quels usages de Théorie du runtime doivent rester ouverts à l'expérimentation et à la vérification ?"
+      "Quels usages de Théorie du runtime doivent rester ouverts à l'experimentation et à la verification ?"
     ],
     "relationLabels": [],
     "relatedEntityIds": [],
@@ -4848,9 +4848,9 @@
     "body": "Rôle WebNN est documenté comme technologie de référence pour le sujet “WebNN” dans le graphe public d’Electronic Artefacts. Usage Cette fiche aide à situer la technologie dans l’écosystème Electronic Artefacts : ce qu’elle permet, quand elle devient pertinente et comment elle dialogue avec les autres composants du graphe. Points d’attention Les usages sont décrits en français sans masquer les noms propres, acronymes ou standards techniques. Les limites restent contextualisées par rapport aux projets, aux publications et aux contraintes d’implémentation. Références Les sources principales restent disponibles dans le bloc de références de la fiche.",
     "tags": [
       "WebNN",
-      "Browser AI",
-      "Local Inference",
-      "Web Machine Learning"
+      "IA dans le navigateur",
+      "Inférence locale",
+      "Apprentissage automatique Web"
     ],
     "questions": [],
     "relationLabels": [],

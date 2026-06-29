@@ -4416,7 +4416,7 @@
       "canonical": "knowledge-hub-foundations"
     },
     "title": "Fondations du hub de connaissance",
-    "subtitle": "Editorial Collection",
+    "subtitle": "Collection éditoriale",
     "abstract": "Fondations du hub de connaissance organise des fiches reliées autour de le sujet \"Fondations du hub de connaissance\" dans le graphe public d'Electronic Artefacts, afin de donner une progression lisible aux archives de connaissance d'Electronic Artefacts.",
     "description": "Fondations du hub de connaissance organise des fiches reliées autour de le sujet \"Fondations du hub de connaissance\" dans le graphe public d'Electronic Artefacts, afin de donner une progression lisible aux archives de connaissance d'Electronic Artefacts.",
     "locale": "fr",
@@ -4438,18 +4438,18 @@
     ],
     "publisher": "ea:organization:electronic-artefacts",
     "tags": [
-      "Knowledge Hub",
-      "Editorial Collection",
-      "Foundations",
-      "Research Library",
-      "Semantic Publishing"
+      "Hub de connaissance",
+      "Collection éditoriale",
+      "Fondations",
+      "Bibliothèque de recherche",
+      "Publication sémantique"
     ],
     "disciplines": [
-      "Knowledge Systems",
-      "Archives",
+      "Systèmes de connaissance",
+      "archives",
       "programmation créative",
-      "Audio Engineering",
-      "Digital Art"
+      "Ingénierie audio",
+      "Art numérique"
     ],
     "thesis": "Fondations du hub de connaissance propose une lecture organisee de 20 fiches reliées par un même axe editorial.",
     "curator": [
@@ -4558,7 +4558,7 @@
       "canonical": "knowledge-hub-fourth-wave"
     },
     "title": "Hub de connaissance, quatrieme vague",
-    "subtitle": "AI Protocoles, Provenance, Gouvernance et Culturel Interfaces",
+    "subtitle": "Protocoles d'IA, provenance, gouvernance et interfaces culturelles",
     "abstract": "Hub de connaissance, quatrieme vague organise des fiches reliées autour de le sujet \"Hub de connaissance, quatrieme vague\" dans le graphe public d'Electronic Artefacts, afin de donner une progression lisible aux archives de connaissance d'Electronic Artefacts.",
     "description": "Hub de connaissance, quatrieme vague organise des fiches reliées autour de le sujet \"Hub de connaissance, quatrieme vague\" dans le graphe public d'Electronic Artefacts, afin de donner une progression lisible aux archives de connaissance d'Electronic Artefacts.",
     "locale": "fr",
@@ -4580,19 +4580,19 @@
     ],
     "publisher": "ea:organization:electronic-artefacts",
     "tags": [
-      "Knowledge Hub",
-      "Fourth Wave",
-      "AI Protocols",
-      "AI Governance",
+      "Hub de connaissance",
+      "Quatrième vague",
+      "Protocoles d'IA",
+      "Gouvernance de l'IA",
       "Provenance",
-      "Cultural Infrastructure"
+      "Infrastructure culturelle"
     ],
     "disciplines": [
       "intelligence artificielle",
-      "Knowledge Systems",
-      "Digital Préservation",
+      "Systèmes de connaissance",
+      "préservation numérique",
       "architecture logicielle",
-      "Cultural Infrastructure"
+      "Infrastructure culturelle"
     ],
     "thesis": "Hub de connaissance, quatrieme vague propose une lecture organisee de 19 fiches reliées par un même axe editorial.",
     "curator": [
@@ -4698,7 +4698,7 @@
       "canonical": "knowledge-hub-second-wave"
     },
     "title": "Hub de connaissance, deuxieme vague",
-    "subtitle": "Editorial Collection",
+    "subtitle": "Collection éditoriale",
     "abstract": "Hub de connaissance, deuxieme vague organise des fiches reliées autour de le sujet \"Hub de connaissance, deuxieme vague\" dans le graphe public d'Electronic Artefacts, afin de donner une progression lisible aux archives de connaissance d'Electronic Artefacts.",
     "description": "Hub de connaissance, deuxieme vague organise des fiches reliées autour de le sujet \"Hub de connaissance, deuxieme vague\" dans le graphe public d'Electronic Artefacts, afin de donner une progression lisible aux archives de connaissance d'Electronic Artefacts.",
     "locale": "fr",
@@ -4720,15 +4720,15 @@
     ],
     "publisher": "ea:organization:electronic-artefacts",
     "tags": [
-      "Knowledge Hub",
-      "Second Wave",
-      "Editorial Collection",
-      "Research Library"
+      "Hub de connaissance",
+      "Deuxième vague",
+      "Collection éditoriale",
+      "Bibliothèque de recherche"
     ],
     "disciplines": [
-      "Knowledge Systems",
+      "Systèmes de connaissance",
       "programmation créative",
-      "Web Development",
+      "Développement web",
       "design",
       "intelligence artificielle"
     ],
@@ -4869,7 +4869,7 @@
       "canonical": "knowledge-hub-third-wave"
     },
     "title": "Hub de connaissance, troisieme vague",
-    "subtitle": "AI, Systèmes et Graphe Computing",
+    "subtitle": "IA, systèmes et calcul sur graphe",
     "abstract": "Hub de connaissance, troisieme vague organise des fiches reliées autour de le sujet \"Hub de connaissance, troisieme vague\" dans le graphe public d'Electronic Artefacts, afin de donner une progression lisible aux archives de connaissance d'Electronic Artefacts.",
     "description": "Hub de connaissance, troisieme vague organise des fiches reliées autour de le sujet \"Hub de connaissance, troisieme vague\" dans le graphe public d'Electronic Artefacts, afin de donner une progression lisible aux archives de connaissance d'Electronic Artefacts.",
     "locale": "fr",
@@ -4891,18 +4891,18 @@
     ],
     "publisher": "ea:organization:electronic-artefacts",
     "tags": [
-      "Knowledge Hub",
-      "Third Wave",
+      "Hub de connaissance",
+      "Troisième vague",
       "intelligence artificielle",
-      "Systems Architecture",
-      "Graph Computing"
+      "Architecture des systèmes",
+      "Calcul sur graphe"
     ],
     "disciplines": [
       "intelligence artificielle",
       "conception de systèmes",
-      "Knowledge Systems",
+      "Systèmes de connaissance",
       "architecture logicielle",
-      "Creative Technology"
+      "Technologies créatives"
     ],
     "thesis": "Hub de connaissance, troisieme vague propose une lecture organisee de 30 fiches reliées par un même axe editorial.",
     "curator": [
@@ -5813,17 +5813,17 @@
     ],
     "publisher": "ea:organization:electronic-artefacts",
     "tags": [
-      "Domain OS",
-      "Business OS",
-      "Runtime Engine",
-      "Platform Architecture",
-      "Composability"
+      "Système d'exploitation de domaine",
+      "Système d'exploitation métier",
+      "Moteur d'exécution",
+      "Architecture de plateforme",
+      "Composabilité"
     ],
     "disciplines": [
       "conception de systèmes",
       "architecture logicielle",
-      "Programming",
-      "Knowledge Systems"
+      "programmation",
+      "Systèmes de connaissance"
     ],
     "scope": [
       "définition du sujet",
@@ -6843,14 +6843,14 @@
       "LLM",
       "Transformer",
       "Tokens",
-      "Inference",
-      "Language Models"
+      "Inférence",
+      "Modèles de langage"
     ],
     "disciplines": [
       "intelligence artificielle",
-      "Machine Learning",
-      "Programming",
-      "Knowledge Systems"
+      "apprentissage automatique",
+      "programmation",
+      "Systèmes de connaissance"
     ],
     "sources": [
       {
@@ -7519,16 +7519,16 @@
     ],
     "publisher": "ea:organization:electronic-artefacts",
     "tags": [
-      "Open Source",
-      "Software",
-      "Commons",
+      "open source",
+      "Logiciel",
+      "Communs",
       "Infrastructure"
     ],
     "disciplines": [
-      "Open Source",
-      "Programming",
+      "open source",
+      "programmation",
       "programmation créative",
-      "Creative Business"
+      "Activités créatives"
     ],
     "sources": [
       {
@@ -7590,9 +7590,9 @@
       "canonical": "open-weight-model"
     },
     "title": "Modèle à poids ouverts",
-    "definition": "Modèle à poids ouverts désigne les modèles dont les poids sont publiés pour permettre l'exécution, l'audit ou l'adaptation locale.",
-    "abstract": "Modèle à poids ouverts définit un repère conceptuel en français pour comprendre les modèles dont les poids sont publiés pour permettre l'exécution, l'audit ou l'adaptation locale et ses liens avec les projets, technologies et publications du graphe.",
-    "description": "Modèle à poids ouverts définit un repère conceptuel en français pour comprendre les modèles dont les poids sont publiés pour permettre l'exécution, l'audit ou l'adaptation locale et ses liens avec les projets, technologies et publications du graphe.",
+    "definition": "Modèle à poids ouverts désigne les modèles dont les poids sont publies pour permettre l'execution, l'audit ou l'adaptation locale.",
+    "abstract": "Modèle à poids ouverts définit un repère conceptuel en français pour comprendre les modèles dont les poids sont publies pour permettre l'execution, l'audit ou l'adaptation locale et ses liens avec les projets, technologies et publications du graphe.",
+    "description": "Modèle à poids ouverts définit un repère conceptuel en français pour comprendre les modèles dont les poids sont publies pour permettre l'execution, l'audit ou l'adaptation locale et ses liens avec les projets, technologies et publications du graphe.",
     "locale": "fr",
     "visibility": "public",
     "publicationClass": "canonical",
@@ -7645,7 +7645,7 @@
       "Modèle à poids ouverts devient utile lorsque sa définition reste reliée à des sources, des pratiques et des objets observables.",
       "La fiche sert de vocabulaire commun pour relier projets, publications et technologies sans mélanger les langues."
     ],
-    "bodyHtml": "<h2 id=\"role\">Rôle</h2>\n<p>Modèle à poids ouverts est documenté comme notion de référence pour comprendre les modèles dont les poids sont publiés pour permettre l’exécution, l’audit ou l’adaptation locale.</p>\n<h2 id=\"usage\">Usage</h2>\n<p>Cette fiche relie la notion aux projets, publications et technologies qui partagent un même vocabulaire de conception. Elle sert de point d’appui pour naviguer dans le graphe en version française.</p>\n<h2 id=\"perimetre\">Périmètre</h2>\n<p>La notion est abordée par ses définitions, ses usages, ses limites et ses relations avec les autres objets documentés.</p>\n<h2 id=\"references\">Références</h2>\n<p>Les sources principales restent disponibles dans le bloc de références de la fiche.</p>\n",
+    "bodyHtml": "<h2 id=\"role\">Rôle</h2>\n<p>Modèle à poids ouverts est documenté comme notion de référence pour comprendre les modèles dont les poids sont publies pour permettre l’execution, l’audit ou l’adaptation locale.</p>\n<h2 id=\"usage\">Usage</h2>\n<p>Cette fiche relie la notion aux projets, publications et technologies qui partagent un même vocabulaire de conception. Elle sert de point d’appui pour naviguer dans le graphe en version française.</p>\n<h2 id=\"perimetre\">Périmètre</h2>\n<p>La notion est abordée par ses définitions, ses usages, ses limites et ses relations avec les autres objets documentés.</p>\n<h2 id=\"references\">Références</h2>\n<p>Les sources principales restent disponibles dans le bloc de références de la fiche.</p>\n",
     "headings": [
       "Rôle",
       "Usage",
@@ -7768,9 +7768,9 @@
       "canonical": "procedural-graphics"
     },
     "title": "Graphisme procédural",
-    "definition": "Graphisme procédural désigne les images et formes visuelles générées par algorithmes, shaders ou règles paramétriques.",
-    "abstract": "Graphisme procédural définit un repère conceptuel en français pour comprendre les images et formes visuelles générées par algorithmes, shaders ou règles paramétriques et ses liens avec les projets, technologies et publications du graphe.",
-    "description": "Graphisme procédural définit un repère conceptuel en français pour comprendre les images et formes visuelles générées par algorithmes, shaders ou règles paramétriques et ses liens avec les projets, technologies et publications du graphe.",
+    "definition": "Graphisme procédural désigne les images et formes visuelles generees par algorithmes, shaders ou regles parametriques.",
+    "abstract": "Graphisme procédural définit un repère conceptuel en français pour comprendre les images et formes visuelles generees par algorithmes, shaders ou regles parametriques et ses liens avec les projets, technologies et publications du graphe.",
+    "description": "Graphisme procédural définit un repère conceptuel en français pour comprendre les images et formes visuelles generees par algorithmes, shaders ou regles parametriques et ses liens avec les projets, technologies et publications du graphe.",
     "locale": "fr",
     "visibility": "public",
     "publicationClass": "canonical",
@@ -7815,7 +7815,7 @@
       "Graphisme procédural devient utile lorsque sa définition reste reliée à des sources, des pratiques et des objets observables.",
       "La fiche sert de vocabulaire commun pour relier projets, publications et technologies sans mélanger les langues."
     ],
-    "bodyHtml": "<h2 id=\"role\">Rôle</h2>\n<p>Graphisme procédural est documenté comme notion de référence pour comprendre les images et formes visuelles générées par algorithmes, shaders ou règles paramétriques.</p>\n<h2 id=\"usage\">Usage</h2>\n<p>Cette fiche relie la notion aux projets, publications et technologies qui partagent un même vocabulaire de conception. Elle sert de point d’appui pour naviguer dans le graphe en version française.</p>\n<h2 id=\"perimetre\">Périmètre</h2>\n<p>La notion est abordée par ses définitions, ses usages, ses limites et ses relations avec les autres objets documentés.</p>\n<h2 id=\"references\">Références</h2>\n<p>Les sources associées sont conservées dans la fiche canonique du graphe.</p>\n",
+    "bodyHtml": "<h2 id=\"role\">Rôle</h2>\n<p>Graphisme procédural est documenté comme notion de référence pour comprendre les images et formes visuelles generees par algorithmes, shaders ou regles parametriques.</p>\n<h2 id=\"usage\">Usage</h2>\n<p>Cette fiche relie la notion aux projets, publications et technologies qui partagent un même vocabulaire de conception. Elle sert de point d’appui pour naviguer dans le graphe en version française.</p>\n<h2 id=\"perimetre\">Périmètre</h2>\n<p>La notion est abordée par ses définitions, ses usages, ses limites et ses relations avec les autres objets documentés.</p>\n<h2 id=\"references\">Références</h2>\n<p>Les sources associées sont conservées dans la fiche canonique du graphe.</p>\n",
     "headings": [
       "Rôle",
       "Usage",
@@ -7950,9 +7950,9 @@
     "alternateNames": [
       "RAG"
     ],
-    "definition": "Génération augmentée par récupération désigne les architectures qui récupèrent des sources externes avant ou pendant la génération d'une réponse par IA.",
-    "abstract": "Génération augmentée par récupération définit un repère conceptuel en français pour comprendre les architectures qui récupèrent des sources externes avant ou pendant la génération d'une réponse par IA et ses liens avec les projets, technologies et publications du graphe.",
-    "description": "Génération augmentée par récupération définit un repère conceptuel en français pour comprendre les architectures qui récupèrent des sources externes avant ou pendant la génération d'une réponse par IA et ses liens avec les projets, technologies et publications du graphe.",
+    "definition": "Génération augmentée par récupération désigne les architectures qui recuperent des sources externes avant ou pendant la generation d'une reponse par IA.",
+    "abstract": "Génération augmentée par récupération définit un repère conceptuel en français pour comprendre les architectures qui recuperent des sources externes avant ou pendant la generation d'une reponse par IA et ses liens avec les projets, technologies et publications du graphe.",
+    "description": "Génération augmentée par récupération définit un repère conceptuel en français pour comprendre les architectures qui recuperent des sources externes avant ou pendant la generation d'une reponse par IA et ses liens avec les projets, technologies et publications du graphe.",
     "locale": "fr",
     "visibility": "public",
     "publicationClass": "canonical",
@@ -8008,7 +8008,7 @@
       "Génération augmentée par récupération devient utile lorsque sa définition reste reliée à des sources, des pratiques et des objets observables.",
       "La fiche sert de vocabulaire commun pour relier projets, publications et technologies sans mélanger les langues."
     ],
-    "bodyHtml": "<h2 id=\"role\">Rôle</h2>\n<p>Génération augmentée par récupération est documentée comme notion de référence pour comprendre les architectures qui récupèrent des sources externes avant ou pendant la génération d’une réponse par IA.</p>\n<h2 id=\"usage\">Usage</h2>\n<p>Cette fiche relie la notion aux projets, publications et technologies qui partagent un même vocabulaire de conception. Elle sert de point d’appui pour naviguer dans le graphe en version française.</p>\n<h2 id=\"perimetre\">Périmètre</h2>\n<p>La notion est abordée par ses définitions, ses usages, ses limites et ses relations avec les autres objets documentés.</p>\n<h2 id=\"references\">Références</h2>\n<p>Les sources principales restent disponibles dans le bloc de références de la fiche.</p>\n",
+    "bodyHtml": "<h2 id=\"role\">Rôle</h2>\n<p>Génération augmentée par récupération est documenté comme notion de référence pour comprendre les architectures qui recuperent des sources externes avant ou pendant la generation d’une reponse par IA.</p>\n<h2 id=\"usage\">Usage</h2>\n<p>Cette fiche relie la notion aux projets, publications et technologies qui partagent un même vocabulaire de conception. Elle sert de point d’appui pour naviguer dans le graphe en version française.</p>\n<h2 id=\"perimetre\">Périmètre</h2>\n<p>La notion est abordée par ses définitions, ses usages, ses limites et ses relations avec les autres objets documentés.</p>\n<h2 id=\"references\">Références</h2>\n<p>Les sources principales restent disponibles dans le bloc de références de la fiche.</p>\n",
     "headings": [
       "Rôle",
       "Usage",
@@ -11476,16 +11476,16 @@
     ],
     "publisher": "ea:organization:electronic-artefacts",
     "tags": [
-      "Local AI",
-      "Open Source AI",
-      "Open Weights",
-      "Quantization",
+      "IA locale",
+      "IA open source",
+      "Poids ouverts",
+      "Quantification",
       "llama.cpp"
     ],
     "disciplines": [
       "intelligence artificielle",
-      "Open Source",
-      "Programming",
+      "open source",
+      "programmation",
       "conception de systèmes"
     ],
     "sources": [
@@ -13481,10 +13481,10 @@
     "slug": {
       "canonical": "runtime-engines-and-domain-operating-systems"
     },
-    "title": "Moteurs runtime et systèmes d'exploitation de domaine",
+    "title": "Moteurs d'exécution et systèmes d'exploitation de domaine",
     "subtitle": "Article technique",
-    "abstract": "Moteurs runtime et systèmes d'exploitation de domaine propose une synthèse claire en français sur le sujet \"Moteurs runtime et systèmes d'exploitation de domaine\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
-    "description": "Moteurs runtime et systèmes d'exploitation de domaine propose une synthèse claire en français sur le sujet \"Moteurs runtime et systèmes d'exploitation de domaine\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
+    "abstract": "Moteurs d'exécution et systèmes d'exploitation de domaine propose une synthèse claire en français sur le sujet \"Moteurs d'exécution et systèmes d'exploitation de domaine\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
+    "description": "Moteurs d'exécution et systèmes d'exploitation de domaine propose une synthèse claire en français sur le sujet \"Moteurs d'exécution et systèmes d'exploitation de domaine\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
     "locale": "fr",
     "visibility": "public",
     "publicationClass": "published",
@@ -13504,17 +13504,17 @@
     ],
     "publisher": "ea:organization:electronic-artefacts",
     "tags": [
-      "Runtime Engine",
-      "Domain OS",
-      "Business OS",
+      "Moteur d'exécution",
+      "Système d'exploitation de domaine",
+      "Système d'exploitation métier",
       "VASTE",
-      "Composable Systems"
+      "Systèmes composables"
     ],
     "disciplines": [
       "conception de systèmes",
       "architecture logicielle",
-      "Programming",
-      "Knowledge Systems"
+      "programmation",
+      "Systèmes de connaissance"
     ],
     "sources": [
       {
@@ -13561,7 +13561,7 @@
       }
     ],
     "claims": [
-      "Moteurs runtime et systèmes d'exploitation de domaine doit être lisible comme une synthèse française autonome, sans phrases hybrides héritées de l'anglais.",
+      "Moteurs d'exécution et systèmes d'exploitation de domaine doit être lisible comme une synthèse française autonome, sans phrases hybrides héritées de l'anglais.",
       "Les liens avec les notions, projets et technologies du graphe renforcent la recherche, la navigation et la citation."
     ],
     "evidence": [
@@ -13576,9 +13576,9 @@
       }
     ],
     "citation": {
-      "preferred": "Electronic Artefacts. \"Moteurs runtime et systèmes d'exploitation de domaine\". Article technique, version 1.0.0, 2026."
+      "preferred": "Electronic Artefacts. \"Moteurs d'exécution et systèmes d'exploitation de domaine\". Article technique, version 1.0.0, 2026."
     },
-    "bodyHtml": "<h2 id=\"probleme\">Problème</h2>\n<p>Moteurs runtime et systèmes d’exploitation de domaine examine le sujet “Moteurs runtime et systèmes d’exploitation de domaine” dans le graphe public d’Electronic Artefacts. La fiche donne une entrée française stable, utilisable pour lire le sujet et relier ses sources au reste du graphe.</p>\n<h2 id=\"architecture\">Architecture</h2>\n<p>Le sujet est abordé par ses relations avec les concepts, projets et technologies concernés, afin de rendre son contexte de conception lisible.</p>\n<h2 id=\"mise-en-uvre\">Mise en œuvre</h2>\n<p>La page décrit les usages, contraintes et choix de structure qui permettent d’appliquer le sujet dans des situations concrètes.</p>\n<h2 id=\"elements-de-preuve\">Éléments de preuve</h2>\n<p>Les sources, relations et éléments de contexte restent attachés à la fiche pour distinguer synthèse éditoriale, preuves et références.</p>\n<h2 id=\"limites\">Limites</h2>\n<p>Les limites sont formulées par rapport au périmètre de la fiche, aux sources disponibles et aux conditions d’usage documentées.</p>\n<h2 id=\"references\">Références</h2>\n<p>Les sources principales restent disponibles dans le bloc de références de la fiche.</p>\n",
+    "bodyHtml": "<h2 id=\"probleme\">Problème</h2>\n<p>Moteurs d’exécution et systèmes d’exploitation de domaine examine le sujet “Moteurs d’exécution et systèmes d’exploitation de domaine” dans le graphe public d’Electronic Artefacts. La fiche donne une entrée française stable, utilisable pour lire le sujet et relier ses sources au reste du graphe.</p>\n<h2 id=\"architecture\">Architecture</h2>\n<p>Le sujet est abordé par ses relations avec les concepts, projets et technologies concernés, afin de rendre son contexte de conception lisible.</p>\n<h2 id=\"mise-en-uvre\">Mise en œuvre</h2>\n<p>La page décrit les usages, contraintes et choix de structure qui permettent d’appliquer le sujet dans des situations concrètes.</p>\n<h2 id=\"elements-de-preuve\">Éléments de preuve</h2>\n<p>Les sources, relations et éléments de contexte restent attachés à la fiche pour distinguer synthèse éditoriale, preuves et références.</p>\n<h2 id=\"limites\">Limites</h2>\n<p>Les limites sont formulées par rapport au périmètre de la fiche, aux sources disponibles et aux conditions d’usage documentées.</p>\n<h2 id=\"references\">Références</h2>\n<p>Les sources principales restent disponibles dans le bloc de références de la fiche.</p>\n",
     "headings": [
       "Problème",
       "Architecture",
@@ -14311,16 +14311,16 @@
     "publisher": "ea:organization:electronic-artefacts",
     "tags": [
       "WebNN",
-      "Browser AI",
-      "Local Inference",
-      "Web Machine Learning",
+      "IA dans le navigateur",
+      "Inférence locale",
+      "Apprentissage automatique Web",
       "interaction humain-machine"
     ],
     "disciplines": [
       "intelligence artificielle",
-      "Web Development",
+      "développement web",
       "interaction humain-machine",
-      "Creative Technology"
+      "technologies créatives"
     ],
     "sources": [
       {
@@ -14591,9 +14591,9 @@
       "Primitives"
     ],
     "disciplines": [
-      "Technologie",
+      "Technology",
       "Research",
-      "Systèmes"
+      "Systems"
     ],
     "questions": [
       {
@@ -14603,7 +14603,7 @@
       },
       {
         "id": "contextual-execution",
-        "question": "Quels usages de Théorie du runtime doivent rester ouverts à l'expérimentation et à la vérification ?",
+        "question": "Quels usages de Théorie du runtime doivent rester ouverts à l'experimentation et à la verification ?",
         "status": "active"
       }
     ],
@@ -14617,9 +14617,9 @@
       "Théorie du runtime demande une articulation claire entre vocabulaire, preuve et expérience utilisateur."
     ],
     "openQuestions": [
-      "Quels critères permettent d'évaluer Théorie du runtime dans des situations concrètes ?"
+      "Quels critères permettent d'evaluer Théorie du runtime dans des situations concrètes ?"
     ],
-    "bodyHtml": "<h2 id=\"champ\">Champ</h2>\n<p>Théorie du runtime décrit un espace de recherche actif pour Electronic Artefacts. Il relie le sujet “Théorie du runtime” dans le graphe public d’Electronic Artefacts à des questions, prototypes et méthodes qui peuvent évoluer dans le temps.</p>\n<h2 id=\"questions\">Questions</h2>\n<ul>\n<li>Comment rendre les hypothèses suffisamment explicites pour être partagées, testées et reliées au graphe ?</li>\n<li>Quelles preuves, interfaces ou architectures permettent de transformer ce champ en expérience utilisable ?</li>\n</ul>\n<h2 id=\"usage\">Usage</h2>\n<p>Cette fiche donne une entrée française au champ de recherche et conserve ses liens avec les projets, publications et technologies associés.</p>\n<h2 id=\"references\">Références</h2>\n<p>Les sources associées sont conservées dans la fiche canonique du graphe.</p>\n",
+    "bodyHtml": "<h2 id=\"champ\">Champ</h2>\n<p>Théorie du runtime décrit un espace de recherche actif pour Electronic Artefacts. Il relie le sujet “Théorie du runtime” dans le graphe public d’Electronic Artefacts à des questions, prototypes et méthodes qui peuvent évoluer dans le temps.</p>\n<h2 id=\"questions\">Questions</h2>\n<ul>\n<li>Comment rendre les hypothèses suffisamment explicites pour être partagees, testées et reliées au graphe ?</li>\n<li>Quelles preuves, interfaces ou architectures permettent de transformer ce champ en expérience utilisable ?</li>\n</ul>\n<h2 id=\"usage\">Usage</h2>\n<p>Cette fiche donne une entrée française au champ de recherche et conserve ses liens avec les projets, publications et technologies associés.</p>\n<h2 id=\"references\">Références</h2>\n<p>Les sources associées sont conservées dans la fiche canonique du graphe.</p>\n",
     "headings": [
       "Champ",
       "Questions",
@@ -16063,13 +16063,13 @@
     "publisher": "ea:organization:electronic-artefacts",
     "tags": [
       "WebNN",
-      "Browser AI",
-      "Local Inference",
-      "Web Machine Learning"
+      "IA dans le navigateur",
+      "Inférence locale",
+      "Apprentissage automatique Web"
     ],
     "disciplines": [
       "intelligence artificielle",
-      "Web Development",
+      "développement web",
       "interaction humain-machine"
     ],
     "sources": [

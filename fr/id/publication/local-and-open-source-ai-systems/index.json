@@ -28,16 +28,16 @@
   ],
   "publisher": "ea:organization:electronic-artefacts",
   "tags": [
-    "Local AI",
-    "Open Source AI",
-    "Open Weights",
-    "Quantization",
+    "IA locale",
+    "IA open source",
+    "Poids ouverts",
+    "Quantification",
     "llama.cpp"
   ],
   "disciplines": [
     "intelligence artificielle",
-    "Open Source",
-    "Programming",
+    "open source",
+    "programmation",
     "conception de systèmes"
   ],
   "sources": [

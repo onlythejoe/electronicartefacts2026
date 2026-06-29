@@ -4,7 +4,7 @@ type: collection
 slug:
   canonical: knowledge-hub-fourth-wave
 title: Hub de connaissance, quatrieme vague
-subtitle: AI Protocoles, Provenance, Gouvernance et Culturel Interfaces
+subtitle: Protocoles d'IA, provenance, gouvernance et interfaces culturelles
 abstract: Hub de connaissance, quatrieme vague organise des fiches reliées autour de le sujet "Hub
   de connaissance, quatrieme vague" dans le graphe public d'Electronic Artefacts, afin de donner une
   progression lisible aux archives de connaissance d'Electronic Artefacts.
@@ -52,18 +52,18 @@ explicitMembers:
 selectionNote: La sélection privilégie des contenus stables, reliables et utiles pour parcourir le
   hub de connaissance en français.
 tags:
-  - Knowledge Hub
-  - Fourth Wave
-  - AI Protocols
-  - AI Governance
+  - Hub de connaissance
+  - Quatrième vague
+  - Protocoles d'IA
+  - Gouvernance de l'IA
   - Provenance
-  - Cultural Infrastructure
+  - Infrastructure culturelle
 disciplines:
   - intelligence artificielle
-  - Knowledge Systems
-  - Digital Préservation
+  - Systèmes de connaissance
+  - préservation numérique
   - architecture logicielle
-  - Cultural Infrastructure
+  - Infrastructure culturelle
 translationOf: ea:collection:knowledge-hub-fourth-wave
 ---
 

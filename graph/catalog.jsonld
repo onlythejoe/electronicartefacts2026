@@ -1309,7 +1309,7 @@
         {
           "@type": "ListItem",
           "position": 138,
-          "name": "Moteurs runtime et systèmes d'exploitation de domaine",
+          "name": "Moteurs d'exécution et systèmes d'exploitation de domaine",
           "url": "https://electronicartefacts.com/fr/publications/runtime-engines-and-domain-operating-systems/",
           "item": {
             "@id": "https://electronicartefacts.com/fr/id/publication/runtime-engines-and-domain-operating-systems/"

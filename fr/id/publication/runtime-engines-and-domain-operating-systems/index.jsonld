@@ -5,15 +5,15 @@
       "@type": "WebPage",
       "@id": "https://electronicartefacts.com/fr/publications/runtime-engines-and-domain-operating-systems/#webpage",
       "url": "https://electronicartefacts.com/fr/publications/runtime-engines-and-domain-operating-systems/",
-      "name": "Moteurs runtime et systèmes d'exploitation de domaine",
-      "description": "Moteurs runtime et systèmes d'exploitation de domaine propose une synthèse claire en français sur le sujet \"Moteurs runtime et systèmes d'exploitation de domaine\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
+      "name": "Moteurs d'exécution et systèmes d'exploitation de domaine",
+      "description": "Moteurs d'exécution et systèmes d'exploitation de domaine propose une synthèse claire en français sur le sujet \"Moteurs d'exécution et systèmes d'exploitation de domaine\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
       "primaryImageOfPage": {
         "@type": "ImageObject",
         "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-search.jpg",
-        "description": "Moteurs runtime et systèmes d'exploitation de domaine"
+        "description": "Moteurs d'exécution et systèmes d'exploitation de domaine"
       },
       "breadcrumb": {
         "@id": "https://electronicartefacts.com/fr/publications/runtime-engines-and-domain-operating-systems/#breadcrumb"
@@ -33,10 +33,10 @@
       "@type": "TechArticle",
       "@id": "https://electronicartefacts.com/fr/id/publication/runtime-engines-and-domain-operating-systems/",
       "identifier": "ea:publication:runtime-engines-and-domain-operating-systems-fr",
-      "name": "Moteurs runtime et systèmes d'exploitation de domaine",
-      "headline": "Moteurs runtime et systèmes d'exploitation de domaine",
-      "abstract": "Moteurs runtime et systèmes d'exploitation de domaine propose une synthèse claire en français sur le sujet \"Moteurs runtime et systèmes d'exploitation de domaine\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
-      "description": "Moteurs runtime et systèmes d'exploitation de domaine propose une synthèse claire en français sur le sujet \"Moteurs runtime et systèmes d'exploitation de domaine\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
+      "name": "Moteurs d'exécution et systèmes d'exploitation de domaine",
+      "headline": "Moteurs d'exécution et systèmes d'exploitation de domaine",
+      "abstract": "Moteurs d'exécution et systèmes d'exploitation de domaine propose une synthèse claire en français sur le sujet \"Moteurs d'exécution et systèmes d'exploitation de domaine\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
+      "description": "Moteurs d'exécution et systèmes d'exploitation de domaine propose une synthèse claire en français sur le sujet \"Moteurs d'exécution et systèmes d'exploitation de domaine\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
       "url": "https://electronicartefacts.com/fr/publications/runtime-engines-and-domain-operating-systems/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/publications/runtime-engines-and-domain-operating-systems/#webpage"
@@ -44,7 +44,7 @@
       "image": {
         "@type": "ImageObject",
         "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-search.jpg",
-        "description": "Moteurs runtime et systèmes d'exploitation de domaine"
+        "description": "Moteurs d'exécution et systèmes d'exploitation de domaine"
       },
       "author": [
         {
@@ -57,15 +57,15 @@
         }
       ],
       "keywords": [
-        "Runtime Engine",
-        "Domain OS",
-        "Business OS",
+        "Moteur d'exécution",
+        "Système d'exploitation de domaine",
+        "Système d'exploitation métier",
         "VASTE",
-        "Composable Systems",
+        "Systèmes composables",
         "conception de systèmes",
         "architecture logicielle",
-        "Programming",
-        "Knowledge Systems"
+        "programmation",
+        "Systèmes de connaissance"
       ],
       "inLanguage": "fr",
       "dateCreated": "2026-06-24",
@@ -80,7 +80,7 @@
       "isAccessibleForFree": true,
       "wordCount": 145,
       "citation": [
-        "Electronic Artefacts. \"Moteurs runtime et systèmes d'exploitation de domaine\". Article technique, version 1.0.0, 2026.",
+        "Electronic Artefacts. \"Moteurs d'exécution et systèmes d'exploitation de domaine\". Article technique, version 1.0.0, 2026.",
         {
           "@type": "CreativeWork",
           "name": "POSIX.1-2024",
@@ -137,10 +137,10 @@
       "articleSection": [
         "conception de systèmes",
         "architecture logicielle",
-        "Programming",
-        "Knowledge Systems",
-        "Runtime Engine",
-        "Domain OS"
+        "programmation",
+        "Systèmes de connaissance",
+        "Moteur d'exécution",
+        "Système d'exploitation de domaine"
       ],
       "timeRequired": "PT1M",
       "isBasedOn": [
@@ -271,7 +271,7 @@
         {
           "@type": "ListItem",
           "position": 3,
-          "name": "Moteurs runtime et systèmes d'exploitation de domaine",
+          "name": "Moteurs d'exécution et systèmes d'exploitation de domaine",
           "item": "https://electronicartefacts.com/fr/publications/runtime-engines-and-domain-operating-systems/"
         }
       ]

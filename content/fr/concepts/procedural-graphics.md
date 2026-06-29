@@ -4,13 +4,13 @@ type: concept
 slug:
   canonical: procedural-graphics
 title: Graphisme procédural
-definition: Graphisme procédural désigne les images et formes visuelles générées par algorithmes,
-  shaders ou règles paramétriques.
+definition: Graphisme procédural désigne les images et formes visuelles generees par algorithmes,
+  shaders ou regles parametriques.
 abstract: Graphisme procédural définit un repère conceptuel en français pour comprendre les images
-  et formes visuelles générées par algorithmes, shaders ou règles paramétriques et ses liens avec
+  et formes visuelles generees par algorithmes, shaders ou regles parametriques et ses liens avec
   les projets, technologies et publications du graphe.
 description: Graphisme procédural définit un repère conceptuel en français pour comprendre les
-  images et formes visuelles générées par algorithmes, shaders ou règles paramétriques et ses liens
+  images et formes visuelles generees par algorithmes, shaders ou regles parametriques et ses liens
   avec les projets, technologies et publications du graphe.
 locale: fr
 visibility: public
@@ -54,7 +54,7 @@ translationOf: ea:concept:procedural-graphics
 
 ## Rôle
 
-Graphisme procédural est documenté comme notion de référence pour comprendre les images et formes visuelles générées par algorithmes, shaders ou règles paramétriques.
+Graphisme procédural est documenté comme notion de référence pour comprendre les images et formes visuelles generees par algorithmes, shaders ou regles parametriques.
 
 ## Usage
 

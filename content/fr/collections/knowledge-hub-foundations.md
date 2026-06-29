@@ -4,7 +4,7 @@ type: collection
 slug:
   canonical: knowledge-hub-foundations
 title: Fondations du hub de connaissance
-subtitle: Editorial Collection
+subtitle: Collection éditoriale
 abstract: Fondations du hub de connaissance organise des fiches reliées autour de le sujet
   "Fondations du hub de connaissance" dans le graphe public d'Electronic Artefacts, afin de donner
   une progression lisible aux archives de connaissance d'Electronic Artefacts.
@@ -53,17 +53,17 @@ explicitMembers:
 selectionNote: La sélection privilégie des contenus stables, reliables et utiles pour parcourir le
   hub de connaissance en français.
 tags:
-  - Knowledge Hub
-  - Editorial Collection
-  - Foundations
-  - Research Library
-  - Semantic Publishing
+  - Hub de connaissance
+  - Collection éditoriale
+  - Fondations
+  - Bibliothèque de recherche
+  - Publication sémantique
 disciplines:
-  - Knowledge Systems
-  - Archives
+  - Systèmes de connaissance
+  - archives
   - programmation créative
-  - Audio Engineering
-  - Digital Art
+  - Ingénierie audio
+  - Art numérique
 translationOf: ea:collection:knowledge-hub-foundations
 ---
 

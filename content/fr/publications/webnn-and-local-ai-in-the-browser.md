@@ -59,15 +59,15 @@ citation:
     1.0.0, 2026.
 tags:
   - WebNN
-  - Browser AI
-  - Local Inference
-  - Web Machine Learning
+  - IA dans le navigateur
+  - Inférence locale
+  - Apprentissage automatique Web
   - interaction humain-machine
 disciplines:
   - intelligence artificielle
-  - Web Development
+  - développement web
   - interaction humain-machine
-  - Creative Technology
+  - technologies créatives
 translationOf: ea:publication:webnn-and-local-ai-in-the-browser
 ---
 

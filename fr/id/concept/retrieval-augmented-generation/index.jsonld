@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/knowledge/concepts/retrieval-augmented-generation/#webpage",
       "url": "https://electronicartefacts.com/fr/knowledge/concepts/retrieval-augmented-generation/",
       "name": "Génération augmentée par récupération",
-      "description": "Génération augmentée par récupération définit un repère conceptuel en français pour comprendre les architectures qui récupèrent des sources externes avant ou pendant la génération d'une réponse par IA et ses liens avec les projets, technologies et publications du graphe.",
+      "description": "Génération augmentée par récupération définit un repère conceptuel en français pour comprendre les architectures qui recuperent des sources externes avant ou pendant la generation d'une reponse par IA et ses liens avec les projets, technologies et publications du graphe.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
@@ -37,8 +37,8 @@
       "alternateName": [
         "RAG"
       ],
-      "abstract": "Génération augmentée par récupération définit un repère conceptuel en français pour comprendre les architectures qui récupèrent des sources externes avant ou pendant la génération d'une réponse par IA et ses liens avec les projets, technologies et publications du graphe.",
-      "description": "Génération augmentée par récupération désigne les architectures qui récupèrent des sources externes avant ou pendant la génération d'une réponse par IA.",
+      "abstract": "Génération augmentée par récupération définit un repère conceptuel en français pour comprendre les architectures qui recuperent des sources externes avant ou pendant la generation d'une reponse par IA et ses liens avec les projets, technologies et publications du graphe.",
+      "description": "Génération augmentée par récupération désigne les architectures qui recuperent des sources externes avant ou pendant la generation d'une reponse par IA.",
       "url": "https://electronicartefacts.com/fr/knowledge/concepts/retrieval-augmented-generation/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/knowledge/concepts/retrieval-augmented-generation/#webpage"

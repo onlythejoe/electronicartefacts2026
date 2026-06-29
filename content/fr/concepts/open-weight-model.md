@@ -4,14 +4,14 @@ type: concept
 slug:
   canonical: open-weight-model
 title: Modèle à poids ouverts
-definition: Modèle à poids ouverts désigne les modèles dont les poids sont publiés pour permettre
-  l'exécution, l'audit ou l'adaptation locale.
-abstract: Modèle à poids ouverts définit un repère conceptuel en français pour comprendre les modèles
-  dont les poids sont publiés pour permettre l'exécution, l'audit ou l'adaptation locale et ses
-  liens avec les projets, technologies et publications du graphe.
-description: Modèle à poids ouverts définit un repère conceptuel en français pour comprendre les modèles
-  dont les poids sont publiés pour permettre l'exécution, l'audit ou l'adaptation locale et ses
-  liens avec les projets, technologies et publications du graphe.
+definition: Modèle à poids ouverts désigne les modèles dont les poids sont publies pour permettre
+  l'execution, l'audit ou l'adaptation locale.
+abstract: Modèle à poids ouverts définit un repère conceptuel en français pour comprendre les
+  modèles dont les poids sont publies pour permettre l'execution, l'audit ou l'adaptation locale et
+  ses liens avec les projets, technologies et publications du graphe.
+description: Modèle à poids ouverts définit un repère conceptuel en français pour comprendre les
+  modèles dont les poids sont publies pour permettre l'execution, l'audit ou l'adaptation locale et
+  ses liens avec les projets, technologies et publications du graphe.
 locale: fr
 visibility: public
 publicationClass: canonical
@@ -35,8 +35,8 @@ exclusions:
   - les usages purement promotionnels sans définition vérifiable
   - les exemples déconnectés des sources, relations ou contraintes du graphe
 claims:
-  - Modèle à poids ouverts devient utile lorsque sa définition reste reliée à des sources, des pratiques
-    et des objets observables.
+  - Modèle à poids ouverts devient utile lorsque sa définition reste reliée à des sources, des
+    pratiques et des objets observables.
   - La fiche sert de vocabulaire commun pour relier projets, publications et technologies sans
     mélanger les langues.
 sources:
@@ -59,7 +59,7 @@ translationOf: ea:concept:open-weight-model
 
 ## Rôle
 
-Modèle à poids ouverts est documenté comme notion de référence pour comprendre les modèles dont les poids sont publiés pour permettre l'exécution, l'audit ou l'adaptation locale.
+Modèle à poids ouverts est documenté comme notion de référence pour comprendre les modèles dont les poids sont publies pour permettre l'execution, l'audit ou l'adaptation locale.
 
 ## Usage
 

@@ -57,14 +57,14 @@
         }
       ],
       "keywords": [
-        "Local AI",
-        "Open Source AI",
-        "Open Weights",
-        "Quantization",
+        "IA locale",
+        "IA open source",
+        "Poids ouverts",
+        "Quantification",
         "llama.cpp",
         "intelligence artificielle",
-        "Open Source",
-        "Programming",
+        "open source",
+        "programmation",
         "conception de systèmes"
       ],
       "inLanguage": "fr",
@@ -129,11 +129,11 @@
       ],
       "articleSection": [
         "intelligence artificielle",
-        "Open Source",
-        "Programming",
+        "open source",
+        "programmation",
         "conception de systèmes",
-        "Local AI",
-        "Open Source AI"
+        "IA locale",
+        "IA open source"
       ],
       "timeRequired": "PT1M",
       "isBasedOn": [

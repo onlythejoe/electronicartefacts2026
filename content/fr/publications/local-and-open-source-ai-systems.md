@@ -59,15 +59,15 @@ citation:
   preferred: Electronic Artefacts. "Systèmes d'IA locaux et open source". Article technique, version
     1.0.0, 2026.
 tags:
-  - Local AI
-  - Open Source AI
-  - Open Weights
-  - Quantization
+  - IA locale
+  - IA open source
+  - Poids ouverts
+  - Quantification
   - llama.cpp
 disciplines:
   - intelligence artificielle
-  - Open Source
-  - Programming
+  - open source
+  - programmation
   - conception de systèmes
 translationOf: ea:publication:local-and-open-source-ai-systems
 ---

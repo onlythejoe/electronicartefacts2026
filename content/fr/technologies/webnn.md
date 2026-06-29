@@ -39,12 +39,12 @@ sources:
     url: https://www.w3.org/TR/webnn/
 tags:
   - WebNN
-  - Browser AI
-  - Local Inference
-  - Web Machine Learning
+  - IA dans le navigateur
+  - Inférence locale
+  - Apprentissage automatique Web
 disciplines:
   - intelligence artificielle
-  - Web Development
+  - développement web
   - interaction humain-machine
 translationOf: ea:technology:webnn
 ---

@@ -4,7 +4,7 @@ type: collection
 slug:
   canonical: knowledge-hub-second-wave
 title: Hub de connaissance, deuxieme vague
-subtitle: Editorial Collection
+subtitle: Collection éditoriale
 abstract: Hub de connaissance, deuxieme vague organise des fiches reliées autour de le sujet "Hub de
   connaissance, deuxieme vague" dans le graphe public d'Electronic Artefacts, afin de donner une
   progression lisible aux archives de connaissance d'Electronic Artefacts.
@@ -63,14 +63,14 @@ explicitMembers:
 selectionNote: La sélection privilégie des contenus stables, reliables et utiles pour parcourir le
   hub de connaissance en français.
 tags:
-  - Knowledge Hub
-  - Second Wave
-  - Editorial Collection
-  - Research Library
+  - Hub de connaissance
+  - Deuxième vague
+  - Collection éditoriale
+  - Bibliothèque de recherche
 disciplines:
-  - Knowledge Systems
+  - Systèmes de connaissance
   - programmation créative
-  - Web Development
+  - Développement web
   - design
   - intelligence artificielle
 translationOf: ea:collection:knowledge-hub-second-wave

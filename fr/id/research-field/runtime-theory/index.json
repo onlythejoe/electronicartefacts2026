@@ -35,9 +35,9 @@
     "Primitives"
   ],
   "disciplines": [
-    "Technologie",
+    "Technology",
     "Research",
-    "Systèmes"
+    "Systems"
   ],
   "questions": [
     {
@@ -47,7 +47,7 @@
     },
     {
       "id": "contextual-execution",
-      "question": "Quels usages de Théorie du runtime doivent rester ouverts à l'expérimentation et à la vérification ?",
+      "question": "Quels usages de Théorie du runtime doivent rester ouverts à l'experimentation et à la verification ?",
       "status": "active"
     }
   ],
@@ -61,9 +61,9 @@
     "Théorie du runtime demande une articulation claire entre vocabulaire, preuve et expérience utilisateur."
   ],
   "openQuestions": [
-    "Quels critères permettent d'évaluer Théorie du runtime dans des situations concrètes ?"
+    "Quels critères permettent d'evaluer Théorie du runtime dans des situations concrètes ?"
   ],
-  "bodyHtml": "<h2 id=\"champ\">Champ</h2>\n<p>Théorie du runtime décrit un espace de recherche actif pour Electronic Artefacts. Il relie le sujet “Théorie du runtime” dans le graphe public d’Electronic Artefacts à des questions, prototypes et méthodes qui peuvent évoluer dans le temps.</p>\n<h2 id=\"questions\">Questions</h2>\n<ul>\n<li>Comment rendre les hypothèses suffisamment explicites pour être partagées, testées et reliées au graphe ?</li>\n<li>Quelles preuves, interfaces ou architectures permettent de transformer ce champ en expérience utilisable ?</li>\n</ul>\n<h2 id=\"usage\">Usage</h2>\n<p>Cette fiche donne une entrée française au champ de recherche et conserve ses liens avec les projets, publications et technologies associés.</p>\n<h2 id=\"references\">Références</h2>\n<p>Les sources associées sont conservées dans la fiche canonique du graphe.</p>\n",
+  "bodyHtml": "<h2 id=\"champ\">Champ</h2>\n<p>Théorie du runtime décrit un espace de recherche actif pour Electronic Artefacts. Il relie le sujet “Théorie du runtime” dans le graphe public d’Electronic Artefacts à des questions, prototypes et méthodes qui peuvent évoluer dans le temps.</p>\n<h2 id=\"questions\">Questions</h2>\n<ul>\n<li>Comment rendre les hypothèses suffisamment explicites pour être partagees, testées et reliées au graphe ?</li>\n<li>Quelles preuves, interfaces ou architectures permettent de transformer ce champ en expérience utilisable ?</li>\n</ul>\n<h2 id=\"usage\">Usage</h2>\n<p>Cette fiche donne une entrée française au champ de recherche et conserve ses liens avec les projets, publications et technologies associés.</p>\n<h2 id=\"references\">Références</h2>\n<p>Les sources associées sont conservées dans la fiche canonique du graphe.</p>\n",
   "headings": [
     "Champ",
     "Questions",

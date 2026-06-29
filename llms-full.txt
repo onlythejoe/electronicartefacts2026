@@ -94,7 +94,7 @@ This file is generated from typed public records. Prefer each record's canonical
   - Identifier: https://electronicartefacts.com/fr/id/research-field/runtime-theory/
   - JSON-LD: https://electronicartefacts.com/fr/id/research-field/runtime-theory/index.jsonld
   - Modified: 2026-06-25
-  - Keywords: Théorie du runtime, Runtime, Theory, Exécution, Events, Primitives, Technologie, Research
+  - Keywords: Théorie du runtime, Runtime, Theory, Exécution, Events, Primitives, Technology, Research
 
 ## publication
 
@@ -368,12 +368,12 @@ This file is generated from typed public records. Prefer each record's canonical
   - JSON-LD: https://electronicartefacts.com/fr/id/publication/model-context-protocol-and-tool-using-ai-systems/index.jsonld
   - Modified: 2026-06-25
   - Keywords: Model Context Protocol et systèmes d'IA utilisant des outils, Model Context Protocol, agents d'IA, usage d'outils, Contextual Exécution, VASTE, intelligence artificielle, architecture logicielle
-- [Moteurs runtime et systèmes d'exploitation de domaine](https://electronicartefacts.com/fr/publications/runtime-engines-and-domain-operating-systems/): Moteurs runtime et systèmes d'exploitation de domaine propose une synthèse claire en français sur le sujet "Moteurs runtime et systèmes d'exploitation de domaine" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la...
+- [Moteurs d'exécution et systèmes d'exploitation de domaine](https://electronicartefacts.com/fr/publications/runtime-engines-and-domain-operating-systems/): Moteurs d'exécution et systèmes d'exploitation de domaine propose une synthèse claire en français sur le sujet "Moteurs d'exécution et systèmes d'exploitation de domaine" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche,...
   - Entity ID: ea:publication:runtime-engines-and-domain-operating-systems-fr
   - Identifier: https://electronicartefacts.com/fr/id/publication/runtime-engines-and-domain-operating-systems/
   - JSON-LD: https://electronicartefacts.com/fr/id/publication/runtime-engines-and-domain-operating-systems/index.jsonld
   - Modified: 2026-06-25
-  - Keywords: Moteurs runtime et systèmes d'exploitation de domaine, Runtime Engine, Domain OS, Business OS, VASTE, Composable Systems, conception de systèmes, architecture logicielle
+  - Keywords: Moteurs d'exécution et systèmes d'exploitation de domaine, Moteur d'exécution, Système d'exploitation de domaine, Système d'exploitation métier, VASTE, Systèmes composables, conception de systèmes, architecture logicielle
 - [Motion design, temps et sémantique d'interface](https://electronicartefacts.com/fr/publications/motion-design-time-and-interface-semantics/): Motion design, temps et sémantique d'interface propose une synthèse claire en français sur le sujet "Motion design, temps et sémantique d'interface" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la...
   - Entity ID: ea:publication:motion-design-time-and-interface-semantics-fr
   - Identifier: https://electronicartefacts.com/fr/id/publication/motion-design-time-and-interface-semantics/
@@ -511,7 +511,7 @@ This file is generated from typed public records. Prefer each record's canonical
   - Identifier: https://electronicartefacts.com/fr/id/publication/local-and-open-source-ai-systems/
   - JSON-LD: https://electronicartefacts.com/fr/id/publication/local-and-open-source-ai-systems/index.jsonld
   - Modified: 2026-06-25
-  - Keywords: Systèmes d'IA locaux et open source, Local AI, Open Source AI, Open Weights, Quantization, llama.cpp, intelligence artificielle, Open Source
+  - Keywords: Systèmes d'IA locaux et open source, IA locale, IA open source, Poids ouverts, Quantification, llama.cpp, intelligence artificielle, open source
 - [Systèmes génératifs, cybernetique et programmation créative](https://electronicartefacts.com/fr/publications/generative-systems-cybernetics-and-creative-coding/): Systèmes génératifs, cybernetique et programmation créative propose une synthèse claire en français sur le sujet "Systèmes génératifs, cybernetique et programmation créative" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la...
   - Entity ID: ea:publication:generative-systems-cybernetics-and-creative-coding-fr
   - Identifier: https://electronicartefacts.com/fr/id/publication/generative-systems-cybernetics-and-creative-coding/
@@ -571,7 +571,7 @@ This file is generated from typed public records. Prefer each record's canonical
   - Identifier: https://electronicartefacts.com/fr/id/publication/webnn-and-local-ai-in-the-browser/
   - JSON-LD: https://electronicartefacts.com/fr/id/publication/webnn-and-local-ai-in-the-browser/index.jsonld
   - Modified: 2026-06-25
-  - Keywords: WebNN et IA locale dans le navigateur, WebNN, Browser AI, Local Inference, Web Machine Learning, interaction humain-machine, intelligence artificielle, Web Development
+  - Keywords: WebNN et IA locale dans le navigateur, WebNN, IA dans le navigateur, Inférence locale, Apprentissage automatique Web, interaction humain-machine, intelligence artificielle, développement web
 - [Why Graphs Are More Powerful Than Folders](https://electronicartefacts.com/publications/why-graphs-are-more-powerful-than-folders/): Learn when graph models outperform folder hierarchies, why relationships matter, and how to keep folders as useful projections over connected data.
   - Entity ID: ea:publication:why-graphs-are-more-powerful-than-folders
   - Identifier: https://electronicartefacts.com/id/publication/why-graphs-are-more-powerful-than-folders/
@@ -701,7 +701,7 @@ This file is generated from typed public records. Prefer each record's canonical
   - JSON-LD: https://electronicartefacts.com/fr/id/concept/contextual-execution/index.jsonld
   - Modified: 2026-06-25
   - Keywords: Exécution contextuelle, Context, Exécution, Runtime, Identity, Permissions, conception de systèmes, Programming
-- [Génération augmentée par récupération](https://electronicartefacts.com/fr/knowledge/concepts/retrieval-augmented-generation/): Génération augmentée par récupération désigne les architectures qui récupèrent des sources externes avant ou pendant la génération d'une réponse par IA.
+- [Génération augmentée par récupération](https://electronicartefacts.com/fr/knowledge/concepts/retrieval-augmented-generation/): Génération augmentée par récupération désigne les architectures qui recuperent des sources externes avant ou pendant la generation d'une reponse par IA.
   - Entity ID: ea:concept:retrieval-augmented-generation-fr
   - Identifier: https://electronicartefacts.com/fr/id/concept/retrieval-augmented-generation/
   - JSON-LD: https://electronicartefacts.com/fr/id/concept/retrieval-augmented-generation/index.jsonld
@@ -724,7 +724,7 @@ This file is generated from typed public records. Prefer each record's canonical
   - Identifier: https://electronicartefacts.com/fr/id/concept/large-language-model/
   - JSON-LD: https://electronicartefacts.com/fr/id/concept/large-language-model/index.jsonld
   - Modified: 2026-06-25
-  - Keywords: Grand modèle de langage, LLM, Transformer, Tokens, Inference, Language Models, intelligence artificielle, Machine Learning
+  - Keywords: Grand modèle de langage, LLM, Transformer, Tokens, Inférence, Modèles de langage, intelligence artificielle, apprentissage automatique
 - [Graph Modeling](https://electronicartefacts.com/knowledge/concepts/graph-modeling/): Graph modeling represents a domain through addressable nodes, typed relationships and properties chosen to answer specific questions and support specific operations.
   - Entity ID: ea:concept:graph-modeling
   - Identifier: https://electronicartefacts.com/id/concept/graph-modeling/
@@ -743,7 +743,7 @@ This file is generated from typed public records. Prefer each record's canonical
   - JSON-LD: https://electronicartefacts.com/fr/id/concept/knowledge-graph/index.jsonld
   - Modified: 2026-06-25
   - Keywords: Graphe de connaissances, graphe de connaissances, Semantic Web, Entities, Relations, Search, Knowledge Systems, Information Architecture
-- [Graphisme procédural](https://electronicartefacts.com/fr/knowledge/concepts/procedural-graphics/): Graphisme procédural désigne les images et formes visuelles générées par algorithmes, shaders ou règles paramétriques.
+- [Graphisme procédural](https://electronicartefacts.com/fr/knowledge/concepts/procedural-graphics/): Graphisme procédural désigne les images et formes visuelles generees par algorithmes, shaders ou regles parametriques.
   - Entity ID: ea:concept:procedural-graphics-fr
   - Identifier: https://electronicartefacts.com/fr/id/concept/procedural-graphics/
   - JSON-LD: https://electronicartefacts.com/fr/id/concept/procedural-graphics/index.jsonld
@@ -839,7 +839,7 @@ This file is generated from typed public records. Prefer each record's canonical
   - JSON-LD: https://electronicartefacts.com/id/concept/microservice-architecture/index.jsonld
   - Modified: 2026-06-24
   - Keywords: Microservice Architecture, Microservices, Modular Monolith, Service Boundaries, Distributed Systems, Software Architecture, Systems Design, Programming
-- [Modèle à poids ouverts](https://electronicartefacts.com/fr/knowledge/concepts/open-weight-model/): Modèle à poids ouverts désigne les modèles dont les poids sont publiés pour permettre l'exécution, l'audit ou l'adaptation locale.
+- [Modèle à poids ouverts](https://electronicartefacts.com/fr/knowledge/concepts/open-weight-model/): Modèle à poids ouverts désigne les modèles dont les poids sont publies pour permettre l'execution, l'audit ou l'adaptation locale.
   - Entity ID: ea:concept:open-weight-model-fr
   - Identifier: https://electronicartefacts.com/fr/id/concept/open-weight-model/
   - JSON-LD: https://electronicartefacts.com/fr/id/concept/open-weight-model/index.jsonld
@@ -886,7 +886,7 @@ This file is generated from typed public records. Prefer each record's canonical
   - Identifier: https://electronicartefacts.com/fr/id/concept/open-source/
   - JSON-LD: https://electronicartefacts.com/fr/id/concept/open-source/index.jsonld
   - Modified: 2026-06-25
-  - Keywords: Open source, Open Source, Software, Commons, Infrastructure, Programming, programmation créative, Creative Business
+  - Keywords: Open source, open source, Logiciel, Communs, Infrastructure, programmation, programmation créative, Activités créatives
 - [Open Source](https://electronicartefacts.com/knowledge/concepts/open-source/): Open source is a software and cultural practice in which source code is made available under licenses that allow use, study, modification and redistribution.
   - Entity ID: ea:concept:open-source
   - Identifier: https://electronicartefacts.com/id/concept/open-source/
@@ -976,7 +976,7 @@ This file is generated from typed public records. Prefer each record's canonical
   - Identifier: https://electronicartefacts.com/fr/id/concept/domain-operating-system/
   - JSON-LD: https://electronicartefacts.com/fr/id/concept/domain-operating-system/index.jsonld
   - Modified: 2026-06-25
-  - Keywords: Système d'exploitation de domaine, Domain OS, Business OS, Runtime Engine, Platform Architecture, Composability, conception de systèmes, architecture logicielle
+  - Keywords: Système d'exploitation de domaine, Système d'exploitation métier, Moteur d'exécution, Architecture de plateforme, Composabilité, conception de systèmes, architecture logicielle, programmation
 - [Système génératif](https://electronicartefacts.com/fr/knowledge/concepts/generative-system/): Système génératif désigne les systèmes qui produisent des formes à partir de regles, de contraintes et de boucles de sélection.
   - Entity ID: ea:concept:generative-system-fr
   - Identifier: https://electronicartefacts.com/fr/id/concept/generative-system/
@@ -1225,7 +1225,7 @@ This file is generated from typed public records. Prefer each record's canonical
   - Identifier: https://electronicartefacts.com/fr/id/technology/webnn/
   - JSON-LD: https://electronicartefacts.com/fr/id/technology/webnn/index.jsonld
   - Modified: 2026-06-25
-  - Keywords: WebNN, Web Neural Network API, Browser AI, Local Inference, Web Machine Learning, intelligence artificielle, Web Development, interaction humain-machine
+  - Keywords: WebNN, Web Neural Network API, IA dans le navigateur, Inférence locale, Apprentissage automatique Web, intelligence artificielle, développement web, interaction humain-machine
 - [WebNN](https://electronicartefacts.com/knowledge/technologies/webnn/): A technology record for browser-based machine-learning inference through the Web Neural Network API.
   - Entity ID: ea:technology:webnn
   - Identifier: https://electronicartefacts.com/id/technology/webnn/
@@ -1255,25 +1255,25 @@ This file is generated from typed public records. Prefer each record's canonical
   - Identifier: https://electronicartefacts.com/fr/id/collection/knowledge-hub-foundations/
   - JSON-LD: https://electronicartefacts.com/fr/id/collection/knowledge-hub-foundations/index.jsonld
   - Modified: 2026-06-25
-  - Keywords: Fondations du hub de connaissance, Knowledge Hub, Editorial Collection, Foundations, Research Library, Semantic Publishing, Knowledge Systems, Archives
+  - Keywords: Fondations du hub de connaissance, Hub de connaissance, Collection éditoriale, Fondations, Bibliothèque de recherche, Publication sémantique, Systèmes de connaissance, archives
 - [Hub de connaissance, deuxieme vague](https://electronicartefacts.com/fr/archive/collections/knowledge-hub-second-wave/): Hub de connaissance, deuxieme vague organise des fiches reliées autour de le sujet "Hub de connaissance, deuxieme vague" dans le graphe public d'Electronic Artefacts, afin de donner une progression lisible aux archives de connaissance d'Electronic Artefacts.
   - Entity ID: ea:collection:knowledge-hub-second-wave-fr
   - Identifier: https://electronicartefacts.com/fr/id/collection/knowledge-hub-second-wave/
   - JSON-LD: https://electronicartefacts.com/fr/id/collection/knowledge-hub-second-wave/index.jsonld
   - Modified: 2026-06-25
-  - Keywords: Hub de connaissance, deuxieme vague, Knowledge Hub, Second Wave, Editorial Collection, Research Library, Knowledge Systems, programmation créative, Web Development
+  - Keywords: Hub de connaissance, deuxieme vague, Hub de connaissance, Deuxième vague, Collection éditoriale, Bibliothèque de recherche, Systèmes de connaissance, programmation créative, Développement web
 - [Hub de connaissance, quatrieme vague](https://electronicartefacts.com/fr/archive/collections/knowledge-hub-fourth-wave/): Hub de connaissance, quatrieme vague organise des fiches reliées autour de le sujet "Hub de connaissance, quatrieme vague" dans le graphe public d'Electronic Artefacts, afin de donner une progression lisible aux archives de connaissance d'Electronic Artefacts.
   - Entity ID: ea:collection:knowledge-hub-fourth-wave-fr
   - Identifier: https://electronicartefacts.com/fr/id/collection/knowledge-hub-fourth-wave/
   - JSON-LD: https://electronicartefacts.com/fr/id/collection/knowledge-hub-fourth-wave/index.jsonld
   - Modified: 2026-06-25
-  - Keywords: Hub de connaissance, quatrieme vague, Knowledge Hub, Fourth Wave, AI Protocols, AI Governance, Provenance, Cultural Infrastructure, intelligence artificielle
+  - Keywords: Hub de connaissance, quatrieme vague, Hub de connaissance, Quatrième vague, Protocoles d'IA, Gouvernance de l'IA, Provenance, Infrastructure culturelle, intelligence artificielle
 - [Hub de connaissance, troisieme vague](https://electronicartefacts.com/fr/archive/collections/knowledge-hub-third-wave/): Hub de connaissance, troisieme vague organise des fiches reliées autour de le sujet "Hub de connaissance, troisieme vague" dans le graphe public d'Electronic Artefacts, afin de donner une progression lisible aux archives de connaissance d'Electronic Artefacts.
   - Entity ID: ea:collection:knowledge-hub-third-wave-fr
   - Identifier: https://electronicartefacts.com/fr/id/collection/knowledge-hub-third-wave/
   - JSON-LD: https://electronicartefacts.com/fr/id/collection/knowledge-hub-third-wave/index.jsonld
   - Modified: 2026-06-25
-  - Keywords: Hub de connaissance, troisieme vague, Knowledge Hub, Third Wave, intelligence artificielle, Systems Architecture, Graph Computing, conception de systèmes, Knowledge Systems
+  - Keywords: Hub de connaissance, troisieme vague, Hub de connaissance, Troisième vague, intelligence artificielle, Architecture des systèmes, Calcul sur graphe, conception de systèmes, Systèmes de connaissance
 - [Knowledge Hub Foundations](https://electronicartefacts.com/archive/collections/knowledge-hub-foundations/): A curated collection grouping foundational Knowledge Hub concepts, technologies, programs, projects and publications.
   - Entity ID: ea:collection:knowledge-hub-foundations
   - Identifier: https://electronicartefacts.com/id/collection/knowledge-hub-foundations/

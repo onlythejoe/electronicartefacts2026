@@ -6683,7 +6683,7 @@ window.EA_PUBLIC_CATALOG = {
       "locale": "fr",
       "translationOf": "ea:collection:knowledge-hub-foundations",
       "title": "Fondations du hub de connaissance",
-      "subtitle": "Editorial Collection",
+      "subtitle": "Collection éditoriale",
       "summary": "Fondations du hub de connaissance organise des fiches reliées autour de le sujet \"Fondations du hub de connaissance\" dans le graphe public d'Electronic Artefacts, afin de donner une progression lisible aux archives de connaissance d'Electronic Artefacts.",
       "description": "Fondations du hub de connaissance organise des fiches reliées autour de le sujet \"Fondations du hub de connaissance\" dans le graphe public d'Electronic Artefacts, afin de donner une progression lisible aux archives de connaissance d'Electronic Artefacts.",
       "status": "active",
@@ -6692,18 +6692,18 @@ window.EA_PUBLIC_CATALOG = {
       "visibility": "public",
       "publicationClass": "published",
       "tags": [
-        "Knowledge Hub",
-        "Editorial Collection",
-        "Foundations",
-        "Research Library",
-        "Semantic Publishing"
+        "Hub de connaissance",
+        "Collection éditoriale",
+        "Fondations",
+        "Bibliothèque de recherche",
+        "Publication sémantique"
       ],
       "discipline": [
-        "Knowledge Systems",
-        "Archives",
+        "Systèmes de connaissance",
+        "archives",
         "programmation créative",
-        "Audio Engineering",
-        "Digital Art"
+        "Ingénierie audio",
+        "Art numérique"
       ],
       "route": "/fr/archive/collections/knowledge-hub-foundations/",
       "identifier": "/fr/id/collection/knowledge-hub-foundations/",
@@ -6722,7 +6722,7 @@ window.EA_PUBLIC_CATALOG = {
       "locale": "fr",
       "translationOf": "ea:collection:knowledge-hub-fourth-wave",
       "title": "Hub de connaissance, quatrieme vague",
-      "subtitle": "AI Protocoles, Provenance, Gouvernance et Culturel Interfaces",
+      "subtitle": "Protocoles d'IA, provenance, gouvernance et interfaces culturelles",
       "summary": "Hub de connaissance, quatrieme vague organise des fiches reliées autour de le sujet \"Hub de connaissance, quatrieme vague\" dans le graphe public d'Electronic Artefacts, afin de donner une progression lisible aux archives de connaissance d'Electronic Artefacts.",
       "description": "Hub de connaissance, quatrieme vague organise des fiches reliées autour de le sujet \"Hub de connaissance, quatrieme vague\" dans le graphe public d'Electronic Artefacts, afin de donner une progression lisible aux archives de connaissance d'Electronic Artefacts.",
       "status": "active",
@@ -6731,19 +6731,19 @@ window.EA_PUBLIC_CATALOG = {
       "visibility": "public",
       "publicationClass": "published",
       "tags": [
-        "Knowledge Hub",
-        "Fourth Wave",
-        "AI Protocols",
-        "AI Governance",
+        "Hub de connaissance",
+        "Quatrième vague",
+        "Protocoles d'IA",
+        "Gouvernance de l'IA",
         "Provenance",
-        "Cultural Infrastructure"
+        "Infrastructure culturelle"
       ],
       "discipline": [
         "intelligence artificielle",
-        "Knowledge Systems",
-        "Digital Préservation",
+        "Systèmes de connaissance",
+        "préservation numérique",
         "architecture logicielle",
-        "Cultural Infrastructure"
+        "Infrastructure culturelle"
       ],
       "route": "/fr/archive/collections/knowledge-hub-fourth-wave/",
       "identifier": "/fr/id/collection/knowledge-hub-fourth-wave/",
@@ -6762,7 +6762,7 @@ window.EA_PUBLIC_CATALOG = {
       "locale": "fr",
       "translationOf": "ea:collection:knowledge-hub-second-wave",
       "title": "Hub de connaissance, deuxieme vague",
-      "subtitle": "Editorial Collection",
+      "subtitle": "Collection éditoriale",
       "summary": "Hub de connaissance, deuxieme vague organise des fiches reliées autour de le sujet \"Hub de connaissance, deuxieme vague\" dans le graphe public d'Electronic Artefacts, afin de donner une progression lisible aux archives de connaissance d'Electronic Artefacts.",
       "description": "Hub de connaissance, deuxieme vague organise des fiches reliées autour de le sujet \"Hub de connaissance, deuxieme vague\" dans le graphe public d'Electronic Artefacts, afin de donner une progression lisible aux archives de connaissance d'Electronic Artefacts.",
       "status": "active",
@@ -6771,15 +6771,15 @@ window.EA_PUBLIC_CATALOG = {
       "visibility": "public",
       "publicationClass": "published",
       "tags": [
-        "Knowledge Hub",
-        "Second Wave",
-        "Editorial Collection",
-        "Research Library"
+        "Hub de connaissance",
+        "Deuxième vague",
+        "Collection éditoriale",
+        "Bibliothèque de recherche"
       ],
       "discipline": [
-        "Knowledge Systems",
+        "Systèmes de connaissance",
         "programmation créative",
-        "Web Development",
+        "Développement web",
         "design",
         "intelligence artificielle"
       ],
@@ -6800,7 +6800,7 @@ window.EA_PUBLIC_CATALOG = {
       "locale": "fr",
       "translationOf": "ea:collection:knowledge-hub-third-wave",
       "title": "Hub de connaissance, troisieme vague",
-      "subtitle": "AI, Systèmes et Graphe Computing",
+      "subtitle": "IA, systèmes et calcul sur graphe",
       "summary": "Hub de connaissance, troisieme vague organise des fiches reliées autour de le sujet \"Hub de connaissance, troisieme vague\" dans le graphe public d'Electronic Artefacts, afin de donner une progression lisible aux archives de connaissance d'Electronic Artefacts.",
       "description": "Hub de connaissance, troisieme vague organise des fiches reliées autour de le sujet \"Hub de connaissance, troisieme vague\" dans le graphe public d'Electronic Artefacts, afin de donner une progression lisible aux archives de connaissance d'Electronic Artefacts.",
       "status": "active",
@@ -6809,18 +6809,18 @@ window.EA_PUBLIC_CATALOG = {
       "visibility": "public",
       "publicationClass": "published",
       "tags": [
-        "Knowledge Hub",
-        "Third Wave",
+        "Hub de connaissance",
+        "Troisième vague",
         "intelligence artificielle",
-        "Systems Architecture",
-        "Graph Computing"
+        "Architecture des systèmes",
+        "Calcul sur graphe"
       ],
       "discipline": [
         "intelligence artificielle",
         "conception de systèmes",
-        "Knowledge Systems",
+        "Systèmes de connaissance",
         "architecture logicielle",
-        "Creative Technology"
+        "Technologies créatives"
       ],
       "route": "/fr/archive/collections/knowledge-hub-third-wave/",
       "identifier": "/fr/id/collection/knowledge-hub-third-wave/",
@@ -7151,17 +7151,17 @@ window.EA_PUBLIC_CATALOG = {
       "visibility": "public",
       "publicationClass": "canonical",
       "tags": [
-        "Domain OS",
-        "Business OS",
-        "Runtime Engine",
-        "Platform Architecture",
-        "Composability"
+        "Système d'exploitation de domaine",
+        "Système d'exploitation métier",
+        "Moteur d'exécution",
+        "Architecture de plateforme",
+        "Composabilité"
       ],
       "discipline": [
         "conception de systèmes",
         "architecture logicielle",
-        "Programming",
-        "Knowledge Systems"
+        "programmation",
+        "Systèmes de connaissance"
       ],
       "route": "/fr/knowledge/concepts/domain-operating-system/",
       "identifier": "/fr/id/concept/domain-operating-system/",
@@ -7566,14 +7566,14 @@ window.EA_PUBLIC_CATALOG = {
         "LLM",
         "Transformer",
         "Tokens",
-        "Inference",
-        "Language Models"
+        "Inférence",
+        "Modèles de langage"
       ],
       "discipline": [
         "intelligence artificielle",
-        "Machine Learning",
-        "Programming",
-        "Knowledge Systems"
+        "apprentissage automatique",
+        "programmation",
+        "Systèmes de connaissance"
       ],
       "route": "/fr/knowledge/concepts/large-language-model/",
       "identifier": "/fr/id/concept/large-language-model/",
@@ -7825,16 +7825,16 @@ window.EA_PUBLIC_CATALOG = {
       "visibility": "public",
       "publicationClass": "canonical",
       "tags": [
-        "Open Source",
-        "Software",
-        "Commons",
+        "open source",
+        "Logiciel",
+        "Communs",
         "Infrastructure"
       ],
       "discipline": [
-        "Open Source",
-        "Programming",
+        "open source",
+        "programmation",
         "programmation créative",
-        "Creative Business"
+        "Activités créatives"
       ],
       "route": "/fr/knowledge/concepts/open-source/",
       "identifier": "/fr/id/concept/open-source/",
@@ -7853,9 +7853,9 @@ window.EA_PUBLIC_CATALOG = {
       "locale": "fr",
       "translationOf": "ea:concept:open-weight-model",
       "title": "Modèle à poids ouverts",
-      "summary": "Modèle à poids ouverts définit un repère conceptuel en français pour comprendre les modèles dont les poids sont publiés pour permettre l'exécution, l'audit ou l'adaptation locale et ses liens avec les projets, technologies et publications du graphe.",
-      "description": "Modèle à poids ouverts définit un repère conceptuel en français pour comprendre les modèles dont les poids sont publiés pour permettre l'exécution, l'audit ou l'adaptation locale et ses liens avec les projets, technologies et publications du graphe.",
-      "definition": "Modèle à poids ouverts désigne les modèles dont les poids sont publiés pour permettre l'exécution, l'audit ou l'adaptation locale.",
+      "summary": "Modèle à poids ouverts définit un repère conceptuel en français pour comprendre les modèles dont les poids sont publies pour permettre l'execution, l'audit ou l'adaptation locale et ses liens avec les projets, technologies et publications du graphe.",
+      "description": "Modèle à poids ouverts définit un repère conceptuel en français pour comprendre les modèles dont les poids sont publies pour permettre l'execution, l'audit ou l'adaptation locale et ses liens avec les projets, technologies et publications du graphe.",
+      "definition": "Modèle à poids ouverts désigne les modèles dont les poids sont publies pour permettre l'execution, l'audit ou l'adaptation locale.",
       "status": "active",
       "maturity": "research",
       "confidence": "validated",
@@ -7927,9 +7927,9 @@ window.EA_PUBLIC_CATALOG = {
       "locale": "fr",
       "translationOf": "ea:concept:procedural-graphics",
       "title": "Graphisme procédural",
-      "summary": "Graphisme procédural définit un repère conceptuel en français pour comprendre les images et formes visuelles générées par algorithmes, shaders ou règles paramétriques et ses liens avec les projets, technologies et publications du graphe.",
-      "description": "Graphisme procédural définit un repère conceptuel en français pour comprendre les images et formes visuelles générées par algorithmes, shaders ou règles paramétriques et ses liens avec les projets, technologies et publications du graphe.",
-      "definition": "Graphisme procédural désigne les images et formes visuelles générées par algorithmes, shaders ou règles paramétriques.",
+      "summary": "Graphisme procédural définit un repère conceptuel en français pour comprendre les images et formes visuelles generees par algorithmes, shaders ou regles parametriques et ses liens avec les projets, technologies et publications du graphe.",
+      "description": "Graphisme procédural définit un repère conceptuel en français pour comprendre les images et formes visuelles generees par algorithmes, shaders ou regles parametriques et ses liens avec les projets, technologies et publications du graphe.",
+      "definition": "Graphisme procédural désigne les images et formes visuelles generees par algorithmes, shaders ou regles parametriques.",
       "status": "active",
       "maturity": "research",
       "confidence": "canonical",
@@ -8001,9 +8001,9 @@ window.EA_PUBLIC_CATALOG = {
       "locale": "fr",
       "translationOf": "ea:concept:retrieval-augmented-generation",
       "title": "Génération augmentée par récupération",
-      "summary": "Génération augmentée par récupération définit un repère conceptuel en français pour comprendre les architectures qui récupèrent des sources externes avant ou pendant la génération d'une réponse par IA et ses liens avec les projets, technologies et publications du graphe.",
-      "description": "Génération augmentée par récupération définit un repère conceptuel en français pour comprendre les architectures qui récupèrent des sources externes avant ou pendant la génération d'une réponse par IA et ses liens avec les projets, technologies et publications du graphe.",
-      "definition": "Génération augmentée par récupération désigne les architectures qui récupèrent des sources externes avant ou pendant la génération d'une réponse par IA.",
+      "summary": "Génération augmentée par récupération définit un repère conceptuel en français pour comprendre les architectures qui recuperent des sources externes avant ou pendant la generation d'une reponse par IA et ses liens avec les projets, technologies et publications du graphe.",
+      "description": "Génération augmentée par récupération définit un repère conceptuel en français pour comprendre les architectures qui recuperent des sources externes avant ou pendant la generation d'une reponse par IA et ses liens avec les projets, technologies et publications du graphe.",
+      "definition": "Génération augmentée par récupération désigne les architectures qui recuperent des sources externes avant ou pendant la generation d'une reponse par IA.",
       "status": "active",
       "maturity": "research",
       "confidence": "canonical",
@@ -9065,16 +9065,16 @@ window.EA_PUBLIC_CATALOG = {
       "visibility": "public",
       "publicationClass": "published",
       "tags": [
-        "Local AI",
-        "Open Source AI",
-        "Open Weights",
-        "Quantization",
+        "IA locale",
+        "IA open source",
+        "Poids ouverts",
+        "Quantification",
         "llama.cpp"
       ],
       "discipline": [
         "intelligence artificielle",
-        "Open Source",
-        "Programming",
+        "open source",
+        "programmation",
         "conception de systèmes"
       ],
       "route": "/fr/publications/local-and-open-source-ai-systems/",
@@ -9619,27 +9619,27 @@ window.EA_PUBLIC_CATALOG = {
       "type": "publication",
       "locale": "fr",
       "translationOf": "ea:publication:runtime-engines-and-domain-operating-systems",
-      "title": "Moteurs runtime et systèmes d'exploitation de domaine",
+      "title": "Moteurs d'exécution et systèmes d'exploitation de domaine",
       "subtitle": "Article technique",
-      "summary": "Moteurs runtime et systèmes d'exploitation de domaine propose une synthèse claire en français sur le sujet \"Moteurs runtime et systèmes d'exploitation de domaine\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
-      "description": "Moteurs runtime et systèmes d'exploitation de domaine propose une synthèse claire en français sur le sujet \"Moteurs runtime et systèmes d'exploitation de domaine\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
+      "summary": "Moteurs d'exécution et systèmes d'exploitation de domaine propose une synthèse claire en français sur le sujet \"Moteurs d'exécution et systèmes d'exploitation de domaine\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
+      "description": "Moteurs d'exécution et systèmes d'exploitation de domaine propose une synthèse claire en français sur le sujet \"Moteurs d'exécution et systèmes d'exploitation de domaine\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
       "status": "active",
       "maturity": "research",
       "confidence": "published",
       "visibility": "public",
       "publicationClass": "published",
       "tags": [
-        "Runtime Engine",
-        "Domain OS",
-        "Business OS",
+        "Moteur d'exécution",
+        "Système d'exploitation de domaine",
+        "Système d'exploitation métier",
         "VASTE",
-        "Composable Systems"
+        "Systèmes composables"
       ],
       "discipline": [
         "conception de systèmes",
         "architecture logicielle",
-        "Programming",
-        "Knowledge Systems"
+        "programmation",
+        "Systèmes de connaissance"
       ],
       "route": "/fr/publications/runtime-engines-and-domain-operating-systems/",
       "identifier": "/fr/id/publication/runtime-engines-and-domain-operating-systems/",
@@ -9857,16 +9857,16 @@ window.EA_PUBLIC_CATALOG = {
       "publicationClass": "published",
       "tags": [
         "WebNN",
-        "Browser AI",
-        "Local Inference",
-        "Web Machine Learning",
+        "IA dans le navigateur",
+        "Inférence locale",
+        "Apprentissage automatique Web",
         "interaction humain-machine"
       ],
       "discipline": [
         "intelligence artificielle",
-        "Web Development",
+        "développement web",
         "interaction humain-machine",
-        "Creative Technology"
+        "technologies créatives"
       ],
       "route": "/fr/publications/webnn-and-local-ai-in-the-browser/",
       "identifier": "/fr/id/publication/webnn-and-local-ai-in-the-browser/",
@@ -9939,9 +9939,9 @@ window.EA_PUBLIC_CATALOG = {
         "Primitives"
       ],
       "discipline": [
-        "Technologie",
+        "Technology",
         "Research",
-        "Systèmes"
+        "Systems"
       ],
       "route": "/fr/research/fields/runtime-theory/",
       "identifier": "/fr/id/research-field/runtime-theory/",
@@ -10554,13 +10554,13 @@ window.EA_PUBLIC_CATALOG = {
       "publicationClass": "canonical",
       "tags": [
         "WebNN",
-        "Browser AI",
-        "Local Inference",
-        "Web Machine Learning"
+        "IA dans le navigateur",
+        "Inférence locale",
+        "Apprentissage automatique Web"
       ],
       "discipline": [
         "intelligence artificielle",
-        "Web Development",
+        "développement web",
         "interaction humain-machine"
       ],
       "route": "/fr/knowledge/technologies/webnn/",

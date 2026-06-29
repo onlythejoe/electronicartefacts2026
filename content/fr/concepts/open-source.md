@@ -45,15 +45,15 @@ sources:
     accessedAt: 2026-06-24
     url: https://opensource.org/osd
 tags:
-  - Open Source
-  - Software
-  - Commons
+  - open source
+  - Logiciel
+  - Communs
   - Infrastructure
 disciplines:
-  - Open Source
-  - Programming
+  - open source
+  - programmation
   - programmation créative
-  - Creative Business
+  - Activités créatives
 translationOf: ea:concept:open-source
 ---
 

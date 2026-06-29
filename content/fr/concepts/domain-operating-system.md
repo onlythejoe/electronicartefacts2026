@@ -40,16 +40,16 @@ claims:
   - La fiche sert de vocabulaire commun pour relier projets, publications et technologies sans
     mélanger les langues.
 tags:
-  - Domain OS
-  - Business OS
-  - Runtime Engine
-  - Platform Architecture
-  - Composability
+  - Système d'exploitation de domaine
+  - Système d'exploitation métier
+  - Moteur d'exécution
+  - Architecture de plateforme
+  - Composabilité
 disciplines:
   - conception de systèmes
   - architecture logicielle
-  - Programming
-  - Knowledge Systems
+  - programmation
+  - Systèmes de connaissance
 translationOf: ea:concept:domain-operating-system
 ---
 

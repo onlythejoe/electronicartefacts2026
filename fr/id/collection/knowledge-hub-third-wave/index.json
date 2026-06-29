@@ -6,7 +6,7 @@
     "canonical": "knowledge-hub-third-wave"
   },
   "title": "Hub de connaissance, troisieme vague",
-  "subtitle": "AI, Systèmes et Graphe Computing",
+  "subtitle": "IA, systèmes et calcul sur graphe",
   "abstract": "Hub de connaissance, troisieme vague organise des fiches reliées autour de le sujet \"Hub de connaissance, troisieme vague\" dans le graphe public d'Electronic Artefacts, afin de donner une progression lisible aux archives de connaissance d'Electronic Artefacts.",
   "description": "Hub de connaissance, troisieme vague organise des fiches reliées autour de le sujet \"Hub de connaissance, troisieme vague\" dans le graphe public d'Electronic Artefacts, afin de donner une progression lisible aux archives de connaissance d'Electronic Artefacts.",
   "locale": "fr",
@@ -28,18 +28,18 @@
   ],
   "publisher": "ea:organization:electronic-artefacts",
   "tags": [
-    "Knowledge Hub",
-    "Third Wave",
+    "Hub de connaissance",
+    "Troisième vague",
     "intelligence artificielle",
-    "Systems Architecture",
-    "Graph Computing"
+    "Architecture des systèmes",
+    "Calcul sur graphe"
   ],
   "disciplines": [
     "intelligence artificielle",
     "conception de systèmes",
-    "Knowledge Systems",
+    "Systèmes de connaissance",
     "architecture logicielle",
-    "Creative Technology"
+    "Technologies créatives"
   ],
   "thesis": "Hub de connaissance, troisieme vague propose une lecture organisee de 30 fiches reliées par un même axe editorial.",
   "curator": [

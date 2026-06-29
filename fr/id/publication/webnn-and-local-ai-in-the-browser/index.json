@@ -29,16 +29,16 @@
   "publisher": "ea:organization:electronic-artefacts",
   "tags": [
     "WebNN",
-    "Browser AI",
-    "Local Inference",
-    "Web Machine Learning",
+    "IA dans le navigateur",
+    "Inférence locale",
+    "Apprentissage automatique Web",
     "interaction humain-machine"
   ],
   "disciplines": [
     "intelligence artificielle",
-    "Web Development",
+    "développement web",
     "interaction humain-machine",
-    "Creative Technology"
+    "technologies créatives"
   ],
   "sources": [
     {

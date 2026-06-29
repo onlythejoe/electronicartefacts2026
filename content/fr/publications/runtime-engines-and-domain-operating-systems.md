@@ -3,15 +3,15 @@ id: ea:publication:runtime-engines-and-domain-operating-systems-fr
 type: publication
 slug:
   canonical: runtime-engines-and-domain-operating-systems
-title: Moteurs runtime et systèmes d'exploitation de domaine
+title: Moteurs d'exécution et systèmes d'exploitation de domaine
 subtitle: Article technique
-abstract: Moteurs runtime et systèmes d'exploitation de domaine propose une synthèse claire en
-  français sur le sujet "Moteurs runtime et systèmes d'exploitation de domaine" dans le graphe
+abstract: Moteurs d'exécution et systèmes d'exploitation de domaine propose une synthèse claire en
+  français sur le sujet "Moteurs d'exécution et systèmes d'exploitation de domaine" dans le graphe
   public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la
   publication de connaissances numériques.
-description: Moteurs runtime et systèmes d'exploitation de domaine propose une synthèse claire en
-  français sur le sujet "Moteurs runtime et systèmes d'exploitation de domaine" dans le graphe
-  public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la
+description: Moteurs d'exécution et systèmes d'exploitation de domaine propose une synthèse claire
+  en français sur le sujet "Moteurs d'exécution et systèmes d'exploitation de domaine" dans le
+  graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la
   publication de connaissances numériques.
 locale: fr
 visibility: public
@@ -36,7 +36,7 @@ subjects:
   - id: ea:program:vaste
   - id: ea:project:vestiges
 claims:
-  - Moteurs runtime et systèmes d'exploitation de domaine doit être lisible comme une synthèse
+  - Moteurs d'exécution et systèmes d'exploitation de domaine doit être lisible comme une synthèse
     française autonome, sans phrases hybrides héritées de l'anglais.
   - Les liens avec les notions, projets et technologies du graphe renforcent la recherche, la
     navigation et la citation.
@@ -61,25 +61,25 @@ sources:
     accessedAt: 2026-06-24
     url: https://cloudevents.io/
 citation:
-  preferred: Electronic Artefacts. "Moteurs runtime et systèmes d'exploitation de domaine". Article
-    technique, version 1.0.0, 2026.
+  preferred: Electronic Artefacts. "Moteurs d'exécution et systèmes d'exploitation de domaine".
+    Article technique, version 1.0.0, 2026.
 tags:
-  - Runtime Engine
-  - Domain OS
-  - Business OS
+  - Moteur d'exécution
+  - Système d'exploitation de domaine
+  - Système d'exploitation métier
   - VASTE
-  - Composable Systems
+  - Systèmes composables
 disciplines:
   - conception de systèmes
   - architecture logicielle
-  - Programming
-  - Knowledge Systems
+  - programmation
+  - Systèmes de connaissance
 translationOf: ea:publication:runtime-engines-and-domain-operating-systems
 ---
 
 ## Problème
 
-Moteurs runtime et systèmes d'exploitation de domaine examine le sujet "Moteurs runtime et systèmes d'exploitation de domaine" dans le graphe public d'Electronic Artefacts. La fiche donne une entrée française stable, utilisable pour lire le sujet et relier ses sources au reste du graphe.
+Moteurs d'exécution et systèmes d'exploitation de domaine examine le sujet "Moteurs d'exécution et systèmes d'exploitation de domaine" dans le graphe public d'Electronic Artefacts. La fiche donne une entrée française stable, utilisable pour lire le sujet et relier ses sources au reste du graphe.
 
 ## Architecture
 
