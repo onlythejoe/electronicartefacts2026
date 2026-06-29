@@ -1172,3 +1172,82 @@
 .list-item span {
   text-align: right;
 }
+
+.forensic-offer {
+  overflow: hidden;
+}
+
+.forensic-offer__scope {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--card-grid-gap);
+  margin-top: var(--section-stack-gap);
+}
+
+.forensic-offer__fields,
+.forensic-offer__workflow-head {
+  margin-top: var(--section-stack-gap);
+}
+
+.forensic-workflow {
+  display: grid;
+  grid-template-columns: repeat(7, minmax(0, 1fr));
+  gap: 1px;
+  margin: var(--card-grid-gap) 0 0;
+  padding: 1px;
+  list-style: none;
+  background: var(--border);
+}
+
+.forensic-workflow li {
+  min-width: 0;
+  min-height: 13rem;
+  padding: clamp(1rem, 1.6vw, 1.35rem);
+  background: #08090a;
+}
+
+.forensic-workflow span,
+.forensic-workflow strong {
+  display: block;
+}
+
+.forensic-workflow span {
+  color: rgba(154, 208, 163, 0.82);
+  font-family: ui-monospace, SFMono-Regular, Menlo, monospace;
+  font-size: 0.72rem;
+  letter-spacing: 0.12em;
+}
+
+.forensic-workflow strong {
+  margin-top: 1.8rem;
+  color: var(--text);
+  font-size: 0.96rem;
+}
+
+.forensic-workflow p {
+  margin: 0.72rem 0 0;
+  color: var(--muted);
+  font-size: 0.78rem;
+  line-height: 1.55;
+}
+
+@media (max-width: 1120px) {
+  .forensic-workflow {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 720px) {
+  .forensic-offer__scope,
+  .forensic-workflow {
+    grid-template-columns: 1fr;
+  }
+
+  .forensic-workflow li {
+    min-height: 0;
+  }
+
+  .forensic-workflow strong {
+    margin-top: 0.8rem;
+  }
+}

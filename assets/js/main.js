@@ -3073,6 +3073,91 @@
       ],
     })}${ecosystemExplorer()}`;
 
+  const renderWorkForensics = () => {
+    const workflow = [
+      ["01", "Audit", "Establish the system, data, dependencies and trust boundaries."],
+      ["02", "Investigation", "Map the architecture and isolate material that cannot be trusted."],
+      ["03", "Forensic", "Inspect evidence without executing compromised application code."],
+      ["04", "Reconstruction", "Recover verified data and rebuild on a clean foundation."],
+      ["05", "Validation", "Test integrity, behaviour, security and deployment assumptions."],
+      ["06", "Deployment", "Release through a documented migration and rollback plan."],
+      ["07", "Supervision", "Monitor the new system and maintain its operating record."],
+    ];
+    const fields = [
+      {
+        meta: "Technical audit",
+        title: "Understand the system before changing it.",
+        copy: "Architecture, security, performance, dependencies, packages, modules, data flows and technical SEO are assessed as one operating system.",
+        items: ["Architecture and trust boundaries", "Security and performance", "Packages, modules and dependencies", "Data integrity and technical SEO"],
+      },
+      {
+        meta: "Digital investigation",
+        title: "Determine what happened and what can be trusted.",
+        copy: "Suspicious files and data are inspected in isolation. Evidence is preserved while indicators, backdoors, shells and malicious server-side code are investigated.",
+        items: ["IOC and persistence research", "Backdoor and shell detection", "Server-side malware analysis", "Evidence inventory and preservation"],
+      },
+      {
+        meta: "Clean reconstruction",
+        title: "Rebuild without carrying the compromise forward.",
+        copy: "A platform can be recovered from a snapshot, partial backup, database export or compromised server without treating untrusted code as a production dependency.",
+        items: ["Controlled content recovery", "Progressive build candidates", "Clean-room implementation", "Documented validation gates"],
+      },
+      {
+        meta: "Recovery engineering",
+        title: "Turn incident response into durable architecture.",
+        copy: "The replacement system reduces hidden dependencies and introduces reproducible environments, automated checks, explicit ownership and a tested rollback path.",
+        items: ["Reproducible environments", "Automated validation", "Deployment and rollback", "Documentation and supervision"],
+      },
+    ];
+
+    return `
+      <section class="zone-card hero forensic-offer" id="forensic-web">
+        <div class="section-head">
+          <p class="eyebrow">FORENSIC WEB &amp; SYSTEM RECOVERY</p>
+          <h2>When an existing web system can no longer be trusted.</h2>
+          <p class="lede">Electronic Artefacts investigates compromised, undocumented or structurally fragile web systems, preserves the useful evidence and reconstructs a clean production path. The method applies to CMS platforms, custom applications, hosting estates, databases and incomplete backups.</p>
+        </div>
+
+        <div class="forensic-offer__scope">
+          <article class="panel panel--soft">
+            <p class="card__meta">What changes</p>
+            <h3 class="card__title">From emergency repair to controlled engineering.</h3>
+            <p class="card__copy">The objective is not to make a compromised system appear functional again. It is to establish what can be trusted, recover what has value and produce a maintainable system with a documented chain of decisions.</p>
+            ${tagRow(["Architecture", "Reliability", "Security", "Documentation", "Reproducibility"], { compact: true })}
+          </article>
+          <article class="panel panel--soft">
+            <p class="card__meta">Intervention scope</p>
+            <h3 class="card__title">CMS, custom applications and hosting systems.</h3>
+            <p class="card__copy">The investigation starts from the available evidence: server snapshot, partial backup, database export, source repository or live infrastructure. The technology determines the tooling, not the method.</p>
+            ${tagRow(["CMS", "Custom applications", "Servers", "Databases", "Backups"], { compact: true })}
+          </article>
+        </div>
+
+        <div class="work-services__grid forensic-offer__fields">
+          ${fields.map((field, index) => `
+            <article class="work-service-card">
+              <div class="work-service-card__top"><span>${String(index + 1).padStart(2, "0")}</span><p class="card__meta">${esc(field.meta)}</p></div>
+              <h3>${esc(field.title)}</h3>
+              <p>${esc(field.copy)}</p>
+              <ul>${field.items.map((item) => `<li>${esc(item)}</li>`).join("")}</ul>
+            </article>
+          `).join("")}
+        </div>
+
+        <div class="section-head forensic-offer__workflow-head">
+          <p class="eyebrow">DOCUMENTED WORKFLOW</p>
+          <h2>Audit → Supervision.</h2>
+          <p class="lede">Every stage produces an explicit record, a validation point and a usable input for the next decision.</p>
+        </div>
+        <ol class="forensic-workflow" aria-label="Forensic web reconstruction workflow">
+          ${workflow.map(([number, title, copy]) => `
+            <li><span>${number}</span><strong>${esc(title)}</strong><p>${esc(copy)}</p></li>
+          `).join("")}
+        </ol>
+      </section>
+    `;
+  };
+
   const renderWorkCapabilities = () => {
     const capabilities = [
       {
@@ -4401,6 +4486,7 @@
       "cross-navigation": renderCrossNavigation,
     },
     work: {
+      "work-forensics": renderWorkForensics,
       "work-capabilities": renderWorkCapabilities,
       "work-services": renderWorkServices,
       "work-offer": renderWorkOffer,
