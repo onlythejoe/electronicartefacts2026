@@ -980,6 +980,10 @@
   gap: var(--card-grid-gap);
 }
 
+.latests-grid--cinematic {
+  grid-template-columns: minmax(0, 1fr);
+}
+
 .latests-grid .project-card--featured {
   min-height: clamp(24rem, 42vw, 33rem);
   background:
@@ -1197,6 +1201,29 @@
 
 .selected-works-card--featured .card__copy {
   max-width: 32rem;
+}
+
+.selected-works-card[data-entry-id="vestiges"] .card-media-plate {
+  min-height: clamp(12rem, 22vw, 18rem);
+  margin: 0;
+  border: 0;
+  background: transparent;
+  box-shadow: none;
+}
+
+.selected-works-card[data-entry-id="vestiges"] .card-media-plate::after {
+  display: none;
+}
+
+.selected-works-card[data-entry-id="vestiges"] .card-media-plate img {
+  object-fit: contain;
+  object-position: center;
+  padding: clamp(0.95rem, 3vw, 2rem);
+  filter: none;
+}
+
+.selected-works-card[data-entry-id="vestiges"] .card-media-plate figcaption {
+  display: none;
 }
 
 .selected-works-card.project-card--oeil-de-meg .card-media-plate,
@@ -10331,6 +10358,38 @@ input:focus-visible {
   text-align: right;
   text-overflow: ellipsis;
   white-space: nowrap;
+}
+
+.home-intent-stage__frame[data-entry-id="vestiges"] {
+  border-color: rgba(27, 26, 24, 0.14);
+  background:
+    radial-gradient(circle at 50% 28%, rgba(27, 26, 24, 0.04), transparent 38%),
+    linear-gradient(180deg, #ffffff, #f3efe8);
+  box-shadow: 0 24px 48px rgba(0, 0, 0, 0.22);
+}
+
+.home-intent-stage__frame[data-entry-id="vestiges"]::after {
+  background:
+    linear-gradient(180deg, rgba(255, 255, 255, 0.02), rgba(27, 26, 24, 0.04) 56%, rgba(27, 26, 24, 0.12)),
+    radial-gradient(circle at 50% 32%, rgba(27, 26, 24, 0.06), transparent 38%);
+}
+
+.home-intent-stage__frame[data-entry-id="vestiges"] img {
+  object-fit: contain;
+  object-position: center;
+  padding: clamp(1rem, 5vw, 2.15rem);
+  filter: none;
+}
+
+.home-intent-stage__frame[data-entry-id="vestiges"] figcaption {
+  border-color: rgba(27, 26, 24, 0.08);
+  background: rgba(255, 255, 255, 0.88);
+  color: #1b1a18;
+}
+
+.home-intent-stage__frame[data-entry-id="vestiges"] figcaption span,
+.home-intent-stage__frame[data-entry-id="vestiges"] figcaption strong {
+  color: #1b1a18;
 }
 
 .home-intent-stage__frame--lead {

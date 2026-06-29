@@ -17760,6 +17760,7 @@ window.EA_SEARCH = {
     const media = cardImageFor(item);
     if (!media || mediaKindFor(media) !== "image") return "";
     const label = options.label || media.caption || item.title || "Visual";
+    const showCaption = options.caption !== false;
     const imageAttrs = [
       `src="${esc(media.src)}"`,
       media.srcset ? `srcset="${esc(media.srcset)}"` : "",
@@ -17775,10 +17776,14 @@ window.EA_SEARCH = {
     return `
       <figure class="card-media-plate" aria-hidden="true">
         <img ${imageAttrs} />
-        <figcaption>
-          <span>${esc(options.kicker || "Visual")}</span>
-          <strong>${esc(label)}</strong>
-        </figcaption>
+        ${
+          showCaption
+            ? `<figcaption>
+                <span>${esc(options.kicker || "Visual")}</span>
+                <strong>${esc(label)}</strong>
+              </figcaption>`
+            : ""
+        }
       </figure>
     `;
   };
@@ -17868,6 +17873,7 @@ window.EA_SEARCH = {
     const href = entryHrefFor(item);
     const featured = options.featured !== false;
     const compact = !featured;
+    const isVestiges = item.id === "vestiges";
     const label = options.label || `Open ${item.title} detail`;
     const cardClasses = [
       "project-card",
@@ -17897,7 +17903,7 @@ window.EA_SEARCH = {
             ${projectSignatureBubble(item, "card")}
           </div>
         </div>
-        ${cardMediaPlate(item, { kicker: featured ? "Lead visual" : "Visual" })}
+        ${cardMediaPlate(item, { kicker: featured ? "Lead visual" : "Visual", caption: !isVestiges })}
         ${cardCopy(item.summary || item.description, featured ? 2 : 1)}
         <p class="project-card__editorial-note">${esc(projectReadAs(item))}</p>
         ${signalStrip(item)}
@@ -19799,6 +19805,8 @@ window.EA_SEARCH = {
           const y = (topPct / 100) * height;
           bubbleState.push({
             el: node,
+            ax: x,
+            ay: y,
             x,
             y,
             px: x,
@@ -19818,11 +19826,9 @@ window.EA_SEARCH = {
 
       const frame = () => {
         if (!bubbleState.length) return;
-        const cx = width * 0.5;
-        const cy = height * 0.5;
-        const attraction = 0.03;
-        const hoverScale = 1.2;
-        const iterations = 3;
+        const attraction = 0.02;
+        const hoverScale = 1.28;
+        const iterations = 5;
 
         bubbleState.forEach((bubble) => {
           bubble.px = bubble.x;
@@ -19830,8 +19836,8 @@ window.EA_SEARCH = {
         });
 
         bubbleState.forEach((bubble) => {
-          bubble.x += (cx - bubble.x) * attraction;
-          bubble.y += (cy - bubble.y) * attraction;
+          bubble.x += (bubble.ax - bubble.x) * attraction;
+          bubble.y += (bubble.ay - bubble.y) * attraction;
         });
 
         for (let iter = 0; iter < iterations; iter += 1) {
@@ -19850,7 +19856,7 @@ window.EA_SEARCH = {
               const dist = Math.sqrt(distSq);
               const targetRa = a.hover ? a.baseR * hoverScale : a.baseR;
               const targetRb = b.hover ? b.baseR * hoverScale : b.baseR;
-              const minDist = targetRa + targetRb + 8;
+              const minDist = targetRa + targetRb + 30;
               if (dist < minDist) {
                 const overlap = minDist - dist;
                 const nx = dx / dist;
@@ -24576,7 +24582,7 @@ window.EA_SEARCH = {
     if (!media) return "";
     const href = entryHref(item);
     return `
-      <a class="home-intent-stage__frame ${esc(className)}" href="${esc(href)}" data-depth="${esc(options.depth || 1)}" aria-label="Open ${esc(item.title)}">
+      <a class="home-intent-stage__frame ${esc(className)}" href="${esc(href)}" data-entry-id="${esc(item.id || "")}" data-depth="${esc(options.depth || 1)}" aria-label="Open ${esc(item.title)}">
         <img src="${esc(media.src)}" alt="${esc(media.alt || item.title)}" loading="${options.eager ? "eager" : "lazy"}"${options.eager ? ' fetchpriority="high"' : ""} />
         <figcaption>
           <span>${esc(options.kicker || item.category || item.type || "Project")}</span>

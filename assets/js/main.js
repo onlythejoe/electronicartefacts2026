@@ -2911,7 +2911,7 @@
     if (!media) return "";
     const href = entryHref(item);
     return `
-      <a class="home-intent-stage__frame ${esc(className)}" href="${esc(href)}" data-depth="${esc(options.depth || 1)}" aria-label="Open ${esc(item.title)}">
+      <a class="home-intent-stage__frame ${esc(className)}" href="${esc(href)}" data-entry-id="${esc(item.id || "")}" data-depth="${esc(options.depth || 1)}" aria-label="Open ${esc(item.title)}">
         <img src="${esc(media.src)}" alt="${esc(media.alt || item.title)}" loading="${options.eager ? "eager" : "lazy"}"${options.eager ? ' fetchpriority="high"' : ""} />
         <figcaption>
           <span>${esc(options.kicker || item.category || item.type || "Project")}</span>

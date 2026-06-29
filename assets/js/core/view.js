@@ -744,6 +744,7 @@
     const media = cardImageFor(item);
     if (!media || mediaKindFor(media) !== "image") return "";
     const label = options.label || media.caption || item.title || "Visual";
+    const showCaption = options.caption !== false;
     const imageAttrs = [
       `src="${esc(media.src)}"`,
       media.srcset ? `srcset="${esc(media.srcset)}"` : "",
@@ -759,10 +760,14 @@
     return `
       <figure class="card-media-plate" aria-hidden="true">
         <img ${imageAttrs} />
-        <figcaption>
-          <span>${esc(options.kicker || "Visual")}</span>
-          <strong>${esc(label)}</strong>
-        </figcaption>
+        ${
+          showCaption
+            ? `<figcaption>
+                <span>${esc(options.kicker || "Visual")}</span>
+                <strong>${esc(label)}</strong>
+              </figcaption>`
+            : ""
+        }
       </figure>
     `;
   };
@@ -852,6 +857,7 @@
     const href = entryHrefFor(item);
     const featured = options.featured !== false;
     const compact = !featured;
+    const isVestiges = item.id === "vestiges";
     const label = options.label || `Open ${item.title} detail`;
     const cardClasses = [
       "project-card",
@@ -881,7 +887,7 @@
             ${projectSignatureBubble(item, "card")}
           </div>
         </div>
-        ${cardMediaPlate(item, { kicker: featured ? "Lead visual" : "Visual" })}
+        ${cardMediaPlate(item, { kicker: featured ? "Lead visual" : "Visual", caption: !isVestiges })}
         ${cardCopy(item.summary || item.description, featured ? 2 : 1)}
         <p class="project-card__editorial-note">${esc(projectReadAs(item))}</p>
         ${signalStrip(item)}
