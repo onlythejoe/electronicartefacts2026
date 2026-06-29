@@ -25211,7 +25211,6 @@ window.EA_SEARCH = {
       </div>
       <div class="button-row">
         <a class="button button--primary" href="./contact.html">Discuss the right starting point</a>
-        <a class="button button--secondary" href="#work-evidence">Review evidence</a>
       </div>
     </section>
   `;
@@ -25985,7 +25984,7 @@ window.EA_SEARCH = {
       </section>
     `;
   };
-  const renderWork = () => renderWorkServices() + renderWorkOffer() + workTaxonomy() + catalogSectionWork();
+  const renderWork = () => renderWorkServices() + renderWorkOffer();
   const renderResearch = () => researchFields() + researchPrograms() + researchNotes();
   const renderProgramsPage = () => renderPrograms() + pageLens("programs");
   const renderProjectsPage = () => renderProjects();
@@ -26091,8 +26090,6 @@ window.EA_SEARCH = {
       "work-capabilities": renderWorkCapabilities,
       "work-services": renderWorkServices,
       "work-offer": renderWorkOffer,
-      "work-taxonomy": workTaxonomy,
-      "work-catalog": catalogSectionWork,
       "cross-navigation": renderCrossNavigation,
     },
     projects: {
