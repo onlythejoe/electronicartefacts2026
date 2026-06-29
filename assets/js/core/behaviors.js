@@ -498,9 +498,9 @@
         if (!bubbleState.length) return;
         const cx = width * 0.5;
         const cy = height * 0.5;
-        const attraction = 0.03;
-        const hoverScale = 1.2;
-        const iterations = 3;
+        const attraction = 0.022;
+        const hoverScale = 1.28;
+        const iterations = 4;
 
         bubbleState.forEach((bubble) => {
           bubble.px = bubble.x;
@@ -528,7 +528,7 @@
               const dist = Math.sqrt(distSq);
               const targetRa = a.hover ? a.baseR * hoverScale : a.baseR;
               const targetRb = b.hover ? b.baseR * hoverScale : b.baseR;
-              const minDist = targetRa + targetRb + 8;
+              const minDist = targetRa + targetRb + 18;
               if (dist < minDist) {
                 const overlap = minDist - dist;
                 const nx = dx / dist;

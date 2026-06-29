@@ -24834,7 +24834,7 @@ window.EA_SEARCH = {
         outputs: ["Positioning", "Brief", "Roadmap"],
         x: 20,
         y: 18,
-        size: "7.6rem",
+        size: "8.8rem",
         rgb: "234, 220, 207",
       },
       {
@@ -24844,9 +24844,9 @@ window.EA_SEARCH = {
         copy: "Design identity as a working system: marks, typography, image direction and motion rules that survive beyond the launch window.",
         tools: ["Illustrator", "Photoshop", "InDesign", "Figma"],
         outputs: ["Identity", "Art direction", "Brand kit"],
-        x: 42,
-        y: 12,
-        size: "8rem",
+        x: 41,
+        y: 10,
+        size: "9.2rem",
         rgb: "244, 114, 182",
       },
       {
@@ -24858,7 +24858,7 @@ window.EA_SEARCH = {
         outputs: ["Narrative", "Information model", "Editorial system"],
         x: 68,
         y: 17,
-        size: "7.8rem",
+        size: "8.9rem",
         rgb: "251, 191, 36",
       },
       {
@@ -24868,9 +24868,9 @@ window.EA_SEARCH = {
         copy: "Shape interfaces around real tasks, responsive constraints and a visual hierarchy that makes the next action obvious.",
         tools: ["Figma", "Accessibility", "Prototypes", "Testing"],
         outputs: ["User flows", "Interface", "Interaction model"],
-        x: 16,
-        y: 58,
-        size: "7.2rem",
+        x: 14,
+        y: 60,
+        size: "8.4rem",
         rgb: "56, 189, 248",
       },
       {
@@ -24880,9 +24880,9 @@ window.EA_SEARCH = {
         copy: "Connect user needs, business rules and content structures into products that remain understandable as scope grows.",
         tools: ["Discovery", "User flows", "Figma", "Prototyping"],
         outputs: ["Product model", "Prototype", "Design system"],
-        x: 38,
-        y: 47,
-        size: "7.9rem",
+        x: 37,
+        y: 46,
+        size: "9rem",
         rgb: "45, 212, 191",
       },
       {
@@ -24893,8 +24893,8 @@ window.EA_SEARCH = {
         tools: ["JavaScript", "TypeScript", "PHP", "WordPress"],
         outputs: ["Front end", "CMS", "Production site"],
         x: 66,
-        y: 49,
-        size: "7.6rem",
+        y: 51,
+        size: "8.8rem",
         rgb: "96, 165, 250",
       },
       {
@@ -24904,9 +24904,9 @@ window.EA_SEARCH = {
         copy: "Design data models, workflows, services and maintainable architectures when the work exceeds a single website.",
         tools: ["Node.js", "Python", "Rust", "GitHub"],
         outputs: ["Architecture", "Platform", "Workflow"],
-        x: 87,
-        y: 61,
-        size: "8rem",
+        x: 88,
+        y: 64,
+        size: "9.1rem",
         rgb: "74, 222, 128",
       },
       {
@@ -24916,9 +24916,9 @@ window.EA_SEARCH = {
         copy: "Prototype workflows, assistants and knowledge structures when automation should create leverage without obscuring authorship or control.",
         tools: ["OpenAI", "Python", "APIs", "Custom tooling"],
         outputs: ["Prototype", "Automation", "Knowledge system"],
-        x: 59,
-        y: 82,
-        size: "7.9rem",
+        x: 60,
+        y: 84,
+        size: "9rem",
         rgb: "34, 211, 238",
       },
     ];
@@ -24981,11 +24981,6 @@ window.EA_SEARCH = {
           </aside>
 
           <div class="capability-map" aria-label="Interactive map of Electronic Artefacts capabilities">
-            <div class="capability-map__core" aria-hidden="true">
-              <span>Electronic</span>
-              <strong>Artefacts</strong>
-              <small>Direction · Design<br />Technology · Culture</small>
-            </div>
             ${capabilityButtons}
           </div>
         </div>
