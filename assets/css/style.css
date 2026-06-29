@@ -11594,6 +11594,10 @@ input:focus-visible {
     rgba(9, 9, 11, 0.82);
 }
 
+.shell-header.zone-card::before {
+  border-radius: inherit;
+}
+
 .brand-text {
   gap: 0.14rem;
 }

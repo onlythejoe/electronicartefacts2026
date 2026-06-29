@@ -325,6 +325,10 @@ section[data-render] {
     opacity 220ms ease;
 }
 
+.shell-header.zone-card::before {
+  border-radius: inherit;
+}
+
 .brand-lockup {
   display: inline-flex;
   align-items: flex-start;
