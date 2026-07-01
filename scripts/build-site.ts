@@ -25,8 +25,10 @@ import { buildSearchDocuments } from "../src/search/documents.js";
 import { buildSearchIndex } from "../src/search/build-index.js";
 import { buildGraphViews } from "../src/graph/build-views.js";
 import type { Entity, PublicationEntity } from "../src/schema/entities.js";
+import type { Locale } from "../src/schema/entity.js";
 
 const rootDir = path.resolve(".");
+const origin = "https://electronicartefacts.com";
 const entities = await loadContent(rootDir);
 const relations = await loadRelations(rootDir);
 validateGraph(entities, relations);
@@ -114,25 +116,144 @@ for (const entity of publicEntities) {
   }));
 }
 
-const hubMetadata = (title: string, description: string, route: string) => ({
+type HubLocale = Locale;
+
+interface HubCopy {
+  platformEyebrow: string;
+  searchButton: string;
+  summaryLabel: string;
+  summaryValue: string;
+  graphIndexEyebrow: string;
+  graphIndexTitle: string;
+  graphIndexCopy: string;
+  graphIndexLabel: string;
+  overviewLabel: string;
+  openPage: string;
+  recordSingular: string;
+  recordPlural: string;
+  typeRailLabel: string;
+  knowledgeIndexLabel: string;
+  conceptsLabel: string;
+  emptyMeta: string;
+  emptyTitle: string;
+  emptyCopy: string;
+  typeLabels: Partial<Record<Entity["type"], string>>;
+  typeDescriptions: Partial<Record<Entity["type"], string>>;
+}
+
+const hubCopy: Record<HubLocale, HubCopy> = {
+  en: {
+    platformEyebrow: "KNOWLEDGE PLATFORM",
+    searchButton: "Search graph",
+    summaryLabel: "Addressable knowledge",
+    summaryValue: "connected records",
+    graphIndexEyebrow: "GRAPH INDEX",
+    graphIndexTitle: "Browse the connected records.",
+    graphIndexCopy: "Every entry keeps its type, status, context and route into the wider knowledge system.",
+    graphIndexLabel: "Graph index",
+    overviewLabel: "Knowledge graph overview",
+    openPage: "Open page",
+    recordSingular: "record",
+    recordPlural: "records",
+    typeRailLabel: "Knowledge record types",
+    knowledgeIndexLabel: "Knowledge index",
+    conceptsLabel: "Concepts",
+    emptyMeta: "empty index",
+    emptyTitle: "No public pages yet.",
+    emptyCopy: "This hub is ready to receive public pages.",
+    typeLabels: {
+      concept: "concept",
+      method: "method",
+      framework: "framework",
+      technology: "technology",
+      researchField: "research field",
+      publication: "publication",
+      project: "project",
+      program: "program",
+      collection: "collection",
+    },
+    typeDescriptions: {
+      concept: "Definitions and durable terms",
+      publication: "Research notes and articles",
+      researchField: "Active research territories",
+      technology: "Protocols, tools and standards",
+      method: "Repeatable studio procedures",
+      framework: "Operational models",
+      project: "Public and client work",
+      program: "Runtimes and systems",
+      collection: "Curated neighborhoods",
+    },
+  },
+  fr: {
+    platformEyebrow: "PLATEFORME DE CONNAISSANCE",
+    searchButton: "Rechercher le graphe",
+    summaryLabel: "Connaissances adressables",
+    summaryValue: "enregistrements connectés",
+    graphIndexEyebrow: "INDEX DU GRAPHE",
+    graphIndexTitle: "Parcourez les enregistrements connectés.",
+    graphIndexCopy: "Chaque entrée conserve son type, son état, son contexte et sa route dans le système de connaissance élargi.",
+    graphIndexLabel: "Index du graphe",
+    overviewLabel: "Aperçu du graphe de connaissance",
+    openPage: "Ouvrir la page",
+    recordSingular: "enregistrement",
+    recordPlural: "enregistrements",
+    typeRailLabel: "Types d’enregistrements de connaissance",
+    knowledgeIndexLabel: "Index des connaissances",
+    conceptsLabel: "Concepts",
+    emptyMeta: "index vide",
+    emptyTitle: "Aucune page publique pour le moment.",
+    emptyCopy: "Ce hub est prêt à accueillir des pages publiques.",
+    typeLabels: {
+      concept: "concept",
+      method: "méthode",
+      framework: "cadre",
+      technology: "technologie",
+      researchField: "domaine de recherche",
+      publication: "publication",
+      project: "projet",
+      program: "programme",
+      collection: "collection",
+    },
+    typeDescriptions: {
+      concept: "Définitions et termes durables",
+      publication: "Notes de recherche et articles",
+      researchField: "Territoires de recherche actifs",
+      technology: "Protocoles, outils et standards",
+      method: "Procédures de studio répétables",
+      framework: "Modèles opérationnels",
+      project: "Travaux publics et clients",
+      program: "Moteurs et systèmes",
+      collection: "Ensembles éditoriaux",
+    },
+  },
+};
+
+const hubMetadata = (
+  title: string,
+  description: string,
+  route: string,
+  locale: HubLocale,
+  alternates?: Array<{ hreflang: string; href: string }>,
+) => ({
   title: `${title} | Electronic Artefacts`,
   description,
-  canonicalUrl: `https://electronicartefacts.com${route}`,
-  language: defaultLocale,
-  locale: localeConfig(defaultLocale).ogLocale,
-  alternates: [
-    { hreflang: defaultLocale, href: `https://electronicartefacts.com${route}` },
-    { hreflang: "x-default", href: `https://electronicartefacts.com${route}` },
+  canonicalUrl: `${origin}${route}`,
+  language: locale,
+  locale: localeConfig(locale).ogLocale,
+  alternates: alternates || [
+    { hreflang: locale, href: `${origin}${route}` },
+    { hreflang: "x-default", href: `${origin}${route}` },
   ],
   robots: "index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1",
-  image: "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-search.jpg",
+  image: `${origin}/assets/media/projects/electronic-artefacts/electronic-artefacts-search.jpg`,
   imageAlt: "Electronic Artefacts knowledge platform",
   ogType: "website" as const,
   keywords: ["Electronic Artefacts", title, "knowledge graph", "creative technology", "research"],
   modifiedAt: "2026-06-24",
 });
 
-const typeLabel = (type: string): string => type.replace(/([a-z])([A-Z])/g, "$1 $2").toLowerCase();
+const typeLabel = (type: string, locale: HubLocale = defaultLocale): string =>
+  hubCopy[locale].typeLabels[type as Entity["type"]] || type.replace(/([a-z])([A-Z])/g, "$1 $2").toLowerCase();
 const typeSlug = (type: string): string => type.replace(/([a-z])([A-Z])/g, "$1-$2").toLowerCase();
 const entitySummary = (entity: Entity): string => entity.definition || entity.description || entity.abstract;
 const hubTags = (entity: Entity, limit: number): string[] =>
@@ -140,13 +261,14 @@ const hubTags = (entity: Entity, limit: number): string[] =>
     .filter((value, index, values): value is string => Boolean(value) && values.indexOf(value) === index)
     .slice(0, limit);
 
-const hubCard = (entity: Entity, index: number, options: { lead?: boolean } = {}) => {
+const hubCard = (entity: Entity, index: number, locale: HubLocale, options: { lead?: boolean } = {}) => {
   const route = routeForEntity(entity);
-  const label = typeLabel(entity.type);
+  const label = typeLabel(entity.type, locale);
+  const copy = hubCopy[locale];
   const tags = hubTags(entity, options.lead ? 5 : 3);
   return `
     <article class="panel generated-hub-card generated-hub-card--${escapeHtml(typeSlug(entity.type))}${options.lead ? " generated-hub-card--lead" : ""}" data-hub-card-type="${escapeHtml(entity.type)}">
-      <a class="project-card__overlay-link generated-hub-card__overlay" href="${route}" aria-label="Open ${escapeHtml(entity.title)}"></a>
+      <a class="project-card__overlay-link generated-hub-card__overlay" href="${route}" aria-label="${escapeHtml(copy.openPage)} ${escapeHtml(entity.title)}"></a>
       <div class="generated-hub-card__top">
         <span class="generated-hub-card__number">${String(index + 1).padStart(2, "0")}</span>
         <p class="card__meta">${escapeHtml(label)}</p>
@@ -154,13 +276,14 @@ const hubCard = (entity: Entity, index: number, options: { lead?: boolean } = {}
       <h2 class="card__title"><a href="${route}">${escapeHtml(entity.title)}</a></h2>
       <p class="card__copy">${escapeHtml(entitySummary(entity))}</p>
       ${tags.length ? `<div class="tag-cluster tag-cluster--compact generated-hub-card__tags">${tags.map((tag) => `<span class="chip taxonomy-pill">${escapeHtml(tag)}</span>`).join("")}</div>` : ""}
-      <div class="link-row"><a class="tag" href="${route}">Open page</a></div>
+      <div class="link-row"><a class="tag" href="${route}">${escapeHtml(copy.openPage)}</a></div>
     </article>`;
 };
 
-const hubCards = (items: Entity[]) => {
+const hubCards = (items: Entity[], locale: HubLocale) => {
+  const copy = hubCopy[locale];
   if (!items.length) {
-    return `<div class="generated-hub-layout"><article class="panel generated-hub-card generated-hub-card--lead"><p class="card__meta">empty index</p><h2 class="card__title">No public pages yet.</h2><p class="card__copy">This hub is ready to receive public pages.</p></article></div>`;
+    return `<div class="generated-hub-layout"><article class="panel generated-hub-card generated-hub-card--lead"><p class="card__meta">${escapeHtml(copy.emptyMeta)}</p><h2 class="card__title">${escapeHtml(copy.emptyTitle)}</h2><p class="card__copy">${escapeHtml(copy.emptyCopy)}</p></article></div>`;
   }
 
   const lead = items[0]!;
@@ -172,60 +295,58 @@ const hubCards = (items: Entity[]) => {
 
   return `
     <div class="generated-hub-layout">
-      ${hubCard(lead, 0, { lead: true })}
+      ${hubCard(lead, 0, locale, { lead: true })}
       <div class="generated-hub-stack">
         <div class="generated-hub-stack__head">
-          <p class="card__meta">Graph index</p>
-          <strong>${items.length} ${items.length === 1 ? "record" : "records"}</strong>
+          <p class="card__meta">${escapeHtml(copy.graphIndexLabel)}</p>
+          <strong>${items.length} ${items.length === 1 ? escapeHtml(copy.recordSingular) : escapeHtml(copy.recordPlural)}</strong>
         </div>
-        <nav class="generated-hub-rail" aria-label="Knowledge record types">
+        <nav class="generated-hub-rail" aria-label="${escapeHtml(copy.typeRailLabel)}">
           ${groups
             .map(
               ([type, count]) => `
                 <a class="generated-hub-rail__item" href="${routeForEntity(items.find((entity) => entity.type === type) || lead)}">
                   <span>${String(count).padStart(2, "0")}</span>
-                  <strong>${escapeHtml(typeLabel(type))}</strong>
+                  <strong>${escapeHtml(typeLabel(type, locale))}</strong>
                 </a>`,
             )
             .join("")}
         </nav>
         <div class="generated-hub-grid">
-          ${(secondary.length ? secondary : items).map((entity, index) => hubCard(entity, secondary.length ? index + 1 : index)).join("")}
+          ${(secondary.length ? secondary : items).map((entity, index) => hubCard(entity, secondary.length ? index + 1 : index, locale)).join("")}
         </div>
       </div>
     </div>`;
 };
 
-const writeHub = async (route: string, title: string, description: string, items: Entity[]) => {
+const writeHub = async (route: string, title: string, description: string, items: Entity[], locale: HubLocale) => {
+  const copy = hubCopy[locale];
   const groups = Object.entries(items.reduce<Record<string, number>>((acc, entity) => {
     acc[entity.type] = (acc[entity.type] || 0) + 1;
     return acc;
   }, {}));
-  const secondaryAction = route === "/knowledge/" ? "/knowledge/concepts/" : "/knowledge/";
-  const secondaryLabel = route === "/knowledge/" ? "Concepts" : "Knowledge index";
-  const typeDescriptions: Record<string, string> = {
-    concept: "Definitions and durable terms",
-    publication: "Research notes and articles",
-    researchField: "Active research territories",
-    technology: "Protocols, tools and standards",
-    method: "Repeatable studio procedures",
-    framework: "Operational models",
-    project: "Public and client work",
-    program: "Runtimes and systems",
-    collection: "Curated neighborhoods",
-  };
+  const knowledgeRoot = locale === "fr" ? "/fr/knowledge/" : "/knowledge/";
+  const secondaryAction = route === knowledgeRoot ? `${knowledgeRoot}concepts/` : knowledgeRoot;
+  const secondaryLabel = route === knowledgeRoot ? copy.conceptsLabel : copy.knowledgeIndexLabel;
+  const routeAlternates = i18nAlternates[route];
+  const alternates = routeAlternates
+    ? [
+        ...Object.entries(routeAlternates).map(([hreflang, href]) => ({ hreflang, href: `${origin}${href}` })),
+        ...(routeAlternates.en ? [{ hreflang: "x-default", href: `${origin}${routeAlternates.en}` }] : []),
+      ]
+    : undefined;
   const typeOverview = groups
     .slice(0, 6)
     .map(([type, count], index) => {
       const entity = items.find((candidate) => candidate.type === type);
       const href = entity ? routeForEntity(entity) : route;
-      const label = typeLabel(type);
-      const description = typeDescriptions[type] || "Connected public records";
+      const label = typeLabel(type, locale);
+      const description = copy.typeDescriptions[type as Entity["type"]] || "Connected public records";
       return `
         <a class="knowledge-map-card knowledge-map-card--${escapeHtml(typeSlug(type))}" href="${href}">
           <span class="knowledge-map-card__index">${String(index + 1).padStart(2, "0")}</span>
           <strong>${escapeHtml(label)}</strong>
-          <em>${count} ${count === 1 ? "record" : "records"}</em>
+          <em>${count} ${count === 1 ? escapeHtml(copy.recordSingular) : escapeHtml(copy.recordPlural)}</em>
           <small>${escapeHtml(description)}</small>
         </a>`;
     })
@@ -234,29 +355,29 @@ const writeHub = async (route: string, title: string, description: string, items
     <section class="zone-card hero generated-hub-hero generated-hub-hero--${escapeHtml(typeSlug(title))} intent-hero intent-hero--knowledge">
       <div class="intent-hero__grid generated-hub-hero__intro">
         <div class="section-head intent-hero__copy">
-          <p class="eyebrow">KNOWLEDGE PLATFORM</p>
+          <p class="eyebrow">${escapeHtml(copy.platformEyebrow)}</p>
           <h1 class="display-title">${escapeHtml(title)}</h1>
           <p class="lede">${escapeHtml(description)}</p>
           <div class="button-row button-row--compact generated-hub-hero__actions">
-            <a class="button button--primary" href="/search/">Search graph</a>
-            <a class="button button--secondary" href="${secondaryAction}">${secondaryLabel}</a>
+            <a class="button button--primary" href="${locale === "fr" ? "/fr/search.html" : "/search/"}">${escapeHtml(copy.searchButton)}</a>
+            <a class="button button--secondary" href="${secondaryAction}">${escapeHtml(secondaryLabel)}</a>
           </div>
         </div>
-        <div class="intent-hero__stage knowledge-map-panel" data-intent-stage aria-label="Knowledge graph overview">
+        <div class="intent-hero__stage knowledge-map-panel" data-intent-stage aria-label="${escapeHtml(copy.overviewLabel)}">
           <div class="knowledge-map-panel__summary" data-depth="1.05">
-            <p class="card__meta">Addressable knowledge</p>
+            <p class="card__meta">${escapeHtml(copy.summaryLabel)}</p>
             <strong>${items.length}</strong>
-            <span>connected records</span>
+            <span>${escapeHtml(copy.summaryValue)}</span>
           </div>
-          <nav class="knowledge-map-panel__types" aria-label="${escapeHtml(title)} record types">
+          <nav class="knowledge-map-panel__types" aria-label="${escapeHtml(copy.typeRailLabel)}">
             ${typeOverview}
           </nav>
         </div>
       </div>
     </section>
     <section class="zone-card hero generated-hub-index">
-      <div class="section-head"><p class="eyebrow">GRAPH INDEX</p><h2>Browse the connected records.</h2><p class="lede">Every entry keeps its type, status, context and route into the wider knowledge system.</p></div>
-${hubCards(items).trimStart()}
+      <div class="section-head"><p class="eyebrow">${escapeHtml(copy.graphIndexEyebrow)}</p><h2>${escapeHtml(copy.graphIndexTitle)}</h2><p class="lede">${escapeHtml(copy.graphIndexCopy)}</p></div>
+${hubCards(items, locale).trimStart()}
     </section>`;
   const url = `https://electronicartefacts.com${route}`;
   const itemListId = `${url}#itemlist`;
@@ -269,7 +390,7 @@ ${hubCards(items).trimStart()}
         url,
         name: title,
         description,
-        inLanguage: defaultLocale,
+        inLanguage: locale,
         isPartOf: { "@id": "https://electronicartefacts.com/#website" },
         publisher: { "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/" },
         mainEntity: { "@id": itemListId },
@@ -292,7 +413,7 @@ ${hubCards(items).trimStart()}
     ],
   };
   await writeText(routeToFile(rootDir, route), renderLayout({
-    metadata: hubMetadata(title, description, route),
+    metadata: hubMetadata(title, description, route, locale, alternates),
     body,
     header,
     footer,
@@ -301,20 +422,33 @@ ${hubCards(items).trimStart()}
   }));
 };
 
-await writeHub("/knowledge/", "Knowledge", "Canonical concepts, methods, frameworks, technologies, research fields and publications in the Electronic Artefacts graph.", publicDefaultLocaleEntities.filter((entity) => ["concept", "method", "framework", "technology", "researchField", "publication"].includes(entity.type)));
-await writeHub("/knowledge/concepts/", "Concepts", "Canonical definitions maintained by Electronic Artefacts and connected to implementations and evidence.", publicDefaultLocaleEntities.filter((entity) => entity.type === "concept"));
-await writeHub("/knowledge/methods/", "Methods", "Repeatable procedures used by Electronic Artefacts for research, production, preservation and system design.", publicDefaultLocaleEntities.filter((entity) => entity.type === "method"));
-await writeHub("/knowledge/frameworks/", "Frameworks", "Structured conceptual and operational models maintained inside the Electronic Artefacts knowledge graph.", publicDefaultLocaleEntities.filter((entity) => entity.type === "framework"));
-await writeHub("/knowledge/technologies/", "Technologies", "Languages, protocols, formats, platforms and technical approaches referenced by the Electronic Artefacts knowledge system.", publicDefaultLocaleEntities.filter((entity) => entity.type === "technology"));
-await writeHub("/publications/", "Publications", "Research notes and authored records published by Electronic Artefacts.", publicDefaultLocaleEntities.filter((entity) => entity.type === "publication"));
-await writeHub("/archive/collections/", "Collections", "Curated neighborhoods that group Electronic Artefacts records by editorial thesis, provenance and research use.", publicDefaultLocaleEntities.filter((entity) => entity.type === "collection"));
+const publicFrenchEntities = publicEntities.filter((entity) => entity.locale === "fr");
+
+await writeHub("/knowledge/", "Knowledge", "Canonical concepts, methods, frameworks, technologies, research fields and publications in the Electronic Artefacts graph.", publicDefaultLocaleEntities.filter((entity) => ["concept", "method", "framework", "technology", "researchField", "publication"].includes(entity.type)), "en");
+await writeHub("/knowledge/concepts/", "Concepts", "Canonical definitions maintained by Electronic Artefacts and connected to implementations and evidence.", publicDefaultLocaleEntities.filter((entity) => entity.type === "concept"), "en");
+await writeHub("/knowledge/methods/", "Methods", "Repeatable procedures used by Electronic Artefacts for research, production, preservation and system design.", publicDefaultLocaleEntities.filter((entity) => entity.type === "method"), "en");
+await writeHub("/knowledge/frameworks/", "Frameworks", "Structured conceptual and operational models maintained inside the Electronic Artefacts knowledge graph.", publicDefaultLocaleEntities.filter((entity) => entity.type === "framework"), "en");
+await writeHub("/knowledge/technologies/", "Technologies", "Languages, protocols, formats, platforms and technical approaches referenced by the Electronic Artefacts knowledge system.", publicDefaultLocaleEntities.filter((entity) => entity.type === "technology"), "en");
+await writeHub("/publications/", "Publications", "Research notes and authored records published by Electronic Artefacts.", publicDefaultLocaleEntities.filter((entity) => entity.type === "publication"), "en");
+await writeHub("/archive/collections/", "Collections", "Curated neighborhoods that group Electronic Artefacts records by editorial thesis, provenance and research use.", publicDefaultLocaleEntities.filter((entity) => entity.type === "collection"), "en");
+
+await writeHub("/fr/knowledge/", "Connaissances", "Concepts, méthodes, cadres, technologies, domaines de recherche et publications canoniques du graphe Electronic Artefacts.", publicFrenchEntities.filter((entity) => ["concept", "method", "framework", "technology", "researchField", "publication"].includes(entity.type)), "fr");
+await writeHub("/fr/knowledge/concepts/", "Concepts", "Définitions canoniques maintenues par Electronic Artefacts et reliées aux implémentations et aux preuves.", publicFrenchEntities.filter((entity) => entity.type === "concept"), "fr");
+await writeHub("/fr/knowledge/methods/", "Méthodes", "Procédures reproductibles utilisées par Electronic Artefacts pour la recherche, la production, la préservation et la conception de systèmes.", publicFrenchEntities.filter((entity) => entity.type === "method"), "fr");
+await writeHub("/fr/knowledge/frameworks/", "Cadres", "Modèles conceptuels et opérationnels structurés maintenus dans le graphe de connaissance Electronic Artefacts.", publicFrenchEntities.filter((entity) => entity.type === "framework"), "fr");
+await writeHub("/fr/knowledge/technologies/", "Technologies", "Langages, protocoles, formats, plateformes et approches techniques référencés dans le système de connaissance Electronic Artefacts.", publicFrenchEntities.filter((entity) => entity.type === "technology"), "fr");
+await writeHub("/fr/publications/", "Publications", "Notes de recherche et enregistrements éditoriaux publiés par Electronic Artefacts.", publicFrenchEntities.filter((entity) => entity.type === "publication"), "fr");
 
 const searchDocuments = buildSearchDocuments(publicEntities, relations, routes);
 await writeJson(path.join(rootDir, "search/documents.json"), searchDocuments);
 await writeJson(path.join(rootDir, "search/index.json"), buildSearchIndex(searchDocuments));
 const searchBody = `<section class="zone-card hero"><div class="section-head"><p class="eyebrow">KNOWLEDGE SEARCH</p><h1 class="display-title">Search the public graph.</h1><p class="lede">Find concepts, research fields, programs, projects, publications and organizations.</p></div><label class="card__meta" for="generated-search">Query</label><input id="generated-search" class="search-input" type="search" data-generated-search-input placeholder="Graph Runtime, VASTE, Vestiges…"></section><section class="zone-card hero"><div class="stack" data-generated-search-results></div></section><script type="module" src="/assets/js/search/client.js"></script>`;
+const searchAlternates = i18nAlternates["/search/"];
 await writeText(routeToFile(rootDir, "/search/"), renderLayout({
-  metadata: { ...hubMetadata("Search", "Search the public Electronic Artefacts knowledge graph across concepts, projects, programs, publications and research fields.", "/search/"), robots: "noindex,follow" },
+  metadata: { ...hubMetadata("Search", "Search the public Electronic Artefacts knowledge graph across concepts, projects, programs, publications and research fields.", "/search/", defaultLocale, searchAlternates ? [
+    ...Object.entries(searchAlternates).map(([hreflang, href]) => ({ hreflang, href: `${origin}${href}` })),
+    ...(searchAlternates.en ? [{ hreflang: "x-default", href: `${origin}${searchAlternates.en}` }] : []),
+  ] : undefined), robots: "noindex,follow" },
   body: searchBody,
   header,
   footer,

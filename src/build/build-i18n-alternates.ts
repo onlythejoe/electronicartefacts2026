@@ -32,13 +32,14 @@ const staticRoutes = ([
   { route: "/agence-developpement.html", french: "/fr/agence-developpement.html" },
   { route: "/palimpsests.html", french: "/fr/palimpsests.html" },
   { route: "/vaste.html", french: "/fr/vaste.html" },
-  "/knowledge/",
-  "/knowledge/concepts/",
-  "/knowledge/methods/",
-  "/knowledge/frameworks/",
-  "/knowledge/technologies/",
+  { route: "/knowledge/", french: "/fr/knowledge/" },
+  { route: "/knowledge/concepts/", french: "/fr/knowledge/concepts/" },
+  { route: "/knowledge/methods/", french: "/fr/knowledge/methods/" },
+  { route: "/knowledge/frameworks/", french: "/fr/knowledge/frameworks/" },
+  { route: "/knowledge/technologies/", french: "/fr/knowledge/technologies/" },
   "/archive/collections/",
-  "/publications/",
+  { route: "/publications/", french: "/fr/publications/" },
+  { route: "/search/", french: "/fr/search.html" },
 ] as Array<string | { route: string; french?: string }>)
   .map((item) => typeof item === "string" ? { route: item } : item);
 

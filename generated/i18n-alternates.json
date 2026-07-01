@@ -146,6 +146,14 @@
     "en": "/entity.html",
     "fr": "/fr/entity.html"
   },
+  "/fr/knowledge/": {
+    "en": "/knowledge/",
+    "fr": "/fr/knowledge/"
+  },
+  "/fr/knowledge/concepts/": {
+    "en": "/knowledge/concepts/",
+    "fr": "/fr/knowledge/concepts/"
+  },
   "/fr/knowledge/concepts/ai-agent/": {
     "en": "/knowledge/concepts/ai-agent/",
     "fr": "/fr/knowledge/concepts/ai-agent/"
@@ -290,9 +298,21 @@
     "en": "/knowledge/concepts/web-audio/",
     "fr": "/fr/knowledge/concepts/web-audio/"
   },
+  "/fr/knowledge/frameworks/": {
+    "en": "/knowledge/frameworks/",
+    "fr": "/fr/knowledge/frameworks/"
+  },
   "/fr/knowledge/frameworks/electronic-artefacts-lightweight-template/": {
     "fr": "/fr/knowledge/frameworks/electronic-artefacts-lightweight-template/",
     "en": "/knowledge/frameworks/electronic-artefacts-lightweight-template/"
+  },
+  "/fr/knowledge/methods/": {
+    "en": "/knowledge/methods/",
+    "fr": "/fr/knowledge/methods/"
+  },
+  "/fr/knowledge/technologies/": {
+    "en": "/knowledge/technologies/",
+    "fr": "/fr/knowledge/technologies/"
   },
   "/fr/knowledge/technologies/activitypub/": {
     "fr": "/fr/knowledge/technologies/activitypub/",
@@ -413,6 +433,10 @@
   "/fr/projects/vestiges/": {
     "fr": "/fr/projects/vestiges/",
     "en": "/projects/vestiges/"
+  },
+  "/fr/publications/": {
+    "en": "/publications/",
+    "fr": "/fr/publications/"
   },
   "/fr/publications/ai-agents-vs-ai-workflows/": {
     "fr": "/fr/publications/ai-agents-vs-ai-workflows/",
@@ -583,7 +607,7 @@
     "en": "/research/fields/runtime-theory/"
   },
   "/fr/search.html": {
-    "en": "/search.html",
+    "en": "/search/",
     "fr": "/fr/search.html"
   },
   "/fr/services.html": {
@@ -603,10 +627,12 @@
     "fr": "/fr/"
   },
   "/knowledge/": {
-    "en": "/knowledge/"
+    "en": "/knowledge/",
+    "fr": "/fr/knowledge/"
   },
   "/knowledge/concepts/": {
-    "en": "/knowledge/concepts/"
+    "en": "/knowledge/concepts/",
+    "fr": "/fr/knowledge/concepts/"
   },
   "/knowledge/concepts/ai-agent/": {
     "en": "/knowledge/concepts/ai-agent/",
@@ -753,17 +779,20 @@
     "fr": "/fr/knowledge/concepts/web-audio/"
   },
   "/knowledge/frameworks/": {
-    "en": "/knowledge/frameworks/"
+    "en": "/knowledge/frameworks/",
+    "fr": "/fr/knowledge/frameworks/"
   },
   "/knowledge/frameworks/electronic-artefacts-lightweight-template/": {
     "fr": "/fr/knowledge/frameworks/electronic-artefacts-lightweight-template/",
     "en": "/knowledge/frameworks/electronic-artefacts-lightweight-template/"
   },
   "/knowledge/methods/": {
-    "en": "/knowledge/methods/"
+    "en": "/knowledge/methods/",
+    "fr": "/fr/knowledge/methods/"
   },
   "/knowledge/technologies/": {
-    "en": "/knowledge/technologies/"
+    "en": "/knowledge/technologies/",
+    "fr": "/fr/knowledge/technologies/"
   },
   "/knowledge/technologies/activitypub/": {
     "fr": "/fr/knowledge/technologies/activitypub/",
@@ -886,7 +915,8 @@
     "en": "/projects/vestiges/"
   },
   "/publications/": {
-    "en": "/publications/"
+    "en": "/publications/",
+    "fr": "/fr/publications/"
   },
   "/publications/ai-agents-vs-ai-workflows/": {
     "fr": "/fr/publications/ai-agents-vs-ai-workflows/",
@@ -1058,6 +1088,10 @@
   },
   "/search.html": {
     "en": "/search.html",
+    "fr": "/fr/search.html"
+  },
+  "/search/": {
+    "en": "/search/",
     "fr": "/fr/search.html"
   },
   "/services.html": {
