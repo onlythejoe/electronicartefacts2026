@@ -6,8 +6,8 @@
     "canonical": "css-fonts"
   },
   "title": "CSS Fonts",
-  "abstract": "CSS Fonts est présenté comme une technologie de référence pour comprendre son rôle dans l'écosystème Electronic Artefacts, ses usages, ses limites et sa place dans les systèmes numériques contemporains.",
-  "description": "CSS Fonts est présenté comme une technologie de référence pour comprendre son rôle dans l'écosystème Electronic Artefacts, ses usages, ses limites et sa place dans les systèmes numériques contemporains.",
+  "abstract": "CSS Fonts définit la sélection des polices, les fontes web et le comportement typographique des interfaces et documents numériques.",
+  "description": "CSS Fonts définit la sélection des polices, les fontes web et le comportement typographique des interfaces et documents numériques.",
   "locale": "fr",
   "visibility": "public",
   "publicationClass": "canonical",
@@ -45,13 +45,13 @@
     }
   ],
   "category": "platform",
-  "roleInEcosystem": "CSS Fonts sert de repère technique pour évaluer le sujet \"CSS Fonts\" dans le graphe public d'Electronic Artefacts, ses usages possibles et ses conséquences dans l'écosystème Electronic Artefacts.",
+  "roleInEcosystem": "CSS Fonts soutient une typographie web durable pour les articles longs, les pages de connaissance et les systèmes de lecture accessibles.",
   "officialUrl": "https://www.w3.org/TR/css-fonts-4/",
-  "bodyHtml": "<h2 id=\"role\">Rôle</h2>\n<p>CSS Fonts est documenté comme technologie de référence pour le sujet “CSS Fonts” dans le graphe public d’Electronic Artefacts.</p>\n<h2 id=\"usage\">Usage</h2>\n<p>Cette fiche aide à situer la technologie dans l’écosystème Electronic Artefacts : ce qu’elle permet, quand elle devient pertinente et comment elle dialogue avec les autres composants du graphe.</p>\n<h2 id=\"points-d-attention\">Points d’attention</h2>\n<ul>\n<li>Les usages sont décrits en français sans masquer les noms propres, acronymes ou standards techniques.</li>\n<li>Les limites restent contextualisées par rapport aux projets, aux publications et aux contraintes d’implémentation.</li>\n</ul>\n<h2 id=\"references\">Références</h2>\n<p>Les sources principales restent disponibles dans le bloc de références de la fiche.</p>\n",
+  "bodyHtml": "<h2 id=\"role\">Rôle</h2>\n<p>CSS Fonts définit la sélection des polices, les fontes web et le comportement typographique des interfaces et documents numériques.</p>\n<h2 id=\"usage\">Usage</h2>\n<p>CSS Fonts soutient une typographie web durable pour les articles longs, les pages de connaissance et les systèmes de lecture accessibles.</p>\n<h2 id=\"points-d-attention\">Points d’attention</h2>\n<ul>\n<li>Les usages dépendent des contraintes du projet et du niveau d’interopérabilité recherché.</li>\n<li>Les limites doivent être évaluées au regard des standards, des implémentations disponibles et de leur maturité.</li>\n</ul>\n<h2 id=\"references\">Références</h2>\n<p>Les références principales sont indiquées ci-dessous.</p>\n",
   "headings": [
     "Rôle",
     "Usage",
-    "Points d'attention",
+    "Points d’attention",
     "Références"
   ],
   "headingItems": [
@@ -67,7 +67,7 @@
     },
     {
       "level": 2,
-      "title": "Points d'attention",
+      "title": "Points d’attention",
       "id": "points-d-attention"
     },
     {

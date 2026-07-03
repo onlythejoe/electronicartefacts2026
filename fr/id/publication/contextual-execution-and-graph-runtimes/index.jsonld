@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/publications/contextual-execution-and-graph-runtimes/#webpage",
       "url": "https://electronicartefacts.com/fr/publications/contextual-execution-and-graph-runtimes/",
       "name": "Exécution contextuelle et runtimes de graphe",
-      "description": "Exécution contextuelle et runtimes de graphe propose une synthèse claire en français sur le sujet \"Exécution contextuelle et runtimes de graphe\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
+      "description": "Une lecture de l’exécution contextuelle comme principe de runtime, lorsque l’identité, les relations, les permissions et l’état déterminent les opérations possibles.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
@@ -35,8 +35,8 @@
       "identifier": "ea:publication:contextual-execution-and-graph-runtimes-fr",
       "name": "Exécution contextuelle et runtimes de graphe",
       "headline": "Exécution contextuelle et runtimes de graphe",
-      "abstract": "Exécution contextuelle et runtimes de graphe propose une synthèse claire en français sur le sujet \"Exécution contextuelle et runtimes de graphe\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
-      "description": "Exécution contextuelle et runtimes de graphe propose une synthèse claire en français sur le sujet \"Exécution contextuelle et runtimes de graphe\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
+      "abstract": "Une lecture de l’exécution contextuelle comme principe de runtime, lorsque l’identité, les relations, les permissions et l’état déterminent les opérations possibles.",
+      "description": "Une lecture de l’exécution contextuelle comme principe de runtime, lorsque l’identité, les relations, les permissions et l’état déterminent les opérations possibles.",
       "url": "https://electronicartefacts.com/fr/publications/contextual-execution-and-graph-runtimes/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/publications/contextual-execution-and-graph-runtimes/#webpage"
@@ -77,7 +77,7 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 141,
+      "wordCount": 115,
       "citation": [
         "Electronic Artefacts. \"Exécution contextuelle et runtimes de graphe\". Article technique, version 1.0.0, 2026."
       ],

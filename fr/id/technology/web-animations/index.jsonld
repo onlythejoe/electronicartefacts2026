@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/knowledge/technologies/web-animations/#webpage",
       "url": "https://electronicartefacts.com/fr/knowledge/technologies/web-animations/",
       "name": "Web Animations",
-      "description": "Web Animations est présenté comme une technologie de référence pour comprendre son rôle dans l'écosystème Electronic Artefacts, ses usages, ses limites et sa place dans les systèmes numériques contemporains.",
+      "description": "Web Animations définit un modèle de temporisation et d’animation pour les changements de présentation des pages web, ainsi que les interfaces de programmation associées.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
@@ -34,8 +34,8 @@
       "@id": "https://electronicartefacts.com/fr/id/technology/web-animations/",
       "identifier": "ea:technology:web-animations-fr",
       "name": "Web Animations",
-      "abstract": "Web Animations est présenté comme une technologie de référence pour comprendre son rôle dans l'écosystème Electronic Artefacts, ses usages, ses limites et sa place dans les systèmes numériques contemporains.",
-      "description": "Web Animations est présenté comme une technologie de référence pour comprendre son rôle dans l'écosystème Electronic Artefacts, ses usages, ses limites et sa place dans les systèmes numériques contemporains.",
+      "abstract": "Web Animations définit un modèle de temporisation et d’animation pour les changements de présentation des pages web, ainsi que les interfaces de programmation associées.",
+      "description": "Web Animations définit un modèle de temporisation et d’animation pour les changements de présentation des pages web, ainsi que les interfaces de programmation associées.",
       "url": "https://electronicartefacts.com/fr/knowledge/technologies/web-animations/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/knowledge/technologies/web-animations/#webpage"
@@ -73,7 +73,7 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 95,
+      "wordCount": 85,
       "citation": [
         {
           "@type": "CreativeWork",

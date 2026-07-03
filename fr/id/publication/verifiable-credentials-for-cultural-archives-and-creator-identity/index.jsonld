@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/publications/verifiable-credentials-for-cultural-archives-and-creator-identity/#webpage",
       "url": "https://electronicartefacts.com/fr/publications/verifiable-credentials-for-cultural-archives-and-creator-identity/",
       "name": "Identifiants vérifiables pour les archives culturelles et l’identité des créateurs",
-      "description": "Identifiants vérifiables pour les archives culturelles et l’identité des créateurs propose une synthèse claire en français sur le sujet \"Identifiants vérifiables pour les archives culturelles et l’identité des créateurs\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
+      "description": "Une introduction aux Verifiable Credentials du W3C appliqués à l’identité des créateurs, aux archives culturelles, à la provenance, aux droits, à la confidentialité et à la confiance lisible par les machines.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
@@ -35,8 +35,8 @@
       "identifier": "ea:publication:verifiable-credentials-for-cultural-archives-and-creator-identity-fr",
       "name": "Identifiants vérifiables pour les archives culturelles et l’identité des créateurs",
       "headline": "Identifiants vérifiables pour les archives culturelles et l’identité des créateurs",
-      "abstract": "Identifiants vérifiables pour les archives culturelles et l’identité des créateurs propose une synthèse claire en français sur le sujet \"Identifiants vérifiables pour les archives culturelles et l’identité des créateurs\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
-      "description": "Identifiants vérifiables pour les archives culturelles et l’identité des créateurs propose une synthèse claire en français sur le sujet \"Identifiants vérifiables pour les archives culturelles et l’identité des créateurs\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
+      "abstract": "Une introduction aux Verifiable Credentials du W3C appliqués à l’identité des créateurs, aux archives culturelles, à la provenance, aux droits, à la confidentialité et à la confiance lisible par les machines.",
+      "description": "Une introduction aux Verifiable Credentials du W3C appliqués à l’identité des créateurs, aux archives culturelles, à la provenance, aux droits, à la confidentialité et à la confiance lisible par les machines.",
       "url": "https://electronicartefacts.com/fr/publications/verifiable-credentials-for-cultural-archives-and-creator-identity/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/publications/verifiable-credentials-for-cultural-archives-and-creator-identity/#webpage"
@@ -77,7 +77,7 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 151,
+      "wordCount": 141,
       "citation": [
         "Electronic Artefacts. \"Identifiants vérifiables pour les archives culturelles et l’identité des créateurs\". Article technique, version 1.0.0, 2026.",
         {

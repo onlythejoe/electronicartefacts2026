@@ -5,12 +5,10 @@ slug:
   canonical: foundational-lineage-001
 title: "Foundational Lineage #001"
 subtitle: Recherche Note
-abstract: "Foundational Lineage #001 propose une synthèse claire en français sur le sujet
-  \"Foundational Lineage #001\" dans le graphe public d'Electronic Artefacts, avec un angle utile
-  pour la recherche, la conception et la publication de connaissances numériques."
-description: "Foundational Lineage #001 propose une synthèse claire en français sur le sujet
-  \"Foundational Lineage #001\" dans le graphe public d'Electronic Artefacts, avec un angle utile
-  pour la recherche, la conception et la publication de connaissances numériques."
+abstract: Une note sur les premiers travaux d’architecture, de systèmes de communication et de
+  documentation qui ont conduit à Electronic Artefacts, Runtime Theory et VASTE.
+description: Une note sur les premiers travaux d’architecture, de systèmes de communication et de
+  documentation qui ont conduit à Electronic Artefacts, Runtime Theory et VASTE.
 locale: fr
 visibility: public
 publicationClass: published
@@ -30,10 +28,10 @@ subjects:
   - id: ea:researchField:runtime-theory
   - id: ea:program:vaste
 claims:
-  - "Foundational Lineage #001 doit être lisible comme une synthèse française autonome, sans phrases
-    hybrides héritées de l'anglais."
-  - Les liens avec les notions, projets et technologies du graphe renforcent la recherche, la
-    navigation et la citation.
+  - Electronic Artefacts s’est construit autour d’une même attention portée à l’architecture, aux
+    systèmes de communication, à la documentation industrielle, à la signalétique et aux taxonomies.
+  - Cette filiation relie l’architecture de l’information, les runtimes et les structures publiques
+    de connaissance.
 evidence:
   - id: ea:program:vaste
 citation:
@@ -49,24 +47,24 @@ disciplines: []
 
 ## Question
 
-Foundational Lineage #001 examine le sujet "Foundational Lineage #001" dans le graphe public d'Electronic Artefacts. La fiche donne une entrée française stable, utilisable pour lire le sujet et relier ses sources au reste du graphe.
+Une note sur les premiers travaux d’architecture, de systèmes de communication et de documentation qui ont conduit à Electronic Artefacts, Runtime Theory et VASTE.
 
 ## Contexte
 
-Le sujet est abordé par ses relations avec les concepts, projets et technologies concernés, afin de rendre son contexte de conception lisible.
+Electronic Artefacts s’est construit autour d’une même attention portée à l’architecture, aux systèmes de communication, à la documentation industrielle, à la signalétique et aux taxonomies. Cette filiation relie l’architecture de l’information, les runtimes et les structures publiques de connaissance.
 
 ## Observation
 
-La page décrit les usages, contraintes et choix de structure qui permettent d'appliquer le sujet dans des situations concrètes.
+L’analyse en précise les usages, les contraintes et les principaux arbitrages techniques.
 
 ## Interprétation
 
-Les sources, relations et éléments de contexte restent attachés à la fiche pour distinguer synthèse éditoriale, preuves et références.
+Les arguments s’appuient sur les sources et les notions connexes citées dans l’article.
 
 ## Limites
 
-Les limites sont formulées par rapport au périmètre de la fiche, aux sources disponibles et aux conditions d'usage documentées.
+Les conclusions restent liées au périmètre des sources disponibles et aux conditions d’usage décrites.
 
 ## Références
 
-Les sources associées sont conservées dans la fiche canonique du graphe.
+Aucune référence externe n’est associée à cette entrée.

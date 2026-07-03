@@ -6,12 +6,10 @@ slug:
 title: Model Context Protocol
 alternateNames:
   - MCP
-abstract: Model Context Protocol est présenté comme une technologie de référence pour comprendre son
-  rôle dans l'écosystème Electronic Artefacts, ses usages, ses limites et sa place dans les systèmes
-  numériques contemporains.
-description: Model Context Protocol est présenté comme une technologie de référence pour comprendre
-  son rôle dans l'écosystème Electronic Artefacts, ses usages, ses limites et sa place dans les
-  systèmes numériques contemporains.
+abstract: Model Context Protocol est un protocole ouvert qui relie les applications fondées sur des
+  modèles de langage à des contextes, prompts et outils exécutables externes.
+description: Model Context Protocol est un protocole ouvert qui relie les applications fondées sur
+  des modèles de langage à des contextes, prompts et outils exécutables externes.
 locale: fr
 visibility: public
 publicationClass: canonical
@@ -27,9 +25,8 @@ authors:
   - id: ea:organization:electronic-artefacts
 publisher: ea:organization:electronic-artefacts
 category: protocol
-roleInEcosystem: Model Context Protocol sert de repère technique pour évaluer le sujet "Model
-  Context Protocol" dans le graphe public d'Electronic Artefacts, ses usages possibles et ses
-  conséquences dans l'écosystème Electronic Artefacts.
+roleInEcosystem: MCP fournit un modèle commun hôte-client-serveur pour exposer ressources, prompts
+  et outils aux applications fondées sur des modèles de langage.
 officialUrl: https://modelcontextprotocol.io/specification/2025-06-18
 sources:
   - title: Model Context Protocol Specification
@@ -50,17 +47,17 @@ translationOf: ea:technology:model-context-protocol
 
 ## Rôle
 
-Model Context Protocol est documenté comme technologie de référence pour le sujet "Model Context Protocol" dans le graphe public d'Electronic Artefacts.
+Model Context Protocol est un protocole ouvert qui relie les applications fondées sur des modèles de langage à des contextes, prompts et outils exécutables externes.
 
 ## Usage
 
-Cette fiche aide à situer la technologie dans l'écosystème Electronic Artefacts : ce qu'elle permet, quand elle devient pertinente et comment elle dialogue avec les autres composants du graphe.
+MCP fournit un modèle commun hôte-client-serveur pour exposer ressources, prompts et outils aux applications fondées sur des modèles de langage.
 
-## Points d'attention
+## Points d’attention
 
-- Les usages sont décrits en français sans masquer les noms propres, acronymes ou standards techniques.
-- Les limites restent contextualisées par rapport aux projets, aux publications et aux contraintes d'implémentation.
+- Les usages dépendent des contraintes du projet et du niveau d’interopérabilité recherché.
+- Les limites doivent être évaluées au regard des standards, des implémentations disponibles et de leur maturité.
 
 ## Références
 
-Les sources principales restent disponibles dans le bloc de références de la fiche.
+Les références principales sont indiquées ci-dessous.

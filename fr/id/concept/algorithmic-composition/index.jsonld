@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/knowledge/concepts/algorithmic-composition/#webpage",
       "url": "https://electronicartefacts.com/fr/knowledge/concepts/algorithmic-composition/",
       "name": "Composition algorithmique",
-      "description": "Composition algorithmique définit un repère conceptuel en français pour comprendre le sujet \"Composition algorithmique\" dans le graphe public d'Electronic Artefacts et ses liens avec les projets, technologies et publications du graphe.",
+      "description": "Définition, usages, limites et relations associés au concept : Composition algorithmique.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
@@ -34,8 +34,8 @@
       "@id": "https://electronicartefacts.com/fr/id/concept/algorithmic-composition/",
       "identifier": "ea:concept:algorithmic-composition-fr",
       "name": "Composition algorithmique",
-      "abstract": "Composition algorithmique définit un repère conceptuel en français pour comprendre le sujet \"Composition algorithmique\" dans le graphe public d'Electronic Artefacts et ses liens avec les projets, technologies et publications du graphe.",
-      "description": "Composition algorithmique désigne le sujet \"Composition algorithmique\" dans le graphe public d'Electronic Artefacts.",
+      "abstract": "Ce concept propose un cadre précis pour comprendre l’usage de règles, de procédures et de processus stochastiques pour produire ou organiser de la musique et ses liens avec les projets, technologies et publications associés.",
+      "description": "Cette notion recouvre l’usage de règles, de procédures et de processus stochastiques pour produire ou organiser de la musique.",
       "url": "https://electronicartefacts.com/fr/knowledge/concepts/algorithmic-composition/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/knowledge/concepts/algorithmic-composition/#webpage"
@@ -75,7 +75,7 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 86,
+      "wordCount": 59,
       "citation": [
         {
           "@type": "CreativeWork",

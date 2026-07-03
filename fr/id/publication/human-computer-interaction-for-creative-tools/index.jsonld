@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/publications/human-computer-interaction-for-creative-tools/#webpage",
       "url": "https://electronicartefacts.com/fr/publications/human-computer-interaction-for-creative-tools/",
       "name": "Interaction humain-machine pour les outils créatifs",
-      "description": "Interaction humain-machine pour les outils créatifs propose une synthèse claire en français sur le sujet \"Interaction humain-machine pour les outils créatifs\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
+      "description": "Une introduction à l’interaction humain-machine appliquée aux outils créatifs, centrée sur le retour d’information, l’autonomie, le flux, la reprise sur erreur et l’accessibilité.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
@@ -35,8 +35,8 @@
       "identifier": "ea:publication:human-computer-interaction-for-creative-tools-fr",
       "name": "Interaction humain-machine pour les outils créatifs",
       "headline": "Interaction humain-machine pour les outils créatifs",
-      "abstract": "Interaction humain-machine pour les outils créatifs propose une synthèse claire en français sur le sujet \"Interaction humain-machine pour les outils créatifs\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
-      "description": "Interaction humain-machine pour les outils créatifs propose une synthèse claire en français sur le sujet \"Interaction humain-machine pour les outils créatifs\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
+      "abstract": "Une introduction à l’interaction humain-machine appliquée aux outils créatifs, centrée sur le retour d’information, l’autonomie, le flux, la reprise sur erreur et l’accessibilité.",
+      "description": "Une introduction à l’interaction humain-machine appliquée aux outils créatifs, centrée sur le retour d’information, l’autonomie, le flux, la reprise sur erreur et l’accessibilité.",
       "url": "https://electronicartefacts.com/fr/publications/human-computer-interaction-for-creative-tools/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/publications/human-computer-interaction-for-creative-tools/#webpage"
@@ -76,7 +76,7 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 143,
+      "wordCount": 115,
       "citation": [
         "Electronic Artefacts. \"Interaction humain-machine pour les outils créatifs\". Article technique, version 1.0.0, 2026.",
         {

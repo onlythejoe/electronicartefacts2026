@@ -6,12 +6,10 @@ slug:
 title: WebNN
 alternateNames:
   - Web Neural Network API
-abstract: WebNN est présenté comme une technologie de référence pour comprendre son rôle dans
-  l'écosystème Electronic Artefacts, ses usages, ses limites et sa place dans les systèmes
-  numériques contemporains.
-description: WebNN est présenté comme une technologie de référence pour comprendre son rôle dans
-  l'écosystème Electronic Artefacts, ses usages, ses limites et sa place dans les systèmes
-  numériques contemporains.
+abstract: WebNN est une API du W3C pour l’inférence de réseaux neuronaux accélérée par le matériel
+  dans les applications web.
+description: WebNN est une API du W3C pour l’inférence de réseaux neuronaux accélérée par le
+  matériel dans les applications web.
 locale: fr
 visibility: public
 publicationClass: canonical
@@ -27,9 +25,8 @@ authors:
   - id: ea:organization:electronic-artefacts
 publisher: ea:organization:electronic-artefacts
 category: platform
-roleInEcosystem: WebNN sert de repère technique pour évaluer le sujet "WebNN" dans le graphe public
-  d'Electronic Artefacts, ses usages possibles et ses conséquences dans l'écosystème Electronic
-  Artefacts.
+roleInEcosystem: WebNN expose une abstraction web de l’accélération de l’inférence, au-dessus des
+  systèmes d’exploitation et des composants matériels.
 officialUrl: https://www.w3.org/TR/webnn/
 sources:
   - title: Web Neural Network API
@@ -51,17 +48,17 @@ translationOf: ea:technology:webnn
 
 ## Rôle
 
-WebNN est documenté comme technologie de référence pour le sujet "WebNN" dans le graphe public d'Electronic Artefacts.
+WebNN est une API du W3C pour l’inférence de réseaux neuronaux accélérée par le matériel dans les applications web.
 
 ## Usage
 
-Cette fiche aide à situer la technologie dans l'écosystème Electronic Artefacts : ce qu'elle permet, quand elle devient pertinente et comment elle dialogue avec les autres composants du graphe.
+WebNN expose une abstraction web de l’accélération de l’inférence, au-dessus des systèmes d’exploitation et des composants matériels.
 
-## Points d'attention
+## Points d’attention
 
-- Les usages sont décrits en français sans masquer les noms propres, acronymes ou standards techniques.
-- Les limites restent contextualisées par rapport aux projets, aux publications et aux contraintes d'implémentation.
+- Les usages dépendent des contraintes du projet et du niveau d’interopérabilité recherché.
+- Les limites doivent être évaluées au regard des standards, des implémentations disponibles et de leur maturité.
 
 ## Références
 
-Les sources principales restent disponibles dans le bloc de références de la fiche.
+Les références principales sont indiquées ci-dessous.

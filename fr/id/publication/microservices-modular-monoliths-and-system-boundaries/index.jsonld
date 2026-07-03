@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/publications/microservices-modular-monoliths-and-system-boundaries/#webpage",
       "url": "https://electronicartefacts.com/fr/publications/microservices-modular-monoliths-and-system-boundaries/",
       "name": "Microservices, monolithes modulaires et frontieres de système",
-      "description": "Microservices, monolithes modulaires et frontieres de système propose une synthèse claire en français sur le sujet \"Microservices, monolithes modulaires et frontieres de système\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
+      "description": "Une comparaison pragmatique des microservices et des monolithes modulaires à partir des domaines, de la propriété des données, du déploiement, des événements, de l’observabilité et des équipes.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
@@ -35,8 +35,8 @@
       "identifier": "ea:publication:microservices-modular-monoliths-and-system-boundaries-fr",
       "name": "Microservices, monolithes modulaires et frontieres de système",
       "headline": "Microservices, monolithes modulaires et frontieres de système",
-      "abstract": "Microservices, monolithes modulaires et frontieres de système propose une synthèse claire en français sur le sujet \"Microservices, monolithes modulaires et frontieres de système\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
-      "description": "Microservices, monolithes modulaires et frontieres de système propose une synthèse claire en français sur le sujet \"Microservices, monolithes modulaires et frontieres de système\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
+      "abstract": "Une comparaison pragmatique des microservices et des monolithes modulaires à partir des domaines, de la propriété des données, du déploiement, des événements, de l’observabilité et des équipes.",
+      "description": "Une comparaison pragmatique des microservices et des monolithes modulaires à partir des domaines, de la propriété des données, du déploiement, des événements, de l’observabilité et des équipes.",
       "url": "https://electronicartefacts.com/fr/publications/microservices-modular-monoliths-and-system-boundaries/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/publications/microservices-modular-monoliths-and-system-boundaries/#webpage"
@@ -77,7 +77,7 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 145,
+      "wordCount": 122,
       "citation": [
         "Electronic Artefacts. \"Microservices, monolithes modulaires et frontieres de système\". Article technique, version 1.0.0, 2026.",
         {

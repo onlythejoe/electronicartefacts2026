@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/publications/web-audio-and-browser-based-sound-systems/#webpage",
       "url": "https://electronicartefacts.com/fr/publications/web-audio-and-browser-based-sound-systems/",
       "name": "Web Audio et systèmes sonores dans le navigateur",
-      "description": "Web Audio et systèmes sonores dans le navigateur propose une synthèse claire en français sur le sujet \"Web Audio et systèmes sonores dans le navigateur\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
+      "description": "Une présentation de Web Audio comme architecture sonore native du navigateur pour la synthèse, le traitement, l’analyse, les essais interactifs et les outils audio publics.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
@@ -35,8 +35,8 @@
       "identifier": "ea:publication:web-audio-and-browser-based-sound-systems-fr",
       "name": "Web Audio et systèmes sonores dans le navigateur",
       "headline": "Web Audio et systèmes sonores dans le navigateur",
-      "abstract": "Web Audio et systèmes sonores dans le navigateur propose une synthèse claire en français sur le sujet \"Web Audio et systèmes sonores dans le navigateur\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
-      "description": "Web Audio et systèmes sonores dans le navigateur propose une synthèse claire en français sur le sujet \"Web Audio et systèmes sonores dans le navigateur\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
+      "abstract": "Une présentation de Web Audio comme architecture sonore native du navigateur pour la synthèse, le traitement, l’analyse, les essais interactifs et les outils audio publics.",
+      "description": "Une présentation de Web Audio comme architecture sonore native du navigateur pour la synthèse, le traitement, l’analyse, les essais interactifs et les outils audio publics.",
       "url": "https://electronicartefacts.com/fr/publications/web-audio-and-browser-based-sound-systems/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/publications/web-audio-and-browser-based-sound-systems/#webpage"
@@ -77,7 +77,7 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 147,
+      "wordCount": 119,
       "citation": [
         "Electronic Artefacts. \"Web Audio et systèmes sonores dans le navigateur\". Article technique, version 1.0.0, 2026.",
         {

@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/knowledge/technologies/c2pa/#webpage",
       "url": "https://electronicartefacts.com/fr/knowledge/technologies/c2pa/",
       "name": "C2PA",
-      "description": "C2PA est présenté comme une technologie de référence pour comprendre son rôle dans l'écosystème Electronic Artefacts, ses usages, ses limites et sa place dans les systèmes numériques contemporains.",
+      "description": "C2PA réunit des standards techniques qui associent aux médias une provenance vérifiable et des métadonnées de type Content Credentials.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
@@ -38,8 +38,8 @@
         "Content Credentials",
         "Coalition pour Content Provenance et Authenticity"
       ],
-      "abstract": "C2PA est présenté comme une technologie de référence pour comprendre son rôle dans l'écosystème Electronic Artefacts, ses usages, ses limites et sa place dans les systèmes numériques contemporains.",
-      "description": "C2PA est présenté comme une technologie de référence pour comprendre son rôle dans l'écosystème Electronic Artefacts, ses usages, ses limites et sa place dans les systèmes numériques contemporains.",
+      "abstract": "C2PA réunit des standards techniques qui associent aux médias une provenance vérifiable et des métadonnées de type Content Credentials.",
+      "description": "C2PA réunit des standards techniques qui associent aux médias une provenance vérifiable et des métadonnées de type Content Credentials.",
       "url": "https://electronicartefacts.com/fr/knowledge/technologies/c2pa/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/knowledge/technologies/c2pa/#webpage"
@@ -79,7 +79,7 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 93,
+      "wordCount": 81,
       "citation": [
         {
           "@type": "CreativeWork",

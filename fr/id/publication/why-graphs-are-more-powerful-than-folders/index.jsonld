@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/publications/why-graphs-are-more-powerful-than-folders/#webpage",
       "url": "https://electronicartefacts.com/fr/publications/why-graphs-are-more-powerful-than-folders/",
       "name": "Pourquoi les graphes sont plus puissants que les dossiers",
-      "description": "Pourquoi les graphes sont plus puissants que les dossiers propose une synthèse claire en français sur le sujet \"Pourquoi les graphes sont plus puissants que les dossiers\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
+      "description": "Une comparaison des dossiers hiérarchiques et des modèles en graphe pour organiser connaissances, projets, archives, identités, provenances et interfaces générées.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
@@ -35,8 +35,8 @@
       "identifier": "ea:publication:why-graphs-are-more-powerful-than-folders-fr",
       "name": "Pourquoi les graphes sont plus puissants que les dossiers",
       "headline": "Pourquoi les graphes sont plus puissants que les dossiers",
-      "abstract": "Pourquoi les graphes sont plus puissants que les dossiers propose une synthèse claire en français sur le sujet \"Pourquoi les graphes sont plus puissants que les dossiers\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
-      "description": "Pourquoi les graphes sont plus puissants que les dossiers propose une synthèse claire en français sur le sujet \"Pourquoi les graphes sont plus puissants que les dossiers\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
+      "abstract": "Une comparaison des dossiers hiérarchiques et des modèles en graphe pour organiser connaissances, projets, archives, identités, provenances et interfaces générées.",
+      "description": "Une comparaison des dossiers hiérarchiques et des modèles en graphe pour organiser connaissances, projets, archives, identités, provenances et interfaces générées.",
       "url": "https://electronicartefacts.com/fr/publications/why-graphs-are-more-powerful-than-folders/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/publications/why-graphs-are-more-powerful-than-folders/#webpage"
@@ -77,7 +77,7 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 149,
+      "wordCount": 114,
       "citation": [
         "Electronic Artefacts. \"Pourquoi les graphes sont plus puissants que les dossiers\". Article technique, version 1.0.0, 2026.",
         {

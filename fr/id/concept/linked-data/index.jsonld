@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/knowledge/concepts/linked-data/#webpage",
       "url": "https://electronicartefacts.com/fr/knowledge/concepts/linked-data/",
       "name": "Données liées",
-      "description": "Données liées définit un repère conceptuel en français pour comprendre les données publiees avec des identifiants et des relations exploitables par le Web sémantique et ses liens avec les projets, technologies et publications du graphe.",
+      "description": "Définition, usages, limites et relations associés au concept : Données liées.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
@@ -34,8 +34,8 @@
       "@id": "https://electronicartefacts.com/fr/id/concept/linked-data/",
       "identifier": "ea:concept:linked-data-fr",
       "name": "Données liées",
-      "abstract": "Données liées définit un repère conceptuel en français pour comprendre les données publiees avec des identifiants et des relations exploitables par le Web sémantique et ses liens avec les projets, technologies et publications du graphe.",
-      "description": "Données liées désigne les données publiees avec des identifiants et des relations exploitables par le Web sémantique.",
+      "abstract": "Ce concept propose un cadre précis pour comprendre les données publiees avec des identifiants et des relations exploitables par le Web sémantique et ses liens avec les projets, technologies et publications associés.",
+      "description": "Cette notion recouvre les données publiees avec des identifiants et des relations exploitables par le Web sémantique.",
       "url": "https://electronicartefacts.com/fr/knowledge/concepts/linked-data/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/knowledge/concepts/linked-data/#webpage"
@@ -77,7 +77,7 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 90,
+      "wordCount": 57,
       "citation": [
         {
           "@type": "CreativeWork",

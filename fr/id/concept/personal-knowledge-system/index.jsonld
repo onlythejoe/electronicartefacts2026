@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/knowledge/concepts/personal-knowledge-system/#webpage",
       "url": "https://electronicartefacts.com/fr/knowledge/concepts/personal-knowledge-system/",
       "name": "Système personnel de connaissance",
-      "description": "Système personnel de connaissance définit un repère conceptuel en français pour comprendre les systèmes personnels d'organisation de notes, sources, idees et connexions et ses liens avec les projets, technologies et publications du graphe.",
+      "description": "Définition, usages, limites et relations associés au concept : Système personnel de connaissance.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
@@ -34,8 +34,8 @@
       "@id": "https://electronicartefacts.com/fr/id/concept/personal-knowledge-system/",
       "identifier": "ea:concept:personal-knowledge-system-fr",
       "name": "Système personnel de connaissance",
-      "abstract": "Système personnel de connaissance définit un repère conceptuel en français pour comprendre les systèmes personnels d'organisation de notes, sources, idees et connexions et ses liens avec les projets, technologies et publications du graphe.",
-      "description": "Système personnel de connaissance désigne les systèmes personnels d'organisation de notes, sources, idees et connexions.",
+      "abstract": "Ce concept propose un cadre précis pour comprendre les systèmes personnels d'organisation de notes, sources, idees et connexions et ses liens avec les projets, technologies et publications associés.",
+      "description": "Cette notion recouvre les systèmes personnels d'organisation de notes, sources, idees et connexions.",
       "url": "https://electronicartefacts.com/fr/knowledge/concepts/personal-knowledge-system/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/knowledge/concepts/personal-knowledge-system/#webpage"
@@ -76,7 +76,7 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 86,
+      "wordCount": 55,
       "inDefinedTermSet": "https://electronicartefacts.com/knowledge/concepts/",
       "termCode": "personal-knowledge-system"
     },

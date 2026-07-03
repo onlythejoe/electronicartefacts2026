@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/knowledge/concepts/procedural-graphics/#webpage",
       "url": "https://electronicartefacts.com/fr/knowledge/concepts/procedural-graphics/",
       "name": "Graphisme procédural",
-      "description": "Graphisme procédural définit un repère conceptuel en français pour comprendre les images et formes visuelles generees par algorithmes, shaders ou regles parametriques et ses liens avec les projets, technologies et publications du graphe.",
+      "description": "Définition, usages, limites et relations associés au concept : Graphisme procédural.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
@@ -34,8 +34,8 @@
       "@id": "https://electronicartefacts.com/fr/id/concept/procedural-graphics/",
       "identifier": "ea:concept:procedural-graphics-fr",
       "name": "Graphisme procédural",
-      "abstract": "Graphisme procédural définit un repère conceptuel en français pour comprendre les images et formes visuelles generees par algorithmes, shaders ou regles parametriques et ses liens avec les projets, technologies et publications du graphe.",
-      "description": "Graphisme procédural désigne les images et formes visuelles generees par algorithmes, shaders ou regles parametriques.",
+      "abstract": "Ce concept propose un cadre précis pour comprendre les images et formes visuelles generees par algorithmes, shaders ou regles parametriques et ses liens avec les projets, technologies et publications associés.",
+      "description": "Cette notion recouvre les images et formes visuelles generees par algorithmes, shaders ou regles parametriques.",
       "url": "https://electronicartefacts.com/fr/knowledge/concepts/procedural-graphics/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/knowledge/concepts/procedural-graphics/#webpage"
@@ -76,7 +76,7 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 86,
+      "wordCount": 57,
       "inDefinedTermSet": "https://electronicartefacts.com/knowledge/concepts/",
       "termCode": "procedural-graphics"
     },

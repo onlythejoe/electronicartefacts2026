@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/knowledge/technologies/owl/#webpage",
       "url": "https://electronicartefacts.com/fr/knowledge/technologies/owl/",
       "name": "OWL",
-      "description": "OWL est présenté comme une technologie de référence pour comprendre son rôle dans l'écosystème Electronic Artefacts, ses usages, ses limites et sa place dans les systèmes numériques contemporains.",
+      "description": "OWL est un langage d’ontologie du W3C doté d’une sémantique formelle pour les classes, propriétés, individus et contraintes du Web sémantique.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
@@ -37,8 +37,8 @@
       "alternateName": [
         "Web Ontology Language"
       ],
-      "abstract": "OWL est présenté comme une technologie de référence pour comprendre son rôle dans l'écosystème Electronic Artefacts, ses usages, ses limites et sa place dans les systèmes numériques contemporains.",
-      "description": "OWL est présenté comme une technologie de référence pour comprendre son rôle dans l'écosystème Electronic Artefacts, ses usages, ses limites et sa place dans les systèmes numériques contemporains.",
+      "abstract": "OWL est un langage d’ontologie du W3C doté d’une sémantique formelle pour les classes, propriétés, individus et contraintes du Web sémantique.",
+      "description": "OWL est un langage d’ontologie du W3C doté d’une sémantique formelle pour les classes, propriétés, individus et contraintes du Web sémantique.",
       "url": "https://electronicartefacts.com/fr/knowledge/technologies/owl/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/knowledge/technologies/owl/#webpage"
@@ -75,7 +75,7 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 93,
+      "wordCount": 78,
       "citation": [
         {
           "@type": "CreativeWork",

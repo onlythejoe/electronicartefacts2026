@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/knowledge/concepts/cybernetic-feedback/#webpage",
       "url": "https://electronicartefacts.com/fr/knowledge/concepts/cybernetic-feedback/",
       "name": "Rétroaction cybernetique",
-      "description": "Rétroaction cybernetique définit un repère conceptuel en français pour comprendre les boucles de retroaction qui relient mesure, action, correction et comportement systemique et ses liens avec les projets, technologies et publications du graphe.",
+      "description": "Définition, usages, limites et relations associés au concept : Rétroaction cybernetique.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
@@ -34,8 +34,8 @@
       "@id": "https://electronicartefacts.com/fr/id/concept/cybernetic-feedback/",
       "identifier": "ea:concept:cybernetic-feedback-fr",
       "name": "Rétroaction cybernetique",
-      "abstract": "Rétroaction cybernetique définit un repère conceptuel en français pour comprendre les boucles de retroaction qui relient mesure, action, correction et comportement systemique et ses liens avec les projets, technologies et publications du graphe.",
-      "description": "Rétroaction cybernetique désigne les boucles de retroaction qui relient mesure, action, correction et comportement systemique.",
+      "abstract": "Ce concept propose un cadre précis pour comprendre les boucles de retroaction qui relient mesure, action, correction et comportement systemique et ses liens avec les projets, technologies et publications associés.",
+      "description": "Cette notion recouvre les boucles de retroaction qui relient mesure, action, correction et comportement systemique.",
       "url": "https://electronicartefacts.com/fr/knowledge/concepts/cybernetic-feedback/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/knowledge/concepts/cybernetic-feedback/#webpage"
@@ -76,7 +76,7 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 88,
+      "wordCount": 55,
       "citation": [
         {
           "@type": "CreativeWork",

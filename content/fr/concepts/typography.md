@@ -4,14 +4,12 @@ type: concept
 slug:
   canonical: typography
 title: Typographie
-definition: Typographie désigne la composition du texte par caracteres, espacements, hierarchie,
+definition: Cette notion recouvre la composition du texte par caracteres, espacements, hierarchie,
   rythme et conditions de lecture.
-abstract: Typographie définit un repère conceptuel en français pour comprendre la composition du
-  texte par caracteres, espacements, hierarchie, rythme et conditions de lecture et ses liens avec
-  les projets, technologies et publications du graphe.
-description: Typographie définit un repère conceptuel en français pour comprendre la composition du
-  texte par caracteres, espacements, hierarchie, rythme et conditions de lecture et ses liens avec
-  les projets, technologies et publications du graphe.
+abstract: Ce concept propose un cadre précis pour comprendre la composition du texte par caracteres,
+  espacements, hierarchie, rythme et conditions de lecture et ses liens avec les projets,
+  technologies et publications associés.
+description: "Définition, usages, limites et relations associés au concept : Typographie."
 locale: fr
 visibility: public
 publicationClass: canonical
@@ -35,10 +33,8 @@ exclusions:
   - les usages purement promotionnels sans définition vérifiable
   - les exemples déconnectés des sources, relations ou contraintes du graphe
 claims:
-  - Typographie devient utile lorsque sa définition reste reliée à des sources, des pratiques et des
-    objets observables.
-  - La fiche sert de vocabulaire commun pour relier projets, publications et technologies sans
-    mélanger les langues.
+  - Une définition utile reste reliée à des sources, à des pratiques et à des objets observables.
+  - Un vocabulaire stable permet de relier projets, publications et technologies sans ambiguïté.
 sources:
   - title: CSS Fonts Module Level 4
     publisher: W3C
@@ -59,16 +55,16 @@ translationOf: ea:concept:typography
 
 ## Rôle
 
-Typographie est documenté comme notion de référence pour comprendre la composition du texte par caracteres, espacements, hierarchie, rythme et conditions de lecture.
+Cette notion recouvre la composition du texte par caracteres, espacements, hierarchie, rythme et conditions de lecture.
 
 ## Usage
 
-Cette fiche relie la notion aux projets, publications et technologies qui partagent un même vocabulaire de conception. Elle sert de point d'appui pour naviguer dans le graphe en version française.
+Elle fournit un vocabulaire stable pour relier les projets, publications et technologies concernés.
 
 ## Périmètre
 
-La notion est abordée par ses définitions, ses usages, ses limites et ses relations avec les autres objets documentés.
+Son périmètre comprend les définitions, les usages, les limites et les relations avec les autres objets documentés.
 
 ## Références
 
-Les sources principales restent disponibles dans le bloc de références de la fiche.
+Les références principales sont indiquées ci-dessous.

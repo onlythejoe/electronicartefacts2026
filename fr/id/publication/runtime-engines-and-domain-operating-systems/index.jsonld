@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/publications/runtime-engines-and-domain-operating-systems/#webpage",
       "url": "https://electronicartefacts.com/fr/publications/runtime-engines-and-domain-operating-systems/",
       "name": "Moteurs d'exécution et systèmes d'exploitation de domaine",
-      "description": "Moteurs d'exécution et systèmes d'exploitation de domaine propose une synthèse claire en français sur le sujet \"Moteurs d'exécution et systèmes d'exploitation de domaine\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
+      "description": "Un guide des moteurs d’exécution et systèmes d’exploitation de domaine, couvrant identité, état, permissions, événements, extensions et projections publiques.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
@@ -35,8 +35,8 @@
       "identifier": "ea:publication:runtime-engines-and-domain-operating-systems-fr",
       "name": "Moteurs d'exécution et systèmes d'exploitation de domaine",
       "headline": "Moteurs d'exécution et systèmes d'exploitation de domaine",
-      "abstract": "Moteurs d'exécution et systèmes d'exploitation de domaine propose une synthèse claire en français sur le sujet \"Moteurs d'exécution et systèmes d'exploitation de domaine\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
-      "description": "Moteurs d'exécution et systèmes d'exploitation de domaine propose une synthèse claire en français sur le sujet \"Moteurs d'exécution et systèmes d'exploitation de domaine\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
+      "abstract": "Un guide des moteurs d’exécution et systèmes d’exploitation de domaine, couvrant identité, état, permissions, événements, extensions et projections publiques.",
+      "description": "Un guide des moteurs d’exécution et systèmes d’exploitation de domaine, couvrant identité, état, permissions, événements, extensions et projections publiques.",
       "url": "https://electronicartefacts.com/fr/publications/runtime-engines-and-domain-operating-systems/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/publications/runtime-engines-and-domain-operating-systems/#webpage"
@@ -78,7 +78,7 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 145,
+      "wordCount": 112,
       "citation": [
         "Electronic Artefacts. \"Moteurs d'exécution et systèmes d'exploitation de domaine\". Article technique, version 1.0.0, 2026.",
         {

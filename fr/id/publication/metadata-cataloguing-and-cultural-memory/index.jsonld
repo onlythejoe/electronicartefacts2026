@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/publications/metadata-cataloguing-and-cultural-memory/#webpage",
       "url": "https://electronicartefacts.com/fr/publications/metadata-cataloguing-and-cultural-memory/",
       "name": "Métadonnées, catalogage et mémoire culturelle",
-      "description": "Métadonnées, catalogage et mémoire culturelle propose une synthèse claire en français sur le sujet \"Métadonnées, catalogage et mémoire culturelle\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
+      "description": "Une lecture des métadonnées comme couche de mémoire culturelle, reliant catalogage, Dublin Core, PREMIS, METS, provenance, archives et graphes de connaissances.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
@@ -35,8 +35,8 @@
       "identifier": "ea:publication:metadata-cataloguing-and-cultural-memory-fr",
       "name": "Métadonnées, catalogage et mémoire culturelle",
       "headline": "Métadonnées, catalogage et mémoire culturelle",
-      "abstract": "Métadonnées, catalogage et mémoire culturelle propose une synthèse claire en français sur le sujet \"Métadonnées, catalogage et mémoire culturelle\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
-      "description": "Métadonnées, catalogage et mémoire culturelle propose une synthèse claire en français sur le sujet \"Métadonnées, catalogage et mémoire culturelle\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
+      "abstract": "Une lecture des métadonnées comme couche de mémoire culturelle, reliant catalogage, Dublin Core, PREMIS, METS, provenance, archives et graphes de connaissances.",
+      "description": "Une lecture des métadonnées comme couche de mémoire culturelle, reliant catalogage, Dublin Core, PREMIS, METS, provenance, archives et graphes de connaissances.",
       "url": "https://electronicartefacts.com/fr/publications/metadata-cataloguing-and-cultural-memory/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/publications/metadata-cataloguing-and-cultural-memory/#webpage"
@@ -76,7 +76,7 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 141,
+      "wordCount": 112,
       "citation": [
         "Electronic Artefacts. \"Métadonnées, catalogage et mémoire culturelle\". Article technique, version 1.0.0, 2026.",
         {

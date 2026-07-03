@@ -5,11 +5,12 @@ slug:
   canonical: knowledge-hub-second-wave
 title: Hub de connaissance, deuxième vague
 subtitle: Collection éditoriale
-abstract: Hub de connaissance, deuxième vague rassemble des fiches liées par un même axe éditorial,
-  afin de donner une progression lisible aux archives de connaissance d'Electronic Artefacts.
-description: Hub de connaissance, deuxième vague rassemble des fiches liées par un même axe
-  éditorial, afin de donner une progression lisible aux archives de connaissance d'Electronic
-  Artefacts.
+abstract: "Une collection sur les cultures et pratiques numériques durables : hypertexte, systèmes
+  personnels de connaissance, open source, métadonnées, audio web, programmation créative, graphisme
+  procédural, mouvement et typographie."
+description: "Une collection sur les cultures et pratiques numériques durables : hypertexte,
+  systèmes personnels de connaissance, open source, métadonnées, audio web, programmation créative,
+  graphisme procédural, mouvement et typographie."
 locale: fr
 visibility: public
 publicationClass: published
@@ -24,8 +25,8 @@ version:
 authors:
   - id: ea:organization:electronic-artefacts
 publisher: ea:organization:electronic-artefacts
-thesis: Hub de connaissance, deuxième vague propose une lecture organisee de 30 fiches reliées par
-  un même axe editorial.
+thesis: Cette deuxième vague élargit les fondations vers la création, la transmission et les
+  conditions concrètes de lecture, d’apprentissage et de publication.
 curator:
   - id: ea:organization:electronic-artefacts
 explicitMembers:
@@ -59,8 +60,8 @@ explicitMembers:
   - id: ea:technology:web-animations
   - id: ea:technology:css-fonts
   - id: ea:technology:activitypub
-selectionNote: La sélection privilégie des contenus stables, reliables et utiles pour parcourir le
-  hub de connaissance en français.
+selectionNote: La sélection privilégie les contenus durables, solidement reliés et capables
+  d’éclairer plusieurs sujets du hub de connaissance.
 tags:
   - hub de connaissance
   - deuxième vague
@@ -77,16 +78,16 @@ translationOf: ea:collection:knowledge-hub-second-wave
 
 ## Intention
 
-Hub de connaissance, deuxième vague rassemble des fiches liées par un même axe éditorial.
+Une collection sur les cultures et pratiques numériques durables : hypertexte, systèmes personnels de connaissance, open source, métadonnées, audio web, programmation créative, graphisme procédural, mouvement et typographie.
 
 ## Sélection
 
-La collection organise les contenus par proximité éditoriale, par utilité de navigation et par potentiel de liens internes. Elle permet de parcourir le hub de connaissance sans perdre la cohérence du sujet.
+Cette deuxième vague élargit les fondations vers la création, la transmission et les conditions concrètes de lecture, d’apprentissage et de publication.
 
 ## Usage
 
-Cette entrée sert de repère pour explorer plusieurs publications ou notions depuis une même page française.
+Les entrées peuvent se lire dans l’ordre proposé ou servir de points de départ vers les sujets associés.
 
 ## Références
 
-Les sources associées sont conservées dans la fiche canonique du graphe.
+Aucune référence externe n’est associée à cette entrée.

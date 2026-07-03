@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/knowledge/technologies/model-context-protocol/#webpage",
       "url": "https://electronicartefacts.com/fr/knowledge/technologies/model-context-protocol/",
       "name": "Model Context Protocol",
-      "description": "Model Context Protocol est présenté comme une technologie de référence pour comprendre son rôle dans l'écosystème Electronic Artefacts, ses usages, ses limites et sa place dans les systèmes numériques contemporains.",
+      "description": "Model Context Protocol est un protocole ouvert qui relie les applications fondées sur des modèles de langage à des contextes, prompts et outils exécutables externes.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
@@ -37,8 +37,8 @@
       "alternateName": [
         "MCP"
       ],
-      "abstract": "Model Context Protocol est présenté comme une technologie de référence pour comprendre son rôle dans l'écosystème Electronic Artefacts, ses usages, ses limites et sa place dans les systèmes numériques contemporains.",
-      "description": "Model Context Protocol est présenté comme une technologie de référence pour comprendre son rôle dans l'écosystème Electronic Artefacts, ses usages, ses limites et sa place dans les systèmes numériques contemporains.",
+      "abstract": "Model Context Protocol est un protocole ouvert qui relie les applications fondées sur des modèles de langage à des contextes, prompts et outils exécutables externes.",
+      "description": "Model Context Protocol est un protocole ouvert qui relie les applications fondées sur des modèles de langage à des contextes, prompts et outils exécutables externes.",
       "url": "https://electronicartefacts.com/fr/knowledge/technologies/model-context-protocol/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/knowledge/technologies/model-context-protocol/#webpage"
@@ -78,7 +78,7 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 97,
+      "wordCount": 84,
       "citation": [
         {
           "@type": "CreativeWork",

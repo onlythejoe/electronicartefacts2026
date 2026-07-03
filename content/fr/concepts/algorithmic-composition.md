@@ -4,14 +4,12 @@ type: concept
 slug:
   canonical: algorithmic-composition
 title: Composition algorithmique
-definition: Composition algorithmique désigne le sujet "Composition algorithmique" dans le graphe
-  public d'Electronic Artefacts.
-abstract: Composition algorithmique définit un repère conceptuel en français pour comprendre le
-  sujet "Composition algorithmique" dans le graphe public d'Electronic Artefacts et ses liens avec
-  les projets, technologies et publications du graphe.
-description: Composition algorithmique définit un repère conceptuel en français pour comprendre le
-  sujet "Composition algorithmique" dans le graphe public d'Electronic Artefacts et ses liens avec
-  les projets, technologies et publications du graphe.
+definition: Cette notion recouvre l’usage de règles, de procédures et de processus stochastiques
+  pour produire ou organiser de la musique.
+abstract: Ce concept propose un cadre précis pour comprendre l’usage de règles, de procédures et de
+  processus stochastiques pour produire ou organiser de la musique et ses liens avec les projets,
+  technologies et publications associés.
+description: "Définition, usages, limites et relations associés au concept : Composition algorithmique."
 locale: fr
 visibility: public
 publicationClass: canonical
@@ -35,10 +33,8 @@ exclusions:
   - les usages purement promotionnels sans définition vérifiable
   - les exemples déconnectés des sources, relations ou contraintes du graphe
 claims:
-  - Composition algorithmique devient utile lorsque sa définition reste reliée à des sources, des
-    pratiques et des objets observables.
-  - La fiche sert de vocabulaire commun pour relier projets, publications et technologies sans
-    mélanger les langues.
+  - Une définition utile reste reliée à des sources, à des pratiques et à des objets observables.
+  - Un vocabulaire stable permet de relier projets, publications et technologies sans ambiguïté.
 sources:
   - title: Formalized Music
     author: Iannis Xenakis
@@ -59,16 +55,16 @@ translationOf: ea:concept:algorithmic-composition
 
 ## Rôle
 
-Composition algorithmique est documenté comme notion de référence pour comprendre le sujet "Composition algorithmique" dans le graphe public d'Electronic Artefacts.
+Cette notion recouvre l’usage de règles, de procédures et de processus stochastiques pour produire ou organiser de la musique.
 
 ## Usage
 
-Cette fiche relie la notion aux projets, publications et technologies qui partagent un même vocabulaire de conception. Elle sert de point d'appui pour naviguer dans le graphe en version française.
+Elle fournit un vocabulaire stable pour relier les projets, publications et technologies concernés.
 
 ## Périmètre
 
-La notion est abordée par ses définitions, ses usages, ses limites et ses relations avec les autres objets documentés.
+Son périmètre comprend les définitions, les usages, les limites et les relations avec les autres objets documentés.
 
 ## Références
 
-Les sources principales restent disponibles dans le bloc de références de la fiche.
+Les références principales sont indiquées ci-dessous.

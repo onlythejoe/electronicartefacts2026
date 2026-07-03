@@ -6,14 +6,12 @@ slug:
 title: Grand modèle de langage
 alternateNames:
   - LLM
-definition: Grand modèle de langage désigne les grands modèles de langage entraines à predire et
-  generer des sequences de tokens à partir de corpus massifs.
-abstract: Grand modèle de langage définit un repère conceptuel en français pour comprendre les
-  grands modèles de langage entraines à predire et generer des sequences de tokens à partir de
-  corpus massifs et ses liens avec les projets, technologies et publications du graphe.
-description: Grand modèle de langage définit un repère conceptuel en français pour comprendre les
-  grands modèles de langage entraines à predire et generer des sequences de tokens à partir de
-  corpus massifs et ses liens avec les projets, technologies et publications du graphe.
+definition: Cette notion recouvre les grands modèles de langage entraines à predire et generer des
+  sequences de tokens à partir de corpus massifs.
+abstract: Ce concept propose un cadre précis pour comprendre les grands modèles de langage entraines
+  à predire et generer des sequences de tokens à partir de corpus massifs et ses liens avec les
+  projets, technologies et publications associés.
+description: "Définition, usages, limites et relations associés au concept : Grand modèle de langage."
 locale: fr
 visibility: public
 publicationClass: canonical
@@ -37,10 +35,8 @@ exclusions:
   - les usages purement promotionnels sans définition vérifiable
   - les exemples déconnectés des sources, relations ou contraintes du graphe
 claims:
-  - Grand modèle de langage devient utile lorsque sa définition reste reliée à des sources, des
-    pratiques et des objets observables.
-  - La fiche sert de vocabulaire commun pour relier projets, publications et technologies sans
-    mélanger les langues.
+  - Une définition utile reste reliée à des sources, à des pratiques et à des objets observables.
+  - Un vocabulaire stable permet de relier projets, publications et technologies sans ambiguïté.
 sources:
   - title: Attention Is All You Need
     author: Ashish Vaswani et al.
@@ -64,16 +60,16 @@ translationOf: ea:concept:large-language-model
 
 ## Rôle
 
-Grand modèle de langage est documenté comme notion de référence pour comprendre les grands modèles de langage entraines à predire et generer des sequences de tokens à partir de corpus massifs.
+Cette notion recouvre les grands modèles de langage entraines à predire et generer des sequences de tokens à partir de corpus massifs.
 
 ## Usage
 
-Cette fiche relie la notion aux projets, publications et technologies qui partagent un même vocabulaire de conception. Elle sert de point d'appui pour naviguer dans le graphe en version française.
+Elle fournit un vocabulaire stable pour relier les projets, publications et technologies concernés.
 
 ## Périmètre
 
-La notion est abordée par ses définitions, ses usages, ses limites et ses relations avec les autres objets documentés.
+Son périmètre comprend les définitions, les usages, les limites et les relations avec les autres objets documentés.
 
 ## Références
 
-Les sources principales restent disponibles dans le bloc de références de la fiche.
+Les références principales sont indiquées ci-dessous.

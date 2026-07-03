@@ -7,12 +7,10 @@ slug:
 title: SKOS
 alternateNames:
   - Simple Knowledge Organization System
-abstract: SKOS est présenté comme une technologie de référence pour comprendre son rôle dans
-  l'écosystème Electronic Artefacts, ses usages, ses limites et sa place dans les systèmes
-  numériques contemporains.
-description: SKOS est présenté comme une technologie de référence pour comprendre son rôle dans
-  l'écosystème Electronic Artefacts, ses usages, ses limites et sa place dans les systèmes
-  numériques contemporains.
+abstract: SKOS est un modèle de données du W3C pour publier sur le Web thésaurus, taxonomies,
+  classifications et autres systèmes d’organisation des connaissances.
+description: SKOS est un modèle de données du W3C pour publier sur le Web thésaurus, taxonomies,
+  classifications et autres systèmes d’organisation des connaissances.
 locale: fr
 visibility: public
 publicationClass: canonical
@@ -28,9 +26,8 @@ authors:
   - id: ea:organization:electronic-artefacts
 publisher: ea:organization:electronic-artefacts
 category: language
-roleInEcosystem: SKOS sert de repère technique pour évaluer le sujet "SKOS" dans le graphe public
-  d'Electronic Artefacts, ses usages possibles et ses conséquences dans l'écosystème Electronic
-  Artefacts.
+roleInEcosystem: SKOS propose un modèle léger pour les libellés, relations hiérarchiques et
+  associatives, schémas de concepts et correspondances entre vocabulaires.
 officialUrl: https://www.w3.org/TR/skos-reference/
 sources:
   - title: SKOS Simple Knowledge Organization System Reference
@@ -50,17 +47,17 @@ disciplines:
 
 ## Rôle
 
-SKOS est documenté comme technologie de référence pour le sujet "SKOS" dans le graphe public d'Electronic Artefacts.
+SKOS est un modèle de données du W3C pour publier sur le Web thésaurus, taxonomies, classifications et autres systèmes d’organisation des connaissances.
 
 ## Usage
 
-Cette fiche aide à situer la technologie dans l'écosystème Electronic Artefacts : ce qu'elle permet, quand elle devient pertinente et comment elle dialogue avec les autres composants du graphe.
+SKOS propose un modèle léger pour les libellés, relations hiérarchiques et associatives, schémas de concepts et correspondances entre vocabulaires.
 
-## Points d'attention
+## Points d’attention
 
-- Les usages sont décrits en français sans masquer les noms propres, acronymes ou standards techniques.
-- Les limites restent contextualisées par rapport aux projets, aux publications et aux contraintes d'implémentation.
+- Les usages dépendent des contraintes du projet et du niveau d’interopérabilité recherché.
+- Les limites doivent être évaluées au regard des standards, des implémentations disponibles et de leur maturité.
 
 ## Références
 
-Les sources principales restent disponibles dans le bloc de références de la fiche.
+Les références principales sont indiquées ci-dessous.

@@ -5,14 +5,10 @@ slug:
   canonical: human-computer-interaction-for-creative-tools
 title: Interaction humain-machine pour les outils créatifs
 subtitle: Article technique
-abstract: Interaction humain-machine pour les outils créatifs propose une synthèse claire en
-  français sur le sujet "Interaction humain-machine pour les outils créatifs" dans le graphe public
-  d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de
-  connaissances numériques.
-description: Interaction humain-machine pour les outils créatifs propose une synthèse claire en
-  français sur le sujet "Interaction humain-machine pour les outils créatifs" dans le graphe public
-  d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de
-  connaissances numériques.
+abstract: Une introduction à l’interaction humain-machine appliquée aux outils créatifs, centrée sur
+  le retour d’information, l’autonomie, le flux, la reprise sur erreur et l’accessibilité.
+description: Une introduction à l’interaction humain-machine appliquée aux outils créatifs, centrée
+  sur le retour d’information, l’autonomie, le flux, la reprise sur erreur et l’accessibilité.
 locale: fr
 visibility: public
 publicationClass: published
@@ -35,10 +31,10 @@ subjects:
   - id: ea:concept:creative-coding
   - id: ea:program:vaste
 claims:
-  - Interaction humain-machine pour les outils créatifs doit être lisible comme une synthèse
-    française autonome, sans phrases hybrides héritées de l'anglais.
-  - Les liens avec les notions, projets et technologies du graphe renforcent la recherche, la
-    navigation et la citation.
+  - Un outil créatif préserve l’autonomie lorsque son état, son historique, ses contraintes et ses
+    possibilités de reprise restent visibles.
+  - Dans les systèmes créatifs, l’interaction ne concerne pas seulement l’utilisabilité, mais aussi
+    le flux, l’ambiguïté, l’exploration et l’interprétation.
 evidence:
   - id: ea:concept:human-computer-interaction
   - id: ea:program:vaste
@@ -71,24 +67,24 @@ translationOf: ea:publication:human-computer-interaction-for-creative-tools
 
 ## Problème
 
-Interaction humain-machine pour les outils créatifs examine le sujet "Interaction humain-machine pour les outils créatifs" dans le graphe public d'Electronic Artefacts. La fiche donne une entrée française stable, utilisable pour lire le sujet et relier ses sources au reste du graphe.
+Une introduction à l’interaction humain-machine appliquée aux outils créatifs, centrée sur le retour d’information, l’autonomie, le flux, la reprise sur erreur et l’accessibilité.
 
 ## Architecture
 
-Le sujet est abordé par ses relations avec les concepts, projets et technologies concernés, afin de rendre son contexte de conception lisible.
+Un outil créatif préserve l’autonomie lorsque son état, son historique, ses contraintes et ses possibilités de reprise restent visibles. Dans les systèmes créatifs, l’interaction ne concerne pas seulement l’utilisabilité, mais aussi le flux, l’ambiguïté, l’exploration et l’interprétation.
 
 ## Mise en œuvre
 
-La page décrit les usages, contraintes et choix de structure qui permettent d'appliquer le sujet dans des situations concrètes.
+L’analyse en précise les usages, les contraintes et les principaux arbitrages techniques.
 
 ## Éléments de preuve
 
-Les sources, relations et éléments de contexte restent attachés à la fiche pour distinguer synthèse éditoriale, preuves et références.
+Les arguments s’appuient sur les sources et les notions connexes citées dans l’article.
 
 ## Limites
 
-Les limites sont formulées par rapport au périmètre de la fiche, aux sources disponibles et aux conditions d'usage documentées.
+Les conclusions restent liées au périmètre des sources disponibles et aux conditions d’usage décrites.
 
 ## Références
 
-Les sources principales restent disponibles dans le bloc de références de la fiche.
+Les références principales sont indiquées ci-dessous.

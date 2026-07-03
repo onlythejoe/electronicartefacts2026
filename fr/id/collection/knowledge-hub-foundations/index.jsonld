@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/archive/collections/knowledge-hub-foundations/#webpage",
       "url": "https://electronicartefacts.com/fr/archive/collections/knowledge-hub-foundations/",
       "name": "Fondations du hub de connaissance",
-      "description": "Fondations du hub de connaissance rassemble des fiches liées par un même axe éditorial, afin de donner une progression lisible aux archives de connaissance d'Electronic Artefacts.",
+      "description": "Une collection fondatrice consacrée aux graphes de connaissances, aux données liées, à l’exécution contextuelle, à la préservation numérique, aux systèmes génératifs et à l’archéologie du signal.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
@@ -34,8 +34,8 @@
       "@id": "https://electronicartefacts.com/fr/id/collection/knowledge-hub-foundations/",
       "identifier": "ea:collection:knowledge-hub-foundations-fr",
       "name": "Fondations du hub de connaissance",
-      "abstract": "Fondations du hub de connaissance rassemble des fiches liées par un même axe éditorial, afin de donner une progression lisible aux archives de connaissance d'Electronic Artefacts.",
-      "description": "Fondations du hub de connaissance rassemble des fiches liées par un même axe éditorial, afin de donner une progression lisible aux archives de connaissance d'Electronic Artefacts.",
+      "abstract": "Une collection fondatrice consacrée aux graphes de connaissances, aux données liées, à l’exécution contextuelle, à la préservation numérique, aux systèmes génératifs et à l’archéologie du signal.",
+      "description": "Une collection fondatrice consacrée aux graphes de connaissances, aux données liées, à l’exécution contextuelle, à la préservation numérique, aux systèmes génératifs et à l’archéologie du signal.",
       "url": "https://electronicartefacts.com/fr/archive/collections/knowledge-hub-foundations/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/archive/collections/knowledge-hub-foundations/#webpage"
@@ -78,7 +78,7 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 77
+      "wordCount": 73
     },
     {
       "@type": "Organization",

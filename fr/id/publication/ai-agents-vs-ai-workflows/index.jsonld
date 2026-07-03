@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/publications/ai-agents-vs-ai-workflows/#webpage",
       "url": "https://electronicartefacts.com/fr/publications/ai-agents-vs-ai-workflows/",
       "name": "Agents d'IA et workflows d'IA",
-      "description": "Agents d'IA et workflows d'IA propose une synthèse claire en français sur le sujet \"Agents d'IA et workflows d'IA\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
+      "description": "Une comparaison pratique entre agents pilotés par des modèles, workflows déterministes et orchestrations hybrides, avec leurs enjeux de permissions, de mémoire, d’évaluation et de supervision humaine.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
@@ -35,8 +35,8 @@
       "identifier": "ea:publication:ai-agents-vs-ai-workflows-fr",
       "name": "Agents d'IA et workflows d'IA",
       "headline": "Agents d'IA et workflows d'IA",
-      "abstract": "Agents d'IA et workflows d'IA propose une synthèse claire en français sur le sujet \"Agents d'IA et workflows d'IA\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
-      "description": "Agents d'IA et workflows d'IA propose une synthèse claire en français sur le sujet \"Agents d'IA et workflows d'IA\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
+      "abstract": "Une comparaison pratique entre agents pilotés par des modèles, workflows déterministes et orchestrations hybrides, avec leurs enjeux de permissions, de mémoire, d’évaluation et de supervision humaine.",
+      "description": "Une comparaison pratique entre agents pilotés par des modèles, workflows déterministes et orchestrations hybrides, avec leurs enjeux de permissions, de mémoire, d’évaluation et de supervision humaine.",
       "url": "https://electronicartefacts.com/fr/publications/ai-agents-vs-ai-workflows/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/publications/ai-agents-vs-ai-workflows/#webpage"
@@ -78,7 +78,7 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 141,
+      "wordCount": 123,
       "citation": [
         "Electronic Artefacts. \"Agents d'IA et workflows d'IA\". Article technique, version 1.0.0, 2026.",
         {

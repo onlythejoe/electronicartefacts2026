@@ -5,14 +5,10 @@ slug:
   canonical: digital-preservation-and-living-archives
 title: Préservation numérique et archives vivantes
 subtitle: Article technique
-abstract: Préservation numérique et archives vivantes propose une synthèse claire en français sur le
-  sujet "Préservation numérique et archives vivantes" dans le graphe public d'Electronic Artefacts,
-  avec un angle utile pour la recherche, la conception et la publication de connaissances
-  numériques.
-description: Préservation numérique et archives vivantes propose une synthèse claire en français sur
-  le sujet "Préservation numérique et archives vivantes" dans le graphe public d'Electronic
-  Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances
-  numériques.
+abstract: Une approche de la préservation numérique comme pratique culturelle active, qui maintient
+  dans le temps les objets, métadonnées, provenances et contextes d’interprétation.
+description: Une approche de la préservation numérique comme pratique culturelle active, qui
+  maintient dans le temps les objets, métadonnées, provenances et contextes d’interprétation.
 locale: fr
 visibility: public
 publicationClass: published
@@ -35,10 +31,10 @@ subjects:
   - id: ea:project:vestiges
   - id: ea:concept:knowledge-graph
 claims:
-  - Préservation numérique et archives vivantes doit être lisible comme une synthèse française
-    autonome, sans phrases hybrides héritées de l'anglais.
-  - Les liens avec les notions, projets et technologies du graphe renforcent la recherche, la
-    navigation et la citation.
+  - "La préservation numérique ne se réduit pas à la sauvegarde : elle prend soin, dans la durée,
+    des objets, métadonnées, droits, formats et contextes."
+  - Les archives vivantes ont besoin de relations de graphe, car l’interprétation évolue tandis que
+    la provenance doit rester vérifiable.
 evidence:
   - id: ea:project:palimpsests
   - id: ea:project:vestiges
@@ -76,24 +72,24 @@ translationOf: ea:publication:digital-preservation-and-living-archives
 
 ## Problème
 
-Préservation numérique et archives vivantes examine le sujet "Préservation numérique et archives vivantes" dans le graphe public d'Electronic Artefacts. La fiche donne une entrée française stable, utilisable pour lire le sujet et relier ses sources au reste du graphe.
+Une approche de la préservation numérique comme pratique culturelle active, qui maintient dans le temps les objets, métadonnées, provenances et contextes d’interprétation.
 
 ## Architecture
 
-Le sujet est abordé par ses relations avec les concepts, projets et technologies concernés, afin de rendre son contexte de conception lisible.
+La préservation numérique ne se réduit pas à la sauvegarde : elle prend soin, dans la durée, des objets, métadonnées, droits, formats et contextes. Les archives vivantes ont besoin de relations de graphe, car l’interprétation évolue tandis que la provenance doit rester vérifiable.
 
 ## Mise en œuvre
 
-La page décrit les usages, contraintes et choix de structure qui permettent d'appliquer le sujet dans des situations concrètes.
+L’analyse en précise les usages, les contraintes et les principaux arbitrages techniques.
 
 ## Éléments de preuve
 
-Les sources, relations et éléments de contexte restent attachés à la fiche pour distinguer synthèse éditoriale, preuves et références.
+Les arguments s’appuient sur les sources et les notions connexes citées dans l’article.
 
 ## Limites
 
-Les limites sont formulées par rapport au périmètre de la fiche, aux sources disponibles et aux conditions d'usage documentées.
+Les conclusions restent liées au périmètre des sources disponibles et aux conditions d’usage décrites.
 
 ## Références
 
-Les sources principales restent disponibles dans le bloc de références de la fiche.
+Les références principales sont indiquées ci-dessous.

@@ -4,14 +4,12 @@ type: concept
 slug:
   canonical: metadata
 title: Métadonnées
-definition: Métadonnées désigne les métadonnées qui rendent des contenus décrits, recherchables,
+definition: Cette notion recouvre les métadonnées qui rendent des contenus décrits, recherchables,
   citables et reliables.
-abstract: Métadonnées définit un repère conceptuel en français pour comprendre les métadonnées qui
-  rendent des contenus décrits, recherchables, citables et reliables et ses liens avec les projets,
-  technologies et publications du graphe.
-description: Métadonnées définit un repère conceptuel en français pour comprendre les métadonnées
-  qui rendent des contenus décrits, recherchables, citables et reliables et ses liens avec les
-  projets, technologies et publications du graphe.
+abstract: Ce concept propose un cadre précis pour comprendre les métadonnées qui rendent des
+  contenus décrits, recherchables, citables et reliables et ses liens avec les projets, technologies
+  et publications associés.
+description: "Définition, usages, limites et relations associés au concept : Métadonnées."
 locale: fr
 visibility: public
 publicationClass: canonical
@@ -35,10 +33,8 @@ exclusions:
   - les usages purement promotionnels sans définition vérifiable
   - les exemples déconnectés des sources, relations ou contraintes du graphe
 claims:
-  - Métadonnées devient utile lorsque sa définition reste reliée à des sources, des pratiques et des
-    objets observables.
-  - La fiche sert de vocabulaire commun pour relier projets, publications et technologies sans
-    mélanger les langues.
+  - Une définition utile reste reliée à des sources, à des pratiques et à des objets observables.
+  - Un vocabulaire stable permet de relier projets, publications et technologies sans ambiguïté.
 sources:
   - title: DCMI Metadata Terms
     publisher: Dublin Core Metadata Initiative
@@ -60,16 +56,16 @@ translationOf: ea:concept:metadata
 
 ## Rôle
 
-Métadonnées est documenté comme notion de référence pour comprendre les métadonnées qui rendent des contenus décrits, recherchables, citables et reliables.
+Cette notion recouvre les métadonnées qui rendent des contenus décrits, recherchables, citables et reliables.
 
 ## Usage
 
-Cette fiche relie la notion aux projets, publications et technologies qui partagent un même vocabulaire de conception. Elle sert de point d'appui pour naviguer dans le graphe en version française.
+Elle fournit un vocabulaire stable pour relier les projets, publications et technologies concernés.
 
 ## Périmètre
 
-La notion est abordée par ses définitions, ses usages, ses limites et ses relations avec les autres objets documentés.
+Son périmètre comprend les définitions, les usages, les limites et les relations avec les autres objets documentés.
 
 ## Références
 
-Les sources principales restent disponibles dans le bloc de références de la fiche.
+Les références principales sont indiquées ci-dessous.

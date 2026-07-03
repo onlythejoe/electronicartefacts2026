@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/knowledge/concepts/event-driven-architecture/#webpage",
       "url": "https://electronicartefacts.com/fr/knowledge/concepts/event-driven-architecture/",
       "name": "Architecture événementielle",
-      "description": "Architecture événementielle définit un repère conceptuel en français pour comprendre les architectures ou les changements d'etat sont publies sous forme d'evenements et consommes par des composants decouples et ses liens avec les projets, technologies et publications du graphe.",
+      "description": "Définition, usages, limites et relations associés au concept : Architecture événementielle.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
@@ -34,8 +34,8 @@
       "@id": "https://electronicartefacts.com/fr/id/concept/event-driven-architecture/",
       "identifier": "ea:concept:event-driven-architecture-fr",
       "name": "Architecture événementielle",
-      "abstract": "Architecture événementielle définit un repère conceptuel en français pour comprendre les architectures ou les changements d'etat sont publies sous forme d'evenements et consommes par des composants decouples et ses liens avec les projets, technologies et publications du graphe.",
-      "description": "Architecture événementielle désigne les architectures ou les changements d'etat sont publies sous forme d'evenements et consommes par des composants decouples.",
+      "abstract": "Ce concept propose un cadre précis pour comprendre les architectures ou les changements d'etat sont publies sous forme d'evenements et consommes par des composants decouples et ses liens avec les projets, technologies et publications associés.",
+      "description": "Cette notion recouvre les architectures ou les changements d'etat sont publies sous forme d'evenements et consommes par des composants decouples.",
       "url": "https://electronicartefacts.com/fr/knowledge/concepts/event-driven-architecture/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/knowledge/concepts/event-driven-architecture/#webpage"
@@ -77,7 +77,7 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 93,
+      "wordCount": 60,
       "citation": [
         {
           "@type": "CreativeWork",

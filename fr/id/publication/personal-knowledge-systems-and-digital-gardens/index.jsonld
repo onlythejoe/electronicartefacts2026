@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/publications/personal-knowledge-systems-and-digital-gardens/#webpage",
       "url": "https://electronicartefacts.com/fr/publications/personal-knowledge-systems-and-digital-gardens/",
       "name": "Systèmes personnels de connaissance et jardins numériques",
-      "description": "Systèmes personnels de connaissance et jardins numériques propose une synthèse claire en français sur le sujet \"Systèmes personnels de connaissance et jardins numériques\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
+      "description": "Une approche des systèmes personnels de connaissance et des jardins numériques comme pratiques durables de notes, de sources, de liens retour, de révision et d’apprentissage public.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
@@ -35,8 +35,8 @@
       "identifier": "ea:publication:personal-knowledge-systems-and-digital-gardens-fr",
       "name": "Systèmes personnels de connaissance et jardins numériques",
       "headline": "Systèmes personnels de connaissance et jardins numériques",
-      "abstract": "Systèmes personnels de connaissance et jardins numériques propose une synthèse claire en français sur le sujet \"Systèmes personnels de connaissance et jardins numériques\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
-      "description": "Systèmes personnels de connaissance et jardins numériques propose une synthèse claire en français sur le sujet \"Systèmes personnels de connaissance et jardins numériques\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
+      "abstract": "Une approche des systèmes personnels de connaissance et des jardins numériques comme pratiques durables de notes, de sources, de liens retour, de révision et d’apprentissage public.",
+      "description": "Une approche des systèmes personnels de connaissance et des jardins numériques comme pratiques durables de notes, de sources, de liens retour, de révision et d’apprentissage public.",
       "url": "https://electronicartefacts.com/fr/publications/personal-knowledge-systems-and-digital-gardens/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/publications/personal-knowledge-systems-and-digital-gardens/#webpage"
@@ -76,7 +76,7 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 145,
+      "wordCount": 119,
       "citation": [
         "Electronic Artefacts. \"Systèmes personnels de connaissance et jardins numériques\". Article technique, version 1.0.0, 2026.",
         {

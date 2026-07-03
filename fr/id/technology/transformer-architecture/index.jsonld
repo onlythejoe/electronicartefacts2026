@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/knowledge/technologies/transformer-architecture/#webpage",
       "url": "https://electronicartefacts.com/fr/knowledge/technologies/transformer-architecture/",
       "name": "Architecture Transformer",
-      "description": "Architecture Transformer est présenté comme une technologie de référence pour comprendre son rôle dans l'écosystème Electronic Artefacts, ses usages, ses limites et sa place dans les systèmes numériques contemporains.",
+      "description": "Le transformer est une architecture de réseau neuronal fondée sur les mécanismes d’attention et le traitement parallèle des séquences.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
@@ -34,8 +34,8 @@
       "@id": "https://electronicartefacts.com/fr/id/technology/transformer-architecture/",
       "identifier": "ea:technology:transformer-architecture-fr",
       "name": "Architecture Transformer",
-      "abstract": "Architecture Transformer est présenté comme une technologie de référence pour comprendre son rôle dans l'écosystème Electronic Artefacts, ses usages, ses limites et sa place dans les systèmes numériques contemporains.",
-      "description": "Architecture Transformer est présenté comme une technologie de référence pour comprendre son rôle dans l'écosystème Electronic Artefacts, ses usages, ses limites et sa place dans les systèmes numériques contemporains.",
+      "abstract": "Le transformer est une architecture de réseau neuronal fondée sur les mécanismes d’attention et le traitement parallèle des séquences.",
+      "description": "Le transformer est une architecture de réseau neuronal fondée sur les mécanismes d’attention et le traitement parallèle des séquences.",
       "url": "https://electronicartefacts.com/fr/knowledge/technologies/transformer-architecture/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/knowledge/technologies/transformer-architecture/#webpage"
@@ -73,7 +73,7 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 95,
+      "wordCount": 82,
       "citation": [
         {
           "@type": "CreativeWork",

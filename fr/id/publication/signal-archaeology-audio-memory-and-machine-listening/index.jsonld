@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/publications/signal-archaeology-audio-memory-and-machine-listening/#webpage",
       "url": "https://electronicartefacts.com/fr/publications/signal-archaeology-audio-memory-and-machine-listening/",
       "name": "Archéologie du signal, mémoire audio et écoute machine",
-      "description": "Archéologie du signal, mémoire audio et écoute machine propose une synthèse claire en français sur le sujet \"Archéologie du signal, mémoire audio et écoute machine\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
+      "description": "Une présentation de l’archéologie du signal comme lecture des traces sonores et techniques, à travers l’analyse audio, la provenance, la mémoire et l’écoute machine.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
@@ -35,8 +35,8 @@
       "identifier": "ea:publication:signal-archaeology-audio-memory-and-machine-listening-fr",
       "name": "Archéologie du signal, mémoire audio et écoute machine",
       "headline": "Archéologie du signal, mémoire audio et écoute machine",
-      "abstract": "Archéologie du signal, mémoire audio et écoute machine propose une synthèse claire en français sur le sujet \"Archéologie du signal, mémoire audio et écoute machine\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
-      "description": "Archéologie du signal, mémoire audio et écoute machine propose une synthèse claire en français sur le sujet \"Archéologie du signal, mémoire audio et écoute machine\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
+      "abstract": "Une présentation de l’archéologie du signal comme lecture des traces sonores et techniques, à travers l’analyse audio, la provenance, la mémoire et l’écoute machine.",
+      "description": "Une présentation de l’archéologie du signal comme lecture des traces sonores et techniques, à travers l’analyse audio, la provenance, la mémoire et l’écoute machine.",
       "url": "https://electronicartefacts.com/fr/publications/signal-archaeology-audio-memory-and-machine-listening/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/publications/signal-archaeology-audio-memory-and-machine-listening/#webpage"
@@ -79,7 +79,7 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 147,
+      "wordCount": 113,
       "citation": [
         "Electronic Artefacts. \"Archéologie du signal, mémoire audio et écoute machine\". Article technique, version 1.0.0, 2026.",
         {

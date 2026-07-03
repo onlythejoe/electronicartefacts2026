@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/knowledge/technologies/opentelemetry/#webpage",
       "url": "https://electronicartefacts.com/fr/knowledge/technologies/opentelemetry/",
       "name": "OpenTelemetry",
-      "description": "OpenTelemetry est présenté comme une technologie de référence pour comprendre son rôle dans l'écosystème Electronic Artefacts, ses usages, ses limites et sa place dans les systèmes numériques contemporains.",
+      "description": "OpenTelemetry est un cadre d’observabilité destiné à produire, collecter et normaliser traces, métriques et journaux.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
@@ -34,8 +34,8 @@
       "@id": "https://electronicartefacts.com/fr/id/technology/opentelemetry/",
       "identifier": "ea:technology:opentelemetry-fr",
       "name": "OpenTelemetry",
-      "abstract": "OpenTelemetry est présenté comme une technologie de référence pour comprendre son rôle dans l'écosystème Electronic Artefacts, ses usages, ses limites et sa place dans les systèmes numériques contemporains.",
-      "description": "OpenTelemetry est présenté comme une technologie de référence pour comprendre son rôle dans l'écosystème Electronic Artefacts, ses usages, ses limites et sa place dans les systèmes numériques contemporains.",
+      "abstract": "OpenTelemetry est un cadre d’observabilité destiné à produire, collecter et normaliser traces, métriques et journaux.",
+      "description": "OpenTelemetry est un cadre d’observabilité destiné à produire, collecter et normaliser traces, métriques et journaux.",
       "url": "https://electronicartefacts.com/fr/knowledge/technologies/opentelemetry/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/knowledge/technologies/opentelemetry/#webpage"
@@ -75,7 +75,7 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 93,
+      "wordCount": 71,
       "citation": [
         {
           "@type": "CreativeWork",

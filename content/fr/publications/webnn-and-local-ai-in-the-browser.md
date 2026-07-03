@@ -5,12 +5,12 @@ slug:
   canonical: webnn-and-local-ai-in-the-browser
 title: WebNN et IA locale dans le navigateur
 subtitle: Article technique
-abstract: WebNN et IA locale dans le navigateur propose une synthèse claire en français sur le sujet
-  "WebNN et IA locale dans le navigateur" dans le graphe public d'Electronic Artefacts, avec un
-  angle utile pour la recherche, la conception et la publication de connaissances numériques.
-description: WebNN et IA locale dans le navigateur propose une synthèse claire en français sur le
-  sujet "WebNN et IA locale dans le navigateur" dans le graphe public d'Electronic Artefacts, avec
-  un angle utile pour la recherche, la conception et la publication de connaissances numériques.
+abstract: Une présentation de WebNN, de l’inférence locale dans le navigateur, de l’accélération
+  matérielle, des limites de confidentialité et des architectures d’apprentissage automatique sur le
+  Web.
+description: Une présentation de WebNN, de l’inférence locale dans le navigateur, de l’accélération
+  matérielle, des limites de confidentialité et des architectures d’apprentissage automatique sur le
+  Web.
 locale: fr
 visibility: public
 publicationClass: published
@@ -33,10 +33,10 @@ subjects:
   - id: ea:concept:human-computer-interaction
   - id: ea:concept:generative-ai
 claims:
-  - WebNN et IA locale dans le navigateur doit être lisible comme une synthèse française autonome,
-    sans phrases hybrides héritées de l'anglais.
-  - Les liens avec les notions, projets et technologies du graphe renforcent la recherche, la
-    navigation et la citation.
+  - L’inférence locale peut réduire la dépendance aux serveurs et renforcer la confidentialité, mais
+    reste limitée par l’appareil, le navigateur et la taille du modèle.
+  - WebNN trouve sa place dans un ensemble plus large comprenant conditionnement des modèles,
+    permissions, solutions de repli et contrôles visibles par l’utilisateur.
 evidence:
   - id: ea:technology:webnn
   - id: ea:concept:multimodal-ai
@@ -73,24 +73,24 @@ translationOf: ea:publication:webnn-and-local-ai-in-the-browser
 
 ## Problème
 
-WebNN et IA locale dans le navigateur examine le sujet "WebNN et IA locale dans le navigateur" dans le graphe public d'Electronic Artefacts. La fiche donne une entrée française stable, utilisable pour lire le sujet et relier ses sources au reste du graphe.
+Une présentation de WebNN, de l’inférence locale dans le navigateur, de l’accélération matérielle, des limites de confidentialité et des architectures d’apprentissage automatique sur le Web.
 
 ## Architecture
 
-Le sujet est abordé par ses relations avec les concepts, projets et technologies concernés, afin de rendre son contexte de conception lisible.
+L’inférence locale peut réduire la dépendance aux serveurs et renforcer la confidentialité, mais reste limitée par l’appareil, le navigateur et la taille du modèle. WebNN trouve sa place dans un ensemble plus large comprenant conditionnement des modèles, permissions, solutions de repli et contrôles visibles par l’utilisateur.
 
 ## Mise en œuvre
 
-La page décrit les usages, contraintes et choix de structure qui permettent d'appliquer le sujet dans des situations concrètes.
+L’analyse en précise les usages, les contraintes et les principaux arbitrages techniques.
 
 ## Éléments de preuve
 
-Les sources, relations et éléments de contexte restent attachés à la fiche pour distinguer synthèse éditoriale, preuves et références.
+Les arguments s’appuient sur les sources et les notions connexes citées dans l’article.
 
 ## Limites
 
-Les limites sont formulées par rapport au périmètre de la fiche, aux sources disponibles et aux conditions d'usage documentées.
+Les conclusions restent liées au périmètre des sources disponibles et aux conditions d’usage décrites.
 
 ## Références
 
-Les sources principales restent disponibles dans le bloc de références de la fiche.
+Les références principales sont indiquées ci-dessous.

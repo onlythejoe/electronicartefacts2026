@@ -7,8 +7,8 @@
   },
   "title": "Foundational Lineage #001",
   "subtitle": "Recherche Note",
-  "abstract": "Foundational Lineage #001 propose une synthèse claire en français sur le sujet \"Foundational Lineage #001\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
-  "description": "Foundational Lineage #001 propose une synthèse claire en français sur le sujet \"Foundational Lineage #001\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
+  "abstract": "Une note sur les premiers travaux d’architecture, de systèmes de communication et de documentation qui ont conduit à Electronic Artefacts, Runtime Theory et VASTE.",
+  "description": "Une note sur les premiers travaux d’architecture, de systèmes de communication et de documentation qui ont conduit à Electronic Artefacts, Runtime Theory et VASTE.",
   "locale": "fr",
   "visibility": "public",
   "publicationClass": "published",
@@ -44,8 +44,8 @@
     }
   ],
   "claims": [
-    "Foundational Lineage #001 doit être lisible comme une synthèse française autonome, sans phrases hybrides héritées de l'anglais.",
-    "Les liens avec les notions, projets et technologies du graphe renforcent la recherche, la navigation et la citation."
+    "Electronic Artefacts s’est construit autour d’une même attention portée à l’architecture, aux systèmes de communication, à la documentation industrielle, à la signalétique et aux taxonomies.",
+    "Cette filiation relie l’architecture de l’information, les runtimes et les structures publiques de connaissance."
   ],
   "evidence": [
     {
@@ -55,7 +55,7 @@
   "citation": {
     "preferred": "Electronic Artefacts. \"Foundational Lineage #001\". Article technique, version 1.0.0, 2026."
   },
-  "bodyHtml": "<h2 id=\"question\">Question</h2>\n<p>Foundational Lineage #001 examine le sujet “Foundational Lineage #001” dans le graphe public d’Electronic Artefacts. La fiche donne une entrée française stable, utilisable pour lire le sujet et relier ses sources au reste du graphe.</p>\n<h2 id=\"contexte\">Contexte</h2>\n<p>Le sujet est abordé par ses relations avec les concepts, projets et technologies concernés, afin de rendre son contexte de conception lisible.</p>\n<h2 id=\"observation\">Observation</h2>\n<p>La page décrit les usages, contraintes et choix de structure qui permettent d’appliquer le sujet dans des situations concrètes.</p>\n<h2 id=\"interpretation\">Interprétation</h2>\n<p>Les sources, relations et éléments de contexte restent attachés à la fiche pour distinguer synthèse éditoriale, preuves et références.</p>\n<h2 id=\"limites\">Limites</h2>\n<p>Les limites sont formulées par rapport au périmètre de la fiche, aux sources disponibles et aux conditions d’usage documentées.</p>\n<h2 id=\"references\">Références</h2>\n<p>Les sources associées sont conservées dans la fiche canonique du graphe.</p>\n",
+  "bodyHtml": "<h2 id=\"question\">Question</h2>\n<p>Une note sur les premiers travaux d’architecture, de systèmes de communication et de documentation qui ont conduit à Electronic Artefacts, Runtime Theory et VASTE.</p>\n<h2 id=\"contexte\">Contexte</h2>\n<p>Electronic Artefacts s’est construit autour d’une même attention portée à l’architecture, aux systèmes de communication, à la documentation industrielle, à la signalétique et aux taxonomies. Cette filiation relie l’architecture de l’information, les runtimes et les structures publiques de connaissance.</p>\n<h2 id=\"observation\">Observation</h2>\n<p>L’analyse en précise les usages, les contraintes et les principaux arbitrages techniques.</p>\n<h2 id=\"interpretation\">Interprétation</h2>\n<p>Les arguments s’appuient sur les sources et les notions connexes citées dans l’article.</p>\n<h2 id=\"limites\">Limites</h2>\n<p>Les conclusions restent liées au périmètre des sources disponibles et aux conditions d’usage décrites.</p>\n<h2 id=\"references\">Références</h2>\n<p>Aucune référence externe n’est associée à cette entrée.</p>\n",
   "headings": [
     "Question",
     "Contexte",

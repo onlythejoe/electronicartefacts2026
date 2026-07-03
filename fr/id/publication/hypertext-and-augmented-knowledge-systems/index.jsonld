@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/publications/hypertext-and-augmented-knowledge-systems/#webpage",
       "url": "https://electronicartefacts.com/fr/publications/hypertext-and-augmented-knowledge-systems/",
       "name": "Hypertexte et systèmes de connaissance augmentée",
-      "description": "Hypertexte et systèmes de connaissance augmentée propose une synthèse claire en français sur le sujet \"Hypertexte et systèmes de connaissance augmentée\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
+      "description": "Une histoire de l’hypertexte comme architecture durable de la connaissance, de Vannevar Bush et Douglas Engelbart aux liens web, graphes de connaissances et systèmes d’intelligence augmentée.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
@@ -35,8 +35,8 @@
       "identifier": "ea:publication:hypertext-and-augmented-knowledge-systems-fr",
       "name": "Hypertexte et systèmes de connaissance augmentée",
       "headline": "Hypertexte et systèmes de connaissance augmentée",
-      "abstract": "Hypertexte et systèmes de connaissance augmentée propose une synthèse claire en français sur le sujet \"Hypertexte et systèmes de connaissance augmentée\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
-      "description": "Hypertexte et systèmes de connaissance augmentée propose une synthèse claire en français sur le sujet \"Hypertexte et systèmes de connaissance augmentée\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
+      "abstract": "Une histoire de l’hypertexte comme architecture durable de la connaissance, de Vannevar Bush et Douglas Engelbart aux liens web, graphes de connaissances et systèmes d’intelligence augmentée.",
+      "description": "Une histoire de l’hypertexte comme architecture durable de la connaissance, de Vannevar Bush et Douglas Engelbart aux liens web, graphes de connaissances et systèmes d’intelligence augmentée.",
       "url": "https://electronicartefacts.com/fr/publications/hypertext-and-augmented-knowledge-systems/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/publications/hypertext-and-augmented-knowledge-systems/#webpage"
@@ -77,7 +77,7 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 143,
+      "wordCount": 117,
       "citation": [
         "Electronic Artefacts. \"Hypertexte et systèmes de connaissance augmentée\". Article technique, version 1.0.0, 2026.",
         {

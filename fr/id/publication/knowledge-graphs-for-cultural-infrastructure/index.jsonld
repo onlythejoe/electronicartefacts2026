@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/publications/knowledge-graphs-for-cultural-infrastructure/#webpage",
       "url": "https://electronicartefacts.com/fr/publications/knowledge-graphs-for-cultural-infrastructure/",
       "name": "Graphes de connaissances pour les infrastructures culturelles",
-      "description": "Graphes de connaissances pour les infrastructures culturelles propose une synthèse claire en français sur le sujet \"Graphes de connaissances pour les infrastructures culturelles\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
+      "description": "Une analyse de l’apport des graphes de connaissances aux infrastructures culturelles : identités stables pour les personnes, œuvres, sources, concepts, projets et archives, assorties de relations explicites.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
@@ -35,8 +35,8 @@
       "identifier": "ea:publication:knowledge-graphs-for-cultural-infrastructure-fr",
       "name": "Graphes de connaissances pour les infrastructures culturelles",
       "headline": "Graphes de connaissances pour les infrastructures culturelles",
-      "abstract": "Graphes de connaissances pour les infrastructures culturelles propose une synthèse claire en français sur le sujet \"Graphes de connaissances pour les infrastructures culturelles\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
-      "description": "Graphes de connaissances pour les infrastructures culturelles propose une synthèse claire en français sur le sujet \"Graphes de connaissances pour les infrastructures culturelles\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
+      "abstract": "Une analyse de l’apport des graphes de connaissances aux infrastructures culturelles : identités stables pour les personnes, œuvres, sources, concepts, projets et archives, assorties de relations explicites.",
+      "description": "Une analyse de l’apport des graphes de connaissances aux infrastructures culturelles : identités stables pour les personnes, œuvres, sources, concepts, projets et archives, assorties de relations explicites.",
       "url": "https://electronicartefacts.com/fr/publications/knowledge-graphs-for-cultural-infrastructure/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/publications/knowledge-graphs-for-cultural-infrastructure/#webpage"
@@ -78,7 +78,7 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 145,
+      "wordCount": 123,
       "citation": [
         "Electronic Artefacts. \"Graphes de connaissances pour les infrastructures culturelles\". Article technique, version 1.0.0, 2026.",
         {

@@ -5,12 +5,10 @@ slug:
   canonical: rdf
 title: RDF
 subtitle: Resource Description Framework
-abstract: RDF est présenté comme une technologie de référence pour comprendre son rôle dans
-  l'écosystème Electronic Artefacts, ses usages, ses limites et sa place dans les systèmes
-  numériques contemporains.
-description: RDF est présenté comme une technologie de référence pour comprendre son rôle dans
-  l'écosystème Electronic Artefacts, ses usages, ses limites et sa place dans les systèmes
-  numériques contemporains.
+abstract: RDF est un modèle de données en graphe du W3C qui représente l’information sous forme
+  d’énoncés sujet-prédicat-objet portant sur des ressources.
+description: RDF est un modèle de données en graphe du W3C qui représente l’information sous forme
+  d’énoncés sujet-prédicat-objet portant sur des ressources.
 locale: fr
 visibility: public
 publicationClass: published
@@ -26,9 +24,8 @@ authors:
   - id: ea:organization:electronic-artefacts
 publisher: ea:organization:electronic-artefacts
 category: protocol
-roleInEcosystem: RDF sert de repère technique pour évaluer le sujet "RDF" dans le graphe public
-  d'Electronic Artefacts, ses usages possibles et ses conséquences dans l'écosystème Electronic
-  Artefacts.
+roleInEcosystem: RDF fournit le modèle de référence pour penser entités, prédicats, ressources,
+  identifiants et interopérabilité sémantique.
 officialUrl: https://www.w3.org/TR/rdf11-concepts/
 versions:
   - RDF 1.1
@@ -51,17 +48,17 @@ translationOf: ea:technology:rdf
 
 ## Rôle
 
-RDF est documenté comme technologie de référence pour le sujet "RDF" dans le graphe public d'Electronic Artefacts.
+RDF est un modèle de données en graphe du W3C qui représente l’information sous forme d’énoncés sujet-prédicat-objet portant sur des ressources.
 
 ## Usage
 
-Cette fiche aide à situer la technologie dans l'écosystème Electronic Artefacts : ce qu'elle permet, quand elle devient pertinente et comment elle dialogue avec les autres composants du graphe.
+RDF fournit le modèle de référence pour penser entités, prédicats, ressources, identifiants et interopérabilité sémantique.
 
-## Points d'attention
+## Points d’attention
 
-- Les usages sont décrits en français sans masquer les noms propres, acronymes ou standards techniques.
-- Les limites restent contextualisées par rapport aux projets, aux publications et aux contraintes d'implémentation.
+- Les usages dépendent des contraintes du projet et du niveau d’interopérabilité recherché.
+- Les limites doivent être évaluées au regard des standards, des implémentations disponibles et de leur maturité.
 
 ## Références
 
-Les sources principales restent disponibles dans le bloc de références de la fiche.
+Les références principales sont indiquées ci-dessous.

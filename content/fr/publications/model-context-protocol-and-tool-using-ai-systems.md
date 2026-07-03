@@ -5,14 +5,10 @@ slug:
   canonical: model-context-protocol-and-tool-using-ai-systems
 title: Model Context Protocol et systèmes d'IA utilisant des outils
 subtitle: Article technique
-abstract: Model Context Protocol et systèmes d'IA utilisant des outils propose une synthèse claire
-  en français sur le sujet "Model Context Protocol et systèmes d'IA utilisant des outils" dans le
-  graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la
-  publication de connaissances numériques.
-description: Model Context Protocol et systèmes d'IA utilisant des outils propose une synthèse
-  claire en français sur le sujet "Model Context Protocol et systèmes d'IA utilisant des outils"
-  dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception
-  et la publication de connaissances numériques.
+abstract: Une présentation de MCP comme protocole d’intégration pour les ressources, prompts,
+  outils, consentements, frontières d’hôte et workflows d’IA contextualisés par un graphe.
+description: Une présentation de MCP comme protocole d’intégration pour les ressources, prompts,
+  outils, consentements, frontières d’hôte et workflows d’IA contextualisés par un graphe.
 locale: fr
 visibility: public
 publicationClass: published
@@ -35,10 +31,10 @@ subjects:
   - id: ea:concept:graph-runtime
   - id: ea:program:vaste
 claims:
-  - Model Context Protocol et systèmes d'IA utilisant des outils doit être lisible comme une
-    synthèse française autonome, sans phrases hybrides héritées de l'anglais.
-  - Les liens avec les notions, projets et technologies du graphe renforcent la recherche, la
-    navigation et la citation.
+  - MCP est d’abord un protocole de contexte et de capacités ; il ne crée pas, à lui seul,
+    l’autonomie d’un agent.
+  - Les systèmes d’IA outillés ont besoin de frontières d’hôte, de consentement, d’autorisations et
+    d’un contexte délimité.
 evidence:
   - id: ea:technology:model-context-protocol
   - id: ea:concept:contextual-execution
@@ -73,24 +69,24 @@ translationOf: ea:publication:model-context-protocol-and-tool-using-ai-systems
 
 ## Problème
 
-Model Context Protocol et systèmes d'IA utilisant des outils examine le sujet "Model Context Protocol et systèmes d'IA utilisant des outils" dans le graphe public d'Electronic Artefacts. La fiche donne une entrée française stable, utilisable pour lire le sujet et relier ses sources au reste du graphe.
+Une présentation de MCP comme protocole d’intégration pour les ressources, prompts, outils, consentements, frontières d’hôte et workflows d’IA contextualisés par un graphe.
 
 ## Architecture
 
-Le sujet est abordé par ses relations avec les concepts, projets et technologies concernés, afin de rendre son contexte de conception lisible.
+MCP est d’abord un protocole de contexte et de capacités ; il ne crée pas, à lui seul, l’autonomie d’un agent. Les systèmes d’IA outillés ont besoin de frontières d’hôte, de consentement, d’autorisations et d’un contexte délimité.
 
 ## Mise en œuvre
 
-La page décrit les usages, contraintes et choix de structure qui permettent d'appliquer le sujet dans des situations concrètes.
+L’analyse en précise les usages, les contraintes et les principaux arbitrages techniques.
 
 ## Éléments de preuve
 
-Les sources, relations et éléments de contexte restent attachés à la fiche pour distinguer synthèse éditoriale, preuves et références.
+Les arguments s’appuient sur les sources et les notions connexes citées dans l’article.
 
 ## Limites
 
-Les limites sont formulées par rapport au périmètre de la fiche, aux sources disponibles et aux conditions d'usage documentées.
+Les conclusions restent liées au périmètre des sources disponibles et aux conditions d’usage décrites.
 
 ## Références
 
-Les sources principales restent disponibles dans le bloc de références de la fiche.
+Les références principales sont indiquées ci-dessous.

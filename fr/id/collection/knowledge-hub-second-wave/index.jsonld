@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/archive/collections/knowledge-hub-second-wave/#webpage",
       "url": "https://electronicartefacts.com/fr/archive/collections/knowledge-hub-second-wave/",
       "name": "Hub de connaissance, deuxième vague",
-      "description": "Hub de connaissance, deuxième vague rassemble des fiches liées par un même axe éditorial, afin de donner une progression lisible aux archives de connaissance d'Electronic Artefacts.",
+      "description": "Une collection sur les cultures et pratiques numériques durables : hypertexte, systèmes personnels de connaissance, open source, métadonnées, audio web, programmation créative, graphisme procédural, mouvement et typographie.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
@@ -34,8 +34,8 @@
       "@id": "https://electronicartefacts.com/fr/id/collection/knowledge-hub-second-wave/",
       "identifier": "ea:collection:knowledge-hub-second-wave-fr",
       "name": "Hub de connaissance, deuxième vague",
-      "abstract": "Hub de connaissance, deuxième vague rassemble des fiches liées par un même axe éditorial, afin de donner une progression lisible aux archives de connaissance d'Electronic Artefacts.",
-      "description": "Hub de connaissance, deuxième vague rassemble des fiches liées par un même axe éditorial, afin de donner une progression lisible aux archives de connaissance d'Electronic Artefacts.",
+      "abstract": "Une collection sur les cultures et pratiques numériques durables : hypertexte, systèmes personnels de connaissance, open source, métadonnées, audio web, programmation créative, graphisme procédural, mouvement et typographie.",
+      "description": "Une collection sur les cultures et pratiques numériques durables : hypertexte, systèmes personnels de connaissance, open source, métadonnées, audio web, programmation créative, graphisme procédural, mouvement et typographie.",
       "url": "https://electronicartefacts.com/fr/archive/collections/knowledge-hub-second-wave/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/archive/collections/knowledge-hub-second-wave/#webpage"
@@ -77,7 +77,7 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 77
+      "wordCount": 78
     },
     {
       "@type": "Organization",

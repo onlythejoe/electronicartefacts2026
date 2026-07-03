@@ -5,14 +5,10 @@ slug:
   canonical: observability-for-ai-agents-and-tool-calling-systems
 title: Observabilité des agents d'IA et des systèmes d'appel d'outils
 subtitle: Article technique
-abstract: Observabilité des agents d'IA et des systèmes d'appel d'outils propose une synthèse claire
-  en français sur le sujet "Observabilité des agents d'IA et des systèmes d'appel d'outils" dans le
-  graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la
-  publication de connaissances numériques.
-description: Observabilité des agents d'IA et des systèmes d'appel d'outils propose une synthèse
-  claire en français sur le sujet "Observabilité des agents d'IA et des systèmes d'appel d'outils"
-  dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception
-  et la publication de connaissances numériques.
+abstract: Une présentation de la télémétrie appliquée aux agents d’IA, appels d’outils, traces,
+  événements, approbations, échecs, évaluations et responsabilités des runtimes de graphe.
+description: Une présentation de la télémétrie appliquée aux agents d’IA, appels d’outils, traces,
+  événements, approbations, échecs, évaluations et responsabilités des runtimes de graphe.
 locale: fr
 visibility: public
 publicationClass: published
@@ -35,10 +31,10 @@ subjects:
   - id: ea:concept:event-driven-architecture
   - id: ea:concept:contextual-execution
 claims:
-  - Observabilité des agents d'IA et des systèmes d'appel d'outils doit être lisible comme une
-    synthèse française autonome, sans phrases hybrides héritées de l'anglais.
-  - Les liens avec les notions, projets et technologies du graphe renforcent la recherche, la
-    navigation et la citation.
+  - L’observabilité d’un agent doit couvrir les appels au modèle et aux outils, les approbations, le
+    contexte récupéré et les effets produits à l’extérieur.
+  - La télémétrie doit documenter le comportement opérationnel sans enregistrer par défaut les
+    prompts sensibles ni les contenus privés.
 evidence:
   - id: ea:technology:opentelemetry
   - id: ea:technology:model-context-protocol
@@ -74,24 +70,24 @@ translationOf: ea:publication:observability-for-ai-agents-and-tool-calling-syste
 
 ## Problème
 
-Observabilité des agents d'IA et des systèmes d'appel d'outils examine le sujet "Observabilité des agents d'IA et des systèmes d'appel d'outils" dans le graphe public d'Electronic Artefacts. La fiche donne une entrée française stable, utilisable pour lire le sujet et relier ses sources au reste du graphe.
+Une présentation de la télémétrie appliquée aux agents d’IA, appels d’outils, traces, événements, approbations, échecs, évaluations et responsabilités des runtimes de graphe.
 
 ## Architecture
 
-Le sujet est abordé par ses relations avec les concepts, projets et technologies concernés, afin de rendre son contexte de conception lisible.
+L’observabilité d’un agent doit couvrir les appels au modèle et aux outils, les approbations, le contexte récupéré et les effets produits à l’extérieur. La télémétrie doit documenter le comportement opérationnel sans enregistrer par défaut les prompts sensibles ni les contenus privés.
 
 ## Mise en œuvre
 
-La page décrit les usages, contraintes et choix de structure qui permettent d'appliquer le sujet dans des situations concrètes.
+L’analyse en précise les usages, les contraintes et les principaux arbitrages techniques.
 
 ## Éléments de preuve
 
-Les sources, relations et éléments de contexte restent attachés à la fiche pour distinguer synthèse éditoriale, preuves et références.
+Les arguments s’appuient sur les sources et les notions connexes citées dans l’article.
 
 ## Limites
 
-Les limites sont formulées par rapport au périmètre de la fiche, aux sources disponibles et aux conditions d'usage documentées.
+Les conclusions restent liées au périmètre des sources disponibles et aux conditions d’usage décrites.
 
 ## Références
 
-Les sources principales restent disponibles dans le bloc de références de la fiche.
+Les références principales sont indiquées ci-dessous.

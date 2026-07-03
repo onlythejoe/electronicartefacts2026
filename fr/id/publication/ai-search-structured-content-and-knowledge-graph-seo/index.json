@@ -7,8 +7,8 @@
   },
   "title": "Recherche IA, contenu structuré et SEO par graphe de connaissances",
   "subtitle": "Article technique",
-  "abstract": "Recherche IA, contenu structuré et SEO par graphe de connaissances propose une synthèse claire en français sur le sujet \"Recherche IA, contenu structuré et SEO par graphe de connaissances\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
-  "description": "Recherche IA, contenu structuré et SEO par graphe de connaissances propose une synthèse claire en français sur le sujet \"Recherche IA, contenu structuré et SEO par graphe de connaissances\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
+  "abstract": "Une analyse de la visibilité dans les moteurs de recherche fondés sur l’IA, à travers le contenu structuré, JSON-LD, l’identité des entités, les graphes de connaissances et l’autorité éditoriale.",
+  "description": "Une analyse de la visibilité dans les moteurs de recherche fondés sur l’IA, à travers le contenu structuré, JSON-LD, l’identité des entités, les graphes de connaissances et l’autorité éditoriale.",
   "locale": "fr",
   "visibility": "public",
   "publicationClass": "published",
@@ -82,8 +82,8 @@
     }
   ],
   "claims": [
-    "Recherche IA, contenu structuré et SEO par graphe de connaissances doit être lisible comme une synthèse française autonome, sans phrases hybrides héritées de l'anglais.",
-    "Les liens avec les notions, projets et technologies du graphe renforcent la recherche, la navigation et la citation."
+    "La visibilité dans la recherche IA repose sur des contenus utiles, explorables et attribuables, non sur une couche supplémentaire d’astuces génératives.",
+    "Le SEO par graphe de connaissances relie entités, sources, relations et données structurées afin de rendre un corpus cohérent pour les lecteurs comme pour les systèmes de recherche."
   ],
   "evidence": [
     {
@@ -96,7 +96,7 @@
   "citation": {
     "preferred": "Electronic Artefacts. \"Recherche IA, contenu structuré et SEO par graphe de connaissances\". Article technique, version 1.0.0, 2026."
   },
-  "bodyHtml": "<h2 id=\"probleme\">Problème</h2>\n<p>Recherche IA, contenu structuré et SEO par graphe de connaissances examine le sujet “Recherche IA, contenu structuré et SEO par graphe de connaissances” dans le graphe public d’Electronic Artefacts. La fiche donne une entrée française stable, utilisable pour lire le sujet et relier ses sources au reste du graphe.</p>\n<h2 id=\"architecture\">Architecture</h2>\n<p>Le sujet est abordé par ses relations avec les concepts, projets et technologies concernés, afin de rendre son contexte de conception lisible.</p>\n<h2 id=\"mise-en-uvre\">Mise en œuvre</h2>\n<p>La page décrit les usages, contraintes et choix de structure qui permettent d’appliquer le sujet dans des situations concrètes.</p>\n<h2 id=\"elements-de-preuve\">Éléments de preuve</h2>\n<p>Les sources, relations et éléments de contexte restent attachés à la fiche pour distinguer synthèse éditoriale, preuves et références.</p>\n<h2 id=\"limites\">Limites</h2>\n<p>Les limites sont formulées par rapport au périmètre de la fiche, aux sources disponibles et aux conditions d’usage documentées.</p>\n<h2 id=\"references\">Références</h2>\n<p>Les sources principales restent disponibles dans le bloc de références de la fiche.</p>\n",
+  "bodyHtml": "<h2 id=\"probleme\">Problème</h2>\n<p>Une analyse de la visibilité dans les moteurs de recherche fondés sur l’IA, à travers le contenu structuré, JSON-LD, l’identité des entités, les graphes de connaissances et l’autorité éditoriale.</p>\n<h2 id=\"architecture\">Architecture</h2>\n<p>La visibilité dans la recherche IA repose sur des contenus utiles, explorables et attribuables, non sur une couche supplémentaire d’astuces génératives. Le SEO par graphe de connaissances relie entités, sources, relations et données structurées afin de rendre un corpus cohérent pour les lecteurs comme pour les systèmes de recherche.</p>\n<h2 id=\"mise-en-uvre\">Mise en œuvre</h2>\n<p>L’analyse en précise les usages, les contraintes et les principaux arbitrages techniques.</p>\n<h2 id=\"elements-de-preuve\">Éléments de preuve</h2>\n<p>Les arguments s’appuient sur les sources et les notions connexes citées dans l’article.</p>\n<h2 id=\"limites\">Limites</h2>\n<p>Les conclusions restent liées au périmètre des sources disponibles et aux conditions d’usage décrites.</p>\n<h2 id=\"references\">Références</h2>\n<p>Les références principales sont indiquées ci-dessous.</p>\n",
   "headings": [
     "Problème",
     "Architecture",

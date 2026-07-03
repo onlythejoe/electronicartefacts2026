@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/publications/redis-streams-for-orchestration/#webpage",
       "url": "https://electronicartefacts.com/fr/publications/redis-streams-for-orchestration/",
       "name": "Redis Streams pour l’orchestration",
-      "description": "Redis Streams pour l’orchestration propose une synthèse claire en français sur le sujet \"Redis Streams pour l’orchestration\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
+      "description": "Un guide de mise en œuvre de Redis Streams : groupes de consommateurs, accusés de réception, entrées en attente, reprises, idempotence, rétention et limites d’orchestration.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
@@ -35,8 +35,8 @@
       "identifier": "ea:publication:redis-streams-for-orchestration-fr",
       "name": "Redis Streams pour l’orchestration",
       "headline": "Redis Streams pour l’orchestration",
-      "abstract": "Redis Streams pour l’orchestration propose une synthèse claire en français sur le sujet \"Redis Streams pour l’orchestration\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
-      "description": "Redis Streams pour l’orchestration propose une synthèse claire en français sur le sujet \"Redis Streams pour l’orchestration\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
+      "abstract": "Un guide de mise en œuvre de Redis Streams : groupes de consommateurs, accusés de réception, entrées en attente, reprises, idempotence, rétention et limites d’orchestration.",
+      "description": "Un guide de mise en œuvre de Redis Streams : groupes de consommateurs, accusés de réception, entrées en attente, reprises, idempotence, rétention et limites d’orchestration.",
       "url": "https://electronicartefacts.com/fr/publications/redis-streams-for-orchestration/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/publications/redis-streams-for-orchestration/#webpage"
@@ -78,7 +78,7 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 139,
+      "wordCount": 115,
       "citation": [
         "Electronic Artefacts. \"Redis Streams pour l’orchestration\". Article technique, version 1.0.0, 2026.",
         {

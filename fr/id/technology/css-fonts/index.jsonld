@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/knowledge/technologies/css-fonts/#webpage",
       "url": "https://electronicartefacts.com/fr/knowledge/technologies/css-fonts/",
       "name": "CSS Fonts",
-      "description": "CSS Fonts est présenté comme une technologie de référence pour comprendre son rôle dans l'écosystème Electronic Artefacts, ses usages, ses limites et sa place dans les systèmes numériques contemporains.",
+      "description": "CSS Fonts définit la sélection des polices, les fontes web et le comportement typographique des interfaces et documents numériques.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
@@ -34,8 +34,8 @@
       "@id": "https://electronicartefacts.com/fr/id/technology/css-fonts/",
       "identifier": "ea:technology:css-fonts-fr",
       "name": "CSS Fonts",
-      "abstract": "CSS Fonts est présenté comme une technologie de référence pour comprendre son rôle dans l'écosystème Electronic Artefacts, ses usages, ses limites et sa place dans les systèmes numériques contemporains.",
-      "description": "CSS Fonts est présenté comme une technologie de référence pour comprendre son rôle dans l'écosystème Electronic Artefacts, ses usages, ses limites et sa place dans les systèmes numériques contemporains.",
+      "abstract": "CSS Fonts définit la sélection des polices, les fontes web et le comportement typographique des interfaces et documents numériques.",
+      "description": "CSS Fonts définit la sélection des polices, les fontes web et le comportement typographique des interfaces et documents numériques.",
       "url": "https://electronicartefacts.com/fr/knowledge/technologies/css-fonts/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/knowledge/technologies/css-fonts/#webpage"
@@ -73,7 +73,7 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 95,
+      "wordCount": 79,
       "citation": [
         {
           "@type": "CreativeWork",

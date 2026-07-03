@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/publications/prompt-injection-and-trust-boundaries-in-ai-knowledge-systems/#webpage",
       "url": "https://electronicartefacts.com/fr/publications/prompt-injection-and-trust-boundaries-in-ai-knowledge-systems/",
       "name": "Injection de prompt et frontières de confiance dans les systèmes de connaissance IA",
-      "description": "Injection de prompt et frontières de confiance dans les systèmes de connaissance IA propose une synthèse claire en français sur le sujet \"Injection de prompt et frontières de confiance dans les systèmes de connaissance IA\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
+      "description": "Une analyse de sécurité consacrée à l’injection de prompt, aux contenus récupérés, aux outils, aux serveurs MCP, aux frontières de confiance et aux permissions dans les systèmes de connaissance assistés par l’IA.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
@@ -35,8 +35,8 @@
       "identifier": "ea:publication:prompt-injection-and-trust-boundaries-in-ai-knowledge-systems-fr",
       "name": "Injection de prompt et frontières de confiance dans les systèmes de connaissance IA",
       "headline": "Injection de prompt et frontières de confiance dans les systèmes de connaissance IA",
-      "abstract": "Injection de prompt et frontières de confiance dans les systèmes de connaissance IA propose une synthèse claire en français sur le sujet \"Injection de prompt et frontières de confiance dans les systèmes de connaissance IA\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
-      "description": "Injection de prompt et frontières de confiance dans les systèmes de connaissance IA propose une synthèse claire en français sur le sujet \"Injection de prompt et frontières de confiance dans les systèmes de connaissance IA\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
+      "abstract": "Une analyse de sécurité consacrée à l’injection de prompt, aux contenus récupérés, aux outils, aux serveurs MCP, aux frontières de confiance et aux permissions dans les systèmes de connaissance assistés par l’IA.",
+      "description": "Une analyse de sécurité consacrée à l’injection de prompt, aux contenus récupérés, aux outils, aux serveurs MCP, aux frontières de confiance et aux permissions dans les systèmes de connaissance assistés par l’IA.",
       "url": "https://electronicartefacts.com/fr/publications/prompt-injection-and-trust-boundaries-in-ai-knowledge-systems/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/publications/prompt-injection-and-trust-boundaries-in-ai-knowledge-systems/#webpage"
@@ -78,7 +78,7 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 157,
+      "wordCount": 132,
       "citation": [
         "Electronic Artefacts. \"Injection de prompt et frontières de confiance dans les systèmes de connaissance IA\". Article technique, version 1.0.0, 2026.",
         {

@@ -130,7 +130,7 @@
         return navigationSection({
           eyebrow: "CONTINUE EXPLORING",
           title: "Use the ecosystem as a map, not a grid.",
-          copy: "The next useful surface depends on what you came here for. These paths keep the structure intact while making the next move explicit.",
+          copy: "Where you go next depends on what brought you here. These paths lead directly to the work, research, systems or archives that matter to you.",
           cards: [
             { kicker: "Home", title: "Projects", copy: "Move into public works and collaborations.", reason: "Best if you want to see what the studio makes.", cta: "Browse Projects", href: "./projects.html" },
             { kicker: "Home", title: "Research", copy: "Explore the theoretical and experimental branches.", reason: "Best if you want to understand the thinking behind the work.", cta: "Explore Research", href: "./research.html" },

@@ -5,15 +5,15 @@
       "@type": "WebPage",
       "@id": "https://electronicartefacts.com/fr/publications/ontologies-taxonomies-and-knowledge-modeling/#webpage",
       "url": "https://electronicartefacts.com/fr/publications/ontologies-taxonomies-and-knowledge-modeling/",
-      "name": "Ontologies, taxonomies et modelisation des connaissances",
-      "description": "Ontologies, taxonomies et modelisation des connaissances propose une synthèse claire en français sur le sujet \"Ontologies, taxonomies et modelisation des connaissances\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
+      "name": "Ontologies, taxonomies et modélisation des connaissances",
+      "description": "Un guide des taxonomies, thésaurus, folksonomies, ontologies, vocabulaires contrôlés, OWL, SKOS et pratiques durables de modélisation sémantique.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
       "primaryImageOfPage": {
         "@type": "ImageObject",
         "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-search.jpg",
-        "description": "Ontologies, taxonomies et modelisation des connaissances"
+        "description": "Ontologies, taxonomies et modélisation des connaissances"
       },
       "breadcrumb": {
         "@id": "https://electronicartefacts.com/fr/publications/ontologies-taxonomies-and-knowledge-modeling/#breadcrumb"
@@ -33,10 +33,10 @@
       "@type": "TechArticle",
       "@id": "https://electronicartefacts.com/fr/id/publication/ontologies-taxonomies-and-knowledge-modeling/",
       "identifier": "ea:publication:ontologies-taxonomies-and-knowledge-modeling-fr",
-      "name": "Ontologies, taxonomies et modelisation des connaissances",
-      "headline": "Ontologies, taxonomies et modelisation des connaissances",
-      "abstract": "Ontologies, taxonomies et modelisation des connaissances propose une synthèse claire en français sur le sujet \"Ontologies, taxonomies et modelisation des connaissances\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
-      "description": "Ontologies, taxonomies et modelisation des connaissances propose une synthèse claire en français sur le sujet \"Ontologies, taxonomies et modelisation des connaissances\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
+      "name": "Ontologies, taxonomies et modélisation des connaissances",
+      "headline": "Ontologies, taxonomies et modélisation des connaissances",
+      "abstract": "Un guide des taxonomies, thésaurus, folksonomies, ontologies, vocabulaires contrôlés, OWL, SKOS et pratiques durables de modélisation sémantique.",
+      "description": "Un guide des taxonomies, thésaurus, folksonomies, ontologies, vocabulaires contrôlés, OWL, SKOS et pratiques durables de modélisation sémantique.",
       "url": "https://electronicartefacts.com/fr/publications/ontologies-taxonomies-and-knowledge-modeling/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/publications/ontologies-taxonomies-and-knowledge-modeling/#webpage"
@@ -44,7 +44,7 @@
       "image": {
         "@type": "ImageObject",
         "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-search.jpg",
-        "description": "Ontologies, taxonomies et modelisation des connaissances"
+        "description": "Ontologies, taxonomies et modélisation des connaissances"
       },
       "author": [
         {
@@ -78,9 +78,9 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 143,
+      "wordCount": 108,
       "citation": [
-        "Electronic Artefacts. \"Ontologies, taxonomies et modelisation des connaissances\". Article technique, version 1.0.0, 2026.",
+        "Electronic Artefacts. \"Ontologies, taxonomies et modélisation des connaissances\". Article technique, version 1.0.0, 2026.",
         {
           "@type": "CreativeWork",
           "name": "OWL 2 Web Ontology Language Document Overview",
@@ -266,7 +266,7 @@
         {
           "@type": "ListItem",
           "position": 3,
-          "name": "Ontologies, taxonomies et modelisation des connaissances",
+          "name": "Ontologies, taxonomies et modélisation des connaissances",
           "item": "https://electronicartefacts.com/fr/publications/ontologies-taxonomies-and-knowledge-modeling/"
         }
       ]

@@ -641,7 +641,7 @@
           <article class="panel panel--soft">
             <p class="card__meta">Vision</p>
             <p class="card__copy">Design systems. Create artefacts. Shape futures.</p>
-            <p class="card__copy">The phrase works because it describes a pipeline, not a slogan.</p>
+            <p class="card__copy">Systems, artefacts and possible futures form one continuous field of practice.</p>
             ${tagRow(["Research", "Programs", "Projects", "Archive", "Production"], { compact: true })}
           </article>
         </div>
@@ -976,8 +976,8 @@
     return `
       <section class="panel knowledge-panel knowledge-panel--intro">
         <div class="section-head">
-          <p class="card__meta">Dossier frame</p>
-          <h2 class="card__title">A compact frame around the work.</h2>
+          <p class="card__meta">Project overview</p>
+          <h2 class="card__title">The work at a glance.</h2>
           <p class="lede">Status, dates and related material stay close so the piece can be read in context.</p>
         </div>
         <div class="detail-reference-strip">
@@ -2925,7 +2925,7 @@
     const lead = ranked[0] || entityById("vestiges");
     const system = ranked.find((item) => item.id === "unionmob") || ranked.find((item) => item.id !== lead?.id);
     const publicProof = entityById("oeil-de-meg") || ranked.find((item) => ![lead?.id, system?.id].includes(item.id));
-    const leadKicker = isFrench() ? "Notre prochain Flagship" : "Our next flagship";
+    const leadKicker = isFrench() ? "Notre prochain projet phare" : "Our next flagship";
 
     return `
       <section class="zone-card hero home-cinematic-hero intent-hero intent-hero--home">

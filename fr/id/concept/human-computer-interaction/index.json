@@ -6,9 +6,9 @@
     "canonical": "human-computer-interaction"
   },
   "title": "Interaction humain-machine",
-  "definition": "Interaction humain-machine désigne la conception des interactions entre personnes, interfaces, outils et environnements informatiques.",
-  "abstract": "Interaction humain-machine définit un repère conceptuel en français pour comprendre la conception des interactions entre personnes, interfaces, outils et environnements informatiques et ses liens avec les projets, technologies et publications du graphe.",
-  "description": "Interaction humain-machine définit un repère conceptuel en français pour comprendre la conception des interactions entre personnes, interfaces, outils et environnements informatiques et ses liens avec les projets, technologies et publications du graphe.",
+  "definition": "Cette notion recouvre la conception des interactions entre personnes, interfaces, outils et environnements informatiques.",
+  "abstract": "Ce concept propose un cadre précis pour comprendre la conception des interactions entre personnes, interfaces, outils et environnements informatiques et ses liens avec les projets, technologies et publications associés.",
+  "description": "Définition, usages, limites et relations associés au concept : Interaction humain-machine.",
   "locale": "fr",
   "visibility": "public",
   "publicationClass": "canonical",
@@ -58,10 +58,10 @@
     "les exemples déconnectés des sources, relations ou contraintes du graphe"
   ],
   "claims": [
-    "Interaction humain-machine devient utile lorsque sa définition reste reliée à des sources, des pratiques et des objets observables.",
-    "La fiche sert de vocabulaire commun pour relier projets, publications et technologies sans mélanger les langues."
+    "Une définition utile reste reliée à des sources, à des pratiques et à des objets observables.",
+    "Un vocabulaire stable permet de relier projets, publications et technologies sans ambiguïté."
   ],
-  "bodyHtml": "<h2 id=\"role\">Rôle</h2>\n<p>Interaction humain-machine est documenté comme notion de référence pour comprendre la conception des interactions entre personnes, interfaces, outils et environnements informatiques.</p>\n<h2 id=\"usage\">Usage</h2>\n<p>Cette fiche relie la notion aux projets, publications et technologies qui partagent un même vocabulaire de conception. Elle sert de point d’appui pour naviguer dans le graphe en version française.</p>\n<h2 id=\"perimetre\">Périmètre</h2>\n<p>La notion est abordée par ses définitions, ses usages, ses limites et ses relations avec les autres objets documentés.</p>\n<h2 id=\"references\">Références</h2>\n<p>Les sources principales restent disponibles dans le bloc de références de la fiche.</p>\n",
+  "bodyHtml": "<h2 id=\"role\">Rôle</h2>\n<p>Cette notion recouvre la conception des interactions entre personnes, interfaces, outils et environnements informatiques.</p>\n<h2 id=\"usage\">Usage</h2>\n<p>Elle fournit un vocabulaire stable pour relier les projets, publications et technologies concernés.</p>\n<h2 id=\"perimetre\">Périmètre</h2>\n<p>Son périmètre comprend les définitions, les usages, les limites et les relations avec les autres objets documentés.</p>\n<h2 id=\"references\">Références</h2>\n<p>Les références principales sont indiquées ci-dessous.</p>\n",
   "headings": [
     "Rôle",
     "Usage",

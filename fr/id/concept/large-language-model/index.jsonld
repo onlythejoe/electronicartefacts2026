@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/knowledge/concepts/large-language-model/#webpage",
       "url": "https://electronicartefacts.com/fr/knowledge/concepts/large-language-model/",
       "name": "Grand modèle de langage",
-      "description": "Grand modèle de langage définit un repère conceptuel en français pour comprendre les grands modèles de langage entraines à predire et generer des sequences de tokens à partir de corpus massifs et ses liens avec les projets, technologies et publications du graphe.",
+      "description": "Définition, usages, limites et relations associés au concept : Grand modèle de langage.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
@@ -37,8 +37,8 @@
       "alternateName": [
         "LLM"
       ],
-      "abstract": "Grand modèle de langage définit un repère conceptuel en français pour comprendre les grands modèles de langage entraines à predire et generer des sequences de tokens à partir de corpus massifs et ses liens avec les projets, technologies et publications du graphe.",
-      "description": "Grand modèle de langage désigne les grands modèles de langage entraines à predire et generer des sequences de tokens à partir de corpus massifs.",
+      "abstract": "Ce concept propose un cadre précis pour comprendre les grands modèles de langage entraines à predire et generer des sequences de tokens à partir de corpus massifs et ses liens avec les projets, technologies et publications associés.",
+      "description": "Cette notion recouvre les grands modèles de langage entraines à predire et generer des sequences de tokens à partir de corpus massifs.",
       "url": "https://electronicartefacts.com/fr/knowledge/concepts/large-language-model/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/knowledge/concepts/large-language-model/#webpage"
@@ -80,7 +80,7 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 97,
+      "wordCount": 62,
       "citation": [
         {
           "@type": "CreativeWork",

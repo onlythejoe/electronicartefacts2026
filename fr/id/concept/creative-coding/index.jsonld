@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/knowledge/concepts/creative-coding/#webpage",
       "url": "https://electronicartefacts.com/fr/knowledge/concepts/creative-coding/",
       "name": "Programmation créative",
-      "description": "Programmation créative définit un repère conceptuel en français pour comprendre l'usage du code comme médium artistique, exploratoire ou pedagogique et ses liens avec les projets, technologies et publications du graphe.",
+      "description": "Définition, usages, limites et relations associés au concept : Programmation créative.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
@@ -34,8 +34,8 @@
       "@id": "https://electronicartefacts.com/fr/id/concept/creative-coding/",
       "identifier": "ea:concept:creative-coding-fr",
       "name": "Programmation créative",
-      "abstract": "Programmation créative définit un repère conceptuel en français pour comprendre l'usage du code comme médium artistique, exploratoire ou pedagogique et ses liens avec les projets, technologies et publications du graphe.",
-      "description": "Programmation créative désigne l'usage du code comme médium artistique, exploratoire ou pedagogique.",
+      "abstract": "Ce concept propose un cadre précis pour comprendre l'usage du code comme médium artistique, exploratoire ou pédagogique et ses liens avec les projets, technologies et publications associés.",
+      "description": "Cette notion recouvre l'usage du code comme médium artistique, exploratoire ou pédagogique.",
       "url": "https://electronicartefacts.com/fr/knowledge/concepts/creative-coding/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/knowledge/concepts/creative-coding/#webpage"
@@ -75,7 +75,7 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 83,
+      "wordCount": 54,
       "inDefinedTermSet": "https://electronicartefacts.com/knowledge/concepts/",
       "termCode": "creative-coding"
     },

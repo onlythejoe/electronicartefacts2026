@@ -5,12 +5,10 @@ translationOf: ea:technology:web-animations
 slug:
   canonical: web-animations
 title: Web Animations
-abstract: Web Animations est présenté comme une technologie de référence pour comprendre son rôle
-  dans l'écosystème Electronic Artefacts, ses usages, ses limites et sa place dans les systèmes
-  numériques contemporains.
-description: Web Animations est présenté comme une technologie de référence pour comprendre son rôle
-  dans l'écosystème Electronic Artefacts, ses usages, ses limites et sa place dans les systèmes
-  numériques contemporains.
+abstract: Web Animations définit un modèle de temporisation et d’animation pour les changements de
+  présentation des pages web, ainsi que les interfaces de programmation associées.
+description: Web Animations définit un modèle de temporisation et d’animation pour les changements
+  de présentation des pages web, ainsi que les interfaces de programmation associées.
 locale: fr
 visibility: public
 publicationClass: canonical
@@ -26,9 +24,8 @@ authors:
   - id: ea:organization:electronic-artefacts
 publisher: ea:organization:electronic-artefacts
 category: platform
-roleInEcosystem: Web Animations sert de repère technique pour évaluer le sujet "Web Animations" dans
-  le graphe public d'Electronic Artefacts, ses usages possibles et ses conséquences dans
-  l'écosystème Electronic Artefacts.
+roleInEcosystem: Web Animations permet de traiter le mouvement comme une couche temporelle de
+  l’interface et du récit, plutôt que comme un simple décor.
 officialUrl: https://www.w3.org/TR/web-animations-1/
 sources:
   - title: Web Animations
@@ -48,17 +45,17 @@ disciplines:
 
 ## Rôle
 
-Web Animations est documenté comme technologie de référence pour le sujet "Web Animations" dans le graphe public d'Electronic Artefacts.
+Web Animations définit un modèle de temporisation et d’animation pour les changements de présentation des pages web, ainsi que les interfaces de programmation associées.
 
 ## Usage
 
-Cette fiche aide à situer la technologie dans l'écosystème Electronic Artefacts : ce qu'elle permet, quand elle devient pertinente et comment elle dialogue avec les autres composants du graphe.
+Web Animations permet de traiter le mouvement comme une couche temporelle de l’interface et du récit, plutôt que comme un simple décor.
 
-## Points d'attention
+## Points d’attention
 
-- Les usages sont décrits en français sans masquer les noms propres, acronymes ou standards techniques.
-- Les limites restent contextualisées par rapport aux projets, aux publications et aux contraintes d'implémentation.
+- Les usages dépendent des contraintes du projet et du niveau d’interopérabilité recherché.
+- Les limites doivent être évaluées au regard des standards, des implémentations disponibles et de leur maturité.
 
 ## Références
 
-Les sources principales restent disponibles dans le bloc de références de la fiche.
+Les références principales sont indiquées ci-dessous.

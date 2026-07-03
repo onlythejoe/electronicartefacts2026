@@ -5,10 +5,10 @@ slug:
   canonical: runtime-theory
 title: Théorie du runtime
 subtitle: Champ de recherche
-abstract: Théorie du runtime cadre un champ de recherche suivi par Electronic Artefacts, en reliant
-  questions ouvertes, prototypes, sources et hypothèses de travail.
-description: Théorie du runtime cadre un champ de recherche suivi par Electronic Artefacts, en
-  reliant questions ouvertes, prototypes, sources et hypothèses de travail.
+abstract: La théorie du runtime étudie les identités, relations, contextes et événements minimaux
+  nécessaires à l’exécution cohérente d’un système.
+description: Un champ de recherche sur les primitives d’exécution, l’identité, le contexte, les
+  relations et la propagation des événements.
 locale: fr
 visibility: public
 publicationClass: canonical
@@ -26,22 +26,21 @@ publisher: ea:organization:electronic-artefacts
 questions:
   - id: minimum-runtime
     status: active
-    question: Comment formaliser Théorie du runtime pour produire des interfaces, des preuves et des
-      relations exploitables ?
+    question: Quelles primitives minimales permettent à un univers d’entités d’exécuter des événements
+      de manière cohérente ?
   - id: contextual-execution
     status: active
-    question: Quels usages de Théorie du runtime doivent rester ouverts à l'experimentation et à la
-      verification ?
+    question: Comment l’identité et le contexte doivent-ils encadrer l’exécution et la propagation des
+      événements ?
 scope:
   - questions de recherche
   - hypothèses de conception
   - prototypes et preuves
   - relations avec le graphe public
 findings:
-  - Théorie du runtime demande une articulation claire entre vocabulaire, preuve et expérience
-    utilisateur.
+  - L’identité et le contexte doivent être explicites lorsqu’ils déterminent l’autorité d’exécution.
 openQuestions:
-  - Quels critères permettent d'evaluer Théorie du runtime dans des situations concrètes ?
+  - Comment délimiter le contexte d’exécution entre des services distribués ?
 tags:
   - Runtime
   - Theory
@@ -57,17 +56,17 @@ translationOf: ea:researchField:runtime-theory
 
 ## Champ
 
-Théorie du runtime décrit un espace de recherche actif pour Electronic Artefacts. Il relie le sujet "Théorie du runtime" dans le graphe public d'Electronic Artefacts à des questions, prototypes et méthodes qui peuvent évoluer dans le temps.
+La théorie du runtime étudie ce dont un univers d’entités a besoin, au minimum, pour exécuter des événements de manière cohérente. Elle porte sur les primitives d’exécution, l’identité, le contexte, les relations, la propagation des événements et les frontières qui maintiennent le système intelligible.
 
 ## Questions
 
-- Comment rendre les hypothèses suffisamment explicites pour être partagees, testées et reliées au graphe ?
-- Quelles preuves, interfaces ou architectures permettent de transformer ce champ en expérience utilisable ?
+- Quelles primitives sont indispensables à une exécution cohérente ?
+- Comment l’identité et le contexte encadrent-ils l’autorité et la propagation des événements ?
 
 ## Usage
 
-Cette fiche donne une entrée française au champ de recherche et conserve ses liens avec les projets, publications et technologies associés.
+VASTE en constitue le principal terrain d’application, tandis que Vestiges l’éprouve dans le contexte d’une plateforme culturelle fondée sur un graphe de connaissances.
 
 ## Références
 
-Les sources associées sont conservées dans la fiche canonique du graphe.
+Aucune référence externe n’est associée à cette entrée.

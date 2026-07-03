@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/knowledge/concepts/systems-thinking/#webpage",
       "url": "https://electronicartefacts.com/fr/knowledge/concepts/systems-thinking/",
       "name": "Pensée systémique",
-      "description": "Pensée systémique définit un repère conceptuel en français pour comprendre la lecture des situations par relations, limites, boucles, flux, delais et points de levier et ses liens avec les projets, technologies et publications du graphe.",
+      "description": "Définition, usages, limites et relations associés au concept : Pensée systémique.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
@@ -34,8 +34,8 @@
       "@id": "https://electronicartefacts.com/fr/id/concept/systems-thinking/",
       "identifier": "ea:concept:systems-thinking-fr",
       "name": "Pensée systémique",
-      "abstract": "Pensée systémique définit un repère conceptuel en français pour comprendre la lecture des situations par relations, limites, boucles, flux, delais et points de levier et ses liens avec les projets, technologies et publications du graphe.",
-      "description": "Pensée systémique désigne la lecture des situations par relations, limites, boucles, flux, delais et points de levier.",
+      "abstract": "Ce concept propose un cadre précis pour comprendre la lecture des situations par relations, limites, boucles, flux, delais et points de levier et ses liens avec les projets, technologies et publications associés.",
+      "description": "Cette notion recouvre la lecture des situations par relations, limites, boucles, flux, delais et points de levier.",
       "url": "https://electronicartefacts.com/fr/knowledge/concepts/systems-thinking/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/knowledge/concepts/systems-thinking/#webpage"
@@ -76,7 +76,7 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 90,
+      "wordCount": 57,
       "citation": [
         {
           "@type": "CreativeWork",

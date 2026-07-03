@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/publications/digital-preservation-and-living-archives/#webpage",
       "url": "https://electronicartefacts.com/fr/publications/digital-preservation-and-living-archives/",
       "name": "Préservation numérique et archives vivantes",
-      "description": "Préservation numérique et archives vivantes propose une synthèse claire en français sur le sujet \"Préservation numérique et archives vivantes\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
+      "description": "Une approche de la préservation numérique comme pratique culturelle active, qui maintient dans le temps les objets, métadonnées, provenances et contextes d’interprétation.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
@@ -35,8 +35,8 @@
       "identifier": "ea:publication:digital-preservation-and-living-archives-fr",
       "name": "Préservation numérique et archives vivantes",
       "headline": "Préservation numérique et archives vivantes",
-      "abstract": "Préservation numérique et archives vivantes propose une synthèse claire en français sur le sujet \"Préservation numérique et archives vivantes\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
-      "description": "Préservation numérique et archives vivantes propose une synthèse claire en français sur le sujet \"Préservation numérique et archives vivantes\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
+      "abstract": "Une approche de la préservation numérique comme pratique culturelle active, qui maintient dans le temps les objets, métadonnées, provenances et contextes d’interprétation.",
+      "description": "Une approche de la préservation numérique comme pratique culturelle active, qui maintient dans le temps les objets, métadonnées, provenances et contextes d’interprétation.",
       "url": "https://electronicartefacts.com/fr/publications/digital-preservation-and-living-archives/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/publications/digital-preservation-and-living-archives/#webpage"
@@ -78,7 +78,7 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 141,
+      "wordCount": 120,
       "citation": [
         "Electronic Artefacts. \"Préservation numérique et archives vivantes\". Article technique, version 1.0.0, 2026.",
         {

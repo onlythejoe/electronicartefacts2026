@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/publications/ai-search-structured-content-and-knowledge-graph-seo/#webpage",
       "url": "https://electronicartefacts.com/fr/publications/ai-search-structured-content-and-knowledge-graph-seo/",
       "name": "Recherche IA, contenu structuré et SEO par graphe de connaissances",
-      "description": "Recherche IA, contenu structuré et SEO par graphe de connaissances propose une synthèse claire en français sur le sujet \"Recherche IA, contenu structuré et SEO par graphe de connaissances\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
+      "description": "Une analyse de la visibilité dans les moteurs de recherche fondés sur l’IA, à travers le contenu structuré, JSON-LD, l’identité des entités, les graphes de connaissances et l’autorité éditoriale.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
@@ -35,8 +35,8 @@
       "identifier": "ea:publication:ai-search-structured-content-and-knowledge-graph-seo-fr",
       "name": "Recherche IA, contenu structuré et SEO par graphe de connaissances",
       "headline": "Recherche IA, contenu structuré et SEO par graphe de connaissances",
-      "abstract": "Recherche IA, contenu structuré et SEO par graphe de connaissances propose une synthèse claire en français sur le sujet \"Recherche IA, contenu structuré et SEO par graphe de connaissances\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
-      "description": "Recherche IA, contenu structuré et SEO par graphe de connaissances propose une synthèse claire en français sur le sujet \"Recherche IA, contenu structuré et SEO par graphe de connaissances\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
+      "abstract": "Une analyse de la visibilité dans les moteurs de recherche fondés sur l’IA, à travers le contenu structuré, JSON-LD, l’identité des entités, les graphes de connaissances et l’autorité éditoriale.",
+      "description": "Une analyse de la visibilité dans les moteurs de recherche fondés sur l’IA, à travers le contenu structuré, JSON-LD, l’identité des entités, les graphes de connaissances et l’autorité éditoriale.",
       "url": "https://electronicartefacts.com/fr/publications/ai-search-structured-content-and-knowledge-graph-seo/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/publications/ai-search-structured-content-and-knowledge-graph-seo/#webpage"
@@ -78,7 +78,7 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 151,
+      "wordCount": 133,
       "citation": [
         "Electronic Artefacts. \"Recherche IA, contenu structuré et SEO par graphe de connaissances\". Article technique, version 1.0.0, 2026.",
         {

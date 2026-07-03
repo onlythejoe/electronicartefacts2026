@@ -5,14 +5,12 @@ slug:
   canonical: knowledge-graphs-for-cultural-infrastructure
 title: Graphes de connaissances pour les infrastructures culturelles
 subtitle: Article technique
-abstract: Graphes de connaissances pour les infrastructures culturelles propose une synthèse claire
-  en français sur le sujet "Graphes de connaissances pour les infrastructures culturelles" dans le
-  graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la
-  publication de connaissances numériques.
-description: Graphes de connaissances pour les infrastructures culturelles propose une synthèse
-  claire en français sur le sujet "Graphes de connaissances pour les infrastructures culturelles"
-  dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception
-  et la publication de connaissances numériques.
+abstract: "Une analyse de l’apport des graphes de connaissances aux infrastructures culturelles :
+  identités stables pour les personnes, œuvres, sources, concepts, projets et archives, assorties de
+  relations explicites."
+description: "Une analyse de l’apport des graphes de connaissances aux infrastructures culturelles :
+  identités stables pour les personnes, œuvres, sources, concepts, projets et archives, assorties de
+  relations explicites."
 locale: fr
 visibility: public
 publicationClass: published
@@ -35,10 +33,10 @@ subjects:
   - id: ea:technology:rdf
   - id: ea:project:vestiges
 claims:
-  - Graphes de connaissances pour les infrastructures culturelles doit être lisible comme une
-    synthèse française autonome, sans phrases hybrides héritées de l'anglais.
-  - Les liens avec les notions, projets et technologies du graphe renforcent la recherche, la
-    navigation et la citation.
+  - Un graphe culturel est utile lorsqu’il conserve la provenance, l’incertitude et le sens des
+    relations, pas seulement la connectivité.
+  - Des pages statiques peuvent former un graphe public si les enregistrements, routes, données
+    structurées et relations sont produits depuis des sources typées.
 evidence:
   - id: ea:project:vestiges
   - id: ea:program:vaste
@@ -76,24 +74,24 @@ translationOf: ea:publication:knowledge-graphs-for-cultural-infrastructure
 
 ## Problème
 
-Graphes de connaissances pour les infrastructures culturelles examine le sujet "Graphes de connaissances pour les infrastructures culturelles" dans le graphe public d'Electronic Artefacts. La fiche donne une entrée française stable, utilisable pour lire le sujet et relier ses sources au reste du graphe.
+Une analyse de l’apport des graphes de connaissances aux infrastructures culturelles : identités stables pour les personnes, œuvres, sources, concepts, projets et archives, assorties de relations explicites.
 
 ## Architecture
 
-Le sujet est abordé par ses relations avec les concepts, projets et technologies concernés, afin de rendre son contexte de conception lisible.
+Un graphe culturel est utile lorsqu’il conserve la provenance, l’incertitude et le sens des relations, pas seulement la connectivité. Des pages statiques peuvent former un graphe public si les enregistrements, routes, données structurées et relations sont produits depuis des sources typées.
 
 ## Mise en œuvre
 
-La page décrit les usages, contraintes et choix de structure qui permettent d'appliquer le sujet dans des situations concrètes.
+L’analyse en précise les usages, les contraintes et les principaux arbitrages techniques.
 
 ## Éléments de preuve
 
-Les sources, relations et éléments de contexte restent attachés à la fiche pour distinguer synthèse éditoriale, preuves et références.
+Les arguments s’appuient sur les sources et les notions connexes citées dans l’article.
 
 ## Limites
 
-Les limites sont formulées par rapport au périmètre de la fiche, aux sources disponibles et aux conditions d'usage documentées.
+Les conclusions restent liées au périmètre des sources disponibles et aux conditions d’usage décrites.
 
 ## Références
 
-Les sources principales restent disponibles dans le bloc de références de la fiche.
+Les références principales sont indiquées ci-dessous.

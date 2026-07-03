@@ -445,7 +445,7 @@
         {
           "@type": "ListItem",
           "position": 42,
-          "name": "Identité d'entite",
+          "name": "Identité d’entité",
           "url": "https://electronicartefacts.com/fr/knowledge/concepts/entity-identity/",
           "item": {
             "@id": "https://electronicartefacts.com/fr/id/concept/entity-identity/"
@@ -1372,7 +1372,7 @@
         {
           "@type": "ListItem",
           "position": 145,
-          "name": "Ontologies, taxonomies et modelisation des connaissances",
+          "name": "Ontologies, taxonomies et modélisation des connaissances",
           "url": "https://electronicartefacts.com/fr/publications/ontologies-taxonomies-and-knowledge-modeling/",
           "item": {
             "@id": "https://electronicartefacts.com/fr/id/publication/ontologies-taxonomies-and-knowledge-modeling/"

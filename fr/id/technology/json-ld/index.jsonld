@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/knowledge/technologies/json-ld/#webpage",
       "url": "https://electronicartefacts.com/fr/knowledge/technologies/json-ld/",
       "name": "JSON-LD",
-      "description": "JSON-LD est présenté comme une technologie de référence pour comprendre son rôle dans l'écosystème Electronic Artefacts, ses usages, ses limites et sa place dans les systèmes numériques contemporains.",
+      "description": "JSON-LD est un format du W3C qui sérialise des données liées en JSON et rend les métadonnées sémantiques compatibles avec les pratiques courantes du développement web.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
@@ -34,8 +34,8 @@
       "@id": "https://electronicartefacts.com/fr/id/technology/json-ld/",
       "identifier": "ea:technology:json-ld-fr",
       "name": "JSON-LD",
-      "abstract": "JSON-LD est présenté comme une technologie de référence pour comprendre son rôle dans l'écosystème Electronic Artefacts, ses usages, ses limites et sa place dans les systèmes numériques contemporains.",
-      "description": "JSON-LD est présenté comme une technologie de référence pour comprendre son rôle dans l'écosystème Electronic Artefacts, ses usages, ses limites et sa place dans les systèmes numériques contemporains.",
+      "abstract": "JSON-LD est un format du W3C qui sérialise des données liées en JSON et rend les métadonnées sémantiques compatibles avec les pratiques courantes du développement web.",
+      "description": "JSON-LD est un format du W3C qui sérialise des données liées en JSON et rend les métadonnées sémantiques compatibles avec les pratiques courantes du développement web.",
       "url": "https://electronicartefacts.com/fr/knowledge/technologies/json-ld/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/knowledge/technologies/json-ld/#webpage"
@@ -74,7 +74,7 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 93,
+      "wordCount": 82,
       "citation": [
         {
           "@type": "CreativeWork",

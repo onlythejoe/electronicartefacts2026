@@ -5,14 +5,10 @@ slug:
   canonical: c2pa-content-credentials-and-generative-media-provenance
 title: C2PA, Content Credentials et provenance des médias génératifs
 subtitle: Article technique
-abstract: C2PA, Content Credentials et provenance des médias génératifs propose une synthèse claire
-  en français sur le sujet "C2PA, Content Credentials et provenance des médias génératifs" dans le
-  graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la
-  publication de connaissances numériques.
-description: C2PA, Content Credentials et provenance des médias génératifs propose une synthèse
-  claire en français sur le sujet "C2PA, Content Credentials et provenance des médias génératifs"
-  dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception
-  et la publication de connaissances numériques.
+abstract: "Une présentation pratique de C2PA et des Content Credentials : manifestes signés,
+  déclarations de provenance, limites de confiance et usages dans les archives."
+description: "Une présentation pratique de C2PA et des Content Credentials : manifestes signés,
+  déclarations de provenance, limites de confiance et usages dans les archives."
 locale: fr
 visibility: public
 publicationClass: published
@@ -35,10 +31,10 @@ subjects:
   - id: ea:concept:generative-ai
   - id: ea:project:palimpsests
 claims:
-  - C2PA, Content Credentials et provenance des médias génératifs doit être lisible comme une
-    synthèse française autonome, sans phrases hybrides héritées de l'anglais.
-  - Les liens avec les notions, projets et technologies du graphe renforcent la recherche, la
-    navigation et la citation.
+  - C2PA peut renforcer la provenance d’un média grâce à des déclarations signées, sans pour autant
+    prouver que son contenu est vrai ou culturellement pertinent.
+  - Les archives doivent considérer les Content Credentials comme une preuve parmi d’autres, aux
+    côtés des sources, des droits, de l’intégrité des fichiers et de l’interprétation éditoriale.
 evidence:
   - id: ea:technology:c2pa
   - id: ea:concept:provenance
@@ -74,24 +70,24 @@ translationOf: ea:publication:c2pa-content-credentials-and-generative-media-prov
 
 ## Problème
 
-C2PA, Content Credentials et provenance des médias génératifs examine le sujet "C2PA, Content Credentials et provenance des médias génératifs" dans le graphe public d'Electronic Artefacts. La fiche donne une entrée française stable, utilisable pour lire le sujet et relier ses sources au reste du graphe.
+Une présentation pratique de C2PA et des Content Credentials : manifestes signés, déclarations de provenance, limites de confiance et usages dans les archives.
 
 ## Architecture
 
-Le sujet est abordé par ses relations avec les concepts, projets et technologies concernés, afin de rendre son contexte de conception lisible.
+C2PA peut renforcer la provenance d’un média grâce à des déclarations signées, sans pour autant prouver que son contenu est vrai ou culturellement pertinent. Les archives doivent considérer les Content Credentials comme une preuve parmi d’autres, aux côtés des sources, des droits, de l’intégrité des fichiers et de l’interprétation éditoriale.
 
 ## Mise en œuvre
 
-La page décrit les usages, contraintes et choix de structure qui permettent d'appliquer le sujet dans des situations concrètes.
+L’analyse en précise les usages, les contraintes et les principaux arbitrages techniques.
 
 ## Éléments de preuve
 
-Les sources, relations et éléments de contexte restent attachés à la fiche pour distinguer synthèse éditoriale, preuves et références.
+Les arguments s’appuient sur les sources et les notions connexes citées dans l’article.
 
 ## Limites
 
-Les limites sont formulées par rapport au périmètre de la fiche, aux sources disponibles et aux conditions d'usage documentées.
+Les conclusions restent liées au périmètre des sources disponibles et aux conditions d’usage décrites.
 
 ## Références
 
-Les sources principales restent disponibles dans le bloc de références de la fiche.
+Les références principales sont indiquées ci-dessous.

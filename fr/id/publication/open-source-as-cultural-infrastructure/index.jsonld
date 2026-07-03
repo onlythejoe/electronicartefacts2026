@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/publications/open-source-as-cultural-infrastructure/#webpage",
       "url": "https://electronicartefacts.com/fr/publications/open-source-as-cultural-infrastructure/",
       "name": "L’open source comme infrastructure culturelle",
-      "description": "L’open source comme infrastructure culturelle propose une synthèse claire en français sur le sujet \"L’open source comme infrastructure culturelle\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
+      "description": "Une lecture de l’open source comme infrastructure culturelle, à travers les licences, la maintenance, les outils créatifs, les chaînes de dépendances, les communs et les systèmes publics de connaissance.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
@@ -35,8 +35,8 @@
       "identifier": "ea:publication:open-source-as-cultural-infrastructure-fr",
       "name": "L’open source comme infrastructure culturelle",
       "headline": "L’open source comme infrastructure culturelle",
-      "abstract": "L’open source comme infrastructure culturelle propose une synthèse claire en français sur le sujet \"L’open source comme infrastructure culturelle\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
-      "description": "L’open source comme infrastructure culturelle propose une synthèse claire en français sur le sujet \"L’open source comme infrastructure culturelle\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
+      "abstract": "Une lecture de l’open source comme infrastructure culturelle, à travers les licences, la maintenance, les outils créatifs, les chaînes de dépendances, les communs et les systèmes publics de connaissance.",
+      "description": "Une lecture de l’open source comme infrastructure culturelle, à travers les licences, la maintenance, les outils créatifs, les chaînes de dépendances, les communs et les systèmes publics de connaissance.",
       "url": "https://electronicartefacts.com/fr/publications/open-source-as-cultural-infrastructure/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/publications/open-source-as-cultural-infrastructure/#webpage"
@@ -75,7 +75,7 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 141,
+      "wordCount": 121,
       "citation": [
         "Electronic Artefacts. \"L’open source comme infrastructure culturelle\". Article technique, version 1.0.0, 2026.",
         {

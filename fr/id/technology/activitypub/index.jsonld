@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/knowledge/technologies/activitypub/#webpage",
       "url": "https://electronicartefacts.com/fr/knowledge/technologies/activitypub/",
       "name": "ActivityPub",
-      "description": "ActivityPub est présenté comme une technologie de référence pour comprendre son rôle dans l'écosystème Electronic Artefacts, ses usages, ses limites et sa place dans les systèmes numériques contemporains.",
+      "description": "ActivityPub est un protocole décentralisé de réseau social, normalisé par le W3C pour fédérer les échanges entre serveurs et entre clients et serveurs.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
@@ -34,8 +34,8 @@
       "@id": "https://electronicartefacts.com/fr/id/technology/activitypub/",
       "identifier": "ea:technology:activitypub-fr",
       "name": "ActivityPub",
-      "abstract": "ActivityPub est présenté comme une technologie de référence pour comprendre son rôle dans l'écosystème Electronic Artefacts, ses usages, ses limites et sa place dans les systèmes numériques contemporains.",
-      "description": "ActivityPub est présenté comme une technologie de référence pour comprendre son rôle dans l'écosystème Electronic Artefacts, ses usages, ses limites et sa place dans les systèmes numériques contemporains.",
+      "abstract": "ActivityPub est un protocole décentralisé de réseau social, normalisé par le W3C pour fédérer les échanges entre serveurs et entre clients et serveurs.",
+      "description": "ActivityPub est un protocole décentralisé de réseau social, normalisé par le W3C pour fédérer les échanges entre serveurs et entre clients et serveurs.",
       "url": "https://electronicartefacts.com/fr/knowledge/technologies/activitypub/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/knowledge/technologies/activitypub/#webpage"
@@ -74,7 +74,7 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 93,
+      "wordCount": 84,
       "citation": [
         {
           "@type": "CreativeWork",

@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/publications/foundational-lineage-001/#webpage",
       "url": "https://electronicartefacts.com/fr/publications/foundational-lineage-001/",
       "name": "Foundational Lineage #001",
-      "description": "Foundational Lineage #001 propose une synthèse claire en français sur le sujet \"Foundational Lineage #001\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
+      "description": "Une note sur les premiers travaux d’architecture, de systèmes de communication et de documentation qui ont conduit à Electronic Artefacts, Runtime Theory et VASTE.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
@@ -35,8 +35,8 @@
       "identifier": "ea:publication:foundational-lineage-001-fr",
       "name": "Foundational Lineage #001",
       "headline": "Foundational Lineage #001",
-      "abstract": "Foundational Lineage #001 propose une synthèse claire en français sur le sujet \"Foundational Lineage #001\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
-      "description": "Foundational Lineage #001 propose une synthèse claire en français sur le sujet \"Foundational Lineage #001\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
+      "abstract": "Une note sur les premiers travaux d’architecture, de systèmes de communication et de documentation qui ont conduit à Electronic Artefacts, Runtime Theory et VASTE.",
+      "description": "Une note sur les premiers travaux d’architecture, de systèmes de communication et de documentation qui ont conduit à Electronic Artefacts, Runtime Theory et VASTE.",
       "url": "https://electronicartefacts.com/fr/publications/foundational-lineage-001/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/publications/foundational-lineage-001/#webpage"
@@ -73,7 +73,7 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 131,
+      "wordCount": 116,
       "citation": [
         "Electronic Artefacts. \"Foundational Lineage #001\". Article technique, version 1.0.0, 2026."
       ],

@@ -1171,7 +1171,7 @@
           variant: "oreth",
           eyebrow: "PALIMPSESTS / ORETH",
           title: "Palimpsests",
-          copy: "Album cycle carried by ORETH. A single full surface, no nested panels.",
+          copy: "Palimpsests is an album cycle by ORETH, unfolding across five acts and an evolving archive.",
           tags: homeCardPills(palimpsests),
           actions: [
             { label: "Discover Palimpsests", href: "./palimpsests.html" },
@@ -1256,7 +1256,7 @@
           <aside class="panel panel--soft selected-works-panel__info">
             <p class="card__meta">CURATED PATH</p>
             <strong>${esc(routeCount)}</strong>
-            <p class="card__copy">Use this as the fast scan before entering the full project catalogue or archive.</p>
+            <p class="card__copy">A concise selection before you enter the full project catalogue or archive.</p>
             ${metricRail(
               [
                 { label: "Lead", value: lead.title || lead.category || lead.type || "Project", note: lead.statusLabel || lead.status || "", tone: "system", fill: 0.9 },

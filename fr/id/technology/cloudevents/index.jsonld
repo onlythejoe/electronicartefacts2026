@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/knowledge/technologies/cloudevents/#webpage",
       "url": "https://electronicartefacts.com/fr/knowledge/technologies/cloudevents/",
       "name": "CloudEvents",
-      "description": "CloudEvents est présenté comme une technologie de référence pour comprendre son rôle dans l'écosystème Electronic Artefacts, ses usages, ses limites et sa place dans les systèmes numériques contemporains.",
+      "description": "CloudEvents est une spécification de la CNCF qui décrit les données événementielles dans une enveloppe commune et portable.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
@@ -34,8 +34,8 @@
       "@id": "https://electronicartefacts.com/fr/id/technology/cloudevents/",
       "identifier": "ea:technology:cloudevents-fr",
       "name": "CloudEvents",
-      "abstract": "CloudEvents est présenté comme une technologie de référence pour comprendre son rôle dans l'écosystème Electronic Artefacts, ses usages, ses limites et sa place dans les systèmes numériques contemporains.",
-      "description": "CloudEvents est présenté comme une technologie de référence pour comprendre son rôle dans l'écosystème Electronic Artefacts, ses usages, ses limites et sa place dans les systèmes numériques contemporains.",
+      "abstract": "CloudEvents est une spécification de la CNCF qui décrit les données événementielles dans une enveloppe commune et portable.",
+      "description": "CloudEvents est une spécification de la CNCF qui décrit les données événementielles dans une enveloppe commune et portable.",
       "url": "https://electronicartefacts.com/fr/knowledge/technologies/cloudevents/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/knowledge/technologies/cloudevents/#webpage"
@@ -74,7 +74,7 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 93,
+      "wordCount": 78,
       "citation": [
         {
           "@type": "CreativeWork",

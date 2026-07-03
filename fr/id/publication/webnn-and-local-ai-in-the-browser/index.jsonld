@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/publications/webnn-and-local-ai-in-the-browser/#webpage",
       "url": "https://electronicartefacts.com/fr/publications/webnn-and-local-ai-in-the-browser/",
       "name": "WebNN et IA locale dans le navigateur",
-      "description": "WebNN et IA locale dans le navigateur propose une synthèse claire en français sur le sujet \"WebNN et IA locale dans le navigateur\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
+      "description": "Une présentation de WebNN, de l’inférence locale dans le navigateur, de l’accélération matérielle, des limites de confidentialité et des architectures d’apprentissage automatique sur le Web.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
@@ -35,8 +35,8 @@
       "identifier": "ea:publication:webnn-and-local-ai-in-the-browser-fr",
       "name": "WebNN et IA locale dans le navigateur",
       "headline": "WebNN et IA locale dans le navigateur",
-      "abstract": "WebNN et IA locale dans le navigateur propose une synthèse claire en français sur le sujet \"WebNN et IA locale dans le navigateur\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
-      "description": "WebNN et IA locale dans le navigateur propose une synthèse claire en français sur le sujet \"WebNN et IA locale dans le navigateur\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
+      "abstract": "Une présentation de WebNN, de l’inférence locale dans le navigateur, de l’accélération matérielle, des limites de confidentialité et des architectures d’apprentissage automatique sur le Web.",
+      "description": "Une présentation de WebNN, de l’inférence locale dans le navigateur, de l’accélération matérielle, des limites de confidentialité et des architectures d’apprentissage automatique sur le Web.",
       "url": "https://electronicartefacts.com/fr/publications/webnn-and-local-ai-in-the-browser/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/publications/webnn-and-local-ai-in-the-browser/#webpage"
@@ -77,7 +77,7 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 145,
+      "wordCount": 126,
       "citation": [
         "Electronic Artefacts. \"WebNN et IA locale dans le navigateur\". Article technique, version 1.0.0, 2026.",
         {

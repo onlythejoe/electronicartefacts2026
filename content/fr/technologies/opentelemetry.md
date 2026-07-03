@@ -4,12 +4,10 @@ type: technology
 slug:
   canonical: opentelemetry
 title: OpenTelemetry
-abstract: OpenTelemetry est présenté comme une technologie de référence pour comprendre son rôle
-  dans l'écosystème Electronic Artefacts, ses usages, ses limites et sa place dans les systèmes
-  numériques contemporains.
-description: OpenTelemetry est présenté comme une technologie de référence pour comprendre son rôle
-  dans l'écosystème Electronic Artefacts, ses usages, ses limites et sa place dans les systèmes
-  numériques contemporains.
+abstract: OpenTelemetry est un cadre d’observabilité destiné à produire, collecter et normaliser
+  traces, métriques et journaux.
+description: OpenTelemetry est un cadre d’observabilité destiné à produire, collecter et normaliser
+  traces, métriques et journaux.
 locale: fr
 visibility: public
 publicationClass: canonical
@@ -25,9 +23,8 @@ authors:
   - id: ea:organization:electronic-artefacts
 publisher: ea:organization:electronic-artefacts
 category: platform
-roleInEcosystem: OpenTelemetry sert de repère technique pour évaluer le sujet "OpenTelemetry" dans
-  le graphe public d'Electronic Artefacts, ses usages possibles et ses conséquences dans
-  l'écosystème Electronic Artefacts.
+roleInEcosystem: OpenTelemetry fournit aux systèmes distribués un vocabulaire commun pour les spans,
+  métriques, journaux, attributs et conventions sémantiques.
 officialUrl: https://opentelemetry.io/docs/specs/semconv/
 sources:
   - title: OpenTelemetry Semantic Conventions 1.42.0
@@ -48,17 +45,17 @@ translationOf: ea:technology:opentelemetry
 
 ## Rôle
 
-OpenTelemetry est documenté comme technologie de référence pour le sujet "OpenTelemetry" dans le graphe public d'Electronic Artefacts.
+OpenTelemetry est un cadre d’observabilité destiné à produire, collecter et normaliser traces, métriques et journaux.
 
 ## Usage
 
-Cette fiche aide à situer la technologie dans l'écosystème Electronic Artefacts : ce qu'elle permet, quand elle devient pertinente et comment elle dialogue avec les autres composants du graphe.
+OpenTelemetry fournit aux systèmes distribués un vocabulaire commun pour les spans, métriques, journaux, attributs et conventions sémantiques.
 
-## Points d'attention
+## Points d’attention
 
-- Les usages sont décrits en français sans masquer les noms propres, acronymes ou standards techniques.
-- Les limites restent contextualisées par rapport aux projets, aux publications et aux contraintes d'implémentation.
+- Les usages dépendent des contraintes du projet et du niveau d’interopérabilité recherché.
+- Les limites doivent être évaluées au regard des standards, des implémentations disponibles et de leur maturité.
 
 ## Références
 
-Les sources principales restent disponibles dans le bloc de références de la fiche.
+Les références principales sont indiquées ci-dessous.

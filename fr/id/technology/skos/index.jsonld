@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/knowledge/technologies/skos/#webpage",
       "url": "https://electronicartefacts.com/fr/knowledge/technologies/skos/",
       "name": "SKOS",
-      "description": "SKOS est présenté comme une technologie de référence pour comprendre son rôle dans l'écosystème Electronic Artefacts, ses usages, ses limites et sa place dans les systèmes numériques contemporains.",
+      "description": "SKOS est un modèle de données du W3C pour publier sur le Web thésaurus, taxonomies, classifications et autres systèmes d’organisation des connaissances.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
@@ -37,8 +37,8 @@
       "alternateName": [
         "Simple Knowledge Organization System"
       ],
-      "abstract": "SKOS est présenté comme une technologie de référence pour comprendre son rôle dans l'écosystème Electronic Artefacts, ses usages, ses limites et sa place dans les systèmes numériques contemporains.",
-      "description": "SKOS est présenté comme une technologie de référence pour comprendre son rôle dans l'écosystème Electronic Artefacts, ses usages, ses limites et sa place dans les systèmes numériques contemporains.",
+      "abstract": "SKOS est un modèle de données du W3C pour publier sur le Web thésaurus, taxonomies, classifications et autres systèmes d’organisation des connaissances.",
+      "description": "SKOS est un modèle de données du W3C pour publier sur le Web thésaurus, taxonomies, classifications et autres systèmes d’organisation des connaissances.",
       "url": "https://electronicartefacts.com/fr/knowledge/technologies/skos/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/knowledge/technologies/skos/#webpage"
@@ -77,7 +77,7 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 93,
+      "wordCount": 80,
       "citation": [
         {
           "@type": "CreativeWork",

@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/knowledge/technologies/webgl/#webpage",
       "url": "https://electronicartefacts.com/fr/knowledge/technologies/webgl/",
       "name": "WebGL",
-      "description": "WebGL est présenté comme une technologie de référence pour comprendre son rôle dans l'écosystème Electronic Artefacts, ses usages, ses limites et sa place dans les systèmes numériques contemporains.",
+      "description": "WebGL est une technologie web de rendu graphique 2D et 3D interactif accéléré par le processeur graphique des navigateurs compatibles.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
@@ -34,8 +34,8 @@
       "@id": "https://electronicartefacts.com/fr/id/technology/webgl/",
       "identifier": "ea:technology:webgl-fr",
       "name": "WebGL",
-      "abstract": "WebGL est présenté comme une technologie de référence pour comprendre son rôle dans l'écosystème Electronic Artefacts, ses usages, ses limites et sa place dans les systèmes numériques contemporains.",
-      "description": "WebGL est présenté comme une technologie de référence pour comprendre son rôle dans l'écosystème Electronic Artefacts, ses usages, ses limites et sa place dans les systèmes numériques contemporains.",
+      "abstract": "WebGL est une technologie web de rendu graphique 2D et 3D interactif accéléré par le processeur graphique des navigateurs compatibles.",
+      "description": "WebGL est une technologie web de rendu graphique 2D et 3D interactif accéléré par le processeur graphique des navigateurs compatibles.",
       "url": "https://electronicartefacts.com/fr/knowledge/technologies/webgl/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/knowledge/technologies/webgl/#webpage"
@@ -74,7 +74,7 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 93,
+      "wordCount": 78,
       "citation": [
         {
           "@type": "CreativeWork",

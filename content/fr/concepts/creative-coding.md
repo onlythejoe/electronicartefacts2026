@@ -4,14 +4,11 @@ type: concept
 slug:
   canonical: creative-coding
 title: Programmation créative
-definition: Programmation créative désigne l'usage du code comme médium artistique, exploratoire ou
-  pedagogique.
-abstract: Programmation créative définit un repère conceptuel en français pour comprendre l'usage du
-  code comme médium artistique, exploratoire ou pedagogique et ses liens avec les projets,
-  technologies et publications du graphe.
-description: Programmation créative définit un repère conceptuel en français pour comprendre l'usage
-  du code comme médium artistique, exploratoire ou pedagogique et ses liens avec les projets,
-  technologies et publications du graphe.
+definition: Cette notion recouvre l'usage du code comme médium artistique, exploratoire ou pédagogique.
+abstract: Ce concept propose un cadre précis pour comprendre l'usage du code comme médium
+  artistique, exploratoire ou pédagogique et ses liens avec les projets, technologies et
+  publications associés.
+description: "Définition, usages, limites et relations associés au concept : Programmation créative."
 locale: fr
 visibility: public
 publicationClass: canonical
@@ -35,10 +32,8 @@ exclusions:
   - les usages purement promotionnels sans définition vérifiable
   - les exemples déconnectés des sources, relations ou contraintes du graphe
 claims:
-  - Programmation créative devient utile lorsque sa définition reste reliée à des sources, des
-    pratiques et des objets observables.
-  - La fiche sert de vocabulaire commun pour relier projets, publications et technologies sans
-    mélanger les langues.
+  - Une définition utile reste reliée à des sources, à des pratiques et à des objets observables.
+  - Un vocabulaire stable permet de relier projets, publications et technologies sans ambiguïté.
 tags:
   - programmation créative
   - art numérique
@@ -56,16 +51,16 @@ translationOf: ea:concept:creative-coding
 
 ## Rôle
 
-Programmation créative est documenté comme notion de référence pour comprendre l'usage du code comme médium artistique, exploratoire ou pedagogique.
+Cette notion recouvre l'usage du code comme médium artistique, exploratoire ou pédagogique.
 
 ## Usage
 
-Cette fiche relie la notion aux projets, publications et technologies qui partagent un même vocabulaire de conception. Elle sert de point d'appui pour naviguer dans le graphe en version française.
+Elle fournit un vocabulaire stable pour relier les projets, publications et technologies concernés.
 
 ## Périmètre
 
-La notion est abordée par ses définitions, ses usages, ses limites et ses relations avec les autres objets documentés.
+Son périmètre comprend les définitions, les usages, les limites et les relations avec les autres objets documentés.
 
 ## Références
 
-Les sources associées sont conservées dans la fiche canonique du graphe.
+Aucune référence externe n’est associée à cette entrée.

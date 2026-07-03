@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/knowledge/technologies/web-audio-api/#webpage",
       "url": "https://electronicartefacts.com/fr/knowledge/technologies/web-audio-api/",
       "name": "Web Audio API",
-      "description": "Web Audio API est présenté comme une technologie de référence pour comprendre son rôle dans l'écosystème Electronic Artefacts, ses usages, ses limites et sa place dans les systèmes numériques contemporains.",
+      "description": "Web Audio API est une technologie du navigateur qui relie, synthétise, traite et analyse l’audio au moyen de nœuds connectés.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
@@ -34,8 +34,8 @@
       "@id": "https://electronicartefacts.com/fr/id/technology/web-audio-api/",
       "identifier": "ea:technology:web-audio-api-fr",
       "name": "Web Audio API",
-      "abstract": "Web Audio API est présenté comme une technologie de référence pour comprendre son rôle dans l'écosystème Electronic Artefacts, ses usages, ses limites et sa place dans les systèmes numériques contemporains.",
-      "description": "Web Audio API est présenté comme une technologie de référence pour comprendre son rôle dans l'écosystème Electronic Artefacts, ses usages, ses limites et sa place dans les systèmes numériques contemporains.",
+      "abstract": "Web Audio API est une technologie du navigateur qui relie, synthétise, traite et analyse l’audio au moyen de nœuds connectés.",
+      "description": "Web Audio API est une technologie du navigateur qui relie, synthétise, traite et analyse l’audio au moyen de nœuds connectés.",
       "url": "https://electronicartefacts.com/fr/knowledge/technologies/web-audio-api/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/knowledge/technologies/web-audio-api/#webpage"
@@ -74,7 +74,7 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 97,
+      "wordCount": 82,
       "citation": [
         {
           "@type": "CreativeWork",

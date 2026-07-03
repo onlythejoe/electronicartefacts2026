@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/knowledge/concepts/knowledge-graph/#webpage",
       "url": "https://electronicartefacts.com/fr/knowledge/concepts/knowledge-graph/",
       "name": "Graphe de connaissances",
-      "description": "Graphe de connaissances définit un repère conceptuel en français pour comprendre les graphes de connaissances qui structurent des entités, des relations, des sources et des preuves et ses liens avec les projets, technologies et publications du graphe.",
+      "description": "Définition, usages, limites et relations associés au concept : Graphe de connaissances.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
@@ -34,8 +34,8 @@
       "@id": "https://electronicartefacts.com/fr/id/concept/knowledge-graph/",
       "identifier": "ea:concept:knowledge-graph-fr",
       "name": "Graphe de connaissances",
-      "abstract": "Graphe de connaissances définit un repère conceptuel en français pour comprendre les graphes de connaissances qui structurent des entités, des relations, des sources et des preuves et ses liens avec les projets, technologies et publications du graphe.",
-      "description": "Graphe de connaissances désigne les graphes de connaissances qui structurent des entités, des relations, des sources et des preuves.",
+      "abstract": "Ce concept propose un cadre précis pour comprendre les graphes de connaissances qui structurent des entités, des relations, des sources et des preuves et ses liens avec les projets, technologies et publications associés.",
+      "description": "Cette notion recouvre les graphes de connaissances qui structurent des entités, des relations, des sources et des preuves.",
       "url": "https://electronicartefacts.com/fr/knowledge/concepts/knowledge-graph/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/knowledge/concepts/knowledge-graph/#webpage"
@@ -77,7 +77,7 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 92,
+      "wordCount": 58,
       "citation": [
         {
           "@type": "CreativeWork",

@@ -5,12 +5,10 @@ translationOf: ea:technology:css-fonts
 slug:
   canonical: css-fonts
 title: CSS Fonts
-abstract: CSS Fonts est présenté comme une technologie de référence pour comprendre son rôle dans
-  l'écosystème Electronic Artefacts, ses usages, ses limites et sa place dans les systèmes
-  numériques contemporains.
-description: CSS Fonts est présenté comme une technologie de référence pour comprendre son rôle dans
-  l'écosystème Electronic Artefacts, ses usages, ses limites et sa place dans les systèmes
-  numériques contemporains.
+abstract: CSS Fonts définit la sélection des polices, les fontes web et le comportement
+  typographique des interfaces et documents numériques.
+description: CSS Fonts définit la sélection des polices, les fontes web et le comportement
+  typographique des interfaces et documents numériques.
 locale: fr
 visibility: public
 publicationClass: canonical
@@ -26,9 +24,8 @@ authors:
   - id: ea:organization:electronic-artefacts
 publisher: ea:organization:electronic-artefacts
 category: platform
-roleInEcosystem: CSS Fonts sert de repère technique pour évaluer le sujet "CSS Fonts" dans le graphe
-  public d'Electronic Artefacts, ses usages possibles et ses conséquences dans l'écosystème
-  Electronic Artefacts.
+roleInEcosystem: CSS Fonts soutient une typographie web durable pour les articles longs, les pages
+  de connaissance et les systèmes de lecture accessibles.
 officialUrl: https://www.w3.org/TR/css-fonts-4/
 sources:
   - title: CSS Fonts Module Level 4
@@ -47,17 +44,17 @@ disciplines:
 
 ## Rôle
 
-CSS Fonts est documenté comme technologie de référence pour le sujet "CSS Fonts" dans le graphe public d'Electronic Artefacts.
+CSS Fonts définit la sélection des polices, les fontes web et le comportement typographique des interfaces et documents numériques.
 
 ## Usage
 
-Cette fiche aide à situer la technologie dans l'écosystème Electronic Artefacts : ce qu'elle permet, quand elle devient pertinente et comment elle dialogue avec les autres composants du graphe.
+CSS Fonts soutient une typographie web durable pour les articles longs, les pages de connaissance et les systèmes de lecture accessibles.
 
-## Points d'attention
+## Points d’attention
 
-- Les usages sont décrits en français sans masquer les noms propres, acronymes ou standards techniques.
-- Les limites restent contextualisées par rapport aux projets, aux publications et aux contraintes d'implémentation.
+- Les usages dépendent des contraintes du projet et du niveau d’interopérabilité recherché.
+- Les limites doivent être évaluées au regard des standards, des implémentations disponibles et de leur maturité.
 
 ## Références
 
-Les sources principales restent disponibles dans le bloc de références de la fiche.
+Les références principales sont indiquées ci-dessous.

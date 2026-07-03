@@ -4,14 +4,12 @@ type: concept
 slug:
   canonical: contextual-execution
 title: Exécution contextuelle
-definition: Exécution contextuelle désigne le sujet "Exécution contextuelle" dans le graphe public
-  d'Electronic Artefacts.
-abstract: Exécution contextuelle définit un repère conceptuel en français pour comprendre le sujet
-  "Exécution contextuelle" dans le graphe public d'Electronic Artefacts et ses liens avec les
-  projets, technologies et publications du graphe.
-description: Exécution contextuelle définit un repère conceptuel en français pour comprendre le
-  sujet "Exécution contextuelle" dans le graphe public d'Electronic Artefacts et ses liens avec les
-  projets, technologies et publications du graphe.
+definition: Cette notion recouvre l’exécution d’opérations selon l’identité, l’état, les relations,
+  les permissions et la situation courante du système.
+abstract: Ce concept propose un cadre précis pour comprendre l’exécution d’opérations selon
+  l’identité, l’état, les relations, les permissions et la situation courante du système et ses
+  liens avec les projets, technologies et publications associés.
+description: "Définition, usages, limites et relations associés au concept : Exécution contextuelle."
 locale: fr
 visibility: public
 publicationClass: canonical
@@ -35,10 +33,8 @@ exclusions:
   - les usages purement promotionnels sans définition vérifiable
   - les exemples déconnectés des sources, relations ou contraintes du graphe
 claims:
-  - Exécution contextuelle devient utile lorsque sa définition reste reliée à des sources, des
-    pratiques et des objets observables.
-  - La fiche sert de vocabulaire commun pour relier projets, publications et technologies sans
-    mélanger les langues.
+  - Une définition utile reste reliée à des sources, à des pratiques et à des objets observables.
+  - Un vocabulaire stable permet de relier projets, publications et technologies sans ambiguïté.
 tags:
   - Context
   - Exécution
@@ -55,16 +51,16 @@ translationOf: ea:concept:contextual-execution
 
 ## Rôle
 
-Exécution contextuelle est documenté comme notion de référence pour comprendre le sujet "Exécution contextuelle" dans le graphe public d'Electronic Artefacts.
+Cette notion recouvre l’exécution d’opérations selon l’identité, l’état, les relations, les permissions et la situation courante du système.
 
 ## Usage
 
-Cette fiche relie la notion aux projets, publications et technologies qui partagent un même vocabulaire de conception. Elle sert de point d'appui pour naviguer dans le graphe en version française.
+Elle fournit un vocabulaire stable pour relier les projets, publications et technologies concernés.
 
 ## Périmètre
 
-La notion est abordée par ses définitions, ses usages, ses limites et ses relations avec les autres objets documentés.
+Son périmètre comprend les définitions, les usages, les limites et les relations avec les autres objets documentés.
 
 ## Références
 
-Les sources associées sont conservées dans la fiche canonique du graphe.
+Aucune référence externe n’est associée à cette entrée.

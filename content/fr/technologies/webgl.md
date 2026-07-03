@@ -5,12 +5,10 @@ translationOf: ea:technology:webgl
 slug:
   canonical: webgl
 title: WebGL
-abstract: WebGL est présenté comme une technologie de référence pour comprendre son rôle dans
-  l'écosystème Electronic Artefacts, ses usages, ses limites et sa place dans les systèmes
-  numériques contemporains.
-description: WebGL est présenté comme une technologie de référence pour comprendre son rôle dans
-  l'écosystème Electronic Artefacts, ses usages, ses limites et sa place dans les systèmes
-  numériques contemporains.
+abstract: WebGL est une technologie web de rendu graphique 2D et 3D interactif accéléré par le
+  processeur graphique des navigateurs compatibles.
+description: WebGL est une technologie web de rendu graphique 2D et 3D interactif accéléré par le
+  processeur graphique des navigateurs compatibles.
 locale: fr
 visibility: public
 publicationClass: canonical
@@ -26,9 +24,8 @@ authors:
   - id: ea:organization:electronic-artefacts
 publisher: ea:organization:electronic-artefacts
 category: platform
-roleInEcosystem: WebGL sert de repère technique pour évaluer le sujet "WebGL" dans le graphe public
-  d'Electronic Artefacts, ses usages possibles et ses conséquences dans l'écosystème Electronic
-  Artefacts.
+roleInEcosystem: WebGL permet le graphisme procédural, les expérimentations de shaders, les visuels
+  en temps réel et les interfaces culturelles interactives.
 officialUrl: https://www.khronos.org/webgl/
 sources:
   - title: WebGL
@@ -47,17 +44,17 @@ disciplines:
 
 ## Rôle
 
-WebGL est documenté comme technologie de référence pour le sujet "WebGL" dans le graphe public d'Electronic Artefacts.
+WebGL est une technologie web de rendu graphique 2D et 3D interactif accéléré par le processeur graphique des navigateurs compatibles.
 
 ## Usage
 
-Cette fiche aide à situer la technologie dans l'écosystème Electronic Artefacts : ce qu'elle permet, quand elle devient pertinente et comment elle dialogue avec les autres composants du graphe.
+WebGL permet le graphisme procédural, les expérimentations de shaders, les visuels en temps réel et les interfaces culturelles interactives.
 
-## Points d'attention
+## Points d’attention
 
-- Les usages sont décrits en français sans masquer les noms propres, acronymes ou standards techniques.
-- Les limites restent contextualisées par rapport aux projets, aux publications et aux contraintes d'implémentation.
+- Les usages dépendent des contraintes du projet et du niveau d’interopérabilité recherché.
+- Les limites doivent être évaluées au regard des standards, des implémentations disponibles et de leur maturité.
 
 ## Références
 
-Les sources principales restent disponibles dans le bloc de références de la fiche.
+Les références principales sont indiquées ci-dessous.

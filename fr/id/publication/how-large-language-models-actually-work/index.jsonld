@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/publications/how-large-language-models-actually-work/#webpage",
       "url": "https://electronicartefacts.com/fr/publications/how-large-language-models-actually-work/",
       "name": "Comment fonctionnent vraiment les grands modèles de langage",
-      "description": "Comment fonctionnent vraiment les grands modèles de langage propose une synthèse claire en français sur le sujet \"Comment fonctionnent vraiment les grands modèles de langage\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
+      "description": "Une explication concrète de la manière dont les grands modèles de langage transforment des tokens en prédictions grâce aux embeddings, aux couches transformer, à l’attention, à l’entraînement et à l’inférence probabiliste.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
@@ -35,8 +35,8 @@
       "identifier": "ea:publication:how-large-language-models-actually-work-fr",
       "name": "Comment fonctionnent vraiment les grands modèles de langage",
       "headline": "Comment fonctionnent vraiment les grands modèles de langage",
-      "abstract": "Comment fonctionnent vraiment les grands modèles de langage propose une synthèse claire en français sur le sujet \"Comment fonctionnent vraiment les grands modèles de langage\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
-      "description": "Comment fonctionnent vraiment les grands modèles de langage propose une synthèse claire en français sur le sujet \"Comment fonctionnent vraiment les grands modèles de langage\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
+      "abstract": "Une explication concrète de la manière dont les grands modèles de langage transforment des tokens en prédictions grâce aux embeddings, aux couches transformer, à l’attention, à l’entraînement et à l’inférence probabiliste.",
+      "description": "Une explication concrète de la manière dont les grands modèles de langage transforment des tokens en prédictions grâce aux embeddings, aux couches transformer, à l’attention, à l’entraînement et à l’inférence probabiliste.",
       "url": "https://electronicartefacts.com/fr/publications/how-large-language-models-actually-work/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/publications/how-large-language-models-actually-work/#webpage"
@@ -78,7 +78,7 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 147,
+      "wordCount": 132,
       "citation": [
         "Electronic Artefacts. \"Comment fonctionnent vraiment les grands modèles de langage\". Article technique, version 1.0.0, 2026.",
         {

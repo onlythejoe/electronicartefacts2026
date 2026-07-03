@@ -137,7 +137,7 @@ Les preuves publiques actuelles sont architecturales : définition du produit, m
 
 ## État du développement
 
-Vestiges est en développement actif. Cette fiche publique décrit la thèse produit et l’architecture actuelle ; les interfaces, détails d’implémentation et conditions d’accès évolueront au fil de versions documentées.
+Vestiges est en développement actif. La thèse produit et l’architecture présentées ici reflètent l’état actuel du projet ; les interfaces, détails d’implémentation et conditions d’accès évolueront au fil de versions documentées.
 
 ## Canal public
 

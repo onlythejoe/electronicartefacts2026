@@ -5,15 +5,15 @@
       "@type": "WebPage",
       "@id": "https://electronicartefacts.com/fr/knowledge/concepts/entity-identity/#webpage",
       "url": "https://electronicartefacts.com/fr/knowledge/concepts/entity-identity/",
-      "name": "Identité d'entite",
-      "description": "Identité d'entite définit un repère conceptuel en français pour comprendre le sujet \"Identité d'entite\" dans le graphe public d'Electronic Artefacts et ses liens avec les projets, technologies et publications du graphe.",
+      "name": "Identité d’entité",
+      "description": "Définition, usages, limites et relations associés au concept : Identité d’entité.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
       "primaryImageOfPage": {
         "@type": "ImageObject",
         "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-search.jpg",
-        "description": "Identité d'entite"
+        "description": "Identité d’entité"
       },
       "breadcrumb": {
         "@id": "https://electronicartefacts.com/fr/knowledge/concepts/entity-identity/#breadcrumb"
@@ -33,9 +33,9 @@
       "@type": "DefinedTerm",
       "@id": "https://electronicartefacts.com/fr/id/concept/entity-identity/",
       "identifier": "ea:concept:entity-identity-fr",
-      "name": "Identité d'entite",
-      "abstract": "Identité d'entite définit un repère conceptuel en français pour comprendre le sujet \"Identité d'entite\" dans le graphe public d'Electronic Artefacts et ses liens avec les projets, technologies et publications du graphe.",
-      "description": "Identité d'entite désigne le sujet \"Identité d'entite\" dans le graphe public d'Electronic Artefacts.",
+      "name": "Identité d’entité",
+      "abstract": "Ce concept propose un cadre précis pour comprendre l’attribution d’un identifiant stable, d’un type, de métadonnées et d’un cycle de vie à chaque objet d’un système et ses liens avec les projets, technologies et publications associés.",
+      "description": "Cette notion recouvre l’attribution d’un identifiant stable, d’un type, de métadonnées et d’un cycle de vie à chaque objet d’un système.",
       "url": "https://electronicartefacts.com/fr/knowledge/concepts/entity-identity/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/knowledge/concepts/entity-identity/#webpage"
@@ -43,7 +43,7 @@
       "image": {
         "@type": "ImageObject",
         "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-search.jpg",
-        "description": "Identité d'entite"
+        "description": "Identité d’entité"
       },
       "author": [
         {
@@ -76,7 +76,7 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 86,
+      "wordCount": 61,
       "citation": [
         {
           "@type": "CreativeWork",
@@ -200,7 +200,7 @@
         {
           "@type": "ListItem",
           "position": 3,
-          "name": "Identité d'entite",
+          "name": "Identité d’entité",
           "item": "https://electronicartefacts.com/fr/knowledge/concepts/entity-identity/"
         }
       ]

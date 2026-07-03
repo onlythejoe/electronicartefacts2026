@@ -7,8 +7,8 @@
   },
   "title": "Théorie du runtime",
   "subtitle": "Champ de recherche",
-  "abstract": "Théorie du runtime cadre un champ de recherche suivi par Electronic Artefacts, en reliant questions ouvertes, prototypes, sources et hypothèses de travail.",
-  "description": "Théorie du runtime cadre un champ de recherche suivi par Electronic Artefacts, en reliant questions ouvertes, prototypes, sources et hypothèses de travail.",
+  "abstract": "La théorie du runtime étudie les identités, relations, contextes et événements minimaux nécessaires à l’exécution cohérente d’un système.",
+  "description": "Un champ de recherche sur les primitives d’exécution, l’identité, le contexte, les relations et la propagation des événements.",
   "locale": "fr",
   "visibility": "public",
   "publicationClass": "canonical",
@@ -42,12 +42,12 @@
   "questions": [
     {
       "id": "minimum-runtime",
-      "question": "Comment formaliser Théorie du runtime pour produire des interfaces, des preuves et des relations exploitables ?",
+      "question": "Quelles primitives minimales permettent à un univers d’entités d’exécuter des événements de manière cohérente ?",
       "status": "active"
     },
     {
       "id": "contextual-execution",
-      "question": "Quels usages de Théorie du runtime doivent rester ouverts à l'experimentation et à la verification ?",
+      "question": "Comment l’identité et le contexte doivent-ils encadrer l’exécution et la propagation des événements ?",
       "status": "active"
     }
   ],
@@ -58,12 +58,12 @@
     "relations avec le graphe public"
   ],
   "findings": [
-    "Théorie du runtime demande une articulation claire entre vocabulaire, preuve et expérience utilisateur."
+    "L’identité et le contexte doivent être explicites lorsqu’ils déterminent l’autorité d’exécution."
   ],
   "openQuestions": [
-    "Quels critères permettent d'evaluer Théorie du runtime dans des situations concrètes ?"
+    "Comment délimiter le contexte d’exécution entre des services distribués ?"
   ],
-  "bodyHtml": "<h2 id=\"champ\">Champ</h2>\n<p>Théorie du runtime décrit un espace de recherche actif pour Electronic Artefacts. Il relie le sujet “Théorie du runtime” dans le graphe public d’Electronic Artefacts à des questions, prototypes et méthodes qui peuvent évoluer dans le temps.</p>\n<h2 id=\"questions\">Questions</h2>\n<ul>\n<li>Comment rendre les hypothèses suffisamment explicites pour être partagees, testées et reliées au graphe ?</li>\n<li>Quelles preuves, interfaces ou architectures permettent de transformer ce champ en expérience utilisable ?</li>\n</ul>\n<h2 id=\"usage\">Usage</h2>\n<p>Cette fiche donne une entrée française au champ de recherche et conserve ses liens avec les projets, publications et technologies associés.</p>\n<h2 id=\"references\">Références</h2>\n<p>Les sources associées sont conservées dans la fiche canonique du graphe.</p>\n",
+  "bodyHtml": "<h2 id=\"champ\">Champ</h2>\n<p>La théorie du runtime étudie ce dont un univers d’entités a besoin, au minimum, pour exécuter des événements de manière cohérente. Elle porte sur les primitives d’exécution, l’identité, le contexte, les relations, la propagation des événements et les frontières qui maintiennent le système intelligible.</p>\n<h2 id=\"questions\">Questions</h2>\n<ul>\n<li>Quelles primitives sont indispensables à une exécution cohérente ?</li>\n<li>Comment l’identité et le contexte encadrent-ils l’autorité et la propagation des événements ?</li>\n</ul>\n<h2 id=\"usage\">Usage</h2>\n<p>VASTE en constitue le principal terrain d’application, tandis que Vestiges l’éprouve dans le contexte d’une plateforme culturelle fondée sur un graphe de connaissances.</p>\n<h2 id=\"references\">Références</h2>\n<p>Aucune référence externe n’est associée à cette entrée.</p>\n",
   "headings": [
     "Champ",
     "Questions",

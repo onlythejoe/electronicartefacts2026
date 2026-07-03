@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/knowledge/concepts/digital-preservation/#webpage",
       "url": "https://electronicartefacts.com/fr/knowledge/concepts/digital-preservation/",
       "name": "Préservation numérique",
-      "description": "Préservation numérique définit un repère conceptuel en français pour comprendre la conservation active des objets numériques, de leurs formats, de leurs droits et de leurs contextes d'interpretation et ses liens avec les projets, technologies et publications du graphe.",
+      "description": "Définition, usages, limites et relations associés au concept : Préservation numérique.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
@@ -34,8 +34,8 @@
       "@id": "https://electronicartefacts.com/fr/id/concept/digital-preservation/",
       "identifier": "ea:concept:digital-preservation-fr",
       "name": "Préservation numérique",
-      "abstract": "Préservation numérique définit un repère conceptuel en français pour comprendre la conservation active des objets numériques, de leurs formats, de leurs droits et de leurs contextes d'interpretation et ses liens avec les projets, technologies et publications du graphe.",
-      "description": "Préservation numérique désigne la conservation active des objets numériques, de leurs formats, de leurs droits et de leurs contextes d'interpretation.",
+      "abstract": "Ce concept propose un cadre précis pour comprendre la conservation active des objets numériques, de leurs formats, de leurs droits et de leurs contextes d'interpretation et ses liens avec les projets, technologies et publications associés.",
+      "description": "Cette notion recouvre la conservation active des objets numériques, de leurs formats, de leurs droits et de leurs contextes d'interpretation.",
       "url": "https://electronicartefacts.com/fr/knowledge/concepts/digital-preservation/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/knowledge/concepts/digital-preservation/#webpage"
@@ -77,7 +77,7 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 93,
+      "wordCount": 60,
       "citation": [
         {
           "@type": "CreativeWork",

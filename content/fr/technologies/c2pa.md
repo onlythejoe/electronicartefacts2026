@@ -7,12 +7,10 @@ title: C2PA
 alternateNames:
   - Content Credentials
   - Coalition pour Content Provenance et Authenticity
-abstract: C2PA est présenté comme une technologie de référence pour comprendre son rôle dans
-  l'écosystème Electronic Artefacts, ses usages, ses limites et sa place dans les systèmes
-  numériques contemporains.
-description: C2PA est présenté comme une technologie de référence pour comprendre son rôle dans
-  l'écosystème Electronic Artefacts, ses usages, ses limites et sa place dans les systèmes
-  numériques contemporains.
+abstract: C2PA réunit des standards techniques qui associent aux médias une provenance vérifiable et
+  des métadonnées de type Content Credentials.
+description: C2PA réunit des standards techniques qui associent aux médias une provenance vérifiable
+  et des métadonnées de type Content Credentials.
 locale: fr
 visibility: public
 publicationClass: canonical
@@ -28,9 +26,8 @@ authors:
   - id: ea:organization:electronic-artefacts
 publisher: ea:organization:electronic-artefacts
 category: protocol
-roleInEcosystem: C2PA sert de repère technique pour évaluer le sujet "C2PA" dans le graphe public
-  d'Electronic Artefacts, ses usages possibles et ses conséquences dans l'écosystème Electronic
-  Artefacts.
+roleInEcosystem: C2PA fournit des manifestes signés capables de documenter l’origine, les actions et
+  les déclarations de confiance liées aux images, sons, vidéos et documents.
 officialUrl: https://spec.c2pa.org/specifications/specifications/2.4/index.html
 sources:
   - title: C2PA Specifications 2.4
@@ -51,17 +48,17 @@ translationOf: ea:technology:c2pa
 
 ## Rôle
 
-C2PA est documenté comme technologie de référence pour le sujet "C2PA" dans le graphe public d'Electronic Artefacts.
+C2PA réunit des standards techniques qui associent aux médias une provenance vérifiable et des métadonnées de type Content Credentials.
 
 ## Usage
 
-Cette fiche aide à situer la technologie dans l'écosystème Electronic Artefacts : ce qu'elle permet, quand elle devient pertinente et comment elle dialogue avec les autres composants du graphe.
+C2PA fournit des manifestes signés capables de documenter l’origine, les actions et les déclarations de confiance liées aux images, sons, vidéos et documents.
 
-## Points d'attention
+## Points d’attention
 
-- Les usages sont décrits en français sans masquer les noms propres, acronymes ou standards techniques.
-- Les limites restent contextualisées par rapport aux projets, aux publications et aux contraintes d'implémentation.
+- Les usages dépendent des contraintes du projet et du niveau d’interopérabilité recherché.
+- Les limites doivent être évaluées au regard des standards, des implémentations disponibles et de leur maturité.
 
 ## Références
 
-Les sources principales restent disponibles dans le bloc de références de la fiche.
+Les références principales sont indiquées ci-dessous.

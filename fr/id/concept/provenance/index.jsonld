@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/knowledge/concepts/provenance/#webpage",
       "url": "https://electronicartefacts.com/fr/knowledge/concepts/provenance/",
       "name": "Provenance",
-      "description": "Provenance définit un repère conceptuel en français pour comprendre les informations qui documentent l'origine, les transformations, les decisions et la chaine de responsabilite d'un objet et ses liens avec les projets, technologies et publications du graphe.",
+      "description": "Définition, usages, limites et relations associés au concept : Provenance.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
@@ -34,8 +34,8 @@
       "@id": "https://electronicartefacts.com/fr/id/concept/provenance/",
       "identifier": "ea:concept:provenance-fr",
       "name": "Provenance",
-      "abstract": "Provenance définit un repère conceptuel en français pour comprendre les informations qui documentent l'origine, les transformations, les decisions et la chaine de responsabilite d'un objet et ses liens avec les projets, technologies et publications du graphe.",
-      "description": "Provenance désigne les informations qui documentent l'origine, les transformations, les decisions et la chaine de responsabilite d'un objet.",
+      "abstract": "Ce concept propose un cadre précis pour comprendre les informations qui documentent l'origine, les transformations, les decisions et la chaine de responsabilite d'un objet et ses liens avec les projets, technologies et publications associés.",
+      "description": "Cette notion recouvre les informations qui documentent l'origine, les transformations, les decisions et la chaine de responsabilite d'un objet.",
       "url": "https://electronicartefacts.com/fr/knowledge/concepts/provenance/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/knowledge/concepts/provenance/#webpage"
@@ -76,7 +76,7 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 91,
+      "wordCount": 59,
       "citation": [
         {
           "@type": "CreativeWork",

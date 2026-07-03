@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/publications/procedural-graphics-shaders-and-visual-systems/#webpage",
       "url": "https://electronicartefacts.com/fr/publications/procedural-graphics-shaders-and-visual-systems/",
       "name": "Graphisme procédural, shaders et systèmes visuels",
-      "description": "Graphisme procédural, shaders et systèmes visuels propose une synthèse claire en français sur le sujet \"Graphisme procédural, shaders et systèmes visuels\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
+      "description": "Une introduction au graphisme procédural par les règles, shaders, paramètres, WebGL, systèmes génératifs et grammaires visuelles appliquées à l’art numérique et aux interfaces.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
@@ -35,8 +35,8 @@
       "identifier": "ea:publication:procedural-graphics-shaders-and-visual-systems-fr",
       "name": "Graphisme procédural, shaders et systèmes visuels",
       "headline": "Graphisme procédural, shaders et systèmes visuels",
-      "abstract": "Graphisme procédural, shaders et systèmes visuels propose une synthèse claire en français sur le sujet \"Graphisme procédural, shaders et systèmes visuels\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
-      "description": "Graphisme procédural, shaders et systèmes visuels propose une synthèse claire en français sur le sujet \"Graphisme procédural, shaders et systèmes visuels\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
+      "abstract": "Une introduction au graphisme procédural par les règles, shaders, paramètres, WebGL, systèmes génératifs et grammaires visuelles appliquées à l’art numérique et aux interfaces.",
+      "description": "Une introduction au graphisme procédural par les règles, shaders, paramètres, WebGL, systèmes génératifs et grammaires visuelles appliquées à l’art numérique et aux interfaces.",
       "url": "https://electronicartefacts.com/fr/publications/procedural-graphics-shaders-and-visual-systems/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/publications/procedural-graphics-shaders-and-visual-systems/#webpage"
@@ -77,7 +77,7 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 143,
+      "wordCount": 110,
       "citation": [
         "Electronic Artefacts. \"Graphisme procédural, shaders et systèmes visuels\". Article technique, version 1.0.0, 2026.",
         {

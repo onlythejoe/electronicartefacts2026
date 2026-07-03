@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/knowledge/technologies/rdf/#webpage",
       "url": "https://electronicartefacts.com/fr/knowledge/technologies/rdf/",
       "name": "RDF",
-      "description": "RDF est présenté comme une technologie de référence pour comprendre son rôle dans l'écosystème Electronic Artefacts, ses usages, ses limites et sa place dans les systèmes numériques contemporains.",
+      "description": "RDF est un modèle de données en graphe du W3C qui représente l’information sous forme d’énoncés sujet-prédicat-objet portant sur des ressources.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
@@ -34,8 +34,8 @@
       "@id": "https://electronicartefacts.com/fr/id/technology/rdf/",
       "identifier": "ea:technology:rdf-fr",
       "name": "RDF",
-      "abstract": "RDF est présenté comme une technologie de référence pour comprendre son rôle dans l'écosystème Electronic Artefacts, ses usages, ses limites et sa place dans les systèmes numériques contemporains.",
-      "description": "RDF est présenté comme une technologie de référence pour comprendre son rôle dans l'écosystème Electronic Artefacts, ses usages, ses limites et sa place dans les systèmes numériques contemporains.",
+      "abstract": "RDF est un modèle de données en graphe du W3C qui représente l’information sous forme d’énoncés sujet-prédicat-objet portant sur des ressources.",
+      "description": "RDF est un modèle de données en graphe du W3C qui représente l’information sous forme d’énoncés sujet-prédicat-objet portant sur des ressources.",
       "url": "https://electronicartefacts.com/fr/knowledge/technologies/rdf/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/knowledge/technologies/rdf/#webpage"
@@ -74,7 +74,7 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 93,
+      "wordCount": 75,
       "citation": [
         {
           "@type": "CreativeWork",

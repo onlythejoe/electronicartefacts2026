@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/publications/motion-design-time-and-interface-semantics/#webpage",
       "url": "https://electronicartefacts.com/fr/publications/motion-design-time-and-interface-semantics/",
       "name": "Motion design, temps et sémantique d'interface",
-      "description": "Motion design, temps et sémantique d'interface propose une synthèse claire en français sur le sujet \"Motion design, temps et sémantique d'interface\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
+      "description": "Une lecture du motion design comme couche sémantique des interfaces, à la croisée du temps, des transitions, de l’attention, de l’accessibilité et des Web Animations.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
@@ -35,8 +35,8 @@
       "identifier": "ea:publication:motion-design-time-and-interface-semantics-fr",
       "name": "Motion design, temps et sémantique d'interface",
       "headline": "Motion design, temps et sémantique d'interface",
-      "abstract": "Motion design, temps et sémantique d'interface propose une synthèse claire en français sur le sujet \"Motion design, temps et sémantique d'interface\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
-      "description": "Motion design, temps et sémantique d'interface propose une synthèse claire en français sur le sujet \"Motion design, temps et sémantique d'interface\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
+      "abstract": "Une lecture du motion design comme couche sémantique des interfaces, à la croisée du temps, des transitions, de l’attention, de l’accessibilité et des Web Animations.",
+      "description": "Une lecture du motion design comme couche sémantique des interfaces, à la croisée du temps, des transitions, de l’attention, de l’accessibilité et des Web Animations.",
       "url": "https://electronicartefacts.com/fr/publications/motion-design-time-and-interface-semantics/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/publications/motion-design-time-and-interface-semantics/#webpage"
@@ -76,7 +76,7 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 143,
+      "wordCount": 120,
       "citation": [
         "Electronic Artefacts. \"Motion design, temps et sémantique d'interface\". Article technique, version 1.0.0, 2026.",
         {

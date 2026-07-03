@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/publications/typography-reading-systems-and-digital-interfaces/#webpage",
       "url": "https://electronicartefacts.com/fr/publications/typography-reading-systems-and-digital-interfaces/",
       "name": "Typographie, systèmes de lecture et interfaces numériques",
-      "description": "Typographie, systèmes de lecture et interfaces numériques propose une synthèse claire en français sur le sujet \"Typographie, systèmes de lecture et interfaces numériques\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
+      "description": "Une lecture de la typographie comme infrastructure de la lecture numérique, reliant caractères, mise en page, hiérarchie, accessibilité, CSS Fonts et publication de textes longs.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
@@ -35,8 +35,8 @@
       "identifier": "ea:publication:typography-reading-systems-and-digital-interfaces-fr",
       "name": "Typographie, systèmes de lecture et interfaces numériques",
       "headline": "Typographie, systèmes de lecture et interfaces numériques",
-      "abstract": "Typographie, systèmes de lecture et interfaces numériques propose une synthèse claire en français sur le sujet \"Typographie, systèmes de lecture et interfaces numériques\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
-      "description": "Typographie, systèmes de lecture et interfaces numériques propose une synthèse claire en français sur le sujet \"Typographie, systèmes de lecture et interfaces numériques\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
+      "abstract": "Une lecture de la typographie comme infrastructure de la lecture numérique, reliant caractères, mise en page, hiérarchie, accessibilité, CSS Fonts et publication de textes longs.",
+      "description": "Une lecture de la typographie comme infrastructure de la lecture numérique, reliant caractères, mise en page, hiérarchie, accessibilité, CSS Fonts et publication de textes longs.",
       "url": "https://electronicartefacts.com/fr/publications/typography-reading-systems-and-digital-interfaces/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/publications/typography-reading-systems-and-digital-interfaces/#webpage"
@@ -76,7 +76,7 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 145,
+      "wordCount": 117,
       "citation": [
         "Electronic Artefacts. \"Typographie, systèmes de lecture et interfaces numériques\". Article technique, version 1.0.0, 2026.",
         {

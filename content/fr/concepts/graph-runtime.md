@@ -4,16 +4,12 @@ type: concept
 slug:
   canonical: graph-runtime
 title: Runtime de graphe
-definition: Runtime de graphe désigne les environnements d'execution ou les entités, relations,
+definition: Cette notion recouvre les environnements d'execution ou les entités, relations,
   permissions et événements du graphe participent directement au calcul.
-abstract: Runtime de graphe définit un repère conceptuel en français pour comprendre les
-  environnements d'execution ou les entités, relations, permissions et événements du graphe
-  participent directement au calcul et ses liens avec les projets, technologies et publications du
-  graphe.
-description: Runtime de graphe définit un repère conceptuel en français pour comprendre les
-  environnements d'execution ou les entités, relations, permissions et événements du graphe
-  participent directement au calcul et ses liens avec les projets, technologies et publications du
-  graphe.
+abstract: Ce concept propose un cadre précis pour comprendre les environnements d'execution ou les
+  entités, relations, permissions et événements du graphe participent directement au calcul et ses
+  liens avec les projets, technologies et publications associés.
+description: "Définition, usages, limites et relations associés au concept : Runtime de graphe."
 locale: fr
 visibility: public
 publicationClass: canonical
@@ -37,10 +33,8 @@ exclusions:
   - les usages purement promotionnels sans définition vérifiable
   - les exemples déconnectés des sources, relations ou contraintes du graphe
 claims:
-  - Runtime de graphe devient utile lorsque sa définition reste reliée à des sources, des pratiques
-    et des objets observables.
-  - La fiche sert de vocabulaire commun pour relier projets, publications et technologies sans
-    mélanger les langues.
+  - Une définition utile reste reliée à des sources, à des pratiques et à des objets observables.
+  - Un vocabulaire stable permet de relier projets, publications et technologies sans ambiguïté.
 tags:
   - Graph
   - Runtime
@@ -55,16 +49,16 @@ translationOf: ea:concept:graph-runtime
 
 ## Rôle
 
-Runtime de graphe est documenté comme notion de référence pour comprendre les environnements d'execution ou les entités, relations, permissions et événements du graphe participent directement au calcul.
+Cette notion recouvre les environnements d'execution ou les entités, relations, permissions et événements du graphe participent directement au calcul.
 
 ## Usage
 
-Cette fiche relie la notion aux projets, publications et technologies qui partagent un même vocabulaire de conception. Elle sert de point d'appui pour naviguer dans le graphe en version française.
+Elle fournit un vocabulaire stable pour relier les projets, publications et technologies concernés.
 
 ## Périmètre
 
-La notion est abordée par ses définitions, ses usages, ses limites et ses relations avec les autres objets documentés.
+Son périmètre comprend les définitions, les usages, les limites et les relations avec les autres objets documentés.
 
 ## Références
 
-Les sources associées sont conservées dans la fiche canonique du graphe.
+Aucune référence externe n’est associée à cette entrée.

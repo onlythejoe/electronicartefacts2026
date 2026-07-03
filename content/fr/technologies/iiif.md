@@ -6,12 +6,10 @@ slug:
 title: IIIF
 alternateNames:
   - International Image Interoperability Framework
-abstract: IIIF est présenté comme une technologie de référence pour comprendre son rôle dans
-  l'écosystème Electronic Artefacts, ses usages, ses limites et sa place dans les systèmes
-  numériques contemporains.
-description: IIIF est présenté comme une technologie de référence pour comprendre son rôle dans
-  l'écosystème Electronic Artefacts, ses usages, ses limites et sa place dans les systèmes
-  numériques contemporains.
+abstract: IIIF est un ensemble d’API destiné à présenter, structurer et annoter les représentations
+  numériques d’objets culturels et archivistiques.
+description: IIIF est un ensemble d’API destiné à présenter, structurer et annoter les
+  représentations numériques d’objets culturels et archivistiques.
 locale: fr
 visibility: public
 publicationClass: canonical
@@ -27,9 +25,8 @@ authors:
   - id: ea:organization:electronic-artefacts
 publisher: ea:organization:electronic-artefacts
 category: protocol
-roleInEcosystem: IIIF sert de repère technique pour évaluer le sujet "IIIF" dans le graphe public
-  d'Electronic Artefacts, ses usages possibles et ses conséquences dans l'écosystème Electronic
-  Artefacts.
+roleInEcosystem: IIIF propose des structures interopérables — collections, manifestes, canevas,
+  plages et annotations — pour présenter des objets culturels.
 officialUrl: https://iiif.io/api/presentation/3.0/
 sources:
   - title: IIIF Presentation API 3.0
@@ -50,17 +47,17 @@ translationOf: ea:technology:iiif
 
 ## Rôle
 
-IIIF est documenté comme technologie de référence pour le sujet "IIIF" dans le graphe public d'Electronic Artefacts.
+IIIF est un ensemble d’API destiné à présenter, structurer et annoter les représentations numériques d’objets culturels et archivistiques.
 
 ## Usage
 
-Cette fiche aide à situer la technologie dans l'écosystème Electronic Artefacts : ce qu'elle permet, quand elle devient pertinente et comment elle dialogue avec les autres composants du graphe.
+IIIF propose des structures interopérables — collections, manifestes, canevas, plages et annotations — pour présenter des objets culturels.
 
-## Points d'attention
+## Points d’attention
 
-- Les usages sont décrits en français sans masquer les noms propres, acronymes ou standards techniques.
-- Les limites restent contextualisées par rapport aux projets, aux publications et aux contraintes d'implémentation.
+- Les usages dépendent des contraintes du projet et du niveau d’interopérabilité recherché.
+- Les limites doivent être évaluées au regard des standards, des implémentations disponibles et de leur maturité.
 
 ## Références
 
-Les sources principales restent disponibles dans le bloc de références de la fiche.
+Les références principales sont indiquées ci-dessous.

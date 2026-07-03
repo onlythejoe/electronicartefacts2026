@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/knowledge/concepts/contextual-execution/#webpage",
       "url": "https://electronicartefacts.com/fr/knowledge/concepts/contextual-execution/",
       "name": "Exécution contextuelle",
-      "description": "Exécution contextuelle définit un repère conceptuel en français pour comprendre le sujet \"Exécution contextuelle\" dans le graphe public d'Electronic Artefacts et ses liens avec les projets, technologies et publications du graphe.",
+      "description": "Définition, usages, limites et relations associés au concept : Exécution contextuelle.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
@@ -34,8 +34,8 @@
       "@id": "https://electronicartefacts.com/fr/id/concept/contextual-execution/",
       "identifier": "ea:concept:contextual-execution-fr",
       "name": "Exécution contextuelle",
-      "abstract": "Exécution contextuelle définit un repère conceptuel en français pour comprendre le sujet \"Exécution contextuelle\" dans le graphe public d'Electronic Artefacts et ses liens avec les projets, technologies et publications du graphe.",
-      "description": "Exécution contextuelle désigne le sujet \"Exécution contextuelle\" dans le graphe public d'Electronic Artefacts.",
+      "abstract": "Ce concept propose un cadre précis pour comprendre l’exécution d’opérations selon l’identité, l’état, les relations, les permissions et la situation courante du système et ses liens avec les projets, technologies et publications associés.",
+      "description": "Cette notion recouvre l’exécution d’opérations selon l’identité, l’état, les relations, les permissions et la situation courante du système.",
       "url": "https://electronicartefacts.com/fr/knowledge/concepts/contextual-execution/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/knowledge/concepts/contextual-execution/#webpage"
@@ -77,7 +77,7 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 84,
+      "wordCount": 60,
       "inDefinedTermSet": "https://electronicartefacts.com/knowledge/concepts/",
       "termCode": "contextual-execution"
     },

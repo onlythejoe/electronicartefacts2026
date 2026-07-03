@@ -4,14 +4,12 @@ type: concept
 slug:
   canonical: generative-system
 title: Système génératif
-definition: Système génératif désigne les systèmes qui produisent des formes à partir de regles, de
+definition: Cette notion recouvre les systèmes qui produisent des formes à partir de regles, de
   contraintes et de boucles de sélection.
-abstract: Système génératif définit un repère conceptuel en français pour comprendre les systèmes
-  qui produisent des formes à partir de regles, de contraintes et de boucles de sélection et ses
-  liens avec les projets, technologies et publications du graphe.
-description: Système génératif définit un repère conceptuel en français pour comprendre les systèmes
-  qui produisent des formes à partir de regles, de contraintes et de boucles de sélection et ses
-  liens avec les projets, technologies et publications du graphe.
+abstract: Ce concept propose un cadre précis pour comprendre les systèmes qui produisent des formes
+  à partir de regles, de contraintes et de boucles de sélection et ses liens avec les projets,
+  technologies et publications associés.
+description: "Définition, usages, limites et relations associés au concept : Système génératif."
 locale: fr
 visibility: public
 publicationClass: canonical
@@ -35,10 +33,8 @@ exclusions:
   - les usages purement promotionnels sans définition vérifiable
   - les exemples déconnectés des sources, relations ou contraintes du graphe
 claims:
-  - Système génératif devient utile lorsque sa définition reste reliée à des sources, des pratiques
-    et des objets observables.
-  - La fiche sert de vocabulaire commun pour relier projets, publications et technologies sans
-    mélanger les langues.
+  - Une définition utile reste reliée à des sources, à des pratiques et à des objets observables.
+  - Un vocabulaire stable permet de relier projets, publications et technologies sans ambiguïté.
 tags:
   - Generative Art
   - programmation créative
@@ -56,16 +52,16 @@ translationOf: ea:concept:generative-system
 
 ## Rôle
 
-Système génératif est documenté comme notion de référence pour comprendre les systèmes qui produisent des formes à partir de regles, de contraintes et de boucles de sélection.
+Cette notion recouvre les systèmes qui produisent des formes à partir de regles, de contraintes et de boucles de sélection.
 
 ## Usage
 
-Cette fiche relie la notion aux projets, publications et technologies qui partagent un même vocabulaire de conception. Elle sert de point d'appui pour naviguer dans le graphe en version française.
+Elle fournit un vocabulaire stable pour relier les projets, publications et technologies concernés.
 
 ## Périmètre
 
-La notion est abordée par ses définitions, ses usages, ses limites et ses relations avec les autres objets documentés.
+Son périmètre comprend les définitions, les usages, les limites et les relations avec les autres objets documentés.
 
 ## Références
 
-Les sources associées sont conservées dans la fiche canonique du graphe.
+Aucune référence externe n’est associée à cette entrée.

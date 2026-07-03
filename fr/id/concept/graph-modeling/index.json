@@ -6,9 +6,9 @@
     "canonical": "graph-modeling"
   },
   "title": "Modelisation de graphe",
-  "definition": "Modelisation de graphe désigne la modelisation d'entites et de relations sous forme de graphe exploitable.",
-  "abstract": "Modelisation de graphe définit un repère conceptuel en français pour comprendre la modelisation d'entites et de relations sous forme de graphe exploitable et ses liens avec les projets, technologies et publications du graphe.",
-  "description": "Modelisation de graphe définit un repère conceptuel en français pour comprendre la modelisation d'entites et de relations sous forme de graphe exploitable et ses liens avec les projets, technologies et publications du graphe.",
+  "definition": "Cette notion recouvre la modélisation d'entités et de relations sous forme de graphe exploitable.",
+  "abstract": "Ce concept propose un cadre précis pour comprendre la modélisation d'entités et de relations sous forme de graphe exploitable et ses liens avec les projets, technologies et publications associés.",
+  "description": "Définition, usages, limites et relations associés au concept : Modelisation de graphe.",
   "locale": "fr",
   "visibility": "public",
   "publicationClass": "canonical",
@@ -51,10 +51,10 @@
     "les exemples déconnectés des sources, relations ou contraintes du graphe"
   ],
   "claims": [
-    "Modelisation de graphe devient utile lorsque sa définition reste reliée à des sources, des pratiques et des objets observables.",
-    "La fiche sert de vocabulaire commun pour relier projets, publications et technologies sans mélanger les langues."
+    "Une définition utile reste reliée à des sources, à des pratiques et à des objets observables.",
+    "Un vocabulaire stable permet de relier projets, publications et technologies sans ambiguïté."
   ],
-  "bodyHtml": "<h2 id=\"role\">Rôle</h2>\n<p>Modelisation de graphe est documenté comme notion de référence pour comprendre la modelisation d’entites et de relations sous forme de graphe exploitable.</p>\n<h2 id=\"usage\">Usage</h2>\n<p>Cette fiche relie la notion aux projets, publications et technologies qui partagent un même vocabulaire de conception. Elle sert de point d’appui pour naviguer dans le graphe en version française.</p>\n<h2 id=\"perimetre\">Périmètre</h2>\n<p>La notion est abordée par ses définitions, ses usages, ses limites et ses relations avec les autres objets documentés.</p>\n<h2 id=\"references\">Références</h2>\n<p>Les sources associées sont conservées dans la fiche canonique du graphe.</p>\n",
+  "bodyHtml": "<h2 id=\"role\">Rôle</h2>\n<p>Cette notion recouvre la modélisation d’entités et de relations sous forme de graphe exploitable.</p>\n<h2 id=\"usage\">Usage</h2>\n<p>Elle fournit un vocabulaire stable pour relier les projets, publications et technologies concernés.</p>\n<h2 id=\"perimetre\">Périmètre</h2>\n<p>Son périmètre comprend les définitions, les usages, les limites et les relations avec les autres objets documentés.</p>\n<h2 id=\"references\">Références</h2>\n<p>Aucune référence externe n’est associée à cette entrée.</p>\n",
   "headings": [
     "Rôle",
     "Usage",

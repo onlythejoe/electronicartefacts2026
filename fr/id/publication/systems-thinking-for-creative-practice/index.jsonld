@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/publications/systems-thinking-for-creative-practice/#webpage",
       "url": "https://electronicartefacts.com/fr/publications/systems-thinking-for-creative-practice/",
       "name": "Pensée systémique pour la pratique créative",
-      "description": "Pensée systémique pour la pratique créative propose une synthèse claire en français sur le sujet \"Pensée systémique pour la pratique créative\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
+      "description": "Une introduction pratique aux systèmes, frontières, rétroactions, stocks, flux, délais et points de levier appliqués au travail créatif et technique.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
@@ -35,8 +35,8 @@
       "identifier": "ea:publication:systems-thinking-for-creative-practice-fr",
       "name": "Pensée systémique pour la pratique créative",
       "headline": "Pensée systémique pour la pratique créative",
-      "abstract": "Pensée systémique pour la pratique créative propose une synthèse claire en français sur le sujet \"Pensée systémique pour la pratique créative\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
-      "description": "Pensée systémique pour la pratique créative propose une synthèse claire en français sur le sujet \"Pensée systémique pour la pratique créative\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
+      "abstract": "Une introduction pratique aux systèmes, frontières, rétroactions, stocks, flux, délais et points de levier appliqués au travail créatif et technique.",
+      "description": "Une introduction pratique aux systèmes, frontières, rétroactions, stocks, flux, délais et points de levier appliqués au travail créatif et technique.",
       "url": "https://electronicartefacts.com/fr/publications/systems-thinking-for-creative-practice/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/publications/systems-thinking-for-creative-practice/#webpage"
@@ -77,7 +77,7 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 143,
+      "wordCount": 114,
       "citation": [
         "Electronic Artefacts. \"Pensée systémique pour la pratique créative\". Article technique, version 1.0.0, 2026.",
         {

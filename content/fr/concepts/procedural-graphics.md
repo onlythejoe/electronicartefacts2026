@@ -4,14 +4,12 @@ type: concept
 slug:
   canonical: procedural-graphics
 title: Graphisme procédural
-definition: Graphisme procédural désigne les images et formes visuelles generees par algorithmes,
-  shaders ou regles parametriques.
-abstract: Graphisme procédural définit un repère conceptuel en français pour comprendre les images
-  et formes visuelles generees par algorithmes, shaders ou regles parametriques et ses liens avec
-  les projets, technologies et publications du graphe.
-description: Graphisme procédural définit un repère conceptuel en français pour comprendre les
-  images et formes visuelles generees par algorithmes, shaders ou regles parametriques et ses liens
-  avec les projets, technologies et publications du graphe.
+definition: Cette notion recouvre les images et formes visuelles generees par algorithmes, shaders
+  ou regles parametriques.
+abstract: Ce concept propose un cadre précis pour comprendre les images et formes visuelles generees
+  par algorithmes, shaders ou regles parametriques et ses liens avec les projets, technologies et
+  publications associés.
+description: "Définition, usages, limites et relations associés au concept : Graphisme procédural."
 locale: fr
 visibility: public
 publicationClass: canonical
@@ -35,10 +33,8 @@ exclusions:
   - les usages purement promotionnels sans définition vérifiable
   - les exemples déconnectés des sources, relations ou contraintes du graphe
 claims:
-  - Graphisme procédural devient utile lorsque sa définition reste reliée à des sources, des
-    pratiques et des objets observables.
-  - La fiche sert de vocabulaire commun pour relier projets, publications et technologies sans
-    mélanger les langues.
+  - Une définition utile reste reliée à des sources, à des pratiques et à des objets observables.
+  - Un vocabulaire stable permet de relier projets, publications et technologies sans ambiguïté.
 tags:
   - Procedural Graphics
   - Shaders
@@ -54,16 +50,16 @@ translationOf: ea:concept:procedural-graphics
 
 ## Rôle
 
-Graphisme procédural est documenté comme notion de référence pour comprendre les images et formes visuelles generees par algorithmes, shaders ou regles parametriques.
+Cette notion recouvre les images et formes visuelles generees par algorithmes, shaders ou regles parametriques.
 
 ## Usage
 
-Cette fiche relie la notion aux projets, publications et technologies qui partagent un même vocabulaire de conception. Elle sert de point d'appui pour naviguer dans le graphe en version française.
+Elle fournit un vocabulaire stable pour relier les projets, publications et technologies concernés.
 
 ## Périmètre
 
-La notion est abordée par ses définitions, ses usages, ses limites et ses relations avec les autres objets documentés.
+Son périmètre comprend les définitions, les usages, les limites et les relations avec les autres objets documentés.
 
 ## Références
 
-Les sources associées sont conservées dans la fiche canonique du graphe.
+Aucune référence externe n’est associée à cette entrée.

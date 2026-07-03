@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/knowledge/technologies/webnn/#webpage",
       "url": "https://electronicartefacts.com/fr/knowledge/technologies/webnn/",
       "name": "WebNN",
-      "description": "WebNN est présenté comme une technologie de référence pour comprendre son rôle dans l'écosystème Electronic Artefacts, ses usages, ses limites et sa place dans les systèmes numériques contemporains.",
+      "description": "WebNN est une API du W3C pour l’inférence de réseaux neuronaux accélérée par le matériel dans les applications web.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
@@ -37,8 +37,8 @@
       "alternateName": [
         "Web Neural Network API"
       ],
-      "abstract": "WebNN est présenté comme une technologie de référence pour comprendre son rôle dans l'écosystème Electronic Artefacts, ses usages, ses limites et sa place dans les systèmes numériques contemporains.",
-      "description": "WebNN est présenté comme une technologie de référence pour comprendre son rôle dans l'écosystème Electronic Artefacts, ses usages, ses limites et sa place dans les systèmes numériques contemporains.",
+      "abstract": "WebNN est une API du W3C pour l’inférence de réseaux neuronaux accélérée par le matériel dans les applications web.",
+      "description": "WebNN est une API du W3C pour l’inférence de réseaux neuronaux accélérée par le matériel dans les applications web.",
       "url": "https://electronicartefacts.com/fr/knowledge/technologies/webnn/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/knowledge/technologies/webnn/#webpage"
@@ -78,7 +78,7 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 93,
+      "wordCount": 75,
       "citation": [
         {
           "@type": "CreativeWork",

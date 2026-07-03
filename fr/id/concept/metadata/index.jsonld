@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/knowledge/concepts/metadata/#webpage",
       "url": "https://electronicartefacts.com/fr/knowledge/concepts/metadata/",
       "name": "Métadonnées",
-      "description": "Métadonnées définit un repère conceptuel en français pour comprendre les métadonnées qui rendent des contenus décrits, recherchables, citables et reliables et ses liens avec les projets, technologies et publications du graphe.",
+      "description": "Définition, usages, limites et relations associés au concept : Métadonnées.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
@@ -34,8 +34,8 @@
       "@id": "https://electronicartefacts.com/fr/id/concept/metadata/",
       "identifier": "ea:concept:metadata-fr",
       "name": "Métadonnées",
-      "abstract": "Métadonnées définit un repère conceptuel en français pour comprendre les métadonnées qui rendent des contenus décrits, recherchables, citables et reliables et ses liens avec les projets, technologies et publications du graphe.",
-      "description": "Métadonnées désigne les métadonnées qui rendent des contenus décrits, recherchables, citables et reliables.",
+      "abstract": "Ce concept propose un cadre précis pour comprendre les métadonnées qui rendent des contenus décrits, recherchables, citables et reliables et ses liens avec les projets, technologies et publications associés.",
+      "description": "Cette notion recouvre les métadonnées qui rendent des contenus décrits, recherchables, citables et reliables.",
       "url": "https://electronicartefacts.com/fr/knowledge/concepts/metadata/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/knowledge/concepts/metadata/#webpage"
@@ -75,7 +75,7 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 86,
+      "wordCount": 54,
       "citation": [
         {
           "@type": "CreativeWork",

@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/publications/responsible-ai-governance-for-creative-and-cultural-systems/#webpage",
       "url": "https://electronicartefacts.com/fr/publications/responsible-ai-governance-for-creative-and-cultural-systems/",
       "name": "Gouvernance responsable de l'IA pour les systèmes créatifs et culturels",
-      "description": "Gouvernance responsable de l'IA pour les systèmes créatifs et culturels propose une synthèse claire en français sur le sujet \"Gouvernance responsable de l'IA pour les systèmes créatifs et culturels\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
+      "description": "Une approche opérationnelle de la gouvernance de l’IA pour les studios créatifs, les archives culturelles et les systèmes de connaissance, couvrant risques, contrôle, provenance, droits et évaluation.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
@@ -35,8 +35,8 @@
       "identifier": "ea:publication:responsible-ai-governance-for-creative-and-cultural-systems-fr",
       "name": "Gouvernance responsable de l'IA pour les systèmes créatifs et culturels",
       "headline": "Gouvernance responsable de l'IA pour les systèmes créatifs et culturels",
-      "abstract": "Gouvernance responsable de l'IA pour les systèmes créatifs et culturels propose une synthèse claire en français sur le sujet \"Gouvernance responsable de l'IA pour les systèmes créatifs et culturels\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
-      "description": "Gouvernance responsable de l'IA pour les systèmes créatifs et culturels propose une synthèse claire en français sur le sujet \"Gouvernance responsable de l'IA pour les systèmes créatifs et culturels\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
+      "abstract": "Une approche opérationnelle de la gouvernance de l’IA pour les studios créatifs, les archives culturelles et les systèmes de connaissance, couvrant risques, contrôle, provenance, droits et évaluation.",
+      "description": "Une approche opérationnelle de la gouvernance de l’IA pour les studios créatifs, les archives culturelles et les systèmes de connaissance, couvrant risques, contrôle, provenance, droits et évaluation.",
       "url": "https://electronicartefacts.com/fr/publications/responsible-ai-governance-for-creative-and-cultural-systems/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/publications/responsible-ai-governance-for-creative-and-cultural-systems/#webpage"
@@ -77,7 +77,7 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 151,
+      "wordCount": 132,
       "citation": [
         "Electronic Artefacts. \"Gouvernance responsable de l'IA pour les systèmes créatifs et culturels\". Article technique, version 1.0.0, 2026.",
         {

@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/knowledge/technologies/redis-streams/#webpage",
       "url": "https://electronicartefacts.com/fr/knowledge/technologies/redis-streams/",
       "name": "Redis Streams",
-      "description": "Redis Streams est présenté comme une technologie de référence pour comprendre son rôle dans l'écosystème Electronic Artefacts, ses usages, ses limites et sa place dans les systèmes numériques contemporains.",
+      "description": "Redis Streams est un type de données en journal à ajout seul, avec entrées ordonnées, lectures par plage, rétention et groupes de consommateurs.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
@@ -34,8 +34,8 @@
       "@id": "https://electronicartefacts.com/fr/id/technology/redis-streams/",
       "identifier": "ea:technology:redis-streams-fr",
       "name": "Redis Streams",
-      "abstract": "Redis Streams est présenté comme une technologie de référence pour comprendre son rôle dans l'écosystème Electronic Artefacts, ses usages, ses limites et sa place dans les systèmes numériques contemporains.",
-      "description": "Redis Streams est présenté comme une technologie de référence pour comprendre son rôle dans l'écosystème Electronic Artefacts, ses usages, ses limites et sa place dans les systèmes numériques contemporains.",
+      "abstract": "Redis Streams est un type de données en journal à ajout seul, avec entrées ordonnées, lectures par plage, rétention et groupes de consommateurs.",
+      "description": "Redis Streams est un type de données en journal à ajout seul, avec entrées ordonnées, lectures par plage, rétention et groupes de consommateurs.",
       "url": "https://electronicartefacts.com/fr/knowledge/technologies/redis-streams/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/knowledge/technologies/redis-streams/#webpage"
@@ -75,7 +75,7 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 95,
+      "wordCount": 84,
       "citation": [
         {
           "@type": "CreativeWork",

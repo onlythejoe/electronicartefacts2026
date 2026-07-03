@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/knowledge/concepts/open-weight-model/#webpage",
       "url": "https://electronicartefacts.com/fr/knowledge/concepts/open-weight-model/",
       "name": "Modèle à poids ouverts",
-      "description": "Modèle à poids ouverts définit un repère conceptuel en français pour comprendre les modèles dont les poids sont publies pour permettre l'execution, l'audit ou l'adaptation locale et ses liens avec les projets, technologies et publications du graphe.",
+      "description": "Définition, usages, limites et relations associés au concept : Modèle à poids ouverts.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
@@ -34,8 +34,8 @@
       "@id": "https://electronicartefacts.com/fr/id/concept/open-weight-model/",
       "identifier": "ea:concept:open-weight-model-fr",
       "name": "Modèle à poids ouverts",
-      "abstract": "Modèle à poids ouverts définit un repère conceptuel en français pour comprendre les modèles dont les poids sont publies pour permettre l'execution, l'audit ou l'adaptation locale et ses liens avec les projets, technologies et publications du graphe.",
-      "description": "Modèle à poids ouverts désigne les modèles dont les poids sont publies pour permettre l'execution, l'audit ou l'adaptation locale.",
+      "abstract": "Ce concept propose un cadre précis pour comprendre les modèles dont les poids sont publies pour permettre l'execution, l'audit ou l'adaptation locale et ses liens avec les projets, technologies et publications associés.",
+      "description": "Cette notion recouvre les modèles dont les poids sont publies pour permettre l'execution, l'audit ou l'adaptation locale.",
       "url": "https://electronicartefacts.com/fr/knowledge/concepts/open-weight-model/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/knowledge/concepts/open-weight-model/#webpage"
@@ -76,7 +76,7 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 92,
+      "wordCount": 57,
       "citation": [
         {
           "@type": "CreativeWork",

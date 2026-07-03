@@ -5,12 +5,10 @@ translationOf: ea:technology:activitypub
 slug:
   canonical: activitypub
 title: ActivityPub
-abstract: ActivityPub est présenté comme une technologie de référence pour comprendre son rôle dans
-  l'écosystème Electronic Artefacts, ses usages, ses limites et sa place dans les systèmes
-  numériques contemporains.
-description: ActivityPub est présenté comme une technologie de référence pour comprendre son rôle
-  dans l'écosystème Electronic Artefacts, ses usages, ses limites et sa place dans les systèmes
-  numériques contemporains.
+abstract: ActivityPub est un protocole décentralisé de réseau social, normalisé par le W3C pour
+  fédérer les échanges entre serveurs et entre clients et serveurs.
+description: ActivityPub est un protocole décentralisé de réseau social, normalisé par le W3C pour
+  fédérer les échanges entre serveurs et entre clients et serveurs.
 locale: fr
 visibility: public
 publicationClass: canonical
@@ -26,9 +24,8 @@ authors:
   - id: ea:organization:electronic-artefacts
 publisher: ea:organization:electronic-artefacts
 category: protocol
-roleInEcosystem: ActivityPub sert de repère technique pour évaluer le sujet "ActivityPub" dans le
-  graphe public d'Electronic Artefacts, ses usages possibles et ses conséquences dans l'écosystème
-  Electronic Artefacts.
+roleInEcosystem: ActivityPub fournit un cadre de référence pour la culture des réseaux, la
+  fédération, les protocoles sociaux et la diffusion publique des connaissances.
 officialUrl: https://www.w3.org/TR/activitypub/
 sources:
   - title: ActivityPub
@@ -48,17 +45,17 @@ disciplines:
 
 ## Rôle
 
-ActivityPub est documenté comme technologie de référence pour le sujet "ActivityPub" dans le graphe public d'Electronic Artefacts.
+ActivityPub est un protocole décentralisé de réseau social, normalisé par le W3C pour fédérer les échanges entre serveurs et entre clients et serveurs.
 
 ## Usage
 
-Cette fiche aide à situer la technologie dans l'écosystème Electronic Artefacts : ce qu'elle permet, quand elle devient pertinente et comment elle dialogue avec les autres composants du graphe.
+ActivityPub fournit un cadre de référence pour la culture des réseaux, la fédération, les protocoles sociaux et la diffusion publique des connaissances.
 
-## Points d'attention
+## Points d’attention
 
-- Les usages sont décrits en français sans masquer les noms propres, acronymes ou standards techniques.
-- Les limites restent contextualisées par rapport aux projets, aux publications et aux contraintes d'implémentation.
+- Les usages dépendent des contraintes du projet et du niveau d’interopérabilité recherché.
+- Les limites doivent être évaluées au regard des standards, des implémentations disponibles et de leur maturité.
 
 ## Références
 
-Les sources principales restent disponibles dans le bloc de références de la fiche.
+Les références principales sont indiquées ci-dessous.

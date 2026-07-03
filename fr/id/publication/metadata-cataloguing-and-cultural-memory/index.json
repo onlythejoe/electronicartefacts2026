@@ -7,8 +7,8 @@
   },
   "title": "Métadonnées, catalogage et mémoire culturelle",
   "subtitle": "Article technique",
-  "abstract": "Métadonnées, catalogage et mémoire culturelle propose une synthèse claire en français sur le sujet \"Métadonnées, catalogage et mémoire culturelle\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
-  "description": "Métadonnées, catalogage et mémoire culturelle propose une synthèse claire en français sur le sujet \"Métadonnées, catalogage et mémoire culturelle\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
+  "abstract": "Une lecture des métadonnées comme couche de mémoire culturelle, reliant catalogage, Dublin Core, PREMIS, METS, provenance, archives et graphes de connaissances.",
+  "description": "Une lecture des métadonnées comme couche de mémoire culturelle, reliant catalogage, Dublin Core, PREMIS, METS, provenance, archives et graphes de connaissances.",
   "locale": "fr",
   "visibility": "public",
   "publicationClass": "published",
@@ -79,8 +79,8 @@
     }
   ],
   "claims": [
-    "Métadonnées, catalogage et mémoire culturelle doit être lisible comme une synthèse française autonome, sans phrases hybrides héritées de l'anglais.",
-    "Les liens avec les notions, projets et technologies du graphe renforcent la recherche, la navigation et la citation."
+    "Les métadonnées ne sont pas un résidu administratif : elles forment l’infrastructure interprétative qui rend les objets culturels repérables et compréhensibles.",
+    "Les graphes gagnent en fiabilité lorsque les métadonnées documentent source, droits, format, relations et incertitudes."
   ],
   "evidence": [
     {
@@ -93,7 +93,7 @@
   "citation": {
     "preferred": "Electronic Artefacts. \"Métadonnées, catalogage et mémoire culturelle\". Article technique, version 1.0.0, 2026."
   },
-  "bodyHtml": "<h2 id=\"probleme\">Problème</h2>\n<p>Métadonnées, catalogage et mémoire culturelle examine le sujet “Métadonnées, catalogage et mémoire culturelle” dans le graphe public d’Electronic Artefacts. La fiche donne une entrée française stable, utilisable pour lire le sujet et relier ses sources au reste du graphe.</p>\n<h2 id=\"architecture\">Architecture</h2>\n<p>Le sujet est abordé par ses relations avec les concepts, projets et technologies concernés, afin de rendre son contexte de conception lisible.</p>\n<h2 id=\"mise-en-uvre\">Mise en œuvre</h2>\n<p>La page décrit les usages, contraintes et choix de structure qui permettent d’appliquer le sujet dans des situations concrètes.</p>\n<h2 id=\"elements-de-preuve\">Éléments de preuve</h2>\n<p>Les sources, relations et éléments de contexte restent attachés à la fiche pour distinguer synthèse éditoriale, preuves et références.</p>\n<h2 id=\"limites\">Limites</h2>\n<p>Les limites sont formulées par rapport au périmètre de la fiche, aux sources disponibles et aux conditions d’usage documentées.</p>\n<h2 id=\"references\">Références</h2>\n<p>Les sources principales restent disponibles dans le bloc de références de la fiche.</p>\n",
+  "bodyHtml": "<h2 id=\"probleme\">Problème</h2>\n<p>Une lecture des métadonnées comme couche de mémoire culturelle, reliant catalogage, Dublin Core, PREMIS, METS, provenance, archives et graphes de connaissances.</p>\n<h2 id=\"architecture\">Architecture</h2>\n<p>Les métadonnées ne sont pas un résidu administratif : elles forment l’infrastructure interprétative qui rend les objets culturels repérables et compréhensibles. Les graphes gagnent en fiabilité lorsque les métadonnées documentent source, droits, format, relations et incertitudes.</p>\n<h2 id=\"mise-en-uvre\">Mise en œuvre</h2>\n<p>L’analyse en précise les usages, les contraintes et les principaux arbitrages techniques.</p>\n<h2 id=\"elements-de-preuve\">Éléments de preuve</h2>\n<p>Les arguments s’appuient sur les sources et les notions connexes citées dans l’article.</p>\n<h2 id=\"limites\">Limites</h2>\n<p>Les conclusions restent liées au périmètre des sources disponibles et aux conditions d’usage décrites.</p>\n<h2 id=\"references\">Références</h2>\n<p>Les références principales sont indiquées ci-dessous.</p>\n",
   "headings": [
     "Problème",
     "Architecture",

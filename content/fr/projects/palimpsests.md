@@ -108,4 +108,4 @@ ORETH fournit le cadre de recherche sonore du cycle. Les expérimentations autou
 
 ## État public
 
-La fiche publique rassemble les éléments qui peuvent être documentés : positionnement, structure, visuels, relations avec ORETH et sources de recherche. Les matériaux supplémentaires seront ajoutés à mesure de leur publication et de leur validation éditoriale.
+Le dossier public réunit le positionnement, la structure, les visuels, les relations avec ORETH et les sources de recherche déjà documentés. D’autres matériaux viendront le compléter après leur publication et leur validation éditoriale.

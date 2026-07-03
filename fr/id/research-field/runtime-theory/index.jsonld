@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/research/fields/runtime-theory/#webpage",
       "url": "https://electronicartefacts.com/fr/research/fields/runtime-theory/",
       "name": "Théorie du runtime",
-      "description": "Théorie du runtime cadre un champ de recherche suivi par Electronic Artefacts, en reliant questions ouvertes, prototypes, sources et hypothèses de travail.",
+      "description": "Un champ de recherche sur les primitives d’exécution, l’identité, le contexte, les relations et la propagation des événements.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
@@ -34,8 +34,8 @@
       "@id": "https://electronicartefacts.com/fr/id/research-field/runtime-theory/",
       "identifier": "ea:researchField:runtime-theory-fr",
       "name": "Théorie du runtime",
-      "abstract": "Théorie du runtime cadre un champ de recherche suivi par Electronic Artefacts, en reliant questions ouvertes, prototypes, sources et hypothèses de travail.",
-      "description": "Théorie du runtime cadre un champ de recherche suivi par Electronic Artefacts, en reliant questions ouvertes, prototypes, sources et hypothèses de travail.",
+      "abstract": "La théorie du runtime étudie les identités, relations, contextes et événements minimaux nécessaires à l’exécution cohérente d’un système.",
+      "description": "La théorie du runtime étudie les identités, relations, contextes et événements minimaux nécessaires à l’exécution cohérente d’un système.",
       "url": "https://electronicartefacts.com/fr/research/fields/runtime-theory/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/research/fields/runtime-theory/#webpage"
@@ -76,7 +76,7 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 102
+      "wordCount": 101
     },
     {
       "@type": "Organization",

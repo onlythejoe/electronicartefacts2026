@@ -5,11 +5,12 @@ slug:
   canonical: knowledge-hub-fourth-wave
 title: Hub de connaissance, quatrième vague
 subtitle: Protocoles d'IA, provenance, gouvernance et interfaces culturelles
-abstract: Hub de connaissance, quatrième vague rassemble des fiches liées par un même axe éditorial,
-  afin de donner une progression lisible aux archives de connaissance d'Electronic Artefacts.
-description: Hub de connaissance, quatrième vague rassemble des fiches liées par un même axe
-  éditorial, afin de donner une progression lisible aux archives de connaissance d'Electronic
-  Artefacts.
+abstract: "Une collection sur les protocoles et pratiques qui rendent les systèmes d’IA et les
+  infrastructures culturelles vérifiables : MCP, C2PA, WebNN, IIIF, OpenTelemetry, gouvernance et
+  identité."
+description: "Une collection sur les protocoles et pratiques qui rendent les systèmes d’IA et les
+  infrastructures culturelles vérifiables : MCP, C2PA, WebNN, IIIF, OpenTelemetry, gouvernance et
+  identité."
 locale: fr
 visibility: public
 publicationClass: published
@@ -24,8 +25,8 @@ version:
 authors:
   - id: ea:organization:electronic-artefacts
 publisher: ea:organization:electronic-artefacts
-thesis: Hub de connaissance, quatrième vague propose une lecture organisee de 19 fiches reliées par
-  un même axe editorial.
+thesis: Cette quatrième vague aborde la provenance, l’observabilité, la sécurité et la confiance
+  lisible par les machines à travers des standards directement applicables.
 curator:
   - id: ea:organization:electronic-artefacts
 explicitMembers:
@@ -48,8 +49,8 @@ explicitMembers:
   - id: ea:concept:digital-preservation
   - id: ea:concept:multimodal-ai
   - id: ea:concept:contextual-execution
-selectionNote: La sélection privilégie des contenus stables, reliables et utiles pour parcourir le
-  hub de connaissance en français.
+selectionNote: La sélection privilégie les contenus durables, solidement reliés et capables
+  d’éclairer plusieurs sujets du hub de connaissance.
 tags:
   - hub de connaissance
   - quatrième vague
@@ -68,16 +69,16 @@ translationOf: ea:collection:knowledge-hub-fourth-wave
 
 ## Intention
 
-Hub de connaissance, quatrième vague rassemble des fiches liées par un même axe éditorial.
+Une collection sur les protocoles et pratiques qui rendent les systèmes d’IA et les infrastructures culturelles vérifiables : MCP, C2PA, WebNN, IIIF, OpenTelemetry, gouvernance et identité.
 
 ## Sélection
 
-La collection organise les contenus par proximité éditoriale, par utilité de navigation et par potentiel de liens internes. Elle permet de parcourir le hub de connaissance sans perdre la cohérence du sujet.
+Cette quatrième vague aborde la provenance, l’observabilité, la sécurité et la confiance lisible par les machines à travers des standards directement applicables.
 
 ## Usage
 
-Cette entrée sert de repère pour explorer plusieurs publications ou notions depuis une même page française.
+Les entrées peuvent se lire dans l’ordre proposé ou servir de points de départ vers les sujets associés.
 
 ## Références
 
-Les sources associées sont conservées dans la fiche canonique du graphe.
+Aucune référence externe n’est associée à cette entrée.

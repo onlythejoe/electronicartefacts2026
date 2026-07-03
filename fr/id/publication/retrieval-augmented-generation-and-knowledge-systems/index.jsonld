@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/publications/retrieval-augmented-generation-and-knowledge-systems/#webpage",
       "url": "https://electronicartefacts.com/fr/publications/retrieval-augmented-generation-and-knowledge-systems/",
       "name": "Génération augmentée par récupération et systèmes de connaissance",
-      "description": "Génération augmentée par récupération et systèmes de connaissance propose une synthèse claire en français sur le sujet \"Génération augmentée par récupération et systèmes de connaissance\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
+      "description": "Une présentation complète des architectures RAG : ingestion, segmentation, embeddings, recherche hybride, graphes, citations, permissions et évaluation.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
@@ -35,8 +35,8 @@
       "identifier": "ea:publication:retrieval-augmented-generation-and-knowledge-systems-fr",
       "name": "Génération augmentée par récupération et systèmes de connaissance",
       "headline": "Génération augmentée par récupération et systèmes de connaissance",
-      "abstract": "Génération augmentée par récupération et systèmes de connaissance propose une synthèse claire en français sur le sujet \"Génération augmentée par récupération et systèmes de connaissance\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
-      "description": "Génération augmentée par récupération et systèmes de connaissance propose une synthèse claire en français sur le sujet \"Génération augmentée par récupération et systèmes de connaissance\" dans le graphe public d'Electronic Artefacts, avec un angle utile pour la recherche, la conception et la publication de connaissances numériques.",
+      "abstract": "Une présentation complète des architectures RAG : ingestion, segmentation, embeddings, recherche hybride, graphes, citations, permissions et évaluation.",
+      "description": "Une présentation complète des architectures RAG : ingestion, segmentation, embeddings, recherche hybride, graphes, citations, permissions et évaluation.",
       "url": "https://electronicartefacts.com/fr/publications/retrieval-augmented-generation-and-knowledge-systems/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/publications/retrieval-augmented-generation-and-knowledge-systems/#webpage"
@@ -78,7 +78,7 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 147,
+      "wordCount": 117,
       "citation": [
         "Electronic Artefacts. \"Génération augmentée par récupération et systèmes de connaissance\". Article technique, version 1.0.0, 2026.",
         {
