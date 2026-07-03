@@ -67,10 +67,10 @@
     "les exemples déconnectés des sources, relations ou contraintes du graphe"
   ],
   "claims": [
-    "Graphe de connaissances devient utile lorsque sa définition reste reliée à des sources, des pratiques et des objets observables.",
+    "La définition gagne en valeur lorsqu’elle reste reliée à des sources, des pratiques et des objets observables.",
     "La fiche sert de vocabulaire commun pour relier projets, publications et technologies sans mélanger les langues."
   ],
-  "bodyHtml": "<h2 id=\"definition\">Définition</h2>\n<p>Graphe de connaissances désigne les graphes de connaissances qui structurent des entités, des relations, des sources et des preuves.</p>\n<h2 id=\"usage\">Usage</h2>\n<p>Cette fiche relie la notion aux projets, publications et technologies qui partagent un même vocabulaire de conception. Elle sert de point d’appui pour naviguer dans le graphe en version française.</p>\n<h2 id=\"perimetre\">Périmètre</h2>\n<p>La notion est abordée par ses définitions, ses usages, ses limites et ses relations avec les autres objets documentés.</p>\n<h2 id=\"references\">Références</h2>\n<p>Les sources principales restent disponibles dans le bloc de références de la fiche.</p>\n",
+  "bodyHtml": "<h2 id=\"definition\">Définition</h2>\n<p>Graphe de connaissances désigne les graphes de connaissances qui structurent des entités, des relations, des sources et des preuves.</p>\n<h2 id=\"usage\">Usage</h2>\n<p>Cette fiche fixe le vocabulaire français de la notion et la relie aux projets, publications et technologies qui l’emploient dans le graphe.</p>\n<h2 id=\"perimetre\">Périmètre</h2>\n<p>Le périmètre précise les usages inclus, les limites explicites et les relations utiles pour poursuivre la lecture.</p>\n<h2 id=\"references\">Références</h2>\n<p>Les sources principales restent disponibles dans le bloc de références de la fiche.</p>\n",
   "headings": [
     "Définition",
     "Usage",

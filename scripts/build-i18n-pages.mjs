@@ -13,7 +13,7 @@ const pages = [
     englishRoute: "/",
     frenchRoute: "/fr/",
     title: "Electronic Artefacts | Studio de technologies créatives",
-    description: "Studio indépendant de technologies créatives : produits clients, systèmes propriétaires et création culturelle issue de la recherche.",
+    description: "Studio indépendant de technologies créatives pour produits numériques, systèmes de connaissance, logiciels propriétaires et création culturelle issue de la recherche.",
     h1: "Rendre les systèmes complexes lisibles.",
   },
   {
@@ -21,8 +21,8 @@ const pages = [
     output: "fr/work.html",
     englishRoute: "/work.html",
     frenchRoute: "/fr/work.html",
-    title: "Stratégie produit, design et ingénierie | Electronic Artefacts",
-    description: "Stratégie, design, ingénierie et reprise de produits numériques, plateformes et systèmes de connaissance complexes.",
+    title: "Stratégie produit, design & ingénierie | Electronic Artefacts",
+    description: "Stratégie, UX, design d’interface, ingénierie et reprise de produits numériques, plateformes et systèmes de connaissance complexes.",
     h1: "Stratégie, design et ingénierie pour des produits numériques complexes.",
   },
   {
@@ -31,7 +31,7 @@ const pages = [
     englishRoute: "/projects.html",
     frenchRoute: "/fr/projects.html",
     title: "Projets | Electronic Artefacts",
-    description: "Découvrez les plateformes propriétaires, œuvres culturelles et produits numériques réalisés par Electronic Artefacts.",
+    description: "Découvrez les plateformes propriétaires, créations culturelles, produits clients et systèmes de connaissance réalisés par Electronic Artefacts.",
     h1: "Des projets où la recherche prend forme.",
   },
   {
@@ -40,7 +40,7 @@ const pages = [
     englishRoute: "/about.html",
     frenchRoute: "/fr/about.html",
     title: "À propos du studio | Electronic Artefacts",
-    description: "Electronic Artefacts est un studio indépendant qui mène des missions clients, développe ses propres technologies et publie des travaux de recherche et de création.",
+    description: "Découvrez comment Electronic Artefacts réunit missions clients, technologies propriétaires et édition culturelle issue de la recherche.",
     h1: "Un studio. Trois façons de construire.",
   },
   {
@@ -58,7 +58,7 @@ const pages = [
     englishRoute: "/programs.html",
     frenchRoute: "/fr/programs.html",
     title: "Systèmes propriétaires et programmes | Electronic Artefacts",
-    description: "Évaluez les programmes logiciels Electronic Artefacts par revue de dépôt, pilote ciblé, partenariat d’implémentation ou licence.",
+    description: "Évaluez les programmes logiciels propriétaires d’Electronic Artefacts par revue de dépôt, pilote ciblé, partenariat d’implémentation ou licence.",
     h1: "Des systèmes propriétaires pour des partenaires techniques ambitieux.",
   },
   {
@@ -67,7 +67,7 @@ const pages = [
     englishRoute: "/research.html",
     frenchRoute: "/fr/research.html",
     title: "Recherche | Electronic Artefacts",
-    description: "Recherche sur la technologie, la connaissance et la culture, traduite en prototypes, publications et systèmes opérationnels.",
+    description: "Recherche sur la technologie, les systèmes de connaissance et la culture, traduite en prototypes, publications et logiciels opérationnels.",
     h1: "Une recherche qui prend la forme de systèmes, de méthodes et d’œuvres.",
   },
   {
@@ -76,7 +76,7 @@ const pages = [
     englishRoute: "/archive.html",
     frenchRoute: "/fr/archive.html",
     title: "Archives | Electronic Artefacts",
-    description: "Parcourez les publications, prototypes, documents et matériaux inachevés reliés aux décisions et aux systèmes qui les ont produits.",
+    description: "Parcourez les publications, prototypes, documents et traces de recherche reliés aux décisions et aux systèmes qui les ont produits.",
     h1: "Le travail continue dans les traces qu’il laisse.",
   },
   {
@@ -110,7 +110,7 @@ const pages = [
     englishRoute: "/project.html",
     frenchRoute: "/fr/project.html",
     title: "Projet | Electronic Artefacts",
-    description: "Présentation d’un projet Electronic Artefacts, de ses preuves visuelles et de ses systèmes connectés.",
+    description: "Présentation d’un projet Electronic Artefacts avec preuves visuelles, contexte de réalisation et systèmes connectés.",
     robots: "noindex,follow",
   },
   {
@@ -137,7 +137,7 @@ const pages = [
     englishRoute: "/entity.html",
     frenchRoute: "/fr/entity.html",
     title: "Fiche de connaissance | Electronic Artefacts",
-    description: "Une fiche publique de recherche ou de connaissance connectée à l’écosystème Electronic Artefacts.",
+    description: "Une fiche publique de connaissance Electronic Artefacts avec définition, sources, métadonnées et contexte de graphe.",
     robots: "noindex,follow",
   },
   {

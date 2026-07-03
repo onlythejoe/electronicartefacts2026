@@ -80,7 +80,7 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 87,
+      "wordCount": 77,
       "citation": [
         {
           "@type": "CreativeWork",
@@ -99,9 +99,12 @@
       "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/",
       "name": "Electronic Artefacts",
       "url": "https://electronicartefacts.com/",
-      "description": "Electronic Artefacts is an independent creative technology studio building client products, proprietary systems and research-led cultural work.",
+      "description": "Electronic Artefacts is an independent creative technology studio for complex digital products, knowledge systems, proprietary software and research-led cultural work.",
       "keywords": [
         "creative technology",
+        "digital product strategy",
+        "UX design",
+        "web development",
         "knowledge graph",
         "AI agents",
         "retrieval-augmented generation",
@@ -153,9 +156,12 @@
       "@id": "https://electronicartefacts.com/#website",
       "url": "https://electronicartefacts.com/",
       "name": "Electronic Artefacts",
-      "description": "Electronic Artefacts is an independent creative technology studio building client products, proprietary systems and research-led cultural work.",
+      "description": "Electronic Artefacts is an independent creative technology studio for complex digital products, knowledge systems, proprietary software and research-led cultural work.",
       "keywords": [
         "creative technology",
+        "digital product strategy",
+        "UX design",
+        "web development",
         "knowledge graph",
         "AI agents",
         "retrieval-augmented generation",

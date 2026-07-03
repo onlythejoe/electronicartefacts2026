@@ -5,12 +5,8 @@ slug:
   canonical: foundational-lineage-001
 title: "Foundational Lineage #001"
 subtitle: Recherche Note
-abstract: "Foundational Lineage #001 examine le sujet \"Foundational Lineage #001\" dans le graphe
-  public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites
-  et les sources de référence."
-description: "Foundational Lineage #001 examine le sujet \"Foundational Lineage #001\" dans le
-  graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les
-  limites et les sources de référence."
+abstract: "Cette synthèse française présente Foundational Lineage #001 : mécanismes, usages, limites et liens avec le graphe public d’Electronic Artefacts."
+description: "Repères pour comprendre Foundational Lineage #001 dans un contexte de conception : concepts clés, implications pratiques, limites et références reliées au graphe Electronic Artefacts."
 locale: fr
 visibility: public
 publicationClass: published
@@ -30,10 +26,8 @@ subjects:
   - id: ea:researchField:runtime-theory
   - id: ea:program:vaste
 claims:
-  - "Foundational Lineage #001 doit être lisible comme une synthèse française autonome, sans phrases
-    hybrides héritées de l'anglais."
-  - Les liens avec les notions, projets et technologies du graphe renforcent la recherche, la
-    navigation et la citation.
+  - La synthèse doit rester lisible en français autonome, sans formulations hybrides héritées de l'anglais.
+  - Les liens avec les notions, projets et technologies du graphe facilitent la recherche, la navigation et la citation.
 evidence:
   - id: ea:program:vaste
 citation:
@@ -49,23 +43,23 @@ disciplines: []
 
 ## Question
 
-Foundational Lineage #001 examine le sujet "Foundational Lineage #001" dans le graphe public d'Electronic Artefacts. La fiche donne une entrée française stable, utilisable pour lire le sujet et relier ses sources au reste du graphe.
+Cette note clarifie le sujet « Foundational Lineage #001 » pour rendre son origine, ses usages et ses liens avec le graphe Electronic Artefacts immédiatement compréhensibles.
 
 ## Contexte
 
-Le sujet est abordé par ses relations avec les concepts, projets et technologies concernés, afin de rendre son contexte de conception lisible.
+Le contexte est présenté par ses relations avec les concepts, projets et technologies concernés, afin que la fiche reste reliée à ses sources plutôt qu’isolée.
 
 ## Observation
 
-La page décrit les usages, contraintes et choix de structure qui permettent d'appliquer le sujet dans des situations concrètes.
+La note met en avant les usages, contraintes et choix de structure qui permettent d’appliquer le sujet dans des situations concrètes.
 
 ## Interprétation
 
-Les sources, relations et éléments de contexte restent attachés à la fiche pour distinguer synthèse éditoriale, preuves et références.
+Les sources, relations et éléments de contexte restent associés à la fiche pour distinguer synthèse éditoriale, preuve et référence.
 
 ## Limites
 
-Les limites sont formulées par rapport au périmètre de la fiche, aux sources disponibles et aux conditions d'usage documentées.
+Les limites décrivent ce que la fiche ne couvre pas encore, les sources disponibles et les conditions d’usage documentées.
 
 ## Références
 

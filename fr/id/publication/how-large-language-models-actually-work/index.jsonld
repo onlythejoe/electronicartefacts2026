@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/publications/how-large-language-models-actually-work/#webpage",
       "url": "https://electronicartefacts.com/fr/publications/how-large-language-models-actually-work/",
       "name": "Comment fonctionnent vraiment les grands modèles de langage",
-      "description": "Comment fonctionnent vraiment les grands modèles de langage examine le sujet \"Comment fonctionnent vraiment les grands modèles de langage\" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.",
+      "description": "Repères pour comprendre Comment fonctionnent vraiment les grands modèles de langage dans un contexte de conception : concepts clés, implications pratiques, limites et références reliées au graphe Electronic Artefacts.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
@@ -35,8 +35,8 @@
       "identifier": "ea:publication:how-large-language-models-actually-work-fr",
       "name": "Comment fonctionnent vraiment les grands modèles de langage",
       "headline": "Comment fonctionnent vraiment les grands modèles de langage",
-      "abstract": "Comment fonctionnent vraiment les grands modèles de langage examine le sujet \"Comment fonctionnent vraiment les grands modèles de langage\" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.",
-      "description": "Comment fonctionnent vraiment les grands modèles de langage examine le sujet \"Comment fonctionnent vraiment les grands modèles de langage\" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.",
+      "abstract": "Cette synthèse française présente Comment fonctionnent vraiment les grands modèles de langage : mécanismes, usages, limites et liens avec le graphe public d’Electronic Artefacts.",
+      "description": "Cette synthèse française présente Comment fonctionnent vraiment les grands modèles de langage : mécanismes, usages, limites et liens avec le graphe public d’Electronic Artefacts.",
       "url": "https://electronicartefacts.com/fr/publications/how-large-language-models-actually-work/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/publications/how-large-language-models-actually-work/#webpage"
@@ -78,7 +78,7 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 147,
+      "wordCount": 139,
       "citation": [
         "Electronic Artefacts. \"Comment fonctionnent vraiment les grands modèles de langage\". Article technique, version 1.0.0, 2026.",
         {
@@ -156,9 +156,12 @@
       "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/",
       "name": "Electronic Artefacts",
       "url": "https://electronicartefacts.com/",
-      "description": "Electronic Artefacts is an independent creative technology studio building client products, proprietary systems and research-led cultural work.",
+      "description": "Electronic Artefacts is an independent creative technology studio for complex digital products, knowledge systems, proprietary software and research-led cultural work.",
       "keywords": [
         "creative technology",
+        "digital product strategy",
+        "UX design",
+        "web development",
         "knowledge graph",
         "AI agents",
         "retrieval-augmented generation",
@@ -210,9 +213,12 @@
       "@id": "https://electronicartefacts.com/#website",
       "url": "https://electronicartefacts.com/",
       "name": "Electronic Artefacts",
-      "description": "Electronic Artefacts is an independent creative technology studio building client products, proprietary systems and research-led cultural work.",
+      "description": "Electronic Artefacts is an independent creative technology studio for complex digital products, knowledge systems, proprietary software and research-led cultural work.",
       "keywords": [
         "creative technology",
+        "digital product strategy",
+        "UX design",
+        "web development",
         "knowledge graph",
         "AI agents",
         "retrieval-augmented generation",

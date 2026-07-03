@@ -6,10 +6,8 @@ slug:
 title: WebNN
 alternateNames:
   - Web Neural Network API
-abstract: WebNN est documenté pour son rôle dans les systèmes d'Electronic Artefacts, ses usages,
-  ses limites et les technologies qui lui sont liées.
-description: WebNN est documenté pour son rôle dans les systèmes d'Electronic Artefacts, ses usages,
-  ses limites et les technologies qui lui sont liées.
+abstract: "WebNN est présenté comme une technologie de référence pour comprendre ses usages, ses limites et son rôle dans les systèmes Electronic Artefacts."
+description: "WebNN est présenté comme une technologie de référence pour comprendre ses usages, ses limites et son rôle dans les systèmes Electronic Artefacts."
 locale: fr
 visibility: public
 publicationClass: canonical
@@ -25,9 +23,7 @@ authors:
   - id: ea:organization:electronic-artefacts
 publisher: ea:organization:electronic-artefacts
 category: platform
-roleInEcosystem: WebNN sert de repère technique pour évaluer le sujet "WebNN" dans le graphe public
-  d'Electronic Artefacts, ses usages possibles et ses conséquences dans l'écosystème Electronic
-  Artefacts.
+roleInEcosystem: "WebNN sert de référence technique pour relier usages, contraintes d’implémentation et pages de connaissance dans le graphe Electronic Artefacts."
 officialUrl: https://www.w3.org/TR/webnn/
 sources:
   - title: Web Neural Network API
@@ -49,15 +45,15 @@ translationOf: ea:technology:webnn
 
 ## Rôle
 
-Cette fiche documenté WebNN comme technologie de référence pour le sujet "WebNN" dans le graphe public d'Electronic Artefacts.
+Cette fiche documente WebNN comme technologie de référence dans le graphe public d'Electronic Artefacts.
 
 ## Usage
 
-Elle situe la technologie dans l'écosystème Electronic Artefacts : ce qu'elle permet, quand elle devient pertinente et comment elle dialogue avec les autres composants du graphe.
+Elle précise ce que la technologie rend possible, quand elle devient pertinente et comment elle se relie aux autres composants du graphe.
 
 ## Points d'attention
 
-- Les usages sont décrits en français sans masquer les noms propres, acronymes où standards techniques.
+- Les usages sont décrits en français sans masquer les noms propres, acronymes ou standards techniques.
 - Les limites restent contextualisées par rapport aux projets, aux publications et aux contraintes d'implémentation.
 
 ## Références

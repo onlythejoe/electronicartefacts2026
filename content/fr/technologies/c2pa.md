@@ -7,10 +7,8 @@ title: C2PA
 alternateNames:
   - Content Credentials
   - Coalition pour Content Provenance et Authenticity
-abstract: C2PA est documenté pour son rôle dans les systèmes d'Electronic Artefacts, ses usages, ses
-  limites et les technologies qui lui sont liées.
-description: C2PA est documenté pour son rôle dans les systèmes d'Electronic Artefacts, ses usages,
-  ses limites et les technologies qui lui sont liées.
+abstract: "C2PA est présenté comme une technologie de référence pour comprendre ses usages, ses limites et son rôle dans les systèmes Electronic Artefacts."
+description: "C2PA est présenté comme une technologie de référence pour comprendre ses usages, ses limites et son rôle dans les systèmes Electronic Artefacts."
 locale: fr
 visibility: public
 publicationClass: canonical
@@ -26,9 +24,7 @@ authors:
   - id: ea:organization:electronic-artefacts
 publisher: ea:organization:electronic-artefacts
 category: protocol
-roleInEcosystem: C2PA sert de repère technique pour évaluer le sujet "C2PA" dans le graphe public
-  d'Electronic Artefacts, ses usages possibles et ses conséquences dans l'écosystème Electronic
-  Artefacts.
+roleInEcosystem: "C2PA sert de référence technique pour relier usages, contraintes d’implémentation et pages de connaissance dans le graphe Electronic Artefacts."
 officialUrl: https://spec.c2pa.org/specifications/specifications/2.4/index.html
 sources:
   - title: C2PA Specifications 2.4
@@ -49,15 +45,15 @@ translationOf: ea:technology:c2pa
 
 ## Rôle
 
-Cette fiche documenté C2PA comme technologie de référence pour le sujet "C2PA" dans le graphe public d'Electronic Artefacts.
+Cette fiche documente C2PA comme technologie de référence dans le graphe public d'Electronic Artefacts.
 
 ## Usage
 
-Elle situe la technologie dans l'écosystème Electronic Artefacts : ce qu'elle permet, quand elle devient pertinente et comment elle dialogue avec les autres composants du graphe.
+Elle précise ce que la technologie rend possible, quand elle devient pertinente et comment elle se relie aux autres composants du graphe.
 
 ## Points d'attention
 
-- Les usages sont décrits en français sans masquer les noms propres, acronymes où standards techniques.
+- Les usages sont décrits en français sans masquer les noms propres, acronymes ou standards techniques.
 - Les limites restent contextualisées par rapport aux projets, aux publications et aux contraintes d'implémentation.
 
 ## Références

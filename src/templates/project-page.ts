@@ -257,7 +257,7 @@ const renderProjectTabs = (
       id: "brief",
       label: "Brief",
       eyebrow: "PROJECT BRIEF",
-      title: "What the project is built to resolve.",
+      title: "The problem this project addresses.",
       body: `<p class="lede">${escapeHtml(project.brief)}</p>`,
     },
     {
@@ -287,7 +287,7 @@ const renderProjectTabs = (
       id: "proof",
       label: "Proof",
       eyebrow: "PUBLIC EVIDENCE",
-      title: evidenceCards.length ? "What currently substantiates the project." : "Evidence is attached when public.",
+      title: evidenceCards.length ? "Current evidence supporting the project." : "Evidence is attached when public.",
       body: evidenceCards.length
         ? `<div class="project-proof-list">${evidenceCards.map((item) => `
             <article class="panel panel--soft">
@@ -304,7 +304,7 @@ const renderProjectTabs = (
       <div class="project-command__top">
         <div class="section-head">
           <p class="eyebrow">PROJECT READING</p>
-          <h2>${isVestiges ? "Read Vestiges from thesis to evidence." : "A compact cockpit for the dossier."}</h2>
+          <h2>${isVestiges ? "Read Vestiges from thesis to evidence." : "A concise guide to the project dossier."}</h2>
           <p class="lede">${isVestiges ? "Move from the cultural problem to the contribution model and current public evidence." : "Move between strategic framing, context, implementation logic and evidence without losing the surrounding page."}</p>
         </div>
         <div class="project-command__nav" role="tablist" aria-label="Project dossier sections">
@@ -517,7 +517,7 @@ const renderProjectDevelopment = (
     <section class="zone-card hero project-discipline project-discipline--dev" id="project-dev">
       <div class="section-head">
         <p class="eyebrow">DEVELOPMENT</p>
-        <h2>${isVestiges ? "A technical foundation for cultural transmission." : "Architecture, implementation logic and build surface."}</h2>
+        <h2>${isVestiges ? "A technical foundation for cultural transmission." : "Architecture, implementation logic and delivery surface."}</h2>
         <p class="lede">${isVestiges ? "Stable identities, provenance and contextual permissions turn cultural material into a usable and governable system." : "The technical read combines approach steps, implementation choices, current constraints and delivery state."}</p>
       </div>
       <div class="project-discipline__grid">

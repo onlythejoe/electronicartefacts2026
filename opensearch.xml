@@ -3,7 +3,7 @@
   <ShortName>Electronic Artefacts</ShortName>
   <LongName>Electronic Artefacts Knowledge Search</LongName>
   <Description>Search the Electronic Artefacts public knowledge graph.</Description>
-  <Tags>creative technology knowledge graph AI agents retrieval-augmented generation linked data digital preservation cultural infrastructure software systems research publishing</Tags>
+  <Tags>creative technology digital product strategy UX design web development knowledge graph AI agents retrieval-augmented generation linked data digital preservation cultural infrastructure software systems research publishing</Tags>
   <Contact>electronic.artefacts@gmail.com</Contact>
   <Url type="text/html" template="https://electronicartefacts.com/search/?q={searchTerms}" />
   <Image height="192" width="192" type="image/png">https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-icon-192.png</Image>

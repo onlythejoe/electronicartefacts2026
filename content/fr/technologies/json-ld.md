@@ -5,10 +5,8 @@ slug:
   canonical: json-ld
 title: JSON-LD
 subtitle: JSON pour Données liées
-abstract: JSON-LD est documenté pour son rôle dans les systèmes d'Electronic Artefacts, ses usages,
-  ses limites et les technologies qui lui sont liées.
-description: JSON-LD est documenté pour son rôle dans les systèmes d'Electronic Artefacts, ses
-  usages, ses limites et les technologies qui lui sont liées.
+abstract: "JSON-LD est présenté comme une technologie de référence pour comprendre ses usages, ses limites et son rôle dans les systèmes Electronic Artefacts."
+description: "JSON-LD est présenté comme une technologie de référence pour comprendre ses usages, ses limites et son rôle dans les systèmes Electronic Artefacts."
 locale: fr
 visibility: public
 publicationClass: published
@@ -24,9 +22,7 @@ authors:
   - id: ea:organization:electronic-artefacts
 publisher: ea:organization:electronic-artefacts
 category: protocol
-roleInEcosystem: JSON-LD sert de repère technique pour évaluer le sujet "JSON-LD" dans le graphe
-  public d'Electronic Artefacts, ses usages possibles et ses conséquences dans l'écosystème
-  Electronic Artefacts.
+roleInEcosystem: "JSON-LD sert de référence technique pour relier usages, contraintes d’implémentation et pages de connaissance dans le graphe Electronic Artefacts."
 officialUrl: https://www.w3.org/TR/json-ld11/
 versions:
   - JSON-LD 1.1
@@ -50,15 +46,15 @@ translationOf: ea:technology:json-ld
 
 ## Rôle
 
-Cette fiche documenté JSON-LD comme technologie de référence pour le sujet "JSON-LD" dans le graphe public d'Electronic Artefacts.
+Cette fiche documente JSON-LD comme technologie de référence dans le graphe public d'Electronic Artefacts.
 
 ## Usage
 
-Elle situe la technologie dans l'écosystème Electronic Artefacts : ce qu'elle permet, quand elle devient pertinente et comment elle dialogue avec les autres composants du graphe.
+Elle précise ce que la technologie rend possible, quand elle devient pertinente et comment elle se relie aux autres composants du graphe.
 
 ## Points d'attention
 
-- Les usages sont décrits en français sans masquer les noms propres, acronymes où standards techniques.
+- Les usages sont décrits en français sans masquer les noms propres, acronymes ou standards techniques.
 - Les limites restent contextualisées par rapport aux projets, aux publications et aux contraintes d'implémentation.
 
 ## Références

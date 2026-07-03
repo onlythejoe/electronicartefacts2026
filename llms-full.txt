@@ -98,7 +98,7 @@ This file is generated from typed public records. Prefer each record's canonical
 
 ## publication
 
-- [Agents d'IA et workflows d'IA](https://electronicartefacts.com/fr/publications/ai-agents-vs-ai-workflows/): Agents d'IA et workflows d'IA examine le sujet "Agents d'IA et workflows d'IA" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.
+- [Agents d'IA et workflows d'IA](https://electronicartefacts.com/fr/publications/ai-agents-vs-ai-workflows/): Repères pour comprendre Agents d'IA et workflows d'IA dans un contexte de conception : concepts clés, implications pratiques, limites et références reliées au graphe Electronic Artefacts.
   - Entity ID: ea:publication:ai-agents-vs-ai-workflows-fr
   - Identifier: https://electronicartefacts.com/fr/id/publication/ai-agents-vs-ai-workflows/
   - JSON-LD: https://electronicartefacts.com/fr/id/publication/ai-agents-vs-ai-workflows/index.jsonld
@@ -122,13 +122,13 @@ This file is generated from typed public records. Prefer each record's canonical
   - JSON-LD: https://electronicartefacts.com/id/publication/algorithmic-composition-and-rule-based-music/index.jsonld
   - Modified: 2026-06-24
   - Keywords: Algorithmic Composition and Rule-Based Music, Algorithmic Composition, Electronic Music, Generative Music, ORETH, Music Production, Creative Coding, Cybernetics
-- [Archéologie du signal, mémoire audio et écoute machine](https://electronicartefacts.com/fr/publications/signal-archaeology-audio-memory-and-machine-listening/): Archéologie du signal, mémoire audio et écoute machine examine le sujet "Archéologie du signal, mémoire audio et écoute machine" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources...
+- [Archéologie du signal, mémoire audio et écoute machine](https://electronicartefacts.com/fr/publications/signal-archaeology-audio-memory-and-machine-listening/): Repères pour comprendre Archéologie du signal, mémoire audio et écoute machine dans un contexte de conception : concepts clés, implications pratiques, limites et références reliées au graphe Electronic Artefacts.
   - Entity ID: ea:publication:signal-archaeology-audio-memory-and-machine-listening-fr
   - Identifier: https://electronicartefacts.com/fr/id/publication/signal-archaeology-audio-memory-and-machine-listening/
   - JSON-LD: https://electronicartefacts.com/fr/id/publication/signal-archaeology-audio-memory-and-machine-listening/index.jsonld
   - Modified: 2026-06-25
   - Keywords: Archéologie du signal, mémoire audio et écoute machine, Signal Archaeology, Audio, Machine Listening, ORETH, Palimpsests, ingénierie audio, Sound Design
-- [Architecture événementielle et flux d'événements](https://electronicartefacts.com/fr/publications/event-driven-architecture-and-event-streams/): Architecture événementielle et flux d'événements examine le sujet "Architecture événementielle et flux d'événements" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.
+- [Architecture événementielle et flux d'événements](https://electronicartefacts.com/fr/publications/event-driven-architecture-and-event-streams/): Repères pour comprendre Architecture événementielle et flux d'événements dans un contexte de conception : concepts clés, implications pratiques, limites et références reliées au graphe Electronic Artefacts.
   - Entity ID: ea:publication:event-driven-architecture-and-event-streams-fr
   - Identifier: https://electronicartefacts.com/fr/id/publication/event-driven-architecture-and-event-streams/
   - JSON-LD: https://electronicartefacts.com/fr/id/publication/event-driven-architecture-and-event-streams/index.jsonld
@@ -140,19 +140,19 @@ This file is generated from typed public records. Prefer each record's canonical
   - JSON-LD: https://electronicartefacts.com/id/publication/c2pa-content-credentials-and-generative-media-provenance/index.jsonld
   - Modified: 2026-06-24
   - Keywords: C2PA Content Credentials and Generative Media Provenance, C2PA, Content Credentials, Provenance, Generative AI, Digital Preservation, Artificial Intelligence, Knowledge Systems
-- [C2PA, Content Credentials et provenance des médias génératifs](https://electronicartefacts.com/fr/publications/c2pa-content-credentials-and-generative-media-provenance/): C2PA, Content Credentials et provenance des médias génératifs examine le sujet "C2PA, Content Credentials et provenance des médias génératifs" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites...
+- [C2PA, Content Credentials et provenance des médias génératifs](https://electronicartefacts.com/fr/publications/c2pa-content-credentials-and-generative-media-provenance/): Repères pour comprendre C2PA, Content Credentials et provenance des médias génératifs dans un contexte de conception : concepts clés, implications pratiques, limites et références reliées au graphe Electronic Artefacts.
   - Entity ID: ea:publication:c2pa-content-credentials-and-generative-media-provenance-fr
   - Identifier: https://electronicartefacts.com/fr/id/publication/c2pa-content-credentials-and-generative-media-provenance/
   - JSON-LD: https://electronicartefacts.com/fr/id/publication/c2pa-content-credentials-and-generative-media-provenance/index.jsonld
   - Modified: 2026-06-25
   - Keywords: C2PA, Content Credentials et provenance des médias génératifs, C2PA, Content Credentials, Provenance, Generative AI, Digital Préservation, intelligence artificielle, systèmes de connaissance
-- [Comment fonctionnent vraiment les grands modèles de langage](https://electronicartefacts.com/fr/publications/how-large-language-models-actually-work/): Comment fonctionnent vraiment les grands modèles de langage examine le sujet "Comment fonctionnent vraiment les grands modèles de langage" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et...
+- [Comment fonctionnent vraiment les grands modèles de langage](https://electronicartefacts.com/fr/publications/how-large-language-models-actually-work/): Repères pour comprendre Comment fonctionnent vraiment les grands modèles de langage dans un contexte de conception : concepts clés, implications pratiques, limites et références reliées au graphe Electronic Artefacts.
   - Entity ID: ea:publication:how-large-language-models-actually-work-fr
   - Identifier: https://electronicartefacts.com/fr/id/publication/how-large-language-models-actually-work/
   - JSON-LD: https://electronicartefacts.com/fr/id/publication/how-large-language-models-actually-work/index.jsonld
   - Modified: 2026-06-25
   - Keywords: Comment fonctionnent vraiment les grands modèles de langage, LLM, Transformer, Attention, Tokenization, inférence, intelligence artificielle, apprentissage automatique
-- [Composition algorithmique et musique fondée sur des règles](https://electronicartefacts.com/fr/publications/algorithmic-composition-and-rule-based-music/): Composition algorithmique et musique fondée sur des règles examine le sujet "Composition algorithmique et musique fondée sur des règles" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les...
+- [Composition algorithmique et musique fondée sur des règles](https://electronicartefacts.com/fr/publications/algorithmic-composition-and-rule-based-music/): Repères pour comprendre Composition algorithmique et musique fondée sur des règles dans un contexte de conception : concepts clés, implications pratiques, limites et références reliées au graphe Electronic Artefacts.
   - Entity ID: ea:publication:algorithmic-composition-and-rule-based-music-fr
   - Identifier: https://electronicartefacts.com/fr/id/publication/algorithmic-composition-and-rule-based-music/
   - JSON-LD: https://electronicartefacts.com/fr/id/publication/algorithmic-composition-and-rule-based-music/index.jsonld
@@ -176,7 +176,7 @@ This file is generated from typed public records. Prefer each record's canonical
   - JSON-LD: https://electronicartefacts.com/id/publication/digital-preservation-and-living-archives/index.jsonld
   - Modified: 2026-06-23
   - Keywords: Digital Preservation and Living Archives, Digital Preservation, Living Archive, Provenance, Palimpsests, Vestiges, Archives, Digital Art
-- [Données liées et pages publiques de connaissance](https://electronicartefacts.com/fr/publications/linked-data-and-public-knowledge-pages/): Données liées et pages publiques de connaissance examine le sujet "Données liées et pages publiques de connaissance" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.
+- [Données liées et pages publiques de connaissance](https://electronicartefacts.com/fr/publications/linked-data-and-public-knowledge-pages/): Repères pour comprendre Données liées et pages publiques de connaissance dans un contexte de conception : concepts clés, implications pratiques, limites et références reliées au graphe Electronic Artefacts.
   - Entity ID: ea:publication:linked-data-and-public-knowledge-pages-fr
   - Identifier: https://electronicartefacts.com/fr/id/publication/linked-data-and-public-knowledge-pages/
   - JSON-LD: https://electronicartefacts.com/fr/id/publication/linked-data-and-public-knowledge-pages/index.jsonld
@@ -188,13 +188,13 @@ This file is generated from typed public records. Prefer each record's canonical
   - JSON-LD: https://electronicartefacts.com/id/publication/event-driven-architecture-and-event-streams/index.jsonld
   - Modified: 2026-06-24
   - Keywords: Event-Driven Architecture and Event Streams, Event-Driven Architecture, Event Streams, CloudEvents, Idempotency, Event Sourcing, Software Architecture, Systems Design
-- [Exécution contextuelle et runtimes de graphe](https://electronicartefacts.com/fr/publications/contextual-execution-and-graph-runtimes/): Exécution contextuelle et runtimes de graphe examine le sujet "Exécution contextuelle et runtimes de graphe" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.
+- [Exécution contextuelle et runtimes de graphe](https://electronicartefacts.com/fr/publications/contextual-execution-and-graph-runtimes/): Repères pour comprendre Exécution contextuelle et runtimes de graphe dans un contexte de conception : concepts clés, implications pratiques, limites et références reliées au graphe Electronic Artefacts.
   - Entity ID: ea:publication:contextual-execution-and-graph-runtimes-fr
   - Identifier: https://electronicartefacts.com/fr/id/publication/contextual-execution-and-graph-runtimes/
   - JSON-LD: https://electronicartefacts.com/fr/id/publication/contextual-execution-and-graph-runtimes/index.jsonld
   - Modified: 2026-06-25
   - Keywords: Exécution contextuelle et runtimes de graphe, Contextual Exécution, Graph Runtime, Runtime Theory, VASTE, conception de systèmes, programmation, systèmes de connaissance
-- [Foundational Lineage #001](https://electronicartefacts.com/fr/publications/foundational-lineage-001/): Foundational Lineage #001 examine le sujet "Foundational Lineage #001" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.
+- [Foundational Lineage #001](https://electronicartefacts.com/fr/publications/foundational-lineage-001/): Repères pour comprendre Foundational Lineage #001 dans un contexte de conception : concepts clés, implications pratiques, limites et références reliées au graphe Electronic Artefacts.
   - Entity ID: ea:publication:foundational-lineage-001-fr
   - Identifier: https://electronicartefacts.com/fr/id/publication/foundational-lineage-001/
   - JSON-LD: https://electronicartefacts.com/fr/id/publication/foundational-lineage-001/index.jsonld
@@ -206,7 +206,7 @@ This file is generated from typed public records. Prefer each record's canonical
   - JSON-LD: https://electronicartefacts.com/id/publication/foundational-lineage-001/index.jsonld
   - Modified: 2026-06-22
   - Keywords: Foundational Lineage #001, Foundational, Lineage, Research, Information architecture
-- [Génération augmentée par récupération et systèmes de connaissance](https://electronicartefacts.com/fr/publications/retrieval-augmented-generation-and-knowledge-systems/): Génération augmentée par récupération et systèmes de connaissance examine le sujet "Génération augmentée par récupération et systèmes de connaissance" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les...
+- [Génération augmentée par récupération et systèmes de connaissance](https://electronicartefacts.com/fr/publications/retrieval-augmented-generation-and-knowledge-systems/): Repères pour comprendre Génération augmentée par récupération et systèmes de connaissance dans un contexte de conception : concepts clés, implications pratiques, limites et références reliées au graphe Electronic Artefacts.
   - Entity ID: ea:publication:retrieval-augmented-generation-and-knowledge-systems-fr
   - Identifier: https://electronicartefacts.com/fr/id/publication/retrieval-augmented-generation-and-knowledge-systems/
   - JSON-LD: https://electronicartefacts.com/fr/id/publication/retrieval-augmented-generation-and-knowledge-systems/index.jsonld
@@ -224,19 +224,19 @@ This file is generated from typed public records. Prefer each record's canonical
   - JSON-LD: https://electronicartefacts.com/id/publication/generative-systems-cybernetics-and-creative-coding/index.jsonld
   - Modified: 2026-06-23
   - Keywords: Generative Systems, Cybernetics and Creative Coding, Generative Systems, Cybernetics, Creative Coding, Algorithmic Composition, Digital Art, Music Production, Systems Design
-- [Gouvernance responsable de l'IA pour les systèmes créatifs et culturels](https://electronicartefacts.com/fr/publications/responsible-ai-governance-for-creative-and-cultural-systems/): Gouvernance responsable de l'IA pour les systèmes créatifs et culturels examine le sujet "Gouvernance responsable de l'IA pour les systèmes créatifs et culturels" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les...
+- [Gouvernance responsable de l'IA pour les systèmes créatifs et culturels](https://electronicartefacts.com/fr/publications/responsible-ai-governance-for-creative-and-cultural-systems/): Repères pour comprendre Gouvernance responsable de l'IA pour les systèmes créatifs et culturels dans un contexte de conception : concepts clés, implications pratiques, limites et références reliées au graphe Electronic Artefacts.
   - Entity ID: ea:publication:responsible-ai-governance-for-creative-and-cultural-systems-fr
   - Identifier: https://electronicartefacts.com/fr/id/publication/responsible-ai-governance-for-creative-and-cultural-systems/
   - JSON-LD: https://electronicartefacts.com/fr/id/publication/responsible-ai-governance-for-creative-and-cultural-systems/index.jsonld
   - Modified: 2026-06-25
   - Keywords: Gouvernance responsable de l'IA pour les systèmes créatifs et culturels, Responsible AI, gouvernance de l'IA, technologies créatives, infrastructure culturelle, Provenance, intelligence artificielle, systèmes de connaissance
-- [Graphes de connaissances pour les infrastructures culturelles](https://electronicartefacts.com/fr/publications/knowledge-graphs-for-cultural-infrastructure/): Graphes de connaissances pour les infrastructures culturelles examine le sujet "Graphes de connaissances pour les infrastructures culturelles" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites...
+- [Graphes de connaissances pour les infrastructures culturelles](https://electronicartefacts.com/fr/publications/knowledge-graphs-for-cultural-infrastructure/): Repères pour comprendre Graphes de connaissances pour les infrastructures culturelles dans un contexte de conception : concepts clés, implications pratiques, limites et références reliées au graphe Electronic Artefacts.
   - Entity ID: ea:publication:knowledge-graphs-for-cultural-infrastructure-fr
   - Identifier: https://electronicartefacts.com/fr/id/publication/knowledge-graphs-for-cultural-infrastructure/
   - JSON-LD: https://electronicartefacts.com/fr/id/publication/knowledge-graphs-for-cultural-infrastructure/index.jsonld
   - Modified: 2026-06-25
   - Keywords: Graphes de connaissances pour les infrastructures culturelles, graphe de connaissances, infrastructure culturelle, Linked Data, Provenance, Vestiges, systèmes de connaissance, archives
-- [Graphisme procédural, shaders et systèmes visuels](https://electronicartefacts.com/fr/publications/procedural-graphics-shaders-and-visual-systems/): Graphisme procédural, shaders et systèmes visuels examine le sujet "Graphisme procédural, shaders et systèmes visuels" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.
+- [Graphisme procédural, shaders et systèmes visuels](https://electronicartefacts.com/fr/publications/procedural-graphics-shaders-and-visual-systems/): Repères pour comprendre Graphisme procédural, shaders et systèmes visuels dans un contexte de conception : concepts clés, implications pratiques, limites et références reliées au graphe Electronic Artefacts.
   - Entity ID: ea:publication:procedural-graphics-shaders-and-visual-systems-fr
   - Identifier: https://electronicartefacts.com/fr/id/publication/procedural-graphics-shaders-and-visual-systems/
   - JSON-LD: https://electronicartefacts.com/fr/id/publication/procedural-graphics-shaders-and-visual-systems/index.jsonld
@@ -260,25 +260,25 @@ This file is generated from typed public records. Prefer each record's canonical
   - JSON-LD: https://electronicartefacts.com/id/publication/hypertext-and-augmented-knowledge-systems/index.jsonld
   - Modified: 2026-06-24
   - Keywords: Hypertext and Augmented Knowledge Systems, Hypertext, Augmented Intelligence, Knowledge Graph, Linked Data, History of Technology, Knowledge Systems, Web Development
-- [Hypertexte et systèmes de connaissance augmentée](https://electronicartefacts.com/fr/publications/hypertext-and-augmented-knowledge-systems/): Hypertexte et systèmes de connaissance augmentée examine le sujet "Hypertexte et systèmes de connaissance augmentée" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.
+- [Hypertexte et systèmes de connaissance augmentée](https://electronicartefacts.com/fr/publications/hypertext-and-augmented-knowledge-systems/): Repères pour comprendre Hypertexte et systèmes de connaissance augmentée dans un contexte de conception : concepts clés, implications pratiques, limites et références reliées au graphe Electronic Artefacts.
   - Entity ID: ea:publication:hypertext-and-augmented-knowledge-systems-fr
   - Identifier: https://electronicartefacts.com/fr/id/publication/hypertext-and-augmented-knowledge-systems/
   - JSON-LD: https://electronicartefacts.com/fr/id/publication/hypertext-and-augmented-knowledge-systems/index.jsonld
   - Modified: 2026-06-25
   - Keywords: Hypertexte et systèmes de connaissance augmentée, Hypertext, intelligence augmentée, graphe de connaissances, Linked Data, histoire des technologies, systèmes de connaissance, développement web
-- [IA générative, espace latent et workflows créatifs](https://electronicartefacts.com/fr/publications/generative-ai-latent-space-and-creative-workflows/): IA générative, espace latent et workflows créatifs examine le sujet "IA générative, espace latent et workflows créatifs" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de...
+- [IA générative, espace latent et workflows créatifs](https://electronicartefacts.com/fr/publications/generative-ai-latent-space-and-creative-workflows/): Repères pour comprendre IA générative, espace latent et workflows créatifs dans un contexte de conception : concepts clés, implications pratiques, limites et références reliées au graphe Electronic Artefacts.
   - Entity ID: ea:publication:generative-ai-latent-space-and-creative-workflows-fr
   - Identifier: https://electronicartefacts.com/fr/id/publication/generative-ai-latent-space-and-creative-workflows/
   - JSON-LD: https://electronicartefacts.com/fr/id/publication/generative-ai-latent-space-and-creative-workflows/index.jsonld
   - Modified: 2026-06-25
   - Keywords: IA générative, espace latent et workflows créatifs, Generative AI, Latent Space, Creative Workflows, Provenance, intelligence artificielle, apprentissage automatique, programmation créative
-- [IA multimodale pour le texte, l'image, l'audio et la vidéo](https://electronicartefacts.com/fr/publications/multimodal-ai-across-text-image-audio-and-video/): IA multimodale pour le texte, l'image, l'audio et la vidéo examine le sujet "IA multimodale pour le texte, l'image, l'audio et la vidéo" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les...
+- [IA multimodale pour le texte, l'image, l'audio et la vidéo](https://electronicartefacts.com/fr/publications/multimodal-ai-across-text-image-audio-and-video/): Repères pour comprendre IA multimodale pour le texte, l'image, l'audio et la vidéo dans un contexte de conception : concepts clés, implications pratiques, limites et références reliées au graphe Electronic Artefacts.
   - Entity ID: ea:publication:multimodal-ai-across-text-image-audio-and-video-fr
   - Identifier: https://electronicartefacts.com/fr/id/publication/multimodal-ai-across-text-image-audio-and-video/
   - JSON-LD: https://electronicartefacts.com/fr/id/publication/multimodal-ai-across-text-image-audio-and-video/index.jsonld
   - Modified: 2026-06-25
   - Keywords: IA multimodale pour le texte, l'image, l'audio et la vidéo, Multimodal AI, Vision Language, Audio AI, Video AI, Cross-Modal Retrieval, intelligence artificielle, apprentissage automatique
-- [Identifiants vérifiables pour les archives culturelles et l’identité des créateurs](https://electronicartefacts.com/fr/publications/verifiable-credentials-for-cultural-archives-and-creator-identity/): Identifiants vérifiables pour les archives culturelles et l’identité des créateurs examine le sujet "Identifiants vérifiables pour les archives culturelles et l’identité des créateurs" dans le graphe public d'Electronic Artefacts. La fiche en synthétise...
+- [Identifiants vérifiables pour les archives culturelles et l’identité des créateurs](https://electronicartefacts.com/fr/publications/verifiable-credentials-for-cultural-archives-and-creator-identity/): Repères pour comprendre Identifiants vérifiables pour les archives culturelles et l’identité des créateurs dans un contexte de conception : concepts clés, implications pratiques, limites et références reliées au graphe Electronic Artefacts.
   - Entity ID: ea:publication:verifiable-credentials-for-cultural-archives-and-creator-identity-fr
   - Identifier: https://electronicartefacts.com/fr/id/publication/verifiable-credentials-for-cultural-archives-and-creator-identity/
   - JSON-LD: https://electronicartefacts.com/fr/id/publication/verifiable-credentials-for-cultural-archives-and-creator-identity/index.jsonld
@@ -290,19 +290,19 @@ This file is generated from typed public records. Prefer each record's canonical
   - JSON-LD: https://electronicartefacts.com/id/publication/iiif-and-compound-cultural-objects/index.jsonld
   - Modified: 2026-06-24
   - Keywords: IIIF and Compound Cultural Objects, IIIF, Digital Archives, Cultural Objects, Metadata, Linked Data, Digital Preservation, Cultural Infrastructure
-- [IIIF et objets culturels composés](https://electronicartefacts.com/fr/publications/iiif-and-compound-cultural-objects/): IIIF et objets culturels composés examine le sujet "IIIF et objets culturels composés" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.
+- [IIIF et objets culturels composés](https://electronicartefacts.com/fr/publications/iiif-and-compound-cultural-objects/): Repères pour comprendre IIIF et objets culturels composés dans un contexte de conception : concepts clés, implications pratiques, limites et références reliées au graphe Electronic Artefacts.
   - Entity ID: ea:publication:iiif-and-compound-cultural-objects-fr
   - Identifier: https://electronicartefacts.com/fr/id/publication/iiif-and-compound-cultural-objects/
   - JSON-LD: https://electronicartefacts.com/fr/id/publication/iiif-and-compound-cultural-objects/index.jsonld
   - Modified: 2026-06-25
   - Keywords: IIIF et objets culturels composés, IIIF, Digital Archives, Cultural Objects, Metadata, Linked Data, Digital Préservation, infrastructure culturelle
-- [Injection de prompt et frontières de confiance dans les systèmes de connaissance IA](https://electronicartefacts.com/fr/publications/prompt-injection-and-trust-boundaries-in-ai-knowledge-systems/): Injection de prompt et frontières de confiance dans les systèmes de connaissance IA examine le sujet "Injection de prompt et frontières de confiance dans les systèmes de connaissance IA" dans le graphe public d'Electronic Artefacts. La fiche en synthétise...
+- [Injection de prompt et frontières de confiance dans les systèmes de connaissance IA](https://electronicartefacts.com/fr/publications/prompt-injection-and-trust-boundaries-in-ai-knowledge-systems/): Repères pour comprendre Injection de prompt et frontières de confiance dans les systèmes de connaissance IA dans un contexte de conception : concepts clés, implications pratiques, limites et références reliées au graphe Electronic Artefacts.
   - Entity ID: ea:publication:prompt-injection-and-trust-boundaries-in-ai-knowledge-systems-fr
   - Identifier: https://electronicartefacts.com/fr/id/publication/prompt-injection-and-trust-boundaries-in-ai-knowledge-systems/
   - JSON-LD: https://electronicartefacts.com/fr/id/publication/prompt-injection-and-trust-boundaries-in-ai-knowledge-systems/index.jsonld
   - Modified: 2026-06-25
   - Keywords: Injection de prompt et frontières de confiance dans les systèmes de connaissance IA, Prompt Injection, AI Security, agents d'IA, MCP, Trust Boundaries, intelligence artificielle, Security
-- [Interaction humain-machine pour les outils créatifs](https://electronicartefacts.com/fr/publications/human-computer-interaction-for-creative-tools/): Interaction humain-machine pour les outils créatifs examine le sujet "Interaction humain-machine pour les outils créatifs" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de...
+- [Interaction humain-machine pour les outils créatifs](https://electronicartefacts.com/fr/publications/human-computer-interaction-for-creative-tools/): Repères pour comprendre Interaction humain-machine pour les outils créatifs dans un contexte de conception : concepts clés, implications pratiques, limites et références reliées au graphe Electronic Artefacts.
   - Entity ID: ea:publication:human-computer-interaction-for-creative-tools-fr
   - Identifier: https://electronicartefacts.com/fr/id/publication/human-computer-interaction-for-creative-tools/
   - JSON-LD: https://electronicartefacts.com/fr/id/publication/human-computer-interaction-for-creative-tools/index.jsonld
@@ -314,7 +314,7 @@ This file is generated from typed public records. Prefer each record's canonical
   - JSON-LD: https://electronicartefacts.com/id/publication/knowledge-graphs-for-cultural-infrastructure/index.jsonld
   - Modified: 2026-06-23
   - Keywords: Knowledge Graphs for Cultural Infrastructure, Knowledge Graph, Cultural Infrastructure, Linked Data, Provenance, Vestiges, Knowledge Systems, Archives
-- [L’open source comme infrastructure culturelle](https://electronicartefacts.com/fr/publications/open-source-as-cultural-infrastructure/): L’open source comme infrastructure culturelle examine le sujet "L’open source comme infrastructure culturelle" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.
+- [L’open source comme infrastructure culturelle](https://electronicartefacts.com/fr/publications/open-source-as-cultural-infrastructure/): Repères pour comprendre L’open source comme infrastructure culturelle dans un contexte de conception : concepts clés, implications pratiques, limites et références reliées au graphe Electronic Artefacts.
   - Entity ID: ea:publication:open-source-as-cultural-infrastructure-fr
   - Identifier: https://electronicartefacts.com/fr/id/publication/open-source-as-cultural-infrastructure/
   - JSON-LD: https://electronicartefacts.com/fr/id/publication/open-source-as-cultural-infrastructure/index.jsonld
@@ -338,7 +338,7 @@ This file is generated from typed public records. Prefer each record's canonical
   - JSON-LD: https://electronicartefacts.com/id/publication/metadata-cataloguing-and-cultural-memory/index.jsonld
   - Modified: 2026-06-24
   - Keywords: Metadata, Cataloguing and Cultural Memory, Metadata, Cataloguing, Archives, Cultural Memory, Knowledge Systems, Research Methods, History of Technology
-- [Métadonnées, catalogage et mémoire culturelle](https://electronicartefacts.com/fr/publications/metadata-cataloguing-and-cultural-memory/): Métadonnées, catalogage et mémoire culturelle examine le sujet "Métadonnées, catalogage et mémoire culturelle" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.
+- [Métadonnées, catalogage et mémoire culturelle](https://electronicartefacts.com/fr/publications/metadata-cataloguing-and-cultural-memory/): Repères pour comprendre Métadonnées, catalogage et mémoire culturelle dans un contexte de conception : concepts clés, implications pratiques, limites et références reliées au graphe Electronic Artefacts.
   - Entity ID: ea:publication:metadata-cataloguing-and-cultural-memory-fr
   - Identifier: https://electronicartefacts.com/fr/id/publication/metadata-cataloguing-and-cultural-memory/
   - JSON-LD: https://electronicartefacts.com/fr/id/publication/metadata-cataloguing-and-cultural-memory/index.jsonld
@@ -350,7 +350,7 @@ This file is generated from typed public records. Prefer each record's canonical
   - JSON-LD: https://electronicartefacts.com/id/publication/microservices-modular-monoliths-and-system-boundaries/index.jsonld
   - Modified: 2026-06-24
   - Keywords: Microservices, Modular Monoliths and System Boundaries, Microservices, Modular Monolith, System Boundaries, Domain-Driven Design, Distributed Systems, Software Architecture, Systems Design
-- [Microservices, monolithes modulaires et frontières de système](https://electronicartefacts.com/fr/publications/microservices-modular-monoliths-and-system-boundaries/): Microservices, monolithes modulaires et frontières de système examine le sujet "Microservices, monolithes modulaires et frontières de système" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites...
+- [Microservices, monolithes modulaires et frontières de système](https://electronicartefacts.com/fr/publications/microservices-modular-monoliths-and-system-boundaries/): Repères pour comprendre Microservices, monolithes modulaires et frontières de système dans un contexte de conception : concepts clés, implications pratiques, limites et références reliées au graphe Electronic Artefacts.
   - Entity ID: ea:publication:microservices-modular-monoliths-and-system-boundaries-fr
   - Identifier: https://electronicartefacts.com/fr/id/publication/microservices-modular-monoliths-and-system-boundaries/
   - JSON-LD: https://electronicartefacts.com/fr/id/publication/microservices-modular-monoliths-and-system-boundaries/index.jsonld
@@ -362,19 +362,19 @@ This file is generated from typed public records. Prefer each record's canonical
   - JSON-LD: https://electronicartefacts.com/id/publication/model-context-protocol-and-tool-using-ai-systems/index.jsonld
   - Modified: 2026-06-24
   - Keywords: Model Context Protocol and Tool-Using AI Systems, Model Context Protocol, AI Agents, Tool Use, Contextual Execution, VASTE, Artificial Intelligence, Software Architecture
-- [Model Context Protocol et systèmes d'IA utilisant des outils](https://electronicartefacts.com/fr/publications/model-context-protocol-and-tool-using-ai-systems/): Model Context Protocol et systèmes d'IA utilisant des outils examine le sujet "Model Context Protocol et systèmes d'IA utilisant des outils" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et...
+- [Model Context Protocol et systèmes d'IA utilisant des outils](https://electronicartefacts.com/fr/publications/model-context-protocol-and-tool-using-ai-systems/): Repères pour comprendre Model Context Protocol et systèmes d'IA utilisant des outils dans un contexte de conception : concepts clés, implications pratiques, limites et références reliées au graphe Electronic Artefacts.
   - Entity ID: ea:publication:model-context-protocol-and-tool-using-ai-systems-fr
   - Identifier: https://electronicartefacts.com/fr/id/publication/model-context-protocol-and-tool-using-ai-systems/
   - JSON-LD: https://electronicartefacts.com/fr/id/publication/model-context-protocol-and-tool-using-ai-systems/index.jsonld
   - Modified: 2026-06-25
   - Keywords: Model Context Protocol et systèmes d'IA utilisant des outils, Model Context Protocol, agents d'IA, usage d'outils, Contextual Exécution, VASTE, intelligence artificielle, architecture logicielle
-- [Moteurs d'exécution et systèmes d'exploitation de domaine](https://electronicartefacts.com/fr/publications/runtime-engines-and-domain-operating-systems/): Moteurs d'exécution et systèmes d'exploitation de domaine examine le sujet "Moteurs d'exécution et systèmes d'exploitation de domaine" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les...
+- [Moteurs d'exécution et systèmes d'exploitation de domaine](https://electronicartefacts.com/fr/publications/runtime-engines-and-domain-operating-systems/): Repères pour comprendre Moteurs d'exécution et systèmes d'exploitation de domaine dans un contexte de conception : concepts clés, implications pratiques, limites et références reliées au graphe Electronic Artefacts.
   - Entity ID: ea:publication:runtime-engines-and-domain-operating-systems-fr
   - Identifier: https://electronicartefacts.com/fr/id/publication/runtime-engines-and-domain-operating-systems/
   - JSON-LD: https://electronicartefacts.com/fr/id/publication/runtime-engines-and-domain-operating-systems/index.jsonld
   - Modified: 2026-06-25
   - Keywords: Moteurs d'exécution et systèmes d'exploitation de domaine, moteur d'exécution, système d'exploitation de domaine, système d'exploitation métier, VASTE, systèmes composables, conception de systèmes, architecture logicielle
-- [Motion design, temps et sémantique d'interface](https://electronicartefacts.com/fr/publications/motion-design-time-and-interface-semantics/): Motion design, temps et sémantique d'interface examine le sujet "Motion design, temps et sémantique d'interface" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.
+- [Motion design, temps et sémantique d'interface](https://electronicartefacts.com/fr/publications/motion-design-time-and-interface-semantics/): Repères pour comprendre Motion design, temps et sémantique d'interface dans un contexte de conception : concepts clés, implications pratiques, limites et références reliées au graphe Electronic Artefacts.
   - Entity ID: ea:publication:motion-design-time-and-interface-semantics-fr
   - Identifier: https://electronicartefacts.com/fr/id/publication/motion-design-time-and-interface-semantics/
   - JSON-LD: https://electronicartefacts.com/fr/id/publication/motion-design-time-and-interface-semantics/index.jsonld
@@ -392,7 +392,7 @@ This file is generated from typed public records. Prefer each record's canonical
   - JSON-LD: https://electronicartefacts.com/id/publication/multimodal-ai-across-text-image-audio-and-video/index.jsonld
   - Modified: 2026-06-24
   - Keywords: Multimodal AI Across Text, Image, Audio and Video, Multimodal AI, Vision Language, Audio AI, Video AI, Cross-Modal Retrieval, Artificial Intelligence, Machine Learning
-- [Observabilité des agents d'IA et des systèmes d'appel d'outils](https://electronicartefacts.com/fr/publications/observability-for-ai-agents-and-tool-calling-systems/): Observabilité des agents d'IA et des systèmes d'appel d'outils examine le sujet "Observabilité des agents d'IA et des systèmes d'appel d'outils" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites...
+- [Observabilité des agents d'IA et des systèmes d'appel d'outils](https://electronicartefacts.com/fr/publications/observability-for-ai-agents-and-tool-calling-systems/): Repères pour comprendre Observabilité des agents d'IA et des systèmes d'appel d'outils dans un contexte de conception : concepts clés, implications pratiques, limites et références reliées au graphe Electronic Artefacts.
   - Entity ID: ea:publication:observability-for-ai-agents-and-tool-calling-systems-fr
   - Identifier: https://electronicartefacts.com/fr/id/publication/observability-for-ai-agents-and-tool-calling-systems/
   - JSON-LD: https://electronicartefacts.com/fr/id/publication/observability-for-ai-agents-and-tool-calling-systems/index.jsonld
@@ -410,7 +410,7 @@ This file is generated from typed public records. Prefer each record's canonical
   - JSON-LD: https://electronicartefacts.com/id/publication/ontologies-taxonomies-and-knowledge-modeling/index.jsonld
   - Modified: 2026-06-24
   - Keywords: Ontologies, Taxonomies and Knowledge Modeling, Ontology, Taxonomy, SKOS, OWL, Knowledge Modeling, Knowledge Systems, Information Architecture
-- [Ontologies, taxonomies et modélisation des connaissances](https://electronicartefacts.com/fr/publications/ontologies-taxonomies-and-knowledge-modeling/): Ontologies, taxonomies et modélisation des connaissances examine le sujet "Ontologies, taxonomies et modélisation des connaissances" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les...
+- [Ontologies, taxonomies et modélisation des connaissances](https://electronicartefacts.com/fr/publications/ontologies-taxonomies-and-knowledge-modeling/): Repères pour comprendre Ontologies, taxonomies et modélisation des connaissances dans un contexte de conception : concepts clés, implications pratiques, limites et références reliées au graphe Electronic Artefacts.
   - Entity ID: ea:publication:ontologies-taxonomies-and-knowledge-modeling-fr
   - Identifier: https://electronicartefacts.com/fr/id/publication/ontologies-taxonomies-and-knowledge-modeling/
   - JSON-LD: https://electronicartefacts.com/fr/id/publication/ontologies-taxonomies-and-knowledge-modeling/index.jsonld
@@ -422,13 +422,13 @@ This file is generated from typed public records. Prefer each record's canonical
   - JSON-LD: https://electronicartefacts.com/id/publication/open-source-as-cultural-infrastructure/index.jsonld
   - Modified: 2026-06-24
   - Keywords: Open Source as Cultural Infrastructure, Open Source, Creative Coding, Infrastructure, Maintainers, Programming, Internet Culture
-- [Pédagogie de la programmation créative, de Logo à p5.js](https://electronicartefacts.com/fr/publications/creative-coding-pedagogy-from-logo-to-p5js/): Pédagogie de la programmation créative, de Logo à p5.js examine le sujet "Pédagogie de la programmation créative, de Logo à p5.js" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les...
+- [Pédagogie de la programmation créative, de Logo à p5.js](https://electronicartefacts.com/fr/publications/creative-coding-pedagogy-from-logo-to-p5js/): Repères pour comprendre Pédagogie de la programmation créative, de Logo à p5.js dans un contexte de conception : concepts clés, implications pratiques, limites et références reliées au graphe Electronic Artefacts.
   - Entity ID: ea:publication:creative-coding-pedagogy-from-logo-to-p5js-fr
   - Identifier: https://electronicartefacts.com/fr/id/publication/creative-coding-pedagogy-from-logo-to-p5js/
   - JSON-LD: https://electronicartefacts.com/fr/id/publication/creative-coding-pedagogy-from-logo-to-p5js/index.jsonld
   - Modified: 2026-06-25
   - Keywords: Pédagogie de la programmation créative, de Logo à p5.js, programmation créative, Processing, p5.js, Education, programmation, design, open source
-- [Pensée systémique pour la pratique créative](https://electronicartefacts.com/fr/publications/systems-thinking-for-creative-practice/): Pensée systémique pour la pratique créative examine le sujet "Pensée systémique pour la pratique créative" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.
+- [Pensée systémique pour la pratique créative](https://electronicartefacts.com/fr/publications/systems-thinking-for-creative-practice/): Repères pour comprendre Pensée systémique pour la pratique créative dans un contexte de conception : concepts clés, implications pratiques, limites et références reliées au graphe Electronic Artefacts.
   - Entity ID: ea:publication:systems-thinking-for-creative-practice-fr
   - Identifier: https://electronicartefacts.com/fr/id/publication/systems-thinking-for-creative-practice/
   - JSON-LD: https://electronicartefacts.com/fr/id/publication/systems-thinking-for-creative-practice/index.jsonld
@@ -440,13 +440,13 @@ This file is generated from typed public records. Prefer each record's canonical
   - JSON-LD: https://electronicartefacts.com/id/publication/personal-knowledge-systems-and-digital-gardens/index.jsonld
   - Modified: 2026-06-24
   - Keywords: Personal Knowledge Systems and Digital Gardens, Personal Knowledge Management, Digital Gardens, Backlinks, Research Methods, Knowledge Systems, Internet Culture, Archives
-- [Pourquoi les graphes sont plus puissants que les dossiers](https://electronicartefacts.com/fr/publications/why-graphs-are-more-powerful-than-folders/): Pourquoi les graphes sont plus puissants que les dossiers examine le sujet "Pourquoi les graphes sont plus puissants que les dossiers" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les...
+- [Pourquoi les graphes sont plus puissants que les dossiers](https://electronicartefacts.com/fr/publications/why-graphs-are-more-powerful-than-folders/): Repères pour comprendre Pourquoi les graphes sont plus puissants que les dossiers dans un contexte de conception : concepts clés, implications pratiques, limites et références reliées au graphe Electronic Artefacts.
   - Entity ID: ea:publication:why-graphs-are-more-powerful-than-folders-fr
   - Identifier: https://electronicartefacts.com/fr/id/publication/why-graphs-are-more-powerful-than-folders/
   - JSON-LD: https://electronicartefacts.com/fr/id/publication/why-graphs-are-more-powerful-than-folders/index.jsonld
   - Modified: 2026-06-25
   - Keywords: Pourquoi les graphes sont plus puissants que les dossiers, Graph Modeling, Folders, graphe de connaissances, Information Architecture, VASTE, systèmes de connaissance, conception de systèmes
-- [Préservation numérique et archives vivantes](https://electronicartefacts.com/fr/publications/digital-preservation-and-living-archives/): Préservation numérique et archives vivantes examine le sujet "Préservation numérique et archives vivantes" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.
+- [Préservation numérique et archives vivantes](https://electronicartefacts.com/fr/publications/digital-preservation-and-living-archives/): Repères pour comprendre Préservation numérique et archives vivantes dans un contexte de conception : concepts clés, implications pratiques, limites et références reliées au graphe Electronic Artefacts.
   - Entity ID: ea:publication:digital-preservation-and-living-archives-fr
   - Identifier: https://electronicartefacts.com/fr/id/publication/digital-preservation-and-living-archives/
   - JSON-LD: https://electronicartefacts.com/fr/id/publication/digital-preservation-and-living-archives/index.jsonld
@@ -464,7 +464,7 @@ This file is generated from typed public records. Prefer each record's canonical
   - JSON-LD: https://electronicartefacts.com/id/publication/prompt-injection-and-trust-boundaries-in-ai-knowledge-systems/index.jsonld
   - Modified: 2026-06-25
   - Keywords: Prompt Injection and Trust Boundaries in AI Knowledge Systems, Prompt Injection, AI Security, AI Agents, MCP, Trust Boundaries, Artificial Intelligence, Security
-- [Recherche IA, contenu structuré et SEO par graphe de connaissances](https://electronicartefacts.com/fr/publications/ai-search-structured-content-and-knowledge-graph-seo/): Recherche IA, contenu structuré et SEO par graphe de connaissances examine le sujet "Recherche IA, contenu structuré et SEO par graphe de connaissances" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les...
+- [Recherche IA, contenu structuré et SEO par graphe de connaissances](https://electronicartefacts.com/fr/publications/ai-search-structured-content-and-knowledge-graph-seo/): Repères pour comprendre Recherche IA, contenu structuré et SEO par graphe de connaissances dans un contexte de conception : concepts clés, implications pratiques, limites et références reliées au graphe Electronic Artefacts.
   - Entity ID: ea:publication:ai-search-structured-content-and-knowledge-graph-seo-fr
   - Identifier: https://electronicartefacts.com/fr/id/publication/ai-search-structured-content-and-knowledge-graph-seo/
   - JSON-LD: https://electronicartefacts.com/fr/id/publication/ai-search-structured-content-and-knowledge-graph-seo/index.jsonld
@@ -476,7 +476,7 @@ This file is generated from typed public records. Prefer each record's canonical
   - JSON-LD: https://electronicartefacts.com/id/publication/redis-streams-for-orchestration/index.jsonld
   - Modified: 2026-06-24
   - Keywords: Redis Streams for Orchestration, Redis Streams, Orchestration, Consumer Groups, Event Processing, Idempotency, Software Architecture, Distributed Systems
-- [Redis Streams pour l’orchestration](https://electronicartefacts.com/fr/publications/redis-streams-for-orchestration/): Redis Streams pour l’orchestration examine le sujet "Redis Streams pour l’orchestration" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.
+- [Redis Streams pour l’orchestration](https://electronicartefacts.com/fr/publications/redis-streams-for-orchestration/): Repères pour comprendre Redis Streams pour l’orchestration dans un contexte de conception : concepts clés, implications pratiques, limites et références reliées au graphe Electronic Artefacts.
   - Entity ID: ea:publication:redis-streams-for-orchestration-fr
   - Identifier: https://electronicartefacts.com/fr/id/publication/redis-streams-for-orchestration/
   - JSON-LD: https://electronicartefacts.com/fr/id/publication/redis-streams-for-orchestration/index.jsonld
@@ -506,19 +506,19 @@ This file is generated from typed public records. Prefer each record's canonical
   - JSON-LD: https://electronicartefacts.com/id/publication/signal-archaeology-audio-memory-and-machine-listening/index.jsonld
   - Modified: 2026-06-23
   - Keywords: Signal Archaeology, Audio Memory and Machine Listening, Signal Archaeology, Audio, Machine Listening, ORETH, Palimpsests, Audio Engineering, Sound Design
-- [Systèmes d’IA locaux et open source](https://electronicartefacts.com/fr/publications/local-and-open-source-ai-systems/): Systèmes d’IA locaux et open source examine le sujet "Systèmes d’IA locaux et open source" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.
+- [Systèmes d’IA locaux et open source](https://electronicartefacts.com/fr/publications/local-and-open-source-ai-systems/): Repères pour comprendre Systèmes d’IA locaux et open source dans un contexte de conception : concepts clés, implications pratiques, limites et références reliées au graphe Electronic Artefacts.
   - Entity ID: ea:publication:local-and-open-source-ai-systems-fr
   - Identifier: https://electronicartefacts.com/fr/id/publication/local-and-open-source-ai-systems/
   - JSON-LD: https://electronicartefacts.com/fr/id/publication/local-and-open-source-ai-systems/index.jsonld
   - Modified: 2026-06-25
   - Keywords: Systèmes d’IA locaux et open source, IA locale, IA open source, poids ouverts, quantification, llama.cpp, intelligence artificielle, open source
-- [Systèmes génératifs, cybernétique et programmation créative](https://electronicartefacts.com/fr/publications/generative-systems-cybernetics-and-creative-coding/): Systèmes génératifs, cybernétique et programmation créative examine le sujet "Systèmes génératifs, cybernétique et programmation créative" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et...
+- [Systèmes génératifs, cybernétique et programmation créative](https://electronicartefacts.com/fr/publications/generative-systems-cybernetics-and-creative-coding/): Repères pour comprendre Systèmes génératifs, cybernétique et programmation créative dans un contexte de conception : concepts clés, implications pratiques, limites et références reliées au graphe Electronic Artefacts.
   - Entity ID: ea:publication:generative-systems-cybernetics-and-creative-coding-fr
   - Identifier: https://electronicartefacts.com/fr/id/publication/generative-systems-cybernetics-and-creative-coding/
   - JSON-LD: https://electronicartefacts.com/fr/id/publication/generative-systems-cybernetics-and-creative-coding/index.jsonld
   - Modified: 2026-06-25
   - Keywords: Systèmes génératifs, cybernétique et programmation créative, Generative Systems, Cybernetics, programmation créative, Algorithmic Composition, art numérique, Music Production, conception de systèmes
-- [Systèmes personnels de connaissance et jardins numériques](https://electronicartefacts.com/fr/publications/personal-knowledge-systems-and-digital-gardens/): Systèmes personnels de connaissance et jardins numériques examine le sujet "Systèmes personnels de connaissance et jardins numériques" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les...
+- [Systèmes personnels de connaissance et jardins numériques](https://electronicartefacts.com/fr/publications/personal-knowledge-systems-and-digital-gardens/): Repères pour comprendre Systèmes personnels de connaissance et jardins numériques dans un contexte de conception : concepts clés, implications pratiques, limites et références reliées au graphe Electronic Artefacts.
   - Entity ID: ea:publication:personal-knowledge-systems-and-digital-gardens-fr
   - Identifier: https://electronicartefacts.com/fr/id/publication/personal-knowledge-systems-and-digital-gardens/
   - JSON-LD: https://electronicartefacts.com/fr/id/publication/personal-knowledge-systems-and-digital-gardens/index.jsonld
@@ -530,7 +530,7 @@ This file is generated from typed public records. Prefer each record's canonical
   - JSON-LD: https://electronicartefacts.com/id/publication/systems-thinking-for-creative-practice/index.jsonld
   - Modified: 2026-06-24
   - Keywords: Systems Thinking for Creative Practice, Systems Thinking, Creative Practice, Feedback, Complexity, Leverage Points, Systems Design, Cybernetics
-- [Typographie, systèmes de lecture et interfaces numériques](https://electronicartefacts.com/fr/publications/typography-reading-systems-and-digital-interfaces/): Typographie, systèmes de lecture et interfaces numériques examine le sujet "Typographie, systèmes de lecture et interfaces numériques" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les...
+- [Typographie, systèmes de lecture et interfaces numériques](https://electronicartefacts.com/fr/publications/typography-reading-systems-and-digital-interfaces/): Repères pour comprendre Typographie, systèmes de lecture et interfaces numériques dans un contexte de conception : concepts clés, implications pratiques, limites et références reliées au graphe Electronic Artefacts.
   - Entity ID: ea:publication:typography-reading-systems-and-digital-interfaces-fr
   - Identifier: https://electronicartefacts.com/fr/id/publication/typography-reading-systems-and-digital-interfaces/
   - JSON-LD: https://electronicartefacts.com/fr/id/publication/typography-reading-systems-and-digital-interfaces/index.jsonld
@@ -554,7 +554,7 @@ This file is generated from typed public records. Prefer each record's canonical
   - JSON-LD: https://electronicartefacts.com/id/publication/web-audio-and-browser-based-sound-systems/index.jsonld
   - Modified: 2026-06-24
   - Keywords: Web Audio and Browser-Based Sound Systems, Web Audio, Audio Graph, Browser Sound, ORETH, Audio Engineering, Web Development, Creative Coding
-- [Web Audio et systèmes sonores dans le navigateur](https://electronicartefacts.com/fr/publications/web-audio-and-browser-based-sound-systems/): Web Audio et systèmes sonores dans le navigateur examine le sujet "Web Audio et systèmes sonores dans le navigateur" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.
+- [Web Audio et systèmes sonores dans le navigateur](https://electronicartefacts.com/fr/publications/web-audio-and-browser-based-sound-systems/): Repères pour comprendre Web Audio et systèmes sonores dans le navigateur dans un contexte de conception : concepts clés, implications pratiques, limites et références reliées au graphe Electronic Artefacts.
   - Entity ID: ea:publication:web-audio-and-browser-based-sound-systems-fr
   - Identifier: https://electronicartefacts.com/fr/id/publication/web-audio-and-browser-based-sound-systems/
   - JSON-LD: https://electronicartefacts.com/fr/id/publication/web-audio-and-browser-based-sound-systems/index.jsonld
@@ -566,7 +566,7 @@ This file is generated from typed public records. Prefer each record's canonical
   - JSON-LD: https://electronicartefacts.com/id/publication/webnn-and-local-ai-in-the-browser/index.jsonld
   - Modified: 2026-06-24
   - Keywords: WebNN and Local AI in the Browser, WebNN, Browser AI, Local Inference, Web Machine Learning, HCI, Artificial Intelligence, Web Development
-- [WebNN et IA locale dans le navigateur](https://electronicartefacts.com/fr/publications/webnn-and-local-ai-in-the-browser/): WebNN et IA locale dans le navigateur examine le sujet "WebNN et IA locale dans le navigateur" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.
+- [WebNN et IA locale dans le navigateur](https://electronicartefacts.com/fr/publications/webnn-and-local-ai-in-the-browser/): Repères pour comprendre WebNN et IA locale dans le navigateur dans un contexte de conception : concepts clés, implications pratiques, limites et références reliées au graphe Electronic Artefacts.
   - Entity ID: ea:publication:webnn-and-local-ai-in-the-browser-fr
   - Identifier: https://electronicartefacts.com/fr/id/publication/webnn-and-local-ai-in-the-browser/
   - JSON-LD: https://electronicartefacts.com/fr/id/publication/webnn-and-local-ai-in-the-browser/index.jsonld
@@ -1016,7 +1016,7 @@ This file is generated from typed public records. Prefer each record's canonical
 
 ## technology
 
-- [ActivityPub](https://electronicartefacts.com/fr/knowledge/technologies/activitypub/): ActivityPub est documenté pour son rôle dans les systèmes d'Electronic Artefacts, ses usages, ses limites et les technologies qui lui sont liées.
+- [ActivityPub](https://electronicartefacts.com/fr/knowledge/technologies/activitypub/): ActivityPub est présenté comme une technologie de référence pour comprendre ses usages, ses limites et son rôle dans les systèmes Electronic Artefacts.
   - Entity ID: ea:technology:activitypub-fr
   - Identifier: https://electronicartefacts.com/fr/id/technology/activitypub/
   - JSON-LD: https://electronicartefacts.com/fr/id/technology/activitypub/index.jsonld
@@ -1028,13 +1028,13 @@ This file is generated from typed public records. Prefer each record's canonical
   - JSON-LD: https://electronicartefacts.com/id/technology/activitypub/index.jsonld
   - Modified: 2026-06-24
   - Keywords: ActivityPub, Federation, Social Web, Internet Culture, Network Culture, Web Development
-- [Architecture Transformer](https://electronicartefacts.com/fr/knowledge/technologies/transformer-architecture/): Architecture Transformer est documenté pour son rôle dans les systèmes d'Electronic Artefacts, ses usages, ses limites et les technologies qui lui sont liées.
+- [Architecture Transformer](https://electronicartefacts.com/fr/knowledge/technologies/transformer-architecture/): Architecture Transformer est présenté comme une technologie de référence pour comprendre ses usages, ses limites et son rôle dans les systèmes Electronic Artefacts.
   - Entity ID: ea:technology:transformer-architecture-fr
   - Identifier: https://electronicartefacts.com/fr/id/technology/transformer-architecture/
   - JSON-LD: https://electronicartefacts.com/fr/id/technology/transformer-architecture/index.jsonld
   - Modified: 2026-06-25
   - Keywords: Architecture Transformer, Transformer, Attention, Neural Networks, intelligence artificielle, apprentissage automatique
-- [C2PA](https://electronicartefacts.com/fr/knowledge/technologies/c2pa/): C2PA est documenté pour son rôle dans les systèmes d'Electronic Artefacts, ses usages, ses limites et les technologies qui lui sont liées.
+- [C2PA](https://electronicartefacts.com/fr/knowledge/technologies/c2pa/): C2PA est présenté comme une technologie de référence pour comprendre ses usages, ses limites et son rôle dans les systèmes Electronic Artefacts.
   - Entity ID: ea:technology:c2pa-fr
   - Identifier: https://electronicartefacts.com/fr/id/technology/c2pa/
   - JSON-LD: https://electronicartefacts.com/fr/id/technology/c2pa/index.jsonld
@@ -1046,7 +1046,7 @@ This file is generated from typed public records. Prefer each record's canonical
   - JSON-LD: https://electronicartefacts.com/id/technology/c2pa/index.jsonld
   - Modified: 2026-06-24
   - Keywords: C2PA, Content Credentials, Coalition for Content Provenance and Authenticity, Provenance, Media Authenticity, Digital Preservation, Knowledge Systems, Artificial Intelligence
-- [CloudEvents](https://electronicartefacts.com/fr/knowledge/technologies/cloudevents/): CloudEvents est documenté pour son rôle dans les systèmes d'Electronic Artefacts, ses usages, ses limites et les technologies qui lui sont liées.
+- [CloudEvents](https://electronicartefacts.com/fr/knowledge/technologies/cloudevents/): CloudEvents est présenté comme une technologie de référence pour comprendre ses usages, ses limites et son rôle dans les systèmes Electronic Artefacts.
   - Entity ID: ea:technology:cloudevents-fr
   - Identifier: https://electronicartefacts.com/fr/id/technology/cloudevents/
   - JSON-LD: https://electronicartefacts.com/fr/id/technology/cloudevents/index.jsonld
@@ -1058,7 +1058,7 @@ This file is generated from typed public records. Prefer each record's canonical
   - JSON-LD: https://electronicartefacts.com/id/technology/cloudevents/index.jsonld
   - Modified: 2026-06-24
   - Keywords: CloudEvents, Event Schema, Interoperability, Software Architecture, Distributed Systems, Programming
-- [CSS Fonts](https://electronicartefacts.com/fr/knowledge/technologies/css-fonts/): CSS Fonts est documenté pour son rôle dans les systèmes d'Electronic Artefacts, ses usages, ses limites et les technologies qui lui sont liées.
+- [CSS Fonts](https://electronicartefacts.com/fr/knowledge/technologies/css-fonts/): CSS Fonts est présenté comme une technologie de référence pour comprendre ses usages, ses limites et son rôle dans les systèmes Electronic Artefacts.
   - Entity ID: ea:technology:css-fonts-fr
   - Identifier: https://electronicartefacts.com/fr/id/technology/css-fonts/
   - JSON-LD: https://electronicartefacts.com/fr/id/technology/css-fonts/index.jsonld
@@ -1070,7 +1070,7 @@ This file is generated from typed public records. Prefer each record's canonical
   - JSON-LD: https://electronicartefacts.com/id/technology/css-fonts/index.jsonld
   - Modified: 2026-06-24
   - Keywords: CSS Fonts, Typography, Web, Web Development, Design
-- [IIIF](https://electronicartefacts.com/fr/knowledge/technologies/iiif/): IIIF est documenté pour son rôle dans les systèmes d'Electronic Artefacts, ses usages, ses limites et les technologies qui lui sont liées.
+- [IIIF](https://electronicartefacts.com/fr/knowledge/technologies/iiif/): IIIF est présenté comme une technologie de référence pour comprendre ses usages, ses limites et son rôle dans les systèmes Electronic Artefacts.
   - Entity ID: ea:technology:iiif-fr
   - Identifier: https://electronicartefacts.com/fr/id/technology/iiif/
   - JSON-LD: https://electronicartefacts.com/fr/id/technology/iiif/index.jsonld
@@ -1082,7 +1082,7 @@ This file is generated from typed public records. Prefer each record's canonical
   - JSON-LD: https://electronicartefacts.com/id/technology/iiif/index.jsonld
   - Modified: 2026-06-24
   - Keywords: IIIF, International Image Interoperability Framework, Digital Archives, Cultural Heritage, Presentation API, Digital Preservation, Cultural Infrastructure, Knowledge Systems
-- [JSON-LD](https://electronicartefacts.com/fr/knowledge/technologies/json-ld/): JSON-LD est documenté pour son rôle dans les systèmes d'Electronic Artefacts, ses usages, ses limites et les technologies qui lui sont liées.
+- [JSON-LD](https://electronicartefacts.com/fr/knowledge/technologies/json-ld/): JSON-LD est présenté comme une technologie de référence pour comprendre ses usages, ses limites et son rôle dans les systèmes Electronic Artefacts.
   - Entity ID: ea:technology:json-ld-fr
   - Identifier: https://electronicartefacts.com/fr/id/technology/json-ld/
   - JSON-LD: https://electronicartefacts.com/fr/id/technology/json-ld/index.jsonld
@@ -1094,7 +1094,7 @@ This file is generated from typed public records. Prefer each record's canonical
   - JSON-LD: https://electronicartefacts.com/id/technology/json-ld/index.jsonld
   - Modified: 2026-06-23
   - Keywords: JSON-LD, Linked Data, Structured Data, SEO, Web Development, Knowledge Systems
-- [llama.cpp](https://electronicartefacts.com/fr/knowledge/technologies/llama-cpp/): llama.cpp est documenté pour son rôle dans les systèmes d'Electronic Artefacts, ses usages, ses limites et les technologies qui lui sont liées.
+- [llama.cpp](https://electronicartefacts.com/fr/knowledge/technologies/llama-cpp/): llama.cpp est présenté comme une technologie de référence pour comprendre ses usages, ses limites et son rôle dans les systèmes Electronic Artefacts.
   - Entity ID: ea:technology:llama-cpp-fr
   - Identifier: https://electronicartefacts.com/fr/id/technology/llama-cpp/
   - JSON-LD: https://electronicartefacts.com/fr/id/technology/llama-cpp/index.jsonld
@@ -1106,7 +1106,7 @@ This file is generated from typed public records. Prefer each record's canonical
   - JSON-LD: https://electronicartefacts.com/id/technology/llama-cpp/index.jsonld
   - Modified: 2026-06-24
   - Keywords: llama.cpp, Local AI, Inference, Quantization, Artificial Intelligence, Programming, Open Source
-- [Model Context Protocol](https://electronicartefacts.com/fr/knowledge/technologies/model-context-protocol/): Model Context Protocol est documenté pour son rôle dans les systèmes d'Electronic Artefacts, ses usages, ses limites et les technologies qui lui sont liées.
+- [Model Context Protocol](https://electronicartefacts.com/fr/knowledge/technologies/model-context-protocol/): Model Context Protocol est présenté comme une technologie de référence pour comprendre ses usages, ses limites et son rôle dans les systèmes Electronic Artefacts.
   - Entity ID: ea:technology:model-context-protocol-fr
   - Identifier: https://electronicartefacts.com/fr/id/technology/model-context-protocol/
   - JSON-LD: https://electronicartefacts.com/fr/id/technology/model-context-protocol/index.jsonld
@@ -1118,7 +1118,7 @@ This file is generated from typed public records. Prefer each record's canonical
   - JSON-LD: https://electronicartefacts.com/id/technology/model-context-protocol/index.jsonld
   - Modified: 2026-06-24
   - Keywords: Model Context Protocol, MCP, AI Tools, Context Protocol, JSON-RPC, Artificial Intelligence, Software Architecture, Systems Design
-- [OpenTelemetry](https://electronicartefacts.com/fr/knowledge/technologies/opentelemetry/): OpenTelemetry est documenté pour son rôle dans les systèmes d'Electronic Artefacts, ses usages, ses limites et les technologies qui lui sont liées.
+- [OpenTelemetry](https://electronicartefacts.com/fr/knowledge/technologies/opentelemetry/): OpenTelemetry est présenté comme une technologie de référence pour comprendre ses usages, ses limites et son rôle dans les systèmes Electronic Artefacts.
   - Entity ID: ea:technology:opentelemetry-fr
   - Identifier: https://electronicartefacts.com/fr/id/technology/opentelemetry/
   - JSON-LD: https://electronicartefacts.com/fr/id/technology/opentelemetry/index.jsonld
@@ -1130,7 +1130,7 @@ This file is generated from typed public records. Prefer each record's canonical
   - JSON-LD: https://electronicartefacts.com/id/technology/opentelemetry/index.jsonld
   - Modified: 2026-06-24
   - Keywords: OpenTelemetry, Observability, Tracing, Metrics, Software Architecture, Systems Design, Artificial Intelligence
-- [OWL](https://electronicartefacts.com/fr/knowledge/technologies/owl/): OWL est documenté pour son rôle dans les systèmes d'Electronic Artefacts, ses usages, ses limites et les technologies qui lui sont liées.
+- [OWL](https://electronicartefacts.com/fr/knowledge/technologies/owl/): OWL est présenté comme une technologie de référence pour comprendre ses usages, ses limites et son rôle dans les systèmes Electronic Artefacts.
   - Entity ID: ea:technology:owl-fr
   - Identifier: https://electronicartefacts.com/fr/id/technology/owl/
   - JSON-LD: https://electronicartefacts.com/fr/id/technology/owl/index.jsonld
@@ -1142,7 +1142,7 @@ This file is generated from typed public records. Prefer each record's canonical
   - JSON-LD: https://electronicartefacts.com/id/technology/owl/index.jsonld
   - Modified: 2026-06-24
   - Keywords: OWL, Web Ontology Language, Ontology, Semantic Web, Knowledge Systems
-- [RDF](https://electronicartefacts.com/fr/knowledge/technologies/rdf/): RDF est documenté pour son rôle dans les systèmes d'Electronic Artefacts, ses usages, ses limites et les technologies qui lui sont liées.
+- [RDF](https://electronicartefacts.com/fr/knowledge/technologies/rdf/): RDF est présenté comme une technologie de référence pour comprendre ses usages, ses limites et son rôle dans les systèmes Electronic Artefacts.
   - Entity ID: ea:technology:rdf-fr
   - Identifier: https://electronicartefacts.com/fr/id/technology/rdf/
   - JSON-LD: https://electronicartefacts.com/fr/id/technology/rdf/index.jsonld
@@ -1154,7 +1154,7 @@ This file is generated from typed public records. Prefer each record's canonical
   - JSON-LD: https://electronicartefacts.com/id/technology/rdf/index.jsonld
   - Modified: 2026-06-23
   - Keywords: RDF, Semantic Web, Linked Data, Graph, Web Development, Knowledge Systems
-- [Redis Streams](https://electronicartefacts.com/fr/knowledge/technologies/redis-streams/): Redis Streams est documenté pour son rôle dans les systèmes d'Electronic Artefacts, ses usages, ses limites et les technologies qui lui sont liées.
+- [Redis Streams](https://electronicartefacts.com/fr/knowledge/technologies/redis-streams/): Redis Streams est présenté comme une technologie de référence pour comprendre ses usages, ses limites et son rôle dans les systèmes Electronic Artefacts.
   - Entity ID: ea:technology:redis-streams-fr
   - Identifier: https://electronicartefacts.com/fr/id/technology/redis-streams/
   - JSON-LD: https://electronicartefacts.com/fr/id/technology/redis-streams/index.jsonld
@@ -1166,7 +1166,7 @@ This file is generated from typed public records. Prefer each record's canonical
   - JSON-LD: https://electronicartefacts.com/id/technology/redis-streams/index.jsonld
   - Modified: 2026-06-24
   - Keywords: Redis Streams, Event Log, Consumer Groups, Orchestration, Software Architecture, Programming, Distributed Systems
-- [SKOS](https://electronicartefacts.com/fr/knowledge/technologies/skos/): SKOS est documenté pour son rôle dans les systèmes d'Electronic Artefacts, ses usages, ses limites et les technologies qui lui sont liées.
+- [SKOS](https://electronicartefacts.com/fr/knowledge/technologies/skos/): SKOS est présenté comme une technologie de référence pour comprendre ses usages, ses limites et son rôle dans les systèmes Electronic Artefacts.
   - Entity ID: ea:technology:skos-fr
   - Identifier: https://electronicartefacts.com/fr/id/technology/skos/
   - JSON-LD: https://electronicartefacts.com/fr/id/technology/skos/index.jsonld
@@ -1184,7 +1184,7 @@ This file is generated from typed public records. Prefer each record's canonical
   - JSON-LD: https://electronicartefacts.com/id/technology/transformer-architecture/index.jsonld
   - Modified: 2026-06-24
   - Keywords: Transformer Architecture, Transformer, Attention, Neural Networks, Artificial Intelligence, Machine Learning
-- [Web Animations](https://electronicartefacts.com/fr/knowledge/technologies/web-animations/): Web Animations est documenté pour son rôle dans les systèmes d'Electronic Artefacts, ses usages, ses limites et les technologies qui lui sont liées.
+- [Web Animations](https://electronicartefacts.com/fr/knowledge/technologies/web-animations/): Web Animations est présenté comme une technologie de référence pour comprendre ses usages, ses limites et son rôle dans les systèmes Electronic Artefacts.
   - Entity ID: ea:technology:web-animations-fr
   - Identifier: https://electronicartefacts.com/fr/id/technology/web-animations/
   - JSON-LD: https://electronicartefacts.com/fr/id/technology/web-animations/index.jsonld
@@ -1196,7 +1196,7 @@ This file is generated from typed public records. Prefer each record's canonical
   - JSON-LD: https://electronicartefacts.com/id/technology/web-animations/index.jsonld
   - Modified: 2026-06-24
   - Keywords: Web Animations, Motion Design, Interface, Web Development, Human Computer Interaction
-- [Web Audio API](https://electronicartefacts.com/fr/knowledge/technologies/web-audio-api/): Web Audio API est documenté pour son rôle dans les systèmes d'Electronic Artefacts, ses usages, ses limites et les technologies qui lui sont liées.
+- [Web Audio API](https://electronicartefacts.com/fr/knowledge/technologies/web-audio-api/): Web Audio API est présenté comme une technologie de référence pour comprendre ses usages, ses limites et son rôle dans les systèmes Electronic Artefacts.
   - Entity ID: ea:technology:web-audio-api-fr
   - Identifier: https://electronicartefacts.com/fr/id/technology/web-audio-api/
   - JSON-LD: https://electronicartefacts.com/fr/id/technology/web-audio-api/index.jsonld
@@ -1208,7 +1208,7 @@ This file is generated from typed public records. Prefer each record's canonical
   - JSON-LD: https://electronicartefacts.com/id/technology/web-audio-api/index.jsonld
   - Modified: 2026-06-24
   - Keywords: Web Audio API, Browser Audio, Audio Graph, Audio Engineering, Web Development, Creative Coding
-- [WebGL](https://electronicartefacts.com/fr/knowledge/technologies/webgl/): WebGL est documenté pour son rôle dans les systèmes d'Electronic Artefacts, ses usages, ses limites et les technologies qui lui sont liées.
+- [WebGL](https://electronicartefacts.com/fr/knowledge/technologies/webgl/): WebGL est présenté comme une technologie de référence pour comprendre ses usages, ses limites et son rôle dans les systèmes Electronic Artefacts.
   - Entity ID: ea:technology:webgl-fr
   - Identifier: https://electronicartefacts.com/fr/id/technology/webgl/
   - JSON-LD: https://electronicartefacts.com/fr/id/technology/webgl/index.jsonld
@@ -1220,7 +1220,7 @@ This file is generated from typed public records. Prefer each record's canonical
   - JSON-LD: https://electronicartefacts.com/id/technology/webgl/index.jsonld
   - Modified: 2026-06-24
   - Keywords: WebGL, Shaders, Browser Graphics, Creative Coding, Web Development, Digital Art
-- [WebNN](https://electronicartefacts.com/fr/knowledge/technologies/webnn/): WebNN est documenté pour son rôle dans les systèmes d'Electronic Artefacts, ses usages, ses limites et les technologies qui lui sont liées.
+- [WebNN](https://electronicartefacts.com/fr/knowledge/technologies/webnn/): WebNN est présenté comme une technologie de référence pour comprendre ses usages, ses limites et son rôle dans les systèmes Electronic Artefacts.
   - Entity ID: ea:technology:webnn-fr
   - Identifier: https://electronicartefacts.com/fr/id/technology/webnn/
   - JSON-LD: https://electronicartefacts.com/fr/id/technology/webnn/index.jsonld

@@ -1,6 +1,6 @@
 # Electronic Artefacts
 
-> Electronic Artefacts is an independent creative technology studio building client products, proprietary systems and research-led cultural work. The public site is a static knowledge graph with canonical HTML pages, stable entity identifiers, JSON-LD, search documents and graph exports.
+> Electronic Artefacts is an independent creative technology studio for complex digital products, knowledge systems, proprietary software and research-led cultural work. The public site is a static knowledge graph with canonical HTML pages, stable entity identifiers, JSON-LD, search documents and graph exports.
 
 Use canonical HTML URLs for human-facing citations. Use identifier routes under /id/ and JSON-LD alternates for entity-level retrieval. The public graph is in English and is safe to crawl for search, retrieval and citation when robots.txt allows it.
 

@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/publications/generative-systems-cybernetics-and-creative-coding/#webpage",
       "url": "https://electronicartefacts.com/fr/publications/generative-systems-cybernetics-and-creative-coding/",
       "name": "Systèmes génératifs, cybernétique et programmation créative",
-      "description": "Systèmes génératifs, cybernétique et programmation créative examine le sujet \"Systèmes génératifs, cybernétique et programmation créative\" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.",
+      "description": "Repères pour comprendre Systèmes génératifs, cybernétique et programmation créative dans un contexte de conception : concepts clés, implications pratiques, limites et références reliées au graphe Electronic Artefacts.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
@@ -35,8 +35,8 @@
       "identifier": "ea:publication:generative-systems-cybernetics-and-creative-coding-fr",
       "name": "Systèmes génératifs, cybernétique et programmation créative",
       "headline": "Systèmes génératifs, cybernétique et programmation créative",
-      "abstract": "Systèmes génératifs, cybernétique et programmation créative examine le sujet \"Systèmes génératifs, cybernétique et programmation créative\" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.",
-      "description": "Systèmes génératifs, cybernétique et programmation créative examine le sujet \"Systèmes génératifs, cybernétique et programmation créative\" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.",
+      "abstract": "Cette synthèse française présente Systèmes génératifs, cybernétique et programmation créative : mécanismes, usages, limites et liens avec le graphe public d’Electronic Artefacts.",
+      "description": "Cette synthèse française présente Systèmes génératifs, cybernétique et programmation créative : mécanismes, usages, limites et liens avec le graphe public d’Electronic Artefacts.",
       "url": "https://electronicartefacts.com/fr/publications/generative-systems-cybernetics-and-creative-coding/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/publications/generative-systems-cybernetics-and-creative-coding/#webpage"
@@ -76,7 +76,7 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 143,
+      "wordCount": 137,
       "citation": [
         "Electronic Artefacts. \"Systèmes génératifs, cybernétique et programmation créative\". Article technique, version 1.0.0, 2026.",
         {
@@ -166,9 +166,12 @@
       "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/",
       "name": "Electronic Artefacts",
       "url": "https://electronicartefacts.com/",
-      "description": "Electronic Artefacts is an independent creative technology studio building client products, proprietary systems and research-led cultural work.",
+      "description": "Electronic Artefacts is an independent creative technology studio for complex digital products, knowledge systems, proprietary software and research-led cultural work.",
       "keywords": [
         "creative technology",
+        "digital product strategy",
+        "UX design",
+        "web development",
         "knowledge graph",
         "AI agents",
         "retrieval-augmented generation",
@@ -220,9 +223,12 @@
       "@id": "https://electronicartefacts.com/#website",
       "url": "https://electronicartefacts.com/",
       "name": "Electronic Artefacts",
-      "description": "Electronic Artefacts is an independent creative technology studio building client products, proprietary systems and research-led cultural work.",
+      "description": "Electronic Artefacts is an independent creative technology studio for complex digital products, knowledge systems, proprietary software and research-led cultural work.",
       "keywords": [
         "creative technology",
+        "digital product strategy",
+        "UX design",
+        "web development",
         "knowledge graph",
         "AI agents",
         "retrieval-augmented generation",

@@ -5,10 +5,8 @@ translationOf: ea:technology:webgl
 slug:
   canonical: webgl
 title: WebGL
-abstract: WebGL est documenté pour son rôle dans les systèmes d'Electronic Artefacts, ses usages,
-  ses limites et les technologies qui lui sont liées.
-description: WebGL est documenté pour son rôle dans les systèmes d'Electronic Artefacts, ses usages,
-  ses limites et les technologies qui lui sont liées.
+abstract: "WebGL est présenté comme une technologie de référence pour comprendre ses usages, ses limites et son rôle dans les systèmes Electronic Artefacts."
+description: "WebGL est présenté comme une technologie de référence pour comprendre ses usages, ses limites et son rôle dans les systèmes Electronic Artefacts."
 locale: fr
 visibility: public
 publicationClass: canonical
@@ -24,9 +22,7 @@ authors:
   - id: ea:organization:electronic-artefacts
 publisher: ea:organization:electronic-artefacts
 category: platform
-roleInEcosystem: WebGL sert de repère technique pour évaluer le sujet "WebGL" dans le graphe public
-  d'Electronic Artefacts, ses usages possibles et ses conséquences dans l'écosystème Electronic
-  Artefacts.
+roleInEcosystem: "WebGL sert de référence technique pour relier usages, contraintes d’implémentation et pages de connaissance dans le graphe Electronic Artefacts."
 officialUrl: https://www.khronos.org/webgl/
 sources:
   - title: WebGL
@@ -45,15 +41,15 @@ disciplines:
 
 ## Rôle
 
-Cette fiche documenté WebGL comme technologie de référence pour le sujet "WebGL" dans le graphe public d'Electronic Artefacts.
+Cette fiche documente WebGL comme technologie de référence dans le graphe public d'Electronic Artefacts.
 
 ## Usage
 
-Elle situe la technologie dans l'écosystème Electronic Artefacts : ce qu'elle permet, quand elle devient pertinente et comment elle dialogue avec les autres composants du graphe.
+Elle précise ce que la technologie rend possible, quand elle devient pertinente et comment elle se relie aux autres composants du graphe.
 
 ## Points d'attention
 
-- Les usages sont décrits en français sans masquer les noms propres, acronymes où standards techniques.
+- Les usages sont décrits en français sans masquer les noms propres, acronymes ou standards techniques.
 - Les limites restent contextualisées par rapport aux projets, aux publications et aux contraintes d'implémentation.
 
 ## Références

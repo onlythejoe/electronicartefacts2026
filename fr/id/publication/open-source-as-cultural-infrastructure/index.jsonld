@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/publications/open-source-as-cultural-infrastructure/#webpage",
       "url": "https://electronicartefacts.com/fr/publications/open-source-as-cultural-infrastructure/",
       "name": "L’open source comme infrastructure culturelle",
-      "description": "L’open source comme infrastructure culturelle examine le sujet \"L’open source comme infrastructure culturelle\" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.",
+      "description": "Repères pour comprendre L’open source comme infrastructure culturelle dans un contexte de conception : concepts clés, implications pratiques, limites et références reliées au graphe Electronic Artefacts.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
@@ -35,8 +35,8 @@
       "identifier": "ea:publication:open-source-as-cultural-infrastructure-fr",
       "name": "L’open source comme infrastructure culturelle",
       "headline": "L’open source comme infrastructure culturelle",
-      "abstract": "L’open source comme infrastructure culturelle examine le sujet \"L’open source comme infrastructure culturelle\" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.",
-      "description": "L’open source comme infrastructure culturelle examine le sujet \"L’open source comme infrastructure culturelle\" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.",
+      "abstract": "Cette synthèse française présente L’open source comme infrastructure culturelle : mécanismes, usages, limites et liens avec le graphe public d’Electronic Artefacts.",
+      "description": "Cette synthèse française présente L’open source comme infrastructure culturelle : mécanismes, usages, limites et liens avec le graphe public d’Electronic Artefacts.",
       "url": "https://electronicartefacts.com/fr/publications/open-source-as-cultural-infrastructure/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/publications/open-source-as-cultural-infrastructure/#webpage"
@@ -75,7 +75,7 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 141,
+      "wordCount": 136,
       "citation": [
         "Electronic Artefacts. \"L’open source comme infrastructure culturelle\". Article technique, version 1.0.0, 2026.",
         {
@@ -142,9 +142,12 @@
       "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/",
       "name": "Electronic Artefacts",
       "url": "https://electronicartefacts.com/",
-      "description": "Electronic Artefacts is an independent creative technology studio building client products, proprietary systems and research-led cultural work.",
+      "description": "Electronic Artefacts is an independent creative technology studio for complex digital products, knowledge systems, proprietary software and research-led cultural work.",
       "keywords": [
         "creative technology",
+        "digital product strategy",
+        "UX design",
+        "web development",
         "knowledge graph",
         "AI agents",
         "retrieval-augmented generation",
@@ -196,9 +199,12 @@
       "@id": "https://electronicartefacts.com/#website",
       "url": "https://electronicartefacts.com/",
       "name": "Electronic Artefacts",
-      "description": "Electronic Artefacts is an independent creative technology studio building client products, proprietary systems and research-led cultural work.",
+      "description": "Electronic Artefacts is an independent creative technology studio for complex digital products, knowledge systems, proprietary software and research-led cultural work.",
       "keywords": [
         "creative technology",
+        "digital product strategy",
+        "UX design",
+        "web development",
         "knowledge graph",
         "AI agents",
         "retrieval-augmented generation",

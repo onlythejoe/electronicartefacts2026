@@ -5,10 +5,8 @@ translationOf: ea:technology:llama-cpp
 slug:
   canonical: llama-cpp
 title: llama.cpp
-abstract: llama.cpp est documenté pour son rôle dans les systèmes d'Electronic Artefacts, ses
-  usages, ses limites et les technologies qui lui sont liées.
-description: llama.cpp est documenté pour son rôle dans les systèmes d'Electronic Artefacts, ses
-  usages, ses limites et les technologies qui lui sont liées.
+abstract: "llama.cpp est présenté comme une technologie de référence pour comprendre ses usages, ses limites et son rôle dans les systèmes Electronic Artefacts."
+description: "llama.cpp est présenté comme une technologie de référence pour comprendre ses usages, ses limites et son rôle dans les systèmes Electronic Artefacts."
 locale: fr
 visibility: public
 publicationClass: canonical
@@ -24,9 +22,7 @@ authors:
   - id: ea:organization:electronic-artefacts
 publisher: ea:organization:electronic-artefacts
 category: library
-roleInEcosystem: llama.cpp sert de repère technique pour évaluer le sujet "llama.cpp" dans le graphe
-  public d'Electronic Artefacts, ses usages possibles et ses conséquences dans l'écosystème
-  Electronic Artefacts.
+roleInEcosystem: "llama.cpp sert de référence technique pour relier usages, contraintes d’implémentation et pages de connaissance dans le graphe Electronic Artefacts."
 officialUrl: https://github.com/ggml-org/llama.cpp
 sources:
   - title: llama.cpp
@@ -46,15 +42,15 @@ disciplines:
 
 ## Rôle
 
-Cette fiche documenté llama.cpp comme technologie de référence pour le sujet "llama.cpp" dans le graphe public d'Electronic Artefacts.
+Cette fiche documente llama.cpp comme technologie de référence dans le graphe public d'Electronic Artefacts.
 
 ## Usage
 
-Elle situe la technologie dans l'écosystème Electronic Artefacts : ce qu'elle permet, quand elle devient pertinente et comment elle dialogue avec les autres composants du graphe.
+Elle précise ce que la technologie rend possible, quand elle devient pertinente et comment elle se relie aux autres composants du graphe.
 
 ## Points d'attention
 
-- Les usages sont décrits en français sans masquer les noms propres, acronymes où standards techniques.
+- Les usages sont décrits en français sans masquer les noms propres, acronymes ou standards techniques.
 - Les limites restent contextualisées par rapport aux projets, aux publications et aux contraintes d'implémentation.
 
 ## Références

@@ -5,12 +5,8 @@ slug:
   canonical: generative-systems-cybernetics-and-creative-coding
 title: Systèmes génératifs, cybernétique et programmation créative
 subtitle: Article technique
-abstract: Systèmes génératifs, cybernétique et programmation créative examine le sujet "Systèmes
-  génératifs, cybernétique et programmation créative" dans le graphe public d'Electronic Artefacts.
-  La fiche en synthétise les architectures, les usages, les limites et les sources de référence.
-description: Systèmes génératifs, cybernétique et programmation créative examine le sujet "Systèmes
-  génératifs, cybernétique et programmation créative" dans le graphe public d'Electronic Artefacts.
-  La fiche en synthétise les architectures, les usages, les limites et les sources de référence.
+abstract: "Cette synthèse française présente Systèmes génératifs, cybernétique et programmation créative : mécanismes, usages, limites et liens avec le graphe public d’Electronic Artefacts."
+description: "Repères pour comprendre Systèmes génératifs, cybernétique et programmation créative dans un contexte de conception : concepts clés, implications pratiques, limites et références reliées au graphe Electronic Artefacts."
 locale: fr
 visibility: public
 publicationClass: published
@@ -33,10 +29,8 @@ subjects:
   - id: ea:program:oreth
   - id: ea:project:palimpsests
 claims:
-  - Systèmes génératifs, cybernétique et programmation créative doit être lisible comme une synthèse
-    française autonome, sans phrases hybrides héritées de l'anglais.
-  - Les liens avec les notions, projets et technologies du graphe renforcent la recherche, la
-    navigation et la citation.
+  - La synthèse doit rester lisible en français autonome, sans formulations hybrides héritées de l'anglais.
+  - Les liens avec les notions, projets et technologies du graphe facilitent la recherche, la navigation et la citation.
 evidence:
   - id: ea:program:oreth
   - id: ea:project:palimpsests
@@ -75,23 +69,23 @@ translationOf: ea:publication:generative-systems-cybernetics-and-creative-coding
 
 ## Problème
 
-Systèmes génératifs, cybernétique et programmation créative examine le sujet "Systèmes génératifs, cybernétique et programmation créative" dans le graphe public d'Electronic Artefacts. La fiche donne une entrée française stable, utilisable pour lire le sujet et relier ses sources au reste du graphe.
+Cette synthèse clarifie le sujet « Systèmes génératifs, cybernétique et programmation créative » pour aider le lecteur à comprendre le vocabulaire, les enjeux pratiques et les liens avec les autres pages du graphe Electronic Artefacts.
 
 ## Architecture
 
-Le sujet est abordé par ses relations avec les concepts, projets et technologies concernés, afin de rendre son contexte de conception lisible.
+Le sujet est présenté à travers ses composants, ses relations avec les concepts voisins et les décisions de conception qu’il implique.
 
 ## Mise en œuvre
 
-La page décrit les usages, contraintes et choix de structure qui permettent d'appliquer le sujet dans des situations concrètes.
+La page met l’accent sur les usages concrets, les contraintes de gouvernance et les conditions d’application dans un système réel.
 
 ## Éléments de preuve
 
-Les sources, relations et éléments de contexte restent attachés à la fiche pour distinguer synthèse éditoriale, preuves et références.
+Les sources, relations et éléments de contexte restent associés à la fiche pour distinguer synthèse éditoriale, preuve et référence.
 
 ## Limites
 
-Les limites sont formulées par rapport au périmètre de la fiche, aux sources disponibles et aux conditions d'usage documentées.
+Les limites décrivent ce que la fiche ne couvre pas encore, les sources disponibles et les conditions d’usage documentées.
 
 ## Références
 

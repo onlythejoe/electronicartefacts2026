@@ -35,8 +35,7 @@ exclusions:
   - les usages purement promotionnels sans définition vérifiable
   - les exemples déconnectés des sources, relations ou contraintes du graphe
 claims:
-  - Agent d'IA devient utile lorsque sa définition reste reliée à des sources, des pratiques et des
-    objets observables.
+  - La définition gagne en valeur lorsqu’elle reste reliée à des sources, des pratiques et des objets observables.
   - La fiche sert de vocabulaire commun pour relier projets, publications et technologies sans
     mélanger les langues.
 sources:
@@ -66,11 +65,11 @@ Agent d'IA désigne les agents logiciels capables d'observer un contexte, de cho
 
 ## Usage
 
-Cette fiche relie la notion aux projets, publications et technologies qui partagent un même vocabulaire de conception. Elle sert de point d'appui pour naviguer dans le graphe en version française.
+Cette fiche fixe le vocabulaire français de la notion et la relie aux projets, publications et technologies qui l’emploient dans le graphe.
 
 ## Périmètre
 
-La notion est abordée par ses définitions, ses usages, ses limites et ses relations avec les autres objets documentés.
+Le périmètre précise les usages inclus, les limites explicites et les relations utiles pour poursuivre la lecture.
 
 ## Références
 

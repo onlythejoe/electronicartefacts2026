@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/publications/model-context-protocol-and-tool-using-ai-systems/#webpage",
       "url": "https://electronicartefacts.com/fr/publications/model-context-protocol-and-tool-using-ai-systems/",
       "name": "Model Context Protocol et systèmes d'IA utilisant des outils",
-      "description": "Model Context Protocol et systèmes d'IA utilisant des outils examine le sujet \"Model Context Protocol et systèmes d'IA utilisant des outils\" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.",
+      "description": "Repères pour comprendre Model Context Protocol et systèmes d'IA utilisant des outils dans un contexte de conception : concepts clés, implications pratiques, limites et références reliées au graphe Electronic Artefacts.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
@@ -35,8 +35,8 @@
       "identifier": "ea:publication:model-context-protocol-and-tool-using-ai-systems-fr",
       "name": "Model Context Protocol et systèmes d'IA utilisant des outils",
       "headline": "Model Context Protocol et systèmes d'IA utilisant des outils",
-      "abstract": "Model Context Protocol et systèmes d'IA utilisant des outils examine le sujet \"Model Context Protocol et systèmes d'IA utilisant des outils\" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.",
-      "description": "Model Context Protocol et systèmes d'IA utilisant des outils examine le sujet \"Model Context Protocol et systèmes d'IA utilisant des outils\" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.",
+      "abstract": "Cette synthèse française présente Model Context Protocol et systèmes d'IA utilisant des outils : mécanismes, usages, limites et liens avec le graphe public d’Electronic Artefacts.",
+      "description": "Cette synthèse française présente Model Context Protocol et systèmes d'IA utilisant des outils : mécanismes, usages, limites et liens avec le graphe public d’Electronic Artefacts.",
       "url": "https://electronicartefacts.com/fr/publications/model-context-protocol-and-tool-using-ai-systems/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/publications/model-context-protocol-and-tool-using-ai-systems/#webpage"
@@ -77,7 +77,7 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 149,
+      "wordCount": 140,
       "citation": [
         "Electronic Artefacts. \"Model Context Protocol et systèmes d'IA utilisant des outils\". Article technique, version 1.0.0, 2026.",
         {
@@ -159,9 +159,12 @@
       "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/",
       "name": "Electronic Artefacts",
       "url": "https://electronicartefacts.com/",
-      "description": "Electronic Artefacts is an independent creative technology studio building client products, proprietary systems and research-led cultural work.",
+      "description": "Electronic Artefacts is an independent creative technology studio for complex digital products, knowledge systems, proprietary software and research-led cultural work.",
       "keywords": [
         "creative technology",
+        "digital product strategy",
+        "UX design",
+        "web development",
         "knowledge graph",
         "AI agents",
         "retrieval-augmented generation",
@@ -213,9 +216,12 @@
       "@id": "https://electronicartefacts.com/#website",
       "url": "https://electronicartefacts.com/",
       "name": "Electronic Artefacts",
-      "description": "Electronic Artefacts is an independent creative technology studio building client products, proprietary systems and research-led cultural work.",
+      "description": "Electronic Artefacts is an independent creative technology studio for complex digital products, knowledge systems, proprietary software and research-led cultural work.",
       "keywords": [
         "creative technology",
+        "digital product strategy",
+        "UX design",
+        "web development",
         "knowledge graph",
         "AI agents",
         "retrieval-augmented generation",

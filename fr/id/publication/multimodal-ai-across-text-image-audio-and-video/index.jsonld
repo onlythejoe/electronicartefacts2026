@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/publications/multimodal-ai-across-text-image-audio-and-video/#webpage",
       "url": "https://electronicartefacts.com/fr/publications/multimodal-ai-across-text-image-audio-and-video/",
       "name": "IA multimodale pour le texte, l'image, l'audio et la vidéo",
-      "description": "IA multimodale pour le texte, l'image, l'audio et la vidéo examine le sujet \"IA multimodale pour le texte, l'image, l'audio et la vidéo\" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.",
+      "description": "Repères pour comprendre IA multimodale pour le texte, l'image, l'audio et la vidéo dans un contexte de conception : concepts clés, implications pratiques, limites et références reliées au graphe Electronic Artefacts.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
@@ -35,8 +35,8 @@
       "identifier": "ea:publication:multimodal-ai-across-text-image-audio-and-video-fr",
       "name": "IA multimodale pour le texte, l'image, l'audio et la vidéo",
       "headline": "IA multimodale pour le texte, l'image, l'audio et la vidéo",
-      "abstract": "IA multimodale pour le texte, l'image, l'audio et la vidéo examine le sujet \"IA multimodale pour le texte, l'image, l'audio et la vidéo\" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.",
-      "description": "IA multimodale pour le texte, l'image, l'audio et la vidéo examine le sujet \"IA multimodale pour le texte, l'image, l'audio et la vidéo\" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.",
+      "abstract": "Cette synthèse française présente IA multimodale pour le texte, l'image, l'audio et la vidéo : mécanismes, usages, limites et liens avec le graphe public d’Electronic Artefacts.",
+      "description": "Cette synthèse française présente IA multimodale pour le texte, l'image, l'audio et la vidéo : mécanismes, usages, limites et liens avec le graphe public d’Electronic Artefacts.",
       "url": "https://electronicartefacts.com/fr/publications/multimodal-ai-across-text-image-audio-and-video/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/publications/multimodal-ai-across-text-image-audio-and-video/#webpage"
@@ -78,7 +78,7 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 151,
+      "wordCount": 141,
       "citation": [
         "Electronic Artefacts. \"IA multimodale pour le texte, l'image, l'audio et la vidéo\". Article technique, version 1.0.0, 2026.",
         {
@@ -156,9 +156,12 @@
       "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/",
       "name": "Electronic Artefacts",
       "url": "https://electronicartefacts.com/",
-      "description": "Electronic Artefacts is an independent creative technology studio building client products, proprietary systems and research-led cultural work.",
+      "description": "Electronic Artefacts is an independent creative technology studio for complex digital products, knowledge systems, proprietary software and research-led cultural work.",
       "keywords": [
         "creative technology",
+        "digital product strategy",
+        "UX design",
+        "web development",
         "knowledge graph",
         "AI agents",
         "retrieval-augmented generation",
@@ -210,9 +213,12 @@
       "@id": "https://electronicartefacts.com/#website",
       "url": "https://electronicartefacts.com/",
       "name": "Electronic Artefacts",
-      "description": "Electronic Artefacts is an independent creative technology studio building client products, proprietary systems and research-led cultural work.",
+      "description": "Electronic Artefacts is an independent creative technology studio for complex digital products, knowledge systems, proprietary software and research-led cultural work.",
       "keywords": [
         "creative technology",
+        "digital product strategy",
+        "UX design",
+        "web development",
         "knowledge graph",
         "AI agents",
         "retrieval-augmented generation",

@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/publications/microservices-modular-monoliths-and-system-boundaries/#webpage",
       "url": "https://electronicartefacts.com/fr/publications/microservices-modular-monoliths-and-system-boundaries/",
       "name": "Microservices, monolithes modulaires et frontières de système",
-      "description": "Microservices, monolithes modulaires et frontières de système examine le sujet \"Microservices, monolithes modulaires et frontières de système\" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.",
+      "description": "Repères pour comprendre Microservices, monolithes modulaires et frontières de système dans un contexte de conception : concepts clés, implications pratiques, limites et références reliées au graphe Electronic Artefacts.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
@@ -35,8 +35,8 @@
       "identifier": "ea:publication:microservices-modular-monoliths-and-system-boundaries-fr",
       "name": "Microservices, monolithes modulaires et frontières de système",
       "headline": "Microservices, monolithes modulaires et frontières de système",
-      "abstract": "Microservices, monolithes modulaires et frontières de système examine le sujet \"Microservices, monolithes modulaires et frontières de système\" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.",
-      "description": "Microservices, monolithes modulaires et frontières de système examine le sujet \"Microservices, monolithes modulaires et frontières de système\" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.",
+      "abstract": "Cette synthèse française présente Microservices, monolithes modulaires et frontières de système : mécanismes, usages, limites et liens avec le graphe public d’Electronic Artefacts.",
+      "description": "Cette synthèse française présente Microservices, monolithes modulaires et frontières de système : mécanismes, usages, limites et liens avec le graphe public d’Electronic Artefacts.",
       "url": "https://electronicartefacts.com/fr/publications/microservices-modular-monoliths-and-system-boundaries/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/publications/microservices-modular-monoliths-and-system-boundaries/#webpage"
@@ -77,7 +77,7 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 145,
+      "wordCount": 138,
       "citation": [
         "Electronic Artefacts. \"Microservices, monolithes modulaires et frontières de système\". Article technique, version 1.0.0, 2026.",
         {
@@ -171,9 +171,12 @@
       "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/",
       "name": "Electronic Artefacts",
       "url": "https://electronicartefacts.com/",
-      "description": "Electronic Artefacts is an independent creative technology studio building client products, proprietary systems and research-led cultural work.",
+      "description": "Electronic Artefacts is an independent creative technology studio for complex digital products, knowledge systems, proprietary software and research-led cultural work.",
       "keywords": [
         "creative technology",
+        "digital product strategy",
+        "UX design",
+        "web development",
         "knowledge graph",
         "AI agents",
         "retrieval-augmented generation",
@@ -225,9 +228,12 @@
       "@id": "https://electronicartefacts.com/#website",
       "url": "https://electronicartefacts.com/",
       "name": "Electronic Artefacts",
-      "description": "Electronic Artefacts is an independent creative technology studio building client products, proprietary systems and research-led cultural work.",
+      "description": "Electronic Artefacts is an independent creative technology studio for complex digital products, knowledge systems, proprietary software and research-led cultural work.",
       "keywords": [
         "creative technology",
+        "digital product strategy",
+        "UX design",
+        "web development",
         "knowledge graph",
         "AI agents",
         "retrieval-augmented generation",

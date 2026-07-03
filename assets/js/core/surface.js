@@ -132,10 +132,10 @@
           title: "Choose the next level of detail.",
           copy: "Move from visible outcomes to the systems, research or archive behind them.",
           cards: [
-            { kicker: "Home", title: "Projects", copy: "Move into public works and collaborations.", reason: "Best if you want to see what the studio makes.", cta: "Browse Projects", href: "./projects.html" },
-            { kicker: "Home", title: "Research", copy: "Explore the theoretical and experimental branches.", reason: "Best if you want to understand the thinking behind the work.", cta: "Explore Research", href: "./research.html" },
-            { kicker: "Home", title: "Programs", copy: "Understand the software systems behind the work.", reason: "Best if you want the operational core.", cta: "View Programs", href: "./programs.html" },
-            { kicker: "Home", title: "Archive", copy: "Browse traces, fragments and historical material.", reason: "Best if you want context and depth.", cta: "Open Archive", href: "./archive.html" },
+            { kicker: "Home", title: "Projects", copy: "Compare public works, client systems and collaborations.", reason: "Best if you want to see what the studio makes.", cta: "Browse Projects", href: "./projects.html" },
+            { kicker: "Home", title: "Research", copy: "Explore the questions, methods and experiments behind the work.", reason: "Best if you want to understand the thinking behind the work.", cta: "Explore Research", href: "./research.html" },
+            { kicker: "Home", title: "Programs", copy: "Understand the reusable software systems behind the work.", reason: "Best if you want the operational core.", cta: "View Programs", href: "./programs.html" },
+            { kicker: "Home", title: "Archive", copy: "Browse traces, fragments and historical material with context.", reason: "Best if you want context and depth.", cta: "Open Archive", href: "./archive.html" },
           ],
         });
       }
@@ -309,8 +309,8 @@
 
       return navigationSection({
         eyebrow: "CONTINUE EXPLORING",
-        title: "A site held together by orbiting paths.",
-        copy: "Pages stay linked through the same frame: work, research, archive, contact and the external stack.",
+        title: "A site held together by clear paths.",
+        copy: "Pages stay linked through the same frame: work, research, archive, contact and the external systems around them.",
         cards: [
           { kicker: "Core", title: "Work", copy: "Projects, music and technology.", reason: "The studio layer and applied outcomes.", cta: "Return to Work", href: "./work.html" },
           { kicker: "Core", title: "Projects", copy: "Public works and extended dossiers.", reason: "The public project constellation.", cta: "Browse Projects", href: "./projects.html" },
@@ -369,8 +369,8 @@
     const routeFor = (id, fallback = "") => catalog.routeFor?.(id) || entityById(id)?.route || fallback;
     return graphSurface({
       eyebrow: "LAYER",
-      title: "Live ecosystem map.",
-      copy: "Real projects, programs and knowledge routes from the current Electronic Artefacts graph.",
+      title: "Live map of the studio’s work.",
+      copy: "A navigable view of current projects, programs and knowledge routes in the Electronic Artefacts graph.",
       coreLabel: "Electronic Artefacts",
       coreCopy: `${projects} projects / ${programs} programs / ${research} fields`,
       variant: "home",
@@ -765,8 +765,8 @@
     const configs = {
       work: {
         eyebrow: "WORK LENS",
-        title: "Work in orbit.",
-        copy: "Projects, roles and signals stay on the same plane.",
+        title: "Work, roles and proof in one view.",
+        copy: "Compare projects, roles and current evidence without leaving the page.",
         nodes: nodesFromItems((catalog.projects || []).filter((item) => item.visibility !== "internal"), {
           limit: 6,
           labelFor: (item) => item.title,
@@ -788,8 +788,8 @@
       },
       projects: {
         eyebrow: "PROJECT MAP",
-        title: "Project constellation.",
-        copy: "Each work keeps its own orbit.",
+        title: "Projects grouped by role and evidence.",
+        copy: "Each project keeps its purpose, status and connected context visible.",
         nodes: nodesFromItems(catalog.projects || [], {
           limit: 7,
           labelFor: (item) => item.title,
@@ -812,8 +812,8 @@
       },
       research: {
         eyebrow: "RESEARCH FIELD",
-        title: "Theory, branching.",
-        copy: "VOID expands into fields, notes and translations.",
+        title: "Research questions and working branches.",
+        copy: "Research fields, notes and programs stay connected to the systems they inform.",
         nodes: nodesFromItems(catalog.researchFields || [], {
           limit: 6,
           labelFor: (item) => item.title,
@@ -835,8 +835,8 @@
       },
       programs: {
         eyebrow: "SYSTEM REGISTRY",
-        title: "System lattice.",
-        copy: "Lineage, grouping and status stay visible.",
+        title: "Programs by responsibility and status.",
+        copy: "Lineage, ownership and current state stay visible.",
         nodes: nodesFromItems(catalog.programs || [], {
           limit: 7,
           labelFor: (item) => item.title,
@@ -859,8 +859,8 @@
       },
       archive: {
         eyebrow: "ARCHIVE CONSOLE",
-        title: "Archive field.",
-        copy: "Fragments, filters and links drift together.",
+        title: "Archive traces with context.",
+        copy: "Fragments, filters and links stay connected to their projects and research lines.",
         nodes: nodesFromItems(catalog.artefacts || [], {
           limit: 7,
           labelFor: (item) => item.title,
@@ -883,8 +883,8 @@
       },
       contact: {
         eyebrow: "CONTACT",
-        title: "Contact paths.",
-        copy: "Email, social and external links.",
+        title: "Choose the right contact path.",
+        copy: "Email, public channels and external links grouped by intent.",
         nodes: [
           { label: "Email", note: "Direct", href: "mailto:electronic.artefacts@gmail.com", x: "-15rem", y: "-8rem", z: "-14rem" },
           { label: "Instagram", note: "Social", href: "https://www.instagram.com/", target: "_blank", x: "15rem", y: "-8rem", z: "14rem" },

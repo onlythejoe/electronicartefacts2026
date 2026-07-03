@@ -51,8 +51,6 @@ export const buildSitemap = (entities: Entity[]): string => {
     { route: "/fr/research.html", alternates: bilingual("/research.html", "/fr/research.html") },
     { route: "/work.html", alternates: bilingual("/work.html", "/fr/work.html") },
     { route: "/fr/work.html", alternates: bilingual("/work.html", "/fr/work.html") },
-    { route: "/search/", alternates: bilingual("/search/", "/fr/search.html") },
-    { route: "/fr/search.html", alternates: bilingual("/search/", "/fr/search.html") },
     { route: "/knowledge/", alternates: bilingual("/knowledge/", "/fr/knowledge/") },
     { route: "/fr/knowledge/", alternates: bilingual("/knowledge/", "/fr/knowledge/") },
     { route: "/knowledge/concepts/", alternates: bilingual("/knowledge/concepts/", "/fr/knowledge/concepts/") },

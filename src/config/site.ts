@@ -3,7 +3,7 @@ import { defaultLocale, localeConfig } from "./i18n.js";
 export const site = {
   name: "Electronic Artefacts",
   origin: "https://electronicartefacts.com",
-  description: "Electronic Artefacts is an independent creative technology studio building client products, proprietary systems and research-led cultural work.",
+  description: "Electronic Artefacts is an independent creative technology studio for complex digital products, knowledge systems, proprietary software and research-led cultural work.",
   updatedAt: "2026-06-25",
   locale: localeConfig(defaultLocale).ogLocale,
   language: defaultLocale,
@@ -13,6 +13,9 @@ export const site = {
   contactEmail: "electronic.artefacts@gmail.com",
   keywords: [
     "creative technology",
+    "digital product strategy",
+    "UX design",
+    "web development",
     "knowledge graph",
     "AI agents",
     "retrieval-augmented generation",

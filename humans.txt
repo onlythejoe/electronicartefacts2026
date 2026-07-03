@@ -6,7 +6,7 @@ Language: English
 
 /* SITE */
 Canonical: https://electronicartefacts.com/
-Description: Electronic Artefacts is an independent creative technology studio building client products, proprietary systems and research-led cultural work.
+Description: Electronic Artefacts is an independent creative technology studio for complex digital products, knowledge systems, proprietary software and research-led cultural work.
 Knowledge graph: https://electronicartefacts.com/knowledge/
 Agent index: https://electronicartefacts.com/llms.txt
 Agent manifest: https://electronicartefacts.com/agent-manifest.json

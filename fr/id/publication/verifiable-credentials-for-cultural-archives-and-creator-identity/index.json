@@ -7,8 +7,8 @@
   },
   "title": "Identifiants vérifiables pour les archives culturelles et l’identité des créateurs",
   "subtitle": "Article technique",
-  "abstract": "Identifiants vérifiables pour les archives culturelles et l’identité des créateurs examine le sujet \"Identifiants vérifiables pour les archives culturelles et l’identité des créateurs\" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.",
-  "description": "Identifiants vérifiables pour les archives culturelles et l’identité des créateurs examine le sujet \"Identifiants vérifiables pour les archives culturelles et l’identité des créateurs\" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.",
+  "abstract": "Cette synthèse française présente Identifiants vérifiables pour les archives culturelles et l’identité des créateurs : mécanismes, usages, limites et liens avec le graphe public d’Electronic Artefacts.",
+  "description": "Repères pour comprendre Identifiants vérifiables pour les archives culturelles et l’identité des créateurs dans un contexte de conception : concepts clés, implications pratiques, limites et références reliées au graphe Electronic Artefacts.",
   "locale": "fr",
   "visibility": "public",
   "publicationClass": "published",
@@ -82,7 +82,7 @@
   ],
   "claims": [
     "Identifiants vérifiables pour les archives culturelles et l’identité des créateurs doit être lisible comme une synthèse française autonome, sans phrases hybrides héritées de l'anglais.",
-    "Les liens avec les notions, projets et technologies du graphe renforcent la recherche, la navigation et la citation."
+    "Les liens avec les notions, projets et technologies du graphe facilitent la recherche, la navigation et la citation."
   ],
   "evidence": [
     {
@@ -95,7 +95,7 @@
   "citation": {
     "preferred": "Electronic Artefacts. \"Identifiants vérifiables pour les archives culturelles et l’identité des créateurs\". Article technique, version 1.0.0, 2026."
   },
-  "bodyHtml": "<h2 id=\"probleme\">Problème</h2>\n<p>Identifiants vérifiables pour les archives culturelles et l’identité des créateurs examine le sujet “Identifiants vérifiables pour les archives culturelles et l’identité des créateurs” dans le graphe public d’Electronic Artefacts. La fiche donne une entrée française stable, utilisable pour lire le sujet et relier ses sources au reste du graphe.</p>\n<h2 id=\"architecture\">Architecture</h2>\n<p>Le sujet est abordé par ses relations avec les concepts, projets et technologies concernés, afin de rendre son contexte de conception lisible.</p>\n<h2 id=\"mise-en-uvre\">Mise en œuvre</h2>\n<p>La page décrit les usages, contraintes et choix de structure qui permettent d’appliquer le sujet dans des situations concrètes.</p>\n<h2 id=\"elements-de-preuve\">Éléments de preuve</h2>\n<p>Les sources, relations et éléments de contexte restent attachés à la fiche pour distinguer synthèse éditoriale, preuves et références.</p>\n<h2 id=\"limites\">Limites</h2>\n<p>Les limites sont formulées par rapport au périmètre de la fiche, aux sources disponibles et aux conditions d’usage documentées.</p>\n<h2 id=\"references\">Références</h2>\n<p>Les sources principales restent disponibles dans le bloc de références de la fiche.</p>\n",
+  "bodyHtml": "<h2 id=\"probleme\">Problème</h2>\n<p>Cette synthèse clarifie le sujet « Identifiants vérifiables pour les archives culturelles et l’identité des créateurs » pour aider le lecteur à comprendre le vocabulaire, les enjeux pratiques et les liens avec les autres pages du graphe Electronic Artefacts.</p>\n<h2 id=\"architecture\">Architecture</h2>\n<p>Le sujet est présenté à travers ses composants, ses relations avec les concepts voisins et les décisions de conception qu’il implique.</p>\n<h2 id=\"mise-en-uvre\">Mise en œuvre</h2>\n<p>La page met l’accent sur les usages concrets, les contraintes de gouvernance et les conditions d’application dans un système réel.</p>\n<h2 id=\"elements-de-preuve\">Éléments de preuve</h2>\n<p>Les sources, relations et éléments de contexte restent associés à la fiche pour distinguer synthèse éditoriale, preuve et référence.</p>\n<h2 id=\"limites\">Limites</h2>\n<p>Les limites décrivent ce que la fiche ne couvre pas encore, les sources disponibles et les conditions d’usage documentées.</p>\n<h2 id=\"references\">Références</h2>\n<p>Les sources principales restent disponibles dans le bloc de références de la fiche.</p>\n",
   "headings": [
     "Problème",
     "Architecture",
