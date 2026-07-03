@@ -3,12 +3,15 @@ id: ea:concept:graph-modeling-fr
 type: concept
 slug:
   canonical: graph-modeling
-title: Modelisation de graphe
-definition: Cette notion recouvre la modélisation d'entités et de relations sous forme de graphe exploitable.
-abstract: Ce concept propose un cadre précis pour comprendre la modélisation d'entités et de
-  relations sous forme de graphe exploitable et ses liens avec les projets, technologies et
-  publications associés.
-description: "Définition, usages, limites et relations associés au concept : Modelisation de graphe."
+title: Modélisation de graphe
+definition: Modélisation de graphe désigne la modélisation d'entités et de relations sous forme de
+  graphe exploitable.
+abstract: Modélisation de graphe désigne la modélisation d'entités et de relations sous forme de
+  graphe exploitable. La fiche en précise l'usage, les limites et les relations avec les projets,
+  technologies et publications d'Electronic Artefacts.
+description: Modélisation de graphe désigne la modélisation d'entités et de relations sous forme de
+  graphe exploitable. La fiche en précise l'usage, les limites et les relations avec les projets,
+  technologies et publications d'Electronic Artefacts.
 locale: fr
 visibility: public
 publicationClass: canonical
@@ -32,8 +35,10 @@ exclusions:
   - les usages purement promotionnels sans définition vérifiable
   - les exemples déconnectés des sources, relations ou contraintes du graphe
 claims:
-  - Une définition utile reste reliée à des sources, à des pratiques et à des objets observables.
-  - Un vocabulaire stable permet de relier projets, publications et technologies sans ambiguïté.
+  - Modélisation de graphe devient utile lorsque sa définition reste reliée à des sources, des
+    pratiques et des objets observables.
+  - La fiche sert de vocabulaire commun pour relier projets, publications et technologies sans
+    mélanger les langues.
 tags:
   - Graph Modeling
   - Nodes
@@ -48,18 +53,18 @@ disciplines:
 translationOf: ea:concept:graph-modeling
 ---
 
-## Rôle
+## Définition
 
-Cette notion recouvre la modélisation d'entités et de relations sous forme de graphe exploitable.
+Modélisation de graphe désigne la modélisation d'entités et de relations sous forme de graphe exploitable.
 
 ## Usage
 
-Elle fournit un vocabulaire stable pour relier les projets, publications et technologies concernés.
+Cette fiche relie la notion aux projets, publications et technologies qui partagent un même vocabulaire de conception. Elle sert de point d'appui pour naviguer dans le graphe en version française.
 
 ## Périmètre
 
-Son périmètre comprend les définitions, les usages, les limites et les relations avec les autres objets documentés.
+La notion est abordée par ses définitions, ses usages, ses limites et ses relations avec les autres objets documentés.
 
 ## Références
 
-Aucune référence externe n’est associée à cette entrée.
+Les sources associées sont conservées dans la fiche canonique du graphe.

@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/publications/ai-search-structured-content-and-knowledge-graph-seo/#webpage",
       "url": "https://electronicartefacts.com/fr/publications/ai-search-structured-content-and-knowledge-graph-seo/",
       "name": "Recherche IA, contenu structuré et SEO par graphe de connaissances",
-      "description": "Une analyse de la visibilité dans les moteurs de recherche fondés sur l’IA, à travers le contenu structuré, JSON-LD, l’identité des entités, les graphes de connaissances et l’autorité éditoriale.",
+      "description": "Recherche IA, contenu structuré et SEO par graphe de connaissances examine le sujet \"Recherche IA, contenu structuré et SEO par graphe de connaissances\" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
@@ -35,8 +35,8 @@
       "identifier": "ea:publication:ai-search-structured-content-and-knowledge-graph-seo-fr",
       "name": "Recherche IA, contenu structuré et SEO par graphe de connaissances",
       "headline": "Recherche IA, contenu structuré et SEO par graphe de connaissances",
-      "abstract": "Une analyse de la visibilité dans les moteurs de recherche fondés sur l’IA, à travers le contenu structuré, JSON-LD, l’identité des entités, les graphes de connaissances et l’autorité éditoriale.",
-      "description": "Une analyse de la visibilité dans les moteurs de recherche fondés sur l’IA, à travers le contenu structuré, JSON-LD, l’identité des entités, les graphes de connaissances et l’autorité éditoriale.",
+      "abstract": "Recherche IA, contenu structuré et SEO par graphe de connaissances examine le sujet \"Recherche IA, contenu structuré et SEO par graphe de connaissances\" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.",
+      "description": "Recherche IA, contenu structuré et SEO par graphe de connaissances examine le sujet \"Recherche IA, contenu structuré et SEO par graphe de connaissances\" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.",
       "url": "https://electronicartefacts.com/fr/publications/ai-search-structured-content-and-knowledge-graph-seo/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/publications/ai-search-structured-content-and-knowledge-graph-seo/#webpage"
@@ -78,7 +78,7 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 133,
+      "wordCount": 151,
       "citation": [
         "Electronic Artefacts. \"Recherche IA, contenu structuré et SEO par graphe de connaissances\". Article technique, version 1.0.0, 2026.",
         {
@@ -163,7 +163,7 @@
       "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/",
       "name": "Electronic Artefacts",
       "url": "https://electronicartefacts.com/",
-      "description": "Electronic Artefacts designs digital products, knowledge systems, cultural platforms and research-led experiences.",
+      "description": "Electronic Artefacts is an independent creative technology studio building client products, proprietary systems and research-led cultural work.",
       "keywords": [
         "creative technology",
         "knowledge graph",
@@ -217,7 +217,7 @@
       "@id": "https://electronicartefacts.com/#website",
       "url": "https://electronicartefacts.com/",
       "name": "Electronic Artefacts",
-      "description": "Electronic Artefacts designs digital products, knowledge systems, cultural platforms and research-led experiences.",
+      "description": "Electronic Artefacts is an independent creative technology studio building client products, proprietary systems and research-led cultural work.",
       "keywords": [
         "creative technology",
         "knowledge graph",

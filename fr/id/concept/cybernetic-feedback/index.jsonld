@@ -5,15 +5,15 @@
       "@type": "WebPage",
       "@id": "https://electronicartefacts.com/fr/knowledge/concepts/cybernetic-feedback/#webpage",
       "url": "https://electronicartefacts.com/fr/knowledge/concepts/cybernetic-feedback/",
-      "name": "Rétroaction cybernetique",
-      "description": "Définition, usages, limites et relations associés au concept : Rétroaction cybernetique.",
+      "name": "Rétroaction cybernétique",
+      "description": "Rétroaction cybernétique désigne les boucles de rétroaction qui relient mesure, action, correction et comportement systémique. La fiche en précise l'usage, les limites et les relations avec les projets, technologies et publications d'Electronic Artefacts.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
       "primaryImageOfPage": {
         "@type": "ImageObject",
         "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-search.jpg",
-        "description": "Rétroaction cybernetique"
+        "description": "Rétroaction cybernétique"
       },
       "breadcrumb": {
         "@id": "https://electronicartefacts.com/fr/knowledge/concepts/cybernetic-feedback/#breadcrumb"
@@ -33,9 +33,9 @@
       "@type": "DefinedTerm",
       "@id": "https://electronicartefacts.com/fr/id/concept/cybernetic-feedback/",
       "identifier": "ea:concept:cybernetic-feedback-fr",
-      "name": "Rétroaction cybernetique",
-      "abstract": "Ce concept propose un cadre précis pour comprendre les boucles de retroaction qui relient mesure, action, correction et comportement systemique et ses liens avec les projets, technologies et publications associés.",
-      "description": "Cette notion recouvre les boucles de retroaction qui relient mesure, action, correction et comportement systemique.",
+      "name": "Rétroaction cybernétique",
+      "abstract": "Rétroaction cybernétique désigne les boucles de rétroaction qui relient mesure, action, correction et comportement systémique. La fiche en précise l'usage, les limites et les relations avec les projets, technologies et publications d'Electronic Artefacts.",
+      "description": "Rétroaction cybernétique désigne les boucles de rétroaction qui relient mesure, action, correction et comportement systémique.",
       "url": "https://electronicartefacts.com/fr/knowledge/concepts/cybernetic-feedback/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/knowledge/concepts/cybernetic-feedback/#webpage"
@@ -43,7 +43,7 @@
       "image": {
         "@type": "ImageObject",
         "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-search.jpg",
-        "description": "Rétroaction cybernetique"
+        "description": "Rétroaction cybernétique"
       },
       "author": [
         {
@@ -76,7 +76,7 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 55,
+      "wordCount": 81,
       "citation": [
         {
           "@type": "CreativeWork",
@@ -95,7 +95,7 @@
       "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/",
       "name": "Electronic Artefacts",
       "url": "https://electronicartefacts.com/",
-      "description": "Electronic Artefacts designs digital products, knowledge systems, cultural platforms and research-led experiences.",
+      "description": "Electronic Artefacts is an independent creative technology studio building client products, proprietary systems and research-led cultural work.",
       "keywords": [
         "creative technology",
         "knowledge graph",
@@ -149,7 +149,7 @@
       "@id": "https://electronicartefacts.com/#website",
       "url": "https://electronicartefacts.com/",
       "name": "Electronic Artefacts",
-      "description": "Electronic Artefacts designs digital products, knowledge systems, cultural platforms and research-led experiences.",
+      "description": "Electronic Artefacts is an independent creative technology studio building client products, proprietary systems and research-led cultural work.",
       "keywords": [
         "creative technology",
         "knowledge graph",
@@ -194,7 +194,7 @@
         {
           "@type": "ListItem",
           "position": 3,
-          "name": "Rétroaction cybernetique",
+          "name": "Rétroaction cybernétique",
           "item": "https://electronicartefacts.com/fr/knowledge/concepts/cybernetic-feedback/"
         }
       ]

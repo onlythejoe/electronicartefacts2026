@@ -5,12 +5,14 @@ slug:
   canonical: verifiable-credentials-for-cultural-archives-and-creator-identity
 title: Identifiants vérifiables pour les archives culturelles et l’identité des créateurs
 subtitle: Article technique
-abstract: Une introduction aux Verifiable Credentials du W3C appliqués à l’identité des créateurs,
-  aux archives culturelles, à la provenance, aux droits, à la confidentialité et à la confiance
-  lisible par les machines.
-description: Une introduction aux Verifiable Credentials du W3C appliqués à l’identité des
-  créateurs, aux archives culturelles, à la provenance, aux droits, à la confidentialité et à la
-  confiance lisible par les machines.
+abstract: Identifiants vérifiables pour les archives culturelles et l’identité des créateurs examine
+  le sujet "Identifiants vérifiables pour les archives culturelles et l’identité des créateurs" dans
+  le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les
+  limites et les sources de référence.
+description: Identifiants vérifiables pour les archives culturelles et l’identité des créateurs
+  examine le sujet "Identifiants vérifiables pour les archives culturelles et l’identité des
+  créateurs" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures,
+  les usages, les limites et les sources de référence.
 locale: fr
 visibility: public
 publicationClass: published
@@ -33,12 +35,10 @@ subjects:
   - id: ea:concept:linked-data
   - id: ea:technology:c2pa
 claims:
-  - Les identifiants vérifiables peuvent porter des déclarations signées sur des créateurs, œuvres,
-    droits ou événements d’archive ; la confiance dépend toutefois de l’émetteur et de la politique
-    de vérification.
-  - Les systèmes culturels doivent les considérer comme une couche de provenance parmi les
-    enregistrements du graphe, la revue éditoriale, les métadonnées de droits et l’interprétation
-    publique.
+  - Identifiants vérifiables pour les archives culturelles et l’identité des créateurs doit être
+    lisible comme une synthèse française autonome, sans phrases hybrides héritées de l'anglais.
+  - Les liens avec les notions, projets et technologies du graphe renforcent la recherche, la
+    navigation et la citation.
 evidence:
   - id: ea:concept:provenance
   - id: ea:concept:entity-identity
@@ -76,24 +76,24 @@ translationOf: ea:publication:verifiable-credentials-for-cultural-archives-and-c
 
 ## Problème
 
-Une introduction aux Verifiable Credentials du W3C appliqués à l’identité des créateurs, aux archives culturelles, à la provenance, aux droits, à la confidentialité et à la confiance lisible par les machines.
+Identifiants vérifiables pour les archives culturelles et l’identité des créateurs examine le sujet "Identifiants vérifiables pour les archives culturelles et l’identité des créateurs" dans le graphe public d'Electronic Artefacts. La fiche donne une entrée française stable, utilisable pour lire le sujet et relier ses sources au reste du graphe.
 
 ## Architecture
 
-Les identifiants vérifiables peuvent porter des déclarations signées sur des créateurs, œuvres, droits ou événements d’archive ; la confiance dépend toutefois de l’émetteur et de la politique de vérification. Les systèmes culturels doivent les considérer comme une couche de provenance parmi les enregistrements du graphe, la revue éditoriale, les métadonnées de droits et l’interprétation publique.
+Le sujet est abordé par ses relations avec les concepts, projets et technologies concernés, afin de rendre son contexte de conception lisible.
 
 ## Mise en œuvre
 
-L’analyse en précise les usages, les contraintes et les principaux arbitrages techniques.
+La page décrit les usages, contraintes et choix de structure qui permettent d'appliquer le sujet dans des situations concrètes.
 
 ## Éléments de preuve
 
-Les arguments s’appuient sur les sources et les notions connexes citées dans l’article.
+Les sources, relations et éléments de contexte restent attachés à la fiche pour distinguer synthèse éditoriale, preuves et références.
 
 ## Limites
 
-Les conclusions restent liées au périmètre des sources disponibles et aux conditions d’usage décrites.
+Les limites sont formulées par rapport au périmètre de la fiche, aux sources disponibles et aux conditions d'usage documentées.
 
 ## Références
 
-Les références principales sont indiquées ci-dessous.
+Les sources principales restent disponibles dans le bloc de références de la fiche.

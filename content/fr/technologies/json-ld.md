@@ -5,10 +5,10 @@ slug:
   canonical: json-ld
 title: JSON-LD
 subtitle: JSON pour Données liées
-abstract: JSON-LD est un format du W3C qui sérialise des données liées en JSON et rend les
-  métadonnées sémantiques compatibles avec les pratiques courantes du développement web.
-description: JSON-LD est un format du W3C qui sérialise des données liées en JSON et rend les
-  métadonnées sémantiques compatibles avec les pratiques courantes du développement web.
+abstract: JSON-LD est documenté pour son rôle dans les systèmes d'Electronic Artefacts, ses usages,
+  ses limites et les technologies qui lui sont liées.
+description: JSON-LD est documenté pour son rôle dans les systèmes d'Electronic Artefacts, ses
+  usages, ses limites et les technologies qui lui sont liées.
 locale: fr
 visibility: public
 publicationClass: published
@@ -24,8 +24,9 @@ authors:
   - id: ea:organization:electronic-artefacts
 publisher: ea:organization:electronic-artefacts
 category: protocol
-roleInEcosystem: Electronic Artefacts utilise JSON-LD pour publier les données structurées lisibles
-  par les machines sur les pages d’entités.
+roleInEcosystem: JSON-LD sert de repère technique pour évaluer le sujet "JSON-LD" dans le graphe
+  public d'Electronic Artefacts, ses usages possibles et ses conséquences dans l'écosystème
+  Electronic Artefacts.
 officialUrl: https://www.w3.org/TR/json-ld11/
 versions:
   - JSON-LD 1.1
@@ -49,17 +50,17 @@ translationOf: ea:technology:json-ld
 
 ## Rôle
 
-JSON-LD est un format du W3C qui sérialise des données liées en JSON et rend les métadonnées sémantiques compatibles avec les pratiques courantes du développement web.
+Cette fiche documenté JSON-LD comme technologie de référence pour le sujet "JSON-LD" dans le graphe public d'Electronic Artefacts.
 
 ## Usage
 
-Electronic Artefacts utilise JSON-LD pour publier les données structurées lisibles par les machines sur les pages d’entités.
+Elle situe la technologie dans l'écosystème Electronic Artefacts : ce qu'elle permet, quand elle devient pertinente et comment elle dialogue avec les autres composants du graphe.
 
-## Points d’attention
+## Points d'attention
 
-- Les usages dépendent des contraintes du projet et du niveau d’interopérabilité recherché.
-- Les limites doivent être évaluées au regard des standards, des implémentations disponibles et de leur maturité.
+- Les usages sont décrits en français sans masquer les noms propres, acronymes où standards techniques.
+- Les limites restent contextualisées par rapport aux projets, aux publications et aux contraintes d'implémentation.
 
 ## Références
 
-Les références principales sont indiquées ci-dessous.
+Les sources principales restent disponibles dans le bloc de références de la fiche.

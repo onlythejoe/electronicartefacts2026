@@ -5,12 +5,12 @@ slug:
   canonical: hypertext-and-augmented-knowledge-systems
 title: Hypertexte et systèmes de connaissance augmentée
 subtitle: Article technique
-abstract: Une histoire de l’hypertexte comme architecture durable de la connaissance, de Vannevar
-  Bush et Douglas Engelbart aux liens web, graphes de connaissances et systèmes d’intelligence
-  augmentée.
-description: Une histoire de l’hypertexte comme architecture durable de la connaissance, de Vannevar
-  Bush et Douglas Engelbart aux liens web, graphes de connaissances et systèmes d’intelligence
-  augmentée.
+abstract: Hypertexte et systèmes de connaissance augmentée examine le sujet "Hypertexte et systèmes
+  de connaissance augmentée" dans le graphe public d'Electronic Artefacts. La fiche en synthétise
+  les architectures, les usages, les limites et les sources de référence.
+description: Hypertexte et systèmes de connaissance augmentée examine le sujet "Hypertexte et
+  systèmes de connaissance augmentée" dans le graphe public d'Electronic Artefacts. La fiche en
+  synthétise les architectures, les usages, les limites et les sources de référence.
 locale: fr
 visibility: public
 publicationClass: published
@@ -33,10 +33,10 @@ subjects:
   - id: ea:concept:linked-data
   - id: ea:researchField:runtime-theory
 claims:
-  - "L’hypertexte n’est pas seulement un mode de navigation : c’est une théorie de la connaissance
-    associative."
-  - Les graphes de connaissances le rendent plus durable en donnant aux objets liés des identités
-    stables et des relations typées.
+  - Hypertexte et systèmes de connaissance augmentée doit être lisible comme une synthèse française
+    autonome, sans phrases hybrides héritées de l'anglais.
+  - Les liens avec les notions, projets et technologies du graphe renforcent la recherche, la
+    navigation et la citation.
 evidence:
   - id: ea:concept:hypertext
   - id: ea:concept:knowledge-graph
@@ -78,24 +78,24 @@ translationOf: ea:publication:hypertext-and-augmented-knowledge-systems
 
 ## Problème
 
-Une histoire de l’hypertexte comme architecture durable de la connaissance, de Vannevar Bush et Douglas Engelbart aux liens web, graphes de connaissances et systèmes d’intelligence augmentée.
+Hypertexte et systèmes de connaissance augmentée examine le sujet "Hypertexte et systèmes de connaissance augmentée" dans le graphe public d'Electronic Artefacts. La fiche donne une entrée française stable, utilisable pour lire le sujet et relier ses sources au reste du graphe.
 
 ## Architecture
 
-L’hypertexte n’est pas seulement un mode de navigation : c’est une théorie de la connaissance associative. Les graphes de connaissances le rendent plus durable en donnant aux objets liés des identités stables et des relations typées.
+Le sujet est abordé par ses relations avec les concepts, projets et technologies concernés, afin de rendre son contexte de conception lisible.
 
 ## Mise en œuvre
 
-L’analyse en précise les usages, les contraintes et les principaux arbitrages techniques.
+La page décrit les usages, contraintes et choix de structure qui permettent d'appliquer le sujet dans des situations concrètes.
 
 ## Éléments de preuve
 
-Les arguments s’appuient sur les sources et les notions connexes citées dans l’article.
+Les sources, relations et éléments de contexte restent attachés à la fiche pour distinguer synthèse éditoriale, preuves et références.
 
 ## Limites
 
-Les conclusions restent liées au périmètre des sources disponibles et aux conditions d’usage décrites.
+Les limites sont formulées par rapport au périmètre de la fiche, aux sources disponibles et aux conditions d'usage documentées.
 
 ## Références
 
-Les références principales sont indiquées ci-dessous.
+Les sources principales restent disponibles dans le bloc de références de la fiche.

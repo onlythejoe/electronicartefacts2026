@@ -21,8 +21,8 @@ export const renderRelationshipGroups = (
     <section class="zone-card hero">
       <div class="section-head">
         <p class="eyebrow">TYPED RELATIONSHIPS</p>
-        <h2>How this entity connects.</h2>
-        <p class="lede">Each connection has an explicit predicate and a human-readable statement.</p>
+        <h2>Connected work and ideas.</h2>
+        <p class="lede">Each relation names what connects the two entries and why that connection matters.</p>
       </div>
       <div class="card-grid card-grid--two">
         ${[...groups.entries()].map(([group, items]) => `

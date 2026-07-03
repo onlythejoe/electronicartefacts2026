@@ -5,12 +5,10 @@ slug:
   canonical: knowledge-hub-foundations
 title: Fondations du hub de connaissance
 subtitle: Collection éditoriale
-abstract: Une collection fondatrice consacrée aux graphes de connaissances, aux données liées, à
-  l’exécution contextuelle, à la préservation numérique, aux systèmes génératifs et à l’archéologie
-  du signal.
-description: Une collection fondatrice consacrée aux graphes de connaissances, aux données liées, à
-  l’exécution contextuelle, à la préservation numérique, aux systèmes génératifs et à l’archéologie
-  du signal.
+abstract: Fondations du hub de connaissance rassemble des fiches liées par un même axe éditorial,
+  afin de donner une progression lisible aux archives de connaissance d'Electronic Artefacts.
+description: Fondations du hub de connaissance rassemble des fiches liées par un même axe éditorial,
+  afin de donner une progression lisible aux archives de connaissance d'Electronic Artefacts.
 locale: fr
 visibility: public
 publicationClass: published
@@ -25,8 +23,8 @@ version:
 authors:
   - id: ea:organization:electronic-artefacts
 publisher: ea:organization:electronic-artefacts
-thesis: Ces vingt entrées établissent le vocabulaire commun qui relie les recherches, programmes,
-  projets et archives d’Electronic Artefacts.
+thesis: Fondations du hub de connaissance propose une lecture organisee de 20 fiches reliées par un
+  même axe editorial.
 curator:
   - id: ea:organization:electronic-artefacts
 explicitMembers:
@@ -50,8 +48,8 @@ explicitMembers:
   - id: ea:technology:json-ld
   - id: ea:program:oreth
   - id: ea:project:palimpsests
-selectionNote: La sélection privilégie les contenus durables, solidement reliés et capables
-  d’éclairer plusieurs sujets du hub de connaissance.
+selectionNote: La sélection privilégie des contenus stables, reliables et utiles pour parcourir le
+  hub de connaissance en français.
 tags:
   - hub de connaissance
   - collection éditoriale
@@ -69,16 +67,16 @@ translationOf: ea:collection:knowledge-hub-foundations
 
 ## Intention
 
-Une collection fondatrice consacrée aux graphes de connaissances, aux données liées, à l’exécution contextuelle, à la préservation numérique, aux systèmes génératifs et à l’archéologie du signal.
+Fondations du hub de connaissance rassemble des fiches liées par un même axe éditorial.
 
 ## Sélection
 
-Ces vingt entrées établissent le vocabulaire commun qui relie les recherches, programmes, projets et archives d’Electronic Artefacts.
+La collection organise les contenus par proximité éditoriale, par utilité de navigation et par potentiel de liens internes. Elle permet de parcourir le hub de connaissance sans perdre la cohérence du sujet.
 
 ## Usage
 
-Les entrées peuvent se lire dans l’ordre proposé ou servir de points de départ vers les sujets associés.
+Cette entrée sert de repère pour explorer plusieurs publications où notions depuis une même page française.
 
 ## Références
 
-Aucune référence externe n’est associée à cette entrée.
+Les sources associées sont conservées dans la fiche canonique du graphe.

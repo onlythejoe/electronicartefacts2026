@@ -5,12 +5,14 @@ slug:
   canonical: prompt-injection-and-trust-boundaries-in-ai-knowledge-systems
 title: Injection de prompt et frontières de confiance dans les systèmes de connaissance IA
 subtitle: Article technique
-abstract: Une analyse de sécurité consacrée à l’injection de prompt, aux contenus récupérés, aux
-  outils, aux serveurs MCP, aux frontières de confiance et aux permissions dans les systèmes de
-  connaissance assistés par l’IA.
-description: Une analyse de sécurité consacrée à l’injection de prompt, aux contenus récupérés, aux
-  outils, aux serveurs MCP, aux frontières de confiance et aux permissions dans les systèmes de
-  connaissance assistés par l’IA.
+abstract: Injection de prompt et frontières de confiance dans les systèmes de connaissance IA
+  examine le sujet "Injection de prompt et frontières de confiance dans les systèmes de connaissance
+  IA" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les
+  usages, les limites et les sources de référence.
+description: Injection de prompt et frontières de confiance dans les systèmes de connaissance IA
+  examine le sujet "Injection de prompt et frontières de confiance dans les systèmes de connaissance
+  IA" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les
+  usages, les limites et les sources de référence.
 locale: fr
 visibility: public
 publicationClass: published
@@ -33,10 +35,10 @@ subjects:
   - id: ea:concept:graph-runtime
   - id: ea:technology:model-context-protocol
 claims:
-  - L’injection de prompt révèle une frontière de confiance défaillante lorsqu’un contenu non fiable
-    influence le modèle au-delà de son autorité.
-  - Pages récupérées, archives et réponses d’outils doivent rester des données ; politiques,
-    permissions et autorité des outils doivent demeurer hors de la conversation du modèle.
+  - Injection de prompt et frontières de confiance dans les systèmes de connaissance IA doit être
+    lisible comme une synthèse française autonome, sans phrases hybrides héritées de l'anglais.
+  - Les liens avec les notions, projets et technologies du graphe renforcent la recherche, la
+    navigation et la citation.
 evidence:
   - id: ea:concept:ai-agent
   - id: ea:technology:model-context-protocol
@@ -72,24 +74,24 @@ translationOf: ea:publication:prompt-injection-and-trust-boundaries-in-ai-knowle
 
 ## Problème
 
-Une analyse de sécurité consacrée à l’injection de prompt, aux contenus récupérés, aux outils, aux serveurs MCP, aux frontières de confiance et aux permissions dans les systèmes de connaissance assistés par l’IA.
+Injection de prompt et frontières de confiance dans les systèmes de connaissance IA examine le sujet "Injection de prompt et frontières de confiance dans les systèmes de connaissance IA" dans le graphe public d'Electronic Artefacts. La fiche donne une entrée française stable, utilisable pour lire le sujet et relier ses sources au reste du graphe.
 
 ## Architecture
 
-L’injection de prompt révèle une frontière de confiance défaillante lorsqu’un contenu non fiable influence le modèle au-delà de son autorité. Pages récupérées, archives et réponses d’outils doivent rester des données ; politiques, permissions et autorité des outils doivent demeurer hors de la conversation du modèle.
+Le sujet est abordé par ses relations avec les concepts, projets et technologies concernés, afin de rendre son contexte de conception lisible.
 
 ## Mise en œuvre
 
-L’analyse en précise les usages, les contraintes et les principaux arbitrages techniques.
+La page décrit les usages, contraintes et choix de structure qui permettent d'appliquer le sujet dans des situations concrètes.
 
 ## Éléments de preuve
 
-Les arguments s’appuient sur les sources et les notions connexes citées dans l’article.
+Les sources, relations et éléments de contexte restent attachés à la fiche pour distinguer synthèse éditoriale, preuves et références.
 
 ## Limites
 
-Les conclusions restent liées au périmètre des sources disponibles et aux conditions d’usage décrites.
+Les limites sont formulées par rapport au périmètre de la fiche, aux sources disponibles et aux conditions d'usage documentées.
 
 ## Références
 
-Les références principales sont indiquées ci-dessous.
+Les sources principales restent disponibles dans le bloc de références de la fiche.

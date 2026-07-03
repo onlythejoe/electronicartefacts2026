@@ -3,12 +3,14 @@ id: ea:publication:iiif-and-compound-cultural-objects-fr
 type: publication
 slug:
   canonical: iiif-and-compound-cultural-objects
-title: IIIF et objets culturels composes
+title: IIIF et objets culturels composés
 subtitle: Article technique
-abstract: Une présentation pratique de l’API IIIF Presentation, des objets composés, manifestes,
-  canevas, annotations et interfaces d’archives culturelles.
-description: Une présentation pratique de l’API IIIF Presentation, des objets composés, manifestes,
-  canevas, annotations et interfaces d’archives culturelles.
+abstract: IIIF et objets culturels composés examine le sujet "IIIF et objets culturels composés"
+  dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les
+  usages, les limites et les sources de référence.
+description: IIIF et objets culturels composés examine le sujet "IIIF et objets culturels composés"
+  dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les
+  usages, les limites et les sources de référence.
 locale: fr
 visibility: public
 publicationClass: published
@@ -31,10 +33,10 @@ subjects:
   - id: ea:concept:metadata
   - id: ea:project:vestiges
 claims:
-  - IIIF convient aux infrastructures culturelles parce qu’il décrit les objets composés comme des
-    structures à présenter, plutôt que comme des fichiers isolés.
-  - La découverte, l’interprétation et la recherche sémantique demandent de l’associer à des
-    métadonnées plus riches et à des graphes de connaissances.
+  - IIIF et objets culturels composés doit être lisible comme une synthèse française autonome, sans
+    phrases hybrides héritées de l'anglais.
+  - Les liens avec les notions, projets et technologies du graphe renforcent la recherche, la
+    navigation et la citation.
 evidence:
   - id: ea:technology:iiif
   - id: ea:concept:digital-preservation
@@ -52,7 +54,7 @@ sources:
     accessedAt: 2026-06-24
     url: https://www.w3.org/TR/json-ld11/
 citation:
-  preferred: Electronic Artefacts. "IIIF et objets culturels composes". Article technique, version
+  preferred: Electronic Artefacts. "IIIF et objets culturels composés". Article technique, version
     1.0.0, 2026.
 tags:
   - IIIF
@@ -70,24 +72,24 @@ translationOf: ea:publication:iiif-and-compound-cultural-objects
 
 ## Problème
 
-Une présentation pratique de l’API IIIF Presentation, des objets composés, manifestes, canevas, annotations et interfaces d’archives culturelles.
+IIIF et objets culturels composés examine le sujet "IIIF et objets culturels composés" dans le graphe public d'Electronic Artefacts. La fiche donne une entrée française stable, utilisable pour lire le sujet et relier ses sources au reste du graphe.
 
 ## Architecture
 
-IIIF convient aux infrastructures culturelles parce qu’il décrit les objets composés comme des structures à présenter, plutôt que comme des fichiers isolés. La découverte, l’interprétation et la recherche sémantique demandent de l’associer à des métadonnées plus riches et à des graphes de connaissances.
+Le sujet est abordé par ses relations avec les concepts, projets et technologies concernés, afin de rendre son contexte de conception lisible.
 
 ## Mise en œuvre
 
-L’analyse en précise les usages, les contraintes et les principaux arbitrages techniques.
+La page décrit les usages, contraintes et choix de structure qui permettent d'appliquer le sujet dans des situations concrètes.
 
 ## Éléments de preuve
 
-Les arguments s’appuient sur les sources et les notions connexes citées dans l’article.
+Les sources, relations et éléments de contexte restent attachés à la fiche pour distinguer synthèse éditoriale, preuves et références.
 
 ## Limites
 
-Les conclusions restent liées au périmètre des sources disponibles et aux conditions d’usage décrites.
+Les limites sont formulées par rapport au périmètre de la fiche, aux sources disponibles et aux conditions d'usage documentées.
 
 ## Références
 
-Les références principales sont indiquées ci-dessous.
+Les sources principales restent disponibles dans le bloc de références de la fiche.

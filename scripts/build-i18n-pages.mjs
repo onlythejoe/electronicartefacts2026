@@ -13,17 +13,17 @@ const pages = [
     englishRoute: "/",
     frenchRoute: "/fr/",
     title: "Electronic Artefacts | Studio de technologies créatives",
-    description: "Electronic Artefacts conçoit des produits numériques, des systèmes de connaissance, des plateformes culturelles et des expériences issues de la recherche.",
-    h1: "Rendre les systèmes créatifs visibles.",
+    description: "Studio indépendant de technologies créatives : produits clients, systèmes propriétaires et création culturelle issue de la recherche.",
+    h1: "Rendre les systèmes complexes lisibles.",
   },
   {
     source: "work.html",
     output: "fr/work.html",
     englishRoute: "/work.html",
     frenchRoute: "/fr/work.html",
-    title: "Expertises et réalisations | Electronic Artefacts",
-    description: "Conseil, audits, SEO, identité, conception produit, développement et recherche appliquée par Electronic Artefacts.",
-    h1: "Systèmes clients et interfaces produit.",
+    title: "Stratégie produit, design et ingénierie | Electronic Artefacts",
+    description: "Stratégie, design, ingénierie et reprise de produits numériques, plateformes et systèmes de connaissance complexes.",
+    h1: "Stratégie, design et ingénierie pour des produits numériques complexes.",
   },
   {
     source: "projects.html",
@@ -31,8 +31,8 @@ const pages = [
     englishRoute: "/projects.html",
     frenchRoute: "/fr/projects.html",
     title: "Projets | Electronic Artefacts",
-    description: "Découvrez les projets Electronic Artefacts dans les domaines du logiciel, des plateformes culturelles, de la création artistique et des systèmes clients.",
-    h1: "Des systèmes artistiques aux interfaces appliquées.",
+    description: "Découvrez les plateformes propriétaires, œuvres culturelles et produits numériques réalisés par Electronic Artefacts.",
+    h1: "Des projets où la recherche prend forme.",
   },
   {
     source: "about.html",
@@ -40,8 +40,8 @@ const pages = [
     englishRoute: "/about.html",
     frenchRoute: "/fr/about.html",
     title: "À propos du studio | Electronic Artefacts",
-    description: "Electronic Artefacts est un studio indépendant de technologies créatives reliant recherche, logiciel, design et production culturelle.",
-    h1: "Un studio avant d’être un écosystème.",
+    description: "Electronic Artefacts est un studio indépendant qui mène des missions clients, développe ses propres technologies et publie des travaux de recherche et de création.",
+    h1: "Un studio. Trois façons de construire.",
   },
   {
     source: "contact.html",
@@ -49,17 +49,17 @@ const pages = [
     englishRoute: "/contact.html",
     frenchRoute: "/fr/contact.html",
     title: "Contact | Electronic Artefacts",
-    description: "Contactez Electronic Artefacts pour vos produits numériques, systèmes de connaissance, plateformes culturelles et projets de technologies créatives.",
-    h1: "Partir du problème, pas du format.",
+    description: "Échangez avec Electronic Artefacts sur un produit numérique, une reprise de système, un partenariat technologique ou un projet culturel.",
+    h1: "Commencez par le problème. Nous trouverons la forme juste.",
   },
   {
     source: "programs.html",
     output: "fr/programs.html",
     englishRoute: "/programs.html",
     frenchRoute: "/fr/programs.html",
-    title: "Programmes, dépôts et moteurs | Electronic Artefacts",
-    description: "Découvrez les programmes logiciels Electronic Artefacts disponibles par revue de dépôt, pilotes, missions d’implémentation et discussions de licence.",
-    h1: "Programmes pour accès au dépôt, pilotes et licences.",
+    title: "Systèmes propriétaires et programmes | Electronic Artefacts",
+    description: "Évaluez les programmes logiciels Electronic Artefacts par revue de dépôt, pilote ciblé, partenariat d’implémentation ou licence.",
+    h1: "Des systèmes propriétaires pour des partenaires techniques ambitieux.",
   },
   {
     source: "research.html",
@@ -67,8 +67,8 @@ const pages = [
     englishRoute: "/research.html",
     frenchRoute: "/fr/research.html",
     title: "Recherche | Electronic Artefacts",
-    description: "Recherche en technologie, systèmes de connaissance, culture, gouvernance, perception et production créative.",
-    h1: "Les idées deviennent des systèmes, des méthodes et des œuvres.",
+    description: "Recherche sur la technologie, la connaissance et la culture, traduite en prototypes, publications et systèmes opérationnels.",
+    h1: "Une recherche qui prend la forme de systèmes, de méthodes et d’œuvres.",
   },
   {
     source: "archive.html",
@@ -76,8 +76,8 @@ const pages = [
     englishRoute: "/archive.html",
     frenchRoute: "/fr/archive.html",
     title: "Archives | Electronic Artefacts",
-    description: "Parcourez les publications, prototypes, documents, journaux de recherche et matériaux inachevés préservés par Electronic Artefacts.",
-    h1: "Rien d’utile ne devrait disparaître.",
+    description: "Parcourez les publications, prototypes, documents et matériaux inachevés reliés aux décisions et aux systèmes qui les ont produits.",
+    h1: "Le travail continue dans les traces qu’il laisse.",
   },
   {
     source: "mentions-legales.html",
@@ -264,6 +264,12 @@ for (const page of pages) {
     )
     .replace(/(<h1 class="sr-only" data-seo-h1>)[\s\S]*?(<\/h1>)/, `$1${escapeHtml(page.h1 || page.title)}$2`)
     .replaceAll("Go to Work", "Aller aux expertises")
+    .replaceAll("Go to Research", "Aller à la recherche")
+    .replaceAll("Open VASTE", "Ouvrir VASTE")
+    .replaceAll("LEGACY ROUTE", "ANCIENNE ADRESSE")
+    .replaceAll("Palimpsests has moved.", "Palimpsests a changé d’adresse.")
+    .replaceAll("This address now resolves to the canonical Electronic Artefacts project record.", "Cette adresse renvoie désormais vers la fiche projet canonique d’Electronic Artefacts.")
+    .replaceAll(">Continue<", ">Continuer<")
     .replaceAll('href="./assets/', 'href="/assets/')
     .replaceAll('src="./assets/', 'src="/assets/')
     .replace('<body data-page=', '<body data-locale="fr" data-page=');

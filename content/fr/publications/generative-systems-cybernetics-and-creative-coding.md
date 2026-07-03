@@ -3,14 +3,14 @@ id: ea:publication:generative-systems-cybernetics-and-creative-coding-fr
 type: publication
 slug:
   canonical: generative-systems-cybernetics-and-creative-coding
-title: Systèmes génératifs, cybernetique et programmation créative
+title: Systèmes génératifs, cybernétique et programmation créative
 subtitle: Article technique
-abstract: Un parcours des systèmes génératifs, de la rétroaction cybernétique et de l’art
-  algorithmique à la programmation créative, au son et aux pratiques contemporaines assistées par
-  l’IA.
-description: Un parcours des systèmes génératifs, de la rétroaction cybernétique et de l’art
-  algorithmique à la programmation créative, au son et aux pratiques contemporaines assistées par
-  l’IA.
+abstract: Systèmes génératifs, cybernétique et programmation créative examine le sujet "Systèmes
+  génératifs, cybernétique et programmation créative" dans le graphe public d'Electronic Artefacts.
+  La fiche en synthétise les architectures, les usages, les limites et les sources de référence.
+description: Systèmes génératifs, cybernétique et programmation créative examine le sujet "Systèmes
+  génératifs, cybernétique et programmation créative" dans le graphe public d'Electronic Artefacts.
+  La fiche en synthétise les architectures, les usages, les limites et les sources de référence.
 locale: fr
 visibility: public
 publicationClass: published
@@ -33,10 +33,10 @@ subjects:
   - id: ea:program:oreth
   - id: ea:project:palimpsests
 claims:
-  - Une œuvre générative se comprend mieux par ses contraintes, ses boucles de rétroaction, ses
-    choix matériels et sa curation que par sa seule nouveauté.
-  - Employée avec précision, la rétroaction cybernétique reste un concept fécond pour les systèmes
-    créatifs.
+  - Systèmes génératifs, cybernétique et programmation créative doit être lisible comme une synthèse
+    française autonome, sans phrases hybrides héritées de l'anglais.
+  - Les liens avec les notions, projets et technologies du graphe renforcent la recherche, la
+    navigation et la citation.
 evidence:
   - id: ea:program:oreth
   - id: ea:project:palimpsests
@@ -56,7 +56,7 @@ sources:
     publisher: Indiana University Press
     publishedAt: 1971-01-01
 citation:
-  preferred: Electronic Artefacts. "Systèmes génératifs, cybernetique et programmation créative".
+  preferred: Electronic Artefacts. "Systèmes génératifs, cybernétique et programmation créative".
     Article technique, version 1.0.0, 2026.
 tags:
   - Generative Systems
@@ -75,24 +75,24 @@ translationOf: ea:publication:generative-systems-cybernetics-and-creative-coding
 
 ## Problème
 
-Un parcours des systèmes génératifs, de la rétroaction cybernétique et de l’art algorithmique à la programmation créative, au son et aux pratiques contemporaines assistées par l’IA.
+Systèmes génératifs, cybernétique et programmation créative examine le sujet "Systèmes génératifs, cybernétique et programmation créative" dans le graphe public d'Electronic Artefacts. La fiche donne une entrée française stable, utilisable pour lire le sujet et relier ses sources au reste du graphe.
 
 ## Architecture
 
-Une œuvre générative se comprend mieux par ses contraintes, ses boucles de rétroaction, ses choix matériels et sa curation que par sa seule nouveauté. Employée avec précision, la rétroaction cybernétique reste un concept fécond pour les systèmes créatifs.
+Le sujet est abordé par ses relations avec les concepts, projets et technologies concernés, afin de rendre son contexte de conception lisible.
 
 ## Mise en œuvre
 
-L’analyse en précise les usages, les contraintes et les principaux arbitrages techniques.
+La page décrit les usages, contraintes et choix de structure qui permettent d'appliquer le sujet dans des situations concrètes.
 
 ## Éléments de preuve
 
-Les arguments s’appuient sur les sources et les notions connexes citées dans l’article.
+Les sources, relations et éléments de contexte restent attachés à la fiche pour distinguer synthèse éditoriale, preuves et références.
 
 ## Limites
 
-Les conclusions restent liées au périmètre des sources disponibles et aux conditions d’usage décrites.
+Les limites sont formulées par rapport au périmètre de la fiche, aux sources disponibles et aux conditions d'usage documentées.
 
 ## Références
 
-Les références principales sont indiquées ci-dessous.
+Les sources principales restent disponibles dans le bloc de références de la fiche.

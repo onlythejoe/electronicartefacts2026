@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/archive/collections/knowledge-hub-fourth-wave/#webpage",
       "url": "https://electronicartefacts.com/fr/archive/collections/knowledge-hub-fourth-wave/",
       "name": "Hub de connaissance, quatrième vague",
-      "description": "Une collection sur les protocoles et pratiques qui rendent les systèmes d’IA et les infrastructures culturelles vérifiables : MCP, C2PA, WebNN, IIIF, OpenTelemetry, gouvernance et identité.",
+      "description": "Hub de connaissance, quatrième vague rassemble des fiches liées par un même axe éditorial, afin de donner une progression lisible aux archives de connaissance d'Electronic Artefacts.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
@@ -34,8 +34,8 @@
       "@id": "https://electronicartefacts.com/fr/id/collection/knowledge-hub-fourth-wave/",
       "identifier": "ea:collection:knowledge-hub-fourth-wave-fr",
       "name": "Hub de connaissance, quatrième vague",
-      "abstract": "Une collection sur les protocoles et pratiques qui rendent les systèmes d’IA et les infrastructures culturelles vérifiables : MCP, C2PA, WebNN, IIIF, OpenTelemetry, gouvernance et identité.",
-      "description": "Une collection sur les protocoles et pratiques qui rendent les systèmes d’IA et les infrastructures culturelles vérifiables : MCP, C2PA, WebNN, IIIF, OpenTelemetry, gouvernance et identité.",
+      "abstract": "Hub de connaissance, quatrième vague rassemble des fiches liées par un même axe éditorial, afin de donner une progression lisible aux archives de connaissance d'Electronic Artefacts.",
+      "description": "Hub de connaissance, quatrième vague rassemble des fiches liées par un même axe éditorial, afin de donner une progression lisible aux archives de connaissance d'Electronic Artefacts.",
       "url": "https://electronicartefacts.com/fr/archive/collections/knowledge-hub-fourth-wave/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/archive/collections/knowledge-hub-fourth-wave/#webpage"
@@ -78,14 +78,14 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 78
+      "wordCount": 77
     },
     {
       "@type": "Organization",
       "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/",
       "name": "Electronic Artefacts",
       "url": "https://electronicartefacts.com/",
-      "description": "Electronic Artefacts designs digital products, knowledge systems, cultural platforms and research-led experiences.",
+      "description": "Electronic Artefacts is an independent creative technology studio building client products, proprietary systems and research-led cultural work.",
       "keywords": [
         "creative technology",
         "knowledge graph",
@@ -139,7 +139,7 @@
       "@id": "https://electronicartefacts.com/#website",
       "url": "https://electronicartefacts.com/",
       "name": "Electronic Artefacts",
-      "description": "Electronic Artefacts designs digital products, knowledge systems, cultural platforms and research-led experiences.",
+      "description": "Electronic Artefacts is an independent creative technology studio building client products, proprietary systems and research-led cultural work.",
       "keywords": [
         "creative technology",
         "knowledge graph",

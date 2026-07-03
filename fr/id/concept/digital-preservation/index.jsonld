@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/knowledge/concepts/digital-preservation/#webpage",
       "url": "https://electronicartefacts.com/fr/knowledge/concepts/digital-preservation/",
       "name": "Préservation numérique",
-      "description": "Définition, usages, limites et relations associés au concept : Préservation numérique.",
+      "description": "Préservation numérique désigne la conservation active des objets numériques, de leurs formats, de leurs droits et de leurs contextes d'interprétation. La fiche en précise l'usage, les limites et les relations avec les projets, technologies et publications d'Electronic Artefacts.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
@@ -34,8 +34,8 @@
       "@id": "https://electronicartefacts.com/fr/id/concept/digital-preservation/",
       "identifier": "ea:concept:digital-preservation-fr",
       "name": "Préservation numérique",
-      "abstract": "Ce concept propose un cadre précis pour comprendre la conservation active des objets numériques, de leurs formats, de leurs droits et de leurs contextes d'interpretation et ses liens avec les projets, technologies et publications associés.",
-      "description": "Cette notion recouvre la conservation active des objets numériques, de leurs formats, de leurs droits et de leurs contextes d'interpretation.",
+      "abstract": "Préservation numérique désigne la conservation active des objets numériques, de leurs formats, de leurs droits et de leurs contextes d'interprétation. La fiche en précise l'usage, les limites et les relations avec les projets, technologies et publications d'Electronic Artefacts.",
+      "description": "Préservation numérique désigne la conservation active des objets numériques, de leurs formats, de leurs droits et de leurs contextes d'interprétation.",
       "url": "https://electronicartefacts.com/fr/knowledge/concepts/digital-preservation/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/knowledge/concepts/digital-preservation/#webpage"
@@ -77,7 +77,7 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 60,
+      "wordCount": 86,
       "citation": [
         {
           "@type": "CreativeWork",
@@ -101,7 +101,7 @@
       "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/",
       "name": "Electronic Artefacts",
       "url": "https://electronicartefacts.com/",
-      "description": "Electronic Artefacts designs digital products, knowledge systems, cultural platforms and research-led experiences.",
+      "description": "Electronic Artefacts is an independent creative technology studio building client products, proprietary systems and research-led cultural work.",
       "keywords": [
         "creative technology",
         "knowledge graph",
@@ -155,7 +155,7 @@
       "@id": "https://electronicartefacts.com/#website",
       "url": "https://electronicartefacts.com/",
       "name": "Electronic Artefacts",
-      "description": "Electronic Artefacts designs digital products, knowledge systems, cultural platforms and research-led experiences.",
+      "description": "Electronic Artefacts is an independent creative technology studio building client products, proprietary systems and research-led cultural work.",
       "keywords": [
         "creative technology",
         "knowledge graph",

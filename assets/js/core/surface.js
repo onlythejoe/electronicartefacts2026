@@ -128,9 +128,9 @@
 
       if (page === "home") {
         return navigationSection({
-          eyebrow: "CONTINUE EXPLORING",
-          title: "Use the ecosystem as a map, not a grid.",
-          copy: "Where you go next depends on what brought you here. These paths lead directly to the work, research, systems or archives that matter to you.",
+          eyebrow: "GO DEEPER",
+          title: "Choose the next level of detail.",
+          copy: "Move from visible outcomes to the systems, research or archive behind them.",
           cards: [
             { kicker: "Home", title: "Projects", copy: "Move into public works and collaborations.", reason: "Best if you want to see what the studio makes.", cta: "Browse Projects", href: "./projects.html" },
             { kicker: "Home", title: "Research", copy: "Explore the theoretical and experimental branches.", reason: "Best if you want to understand the thinking behind the work.", cta: "Explore Research", href: "./research.html" },
@@ -142,98 +142,98 @@
 
       if (page === "work") {
         return navigationSection({
-          eyebrow: "CONTINUE EXPLORING",
-          title: "From client-facing work to the wider ecosystem.",
-          copy: "Work is the applied surface. These paths explain what sits around it.",
+          eyebrow: "NEXT",
+          title: "See how the work connects.",
+          copy: "Compare outcomes, understand the studio model or bring a concrete need into focus.",
           cards: [
-            { kicker: "Next", title: "Projects", copy: "Compare applied work with artistic translations.", reason: "Useful if you want the broader project field.", cta: "Browse Projects", href: "./projects.html" },
-            { kicker: "Next", title: "About", copy: "Understand how the ecosystem is organized.", reason: "Useful if you want the trunk before the branches.", cta: "Understand the Ecosystem", href: "./about.html" },
-            { kicker: "Next", title: "Contact", copy: "Start a commission or collaboration.", reason: "Useful if you already know you want to engage.", cta: "Start a Collaboration", href: "./contact.html" },
-            { kicker: "Next", title: "Archive", copy: "See the memory layer behind the work.", reason: "Useful if you want background and precedent.", cta: "Open Archive", href: "./archive.html" },
+            { kicker: "Outcomes", title: "Projects", copy: "Compare client delivery with proprietary and cultural work.", cta: "View projects", href: "./projects.html" },
+            { kicker: "Studio", title: "About", copy: "Understand the studio model and the role of each practice.", cta: "About the studio", href: "./about.html" },
+            { kicker: "Brief", title: "Contact", copy: "Bring a product, system or partnership into focus.", cta: "Start a conversation", href: "./contact.html" },
+            { kicker: "Precedent", title: "Archive", copy: "Review the traces behind current work.", cta: "Browse the archive", href: "./archive.html" },
           ],
         });
       }
 
       if (page === "projects") {
         return navigationSection({
-          eyebrow: "CONTINUE EXPLORING",
-          title: "Projects sit between research, production and archive.",
-          copy: "Use these paths to move from the project map to the layers around it.",
+          eyebrow: "NEXT",
+          title: "Follow the project to its source or its application.",
+          copy: "Move from individual outcomes to client work, research, precedent or a new brief.",
           cards: [
-            { kicker: "Next", title: "Work", copy: "Return to the studio and client-facing layer.", reason: "Best if you need the applied side.", cta: "Return to Work", href: "./work.html" },
-            { kicker: "Next", title: "Research", copy: "See the investigations that feed the projects.", reason: "Best if you want the thinking layer.", cta: "Explore Research", href: "./research.html" },
-            { kicker: "Next", title: "Archive", copy: "Browse older fragments and traces.", reason: "Best if you want depth and continuity.", cta: "Open Archive", href: "./archive.html" },
-            { kicker: "Next", title: "Contact", copy: "Start a similar project or ask for a collaboration.", reason: "Best if you want to initiate a brief.", cta: "Start a Collaboration", href: "./contact.html" },
+            { kicker: "Client work", title: "Work", copy: "See how the studio handles commissioned products and platforms.", cta: "View client work", href: "./work.html" },
+            { kicker: "Source", title: "Research", copy: "Read the investigations that inform the projects.", cta: "Explore research", href: "./research.html" },
+            { kicker: "Lineage", title: "Archive", copy: "Trace earlier versions, fragments and references.", cta: "Browse the archive", href: "./archive.html" },
+            { kicker: "New project", title: "Contact", copy: "Turn an adjacent idea into a focused first conversation.", cta: "Start a conversation", href: "./contact.html" },
           ],
         });
       }
 
       if (page === "programs") {
         return navigationSection({
-          eyebrow: "CONTINUE EXPLORING",
-          title: "Programs connect the runtime to the rest of the ecosystem.",
-          copy: "Use these paths to move from the software stack to its use, context and lineage.",
+          eyebrow: "NEXT",
+          title: "Evaluate the system in context.",
+          copy: "Examine the core runtime, the research behind it, the studio model or a possible implementation.",
           cards: [
-            { kicker: "Next", title: "VASTE", copy: "Go to the core runtime and strategic spine.", reason: "The main program explains the wider stack.", cta: "Explore VASTE", href: "./vaste.html" },
-            { kicker: "Next", title: "Research", copy: "See the theories and methods that inform the stack.", reason: "Useful when you want the conceptual layer.", cta: "Explore Research", href: "./research.html" },
-            { kicker: "Next", title: "About", copy: "Understand how programs fit into the ecosystem.", reason: "Useful for orientation and collaboration.", cta: "Understand the Ecosystem", href: "./about.html" },
-            { kicker: "Next", title: "Contact", copy: "Discuss a program, partnership or implementation.", reason: "Useful when the stack becomes a brief.", cta: "Start a Collaboration", href: "./contact.html" },
+            { kicker: "Core runtime", title: "VASTE", copy: "Review the identity, context and permissions layer shared across systems.", cta: "Explore VASTE", href: "./vaste.html" },
+            { kicker: "Foundations", title: "Research", copy: "See the theories and methods that inform the stack.", cta: "Explore research", href: "./research.html" },
+            { kicker: "Studio", title: "About", copy: "Understand how proprietary systems support the wider practice.", cta: "About the studio", href: "./about.html" },
+            { kicker: "Implementation", title: "Contact", copy: "Discuss a pilot, licence or technical partnership.", cta: "Discuss a program", href: "./contact.html" },
           ],
         });
       }
 
       if (page === "research") {
         return navigationSection({
-          eyebrow: "CONTINUE EXPLORING",
-          title: "Research is the source of the ecosystem's branches.",
-          copy: "These paths show where the investigations go once they leave the page.",
+          eyebrow: "NEXT",
+          title: "See what the research becomes.",
+          copy: "Follow an investigation into a working system, a public project or the archive that preserves its lineage.",
           cards: [
-            { kicker: "Next", title: "Programs", copy: "See the systems that grow out of research.", reason: "Useful if you want the operational expression.", cta: "View Programs", href: "./programs.html" },
-            { kicker: "Next", title: "Projects", copy: "See how research translates into public works.", reason: "Useful if you want outputs rather than notes.", cta: "Browse Projects", href: "./projects.html" },
-            { kicker: "Next", title: "Archive", copy: "Browse historical fragments and prior lines.", reason: "Useful for lineage and context.", cta: "Open Archive", href: "./archive.html" },
-            { kicker: "Next", title: "About", copy: "Return to the trunk and system model.", reason: "Useful when you need the ecosystem map.", cta: "Understand the Ecosystem", href: "./about.html" },
+            { kicker: "Systems", title: "Programs", copy: "Review the software that turns recurring research into reusable infrastructure.", cta: "View programs", href: "./programs.html" },
+            { kicker: "Outcomes", title: "Projects", copy: "See how research becomes products, platforms and cultural work.", cta: "View projects", href: "./projects.html" },
+            { kicker: "Lineage", title: "Archive", copy: "Browse the traces and prior versions that keep the work accountable.", cta: "Browse the archive", href: "./archive.html" },
+            { kicker: "Context", title: "About", copy: "Understand the role of research in the studio as a whole.", cta: "About the studio", href: "./about.html" },
           ],
         });
       }
 
       if (page === "archive") {
         return navigationSection({
-          eyebrow: "CONTINUE EXPLORING",
-          title: "The archive is a memory layer, not an endpoint.",
-          copy: "Use these paths to move from fragments into the living ecosystem.",
+          eyebrow: "NEXT",
+          title: "Return each trace to living work.",
+          copy: "The archive gains meaning when it reconnects with a current project, an active investigation or a new conversation.",
           cards: [
-            { kicker: "Next", title: "Projects", copy: "See the current public-facing works.", reason: "Useful if you want what is active now.", cta: "Browse Projects", href: "./projects.html" },
-            { kicker: "Next", title: "Research", copy: "Go back to the working investigations.", reason: "Useful if you want the source material.", cta: "Explore Research", href: "./research.html" },
-            { kicker: "Next", title: "Contact", copy: "Ask for a collaboration or specific trace.", reason: "Useful when the archive leads to action.", cta: "Start a Collaboration", href: "./contact.html" },
-            { kicker: "Next", title: "About", copy: "Re-read the ecosystem structure.", reason: "Useful if you need the trunk again.", cta: "Understand the Ecosystem", href: "./about.html" },
+            { kicker: "Current work", title: "Projects", copy: "See the public outcomes connected to these traces.", cta: "View projects", href: "./projects.html" },
+            { kicker: "Source", title: "Research", copy: "Return to the questions and methods still in progress.", cta: "Explore research", href: "./research.html" },
+            { kicker: "Request", title: "Contact", copy: "Ask about a specific trace, collaboration or reuse context.", cta: "Contact the studio", href: "./contact.html" },
+            { kicker: "Context", title: "About", copy: "Place the archive within the studio’s broader practice.", cta: "About the studio", href: "./about.html" },
           ],
         });
       }
 
       if (page === "about") {
         return navigationSection({
-          eyebrow: "CONTINUE EXPLORING",
-          title: "After the ecosystem model, follow the branches.",
-          copy: "These pages show the parts of the system that matter most once the trunk is clear.",
+          eyebrow: "NEXT",
+          title: "Choose the part of the practice you want to examine.",
+          copy: "Move from the studio model to its research, systems, projects or a direct conversation.",
           cards: [
-            { kicker: "Next", title: "Research", copy: "See where investigations begin.", reason: "Useful when you want the conceptual source.", cta: "Explore Research", href: "./research.html" },
-            { kicker: "Next", title: "Programs", copy: "Understand the software systems and runtimes.", reason: "Useful when you want the operational layer.", cta: "View Programs", href: "./programs.html" },
-            { kicker: "Next", title: "Projects", copy: "See how the system becomes public work.", reason: "Useful when you want outputs and proof.", cta: "Browse Projects", href: "./projects.html" },
-            { kicker: "Next", title: "Contact", copy: "Move from orientation to direct conversation.", reason: "Useful once the ecosystem makes sense.", cta: "Start a Collaboration", href: "./contact.html" },
+            { kicker: "Questions", title: "Research", copy: "See where new methods and systems begin.", cta: "Explore research", href: "./research.html" },
+            { kicker: "Infrastructure", title: "Programs", copy: "Review the studio’s reusable software systems.", cta: "View programs", href: "./programs.html" },
+            { kicker: "Proof", title: "Projects", copy: "See how the practice becomes public work.", cta: "View projects", href: "./projects.html" },
+            { kicker: "Conversation", title: "Contact", copy: "Discuss a product, system, partnership or cultural project.", cta: "Contact the studio", href: "./contact.html" },
           ],
         });
       }
 
       if (page === "contact") {
         return navigationSection({
-          eyebrow: "CONTINUE EXPLORING",
-          title: "Contact is a routing point, not an ending.",
-          copy: "Choose the part of the ecosystem that matches what you need to discuss next.",
+          eyebrow: "BEFORE YOU WRITE",
+          title: "Need more context first?",
+          copy: "Review relevant work, compare projects or understand the studio’s systems before starting the conversation.",
           cards: [
-            { kicker: "Next", title: "Work", copy: "See the applied and client-facing side again.", reason: "Useful if you want service context.", cta: "See Client Work", href: "./work.html" },
-            { kicker: "Next", title: "Projects", copy: "Review the broader public project map.", reason: "Useful if you want examples and adjacent works.", cta: "Browse Projects", href: "./projects.html" },
-            { kicker: "Next", title: "VASTE", copy: "Move into the runtime and strategic spine.", reason: "Useful if the conversation is about systems.", cta: "Explore VASTE", href: "./vaste.html" },
-            { kicker: "Next", title: "About", copy: "Revisit the ecosystem structure.", reason: "Useful if you want context before reaching out.", cta: "Understand the Ecosystem", href: "./about.html" },
+            { kicker: "Capabilities", title: "Work", copy: "See how the studio frames and delivers client work.", cta: "View client work", href: "./work.html" },
+            { kicker: "Examples", title: "Projects", copy: "Compare proprietary, cultural and commissioned outcomes.", cta: "View projects", href: "./projects.html" },
+            { kicker: "Systems", title: "VASTE", copy: "Review the runtime if your question concerns knowledge infrastructure.", cta: "Explore VASTE", href: "./vaste.html" },
+            { kicker: "Studio", title: "About", copy: "Understand the practice, its structure and its standards.", cta: "About the studio", href: "./about.html" },
           ],
         });
       }

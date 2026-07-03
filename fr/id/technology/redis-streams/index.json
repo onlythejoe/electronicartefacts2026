@@ -6,8 +6,8 @@
     "canonical": "redis-streams"
   },
   "title": "Redis Streams",
-  "abstract": "Redis Streams est un type de données en journal à ajout seul, avec entrées ordonnées, lectures par plage, rétention et groupes de consommateurs.",
-  "description": "Redis Streams est un type de données en journal à ajout seul, avec entrées ordonnées, lectures par plage, rétention et groupes de consommateurs.",
+  "abstract": "Redis Streams est documenté pour son rôle dans les systèmes d'Electronic Artefacts, ses usages, ses limites et les technologies qui lui sont liées.",
+  "description": "Redis Streams est documenté pour son rôle dans les systèmes d'Electronic Artefacts, ses usages, ses limites et les technologies qui lui sont liées.",
   "locale": "fr",
   "visibility": "public",
   "publicationClass": "canonical",
@@ -46,13 +46,13 @@
     }
   ],
   "category": "database",
-  "roleInEcosystem": "Redis Streams fournit un journal d’événements compact et des groupes de consommateurs adaptés aux orchestrations délimitées, projections et services en temps réel.",
+  "roleInEcosystem": "Redis Streams sert de repère technique pour évaluer le sujet \"Redis Streams\" dans le graphe public d'Electronic Artefacts, ses usages possibles et ses conséquences dans l'écosystème Electronic Artefacts.",
   "officialUrl": "https://redis.io/docs/latest/develop/data-types/streams/",
-  "bodyHtml": "<h2 id=\"role\">Rôle</h2>\n<p>Redis Streams est un type de données en journal à ajout seul, avec entrées ordonnées, lectures par plage, rétention et groupes de consommateurs.</p>\n<h2 id=\"usage\">Usage</h2>\n<p>Redis Streams fournit un journal d’événements compact et des groupes de consommateurs adaptés aux orchestrations délimitées, projections et services en temps réel.</p>\n<h2 id=\"points-d-attention\">Points d’attention</h2>\n<ul>\n<li>Les usages dépendent des contraintes du projet et du niveau d’interopérabilité recherché.</li>\n<li>Les limites doivent être évaluées au regard des standards, des implémentations disponibles et de leur maturité.</li>\n</ul>\n<h2 id=\"references\">Références</h2>\n<p>Les références principales sont indiquées ci-dessous.</p>\n",
+  "bodyHtml": "<h2 id=\"role\">Rôle</h2>\n<p>Cette fiche documenté Redis Streams comme technologie de référence pour le sujet “Redis Streams” dans le graphe public d’Electronic Artefacts.</p>\n<h2 id=\"usage\">Usage</h2>\n<p>Elle situe la technologie dans l’écosystème Electronic Artefacts : ce qu’elle permet, quand elle devient pertinente et comment elle dialogue avec les autres composants du graphe.</p>\n<h2 id=\"points-d-attention\">Points d’attention</h2>\n<ul>\n<li>Les usages sont décrits en français sans masquer les noms propres, acronymes où standards techniques.</li>\n<li>Les limites restent contextualisées par rapport aux projets, aux publications et aux contraintes d’implémentation.</li>\n</ul>\n<h2 id=\"references\">Références</h2>\n<p>Les sources principales restent disponibles dans le bloc de références de la fiche.</p>\n",
   "headings": [
     "Rôle",
     "Usage",
-    "Points d’attention",
+    "Points d'attention",
     "Références"
   ],
   "headingItems": [
@@ -68,7 +68,7 @@
     },
     {
       "level": 2,
-      "title": "Points d’attention",
+      "title": "Points d'attention",
       "id": "points-d-attention"
     },
     {

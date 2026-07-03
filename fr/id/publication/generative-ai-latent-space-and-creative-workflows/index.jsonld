@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/publications/generative-ai-latent-space-and-creative-workflows/#webpage",
       "url": "https://electronicartefacts.com/fr/publications/generative-ai-latent-space-and-creative-workflows/",
       "name": "IA générative, espace latent et workflows créatifs",
-      "description": "Une lecture de l’IA générative dans les pratiques créatives, à travers les espaces latents, les prompts, la provenance, les risques, l’évaluation et la question de l’auteur.",
+      "description": "IA générative, espace latent et workflows créatifs examine le sujet \"IA générative, espace latent et workflows créatifs\" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
@@ -35,8 +35,8 @@
       "identifier": "ea:publication:generative-ai-latent-space-and-creative-workflows-fr",
       "name": "IA générative, espace latent et workflows créatifs",
       "headline": "IA générative, espace latent et workflows créatifs",
-      "abstract": "Une lecture de l’IA générative dans les pratiques créatives, à travers les espaces latents, les prompts, la provenance, les risques, l’évaluation et la question de l’auteur.",
-      "description": "Une lecture de l’IA générative dans les pratiques créatives, à travers les espaces latents, les prompts, la provenance, les risques, l’évaluation et la question de l’auteur.",
+      "abstract": "IA générative, espace latent et workflows créatifs examine le sujet \"IA générative, espace latent et workflows créatifs\" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.",
+      "description": "IA générative, espace latent et workflows créatifs examine le sujet \"IA générative, espace latent et workflows créatifs\" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.",
       "url": "https://electronicartefacts.com/fr/publications/generative-ai-latent-space-and-creative-workflows/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/publications/generative-ai-latent-space-and-creative-workflows/#webpage"
@@ -77,7 +77,7 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 118,
+      "wordCount": 145,
       "citation": [
         "Electronic Artefacts. \"IA générative, espace latent et workflows créatifs\". Article technique, version 1.0.0, 2026.",
         {
@@ -153,7 +153,7 @@
       "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/",
       "name": "Electronic Artefacts",
       "url": "https://electronicartefacts.com/",
-      "description": "Electronic Artefacts designs digital products, knowledge systems, cultural platforms and research-led experiences.",
+      "description": "Electronic Artefacts is an independent creative technology studio building client products, proprietary systems and research-led cultural work.",
       "keywords": [
         "creative technology",
         "knowledge graph",
@@ -207,7 +207,7 @@
       "@id": "https://electronicartefacts.com/#website",
       "url": "https://electronicartefacts.com/",
       "name": "Electronic Artefacts",
-      "description": "Electronic Artefacts designs digital products, knowledge systems, cultural platforms and research-led experiences.",
+      "description": "Electronic Artefacts is an independent creative technology studio building client products, proprietary systems and research-led cultural work.",
       "keywords": [
         "creative technology",
         "knowledge graph",

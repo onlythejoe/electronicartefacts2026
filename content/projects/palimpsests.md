@@ -84,7 +84,7 @@ disciplines:
 
 Palimpsests is a compound artistic publication built around layered memory. It uses the figure of the palimpsest to describe audio, image and research material that remains marked by previous states.
 
-The project should be read as a cultural work before it is read as a technical case study. It belongs to the Electronic Artefacts graph because the studio treats artistic production, software systems, research fields and archives as connected forms of knowledge.
+Palimpsests is a cultural work before it is a technical case study. Its place within Electronic Artefacts reflects the studio’s belief that artistic production, software, research and archives are connected forms of knowledge.
 
 ## Concept
 

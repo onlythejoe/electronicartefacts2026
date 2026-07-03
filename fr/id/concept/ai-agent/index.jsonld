@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/knowledge/concepts/ai-agent/#webpage",
       "url": "https://electronicartefacts.com/fr/knowledge/concepts/ai-agent/",
       "name": "Agent d'IA",
-      "description": "Définition, usages, limites et relations associés au concept : Agent d'IA.",
+      "description": "Agent d'IA désigne les agents logiciels capables d'observer un contexte, de choisir une action et de mobiliser des outils avec une autonomie encadrée. La fiche en précise l'usage, les limites et les relations avec les projets, technologies et publications d'Electronic Artefacts.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
@@ -34,8 +34,8 @@
       "@id": "https://electronicartefacts.com/fr/id/concept/ai-agent/",
       "identifier": "ea:concept:ai-agent-fr",
       "name": "Agent d'IA",
-      "abstract": "Ce concept propose un cadre précis pour comprendre les agents logiciels capables d'observer un contexte, de choisir une action et de mobiliser des outils avec une autonomie encadrée et ses liens avec les projets, technologies et publications associés.",
-      "description": "Cette notion recouvre les agents logiciels capables d'observer un contexte, de choisir une action et de mobiliser des outils avec une autonomie encadrée.",
+      "abstract": "Agent d'IA désigne les agents logiciels capables d'observer un contexte, de choisir une action et de mobiliser des outils avec une autonomie encadrée. La fiche en précise l'usage, les limites et les relations avec les projets, technologies et publications d'Electronic Artefacts.",
+      "description": "Agent d'IA désigne les agents logiciels capables d'observer un contexte, de choisir une action et de mobiliser des outils avec une autonomie encadrée.",
       "url": "https://electronicartefacts.com/fr/knowledge/concepts/ai-agent/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/knowledge/concepts/ai-agent/#webpage"
@@ -77,7 +77,7 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 63,
+      "wordCount": 89,
       "citation": [
         {
           "@type": "CreativeWork",
@@ -96,7 +96,7 @@
       "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/",
       "name": "Electronic Artefacts",
       "url": "https://electronicartefacts.com/",
-      "description": "Electronic Artefacts designs digital products, knowledge systems, cultural platforms and research-led experiences.",
+      "description": "Electronic Artefacts is an independent creative technology studio building client products, proprietary systems and research-led cultural work.",
       "keywords": [
         "creative technology",
         "knowledge graph",
@@ -150,7 +150,7 @@
       "@id": "https://electronicartefacts.com/#website",
       "url": "https://electronicartefacts.com/",
       "name": "Electronic Artefacts",
-      "description": "Electronic Artefacts designs digital products, knowledge systems, cultural platforms and research-led experiences.",
+      "description": "Electronic Artefacts is an independent creative technology studio building client products, proprietary systems and research-led cultural work.",
       "keywords": [
         "creative technology",
         "knowledge graph",

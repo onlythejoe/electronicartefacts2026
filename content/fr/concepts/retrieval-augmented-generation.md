@@ -6,13 +6,15 @@ slug:
 title: Génération augmentée par récupération
 alternateNames:
   - RAG
-definition: Cette notion recouvre les architectures qui recuperent des sources externes avant ou
-  pendant la generation d'une reponse par IA.
-abstract: Ce concept propose un cadre précis pour comprendre les architectures qui recuperent des
-  sources externes avant ou pendant la generation d'une reponse par IA et ses liens avec les
-  projets, technologies et publications associés.
-description: "Définition, usages, limites et relations associés au concept : Génération augmentée
-  par récupération."
+definition: Génération augmentée par récupération désigne les architectures qui récupèrent des
+  sources externes avant où pendant la génération d'une réponse par IA.
+abstract: Génération augmentée par récupération désigne les architectures qui récupèrent des sources
+  externes avant où pendant la génération d'une réponse par IA. La fiche en précise l'usage, les
+  limites et les relations avec les projets, technologies et publications d'Electronic Artefacts.
+description: Génération augmentée par récupération désigne les architectures qui récupèrent des
+  sources externes avant où pendant la génération d'une réponse par IA. La fiche en précise l'usage,
+  les limites et les relations avec les projets, technologies et publications d'Electronic
+  Artefacts.
 locale: fr
 visibility: public
 publicationClass: canonical
@@ -36,8 +38,10 @@ exclusions:
   - les usages purement promotionnels sans définition vérifiable
   - les exemples déconnectés des sources, relations ou contraintes du graphe
 claims:
-  - Une définition utile reste reliée à des sources, à des pratiques et à des objets observables.
-  - Un vocabulaire stable permet de relier projets, publications et technologies sans ambiguïté.
+  - Génération augmentée par récupération devient utile lorsque sa définition reste reliée à des
+    sources, des pratiques et des objets observables.
+  - La fiche sert de vocabulaire commun pour relier projets, publications et technologies sans
+    mélanger les langues.
 sources:
   - title: Retrieval-Augmented Generation for Knowledge-Intensive NLP Tasks
     author: Patrick Lewis et al.
@@ -59,18 +63,18 @@ disciplines:
 translationOf: ea:concept:retrieval-augmented-generation
 ---
 
-## Rôle
+## Définition
 
-Cette notion recouvre les architectures qui recuperent des sources externes avant ou pendant la generation d'une reponse par IA.
+Génération augmentée par récupération désigne les architectures qui récupèrent des sources externes avant où pendant la génération d'une réponse par IA.
 
 ## Usage
 
-Elle fournit un vocabulaire stable pour relier les projets, publications et technologies concernés.
+Cette fiche relie la notion aux projets, publications et technologies qui partagent un même vocabulaire de conception. Elle sert de point d'appui pour naviguer dans le graphe en version française.
 
 ## Périmètre
 
-Son périmètre comprend les définitions, les usages, les limites et les relations avec les autres objets documentés.
+La notion est abordée par ses définitions, ses usages, ses limites et ses relations avec les autres objets documentés.
 
 ## Références
 
-Les références principales sont indiquées ci-dessous.
+Les sources principales restent disponibles dans le bloc de références de la fiche.

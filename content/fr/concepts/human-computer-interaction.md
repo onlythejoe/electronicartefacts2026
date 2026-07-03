@@ -4,12 +4,14 @@ type: concept
 slug:
   canonical: human-computer-interaction
 title: Interaction humain-machine
-definition: Cette notion recouvre la conception des interactions entre personnes, interfaces, outils
-  et environnements informatiques.
-abstract: Ce concept propose un cadre précis pour comprendre la conception des interactions entre
-  personnes, interfaces, outils et environnements informatiques et ses liens avec les projets,
-  technologies et publications associés.
-description: "Définition, usages, limites et relations associés au concept : Interaction humain-machine."
+definition: Interaction humain-machine désigne la conception des interactions entre personnes,
+  interfaces, outils et environnements informatiques.
+abstract: Interaction humain-machine désigne la conception des interactions entre personnes,
+  interfaces, outils et environnements informatiques. La fiche en précise l'usage, les limites et
+  les relations avec les projets, technologies et publications d'Electronic Artefacts.
+description: Interaction humain-machine désigne la conception des interactions entre personnes,
+  interfaces, outils et environnements informatiques. La fiche en précise l'usage, les limites et
+  les relations avec les projets, technologies et publications d'Electronic Artefacts.
 locale: fr
 visibility: public
 publicationClass: canonical
@@ -33,8 +35,10 @@ exclusions:
   - les usages purement promotionnels sans définition vérifiable
   - les exemples déconnectés des sources, relations ou contraintes du graphe
 claims:
-  - Une définition utile reste reliée à des sources, à des pratiques et à des objets observables.
-  - Un vocabulaire stable permet de relier projets, publications et technologies sans ambiguïté.
+  - Interaction humain-machine devient utile lorsque sa définition reste reliée à des sources, des
+    pratiques et des objets observables.
+  - La fiche sert de vocabulaire commun pour relier projets, publications et technologies sans
+    mélanger les langues.
 sources:
   - title: WCAG 2 Overview
     publisher: W3C Web Accessibility Initiative
@@ -53,18 +57,18 @@ disciplines:
 translationOf: ea:concept:human-computer-interaction
 ---
 
-## Rôle
+## Définition
 
-Cette notion recouvre la conception des interactions entre personnes, interfaces, outils et environnements informatiques.
+Interaction humain-machine désigne la conception des interactions entre personnes, interfaces, outils et environnements informatiques.
 
 ## Usage
 
-Elle fournit un vocabulaire stable pour relier les projets, publications et technologies concernés.
+Cette fiche relie la notion aux projets, publications et technologies qui partagent un même vocabulaire de conception. Elle sert de point d'appui pour naviguer dans le graphe en version française.
 
 ## Périmètre
 
-Son périmètre comprend les définitions, les usages, les limites et les relations avec les autres objets documentés.
+La notion est abordée par ses définitions, ses usages, ses limites et ses relations avec les autres objets documentés.
 
 ## Références
 
-Les références principales sont indiquées ci-dessous.
+Les sources principales restent disponibles dans le bloc de références de la fiche.

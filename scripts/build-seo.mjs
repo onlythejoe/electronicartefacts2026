@@ -4,7 +4,7 @@ import { fileURLToPath } from "node:url";
 
 const rootDir = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const origin = "https://electronicartefacts.com";
-const siteDescription = "Electronic Artefacts designs digital products, knowledge systems, cultural platforms and research-led experiences.";
+const siteDescription = "Electronic Artefacts is an independent creative technology studio building client products, proprietary systems and research-led cultural work.";
 const siteUpdatedAt = "2026-06-25";
 const socialImage = `${origin}/assets/media/projects/electronic-artefacts/electronic-artefacts-search.jpg`;
 const logoImage = `${origin}/assets/media/projects/electronic-artefacts/electronic-artefacts-logo.jpg`;
@@ -72,51 +72,51 @@ const pages = {
   "index.html": {
     title: "Electronic Artefacts | Creative Technology Studio",
     description:
-      "Electronic Artefacts designs digital products, knowledge systems, cultural platforms and research-led experiences.",
+      "Independent creative technology studio building client products, proprietary systems and research-led cultural work.",
     canonical: "/",
-    h1: "Creative systems made visible.",
+    h1: "Complex systems, made clear.",
   },
   "work.html": {
-    title: "Selected Work | Electronic Artefacts",
+    title: "Digital Product Strategy, Design and Engineering | Electronic Artefacts",
     description:
-      "Consulting, audits, SEO, branding, product design, development and R&D services by Electronic Artefacts.",
-    h1: "Client systems and product surfaces.",
+      "Strategy, design, engineering and recovery for complex digital products, platforms and knowledge systems.",
+    h1: "Strategy, design and engineering for complex digital products.",
   },
   "projects.html": {
     title: "Projects | Electronic Artefacts",
     description:
-      "Explore Electronic Artefacts projects across software, cultural platforms, artistic production and client systems.",
-    h1: "Projects, from art systems to applied surfaces.",
+      "Explore Electronic Artefacts projects across proprietary platforms, cultural works and commissioned digital products.",
+    h1: "Projects where research takes form.",
   },
   "programs.html": {
-    title: "Programs, Repo Access and Runtimes | Electronic Artefacts",
+    title: "Proprietary Systems and Programs | Electronic Artefacts",
     description:
-      "Explore Electronic Artefacts software programs available through repository access, pilots, implementation work and licensing conversations.",
-    h1: "Programs for repo access, pilots and licensing.",
+      "Review Electronic Artefacts software programs through repository access, focused pilots, implementation partnerships and licensing.",
+    h1: "Proprietary systems for ambitious technical partners.",
   },
   "research.html": {
     title: "Research | Electronic Artefacts",
     description:
-      "Research across technology, knowledge systems, culture, governance, perception and creative production.",
-    h1: "Ideas become systems, methods and works.",
+      "Research on technology, knowledge and culture translated into prototypes, publications and working systems.",
+    h1: "Research that becomes systems, methods and works.",
   },
   "archive.html": {
     title: "Archive | Electronic Artefacts",
     description:
-      "Browse releases, prototypes, documents, research logs and unfinished material preserved by Electronic Artefacts.",
-    h1: "Nothing useful should disappear.",
+      "Browse releases, prototypes, documents and unfinished material connected to the decisions and systems that produced them.",
+    h1: "The work continues in what it leaves behind.",
   },
   "about.html": {
     title: "About the Studio | Electronic Artefacts",
     description:
-      "Electronic Artefacts is an independent creative technology studio connecting research, software, design and cultural production.",
-    h1: "A studio before an ecosystem.",
+      "Electronic Artefacts is an independent studio working through client commissions, proprietary technology and research-led cultural publishing.",
+    h1: "One studio. Three ways of building.",
   },
   "contact.html": {
     title: "Contact | Electronic Artefacts",
     description:
-      "Contact Electronic Artefacts about digital products, knowledge systems, cultural platforms and creative technology.",
-    h1: "Start with the problem, not the format.",
+      "Discuss a digital product, system recovery, proprietary technology partnership or cultural project with Electronic Artefacts.",
+    h1: "Start with the problem. We’ll find the right form.",
   },
   "palimpsests.html": {
     title: "Palimpsests Redirect | Electronic Artefacts",

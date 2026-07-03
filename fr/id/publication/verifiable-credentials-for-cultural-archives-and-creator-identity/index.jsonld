@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/publications/verifiable-credentials-for-cultural-archives-and-creator-identity/#webpage",
       "url": "https://electronicartefacts.com/fr/publications/verifiable-credentials-for-cultural-archives-and-creator-identity/",
       "name": "Identifiants vérifiables pour les archives culturelles et l’identité des créateurs",
-      "description": "Une introduction aux Verifiable Credentials du W3C appliqués à l’identité des créateurs, aux archives culturelles, à la provenance, aux droits, à la confidentialité et à la confiance lisible par les machines.",
+      "description": "Identifiants vérifiables pour les archives culturelles et l’identité des créateurs examine le sujet \"Identifiants vérifiables pour les archives culturelles et l’identité des créateurs\" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
@@ -35,8 +35,8 @@
       "identifier": "ea:publication:verifiable-credentials-for-cultural-archives-and-creator-identity-fr",
       "name": "Identifiants vérifiables pour les archives culturelles et l’identité des créateurs",
       "headline": "Identifiants vérifiables pour les archives culturelles et l’identité des créateurs",
-      "abstract": "Une introduction aux Verifiable Credentials du W3C appliqués à l’identité des créateurs, aux archives culturelles, à la provenance, aux droits, à la confidentialité et à la confiance lisible par les machines.",
-      "description": "Une introduction aux Verifiable Credentials du W3C appliqués à l’identité des créateurs, aux archives culturelles, à la provenance, aux droits, à la confidentialité et à la confiance lisible par les machines.",
+      "abstract": "Identifiants vérifiables pour les archives culturelles et l’identité des créateurs examine le sujet \"Identifiants vérifiables pour les archives culturelles et l’identité des créateurs\" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.",
+      "description": "Identifiants vérifiables pour les archives culturelles et l’identité des créateurs examine le sujet \"Identifiants vérifiables pour les archives culturelles et l’identité des créateurs\" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.",
       "url": "https://electronicartefacts.com/fr/publications/verifiable-credentials-for-cultural-archives-and-creator-identity/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/publications/verifiable-credentials-for-cultural-archives-and-creator-identity/#webpage"
@@ -77,7 +77,7 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 141,
+      "wordCount": 151,
       "citation": [
         "Electronic Artefacts. \"Identifiants vérifiables pour les archives culturelles et l’identité des créateurs\". Article technique, version 1.0.0, 2026.",
         {
@@ -163,7 +163,7 @@
       "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/",
       "name": "Electronic Artefacts",
       "url": "https://electronicartefacts.com/",
-      "description": "Electronic Artefacts designs digital products, knowledge systems, cultural platforms and research-led experiences.",
+      "description": "Electronic Artefacts is an independent creative technology studio building client products, proprietary systems and research-led cultural work.",
       "keywords": [
         "creative technology",
         "knowledge graph",
@@ -217,7 +217,7 @@
       "@id": "https://electronicartefacts.com/#website",
       "url": "https://electronicartefacts.com/",
       "name": "Electronic Artefacts",
-      "description": "Electronic Artefacts designs digital products, knowledge systems, cultural platforms and research-led experiences.",
+      "description": "Electronic Artefacts is an independent creative technology studio building client products, proprietary systems and research-led cultural work.",
       "keywords": [
         "creative technology",
         "knowledge graph",

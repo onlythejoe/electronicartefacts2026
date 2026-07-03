@@ -9,8 +9,8 @@
   "alternateNames": [
     "Web Neural Network API"
   ],
-  "abstract": "WebNN est une API du W3C pour l’inférence de réseaux neuronaux accélérée par le matériel dans les applications web.",
-  "description": "WebNN est une API du W3C pour l’inférence de réseaux neuronaux accélérée par le matériel dans les applications web.",
+  "abstract": "WebNN est documenté pour son rôle dans les systèmes d'Electronic Artefacts, ses usages, ses limites et les technologies qui lui sont liées.",
+  "description": "WebNN est documenté pour son rôle dans les systèmes d'Electronic Artefacts, ses usages, ses limites et les technologies qui lui sont liées.",
   "locale": "fr",
   "visibility": "public",
   "publicationClass": "canonical",
@@ -50,13 +50,13 @@
     }
   ],
   "category": "platform",
-  "roleInEcosystem": "WebNN expose une abstraction web de l’accélération de l’inférence, au-dessus des systèmes d’exploitation et des composants matériels.",
+  "roleInEcosystem": "WebNN sert de repère technique pour évaluer le sujet \"WebNN\" dans le graphe public d'Electronic Artefacts, ses usages possibles et ses conséquences dans l'écosystème Electronic Artefacts.",
   "officialUrl": "https://www.w3.org/TR/webnn/",
-  "bodyHtml": "<h2 id=\"role\">Rôle</h2>\n<p>WebNN est une API du W3C pour l’inférence de réseaux neuronaux accélérée par le matériel dans les applications web.</p>\n<h2 id=\"usage\">Usage</h2>\n<p>WebNN expose une abstraction web de l’accélération de l’inférence, au-dessus des systèmes d’exploitation et des composants matériels.</p>\n<h2 id=\"points-d-attention\">Points d’attention</h2>\n<ul>\n<li>Les usages dépendent des contraintes du projet et du niveau d’interopérabilité recherché.</li>\n<li>Les limites doivent être évaluées au regard des standards, des implémentations disponibles et de leur maturité.</li>\n</ul>\n<h2 id=\"references\">Références</h2>\n<p>Les références principales sont indiquées ci-dessous.</p>\n",
+  "bodyHtml": "<h2 id=\"role\">Rôle</h2>\n<p>Cette fiche documenté WebNN comme technologie de référence pour le sujet “WebNN” dans le graphe public d’Electronic Artefacts.</p>\n<h2 id=\"usage\">Usage</h2>\n<p>Elle situe la technologie dans l’écosystème Electronic Artefacts : ce qu’elle permet, quand elle devient pertinente et comment elle dialogue avec les autres composants du graphe.</p>\n<h2 id=\"points-d-attention\">Points d’attention</h2>\n<ul>\n<li>Les usages sont décrits en français sans masquer les noms propres, acronymes où standards techniques.</li>\n<li>Les limites restent contextualisées par rapport aux projets, aux publications et aux contraintes d’implémentation.</li>\n</ul>\n<h2 id=\"references\">Références</h2>\n<p>Les sources principales restent disponibles dans le bloc de références de la fiche.</p>\n",
   "headings": [
     "Rôle",
     "Usage",
-    "Points d’attention",
+    "Points d'attention",
     "Références"
   ],
   "headingItems": [
@@ -72,7 +72,7 @@
     },
     {
       "level": 2,
-      "title": "Points d’attention",
+      "title": "Points d'attention",
       "id": "points-d-attention"
     },
     {

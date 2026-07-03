@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/knowledge/concepts/microservice-architecture/#webpage",
       "url": "https://electronicartefacts.com/fr/knowledge/concepts/microservice-architecture/",
       "name": "Architecture de microservices",
-      "description": "Définition, usages, limites et relations associés au concept : Architecture de microservices.",
+      "description": "Architecture de microservices désigne les architectures de services séparés par domaine, contrat et responsabilité opérationnelle. La fiche en précise l'usage, les limites et les relations avec les projets, technologies et publications d'Electronic Artefacts.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
@@ -34,8 +34,8 @@
       "@id": "https://electronicartefacts.com/fr/id/concept/microservice-architecture/",
       "identifier": "ea:concept:microservice-architecture-fr",
       "name": "Architecture de microservices",
-      "abstract": "Ce concept propose un cadre précis pour comprendre les architectures de services separes par domaine, contrat et responsabilite opérationnelle et ses liens avec les projets, technologies et publications associés.",
-      "description": "Cette notion recouvre les architectures de services separes par domaine, contrat et responsabilite opérationnelle.",
+      "abstract": "Architecture de microservices désigne les architectures de services séparés par domaine, contrat et responsabilité opérationnelle. La fiche en précise l'usage, les limites et les relations avec les projets, technologies et publications d'Electronic Artefacts.",
+      "description": "Architecture de microservices désigne les architectures de services séparés par domaine, contrat et responsabilité opérationnelle.",
       "url": "https://electronicartefacts.com/fr/knowledge/concepts/microservice-architecture/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/knowledge/concepts/microservice-architecture/#webpage"
@@ -75,7 +75,7 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 54,
+      "wordCount": 81,
       "citation": [
         {
           "@type": "CreativeWork",
@@ -94,7 +94,7 @@
       "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/",
       "name": "Electronic Artefacts",
       "url": "https://electronicartefacts.com/",
-      "description": "Electronic Artefacts designs digital products, knowledge systems, cultural platforms and research-led experiences.",
+      "description": "Electronic Artefacts is an independent creative technology studio building client products, proprietary systems and research-led cultural work.",
       "keywords": [
         "creative technology",
         "knowledge graph",
@@ -148,7 +148,7 @@
       "@id": "https://electronicartefacts.com/#website",
       "url": "https://electronicartefacts.com/",
       "name": "Electronic Artefacts",
-      "description": "Electronic Artefacts designs digital products, knowledge systems, cultural platforms and research-led experiences.",
+      "description": "Electronic Artefacts is an independent creative technology studio building client products, proprietary systems and research-led cultural work.",
       "keywords": [
         "creative technology",
         "knowledge graph",

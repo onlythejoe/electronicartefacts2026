@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/publications/prompt-injection-and-trust-boundaries-in-ai-knowledge-systems/#webpage",
       "url": "https://electronicartefacts.com/fr/publications/prompt-injection-and-trust-boundaries-in-ai-knowledge-systems/",
       "name": "Injection de prompt et frontières de confiance dans les systèmes de connaissance IA",
-      "description": "Une analyse de sécurité consacrée à l’injection de prompt, aux contenus récupérés, aux outils, aux serveurs MCP, aux frontières de confiance et aux permissions dans les systèmes de connaissance assistés par l’IA.",
+      "description": "Injection de prompt et frontières de confiance dans les systèmes de connaissance IA examine le sujet \"Injection de prompt et frontières de confiance dans les systèmes de connaissance IA\" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
@@ -35,8 +35,8 @@
       "identifier": "ea:publication:prompt-injection-and-trust-boundaries-in-ai-knowledge-systems-fr",
       "name": "Injection de prompt et frontières de confiance dans les systèmes de connaissance IA",
       "headline": "Injection de prompt et frontières de confiance dans les systèmes de connaissance IA",
-      "abstract": "Une analyse de sécurité consacrée à l’injection de prompt, aux contenus récupérés, aux outils, aux serveurs MCP, aux frontières de confiance et aux permissions dans les systèmes de connaissance assistés par l’IA.",
-      "description": "Une analyse de sécurité consacrée à l’injection de prompt, aux contenus récupérés, aux outils, aux serveurs MCP, aux frontières de confiance et aux permissions dans les systèmes de connaissance assistés par l’IA.",
+      "abstract": "Injection de prompt et frontières de confiance dans les systèmes de connaissance IA examine le sujet \"Injection de prompt et frontières de confiance dans les systèmes de connaissance IA\" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.",
+      "description": "Injection de prompt et frontières de confiance dans les systèmes de connaissance IA examine le sujet \"Injection de prompt et frontières de confiance dans les systèmes de connaissance IA\" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.",
       "url": "https://electronicartefacts.com/fr/publications/prompt-injection-and-trust-boundaries-in-ai-knowledge-systems/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/publications/prompt-injection-and-trust-boundaries-in-ai-knowledge-systems/#webpage"
@@ -78,7 +78,7 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 132,
+      "wordCount": 157,
       "citation": [
         "Electronic Artefacts. \"Injection de prompt et frontières de confiance dans les systèmes de connaissance IA\". Article technique, version 1.0.0, 2026.",
         {
@@ -160,7 +160,7 @@
       "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/",
       "name": "Electronic Artefacts",
       "url": "https://electronicartefacts.com/",
-      "description": "Electronic Artefacts designs digital products, knowledge systems, cultural platforms and research-led experiences.",
+      "description": "Electronic Artefacts is an independent creative technology studio building client products, proprietary systems and research-led cultural work.",
       "keywords": [
         "creative technology",
         "knowledge graph",
@@ -214,7 +214,7 @@
       "@id": "https://electronicartefacts.com/#website",
       "url": "https://electronicartefacts.com/",
       "name": "Electronic Artefacts",
-      "description": "Electronic Artefacts designs digital products, knowledge systems, cultural platforms and research-led experiences.",
+      "description": "Electronic Artefacts is an independent creative technology studio building client products, proprietary systems and research-led cultural work.",
       "keywords": [
         "creative technology",
         "knowledge graph",

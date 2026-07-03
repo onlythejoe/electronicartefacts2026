@@ -6684,8 +6684,8 @@ window.EA_PUBLIC_CATALOG = {
       "translationOf": "ea:collection:knowledge-hub-foundations",
       "title": "Fondations du hub de connaissance",
       "subtitle": "Collection éditoriale",
-      "summary": "Une collection fondatrice consacrée aux graphes de connaissances, aux données liées, à l’exécution contextuelle, à la préservation numérique, aux systèmes génératifs et à l’archéologie du signal.",
-      "description": "Une collection fondatrice consacrée aux graphes de connaissances, aux données liées, à l’exécution contextuelle, à la préservation numérique, aux systèmes génératifs et à l’archéologie du signal.",
+      "summary": "Fondations du hub de connaissance rassemble des fiches liées par un même axe éditorial, afin de donner une progression lisible aux archives de connaissance d'Electronic Artefacts.",
+      "description": "Fondations du hub de connaissance rassemble des fiches liées par un même axe éditorial, afin de donner une progression lisible aux archives de connaissance d'Electronic Artefacts.",
       "status": "active",
       "maturity": "research",
       "confidence": "published",
@@ -6723,8 +6723,8 @@ window.EA_PUBLIC_CATALOG = {
       "translationOf": "ea:collection:knowledge-hub-fourth-wave",
       "title": "Hub de connaissance, quatrième vague",
       "subtitle": "Protocoles d'IA, provenance, gouvernance et interfaces culturelles",
-      "summary": "Une collection sur les protocoles et pratiques qui rendent les systèmes d’IA et les infrastructures culturelles vérifiables : MCP, C2PA, WebNN, IIIF, OpenTelemetry, gouvernance et identité.",
-      "description": "Une collection sur les protocoles et pratiques qui rendent les systèmes d’IA et les infrastructures culturelles vérifiables : MCP, C2PA, WebNN, IIIF, OpenTelemetry, gouvernance et identité.",
+      "summary": "Hub de connaissance, quatrième vague rassemble des fiches liées par un même axe éditorial, afin de donner une progression lisible aux archives de connaissance d'Electronic Artefacts.",
+      "description": "Hub de connaissance, quatrième vague rassemble des fiches liées par un même axe éditorial, afin de donner une progression lisible aux archives de connaissance d'Electronic Artefacts.",
       "status": "active",
       "maturity": "research",
       "confidence": "published",
@@ -6763,8 +6763,8 @@ window.EA_PUBLIC_CATALOG = {
       "translationOf": "ea:collection:knowledge-hub-second-wave",
       "title": "Hub de connaissance, deuxième vague",
       "subtitle": "Collection éditoriale",
-      "summary": "Une collection sur les cultures et pratiques numériques durables : hypertexte, systèmes personnels de connaissance, open source, métadonnées, audio web, programmation créative, graphisme procédural, mouvement et typographie.",
-      "description": "Une collection sur les cultures et pratiques numériques durables : hypertexte, systèmes personnels de connaissance, open source, métadonnées, audio web, programmation créative, graphisme procédural, mouvement et typographie.",
+      "summary": "Hub de connaissance, deuxième vague rassemble des fiches liées par un même axe éditorial, afin de donner une progression lisible aux archives de connaissance d'Electronic Artefacts.",
+      "description": "Hub de connaissance, deuxième vague rassemble des fiches liées par un même axe éditorial, afin de donner une progression lisible aux archives de connaissance d'Electronic Artefacts.",
       "status": "active",
       "maturity": "research",
       "confidence": "published",
@@ -6801,8 +6801,8 @@ window.EA_PUBLIC_CATALOG = {
       "translationOf": "ea:collection:knowledge-hub-third-wave",
       "title": "Hub de connaissance, troisième vague",
       "subtitle": "IA, systèmes et calcul sur graphe",
-      "summary": "Une collection consacrée aux grands modèles de langage, aux agents, à l’IA locale, au RAG, aux systèmes multimodaux, aux ontologies et aux architectures événementielles ou distribuées.",
-      "description": "Une collection consacrée aux grands modèles de langage, aux agents, à l’IA locale, au RAG, aux systèmes multimodaux, aux ontologies et aux architectures événementielles ou distribuées.",
+      "summary": "Hub de connaissance, troisième vague rassemble des fiches liées par un même axe éditorial, afin de donner une progression lisible aux archives de connaissance d'Electronic Artefacts.",
+      "description": "Hub de connaissance, troisième vague rassemble des fiches liées par un même axe éditorial, afin de donner une progression lisible aux archives de connaissance d'Electronic Artefacts.",
       "status": "active",
       "maturity": "research",
       "confidence": "published",
@@ -6839,9 +6839,9 @@ window.EA_PUBLIC_CATALOG = {
       "locale": "fr",
       "translationOf": "ea:concept:ai-agent",
       "title": "Agent d'IA",
-      "summary": "Ce concept propose un cadre précis pour comprendre les agents logiciels capables d'observer un contexte, de choisir une action et de mobiliser des outils avec une autonomie encadrée et ses liens avec les projets, technologies et publications associés.",
-      "description": "Définition, usages, limites et relations associés au concept : Agent d'IA.",
-      "definition": "Cette notion recouvre les agents logiciels capables d'observer un contexte, de choisir une action et de mobiliser des outils avec une autonomie encadrée.",
+      "summary": "Agent d'IA désigne les agents logiciels capables d'observer un contexte, de choisir une action et de mobiliser des outils avec une autonomie encadrée. La fiche en précise l'usage, les limites et les relations avec les projets, technologies et publications d'Electronic Artefacts.",
+      "description": "Agent d'IA désigne les agents logiciels capables d'observer un contexte, de choisir une action et de mobiliser des outils avec une autonomie encadrée. La fiche en précise l'usage, les limites et les relations avec les projets, technologies et publications d'Electronic Artefacts.",
+      "definition": "Agent d'IA désigne les agents logiciels capables d'observer un contexte, de choisir une action et de mobiliser des outils avec une autonomie encadrée.",
       "status": "active",
       "maturity": "research",
       "confidence": "validated",
@@ -6877,9 +6877,9 @@ window.EA_PUBLIC_CATALOG = {
       "locale": "fr",
       "translationOf": "ea:concept:algorithmic-composition",
       "title": "Composition algorithmique",
-      "summary": "Ce concept propose un cadre précis pour comprendre l’usage de règles, de procédures et de processus stochastiques pour produire ou organiser de la musique et ses liens avec les projets, technologies et publications associés.",
-      "description": "Définition, usages, limites et relations associés au concept : Composition algorithmique.",
-      "definition": "Cette notion recouvre l’usage de règles, de procédures et de processus stochastiques pour produire ou organiser de la musique.",
+      "summary": "Composition algorithmique désigne le sujet \"Composition algorithmique\" dans le graphe public d'Electronic Artefacts. La fiche en précise l'usage, les limites et les relations avec les projets, technologies et publications d'Electronic Artefacts.",
+      "description": "Composition algorithmique désigne le sujet \"Composition algorithmique\" dans le graphe public d'Electronic Artefacts. La fiche en précise l'usage, les limites et les relations avec les projets, technologies et publications d'Electronic Artefacts.",
+      "definition": "Composition algorithmique désigne le sujet \"Composition algorithmique\" dans le graphe public d'Electronic Artefacts.",
       "status": "active",
       "maturity": "research",
       "confidence": "canonical",
@@ -6914,9 +6914,9 @@ window.EA_PUBLIC_CATALOG = {
       "locale": "fr",
       "translationOf": "ea:concept:augmented-intelligence",
       "title": "Intelligence augmentée",
-      "summary": "Ce concept propose un cadre précis pour comprendre les outils qui etendent la perception, la mémoire et le raisonnement humains sans remplacer le jugement humain et ses liens avec les projets, technologies et publications associés.",
-      "description": "Définition, usages, limites et relations associés au concept : Intelligence augmentée.",
-      "definition": "Cette notion recouvre les outils qui etendent la perception, la mémoire et le raisonnement humains sans remplacer le jugement humain.",
+      "summary": "Intelligence augmentée désigne les outils qui étendent la perception, la mémoire et le raisonnement humains sans remplacer le jugement humain. La fiche en précise l'usage, les limites et les relations avec les projets, technologies et publications d'Electronic Artefacts.",
+      "description": "Intelligence augmentée désigne les outils qui étendent la perception, la mémoire et le raisonnement humains sans remplacer le jugement humain. La fiche en précise l'usage, les limites et les relations avec les projets, technologies et publications d'Electronic Artefacts.",
+      "definition": "Intelligence augmentée désigne les outils qui étendent la perception, la mémoire et le raisonnement humains sans remplacer le jugement humain.",
       "status": "active",
       "maturity": "research",
       "confidence": "canonical",
@@ -6951,9 +6951,9 @@ window.EA_PUBLIC_CATALOG = {
       "locale": "fr",
       "translationOf": "ea:concept:autonomous-system",
       "title": "Système autonome",
-      "summary": "Ce concept propose un cadre précis pour comprendre les systèmes capables de poursuivre un objectif sans intervention permanente, avec des limites de controle explicites et ses liens avec les projets, technologies et publications associés.",
-      "description": "Définition, usages, limites et relations associés au concept : Système autonome.",
-      "definition": "Cette notion recouvre les systèmes capables de poursuivre un objectif sans intervention permanente, avec des limites de controle explicites.",
+      "summary": "Système autonome désigne les systèmes capables de poursuivre un objectif sans intervention permanente, avec des limites de contrôle explicites. La fiche en précise l'usage, les limites et les relations avec les projets, technologies et publications d'Electronic Artefacts.",
+      "description": "Système autonome désigne les systèmes capables de poursuivre un objectif sans intervention permanente, avec des limites de contrôle explicites. La fiche en précise l'usage, les limites et les relations avec les projets, technologies et publications d'Electronic Artefacts.",
+      "definition": "Système autonome désigne les systèmes capables de poursuivre un objectif sans intervention permanente, avec des limites de contrôle explicites.",
       "status": "active",
       "maturity": "research",
       "confidence": "validated",
@@ -6989,9 +6989,9 @@ window.EA_PUBLIC_CATALOG = {
       "locale": "fr",
       "translationOf": "ea:concept:contextual-execution",
       "title": "Exécution contextuelle",
-      "summary": "Ce concept propose un cadre précis pour comprendre l’exécution d’opérations selon l’identité, l’état, les relations, les permissions et la situation courante du système et ses liens avec les projets, technologies et publications associés.",
-      "description": "Définition, usages, limites et relations associés au concept : Exécution contextuelle.",
-      "definition": "Cette notion recouvre l’exécution d’opérations selon l’identité, l’état, les relations, les permissions et la situation courante du système.",
+      "summary": "Exécution contextuelle désigne le sujet \"Exécution contextuelle\" dans le graphe public d'Electronic Artefacts. La fiche en précise l'usage, les limites et les relations avec les projets, technologies et publications d'Electronic Artefacts.",
+      "description": "Exécution contextuelle désigne le sujet \"Exécution contextuelle\" dans le graphe public d'Electronic Artefacts. La fiche en précise l'usage, les limites et les relations avec les projets, technologies et publications d'Electronic Artefacts.",
+      "definition": "Exécution contextuelle désigne le sujet \"Exécution contextuelle\" dans le graphe public d'Electronic Artefacts.",
       "status": "active",
       "maturity": "research",
       "confidence": "canonical",
@@ -7027,9 +7027,9 @@ window.EA_PUBLIC_CATALOG = {
       "locale": "fr",
       "translationOf": "ea:concept:creative-coding",
       "title": "Programmation créative",
-      "summary": "Ce concept propose un cadre précis pour comprendre l'usage du code comme médium artistique, exploratoire ou pédagogique et ses liens avec les projets, technologies et publications associés.",
-      "description": "Définition, usages, limites et relations associés au concept : Programmation créative.",
-      "definition": "Cette notion recouvre l'usage du code comme médium artistique, exploratoire ou pédagogique.",
+      "summary": "Programmation créative désigne l'usage du code comme médium artistique, exploratoire où pédagogique. La fiche en précise l'usage, les limites et les relations avec les projets, technologies et publications d'Electronic Artefacts.",
+      "description": "Programmation créative désigne l'usage du code comme médium artistique, exploratoire où pédagogique. La fiche en précise l'usage, les limites et les relations avec les projets, technologies et publications d'Electronic Artefacts.",
+      "definition": "Programmation créative désigne l'usage du code comme médium artistique, exploratoire où pédagogique.",
       "status": "active",
       "maturity": "research",
       "confidence": "validated",
@@ -7065,10 +7065,10 @@ window.EA_PUBLIC_CATALOG = {
       "type": "concept",
       "locale": "fr",
       "translationOf": "ea:concept:cybernetic-feedback",
-      "title": "Rétroaction cybernetique",
-      "summary": "Ce concept propose un cadre précis pour comprendre les boucles de retroaction qui relient mesure, action, correction et comportement systemique et ses liens avec les projets, technologies et publications associés.",
-      "description": "Définition, usages, limites et relations associés au concept : Rétroaction cybernetique.",
-      "definition": "Cette notion recouvre les boucles de retroaction qui relient mesure, action, correction et comportement systemique.",
+      "title": "Rétroaction cybernétique",
+      "summary": "Rétroaction cybernétique désigne les boucles de rétroaction qui relient mesure, action, correction et comportement systémique. La fiche en précise l'usage, les limites et les relations avec les projets, technologies et publications d'Electronic Artefacts.",
+      "description": "Rétroaction cybernétique désigne les boucles de rétroaction qui relient mesure, action, correction et comportement systémique. La fiche en précise l'usage, les limites et les relations avec les projets, technologies et publications d'Electronic Artefacts.",
+      "definition": "Rétroaction cybernétique désigne les boucles de rétroaction qui relient mesure, action, correction et comportement systémique.",
       "status": "active",
       "maturity": "research",
       "confidence": "validated",
@@ -7104,9 +7104,9 @@ window.EA_PUBLIC_CATALOG = {
       "locale": "fr",
       "translationOf": "ea:concept:digital-preservation",
       "title": "Préservation numérique",
-      "summary": "Ce concept propose un cadre précis pour comprendre la conservation active des objets numériques, de leurs formats, de leurs droits et de leurs contextes d'interpretation et ses liens avec les projets, technologies et publications associés.",
-      "description": "Définition, usages, limites et relations associés au concept : Préservation numérique.",
-      "definition": "Cette notion recouvre la conservation active des objets numériques, de leurs formats, de leurs droits et de leurs contextes d'interpretation.",
+      "summary": "Préservation numérique désigne la conservation active des objets numériques, de leurs formats, de leurs droits et de leurs contextes d'interprétation. La fiche en précise l'usage, les limites et les relations avec les projets, technologies et publications d'Electronic Artefacts.",
+      "description": "Préservation numérique désigne la conservation active des objets numériques, de leurs formats, de leurs droits et de leurs contextes d'interprétation. La fiche en précise l'usage, les limites et les relations avec les projets, technologies et publications d'Electronic Artefacts.",
+      "definition": "Préservation numérique désigne la conservation active des objets numériques, de leurs formats, de leurs droits et de leurs contextes d'interprétation.",
       "status": "active",
       "maturity": "research",
       "confidence": "validated",
@@ -7142,9 +7142,9 @@ window.EA_PUBLIC_CATALOG = {
       "locale": "fr",
       "translationOf": "ea:concept:domain-operating-system",
       "title": "Système d'exploitation de domaine",
-      "summary": "Ce concept propose un cadre précis pour comprendre les plateformes qui réunissent, pour un domaine donné, l’identité, les entités, les permissions, les workflows et les événements dans une couche opérationnelle commune et ses liens avec les projets, technologies et publications associés.",
-      "description": "Définition, usages, limites et relations associés au concept : Système d'exploitation de domaine.",
-      "definition": "Cette notion recouvre les plateformes qui réunissent, pour un domaine donné, l’identité, les entités, les permissions, les workflows et les événements dans une couche opérationnelle commune.",
+      "summary": "Système d'exploitation de domaine désigne le sujet \"Système d'exploitation de domaine\" dans le graphe public d'Electronic Artefacts. La fiche en précise l'usage, les limites et les relations avec les projets, technologies et publications d'Electronic Artefacts.",
+      "description": "Système d'exploitation de domaine désigne le sujet \"Système d'exploitation de domaine\" dans le graphe public d'Electronic Artefacts. La fiche en précise l'usage, les limites et les relations avec les projets, technologies et publications d'Electronic Artefacts.",
+      "definition": "Système d'exploitation de domaine désigne le sujet \"Système d'exploitation de domaine\" dans le graphe public d'Electronic Artefacts.",
       "status": "active",
       "maturity": "research",
       "confidence": "observed",
@@ -7179,10 +7179,10 @@ window.EA_PUBLIC_CATALOG = {
       "type": "concept",
       "locale": "fr",
       "translationOf": "ea:concept:entity-identity",
-      "title": "Identité d’entité",
-      "summary": "Ce concept propose un cadre précis pour comprendre l’attribution d’un identifiant stable, d’un type, de métadonnées et d’un cycle de vie à chaque objet d’un système et ses liens avec les projets, technologies et publications associés.",
-      "description": "Définition, usages, limites et relations associés au concept : Identité d’entité.",
-      "definition": "Cette notion recouvre l’attribution d’un identifiant stable, d’un type, de métadonnées et d’un cycle de vie à chaque objet d’un système.",
+      "title": "Identité d'entité",
+      "summary": "Identité d'entité désigne le sujet \"Identité d'entité\" dans le graphe public d'Electronic Artefacts. La fiche en précise l'usage, les limites et les relations avec les projets, technologies et publications d'Electronic Artefacts.",
+      "description": "Identité d'entité désigne le sujet \"Identité d'entité\" dans le graphe public d'Electronic Artefacts. La fiche en précise l'usage, les limites et les relations avec les projets, technologies et publications d'Electronic Artefacts.",
+      "definition": "Identité d'entité désigne le sujet \"Identité d'entité\" dans le graphe public d'Electronic Artefacts.",
       "status": "active",
       "maturity": "research",
       "confidence": "canonical",
@@ -7217,9 +7217,9 @@ window.EA_PUBLIC_CATALOG = {
       "locale": "fr",
       "translationOf": "ea:concept:event-driven-architecture",
       "title": "Architecture événementielle",
-      "summary": "Ce concept propose un cadre précis pour comprendre les architectures ou les changements d'etat sont publies sous forme d'evenements et consommes par des composants decouples et ses liens avec les projets, technologies et publications associés.",
-      "description": "Définition, usages, limites et relations associés au concept : Architecture événementielle.",
-      "definition": "Cette notion recouvre les architectures ou les changements d'etat sont publies sous forme d'evenements et consommes par des composants decouples.",
+      "summary": "Architecture événementielle désigne les architectures où les changements d'état sont publiés sous forme d'événements et consommés par des composants découplés. La fiche en précise l'usage, les limites et les relations avec les projets, technologies et publications d'Electronic Artefacts.",
+      "description": "Architecture événementielle désigne les architectures où les changements d'état sont publiés sous forme d'événements et consommés par des composants découplés. La fiche en précise l'usage, les limites et les relations avec les projets, technologies et publications d'Electronic Artefacts.",
+      "definition": "Architecture événementielle désigne les architectures où les changements d'état sont publiés sous forme d'événements et consommés par des composants découplés.",
       "status": "active",
       "maturity": "production",
       "confidence": "canonical",
@@ -7255,9 +7255,9 @@ window.EA_PUBLIC_CATALOG = {
       "locale": "fr",
       "translationOf": "ea:concept:generative-ai",
       "title": "IA générative",
-      "summary": "Ce concept propose un cadre précis pour comprendre les systèmes d'IA capables de produire ou transformer du texte, des images, du son, de la video, du code ou des données structurees et ses liens avec les projets, technologies et publications associés.",
-      "description": "Définition, usages, limites et relations associés au concept : IA générative.",
-      "definition": "Cette notion recouvre les systèmes d'IA capables de produire ou transformer du texte, des images, du son, de la video, du code ou des données structurees.",
+      "summary": "IA générative désigne les systèmes d'IA capables de produire où transformer du texte, des images, du son, de la vidéo, du code où des données structurées. La fiche en précise l'usage, les limites et les relations avec les projets, technologies et publications d'Electronic Artefacts.",
+      "description": "IA générative désigne les systèmes d'IA capables de produire où transformer du texte, des images, du son, de la vidéo, du code où des données structurées. La fiche en précise l'usage, les limites et les relations avec les projets, technologies et publications d'Electronic Artefacts.",
+      "definition": "IA générative désigne les systèmes d'IA capables de produire où transformer du texte, des images, du son, de la vidéo, du code où des données structurées.",
       "status": "active",
       "maturity": "research",
       "confidence": "validated",
@@ -7292,9 +7292,9 @@ window.EA_PUBLIC_CATALOG = {
       "locale": "fr",
       "translationOf": "ea:concept:generative-system",
       "title": "Système génératif",
-      "summary": "Ce concept propose un cadre précis pour comprendre les systèmes qui produisent des formes à partir de regles, de contraintes et de boucles de sélection et ses liens avec les projets, technologies et publications associés.",
-      "description": "Définition, usages, limites et relations associés au concept : Système génératif.",
-      "definition": "Cette notion recouvre les systèmes qui produisent des formes à partir de regles, de contraintes et de boucles de sélection.",
+      "summary": "Système génératif désigne les systèmes qui produisent des formes à partir de règles, de contraintes et de boucles de sélection. La fiche en précise l'usage, les limites et les relations avec les projets, technologies et publications d'Electronic Artefacts.",
+      "description": "Système génératif désigne les systèmes qui produisent des formes à partir de règles, de contraintes et de boucles de sélection. La fiche en précise l'usage, les limites et les relations avec les projets, technologies et publications d'Electronic Artefacts.",
+      "definition": "Système génératif désigne les systèmes qui produisent des formes à partir de règles, de contraintes et de boucles de sélection.",
       "status": "active",
       "maturity": "research",
       "confidence": "validated",
@@ -7330,10 +7330,10 @@ window.EA_PUBLIC_CATALOG = {
       "type": "concept",
       "locale": "fr",
       "translationOf": "ea:concept:graph-modeling",
-      "title": "Modelisation de graphe",
-      "summary": "Ce concept propose un cadre précis pour comprendre la modélisation d'entités et de relations sous forme de graphe exploitable et ses liens avec les projets, technologies et publications associés.",
-      "description": "Définition, usages, limites et relations associés au concept : Modelisation de graphe.",
-      "definition": "Cette notion recouvre la modélisation d'entités et de relations sous forme de graphe exploitable.",
+      "title": "Modélisation de graphe",
+      "summary": "Modélisation de graphe désigne la modélisation d'entités et de relations sous forme de graphe exploitable. La fiche en précise l'usage, les limites et les relations avec les projets, technologies et publications d'Electronic Artefacts.",
+      "description": "Modélisation de graphe désigne la modélisation d'entités et de relations sous forme de graphe exploitable. La fiche en précise l'usage, les limites et les relations avec les projets, technologies et publications d'Electronic Artefacts.",
+      "definition": "Modélisation de graphe désigne la modélisation d'entités et de relations sous forme de graphe exploitable.",
       "status": "active",
       "maturity": "research",
       "confidence": "canonical",
@@ -7369,9 +7369,9 @@ window.EA_PUBLIC_CATALOG = {
       "locale": "fr",
       "translationOf": "ea:concept:graph-runtime",
       "title": "Runtime de graphe",
-      "summary": "Ce concept propose un cadre précis pour comprendre les environnements d'execution ou les entités, relations, permissions et événements du graphe participent directement au calcul et ses liens avec les projets, technologies et publications associés.",
-      "description": "Définition, usages, limites et relations associés au concept : Runtime de graphe.",
-      "definition": "Cette notion recouvre les environnements d'execution ou les entités, relations, permissions et événements du graphe participent directement au calcul.",
+      "summary": "Runtime de graphe désigne les environnements d'exécution où les entités, relations, permissions et événements du graphe participent directement au calcul. La fiche en précise l'usage, les limites et les relations avec les projets, technologies et publications d'Electronic Artefacts.",
+      "description": "Runtime de graphe désigne les environnements d'exécution où les entités, relations, permissions et événements du graphe participent directement au calcul. La fiche en précise l'usage, les limites et les relations avec les projets, technologies et publications d'Electronic Artefacts.",
+      "definition": "Runtime de graphe désigne les environnements d'exécution où les entités, relations, permissions et événements du graphe participent directement au calcul.",
       "status": "active",
       "maturity": "research",
       "confidence": "canonical",
@@ -7405,9 +7405,9 @@ window.EA_PUBLIC_CATALOG = {
       "locale": "fr",
       "translationOf": "ea:concept:human-computer-interaction",
       "title": "Interaction humain-machine",
-      "summary": "Ce concept propose un cadre précis pour comprendre la conception des interactions entre personnes, interfaces, outils et environnements informatiques et ses liens avec les projets, technologies et publications associés.",
-      "description": "Définition, usages, limites et relations associés au concept : Interaction humain-machine.",
-      "definition": "Cette notion recouvre la conception des interactions entre personnes, interfaces, outils et environnements informatiques.",
+      "summary": "Interaction humain-machine désigne la conception des interactions entre personnes, interfaces, outils et environnements informatiques. La fiche en précise l'usage, les limites et les relations avec les projets, technologies et publications d'Electronic Artefacts.",
+      "description": "Interaction humain-machine désigne la conception des interactions entre personnes, interfaces, outils et environnements informatiques. La fiche en précise l'usage, les limites et les relations avec les projets, technologies et publications d'Electronic Artefacts.",
+      "definition": "Interaction humain-machine désigne la conception des interactions entre personnes, interfaces, outils et environnements informatiques.",
       "status": "active",
       "maturity": "research",
       "confidence": "canonical",
@@ -7442,9 +7442,9 @@ window.EA_PUBLIC_CATALOG = {
       "locale": "fr",
       "translationOf": "ea:concept:hypertext",
       "title": "Hypertexte",
-      "summary": "Ce concept propose un cadre précis pour comprendre les structures de lecture et d'ecriture fondees sur des liens, des parcours et des références croisables et ses liens avec les projets, technologies et publications associés.",
-      "description": "Définition, usages, limites et relations associés au concept : Hypertexte.",
-      "definition": "Cette notion recouvre les structures de lecture et d'ecriture fondees sur des liens, des parcours et des références croisables.",
+      "summary": "Hypertexte désigne les structures de lecture et d'ecriture fondees sur des liens, des parcours et des références croisables. La fiche en précise l'usage, les limites et les relations avec les projets, technologies et publications d'Electronic Artefacts.",
+      "description": "Hypertexte désigne les structures de lecture et d'ecriture fondees sur des liens, des parcours et des références croisables. La fiche en précise l'usage, les limites et les relations avec les projets, technologies et publications d'Electronic Artefacts.",
+      "definition": "Hypertexte désigne les structures de lecture et d'ecriture fondees sur des liens, des parcours et des références croisables.",
       "status": "active",
       "maturity": "research",
       "confidence": "canonical",
@@ -7479,9 +7479,9 @@ window.EA_PUBLIC_CATALOG = {
       "locale": "fr",
       "translationOf": "ea:concept:internet-culture",
       "title": "Culture Internet",
-      "summary": "Ce concept propose un cadre précis pour comprendre les formes culturelles, communautaires et techniques qui emergent des reseaux numériques et ses liens avec les projets, technologies et publications associés.",
-      "description": "Définition, usages, limites et relations associés au concept : Culture Internet.",
-      "definition": "Cette notion recouvre les formes culturelles, communautaires et techniques qui emergent des reseaux numériques.",
+      "summary": "Culture Internet désigne les formes culturelles, communautaires et techniques qui émergent des réseaux numériques. La fiche en précise l'usage, les limites et les relations avec les projets, technologies et publications d'Electronic Artefacts.",
+      "description": "Culture Internet désigne les formes culturelles, communautaires et techniques qui émergent des réseaux numériques. La fiche en précise l'usage, les limites et les relations avec les projets, technologies et publications d'Electronic Artefacts.",
+      "definition": "Culture Internet désigne les formes culturelles, communautaires et techniques qui émergent des réseaux numériques.",
       "status": "active",
       "maturity": "research",
       "confidence": "validated",
@@ -7516,9 +7516,9 @@ window.EA_PUBLIC_CATALOG = {
       "locale": "fr",
       "translationOf": "ea:concept:knowledge-graph",
       "title": "Graphe de connaissances",
-      "summary": "Ce concept propose un cadre précis pour comprendre les graphes de connaissances qui structurent des entités, des relations, des sources et des preuves et ses liens avec les projets, technologies et publications associés.",
-      "description": "Définition, usages, limites et relations associés au concept : Graphe de connaissances.",
-      "definition": "Cette notion recouvre les graphes de connaissances qui structurent des entités, des relations, des sources et des preuves.",
+      "summary": "Graphe de connaissances désigne les graphes de connaissances qui structurent des entités, des relations, des sources et des preuves. La fiche en précise l'usage, les limites et les relations avec les projets, technologies et publications d'Electronic Artefacts.",
+      "description": "Graphe de connaissances désigne les graphes de connaissances qui structurent des entités, des relations, des sources et des preuves. La fiche en précise l'usage, les limites et les relations avec les projets, technologies et publications d'Electronic Artefacts.",
+      "definition": "Graphe de connaissances désigne les graphes de connaissances qui structurent des entités, des relations, des sources et des preuves.",
       "status": "active",
       "maturity": "research",
       "confidence": "canonical",
@@ -7554,9 +7554,9 @@ window.EA_PUBLIC_CATALOG = {
       "locale": "fr",
       "translationOf": "ea:concept:large-language-model",
       "title": "Grand modèle de langage",
-      "summary": "Ce concept propose un cadre précis pour comprendre les grands modèles de langage entraines à predire et generer des sequences de tokens à partir de corpus massifs et ses liens avec les projets, technologies et publications associés.",
-      "description": "Définition, usages, limites et relations associés au concept : Grand modèle de langage.",
-      "definition": "Cette notion recouvre les grands modèles de langage entraines à predire et generer des sequences de tokens à partir de corpus massifs.",
+      "summary": "Grand modèle de langage désigne les grands modèles de langage entraînés à prédire et générer des séquences de tokens à partir de corpus massifs. La fiche en précise l'usage, les limites et les relations avec les projets, technologies et publications d'Electronic Artefacts.",
+      "description": "Grand modèle de langage désigne les grands modèles de langage entraînés à prédire et générer des séquences de tokens à partir de corpus massifs. La fiche en précise l'usage, les limites et les relations avec les projets, technologies et publications d'Electronic Artefacts.",
+      "definition": "Grand modèle de langage désigne les grands modèles de langage entraînés à prédire et générer des séquences de tokens à partir de corpus massifs.",
       "status": "active",
       "maturity": "research",
       "confidence": "canonical",
@@ -7592,9 +7592,9 @@ window.EA_PUBLIC_CATALOG = {
       "locale": "fr",
       "translationOf": "ea:concept:linked-data",
       "title": "Données liées",
-      "summary": "Ce concept propose un cadre précis pour comprendre les données publiees avec des identifiants et des relations exploitables par le Web sémantique et ses liens avec les projets, technologies et publications associés.",
-      "description": "Définition, usages, limites et relations associés au concept : Données liées.",
-      "definition": "Cette notion recouvre les données publiees avec des identifiants et des relations exploitables par le Web sémantique.",
+      "summary": "Données liées désigne les données publiees avec des identifiants et des relations exploitables par le Web sémantique. La fiche en précise l'usage, les limites et les relations avec les projets, technologies et publications d'Electronic Artefacts.",
+      "description": "Données liées désigne les données publiees avec des identifiants et des relations exploitables par le Web sémantique. La fiche en précise l'usage, les limites et les relations avec les projets, technologies et publications d'Electronic Artefacts.",
+      "definition": "Données liées désigne les données publiees avec des identifiants et des relations exploitables par le Web sémantique.",
       "status": "active",
       "maturity": "research",
       "confidence": "validated",
@@ -7630,9 +7630,9 @@ window.EA_PUBLIC_CATALOG = {
       "locale": "fr",
       "translationOf": "ea:concept:metadata",
       "title": "Métadonnées",
-      "summary": "Ce concept propose un cadre précis pour comprendre les métadonnées qui rendent des contenus décrits, recherchables, citables et reliables et ses liens avec les projets, technologies et publications associés.",
-      "description": "Définition, usages, limites et relations associés au concept : Métadonnées.",
-      "definition": "Cette notion recouvre les métadonnées qui rendent des contenus décrits, recherchables, citables et reliables.",
+      "summary": "Métadonnées désigne les métadonnées qui rendent des contenus décrits, recherchables, citables et reliables. La fiche en précise l'usage, les limites et les relations avec les projets, technologies et publications d'Electronic Artefacts.",
+      "description": "Métadonnées désigne les métadonnées qui rendent des contenus décrits, recherchables, citables et reliables. La fiche en précise l'usage, les limites et les relations avec les projets, technologies et publications d'Electronic Artefacts.",
+      "definition": "Métadonnées désigne les métadonnées qui rendent des contenus décrits, recherchables, citables et reliables.",
       "status": "active",
       "maturity": "research",
       "confidence": "canonical",
@@ -7667,9 +7667,9 @@ window.EA_PUBLIC_CATALOG = {
       "locale": "fr",
       "translationOf": "ea:concept:microservice-architecture",
       "title": "Architecture de microservices",
-      "summary": "Ce concept propose un cadre précis pour comprendre les architectures de services separes par domaine, contrat et responsabilite opérationnelle et ses liens avec les projets, technologies et publications associés.",
-      "description": "Définition, usages, limites et relations associés au concept : Architecture de microservices.",
-      "definition": "Cette notion recouvre les architectures de services separes par domaine, contrat et responsabilite opérationnelle.",
+      "summary": "Architecture de microservices désigne les architectures de services séparés par domaine, contrat et responsabilité opérationnelle. La fiche en précise l'usage, les limites et les relations avec les projets, technologies et publications d'Electronic Artefacts.",
+      "description": "Architecture de microservices désigne les architectures de services séparés par domaine, contrat et responsabilité opérationnelle. La fiche en précise l'usage, les limites et les relations avec les projets, technologies et publications d'Electronic Artefacts.",
+      "definition": "Architecture de microservices désigne les architectures de services séparés par domaine, contrat et responsabilité opérationnelle.",
       "status": "active",
       "maturity": "production",
       "confidence": "validated",
@@ -7703,9 +7703,9 @@ window.EA_PUBLIC_CATALOG = {
       "locale": "fr",
       "translationOf": "ea:concept:motion-design",
       "title": "Motion design",
-      "summary": "Ce concept propose un cadre précis pour comprendre le mouvement comme langage d'interface, de rythme, d'attention et de transition et ses liens avec les projets, technologies et publications associés.",
-      "description": "Définition, usages, limites et relations associés au concept : Motion design.",
-      "definition": "Cette notion recouvre le mouvement comme langage d'interface, de rythme, d'attention et de transition.",
+      "summary": "Motion design désigne le mouvement comme langage d'interface, de rythme, d'attention et de transition. La fiche en précise l'usage, les limites et les relations avec les projets, technologies et publications d'Electronic Artefacts.",
+      "description": "Motion design désigne le mouvement comme langage d'interface, de rythme, d'attention et de transition. La fiche en précise l'usage, les limites et les relations avec les projets, technologies et publications d'Electronic Artefacts.",
+      "definition": "Motion design désigne le mouvement comme langage d'interface, de rythme, d'attention et de transition.",
       "status": "active",
       "maturity": "research",
       "confidence": "validated",
@@ -7740,9 +7740,9 @@ window.EA_PUBLIC_CATALOG = {
       "locale": "fr",
       "translationOf": "ea:concept:multimodal-ai",
       "title": "IA multimodale",
-      "summary": "Ce concept propose un cadre précis pour comprendre les systèmes d'IA capables de traiter plusieurs modalites comme le texte, l'image, l'audio ou la video et ses liens avec les projets, technologies et publications associés.",
-      "description": "Définition, usages, limites et relations associés au concept : IA multimodale.",
-      "definition": "Cette notion recouvre les systèmes d'IA capables de traiter plusieurs modalites comme le texte, l'image, l'audio ou la video.",
+      "summary": "IA multimodale désigne les systèmes d'IA capables de traiter plusieurs modalités comme le texte, l'image, l'audio où la vidéo. La fiche en précise l'usage, les limites et les relations avec les projets, technologies et publications d'Electronic Artefacts.",
+      "description": "IA multimodale désigne les systèmes d'IA capables de traiter plusieurs modalités comme le texte, l'image, l'audio où la vidéo. La fiche en précise l'usage, les limites et les relations avec les projets, technologies et publications d'Electronic Artefacts.",
+      "definition": "IA multimodale désigne les systèmes d'IA capables de traiter plusieurs modalités comme le texte, l'image, l'audio où la vidéo.",
       "status": "active",
       "maturity": "research",
       "confidence": "validated",
@@ -7778,9 +7778,9 @@ window.EA_PUBLIC_CATALOG = {
       "locale": "fr",
       "translationOf": "ea:concept:ontology",
       "title": "Ontologie",
-      "summary": "Ce concept propose un cadre précis pour comprendre les modèles conceptuels qui définissent classes, proprietes, relations et contraintes d'un domaine et ses liens avec les projets, technologies et publications associés.",
-      "description": "Définition, usages, limites et relations associés au concept : Ontologie.",
-      "definition": "Cette notion recouvre les modèles conceptuels qui définissent classes, proprietes, relations et contraintes d'un domaine.",
+      "summary": "Ontologie désigne les modèles conceptuels qui définissent classes, propriétés, relations et contraintes d'un domaine. La fiche en précise l'usage, les limites et les relations avec les projets, technologies et publications d'Electronic Artefacts.",
+      "description": "Ontologie désigne les modèles conceptuels qui définissent classes, propriétés, relations et contraintes d'un domaine. La fiche en précise l'usage, les limites et les relations avec les projets, technologies et publications d'Electronic Artefacts.",
+      "definition": "Ontologie désigne les modèles conceptuels qui définissent classes, propriétés, relations et contraintes d'un domaine.",
       "status": "active",
       "maturity": "research",
       "confidence": "canonical",
@@ -7816,9 +7816,9 @@ window.EA_PUBLIC_CATALOG = {
       "locale": "fr",
       "translationOf": "ea:concept:open-source",
       "title": "open source",
-      "summary": "Ce concept propose un cadre précis pour comprendre les pratiques de publication, maintenance et cooperation fondees sur du code et des ressources ouverts et ses liens avec les projets, technologies et publications associés.",
-      "description": "Définition, usages, limites et relations associés au concept : open source.",
-      "definition": "Cette notion recouvre les pratiques de publication, maintenance et cooperation fondees sur du code et des ressources ouverts.",
+      "summary": "open source désigne les pratiques de publication, maintenance et cooperation fondees sur du code et des ressources ouverts. La fiche en précise l'usage, les limites et les relations avec les projets, technologies et publications d'Electronic Artefacts.",
+      "description": "open source désigne les pratiques de publication, maintenance et cooperation fondees sur du code et des ressources ouverts. La fiche en précise l'usage, les limites et les relations avec les projets, technologies et publications d'Electronic Artefacts.",
+      "definition": "open source désigne les pratiques de publication, maintenance et cooperation fondees sur du code et des ressources ouverts.",
       "status": "active",
       "maturity": "research",
       "confidence": "canonical",
@@ -7853,9 +7853,9 @@ window.EA_PUBLIC_CATALOG = {
       "locale": "fr",
       "translationOf": "ea:concept:open-weight-model",
       "title": "Modèle à poids ouverts",
-      "summary": "Ce concept propose un cadre précis pour comprendre les modèles dont les poids sont publies pour permettre l'execution, l'audit ou l'adaptation locale et ses liens avec les projets, technologies et publications associés.",
-      "description": "Définition, usages, limites et relations associés au concept : Modèle à poids ouverts.",
-      "definition": "Cette notion recouvre les modèles dont les poids sont publies pour permettre l'execution, l'audit ou l'adaptation locale.",
+      "summary": "Modèle à poids ouverts désigne les modèles dont les poids sont publiés pour permettre l'exécution, l'audit où l'adaptation locale. La fiche en précise l'usage, les limites et les relations avec les projets, technologies et publications d'Electronic Artefacts.",
+      "description": "Modèle à poids ouverts désigne les modèles dont les poids sont publiés pour permettre l'exécution, l'audit où l'adaptation locale. La fiche en précise l'usage, les limites et les relations avec les projets, technologies et publications d'Electronic Artefacts.",
+      "definition": "Modèle à poids ouverts désigne les modèles dont les poids sont publiés pour permettre l'exécution, l'audit où l'adaptation locale.",
       "status": "active",
       "maturity": "research",
       "confidence": "validated",
@@ -7890,9 +7890,9 @@ window.EA_PUBLIC_CATALOG = {
       "locale": "fr",
       "translationOf": "ea:concept:personal-knowledge-system",
       "title": "Système personnel de connaissance",
-      "summary": "Ce concept propose un cadre précis pour comprendre les systèmes personnels d'organisation de notes, sources, idees et connexions et ses liens avec les projets, technologies et publications associés.",
-      "description": "Définition, usages, limites et relations associés au concept : Système personnel de connaissance.",
-      "definition": "Cette notion recouvre les systèmes personnels d'organisation de notes, sources, idees et connexions.",
+      "summary": "Système personnel de connaissance désigne les systèmes personnels d'organisation de notes, sources, idées et connexions. La fiche en précise l'usage, les limites et les relations avec les projets, technologies et publications d'Electronic Artefacts.",
+      "description": "Système personnel de connaissance désigne les systèmes personnels d'organisation de notes, sources, idées et connexions. La fiche en précise l'usage, les limites et les relations avec les projets, technologies et publications d'Electronic Artefacts.",
+      "definition": "Système personnel de connaissance désigne les systèmes personnels d'organisation de notes, sources, idées et connexions.",
       "status": "active",
       "maturity": "research",
       "confidence": "validated",
@@ -7900,7 +7900,7 @@ window.EA_PUBLIC_CATALOG = {
       "publicationClass": "canonical",
       "tags": [
         "gestion personnelle des connaissances",
-        "jardins numériques",
+        "Digital Gardens",
         "Notes",
         "Research"
       ],
@@ -7927,9 +7927,9 @@ window.EA_PUBLIC_CATALOG = {
       "locale": "fr",
       "translationOf": "ea:concept:procedural-graphics",
       "title": "Graphisme procédural",
-      "summary": "Ce concept propose un cadre précis pour comprendre les images et formes visuelles generees par algorithmes, shaders ou regles parametriques et ses liens avec les projets, technologies et publications associés.",
-      "description": "Définition, usages, limites et relations associés au concept : Graphisme procédural.",
-      "definition": "Cette notion recouvre les images et formes visuelles generees par algorithmes, shaders ou regles parametriques.",
+      "summary": "Graphisme procédural désigne les images et formes visuelles générées par algorithmes, shaders où règles paramétriques. La fiche en précise l'usage, les limites et les relations avec les projets, technologies et publications d'Electronic Artefacts.",
+      "description": "Graphisme procédural désigne les images et formes visuelles générées par algorithmes, shaders où règles paramétriques. La fiche en précise l'usage, les limites et les relations avec les projets, technologies et publications d'Electronic Artefacts.",
+      "definition": "Graphisme procédural désigne les images et formes visuelles générées par algorithmes, shaders où règles paramétriques.",
       "status": "active",
       "maturity": "research",
       "confidence": "canonical",
@@ -7964,9 +7964,9 @@ window.EA_PUBLIC_CATALOG = {
       "locale": "fr",
       "translationOf": "ea:concept:provenance",
       "title": "Provenance",
-      "summary": "Ce concept propose un cadre précis pour comprendre les informations qui documentent l'origine, les transformations, les decisions et la chaine de responsabilite d'un objet et ses liens avec les projets, technologies et publications associés.",
-      "description": "Définition, usages, limites et relations associés au concept : Provenance.",
-      "definition": "Cette notion recouvre les informations qui documentent l'origine, les transformations, les decisions et la chaine de responsabilite d'un objet.",
+      "summary": "Provenance désigne les informations qui documentent l'origine, les transformations, les décisions et la chaîne de responsabilité d'un objet. La fiche en précise l'usage, les limites et les relations avec les projets, technologies et publications d'Electronic Artefacts.",
+      "description": "Provenance désigne les informations qui documentent l'origine, les transformations, les décisions et la chaîne de responsabilité d'un objet. La fiche en précise l'usage, les limites et les relations avec les projets, technologies et publications d'Electronic Artefacts.",
+      "definition": "Provenance désigne les informations qui documentent l'origine, les transformations, les décisions et la chaîne de responsabilité d'un objet.",
       "status": "active",
       "maturity": "research",
       "confidence": "validated",
@@ -8001,9 +8001,9 @@ window.EA_PUBLIC_CATALOG = {
       "locale": "fr",
       "translationOf": "ea:concept:retrieval-augmented-generation",
       "title": "Génération augmentée par récupération",
-      "summary": "Ce concept propose un cadre précis pour comprendre les architectures qui recuperent des sources externes avant ou pendant la generation d'une reponse par IA et ses liens avec les projets, technologies et publications associés.",
-      "description": "Définition, usages, limites et relations associés au concept : Génération augmentée par récupération.",
-      "definition": "Cette notion recouvre les architectures qui recuperent des sources externes avant ou pendant la generation d'une reponse par IA.",
+      "summary": "Génération augmentée par récupération désigne les architectures qui récupèrent des sources externes avant où pendant la génération d'une réponse par IA. La fiche en précise l'usage, les limites et les relations avec les projets, technologies et publications d'Electronic Artefacts.",
+      "description": "Génération augmentée par récupération désigne les architectures qui récupèrent des sources externes avant où pendant la génération d'une réponse par IA. La fiche en précise l'usage, les limites et les relations avec les projets, technologies et publications d'Electronic Artefacts.",
+      "definition": "Génération augmentée par récupération désigne les architectures qui récupèrent des sources externes avant où pendant la génération d'une réponse par IA.",
       "status": "active",
       "maturity": "research",
       "confidence": "canonical",
@@ -8039,9 +8039,9 @@ window.EA_PUBLIC_CATALOG = {
       "locale": "fr",
       "translationOf": "ea:concept:signal-archaeology",
       "title": "Archéologie du signal",
-      "summary": "Ce concept propose un cadre précis pour comprendre l'analyse des traces sonores, médiatiques et techniques pour rendre lisibles des mémoires enfouies et ses liens avec les projets, technologies et publications associés.",
-      "description": "Définition, usages, limites et relations associés au concept : Archéologie du signal.",
-      "definition": "Cette notion recouvre l'analyse des traces sonores, médiatiques et techniques pour rendre lisibles des mémoires enfouies.",
+      "summary": "Archéologie du signal désigne l'analyse des traces sonores, médiatiques et techniques pour rendre lisibles des mémoires enfouies. La fiche en précise l'usage, les limites et les relations avec les projets, technologies et publications d'Electronic Artefacts.",
+      "description": "Archéologie du signal désigne l'analyse des traces sonores, médiatiques et techniques pour rendre lisibles des mémoires enfouies. La fiche en précise l'usage, les limites et les relations avec les projets, technologies et publications d'Electronic Artefacts.",
+      "definition": "Archéologie du signal désigne l'analyse des traces sonores, médiatiques et techniques pour rendre lisibles des mémoires enfouies.",
       "status": "active",
       "maturity": "research",
       "confidence": "observed",
@@ -8077,9 +8077,9 @@ window.EA_PUBLIC_CATALOG = {
       "locale": "fr",
       "translationOf": "ea:concept:systems-thinking",
       "title": "Pensée systémique",
-      "summary": "Ce concept propose un cadre précis pour comprendre la lecture des situations par relations, limites, boucles, flux, delais et points de levier et ses liens avec les projets, technologies et publications associés.",
-      "description": "Définition, usages, limites et relations associés au concept : Pensée systémique.",
-      "definition": "Cette notion recouvre la lecture des situations par relations, limites, boucles, flux, delais et points de levier.",
+      "summary": "Pensée systémique désigne la lecture des situations par relations, limites, boucles, flux, delais et points de levier. La fiche en précise l'usage, les limites et les relations avec les projets, technologies et publications d'Electronic Artefacts.",
+      "description": "Pensée systémique désigne la lecture des situations par relations, limites, boucles, flux, delais et points de levier. La fiche en précise l'usage, les limites et les relations avec les projets, technologies et publications d'Electronic Artefacts.",
+      "definition": "Pensée systémique désigne la lecture des situations par relations, limites, boucles, flux, delais et points de levier.",
       "status": "active",
       "maturity": "research",
       "confidence": "canonical",
@@ -8115,9 +8115,9 @@ window.EA_PUBLIC_CATALOG = {
       "locale": "fr",
       "translationOf": "ea:concept:typography",
       "title": "Typographie",
-      "summary": "Ce concept propose un cadre précis pour comprendre la composition du texte par caracteres, espacements, hierarchie, rythme et conditions de lecture et ses liens avec les projets, technologies et publications associés.",
-      "description": "Définition, usages, limites et relations associés au concept : Typographie.",
-      "definition": "Cette notion recouvre la composition du texte par caracteres, espacements, hierarchie, rythme et conditions de lecture.",
+      "summary": "Typographie désigne la composition du texte par caracteres, espacements, hierarchie, rythme et conditions de lecture. La fiche en précise l'usage, les limites et les relations avec les projets, technologies et publications d'Electronic Artefacts.",
+      "description": "Typographie désigne la composition du texte par caracteres, espacements, hierarchie, rythme et conditions de lecture. La fiche en précise l'usage, les limites et les relations avec les projets, technologies et publications d'Electronic Artefacts.",
+      "definition": "Typographie désigne la composition du texte par caracteres, espacements, hierarchie, rythme et conditions de lecture.",
       "status": "active",
       "maturity": "research",
       "confidence": "canonical",
@@ -8152,9 +8152,9 @@ window.EA_PUBLIC_CATALOG = {
       "locale": "fr",
       "translationOf": "ea:concept:web-audio",
       "title": "Audio web",
-      "summary": "Ce concept propose un cadre précis pour comprendre les API audio du navigateur et les systèmes sonores interactifs produits sur le Web et ses liens avec les projets, technologies et publications associés.",
-      "description": "Définition, usages, limites et relations associés au concept : Audio web.",
-      "definition": "Cette notion recouvre les API audio du navigateur et les systèmes sonores interactifs produits sur le Web.",
+      "summary": "Audio web désigne les API audio du navigateur et les systèmes sonores interactifs produits sur le Web. La fiche en précise l'usage, les limites et les relations avec les projets, technologies et publications d'Electronic Artefacts.",
+      "description": "Audio web désigne les API audio du navigateur et les systèmes sonores interactifs produits sur le Web. La fiche en précise l'usage, les limites et les relations avec les projets, technologies et publications d'Electronic Artefacts.",
+      "definition": "Audio web désigne les API audio du navigateur et les systèmes sonores interactifs produits sur le Web.",
       "status": "active",
       "maturity": "research",
       "confidence": "validated",
@@ -8230,8 +8230,8 @@ window.EA_PUBLIC_CATALOG = {
       "translationOf": "ea:organization:electronic-artefacts",
       "title": "Electronic Artefacts",
       "subtitle": "Studio indépendant de technologies créatives",
-      "summary": "Electronic Artefacts est un studio indépendant qui conçoit des produits numériques, des systèmes de connaissance, des plateformes culturelles et des expériences issues de la recherche.",
-      "description": "Un studio reliant stratégie, design, logiciel, recherche et production culturelle au sein de systèmes publics durables.",
+      "summary": "Electronic Artefacts est un studio indépendant de technologies créatives qui mène des missions clients, développe ses propres systèmes et publie des travaux de recherche et de création.",
+      "description": "Stratégie, design, ingénierie et recherche culturelle réunis pour construire des produits numériques et des systèmes de connaissance clairs et durables.",
       "status": "active",
       "maturity": "production",
       "confidence": "canonical",
@@ -8421,8 +8421,8 @@ window.EA_PUBLIC_CATALOG = {
       "translationOf": "ea:publication:ai-agents-vs-ai-workflows",
       "title": "Agents d'IA et workflows d'IA",
       "subtitle": "Article technique",
-      "summary": "Une comparaison pratique entre agents pilotés par des modèles, workflows déterministes et orchestrations hybrides, avec leurs enjeux de permissions, de mémoire, d’évaluation et de supervision humaine.",
-      "description": "Une comparaison pratique entre agents pilotés par des modèles, workflows déterministes et orchestrations hybrides, avec leurs enjeux de permissions, de mémoire, d’évaluation et de supervision humaine.",
+      "summary": "Agents d'IA et workflows d'IA examine le sujet \"Agents d'IA et workflows d'IA\" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.",
+      "description": "Agents d'IA et workflows d'IA examine le sujet \"Agents d'IA et workflows d'IA\" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.",
       "status": "active",
       "maturity": "research",
       "confidence": "published",
@@ -8459,8 +8459,8 @@ window.EA_PUBLIC_CATALOG = {
       "translationOf": "ea:publication:ai-search-structured-content-and-knowledge-graph-seo",
       "title": "Recherche IA, contenu structuré et SEO par graphe de connaissances",
       "subtitle": "Article technique",
-      "summary": "Une analyse de la visibilité dans les moteurs de recherche fondés sur l’IA, à travers le contenu structuré, JSON-LD, l’identité des entités, les graphes de connaissances et l’autorité éditoriale.",
-      "description": "Une analyse de la visibilité dans les moteurs de recherche fondés sur l’IA, à travers le contenu structuré, JSON-LD, l’identité des entités, les graphes de connaissances et l’autorité éditoriale.",
+      "summary": "Recherche IA, contenu structuré et SEO par graphe de connaissances examine le sujet \"Recherche IA, contenu structuré et SEO par graphe de connaissances\" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.",
+      "description": "Recherche IA, contenu structuré et SEO par graphe de connaissances examine le sujet \"Recherche IA, contenu structuré et SEO par graphe de connaissances\" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.",
       "status": "active",
       "maturity": "research",
       "confidence": "published",
@@ -8495,10 +8495,10 @@ window.EA_PUBLIC_CATALOG = {
       "type": "publication",
       "locale": "fr",
       "translationOf": "ea:publication:algorithmic-composition-and-rule-based-music",
-      "title": "Composition algorithmique et musique fondee sur des regles",
+      "title": "Composition algorithmique et musique fondée sur des règles",
       "subtitle": "Article technique",
-      "summary": "Une introduction à la composition algorithmique par les règles, les méthodes stochastiques, la cybernétique, les musiques électroniques, la programmation créative et les systèmes génératifs.",
-      "description": "Une introduction à la composition algorithmique par les règles, les méthodes stochastiques, la cybernétique, les musiques électroniques, la programmation créative et les systèmes génératifs.",
+      "summary": "Composition algorithmique et musique fondée sur des règles examine le sujet \"Composition algorithmique et musique fondée sur des règles\" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.",
+      "description": "Composition algorithmique et musique fondée sur des règles examine le sujet \"Composition algorithmique et musique fondée sur des règles\" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.",
       "status": "active",
       "maturity": "research",
       "confidence": "published",
@@ -8534,8 +8534,8 @@ window.EA_PUBLIC_CATALOG = {
       "translationOf": "ea:publication:c2pa-content-credentials-and-generative-media-provenance",
       "title": "C2PA, Content Credentials et provenance des médias génératifs",
       "subtitle": "Article technique",
-      "summary": "Une présentation pratique de C2PA et des Content Credentials : manifestes signés, déclarations de provenance, limites de confiance et usages dans les archives.",
-      "description": "Une présentation pratique de C2PA et des Content Credentials : manifestes signés, déclarations de provenance, limites de confiance et usages dans les archives.",
+      "summary": "C2PA, Content Credentials et provenance des médias génératifs examine le sujet \"C2PA, Content Credentials et provenance des médias génératifs\" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.",
+      "description": "C2PA, Content Credentials et provenance des médias génératifs examine le sujet \"C2PA, Content Credentials et provenance des médias génératifs\" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.",
       "status": "active",
       "maturity": "research",
       "confidence": "published",
@@ -8572,8 +8572,8 @@ window.EA_PUBLIC_CATALOG = {
       "translationOf": "ea:publication:contextual-execution-and-graph-runtimes",
       "title": "Exécution contextuelle et runtimes de graphe",
       "subtitle": "Article technique",
-      "summary": "Une lecture de l’exécution contextuelle comme principe de runtime, lorsque l’identité, les relations, les permissions et l’état déterminent les opérations possibles.",
-      "description": "Une lecture de l’exécution contextuelle comme principe de runtime, lorsque l’identité, les relations, les permissions et l’état déterminent les opérations possibles.",
+      "summary": "Exécution contextuelle et runtimes de graphe examine le sujet \"Exécution contextuelle et runtimes de graphe\" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.",
+      "description": "Exécution contextuelle et runtimes de graphe examine le sujet \"Exécution contextuelle et runtimes de graphe\" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.",
       "status": "active",
       "maturity": "research",
       "confidence": "published",
@@ -8610,8 +8610,8 @@ window.EA_PUBLIC_CATALOG = {
       "translationOf": "ea:publication:creative-coding-pedagogy-from-logo-to-p5js",
       "title": "Pédagogie de la programmation créative, de Logo à p5.js",
       "subtitle": "Article technique",
-      "summary": "Une approche pédagogique de la programmation créative fondée sur l’exploration, la culture informatique, Processing, p5.js, le retour visuel et les communautés d’apprentissage ouvertes.",
-      "description": "Une approche pédagogique de la programmation créative fondée sur l’exploration, la culture informatique, Processing, p5.js, le retour visuel et les communautés d’apprentissage ouvertes.",
+      "summary": "Pédagogie de la programmation créative, de Logo à p5.js examine le sujet \"Pédagogie de la programmation créative, de Logo à p5.js\" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.",
+      "description": "Pédagogie de la programmation créative, de Logo à p5.js examine le sujet \"Pédagogie de la programmation créative, de Logo à p5.js\" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.",
       "status": "active",
       "maturity": "research",
       "confidence": "published",
@@ -8647,8 +8647,8 @@ window.EA_PUBLIC_CATALOG = {
       "translationOf": "ea:publication:digital-preservation-and-living-archives",
       "title": "Préservation numérique et archives vivantes",
       "subtitle": "Article technique",
-      "summary": "Une approche de la préservation numérique comme pratique culturelle active, qui maintient dans le temps les objets, métadonnées, provenances et contextes d’interprétation.",
-      "description": "Une approche de la préservation numérique comme pratique culturelle active, qui maintient dans le temps les objets, métadonnées, provenances et contextes d’interprétation.",
+      "summary": "Préservation numérique et archives vivantes examine le sujet \"Préservation numérique et archives vivantes\" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.",
+      "description": "Préservation numérique et archives vivantes examine le sujet \"Préservation numérique et archives vivantes\" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.",
       "status": "active",
       "maturity": "research",
       "confidence": "published",
@@ -8683,10 +8683,10 @@ window.EA_PUBLIC_CATALOG = {
       "type": "publication",
       "locale": "fr",
       "translationOf": "ea:publication:event-driven-architecture-and-event-streams",
-      "title": "Architecture événementielle et flux d'evenements",
+      "title": "Architecture événementielle et flux d'événements",
       "subtitle": "Article technique",
-      "summary": "Une présentation des événements, commandes, files, journaux, courtiers, schémas, garanties de livraison, projections, mécanismes de rejeu et outils d’observabilité.",
-      "description": "Une présentation des événements, commandes, files, journaux, courtiers, schémas, garanties de livraison, projections, mécanismes de rejeu et outils d’observabilité.",
+      "summary": "Architecture événementielle et flux d'événements examine le sujet \"Architecture événementielle et flux d'événements\" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.",
+      "description": "Architecture événementielle et flux d'événements examine le sujet \"Architecture événementielle et flux d'événements\" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.",
       "status": "active",
       "maturity": "research",
       "confidence": "published",
@@ -8723,8 +8723,8 @@ window.EA_PUBLIC_CATALOG = {
       "translationOf": "ea:publication:foundational-lineage-001",
       "title": "Foundational Lineage #001",
       "subtitle": "Recherche Note",
-      "summary": "Une note sur les premiers travaux d’architecture, de systèmes de communication et de documentation qui ont conduit à Electronic Artefacts, Runtime Theory et VASTE.",
-      "description": "Une note sur les premiers travaux d’architecture, de systèmes de communication et de documentation qui ont conduit à Electronic Artefacts, Runtime Theory et VASTE.",
+      "summary": "Foundational Lineage #001 examine le sujet \"Foundational Lineage #001\" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.",
+      "description": "Foundational Lineage #001 examine le sujet \"Foundational Lineage #001\" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.",
       "status": "research",
       "maturity": "research",
       "confidence": "published",
@@ -8755,8 +8755,8 @@ window.EA_PUBLIC_CATALOG = {
       "translationOf": "ea:publication:generative-ai-latent-space-and-creative-workflows",
       "title": "IA générative, espace latent et workflows créatifs",
       "subtitle": "Article technique",
-      "summary": "Une lecture de l’IA générative dans les pratiques créatives, à travers les espaces latents, les prompts, la provenance, les risques, l’évaluation et la question de l’auteur.",
-      "description": "Une lecture de l’IA générative dans les pratiques créatives, à travers les espaces latents, les prompts, la provenance, les risques, l’évaluation et la question de l’auteur.",
+      "summary": "IA générative, espace latent et workflows créatifs examine le sujet \"IA générative, espace latent et workflows créatifs\" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.",
+      "description": "IA générative, espace latent et workflows créatifs examine le sujet \"IA générative, espace latent et workflows créatifs\" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.",
       "status": "active",
       "maturity": "research",
       "confidence": "published",
@@ -8790,10 +8790,10 @@ window.EA_PUBLIC_CATALOG = {
       "type": "publication",
       "locale": "fr",
       "translationOf": "ea:publication:generative-systems-cybernetics-and-creative-coding",
-      "title": "Systèmes génératifs, cybernetique et programmation créative",
+      "title": "Systèmes génératifs, cybernétique et programmation créative",
       "subtitle": "Article technique",
-      "summary": "Un parcours des systèmes génératifs, de la rétroaction cybernétique et de l’art algorithmique à la programmation créative, au son et aux pratiques contemporaines assistées par l’IA.",
-      "description": "Un parcours des systèmes génératifs, de la rétroaction cybernétique et de l’art algorithmique à la programmation créative, au son et aux pratiques contemporaines assistées par l’IA.",
+      "summary": "Systèmes génératifs, cybernétique et programmation créative examine le sujet \"Systèmes génératifs, cybernétique et programmation créative\" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.",
+      "description": "Systèmes génératifs, cybernétique et programmation créative examine le sujet \"Systèmes génératifs, cybernétique et programmation créative\" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.",
       "status": "active",
       "maturity": "research",
       "confidence": "published",
@@ -8831,8 +8831,8 @@ window.EA_PUBLIC_CATALOG = {
       "translationOf": "ea:publication:how-large-language-models-actually-work",
       "title": "Comment fonctionnent vraiment les grands modèles de langage",
       "subtitle": "Article technique",
-      "summary": "Une explication concrète de la manière dont les grands modèles de langage transforment des tokens en prédictions grâce aux embeddings, aux couches transformer, à l’attention, à l’entraînement et à l’inférence probabiliste.",
-      "description": "Une explication concrète de la manière dont les grands modèles de langage transforment des tokens en prédictions grâce aux embeddings, aux couches transformer, à l’attention, à l’entraînement et à l’inférence probabiliste.",
+      "summary": "Comment fonctionnent vraiment les grands modèles de langage examine le sujet \"Comment fonctionnent vraiment les grands modèles de langage\" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.",
+      "description": "Comment fonctionnent vraiment les grands modèles de langage examine le sujet \"Comment fonctionnent vraiment les grands modèles de langage\" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.",
       "status": "active",
       "maturity": "research",
       "confidence": "published",
@@ -8869,8 +8869,8 @@ window.EA_PUBLIC_CATALOG = {
       "translationOf": "ea:publication:human-computer-interaction-for-creative-tools",
       "title": "Interaction humain-machine pour les outils créatifs",
       "subtitle": "Article technique",
-      "summary": "Une introduction à l’interaction humain-machine appliquée aux outils créatifs, centrée sur le retour d’information, l’autonomie, le flux, la reprise sur erreur et l’accessibilité.",
-      "description": "Une introduction à l’interaction humain-machine appliquée aux outils créatifs, centrée sur le retour d’information, l’autonomie, le flux, la reprise sur erreur et l’accessibilité.",
+      "summary": "Interaction humain-machine pour les outils créatifs examine le sujet \"Interaction humain-machine pour les outils créatifs\" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.",
+      "description": "Interaction humain-machine pour les outils créatifs examine le sujet \"Interaction humain-machine pour les outils créatifs\" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.",
       "status": "active",
       "maturity": "research",
       "confidence": "published",
@@ -8906,8 +8906,8 @@ window.EA_PUBLIC_CATALOG = {
       "translationOf": "ea:publication:hypertext-and-augmented-knowledge-systems",
       "title": "Hypertexte et systèmes de connaissance augmentée",
       "subtitle": "Article technique",
-      "summary": "Une histoire de l’hypertexte comme architecture durable de la connaissance, de Vannevar Bush et Douglas Engelbart aux liens web, graphes de connaissances et systèmes d’intelligence augmentée.",
-      "description": "Une histoire de l’hypertexte comme architecture durable de la connaissance, de Vannevar Bush et Douglas Engelbart aux liens web, graphes de connaissances et systèmes d’intelligence augmentée.",
+      "summary": "Hypertexte et systèmes de connaissance augmentée examine le sujet \"Hypertexte et systèmes de connaissance augmentée\" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.",
+      "description": "Hypertexte et systèmes de connaissance augmentée examine le sujet \"Hypertexte et systèmes de connaissance augmentée\" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.",
       "status": "active",
       "maturity": "research",
       "confidence": "published",
@@ -8942,10 +8942,10 @@ window.EA_PUBLIC_CATALOG = {
       "type": "publication",
       "locale": "fr",
       "translationOf": "ea:publication:iiif-and-compound-cultural-objects",
-      "title": "IIIF et objets culturels composes",
+      "title": "IIIF et objets culturels composés",
       "subtitle": "Article technique",
-      "summary": "Une présentation pratique de l’API IIIF Presentation, des objets composés, manifestes, canevas, annotations et interfaces d’archives culturelles.",
-      "description": "Une présentation pratique de l’API IIIF Presentation, des objets composés, manifestes, canevas, annotations et interfaces d’archives culturelles.",
+      "summary": "IIIF et objets culturels composés examine le sujet \"IIIF et objets culturels composés\" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.",
+      "description": "IIIF et objets culturels composés examine le sujet \"IIIF et objets culturels composés\" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.",
       "status": "active",
       "maturity": "research",
       "confidence": "published",
@@ -8982,8 +8982,8 @@ window.EA_PUBLIC_CATALOG = {
       "translationOf": "ea:publication:knowledge-graphs-for-cultural-infrastructure",
       "title": "Graphes de connaissances pour les infrastructures culturelles",
       "subtitle": "Article technique",
-      "summary": "Une analyse de l’apport des graphes de connaissances aux infrastructures culturelles : identités stables pour les personnes, œuvres, sources, concepts, projets et archives, assorties de relations explicites.",
-      "description": "Une analyse de l’apport des graphes de connaissances aux infrastructures culturelles : identités stables pour les personnes, œuvres, sources, concepts, projets et archives, assorties de relations explicites.",
+      "summary": "Graphes de connaissances pour les infrastructures culturelles examine le sujet \"Graphes de connaissances pour les infrastructures culturelles\" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.",
+      "description": "Graphes de connaissances pour les infrastructures culturelles examine le sujet \"Graphes de connaissances pour les infrastructures culturelles\" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.",
       "status": "active",
       "maturity": "research",
       "confidence": "published",
@@ -9020,8 +9020,8 @@ window.EA_PUBLIC_CATALOG = {
       "translationOf": "ea:publication:linked-data-and-public-knowledge-pages",
       "title": "Données liées et pages publiques de connaissance",
       "subtitle": "Article technique",
-      "summary": "Une introduction aux pages publiques de connaissance fondées sur des URL stables, JSON-LD, des identifiants compatibles avec RDF et des liens internes utiles aux lecteurs comme aux machines.",
-      "description": "Une introduction aux pages publiques de connaissance fondées sur des URL stables, JSON-LD, des identifiants compatibles avec RDF et des liens internes utiles aux lecteurs comme aux machines.",
+      "summary": "Données liées et pages publiques de connaissance examine le sujet \"Données liées et pages publiques de connaissance\" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.",
+      "description": "Données liées et pages publiques de connaissance examine le sujet \"Données liées et pages publiques de connaissance\" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.",
       "status": "active",
       "maturity": "research",
       "confidence": "published",
@@ -9057,8 +9057,8 @@ window.EA_PUBLIC_CATALOG = {
       "translationOf": "ea:publication:local-and-open-source-ai-systems",
       "title": "Systèmes d’IA locaux et open source",
       "subtitle": "Article technique",
-      "summary": "Un guide de l’inférence locale, des modèles à poids ouverts, de l’IA open source, de la quantification, du matériel, de la confidentialité, des licences et de l’autonomie opérationnelle.",
-      "description": "Un guide de l’inférence locale, des modèles à poids ouverts, de l’IA open source, de la quantification, du matériel, de la confidentialité, des licences et de l’autonomie opérationnelle.",
+      "summary": "Systèmes d’IA locaux et open source examine le sujet \"Systèmes d’IA locaux et open source\" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.",
+      "description": "Systèmes d’IA locaux et open source examine le sujet \"Systèmes d’IA locaux et open source\" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.",
       "status": "active",
       "maturity": "research",
       "confidence": "published",
@@ -9095,8 +9095,8 @@ window.EA_PUBLIC_CATALOG = {
       "translationOf": "ea:publication:metadata-cataloguing-and-cultural-memory",
       "title": "Métadonnées, catalogage et mémoire culturelle",
       "subtitle": "Article technique",
-      "summary": "Une lecture des métadonnées comme couche de mémoire culturelle, reliant catalogage, Dublin Core, PREMIS, METS, provenance, archives et graphes de connaissances.",
-      "description": "Une lecture des métadonnées comme couche de mémoire culturelle, reliant catalogage, Dublin Core, PREMIS, METS, provenance, archives et graphes de connaissances.",
+      "summary": "Métadonnées, catalogage et mémoire culturelle examine le sujet \"Métadonnées, catalogage et mémoire culturelle\" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.",
+      "description": "Métadonnées, catalogage et mémoire culturelle examine le sujet \"Métadonnées, catalogage et mémoire culturelle\" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.",
       "status": "active",
       "maturity": "research",
       "confidence": "published",
@@ -9130,10 +9130,10 @@ window.EA_PUBLIC_CATALOG = {
       "type": "publication",
       "locale": "fr",
       "translationOf": "ea:publication:microservices-modular-monoliths-and-system-boundaries",
-      "title": "Microservices, monolithes modulaires et frontieres de système",
+      "title": "Microservices, monolithes modulaires et frontières de système",
       "subtitle": "Article technique",
-      "summary": "Une comparaison pragmatique des microservices et des monolithes modulaires à partir des domaines, de la propriété des données, du déploiement, des événements, de l’observabilité et des équipes.",
-      "description": "Une comparaison pragmatique des microservices et des monolithes modulaires à partir des domaines, de la propriété des données, du déploiement, des événements, de l’observabilité et des équipes.",
+      "summary": "Microservices, monolithes modulaires et frontières de système examine le sujet \"Microservices, monolithes modulaires et frontières de système\" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.",
+      "description": "Microservices, monolithes modulaires et frontières de système examine le sujet \"Microservices, monolithes modulaires et frontières de système\" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.",
       "status": "active",
       "maturity": "research",
       "confidence": "published",
@@ -9170,8 +9170,8 @@ window.EA_PUBLIC_CATALOG = {
       "translationOf": "ea:publication:model-context-protocol-and-tool-using-ai-systems",
       "title": "Model Context Protocol et systèmes d'IA utilisant des outils",
       "subtitle": "Article technique",
-      "summary": "Une présentation de MCP comme protocole d’intégration pour les ressources, prompts, outils, consentements, frontières d’hôte et workflows d’IA contextualisés par un graphe.",
-      "description": "Une présentation de MCP comme protocole d’intégration pour les ressources, prompts, outils, consentements, frontières d’hôte et workflows d’IA contextualisés par un graphe.",
+      "summary": "Model Context Protocol et systèmes d'IA utilisant des outils examine le sujet \"Model Context Protocol et systèmes d'IA utilisant des outils\" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.",
+      "description": "Model Context Protocol et systèmes d'IA utilisant des outils examine le sujet \"Model Context Protocol et systèmes d'IA utilisant des outils\" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.",
       "status": "active",
       "maturity": "research",
       "confidence": "published",
@@ -9207,8 +9207,8 @@ window.EA_PUBLIC_CATALOG = {
       "translationOf": "ea:publication:motion-design-time-and-interface-semantics",
       "title": "Motion design, temps et sémantique d'interface",
       "subtitle": "Article technique",
-      "summary": "Une lecture du motion design comme couche sémantique des interfaces, à la croisée du temps, des transitions, de l’attention, de l’accessibilité et des Web Animations.",
-      "description": "Une lecture du motion design comme couche sémantique des interfaces, à la croisée du temps, des transitions, de l’attention, de l’accessibilité et des Web Animations.",
+      "summary": "Motion design, temps et sémantique d'interface examine le sujet \"Motion design, temps et sémantique d'interface\" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.",
+      "description": "Motion design, temps et sémantique d'interface examine le sujet \"Motion design, temps et sémantique d'interface\" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.",
       "status": "active",
       "maturity": "research",
       "confidence": "published",
@@ -9242,10 +9242,10 @@ window.EA_PUBLIC_CATALOG = {
       "type": "publication",
       "locale": "fr",
       "translationOf": "ea:publication:multimodal-ai-across-text-image-audio-and-video",
-      "title": "IA multimodale pour le texte, l'image, l'audio et la video",
+      "title": "IA multimodale pour le texte, l'image, l'audio et la vidéo",
       "subtitle": "Article technique",
-      "summary": "Un guide de l’IA multimodale : architecture, représentations partagées, recherche et génération intermodales, médias temporels, provenance et applications créatives.",
-      "description": "Un guide de l’IA multimodale : architecture, représentations partagées, recherche et génération intermodales, médias temporels, provenance et applications créatives.",
+      "summary": "IA multimodale pour le texte, l'image, l'audio et la vidéo examine le sujet \"IA multimodale pour le texte, l'image, l'audio et la vidéo\" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.",
+      "description": "IA multimodale pour le texte, l'image, l'audio et la vidéo examine le sujet \"IA multimodale pour le texte, l'image, l'audio et la vidéo\" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.",
       "status": "active",
       "maturity": "research",
       "confidence": "published",
@@ -9282,8 +9282,8 @@ window.EA_PUBLIC_CATALOG = {
       "translationOf": "ea:publication:observability-for-ai-agents-and-tool-calling-systems",
       "title": "Observabilité des agents d'IA et des systèmes d'appel d'outils",
       "subtitle": "Article technique",
-      "summary": "Une présentation de la télémétrie appliquée aux agents d’IA, appels d’outils, traces, événements, approbations, échecs, évaluations et responsabilités des runtimes de graphe.",
-      "description": "Une présentation de la télémétrie appliquée aux agents d’IA, appels d’outils, traces, événements, approbations, échecs, évaluations et responsabilités des runtimes de graphe.",
+      "summary": "Observabilité des agents d'IA et des systèmes d'appel d'outils examine le sujet \"Observabilité des agents d'IA et des systèmes d'appel d'outils\" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.",
+      "description": "Observabilité des agents d'IA et des systèmes d'appel d'outils examine le sujet \"Observabilité des agents d'IA et des systèmes d'appel d'outils\" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.",
       "status": "active",
       "maturity": "research",
       "confidence": "published",
@@ -9320,8 +9320,8 @@ window.EA_PUBLIC_CATALOG = {
       "translationOf": "ea:publication:ontologies-taxonomies-and-knowledge-modeling",
       "title": "Ontologies, taxonomies et modélisation des connaissances",
       "subtitle": "Article technique",
-      "summary": "Un guide des taxonomies, thésaurus, folksonomies, ontologies, vocabulaires contrôlés, OWL, SKOS et pratiques durables de modélisation sémantique.",
-      "description": "Un guide des taxonomies, thésaurus, folksonomies, ontologies, vocabulaires contrôlés, OWL, SKOS et pratiques durables de modélisation sémantique.",
+      "summary": "Ontologies, taxonomies et modélisation des connaissances examine le sujet \"Ontologies, taxonomies et modélisation des connaissances\" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.",
+      "description": "Ontologies, taxonomies et modélisation des connaissances examine le sujet \"Ontologies, taxonomies et modélisation des connaissances\" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.",
       "status": "active",
       "maturity": "research",
       "confidence": "published",
@@ -9358,8 +9358,8 @@ window.EA_PUBLIC_CATALOG = {
       "translationOf": "ea:publication:open-source-as-cultural-infrastructure",
       "title": "L’open source comme infrastructure culturelle",
       "subtitle": "Article technique",
-      "summary": "Une lecture de l’open source comme infrastructure culturelle, à travers les licences, la maintenance, les outils créatifs, les chaînes de dépendances, les communs et les systèmes publics de connaissance.",
-      "description": "Une lecture de l’open source comme infrastructure culturelle, à travers les licences, la maintenance, les outils créatifs, les chaînes de dépendances, les communs et les systèmes publics de connaissance.",
+      "summary": "L’open source comme infrastructure culturelle examine le sujet \"L’open source comme infrastructure culturelle\" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.",
+      "description": "L’open source comme infrastructure culturelle examine le sujet \"L’open source comme infrastructure culturelle\" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.",
       "status": "active",
       "maturity": "research",
       "confidence": "published",
@@ -9369,7 +9369,7 @@ window.EA_PUBLIC_CATALOG = {
         "open source",
         "programmation créative",
         "infrastructure",
-        "mainteneurs"
+        "Maintainers"
       ],
       "discipline": [
         "open source",
@@ -9395,8 +9395,8 @@ window.EA_PUBLIC_CATALOG = {
       "translationOf": "ea:publication:personal-knowledge-systems-and-digital-gardens",
       "title": "Systèmes personnels de connaissance et jardins numériques",
       "subtitle": "Article technique",
-      "summary": "Une approche des systèmes personnels de connaissance et des jardins numériques comme pratiques durables de notes, de sources, de liens retour, de révision et d’apprentissage public.",
-      "description": "Une approche des systèmes personnels de connaissance et des jardins numériques comme pratiques durables de notes, de sources, de liens retour, de révision et d’apprentissage public.",
+      "summary": "Systèmes personnels de connaissance et jardins numériques examine le sujet \"Systèmes personnels de connaissance et jardins numériques\" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.",
+      "description": "Systèmes personnels de connaissance et jardins numériques examine le sujet \"Systèmes personnels de connaissance et jardins numériques\" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.",
       "status": "active",
       "maturity": "research",
       "confidence": "published",
@@ -9404,7 +9404,7 @@ window.EA_PUBLIC_CATALOG = {
       "publicationClass": "published",
       "tags": [
         "gestion personnelle des connaissances",
-        "jardins numériques",
+        "Digital Gardens",
         "liens entrants",
         "méthodes de recherche"
       ],
@@ -9432,8 +9432,8 @@ window.EA_PUBLIC_CATALOG = {
       "translationOf": "ea:publication:procedural-graphics-shaders-and-visual-systems",
       "title": "Graphisme procédural, shaders et systèmes visuels",
       "subtitle": "Article technique",
-      "summary": "Une introduction au graphisme procédural par les règles, shaders, paramètres, WebGL, systèmes génératifs et grammaires visuelles appliquées à l’art numérique et aux interfaces.",
-      "description": "Une introduction au graphisme procédural par les règles, shaders, paramètres, WebGL, systèmes génératifs et grammaires visuelles appliquées à l’art numérique et aux interfaces.",
+      "summary": "Graphisme procédural, shaders et systèmes visuels examine le sujet \"Graphisme procédural, shaders et systèmes visuels\" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.",
+      "description": "Graphisme procédural, shaders et systèmes visuels examine le sujet \"Graphisme procédural, shaders et systèmes visuels\" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.",
       "status": "active",
       "maturity": "research",
       "confidence": "published",
@@ -9469,8 +9469,8 @@ window.EA_PUBLIC_CATALOG = {
       "translationOf": "ea:publication:prompt-injection-and-trust-boundaries-in-ai-knowledge-systems",
       "title": "Injection de prompt et frontières de confiance dans les systèmes de connaissance IA",
       "subtitle": "Article technique",
-      "summary": "Une analyse de sécurité consacrée à l’injection de prompt, aux contenus récupérés, aux outils, aux serveurs MCP, aux frontières de confiance et aux permissions dans les systèmes de connaissance assistés par l’IA.",
-      "description": "Une analyse de sécurité consacrée à l’injection de prompt, aux contenus récupérés, aux outils, aux serveurs MCP, aux frontières de confiance et aux permissions dans les systèmes de connaissance assistés par l’IA.",
+      "summary": "Injection de prompt et frontières de confiance dans les systèmes de connaissance IA examine le sujet \"Injection de prompt et frontières de confiance dans les systèmes de connaissance IA\" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.",
+      "description": "Injection de prompt et frontières de confiance dans les systèmes de connaissance IA examine le sujet \"Injection de prompt et frontières de confiance dans les systèmes de connaissance IA\" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.",
       "status": "active",
       "maturity": "research",
       "confidence": "published",
@@ -9507,8 +9507,8 @@ window.EA_PUBLIC_CATALOG = {
       "translationOf": "ea:publication:redis-streams-for-orchestration",
       "title": "Redis Streams pour l’orchestration",
       "subtitle": "Article technique",
-      "summary": "Un guide de mise en œuvre de Redis Streams : groupes de consommateurs, accusés de réception, entrées en attente, reprises, idempotence, rétention et limites d’orchestration.",
-      "description": "Un guide de mise en œuvre de Redis Streams : groupes de consommateurs, accusés de réception, entrées en attente, reprises, idempotence, rétention et limites d’orchestration.",
+      "summary": "Redis Streams pour l’orchestration examine le sujet \"Redis Streams pour l’orchestration\" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.",
+      "description": "Redis Streams pour l’orchestration examine le sujet \"Redis Streams pour l’orchestration\" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.",
       "status": "active",
       "maturity": "research",
       "confidence": "published",
@@ -9545,8 +9545,8 @@ window.EA_PUBLIC_CATALOG = {
       "translationOf": "ea:publication:responsible-ai-governance-for-creative-and-cultural-systems",
       "title": "Gouvernance responsable de l'IA pour les systèmes créatifs et culturels",
       "subtitle": "Article technique",
-      "summary": "Une approche opérationnelle de la gouvernance de l’IA pour les studios créatifs, les archives culturelles et les systèmes de connaissance, couvrant risques, contrôle, provenance, droits et évaluation.",
-      "description": "Une approche opérationnelle de la gouvernance de l’IA pour les studios créatifs, les archives culturelles et les systèmes de connaissance, couvrant risques, contrôle, provenance, droits et évaluation.",
+      "summary": "Gouvernance responsable de l'IA pour les systèmes créatifs et culturels examine le sujet \"Gouvernance responsable de l'IA pour les systèmes créatifs et culturels\" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.",
+      "description": "Gouvernance responsable de l'IA pour les systèmes créatifs et culturels examine le sujet \"Gouvernance responsable de l'IA pour les systèmes créatifs et culturels\" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.",
       "status": "active",
       "maturity": "research",
       "confidence": "published",
@@ -9583,8 +9583,8 @@ window.EA_PUBLIC_CATALOG = {
       "translationOf": "ea:publication:retrieval-augmented-generation-and-knowledge-systems",
       "title": "Génération augmentée par récupération et systèmes de connaissance",
       "subtitle": "Article technique",
-      "summary": "Une présentation complète des architectures RAG : ingestion, segmentation, embeddings, recherche hybride, graphes, citations, permissions et évaluation.",
-      "description": "Une présentation complète des architectures RAG : ingestion, segmentation, embeddings, recherche hybride, graphes, citations, permissions et évaluation.",
+      "summary": "Génération augmentée par récupération et systèmes de connaissance examine le sujet \"Génération augmentée par récupération et systèmes de connaissance\" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.",
+      "description": "Génération augmentée par récupération et systèmes de connaissance examine le sujet \"Génération augmentée par récupération et systèmes de connaissance\" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.",
       "status": "active",
       "maturity": "research",
       "confidence": "published",
@@ -9621,8 +9621,8 @@ window.EA_PUBLIC_CATALOG = {
       "translationOf": "ea:publication:runtime-engines-and-domain-operating-systems",
       "title": "Moteurs d'exécution et systèmes d'exploitation de domaine",
       "subtitle": "Article technique",
-      "summary": "Un guide des moteurs d’exécution et systèmes d’exploitation de domaine, couvrant identité, état, permissions, événements, extensions et projections publiques.",
-      "description": "Un guide des moteurs d’exécution et systèmes d’exploitation de domaine, couvrant identité, état, permissions, événements, extensions et projections publiques.",
+      "summary": "Moteurs d'exécution et systèmes d'exploitation de domaine examine le sujet \"Moteurs d'exécution et systèmes d'exploitation de domaine\" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.",
+      "description": "Moteurs d'exécution et systèmes d'exploitation de domaine examine le sujet \"Moteurs d'exécution et systèmes d'exploitation de domaine\" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.",
       "status": "active",
       "maturity": "research",
       "confidence": "published",
@@ -9659,8 +9659,8 @@ window.EA_PUBLIC_CATALOG = {
       "translationOf": "ea:publication:signal-archaeology-audio-memory-and-machine-listening",
       "title": "Archéologie du signal, mémoire audio et écoute machine",
       "subtitle": "Article technique",
-      "summary": "Une présentation de l’archéologie du signal comme lecture des traces sonores et techniques, à travers l’analyse audio, la provenance, la mémoire et l’écoute machine.",
-      "description": "Une présentation de l’archéologie du signal comme lecture des traces sonores et techniques, à travers l’analyse audio, la provenance, la mémoire et l’écoute machine.",
+      "summary": "Archéologie du signal, mémoire audio et écoute machine examine le sujet \"Archéologie du signal, mémoire audio et écoute machine\" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.",
+      "description": "Archéologie du signal, mémoire audio et écoute machine examine le sujet \"Archéologie du signal, mémoire audio et écoute machine\" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.",
       "status": "active",
       "maturity": "research",
       "confidence": "published",
@@ -9698,8 +9698,8 @@ window.EA_PUBLIC_CATALOG = {
       "translationOf": "ea:publication:systems-thinking-for-creative-practice",
       "title": "Pensée systémique pour la pratique créative",
       "subtitle": "Recherche Article",
-      "summary": "Une introduction pratique aux systèmes, frontières, rétroactions, stocks, flux, délais et points de levier appliqués au travail créatif et technique.",
-      "description": "Une introduction pratique aux systèmes, frontières, rétroactions, stocks, flux, délais et points de levier appliqués au travail créatif et technique.",
+      "summary": "Pensée systémique pour la pratique créative examine le sujet \"Pensée systémique pour la pratique créative\" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.",
+      "description": "Pensée systémique pour la pratique créative examine le sujet \"Pensée systémique pour la pratique créative\" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.",
       "status": "active",
       "maturity": "research",
       "confidence": "published",
@@ -9736,8 +9736,8 @@ window.EA_PUBLIC_CATALOG = {
       "translationOf": "ea:publication:typography-reading-systems-and-digital-interfaces",
       "title": "Typographie, systèmes de lecture et interfaces numériques",
       "subtitle": "Article technique",
-      "summary": "Une lecture de la typographie comme infrastructure de la lecture numérique, reliant caractères, mise en page, hiérarchie, accessibilité, CSS Fonts et publication de textes longs.",
-      "description": "Une lecture de la typographie comme infrastructure de la lecture numérique, reliant caractères, mise en page, hiérarchie, accessibilité, CSS Fonts et publication de textes longs.",
+      "summary": "Typographie, systèmes de lecture et interfaces numériques examine le sujet \"Typographie, systèmes de lecture et interfaces numériques\" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.",
+      "description": "Typographie, systèmes de lecture et interfaces numériques examine le sujet \"Typographie, systèmes de lecture et interfaces numériques\" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.",
       "status": "active",
       "maturity": "research",
       "confidence": "published",
@@ -9773,8 +9773,8 @@ window.EA_PUBLIC_CATALOG = {
       "translationOf": "ea:publication:verifiable-credentials-for-cultural-archives-and-creator-identity",
       "title": "Identifiants vérifiables pour les archives culturelles et l’identité des créateurs",
       "subtitle": "Article technique",
-      "summary": "Une introduction aux Verifiable Credentials du W3C appliqués à l’identité des créateurs, aux archives culturelles, à la provenance, aux droits, à la confidentialité et à la confiance lisible par les machines.",
-      "description": "Une introduction aux Verifiable Credentials du W3C appliqués à l’identité des créateurs, aux archives culturelles, à la provenance, aux droits, à la confidentialité et à la confiance lisible par les machines.",
+      "summary": "Identifiants vérifiables pour les archives culturelles et l’identité des créateurs examine le sujet \"Identifiants vérifiables pour les archives culturelles et l’identité des créateurs\" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.",
+      "description": "Identifiants vérifiables pour les archives culturelles et l’identité des créateurs examine le sujet \"Identifiants vérifiables pour les archives culturelles et l’identité des créateurs\" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.",
       "status": "active",
       "maturity": "research",
       "confidence": "published",
@@ -9811,8 +9811,8 @@ window.EA_PUBLIC_CATALOG = {
       "translationOf": "ea:publication:web-audio-and-browser-based-sound-systems",
       "title": "Web Audio et systèmes sonores dans le navigateur",
       "subtitle": "Article technique",
-      "summary": "Une présentation de Web Audio comme architecture sonore native du navigateur pour la synthèse, le traitement, l’analyse, les essais interactifs et les outils audio publics.",
-      "description": "Une présentation de Web Audio comme architecture sonore native du navigateur pour la synthèse, le traitement, l’analyse, les essais interactifs et les outils audio publics.",
+      "summary": "Web Audio et systèmes sonores dans le navigateur examine le sujet \"Web Audio et systèmes sonores dans le navigateur\" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.",
+      "description": "Web Audio et systèmes sonores dans le navigateur examine le sujet \"Web Audio et systèmes sonores dans le navigateur\" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.",
       "status": "active",
       "maturity": "research",
       "confidence": "published",
@@ -9848,8 +9848,8 @@ window.EA_PUBLIC_CATALOG = {
       "translationOf": "ea:publication:webnn-and-local-ai-in-the-browser",
       "title": "WebNN et IA locale dans le navigateur",
       "subtitle": "Article technique",
-      "summary": "Une présentation de WebNN, de l’inférence locale dans le navigateur, de l’accélération matérielle, des limites de confidentialité et des architectures d’apprentissage automatique sur le Web.",
-      "description": "Une présentation de WebNN, de l’inférence locale dans le navigateur, de l’accélération matérielle, des limites de confidentialité et des architectures d’apprentissage automatique sur le Web.",
+      "summary": "WebNN et IA locale dans le navigateur examine le sujet \"WebNN et IA locale dans le navigateur\" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.",
+      "description": "WebNN et IA locale dans le navigateur examine le sujet \"WebNN et IA locale dans le navigateur\" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.",
       "status": "active",
       "maturity": "research",
       "confidence": "published",
@@ -9886,8 +9886,8 @@ window.EA_PUBLIC_CATALOG = {
       "translationOf": "ea:publication:why-graphs-are-more-powerful-than-folders",
       "title": "Pourquoi les graphes sont plus puissants que les dossiers",
       "subtitle": "Article technique",
-      "summary": "Une comparaison des dossiers hiérarchiques et des modèles en graphe pour organiser connaissances, projets, archives, identités, provenances et interfaces générées.",
-      "description": "Une comparaison des dossiers hiérarchiques et des modèles en graphe pour organiser connaissances, projets, archives, identités, provenances et interfaces générées.",
+      "summary": "Pourquoi les graphes sont plus puissants que les dossiers examine le sujet \"Pourquoi les graphes sont plus puissants que les dossiers\" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.",
+      "description": "Pourquoi les graphes sont plus puissants que les dossiers examine le sujet \"Pourquoi les graphes sont plus puissants que les dossiers\" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.",
       "status": "active",
       "maturity": "research",
       "confidence": "published",
@@ -9924,8 +9924,8 @@ window.EA_PUBLIC_CATALOG = {
       "translationOf": "ea:researchField:runtime-theory",
       "title": "Théorie du runtime",
       "subtitle": "Champ de recherche",
-      "summary": "La théorie du runtime étudie les identités, relations, contextes et événements minimaux nécessaires à l’exécution cohérente d’un système.",
-      "description": "Un champ de recherche sur les primitives d’exécution, l’identité, le contexte, les relations et la propagation des événements.",
+      "summary": "Théorie du runtime cadre un champ de recherche suivi par Electronic Artefacts, en reliant questions ouvertes, prototypes, sources et hypothèses de travail.",
+      "description": "Théorie du runtime cadre un champ de recherche suivi par Electronic Artefacts, en reliant questions ouvertes, prototypes, sources et hypothèses de travail.",
       "status": "active",
       "maturity": "research",
       "confidence": "validated",
@@ -9960,8 +9960,8 @@ window.EA_PUBLIC_CATALOG = {
       "locale": "fr",
       "translationOf": "ea:technology:activitypub",
       "title": "ActivityPub",
-      "summary": "ActivityPub est un protocole décentralisé de réseau social, normalisé par le W3C pour fédérer les échanges entre serveurs et entre clients et serveurs.",
-      "description": "ActivityPub est un protocole décentralisé de réseau social, normalisé par le W3C pour fédérer les échanges entre serveurs et entre clients et serveurs.",
+      "summary": "ActivityPub est documenté pour son rôle dans les systèmes d'Electronic Artefacts, ses usages, ses limites et les technologies qui lui sont liées.",
+      "description": "ActivityPub est documenté pour son rôle dans les systèmes d'Electronic Artefacts, ses usages, ses limites et les technologies qui lui sont liées.",
       "status": "active",
       "maturity": "production",
       "confidence": "canonical",
@@ -9994,8 +9994,8 @@ window.EA_PUBLIC_CATALOG = {
       "locale": "fr",
       "translationOf": "ea:technology:c2pa",
       "title": "C2PA",
-      "summary": "C2PA réunit des standards techniques qui associent aux médias une provenance vérifiable et des métadonnées de type Content Credentials.",
-      "description": "C2PA réunit des standards techniques qui associent aux médias une provenance vérifiable et des métadonnées de type Content Credentials.",
+      "summary": "C2PA est documenté pour son rôle dans les systèmes d'Electronic Artefacts, ses usages, ses limites et les technologies qui lui sont liées.",
+      "description": "C2PA est documenté pour son rôle dans les systèmes d'Electronic Artefacts, ses usages, ses limites et les technologies qui lui sont liées.",
       "status": "active",
       "maturity": "development",
       "confidence": "canonical",
@@ -10029,8 +10029,8 @@ window.EA_PUBLIC_CATALOG = {
       "locale": "fr",
       "translationOf": "ea:technology:cloudevents",
       "title": "CloudEvents",
-      "summary": "CloudEvents est une spécification de la CNCF qui décrit les données événementielles dans une enveloppe commune et portable.",
-      "description": "CloudEvents est une spécification de la CNCF qui décrit les données événementielles dans une enveloppe commune et portable.",
+      "summary": "CloudEvents est documenté pour son rôle dans les systèmes d'Electronic Artefacts, ses usages, ses limites et les technologies qui lui sont liées.",
+      "description": "CloudEvents est documenté pour son rôle dans les systèmes d'Electronic Artefacts, ses usages, ses limites et les technologies qui lui sont liées.",
       "status": "active",
       "maturity": "production",
       "confidence": "canonical",
@@ -10063,8 +10063,8 @@ window.EA_PUBLIC_CATALOG = {
       "locale": "fr",
       "translationOf": "ea:technology:css-fonts",
       "title": "CSS Fonts",
-      "summary": "CSS Fonts définit la sélection des polices, les fontes web et le comportement typographique des interfaces et documents numériques.",
-      "description": "CSS Fonts définit la sélection des polices, les fontes web et le comportement typographique des interfaces et documents numériques.",
+      "summary": "CSS Fonts est documenté pour son rôle dans les systèmes d'Electronic Artefacts, ses usages, ses limites et les technologies qui lui sont liées.",
+      "description": "CSS Fonts est documenté pour son rôle dans les systèmes d'Electronic Artefacts, ses usages, ses limites et les technologies qui lui sont liées.",
       "status": "active",
       "maturity": "production",
       "confidence": "validated",
@@ -10097,8 +10097,8 @@ window.EA_PUBLIC_CATALOG = {
       "locale": "fr",
       "translationOf": "ea:technology:iiif",
       "title": "IIIF",
-      "summary": "IIIF est un ensemble d’API destiné à présenter, structurer et annoter les représentations numériques d’objets culturels et archivistiques.",
-      "description": "IIIF est un ensemble d’API destiné à présenter, structurer et annoter les représentations numériques d’objets culturels et archivistiques.",
+      "summary": "IIIF est documenté pour son rôle dans les systèmes d'Electronic Artefacts, ses usages, ses limites et les technologies qui lui sont liées.",
+      "description": "IIIF est documenté pour son rôle dans les systèmes d'Electronic Artefacts, ses usages, ses limites et les technologies qui lui sont liées.",
       "status": "active",
       "maturity": "production",
       "confidence": "canonical",
@@ -10133,8 +10133,8 @@ window.EA_PUBLIC_CATALOG = {
       "translationOf": "ea:technology:json-ld",
       "title": "JSON-LD",
       "subtitle": "JSON pour Données liées",
-      "summary": "JSON-LD est un format du W3C qui sérialise des données liées en JSON et rend les métadonnées sémantiques compatibles avec les pratiques courantes du développement web.",
-      "description": "JSON-LD est un format du W3C qui sérialise des données liées en JSON et rend les métadonnées sémantiques compatibles avec les pratiques courantes du développement web.",
+      "summary": "JSON-LD est documenté pour son rôle dans les systèmes d'Electronic Artefacts, ses usages, ses limites et les technologies qui lui sont liées.",
+      "description": "JSON-LD est documenté pour son rôle dans les systèmes d'Electronic Artefacts, ses usages, ses limites et les technologies qui lui sont liées.",
       "status": "active",
       "maturity": "production",
       "confidence": "published",
@@ -10168,8 +10168,8 @@ window.EA_PUBLIC_CATALOG = {
       "locale": "fr",
       "translationOf": "ea:technology:llama-cpp",
       "title": "llama.cpp",
-      "summary": "llama.cpp est un runtime d’inférence open source en C et C++ qui exécute de grands modèles de langage sur du matériel grand public ou serveur.",
-      "description": "llama.cpp est un runtime d’inférence open source en C et C++ qui exécute de grands modèles de langage sur du matériel grand public ou serveur.",
+      "summary": "llama.cpp est documenté pour son rôle dans les systèmes d'Electronic Artefacts, ses usages, ses limites et les technologies qui lui sont liées.",
+      "description": "llama.cpp est documenté pour son rôle dans les systèmes d'Electronic Artefacts, ses usages, ses limites et les technologies qui lui sont liées.",
       "status": "active",
       "maturity": "production",
       "confidence": "canonical",
@@ -10203,8 +10203,8 @@ window.EA_PUBLIC_CATALOG = {
       "locale": "fr",
       "translationOf": "ea:technology:model-context-protocol",
       "title": "Model Context Protocol",
-      "summary": "Model Context Protocol est un protocole ouvert qui relie les applications fondées sur des modèles de langage à des contextes, prompts et outils exécutables externes.",
-      "description": "Model Context Protocol est un protocole ouvert qui relie les applications fondées sur des modèles de langage à des contextes, prompts et outils exécutables externes.",
+      "summary": "Model Context Protocol est documenté pour son rôle dans les systèmes d'Electronic Artefacts, ses usages, ses limites et les technologies qui lui sont liées.",
+      "description": "Model Context Protocol est documenté pour son rôle dans les systèmes d'Electronic Artefacts, ses usages, ses limites et les technologies qui lui sont liées.",
       "status": "active",
       "maturity": "development",
       "confidence": "canonical",
@@ -10238,8 +10238,8 @@ window.EA_PUBLIC_CATALOG = {
       "locale": "fr",
       "translationOf": "ea:technology:opentelemetry",
       "title": "OpenTelemetry",
-      "summary": "OpenTelemetry est un cadre d’observabilité destiné à produire, collecter et normaliser traces, métriques et journaux.",
-      "description": "OpenTelemetry est un cadre d’observabilité destiné à produire, collecter et normaliser traces, métriques et journaux.",
+      "summary": "OpenTelemetry est documenté pour son rôle dans les systèmes d'Electronic Artefacts, ses usages, ses limites et les technologies qui lui sont liées.",
+      "description": "OpenTelemetry est documenté pour son rôle dans les systèmes d'Electronic Artefacts, ses usages, ses limites et les technologies qui lui sont liées.",
       "status": "active",
       "maturity": "production",
       "confidence": "canonical",
@@ -10273,8 +10273,8 @@ window.EA_PUBLIC_CATALOG = {
       "locale": "fr",
       "translationOf": "ea:technology:owl",
       "title": "OWL",
-      "summary": "OWL est un langage d’ontologie du W3C doté d’une sémantique formelle pour les classes, propriétés, individus et contraintes du Web sémantique.",
-      "description": "OWL est un langage d’ontologie du W3C doté d’une sémantique formelle pour les classes, propriétés, individus et contraintes du Web sémantique.",
+      "summary": "OWL est documenté pour son rôle dans les systèmes d'Electronic Artefacts, ses usages, ses limites et les technologies qui lui sont liées.",
+      "description": "OWL est documenté pour son rôle dans les systèmes d'Electronic Artefacts, ses usages, ses limites et les technologies qui lui sont liées.",
       "status": "active",
       "maturity": "production",
       "confidence": "canonical",
@@ -10307,8 +10307,8 @@ window.EA_PUBLIC_CATALOG = {
       "translationOf": "ea:technology:rdf",
       "title": "RDF",
       "subtitle": "Resource Description Framework",
-      "summary": "RDF est un modèle de données en graphe du W3C qui représente l’information sous forme d’énoncés sujet-prédicat-objet portant sur des ressources.",
-      "description": "RDF est un modèle de données en graphe du W3C qui représente l’information sous forme d’énoncés sujet-prédicat-objet portant sur des ressources.",
+      "summary": "RDF est documenté pour son rôle dans les systèmes d'Electronic Artefacts, ses usages, ses limites et les technologies qui lui sont liées.",
+      "description": "RDF est documenté pour son rôle dans les systèmes d'Electronic Artefacts, ses usages, ses limites et les technologies qui lui sont liées.",
       "status": "active",
       "maturity": "production",
       "confidence": "published",
@@ -10341,8 +10341,8 @@ window.EA_PUBLIC_CATALOG = {
       "locale": "fr",
       "translationOf": "ea:technology:redis-streams",
       "title": "Redis Streams",
-      "summary": "Redis Streams est un type de données en journal à ajout seul, avec entrées ordonnées, lectures par plage, rétention et groupes de consommateurs.",
-      "description": "Redis Streams est un type de données en journal à ajout seul, avec entrées ordonnées, lectures par plage, rétention et groupes de consommateurs.",
+      "summary": "Redis Streams est documenté pour son rôle dans les systèmes d'Electronic Artefacts, ses usages, ses limites et les technologies qui lui sont liées.",
+      "description": "Redis Streams est documenté pour son rôle dans les systèmes d'Electronic Artefacts, ses usages, ses limites et les technologies qui lui sont liées.",
       "status": "active",
       "maturity": "production",
       "confidence": "canonical",
@@ -10376,8 +10376,8 @@ window.EA_PUBLIC_CATALOG = {
       "locale": "fr",
       "translationOf": "ea:technology:skos",
       "title": "SKOS",
-      "summary": "SKOS est un modèle de données du W3C pour publier sur le Web thésaurus, taxonomies, classifications et autres systèmes d’organisation des connaissances.",
-      "description": "SKOS est un modèle de données du W3C pour publier sur le Web thésaurus, taxonomies, classifications et autres systèmes d’organisation des connaissances.",
+      "summary": "SKOS est documenté pour son rôle dans les systèmes d'Electronic Artefacts, ses usages, ses limites et les technologies qui lui sont liées.",
+      "description": "SKOS est documenté pour son rôle dans les systèmes d'Electronic Artefacts, ses usages, ses limites et les technologies qui lui sont liées.",
       "status": "active",
       "maturity": "production",
       "confidence": "canonical",
@@ -10410,8 +10410,8 @@ window.EA_PUBLIC_CATALOG = {
       "locale": "fr",
       "translationOf": "ea:technology:transformer-architecture",
       "title": "Architecture Transformer",
-      "summary": "Le transformer est une architecture de réseau neuronal fondée sur les mécanismes d’attention et le traitement parallèle des séquences.",
-      "description": "Le transformer est une architecture de réseau neuronal fondée sur les mécanismes d’attention et le traitement parallèle des séquences.",
+      "summary": "Architecture Transformer est documenté pour son rôle dans les systèmes d'Electronic Artefacts, ses usages, ses limites et les technologies qui lui sont liées.",
+      "description": "Architecture Transformer est documenté pour son rôle dans les systèmes d'Electronic Artefacts, ses usages, ses limites et les technologies qui lui sont liées.",
       "status": "active",
       "maturity": "production",
       "confidence": "canonical",
@@ -10443,8 +10443,8 @@ window.EA_PUBLIC_CATALOG = {
       "locale": "fr",
       "translationOf": "ea:technology:web-animations",
       "title": "Web Animations",
-      "summary": "Web Animations définit un modèle de temporisation et d’animation pour les changements de présentation des pages web, ainsi que les interfaces de programmation associées.",
-      "description": "Web Animations définit un modèle de temporisation et d’animation pour les changements de présentation des pages web, ainsi que les interfaces de programmation associées.",
+      "summary": "Web Animations est documenté pour son rôle dans les systèmes d'Electronic Artefacts, ses usages, ses limites et les technologies qui lui sont liées.",
+      "description": "Web Animations est documenté pour son rôle dans les systèmes d'Electronic Artefacts, ses usages, ses limites et les technologies qui lui sont liées.",
       "status": "active",
       "maturity": "production",
       "confidence": "validated",
@@ -10477,8 +10477,8 @@ window.EA_PUBLIC_CATALOG = {
       "locale": "fr",
       "translationOf": "ea:technology:web-audio-api",
       "title": "Web Audio API",
-      "summary": "Web Audio API est une technologie du navigateur qui relie, synthétise, traite et analyse l’audio au moyen de nœuds connectés.",
-      "description": "Web Audio API est une technologie du navigateur qui relie, synthétise, traite et analyse l’audio au moyen de nœuds connectés.",
+      "summary": "Web Audio API est documenté pour son rôle dans les systèmes d'Electronic Artefacts, ses usages, ses limites et les technologies qui lui sont liées.",
+      "description": "Web Audio API est documenté pour son rôle dans les systèmes d'Electronic Artefacts, ses usages, ses limites et les technologies qui lui sont liées.",
       "status": "active",
       "maturity": "production",
       "confidence": "canonical",
@@ -10511,8 +10511,8 @@ window.EA_PUBLIC_CATALOG = {
       "locale": "fr",
       "translationOf": "ea:technology:webgl",
       "title": "WebGL",
-      "summary": "WebGL est une technologie web de rendu graphique 2D et 3D interactif accéléré par le processeur graphique des navigateurs compatibles.",
-      "description": "WebGL est une technologie web de rendu graphique 2D et 3D interactif accéléré par le processeur graphique des navigateurs compatibles.",
+      "summary": "WebGL est documenté pour son rôle dans les systèmes d'Electronic Artefacts, ses usages, ses limites et les technologies qui lui sont liées.",
+      "description": "WebGL est documenté pour son rôle dans les systèmes d'Electronic Artefacts, ses usages, ses limites et les technologies qui lui sont liées.",
       "status": "active",
       "maturity": "production",
       "confidence": "canonical",
@@ -10545,8 +10545,8 @@ window.EA_PUBLIC_CATALOG = {
       "locale": "fr",
       "translationOf": "ea:technology:webnn",
       "title": "WebNN",
-      "summary": "WebNN est une API du W3C pour l’inférence de réseaux neuronaux accélérée par le matériel dans les applications web.",
-      "description": "WebNN est une API du W3C pour l’inférence de réseaux neuronaux accélérée par le matériel dans les applications web.",
+      "summary": "WebNN est documenté pour son rôle dans les systèmes d'Electronic Artefacts, ses usages, ses limites et les technologies qui lui sont liées.",
+      "description": "WebNN est documenté pour son rôle dans les systèmes d'Electronic Artefacts, ses usages, ses limites et les technologies qui lui sont liées.",
       "status": "active",
       "maturity": "development",
       "confidence": "canonical",
@@ -10618,9 +10618,9 @@ window.EA_PUBLIC_CATALOG = {
       "type": "organization",
       "locale": "en",
       "title": "Electronic Artefacts",
-      "subtitle": "Studio / label / research",
-      "summary": "Electronic Artefacts is an independent creative technology studio, software laboratory, research organization, cultural platform, label and publishing system.",
-      "description": "Electronic Artefacts connects research, software, design, cultural production and archival practice through a shared graph of projects, programs and knowledge.",
+      "subtitle": "Independent Creative Technology Studio",
+      "summary": "Electronic Artefacts is an independent creative technology studio working through client commissions, proprietary systems and research-led cultural publishing.",
+      "description": "Strategy, design, engineering and cultural research brought together to build clear, durable digital products and knowledge systems.",
       "status": "active",
       "maturity": "production",
       "confidence": "canonical",
@@ -16039,7 +16039,7 @@ window.EA_SEARCH = {
   const french = {
     "Skip to main content": "Aller au contenu principal",
     "Back to home": "Retour à l’accueil",
-    "Creative technology studio": "Studio de technologies créatives",
+    "Independent creative technology studio": "Studio indépendant de technologies créatives",
     "Main navigation": "Navigation principale",
     "Open quick navigation": "Ouvrir la navigation rapide",
     "Back to top": "Retour en haut",
@@ -16067,52 +16067,52 @@ window.EA_SEARCH = {
     "SEARCH": "RECHERCHE",
     "LEGAL": "MENTIONS LÉGALES",
     "PRIVACY": "CONFIDENTIALITÉ",
-    "Creative systems made visible.": "Rendre les systèmes créatifs visibles.",
-    "Electronic Artefacts is a creative technology studio for client systems, proprietary platforms and research-led cultural publishing.": "Electronic Artefacts est un studio de technologies créatives dédié aux systèmes clients, aux plateformes propriétaires et à l’édition culturelle issue de la recherche.",
-    "See selected work": "Voir nos expertises",
-    "Start a project": "Démarrer un projet",
-    "Client systems": "Systèmes clients",
-    "Proprietary platforms": "Plateformes propriétaires",
+    "Complex systems, made clear.": "Rendre les systèmes complexes lisibles.",
+    "Electronic Artefacts is an independent creative technology studio. We build client products, develop proprietary systems and publish research-led cultural work.": "Electronic Artefacts est un studio indépendant de technologies créatives. Nous concevons des produits pour nos clients, développons nos propres systèmes et publions des travaux de recherche et de création.",
+    "View client work": "Voir les réalisations clients",
+    "Discuss a project": "Parler d’un projet",
+    "Client products": "Produits clients",
+    "Proprietary systems": "Systèmes propriétaires",
     "Research": "Recherche",
     "Artistic publishing": "Édition artistique",
-    "Now showing": "À découvrir",
-    "Current products and public work": "Produits actuels et réalisations publiques",
+    "Selected work": "Réalisations sélectionnées",
+    "Current systems and shipped projects": "Systèmes actifs et projets livrés",
     "Product surface": "Interface produit",
     "Public delivery": "Réalisation publique",
-    "Culture": "Culture",
+    "Culture and research": "Culture et recherche",
     "Current studio signals": "Indicateurs actuels du studio",
     "Current studio statistics": "Indicateurs actuels du studio",
     "current spotlights": "projets à la une",
     "latest update": "dernière mise à jour",
     "public surfaces": "interfaces publiques",
     "Latest platform": "Plateforme récente",
-    "Live public proof": "Réalisation publique active",
-    "PROOF FIRST": "LA PREUVE D’ABORD",
-    "One runtime foundation.": "Un socle d’exécution commun.",
-    "Understand the technical line behind how the studio thinks and builds.": "Comprendre la ligne technique derrière la manière dont le studio pense et construit.",
+    "Shipped client work": "Projet client livré",
+    "PROPRIETARY TECHNOLOGY": "TECHNOLOGIE PROPRIÉTAIRE",
+    "VASTE is the runtime behind the studio’s knowledge systems.": "VASTE est le runtime au cœur des systèmes de connaissance du studio.",
+    "It provides the shared logic for identity, context, permissions and graph-based products.": "Il fournit la logique commune d’identité, de contexte, de permissions et de produits fondés sur des graphes.",
     "RUNTIME FOUNDATION": "SOCLE D’EXÉCUTION",
-    "Open the proprietary program behind the identity and knowledge-system work.": "Découvrez le programme propriétaire derrière l’identité et les systèmes de connaissance.",
+    "A reusable foundation for platforms where entities, relationships and permissions must remain coherent as the system grows.": "Une fondation réutilisable pour les plateformes dont les entités, les relations et les permissions doivent rester cohérentes à mesure qu’elles évoluent.",
     "Graph systems": "Systèmes de graphes",
     "Research engine": "Moteur de recherche",
-    "Explore VASTE": "Découvrir VASTE",
+    "Review the programs": "Découvrir les programmes",
     "Explore Research": "Explorer la recherche",
     "Quick preview": "Aperçu rapide",
-    "FEATURED PATHS": "PARCOURS SÉLECTIONNÉS",
-    "Choose what you need first.": "Choisissez d’abord ce dont vous avez besoin.",
-    "Start with the path that matches your intent: technology, delivery or cultural work.": "Commencez par le parcours qui correspond à votre intention : technologie, réalisation ou travail culturel.",
+    "THREE PRACTICES": "TROIS PRATIQUES",
+    "One studio. Three distinct ways of working.": "Un studio. Trois façons distinctes de travailler.",
+    "Client work solves immediate problems. Proprietary systems extend what the studio can build. Research and artistic publishing keep the practice open to new forms.": "Les missions clients répondent à des problèmes immédiats. Les systèmes propriétaires étendent les capacités du studio. La recherche et l’édition artistique maintiennent la pratique ouverte à de nouvelles formes.",
     "Technology": "Technologie",
-    "Understand the core runtime": "Comprendre le moteur central",
-    "Open VASTE to understand the strategic and technical foundation behind the wider family of systems.": "Découvrez VASTE pour comprendre le socle stratégique et technique de l’ensemble des systèmes.",
-    "Why it matters": "Pourquoi c’est important",
-    "Best when architecture, scalability and the long-term platform thesis matter first.": "À privilégier lorsque l’architecture, le passage à l’échelle et la vision de plateforme sont prioritaires.",
+    "Proprietary systems": "Systèmes propriétaires",
+    "Explore VASTE and the reusable software programs behind the studio’s knowledge and product platforms.": "Explorez VASTE et les programmes logiciels réutilisables qui sous-tendent les plateformes de connaissance et les produits du studio.",
+    "Best for": "Indiqué pour",
+    "Technical partnerships, pilots and licensing.": "Partenariats techniques, pilotes et licences.",
     "Delivery": "Réalisation",
-    "See applied work and outcomes": "Voir les réalisations et leurs résultats",
-    "See how strategy, interface, content and implementation hold together across commissions and public products.": "Voyez comment stratégie, interface, contenu et réalisation s’articulent dans les commandes et produits publics.",
-    "Best when you need evidence of execution under concrete constraints.": "À privilégier lorsque vous cherchez des preuves de réalisation sous contraintes concrètes.",
-    "See Client Work": "Voir les réalisations clients",
-    "Enter through Palimpsests": "Entrer par Palimpsests",
-    "Explore the musical and editorial space where artistic production, memory and publication meet.": "Explorez l’espace musical et éditorial où se rencontrent création artistique, mémoire et publication.",
-    "Best when you want the cultural register before the technical system.": "À privilégier pour découvrir le registre culturel avant le système technique.",
+    "Client products and platforms": "Produits et plateformes pour nos clients",
+    "See how strategy, content, interface and engineering come together in commissioned work.": "Découvrez comment stratégie, contenu, interface et ingénierie s’articulent dans les projets commandités.",
+    "Product definition, design, delivery and recovery.": "Cadrage produit, design, réalisation et reprise.",
+    "View client work": "Voir les réalisations clients",
+    "Research and artistic publishing": "Recherche et édition artistique",
+    "Follow the investigations, publications and musical works that give the studio its cultural depth.": "Explorez les recherches, publications et œuvres musicales qui donnent au studio sa profondeur culturelle.",
+    "Research, editorial partnerships and artistic collaboration.": "Recherche, partenariats éditoriaux et collaborations artistiques.",
     "Discover Palimpsests": "Découvrir Palimpsests",
     "LAYER": "COUCHE",
     "Live ecosystem map.": "Cartographie vivante de l’écosystème.",
@@ -16130,10 +16130,10 @@ window.EA_SEARCH = {
     "Palimpsests is an album cycle by ORETH, unfolding across five acts and an evolving archive.": "Palimpsests est un cycle d’albums d’ORETH, déployé en cinq actes et prolongé par des archives en constante évolution.",
     "Open Archive": "Ouvrir les archives",
     "Start a Collaboration": "Démarrer une collaboration",
-    "Selected works.": "Réalisations sélectionnées.",
-    "A compact path through client delivery, proprietary platforms and cultural publishing.": "Un parcours resserré entre réalisations clients, plateformes propriétaires et édition culturelle.",
+    "Selected work, with the role and status made explicit.": "Une sélection qui précise le rôle et le statut de chaque projet.",
+    "Client delivery, proprietary platforms and cultural publishing — three forms of the same exacting practice.": "Réalisations clients, plateformes propriétaires et édition culturelle : trois formes d’une même pratique exigeante.",
     "CURATED PATH": "PARCOURS ÉDITORIAL",
-    "A concise selection before you enter the full project catalogue or archive.": "Une sélection resserrée avant d’explorer le catalogue complet des projets ou les archives.",
+    "Begin with the lead project, then compare work across product, technology and culture.": "Commencez par le projet principal, puis comparez les réalisations dans les domaines du produit, de la technologie et de la culture.",
     "Lead": "Projet principal",
     "Mode": "Mode",
     "Browse Projects": "Parcourir les projets",
@@ -16141,9 +16141,9 @@ window.EA_SEARCH = {
     "View project": "Voir le projet",
     "More work": "Autres réalisations",
     "MORE PATHS": "AUTRES PARCOURS",
-    "CONTINUE EXPLORING": "POURSUIVRE L’EXPLORATION",
-    "Use the ecosystem as a map, not a grid.": "Utilisez l’écosystème comme une carte, pas comme une grille.",
-    "Where you go next depends on what brought you here. These paths lead directly to the work, research, systems or archives that matter to you.": "La suite dépend de ce qui vous amène ici. Ces parcours mènent directement aux réalisations, aux recherches, aux systèmes ou aux archives qui vous concernent.",
+    "GO DEEPER": "ALLER PLUS LOIN",
+    "Choose the next level of detail.": "Choisissez le prochain niveau de détail.",
+    "Move from visible outcomes to the systems, research or archive behind them.": "Passez des résultats visibles aux systèmes, aux recherches ou aux archives qui les sous-tendent.",
     "Move into public works and collaborations.": "Découvrez les réalisations publiques et les collaborations.",
     "Best if you want to see what the studio makes.": "Idéal pour voir ce que produit le studio.",
     "Explore the theoretical and experimental branches.": "Explorez les branches théoriques et expérimentales.",
@@ -16155,16 +16155,16 @@ window.EA_SEARCH = {
     "public works": "réalisations publiques",
     "program lines": "axes de programme",
     "live client proof": "référence client active",
-    "Selected work": "Expertises sélectionnées",
-    "Client systems and product surfaces.": "Systèmes clients et interfaces produit.",
-    "Strategy, architecture, interface and implementation for teams that need a clear product, public platform or workflow system rather than a cosmetic refresh.": "Stratégie, architecture, interface et réalisation pour les équipes qui ont besoin d’un produit cohérent, d’une plateforme publique ou d’un système de travail — au-delà d’une simple refonte cosmétique.",
-    "Discuss a project": "Parler d’un projet",
-    "See evidence": "Voir les références",
+    "Selected work": "Réalisations sélectionnées",
+    "Strategy, design and engineering for complex digital products.": "Stratégie, design et ingénierie pour des produits numériques complexes.",
+    "Electronic Artefacts helps teams define, design, build and recover products, platforms and knowledge systems when the problem crosses disciplines.": "Electronic Artefacts accompagne les équipes pour cadrer, concevoir, construire ou reprendre des produits, des plateformes et des systèmes de connaissance lorsque le problème dépasse une seule discipline.",
+    "Discuss your project": "Parler de votre projet",
+    "View case studies": "Voir les études de cas",
     "Work disciplines": "Disciplines",
-    "Strategy": "Stratégie",
-    "Product": "Produit",
-    "Identity": "Identité",
-    "Implementation": "Réalisation",
+    "Product strategy": "Stratégie produit",
+    "Brand and content": "Marque et contenu",
+    "UX and interface": "UX et interface",
+    "Engineering": "Ingénierie",
     "Selected delivery": "Réalisations sélectionnées",
     "active surfaces": "interfaces actives",
     "Product platform": "Plateforme produit",
@@ -16242,14 +16242,14 @@ window.EA_SEARCH = {
     "Direction · Design Technology · Culture": "Direction · Design Technologie · Culture",
     "Shape a capability mix": "Composer une équipe adaptée",
     "SERVICE FIELD": "CHAMP D’INTERVENTION",
-    "Consulting, creative direction and implementation under one roof.": "Conseil, direction créative et réalisation réunis.",
-    "Electronic Artefacts can enter at diagnosis, strategy, design, build, recovery or R&D level. The work can stay advisory, become a focused audit, or move all the way into production.": "Electronic Artefacts peut intervenir au niveau du diagnostic, de la stratégie, du design, de la réalisation, de la reprise ou de la R&D. La mission peut rester consultative, prendre la forme d’un audit ciblé ou aller jusqu’à la production.",
+    "From first diagnosis to a working system.": "Du premier diagnostic au système opérationnel.",
+    "Engagements can begin with strategy, design, engineering, recovery or R&D — and stop at a decisive recommendation or continue through production.": "Une mission peut commencer par la stratégie, le design, l’ingénierie, la reprise ou la R&D — puis s’arrêter à une recommandation décisive ou se poursuivre jusqu’à la production.",
     "Typical entry points": "Points d’entrée habituels",
     "Useful when": "Pertinent lorsque",
     "Output": "Résultat",
     "ENGAGEMENTS": "FORMATS DE MISSION",
-    "Three ways to work together.": "Trois façons de travailler ensemble.",
-    "The format follows the problem. Each engagement produces explicit decisions, working artefacts and a clear next phase before scope or budget is locked.": "Le format suit le problème. Chaque mission produit des décisions explicites, des livrables opérationnels et une prochaine étape claire avant de figer le périmètre ou le budget.",
+    "Three clear starting points.": "Trois points de départ clairs.",
+    "Choose the smallest engagement that can resolve the uncertainty. Every format ends with a decision, a working artefact or a production-ready next step.": "Choisissez la mission la plus resserrée capable de lever l’incertitude. Chaque format aboutit à une décision, un livrable opérationnel ou une prochaine étape prête à produire.",
     "Qualification": "Qualification",
     "Problem first": "Le problème d’abord",
     "Evidence": "Preuves",
@@ -16258,15 +16258,15 @@ window.EA_SEARCH = {
     "Reusable system": "Système réutilisable",
     "Discuss the right starting point": "Identifier le bon point de départ",
     "Review evidence": "Voir les références",
-    "Projects, from art systems to applied surfaces.": "Des systèmes artistiques aux interfaces appliquées.",
-    "Start with the artistic line, then compare client work, product surfaces and the systems that support them.": "Commencez par la ligne artistique, puis comparez les réalisations clients, les interfaces produit et les systèmes qui les soutiennent.",
-    "Programs for repo access, pilots and licensing.": "Programmes pour accès au dépôt, pilotes et licences.",
-    "Electronic Artefacts programs are packaged technical systems. They can be evaluated through repository access, scoped pilots, implementation work or licensing conversations.": "Les programmes Electronic Artefacts sont des systèmes techniques structurés. Ils peuvent être évalués par un accès au dépôt, des pilotes encadrés, des missions d’implémentation ou des discussions de licence.",
+    "Projects where research takes form.": "Des projets où la recherche prend forme.",
+    "Cultural works, proprietary platforms and client products reveal different sides of the same practice: turning complex ideas into experiences people can use, understand or feel.": "Œuvres culturelles, plateformes propriétaires et produits clients révèlent plusieurs faces d’une même pratique : transformer des idées complexes en expériences que l’on peut utiliser, comprendre ou ressentir.",
+    "Proprietary systems for ambitious technical partners.": "Des systèmes propriétaires pour des partenaires techniques ambitieux.",
+    "Electronic Artefacts develops reusable software programs for knowledge, production and cultural platforms. Partners can review the code, test a focused pilot, commission an implementation or discuss licensing.": "Electronic Artefacts développe des programmes logiciels réutilisables pour les plateformes de connaissance, de production et de culture. Les partenaires peuvent examiner le code, tester un pilote ciblé, commander une implémentation ou discuter d’une licence.",
     "Request repo access": "Demander un accès au dépôt",
     "Discuss a program": "Parler d’un programme",
     "COMMERCIAL ACCESS": "ACCÈS COMMERCIAL",
-    "How programs are sold.": "Comment les programmes sont proposés.",
-    "The offer is not a generic download. Each access path has a different level of code exposure, technical support, implementation responsibility and rights discussion.": "L’offre n’est pas un téléchargement générique. Chaque parcours implique un niveau différent d’accès au code, d’accompagnement technique, de responsabilité d’implémentation et de discussion des droits.",
+    "Four ways to evaluate or use a program.": "Quatre façons d’évaluer ou d’utiliser un programme.",
+    "Access is matched to the question: inspect the architecture, test a use case, build on the system or negotiate longer-term rights.": "Le niveau d’accès répond au besoin : examiner l’architecture, tester un cas d’usage, construire sur le système ou négocier des droits à plus long terme.",
     "PROGRAM CATALOG": "CATALOGUE DES PROGRAMMES",
     "Available program packages.": "Programmes disponibles.",
     "Each card states what the program is, what can be evaluated, what kind of access is realistic and who it is for.": "Chaque fiche précise la nature du programme, les éléments évaluables, le type d’accès possible et les publics concernés.",
@@ -16283,11 +16283,11 @@ window.EA_SEARCH = {
     "SELECTION GUIDE": "GUIDE DE SÉLECTION",
     "Choose the right program first.": "Choisissez d’abord le bon programme.",
     "A good conversation starts with the problem class. The repository or pilot only matters once the right program is identified.": "Une bonne discussion commence par la classe de problème. Le dépôt ou le pilote ne devient pertinent qu’une fois le bon programme identifié.",
-    "Ideas become systems, methods and works.": "Les idées deviennent des systèmes, des méthodes et des œuvres.",
-    "An open research practice across technology, culture, knowledge, perception and creative production. Questions are documented, connected, tested and translated into usable forms.": "Une pratique de recherche ouverte à travers technologie, culture, connaissance, perception et production créative. Les questions sont documentées, reliées, testées et transformées en formes utilisables.",
-    "Explore the fields": "Explorer les domaines",
-    "Applied research": "Recherche appliquée",
-    "Research notes": "Notes de recherche",
+    "Research that becomes systems, methods and works.": "Une recherche qui prend la forme de systèmes, de méthodes et d’œuvres.",
+    "Electronic Artefacts investigates how technology shapes knowledge, culture and creative practice, then turns those questions into prototypes, publications and working systems.": "Electronic Artefacts étudie la manière dont la technologie transforme la connaissance, la culture et les pratiques créatives, puis traduit ces questions en prototypes, publications et systèmes opérationnels.",
+    "Explore research fields": "Explorer les champs de recherche",
+    "See applied research": "Voir la recherche appliquée",
+    "Read publications": "Lire les publications",
     "Research constellation": "Constellation de recherche",
     "Research graph": "Graphe de recherche",
     "Question → evidence → system": "Question → preuve → système",
@@ -16301,9 +16301,9 @@ window.EA_SEARCH = {
     "research paths": "parcours de recherche",
     "working steps": "étapes de travail",
     "connected graph": "graphe connecté",
-    "Nothing useful should disappear.": "Rien d’utile ne devrait disparaître.",
-    "The archive preserves releases, prototypes, documents, research logs and unfinished material. Each trace remains connected to the project, question or system that produced it.": "Les archives préservent publications, prototypes, documents, journaux de recherche et matériaux inachevés. Chaque trace reste reliée au projet, à la question ou au système qui l’a produite.",
-    "Browse the library": "Parcourir la bibliothèque",
+    "The work continues in what it leaves behind.": "Le travail continue dans les traces qu’il laisse.",
+    "Releases, prototypes, documents and unfinished material stay connected to the decisions, questions and systems that produced them.": "Publications, prototypes, documents et matériaux inachevés restent reliés aux décisions, aux questions et aux systèmes qui les ont produits.",
+    "Browse the archive": "Parcourir les archives",
     "Archive principles": "Principes des archives",
     "Context": "Contexte",
     "Lineage": "Héritage",
@@ -16534,25 +16534,25 @@ window.EA_SEARCH = {
     "Scope": "Périmètre",
     "This site only": "Ce site uniquement",
     "This policy applies to the public Electronic Artefacts website and does not cover third-party platforms linked from it.": "Cette politique s’applique au site public Electronic Artefacts et ne couvre pas les plateformes tierces auxquelles il renvoie.",
-    "A studio before an ecosystem.": "Un studio avant d’être un écosystème.",
-    "Electronic Artefacts is an independent creative technology studio. It builds client systems, develops proprietary platforms, and publishes research and artistic work.": "Electronic Artefacts est un studio indépendant de technologies créatives. Il conçoit des systèmes clients, développe des plateformes propriétaires et publie des travaux de recherche et des œuvres artistiques.",
-    "WHAT IT IS": "LE STUDIO",
-    "LAYERS": "COUCHES",
-    "ENTITIES": "ENTITÉS",
+    "One studio. Three ways of building.": "Un studio. Trois façons de construire.",
+    "Electronic Artefacts works through client commissions, proprietary technology and research-led cultural publishing. Each line is distinct; all share the same standards of clarity, craft and technical depth.": "Electronic Artefacts se déploie à travers des missions clients, des technologies propriétaires et une édition culturelle issue de la recherche. Chaque ligne est distincte ; toutes partagent la même exigence de clarté, de maîtrise et de profondeur technique.",
+    "THE STUDIO": "LE STUDIO",
+    "HOW IT WORKS": "MODE DE FONCTIONNEMENT",
+    "KEY PROJECTS": "PROJETS CLÉS",
     "Studio model": "Modèle du studio",
     "One core / connected outputs": "Un noyau / des productions connectées",
     "Programs": "Programmes",
-    "Projects": "Projets",
+    "View projects": "Voir les projets",
     "Archive": "Archives",
     "Studio statistics": "Indicateurs du studio",
     "independent studio": "studio indépendant",
     "connected layers": "couches connectées",
     "public edition": "édition publique",
-    "Start with the problem, not the format.": "Partir du problème, pas du format.",
-    "Electronic Artefacts works on digital products, knowledge systems, cultural platforms, creative technology and complex redesigns that need structural thinking.": "Electronic Artefacts travaille sur des produits numériques, des systèmes de connaissance, des plateformes culturelles, des technologies créatives et des refontes complexes qui demandent une réflexion structurelle.",
-    "Build a project brief": "Construire un brief",
-    "Send an email": "Envoyer un e-mail",
-    "See the work": "Voir les réalisations",
+    "Start with the problem. We’ll find the right form.": "Commencez par le problème. Nous trouverons la forme juste.",
+    "Bring a product to define, a system to rebuild, a platform to scale or a cultural idea to make real. The first conversation is about context, constraints and what success should look like.": "Apportez un produit à définir, un système à reconstruire, une plateforme à faire évoluer ou une idée culturelle à concrétiser. La première conversation porte sur le contexte, les contraintes et la définition de la réussite.",
+    "Shape your brief": "Structurer votre brief",
+    "Email the studio": "Écrire au studio",
+    "View client work": "Voir les réalisations clients",
     "Collaboration signal": "Signal de collaboration",
     "Unstructured idea → useful brief": "Idée libre → brief exploitable",
     "What should change?": "Qu’est-ce qui doit changer ?",
@@ -16567,12 +16567,12 @@ window.EA_SEARCH = {
     "Tell us what you’re working on.": "Décrivez ce sur quoi vous travaillez.",
     "Describe the idea that needs a system.": "Décrivez l’idée qui a besoin d’un système.",
     "What would you like to build together?": "Qu’aimeriez-vous construire ensemble ?",
-    "What should exist that doesn’t exist yet?": "Qu’est-ce qui devrait exister et n’existe pas encore ?",
+    "What needs to change — and why now?": "Que faut-il changer — et pourquoi maintenant ?",
     "What would you like to create together?": "Qu’aimeriez-vous créer ensemble ?",
     "Describe your idea, project or collaboration": "Décrivez votre idée, votre projet ou votre collaboration",
     "PROJECT / COLLABORATION DISCOVERY": "DÉCOUVERTE DU PROJET / DE LA COLLABORATION",
     "What should exist that doesn’t exist yet?": "Qu’est-ce qui devrait exister et n’existe pas encore ?",
-    "Describe the situation in your own words. This interface organizes your intent into a concise brief. Classification happens locally in your browser.": "Décrivez la situation avec vos propres mots. Cette interface organise votre intention dans un brief concis. L’analyse s’effectue localement dans votre navigateur.",
+    "Describe the situation in your own words. The brief will identify the relevant pathway, surface the missing context and prepare a focused first conversation. Nothing leaves your browser.": "Décrivez la situation avec vos propres mots. Le brief identifiera le parcours pertinent, fera émerger le contexte manquant et préparera un premier échange ciblé. Rien ne quitte votre navigateur.",
     "Start with a sentence. No formal brief required.": "Commencez par une phrase. Aucun brief formel n’est nécessaire.",
     "to continue": "pour continuer",
     "Likely pathway": "Orientation probable",
@@ -16594,9 +16594,9 @@ window.EA_SEARCH = {
     "Prepare email": "Préparer l’e-mail",
     "Copy brief": "Copier le brief",
     "Nothing is uploaded. “Prepare email” opens your mail application with the brief included.": "Aucune donnée n’est envoyée. « Préparer l’e-mail » ouvre votre messagerie avec le brief inclus.",
-    "DIRECT ROUTES": "CONTACT DIRECT",
-    "Prefer to contact us directly?": "Vous préférez nous contacter directement ?",
-    "The discovery interface is optional. Email remains the primary route; public channels expose the studio's code, sound, research and ongoing work.": "L’interface de découverte est facultative. L’e-mail reste le moyen principal ; les canaux publics présentent le code, le son, la recherche et les travaux en cours du studio.",
+    "DIRECT CONTACT": "CONTACT DIRECT",
+    "Already know what you need?": "Vous savez déjà ce dont vous avez besoin ?",
+    "Email is the fastest route for projects and partnerships. The public channels document the studio’s code, sound, research and current work.": "L’e-mail est le moyen le plus direct pour parler d’un projet ou d’un partenariat. Les canaux publics documentent le code, le son, la recherche et les travaux en cours du studio.",
     "Project briefs, partnerships, commissions and considered introductions.": "Briefs de projet, partenariats, commandes et prises de contact réfléchies.",
     "Send email": "Envoyer un e-mail",
     "Studio channel": "Canal du studio",
@@ -16617,7 +16617,7 @@ window.EA_SEARCH = {
     "Positioning and network.": "Positionnement et réseau.",
     "Direct channels and links.": "Canaux directs et liens.",
     "Official external program.": "Programme externe officiel.",
-    "Creative technology studio: client systems, proprietary platforms, research and artistic publishing.": "Studio de technologies créatives : systèmes clients, plateformes propriétaires, recherche et édition artistique.",
+    "Independent creative technology studio building client products, proprietary systems and research-led cultural work.": "Studio indépendant de technologies créatives : produits clients, systèmes propriétaires et création culturelle issue de la recherche.",
     "Electronic Artefacts 2026": "Electronic Artefacts 2026",
     "Powered in part by EA Light Framework": "Composé en partie avec EA Light Framework",
     "Static HTML, CSS and JavaScript composition layer.": "Couche de composition statique HTML, CSS et JavaScript.",
@@ -16736,15 +16736,15 @@ window.EA_SEARCH = {
     "Maintained By": "Maintenu par",
     "Part Of": "Fait partie de",
     "Related To": "Associé à",
-    "What Electronic Artefacts is.": "Ce qu’est Electronic Artefacts.",
+    "A studio for work that crosses disciplines.": "Un studio pour les projets qui dépassent les disciplines.",
     "Institutional role": "Rôle institutionnel",
     "Operating cycle": "Cycle opérationnel",
-    "The four operating layers.": "Les quatre couches opérationnelles.",
-    "Each layer has a distinct role. None of them works alone.": "Chaque couche a un rôle distinct. Aucune ne fonctionne seule.",
+    "How ideas move through the studio.": "Comment les idées circulent dans le studio.",
+    "Research frames the question. Programs retain reusable logic. Projects put it to work. The archive preserves what should remain available.": "La recherche formule la question. Les programmes conservent la logique réutilisable. Les projets la mettent à l’œuvre. Les archives préservent ce qui doit rester accessible.",
     "Reusable systems and runtimes.": "Systèmes et moteurs réutilisables.",
     "Public works and commissions.": "Œuvres publiques et commandes.",
     "Traces, fragments and memory.": "Traces, fragments et mémoire.",
-    "How the named entities fit.": "La place des entités nommées.",
+    "Five names, five distinct roles.": "Cinq noms, cinq rôles distincts.",
     "Production system.": "Système de production.",
     "Artistic translation.": "Traduction artistique.",
     "Applied surfaces.": "Interfaces appliquées.",
@@ -16756,7 +16756,7 @@ window.EA_SEARCH = {
     "UnionMob spherical visual composed of compass interfaces and UnionMob marks": "Univers visuel d’UnionMob composé d’interfaces de boussole et de signes de la marque",
     "L’Œil de Meg wordmark": "Logo typographique de L’Œil de Meg",
     "VASTE attributes": "Caractéristiques de VASTE",
-    "Enter Palimpsests": "Découvrir Palimpsests",
+    "Explore the cultural work": "Explorer le travail culturel",
     "Search": "Rechercher",
     "Browse archive": "Parcourir les archives",
     "7 projects": "7 projets",
@@ -16793,21 +16793,21 @@ window.EA_SEARCH = {
     "Project overview": "Vue d’ensemble du projet",
     "The work at a glance.": "Le projet en un coup d’œil.",
     "Technical article": "Article technique",
-    "Reading map": "Parcours de lecture",
-    "Core claims": "Idées essentielles",
-    "Evidence links": "Éléments associés",
+    "In this article": "Dans cet article",
+    "Main arguments": "Arguments principaux",
+    "Related evidence": "Éléments associés",
     "References": "Références",
-    "Definition, sources and useful limits.": "Définition, sources et limites.",
-    "Start here for the practical frame: what the page covers, what it leaves aside and which references support it.": "Commencez par le cadre général : le périmètre du sujet, ce qu’il laisse de côté et les références qui l’étayent.",
-    "What this covers": "Ce que recouvre la notion",
-    "What Electronic Artefacts keeps from it": "Position d’Electronic Artefacts",
-    "What stays outside the frame": "Ce qui reste hors périmètre",
+    "What this entry establishes.": "Ce que cette entrée établit.",
+    "A concise view of its scope, position, limitations and supporting sources.": "Une lecture concise de son périmètre, de sa position, de ses limites et des sources qui l’étayent.",
+    "Defined scope": "Périmètre défini",
+    "Editorial position": "Position éditoriale",
+    "Explicit limits": "Limites explicites",
     "Tags and disciplines": "Mots-clés et disciplines",
     "References behind this page": "Sources de référence",
-    "Why this technology matters here": "Rôle de cette technologie",
+    "Role in the system": "Rôle dans le système",
     "Category, versions and official source": "Catégorie, versions et source officielle",
-    "Why these pages belong together": "Ce qui relie ces pages",
-    "Why this selection matters": "Principes de sélection",
+    "Editorial thesis": "Thèse éditoriale",
+    "Selection principles": "Principes de sélection",
     "Articles and notions in this collection": "Articles et notions de la collection",
     "What this field is trying to clarify": "Questions étudiées",
     "What this field covers": "Périmètre du champ de recherche",
@@ -16836,8 +16836,8 @@ window.EA_SEARCH = {
     "Like this article": "Aimer cet article",
     "Compact article metadata": "Métadonnées de l’article",
     "TYPED RELATIONSHIPS": "RELATIONS TYPÉES",
-    "How this entity connects.": "Relations avec les autres entités.",
-    "Each connection has an explicit predicate and a human-readable statement.": "Chaque relation possède un prédicat explicite et une formulation lisible.",
+    "Connected work and ideas.": "Travaux et idées associés.",
+    "Each relation names what connects the two entries and why that connection matters.": "Chaque relation précise ce qui relie les deux entrées et pourquoi ce lien compte.",
     "Purpose": "Objectif",
     "What this program is built to handle": "Rôle du programme",
     "Capabilities": "Capacités",
@@ -16852,7 +16852,415 @@ window.EA_SEARCH = {
     "Limitations": "Limites",
     "Known constraints": "Contraintes connues",
     "1 useful link": "1 lien utile",
+    "NEXT": "À SUIVRE",
+    "See how the work connects.": "Voir comment les réalisations s’articulent.",
+    "Compare outcomes, understand the studio model or bring a concrete need into focus.": "Comparez les résultats, comprenez le modèle du studio ou précisez un besoin concret.",
+    "Outcomes": "Résultats",
+    "Compare client delivery with proprietary and cultural work.": "Comparez les missions clients aux projets propriétaires et culturels.",
+    "Understand the studio model and the role of each practice.": "Comprenez le modèle du studio et le rôle de chaque pratique.",
+    "About the studio": "Découvrir le studio",
+    "Bring a product, system or partnership into focus.": "Précisez un produit, un système ou un partenariat.",
+    "Start a conversation": "Engager la conversation",
+    "Precedent": "Références",
+    "Review the traces behind current work.": "Consultez les traces qui éclairent les travaux actuels.",
+    "Follow the project to its source or its application.": "Remonter d’un projet à sa source ou à son application.",
+    "Move from individual outcomes to client work, research, precedent or a new brief.": "Passez d’une réalisation aux missions clients, à la recherche, aux précédents ou à un nouveau brief.",
+    "Client work": "Missions clients",
+    "See how the studio handles commissioned products and platforms.": "Découvrez comment le studio conçoit des produits et plateformes sur commande.",
+    "Source": "Source",
+    "Read the investigations that inform the projects.": "Lisez les recherches qui nourrissent les projets.",
+    "Explore research": "Explorer la recherche",
+    "Lineage": "Filiation",
+    "Trace earlier versions, fragments and references.": "Retracez les versions antérieures, fragments et références.",
+    "New project": "Nouveau projet",
+    "Turn an adjacent idea into a focused first conversation.": "Transformez une idée connexe en premier échange ciblé.",
+    "Evaluate the system in context.": "Évaluer le système dans son contexte.",
+    "Examine the core runtime, the research behind it, the studio model or a possible implementation.": "Examinez le moteur central, les recherches qui le fondent, le modèle du studio ou une mise en œuvre possible.",
+    "Core runtime": "Moteur central",
+    "Review the identity, context and permissions layer shared across systems.": "Examinez la couche d’identité, de contexte et de permissions commune aux différents systèmes.",
+    "Foundations": "Fondements",
+    "See the theories and methods that inform the stack.": "Découvrez les théories et méthodes qui structurent cet ensemble.",
+    "Understand how proprietary systems support the wider practice.": "Comprenez comment les systèmes propriétaires soutiennent l’ensemble de la pratique.",
+    "Discuss a pilot, licence or technical partnership.": "Échangez autour d’un pilote, d’une licence ou d’un partenariat technique.",
+    "Discuss a program": "Parler d’un programme",
+    "See what the research becomes.": "Voir ce que devient la recherche.",
+    "Follow an investigation into a working system, a public project or the archive that preserves its lineage.": "Suivez une recherche jusqu’au système opérationnel, au projet public ou aux archives qui en préservent la filiation.",
+    "Systems": "Systèmes",
+    "Review the software that turns recurring research into reusable infrastructure.": "Découvrez les logiciels qui transforment des recherches récurrentes en infrastructures réutilisables.",
+    "View programs": "Voir les programmes",
+    "See how research becomes products, platforms and cultural work.": "Découvrez comment la recherche devient produit, plateforme ou création culturelle.",
+    "Browse the traces and prior versions that keep the work accountable.": "Parcourez les traces et versions antérieures qui documentent le travail.",
+    "Context": "Contexte",
+    "Understand the role of research in the studio as a whole.": "Comprenez le rôle de la recherche dans l’ensemble du studio.",
+    "Return each trace to living work.": "Relier chaque trace à un travail vivant.",
+    "The archive gains meaning when it reconnects with a current project, an active investigation or a new conversation.": "Les archives prennent sens lorsqu’elles rejoignent un projet actuel, une recherche active ou une nouvelle conversation.",
+    "Current work": "Travaux actuels",
+    "See the public outcomes connected to these traces.": "Découvrez les réalisations publiques liées à ces traces.",
+    "Return to the questions and methods still in progress.": "Revenez aux questions et méthodes encore à l’œuvre.",
+    "Request": "Demande",
+    "Ask about a specific trace, collaboration or reuse context.": "Interrogez le studio sur une trace, une collaboration ou un contexte de réutilisation précis.",
+    "Contact the studio": "Contacter le studio",
+    "Place the archive within the studio’s broader practice.": "Replacez les archives dans la pratique d’ensemble du studio.",
+    "Choose the part of the practice you want to examine.": "Choisissez la dimension de la pratique que vous souhaitez approfondir.",
+    "Move from the studio model to its research, systems, projects or a direct conversation.": "Passez du modèle du studio à ses recherches, ses systèmes, ses projets ou à un échange direct.",
+    "Questions": "Questions",
+    "See where new methods and systems begin.": "Découvrez l’origine des nouvelles méthodes et des nouveaux systèmes.",
+    "Infrastructure": "Infrastructure",
+    "Review the studio’s reusable software systems.": "Découvrez les systèmes logiciels réutilisables du studio.",
+    "Proof": "Réalisations",
+    "See how the practice becomes public work.": "Découvrez comment la pratique prend une forme publique.",
+    "Conversation": "Conversation",
+    "Discuss a product, system, partnership or cultural project.": "Échangez autour d’un produit, d’un système, d’un partenariat ou d’un projet culturel.",
+    "BEFORE YOU WRITE": "AVANT DE NOUS ÉCRIRE",
+    "Need more context first?": "Besoin de davantage de contexte ?",
+    "Review relevant work, compare projects or understand the studio’s systems before starting the conversation.": "Consultez les réalisations pertinentes, comparez les projets ou découvrez les systèmes du studio avant d’engager la conversation.",
+    "Capabilities": "Expertises",
+    "See how the studio frames and delivers client work.": "Découvrez comment le studio cadre et réalise ses missions clients.",
+    "Examples": "Exemples",
+    "Compare proprietary, cultural and commissioned outcomes.": "Comparez projets propriétaires, créations culturelles et missions commanditées.",
+    "Review the runtime if your question concerns knowledge infrastructure.": "Explorez le moteur si votre question porte sur une infrastructure de connaissance.",
+    "Understand the practice, its structure and its standards.": "Comprenez la pratique, sa structure et ses exigences.",
+    "Strategy and product framing": "Stratégie et cadrage produit",
+    "Brand systems and art direction": "Systèmes de marque et direction artistique",
+    "Editorial and content architecture": "Architecture éditoriale et des contenus",
+    "UX, UI and interaction": "UX, UI et interaction",
+    "Digital product design": "Design de produits numériques",
+    "Web development and delivery": "Développement web et mise en production",
+    "Platforms and technical architecture": "Plateformes et architecture technique",
+    "AI, automation and knowledge systems": "IA, automatisation et systèmes de connaissance",
+    "Describe the brief": "Décrire le besoin",
+    "Enter Research": "Explorer la recherche",
+    "Art system": "Système artistique",
+    "Applied surface": "Application concrète",
+    "Delivery proof": "Preuve de réalisation",
+    "Work": "Expertise",
+    "Art Translation": "Traduction artistique",
+    "Knowledge Platforms": "Plateformes de connaissance",
+    "External Partnership": "Partenariat externe",
+    "Applied Surfaces": "Applications concrètes",
+    "Discuss a pilot": "Parler d’un pilote",
+    "Start implementation": "Lancer la mise en œuvre",
+    "Open licensing discussion": "Parler d’une licence",
+    "View program": "Voir le programme",
+    "Official site": "Site officiel",
+    "Systems Theory": "Théorie des systèmes",
+    "Graph Runtime Studies": "Études des moteurs de graphes",
+    "governance-studies": "Études de la gouvernance",
+    "Information Studies": "Études de l’information",
+    "Artifact Theory": "Théorie des artefacts",
+    "Entropy Studies": "Études de l’entropie",
+    "Emergence Research": "Recherche sur l’émergence",
+    "Anthropic Studies": "Études anthropiques",
+    "Archive field.": "Champ d’archives.",
+    "Archive as a working library": "Les archives comme bibliothèque de travail",
+    "EDITORIAL FRAME": "CADRE ÉDITORIAL",
+    "Start with the hardest part of the problem.": "Commencez par la partie la plus difficile du problème.",
+    "Strategy, identity, product design and engineering can be engaged separately or carried as one coherent process. The scope expands only when the problem requires it.": "Stratégie, identité, design produit et ingénierie peuvent intervenir séparément ou former un processus cohérent. Le périmètre ne s’élargit que lorsque le problème l’exige.",
+    "Three outcomes. One standard of execution.": "Trois résultats. Une même exigence d’exécution.",
+    "Some projects test an idea, others create a cultural experience or solve an operational problem. Every project must make its intent, status and evidence legible.": "Certains projets mettent une idée à l’épreuve, d’autres créent une expérience culturelle ou résolvent un problème opérationnel. Chacun doit rendre lisibles son intention, son statut et ses preuves.",
+    "Electronic Artefacts brings strategy, design, engineering and cultural research into one practice. The studio leads client commissions, develops proprietary technology and publishes its own research and artistic work.": "Electronic Artefacts réunit stratégie, design, ingénierie et recherche culturelle dans une même pratique. Le studio dirige des missions clients, développe ses propres technologies et publie ses recherches et créations artistiques.",
+    "Studio first. Technology and publishing extend the practice.": "D’abord un studio. La technologie et l’édition prolongent la pratique.",
+    "Client work addresses concrete product and communication problems. Proprietary programs turn recurring methods into reusable systems. Research and artistic publishing create room for questions that do not begin with a brief.": "Les missions clients répondent à des problèmes concrets de produit et de communication. Les programmes propriétaires transforment les méthodes récurrentes en systèmes réutilisables. La recherche et l’édition artistique ouvrent un espace aux questions qui ne commencent pas par un brief.",
+    "The structure is deliberately broad, but the responsibility is simple: make complex systems clear, useful and durable.": "La structure est volontairement large, mais la responsabilité reste simple : rendre les systèmes complexes clairs, utiles et durables.",
+    "VASTE is the runtime, Forge the production system, Vestiges the flagship platform, Palimpsests the artistic cycle, and client work the proof under real constraints.": "VASTE est le runtime, Forge le système de production, Vestiges la plateforme phare, Palimpsests le cycle artistique et les missions clients la preuve sous contraintes réelles.",
+    "Technology is also cultural material.": "La technologie est aussi un matériau culturel.",
+    "A system can be infrastructure, a creative instrument or a way to preserve memory. The form changes; the attention to structure and consequence does not.": "Un système peut devenir infrastructure, instrument créatif ou moyen de préserver la mémoire. La forme change ; l’attention portée à la structure et aux conséquences demeure.",
+    "Creative systems made visible.": "Rendre les systèmes créatifs visibles.",
+    "See selected work": "Voir nos expertises",
+    "Start a project": "Démarrer un projet",
+    "Client systems": "Systèmes clients",
+    "Proprietary platforms": "Plateformes propriétaires",
+    "Now showing": "À découvrir",
+    "Current products and public work": "Produits actuels et réalisations publiques",
+    "Culture": "Culture",
+    "Explore VASTE": "Découvrir VASTE",
+    "Why it matters": "Pourquoi c’est important",
+    "See Client Work": "Voir les réalisations clients",
+    "CONTINUE EXPLORING": "POURSUIVRE L’EXPLORATION",
+    "Discuss a project": "Parler d’un projet",
+    "Strategy": "Stratégie",
+    "Product": "Produit",
+    "Identity": "Identité",
+    "Implementation": "Réalisation",
+    "ENTITIES": "ENTITÉS",
+    "Projects": "Projets",
+    "Enter Palimpsests": "Découvrir Palimpsests",
   };
+
+  Object.assign(french, {
+    "Clarify the opportunity, the audience, the constraints and the sequence of decisions before time and budget are committed.": "Clarifier l’opportunité, les publics, les contraintes et l’ordre des décisions avant d’engager du temps et du budget.",
+    "Design identity as a working system: marks, typography, image direction and motion rules that survive beyond the launch window.": "Concevoir l’identité comme un système vivant : signes, typographie, direction de l’image et principes de mouvement capables de durer au-delà du lancement.",
+    "Organise messages, stories and knowledge so a complex subject becomes clear without collapsing into generic marketing language.": "Organiser messages, récits et connaissances pour rendre un sujet complexe accessible sans le réduire à un discours marketing générique.",
+    "Shape interfaces around real tasks, responsive constraints and a visual hierarchy that makes the next action obvious.": "Concevoir les interfaces autour de tâches réelles, des contraintes responsive et d’une hiérarchie visuelle qui rend la prochaine action évidente.",
+    "Connect user needs, business rules and content structures into products that remain understandable as scope grows.": "Relier besoins utilisateurs, règles métier et structures de contenu dans des produits qui restent lisibles à mesure que leur périmètre s’étend.",
+    "Implement the public surface, not only the mock-up: responsive front ends, content systems, APIs, deployment and measurable performance.": "Réaliser le produit public, pas seulement sa maquette : front-ends responsive, systèmes de contenu, API, déploiement et performances mesurables.",
+    "Design data models, workflows, services and maintainable architectures when the work exceeds a single website.": "Concevoir modèles de données, workflows, services et architectures maintenables lorsque le projet dépasse le cadre d’un simple site.",
+    "Prototype workflows, assistants and knowledge structures when automation should create leverage without obscuring authorship or control.": "Prototyper des workflows, assistants et structures de connaissance lorsque l’automatisation doit augmenter les capacités sans masquer la responsabilité ni le contrôle.",
+    "Pick a capability to see the typical tools and outputs.": "Sélectionnez une expertise pour voir les outils et livrables associés.",
+    "Brands and campaigns": "Marques et campagnes",
+    "Identity, editorial direction, original imagery, content systems and launch surfaces.": "Identité, direction éditoriale, images originales, systèmes de contenu et supports de lancement.",
+    "Products and platforms": "Produits et plateformes",
+    "Research, product framing, UX, interface, engineering and operational workflows.": "Recherche, cadrage produit, UX, interface, ingénierie et workflows opérationnels.",
+    "Worlds and experiences": "Univers et expériences",
+    "Narrative, sound, image direction, 3D environments and interactive systems.": "Narration, son, direction de l’image, environnements 3D et systèmes interactifs.",
+    "Knowledge and automation": "Connaissance et automatisation",
+    "Taxonomies, archives, publishing tools, AI workflows and custom technical infrastructure.": "Taxonomies, archives, outils de publication, workflows d’IA et infrastructures techniques sur mesure.",
+    "Capabilities are combined around the problem, then carried through to a live, documented or reproducible result.": "Les expertises sont réunies autour du problème, puis conduites jusqu’à un résultat en ligne, documenté ou reproductible.",
+    "Strategy, diagnosis and decision support": "Stratégie, diagnostic et aide à la décision",
+    "Clarify what is blocked, what matters, what should be built, and what should be stopped before time and budget are spent in the wrong direction.": "Clarifier les blocages, les priorités, ce qui doit être construit ou abandonné avant d’engager temps et budget dans une mauvaise direction.",
+    "Marketing, SEO and visibility systems": "Marketing, SEO et systèmes de visibilité",
+    "Connect positioning, content, technical SEO and analytics so the public surface can be found, understood and improved over time.": "Relier positionnement, contenu, SEO technique et mesure pour qu’un produit public puisse être trouvé, compris et amélioré dans le temps.",
+    "Branding, communication and art direction": "Identité, communication et direction artistique",
+    "Give the project a recognisable voice, visual system and editorial logic that can hold across website, product, deck, social and internal material.": "Donner au projet une voix reconnaissable, un système visuel et une logique éditoriale cohérente sur le site, le produit, les présentations, les réseaux et les supports internes.",
+    "UX, UI and digital product design": "UX, UI et design de produit numérique",
+    "Turn a complex service, tool or content system into a usable product with clear flows, states, components and responsive interface rules.": "Transformer un service, un outil ou un système de contenu complexe en produit utilisable, avec des parcours, états, composants et règles responsive explicites.",
+    "Development, architecture and implementation": "Développement, architecture et mise en œuvre",
+    "Move from strategy to working software: front ends, back ends, content pipelines, APIs, deployment and maintainable systems.": "Passer de la stratégie au logiciel opérationnel : front-ends, back-ends, chaînes de contenu, API, déploiement et systèmes maintenables.",
+    "Research, automation and knowledge systems": "Recherche, automatisation et systèmes de connaissance",
+    "Prototype the less standard work: AI workflows, archives, internal tools and custom systems that connect content, people and process.": "Prototyper les sujets moins conventionnels : workflows d’IA, archives, outils internes et systèmes sur mesure reliant contenus, équipes et processus.",
+    "The problem crosses marketing, design, technology and operations.": "Le problème traverse marketing, design, technologie et opérations.",
+    "Clear decisions, working artefacts, implementation and documentation.": "Décisions claires, livrables opérationnels, mise en œuvre et documentation.",
+    "Product and system framing": "Cadrage produit et système",
+    "Clarify the proposition, users, information model, constraints and technical direction before committing to a large build.": "Clarifier la proposition, les utilisateurs, le modèle d’information, les contraintes et la direction technique avant d’engager une réalisation importante.",
+    "Best for new products, repositioning and ambiguous systems.": "Adapté aux nouveaux produits, aux repositionnements et aux systèmes encore ambigus.",
+    "Design and implementation": "Design et mise en œuvre",
+    "Turn an existing direction into a coherent public product across content structure, UX, interface and development.": "Transformer une direction existante en produit public cohérent, de la structure des contenus au développement en passant par l’UX et l’interface.",
+    "Best for public surfaces, product MVPs and client platforms.": "Adapté aux produits publics, MVP et plateformes clients.",
+    "Platform and workflow redesign": "Refonte de plateforme et de workflow",
+    "Rework a fragmented site or operating process into a maintainable system with clearer ownership and reusable components.": "Transformer un site ou un processus fragmenté en système maintenable, avec des responsabilités claires et des composants réutilisables.",
+    "Typical start: audit and recovery map": "Point de départ habituel : audit et plan de reprise",
+    "Best for existing tools, content systems and operational workflows.": "Adapté aux outils existants, systèmes de contenu et workflows opérationnels.",
+    "Timing, budget and constraints are captured in the contact brief before a proposal is shaped.": "Calendrier, budget et contraintes sont précisés dans le brief de contact avant toute proposition.",
+    "Case pages show public screens, operational views, dossiers, media and performance evidence when available.": "Les études de cas présentent, lorsque disponibles, écrans publics, vues opérationnelles, dossiers, médias et preuves de performance.",
+    "The expected output is a maintained surface, workflow, repository or documented decision, not a loose visual concept.": "Le résultat attendu est un produit maintenu, un workflow, un dépôt ou une décision documentée — pas un simple concept visuel.",
+    "About": "À propos",
+    "Contact": "Contact",
+    "Project spectrum": "Spectre des projets",
+    "Art / product / public proof": "Art / produit / preuve publique",
+    "Research-led": "Issu de la recherche",
+    "Systems, knowledge, perception and governance research provide reusable methods rather than a single fixed doctrine.": "Les recherches sur les systèmes, la connaissance, la perception et la gouvernance produisent des méthodes réutilisables plutôt qu’une doctrine figée.",
+    "Music, image and editorial forms create emotional and cultural access to the wider practice.": "La musique, l’image et les formes éditoriales ouvrent un accès sensible et culturel à l’ensemble de la pratique.",
+    "Models become working systems.": "Les modèles deviennent des systèmes opérationnels.",
+    "Runtimes, products and client platforms turn the research into operational tools and public infrastructure.": "Moteurs, produits et plateformes clients transforment la recherche en outils opérationnels et en infrastructures publiques.",
+    "PROJECT GROUP": "FAMILLE DE PROJETS",
+    "Start here for the cultural and artistic line. These projects turn theory into release, image, sound and narrative.": "Commencez ici pour découvrir la ligne culturelle et artistique : des projets qui transforment la théorie en publication, image, son et récit.",
+    "Album cycle, archive surface and ORETH world.": "Cycle d’albums, archives et univers d’ORETH.",
+    "Flagship products that turn research and runtime architecture into public infrastructure with a concrete economic purpose.": "Des produits phares qui transforment la recherche et l’architecture des moteurs en infrastructures publiques répondant à un objectif économique concret.",
+    "Independent initiatives owned outside Electronic Artefacts, with the studio contributing a defined technical or strategic role.": "Des initiatives indépendantes, extérieures à Electronic Artefacts, auxquelles le studio apporte une contribution technique ou stratégique clairement définie.",
+    "Public and client-facing systems. Open these when you want concrete UX, interface and delivery evidence.": "Des systèmes publics et orientés client, pour examiner des preuves concrètes d’UX, d’interface et de réalisation.",
+    "Platform / Client Work": "Plateforme / mission client",
+    "Photography CRM and portfolio ecosystem.": "Écosystème de portfolio et CRM pour la photographie.",
+    "Live photography portfolio with CRM logic and performance evidence.": "Portfolio photographique en ligne, avec logique CRM et preuves de performance.",
+    "Live site": "Site en ligne",
+    "Simulation Studies": "Études de la simulation",
+    "RESEARCH / ELECTRONIC ARTEFACTS": "RECHERCHE / ELECTRONIC ARTEFACTS",
+    "Systems & infrastructure": "Systèmes et infrastructures",
+    "How can complex systems remain legible, adaptable and governed?": "Comment des systèmes complexes peuvent-ils rester lisibles, adaptables et gouvernables ?",
+    "Runtime architecture, information structures, simulation and organisational governance.": "Architecture des moteurs, structures d’information, simulation et gouvernance organisationnelle.",
+    "How does knowledge persist, circulate and become actionable?": "Comment la connaissance persiste-t-elle, circule-t-elle et devient-elle exploitable ?",
+    "Taxonomy, memory, archives and the relationships that make knowledge discoverable.": "Taxonomie, mémoire, archives et relations qui rendent la connaissance accessible.",
+    "What appears when rules, people and environments interact?": "Que se produit-il lorsque règles, personnes et environnements interagissent ?",
+    "Emergence, entropy, human interpretation and the boundary between observation and construction.": "Émergence, entropie, interprétation humaine et frontière entre observation et construction.",
+    "Connect references, entities, prior experiments and adjacent disciplines.": "Relier références, entités, expérimentations antérieures et disciplines voisines.",
+    "Build the smallest useful prototype, model, interface or artefact.": "Construire le prototype, modèle, interface ou artefact utile le plus resserré possible.",
+    "Move the result into a program, project, document or reusable method.": "Transformer le résultat en programme, projet, document ou méthode réutilisable.",
+    "10 areas of inquiry. Open any field to see the projects, notes and references around it.": "Dix champs d’étude. Ouvrez-en un pour découvrir les projets, notes et références qui l’entourent.",
+    "Studies": "Études",
+    "How do complex structures appear from simple rules?": "Comment des structures complexes émergent-elles de règles simples ?",
+    "What is the minimum necessary for a universe to execute events?": "Quel est le minimum nécessaire pour qu’un univers puisse exécuter des événements ?",
+    "Theory": "Théorie",
+    "research": "recherche",
+    "How do systems organize themselves and remain coherent?": "Comment les systèmes s’organisent-ils et conservent-ils leur cohérence ?",
+    "How is information retained, transformed and transmitted?": "Comment l’information est-elle conservée, transformée et transmise ?",
+    "Bridge between VOID and PALIMPSESTS through memory, identity, loss, love and transmission.": "Un pont entre VOID et PALIMPSESTS, par la mémoire, l’identité, la perte, l’amour et la transmission.",
+    "How do signals survive degradation and leave traces?": "Comment les signaux survivent-ils à leur dégradation et laissent-ils des traces ?",
+    "How are artefacts composed and reinterpreted?": "Comment les artefacts sont-ils composés et réinterprétés ?",
+    "How do graph runtimes execute and propagate context?": "Comment les moteurs de graphes exécutent-ils et propagent-ils le contexte ?",
+    "How do systems simulate behavior and feedback?": "Comment les systèmes simulent-ils comportements et boucles de rétroaction ?",
+    "Active Research": "Recherche active",
+    "Runtime Systems": "Systèmes d’exécution",
+    "Experimental production system for artefact generation and refinement.": "Système de production expérimental pour générer et affiner des artefacts.",
+    "Research Archive": "Archives de recherche",
+    "Archived distributed oracle system for prediction, workers and data pipelines.": "Système distribué d’oracles archivé, consacré à la prédiction, aux workers et aux pipelines de données.",
+    "Research Log": "Journal de recherche",
+    "Early research threads that led to Electronic Artefacts.": "Premiers axes de recherche à l’origine d’Electronic Artefacts.",
+    "Visual reference from the studio stream.": "Référence visuelle issue du flux du studio.",
+    "ARCHIVE / LIVING MEMORY": "ARCHIVES / MÉMOIRE VIVANTE",
+    "ARCHIVE CONSOLE": "CONSOLE DES ARCHIVES",
+    "Fragments, filters and links drift together.": "Fragments, filtres et liens se déplacent ensemble.",
+    "ARCHIVE TAXONOMY": "TAXONOMIE DES ARCHIVES",
+    "RESEARCH LOG": "JOURNAL DE RECHERCHE",
+    "Digital Memory Systems": "Systèmes de mémoire numérique",
+    "Opening audio artefact tied to the Palimpsests cycle.": "Artefact sonore d’ouverture lié au cycle Palimpsests.",
+    "FIELD": "CHAMP",
+    "A sonic form built from repeated patterns and gradual growth.": "Une forme sonore construite par motifs répétés et progression graduelle.",
+    "Title piece of the cycle.": "Pièce-titre du cycle.",
+    "anthropic-studies": "études-anthropiques",
+    "Hot, bright and unstable piece in the album flow.": "Pièce vive, lumineuse et instable dans le déroulé de l’album.",
+    "Percussive and weathered fragment of the cycle.": "Fragment percussif et érodé du cycle.",
+    "runtime-theory": "théorie-du-runtime",
+    "Long-form title piece that carries the narrative tone of the cycle.": "Longue pièce-titre qui porte la tonalité narrative du cycle.",
+    "Final fragment currently in the public cycle.": "Dernier fragment actuellement publié dans le cycle.",
+    "Damaged pulse fragment for the Experiences act.": "Fragment de pulsation altérée pour l’acte Experiences.",
+    "Controlled synthetic fragment from the Transcendence act.": "Fragment synthétique maîtrisé de l’acte Transcendence.",
+    "Memory-pressure fragment from the Transcendence act.": "Fragment sous pression mémorielle de l’acte Transcendence.",
+    "Impact fragment closing the Transcendence act.": "Fragment d’impact qui clôt l’acte Transcendence.",
+    "Closing fragment for the Heritage act.": "Fragment de clôture de l’acte Heritage.",
+    "information-studies": "études-de-l’information",
+    "Research → Programs → Projects → Archive": "Recherche → Programmes → Projets → Archives",
+    "Investigations and hypotheses.": "Recherches et hypothèses.",
+    "Research produces the questions, references and experiments that define the next move.": "La recherche produit les questions, références et expérimentations qui définissent la suite.",
+    "Programs turn research into infrastructure that can be used again in other contexts.": "Les programmes transforment la recherche en infrastructures réutilisables dans d’autres contextes.",
+    "Projects translate the internal system into work that can be seen, used and published.": "Les projets traduisent le système interne en réalisations visibles, utilisables et publiables.",
+    "Archive keeps the structure visible over time and makes older layers available again.": "Les archives maintiennent la structure lisible dans le temps et rendent les couches antérieures de nouveau accessibles.",
+    "The central program that anchors the stack and informs how systems are modeled.": "Le programme central qui structure l’ensemble et guide la modélisation des systèmes.",
+    "The production layer that turns shared logic into multiple families of outputs.": "La couche de production qui décline une logique commune en plusieurs familles de résultats.",
+    "The album cycle where theory becomes music, fragments and narrative residue.": "Le cycle d’albums où la théorie devient musique, fragments et résidus narratifs.",
+    "A knowledge infrastructure for culture and craft, designed to map, preserve and activate human know-how.": "Une infrastructure de connaissance pour la culture et les métiers, conçue pour cartographier, préserver et activer les savoir-faire humains.",
+    "External commissions like L’Œil de Meg and AtypikHouse show the system in use.": "Des commandes comme L’Œil de Meg et AtypikHouse montrent le système à l’œuvre.",
+    "That is why the ecosystem can hold research, software, projects, archive and production without losing continuity.": "C’est ainsi que recherche, logiciels, projets, archives et production restent reliés sans perdre leur continuité.",
+    "Design systems. Create artefacts. Shape futures.": "Concevoir des systèmes. Créer des artefacts. Donner forme aux futurs.",
+    "UnionMob spherical visual composed of compass interfaces and UnionMob marks": "Visuel sphérique d’UnionMob composé d’interfaces de boussole et de signes UnionMob",
+    "L’Œil de Meg wordmark": "Logotype de L’Œil de Meg",
+    "Palimpsests portrait visual": "Portrait visuel de Palimpsests",
+    "AtypikHouse tablet dashboard": "Tableau de bord AtypikHouse sur tablette",
+    "L’Œil de Meg PageSpeed desktop report": "Rapport PageSpeed desktop de L’Œil de Meg"
+  });
+
+  Object.assign(french, {
+    "Available languages": "Langues disponibles",
+    "Open the Electronic Artefacts Instagram channel": "Ouvrir le compte Instagram d’Electronic Artefacts",
+    "Open the CreativeStuff.jpg Instagram channel": "Ouvrir le compte Instagram de CreativeStuff.jpg",
+    "Portrait of ORETH for banner use": "Portrait d’ORETH utilisé dans la bannière",
+    "Selected work overview": "Vue d’ensemble des réalisations sélectionnées",
+    "Selected work previews": "Aperçus des réalisations sélectionnées",
+    "Interactive map of Electronic Artefacts capabilities": "Carte interactive des expertises d’Electronic Artefacts",
+    "What the combined practice can produce": "Résultats possibles en combinant les expertises",
+    "Project media previews": "Aperçus visuels des projets",
+    "Project groups": "Familles de projets",
+    "Client Products summary": "Synthèse des produits clients",
+    "Program access formats": "Formats d’accès aux programmes",
+    "Program statistics": "Indicateurs des programmes",
+    "Program exchange flow": "Flux d’échange entre les programmes",
+    "Project brief signal flow": "Parcours de qualification du brief",
+    "Contact workflow statistics": "Indicateurs du parcours de contact",
+    "Project sections": "Sections du projet",
+    "Project dossier sections": "Sections du dossier projet",
+    "01 / Problem": "01 / Problème",
+    "02 / Context": "02 / Contexte",
+    "03 / Brief": "03 / Brief",
+    "Runtime Theory": "Théorie du runtime",
+    "◌ External CTO partnership": "◌ Partenariat CTO externe",
+    "Vestiges monogram for the living knowledge platform.": "Monogramme de Vestiges pour la plateforme de connaissance vivante.",
+    "Wordmark version of the logo.": "Version typographique du logo.",
+    "Choose ARCA, VOID or OracleHub for architectural history, traceability or distributed-data patterns.": "Choisissez ARCA, VOID ou OracleHub pour l’histoire de l’architecture, la traçabilité ou les modèles de données distribuées.",
+    "Core Systems": "Systèmes centraux",
+    "Intelligence Systems": "Systèmes d’intelligence",
+    "Production Systems": "Systèmes de production",
+    "Cultural Works": "Créations culturelles",
+    "Projects where theory becomes a release, an image, a sound or a narrative experience.": "Des projets où la théorie devient publication, image, son ou expérience narrative.",
+    "Knowledge Infrastructure": "Infrastructures de connaissance",
+    "External Partnerships": "Partenariats externes",
+    "Client Products": "Produits clients",
+    "Commissioned products and public platforms with concrete evidence of UX, interface and delivery.": "Des produits commandités et plateformes publiques, étayés par des preuves concrètes d’UX, d’interface et de réalisation.",
+    "Cultural work": "Création culturelle",
+    "Product platform": "Plateforme produit",
+    "Client delivery": "Réalisation client",
+    "Repository access": "Accès au dépôt",
+    "Pilot": "Pilote",
+    "Licensing": "Licence",
+    "Live computation field": "Champ de calcul actif",
+    "01 / Repository access": "01 / Accès au dépôt",
+    "Review the actual program.": "Examiner le programme réel.",
+    "For qualified technical conversations, access can include private repositories, architecture notes, setup constraints and roadmap context.": "Pour les échanges techniques qualifiés, l’accès peut inclure les dépôts privés, les notes d’architecture, les contraintes d’installation et le contexte de la feuille de route.",
+    "02 / Technical pilot": "02 / Pilote technique",
+    "Technical pilot": "Pilote technique",
+    "A pilot turns one program into a contained implementation with agreed inputs, outputs, validation criteria and a clear decision point.": "Un pilote transforme un programme en mise en œuvre circonscrite, avec entrées, résultats, critères de validation et point de décision convenus.",
+    "03 / Implementation": "03 / Mise en œuvre",
+    "Adapt the program to production.": "Adapter le programme à la production.",
+    "Programs can be used as implementation foundations for public systems, internal tools, cultural platforms and knowledge products.": "Les programmes peuvent servir de fondation à des systèmes publics, des outils internes, des plateformes culturelles et des produits de connaissance.",
+    "04 / Licensing": "04 / Licence",
+    "Use program logic in your own context.": "Intégrer la logique du programme à votre propre contexte.",
+    "For longer partnerships, the conversation can move toward licensing, white-label use, dedicated modules or shared product development.": "Pour les partenariats de long terme, l’échange peut porter sur une licence, une utilisation en marque blanche, des modules dédiés ou un développement produit partagé.",
+    "PROGRAM": "PROGRAMME",
+    "◌ Active Research": "◌ Recherche active",
+    "◌ Research": "◌ Recherche",
+    "◌ research": "◌ recherche",
+    "VASTE is sold as the core runtime foundation for graph architectures, contextual execution, identity systems and modular knowledge products.": "VASTE est proposé comme fondation d’exécution pour les architectures de graphes, l’exécution contextuelle, les systèmes d’identité et les produits de connaissance modulaires.",
+    "Access": "Accès",
+    "Private repository review": "Examen du dépôt privé",
+    "Knowledge and product platforms": "Plateformes de connaissance et produits numériques",
+    "Forge packages artefact creation, transformation and refinement as an evaluable production system for media, 3D and future output families.": "Forge réunit création, transformation et affinage d’artefacts dans un système de production évaluable pour les médias, la 3D et de futures familles de résultats.",
+    "Generation and refinement pilot": "Pilote de génération et d’affinage",
+    "Studios and R&D teams": "Studios et équipes R&D",
+    "Audio intelligence research": "Recherche en intelligence audio",
+    "ORETH packages audio analysis, event detection and adaptive-learning experiments for partners exploring sonic systems and cultural research.": "ORETH réunit analyse audio, détection d’événements et expérimentations d’apprentissage adaptatif pour les partenaires qui explorent les systèmes sonores et la recherche culturelle.",
+    "Research prototype": "Prototype de recherche",
+    "Research repository review": "Examen du dépôt de recherche",
+    "Audio, culture and research partners": "Partenaires des secteurs audio, culturels et scientifiques",
+    "FRAMEWORK": "CADRE TECHNIQUE",
+    "Public-surface starter": "Socle pour produits publics",
+    "The lightweight template is the practical production base for fast public showcases, small product surfaces and low-maintenance sites.": "Le template léger constitue une base de production pragmatique pour des vitrines rapides, des produits publics ciblés et des sites faciles à maintenir.",
+    "Repo transfer or implementation": "Transfert du dépôt ou mise en œuvre",
+    "Small teams and cultural projects": "Petites équipes et projets culturels",
+    "Static Surface": "Interface statique",
+    "Experimental Software Engine": "Moteur logiciel expérimental",
+    "Architecture archive": "Archives d’architecture",
+    "Research and systems partners": "Partenaires de recherche et systèmes",
+    "Experimental Engine": "Moteur expérimental",
+    "◌ Research Archive": "◌ Archives de recherche",
+    "Distributed-data archive": "Archives de données distribuées",
+    "Data and prediction systems": "Systèmes de données et de prédiction",
+    "ARCA preserves the asset, traceability and certification lineage that later moved into the broader VASTE runtime questions.": "ARCA préserve la filiation des actifs, de la traçabilité et de la certification, ensuite intégrée aux questions plus larges du moteur VASTE.",
+    "Asset systems / certification": "Systèmes d’actifs / certification",
+    "Traceability archive": "Archives de traçabilité",
+    "Documentation and lineage review": "Examen de la documentation et de la filiation",
+    "Asset, archive and authenticity systems": "Systèmes d’actifs, d’archives et d’authenticité",
+    "Target program": "Programme visé",
+    "Access window": "Période d’accès",
+    "Qualify the program": "Qualifier le programme",
+    "Name the program, use case, organization, technical lead and expected access window.": "Précisez le programme, le cas d’usage, l’organisation, le responsable technique et la période d’accès souhaitée.",
+    "Scope the review": "Définir le périmètre de l’examen",
+    "Define whether you need repository access, documentation, a demo, advisory work, a pilot or a license conversation.": "Précisez si vous avez besoin d’un accès au dépôt, de documentation, d’une démonstration, de conseil, d’un pilote ou d’un échange sur la licence.",
+    "Grant the right access": "Accorder le bon niveau d’accès",
+    "Access is scoped through GitHub, shared documents or a guided technical session depending on maturity and confidentiality.": "Selon la maturité et le niveau de confidentialité, l’accès passe par GitHub, des documents partagés ou une session technique guidée.",
+    "Decide the engagement": "Décider du format de collaboration",
+    "The review ends with a clear next step: no fit, paid pilot, implementation scope, licensing track or partnership roadmap.": "L’examen aboutit à une décision claire : absence d’adéquation, pilote rémunéré, périmètre de mise en œuvre, voie de licence ou feuille de route partenariale.",
+    "Repository review": "Examen du dépôt",
+    "Pilot or license": "Pilote ou licence",
+    "Research, programs, projects and archive stay connected so code access can be explained through evidence and lineage.": "Recherche, programmes, projets et archives restent reliés afin que l’accès au code puisse être expliqué par ses preuves et sa filiation.",
+    "Runtime, identity and knowledge infrastructure": "Infrastructure d’exécution, d’identité et de connaissance",
+    "The core program coordinates identity, permissions, context and long-lived knowledge structures.": "Le programme central coordonne identité, permissions, contexte et structures de connaissance durables.",
+    "Identity Systems": "Systèmes d’identité",
+    "Simulation Systems": "Systèmes de simulation",
+    "Runtime Research": "Recherche sur les moteurs",
+    "Artefact production and transformation": "Production et transformation d’artefacts",
+    "Forge turns production research into pipelines that can generate, inherit, evaluate and refine families of digital artefacts.": "Forge transforme la recherche en production en pipelines capables de générer, faire hériter, évaluer et affiner des familles d’artefacts numériques.",
+    "Genome Systems": "Systèmes génomiques",
+    "Creative Production Research": "Recherche en production créative",
+    "Open Forge": "Ouvrir Forge",
+    "Fast public-surface implementation": "Réalisation rapide de produits publics",
+    "The lightweight template packages the site system used for small production surfaces, public showcases and low-maintenance delivery.": "Le template léger réunit le système de site utilisé pour les petits produits publics, les vitrines et les réalisations à faible maintenance.",
+    "Open template": "Ouvrir le template",
+    "Distributed data and prediction lineage": "Filiation des données distribuées et de la prédiction",
+    "OracleHub explored asynchronous workers, specialised oracle entities and dynamic data pipelines later generalised elsewhere.": "OracleHub a exploré les workers asynchrones, les entités-oracles spécialisées et les pipelines de données dynamiques, ensuite généralisés dans d’autres systèmes.",
+    "Oracle Systems": "Systèmes d’oracles",
+    "Open OracleHub": "Ouvrir OracleHub",
+    "Runtimes, interfaces and connected product systems": "Moteurs, interfaces et systèmes produits connectés",
+    "Used where shared models, connected data, interactive product surfaces and repository-level contracts need to evolve together.": "Utilisé lorsque modèles partagés, données connectées, produits interactifs et contrats au niveau du dépôt doivent évoluer ensemble.",
+    "Performance-sensitive production and pipeline research": "Production sensible aux performances et recherche sur les pipelines",
+    "Used for experiments where execution control, reliability and scalable transformation pipelines are central.": "Utilisé pour les expérimentations où le contrôle de l’exécution, la fiabilité et la montée en charge des pipelines de transformation sont centraux.",
+    "VOID archive": "Archives VOID",
+    "Transferable public surfaces and fast delivery": "Produits publics transférables et réalisation rapide",
+    "Used for public program pages, small product surfaces and implementation packages that should stay inspectable and portable.": "Utilisé pour les pages publiques de programmes, les petits produits et les livrables techniques qui doivent rester inspectables et portables.",
+    "Data processing, analysis and asynchronous research": "Traitement de données, analyse et recherche asynchrone",
+    "Used for specialised workers, data pipelines, experimental analysis and rapid technical investigation.": "Utilisé pour les workers spécialisés, les pipelines de données, l’analyse expérimentale et l’investigation technique rapide.",
+    "Rapid research": "Recherche rapide",
+    "Start with VASTE when the problem is identity, permissions, contextual execution or knowledge infrastructure.": "Commencez par VASTE lorsque le problème concerne l’identité, les permissions, l’exécution contextuelle ou l’infrastructure de connaissance.",
+    "Start with Forge when the problem is repeated creation, transformation, refinement or generation of digital artefacts.": "Commencez par Forge lorsque le problème porte sur la création répétée, la transformation, l’affinage ou la génération d’artefacts numériques.",
+    "Need a public surface": "Besoin d’un produit public",
+    "Start with the lightweight template when the goal is to ship a precise site, catalogue, showcase or knowledge interface fast.": "Commencez par le template léger lorsque l’objectif est de livrer rapidement un site, un catalogue, une vitrine ou une interface de connaissance précise."
+  });
 
   const normalizeWhitespace = (value) => value.replace(/\s+/g, " ").trim();
 
@@ -16874,7 +17282,20 @@ window.EA_SEARCH = {
       const trailing = value.match(/\s*$/)?.[0] || "";
       return `${leading}${count} ${labels[label]}${trailing}`;
     }
-    const translated = french[normalized];
+    let translated = french[normalized];
+    if (!translated) {
+      const openProject = normalized.match(/^Open (.+) project$/);
+      const openDetail = normalized.match(/^Open (.+) detail$/);
+      const openEntry = normalized.match(/^Open (.+)$/);
+      if (openProject) translated = `Ouvrir le projet ${french[openProject[1]] || openProject[1]}`;
+      else if (openDetail) translated = `Ouvrir le dossier ${french[openDetail[1]] || openDetail[1]}`;
+      else if (openEntry) translated = `Ouvrir ${french[openEntry[1]] || openEntry[1]}`;
+    }
+    if (!translated && normalized.includes(" - ")) {
+      const parts = normalized.split(" - ");
+      const localizedParts = parts.map((part) => french[part] || part);
+      if (localizedParts.some((part, index) => part !== parts[index])) translated = localizedParts.join(" - ");
+    }
     if (!translated) return value;
     const leading = value.match(/^\s*/)?.[0] || "";
     const trailing = value.match(/\s*$/)?.[0] || "";
@@ -16937,8 +17358,8 @@ window.EA_SEARCH = {
       return elements;
     };
 
-    elementsIncludingRoot("[placeholder], [title], [aria-label]").forEach((element) => {
-      ["placeholder", "title", "aria-label"].forEach((attribute) => {
+    elementsIncludingRoot("[placeholder], [title], [aria-label], [alt]").forEach((element) => {
+      ["placeholder", "title", "aria-label", "alt"].forEach((attribute) => {
         const value = element.getAttribute(attribute);
         if (!value) return;
         const translated = translateText(value);
@@ -16984,7 +17405,7 @@ window.EA_SEARCH = {
     });
     observer.observe(document.documentElement, {
       attributes: true,
-      attributeFilter: ["placeholder", "title", "aria-label", "href"],
+      attributeFilter: ["placeholder", "title", "aria-label", "alt", "href"],
       characterData: true,
       childList: true,
       subtree: true,
@@ -18311,9 +18732,9 @@ window.EA_SEARCH = {
   const vasteBanner = () => `
     <section class="zone-card hero latests-panel" id="latests">
       <div class="section-head">
-        <p class="eyebrow">PROOF FIRST</p>
-        <h2>One runtime foundation.</h2>
-        <p class="lede">Understand the technical line behind how the studio thinks and builds.</p>
+        <p class="eyebrow">PROPRIETARY TECHNOLOGY</p>
+        <h2>VASTE is the runtime behind the studio’s knowledge systems.</h2>
+        <p class="lede">It provides the shared logic for identity, context, permissions and graph-based products.</p>
       </div>
       <div class="latests-grid latests-grid--cinematic">
         ${(() => {
@@ -18339,7 +18760,7 @@ window.EA_SEARCH = {
             <div class="vast-banner__content">
               <p class="card__meta">RUNTIME FOUNDATION</p>
               <h3 class="vast-banner__title">VASTE</h3>
-              <p class="vast-banner__copy">Open the proprietary program behind the identity and knowledge-system work.</p>
+              <p class="vast-banner__copy">A reusable foundation for platforms where entities, relationships and permissions must remain coherent as the system grows.</p>
               <div class="pill-cloud vast-banner__chips" aria-label="VASTE attributes">
                 <span class="chip">Runtime</span>
                 <span class="chip">Graph systems</span>
@@ -18375,13 +18796,13 @@ window.EA_SEARCH = {
         <div class="selected-works-panel__head">
           <div class="section-head">
             <p class="eyebrow">WORK</p>
-            <h2>Selected works.</h2>
-            <p class="lede">A compact path through client delivery, proprietary platforms and cultural publishing.</p>
+            <h2>Selected work, with the role and status made explicit.</h2>
+            <p class="lede">Client delivery, proprietary platforms and cultural publishing — three forms of the same exacting practice.</p>
           </div>
           <aside class="panel panel--soft selected-works-panel__info">
             <p class="card__meta">CURATED PATH</p>
             <strong>${esc(routeCount)}</strong>
-            <p class="card__copy">A concise selection before you enter the full project catalogue or archive.</p>
+            <p class="card__copy">Begin with the lead project, then compare work across product, technology and culture.</p>
             ${metricRail(
               [
                 { label: "Lead", value: lead.title || lead.category || lead.type || "Project", note: lead.statusLabel || lead.status || "", tone: "system", fill: 0.9 },
@@ -18452,13 +18873,13 @@ window.EA_SEARCH = {
   const routeCard = (item = {}) => {
     const href = item.href || "";
     const target = item.target ? ` target="${esc(item.target)}" rel="noreferrer"` : "";
-    const label = item.ariaLabel || `${item.cta || "Open"} ${item.title || "destination"}`;
+    const label = item.ariaLabel || item.cta || `Open ${item.title || "destination"}`;
     return `
       <article class="panel panel--soft card-link-surface" ${href ? cardLinkAttrs(href, label) : ""}>
         <p class="card__meta">${esc(item.kicker || "")}</p>
         <h3 class="card__title">${esc(item.title || "")}</h3>
         <p class="card__copy">${esc(item.copy || "")}</p>
-        ${item.reason ? `<p class="card__meta">Why it matters</p><p class="card__copy">${esc(item.reason)}</p>` : ""}
+        ${item.reason ? `<p class="card__copy">${esc(item.reason)}</p>` : ""}
         <div class="link-row">
           ${href ? `<a class="tag" href="${esc(href)}"${target}>${esc(item.cta || "Open")}</a>` : ""}
         </div>
@@ -18639,9 +19060,9 @@ window.EA_SEARCH = {
 
       if (page === "home") {
         return navigationSection({
-          eyebrow: "CONTINUE EXPLORING",
-          title: "Use the ecosystem as a map, not a grid.",
-          copy: "Where you go next depends on what brought you here. These paths lead directly to the work, research, systems or archives that matter to you.",
+          eyebrow: "GO DEEPER",
+          title: "Choose the next level of detail.",
+          copy: "Move from visible outcomes to the systems, research or archive behind them.",
           cards: [
             { kicker: "Home", title: "Projects", copy: "Move into public works and collaborations.", reason: "Best if you want to see what the studio makes.", cta: "Browse Projects", href: "./projects.html" },
             { kicker: "Home", title: "Research", copy: "Explore the theoretical and experimental branches.", reason: "Best if you want to understand the thinking behind the work.", cta: "Explore Research", href: "./research.html" },
@@ -18653,98 +19074,98 @@ window.EA_SEARCH = {
 
       if (page === "work") {
         return navigationSection({
-          eyebrow: "CONTINUE EXPLORING",
-          title: "From client-facing work to the wider ecosystem.",
-          copy: "Work is the applied surface. These paths explain what sits around it.",
+          eyebrow: "NEXT",
+          title: "See how the work connects.",
+          copy: "Compare outcomes, understand the studio model or bring a concrete need into focus.",
           cards: [
-            { kicker: "Next", title: "Projects", copy: "Compare applied work with artistic translations.", reason: "Useful if you want the broader project field.", cta: "Browse Projects", href: "./projects.html" },
-            { kicker: "Next", title: "About", copy: "Understand how the ecosystem is organized.", reason: "Useful if you want the trunk before the branches.", cta: "Understand the Ecosystem", href: "./about.html" },
-            { kicker: "Next", title: "Contact", copy: "Start a commission or collaboration.", reason: "Useful if you already know you want to engage.", cta: "Start a Collaboration", href: "./contact.html" },
-            { kicker: "Next", title: "Archive", copy: "See the memory layer behind the work.", reason: "Useful if you want background and precedent.", cta: "Open Archive", href: "./archive.html" },
+            { kicker: "Outcomes", title: "Projects", copy: "Compare client delivery with proprietary and cultural work.", cta: "View projects", href: "./projects.html" },
+            { kicker: "Studio", title: "About", copy: "Understand the studio model and the role of each practice.", cta: "About the studio", href: "./about.html" },
+            { kicker: "Brief", title: "Contact", copy: "Bring a product, system or partnership into focus.", cta: "Start a conversation", href: "./contact.html" },
+            { kicker: "Precedent", title: "Archive", copy: "Review the traces behind current work.", cta: "Browse the archive", href: "./archive.html" },
           ],
         });
       }
 
       if (page === "projects") {
         return navigationSection({
-          eyebrow: "CONTINUE EXPLORING",
-          title: "Projects sit between research, production and archive.",
-          copy: "Use these paths to move from the project map to the layers around it.",
+          eyebrow: "NEXT",
+          title: "Follow the project to its source or its application.",
+          copy: "Move from individual outcomes to client work, research, precedent or a new brief.",
           cards: [
-            { kicker: "Next", title: "Work", copy: "Return to the studio and client-facing layer.", reason: "Best if you need the applied side.", cta: "Return to Work", href: "./work.html" },
-            { kicker: "Next", title: "Research", copy: "See the investigations that feed the projects.", reason: "Best if you want the thinking layer.", cta: "Explore Research", href: "./research.html" },
-            { kicker: "Next", title: "Archive", copy: "Browse older fragments and traces.", reason: "Best if you want depth and continuity.", cta: "Open Archive", href: "./archive.html" },
-            { kicker: "Next", title: "Contact", copy: "Start a similar project or ask for a collaboration.", reason: "Best if you want to initiate a brief.", cta: "Start a Collaboration", href: "./contact.html" },
+            { kicker: "Client work", title: "Work", copy: "See how the studio handles commissioned products and platforms.", cta: "View client work", href: "./work.html" },
+            { kicker: "Source", title: "Research", copy: "Read the investigations that inform the projects.", cta: "Explore research", href: "./research.html" },
+            { kicker: "Lineage", title: "Archive", copy: "Trace earlier versions, fragments and references.", cta: "Browse the archive", href: "./archive.html" },
+            { kicker: "New project", title: "Contact", copy: "Turn an adjacent idea into a focused first conversation.", cta: "Start a conversation", href: "./contact.html" },
           ],
         });
       }
 
       if (page === "programs") {
         return navigationSection({
-          eyebrow: "CONTINUE EXPLORING",
-          title: "Programs connect the runtime to the rest of the ecosystem.",
-          copy: "Use these paths to move from the software stack to its use, context and lineage.",
+          eyebrow: "NEXT",
+          title: "Evaluate the system in context.",
+          copy: "Examine the core runtime, the research behind it, the studio model or a possible implementation.",
           cards: [
-            { kicker: "Next", title: "VASTE", copy: "Go to the core runtime and strategic spine.", reason: "The main program explains the wider stack.", cta: "Explore VASTE", href: "./vaste.html" },
-            { kicker: "Next", title: "Research", copy: "See the theories and methods that inform the stack.", reason: "Useful when you want the conceptual layer.", cta: "Explore Research", href: "./research.html" },
-            { kicker: "Next", title: "About", copy: "Understand how programs fit into the ecosystem.", reason: "Useful for orientation and collaboration.", cta: "Understand the Ecosystem", href: "./about.html" },
-            { kicker: "Next", title: "Contact", copy: "Discuss a program, partnership or implementation.", reason: "Useful when the stack becomes a brief.", cta: "Start a Collaboration", href: "./contact.html" },
+            { kicker: "Core runtime", title: "VASTE", copy: "Review the identity, context and permissions layer shared across systems.", cta: "Explore VASTE", href: "./vaste.html" },
+            { kicker: "Foundations", title: "Research", copy: "See the theories and methods that inform the stack.", cta: "Explore research", href: "./research.html" },
+            { kicker: "Studio", title: "About", copy: "Understand how proprietary systems support the wider practice.", cta: "About the studio", href: "./about.html" },
+            { kicker: "Implementation", title: "Contact", copy: "Discuss a pilot, licence or technical partnership.", cta: "Discuss a program", href: "./contact.html" },
           ],
         });
       }
 
       if (page === "research") {
         return navigationSection({
-          eyebrow: "CONTINUE EXPLORING",
-          title: "Research is the source of the ecosystem's branches.",
-          copy: "These paths show where the investigations go once they leave the page.",
+          eyebrow: "NEXT",
+          title: "See what the research becomes.",
+          copy: "Follow an investigation into a working system, a public project or the archive that preserves its lineage.",
           cards: [
-            { kicker: "Next", title: "Programs", copy: "See the systems that grow out of research.", reason: "Useful if you want the operational expression.", cta: "View Programs", href: "./programs.html" },
-            { kicker: "Next", title: "Projects", copy: "See how research translates into public works.", reason: "Useful if you want outputs rather than notes.", cta: "Browse Projects", href: "./projects.html" },
-            { kicker: "Next", title: "Archive", copy: "Browse historical fragments and prior lines.", reason: "Useful for lineage and context.", cta: "Open Archive", href: "./archive.html" },
-            { kicker: "Next", title: "About", copy: "Return to the trunk and system model.", reason: "Useful when you need the ecosystem map.", cta: "Understand the Ecosystem", href: "./about.html" },
+            { kicker: "Systems", title: "Programs", copy: "Review the software that turns recurring research into reusable infrastructure.", cta: "View programs", href: "./programs.html" },
+            { kicker: "Outcomes", title: "Projects", copy: "See how research becomes products, platforms and cultural work.", cta: "View projects", href: "./projects.html" },
+            { kicker: "Lineage", title: "Archive", copy: "Browse the traces and prior versions that keep the work accountable.", cta: "Browse the archive", href: "./archive.html" },
+            { kicker: "Context", title: "About", copy: "Understand the role of research in the studio as a whole.", cta: "About the studio", href: "./about.html" },
           ],
         });
       }
 
       if (page === "archive") {
         return navigationSection({
-          eyebrow: "CONTINUE EXPLORING",
-          title: "The archive is a memory layer, not an endpoint.",
-          copy: "Use these paths to move from fragments into the living ecosystem.",
+          eyebrow: "NEXT",
+          title: "Return each trace to living work.",
+          copy: "The archive gains meaning when it reconnects with a current project, an active investigation or a new conversation.",
           cards: [
-            { kicker: "Next", title: "Projects", copy: "See the current public-facing works.", reason: "Useful if you want what is active now.", cta: "Browse Projects", href: "./projects.html" },
-            { kicker: "Next", title: "Research", copy: "Go back to the working investigations.", reason: "Useful if you want the source material.", cta: "Explore Research", href: "./research.html" },
-            { kicker: "Next", title: "Contact", copy: "Ask for a collaboration or specific trace.", reason: "Useful when the archive leads to action.", cta: "Start a Collaboration", href: "./contact.html" },
-            { kicker: "Next", title: "About", copy: "Re-read the ecosystem structure.", reason: "Useful if you need the trunk again.", cta: "Understand the Ecosystem", href: "./about.html" },
+            { kicker: "Current work", title: "Projects", copy: "See the public outcomes connected to these traces.", cta: "View projects", href: "./projects.html" },
+            { kicker: "Source", title: "Research", copy: "Return to the questions and methods still in progress.", cta: "Explore research", href: "./research.html" },
+            { kicker: "Request", title: "Contact", copy: "Ask about a specific trace, collaboration or reuse context.", cta: "Contact the studio", href: "./contact.html" },
+            { kicker: "Context", title: "About", copy: "Place the archive within the studio’s broader practice.", cta: "About the studio", href: "./about.html" },
           ],
         });
       }
 
       if (page === "about") {
         return navigationSection({
-          eyebrow: "CONTINUE EXPLORING",
-          title: "After the ecosystem model, follow the branches.",
-          copy: "These pages show the parts of the system that matter most once the trunk is clear.",
+          eyebrow: "NEXT",
+          title: "Choose the part of the practice you want to examine.",
+          copy: "Move from the studio model to its research, systems, projects or a direct conversation.",
           cards: [
-            { kicker: "Next", title: "Research", copy: "See where investigations begin.", reason: "Useful when you want the conceptual source.", cta: "Explore Research", href: "./research.html" },
-            { kicker: "Next", title: "Programs", copy: "Understand the software systems and runtimes.", reason: "Useful when you want the operational layer.", cta: "View Programs", href: "./programs.html" },
-            { kicker: "Next", title: "Projects", copy: "See how the system becomes public work.", reason: "Useful when you want outputs and proof.", cta: "Browse Projects", href: "./projects.html" },
-            { kicker: "Next", title: "Contact", copy: "Move from orientation to direct conversation.", reason: "Useful once the ecosystem makes sense.", cta: "Start a Collaboration", href: "./contact.html" },
+            { kicker: "Questions", title: "Research", copy: "See where new methods and systems begin.", cta: "Explore research", href: "./research.html" },
+            { kicker: "Infrastructure", title: "Programs", copy: "Review the studio’s reusable software systems.", cta: "View programs", href: "./programs.html" },
+            { kicker: "Proof", title: "Projects", copy: "See how the practice becomes public work.", cta: "View projects", href: "./projects.html" },
+            { kicker: "Conversation", title: "Contact", copy: "Discuss a product, system, partnership or cultural project.", cta: "Contact the studio", href: "./contact.html" },
           ],
         });
       }
 
       if (page === "contact") {
         return navigationSection({
-          eyebrow: "CONTINUE EXPLORING",
-          title: "Contact is a routing point, not an ending.",
-          copy: "Choose the part of the ecosystem that matches what you need to discuss next.",
+          eyebrow: "BEFORE YOU WRITE",
+          title: "Need more context first?",
+          copy: "Review relevant work, compare projects or understand the studio’s systems before starting the conversation.",
           cards: [
-            { kicker: "Next", title: "Work", copy: "See the applied and client-facing side again.", reason: "Useful if you want service context.", cta: "See Client Work", href: "./work.html" },
-            { kicker: "Next", title: "Projects", copy: "Review the broader public project map.", reason: "Useful if you want examples and adjacent works.", cta: "Browse Projects", href: "./projects.html" },
-            { kicker: "Next", title: "VASTE", copy: "Move into the runtime and strategic spine.", reason: "Useful if the conversation is about systems.", cta: "Explore VASTE", href: "./vaste.html" },
-            { kicker: "Next", title: "About", copy: "Revisit the ecosystem structure.", reason: "Useful if you want context before reaching out.", cta: "Understand the Ecosystem", href: "./about.html" },
+            { kicker: "Capabilities", title: "Work", copy: "See how the studio frames and delivers client work.", cta: "View client work", href: "./work.html" },
+            { kicker: "Examples", title: "Projects", copy: "Compare proprietary, cultural and commissioned outcomes.", cta: "View projects", href: "./projects.html" },
+            { kicker: "Systems", title: "VASTE", copy: "Review the runtime if your question concerns knowledge infrastructure.", cta: "Explore VASTE", href: "./vaste.html" },
+            { kicker: "Studio", title: "About", copy: "Understand the practice, its structure and its standards.", cta: "About the studio", href: "./about.html" },
           ],
         });
       }
@@ -21572,7 +21993,7 @@ window.EA_SEARCH = {
 
     if (current === "mentions-legales") document.title = "Legal Notice | Electronic Artefacts";
     if (current === "confidentialite") document.title = "Privacy Policy | Electronic Artefacts";
-    if (current === "programs") document.title = "Programs, Repo Access and Runtimes | Electronic Artefacts";
+    if (current === "programs") document.title = "Proprietary Systems and Programs | Electronic Artefacts";
     if (current === "projects") document.title = "Projects | Electronic Artefacts";
     if (current === "search") document.title = "Search | Electronic Artefacts";
   };
@@ -21584,7 +22005,7 @@ window.EA_SEARCH = {
     document.documentElement.lang = "en";
 
     const siteName = "Electronic Artefacts";
-    const fallbackDescription = "Electronic Artefacts designs digital products, knowledge systems, cultural platforms and research-led experiences.";
+    const fallbackDescription = "Independent creative technology studio building client products, proprietary systems and research-led cultural work.";
     const fitDescription = (value) => {
       const text = String(value || fallbackDescription).replace(/\s+/g, " ").trim();
       if (text.length <= 155) return text;
@@ -21616,13 +22037,13 @@ window.EA_SEARCH = {
 
     const pageDescriptions = {
       index: fallbackDescription,
-      work: "Consulting, audits, SEO, branding, product design, development and R&D services by Electronic Artefacts.",
-      research: "Research across technology, knowledge systems, culture, governance, perception and creative production.",
-      programs: "Explore Electronic Artefacts software programs available through repository access, pilots, implementation work and licensing conversations.",
-      projects: "Explore Electronic Artefacts projects across software, cultural platforms, artistic production and client systems.",
-      archive: "Browse releases, prototypes, documents, research logs and unfinished material preserved by Electronic Artefacts.",
+      work: "Strategy, design and engineering for complex digital products, platforms and knowledge systems.",
+      research: "Research into technology, knowledge and culture, developed through prototypes, publications and working systems.",
+      programs: "Proprietary software systems available for technical review, pilots, implementation and licensing.",
+      projects: "Cultural works, proprietary platforms and client products built by Electronic Artefacts.",
+      archive: "Documents, prototypes, releases and research traces that preserve the lineage of the studio’s work.",
       about: "Electronic Artefacts is an independent creative technology studio connecting research, software, design and cultural production.",
-      contact: "Contact Electronic Artefacts about digital products, knowledge systems, cultural platforms and creative technology.",
+      contact: "Contact Electronic Artefacts about a product, platform, technical system, partnership or cultural project.",
       search: "Search public Electronic Artefacts projects, programs, research and archive records.",
       project: "Electronic Artefacts project overview, visual evidence and connected systems.",
       "project-rl": "Extended Electronic Artefacts project documentation and technical context.",
@@ -22303,15 +22724,15 @@ window.EA_SEARCH = {
       <section class="zone-card hero" id="about-overview">
         <div class="section-head">
           <p class="eyebrow">ABOUT</p>
-          <h2>What Electronic Artefacts is.</h2>
-          <p class="lede">An independent creative technology studio for products and platforms that need strategy, system architecture, interface design, implementation and cultural context to stay aligned.</p>
+          <h2>A studio for work that crosses disciplines.</h2>
+          <p class="lede">Electronic Artefacts brings strategy, design, engineering and cultural research into one practice. The studio leads client commissions, develops proprietary technology and publishes its own research and artistic work.</p>
         </div>
         <div class="split">
           <article class="panel panel--soft">
             <p class="card__meta">Institutional role</p>
-            <h3 class="card__title">Studio, software lab and publishing line, in that order.</h3>
-            <p class="card__copy">The primary public identity is a studio. Client work proves the approach, proprietary programs extend it, and research or artistic publishing keeps the deeper context available.</p>
-            <p class="card__copy">This hierarchy prevents the label, archive and research language from competing with the simple answer: Electronic Artefacts designs and builds complex digital systems.</p>
+            <h3 class="card__title">Studio first. Technology and publishing extend the practice.</h3>
+            <p class="card__copy">Client work addresses concrete product and communication problems. Proprietary programs turn recurring methods into reusable systems. Research and artistic publishing create room for questions that do not begin with a brief.</p>
+            <p class="card__copy">The structure is deliberately broad, but the responsibility is simple: make complex systems clear, useful and durable.</p>
           </article>
           <article class="panel panel--soft">
             <p class="card__meta">Operating cycle</p>
@@ -22331,8 +22752,8 @@ window.EA_SEARCH = {
       <section class="zone-card hero" id="about-layers">
         <div class="section-head">
           <p class="eyebrow">ECOSYSTEM</p>
-          <h2>The four operating layers.</h2>
-          <p class="lede">Each layer has a distinct role. None of them works alone.</p>
+          <h2>How ideas move through the studio.</h2>
+          <p class="lede">Research frames the question. Programs retain reusable logic. Projects put it to work. The archive preserves what should remain available.</p>
         </div>
         <div class="network-grid">
           <article class="panel panel--soft" id="about-research">
@@ -22369,8 +22790,8 @@ window.EA_SEARCH = {
       <section class="zone-card hero" id="about-entities">
         <div class="section-head">
           <p class="eyebrow">NAMED ENTITIES</p>
-          <h2>How the named entities fit.</h2>
-          <p class="lede">VASTE, Forge, Palimpsests, Vestiges and client work each occupy a different place in the same structure.</p>
+          <h2>Five names, five distinct roles.</h2>
+          <p class="lede">VASTE is the runtime, Forge the production system, Vestiges the flagship platform, Palimpsests the artistic cycle, and client work the proof under real constraints.</p>
         </div>
         <div class="card-grid card-grid--two">
           <article class="panel panel--soft">
@@ -22409,8 +22830,8 @@ window.EA_SEARCH = {
       <section class="zone-card hero" id="about-philosophy">
         <div class="section-head">
           <p class="eyebrow">PHILOSOPHY</p>
-          <h2>One language, many forms.</h2>
-          <p class="lede">The same logic can appear as a runtime, a work, a label release or an archive piece.</p>
+          <h2>Technology is also cultural material.</h2>
+          <p class="lede">A system can be infrastructure, a creative instrument or a way to preserve memory. The form changes; the attention to structure and consequence does not.</p>
         </div>
         <div class="split">
           <article class="panel panel--soft">
@@ -22434,8 +22855,8 @@ window.EA_SEARCH = {
       <div class="contact-discovery__intro">
         <div>
           <p class="eyebrow">PROJECT / COLLABORATION DISCOVERY</p>
-          <h2 class="display-title">What should exist that doesn’t exist yet?</h2>
-          <p class="lede">Describe the situation in your own words. This interface organizes your intent into a concise brief. Classification happens locally in your browser.</p>
+          <h2 class="display-title">What needs to change — and why now?</h2>
+          <p class="lede">Describe the situation in your own words. The brief will identify the relevant pathway, surface the missing context and prepare a focused first conversation. Nothing leaves your browser.</p>
         </div>
       </div>
       <div class="contact-command">
@@ -22476,7 +22897,7 @@ window.EA_SEARCH = {
 
   const contactLinks = () => `
     <section class="zone-card hero contact-channels">
-      <div class="section-head"><p class="eyebrow">DIRECT ROUTES</p><h2>Prefer to contact us directly?</h2><p class="lede">The discovery interface is optional. Email remains the primary route; public channels expose the studio's code, sound, research and ongoing work.</p></div>
+      <div class="section-head"><p class="eyebrow">DIRECT CONTACT</p><h2>Already know what you need?</h2><p class="lede">Email is the fastest route for projects and partnerships. The public channels document the studio’s code, sound, research and current work.</p></div>
       <div class="contact-grid">
         <article class="panel"><p class="card__meta">Email</p><h3 class="card__title">electronic.artefacts@gmail.com</h3><p class="card__copy">Project briefs, partnerships, commissions and considered introductions.</p>${linkRow({ label: "Send email", href: "mailto:electronic.artefacts@gmail.com" })}</article>
         <article class="panel"><p class="card__meta">Studio channel</p><h3 class="card__title">@electronic.artefacts</h3><p class="card__copy">Studio updates, releases and public signals.</p>${linkRow({ label: "Open Instagram", href: "https://www.instagram.com/electronic.artefacts/", target: "_blank" })}</article>
@@ -24712,25 +25133,25 @@ window.EA_SEARCH = {
         <div class="intent-hero__grid home-cinematic-hero__layout">
           <div class="hero-copy intent-hero__copy">
             <p class="eyebrow">ELECTRONIC ARTEFACTS</p>
-            <h1 class="display-title">Creative systems made visible.</h1>
-            <p class="lede">Electronic Artefacts is a creative technology studio for client systems, proprietary platforms and research-led cultural publishing.</p>
+            <h1 class="display-title">Complex systems, made clear.</h1>
+            <p class="lede">Electronic Artefacts is an independent creative technology studio. We build client products, develop proprietary systems and publish research-led cultural work.</p>
             <div class="button-row">
-              <a class="button button--primary" href="./work.html">See selected work</a>
-              <a class="button button--secondary" href="./contact.html">Start a project</a>
+              <a class="button button--primary" href="./work.html">View client work</a>
+              <a class="button button--secondary" href="./contact.html">Discuss a project</a>
             </div>
             <div class="pill-cloud intent-hero__chips" aria-label="Studio practices">
-              <span class="chip">Client systems</span>
-              <span class="chip">Proprietary platforms</span>
+              <span class="chip">Client products</span>
+              <span class="chip">Proprietary systems</span>
               <span class="chip">Research</span>
               <span class="chip">Artistic publishing</span>
             </div>
           </div>
           <aside class="intent-hero__stage home-intent-stage" data-intent-stage aria-label="Current Electronic Artefacts projects">
-            <div class="intent-hero__stage-label"><span>Now showing</span><strong>Current products and public work</strong></div>
+            <div class="intent-hero__stage-label"><span>Selected work</span><strong>Current systems and shipped projects</strong></div>
             <div class="home-intent-stage__orbit" aria-hidden="true"></div>
             ${homeHeroFrame(lead, "home-intent-stage__frame--lead", { depth: 0.82, kicker: leadKicker, eager: true })}
             ${homeHeroFrame(system, "home-intent-stage__frame--system", { depth: 1.35, kicker: system?.id === "unionmob" ? "External CTO partnership" : "Product system" })}
-            ${homeHeroFrame(publicProof, "home-intent-stage__frame--proof", { depth: 1.62, kicker: "Live public proof" })}
+            ${homeHeroFrame(publicProof, "home-intent-stage__frame--proof", { depth: 1.62, kicker: "Shipped client work" })}
             <div class="home-intent-stage__channels" data-depth="1.42" aria-label="Instagram channels">
               <a href="https://www.instagram.com/electronic.artefacts/" target="_blank" rel="noreferrer" aria-label="Open the Electronic Artefacts Instagram channel">
                 <img src="./assets/media/projects/electronic-artefacts/electronic-artefacts-logo.jpg" alt="" loading="lazy" />
@@ -24806,34 +25227,34 @@ window.EA_SEARCH = {
 
   const renderFeaturedPaths = () =>
     `${orientationSection({
-      eyebrow: "FEATURED PATHS",
-      title: "Choose what you need first.",
-      copy: "Start with the path that matches your intent: technology, delivery or cultural work.",
+      eyebrow: "THREE PRACTICES",
+      title: "One studio. Three distinct ways of working.",
+      copy: "Client work solves immediate problems. Proprietary systems extend what the studio can build. Research and artistic publishing keep the practice open to new forms.",
       cards: [
         {
           kicker: "Technology",
-          title: "Understand the core runtime",
-          copy: "Open VASTE to understand the strategic and technical foundation behind the wider family of systems.",
-          reason: "Best when architecture, scalability and the long-term platform thesis matter first.",
-          cta: "Explore VASTE",
+          title: "Proprietary systems",
+          copy: "Explore VASTE and the reusable software programs behind the studio’s knowledge and product platforms.",
+          reason: "Technical partnerships, pilots and licensing.",
+          cta: "Review the programs",
           href: "./vaste.html",
           ariaLabel: "Explore VASTE",
         },
         {
           kicker: "Delivery",
-          title: "See applied work and outcomes",
-          copy: "See how strategy, interface, content and implementation hold together across commissions and public products.",
-          reason: "Best when you need evidence of execution under concrete constraints.",
-          cta: "See Client Work",
+          title: "Client products and platforms",
+          copy: "See how strategy, content, interface and engineering come together in commissioned work.",
+          reason: "Product definition, design, delivery and recovery.",
+          cta: "View client work",
           href: "./work.html",
           ariaLabel: "See Client Work",
         },
         {
-          kicker: "Culture",
-          title: "Enter through Palimpsests",
-          copy: "Explore the musical and editorial space where artistic production, memory and publication meet.",
-          reason: "Best when you want the cultural register before the technical system.",
-          cta: "Enter Palimpsests",
+          kicker: "Culture and research",
+          title: "Research and artistic publishing",
+          copy: "Follow the investigations, publications and musical works that give the studio its cultural depth.",
+          reason: "Research, editorial partnerships and artistic collaboration.",
+          cta: "Explore the cultural work",
           href: "./palimpsests.html",
           ariaLabel: "Enter Palimpsests",
         },
@@ -25052,9 +25473,9 @@ window.EA_SEARCH = {
         <div class="work-capabilities__intro">
           <div class="section-head">
             <p class="eyebrow">CREATIVE CAPABILITIES</p>
-            <h2>Choose the capability you need first.</h2>
+            <h2>Start with the hardest part of the problem.</h2>
           </div>
-          <p class="lede">Electronic Artefacts brings direction, design, technology and cultural production into one system. Start from the part of the brief that needs the most clarity, then expand only when the work needs it.</p>
+          <p class="lede">Strategy, identity, product design and engineering can be engaged separately or carried as one coherent process. The scope expands only when the problem requires it.</p>
         </div>
 
         <div class="capability-experience" data-capability-map>
@@ -25206,8 +25627,8 @@ window.EA_SEARCH = {
       <section class="zone-card hero work-services" id="services">
         <div class="section-head">
           <p class="eyebrow">SERVICE FIELD</p>
-          <h2>Consulting, creative direction and implementation under one roof.</h2>
-          <p class="lede">Electronic Artefacts can enter at diagnosis, strategy, design, build, recovery or R&D level. The work can stay advisory, become a focused audit, or move all the way into production.</p>
+          <h2>From first diagnosis to a working system.</h2>
+          <p class="lede">Engagements can begin with strategy, design, engineering, recovery or R&D — and stop at a decisive recommendation or continue through production.</p>
         </div>
         <div class="work-services__grid">
           ${serviceGroups
@@ -25250,8 +25671,8 @@ window.EA_SEARCH = {
     <section class="zone-card hero work-offer">
       <div class="section-head">
         <p class="eyebrow">ENGAGEMENTS</p>
-        <h2>Three ways to work together.</h2>
-        <p class="lede">The format follows the problem. Each engagement produces explicit decisions, working artefacts and a clear next phase before scope or budget is locked.</p>
+        <h2>Three clear starting points.</h2>
+        <p class="lede">Choose the smallest engagement that can resolve the uncertainty. Every format ends with a decision, a working artefact or a production-ready next step.</p>
       </div>
       <div class="card-grid card-grid--three">
         ${[
@@ -25644,7 +26065,7 @@ window.EA_SEARCH = {
       },
       {
         title: "Need lineage or advisory",
-        copy: "Start with ARCA, VOID or OracleHub when the value is architecture history, traceability, distributed data or research precedent.",
+        copy: "Choose ARCA, VOID or OracleHub for architectural history, traceability or distributed-data patterns.",
       },
     ];
 
@@ -25653,8 +26074,8 @@ window.EA_SEARCH = {
         <div class="program-commercial-hero__grid intent-hero__grid">
           <div class="section-head intent-hero__copy">
             <p class="eyebrow">PROGRAMS</p>
-            <h1 class="display-title">Programs for repo access, pilots and licensing.</h1>
-            <p class="lede">Electronic Artefacts programs are packaged technical systems. They can be evaluated through repository access, scoped pilots, implementation work or licensing conversations.</p>
+            <h1 class="display-title">Proprietary systems for ambitious technical partners.</h1>
+            <p class="lede">Electronic Artefacts develops reusable software programs for knowledge, production and cultural platforms. Partners can review the code, test a focused pilot, commission an implementation or discuss licensing.</p>
             <div class="button-row button-row--compact">
               <a class="button button--primary" href="${esc(programAccessMailto)}">Request repo access</a>
               <a class="button button--secondary" href="./contact.html">Discuss a program</a>
@@ -25683,8 +26104,8 @@ window.EA_SEARCH = {
       <section class="zone-card hero">
         <div class="section-head">
           <p class="eyebrow">COMMERCIAL ACCESS</p>
-          <h2>How programs are sold.</h2>
-          <p class="lede">The offer is not a generic download. Each access path has a different level of code exposure, technical support, implementation responsibility and rights discussion.</p>
+          <h2>Four ways to evaluate or use a program.</h2>
+          <p class="lede">Access is matched to the question: inspect the architecture, test a use case, build on the system or negotiate longer-term rights.</p>
         </div>
         <div class="card-grid card-grid--two">
           ${commercialPaths
@@ -25882,23 +26303,23 @@ window.EA_SEARCH = {
     const publicProjectCount = (catalog.projects || []).filter((item) => item.visibility !== "internal" && item.visibility !== "restricted").length;
     const grouped = [
       {
-        label: "Art Translation",
-        copy: "Start here for the cultural and artistic line. These projects turn theory into release, image, sound and narrative.",
+        label: "Cultural Works",
+        copy: "Projects where theory becomes a release, an image, a sound or a narrative experience.",
         items: [entityById("palimpsests")].filter(Boolean),
       },
       {
-        label: "Knowledge Platforms",
+        label: "Knowledge Infrastructure",
         copy: "Flagship products that turn research and runtime architecture into public infrastructure with a concrete economic purpose.",
         items: [entityById("vestiges")].filter(Boolean),
       },
       {
-        label: "External Partnership",
+        label: "External Partnerships",
         copy: "Independent initiatives owned outside Electronic Artefacts, with the studio contributing a defined technical or strategic role.",
         items: [entityById("unionmob")].filter(Boolean),
       },
       {
-        label: "Applied Surfaces",
-        copy: "Public and client-facing systems. Open these when you want concrete UX, interface and delivery evidence.",
+        label: "Client Products",
+        copy: "Commissioned products and public platforms with concrete evidence of UX, interface and delivery.",
         items: [
           entityById("atypikhouse"),
           entityById("oeil-de-meg"),
@@ -25924,8 +26345,8 @@ window.EA_SEARCH = {
         <div class="projects-hero__grid intent-hero__grid">
           <div class="section-head intent-hero__copy">
             <p class="eyebrow">PROJECTS</p>
-            <h1 class="display-title">Projects, from art systems to applied surfaces.</h1>
-            <p class="lede">Start with the artistic line, then compare client work, product surfaces and the systems that support them.</p>
+          <h1 class="display-title">Projects where research takes form.</h1>
+          <p class="lede">Cultural works, proprietary platforms and client products reveal different sides of the same practice: turning complex ideas into experiences people can use, understand or feel.</p>
             <div class="button-row">
               <a class="button button--primary" href="./work.html">See Client Work</a>
               <a class="button button--secondary" href="./research.html">Enter Research</a>
@@ -25936,15 +26357,15 @@ window.EA_SEARCH = {
             <div class="intent-hero__stage-label"><span>Project spectrum</span><strong>Art / product / public proof</strong></div>
             <a class="projects-hero__frame projects-hero__frame--wide" href="./palimpsests.html" data-depth="0.78" aria-label="Open Palimpsests">
               <img src="./assets/media/projects/palimpsests/P1288759-edit-1800.webp" alt="Palimpsests portrait visual" loading="eager" />
-              <figcaption><span>Art system</span><strong>Palimpsests</strong></figcaption>
+              <figcaption><span>Cultural work</span><strong>Palimpsests</strong></figcaption>
             </a>
             <a class="projects-hero__frame" href="./project.html?id=atypikhouse" data-depth="1.18" aria-label="Open AtypikHouse project">
               <img src="./assets/media/projects/atypikhouse/atypikhouse-dashboard-ipad.jpg" alt="AtypikHouse tablet dashboard" loading="lazy" />
-              <figcaption><span>Applied surface</span><strong>AtypikHouse</strong></figcaption>
+              <figcaption><span>Product platform</span><strong>AtypikHouse</strong></figcaption>
             </a>
             <a class="projects-hero__frame" href="./project.html?id=oeil-de-meg" data-depth="1.48" aria-label="Open L’Œil de Meg project">
               <img src="./assets/media/projects/oeil-de-meg/oeil-de-meg-pagespeed-desktop.png" alt="L’Œil de Meg PageSpeed desktop report" loading="lazy" />
-              <figcaption><span>Delivery proof</span><strong>L’Œil de Meg</strong></figcaption>
+              <figcaption><span>Client delivery</span><strong>L’Œil de Meg</strong></figcaption>
             </a>
           </div>
         </div>
@@ -25953,8 +26374,8 @@ window.EA_SEARCH = {
       <section class="zone-card hero">
         <div class="section-head">
           <p class="eyebrow">THREE MODES OF OUTPUT</p>
-          <h2>Research, cultural work and applied systems.</h2>
-          <p class="lede">Projects differ in public form, but each one translates investigation into something that can be experienced, used or developed further.</p>
+          <h2>Three outcomes. One standard of execution.</h2>
+          <p class="lede">Some projects test an idea, others create a cultural experience or solve an operational problem. Every project must make its intent, status and evidence legible.</p>
         </div>
         <div class="split">
           <article class="panel panel--soft">

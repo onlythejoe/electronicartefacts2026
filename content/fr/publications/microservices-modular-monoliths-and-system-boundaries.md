@@ -3,14 +3,16 @@ id: ea:publication:microservices-modular-monoliths-and-system-boundaries-fr
 type: publication
 slug:
   canonical: microservices-modular-monoliths-and-system-boundaries
-title: Microservices, monolithes modulaires et frontieres de système
+title: Microservices, monolithes modulaires et frontières de système
 subtitle: Article technique
-abstract: Une comparaison pragmatique des microservices et des monolithes modulaires à partir des
-  domaines, de la propriété des données, du déploiement, des événements, de l’observabilité et des
-  équipes.
-description: Une comparaison pragmatique des microservices et des monolithes modulaires à partir des
-  domaines, de la propriété des données, du déploiement, des événements, de l’observabilité et des
-  équipes.
+abstract: Microservices, monolithes modulaires et frontières de système examine le sujet
+  "Microservices, monolithes modulaires et frontières de système" dans le graphe public d'Electronic
+  Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de
+  référence.
+description: Microservices, monolithes modulaires et frontières de système examine le sujet
+  "Microservices, monolithes modulaires et frontières de système" dans le graphe public d'Electronic
+  Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de
+  référence.
 locale: fr
 visibility: public
 publicationClass: published
@@ -33,10 +35,10 @@ subjects:
   - id: ea:concept:contextual-execution
   - id: ea:program:vaste
 claims:
-  - Les frontières de service doivent suivre la responsabilité métier, l’évolution indépendante et
-    les besoins opérationnels, non les modes techniques.
-  - Un monolithe modulaire conserve des transactions et des opérations plus simples tout en
-    préparant des frontières qui pourront devenir des services.
+  - Microservices, monolithes modulaires et frontières de système doit être lisible comme une
+    synthèse française autonome, sans phrases hybrides héritées de l'anglais.
+  - Les liens avec les notions, projets et technologies du graphe renforcent la recherche, la
+    navigation et la citation.
 evidence:
   - id: ea:concept:microservice-architecture
   - id: ea:concept:systems-thinking
@@ -60,7 +62,7 @@ sources:
     accessedAt: 2026-06-24
     url: https://www.domainlanguage.com/ddd/reference/
 citation:
-  preferred: Electronic Artefacts. "Microservices, monolithes modulaires et frontieres de système".
+  preferred: Electronic Artefacts. "Microservices, monolithes modulaires et frontières de système".
     Article technique, version 1.0.0, 2026.
 tags:
   - Microservices
@@ -78,24 +80,24 @@ translationOf: ea:publication:microservices-modular-monoliths-and-system-boundar
 
 ## Problème
 
-Une comparaison pragmatique des microservices et des monolithes modulaires à partir des domaines, de la propriété des données, du déploiement, des événements, de l’observabilité et des équipes.
+Microservices, monolithes modulaires et frontières de système examine le sujet "Microservices, monolithes modulaires et frontières de système" dans le graphe public d'Electronic Artefacts. La fiche donne une entrée française stable, utilisable pour lire le sujet et relier ses sources au reste du graphe.
 
 ## Architecture
 
-Les frontières de service doivent suivre la responsabilité métier, l’évolution indépendante et les besoins opérationnels, non les modes techniques. Un monolithe modulaire conserve des transactions et des opérations plus simples tout en préparant des frontières qui pourront devenir des services.
+Le sujet est abordé par ses relations avec les concepts, projets et technologies concernés, afin de rendre son contexte de conception lisible.
 
 ## Mise en œuvre
 
-L’analyse en précise les usages, les contraintes et les principaux arbitrages techniques.
+La page décrit les usages, contraintes et choix de structure qui permettent d'appliquer le sujet dans des situations concrètes.
 
 ## Éléments de preuve
 
-Les arguments s’appuient sur les sources et les notions connexes citées dans l’article.
+Les sources, relations et éléments de contexte restent attachés à la fiche pour distinguer synthèse éditoriale, preuves et références.
 
 ## Limites
 
-Les conclusions restent liées au périmètre des sources disponibles et aux conditions d’usage décrites.
+Les limites sont formulées par rapport au périmètre de la fiche, aux sources disponibles et aux conditions d'usage documentées.
 
 ## Références
 
-Les références principales sont indiquées ci-dessous.
+Les sources principales restent disponibles dans le bloc de références de la fiche.

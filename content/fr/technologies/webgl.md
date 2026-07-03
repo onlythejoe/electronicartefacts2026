@@ -5,10 +5,10 @@ translationOf: ea:technology:webgl
 slug:
   canonical: webgl
 title: WebGL
-abstract: WebGL est une technologie web de rendu graphique 2D et 3D interactif accéléré par le
-  processeur graphique des navigateurs compatibles.
-description: WebGL est une technologie web de rendu graphique 2D et 3D interactif accéléré par le
-  processeur graphique des navigateurs compatibles.
+abstract: WebGL est documenté pour son rôle dans les systèmes d'Electronic Artefacts, ses usages,
+  ses limites et les technologies qui lui sont liées.
+description: WebGL est documenté pour son rôle dans les systèmes d'Electronic Artefacts, ses usages,
+  ses limites et les technologies qui lui sont liées.
 locale: fr
 visibility: public
 publicationClass: canonical
@@ -24,8 +24,9 @@ authors:
   - id: ea:organization:electronic-artefacts
 publisher: ea:organization:electronic-artefacts
 category: platform
-roleInEcosystem: WebGL permet le graphisme procédural, les expérimentations de shaders, les visuels
-  en temps réel et les interfaces culturelles interactives.
+roleInEcosystem: WebGL sert de repère technique pour évaluer le sujet "WebGL" dans le graphe public
+  d'Electronic Artefacts, ses usages possibles et ses conséquences dans l'écosystème Electronic
+  Artefacts.
 officialUrl: https://www.khronos.org/webgl/
 sources:
   - title: WebGL
@@ -44,17 +45,17 @@ disciplines:
 
 ## Rôle
 
-WebGL est une technologie web de rendu graphique 2D et 3D interactif accéléré par le processeur graphique des navigateurs compatibles.
+Cette fiche documenté WebGL comme technologie de référence pour le sujet "WebGL" dans le graphe public d'Electronic Artefacts.
 
 ## Usage
 
-WebGL permet le graphisme procédural, les expérimentations de shaders, les visuels en temps réel et les interfaces culturelles interactives.
+Elle situe la technologie dans l'écosystème Electronic Artefacts : ce qu'elle permet, quand elle devient pertinente et comment elle dialogue avec les autres composants du graphe.
 
-## Points d’attention
+## Points d'attention
 
-- Les usages dépendent des contraintes du projet et du niveau d’interopérabilité recherché.
-- Les limites doivent être évaluées au regard des standards, des implémentations disponibles et de leur maturité.
+- Les usages sont décrits en français sans masquer les noms propres, acronymes où standards techniques.
+- Les limites restent contextualisées par rapport aux projets, aux publications et aux contraintes d'implémentation.
 
 ## Références
 
-Les références principales sont indiquées ci-dessous.
+Les sources principales restent disponibles dans le bloc de références de la fiche.

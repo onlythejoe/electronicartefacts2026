@@ -1186,9 +1186,9 @@
   const vasteBanner = () => `
     <section class="zone-card hero latests-panel" id="latests">
       <div class="section-head">
-        <p class="eyebrow">PROOF FIRST</p>
-        <h2>One runtime foundation.</h2>
-        <p class="lede">Understand the technical line behind how the studio thinks and builds.</p>
+        <p class="eyebrow">PROPRIETARY TECHNOLOGY</p>
+        <h2>VASTE is the runtime behind the studio’s knowledge systems.</h2>
+        <p class="lede">It provides the shared logic for identity, context, permissions and graph-based products.</p>
       </div>
       <div class="latests-grid latests-grid--cinematic">
         ${(() => {
@@ -1214,7 +1214,7 @@
             <div class="vast-banner__content">
               <p class="card__meta">RUNTIME FOUNDATION</p>
               <h3 class="vast-banner__title">VASTE</h3>
-              <p class="vast-banner__copy">Open the proprietary program behind the identity and knowledge-system work.</p>
+              <p class="vast-banner__copy">A reusable foundation for platforms where entities, relationships and permissions must remain coherent as the system grows.</p>
               <div class="pill-cloud vast-banner__chips" aria-label="VASTE attributes">
                 <span class="chip">Runtime</span>
                 <span class="chip">Graph systems</span>
@@ -1250,13 +1250,13 @@
         <div class="selected-works-panel__head">
           <div class="section-head">
             <p class="eyebrow">WORK</p>
-            <h2>Selected works.</h2>
-            <p class="lede">A compact path through client delivery, proprietary platforms and cultural publishing.</p>
+            <h2>Selected work, with the role and status made explicit.</h2>
+            <p class="lede">Client delivery, proprietary platforms and cultural publishing — three forms of the same exacting practice.</p>
           </div>
           <aside class="panel panel--soft selected-works-panel__info">
             <p class="card__meta">CURATED PATH</p>
             <strong>${esc(routeCount)}</strong>
-            <p class="card__copy">A concise selection before you enter the full project catalogue or archive.</p>
+            <p class="card__copy">Begin with the lead project, then compare work across product, technology and culture.</p>
             ${metricRail(
               [
                 { label: "Lead", value: lead.title || lead.category || lead.type || "Project", note: lead.statusLabel || lead.status || "", tone: "system", fill: 0.9 },
@@ -1327,13 +1327,13 @@
   const routeCard = (item = {}) => {
     const href = item.href || "";
     const target = item.target ? ` target="${esc(item.target)}" rel="noreferrer"` : "";
-    const label = item.ariaLabel || `${item.cta || "Open"} ${item.title || "destination"}`;
+    const label = item.ariaLabel || item.cta || `Open ${item.title || "destination"}`;
     return `
       <article class="panel panel--soft card-link-surface" ${href ? cardLinkAttrs(href, label) : ""}>
         <p class="card__meta">${esc(item.kicker || "")}</p>
         <h3 class="card__title">${esc(item.title || "")}</h3>
         <p class="card__copy">${esc(item.copy || "")}</p>
-        ${item.reason ? `<p class="card__meta">Why it matters</p><p class="card__copy">${esc(item.reason)}</p>` : ""}
+        ${item.reason ? `<p class="card__copy">${esc(item.reason)}</p>` : ""}
         <div class="link-row">
           ${href ? `<a class="tag" href="${esc(href)}"${target}>${esc(item.cta || "Open")}</a>` : ""}
         </div>

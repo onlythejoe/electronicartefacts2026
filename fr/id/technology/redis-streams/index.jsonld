@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/knowledge/technologies/redis-streams/#webpage",
       "url": "https://electronicartefacts.com/fr/knowledge/technologies/redis-streams/",
       "name": "Redis Streams",
-      "description": "Redis Streams est un type de données en journal à ajout seul, avec entrées ordonnées, lectures par plage, rétention et groupes de consommateurs.",
+      "description": "Redis Streams est documenté pour son rôle dans les systèmes d'Electronic Artefacts, ses usages, ses limites et les technologies qui lui sont liées.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
@@ -34,8 +34,8 @@
       "@id": "https://electronicartefacts.com/fr/id/technology/redis-streams/",
       "identifier": "ea:technology:redis-streams-fr",
       "name": "Redis Streams",
-      "abstract": "Redis Streams est un type de données en journal à ajout seul, avec entrées ordonnées, lectures par plage, rétention et groupes de consommateurs.",
-      "description": "Redis Streams est un type de données en journal à ajout seul, avec entrées ordonnées, lectures par plage, rétention et groupes de consommateurs.",
+      "abstract": "Redis Streams est documenté pour son rôle dans les systèmes d'Electronic Artefacts, ses usages, ses limites et les technologies qui lui sont liées.",
+      "description": "Redis Streams est documenté pour son rôle dans les systèmes d'Electronic Artefacts, ses usages, ses limites et les technologies qui lui sont liées.",
       "url": "https://electronicartefacts.com/fr/knowledge/technologies/redis-streams/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/knowledge/technologies/redis-streams/#webpage"
@@ -75,7 +75,7 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 84,
+      "wordCount": 93,
       "citation": [
         {
           "@type": "CreativeWork",
@@ -95,7 +95,7 @@
       "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/",
       "name": "Electronic Artefacts",
       "url": "https://electronicartefacts.com/",
-      "description": "Electronic Artefacts designs digital products, knowledge systems, cultural platforms and research-led experiences.",
+      "description": "Electronic Artefacts is an independent creative technology studio building client products, proprietary systems and research-led cultural work.",
       "keywords": [
         "creative technology",
         "knowledge graph",
@@ -149,7 +149,7 @@
       "@id": "https://electronicartefacts.com/#website",
       "url": "https://electronicartefacts.com/",
       "name": "Electronic Artefacts",
-      "description": "Electronic Artefacts designs digital products, knowledge systems, cultural platforms and research-led experiences.",
+      "description": "Electronic Artefacts is an independent creative technology studio building client products, proprietary systems and research-led cultural work.",
       "keywords": [
         "creative technology",
         "knowledge graph",

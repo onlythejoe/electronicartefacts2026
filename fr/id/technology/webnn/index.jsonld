@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/knowledge/technologies/webnn/#webpage",
       "url": "https://electronicartefacts.com/fr/knowledge/technologies/webnn/",
       "name": "WebNN",
-      "description": "WebNN est une API du W3C pour l’inférence de réseaux neuronaux accélérée par le matériel dans les applications web.",
+      "description": "WebNN est documenté pour son rôle dans les systèmes d'Electronic Artefacts, ses usages, ses limites et les technologies qui lui sont liées.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
@@ -37,8 +37,8 @@
       "alternateName": [
         "Web Neural Network API"
       ],
-      "abstract": "WebNN est une API du W3C pour l’inférence de réseaux neuronaux accélérée par le matériel dans les applications web.",
-      "description": "WebNN est une API du W3C pour l’inférence de réseaux neuronaux accélérée par le matériel dans les applications web.",
+      "abstract": "WebNN est documenté pour son rôle dans les systèmes d'Electronic Artefacts, ses usages, ses limites et les technologies qui lui sont liées.",
+      "description": "WebNN est documenté pour son rôle dans les systèmes d'Electronic Artefacts, ses usages, ses limites et les technologies qui lui sont liées.",
       "url": "https://electronicartefacts.com/fr/knowledge/technologies/webnn/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/knowledge/technologies/webnn/#webpage"
@@ -78,7 +78,7 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 75,
+      "wordCount": 91,
       "citation": [
         {
           "@type": "CreativeWork",
@@ -99,7 +99,7 @@
       "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/",
       "name": "Electronic Artefacts",
       "url": "https://electronicartefacts.com/",
-      "description": "Electronic Artefacts designs digital products, knowledge systems, cultural platforms and research-led experiences.",
+      "description": "Electronic Artefacts is an independent creative technology studio building client products, proprietary systems and research-led cultural work.",
       "keywords": [
         "creative technology",
         "knowledge graph",
@@ -153,7 +153,7 @@
       "@id": "https://electronicartefacts.com/#website",
       "url": "https://electronicartefacts.com/",
       "name": "Electronic Artefacts",
-      "description": "Electronic Artefacts designs digital products, knowledge systems, cultural platforms and research-led experiences.",
+      "description": "Electronic Artefacts is an independent creative technology studio building client products, proprietary systems and research-led cultural work.",
       "keywords": [
         "creative technology",
         "knowledge graph",

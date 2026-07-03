@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/knowledge/concepts/generative-system/#webpage",
       "url": "https://electronicartefacts.com/fr/knowledge/concepts/generative-system/",
       "name": "Système génératif",
-      "description": "Définition, usages, limites et relations associés au concept : Système génératif.",
+      "description": "Système génératif désigne les systèmes qui produisent des formes à partir de règles, de contraintes et de boucles de sélection. La fiche en précise l'usage, les limites et les relations avec les projets, technologies et publications d'Electronic Artefacts.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
@@ -34,8 +34,8 @@
       "@id": "https://electronicartefacts.com/fr/id/concept/generative-system/",
       "identifier": "ea:concept:generative-system-fr",
       "name": "Système génératif",
-      "abstract": "Ce concept propose un cadre précis pour comprendre les systèmes qui produisent des formes à partir de regles, de contraintes et de boucles de sélection et ses liens avec les projets, technologies et publications associés.",
-      "description": "Cette notion recouvre les systèmes qui produisent des formes à partir de regles, de contraintes et de boucles de sélection.",
+      "abstract": "Système génératif désigne les systèmes qui produisent des formes à partir de règles, de contraintes et de boucles de sélection. La fiche en précise l'usage, les limites et les relations avec les projets, technologies et publications d'Electronic Artefacts.",
+      "description": "Système génératif désigne les systèmes qui produisent des formes à partir de règles, de contraintes et de boucles de sélection.",
       "url": "https://electronicartefacts.com/fr/knowledge/concepts/generative-system/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/knowledge/concepts/generative-system/#webpage"
@@ -77,7 +77,7 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 62,
+      "wordCount": 84,
       "inDefinedTermSet": "https://electronicartefacts.com/knowledge/concepts/",
       "termCode": "generative-system"
     },
@@ -86,7 +86,7 @@
       "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/",
       "name": "Electronic Artefacts",
       "url": "https://electronicartefacts.com/",
-      "description": "Electronic Artefacts designs digital products, knowledge systems, cultural platforms and research-led experiences.",
+      "description": "Electronic Artefacts is an independent creative technology studio building client products, proprietary systems and research-led cultural work.",
       "keywords": [
         "creative technology",
         "knowledge graph",
@@ -140,7 +140,7 @@
       "@id": "https://electronicartefacts.com/#website",
       "url": "https://electronicartefacts.com/",
       "name": "Electronic Artefacts",
-      "description": "Electronic Artefacts designs digital products, knowledge systems, cultural platforms and research-led experiences.",
+      "description": "Electronic Artefacts is an independent creative technology studio building client products, proprietary systems and research-led cultural work.",
       "keywords": [
         "creative technology",
         "knowledge graph",

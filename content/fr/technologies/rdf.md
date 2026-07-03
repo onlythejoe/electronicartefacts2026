@@ -5,10 +5,10 @@ slug:
   canonical: rdf
 title: RDF
 subtitle: Resource Description Framework
-abstract: RDF est un modèle de données en graphe du W3C qui représente l’information sous forme
-  d’énoncés sujet-prédicat-objet portant sur des ressources.
-description: RDF est un modèle de données en graphe du W3C qui représente l’information sous forme
-  d’énoncés sujet-prédicat-objet portant sur des ressources.
+abstract: RDF est documenté pour son rôle dans les systèmes d'Electronic Artefacts, ses usages, ses
+  limites et les technologies qui lui sont liées.
+description: RDF est documenté pour son rôle dans les systèmes d'Electronic Artefacts, ses usages,
+  ses limites et les technologies qui lui sont liées.
 locale: fr
 visibility: public
 publicationClass: published
@@ -24,8 +24,9 @@ authors:
   - id: ea:organization:electronic-artefacts
 publisher: ea:organization:electronic-artefacts
 category: protocol
-roleInEcosystem: RDF fournit le modèle de référence pour penser entités, prédicats, ressources,
-  identifiants et interopérabilité sémantique.
+roleInEcosystem: RDF sert de repère technique pour évaluer le sujet "RDF" dans le graphe public
+  d'Electronic Artefacts, ses usages possibles et ses conséquences dans l'écosystème Electronic
+  Artefacts.
 officialUrl: https://www.w3.org/TR/rdf11-concepts/
 versions:
   - RDF 1.1
@@ -48,17 +49,17 @@ translationOf: ea:technology:rdf
 
 ## Rôle
 
-RDF est un modèle de données en graphe du W3C qui représente l’information sous forme d’énoncés sujet-prédicat-objet portant sur des ressources.
+Cette fiche documenté RDF comme technologie de référence pour le sujet "RDF" dans le graphe public d'Electronic Artefacts.
 
 ## Usage
 
-RDF fournit le modèle de référence pour penser entités, prédicats, ressources, identifiants et interopérabilité sémantique.
+Elle situe la technologie dans l'écosystème Electronic Artefacts : ce qu'elle permet, quand elle devient pertinente et comment elle dialogue avec les autres composants du graphe.
 
-## Points d’attention
+## Points d'attention
 
-- Les usages dépendent des contraintes du projet et du niveau d’interopérabilité recherché.
-- Les limites doivent être évaluées au regard des standards, des implémentations disponibles et de leur maturité.
+- Les usages sont décrits en français sans masquer les noms propres, acronymes où standards techniques.
+- Les limites restent contextualisées par rapport aux projets, aux publications et aux contraintes d'implémentation.
 
 ## Références
 
-Les références principales sont indiquées ci-dessous.
+Les sources principales restent disponibles dans le bloc de références de la fiche.

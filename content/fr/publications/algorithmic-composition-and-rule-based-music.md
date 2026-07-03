@@ -3,14 +3,15 @@ id: ea:publication:algorithmic-composition-and-rule-based-music-fr
 type: publication
 slug:
   canonical: algorithmic-composition-and-rule-based-music
-title: Composition algorithmique et musique fondee sur des regles
+title: Composition algorithmique et musique fondée sur des règles
 subtitle: Article technique
-abstract: Une introduction à la composition algorithmique par les règles, les méthodes
-  stochastiques, la cybernétique, les musiques électroniques, la programmation créative et les
-  systèmes génératifs.
-description: Une introduction à la composition algorithmique par les règles, les méthodes
-  stochastiques, la cybernétique, les musiques électroniques, la programmation créative et les
-  systèmes génératifs.
+abstract: Composition algorithmique et musique fondée sur des règles examine le sujet "Composition
+  algorithmique et musique fondée sur des règles" dans le graphe public d'Electronic Artefacts. La
+  fiche en synthétise les architectures, les usages, les limites et les sources de référence.
+description: Composition algorithmique et musique fondée sur des règles examine le sujet
+  "Composition algorithmique et musique fondée sur des règles" dans le graphe public d'Electronic
+  Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de
+  référence.
 locale: fr
 visibility: public
 publicationClass: published
@@ -33,9 +34,10 @@ subjects:
   - id: ea:program:oreth
   - id: ea:concept:web-audio
 claims:
-  - "La composition algorithmique ne naît pas avec l’IA : elle s’inscrit dans une longue histoire de
-    la pensée musicale fondée sur des règles."
-  - La musique procédurale exige autant d’écoute, d’évaluation et de documentation que de génération.
+  - Composition algorithmique et musique fondée sur des règles doit être lisible comme une synthèse
+    française autonome, sans phrases hybrides héritées de l'anglais.
+  - Les liens avec les notions, projets et technologies du graphe renforcent la recherche, la
+    navigation et la citation.
 evidence:
   - id: ea:concept:algorithmic-composition
   - id: ea:program:oreth
@@ -56,7 +58,7 @@ sources:
     accessedAt: 2026-06-24
     url: https://www.w3.org/TR/webaudio/
 citation:
-  preferred: Electronic Artefacts. "Composition algorithmique et musique fondee sur des regles".
+  preferred: Electronic Artefacts. "Composition algorithmique et musique fondée sur des règles".
     Article technique, version 1.0.0, 2026.
 tags:
   - Algorithmic Composition
@@ -73,24 +75,24 @@ translationOf: ea:publication:algorithmic-composition-and-rule-based-music
 
 ## Problème
 
-Une introduction à la composition algorithmique par les règles, les méthodes stochastiques, la cybernétique, les musiques électroniques, la programmation créative et les systèmes génératifs.
+Composition algorithmique et musique fondée sur des règles examine le sujet "Composition algorithmique et musique fondée sur des règles" dans le graphe public d'Electronic Artefacts. La fiche donne une entrée française stable, utilisable pour lire le sujet et relier ses sources au reste du graphe.
 
 ## Architecture
 
-La composition algorithmique ne naît pas avec l’IA : elle s’inscrit dans une longue histoire de la pensée musicale fondée sur des règles. La musique procédurale exige autant d’écoute, d’évaluation et de documentation que de génération.
+Le sujet est abordé par ses relations avec les concepts, projets et technologies concernés, afin de rendre son contexte de conception lisible.
 
 ## Mise en œuvre
 
-L’analyse en précise les usages, les contraintes et les principaux arbitrages techniques.
+La page décrit les usages, contraintes et choix de structure qui permettent d'appliquer le sujet dans des situations concrètes.
 
 ## Éléments de preuve
 
-Les arguments s’appuient sur les sources et les notions connexes citées dans l’article.
+Les sources, relations et éléments de contexte restent attachés à la fiche pour distinguer synthèse éditoriale, preuves et références.
 
 ## Limites
 
-Les conclusions restent liées au périmètre des sources disponibles et aux conditions d’usage décrites.
+Les limites sont formulées par rapport au périmètre de la fiche, aux sources disponibles et aux conditions d'usage documentées.
 
 ## Références
 
-Les références principales sont indiquées ci-dessous.
+Les sources principales restent disponibles dans le bloc de références de la fiche.

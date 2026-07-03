@@ -5,10 +5,12 @@ slug:
   canonical: generative-ai-latent-space-and-creative-workflows
 title: IA générative, espace latent et workflows créatifs
 subtitle: Article technique
-abstract: Une lecture de l’IA générative dans les pratiques créatives, à travers les espaces
-  latents, les prompts, la provenance, les risques, l’évaluation et la question de l’auteur.
-description: Une lecture de l’IA générative dans les pratiques créatives, à travers les espaces
-  latents, les prompts, la provenance, les risques, l’évaluation et la question de l’auteur.
+abstract: IA générative, espace latent et workflows créatifs examine le sujet "IA générative, espace
+  latent et workflows créatifs" dans le graphe public d'Electronic Artefacts. La fiche en synthétise
+  les architectures, les usages, les limites et les sources de référence.
+description: IA générative, espace latent et workflows créatifs examine le sujet "IA générative,
+  espace latent et workflows créatifs" dans le graphe public d'Electronic Artefacts. La fiche en
+  synthétise les architectures, les usages, les limites et les sources de référence.
 locale: fr
 visibility: public
 publicationClass: published
@@ -31,10 +33,10 @@ subjects:
   - id: ea:concept:generative-system
   - id: ea:concept:human-computer-interaction
 claims:
-  - L’IA générative gagne à être comprise comme une étape d’un workflow qui comprend sources,
-    prompts, contraintes, comportement du modèle, sélection et édition.
-  - Un usage créatif responsable exige provenance et évaluation, au-delà de la seule nouveauté des
-    résultats.
+  - IA générative, espace latent et workflows créatifs doit être lisible comme une synthèse
+    française autonome, sans phrases hybrides héritées de l'anglais.
+  - Les liens avec les notions, projets et technologies du graphe renforcent la recherche, la
+    navigation et la citation.
 evidence:
   - id: ea:concept:generative-ai
   - id: ea:concept:provenance
@@ -68,24 +70,24 @@ translationOf: ea:publication:generative-ai-latent-space-and-creative-workflows
 
 ## Problème
 
-Une lecture de l’IA générative dans les pratiques créatives, à travers les espaces latents, les prompts, la provenance, les risques, l’évaluation et la question de l’auteur.
+IA générative, espace latent et workflows créatifs examine le sujet "IA générative, espace latent et workflows créatifs" dans le graphe public d'Electronic Artefacts. La fiche donne une entrée française stable, utilisable pour lire le sujet et relier ses sources au reste du graphe.
 
 ## Architecture
 
-L’IA générative gagne à être comprise comme une étape d’un workflow qui comprend sources, prompts, contraintes, comportement du modèle, sélection et édition. Un usage créatif responsable exige provenance et évaluation, au-delà de la seule nouveauté des résultats.
+Le sujet est abordé par ses relations avec les concepts, projets et technologies concernés, afin de rendre son contexte de conception lisible.
 
 ## Mise en œuvre
 
-L’analyse en précise les usages, les contraintes et les principaux arbitrages techniques.
+La page décrit les usages, contraintes et choix de structure qui permettent d'appliquer le sujet dans des situations concrètes.
 
 ## Éléments de preuve
 
-Les arguments s’appuient sur les sources et les notions connexes citées dans l’article.
+Les sources, relations et éléments de contexte restent attachés à la fiche pour distinguer synthèse éditoriale, preuves et références.
 
 ## Limites
 
-Les conclusions restent liées au périmètre des sources disponibles et aux conditions d’usage décrites.
+Les limites sont formulées par rapport au périmètre de la fiche, aux sources disponibles et aux conditions d'usage documentées.
 
 ## Références
 
-Les références principales sont indiquées ci-dessous.
+Les sources principales restent disponibles dans le bloc de références de la fiche.

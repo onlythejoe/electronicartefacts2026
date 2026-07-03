@@ -4,12 +4,16 @@ type: concept
 slug:
   canonical: event-driven-architecture
 title: Architecture événementielle
-definition: Cette notion recouvre les architectures ou les changements d'etat sont publies sous
-  forme d'evenements et consommes par des composants decouples.
-abstract: Ce concept propose un cadre précis pour comprendre les architectures ou les changements
-  d'etat sont publies sous forme d'evenements et consommes par des composants decouples et ses liens
-  avec les projets, technologies et publications associés.
-description: "Définition, usages, limites et relations associés au concept : Architecture événementielle."
+definition: Architecture événementielle désigne les architectures où les changements d'état sont
+  publiés sous forme d'événements et consommés par des composants découplés.
+abstract: Architecture événementielle désigne les architectures où les changements d'état sont
+  publiés sous forme d'événements et consommés par des composants découplés. La fiche en précise
+  l'usage, les limites et les relations avec les projets, technologies et publications d'Electronic
+  Artefacts.
+description: Architecture événementielle désigne les architectures où les changements d'état sont
+  publiés sous forme d'événements et consommés par des composants découplés. La fiche en précise
+  l'usage, les limites et les relations avec les projets, technologies et publications d'Electronic
+  Artefacts.
 locale: fr
 visibility: public
 publicationClass: canonical
@@ -33,8 +37,10 @@ exclusions:
   - les usages purement promotionnels sans définition vérifiable
   - les exemples déconnectés des sources, relations ou contraintes du graphe
 claims:
-  - Une définition utile reste reliée à des sources, à des pratiques et à des objets observables.
-  - Un vocabulaire stable permet de relier projets, publications et technologies sans ambiguïté.
+  - Architecture événementielle devient utile lorsque sa définition reste reliée à des sources, des
+    pratiques et des objets observables.
+  - La fiche sert de vocabulaire commun pour relier projets, publications et technologies sans
+    mélanger les langues.
 sources:
   - title: CloudEvents
     publisher: Cloud Native Computing Foundation
@@ -54,18 +60,18 @@ disciplines:
 translationOf: ea:concept:event-driven-architecture
 ---
 
-## Rôle
+## Définition
 
-Cette notion recouvre les architectures ou les changements d'etat sont publies sous forme d'evenements et consommes par des composants decouples.
+Architecture événementielle désigne les architectures où les changements d'état sont publiés sous forme d'événements et consommés par des composants découplés.
 
 ## Usage
 
-Elle fournit un vocabulaire stable pour relier les projets, publications et technologies concernés.
+Cette fiche relie la notion aux projets, publications et technologies qui partagent un même vocabulaire de conception. Elle sert de point d'appui pour naviguer dans le graphe en version française.
 
 ## Périmètre
 
-Son périmètre comprend les définitions, les usages, les limites et les relations avec les autres objets documentés.
+La notion est abordée par ses définitions, ses usages, ses limites et ses relations avec les autres objets documentés.
 
 ## Références
 
-Les références principales sont indiquées ci-dessous.
+Les sources principales restent disponibles dans le bloc de références de la fiche.

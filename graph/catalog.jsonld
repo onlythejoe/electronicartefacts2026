@@ -20,7 +20,7 @@
       "@type": "Dataset",
       "@id": "https://electronicartefacts.com/graph/catalog.jsonld#dataset",
       "name": "Electronic Artefacts Public Knowledge Graph",
-      "description": "Electronic Artefacts designs digital products, knowledge systems, cultural platforms and research-led experiences.",
+      "description": "Electronic Artefacts is an independent creative technology studio building client products, proprietary systems and research-led cultural work.",
       "url": "https://electronicartefacts.com/generated/public/catalog.json",
       "sameAs": [
         "https://electronicartefacts.com/graph/entities.json",
@@ -445,7 +445,7 @@
         {
           "@type": "ListItem",
           "position": 42,
-          "name": "Identité d’entité",
+          "name": "Identité d'entité",
           "url": "https://electronicartefacts.com/fr/knowledge/concepts/entity-identity/",
           "item": {
             "@id": "https://electronicartefacts.com/fr/id/concept/entity-identity/"
@@ -544,7 +544,7 @@
         {
           "@type": "ListItem",
           "position": 53,
-          "name": "Modelisation de graphe",
+          "name": "Modélisation de graphe",
           "url": "https://electronicartefacts.com/fr/knowledge/concepts/graph-modeling/",
           "item": {
             "@id": "https://electronicartefacts.com/fr/id/concept/graph-modeling/"
@@ -697,7 +697,7 @@
         {
           "@type": "ListItem",
           "position": 70,
-          "name": "Rétroaction cybernetique",
+          "name": "Rétroaction cybernétique",
           "url": "https://electronicartefacts.com/fr/knowledge/concepts/cybernetic-feedback/",
           "item": {
             "@id": "https://electronicartefacts.com/fr/id/concept/cybernetic-feedback/"
@@ -949,7 +949,7 @@
         {
           "@type": "ListItem",
           "position": 98,
-          "name": "Architecture événementielle et flux d'evenements",
+          "name": "Architecture événementielle et flux d'événements",
           "url": "https://electronicartefacts.com/fr/publications/event-driven-architecture-and-event-streams/",
           "item": {
             "@id": "https://electronicartefacts.com/fr/id/publication/event-driven-architecture-and-event-streams/"
@@ -985,7 +985,7 @@
         {
           "@type": "ListItem",
           "position": 102,
-          "name": "Composition algorithmique et musique fondee sur des regles",
+          "name": "Composition algorithmique et musique fondée sur des règles",
           "url": "https://electronicartefacts.com/fr/publications/algorithmic-composition-and-rule-based-music/",
           "item": {
             "@id": "https://electronicartefacts.com/fr/id/publication/algorithmic-composition-and-rule-based-music/"
@@ -1165,7 +1165,7 @@
         {
           "@type": "ListItem",
           "position": 122,
-          "name": "IA multimodale pour le texte, l'image, l'audio et la video",
+          "name": "IA multimodale pour le texte, l'image, l'audio et la vidéo",
           "url": "https://electronicartefacts.com/fr/publications/multimodal-ai-across-text-image-audio-and-video/",
           "item": {
             "@id": "https://electronicartefacts.com/fr/id/publication/multimodal-ai-across-text-image-audio-and-video/"
@@ -1192,7 +1192,7 @@
         {
           "@type": "ListItem",
           "position": 125,
-          "name": "IIIF et objets culturels composes",
+          "name": "IIIF et objets culturels composés",
           "url": "https://electronicartefacts.com/fr/publications/iiif-and-compound-cultural-objects/",
           "item": {
             "@id": "https://electronicartefacts.com/fr/id/publication/iiif-and-compound-cultural-objects/"
@@ -1282,7 +1282,7 @@
         {
           "@type": "ListItem",
           "position": 135,
-          "name": "Microservices, monolithes modulaires et frontieres de système",
+          "name": "Microservices, monolithes modulaires et frontières de système",
           "url": "https://electronicartefacts.com/fr/publications/microservices-modular-monoliths-and-system-boundaries/",
           "item": {
             "@id": "https://electronicartefacts.com/fr/id/publication/microservices-modular-monoliths-and-system-boundaries/"
@@ -1525,7 +1525,7 @@
         {
           "@type": "ListItem",
           "position": 162,
-          "name": "Systèmes génératifs, cybernetique et programmation créative",
+          "name": "Systèmes génératifs, cybernétique et programmation créative",
           "url": "https://electronicartefacts.com/fr/publications/generative-systems-cybernetics-and-creative-coding/",
           "item": {
             "@id": "https://electronicartefacts.com/fr/id/publication/generative-systems-cybernetics-and-creative-coding/"
@@ -1970,7 +1970,7 @@
       "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/",
       "name": "Electronic Artefacts",
       "url": "https://electronicartefacts.com/",
-      "description": "Electronic Artefacts designs digital products, knowledge systems, cultural platforms and research-led experiences.",
+      "description": "Electronic Artefacts is an independent creative technology studio building client products, proprietary systems and research-led cultural work.",
       "keywords": [
         "creative technology",
         "knowledge graph",
@@ -2024,7 +2024,7 @@
       "@id": "https://electronicartefacts.com/#website",
       "url": "https://electronicartefacts.com/",
       "name": "Electronic Artefacts",
-      "description": "Electronic Artefacts designs digital products, knowledge systems, cultural platforms and research-led experiences.",
+      "description": "Electronic Artefacts is an independent creative technology studio building client products, proprietary systems and research-led cultural work.",
       "keywords": [
         "creative technology",
         "knowledge graph",

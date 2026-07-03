@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/publications/model-context-protocol-and-tool-using-ai-systems/#webpage",
       "url": "https://electronicartefacts.com/fr/publications/model-context-protocol-and-tool-using-ai-systems/",
       "name": "Model Context Protocol et systèmes d'IA utilisant des outils",
-      "description": "Une présentation de MCP comme protocole d’intégration pour les ressources, prompts, outils, consentements, frontières d’hôte et workflows d’IA contextualisés par un graphe.",
+      "description": "Model Context Protocol et systèmes d'IA utilisant des outils examine le sujet \"Model Context Protocol et systèmes d'IA utilisant des outils\" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
@@ -35,8 +35,8 @@
       "identifier": "ea:publication:model-context-protocol-and-tool-using-ai-systems-fr",
       "name": "Model Context Protocol et systèmes d'IA utilisant des outils",
       "headline": "Model Context Protocol et systèmes d'IA utilisant des outils",
-      "abstract": "Une présentation de MCP comme protocole d’intégration pour les ressources, prompts, outils, consentements, frontières d’hôte et workflows d’IA contextualisés par un graphe.",
-      "description": "Une présentation de MCP comme protocole d’intégration pour les ressources, prompts, outils, consentements, frontières d’hôte et workflows d’IA contextualisés par un graphe.",
+      "abstract": "Model Context Protocol et systèmes d'IA utilisant des outils examine le sujet \"Model Context Protocol et systèmes d'IA utilisant des outils\" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.",
+      "description": "Model Context Protocol et systèmes d'IA utilisant des outils examine le sujet \"Model Context Protocol et systèmes d'IA utilisant des outils\" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.",
       "url": "https://electronicartefacts.com/fr/publications/model-context-protocol-and-tool-using-ai-systems/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/publications/model-context-protocol-and-tool-using-ai-systems/#webpage"
@@ -77,7 +77,7 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 114,
+      "wordCount": 149,
       "citation": [
         "Electronic Artefacts. \"Model Context Protocol et systèmes d'IA utilisant des outils\". Article technique, version 1.0.0, 2026.",
         {
@@ -159,7 +159,7 @@
       "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/",
       "name": "Electronic Artefacts",
       "url": "https://electronicartefacts.com/",
-      "description": "Electronic Artefacts designs digital products, knowledge systems, cultural platforms and research-led experiences.",
+      "description": "Electronic Artefacts is an independent creative technology studio building client products, proprietary systems and research-led cultural work.",
       "keywords": [
         "creative technology",
         "knowledge graph",
@@ -213,7 +213,7 @@
       "@id": "https://electronicartefacts.com/#website",
       "url": "https://electronicartefacts.com/",
       "name": "Electronic Artefacts",
-      "description": "Electronic Artefacts designs digital products, knowledge systems, cultural platforms and research-led experiences.",
+      "description": "Electronic Artefacts is an independent creative technology studio building client products, proprietary systems and research-led cultural work.",
       "keywords": [
         "creative technology",
         "knowledge graph",

@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/publications/digital-preservation-and-living-archives/#webpage",
       "url": "https://electronicartefacts.com/fr/publications/digital-preservation-and-living-archives/",
       "name": "Préservation numérique et archives vivantes",
-      "description": "Une approche de la préservation numérique comme pratique culturelle active, qui maintient dans le temps les objets, métadonnées, provenances et contextes d’interprétation.",
+      "description": "Préservation numérique et archives vivantes examine le sujet \"Préservation numérique et archives vivantes\" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
@@ -35,8 +35,8 @@
       "identifier": "ea:publication:digital-preservation-and-living-archives-fr",
       "name": "Préservation numérique et archives vivantes",
       "headline": "Préservation numérique et archives vivantes",
-      "abstract": "Une approche de la préservation numérique comme pratique culturelle active, qui maintient dans le temps les objets, métadonnées, provenances et contextes d’interprétation.",
-      "description": "Une approche de la préservation numérique comme pratique culturelle active, qui maintient dans le temps les objets, métadonnées, provenances et contextes d’interprétation.",
+      "abstract": "Préservation numérique et archives vivantes examine le sujet \"Préservation numérique et archives vivantes\" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.",
+      "description": "Préservation numérique et archives vivantes examine le sujet \"Préservation numérique et archives vivantes\" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.",
       "url": "https://electronicartefacts.com/fr/publications/digital-preservation-and-living-archives/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/publications/digital-preservation-and-living-archives/#webpage"
@@ -78,7 +78,7 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 120,
+      "wordCount": 141,
       "citation": [
         "Electronic Artefacts. \"Préservation numérique et archives vivantes\". Article technique, version 1.0.0, 2026.",
         {
@@ -162,7 +162,7 @@
       "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/",
       "name": "Electronic Artefacts",
       "url": "https://electronicartefacts.com/",
-      "description": "Electronic Artefacts designs digital products, knowledge systems, cultural platforms and research-led experiences.",
+      "description": "Electronic Artefacts is an independent creative technology studio building client products, proprietary systems and research-led cultural work.",
       "keywords": [
         "creative technology",
         "knowledge graph",
@@ -216,7 +216,7 @@
       "@id": "https://electronicartefacts.com/#website",
       "url": "https://electronicartefacts.com/",
       "name": "Electronic Artefacts",
-      "description": "Electronic Artefacts designs digital products, knowledge systems, cultural platforms and research-led experiences.",
+      "description": "Electronic Artefacts is an independent creative technology studio building client products, proprietary systems and research-led cultural work.",
       "keywords": [
         "creative technology",
         "knowledge graph",

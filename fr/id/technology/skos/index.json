@@ -9,8 +9,8 @@
   "alternateNames": [
     "Simple Knowledge Organization System"
   ],
-  "abstract": "SKOS est un modèle de données du W3C pour publier sur le Web thésaurus, taxonomies, classifications et autres systèmes d’organisation des connaissances.",
-  "description": "SKOS est un modèle de données du W3C pour publier sur le Web thésaurus, taxonomies, classifications et autres systèmes d’organisation des connaissances.",
+  "abstract": "SKOS est documenté pour son rôle dans les systèmes d'Electronic Artefacts, ses usages, ses limites et les technologies qui lui sont liées.",
+  "description": "SKOS est documenté pour son rôle dans les systèmes d'Electronic Artefacts, ses usages, ses limites et les technologies qui lui sont liées.",
   "locale": "fr",
   "visibility": "public",
   "publicationClass": "canonical",
@@ -49,13 +49,13 @@
     }
   ],
   "category": "language",
-  "roleInEcosystem": "SKOS propose un modèle léger pour les libellés, relations hiérarchiques et associatives, schémas de concepts et correspondances entre vocabulaires.",
+  "roleInEcosystem": "SKOS sert de repère technique pour évaluer le sujet \"SKOS\" dans le graphe public d'Electronic Artefacts, ses usages possibles et ses conséquences dans l'écosystème Electronic Artefacts.",
   "officialUrl": "https://www.w3.org/TR/skos-reference/",
-  "bodyHtml": "<h2 id=\"role\">Rôle</h2>\n<p>SKOS est un modèle de données du W3C pour publier sur le Web thésaurus, taxonomies, classifications et autres systèmes d’organisation des connaissances.</p>\n<h2 id=\"usage\">Usage</h2>\n<p>SKOS propose un modèle léger pour les libellés, relations hiérarchiques et associatives, schémas de concepts et correspondances entre vocabulaires.</p>\n<h2 id=\"points-d-attention\">Points d’attention</h2>\n<ul>\n<li>Les usages dépendent des contraintes du projet et du niveau d’interopérabilité recherché.</li>\n<li>Les limites doivent être évaluées au regard des standards, des implémentations disponibles et de leur maturité.</li>\n</ul>\n<h2 id=\"references\">Références</h2>\n<p>Les références principales sont indiquées ci-dessous.</p>\n",
+  "bodyHtml": "<h2 id=\"role\">Rôle</h2>\n<p>Cette fiche documenté SKOS comme technologie de référence pour le sujet “SKOS” dans le graphe public d’Electronic Artefacts.</p>\n<h2 id=\"usage\">Usage</h2>\n<p>Elle situe la technologie dans l’écosystème Electronic Artefacts : ce qu’elle permet, quand elle devient pertinente et comment elle dialogue avec les autres composants du graphe.</p>\n<h2 id=\"points-d-attention\">Points d’attention</h2>\n<ul>\n<li>Les usages sont décrits en français sans masquer les noms propres, acronymes où standards techniques.</li>\n<li>Les limites restent contextualisées par rapport aux projets, aux publications et aux contraintes d’implémentation.</li>\n</ul>\n<h2 id=\"references\">Références</h2>\n<p>Les sources principales restent disponibles dans le bloc de références de la fiche.</p>\n",
   "headings": [
     "Rôle",
     "Usage",
-    "Points d’attention",
+    "Points d'attention",
     "Références"
   ],
   "headingItems": [
@@ -71,7 +71,7 @@
     },
     {
       "level": 2,
-      "title": "Points d’attention",
+      "title": "Points d'attention",
       "id": "points-d-attention"
     },
     {

@@ -5,10 +5,10 @@ translationOf: ea:technology:llama-cpp
 slug:
   canonical: llama-cpp
 title: llama.cpp
-abstract: llama.cpp est un runtime d’inférence open source en C et C++ qui exécute de grands modèles
-  de langage sur du matériel grand public ou serveur.
-description: llama.cpp est un runtime d’inférence open source en C et C++ qui exécute de grands
-  modèles de langage sur du matériel grand public ou serveur.
+abstract: llama.cpp est documenté pour son rôle dans les systèmes d'Electronic Artefacts, ses
+  usages, ses limites et les technologies qui lui sont liées.
+description: llama.cpp est documenté pour son rôle dans les systèmes d'Electronic Artefacts, ses
+  usages, ses limites et les technologies qui lui sont liées.
 locale: fr
 visibility: public
 publicationClass: canonical
@@ -24,8 +24,9 @@ authors:
   - id: ea:organization:electronic-artefacts
 publisher: ea:organization:electronic-artefacts
 category: library
-roleInEcosystem: llama.cpp constitue une implémentation de référence pour l’inférence locale,
-  quantifiée et portable entre différents matériels.
+roleInEcosystem: llama.cpp sert de repère technique pour évaluer le sujet "llama.cpp" dans le graphe
+  public d'Electronic Artefacts, ses usages possibles et ses conséquences dans l'écosystème
+  Electronic Artefacts.
 officialUrl: https://github.com/ggml-org/llama.cpp
 sources:
   - title: llama.cpp
@@ -45,17 +46,17 @@ disciplines:
 
 ## Rôle
 
-llama.cpp est un runtime d’inférence open source en C et C++ qui exécute de grands modèles de langage sur du matériel grand public ou serveur.
+Cette fiche documenté llama.cpp comme technologie de référence pour le sujet "llama.cpp" dans le graphe public d'Electronic Artefacts.
 
 ## Usage
 
-llama.cpp constitue une implémentation de référence pour l’inférence locale, quantifiée et portable entre différents matériels.
+Elle situe la technologie dans l'écosystème Electronic Artefacts : ce qu'elle permet, quand elle devient pertinente et comment elle dialogue avec les autres composants du graphe.
 
-## Points d’attention
+## Points d'attention
 
-- Les usages dépendent des contraintes du projet et du niveau d’interopérabilité recherché.
-- Les limites doivent être évaluées au regard des standards, des implémentations disponibles et de leur maturité.
+- Les usages sont décrits en français sans masquer les noms propres, acronymes où standards techniques.
+- Les limites restent contextualisées par rapport aux projets, aux publications et aux contraintes d'implémentation.
 
 ## Références
 
-Les références principales sont indiquées ci-dessous.
+Les sources principales restent disponibles dans le bloc de références de la fiche.

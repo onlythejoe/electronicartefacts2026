@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/organizations/electronic-artefacts/#webpage",
       "url": "https://electronicartefacts.com/fr/organizations/electronic-artefacts/",
       "name": "Electronic Artefacts",
-      "description": "Un studio reliant stratégie, design, logiciel, recherche et production culturelle au sein de systèmes publics durables.",
+      "description": "Stratégie, design, ingénierie et recherche culturelle réunis pour construire des produits numériques et des systèmes de connaissance clairs et durables.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
@@ -34,8 +34,8 @@
       "@id": "https://electronicartefacts.com/fr/id/organization/electronic-artefacts/",
       "identifier": "ea:organization:electronic-artefacts-fr",
       "name": "Electronic Artefacts",
-      "abstract": "Electronic Artefacts est un studio indépendant qui conçoit des produits numériques, des systèmes de connaissance, des plateformes culturelles et des expériences issues de la recherche.",
-      "description": "Electronic Artefacts est un studio indépendant qui conçoit des produits numériques, des systèmes de connaissance, des plateformes culturelles et des expériences issues de la recherche.",
+      "abstract": "Electronic Artefacts est un studio indépendant de technologies créatives qui mène des missions clients, développe ses propres systèmes et publie des travaux de recherche et de création.",
+      "description": "Electronic Artefacts est un studio indépendant de technologies créatives qui mène des missions clients, développe ses propres systèmes et publie des travaux de recherche et de création.",
       "url": "https://electronicartefacts.com/fr/organizations/electronic-artefacts/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/organizations/electronic-artefacts/#webpage"
@@ -82,7 +82,7 @@
       "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/",
       "name": "Electronic Artefacts",
       "url": "https://electronicartefacts.com/",
-      "description": "Electronic Artefacts designs digital products, knowledge systems, cultural platforms and research-led experiences.",
+      "description": "Electronic Artefacts is an independent creative technology studio building client products, proprietary systems and research-led cultural work.",
       "keywords": [
         "creative technology",
         "knowledge graph",
@@ -136,7 +136,7 @@
       "@id": "https://electronicartefacts.com/#website",
       "url": "https://electronicartefacts.com/",
       "name": "Electronic Artefacts",
-      "description": "Electronic Artefacts designs digital products, knowledge systems, cultural platforms and research-led experiences.",
+      "description": "Electronic Artefacts is an independent creative technology studio building client products, proprietary systems and research-led cultural work.",
       "keywords": [
         "creative technology",
         "knowledge graph",

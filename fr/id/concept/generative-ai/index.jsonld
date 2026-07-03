@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/knowledge/concepts/generative-ai/#webpage",
       "url": "https://electronicartefacts.com/fr/knowledge/concepts/generative-ai/",
       "name": "IA générative",
-      "description": "Définition, usages, limites et relations associés au concept : IA générative.",
+      "description": "IA générative désigne les systèmes d'IA capables de produire où transformer du texte, des images, du son, de la vidéo, du code où des données structurées. La fiche en précise l'usage, les limites et les relations avec les projets, technologies et publications d'Electronic Artefacts.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
@@ -34,8 +34,8 @@
       "@id": "https://electronicartefacts.com/fr/id/concept/generative-ai/",
       "identifier": "ea:concept:generative-ai-fr",
       "name": "IA générative",
-      "abstract": "Ce concept propose un cadre précis pour comprendre les systèmes d'IA capables de produire ou transformer du texte, des images, du son, de la video, du code ou des données structurees et ses liens avec les projets, technologies et publications associés.",
-      "description": "Cette notion recouvre les systèmes d'IA capables de produire ou transformer du texte, des images, du son, de la video, du code ou des données structurees.",
+      "abstract": "IA générative désigne les systèmes d'IA capables de produire où transformer du texte, des images, du son, de la vidéo, du code où des données structurées. La fiche en précise l'usage, les limites et les relations avec les projets, technologies et publications d'Electronic Artefacts.",
+      "description": "IA générative désigne les systèmes d'IA capables de produire où transformer du texte, des images, du son, de la vidéo, du code où des données structurées.",
       "url": "https://electronicartefacts.com/fr/knowledge/concepts/generative-ai/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/knowledge/concepts/generative-ai/#webpage"
@@ -75,7 +75,7 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 66,
+      "wordCount": 92,
       "citation": [
         {
           "@type": "CreativeWork",
@@ -93,7 +93,7 @@
       "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/",
       "name": "Electronic Artefacts",
       "url": "https://electronicartefacts.com/",
-      "description": "Electronic Artefacts designs digital products, knowledge systems, cultural platforms and research-led experiences.",
+      "description": "Electronic Artefacts is an independent creative technology studio building client products, proprietary systems and research-led cultural work.",
       "keywords": [
         "creative technology",
         "knowledge graph",
@@ -147,7 +147,7 @@
       "@id": "https://electronicartefacts.com/#website",
       "url": "https://electronicartefacts.com/",
       "name": "Electronic Artefacts",
-      "description": "Electronic Artefacts designs digital products, knowledge systems, cultural platforms and research-led experiences.",
+      "description": "Electronic Artefacts is an independent creative technology studio building client products, proprietary systems and research-led cultural work.",
       "keywords": [
         "creative technology",
         "knowledge graph",

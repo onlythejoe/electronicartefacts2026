@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/knowledge/concepts/event-driven-architecture/#webpage",
       "url": "https://electronicartefacts.com/fr/knowledge/concepts/event-driven-architecture/",
       "name": "Architecture événementielle",
-      "description": "Définition, usages, limites et relations associés au concept : Architecture événementielle.",
+      "description": "Architecture événementielle désigne les architectures où les changements d'état sont publiés sous forme d'événements et consommés par des composants découplés. La fiche en précise l'usage, les limites et les relations avec les projets, technologies et publications d'Electronic Artefacts.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
@@ -34,8 +34,8 @@
       "@id": "https://electronicartefacts.com/fr/id/concept/event-driven-architecture/",
       "identifier": "ea:concept:event-driven-architecture-fr",
       "name": "Architecture événementielle",
-      "abstract": "Ce concept propose un cadre précis pour comprendre les architectures ou les changements d'etat sont publies sous forme d'evenements et consommes par des composants decouples et ses liens avec les projets, technologies et publications associés.",
-      "description": "Cette notion recouvre les architectures ou les changements d'etat sont publies sous forme d'evenements et consommes par des composants decouples.",
+      "abstract": "Architecture événementielle désigne les architectures où les changements d'état sont publiés sous forme d'événements et consommés par des composants découplés. La fiche en précise l'usage, les limites et les relations avec les projets, technologies et publications d'Electronic Artefacts.",
+      "description": "Architecture événementielle désigne les architectures où les changements d'état sont publiés sous forme d'événements et consommés par des composants découplés.",
       "url": "https://electronicartefacts.com/fr/knowledge/concepts/event-driven-architecture/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/knowledge/concepts/event-driven-architecture/#webpage"
@@ -77,7 +77,7 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 60,
+      "wordCount": 86,
       "citation": [
         {
           "@type": "CreativeWork",
@@ -94,7 +94,7 @@
       "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/",
       "name": "Electronic Artefacts",
       "url": "https://electronicartefacts.com/",
-      "description": "Electronic Artefacts designs digital products, knowledge systems, cultural platforms and research-led experiences.",
+      "description": "Electronic Artefacts is an independent creative technology studio building client products, proprietary systems and research-led cultural work.",
       "keywords": [
         "creative technology",
         "knowledge graph",
@@ -148,7 +148,7 @@
       "@id": "https://electronicartefacts.com/#website",
       "url": "https://electronicartefacts.com/",
       "name": "Electronic Artefacts",
-      "description": "Electronic Artefacts designs digital products, knowledge systems, cultural platforms and research-led experiences.",
+      "description": "Electronic Artefacts is an independent creative technology studio building client products, proprietary systems and research-led cultural work.",
       "keywords": [
         "creative technology",
         "knowledge graph",

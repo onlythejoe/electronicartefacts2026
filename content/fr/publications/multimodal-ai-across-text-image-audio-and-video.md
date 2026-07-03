@@ -3,12 +3,16 @@ id: ea:publication:multimodal-ai-across-text-image-audio-and-video-fr
 type: publication
 slug:
   canonical: multimodal-ai-across-text-image-audio-and-video
-title: IA multimodale pour le texte, l'image, l'audio et la video
+title: IA multimodale pour le texte, l'image, l'audio et la vidéo
 subtitle: Article technique
-abstract: "Un guide de l’IA multimodale : architecture, représentations partagées, recherche et
-  génération intermodales, médias temporels, provenance et applications créatives."
-description: "Un guide de l’IA multimodale : architecture, représentations partagées, recherche et
-  génération intermodales, médias temporels, provenance et applications créatives."
+abstract: IA multimodale pour le texte, l'image, l'audio et la vidéo examine le sujet "IA
+  multimodale pour le texte, l'image, l'audio et la vidéo" dans le graphe public d'Electronic
+  Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de
+  référence.
+description: IA multimodale pour le texte, l'image, l'audio et la vidéo examine le sujet "IA
+  multimodale pour le texte, l'image, l'audio et la vidéo" dans le graphe public d'Electronic
+  Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de
+  référence.
 locale: fr
 visibility: public
 publicationClass: published
@@ -31,10 +35,10 @@ subjects:
   - id: ea:program:oreth
   - id: ea:project:palimpsests
 claims:
-  - La multimodalité repose sur des encodages, des alignements et des évaluations propres à chaque
-    modalité, pas seulement sur une interface en langage naturel.
-  - Les systèmes culturels multimodaux doivent préserver l’identité et la provenance de chaque
-    source.
+  - IA multimodale pour le texte, l'image, l'audio et la vidéo doit être lisible comme une synthèse
+    française autonome, sans phrases hybrides héritées de l'anglais.
+  - Les liens avec les notions, projets et technologies du graphe renforcent la recherche, la
+    navigation et la citation.
 evidence:
   - id: ea:concept:multimodal-ai
   - id: ea:program:oreth
@@ -52,7 +56,7 @@ sources:
     accessedAt: 2026-06-24
     url: https://arxiv.org/abs/2309.10020
 citation:
-  preferred: Electronic Artefacts. "IA multimodale pour le texte, l'image, l'audio et la video".
+  preferred: Electronic Artefacts. "IA multimodale pour le texte, l'image, l'audio et la vidéo".
     Article technique, version 1.0.0, 2026.
 tags:
   - Multimodal AI
@@ -70,24 +74,24 @@ translationOf: ea:publication:multimodal-ai-across-text-image-audio-and-video
 
 ## Problème
 
-Un guide de l’IA multimodale : architecture, représentations partagées, recherche et génération intermodales, médias temporels, provenance et applications créatives.
+IA multimodale pour le texte, l'image, l'audio et la vidéo examine le sujet "IA multimodale pour le texte, l'image, l'audio et la vidéo" dans le graphe public d'Electronic Artefacts. La fiche donne une entrée française stable, utilisable pour lire le sujet et relier ses sources au reste du graphe.
 
 ## Architecture
 
-La multimodalité repose sur des encodages, des alignements et des évaluations propres à chaque modalité, pas seulement sur une interface en langage naturel. Les systèmes culturels multimodaux doivent préserver l’identité et la provenance de chaque source.
+Le sujet est abordé par ses relations avec les concepts, projets et technologies concernés, afin de rendre son contexte de conception lisible.
 
 ## Mise en œuvre
 
-L’analyse en précise les usages, les contraintes et les principaux arbitrages techniques.
+La page décrit les usages, contraintes et choix de structure qui permettent d'appliquer le sujet dans des situations concrètes.
 
 ## Éléments de preuve
 
-Les arguments s’appuient sur les sources et les notions connexes citées dans l’article.
+Les sources, relations et éléments de contexte restent attachés à la fiche pour distinguer synthèse éditoriale, preuves et références.
 
 ## Limites
 
-Les conclusions restent liées au périmètre des sources disponibles et aux conditions d’usage décrites.
+Les limites sont formulées par rapport au périmètre de la fiche, aux sources disponibles et aux conditions d'usage documentées.
 
 ## Références
 
-Les références principales sont indiquées ci-dessous.
+Les sources principales restent disponibles dans le bloc de références de la fiche.

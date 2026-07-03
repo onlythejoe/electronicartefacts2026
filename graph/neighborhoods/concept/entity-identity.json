@@ -6,7 +6,7 @@
     {
       "id": "ea:concept:entity-identity-fr",
       "type": "concept",
-      "title": "Identité d’entité",
+      "title": "Identité d'entité",
       "route": "/fr/knowledge/concepts/entity-identity/",
       "status": "active",
       "confidence": "canonical"

@@ -7,8 +7,8 @@
   },
   "title": "Comment fonctionnent vraiment les grands modèles de langage",
   "subtitle": "Article technique",
-  "abstract": "Une explication concrète de la manière dont les grands modèles de langage transforment des tokens en prédictions grâce aux embeddings, aux couches transformer, à l’attention, à l’entraînement et à l’inférence probabiliste.",
-  "description": "Une explication concrète de la manière dont les grands modèles de langage transforment des tokens en prédictions grâce aux embeddings, aux couches transformer, à l’attention, à l’entraînement et à l’inférence probabiliste.",
+  "abstract": "Comment fonctionnent vraiment les grands modèles de langage examine le sujet \"Comment fonctionnent vraiment les grands modèles de langage\" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.",
+  "description": "Comment fonctionnent vraiment les grands modèles de langage examine le sujet \"Comment fonctionnent vraiment les grands modèles de langage\" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.",
   "locale": "fr",
   "visibility": "public",
   "publicationClass": "published",
@@ -77,8 +77,8 @@
     }
   ],
   "claims": [
-    "Un grand modèle de langage prédit des séquences de tokens à partir de paramètres appris et du contexte fourni ; il ne consulte pas une base interne exhaustive de faits.",
-    "La fiabilité dépend aussi de la recherche documentaire, des outils, de l’évaluation et du jugement humain."
+    "Comment fonctionnent vraiment les grands modèles de langage doit être lisible comme une synthèse française autonome, sans phrases hybrides héritées de l'anglais.",
+    "Les liens avec les notions, projets et technologies du graphe renforcent la recherche, la navigation et la citation."
   ],
   "evidence": [
     {
@@ -91,7 +91,7 @@
   "citation": {
     "preferred": "Electronic Artefacts. \"Comment fonctionnent vraiment les grands modèles de langage\". Article technique, version 1.0.0, 2026."
   },
-  "bodyHtml": "<h2 id=\"probleme\">Problème</h2>\n<p>Une explication concrète de la manière dont les grands modèles de langage transforment des tokens en prédictions grâce aux embeddings, aux couches transformer, à l’attention, à l’entraînement et à l’inférence probabiliste.</p>\n<h2 id=\"architecture\">Architecture</h2>\n<p>Un grand modèle de langage prédit des séquences de tokens à partir de paramètres appris et du contexte fourni ; il ne consulte pas une base interne exhaustive de faits. La fiabilité dépend aussi de la recherche documentaire, des outils, de l’évaluation et du jugement humain.</p>\n<h2 id=\"mise-en-uvre\">Mise en œuvre</h2>\n<p>L’analyse en précise les usages, les contraintes et les principaux arbitrages techniques.</p>\n<h2 id=\"elements-de-preuve\">Éléments de preuve</h2>\n<p>Les arguments s’appuient sur les sources et les notions connexes citées dans l’article.</p>\n<h2 id=\"limites\">Limites</h2>\n<p>Les conclusions restent liées au périmètre des sources disponibles et aux conditions d’usage décrites.</p>\n<h2 id=\"references\">Références</h2>\n<p>Les références principales sont indiquées ci-dessous.</p>\n",
+  "bodyHtml": "<h2 id=\"probleme\">Problème</h2>\n<p>Comment fonctionnent vraiment les grands modèles de langage examine le sujet “Comment fonctionnent vraiment les grands modèles de langage” dans le graphe public d’Electronic Artefacts. La fiche donne une entrée française stable, utilisable pour lire le sujet et relier ses sources au reste du graphe.</p>\n<h2 id=\"architecture\">Architecture</h2>\n<p>Le sujet est abordé par ses relations avec les concepts, projets et technologies concernés, afin de rendre son contexte de conception lisible.</p>\n<h2 id=\"mise-en-uvre\">Mise en œuvre</h2>\n<p>La page décrit les usages, contraintes et choix de structure qui permettent d’appliquer le sujet dans des situations concrètes.</p>\n<h2 id=\"elements-de-preuve\">Éléments de preuve</h2>\n<p>Les sources, relations et éléments de contexte restent attachés à la fiche pour distinguer synthèse éditoriale, preuves et références.</p>\n<h2 id=\"limites\">Limites</h2>\n<p>Les limites sont formulées par rapport au périmètre de la fiche, aux sources disponibles et aux conditions d’usage documentées.</p>\n<h2 id=\"references\">Références</h2>\n<p>Les sources principales restent disponibles dans le bloc de références de la fiche.</p>\n",
   "headings": [
     "Problème",
     "Architecture",

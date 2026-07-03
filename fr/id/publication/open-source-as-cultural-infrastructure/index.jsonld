@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/publications/open-source-as-cultural-infrastructure/#webpage",
       "url": "https://electronicartefacts.com/fr/publications/open-source-as-cultural-infrastructure/",
       "name": "L’open source comme infrastructure culturelle",
-      "description": "Une lecture de l’open source comme infrastructure culturelle, à travers les licences, la maintenance, les outils créatifs, les chaînes de dépendances, les communs et les systèmes publics de connaissance.",
+      "description": "L’open source comme infrastructure culturelle examine le sujet \"L’open source comme infrastructure culturelle\" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
@@ -35,8 +35,8 @@
       "identifier": "ea:publication:open-source-as-cultural-infrastructure-fr",
       "name": "L’open source comme infrastructure culturelle",
       "headline": "L’open source comme infrastructure culturelle",
-      "abstract": "Une lecture de l’open source comme infrastructure culturelle, à travers les licences, la maintenance, les outils créatifs, les chaînes de dépendances, les communs et les systèmes publics de connaissance.",
-      "description": "Une lecture de l’open source comme infrastructure culturelle, à travers les licences, la maintenance, les outils créatifs, les chaînes de dépendances, les communs et les systèmes publics de connaissance.",
+      "abstract": "L’open source comme infrastructure culturelle examine le sujet \"L’open source comme infrastructure culturelle\" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.",
+      "description": "L’open source comme infrastructure culturelle examine le sujet \"L’open source comme infrastructure culturelle\" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.",
       "url": "https://electronicartefacts.com/fr/publications/open-source-as-cultural-infrastructure/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/publications/open-source-as-cultural-infrastructure/#webpage"
@@ -60,7 +60,7 @@
         "open source",
         "programmation créative",
         "infrastructure",
-        "mainteneurs",
+        "Maintainers",
         "programmation",
         "culture Internet"
       ],
@@ -75,7 +75,7 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 121,
+      "wordCount": 141,
       "citation": [
         "Electronic Artefacts. \"L’open source comme infrastructure culturelle\". Article technique, version 1.0.0, 2026.",
         {
@@ -119,7 +119,7 @@
         "programmation créative",
         "culture Internet",
         "infrastructure",
-        "mainteneurs"
+        "Maintainers"
       ],
       "timeRequired": "PT1M",
       "isBasedOn": [
@@ -142,7 +142,7 @@
       "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/",
       "name": "Electronic Artefacts",
       "url": "https://electronicartefacts.com/",
-      "description": "Electronic Artefacts designs digital products, knowledge systems, cultural platforms and research-led experiences.",
+      "description": "Electronic Artefacts is an independent creative technology studio building client products, proprietary systems and research-led cultural work.",
       "keywords": [
         "creative technology",
         "knowledge graph",
@@ -196,7 +196,7 @@
       "@id": "https://electronicartefacts.com/#website",
       "url": "https://electronicartefacts.com/",
       "name": "Electronic Artefacts",
-      "description": "Electronic Artefacts designs digital products, knowledge systems, cultural platforms and research-led experiences.",
+      "description": "Electronic Artefacts is an independent creative technology studio building client products, proprietary systems and research-led cultural work.",
       "keywords": [
         "creative technology",
         "knowledge graph",

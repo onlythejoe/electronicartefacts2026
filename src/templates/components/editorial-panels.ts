@@ -92,13 +92,13 @@ const panel = (eyebrow: string, title: string, body: string): string =>
     : "";
 
 const conceptPanels = (entity: ConceptEntity): string[] => [
-  panel("Scope", "What this covers", renderList(entity.scope)),
-  panel("Position", "What Electronic Artefacts keeps from it", renderList(entity.claims)),
-  panel("Limits", "What stays outside the frame", renderList(entity.exclusions)),
+  panel("Scope", "Defined scope", renderList(entity.scope)),
+  panel("Position", "Editorial position", renderList(entity.claims)),
+  panel("Limits", "Explicit limits", renderList(entity.exclusions)),
 ];
 
 const technologyPanels = (entity: TechnologyEntity): string[] => [
-  panel("Technology role", "Why this technology matters here", `<p class="card__copy">${escapeHtml(entity.roleInEcosystem)}</p>`),
+  panel("Technology role", "Role in the system", `<p class="card__copy">${escapeHtml(entity.roleInEcosystem)}</p>`),
   panel("Reference", "Category, versions and official source", `
     <dl class="metadata-list">
       <div><dt>Category</dt><dd>${escapeHtml(labelFrom(entity.category))}</dd></div>
@@ -125,8 +125,8 @@ const collectionPanels = (
   byId: Map<string, Entity>,
   routeById: Record<string, string>,
 ): string[] => [
-  panel("Collection thesis", "Why these pages belong together", `<p class="card__copy">${escapeHtml(entity.thesis)}</p>`),
-  panel("Selection note", "Why this selection matters", `<p class="card__copy">${escapeHtml(entity.selectionNote)}</p>`),
+  panel("Collection thesis", "Editorial thesis", `<p class="card__copy">${escapeHtml(entity.thesis)}</p>`),
+  panel("Selection note", "Selection principles", `<p class="card__copy">${escapeHtml(entity.selectionNote)}</p>`),
   panel("Included pages", "Articles and notions in this collection", renderRefs(entity.explicitMembers, byId, routeById, entity.locale)),
 ];
 
@@ -173,9 +173,9 @@ export const renderEditorialPanels = (
   return `
     <section class="zone-card hero">
       <div class="section-head">
-        <p class="eyebrow">REPÈRES</p>
-        <h2>Definition, sources and useful limits.</h2>
-        <p class="lede">Start here for the practical frame: what the page covers, what it leaves aside and which references support it.</p>
+        <p class="eyebrow">EDITORIAL FRAME</p>
+        <h2>What this entry establishes.</h2>
+        <p class="lede">A concise view of its scope, position, limitations and supporting sources.</p>
       </div>
       <div class="card-grid card-grid--two">
         ${panels.join("")}

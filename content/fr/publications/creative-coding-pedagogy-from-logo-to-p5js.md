@@ -5,11 +5,12 @@ slug:
   canonical: creative-coding-pedagogy-from-logo-to-p5js
 title: Pédagogie de la programmation créative, de Logo à p5.js
 subtitle: Article technique
-abstract: Une approche pédagogique de la programmation créative fondée sur l’exploration, la culture
-  informatique, Processing, p5.js, le retour visuel et les communautés d’apprentissage ouvertes.
-description: Une approche pédagogique de la programmation créative fondée sur l’exploration, la
-  culture informatique, Processing, p5.js, le retour visuel et les communautés d’apprentissage
-  ouvertes.
+abstract: Pédagogie de la programmation créative, de Logo à p5.js examine le sujet "Pédagogie de la
+  programmation créative, de Logo à p5.js" dans le graphe public d'Electronic Artefacts. La fiche en
+  synthétise les architectures, les usages, les limites et les sources de référence.
+description: Pédagogie de la programmation créative, de Logo à p5.js examine le sujet "Pédagogie de
+  la programmation créative, de Logo à p5.js" dans le graphe public d'Electronic Artefacts. La fiche
+  en synthétise les architectures, les usages, les limites et les sources de référence.
 locale: fr
 visibility: public
 publicationClass: published
@@ -31,10 +32,10 @@ subjects:
   - id: ea:concept:procedural-graphics
   - id: ea:concept:generative-system
 claims:
-  - La programmation créative facilite l’apprentissage parce que le code produit rapidement un
-    résultat visible, audible ou interactif.
-  - Les exemples ouverts et les esquisses modifiables jouent un rôle central dans la culture
-    informatique appliquée à l’art et au design.
+  - Pédagogie de la programmation créative, de Logo à p5.js doit être lisible comme une synthèse
+    française autonome, sans phrases hybrides héritées de l'anglais.
+  - Les liens avec les notions, projets et technologies du graphe renforcent la recherche, la
+    navigation et la citation.
 evidence:
   - id: ea:concept:creative-coding
   - id: ea:concept:open-source
@@ -65,24 +66,24 @@ translationOf: ea:publication:creative-coding-pedagogy-from-logo-to-p5js
 
 ## Problème
 
-Une approche pédagogique de la programmation créative fondée sur l’exploration, la culture informatique, Processing, p5.js, le retour visuel et les communautés d’apprentissage ouvertes.
+Pédagogie de la programmation créative, de Logo à p5.js examine le sujet "Pédagogie de la programmation créative, de Logo à p5.js" dans le graphe public d'Electronic Artefacts. La fiche donne une entrée française stable, utilisable pour lire le sujet et relier ses sources au reste du graphe.
 
 ## Architecture
 
-La programmation créative facilite l’apprentissage parce que le code produit rapidement un résultat visible, audible ou interactif. Les exemples ouverts et les esquisses modifiables jouent un rôle central dans la culture informatique appliquée à l’art et au design.
+Le sujet est abordé par ses relations avec les concepts, projets et technologies concernés, afin de rendre son contexte de conception lisible.
 
 ## Mise en œuvre
 
-L’analyse en précise les usages, les contraintes et les principaux arbitrages techniques.
+La page décrit les usages, contraintes et choix de structure qui permettent d'appliquer le sujet dans des situations concrètes.
 
 ## Éléments de preuve
 
-Les arguments s’appuient sur les sources et les notions connexes citées dans l’article.
+Les sources, relations et éléments de contexte restent attachés à la fiche pour distinguer synthèse éditoriale, preuves et références.
 
 ## Limites
 
-Les conclusions restent liées au périmètre des sources disponibles et aux conditions d’usage décrites.
+Les limites sont formulées par rapport au périmètre de la fiche, aux sources disponibles et aux conditions d'usage documentées.
 
 ## Références
 
-Les références principales sont indiquées ci-dessous.
+Les sources principales restent disponibles dans le bloc de références de la fiche.

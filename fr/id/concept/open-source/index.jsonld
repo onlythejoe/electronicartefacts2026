@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/knowledge/concepts/open-source/#webpage",
       "url": "https://electronicartefacts.com/fr/knowledge/concepts/open-source/",
       "name": "open source",
-      "description": "Définition, usages, limites et relations associés au concept : open source.",
+      "description": "open source désigne les pratiques de publication, maintenance et cooperation fondees sur du code et des ressources ouverts. La fiche en précise l'usage, les limites et les relations avec les projets, technologies et publications d'Electronic Artefacts.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
@@ -34,8 +34,8 @@
       "@id": "https://electronicartefacts.com/fr/id/concept/open-source/",
       "identifier": "ea:concept:open-source-fr",
       "name": "open source",
-      "abstract": "Ce concept propose un cadre précis pour comprendre les pratiques de publication, maintenance et cooperation fondees sur du code et des ressources ouverts et ses liens avec les projets, technologies et publications associés.",
-      "description": "Cette notion recouvre les pratiques de publication, maintenance et cooperation fondees sur du code et des ressources ouverts.",
+      "abstract": "open source désigne les pratiques de publication, maintenance et cooperation fondees sur du code et des ressources ouverts. La fiche en précise l'usage, les limites et les relations avec les projets, technologies et publications d'Electronic Artefacts.",
+      "description": "open source désigne les pratiques de publication, maintenance et cooperation fondees sur du code et des ressources ouverts.",
       "url": "https://electronicartefacts.com/fr/knowledge/concepts/open-source/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/knowledge/concepts/open-source/#webpage"
@@ -75,7 +75,7 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 58,
+      "wordCount": 84,
       "citation": [
         {
           "@type": "CreativeWork",
@@ -92,7 +92,7 @@
       "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/",
       "name": "Electronic Artefacts",
       "url": "https://electronicartefacts.com/",
-      "description": "Electronic Artefacts designs digital products, knowledge systems, cultural platforms and research-led experiences.",
+      "description": "Electronic Artefacts is an independent creative technology studio building client products, proprietary systems and research-led cultural work.",
       "keywords": [
         "creative technology",
         "knowledge graph",
@@ -146,7 +146,7 @@
       "@id": "https://electronicartefacts.com/#website",
       "url": "https://electronicartefacts.com/",
       "name": "Electronic Artefacts",
-      "description": "Electronic Artefacts designs digital products, knowledge systems, cultural platforms and research-led experiences.",
+      "description": "Electronic Artefacts is an independent creative technology studio building client products, proprietary systems and research-led cultural work.",
       "keywords": [
         "creative technology",
         "knowledge graph",

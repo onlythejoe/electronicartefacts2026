@@ -279,6 +279,66 @@ const tagMap = new Map(Object.entries({
 }));
 
 const accentFrenchText = (value) => value
+  .replace(/\bEtude\b/g, "Étude")
+  .replace(/\betendent\b/g, "étendent")
+  .replace(/\betendre\b/g, "étendre")
+  .replace(/\bcontrole\b/g, "contrôle")
+  .replace(/\bregles\b/g, "règles")
+  .replace(/\bparametriques\b/g, "paramétriques")
+  .replace(/\bgenerees\b/g, "générées")
+  .replace(/\bpublies\b/g, "publiés")
+  .replace(/\bexecution\b/g, "exécution")
+  .replace(/\bou\b/g, "où")
+  .replace(/\bmemoire\b/g, "mémoire")
+  .replace(/\bmedium\b/g, "médium")
+  .replace(/\bpedagogique\b/g, "pédagogique")
+  .replace(/\bretroaction\b/g, "rétroaction")
+  .replace(/\bsystemique\b/g, "systémique")
+  .replace(/\bnumeriques\b/g, "numériques")
+  .replace(/\binterpretation\b/g, "interprétation")
+  .replace(/\betat\b/g, "état")
+  .replace(/\bevenements\b/g, "événements")
+  .replace(/\bconsommes\b/g, "consommés")
+  .replace(/\bdecouples\b/g, "découplés")
+  .replace(/\bvideo\b/g, "vidéo")
+  .replace(/\bdonnees\b/g, "données")
+  .replace(/\bstructurees\b/g, "structurées")
+  .replace(/\bmodelisation\b/g, "modélisation")
+  .replace(/\bModelisation\b/g, "Modélisation")
+  .replace(/\bentites\b/g, "entités")
+  .replace(/\bentite\b/g, "entité")
+  .replace(/\bcybernetique\b/g, "cybernétique")
+  .replace(/\bentraines\b/g, "entraînés")
+  .replace(/\bpredire\b/g, "prédire")
+  .replace(/\bgenerer\b/g, "générer")
+  .replace(/\bsequences\b/g, "séquences")
+  .replace(/\bmetadonnees\b/g, "métadonnées")
+  .replace(/\bdecrits\b/g, "décrits")
+  .replace(/\bsepares\b/g, "séparés")
+  .replace(/\bfrontieres\b/g, "frontières")
+  .replace(/\bresponsabilite\b/g, "responsabilité")
+  .replace(/\bsemantique\b/g, "sémantique")
+  .replace(/\bmodalites\b/g, "modalités")
+  .replace(/\bproprietes\b/g, "propriétés")
+  .replace(/\breseaux\b/g, "réseaux")
+  .replace(/\bemergent\b/g, "émergent")
+  .replace(/\bidees\b/g, "idées")
+  .replace(/\bdecisions\b/g, "décisions")
+  .replace(/\bchaine\b/g, "chaîne")
+  .replace(/\brecuperent\b/g, "récupèrent")
+  .replace(/\bgeneration\b/g, "génération")
+  .replace(/\breponse\b/g, "réponse")
+  .replace(/\bhypotheses\b/g, "hypothèses")
+  .replace(/\bpartagees\b/g, "partagées")
+  .replace(/\bexperimentations\b/g, "expérimentations")
+  .replace(/\bverification\b/g, "vérification")
+  .replace(/\bcriteres\b/g, "critères")
+  .replace(/\bfondee\b/g, "fondée")
+  .replace(/\bcomposes\b/g, "composés")
+  .replace(/\bmedias\b/g, "médias")
+  .replace(/\bgeneratifs\b/g, "génératifs")
+  .replace(/\baugmentee\b/g, "augmentée")
+  .replace(/\bcreatifs\b/g, "créatifs")
   .replace(/\bSynthese\b/g, "Synthèse")
   .replace(/\bRole\b/g, "Rôle")
   .replace(/\bReferences\b/g, "Références")
@@ -475,18 +535,18 @@ const sourceLine = (entity) => {
 
 const genericAbstract = (type, title, topic) => {
   if (type === "publication") {
-    return accentFrenchText(`${title} propose une synthese claire en francais sur ${topic}, avec un angle utile pour la recherche, la conception et la publication de connaissances numeriques.`);
+    return accentFrenchText(`${title} examine ${topic}. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.`);
   }
   if (type === "collection") {
     return accentFrenchText(`${title} rassemble des fiches liées par un même axe éditorial, afin de donner une progression lisible aux archives de connaissance d'Electronic Artefacts.`);
   }
   if (type === "technology") {
-    return accentFrenchText(`${title} est presente comme une technologie de reference pour comprendre son role dans l'ecosysteme Electronic Artefacts, ses usages, ses limites et sa place dans les systemes numeriques contemporains.`);
+    return accentFrenchText(`${title} est documenté pour son rôle dans les systèmes d'Electronic Artefacts, ses usages, ses limites et les technologies qui lui sont liées.`);
   }
   if (type === "researchField") {
     return accentFrenchText(`${title} cadre un champ de recherche suivi par Electronic Artefacts, en reliant questions ouvertes, prototypes, sources et hypotheses de travail.`);
   }
-  return accentFrenchText(`${title} definit un repere conceptuel en francais pour comprendre ${topic} et ses liens avec les projets, technologies et publications du graphe.`);
+  return accentFrenchText(`${title} désigne ${topic}. La fiche en précise l'usage, les limites et les relations avec les projets, technologies et publications d'Electronic Artefacts.`);
 };
 
 const bodyFor = (entity, english, title, topic) => {
@@ -510,9 +570,9 @@ const bodyFor = (entity, english, title, topic) => {
     return accentFrenchText(`## Champ\n\n${title} decrit un espace de recherche actif pour Electronic Artefacts. Il relie ${topic} a des questions, prototypes et methodes qui peuvent evoluer dans le temps.\n\n## Questions\n\n- Comment rendre les hypotheses suffisamment explicites pour etre partagees, testees et reliees au graphe ?\n- Quelles preuves, interfaces ou architectures permettent de transformer ce champ en experience utilisable ?\n\n## Usage\n\nCette fiche donne une entree francaise au champ de recherche et conserve ses liens avec les projets, publications et technologies associes.\n\n## References\n\n${references}\n`);
   }
   if (entity.type === "technology") {
-    return accentFrenchText(`## Role\n\n${title} est documente comme technologie de reference pour ${topic}.\n\n## Usage\n\nCette fiche aide a situer la technologie dans l'ecosysteme Electronic Artefacts : ce qu'elle permet, quand elle devient pertinente et comment elle dialogue avec les autres composants du graphe.\n\n## Points d'attention\n\n- Les usages sont decrits en francais sans masquer les noms propres, acronymes ou standards techniques.\n- Les limites restent contextualisees par rapport aux projets, aux publications et aux contraintes d'implementation.\n\n## References\n\n${references}\n`);
+    return accentFrenchText(`## Role\n\nCette fiche documente ${title} comme technologie de reference pour ${topic}.\n\n## Usage\n\nElle situe la technologie dans l'ecosysteme Electronic Artefacts : ce qu'elle permet, quand elle devient pertinente et comment elle dialogue avec les autres composants du graphe.\n\n## Points d'attention\n\n- Les usages sont decrits en francais sans masquer les noms propres, acronymes ou standards techniques.\n- Les limites restent contextualisees par rapport aux projets, aux publications et aux contraintes d'implementation.\n\n## References\n\n${references}\n`);
   }
-  return accentFrenchText(`## Role\n\n${title} est documente comme notion de reference pour comprendre ${topic}.\n\n## Usage\n\nCette fiche relie la notion aux projets, publications et technologies qui partagent un meme vocabulaire de conception. Elle sert de point d'appui pour naviguer dans le graphe en version francaise.\n\n## Perimetre\n\nLa notion est abordee par ses definitions, ses usages, ses limites et ses relations avec les autres objets documentes.\n\n## References\n\n${references}\n`);
+  return accentFrenchText(`## Définition\n\n${title} désigne ${topic}.\n\n## Usage\n\nCette fiche relie la notion aux projets, publications et technologies qui partagent un meme vocabulaire de conception. Elle sert de point d'appui pour naviguer dans le graphe en version francaise.\n\n## Perimetre\n\nLa notion est abordee par ses definitions, ses usages, ses limites et ses relations avec les autres objets documentes.\n\n## References\n\n${references}\n`);
 };
 
 const normalizeEntity = (fr, english) => {

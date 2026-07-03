@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/publications/ai-agents-vs-ai-workflows/#webpage",
       "url": "https://electronicartefacts.com/fr/publications/ai-agents-vs-ai-workflows/",
       "name": "Agents d'IA et workflows d'IA",
-      "description": "Une comparaison pratique entre agents pilotés par des modèles, workflows déterministes et orchestrations hybrides, avec leurs enjeux de permissions, de mémoire, d’évaluation et de supervision humaine.",
+      "description": "Agents d'IA et workflows d'IA examine le sujet \"Agents d'IA et workflows d'IA\" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
@@ -35,8 +35,8 @@
       "identifier": "ea:publication:ai-agents-vs-ai-workflows-fr",
       "name": "Agents d'IA et workflows d'IA",
       "headline": "Agents d'IA et workflows d'IA",
-      "abstract": "Une comparaison pratique entre agents pilotés par des modèles, workflows déterministes et orchestrations hybrides, avec leurs enjeux de permissions, de mémoire, d’évaluation et de supervision humaine.",
-      "description": "Une comparaison pratique entre agents pilotés par des modèles, workflows déterministes et orchestrations hybrides, avec leurs enjeux de permissions, de mémoire, d’évaluation et de supervision humaine.",
+      "abstract": "Agents d'IA et workflows d'IA examine le sujet \"Agents d'IA et workflows d'IA\" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.",
+      "description": "Agents d'IA et workflows d'IA examine le sujet \"Agents d'IA et workflows d'IA\" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.",
       "url": "https://electronicartefacts.com/fr/publications/ai-agents-vs-ai-workflows/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/publications/ai-agents-vs-ai-workflows/#webpage"
@@ -78,7 +78,7 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 123,
+      "wordCount": 141,
       "citation": [
         "Electronic Artefacts. \"Agents d'IA et workflows d'IA\". Article technique, version 1.0.0, 2026.",
         {
@@ -154,7 +154,7 @@
       "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/",
       "name": "Electronic Artefacts",
       "url": "https://electronicartefacts.com/",
-      "description": "Electronic Artefacts designs digital products, knowledge systems, cultural platforms and research-led experiences.",
+      "description": "Electronic Artefacts is an independent creative technology studio building client products, proprietary systems and research-led cultural work.",
       "keywords": [
         "creative technology",
         "knowledge graph",
@@ -208,7 +208,7 @@
       "@id": "https://electronicartefacts.com/#website",
       "url": "https://electronicartefacts.com/",
       "name": "Electronic Artefacts",
-      "description": "Electronic Artefacts designs digital products, knowledge systems, cultural platforms and research-led experiences.",
+      "description": "Electronic Artefacts is an independent creative technology studio building client products, proprietary systems and research-led cultural work.",
       "keywords": [
         "creative technology",
         "knowledge graph",

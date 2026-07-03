@@ -4,12 +4,14 @@ type: concept
 slug:
   canonical: linked-data
 title: Données liées
-definition: Cette notion recouvre les données publiees avec des identifiants et des relations
+definition: Données liées désigne les données publiees avec des identifiants et des relations
   exploitables par le Web sémantique.
-abstract: Ce concept propose un cadre précis pour comprendre les données publiees avec des
-  identifiants et des relations exploitables par le Web sémantique et ses liens avec les projets,
-  technologies et publications associés.
-description: "Définition, usages, limites et relations associés au concept : Données liées."
+abstract: Données liées désigne les données publiees avec des identifiants et des relations
+  exploitables par le Web sémantique. La fiche en précise l'usage, les limites et les relations avec
+  les projets, technologies et publications d'Electronic Artefacts.
+description: Données liées désigne les données publiees avec des identifiants et des relations
+  exploitables par le Web sémantique. La fiche en précise l'usage, les limites et les relations avec
+  les projets, technologies et publications d'Electronic Artefacts.
 locale: fr
 visibility: public
 publicationClass: canonical
@@ -33,8 +35,10 @@ exclusions:
   - les usages purement promotionnels sans définition vérifiable
   - les exemples déconnectés des sources, relations ou contraintes du graphe
 claims:
-  - Une définition utile reste reliée à des sources, à des pratiques et à des objets observables.
-  - Un vocabulaire stable permet de relier projets, publications et technologies sans ambiguïté.
+  - Données liées devient utile lorsque sa définition reste reliée à des sources, des pratiques et
+    des objets observables.
+  - La fiche sert de vocabulaire commun pour relier projets, publications et technologies sans
+    mélanger les langues.
 sources:
   - title: Cool URIs for the Semantic Web
     author: Leo Sauermann and Richard Cyganiak
@@ -61,18 +65,18 @@ disciplines:
 translationOf: ea:concept:linked-data
 ---
 
-## Rôle
+## Définition
 
-Cette notion recouvre les données publiees avec des identifiants et des relations exploitables par le Web sémantique.
+Données liées désigne les données publiees avec des identifiants et des relations exploitables par le Web sémantique.
 
 ## Usage
 
-Elle fournit un vocabulaire stable pour relier les projets, publications et technologies concernés.
+Cette fiche relie la notion aux projets, publications et technologies qui partagent un même vocabulaire de conception. Elle sert de point d'appui pour naviguer dans le graphe en version française.
 
 ## Périmètre
 
-Son périmètre comprend les définitions, les usages, les limites et les relations avec les autres objets documentés.
+La notion est abordée par ses définitions, ses usages, ses limites et ses relations avec les autres objets documentés.
 
 ## Références
 
-Les références principales sont indiquées ci-dessous.
+Les sources principales restent disponibles dans le bloc de références de la fiche.

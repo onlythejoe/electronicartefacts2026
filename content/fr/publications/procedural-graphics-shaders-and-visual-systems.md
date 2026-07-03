@@ -5,10 +5,12 @@ slug:
   canonical: procedural-graphics-shaders-and-visual-systems
 title: Graphisme procédural, shaders et systèmes visuels
 subtitle: Article technique
-abstract: Une introduction au graphisme procédural par les règles, shaders, paramètres, WebGL,
-  systèmes génératifs et grammaires visuelles appliquées à l’art numérique et aux interfaces.
-description: Une introduction au graphisme procédural par les règles, shaders, paramètres, WebGL,
-  systèmes génératifs et grammaires visuelles appliquées à l’art numérique et aux interfaces.
+abstract: Graphisme procédural, shaders et systèmes visuels examine le sujet "Graphisme procédural,
+  shaders et systèmes visuels" dans le graphe public d'Electronic Artefacts. La fiche en synthétise
+  les architectures, les usages, les limites et les sources de référence.
+description: Graphisme procédural, shaders et systèmes visuels examine le sujet "Graphisme
+  procédural, shaders et systèmes visuels" dans le graphe public d'Electronic Artefacts. La fiche en
+  synthétise les architectures, les usages, les limites et les sources de référence.
 locale: fr
 visibility: public
 publicationClass: published
@@ -31,10 +33,10 @@ subjects:
   - id: ea:concept:creative-coding
   - id: ea:concept:motion-design
 claims:
-  - Le graphisme procédural est plus fort lorsque ses règles expriment une grammaire visuelle plutôt
-    qu’une variation arbitraire.
-  - Les shaders et WebGL rendent ces systèmes visuels publics, interactifs et observables dans le
-    navigateur.
+  - Graphisme procédural, shaders et systèmes visuels doit être lisible comme une synthèse française
+    autonome, sans phrases hybrides héritées de l'anglais.
+  - Les liens avec les notions, projets et technologies du graphe renforcent la recherche, la
+    navigation et la citation.
 evidence:
   - id: ea:concept:procedural-graphics
   - id: ea:technology:webgl
@@ -61,24 +63,24 @@ translationOf: ea:publication:procedural-graphics-shaders-and-visual-systems
 
 ## Problème
 
-Une introduction au graphisme procédural par les règles, shaders, paramètres, WebGL, systèmes génératifs et grammaires visuelles appliquées à l’art numérique et aux interfaces.
+Graphisme procédural, shaders et systèmes visuels examine le sujet "Graphisme procédural, shaders et systèmes visuels" dans le graphe public d'Electronic Artefacts. La fiche donne une entrée française stable, utilisable pour lire le sujet et relier ses sources au reste du graphe.
 
 ## Architecture
 
-Le graphisme procédural est plus fort lorsque ses règles expriment une grammaire visuelle plutôt qu’une variation arbitraire. Les shaders et WebGL rendent ces systèmes visuels publics, interactifs et observables dans le navigateur.
+Le sujet est abordé par ses relations avec les concepts, projets et technologies concernés, afin de rendre son contexte de conception lisible.
 
 ## Mise en œuvre
 
-L’analyse en précise les usages, les contraintes et les principaux arbitrages techniques.
+La page décrit les usages, contraintes et choix de structure qui permettent d'appliquer le sujet dans des situations concrètes.
 
 ## Éléments de preuve
 
-Les arguments s’appuient sur les sources et les notions connexes citées dans l’article.
+Les sources, relations et éléments de contexte restent attachés à la fiche pour distinguer synthèse éditoriale, preuves et références.
 
 ## Limites
 
-Les conclusions restent liées au périmètre des sources disponibles et aux conditions d’usage décrites.
+Les limites sont formulées par rapport au périmètre de la fiche, aux sources disponibles et aux conditions d'usage documentées.
 
 ## Références
 
-Les références principales sont indiquées ci-dessous.
+Les sources principales restent disponibles dans le bloc de références de la fiche.

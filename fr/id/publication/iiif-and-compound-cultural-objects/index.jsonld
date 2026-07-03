@@ -5,15 +5,15 @@
       "@type": "WebPage",
       "@id": "https://electronicartefacts.com/fr/publications/iiif-and-compound-cultural-objects/#webpage",
       "url": "https://electronicartefacts.com/fr/publications/iiif-and-compound-cultural-objects/",
-      "name": "IIIF et objets culturels composes",
-      "description": "Une présentation pratique de l’API IIIF Presentation, des objets composés, manifestes, canevas, annotations et interfaces d’archives culturelles.",
+      "name": "IIIF et objets culturels composés",
+      "description": "IIIF et objets culturels composés examine le sujet \"IIIF et objets culturels composés\" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
       "primaryImageOfPage": {
         "@type": "ImageObject",
         "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-search.jpg",
-        "description": "IIIF et objets culturels composes"
+        "description": "IIIF et objets culturels composés"
       },
       "breadcrumb": {
         "@id": "https://electronicartefacts.com/fr/publications/iiif-and-compound-cultural-objects/#breadcrumb"
@@ -33,10 +33,10 @@
       "@type": "TechArticle",
       "@id": "https://electronicartefacts.com/fr/id/publication/iiif-and-compound-cultural-objects/",
       "identifier": "ea:publication:iiif-and-compound-cultural-objects-fr",
-      "name": "IIIF et objets culturels composes",
-      "headline": "IIIF et objets culturels composes",
-      "abstract": "Une présentation pratique de l’API IIIF Presentation, des objets composés, manifestes, canevas, annotations et interfaces d’archives culturelles.",
-      "description": "Une présentation pratique de l’API IIIF Presentation, des objets composés, manifestes, canevas, annotations et interfaces d’archives culturelles.",
+      "name": "IIIF et objets culturels composés",
+      "headline": "IIIF et objets culturels composés",
+      "abstract": "IIIF et objets culturels composés examine le sujet \"IIIF et objets culturels composés\" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.",
+      "description": "IIIF et objets culturels composés examine le sujet \"IIIF et objets culturels composés\" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.",
       "url": "https://electronicartefacts.com/fr/publications/iiif-and-compound-cultural-objects/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/publications/iiif-and-compound-cultural-objects/#webpage"
@@ -44,7 +44,7 @@
       "image": {
         "@type": "ImageObject",
         "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-search.jpg",
-        "description": "IIIF et objets culturels composes"
+        "description": "IIIF et objets culturels composés"
       },
       "author": [
         {
@@ -78,9 +78,9 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 115,
+      "wordCount": 141,
       "citation": [
-        "Electronic Artefacts. \"IIIF et objets culturels composes\". Article technique, version 1.0.0, 2026.",
+        "Electronic Artefacts. \"IIIF et objets culturels composés\". Article technique, version 1.0.0, 2026.",
         {
           "@type": "CreativeWork",
           "name": "IIIF Presentation API 3.0",
@@ -160,7 +160,7 @@
       "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/",
       "name": "Electronic Artefacts",
       "url": "https://electronicartefacts.com/",
-      "description": "Electronic Artefacts designs digital products, knowledge systems, cultural platforms and research-led experiences.",
+      "description": "Electronic Artefacts is an independent creative technology studio building client products, proprietary systems and research-led cultural work.",
       "keywords": [
         "creative technology",
         "knowledge graph",
@@ -214,7 +214,7 @@
       "@id": "https://electronicartefacts.com/#website",
       "url": "https://electronicartefacts.com/",
       "name": "Electronic Artefacts",
-      "description": "Electronic Artefacts designs digital products, knowledge systems, cultural platforms and research-led experiences.",
+      "description": "Electronic Artefacts is an independent creative technology studio building client products, proprietary systems and research-led cultural work.",
       "keywords": [
         "creative technology",
         "knowledge graph",
@@ -259,7 +259,7 @@
         {
           "@type": "ListItem",
           "position": 3,
-          "name": "IIIF et objets culturels composes",
+          "name": "IIIF et objets culturels composés",
           "item": "https://electronicartefacts.com/fr/publications/iiif-and-compound-cultural-objects/"
         }
       ]

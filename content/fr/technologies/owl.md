@@ -7,10 +7,10 @@ slug:
 title: OWL
 alternateNames:
   - Web Ontology Language
-abstract: OWL est un langage d’ontologie du W3C doté d’une sémantique formelle pour les classes,
-  propriétés, individus et contraintes du Web sémantique.
-description: OWL est un langage d’ontologie du W3C doté d’une sémantique formelle pour les classes,
-  propriétés, individus et contraintes du Web sémantique.
+abstract: OWL est documenté pour son rôle dans les systèmes d'Electronic Artefacts, ses usages, ses
+  limites et les technologies qui lui sont liées.
+description: OWL est documenté pour son rôle dans les systèmes d'Electronic Artefacts, ses usages,
+  ses limites et les technologies qui lui sont liées.
 locale: fr
 visibility: public
 publicationClass: canonical
@@ -26,8 +26,9 @@ authors:
   - id: ea:organization:electronic-artefacts
 publisher: ea:organization:electronic-artefacts
 category: language
-roleInEcosystem: OWL sert de référence formelle pour les ontologies, leurs contraintes et leurs
-  mécanismes d’inférence, au-delà des taxonomies légères.
+roleInEcosystem: OWL sert de repère technique pour évaluer le sujet "OWL" dans le graphe public
+  d'Electronic Artefacts, ses usages possibles et ses conséquences dans l'écosystème Electronic
+  Artefacts.
 officialUrl: https://www.w3.org/TR/owl2-overview/
 sources:
   - title: OWL 2 Web Ontology Language Document Overview
@@ -46,17 +47,17 @@ disciplines:
 
 ## Rôle
 
-OWL est un langage d’ontologie du W3C doté d’une sémantique formelle pour les classes, propriétés, individus et contraintes du Web sémantique.
+Cette fiche documenté OWL comme technologie de référence pour le sujet "OWL" dans le graphe public d'Electronic Artefacts.
 
 ## Usage
 
-OWL sert de référence formelle pour les ontologies, leurs contraintes et leurs mécanismes d’inférence, au-delà des taxonomies légères.
+Elle situe la technologie dans l'écosystème Electronic Artefacts : ce qu'elle permet, quand elle devient pertinente et comment elle dialogue avec les autres composants du graphe.
 
-## Points d’attention
+## Points d'attention
 
-- Les usages dépendent des contraintes du projet et du niveau d’interopérabilité recherché.
-- Les limites doivent être évaluées au regard des standards, des implémentations disponibles et de leur maturité.
+- Les usages sont décrits en français sans masquer les noms propres, acronymes où standards techniques.
+- Les limites restent contextualisées par rapport aux projets, aux publications et aux contraintes d'implémentation.
 
 ## Références
 
-Les références principales sont indiquées ci-dessous.
+Les sources principales restent disponibles dans le bloc de références de la fiche.

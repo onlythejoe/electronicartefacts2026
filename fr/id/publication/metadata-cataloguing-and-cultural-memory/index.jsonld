@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/publications/metadata-cataloguing-and-cultural-memory/#webpage",
       "url": "https://electronicartefacts.com/fr/publications/metadata-cataloguing-and-cultural-memory/",
       "name": "Métadonnées, catalogage et mémoire culturelle",
-      "description": "Une lecture des métadonnées comme couche de mémoire culturelle, reliant catalogage, Dublin Core, PREMIS, METS, provenance, archives et graphes de connaissances.",
+      "description": "Métadonnées, catalogage et mémoire culturelle examine le sujet \"Métadonnées, catalogage et mémoire culturelle\" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
@@ -35,8 +35,8 @@
       "identifier": "ea:publication:metadata-cataloguing-and-cultural-memory-fr",
       "name": "Métadonnées, catalogage et mémoire culturelle",
       "headline": "Métadonnées, catalogage et mémoire culturelle",
-      "abstract": "Une lecture des métadonnées comme couche de mémoire culturelle, reliant catalogage, Dublin Core, PREMIS, METS, provenance, archives et graphes de connaissances.",
-      "description": "Une lecture des métadonnées comme couche de mémoire culturelle, reliant catalogage, Dublin Core, PREMIS, METS, provenance, archives et graphes de connaissances.",
+      "abstract": "Métadonnées, catalogage et mémoire culturelle examine le sujet \"Métadonnées, catalogage et mémoire culturelle\" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.",
+      "description": "Métadonnées, catalogage et mémoire culturelle examine le sujet \"Métadonnées, catalogage et mémoire culturelle\" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.",
       "url": "https://electronicartefacts.com/fr/publications/metadata-cataloguing-and-cultural-memory/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/publications/metadata-cataloguing-and-cultural-memory/#webpage"
@@ -76,7 +76,7 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 112,
+      "wordCount": 141,
       "citation": [
         "Electronic Artefacts. \"Métadonnées, catalogage et mémoire culturelle\". Article technique, version 1.0.0, 2026.",
         {
@@ -160,7 +160,7 @@
       "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/",
       "name": "Electronic Artefacts",
       "url": "https://electronicartefacts.com/",
-      "description": "Electronic Artefacts designs digital products, knowledge systems, cultural platforms and research-led experiences.",
+      "description": "Electronic Artefacts is an independent creative technology studio building client products, proprietary systems and research-led cultural work.",
       "keywords": [
         "creative technology",
         "knowledge graph",
@@ -214,7 +214,7 @@
       "@id": "https://electronicartefacts.com/#website",
       "url": "https://electronicartefacts.com/",
       "name": "Electronic Artefacts",
-      "description": "Electronic Artefacts designs digital products, knowledge systems, cultural platforms and research-led experiences.",
+      "description": "Electronic Artefacts is an independent creative technology studio building client products, proprietary systems and research-led cultural work.",
       "keywords": [
         "creative technology",
         "knowledge graph",

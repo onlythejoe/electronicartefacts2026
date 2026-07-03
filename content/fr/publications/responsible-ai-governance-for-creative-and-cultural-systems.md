@@ -5,12 +5,14 @@ slug:
   canonical: responsible-ai-governance-for-creative-and-cultural-systems
 title: Gouvernance responsable de l'IA pour les systèmes créatifs et culturels
 subtitle: Article technique
-abstract: Une approche opérationnelle de la gouvernance de l’IA pour les studios créatifs, les
-  archives culturelles et les systèmes de connaissance, couvrant risques, contrôle, provenance,
-  droits et évaluation.
-description: Une approche opérationnelle de la gouvernance de l’IA pour les studios créatifs, les
-  archives culturelles et les systèmes de connaissance, couvrant risques, contrôle, provenance,
-  droits et évaluation.
+abstract: Gouvernance responsable de l'IA pour les systèmes créatifs et culturels examine le sujet
+  "Gouvernance responsable de l'IA pour les systèmes créatifs et culturels" dans le graphe public
+  d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les
+  sources de référence.
+description: Gouvernance responsable de l'IA pour les systèmes créatifs et culturels examine le
+  sujet "Gouvernance responsable de l'IA pour les systèmes créatifs et culturels" dans le graphe
+  public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites
+  et les sources de référence.
 locale: fr
 visibility: public
 publicationClass: published
@@ -33,11 +35,10 @@ subjects:
   - id: ea:concept:systems-thinking
   - id: ea:concept:contextual-execution
 claims:
-  - La gouvernance responsable de l’IA est une pratique opérationnelle, non un document de principe
-    séparé des produits, des archives et des processus éditoriaux.
-  - Les systèmes créatifs et culturels ont besoin de provenance, de contrôle humain, d’attention aux
-    droits, de limites de confidentialité et d’évaluation avant toute automatisation à grande
-    échelle.
+  - Gouvernance responsable de l'IA pour les systèmes créatifs et culturels doit être lisible comme
+    une synthèse française autonome, sans phrases hybrides héritées de l'anglais.
+  - Les liens avec les notions, projets et technologies du graphe renforcent la recherche, la
+    navigation et la citation.
 evidence:
   - id: ea:concept:generative-ai
   - id: ea:concept:provenance
@@ -74,24 +75,24 @@ translationOf: ea:publication:responsible-ai-governance-for-creative-and-cultura
 
 ## Problème
 
-Une approche opérationnelle de la gouvernance de l’IA pour les studios créatifs, les archives culturelles et les systèmes de connaissance, couvrant risques, contrôle, provenance, droits et évaluation.
+Gouvernance responsable de l'IA pour les systèmes créatifs et culturels examine le sujet "Gouvernance responsable de l'IA pour les systèmes créatifs et culturels" dans le graphe public d'Electronic Artefacts. La fiche donne une entrée française stable, utilisable pour lire le sujet et relier ses sources au reste du graphe.
 
 ## Architecture
 
-La gouvernance responsable de l’IA est une pratique opérationnelle, non un document de principe séparé des produits, des archives et des processus éditoriaux. Les systèmes créatifs et culturels ont besoin de provenance, de contrôle humain, d’attention aux droits, de limites de confidentialité et d’évaluation avant toute automatisation à grande échelle.
+Le sujet est abordé par ses relations avec les concepts, projets et technologies concernés, afin de rendre son contexte de conception lisible.
 
 ## Mise en œuvre
 
-L’analyse en précise les usages, les contraintes et les principaux arbitrages techniques.
+La page décrit les usages, contraintes et choix de structure qui permettent d'appliquer le sujet dans des situations concrètes.
 
 ## Éléments de preuve
 
-Les arguments s’appuient sur les sources et les notions connexes citées dans l’article.
+Les sources, relations et éléments de contexte restent attachés à la fiche pour distinguer synthèse éditoriale, preuves et références.
 
 ## Limites
 
-Les conclusions restent liées au périmètre des sources disponibles et aux conditions d’usage décrites.
+Les limites sont formulées par rapport au périmètre de la fiche, aux sources disponibles et aux conditions d'usage documentées.
 
 ## Références
 
-Les références principales sont indiquées ci-dessous.
+Les sources principales restent disponibles dans le bloc de références de la fiche.

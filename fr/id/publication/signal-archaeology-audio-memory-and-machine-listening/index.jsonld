@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/publications/signal-archaeology-audio-memory-and-machine-listening/#webpage",
       "url": "https://electronicartefacts.com/fr/publications/signal-archaeology-audio-memory-and-machine-listening/",
       "name": "Archéologie du signal, mémoire audio et écoute machine",
-      "description": "Une présentation de l’archéologie du signal comme lecture des traces sonores et techniques, à travers l’analyse audio, la provenance, la mémoire et l’écoute machine.",
+      "description": "Archéologie du signal, mémoire audio et écoute machine examine le sujet \"Archéologie du signal, mémoire audio et écoute machine\" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
@@ -35,8 +35,8 @@
       "identifier": "ea:publication:signal-archaeology-audio-memory-and-machine-listening-fr",
       "name": "Archéologie du signal, mémoire audio et écoute machine",
       "headline": "Archéologie du signal, mémoire audio et écoute machine",
-      "abstract": "Une présentation de l’archéologie du signal comme lecture des traces sonores et techniques, à travers l’analyse audio, la provenance, la mémoire et l’écoute machine.",
-      "description": "Une présentation de l’archéologie du signal comme lecture des traces sonores et techniques, à travers l’analyse audio, la provenance, la mémoire et l’écoute machine.",
+      "abstract": "Archéologie du signal, mémoire audio et écoute machine examine le sujet \"Archéologie du signal, mémoire audio et écoute machine\" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.",
+      "description": "Archéologie du signal, mémoire audio et écoute machine examine le sujet \"Archéologie du signal, mémoire audio et écoute machine\" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.",
       "url": "https://electronicartefacts.com/fr/publications/signal-archaeology-audio-memory-and-machine-listening/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/publications/signal-archaeology-audio-memory-and-machine-listening/#webpage"
@@ -79,7 +79,7 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 113,
+      "wordCount": 147,
       "citation": [
         "Electronic Artefacts. \"Archéologie du signal, mémoire audio et écoute machine\". Article technique, version 1.0.0, 2026.",
         {
@@ -153,7 +153,7 @@
       "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/",
       "name": "Electronic Artefacts",
       "url": "https://electronicartefacts.com/",
-      "description": "Electronic Artefacts designs digital products, knowledge systems, cultural platforms and research-led experiences.",
+      "description": "Electronic Artefacts is an independent creative technology studio building client products, proprietary systems and research-led cultural work.",
       "keywords": [
         "creative technology",
         "knowledge graph",
@@ -207,7 +207,7 @@
       "@id": "https://electronicartefacts.com/#website",
       "url": "https://electronicartefacts.com/",
       "name": "Electronic Artefacts",
-      "description": "Electronic Artefacts designs digital products, knowledge systems, cultural platforms and research-led experiences.",
+      "description": "Electronic Artefacts is an independent creative technology studio building client products, proprietary systems and research-led cultural work.",
       "keywords": [
         "creative technology",
         "knowledge graph",

@@ -2135,7 +2135,7 @@
 
     if (current === "mentions-legales") document.title = "Legal Notice | Electronic Artefacts";
     if (current === "confidentialite") document.title = "Privacy Policy | Electronic Artefacts";
-    if (current === "programs") document.title = "Programs, Repo Access and Runtimes | Electronic Artefacts";
+    if (current === "programs") document.title = "Proprietary Systems and Programs | Electronic Artefacts";
     if (current === "projects") document.title = "Projects | Electronic Artefacts";
     if (current === "search") document.title = "Search | Electronic Artefacts";
   };
@@ -2147,7 +2147,7 @@
     document.documentElement.lang = "en";
 
     const siteName = "Electronic Artefacts";
-    const fallbackDescription = "Electronic Artefacts designs digital products, knowledge systems, cultural platforms and research-led experiences.";
+    const fallbackDescription = "Independent creative technology studio building client products, proprietary systems and research-led cultural work.";
     const fitDescription = (value) => {
       const text = String(value || fallbackDescription).replace(/\s+/g, " ").trim();
       if (text.length <= 155) return text;
@@ -2179,13 +2179,13 @@
 
     const pageDescriptions = {
       index: fallbackDescription,
-      work: "Consulting, audits, SEO, branding, product design, development and R&D services by Electronic Artefacts.",
-      research: "Research across technology, knowledge systems, culture, governance, perception and creative production.",
-      programs: "Explore Electronic Artefacts software programs available through repository access, pilots, implementation work and licensing conversations.",
-      projects: "Explore Electronic Artefacts projects across software, cultural platforms, artistic production and client systems.",
-      archive: "Browse releases, prototypes, documents, research logs and unfinished material preserved by Electronic Artefacts.",
+      work: "Strategy, design and engineering for complex digital products, platforms and knowledge systems.",
+      research: "Research into technology, knowledge and culture, developed through prototypes, publications and working systems.",
+      programs: "Proprietary software systems available for technical review, pilots, implementation and licensing.",
+      projects: "Cultural works, proprietary platforms and client products built by Electronic Artefacts.",
+      archive: "Documents, prototypes, releases and research traces that preserve the lineage of the studio’s work.",
       about: "Electronic Artefacts is an independent creative technology studio connecting research, software, design and cultural production.",
-      contact: "Contact Electronic Artefacts about digital products, knowledge systems, cultural platforms and creative technology.",
+      contact: "Contact Electronic Artefacts about a product, platform, technical system, partnership or cultural project.",
       search: "Search public Electronic Artefacts projects, programs, research and archive records.",
       project: "Electronic Artefacts project overview, visual evidence and connected systems.",
       "project-rl": "Extended Electronic Artefacts project documentation and technical context.",

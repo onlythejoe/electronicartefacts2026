@@ -5,9 +5,9 @@
     "canonical": "electronic-artefacts"
   },
   "title": "Electronic Artefacts",
-  "subtitle": "Studio / label / research",
-  "abstract": "Electronic Artefacts is an independent creative technology studio, software laboratory, research organization, cultural platform, label and publishing system.",
-  "description": "Electronic Artefacts connects research, software, design, cultural production and archival practice through a shared graph of projects, programs and knowledge.",
+  "subtitle": "Independent Creative Technology Studio",
+  "abstract": "Electronic Artefacts is an independent creative technology studio working through client commissions, proprietary systems and research-led cultural publishing.",
+  "description": "Strategy, design, engineering and cultural research brought together to build clear, durable digital products and knowledge systems.",
   "locale": "en",
   "visibility": "public",
   "publicationClass": "canonical",
@@ -35,7 +35,7 @@
   ],
   "rights": "© Electronic Artefacts",
   "organizationType": "studio",
-  "bodyHtml": "<h2 id=\"institutional-role\">Institutional role</h2>\n<p>Electronic Artefacts develops digital products, knowledge systems, cultural platforms and research-led experiences. The organization operates across studio practice, software research, artistic production, publishing and archival stewardship.</p>\n<h2 id=\"operating-layers\">Operating layers</h2>\n<p>Research frames questions and preserves observations. Programs turn sustained research into reusable systems. Projects apply those systems in public, cultural or client contexts. Publications make definitions, arguments and findings citable. The archive preserves evidence, versions and lineage.</p>\n<h2 id=\"public-knowledge-system\">Public knowledge system</h2>\n<p>The public platform exposes these layers through stable entities and typed relationships. It is designed so that a project can be followed back to the concepts, methods, programs, people and evidence that made it possible.</p>\n<h2 id=\"responsibilities\">Responsibilities</h2>\n<p>Electronic Artefacts publishes and maintains the pilot knowledge records in this migration. Publication status, lifecycle maturity, confidence and visibility remain separate so that experimental work can be described without being misrepresented as proven or complete.</p>\n",
+  "bodyHtml": "<h2 id=\"institutional-role\">Institutional role</h2>\n<p>Electronic Artefacts designs and builds digital products, knowledge systems and cultural platforms. Client commissions address concrete needs; proprietary programs turn recurring methods into reusable technology; research and artistic publishing create space for questions beyond a commercial brief.</p>\n<h2 id=\"operating-layers\">Operating layers</h2>\n<p>Research frames the question. Programs retain reusable logic. Projects put that logic to work in public, cultural or client contexts. Publications make the thinking citable. The archive preserves evidence, versions and lineage.</p>\n<h2 id=\"public-knowledge-system\">Public knowledge system</h2>\n<p>The public platform connects these layers through stable entities and explicit relationships. A project can be traced back to the concepts, methods, programs, people and evidence that made it possible without forcing every visitor to learn the underlying model first.</p>\n<h2 id=\"responsibilities\">Responsibilities</h2>\n<p>Electronic Artefacts distinguishes publication status, maturity, confidence and visibility. This allows experimental work to remain public without presenting it as proven, finished or available on the same terms as a delivered product.</p>\n",
   "headings": [
     "Institutional role",
     "Operating layers",

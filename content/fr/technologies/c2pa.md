@@ -7,10 +7,10 @@ title: C2PA
 alternateNames:
   - Content Credentials
   - Coalition pour Content Provenance et Authenticity
-abstract: C2PA réunit des standards techniques qui associent aux médias une provenance vérifiable et
-  des métadonnées de type Content Credentials.
-description: C2PA réunit des standards techniques qui associent aux médias une provenance vérifiable
-  et des métadonnées de type Content Credentials.
+abstract: C2PA est documenté pour son rôle dans les systèmes d'Electronic Artefacts, ses usages, ses
+  limites et les technologies qui lui sont liées.
+description: C2PA est documenté pour son rôle dans les systèmes d'Electronic Artefacts, ses usages,
+  ses limites et les technologies qui lui sont liées.
 locale: fr
 visibility: public
 publicationClass: canonical
@@ -26,8 +26,9 @@ authors:
   - id: ea:organization:electronic-artefacts
 publisher: ea:organization:electronic-artefacts
 category: protocol
-roleInEcosystem: C2PA fournit des manifestes signés capables de documenter l’origine, les actions et
-  les déclarations de confiance liées aux images, sons, vidéos et documents.
+roleInEcosystem: C2PA sert de repère technique pour évaluer le sujet "C2PA" dans le graphe public
+  d'Electronic Artefacts, ses usages possibles et ses conséquences dans l'écosystème Electronic
+  Artefacts.
 officialUrl: https://spec.c2pa.org/specifications/specifications/2.4/index.html
 sources:
   - title: C2PA Specifications 2.4
@@ -48,17 +49,17 @@ translationOf: ea:technology:c2pa
 
 ## Rôle
 
-C2PA réunit des standards techniques qui associent aux médias une provenance vérifiable et des métadonnées de type Content Credentials.
+Cette fiche documenté C2PA comme technologie de référence pour le sujet "C2PA" dans le graphe public d'Electronic Artefacts.
 
 ## Usage
 
-C2PA fournit des manifestes signés capables de documenter l’origine, les actions et les déclarations de confiance liées aux images, sons, vidéos et documents.
+Elle situe la technologie dans l'écosystème Electronic Artefacts : ce qu'elle permet, quand elle devient pertinente et comment elle dialogue avec les autres composants du graphe.
 
-## Points d’attention
+## Points d'attention
 
-- Les usages dépendent des contraintes du projet et du niveau d’interopérabilité recherché.
-- Les limites doivent être évaluées au regard des standards, des implémentations disponibles et de leur maturité.
+- Les usages sont décrits en français sans masquer les noms propres, acronymes où standards techniques.
+- Les limites restent contextualisées par rapport aux projets, aux publications et aux contraintes d'implémentation.
 
 ## Références
 
-Les références principales sont indiquées ci-dessous.
+Les sources principales restent disponibles dans le bloc de références de la fiche.

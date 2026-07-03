@@ -10,8 +10,8 @@
     "Content Credentials",
     "Coalition pour Content Provenance et Authenticity"
   ],
-  "abstract": "C2PA réunit des standards techniques qui associent aux médias une provenance vérifiable et des métadonnées de type Content Credentials.",
-  "description": "C2PA réunit des standards techniques qui associent aux médias une provenance vérifiable et des métadonnées de type Content Credentials.",
+  "abstract": "C2PA est documenté pour son rôle dans les systèmes d'Electronic Artefacts, ses usages, ses limites et les technologies qui lui sont liées.",
+  "description": "C2PA est documenté pour son rôle dans les systèmes d'Electronic Artefacts, ses usages, ses limites et les technologies qui lui sont liées.",
   "locale": "fr",
   "visibility": "public",
   "publicationClass": "canonical",
@@ -50,13 +50,13 @@
     }
   ],
   "category": "protocol",
-  "roleInEcosystem": "C2PA fournit des manifestes signés capables de documenter l’origine, les actions et les déclarations de confiance liées aux images, sons, vidéos et documents.",
+  "roleInEcosystem": "C2PA sert de repère technique pour évaluer le sujet \"C2PA\" dans le graphe public d'Electronic Artefacts, ses usages possibles et ses conséquences dans l'écosystème Electronic Artefacts.",
   "officialUrl": "https://spec.c2pa.org/specifications/specifications/2.4/index.html",
-  "bodyHtml": "<h2 id=\"role\">Rôle</h2>\n<p>C2PA réunit des standards techniques qui associent aux médias une provenance vérifiable et des métadonnées de type Content Credentials.</p>\n<h2 id=\"usage\">Usage</h2>\n<p>C2PA fournit des manifestes signés capables de documenter l’origine, les actions et les déclarations de confiance liées aux images, sons, vidéos et documents.</p>\n<h2 id=\"points-d-attention\">Points d’attention</h2>\n<ul>\n<li>Les usages dépendent des contraintes du projet et du niveau d’interopérabilité recherché.</li>\n<li>Les limites doivent être évaluées au regard des standards, des implémentations disponibles et de leur maturité.</li>\n</ul>\n<h2 id=\"references\">Références</h2>\n<p>Les références principales sont indiquées ci-dessous.</p>\n",
+  "bodyHtml": "<h2 id=\"role\">Rôle</h2>\n<p>Cette fiche documenté C2PA comme technologie de référence pour le sujet “C2PA” dans le graphe public d’Electronic Artefacts.</p>\n<h2 id=\"usage\">Usage</h2>\n<p>Elle situe la technologie dans l’écosystème Electronic Artefacts : ce qu’elle permet, quand elle devient pertinente et comment elle dialogue avec les autres composants du graphe.</p>\n<h2 id=\"points-d-attention\">Points d’attention</h2>\n<ul>\n<li>Les usages sont décrits en français sans masquer les noms propres, acronymes où standards techniques.</li>\n<li>Les limites restent contextualisées par rapport aux projets, aux publications et aux contraintes d’implémentation.</li>\n</ul>\n<h2 id=\"references\">Références</h2>\n<p>Les sources principales restent disponibles dans le bloc de références de la fiche.</p>\n",
   "headings": [
     "Rôle",
     "Usage",
-    "Points d’attention",
+    "Points d'attention",
     "Références"
   ],
   "headingItems": [
@@ -72,7 +72,7 @@
     },
     {
       "level": 2,
-      "title": "Points d’attention",
+      "title": "Points d'attention",
       "id": "points-d-attention"
     },
     {

@@ -5,15 +5,15 @@
       "@type": "WebPage",
       "@id": "https://electronicartefacts.com/fr/publications/event-driven-architecture-and-event-streams/#webpage",
       "url": "https://electronicartefacts.com/fr/publications/event-driven-architecture-and-event-streams/",
-      "name": "Architecture événementielle et flux d'evenements",
-      "description": "Une présentation des événements, commandes, files, journaux, courtiers, schémas, garanties de livraison, projections, mécanismes de rejeu et outils d’observabilité.",
+      "name": "Architecture événementielle et flux d'événements",
+      "description": "Architecture événementielle et flux d'événements examine le sujet \"Architecture événementielle et flux d'événements\" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
       "primaryImageOfPage": {
         "@type": "ImageObject",
         "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-search.jpg",
-        "description": "Architecture événementielle et flux d'evenements"
+        "description": "Architecture événementielle et flux d'événements"
       },
       "breadcrumb": {
         "@id": "https://electronicartefacts.com/fr/publications/event-driven-architecture-and-event-streams/#breadcrumb"
@@ -33,10 +33,10 @@
       "@type": "TechArticle",
       "@id": "https://electronicartefacts.com/fr/id/publication/event-driven-architecture-and-event-streams/",
       "identifier": "ea:publication:event-driven-architecture-and-event-streams-fr",
-      "name": "Architecture événementielle et flux d'evenements",
-      "headline": "Architecture événementielle et flux d'evenements",
-      "abstract": "Une présentation des événements, commandes, files, journaux, courtiers, schémas, garanties de livraison, projections, mécanismes de rejeu et outils d’observabilité.",
-      "description": "Une présentation des événements, commandes, files, journaux, courtiers, schémas, garanties de livraison, projections, mécanismes de rejeu et outils d’observabilité.",
+      "name": "Architecture événementielle et flux d'événements",
+      "headline": "Architecture événementielle et flux d'événements",
+      "abstract": "Architecture événementielle et flux d'événements examine le sujet \"Architecture événementielle et flux d'événements\" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.",
+      "description": "Architecture événementielle et flux d'événements examine le sujet \"Architecture événementielle et flux d'événements\" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.",
       "url": "https://electronicartefacts.com/fr/publications/event-driven-architecture-and-event-streams/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/publications/event-driven-architecture-and-event-streams/#webpage"
@@ -44,7 +44,7 @@
       "image": {
         "@type": "ImageObject",
         "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-search.jpg",
-        "description": "Architecture événementielle et flux d'evenements"
+        "description": "Architecture événementielle et flux d'événements"
       },
       "author": [
         {
@@ -78,9 +78,9 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 114,
+      "wordCount": 141,
       "citation": [
-        "Electronic Artefacts. \"Architecture événementielle et flux d'evenements\". Article technique, version 1.0.0, 2026.",
+        "Electronic Artefacts. \"Architecture événementielle et flux d'événements\". Article technique, version 1.0.0, 2026.",
         {
           "@type": "CreativeWork",
           "name": "CloudEvents",
@@ -164,7 +164,7 @@
       "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/",
       "name": "Electronic Artefacts",
       "url": "https://electronicartefacts.com/",
-      "description": "Electronic Artefacts designs digital products, knowledge systems, cultural platforms and research-led experiences.",
+      "description": "Electronic Artefacts is an independent creative technology studio building client products, proprietary systems and research-led cultural work.",
       "keywords": [
         "creative technology",
         "knowledge graph",
@@ -218,7 +218,7 @@
       "@id": "https://electronicartefacts.com/#website",
       "url": "https://electronicartefacts.com/",
       "name": "Electronic Artefacts",
-      "description": "Electronic Artefacts designs digital products, knowledge systems, cultural platforms and research-led experiences.",
+      "description": "Electronic Artefacts is an independent creative technology studio building client products, proprietary systems and research-led cultural work.",
       "keywords": [
         "creative technology",
         "knowledge graph",
@@ -263,7 +263,7 @@
         {
           "@type": "ListItem",
           "position": 3,
-          "name": "Architecture événementielle et flux d'evenements",
+          "name": "Architecture événementielle et flux d'événements",
           "item": "https://electronicartefacts.com/fr/publications/event-driven-architecture-and-event-streams/"
         }
       ]

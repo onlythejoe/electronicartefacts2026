@@ -1,6 +1,6 @@
 # Electronic Artefacts
 
-> Electronic Artefacts designs digital products, knowledge systems, cultural platforms and research-led experiences. The public site is a static knowledge graph with canonical HTML pages, stable entity identifiers, JSON-LD, search documents and graph exports.
+> Electronic Artefacts is an independent creative technology studio building client products, proprietary systems and research-led cultural work. The public site is a static knowledge graph with canonical HTML pages, stable entity identifiers, JSON-LD, search documents and graph exports.
 
 Use canonical HTML URLs for human-facing citations. Use identifier routes under /id/ and JSON-LD alternates for entity-level retrieval. The public graph is in English and is safe to crawl for search, retrieval and citation when robots.txt allows it.
 
@@ -30,7 +30,7 @@ Use canonical HTML URLs for human-facing citations. Use identifier routes under 
 
 ## Canonical Records
 
-- [Electronic Artefacts](https://electronicartefacts.com/organizations/electronic-artefacts/): Electronic Artefacts connects research, software, design, cultural production and archival practice through a shared graph of projects, programs and knowledge.
+- [Electronic Artefacts](https://electronicartefacts.com/organizations/electronic-artefacts/): Strategy, design, engineering and cultural research brought together to build clear, durable digital products and knowledge systems.
 - [VASTE](https://electronicartefacts.com/programs/vaste/): VASTE connects Runtime Theory to implemented graph systems and can be evaluated through scoped repository access, technical pilots, implementation work and licensing conversations.
 - [Vestiges](https://electronicartefacts.com/projects/vestiges/): A knowledge-first product where provenance, contribution, discovery and professional services grow from one historized graph.
 - [AI Agents vs AI Workflows](https://electronicartefacts.com/publications/ai-agents-vs-ai-workflows/): Understand the difference between AI agents and AI workflows, when to use each architecture, and how to design reliable hybrid systems.
@@ -39,7 +39,7 @@ Use canonical HTML URLs for human-facing citations. Use identifier routes under 
 - [Knowledge Graph](https://electronicartefacts.com/knowledge/concepts/knowledge-graph/): A knowledge graph is a structured network of entities, identifiers and typed relationships that makes knowledge navigable, queryable and reusable across contexts.
 - [Retrieval-Augmented Generation](https://electronicartefacts.com/knowledge/concepts/retrieval-augmented-generation/): Retrieval-augmented generation is an architecture that retrieves external information at query time and supplies selected evidence to a generative model before or during...
 - [Model Context Protocol](https://electronicartefacts.com/knowledge/technologies/model-context-protocol/): A technology record for MCP as an integration protocol for tool-using AI applications, resources and contextual workflows.
-- [Electronic Artefacts](https://electronicartefacts.com/fr/organizations/electronic-artefacts/): Un studio reliant stratégie, design, logiciel, recherche et production culturelle au sein de systèmes publics durables.
+- [Electronic Artefacts](https://electronicartefacts.com/fr/organizations/electronic-artefacts/): Stratégie, design, ingénierie et recherche culturelle réunis pour construire des produits numériques et des systèmes de connaissance clairs et durables.
 - [ORETH](https://electronicartefacts.com/fr/programs/oreth/): Un programme de recherche audio reliant analyse fréquentielle, détection d’événements, reconnaissance de motifs, écoute machine et production artistique.
 - [ORETH](https://electronicartefacts.com/programs/oreth/): A public program record for ORETH as both an audio research system and the technical-cultural layer connected to Palimpsests.
 - [VASTE](https://electronicartefacts.com/fr/programs/vaste/): VASTE relie la théorie des moteurs à des systèmes graphiques implémentés et peut être évalué par un accès encadré au dépôt, des pilotes techniques, des missions...
@@ -47,7 +47,7 @@ Use canonical HTML URLs for human-facing citations. Use identifier routes under 
 - [Palimpsests](https://electronicartefacts.com/projects/palimpsests/): A canonical project record for Palimpsests as a compound audio, visual and research publication within Electronic Artefacts.
 - [Vestiges](https://electronicartefacts.com/fr/projects/vestiges/): Un produit centré sur la connaissance où provenance, contribution, découverte et services professionnels émergent d’un même graphe historisé.
 - [Runtime Theory](https://electronicartefacts.com/research/fields/runtime-theory/): An active Electronic Artefacts research field connecting early VOID experiments, VASTE and the definition of graph runtime.
-- [Théorie du runtime](https://electronicartefacts.com/fr/research/fields/runtime-theory/): Un champ de recherche sur les primitives d’exécution, l’identité, le contexte, les relations et la propagation des événements.
+- [Théorie du runtime](https://electronicartefacts.com/fr/research/fields/runtime-theory/): Théorie du runtime cadre un champ de recherche suivi par Electronic Artefacts, en reliant questions ouvertes, prototypes, sources et hypothèses de travail.
 
 ## Optional
 

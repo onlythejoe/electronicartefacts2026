@@ -165,7 +165,7 @@ const renderArticleRail = (
     <section class="panel article-rail-card">
       <div class="section-head">
         <p class="card__meta">Contents</p>
-        <h2 class="card__title">Reading map</h2>
+        <h2 class="card__title">In this article</h2>
       </div>
       ${renderArticleToc(entity)}
     </section>
@@ -192,14 +192,14 @@ const renderArticleContext = (
     <article class="panel article-context-card article-context-card--lead">
       <div class="section-head">
         <p class="card__meta">Argument</p>
-        <h2 class="card__title">Core claims</h2>
+        <h2 class="card__title">Main arguments</h2>
       </div>
       ${renderClaimList(entity.claims, entity.abstract)}
     </article>
     <article class="panel article-context-card">
       <div class="section-head">
         <p class="card__meta">Related context</p>
-        <h2 class="card__title">Evidence links</h2>
+        <h2 class="card__title">Related evidence</h2>
       </div>
       ${renderLinkedRefs(entity.evidence || entity.subjects, byId, routeById, entity.locale)}
     </article>

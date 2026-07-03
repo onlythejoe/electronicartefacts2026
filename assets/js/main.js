@@ -523,15 +523,15 @@
       <section class="zone-card hero" id="about-overview">
         <div class="section-head">
           <p class="eyebrow">ABOUT</p>
-          <h2>What Electronic Artefacts is.</h2>
-          <p class="lede">An independent creative technology studio for products and platforms that need strategy, system architecture, interface design, implementation and cultural context to stay aligned.</p>
+          <h2>A studio for work that crosses disciplines.</h2>
+          <p class="lede">Electronic Artefacts brings strategy, design, engineering and cultural research into one practice. The studio leads client commissions, develops proprietary technology and publishes its own research and artistic work.</p>
         </div>
         <div class="split">
           <article class="panel panel--soft">
             <p class="card__meta">Institutional role</p>
-            <h3 class="card__title">Studio, software lab and publishing line, in that order.</h3>
-            <p class="card__copy">The primary public identity is a studio. Client work proves the approach, proprietary programs extend it, and research or artistic publishing keeps the deeper context available.</p>
-            <p class="card__copy">This hierarchy prevents the label, archive and research language from competing with the simple answer: Electronic Artefacts designs and builds complex digital systems.</p>
+            <h3 class="card__title">Studio first. Technology and publishing extend the practice.</h3>
+            <p class="card__copy">Client work addresses concrete product and communication problems. Proprietary programs turn recurring methods into reusable systems. Research and artistic publishing create room for questions that do not begin with a brief.</p>
+            <p class="card__copy">The structure is deliberately broad, but the responsibility is simple: make complex systems clear, useful and durable.</p>
           </article>
           <article class="panel panel--soft">
             <p class="card__meta">Operating cycle</p>
@@ -551,8 +551,8 @@
       <section class="zone-card hero" id="about-layers">
         <div class="section-head">
           <p class="eyebrow">ECOSYSTEM</p>
-          <h2>The four operating layers.</h2>
-          <p class="lede">Each layer has a distinct role. None of them works alone.</p>
+          <h2>How ideas move through the studio.</h2>
+          <p class="lede">Research frames the question. Programs retain reusable logic. Projects put it to work. The archive preserves what should remain available.</p>
         </div>
         <div class="network-grid">
           <article class="panel panel--soft" id="about-research">
@@ -589,8 +589,8 @@
       <section class="zone-card hero" id="about-entities">
         <div class="section-head">
           <p class="eyebrow">NAMED ENTITIES</p>
-          <h2>How the named entities fit.</h2>
-          <p class="lede">VASTE, Forge, Palimpsests, Vestiges and client work each occupy a different place in the same structure.</p>
+          <h2>Five names, five distinct roles.</h2>
+          <p class="lede">VASTE is the runtime, Forge the production system, Vestiges the flagship platform, Palimpsests the artistic cycle, and client work the proof under real constraints.</p>
         </div>
         <div class="card-grid card-grid--two">
           <article class="panel panel--soft">
@@ -629,8 +629,8 @@
       <section class="zone-card hero" id="about-philosophy">
         <div class="section-head">
           <p class="eyebrow">PHILOSOPHY</p>
-          <h2>One language, many forms.</h2>
-          <p class="lede">The same logic can appear as a runtime, a work, a label release or an archive piece.</p>
+          <h2>Technology is also cultural material.</h2>
+          <p class="lede">A system can be infrastructure, a creative instrument or a way to preserve memory. The form changes; the attention to structure and consequence does not.</p>
         </div>
         <div class="split">
           <article class="panel panel--soft">
@@ -654,8 +654,8 @@
       <div class="contact-discovery__intro">
         <div>
           <p class="eyebrow">PROJECT / COLLABORATION DISCOVERY</p>
-          <h2 class="display-title">What should exist that doesn’t exist yet?</h2>
-          <p class="lede">Describe the situation in your own words. This interface organizes your intent into a concise brief. Classification happens locally in your browser.</p>
+          <h2 class="display-title">What needs to change — and why now?</h2>
+          <p class="lede">Describe the situation in your own words. The brief will identify the relevant pathway, surface the missing context and prepare a focused first conversation. Nothing leaves your browser.</p>
         </div>
       </div>
       <div class="contact-command">
@@ -696,7 +696,7 @@
 
   const contactLinks = () => `
     <section class="zone-card hero contact-channels">
-      <div class="section-head"><p class="eyebrow">DIRECT ROUTES</p><h2>Prefer to contact us directly?</h2><p class="lede">The discovery interface is optional. Email remains the primary route; public channels expose the studio's code, sound, research and ongoing work.</p></div>
+      <div class="section-head"><p class="eyebrow">DIRECT CONTACT</p><h2>Already know what you need?</h2><p class="lede">Email is the fastest route for projects and partnerships. The public channels document the studio’s code, sound, research and current work.</p></div>
       <div class="contact-grid">
         <article class="panel"><p class="card__meta">Email</p><h3 class="card__title">electronic.artefacts@gmail.com</h3><p class="card__copy">Project briefs, partnerships, commissions and considered introductions.</p>${linkRow({ label: "Send email", href: "mailto:electronic.artefacts@gmail.com" })}</article>
         <article class="panel"><p class="card__meta">Studio channel</p><h3 class="card__title">@electronic.artefacts</h3><p class="card__copy">Studio updates, releases and public signals.</p>${linkRow({ label: "Open Instagram", href: "https://www.instagram.com/electronic.artefacts/", target: "_blank" })}</article>
@@ -2932,25 +2932,25 @@
         <div class="intent-hero__grid home-cinematic-hero__layout">
           <div class="hero-copy intent-hero__copy">
             <p class="eyebrow">ELECTRONIC ARTEFACTS</p>
-            <h1 class="display-title">Creative systems made visible.</h1>
-            <p class="lede">Electronic Artefacts is a creative technology studio for client systems, proprietary platforms and research-led cultural publishing.</p>
+            <h1 class="display-title">Complex systems, made clear.</h1>
+            <p class="lede">Electronic Artefacts is an independent creative technology studio. We build client products, develop proprietary systems and publish research-led cultural work.</p>
             <div class="button-row">
-              <a class="button button--primary" href="./work.html">See selected work</a>
-              <a class="button button--secondary" href="./contact.html">Start a project</a>
+              <a class="button button--primary" href="./work.html">View client work</a>
+              <a class="button button--secondary" href="./contact.html">Discuss a project</a>
             </div>
             <div class="pill-cloud intent-hero__chips" aria-label="Studio practices">
-              <span class="chip">Client systems</span>
-              <span class="chip">Proprietary platforms</span>
+              <span class="chip">Client products</span>
+              <span class="chip">Proprietary systems</span>
               <span class="chip">Research</span>
               <span class="chip">Artistic publishing</span>
             </div>
           </div>
           <aside class="intent-hero__stage home-intent-stage" data-intent-stage aria-label="Current Electronic Artefacts projects">
-            <div class="intent-hero__stage-label"><span>Now showing</span><strong>Current products and public work</strong></div>
+            <div class="intent-hero__stage-label"><span>Selected work</span><strong>Current systems and shipped projects</strong></div>
             <div class="home-intent-stage__orbit" aria-hidden="true"></div>
             ${homeHeroFrame(lead, "home-intent-stage__frame--lead", { depth: 0.82, kicker: leadKicker, eager: true })}
             ${homeHeroFrame(system, "home-intent-stage__frame--system", { depth: 1.35, kicker: system?.id === "unionmob" ? "External CTO partnership" : "Product system" })}
-            ${homeHeroFrame(publicProof, "home-intent-stage__frame--proof", { depth: 1.62, kicker: "Live public proof" })}
+            ${homeHeroFrame(publicProof, "home-intent-stage__frame--proof", { depth: 1.62, kicker: "Shipped client work" })}
             <div class="home-intent-stage__channels" data-depth="1.42" aria-label="Instagram channels">
               <a href="https://www.instagram.com/electronic.artefacts/" target="_blank" rel="noreferrer" aria-label="Open the Electronic Artefacts Instagram channel">
                 <img src="./assets/media/projects/electronic-artefacts/electronic-artefacts-logo.jpg" alt="" loading="lazy" />
@@ -3026,34 +3026,34 @@
 
   const renderFeaturedPaths = () =>
     `${orientationSection({
-      eyebrow: "FEATURED PATHS",
-      title: "Choose what you need first.",
-      copy: "Start with the path that matches your intent: technology, delivery or cultural work.",
+      eyebrow: "THREE PRACTICES",
+      title: "One studio. Three distinct ways of working.",
+      copy: "Client work solves immediate problems. Proprietary systems extend what the studio can build. Research and artistic publishing keep the practice open to new forms.",
       cards: [
         {
           kicker: "Technology",
-          title: "Understand the core runtime",
-          copy: "Open VASTE to understand the strategic and technical foundation behind the wider family of systems.",
-          reason: "Best when architecture, scalability and the long-term platform thesis matter first.",
-          cta: "Explore VASTE",
+          title: "Proprietary systems",
+          copy: "Explore VASTE and the reusable software programs behind the studio’s knowledge and product platforms.",
+          reason: "Technical partnerships, pilots and licensing.",
+          cta: "Review the programs",
           href: "./vaste.html",
           ariaLabel: "Explore VASTE",
         },
         {
           kicker: "Delivery",
-          title: "See applied work and outcomes",
-          copy: "See how strategy, interface, content and implementation hold together across commissions and public products.",
-          reason: "Best when you need evidence of execution under concrete constraints.",
-          cta: "See Client Work",
+          title: "Client products and platforms",
+          copy: "See how strategy, content, interface and engineering come together in commissioned work.",
+          reason: "Product definition, design, delivery and recovery.",
+          cta: "View client work",
           href: "./work.html",
           ariaLabel: "See Client Work",
         },
         {
-          kicker: "Culture",
-          title: "Enter through Palimpsests",
-          copy: "Explore the musical and editorial space where artistic production, memory and publication meet.",
-          reason: "Best when you want the cultural register before the technical system.",
-          cta: "Enter Palimpsests",
+          kicker: "Culture and research",
+          title: "Research and artistic publishing",
+          copy: "Follow the investigations, publications and musical works that give the studio its cultural depth.",
+          reason: "Research, editorial partnerships and artistic collaboration.",
+          cta: "Explore the cultural work",
           href: "./palimpsests.html",
           ariaLabel: "Enter Palimpsests",
         },
@@ -3272,9 +3272,9 @@
         <div class="work-capabilities__intro">
           <div class="section-head">
             <p class="eyebrow">CREATIVE CAPABILITIES</p>
-            <h2>Choose the capability you need first.</h2>
+            <h2>Start with the hardest part of the problem.</h2>
           </div>
-          <p class="lede">Electronic Artefacts brings direction, design, technology and cultural production into one system. Start from the part of the brief that needs the most clarity, then expand only when the work needs it.</p>
+          <p class="lede">Strategy, identity, product design and engineering can be engaged separately or carried as one coherent process. The scope expands only when the problem requires it.</p>
         </div>
 
         <div class="capability-experience" data-capability-map>
@@ -3426,8 +3426,8 @@
       <section class="zone-card hero work-services" id="services">
         <div class="section-head">
           <p class="eyebrow">SERVICE FIELD</p>
-          <h2>Consulting, creative direction and implementation under one roof.</h2>
-          <p class="lede">Electronic Artefacts can enter at diagnosis, strategy, design, build, recovery or R&D level. The work can stay advisory, become a focused audit, or move all the way into production.</p>
+          <h2>From first diagnosis to a working system.</h2>
+          <p class="lede">Engagements can begin with strategy, design, engineering, recovery or R&D — and stop at a decisive recommendation or continue through production.</p>
         </div>
         <div class="work-services__grid">
           ${serviceGroups
@@ -3470,8 +3470,8 @@
     <section class="zone-card hero work-offer">
       <div class="section-head">
         <p class="eyebrow">ENGAGEMENTS</p>
-        <h2>Three ways to work together.</h2>
-        <p class="lede">The format follows the problem. Each engagement produces explicit decisions, working artefacts and a clear next phase before scope or budget is locked.</p>
+        <h2>Three clear starting points.</h2>
+        <p class="lede">Choose the smallest engagement that can resolve the uncertainty. Every format ends with a decision, a working artefact or a production-ready next step.</p>
       </div>
       <div class="card-grid card-grid--three">
         ${[
@@ -3864,7 +3864,7 @@
       },
       {
         title: "Need lineage or advisory",
-        copy: "Start with ARCA, VOID or OracleHub when the value is architecture history, traceability, distributed data or research precedent.",
+        copy: "Choose ARCA, VOID or OracleHub for architectural history, traceability or distributed-data patterns.",
       },
     ];
 
@@ -3873,8 +3873,8 @@
         <div class="program-commercial-hero__grid intent-hero__grid">
           <div class="section-head intent-hero__copy">
             <p class="eyebrow">PROGRAMS</p>
-            <h1 class="display-title">Programs for repo access, pilots and licensing.</h1>
-            <p class="lede">Electronic Artefacts programs are packaged technical systems. They can be evaluated through repository access, scoped pilots, implementation work or licensing conversations.</p>
+            <h1 class="display-title">Proprietary systems for ambitious technical partners.</h1>
+            <p class="lede">Electronic Artefacts develops reusable software programs for knowledge, production and cultural platforms. Partners can review the code, test a focused pilot, commission an implementation or discuss licensing.</p>
             <div class="button-row button-row--compact">
               <a class="button button--primary" href="${esc(programAccessMailto)}">Request repo access</a>
               <a class="button button--secondary" href="./contact.html">Discuss a program</a>
@@ -3903,8 +3903,8 @@
       <section class="zone-card hero">
         <div class="section-head">
           <p class="eyebrow">COMMERCIAL ACCESS</p>
-          <h2>How programs are sold.</h2>
-          <p class="lede">The offer is not a generic download. Each access path has a different level of code exposure, technical support, implementation responsibility and rights discussion.</p>
+          <h2>Four ways to evaluate or use a program.</h2>
+          <p class="lede">Access is matched to the question: inspect the architecture, test a use case, build on the system or negotiate longer-term rights.</p>
         </div>
         <div class="card-grid card-grid--two">
           ${commercialPaths
@@ -4102,23 +4102,23 @@
     const publicProjectCount = (catalog.projects || []).filter((item) => item.visibility !== "internal" && item.visibility !== "restricted").length;
     const grouped = [
       {
-        label: "Art Translation",
-        copy: "Start here for the cultural and artistic line. These projects turn theory into release, image, sound and narrative.",
+        label: "Cultural Works",
+        copy: "Projects where theory becomes a release, an image, a sound or a narrative experience.",
         items: [entityById("palimpsests")].filter(Boolean),
       },
       {
-        label: "Knowledge Platforms",
+        label: "Knowledge Infrastructure",
         copy: "Flagship products that turn research and runtime architecture into public infrastructure with a concrete economic purpose.",
         items: [entityById("vestiges")].filter(Boolean),
       },
       {
-        label: "External Partnership",
+        label: "External Partnerships",
         copy: "Independent initiatives owned outside Electronic Artefacts, with the studio contributing a defined technical or strategic role.",
         items: [entityById("unionmob")].filter(Boolean),
       },
       {
-        label: "Applied Surfaces",
-        copy: "Public and client-facing systems. Open these when you want concrete UX, interface and delivery evidence.",
+        label: "Client Products",
+        copy: "Commissioned products and public platforms with concrete evidence of UX, interface and delivery.",
         items: [
           entityById("atypikhouse"),
           entityById("oeil-de-meg"),
@@ -4144,8 +4144,8 @@
         <div class="projects-hero__grid intent-hero__grid">
           <div class="section-head intent-hero__copy">
             <p class="eyebrow">PROJECTS</p>
-            <h1 class="display-title">Projects, from art systems to applied surfaces.</h1>
-            <p class="lede">Start with the artistic line, then compare client work, product surfaces and the systems that support them.</p>
+          <h1 class="display-title">Projects where research takes form.</h1>
+          <p class="lede">Cultural works, proprietary platforms and client products reveal different sides of the same practice: turning complex ideas into experiences people can use, understand or feel.</p>
             <div class="button-row">
               <a class="button button--primary" href="./work.html">See Client Work</a>
               <a class="button button--secondary" href="./research.html">Enter Research</a>
@@ -4156,15 +4156,15 @@
             <div class="intent-hero__stage-label"><span>Project spectrum</span><strong>Art / product / public proof</strong></div>
             <a class="projects-hero__frame projects-hero__frame--wide" href="./palimpsests.html" data-depth="0.78" aria-label="Open Palimpsests">
               <img src="./assets/media/projects/palimpsests/P1288759-edit-1800.webp" alt="Palimpsests portrait visual" loading="eager" />
-              <figcaption><span>Art system</span><strong>Palimpsests</strong></figcaption>
+              <figcaption><span>Cultural work</span><strong>Palimpsests</strong></figcaption>
             </a>
             <a class="projects-hero__frame" href="./project.html?id=atypikhouse" data-depth="1.18" aria-label="Open AtypikHouse project">
               <img src="./assets/media/projects/atypikhouse/atypikhouse-dashboard-ipad.jpg" alt="AtypikHouse tablet dashboard" loading="lazy" />
-              <figcaption><span>Applied surface</span><strong>AtypikHouse</strong></figcaption>
+              <figcaption><span>Product platform</span><strong>AtypikHouse</strong></figcaption>
             </a>
             <a class="projects-hero__frame" href="./project.html?id=oeil-de-meg" data-depth="1.48" aria-label="Open L’Œil de Meg project">
               <img src="./assets/media/projects/oeil-de-meg/oeil-de-meg-pagespeed-desktop.png" alt="L’Œil de Meg PageSpeed desktop report" loading="lazy" />
-              <figcaption><span>Delivery proof</span><strong>L’Œil de Meg</strong></figcaption>
+              <figcaption><span>Client delivery</span><strong>L’Œil de Meg</strong></figcaption>
             </a>
           </div>
         </div>
@@ -4173,8 +4173,8 @@
       <section class="zone-card hero">
         <div class="section-head">
           <p class="eyebrow">THREE MODES OF OUTPUT</p>
-          <h2>Research, cultural work and applied systems.</h2>
-          <p class="lede">Projects differ in public form, but each one translates investigation into something that can be experienced, used or developed further.</p>
+          <h2>Three outcomes. One standard of execution.</h2>
+          <p class="lede">Some projects test an idea, others create a cultural experience or solve an operational problem. Every project must make its intent, status and evidence legible.</p>
         </div>
         <div class="split">
           <article class="panel panel--soft">

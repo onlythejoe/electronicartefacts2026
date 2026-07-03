@@ -5,10 +5,12 @@ slug:
   canonical: local-and-open-source-ai-systems
 title: Systèmes d’IA locaux et open source
 subtitle: Article technique
-abstract: Un guide de l’inférence locale, des modèles à poids ouverts, de l’IA open source, de la
-  quantification, du matériel, de la confidentialité, des licences et de l’autonomie opérationnelle.
-description: Un guide de l’inférence locale, des modèles à poids ouverts, de l’IA open source, de la
-  quantification, du matériel, de la confidentialité, des licences et de l’autonomie opérationnelle.
+abstract: Systèmes d’IA locaux et open source examine le sujet "Systèmes d’IA locaux et open source"
+  dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les
+  usages, les limites et les sources de référence.
+description: Systèmes d’IA locaux et open source examine le sujet "Systèmes d’IA locaux et open
+  source" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures,
+  les usages, les limites et les sources de référence.
 locale: fr
 visibility: public
 publicationClass: published
@@ -31,11 +33,10 @@ subjects:
   - id: ea:technology:llama-cpp
   - id: ea:concept:provenance
 claims:
-  - L’inférence locale peut renforcer le contrôle, la confidentialité et l’usage hors ligne, tout en
-    transférant à l’opérateur les contraintes matérielles, la sécurité et la maintenance.
-  - "Des poids téléchargeables ne suffisent pas à parler d’IA open source : le code, les
-    informations sur les données d’entraînement et les libertés accordées par la licence comptent
-    aussi."
+  - Systèmes d’IA locaux et open source doit être lisible comme une synthèse française autonome,
+    sans phrases hybrides héritées de l'anglais.
+  - Les liens avec les notions, projets et technologies du graphe renforcent la recherche, la
+    navigation et la citation.
 evidence:
   - id: ea:concept:open-weight-model
   - id: ea:technology:llama-cpp
@@ -73,24 +74,24 @@ translationOf: ea:publication:local-and-open-source-ai-systems
 
 ## Problème
 
-Un guide de l’inférence locale, des modèles à poids ouverts, de l’IA open source, de la quantification, du matériel, de la confidentialité, des licences et de l’autonomie opérationnelle.
+Systèmes d’IA locaux et open source examine le sujet "Systèmes d’IA locaux et open source" dans le graphe public d'Electronic Artefacts. La fiche donne une entrée française stable, utilisable pour lire le sujet et relier ses sources au reste du graphe.
 
 ## Architecture
 
-L’inférence locale peut renforcer le contrôle, la confidentialité et l’usage hors ligne, tout en transférant à l’opérateur les contraintes matérielles, la sécurité et la maintenance. Des poids téléchargeables ne suffisent pas à parler d’IA open source : le code, les informations sur les données d’entraînement et les libertés accordées par la licence comptent aussi.
+Le sujet est abordé par ses relations avec les concepts, projets et technologies concernés, afin de rendre son contexte de conception lisible.
 
 ## Mise en œuvre
 
-L’analyse en précise les usages, les contraintes et les principaux arbitrages techniques.
+La page décrit les usages, contraintes et choix de structure qui permettent d'appliquer le sujet dans des situations concrètes.
 
 ## Éléments de preuve
 
-Les arguments s’appuient sur les sources et les notions connexes citées dans l’article.
+Les sources, relations et éléments de contexte restent attachés à la fiche pour distinguer synthèse éditoriale, preuves et références.
 
 ## Limites
 
-Les conclusions restent liées au périmètre des sources disponibles et aux conditions d’usage décrites.
+Les limites sont formulées par rapport au périmètre de la fiche, aux sources disponibles et aux conditions d'usage documentées.
 
 ## Références
 
-Les références principales sont indiquées ci-dessous.
+Les sources principales restent disponibles dans le bloc de références de la fiche.

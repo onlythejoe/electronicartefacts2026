@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/publications/foundational-lineage-001/#webpage",
       "url": "https://electronicartefacts.com/fr/publications/foundational-lineage-001/",
       "name": "Foundational Lineage #001",
-      "description": "Une note sur les premiers travaux d’architecture, de systèmes de communication et de documentation qui ont conduit à Electronic Artefacts, Runtime Theory et VASTE.",
+      "description": "Foundational Lineage #001 examine le sujet \"Foundational Lineage #001\" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
@@ -35,8 +35,8 @@
       "identifier": "ea:publication:foundational-lineage-001-fr",
       "name": "Foundational Lineage #001",
       "headline": "Foundational Lineage #001",
-      "abstract": "Une note sur les premiers travaux d’architecture, de systèmes de communication et de documentation qui ont conduit à Electronic Artefacts, Runtime Theory et VASTE.",
-      "description": "Une note sur les premiers travaux d’architecture, de systèmes de communication et de documentation qui ont conduit à Electronic Artefacts, Runtime Theory et VASTE.",
+      "abstract": "Foundational Lineage #001 examine le sujet \"Foundational Lineage #001\" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.",
+      "description": "Foundational Lineage #001 examine le sujet \"Foundational Lineage #001\" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.",
       "url": "https://electronicartefacts.com/fr/publications/foundational-lineage-001/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/publications/foundational-lineage-001/#webpage"
@@ -73,7 +73,7 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 116,
+      "wordCount": 131,
       "citation": [
         "Electronic Artefacts. \"Foundational Lineage #001\". Article technique, version 1.0.0, 2026."
       ],
@@ -103,7 +103,7 @@
       "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/",
       "name": "Electronic Artefacts",
       "url": "https://electronicartefacts.com/",
-      "description": "Electronic Artefacts designs digital products, knowledge systems, cultural platforms and research-led experiences.",
+      "description": "Electronic Artefacts is an independent creative technology studio building client products, proprietary systems and research-led cultural work.",
       "keywords": [
         "creative technology",
         "knowledge graph",
@@ -157,7 +157,7 @@
       "@id": "https://electronicartefacts.com/#website",
       "url": "https://electronicartefacts.com/",
       "name": "Electronic Artefacts",
-      "description": "Electronic Artefacts designs digital products, knowledge systems, cultural platforms and research-led experiences.",
+      "description": "Electronic Artefacts is an independent creative technology studio building client products, proprietary systems and research-led cultural work.",
       "keywords": [
         "creative technology",
         "knowledge graph",

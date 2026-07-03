@@ -7,8 +7,8 @@
   },
   "title": "Systèmes personnels de connaissance et jardins numériques",
   "subtitle": "Article technique",
-  "abstract": "Une approche des systèmes personnels de connaissance et des jardins numériques comme pratiques durables de notes, de sources, de liens retour, de révision et d’apprentissage public.",
-  "description": "Une approche des systèmes personnels de connaissance et des jardins numériques comme pratiques durables de notes, de sources, de liens retour, de révision et d’apprentissage public.",
+  "abstract": "Systèmes personnels de connaissance et jardins numériques examine le sujet \"Systèmes personnels de connaissance et jardins numériques\" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.",
+  "description": "Systèmes personnels de connaissance et jardins numériques examine le sujet \"Systèmes personnels de connaissance et jardins numériques\" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.",
   "locale": "fr",
   "visibility": "public",
   "publicationClass": "published",
@@ -29,7 +29,7 @@
   "publisher": "ea:organization:electronic-artefacts",
   "tags": [
     "gestion personnelle des connaissances",
-    "jardins numériques",
+    "Digital Gardens",
     "liens entrants",
     "méthodes de recherche"
   ],
@@ -75,8 +75,8 @@
     }
   ],
   "claims": [
-    "Un système de connaissance devient utile lorsque les notes sont reliées, révisées et retrouvées, pas seulement accumulées.",
-    "Les hubs publics peuvent reprendre les pratiques des jardins numériques en y ajoutant des critères éditoriaux et la validation des sources."
+    "Systèmes personnels de connaissance et jardins numériques doit être lisible comme une synthèse française autonome, sans phrases hybrides héritées de l'anglais.",
+    "Les liens avec les notions, projets et technologies du graphe renforcent la recherche, la navigation et la citation."
   ],
   "evidence": [
     {
@@ -89,7 +89,7 @@
   "citation": {
     "preferred": "Electronic Artefacts. \"Systèmes personnels de connaissance et jardins numériques\". Article technique, version 1.0.0, 2026."
   },
-  "bodyHtml": "<h2 id=\"probleme\">Problème</h2>\n<p>Une approche des systèmes personnels de connaissance et des jardins numériques comme pratiques durables de notes, de sources, de liens retour, de révision et d’apprentissage public.</p>\n<h2 id=\"architecture\">Architecture</h2>\n<p>Un système de connaissance devient utile lorsque les notes sont reliées, révisées et retrouvées, pas seulement accumulées. Les hubs publics peuvent reprendre les pratiques des jardins numériques en y ajoutant des critères éditoriaux et la validation des sources.</p>\n<h2 id=\"mise-en-uvre\">Mise en œuvre</h2>\n<p>L’analyse en précise les usages, les contraintes et les principaux arbitrages techniques.</p>\n<h2 id=\"elements-de-preuve\">Éléments de preuve</h2>\n<p>Les arguments s’appuient sur les sources et les notions connexes citées dans l’article.</p>\n<h2 id=\"limites\">Limites</h2>\n<p>Les conclusions restent liées au périmètre des sources disponibles et aux conditions d’usage décrites.</p>\n<h2 id=\"references\">Références</h2>\n<p>Les références principales sont indiquées ci-dessous.</p>\n",
+  "bodyHtml": "<h2 id=\"probleme\">Problème</h2>\n<p>Systèmes personnels de connaissance et jardins numériques examine le sujet “Systèmes personnels de connaissance et jardins numériques” dans le graphe public d’Electronic Artefacts. La fiche donne une entrée française stable, utilisable pour lire le sujet et relier ses sources au reste du graphe.</p>\n<h2 id=\"architecture\">Architecture</h2>\n<p>Le sujet est abordé par ses relations avec les concepts, projets et technologies concernés, afin de rendre son contexte de conception lisible.</p>\n<h2 id=\"mise-en-uvre\">Mise en œuvre</h2>\n<p>La page décrit les usages, contraintes et choix de structure qui permettent d’appliquer le sujet dans des situations concrètes.</p>\n<h2 id=\"elements-de-preuve\">Éléments de preuve</h2>\n<p>Les sources, relations et éléments de contexte restent attachés à la fiche pour distinguer synthèse éditoriale, preuves et références.</p>\n<h2 id=\"limites\">Limites</h2>\n<p>Les limites sont formulées par rapport au périmètre de la fiche, aux sources disponibles et aux conditions d’usage documentées.</p>\n<h2 id=\"references\">Références</h2>\n<p>Les sources principales restent disponibles dans le bloc de références de la fiche.</p>\n",
   "headings": [
     "Problème",
     "Architecture",

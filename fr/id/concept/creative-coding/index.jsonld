@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/knowledge/concepts/creative-coding/#webpage",
       "url": "https://electronicartefacts.com/fr/knowledge/concepts/creative-coding/",
       "name": "Programmation créative",
-      "description": "Définition, usages, limites et relations associés au concept : Programmation créative.",
+      "description": "Programmation créative désigne l'usage du code comme médium artistique, exploratoire où pédagogique. La fiche en précise l'usage, les limites et les relations avec les projets, technologies et publications d'Electronic Artefacts.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
@@ -34,8 +34,8 @@
       "@id": "https://electronicartefacts.com/fr/id/concept/creative-coding/",
       "identifier": "ea:concept:creative-coding-fr",
       "name": "Programmation créative",
-      "abstract": "Ce concept propose un cadre précis pour comprendre l'usage du code comme médium artistique, exploratoire ou pédagogique et ses liens avec les projets, technologies et publications associés.",
-      "description": "Cette notion recouvre l'usage du code comme médium artistique, exploratoire ou pédagogique.",
+      "abstract": "Programmation créative désigne l'usage du code comme médium artistique, exploratoire où pédagogique. La fiche en précise l'usage, les limites et les relations avec les projets, technologies et publications d'Electronic Artefacts.",
+      "description": "Programmation créative désigne l'usage du code comme médium artistique, exploratoire où pédagogique.",
       "url": "https://electronicartefacts.com/fr/knowledge/concepts/creative-coding/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/knowledge/concepts/creative-coding/#webpage"
@@ -75,7 +75,7 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 54,
+      "wordCount": 76,
       "inDefinedTermSet": "https://electronicartefacts.com/knowledge/concepts/",
       "termCode": "creative-coding"
     },
@@ -84,7 +84,7 @@
       "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/",
       "name": "Electronic Artefacts",
       "url": "https://electronicartefacts.com/",
-      "description": "Electronic Artefacts designs digital products, knowledge systems, cultural platforms and research-led experiences.",
+      "description": "Electronic Artefacts is an independent creative technology studio building client products, proprietary systems and research-led cultural work.",
       "keywords": [
         "creative technology",
         "knowledge graph",
@@ -138,7 +138,7 @@
       "@id": "https://electronicartefacts.com/#website",
       "url": "https://electronicartefacts.com/",
       "name": "Electronic Artefacts",
-      "description": "Electronic Artefacts designs digital products, knowledge systems, cultural platforms and research-led experiences.",
+      "description": "Electronic Artefacts is an independent creative technology studio building client products, proprietary systems and research-led cultural work.",
       "keywords": [
         "creative technology",
         "knowledge graph",

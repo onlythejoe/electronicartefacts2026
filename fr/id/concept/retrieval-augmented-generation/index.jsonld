@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/knowledge/concepts/retrieval-augmented-generation/#webpage",
       "url": "https://electronicartefacts.com/fr/knowledge/concepts/retrieval-augmented-generation/",
       "name": "Génération augmentée par récupération",
-      "description": "Définition, usages, limites et relations associés au concept : Génération augmentée par récupération.",
+      "description": "Génération augmentée par récupération désigne les architectures qui récupèrent des sources externes avant où pendant la génération d'une réponse par IA. La fiche en précise l'usage, les limites et les relations avec les projets, technologies et publications d'Electronic Artefacts.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
@@ -37,8 +37,8 @@
       "alternateName": [
         "RAG"
       ],
-      "abstract": "Ce concept propose un cadre précis pour comprendre les architectures qui recuperent des sources externes avant ou pendant la generation d'une reponse par IA et ses liens avec les projets, technologies et publications associés.",
-      "description": "Cette notion recouvre les architectures qui recuperent des sources externes avant ou pendant la generation d'une reponse par IA.",
+      "abstract": "Génération augmentée par récupération désigne les architectures qui récupèrent des sources externes avant où pendant la génération d'une réponse par IA. La fiche en précise l'usage, les limites et les relations avec les projets, technologies et publications d'Electronic Artefacts.",
+      "description": "Génération augmentée par récupération désigne les architectures qui récupèrent des sources externes avant où pendant la génération d'une réponse par IA.",
       "url": "https://electronicartefacts.com/fr/knowledge/concepts/retrieval-augmented-generation/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/knowledge/concepts/retrieval-augmented-generation/#webpage"
@@ -80,7 +80,7 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 59,
+      "wordCount": 87,
       "citation": [
         {
           "@type": "CreativeWork",
@@ -99,7 +99,7 @@
       "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/",
       "name": "Electronic Artefacts",
       "url": "https://electronicartefacts.com/",
-      "description": "Electronic Artefacts designs digital products, knowledge systems, cultural platforms and research-led experiences.",
+      "description": "Electronic Artefacts is an independent creative technology studio building client products, proprietary systems and research-led cultural work.",
       "keywords": [
         "creative technology",
         "knowledge graph",
@@ -153,7 +153,7 @@
       "@id": "https://electronicartefacts.com/#website",
       "url": "https://electronicartefacts.com/",
       "name": "Electronic Artefacts",
-      "description": "Electronic Artefacts designs digital products, knowledge systems, cultural platforms and research-led experiences.",
+      "description": "Electronic Artefacts is an independent creative technology studio building client products, proprietary systems and research-led cultural work.",
       "keywords": [
         "creative technology",
         "knowledge graph",

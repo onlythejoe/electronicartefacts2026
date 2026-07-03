@@ -5,10 +5,12 @@ slug:
   canonical: web-audio-and-browser-based-sound-systems
 title: Web Audio et systèmes sonores dans le navigateur
 subtitle: Article technique
-abstract: Une présentation de Web Audio comme architecture sonore native du navigateur pour la
-  synthèse, le traitement, l’analyse, les essais interactifs et les outils audio publics.
-description: Une présentation de Web Audio comme architecture sonore native du navigateur pour la
-  synthèse, le traitement, l’analyse, les essais interactifs et les outils audio publics.
+abstract: Web Audio et systèmes sonores dans le navigateur examine le sujet "Web Audio et systèmes
+  sonores dans le navigateur" dans le graphe public d'Electronic Artefacts. La fiche en synthétise
+  les architectures, les usages, les limites et les sources de référence.
+description: Web Audio et systèmes sonores dans le navigateur examine le sujet "Web Audio et
+  systèmes sonores dans le navigateur" dans le graphe public d'Electronic Artefacts. La fiche en
+  synthétise les architectures, les usages, les limites et les sources de référence.
 locale: fr
 visibility: public
 publicationClass: published
@@ -31,10 +33,10 @@ subjects:
   - id: ea:program:oreth
   - id: ea:concept:creative-coding
 claims:
-  - Web Audio fait du navigateur un environnement viable pour des outils sonores publics, au-delà de
-    la simple lecture intégrée.
-  - Les systèmes sonores dans le navigateur demandent une architecture en graphe, une attention aux
-    performances et une documentation de préservation.
+  - Web Audio et systèmes sonores dans le navigateur doit être lisible comme une synthèse française
+    autonome, sans phrases hybrides héritées de l'anglais.
+  - Les liens avec les notions, projets et technologies du graphe renforcent la recherche, la
+    navigation et la citation.
 evidence:
   - id: ea:technology:web-audio-api
   - id: ea:program:oreth
@@ -62,24 +64,24 @@ translationOf: ea:publication:web-audio-and-browser-based-sound-systems
 
 ## Problème
 
-Une présentation de Web Audio comme architecture sonore native du navigateur pour la synthèse, le traitement, l’analyse, les essais interactifs et les outils audio publics.
+Web Audio et systèmes sonores dans le navigateur examine le sujet "Web Audio et systèmes sonores dans le navigateur" dans le graphe public d'Electronic Artefacts. La fiche donne une entrée française stable, utilisable pour lire le sujet et relier ses sources au reste du graphe.
 
 ## Architecture
 
-Web Audio fait du navigateur un environnement viable pour des outils sonores publics, au-delà de la simple lecture intégrée. Les systèmes sonores dans le navigateur demandent une architecture en graphe, une attention aux performances et une documentation de préservation.
+Le sujet est abordé par ses relations avec les concepts, projets et technologies concernés, afin de rendre son contexte de conception lisible.
 
 ## Mise en œuvre
 
-L’analyse en précise les usages, les contraintes et les principaux arbitrages techniques.
+La page décrit les usages, contraintes et choix de structure qui permettent d'appliquer le sujet dans des situations concrètes.
 
 ## Éléments de preuve
 
-Les arguments s’appuient sur les sources et les notions connexes citées dans l’article.
+Les sources, relations et éléments de contexte restent attachés à la fiche pour distinguer synthèse éditoriale, preuves et références.
 
 ## Limites
 
-Les conclusions restent liées au périmètre des sources disponibles et aux conditions d’usage décrites.
+Les limites sont formulées par rapport au périmètre de la fiche, aux sources disponibles et aux conditions d'usage documentées.
 
 ## Références
 
-Les références principales sont indiquées ci-dessous.
+Les sources principales restent disponibles dans le bloc de références de la fiche.

@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/knowledge/concepts/domain-operating-system/#webpage",
       "url": "https://electronicartefacts.com/fr/knowledge/concepts/domain-operating-system/",
       "name": "Système d'exploitation de domaine",
-      "description": "Définition, usages, limites et relations associés au concept : Système d'exploitation de domaine.",
+      "description": "Système d'exploitation de domaine désigne le sujet \"Système d'exploitation de domaine\" dans le graphe public d'Electronic Artefacts. La fiche en précise l'usage, les limites et les relations avec les projets, technologies et publications d'Electronic Artefacts.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
@@ -34,8 +34,8 @@
       "@id": "https://electronicartefacts.com/fr/id/concept/domain-operating-system/",
       "identifier": "ea:concept:domain-operating-system-fr",
       "name": "Système d'exploitation de domaine",
-      "abstract": "Ce concept propose un cadre précis pour comprendre les plateformes qui réunissent, pour un domaine donné, l’identité, les entités, les permissions, les workflows et les événements dans une couche opérationnelle commune et ses liens avec les projets, technologies et publications associés.",
-      "description": "Cette notion recouvre les plateformes qui réunissent, pour un domaine donné, l’identité, les entités, les permissions, les workflows et les événements dans une couche opérationnelle commune.",
+      "abstract": "Système d'exploitation de domaine désigne le sujet \"Système d'exploitation de domaine\" dans le graphe public d'Electronic Artefacts. La fiche en précise l'usage, les limites et les relations avec les projets, technologies et publications d'Electronic Artefacts.",
+      "description": "Système d'exploitation de domaine désigne le sujet \"Système d'exploitation de domaine\" dans le graphe public d'Electronic Artefacts.",
       "url": "https://electronicartefacts.com/fr/knowledge/concepts/domain-operating-system/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/knowledge/concepts/domain-operating-system/#webpage"
@@ -77,7 +77,7 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 68,
+      "wordCount": 81,
       "inDefinedTermSet": "https://electronicartefacts.com/knowledge/concepts/",
       "termCode": "domain-operating-system"
     },
@@ -86,7 +86,7 @@
       "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/",
       "name": "Electronic Artefacts",
       "url": "https://electronicartefacts.com/",
-      "description": "Electronic Artefacts designs digital products, knowledge systems, cultural platforms and research-led experiences.",
+      "description": "Electronic Artefacts is an independent creative technology studio building client products, proprietary systems and research-led cultural work.",
       "keywords": [
         "creative technology",
         "knowledge graph",
@@ -140,7 +140,7 @@
       "@id": "https://electronicartefacts.com/#website",
       "url": "https://electronicartefacts.com/",
       "name": "Electronic Artefacts",
-      "description": "Electronic Artefacts designs digital products, knowledge systems, cultural platforms and research-led experiences.",
+      "description": "Electronic Artefacts is an independent creative technology studio building client products, proprietary systems and research-led cultural work.",
       "keywords": [
         "creative technology",
         "knowledge graph",

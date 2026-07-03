@@ -3,13 +3,15 @@ id: ea:concept:cybernetic-feedback-fr
 type: concept
 slug:
   canonical: cybernetic-feedback
-title: Rétroaction cybernetique
-definition: Cette notion recouvre les boucles de retroaction qui relient mesure, action, correction
-  et comportement systemique.
-abstract: Ce concept propose un cadre précis pour comprendre les boucles de retroaction qui relient
-  mesure, action, correction et comportement systemique et ses liens avec les projets, technologies
-  et publications associés.
-description: "Définition, usages, limites et relations associés au concept : Rétroaction cybernetique."
+title: Rétroaction cybernétique
+definition: Rétroaction cybernétique désigne les boucles de rétroaction qui relient mesure, action,
+  correction et comportement systémique.
+abstract: Rétroaction cybernétique désigne les boucles de rétroaction qui relient mesure, action,
+  correction et comportement systémique. La fiche en précise l'usage, les limites et les relations
+  avec les projets, technologies et publications d'Electronic Artefacts.
+description: Rétroaction cybernétique désigne les boucles de rétroaction qui relient mesure, action,
+  correction et comportement systémique. La fiche en précise l'usage, les limites et les relations
+  avec les projets, technologies et publications d'Electronic Artefacts.
 locale: fr
 visibility: public
 publicationClass: canonical
@@ -33,8 +35,10 @@ exclusions:
   - les usages purement promotionnels sans définition vérifiable
   - les exemples déconnectés des sources, relations ou contraintes du graphe
 claims:
-  - Une définition utile reste reliée à des sources, à des pratiques et à des objets observables.
-  - Un vocabulaire stable permet de relier projets, publications et technologies sans ambiguïté.
+  - Rétroaction cybernétique devient utile lorsque sa définition reste reliée à des sources, des
+    pratiques et des objets observables.
+  - La fiche sert de vocabulaire commun pour relier projets, publications et technologies sans
+    mélanger les langues.
 sources:
   - title: Cybernetics or Control and Communication in the Animal and the Machine
     author: Norbert Wiener
@@ -56,18 +60,18 @@ disciplines:
 translationOf: ea:concept:cybernetic-feedback
 ---
 
-## Rôle
+## Définition
 
-Cette notion recouvre les boucles de retroaction qui relient mesure, action, correction et comportement systemique.
+Rétroaction cybernétique désigne les boucles de rétroaction qui relient mesure, action, correction et comportement systémique.
 
 ## Usage
 
-Elle fournit un vocabulaire stable pour relier les projets, publications et technologies concernés.
+Cette fiche relie la notion aux projets, publications et technologies qui partagent un même vocabulaire de conception. Elle sert de point d'appui pour naviguer dans le graphe en version française.
 
 ## Périmètre
 
-Son périmètre comprend les définitions, les usages, les limites et les relations avec les autres objets documentés.
+La notion est abordée par ses définitions, ses usages, ses limites et ses relations avec les autres objets documentés.
 
 ## Références
 
-Les références principales sont indiquées ci-dessous.
+Les sources principales restent disponibles dans le bloc de références de la fiche.

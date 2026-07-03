@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/knowledge/concepts/personal-knowledge-system/#webpage",
       "url": "https://electronicartefacts.com/fr/knowledge/concepts/personal-knowledge-system/",
       "name": "Système personnel de connaissance",
-      "description": "Définition, usages, limites et relations associés au concept : Système personnel de connaissance.",
+      "description": "Système personnel de connaissance désigne les systèmes personnels d'organisation de notes, sources, idées et connexions. La fiche en précise l'usage, les limites et les relations avec les projets, technologies et publications d'Electronic Artefacts.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
@@ -34,8 +34,8 @@
       "@id": "https://electronicartefacts.com/fr/id/concept/personal-knowledge-system/",
       "identifier": "ea:concept:personal-knowledge-system-fr",
       "name": "Système personnel de connaissance",
-      "abstract": "Ce concept propose un cadre précis pour comprendre les systèmes personnels d'organisation de notes, sources, idees et connexions et ses liens avec les projets, technologies et publications associés.",
-      "description": "Cette notion recouvre les systèmes personnels d'organisation de notes, sources, idees et connexions.",
+      "abstract": "Système personnel de connaissance désigne les systèmes personnels d'organisation de notes, sources, idées et connexions. La fiche en précise l'usage, les limites et les relations avec les projets, technologies et publications d'Electronic Artefacts.",
+      "description": "Système personnel de connaissance désigne les systèmes personnels d'organisation de notes, sources, idées et connexions.",
       "url": "https://electronicartefacts.com/fr/knowledge/concepts/personal-knowledge-system/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/knowledge/concepts/personal-knowledge-system/#webpage"
@@ -57,7 +57,7 @@
       ],
       "keywords": [
         "gestion personnelle des connaissances",
-        "jardins numériques",
+        "Digital Gardens",
         "Notes",
         "Research",
         "systèmes de connaissance",
@@ -76,7 +76,7 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 55,
+      "wordCount": 79,
       "inDefinedTermSet": "https://electronicartefacts.com/knowledge/concepts/",
       "termCode": "personal-knowledge-system"
     },
@@ -85,7 +85,7 @@
       "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/",
       "name": "Electronic Artefacts",
       "url": "https://electronicartefacts.com/",
-      "description": "Electronic Artefacts designs digital products, knowledge systems, cultural platforms and research-led experiences.",
+      "description": "Electronic Artefacts is an independent creative technology studio building client products, proprietary systems and research-led cultural work.",
       "keywords": [
         "creative technology",
         "knowledge graph",
@@ -139,7 +139,7 @@
       "@id": "https://electronicartefacts.com/#website",
       "url": "https://electronicartefacts.com/",
       "name": "Electronic Artefacts",
-      "description": "Electronic Artefacts designs digital products, knowledge systems, cultural platforms and research-led experiences.",
+      "description": "Electronic Artefacts is an independent creative technology studio building client products, proprietary systems and research-led cultural work.",
       "keywords": [
         "creative technology",
         "knowledge graph",

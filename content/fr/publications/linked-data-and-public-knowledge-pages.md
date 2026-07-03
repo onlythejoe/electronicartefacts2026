@@ -5,12 +5,12 @@ slug:
   canonical: linked-data-and-public-knowledge-pages
 title: Données liées et pages publiques de connaissance
 subtitle: Article technique
-abstract: Une introduction aux pages publiques de connaissance fondées sur des URL stables, JSON-LD,
-  des identifiants compatibles avec RDF et des liens internes utiles aux lecteurs comme aux
-  machines.
-description: Une introduction aux pages publiques de connaissance fondées sur des URL stables,
-  JSON-LD, des identifiants compatibles avec RDF et des liens internes utiles aux lecteurs comme aux
-  machines.
+abstract: Données liées et pages publiques de connaissance examine le sujet "Données liées et pages
+  publiques de connaissance" dans le graphe public d'Electronic Artefacts. La fiche en synthétise
+  les architectures, les usages, les limites et les sources de référence.
+description: Données liées et pages publiques de connaissance examine le sujet "Données liées et
+  pages publiques de connaissance" dans le graphe public d'Electronic Artefacts. La fiche en
+  synthétise les architectures, les usages, les limites et les sources de référence.
 locale: fr
 visibility: public
 publicationClass: published
@@ -33,10 +33,10 @@ subjects:
   - id: ea:technology:rdf
   - id: ea:concept:knowledge-graph
 claims:
-  - Des pages statiques participent aux données liées lorsqu’elles publient des identifiants
-    stables, des routes canoniques et des données structurées.
-  - JSON-LD constitue un pont concret entre publication éditoriale et représentation sémantique en
-    graphe.
+  - Données liées et pages publiques de connaissance doit être lisible comme une synthèse française
+    autonome, sans phrases hybrides héritées de l'anglais.
+  - Les liens avec les notions, projets et technologies du graphe renforcent la recherche, la
+    navigation et la citation.
 evidence:
   - id: ea:organization:electronic-artefacts
 sources:
@@ -72,24 +72,24 @@ translationOf: ea:publication:linked-data-and-public-knowledge-pages
 
 ## Problème
 
-Une introduction aux pages publiques de connaissance fondées sur des URL stables, JSON-LD, des identifiants compatibles avec RDF et des liens internes utiles aux lecteurs comme aux machines.
+Données liées et pages publiques de connaissance examine le sujet "Données liées et pages publiques de connaissance" dans le graphe public d'Electronic Artefacts. La fiche donne une entrée française stable, utilisable pour lire le sujet et relier ses sources au reste du graphe.
 
 ## Architecture
 
-Des pages statiques participent aux données liées lorsqu’elles publient des identifiants stables, des routes canoniques et des données structurées. JSON-LD constitue un pont concret entre publication éditoriale et représentation sémantique en graphe.
+Le sujet est abordé par ses relations avec les concepts, projets et technologies concernés, afin de rendre son contexte de conception lisible.
 
 ## Mise en œuvre
 
-L’analyse en précise les usages, les contraintes et les principaux arbitrages techniques.
+La page décrit les usages, contraintes et choix de structure qui permettent d'appliquer le sujet dans des situations concrètes.
 
 ## Éléments de preuve
 
-Les arguments s’appuient sur les sources et les notions connexes citées dans l’article.
+Les sources, relations et éléments de contexte restent attachés à la fiche pour distinguer synthèse éditoriale, preuves et références.
 
 ## Limites
 
-Les conclusions restent liées au périmètre des sources disponibles et aux conditions d’usage décrites.
+Les limites sont formulées par rapport au périmètre de la fiche, aux sources disponibles et aux conditions d'usage documentées.
 
 ## Références
 
-Les références principales sont indiquées ci-dessous.
+Les sources principales restent disponibles dans le bloc de références de la fiche.

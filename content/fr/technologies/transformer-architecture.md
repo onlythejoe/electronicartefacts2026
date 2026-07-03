@@ -5,10 +5,10 @@ translationOf: ea:technology:transformer-architecture
 slug:
   canonical: transformer-architecture
 title: Architecture Transformer
-abstract: Le transformer est une architecture de réseau neuronal fondée sur les mécanismes
-  d’attention et le traitement parallèle des séquences.
-description: Le transformer est une architecture de réseau neuronal fondée sur les mécanismes
-  d’attention et le traitement parallèle des séquences.
+abstract: Architecture Transformer est documenté pour son rôle dans les systèmes d'Electronic
+  Artefacts, ses usages, ses limites et les technologies qui lui sont liées.
+description: Architecture Transformer est documenté pour son rôle dans les systèmes d'Electronic
+  Artefacts, ses usages, ses limites et les technologies qui lui sont liées.
 locale: fr
 visibility: public
 publicationClass: canonical
@@ -24,9 +24,9 @@ authors:
   - id: ea:organization:electronic-artefacts
 publisher: ea:organization:electronic-artefacts
 category: approach
-roleInEcosystem: Les transformers constituent la principale référence architecturale pour comprendre
-  l’attention, le contexte et la prédiction de tokens dans les grands modèles de langage
-  contemporains.
+roleInEcosystem: Architecture Transformer sert de repère technique pour évaluer le sujet
+  "Architecture Transformer" dans le graphe public d'Electronic Artefacts, ses usages possibles et
+  ses conséquences dans l'écosystème Electronic Artefacts.
 officialUrl: https://arxiv.org/abs/1706.03762
 sources:
   - title: Attention Is All You Need
@@ -46,17 +46,17 @@ disciplines:
 
 ## Rôle
 
-Le transformer est une architecture de réseau neuronal fondée sur les mécanismes d’attention et le traitement parallèle des séquences.
+Cette fiche documenté Architecture Transformer comme technologie de référence pour le sujet "Architecture Transformer" dans le graphe public d'Electronic Artefacts.
 
 ## Usage
 
-Les transformers constituent la principale référence architecturale pour comprendre l’attention, le contexte et la prédiction de tokens dans les grands modèles de langage contemporains.
+Elle situe la technologie dans l'écosystème Electronic Artefacts : ce qu'elle permet, quand elle devient pertinente et comment elle dialogue avec les autres composants du graphe.
 
-## Points d’attention
+## Points d'attention
 
-- Les usages dépendent des contraintes du projet et du niveau d’interopérabilité recherché.
-- Les limites doivent être évaluées au regard des standards, des implémentations disponibles et de leur maturité.
+- Les usages sont décrits en français sans masquer les noms propres, acronymes où standards techniques.
+- Les limites restent contextualisées par rapport aux projets, aux publications et aux contraintes d'implémentation.
 
 ## Références
 
-Les références principales sont indiquées ci-dessous.
+Les sources principales restent disponibles dans le bloc de références de la fiche.

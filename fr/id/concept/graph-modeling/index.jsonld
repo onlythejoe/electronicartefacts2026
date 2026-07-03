@@ -5,15 +5,15 @@
       "@type": "WebPage",
       "@id": "https://electronicartefacts.com/fr/knowledge/concepts/graph-modeling/#webpage",
       "url": "https://electronicartefacts.com/fr/knowledge/concepts/graph-modeling/",
-      "name": "Modelisation de graphe",
-      "description": "Définition, usages, limites et relations associés au concept : Modelisation de graphe.",
+      "name": "Modélisation de graphe",
+      "description": "Modélisation de graphe désigne la modélisation d'entités et de relations sous forme de graphe exploitable. La fiche en précise l'usage, les limites et les relations avec les projets, technologies et publications d'Electronic Artefacts.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
       "primaryImageOfPage": {
         "@type": "ImageObject",
         "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-search.jpg",
-        "description": "Modelisation de graphe"
+        "description": "Modélisation de graphe"
       },
       "breadcrumb": {
         "@id": "https://electronicartefacts.com/fr/knowledge/concepts/graph-modeling/#breadcrumb"
@@ -33,9 +33,9 @@
       "@type": "DefinedTerm",
       "@id": "https://electronicartefacts.com/fr/id/concept/graph-modeling/",
       "identifier": "ea:concept:graph-modeling-fr",
-      "name": "Modelisation de graphe",
-      "abstract": "Ce concept propose un cadre précis pour comprendre la modélisation d'entités et de relations sous forme de graphe exploitable et ses liens avec les projets, technologies et publications associés.",
-      "description": "Cette notion recouvre la modélisation d'entités et de relations sous forme de graphe exploitable.",
+      "name": "Modélisation de graphe",
+      "abstract": "Modélisation de graphe désigne la modélisation d'entités et de relations sous forme de graphe exploitable. La fiche en précise l'usage, les limites et les relations avec les projets, technologies et publications d'Electronic Artefacts.",
+      "description": "Modélisation de graphe désigne la modélisation d'entités et de relations sous forme de graphe exploitable.",
       "url": "https://electronicartefacts.com/fr/knowledge/concepts/graph-modeling/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/knowledge/concepts/graph-modeling/#webpage"
@@ -43,7 +43,7 @@
       "image": {
         "@type": "ImageObject",
         "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-search.jpg",
-        "description": "Modelisation de graphe"
+        "description": "Modélisation de graphe"
       },
       "author": [
         {
@@ -77,7 +77,7 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 56,
+      "wordCount": 79,
       "inDefinedTermSet": "https://electronicartefacts.com/knowledge/concepts/",
       "termCode": "graph-modeling"
     },
@@ -86,7 +86,7 @@
       "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/",
       "name": "Electronic Artefacts",
       "url": "https://electronicartefacts.com/",
-      "description": "Electronic Artefacts designs digital products, knowledge systems, cultural platforms and research-led experiences.",
+      "description": "Electronic Artefacts is an independent creative technology studio building client products, proprietary systems and research-led cultural work.",
       "keywords": [
         "creative technology",
         "knowledge graph",
@@ -140,7 +140,7 @@
       "@id": "https://electronicartefacts.com/#website",
       "url": "https://electronicartefacts.com/",
       "name": "Electronic Artefacts",
-      "description": "Electronic Artefacts designs digital products, knowledge systems, cultural platforms and research-led experiences.",
+      "description": "Electronic Artefacts is an independent creative technology studio building client products, proprietary systems and research-led cultural work.",
       "keywords": [
         "creative technology",
         "knowledge graph",
@@ -185,7 +185,7 @@
         {
           "@type": "ListItem",
           "position": 3,
-          "name": "Modelisation de graphe",
+          "name": "Modélisation de graphe",
           "item": "https://electronicartefacts.com/fr/knowledge/concepts/graph-modeling/"
         }
       ]

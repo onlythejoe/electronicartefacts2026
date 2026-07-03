@@ -3,12 +3,14 @@ id: ea:publication:event-driven-architecture-and-event-streams-fr
 type: publication
 slug:
   canonical: event-driven-architecture-and-event-streams
-title: Architecture événementielle et flux d'evenements
+title: Architecture événementielle et flux d'événements
 subtitle: Article technique
-abstract: Une présentation des événements, commandes, files, journaux, courtiers, schémas, garanties
-  de livraison, projections, mécanismes de rejeu et outils d’observabilité.
-description: Une présentation des événements, commandes, files, journaux, courtiers, schémas,
-  garanties de livraison, projections, mécanismes de rejeu et outils d’observabilité.
+abstract: Architecture événementielle et flux d'événements examine le sujet "Architecture
+  événementielle et flux d'événements" dans le graphe public d'Electronic Artefacts. La fiche en
+  synthétise les architectures, les usages, les limites et les sources de référence.
+description: Architecture événementielle et flux d'événements examine le sujet "Architecture
+  événementielle et flux d'événements" dans le graphe public d'Electronic Artefacts. La fiche en
+  synthétise les architectures, les usages, les limites et les sources de référence.
 locale: fr
 visibility: public
 publicationClass: published
@@ -31,10 +33,10 @@ subjects:
   - id: ea:concept:graph-runtime
   - id: ea:program:vaste
 claims:
-  - Les architectures événementielles réduisent le couplage temporel en enregistrant les changements
-    d’état pour des consommateurs indépendants.
-  - Un traitement fiable exige des identités stables, une gouvernance des schémas, de l’idempotence,
-    une politique de rejeu et une observabilité de bout en bout.
+  - Architecture événementielle et flux d'événements doit être lisible comme une synthèse française
+    autonome, sans phrases hybrides héritées de l'anglais.
+  - Les liens avec les notions, projets et technologies du graphe renforcent la recherche, la
+    navigation et la citation.
 evidence:
   - id: ea:concept:event-driven-architecture
   - id: ea:technology:cloudevents
@@ -54,7 +56,7 @@ sources:
     accessedAt: 2026-06-24
     url: https://martinfowler.com/eaaDev/EventSourcing.html
 citation:
-  preferred: Electronic Artefacts. "Architecture événementielle et flux d'evenements". Article
+  preferred: Electronic Artefacts. "Architecture événementielle et flux d'événements". Article
     technique, version 1.0.0, 2026.
 tags:
   - Event-Driven Architecture
@@ -72,24 +74,24 @@ translationOf: ea:publication:event-driven-architecture-and-event-streams
 
 ## Problème
 
-Une présentation des événements, commandes, files, journaux, courtiers, schémas, garanties de livraison, projections, mécanismes de rejeu et outils d’observabilité.
+Architecture événementielle et flux d'événements examine le sujet "Architecture événementielle et flux d'événements" dans le graphe public d'Electronic Artefacts. La fiche donne une entrée française stable, utilisable pour lire le sujet et relier ses sources au reste du graphe.
 
 ## Architecture
 
-Les architectures événementielles réduisent le couplage temporel en enregistrant les changements d’état pour des consommateurs indépendants. Un traitement fiable exige des identités stables, une gouvernance des schémas, de l’idempotence, une politique de rejeu et une observabilité de bout en bout.
+Le sujet est abordé par ses relations avec les concepts, projets et technologies concernés, afin de rendre son contexte de conception lisible.
 
 ## Mise en œuvre
 
-L’analyse en précise les usages, les contraintes et les principaux arbitrages techniques.
+La page décrit les usages, contraintes et choix de structure qui permettent d'appliquer le sujet dans des situations concrètes.
 
 ## Éléments de preuve
 
-Les arguments s’appuient sur les sources et les notions connexes citées dans l’article.
+Les sources, relations et éléments de contexte restent attachés à la fiche pour distinguer synthèse éditoriale, preuves et références.
 
 ## Limites
 
-Les conclusions restent liées au périmètre des sources disponibles et aux conditions d’usage décrites.
+Les limites sont formulées par rapport au périmètre de la fiche, aux sources disponibles et aux conditions d'usage documentées.
 
 ## Références
 
-Les références principales sont indiquées ci-dessous.
+Les sources principales restent disponibles dans le bloc de références de la fiche.

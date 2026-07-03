@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/publications/linked-data-and-public-knowledge-pages/#webpage",
       "url": "https://electronicartefacts.com/fr/publications/linked-data-and-public-knowledge-pages/",
       "name": "Données liées et pages publiques de connaissance",
-      "description": "Une introduction aux pages publiques de connaissance fondées sur des URL stables, JSON-LD, des identifiants compatibles avec RDF et des liens internes utiles aux lecteurs comme aux machines.",
+      "description": "Données liées et pages publiques de connaissance examine le sujet \"Données liées et pages publiques de connaissance\" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
@@ -35,8 +35,8 @@
       "identifier": "ea:publication:linked-data-and-public-knowledge-pages-fr",
       "name": "Données liées et pages publiques de connaissance",
       "headline": "Données liées et pages publiques de connaissance",
-      "abstract": "Une introduction aux pages publiques de connaissance fondées sur des URL stables, JSON-LD, des identifiants compatibles avec RDF et des liens internes utiles aux lecteurs comme aux machines.",
-      "description": "Une introduction aux pages publiques de connaissance fondées sur des URL stables, JSON-LD, des identifiants compatibles avec RDF et des liens internes utiles aux lecteurs comme aux machines.",
+      "abstract": "Données liées et pages publiques de connaissance examine le sujet \"Données liées et pages publiques de connaissance\" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.",
+      "description": "Données liées et pages publiques de connaissance examine le sujet \"Données liées et pages publiques de connaissance\" dans le graphe public d'Electronic Artefacts. La fiche en synthétise les architectures, les usages, les limites et les sources de référence.",
       "url": "https://electronicartefacts.com/fr/publications/linked-data-and-public-knowledge-pages/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/publications/linked-data-and-public-knowledge-pages/#webpage"
@@ -76,7 +76,7 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 115,
+      "wordCount": 145,
       "citation": [
         "Electronic Artefacts. \"Données liées et pages publiques de connaissance\". Article technique, version 1.0.0, 2026.",
         {
@@ -159,7 +159,7 @@
       "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/",
       "name": "Electronic Artefacts",
       "url": "https://electronicartefacts.com/",
-      "description": "Electronic Artefacts designs digital products, knowledge systems, cultural platforms and research-led experiences.",
+      "description": "Electronic Artefacts is an independent creative technology studio building client products, proprietary systems and research-led cultural work.",
       "keywords": [
         "creative technology",
         "knowledge graph",
@@ -213,7 +213,7 @@
       "@id": "https://electronicartefacts.com/#website",
       "url": "https://electronicartefacts.com/",
       "name": "Electronic Artefacts",
-      "description": "Electronic Artefacts designs digital products, knowledge systems, cultural platforms and research-led experiences.",
+      "description": "Electronic Artefacts is an independent creative technology studio building client products, proprietary systems and research-led cultural work.",
       "keywords": [
         "creative technology",
         "knowledge graph",

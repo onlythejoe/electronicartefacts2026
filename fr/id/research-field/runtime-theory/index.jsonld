@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/research/fields/runtime-theory/#webpage",
       "url": "https://electronicartefacts.com/fr/research/fields/runtime-theory/",
       "name": "Théorie du runtime",
-      "description": "Un champ de recherche sur les primitives d’exécution, l’identité, le contexte, les relations et la propagation des événements.",
+      "description": "Théorie du runtime cadre un champ de recherche suivi par Electronic Artefacts, en reliant questions ouvertes, prototypes, sources et hypothèses de travail.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-06-25",
@@ -34,8 +34,8 @@
       "@id": "https://electronicartefacts.com/fr/id/research-field/runtime-theory/",
       "identifier": "ea:researchField:runtime-theory-fr",
       "name": "Théorie du runtime",
-      "abstract": "La théorie du runtime étudie les identités, relations, contextes et événements minimaux nécessaires à l’exécution cohérente d’un système.",
-      "description": "La théorie du runtime étudie les identités, relations, contextes et événements minimaux nécessaires à l’exécution cohérente d’un système.",
+      "abstract": "Théorie du runtime cadre un champ de recherche suivi par Electronic Artefacts, en reliant questions ouvertes, prototypes, sources et hypothèses de travail.",
+      "description": "Théorie du runtime cadre un champ de recherche suivi par Electronic Artefacts, en reliant questions ouvertes, prototypes, sources et hypothèses de travail.",
       "url": "https://electronicartefacts.com/fr/research/fields/runtime-theory/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/research/fields/runtime-theory/#webpage"
@@ -76,14 +76,14 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 101
+      "wordCount": 102
     },
     {
       "@type": "Organization",
       "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/",
       "name": "Electronic Artefacts",
       "url": "https://electronicartefacts.com/",
-      "description": "Electronic Artefacts designs digital products, knowledge systems, cultural platforms and research-led experiences.",
+      "description": "Electronic Artefacts is an independent creative technology studio building client products, proprietary systems and research-led cultural work.",
       "keywords": [
         "creative technology",
         "knowledge graph",
@@ -137,7 +137,7 @@
       "@id": "https://electronicartefacts.com/#website",
       "url": "https://electronicartefacts.com/",
       "name": "Electronic Artefacts",
-      "description": "Electronic Artefacts designs digital products, knowledge systems, cultural platforms and research-led experiences.",
+      "description": "Electronic Artefacts is an independent creative technology studio building client products, proprietary systems and research-led cultural work.",
       "keywords": [
         "creative technology",
         "knowledge graph",
