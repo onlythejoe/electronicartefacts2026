@@ -6,10 +6,10 @@
       "@id": "https://electronicartefacts.com/fr/archive/collections/knowledge-hub-third-wave/#webpage",
       "url": "https://electronicartefacts.com/fr/archive/collections/knowledge-hub-third-wave/",
       "name": "Hub de connaissance, troisième vague",
-      "description": "Hub de connaissance, troisième vague rassemble des fiches liées par un même axe éditorial, afin de donner une progression lisible aux archives de connaissance d'Electronic Artefacts.",
+      "description": "Collection Electronic Artefacts sur l’IA durable, l’architecture des systèmes, les graphes de connaissance et les runtimes orientés domaine.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
-      "dateModified": "2026-06-25",
+      "dateModified": "2026-07-04",
       "primaryImageOfPage": {
         "@type": "ImageObject",
         "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-search.jpg",
@@ -34,8 +34,8 @@
       "@id": "https://electronicartefacts.com/fr/id/collection/knowledge-hub-third-wave/",
       "identifier": "ea:collection:knowledge-hub-third-wave-fr",
       "name": "Hub de connaissance, troisième vague",
-      "abstract": "Hub de connaissance, troisième vague rassemble des fiches liées par un même axe éditorial, afin de donner une progression lisible aux archives de connaissance d'Electronic Artefacts.",
-      "description": "Hub de connaissance, troisième vague rassemble des fiches liées par un même axe éditorial, afin de donner une progression lisible aux archives de connaissance d'Electronic Artefacts.",
+      "abstract": "Hub de connaissance, troisième vague relie LLM, agents IA, IA locale, RAG, systèmes multimodaux, pensée systémique, ontologies, graphes, événements et runtimes.",
+      "description": "Hub de connaissance, troisième vague relie LLM, agents IA, IA locale, RAG, systèmes multimodaux, pensée systémique, ontologies, graphes, événements et runtimes.",
       "url": "https://electronicartefacts.com/fr/archive/collections/knowledge-hub-third-wave/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/archive/collections/knowledge-hub-third-wave/#webpage"
@@ -69,7 +69,7 @@
       "inLanguage": "fr",
       "dateCreated": "2026-06-24",
       "datePublished": "2026-06-25",
-      "dateModified": "2026-06-25",
+      "dateModified": "2026-07-04",
       "publisher": {
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
@@ -77,7 +77,7 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 77
+      "wordCount": 195
     },
     {
       "@type": "Organization",

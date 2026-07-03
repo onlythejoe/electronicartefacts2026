@@ -9,7 +9,7 @@
       "description": "Un produit centré sur la connaissance où provenance, contribution, découverte et services professionnels émergent d’un même graphe historisé.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
-      "dateModified": "2026-06-25",
+      "dateModified": "2026-07-04",
       "primaryImageOfPage": {
         "@type": "ImageObject",
         "url": "https://electronicartefacts.com/assets/media/projects/vestiges/logo-vestiges.png",
@@ -35,8 +35,8 @@
       "@id": "https://electronicartefacts.com/fr/id/project/vestiges/",
       "identifier": "ea:project:vestiges-fr",
       "name": "Vestiges",
-      "abstract": "Vestiges est la plateforme principale fondée sur VASTE pour cartographier, préserver et activer les savoir-faire vivants à travers les personnes, pratiques, matériaux, lieux et institutions.",
-      "description": "Vestiges est la plateforme principale fondée sur VASTE pour cartographier, préserver et activer les savoir-faire vivants à travers les personnes, pratiques, matériaux, lieux et institutions.",
+      "abstract": "Vestiges est la plateforme VASTE pour cartographier, préserver et activer les savoir-faire vivants entre personnes, pratiques, matériaux et lieux.",
+      "description": "Vestiges est la plateforme VASTE pour cartographier, préserver et activer les savoir-faire vivants entre personnes, pratiques, matériaux et lieux.",
       "url": "https://electronicartefacts.com/fr/projects/vestiges/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/projects/vestiges/#webpage"
@@ -71,7 +71,7 @@
       "inLanguage": "fr",
       "dateCreated": "2025-01-01",
       "datePublished": "2026-06-25",
-      "dateModified": "2026-06-25",
+      "dateModified": "2026-07-04",
       "publisher": {
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
@@ -79,7 +79,7 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 543,
+      "wordCount": 544,
       "sameAs": [
         "https://www.instagram.com/vestiges.world/"
       ]

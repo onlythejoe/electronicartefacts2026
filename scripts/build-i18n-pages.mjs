@@ -14,7 +14,7 @@ const pages = [
     frenchRoute: "/fr/",
     title: "Electronic Artefacts | Studio de technologies créatives",
     description: "Studio indépendant de technologies créatives pour produits numériques, systèmes de connaissance, logiciels propriétaires et création culturelle issue de la recherche.",
-    h1: "Rendre les systèmes complexes lisibles.",
+    h1: "Rendre les systèmes numériques complexes lisibles.",
   },
   {
     source: "work.html",
@@ -77,7 +77,7 @@ const pages = [
     frenchRoute: "/fr/archive.html",
     title: "Archives | Electronic Artefacts",
     description: "Parcourez les publications, prototypes, documents et traces de recherche reliés aux décisions et aux systèmes qui les ont produits.",
-    h1: "Le travail continue dans les traces qu’il laisse.",
+    h1: "Archives de publications, prototypes et traces de recherche.",
   },
   {
     source: "mentions-legales.html",

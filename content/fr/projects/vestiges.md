@@ -6,7 +6,7 @@ slug:
   canonical: vestiges
 title: Vestiges
 subtitle: Infrastructure de connaissance vivante
-abstract: Vestiges est la plateforme principale fondée sur VASTE pour cartographier, préserver et activer les savoir-faire vivants à travers les personnes, pratiques, matériaux, lieux et institutions.
+abstract: Vestiges est la plateforme VASTE pour cartographier, préserver et activer les savoir-faire vivants entre personnes, pratiques, matériaux et lieux.
 description: Un produit centré sur la connaissance où provenance, contribution, découverte et services professionnels émergent d’un même graphe historisé.
 locale: fr
 visibility: public
@@ -18,7 +18,7 @@ version:
   version: 1.1.0
   createdAt: "2025-01-01"
   publishedAt: "2026-06-25"
-  modifiedAt: "2026-06-25"
+  modifiedAt: "2026-07-04"
   changeSummary: Première traduction française complète de la fiche produit.
 authors:
   - id: ea:organization:electronic-artefacts
@@ -37,7 +37,7 @@ approach:
   - Modéliser personnes, organisations, techniques, matériaux, outils, œuvres, lieux et documents comme des identités durables.
   - Rendre l’enseignement, la fabrication, l’usage, la restauration, la fourniture et la certification explicites, navigables et historisés.
   - Gouverner la contribution par des rôles attribuables, des états de révision et des permissions contextuelles.
-  - Utiliser VASTE pour coordonner identité graphique, contexte, événements et projection publique.
+  - Utiliser VASTE pour coordonner identité de graphe, contexte, événements et projection publique.
 outputs:
   - id: ea:project:vestiges
 outcomes:
@@ -81,7 +81,7 @@ disciplines:
   - Savoir-faire
   - Design
 developmentFocus:
-  - Identité graphique stable
+  - Identité de graphe stable
   - Provenance et histoire
   - Permissions contextuelles
   - Flux de contribution
@@ -129,7 +129,7 @@ Une connaissance fiable peut soutenir des espaces professionnels, la mise en rel
 
 ## Fondation VASTE
 
-VASTE fournit le socle d’exécution pour l’identité, le contexte, les permissions, les événements et l’exécution graphique. Il permet à Vestiges de distinguer connaissance publique et contexte de travail privé, de coordonner les états de contribution et de préserver l’histoire des entités et relations à mesure que la plateforme évolue.
+VASTE fournit le socle d’exécution pour l’identité, le contexte, les permissions, les événements et l’exécution sur graphe. Il permet à Vestiges de distinguer connaissance publique et contexte de travail privé, de coordonner les états de contribution et de préserver l’histoire des entités et relations à mesure que la plateforme évolue.
 
 ## Preuves actuelles
 

@@ -5,10 +5,8 @@ slug:
   canonical: runtime-theory
 title: Théorie du runtime
 subtitle: Champ de recherche
-abstract: Théorie du runtime cadre un champ de recherche suivi par Electronic Artefacts, en reliant
-  questions ouvertes, prototypes, sources et hypothèses de travail.
-description: Théorie du runtime cadre un champ de recherche suivi par Electronic Artefacts, en
-  reliant questions ouvertes, prototypes, sources et hypothèses de travail.
+abstract: Runtime Theory étudie les identités, relations, contextes et primitives d’événement nécessaires pour qu’un système exécutable reste cohérent.
+description: Champ de recherche actif d’Electronic Artefacts reliant les premiers travaux VOID, VASTE et la définition d’un runtime de graphe.
 locale: fr
 visibility: public
 publicationClass: canonical
@@ -19,29 +17,29 @@ version:
   version: 1.0.0
   createdAt: 2024-01-01
   publishedAt: 2026-06-25
-  modifiedAt: 2026-06-25
+  modifiedAt: 2026-07-04
 authors:
   - id: ea:organization:electronic-artefacts
 publisher: ea:organization:electronic-artefacts
 questions:
   - id: minimum-runtime
     status: active
-    question: Comment formaliser Théorie du runtime pour produire des interfaces, des preuves et des
-      relations exploitables ?
+    question: Quel minimum est nécessaire pour qu’un univers d’entités exécute des événements de manière cohérente ?
   - id: contextual-execution
     status: active
-    question: Quels usages de Théorie du runtime doivent rester ouverts à l'experimentation et à la
-      vérification ?
+    question: Comment l’identité et le contexte doivent-ils contraindre l’exécution et la propagation des événements ?
 scope:
-  - questions de recherche
-  - hypothèses de conception
-  - prototypes et preuves
-  - relations avec le graphe public
+  - Primitives d’exécution
+  - Événements
+  - Identité
+  - Contexte
+  - Propagation dans le graphe
 findings:
-  - Théorie du runtime demande une articulation claire entre vocabulaire, preuve et expérience
-    utilisateur.
+  - L’identité et le contexte doivent être explicites lorsqu’ils déterminent l’autorité d’exécution.
+  - Les relations typées d’un graphe peuvent devenir des contraintes opérationnelles, pas seulement des liens descriptifs.
 openQuestions:
-  - Quels critères permettent d'evaluer Théorie du runtime dans des situations concrètes ?
+  - Comment borner le contexte d’exécution entre services distribués ?
+  - Quelles opérations de graphe restent lisibles à grande échelle ?
 tags:
   - Runtime
   - Theory
@@ -49,25 +47,32 @@ tags:
   - Events
   - Primitives
 disciplines:
-  - Technology
-  - Research
-  - Systems
+  - Technologie
+  - Recherche
+  - Systèmes
 translationOf: ea:researchField:runtime-theory
 ---
 
-## Champ
+## Question de recherche
 
-Théorie du runtime décrit un espace de recherche actif pour Electronic Artefacts. Il relie le sujet "Théorie du runtime" dans le graphe public d'Electronic Artefacts à des questions, prototypes et méthodes qui peuvent évoluer dans le temps.
+Runtime Theory demande ce qui est minimalement nécessaire pour qu’un univers d’entités exécute des événements de manière cohérente. Le champ étudie les primitives d’exécution, l’identité, le contexte, les relations, la propagation des événements et les limites qui rendent un système compréhensible.
 
-## Questions
+## Origine
 
-- Comment rendre les hypothèses suffisamment explicites pour être partagées, testées et reliées au graphe ?
-- Quelles preuves, interfaces où architectures permettent de transformer ce champ en expérience utilisable ?
+Le champ prolonge des expérimentations logicielles associées à VOID, puis à ARCA. Ces travaux ont déplacé la recherche d’un moteur borné vers des questions plus générales sur les systèmes d’information et les environnements d’exécution.
 
-## Usage
+## Position actuelle
 
-Cette fiche donne une entrée française au champ de recherche et conserve ses liens avec les projets, publications et technologies associés.
+VASTE constitue aujourd’hui le principal contexte d’implémentation de Runtime Theory. Le programme traite les entités de graphe, les relations typées, l’identité et l’exécution contextuelle comme les parties d’un même modèle de runtime.
 
-## Références
+## Méthode de recherche
 
-Les sources associées sont conservées dans la fiche canonique du graphe.
+Le champ avance par modèles d’architecture, prototypes, notes d’implémentation, observations de performance et projets appliqués. Les concepts sont conservés lorsqu’ils peuvent être formulés précisément et inspectés par des preuves.
+
+## Applications
+
+Vestiges applique Runtime Theory à une plateforme de connaissance culturelle. Sa thèse publique dépend d’entités adressables et de relations historisées, tandis que son modèle opérationnel exige permissions, contexte de contribution et propagation contrôlée.
+
+## Questions ouvertes
+
+Les travaux en cours portent sur le bornage du contexte entre services distribués, la lisibilité des grands systèmes de graphe et la relation entre modèles expressifs et exécution prévisible.

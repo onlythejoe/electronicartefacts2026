@@ -4417,8 +4417,8 @@
     },
     "title": "Fondations du hub de connaissance",
     "subtitle": "Collection éditoriale",
-    "abstract": "Fondations du hub de connaissance rassemble des fiches liées par un même axe éditorial, afin de donner une progression lisible aux archives de connaissance d'Electronic Artefacts.",
-    "description": "Fondations du hub de connaissance rassemble des fiches liées par un même axe éditorial, afin de donner une progression lisible aux archives de connaissance d'Electronic Artefacts.",
+    "abstract": "Fondations du hub de connaissance rassemble les fiches sur graphes, identité sémantique, préservation, systèmes génératifs, signal audio et publication structurée.",
+    "description": "Collection fondatrice du Knowledge Hub reliant concepts, technologies, programmes, projets et publications d’Electronic Artefacts.",
     "locale": "fr",
     "visibility": "public",
     "publicationClass": "published",
@@ -4429,7 +4429,7 @@
       "version": "1.0.0",
       "createdAt": "2026-06-23",
       "publishedAt": "2026-06-25",
-      "modifiedAt": "2026-06-25"
+      "modifiedAt": "2026-07-04"
     },
     "authors": [
       {
@@ -4442,7 +4442,7 @@
       "collection éditoriale",
       "fondations",
       "bibliothèque de recherche",
-      "Semantic Publishing"
+      "Publication sémantique"
     ],
     "disciplines": [
       "systèmes de connaissance",
@@ -4451,7 +4451,7 @@
       "ingénierie audio",
       "art numérique"
     ],
-    "thesis": "Fondations du hub de connaissance propose une lecture organisee de 20 fiches reliées par un même axe editorial.",
+    "thesis": "Le Knowledge Hub doit commencer par des fiches durables qui expliquent la publication par graphe, l’identité sémantique, la préservation, les systèmes génératifs et l’interprétation du signal audio.",
     "curator": [
       {
         "id": "ea:organization:electronic-artefacts"
@@ -4519,19 +4519,20 @@
         "id": "ea:project:palimpsests"
       }
     ],
-    "selectionNote": "La sélection privilégie des contenus stables, reliables et utiles pour parcourir le hub de connaissance en français.",
-    "bodyHtml": "<h2 id=\"intention\">Intention</h2>\n<p>Fondations du hub de connaissance rassemble des fiches liées par un même axe éditorial.</p>\n<h2 id=\"selection\">Sélection</h2>\n<p>La collection organise les contenus par proximité éditoriale, par utilité de navigation et par potentiel de liens internes. Elle permet de parcourir le hub de connaissance sans perdre la cohérence du sujet.</p>\n<h2 id=\"usage\">Usage</h2>\n<p>Cette entrée sert de repère pour explorer plusieurs publications où notions depuis une même page française.</p>\n<h2 id=\"references\">Références</h2>\n<p>Les sources associées sont conservées dans la fiche canonique du graphe.</p>\n",
+    "selectionNote": "La sélection privilégie des références stables, interconnectées et réutilisables pour la recherche, le SEO, la récupération par IA et l’expansion interne du graphe.",
+    "bodyHtml": "<h2 id=\"these\">Thèse</h2>\n<p>Fondations du hub de connaissance constitue la première collection éditoriale du Knowledge Hub étendu d’Electronic Artefacts. Elle regroupe les fiches qui expliquent pourquoi le site devient une bibliothèque de recherche plutôt qu’un blog conventionnel.</p>\n<p>La collection commence par l’infrastructure de graphe, l’identité sémantique, l’exécution contextuelle, la préservation, les systèmes génératifs et l’archéologie du signal, car ces sujets soutiennent de nombreux contenus futurs. Ils relient logiciel, audio, archives, design, culture et recherche assistée par IA sans enfermer chaque sujet dans une discipline unique.</p>\n<h2 id=\"selection\">Sélection</h2>\n<p>La collection retient des fiches durables, réutilisables et relationnelles. Chaque membre doit aider les lecteurs à comprendre d’autres parties du site. Une bonne fiche fondatrice ne répond pas seulement à une requête : elle devient un connecteur entre projets, programmes et publications.</p>\n<h2 id=\"role-editorial\">Rôle éditorial</h2>\n<p>Cette collection sert de point de départ aux vagues de contenu suivantes. De nouveaux articles peuvent la rejoindre lorsqu’ils renforcent le graphe fondateur au lieu de dupliquer des fiches existantes.</p>\n<h2 id=\"membres-actuels\">Membres actuels</h2>\n<p>La première vague comprend six publications, dix concepts, deux fiches technologiques et deux nœuds de pratique Electronic Artefacts. Ensemble, ils forment la première ossature publique du Knowledge Hub.</p>\n<h2 id=\"expansion-future\">Expansion future</h2>\n<p>Les ajouts futurs devraient inclure méthodes, frameworks, fiches d’archive, guides de sources et études de cas. La priorité n’est pas le volume seul : chaque ajout doit améliorer la navigation, la qualité des sources, la clarté sémantique ou les liens internes.</p>\n",
     "headings": [
-      "Intention",
+      "Thèse",
       "Sélection",
-      "Usage",
-      "Références"
+      "Rôle éditorial",
+      "Membres actuels",
+      "Expansion future"
     ],
     "headingItems": [
       {
         "level": 2,
-        "title": "Intention",
-        "id": "intention"
+        "title": "Thèse",
+        "id": "these"
       },
       {
         "level": 2,
@@ -4540,13 +4541,18 @@
       },
       {
         "level": 2,
-        "title": "Usage",
-        "id": "usage"
+        "title": "Rôle éditorial",
+        "id": "role-editorial"
       },
       {
         "level": 2,
-        "title": "Références",
-        "id": "references"
+        "title": "Membres actuels",
+        "id": "membres-actuels"
+      },
+      {
+        "level": 2,
+        "title": "Expansion future",
+        "id": "expansion-future"
       }
     ]
   },
@@ -4559,8 +4565,8 @@
     },
     "title": "Hub de connaissance, quatrième vague",
     "subtitle": "Protocoles d'IA, provenance, gouvernance et interfaces culturelles",
-    "abstract": "Hub de connaissance, quatrième vague rassemble des fiches liées par un même axe éditorial, afin de donner une progression lisible aux archives de connaissance d'Electronic Artefacts.",
-    "description": "Hub de connaissance, quatrième vague rassemble des fiches liées par un même axe éditorial, afin de donner une progression lisible aux archives de connaissance d'Electronic Artefacts.",
+    "abstract": "Hub de connaissance, quatrième vague couvre MCP, C2PA, WebNN, IIIF, OpenTelemetry, recherche IA, gouvernance, injection de prompt et identité vérifiable.",
+    "description": "Collection sur les protocoles d’outillage IA, provenance des médias, inférence locale, archives, observabilité des agents et SEO de graphes.",
     "locale": "fr",
     "visibility": "public",
     "publicationClass": "published",
@@ -4571,7 +4577,7 @@
       "version": "1.0.0",
       "createdAt": "2026-06-24",
       "publishedAt": "2026-06-25",
-      "modifiedAt": "2026-06-25"
+      "modifiedAt": "2026-07-04"
     },
     "authors": [
       {
@@ -4590,11 +4596,11 @@
     "disciplines": [
       "intelligence artificielle",
       "systèmes de connaissance",
-      "Digital Préservation",
+      "préservation numérique",
       "architecture logicielle",
       "infrastructure culturelle"
     ],
-    "thesis": "Hub de connaissance, quatrième vague propose une lecture organisee de 19 fiches reliées par un même axe editorial.",
+    "thesis": "Les systèmes IA et culturels durables ont besoin de protocoles pour le contexte, la provenance, l’exécution locale, la présentation d’objets, la responsabilité opérationnelle, la gouvernance et la confiance lisible par machine.",
     "curator": [
       {
         "id": "ea:organization:electronic-artefacts"
@@ -4659,19 +4665,21 @@
         "id": "ea:concept:contextual-execution"
       }
     ],
-    "selectionNote": "La sélection privilégie des contenus stables, reliables et utiles pour parcourir le hub de connaissance en français.",
-    "bodyHtml": "<h2 id=\"intention\">Intention</h2>\n<p>Hub de connaissance, quatrième vague rassemble des fiches liées par un même axe éditorial.</p>\n<h2 id=\"selection\">Sélection</h2>\n<p>La collection organise les contenus par proximité éditoriale, par utilité de navigation et par potentiel de liens internes. Elle permet de parcourir le hub de connaissance sans perdre la cohérence du sujet.</p>\n<h2 id=\"usage\">Usage</h2>\n<p>Cette entrée sert de repère pour explorer plusieurs publications où notions depuis une même page française.</p>\n<h2 id=\"references\">Références</h2>\n<p>Les sources associées sont conservées dans la fiche canonique du graphe.</p>\n",
+    "selectionNote": "La collection privilégie des standards et protocoles capables de relier les thèmes existants d’Electronic Artefacts à des surfaces d’implémentation concrètes.",
+    "bodyHtml": "<h2 id=\"these\">Thèse</h2>\n<p>La couche suivante de l’IA et de l’infrastructure culturelle ne dépend pas seulement de la puissance des modèles. Elle dépend aussi de la conception des protocoles : accès au contexte, usage d’outils, provenance des médias, inférence locale, présentation d’objets, responsabilité opérationnelle, gouvernance et confiance lisible par machine.</p>\n<h2 id=\"selection\">Sélection</h2>\n<p>Cette collection prolonge les fondations IA et runtime en ajoutant des standards et pratiques tournés vers l’implémentation. MCP relie outils et contexte. C2PA relie médias et provenance. WebNN apporte l’inférence locale au navigateur. IIIF structure les objets culturels composés. OpenTelemetry rend le comportement des runtimes observable. Recherche IA, gouvernance, limites d’injection de prompt et identifiants vérifiables relient ces protocoles à la confiance publique.</p>\n<h2 id=\"role-editorial\">Rôle éditorial</h2>\n<p>La vague évite les classements de produits. Elle se concentre sur des concepts et standards stables, capables de soutenir les futurs systèmes Electronic Artefacts, notamment VASTE, Vestiges, ORETH, Palimpsests et le Knowledge Hub.</p>\n<h2 id=\"membres-actuels\">Membres actuels</h2>\n<p>La collection comprend neuf publications longues et cinq fiches technologiques canoniques.</p>\n<h2 id=\"chemins-internes\">Chemins internes</h2>\n<p>Les lecteurs IA peuvent passer des agents à MCP, à l’observabilité et aux frontières d’injection de prompt. Les lecteurs orientés archives peuvent passer de la provenance à C2PA, IIIF et aux identifiants vérifiables. Les lecteurs web peuvent relier l’IA multimodale à WebNN, au design d’interaction local et au SEO de graphes de connaissance.</p>\n<h2 id=\"expansion-future\">Expansion future</h2>\n<p>Les prochains articles pourront ajouter composants WebAssembly, espaces de données Solid, entités sources, graphes de revendications, visualiseurs d’archives dans le navigateur et guides d’implémentation pour le contexte européen.</p>\n",
     "headings": [
-      "Intention",
+      "Thèse",
       "Sélection",
-      "Usage",
-      "Références"
+      "Rôle éditorial",
+      "Membres actuels",
+      "Chemins internes",
+      "Expansion future"
     ],
     "headingItems": [
       {
         "level": 2,
-        "title": "Intention",
-        "id": "intention"
+        "title": "Thèse",
+        "id": "these"
       },
       {
         "level": 2,
@@ -4680,13 +4688,23 @@
       },
       {
         "level": 2,
-        "title": "Usage",
-        "id": "usage"
+        "title": "Rôle éditorial",
+        "id": "role-editorial"
       },
       {
         "level": 2,
-        "title": "Références",
-        "id": "references"
+        "title": "Membres actuels",
+        "id": "membres-actuels"
+      },
+      {
+        "level": 2,
+        "title": "Chemins internes",
+        "id": "chemins-internes"
+      },
+      {
+        "level": 2,
+        "title": "Expansion future",
+        "id": "expansion-future"
       }
     ]
   },
@@ -4699,8 +4717,8 @@
     },
     "title": "Hub de connaissance, deuxième vague",
     "subtitle": "Collection éditoriale",
-    "abstract": "Hub de connaissance, deuxième vague rassemble des fiches liées par un même axe éditorial, afin de donner une progression lisible aux archives de connaissance d'Electronic Artefacts.",
-    "description": "Hub de connaissance, deuxième vague rassemble des fiches liées par un même axe éditorial, afin de donner une progression lisible aux archives de connaissance d'Electronic Artefacts.",
+    "abstract": "Hub de connaissance, deuxième vague relie hypertexte, open source, métadonnées, audio web, design d’interface, typographie, IHM et IA générative.",
+    "description": "Collection éditoriale de la deuxième vague du Knowledge Hub, conçue pour relier recherche culturelle, technologies web, design et intelligence artificielle.",
     "locale": "fr",
     "visibility": "public",
     "publicationClass": "published",
@@ -4711,7 +4729,7 @@
       "version": "1.0.0",
       "createdAt": "2026-06-24",
       "publishedAt": "2026-06-25",
-      "modifiedAt": "2026-06-25"
+      "modifiedAt": "2026-07-04"
     },
     "authors": [
       {
@@ -4732,7 +4750,7 @@
       "design",
       "intelligence artificielle"
     ],
-    "thesis": "Hub de connaissance, deuxième vague propose une lecture organisee de 30 fiches reliées par un même axe editorial.",
+    "thesis": "La deuxième vague étend les fondations du graphe vers des champs culturels et techniques durables, utiles pour la recherche, le référencement et la découverte d’Electronic Artefacts.",
     "curator": [
       {
         "id": "ea:organization:electronic-artefacts"
@@ -4830,19 +4848,20 @@
         "id": "ea:technology:activitypub"
       }
     ],
-    "selectionNote": "La sélection privilégie des contenus stables, reliables et utiles pour parcourir le hub de connaissance en français.",
-    "bodyHtml": "<h2 id=\"intention\">Intention</h2>\n<p>Hub de connaissance, deuxième vague rassemble des fiches liées par un même axe éditorial.</p>\n<h2 id=\"selection\">Sélection</h2>\n<p>La collection organise les contenus par proximité éditoriale, par utilité de navigation et par potentiel de liens internes. Elle permet de parcourir le hub de connaissance sans perdre la cohérence du sujet.</p>\n<h2 id=\"usage\">Usage</h2>\n<p>Cette entrée sert de repère pour explorer plusieurs publications où notions depuis une même page française.</p>\n<h2 id=\"references\">Références</h2>\n<p>Les sources associées sont conservées dans la fiche canonique du graphe.</p>\n",
+    "selectionNote": "Cette vague privilégie les sujets evergreen à forte intention de recherche, riches en liens internes et durables pour les technologies créatives, les archives et les systèmes de connaissance.",
+    "bodyHtml": "<h2 id=\"these\">Thèse</h2>\n<p>Hub de connaissance, deuxième vague prolonge la collection fondatrice avec des sujets assez larges pour rester utiles dans le temps et assez précis pour soutenir la découverte organique.</p>\n<h2 id=\"selection\">Sélection</h2>\n<p>La collection réunit des articles et entités capables de relier plusieurs disciplines : hypertexte, open source, métadonnées, audio web, pédagogie du creative coding, graphismes procéduraux, motion design, typographie, IHM, musique algorithmique et IA générative.</p>\n<h2 id=\"role-editorial\">Rôle éditorial</h2>\n<p>Cette collection fonctionne comme un parcours d’entrée pour les lecteurs arrivés par la recherche. Elle les aide ensuite à découvrir les projets, programmes et champs de recherche d’Electronic Artefacts par des liens contextuels.</p>\n<h2 id=\"membres-actuels\">Membres actuels</h2>\n<p>La vague comprend douze publications, treize concepts et cinq fiches technologiques.</p>\n<h2 id=\"expansion-future\">Expansion future</h2>\n<p>Les vagues suivantes devraient ajouter méthodes, outils, jeux de données, fiches d’archive et études de cas qui réutilisent ces entités plutôt que de créer des catégories redondantes.</p>\n",
     "headings": [
-      "Intention",
+      "Thèse",
       "Sélection",
-      "Usage",
-      "Références"
+      "Rôle éditorial",
+      "Membres actuels",
+      "Expansion future"
     ],
     "headingItems": [
       {
         "level": 2,
-        "title": "Intention",
-        "id": "intention"
+        "title": "Thèse",
+        "id": "these"
       },
       {
         "level": 2,
@@ -4851,13 +4870,18 @@
       },
       {
         "level": 2,
-        "title": "Usage",
-        "id": "usage"
+        "title": "Rôle éditorial",
+        "id": "role-editorial"
       },
       {
         "level": 2,
-        "title": "Références",
-        "id": "references"
+        "title": "Membres actuels",
+        "id": "membres-actuels"
+      },
+      {
+        "level": 2,
+        "title": "Expansion future",
+        "id": "expansion-future"
       }
     ]
   },
@@ -4870,8 +4894,8 @@
     },
     "title": "Hub de connaissance, troisième vague",
     "subtitle": "IA, systèmes et calcul sur graphe",
-    "abstract": "Hub de connaissance, troisième vague rassemble des fiches liées par un même axe éditorial, afin de donner une progression lisible aux archives de connaissance d'Electronic Artefacts.",
-    "description": "Hub de connaissance, troisième vague rassemble des fiches liées par un même axe éditorial, afin de donner une progression lisible aux archives de connaissance d'Electronic Artefacts.",
+    "abstract": "Hub de connaissance, troisième vague relie LLM, agents IA, IA locale, RAG, systèmes multimodaux, pensée systémique, ontologies, graphes, événements et runtimes.",
+    "description": "Collection Electronic Artefacts sur l’IA durable, l’architecture des systèmes, les graphes de connaissance et les runtimes orientés domaine.",
     "locale": "fr",
     "visibility": "public",
     "publicationClass": "published",
@@ -4882,7 +4906,7 @@
       "version": "1.0.0",
       "createdAt": "2026-06-24",
       "publishedAt": "2026-06-25",
-      "modifiedAt": "2026-06-25"
+      "modifiedAt": "2026-07-04"
     },
     "authors": [
       {
@@ -4904,7 +4928,7 @@
       "architecture logicielle",
       "technologies créatives"
     ],
-    "thesis": "Hub de connaissance, troisième vague propose une lecture organisee de 30 fiches reliées par un même axe editorial.",
+    "thesis": "Une connaissance IA durable exige architecture système, ancrage dans les sources, identité sémantique et gouvernance humaine ; les runtimes de graphe relient ces sujets aux programmes et projets d’Electronic Artefacts.",
     "curator": [
       {
         "id": "ea:organization:electronic-artefacts"
@@ -5002,19 +5026,21 @@
         "id": "ea:technology:skos"
       }
     ],
-    "selectionNote": "La sélection privilégie des contenus stables, reliables et utiles pour parcourir le hub de connaissance en français.",
-    "bodyHtml": "<h2 id=\"intention\">Intention</h2>\n<p>Hub de connaissance, troisième vague rassemble des fiches liées par un même axe éditorial.</p>\n<h2 id=\"selection\">Sélection</h2>\n<p>La collection organise les contenus par proximité éditoriale, par utilité de navigation et par potentiel de liens internes. Elle permet de parcourir le hub de connaissance sans perdre la cohérence du sujet.</p>\n<h2 id=\"usage\">Usage</h2>\n<p>Cette entrée sert de repère pour explorer plusieurs publications où notions depuis une même page française.</p>\n<h2 id=\"references\">Références</h2>\n<p>Les sources associées sont conservées dans la fiche canonique du graphe.</p>\n",
+    "selectionNote": "La sélection privilégie des questions evergreen à forte demande de recherche et à liens structurels forts avec VASTE, Vestiges, ORETH, Palimpsests et le Knowledge Hub public.",
+    "bodyHtml": "<h2 id=\"these\">Thèse</h2>\n<p>Les systèmes d’IA deviennent durables lorsque les modèles sont traités comme des composants à l’intérieur d’architectures de connaissance, d’identité, de permissions, d’événements, d’évaluation et de jugement humain.</p>\n<h2 id=\"selection\">Sélection</h2>\n<p>La collection commence par des fondations IA à forte demande, puis les relie à la pensée systémique, aux ontologies, à la modélisation de graphes et à l’infrastructure de runtime. Elle crée des chemins de lecture entre questions générales, recherche Electronic Artefacts et contextes d’implémentation.</p>\n<h2 id=\"role-editorial\">Rôle éditorial</h2>\n<p>Les articles évitent l’actualité de versions et les classements de produits. Ils expliquent des mécanismes, compromis et vocabulaires stables, destinés à rester utiles même lorsque les modèles et plateformes évoluent.</p>\n<h2 id=\"membres-actuels\">Membres actuels</h2>\n<p>La collection comprend douze publications longues, douze concepts canoniques et six fiches technologiques.</p>\n<h2 id=\"chemins-internes\">Chemins internes</h2>\n<p>Les lecteurs venus des LLM peuvent poursuivre vers les agents, l’inférence locale, le RAG et la multimodalité. Les lecteurs orientés systèmes peuvent aller vers les graphes, événements, Redis, frontières de services et systèmes d’exploitation de domaine. VASTE, Vestiges, ORETH et Palimpsests fournissent les contextes appliqués.</p>\n<h2 id=\"expansion-future\">Expansion future</h2>\n<p>La prochaine vague devrait couvrir technologies créatives, installations interactives, synthèse sonore, analyse audio temps réel, design computationnel, worldbuilding, direction visuelle et publication web générée par graphe.</p>\n",
     "headings": [
-      "Intention",
+      "Thèse",
       "Sélection",
-      "Usage",
-      "Références"
+      "Rôle éditorial",
+      "Membres actuels",
+      "Chemins internes",
+      "Expansion future"
     ],
     "headingItems": [
       {
         "level": 2,
-        "title": "Intention",
-        "id": "intention"
+        "title": "Thèse",
+        "id": "these"
       },
       {
         "level": 2,
@@ -5023,13 +5049,23 @@
       },
       {
         "level": 2,
-        "title": "Usage",
-        "id": "usage"
+        "title": "Rôle éditorial",
+        "id": "role-editorial"
       },
       {
         "level": 2,
-        "title": "Références",
-        "id": "references"
+        "title": "Membres actuels",
+        "id": "membres-actuels"
+      },
+      {
+        "level": 2,
+        "title": "Chemins internes",
+        "id": "chemins-internes"
+      },
+      {
+        "level": 2,
+        "title": "Expansion future",
+        "id": "expansion-future"
       }
     ]
   },
@@ -8580,9 +8616,9 @@
       "canonical": "oreth"
     },
     "title": "ORETH",
-    "subtitle": "Recherche et intelligence audio",
-    "abstract": "ORETH est un programme expérimental consacré à l’observation, l’analyse et la transformation de phénomènes sonores complexes par le traitement du signal, l’apprentissage automatique et la création musicale.",
-    "description": "Un programme de recherche audio reliant analyse fréquentielle, détection d’événements, reconnaissance de motifs, écoute machine et production artistique.",
+    "subtitle": "Programme d’intelligence audio",
+    "abstract": "ORETH relie intelligence audio, recherche artistique, signal, motifs, mémoire, écoute machine et production musicale expérimentale.",
+    "description": "Fiche publique du programme ORETH, à la fois système de recherche audio et couche technico-culturelle reliée à Palimpsests.",
     "locale": "fr",
     "visibility": "public",
     "publicationClass": "canonical",
@@ -8593,7 +8629,7 @@
       "version": "1.0.0",
       "createdAt": "2024-01-01",
       "publishedAt": "2026-06-25",
-      "modifiedAt": "2026-06-25"
+      "modifiedAt": "2026-07-04"
     },
     "authors": [
       {
@@ -8602,53 +8638,56 @@
     ],
     "publisher": "ea:organization:electronic-artefacts",
     "tags": [
-      "Audio",
+      "Intelligence audio",
+      "Écoute machine",
       "Traitement du signal",
-      "Apprentissage automatique",
-      "Musique",
-      "Recherche"
+      "Design sonore",
+      "Palimpsests",
+      "Musique expérimentale"
     ],
     "disciplines": [
-      "Technologie",
       "Musique",
-      "Recherche"
+      "Technologie",
+      "Recherche",
+      "Ingénierie audio",
+      "Art numérique"
     ],
-    "mandate": "Développer un environnement de recherche pour observer, analyser et transformer des phénomènes sonores complexes tout en maintenant une continuité avec la création musicale.",
+    "mandate": "Développer un programme de recherche audio reliant écoute machine, analyse du signal, reconnaissance de motifs et production artistique.",
     "domain": "Audio Intelligence",
     "capabilities": [
-      "Analyse fréquentielle",
-      "Détection d’événements",
-      "Reconnaissance de motifs",
-      "Visualisation audio",
-      "Expérimentation d’apprentissage automatique",
-      "Composition et transformation sonore"
+      "Observation fréquentielle",
+      "Détection d’événements et de transitoires",
+      "Reconnaissance de motifs dans les matériaux sonores",
+      "Recherche en écoute machine",
+      "Production musicale expérimentale",
+      "Interprétation d’archives audio",
+      "Soutien à la recherche Palimpsests"
     ],
     "architecture": [
       "Couche d’acquisition et de préparation audio",
-      "Couche d’analyse du signal",
-      "Couche de détection et de classification",
-      "Couche de visualisation et d’interaction",
-      "Couche de création et de publication"
+      "Couche d’analyse et d’extraction de caractéristiques",
+      "Couche d’interprétation des motifs",
+      "Couche de production artistique et d’archive"
     ],
     "lifecycle": [
       "Fondation expérimentale en 2024",
       "Prototypes Python et signal en 2025",
-      "Consolidation éditoriale et artistique en 2026"
+      "Couche de publication liée à Palimpsests en 2026"
     ],
     "maintainers": [
       {
         "id": "ea:organization:electronic-artefacts"
       }
     ],
-    "bodyHtml": "<h2 id=\"mandat\">Mandat</h2>\n<p>ORETH est le programme de recherche audio d’Electronic Artefacts. Il étudie les phénomènes acoustiques complexes par l’analyse fréquentielle, la détection d’événements, la reconnaissance de motifs et l’apprentissage adaptatif.</p>\n<p>Le programme maintient une double orientation. Il construit des outils techniques pour observer le son, mais il utilise également ces outils comme matière de création, d’écoute critique et de publication artistique.</p>\n<h2 id=\"origine\">Origine</h2>\n<p>Les premiers prototypes ont été développés en Python avec des bibliothèques telles que Librosa, NumPy et PyQtGraph. Ils ont permis d’explorer la représentation de spectres, la segmentation d’événements, la comparaison de motifs et la visualisation en temps réel.</p>\n<h2 id=\"architecture-de-recherche\">Architecture de recherche</h2>\n<p>ORETH distingue plusieurs couches : acquisition du signal, préparation, extraction de caractéristiques, observation temporelle et fréquentielle, détection, interprétation, visualisation et restitution. Cette séparation permet de modifier une méthode d’analyse sans confondre l’observation technique avec le résultat artistique.</p>\n<h2 id=\"ecoute-machine\">Écoute machine</h2>\n<p>L’écoute machine ne remplace pas l’écoute humaine. Elle fournit une autre échelle d’observation, capable de suivre des répétitions, variations ou événements difficiles à percevoir dans un flux long. Les résultats doivent rester interprétables et reliés à leur source.</p>\n<h2 id=\"applications-artistiques\">Applications artistiques</h2>\n<p>Palimpsests constitue l’une des principales applications publiques du programme. Les recherches sur les traces, la mémoire sonore, les couches et la transformation alimentent la composition et la structure éditoriale du cycle.</p>\n<h2 id=\"limites\">Limites</h2>\n<p>ORETH reste expérimental. Les modèles d’analyse peuvent produire des classifications fragiles ou dépendantes du corpus. Les résultats techniques ne doivent pas être présentés comme une vérité objective sur une œuvre ou un phénomène sonore.</p>\n<h2 id=\"etat-actuel\">État actuel</h2>\n<p>Le programme est au stade du prototype. Les prochaines étapes concernent la documentation des modules, la stabilisation des formats d’analyse, l’évaluation sur des corpus définis et l’intégration de visualisations plus accessibles.</p>\n",
+    "bodyHtml": "<h2 id=\"mandat\">Mandat</h2>\n<p>ORETH est le programme d’Electronic Artefacts qui traite le son comme matière et comme preuve. Il relie la production audio à des questions de recherche sur le signal, la mémoire, les motifs, le bruit et les systèmes d’écoute.</p>\n<p>Le programme ne désigne pas seulement une identité musicale. Il constitue une couche de recherche pour comprendre comment un matériau sonore peut être observé, segmenté, transformé et conservé sans être réduit à un fichier neutre.</p>\n<h2 id=\"position-de-recherche\">Position de recherche</h2>\n<p>ORETH se situe entre ingénierie audio, écoute machine, design sonore et travail d’archive. Sa position reste volontairement expérimentale : l’analyse aide à comprendre une structure sonore, mais elle ne remplace pas le jugement artistique.</p>\n<p>Le programme est lié à Palimpsests parce que ce projet rend explicites la mémoire, l’héritage et la transmission. Dans le son, cette logique apparaît à travers la saturation, l’échantillonnage, l’acoustique d’un lieu, l’historique de compression, les bruits de fond, les résidus spectraux et les motifs répétés.</p>\n<h2 id=\"perimetre-technique\">Périmètre technique</h2>\n<p>Le périmètre technique comprend l’analyse fréquentielle, la détection d’attaques et de transitoires, la comparaison de segments, l’annotation du signal, l’extraction de caractéristiques audio, l’inspection visuelle, les interfaces prototypes et les notes de recherche.</p>\n<p>Les premiers essais autour d’outils audio Python, d’analyse numérique et de visualisation informent le programme, mais la fiche publique documente d’abord les concepts et méthodes plutôt qu’un paquet de production déjà stabilisé.</p>\n<h2 id=\"perimetre-artistique\">Périmètre artistique</h2>\n<p>ORETH nomme aussi la couche artistique publique qui porte le cycle Palimpsests. La sortie artistique doit rester lisible comme musique d’abord. La couche de recherche explique les relations entre écoute, analyse et mémoire sans transformer l’œuvre en démonstration technique.</p>\n<h2 id=\"applications\">Applications</h2>\n<p>Le programme peut soutenir la recherche en écoute machine pour les usages créatifs, l’annotation d’artefacts audio, les archives sonores où la provenance compte, les systèmes de composition fondés sur la récurrence et la transformation, ainsi que de futurs outils d’inspection du processus audio.</p>\n<h2 id=\"limites\">Limites</h2>\n<p>ORETH reste un programme prototype actif. Les affirmations publiques doivent rester limitées aux concepts documentés, aux fiches de projet et aux artefacts conservés. Les performances, modèles ou systèmes de production nécessitent des preuves séparées avant de devenir canoniques.</p>\n<h2 id=\"references\">Références</h2>\n<p>Cette fiche s’appuie sur l’archive Electronic Artefacts, le dossier Palimpsests, Runtime Theory, les recherches sur l’archéologie du signal et les notes de production audio conservées par le studio.</p>\n",
     "headings": [
       "Mandat",
-      "Origine",
-      "Architecture de recherche",
-      "Écoute machine",
-      "Applications artistiques",
+      "Position de recherche",
+      "Périmètre technique",
+      "Périmètre artistique",
+      "Applications",
       "Limites",
-      "État actuel"
+      "Références"
     ],
     "headingItems": [
       {
@@ -8658,23 +8697,23 @@
       },
       {
         "level": 2,
-        "title": "Origine",
-        "id": "origine"
+        "title": "Position de recherche",
+        "id": "position-de-recherche"
       },
       {
         "level": 2,
-        "title": "Architecture de recherche",
-        "id": "architecture-de-recherche"
+        "title": "Périmètre technique",
+        "id": "perimetre-technique"
       },
       {
         "level": 2,
-        "title": "Écoute machine",
-        "id": "ecoute-machine"
+        "title": "Périmètre artistique",
+        "id": "perimetre-artistique"
       },
       {
         "level": 2,
-        "title": "Applications artistiques",
-        "id": "applications-artistiques"
+        "title": "Applications",
+        "id": "applications"
       },
       {
         "level": 2,
@@ -8683,8 +8722,8 @@
       },
       {
         "level": 2,
-        "title": "État actuel",
-        "id": "etat-actuel"
+        "title": "Références",
+        "id": "references"
       }
     ]
   },
@@ -8696,9 +8735,9 @@
       "canonical": "vaste"
     },
     "title": "VASTE",
-    "subtitle": "Moteur propriétaire",
-    "abstract": "VASTE est le principal moteur propriétaire développé et commercialisé par Electronic Artefacts pour les architectures graphiques, l’exécution contextuelle, les systèmes d’identité et la construction de mondes modulaires.",
-    "description": "VASTE relie la théorie des moteurs à des systèmes graphiques implémentés et peut être évalué par un accès encadré au dépôt, des pilotes techniques, des missions d’implémentation et des discussions de licence.",
+    "subtitle": "Runtime propriétaire",
+    "abstract": "VASTE est le runtime propriétaire d’Electronic Artefacts pour architectures de graphe, exécution contextuelle, identité et mondes modulaires.",
+    "description": "Runtime propriétaire reliant Runtime Theory à des systèmes de graphe évaluables par dépôt encadré, pilotes, implémentation ou licence.",
     "locale": "fr",
     "visibility": "public",
     "publicationClass": "canonical",
@@ -8709,7 +8748,7 @@
       "version": "1.0.0",
       "createdAt": "2024-01-01",
       "publishedAt": "2026-06-25",
-      "modifiedAt": "2026-06-25"
+      "modifiedAt": "2026-07-04"
     },
     "authors": [
       {
@@ -8730,10 +8769,10 @@
       "Systèmes",
       "Recherche"
     ],
-    "mandate": "Développer un moteur graphique réutilisable pour l’exécution contextuelle, l’identité, les structures de connaissance, la simulation et les systèmes modulaires.",
+    "mandate": "Développer un runtime de graphe réutilisable pour l’exécution contextuelle, l’identité, les structures de connaissance, la simulation et les systèmes modulaires.",
     "domain": "Runtime Systems",
     "capabilities": [
-      "Entités graphiques adressables",
+      "Entités de graphe adressables",
       "Relations typées",
       "Exécution contextuelle",
       "Identité et permissions",
@@ -8743,7 +8782,7 @@
       "Fondations pour pilotes et licences"
     ],
     "architecture": [
-      "Couche d’entités graphiques",
+      "Couche d’entités de graphe",
       "Couche de contexte et d’identité",
       "Couche d’exécution des événements",
       "Couche de projection et d’interfaces publiques"
@@ -8751,8 +8790,8 @@
     "lifecycle": [
       "Héritage d’ARCA en 2023",
       "Fondation conceptuelle en 2024",
-      "Prototype du moteur en 2025",
-      "Évolution du moteur graphique en 2026"
+      "Prototype du runtime en 2025",
+      "Évolution du runtime de graphe en 2026"
     ],
     "maintainers": [
       {
@@ -8760,7 +8799,7 @@
       }
     ],
     "officialUrl": "https://www.vaste.space/",
-    "bodyHtml": "<h2 id=\"mandat\">Mandat</h2>\n<p>VASTE est le principal moteur propriétaire développé au sein d’Electronic Artefacts. Il explore les architectures graphiques, l’exécution contextuelle, les systèmes d’identité, les environnements de simulation, les structures de connaissance et la construction de mondes modulaires.</p>\n<p>Le programme n’est pas présenté uniquement comme un objet de recherche. Il constitue un actif technique pouvant être évalué, testé dans un pilote, licencié ou utilisé comme fondation d’une mission d’implémentation lorsqu’un partenaire a besoin d’une infrastructure graphique, de flux sensibles à l’identité ou d’une architecture de connaissance.</p>\n<h2 id=\"acces-commercial\">Accès commercial</h2>\n<p>VASTE est accessible dans le cadre d’échanges commerciaux qualifiés plutôt que par téléchargement public. Le modèle d’accès expose le niveau approprié de code, de documentation et de contexte architectural sans traiter un moteur propriétaire comme un paquet générique.</p>\n<p>Les parcours d’accès comprennent notamment :</p>\n<ul>\n<li>Revue du dépôt pour des acheteurs ou partenaires techniques qualifiés.</li>\n<li>Revue architecturale guidée pour des équipes plateforme, produit ou institutionnelles.</li>\n<li>Pilote limité à un cas concret de graphe, d’identité, de flux ou de système de connaissance.</li>\n<li>Mission d’implémentation adaptant les concepts de VASTE à une surface de production.</li>\n<li>Discussion de licence ou de partenariat pour soutenir une ligne produit plus longue.</li>\n</ul>\n<p>Une demande d’accès doit préciser le cas d’usage, l’organisation ou l’activité, l’identifiant GitHub, la fenêtre d’accès souhaitée, le contexte commercial et les éventuelles contraintes de confidentialité ou de licence.</p>\n<h2 id=\"elements-evaluables\">Éléments évaluables</h2>\n<p>Une revue qualifiée peut couvrir les éléments techniques et stratégiques nécessaires avant une décision de pilote ou de licence :</p>\n<ul>\n<li>Modèle d’entités et de relations structurant les fiches graphiques.</li>\n<li>Frontières d’identité, de permissions et de contexte.</li>\n<li>Propagation d’événements et modèles de projection.</li>\n<li>Intégration des interfaces publiques et conception des routes.</li>\n<li>Publication du graphe de connaissance, recherche et identifiants sémantiques.</li>\n<li>Compatibilité avec la pile existante, la feuille de route ou les contraintes institutionnelles.</li>\n</ul>\n<h2 id=\"fondation-de-recherche\">Fondation de recherche</h2>\n<p>Le programme rend opérationnelle la théorie des moteurs. Il traite entités, relations, identité et contexte comme des préoccupations exécutables du système, et pas seulement comme des questions de base de données ou d’interface.</p>\n<h2 id=\"architecture\">Architecture</h2>\n<p>L’architecture actuelle repose sur des entités graphiques adressables, des relations typées, une identité contextuelle et la propagation d’événements. Les applications publiques peuvent construire des interfaces spécialisées tout en conservant une sémantique commune.</p>\n<p>Le programme s’organise en plusieurs couches :</p>\n<ul>\n<li>Couche d’entités : fiches canoniques, références typées, identifiants routables et publication sémantique.</li>\n<li>Couche relationnelle : prédicats explicites, contexte bidirectionnel et vues graphiques locales.</li>\n<li>Couche d’identité et de permissions : limites pour utilisateurs, organisations, mainteneurs, accès et visibilité.</li>\n<li>Couche d’exécution : changements d’état, propagation et réponses du système.</li>\n<li>Couche de projection : pages publiques, interfaces produit, documents de recherche, flux et interfaces externes.</li>\n<li>Couche d’accès commercial : documentation, revue du dépôt, limites du pilote et planification de l’implémentation.</li>\n</ul>\n<h2 id=\"adequation\">Adéquation</h2>\n<p>VASTE est pertinent lorsque le problème produit est structurel plutôt que cosmétique. Il convient aux équipes qui doivent modéliser personnes, artefacts, droits, preuves, histoires, flux, projets, institutions ou nœuds de connaissance comme des entités connectées et évolutives.</p>\n<p>Les cas adaptés comprennent les plateformes de connaissance, infrastructures culturelles, archives, catalogues, fondations, collections, flux graphiques soumis à permissions et architectures réutilisables entre plusieurs interfaces publiques.</p>\n<p>Les pages promotionnelles ponctuelles, le commerce électronique standard ou les projets où un CMS conventionnel suffit constituent de moins bons cas d’usage.</p>\n<h2 id=\"heritage\">Héritage</h2>\n<p>VASTE est issu d’ARCA, un système antérieur consacré aux actifs numériques, à la traçabilité et à la certification. Son périmètre a évolué d’une plateforme spécialisée vers des structures généralisées d’exécution et d’information.</p>\n<h2 id=\"implementations\">Implémentations</h2>\n<p>Vestiges est le principal produit public utilisé pour démontrer le moteur dans un contexte concret de connaissance et d’économie. Il applique le modèle graphique à la culture, aux savoir-faire et aux pratiques humaines.</p>\n<p>D’autres programmes et projets Electronic Artefacts héritent du même modèle : fiches structurées, surfaces de publication réutilisables, héritage explicite, accès encadré et architecture prête pour l’implémentation.</p>\n<h2 id=\"formats-de-collaboration\">Formats de collaboration</h2>\n<p>VASTE peut entrer dans une collaboration sous quatre formes :</p>\n<ul>\n<li>Revue technique : évaluer la structure du dépôt, les hypothèses du moteur et l’adéquation.</li>\n<li>Pilote : définir un cas d’usage limité, une cible d’implémentation et des critères de réussite.</li>\n<li>Réalisation : utiliser les modèles VASTE comme fondation d’un produit, d’une archive, d’une plateforme ou d’un système interne.</li>\n<li>Licence : négocier l’usage de la logique, des modules ou des modèles architecturaux du moteur.</li>\n</ul>\n<p>Chaque format doit aboutir à une décision explicite : absence d’adéquation, recherche supplémentaire, pilote payant, périmètre d’implémentation, parcours de licence ou feuille de route de partenariat.</p>\n<h2 id=\"etat-et-limites\">État et limites</h2>\n<p>VASTE reste en développement actif. Les affirmations architecturales sont publiées lorsqu’elles sont suffisamment stables, tandis que les détails d’implémentation et les caractéristiques de performance restent susceptibles d’évoluer.</p>\n<p>Un accès privé au dépôt n’implique pas un droit de redistribution, revente, sous-licence ou utilisation en production. Ces droits doivent faire l’objet d’un accord explicite avant tout déploiement commercial.</p>\n",
+    "bodyHtml": "<h2 id=\"mandat\">Mandat</h2>\n<p>VASTE est le principal runtime propriétaire développé au sein d’Electronic Artefacts. Il explore les architectures de graphe, l’exécution contextuelle, les systèmes d’identité, les environnements de simulation, les structures de connaissance et la construction de mondes modulaires.</p>\n<p>Le programme n’est pas présenté uniquement comme un objet de recherche. Il constitue un actif technique pouvant être évalué, testé dans un pilote, licencié ou utilisé comme fondation d’une mission d’implémentation lorsqu’un partenaire a besoin d’une infrastructure fondée sur un graphe, de flux sensibles à l’identité ou d’une architecture de connaissance.</p>\n<h2 id=\"acces-commercial\">Accès commercial</h2>\n<p>VASTE est accessible dans le cadre d’échanges commerciaux qualifiés plutôt que par téléchargement public. Le modèle d’accès expose le niveau approprié de code, de documentation et de contexte architectural sans traiter un moteur propriétaire comme un paquet générique.</p>\n<p>Les parcours d’accès comprennent notamment :</p>\n<ul>\n<li>Revue du dépôt pour des acheteurs ou partenaires techniques qualifiés.</li>\n<li>Revue architecturale guidée pour des équipes plateforme, produit ou institutionnelles.</li>\n<li>Pilote limité à un cas concret de graphe, d’identité, de flux ou de système de connaissance.</li>\n<li>Mission d’implémentation adaptant les concepts de VASTE à une surface de production.</li>\n<li>Discussion de licence ou de partenariat pour soutenir une ligne produit plus longue.</li>\n</ul>\n<p>Une demande d’accès doit préciser le cas d’usage, l’organisation ou l’activité, l’identifiant GitHub, la fenêtre d’accès souhaitée, le contexte commercial et les éventuelles contraintes de confidentialité ou de licence.</p>\n<h2 id=\"elements-evaluables\">Éléments évaluables</h2>\n<p>Une revue qualifiée peut couvrir les éléments techniques et stratégiques nécessaires avant une décision de pilote ou de licence :</p>\n<ul>\n<li>Modèle d’entités et de relations structurant les fiches du graphe.</li>\n<li>Frontières d’identité, de permissions et de contexte.</li>\n<li>Propagation d’événements et modèles de projection.</li>\n<li>Intégration des interfaces publiques et conception des routes.</li>\n<li>Publication du graphe de connaissance, recherche et identifiants sémantiques.</li>\n<li>Compatibilité avec la pile existante, la feuille de route ou les contraintes institutionnelles.</li>\n</ul>\n<h2 id=\"fondation-de-recherche\">Fondation de recherche</h2>\n<p>Le programme rend Runtime Theory opérationnelle. Il traite entités, relations, identité et contexte comme des préoccupations exécutables du système, et pas seulement comme des questions de base de données ou d’interface.</p>\n<h2 id=\"architecture\">Architecture</h2>\n<p>L’architecture actuelle repose sur des entités de graphe adressables, des relations typées, une identité contextuelle et la propagation d’événements. Les applications publiques peuvent construire des interfaces spécialisées tout en conservant une sémantique commune.</p>\n<p>Le programme s’organise en plusieurs couches :</p>\n<ul>\n<li>Couche d’entités : fiches canoniques, références typées, identifiants routables et publication sémantique.</li>\n<li>Couche relationnelle : prédicats explicites, contexte bidirectionnel et vues locales du graphe.</li>\n<li>Couche d’identité et de permissions : limites pour utilisateurs, organisations, mainteneurs, accès et visibilité.</li>\n<li>Couche d’exécution : changements d’état, propagation et réponses du système.</li>\n<li>Couche de projection : pages publiques, interfaces produit, documents de recherche, flux et interfaces externes.</li>\n<li>Couche d’accès commercial : documentation, revue du dépôt, limites du pilote et planification de l’implémentation.</li>\n</ul>\n<h2 id=\"adequation\">Adéquation</h2>\n<p>VASTE est pertinent lorsque le problème produit est structurel plutôt que cosmétique. Il convient aux équipes qui doivent modéliser personnes, artefacts, droits, preuves, histoires, flux, projets, institutions ou nœuds de connaissance comme des entités connectées et évolutives.</p>\n<p>Les cas adaptés comprennent les plateformes de connaissance, infrastructures culturelles, archives, catalogues, fondations, collections, workflows de graphe soumis à permissions et architectures réutilisables entre plusieurs interfaces publiques.</p>\n<p>Les pages promotionnelles ponctuelles, le commerce électronique standard ou les projets où un CMS conventionnel suffit constituent de moins bons cas d’usage.</p>\n<h2 id=\"heritage\">Héritage</h2>\n<p>VASTE est issu d’ARCA, un système antérieur consacré aux actifs numériques, à la traçabilité et à la certification. Son périmètre a évolué d’une plateforme spécialisée vers des structures généralisées d’exécution et d’information.</p>\n<h2 id=\"implementations\">Implémentations</h2>\n<p>Vestiges est le principal produit public utilisé pour démontrer le runtime dans un contexte concret de connaissance et d’économie. Il applique le modèle de graphe à la culture, aux savoir-faire et aux pratiques humaines.</p>\n<p>D’autres programmes et projets Electronic Artefacts héritent du même modèle : fiches structurées, surfaces de publication réutilisables, héritage explicite, accès encadré et architecture prête pour l’implémentation.</p>\n<h2 id=\"formats-de-collaboration\">Formats de collaboration</h2>\n<p>VASTE peut entrer dans une collaboration sous quatre formes :</p>\n<ul>\n<li>Revue technique : évaluer la structure du dépôt, les hypothèses du moteur et l’adéquation.</li>\n<li>Pilote : définir un cas d’usage limité, une cible d’implémentation et des critères de réussite.</li>\n<li>Réalisation : utiliser les modèles VASTE comme fondation d’un produit, d’une archive, d’une plateforme ou d’un système interne.</li>\n<li>Licence : négocier l’usage de la logique, des modules ou des modèles architecturaux du moteur.</li>\n</ul>\n<p>Chaque format doit aboutir à une décision explicite : absence d’adéquation, recherche supplémentaire, pilote payant, périmètre d’implémentation, parcours de licence ou feuille de route de partenariat.</p>\n<h2 id=\"etat-et-limites\">État et limites</h2>\n<p>VASTE reste en développement actif. Les affirmations architecturales sont publiées lorsqu’elles sont suffisamment stables, tandis que les détails d’implémentation et les caractéristiques de performance restent susceptibles d’évoluer.</p>\n<p>Un accès privé au dépôt n’implique pas un droit de redistribution, revente, sous-licence ou utilisation en production. Ces droits doivent faire l’objet d’un accord explicite avant tout déploiement commercial.</p>\n",
     "headings": [
       "Mandat",
       "Accès commercial",
@@ -8986,7 +9025,7 @@
     },
     "title": "Vestiges",
     "subtitle": "Infrastructure de connaissance vivante",
-    "abstract": "Vestiges est la plateforme principale fondée sur VASTE pour cartographier, préserver et activer les savoir-faire vivants à travers les personnes, pratiques, matériaux, lieux et institutions.",
+    "abstract": "Vestiges est la plateforme VASTE pour cartographier, préserver et activer les savoir-faire vivants entre personnes, pratiques, matériaux et lieux.",
     "description": "Un produit centré sur la connaissance où provenance, contribution, découverte et services professionnels émergent d’un même graphe historisé.",
     "locale": "fr",
     "visibility": "public",
@@ -8998,7 +9037,7 @@
       "version": "1.1.0",
       "createdAt": "2025-01-01",
       "publishedAt": "2026-06-25",
-      "modifiedAt": "2026-06-25",
+      "modifiedAt": "2026-07-04",
       "changeSummary": "Première traduction française complète de la fiche produit."
     },
     "authors": [
@@ -9049,7 +9088,7 @@
       "Modéliser personnes, organisations, techniques, matériaux, outils, œuvres, lieux et documents comme des identités durables.",
       "Rendre l’enseignement, la fabrication, l’usage, la restauration, la fourniture et la certification explicites, navigables et historisés.",
       "Gouverner la contribution par des rôles attribuables, des états de révision et des permissions contextuelles.",
-      "Utiliser VASTE pour coordonner identité graphique, contexte, événements et projection publique."
+      "Utiliser VASTE pour coordonner identité de graphe, contexte, événements et projection publique."
     ],
     "outputs": [
       {
@@ -9088,7 +9127,7 @@
       "Transmission"
     ],
     "developmentFocus": [
-      "Identité graphique stable",
+      "Identité de graphe stable",
       "Provenance et histoire",
       "Permissions contextuelles",
       "Flux de contribution",
@@ -9109,7 +9148,7 @@
         "href": "https://www.instagram.com/vestiges.world/"
       }
     ],
-    "bodyHtml": "<h2 id=\"positionnement\">Positionnement</h2>\n<p>Vestiges est l’application publique principale de VASTE : une infrastructure de connaissance vivante consacrée à la culture, aux savoir-faire et aux pratiques humaines. Ce n’est ni un annuaire, ni une encyclopédie, ni une place de marché à laquelle on aurait ajouté du contenu éditorial. Son actif principal est un graphe fiable de personnes, pratiques, matériaux, lieux, œuvres et institutions.</p>\n<h2 id=\"le-probleme\">Le problème</h2>\n<p>Un savoir-faire est rarement contenu dans une source unique. Il circule par l’apprentissage, les gestes, les outils, les ateliers, les documents, les écoles, les territoires et la pratique répétée. Lorsque ces éléments sont réduits à des profils ou articles isolés, les chemins de transmission disparaissent. Vestiges est conçu pour préserver ces chemins sans figer les pratiques vivantes dans une archive statique.</p>\n<h2 id=\"these-produit\">Thèse produit</h2>\n<p>La connaissance vient en premier. Pages publiques, profils professionnels, ressources pédagogiques, opportunités de projet et services économiques émergent tous du même graphe structuré. Une transaction peut avoir lieu dans Vestiges, mais elle doit rester reliée aux connaissances, à la provenance et aux relations qui lui donnent du sens.</p>\n<h2 id=\"le-graphe-vivant\">Le graphe vivant</h2>\n<p>Chaque personne, organisation, technique, matériau, outil, œuvre, lieu, projet et document reçoit une identité durable. Les relations telles que « enseigne », « utilise », « fabrique », « restaure », « fournit », « certifie » et « participe à » restent explicites, navigables et historisées. Le graphe peut ainsi répondre à des questions auxquelles un dossier, un flux ou un annuaire ne répond pas.</p>\n<h2 id=\"contribution-et-confiance\">Contribution et confiance</h2>\n<p>Vestiges est pensé pour une contribution distribuée assortie de responsabilités claires. Les ajouts restent attribuables, révisables et contextualisés. Praticiens, institutions, écoles, chercheurs et organisations culturelles peuvent contribuer depuis des positions différentes sans réduire l’expertise à une voix anonyme unique.</p>\n<h2 id=\"decouverte-publique\">Découverte publique</h2>\n<p>Chaque nœud public peut disposer d’une page canonique comprenant description, médias, historique, sources et entités connectées. La découverte naît des chemins relationnels : un matériau mène à une technique, une technique à un praticien, puis à un lieu, une école, une œuvre ou un document. La visibilité dans les moteurs de recherche devient une projection du modèle de connaissance plutôt qu’une couche éditoriale séparée.</p>\n<h2 id=\"activation-professionnelle\">Activation professionnelle</h2>\n<p>Une connaissance fiable peut soutenir des espaces professionnels, la mise en relation de projets, des parcours de formation, des commandes, la recherche institutionnelle, des services spécialisés et des API. Ces fonctions reposent sur le graphe ; elles ne remplacent pas sa finalité culturelle et documentaire.</p>\n<h2 id=\"fondation-vaste\">Fondation VASTE</h2>\n<p>VASTE fournit le socle d’exécution pour l’identité, le contexte, les permissions, les événements et l’exécution graphique. Il permet à Vestiges de distinguer connaissance publique et contexte de travail privé, de coordonner les états de contribution et de préserver l’histoire des entités et relations à mesure que la plateforme évolue.</p>\n<h2 id=\"preuves-actuelles\">Preuves actuelles</h2>\n<p>Les preuves publiques actuelles sont architecturales : définition du produit, modèles d’entités et de relations, logique de contribution, stratégie de pages publiques, identité visuelle et relation documentée avec VASTE. Les affirmations concernant disponibilité, adoption et performance ne seront ajoutées que lorsqu’elles pourront être étayées.</p>\n<h2 id=\"etat-du-developpement\">État du développement</h2>\n<p>Vestiges est en développement actif. La thèse produit et l’architecture présentées ici reflètent l’état actuel du projet ; les interfaces, détails d’implémentation et conditions d’accès évolueront au fil de versions documentées.</p>\n<h2 id=\"canal-public\">Canal public</h2>\n<p>Suivez le développement visuel et éditorial de la plateforme sur <a href=\"https://www.instagram.com/vestiges.world/\">Instagram @vestiges.world</a>.</p>\n",
+    "bodyHtml": "<h2 id=\"positionnement\">Positionnement</h2>\n<p>Vestiges est l’application publique principale de VASTE : une infrastructure de connaissance vivante consacrée à la culture, aux savoir-faire et aux pratiques humaines. Ce n’est ni un annuaire, ni une encyclopédie, ni une place de marché à laquelle on aurait ajouté du contenu éditorial. Son actif principal est un graphe fiable de personnes, pratiques, matériaux, lieux, œuvres et institutions.</p>\n<h2 id=\"le-probleme\">Le problème</h2>\n<p>Un savoir-faire est rarement contenu dans une source unique. Il circule par l’apprentissage, les gestes, les outils, les ateliers, les documents, les écoles, les territoires et la pratique répétée. Lorsque ces éléments sont réduits à des profils ou articles isolés, les chemins de transmission disparaissent. Vestiges est conçu pour préserver ces chemins sans figer les pratiques vivantes dans une archive statique.</p>\n<h2 id=\"these-produit\">Thèse produit</h2>\n<p>La connaissance vient en premier. Pages publiques, profils professionnels, ressources pédagogiques, opportunités de projet et services économiques émergent tous du même graphe structuré. Une transaction peut avoir lieu dans Vestiges, mais elle doit rester reliée aux connaissances, à la provenance et aux relations qui lui donnent du sens.</p>\n<h2 id=\"le-graphe-vivant\">Le graphe vivant</h2>\n<p>Chaque personne, organisation, technique, matériau, outil, œuvre, lieu, projet et document reçoit une identité durable. Les relations telles que « enseigne », « utilise », « fabrique », « restaure », « fournit », « certifie » et « participe à » restent explicites, navigables et historisées. Le graphe peut ainsi répondre à des questions auxquelles un dossier, un flux ou un annuaire ne répond pas.</p>\n<h2 id=\"contribution-et-confiance\">Contribution et confiance</h2>\n<p>Vestiges est pensé pour une contribution distribuée assortie de responsabilités claires. Les ajouts restent attribuables, révisables et contextualisés. Praticiens, institutions, écoles, chercheurs et organisations culturelles peuvent contribuer depuis des positions différentes sans réduire l’expertise à une voix anonyme unique.</p>\n<h2 id=\"decouverte-publique\">Découverte publique</h2>\n<p>Chaque nœud public peut disposer d’une page canonique comprenant description, médias, historique, sources et entités connectées. La découverte naît des chemins relationnels : un matériau mène à une technique, une technique à un praticien, puis à un lieu, une école, une œuvre ou un document. La visibilité dans les moteurs de recherche devient une projection du modèle de connaissance plutôt qu’une couche éditoriale séparée.</p>\n<h2 id=\"activation-professionnelle\">Activation professionnelle</h2>\n<p>Une connaissance fiable peut soutenir des espaces professionnels, la mise en relation de projets, des parcours de formation, des commandes, la recherche institutionnelle, des services spécialisés et des API. Ces fonctions reposent sur le graphe ; elles ne remplacent pas sa finalité culturelle et documentaire.</p>\n<h2 id=\"fondation-vaste\">Fondation VASTE</h2>\n<p>VASTE fournit le socle d’exécution pour l’identité, le contexte, les permissions, les événements et l’exécution sur graphe. Il permet à Vestiges de distinguer connaissance publique et contexte de travail privé, de coordonner les états de contribution et de préserver l’histoire des entités et relations à mesure que la plateforme évolue.</p>\n<h2 id=\"preuves-actuelles\">Preuves actuelles</h2>\n<p>Les preuves publiques actuelles sont architecturales : définition du produit, modèles d’entités et de relations, logique de contribution, stratégie de pages publiques, identité visuelle et relation documentée avec VASTE. Les affirmations concernant disponibilité, adoption et performance ne seront ajoutées que lorsqu’elles pourront être étayées.</p>\n<h2 id=\"etat-du-developpement\">État du développement</h2>\n<p>Vestiges est en développement actif. La thèse produit et l’architecture présentées ici reflètent l’état actuel du projet ; les interfaces, détails d’implémentation et conditions d’accès évolueront au fil de versions documentées.</p>\n<h2 id=\"canal-public\">Canal public</h2>\n<p>Suivez le développement visuel et éditorial de la plateforme sur <a href=\"https://www.instagram.com/vestiges.world/\">Instagram @vestiges.world</a>.</p>\n",
     "headings": [
       "Positionnement",
       "Le problème",
@@ -14563,8 +14602,8 @@
     },
     "title": "Théorie du runtime",
     "subtitle": "Champ de recherche",
-    "abstract": "Théorie du runtime cadre un champ de recherche suivi par Electronic Artefacts, en reliant questions ouvertes, prototypes, sources et hypothèses de travail.",
-    "description": "Théorie du runtime cadre un champ de recherche suivi par Electronic Artefacts, en reliant questions ouvertes, prototypes, sources et hypothèses de travail.",
+    "abstract": "Runtime Theory étudie les identités, relations, contextes et primitives d’événement nécessaires pour qu’un système exécutable reste cohérent.",
+    "description": "Champ de recherche actif d’Electronic Artefacts reliant les premiers travaux VOID, VASTE et la définition d’un runtime de graphe.",
     "locale": "fr",
     "visibility": "public",
     "publicationClass": "canonical",
@@ -14575,7 +14614,7 @@
       "version": "1.0.0",
       "createdAt": "2024-01-01",
       "publishedAt": "2026-06-25",
-      "modifiedAt": "2026-06-25"
+      "modifiedAt": "2026-07-04"
     },
     "authors": [
       {
@@ -14591,61 +14630,76 @@
       "Primitives"
     ],
     "disciplines": [
-      "Technology",
-      "Research",
-      "Systems"
+      "Technologie",
+      "Recherche",
+      "Systèmes"
     ],
     "questions": [
       {
         "id": "minimum-runtime",
-        "question": "Comment formaliser Théorie du runtime pour produire des interfaces, des preuves et des relations exploitables ?",
+        "question": "Quel minimum est nécessaire pour qu’un univers d’entités exécute des événements de manière cohérente ?",
         "status": "active"
       },
       {
         "id": "contextual-execution",
-        "question": "Quels usages de Théorie du runtime doivent rester ouverts à l'experimentation et à la vérification ?",
+        "question": "Comment l’identité et le contexte doivent-ils contraindre l’exécution et la propagation des événements ?",
         "status": "active"
       }
     ],
     "scope": [
-      "questions de recherche",
-      "hypothèses de conception",
-      "prototypes et preuves",
-      "relations avec le graphe public"
+      "Primitives d’exécution",
+      "Événements",
+      "Identité",
+      "Contexte",
+      "Propagation dans le graphe"
     ],
     "findings": [
-      "Théorie du runtime demande une articulation claire entre vocabulaire, preuve et expérience utilisateur."
+      "L’identité et le contexte doivent être explicites lorsqu’ils déterminent l’autorité d’exécution.",
+      "Les relations typées d’un graphe peuvent devenir des contraintes opérationnelles, pas seulement des liens descriptifs."
     ],
     "openQuestions": [
-      "Quels critères permettent d'evaluer Théorie du runtime dans des situations concrètes ?"
+      "Comment borner le contexte d’exécution entre services distribués ?",
+      "Quelles opérations de graphe restent lisibles à grande échelle ?"
     ],
-    "bodyHtml": "<h2 id=\"champ\">Champ</h2>\n<p>Théorie du runtime décrit un espace de recherche actif pour Electronic Artefacts. Il relie le sujet “Théorie du runtime” dans le graphe public d’Electronic Artefacts à des questions, prototypes et méthodes qui peuvent évoluer dans le temps.</p>\n<h2 id=\"questions\">Questions</h2>\n<ul>\n<li>Comment rendre les hypothèses suffisamment explicites pour être partagées, testées et reliées au graphe ?</li>\n<li>Quelles preuves, interfaces où architectures permettent de transformer ce champ en expérience utilisable ?</li>\n</ul>\n<h2 id=\"usage\">Usage</h2>\n<p>Cette fiche donne une entrée française au champ de recherche et conserve ses liens avec les projets, publications et technologies associés.</p>\n<h2 id=\"references\">Références</h2>\n<p>Les sources associées sont conservées dans la fiche canonique du graphe.</p>\n",
+    "bodyHtml": "<h2 id=\"question-de-recherche\">Question de recherche</h2>\n<p>Runtime Theory demande ce qui est minimalement nécessaire pour qu’un univers d’entités exécute des événements de manière cohérente. Le champ étudie les primitives d’exécution, l’identité, le contexte, les relations, la propagation des événements et les limites qui rendent un système compréhensible.</p>\n<h2 id=\"origine\">Origine</h2>\n<p>Le champ prolonge des expérimentations logicielles associées à VOID, puis à ARCA. Ces travaux ont déplacé la recherche d’un moteur borné vers des questions plus générales sur les systèmes d’information et les environnements d’exécution.</p>\n<h2 id=\"position-actuelle\">Position actuelle</h2>\n<p>VASTE constitue aujourd’hui le principal contexte d’implémentation de Runtime Theory. Le programme traite les entités de graphe, les relations typées, l’identité et l’exécution contextuelle comme les parties d’un même modèle de runtime.</p>\n<h2 id=\"methode-de-recherche\">Méthode de recherche</h2>\n<p>Le champ avance par modèles d’architecture, prototypes, notes d’implémentation, observations de performance et projets appliqués. Les concepts sont conservés lorsqu’ils peuvent être formulés précisément et inspectés par des preuves.</p>\n<h2 id=\"applications\">Applications</h2>\n<p>Vestiges applique Runtime Theory à une plateforme de connaissance culturelle. Sa thèse publique dépend d’entités adressables et de relations historisées, tandis que son modèle opérationnel exige permissions, contexte de contribution et propagation contrôlée.</p>\n<h2 id=\"questions-ouvertes\">Questions ouvertes</h2>\n<p>Les travaux en cours portent sur le bornage du contexte entre services distribués, la lisibilité des grands systèmes de graphe et la relation entre modèles expressifs et exécution prévisible.</p>\n",
     "headings": [
-      "Champ",
-      "Questions",
-      "Usage",
-      "Références"
+      "Question de recherche",
+      "Origine",
+      "Position actuelle",
+      "Méthode de recherche",
+      "Applications",
+      "Questions ouvertes"
     ],
     "headingItems": [
       {
         "level": 2,
-        "title": "Champ",
-        "id": "champ"
+        "title": "Question de recherche",
+        "id": "question-de-recherche"
       },
       {
         "level": 2,
-        "title": "Questions",
-        "id": "questions"
+        "title": "Origine",
+        "id": "origine"
       },
       {
         "level": 2,
-        "title": "Usage",
-        "id": "usage"
+        "title": "Position actuelle",
+        "id": "position-actuelle"
       },
       {
         "level": 2,
-        "title": "Références",
-        "id": "references"
+        "title": "Méthode de recherche",
+        "id": "methode-de-recherche"
+      },
+      {
+        "level": 2,
+        "title": "Applications",
+        "id": "applications"
+      },
+      {
+        "level": 2,
+        "title": "Questions ouvertes",
+        "id": "questions-ouvertes"
       }
     ]
   },

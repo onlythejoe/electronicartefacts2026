@@ -1476,8 +1476,8 @@
       "translationOf": "ea:collection:knowledge-hub-foundations",
       "title": "Fondations du hub de connaissance",
       "subtitle": "Collection éditoriale",
-      "summary": "Fondations du hub de connaissance rassemble des fiches liées par un même axe éditorial, afin de donner une progression lisible aux archives de connaissance d'Electronic Artefacts.",
-      "description": "Fondations du hub de connaissance rassemble des fiches liées par un même axe éditorial, afin de donner une progression lisible aux archives de connaissance d'Electronic Artefacts.",
+      "summary": "Fondations du hub de connaissance rassemble les fiches sur graphes, identité sémantique, préservation, systèmes génératifs, signal audio et publication structurée.",
+      "description": "Collection fondatrice du Knowledge Hub reliant concepts, technologies, programmes, projets et publications d’Electronic Artefacts.",
       "status": "active",
       "maturity": "research",
       "confidence": "published",
@@ -1488,7 +1488,7 @@
         "collection éditoriale",
         "fondations",
         "bibliothèque de recherche",
-        "Semantic Publishing"
+        "Publication sémantique"
       ],
       "discipline": [
         "systèmes de connaissance",
@@ -1501,7 +1501,7 @@
       "identifier": "/fr/id/collection/knowledge-hub-foundations/",
       "temporality": {
         "creationDate": "2026-06-23",
-        "lastUpdated": "2026-06-25",
+        "lastUpdated": "2026-07-04",
         "releaseDate": "2026-06-25",
         "creationYear": "2026"
       }
@@ -1515,8 +1515,8 @@
       "translationOf": "ea:collection:knowledge-hub-fourth-wave",
       "title": "Hub de connaissance, quatrième vague",
       "subtitle": "Protocoles d'IA, provenance, gouvernance et interfaces culturelles",
-      "summary": "Hub de connaissance, quatrième vague rassemble des fiches liées par un même axe éditorial, afin de donner une progression lisible aux archives de connaissance d'Electronic Artefacts.",
-      "description": "Hub de connaissance, quatrième vague rassemble des fiches liées par un même axe éditorial, afin de donner une progression lisible aux archives de connaissance d'Electronic Artefacts.",
+      "summary": "Hub de connaissance, quatrième vague couvre MCP, C2PA, WebNN, IIIF, OpenTelemetry, recherche IA, gouvernance, injection de prompt et identité vérifiable.",
+      "description": "Collection sur les protocoles d’outillage IA, provenance des médias, inférence locale, archives, observabilité des agents et SEO de graphes.",
       "status": "active",
       "maturity": "research",
       "confidence": "published",
@@ -1533,7 +1533,7 @@
       "discipline": [
         "intelligence artificielle",
         "systèmes de connaissance",
-        "Digital Préservation",
+        "préservation numérique",
         "architecture logicielle",
         "infrastructure culturelle"
       ],
@@ -1541,7 +1541,7 @@
       "identifier": "/fr/id/collection/knowledge-hub-fourth-wave/",
       "temporality": {
         "creationDate": "2026-06-24",
-        "lastUpdated": "2026-06-25",
+        "lastUpdated": "2026-07-04",
         "releaseDate": "2026-06-25",
         "creationYear": "2026"
       }
@@ -1555,8 +1555,8 @@
       "translationOf": "ea:collection:knowledge-hub-second-wave",
       "title": "Hub de connaissance, deuxième vague",
       "subtitle": "Collection éditoriale",
-      "summary": "Hub de connaissance, deuxième vague rassemble des fiches liées par un même axe éditorial, afin de donner une progression lisible aux archives de connaissance d'Electronic Artefacts.",
-      "description": "Hub de connaissance, deuxième vague rassemble des fiches liées par un même axe éditorial, afin de donner une progression lisible aux archives de connaissance d'Electronic Artefacts.",
+      "summary": "Hub de connaissance, deuxième vague relie hypertexte, open source, métadonnées, audio web, design d’interface, typographie, IHM et IA générative.",
+      "description": "Collection éditoriale de la deuxième vague du Knowledge Hub, conçue pour relier recherche culturelle, technologies web, design et intelligence artificielle.",
       "status": "active",
       "maturity": "research",
       "confidence": "published",
@@ -1579,7 +1579,7 @@
       "identifier": "/fr/id/collection/knowledge-hub-second-wave/",
       "temporality": {
         "creationDate": "2026-06-24",
-        "lastUpdated": "2026-06-25",
+        "lastUpdated": "2026-07-04",
         "releaseDate": "2026-06-25",
         "creationYear": "2026"
       }
@@ -1593,8 +1593,8 @@
       "translationOf": "ea:collection:knowledge-hub-third-wave",
       "title": "Hub de connaissance, troisième vague",
       "subtitle": "IA, systèmes et calcul sur graphe",
-      "summary": "Hub de connaissance, troisième vague rassemble des fiches liées par un même axe éditorial, afin de donner une progression lisible aux archives de connaissance d'Electronic Artefacts.",
-      "description": "Hub de connaissance, troisième vague rassemble des fiches liées par un même axe éditorial, afin de donner une progression lisible aux archives de connaissance d'Electronic Artefacts.",
+      "summary": "Hub de connaissance, troisième vague relie LLM, agents IA, IA locale, RAG, systèmes multimodaux, pensée systémique, ontologies, graphes, événements et runtimes.",
+      "description": "Collection Electronic Artefacts sur l’IA durable, l’architecture des systèmes, les graphes de connaissance et les runtimes orientés domaine.",
       "status": "active",
       "maturity": "research",
       "confidence": "published",
@@ -1618,7 +1618,7 @@
       "identifier": "/fr/id/collection/knowledge-hub-third-wave/",
       "temporality": {
         "creationDate": "2026-06-24",
-        "lastUpdated": "2026-06-25",
+        "lastUpdated": "2026-07-04",
         "releaseDate": "2026-06-25",
         "creationYear": "2026"
       }
@@ -3059,31 +3059,34 @@
       "locale": "fr",
       "translationOf": "ea:program:oreth",
       "title": "ORETH",
-      "subtitle": "Recherche et intelligence audio",
-      "summary": "ORETH est un programme expérimental consacré à l’observation, l’analyse et la transformation de phénomènes sonores complexes par le traitement du signal, l’apprentissage automatique et la création musicale.",
-      "description": "Un programme de recherche audio reliant analyse fréquentielle, détection d’événements, reconnaissance de motifs, écoute machine et production artistique.",
+      "subtitle": "Programme d’intelligence audio",
+      "summary": "ORETH relie intelligence audio, recherche artistique, signal, motifs, mémoire, écoute machine et production musicale expérimentale.",
+      "description": "Fiche publique du programme ORETH, à la fois système de recherche audio et couche technico-culturelle reliée à Palimpsests.",
       "status": "prototype",
       "maturity": "prototype",
       "confidence": "observed",
       "visibility": "public",
       "publicationClass": "canonical",
       "tags": [
-        "Audio",
+        "Intelligence audio",
+        "Écoute machine",
         "Traitement du signal",
-        "Apprentissage automatique",
-        "Musique",
-        "Recherche"
+        "Design sonore",
+        "Palimpsests",
+        "Musique expérimentale"
       ],
       "discipline": [
-        "Technologie",
         "Musique",
-        "Recherche"
+        "Technologie",
+        "Recherche",
+        "Ingénierie audio",
+        "Art numérique"
       ],
       "route": "/fr/programs/oreth/",
       "identifier": "/fr/id/program/oreth/",
       "temporality": {
         "creationDate": "2024-01-01",
-        "lastUpdated": "2026-06-25",
+        "lastUpdated": "2026-07-04",
         "releaseDate": "2026-06-25",
         "creationYear": "2024"
       }
@@ -3096,9 +3099,9 @@
       "locale": "fr",
       "translationOf": "ea:program:vaste",
       "title": "VASTE",
-      "subtitle": "Moteur propriétaire",
-      "summary": "VASTE est le principal moteur propriétaire développé et commercialisé par Electronic Artefacts pour les architectures graphiques, l’exécution contextuelle, les systèmes d’identité et la construction de mondes modulaires.",
-      "description": "VASTE relie la théorie des moteurs à des systèmes graphiques implémentés et peut être évalué par un accès encadré au dépôt, des pilotes techniques, des missions d’implémentation et des discussions de licence.",
+      "subtitle": "Runtime propriétaire",
+      "summary": "VASTE est le runtime propriétaire d’Electronic Artefacts pour architectures de graphe, exécution contextuelle, identité et mondes modulaires.",
+      "description": "Runtime propriétaire reliant Runtime Theory à des systèmes de graphe évaluables par dépôt encadré, pilotes, implémentation ou licence.",
       "status": "development",
       "maturity": "development",
       "confidence": "published",
@@ -3121,7 +3124,7 @@
       "identifier": "/fr/id/program/vaste/",
       "temporality": {
         "creationDate": "2024-01-01",
-        "lastUpdated": "2026-06-25",
+        "lastUpdated": "2026-07-04",
         "releaseDate": "2026-06-25",
         "creationYear": "2024"
       }
@@ -3173,7 +3176,7 @@
       "translationOf": "ea:project:vestiges",
       "title": "Vestiges",
       "subtitle": "Infrastructure de connaissance vivante",
-      "summary": "Vestiges est la plateforme principale fondée sur VASTE pour cartographier, préserver et activer les savoir-faire vivants à travers les personnes, pratiques, matériaux, lieux et institutions.",
+      "summary": "Vestiges est la plateforme VASTE pour cartographier, préserver et activer les savoir-faire vivants entre personnes, pratiques, matériaux et lieux.",
       "description": "Un produit centré sur la connaissance où provenance, contribution, découverte et services professionnels émergent d’un même graphe historisé.",
       "status": "development",
       "maturity": "prototype",
@@ -3199,7 +3202,7 @@
       "identifier": "/fr/id/project/vestiges/",
       "temporality": {
         "creationDate": "2025-01-01",
-        "lastUpdated": "2026-06-25",
+        "lastUpdated": "2026-07-04",
         "releaseDate": "2026-06-25",
         "creationYear": "2025"
       }
@@ -4716,8 +4719,8 @@
       "translationOf": "ea:researchField:runtime-theory",
       "title": "Théorie du runtime",
       "subtitle": "Champ de recherche",
-      "summary": "Théorie du runtime cadre un champ de recherche suivi par Electronic Artefacts, en reliant questions ouvertes, prototypes, sources et hypothèses de travail.",
-      "description": "Théorie du runtime cadre un champ de recherche suivi par Electronic Artefacts, en reliant questions ouvertes, prototypes, sources et hypothèses de travail.",
+      "summary": "Runtime Theory étudie les identités, relations, contextes et primitives d’événement nécessaires pour qu’un système exécutable reste cohérent.",
+      "description": "Champ de recherche actif d’Electronic Artefacts reliant les premiers travaux VOID, VASTE et la définition d’un runtime de graphe.",
       "status": "active",
       "maturity": "research",
       "confidence": "validated",
@@ -4731,15 +4734,15 @@
         "Primitives"
       ],
       "discipline": [
-        "Technology",
-        "Research",
-        "Systems"
+        "Technologie",
+        "Recherche",
+        "Systèmes"
       ],
       "route": "/fr/research/fields/runtime-theory/",
       "identifier": "/fr/id/research-field/runtime-theory/",
       "temporality": {
         "creationDate": "2024-01-01",
-        "lastUpdated": "2026-06-25",
+        "lastUpdated": "2026-07-04",
         "releaseDate": "2026-06-25",
         "creationYear": "2024"
       }

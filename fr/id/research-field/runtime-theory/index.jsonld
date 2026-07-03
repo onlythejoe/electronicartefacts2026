@@ -6,10 +6,10 @@
       "@id": "https://electronicartefacts.com/fr/research/fields/runtime-theory/#webpage",
       "url": "https://electronicartefacts.com/fr/research/fields/runtime-theory/",
       "name": "Théorie du runtime",
-      "description": "Théorie du runtime cadre un champ de recherche suivi par Electronic Artefacts, en reliant questions ouvertes, prototypes, sources et hypothèses de travail.",
+      "description": "Champ de recherche actif d’Electronic Artefacts reliant les premiers travaux VOID, VASTE et la définition d’un runtime de graphe.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
-      "dateModified": "2026-06-25",
+      "dateModified": "2026-07-04",
       "primaryImageOfPage": {
         "@type": "ImageObject",
         "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-search.jpg",
@@ -34,8 +34,8 @@
       "@id": "https://electronicartefacts.com/fr/id/research-field/runtime-theory/",
       "identifier": "ea:researchField:runtime-theory-fr",
       "name": "Théorie du runtime",
-      "abstract": "Théorie du runtime cadre un champ de recherche suivi par Electronic Artefacts, en reliant questions ouvertes, prototypes, sources et hypothèses de travail.",
-      "description": "Théorie du runtime cadre un champ de recherche suivi par Electronic Artefacts, en reliant questions ouvertes, prototypes, sources et hypothèses de travail.",
+      "abstract": "Runtime Theory étudie les identités, relations, contextes et primitives d’événement nécessaires pour qu’un système exécutable reste cohérent.",
+      "description": "Runtime Theory étudie les identités, relations, contextes et primitives d’événement nécessaires pour qu’un système exécutable reste cohérent.",
       "url": "https://electronicartefacts.com/fr/research/fields/runtime-theory/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/research/fields/runtime-theory/#webpage"
@@ -61,14 +61,14 @@
         "Exécution",
         "Events",
         "Primitives",
-        "Technology",
-        "Research",
-        "Systems"
+        "Technologie",
+        "Recherche",
+        "Systèmes"
       ],
       "inLanguage": "fr",
       "dateCreated": "2024-01-01",
       "datePublished": "2026-06-25",
-      "dateModified": "2026-06-25",
+      "dateModified": "2026-07-04",
       "publisher": {
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
@@ -76,7 +76,7 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 102
+      "wordCount": 210
     },
     {
       "@type": "Organization",

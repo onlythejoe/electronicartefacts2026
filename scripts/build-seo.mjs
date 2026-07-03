@@ -77,7 +77,7 @@ const pages = {
     description:
       "Independent creative technology studio for digital products, knowledge systems, proprietary software and research-led cultural work.",
     canonical: "/",
-    h1: "Complex systems, made clear.",
+    h1: "Complex digital systems, made clear.",
   },
   "work.html": {
     title: "Product Strategy, Design & Engineering | Electronic Artefacts",
@@ -107,7 +107,7 @@ const pages = {
     title: "Archive | Electronic Artefacts",
     description:
       "Browse releases, prototypes, documents and research traces connected to the decisions and systems that produced them.",
-    h1: "The work continues in what it leaves behind.",
+    h1: "Archive of releases, prototypes and research traces.",
   },
   "about.html": {
     title: "About the Studio | Electronic Artefacts",

@@ -6,10 +6,10 @@
       "@id": "https://electronicartefacts.com/fr/programs/oreth/#webpage",
       "url": "https://electronicartefacts.com/fr/programs/oreth/",
       "name": "ORETH",
-      "description": "Un programme de recherche audio reliant analyse fréquentielle, détection d’événements, reconnaissance de motifs, écoute machine et production artistique.",
+      "description": "Fiche publique du programme ORETH, à la fois système de recherche audio et couche technico-culturelle reliée à Palimpsests.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
-      "dateModified": "2026-06-25",
+      "dateModified": "2026-07-04",
       "primaryImageOfPage": {
         "@type": "ImageObject",
         "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-search.jpg",
@@ -34,8 +34,8 @@
       "@id": "https://electronicartefacts.com/fr/id/program/oreth/",
       "identifier": "ea:program:oreth-fr",
       "name": "ORETH",
-      "abstract": "ORETH est un programme expérimental consacré à l’observation, l’analyse et la transformation de phénomènes sonores complexes par le traitement du signal, l’apprentissage automatique et la création musicale.",
-      "description": "ORETH est un programme expérimental consacré à l’observation, l’analyse et la transformation de phénomènes sonores complexes par le traitement du signal, l’apprentissage automatique et la création musicale.",
+      "abstract": "ORETH relie intelligence audio, recherche artistique, signal, motifs, mémoire, écoute machine et production musicale expérimentale.",
+      "description": "ORETH relie intelligence audio, recherche artistique, signal, motifs, mémoire, écoute machine et production musicale expérimentale.",
       "url": "https://electronicartefacts.com/fr/programs/oreth/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/programs/oreth/#webpage"
@@ -56,17 +56,22 @@
         }
       ],
       "keywords": [
-        "Audio",
+        "Intelligence audio",
+        "Écoute machine",
         "Traitement du signal",
-        "Apprentissage automatique",
+        "Design sonore",
+        "Palimpsests",
+        "Musique expérimentale",
         "Musique",
+        "Technologie",
         "Recherche",
-        "Technologie"
+        "Ingénierie audio",
+        "Art numérique"
       ],
       "inLanguage": "fr",
       "dateCreated": "2024-01-01",
       "datePublished": "2026-06-25",
-      "dateModified": "2026-06-25",
+      "dateModified": "2026-07-04",
       "publisher": {
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
@@ -74,7 +79,7 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 280
+      "wordCount": 377
     },
     {
       "@type": "Organization",

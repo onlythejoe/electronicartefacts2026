@@ -84,7 +84,7 @@
     "framework": 2,
     "collection": 8
   },
-  "lastModified": "2026-06-26",
+  "lastModified": "2026-07-04",
   "records": [
     {
       "id": "ea:organization:electronic-artefacts-fr",
@@ -141,24 +141,29 @@
       "translationOf": "ea:program:oreth",
       "type": "program",
       "title": "ORETH",
-      "summary": "Un programme de recherche audio reliant analyse fréquentielle, détection d’événements, reconnaissance de motifs, écoute machine et production artistique.",
+      "summary": "Fiche publique du programme ORETH, à la fois système de recherche audio et couche technico-culturelle reliée à Palimpsests.",
       "url": "https://electronicartefacts.com/fr/programs/oreth/",
       "route": "/fr/programs/oreth/",
       "identifier": "https://electronicartefacts.com/fr/id/program/oreth/",
       "jsonLd": "https://electronicartefacts.com/fr/id/program/oreth/index.jsonld",
       "tags": [
         "ORETH",
-        "Audio",
+        "Intelligence audio",
+        "Écoute machine",
         "Traitement du signal",
-        "Apprentissage automatique",
+        "Design sonore",
+        "Palimpsests",
+        "Musique expérimentale",
         "Musique",
+        "Technologie",
         "Recherche",
-        "Technologie"
+        "Ingénierie audio",
+        "Art numérique"
       ],
       "status": "prototype",
       "confidence": "observed",
       "publishedAt": "2026-06-25",
-      "modifiedAt": "2026-06-25"
+      "modifiedAt": "2026-07-04"
     },
     {
       "id": "ea:program:oreth",
@@ -195,7 +200,7 @@
       "translationOf": "ea:program:vaste",
       "type": "program",
       "title": "VASTE",
-      "summary": "VASTE relie la théorie des moteurs à des systèmes graphiques implémentés et peut être évalué par un accès encadré au dépôt, des pilotes techniques, des missions d’implémentation et des discussions de licence.",
+      "summary": "Runtime propriétaire reliant Runtime Theory à des systèmes de graphe évaluables par dépôt encadré, pilotes, implémentation ou licence.",
       "url": "https://electronicartefacts.com/fr/programs/vaste/",
       "route": "/fr/programs/vaste/",
       "identifier": "https://electronicartefacts.com/fr/id/program/vaste/",
@@ -215,7 +220,7 @@
       "status": "development",
       "confidence": "published",
       "publishedAt": "2026-06-25",
-      "modifiedAt": "2026-06-25"
+      "modifiedAt": "2026-07-04"
     },
     {
       "id": "ea:program:vaste",
@@ -323,7 +328,7 @@
       "status": "development",
       "confidence": "observed",
       "publishedAt": "2026-06-25",
-      "modifiedAt": "2026-06-25"
+      "modifiedAt": "2026-07-04"
     },
     {
       "id": "ea:project:vestiges",
@@ -383,7 +388,7 @@
       "translationOf": "ea:researchField:runtime-theory",
       "type": "researchField",
       "title": "Théorie du runtime",
-      "summary": "Théorie du runtime cadre un champ de recherche suivi par Electronic Artefacts, en reliant questions ouvertes, prototypes, sources et hypothèses de travail.",
+      "summary": "Champ de recherche actif d’Electronic Artefacts reliant les premiers travaux VOID, VASTE et la définition d’un runtime de graphe.",
       "url": "https://electronicartefacts.com/fr/research/fields/runtime-theory/",
       "route": "/fr/research/fields/runtime-theory/",
       "identifier": "https://electronicartefacts.com/fr/id/research-field/runtime-theory/",
@@ -395,14 +400,14 @@
         "Exécution",
         "Events",
         "Primitives",
-        "Technology",
-        "Research",
-        "Systems"
+        "Technologie",
+        "Recherche",
+        "Systèmes"
       ],
       "status": "active",
       "confidence": "validated",
       "publishedAt": "2026-06-25",
-      "modifiedAt": "2026-06-25"
+      "modifiedAt": "2026-07-04"
     },
     {
       "id": "ea:publication:ai-agents-vs-ai-workflows-fr",
@@ -5338,7 +5343,7 @@
       "translationOf": "ea:collection:knowledge-hub-foundations",
       "type": "collection",
       "title": "Fondations du hub de connaissance",
-      "summary": "Fondations du hub de connaissance rassemble des fiches liées par un même axe éditorial, afin de donner une progression lisible aux archives de connaissance d'Electronic Artefacts.",
+      "summary": "Collection fondatrice du Knowledge Hub reliant concepts, technologies, programmes, projets et publications d’Electronic Artefacts.",
       "url": "https://electronicartefacts.com/fr/archive/collections/knowledge-hub-foundations/",
       "route": "/fr/archive/collections/knowledge-hub-foundations/",
       "identifier": "https://electronicartefacts.com/fr/id/collection/knowledge-hub-foundations/",
@@ -5349,7 +5354,7 @@
         "collection éditoriale",
         "fondations",
         "bibliothèque de recherche",
-        "Semantic Publishing",
+        "Publication sémantique",
         "systèmes de connaissance",
         "archives",
         "programmation créative",
@@ -5359,7 +5364,7 @@
       "status": "active",
       "confidence": "published",
       "publishedAt": "2026-06-25",
-      "modifiedAt": "2026-06-25"
+      "modifiedAt": "2026-07-04"
     },
     {
       "id": "ea:collection:knowledge-hub-second-wave-fr",
@@ -5367,7 +5372,7 @@
       "translationOf": "ea:collection:knowledge-hub-second-wave",
       "type": "collection",
       "title": "Hub de connaissance, deuxième vague",
-      "summary": "Hub de connaissance, deuxième vague rassemble des fiches liées par un même axe éditorial, afin de donner une progression lisible aux archives de connaissance d'Electronic Artefacts.",
+      "summary": "Collection éditoriale de la deuxième vague du Knowledge Hub, conçue pour relier recherche culturelle, technologies web, design et intelligence artificielle.",
       "url": "https://electronicartefacts.com/fr/archive/collections/knowledge-hub-second-wave/",
       "route": "/fr/archive/collections/knowledge-hub-second-wave/",
       "identifier": "https://electronicartefacts.com/fr/id/collection/knowledge-hub-second-wave/",
@@ -5387,7 +5392,7 @@
       "status": "active",
       "confidence": "published",
       "publishedAt": "2026-06-25",
-      "modifiedAt": "2026-06-25"
+      "modifiedAt": "2026-07-04"
     },
     {
       "id": "ea:collection:knowledge-hub-fourth-wave-fr",
@@ -5395,7 +5400,7 @@
       "translationOf": "ea:collection:knowledge-hub-fourth-wave",
       "type": "collection",
       "title": "Hub de connaissance, quatrième vague",
-      "summary": "Hub de connaissance, quatrième vague rassemble des fiches liées par un même axe éditorial, afin de donner une progression lisible aux archives de connaissance d'Electronic Artefacts.",
+      "summary": "Collection sur les protocoles d’outillage IA, provenance des médias, inférence locale, archives, observabilité des agents et SEO de graphes.",
       "url": "https://electronicartefacts.com/fr/archive/collections/knowledge-hub-fourth-wave/",
       "route": "/fr/archive/collections/knowledge-hub-fourth-wave/",
       "identifier": "https://electronicartefacts.com/fr/id/collection/knowledge-hub-fourth-wave/",
@@ -5410,13 +5415,13 @@
         "infrastructure culturelle",
         "intelligence artificielle",
         "systèmes de connaissance",
-        "Digital Préservation",
+        "préservation numérique",
         "architecture logicielle"
       ],
       "status": "active",
       "confidence": "published",
       "publishedAt": "2026-06-25",
-      "modifiedAt": "2026-06-25"
+      "modifiedAt": "2026-07-04"
     },
     {
       "id": "ea:collection:knowledge-hub-third-wave-fr",
@@ -5424,7 +5429,7 @@
       "translationOf": "ea:collection:knowledge-hub-third-wave",
       "type": "collection",
       "title": "Hub de connaissance, troisième vague",
-      "summary": "Hub de connaissance, troisième vague rassemble des fiches liées par un même axe éditorial, afin de donner une progression lisible aux archives de connaissance d'Electronic Artefacts.",
+      "summary": "Collection Electronic Artefacts sur l’IA durable, l’architecture des systèmes, les graphes de connaissance et les runtimes orientés domaine.",
       "url": "https://electronicartefacts.com/fr/archive/collections/knowledge-hub-third-wave/",
       "route": "/fr/archive/collections/knowledge-hub-third-wave/",
       "identifier": "https://electronicartefacts.com/fr/id/collection/knowledge-hub-third-wave/",
@@ -5444,7 +5449,7 @@
       "status": "active",
       "confidence": "published",
       "publishedAt": "2026-06-25",
-      "modifiedAt": "2026-06-25"
+      "modifiedAt": "2026-07-04"
     },
     {
       "id": "ea:collection:knowledge-hub-foundations",

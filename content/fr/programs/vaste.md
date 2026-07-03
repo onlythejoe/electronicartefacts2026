@@ -5,13 +5,11 @@ translationOf: ea:program:vaste
 slug:
   canonical: vaste
 title: VASTE
-subtitle: Moteur propriétaire
-abstract: VASTE est le principal moteur propriétaire développé et commercialisé
-  par Electronic Artefacts pour les architectures graphiques, l’exécution
-  contextuelle, les systèmes d’identité et la construction de mondes modulaires.
-description: VASTE relie la théorie des moteurs à des systèmes graphiques
-  implémentés et peut être évalué par un accès encadré au dépôt, des pilotes
-  techniques, des missions d’implémentation et des discussions de licence.
+subtitle: Runtime propriétaire
+abstract: VASTE est le runtime propriétaire d’Electronic Artefacts pour
+  architectures de graphe, exécution contextuelle, identité et mondes modulaires.
+description: Runtime propriétaire reliant Runtime Theory à des systèmes de
+  graphe évaluables par dépôt encadré, pilotes, implémentation ou licence.
 locale: fr
 visibility: public
 publicationClass: canonical
@@ -22,16 +20,16 @@ version:
   version: 1.0.0
   createdAt: 2024-01-01
   publishedAt: 2026-06-25
-  modifiedAt: 2026-06-25
+  modifiedAt: 2026-07-04
 authors:
   - id: ea:organization:electronic-artefacts
 publisher: ea:organization:electronic-artefacts
-mandate: Développer un moteur graphique réutilisable pour l’exécution
+mandate: Développer un runtime de graphe réutilisable pour l’exécution
   contextuelle, l’identité, les structures de connaissance, la simulation et les
   systèmes modulaires.
 domain: Runtime Systems
 capabilities:
-  - Entités graphiques adressables
+  - Entités de graphe adressables
   - Relations typées
   - Exécution contextuelle
   - Identité et permissions
@@ -40,15 +38,15 @@ capabilities:
   - Revue encadrée du dépôt
   - Fondations pour pilotes et licences
 architecture:
-  - Couche d’entités graphiques
+  - Couche d’entités de graphe
   - Couche de contexte et d’identité
   - Couche d’exécution des événements
   - Couche de projection et d’interfaces publiques
 lifecycle:
   - Héritage d’ARCA en 2023
   - Fondation conceptuelle en 2024
-  - Prototype du moteur en 2025
-  - Évolution du moteur graphique en 2026
+  - Prototype du runtime en 2025
+  - Évolution du runtime de graphe en 2026
 maintainers:
   - id: ea:organization:electronic-artefacts
 officialUrl: https://www.vaste.space/
@@ -67,9 +65,9 @@ disciplines:
 
 ## Mandat
 
-VASTE est le principal moteur propriétaire développé au sein d’Electronic Artefacts. Il explore les architectures graphiques, l’exécution contextuelle, les systèmes d’identité, les environnements de simulation, les structures de connaissance et la construction de mondes modulaires.
+VASTE est le principal runtime propriétaire développé au sein d’Electronic Artefacts. Il explore les architectures de graphe, l’exécution contextuelle, les systèmes d’identité, les environnements de simulation, les structures de connaissance et la construction de mondes modulaires.
 
-Le programme n’est pas présenté uniquement comme un objet de recherche. Il constitue un actif technique pouvant être évalué, testé dans un pilote, licencié ou utilisé comme fondation d’une mission d’implémentation lorsqu’un partenaire a besoin d’une infrastructure graphique, de flux sensibles à l’identité ou d’une architecture de connaissance.
+Le programme n’est pas présenté uniquement comme un objet de recherche. Il constitue un actif technique pouvant être évalué, testé dans un pilote, licencié ou utilisé comme fondation d’une mission d’implémentation lorsqu’un partenaire a besoin d’une infrastructure fondée sur un graphe, de flux sensibles à l’identité ou d’une architecture de connaissance.
 
 ## Accès commercial
 
@@ -89,7 +87,7 @@ Une demande d’accès doit préciser le cas d’usage, l’organisation ou l’
 
 Une revue qualifiée peut couvrir les éléments techniques et stratégiques nécessaires avant une décision de pilote ou de licence :
 
-- Modèle d’entités et de relations structurant les fiches graphiques.
+- Modèle d’entités et de relations structurant les fiches du graphe.
 - Frontières d’identité, de permissions et de contexte.
 - Propagation d’événements et modèles de projection.
 - Intégration des interfaces publiques et conception des routes.
@@ -98,16 +96,16 @@ Une revue qualifiée peut couvrir les éléments techniques et stratégiques né
 
 ## Fondation de recherche
 
-Le programme rend opérationnelle la théorie des moteurs. Il traite entités, relations, identité et contexte comme des préoccupations exécutables du système, et pas seulement comme des questions de base de données ou d’interface.
+Le programme rend Runtime Theory opérationnelle. Il traite entités, relations, identité et contexte comme des préoccupations exécutables du système, et pas seulement comme des questions de base de données ou d’interface.
 
 ## Architecture
 
-L’architecture actuelle repose sur des entités graphiques adressables, des relations typées, une identité contextuelle et la propagation d’événements. Les applications publiques peuvent construire des interfaces spécialisées tout en conservant une sémantique commune.
+L’architecture actuelle repose sur des entités de graphe adressables, des relations typées, une identité contextuelle et la propagation d’événements. Les applications publiques peuvent construire des interfaces spécialisées tout en conservant une sémantique commune.
 
 Le programme s’organise en plusieurs couches :
 
 - Couche d’entités : fiches canoniques, références typées, identifiants routables et publication sémantique.
-- Couche relationnelle : prédicats explicites, contexte bidirectionnel et vues graphiques locales.
+- Couche relationnelle : prédicats explicites, contexte bidirectionnel et vues locales du graphe.
 - Couche d’identité et de permissions : limites pour utilisateurs, organisations, mainteneurs, accès et visibilité.
 - Couche d’exécution : changements d’état, propagation et réponses du système.
 - Couche de projection : pages publiques, interfaces produit, documents de recherche, flux et interfaces externes.
@@ -117,7 +115,7 @@ Le programme s’organise en plusieurs couches :
 
 VASTE est pertinent lorsque le problème produit est structurel plutôt que cosmétique. Il convient aux équipes qui doivent modéliser personnes, artefacts, droits, preuves, histoires, flux, projets, institutions ou nœuds de connaissance comme des entités connectées et évolutives.
 
-Les cas adaptés comprennent les plateformes de connaissance, infrastructures culturelles, archives, catalogues, fondations, collections, flux graphiques soumis à permissions et architectures réutilisables entre plusieurs interfaces publiques.
+Les cas adaptés comprennent les plateformes de connaissance, infrastructures culturelles, archives, catalogues, fondations, collections, workflows de graphe soumis à permissions et architectures réutilisables entre plusieurs interfaces publiques.
 
 Les pages promotionnelles ponctuelles, le commerce électronique standard ou les projets où un CMS conventionnel suffit constituent de moins bons cas d’usage.
 
@@ -127,7 +125,7 @@ VASTE est issu d’ARCA, un système antérieur consacré aux actifs numériques
 
 ## Implémentations
 
-Vestiges est le principal produit public utilisé pour démontrer le moteur dans un contexte concret de connaissance et d’économie. Il applique le modèle graphique à la culture, aux savoir-faire et aux pratiques humaines.
+Vestiges est le principal produit public utilisé pour démontrer le runtime dans un contexte concret de connaissance et d’économie. Il applique le modèle de graphe à la culture, aux savoir-faire et aux pratiques humaines.
 
 D’autres programmes et projets Electronic Artefacts héritent du même modèle : fiches structurées, surfaces de publication réutilisables, héritage explicite, accès encadré et architecture prête pour l’implémentation.
 

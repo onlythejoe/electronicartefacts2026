@@ -6,10 +6,10 @@
       "@id": "https://electronicartefacts.com/fr/archive/collections/knowledge-hub-fourth-wave/#webpage",
       "url": "https://electronicartefacts.com/fr/archive/collections/knowledge-hub-fourth-wave/",
       "name": "Hub de connaissance, quatrième vague",
-      "description": "Hub de connaissance, quatrième vague rassemble des fiches liées par un même axe éditorial, afin de donner une progression lisible aux archives de connaissance d'Electronic Artefacts.",
+      "description": "Collection sur les protocoles d’outillage IA, provenance des médias, inférence locale, archives, observabilité des agents et SEO de graphes.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
-      "dateModified": "2026-06-25",
+      "dateModified": "2026-07-04",
       "primaryImageOfPage": {
         "@type": "ImageObject",
         "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-search.jpg",
@@ -34,8 +34,8 @@
       "@id": "https://electronicartefacts.com/fr/id/collection/knowledge-hub-fourth-wave/",
       "identifier": "ea:collection:knowledge-hub-fourth-wave-fr",
       "name": "Hub de connaissance, quatrième vague",
-      "abstract": "Hub de connaissance, quatrième vague rassemble des fiches liées par un même axe éditorial, afin de donner une progression lisible aux archives de connaissance d'Electronic Artefacts.",
-      "description": "Hub de connaissance, quatrième vague rassemble des fiches liées par un même axe éditorial, afin de donner une progression lisible aux archives de connaissance d'Electronic Artefacts.",
+      "abstract": "Hub de connaissance, quatrième vague couvre MCP, C2PA, WebNN, IIIF, OpenTelemetry, recherche IA, gouvernance, injection de prompt et identité vérifiable.",
+      "description": "Hub de connaissance, quatrième vague couvre MCP, C2PA, WebNN, IIIF, OpenTelemetry, recherche IA, gouvernance, injection de prompt et identité vérifiable.",
       "url": "https://electronicartefacts.com/fr/archive/collections/knowledge-hub-fourth-wave/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/archive/collections/knowledge-hub-fourth-wave/#webpage"
@@ -64,13 +64,13 @@
         "infrastructure culturelle",
         "intelligence artificielle",
         "systèmes de connaissance",
-        "Digital Préservation",
+        "préservation numérique",
         "architecture logicielle"
       ],
       "inLanguage": "fr",
       "dateCreated": "2026-06-24",
       "datePublished": "2026-06-25",
-      "dateModified": "2026-06-25",
+      "dateModified": "2026-07-04",
       "publisher": {
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
@@ -78,7 +78,7 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 77
+      "wordCount": 245
     },
     {
       "@type": "Organization",

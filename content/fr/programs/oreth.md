@@ -5,13 +5,11 @@ translationOf: ea:program:oreth
 slug:
   canonical: oreth
 title: ORETH
-subtitle: Recherche et intelligence audio
-abstract: ORETH est un programme expérimental consacré à l’observation,
-  l’analyse et la transformation de phénomènes sonores complexes par le
-  traitement du signal, l’apprentissage automatique et la création musicale.
-description: Un programme de recherche audio reliant analyse fréquentielle,
-  détection d’événements, reconnaissance de motifs, écoute machine et production
-  artistique.
+subtitle: Programme d’intelligence audio
+abstract: ORETH relie intelligence audio, recherche artistique, signal, motifs,
+  mémoire, écoute machine et production musicale expérimentale.
+description: Fiche publique du programme ORETH, à la fois système de recherche
+  audio et couche technico-culturelle reliée à Palimpsests.
 locale: fr
 visibility: public
 publicationClass: canonical
@@ -22,71 +20,77 @@ version:
   version: 1.0.0
   createdAt: 2024-01-01
   publishedAt: 2026-06-25
-  modifiedAt: 2026-06-25
+  modifiedAt: 2026-07-04
 authors:
   - id: ea:organization:electronic-artefacts
 publisher: ea:organization:electronic-artefacts
-mandate: Développer un environnement de recherche pour observer, analyser et
-  transformer des phénomènes sonores complexes tout en maintenant une continuité
-  avec la création musicale.
+mandate: Développer un programme de recherche audio reliant écoute machine,
+  analyse du signal, reconnaissance de motifs et production artistique.
 domain: Audio Intelligence
 capabilities:
-  - Analyse fréquentielle
-  - Détection d’événements
-  - Reconnaissance de motifs
-  - Visualisation audio
-  - Expérimentation d’apprentissage automatique
-  - Composition et transformation sonore
+  - Observation fréquentielle
+  - Détection d’événements et de transitoires
+  - Reconnaissance de motifs dans les matériaux sonores
+  - Recherche en écoute machine
+  - Production musicale expérimentale
+  - Interprétation d’archives audio
+  - Soutien à la recherche Palimpsests
 architecture:
   - Couche d’acquisition et de préparation audio
-  - Couche d’analyse du signal
-  - Couche de détection et de classification
-  - Couche de visualisation et d’interaction
-  - Couche de création et de publication
+  - Couche d’analyse et d’extraction de caractéristiques
+  - Couche d’interprétation des motifs
+  - Couche de production artistique et d’archive
 lifecycle:
   - Fondation expérimentale en 2024
   - Prototypes Python et signal en 2025
-  - Consolidation éditoriale et artistique en 2026
+  - Couche de publication liée à Palimpsests en 2026
 maintainers:
   - id: ea:organization:electronic-artefacts
 tags:
-  - Audio
+  - Intelligence audio
+  - Écoute machine
   - Traitement du signal
-  - Apprentissage automatique
-  - Musique
-  - Recherche
+  - Design sonore
+  - Palimpsests
+  - Musique expérimentale
 disciplines:
-  - Technologie
   - Musique
+  - Technologie
   - Recherche
+  - Ingénierie audio
+  - Art numérique
 ---
 
 ## Mandat
 
-ORETH est le programme de recherche audio d’Electronic Artefacts. Il étudie les phénomènes acoustiques complexes par l’analyse fréquentielle, la détection d’événements, la reconnaissance de motifs et l’apprentissage adaptatif.
+ORETH est le programme d’Electronic Artefacts qui traite le son comme matière et comme preuve. Il relie la production audio à des questions de recherche sur le signal, la mémoire, les motifs, le bruit et les systèmes d’écoute.
 
-Le programme maintient une double orientation. Il construit des outils techniques pour observer le son, mais il utilise également ces outils comme matière de création, d’écoute critique et de publication artistique.
+Le programme ne désigne pas seulement une identité musicale. Il constitue une couche de recherche pour comprendre comment un matériau sonore peut être observé, segmenté, transformé et conservé sans être réduit à un fichier neutre.
 
-## Origine
+## Position de recherche
 
-Les premiers prototypes ont été développés en Python avec des bibliothèques telles que Librosa, NumPy et PyQtGraph. Ils ont permis d’explorer la représentation de spectres, la segmentation d’événements, la comparaison de motifs et la visualisation en temps réel.
+ORETH se situe entre ingénierie audio, écoute machine, design sonore et travail d’archive. Sa position reste volontairement expérimentale : l’analyse aide à comprendre une structure sonore, mais elle ne remplace pas le jugement artistique.
 
-## Architecture de recherche
+Le programme est lié à Palimpsests parce que ce projet rend explicites la mémoire, l’héritage et la transmission. Dans le son, cette logique apparaît à travers la saturation, l’échantillonnage, l’acoustique d’un lieu, l’historique de compression, les bruits de fond, les résidus spectraux et les motifs répétés.
 
-ORETH distingue plusieurs couches : acquisition du signal, préparation, extraction de caractéristiques, observation temporelle et fréquentielle, détection, interprétation, visualisation et restitution. Cette séparation permet de modifier une méthode d’analyse sans confondre l’observation technique avec le résultat artistique.
+## Périmètre technique
 
-## Écoute machine
+Le périmètre technique comprend l’analyse fréquentielle, la détection d’attaques et de transitoires, la comparaison de segments, l’annotation du signal, l’extraction de caractéristiques audio, l’inspection visuelle, les interfaces prototypes et les notes de recherche.
 
-L’écoute machine ne remplace pas l’écoute humaine. Elle fournit une autre échelle d’observation, capable de suivre des répétitions, variations ou événements difficiles à percevoir dans un flux long. Les résultats doivent rester interprétables et reliés à leur source.
+Les premiers essais autour d’outils audio Python, d’analyse numérique et de visualisation informent le programme, mais la fiche publique documente d’abord les concepts et méthodes plutôt qu’un paquet de production déjà stabilisé.
 
-## Applications artistiques
+## Périmètre artistique
 
-Palimpsests constitue l’une des principales applications publiques du programme. Les recherches sur les traces, la mémoire sonore, les couches et la transformation alimentent la composition et la structure éditoriale du cycle.
+ORETH nomme aussi la couche artistique publique qui porte le cycle Palimpsests. La sortie artistique doit rester lisible comme musique d’abord. La couche de recherche explique les relations entre écoute, analyse et mémoire sans transformer l’œuvre en démonstration technique.
+
+## Applications
+
+Le programme peut soutenir la recherche en écoute machine pour les usages créatifs, l’annotation d’artefacts audio, les archives sonores où la provenance compte, les systèmes de composition fondés sur la récurrence et la transformation, ainsi que de futurs outils d’inspection du processus audio.
 
 ## Limites
 
-ORETH reste expérimental. Les modèles d’analyse peuvent produire des classifications fragiles ou dépendantes du corpus. Les résultats techniques ne doivent pas être présentés comme une vérité objective sur une œuvre ou un phénomène sonore.
+ORETH reste un programme prototype actif. Les affirmations publiques doivent rester limitées aux concepts documentés, aux fiches de projet et aux artefacts conservés. Les performances, modèles ou systèmes de production nécessitent des preuves séparées avant de devenir canoniques.
 
-## État actuel
+## Références
 
-Le programme est au stade du prototype. Les prochaines étapes concernent la documentation des modules, la stabilisation des formats d’analyse, l’évaluation sur des corpus définis et l’intégration de visualisations plus accessibles.
+Cette fiche s’appuie sur l’archive Electronic Artefacts, le dossier Palimpsests, Runtime Theory, les recherches sur l’archéologie du signal et les notes de production audio conservées par le studio.
