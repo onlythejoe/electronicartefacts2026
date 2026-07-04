@@ -12162,6 +12162,29 @@ body {
   hyphens: manual;
 }
 
+figcaption span,
+figcaption strong,
+.home-intent-stage__frame figcaption strong,
+.intent-media-stack figcaption strong,
+.home-cinematic-hero__frame figcaption strong,
+.work-hero__media-grid figcaption strong,
+.projects-hero__frame figcaption strong,
+.detail-hero__visual figcaption strong,
+.program-commercial-hero__media figcaption strong,
+.project-immersive__frame figcaption strong,
+.project-gallery figcaption strong,
+.project-moodboard__asset figcaption strong,
+.card-media-plate figcaption strong {
+  min-width: 0;
+  max-width: 100%;
+  overflow: visible;
+  text-overflow: clip;
+  white-space: normal;
+  overflow-wrap: break-word;
+  word-break: normal;
+  hyphens: manual;
+}
+
 @media (max-width: 48rem) {
   .display-title {
     line-height: 1.02;
