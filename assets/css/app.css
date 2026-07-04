@@ -15151,3 +15151,233 @@ body[data-page="home"] .home-intent-stage__channels {
     min-height: clamp(16.5rem, 72vw, 19rem);
   }
 }
+
+/* Typography resilience pass: predictable wrapping across languages and viewports. */
+html {
+  overflow-wrap: break-word;
+  word-break: normal;
+  line-break: auto;
+}
+
+body {
+  hyphens: auto;
+}
+
+:where(
+  h1,
+  h2,
+  h3,
+  h4,
+  .display-title,
+  .card__title,
+  .section-head h2,
+  .section-head h3,
+  .generated-hub-card .card__title,
+  .quick-view__body h2,
+  .article-body__frame h2,
+  .article-body__frame h3
+) {
+  max-width: 100%;
+  overflow-wrap: break-word;
+  word-break: normal;
+  hyphens: manual;
+  text-wrap: balance;
+}
+
+.display-title {
+  line-height: 0.98;
+  overflow-wrap: break-word;
+  word-break: normal;
+  hyphens: manual;
+}
+
+:where(
+  p,
+  li,
+  blockquote,
+  .lede,
+  .card__copy,
+  .panel p,
+  .article-body__frame,
+  .article-body__frame p,
+  .article-body__frame li,
+  .quick-view__body p,
+  .footer-stack span
+) {
+  overflow-wrap: break-word;
+  word-break: normal;
+  hyphens: auto;
+  text-wrap: pretty;
+}
+
+:where(
+  .eyebrow,
+  .card__meta,
+  .metadata-row dt,
+  .relation-item__label,
+  .archive-card__fact span,
+  .program-registry-card__fact span,
+  .metric-pill span,
+  .taxonomy-panel__drawer-heading strong,
+  .taxonomy-panel__drawer-heading span
+) {
+  max-width: 100%;
+  line-height: 1.24;
+  overflow-wrap: break-word;
+  word-break: normal;
+  hyphens: manual;
+}
+
+:where(
+  a,
+  button,
+  .button,
+  .site-nav a,
+  .chip,
+  .tag,
+  .filter-chip,
+  .status-badge,
+  .entity-badge,
+  .graph-root,
+  .language-switcher__menu button
+) {
+  min-width: 0;
+  overflow-wrap: break-word;
+  word-break: normal;
+  hyphens: manual;
+}
+
+.button,
+.site-nav a,
+.chip,
+.tag,
+.filter-chip,
+.status-badge,
+.entity-badge,
+.language-switcher__menu button {
+  white-space: normal;
+  text-align: center;
+  text-wrap: balance;
+}
+
+:where(
+  code,
+  kbd,
+  samp,
+  pre,
+  .catalog-table__id,
+  .catalog-table__title a,
+  .metadata-row dd,
+  .entity-breadcrumbs a,
+  .entity-breadcrumbs span,
+  .project-dossier-breadcrumbs a,
+  .project-dossier-breadcrumbs span,
+  .graph-surface__node-body strong,
+  .graph-surface__node-body small,
+  .language-switcher__option-copy span,
+  .language-switcher__option-copy em
+) {
+  overflow-wrap: anywhere;
+  word-break: break-word;
+  hyphens: none;
+}
+
+.taxonomy-panel--archive .taxonomy-column .filter-chip {
+  overflow: visible;
+  text-overflow: clip;
+  white-space: normal;
+}
+
+:where(
+  figcaption,
+  .home-intent-stage__frame figcaption,
+  .intent-media-stack figcaption,
+  .home-cinematic-hero__frame figcaption,
+  .work-hero__media-grid figcaption,
+  .projects-hero__frame figcaption,
+  .detail-hero__visual figcaption,
+  .program-commercial-hero__media figcaption,
+  .project-immersive__frame figcaption,
+  .project-gallery figcaption,
+  .project-moodboard__asset figcaption,
+  .card-media-plate figcaption
+) {
+  min-width: 0;
+}
+
+:where(
+  figcaption span,
+  figcaption strong,
+  .home-intent-stage__frame figcaption strong,
+  .intent-media-stack figcaption strong,
+  .home-cinematic-hero__frame figcaption strong,
+  .work-hero__media-grid figcaption strong,
+  .projects-hero__frame figcaption strong,
+  .detail-hero__visual figcaption strong,
+  .program-commercial-hero__media figcaption strong,
+  .project-immersive__frame figcaption strong,
+  .project-gallery figcaption strong,
+  .project-moodboard__asset figcaption strong,
+  .card-media-plate figcaption strong
+) {
+  min-width: 0;
+  max-width: 100%;
+  overflow: visible;
+  text-overflow: clip;
+  white-space: normal;
+  overflow-wrap: break-word;
+  word-break: normal;
+  hyphens: manual;
+}
+
+@media (max-width: 48rem) {
+  .display-title {
+    line-height: 1.02;
+  }
+
+  .section-head h2,
+  .section-head h3,
+  .card__title,
+  .generated-hub-card .card__title {
+    line-height: 1.12;
+  }
+
+  .button-row > .button,
+  .link-row > .button {
+    flex: 1 1 min(100%, 13rem);
+  }
+
+  .site-nav a {
+    line-height: 1.18;
+  }
+}
+
+@media (max-width: 36rem) {
+  .button-row,
+  .link-row,
+  .filter-summary {
+    flex-wrap: nowrap;
+  }
+
+  .button-row > .button,
+  .link-row > .button {
+    width: 100%;
+    max-width: 100%;
+    flex: 0 1 auto;
+  }
+
+  .button-row--compact {
+    flex-wrap: wrap;
+  }
+}
+
+@media (max-width: 30rem) {
+  .button-row > .button,
+  .link-row > .button {
+    flex-basis: 100%;
+  }
+
+  .display-title {
+    font-size: clamp(2.05rem, 11.2vw, 2.78rem);
+  }
+}
