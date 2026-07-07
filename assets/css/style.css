@@ -10394,13 +10394,19 @@ input:focus-visible {
   color: #1b1a18;
 }
 
-.home-intent-stage__frame--proof {
+.home-intent-stage__frame--proof[data-entry-id="oeil-de-meg"] {
   background:
-    radial-gradient(circle at 52% 28%, rgba(255, 255, 255, 0.12), transparent 30%),
-    linear-gradient(145deg, #ff9b31, #f26b1d 68%, #d95211);
+    radial-gradient(circle at 46% 32%, rgba(255, 255, 255, 0.96), transparent 38%),
+    linear-gradient(145deg, #f8f3ea 0%, #e9dfd1 58%, #d8c9b8 100%);
 }
 
-.home-intent-stage__frame--proof img {
+.home-intent-stage__frame--proof[data-entry-id="oeil-de-meg"]::after {
+  background:
+    linear-gradient(180deg, rgba(70, 57, 43, 0.01), rgba(70, 57, 43, 0.08)),
+    radial-gradient(circle at 18% 12%, rgba(255, 255, 255, 0.34), transparent 36%);
+}
+
+.home-intent-stage__frame--proof[data-entry-id="oeil-de-meg"] img {
   object-fit: contain;
   object-position: center;
   padding: clamp(0.8rem, 2.4vw, 1.35rem);
