@@ -100,6 +100,7 @@ export const organizationNode = {
   "@type": "Organization",
   "@id": `${site.origin}/id/organization/electronic-artefacts/`,
   name: site.name,
+  alternateName: [...site.alternateNames],
   url: `${site.origin}/`,
   description: site.description,
   keywords: [...site.keywords],
@@ -107,6 +108,9 @@ export const organizationNode = {
   logo: {
     "@type": "ImageObject",
     url: `${site.origin}${site.logoImage}`,
+    contentUrl: `${site.origin}${site.logoImage}`,
+    width: 1024,
+    height: 1024,
   },
   image: `${site.origin}${site.socialImage}`,
   email: site.contactEmail,
@@ -126,19 +130,12 @@ export const websiteNode = {
   "@id": `${site.origin}/#website`,
   url: `${site.origin}/`,
   name: site.name,
+  alternateName: [...site.alternateNames],
   description: site.description,
   keywords: [...site.keywords],
   dateModified: site.updatedAt,
   publisher: { "@id": `${site.origin}/id/organization/electronic-artefacts/` },
   inLanguage: site.language,
-  potentialAction: {
-    "@type": "SearchAction",
-    target: {
-      "@type": "EntryPoint",
-      urlTemplate: `${site.origin}/search/?q={search_term_string}`,
-    },
-    "query-input": "required name=search_term_string",
-  },
 };
 
 export const jsonLdFor = (entity: Entity) => {

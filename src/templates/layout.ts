@@ -21,6 +21,8 @@ export const renderLayout = ({ metadata, body, header, footer, jsonLd, pageClass
     <meta name="description" content="${escapeHtml(metadata.description)}" />
     <meta name="robots" content="${escapeHtml(metadata.robots)}" />
     <meta name="author" content="${site.name}" />
+    <meta name="application-name" content="${site.name}" />
+    <meta name="apple-mobile-web-app-title" content="${site.name}" />
     ${metadata.keywords.length ? `<meta name="keywords" content="${escapeHtml(metadata.keywords.join(", "))}" />` : ""}
     <meta name="theme-color" content="#000000" />
     <link rel="canonical" href="${escapeHtml(metadata.canonicalUrl)}" />
@@ -34,12 +36,14 @@ export const renderLayout = ({ metadata, body, header, footer, jsonLd, pageClass
     <link rel="alternate" type="application/json" href="/agent-manifest.json" title="Agent manifest" />
     <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="Electronic Artefacts Search" />
     <link rel="icon" type="image/png" sizes="192x192" href="/assets/media/projects/electronic-artefacts/electronic-artefacts-icon-192.png" />
+    <link rel="apple-touch-icon" sizes="192x192" href="/assets/media/projects/electronic-artefacts/electronic-artefacts-icon-192.png" />
     <link rel="manifest" href="/site.webmanifest" />
     <meta property="og:title" content="${escapeHtml(metadata.title)}" />
     <meta property="og:description" content="${escapeHtml(metadata.description)}" />
     <meta property="og:type" content="${escapeHtml(metadata.ogType)}" />
     <meta property="og:site_name" content="${site.name}" />
     <meta property="og:locale" content="${escapeHtml(metadata.locale || site.locale)}" />
+    <meta property="og:locale:alternate" content="${(metadata.locale || site.locale) === "fr_FR" ? "en_US" : "fr_FR"}" />
     <meta property="og:url" content="${escapeHtml(metadata.canonicalUrl)}" />
     <meta property="og:image" content="${escapeHtml(metadata.image)}" />
     <meta property="og:image:secure_url" content="${escapeHtml(metadata.image)}" />

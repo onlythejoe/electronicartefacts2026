@@ -2,9 +2,10 @@ import { defaultLocale, localeConfig } from "./i18n.js";
 
 export const site = {
   name: "Electronic Artefacts",
+  alternateNames: ["electronicArtefacts", "electronicartefacts.com"],
   origin: "https://electronicartefacts.com",
   description: "Electronic Artefacts is an independent creative technology studio for complex digital products, knowledge systems, proprietary software and research-led cultural work.",
-  updatedAt: "2026-06-25",
+  updatedAt: "2026-07-08",
   locale: localeConfig(defaultLocale).ogLocale,
   language: defaultLocale,
   publisherId: "ea:organization:electronic-artefacts",

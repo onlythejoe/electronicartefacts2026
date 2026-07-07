@@ -5,10 +5,11 @@ import { fileURLToPath } from "node:url";
 const rootDir = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const origin = "https://electronicartefacts.com";
 const siteDescription = "Electronic Artefacts is an independent creative technology studio for complex digital products, knowledge systems, proprietary software and research-led cultural work.";
-const siteUpdatedAt = "2026-06-25";
+const siteUpdatedAt = "2026-07-08";
 const socialImage = `${origin}/assets/media/projects/electronic-artefacts/electronic-artefacts-search.jpg`;
 const logoImage = `${origin}/assets/media/projects/electronic-artefacts/electronic-artefacts-logo.jpg`;
 const organizationId = `${origin}/id/organization/electronic-artefacts/`;
+const siteAlternateNames = ["electronicArtefacts", "electronicartefacts.com"];
 const siteKeywords = [
   "creative technology",
   "digital product strategy",
@@ -73,9 +74,9 @@ const frenchRoutes = {
 
 const pages = {
   "index.html": {
-    title: "Electronic Artefacts | Creative Technology Studio",
+    title: "Electronic Artefacts | Creative Technology & Design Studio",
     description:
-      "Independent creative technology studio for digital products, knowledge systems, proprietary software and research-led cultural work.",
+      "Independent creative technology studio building digital products, knowledge systems, proprietary software and cultural work.",
     canonical: "/",
     h1: "Complex digital systems, made clear.",
   },
@@ -245,68 +246,88 @@ const seoMarkup = (file, config) => {
   const robots = config.robots || "index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1";
   const canonicalMarkup = `\n    <link rel="canonical" href="${canonical}" />`;
   const frenchAlternate = frenchRoutes[file] ? `${origin}${frenchRoutes[file]}` : null;
+  const hasBreadcrumb = canonical !== `${origin}/` && canonical.startsWith(origin) && !robots.includes("noindex");
+  const breadcrumbId = `${canonical}#breadcrumb`;
+  const breadcrumbName = config.title.split("|")[0].trim();
+  const schemaGraph = [
+    {
+      "@type": "Organization",
+      "@id": organizationId,
+      name: "Electronic Artefacts",
+      alternateName: siteAlternateNames,
+      url: `${origin}/`,
+      description: siteDescription,
+      keywords: siteKeywords,
+      knowsAbout,
+      logo: {
+        "@type": "ImageObject",
+        url: logoImage,
+        contentUrl: logoImage,
+        width: 1024,
+        height: 1024,
+      },
+      image: socialImage,
+      email: "electronic.artefacts@gmail.com",
+      contactPoint: [
+        {
+          "@type": "ContactPoint",
+          email: "electronic.artefacts@gmail.com",
+          contactType: "inquiries",
+          availableLanguage: ["en", "fr"],
+        },
+      ],
+      sameAs,
+    },
+    {
+      "@type": "WebSite",
+      "@id": `${origin}/#website`,
+      url: `${origin}/`,
+      name: "Electronic Artefacts",
+      alternateName: siteAlternateNames,
+      description: siteDescription,
+      keywords: siteKeywords,
+      dateModified: siteUpdatedAt,
+      publisher: { "@id": organizationId },
+      inLanguage: "en",
+    },
+    {
+      "@type": type === "article" ? "Article" : "WebPage",
+      "@id": `${canonical}#webpage`,
+      url: canonical,
+      name: config.title,
+      headline: type === "article" ? config.title : undefined,
+      description: config.description,
+      image: socialImage,
+      primaryImageOfPage: {
+        "@type": "ImageObject",
+        url: socialImage,
+        contentUrl: socialImage,
+        width: 1200,
+        height: 630,
+      },
+      thumbnailUrl: socialImage,
+      inLanguage: "en",
+      isPartOf: { "@id": `${origin}/#website` },
+      publisher: { "@id": organizationId },
+      breadcrumb: hasBreadcrumb ? { "@id": breadcrumbId } : undefined,
+      isAccessibleForFree: true,
+    },
+  ];
+  if (hasBreadcrumb) {
+    schemaGraph.push({
+      "@type": "BreadcrumbList",
+      "@id": breadcrumbId,
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Home", item: `${origin}/` },
+        { "@type": "ListItem", position: 2, name: breadcrumbName, item: canonical },
+      ],
+    });
+  }
   const schemaMarkup = `
     <script type="application/ld+json" data-seo-schema="webpage">
       ${JSON.stringify({
         "@context": "https://schema.org",
-        "@graph": [
-          {
-            "@type": "Organization",
-            "@id": organizationId,
-            name: "Electronic Artefacts",
-            url: `${origin}/`,
-            description: siteDescription,
-            keywords: siteKeywords,
-            knowsAbout,
-            logo: {
-              "@type": "ImageObject",
-              url: logoImage,
-            },
-            image: socialImage,
-            email: "electronic.artefacts@gmail.com",
-            contactPoint: [
-              {
-                "@type": "ContactPoint",
-                email: "electronic.artefacts@gmail.com",
-                contactType: "inquiries",
-                availableLanguage: ["en", "fr"],
-              },
-            ],
-            sameAs,
-          },
-          {
-            "@type": "WebSite",
-            "@id": `${origin}/#website`,
-            url: `${origin}/`,
-            name: "Electronic Artefacts",
-            description: siteDescription,
-            keywords: siteKeywords,
-            dateModified: siteUpdatedAt,
-            publisher: { "@id": organizationId },
-            inLanguage: "en",
-            potentialAction: {
-              "@type": "SearchAction",
-              target: {
-                "@type": "EntryPoint",
-                urlTemplate: `${origin}/search/?q={search_term_string}`,
-              },
-              "query-input": "required name=search_term_string",
-            },
-          },
-          {
-            "@type": type === "article" ? "Article" : "WebPage",
-            "@id": `${canonical}#webpage`,
-            url: canonical,
-            name: config.title,
-            headline: type === "article" ? config.title : undefined,
-            description: config.description,
-            image: socialImage,
-            inLanguage: "en",
-            isPartOf: { "@id": `${origin}/#website` },
-            publisher: { "@id": organizationId },
-            isAccessibleForFree: true,
-          },
-        ].map((node) => Object.fromEntries(Object.entries(node).filter(([, value]) => value !== undefined))),
+        "@graph": schemaGraph.map((node) => Object.fromEntries(Object.entries(node).filter(([, value]) => value !== undefined))),
       }).replaceAll("<", "\\u003c")}
     </script>`;
 
@@ -314,6 +335,8 @@ const seoMarkup = (file, config) => {
     <meta name="description" content="${escapeHtml(config.description)}" />
     <meta name="robots" content="${robots}" />
     <meta name="author" content="Electronic Artefacts" />
+    <meta name="application-name" content="Electronic Artefacts" />
+    <meta name="apple-mobile-web-app-title" content="Electronic Artefacts" />
     <meta name="theme-color" content="#000000" />${canonicalMarkup}
     <link rel="alternate" hreflang="en" href="${canonical}" />${frenchAlternate ? `\n    <link rel="alternate" hreflang="fr" href="${frenchAlternate}" />` : ""}
     <link rel="alternate" hreflang="x-default" href="${canonical}" />
@@ -330,6 +353,7 @@ const seoMarkup = (file, config) => {
     <meta property="og:type" content="${type}" />
     <meta property="og:site_name" content="Electronic Artefacts" />
     <meta property="og:locale" content="en_US" />
+    <meta property="og:locale:alternate" content="fr_FR" />
     ${canonical ? `<meta property="og:url" content="${canonical}" />` : ""}
     <meta property="og:image" content="${socialImage}" />
     <meta property="og:image:secure_url" content="${socialImage}" />
@@ -350,6 +374,7 @@ const injectSeoH1 = (html, config) => {
   if (!config.h1) return html;
   const h1 = `      <h1 class="sr-only" data-seo-h1>${escapeHtml(config.h1)}</h1>\n`;
   const withoutExisting = html.replace(/\s*<h1 class="sr-only" data-seo-h1>[\s\S]*?<\/h1>\s*/g, "\n");
+  if (/<h1\b/i.test(withoutExisting)) return withoutExisting;
   return withoutExisting.replace(/(<main\b[^>]*>\s*)/, `$1\n${h1}`);
 };
 

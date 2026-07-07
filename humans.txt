@@ -12,7 +12,7 @@ Agent index: https://electronicartefacts.com/llms.txt
 Agent manifest: https://electronicartefacts.com/agent-manifest.json
 Public catalog: https://electronicartefacts.com/graph/catalog.jsonld
 Search: https://electronicartefacts.com/search/?q=knowledge%20graph
-Last updated: 2026-06-25
+Last updated: 2026-07-08
 
 /* TOPICS */
 - AI agents

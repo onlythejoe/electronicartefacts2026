@@ -150,6 +150,10 @@
       "@type": "Organization",
       "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/",
       "name": "Electronic Artefacts",
+      "alternateName": [
+        "electronicArtefacts",
+        "electronicartefacts.com"
+      ],
       "url": "https://electronicartefacts.com/",
       "description": "Electronic Artefacts is an independent creative technology studio for complex digital products, knowledge systems, proprietary software and research-led cultural work.",
       "keywords": [
@@ -182,7 +186,10 @@
       ],
       "logo": {
         "@type": "ImageObject",
-        "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-logo.jpg"
+        "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-logo.jpg",
+        "contentUrl": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-logo.jpg",
+        "width": 1024,
+        "height": 1024
       },
       "image": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-search.jpg",
       "email": "electronic.artefacts@gmail.com",
@@ -208,6 +215,10 @@
       "@id": "https://electronicartefacts.com/#website",
       "url": "https://electronicartefacts.com/",
       "name": "Electronic Artefacts",
+      "alternateName": [
+        "electronicArtefacts",
+        "electronicartefacts.com"
+      ],
       "description": "Electronic Artefacts is an independent creative technology studio for complex digital products, knowledge systems, proprietary software and research-led cultural work.",
       "keywords": [
         "creative technology",
@@ -223,19 +234,11 @@
         "software systems",
         "research publishing"
       ],
-      "dateModified": "2026-06-25",
+      "dateModified": "2026-07-08",
       "publisher": {
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
-      "inLanguage": "en",
-      "potentialAction": {
-        "@type": "SearchAction",
-        "target": {
-          "@type": "EntryPoint",
-          "urlTemplate": "https://electronicartefacts.com/search/?q={search_term_string}"
-        },
-        "query-input": "required name=search_term_string"
-      }
+      "inLanguage": "en"
     },
     {
       "@type": "BreadcrumbList",

@@ -51,8 +51,11 @@ test("JSON-LD exposes site, publisher and article evidence", async () => {
   const organization = graph.find((node) => node["@type"] === "Organization");
   assert.ok(website);
   assert.ok(organization);
-  assert.deepEqual((website.potentialAction as Record<string, unknown>)["@type"], "SearchAction");
+  assert.deepEqual(website.alternateName, ["electronicArtefacts", "electronicartefacts.com"]);
+  assert.equal(website.potentialAction, undefined);
   assert.ok(Array.isArray(organization.sameAs));
+  assert.deepEqual(organization.alternateName, ["electronicArtefacts", "electronicartefacts.com"]);
+  assert.equal((organization.logo as Record<string, unknown>).width, 1024);
 
   const primary = graph.find((node) => node["@id"] === "https://electronicartefacts.com/id/publication/knowledge-graphs-for-cultural-infrastructure/");
   assert.ok(primary);
@@ -92,7 +95,7 @@ test("sitemap excludes noindex generated search route", async () => {
   assert.match(sitemap, /<xhtml:link rel="alternate" hreflang="fr" href="https:\/\/electronicartefacts\.com\/fr\/" \/>/);
   assert.match(sitemap, /<loc>https:\/\/electronicartefacts\.com\/fr\/<\/loc>/);
   assert.match(sitemap, /xmlns:image="http:\/\/www\.google\.com\/schemas\/sitemap-image\/1\.1"/);
-  assert.match(sitemap, /<loc>https:\/\/electronicartefacts\.com\/<\/loc>.*<lastmod>2026-06-25<\/lastmod>/);
+  assert.match(sitemap, /<loc>https:\/\/electronicartefacts\.com\/<\/loc>.*<lastmod>2026-07-08<\/lastmod>/);
   assert.match(sitemap, /<image:loc>https:\/\/electronicartefacts\.com\/assets\/media\/projects\/electronic-artefacts\/electronic-artefacts-search\.jpg<\/image:loc>/);
 });
 

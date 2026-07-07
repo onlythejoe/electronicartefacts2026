@@ -19,6 +19,15 @@ npm run build
 npm run check
 ```
 
+After a successful production deployment, notify IndexNow-compatible search engines about either selected routes or the full sitemap:
+
+```sh
+npm run indexnow:submit -- /work.html /projects.html
+npm run indexnow:submit -- --all
+```
+
+Do not submit before the deployment is live: search engines verify the public key file on `electronicartefacts.com`.
+
 ## Repository Map
 
 - `content/` - source-of-truth Markdown entities and YAML relation statements.

@@ -5,6 +5,7 @@ import { fileURLToPath } from "node:url";
 const rootDir = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const origin = "https://electronicartefacts.com";
 const image = `${origin}/assets/media/projects/electronic-artefacts/electronic-artefacts-search.jpg`;
+const logo = `${origin}/assets/media/projects/electronic-artefacts/electronic-artefacts-logo.jpg`;
 
 const pages = [
   {
@@ -13,7 +14,7 @@ const pages = [
     englishRoute: "/",
     frenchRoute: "/fr/",
     title: "Electronic Artefacts | Studio de technologies créatives",
-    description: "Studio indépendant de technologies créatives pour produits numériques, systèmes de connaissance, logiciels propriétaires et création culturelle issue de la recherche.",
+    description: "Studio indépendant de technologies créatives pour produits numériques, systèmes de connaissance, logiciels et projets culturels.",
     h1: "Rendre les systèmes numériques complexes lisibles.",
   },
   {
@@ -202,11 +203,40 @@ const escapeHtml = (value) =>
     .replaceAll("<", "&lt;")
     .replaceAll(">", "&gt;");
 
+const frenchHomeShell = `      <h1 class="sr-only" data-seo-h1>Complex digital systems, made clear.</h1>
+      <section data-render="home-hero"></section>
+      <section data-render="home-vaste-banner"></section>
+      <section data-render="home-featured-paths"></section>
+      <section data-render="home-featured-work"></section>
+      <section data-render="home-featured-research"></section>
+      <section data-render="cross-navigation"></section>`;
+
+const frenchOrganizationMicrodata = `    <!-- ENTITY MICRODATA START -->
+    <meta itemprop="name" content="Electronic Artefacts" />
+    <meta itemprop="alternateName" content="electronicArtefacts" />
+    <meta itemprop="description" content="Electronic Artefacts est un studio indépendant de technologies créatives qui conçoit des produits numériques, des systèmes de connaissance, des logiciels propriétaires et des projets culturels." />
+    <link itemprop="url" href="https://electronicartefacts.com/fr/" />
+    <link itemprop="logo" href="https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-logo.jpg" />
+    <link itemprop="sameAs" href="https://www.instagram.com/electronic.artefacts/" />
+    <link itemprop="sameAs" href="https://github.com/onlythejoe" />
+    <link itemprop="sameAs" href="https://soundcloud.com/electronic-artefacts" />
+    <!-- ENTITY MICRODATA END -->`;
+
+const frenchCreativeWorkMicrodata = `      <!-- CREATIVEWORK MICRODATA START -->
+      <meta itemprop="name" content="Electronic Artefacts | Studio de technologies créatives" />
+      <meta itemprop="description" content="Studio indépendant de technologies créatives pour produits numériques, systèmes de connaissance, logiciels et projets culturels." />
+      <link itemprop="url" href="https://electronicartefacts.com/fr/" />
+      <meta itemprop="inLanguage" content="fr" />
+      <!-- CREATIVEWORK MICRODATA END -->`;
+
 const seoBlock = (page) => {
   const canonical = `${origin}${page.frenchRoute}`;
   const english = `${origin}${page.englishRoute}`;
-  const jsonLd = JSON.stringify({
-    "@context": "https://schema.org",
+  const robots = page.robots || "index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1";
+  const organizationId = `${origin}/id/organization/electronic-artefacts/`;
+  const hasBreadcrumb = page.frenchRoute !== "/fr/" && !robots.includes("noindex");
+  const breadcrumbId = `${canonical}#breadcrumb`;
+  const schemaGraph = [{
     "@type": "WebPage",
     "@id": `${canonical}#webpage`,
     url: canonical,
@@ -214,19 +244,55 @@ const seoBlock = (page) => {
     description: page.description,
     inLanguage: "fr",
     isPartOf: { "@id": `${origin}/#website` },
-    publisher: { "@id": `${origin}/id/organization/electronic-artefacts/` },
-  }).replaceAll("<", "\\u003c");
+    publisher: { "@id": organizationId },
+    breadcrumb: hasBreadcrumb ? { "@id": breadcrumbId } : undefined,
+  }];
+  if (["index.html", "about.html", "contact.html"].includes(page.source)) {
+    schemaGraph.unshift({
+      "@type": "Organization",
+      "@id": organizationId,
+      name: "Electronic Artefacts",
+      alternateName: ["electronicArtefacts", "electronicartefacts.com"],
+      url: `${origin}/`,
+      description: "Studio indépendant de technologies créatives pour produits numériques, systèmes de connaissance, logiciels et projets culturels.",
+      logo: { "@type": "ImageObject", url: logo, contentUrl: logo, width: 1024, height: 1024 },
+      email: "electronic.artefacts@gmail.com",
+      sameAs: [
+        "https://www.instagram.com/electronic.artefacts/",
+        "https://github.com/onlythejoe",
+        "https://soundcloud.com/electronic-artefacts",
+      ],
+    });
+  }
+  if (hasBreadcrumb) {
+    schemaGraph.push({
+      "@type": "BreadcrumbList",
+      "@id": breadcrumbId,
+      itemListElement: [
+        { "@type": "ListItem", position: 1, name: "Accueil", item: `${origin}/fr/` },
+        { "@type": "ListItem", position: 2, name: page.title.split("|")[0].trim(), item: canonical },
+      ],
+    });
+  }
+  const cleanSchemaGraph = schemaGraph.map((node) => Object.fromEntries(Object.entries(node).filter(([, value]) => value !== undefined)));
+  const jsonLd = JSON.stringify(cleanSchemaGraph.length === 1
+    ? { "@context": "https://schema.org", ...cleanSchemaGraph[0] }
+    : { "@context": "https://schema.org", "@graph": cleanSchemaGraph })
+    .replaceAll("<", "\\u003c");
 
   return `    <!-- SEO: generated by scripts/build-i18n-pages.mjs -->
     <meta name="description" content="${escapeHtml(page.description)}" />
-    <meta name="robots" content="${page.robots || "index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1"}" />
+    <meta name="robots" content="${robots}" />
     <meta name="author" content="Electronic Artefacts" />
+    <meta name="application-name" content="Electronic Artefacts" />
+    <meta name="apple-mobile-web-app-title" content="Electronic Artefacts" />
     <meta name="theme-color" content="#000000" />
     <link rel="canonical" href="${canonical}" />
     <link rel="alternate" hreflang="en" href="${english}" />
     <link rel="alternate" hreflang="fr" href="${canonical}" />
     <link rel="alternate" hreflang="x-default" href="${english}" />
     <link rel="icon" type="image/png" sizes="192x192" href="/assets/media/projects/electronic-artefacts/electronic-artefacts-icon-192.png" />
+    <link rel="apple-touch-icon" sizes="192x192" href="/assets/media/projects/electronic-artefacts/electronic-artefacts-icon-192.png" />
     <link rel="manifest" href="/site.webmanifest" />
     <link rel="alternate" type="application/ld+json" href="/graph/catalog.jsonld" title="Public knowledge graph catalog" />
     <link rel="alternate" type="text/plain" href="/llms.txt" title="LLM-readable site index" />
@@ -242,6 +308,9 @@ const seoBlock = (page) => {
     <meta property="og:url" content="${canonical}" />
     <meta property="og:image" content="${image}" />
     <meta property="og:image:secure_url" content="${image}" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
     <meta property="og:image:alt" content="Electronic Artefacts, studio de technologies créatives" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="${escapeHtml(page.title)}" />
@@ -255,6 +324,24 @@ const seoBlock = (page) => {
 
 for (const page of pages) {
   let html = await readFile(path.join(rootDir, page.source), "utf8");
+  if (page.source === "index.html") {
+    html = html.replace(
+      /      <!-- HOME STATIC FALLBACK START -->[\s\S]*?      <!-- HOME STATIC FALLBACK END -->/,
+      frenchHomeShell,
+    )
+      .replace(
+        /    <!-- ENTITY MICRODATA START -->[\s\S]*?    <!-- ENTITY MICRODATA END -->/,
+        frenchOrganizationMicrodata,
+      )
+      .replace(
+        /      <!-- CREATIVEWORK MICRODATA START -->[\s\S]*?      <!-- CREATIVEWORK MICRODATA END -->/,
+        frenchCreativeWorkMicrodata,
+      )
+      .replace(
+        'itemid="https://electronicartefacts.com/#webpage"',
+        'itemid="https://electronicartefacts.com/fr/#webpage"',
+      );
+  }
   html = html
     .replace('<html lang="en">', '<html lang="fr">')
     .replace("<head>", '<head>\n    <base href="/" />')

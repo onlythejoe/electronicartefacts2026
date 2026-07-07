@@ -29,6 +29,13 @@ const decodeHtml = (value) => value
   .replaceAll("&lt;", "<")
   .replaceAll("&gt;", ">");
 const stripTags = (value) => decodeHtml(value.replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim());
+const bodyText = (html) => stripTags(
+  first(html, /<body\b[^>]*>([\s\S]*?)<\/body>/i)
+    .replace(/<script\b[\s\S]*?<\/script>/gi, " ")
+    .replace(/<style\b[\s\S]*?<\/style>/gi, " ")
+    .replace(/<template\b[\s\S]*?<\/template>/gi, " "),
+);
+const wordCount = (value) => value.match(/[\p{L}\p{N}]+(?:[’'-][\p{L}\p{N}]+)*/gu)?.length || 0;
 
 const localPathFromAbsolute = (url) => {
   if (!url.startsWith(origin)) return null;
@@ -66,8 +73,20 @@ for (const file of htmlFiles.sort()) {
   const ogUrl = first(html, /<meta\s+property="og:url"\s+content="([^"]*)"/i);
   const ogImage = first(html, /<meta\s+property="og:image"\s+content="([^"]*)"/i);
   const twitterCard = first(html, /<meta\s+name="twitter:card"\s+content="([^"]*)"/i);
-  const jsonLdCount = all(html, /<script\s+type="application\/ld\+json"[^>]*>([\s\S]*?)<\/script>/gi).length;
+  const jsonLdBlocks = all(html, /<script\s+type="application\/ld\+json"[^>]*>([\s\S]*?)<\/script>/gi);
+  const jsonLdCount = jsonLdBlocks.length;
   const noindex = isNoindex(robots);
+  const schemaNodes = [];
+
+  for (const block of jsonLdBlocks) {
+    try {
+      const parsed = JSON.parse(block);
+      schemaNodes.push(...(Array.isArray(parsed?.["@graph"]) ? parsed["@graph"] : [parsed]));
+    } catch (error) {
+      issues.push([relative, `invalid JSON-LD: ${error.message}`]);
+    }
+  }
+  const schemaTypes = new Set(schemaNodes.flatMap((node) => Array.isArray(node?.["@type"]) ? node["@type"] : [node?.["@type"]]).filter(Boolean));
 
   if (!lang) issues.push([relative, "missing html lang"]);
   if (relative.startsWith("fr/") && lang !== "fr") issues.push([relative, `expected lang=fr, got ${lang || "none"}`]);
@@ -90,6 +109,53 @@ for (const file of htmlFiles.sort()) {
     indexableCanonicals.set(canonical, [...(indexableCanonicals.get(canonical) || []), relative]);
   }
 
+  if (relative === "index.html") {
+    const levels = [...html.matchAll(/<h([1-6])\b[^>]*>/gi)].map((match) => Number(match[1]));
+    const words = wordCount(bodyText(html));
+    const website = schemaNodes.find((node) => node?.["@type"] === "WebSite");
+    const organization = schemaNodes.find((node) => node?.["@type"] === "Organization");
+    if (title.length < 50 || title.length > 60) issues.push([relative, `homepage title should be 50-60 characters (${title.length})`]);
+    if (description.length < 100 || description.length > 130) issues.push([relative, `homepage description should be 100-130 characters (${description.length})`]);
+    if (words < 500) issues.push([relative, `homepage static body is too light (${words} words)`]);
+    if (!levels.includes(2)) issues.push([relative, "homepage static body is missing h2 headings"]);
+    for (let index = 1; index < levels.length; index += 1) {
+      if (levels[index] > levels[index - 1] + 1) {
+        issues.push([relative, `homepage heading hierarchy jumps from h${levels[index - 1]} to h${levels[index]}`]);
+        break;
+      }
+    }
+    if (!/href="https:\/\/www\.instagram\.com\/electronic\.artefacts\//i.test(html)) {
+      issues.push([relative, "homepage static body is missing the verified Instagram profile"]);
+    }
+    if (!/itemscope\s+itemtype="https:\/\/schema\.org\/Organization"/i.test(html)) {
+      issues.push([relative, "homepage is missing Organization microdata"]);
+    }
+    if (!/itemscope\s+itemtype="https:\/\/schema\.org\/CreativeWork"/i.test(html)) {
+      issues.push([relative, "homepage is missing CreativeWork microdata"]);
+    }
+    if (!schemaTypes.has("Organization") || !schemaTypes.has("WebPage")) {
+      issues.push([relative, "homepage JSON-LD is missing Organization or WebPage"]);
+    }
+    if (!Array.isArray(website?.alternateName) || !website.alternateName.includes("electronicartefacts.com")) {
+      issues.push([relative, "homepage WebSite JSON-LD is missing site-name alternatives"]);
+    }
+    if (organization?.logo?.width !== 1024 || organization?.logo?.height !== 1024 || !organization?.logo?.contentUrl) {
+      issues.push([relative, "homepage Organization logo is missing explicit image metadata"]);
+    }
+    if (!/<meta\s+name="application-name"\s+content="Electronic Artefacts"/i.test(html)) {
+      issues.push([relative, "homepage is missing the browser application name"]);
+    }
+    if (!/<meta\s+property="og:locale:alternate"\s+content="fr_FR"/i.test(html)) {
+      issues.push([relative, "homepage is missing the alternate Open Graph locale"]);
+    }
+  }
+
+  const isPrimaryInternalPage = (/^[^/]+\.html$/.test(relative) || /^fr\/[^/]+\.html$/.test(relative))
+    && !relative.endsWith("index.html");
+  if (!noindex && isPrimaryInternalPage && canonical.startsWith(origin) && !schemaTypes.has("BreadcrumbList")) {
+    issues.push([relative, "primary internal page is missing BreadcrumbList JSON-LD"]);
+  }
+
   if (ogImage?.startsWith(origin)) {
     const local = localPathFromAbsolute(ogImage);
     if (local && !(await exists(local))) issues.push([relative, `og:image local file missing: ${local}`]);
@@ -105,6 +171,21 @@ const sitemapLocs = new Set(all(sitemap, /<loc>([^<]+)<\/loc>/g));
 for (const canonical of indexableCanonicals.keys()) {
   if (!sitemapLocs.has(canonical)) issues.push([canonical, "indexable canonical missing from sitemap"]);
 }
+if (!/<loc>https:\/\/electronicartefacts\.com\/<\/loc>[\s\S]*?<lastmod>2026-07-08<\/lastmod>/.test(sitemap)) {
+  issues.push(["sitemap.xml", "homepage lastmod does not reflect the current search-surface update"]);
+}
+
+const manifest = JSON.parse(await readFile(path.join(rootDir, "site.webmanifest"), "utf8"));
+if (!manifest.icons?.some((icon) => icon.sizes === "192x192") || !manifest.icons?.some((icon) => icon.sizes === "512x512")) {
+  issues.push(["site.webmanifest", "manifest is missing 192px or 512px icons"]);
+}
+if (!Array.isArray(manifest.shortcuts) || manifest.shortcuts.length < 3) {
+  issues.push(["site.webmanifest", "manifest is missing primary navigation shortcuts"]);
+}
+
+const indexNowKey = "d6780748-5a16-40e1-a7e3-8849fea962e2";
+const indexNowKeyFile = (await readFile(path.join(rootDir, `${indexNowKey}.txt`), "utf8")).trim();
+if (indexNowKeyFile !== indexNowKey) issues.push([`${indexNowKey}.txt`, "IndexNow key file does not match the configured key"]);
 
 const summary = {
   htmlFiles: htmlFiles.length,
