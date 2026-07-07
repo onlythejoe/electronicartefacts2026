@@ -47,17 +47,21 @@
     <!-- /SEO -->
     <link rel="icon" type="image/x-icon" href="./favicon.ico" />
     <link rel="stylesheet" href="/assets/css/app.css?v=47" />
-    <script type="module" src="/assets/js/app.js?v=43"></script>
+    <script type="module" src="/assets/js/app.js?v=45"></script>
   </head>
   <body data-locale="fr" data-page="research">
     <a class="skip-link" href="#main">Skip to main content</a>
     <header data-include="header"></header>
 
     <main id="main" class="site-main">
-
-      <h1 class="sr-only" data-seo-h1>Une recherche qui prend la forme de systèmes, de méthodes et d’œuvres.</h1>
-<div data-include="widgets/hero/research.html"></div>
-      <section data-render="research-fields"></section>
+<h1 class="sr-only" data-seo-h1>Une recherche qui prend la forme de systèmes, de méthodes et d’œuvres.</h1>
+      <section data-render="research-fields">
+        <section class="zone-card hero seo-static-fallback">
+          <div class="section-head"><p class="eyebrow">RECHERCHE</p><h2>Une recherche qui devient systèmes, méthodes et œuvres.</h2><p class="lede">La recherche d’Electronic Artefacts s’organise autour de questions actives plutôt que d’une doctrine unique. Elle relie architecture logicielle, représentation des connaissances, mémoire culturelle, pratique créative et interaction humain-machine, puis teste ces liens par des prototypes et des systèmes opérationnels.</p></div>
+          <div class="card-grid card-grid--three"><article class="panel"><h3 class="card__title">Systèmes et infrastructures.</h3><p class="card__copy">La théorie des runtimes étudie comment des systèmes complexes restent lisibles, adaptables et gouvernables. Les travaux sur les graphes, l’exécution contextuelle, les architectures événementielles et l’observabilité prennent forme dans VASTE.</p></article><article class="panel"><h3 class="card__title">Connaissance et transmission.</h3><p class="card__copy">Graphes de connaissance, métadonnées, données liées, provenance et préservation numérique fournissent des méthodes pour conserver une information reliée et fiable à travers les interfaces.</p></article><article class="panel"><h3 class="card__title">Technologie créative et perception.</h3><p class="card__copy">Creative coding, son, graphisme procédural, IA multimodale et interaction humain-machine sont des questions techniques et culturelles. Les expériences observent ce qui émerge entre règles, personnes et médias.</p></article></div>
+          <div class="panel panel--soft"><h3 class="card__title">Les questions deviennent des preuves publiques.</h3><p class="card__copy">Les fiches citent leurs sources, exposent les concepts associés et renvoient vers les projets ou programmes qui les mettent à l’épreuve. L’ensemble forme un corpus navigable plutôt qu’un flux isolé.</p><nav class="link-row" aria-label="RECHERCHE"><a class="tag" href="/fr/publications/">Parcourir les publications</a><a class="tag" href="/fr/knowledge/">Explorer les connaissances</a><a class="tag" href="/fr/archive.html">Consulter les archives</a></nav></div>
+        </section>
+      </section>
       <section data-render="research-programs"></section>
       <section data-render="research-notes"></section>
       <section data-render="cross-navigation"></section>

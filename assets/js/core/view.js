@@ -13,8 +13,8 @@
   };
 
   const orethBannerMedia = {
-    src: "./assets/media/projects/oreth/ORETH-hero-1200.png",
-    srcset: "./assets/media/projects/oreth/ORETH-hero-800.png 800w, ./assets/media/projects/oreth/ORETH-hero-1200.png 1200w",
+    src: "./assets/media/projects/oreth/ORETH-hero-1200.webp",
+    srcset: "./assets/media/projects/oreth/ORETH-hero-800.webp 800w, ./assets/media/projects/oreth/ORETH-hero-1200.webp 1200w",
     sizes: "(max-width: 48rem) 100vw, 44vw",
     alt: "Portrait of ORETH for banner use",
     width: 1200,
@@ -1172,6 +1172,8 @@
           eyebrow: "PALIMPSESTS / ORETH",
           title: "Palimpsests",
           copy: "Palimpsests is an album cycle by ORETH, unfolding across five acts and an evolving archive.",
+          loading: "lazy",
+          fetchPriority: "low",
           tags: homeCardPills(palimpsests),
           actions: [
             { label: "Discover Palimpsests", href: "./palimpsests.html" },
@@ -1267,7 +1269,7 @@
             ${linkRow({ label: "Browse Projects", href: "./projects.html" }, [{ label: "See More Work", href: "./work.html" }])}
           </aside>
         </div>
-        <div class="selected-works-panel__grid" role="list" aria-label="Selected works">
+        <div class="selected-works-panel__grid">
           ${selectedWorksCard(lead, { featured: true })}
           <div class="selected-works-panel__stack">
             <div class="selected-works-panel__stack-head">

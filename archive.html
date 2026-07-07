@@ -48,17 +48,21 @@
     <!-- /SEO -->
     <link rel="icon" type="image/x-icon" href="./favicon.ico" />
     <link rel="stylesheet" href="./assets/css/app.css?v=47" />
-    <script type="module" src="./assets/js/app.js?v=43"></script>
+    <script type="module" src="./assets/js/app.js?v=45"></script>
   </head>
   <body data-page="archive">
     <a class="skip-link" href="#main">Skip to main content</a>
     <header data-include="header"></header>
 
     <main id="main" class="site-main">
-
-      <h1 class="sr-only" data-seo-h1>Archive of releases, prototypes and research traces.</h1>
-<div data-include="widgets/hero/archive.html"></div>
-      <section data-render="archive-taxonomy"></section>
+<h1 class="sr-only" data-seo-h1>Archive of releases, prototypes and research traces.</h1>
+      <section data-render="archive-taxonomy">
+        <section class="zone-card hero seo-static-fallback">
+          <div class="section-head"><p class="eyebrow">ARCHIVE</p><h2>A working memory of releases, prototypes and research traces.</h2><p class="lede">The archive preserves material that explains how the studio’s projects and systems developed. Releases, visual fragments, documents, prototypes and research evidence are organised with dates, status and relationships rather than presented as an undifferentiated gallery.</p></div>
+          <div class="card-grid card-grid--three"><article class="panel"><h3 class="card__title">Evidence stays connected to its origin.</h3><p class="card__copy">An artefact can point back to the project, program, person or research field that produced it. These links make the archive useful for understanding decisions and lineage, not only for revisiting a file.</p></article><article class="panel"><h3 class="card__title">Collections provide editorial paths.</h3><p class="card__copy">Curated collections group records around a thesis, period or research use. They offer a readable route through the graph while preserving the stable identity and provenance of every record.</p></article><article class="panel"><h3 class="card__title">Status prevents historical ambiguity.</h3><p class="card__copy">Active, completed, archived and experimental material remains explicitly labelled. Visitors can distinguish a current product surface from an earlier prototype without losing access to either.</p></article></div>
+          <div class="panel panel--soft"><h3 class="card__title">The archive supports reuse and accountability.</h3><p class="card__copy">Maintaining context around past work helps future research, reconstruction and collaboration. Search, filters and canonical identifiers make the material retrievable by both people and software agents.</p><nav class="link-row" aria-label="ARCHIVE"><a class="tag" href="/archive/collections/">Browse collections</a><a class="tag" href="/search/">Search records</a><a class="tag" href="/research.html">Read research</a></nav></div>
+        </section>
+      </section>
       <section data-render="archive-library"></section>
       <section data-render="cross-navigation"></section>
     </main>

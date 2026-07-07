@@ -2911,7 +2911,7 @@
     if (!media) return "";
     const href = entryHref(item);
     return `
-      <a class="home-intent-stage__frame ${esc(className)}" href="${esc(href)}" data-entry-id="${esc(item.id || "")}" data-depth="${esc(options.depth || 1)}" aria-label="Open ${esc(item.title)}">
+      <a class="home-intent-stage__frame ${esc(className)}" href="${esc(href)}" data-entry-id="${esc(item.id || "")}" data-depth="${esc(options.depth || 1)}">
         <img src="${esc(media.src)}" alt="${esc(media.alt || item.title)}" loading="${options.eager ? "eager" : "lazy"}"${options.eager ? ' fetchpriority="high"' : ""} />
         <figcaption>
           <span>${esc(options.kicker || item.category || item.type || "Project")}</span>
@@ -3873,7 +3873,7 @@
         <div class="program-commercial-hero__grid intent-hero__grid">
           <div class="section-head intent-hero__copy">
             <p class="eyebrow">PROGRAMS</p>
-            <h1 class="display-title">Proprietary systems for ambitious technical partners.</h1>
+            <h2 class="display-title">Proprietary systems for ambitious technical partners.</h2>
             <p class="lede">Electronic Artefacts develops reusable software programs for knowledge, production and cultural platforms. Partners can review the code, test a focused pilot, commission an implementation or discuss licensing.</p>
             <div class="button-row button-row--compact">
               <a class="button button--primary" href="${esc(programAccessMailto)}">Request repo access</a>
@@ -4144,7 +4144,7 @@
         <div class="projects-hero__grid intent-hero__grid">
           <div class="section-head intent-hero__copy">
             <p class="eyebrow">PROJECTS</p>
-          <h1 class="display-title">Projects where research takes form.</h1>
+          <h2 class="display-title">Projects where research takes form.</h2>
           <p class="lede">Cultural works, proprietary platforms and client products reveal different sides of the same practice: turning complex ideas into experiences people can use, understand or feel.</p>
             <div class="button-row">
               <a class="button button--primary" href="./work.html">See Client Work</a>

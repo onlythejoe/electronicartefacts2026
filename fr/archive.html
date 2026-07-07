@@ -47,17 +47,21 @@
     <!-- /SEO -->
     <link rel="icon" type="image/x-icon" href="./favicon.ico" />
     <link rel="stylesheet" href="/assets/css/app.css?v=47" />
-    <script type="module" src="/assets/js/app.js?v=43"></script>
+    <script type="module" src="/assets/js/app.js?v=45"></script>
   </head>
   <body data-locale="fr" data-page="archive">
     <a class="skip-link" href="#main">Skip to main content</a>
     <header data-include="header"></header>
 
     <main id="main" class="site-main">
-
-      <h1 class="sr-only" data-seo-h1>Archives de publications, prototypes et traces de recherche.</h1>
-<div data-include="widgets/hero/archive.html"></div>
-      <section data-render="archive-taxonomy"></section>
+<h1 class="sr-only" data-seo-h1>Archives de publications, prototypes et traces de recherche.</h1>
+      <section data-render="archive-taxonomy">
+        <section class="zone-card hero seo-static-fallback">
+          <div class="section-head"><p class="eyebrow">ARCHIVES</p><h2>Une mémoire active des publications, prototypes et traces de recherche.</h2><p class="lede">Les archives préservent les matériaux qui expliquent le développement des projets et systèmes du studio. Publications, fragments visuels, documents, prototypes et preuves de recherche sont organisés par dates, états et relations plutôt que présentés comme une galerie indifférenciée.</p></div>
+          <div class="card-grid card-grid--three"><article class="panel"><h3 class="card__title">Chaque preuve reste reliée à son origine.</h3><p class="card__copy">Un artefact peut renvoyer au projet, au programme, à la personne ou au domaine de recherche qui l’a produit. Ces liens permettent de comprendre décisions et filiations au-delà de la consultation d’un fichier.</p></article><article class="panel"><h3 class="card__title">Les collections proposent des parcours éditoriaux.</h3><p class="card__copy">Des collections organisées regroupent les fiches autour d’une thèse, d’une période ou d’un usage. Elles offrent une lecture du graphe tout en conservant identité stable et provenance.</p></article><article class="panel"><h3 class="card__title">Les états évitent l’ambiguïté historique.</h3><p class="card__copy">Les matériaux actifs, terminés, archivés ou expérimentaux restent clairement identifiés. Il devient possible de distinguer une surface actuelle d’un ancien prototype sans perdre leur contexte.</p></article></div>
+          <div class="panel panel--soft"><h3 class="card__title">Les archives soutiennent réutilisation et responsabilité.</h3><p class="card__copy">Conserver le contexte du travail passé facilite recherche, reconstruction et collaboration futures. Recherche, filtres et identifiants canoniques rendent les matériaux accessibles aux personnes comme aux agents logiciels.</p><nav class="link-row" aria-label="ARCHIVES"><a class="tag" href="/archive/collections/">Parcourir les collections</a><a class="tag" href="/fr/search.html">Rechercher les fiches</a><a class="tag" href="/fr/research.html">Lire la recherche</a></nav></div>
+        </section>
+      </section>
       <section data-render="archive-library"></section>
       <section data-render="cross-navigation"></section>
     </main>

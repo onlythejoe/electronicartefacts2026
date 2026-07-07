@@ -19,6 +19,7 @@
     <link rel="icon" type="image/png" sizes="192x192" href="/assets/media/projects/electronic-artefacts/electronic-artefacts-icon-192.png" />
     <link rel="apple-touch-icon" sizes="192x192" href="/assets/media/projects/electronic-artefacts/electronic-artefacts-icon-192.png" />
     <link rel="manifest" href="/site.webmanifest" />
+    <link rel="preload" as="image" href="/assets/media/projects/vestiges/logo-vestiges.png" fetchpriority="high" />
     <link rel="alternate" type="application/ld+json" href="/graph/catalog.jsonld" title="Public knowledge graph catalog" />
     <link rel="alternate" type="text/plain" href="/llms.txt" title="LLM-readable site index" />
     <link rel="alternate" type="application/json" href="/agent-manifest.json" title="Agent manifest" />
@@ -47,7 +48,7 @@
     <!-- /SEO -->
     <link rel="icon" type="image/x-icon" href="./favicon.ico" />
     <link rel="stylesheet" href="/assets/css/app.css?v=47" />
-    <script type="module" src="/assets/js/app.js?v=44"></script>
+    <script type="module" src="/assets/js/app.js?v=45"></script>
   </head>
   <body data-locale="fr" data-page="home" itemscope itemtype="https://schema.org/Organization" itemid="https://electronicartefacts.com/id/organization/electronic-artefacts/">
     <!-- ENTITY MICRODATA START -->
@@ -64,15 +65,20 @@
     <header data-include="header"></header>
 
     <main id="main" class="site-main" itemscope itemtype="https://schema.org/CreativeWork" itemid="https://electronicartefacts.com/fr/#webpage">
-      <!-- CREATIVEWORK MICRODATA START -->
+<!-- CREATIVEWORK MICRODATA START -->
       <meta itemprop="name" content="Electronic Artefacts | Studio de technologies créatives" />
       <meta itemprop="description" content="Studio indépendant de technologies créatives pour produits numériques, systèmes de connaissance, logiciels et projets culturels." />
       <link itemprop="url" href="https://electronicartefacts.com/fr/" />
       <meta itemprop="inLanguage" content="fr" />
       <!-- CREATIVEWORK MICRODATA END -->
-
-      <h1 class="sr-only" data-seo-h1>Rendre les systèmes numériques complexes lisibles.</h1>
-      <section data-render="home-hero"></section>
+<h1 class="sr-only" data-seo-h1>Rendre les systèmes numériques complexes lisibles.</h1>
+      <section data-render="home-hero">
+        <section class="zone-card hero seo-static-fallback">
+          <div class="section-head"><p class="eyebrow">ELECTRONIC ARTEFACTS</p><h2>Des systèmes numériques complexes rendus lisibles.</h2><p class="lede">Electronic Artefacts est un studio indépendant de technologies créatives. Le studio conçoit des produits clients, développe des systèmes propriétaires et publie des recherches et œuvres culturelles. Stratégie, interface, ingénierie, architecture de connaissance et pratique éditoriale sont considérées comme les parties d’un même système.</p></div>
+          <div class="card-grid card-grid--three"><article class="panel"><h3 class="card__title">Des produits conçus de la stratégie à la production.</h3><p class="card__copy">Les missions clients réunissent définition produit, expérience utilisateur, langage visuel et développement. Elles peuvent concerner une création, une plateforme existante à clarifier ou un système fragile qui exige investigation et reconstruction.</p></article><article class="panel"><h3 class="card__title">VASTE, fondation des systèmes de connaissance.</h3><p class="card__copy">VASTE fournit une logique réutilisable pour l’identité, le contexte, les relations, les permissions et l’exécution modulaire. Cette architecture soutient des plateformes dont la cohérence doit survivre à la croissance.</p></article><article class="panel"><h3 class="card__title">Une recherche traduite en projets et archives.</h3><p class="card__copy">Les travaux sur les graphes de connaissance, la mémoire numérique, l’IA, le son et les systèmes génératifs deviennent des publications, des prototypes ou des logiciels. Les archives préservent leurs preuves et leur filiation.</p></article></div>
+          <div class="panel panel--soft"><h3 class="card__title">Trois pratiques, une même exigence de clarté.</h3><p class="card__copy">Missions clients, technologie propriétaire et édition culturelle répondent à des besoins différents tout en partageant une attention commune pour la structure, la durabilité et le contexte.</p><nav class="link-row" aria-label="ELECTRONIC ARTEFACTS"><a class="tag" href="/fr/work.html">Voir les expertises</a><a class="tag" href="/fr/projects.html">Explorer les projets</a><a class="tag" href="/fr/contact.html">Contacter le studio</a></nav></div>
+        </section>
+      </section>
       <section data-render="home-vaste-banner"></section>
       <section data-render="home-featured-paths"></section>
       <section data-render="home-featured-work"></section>

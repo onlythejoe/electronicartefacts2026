@@ -48,17 +48,21 @@
     <!-- /SEO -->
     <link rel="icon" type="image/x-icon" href="./favicon.ico" />
     <link rel="stylesheet" href="./assets/css/app.css?v=47" />
-    <script type="module" src="./assets/js/app.js?v=43"></script>
+    <script type="module" src="./assets/js/app.js?v=45"></script>
   </head>
   <body data-page="research">
     <a class="skip-link" href="#main">Skip to main content</a>
     <header data-include="header"></header>
 
     <main id="main" class="site-main">
-
-      <h1 class="sr-only" data-seo-h1>Research that becomes systems, methods and works.</h1>
-<div data-include="widgets/hero/research.html"></div>
-      <section data-render="research-fields"></section>
+<h1 class="sr-only" data-seo-h1>Research that becomes systems, methods and works.</h1>
+      <section data-render="research-fields">
+        <section class="zone-card hero seo-static-fallback">
+          <div class="section-head"><p class="eyebrow">RESEARCH</p><h2>Research that becomes systems, methods and works.</h2><p class="lede">Research at Electronic Artefacts is organised around active questions rather than a single doctrine. It connects software architecture, knowledge representation, cultural memory, creative practice and human-computer interaction, then tests those connections through prototypes, publications and operational systems.</p></div>
+          <div class="card-grid card-grid--three"><article class="panel"><h3 class="card__title">Systems and infrastructure.</h3><p class="card__copy">Runtime theory asks how complex systems can remain legible, adaptable and governed. Work on graph runtimes, contextual execution, event-driven architecture and observability becomes concrete through VASTE and related experiments.</p></article><article class="panel"><h3 class="card__title">Knowledge and transmission.</h3><p class="card__copy">Knowledge graphs, metadata, linked data, provenance and digital preservation provide methods for keeping information connected and trustworthy across archives, public pages and changing interfaces.</p></article><article class="panel"><h3 class="card__title">Creative technology and perception.</h3><p class="card__copy">Creative coding, sound, procedural graphics, multimodal AI and human-computer interaction are technical and cultural questions. Experiments examine what emerges when rules, people, media and environments interact.</p></article></div>
+          <div class="panel panel--soft"><h3 class="card__title">Questions move into public evidence.</h3><p class="card__copy">Research records cite sources, expose related concepts and connect to the projects or programs that test them. The result is a navigable body of work rather than a disconnected stream of articles.</p><nav class="link-row" aria-label="RESEARCH"><a class="tag" href="/publications/">Browse publications</a><a class="tag" href="/knowledge/">Explore knowledge</a><a class="tag" href="/archive.html">Inspect the archive</a></nav></div>
+        </section>
+      </section>
       <section data-render="research-programs"></section>
       <section data-render="research-notes"></section>
       <section data-render="cross-navigation"></section>

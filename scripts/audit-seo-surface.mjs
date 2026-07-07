@@ -5,6 +5,10 @@ const rootDir = process.cwd();
 const origin = "https://electronicartefacts.com";
 const ignoredDirs = new Set([".git", "node_modules"]);
 const htmlFiles = [];
+const staticFallbackPages = new Set([
+  "work.html", "projects.html", "programs.html", "research.html", "archive.html", "about.html", "contact.html",
+  "fr/index.html", "fr/work.html", "fr/projects.html", "fr/programs.html", "fr/research.html", "fr/archive.html", "fr/about.html", "fr/contact.html",
+]);
 
 const walk = async (dir) => {
   for (const entry of await readdir(dir, { withFileTypes: true })) {
@@ -154,6 +158,16 @@ for (const file of htmlFiles.sort()) {
     && !relative.endsWith("index.html");
   if (!noindex && isPrimaryInternalPage && canonical.startsWith(origin) && !schemaTypes.has("BreadcrumbList")) {
     issues.push([relative, "primary internal page is missing BreadcrumbList JSON-LD"]);
+  }
+  if (!noindex && canonical.startsWith(origin) && !["index.html", "fr/index.html"].includes(relative) && !schemaTypes.has("BreadcrumbList")) {
+    issues.push([relative, "indexable internal page is missing BreadcrumbList JSON-LD"]);
+  }
+  if (staticFallbackPages.has(relative)) {
+    const words = wordCount(bodyText(html));
+    if (words < 170) issues.push([relative, `primary page static fallback is too light (${words} words)`]);
+    if (!/<section\s+data-render="[^"]+">[\s\S]*?<h2\b/i.test(html)) {
+      issues.push([relative, "primary page is missing a rendered static h2 fallback"]);
+    }
   }
 
   if (ogImage?.startsWith(origin)) {

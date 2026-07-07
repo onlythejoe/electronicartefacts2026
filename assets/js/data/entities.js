@@ -858,11 +858,11 @@ window.EA_ENTITIES = {
         folder: "./assets/media/artists/marjolaine-muller",
         gallery: [
           {
-            src: "./assets/media/artists/marjolaine-muller/photomarjo.png",
+            src: "./assets/media/artists/marjolaine-muller/photomarjo-1800.webp",
             alt: "Portrait of Marjolaine MULLER",
             caption: "Portrait used for the Marjolaine MULLER artist profile.",
-            width: 3398,
-            height: 2193,
+            width: 1800,
+            height: 1162,
           },
         ],
       },
@@ -2064,11 +2064,11 @@ window.EA_ENTITIES = {
         folder: "./assets/media/projects/unionmob",
         gallery: [
           {
-            src: "./assets/media/projects/unionmob/unionmob-world.jpg",
+            src: "./assets/media/projects/unionmob/unionmob-world-900.webp",
             alt: "UnionMob spherical visual composed of compass interfaces and UnionMob marks",
             caption: "UnionMob visual universe.",
-            width: 1405,
-            height: 1820,
+            width: 900,
+            height: 1166,
           },
           {
             src: "./assets/media/projects/unionmob/unionmob-logo.svg",
@@ -2261,9 +2261,11 @@ window.EA_ENTITIES = {
             caption: "Backend page used to manage equipment content.",
           },
           {
-            src: "./assets/media/projects/oeil-de-meg/oeil-de-meg-services-equipment.png",
+            src: "./assets/media/projects/oeil-de-meg/oeil-de-meg-services-equipment-1800.webp",
             alt: "Service page with camera diagram",
             caption: "Equipment and service breakdown page.",
+            width: 1800,
+            height: 1038,
           },
           {
             src: "./assets/media/projects/oeil-de-meg/oeil-de-meg-pagespeed-desktop.png",

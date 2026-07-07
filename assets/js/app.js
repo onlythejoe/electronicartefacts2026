@@ -931,11 +931,11 @@ window.EA_ENTITIES = {
         "folder": "./assets/media/artists/marjolaine-muller",
         "gallery": [
           {
-            "src": "./assets/media/artists/marjolaine-muller/photomarjo.png",
+            "src": "./assets/media/artists/marjolaine-muller/photomarjo-1800.webp",
             "alt": "Portrait of Marjolaine MULLER",
             "caption": "Portrait used for the Marjolaine MULLER artist profile.",
-            "width": 3398,
-            "height": 2193
+            "width": 1800,
+            "height": 1162
           }
         ]
       },
@@ -3192,11 +3192,11 @@ window.EA_ENTITIES = {
         "folder": "./assets/media/projects/unionmob",
         "gallery": [
           {
-            "src": "./assets/media/projects/unionmob/unionmob-world.jpg",
+            "src": "./assets/media/projects/unionmob/unionmob-world-900.webp",
             "alt": "UnionMob spherical visual composed of compass interfaces and UnionMob marks",
             "caption": "UnionMob visual universe.",
-            "width": 1405,
-            "height": 1820
+            "width": 900,
+            "height": 1166
           },
           {
             "src": "./assets/media/projects/unionmob/unionmob-logo.svg",
@@ -3553,9 +3553,11 @@ window.EA_ENTITIES = {
             "caption": "Backend page used to manage equipment content."
           },
           {
-            "src": "./assets/media/projects/oeil-de-meg/oeil-de-meg-services-equipment.png",
+            "src": "./assets/media/projects/oeil-de-meg/oeil-de-meg-services-equipment-1800.webp",
             "alt": "Service page with camera diagram",
-            "caption": "Equipment and service breakdown page."
+            "caption": "Equipment and service breakdown page.",
+            "width": 1800,
+            "height": 1038
           },
           {
             "src": "./assets/media/projects/oeil-de-meg/oeil-de-meg-pagespeed-desktop.png",
@@ -17591,8 +17593,8 @@ window.EA_SEARCH = {
   };
 
   const orethBannerMedia = {
-    src: "./assets/media/projects/oreth/ORETH-hero-1200.png",
-    srcset: "./assets/media/projects/oreth/ORETH-hero-800.png 800w, ./assets/media/projects/oreth/ORETH-hero-1200.png 1200w",
+    src: "./assets/media/projects/oreth/ORETH-hero-1200.webp",
+    srcset: "./assets/media/projects/oreth/ORETH-hero-800.webp 800w, ./assets/media/projects/oreth/ORETH-hero-1200.webp 1200w",
     sizes: "(max-width: 48rem) 100vw, 44vw",
     alt: "Portrait of ORETH for banner use",
     width: 1200,
@@ -18750,6 +18752,8 @@ window.EA_SEARCH = {
           eyebrow: "PALIMPSESTS / ORETH",
           title: "Palimpsests",
           copy: "Palimpsests is an album cycle by ORETH, unfolding across five acts and an evolving archive.",
+          loading: "lazy",
+          fetchPriority: "low",
           tags: homeCardPills(palimpsests),
           actions: [
             { label: "Discover Palimpsests", href: "./palimpsests.html" },
@@ -18845,7 +18849,7 @@ window.EA_SEARCH = {
             ${linkRow({ label: "Browse Projects", href: "./projects.html" }, [{ label: "See More Work", href: "./work.html" }])}
           </aside>
         </div>
-        <div class="selected-works-panel__grid" role="list" aria-label="Selected works">
+        <div class="selected-works-panel__grid">
           ${selectedWorksCard(lead, { featured: true })}
           <div class="selected-works-panel__stack">
             <div class="selected-works-panel__stack-head">
@@ -25144,7 +25148,7 @@ window.EA_SEARCH = {
     if (!media) return "";
     const href = entryHref(item);
     return `
-      <a class="home-intent-stage__frame ${esc(className)}" href="${esc(href)}" data-entry-id="${esc(item.id || "")}" data-depth="${esc(options.depth || 1)}" aria-label="Open ${esc(item.title)}">
+      <a class="home-intent-stage__frame ${esc(className)}" href="${esc(href)}" data-entry-id="${esc(item.id || "")}" data-depth="${esc(options.depth || 1)}">
         <img src="${esc(media.src)}" alt="${esc(media.alt || item.title)}" loading="${options.eager ? "eager" : "lazy"}"${options.eager ? ' fetchpriority="high"' : ""} />
         <figcaption>
           <span>${esc(options.kicker || item.category || item.type || "Project")}</span>
@@ -26106,7 +26110,7 @@ window.EA_SEARCH = {
         <div class="program-commercial-hero__grid intent-hero__grid">
           <div class="section-head intent-hero__copy">
             <p class="eyebrow">PROGRAMS</p>
-            <h1 class="display-title">Proprietary systems for ambitious technical partners.</h1>
+            <h2 class="display-title">Proprietary systems for ambitious technical partners.</h2>
             <p class="lede">Electronic Artefacts develops reusable software programs for knowledge, production and cultural platforms. Partners can review the code, test a focused pilot, commission an implementation or discuss licensing.</p>
             <div class="button-row button-row--compact">
               <a class="button button--primary" href="${esc(programAccessMailto)}">Request repo access</a>
@@ -26377,7 +26381,7 @@ window.EA_SEARCH = {
         <div class="projects-hero__grid intent-hero__grid">
           <div class="section-head intent-hero__copy">
             <p class="eyebrow">PROJECTS</p>
-          <h1 class="display-title">Projects where research takes form.</h1>
+          <h2 class="display-title">Projects where research takes form.</h2>
           <p class="lede">Cultural works, proprietary platforms and client products reveal different sides of the same practice: turning complex ideas into experiences people can use, understand or feel.</p>
             <div class="button-row">
               <a class="button button--primary" href="./work.html">See Client Work</a>

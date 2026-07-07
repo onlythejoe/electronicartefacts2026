@@ -381,6 +381,27 @@ ${hubCards(items, locale).trimStart()}
     </section>`;
   const url = `https://electronicartefacts.com${route}`;
   const itemListId = `${url}#itemlist`;
+  const breadcrumbId = `${url}#breadcrumb`;
+  const localeRoot = locale === "fr" ? "/fr/" : "/";
+  const relativeSegments = route.slice(localeRoot.length).split("/").filter(Boolean);
+  const breadcrumbLabels: Record<string, Record<HubLocale, string>> = {
+    archive: { en: "Archive", fr: "Archives" },
+    knowledge: { en: "Knowledge", fr: "Connaissances" },
+    publications: { en: "Publications", fr: "Publications" },
+  };
+  let breadcrumbRoute = localeRoot;
+  const breadcrumbItems = [
+    { "@type": "ListItem", position: 1, name: locale === "fr" ? "Accueil" : "Home", item: `${origin}${localeRoot}` },
+    ...relativeSegments.map((segment, index) => {
+      breadcrumbRoute += `${segment}/`;
+      return {
+        "@type": "ListItem",
+        position: index + 2,
+        name: index === relativeSegments.length - 1 ? title : breadcrumbLabels[segment]?.[locale] || segment,
+        item: `${origin}${breadcrumbRoute}`,
+      };
+    }),
+  ];
   const hubJsonLd = {
     "@context": "https://schema.org",
     "@graph": [
@@ -394,6 +415,7 @@ ${hubCards(items, locale).trimStart()}
         isPartOf: { "@id": "https://electronicartefacts.com/#website" },
         publisher: { "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/" },
         mainEntity: { "@id": itemListId },
+        breadcrumb: { "@id": breadcrumbId },
       },
       {
         "@type": "ItemList",
@@ -410,6 +432,11 @@ ${hubCards(items, locale).trimStart()}
       },
       organizationNode,
       websiteNode,
+      {
+        "@type": "BreadcrumbList",
+        "@id": breadcrumbId,
+        itemListElement: breadcrumbItems,
+      },
     ],
   };
   await writeText(routeToFile(rootDir, route), renderLayout({
