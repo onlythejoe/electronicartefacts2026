@@ -116,3 +116,64 @@ test("dynamic localization scopes mutation work to the changed subtree", async (
   assert.equal(harness.walkedRoots.length, 1);
   assert.equal(harness.walkedRoots[0], link, "the observer should localize only the changed link subtree");
 });
+
+test("language switcher preserves query strings and fragments on legacy detail pages", async () => {
+  const source = await readFile(path.resolve("assets/js/core/behaviors.js"), "utf8");
+  let assignedUrl = "";
+  const optionNodes = ["en", "fr"].map((language) => ({
+    title: "",
+    classList: { toggle() {} },
+    getAttribute: (name: string) => name === "data-language-option" ? language : null,
+    setAttribute() {},
+    addEventListener() {},
+  }));
+  const root = {
+    dataset: {},
+    classList: { toggle() {}, contains: () => false },
+    querySelector: (selector: string) => {
+      if (selector === "[data-language-menu]") return { hidden: false, addEventListener() {} };
+      if (selector === "[data-language-current]") return { textContent: "" };
+      if (selector === "[data-language-status]") return { textContent: "" };
+      return { setAttribute() {}, addEventListener() {} };
+    },
+    querySelectorAll: (selector: string) => selector === "[data-language-option]" ? optionNodes : [],
+  };
+  const context = {
+    URL,
+    window: {
+      EA_UTILS: { esc: (value: unknown) => String(value ?? ""), slugify: (value: unknown) => String(value ?? "") },
+      EA_I18N: { translateText: (value: string) => value },
+      location: {
+        origin: "https://electronicartefacts.com",
+        href: "https://electronicartefacts.com/fr/program.html?id=oraclehub#runtime",
+        pathname: "/fr/program.html",
+        assign: (target: string) => {
+          assignedUrl = target;
+        },
+      },
+      localStorage: { getItem: () => null, setItem() {} },
+      requestAnimationFrame: (callback: () => void) => callback(),
+      setTimeout,
+    },
+    document: {
+      documentElement: { dataset: {} },
+      querySelector: (selector: string) => selector === "[data-language-switcher]" ? root : null,
+      addEventListener() {},
+    },
+    navigator: {
+      languages: ["en-US"],
+      language: "en-US",
+    },
+    fetch: async () => ({
+      ok: true,
+      json: async () => ({
+        "/fr/program.html": { en: "/program.html", fr: "/fr/program.html" },
+      }),
+    }),
+  };
+
+  vm.runInNewContext(source, context, { filename: "assets/js/core/behaviors.js" });
+  await (context.window as typeof context.window & { EA_BEHAVIORS: { initLanguageSwitcher: () => Promise<void> } }).EA_BEHAVIORS.initLanguageSwitcher();
+
+  assert.equal(assignedUrl, "/program.html?id=oraclehub#runtime");
+});

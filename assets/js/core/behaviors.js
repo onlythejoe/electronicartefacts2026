@@ -75,8 +75,15 @@
     };
 
     const alternates = await fetchAlternates();
-    const currentPath = normalizePath(window.location.href);
+    const currentUrl = new URL(window.location.href, window.location.origin);
+    const currentPath = normalizePath(currentUrl.href);
     const currentAlternates = alternates[currentPath] || alternates[normalizePath(currentPath)] || { [routeLocale(currentPath)]: currentPath };
+    const preserveCurrentUrlState = (target) => {
+      const targetUrl = new URL(target, window.location.origin);
+      if (!targetUrl.search && currentUrl.search) targetUrl.search = currentUrl.search;
+      if (!targetUrl.hash && currentUrl.hash) targetUrl.hash = currentUrl.hash;
+      return `${targetUrl.pathname}${targetUrl.search}${targetUrl.hash}`;
+    };
 
     const setOpen = (open) => {
       root.classList.toggle("is-open", open);
@@ -113,7 +120,7 @@
       const active = routeLocale(currentPath);
       sync(language);
       if (target && normalizePath(target) !== currentPath) {
-        window.location.assign(target);
+        window.location.assign(preserveCurrentUrlState(target));
         return;
       }
       if (manual && language !== active && !target) {
