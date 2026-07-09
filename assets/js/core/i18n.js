@@ -534,6 +534,8 @@
     "Related software": "Logiciel relié",
     "Repository": "Dépôt",
     "Documentation": "Documentation",
+    "Previous": "Précédent",
+    "Next": "Suivant",
     "Previous Question": "Question précédente",
     "Next Question": "Question suivante",
     "Research questions": "Questions de recherche",

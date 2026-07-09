@@ -445,34 +445,86 @@
       .filter(Boolean)
       .slice(0, 10);
   };
+  const researchGraphNodeLimit = 7;
+  const researchGraphPositions = [
+    { x: "-12rem", y: "-7rem", z: "-13rem" },
+    { x: "11rem", y: "-7.5rem", z: "12rem" },
+    { x: "-14rem", y: "-0.5rem", z: "7rem" },
+    { x: "14rem", y: "0.75rem", z: "-8rem" },
+    { x: "-9rem", y: "8.75rem", z: "11rem" },
+    { x: "9rem", y: "9.25rem", z: "-11rem" },
+    { x: "0rem", y: "-13rem", z: "6rem" },
+    { x: "0rem", y: "13rem", z: "-5rem" },
+    { x: "-17rem", y: "5.5rem", z: "-2rem" },
+    { x: "17rem", y: "5.25rem", z: "2rem" },
+  ];
+  const researchNodeData = (question) => atlasNodes(question).slice(0, researchGraphNodeLimit);
+  const researchGraphStyle = (node, index) => {
+    const position = researchGraphPositions[index % researchGraphPositions.length];
+    const color = node ? nodeColorFor(node.type || node.kind || node.group, index) : "rgba(234, 220, 207, 0.9)";
+    return `--x:${position.x};--y:${position.y};--z:${position.z};--mobile-x:${scaleLength(position.x, 0.2)};--mobile-y:${scaleLength(position.y, 0.2)};--mobile-z:${scaleLength(position.z, 0.16)};--node-color:${color};--node-delay:${index * 42}ms;`;
+  };
   const researchNodeMarkup = (question) => {
-    const nodes = atlasNodes(question);
-    const total = Math.max(1, nodes.length);
-    return nodes
-      .map((node, index) => {
-        const angle = -112 + (index * 360 / total);
-        const radius = index % 2 === 0 ? 38 : 30;
-        const rawX = 50 + Math.cos((angle * Math.PI) / 180) * radius;
-        const rawY = 50 + Math.sin((angle * Math.PI) / 180) * (radius * 0.74);
-        const x = Math.min(80, Math.max(20, rawX));
-        const y = Math.min(84, Math.max(16, rawY));
-        const route = routeForRecord(node);
-        const tag = route ? "a" : "span";
-        const attrs = route ? `href="${esc(route)}"` : "";
-        return `
-          <${tag}
-            class="research-atlas__node research-atlas__node--${esc(String(node.type || node.group || "related"))}"
-            ${attrs}
-            data-research-atlas-node
-            data-node-index="${index}"
-            data-node-group="${esc(node.group || node.type || "related")}"
-            style="--node-x:${x.toFixed(2)}%;--node-y:${y.toFixed(2)}%;--node-color:${esc(nodeColorFor(node.type || node.kind || node.group, index))};--node-delay:${index * 44}ms;"
-          >
-            <span class="research-atlas__node-pin" aria-hidden="true"></span>
-            <span class="research-atlas__node-label"><strong>${esc(node.title || node.label || "Related")}</strong><small>${esc(nodeKindLabel(node))}</small></span>
-          </${tag}>`;
-      })
-      .join("");
+    const nodes = researchNodeData(question);
+    return Array.from({ length: researchGraphNodeLimit }, (_, index) => {
+      const node = nodes[index];
+      const label = node?.title || node?.label || "Related";
+      const note = node ? nodeKindLabel(node) : "";
+      const group = String(node?.type || node?.group || "related").replace(/[^a-z0-9-]/gi, "").toLowerCase();
+      const route = node ? routeForRecord(node) || routeForRecord(question) || "./research.html" : "#";
+      const hidden = !node;
+      return `
+        <a
+          class="graph-surface__node research-atlas__node research-atlas__node--${esc(group)}${index < 2 ? " is-emphasis" : ""}"
+          href="${esc(route)}"
+          data-graph-node
+          data-research-atlas-node
+          data-node-index="${index}"
+          data-node-label="${esc(label)}"
+          data-node-note="${esc(note)}"
+          data-node-group="${esc(group)}"
+          data-node-hidden="${hidden ? "true" : "false"}"
+          aria-label="${esc(note ? `${label} - ${note}` : label)}"
+          ${hidden ? 'hidden aria-hidden="true" tabindex="-1"' : ""}
+          style="${esc(researchGraphStyle(node, index))}"
+        >
+          <span class="graph-surface__node-pin research-atlas__node-pin" aria-hidden="true"></span>
+          <span class="graph-surface__node-body research-atlas__node-label">
+            <strong>${esc(label)}</strong>
+            ${note ? `<small>${esc(note)}</small>` : "<small></small>"}
+          </span>
+        </a>`;
+    }).join("");
+  };
+  const syncResearchGraphNodes = (atlas, question) => {
+    const nodes = researchNodeData(question);
+    const elements = [...atlas.querySelectorAll("[data-research-atlas-node]")];
+    elements.forEach((element, index) => {
+      const node = nodes[index];
+      const label = node?.title || node?.label || "Related";
+      const note = node ? nodeKindLabel(node) : "";
+      const group = String(node?.type || node?.group || "related").replace(/[^a-z0-9-]/gi, "").toLowerCase();
+      const route = node ? routeForRecord(node) || routeForRecord(question) || "./research.html" : "#";
+      const hidden = !node;
+
+      element.hidden = hidden;
+      element.toggleAttribute("aria-hidden", hidden);
+      element.setAttribute("tabindex", hidden ? "-1" : "0");
+      element.setAttribute("href", route);
+      element.setAttribute("data-node-label", label);
+      element.setAttribute("data-node-note", note);
+      element.setAttribute("data-node-group", group);
+      element.setAttribute("data-node-hidden", hidden ? "true" : "false");
+      element.setAttribute("data-node-reset", "true");
+      element.setAttribute("aria-label", note ? `${label} - ${note}` : label);
+      element.className = `graph-surface__node research-atlas__node research-atlas__node--${group}${index < 2 ? " is-emphasis" : ""}`;
+      element.setAttribute("style", researchGraphStyle(node, index));
+
+      const title = element.querySelector("strong");
+      const small = element.querySelector("small");
+      if (title) title.textContent = label;
+      if (small) small.textContent = note;
+    });
   };
   const researchDots = (questions, activeIndex) => questions
     .map((question, index) => `<button type="button" data-research-atlas-dot="${index}" aria-current="${index === activeIndex ? "true" : "false"}" aria-label="${esc(translate("Open research question"))} ${index + 1}" class="${index === activeIndex ? "is-active" : ""}"><span>${esc(researchNumber(question, index))}</span></button>`)
@@ -561,14 +613,18 @@
     return `
       <section class="zone-card hero research-atlas intent-hero intent-hero--research" id="research-atlas" data-research-atlas tabindex="0" aria-labelledby="research-atlas-title">
         <div class="research-atlas__layout">
-          <aside class="research-atlas__projection" aria-label="${esc(translate("Animated research graph"))}">
-            <div class="research-atlas__graph" data-research-atlas-graph>
-              <canvas class="research-atlas__canvas" data-research-atlas-canvas aria-hidden="true"></canvas>
-              <div class="research-atlas__core" aria-hidden="true">
+          <aside class="research-atlas__projection graph-surface graph-surface--research-atlas is-visible" data-graph-surface aria-label="${esc(translate("Animated research graph"))}">
+            <div class="graph-surface__stage research-atlas__graph" data-research-atlas-graph>
+              <canvas class="graph-surface__canvas research-atlas__canvas" aria-hidden="true"></canvas>
+              <div class="graph-surface__grid" aria-hidden="true"></div>
+              <div class="graph-surface__halo" aria-hidden="true"></div>
+              <div class="graph-surface__ring graph-surface__ring--outer" aria-hidden="true"></div>
+              <div class="graph-surface__ring graph-surface__ring--inner" aria-hidden="true"></div>
+              <div class="graph-surface__core research-atlas__core" aria-hidden="true">
                 <span>${esc(translate("Question"))}</span>
                 <strong data-research-atlas-core>${esc(researchCoreNumber(active, 0))}</strong>
               </div>
-              <div class="research-atlas__nodes" data-research-atlas-nodes>
+              <div class="graph-surface__nodes research-atlas__nodes" data-research-atlas-nodes>
                 ${researchNodeMarkup(active)}
               </div>
             </div>
@@ -579,11 +635,11 @@
           </article>
         </div>
         <div class="research-atlas__nav">
-          <button type="button" class="button button--secondary" data-research-atlas-prev><span aria-hidden="true">←</span> ${esc(translate("Previous Question"))}</button>
+          <button type="button" class="button button--secondary" data-research-atlas-prev aria-label="${esc(translate("Previous Question"))}"><span aria-hidden="true">←</span> <span>${esc(translate("Previous"))}</span></button>
           <div class="research-atlas__dots" data-research-atlas-dots aria-label="${esc(translate("Research questions"))}">
             ${researchDots(questions, 0)}
           </div>
-          <button type="button" class="button button--secondary" data-research-atlas-next>${esc(translate("Next Question"))} <span aria-hidden="true">→</span></button>
+          <button type="button" class="button button--secondary" data-research-atlas-next aria-label="${esc(translate("Next Question"))}"><span>${esc(translate("Next"))}</span> <span aria-hidden="true">→</span></button>
         </div>
       </section>
     `;
@@ -785,8 +841,10 @@
         ctx.stroke();
       }
 
-      const orbit1 = minDim * 0.38;
-      const orbit2 = minDim * 0.22;
+      const isResearchAtlasGraph = context.surface.classList.contains("graph-surface--research-atlas");
+      const compactGraph = isResearchAtlasGraph && minDim < 380;
+      const orbit1 = minDim * (compactGraph ? 0.43 : 0.38);
+      const orbit2 = minDim * (compactGraph ? 0.3 : 0.22);
       ctx.strokeStyle = "rgba(255,255,255,0.08)";
       ctx.lineWidth = 1;
       ctx.beginPath();
@@ -804,13 +862,35 @@
       ctx.lineWidth = 1.2;
       ctx.stroke();
 
-      const positions = context.nodes.map((node, index) => {
-        const angle = t * 0.25 + index * (Math.PI * 2 / context.nodes.length);
-        const radiusBase = orbit1 - 26 - index * 5;
+      const activeNodes = context.nodes.filter((node) =>
+        !node.el.hidden &&
+        node.el.dataset.nodeHidden !== "true" &&
+        window.getComputedStyle(node.el).display !== "none"
+      );
+      if (!activeNodes.length) return;
+
+      const positions = activeNodes.map((node, index) => {
+        if (node.el.dataset.nodeReset === "true") {
+          node.dragX = 0;
+          node.dragY = 0;
+          node.el.dataset.nodeReset = "false";
+        }
+        node.color = node.el.style.getPropertyValue("--node-color") || node.color || "rgba(234,220,207,0.9)";
+        const angle = t * 0.25 + index * (Math.PI * 2 / activeNodes.length);
+        const nodeWidth = node.el.offsetWidth || 104;
+        const nodeHeight = node.el.offsetHeight || 68;
+        const edgePadding = isResearchAtlasGraph ? 34 : 16;
+        const maxRadiusX = Math.max(minDim * 0.18, width / 2 - nodeWidth / 2 - edgePadding);
+        const maxRadiusY = Math.max(minDim * 0.14, height / 2 - nodeHeight / 2 - edgePadding);
+        const radiusBase = Math.max(
+          minDim * 0.16,
+          Math.min(orbit1 - (compactGraph ? 14 : 26) - index * (compactGraph ? 2 : 5), maxRadiusX),
+        );
+        const yOrbit = Math.max(minDim * 0.12, Math.min(orbit2, maxRadiusY));
         const wobble = Math.sin(t * 1.2 + index) * 12;
         const depth = Math.sin(t * 0.9 + index * 1.3);
         const baseX = centerX + Math.cos(angle) * (radiusBase + wobble * 0.25);
-        const baseY = centerY + Math.sin(angle * 0.95) * (orbit2 + wobble * 0.15);
+        const baseY = centerY + Math.sin(angle * 0.95) * (yOrbit + wobble * 0.15);
         const x = node.isDragging ? node.pointerX : baseX + node.dragX;
         const y = node.isDragging ? node.pointerY : baseY + node.dragY;
         const radius = 14 + (depth + 1) * 4;
@@ -942,6 +1022,7 @@
     contexts.forEach((context) => {
       context.nodes.forEach((node, nodeIndex) => {
         node.el.addEventListener("pointerdown", (event) => {
+          if (node.el.hidden || node.el.dataset.nodeHidden === "true") return;
           event.preventDefault();
           const rect = context.stage.getBoundingClientRect();
           const pointerX = event.clientX - rect.left;
@@ -998,38 +1079,40 @@
     atlases.forEach((atlas) => {
       atlas.dataset.boundResearchAtlas = "true";
       const panel = atlas.querySelector("[data-research-atlas-panel]");
-      const nodes = atlas.querySelector("[data-research-atlas-nodes]");
       const dots = atlas.querySelector("[data-research-atlas-dots]");
       const core = atlas.querySelector("[data-research-atlas-core]");
       const graphLink = atlas.querySelector("[data-research-atlas-graph-link]");
-      const graph = atlas.querySelector("[data-research-atlas-graph]");
-      const canvas = atlas.querySelector("[data-research-atlas-canvas]");
-      const ctx = canvas?.getContext("2d");
       let activeIndex = 0;
       let lastNavigation = 0;
-      let rafId = 0;
-      let visible = true;
       let touchStartX = 0;
       let touchStartY = 0;
 
-      const setActive = (nextIndex, direction = 1) => {
+      const setActive = (nextIndex, direction = 1, options = {}) => {
         const normalized = (nextIndex + questions.length) % questions.length;
         if (normalized === activeIndex && panel?.dataset.ready === "true") return;
         activeIndex = normalized;
         const question = questions[activeIndex];
         atlas.dataset.activeIndex = String(activeIndex);
         atlas.dataset.direction = direction > 0 ? "next" : "previous";
-        atlas.classList.add("is-switching");
-        window.setTimeout(() => {
+        const update = () => {
           if (panel) panel.innerHTML = researchQuestionBody(question, activeIndex, questions);
-          if (nodes) nodes.innerHTML = researchNodeMarkup(question);
+          syncResearchGraphNodes(atlas, question);
           if (dots) dots.innerHTML = researchDots(questions, activeIndex);
           if (core) core.textContent = researchCoreNumber(question, activeIndex);
           if (graphLink) graphLink.setAttribute("href", graphRouteForQuestion(question));
           panel && (panel.dataset.ready = "true");
           atlas.classList.remove("is-switching");
-          drawGraph();
-        }, reduceMotion ? 0 : 120);
+          atlas.classList.add("is-settled");
+          window.setTimeout(() => atlas.classList.remove("is-settled"), 260);
+        };
+
+        if (reduceMotion || options.immediate) {
+          update();
+          return;
+        }
+
+        atlas.classList.add("is-switching");
+        window.setTimeout(update, 140);
       };
 
       const navigate = (direction) => {
@@ -1037,100 +1120,6 @@
         if (now - lastNavigation < 420) return;
         lastNavigation = now;
         setActive(activeIndex + direction, direction);
-      };
-
-      const resizeCanvas = () => {
-        if (!graph || !canvas || !ctx) return null;
-        const rect = graph.getBoundingClientRect();
-        const dpr = Math.max(1, window.devicePixelRatio || 1);
-        canvas.width = Math.max(1, Math.round(rect.width * dpr));
-        canvas.height = Math.max(1, Math.round(rect.height * dpr));
-        canvas.style.width = `${rect.width}px`;
-        canvas.style.height = `${rect.height}px`;
-        ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
-        return rect;
-      };
-
-      const drawGraph = () => {
-        if (!graph || !canvas || !ctx) return;
-        const rect = resizeCanvas();
-        if (!rect) return;
-        const width = rect.width;
-        const height = rect.height;
-        const centerX = width / 2;
-        const centerY = height / 2;
-        const t = performance.now() * 0.001;
-        const nodeElements = [...atlas.querySelectorAll("[data-research-atlas-node]")];
-
-        ctx.clearRect(0, 0, width, height);
-        const gradient = ctx.createRadialGradient(centerX, centerY, 10, centerX, centerY, Math.min(width, height) * 0.62);
-        gradient.addColorStop(0, "rgba(247,244,239,0.12)");
-        gradient.addColorStop(0.44, "rgba(125,211,252,0.035)");
-        gradient.addColorStop(1, "rgba(0,0,0,0)");
-        ctx.fillStyle = gradient;
-        ctx.fillRect(0, 0, width, height);
-
-        const positions = nodeElements.map((node, index) => {
-          const nodeRect = node.getBoundingClientRect();
-          const x = nodeRect.left - rect.left + nodeRect.width / 2;
-          const y = nodeRect.top - rect.top + nodeRect.height / 2;
-          const color = node.style.getPropertyValue("--node-color") || "rgba(247,244,239,0.9)";
-          return { x, y, color, index };
-        });
-
-        ctx.lineWidth = 1;
-        positions.forEach((point, index) => {
-          const pulse = 0.34 + (Math.sin(t * 1.8 + index) + 1) * 0.08;
-          ctx.strokeStyle = `rgba(247,244,239,${pulse})`;
-          ctx.beginPath();
-          ctx.moveTo(centerX, centerY);
-          ctx.lineTo(point.x, point.y);
-          ctx.stroke();
-
-          ctx.fillStyle = point.color;
-          ctx.shadowColor = point.color;
-          ctx.shadowBlur = 12;
-          ctx.beginPath();
-          ctx.arc(point.x, point.y, 2.4 + Math.sin(t * 2.2 + index) * 0.7, 0, Math.PI * 2);
-          ctx.fill();
-          ctx.shadowBlur = 0;
-        });
-
-        positions.forEach((point, index) => {
-          const next = positions[(index + 1) % positions.length];
-          if (!next) return;
-          ctx.strokeStyle = "rgba(125,211,252,0.12)";
-          ctx.beginPath();
-          ctx.moveTo(point.x, point.y);
-          ctx.lineTo(next.x, next.y);
-          ctx.stroke();
-        });
-
-        ctx.strokeStyle = "rgba(247,244,239,0.42)";
-        ctx.lineWidth = 1.2;
-        ctx.beginPath();
-        ctx.arc(centerX, centerY, Math.max(22, Math.min(width, height) * 0.07), 0, Math.PI * 2);
-        ctx.stroke();
-      };
-
-      const tick = () => {
-        if (!visible || reduceMotion || document.hidden || !document.body.contains(atlas)) {
-          rafId = 0;
-          return;
-        }
-        drawGraph();
-        rafId = requestAnimationFrame(tick);
-      };
-
-      const start = () => {
-        if (rafId || reduceMotion || !visible) return;
-        rafId = requestAnimationFrame(tick);
-      };
-
-      const stop = () => {
-        if (!rafId) return;
-        cancelAnimationFrame(rafId);
-        rafId = 0;
       };
 
       atlas.querySelector("[data-research-atlas-prev]")?.addEventListener("click", () => navigate(-1));
@@ -1143,9 +1132,9 @@
       });
 
       atlas.addEventListener("wheel", (event) => {
-        if (Math.abs(event.deltaY) < 24 || Math.abs(event.deltaY) < Math.abs(event.deltaX)) return;
+        if (Math.abs(event.deltaX) < 32 || Math.abs(event.deltaX) < Math.abs(event.deltaY)) return;
         event.preventDefault();
-        navigate(event.deltaY > 0 ? 1 : -1);
+        navigate(event.deltaX > 0 ? 1 : -1);
       }, { passive: false });
 
       atlas.addEventListener("touchstart", (event) => {
@@ -1160,8 +1149,8 @@
         if (!touch) return;
         const dx = touch.clientX - touchStartX;
         const dy = touch.clientY - touchStartY;
-        if (Math.max(Math.abs(dx), Math.abs(dy)) < 42) return;
-        navigate(Math.abs(dx) > Math.abs(dy) ? (dx < 0 ? 1 : -1) : (dy < 0 ? 1 : -1));
+        if (Math.abs(dx) < 48 || Math.abs(dx) < Math.abs(dy) * 1.25) return;
+        navigate(dx < 0 ? 1 : -1);
       }, { passive: true });
 
       atlas.addEventListener("keydown", (event) => {
@@ -1173,25 +1162,7 @@
         else navigate(["ArrowRight", "ArrowDown", "PageDown"].includes(event.key) ? 1 : -1);
       });
 
-      const observer = "IntersectionObserver" in window
-        ? new IntersectionObserver((entries) => {
-            const entry = entries[0];
-            visible = Boolean(entry?.isIntersecting || entry?.intersectionRatio > 0);
-            if (visible) start();
-            else stop();
-          }, { rootMargin: "16% 0px 16% 0px", threshold: 0.04 })
-        : null;
-      observer?.observe(atlas);
-
-      window.addEventListener("resize", drawGraph, { passive: true });
-      document.addEventListener("visibilitychange", () => {
-        if (document.hidden) stop();
-        else start();
-      });
-
-      setActive(0);
-      drawGraph();
-      start();
+      setActive(0, 1, { immediate: true });
     });
   };
 

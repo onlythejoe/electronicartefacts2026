@@ -5302,7 +5302,9 @@ body[data-entry-id="vestiges"] .project-process__marker {
   --atlas-tone: 125, 211, 252;
   display: grid;
   gap: clamp(0.9rem, 1.8vw, 1.25rem);
-  min-height: clamp(42rem, 72svh, 58rem);
+  min-height: auto;
+  padding-bottom: max(2rem, 4.6rem);
+  scroll-margin-top: calc(var(--header-offset, 7rem) + 1.25rem);
   border-color: rgba(var(--atlas-tone), 0.12);
   background:
     radial-gradient(circle at 18% 8%, rgba(247, 244, 239, 0.08), transparent 28%),
@@ -5336,18 +5338,27 @@ body[data-entry-id="vestiges"] .project-process__marker {
   padding: clamp(0.78rem, 1.5vw, 1rem);
 }
 
-.research-atlas__graph {
+.research-atlas__projection.graph-surface {
+  grid-template-columns: 1fr;
+  align-content: stretch;
+  min-height: 0;
+  margin-bottom: 0;
+}
+
+.research-atlas__graph.graph-surface__stage {
   position: relative;
-  min-height: clamp(22rem, 48vw, 39rem);
+  min-height: clamp(22rem, 43vw, 37rem);
   overflow: hidden;
   border-radius: calc(var(--radius-lg) - 0.2rem);
   background:
-    radial-gradient(circle at 50% 48%, rgba(247, 244, 239, 0.11), transparent 25%),
-    radial-gradient(circle at 50% 50%, rgba(var(--atlas-tone), 0.12), transparent 44%),
-    linear-gradient(rgba(255, 255, 255, 0.026) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255, 255, 255, 0.02) 1px, transparent 1px),
-    rgba(0, 0, 0, 0.36);
+    radial-gradient(circle at 50% 48%, rgba(247, 244, 239, 0.13), transparent 24%),
+    radial-gradient(circle at 52% 50%, rgba(var(--atlas-tone), 0.14), transparent 45%),
+    linear-gradient(135deg, rgba(255, 255, 255, 0.048), transparent 38%),
+    repeating-linear-gradient(90deg, rgba(255, 255, 255, 0.022) 0 1px, transparent 1px 13.5%),
+    rgba(0, 0, 0, 0.5);
   background-size: auto, auto, 3rem 3rem, 3rem 3rem, auto;
+  perspective: 1600px;
+  transform-style: preserve-3d;
 }
 
 .research-atlas__graph::before,
@@ -5392,7 +5403,7 @@ body[data-entry-id="vestiges"] .project-process__marker {
   mix-blend-mode: screen;
 }
 
-.research-atlas__core {
+.research-atlas__core.graph-surface__core {
   position: absolute;
   left: 50%;
   top: 50%;
@@ -5410,7 +5421,8 @@ body[data-entry-id="vestiges"] .project-process__marker {
     rgba(2, 4, 8, 0.7);
   color: var(--text);
   text-align: center;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) translateZ(58px);
+  opacity: 1;
   box-shadow:
     0 0 0 0.52rem rgba(247, 244, 239, 0.035),
     0 16px 34px rgba(0, 0, 0, 0.36);
@@ -5440,27 +5452,29 @@ body[data-entry-id="vestiges"] .project-process__marker {
   text-transform: uppercase;
 }
 
-.research-atlas__node {
+.research-atlas__node.graph-surface__node {
   position: absolute;
-  left: var(--node-x);
-  top: var(--node-y);
+  left: 50%;
+  top: 50%;
   z-index: 3;
   display: grid;
   justify-items: center;
   gap: 0.28rem;
-  width: clamp(6.1rem, 11vw, 8rem);
+  width: clamp(5.9rem, 10vw, 7.8rem);
+  min-height: 4.2rem;
   color: var(--text);
   text-align: center;
   text-decoration: none;
-  opacity: 1;
-  transform: translate(-50%, -50%) scale(1);
+  opacity: 0;
   transition:
-    left 360ms cubic-bezier(0.2, 0.8, 0.2, 1),
-    top 360ms cubic-bezier(0.2, 0.8, 0.2, 1),
     opacity 220ms ease,
     transform 220ms ease,
     filter 180ms ease;
   transition-delay: var(--node-delay, 0ms);
+}
+
+.research-atlas__node.graph-surface__node[hidden] {
+  display: none;
 }
 
 .research-atlas__node-pin {
@@ -5474,7 +5488,7 @@ body[data-entry-id="vestiges"] .project-process__marker {
     0 0 20px color-mix(in srgb, var(--node-color), transparent 45%);
 }
 
-.research-atlas__node-label {
+.research-atlas__node-label.graph-surface__node-body {
   display: grid;
   gap: 0.06rem;
   max-width: 100%;
@@ -5485,8 +5499,14 @@ body[data-entry-id="vestiges"] .project-process__marker {
     linear-gradient(180deg, color-mix(in srgb, var(--node-color), transparent 88%), rgba(255, 255, 255, 0.032)),
     rgba(2, 4, 7, 0.74);
   box-shadow: 0 12px 24px rgba(0, 0, 0, 0.24);
+  opacity: 0;
+  transform: translateY(0.22rem) scale(0.96);
   backdrop-filter: blur(12px) saturate(136%);
   -webkit-backdrop-filter: blur(12px) saturate(136%);
+  transition:
+    opacity 180ms ease,
+    transform 180ms ease,
+    border-color 180ms ease;
 }
 
 .research-atlas__node-label strong,
@@ -5513,11 +5533,16 @@ body[data-entry-id="vestiges"] .project-process__marker {
   text-transform: uppercase;
 }
 
-.research-atlas__node:hover,
-.research-atlas__node:focus-visible {
+.research-atlas__node.graph-surface__node:hover,
+.research-atlas__node.graph-surface__node:focus-visible {
   z-index: 6;
   filter: drop-shadow(0 0 18px color-mix(in srgb, var(--node-color), transparent 38%));
-  transform: translate(-50%, -50%) scale(1.06);
+}
+
+.research-atlas__node.graph-surface__node:hover .research-atlas__node-label,
+.research-atlas__node.graph-surface__node:focus-visible .research-atlas__node-label {
+  opacity: 1;
+  transform: translateY(0) scale(1);
 }
 
 .research-atlas__node:focus-visible {
@@ -5525,10 +5550,35 @@ body[data-entry-id="vestiges"] .project-process__marker {
   outline-offset: 0.28rem;
 }
 
-.research-atlas.is-switching .research-atlas__node,
+.research-atlas.is-switching .research-atlas__node.graph-surface__node,
 .research-atlas.is-switching .research-atlas__panel > * {
-  opacity: 0.18;
-  transform: translateY(0.18rem);
+  opacity: 0.14;
+}
+
+.research-atlas__panel > * {
+  transition:
+    opacity 220ms ease,
+    transform 220ms cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+.research-atlas.is-switching .research-atlas__panel > * {
+  transform: translateY(0.32rem);
+}
+
+.research-atlas.is-settled .research-atlas__panel > * {
+  animation: research-atlas-panel-in 260ms cubic-bezier(0.2, 0.8, 0.2, 1);
+}
+
+@keyframes research-atlas-panel-in {
+  from {
+    opacity: 0.72;
+    transform: translateY(0.22rem);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 .research-atlas__graph-link {
@@ -5563,9 +5613,9 @@ body[data-entry-id="vestiges"] .project-process__marker {
 }
 
 .research-atlas__question-copy .display-title {
-  max-width: 16ch;
-  font-size: clamp(2.05rem, 4.9vw, 5.25rem);
-  line-height: 0.98;
+  max-width: 22ch;
+  font-size: 3.3rem;
+  line-height: 1.02;
   letter-spacing: 0;
 }
 
@@ -5779,13 +5829,13 @@ body[data-entry-id="vestiges"] .project-process__marker {
     grid-template-columns: 1fr;
   }
 
-  .research-atlas__graph {
+  .research-atlas__graph.graph-surface__stage {
     min-height: clamp(20rem, 58vw, 32rem);
   }
 
   .research-atlas__question-copy .display-title {
-    max-width: 18ch;
-    font-size: clamp(1.9rem, 6.2vw, 4rem);
+    max-width: 22ch;
+    font-size: 2.65rem;
   }
 
   .research-atlas__lower {
@@ -5798,9 +5848,30 @@ body[data-entry-id="vestiges"] .project-process__marker {
 }
 
 @media (max-width: 48rem) {
+  .research-atlas {
+    gap: 0.78rem;
+    padding-bottom: 1rem;
+  }
+
+  .research-atlas__layout {
+    gap: 0.78rem;
+  }
+
   .research-atlas__projection,
   .research-atlas__panel {
     border-radius: calc(var(--radius-lg) - 0.1rem);
+  }
+
+  .research-atlas__projection.graph-surface {
+    order: 2;
+  }
+
+  .research-atlas__panel {
+    order: 1;
+  }
+
+  .research-atlas__graph.graph-surface__stage {
+    min-height: clamp(18.5rem, 72vw, 24rem);
   }
 
   .research-atlas__meta-row {
@@ -5809,7 +5880,8 @@ body[data-entry-id="vestiges"] .project-process__marker {
 
   .research-atlas__question-copy .display-title {
     max-width: none;
-    font-size: clamp(1.72rem, 8vw, 3.2rem);
+    font-size: 2.05rem;
+    line-height: 1.08;
   }
 
   .research-atlas__lower,
@@ -5819,19 +5891,36 @@ body[data-entry-id="vestiges"] .project-process__marker {
   }
 
   .research-atlas__nav {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
     gap: 0.62rem;
   }
 
   .research-atlas__dots {
-    order: -1;
+    grid-column: 1 / -1;
+    grid-row: 1;
     min-height: 1.8rem;
   }
 
-  .research-atlas__node {
+  .research-atlas__nav [data-research-atlas-prev] {
+    grid-column: 1;
+  }
+
+  .research-atlas__nav [data-research-atlas-next] {
+    grid-column: 2;
+  }
+
+  .research-atlas__nav .button {
+    min-width: 0;
+    min-height: 2.65rem;
+    padding-inline: 0.7rem;
+    white-space: normal;
+  }
+
+  .research-atlas__node.graph-surface__node {
     width: clamp(5.5rem, 29vw, 7rem);
   }
 
-  .research-atlas__node-label {
+  .research-atlas__node-label.graph-surface__node-body {
     padding: 0.38rem 0.46rem;
   }
 
@@ -5839,7 +5928,7 @@ body[data-entry-id="vestiges"] .project-process__marker {
     font-size: 0.64rem;
   }
 
-  .research-atlas__node-label small {
+  .research-atlas__node-label.graph-surface__node-body small {
     display: none;
   }
 }
@@ -5855,16 +5944,39 @@ body[data-entry-id="vestiges"] .project-process__marker {
     padding: 0.72rem;
   }
 
-  .research-atlas__graph {
-    min-height: 18rem;
+  .research-atlas__graph.graph-surface__stage {
+    min-height: 17rem;
   }
 
-  .research-atlas__core {
+  .research-atlas__core.graph-surface__core {
     width: 5.25rem;
   }
 
   .research-atlas__core strong {
     font-size: 0.7rem;
+  }
+
+  .research-atlas__question-copy .display-title {
+    font-size: 1.78rem;
+  }
+
+  .research-atlas__node.graph-surface__node {
+    place-items: center;
+    width: 2.4rem;
+    min-height: 2.4rem;
+  }
+
+  .research-atlas__node-label.graph-surface__node-body {
+    display: none;
+  }
+
+  .research-atlas__node-pin.graph-surface__node-pin {
+    position: relative;
+    left: auto;
+    top: auto;
+    width: 0.82rem;
+    height: 0.82rem;
+    transform: none;
   }
 
   .research-atlas__node:nth-child(n + 7) {
