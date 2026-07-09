@@ -1,0 +1,123 @@
+---
+id: ea:researchQuestion:first-conversation-understanding-fr
+type: researchQuestion
+translationKey: research-question:first-conversation-understanding
+translationOf: ea:researchQuestion:first-conversation-understanding
+slug:
+  canonical: first-conversation-understanding
+title: Comment une IA peut-elle comprendre quelqu'un dès sa première conversation ?
+subtitle: Question de recherche 001
+abstract: Cette question étudie si l'onboarding conversationnel peut construire un premier modèle fiable d'une personne sans réduire l'intention, l'incertitude et le contexte à un formulaire statique.
+description: Question de recherche publique d'Electronic Artefacts sur la compréhension au premier contact, l'onboarding conversationnel et le contexte utilisateur structuré en graphe.
+locale: fr
+visibility: public
+publicationClass: canonical
+status: active
+maturity: research
+confidence: observed
+version:
+  version: 1.0.0
+  createdAt: "2026-07-09"
+  publishedAt: "2026-07-09"
+  modifiedAt: "2026-07-09"
+authors:
+  - id: ea:organization:electronic-artefacts
+publisher: ea:organization:electronic-artefacts
+started: "2026-01-01"
+updated: "2026-07-09"
+priority: 1
+featured: true
+homepage: true
+observation: Les formulaires collectent des réponses, mais ils capturent mal l'intention, l'incertitude, le vocabulaire, le contexte évolutif et les raisons qui poussent une personne à agir maintenant.
+problem: Un système qui commence par des champs rigides peut confondre conformité et compréhension. Le premier échange doit préserver assez d'ambiguïté pour permettre une correction ultérieure.
+hypothesis: La conversation peut devenir le protocole d'onboarding si le système traite chaque échange comme une preuve, et pas seulement comme une entrée de profil.
+currentUnderstanding: La compréhension doit émerger progressivement. Une première conversation peut identifier des entités, objectifs, contraintes, risques et inconnues provisoires, puis garder ces hypothèses révisables.
+experiments:
+  - id: conversational-brief-capture
+    title: Capture conversationnelle du brief
+    status: active
+    summary: Les parcours de contact et de découverte sont traités comme des conversations structurées qui identifient intention, voie probable, contexte manquant et questions utiles.
+    relatedEntities:
+      - id: ea:concept:human-computer-interaction
+      - id: ea:concept:contextual-execution
+  - id: voice-context-capture
+    title: Capture du contexte vocal
+    status: observed
+    summary: Voice Capture Studio teste comment préserver transcription, timing, locuteur et métadonnées qualité sans envoyer les enregistrements à un service distant.
+    relatedEntities:
+      - id: ea:project:voice-capture-studio
+      - id: ea:concept:voice-technology
+result: Le résultat le plus solide est architectural plutôt que centré sur le modèle. L'objet utile est un graphe provisoire d'hypothèses, de contraintes et de signaux inspectables.
+nextSteps:
+  - Définir un schéma minimal pour les hypothèses issues de la première conversation et leurs niveaux d'incertitude.
+  - Tester comment séparer voix, texte et métadonnées avant tout workflow de machine learning en aval.
+  - Décider quelles hypothèses peuvent être conservées et lesquelles doivent expirer sans confirmation.
+relatedProjects:
+  - id: ea:project:voice-capture-studio
+  - id: ea:project:vestiges
+relatedSoftware:
+  - id: ea:program:vaste
+  - id: ea:program:oreth
+relatedArticles:
+  - id: ea:publication:ai-agents-vs-ai-workflows
+  - id: ea:publication:retrieval-augmented-generation-and-knowledge-systems
+  - id: ea:publication:model-context-protocol-and-tool-using-ai-systems
+  - id: ea:publication:human-computer-interaction-for-creative-tools
+relatedCollections:
+  - id: ea:collection:voice-capture-studio
+relatedConcepts:
+  - id: ea:concept:ai-agent
+  - id: ea:concept:knowledge-graph
+  - id: ea:concept:machine-learning-workflows
+  - id: ea:concept:human-computer-interaction
+  - id: ea:concept:contextual-execution
+  - id: ea:concept:entity-identity
+  - id: ea:concept:voice-technology
+relatedTechnologies:
+  - id: ea:technology:model-context-protocol
+  - id: ea:technology:web-audio-api
+  - id: ea:technology:webnn
+relatedRepositories:
+  - title: Dépôt Voice Capture Studio
+    publisher: GitHub
+    accessedAt: "2026-07-09"
+    url: https://github.com/electronicartefacts/voice-capture-studio
+timeline:
+  - date: "2026-01-01"
+    title: Cadrage de la recherche
+    summary: La question a été séparée de l'onboarding IA générique et reformulée autour de la compréhension au premier contact.
+  - date: "2026-07-09"
+    title: Intégration dans l'atlas de la page d'accueil
+    summary: La question devient une fiche du graphe reliée aux logiciels et preuves actuels.
+tags:
+  - Onboarding conversationnel
+  - Agents IA
+  - Graphe de connaissance
+  - Voix
+  - Compréhension utilisateur
+disciplines:
+  - Intelligence artificielle
+  - Interaction humain-machine
+  - Systèmes de connaissance
+  - Architecture logicielle
+---
+
+## Observation
+
+Les formulaires sont utiles lorsque le système connaît déjà ses catégories. Ils le sont moins lorsque la personne clarifie encore ce qu'elle veut dire, ce dont elle a besoin et ce qui doit rester incertain.
+
+## Problème
+
+La première conversation avec un système porte plus d'information qu'une soumission de formulaire. Elle peut révéler priorité, vocabulaire, hésitation, contraintes et théorie provisoire de la situation.
+
+## Hypothèse
+
+La conversation peut devenir un protocole d'onboarding lorsqu'elle produit des hypothèses inspectables. Le système ne doit pas prétendre comprendre une personne après un court échange.
+
+## Compréhension actuelle
+
+La réponse actuelle est structurée en graphe. La compréhension initiale devrait produire des entités, relations et niveaux de confiance révisables.
+
+## Inconnues
+
+Combien de contexte faut-il conserver ? Quels signaux sont trop ambigus ? Comment l'utilisateur corrige-t-il la première interprétation du système ?

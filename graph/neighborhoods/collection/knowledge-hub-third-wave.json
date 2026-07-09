@@ -106,6 +106,14 @@
       "route": "/publications/runtime-engines-and-domain-operating-systems/",
       "status": "active",
       "confidence": "published"
+    },
+    {
+      "id": "ea:researchQuestion:self-explaining-knowledge-graph-software",
+      "type": "researchQuestion",
+      "title": "How can software become explainable through its own knowledge graph?",
+      "route": "/research/questions/self-explaining-knowledge-graph-software/",
+      "status": "active",
+      "confidence": "validated"
     }
   ],
   "edges": [
@@ -216,6 +224,15 @@
       "label": "Has part",
       "statement": "Knowledge Hub Third Wave includes Runtime Engines and Domain Operating Systems.",
       "confidence": "published"
+    },
+    {
+      "id": "ear:self-explaining-knowledge-graph-software-member-of-collection-knowledge-hub-third-wave",
+      "source": "ea:researchQuestion:self-explaining-knowledge-graph-software",
+      "target": "ea:collection:knowledge-hub-third-wave",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "The research question \"How can software become explainable through its own knowledge graph?\" belongs to the Knowledge Hub Third Wave collection for editorial navigation.",
+      "confidence": "validated"
     }
   ]
 }

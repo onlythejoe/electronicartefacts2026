@@ -1,0 +1,212 @@
+{
+  "id": "ea:researchQuestion:first-conversation-understanding",
+  "type": "researchQuestion",
+  "translationKey": "research-question:first-conversation-understanding",
+  "slug": {
+    "canonical": "first-conversation-understanding"
+  },
+  "title": "How can an AI understand someone during its very first conversation?",
+  "subtitle": "Research Question 001",
+  "abstract": "This research question studies whether conversational onboarding can build a reliable first model of a person without reducing intent, uncertainty and context to a static form.",
+  "description": "A public Electronic Artefacts research question about first-contact understanding, conversational onboarding and graph-shaped user context.",
+  "locale": "en",
+  "visibility": "public",
+  "publicationClass": "canonical",
+  "status": "active",
+  "maturity": "research",
+  "confidence": "observed",
+  "version": {
+    "version": "1.0.0",
+    "createdAt": "2026-07-09",
+    "publishedAt": "2026-07-09",
+    "modifiedAt": "2026-07-09"
+  },
+  "authors": [
+    {
+      "id": "ea:organization:electronic-artefacts"
+    }
+  ],
+  "publisher": "ea:organization:electronic-artefacts",
+  "tags": [
+    "Conversational Onboarding",
+    "AI Agents",
+    "Knowledge Graph",
+    "Speech",
+    "User Understanding"
+  ],
+  "disciplines": [
+    "Artificial Intelligence",
+    "Human Computer Interaction",
+    "Knowledge Systems",
+    "Software Architecture"
+  ],
+  "featured": true,
+  "started": "2026-01-01",
+  "updated": "2026-07-09",
+  "priority": 1,
+  "homepage": true,
+  "observation": "Forms collect answers, but they often fail to capture intent, uncertainty, vocabulary, changing context and the reasons a person gives for acting now.",
+  "problem": "A system that starts from rigid fields can mistake compliance for understanding. The first interaction should preserve enough ambiguity for later correction instead of forcing premature classification.",
+  "hypothesis": "Conversation itself can become the onboarding protocol when the system treats each exchange as evidence, not merely as input for a profile form.",
+  "currentUnderstanding": "Understanding should emerge progressively. A first conversation can identify provisional entities, goals, constraints, risks and unknowns, then keep those claims revisable as more evidence arrives.",
+  "experiments": [
+    {
+      "id": "conversational-brief-capture",
+      "title": "Conversational brief capture",
+      "status": "active",
+      "summary": "Contact and discovery flows are treated as structured conversations that identify intent, pathway, missing context and useful next questions.",
+      "relatedEntities": [
+        {
+          "id": "ea:concept:human-computer-interaction"
+        },
+        {
+          "id": "ea:concept:contextual-execution"
+        }
+      ]
+    },
+    {
+      "id": "voice-context-capture",
+      "title": "Voice context capture",
+      "status": "observed",
+      "summary": "Voice Capture Studio tests how speech capture can preserve transcript, timing, speaker and quality metadata without sending recordings to a remote service.",
+      "relatedEntities": [
+        {
+          "id": "ea:project:voice-capture-studio"
+        },
+        {
+          "id": "ea:concept:voice-technology"
+        }
+      ]
+    }
+  ],
+  "result": "The strongest result so far is architectural rather than model-centric. The useful object is a provisional graph of claims, constraints and signals that can be inspected and revised.",
+  "nextSteps": [
+    "Define a minimal schema for first-conversation claims and uncertainty levels.",
+    "Test how voice, text and metadata should be separated before downstream machine-learning work.",
+    "Decide which claims are safe to persist and which should expire unless confirmed."
+  ],
+  "relatedProjects": [
+    {
+      "id": "ea:project:voice-capture-studio"
+    },
+    {
+      "id": "ea:project:vestiges"
+    }
+  ],
+  "relatedSoftware": [
+    {
+      "id": "ea:program:vaste"
+    },
+    {
+      "id": "ea:program:oreth"
+    }
+  ],
+  "relatedArticles": [
+    {
+      "id": "ea:publication:ai-agents-vs-ai-workflows"
+    },
+    {
+      "id": "ea:publication:retrieval-augmented-generation-and-knowledge-systems"
+    },
+    {
+      "id": "ea:publication:model-context-protocol-and-tool-using-ai-systems"
+    },
+    {
+      "id": "ea:publication:human-computer-interaction-for-creative-tools"
+    }
+  ],
+  "relatedCollections": [
+    {
+      "id": "ea:collection:voice-capture-studio"
+    }
+  ],
+  "relatedConcepts": [
+    {
+      "id": "ea:concept:ai-agent"
+    },
+    {
+      "id": "ea:concept:knowledge-graph"
+    },
+    {
+      "id": "ea:concept:machine-learning-workflows"
+    },
+    {
+      "id": "ea:concept:human-computer-interaction"
+    },
+    {
+      "id": "ea:concept:contextual-execution"
+    },
+    {
+      "id": "ea:concept:entity-identity"
+    },
+    {
+      "id": "ea:concept:voice-technology"
+    }
+  ],
+  "relatedTechnologies": [
+    {
+      "id": "ea:technology:model-context-protocol"
+    },
+    {
+      "id": "ea:technology:web-audio-api"
+    },
+    {
+      "id": "ea:technology:webnn"
+    }
+  ],
+  "relatedRepositories": [
+    {
+      "title": "Voice Capture Studio repository",
+      "url": "https://github.com/electronicartefacts/voice-capture-studio",
+      "publisher": "GitHub",
+      "accessedAt": "2026-07-09"
+    }
+  ],
+  "timeline": [
+    {
+      "date": "2026-01-01",
+      "title": "Research framing",
+      "summary": "The question was separated from generic AI onboarding and reframed around first-contact understanding."
+    },
+    {
+      "date": "2026-07-09",
+      "title": "Homepage atlas integration",
+      "summary": "The question became a first-class knowledge-graph record connected to current software and evidence."
+    }
+  ],
+  "bodyHtml": "<h2 id=\"observation\">Observation</h2>\n<p>Forms are useful when the system already knows the categories it needs. They are weaker when the person is still clarifying what they mean, what they need and what should remain uncertain.</p>\n<h2 id=\"problem\">Problem</h2>\n<p>The first conversation with a system carries more information than a form submission. It can reveal priority, vocabulary, hesitation, constraints and a working theory of the situation. If that material is flattened too early, the system may appear efficient while losing the context that would make it useful.</p>\n<h2 id=\"hypothesis\">Hypothesis</h2>\n<p>Conversation can become an onboarding protocol when it produces inspectable claims. The system should not claim to understand a person after a short exchange. It should record what appears likely, what remains unknown and what needs confirmation.</p>\n<h2 id=\"current-understanding\">Current Understanding</h2>\n<p>The current answer is a graph-shaped one. First-contact understanding should produce entities, relations and confidence levels that can be revised. Software such as VASTE provides the conceptual runtime for that model, while Voice Capture Studio tests one sensitive input channel: voice.</p>\n<h2 id=\"unknowns\">Unknowns</h2>\n<p>The unresolved questions are practical. How much context should be persisted? Which signals are too ambiguous to store? How should a user correct the system’s first interpretation? How can this remain useful without turning conversation into surveillance?</p>\n",
+  "headings": [
+    "Observation",
+    "Problem",
+    "Hypothesis",
+    "Current Understanding",
+    "Unknowns"
+  ],
+  "headingItems": [
+    {
+      "level": 2,
+      "title": "Observation",
+      "id": "observation"
+    },
+    {
+      "level": 2,
+      "title": "Problem",
+      "id": "problem"
+    },
+    {
+      "level": 2,
+      "title": "Hypothesis",
+      "id": "hypothesis"
+    },
+    {
+      "level": 2,
+      "title": "Current Understanding",
+      "id": "current-understanding"
+    },
+    {
+      "level": 2,
+      "title": "Unknowns",
+      "id": "unknowns"
+    }
+  ]
+}

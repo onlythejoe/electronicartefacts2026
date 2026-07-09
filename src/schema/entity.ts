@@ -7,6 +7,7 @@ export type EntityType =
   | "framework"
   | "technology"
   | "researchField"
+  | "researchQuestion"
   | "project"
   | "program"
   | "publication"

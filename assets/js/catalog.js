@@ -49,8 +49,31 @@
     };
   };
 
+  const runtimeRecordFromCatalog = (item) => ({
+    ...item,
+    id: item.legacyId || item.id,
+    canonicalId: item.translationOf || item.id,
+    localizedId: item.locale === pageLocale ? item.id : undefined,
+    title: item.title,
+    subtitle: item.subtitle,
+    kind: item.type,
+    type: item.type,
+    status: item.status,
+    statusLabel: item.status,
+    maturity: item.maturity,
+    confidence: item.confidence,
+    visibility: item.visibility,
+    summary: item.summary,
+    description: item.description,
+    tags: item.tags || [],
+    discipline: item.discipline || [],
+    route: item.route,
+    temporality: item.temporality,
+  });
+
   const flattenEntities = () =>
-    [
+    (() => {
+      const sourceEntities = [
       ...(entities.programs || []),
       ...(entities.artists || []),
       ...(entities.projects || []),
@@ -66,7 +89,14 @@
         summary: item.summary || "",
         visibility: item.visibility || "public",
       })),
-    ]
+      ];
+      const legacyIds = new Set(sourceEntities.map((item) => item.id).filter(Boolean));
+      const catalogOnly = catalogEntities
+        .filter((item) => item.locale === pageLocale)
+        .filter((item) => !legacyIds.has(item.legacyId) && !legacyIds.has(item.id))
+        .map(runtimeRecordFromCatalog);
+      return [...sourceEntities, ...catalogOnly];
+    })()
       .filter(isPublic)
       .map(localizeEntity)
       .map((item) => ({
@@ -154,6 +184,10 @@
     artefacts: (entities.artefacts || []).filter(isPublic),
     channels: (entities.channels || []).filter(isPublic),
     researchFields: (entities.researchFields || []).filter(isPublic),
+    researchQuestions: catalogEntities
+      .filter((item) => item.type === "researchQuestion" && item.locale === pageLocale)
+      .filter(isPublic)
+      .map(runtimeRecordFromCatalog),
     researchLogs: (entities.researchLogs || []).filter(isPublic),
     worldbuilding: (entities.worldbuilding || []).filter(isPublic),
     schema: {

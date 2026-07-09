@@ -50,6 +50,14 @@
       "route": "/fr/archive/collections/knowledge-hub-second-wave/",
       "status": "active",
       "confidence": "published"
+    },
+    {
+      "id": "ea:researchQuestion:speech-dataset-reproducibility-fr",
+      "type": "researchQuestion",
+      "title": "Comment les datasets vocaux peuvent-ils devenir reproductibles, structurés et privacy-first ?",
+      "route": "/fr/research/questions/speech-dataset-reproducibility/",
+      "status": "active",
+      "confidence": "published"
     }
   ],
   "edges": [
@@ -96,6 +104,15 @@
       "predicate": "hasPart",
       "label": "Has part",
       "statement": "Knowledge Hub Second Wave includes Web Audio and Browser-Based Sound Systems as a core article.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:web-audio-and-browser-based-sound-systems-documents-speech-dataset-reproducibility",
+      "source": "ea:publication:web-audio-and-browser-based-sound-systems-fr",
+      "target": "ea:researchQuestion:speech-dataset-reproducibility-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Web Audio and Browser-Based Sound Systems documents context, evidence or vocabulary for the research question \"How can speech datasets become reproducible, structured and privacy-first?\".",
       "confidence": "published"
     }
   ]

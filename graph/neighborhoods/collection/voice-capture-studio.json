@@ -26,6 +26,22 @@
       "route": "/archive/artefacts/voice-capture-studio-repository/",
       "status": "active",
       "confidence": "published"
+    },
+    {
+      "id": "ea:researchQuestion:first-conversation-understanding",
+      "type": "researchQuestion",
+      "title": "How can an AI understand someone during its very first conversation?",
+      "route": "/research/questions/first-conversation-understanding/",
+      "status": "active",
+      "confidence": "observed"
+    },
+    {
+      "id": "ea:researchQuestion:speech-dataset-reproducibility",
+      "type": "researchQuestion",
+      "title": "How can speech datasets become reproducible, structured and privacy-first?",
+      "route": "/research/questions/speech-dataset-reproducibility/",
+      "status": "active",
+      "confidence": "published"
     }
   ],
   "edges": [
@@ -45,6 +61,24 @@
       "predicate": "memberOfCollection",
       "label": "Member of collection",
       "statement": "The Voice Capture Studio repository is part of the Voice Capture Studio Collection as the public source artefact.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:first-conversation-understanding-member-of-collection-voice-capture-studio",
+      "source": "ea:researchQuestion:first-conversation-understanding",
+      "target": "ea:collection:voice-capture-studio",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "The research question \"How can an AI understand someone during its very first conversation?\" belongs to the Voice Capture Studio Collection collection for editorial navigation.",
+      "confidence": "observed"
+    },
+    {
+      "id": "ear:speech-dataset-reproducibility-member-of-collection-voice-capture-studio",
+      "source": "ea:researchQuestion:speech-dataset-reproducibility",
+      "target": "ea:collection:voice-capture-studio",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "The research question \"How can speech datasets become reproducible, structured and privacy-first?\" belongs to the Voice Capture Studio Collection collection for editorial navigation.",
       "confidence": "published"
     }
   ]

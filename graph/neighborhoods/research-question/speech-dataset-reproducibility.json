@@ -1,0 +1,323 @@
+{
+  "id": "local:ea:researchQuestion:speech-dataset-reproducibility",
+  "kind": "local",
+  "focus": "ea:researchQuestion:speech-dataset-reproducibility",
+  "nodes": [
+    {
+      "id": "ea:researchQuestion:speech-dataset-reproducibility",
+      "type": "researchQuestion",
+      "title": "How can speech datasets become reproducible, structured and privacy-first?",
+      "route": "/research/questions/speech-dataset-reproducibility/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:project:voice-capture-studio",
+      "type": "project",
+      "title": "Voice Capture Studio",
+      "route": "/projects/voice-capture-studio/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:program:oreth",
+      "type": "program",
+      "title": "ORETH",
+      "route": "/programs/oreth/",
+      "status": "prototype",
+      "confidence": "observed"
+    },
+    {
+      "id": "ea:framework:electronic-artefacts-lightweight-template",
+      "type": "framework",
+      "title": "Electronic Artefacts Lightweight Template",
+      "route": "/knowledge/frameworks/electronic-artefacts-lightweight-template/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:concept:speech-datasets",
+      "type": "concept",
+      "title": "Speech Datasets",
+      "route": "/knowledge/concepts/speech-datasets/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:concept:speech-recording",
+      "type": "concept",
+      "title": "Speech Recording",
+      "route": "/knowledge/concepts/speech-recording/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:concept:voice-technology",
+      "type": "concept",
+      "title": "Voice Technology",
+      "route": "/knowledge/concepts/voice-technology/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:concept:metadata",
+      "type": "concept",
+      "title": "Metadata",
+      "route": "/knowledge/concepts/metadata/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:concept:provenance",
+      "type": "concept",
+      "title": "Provenance",
+      "route": "/knowledge/concepts/provenance/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:concept:machine-learning-workflows",
+      "type": "concept",
+      "title": "Machine Learning Workflows",
+      "route": "/knowledge/concepts/machine-learning-workflows/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:concept:browser-software",
+      "type": "concept",
+      "title": "Browser Software",
+      "route": "/knowledge/concepts/browser-software/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:concept:open-source",
+      "type": "concept",
+      "title": "Open Source",
+      "route": "/knowledge/concepts/open-source/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:technology:web-audio-api",
+      "type": "technology",
+      "title": "Web Audio API",
+      "route": "/knowledge/technologies/web-audio-api/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:technology:webnn",
+      "type": "technology",
+      "title": "WebNN",
+      "route": "/knowledge/technologies/webnn/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:publication:web-audio-and-browser-based-sound-systems",
+      "type": "publication",
+      "title": "Web Audio and Browser-Based Sound Systems",
+      "route": "/publications/web-audio-and-browser-based-sound-systems/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:local-and-open-source-ai-systems",
+      "type": "publication",
+      "title": "Local and Open Source AI Systems",
+      "route": "/publications/local-and-open-source-ai-systems/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:open-source-as-cultural-infrastructure",
+      "type": "publication",
+      "title": "Open Source as Cultural Infrastructure",
+      "route": "/publications/open-source-as-cultural-infrastructure/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:webnn-and-local-ai-in-the-browser",
+      "type": "publication",
+      "title": "WebNN and Local AI in the Browser",
+      "route": "/publications/webnn-and-local-ai-in-the-browser/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:collection:voice-capture-studio",
+      "type": "collection",
+      "title": "Voice Capture Studio Collection",
+      "route": "/archive/collections/voice-capture-studio/",
+      "status": "active",
+      "confidence": "published"
+    }
+  ],
+  "edges": [
+    {
+      "id": "ear:speech-dataset-reproducibility-implemented-by-voice-capture-studio",
+      "source": "ea:researchQuestion:speech-dataset-reproducibility",
+      "target": "ea:project:voice-capture-studio",
+      "predicate": "implementedBy",
+      "label": "Implemented by",
+      "statement": "Voice Capture Studio is listed as a current software or project answer for the research question \"How can speech datasets become reproducible, structured and privacy-first?\".",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:speech-dataset-reproducibility-implemented-by-oreth",
+      "source": "ea:researchQuestion:speech-dataset-reproducibility",
+      "target": "ea:program:oreth",
+      "predicate": "implementedBy",
+      "label": "Implemented by",
+      "statement": "ORETH is listed as a current software or project answer for the research question \"How can speech datasets become reproducible, structured and privacy-first?\".",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:speech-dataset-reproducibility-implemented-by-electronic-artefacts-lightweight-template",
+      "source": "ea:researchQuestion:speech-dataset-reproducibility",
+      "target": "ea:framework:electronic-artefacts-lightweight-template",
+      "predicate": "implementedBy",
+      "label": "Implemented by",
+      "statement": "Electronic Artefacts Lightweight Template is listed as a current software or project answer for the research question \"How can speech datasets become reproducible, structured and privacy-first?\".",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:speech-dataset-reproducibility-applies-concept-speech-datasets",
+      "source": "ea:researchQuestion:speech-dataset-reproducibility",
+      "target": "ea:concept:speech-datasets",
+      "predicate": "appliesConcept",
+      "label": "Applies concept",
+      "statement": "The research question \"How can speech datasets become reproducible, structured and privacy-first?\" applies Speech Datasets as part of its current model.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:speech-dataset-reproducibility-applies-concept-speech-recording",
+      "source": "ea:researchQuestion:speech-dataset-reproducibility",
+      "target": "ea:concept:speech-recording",
+      "predicate": "appliesConcept",
+      "label": "Applies concept",
+      "statement": "The research question \"How can speech datasets become reproducible, structured and privacy-first?\" applies Speech Recording as part of its current model.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:speech-dataset-reproducibility-applies-concept-voice-technology",
+      "source": "ea:researchQuestion:speech-dataset-reproducibility",
+      "target": "ea:concept:voice-technology",
+      "predicate": "appliesConcept",
+      "label": "Applies concept",
+      "statement": "The research question \"How can speech datasets become reproducible, structured and privacy-first?\" applies Voice Technology as part of its current model.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:speech-dataset-reproducibility-applies-concept-metadata",
+      "source": "ea:researchQuestion:speech-dataset-reproducibility",
+      "target": "ea:concept:metadata",
+      "predicate": "appliesConcept",
+      "label": "Applies concept",
+      "statement": "The research question \"How can speech datasets become reproducible, structured and privacy-first?\" applies Metadata as part of its current model.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:speech-dataset-reproducibility-applies-concept-provenance",
+      "source": "ea:researchQuestion:speech-dataset-reproducibility",
+      "target": "ea:concept:provenance",
+      "predicate": "appliesConcept",
+      "label": "Applies concept",
+      "statement": "The research question \"How can speech datasets become reproducible, structured and privacy-first?\" applies Provenance as part of its current model.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:speech-dataset-reproducibility-applies-concept-machine-learning-workflows",
+      "source": "ea:researchQuestion:speech-dataset-reproducibility",
+      "target": "ea:concept:machine-learning-workflows",
+      "predicate": "appliesConcept",
+      "label": "Applies concept",
+      "statement": "The research question \"How can speech datasets become reproducible, structured and privacy-first?\" applies Machine Learning Workflows as part of its current model.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:speech-dataset-reproducibility-applies-concept-browser-software",
+      "source": "ea:researchQuestion:speech-dataset-reproducibility",
+      "target": "ea:concept:browser-software",
+      "predicate": "appliesConcept",
+      "label": "Applies concept",
+      "statement": "The research question \"How can speech datasets become reproducible, structured and privacy-first?\" applies Browser Software as part of its current model.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:speech-dataset-reproducibility-applies-concept-open-source",
+      "source": "ea:researchQuestion:speech-dataset-reproducibility",
+      "target": "ea:concept:open-source",
+      "predicate": "appliesConcept",
+      "label": "Applies concept",
+      "statement": "The research question \"How can speech datasets become reproducible, structured and privacy-first?\" applies Open Source as part of its current model.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:speech-dataset-reproducibility-uses-technology-web-audio-api",
+      "source": "ea:researchQuestion:speech-dataset-reproducibility",
+      "target": "ea:technology:web-audio-api",
+      "predicate": "usesTechnology",
+      "label": "Uses technology",
+      "statement": "The research question \"How can speech datasets become reproducible, structured and privacy-first?\" uses Web Audio API as a relevant technical reference.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:speech-dataset-reproducibility-uses-technology-webnn",
+      "source": "ea:researchQuestion:speech-dataset-reproducibility",
+      "target": "ea:technology:webnn",
+      "predicate": "usesTechnology",
+      "label": "Uses technology",
+      "statement": "The research question \"How can speech datasets become reproducible, structured and privacy-first?\" uses WebNN as a relevant technical reference.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:web-audio-and-browser-based-sound-systems-documents-speech-dataset-reproducibility",
+      "source": "ea:publication:web-audio-and-browser-based-sound-systems",
+      "target": "ea:researchQuestion:speech-dataset-reproducibility",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Web Audio and Browser-Based Sound Systems documents context, evidence or vocabulary for the research question \"How can speech datasets become reproducible, structured and privacy-first?\".",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:local-and-open-source-ai-systems-documents-speech-dataset-reproducibility",
+      "source": "ea:publication:local-and-open-source-ai-systems",
+      "target": "ea:researchQuestion:speech-dataset-reproducibility",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Local and Open Source AI Systems documents context, evidence or vocabulary for the research question \"How can speech datasets become reproducible, structured and privacy-first?\".",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:open-source-as-cultural-infrastructure-documents-speech-dataset-reproducibility",
+      "source": "ea:publication:open-source-as-cultural-infrastructure",
+      "target": "ea:researchQuestion:speech-dataset-reproducibility",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Open Source as Cultural Infrastructure documents context, evidence or vocabulary for the research question \"How can speech datasets become reproducible, structured and privacy-first?\".",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:webnn-and-local-ai-in-the-browser-documents-speech-dataset-reproducibility",
+      "source": "ea:publication:webnn-and-local-ai-in-the-browser",
+      "target": "ea:researchQuestion:speech-dataset-reproducibility",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "WebNN and Local AI in the Browser documents context, evidence or vocabulary for the research question \"How can speech datasets become reproducible, structured and privacy-first?\".",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:speech-dataset-reproducibility-member-of-collection-voice-capture-studio",
+      "source": "ea:researchQuestion:speech-dataset-reproducibility",
+      "target": "ea:collection:voice-capture-studio",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "The research question \"How can speech datasets become reproducible, structured and privacy-first?\" belongs to the Voice Capture Studio Collection collection for editorial navigation.",
+      "confidence": "published"
+    }
+  ]
+}

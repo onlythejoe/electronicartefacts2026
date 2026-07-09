@@ -48,6 +48,52 @@ export interface ResearchFieldEntity extends BaseEntity {
   bibliography?: SourceRef[];
 }
 
+export type ResearchExperimentStatus =
+  | "planned"
+  | "active"
+  | "observed"
+  | "paused"
+  | "complete";
+
+export interface ResearchQuestionExperiment {
+  id: string;
+  title: string;
+  status: ResearchExperimentStatus;
+  summary: string;
+  relatedEntities?: EntityRef[];
+  result?: string;
+}
+
+export interface ResearchQuestionTimelineEvent {
+  date: IsoDate;
+  title: string;
+  summary: string;
+  relatedEntities?: EntityRef[];
+}
+
+export interface ResearchQuestionEntity extends BaseEntity {
+  type: "researchQuestion";
+  started: IsoDate;
+  updated: IsoDate;
+  priority: number;
+  homepage?: boolean;
+  observation: string;
+  problem?: string;
+  hypothesis: string;
+  currentUnderstanding?: string;
+  experiments?: ResearchQuestionExperiment[];
+  result?: string;
+  nextSteps?: string[];
+  relatedProjects?: EntityRef[];
+  relatedSoftware?: EntityRef[];
+  relatedArticles?: EntityRef[];
+  relatedCollections?: EntityRef[];
+  relatedConcepts?: EntityRef[];
+  relatedTechnologies?: EntityRef[];
+  relatedRepositories?: SourceRef[];
+  timeline?: ResearchQuestionTimelineEvent[];
+}
+
 export interface ProjectEntity extends BaseEntity {
   type: "project";
   category: "internal" | "client" | "cultural" | "research" | "collaboration";
@@ -166,6 +212,7 @@ export type Entity =
   | FrameworkEntity
   | TechnologyEntity
   | ResearchFieldEntity
+  | ResearchQuestionEntity
   | ProjectEntity
   | ProgramEntity
   | PublicationEntity

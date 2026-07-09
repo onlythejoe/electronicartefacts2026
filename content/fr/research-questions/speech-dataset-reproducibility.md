@@ -1,0 +1,126 @@
+---
+id: ea:researchQuestion:speech-dataset-reproducibility-fr
+type: researchQuestion
+translationKey: research-question:speech-dataset-reproducibility
+translationOf: ea:researchQuestion:speech-dataset-reproducibility
+slug:
+  canonical: speech-dataset-reproducibility
+title: Comment les datasets vocaux peuvent-ils devenir reproductibles, structurés et privacy-first ?
+subtitle: Question de recherche 002
+abstract: Cette question étudie comment l'enregistrement vocal dans le navigateur peut standardiser acquisition, métadonnées et revue tout en gardant la matière vocale privée sous contrôle local.
+description: Question de recherche publique d'Electronic Artefacts sur les datasets vocaux reproductibles, l'enregistrement local-first et les workflows vocaux riches en métadonnées.
+locale: fr
+visibility: public
+publicationClass: canonical
+status: active
+maturity: research
+confidence: published
+version:
+  version: 1.0.0
+  createdAt: "2026-07-09"
+  publishedAt: "2026-07-09"
+  modifiedAt: "2026-07-09"
+authors:
+  - id: ea:organization:electronic-artefacts
+publisher: ea:organization:electronic-artefacts
+started: "2026-02-01"
+updated: "2026-07-09"
+priority: 2
+featured: true
+homepage: true
+observation: Les datasets vocaux sont souvent assemblés avec des outils hétérogènes, des dossiers libres et des métadonnées manquantes, ce qui rend la revue, le consentement et la reproduction difficiles.
+problem: La qualité du dataset est souvent discutée après l'enregistrement, lorsque de nombreuses conditions importantes ont déjà disparu. La confidentialité devient aussi plus difficile à vérifier si l'outil masque le lieu de stockage de l'audio.
+hypothesis: Un workflow d'enregistrement dans le navigateur peut standardiser acquisition, états de revue, métadonnées et structure d'export sans logiciel propriétaire ni upload distant.
+currentUnderstanding: Capturer les données est aussi important qu'entraîner les modèles. Un workflow vocal utile doit préserver prompt, locuteur, timing, qualité, revue et contexte d'export avant tout travail de modèle.
+experiments:
+  - id: local-browser-workspace
+    title: Workspace local dans le navigateur
+    status: active
+    summary: Voice Capture Studio garde les enregistrements dans le stockage local du navigateur ou dans des dossiers explicitement choisis, puis exporte une session structurée.
+    relatedEntities:
+      - id: ea:project:voice-capture-studio
+      - id: ea:concept:browser-software
+  - id: wav-metadata-export
+    title: Export WAV et métadonnées
+    status: observed
+    summary: Le projet teste si audio, transcription, timing, qualité et manifestes peuvent former une seule sortie de session reproductible.
+    relatedEntities:
+      - id: ea:concept:speech-datasets
+      - id: ea:concept:metadata
+result: "La réponse logicielle immédiate est Voice Capture Studio : un enregistreur local-first dans le navigateur avec exports structurés et séparation explicite entre enregistrement et entraînement."
+nextSteps:
+  - Étendre les définitions de corpus en gardant source, version et langue explicites.
+  - Tester les exports avec des workflows de revue et d'alignement en aval.
+  - Définir des notes de consentement et de suppression qui restent attachées aux manifestes.
+relatedProjects:
+  - id: ea:project:voice-capture-studio
+relatedSoftware:
+  - id: ea:program:oreth
+  - id: ea:framework:electronic-artefacts-lightweight-template
+relatedArticles:
+  - id: ea:publication:web-audio-and-browser-based-sound-systems
+  - id: ea:publication:local-and-open-source-ai-systems
+  - id: ea:publication:open-source-as-cultural-infrastructure
+  - id: ea:publication:webnn-and-local-ai-in-the-browser
+relatedCollections:
+  - id: ea:collection:voice-capture-studio
+relatedConcepts:
+  - id: ea:concept:speech-datasets
+  - id: ea:concept:speech-recording
+  - id: ea:concept:voice-technology
+  - id: ea:concept:metadata
+  - id: ea:concept:provenance
+  - id: ea:concept:machine-learning-workflows
+  - id: ea:concept:browser-software
+  - id: ea:concept:open-source
+relatedTechnologies:
+  - id: ea:technology:web-audio-api
+  - id: ea:technology:webnn
+relatedRepositories:
+  - title: Dépôt Voice Capture Studio
+    publisher: GitHub
+    accessedAt: "2026-07-09"
+    url: https://github.com/electronicartefacts/voice-capture-studio
+  - title: Documentation Voice Capture Studio
+    publisher: GitHub
+    accessedAt: "2026-07-09"
+    url: https://github.com/electronicartefacts/voice-capture-studio/tree/main/docs
+timeline:
+  - date: "2026-02-01"
+    title: Séparation du workflow dataset
+    summary: La recherche a séparé capture vocale et entraînement aval afin de concevoir directement la frontière de capture.
+  - date: "2026-07-09"
+    title: Publication open source
+    summary: Voice Capture Studio devient la réponse logicielle publique et la source de preuve de la question.
+tags:
+  - Datasets vocaux
+  - Confidentialité
+  - Web Audio
+  - Local First
+  - Open Source
+disciplines:
+  - Ingénierie audio
+  - Machine Learning
+  - Développement web
+  - Ingénierie des données
+---
+
+## Observation
+
+La matière vocale est souvent enregistrée avant que le dataset ait une structure. L'audio peut être utilisable sans que le profil locuteur, la version du prompt ou le manifeste d'export soient présents.
+
+## Problème
+
+Le coût apparaît plus tard. Sans structure, le dataset devient difficile à auditer. Sans stockage local explicite, les promesses de confidentialité sont difficiles à inspecter.
+
+## Hypothèse
+
+Un enregistreur navigateur peut agir comme un instrument de recherche léger. Il rend visibles état du micro, stockage, version du corpus, revue et export au moment de la capture.
+
+## Compréhension actuelle
+
+L'outil d'enregistrement fait partie de la méthodologie du dataset. Il ne doit pas être traité comme un utilitaire interchangeable si ses choix déterminent ce qui peut être revu, réutilisé ou supprimé.
+
+## Inconnues
+
+Les prochaines questions concernent l'échelle et la gouvernance : corpus multilingues, consentement, rapports qualité et évaluations aval.

@@ -5293,6 +5293,534 @@
     }
   },
   {
+    "id": "ea:researchQuestion:first-conversation-understanding-fr",
+    "legacyId": "first-conversation-understanding-fr",
+    "kind": "researchQuestion",
+    "type": "researchQuestion",
+    "locale": "fr",
+    "translationKey": "research-question:first-conversation-understanding",
+    "translationOf": "ea:researchQuestion:first-conversation-understanding",
+    "title": "Comment une IA peut-elle comprendre quelqu'un dès sa première conversation ?",
+    "subtitle": "Question de recherche 001",
+    "summary": "Cette question étudie si l'onboarding conversationnel peut construire un premier modèle fiable d'une personne sans réduire l'intention, l'incertitude et le contexte à un formulaire statique.",
+    "description": "Question de recherche publique d'Electronic Artefacts sur la compréhension au premier contact, l'onboarding conversationnel et le contexte utilisateur structuré en graphe.",
+    "status": "active",
+    "maturity": "research",
+    "confidence": "observed",
+    "visibility": "public",
+    "publicationClass": "canonical",
+    "tags": [
+      "Onboarding conversationnel",
+      "Agents IA",
+      "Graphe de connaissance",
+      "Voix",
+      "Compréhension utilisateur"
+    ],
+    "discipline": [
+      "Intelligence artificielle",
+      "Interaction humain-machine",
+      "Systèmes de connaissance",
+      "Architecture logicielle"
+    ],
+    "route": "/fr/research/questions/first-conversation-understanding/",
+    "identifier": "/fr/id/research-question/first-conversation-understanding/",
+    "started": "2026-01-01",
+    "updated": "2026-07-09",
+    "priority": 1,
+    "homepage": true,
+    "observation": "Les formulaires collectent des réponses, mais ils capturent mal l'intention, l'incertitude, le vocabulaire, le contexte évolutif et les raisons qui poussent une personne à agir maintenant.",
+    "problem": "Un système qui commence par des champs rigides peut confondre conformité et compréhension. Le premier échange doit préserver assez d'ambiguïté pour permettre une correction ultérieure.",
+    "hypothesis": "La conversation peut devenir le protocole d'onboarding si le système traite chaque échange comme une preuve, et pas seulement comme une entrée de profil.",
+    "currentUnderstanding": "La compréhension doit émerger progressivement. Une première conversation peut identifier des entités, objectifs, contraintes, risques et inconnues provisoires, puis garder ces hypothèses révisables.",
+    "experiments": [
+      {
+        "id": "conversational-brief-capture",
+        "title": "Capture conversationnelle du brief",
+        "status": "active",
+        "summary": "Les parcours de contact et de découverte sont traités comme des conversations structurées qui identifient intention, voie probable, contexte manquant et questions utiles.",
+        "relatedEntities": [
+          {
+            "id": "ea:concept:human-computer-interaction"
+          },
+          {
+            "id": "ea:concept:contextual-execution"
+          }
+        ]
+      },
+      {
+        "id": "voice-context-capture",
+        "title": "Capture du contexte vocal",
+        "status": "observed",
+        "summary": "Voice Capture Studio teste comment préserver transcription, timing, locuteur et métadonnées qualité sans envoyer les enregistrements à un service distant.",
+        "relatedEntities": [
+          {
+            "id": "ea:project:voice-capture-studio"
+          },
+          {
+            "id": "ea:concept:voice-technology"
+          }
+        ]
+      }
+    ],
+    "result": "Le résultat le plus solide est architectural plutôt que centré sur le modèle. L'objet utile est un graphe provisoire d'hypothèses, de contraintes et de signaux inspectables.",
+    "nextSteps": [
+      "Définir un schéma minimal pour les hypothèses issues de la première conversation et leurs niveaux d'incertitude.",
+      "Tester comment séparer voix, texte et métadonnées avant tout workflow de machine learning en aval.",
+      "Décider quelles hypothèses peuvent être conservées et lesquelles doivent expirer sans confirmation."
+    ],
+    "relatedProjects": [
+      {
+        "id": "ea:project:voice-capture-studio"
+      },
+      {
+        "id": "ea:project:vestiges"
+      }
+    ],
+    "relatedSoftware": [
+      {
+        "id": "ea:program:vaste"
+      },
+      {
+        "id": "ea:program:oreth"
+      }
+    ],
+    "relatedArticles": [
+      {
+        "id": "ea:publication:ai-agents-vs-ai-workflows"
+      },
+      {
+        "id": "ea:publication:retrieval-augmented-generation-and-knowledge-systems"
+      },
+      {
+        "id": "ea:publication:model-context-protocol-and-tool-using-ai-systems"
+      },
+      {
+        "id": "ea:publication:human-computer-interaction-for-creative-tools"
+      }
+    ],
+    "relatedCollections": [
+      {
+        "id": "ea:collection:voice-capture-studio"
+      }
+    ],
+    "relatedConcepts": [
+      {
+        "id": "ea:concept:ai-agent"
+      },
+      {
+        "id": "ea:concept:knowledge-graph"
+      },
+      {
+        "id": "ea:concept:machine-learning-workflows"
+      },
+      {
+        "id": "ea:concept:human-computer-interaction"
+      },
+      {
+        "id": "ea:concept:contextual-execution"
+      },
+      {
+        "id": "ea:concept:entity-identity"
+      },
+      {
+        "id": "ea:concept:voice-technology"
+      }
+    ],
+    "relatedTechnologies": [
+      {
+        "id": "ea:technology:model-context-protocol"
+      },
+      {
+        "id": "ea:technology:web-audio-api"
+      },
+      {
+        "id": "ea:technology:webnn"
+      }
+    ],
+    "relatedRepositories": [
+      {
+        "title": "Dépôt Voice Capture Studio",
+        "url": "https://github.com/electronicartefacts/voice-capture-studio",
+        "publisher": "GitHub",
+        "accessedAt": "2026-07-09"
+      }
+    ],
+    "timeline": [
+      {
+        "date": "2026-01-01",
+        "title": "Cadrage de la recherche",
+        "summary": "La question a été séparée de l'onboarding IA générique et reformulée autour de la compréhension au premier contact."
+      },
+      {
+        "date": "2026-07-09",
+        "title": "Intégration dans l'atlas de la page d'accueil",
+        "summary": "La question devient une fiche du graphe reliée aux logiciels et preuves actuels."
+      }
+    ],
+    "temporality": {
+      "creationDate": "2026-07-09",
+      "lastUpdated": "2026-07-09",
+      "releaseDate": "2026-07-09",
+      "creationYear": "2026"
+    }
+  },
+  {
+    "id": "ea:researchQuestion:self-explaining-knowledge-graph-software-fr",
+    "legacyId": "self-explaining-knowledge-graph-software-fr",
+    "kind": "researchQuestion",
+    "type": "researchQuestion",
+    "locale": "fr",
+    "translationKey": "research-question:self-explaining-knowledge-graph-software",
+    "translationOf": "ea:researchQuestion:self-explaining-knowledge-graph-software",
+    "title": "Comment un logiciel peut-il devenir explicable par son propre graphe de connaissance ?",
+    "subtitle": "Question de recherche 003",
+    "summary": "Cette question étudie si un logiciel peut expliquer son objectif, ses preuves, dépendances et limites à travers le même graphe qui génère ses pages publiques et ses fiches machine-readable.",
+    "description": "Question de recherche publique d'Electronic Artefacts sur les logiciels explicables, les graphes de connaissance, la documentation générée et les surfaces publiques sémantiques.",
+    "status": "active",
+    "maturity": "research",
+    "confidence": "validated",
+    "visibility": "public",
+    "publicationClass": "canonical",
+    "tags": [
+      "Graphe de connaissance",
+      "Linked Data",
+      "Documentation",
+      "Logiciel explicable",
+      "Génération de site statique"
+    ],
+    "discipline": [
+      "Architecture de l'information",
+      "Architecture logicielle",
+      "Systèmes de connaissance",
+      "Développement web"
+    ],
+    "route": "/fr/research/questions/self-explaining-knowledge-graph-software/",
+    "identifier": "/fr/id/research-question/self-explaining-knowledge-graph-software/",
+    "started": "2026-03-01",
+    "updated": "2026-07-09",
+    "priority": 3,
+    "homepage": true,
+    "observation": "La documentation devient vite obsolète lorsqu'elle est séparée des entités, relations et routes que le système logiciel utilise réellement.",
+    "problem": "Un projet peut avoir pages, JSON-LD, données de recherche, exports de relations et fichiers source qui divergent si aucun graphe structuré ne joue le rôle de couche d'autorité.",
+    "hypothesis": "Le graphe de connaissance peut devenir la couche documentaire principale lorsque pages, identifiants, voisinages de graphe, documents de recherche et panneaux relationnels sont générés depuis les mêmes fiches source.",
+    "currentUnderstanding": "L'explicabilité progresse lorsque l'interface publique expose le graphe au lieu de le cacher. Une page devrait montrer ce qu'elle est, ses liens, ses preuves et les limites de ses affirmations.",
+    "experiments": [
+      {
+        "id": "generated-entity-pages",
+        "title": "Pages d'entités générées",
+        "status": "active",
+        "summary": "Le site Electronic Artefacts génère pages canoniques, identifiants, JSON-LD, documents de recherche et voisinages de graphe depuis des fiches Markdown typées.",
+        "relatedEntities": [
+          {
+            "id": "ea:framework:electronic-artefacts-lightweight-template"
+          },
+          {
+            "id": "ea:concept:linked-data"
+          }
+        ]
+      },
+      {
+        "id": "relationship-panels",
+        "title": "Panneaux relationnels",
+        "status": "observed",
+        "summary": "Les pages de projets, programmes, concepts et publications exposent des relations typées pour expliquer pourquoi les fiches sont connectées.",
+        "relatedEntities": [
+          {
+            "id": "ea:concept:knowledge-graph"
+          },
+          {
+            "id": "ea:concept:entity-identity"
+          }
+        ]
+      }
+    ],
+    "result": "Le site démontre déjà une réponse partielle. HTML public, identifiants, JSON-LD, recherche et fichiers de graphe local sont générés depuis des fiches typées plutôt que maintenus séparément.",
+    "nextSteps": [
+      "Ajouter davantage de relations dérivées tout en conservant la revue éditoriale.",
+      "Rendre les voisinages de graphe plus faciles à inspecter depuis les pages publiques.",
+      "Définir ce qui constitue une preuve suffisante avant qu'une relation devienne canonique."
+    ],
+    "relatedProjects": [
+      {
+        "id": "ea:project:vestiges"
+      },
+      {
+        "id": "ea:project:voice-capture-studio"
+      }
+    ],
+    "relatedSoftware": [
+      {
+        "id": "ea:program:vaste"
+      },
+      {
+        "id": "ea:framework:electronic-artefacts-lightweight-template"
+      }
+    ],
+    "relatedArticles": [
+      {
+        "id": "ea:publication:linked-data-and-public-knowledge-pages"
+      },
+      {
+        "id": "ea:publication:knowledge-graphs-for-cultural-infrastructure"
+      },
+      {
+        "id": "ea:publication:ai-search-structured-content-and-knowledge-graph-seo"
+      },
+      {
+        "id": "ea:publication:why-graphs-are-more-powerful-than-folders"
+      },
+      {
+        "id": "ea:publication:contextual-execution-and-graph-runtimes"
+      }
+    ],
+    "relatedCollections": [
+      {
+        "id": "ea:collection:knowledge-hub-foundations"
+      },
+      {
+        "id": "ea:collection:knowledge-hub-third-wave"
+      }
+    ],
+    "relatedConcepts": [
+      {
+        "id": "ea:concept:knowledge-graph"
+      },
+      {
+        "id": "ea:concept:graph-runtime"
+      },
+      {
+        "id": "ea:concept:linked-data"
+      },
+      {
+        "id": "ea:concept:metadata"
+      },
+      {
+        "id": "ea:concept:entity-identity"
+      },
+      {
+        "id": "ea:concept:provenance"
+      },
+      {
+        "id": "ea:concept:hypertext"
+      },
+      {
+        "id": "ea:concept:personal-knowledge-system"
+      }
+    ],
+    "relatedTechnologies": [
+      {
+        "id": "ea:technology:json-ld"
+      },
+      {
+        "id": "ea:technology:rdf"
+      },
+      {
+        "id": "ea:technology:web-animations"
+      }
+    ],
+    "relatedRepositories": [
+      {
+        "title": "Dépôt source du site Electronic Artefacts",
+        "url": "https://github.com/onlythejoe",
+        "publisher": "GitHub",
+        "accessedAt": "2026-07-09"
+      }
+    ],
+    "timeline": [
+      {
+        "date": "2026-03-01",
+        "title": "Requalification de la documentation",
+        "summary": "L'architecture du site est reformulée comme graphe public plutôt que comme suite de pages de portfolio maintenues à la main."
+      },
+      {
+        "date": "2026-07-09",
+        "title": "Ajout de l'entité question de recherche",
+        "summary": "Les questions de recherche deviennent des entités du graphe, permettant aux projets et logiciels de pointer vers ce qu'ils testent."
+      }
+    ],
+    "temporality": {
+      "creationDate": "2026-07-09",
+      "lastUpdated": "2026-07-09",
+      "releaseDate": "2026-07-09",
+      "creationYear": "2026"
+    }
+  },
+  {
+    "id": "ea:researchQuestion:speech-dataset-reproducibility-fr",
+    "legacyId": "speech-dataset-reproducibility-fr",
+    "kind": "researchQuestion",
+    "type": "researchQuestion",
+    "locale": "fr",
+    "translationKey": "research-question:speech-dataset-reproducibility",
+    "translationOf": "ea:researchQuestion:speech-dataset-reproducibility",
+    "title": "Comment les datasets vocaux peuvent-ils devenir reproductibles, structurés et privacy-first ?",
+    "subtitle": "Question de recherche 002",
+    "summary": "Cette question étudie comment l'enregistrement vocal dans le navigateur peut standardiser acquisition, métadonnées et revue tout en gardant la matière vocale privée sous contrôle local.",
+    "description": "Question de recherche publique d'Electronic Artefacts sur les datasets vocaux reproductibles, l'enregistrement local-first et les workflows vocaux riches en métadonnées.",
+    "status": "active",
+    "maturity": "research",
+    "confidence": "published",
+    "visibility": "public",
+    "publicationClass": "canonical",
+    "tags": [
+      "Datasets vocaux",
+      "Confidentialité",
+      "Web Audio",
+      "Local First",
+      "Open Source"
+    ],
+    "discipline": [
+      "Ingénierie audio",
+      "Machine Learning",
+      "Développement web",
+      "Ingénierie des données"
+    ],
+    "route": "/fr/research/questions/speech-dataset-reproducibility/",
+    "identifier": "/fr/id/research-question/speech-dataset-reproducibility/",
+    "started": "2026-02-01",
+    "updated": "2026-07-09",
+    "priority": 2,
+    "homepage": true,
+    "observation": "Les datasets vocaux sont souvent assemblés avec des outils hétérogènes, des dossiers libres et des métadonnées manquantes, ce qui rend la revue, le consentement et la reproduction difficiles.",
+    "problem": "La qualité du dataset est souvent discutée après l'enregistrement, lorsque de nombreuses conditions importantes ont déjà disparu. La confidentialité devient aussi plus difficile à vérifier si l'outil masque le lieu de stockage de l'audio.",
+    "hypothesis": "Un workflow d'enregistrement dans le navigateur peut standardiser acquisition, états de revue, métadonnées et structure d'export sans logiciel propriétaire ni upload distant.",
+    "currentUnderstanding": "Capturer les données est aussi important qu'entraîner les modèles. Un workflow vocal utile doit préserver prompt, locuteur, timing, qualité, revue et contexte d'export avant tout travail de modèle.",
+    "experiments": [
+      {
+        "id": "local-browser-workspace",
+        "title": "Workspace local dans le navigateur",
+        "status": "active",
+        "summary": "Voice Capture Studio garde les enregistrements dans le stockage local du navigateur ou dans des dossiers explicitement choisis, puis exporte une session structurée.",
+        "relatedEntities": [
+          {
+            "id": "ea:project:voice-capture-studio"
+          },
+          {
+            "id": "ea:concept:browser-software"
+          }
+        ]
+      },
+      {
+        "id": "wav-metadata-export",
+        "title": "Export WAV et métadonnées",
+        "status": "observed",
+        "summary": "Le projet teste si audio, transcription, timing, qualité et manifestes peuvent former une seule sortie de session reproductible.",
+        "relatedEntities": [
+          {
+            "id": "ea:concept:speech-datasets"
+          },
+          {
+            "id": "ea:concept:metadata"
+          }
+        ]
+      }
+    ],
+    "result": "La réponse logicielle immédiate est Voice Capture Studio : un enregistreur local-first dans le navigateur avec exports structurés et séparation explicite entre enregistrement et entraînement.",
+    "nextSteps": [
+      "Étendre les définitions de corpus en gardant source, version et langue explicites.",
+      "Tester les exports avec des workflows de revue et d'alignement en aval.",
+      "Définir des notes de consentement et de suppression qui restent attachées aux manifestes."
+    ],
+    "relatedProjects": [
+      {
+        "id": "ea:project:voice-capture-studio"
+      }
+    ],
+    "relatedSoftware": [
+      {
+        "id": "ea:program:oreth"
+      },
+      {
+        "id": "ea:framework:electronic-artefacts-lightweight-template"
+      }
+    ],
+    "relatedArticles": [
+      {
+        "id": "ea:publication:web-audio-and-browser-based-sound-systems"
+      },
+      {
+        "id": "ea:publication:local-and-open-source-ai-systems"
+      },
+      {
+        "id": "ea:publication:open-source-as-cultural-infrastructure"
+      },
+      {
+        "id": "ea:publication:webnn-and-local-ai-in-the-browser"
+      }
+    ],
+    "relatedCollections": [
+      {
+        "id": "ea:collection:voice-capture-studio"
+      }
+    ],
+    "relatedConcepts": [
+      {
+        "id": "ea:concept:speech-datasets"
+      },
+      {
+        "id": "ea:concept:speech-recording"
+      },
+      {
+        "id": "ea:concept:voice-technology"
+      },
+      {
+        "id": "ea:concept:metadata"
+      },
+      {
+        "id": "ea:concept:provenance"
+      },
+      {
+        "id": "ea:concept:machine-learning-workflows"
+      },
+      {
+        "id": "ea:concept:browser-software"
+      },
+      {
+        "id": "ea:concept:open-source"
+      }
+    ],
+    "relatedTechnologies": [
+      {
+        "id": "ea:technology:web-audio-api"
+      },
+      {
+        "id": "ea:technology:webnn"
+      }
+    ],
+    "relatedRepositories": [
+      {
+        "title": "Dépôt Voice Capture Studio",
+        "url": "https://github.com/electronicartefacts/voice-capture-studio",
+        "publisher": "GitHub",
+        "accessedAt": "2026-07-09"
+      },
+      {
+        "title": "Documentation Voice Capture Studio",
+        "url": "https://github.com/electronicartefacts/voice-capture-studio/tree/main/docs",
+        "publisher": "GitHub",
+        "accessedAt": "2026-07-09"
+      }
+    ],
+    "timeline": [
+      {
+        "date": "2026-02-01",
+        "title": "Séparation du workflow dataset",
+        "summary": "La recherche a séparé capture vocale et entraînement aval afin de concevoir directement la frontière de capture."
+      },
+      {
+        "date": "2026-07-09",
+        "title": "Publication open source",
+        "summary": "Voice Capture Studio devient la réponse logicielle publique et la source de preuve de la question."
+      }
+    ],
+    "temporality": {
+      "creationDate": "2026-07-09",
+      "lastUpdated": "2026-07-09",
+      "releaseDate": "2026-07-09",
+      "creationYear": "2026"
+    }
+  },
+  {
     "id": "ea:technology:activitypub-fr",
     "legacyId": "activitypub-fr",
     "kind": "technology",
@@ -7676,6 +8204,531 @@
       "lastUpdated": "2026-06-22",
       "releaseDate": "2026-06-22",
       "creationYear": "2024"
+    }
+  },
+  {
+    "id": "ea:researchQuestion:first-conversation-understanding",
+    "legacyId": "first-conversation-understanding",
+    "kind": "researchQuestion",
+    "type": "researchQuestion",
+    "locale": "en",
+    "translationKey": "research-question:first-conversation-understanding",
+    "title": "How can an AI understand someone during its very first conversation?",
+    "subtitle": "Research Question 001",
+    "summary": "This research question studies whether conversational onboarding can build a reliable first model of a person without reducing intent, uncertainty and context to a static form.",
+    "description": "A public Electronic Artefacts research question about first-contact understanding, conversational onboarding and graph-shaped user context.",
+    "status": "active",
+    "maturity": "research",
+    "confidence": "observed",
+    "visibility": "public",
+    "publicationClass": "canonical",
+    "tags": [
+      "Conversational Onboarding",
+      "AI Agents",
+      "Knowledge Graph",
+      "Speech",
+      "User Understanding"
+    ],
+    "discipline": [
+      "Artificial Intelligence",
+      "Human Computer Interaction",
+      "Knowledge Systems",
+      "Software Architecture"
+    ],
+    "route": "/research/questions/first-conversation-understanding/",
+    "identifier": "/id/research-question/first-conversation-understanding/",
+    "started": "2026-01-01",
+    "updated": "2026-07-09",
+    "priority": 1,
+    "homepage": true,
+    "observation": "Forms collect answers, but they often fail to capture intent, uncertainty, vocabulary, changing context and the reasons a person gives for acting now.",
+    "problem": "A system that starts from rigid fields can mistake compliance for understanding. The first interaction should preserve enough ambiguity for later correction instead of forcing premature classification.",
+    "hypothesis": "Conversation itself can become the onboarding protocol when the system treats each exchange as evidence, not merely as input for a profile form.",
+    "currentUnderstanding": "Understanding should emerge progressively. A first conversation can identify provisional entities, goals, constraints, risks and unknowns, then keep those claims revisable as more evidence arrives.",
+    "experiments": [
+      {
+        "id": "conversational-brief-capture",
+        "title": "Conversational brief capture",
+        "status": "active",
+        "summary": "Contact and discovery flows are treated as structured conversations that identify intent, pathway, missing context and useful next questions.",
+        "relatedEntities": [
+          {
+            "id": "ea:concept:human-computer-interaction"
+          },
+          {
+            "id": "ea:concept:contextual-execution"
+          }
+        ]
+      },
+      {
+        "id": "voice-context-capture",
+        "title": "Voice context capture",
+        "status": "observed",
+        "summary": "Voice Capture Studio tests how speech capture can preserve transcript, timing, speaker and quality metadata without sending recordings to a remote service.",
+        "relatedEntities": [
+          {
+            "id": "ea:project:voice-capture-studio"
+          },
+          {
+            "id": "ea:concept:voice-technology"
+          }
+        ]
+      }
+    ],
+    "result": "The strongest result so far is architectural rather than model-centric. The useful object is a provisional graph of claims, constraints and signals that can be inspected and revised.",
+    "nextSteps": [
+      "Define a minimal schema for first-conversation claims and uncertainty levels.",
+      "Test how voice, text and metadata should be separated before downstream machine-learning work.",
+      "Decide which claims are safe to persist and which should expire unless confirmed."
+    ],
+    "relatedProjects": [
+      {
+        "id": "ea:project:voice-capture-studio"
+      },
+      {
+        "id": "ea:project:vestiges"
+      }
+    ],
+    "relatedSoftware": [
+      {
+        "id": "ea:program:vaste"
+      },
+      {
+        "id": "ea:program:oreth"
+      }
+    ],
+    "relatedArticles": [
+      {
+        "id": "ea:publication:ai-agents-vs-ai-workflows"
+      },
+      {
+        "id": "ea:publication:retrieval-augmented-generation-and-knowledge-systems"
+      },
+      {
+        "id": "ea:publication:model-context-protocol-and-tool-using-ai-systems"
+      },
+      {
+        "id": "ea:publication:human-computer-interaction-for-creative-tools"
+      }
+    ],
+    "relatedCollections": [
+      {
+        "id": "ea:collection:voice-capture-studio"
+      }
+    ],
+    "relatedConcepts": [
+      {
+        "id": "ea:concept:ai-agent"
+      },
+      {
+        "id": "ea:concept:knowledge-graph"
+      },
+      {
+        "id": "ea:concept:machine-learning-workflows"
+      },
+      {
+        "id": "ea:concept:human-computer-interaction"
+      },
+      {
+        "id": "ea:concept:contextual-execution"
+      },
+      {
+        "id": "ea:concept:entity-identity"
+      },
+      {
+        "id": "ea:concept:voice-technology"
+      }
+    ],
+    "relatedTechnologies": [
+      {
+        "id": "ea:technology:model-context-protocol"
+      },
+      {
+        "id": "ea:technology:web-audio-api"
+      },
+      {
+        "id": "ea:technology:webnn"
+      }
+    ],
+    "relatedRepositories": [
+      {
+        "title": "Voice Capture Studio repository",
+        "url": "https://github.com/electronicartefacts/voice-capture-studio",
+        "publisher": "GitHub",
+        "accessedAt": "2026-07-09"
+      }
+    ],
+    "timeline": [
+      {
+        "date": "2026-01-01",
+        "title": "Research framing",
+        "summary": "The question was separated from generic AI onboarding and reframed around first-contact understanding."
+      },
+      {
+        "date": "2026-07-09",
+        "title": "Homepage atlas integration",
+        "summary": "The question became a first-class knowledge-graph record connected to current software and evidence."
+      }
+    ],
+    "temporality": {
+      "creationDate": "2026-07-09",
+      "lastUpdated": "2026-07-09",
+      "releaseDate": "2026-07-09",
+      "creationYear": "2026"
+    }
+  },
+  {
+    "id": "ea:researchQuestion:self-explaining-knowledge-graph-software",
+    "legacyId": "self-explaining-knowledge-graph-software",
+    "kind": "researchQuestion",
+    "type": "researchQuestion",
+    "locale": "en",
+    "translationKey": "research-question:self-explaining-knowledge-graph-software",
+    "title": "How can software become explainable through its own knowledge graph?",
+    "subtitle": "Research Question 003",
+    "summary": "This research question studies whether software can explain its purpose, evidence, dependencies and limits through the same graph that generates its public pages and machine-readable records.",
+    "description": "A public Electronic Artefacts research question about self-explaining software, knowledge graphs, generated documentation and semantic public surfaces.",
+    "status": "active",
+    "maturity": "research",
+    "confidence": "validated",
+    "visibility": "public",
+    "publicationClass": "canonical",
+    "tags": [
+      "Knowledge Graph",
+      "Linked Data",
+      "Documentation",
+      "Explainable Software",
+      "Static Site Generation"
+    ],
+    "discipline": [
+      "Information Architecture",
+      "Software Architecture",
+      "Knowledge Systems",
+      "Web Development"
+    ],
+    "route": "/research/questions/self-explaining-knowledge-graph-software/",
+    "identifier": "/id/research-question/self-explaining-knowledge-graph-software/",
+    "started": "2026-03-01",
+    "updated": "2026-07-09",
+    "priority": 3,
+    "homepage": true,
+    "observation": "Documentation quickly becomes outdated when it is separate from the entities, relations and routes that a software system actually uses.",
+    "problem": "A project can have pages, JSON-LD, search data, relation exports and source files that disagree unless one structured graph acts as the authority layer.",
+    "hypothesis": "The knowledge graph itself can become the primary documentation layer when pages, identifiers, graph neighborhoods, search documents and relation panels are generated from the same source records.",
+    "currentUnderstanding": "Explainability improves when the public interface exposes the graph instead of hiding it. A page should show what it is, what it connects to, what evidence supports it and where its claims remain limited.",
+    "experiments": [
+      {
+        "id": "generated-entity-pages",
+        "title": "Generated entity pages",
+        "status": "active",
+        "summary": "The Electronic Artefacts site generates canonical pages, identifiers, JSON-LD, search documents and graph neighborhoods from typed Markdown records.",
+        "relatedEntities": [
+          {
+            "id": "ea:framework:electronic-artefacts-lightweight-template"
+          },
+          {
+            "id": "ea:concept:linked-data"
+          }
+        ]
+      },
+      {
+        "id": "relationship-panels",
+        "title": "Relationship panels",
+        "status": "observed",
+        "summary": "Project, program, concept and publication pages expose typed relations so readers can inspect why records are connected.",
+        "relatedEntities": [
+          {
+            "id": "ea:concept:knowledge-graph"
+          },
+          {
+            "id": "ea:concept:entity-identity"
+          }
+        ]
+      }
+    ],
+    "result": "The site already demonstrates a partial answer. Its public HTML, identifiers, JSON-LD, search documents and local graph files are generated from typed records rather than maintained as separate explanations.",
+    "nextSteps": [
+      "Add more derived relation patterns while preserving editorial review.",
+      "Make graph neighborhoods easier to inspect from public pages.",
+      "Define what counts as enough evidence before a relation becomes canonical."
+    ],
+    "relatedProjects": [
+      {
+        "id": "ea:project:vestiges"
+      },
+      {
+        "id": "ea:project:voice-capture-studio"
+      }
+    ],
+    "relatedSoftware": [
+      {
+        "id": "ea:program:vaste"
+      },
+      {
+        "id": "ea:framework:electronic-artefacts-lightweight-template"
+      }
+    ],
+    "relatedArticles": [
+      {
+        "id": "ea:publication:linked-data-and-public-knowledge-pages"
+      },
+      {
+        "id": "ea:publication:knowledge-graphs-for-cultural-infrastructure"
+      },
+      {
+        "id": "ea:publication:ai-search-structured-content-and-knowledge-graph-seo"
+      },
+      {
+        "id": "ea:publication:why-graphs-are-more-powerful-than-folders"
+      },
+      {
+        "id": "ea:publication:contextual-execution-and-graph-runtimes"
+      }
+    ],
+    "relatedCollections": [
+      {
+        "id": "ea:collection:knowledge-hub-foundations"
+      },
+      {
+        "id": "ea:collection:knowledge-hub-third-wave"
+      }
+    ],
+    "relatedConcepts": [
+      {
+        "id": "ea:concept:knowledge-graph"
+      },
+      {
+        "id": "ea:concept:graph-runtime"
+      },
+      {
+        "id": "ea:concept:linked-data"
+      },
+      {
+        "id": "ea:concept:metadata"
+      },
+      {
+        "id": "ea:concept:entity-identity"
+      },
+      {
+        "id": "ea:concept:provenance"
+      },
+      {
+        "id": "ea:concept:hypertext"
+      },
+      {
+        "id": "ea:concept:personal-knowledge-system"
+      }
+    ],
+    "relatedTechnologies": [
+      {
+        "id": "ea:technology:json-ld"
+      },
+      {
+        "id": "ea:technology:rdf"
+      },
+      {
+        "id": "ea:technology:web-animations"
+      }
+    ],
+    "relatedRepositories": [
+      {
+        "title": "Electronic Artefacts website source repository",
+        "url": "https://github.com/onlythejoe",
+        "publisher": "GitHub",
+        "accessedAt": "2026-07-09"
+      }
+    ],
+    "timeline": [
+      {
+        "date": "2026-03-01",
+        "title": "Documentation reframing",
+        "summary": "The site architecture was reframed as a public graph rather than a set of manually maintained portfolio pages."
+      },
+      {
+        "date": "2026-07-09",
+        "title": "Research-question entity added",
+        "summary": "Research questions became graph entities, allowing projects and software to point back to the questions they test."
+      }
+    ],
+    "temporality": {
+      "creationDate": "2026-07-09",
+      "lastUpdated": "2026-07-09",
+      "releaseDate": "2026-07-09",
+      "creationYear": "2026"
+    }
+  },
+  {
+    "id": "ea:researchQuestion:speech-dataset-reproducibility",
+    "legacyId": "speech-dataset-reproducibility",
+    "kind": "researchQuestion",
+    "type": "researchQuestion",
+    "locale": "en",
+    "translationKey": "research-question:speech-dataset-reproducibility",
+    "title": "How can speech datasets become reproducible, structured and privacy-first?",
+    "subtitle": "Research Question 002",
+    "summary": "This research question studies how browser-based speech recording can standardize acquisition, metadata and review while keeping private voice material under local control.",
+    "description": "A public Electronic Artefacts research question about reproducible speech datasets, local-first recording and metadata-rich voice workflows.",
+    "status": "active",
+    "maturity": "research",
+    "confidence": "published",
+    "visibility": "public",
+    "publicationClass": "canonical",
+    "tags": [
+      "Speech Datasets",
+      "Privacy",
+      "Web Audio",
+      "Local First",
+      "Open Source"
+    ],
+    "discipline": [
+      "Audio Engineering",
+      "Machine Learning",
+      "Web Development",
+      "Data Engineering"
+    ],
+    "route": "/research/questions/speech-dataset-reproducibility/",
+    "identifier": "/id/research-question/speech-dataset-reproducibility/",
+    "started": "2026-02-01",
+    "updated": "2026-07-09",
+    "priority": 2,
+    "homepage": true,
+    "observation": "Voice datasets are often assembled through inconsistent tools, loose folders and missing metadata, which makes later review, consent checking and reproduction difficult.",
+    "problem": "Dataset quality is frequently discussed after recording, when many important conditions have already been lost. Privacy also becomes harder to reason about when capture tools hide where audio is stored.",
+    "hypothesis": "A browser-based recording workflow can standardize acquisition, review states, metadata and export structure without requiring proprietary desktop software or remote upload.",
+    "currentUnderstanding": "Capturing data is as important as training models. A useful speech workflow should preserve prompt, speaker, timing, quality, review and export context before any downstream model work begins.",
+    "experiments": [
+      {
+        "id": "local-browser-workspace",
+        "title": "Local browser workspace",
+        "status": "active",
+        "summary": "Voice Capture Studio keeps recordings in browser-local storage or explicit user-selected folders, then exports structured session material.",
+        "relatedEntities": [
+          {
+            "id": "ea:project:voice-capture-studio"
+          },
+          {
+            "id": "ea:concept:browser-software"
+          }
+        ]
+      },
+      {
+        "id": "wav-metadata-export",
+        "title": "WAV and metadata export",
+        "status": "observed",
+        "summary": "The project tests whether audio, transcript, timing, quality and manifest files can be treated as one reproducible capture-session output.",
+        "relatedEntities": [
+          {
+            "id": "ea:concept:speech-datasets"
+          },
+          {
+            "id": "ea:concept:metadata"
+          }
+        ]
+      }
+    ],
+    "result": "The immediate software answer is Voice Capture Studio: a local-first browser recorder with structured export boundaries and explicit separation between recording and model training.",
+    "nextSteps": [
+      "Expand corpus definitions while keeping source, version and language context explicit.",
+      "Test export packages against downstream review and alignment workflows.",
+      "Define consent and deletion notes that remain attached to dataset manifests."
+    ],
+    "relatedProjects": [
+      {
+        "id": "ea:project:voice-capture-studio"
+      }
+    ],
+    "relatedSoftware": [
+      {
+        "id": "ea:program:oreth"
+      },
+      {
+        "id": "ea:framework:electronic-artefacts-lightweight-template"
+      }
+    ],
+    "relatedArticles": [
+      {
+        "id": "ea:publication:web-audio-and-browser-based-sound-systems"
+      },
+      {
+        "id": "ea:publication:local-and-open-source-ai-systems"
+      },
+      {
+        "id": "ea:publication:open-source-as-cultural-infrastructure"
+      },
+      {
+        "id": "ea:publication:webnn-and-local-ai-in-the-browser"
+      }
+    ],
+    "relatedCollections": [
+      {
+        "id": "ea:collection:voice-capture-studio"
+      }
+    ],
+    "relatedConcepts": [
+      {
+        "id": "ea:concept:speech-datasets"
+      },
+      {
+        "id": "ea:concept:speech-recording"
+      },
+      {
+        "id": "ea:concept:voice-technology"
+      },
+      {
+        "id": "ea:concept:metadata"
+      },
+      {
+        "id": "ea:concept:provenance"
+      },
+      {
+        "id": "ea:concept:machine-learning-workflows"
+      },
+      {
+        "id": "ea:concept:browser-software"
+      },
+      {
+        "id": "ea:concept:open-source"
+      }
+    ],
+    "relatedTechnologies": [
+      {
+        "id": "ea:technology:web-audio-api"
+      },
+      {
+        "id": "ea:technology:webnn"
+      }
+    ],
+    "relatedRepositories": [
+      {
+        "title": "Voice Capture Studio repository",
+        "url": "https://github.com/electronicartefacts/voice-capture-studio",
+        "publisher": "GitHub",
+        "accessedAt": "2026-07-09"
+      },
+      {
+        "title": "Voice Capture Studio documentation",
+        "url": "https://github.com/electronicartefacts/voice-capture-studio/tree/main/docs",
+        "publisher": "GitHub",
+        "accessedAt": "2026-07-09"
+      }
+    ],
+    "timeline": [
+      {
+        "date": "2026-02-01",
+        "title": "Dataset workflow split",
+        "summary": "The research separated speech capture from downstream model training so the capture boundary could be designed directly."
+      },
+      {
+        "date": "2026-07-09",
+        "title": "Open-source project publication",
+        "summary": "Voice Capture Studio became the public software answer and evidence source for the question."
+      }
+    ],
+    "temporality": {
+      "creationDate": "2026-07-09",
+      "lastUpdated": "2026-07-09",
+      "releaseDate": "2026-07-09",
+      "creationYear": "2026"
     }
   },
   {

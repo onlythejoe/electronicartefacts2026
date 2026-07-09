@@ -58,6 +58,14 @@
       "route": "/publications/signal-archaeology-audio-memory-and-machine-listening/",
       "status": "active",
       "confidence": "published"
+    },
+    {
+      "id": "ea:researchQuestion:self-explaining-knowledge-graph-software",
+      "type": "researchQuestion",
+      "title": "How can software become explainable through its own knowledge graph?",
+      "route": "/research/questions/self-explaining-knowledge-graph-software/",
+      "status": "active",
+      "confidence": "validated"
     }
   ],
   "edges": [
@@ -114,6 +122,15 @@
       "label": "Has part",
       "statement": "Knowledge Hub Foundations includes Signal Archaeology, Audio Memory and Machine Listening as a foundation article.",
       "confidence": "published"
+    },
+    {
+      "id": "ear:self-explaining-knowledge-graph-software-member-of-collection-knowledge-hub-foundations",
+      "source": "ea:researchQuestion:self-explaining-knowledge-graph-software",
+      "target": "ea:collection:knowledge-hub-foundations",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "The research question \"How can software become explainable through its own knowledge graph?\" belongs to the Knowledge Hub Foundations collection for editorial navigation.",
+      "confidence": "validated"
     }
   ]
 }

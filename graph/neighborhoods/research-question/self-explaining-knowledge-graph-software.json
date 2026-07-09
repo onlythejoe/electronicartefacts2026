@@ -1,0 +1,391 @@
+{
+  "id": "local:ea:researchQuestion:self-explaining-knowledge-graph-software",
+  "kind": "local",
+  "focus": "ea:researchQuestion:self-explaining-knowledge-graph-software",
+  "nodes": [
+    {
+      "id": "ea:researchQuestion:self-explaining-knowledge-graph-software",
+      "type": "researchQuestion",
+      "title": "How can software become explainable through its own knowledge graph?",
+      "route": "/research/questions/self-explaining-knowledge-graph-software/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:project:vestiges",
+      "type": "project",
+      "title": "Vestiges",
+      "route": "/projects/vestiges/",
+      "status": "development",
+      "confidence": "observed"
+    },
+    {
+      "id": "ea:project:voice-capture-studio",
+      "type": "project",
+      "title": "Voice Capture Studio",
+      "route": "/projects/voice-capture-studio/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:program:vaste",
+      "type": "program",
+      "title": "VASTE",
+      "route": "/programs/vaste/",
+      "status": "development",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:framework:electronic-artefacts-lightweight-template",
+      "type": "framework",
+      "title": "Electronic Artefacts Lightweight Template",
+      "route": "/knowledge/frameworks/electronic-artefacts-lightweight-template/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:concept:knowledge-graph",
+      "type": "concept",
+      "title": "Knowledge Graph",
+      "route": "/knowledge/concepts/knowledge-graph/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:concept:graph-runtime",
+      "type": "concept",
+      "title": "Graph Runtime",
+      "route": "/knowledge/concepts/graph-runtime/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:concept:linked-data",
+      "type": "concept",
+      "title": "Linked Data",
+      "route": "/knowledge/concepts/linked-data/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:concept:metadata",
+      "type": "concept",
+      "title": "Metadata",
+      "route": "/knowledge/concepts/metadata/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:concept:entity-identity",
+      "type": "concept",
+      "title": "Entity Identity",
+      "route": "/knowledge/concepts/entity-identity/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:concept:provenance",
+      "type": "concept",
+      "title": "Provenance",
+      "route": "/knowledge/concepts/provenance/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:concept:hypertext",
+      "type": "concept",
+      "title": "Hypertext",
+      "route": "/knowledge/concepts/hypertext/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:concept:personal-knowledge-system",
+      "type": "concept",
+      "title": "Personal Knowledge System",
+      "route": "/knowledge/concepts/personal-knowledge-system/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:technology:json-ld",
+      "type": "technology",
+      "title": "JSON-LD",
+      "route": "/knowledge/technologies/json-ld/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:technology:rdf",
+      "type": "technology",
+      "title": "RDF",
+      "route": "/knowledge/technologies/rdf/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:technology:web-animations",
+      "type": "technology",
+      "title": "Web Animations",
+      "route": "/knowledge/technologies/web-animations/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:publication:linked-data-and-public-knowledge-pages",
+      "type": "publication",
+      "title": "Linked Data and Public Knowledge Pages",
+      "route": "/publications/linked-data-and-public-knowledge-pages/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:knowledge-graphs-for-cultural-infrastructure",
+      "type": "publication",
+      "title": "Knowledge Graphs for Cultural Infrastructure",
+      "route": "/publications/knowledge-graphs-for-cultural-infrastructure/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:ai-search-structured-content-and-knowledge-graph-seo",
+      "type": "publication",
+      "title": "AI Search, Structured Content and Knowledge Graph SEO",
+      "route": "/publications/ai-search-structured-content-and-knowledge-graph-seo/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:why-graphs-are-more-powerful-than-folders",
+      "type": "publication",
+      "title": "Why Graphs Are More Powerful Than Folders",
+      "route": "/publications/why-graphs-are-more-powerful-than-folders/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:contextual-execution-and-graph-runtimes",
+      "type": "publication",
+      "title": "Contextual Execution and Graph Runtimes",
+      "route": "/publications/contextual-execution-and-graph-runtimes/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:collection:knowledge-hub-foundations",
+      "type": "collection",
+      "title": "Knowledge Hub Foundations",
+      "route": "/archive/collections/knowledge-hub-foundations/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:collection:knowledge-hub-third-wave",
+      "type": "collection",
+      "title": "Knowledge Hub Third Wave",
+      "route": "/archive/collections/knowledge-hub-third-wave/",
+      "status": "active",
+      "confidence": "published"
+    }
+  ],
+  "edges": [
+    {
+      "id": "ear:self-explaining-knowledge-graph-software-implemented-by-vestiges",
+      "source": "ea:researchQuestion:self-explaining-knowledge-graph-software",
+      "target": "ea:project:vestiges",
+      "predicate": "implementedBy",
+      "label": "Implemented by",
+      "statement": "Vestiges is listed as a current software or project answer for the research question \"How can software become explainable through its own knowledge graph?\".",
+      "confidence": "validated"
+    },
+    {
+      "id": "ear:self-explaining-knowledge-graph-software-implemented-by-voice-capture-studio",
+      "source": "ea:researchQuestion:self-explaining-knowledge-graph-software",
+      "target": "ea:project:voice-capture-studio",
+      "predicate": "implementedBy",
+      "label": "Implemented by",
+      "statement": "Voice Capture Studio is listed as a current software or project answer for the research question \"How can software become explainable through its own knowledge graph?\".",
+      "confidence": "validated"
+    },
+    {
+      "id": "ear:self-explaining-knowledge-graph-software-implemented-by-vaste",
+      "source": "ea:researchQuestion:self-explaining-knowledge-graph-software",
+      "target": "ea:program:vaste",
+      "predicate": "implementedBy",
+      "label": "Implemented by",
+      "statement": "VASTE is listed as a current software or project answer for the research question \"How can software become explainable through its own knowledge graph?\".",
+      "confidence": "validated"
+    },
+    {
+      "id": "ear:self-explaining-knowledge-graph-software-implemented-by-electronic-artefacts-lightweight-template",
+      "source": "ea:researchQuestion:self-explaining-knowledge-graph-software",
+      "target": "ea:framework:electronic-artefacts-lightweight-template",
+      "predicate": "implementedBy",
+      "label": "Implemented by",
+      "statement": "Electronic Artefacts Lightweight Template is listed as a current software or project answer for the research question \"How can software become explainable through its own knowledge graph?\".",
+      "confidence": "validated"
+    },
+    {
+      "id": "ear:self-explaining-knowledge-graph-software-applies-concept-knowledge-graph",
+      "source": "ea:researchQuestion:self-explaining-knowledge-graph-software",
+      "target": "ea:concept:knowledge-graph",
+      "predicate": "appliesConcept",
+      "label": "Applies concept",
+      "statement": "The research question \"How can software become explainable through its own knowledge graph?\" applies Knowledge Graph as part of its current model.",
+      "confidence": "validated"
+    },
+    {
+      "id": "ear:self-explaining-knowledge-graph-software-applies-concept-graph-runtime",
+      "source": "ea:researchQuestion:self-explaining-knowledge-graph-software",
+      "target": "ea:concept:graph-runtime",
+      "predicate": "appliesConcept",
+      "label": "Applies concept",
+      "statement": "The research question \"How can software become explainable through its own knowledge graph?\" applies Graph Runtime as part of its current model.",
+      "confidence": "validated"
+    },
+    {
+      "id": "ear:self-explaining-knowledge-graph-software-applies-concept-linked-data",
+      "source": "ea:researchQuestion:self-explaining-knowledge-graph-software",
+      "target": "ea:concept:linked-data",
+      "predicate": "appliesConcept",
+      "label": "Applies concept",
+      "statement": "The research question \"How can software become explainable through its own knowledge graph?\" applies Linked Data as part of its current model.",
+      "confidence": "validated"
+    },
+    {
+      "id": "ear:self-explaining-knowledge-graph-software-applies-concept-metadata",
+      "source": "ea:researchQuestion:self-explaining-knowledge-graph-software",
+      "target": "ea:concept:metadata",
+      "predicate": "appliesConcept",
+      "label": "Applies concept",
+      "statement": "The research question \"How can software become explainable through its own knowledge graph?\" applies Metadata as part of its current model.",
+      "confidence": "validated"
+    },
+    {
+      "id": "ear:self-explaining-knowledge-graph-software-applies-concept-entity-identity",
+      "source": "ea:researchQuestion:self-explaining-knowledge-graph-software",
+      "target": "ea:concept:entity-identity",
+      "predicate": "appliesConcept",
+      "label": "Applies concept",
+      "statement": "The research question \"How can software become explainable through its own knowledge graph?\" applies Entity Identity as part of its current model.",
+      "confidence": "validated"
+    },
+    {
+      "id": "ear:self-explaining-knowledge-graph-software-applies-concept-provenance",
+      "source": "ea:researchQuestion:self-explaining-knowledge-graph-software",
+      "target": "ea:concept:provenance",
+      "predicate": "appliesConcept",
+      "label": "Applies concept",
+      "statement": "The research question \"How can software become explainable through its own knowledge graph?\" applies Provenance as part of its current model.",
+      "confidence": "validated"
+    },
+    {
+      "id": "ear:self-explaining-knowledge-graph-software-applies-concept-hypertext",
+      "source": "ea:researchQuestion:self-explaining-knowledge-graph-software",
+      "target": "ea:concept:hypertext",
+      "predicate": "appliesConcept",
+      "label": "Applies concept",
+      "statement": "The research question \"How can software become explainable through its own knowledge graph?\" applies Hypertext as part of its current model.",
+      "confidence": "validated"
+    },
+    {
+      "id": "ear:self-explaining-knowledge-graph-software-applies-concept-personal-knowledge-system",
+      "source": "ea:researchQuestion:self-explaining-knowledge-graph-software",
+      "target": "ea:concept:personal-knowledge-system",
+      "predicate": "appliesConcept",
+      "label": "Applies concept",
+      "statement": "The research question \"How can software become explainable through its own knowledge graph?\" applies Personal Knowledge System as part of its current model.",
+      "confidence": "validated"
+    },
+    {
+      "id": "ear:self-explaining-knowledge-graph-software-uses-technology-json-ld",
+      "source": "ea:researchQuestion:self-explaining-knowledge-graph-software",
+      "target": "ea:technology:json-ld",
+      "predicate": "usesTechnology",
+      "label": "Uses technology",
+      "statement": "The research question \"How can software become explainable through its own knowledge graph?\" uses JSON-LD as a relevant technical reference.",
+      "confidence": "validated"
+    },
+    {
+      "id": "ear:self-explaining-knowledge-graph-software-uses-technology-rdf",
+      "source": "ea:researchQuestion:self-explaining-knowledge-graph-software",
+      "target": "ea:technology:rdf",
+      "predicate": "usesTechnology",
+      "label": "Uses technology",
+      "statement": "The research question \"How can software become explainable through its own knowledge graph?\" uses RDF as a relevant technical reference.",
+      "confidence": "validated"
+    },
+    {
+      "id": "ear:self-explaining-knowledge-graph-software-uses-technology-web-animations",
+      "source": "ea:researchQuestion:self-explaining-knowledge-graph-software",
+      "target": "ea:technology:web-animations",
+      "predicate": "usesTechnology",
+      "label": "Uses technology",
+      "statement": "The research question \"How can software become explainable through its own knowledge graph?\" uses Web Animations as a relevant technical reference.",
+      "confidence": "validated"
+    },
+    {
+      "id": "ear:linked-data-and-public-knowledge-pages-documents-self-explaining-knowledge-graph-software",
+      "source": "ea:publication:linked-data-and-public-knowledge-pages",
+      "target": "ea:researchQuestion:self-explaining-knowledge-graph-software",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Linked Data and Public Knowledge Pages documents context, evidence or vocabulary for the research question \"How can software become explainable through its own knowledge graph?\".",
+      "confidence": "validated"
+    },
+    {
+      "id": "ear:knowledge-graphs-for-cultural-infrastructure-documents-self-explaining-knowledge-graph-software",
+      "source": "ea:publication:knowledge-graphs-for-cultural-infrastructure",
+      "target": "ea:researchQuestion:self-explaining-knowledge-graph-software",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Knowledge Graphs for Cultural Infrastructure documents context, evidence or vocabulary for the research question \"How can software become explainable through its own knowledge graph?\".",
+      "confidence": "validated"
+    },
+    {
+      "id": "ear:ai-search-structured-content-and-knowledge-graph-seo-documents-self-explaining-knowledge-graph-software",
+      "source": "ea:publication:ai-search-structured-content-and-knowledge-graph-seo",
+      "target": "ea:researchQuestion:self-explaining-knowledge-graph-software",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "AI Search, Structured Content and Knowledge Graph SEO documents context, evidence or vocabulary for the research question \"How can software become explainable through its own knowledge graph?\".",
+      "confidence": "validated"
+    },
+    {
+      "id": "ear:why-graphs-are-more-powerful-than-folders-documents-self-explaining-knowledge-graph-software",
+      "source": "ea:publication:why-graphs-are-more-powerful-than-folders",
+      "target": "ea:researchQuestion:self-explaining-knowledge-graph-software",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Why Graphs Are More Powerful Than Folders documents context, evidence or vocabulary for the research question \"How can software become explainable through its own knowledge graph?\".",
+      "confidence": "validated"
+    },
+    {
+      "id": "ear:contextual-execution-and-graph-runtimes-documents-self-explaining-knowledge-graph-software",
+      "source": "ea:publication:contextual-execution-and-graph-runtimes",
+      "target": "ea:researchQuestion:self-explaining-knowledge-graph-software",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Contextual Execution and Graph Runtimes documents context, evidence or vocabulary for the research question \"How can software become explainable through its own knowledge graph?\".",
+      "confidence": "validated"
+    },
+    {
+      "id": "ear:self-explaining-knowledge-graph-software-member-of-collection-knowledge-hub-foundations",
+      "source": "ea:researchQuestion:self-explaining-knowledge-graph-software",
+      "target": "ea:collection:knowledge-hub-foundations",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "The research question \"How can software become explainable through its own knowledge graph?\" belongs to the Knowledge Hub Foundations collection for editorial navigation.",
+      "confidence": "validated"
+    },
+    {
+      "id": "ear:self-explaining-knowledge-graph-software-member-of-collection-knowledge-hub-third-wave",
+      "source": "ea:researchQuestion:self-explaining-knowledge-graph-software",
+      "target": "ea:collection:knowledge-hub-third-wave",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "The research question \"How can software become explainable through its own knowledge graph?\" belongs to the Knowledge Hub Third Wave collection for editorial navigation.",
+      "confidence": "validated"
+    }
+  ]
+}

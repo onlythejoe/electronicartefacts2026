@@ -18,6 +18,14 @@
       "route": "/fr/projects/voice-capture-studio/",
       "status": "active",
       "confidence": "published"
+    },
+    {
+      "id": "ea:researchQuestion:speech-dataset-reproducibility-fr",
+      "type": "researchQuestion",
+      "title": "Comment les datasets vocaux peuvent-ils devenir reproductibles, structurés et privacy-first ?",
+      "route": "/fr/research/questions/speech-dataset-reproducibility/",
+      "status": "active",
+      "confidence": "published"
     }
   ],
   "edges": [
@@ -28,6 +36,15 @@
       "predicate": "appliesConcept",
       "label": "Applies concept",
       "statement": "Voice Capture Studio applies browser-software principles by running as a static web application with local storage, microphone access and explicit exports.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:speech-dataset-reproducibility-applies-concept-browser-software",
+      "source": "ea:researchQuestion:speech-dataset-reproducibility-fr",
+      "target": "ea:concept:browser-software-fr",
+      "predicate": "appliesConcept",
+      "label": "Applies concept",
+      "statement": "The research question \"How can speech datasets become reproducible, structured and privacy-first?\" applies Browser Software as part of its current model.",
       "confidence": "published"
     }
   ]

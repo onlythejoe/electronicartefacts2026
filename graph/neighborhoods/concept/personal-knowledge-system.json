@@ -18,6 +18,14 @@
       "route": "/publications/personal-knowledge-systems-and-digital-gardens/",
       "status": "active",
       "confidence": "published"
+    },
+    {
+      "id": "ea:researchQuestion:self-explaining-knowledge-graph-software",
+      "type": "researchQuestion",
+      "title": "How can software become explainable through its own knowledge graph?",
+      "route": "/research/questions/self-explaining-knowledge-graph-software/",
+      "status": "active",
+      "confidence": "validated"
     }
   ],
   "edges": [
@@ -29,6 +37,15 @@
       "label": "Documents",
       "statement": "Personal Knowledge Systems and Digital Gardens documents personal knowledge systems as a practice of capture, linking and revision.",
       "confidence": "published"
+    },
+    {
+      "id": "ear:self-explaining-knowledge-graph-software-applies-concept-personal-knowledge-system",
+      "source": "ea:researchQuestion:self-explaining-knowledge-graph-software",
+      "target": "ea:concept:personal-knowledge-system",
+      "predicate": "appliesConcept",
+      "label": "Applies concept",
+      "statement": "The research question \"How can software become explainable through its own knowledge graph?\" applies Personal Knowledge System as part of its current model.",
+      "confidence": "validated"
     }
   ]
 }

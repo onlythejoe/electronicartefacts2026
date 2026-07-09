@@ -18,6 +18,22 @@
       "route": "/projects/voice-capture-studio/",
       "status": "active",
       "confidence": "published"
+    },
+    {
+      "id": "ea:researchQuestion:first-conversation-understanding",
+      "type": "researchQuestion",
+      "title": "How can an AI understand someone during its very first conversation?",
+      "route": "/research/questions/first-conversation-understanding/",
+      "status": "active",
+      "confidence": "observed"
+    },
+    {
+      "id": "ea:researchQuestion:speech-dataset-reproducibility",
+      "type": "researchQuestion",
+      "title": "How can speech datasets become reproducible, structured and privacy-first?",
+      "route": "/research/questions/speech-dataset-reproducibility/",
+      "status": "active",
+      "confidence": "published"
     }
   ],
   "edges": [
@@ -28,6 +44,24 @@
       "predicate": "appliesConcept",
       "label": "Applies concept",
       "statement": "Voice Capture Studio applies voice-technology concerns around capture, metadata, review, local privacy and downstream workflow boundaries.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:first-conversation-understanding-applies-concept-voice-technology",
+      "source": "ea:researchQuestion:first-conversation-understanding",
+      "target": "ea:concept:voice-technology",
+      "predicate": "appliesConcept",
+      "label": "Applies concept",
+      "statement": "The research question \"How can an AI understand someone during its very first conversation?\" applies Voice Technology as part of its current model.",
+      "confidence": "observed"
+    },
+    {
+      "id": "ear:speech-dataset-reproducibility-applies-concept-voice-technology",
+      "source": "ea:researchQuestion:speech-dataset-reproducibility",
+      "target": "ea:concept:voice-technology",
+      "predicate": "appliesConcept",
+      "label": "Applies concept",
+      "statement": "The research question \"How can speech datasets become reproducible, structured and privacy-first?\" applies Voice Technology as part of its current model.",
       "confidence": "published"
     }
   ]

@@ -10,7 +10,42 @@
       "route": "/fr/knowledge/frameworks/electronic-artefacts-lightweight-template/",
       "status": "active",
       "confidence": "published"
+    },
+    {
+      "id": "ea:researchQuestion:self-explaining-knowledge-graph-software-fr",
+      "type": "researchQuestion",
+      "title": "Comment un logiciel peut-il devenir explicable par son propre graphe de connaissance ?",
+      "route": "/fr/research/questions/self-explaining-knowledge-graph-software/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:researchQuestion:speech-dataset-reproducibility-fr",
+      "type": "researchQuestion",
+      "title": "Comment les datasets vocaux peuvent-ils devenir reproductibles, structurés et privacy-first ?",
+      "route": "/fr/research/questions/speech-dataset-reproducibility/",
+      "status": "active",
+      "confidence": "published"
     }
   ],
-  "edges": []
+  "edges": [
+    {
+      "id": "ear:self-explaining-knowledge-graph-software-implemented-by-electronic-artefacts-lightweight-template",
+      "source": "ea:researchQuestion:self-explaining-knowledge-graph-software-fr",
+      "target": "ea:framework:electronic-artefacts-lightweight-template-fr",
+      "predicate": "implementedBy",
+      "label": "Implemented by",
+      "statement": "Electronic Artefacts Lightweight Template is listed as a current software or project answer for the research question \"How can software become explainable through its own knowledge graph?\".",
+      "confidence": "validated"
+    },
+    {
+      "id": "ear:speech-dataset-reproducibility-implemented-by-electronic-artefacts-lightweight-template",
+      "source": "ea:researchQuestion:speech-dataset-reproducibility-fr",
+      "target": "ea:framework:electronic-artefacts-lightweight-template-fr",
+      "predicate": "implementedBy",
+      "label": "Implemented by",
+      "statement": "Electronic Artefacts Lightweight Template is listed as a current software or project answer for the research question \"How can speech datasets become reproducible, structured and privacy-first?\".",
+      "confidence": "published"
+    }
+  ]
 }

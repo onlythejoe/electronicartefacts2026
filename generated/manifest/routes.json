@@ -852,6 +852,24 @@
     "identifier": "/fr/id/research-field/runtime-theory/"
   },
   {
+    "id": "ea:researchQuestion:first-conversation-understanding-fr",
+    "locale": "fr",
+    "route": "/fr/research/questions/first-conversation-understanding/",
+    "identifier": "/fr/id/research-question/first-conversation-understanding/"
+  },
+  {
+    "id": "ea:researchQuestion:self-explaining-knowledge-graph-software-fr",
+    "locale": "fr",
+    "route": "/fr/research/questions/self-explaining-knowledge-graph-software/",
+    "identifier": "/fr/id/research-question/self-explaining-knowledge-graph-software/"
+  },
+  {
+    "id": "ea:researchQuestion:speech-dataset-reproducibility-fr",
+    "locale": "fr",
+    "route": "/fr/research/questions/speech-dataset-reproducibility/",
+    "identifier": "/fr/id/research-question/speech-dataset-reproducibility/"
+  },
+  {
     "id": "ea:technology:activitypub-fr",
     "locale": "fr",
     "route": "/fr/knowledge/technologies/activitypub/",
@@ -1246,6 +1264,24 @@
     "locale": "en",
     "route": "/research/fields/runtime-theory/",
     "identifier": "/id/research-field/runtime-theory/"
+  },
+  {
+    "id": "ea:researchQuestion:first-conversation-understanding",
+    "locale": "en",
+    "route": "/research/questions/first-conversation-understanding/",
+    "identifier": "/id/research-question/first-conversation-understanding/"
+  },
+  {
+    "id": "ea:researchQuestion:self-explaining-knowledge-graph-software",
+    "locale": "en",
+    "route": "/research/questions/self-explaining-knowledge-graph-software/",
+    "identifier": "/id/research-question/self-explaining-knowledge-graph-software/"
+  },
+  {
+    "id": "ea:researchQuestion:speech-dataset-reproducibility",
+    "locale": "en",
+    "route": "/research/questions/speech-dataset-reproducibility/",
+    "identifier": "/id/research-question/speech-dataset-reproducibility/"
   },
   {
     "id": "ea:technology:activitypub",

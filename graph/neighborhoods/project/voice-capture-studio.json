@@ -122,6 +122,30 @@
       "route": "/knowledge/technologies/web-audio-api/",
       "status": "active",
       "confidence": "canonical"
+    },
+    {
+      "id": "ea:researchQuestion:first-conversation-understanding",
+      "type": "researchQuestion",
+      "title": "How can an AI understand someone during its very first conversation?",
+      "route": "/research/questions/first-conversation-understanding/",
+      "status": "active",
+      "confidence": "observed"
+    },
+    {
+      "id": "ea:researchQuestion:self-explaining-knowledge-graph-software",
+      "type": "researchQuestion",
+      "title": "How can software become explainable through its own knowledge graph?",
+      "route": "/research/questions/self-explaining-knowledge-graph-software/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:researchQuestion:speech-dataset-reproducibility",
+      "type": "researchQuestion",
+      "title": "How can speech datasets become reproducible, structured and privacy-first?",
+      "route": "/research/questions/speech-dataset-reproducibility/",
+      "status": "active",
+      "confidence": "published"
     }
   ],
   "edges": [
@@ -276,6 +300,33 @@
       "predicate": "usesTechnology",
       "label": "Uses technology",
       "statement": "Voice Capture Studio uses the Web Audio API for browser-local microphone capture and recording workflows.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:first-conversation-understanding-implemented-by-voice-capture-studio",
+      "source": "ea:researchQuestion:first-conversation-understanding",
+      "target": "ea:project:voice-capture-studio",
+      "predicate": "implementedBy",
+      "label": "Implemented by",
+      "statement": "Voice Capture Studio is listed as a current software or project answer for the research question \"How can an AI understand someone during its very first conversation?\".",
+      "confidence": "observed"
+    },
+    {
+      "id": "ear:self-explaining-knowledge-graph-software-implemented-by-voice-capture-studio",
+      "source": "ea:researchQuestion:self-explaining-knowledge-graph-software",
+      "target": "ea:project:voice-capture-studio",
+      "predicate": "implementedBy",
+      "label": "Implemented by",
+      "statement": "Voice Capture Studio is listed as a current software or project answer for the research question \"How can software become explainable through its own knowledge graph?\".",
+      "confidence": "validated"
+    },
+    {
+      "id": "ear:speech-dataset-reproducibility-implemented-by-voice-capture-studio",
+      "source": "ea:researchQuestion:speech-dataset-reproducibility",
+      "target": "ea:project:voice-capture-studio",
+      "predicate": "implementedBy",
+      "label": "Implemented by",
+      "statement": "Voice Capture Studio is listed as a current software or project answer for the research question \"How can speech datasets become reproducible, structured and privacy-first?\".",
       "confidence": "published"
     }
   ]

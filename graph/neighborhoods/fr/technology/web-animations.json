@@ -18,6 +18,14 @@
       "route": "/fr/publications/motion-design-time-and-interface-semantics/",
       "status": "active",
       "confidence": "published"
+    },
+    {
+      "id": "ea:researchQuestion:self-explaining-knowledge-graph-software-fr",
+      "type": "researchQuestion",
+      "title": "Comment un logiciel peut-il devenir explicable par son propre graphe de connaissance ?",
+      "route": "/fr/research/questions/self-explaining-knowledge-graph-software/",
+      "status": "active",
+      "confidence": "validated"
     }
   ],
   "edges": [
@@ -29,6 +37,15 @@
       "label": "Uses technology",
       "statement": "Motion Design, Time and Interface Semantics uses Web Animations as its main web timing reference.",
       "confidence": "published"
+    },
+    {
+      "id": "ear:self-explaining-knowledge-graph-software-uses-technology-web-animations",
+      "source": "ea:researchQuestion:self-explaining-knowledge-graph-software-fr",
+      "target": "ea:technology:web-animations-fr",
+      "predicate": "usesTechnology",
+      "label": "Uses technology",
+      "statement": "The research question \"How can software become explainable through its own knowledge graph?\" uses Web Animations as a relevant technical reference.",
+      "confidence": "validated"
     }
   ]
 }

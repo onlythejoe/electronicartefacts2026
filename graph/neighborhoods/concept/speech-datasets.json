@@ -18,6 +18,14 @@
       "route": "/projects/voice-capture-studio/",
       "status": "active",
       "confidence": "published"
+    },
+    {
+      "id": "ea:researchQuestion:speech-dataset-reproducibility",
+      "type": "researchQuestion",
+      "title": "How can speech datasets become reproducible, structured and privacy-first?",
+      "route": "/research/questions/speech-dataset-reproducibility/",
+      "status": "active",
+      "confidence": "published"
     }
   ],
   "edges": [
@@ -28,6 +36,15 @@
       "predicate": "appliesConcept",
       "label": "Applies concept",
       "statement": "Voice Capture Studio prepares structured speech dataset material through WAV audio, transcripts, timing, intent, quality metadata and manifests.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:speech-dataset-reproducibility-applies-concept-speech-datasets",
+      "source": "ea:researchQuestion:speech-dataset-reproducibility",
+      "target": "ea:concept:speech-datasets",
+      "predicate": "appliesConcept",
+      "label": "Applies concept",
+      "statement": "The research question \"How can speech datasets become reproducible, structured and privacy-first?\" applies Speech Datasets as part of its current model.",
       "confidence": "published"
     }
   ]

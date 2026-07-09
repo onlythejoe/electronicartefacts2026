@@ -3,6 +3,7 @@ import type { Entity } from "../../schema/entities.js";
 
 const displayValue = (value: string): string =>
   value
+    .replace(/([a-z])([A-Z])/g, "$1 $2")
     .split(/[-_\s]+/)
     .filter(Boolean)
     .map((part) => `${part.charAt(0).toUpperCase()}${part.slice(1)}`)

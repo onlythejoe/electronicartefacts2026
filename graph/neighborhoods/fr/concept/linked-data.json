@@ -34,6 +34,14 @@
       "route": "/fr/publications/hypertext-and-augmented-knowledge-systems/",
       "status": "active",
       "confidence": "published"
+    },
+    {
+      "id": "ea:researchQuestion:self-explaining-knowledge-graph-software-fr",
+      "type": "researchQuestion",
+      "title": "Comment un logiciel peut-il devenir explicable par son propre graphe de connaissance ?",
+      "route": "/fr/research/questions/self-explaining-knowledge-graph-software/",
+      "status": "active",
+      "confidence": "validated"
     }
   ],
   "edges": [
@@ -63,6 +71,15 @@
       "label": "Documents",
       "statement": "Hypertext and Augmented Knowledge Systems links hypertext practice to Linked Data and stable identifiers.",
       "confidence": "published"
+    },
+    {
+      "id": "ear:self-explaining-knowledge-graph-software-applies-concept-linked-data",
+      "source": "ea:researchQuestion:self-explaining-knowledge-graph-software-fr",
+      "target": "ea:concept:linked-data-fr",
+      "predicate": "appliesConcept",
+      "label": "Applies concept",
+      "statement": "The research question \"How can software become explainable through its own knowledge graph?\" applies Linked Data as part of its current model.",
+      "confidence": "validated"
     }
   ]
 }

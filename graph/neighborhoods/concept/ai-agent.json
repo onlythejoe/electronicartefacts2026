@@ -42,6 +42,14 @@
       "route": "/publications/ai-agents-vs-ai-workflows/",
       "status": "active",
       "confidence": "published"
+    },
+    {
+      "id": "ea:researchQuestion:first-conversation-understanding",
+      "type": "researchQuestion",
+      "title": "How can an AI understand someone during its very first conversation?",
+      "route": "/research/questions/first-conversation-understanding/",
+      "status": "active",
+      "confidence": "observed"
     }
   ],
   "edges": [
@@ -80,6 +88,15 @@
       "label": "Documents",
       "statement": "AI Agents vs AI Workflows documents model-directed agency and deterministic workflow boundaries.",
       "confidence": "published"
+    },
+    {
+      "id": "ear:first-conversation-understanding-applies-concept-ai-agent",
+      "source": "ea:researchQuestion:first-conversation-understanding",
+      "target": "ea:concept:ai-agent",
+      "predicate": "appliesConcept",
+      "label": "Applies concept",
+      "statement": "The research question \"How can an AI understand someone during its very first conversation?\" applies AI Agent as part of its current model.",
+      "confidence": "observed"
     }
   ]
 }

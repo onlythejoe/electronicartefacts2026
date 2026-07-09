@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-09T13:48:52.514Z",
+  "generatedAt": "2026-07-09T17:39:37.351Z",
   "staticPages": {
     "total": 26,
     "generated": 26,
@@ -10,13 +10,13 @@
     ]
   },
   "canonicalEntities": {
-    "english": 113,
-    "french": 113,
+    "english": 116,
+    "french": 116,
     "coveragePercent": 100
   },
   "editorialWords": {
-    "englishSourceWords": 72588,
-    "sourceWordsCoveredByFrenchRecords": 72588,
+    "englishSourceWords": 73095,
+    "sourceWordsCoveredByFrenchRecords": 73095,
     "coveragePercent": 100
   },
   "translatedEntityIds": [
@@ -115,6 +115,9 @@
     "ea:publication:webnn-and-local-ai-in-the-browser",
     "ea:publication:why-graphs-are-more-powerful-than-folders",
     "ea:researchField:runtime-theory",
+    "ea:researchQuestion:first-conversation-understanding",
+    "ea:researchQuestion:self-explaining-knowledge-graph-software",
+    "ea:researchQuestion:speech-dataset-reproducibility",
     "ea:technology:activitypub",
     "ea:technology:c2pa",
     "ea:technology:cloudevents",

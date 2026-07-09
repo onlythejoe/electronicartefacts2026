@@ -66,6 +66,22 @@
       "route": "/fr/publications/why-graphs-are-more-powerful-than-folders/",
       "status": "active",
       "confidence": "published"
+    },
+    {
+      "id": "ea:researchQuestion:first-conversation-understanding-fr",
+      "type": "researchQuestion",
+      "title": "Comment une IA peut-elle comprendre quelqu'un dès sa première conversation ?",
+      "route": "/fr/research/questions/first-conversation-understanding/",
+      "status": "active",
+      "confidence": "observed"
+    },
+    {
+      "id": "ea:researchQuestion:self-explaining-knowledge-graph-software-fr",
+      "type": "researchQuestion",
+      "title": "Comment un logiciel peut-il devenir explicable par son propre graphe de connaissance ?",
+      "route": "/fr/research/questions/self-explaining-knowledge-graph-software/",
+      "status": "active",
+      "confidence": "validated"
     }
   ],
   "edges": [
@@ -131,6 +147,24 @@
       "label": "Documents",
       "statement": "Why Graphs Are More Powerful Than Folders explains knowledge graph identity and traversal.",
       "confidence": "published"
+    },
+    {
+      "id": "ear:first-conversation-understanding-applies-concept-knowledge-graph",
+      "source": "ea:researchQuestion:first-conversation-understanding-fr",
+      "target": "ea:concept:knowledge-graph-fr",
+      "predicate": "appliesConcept",
+      "label": "Applies concept",
+      "statement": "The research question \"How can an AI understand someone during its very first conversation?\" applies Knowledge Graph as part of its current model.",
+      "confidence": "observed"
+    },
+    {
+      "id": "ear:self-explaining-knowledge-graph-software-applies-concept-knowledge-graph",
+      "source": "ea:researchQuestion:self-explaining-knowledge-graph-software-fr",
+      "target": "ea:concept:knowledge-graph-fr",
+      "predicate": "appliesConcept",
+      "label": "Applies concept",
+      "statement": "The research question \"How can software become explainable through its own knowledge graph?\" applies Knowledge Graph as part of its current model.",
+      "confidence": "validated"
     }
   ]
 }

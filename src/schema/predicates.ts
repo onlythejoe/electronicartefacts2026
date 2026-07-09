@@ -13,7 +13,7 @@ export interface PredicateDefinition {
 }
 
 const all: EntityType[] = [
-  "concept", "method", "framework", "technology", "researchField", "project", "program",
+  "concept", "method", "framework", "technology", "researchField", "researchQuestion", "project", "program",
   "publication", "collection", "artefact", "timeline", "artist", "organization", "tool", "dataset", "event",
 ];
 const agents: EntityType[] = ["artist", "organization"];
@@ -25,22 +25,23 @@ const definition = (
   allowedSubjects = all,
   allowedObjects = all,
   requiresSource = false,
-): PredicateDefinition => ({ id, label, group, allowedSubjects, allowedObjects, requiresSource });
+  inverseLabel?: string,
+): PredicateDefinition => ({ id, label, inverseLabel, group, allowedSubjects, allowedObjects, requiresSource });
 
 export const predicateDefinitions: Record<RelationPredicate, PredicateDefinition> = Object.fromEntries([
-  definition("defines", "Defines", "knowledge", ["publication", "framework", "researchField"], ["concept", "method", "framework"]),
+  definition("defines", "Defines", "knowledge", ["publication", "framework", "researchField", "researchQuestion"], ["concept", "method", "framework"]),
   definition("refines", "Refines", "knowledge"),
   definition("contrastsWith", "Contrasts with", "knowledge"),
   definition("influencedBy", "Influenced by", "knowledge"),
-  definition("tests", "Tests", "knowledge", ["publication", "project", "program"], ["concept", "method", "framework"]),
+  definition("tests", "Tests", "knowledge", ["publication", "project", "program", "tool"], ["concept", "method", "framework", "researchQuestion"]),
   definition("supportsClaim", "Supports claim", "evidence"),
   definition("contradictsClaim", "Contradicts claim", "evidence"),
   definition("cites", "Cites", "knowledge"),
-  definition("appliesConcept", "Applies concept", "implementation", ["project", "program", "method", "publication"], ["concept"]),
-  definition("usesMethod", "Uses method", "implementation", ["project", "program", "publication"], ["method"]),
-  definition("implementsFramework", "Implements framework", "implementation", ["project", "program", "tool"], ["framework"]),
-  definition("usesTechnology", "Uses technology", "implementation", ["project", "program", "publication", "tool"], ["technology"]),
-  definition("implementedBy", "Implemented by", "implementation"),
+  definition("appliesConcept", "Applies concept", "implementation", ["project", "program", "method", "publication", "researchQuestion"], ["concept"], false, "Applied by"),
+  definition("usesMethod", "Uses method", "implementation", ["project", "program", "publication"], ["method"], false, "Used by"),
+  definition("implementsFramework", "Implements framework", "implementation", ["project", "program", "tool"], ["framework"], false, "Implemented by"),
+  definition("usesTechnology", "Uses technology", "implementation", ["project", "program", "publication", "tool", "researchQuestion"], ["technology"], false, "Used by"),
+  definition("implementedBy", "Implemented by", "implementation", all, all, false, "Implements"),
   definition("demonstratedBy", "Demonstrated by", "evidence"),
   definition("createdBy", "Created by", "production", all, agents),
   definition("contributedBy", "Contributed by", "production", all, agents),
@@ -52,10 +53,10 @@ export const predicateDefinitions: Record<RelationPredicate, PredicateDefinition
   definition("hasPart", "Has part", "structure"),
   definition("partOf", "Part of", "structure"),
   definition("memberOfCollection", "Member of collection", "structure", all, ["collection"]),
-  definition("documents", "Documents", "evidence", ["publication", "artefact"], all),
+  definition("documents", "Documents", "evidence", ["publication", "artefact"], all, false, "Documented by"),
   definition("documentedBy", "Documented by", "evidence"),
   definition("subjectOf", "Subject of", "structure"),
-  definition("dependsOn", "Depends on", "implementation", ["project", "program", "tool"], ["program", "tool", "technology", "framework"]),
+  definition("dependsOn", "Depends on", "implementation", ["project", "program", "tool", "researchQuestion"], ["program", "tool", "technology", "framework"]),
   definition("poweredBy", "Powered by", "implementation", ["project", "program", "tool"], ["program", "technology", "framework"]),
   definition("integratesWith", "Integrates with", "implementation"),
   definition("supersedes", "Supersedes", "history"),

@@ -50,6 +50,14 @@
       "route": "/archive/collections/knowledge-hub-foundations/",
       "status": "active",
       "confidence": "published"
+    },
+    {
+      "id": "ea:researchQuestion:self-explaining-knowledge-graph-software",
+      "type": "researchQuestion",
+      "title": "How can software become explainable through its own knowledge graph?",
+      "route": "/research/questions/self-explaining-knowledge-graph-software/",
+      "status": "active",
+      "confidence": "validated"
     }
   ],
   "edges": [
@@ -97,6 +105,15 @@
       "label": "Has part",
       "statement": "Knowledge Hub Foundations includes Contextual Execution and Graph Runtimes as a foundation article.",
       "confidence": "published"
+    },
+    {
+      "id": "ear:contextual-execution-and-graph-runtimes-documents-self-explaining-knowledge-graph-software",
+      "source": "ea:publication:contextual-execution-and-graph-runtimes",
+      "target": "ea:researchQuestion:self-explaining-knowledge-graph-software",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Contextual Execution and Graph Runtimes documents context, evidence or vocabulary for the research question \"How can software become explainable through its own knowledge graph?\".",
+      "confidence": "validated"
     }
   ]
 }

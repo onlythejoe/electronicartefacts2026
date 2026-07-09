@@ -206,6 +206,7 @@ const escapeHtml = (value) =>
 const frenchHomeShell = `      <h1 class="sr-only" data-seo-h1>Complex digital systems, made clear.</h1>
       <section data-render="home-hero"></section>
       <section data-render="home-vaste-banner"></section>
+      <section data-render="home-research-atlas"></section>
       <section data-render="home-featured-paths"></section>
       <section data-render="home-featured-work"></section>
       <section data-render="home-featured-research"></section>

@@ -42,6 +42,14 @@
       "route": "/fr/archive/collections/knowledge-hub-fourth-wave/",
       "status": "active",
       "confidence": "published"
+    },
+    {
+      "id": "ea:researchQuestion:speech-dataset-reproducibility-fr",
+      "type": "researchQuestion",
+      "title": "Comment les datasets vocaux peuvent-ils devenir reproductibles, structurés et privacy-first ?",
+      "route": "/fr/research/questions/speech-dataset-reproducibility/",
+      "status": "active",
+      "confidence": "published"
     }
   ],
   "edges": [
@@ -79,6 +87,15 @@
       "predicate": "memberOfCollection",
       "label": "Member of collection",
       "statement": "WebNN and Local AI in the Browser is part of the fourth Knowledge Hub wave.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:webnn-and-local-ai-in-the-browser-documents-speech-dataset-reproducibility",
+      "source": "ea:publication:webnn-and-local-ai-in-the-browser-fr",
+      "target": "ea:researchQuestion:speech-dataset-reproducibility-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "WebNN and Local AI in the Browser documents context, evidence or vocabulary for the research question \"How can speech datasets become reproducible, structured and privacy-first?\".",
       "confidence": "published"
     }
   ]

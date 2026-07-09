@@ -646,6 +646,22 @@
     "fr": "/fr/research/fields/runtime-theory/",
     "en": "/research/fields/runtime-theory/"
   },
+  "/fr/research/questions/": {
+    "en": "/research/questions/",
+    "fr": "/fr/research/questions/"
+  },
+  "/fr/research/questions/first-conversation-understanding/": {
+    "fr": "/fr/research/questions/first-conversation-understanding/",
+    "en": "/research/questions/first-conversation-understanding/"
+  },
+  "/fr/research/questions/self-explaining-knowledge-graph-software/": {
+    "fr": "/fr/research/questions/self-explaining-knowledge-graph-software/",
+    "en": "/research/questions/self-explaining-knowledge-graph-software/"
+  },
+  "/fr/research/questions/speech-dataset-reproducibility/": {
+    "fr": "/fr/research/questions/speech-dataset-reproducibility/",
+    "en": "/research/questions/speech-dataset-reproducibility/"
+  },
   "/fr/search.html": {
     "en": "/search/",
     "fr": "/fr/search.html"
@@ -1149,6 +1165,22 @@
   "/research/fields/runtime-theory/": {
     "fr": "/fr/research/fields/runtime-theory/",
     "en": "/research/fields/runtime-theory/"
+  },
+  "/research/questions/": {
+    "en": "/research/questions/",
+    "fr": "/fr/research/questions/"
+  },
+  "/research/questions/first-conversation-understanding/": {
+    "fr": "/fr/research/questions/first-conversation-understanding/",
+    "en": "/research/questions/first-conversation-understanding/"
+  },
+  "/research/questions/self-explaining-knowledge-graph-software/": {
+    "fr": "/fr/research/questions/self-explaining-knowledge-graph-software/",
+    "en": "/research/questions/self-explaining-knowledge-graph-software/"
+  },
+  "/research/questions/speech-dataset-reproducibility/": {
+    "fr": "/fr/research/questions/speech-dataset-reproducibility/",
+    "en": "/research/questions/speech-dataset-reproducibility/"
   },
   "/search.html": {
     "en": "/search.html",

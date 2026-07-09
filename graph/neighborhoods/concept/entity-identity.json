@@ -42,6 +42,22 @@
       "route": "/publications/why-graphs-are-more-powerful-than-folders/",
       "status": "active",
       "confidence": "published"
+    },
+    {
+      "id": "ea:researchQuestion:first-conversation-understanding",
+      "type": "researchQuestion",
+      "title": "How can an AI understand someone during its very first conversation?",
+      "route": "/research/questions/first-conversation-understanding/",
+      "status": "active",
+      "confidence": "observed"
+    },
+    {
+      "id": "ea:researchQuestion:self-explaining-knowledge-graph-software",
+      "type": "researchQuestion",
+      "title": "How can software become explainable through its own knowledge graph?",
+      "route": "/research/questions/self-explaining-knowledge-graph-software/",
+      "status": "active",
+      "confidence": "validated"
     }
   ],
   "edges": [
@@ -80,6 +96,24 @@
       "label": "Documents",
       "statement": "Why Graphs Are More Powerful Than Folders explains why entity identity should survive path changes.",
       "confidence": "published"
+    },
+    {
+      "id": "ear:first-conversation-understanding-applies-concept-entity-identity",
+      "source": "ea:researchQuestion:first-conversation-understanding",
+      "target": "ea:concept:entity-identity",
+      "predicate": "appliesConcept",
+      "label": "Applies concept",
+      "statement": "The research question \"How can an AI understand someone during its very first conversation?\" applies Entity Identity as part of its current model.",
+      "confidence": "observed"
+    },
+    {
+      "id": "ear:self-explaining-knowledge-graph-software-applies-concept-entity-identity",
+      "source": "ea:researchQuestion:self-explaining-knowledge-graph-software",
+      "target": "ea:concept:entity-identity",
+      "predicate": "appliesConcept",
+      "label": "Applies concept",
+      "statement": "The research question \"How can software become explainable through its own knowledge graph?\" applies Entity Identity as part of its current model.",
+      "confidence": "validated"
     }
   ]
 }

@@ -1,4 +1,4 @@
-import type { Entity, PublicationEntity, ResearchFieldEntity } from "../schema/entities.js";
+import type { Entity, PublicationEntity, ResearchFieldEntity, ResearchQuestionEntity } from "../schema/entities.js";
 import type { RelationStatement } from "../schema/relation.js";
 import type { RouteRecord } from "../build/build-routes.js";
 import {
@@ -32,6 +32,20 @@ export interface SearchDocument {
 const textFromHtml = (html: string): string =>
   html.replace(/<[^>]+>/g, " ").replace(/\s+/g, " ").trim();
 
+const researchQuestionText = (entity: ResearchQuestionEntity): string =>
+  [
+    entity.observation,
+    entity.problem,
+    entity.hypothesis,
+    entity.currentUnderstanding,
+    entity.result,
+    ...(entity.nextSteps || []),
+    ...(entity.experiments || []).flatMap((item) => [item.title, item.status, item.summary, item.result]),
+    ...(entity.timeline || []).flatMap((item) => [item.date, item.title, item.summary]),
+  ]
+    .filter((value): value is string => Boolean(value))
+    .join(" ");
+
 export const buildSearchDocuments = (
   entities: Entity[],
   relations: RelationStatement[],
@@ -54,11 +68,15 @@ export const buildSearchDocuments = (
         definition: entity.definition,
         abstract: entity.abstract,
         headings: entity.headings,
-        body: textFromHtml(entity.bodyHtml),
+        body: [textFromHtml(entity.bodyHtml), entity.type === "researchQuestion" ? researchQuestionText(entity as ResearchQuestionEntity) : ""]
+          .filter(Boolean)
+          .join(" "),
         tags: entity.tags || [],
         questions: entity.type === "researchField"
           ? (entity as ResearchFieldEntity).questions.map((item) => item.question)
-          : [],
+          : entity.type === "researchQuestion"
+            ? [entity.title, (entity as ResearchQuestionEntity).hypothesis]
+            : [],
         relationLabels: connected.map((relation) => `${relation.predicate} ${relation.statement}`),
         relatedEntityIds: connected.map((relation) => connectedEntityIdForRelation(entity, relation)),
         status: entity.status,

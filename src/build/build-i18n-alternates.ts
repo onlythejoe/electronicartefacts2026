@@ -13,6 +13,7 @@ const staticRoutes = ([
   { route: "/projects.html", french: "/fr/projects.html" },
   { route: "/programs.html", french: "/fr/programs.html" },
   { route: "/research.html", french: "/fr/research.html" },
+  { route: "/research/questions/", french: "/fr/research/questions/" },
   { route: "/work.html", french: "/fr/work.html" },
   { route: "/mentions-legales.html", french: "/fr/mentions-legales.html" },
   { route: "/confidentialite.html", french: "/fr/confidentialite.html" },

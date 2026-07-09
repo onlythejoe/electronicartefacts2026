@@ -66,7 +66,8 @@
       "hasPart Knowledge Hub Foundations includes Contextual Execution and Graph Runtimes as a foundation article.",
       "hasPart Knowledge Hub Foundations includes Digital Preservation and Living Archives as a foundation article.",
       "hasPart Knowledge Hub Foundations includes Generative Systems, Cybernetics and Creative Coding as a foundation article.",
-      "hasPart Knowledge Hub Foundations includes Signal Archaeology, Audio Memory and Machine Listening as a foundation article."
+      "hasPart Knowledge Hub Foundations includes Signal Archaeology, Audio Memory and Machine Listening as a foundation article.",
+      "memberOfCollection The research question \"How can software become explainable through its own knowledge graph?\" belongs to the Knowledge Hub Foundations collection for editorial navigation."
     ],
     "relatedEntityIds": [
       "ea:publication:knowledge-graphs-for-cultural-infrastructure",
@@ -74,7 +75,8 @@
       "ea:publication:contextual-execution-and-graph-runtimes",
       "ea:publication:digital-preservation-and-living-archives",
       "ea:publication:generative-systems-cybernetics-and-creative-coding",
-      "ea:publication:signal-archaeology-audio-memory-and-machine-listening"
+      "ea:publication:signal-archaeology-audio-memory-and-machine-listening",
+      "ea:researchQuestion:self-explaining-knowledge-graph-software"
     ],
     "status": "active",
     "confidence": "published",
@@ -224,7 +226,8 @@
       "hasPart Knowledge Hub Third Wave includes Event-Driven Architecture and Event Streams.",
       "hasPart Knowledge Hub Third Wave includes Redis Streams for Orchestration.",
       "hasPart Knowledge Hub Third Wave includes Microservices, Modular Monoliths and System Boundaries.",
-      "hasPart Knowledge Hub Third Wave includes Runtime Engines and Domain Operating Systems."
+      "hasPart Knowledge Hub Third Wave includes Runtime Engines and Domain Operating Systems.",
+      "memberOfCollection The research question \"How can software become explainable through its own knowledge graph?\" belongs to the Knowledge Hub Third Wave collection for editorial navigation."
     ],
     "relatedEntityIds": [
       "ea:publication:how-large-language-models-actually-work",
@@ -238,7 +241,8 @@
       "ea:publication:event-driven-architecture-and-event-streams",
       "ea:publication:redis-streams-for-orchestration",
       "ea:publication:microservices-modular-monoliths-and-system-boundaries",
-      "ea:publication:runtime-engines-and-domain-operating-systems"
+      "ea:publication:runtime-engines-and-domain-operating-systems",
+      "ea:researchQuestion:self-explaining-knowledge-graph-software"
     ],
     "status": "active",
     "confidence": "published",
@@ -270,11 +274,15 @@
     "questions": [],
     "relationLabels": [
       "memberOfCollection Voice Capture Studio is the lead project in the Voice Capture Studio Collection.",
-      "memberOfCollection The Voice Capture Studio repository is part of the Voice Capture Studio Collection as the public source artefact."
+      "memberOfCollection The Voice Capture Studio repository is part of the Voice Capture Studio Collection as the public source artefact.",
+      "memberOfCollection The research question \"How can an AI understand someone during its very first conversation?\" belongs to the Voice Capture Studio Collection collection for editorial navigation.",
+      "memberOfCollection The research question \"How can speech datasets become reproducible, structured and privacy-first?\" belongs to the Voice Capture Studio Collection collection for editorial navigation."
     ],
     "relatedEntityIds": [
       "ea:project:voice-capture-studio",
-      "ea:artefact:voice-capture-studio-repository"
+      "ea:artefact:voice-capture-studio-repository",
+      "ea:researchQuestion:first-conversation-understanding",
+      "ea:researchQuestion:speech-dataset-reproducibility"
     ],
     "status": "active",
     "confidence": "published",
@@ -310,13 +318,15 @@
       "documents Model Context Protocol and Tool-Using AI Systems explains how MCP relates to AI agents and deterministic workflows.",
       "documents Observability for AI Agents and Tool-Calling Systems explains why agents need traceable model and tool behavior.",
       "documents Prompt Injection and Trust Boundaries in AI Knowledge Systems documents prompt-injection risks for AI agents.",
-      "documents AI Agents vs AI Workflows documents model-directed agency and deterministic workflow boundaries."
+      "documents AI Agents vs AI Workflows documents model-directed agency and deterministic workflow boundaries.",
+      "appliesConcept The research question \"How can an AI understand someone during its very first conversation?\" applies AI Agent as part of its current model."
     ],
     "relatedEntityIds": [
       "ea:publication:model-context-protocol-and-tool-using-ai-systems",
       "ea:publication:observability-for-ai-agents-and-tool-calling-systems",
       "ea:publication:prompt-injection-and-trust-boundaries-in-ai-knowledge-systems",
-      "ea:publication:ai-agents-vs-ai-workflows"
+      "ea:publication:ai-agents-vs-ai-workflows",
+      "ea:researchQuestion:first-conversation-understanding"
     ],
     "status": "active",
     "confidence": "validated",
@@ -455,10 +465,12 @@
     ],
     "questions": [],
     "relationLabels": [
-      "appliesConcept Voice Capture Studio applies browser-software principles by running as a static web application with local storage, microphone access and explicit exports."
+      "appliesConcept Voice Capture Studio applies browser-software principles by running as a static web application with local storage, microphone access and explicit exports.",
+      "appliesConcept The research question \"How can speech datasets become reproducible, structured and privacy-first?\" applies Browser Software as part of its current model."
     ],
     "relatedEntityIds": [
-      "ea:project:voice-capture-studio"
+      "ea:project:voice-capture-studio",
+      "ea:researchQuestion:speech-dataset-reproducibility"
     ],
     "status": "active",
     "confidence": "validated",
@@ -501,7 +513,8 @@
       "documents Contextual Execution and Graph Runtimes documents contextual execution as a runtime principle.",
       "documents AI Agents vs AI Workflows connects agent permissions to contextual execution.",
       "documents Event-Driven Architecture and Event Streams connects event propagation to contextual execution.",
-      "documents Runtime Engines and Domain Operating Systems explains capability evaluation through contextual execution."
+      "documents Runtime Engines and Domain Operating Systems explains capability evaluation through contextual execution.",
+      "appliesConcept The research question \"How can an AI understand someone during its very first conversation?\" applies Contextual Execution as part of its current model."
     ],
     "relatedEntityIds": [
       "ea:publication:model-context-protocol-and-tool-using-ai-systems",
@@ -513,7 +526,8 @@
       "ea:publication:contextual-execution-and-graph-runtimes",
       "ea:publication:ai-agents-vs-ai-workflows",
       "ea:publication:event-driven-architecture-and-event-streams",
-      "ea:publication:runtime-engines-and-domain-operating-systems"
+      "ea:publication:runtime-engines-and-domain-operating-systems",
+      "ea:researchQuestion:first-conversation-understanding"
     ],
     "status": "active",
     "confidence": "canonical",
@@ -721,13 +735,17 @@
       "documents Verifiable Credentials for Cultural Archives and Creator Identity connects signed claims to durable entity identity.",
       "documents Knowledge Graphs for Cultural Infrastructure explains why stable entity identity matters for graph publishing.",
       "documents Linked Data and Public Knowledge Pages explains the difference between page URLs and entity identifiers.",
-      "documents Why Graphs Are More Powerful Than Folders explains why entity identity should survive path changes."
+      "documents Why Graphs Are More Powerful Than Folders explains why entity identity should survive path changes.",
+      "appliesConcept The research question \"How can an AI understand someone during its very first conversation?\" applies Entity Identity as part of its current model.",
+      "appliesConcept The research question \"How can software become explainable through its own knowledge graph?\" applies Entity Identity as part of its current model."
     ],
     "relatedEntityIds": [
       "ea:publication:verifiable-credentials-for-cultural-archives-and-creator-identity",
       "ea:publication:knowledge-graphs-for-cultural-infrastructure",
       "ea:publication:linked-data-and-public-knowledge-pages",
-      "ea:publication:why-graphs-are-more-powerful-than-folders"
+      "ea:publication:why-graphs-are-more-powerful-than-folders",
+      "ea:researchQuestion:first-conversation-understanding",
+      "ea:researchQuestion:self-explaining-knowledge-graph-software"
     ],
     "status": "active",
     "confidence": "canonical",
@@ -932,7 +950,8 @@
       "documents Runtime Engines and Domain Operating Systems connects domain runtimes to graph execution.",
       "defines Runtime Theory supplies the research questions and boundaries used to define graph runtime within Electronic Artefacts.",
       "appliesConcept VASTE applies the graph-runtime concept through addressable entities, typed relationships, identity, context and event execution.",
-      "appliesConcept Vestiges applies graph-runtime principles to cultural, craft and human-knowledge infrastructure."
+      "appliesConcept Vestiges applies graph-runtime principles to cultural, craft and human-knowledge infrastructure.",
+      "appliesConcept The research question \"How can software become explainable through its own knowledge graph?\" applies Graph Runtime as part of its current model."
     ],
     "relatedEntityIds": [
       "ea:publication:prompt-injection-and-trust-boundaries-in-ai-knowledge-systems",
@@ -941,7 +960,8 @@
       "ea:publication:runtime-engines-and-domain-operating-systems",
       "ea:researchField:runtime-theory",
       "ea:program:vaste",
-      "ea:project:vestiges"
+      "ea:project:vestiges",
+      "ea:researchQuestion:self-explaining-knowledge-graph-software"
     ],
     "status": "active",
     "confidence": "canonical",
@@ -977,7 +997,8 @@
       "documents Typography, Reading Systems and Digital Interfaces connects typography to human computer interaction and accessibility.",
       "documents Human Computer Interaction for Creative Tools documents HCI as a creative tool discipline.",
       "documents Generative AI, Latent Space and Creative Workflows links AI workflows to human computer interaction and creative agency.",
-      "appliesConcept Voice Capture Studio applies HCI principles by making recording modes, environment checks, local storage and quality gates visible before capture."
+      "appliesConcept Voice Capture Studio applies HCI principles by making recording modes, environment checks, local storage and quality gates visible before capture.",
+      "appliesConcept The research question \"How can an AI understand someone during its very first conversation?\" applies Human Computer Interaction as part of its current model."
     ],
     "relatedEntityIds": [
       "ea:publication:webnn-and-local-ai-in-the-browser",
@@ -985,7 +1006,8 @@
       "ea:publication:typography-reading-systems-and-digital-interfaces",
       "ea:publication:human-computer-interaction-for-creative-tools",
       "ea:publication:generative-ai-latent-space-and-creative-workflows",
-      "ea:project:voice-capture-studio"
+      "ea:project:voice-capture-studio",
+      "ea:researchQuestion:first-conversation-understanding"
     ],
     "status": "active",
     "confidence": "canonical",
@@ -1017,11 +1039,13 @@
     "questions": [],
     "relationLabels": [
       "documents Hypertext and Augmented Knowledge Systems documents hypertext as an architecture for linked public knowledge.",
-      "documents Personal Knowledge Systems and Digital Gardens uses hypertext as the linking model for public knowledge gardens."
+      "documents Personal Knowledge Systems and Digital Gardens uses hypertext as the linking model for public knowledge gardens.",
+      "appliesConcept The research question \"How can software become explainable through its own knowledge graph?\" applies Hypertext as part of its current model."
     ],
     "relatedEntityIds": [
       "ea:publication:hypertext-and-augmented-knowledge-systems",
-      "ea:publication:personal-knowledge-systems-and-digital-gardens"
+      "ea:publication:personal-knowledge-systems-and-digital-gardens",
+      "ea:researchQuestion:self-explaining-knowledge-graph-software"
     ],
     "status": "active",
     "confidence": "canonical",
@@ -1095,7 +1119,9 @@
       "documents Hypertext and Augmented Knowledge Systems explains how knowledge graphs strengthen linked pages with explicit relations.",
       "documents Retrieval-Augmented Generation and Knowledge Systems explains graph-grounded retrieval.",
       "documents Ontologies, Taxonomies and Knowledge Modeling connects semantic models to knowledge graphs.",
-      "documents Why Graphs Are More Powerful Than Folders explains knowledge graph identity and traversal."
+      "documents Why Graphs Are More Powerful Than Folders explains knowledge graph identity and traversal.",
+      "appliesConcept The research question \"How can an AI understand someone during its very first conversation?\" applies Knowledge Graph as part of its current model.",
+      "appliesConcept The research question \"How can software become explainable through its own knowledge graph?\" applies Knowledge Graph as part of its current model."
     ],
     "relatedEntityIds": [
       "ea:publication:ai-search-structured-content-and-knowledge-graph-seo",
@@ -1104,7 +1130,9 @@
       "ea:publication:hypertext-and-augmented-knowledge-systems",
       "ea:publication:retrieval-augmented-generation-and-knowledge-systems",
       "ea:publication:ontologies-taxonomies-and-knowledge-modeling",
-      "ea:publication:why-graphs-are-more-powerful-than-folders"
+      "ea:publication:why-graphs-are-more-powerful-than-folders",
+      "ea:researchQuestion:first-conversation-understanding",
+      "ea:researchQuestion:self-explaining-knowledge-graph-software"
     ],
     "status": "active",
     "confidence": "canonical",
@@ -1178,12 +1206,14 @@
     "relationLabels": [
       "documents AI Search, Structured Content and Knowledge Graph SEO explains how Linked Data supports crawlable, machine-readable public knowledge pages.",
       "documents Linked Data and Public Knowledge Pages documents Linked Data as a publishing discipline for public knowledge pages.",
-      "documents Hypertext and Augmented Knowledge Systems links hypertext practice to Linked Data and stable identifiers."
+      "documents Hypertext and Augmented Knowledge Systems links hypertext practice to Linked Data and stable identifiers.",
+      "appliesConcept The research question \"How can software become explainable through its own knowledge graph?\" applies Linked Data as part of its current model."
     ],
     "relatedEntityIds": [
       "ea:publication:ai-search-structured-content-and-knowledge-graph-seo",
       "ea:publication:linked-data-and-public-knowledge-pages",
-      "ea:publication:hypertext-and-augmented-knowledge-systems"
+      "ea:publication:hypertext-and-augmented-knowledge-systems",
+      "ea:researchQuestion:self-explaining-knowledge-graph-software"
     ],
     "status": "active",
     "confidence": "validated",
@@ -1213,10 +1243,14 @@
     ],
     "questions": [],
     "relationLabels": [
-      "appliesConcept Voice Capture Studio supports downstream machine-learning workflows by preparing accepted recordings and metadata without performing model training itself."
+      "appliesConcept Voice Capture Studio supports downstream machine-learning workflows by preparing accepted recordings and metadata without performing model training itself.",
+      "appliesConcept The research question \"How can an AI understand someone during its very first conversation?\" applies Machine Learning Workflows as part of its current model.",
+      "appliesConcept The research question \"How can speech datasets become reproducible, structured and privacy-first?\" applies Machine Learning Workflows as part of its current model."
     ],
     "relatedEntityIds": [
-      "ea:project:voice-capture-studio"
+      "ea:project:voice-capture-studio",
+      "ea:researchQuestion:first-conversation-understanding",
+      "ea:researchQuestion:speech-dataset-reproducibility"
     ],
     "status": "active",
     "confidence": "validated",
@@ -1252,7 +1286,9 @@
       "documents Typography, Reading Systems and Digital Interfaces links reading systems to visible metadata and article structure.",
       "documents Retrieval-Augmented Generation and Knowledge Systems treats metadata as retrieval infrastructure.",
       "documents Ontologies, Taxonomies and Knowledge Modeling positions metadata within a broader semantic architecture.",
-      "appliesConcept Voice Capture Studio applies metadata discipline by attaching transcript, timing, intent, quality and manifest information to recorded takes."
+      "appliesConcept Voice Capture Studio applies metadata discipline by attaching transcript, timing, intent, quality and manifest information to recorded takes.",
+      "appliesConcept The research question \"How can software become explainable through its own knowledge graph?\" applies Metadata as part of its current model.",
+      "appliesConcept The research question \"How can speech datasets become reproducible, structured and privacy-first?\" applies Metadata as part of its current model."
     ],
     "relatedEntityIds": [
       "ea:publication:personal-knowledge-systems-and-digital-gardens",
@@ -1260,7 +1296,9 @@
       "ea:publication:typography-reading-systems-and-digital-interfaces",
       "ea:publication:retrieval-augmented-generation-and-knowledge-systems",
       "ea:publication:ontologies-taxonomies-and-knowledge-modeling",
-      "ea:project:voice-capture-studio"
+      "ea:project:voice-capture-studio",
+      "ea:researchQuestion:self-explaining-knowledge-graph-software",
+      "ea:researchQuestion:speech-dataset-reproducibility"
     ],
     "status": "active",
     "confidence": "canonical",
@@ -1443,13 +1481,15 @@
       "documents Open Source as Cultural Infrastructure documents open source as a licensing, maintenance and cultural infrastructure practice.",
       "documents Creative Coding Pedagogy from Logo to p5.js connects creative learning to open examples and open-source communities.",
       "documents Local and Open Source AI Systems applies open-source principles to AI infrastructure and licensing.",
-      "appliesConcept Voice Capture Studio applies open-source practice through a public MIT-licensed repository with contribution, issue and documentation surfaces."
+      "appliesConcept Voice Capture Studio applies open-source practice through a public MIT-licensed repository with contribution, issue and documentation surfaces.",
+      "appliesConcept The research question \"How can speech datasets become reproducible, structured and privacy-first?\" applies Open Source as part of its current model."
     ],
     "relatedEntityIds": [
       "ea:publication:open-source-as-cultural-infrastructure",
       "ea:publication:creative-coding-pedagogy-from-logo-to-p5js",
       "ea:publication:local-and-open-source-ai-systems",
-      "ea:project:voice-capture-studio"
+      "ea:project:voice-capture-studio",
+      "ea:researchQuestion:speech-dataset-reproducibility"
     ],
     "status": "active",
     "confidence": "canonical",
@@ -1515,10 +1555,12 @@
     ],
     "questions": [],
     "relationLabels": [
-      "documents Personal Knowledge Systems and Digital Gardens documents personal knowledge systems as a practice of capture, linking and revision."
+      "documents Personal Knowledge Systems and Digital Gardens documents personal knowledge systems as a practice of capture, linking and revision.",
+      "appliesConcept The research question \"How can software become explainable through its own knowledge graph?\" applies Personal Knowledge System as part of its current model."
     ],
     "relatedEntityIds": [
-      "ea:publication:personal-knowledge-systems-and-digital-gardens"
+      "ea:publication:personal-knowledge-systems-and-digital-gardens",
+      "ea:researchQuestion:self-explaining-knowledge-graph-software"
     ],
     "status": "active",
     "confidence": "validated",
@@ -1600,7 +1642,9 @@
       "documents Local and Open Source AI Systems connects model deployment to provenance and reproducibility.",
       "documents Retrieval-Augmented Generation and Knowledge Systems connects citations and source grounding to provenance.",
       "documents Multimodal AI Across Text, Image, Audio and Video documents provenance risks across generated media.",
-      "appliesConcept Voice Capture Studio applies provenance concerns by keeping prompt identifiers, corpus versions, speaker context and export manifests visible."
+      "appliesConcept Voice Capture Studio applies provenance concerns by keeping prompt identifiers, corpus versions, speaker context and export manifests visible.",
+      "appliesConcept The research question \"How can software become explainable through its own knowledge graph?\" applies Provenance as part of its current model.",
+      "appliesConcept The research question \"How can speech datasets become reproducible, structured and privacy-first?\" applies Provenance as part of its current model."
     ],
     "relatedEntityIds": [
       "ea:publication:c2pa-content-credentials-and-generative-media-provenance",
@@ -1615,7 +1659,9 @@
       "ea:publication:local-and-open-source-ai-systems",
       "ea:publication:retrieval-augmented-generation-and-knowledge-systems",
       "ea:publication:multimodal-ai-across-text-image-audio-and-video",
-      "ea:project:voice-capture-studio"
+      "ea:project:voice-capture-studio",
+      "ea:researchQuestion:self-explaining-knowledge-graph-software",
+      "ea:researchQuestion:speech-dataset-reproducibility"
     ],
     "status": "active",
     "confidence": "validated",
@@ -1727,10 +1773,12 @@
     ],
     "questions": [],
     "relationLabels": [
-      "appliesConcept Voice Capture Studio prepares structured speech dataset material through WAV audio, transcripts, timing, intent, quality metadata and manifests."
+      "appliesConcept Voice Capture Studio prepares structured speech dataset material through WAV audio, transcripts, timing, intent, quality metadata and manifests.",
+      "appliesConcept The research question \"How can speech datasets become reproducible, structured and privacy-first?\" applies Speech Datasets as part of its current model."
     ],
     "relatedEntityIds": [
-      "ea:project:voice-capture-studio"
+      "ea:project:voice-capture-studio",
+      "ea:researchQuestion:speech-dataset-reproducibility"
     ],
     "status": "active",
     "confidence": "validated",
@@ -1760,10 +1808,12 @@
     ],
     "questions": [],
     "relationLabels": [
-      "appliesConcept Voice Capture Studio applies speech-recording principles through guided prompts, room-tone calibration, takes and review states."
+      "appliesConcept Voice Capture Studio applies speech-recording principles through guided prompts, room-tone calibration, takes and review states.",
+      "appliesConcept The research question \"How can speech datasets become reproducible, structured and privacy-first?\" applies Speech Recording as part of its current model."
     ],
     "relatedEntityIds": [
-      "ea:project:voice-capture-studio"
+      "ea:project:voice-capture-studio",
+      "ea:researchQuestion:speech-dataset-reproducibility"
     ],
     "status": "active",
     "confidence": "validated",
@@ -1869,10 +1919,14 @@
     ],
     "questions": [],
     "relationLabels": [
-      "appliesConcept Voice Capture Studio applies voice-technology concerns around capture, metadata, review, local privacy and downstream workflow boundaries."
+      "appliesConcept Voice Capture Studio applies voice-technology concerns around capture, metadata, review, local privacy and downstream workflow boundaries.",
+      "appliesConcept The research question \"How can an AI understand someone during its very first conversation?\" applies Voice Technology as part of its current model.",
+      "appliesConcept The research question \"How can speech datasets become reproducible, structured and privacy-first?\" applies Voice Technology as part of its current model."
     ],
     "relatedEntityIds": [
-      "ea:project:voice-capture-studio"
+      "ea:project:voice-capture-studio",
+      "ea:researchQuestion:first-conversation-understanding",
+      "ea:researchQuestion:speech-dataset-reproducibility"
     ],
     "status": "active",
     "confidence": "validated",
@@ -1983,7 +2037,8 @@
       "hasPart Knowledge Hub Foundations includes Contextual Execution and Graph Runtimes as a foundation article.",
       "hasPart Knowledge Hub Foundations includes Digital Preservation and Living Archives as a foundation article.",
       "hasPart Knowledge Hub Foundations includes Generative Systems, Cybernetics and Creative Coding as a foundation article.",
-      "hasPart Knowledge Hub Foundations includes Signal Archaeology, Audio Memory and Machine Listening as a foundation article."
+      "hasPart Knowledge Hub Foundations includes Signal Archaeology, Audio Memory and Machine Listening as a foundation article.",
+      "memberOfCollection The research question \"How can software become explainable through its own knowledge graph?\" belongs to the Knowledge Hub Foundations collection for editorial navigation."
     ],
     "relatedEntityIds": [
       "ea:publication:knowledge-graphs-for-cultural-infrastructure",
@@ -1991,7 +2046,8 @@
       "ea:publication:contextual-execution-and-graph-runtimes",
       "ea:publication:digital-preservation-and-living-archives",
       "ea:publication:generative-systems-cybernetics-and-creative-coding",
-      "ea:publication:signal-archaeology-audio-memory-and-machine-listening"
+      "ea:publication:signal-archaeology-audio-memory-and-machine-listening",
+      "ea:researchQuestion:self-explaining-knowledge-graph-software"
     ],
     "status": "active",
     "confidence": "published",
@@ -2141,7 +2197,8 @@
       "hasPart Knowledge Hub Third Wave includes Event-Driven Architecture and Event Streams.",
       "hasPart Knowledge Hub Third Wave includes Redis Streams for Orchestration.",
       "hasPart Knowledge Hub Third Wave includes Microservices, Modular Monoliths and System Boundaries.",
-      "hasPart Knowledge Hub Third Wave includes Runtime Engines and Domain Operating Systems."
+      "hasPart Knowledge Hub Third Wave includes Runtime Engines and Domain Operating Systems.",
+      "memberOfCollection The research question \"How can software become explainable through its own knowledge graph?\" belongs to the Knowledge Hub Third Wave collection for editorial navigation."
     ],
     "relatedEntityIds": [
       "ea:publication:how-large-language-models-actually-work",
@@ -2155,7 +2212,8 @@
       "ea:publication:event-driven-architecture-and-event-streams",
       "ea:publication:redis-streams-for-orchestration",
       "ea:publication:microservices-modular-monoliths-and-system-boundaries",
-      "ea:publication:runtime-engines-and-domain-operating-systems"
+      "ea:publication:runtime-engines-and-domain-operating-systems",
+      "ea:researchQuestion:self-explaining-knowledge-graph-software"
     ],
     "status": "active",
     "confidence": "published",
@@ -2187,11 +2245,15 @@
     "questions": [],
     "relationLabels": [
       "memberOfCollection Voice Capture Studio is the lead project in the Voice Capture Studio Collection.",
-      "memberOfCollection The Voice Capture Studio repository is part of the Voice Capture Studio Collection as the public source artefact."
+      "memberOfCollection The Voice Capture Studio repository is part of the Voice Capture Studio Collection as the public source artefact.",
+      "memberOfCollection The research question \"How can an AI understand someone during its very first conversation?\" belongs to the Voice Capture Studio Collection collection for editorial navigation.",
+      "memberOfCollection The research question \"How can speech datasets become reproducible, structured and privacy-first?\" belongs to the Voice Capture Studio Collection collection for editorial navigation."
     ],
     "relatedEntityIds": [
       "ea:project:voice-capture-studio",
-      "ea:artefact:voice-capture-studio-repository"
+      "ea:artefact:voice-capture-studio-repository",
+      "ea:researchQuestion:first-conversation-understanding",
+      "ea:researchQuestion:speech-dataset-reproducibility"
     ],
     "status": "active",
     "confidence": "published",
@@ -2225,13 +2287,15 @@
       "documents Model Context Protocol and Tool-Using AI Systems explains how MCP relates to AI agents and deterministic workflows.",
       "documents Observability for AI Agents and Tool-Calling Systems explains why agents need traceable model and tool behavior.",
       "documents Prompt Injection and Trust Boundaries in AI Knowledge Systems documents prompt-injection risks for AI agents.",
-      "documents AI Agents vs AI Workflows documents model-directed agency and deterministic workflow boundaries."
+      "documents AI Agents vs AI Workflows documents model-directed agency and deterministic workflow boundaries.",
+      "appliesConcept The research question \"How can an AI understand someone during its very first conversation?\" applies AI Agent as part of its current model."
     ],
     "relatedEntityIds": [
       "ea:publication:model-context-protocol-and-tool-using-ai-systems",
       "ea:publication:observability-for-ai-agents-and-tool-calling-systems",
       "ea:publication:prompt-injection-and-trust-boundaries-in-ai-knowledge-systems",
-      "ea:publication:ai-agents-vs-ai-workflows"
+      "ea:publication:ai-agents-vs-ai-workflows",
+      "ea:researchQuestion:first-conversation-understanding"
     ],
     "status": "active",
     "confidence": "validated",
@@ -2367,10 +2431,12 @@
     ],
     "questions": [],
     "relationLabels": [
-      "appliesConcept Voice Capture Studio applies browser-software principles by running as a static web application with local storage, microphone access and explicit exports."
+      "appliesConcept Voice Capture Studio applies browser-software principles by running as a static web application with local storage, microphone access and explicit exports.",
+      "appliesConcept The research question \"How can speech datasets become reproducible, structured and privacy-first?\" applies Browser Software as part of its current model."
     ],
     "relatedEntityIds": [
-      "ea:project:voice-capture-studio"
+      "ea:project:voice-capture-studio",
+      "ea:researchQuestion:speech-dataset-reproducibility"
     ],
     "status": "active",
     "confidence": "validated",
@@ -2410,7 +2476,8 @@
       "documents Contextual Execution and Graph Runtimes documents contextual execution as a runtime principle.",
       "documents AI Agents vs AI Workflows connects agent permissions to contextual execution.",
       "documents Event-Driven Architecture and Event Streams connects event propagation to contextual execution.",
-      "documents Runtime Engines and Domain Operating Systems explains capability evaluation through contextual execution."
+      "documents Runtime Engines and Domain Operating Systems explains capability evaluation through contextual execution.",
+      "appliesConcept The research question \"How can an AI understand someone during its very first conversation?\" applies Contextual Execution as part of its current model."
     ],
     "relatedEntityIds": [
       "ea:publication:model-context-protocol-and-tool-using-ai-systems",
@@ -2422,7 +2489,8 @@
       "ea:publication:contextual-execution-and-graph-runtimes",
       "ea:publication:ai-agents-vs-ai-workflows",
       "ea:publication:event-driven-architecture-and-event-streams",
-      "ea:publication:runtime-engines-and-domain-operating-systems"
+      "ea:publication:runtime-engines-and-domain-operating-systems",
+      "ea:researchQuestion:first-conversation-understanding"
     ],
     "status": "active",
     "confidence": "canonical",
@@ -2618,13 +2686,17 @@
       "documents Verifiable Credentials for Cultural Archives and Creator Identity connects signed claims to durable entity identity.",
       "documents Knowledge Graphs for Cultural Infrastructure explains why stable entity identity matters for graph publishing.",
       "documents Linked Data and Public Knowledge Pages explains the difference between page URLs and entity identifiers.",
-      "documents Why Graphs Are More Powerful Than Folders explains why entity identity should survive path changes."
+      "documents Why Graphs Are More Powerful Than Folders explains why entity identity should survive path changes.",
+      "appliesConcept The research question \"How can an AI understand someone during its very first conversation?\" applies Entity Identity as part of its current model.",
+      "appliesConcept The research question \"How can software become explainable through its own knowledge graph?\" applies Entity Identity as part of its current model."
     ],
     "relatedEntityIds": [
       "ea:publication:verifiable-credentials-for-cultural-archives-and-creator-identity",
       "ea:publication:knowledge-graphs-for-cultural-infrastructure",
       "ea:publication:linked-data-and-public-knowledge-pages",
-      "ea:publication:why-graphs-are-more-powerful-than-folders"
+      "ea:publication:why-graphs-are-more-powerful-than-folders",
+      "ea:researchQuestion:first-conversation-understanding",
+      "ea:researchQuestion:self-explaining-knowledge-graph-software"
     ],
     "status": "active",
     "confidence": "canonical",
@@ -2822,7 +2894,8 @@
       "documents Runtime Engines and Domain Operating Systems connects domain runtimes to graph execution.",
       "defines Runtime Theory supplies the research questions and boundaries used to define graph runtime within Electronic Artefacts.",
       "appliesConcept VASTE applies the graph-runtime concept through addressable entities, typed relationships, identity, context and event execution.",
-      "appliesConcept Vestiges applies graph-runtime principles to cultural, craft and human-knowledge infrastructure."
+      "appliesConcept Vestiges applies graph-runtime principles to cultural, craft and human-knowledge infrastructure.",
+      "appliesConcept The research question \"How can software become explainable through its own knowledge graph?\" applies Graph Runtime as part of its current model."
     ],
     "relatedEntityIds": [
       "ea:publication:prompt-injection-and-trust-boundaries-in-ai-knowledge-systems",
@@ -2831,7 +2904,8 @@
       "ea:publication:runtime-engines-and-domain-operating-systems",
       "ea:researchField:runtime-theory",
       "ea:program:vaste",
-      "ea:project:vestiges"
+      "ea:project:vestiges",
+      "ea:researchQuestion:self-explaining-knowledge-graph-software"
     ],
     "status": "active",
     "confidence": "canonical",
@@ -2866,7 +2940,8 @@
       "documents Typography, Reading Systems and Digital Interfaces connects typography to human computer interaction and accessibility.",
       "documents Human Computer Interaction for Creative Tools documents HCI as a creative tool discipline.",
       "documents Generative AI, Latent Space and Creative Workflows links AI workflows to human computer interaction and creative agency.",
-      "appliesConcept Voice Capture Studio applies HCI principles by making recording modes, environment checks, local storage and quality gates visible before capture."
+      "appliesConcept Voice Capture Studio applies HCI principles by making recording modes, environment checks, local storage and quality gates visible before capture.",
+      "appliesConcept The research question \"How can an AI understand someone during its very first conversation?\" applies Human Computer Interaction as part of its current model."
     ],
     "relatedEntityIds": [
       "ea:publication:webnn-and-local-ai-in-the-browser",
@@ -2874,7 +2949,8 @@
       "ea:publication:typography-reading-systems-and-digital-interfaces",
       "ea:publication:human-computer-interaction-for-creative-tools",
       "ea:publication:generative-ai-latent-space-and-creative-workflows",
-      "ea:project:voice-capture-studio"
+      "ea:project:voice-capture-studio",
+      "ea:researchQuestion:first-conversation-understanding"
     ],
     "status": "active",
     "confidence": "canonical",
@@ -2905,11 +2981,13 @@
     "questions": [],
     "relationLabels": [
       "documents Hypertext and Augmented Knowledge Systems documents hypertext as an architecture for linked public knowledge.",
-      "documents Personal Knowledge Systems and Digital Gardens uses hypertext as the linking model for public knowledge gardens."
+      "documents Personal Knowledge Systems and Digital Gardens uses hypertext as the linking model for public knowledge gardens.",
+      "appliesConcept The research question \"How can software become explainable through its own knowledge graph?\" applies Hypertext as part of its current model."
     ],
     "relatedEntityIds": [
       "ea:publication:hypertext-and-augmented-knowledge-systems",
-      "ea:publication:personal-knowledge-systems-and-digital-gardens"
+      "ea:publication:personal-knowledge-systems-and-digital-gardens",
+      "ea:researchQuestion:self-explaining-knowledge-graph-software"
     ],
     "status": "active",
     "confidence": "canonical",
@@ -2979,7 +3057,9 @@
       "documents Hypertext and Augmented Knowledge Systems explains how knowledge graphs strengthen linked pages with explicit relations.",
       "documents Retrieval-Augmented Generation and Knowledge Systems explains graph-grounded retrieval.",
       "documents Ontologies, Taxonomies and Knowledge Modeling connects semantic models to knowledge graphs.",
-      "documents Why Graphs Are More Powerful Than Folders explains knowledge graph identity and traversal."
+      "documents Why Graphs Are More Powerful Than Folders explains knowledge graph identity and traversal.",
+      "appliesConcept The research question \"How can an AI understand someone during its very first conversation?\" applies Knowledge Graph as part of its current model.",
+      "appliesConcept The research question \"How can software become explainable through its own knowledge graph?\" applies Knowledge Graph as part of its current model."
     ],
     "relatedEntityIds": [
       "ea:publication:ai-search-structured-content-and-knowledge-graph-seo",
@@ -2988,7 +3068,9 @@
       "ea:publication:hypertext-and-augmented-knowledge-systems",
       "ea:publication:retrieval-augmented-generation-and-knowledge-systems",
       "ea:publication:ontologies-taxonomies-and-knowledge-modeling",
-      "ea:publication:why-graphs-are-more-powerful-than-folders"
+      "ea:publication:why-graphs-are-more-powerful-than-folders",
+      "ea:researchQuestion:first-conversation-understanding",
+      "ea:researchQuestion:self-explaining-knowledge-graph-software"
     ],
     "status": "active",
     "confidence": "canonical",
@@ -3057,12 +3139,14 @@
     "relationLabels": [
       "documents AI Search, Structured Content and Knowledge Graph SEO explains how Linked Data supports crawlable, machine-readable public knowledge pages.",
       "documents Linked Data and Public Knowledge Pages documents Linked Data as a publishing discipline for public knowledge pages.",
-      "documents Hypertext and Augmented Knowledge Systems links hypertext practice to Linked Data and stable identifiers."
+      "documents Hypertext and Augmented Knowledge Systems links hypertext practice to Linked Data and stable identifiers.",
+      "appliesConcept The research question \"How can software become explainable through its own knowledge graph?\" applies Linked Data as part of its current model."
     ],
     "relatedEntityIds": [
       "ea:publication:ai-search-structured-content-and-knowledge-graph-seo",
       "ea:publication:linked-data-and-public-knowledge-pages",
-      "ea:publication:hypertext-and-augmented-knowledge-systems"
+      "ea:publication:hypertext-and-augmented-knowledge-systems",
+      "ea:researchQuestion:self-explaining-knowledge-graph-software"
     ],
     "status": "active",
     "confidence": "validated",
@@ -3092,10 +3176,14 @@
     ],
     "questions": [],
     "relationLabels": [
-      "appliesConcept Voice Capture Studio supports downstream machine-learning workflows by preparing accepted recordings and metadata without performing model training itself."
+      "appliesConcept Voice Capture Studio supports downstream machine-learning workflows by preparing accepted recordings and metadata without performing model training itself.",
+      "appliesConcept The research question \"How can an AI understand someone during its very first conversation?\" applies Machine Learning Workflows as part of its current model.",
+      "appliesConcept The research question \"How can speech datasets become reproducible, structured and privacy-first?\" applies Machine Learning Workflows as part of its current model."
     ],
     "relatedEntityIds": [
-      "ea:project:voice-capture-studio"
+      "ea:project:voice-capture-studio",
+      "ea:researchQuestion:first-conversation-understanding",
+      "ea:researchQuestion:speech-dataset-reproducibility"
     ],
     "status": "active",
     "confidence": "validated",
@@ -3130,7 +3218,9 @@
       "documents Typography, Reading Systems and Digital Interfaces links reading systems to visible metadata and article structure.",
       "documents Retrieval-Augmented Generation and Knowledge Systems treats metadata as retrieval infrastructure.",
       "documents Ontologies, Taxonomies and Knowledge Modeling positions metadata within a broader semantic architecture.",
-      "appliesConcept Voice Capture Studio applies metadata discipline by attaching transcript, timing, intent, quality and manifest information to recorded takes."
+      "appliesConcept Voice Capture Studio applies metadata discipline by attaching transcript, timing, intent, quality and manifest information to recorded takes.",
+      "appliesConcept The research question \"How can software become explainable through its own knowledge graph?\" applies Metadata as part of its current model.",
+      "appliesConcept The research question \"How can speech datasets become reproducible, structured and privacy-first?\" applies Metadata as part of its current model."
     ],
     "relatedEntityIds": [
       "ea:publication:personal-knowledge-systems-and-digital-gardens",
@@ -3138,7 +3228,9 @@
       "ea:publication:typography-reading-systems-and-digital-interfaces",
       "ea:publication:retrieval-augmented-generation-and-knowledge-systems",
       "ea:publication:ontologies-taxonomies-and-knowledge-modeling",
-      "ea:project:voice-capture-studio"
+      "ea:project:voice-capture-studio",
+      "ea:researchQuestion:self-explaining-knowledge-graph-software",
+      "ea:researchQuestion:speech-dataset-reproducibility"
     ],
     "status": "active",
     "confidence": "canonical",
@@ -3315,13 +3407,15 @@
       "documents Open Source as Cultural Infrastructure documents open source as a licensing, maintenance and cultural infrastructure practice.",
       "documents Creative Coding Pedagogy from Logo to p5.js connects creative learning to open examples and open-source communities.",
       "documents Local and Open Source AI Systems applies open-source principles to AI infrastructure and licensing.",
-      "appliesConcept Voice Capture Studio applies open-source practice through a public MIT-licensed repository with contribution, issue and documentation surfaces."
+      "appliesConcept Voice Capture Studio applies open-source practice through a public MIT-licensed repository with contribution, issue and documentation surfaces.",
+      "appliesConcept The research question \"How can speech datasets become reproducible, structured and privacy-first?\" applies Open Source as part of its current model."
     ],
     "relatedEntityIds": [
       "ea:publication:open-source-as-cultural-infrastructure",
       "ea:publication:creative-coding-pedagogy-from-logo-to-p5js",
       "ea:publication:local-and-open-source-ai-systems",
-      "ea:project:voice-capture-studio"
+      "ea:project:voice-capture-studio",
+      "ea:researchQuestion:speech-dataset-reproducibility"
     ],
     "status": "active",
     "confidence": "canonical",
@@ -3384,10 +3478,12 @@
     ],
     "questions": [],
     "relationLabels": [
-      "documents Personal Knowledge Systems and Digital Gardens documents personal knowledge systems as a practice of capture, linking and revision."
+      "documents Personal Knowledge Systems and Digital Gardens documents personal knowledge systems as a practice of capture, linking and revision.",
+      "appliesConcept The research question \"How can software become explainable through its own knowledge graph?\" applies Personal Knowledge System as part of its current model."
     ],
     "relatedEntityIds": [
-      "ea:publication:personal-knowledge-systems-and-digital-gardens"
+      "ea:publication:personal-knowledge-systems-and-digital-gardens",
+      "ea:researchQuestion:self-explaining-knowledge-graph-software"
     ],
     "status": "active",
     "confidence": "validated",
@@ -3465,7 +3561,9 @@
       "documents Local and Open Source AI Systems connects model deployment to provenance and reproducibility.",
       "documents Retrieval-Augmented Generation and Knowledge Systems connects citations and source grounding to provenance.",
       "documents Multimodal AI Across Text, Image, Audio and Video documents provenance risks across generated media.",
-      "appliesConcept Voice Capture Studio applies provenance concerns by keeping prompt identifiers, corpus versions, speaker context and export manifests visible."
+      "appliesConcept Voice Capture Studio applies provenance concerns by keeping prompt identifiers, corpus versions, speaker context and export manifests visible.",
+      "appliesConcept The research question \"How can software become explainable through its own knowledge graph?\" applies Provenance as part of its current model.",
+      "appliesConcept The research question \"How can speech datasets become reproducible, structured and privacy-first?\" applies Provenance as part of its current model."
     ],
     "relatedEntityIds": [
       "ea:publication:c2pa-content-credentials-and-generative-media-provenance",
@@ -3480,7 +3578,9 @@
       "ea:publication:local-and-open-source-ai-systems",
       "ea:publication:retrieval-augmented-generation-and-knowledge-systems",
       "ea:publication:multimodal-ai-across-text-image-audio-and-video",
-      "ea:project:voice-capture-studio"
+      "ea:project:voice-capture-studio",
+      "ea:researchQuestion:self-explaining-knowledge-graph-software",
+      "ea:researchQuestion:speech-dataset-reproducibility"
     ],
     "status": "active",
     "confidence": "validated",
@@ -3588,10 +3688,12 @@
     ],
     "questions": [],
     "relationLabels": [
-      "appliesConcept Voice Capture Studio prepares structured speech dataset material through WAV audio, transcripts, timing, intent, quality metadata and manifests."
+      "appliesConcept Voice Capture Studio prepares structured speech dataset material through WAV audio, transcripts, timing, intent, quality metadata and manifests.",
+      "appliesConcept The research question \"How can speech datasets become reproducible, structured and privacy-first?\" applies Speech Datasets as part of its current model."
     ],
     "relatedEntityIds": [
-      "ea:project:voice-capture-studio"
+      "ea:project:voice-capture-studio",
+      "ea:researchQuestion:speech-dataset-reproducibility"
     ],
     "status": "active",
     "confidence": "validated",
@@ -3621,10 +3723,12 @@
     ],
     "questions": [],
     "relationLabels": [
-      "appliesConcept Voice Capture Studio applies speech-recording principles through guided prompts, room-tone calibration, takes and review states."
+      "appliesConcept Voice Capture Studio applies speech-recording principles through guided prompts, room-tone calibration, takes and review states.",
+      "appliesConcept The research question \"How can speech datasets become reproducible, structured and privacy-first?\" applies Speech Recording as part of its current model."
     ],
     "relatedEntityIds": [
-      "ea:project:voice-capture-studio"
+      "ea:project:voice-capture-studio",
+      "ea:researchQuestion:speech-dataset-reproducibility"
     ],
     "status": "active",
     "confidence": "validated",
@@ -3727,10 +3831,14 @@
     ],
     "questions": [],
     "relationLabels": [
-      "appliesConcept Voice Capture Studio applies voice-technology concerns around capture, metadata, review, local privacy and downstream workflow boundaries."
+      "appliesConcept Voice Capture Studio applies voice-technology concerns around capture, metadata, review, local privacy and downstream workflow boundaries.",
+      "appliesConcept The research question \"How can an AI understand someone during its very first conversation?\" applies Voice Technology as part of its current model.",
+      "appliesConcept The research question \"How can speech datasets become reproducible, structured and privacy-first?\" applies Voice Technology as part of its current model."
     ],
     "relatedEntityIds": [
-      "ea:project:voice-capture-studio"
+      "ea:project:voice-capture-studio",
+      "ea:researchQuestion:first-conversation-understanding",
+      "ea:researchQuestion:speech-dataset-reproducibility"
     ],
     "status": "active",
     "confidence": "validated",
@@ -3798,8 +3906,14 @@
       "Framework front-end"
     ],
     "questions": [],
-    "relationLabels": [],
-    "relatedEntityIds": [],
+    "relationLabels": [
+      "implementedBy Electronic Artefacts Lightweight Template is listed as a current software or project answer for the research question \"How can software become explainable through its own knowledge graph?\".",
+      "implementedBy Electronic Artefacts Lightweight Template is listed as a current software or project answer for the research question \"How can speech datasets become reproducible, structured and privacy-first?\"."
+    ],
+    "relatedEntityIds": [
+      "ea:researchQuestion:self-explaining-knowledge-graph-software",
+      "ea:researchQuestion:speech-dataset-reproducibility"
+    ],
     "status": "active",
     "confidence": "published",
     "modifiedAt": "2026-06-26"
@@ -3884,7 +3998,9 @@
       "documents Web Audio and Browser-Based Sound Systems links ORETH to public sound tools and browser-native audio research.",
       "documents Algorithmic Composition and Rule-Based Music links ORETH to audio analysis and generative musical exploration.",
       "documents Multimodal AI Across Text, Image, Audio and Video connects ORETH to audio and cross-modal analysis.",
-      "appliesConcept ORETH provides an applied context for connecting audio analysis with visual, textual and archival records."
+      "appliesConcept ORETH provides an applied context for connecting audio analysis with visual, textual and archival records.",
+      "implementedBy ORETH is listed as a current software or project answer for the research question \"How can an AI understand someone during its very first conversation?\".",
+      "implementedBy ORETH is listed as a current software or project answer for the research question \"How can speech datasets become reproducible, structured and privacy-first?\"."
     ],
     "relatedEntityIds": [
       "ea:project:palimpsests",
@@ -3895,7 +4011,9 @@
       "ea:publication:web-audio-and-browser-based-sound-systems",
       "ea:publication:algorithmic-composition-and-rule-based-music",
       "ea:publication:multimodal-ai-across-text-image-audio-and-video",
-      "ea:concept:multimodal-ai"
+      "ea:concept:multimodal-ai",
+      "ea:researchQuestion:first-conversation-understanding",
+      "ea:researchQuestion:speech-dataset-reproducibility"
     ],
     "status": "prototype",
     "confidence": "observed",
@@ -3954,7 +4072,9 @@
       "appliesConcept VASTE applies the graph-runtime concept through addressable entities, typed relationships, identity, context and event execution.",
       "derivedFrom VASTE derives its runtime primitives and contextual execution questions from the Runtime Theory research field.",
       "poweredBy Vestiges uses VASTE as its graph runtime and contextual execution foundation.",
-      "maintainedBy Electronic Artefacts develops and maintains the VASTE program."
+      "maintainedBy Electronic Artefacts develops and maintains the VASTE program.",
+      "implementedBy VASTE is listed as a current software or project answer for the research question \"How can an AI understand someone during its very first conversation?\".",
+      "implementedBy VASTE is listed as a current software or project answer for the research question \"How can software become explainable through its own knowledge graph?\"."
     ],
     "relatedEntityIds": [
       "ea:publication:foundational-lineage-001",
@@ -3979,7 +4099,9 @@
       "ea:concept:graph-runtime",
       "ea:researchField:runtime-theory",
       "ea:project:vestiges",
-      "ea:organization:electronic-artefacts"
+      "ea:organization:electronic-artefacts",
+      "ea:researchQuestion:first-conversation-understanding",
+      "ea:researchQuestion:self-explaining-knowledge-graph-software"
     ],
     "status": "development",
     "confidence": "published",
@@ -4084,7 +4206,9 @@
       "poweredBy Vestiges uses VASTE as its graph runtime and contextual execution foundation.",
       "appliesConcept Vestiges applies graph-runtime principles to cultural, craft and human-knowledge infrastructure.",
       "evidencedBy Foundational Lineage",
-      "createdBy Electronic Artefacts created Vestiges as the flagship public application of VASTE."
+      "createdBy Electronic Artefacts created Vestiges as the flagship public application of VASTE.",
+      "implementedBy Vestiges is listed as a current software or project answer for the research question \"How can an AI understand someone during its very first conversation?\".",
+      "implementedBy Vestiges is listed as a current software or project answer for the research question \"How can software become explainable through its own knowledge graph?\"."
     ],
     "relatedEntityIds": [
       "ea:publication:iiif-and-compound-cultural-objects",
@@ -4102,7 +4226,9 @@
       "ea:program:vaste",
       "ea:concept:graph-runtime",
       "ea:publication:foundational-lineage-001",
-      "ea:organization:electronic-artefacts"
+      "ea:organization:electronic-artefacts",
+      "ea:researchQuestion:first-conversation-understanding",
+      "ea:researchQuestion:self-explaining-knowledge-graph-software"
     ],
     "status": "development",
     "confidence": "observed",
@@ -4161,7 +4287,10 @@
       "appliesConcept Voice Capture Studio applies metadata discipline by attaching transcript, timing, intent, quality and manifest information to recorded takes.",
       "appliesConcept Voice Capture Studio applies provenance concerns by keeping prompt identifiers, corpus versions, speaker context and export manifests visible.",
       "appliesConcept Voice Capture Studio applies HCI principles by making recording modes, environment checks, local storage and quality gates visible before capture.",
-      "usesTechnology Voice Capture Studio uses the Web Audio API for browser-local microphone capture and recording workflows."
+      "usesTechnology Voice Capture Studio uses the Web Audio API for browser-local microphone capture and recording workflows.",
+      "implementedBy Voice Capture Studio is listed as a current software or project answer for the research question \"How can an AI understand someone during its very first conversation?\".",
+      "implementedBy Voice Capture Studio is listed as a current software or project answer for the research question \"How can software become explainable through its own knowledge graph?\".",
+      "implementedBy Voice Capture Studio is listed as a current software or project answer for the research question \"How can speech datasets become reproducible, structured and privacy-first?\"."
     ],
     "relatedEntityIds": [
       "ea:organization:electronic-artefacts",
@@ -4180,7 +4309,10 @@
       "ea:concept:metadata",
       "ea:concept:provenance",
       "ea:concept:human-computer-interaction",
-      "ea:technology:web-audio-api"
+      "ea:technology:web-audio-api",
+      "ea:researchQuestion:first-conversation-understanding",
+      "ea:researchQuestion:self-explaining-knowledge-graph-software",
+      "ea:researchQuestion:speech-dataset-reproducibility"
     ],
     "status": "active",
     "confidence": "published",
@@ -4217,14 +4349,16 @@
       "documents AI Agents vs AI Workflows connects agent permissions to contextual execution.",
       "documents AI Agents vs AI Workflows distinguishes bounded agents from broader autonomous systems.",
       "documents AI Agents vs AI Workflows uses VASTE as a context for identity-aware agent permissions.",
-      "hasPart Knowledge Hub Third Wave includes AI Agents vs AI Workflows."
+      "hasPart Knowledge Hub Third Wave includes AI Agents vs AI Workflows.",
+      "documents AI Agents vs AI Workflows documents context, evidence or vocabulary for the research question \"How can an AI understand someone during its very first conversation?\"."
     ],
     "relatedEntityIds": [
       "ea:concept:ai-agent",
       "ea:concept:contextual-execution",
       "ea:concept:autonomous-system",
       "ea:program:vaste",
-      "ea:collection:knowledge-hub-third-wave"
+      "ea:collection:knowledge-hub-third-wave",
+      "ea:researchQuestion:first-conversation-understanding"
     ],
     "status": "active",
     "confidence": "published",
@@ -4261,14 +4395,16 @@
       "documents AI Search, Structured Content and Knowledge Graph SEO explains how Linked Data supports crawlable, machine-readable public knowledge pages.",
       "usesTechnology AI Search, Structured Content and Knowledge Graph SEO uses JSON-LD as the structured data bridge between articles and graph records.",
       "documents AI Search, Structured Content and Knowledge Graph SEO connects AI search visibility to retrieval-augmented generation patterns.",
-      "memberOfCollection AI Search, Structured Content and Knowledge Graph SEO is part of the fourth Knowledge Hub wave."
+      "memberOfCollection AI Search, Structured Content and Knowledge Graph SEO is part of the fourth Knowledge Hub wave.",
+      "documents AI Search, Structured Content and Knowledge Graph SEO documents context, evidence or vocabulary for the research question \"How can software become explainable through its own knowledge graph?\"."
     ],
     "relatedEntityIds": [
       "ea:concept:knowledge-graph",
       "ea:concept:linked-data",
       "ea:technology:json-ld",
       "ea:concept:retrieval-augmented-generation",
-      "ea:collection:knowledge-hub-fourth-wave"
+      "ea:collection:knowledge-hub-fourth-wave",
+      "ea:researchQuestion:self-explaining-knowledge-graph-software"
     ],
     "status": "active",
     "confidence": "published",
@@ -4392,14 +4528,16 @@
       "documents Contextual Execution and Graph Runtimes explains how contextual execution extends the graph-runtime concept.",
       "documents Contextual Execution and Graph Runtimes connects contextual execution to Runtime Theory.",
       "documents Contextual Execution and Graph Runtimes uses VASTE as the program context for graph runtime execution.",
-      "hasPart Knowledge Hub Foundations includes Contextual Execution and Graph Runtimes as a foundation article."
+      "hasPart Knowledge Hub Foundations includes Contextual Execution and Graph Runtimes as a foundation article.",
+      "documents Contextual Execution and Graph Runtimes documents context, evidence or vocabulary for the research question \"How can software become explainable through its own knowledge graph?\"."
     ],
     "relatedEntityIds": [
       "ea:concept:contextual-execution",
       "ea:concept:graph-runtime",
       "ea:researchField:runtime-theory",
       "ea:program:vaste",
-      "ea:collection:knowledge-hub-foundations"
+      "ea:collection:knowledge-hub-foundations",
+      "ea:researchQuestion:self-explaining-knowledge-graph-software"
     ],
     "status": "active",
     "confidence": "published",
@@ -4744,14 +4882,16 @@
       "documents Human Computer Interaction for Creative Tools connects interface design to augmented intelligence.",
       "documents Human Computer Interaction for Creative Tools links feedback and state communication to motion design.",
       "documents Human Computer Interaction for Creative Tools uses VASTE as a context for graph-aware creative systems.",
-      "hasPart Knowledge Hub Second Wave includes Human Computer Interaction for Creative Tools as a core article."
+      "hasPart Knowledge Hub Second Wave includes Human Computer Interaction for Creative Tools as a core article.",
+      "documents Human Computer Interaction for Creative Tools documents context, evidence or vocabulary for the research question \"How can an AI understand someone during its very first conversation?\"."
     ],
     "relatedEntityIds": [
       "ea:concept:human-computer-interaction",
       "ea:concept:augmented-intelligence",
       "ea:concept:motion-design",
       "ea:program:vaste",
-      "ea:collection:knowledge-hub-second-wave"
+      "ea:collection:knowledge-hub-second-wave",
+      "ea:researchQuestion:first-conversation-understanding"
     ],
     "status": "active",
     "confidence": "published",
@@ -4875,7 +5015,8 @@
       "documents Knowledge Graphs for Cultural Infrastructure frames provenance as a trust layer for cultural knowledge graphs.",
       "documents Knowledge Graphs for Cultural Infrastructure uses Vestiges as the applied cultural infrastructure example.",
       "usesTechnology Knowledge Graphs for Cultural Infrastructure uses RDF as the reference model for graph statements and resources.",
-      "hasPart Knowledge Hub Foundations includes Knowledge Graphs for Cultural Infrastructure as a foundation article."
+      "hasPart Knowledge Hub Foundations includes Knowledge Graphs for Cultural Infrastructure as a foundation article.",
+      "documents Knowledge Graphs for Cultural Infrastructure documents context, evidence or vocabulary for the research question \"How can software become explainable through its own knowledge graph?\"."
     ],
     "relatedEntityIds": [
       "ea:concept:knowledge-graph",
@@ -4883,7 +5024,8 @@
       "ea:concept:provenance",
       "ea:project:vestiges",
       "ea:technology:rdf",
-      "ea:collection:knowledge-hub-foundations"
+      "ea:collection:knowledge-hub-foundations",
+      "ea:researchQuestion:self-explaining-knowledge-graph-software"
     ],
     "status": "active",
     "confidence": "published",
@@ -4920,14 +5062,16 @@
       "documents Linked Data and Public Knowledge Pages explains the difference between page URLs and entity identifiers.",
       "usesTechnology Linked Data and Public Knowledge Pages uses JSON-LD as the practical structured-data format for static knowledge pages.",
       "usesTechnology Linked Data and Public Knowledge Pages uses RDF as the underlying graph-data reference for Linked Data.",
-      "hasPart Knowledge Hub Foundations includes Linked Data and Public Knowledge Pages as a foundation article."
+      "hasPart Knowledge Hub Foundations includes Linked Data and Public Knowledge Pages as a foundation article.",
+      "documents Linked Data and Public Knowledge Pages documents context, evidence or vocabulary for the research question \"How can software become explainable through its own knowledge graph?\"."
     ],
     "relatedEntityIds": [
       "ea:concept:linked-data",
       "ea:concept:entity-identity",
       "ea:technology:json-ld",
       "ea:technology:rdf",
-      "ea:collection:knowledge-hub-foundations"
+      "ea:collection:knowledge-hub-foundations",
+      "ea:researchQuestion:self-explaining-knowledge-graph-software"
     ],
     "status": "active",
     "confidence": "published",
@@ -4964,14 +5108,16 @@
       "documents Local and Open Source AI Systems applies open-source principles to AI infrastructure and licensing.",
       "usesTechnology Local and Open Source AI Systems uses llama.cpp as a reference local inference runtime.",
       "documents Local and Open Source AI Systems connects model deployment to provenance and reproducibility.",
-      "hasPart Knowledge Hub Third Wave includes Local and Open Source AI Systems."
+      "hasPart Knowledge Hub Third Wave includes Local and Open Source AI Systems.",
+      "documents Local and Open Source AI Systems documents context, evidence or vocabulary for the research question \"How can speech datasets become reproducible, structured and privacy-first?\"."
     ],
     "relatedEntityIds": [
       "ea:concept:open-weight-model",
       "ea:concept:open-source",
       "ea:technology:llama-cpp",
       "ea:concept:provenance",
-      "ea:collection:knowledge-hub-third-wave"
+      "ea:collection:knowledge-hub-third-wave",
+      "ea:researchQuestion:speech-dataset-reproducibility"
     ],
     "status": "active",
     "confidence": "published",
@@ -5095,14 +5241,16 @@
       "documents Model Context Protocol and Tool-Using AI Systems explains how MCP relates to AI agents and deterministic workflows.",
       "documents Model Context Protocol and Tool-Using AI Systems connects MCP permissions to contextual execution boundaries.",
       "documents Model Context Protocol and Tool-Using AI Systems uses VASTE as the graph-runtime context for scoped AI tools.",
-      "memberOfCollection Model Context Protocol and Tool-Using AI Systems is part of the fourth Knowledge Hub wave."
+      "memberOfCollection Model Context Protocol and Tool-Using AI Systems is part of the fourth Knowledge Hub wave.",
+      "documents Model Context Protocol and Tool-Using AI Systems documents context, evidence or vocabulary for the research question \"How can an AI understand someone during its very first conversation?\"."
     ],
     "relatedEntityIds": [
       "ea:technology:model-context-protocol",
       "ea:concept:ai-agent",
       "ea:concept:contextual-execution",
       "ea:program:vaste",
-      "ea:collection:knowledge-hub-fourth-wave"
+      "ea:collection:knowledge-hub-fourth-wave",
+      "ea:researchQuestion:first-conversation-understanding"
     ],
     "status": "active",
     "confidence": "published",
@@ -5317,14 +5465,16 @@
       "documents Open Source as Cultural Infrastructure connects open source to creative coding tools and pedagogy.",
       "documents Open Source as Cultural Infrastructure frames open collaboration as part of broader internet culture.",
       "documents Open Source as Cultural Infrastructure connects software access and maintenance to preservation concerns.",
-      "hasPart Knowledge Hub Second Wave includes Open Source as Cultural Infrastructure as a core article."
+      "hasPart Knowledge Hub Second Wave includes Open Source as Cultural Infrastructure as a core article.",
+      "documents Open Source as Cultural Infrastructure documents context, evidence or vocabulary for the research question \"How can speech datasets become reproducible, structured and privacy-first?\"."
     ],
     "relatedEntityIds": [
       "ea:concept:open-source",
       "ea:concept:creative-coding",
       "ea:concept:internet-culture",
       "ea:concept:digital-preservation",
-      "ea:collection:knowledge-hub-second-wave"
+      "ea:collection:knowledge-hub-second-wave",
+      "ea:researchQuestion:speech-dataset-reproducibility"
     ],
     "status": "active",
     "confidence": "published",
@@ -5578,7 +5728,8 @@
       "documents Retrieval-Augmented Generation and Knowledge Systems treats metadata as retrieval infrastructure.",
       "documents Retrieval-Augmented Generation and Knowledge Systems connects citations and source grounding to provenance.",
       "documents Retrieval-Augmented Generation and Knowledge Systems uses VASTE as a context for identity-aware graph retrieval.",
-      "hasPart Knowledge Hub Third Wave includes Retrieval-Augmented Generation and Knowledge Systems."
+      "hasPart Knowledge Hub Third Wave includes Retrieval-Augmented Generation and Knowledge Systems.",
+      "documents Retrieval-Augmented Generation and Knowledge Systems documents context, evidence or vocabulary for the research question \"How can an AI understand someone during its very first conversation?\"."
     ],
     "relatedEntityIds": [
       "ea:concept:retrieval-augmented-generation",
@@ -5586,7 +5737,8 @@
       "ea:concept:metadata",
       "ea:concept:provenance",
       "ea:program:vaste",
-      "ea:collection:knowledge-hub-third-wave"
+      "ea:collection:knowledge-hub-third-wave",
+      "ea:researchQuestion:first-conversation-understanding"
     ],
     "status": "active",
     "confidence": "published",
@@ -5845,14 +5997,16 @@
       "usesTechnology Web Audio and Browser-Based Sound Systems uses the Web Audio API as its main browser audio reference.",
       "documents Web Audio and Browser-Based Sound Systems connects browser sound tools to signal archaeology.",
       "documents Web Audio and Browser-Based Sound Systems links ORETH to public sound tools and browser-native audio research.",
-      "hasPart Knowledge Hub Second Wave includes Web Audio and Browser-Based Sound Systems as a core article."
+      "hasPart Knowledge Hub Second Wave includes Web Audio and Browser-Based Sound Systems as a core article.",
+      "documents Web Audio and Browser-Based Sound Systems documents context, evidence or vocabulary for the research question \"How can speech datasets become reproducible, structured and privacy-first?\"."
     ],
     "relatedEntityIds": [
       "ea:concept:web-audio",
       "ea:technology:web-audio-api",
       "ea:concept:signal-archaeology",
       "ea:program:oreth",
-      "ea:collection:knowledge-hub-second-wave"
+      "ea:collection:knowledge-hub-second-wave",
+      "ea:researchQuestion:speech-dataset-reproducibility"
     ],
     "status": "active",
     "confidence": "published",
@@ -5888,13 +6042,15 @@
       "documents WebNN and Local AI in the Browser documents WebNN as browser-local inference infrastructure.",
       "documents WebNN and Local AI in the Browser links WebNN to multimodal browser interfaces and local perception tasks.",
       "documents WebNN and Local AI in the Browser frames local inference as a human-computer interaction design problem.",
-      "memberOfCollection WebNN and Local AI in the Browser is part of the fourth Knowledge Hub wave."
+      "memberOfCollection WebNN and Local AI in the Browser is part of the fourth Knowledge Hub wave.",
+      "documents WebNN and Local AI in the Browser documents context, evidence or vocabulary for the research question \"How can speech datasets become reproducible, structured and privacy-first?\"."
     ],
     "relatedEntityIds": [
       "ea:technology:webnn",
       "ea:concept:multimodal-ai",
       "ea:concept:human-computer-interaction",
-      "ea:collection:knowledge-hub-fourth-wave"
+      "ea:collection:knowledge-hub-fourth-wave",
+      "ea:researchQuestion:speech-dataset-reproducibility"
     ],
     "status": "active",
     "confidence": "published",
@@ -5932,7 +6088,8 @@
       "documents Why Graphs Are More Powerful Than Folders explains why entity identity should survive path changes.",
       "documents Why Graphs Are More Powerful Than Folders uses VASTE as a graph-runtime application.",
       "documents Why Graphs Are More Powerful Than Folders uses Vestiges as a cultural graph case.",
-      "hasPart Knowledge Hub Third Wave includes Why Graphs Are More Powerful Than Folders."
+      "hasPart Knowledge Hub Third Wave includes Why Graphs Are More Powerful Than Folders.",
+      "documents Why Graphs Are More Powerful Than Folders documents context, evidence or vocabulary for the research question \"How can software become explainable through its own knowledge graph?\"."
     ],
     "relatedEntityIds": [
       "ea:concept:graph-modeling",
@@ -5940,7 +6097,8 @@
       "ea:concept:entity-identity",
       "ea:program:vaste",
       "ea:project:vestiges",
-      "ea:collection:knowledge-hub-third-wave"
+      "ea:collection:knowledge-hub-third-wave",
+      "ea:researchQuestion:self-explaining-knowledge-graph-software"
     ],
     "status": "active",
     "confidence": "published",
@@ -5991,6 +6149,229 @@
     "status": "active",
     "confidence": "validated",
     "modifiedAt": "2026-07-04"
+  },
+  {
+    "id": "ea:researchQuestion:first-conversation-understanding-fr",
+    "locale": "fr",
+    "route": "/fr/research/questions/first-conversation-understanding/",
+    "type": "researchQuestion",
+    "title": "Comment une IA peut-elle comprendre quelqu'un dès sa première conversation ?",
+    "alternateNames": [],
+    "abstract": "Cette question étudie si l'onboarding conversationnel peut construire un premier modèle fiable d'une personne sans réduire l'intention, l'incertitude et le contexte à un formulaire statique.",
+    "headings": [
+      "Observation",
+      "Problème",
+      "Hypothèse",
+      "Compréhension actuelle",
+      "Inconnues"
+    ],
+    "body": "Observation Les formulaires sont utiles lorsque le système connaît déjà ses catégories. Ils le sont moins lorsque la personne clarifie encore ce qu’elle veut dire, ce dont elle a besoin et ce qui doit rester incertain. Problème La première conversation avec un système porte plus d’information qu’une soumission de formulaire. Elle peut révéler priorité, vocabulaire, hésitation, contraintes et théorie provisoire de la situation. Hypothèse La conversation peut devenir un protocole d’onboarding lorsqu’elle produit des hypothèses inspectables. Le système ne doit pas prétendre comprendre une personne après un court échange. Compréhension actuelle La réponse actuelle est structurée en graphe. La compréhension initiale devrait produire des entités, relations et niveaux de confiance révisables. Inconnues Combien de contexte faut-il conserver ? Quels signaux sont trop ambigus ? Comment l’utilisateur corrige-t-il la première interprétation du système ? Les formulaires collectent des réponses, mais ils capturent mal l'intention, l'incertitude, le vocabulaire, le contexte évolutif et les raisons qui poussent une personne à agir maintenant. Un système qui commence par des champs rigides peut confondre conformité et compréhension. Le premier échange doit préserver assez d'ambiguïté pour permettre une correction ultérieure. La conversation peut devenir le protocole d'onboarding si le système traite chaque échange comme une preuve, et pas seulement comme une entrée de profil. La compréhension doit émerger progressivement. Une première conversation peut identifier des entités, objectifs, contraintes, risques et inconnues provisoires, puis garder ces hypothèses révisables. Le résultat le plus solide est architectural plutôt que centré sur le modèle. L'objet utile est un graphe provisoire d'hypothèses, de contraintes et de signaux inspectables. Définir un schéma minimal pour les hypothèses issues de la première conversation et leurs niveaux d'incertitude. Tester comment séparer voix, texte et métadonnées avant tout workflow de machine learning en aval. Décider quelles hypothèses peuvent être conservées et lesquelles doivent expirer sans confirmation. Capture conversationnelle du brief active Les parcours de contact et de découverte sont traités comme des conversations structurées qui identifient intention, voie probable, contexte manquant et questions utiles. Capture du contexte vocal observed Voice Capture Studio teste comment préserver transcription, timing, locuteur et métadonnées qualité sans envoyer les enregistrements à un service distant. 2026-01-01 Cadrage de la recherche La question a été séparée de l'onboarding IA générique et reformulée autour de la compréhension au premier contact. 2026-07-09 Intégration dans l'atlas de la page d'accueil La question devient une fiche du graphe reliée aux logiciels et preuves actuels.",
+    "tags": [
+      "Onboarding conversationnel",
+      "Agents IA",
+      "Graphe de connaissance",
+      "Voix",
+      "Compréhension utilisateur"
+    ],
+    "questions": [
+      "Comment une IA peut-elle comprendre quelqu'un dès sa première conversation ?",
+      "La conversation peut devenir le protocole d'onboarding si le système traite chaque échange comme une preuve, et pas seulement comme une entrée de profil."
+    ],
+    "relationLabels": [
+      "implementedBy Voice Capture Studio is listed as a current software or project answer for the research question \"How can an AI understand someone during its very first conversation?\".",
+      "implementedBy Vestiges is listed as a current software or project answer for the research question \"How can an AI understand someone during its very first conversation?\".",
+      "implementedBy VASTE is listed as a current software or project answer for the research question \"How can an AI understand someone during its very first conversation?\".",
+      "implementedBy ORETH is listed as a current software or project answer for the research question \"How can an AI understand someone during its very first conversation?\".",
+      "appliesConcept The research question \"How can an AI understand someone during its very first conversation?\" applies AI Agent as part of its current model.",
+      "appliesConcept The research question \"How can an AI understand someone during its very first conversation?\" applies Knowledge Graph as part of its current model.",
+      "appliesConcept The research question \"How can an AI understand someone during its very first conversation?\" applies Machine Learning Workflows as part of its current model.",
+      "appliesConcept The research question \"How can an AI understand someone during its very first conversation?\" applies Human Computer Interaction as part of its current model.",
+      "appliesConcept The research question \"How can an AI understand someone during its very first conversation?\" applies Contextual Execution as part of its current model.",
+      "appliesConcept The research question \"How can an AI understand someone during its very first conversation?\" applies Entity Identity as part of its current model.",
+      "appliesConcept The research question \"How can an AI understand someone during its very first conversation?\" applies Voice Technology as part of its current model.",
+      "usesTechnology The research question \"How can an AI understand someone during its very first conversation?\" uses Model Context Protocol as a relevant technical reference.",
+      "usesTechnology The research question \"How can an AI understand someone during its very first conversation?\" uses Web Audio API as a relevant technical reference.",
+      "usesTechnology The research question \"How can an AI understand someone during its very first conversation?\" uses WebNN as a relevant technical reference.",
+      "documents AI Agents vs AI Workflows documents context, evidence or vocabulary for the research question \"How can an AI understand someone during its very first conversation?\".",
+      "documents Retrieval-Augmented Generation and Knowledge Systems documents context, evidence or vocabulary for the research question \"How can an AI understand someone during its very first conversation?\".",
+      "documents Model Context Protocol and Tool-Using AI Systems documents context, evidence or vocabulary for the research question \"How can an AI understand someone during its very first conversation?\".",
+      "documents Human Computer Interaction for Creative Tools documents context, evidence or vocabulary for the research question \"How can an AI understand someone during its very first conversation?\".",
+      "memberOfCollection The research question \"How can an AI understand someone during its very first conversation?\" belongs to the Voice Capture Studio Collection collection for editorial navigation."
+    ],
+    "relatedEntityIds": [
+      "ea:project:voice-capture-studio",
+      "ea:project:vestiges",
+      "ea:program:vaste",
+      "ea:program:oreth",
+      "ea:concept:ai-agent",
+      "ea:concept:knowledge-graph",
+      "ea:concept:machine-learning-workflows",
+      "ea:concept:human-computer-interaction",
+      "ea:concept:contextual-execution",
+      "ea:concept:entity-identity",
+      "ea:concept:voice-technology",
+      "ea:technology:model-context-protocol",
+      "ea:technology:web-audio-api",
+      "ea:technology:webnn",
+      "ea:publication:ai-agents-vs-ai-workflows",
+      "ea:publication:retrieval-augmented-generation-and-knowledge-systems",
+      "ea:publication:model-context-protocol-and-tool-using-ai-systems",
+      "ea:publication:human-computer-interaction-for-creative-tools",
+      "ea:collection:voice-capture-studio"
+    ],
+    "status": "active",
+    "confidence": "observed",
+    "modifiedAt": "2026-07-09"
+  },
+  {
+    "id": "ea:researchQuestion:self-explaining-knowledge-graph-software-fr",
+    "locale": "fr",
+    "route": "/fr/research/questions/self-explaining-knowledge-graph-software/",
+    "type": "researchQuestion",
+    "title": "Comment un logiciel peut-il devenir explicable par son propre graphe de connaissance ?",
+    "alternateNames": [],
+    "abstract": "Cette question étudie si un logiciel peut expliquer son objectif, ses preuves, dépendances et limites à travers le même graphe qui génère ses pages publiques et ses fiches machine-readable.",
+    "headings": [
+      "Observation",
+      "Problème",
+      "Hypothèse",
+      "Compréhension actuelle",
+      "Inconnues"
+    ],
+    "body": "Observation La documentation dérive lorsqu’elle reste hors du système qu’elle décrit. Une page statique peut être exacte le jour de sa rédaction et trompeuse après quelques changements structurels. Problème Electronic Artefacts a besoin de fiches logicielles publiques utiles aux personnes, aux moteurs de recherche et aux futurs agents. Cela exige des identifiants stables, des relations typées, des pages lisibles et des exports machine-readable générés depuis une même source. Hypothèse Un graphe de connaissance peut devenir la couche documentaire. Si le graphe enregistre entités, relations, sources et versions, le site peut générer des explications plutôt que les dupliquer manuellement. Compréhension actuelle Le graphe ne supprime pas la responsabilité éditoriale. Il la rend visible. Une relation exige encore du jugement, mais une fois acceptée elle met à jour pages, recherche, JSON-LD et voisinages de graphe ensemble. Inconnues Le prochain problème concerne la profondeur de l’interface. Le graphe doit être assez visible pour aider la compréhension sans transformer chaque page en console d’administration. La documentation devient vite obsolète lorsqu'elle est séparée des entités, relations et routes que le système logiciel utilise réellement. Un projet peut avoir pages, JSON-LD, données de recherche, exports de relations et fichiers source qui divergent si aucun graphe structuré ne joue le rôle de couche d'autorité. Le graphe de connaissance peut devenir la couche documentaire principale lorsque pages, identifiants, voisinages de graphe, documents de recherche et panneaux relationnels sont générés depuis les mêmes fiches source. L'explicabilité progresse lorsque l'interface publique expose le graphe au lieu de le cacher. Une page devrait montrer ce qu'elle est, ses liens, ses preuves et les limites de ses affirmations. Le site démontre déjà une réponse partielle. HTML public, identifiants, JSON-LD, recherche et fichiers de graphe local sont générés depuis des fiches typées plutôt que maintenus séparément. Ajouter davantage de relations dérivées tout en conservant la revue éditoriale. Rendre les voisinages de graphe plus faciles à inspecter depuis les pages publiques. Définir ce qui constitue une preuve suffisante avant qu'une relation devienne canonique. Pages d'entités générées active Le site Electronic Artefacts génère pages canoniques, identifiants, JSON-LD, documents de recherche et voisinages de graphe depuis des fiches Markdown typées. Panneaux relationnels observed Les pages de projets, programmes, concepts et publications exposent des relations typées pour expliquer pourquoi les fiches sont connectées. 2026-03-01 Requalification de la documentation L'architecture du site est reformulée comme graphe public plutôt que comme suite de pages de portfolio maintenues à la main. 2026-07-09 Ajout de l'entité question de recherche Les questions de recherche deviennent des entités du graphe, permettant aux projets et logiciels de pointer vers ce qu'ils testent.",
+    "tags": [
+      "Graphe de connaissance",
+      "Linked Data",
+      "Documentation",
+      "Logiciel explicable",
+      "Génération de site statique"
+    ],
+    "questions": [
+      "Comment un logiciel peut-il devenir explicable par son propre graphe de connaissance ?",
+      "Le graphe de connaissance peut devenir la couche documentaire principale lorsque pages, identifiants, voisinages de graphe, documents de recherche et panneaux relationnels sont générés depuis les mêmes fiches source."
+    ],
+    "relationLabels": [
+      "implementedBy Vestiges is listed as a current software or project answer for the research question \"How can software become explainable through its own knowledge graph?\".",
+      "implementedBy Voice Capture Studio is listed as a current software or project answer for the research question \"How can software become explainable through its own knowledge graph?\".",
+      "implementedBy VASTE is listed as a current software or project answer for the research question \"How can software become explainable through its own knowledge graph?\".",
+      "implementedBy Electronic Artefacts Lightweight Template is listed as a current software or project answer for the research question \"How can software become explainable through its own knowledge graph?\".",
+      "appliesConcept The research question \"How can software become explainable through its own knowledge graph?\" applies Knowledge Graph as part of its current model.",
+      "appliesConcept The research question \"How can software become explainable through its own knowledge graph?\" applies Graph Runtime as part of its current model.",
+      "appliesConcept The research question \"How can software become explainable through its own knowledge graph?\" applies Linked Data as part of its current model.",
+      "appliesConcept The research question \"How can software become explainable through its own knowledge graph?\" applies Metadata as part of its current model.",
+      "appliesConcept The research question \"How can software become explainable through its own knowledge graph?\" applies Entity Identity as part of its current model.",
+      "appliesConcept The research question \"How can software become explainable through its own knowledge graph?\" applies Provenance as part of its current model.",
+      "appliesConcept The research question \"How can software become explainable through its own knowledge graph?\" applies Hypertext as part of its current model.",
+      "appliesConcept The research question \"How can software become explainable through its own knowledge graph?\" applies Personal Knowledge System as part of its current model.",
+      "usesTechnology The research question \"How can software become explainable through its own knowledge graph?\" uses JSON-LD as a relevant technical reference.",
+      "usesTechnology The research question \"How can software become explainable through its own knowledge graph?\" uses RDF as a relevant technical reference.",
+      "usesTechnology The research question \"How can software become explainable through its own knowledge graph?\" uses Web Animations as a relevant technical reference.",
+      "documents Linked Data and Public Knowledge Pages documents context, evidence or vocabulary for the research question \"How can software become explainable through its own knowledge graph?\".",
+      "documents Knowledge Graphs for Cultural Infrastructure documents context, evidence or vocabulary for the research question \"How can software become explainable through its own knowledge graph?\".",
+      "documents AI Search, Structured Content and Knowledge Graph SEO documents context, evidence or vocabulary for the research question \"How can software become explainable through its own knowledge graph?\".",
+      "documents Why Graphs Are More Powerful Than Folders documents context, evidence or vocabulary for the research question \"How can software become explainable through its own knowledge graph?\".",
+      "documents Contextual Execution and Graph Runtimes documents context, evidence or vocabulary for the research question \"How can software become explainable through its own knowledge graph?\".",
+      "memberOfCollection The research question \"How can software become explainable through its own knowledge graph?\" belongs to the Knowledge Hub Foundations collection for editorial navigation.",
+      "memberOfCollection The research question \"How can software become explainable through its own knowledge graph?\" belongs to the Knowledge Hub Third Wave collection for editorial navigation."
+    ],
+    "relatedEntityIds": [
+      "ea:project:vestiges",
+      "ea:project:voice-capture-studio",
+      "ea:program:vaste",
+      "ea:framework:electronic-artefacts-lightweight-template",
+      "ea:concept:knowledge-graph",
+      "ea:concept:graph-runtime",
+      "ea:concept:linked-data",
+      "ea:concept:metadata",
+      "ea:concept:entity-identity",
+      "ea:concept:provenance",
+      "ea:concept:hypertext",
+      "ea:concept:personal-knowledge-system",
+      "ea:technology:json-ld",
+      "ea:technology:rdf",
+      "ea:technology:web-animations",
+      "ea:publication:linked-data-and-public-knowledge-pages",
+      "ea:publication:knowledge-graphs-for-cultural-infrastructure",
+      "ea:publication:ai-search-structured-content-and-knowledge-graph-seo",
+      "ea:publication:why-graphs-are-more-powerful-than-folders",
+      "ea:publication:contextual-execution-and-graph-runtimes",
+      "ea:collection:knowledge-hub-foundations",
+      "ea:collection:knowledge-hub-third-wave"
+    ],
+    "status": "active",
+    "confidence": "validated",
+    "modifiedAt": "2026-07-09"
+  },
+  {
+    "id": "ea:researchQuestion:speech-dataset-reproducibility-fr",
+    "locale": "fr",
+    "route": "/fr/research/questions/speech-dataset-reproducibility/",
+    "type": "researchQuestion",
+    "title": "Comment les datasets vocaux peuvent-ils devenir reproductibles, structurés et privacy-first ?",
+    "alternateNames": [],
+    "abstract": "Cette question étudie comment l'enregistrement vocal dans le navigateur peut standardiser acquisition, métadonnées et revue tout en gardant la matière vocale privée sous contrôle local.",
+    "headings": [
+      "Observation",
+      "Problème",
+      "Hypothèse",
+      "Compréhension actuelle",
+      "Inconnues"
+    ],
+    "body": "Observation La matière vocale est souvent enregistrée avant que le dataset ait une structure. L’audio peut être utilisable sans que le profil locuteur, la version du prompt ou le manifeste d’export soient présents. Problème Le coût apparaît plus tard. Sans structure, le dataset devient difficile à auditer. Sans stockage local explicite, les promesses de confidentialité sont difficiles à inspecter. Hypothèse Un enregistreur navigateur peut agir comme un instrument de recherche léger. Il rend visibles état du micro, stockage, version du corpus, revue et export au moment de la capture. Compréhension actuelle L’outil d’enregistrement fait partie de la méthodologie du dataset. Il ne doit pas être traité comme un utilitaire interchangeable si ses choix déterminent ce qui peut être revu, réutilisé ou supprimé. Inconnues Les prochaines questions concernent l’échelle et la gouvernance : corpus multilingues, consentement, rapports qualité et évaluations aval. Les datasets vocaux sont souvent assemblés avec des outils hétérogènes, des dossiers libres et des métadonnées manquantes, ce qui rend la revue, le consentement et la reproduction difficiles. La qualité du dataset est souvent discutée après l'enregistrement, lorsque de nombreuses conditions importantes ont déjà disparu. La confidentialité devient aussi plus difficile à vérifier si l'outil masque le lieu de stockage de l'audio. Un workflow d'enregistrement dans le navigateur peut standardiser acquisition, états de revue, métadonnées et structure d'export sans logiciel propriétaire ni upload distant. Capturer les données est aussi important qu'entraîner les modèles. Un workflow vocal utile doit préserver prompt, locuteur, timing, qualité, revue et contexte d'export avant tout travail de modèle. La réponse logicielle immédiate est Voice Capture Studio : un enregistreur local-first dans le navigateur avec exports structurés et séparation explicite entre enregistrement et entraînement. Étendre les définitions de corpus en gardant source, version et langue explicites. Tester les exports avec des workflows de revue et d'alignement en aval. Définir des notes de consentement et de suppression qui restent attachées aux manifestes. Workspace local dans le navigateur active Voice Capture Studio garde les enregistrements dans le stockage local du navigateur ou dans des dossiers explicitement choisis, puis exporte une session structurée. Export WAV et métadonnées observed Le projet teste si audio, transcription, timing, qualité et manifestes peuvent former une seule sortie de session reproductible. 2026-02-01 Séparation du workflow dataset La recherche a séparé capture vocale et entraînement aval afin de concevoir directement la frontière de capture. 2026-07-09 Publication open source Voice Capture Studio devient la réponse logicielle publique et la source de preuve de la question.",
+    "tags": [
+      "Datasets vocaux",
+      "Confidentialité",
+      "Web Audio",
+      "Local First",
+      "Open Source"
+    ],
+    "questions": [
+      "Comment les datasets vocaux peuvent-ils devenir reproductibles, structurés et privacy-first ?",
+      "Un workflow d'enregistrement dans le navigateur peut standardiser acquisition, états de revue, métadonnées et structure d'export sans logiciel propriétaire ni upload distant."
+    ],
+    "relationLabels": [
+      "implementedBy Voice Capture Studio is listed as a current software or project answer for the research question \"How can speech datasets become reproducible, structured and privacy-first?\".",
+      "implementedBy ORETH is listed as a current software or project answer for the research question \"How can speech datasets become reproducible, structured and privacy-first?\".",
+      "implementedBy Electronic Artefacts Lightweight Template is listed as a current software or project answer for the research question \"How can speech datasets become reproducible, structured and privacy-first?\".",
+      "appliesConcept The research question \"How can speech datasets become reproducible, structured and privacy-first?\" applies Speech Datasets as part of its current model.",
+      "appliesConcept The research question \"How can speech datasets become reproducible, structured and privacy-first?\" applies Speech Recording as part of its current model.",
+      "appliesConcept The research question \"How can speech datasets become reproducible, structured and privacy-first?\" applies Voice Technology as part of its current model.",
+      "appliesConcept The research question \"How can speech datasets become reproducible, structured and privacy-first?\" applies Metadata as part of its current model.",
+      "appliesConcept The research question \"How can speech datasets become reproducible, structured and privacy-first?\" applies Provenance as part of its current model.",
+      "appliesConcept The research question \"How can speech datasets become reproducible, structured and privacy-first?\" applies Machine Learning Workflows as part of its current model.",
+      "appliesConcept The research question \"How can speech datasets become reproducible, structured and privacy-first?\" applies Browser Software as part of its current model.",
+      "appliesConcept The research question \"How can speech datasets become reproducible, structured and privacy-first?\" applies Open Source as part of its current model.",
+      "usesTechnology The research question \"How can speech datasets become reproducible, structured and privacy-first?\" uses Web Audio API as a relevant technical reference.",
+      "usesTechnology The research question \"How can speech datasets become reproducible, structured and privacy-first?\" uses WebNN as a relevant technical reference.",
+      "documents Web Audio and Browser-Based Sound Systems documents context, evidence or vocabulary for the research question \"How can speech datasets become reproducible, structured and privacy-first?\".",
+      "documents Local and Open Source AI Systems documents context, evidence or vocabulary for the research question \"How can speech datasets become reproducible, structured and privacy-first?\".",
+      "documents Open Source as Cultural Infrastructure documents context, evidence or vocabulary for the research question \"How can speech datasets become reproducible, structured and privacy-first?\".",
+      "documents WebNN and Local AI in the Browser documents context, evidence or vocabulary for the research question \"How can speech datasets become reproducible, structured and privacy-first?\".",
+      "memberOfCollection The research question \"How can speech datasets become reproducible, structured and privacy-first?\" belongs to the Voice Capture Studio Collection collection for editorial navigation."
+    ],
+    "relatedEntityIds": [
+      "ea:project:voice-capture-studio",
+      "ea:program:oreth",
+      "ea:framework:electronic-artefacts-lightweight-template",
+      "ea:concept:speech-datasets",
+      "ea:concept:speech-recording",
+      "ea:concept:voice-technology",
+      "ea:concept:metadata",
+      "ea:concept:provenance",
+      "ea:concept:machine-learning-workflows",
+      "ea:concept:browser-software",
+      "ea:concept:open-source",
+      "ea:technology:web-audio-api",
+      "ea:technology:webnn",
+      "ea:publication:web-audio-and-browser-based-sound-systems",
+      "ea:publication:local-and-open-source-ai-systems",
+      "ea:publication:open-source-as-cultural-infrastructure",
+      "ea:publication:webnn-and-local-ai-in-the-browser",
+      "ea:collection:voice-capture-studio"
+    ],
+    "status": "active",
+    "confidence": "published",
+    "modifiedAt": "2026-07-09"
   },
   {
     "id": "ea:technology:activitypub-fr",
@@ -6180,11 +6561,13 @@
     "questions": [],
     "relationLabels": [
       "usesTechnology AI Search, Structured Content and Knowledge Graph SEO uses JSON-LD as the structured data bridge between articles and graph records.",
-      "usesTechnology Linked Data and Public Knowledge Pages uses JSON-LD as the practical structured-data format for static knowledge pages."
+      "usesTechnology Linked Data and Public Knowledge Pages uses JSON-LD as the practical structured-data format for static knowledge pages.",
+      "usesTechnology The research question \"How can software become explainable through its own knowledge graph?\" uses JSON-LD as a relevant technical reference."
     ],
     "relatedEntityIds": [
       "ea:publication:ai-search-structured-content-and-knowledge-graph-seo",
-      "ea:publication:linked-data-and-public-knowledge-pages"
+      "ea:publication:linked-data-and-public-knowledge-pages",
+      "ea:researchQuestion:self-explaining-knowledge-graph-software"
     ],
     "status": "active",
     "confidence": "published",
@@ -6250,13 +6633,15 @@
       "documents Model Context Protocol and Tool-Using AI Systems documents MCP as a capability protocol for AI tools, prompts and resources.",
       "usesTechnology Observability for AI Agents and Tool-Calling Systems uses MCP as the reference capability surface for tool telemetry.",
       "integratesWith VASTE can integrate with MCP as a scoped interface for graph resources, prompts and controlled tools.",
-      "usesTechnology Prompt Injection and Trust Boundaries in AI Knowledge Systems uses MCP as a reference surface for resources, tools and host-side consent."
+      "usesTechnology Prompt Injection and Trust Boundaries in AI Knowledge Systems uses MCP as a reference surface for resources, tools and host-side consent.",
+      "usesTechnology The research question \"How can an AI understand someone during its very first conversation?\" uses Model Context Protocol as a relevant technical reference."
     ],
     "relatedEntityIds": [
       "ea:publication:model-context-protocol-and-tool-using-ai-systems",
       "ea:publication:observability-for-ai-agents-and-tool-calling-systems",
       "ea:program:vaste",
-      "ea:publication:prompt-injection-and-trust-boundaries-in-ai-knowledge-systems"
+      "ea:publication:prompt-injection-and-trust-boundaries-in-ai-knowledge-systems",
+      "ea:researchQuestion:first-conversation-understanding"
     ],
     "status": "active",
     "confidence": "canonical",
@@ -6353,11 +6738,13 @@
     "questions": [],
     "relationLabels": [
       "usesTechnology Knowledge Graphs for Cultural Infrastructure uses RDF as the reference model for graph statements and resources.",
-      "usesTechnology Linked Data and Public Knowledge Pages uses RDF as the underlying graph-data reference for Linked Data."
+      "usesTechnology Linked Data and Public Knowledge Pages uses RDF as the underlying graph-data reference for Linked Data.",
+      "usesTechnology The research question \"How can software become explainable through its own knowledge graph?\" uses RDF as a relevant technical reference."
     ],
     "relatedEntityIds": [
       "ea:publication:knowledge-graphs-for-cultural-infrastructure",
-      "ea:publication:linked-data-and-public-knowledge-pages"
+      "ea:publication:linked-data-and-public-knowledge-pages",
+      "ea:researchQuestion:self-explaining-knowledge-graph-software"
     ],
     "status": "active",
     "confidence": "published",
@@ -6481,10 +6868,12 @@
     ],
     "questions": [],
     "relationLabels": [
-      "usesTechnology Motion Design, Time and Interface Semantics uses Web Animations as its main web timing reference."
+      "usesTechnology Motion Design, Time and Interface Semantics uses Web Animations as its main web timing reference.",
+      "usesTechnology The research question \"How can software become explainable through its own knowledge graph?\" uses Web Animations as a relevant technical reference."
     ],
     "relatedEntityIds": [
-      "ea:publication:motion-design-time-and-interface-semantics"
+      "ea:publication:motion-design-time-and-interface-semantics",
+      "ea:researchQuestion:self-explaining-knowledge-graph-software"
     ],
     "status": "active",
     "confidence": "validated",
@@ -6513,11 +6902,15 @@
     "questions": [],
     "relationLabels": [
       "usesTechnology Web Audio and Browser-Based Sound Systems uses the Web Audio API as its main browser audio reference.",
-      "usesTechnology Voice Capture Studio uses the Web Audio API for browser-local microphone capture and recording workflows."
+      "usesTechnology Voice Capture Studio uses the Web Audio API for browser-local microphone capture and recording workflows.",
+      "usesTechnology The research question \"How can an AI understand someone during its very first conversation?\" uses Web Audio API as a relevant technical reference.",
+      "usesTechnology The research question \"How can speech datasets become reproducible, structured and privacy-first?\" uses Web Audio API as a relevant technical reference."
     ],
     "relatedEntityIds": [
       "ea:publication:web-audio-and-browser-based-sound-systems",
-      "ea:project:voice-capture-studio"
+      "ea:project:voice-capture-studio",
+      "ea:researchQuestion:first-conversation-understanding",
+      "ea:researchQuestion:speech-dataset-reproducibility"
     ],
     "status": "active",
     "confidence": "canonical",
@@ -6579,10 +6972,14 @@
     ],
     "questions": [],
     "relationLabels": [
-      "documents WebNN and Local AI in the Browser documents WebNN as browser-local inference infrastructure."
+      "documents WebNN and Local AI in the Browser documents WebNN as browser-local inference infrastructure.",
+      "usesTechnology The research question \"How can an AI understand someone during its very first conversation?\" uses WebNN as a relevant technical reference.",
+      "usesTechnology The research question \"How can speech datasets become reproducible, structured and privacy-first?\" uses WebNN as a relevant technical reference."
     ],
     "relatedEntityIds": [
-      "ea:publication:webnn-and-local-ai-in-the-browser"
+      "ea:publication:webnn-and-local-ai-in-the-browser",
+      "ea:researchQuestion:first-conversation-understanding",
+      "ea:researchQuestion:speech-dataset-reproducibility"
     ],
     "status": "active",
     "confidence": "canonical",
@@ -6613,8 +7010,14 @@
       "Front-end Framework"
     ],
     "questions": [],
-    "relationLabels": [],
-    "relatedEntityIds": [],
+    "relationLabels": [
+      "implementedBy Electronic Artefacts Lightweight Template is listed as a current software or project answer for the research question \"How can software become explainable through its own knowledge graph?\".",
+      "implementedBy Electronic Artefacts Lightweight Template is listed as a current software or project answer for the research question \"How can speech datasets become reproducible, structured and privacy-first?\"."
+    ],
+    "relatedEntityIds": [
+      "ea:researchQuestion:self-explaining-knowledge-graph-software",
+      "ea:researchQuestion:speech-dataset-reproducibility"
+    ],
     "status": "active",
     "confidence": "published",
     "modifiedAt": "2026-06-26"
@@ -6698,7 +7101,9 @@
       "documents Web Audio and Browser-Based Sound Systems links ORETH to public sound tools and browser-native audio research.",
       "documents Algorithmic Composition and Rule-Based Music links ORETH to audio analysis and generative musical exploration.",
       "documents Multimodal AI Across Text, Image, Audio and Video connects ORETH to audio and cross-modal analysis.",
-      "appliesConcept ORETH provides an applied context for connecting audio analysis with visual, textual and archival records."
+      "appliesConcept ORETH provides an applied context for connecting audio analysis with visual, textual and archival records.",
+      "implementedBy ORETH is listed as a current software or project answer for the research question \"How can an AI understand someone during its very first conversation?\".",
+      "implementedBy ORETH is listed as a current software or project answer for the research question \"How can speech datasets become reproducible, structured and privacy-first?\"."
     ],
     "relatedEntityIds": [
       "ea:project:palimpsests",
@@ -6709,7 +7114,9 @@
       "ea:publication:web-audio-and-browser-based-sound-systems",
       "ea:publication:algorithmic-composition-and-rule-based-music",
       "ea:publication:multimodal-ai-across-text-image-audio-and-video",
-      "ea:concept:multimodal-ai"
+      "ea:concept:multimodal-ai",
+      "ea:researchQuestion:first-conversation-understanding",
+      "ea:researchQuestion:speech-dataset-reproducibility"
     ],
     "status": "prototype",
     "confidence": "observed",
@@ -6768,7 +7175,9 @@
       "appliesConcept VASTE applies the graph-runtime concept through addressable entities, typed relationships, identity, context and event execution.",
       "derivedFrom VASTE derives its runtime primitives and contextual execution questions from the Runtime Theory research field.",
       "poweredBy Vestiges uses VASTE as its graph runtime and contextual execution foundation.",
-      "maintainedBy Electronic Artefacts develops and maintains the VASTE program."
+      "maintainedBy Electronic Artefacts develops and maintains the VASTE program.",
+      "implementedBy VASTE is listed as a current software or project answer for the research question \"How can an AI understand someone during its very first conversation?\".",
+      "implementedBy VASTE is listed as a current software or project answer for the research question \"How can software become explainable through its own knowledge graph?\"."
     ],
     "relatedEntityIds": [
       "ea:publication:foundational-lineage-001",
@@ -6793,7 +7202,9 @@
       "ea:concept:graph-runtime",
       "ea:researchField:runtime-theory",
       "ea:project:vestiges",
-      "ea:organization:electronic-artefacts"
+      "ea:organization:electronic-artefacts",
+      "ea:researchQuestion:first-conversation-understanding",
+      "ea:researchQuestion:self-explaining-knowledge-graph-software"
     ],
     "status": "development",
     "confidence": "published",
@@ -6899,7 +7310,9 @@
       "poweredBy Vestiges uses VASTE as its graph runtime and contextual execution foundation.",
       "appliesConcept Vestiges applies graph-runtime principles to cultural, craft and human-knowledge infrastructure.",
       "evidencedBy Foundational Lineage",
-      "createdBy Electronic Artefacts created Vestiges as the flagship public application of VASTE."
+      "createdBy Electronic Artefacts created Vestiges as the flagship public application of VASTE.",
+      "implementedBy Vestiges is listed as a current software or project answer for the research question \"How can an AI understand someone during its very first conversation?\".",
+      "implementedBy Vestiges is listed as a current software or project answer for the research question \"How can software become explainable through its own knowledge graph?\"."
     ],
     "relatedEntityIds": [
       "ea:publication:iiif-and-compound-cultural-objects",
@@ -6917,7 +7330,9 @@
       "ea:program:vaste",
       "ea:concept:graph-runtime",
       "ea:publication:foundational-lineage-001",
-      "ea:organization:electronic-artefacts"
+      "ea:organization:electronic-artefacts",
+      "ea:researchQuestion:first-conversation-understanding",
+      "ea:researchQuestion:self-explaining-knowledge-graph-software"
     ],
     "status": "development",
     "confidence": "observed",
@@ -6976,7 +7391,10 @@
       "appliesConcept Voice Capture Studio applies metadata discipline by attaching transcript, timing, intent, quality and manifest information to recorded takes.",
       "appliesConcept Voice Capture Studio applies provenance concerns by keeping prompt identifiers, corpus versions, speaker context and export manifests visible.",
       "appliesConcept Voice Capture Studio applies HCI principles by making recording modes, environment checks, local storage and quality gates visible before capture.",
-      "usesTechnology Voice Capture Studio uses the Web Audio API for browser-local microphone capture and recording workflows."
+      "usesTechnology Voice Capture Studio uses the Web Audio API for browser-local microphone capture and recording workflows.",
+      "implementedBy Voice Capture Studio is listed as a current software or project answer for the research question \"How can an AI understand someone during its very first conversation?\".",
+      "implementedBy Voice Capture Studio is listed as a current software or project answer for the research question \"How can software become explainable through its own knowledge graph?\".",
+      "implementedBy Voice Capture Studio is listed as a current software or project answer for the research question \"How can speech datasets become reproducible, structured and privacy-first?\"."
     ],
     "relatedEntityIds": [
       "ea:organization:electronic-artefacts",
@@ -6995,7 +7413,10 @@
       "ea:concept:metadata",
       "ea:concept:provenance",
       "ea:concept:human-computer-interaction",
-      "ea:technology:web-audio-api"
+      "ea:technology:web-audio-api",
+      "ea:researchQuestion:first-conversation-understanding",
+      "ea:researchQuestion:self-explaining-knowledge-graph-software",
+      "ea:researchQuestion:speech-dataset-reproducibility"
     ],
     "status": "active",
     "confidence": "published",
@@ -7048,14 +7469,16 @@
       "documents AI Agents vs AI Workflows connects agent permissions to contextual execution.",
       "documents AI Agents vs AI Workflows distinguishes bounded agents from broader autonomous systems.",
       "documents AI Agents vs AI Workflows uses VASTE as a context for identity-aware agent permissions.",
-      "hasPart Knowledge Hub Third Wave includes AI Agents vs AI Workflows."
+      "hasPart Knowledge Hub Third Wave includes AI Agents vs AI Workflows.",
+      "documents AI Agents vs AI Workflows documents context, evidence or vocabulary for the research question \"How can an AI understand someone during its very first conversation?\"."
     ],
     "relatedEntityIds": [
       "ea:concept:ai-agent",
       "ea:concept:contextual-execution",
       "ea:concept:autonomous-system",
       "ea:program:vaste",
-      "ea:collection:knowledge-hub-third-wave"
+      "ea:collection:knowledge-hub-third-wave",
+      "ea:researchQuestion:first-conversation-understanding"
     ],
     "status": "active",
     "confidence": "published",
@@ -7105,14 +7528,16 @@
       "documents AI Search, Structured Content and Knowledge Graph SEO explains how Linked Data supports crawlable, machine-readable public knowledge pages.",
       "usesTechnology AI Search, Structured Content and Knowledge Graph SEO uses JSON-LD as the structured data bridge between articles and graph records.",
       "documents AI Search, Structured Content and Knowledge Graph SEO connects AI search visibility to retrieval-augmented generation patterns.",
-      "memberOfCollection AI Search, Structured Content and Knowledge Graph SEO is part of the fourth Knowledge Hub wave."
+      "memberOfCollection AI Search, Structured Content and Knowledge Graph SEO is part of the fourth Knowledge Hub wave.",
+      "documents AI Search, Structured Content and Knowledge Graph SEO documents context, evidence or vocabulary for the research question \"How can software become explainable through its own knowledge graph?\"."
     ],
     "relatedEntityIds": [
       "ea:concept:knowledge-graph",
       "ea:concept:linked-data",
       "ea:technology:json-ld",
       "ea:concept:retrieval-augmented-generation",
-      "ea:collection:knowledge-hub-fourth-wave"
+      "ea:collection:knowledge-hub-fourth-wave",
+      "ea:researchQuestion:self-explaining-knowledge-graph-software"
     ],
     "status": "active",
     "confidence": "published",
@@ -7282,14 +7707,16 @@
       "documents Contextual Execution and Graph Runtimes explains how contextual execution extends the graph-runtime concept.",
       "documents Contextual Execution and Graph Runtimes connects contextual execution to Runtime Theory.",
       "documents Contextual Execution and Graph Runtimes uses VASTE as the program context for graph runtime execution.",
-      "hasPart Knowledge Hub Foundations includes Contextual Execution and Graph Runtimes as a foundation article."
+      "hasPart Knowledge Hub Foundations includes Contextual Execution and Graph Runtimes as a foundation article.",
+      "documents Contextual Execution and Graph Runtimes documents context, evidence or vocabulary for the research question \"How can software become explainable through its own knowledge graph?\"."
     ],
     "relatedEntityIds": [
       "ea:concept:contextual-execution",
       "ea:concept:graph-runtime",
       "ea:researchField:runtime-theory",
       "ea:program:vaste",
-      "ea:collection:knowledge-hub-foundations"
+      "ea:collection:knowledge-hub-foundations",
+      "ea:researchQuestion:self-explaining-knowledge-graph-software"
     ],
     "status": "active",
     "confidence": "published",
@@ -7755,14 +8182,16 @@
       "documents Human Computer Interaction for Creative Tools connects interface design to augmented intelligence.",
       "documents Human Computer Interaction for Creative Tools links feedback and state communication to motion design.",
       "documents Human Computer Interaction for Creative Tools uses VASTE as a context for graph-aware creative systems.",
-      "hasPart Knowledge Hub Second Wave includes Human Computer Interaction for Creative Tools as a core article."
+      "hasPart Knowledge Hub Second Wave includes Human Computer Interaction for Creative Tools as a core article.",
+      "documents Human Computer Interaction for Creative Tools documents context, evidence or vocabulary for the research question \"How can an AI understand someone during its very first conversation?\"."
     ],
     "relatedEntityIds": [
       "ea:concept:human-computer-interaction",
       "ea:concept:augmented-intelligence",
       "ea:concept:motion-design",
       "ea:program:vaste",
-      "ea:collection:knowledge-hub-second-wave"
+      "ea:collection:knowledge-hub-second-wave",
+      "ea:researchQuestion:first-conversation-understanding"
     ],
     "status": "active",
     "confidence": "published",
@@ -7924,7 +8353,8 @@
       "documents Knowledge Graphs for Cultural Infrastructure frames provenance as a trust layer for cultural knowledge graphs.",
       "documents Knowledge Graphs for Cultural Infrastructure uses Vestiges as the applied cultural infrastructure example.",
       "usesTechnology Knowledge Graphs for Cultural Infrastructure uses RDF as the reference model for graph statements and resources.",
-      "hasPart Knowledge Hub Foundations includes Knowledge Graphs for Cultural Infrastructure as a foundation article."
+      "hasPart Knowledge Hub Foundations includes Knowledge Graphs for Cultural Infrastructure as a foundation article.",
+      "documents Knowledge Graphs for Cultural Infrastructure documents context, evidence or vocabulary for the research question \"How can software become explainable through its own knowledge graph?\"."
     ],
     "relatedEntityIds": [
       "ea:concept:knowledge-graph",
@@ -7932,7 +8362,8 @@
       "ea:concept:provenance",
       "ea:project:vestiges",
       "ea:technology:rdf",
-      "ea:collection:knowledge-hub-foundations"
+      "ea:collection:knowledge-hub-foundations",
+      "ea:researchQuestion:self-explaining-knowledge-graph-software"
     ],
     "status": "active",
     "confidence": "published",
@@ -7982,14 +8413,16 @@
       "documents Linked Data and Public Knowledge Pages explains the difference between page URLs and entity identifiers.",
       "usesTechnology Linked Data and Public Knowledge Pages uses JSON-LD as the practical structured-data format for static knowledge pages.",
       "usesTechnology Linked Data and Public Knowledge Pages uses RDF as the underlying graph-data reference for Linked Data.",
-      "hasPart Knowledge Hub Foundations includes Linked Data and Public Knowledge Pages as a foundation article."
+      "hasPart Knowledge Hub Foundations includes Linked Data and Public Knowledge Pages as a foundation article.",
+      "documents Linked Data and Public Knowledge Pages documents context, evidence or vocabulary for the research question \"How can software become explainable through its own knowledge graph?\"."
     ],
     "relatedEntityIds": [
       "ea:concept:linked-data",
       "ea:concept:entity-identity",
       "ea:technology:json-ld",
       "ea:technology:rdf",
-      "ea:collection:knowledge-hub-foundations"
+      "ea:collection:knowledge-hub-foundations",
+      "ea:researchQuestion:self-explaining-knowledge-graph-software"
     ],
     "status": "active",
     "confidence": "published",
@@ -8044,14 +8477,16 @@
       "documents Local and Open Source AI Systems applies open-source principles to AI infrastructure and licensing.",
       "usesTechnology Local and Open Source AI Systems uses llama.cpp as a reference local inference runtime.",
       "documents Local and Open Source AI Systems connects model deployment to provenance and reproducibility.",
-      "hasPart Knowledge Hub Third Wave includes Local and Open Source AI Systems."
+      "hasPart Knowledge Hub Third Wave includes Local and Open Source AI Systems.",
+      "documents Local and Open Source AI Systems documents context, evidence or vocabulary for the research question \"How can speech datasets become reproducible, structured and privacy-first?\"."
     ],
     "relatedEntityIds": [
       "ea:concept:open-weight-model",
       "ea:concept:open-source",
       "ea:technology:llama-cpp",
       "ea:concept:provenance",
-      "ea:collection:knowledge-hub-third-wave"
+      "ea:collection:knowledge-hub-third-wave",
+      "ea:researchQuestion:speech-dataset-reproducibility"
     ],
     "status": "active",
     "confidence": "published",
@@ -8231,14 +8666,16 @@
       "documents Model Context Protocol and Tool-Using AI Systems explains how MCP relates to AI agents and deterministic workflows.",
       "documents Model Context Protocol and Tool-Using AI Systems connects MCP permissions to contextual execution boundaries.",
       "documents Model Context Protocol and Tool-Using AI Systems uses VASTE as the graph-runtime context for scoped AI tools.",
-      "memberOfCollection Model Context Protocol and Tool-Using AI Systems is part of the fourth Knowledge Hub wave."
+      "memberOfCollection Model Context Protocol and Tool-Using AI Systems is part of the fourth Knowledge Hub wave.",
+      "documents Model Context Protocol and Tool-Using AI Systems documents context, evidence or vocabulary for the research question \"How can an AI understand someone during its very first conversation?\"."
     ],
     "relatedEntityIds": [
       "ea:technology:model-context-protocol",
       "ea:concept:ai-agent",
       "ea:concept:contextual-execution",
       "ea:program:vaste",
-      "ea:collection:knowledge-hub-fourth-wave"
+      "ea:collection:knowledge-hub-fourth-wave",
+      "ea:researchQuestion:first-conversation-understanding"
     ],
     "status": "active",
     "confidence": "published",
@@ -8546,14 +8983,16 @@
       "documents Open Source as Cultural Infrastructure connects open source to creative coding tools and pedagogy.",
       "documents Open Source as Cultural Infrastructure frames open collaboration as part of broader internet culture.",
       "documents Open Source as Cultural Infrastructure connects software access and maintenance to preservation concerns.",
-      "hasPart Knowledge Hub Second Wave includes Open Source as Cultural Infrastructure as a core article."
+      "hasPart Knowledge Hub Second Wave includes Open Source as Cultural Infrastructure as a core article.",
+      "documents Open Source as Cultural Infrastructure documents context, evidence or vocabulary for the research question \"How can speech datasets become reproducible, structured and privacy-first?\"."
     ],
     "relatedEntityIds": [
       "ea:concept:open-source",
       "ea:concept:creative-coding",
       "ea:concept:internet-culture",
       "ea:concept:digital-preservation",
-      "ea:collection:knowledge-hub-second-wave"
+      "ea:collection:knowledge-hub-second-wave",
+      "ea:researchQuestion:speech-dataset-reproducibility"
     ],
     "status": "active",
     "confidence": "published",
@@ -8911,7 +9350,8 @@
       "documents Retrieval-Augmented Generation and Knowledge Systems treats metadata as retrieval infrastructure.",
       "documents Retrieval-Augmented Generation and Knowledge Systems connects citations and source grounding to provenance.",
       "documents Retrieval-Augmented Generation and Knowledge Systems uses VASTE as a context for identity-aware graph retrieval.",
-      "hasPart Knowledge Hub Third Wave includes Retrieval-Augmented Generation and Knowledge Systems."
+      "hasPart Knowledge Hub Third Wave includes Retrieval-Augmented Generation and Knowledge Systems.",
+      "documents Retrieval-Augmented Generation and Knowledge Systems documents context, evidence or vocabulary for the research question \"How can an AI understand someone during its very first conversation?\"."
     ],
     "relatedEntityIds": [
       "ea:concept:retrieval-augmented-generation",
@@ -8919,7 +9359,8 @@
       "ea:concept:metadata",
       "ea:concept:provenance",
       "ea:program:vaste",
-      "ea:collection:knowledge-hub-third-wave"
+      "ea:collection:knowledge-hub-third-wave",
+      "ea:researchQuestion:first-conversation-understanding"
     ],
     "status": "active",
     "confidence": "published",
@@ -9285,14 +9726,16 @@
       "usesTechnology Web Audio and Browser-Based Sound Systems uses the Web Audio API as its main browser audio reference.",
       "documents Web Audio and Browser-Based Sound Systems connects browser sound tools to signal archaeology.",
       "documents Web Audio and Browser-Based Sound Systems links ORETH to public sound tools and browser-native audio research.",
-      "hasPart Knowledge Hub Second Wave includes Web Audio and Browser-Based Sound Systems as a core article."
+      "hasPart Knowledge Hub Second Wave includes Web Audio and Browser-Based Sound Systems as a core article.",
+      "documents Web Audio and Browser-Based Sound Systems documents context, evidence or vocabulary for the research question \"How can speech datasets become reproducible, structured and privacy-first?\"."
     ],
     "relatedEntityIds": [
       "ea:concept:web-audio",
       "ea:technology:web-audio-api",
       "ea:concept:signal-archaeology",
       "ea:program:oreth",
-      "ea:collection:knowledge-hub-second-wave"
+      "ea:collection:knowledge-hub-second-wave",
+      "ea:researchQuestion:speech-dataset-reproducibility"
     ],
     "status": "active",
     "confidence": "published",
@@ -9342,13 +9785,15 @@
       "documents WebNN and Local AI in the Browser documents WebNN as browser-local inference infrastructure.",
       "documents WebNN and Local AI in the Browser links WebNN to multimodal browser interfaces and local perception tasks.",
       "documents WebNN and Local AI in the Browser frames local inference as a human-computer interaction design problem.",
-      "memberOfCollection WebNN and Local AI in the Browser is part of the fourth Knowledge Hub wave."
+      "memberOfCollection WebNN and Local AI in the Browser is part of the fourth Knowledge Hub wave.",
+      "documents WebNN and Local AI in the Browser documents context, evidence or vocabulary for the research question \"How can speech datasets become reproducible, structured and privacy-first?\"."
     ],
     "relatedEntityIds": [
       "ea:technology:webnn",
       "ea:concept:multimodal-ai",
       "ea:concept:human-computer-interaction",
-      "ea:collection:knowledge-hub-fourth-wave"
+      "ea:collection:knowledge-hub-fourth-wave",
+      "ea:researchQuestion:speech-dataset-reproducibility"
     ],
     "status": "active",
     "confidence": "published",
@@ -9406,7 +9851,8 @@
       "documents Why Graphs Are More Powerful Than Folders explains why entity identity should survive path changes.",
       "documents Why Graphs Are More Powerful Than Folders uses VASTE as a graph-runtime application.",
       "documents Why Graphs Are More Powerful Than Folders uses Vestiges as a cultural graph case.",
-      "hasPart Knowledge Hub Third Wave includes Why Graphs Are More Powerful Than Folders."
+      "hasPart Knowledge Hub Third Wave includes Why Graphs Are More Powerful Than Folders.",
+      "documents Why Graphs Are More Powerful Than Folders documents context, evidence or vocabulary for the research question \"How can software become explainable through its own knowledge graph?\"."
     ],
     "relatedEntityIds": [
       "ea:concept:graph-modeling",
@@ -9414,7 +9860,8 @@
       "ea:concept:entity-identity",
       "ea:program:vaste",
       "ea:project:vestiges",
-      "ea:collection:knowledge-hub-third-wave"
+      "ea:collection:knowledge-hub-third-wave",
+      "ea:researchQuestion:self-explaining-knowledge-graph-software"
     ],
     "status": "active",
     "confidence": "published",
@@ -9465,6 +9912,229 @@
     "status": "active",
     "confidence": "validated",
     "modifiedAt": "2026-06-22"
+  },
+  {
+    "id": "ea:researchQuestion:first-conversation-understanding",
+    "locale": "en",
+    "route": "/research/questions/first-conversation-understanding/",
+    "type": "researchQuestion",
+    "title": "How can an AI understand someone during its very first conversation?",
+    "alternateNames": [],
+    "abstract": "This research question studies whether conversational onboarding can build a reliable first model of a person without reducing intent, uncertainty and context to a static form.",
+    "headings": [
+      "Observation",
+      "Problem",
+      "Hypothesis",
+      "Current Understanding",
+      "Unknowns"
+    ],
+    "body": "Observation Forms are useful when the system already knows the categories it needs. They are weaker when the person is still clarifying what they mean, what they need and what should remain uncertain. Problem The first conversation with a system carries more information than a form submission. It can reveal priority, vocabulary, hesitation, constraints and a working theory of the situation. If that material is flattened too early, the system may appear efficient while losing the context that would make it useful. Hypothesis Conversation can become an onboarding protocol when it produces inspectable claims. The system should not claim to understand a person after a short exchange. It should record what appears likely, what remains unknown and what needs confirmation. Current Understanding The current answer is a graph-shaped one. First-contact understanding should produce entities, relations and confidence levels that can be revised. Software such as VASTE provides the conceptual runtime for that model, while Voice Capture Studio tests one sensitive input channel: voice. Unknowns The unresolved questions are practical. How much context should be persisted? Which signals are too ambiguous to store? How should a user correct the system’s first interpretation? How can this remain useful without turning conversation into surveillance? Forms collect answers, but they often fail to capture intent, uncertainty, vocabulary, changing context and the reasons a person gives for acting now. A system that starts from rigid fields can mistake compliance for understanding. The first interaction should preserve enough ambiguity for later correction instead of forcing premature classification. Conversation itself can become the onboarding protocol when the system treats each exchange as evidence, not merely as input for a profile form. Understanding should emerge progressively. A first conversation can identify provisional entities, goals, constraints, risks and unknowns, then keep those claims revisable as more evidence arrives. The strongest result so far is architectural rather than model-centric. The useful object is a provisional graph of claims, constraints and signals that can be inspected and revised. Define a minimal schema for first-conversation claims and uncertainty levels. Test how voice, text and metadata should be separated before downstream machine-learning work. Decide which claims are safe to persist and which should expire unless confirmed. Conversational brief capture active Contact and discovery flows are treated as structured conversations that identify intent, pathway, missing context and useful next questions. Voice context capture observed Voice Capture Studio tests how speech capture can preserve transcript, timing, speaker and quality metadata without sending recordings to a remote service. 2026-01-01 Research framing The question was separated from generic AI onboarding and reframed around first-contact understanding. 2026-07-09 Homepage atlas integration The question became a first-class knowledge-graph record connected to current software and evidence.",
+    "tags": [
+      "Conversational Onboarding",
+      "AI Agents",
+      "Knowledge Graph",
+      "Speech",
+      "User Understanding"
+    ],
+    "questions": [
+      "How can an AI understand someone during its very first conversation?",
+      "Conversation itself can become the onboarding protocol when the system treats each exchange as evidence, not merely as input for a profile form."
+    ],
+    "relationLabels": [
+      "implementedBy Voice Capture Studio is listed as a current software or project answer for the research question \"How can an AI understand someone during its very first conversation?\".",
+      "implementedBy Vestiges is listed as a current software or project answer for the research question \"How can an AI understand someone during its very first conversation?\".",
+      "implementedBy VASTE is listed as a current software or project answer for the research question \"How can an AI understand someone during its very first conversation?\".",
+      "implementedBy ORETH is listed as a current software or project answer for the research question \"How can an AI understand someone during its very first conversation?\".",
+      "appliesConcept The research question \"How can an AI understand someone during its very first conversation?\" applies AI Agent as part of its current model.",
+      "appliesConcept The research question \"How can an AI understand someone during its very first conversation?\" applies Knowledge Graph as part of its current model.",
+      "appliesConcept The research question \"How can an AI understand someone during its very first conversation?\" applies Machine Learning Workflows as part of its current model.",
+      "appliesConcept The research question \"How can an AI understand someone during its very first conversation?\" applies Human Computer Interaction as part of its current model.",
+      "appliesConcept The research question \"How can an AI understand someone during its very first conversation?\" applies Contextual Execution as part of its current model.",
+      "appliesConcept The research question \"How can an AI understand someone during its very first conversation?\" applies Entity Identity as part of its current model.",
+      "appliesConcept The research question \"How can an AI understand someone during its very first conversation?\" applies Voice Technology as part of its current model.",
+      "usesTechnology The research question \"How can an AI understand someone during its very first conversation?\" uses Model Context Protocol as a relevant technical reference.",
+      "usesTechnology The research question \"How can an AI understand someone during its very first conversation?\" uses Web Audio API as a relevant technical reference.",
+      "usesTechnology The research question \"How can an AI understand someone during its very first conversation?\" uses WebNN as a relevant technical reference.",
+      "documents AI Agents vs AI Workflows documents context, evidence or vocabulary for the research question \"How can an AI understand someone during its very first conversation?\".",
+      "documents Retrieval-Augmented Generation and Knowledge Systems documents context, evidence or vocabulary for the research question \"How can an AI understand someone during its very first conversation?\".",
+      "documents Model Context Protocol and Tool-Using AI Systems documents context, evidence or vocabulary for the research question \"How can an AI understand someone during its very first conversation?\".",
+      "documents Human Computer Interaction for Creative Tools documents context, evidence or vocabulary for the research question \"How can an AI understand someone during its very first conversation?\".",
+      "memberOfCollection The research question \"How can an AI understand someone during its very first conversation?\" belongs to the Voice Capture Studio Collection collection for editorial navigation."
+    ],
+    "relatedEntityIds": [
+      "ea:project:voice-capture-studio",
+      "ea:project:vestiges",
+      "ea:program:vaste",
+      "ea:program:oreth",
+      "ea:concept:ai-agent",
+      "ea:concept:knowledge-graph",
+      "ea:concept:machine-learning-workflows",
+      "ea:concept:human-computer-interaction",
+      "ea:concept:contextual-execution",
+      "ea:concept:entity-identity",
+      "ea:concept:voice-technology",
+      "ea:technology:model-context-protocol",
+      "ea:technology:web-audio-api",
+      "ea:technology:webnn",
+      "ea:publication:ai-agents-vs-ai-workflows",
+      "ea:publication:retrieval-augmented-generation-and-knowledge-systems",
+      "ea:publication:model-context-protocol-and-tool-using-ai-systems",
+      "ea:publication:human-computer-interaction-for-creative-tools",
+      "ea:collection:voice-capture-studio"
+    ],
+    "status": "active",
+    "confidence": "observed",
+    "modifiedAt": "2026-07-09"
+  },
+  {
+    "id": "ea:researchQuestion:self-explaining-knowledge-graph-software",
+    "locale": "en",
+    "route": "/research/questions/self-explaining-knowledge-graph-software/",
+    "type": "researchQuestion",
+    "title": "How can software become explainable through its own knowledge graph?",
+    "alternateNames": [],
+    "abstract": "This research question studies whether software can explain its purpose, evidence, dependencies and limits through the same graph that generates its public pages and machine-readable records.",
+    "headings": [
+      "Observation",
+      "Problem",
+      "Hypothesis",
+      "Current Understanding",
+      "Unknowns"
+    ],
+    "body": "Observation Documentation drifts when it sits outside the system it describes. A static page can be accurate on the day it is written and misleading after a few structural changes. Problem Electronic Artefacts needs public software records that remain useful to people, search engines and future agents. That requires stable identifiers, typed relations, readable pages and machine-readable exports generated from the same source. Hypothesis A knowledge graph can become the documentation layer. If the graph records the entities, relations, sources and versions, then the public site can generate explanations instead of manually duplicating them. Current Understanding The graph does not remove editorial responsibility. It makes responsibility visible. A relation still needs judgment, but once accepted it can update pages, search, JSON-LD and local graph neighborhoods together. Unknowns The next problem is interface depth. The graph should be visible enough to support understanding without turning every page into an administrative console. Documentation quickly becomes outdated when it is separate from the entities, relations and routes that a software system actually uses. A project can have pages, JSON-LD, search data, relation exports and source files that disagree unless one structured graph acts as the authority layer. The knowledge graph itself can become the primary documentation layer when pages, identifiers, graph neighborhoods, search documents and relation panels are generated from the same source records. Explainability improves when the public interface exposes the graph instead of hiding it. A page should show what it is, what it connects to, what evidence supports it and where its claims remain limited. The site already demonstrates a partial answer. Its public HTML, identifiers, JSON-LD, search documents and local graph files are generated from typed records rather than maintained as separate explanations. Add more derived relation patterns while preserving editorial review. Make graph neighborhoods easier to inspect from public pages. Define what counts as enough evidence before a relation becomes canonical. Generated entity pages active The Electronic Artefacts site generates canonical pages, identifiers, JSON-LD, search documents and graph neighborhoods from typed Markdown records. Relationship panels observed Project, program, concept and publication pages expose typed relations so readers can inspect why records are connected. 2026-03-01 Documentation reframing The site architecture was reframed as a public graph rather than a set of manually maintained portfolio pages. 2026-07-09 Research-question entity added Research questions became graph entities, allowing projects and software to point back to the questions they test.",
+    "tags": [
+      "Knowledge Graph",
+      "Linked Data",
+      "Documentation",
+      "Explainable Software",
+      "Static Site Generation"
+    ],
+    "questions": [
+      "How can software become explainable through its own knowledge graph?",
+      "The knowledge graph itself can become the primary documentation layer when pages, identifiers, graph neighborhoods, search documents and relation panels are generated from the same source records."
+    ],
+    "relationLabels": [
+      "implementedBy Vestiges is listed as a current software or project answer for the research question \"How can software become explainable through its own knowledge graph?\".",
+      "implementedBy Voice Capture Studio is listed as a current software or project answer for the research question \"How can software become explainable through its own knowledge graph?\".",
+      "implementedBy VASTE is listed as a current software or project answer for the research question \"How can software become explainable through its own knowledge graph?\".",
+      "implementedBy Electronic Artefacts Lightweight Template is listed as a current software or project answer for the research question \"How can software become explainable through its own knowledge graph?\".",
+      "appliesConcept The research question \"How can software become explainable through its own knowledge graph?\" applies Knowledge Graph as part of its current model.",
+      "appliesConcept The research question \"How can software become explainable through its own knowledge graph?\" applies Graph Runtime as part of its current model.",
+      "appliesConcept The research question \"How can software become explainable through its own knowledge graph?\" applies Linked Data as part of its current model.",
+      "appliesConcept The research question \"How can software become explainable through its own knowledge graph?\" applies Metadata as part of its current model.",
+      "appliesConcept The research question \"How can software become explainable through its own knowledge graph?\" applies Entity Identity as part of its current model.",
+      "appliesConcept The research question \"How can software become explainable through its own knowledge graph?\" applies Provenance as part of its current model.",
+      "appliesConcept The research question \"How can software become explainable through its own knowledge graph?\" applies Hypertext as part of its current model.",
+      "appliesConcept The research question \"How can software become explainable through its own knowledge graph?\" applies Personal Knowledge System as part of its current model.",
+      "usesTechnology The research question \"How can software become explainable through its own knowledge graph?\" uses JSON-LD as a relevant technical reference.",
+      "usesTechnology The research question \"How can software become explainable through its own knowledge graph?\" uses RDF as a relevant technical reference.",
+      "usesTechnology The research question \"How can software become explainable through its own knowledge graph?\" uses Web Animations as a relevant technical reference.",
+      "documents Linked Data and Public Knowledge Pages documents context, evidence or vocabulary for the research question \"How can software become explainable through its own knowledge graph?\".",
+      "documents Knowledge Graphs for Cultural Infrastructure documents context, evidence or vocabulary for the research question \"How can software become explainable through its own knowledge graph?\".",
+      "documents AI Search, Structured Content and Knowledge Graph SEO documents context, evidence or vocabulary for the research question \"How can software become explainable through its own knowledge graph?\".",
+      "documents Why Graphs Are More Powerful Than Folders documents context, evidence or vocabulary for the research question \"How can software become explainable through its own knowledge graph?\".",
+      "documents Contextual Execution and Graph Runtimes documents context, evidence or vocabulary for the research question \"How can software become explainable through its own knowledge graph?\".",
+      "memberOfCollection The research question \"How can software become explainable through its own knowledge graph?\" belongs to the Knowledge Hub Foundations collection for editorial navigation.",
+      "memberOfCollection The research question \"How can software become explainable through its own knowledge graph?\" belongs to the Knowledge Hub Third Wave collection for editorial navigation."
+    ],
+    "relatedEntityIds": [
+      "ea:project:vestiges",
+      "ea:project:voice-capture-studio",
+      "ea:program:vaste",
+      "ea:framework:electronic-artefacts-lightweight-template",
+      "ea:concept:knowledge-graph",
+      "ea:concept:graph-runtime",
+      "ea:concept:linked-data",
+      "ea:concept:metadata",
+      "ea:concept:entity-identity",
+      "ea:concept:provenance",
+      "ea:concept:hypertext",
+      "ea:concept:personal-knowledge-system",
+      "ea:technology:json-ld",
+      "ea:technology:rdf",
+      "ea:technology:web-animations",
+      "ea:publication:linked-data-and-public-knowledge-pages",
+      "ea:publication:knowledge-graphs-for-cultural-infrastructure",
+      "ea:publication:ai-search-structured-content-and-knowledge-graph-seo",
+      "ea:publication:why-graphs-are-more-powerful-than-folders",
+      "ea:publication:contextual-execution-and-graph-runtimes",
+      "ea:collection:knowledge-hub-foundations",
+      "ea:collection:knowledge-hub-third-wave"
+    ],
+    "status": "active",
+    "confidence": "validated",
+    "modifiedAt": "2026-07-09"
+  },
+  {
+    "id": "ea:researchQuestion:speech-dataset-reproducibility",
+    "locale": "en",
+    "route": "/research/questions/speech-dataset-reproducibility/",
+    "type": "researchQuestion",
+    "title": "How can speech datasets become reproducible, structured and privacy-first?",
+    "alternateNames": [],
+    "abstract": "This research question studies how browser-based speech recording can standardize acquisition, metadata and review while keeping private voice material under local control.",
+    "headings": [
+      "Observation",
+      "Problem",
+      "Hypothesis",
+      "Current Understanding",
+      "Unknowns"
+    ],
+    "body": "Observation Speech material is often recorded before the dataset has a structure. A team may have usable audio, but not the speaker profile, prompt version, room condition, review state or export manifest needed to reproduce the work. Problem The cost appears later. Without structure, a dataset becomes difficult to audit. Without explicit local storage and export boundaries, privacy claims are hard to inspect. Hypothesis A browser recorder can behave like a small research instrument. It can make microphone state, storage, corpus version, review status and export structure visible at capture time. Current Understanding The recording tool is part of the dataset methodology. It should not be treated as a replaceable utility if its choices determine what can be reviewed, reused or deleted. Unknowns The next questions concern scale and governance. The studio still needs to test how multilingual corpora, consent notes, quality reports and downstream evaluation records should travel together without making the capture workflow heavy. Voice datasets are often assembled through inconsistent tools, loose folders and missing metadata, which makes later review, consent checking and reproduction difficult. Dataset quality is frequently discussed after recording, when many important conditions have already been lost. Privacy also becomes harder to reason about when capture tools hide where audio is stored. A browser-based recording workflow can standardize acquisition, review states, metadata and export structure without requiring proprietary desktop software or remote upload. Capturing data is as important as training models. A useful speech workflow should preserve prompt, speaker, timing, quality, review and export context before any downstream model work begins. The immediate software answer is Voice Capture Studio: a local-first browser recorder with structured export boundaries and explicit separation between recording and model training. Expand corpus definitions while keeping source, version and language context explicit. Test export packages against downstream review and alignment workflows. Define consent and deletion notes that remain attached to dataset manifests. Local browser workspace active Voice Capture Studio keeps recordings in browser-local storage or explicit user-selected folders, then exports structured session material. WAV and metadata export observed The project tests whether audio, transcript, timing, quality and manifest files can be treated as one reproducible capture-session output. 2026-02-01 Dataset workflow split The research separated speech capture from downstream model training so the capture boundary could be designed directly. 2026-07-09 Open-source project publication Voice Capture Studio became the public software answer and evidence source for the question.",
+    "tags": [
+      "Speech Datasets",
+      "Privacy",
+      "Web Audio",
+      "Local First",
+      "Open Source"
+    ],
+    "questions": [
+      "How can speech datasets become reproducible, structured and privacy-first?",
+      "A browser-based recording workflow can standardize acquisition, review states, metadata and export structure without requiring proprietary desktop software or remote upload."
+    ],
+    "relationLabels": [
+      "implementedBy Voice Capture Studio is listed as a current software or project answer for the research question \"How can speech datasets become reproducible, structured and privacy-first?\".",
+      "implementedBy ORETH is listed as a current software or project answer for the research question \"How can speech datasets become reproducible, structured and privacy-first?\".",
+      "implementedBy Electronic Artefacts Lightweight Template is listed as a current software or project answer for the research question \"How can speech datasets become reproducible, structured and privacy-first?\".",
+      "appliesConcept The research question \"How can speech datasets become reproducible, structured and privacy-first?\" applies Speech Datasets as part of its current model.",
+      "appliesConcept The research question \"How can speech datasets become reproducible, structured and privacy-first?\" applies Speech Recording as part of its current model.",
+      "appliesConcept The research question \"How can speech datasets become reproducible, structured and privacy-first?\" applies Voice Technology as part of its current model.",
+      "appliesConcept The research question \"How can speech datasets become reproducible, structured and privacy-first?\" applies Metadata as part of its current model.",
+      "appliesConcept The research question \"How can speech datasets become reproducible, structured and privacy-first?\" applies Provenance as part of its current model.",
+      "appliesConcept The research question \"How can speech datasets become reproducible, structured and privacy-first?\" applies Machine Learning Workflows as part of its current model.",
+      "appliesConcept The research question \"How can speech datasets become reproducible, structured and privacy-first?\" applies Browser Software as part of its current model.",
+      "appliesConcept The research question \"How can speech datasets become reproducible, structured and privacy-first?\" applies Open Source as part of its current model.",
+      "usesTechnology The research question \"How can speech datasets become reproducible, structured and privacy-first?\" uses Web Audio API as a relevant technical reference.",
+      "usesTechnology The research question \"How can speech datasets become reproducible, structured and privacy-first?\" uses WebNN as a relevant technical reference.",
+      "documents Web Audio and Browser-Based Sound Systems documents context, evidence or vocabulary for the research question \"How can speech datasets become reproducible, structured and privacy-first?\".",
+      "documents Local and Open Source AI Systems documents context, evidence or vocabulary for the research question \"How can speech datasets become reproducible, structured and privacy-first?\".",
+      "documents Open Source as Cultural Infrastructure documents context, evidence or vocabulary for the research question \"How can speech datasets become reproducible, structured and privacy-first?\".",
+      "documents WebNN and Local AI in the Browser documents context, evidence or vocabulary for the research question \"How can speech datasets become reproducible, structured and privacy-first?\".",
+      "memberOfCollection The research question \"How can speech datasets become reproducible, structured and privacy-first?\" belongs to the Voice Capture Studio Collection collection for editorial navigation."
+    ],
+    "relatedEntityIds": [
+      "ea:project:voice-capture-studio",
+      "ea:program:oreth",
+      "ea:framework:electronic-artefacts-lightweight-template",
+      "ea:concept:speech-datasets",
+      "ea:concept:speech-recording",
+      "ea:concept:voice-technology",
+      "ea:concept:metadata",
+      "ea:concept:provenance",
+      "ea:concept:machine-learning-workflows",
+      "ea:concept:browser-software",
+      "ea:concept:open-source",
+      "ea:technology:web-audio-api",
+      "ea:technology:webnn",
+      "ea:publication:web-audio-and-browser-based-sound-systems",
+      "ea:publication:local-and-open-source-ai-systems",
+      "ea:publication:open-source-as-cultural-infrastructure",
+      "ea:publication:webnn-and-local-ai-in-the-browser",
+      "ea:collection:voice-capture-studio"
+    ],
+    "status": "active",
+    "confidence": "published",
+    "modifiedAt": "2026-07-09"
   },
   {
     "id": "ea:technology:activitypub",
@@ -9648,11 +10318,13 @@
     "questions": [],
     "relationLabels": [
       "usesTechnology AI Search, Structured Content and Knowledge Graph SEO uses JSON-LD as the structured data bridge between articles and graph records.",
-      "usesTechnology Linked Data and Public Knowledge Pages uses JSON-LD as the practical structured-data format for static knowledge pages."
+      "usesTechnology Linked Data and Public Knowledge Pages uses JSON-LD as the practical structured-data format for static knowledge pages.",
+      "usesTechnology The research question \"How can software become explainable through its own knowledge graph?\" uses JSON-LD as a relevant technical reference."
     ],
     "relatedEntityIds": [
       "ea:publication:ai-search-structured-content-and-knowledge-graph-seo",
-      "ea:publication:linked-data-and-public-knowledge-pages"
+      "ea:publication:linked-data-and-public-knowledge-pages",
+      "ea:researchQuestion:self-explaining-knowledge-graph-software"
     ],
     "status": "active",
     "confidence": "published",
@@ -9716,13 +10388,15 @@
       "documents Model Context Protocol and Tool-Using AI Systems documents MCP as a capability protocol for AI tools, prompts and resources.",
       "usesTechnology Observability for AI Agents and Tool-Calling Systems uses MCP as the reference capability surface for tool telemetry.",
       "integratesWith VASTE can integrate with MCP as a scoped interface for graph resources, prompts and controlled tools.",
-      "usesTechnology Prompt Injection and Trust Boundaries in AI Knowledge Systems uses MCP as a reference surface for resources, tools and host-side consent."
+      "usesTechnology Prompt Injection and Trust Boundaries in AI Knowledge Systems uses MCP as a reference surface for resources, tools and host-side consent.",
+      "usesTechnology The research question \"How can an AI understand someone during its very first conversation?\" uses Model Context Protocol as a relevant technical reference."
     ],
     "relatedEntityIds": [
       "ea:publication:model-context-protocol-and-tool-using-ai-systems",
       "ea:publication:observability-for-ai-agents-and-tool-calling-systems",
       "ea:program:vaste",
-      "ea:publication:prompt-injection-and-trust-boundaries-in-ai-knowledge-systems"
+      "ea:publication:prompt-injection-and-trust-boundaries-in-ai-knowledge-systems",
+      "ea:researchQuestion:first-conversation-understanding"
     ],
     "status": "active",
     "confidence": "canonical",
@@ -9816,11 +10490,13 @@
     "questions": [],
     "relationLabels": [
       "usesTechnology Knowledge Graphs for Cultural Infrastructure uses RDF as the reference model for graph statements and resources.",
-      "usesTechnology Linked Data and Public Knowledge Pages uses RDF as the underlying graph-data reference for Linked Data."
+      "usesTechnology Linked Data and Public Knowledge Pages uses RDF as the underlying graph-data reference for Linked Data.",
+      "usesTechnology The research question \"How can software become explainable through its own knowledge graph?\" uses RDF as a relevant technical reference."
     ],
     "relatedEntityIds": [
       "ea:publication:knowledge-graphs-for-cultural-infrastructure",
-      "ea:publication:linked-data-and-public-knowledge-pages"
+      "ea:publication:linked-data-and-public-knowledge-pages",
+      "ea:researchQuestion:self-explaining-knowledge-graph-software"
     ],
     "status": "active",
     "confidence": "published",
@@ -9940,10 +10616,12 @@
     ],
     "questions": [],
     "relationLabels": [
-      "usesTechnology Motion Design, Time and Interface Semantics uses Web Animations as its main web timing reference."
+      "usesTechnology Motion Design, Time and Interface Semantics uses Web Animations as its main web timing reference.",
+      "usesTechnology The research question \"How can software become explainable through its own knowledge graph?\" uses Web Animations as a relevant technical reference."
     ],
     "relatedEntityIds": [
-      "ea:publication:motion-design-time-and-interface-semantics"
+      "ea:publication:motion-design-time-and-interface-semantics",
+      "ea:researchQuestion:self-explaining-knowledge-graph-software"
     ],
     "status": "active",
     "confidence": "validated",
@@ -9971,11 +10649,15 @@
     "questions": [],
     "relationLabels": [
       "usesTechnology Web Audio and Browser-Based Sound Systems uses the Web Audio API as its main browser audio reference.",
-      "usesTechnology Voice Capture Studio uses the Web Audio API for browser-local microphone capture and recording workflows."
+      "usesTechnology Voice Capture Studio uses the Web Audio API for browser-local microphone capture and recording workflows.",
+      "usesTechnology The research question \"How can an AI understand someone during its very first conversation?\" uses Web Audio API as a relevant technical reference.",
+      "usesTechnology The research question \"How can speech datasets become reproducible, structured and privacy-first?\" uses Web Audio API as a relevant technical reference."
     ],
     "relatedEntityIds": [
       "ea:publication:web-audio-and-browser-based-sound-systems",
-      "ea:project:voice-capture-studio"
+      "ea:project:voice-capture-studio",
+      "ea:researchQuestion:first-conversation-understanding",
+      "ea:researchQuestion:speech-dataset-reproducibility"
     ],
     "status": "active",
     "confidence": "canonical",
@@ -10035,10 +10717,14 @@
     ],
     "questions": [],
     "relationLabels": [
-      "documents WebNN and Local AI in the Browser documents WebNN as browser-local inference infrastructure."
+      "documents WebNN and Local AI in the Browser documents WebNN as browser-local inference infrastructure.",
+      "usesTechnology The research question \"How can an AI understand someone during its very first conversation?\" uses WebNN as a relevant technical reference.",
+      "usesTechnology The research question \"How can speech datasets become reproducible, structured and privacy-first?\" uses WebNN as a relevant technical reference."
     ],
     "relatedEntityIds": [
-      "ea:publication:webnn-and-local-ai-in-the-browser"
+      "ea:publication:webnn-and-local-ai-in-the-browser",
+      "ea:researchQuestion:first-conversation-understanding",
+      "ea:researchQuestion:speech-dataset-reproducibility"
     ],
     "status": "active",
     "confidence": "canonical",

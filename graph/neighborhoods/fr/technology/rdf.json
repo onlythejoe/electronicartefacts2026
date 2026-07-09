@@ -26,6 +26,14 @@
       "route": "/fr/publications/linked-data-and-public-knowledge-pages/",
       "status": "active",
       "confidence": "published"
+    },
+    {
+      "id": "ea:researchQuestion:self-explaining-knowledge-graph-software-fr",
+      "type": "researchQuestion",
+      "title": "Comment un logiciel peut-il devenir explicable par son propre graphe de connaissance ?",
+      "route": "/fr/research/questions/self-explaining-knowledge-graph-software/",
+      "status": "active",
+      "confidence": "validated"
     }
   ],
   "edges": [
@@ -46,6 +54,15 @@
       "label": "Uses technology",
       "statement": "Linked Data and Public Knowledge Pages uses RDF as the underlying graph-data reference for Linked Data.",
       "confidence": "published"
+    },
+    {
+      "id": "ear:self-explaining-knowledge-graph-software-uses-technology-rdf",
+      "source": "ea:researchQuestion:self-explaining-knowledge-graph-software-fr",
+      "target": "ea:technology:rdf-fr",
+      "predicate": "usesTechnology",
+      "label": "Uses technology",
+      "statement": "The research question \"How can software become explainable through its own knowledge graph?\" uses RDF as a relevant technical reference.",
+      "confidence": "validated"
     }
   ]
 }

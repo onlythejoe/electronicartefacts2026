@@ -21,6 +21,18 @@ const collectEntityRefs = (entity: Entity): EntityId[] => {
   if (entity.type === "publication") {
     refs.push(...entity.subjects.map((item) => item.id), ...(entity.evidence || []).map((item) => item.id));
   }
+  if (entity.type === "researchQuestion") {
+    refs.push(
+      ...(entity.relatedProjects || []).map((item) => item.id),
+      ...(entity.relatedSoftware || []).map((item) => item.id),
+      ...(entity.relatedArticles || []).map((item) => item.id),
+      ...(entity.relatedCollections || []).map((item) => item.id),
+      ...(entity.relatedConcepts || []).map((item) => item.id),
+      ...(entity.relatedTechnologies || []).map((item) => item.id),
+      ...(entity.experiments || []).flatMap((item) => (item.relatedEntities || []).map((ref) => ref.id)),
+      ...(entity.timeline || []).flatMap((item) => (item.relatedEntities || []).map((ref) => ref.id)),
+    );
+  }
   if (entity.type === "collection") {
     refs.push(...entity.curator.map((item) => item.id), ...entity.explicitMembers.map((item) => item.id));
   }

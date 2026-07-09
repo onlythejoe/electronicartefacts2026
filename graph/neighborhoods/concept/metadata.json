@@ -58,6 +58,22 @@
       "route": "/projects/voice-capture-studio/",
       "status": "active",
       "confidence": "published"
+    },
+    {
+      "id": "ea:researchQuestion:self-explaining-knowledge-graph-software",
+      "type": "researchQuestion",
+      "title": "How can software become explainable through its own knowledge graph?",
+      "route": "/research/questions/self-explaining-knowledge-graph-software/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:researchQuestion:speech-dataset-reproducibility",
+      "type": "researchQuestion",
+      "title": "How can speech datasets become reproducible, structured and privacy-first?",
+      "route": "/research/questions/speech-dataset-reproducibility/",
+      "status": "active",
+      "confidence": "published"
     }
   ],
   "edges": [
@@ -113,6 +129,24 @@
       "predicate": "appliesConcept",
       "label": "Applies concept",
       "statement": "Voice Capture Studio applies metadata discipline by attaching transcript, timing, intent, quality and manifest information to recorded takes.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:self-explaining-knowledge-graph-software-applies-concept-metadata",
+      "source": "ea:researchQuestion:self-explaining-knowledge-graph-software",
+      "target": "ea:concept:metadata",
+      "predicate": "appliesConcept",
+      "label": "Applies concept",
+      "statement": "The research question \"How can software become explainable through its own knowledge graph?\" applies Metadata as part of its current model.",
+      "confidence": "validated"
+    },
+    {
+      "id": "ear:speech-dataset-reproducibility-applies-concept-metadata",
+      "source": "ea:researchQuestion:speech-dataset-reproducibility",
+      "target": "ea:concept:metadata",
+      "predicate": "appliesConcept",
+      "label": "Applies concept",
+      "statement": "The research question \"How can speech datasets become reproducible, structured and privacy-first?\" applies Metadata as part of its current model.",
       "confidence": "published"
     }
   ]

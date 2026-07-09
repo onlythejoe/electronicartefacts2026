@@ -58,6 +58,14 @@
       "route": "/fr/archive/collections/knowledge-hub-third-wave/",
       "status": "active",
       "confidence": "published"
+    },
+    {
+      "id": "ea:researchQuestion:self-explaining-knowledge-graph-software-fr",
+      "type": "researchQuestion",
+      "title": "Comment un logiciel peut-il devenir explicable par son propre graphe de connaissance ?",
+      "route": "/fr/research/questions/self-explaining-knowledge-graph-software/",
+      "status": "active",
+      "confidence": "validated"
     }
   ],
   "edges": [
@@ -114,6 +122,15 @@
       "label": "Has part",
       "statement": "Knowledge Hub Third Wave includes Why Graphs Are More Powerful Than Folders.",
       "confidence": "published"
+    },
+    {
+      "id": "ear:why-graphs-are-more-powerful-than-folders-documents-self-explaining-knowledge-graph-software",
+      "source": "ea:publication:why-graphs-are-more-powerful-than-folders-fr",
+      "target": "ea:researchQuestion:self-explaining-knowledge-graph-software-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Why Graphs Are More Powerful Than Folders documents context, evidence or vocabulary for the research question \"How can software become explainable through its own knowledge graph?\".",
+      "confidence": "validated"
     }
   ]
 }

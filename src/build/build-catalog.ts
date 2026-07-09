@@ -12,6 +12,31 @@ export const buildCatalog = (entities: Entity[], relations: RelationStatement[],
   const publicRoutes = Object.fromEntries(
     routes.filter((route) => publicIds.has(route.id)).map((route) => [route.id, route.route]),
   );
+  const compactRefs = (refs?: Array<{ id: string; label?: string }>) =>
+    (refs || []).map((ref) => ({ id: ref.id, label: ref.label }));
+  const researchQuestionFields = (entity: Entity) => entity.type === "researchQuestion"
+    ? {
+        started: entity.started,
+        updated: entity.updated,
+        priority: entity.priority,
+        homepage: entity.homepage,
+        observation: entity.observation,
+        problem: entity.problem,
+        hypothesis: entity.hypothesis,
+        currentUnderstanding: entity.currentUnderstanding,
+        experiments: entity.experiments || [],
+        result: entity.result,
+        nextSteps: entity.nextSteps || [],
+        relatedProjects: compactRefs(entity.relatedProjects),
+        relatedSoftware: compactRefs(entity.relatedSoftware),
+        relatedArticles: compactRefs(entity.relatedArticles),
+        relatedCollections: compactRefs(entity.relatedCollections),
+        relatedConcepts: compactRefs(entity.relatedConcepts),
+        relatedTechnologies: compactRefs(entity.relatedTechnologies),
+        relatedRepositories: entity.relatedRepositories || [],
+        timeline: entity.timeline || [],
+      }
+    : {};
   return {
     schemaVersion: "1.0.0",
     entities: publicEntities.map((entity) => ({
@@ -36,6 +61,7 @@ export const buildCatalog = (entities: Entity[], relations: RelationStatement[],
       discipline: entity.disciplines || [],
       route: routeById[entity.id],
       identifier: routes.find((route) => route.id === entity.id)?.identifier,
+      ...researchQuestionFields(entity),
       temporality: {
         creationDate: entity.version.createdAt,
         lastUpdated: entity.version.modifiedAt,

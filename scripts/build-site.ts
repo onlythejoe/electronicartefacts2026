@@ -2,6 +2,7 @@ import { readFile } from "node:fs/promises";
 import path from "node:path";
 import { loadContent } from "../src/build/load-content.js";
 import { loadRelations } from "../src/build/load-relations.js";
+import { withDerivedRelations } from "../src/build/derive-relations.js";
 import { validateGraph } from "../src/build/validate-graph.js";
 import { buildRoutes } from "../src/build/build-routes.js";
 import { buildCatalog, isPublicEntity } from "../src/build/build-catalog.js";
@@ -31,7 +32,7 @@ import type { Locale } from "../src/schema/entity.js";
 const rootDir = path.resolve(".");
 const origin = "https://electronicartefacts.com";
 const entities = await loadContent(rootDir);
-const relations = await loadRelations(rootDir);
+const relations = withDerivedRelations(entities, await loadRelations(rootDir));
 validateGraph(entities, relations);
 const routes = buildRoutes(entities);
 const routeById = Object.fromEntries(routes.map((route) => [route.id, route.route]));
@@ -168,6 +169,7 @@ const hubCopy: Record<HubLocale, HubCopy> = {
       framework: "framework",
       technology: "technology",
       researchField: "research field",
+      researchQuestion: "research question",
       publication: "publication",
       project: "project",
       program: "program",
@@ -177,6 +179,7 @@ const hubCopy: Record<HubLocale, HubCopy> = {
       concept: "Definitions and durable terms",
       publication: "Research notes and articles",
       researchField: "Active research territories",
+      researchQuestion: "Active research questions",
       technology: "Protocols, tools and standards",
       method: "Repeatable studio procedures",
       framework: "Operational models",
@@ -210,6 +213,7 @@ const hubCopy: Record<HubLocale, HubCopy> = {
       framework: "cadre",
       technology: "technologie",
       researchField: "domaine de recherche",
+      researchQuestion: "question de recherche",
       publication: "publication",
       project: "projet",
       program: "programme",
@@ -219,6 +223,7 @@ const hubCopy: Record<HubLocale, HubCopy> = {
       concept: "Définitions et termes durables",
       publication: "Notes de recherche et articles",
       researchField: "Territoires de recherche actifs",
+      researchQuestion: "Questions de recherche actives",
       technology: "Protocoles, outils et standards",
       method: "Procédures de studio répétables",
       framework: "Modèles opérationnels",
@@ -452,19 +457,21 @@ ${hubCards(items, locale).trimStart()}
 
 const publicFrenchEntities = publicEntities.filter((entity) => entity.locale === "fr");
 
-await writeHub("/knowledge/", "Knowledge", "Canonical concepts, methods, frameworks, technologies, research fields and publications in the Electronic Artefacts graph.", publicDefaultLocaleEntities.filter((entity) => ["concept", "method", "framework", "technology", "researchField", "publication"].includes(entity.type)), "en");
+await writeHub("/knowledge/", "Knowledge", "Canonical concepts, methods, frameworks, technologies, research fields, research questions and publications in the Electronic Artefacts graph.", publicDefaultLocaleEntities.filter((entity) => ["concept", "method", "framework", "technology", "researchField", "researchQuestion", "publication"].includes(entity.type)), "en");
 await writeHub("/knowledge/concepts/", "Concepts", "Canonical definitions maintained by Electronic Artefacts and connected to implementations and evidence.", publicDefaultLocaleEntities.filter((entity) => entity.type === "concept"), "en");
 await writeHub("/knowledge/methods/", "Methods", "Repeatable procedures used by Electronic Artefacts for research, production, preservation and system design.", publicDefaultLocaleEntities.filter((entity) => entity.type === "method"), "en");
 await writeHub("/knowledge/frameworks/", "Frameworks", "Structured conceptual and operational models maintained inside the Electronic Artefacts knowledge graph.", publicDefaultLocaleEntities.filter((entity) => entity.type === "framework"), "en");
 await writeHub("/knowledge/technologies/", "Technologies", "Languages, protocols, formats, platforms and technical approaches referenced by the Electronic Artefacts knowledge system.", publicDefaultLocaleEntities.filter((entity) => entity.type === "technology"), "en");
+await writeHub("/research/questions/", "Research Questions", "Active research questions maintained by Electronic Artefacts and connected to software, projects, concepts and evidence.", publicDefaultLocaleEntities.filter((entity) => entity.type === "researchQuestion"), "en");
 await writeHub("/publications/", "Publications", "Research notes and authored records published by Electronic Artefacts.", publicDefaultLocaleEntities.filter((entity) => entity.type === "publication"), "en");
 await writeHub("/archive/collections/", "Collections", "Curated neighborhoods that group Electronic Artefacts records by editorial thesis, provenance and research use.", publicDefaultLocaleEntities.filter((entity) => entity.type === "collection"), "en");
 
-await writeHub("/fr/knowledge/", "Connaissances", "Concepts, méthodes, cadres, technologies, domaines de recherche et publications canoniques du graphe Electronic Artefacts.", publicFrenchEntities.filter((entity) => ["concept", "method", "framework", "technology", "researchField", "publication"].includes(entity.type)), "fr");
+await writeHub("/fr/knowledge/", "Connaissances", "Concepts, méthodes, cadres, technologies, domaines de recherche, questions de recherche et publications canoniques du graphe Electronic Artefacts.", publicFrenchEntities.filter((entity) => ["concept", "method", "framework", "technology", "researchField", "researchQuestion", "publication"].includes(entity.type)), "fr");
 await writeHub("/fr/knowledge/concepts/", "Concepts", "Définitions canoniques maintenues par Electronic Artefacts et reliées aux implémentations et aux preuves.", publicFrenchEntities.filter((entity) => entity.type === "concept"), "fr");
 await writeHub("/fr/knowledge/methods/", "Méthodes", "Procédures reproductibles utilisées par Electronic Artefacts pour la recherche, la production, la préservation et la conception de systèmes.", publicFrenchEntities.filter((entity) => entity.type === "method"), "fr");
 await writeHub("/fr/knowledge/frameworks/", "Cadres", "Modèles conceptuels et opérationnels structurés maintenus dans le graphe de connaissance Electronic Artefacts.", publicFrenchEntities.filter((entity) => entity.type === "framework"), "fr");
 await writeHub("/fr/knowledge/technologies/", "Technologies", "Langages, protocoles, formats, plateformes et approches techniques référencés dans le système de connaissance Electronic Artefacts.", publicFrenchEntities.filter((entity) => entity.type === "technology"), "fr");
+await writeHub("/fr/research/questions/", "Questions de recherche", "Questions de recherche actives maintenues par Electronic Artefacts et reliées aux logiciels, projets, concepts et preuves.", publicFrenchEntities.filter((entity) => entity.type === "researchQuestion"), "fr");
 await writeHub("/fr/publications/", "Publications", "Notes de recherche et enregistrements éditoriaux publiés par Electronic Artefacts.", publicFrenchEntities.filter((entity) => entity.type === "publication"), "fr");
 
 const searchDocuments = buildSearchDocuments(publicEntities, relations, routes);

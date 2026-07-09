@@ -18,6 +18,22 @@
       "route": "/fr/projects/voice-capture-studio/",
       "status": "active",
       "confidence": "published"
+    },
+    {
+      "id": "ea:researchQuestion:first-conversation-understanding-fr",
+      "type": "researchQuestion",
+      "title": "Comment une IA peut-elle comprendre quelqu'un dès sa première conversation ?",
+      "route": "/fr/research/questions/first-conversation-understanding/",
+      "status": "active",
+      "confidence": "observed"
+    },
+    {
+      "id": "ea:researchQuestion:speech-dataset-reproducibility-fr",
+      "type": "researchQuestion",
+      "title": "Comment les datasets vocaux peuvent-ils devenir reproductibles, structurés et privacy-first ?",
+      "route": "/fr/research/questions/speech-dataset-reproducibility/",
+      "status": "active",
+      "confidence": "published"
     }
   ],
   "edges": [
@@ -28,6 +44,24 @@
       "predicate": "appliesConcept",
       "label": "Applies concept",
       "statement": "Voice Capture Studio supports downstream machine-learning workflows by preparing accepted recordings and metadata without performing model training itself.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:first-conversation-understanding-applies-concept-machine-learning-workflows",
+      "source": "ea:researchQuestion:first-conversation-understanding-fr",
+      "target": "ea:concept:machine-learning-workflows-fr",
+      "predicate": "appliesConcept",
+      "label": "Applies concept",
+      "statement": "The research question \"How can an AI understand someone during its very first conversation?\" applies Machine Learning Workflows as part of its current model.",
+      "confidence": "observed"
+    },
+    {
+      "id": "ear:speech-dataset-reproducibility-applies-concept-machine-learning-workflows",
+      "source": "ea:researchQuestion:speech-dataset-reproducibility-fr",
+      "target": "ea:concept:machine-learning-workflows-fr",
+      "predicate": "appliesConcept",
+      "label": "Applies concept",
+      "statement": "The research question \"How can speech datasets become reproducible, structured and privacy-first?\" applies Machine Learning Workflows as part of its current model.",
       "confidence": "published"
     }
   ]

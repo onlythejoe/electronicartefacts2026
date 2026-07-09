@@ -9,10 +9,10 @@ const isIsoCalendarDate = (value: string): boolean => {
 
 const isoDate = z.string().refine(isIsoCalendarDate, "Date must be a valid ISO calendar date (YYYY-MM-DD)");
 const entityType = z.enum([
-  "concept", "method", "framework", "technology", "researchField", "project", "program",
+  "concept", "method", "framework", "technology", "researchField", "researchQuestion", "project", "program",
   "publication", "collection", "artefact", "timeline", "artist", "organization", "tool", "dataset", "event",
 ]);
-const entityId = z.string().regex(/^ea:(concept|method|framework|technology|researchField|project|program|publication|collection|artefact|timeline|artist|organization|tool|dataset|event):[a-z0-9][a-z0-9-]*$/);
+const entityId = z.string().regex(/^ea:(concept|method|framework|technology|researchField|researchQuestion|project|program|publication|collection|artefact|timeline|artist|organization|tool|dataset|event):[a-z0-9][a-z0-9-]*$/);
 const agentId = z.string().regex(/^ea:(artist|organization):[a-z0-9][a-z0-9-]*$/);
 const ref = z.object({ id: entityId, label: z.string().optional() });
 const agentRef = z.object({ id: agentId, label: z.string().optional(), role: z.string().optional() });
@@ -130,6 +130,42 @@ const researchField = base.extend({
   openQuestions: z.array(z.string()).optional(),
   bibliography: z.array(sourceRef).optional(),
 });
+const researchQuestionTimelineEvent = z.object({
+  date: isoDate,
+  title: z.string().min(1),
+  summary: z.string().min(20),
+  relatedEntities: z.array(ref).optional(),
+});
+const researchQuestionExperiment = z.object({
+  id: z.string().regex(/^[a-z0-9][a-z0-9-]*$/),
+  title: z.string().min(1),
+  status: z.enum(["planned", "active", "observed", "paused", "complete"]),
+  summary: z.string().min(20),
+  relatedEntities: z.array(ref).optional(),
+  result: z.string().optional(),
+});
+const researchQuestion = base.extend({
+  type: z.literal("researchQuestion"),
+  started: isoDate,
+  updated: isoDate,
+  priority: z.number().int().positive(),
+  homepage: z.boolean().optional(),
+  observation: z.string().min(20),
+  problem: z.string().min(20).optional(),
+  hypothesis: z.string().min(20),
+  currentUnderstanding: z.string().min(20).optional(),
+  experiments: z.array(researchQuestionExperiment).optional(),
+  result: z.string().optional(),
+  nextSteps: z.array(z.string().min(1)).optional(),
+  relatedProjects: z.array(ref).optional(),
+  relatedSoftware: z.array(ref).optional(),
+  relatedArticles: z.array(ref).optional(),
+  relatedCollections: z.array(ref).optional(),
+  relatedConcepts: z.array(ref).optional(),
+  relatedTechnologies: z.array(ref).optional(),
+  relatedRepositories: z.array(sourceRef).optional(),
+  timeline: z.array(researchQuestionTimelineEvent).optional(),
+});
 const program = base.extend({
   type: z.literal("program"),
   mandate: z.string().min(20),
@@ -240,7 +276,7 @@ const event = base.extend({
 });
 
 export const entityFrontmatterSchema = z.discriminatedUnion("type", [
-  concept, method, framework, technology, researchField, program, project, publication,
+  concept, method, framework, technology, researchField, researchQuestion, program, project, publication,
   collection, artefact, organization, tool, dataset, event,
 ]).superRefine((entity, context) => {
   if (entity.type === "event" && entity.endDate && entity.startDate > entity.endDate) {
@@ -248,6 +284,13 @@ export const entityFrontmatterSchema = z.discriminatedUnion("type", [
       code: z.ZodIssueCode.custom,
       path: ["endDate"],
       message: "endDate must be on or after startDate",
+    });
+  }
+  if (entity.type === "researchQuestion" && entity.started > entity.updated) {
+    context.addIssue({
+      code: z.ZodIssueCode.custom,
+      path: ["updated"],
+      message: "updated must be on or after started",
     });
   }
 });

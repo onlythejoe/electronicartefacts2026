@@ -194,6 +194,22 @@
       "route": "/organizations/electronic-artefacts/",
       "status": "active",
       "confidence": "canonical"
+    },
+    {
+      "id": "ea:researchQuestion:first-conversation-understanding",
+      "type": "researchQuestion",
+      "title": "How can an AI understand someone during its very first conversation?",
+      "route": "/research/questions/first-conversation-understanding/",
+      "status": "active",
+      "confidence": "observed"
+    },
+    {
+      "id": "ea:researchQuestion:self-explaining-knowledge-graph-software",
+      "type": "researchQuestion",
+      "title": "How can software become explainable through its own knowledge graph?",
+      "route": "/research/questions/self-explaining-knowledge-graph-software/",
+      "status": "active",
+      "confidence": "validated"
     }
   ],
   "edges": [
@@ -403,6 +419,24 @@
       "label": "Maintained by",
       "statement": "Electronic Artefacts develops and maintains the VASTE program.",
       "confidence": "published"
+    },
+    {
+      "id": "ear:first-conversation-understanding-implemented-by-vaste",
+      "source": "ea:researchQuestion:first-conversation-understanding",
+      "target": "ea:program:vaste",
+      "predicate": "implementedBy",
+      "label": "Implemented by",
+      "statement": "VASTE is listed as a current software or project answer for the research question \"How can an AI understand someone during its very first conversation?\".",
+      "confidence": "observed"
+    },
+    {
+      "id": "ear:self-explaining-knowledge-graph-software-implemented-by-vaste",
+      "source": "ea:researchQuestion:self-explaining-knowledge-graph-software",
+      "target": "ea:program:vaste",
+      "predicate": "implementedBy",
+      "label": "Implemented by",
+      "statement": "VASTE is listed as a current software or project answer for the research question \"How can software become explainable through its own knowledge graph?\".",
+      "confidence": "validated"
     }
   ]
 }

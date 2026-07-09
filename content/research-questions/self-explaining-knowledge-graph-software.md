@@ -1,0 +1,125 @@
+---
+id: ea:researchQuestion:self-explaining-knowledge-graph-software
+type: researchQuestion
+translationKey: research-question:self-explaining-knowledge-graph-software
+slug:
+  canonical: self-explaining-knowledge-graph-software
+title: How can software become explainable through its own knowledge graph?
+subtitle: Research Question 003
+abstract: This research question studies whether software can explain its purpose, evidence, dependencies and limits through the same graph that generates its public pages and machine-readable records.
+description: A public Electronic Artefacts research question about self-explaining software, knowledge graphs, generated documentation and semantic public surfaces.
+locale: en
+visibility: public
+publicationClass: canonical
+status: active
+maturity: research
+confidence: validated
+version:
+  version: 1.0.0
+  createdAt: "2026-07-09"
+  publishedAt: "2026-07-09"
+  modifiedAt: "2026-07-09"
+authors:
+  - id: ea:organization:electronic-artefacts
+publisher: ea:organization:electronic-artefacts
+started: "2026-03-01"
+updated: "2026-07-09"
+priority: 3
+featured: true
+homepage: true
+observation: Documentation quickly becomes outdated when it is separate from the entities, relations and routes that a software system actually uses.
+problem: A project can have pages, JSON-LD, search data, relation exports and source files that disagree unless one structured graph acts as the authority layer.
+hypothesis: The knowledge graph itself can become the primary documentation layer when pages, identifiers, graph neighborhoods, search documents and relation panels are generated from the same source records.
+currentUnderstanding: Explainability improves when the public interface exposes the graph instead of hiding it. A page should show what it is, what it connects to, what evidence supports it and where its claims remain limited.
+experiments:
+  - id: generated-entity-pages
+    title: Generated entity pages
+    status: active
+    summary: The Electronic Artefacts site generates canonical pages, identifiers, JSON-LD, search documents and graph neighborhoods from typed Markdown records.
+    relatedEntities:
+      - id: ea:framework:electronic-artefacts-lightweight-template
+      - id: ea:concept:linked-data
+  - id: relationship-panels
+    title: Relationship panels
+    status: observed
+    summary: Project, program, concept and publication pages expose typed relations so readers can inspect why records are connected.
+    relatedEntities:
+      - id: ea:concept:knowledge-graph
+      - id: ea:concept:entity-identity
+result: The site already demonstrates a partial answer. Its public HTML, identifiers, JSON-LD, search documents and local graph files are generated from typed records rather than maintained as separate explanations.
+nextSteps:
+  - Add more derived relation patterns while preserving editorial review.
+  - Make graph neighborhoods easier to inspect from public pages.
+  - Define what counts as enough evidence before a relation becomes canonical.
+relatedProjects:
+  - id: ea:project:vestiges
+  - id: ea:project:voice-capture-studio
+relatedSoftware:
+  - id: ea:program:vaste
+  - id: ea:framework:electronic-artefacts-lightweight-template
+relatedArticles:
+  - id: ea:publication:linked-data-and-public-knowledge-pages
+  - id: ea:publication:knowledge-graphs-for-cultural-infrastructure
+  - id: ea:publication:ai-search-structured-content-and-knowledge-graph-seo
+  - id: ea:publication:why-graphs-are-more-powerful-than-folders
+  - id: ea:publication:contextual-execution-and-graph-runtimes
+relatedCollections:
+  - id: ea:collection:knowledge-hub-foundations
+  - id: ea:collection:knowledge-hub-third-wave
+relatedConcepts:
+  - id: ea:concept:knowledge-graph
+  - id: ea:concept:graph-runtime
+  - id: ea:concept:linked-data
+  - id: ea:concept:metadata
+  - id: ea:concept:entity-identity
+  - id: ea:concept:provenance
+  - id: ea:concept:hypertext
+  - id: ea:concept:personal-knowledge-system
+relatedTechnologies:
+  - id: ea:technology:json-ld
+  - id: ea:technology:rdf
+  - id: ea:technology:web-animations
+relatedRepositories:
+  - title: Electronic Artefacts website source repository
+    publisher: GitHub
+    accessedAt: "2026-07-09"
+    url: https://github.com/onlythejoe
+timeline:
+  - date: "2026-03-01"
+    title: Documentation reframing
+    summary: The site architecture was reframed as a public graph rather than a set of manually maintained portfolio pages.
+  - date: "2026-07-09"
+    title: Research-question entity added
+    summary: Research questions became graph entities, allowing projects and software to point back to the questions they test.
+tags:
+  - Knowledge Graph
+  - Linked Data
+  - Documentation
+  - Explainable Software
+  - Static Site Generation
+disciplines:
+  - Information Architecture
+  - Software Architecture
+  - Knowledge Systems
+  - Web Development
+---
+
+## Observation
+
+Documentation drifts when it sits outside the system it describes. A static page can be accurate on the day it is written and misleading after a few structural changes.
+
+## Problem
+
+Electronic Artefacts needs public software records that remain useful to people, search engines and future agents. That requires stable identifiers, typed relations, readable pages and machine-readable exports generated from the same source.
+
+## Hypothesis
+
+A knowledge graph can become the documentation layer. If the graph records the entities, relations, sources and versions, then the public site can generate explanations instead of manually duplicating them.
+
+## Current Understanding
+
+The graph does not remove editorial responsibility. It makes responsibility visible. A relation still needs judgment, but once accepted it can update pages, search, JSON-LD and local graph neighborhoods together.
+
+## Unknowns
+
+The next problem is interface depth. The graph should be visible enough to support understanding without turning every page into an administrative console.

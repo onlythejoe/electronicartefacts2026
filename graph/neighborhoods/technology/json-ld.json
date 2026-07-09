@@ -26,6 +26,14 @@
       "route": "/publications/linked-data-and-public-knowledge-pages/",
       "status": "active",
       "confidence": "published"
+    },
+    {
+      "id": "ea:researchQuestion:self-explaining-knowledge-graph-software",
+      "type": "researchQuestion",
+      "title": "How can software become explainable through its own knowledge graph?",
+      "route": "/research/questions/self-explaining-knowledge-graph-software/",
+      "status": "active",
+      "confidence": "validated"
     }
   ],
   "edges": [
@@ -46,6 +54,15 @@
       "label": "Uses technology",
       "statement": "Linked Data and Public Knowledge Pages uses JSON-LD as the practical structured-data format for static knowledge pages.",
       "confidence": "published"
+    },
+    {
+      "id": "ear:self-explaining-knowledge-graph-software-uses-technology-json-ld",
+      "source": "ea:researchQuestion:self-explaining-knowledge-graph-software",
+      "target": "ea:technology:json-ld",
+      "predicate": "usesTechnology",
+      "label": "Uses technology",
+      "statement": "The research question \"How can software become explainable through its own knowledge graph?\" uses JSON-LD as a relevant technical reference.",
+      "confidence": "validated"
     }
   ]
 }

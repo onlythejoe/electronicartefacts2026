@@ -50,6 +50,14 @@
       "route": "/fr/archive/collections/knowledge-hub-fourth-wave/",
       "status": "active",
       "confidence": "published"
+    },
+    {
+      "id": "ea:researchQuestion:self-explaining-knowledge-graph-software-fr",
+      "type": "researchQuestion",
+      "title": "Comment un logiciel peut-il devenir explicable par son propre graphe de connaissance ?",
+      "route": "/fr/research/questions/self-explaining-knowledge-graph-software/",
+      "status": "active",
+      "confidence": "validated"
     }
   ],
   "edges": [
@@ -97,6 +105,15 @@
       "label": "Member of collection",
       "statement": "AI Search, Structured Content and Knowledge Graph SEO is part of the fourth Knowledge Hub wave.",
       "confidence": "published"
+    },
+    {
+      "id": "ear:ai-search-structured-content-and-knowledge-graph-seo-documents-self-explaining-knowledge-graph-software",
+      "source": "ea:publication:ai-search-structured-content-and-knowledge-graph-seo-fr",
+      "target": "ea:researchQuestion:self-explaining-knowledge-graph-software-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "AI Search, Structured Content and Knowledge Graph SEO documents context, evidence or vocabulary for the research question \"How can software become explainable through its own knowledge graph?\".",
+      "confidence": "validated"
     }
   ]
 }

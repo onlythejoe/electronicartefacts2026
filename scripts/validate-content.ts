@@ -2,6 +2,7 @@ import path from "node:path";
 import { access } from "node:fs/promises";
 import { loadContent } from "../src/build/load-content.js";
 import { loadRelations } from "../src/build/load-relations.js";
+import { withDerivedRelations } from "../src/build/derive-relations.js";
 import { validateGraph } from "../src/build/validate-graph.js";
 import { publicationContracts } from "../src/config/publication-contracts.js";
 
@@ -45,7 +46,7 @@ const frenchPublicationHeadings: Record<string, string[]> = {
   Credits: ["Crédits"],
 };
 const entities = await loadContent(rootDir);
-const relations = await loadRelations(rootDir);
+const relations = withDerivedRelations(entities, await loadRelations(rootDir));
 validateGraph(entities, relations);
 
 const localMediaPath = (src: string): string | null => {

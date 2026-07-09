@@ -55,12 +55,12 @@
         {
           "@type": "PropertyValue",
           "name": "publicRecords",
-          "value": 226
+          "value": 232
         },
         {
           "@type": "PropertyValue",
           "name": "publicRelations",
-          "value": 251
+          "value": 310
         }
       ],
       "includedInDataCatalog": {
@@ -74,7 +74,7 @@
       "@type": "ItemList",
       "@id": "https://electronicartefacts.com/graph/catalog.jsonld#records",
       "name": "Electronic Artefacts public records",
-      "numberOfItems": 226,
+      "numberOfItems": 232,
       "itemListElement": [
         {
           "@type": "ListItem",
@@ -1789,6 +1789,60 @@
         {
           "@type": "ListItem",
           "position": 191,
+          "name": "Comment les datasets vocaux peuvent-ils devenir reproductibles, structurés et privacy-first ?",
+          "url": "https://electronicartefacts.com/fr/research/questions/speech-dataset-reproducibility/",
+          "item": {
+            "@id": "https://electronicartefacts.com/fr/id/research-question/speech-dataset-reproducibility/"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 192,
+          "name": "Comment un logiciel peut-il devenir explicable par son propre graphe de connaissance ?",
+          "url": "https://electronicartefacts.com/fr/research/questions/self-explaining-knowledge-graph-software/",
+          "item": {
+            "@id": "https://electronicartefacts.com/fr/id/research-question/self-explaining-knowledge-graph-software/"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 193,
+          "name": "Comment une IA peut-elle comprendre quelqu'un dès sa première conversation ?",
+          "url": "https://electronicartefacts.com/fr/research/questions/first-conversation-understanding/",
+          "item": {
+            "@id": "https://electronicartefacts.com/fr/id/research-question/first-conversation-understanding/"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 194,
+          "name": "How can an AI understand someone during its very first conversation?",
+          "url": "https://electronicartefacts.com/research/questions/first-conversation-understanding/",
+          "item": {
+            "@id": "https://electronicartefacts.com/id/research-question/first-conversation-understanding/"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 195,
+          "name": "How can software become explainable through its own knowledge graph?",
+          "url": "https://electronicartefacts.com/research/questions/self-explaining-knowledge-graph-software/",
+          "item": {
+            "@id": "https://electronicartefacts.com/id/research-question/self-explaining-knowledge-graph-software/"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 196,
+          "name": "How can speech datasets become reproducible, structured and privacy-first?",
+          "url": "https://electronicartefacts.com/research/questions/speech-dataset-reproducibility/",
+          "item": {
+            "@id": "https://electronicartefacts.com/id/research-question/speech-dataset-reproducibility/"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 197,
           "name": "ActivityPub",
           "url": "https://electronicartefacts.com/fr/knowledge/technologies/activitypub/",
           "item": {
@@ -1797,7 +1851,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 192,
+          "position": 198,
           "name": "ActivityPub",
           "url": "https://electronicartefacts.com/knowledge/technologies/activitypub/",
           "item": {
@@ -1806,7 +1860,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 193,
+          "position": 199,
           "name": "Architecture Transformer",
           "url": "https://electronicartefacts.com/fr/knowledge/technologies/transformer-architecture/",
           "item": {
@@ -1815,7 +1869,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 194,
+          "position": 200,
           "name": "C2PA",
           "url": "https://electronicartefacts.com/fr/knowledge/technologies/c2pa/",
           "item": {
@@ -1824,7 +1878,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 195,
+          "position": 201,
           "name": "C2PA",
           "url": "https://electronicartefacts.com/knowledge/technologies/c2pa/",
           "item": {
@@ -1833,7 +1887,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 196,
+          "position": 202,
           "name": "CloudEvents",
           "url": "https://electronicartefacts.com/fr/knowledge/technologies/cloudevents/",
           "item": {
@@ -1842,7 +1896,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 197,
+          "position": 203,
           "name": "CloudEvents",
           "url": "https://electronicartefacts.com/knowledge/technologies/cloudevents/",
           "item": {
@@ -1851,7 +1905,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 198,
+          "position": 204,
           "name": "CSS Fonts",
           "url": "https://electronicartefacts.com/fr/knowledge/technologies/css-fonts/",
           "item": {
@@ -1860,7 +1914,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 199,
+          "position": 205,
           "name": "CSS Fonts",
           "url": "https://electronicartefacts.com/knowledge/technologies/css-fonts/",
           "item": {
@@ -1869,7 +1923,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 200,
+          "position": 206,
           "name": "IIIF",
           "url": "https://electronicartefacts.com/fr/knowledge/technologies/iiif/",
           "item": {
@@ -1878,7 +1932,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 201,
+          "position": 207,
           "name": "IIIF",
           "url": "https://electronicartefacts.com/knowledge/technologies/iiif/",
           "item": {
@@ -1887,7 +1941,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 202,
+          "position": 208,
           "name": "JSON-LD",
           "url": "https://electronicartefacts.com/fr/knowledge/technologies/json-ld/",
           "item": {
@@ -1896,7 +1950,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 203,
+          "position": 209,
           "name": "JSON-LD",
           "url": "https://electronicartefacts.com/knowledge/technologies/json-ld/",
           "item": {
@@ -1905,7 +1959,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 204,
+          "position": 210,
           "name": "llama.cpp",
           "url": "https://electronicartefacts.com/fr/knowledge/technologies/llama-cpp/",
           "item": {
@@ -1914,7 +1968,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 205,
+          "position": 211,
           "name": "llama.cpp",
           "url": "https://electronicartefacts.com/knowledge/technologies/llama-cpp/",
           "item": {
@@ -1923,7 +1977,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 206,
+          "position": 212,
           "name": "Model Context Protocol",
           "url": "https://electronicartefacts.com/fr/knowledge/technologies/model-context-protocol/",
           "item": {
@@ -1932,7 +1986,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 207,
+          "position": 213,
           "name": "Model Context Protocol",
           "url": "https://electronicartefacts.com/knowledge/technologies/model-context-protocol/",
           "item": {
@@ -1941,7 +1995,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 208,
+          "position": 214,
           "name": "OpenTelemetry",
           "url": "https://electronicartefacts.com/fr/knowledge/technologies/opentelemetry/",
           "item": {
@@ -1950,7 +2004,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 209,
+          "position": 215,
           "name": "OpenTelemetry",
           "url": "https://electronicartefacts.com/knowledge/technologies/opentelemetry/",
           "item": {
@@ -1959,7 +2013,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 210,
+          "position": 216,
           "name": "OWL",
           "url": "https://electronicartefacts.com/fr/knowledge/technologies/owl/",
           "item": {
@@ -1968,7 +2022,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 211,
+          "position": 217,
           "name": "OWL",
           "url": "https://electronicartefacts.com/knowledge/technologies/owl/",
           "item": {
@@ -1977,7 +2031,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 212,
+          "position": 218,
           "name": "RDF",
           "url": "https://electronicartefacts.com/fr/knowledge/technologies/rdf/",
           "item": {
@@ -1986,7 +2040,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 213,
+          "position": 219,
           "name": "RDF",
           "url": "https://electronicartefacts.com/knowledge/technologies/rdf/",
           "item": {
@@ -1995,7 +2049,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 214,
+          "position": 220,
           "name": "Redis Streams",
           "url": "https://electronicartefacts.com/fr/knowledge/technologies/redis-streams/",
           "item": {
@@ -2004,7 +2058,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 215,
+          "position": 221,
           "name": "Redis Streams",
           "url": "https://electronicartefacts.com/knowledge/technologies/redis-streams/",
           "item": {
@@ -2013,7 +2067,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 216,
+          "position": 222,
           "name": "SKOS",
           "url": "https://electronicartefacts.com/fr/knowledge/technologies/skos/",
           "item": {
@@ -2022,7 +2076,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 217,
+          "position": 223,
           "name": "SKOS",
           "url": "https://electronicartefacts.com/knowledge/technologies/skos/",
           "item": {
@@ -2031,7 +2085,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 218,
+          "position": 224,
           "name": "Transformer Architecture",
           "url": "https://electronicartefacts.com/knowledge/technologies/transformer-architecture/",
           "item": {
@@ -2040,7 +2094,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 219,
+          "position": 225,
           "name": "Web Animations",
           "url": "https://electronicartefacts.com/fr/knowledge/technologies/web-animations/",
           "item": {
@@ -2049,7 +2103,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 220,
+          "position": 226,
           "name": "Web Animations",
           "url": "https://electronicartefacts.com/knowledge/technologies/web-animations/",
           "item": {
@@ -2058,7 +2112,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 221,
+          "position": 227,
           "name": "Web Audio API",
           "url": "https://electronicartefacts.com/fr/knowledge/technologies/web-audio-api/",
           "item": {
@@ -2067,7 +2121,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 222,
+          "position": 228,
           "name": "Web Audio API",
           "url": "https://electronicartefacts.com/knowledge/technologies/web-audio-api/",
           "item": {
@@ -2076,7 +2130,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 223,
+          "position": 229,
           "name": "WebGL",
           "url": "https://electronicartefacts.com/fr/knowledge/technologies/webgl/",
           "item": {
@@ -2085,7 +2139,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 224,
+          "position": 230,
           "name": "WebGL",
           "url": "https://electronicartefacts.com/knowledge/technologies/webgl/",
           "item": {
@@ -2094,7 +2148,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 225,
+          "position": 231,
           "name": "WebNN",
           "url": "https://electronicartefacts.com/fr/knowledge/technologies/webnn/",
           "item": {
@@ -2103,7 +2157,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 226,
+          "position": 232,
           "name": "WebNN",
           "url": "https://electronicartefacts.com/knowledge/technologies/webnn/",
           "item": {

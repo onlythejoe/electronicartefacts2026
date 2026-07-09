@@ -6,6 +6,7 @@ import type {
   MethodEntity,
   ProgramEntity,
   ResearchFieldEntity,
+  ResearchQuestionEntity,
   TechnologyEntity,
 } from "../../schema/entities.js";
 import type { EntityRef, SourceRef } from "../../schema/entity.js";
@@ -120,6 +121,56 @@ const researchFieldPanels = (entity: ResearchFieldEntity): string[] => [
   panel("Findings", "Current findings and open questions", renderList([...(entity.findings || []), ...(entity.openQuestions || [])])),
 ];
 
+const renderExperiments = (entity: ResearchQuestionEntity): string =>
+  entity.experiments?.length
+    ? `
+      <ol class="article-mini-list">
+        ${entity.experiments.map((experiment) => `
+          <li>
+            <strong>${escapeHtml(experiment.title)} (${escapeHtml(experiment.status)})</strong>
+            <span>${escapeHtml(experiment.summary)}</span>
+            ${experiment.result ? `<span>${escapeHtml(experiment.result)}</span>` : ""}
+          </li>`).join("")}
+      </ol>`
+    : "";
+
+const renderTimeline = (entity: ResearchQuestionEntity): string =>
+  entity.timeline?.length
+    ? `
+      <ol class="article-mini-list">
+        ${entity.timeline.map((event) => `
+          <li>
+            <strong>${escapeHtml(event.date)} / ${escapeHtml(event.title)}</strong>
+            <span>${escapeHtml(event.summary)}</span>
+          </li>`).join("")}
+      </ol>`
+    : "";
+
+const researchQuestionPanels = (
+  entity: ResearchQuestionEntity,
+  byId: Map<string, Entity>,
+  routeById: Record<string, string>,
+): string[] => [
+  panel("Observation", "What was observed", `<p class="card__copy">${escapeHtml(entity.observation)}</p>`),
+  panel("Problem", "Why it matters", entity.problem ? `<p class="card__copy">${escapeHtml(entity.problem)}</p>` : ""),
+  panel("Hypothesis", "What is being tested", `<p class="card__copy">${escapeHtml(entity.hypothesis)}</p>`),
+  panel("Understanding", "Current understanding", entity.currentUnderstanding ? `<p class="card__copy">${escapeHtml(entity.currentUnderstanding)}</p>` : ""),
+  panel("Experiments", "How the question is being tested", renderExperiments(entity)),
+  panel("Result", "What has emerged so far", entity.result ? `<p class="card__copy">${escapeHtml(entity.result)}</p>` : ""),
+  panel("Next steps", "What remains unknown", renderList(entity.nextSteps)),
+  panel("Timeline", "Research timeline", renderTimeline(entity)),
+  panel("Related artefacts", "Software, projects and evidence", renderRefs([
+    ...(entity.relatedProjects || []),
+    ...(entity.relatedSoftware || []),
+    ...(entity.relatedArticles || []),
+    ...(entity.relatedCollections || []),
+  ], byId, routeById, entity.locale)),
+  panel("Related concepts", "Conceptual and technical context", renderRefs([
+    ...(entity.relatedConcepts || []),
+    ...(entity.relatedTechnologies || []),
+  ], byId, routeById, entity.locale)),
+];
+
 const collectionPanels = (
   entity: CollectionEntity,
   byId: Map<string, Entity>,
@@ -162,6 +213,7 @@ export const renderEditorialPanels = (
     if (entity.type === "technology") return technologyPanels(entity);
     if (entity.type === "program") return programPanels(entity);
     if (entity.type === "researchField") return researchFieldPanels(entity);
+    if (entity.type === "researchQuestion") return researchQuestionPanels(entity, byId, routeById);
     if (entity.type === "collection") return collectionPanels(entity, byId, routeById);
     if (entity.type === "method") return methodPanels(entity);
     if (entity.type === "framework") return frameworkPanels(entity, byId, routeById);

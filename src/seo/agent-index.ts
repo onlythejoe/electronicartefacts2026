@@ -8,6 +8,7 @@ const typeOrder = [
   "program",
   "project",
   "researchField",
+  "researchQuestion",
   "publication",
   "concept",
   "technology",
@@ -110,6 +111,7 @@ Use canonical HTML URLs for human-facing citations. Use identifier routes under 
 - [Concepts](${site.origin}/knowledge/concepts/): Definitions for core concepts.
 - [Technologies](${site.origin}/knowledge/technologies/): Technical standards, platforms and protocols.
 - [Publications](${site.origin}/publications/): Research notes and technical articles.
+- [Research Questions](${site.origin}/research/questions/): Active studio research questions connected to software, concepts and evidence.
 - [Projects](${site.origin}/projects.html): Selected work and case studies.
 - [Programs](${site.origin}/programs.html): Software programs and runtime systems.
 - [Search](${site.origin}/search/?q=knowledge%20graph): Public site search endpoint with q parameter.

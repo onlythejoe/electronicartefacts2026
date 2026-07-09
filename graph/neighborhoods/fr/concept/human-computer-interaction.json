@@ -58,6 +58,14 @@
       "route": "/fr/projects/voice-capture-studio/",
       "status": "active",
       "confidence": "published"
+    },
+    {
+      "id": "ea:researchQuestion:first-conversation-understanding-fr",
+      "type": "researchQuestion",
+      "title": "Comment une IA peut-elle comprendre quelqu'un dès sa première conversation ?",
+      "route": "/fr/research/questions/first-conversation-understanding/",
+      "status": "active",
+      "confidence": "observed"
     }
   ],
   "edges": [
@@ -114,6 +122,15 @@
       "label": "Applies concept",
       "statement": "Voice Capture Studio applies HCI principles by making recording modes, environment checks, local storage and quality gates visible before capture.",
       "confidence": "published"
+    },
+    {
+      "id": "ear:first-conversation-understanding-applies-concept-human-computer-interaction",
+      "source": "ea:researchQuestion:first-conversation-understanding-fr",
+      "target": "ea:concept:human-computer-interaction-fr",
+      "predicate": "appliesConcept",
+      "label": "Applies concept",
+      "statement": "The research question \"How can an AI understand someone during its very first conversation?\" applies Human Computer Interaction as part of its current model.",
+      "confidence": "observed"
     }
   ]
 }

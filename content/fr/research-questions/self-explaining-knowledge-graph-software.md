@@ -1,0 +1,126 @@
+---
+id: ea:researchQuestion:self-explaining-knowledge-graph-software-fr
+type: researchQuestion
+translationKey: research-question:self-explaining-knowledge-graph-software
+translationOf: ea:researchQuestion:self-explaining-knowledge-graph-software
+slug:
+  canonical: self-explaining-knowledge-graph-software
+title: Comment un logiciel peut-il devenir explicable par son propre graphe de connaissance ?
+subtitle: Question de recherche 003
+abstract: Cette question étudie si un logiciel peut expliquer son objectif, ses preuves, dépendances et limites à travers le même graphe qui génère ses pages publiques et ses fiches machine-readable.
+description: Question de recherche publique d'Electronic Artefacts sur les logiciels explicables, les graphes de connaissance, la documentation générée et les surfaces publiques sémantiques.
+locale: fr
+visibility: public
+publicationClass: canonical
+status: active
+maturity: research
+confidence: validated
+version:
+  version: 1.0.0
+  createdAt: "2026-07-09"
+  publishedAt: "2026-07-09"
+  modifiedAt: "2026-07-09"
+authors:
+  - id: ea:organization:electronic-artefacts
+publisher: ea:organization:electronic-artefacts
+started: "2026-03-01"
+updated: "2026-07-09"
+priority: 3
+featured: true
+homepage: true
+observation: La documentation devient vite obsolète lorsqu'elle est séparée des entités, relations et routes que le système logiciel utilise réellement.
+problem: Un projet peut avoir pages, JSON-LD, données de recherche, exports de relations et fichiers source qui divergent si aucun graphe structuré ne joue le rôle de couche d'autorité.
+hypothesis: Le graphe de connaissance peut devenir la couche documentaire principale lorsque pages, identifiants, voisinages de graphe, documents de recherche et panneaux relationnels sont générés depuis les mêmes fiches source.
+currentUnderstanding: L'explicabilité progresse lorsque l'interface publique expose le graphe au lieu de le cacher. Une page devrait montrer ce qu'elle est, ses liens, ses preuves et les limites de ses affirmations.
+experiments:
+  - id: generated-entity-pages
+    title: Pages d'entités générées
+    status: active
+    summary: Le site Electronic Artefacts génère pages canoniques, identifiants, JSON-LD, documents de recherche et voisinages de graphe depuis des fiches Markdown typées.
+    relatedEntities:
+      - id: ea:framework:electronic-artefacts-lightweight-template
+      - id: ea:concept:linked-data
+  - id: relationship-panels
+    title: Panneaux relationnels
+    status: observed
+    summary: Les pages de projets, programmes, concepts et publications exposent des relations typées pour expliquer pourquoi les fiches sont connectées.
+    relatedEntities:
+      - id: ea:concept:knowledge-graph
+      - id: ea:concept:entity-identity
+result: Le site démontre déjà une réponse partielle. HTML public, identifiants, JSON-LD, recherche et fichiers de graphe local sont générés depuis des fiches typées plutôt que maintenus séparément.
+nextSteps:
+  - Ajouter davantage de relations dérivées tout en conservant la revue éditoriale.
+  - Rendre les voisinages de graphe plus faciles à inspecter depuis les pages publiques.
+  - Définir ce qui constitue une preuve suffisante avant qu'une relation devienne canonique.
+relatedProjects:
+  - id: ea:project:vestiges
+  - id: ea:project:voice-capture-studio
+relatedSoftware:
+  - id: ea:program:vaste
+  - id: ea:framework:electronic-artefacts-lightweight-template
+relatedArticles:
+  - id: ea:publication:linked-data-and-public-knowledge-pages
+  - id: ea:publication:knowledge-graphs-for-cultural-infrastructure
+  - id: ea:publication:ai-search-structured-content-and-knowledge-graph-seo
+  - id: ea:publication:why-graphs-are-more-powerful-than-folders
+  - id: ea:publication:contextual-execution-and-graph-runtimes
+relatedCollections:
+  - id: ea:collection:knowledge-hub-foundations
+  - id: ea:collection:knowledge-hub-third-wave
+relatedConcepts:
+  - id: ea:concept:knowledge-graph
+  - id: ea:concept:graph-runtime
+  - id: ea:concept:linked-data
+  - id: ea:concept:metadata
+  - id: ea:concept:entity-identity
+  - id: ea:concept:provenance
+  - id: ea:concept:hypertext
+  - id: ea:concept:personal-knowledge-system
+relatedTechnologies:
+  - id: ea:technology:json-ld
+  - id: ea:technology:rdf
+  - id: ea:technology:web-animations
+relatedRepositories:
+  - title: Dépôt source du site Electronic Artefacts
+    publisher: GitHub
+    accessedAt: "2026-07-09"
+    url: https://github.com/onlythejoe
+timeline:
+  - date: "2026-03-01"
+    title: Requalification de la documentation
+    summary: L'architecture du site est reformulée comme graphe public plutôt que comme suite de pages de portfolio maintenues à la main.
+  - date: "2026-07-09"
+    title: Ajout de l'entité question de recherche
+    summary: Les questions de recherche deviennent des entités du graphe, permettant aux projets et logiciels de pointer vers ce qu'ils testent.
+tags:
+  - Graphe de connaissance
+  - Linked Data
+  - Documentation
+  - Logiciel explicable
+  - Génération de site statique
+disciplines:
+  - Architecture de l'information
+  - Architecture logicielle
+  - Systèmes de connaissance
+  - Développement web
+---
+
+## Observation
+
+La documentation dérive lorsqu'elle reste hors du système qu'elle décrit. Une page statique peut être exacte le jour de sa rédaction et trompeuse après quelques changements structurels.
+
+## Problème
+
+Electronic Artefacts a besoin de fiches logicielles publiques utiles aux personnes, aux moteurs de recherche et aux futurs agents. Cela exige des identifiants stables, des relations typées, des pages lisibles et des exports machine-readable générés depuis une même source.
+
+## Hypothèse
+
+Un graphe de connaissance peut devenir la couche documentaire. Si le graphe enregistre entités, relations, sources et versions, le site peut générer des explications plutôt que les dupliquer manuellement.
+
+## Compréhension actuelle
+
+Le graphe ne supprime pas la responsabilité éditoriale. Il la rend visible. Une relation exige encore du jugement, mais une fois acceptée elle met à jour pages, recherche, JSON-LD et voisinages de graphe ensemble.
+
+## Inconnues
+
+Le prochain problème concerne la profondeur de l'interface. Le graphe doit être assez visible pour aider la compréhension sans transformer chaque page en console d'administration.

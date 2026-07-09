@@ -50,6 +50,14 @@
       "route": "/fr/archive/collections/knowledge-hub-second-wave/",
       "status": "active",
       "confidence": "published"
+    },
+    {
+      "id": "ea:researchQuestion:first-conversation-understanding-fr",
+      "type": "researchQuestion",
+      "title": "Comment une IA peut-elle comprendre quelqu'un dès sa première conversation ?",
+      "route": "/fr/research/questions/first-conversation-understanding/",
+      "status": "active",
+      "confidence": "observed"
     }
   ],
   "edges": [
@@ -97,6 +105,15 @@
       "label": "Has part",
       "statement": "Knowledge Hub Second Wave includes Human Computer Interaction for Creative Tools as a core article.",
       "confidence": "published"
+    },
+    {
+      "id": "ear:human-computer-interaction-for-creative-tools-documents-first-conversation-understanding",
+      "source": "ea:publication:human-computer-interaction-for-creative-tools-fr",
+      "target": "ea:researchQuestion:first-conversation-understanding-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Human Computer Interaction for Creative Tools documents context, evidence or vocabulary for the research question \"How can an AI understand someone during its very first conversation?\".",
+      "confidence": "observed"
     }
   ]
 }

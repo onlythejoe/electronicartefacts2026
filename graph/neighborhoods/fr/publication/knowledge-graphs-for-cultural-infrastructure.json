@@ -58,6 +58,14 @@
       "route": "/fr/archive/collections/knowledge-hub-foundations/",
       "status": "active",
       "confidence": "published"
+    },
+    {
+      "id": "ea:researchQuestion:self-explaining-knowledge-graph-software-fr",
+      "type": "researchQuestion",
+      "title": "Comment un logiciel peut-il devenir explicable par son propre graphe de connaissance ?",
+      "route": "/fr/research/questions/self-explaining-knowledge-graph-software/",
+      "status": "active",
+      "confidence": "validated"
     }
   ],
   "edges": [
@@ -114,6 +122,15 @@
       "label": "Has part",
       "statement": "Knowledge Hub Foundations includes Knowledge Graphs for Cultural Infrastructure as a foundation article.",
       "confidence": "published"
+    },
+    {
+      "id": "ear:knowledge-graphs-for-cultural-infrastructure-documents-self-explaining-knowledge-graph-software",
+      "source": "ea:publication:knowledge-graphs-for-cultural-infrastructure-fr",
+      "target": "ea:researchQuestion:self-explaining-knowledge-graph-software-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Knowledge Graphs for Cultural Infrastructure documents context, evidence or vocabulary for the research question \"How can software become explainable through its own knowledge graph?\".",
+      "confidence": "validated"
     }
   ]
 }

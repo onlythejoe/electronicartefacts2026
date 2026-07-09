@@ -42,6 +42,14 @@
       "route": "/publications/prompt-injection-and-trust-boundaries-in-ai-knowledge-systems/",
       "status": "active",
       "confidence": "published"
+    },
+    {
+      "id": "ea:researchQuestion:first-conversation-understanding",
+      "type": "researchQuestion",
+      "title": "How can an AI understand someone during its very first conversation?",
+      "route": "/research/questions/first-conversation-understanding/",
+      "status": "active",
+      "confidence": "observed"
     }
   ],
   "edges": [
@@ -80,6 +88,15 @@
       "label": "Uses technology",
       "statement": "Prompt Injection and Trust Boundaries in AI Knowledge Systems uses MCP as a reference surface for resources, tools and host-side consent.",
       "confidence": "published"
+    },
+    {
+      "id": "ear:first-conversation-understanding-uses-technology-model-context-protocol",
+      "source": "ea:researchQuestion:first-conversation-understanding",
+      "target": "ea:technology:model-context-protocol",
+      "predicate": "usesTechnology",
+      "label": "Uses technology",
+      "statement": "The research question \"How can an AI understand someone during its very first conversation?\" uses Model Context Protocol as a relevant technical reference.",
+      "confidence": "observed"
     }
   ]
 }

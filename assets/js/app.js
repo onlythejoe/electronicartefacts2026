@@ -10705,6 +10705,534 @@ window.EA_PUBLIC_CATALOG = {
       }
     },
     {
+      "id": "ea:researchQuestion:first-conversation-understanding-fr",
+      "legacyId": "first-conversation-understanding-fr",
+      "kind": "researchQuestion",
+      "type": "researchQuestion",
+      "locale": "fr",
+      "translationKey": "research-question:first-conversation-understanding",
+      "translationOf": "ea:researchQuestion:first-conversation-understanding",
+      "title": "Comment une IA peut-elle comprendre quelqu'un dès sa première conversation ?",
+      "subtitle": "Question de recherche 001",
+      "summary": "Cette question étudie si l'onboarding conversationnel peut construire un premier modèle fiable d'une personne sans réduire l'intention, l'incertitude et le contexte à un formulaire statique.",
+      "description": "Question de recherche publique d'Electronic Artefacts sur la compréhension au premier contact, l'onboarding conversationnel et le contexte utilisateur structuré en graphe.",
+      "status": "active",
+      "maturity": "research",
+      "confidence": "observed",
+      "visibility": "public",
+      "publicationClass": "canonical",
+      "tags": [
+        "Onboarding conversationnel",
+        "Agents IA",
+        "Graphe de connaissance",
+        "Voix",
+        "Compréhension utilisateur"
+      ],
+      "discipline": [
+        "Intelligence artificielle",
+        "Interaction humain-machine",
+        "Systèmes de connaissance",
+        "Architecture logicielle"
+      ],
+      "route": "/fr/research/questions/first-conversation-understanding/",
+      "identifier": "/fr/id/research-question/first-conversation-understanding/",
+      "started": "2026-01-01",
+      "updated": "2026-07-09",
+      "priority": 1,
+      "homepage": true,
+      "observation": "Les formulaires collectent des réponses, mais ils capturent mal l'intention, l'incertitude, le vocabulaire, le contexte évolutif et les raisons qui poussent une personne à agir maintenant.",
+      "problem": "Un système qui commence par des champs rigides peut confondre conformité et compréhension. Le premier échange doit préserver assez d'ambiguïté pour permettre une correction ultérieure.",
+      "hypothesis": "La conversation peut devenir le protocole d'onboarding si le système traite chaque échange comme une preuve, et pas seulement comme une entrée de profil.",
+      "currentUnderstanding": "La compréhension doit émerger progressivement. Une première conversation peut identifier des entités, objectifs, contraintes, risques et inconnues provisoires, puis garder ces hypothèses révisables.",
+      "experiments": [
+        {
+          "id": "conversational-brief-capture",
+          "title": "Capture conversationnelle du brief",
+          "status": "active",
+          "summary": "Les parcours de contact et de découverte sont traités comme des conversations structurées qui identifient intention, voie probable, contexte manquant et questions utiles.",
+          "relatedEntities": [
+            {
+              "id": "ea:concept:human-computer-interaction"
+            },
+            {
+              "id": "ea:concept:contextual-execution"
+            }
+          ]
+        },
+        {
+          "id": "voice-context-capture",
+          "title": "Capture du contexte vocal",
+          "status": "observed",
+          "summary": "Voice Capture Studio teste comment préserver transcription, timing, locuteur et métadonnées qualité sans envoyer les enregistrements à un service distant.",
+          "relatedEntities": [
+            {
+              "id": "ea:project:voice-capture-studio"
+            },
+            {
+              "id": "ea:concept:voice-technology"
+            }
+          ]
+        }
+      ],
+      "result": "Le résultat le plus solide est architectural plutôt que centré sur le modèle. L'objet utile est un graphe provisoire d'hypothèses, de contraintes et de signaux inspectables.",
+      "nextSteps": [
+        "Définir un schéma minimal pour les hypothèses issues de la première conversation et leurs niveaux d'incertitude.",
+        "Tester comment séparer voix, texte et métadonnées avant tout workflow de machine learning en aval.",
+        "Décider quelles hypothèses peuvent être conservées et lesquelles doivent expirer sans confirmation."
+      ],
+      "relatedProjects": [
+        {
+          "id": "ea:project:voice-capture-studio"
+        },
+        {
+          "id": "ea:project:vestiges"
+        }
+      ],
+      "relatedSoftware": [
+        {
+          "id": "ea:program:vaste"
+        },
+        {
+          "id": "ea:program:oreth"
+        }
+      ],
+      "relatedArticles": [
+        {
+          "id": "ea:publication:ai-agents-vs-ai-workflows"
+        },
+        {
+          "id": "ea:publication:retrieval-augmented-generation-and-knowledge-systems"
+        },
+        {
+          "id": "ea:publication:model-context-protocol-and-tool-using-ai-systems"
+        },
+        {
+          "id": "ea:publication:human-computer-interaction-for-creative-tools"
+        }
+      ],
+      "relatedCollections": [
+        {
+          "id": "ea:collection:voice-capture-studio"
+        }
+      ],
+      "relatedConcepts": [
+        {
+          "id": "ea:concept:ai-agent"
+        },
+        {
+          "id": "ea:concept:knowledge-graph"
+        },
+        {
+          "id": "ea:concept:machine-learning-workflows"
+        },
+        {
+          "id": "ea:concept:human-computer-interaction"
+        },
+        {
+          "id": "ea:concept:contextual-execution"
+        },
+        {
+          "id": "ea:concept:entity-identity"
+        },
+        {
+          "id": "ea:concept:voice-technology"
+        }
+      ],
+      "relatedTechnologies": [
+        {
+          "id": "ea:technology:model-context-protocol"
+        },
+        {
+          "id": "ea:technology:web-audio-api"
+        },
+        {
+          "id": "ea:technology:webnn"
+        }
+      ],
+      "relatedRepositories": [
+        {
+          "title": "Dépôt Voice Capture Studio",
+          "url": "https://github.com/electronicartefacts/voice-capture-studio",
+          "publisher": "GitHub",
+          "accessedAt": "2026-07-09"
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-01-01",
+          "title": "Cadrage de la recherche",
+          "summary": "La question a été séparée de l'onboarding IA générique et reformulée autour de la compréhension au premier contact."
+        },
+        {
+          "date": "2026-07-09",
+          "title": "Intégration dans l'atlas de la page d'accueil",
+          "summary": "La question devient une fiche du graphe reliée aux logiciels et preuves actuels."
+        }
+      ],
+      "temporality": {
+        "creationDate": "2026-07-09",
+        "lastUpdated": "2026-07-09",
+        "releaseDate": "2026-07-09",
+        "creationYear": "2026"
+      }
+    },
+    {
+      "id": "ea:researchQuestion:self-explaining-knowledge-graph-software-fr",
+      "legacyId": "self-explaining-knowledge-graph-software-fr",
+      "kind": "researchQuestion",
+      "type": "researchQuestion",
+      "locale": "fr",
+      "translationKey": "research-question:self-explaining-knowledge-graph-software",
+      "translationOf": "ea:researchQuestion:self-explaining-knowledge-graph-software",
+      "title": "Comment un logiciel peut-il devenir explicable par son propre graphe de connaissance ?",
+      "subtitle": "Question de recherche 003",
+      "summary": "Cette question étudie si un logiciel peut expliquer son objectif, ses preuves, dépendances et limites à travers le même graphe qui génère ses pages publiques et ses fiches machine-readable.",
+      "description": "Question de recherche publique d'Electronic Artefacts sur les logiciels explicables, les graphes de connaissance, la documentation générée et les surfaces publiques sémantiques.",
+      "status": "active",
+      "maturity": "research",
+      "confidence": "validated",
+      "visibility": "public",
+      "publicationClass": "canonical",
+      "tags": [
+        "Graphe de connaissance",
+        "Linked Data",
+        "Documentation",
+        "Logiciel explicable",
+        "Génération de site statique"
+      ],
+      "discipline": [
+        "Architecture de l'information",
+        "Architecture logicielle",
+        "Systèmes de connaissance",
+        "Développement web"
+      ],
+      "route": "/fr/research/questions/self-explaining-knowledge-graph-software/",
+      "identifier": "/fr/id/research-question/self-explaining-knowledge-graph-software/",
+      "started": "2026-03-01",
+      "updated": "2026-07-09",
+      "priority": 3,
+      "homepage": true,
+      "observation": "La documentation devient vite obsolète lorsqu'elle est séparée des entités, relations et routes que le système logiciel utilise réellement.",
+      "problem": "Un projet peut avoir pages, JSON-LD, données de recherche, exports de relations et fichiers source qui divergent si aucun graphe structuré ne joue le rôle de couche d'autorité.",
+      "hypothesis": "Le graphe de connaissance peut devenir la couche documentaire principale lorsque pages, identifiants, voisinages de graphe, documents de recherche et panneaux relationnels sont générés depuis les mêmes fiches source.",
+      "currentUnderstanding": "L'explicabilité progresse lorsque l'interface publique expose le graphe au lieu de le cacher. Une page devrait montrer ce qu'elle est, ses liens, ses preuves et les limites de ses affirmations.",
+      "experiments": [
+        {
+          "id": "generated-entity-pages",
+          "title": "Pages d'entités générées",
+          "status": "active",
+          "summary": "Le site Electronic Artefacts génère pages canoniques, identifiants, JSON-LD, documents de recherche et voisinages de graphe depuis des fiches Markdown typées.",
+          "relatedEntities": [
+            {
+              "id": "ea:framework:electronic-artefacts-lightweight-template"
+            },
+            {
+              "id": "ea:concept:linked-data"
+            }
+          ]
+        },
+        {
+          "id": "relationship-panels",
+          "title": "Panneaux relationnels",
+          "status": "observed",
+          "summary": "Les pages de projets, programmes, concepts et publications exposent des relations typées pour expliquer pourquoi les fiches sont connectées.",
+          "relatedEntities": [
+            {
+              "id": "ea:concept:knowledge-graph"
+            },
+            {
+              "id": "ea:concept:entity-identity"
+            }
+          ]
+        }
+      ],
+      "result": "Le site démontre déjà une réponse partielle. HTML public, identifiants, JSON-LD, recherche et fichiers de graphe local sont générés depuis des fiches typées plutôt que maintenus séparément.",
+      "nextSteps": [
+        "Ajouter davantage de relations dérivées tout en conservant la revue éditoriale.",
+        "Rendre les voisinages de graphe plus faciles à inspecter depuis les pages publiques.",
+        "Définir ce qui constitue une preuve suffisante avant qu'une relation devienne canonique."
+      ],
+      "relatedProjects": [
+        {
+          "id": "ea:project:vestiges"
+        },
+        {
+          "id": "ea:project:voice-capture-studio"
+        }
+      ],
+      "relatedSoftware": [
+        {
+          "id": "ea:program:vaste"
+        },
+        {
+          "id": "ea:framework:electronic-artefacts-lightweight-template"
+        }
+      ],
+      "relatedArticles": [
+        {
+          "id": "ea:publication:linked-data-and-public-knowledge-pages"
+        },
+        {
+          "id": "ea:publication:knowledge-graphs-for-cultural-infrastructure"
+        },
+        {
+          "id": "ea:publication:ai-search-structured-content-and-knowledge-graph-seo"
+        },
+        {
+          "id": "ea:publication:why-graphs-are-more-powerful-than-folders"
+        },
+        {
+          "id": "ea:publication:contextual-execution-and-graph-runtimes"
+        }
+      ],
+      "relatedCollections": [
+        {
+          "id": "ea:collection:knowledge-hub-foundations"
+        },
+        {
+          "id": "ea:collection:knowledge-hub-third-wave"
+        }
+      ],
+      "relatedConcepts": [
+        {
+          "id": "ea:concept:knowledge-graph"
+        },
+        {
+          "id": "ea:concept:graph-runtime"
+        },
+        {
+          "id": "ea:concept:linked-data"
+        },
+        {
+          "id": "ea:concept:metadata"
+        },
+        {
+          "id": "ea:concept:entity-identity"
+        },
+        {
+          "id": "ea:concept:provenance"
+        },
+        {
+          "id": "ea:concept:hypertext"
+        },
+        {
+          "id": "ea:concept:personal-knowledge-system"
+        }
+      ],
+      "relatedTechnologies": [
+        {
+          "id": "ea:technology:json-ld"
+        },
+        {
+          "id": "ea:technology:rdf"
+        },
+        {
+          "id": "ea:technology:web-animations"
+        }
+      ],
+      "relatedRepositories": [
+        {
+          "title": "Dépôt source du site Electronic Artefacts",
+          "url": "https://github.com/onlythejoe",
+          "publisher": "GitHub",
+          "accessedAt": "2026-07-09"
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-03-01",
+          "title": "Requalification de la documentation",
+          "summary": "L'architecture du site est reformulée comme graphe public plutôt que comme suite de pages de portfolio maintenues à la main."
+        },
+        {
+          "date": "2026-07-09",
+          "title": "Ajout de l'entité question de recherche",
+          "summary": "Les questions de recherche deviennent des entités du graphe, permettant aux projets et logiciels de pointer vers ce qu'ils testent."
+        }
+      ],
+      "temporality": {
+        "creationDate": "2026-07-09",
+        "lastUpdated": "2026-07-09",
+        "releaseDate": "2026-07-09",
+        "creationYear": "2026"
+      }
+    },
+    {
+      "id": "ea:researchQuestion:speech-dataset-reproducibility-fr",
+      "legacyId": "speech-dataset-reproducibility-fr",
+      "kind": "researchQuestion",
+      "type": "researchQuestion",
+      "locale": "fr",
+      "translationKey": "research-question:speech-dataset-reproducibility",
+      "translationOf": "ea:researchQuestion:speech-dataset-reproducibility",
+      "title": "Comment les datasets vocaux peuvent-ils devenir reproductibles, structurés et privacy-first ?",
+      "subtitle": "Question de recherche 002",
+      "summary": "Cette question étudie comment l'enregistrement vocal dans le navigateur peut standardiser acquisition, métadonnées et revue tout en gardant la matière vocale privée sous contrôle local.",
+      "description": "Question de recherche publique d'Electronic Artefacts sur les datasets vocaux reproductibles, l'enregistrement local-first et les workflows vocaux riches en métadonnées.",
+      "status": "active",
+      "maturity": "research",
+      "confidence": "published",
+      "visibility": "public",
+      "publicationClass": "canonical",
+      "tags": [
+        "Datasets vocaux",
+        "Confidentialité",
+        "Web Audio",
+        "Local First",
+        "Open Source"
+      ],
+      "discipline": [
+        "Ingénierie audio",
+        "Machine Learning",
+        "Développement web",
+        "Ingénierie des données"
+      ],
+      "route": "/fr/research/questions/speech-dataset-reproducibility/",
+      "identifier": "/fr/id/research-question/speech-dataset-reproducibility/",
+      "started": "2026-02-01",
+      "updated": "2026-07-09",
+      "priority": 2,
+      "homepage": true,
+      "observation": "Les datasets vocaux sont souvent assemblés avec des outils hétérogènes, des dossiers libres et des métadonnées manquantes, ce qui rend la revue, le consentement et la reproduction difficiles.",
+      "problem": "La qualité du dataset est souvent discutée après l'enregistrement, lorsque de nombreuses conditions importantes ont déjà disparu. La confidentialité devient aussi plus difficile à vérifier si l'outil masque le lieu de stockage de l'audio.",
+      "hypothesis": "Un workflow d'enregistrement dans le navigateur peut standardiser acquisition, états de revue, métadonnées et structure d'export sans logiciel propriétaire ni upload distant.",
+      "currentUnderstanding": "Capturer les données est aussi important qu'entraîner les modèles. Un workflow vocal utile doit préserver prompt, locuteur, timing, qualité, revue et contexte d'export avant tout travail de modèle.",
+      "experiments": [
+        {
+          "id": "local-browser-workspace",
+          "title": "Workspace local dans le navigateur",
+          "status": "active",
+          "summary": "Voice Capture Studio garde les enregistrements dans le stockage local du navigateur ou dans des dossiers explicitement choisis, puis exporte une session structurée.",
+          "relatedEntities": [
+            {
+              "id": "ea:project:voice-capture-studio"
+            },
+            {
+              "id": "ea:concept:browser-software"
+            }
+          ]
+        },
+        {
+          "id": "wav-metadata-export",
+          "title": "Export WAV et métadonnées",
+          "status": "observed",
+          "summary": "Le projet teste si audio, transcription, timing, qualité et manifestes peuvent former une seule sortie de session reproductible.",
+          "relatedEntities": [
+            {
+              "id": "ea:concept:speech-datasets"
+            },
+            {
+              "id": "ea:concept:metadata"
+            }
+          ]
+        }
+      ],
+      "result": "La réponse logicielle immédiate est Voice Capture Studio : un enregistreur local-first dans le navigateur avec exports structurés et séparation explicite entre enregistrement et entraînement.",
+      "nextSteps": [
+        "Étendre les définitions de corpus en gardant source, version et langue explicites.",
+        "Tester les exports avec des workflows de revue et d'alignement en aval.",
+        "Définir des notes de consentement et de suppression qui restent attachées aux manifestes."
+      ],
+      "relatedProjects": [
+        {
+          "id": "ea:project:voice-capture-studio"
+        }
+      ],
+      "relatedSoftware": [
+        {
+          "id": "ea:program:oreth"
+        },
+        {
+          "id": "ea:framework:electronic-artefacts-lightweight-template"
+        }
+      ],
+      "relatedArticles": [
+        {
+          "id": "ea:publication:web-audio-and-browser-based-sound-systems"
+        },
+        {
+          "id": "ea:publication:local-and-open-source-ai-systems"
+        },
+        {
+          "id": "ea:publication:open-source-as-cultural-infrastructure"
+        },
+        {
+          "id": "ea:publication:webnn-and-local-ai-in-the-browser"
+        }
+      ],
+      "relatedCollections": [
+        {
+          "id": "ea:collection:voice-capture-studio"
+        }
+      ],
+      "relatedConcepts": [
+        {
+          "id": "ea:concept:speech-datasets"
+        },
+        {
+          "id": "ea:concept:speech-recording"
+        },
+        {
+          "id": "ea:concept:voice-technology"
+        },
+        {
+          "id": "ea:concept:metadata"
+        },
+        {
+          "id": "ea:concept:provenance"
+        },
+        {
+          "id": "ea:concept:machine-learning-workflows"
+        },
+        {
+          "id": "ea:concept:browser-software"
+        },
+        {
+          "id": "ea:concept:open-source"
+        }
+      ],
+      "relatedTechnologies": [
+        {
+          "id": "ea:technology:web-audio-api"
+        },
+        {
+          "id": "ea:technology:webnn"
+        }
+      ],
+      "relatedRepositories": [
+        {
+          "title": "Dépôt Voice Capture Studio",
+          "url": "https://github.com/electronicartefacts/voice-capture-studio",
+          "publisher": "GitHub",
+          "accessedAt": "2026-07-09"
+        },
+        {
+          "title": "Documentation Voice Capture Studio",
+          "url": "https://github.com/electronicartefacts/voice-capture-studio/tree/main/docs",
+          "publisher": "GitHub",
+          "accessedAt": "2026-07-09"
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-02-01",
+          "title": "Séparation du workflow dataset",
+          "summary": "La recherche a séparé capture vocale et entraînement aval afin de concevoir directement la frontière de capture."
+        },
+        {
+          "date": "2026-07-09",
+          "title": "Publication open source",
+          "summary": "Voice Capture Studio devient la réponse logicielle publique et la source de preuve de la question."
+        }
+      ],
+      "temporality": {
+        "creationDate": "2026-07-09",
+        "lastUpdated": "2026-07-09",
+        "releaseDate": "2026-07-09",
+        "creationYear": "2026"
+      }
+    },
+    {
       "id": "ea:technology:activitypub-fr",
       "legacyId": "activitypub-fr",
       "kind": "technology",
@@ -13088,6 +13616,531 @@ window.EA_PUBLIC_CATALOG = {
         "lastUpdated": "2026-06-22",
         "releaseDate": "2026-06-22",
         "creationYear": "2024"
+      }
+    },
+    {
+      "id": "ea:researchQuestion:first-conversation-understanding",
+      "legacyId": "first-conversation-understanding",
+      "kind": "researchQuestion",
+      "type": "researchQuestion",
+      "locale": "en",
+      "translationKey": "research-question:first-conversation-understanding",
+      "title": "How can an AI understand someone during its very first conversation?",
+      "subtitle": "Research Question 001",
+      "summary": "This research question studies whether conversational onboarding can build a reliable first model of a person without reducing intent, uncertainty and context to a static form.",
+      "description": "A public Electronic Artefacts research question about first-contact understanding, conversational onboarding and graph-shaped user context.",
+      "status": "active",
+      "maturity": "research",
+      "confidence": "observed",
+      "visibility": "public",
+      "publicationClass": "canonical",
+      "tags": [
+        "Conversational Onboarding",
+        "AI Agents",
+        "Knowledge Graph",
+        "Speech",
+        "User Understanding"
+      ],
+      "discipline": [
+        "Artificial Intelligence",
+        "Human Computer Interaction",
+        "Knowledge Systems",
+        "Software Architecture"
+      ],
+      "route": "/research/questions/first-conversation-understanding/",
+      "identifier": "/id/research-question/first-conversation-understanding/",
+      "started": "2026-01-01",
+      "updated": "2026-07-09",
+      "priority": 1,
+      "homepage": true,
+      "observation": "Forms collect answers, but they often fail to capture intent, uncertainty, vocabulary, changing context and the reasons a person gives for acting now.",
+      "problem": "A system that starts from rigid fields can mistake compliance for understanding. The first interaction should preserve enough ambiguity for later correction instead of forcing premature classification.",
+      "hypothesis": "Conversation itself can become the onboarding protocol when the system treats each exchange as evidence, not merely as input for a profile form.",
+      "currentUnderstanding": "Understanding should emerge progressively. A first conversation can identify provisional entities, goals, constraints, risks and unknowns, then keep those claims revisable as more evidence arrives.",
+      "experiments": [
+        {
+          "id": "conversational-brief-capture",
+          "title": "Conversational brief capture",
+          "status": "active",
+          "summary": "Contact and discovery flows are treated as structured conversations that identify intent, pathway, missing context and useful next questions.",
+          "relatedEntities": [
+            {
+              "id": "ea:concept:human-computer-interaction"
+            },
+            {
+              "id": "ea:concept:contextual-execution"
+            }
+          ]
+        },
+        {
+          "id": "voice-context-capture",
+          "title": "Voice context capture",
+          "status": "observed",
+          "summary": "Voice Capture Studio tests how speech capture can preserve transcript, timing, speaker and quality metadata without sending recordings to a remote service.",
+          "relatedEntities": [
+            {
+              "id": "ea:project:voice-capture-studio"
+            },
+            {
+              "id": "ea:concept:voice-technology"
+            }
+          ]
+        }
+      ],
+      "result": "The strongest result so far is architectural rather than model-centric. The useful object is a provisional graph of claims, constraints and signals that can be inspected and revised.",
+      "nextSteps": [
+        "Define a minimal schema for first-conversation claims and uncertainty levels.",
+        "Test how voice, text and metadata should be separated before downstream machine-learning work.",
+        "Decide which claims are safe to persist and which should expire unless confirmed."
+      ],
+      "relatedProjects": [
+        {
+          "id": "ea:project:voice-capture-studio"
+        },
+        {
+          "id": "ea:project:vestiges"
+        }
+      ],
+      "relatedSoftware": [
+        {
+          "id": "ea:program:vaste"
+        },
+        {
+          "id": "ea:program:oreth"
+        }
+      ],
+      "relatedArticles": [
+        {
+          "id": "ea:publication:ai-agents-vs-ai-workflows"
+        },
+        {
+          "id": "ea:publication:retrieval-augmented-generation-and-knowledge-systems"
+        },
+        {
+          "id": "ea:publication:model-context-protocol-and-tool-using-ai-systems"
+        },
+        {
+          "id": "ea:publication:human-computer-interaction-for-creative-tools"
+        }
+      ],
+      "relatedCollections": [
+        {
+          "id": "ea:collection:voice-capture-studio"
+        }
+      ],
+      "relatedConcepts": [
+        {
+          "id": "ea:concept:ai-agent"
+        },
+        {
+          "id": "ea:concept:knowledge-graph"
+        },
+        {
+          "id": "ea:concept:machine-learning-workflows"
+        },
+        {
+          "id": "ea:concept:human-computer-interaction"
+        },
+        {
+          "id": "ea:concept:contextual-execution"
+        },
+        {
+          "id": "ea:concept:entity-identity"
+        },
+        {
+          "id": "ea:concept:voice-technology"
+        }
+      ],
+      "relatedTechnologies": [
+        {
+          "id": "ea:technology:model-context-protocol"
+        },
+        {
+          "id": "ea:technology:web-audio-api"
+        },
+        {
+          "id": "ea:technology:webnn"
+        }
+      ],
+      "relatedRepositories": [
+        {
+          "title": "Voice Capture Studio repository",
+          "url": "https://github.com/electronicartefacts/voice-capture-studio",
+          "publisher": "GitHub",
+          "accessedAt": "2026-07-09"
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-01-01",
+          "title": "Research framing",
+          "summary": "The question was separated from generic AI onboarding and reframed around first-contact understanding."
+        },
+        {
+          "date": "2026-07-09",
+          "title": "Homepage atlas integration",
+          "summary": "The question became a first-class knowledge-graph record connected to current software and evidence."
+        }
+      ],
+      "temporality": {
+        "creationDate": "2026-07-09",
+        "lastUpdated": "2026-07-09",
+        "releaseDate": "2026-07-09",
+        "creationYear": "2026"
+      }
+    },
+    {
+      "id": "ea:researchQuestion:self-explaining-knowledge-graph-software",
+      "legacyId": "self-explaining-knowledge-graph-software",
+      "kind": "researchQuestion",
+      "type": "researchQuestion",
+      "locale": "en",
+      "translationKey": "research-question:self-explaining-knowledge-graph-software",
+      "title": "How can software become explainable through its own knowledge graph?",
+      "subtitle": "Research Question 003",
+      "summary": "This research question studies whether software can explain its purpose, evidence, dependencies and limits through the same graph that generates its public pages and machine-readable records.",
+      "description": "A public Electronic Artefacts research question about self-explaining software, knowledge graphs, generated documentation and semantic public surfaces.",
+      "status": "active",
+      "maturity": "research",
+      "confidence": "validated",
+      "visibility": "public",
+      "publicationClass": "canonical",
+      "tags": [
+        "Knowledge Graph",
+        "Linked Data",
+        "Documentation",
+        "Explainable Software",
+        "Static Site Generation"
+      ],
+      "discipline": [
+        "Information Architecture",
+        "Software Architecture",
+        "Knowledge Systems",
+        "Web Development"
+      ],
+      "route": "/research/questions/self-explaining-knowledge-graph-software/",
+      "identifier": "/id/research-question/self-explaining-knowledge-graph-software/",
+      "started": "2026-03-01",
+      "updated": "2026-07-09",
+      "priority": 3,
+      "homepage": true,
+      "observation": "Documentation quickly becomes outdated when it is separate from the entities, relations and routes that a software system actually uses.",
+      "problem": "A project can have pages, JSON-LD, search data, relation exports and source files that disagree unless one structured graph acts as the authority layer.",
+      "hypothesis": "The knowledge graph itself can become the primary documentation layer when pages, identifiers, graph neighborhoods, search documents and relation panels are generated from the same source records.",
+      "currentUnderstanding": "Explainability improves when the public interface exposes the graph instead of hiding it. A page should show what it is, what it connects to, what evidence supports it and where its claims remain limited.",
+      "experiments": [
+        {
+          "id": "generated-entity-pages",
+          "title": "Generated entity pages",
+          "status": "active",
+          "summary": "The Electronic Artefacts site generates canonical pages, identifiers, JSON-LD, search documents and graph neighborhoods from typed Markdown records.",
+          "relatedEntities": [
+            {
+              "id": "ea:framework:electronic-artefacts-lightweight-template"
+            },
+            {
+              "id": "ea:concept:linked-data"
+            }
+          ]
+        },
+        {
+          "id": "relationship-panels",
+          "title": "Relationship panels",
+          "status": "observed",
+          "summary": "Project, program, concept and publication pages expose typed relations so readers can inspect why records are connected.",
+          "relatedEntities": [
+            {
+              "id": "ea:concept:knowledge-graph"
+            },
+            {
+              "id": "ea:concept:entity-identity"
+            }
+          ]
+        }
+      ],
+      "result": "The site already demonstrates a partial answer. Its public HTML, identifiers, JSON-LD, search documents and local graph files are generated from typed records rather than maintained as separate explanations.",
+      "nextSteps": [
+        "Add more derived relation patterns while preserving editorial review.",
+        "Make graph neighborhoods easier to inspect from public pages.",
+        "Define what counts as enough evidence before a relation becomes canonical."
+      ],
+      "relatedProjects": [
+        {
+          "id": "ea:project:vestiges"
+        },
+        {
+          "id": "ea:project:voice-capture-studio"
+        }
+      ],
+      "relatedSoftware": [
+        {
+          "id": "ea:program:vaste"
+        },
+        {
+          "id": "ea:framework:electronic-artefacts-lightweight-template"
+        }
+      ],
+      "relatedArticles": [
+        {
+          "id": "ea:publication:linked-data-and-public-knowledge-pages"
+        },
+        {
+          "id": "ea:publication:knowledge-graphs-for-cultural-infrastructure"
+        },
+        {
+          "id": "ea:publication:ai-search-structured-content-and-knowledge-graph-seo"
+        },
+        {
+          "id": "ea:publication:why-graphs-are-more-powerful-than-folders"
+        },
+        {
+          "id": "ea:publication:contextual-execution-and-graph-runtimes"
+        }
+      ],
+      "relatedCollections": [
+        {
+          "id": "ea:collection:knowledge-hub-foundations"
+        },
+        {
+          "id": "ea:collection:knowledge-hub-third-wave"
+        }
+      ],
+      "relatedConcepts": [
+        {
+          "id": "ea:concept:knowledge-graph"
+        },
+        {
+          "id": "ea:concept:graph-runtime"
+        },
+        {
+          "id": "ea:concept:linked-data"
+        },
+        {
+          "id": "ea:concept:metadata"
+        },
+        {
+          "id": "ea:concept:entity-identity"
+        },
+        {
+          "id": "ea:concept:provenance"
+        },
+        {
+          "id": "ea:concept:hypertext"
+        },
+        {
+          "id": "ea:concept:personal-knowledge-system"
+        }
+      ],
+      "relatedTechnologies": [
+        {
+          "id": "ea:technology:json-ld"
+        },
+        {
+          "id": "ea:technology:rdf"
+        },
+        {
+          "id": "ea:technology:web-animations"
+        }
+      ],
+      "relatedRepositories": [
+        {
+          "title": "Electronic Artefacts website source repository",
+          "url": "https://github.com/onlythejoe",
+          "publisher": "GitHub",
+          "accessedAt": "2026-07-09"
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-03-01",
+          "title": "Documentation reframing",
+          "summary": "The site architecture was reframed as a public graph rather than a set of manually maintained portfolio pages."
+        },
+        {
+          "date": "2026-07-09",
+          "title": "Research-question entity added",
+          "summary": "Research questions became graph entities, allowing projects and software to point back to the questions they test."
+        }
+      ],
+      "temporality": {
+        "creationDate": "2026-07-09",
+        "lastUpdated": "2026-07-09",
+        "releaseDate": "2026-07-09",
+        "creationYear": "2026"
+      }
+    },
+    {
+      "id": "ea:researchQuestion:speech-dataset-reproducibility",
+      "legacyId": "speech-dataset-reproducibility",
+      "kind": "researchQuestion",
+      "type": "researchQuestion",
+      "locale": "en",
+      "translationKey": "research-question:speech-dataset-reproducibility",
+      "title": "How can speech datasets become reproducible, structured and privacy-first?",
+      "subtitle": "Research Question 002",
+      "summary": "This research question studies how browser-based speech recording can standardize acquisition, metadata and review while keeping private voice material under local control.",
+      "description": "A public Electronic Artefacts research question about reproducible speech datasets, local-first recording and metadata-rich voice workflows.",
+      "status": "active",
+      "maturity": "research",
+      "confidence": "published",
+      "visibility": "public",
+      "publicationClass": "canonical",
+      "tags": [
+        "Speech Datasets",
+        "Privacy",
+        "Web Audio",
+        "Local First",
+        "Open Source"
+      ],
+      "discipline": [
+        "Audio Engineering",
+        "Machine Learning",
+        "Web Development",
+        "Data Engineering"
+      ],
+      "route": "/research/questions/speech-dataset-reproducibility/",
+      "identifier": "/id/research-question/speech-dataset-reproducibility/",
+      "started": "2026-02-01",
+      "updated": "2026-07-09",
+      "priority": 2,
+      "homepage": true,
+      "observation": "Voice datasets are often assembled through inconsistent tools, loose folders and missing metadata, which makes later review, consent checking and reproduction difficult.",
+      "problem": "Dataset quality is frequently discussed after recording, when many important conditions have already been lost. Privacy also becomes harder to reason about when capture tools hide where audio is stored.",
+      "hypothesis": "A browser-based recording workflow can standardize acquisition, review states, metadata and export structure without requiring proprietary desktop software or remote upload.",
+      "currentUnderstanding": "Capturing data is as important as training models. A useful speech workflow should preserve prompt, speaker, timing, quality, review and export context before any downstream model work begins.",
+      "experiments": [
+        {
+          "id": "local-browser-workspace",
+          "title": "Local browser workspace",
+          "status": "active",
+          "summary": "Voice Capture Studio keeps recordings in browser-local storage or explicit user-selected folders, then exports structured session material.",
+          "relatedEntities": [
+            {
+              "id": "ea:project:voice-capture-studio"
+            },
+            {
+              "id": "ea:concept:browser-software"
+            }
+          ]
+        },
+        {
+          "id": "wav-metadata-export",
+          "title": "WAV and metadata export",
+          "status": "observed",
+          "summary": "The project tests whether audio, transcript, timing, quality and manifest files can be treated as one reproducible capture-session output.",
+          "relatedEntities": [
+            {
+              "id": "ea:concept:speech-datasets"
+            },
+            {
+              "id": "ea:concept:metadata"
+            }
+          ]
+        }
+      ],
+      "result": "The immediate software answer is Voice Capture Studio: a local-first browser recorder with structured export boundaries and explicit separation between recording and model training.",
+      "nextSteps": [
+        "Expand corpus definitions while keeping source, version and language context explicit.",
+        "Test export packages against downstream review and alignment workflows.",
+        "Define consent and deletion notes that remain attached to dataset manifests."
+      ],
+      "relatedProjects": [
+        {
+          "id": "ea:project:voice-capture-studio"
+        }
+      ],
+      "relatedSoftware": [
+        {
+          "id": "ea:program:oreth"
+        },
+        {
+          "id": "ea:framework:electronic-artefacts-lightweight-template"
+        }
+      ],
+      "relatedArticles": [
+        {
+          "id": "ea:publication:web-audio-and-browser-based-sound-systems"
+        },
+        {
+          "id": "ea:publication:local-and-open-source-ai-systems"
+        },
+        {
+          "id": "ea:publication:open-source-as-cultural-infrastructure"
+        },
+        {
+          "id": "ea:publication:webnn-and-local-ai-in-the-browser"
+        }
+      ],
+      "relatedCollections": [
+        {
+          "id": "ea:collection:voice-capture-studio"
+        }
+      ],
+      "relatedConcepts": [
+        {
+          "id": "ea:concept:speech-datasets"
+        },
+        {
+          "id": "ea:concept:speech-recording"
+        },
+        {
+          "id": "ea:concept:voice-technology"
+        },
+        {
+          "id": "ea:concept:metadata"
+        },
+        {
+          "id": "ea:concept:provenance"
+        },
+        {
+          "id": "ea:concept:machine-learning-workflows"
+        },
+        {
+          "id": "ea:concept:browser-software"
+        },
+        {
+          "id": "ea:concept:open-source"
+        }
+      ],
+      "relatedTechnologies": [
+        {
+          "id": "ea:technology:web-audio-api"
+        },
+        {
+          "id": "ea:technology:webnn"
+        }
+      ],
+      "relatedRepositories": [
+        {
+          "title": "Voice Capture Studio repository",
+          "url": "https://github.com/electronicartefacts/voice-capture-studio",
+          "publisher": "GitHub",
+          "accessedAt": "2026-07-09"
+        },
+        {
+          "title": "Voice Capture Studio documentation",
+          "url": "https://github.com/electronicartefacts/voice-capture-studio/tree/main/docs",
+          "publisher": "GitHub",
+          "accessedAt": "2026-07-09"
+        }
+      ],
+      "timeline": [
+        {
+          "date": "2026-02-01",
+          "title": "Dataset workflow split",
+          "summary": "The research separated speech capture from downstream model training so the capture boundary could be designed directly."
+        },
+        {
+          "date": "2026-07-09",
+          "title": "Open-source project publication",
+          "summary": "Voice Capture Studio became the public software answer and evidence source for the question."
+        }
+      ],
+      "temporality": {
+        "creationDate": "2026-07-09",
+        "lastUpdated": "2026-07-09",
+        "releaseDate": "2026-07-09",
+        "creationYear": "2026"
       }
     },
     {
@@ -16454,6 +17507,714 @@ window.EA_PUBLIC_CATALOG = {
       "createdAt": "2026-07-09",
       "reviewedAt": "2026-07-09",
       "visibility": "public"
+    },
+    {
+      "id": "ear:first-conversation-understanding-implemented-by-voice-capture-studio",
+      "subject": "ea:researchQuestion:first-conversation-understanding",
+      "predicate": "implementedBy",
+      "object": "ea:project:voice-capture-studio",
+      "statement": "Voice Capture Studio is listed as a current software or project answer for the research question \"How can an AI understand someone during its very first conversation?\".",
+      "confidence": "observed",
+      "validFrom": "2026-01-01",
+      "createdAt": "2026-01-01",
+      "reviewedAt": "2026-07-09",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:first-conversation-understanding-implemented-by-vestiges",
+      "subject": "ea:researchQuestion:first-conversation-understanding",
+      "predicate": "implementedBy",
+      "object": "ea:project:vestiges",
+      "statement": "Vestiges is listed as a current software or project answer for the research question \"How can an AI understand someone during its very first conversation?\".",
+      "confidence": "observed",
+      "validFrom": "2026-01-01",
+      "createdAt": "2026-01-01",
+      "reviewedAt": "2026-07-09",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:first-conversation-understanding-implemented-by-vaste",
+      "subject": "ea:researchQuestion:first-conversation-understanding",
+      "predicate": "implementedBy",
+      "object": "ea:program:vaste",
+      "statement": "VASTE is listed as a current software or project answer for the research question \"How can an AI understand someone during its very first conversation?\".",
+      "confidence": "observed",
+      "validFrom": "2026-01-01",
+      "createdAt": "2026-01-01",
+      "reviewedAt": "2026-07-09",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:first-conversation-understanding-implemented-by-oreth",
+      "subject": "ea:researchQuestion:first-conversation-understanding",
+      "predicate": "implementedBy",
+      "object": "ea:program:oreth",
+      "statement": "ORETH is listed as a current software or project answer for the research question \"How can an AI understand someone during its very first conversation?\".",
+      "confidence": "observed",
+      "validFrom": "2026-01-01",
+      "createdAt": "2026-01-01",
+      "reviewedAt": "2026-07-09",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:first-conversation-understanding-applies-concept-ai-agent",
+      "subject": "ea:researchQuestion:first-conversation-understanding",
+      "predicate": "appliesConcept",
+      "object": "ea:concept:ai-agent",
+      "statement": "The research question \"How can an AI understand someone during its very first conversation?\" applies AI Agent as part of its current model.",
+      "confidence": "observed",
+      "validFrom": "2026-01-01",
+      "createdAt": "2026-01-01",
+      "reviewedAt": "2026-07-09",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:first-conversation-understanding-applies-concept-knowledge-graph",
+      "subject": "ea:researchQuestion:first-conversation-understanding",
+      "predicate": "appliesConcept",
+      "object": "ea:concept:knowledge-graph",
+      "statement": "The research question \"How can an AI understand someone during its very first conversation?\" applies Knowledge Graph as part of its current model.",
+      "confidence": "observed",
+      "validFrom": "2026-01-01",
+      "createdAt": "2026-01-01",
+      "reviewedAt": "2026-07-09",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:first-conversation-understanding-applies-concept-machine-learning-workflows",
+      "subject": "ea:researchQuestion:first-conversation-understanding",
+      "predicate": "appliesConcept",
+      "object": "ea:concept:machine-learning-workflows",
+      "statement": "The research question \"How can an AI understand someone during its very first conversation?\" applies Machine Learning Workflows as part of its current model.",
+      "confidence": "observed",
+      "validFrom": "2026-01-01",
+      "createdAt": "2026-01-01",
+      "reviewedAt": "2026-07-09",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:first-conversation-understanding-applies-concept-human-computer-interaction",
+      "subject": "ea:researchQuestion:first-conversation-understanding",
+      "predicate": "appliesConcept",
+      "object": "ea:concept:human-computer-interaction",
+      "statement": "The research question \"How can an AI understand someone during its very first conversation?\" applies Human Computer Interaction as part of its current model.",
+      "confidence": "observed",
+      "validFrom": "2026-01-01",
+      "createdAt": "2026-01-01",
+      "reviewedAt": "2026-07-09",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:first-conversation-understanding-applies-concept-contextual-execution",
+      "subject": "ea:researchQuestion:first-conversation-understanding",
+      "predicate": "appliesConcept",
+      "object": "ea:concept:contextual-execution",
+      "statement": "The research question \"How can an AI understand someone during its very first conversation?\" applies Contextual Execution as part of its current model.",
+      "confidence": "observed",
+      "validFrom": "2026-01-01",
+      "createdAt": "2026-01-01",
+      "reviewedAt": "2026-07-09",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:first-conversation-understanding-applies-concept-entity-identity",
+      "subject": "ea:researchQuestion:first-conversation-understanding",
+      "predicate": "appliesConcept",
+      "object": "ea:concept:entity-identity",
+      "statement": "The research question \"How can an AI understand someone during its very first conversation?\" applies Entity Identity as part of its current model.",
+      "confidence": "observed",
+      "validFrom": "2026-01-01",
+      "createdAt": "2026-01-01",
+      "reviewedAt": "2026-07-09",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:first-conversation-understanding-applies-concept-voice-technology",
+      "subject": "ea:researchQuestion:first-conversation-understanding",
+      "predicate": "appliesConcept",
+      "object": "ea:concept:voice-technology",
+      "statement": "The research question \"How can an AI understand someone during its very first conversation?\" applies Voice Technology as part of its current model.",
+      "confidence": "observed",
+      "validFrom": "2026-01-01",
+      "createdAt": "2026-01-01",
+      "reviewedAt": "2026-07-09",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:first-conversation-understanding-uses-technology-model-context-protocol",
+      "subject": "ea:researchQuestion:first-conversation-understanding",
+      "predicate": "usesTechnology",
+      "object": "ea:technology:model-context-protocol",
+      "statement": "The research question \"How can an AI understand someone during its very first conversation?\" uses Model Context Protocol as a relevant technical reference.",
+      "confidence": "observed",
+      "validFrom": "2026-01-01",
+      "createdAt": "2026-01-01",
+      "reviewedAt": "2026-07-09",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:first-conversation-understanding-uses-technology-web-audio-api",
+      "subject": "ea:researchQuestion:first-conversation-understanding",
+      "predicate": "usesTechnology",
+      "object": "ea:technology:web-audio-api",
+      "statement": "The research question \"How can an AI understand someone during its very first conversation?\" uses Web Audio API as a relevant technical reference.",
+      "confidence": "observed",
+      "validFrom": "2026-01-01",
+      "createdAt": "2026-01-01",
+      "reviewedAt": "2026-07-09",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:first-conversation-understanding-uses-technology-webnn",
+      "subject": "ea:researchQuestion:first-conversation-understanding",
+      "predicate": "usesTechnology",
+      "object": "ea:technology:webnn",
+      "statement": "The research question \"How can an AI understand someone during its very first conversation?\" uses WebNN as a relevant technical reference.",
+      "confidence": "observed",
+      "validFrom": "2026-01-01",
+      "createdAt": "2026-01-01",
+      "reviewedAt": "2026-07-09",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:ai-agents-vs-ai-workflows-documents-first-conversation-understanding",
+      "subject": "ea:publication:ai-agents-vs-ai-workflows",
+      "predicate": "documents",
+      "object": "ea:researchQuestion:first-conversation-understanding",
+      "statement": "AI Agents vs AI Workflows documents context, evidence or vocabulary for the research question \"How can an AI understand someone during its very first conversation?\".",
+      "confidence": "observed",
+      "validFrom": "2026-01-01",
+      "createdAt": "2026-01-01",
+      "reviewedAt": "2026-07-09",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:retrieval-augmented-generation-and-knowledge-systems-documents-first-conversation-understanding",
+      "subject": "ea:publication:retrieval-augmented-generation-and-knowledge-systems",
+      "predicate": "documents",
+      "object": "ea:researchQuestion:first-conversation-understanding",
+      "statement": "Retrieval-Augmented Generation and Knowledge Systems documents context, evidence or vocabulary for the research question \"How can an AI understand someone during its very first conversation?\".",
+      "confidence": "observed",
+      "validFrom": "2026-01-01",
+      "createdAt": "2026-01-01",
+      "reviewedAt": "2026-07-09",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:model-context-protocol-and-tool-using-ai-systems-documents-first-conversation-understanding",
+      "subject": "ea:publication:model-context-protocol-and-tool-using-ai-systems",
+      "predicate": "documents",
+      "object": "ea:researchQuestion:first-conversation-understanding",
+      "statement": "Model Context Protocol and Tool-Using AI Systems documents context, evidence or vocabulary for the research question \"How can an AI understand someone during its very first conversation?\".",
+      "confidence": "observed",
+      "validFrom": "2026-01-01",
+      "createdAt": "2026-01-01",
+      "reviewedAt": "2026-07-09",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:human-computer-interaction-for-creative-tools-documents-first-conversation-understanding",
+      "subject": "ea:publication:human-computer-interaction-for-creative-tools",
+      "predicate": "documents",
+      "object": "ea:researchQuestion:first-conversation-understanding",
+      "statement": "Human Computer Interaction for Creative Tools documents context, evidence or vocabulary for the research question \"How can an AI understand someone during its very first conversation?\".",
+      "confidence": "observed",
+      "validFrom": "2026-01-01",
+      "createdAt": "2026-01-01",
+      "reviewedAt": "2026-07-09",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:first-conversation-understanding-member-of-collection-voice-capture-studio",
+      "subject": "ea:researchQuestion:first-conversation-understanding",
+      "predicate": "memberOfCollection",
+      "object": "ea:collection:voice-capture-studio",
+      "statement": "The research question \"How can an AI understand someone during its very first conversation?\" belongs to the Voice Capture Studio Collection collection for editorial navigation.",
+      "confidence": "observed",
+      "validFrom": "2026-01-01",
+      "createdAt": "2026-01-01",
+      "reviewedAt": "2026-07-09",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:self-explaining-knowledge-graph-software-implemented-by-vestiges",
+      "subject": "ea:researchQuestion:self-explaining-knowledge-graph-software",
+      "predicate": "implementedBy",
+      "object": "ea:project:vestiges",
+      "statement": "Vestiges is listed as a current software or project answer for the research question \"How can software become explainable through its own knowledge graph?\".",
+      "confidence": "validated",
+      "validFrom": "2026-03-01",
+      "createdAt": "2026-03-01",
+      "reviewedAt": "2026-07-09",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:self-explaining-knowledge-graph-software-implemented-by-voice-capture-studio",
+      "subject": "ea:researchQuestion:self-explaining-knowledge-graph-software",
+      "predicate": "implementedBy",
+      "object": "ea:project:voice-capture-studio",
+      "statement": "Voice Capture Studio is listed as a current software or project answer for the research question \"How can software become explainable through its own knowledge graph?\".",
+      "confidence": "validated",
+      "validFrom": "2026-03-01",
+      "createdAt": "2026-03-01",
+      "reviewedAt": "2026-07-09",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:self-explaining-knowledge-graph-software-implemented-by-vaste",
+      "subject": "ea:researchQuestion:self-explaining-knowledge-graph-software",
+      "predicate": "implementedBy",
+      "object": "ea:program:vaste",
+      "statement": "VASTE is listed as a current software or project answer for the research question \"How can software become explainable through its own knowledge graph?\".",
+      "confidence": "validated",
+      "validFrom": "2026-03-01",
+      "createdAt": "2026-03-01",
+      "reviewedAt": "2026-07-09",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:self-explaining-knowledge-graph-software-implemented-by-electronic-artefacts-lightweight-template",
+      "subject": "ea:researchQuestion:self-explaining-knowledge-graph-software",
+      "predicate": "implementedBy",
+      "object": "ea:framework:electronic-artefacts-lightweight-template",
+      "statement": "Electronic Artefacts Lightweight Template is listed as a current software or project answer for the research question \"How can software become explainable through its own knowledge graph?\".",
+      "confidence": "validated",
+      "validFrom": "2026-03-01",
+      "createdAt": "2026-03-01",
+      "reviewedAt": "2026-07-09",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:self-explaining-knowledge-graph-software-applies-concept-knowledge-graph",
+      "subject": "ea:researchQuestion:self-explaining-knowledge-graph-software",
+      "predicate": "appliesConcept",
+      "object": "ea:concept:knowledge-graph",
+      "statement": "The research question \"How can software become explainable through its own knowledge graph?\" applies Knowledge Graph as part of its current model.",
+      "confidence": "validated",
+      "validFrom": "2026-03-01",
+      "createdAt": "2026-03-01",
+      "reviewedAt": "2026-07-09",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:self-explaining-knowledge-graph-software-applies-concept-graph-runtime",
+      "subject": "ea:researchQuestion:self-explaining-knowledge-graph-software",
+      "predicate": "appliesConcept",
+      "object": "ea:concept:graph-runtime",
+      "statement": "The research question \"How can software become explainable through its own knowledge graph?\" applies Graph Runtime as part of its current model.",
+      "confidence": "validated",
+      "validFrom": "2026-03-01",
+      "createdAt": "2026-03-01",
+      "reviewedAt": "2026-07-09",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:self-explaining-knowledge-graph-software-applies-concept-linked-data",
+      "subject": "ea:researchQuestion:self-explaining-knowledge-graph-software",
+      "predicate": "appliesConcept",
+      "object": "ea:concept:linked-data",
+      "statement": "The research question \"How can software become explainable through its own knowledge graph?\" applies Linked Data as part of its current model.",
+      "confidence": "validated",
+      "validFrom": "2026-03-01",
+      "createdAt": "2026-03-01",
+      "reviewedAt": "2026-07-09",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:self-explaining-knowledge-graph-software-applies-concept-metadata",
+      "subject": "ea:researchQuestion:self-explaining-knowledge-graph-software",
+      "predicate": "appliesConcept",
+      "object": "ea:concept:metadata",
+      "statement": "The research question \"How can software become explainable through its own knowledge graph?\" applies Metadata as part of its current model.",
+      "confidence": "validated",
+      "validFrom": "2026-03-01",
+      "createdAt": "2026-03-01",
+      "reviewedAt": "2026-07-09",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:self-explaining-knowledge-graph-software-applies-concept-entity-identity",
+      "subject": "ea:researchQuestion:self-explaining-knowledge-graph-software",
+      "predicate": "appliesConcept",
+      "object": "ea:concept:entity-identity",
+      "statement": "The research question \"How can software become explainable through its own knowledge graph?\" applies Entity Identity as part of its current model.",
+      "confidence": "validated",
+      "validFrom": "2026-03-01",
+      "createdAt": "2026-03-01",
+      "reviewedAt": "2026-07-09",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:self-explaining-knowledge-graph-software-applies-concept-provenance",
+      "subject": "ea:researchQuestion:self-explaining-knowledge-graph-software",
+      "predicate": "appliesConcept",
+      "object": "ea:concept:provenance",
+      "statement": "The research question \"How can software become explainable through its own knowledge graph?\" applies Provenance as part of its current model.",
+      "confidence": "validated",
+      "validFrom": "2026-03-01",
+      "createdAt": "2026-03-01",
+      "reviewedAt": "2026-07-09",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:self-explaining-knowledge-graph-software-applies-concept-hypertext",
+      "subject": "ea:researchQuestion:self-explaining-knowledge-graph-software",
+      "predicate": "appliesConcept",
+      "object": "ea:concept:hypertext",
+      "statement": "The research question \"How can software become explainable through its own knowledge graph?\" applies Hypertext as part of its current model.",
+      "confidence": "validated",
+      "validFrom": "2026-03-01",
+      "createdAt": "2026-03-01",
+      "reviewedAt": "2026-07-09",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:self-explaining-knowledge-graph-software-applies-concept-personal-knowledge-system",
+      "subject": "ea:researchQuestion:self-explaining-knowledge-graph-software",
+      "predicate": "appliesConcept",
+      "object": "ea:concept:personal-knowledge-system",
+      "statement": "The research question \"How can software become explainable through its own knowledge graph?\" applies Personal Knowledge System as part of its current model.",
+      "confidence": "validated",
+      "validFrom": "2026-03-01",
+      "createdAt": "2026-03-01",
+      "reviewedAt": "2026-07-09",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:self-explaining-knowledge-graph-software-uses-technology-json-ld",
+      "subject": "ea:researchQuestion:self-explaining-knowledge-graph-software",
+      "predicate": "usesTechnology",
+      "object": "ea:technology:json-ld",
+      "statement": "The research question \"How can software become explainable through its own knowledge graph?\" uses JSON-LD as a relevant technical reference.",
+      "confidence": "validated",
+      "validFrom": "2026-03-01",
+      "createdAt": "2026-03-01",
+      "reviewedAt": "2026-07-09",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:self-explaining-knowledge-graph-software-uses-technology-rdf",
+      "subject": "ea:researchQuestion:self-explaining-knowledge-graph-software",
+      "predicate": "usesTechnology",
+      "object": "ea:technology:rdf",
+      "statement": "The research question \"How can software become explainable through its own knowledge graph?\" uses RDF as a relevant technical reference.",
+      "confidence": "validated",
+      "validFrom": "2026-03-01",
+      "createdAt": "2026-03-01",
+      "reviewedAt": "2026-07-09",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:self-explaining-knowledge-graph-software-uses-technology-web-animations",
+      "subject": "ea:researchQuestion:self-explaining-knowledge-graph-software",
+      "predicate": "usesTechnology",
+      "object": "ea:technology:web-animations",
+      "statement": "The research question \"How can software become explainable through its own knowledge graph?\" uses Web Animations as a relevant technical reference.",
+      "confidence": "validated",
+      "validFrom": "2026-03-01",
+      "createdAt": "2026-03-01",
+      "reviewedAt": "2026-07-09",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:linked-data-and-public-knowledge-pages-documents-self-explaining-knowledge-graph-software",
+      "subject": "ea:publication:linked-data-and-public-knowledge-pages",
+      "predicate": "documents",
+      "object": "ea:researchQuestion:self-explaining-knowledge-graph-software",
+      "statement": "Linked Data and Public Knowledge Pages documents context, evidence or vocabulary for the research question \"How can software become explainable through its own knowledge graph?\".",
+      "confidence": "validated",
+      "validFrom": "2026-03-01",
+      "createdAt": "2026-03-01",
+      "reviewedAt": "2026-07-09",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:knowledge-graphs-for-cultural-infrastructure-documents-self-explaining-knowledge-graph-software",
+      "subject": "ea:publication:knowledge-graphs-for-cultural-infrastructure",
+      "predicate": "documents",
+      "object": "ea:researchQuestion:self-explaining-knowledge-graph-software",
+      "statement": "Knowledge Graphs for Cultural Infrastructure documents context, evidence or vocabulary for the research question \"How can software become explainable through its own knowledge graph?\".",
+      "confidence": "validated",
+      "validFrom": "2026-03-01",
+      "createdAt": "2026-03-01",
+      "reviewedAt": "2026-07-09",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:ai-search-structured-content-and-knowledge-graph-seo-documents-self-explaining-knowledge-graph-software",
+      "subject": "ea:publication:ai-search-structured-content-and-knowledge-graph-seo",
+      "predicate": "documents",
+      "object": "ea:researchQuestion:self-explaining-knowledge-graph-software",
+      "statement": "AI Search, Structured Content and Knowledge Graph SEO documents context, evidence or vocabulary for the research question \"How can software become explainable through its own knowledge graph?\".",
+      "confidence": "validated",
+      "validFrom": "2026-03-01",
+      "createdAt": "2026-03-01",
+      "reviewedAt": "2026-07-09",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:why-graphs-are-more-powerful-than-folders-documents-self-explaining-knowledge-graph-software",
+      "subject": "ea:publication:why-graphs-are-more-powerful-than-folders",
+      "predicate": "documents",
+      "object": "ea:researchQuestion:self-explaining-knowledge-graph-software",
+      "statement": "Why Graphs Are More Powerful Than Folders documents context, evidence or vocabulary for the research question \"How can software become explainable through its own knowledge graph?\".",
+      "confidence": "validated",
+      "validFrom": "2026-03-01",
+      "createdAt": "2026-03-01",
+      "reviewedAt": "2026-07-09",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:contextual-execution-and-graph-runtimes-documents-self-explaining-knowledge-graph-software",
+      "subject": "ea:publication:contextual-execution-and-graph-runtimes",
+      "predicate": "documents",
+      "object": "ea:researchQuestion:self-explaining-knowledge-graph-software",
+      "statement": "Contextual Execution and Graph Runtimes documents context, evidence or vocabulary for the research question \"How can software become explainable through its own knowledge graph?\".",
+      "confidence": "validated",
+      "validFrom": "2026-03-01",
+      "createdAt": "2026-03-01",
+      "reviewedAt": "2026-07-09",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:self-explaining-knowledge-graph-software-member-of-collection-knowledge-hub-foundations",
+      "subject": "ea:researchQuestion:self-explaining-knowledge-graph-software",
+      "predicate": "memberOfCollection",
+      "object": "ea:collection:knowledge-hub-foundations",
+      "statement": "The research question \"How can software become explainable through its own knowledge graph?\" belongs to the Knowledge Hub Foundations collection for editorial navigation.",
+      "confidence": "validated",
+      "validFrom": "2026-03-01",
+      "createdAt": "2026-03-01",
+      "reviewedAt": "2026-07-09",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:self-explaining-knowledge-graph-software-member-of-collection-knowledge-hub-third-wave",
+      "subject": "ea:researchQuestion:self-explaining-knowledge-graph-software",
+      "predicate": "memberOfCollection",
+      "object": "ea:collection:knowledge-hub-third-wave",
+      "statement": "The research question \"How can software become explainable through its own knowledge graph?\" belongs to the Knowledge Hub Third Wave collection for editorial navigation.",
+      "confidence": "validated",
+      "validFrom": "2026-03-01",
+      "createdAt": "2026-03-01",
+      "reviewedAt": "2026-07-09",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:speech-dataset-reproducibility-implemented-by-voice-capture-studio",
+      "subject": "ea:researchQuestion:speech-dataset-reproducibility",
+      "predicate": "implementedBy",
+      "object": "ea:project:voice-capture-studio",
+      "statement": "Voice Capture Studio is listed as a current software or project answer for the research question \"How can speech datasets become reproducible, structured and privacy-first?\".",
+      "confidence": "published",
+      "validFrom": "2026-02-01",
+      "createdAt": "2026-02-01",
+      "reviewedAt": "2026-07-09",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:speech-dataset-reproducibility-implemented-by-oreth",
+      "subject": "ea:researchQuestion:speech-dataset-reproducibility",
+      "predicate": "implementedBy",
+      "object": "ea:program:oreth",
+      "statement": "ORETH is listed as a current software or project answer for the research question \"How can speech datasets become reproducible, structured and privacy-first?\".",
+      "confidence": "published",
+      "validFrom": "2026-02-01",
+      "createdAt": "2026-02-01",
+      "reviewedAt": "2026-07-09",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:speech-dataset-reproducibility-implemented-by-electronic-artefacts-lightweight-template",
+      "subject": "ea:researchQuestion:speech-dataset-reproducibility",
+      "predicate": "implementedBy",
+      "object": "ea:framework:electronic-artefacts-lightweight-template",
+      "statement": "Electronic Artefacts Lightweight Template is listed as a current software or project answer for the research question \"How can speech datasets become reproducible, structured and privacy-first?\".",
+      "confidence": "published",
+      "validFrom": "2026-02-01",
+      "createdAt": "2026-02-01",
+      "reviewedAt": "2026-07-09",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:speech-dataset-reproducibility-applies-concept-speech-datasets",
+      "subject": "ea:researchQuestion:speech-dataset-reproducibility",
+      "predicate": "appliesConcept",
+      "object": "ea:concept:speech-datasets",
+      "statement": "The research question \"How can speech datasets become reproducible, structured and privacy-first?\" applies Speech Datasets as part of its current model.",
+      "confidence": "published",
+      "validFrom": "2026-02-01",
+      "createdAt": "2026-02-01",
+      "reviewedAt": "2026-07-09",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:speech-dataset-reproducibility-applies-concept-speech-recording",
+      "subject": "ea:researchQuestion:speech-dataset-reproducibility",
+      "predicate": "appliesConcept",
+      "object": "ea:concept:speech-recording",
+      "statement": "The research question \"How can speech datasets become reproducible, structured and privacy-first?\" applies Speech Recording as part of its current model.",
+      "confidence": "published",
+      "validFrom": "2026-02-01",
+      "createdAt": "2026-02-01",
+      "reviewedAt": "2026-07-09",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:speech-dataset-reproducibility-applies-concept-voice-technology",
+      "subject": "ea:researchQuestion:speech-dataset-reproducibility",
+      "predicate": "appliesConcept",
+      "object": "ea:concept:voice-technology",
+      "statement": "The research question \"How can speech datasets become reproducible, structured and privacy-first?\" applies Voice Technology as part of its current model.",
+      "confidence": "published",
+      "validFrom": "2026-02-01",
+      "createdAt": "2026-02-01",
+      "reviewedAt": "2026-07-09",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:speech-dataset-reproducibility-applies-concept-metadata",
+      "subject": "ea:researchQuestion:speech-dataset-reproducibility",
+      "predicate": "appliesConcept",
+      "object": "ea:concept:metadata",
+      "statement": "The research question \"How can speech datasets become reproducible, structured and privacy-first?\" applies Metadata as part of its current model.",
+      "confidence": "published",
+      "validFrom": "2026-02-01",
+      "createdAt": "2026-02-01",
+      "reviewedAt": "2026-07-09",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:speech-dataset-reproducibility-applies-concept-provenance",
+      "subject": "ea:researchQuestion:speech-dataset-reproducibility",
+      "predicate": "appliesConcept",
+      "object": "ea:concept:provenance",
+      "statement": "The research question \"How can speech datasets become reproducible, structured and privacy-first?\" applies Provenance as part of its current model.",
+      "confidence": "published",
+      "validFrom": "2026-02-01",
+      "createdAt": "2026-02-01",
+      "reviewedAt": "2026-07-09",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:speech-dataset-reproducibility-applies-concept-machine-learning-workflows",
+      "subject": "ea:researchQuestion:speech-dataset-reproducibility",
+      "predicate": "appliesConcept",
+      "object": "ea:concept:machine-learning-workflows",
+      "statement": "The research question \"How can speech datasets become reproducible, structured and privacy-first?\" applies Machine Learning Workflows as part of its current model.",
+      "confidence": "published",
+      "validFrom": "2026-02-01",
+      "createdAt": "2026-02-01",
+      "reviewedAt": "2026-07-09",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:speech-dataset-reproducibility-applies-concept-browser-software",
+      "subject": "ea:researchQuestion:speech-dataset-reproducibility",
+      "predicate": "appliesConcept",
+      "object": "ea:concept:browser-software",
+      "statement": "The research question \"How can speech datasets become reproducible, structured and privacy-first?\" applies Browser Software as part of its current model.",
+      "confidence": "published",
+      "validFrom": "2026-02-01",
+      "createdAt": "2026-02-01",
+      "reviewedAt": "2026-07-09",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:speech-dataset-reproducibility-applies-concept-open-source",
+      "subject": "ea:researchQuestion:speech-dataset-reproducibility",
+      "predicate": "appliesConcept",
+      "object": "ea:concept:open-source",
+      "statement": "The research question \"How can speech datasets become reproducible, structured and privacy-first?\" applies Open Source as part of its current model.",
+      "confidence": "published",
+      "validFrom": "2026-02-01",
+      "createdAt": "2026-02-01",
+      "reviewedAt": "2026-07-09",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:speech-dataset-reproducibility-uses-technology-web-audio-api",
+      "subject": "ea:researchQuestion:speech-dataset-reproducibility",
+      "predicate": "usesTechnology",
+      "object": "ea:technology:web-audio-api",
+      "statement": "The research question \"How can speech datasets become reproducible, structured and privacy-first?\" uses Web Audio API as a relevant technical reference.",
+      "confidence": "published",
+      "validFrom": "2026-02-01",
+      "createdAt": "2026-02-01",
+      "reviewedAt": "2026-07-09",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:speech-dataset-reproducibility-uses-technology-webnn",
+      "subject": "ea:researchQuestion:speech-dataset-reproducibility",
+      "predicate": "usesTechnology",
+      "object": "ea:technology:webnn",
+      "statement": "The research question \"How can speech datasets become reproducible, structured and privacy-first?\" uses WebNN as a relevant technical reference.",
+      "confidence": "published",
+      "validFrom": "2026-02-01",
+      "createdAt": "2026-02-01",
+      "reviewedAt": "2026-07-09",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:web-audio-and-browser-based-sound-systems-documents-speech-dataset-reproducibility",
+      "subject": "ea:publication:web-audio-and-browser-based-sound-systems",
+      "predicate": "documents",
+      "object": "ea:researchQuestion:speech-dataset-reproducibility",
+      "statement": "Web Audio and Browser-Based Sound Systems documents context, evidence or vocabulary for the research question \"How can speech datasets become reproducible, structured and privacy-first?\".",
+      "confidence": "published",
+      "validFrom": "2026-02-01",
+      "createdAt": "2026-02-01",
+      "reviewedAt": "2026-07-09",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:local-and-open-source-ai-systems-documents-speech-dataset-reproducibility",
+      "subject": "ea:publication:local-and-open-source-ai-systems",
+      "predicate": "documents",
+      "object": "ea:researchQuestion:speech-dataset-reproducibility",
+      "statement": "Local and Open Source AI Systems documents context, evidence or vocabulary for the research question \"How can speech datasets become reproducible, structured and privacy-first?\".",
+      "confidence": "published",
+      "validFrom": "2026-02-01",
+      "createdAt": "2026-02-01",
+      "reviewedAt": "2026-07-09",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:open-source-as-cultural-infrastructure-documents-speech-dataset-reproducibility",
+      "subject": "ea:publication:open-source-as-cultural-infrastructure",
+      "predicate": "documents",
+      "object": "ea:researchQuestion:speech-dataset-reproducibility",
+      "statement": "Open Source as Cultural Infrastructure documents context, evidence or vocabulary for the research question \"How can speech datasets become reproducible, structured and privacy-first?\".",
+      "confidence": "published",
+      "validFrom": "2026-02-01",
+      "createdAt": "2026-02-01",
+      "reviewedAt": "2026-07-09",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:webnn-and-local-ai-in-the-browser-documents-speech-dataset-reproducibility",
+      "subject": "ea:publication:webnn-and-local-ai-in-the-browser",
+      "predicate": "documents",
+      "object": "ea:researchQuestion:speech-dataset-reproducibility",
+      "statement": "WebNN and Local AI in the Browser documents context, evidence or vocabulary for the research question \"How can speech datasets become reproducible, structured and privacy-first?\".",
+      "confidence": "published",
+      "validFrom": "2026-02-01",
+      "createdAt": "2026-02-01",
+      "reviewedAt": "2026-07-09",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:speech-dataset-reproducibility-member-of-collection-voice-capture-studio",
+      "subject": "ea:researchQuestion:speech-dataset-reproducibility",
+      "predicate": "memberOfCollection",
+      "object": "ea:collection:voice-capture-studio",
+      "statement": "The research question \"How can speech datasets become reproducible, structured and privacy-first?\" belongs to the Voice Capture Studio Collection collection for editorial navigation.",
+      "confidence": "published",
+      "validFrom": "2026-02-01",
+      "createdAt": "2026-02-01",
+      "reviewedAt": "2026-07-09",
+      "visibility": "public"
     }
   ],
   "routes": {
@@ -16599,6 +18360,9 @@ window.EA_PUBLIC_CATALOG = {
     "ea:publication:webnn-and-local-ai-in-the-browser-fr": "/fr/publications/webnn-and-local-ai-in-the-browser/",
     "ea:publication:why-graphs-are-more-powerful-than-folders-fr": "/fr/publications/why-graphs-are-more-powerful-than-folders/",
     "ea:researchField:runtime-theory-fr": "/fr/research/fields/runtime-theory/",
+    "ea:researchQuestion:first-conversation-understanding-fr": "/fr/research/questions/first-conversation-understanding/",
+    "ea:researchQuestion:self-explaining-knowledge-graph-software-fr": "/fr/research/questions/self-explaining-knowledge-graph-software/",
+    "ea:researchQuestion:speech-dataset-reproducibility-fr": "/fr/research/questions/speech-dataset-reproducibility/",
     "ea:technology:activitypub-fr": "/fr/knowledge/technologies/activitypub/",
     "ea:technology:c2pa-fr": "/fr/knowledge/technologies/c2pa/",
     "ea:technology:cloudevents-fr": "/fr/knowledge/technologies/cloudevents/",
@@ -16665,6 +18429,9 @@ window.EA_PUBLIC_CATALOG = {
     "ea:publication:webnn-and-local-ai-in-the-browser": "/publications/webnn-and-local-ai-in-the-browser/",
     "ea:publication:why-graphs-are-more-powerful-than-folders": "/publications/why-graphs-are-more-powerful-than-folders/",
     "ea:researchField:runtime-theory": "/research/fields/runtime-theory/",
+    "ea:researchQuestion:first-conversation-understanding": "/research/questions/first-conversation-understanding/",
+    "ea:researchQuestion:self-explaining-knowledge-graph-software": "/research/questions/self-explaining-knowledge-graph-software/",
+    "ea:researchQuestion:speech-dataset-reproducibility": "/research/questions/speech-dataset-reproducibility/",
     "ea:technology:activitypub": "/knowledge/technologies/activitypub/",
     "ea:technology:c2pa": "/knowledge/technologies/c2pa/",
     "ea:technology:cloudevents": "/knowledge/technologies/cloudevents/",
@@ -16780,8 +18547,31 @@ window.EA_SEARCH = {
     };
   };
 
+  const runtimeRecordFromCatalog = (item) => ({
+    ...item,
+    id: item.legacyId || item.id,
+    canonicalId: item.translationOf || item.id,
+    localizedId: item.locale === pageLocale ? item.id : undefined,
+    title: item.title,
+    subtitle: item.subtitle,
+    kind: item.type,
+    type: item.type,
+    status: item.status,
+    statusLabel: item.status,
+    maturity: item.maturity,
+    confidence: item.confidence,
+    visibility: item.visibility,
+    summary: item.summary,
+    description: item.description,
+    tags: item.tags || [],
+    discipline: item.discipline || [],
+    route: item.route,
+    temporality: item.temporality,
+  });
+
   const flattenEntities = () =>
-    [
+    (() => {
+      const sourceEntities = [
       ...(entities.programs || []),
       ...(entities.artists || []),
       ...(entities.projects || []),
@@ -16797,7 +18587,14 @@ window.EA_SEARCH = {
         summary: item.summary || "",
         visibility: item.visibility || "public",
       })),
-    ]
+      ];
+      const legacyIds = new Set(sourceEntities.map((item) => item.id).filter(Boolean));
+      const catalogOnly = catalogEntities
+        .filter((item) => item.locale === pageLocale)
+        .filter((item) => !legacyIds.has(item.legacyId) && !legacyIds.has(item.id))
+        .map(runtimeRecordFromCatalog);
+      return [...sourceEntities, ...catalogOnly];
+    })()
       .filter(isPublic)
       .map(localizeEntity)
       .map((item) => ({
@@ -16885,6 +18682,10 @@ window.EA_SEARCH = {
     artefacts: (entities.artefacts || []).filter(isPublic),
     channels: (entities.channels || []).filter(isPublic),
     researchFields: (entities.researchFields || []).filter(isPublic),
+    researchQuestions: catalogEntities
+      .filter((item) => item.type === "researchQuestion" && item.locale === pageLocale)
+      .filter(isPublic)
+      .map(runtimeRecordFromCatalog),
     researchLogs: (entities.researchLogs || []).filter(isPublic),
     worldbuilding: (entities.worldbuilding || []).filter(isPublic),
     schema: {
@@ -17000,6 +18801,7 @@ window.EA_SEARCH = {
     ["/contact.html", "/fr/contact.html"],
     ["/programs.html", "/fr/programs.html"],
     ["/research.html", "/fr/research.html"],
+    ["/research/questions/", "/fr/research/questions/"],
     ["/archive.html", "/fr/archive.html"],
     ["/mentions-legales.html", "/fr/mentions-legales.html"],
     ["/confidentialite.html", "/fr/confidentialite.html"],
@@ -17506,6 +19308,32 @@ window.EA_SEARCH = {
     "Evidence stays attached to the work.": "Les preuves restent attachées au travail.",
     "Logs preserve decisions, tests and unresolved questions, so useful learning remains visible after a prototype or project has moved on.": "Les journaux préservent décisions, tests et questions non résolues, afin que les apprentissages utiles restent visibles après l’évolution d’un prototype ou projet.",
     "Browse the archive": "Parcourir les archives",
+    "RESEARCH ATLAS": "ATLAS DE RECHERCHE",
+    "Animated research graph": "Graphe de recherche animé",
+    "Question": "Question",
+    "View full graph": "Voir le graphe complet",
+    "Open research question": "Ouvrir la question de recherche",
+    "Started": "Démarré",
+    "Current understanding": "Compréhension actuelle",
+    "Current hypothesis": "Hypothèse actuelle",
+    "Related artefacts": "Artefacts reliés",
+    "Related actions": "Actions associées",
+    "Research timeline": "Chronologie de recherche",
+    "Open graph": "Ouvrir le graphe",
+    "Related software": "Logiciel relié",
+    "Repository": "Dépôt",
+    "Documentation": "Documentation",
+    "Previous Question": "Question précédente",
+    "Next Question": "Question suivante",
+    "Research questions": "Questions de recherche",
+    "research question": "question de recherche",
+    "program": "programme",
+    "project": "projet",
+    "framework": "cadre",
+    "concept": "concept",
+    "technology": "technologie",
+    "publication": "publication",
+    "collection": "collection",
     "Search the site": "Rechercher sur le site",
     "ARCHIVE LIBRARY": "BIBLIOTHÈQUE DES ARCHIVES",
     "Browse by the form each trace currently takes.": "Parcourir selon la forme actuelle de chaque trace.",
@@ -20700,6 +22528,10 @@ window.EA_ANALYTICS_CONFIG = {
   const { routeCard } = window.EA_VIEW || {};
   const entityIndex = catalog.indexes?.byId || {};
   const page = document.body.dataset.page || "home";
+  const pageLocale = document.documentElement.lang === "fr" || window.location.pathname.startsWith("/fr/")
+    ? "fr"
+    : "en";
+  const translate = (value) => window.EA_I18N?.translateText?.(value) || value;
 
   const entityById = (id) => entityIndex[id] || null;
   const scaleLength = (value, factor = 0.22) => {
@@ -21057,6 +22889,229 @@ window.EA_ANALYTICS_CONFIG = {
       length: options.positions?.[index]?.length || "14rem",
       emphasis: index === 0,
     }));
+
+  const publicRecords = () => Array.isArray(catalog.publicCatalog?.entities) ? catalog.publicCatalog.entities : [];
+  const publicRelations = () => Array.isArray(catalog.publicCatalog?.relations) ? catalog.publicCatalog.relations : [];
+  const recordIndexes = () => {
+    const records = publicRecords();
+    return {
+      byId: Object.fromEntries(records.map((item) => [item.id, item])),
+      byLegacyId: Object.fromEntries(records.filter((item) => item.legacyId).map((item) => [item.legacyId, item])),
+    };
+  };
+  const recordForRef = (ref, indexes = recordIndexes()) => {
+    const id = typeof ref === "string" ? ref : ref?.id;
+    return indexes.byId[id] || indexes.byLegacyId[id] || null;
+  };
+  const routeForRecord = (record) => record?.route || catalog.routeFor?.(record?.id) || "";
+  const researchQuestions = () => {
+    const records = publicRecords().filter((item) => item.type === "researchQuestion" && item.visibility === "public");
+    const localized = records.filter((item) => item.locale === pageLocale);
+    const source = localized.length ? localized : records.filter((item) => item.locale === "en" && !item.translationOf);
+    return source
+      .filter((item) => item.homepage !== false)
+      .sort((left, right) => (left.priority || 999) - (right.priority || 999) || String(left.started || "").localeCompare(String(right.started || "")));
+  };
+  const dateLabel = (value) => {
+    if (!value) return "";
+    const date = new Date(`${value}T00:00:00`);
+    if (Number.isNaN(date.getTime())) return value;
+    return new Intl.DateTimeFormat(pageLocale, { day: "2-digit", month: "short", year: "numeric" }).format(date).toUpperCase();
+  };
+  const statusLabel = (value) =>
+    String(value || "")
+      .replace(/[-_]+/g, " ")
+      .replace(/\b\w/g, (char) => char.toUpperCase());
+  const researchNumber = (question, index) => `${translate("Research")} #${String(question.priority || index + 1).padStart(3, "0")}`;
+  const researchCoreNumber = (question, index) => `#${String(question.priority || index + 1).padStart(3, "0")}`;
+  const graphRouteForQuestion = (question) => {
+    const localeSegment = question.locale === "fr" ? "/fr" : "";
+    return `/graph/neighborhoods${localeSegment}/research-question/${question.legacyId || String(question.id || "").split(":").pop()}.json`;
+  };
+  const compactRefs = (refs, limit, indexes) => (refs || [])
+    .map((ref) => recordForRef(ref, indexes) || ref)
+    .filter(Boolean)
+    .slice(0, limit);
+  const nodeColorFor = (type, index) => {
+    const colors = {
+      project: "rgba(245, 158, 11, 0.94)",
+      program: "rgba(96, 165, 250, 0.95)",
+      framework: "rgba(228, 213, 196, 0.94)",
+      tool: "rgba(52, 211, 153, 0.92)",
+      concept: "rgba(167, 139, 250, 0.92)",
+      technology: "rgba(45, 212, 191, 0.92)",
+      publication: "rgba(247, 244, 239, 0.88)",
+      collection: "rgba(148, 163, 184, 0.9)",
+    };
+    const fallback = ["rgba(234, 220, 207, 0.9)", "rgba(125, 211, 252, 0.9)", "rgba(52, 211, 153, 0.88)"];
+    return colors[type] || fallback[index % fallback.length];
+  };
+  const nodeKindLabel = (record) =>
+    translate(String(record?.type || record?.kind || "related").replace(/([a-z])([A-Z])/g, "$1 $2").toLowerCase());
+  const atlasNodes = (question) => {
+    const indexes = recordIndexes();
+    const buckets = [
+      ...(question.relatedProjects || []).map((ref) => ({ ref, group: "project" })),
+      ...(question.relatedSoftware || []).map((ref) => ({ ref, group: "software" })),
+      ...(question.relatedConcepts || []).slice(0, 4).map((ref) => ({ ref, group: "concept" })),
+      ...(question.relatedTechnologies || []).slice(0, 3).map((ref) => ({ ref, group: "technology" })),
+      ...(question.relatedArticles || []).slice(0, 2).map((ref) => ({ ref, group: "article" })),
+    ];
+    const seen = new Set();
+    return buckets
+      .map(({ ref, group }) => {
+        const record = recordForRef(ref, indexes) || ref;
+        const id = record.id || ref.id || record.title;
+        if (!id || seen.has(id)) return null;
+        seen.add(id);
+        return { ...record, group };
+      })
+      .filter(Boolean)
+      .slice(0, 10);
+  };
+  const researchNodeMarkup = (question) => {
+    const nodes = atlasNodes(question);
+    const total = Math.max(1, nodes.length);
+    return nodes
+      .map((node, index) => {
+        const angle = -112 + (index * 360 / total);
+        const radius = index % 2 === 0 ? 38 : 30;
+        const rawX = 50 + Math.cos((angle * Math.PI) / 180) * radius;
+        const rawY = 50 + Math.sin((angle * Math.PI) / 180) * (radius * 0.74);
+        const x = Math.min(80, Math.max(20, rawX));
+        const y = Math.min(84, Math.max(16, rawY));
+        const route = routeForRecord(node);
+        const tag = route ? "a" : "span";
+        const attrs = route ? `href="${esc(route)}"` : "";
+        return `
+          <${tag}
+            class="research-atlas__node research-atlas__node--${esc(String(node.type || node.group || "related"))}"
+            ${attrs}
+            data-research-atlas-node
+            data-node-index="${index}"
+            data-node-group="${esc(node.group || node.type || "related")}"
+            style="--node-x:${x.toFixed(2)}%;--node-y:${y.toFixed(2)}%;--node-color:${esc(nodeColorFor(node.type || node.kind || node.group, index))};--node-delay:${index * 44}ms;"
+          >
+            <span class="research-atlas__node-pin" aria-hidden="true"></span>
+            <span class="research-atlas__node-label"><strong>${esc(node.title || node.label || "Related")}</strong><small>${esc(nodeKindLabel(node))}</small></span>
+          </${tag}>`;
+      })
+      .join("");
+  };
+  const researchDots = (questions, activeIndex) => questions
+    .map((question, index) => `<button type="button" data-research-atlas-dot="${index}" aria-current="${index === activeIndex ? "true" : "false"}" aria-label="${esc(translate("Open research question"))} ${index + 1}" class="${index === activeIndex ? "is-active" : ""}"><span>${esc(researchNumber(question, index))}</span></button>`)
+    .join("");
+  const researchArtefacts = (question) => {
+    const indexes = recordIndexes();
+    const records = [
+      ...compactRefs(question.relatedSoftware, 3, indexes),
+      ...compactRefs(question.relatedProjects, 3, indexes),
+    ];
+    const seen = new Set();
+    return records
+      .filter((item) => {
+        const id = item.id || item.title;
+        if (!id || seen.has(id)) return false;
+        seen.add(id);
+        return true;
+      })
+      .slice(0, 4);
+  };
+  const researchActionLinks = (question) => {
+    const indexes = recordIndexes();
+    const relatedSoftware = compactRefs([...(question.relatedSoftware || []), ...(question.relatedProjects || [])], 1, indexes)[0];
+    const repository = question.relatedRepositories?.[0];
+    const article = compactRefs(question.relatedArticles, 1, indexes)[0];
+    return [
+      { label: translate("Explore research"), href: routeForRecord(question) },
+      { label: translate("Open graph"), href: graphRouteForQuestion(question), target: "_blank" },
+      relatedSoftware ? { label: translate("Related software"), href: routeForRecord(relatedSoftware) } : null,
+      repository ? { label: translate("Repository"), href: repository.url, target: "_blank" } : null,
+      article ? { label: translate("Documentation"), href: routeForRecord(article) } : null,
+    ].filter((item) => item?.href);
+  };
+  const researchQuestionBody = (question, index, questions) => {
+    const artefacts = researchArtefacts(question);
+    const actions = researchActionLinks(question);
+    const understanding = question.currentUnderstanding || question.hypothesis || question.observation || "";
+    const tags = (question.tags || []).slice(0, 5);
+    return `
+      <div class="research-atlas__meta-row">
+        <span class="status-badge status-badge--research">${esc(statusLabel(question.status))}</span>
+        <span>${esc(researchNumber(question, index))}</span>
+        <span>${esc(translate("Started"))} ${esc(dateLabel(question.started))}</span>
+        <span>${esc(translate("Updated"))} ${esc(dateLabel(question.updated || question.temporality?.lastUpdated))}</span>
+      </div>
+      <div class="research-atlas__question-copy">
+        <p class="eyebrow">${esc(translate("RESEARCH ATLAS"))}</p>
+        <h2 id="research-atlas-title" class="display-title">${esc(question.title)}</h2>
+        <p class="lede">${esc(question.summary || question.description || question.abstract || "")}</p>
+        <div class="tag-cluster tag-cluster--compact">
+          ${tags.map((tag) => `<span class="chip">${esc(tag)}</span>`).join("")}
+        </div>
+      </div>
+      <div class="research-atlas__lower">
+        <article class="research-atlas__field">
+          <p class="card__meta">${esc(question.currentUnderstanding ? translate("Current understanding") : translate("Current hypothesis"))}</p>
+          <h3>${esc(understanding)}</h3>
+          ${question.observation ? `<p>${esc(question.observation)}</p>` : ""}
+        </article>
+        <article class="research-atlas__artefacts">
+          <p class="card__meta">${esc(translate("Related artefacts"))}</p>
+          <div class="research-atlas__artefact-list">
+            ${artefacts.map((item, itemIndex) => `
+              <a href="${esc(routeForRecord(item))}">
+                <span style="--node-color:${esc(nodeColorFor(item.type || item.kind, itemIndex))};">${esc((item.title || "?").slice(0, 2).toUpperCase())}</span>
+                <strong>${esc(item.title)}</strong>
+                <small>${esc(nodeKindLabel(item))}</small>
+              </a>`).join("")}
+          </div>
+        </article>
+        <nav class="research-atlas__actions" aria-label="${esc(translate("Related actions"))}">
+          <p class="card__meta">${esc(translate("Related actions"))}</p>
+          ${actions.map((action) => `<a href="${esc(action.href)}" data-research-atlas-action${action.target ? ` target="${esc(action.target)}" rel="noreferrer"` : ""}>${esc(action.label)} <span aria-hidden="true">→</span></a>`).join("")}
+        </nav>
+      </div>
+      <div class="research-atlas__timeline" aria-label="${esc(translate("Research timeline"))}">
+        ${(question.timeline || []).slice(0, 3).map((event) => `
+          <span><strong>${esc(dateLabel(event.date))}</strong>${esc(event.title)}</span>
+        `).join("")}
+      </div>`;
+  };
+  const researchAtlas = () => {
+    const questions = researchQuestions();
+    if (!questions.length) return "";
+    const active = questions[0];
+    return `
+      <section class="zone-card hero research-atlas intent-hero intent-hero--research" id="research-atlas" data-research-atlas tabindex="0" aria-labelledby="research-atlas-title">
+        <div class="research-atlas__layout">
+          <aside class="research-atlas__projection" aria-label="${esc(translate("Animated research graph"))}">
+            <div class="research-atlas__graph" data-research-atlas-graph>
+              <canvas class="research-atlas__canvas" data-research-atlas-canvas aria-hidden="true"></canvas>
+              <div class="research-atlas__core" aria-hidden="true">
+                <span>${esc(translate("Question"))}</span>
+                <strong data-research-atlas-core>${esc(researchCoreNumber(active, 0))}</strong>
+              </div>
+              <div class="research-atlas__nodes" data-research-atlas-nodes>
+                ${researchNodeMarkup(active)}
+              </div>
+            </div>
+            <a class="tag research-atlas__graph-link" href="${esc(graphRouteForQuestion(active))}" target="_blank" rel="noreferrer" data-research-atlas-graph-link>${esc(translate("View full graph"))}</a>
+          </aside>
+          <article class="research-atlas__panel" data-research-atlas-panel aria-live="polite">
+            ${researchQuestionBody(active, 0, questions)}
+          </article>
+        </div>
+        <div class="research-atlas__nav">
+          <button type="button" class="button button--secondary" data-research-atlas-prev><span aria-hidden="true">←</span> ${esc(translate("Previous Question"))}</button>
+          <div class="research-atlas__dots" data-research-atlas-dots aria-label="${esc(translate("Research questions"))}">
+            ${researchDots(questions, 0)}
+          </div>
+          <button type="button" class="button button--secondary" data-research-atlas-next>${esc(translate("Next Question"))} <span aria-hidden="true">→</span></button>
+        </div>
+      </section>
+    `;
+  };
 
   const ecosystemExplorer = () => {
     const projects = catalog.projects?.length || 0;
@@ -21457,6 +23512,213 @@ window.EA_ANALYTICS_CONFIG = {
     };
   };
 
+  const startResearchAtlas = () => {
+    const atlases = [...document.querySelectorAll("[data-research-atlas]")].filter((atlas) => atlas.dataset.boundResearchAtlas !== "true");
+    if (!atlases.length) return;
+    const questions = researchQuestions();
+    if (!questions.length) return;
+    const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+    atlases.forEach((atlas) => {
+      atlas.dataset.boundResearchAtlas = "true";
+      const panel = atlas.querySelector("[data-research-atlas-panel]");
+      const nodes = atlas.querySelector("[data-research-atlas-nodes]");
+      const dots = atlas.querySelector("[data-research-atlas-dots]");
+      const core = atlas.querySelector("[data-research-atlas-core]");
+      const graphLink = atlas.querySelector("[data-research-atlas-graph-link]");
+      const graph = atlas.querySelector("[data-research-atlas-graph]");
+      const canvas = atlas.querySelector("[data-research-atlas-canvas]");
+      const ctx = canvas?.getContext("2d");
+      let activeIndex = 0;
+      let lastNavigation = 0;
+      let rafId = 0;
+      let visible = true;
+      let touchStartX = 0;
+      let touchStartY = 0;
+
+      const setActive = (nextIndex, direction = 1) => {
+        const normalized = (nextIndex + questions.length) % questions.length;
+        if (normalized === activeIndex && panel?.dataset.ready === "true") return;
+        activeIndex = normalized;
+        const question = questions[activeIndex];
+        atlas.dataset.activeIndex = String(activeIndex);
+        atlas.dataset.direction = direction > 0 ? "next" : "previous";
+        atlas.classList.add("is-switching");
+        window.setTimeout(() => {
+          if (panel) panel.innerHTML = researchQuestionBody(question, activeIndex, questions);
+          if (nodes) nodes.innerHTML = researchNodeMarkup(question);
+          if (dots) dots.innerHTML = researchDots(questions, activeIndex);
+          if (core) core.textContent = researchCoreNumber(question, activeIndex);
+          if (graphLink) graphLink.setAttribute("href", graphRouteForQuestion(question));
+          panel && (panel.dataset.ready = "true");
+          atlas.classList.remove("is-switching");
+          drawGraph();
+        }, reduceMotion ? 0 : 120);
+      };
+
+      const navigate = (direction) => {
+        const now = performance.now();
+        if (now - lastNavigation < 420) return;
+        lastNavigation = now;
+        setActive(activeIndex + direction, direction);
+      };
+
+      const resizeCanvas = () => {
+        if (!graph || !canvas || !ctx) return null;
+        const rect = graph.getBoundingClientRect();
+        const dpr = Math.max(1, window.devicePixelRatio || 1);
+        canvas.width = Math.max(1, Math.round(rect.width * dpr));
+        canvas.height = Math.max(1, Math.round(rect.height * dpr));
+        canvas.style.width = `${rect.width}px`;
+        canvas.style.height = `${rect.height}px`;
+        ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+        return rect;
+      };
+
+      const drawGraph = () => {
+        if (!graph || !canvas || !ctx) return;
+        const rect = resizeCanvas();
+        if (!rect) return;
+        const width = rect.width;
+        const height = rect.height;
+        const centerX = width / 2;
+        const centerY = height / 2;
+        const t = performance.now() * 0.001;
+        const nodeElements = [...atlas.querySelectorAll("[data-research-atlas-node]")];
+
+        ctx.clearRect(0, 0, width, height);
+        const gradient = ctx.createRadialGradient(centerX, centerY, 10, centerX, centerY, Math.min(width, height) * 0.62);
+        gradient.addColorStop(0, "rgba(247,244,239,0.12)");
+        gradient.addColorStop(0.44, "rgba(125,211,252,0.035)");
+        gradient.addColorStop(1, "rgba(0,0,0,0)");
+        ctx.fillStyle = gradient;
+        ctx.fillRect(0, 0, width, height);
+
+        const positions = nodeElements.map((node, index) => {
+          const nodeRect = node.getBoundingClientRect();
+          const x = nodeRect.left - rect.left + nodeRect.width / 2;
+          const y = nodeRect.top - rect.top + nodeRect.height / 2;
+          const color = node.style.getPropertyValue("--node-color") || "rgba(247,244,239,0.9)";
+          return { x, y, color, index };
+        });
+
+        ctx.lineWidth = 1;
+        positions.forEach((point, index) => {
+          const pulse = 0.34 + (Math.sin(t * 1.8 + index) + 1) * 0.08;
+          ctx.strokeStyle = `rgba(247,244,239,${pulse})`;
+          ctx.beginPath();
+          ctx.moveTo(centerX, centerY);
+          ctx.lineTo(point.x, point.y);
+          ctx.stroke();
+
+          ctx.fillStyle = point.color;
+          ctx.shadowColor = point.color;
+          ctx.shadowBlur = 12;
+          ctx.beginPath();
+          ctx.arc(point.x, point.y, 2.4 + Math.sin(t * 2.2 + index) * 0.7, 0, Math.PI * 2);
+          ctx.fill();
+          ctx.shadowBlur = 0;
+        });
+
+        positions.forEach((point, index) => {
+          const next = positions[(index + 1) % positions.length];
+          if (!next) return;
+          ctx.strokeStyle = "rgba(125,211,252,0.12)";
+          ctx.beginPath();
+          ctx.moveTo(point.x, point.y);
+          ctx.lineTo(next.x, next.y);
+          ctx.stroke();
+        });
+
+        ctx.strokeStyle = "rgba(247,244,239,0.42)";
+        ctx.lineWidth = 1.2;
+        ctx.beginPath();
+        ctx.arc(centerX, centerY, Math.max(22, Math.min(width, height) * 0.07), 0, Math.PI * 2);
+        ctx.stroke();
+      };
+
+      const tick = () => {
+        if (!visible || reduceMotion || document.hidden || !document.body.contains(atlas)) {
+          rafId = 0;
+          return;
+        }
+        drawGraph();
+        rafId = requestAnimationFrame(tick);
+      };
+
+      const start = () => {
+        if (rafId || reduceMotion || !visible) return;
+        rafId = requestAnimationFrame(tick);
+      };
+
+      const stop = () => {
+        if (!rafId) return;
+        cancelAnimationFrame(rafId);
+        rafId = 0;
+      };
+
+      atlas.querySelector("[data-research-atlas-prev]")?.addEventListener("click", () => navigate(-1));
+      atlas.querySelector("[data-research-atlas-next]")?.addEventListener("click", () => navigate(1));
+      dots?.addEventListener("click", (event) => {
+        const target = event.target instanceof Element ? event.target.closest("[data-research-atlas-dot]") : null;
+        if (!target) return;
+        const next = Number(target.getAttribute("data-research-atlas-dot"));
+        if (Number.isFinite(next)) setActive(next, next > activeIndex ? 1 : -1);
+      });
+
+      atlas.addEventListener("wheel", (event) => {
+        if (Math.abs(event.deltaY) < 24 || Math.abs(event.deltaY) < Math.abs(event.deltaX)) return;
+        event.preventDefault();
+        navigate(event.deltaY > 0 ? 1 : -1);
+      }, { passive: false });
+
+      atlas.addEventListener("touchstart", (event) => {
+        const touch = event.changedTouches[0];
+        if (!touch) return;
+        touchStartX = touch.clientX;
+        touchStartY = touch.clientY;
+      }, { passive: true });
+
+      atlas.addEventListener("touchend", (event) => {
+        const touch = event.changedTouches[0];
+        if (!touch) return;
+        const dx = touch.clientX - touchStartX;
+        const dy = touch.clientY - touchStartY;
+        if (Math.max(Math.abs(dx), Math.abs(dy)) < 42) return;
+        navigate(Math.abs(dx) > Math.abs(dy) ? (dx < 0 ? 1 : -1) : (dy < 0 ? 1 : -1));
+      }, { passive: true });
+
+      atlas.addEventListener("keydown", (event) => {
+        const keys = ["ArrowRight", "ArrowDown", "PageDown", "ArrowLeft", "ArrowUp", "PageUp", "Home", "End"];
+        if (!keys.includes(event.key)) return;
+        event.preventDefault();
+        if (event.key === "Home") setActive(0, -1);
+        else if (event.key === "End") setActive(questions.length - 1, 1);
+        else navigate(["ArrowRight", "ArrowDown", "PageDown"].includes(event.key) ? 1 : -1);
+      });
+
+      const observer = "IntersectionObserver" in window
+        ? new IntersectionObserver((entries) => {
+            const entry = entries[0];
+            visible = Boolean(entry?.isIntersecting || entry?.intersectionRatio > 0);
+            if (visible) start();
+            else stop();
+          }, { rootMargin: "16% 0px 16% 0px", threshold: 0.04 })
+        : null;
+      observer?.observe(atlas);
+
+      window.addEventListener("resize", drawGraph, { passive: true });
+      document.addEventListener("visibilitychange", () => {
+        if (document.hidden) stop();
+        else start();
+      });
+
+      setActive(0);
+      drawGraph();
+      start();
+    });
+  };
+
   const pageLens = (type) => {
     const configs = {
       work: {
@@ -21614,7 +23876,9 @@ window.EA_ANALYTICS_CONFIG = {
     uxSurface,
     nodesFromItems,
     ecosystemExplorer,
+    researchAtlas,
     startGraphSurfaceAnimation,
+    startResearchAtlas,
     pageLens,
   };
 })();
@@ -24030,7 +26294,7 @@ window.EA_ANALYTICS_CONFIG = {
     latestArtefacts,
     routeCard,
   } = window.EA_VIEW;
-  const { crossNavigation, uxSurface, nodesFromItems, ecosystemExplorer, startGraphSurfaceAnimation, pageLens } = window.EA_SURFACE;
+  const { crossNavigation, uxSurface, nodesFromItems, ecosystemExplorer, researchAtlas, startGraphSurfaceAnimation, startResearchAtlas, pageLens } = window.EA_SURFACE;
   const indexes = catalog.indexes || {};
   const entityIndex = indexes.byId || {};
   const titleIndex = indexes.byTitleSlug || {};
@@ -27051,6 +29315,8 @@ window.EA_ANALYTICS_CONFIG = {
       ],
     })}${ecosystemExplorer()}`;
 
+  const renderResearchAtlas = () => researchAtlas ? researchAtlas() : "";
+
   const renderWorkForensics = () => {
     const workflow = [
       ["01", "Audit", "Establish the system, data, dependencies and trust boundaries."],
@@ -28395,6 +30661,7 @@ window.EA_ANALYTICS_CONFIG = {
       "home-hero": renderHomeHero,
       "home-orientation": renderHomeOrientation,
       "home-featured-paths": renderFeaturedPaths,
+      "home-research-atlas": renderResearchAtlas,
       "home-vaste-banner": renderVasteBanner,
       "home-featured-work": renderFeaturedWork,
       "home-featured-research": renderFeaturedResearch,
@@ -28489,6 +30756,7 @@ window.EA_ANALYTICS_CONFIG = {
     startVasteEngineAnimation();
     startComputationFieldAnimation();
     startGraphSurfaceAnimation();
+    startResearchAtlas?.();
   };
 
   const load = async () => {

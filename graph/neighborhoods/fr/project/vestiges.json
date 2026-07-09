@@ -138,6 +138,22 @@
       "route": "/fr/organizations/electronic-artefacts/",
       "status": "active",
       "confidence": "canonical"
+    },
+    {
+      "id": "ea:researchQuestion:first-conversation-understanding-fr",
+      "type": "researchQuestion",
+      "title": "Comment une IA peut-elle comprendre quelqu'un dès sa première conversation ?",
+      "route": "/fr/research/questions/first-conversation-understanding/",
+      "status": "active",
+      "confidence": "observed"
+    },
+    {
+      "id": "ea:researchQuestion:self-explaining-knowledge-graph-software-fr",
+      "type": "researchQuestion",
+      "title": "Comment un logiciel peut-il devenir explicable par son propre graphe de connaissance ?",
+      "route": "/fr/research/questions/self-explaining-knowledge-graph-software/",
+      "status": "active",
+      "confidence": "validated"
     }
   ],
   "edges": [
@@ -284,6 +300,24 @@
       "label": "Created by",
       "statement": "Electronic Artefacts created Vestiges as the flagship public application of VASTE.",
       "confidence": "published"
+    },
+    {
+      "id": "ear:first-conversation-understanding-implemented-by-vestiges",
+      "source": "ea:researchQuestion:first-conversation-understanding-fr",
+      "target": "ea:project:vestiges-fr",
+      "predicate": "implementedBy",
+      "label": "Implemented by",
+      "statement": "Vestiges is listed as a current software or project answer for the research question \"How can an AI understand someone during its very first conversation?\".",
+      "confidence": "observed"
+    },
+    {
+      "id": "ear:self-explaining-knowledge-graph-software-implemented-by-vestiges",
+      "source": "ea:researchQuestion:self-explaining-knowledge-graph-software-fr",
+      "target": "ea:project:vestiges-fr",
+      "predicate": "implementedBy",
+      "label": "Implemented by",
+      "statement": "Vestiges is listed as a current software or project answer for the research question \"How can software become explainable through its own knowledge graph?\".",
+      "confidence": "validated"
     }
   ]
 }

@@ -82,6 +82,22 @@
       "route": "/knowledge/concepts/multimodal-ai/",
       "status": "active",
       "confidence": "validated"
+    },
+    {
+      "id": "ea:researchQuestion:first-conversation-understanding",
+      "type": "researchQuestion",
+      "title": "How can an AI understand someone during its very first conversation?",
+      "route": "/research/questions/first-conversation-understanding/",
+      "status": "active",
+      "confidence": "observed"
+    },
+    {
+      "id": "ea:researchQuestion:speech-dataset-reproducibility",
+      "type": "researchQuestion",
+      "title": "How can speech datasets become reproducible, structured and privacy-first?",
+      "route": "/research/questions/speech-dataset-reproducibility/",
+      "status": "active",
+      "confidence": "published"
     }
   ],
   "edges": [
@@ -165,6 +181,24 @@
       "label": "Applies concept",
       "statement": "ORETH provides an applied context for connecting audio analysis with visual, textual and archival records.",
       "confidence": "observed"
+    },
+    {
+      "id": "ear:first-conversation-understanding-implemented-by-oreth",
+      "source": "ea:researchQuestion:first-conversation-understanding",
+      "target": "ea:program:oreth",
+      "predicate": "implementedBy",
+      "label": "Implemented by",
+      "statement": "ORETH is listed as a current software or project answer for the research question \"How can an AI understand someone during its very first conversation?\".",
+      "confidence": "observed"
+    },
+    {
+      "id": "ear:speech-dataset-reproducibility-implemented-by-oreth",
+      "source": "ea:researchQuestion:speech-dataset-reproducibility",
+      "target": "ea:program:oreth",
+      "predicate": "implementedBy",
+      "label": "Implemented by",
+      "statement": "ORETH is listed as a current software or project answer for the research question \"How can speech datasets become reproducible, structured and privacy-first?\".",
+      "confidence": "published"
     }
   ]
 }

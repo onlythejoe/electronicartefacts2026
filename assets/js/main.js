@@ -45,7 +45,7 @@
     latestArtefacts,
     routeCard,
   } = window.EA_VIEW;
-  const { crossNavigation, uxSurface, nodesFromItems, ecosystemExplorer, startGraphSurfaceAnimation, pageLens } = window.EA_SURFACE;
+  const { crossNavigation, uxSurface, nodesFromItems, ecosystemExplorer, researchAtlas, startGraphSurfaceAnimation, startResearchAtlas, pageLens } = window.EA_SURFACE;
   const indexes = catalog.indexes || {};
   const entityIndex = indexes.byId || {};
   const titleIndex = indexes.byTitleSlug || {};
@@ -3066,6 +3066,8 @@
       ],
     })}${ecosystemExplorer()}`;
 
+  const renderResearchAtlas = () => researchAtlas ? researchAtlas() : "";
+
   const renderWorkForensics = () => {
     const workflow = [
       ["01", "Audit", "Establish the system, data, dependencies and trust boundaries."],
@@ -4410,6 +4412,7 @@
       "home-hero": renderHomeHero,
       "home-orientation": renderHomeOrientation,
       "home-featured-paths": renderFeaturedPaths,
+      "home-research-atlas": renderResearchAtlas,
       "home-vaste-banner": renderVasteBanner,
       "home-featured-work": renderFeaturedWork,
       "home-featured-research": renderFeaturedResearch,
@@ -4504,6 +4507,7 @@
     startVasteEngineAnimation();
     startComputationFieldAnimation();
     startGraphSurfaceAnimation();
+    startResearchAtlas?.();
   };
 
   const load = async () => {

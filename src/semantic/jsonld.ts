@@ -6,12 +6,17 @@ import type { AgentRef, EntityRef, SourceRef } from "../schema/entity.js";
 
 const identifierForRef = (id: string): string => {
   const [, rawType, slug] = id.split(":");
-  const type = rawType === "researchField" ? "research-field" : rawType;
+  const type = rawType === "researchField"
+    ? "research-field"
+    : rawType === "researchQuestion"
+      ? "research-question"
+      : rawType;
   return `${site.origin}/id/${type}/${slug}/`;
 };
 
 const schemaType = (entity: Entity): string => {
   if (entity.type === "concept" || entity.type === "researchField" || entity.type === "technology") return "DefinedTerm";
+  if (entity.type === "researchQuestion") return "Question";
   if (entity.type === "program") return "SoftwareApplication";
   if (entity.type === "organization") return "Organization";
   if (entity.type === "publication") {
@@ -25,7 +30,7 @@ const schemaType = (entity: Entity): string => {
 
 const sectionName = (entity: Entity): string => {
   if (entity.type === "concept" || entity.type === "technology" || entity.type === "method" || entity.type === "framework") return "Knowledge";
-  if (entity.type === "researchField") return "Research";
+  if (entity.type === "researchField" || entity.type === "researchQuestion") return "Research";
   if (entity.type === "publication") return "Publications";
   if (entity.type === "project") return "Projects";
   if (entity.type === "program") return "Programs";
@@ -39,6 +44,7 @@ const sectionUrl = (entity: Entity): string => {
   if (entity.type === "method") return `${site.origin}/knowledge/methods/`;
   if (entity.type === "framework") return `${site.origin}/knowledge/frameworks/`;
   if (entity.type === "researchField") return `${site.origin}/research/`;
+  if (entity.type === "researchQuestion") return `${site.origin}/research/questions/`;
   if (entity.type === "publication") return `${site.origin}/publications/`;
   if (entity.type === "project") return `${site.origin}/projects.html`;
   if (entity.type === "program") return `${site.origin}/programs.html`;
@@ -177,6 +183,24 @@ export const jsonLdFor = (entity: Entity) => {
     primary.inDefinedTermSet = `${site.origin}/knowledge/technologies/`;
     primary.termCode = entity.slug.canonical;
     primary.sameAs = [entity.officialUrl].filter(Boolean);
+  }
+  if (entity.type === "researchQuestion") {
+    primary.text = entity.title;
+    primary.suggestedAnswer = entity.currentUnderstanding || entity.hypothesis
+      ? {
+          "@type": "Answer",
+          text: entity.currentUnderstanding || entity.hypothesis,
+          dateCreated: entity.started,
+          dateModified: entity.updated,
+        }
+      : undefined;
+    primary.about = refsToIds([
+      ...(entity.relatedConcepts || []),
+      ...(entity.relatedProjects || []),
+      ...(entity.relatedSoftware || []),
+      ...(entity.relatedTechnologies || []),
+    ]);
+    primary.mentions = refsToIds([...(entity.relatedArticles || []), ...(entity.relatedCollections || [])]);
   }
   if (entity.type === "program" && entity.officialUrl) {
     primary.sameAs = [entity.officialUrl];

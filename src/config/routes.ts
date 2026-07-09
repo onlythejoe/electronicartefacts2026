@@ -9,6 +9,7 @@ export const routeByType: Record<EntityType, (slug: string) => string> = {
   framework: (slug) => `/knowledge/frameworks/${slug}/`,
   technology: (slug) => `/knowledge/technologies/${slug}/`,
   researchField: (slug) => `/research/fields/${slug}/`,
+  researchQuestion: (slug) => `/research/questions/${slug}/`,
   publication: (slug) => `/publications/${slug}/`,
   project: (slug) => `/projects/${slug}/`,
   program: (slug) => `/programs/${slug}/`,
@@ -27,6 +28,7 @@ export const hubRoutes = {
   knowledge: "/knowledge/",
   concepts: "/knowledge/concepts/",
   research: "/research/",
+  researchQuestions: "/research/questions/",
   publications: "/publications/",
   projects: "/projects/",
   programs: "/programs/",
@@ -45,6 +47,10 @@ export const routeForEntity = (entity: Entity, locale: Locale = routeLocale(enti
   localizedRoute(unlocalizedRouteForEntity(entity), locale);
 
 export const identifierPath = (entity: Entity): string => {
-  const type = entity.type === "researchField" ? "research-field" : entity.type;
+  const type = entity.type === "researchField"
+    ? "research-field"
+    : entity.type === "researchQuestion"
+      ? "research-question"
+      : entity.type;
   return localizedRoute(`/id/${type}/${entity.slug.canonical}/`, routeLocale(entity.locale));
 };

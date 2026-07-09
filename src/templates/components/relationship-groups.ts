@@ -4,6 +4,14 @@ import type { RelationStatement } from "../../schema/relation.js";
 import { connectedEntityIdForRelation, publicEntityIds, publicRelationsForEntity } from "../../semantic/visibility.js";
 import { escapeHtml } from "../html.js";
 
+const relationLabelForEntity = (entity: Entity, relation: RelationStatement): string => {
+  const definition = predicateDefinitions[relation.predicate];
+  const entityIds = new Set([entity.id, entity.translationOf].filter(Boolean));
+  return entityIds.has(relation.object) && definition.inverseLabel
+    ? definition.inverseLabel
+    : definition.label;
+};
+
 export const renderRelationshipGroups = (
   entity: Entity,
   relations: RelationStatement[],
@@ -34,7 +42,7 @@ export const renderRelationshipGroups = (
                 const connectedEntity = byId.get(connectedId);
                 return `
                   <div class="panel panel--soft">
-                    <p class="card__meta">${escapeHtml(predicateDefinitions[relation.predicate].label)}</p>
+                    <p class="card__meta">${escapeHtml(relationLabelForEntity(entity, relation))}</p>
                     <h3 class="card__title"><a href="${escapeHtml(routeById[connectedId] || "#")}">${escapeHtml(connectedEntity?.title || connectedId)}</a></h3>
                     <p class="card__copy">${escapeHtml(relation.statement)}</p>
                   </div>`;

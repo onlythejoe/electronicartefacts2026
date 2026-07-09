@@ -50,6 +50,14 @@
       "route": "/archive/collections/knowledge-hub-third-wave/",
       "status": "active",
       "confidence": "published"
+    },
+    {
+      "id": "ea:researchQuestion:first-conversation-understanding",
+      "type": "researchQuestion",
+      "title": "How can an AI understand someone during its very first conversation?",
+      "route": "/research/questions/first-conversation-understanding/",
+      "status": "active",
+      "confidence": "observed"
     }
   ],
   "edges": [
@@ -97,6 +105,15 @@
       "label": "Has part",
       "statement": "Knowledge Hub Third Wave includes AI Agents vs AI Workflows.",
       "confidence": "published"
+    },
+    {
+      "id": "ear:ai-agents-vs-ai-workflows-documents-first-conversation-understanding",
+      "source": "ea:publication:ai-agents-vs-ai-workflows",
+      "target": "ea:researchQuestion:first-conversation-understanding",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "AI Agents vs AI Workflows documents context, evidence or vocabulary for the research question \"How can an AI understand someone during its very first conversation?\".",
+      "confidence": "observed"
     }
   ]
 }

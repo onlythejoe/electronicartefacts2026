@@ -50,6 +50,14 @@
       "route": "/archive/collections/knowledge-hub-foundations/",
       "status": "active",
       "confidence": "published"
+    },
+    {
+      "id": "ea:researchQuestion:self-explaining-knowledge-graph-software",
+      "type": "researchQuestion",
+      "title": "How can software become explainable through its own knowledge graph?",
+      "route": "/research/questions/self-explaining-knowledge-graph-software/",
+      "status": "active",
+      "confidence": "validated"
     }
   ],
   "edges": [
@@ -97,6 +105,15 @@
       "label": "Has part",
       "statement": "Knowledge Hub Foundations includes Linked Data and Public Knowledge Pages as a foundation article.",
       "confidence": "published"
+    },
+    {
+      "id": "ear:linked-data-and-public-knowledge-pages-documents-self-explaining-knowledge-graph-software",
+      "source": "ea:publication:linked-data-and-public-knowledge-pages",
+      "target": "ea:researchQuestion:self-explaining-knowledge-graph-software",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Linked Data and Public Knowledge Pages documents context, evidence or vocabulary for the research question \"How can software become explainable through its own knowledge graph?\".",
+      "confidence": "validated"
     }
   ]
 }

@@ -66,6 +66,14 @@
       "route": "/fr/projects/vestiges/",
       "status": "development",
       "confidence": "observed"
+    },
+    {
+      "id": "ea:researchQuestion:self-explaining-knowledge-graph-software-fr",
+      "type": "researchQuestion",
+      "title": "Comment un logiciel peut-il devenir explicable par son propre graphe de connaissance ?",
+      "route": "/fr/research/questions/self-explaining-knowledge-graph-software/",
+      "status": "active",
+      "confidence": "validated"
     }
   ],
   "edges": [
@@ -131,6 +139,15 @@
       "label": "Applies concept",
       "statement": "Vestiges applies graph-runtime principles to cultural, craft and human-knowledge infrastructure.",
       "confidence": "observed"
+    },
+    {
+      "id": "ear:self-explaining-knowledge-graph-software-applies-concept-graph-runtime",
+      "source": "ea:researchQuestion:self-explaining-knowledge-graph-software-fr",
+      "target": "ea:concept:graph-runtime-fr",
+      "predicate": "appliesConcept",
+      "label": "Applies concept",
+      "statement": "The research question \"How can software become explainable through its own knowledge graph?\" applies Graph Runtime as part of its current model.",
+      "confidence": "validated"
     }
   ]
 }

@@ -26,6 +26,14 @@
       "route": "/fr/publications/personal-knowledge-systems-and-digital-gardens/",
       "status": "active",
       "confidence": "published"
+    },
+    {
+      "id": "ea:researchQuestion:self-explaining-knowledge-graph-software-fr",
+      "type": "researchQuestion",
+      "title": "Comment un logiciel peut-il devenir explicable par son propre graphe de connaissance ?",
+      "route": "/fr/research/questions/self-explaining-knowledge-graph-software/",
+      "status": "active",
+      "confidence": "validated"
     }
   ],
   "edges": [
@@ -46,6 +54,15 @@
       "label": "Documents",
       "statement": "Personal Knowledge Systems and Digital Gardens uses hypertext as the linking model for public knowledge gardens.",
       "confidence": "published"
+    },
+    {
+      "id": "ear:self-explaining-knowledge-graph-software-applies-concept-hypertext",
+      "source": "ea:researchQuestion:self-explaining-knowledge-graph-software-fr",
+      "target": "ea:concept:hypertext-fr",
+      "predicate": "appliesConcept",
+      "label": "Applies concept",
+      "statement": "The research question \"How can software become explainable through its own knowledge graph?\" applies Hypertext as part of its current model.",
+      "confidence": "validated"
     }
   ]
 }

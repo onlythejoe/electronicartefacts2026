@@ -42,6 +42,14 @@
       "route": "/fr/projects/voice-capture-studio/",
       "status": "active",
       "confidence": "published"
+    },
+    {
+      "id": "ea:researchQuestion:speech-dataset-reproducibility-fr",
+      "type": "researchQuestion",
+      "title": "Comment les datasets vocaux peuvent-ils devenir reproductibles, structurés et privacy-first ?",
+      "route": "/fr/research/questions/speech-dataset-reproducibility/",
+      "status": "active",
+      "confidence": "published"
     }
   ],
   "edges": [
@@ -79,6 +87,15 @@
       "predicate": "appliesConcept",
       "label": "Applies concept",
       "statement": "Voice Capture Studio applies open-source practice through a public MIT-licensed repository with contribution, issue and documentation surfaces.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:speech-dataset-reproducibility-applies-concept-open-source",
+      "source": "ea:researchQuestion:speech-dataset-reproducibility-fr",
+      "target": "ea:concept:open-source-fr",
+      "predicate": "appliesConcept",
+      "label": "Applies concept",
+      "statement": "The research question \"How can speech datasets become reproducible, structured and privacy-first?\" applies Open Source as part of its current model.",
       "confidence": "published"
     }
   ]

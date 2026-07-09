@@ -11,6 +11,7 @@ Use canonical HTML URLs for human-facing citations. Use identifier routes under 
 - [Concepts](https://electronicartefacts.com/knowledge/concepts/): Definitions for core concepts.
 - [Technologies](https://electronicartefacts.com/knowledge/technologies/): Technical standards, platforms and protocols.
 - [Publications](https://electronicartefacts.com/publications/): Research notes and technical articles.
+- [Research Questions](https://electronicartefacts.com/research/questions/): Active studio research questions connected to software, concepts and evidence.
 - [Projects](https://electronicartefacts.com/projects.html): Selected work and case studies.
 - [Programs](https://electronicartefacts.com/programs.html): Software programs and runtime systems.
 - [Search](https://electronicartefacts.com/search/?q=knowledge%20graph): Public site search endpoint with q parameter.
@@ -41,13 +42,13 @@ Use canonical HTML URLs for human-facing citations. Use identifier routes under 
 - [Retrieval-Augmented Generation](https://electronicartefacts.com/knowledge/concepts/retrieval-augmented-generation/): Retrieval-augmented generation is an architecture that retrieves external information at query time and supplies selected evidence to a generative model before or during...
 - [Model Context Protocol](https://electronicartefacts.com/knowledge/technologies/model-context-protocol/): A technology record for MCP as an integration protocol for tool-using AI applications, resources and contextual workflows.
 - [Voice Capture Studio](https://electronicartefacts.com/fr/projects/voice-capture-studio/): Un studio d’enregistrement local-first pour datasets vocaux, voix off et doublage, construit comme une application de navigateur open source avec exports WAV et métadonnées...
+- [Comment les datasets vocaux peuvent-ils devenir reproductibles, structurés et privacy-first ?](https://electronicartefacts.com/fr/research/questions/speech-dataset-reproducibility/): Question de recherche publique d'Electronic Artefacts sur les datasets vocaux reproductibles, l'enregistrement local-first et les workflows vocaux riches en métadonnées.
+- [Comment un logiciel peut-il devenir explicable par son propre graphe de connaissance ?](https://electronicartefacts.com/fr/research/questions/self-explaining-knowledge-graph-software/): Question de recherche publique d'Electronic Artefacts sur les logiciels explicables, les graphes de connaissance, la documentation générée et les surfaces publiques sémantiques.
+- [Comment une IA peut-elle comprendre quelqu'un dès sa première conversation ?](https://electronicartefacts.com/fr/research/questions/first-conversation-understanding/): Question de recherche publique d'Electronic Artefacts sur la compréhension au premier contact, l'onboarding conversationnel et le contexte utilisateur structuré en graphe.
+- [How can an AI understand someone during its very first conversation?](https://electronicartefacts.com/research/questions/first-conversation-understanding/): A public Electronic Artefacts research question about first-contact understanding, conversational onboarding and graph-shaped user context.
+- [How can software become explainable through its own knowledge graph?](https://electronicartefacts.com/research/questions/self-explaining-knowledge-graph-software/): A public Electronic Artefacts research question about self-explaining software, knowledge graphs, generated documentation and semantic public surfaces.
+- [How can speech datasets become reproducible, structured and privacy-first?](https://electronicartefacts.com/research/questions/speech-dataset-reproducibility/): A public Electronic Artefacts research question about reproducible speech datasets, local-first recording and metadata-rich voice workflows.
 - [Electronic Artefacts](https://electronicartefacts.com/fr/organizations/electronic-artefacts/): Stratégie, design, ingénierie et recherche culturelle réunis pour construire des produits numériques et des systèmes de connaissance clairs et durables.
-- [ORETH](https://electronicartefacts.com/fr/programs/oreth/): Fiche publique du programme ORETH, à la fois système de recherche audio et couche technico-culturelle reliée à Palimpsests.
-- [ORETH](https://electronicartefacts.com/programs/oreth/): A public program record for ORETH as both an audio research system and the technical-cultural layer connected to Palimpsests.
-- [VASTE](https://electronicartefacts.com/fr/programs/vaste/): Runtime propriétaire reliant Runtime Theory à des systèmes de graphe évaluables par dépôt encadré, pilotes, implémentation ou licence.
-- [Palimpsests](https://electronicartefacts.com/fr/projects/palimpsests/): Une œuvre musicale et éditoriale en cinq actes reliant recherche sonore, mémoire culturelle, archives et production visuelle.
-- [Palimpsests](https://electronicartefacts.com/projects/palimpsests/): A canonical project record for Palimpsests as a compound audio, visual and research publication within Electronic Artefacts.
-- [Vestiges](https://electronicartefacts.com/fr/projects/vestiges/): Un produit centré sur la connaissance où provenance, contribution, découverte et services professionnels émergent d’un même graphe historisé.
 
 ## Optional
 

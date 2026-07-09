@@ -4,6 +4,10 @@
   const { routeCard } = window.EA_VIEW || {};
   const entityIndex = catalog.indexes?.byId || {};
   const page = document.body.dataset.page || "home";
+  const pageLocale = document.documentElement.lang === "fr" || window.location.pathname.startsWith("/fr/")
+    ? "fr"
+    : "en";
+  const translate = (value) => window.EA_I18N?.translateText?.(value) || value;
 
   const entityById = (id) => entityIndex[id] || null;
   const scaleLength = (value, factor = 0.22) => {
@@ -361,6 +365,229 @@
       length: options.positions?.[index]?.length || "14rem",
       emphasis: index === 0,
     }));
+
+  const publicRecords = () => Array.isArray(catalog.publicCatalog?.entities) ? catalog.publicCatalog.entities : [];
+  const publicRelations = () => Array.isArray(catalog.publicCatalog?.relations) ? catalog.publicCatalog.relations : [];
+  const recordIndexes = () => {
+    const records = publicRecords();
+    return {
+      byId: Object.fromEntries(records.map((item) => [item.id, item])),
+      byLegacyId: Object.fromEntries(records.filter((item) => item.legacyId).map((item) => [item.legacyId, item])),
+    };
+  };
+  const recordForRef = (ref, indexes = recordIndexes()) => {
+    const id = typeof ref === "string" ? ref : ref?.id;
+    return indexes.byId[id] || indexes.byLegacyId[id] || null;
+  };
+  const routeForRecord = (record) => record?.route || catalog.routeFor?.(record?.id) || "";
+  const researchQuestions = () => {
+    const records = publicRecords().filter((item) => item.type === "researchQuestion" && item.visibility === "public");
+    const localized = records.filter((item) => item.locale === pageLocale);
+    const source = localized.length ? localized : records.filter((item) => item.locale === "en" && !item.translationOf);
+    return source
+      .filter((item) => item.homepage !== false)
+      .sort((left, right) => (left.priority || 999) - (right.priority || 999) || String(left.started || "").localeCompare(String(right.started || "")));
+  };
+  const dateLabel = (value) => {
+    if (!value) return "";
+    const date = new Date(`${value}T00:00:00`);
+    if (Number.isNaN(date.getTime())) return value;
+    return new Intl.DateTimeFormat(pageLocale, { day: "2-digit", month: "short", year: "numeric" }).format(date).toUpperCase();
+  };
+  const statusLabel = (value) =>
+    String(value || "")
+      .replace(/[-_]+/g, " ")
+      .replace(/\b\w/g, (char) => char.toUpperCase());
+  const researchNumber = (question, index) => `${translate("Research")} #${String(question.priority || index + 1).padStart(3, "0")}`;
+  const researchCoreNumber = (question, index) => `#${String(question.priority || index + 1).padStart(3, "0")}`;
+  const graphRouteForQuestion = (question) => {
+    const localeSegment = question.locale === "fr" ? "/fr" : "";
+    return `/graph/neighborhoods${localeSegment}/research-question/${question.legacyId || String(question.id || "").split(":").pop()}.json`;
+  };
+  const compactRefs = (refs, limit, indexes) => (refs || [])
+    .map((ref) => recordForRef(ref, indexes) || ref)
+    .filter(Boolean)
+    .slice(0, limit);
+  const nodeColorFor = (type, index) => {
+    const colors = {
+      project: "rgba(245, 158, 11, 0.94)",
+      program: "rgba(96, 165, 250, 0.95)",
+      framework: "rgba(228, 213, 196, 0.94)",
+      tool: "rgba(52, 211, 153, 0.92)",
+      concept: "rgba(167, 139, 250, 0.92)",
+      technology: "rgba(45, 212, 191, 0.92)",
+      publication: "rgba(247, 244, 239, 0.88)",
+      collection: "rgba(148, 163, 184, 0.9)",
+    };
+    const fallback = ["rgba(234, 220, 207, 0.9)", "rgba(125, 211, 252, 0.9)", "rgba(52, 211, 153, 0.88)"];
+    return colors[type] || fallback[index % fallback.length];
+  };
+  const nodeKindLabel = (record) =>
+    translate(String(record?.type || record?.kind || "related").replace(/([a-z])([A-Z])/g, "$1 $2").toLowerCase());
+  const atlasNodes = (question) => {
+    const indexes = recordIndexes();
+    const buckets = [
+      ...(question.relatedProjects || []).map((ref) => ({ ref, group: "project" })),
+      ...(question.relatedSoftware || []).map((ref) => ({ ref, group: "software" })),
+      ...(question.relatedConcepts || []).slice(0, 4).map((ref) => ({ ref, group: "concept" })),
+      ...(question.relatedTechnologies || []).slice(0, 3).map((ref) => ({ ref, group: "technology" })),
+      ...(question.relatedArticles || []).slice(0, 2).map((ref) => ({ ref, group: "article" })),
+    ];
+    const seen = new Set();
+    return buckets
+      .map(({ ref, group }) => {
+        const record = recordForRef(ref, indexes) || ref;
+        const id = record.id || ref.id || record.title;
+        if (!id || seen.has(id)) return null;
+        seen.add(id);
+        return { ...record, group };
+      })
+      .filter(Boolean)
+      .slice(0, 10);
+  };
+  const researchNodeMarkup = (question) => {
+    const nodes = atlasNodes(question);
+    const total = Math.max(1, nodes.length);
+    return nodes
+      .map((node, index) => {
+        const angle = -112 + (index * 360 / total);
+        const radius = index % 2 === 0 ? 38 : 30;
+        const rawX = 50 + Math.cos((angle * Math.PI) / 180) * radius;
+        const rawY = 50 + Math.sin((angle * Math.PI) / 180) * (radius * 0.74);
+        const x = Math.min(80, Math.max(20, rawX));
+        const y = Math.min(84, Math.max(16, rawY));
+        const route = routeForRecord(node);
+        const tag = route ? "a" : "span";
+        const attrs = route ? `href="${esc(route)}"` : "";
+        return `
+          <${tag}
+            class="research-atlas__node research-atlas__node--${esc(String(node.type || node.group || "related"))}"
+            ${attrs}
+            data-research-atlas-node
+            data-node-index="${index}"
+            data-node-group="${esc(node.group || node.type || "related")}"
+            style="--node-x:${x.toFixed(2)}%;--node-y:${y.toFixed(2)}%;--node-color:${esc(nodeColorFor(node.type || node.kind || node.group, index))};--node-delay:${index * 44}ms;"
+          >
+            <span class="research-atlas__node-pin" aria-hidden="true"></span>
+            <span class="research-atlas__node-label"><strong>${esc(node.title || node.label || "Related")}</strong><small>${esc(nodeKindLabel(node))}</small></span>
+          </${tag}>`;
+      })
+      .join("");
+  };
+  const researchDots = (questions, activeIndex) => questions
+    .map((question, index) => `<button type="button" data-research-atlas-dot="${index}" aria-current="${index === activeIndex ? "true" : "false"}" aria-label="${esc(translate("Open research question"))} ${index + 1}" class="${index === activeIndex ? "is-active" : ""}"><span>${esc(researchNumber(question, index))}</span></button>`)
+    .join("");
+  const researchArtefacts = (question) => {
+    const indexes = recordIndexes();
+    const records = [
+      ...compactRefs(question.relatedSoftware, 3, indexes),
+      ...compactRefs(question.relatedProjects, 3, indexes),
+    ];
+    const seen = new Set();
+    return records
+      .filter((item) => {
+        const id = item.id || item.title;
+        if (!id || seen.has(id)) return false;
+        seen.add(id);
+        return true;
+      })
+      .slice(0, 4);
+  };
+  const researchActionLinks = (question) => {
+    const indexes = recordIndexes();
+    const relatedSoftware = compactRefs([...(question.relatedSoftware || []), ...(question.relatedProjects || [])], 1, indexes)[0];
+    const repository = question.relatedRepositories?.[0];
+    const article = compactRefs(question.relatedArticles, 1, indexes)[0];
+    return [
+      { label: translate("Explore research"), href: routeForRecord(question) },
+      { label: translate("Open graph"), href: graphRouteForQuestion(question), target: "_blank" },
+      relatedSoftware ? { label: translate("Related software"), href: routeForRecord(relatedSoftware) } : null,
+      repository ? { label: translate("Repository"), href: repository.url, target: "_blank" } : null,
+      article ? { label: translate("Documentation"), href: routeForRecord(article) } : null,
+    ].filter((item) => item?.href);
+  };
+  const researchQuestionBody = (question, index, questions) => {
+    const artefacts = researchArtefacts(question);
+    const actions = researchActionLinks(question);
+    const understanding = question.currentUnderstanding || question.hypothesis || question.observation || "";
+    const tags = (question.tags || []).slice(0, 5);
+    return `
+      <div class="research-atlas__meta-row">
+        <span class="status-badge status-badge--research">${esc(statusLabel(question.status))}</span>
+        <span>${esc(researchNumber(question, index))}</span>
+        <span>${esc(translate("Started"))} ${esc(dateLabel(question.started))}</span>
+        <span>${esc(translate("Updated"))} ${esc(dateLabel(question.updated || question.temporality?.lastUpdated))}</span>
+      </div>
+      <div class="research-atlas__question-copy">
+        <p class="eyebrow">${esc(translate("RESEARCH ATLAS"))}</p>
+        <h2 id="research-atlas-title" class="display-title">${esc(question.title)}</h2>
+        <p class="lede">${esc(question.summary || question.description || question.abstract || "")}</p>
+        <div class="tag-cluster tag-cluster--compact">
+          ${tags.map((tag) => `<span class="chip">${esc(tag)}</span>`).join("")}
+        </div>
+      </div>
+      <div class="research-atlas__lower">
+        <article class="research-atlas__field">
+          <p class="card__meta">${esc(question.currentUnderstanding ? translate("Current understanding") : translate("Current hypothesis"))}</p>
+          <h3>${esc(understanding)}</h3>
+          ${question.observation ? `<p>${esc(question.observation)}</p>` : ""}
+        </article>
+        <article class="research-atlas__artefacts">
+          <p class="card__meta">${esc(translate("Related artefacts"))}</p>
+          <div class="research-atlas__artefact-list">
+            ${artefacts.map((item, itemIndex) => `
+              <a href="${esc(routeForRecord(item))}">
+                <span style="--node-color:${esc(nodeColorFor(item.type || item.kind, itemIndex))};">${esc((item.title || "?").slice(0, 2).toUpperCase())}</span>
+                <strong>${esc(item.title)}</strong>
+                <small>${esc(nodeKindLabel(item))}</small>
+              </a>`).join("")}
+          </div>
+        </article>
+        <nav class="research-atlas__actions" aria-label="${esc(translate("Related actions"))}">
+          <p class="card__meta">${esc(translate("Related actions"))}</p>
+          ${actions.map((action) => `<a href="${esc(action.href)}" data-research-atlas-action${action.target ? ` target="${esc(action.target)}" rel="noreferrer"` : ""}>${esc(action.label)} <span aria-hidden="true">→</span></a>`).join("")}
+        </nav>
+      </div>
+      <div class="research-atlas__timeline" aria-label="${esc(translate("Research timeline"))}">
+        ${(question.timeline || []).slice(0, 3).map((event) => `
+          <span><strong>${esc(dateLabel(event.date))}</strong>${esc(event.title)}</span>
+        `).join("")}
+      </div>`;
+  };
+  const researchAtlas = () => {
+    const questions = researchQuestions();
+    if (!questions.length) return "";
+    const active = questions[0];
+    return `
+      <section class="zone-card hero research-atlas intent-hero intent-hero--research" id="research-atlas" data-research-atlas tabindex="0" aria-labelledby="research-atlas-title">
+        <div class="research-atlas__layout">
+          <aside class="research-atlas__projection" aria-label="${esc(translate("Animated research graph"))}">
+            <div class="research-atlas__graph" data-research-atlas-graph>
+              <canvas class="research-atlas__canvas" data-research-atlas-canvas aria-hidden="true"></canvas>
+              <div class="research-atlas__core" aria-hidden="true">
+                <span>${esc(translate("Question"))}</span>
+                <strong data-research-atlas-core>${esc(researchCoreNumber(active, 0))}</strong>
+              </div>
+              <div class="research-atlas__nodes" data-research-atlas-nodes>
+                ${researchNodeMarkup(active)}
+              </div>
+            </div>
+            <a class="tag research-atlas__graph-link" href="${esc(graphRouteForQuestion(active))}" target="_blank" rel="noreferrer" data-research-atlas-graph-link>${esc(translate("View full graph"))}</a>
+          </aside>
+          <article class="research-atlas__panel" data-research-atlas-panel aria-live="polite">
+            ${researchQuestionBody(active, 0, questions)}
+          </article>
+        </div>
+        <div class="research-atlas__nav">
+          <button type="button" class="button button--secondary" data-research-atlas-prev><span aria-hidden="true">←</span> ${esc(translate("Previous Question"))}</button>
+          <div class="research-atlas__dots" data-research-atlas-dots aria-label="${esc(translate("Research questions"))}">
+            ${researchDots(questions, 0)}
+          </div>
+          <button type="button" class="button button--secondary" data-research-atlas-next>${esc(translate("Next Question"))} <span aria-hidden="true">→</span></button>
+        </div>
+      </section>
+    `;
+  };
 
   const ecosystemExplorer = () => {
     const projects = catalog.projects?.length || 0;
@@ -761,6 +988,213 @@
     };
   };
 
+  const startResearchAtlas = () => {
+    const atlases = [...document.querySelectorAll("[data-research-atlas]")].filter((atlas) => atlas.dataset.boundResearchAtlas !== "true");
+    if (!atlases.length) return;
+    const questions = researchQuestions();
+    if (!questions.length) return;
+    const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+    atlases.forEach((atlas) => {
+      atlas.dataset.boundResearchAtlas = "true";
+      const panel = atlas.querySelector("[data-research-atlas-panel]");
+      const nodes = atlas.querySelector("[data-research-atlas-nodes]");
+      const dots = atlas.querySelector("[data-research-atlas-dots]");
+      const core = atlas.querySelector("[data-research-atlas-core]");
+      const graphLink = atlas.querySelector("[data-research-atlas-graph-link]");
+      const graph = atlas.querySelector("[data-research-atlas-graph]");
+      const canvas = atlas.querySelector("[data-research-atlas-canvas]");
+      const ctx = canvas?.getContext("2d");
+      let activeIndex = 0;
+      let lastNavigation = 0;
+      let rafId = 0;
+      let visible = true;
+      let touchStartX = 0;
+      let touchStartY = 0;
+
+      const setActive = (nextIndex, direction = 1) => {
+        const normalized = (nextIndex + questions.length) % questions.length;
+        if (normalized === activeIndex && panel?.dataset.ready === "true") return;
+        activeIndex = normalized;
+        const question = questions[activeIndex];
+        atlas.dataset.activeIndex = String(activeIndex);
+        atlas.dataset.direction = direction > 0 ? "next" : "previous";
+        atlas.classList.add("is-switching");
+        window.setTimeout(() => {
+          if (panel) panel.innerHTML = researchQuestionBody(question, activeIndex, questions);
+          if (nodes) nodes.innerHTML = researchNodeMarkup(question);
+          if (dots) dots.innerHTML = researchDots(questions, activeIndex);
+          if (core) core.textContent = researchCoreNumber(question, activeIndex);
+          if (graphLink) graphLink.setAttribute("href", graphRouteForQuestion(question));
+          panel && (panel.dataset.ready = "true");
+          atlas.classList.remove("is-switching");
+          drawGraph();
+        }, reduceMotion ? 0 : 120);
+      };
+
+      const navigate = (direction) => {
+        const now = performance.now();
+        if (now - lastNavigation < 420) return;
+        lastNavigation = now;
+        setActive(activeIndex + direction, direction);
+      };
+
+      const resizeCanvas = () => {
+        if (!graph || !canvas || !ctx) return null;
+        const rect = graph.getBoundingClientRect();
+        const dpr = Math.max(1, window.devicePixelRatio || 1);
+        canvas.width = Math.max(1, Math.round(rect.width * dpr));
+        canvas.height = Math.max(1, Math.round(rect.height * dpr));
+        canvas.style.width = `${rect.width}px`;
+        canvas.style.height = `${rect.height}px`;
+        ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
+        return rect;
+      };
+
+      const drawGraph = () => {
+        if (!graph || !canvas || !ctx) return;
+        const rect = resizeCanvas();
+        if (!rect) return;
+        const width = rect.width;
+        const height = rect.height;
+        const centerX = width / 2;
+        const centerY = height / 2;
+        const t = performance.now() * 0.001;
+        const nodeElements = [...atlas.querySelectorAll("[data-research-atlas-node]")];
+
+        ctx.clearRect(0, 0, width, height);
+        const gradient = ctx.createRadialGradient(centerX, centerY, 10, centerX, centerY, Math.min(width, height) * 0.62);
+        gradient.addColorStop(0, "rgba(247,244,239,0.12)");
+        gradient.addColorStop(0.44, "rgba(125,211,252,0.035)");
+        gradient.addColorStop(1, "rgba(0,0,0,0)");
+        ctx.fillStyle = gradient;
+        ctx.fillRect(0, 0, width, height);
+
+        const positions = nodeElements.map((node, index) => {
+          const nodeRect = node.getBoundingClientRect();
+          const x = nodeRect.left - rect.left + nodeRect.width / 2;
+          const y = nodeRect.top - rect.top + nodeRect.height / 2;
+          const color = node.style.getPropertyValue("--node-color") || "rgba(247,244,239,0.9)";
+          return { x, y, color, index };
+        });
+
+        ctx.lineWidth = 1;
+        positions.forEach((point, index) => {
+          const pulse = 0.34 + (Math.sin(t * 1.8 + index) + 1) * 0.08;
+          ctx.strokeStyle = `rgba(247,244,239,${pulse})`;
+          ctx.beginPath();
+          ctx.moveTo(centerX, centerY);
+          ctx.lineTo(point.x, point.y);
+          ctx.stroke();
+
+          ctx.fillStyle = point.color;
+          ctx.shadowColor = point.color;
+          ctx.shadowBlur = 12;
+          ctx.beginPath();
+          ctx.arc(point.x, point.y, 2.4 + Math.sin(t * 2.2 + index) * 0.7, 0, Math.PI * 2);
+          ctx.fill();
+          ctx.shadowBlur = 0;
+        });
+
+        positions.forEach((point, index) => {
+          const next = positions[(index + 1) % positions.length];
+          if (!next) return;
+          ctx.strokeStyle = "rgba(125,211,252,0.12)";
+          ctx.beginPath();
+          ctx.moveTo(point.x, point.y);
+          ctx.lineTo(next.x, next.y);
+          ctx.stroke();
+        });
+
+        ctx.strokeStyle = "rgba(247,244,239,0.42)";
+        ctx.lineWidth = 1.2;
+        ctx.beginPath();
+        ctx.arc(centerX, centerY, Math.max(22, Math.min(width, height) * 0.07), 0, Math.PI * 2);
+        ctx.stroke();
+      };
+
+      const tick = () => {
+        if (!visible || reduceMotion || document.hidden || !document.body.contains(atlas)) {
+          rafId = 0;
+          return;
+        }
+        drawGraph();
+        rafId = requestAnimationFrame(tick);
+      };
+
+      const start = () => {
+        if (rafId || reduceMotion || !visible) return;
+        rafId = requestAnimationFrame(tick);
+      };
+
+      const stop = () => {
+        if (!rafId) return;
+        cancelAnimationFrame(rafId);
+        rafId = 0;
+      };
+
+      atlas.querySelector("[data-research-atlas-prev]")?.addEventListener("click", () => navigate(-1));
+      atlas.querySelector("[data-research-atlas-next]")?.addEventListener("click", () => navigate(1));
+      dots?.addEventListener("click", (event) => {
+        const target = event.target instanceof Element ? event.target.closest("[data-research-atlas-dot]") : null;
+        if (!target) return;
+        const next = Number(target.getAttribute("data-research-atlas-dot"));
+        if (Number.isFinite(next)) setActive(next, next > activeIndex ? 1 : -1);
+      });
+
+      atlas.addEventListener("wheel", (event) => {
+        if (Math.abs(event.deltaY) < 24 || Math.abs(event.deltaY) < Math.abs(event.deltaX)) return;
+        event.preventDefault();
+        navigate(event.deltaY > 0 ? 1 : -1);
+      }, { passive: false });
+
+      atlas.addEventListener("touchstart", (event) => {
+        const touch = event.changedTouches[0];
+        if (!touch) return;
+        touchStartX = touch.clientX;
+        touchStartY = touch.clientY;
+      }, { passive: true });
+
+      atlas.addEventListener("touchend", (event) => {
+        const touch = event.changedTouches[0];
+        if (!touch) return;
+        const dx = touch.clientX - touchStartX;
+        const dy = touch.clientY - touchStartY;
+        if (Math.max(Math.abs(dx), Math.abs(dy)) < 42) return;
+        navigate(Math.abs(dx) > Math.abs(dy) ? (dx < 0 ? 1 : -1) : (dy < 0 ? 1 : -1));
+      }, { passive: true });
+
+      atlas.addEventListener("keydown", (event) => {
+        const keys = ["ArrowRight", "ArrowDown", "PageDown", "ArrowLeft", "ArrowUp", "PageUp", "Home", "End"];
+        if (!keys.includes(event.key)) return;
+        event.preventDefault();
+        if (event.key === "Home") setActive(0, -1);
+        else if (event.key === "End") setActive(questions.length - 1, 1);
+        else navigate(["ArrowRight", "ArrowDown", "PageDown"].includes(event.key) ? 1 : -1);
+      });
+
+      const observer = "IntersectionObserver" in window
+        ? new IntersectionObserver((entries) => {
+            const entry = entries[0];
+            visible = Boolean(entry?.isIntersecting || entry?.intersectionRatio > 0);
+            if (visible) start();
+            else stop();
+          }, { rootMargin: "16% 0px 16% 0px", threshold: 0.04 })
+        : null;
+      observer?.observe(atlas);
+
+      window.addEventListener("resize", drawGraph, { passive: true });
+      document.addEventListener("visibilitychange", () => {
+        if (document.hidden) stop();
+        else start();
+      });
+
+      setActive(0);
+      drawGraph();
+      start();
+    });
+  };
+
   const pageLens = (type) => {
     const configs = {
       work: {
@@ -918,7 +1352,9 @@
     uxSurface,
     nodesFromItems,
     ecosystemExplorer,
+    researchAtlas,
     startGraphSurfaceAnimation,
+    startResearchAtlas,
     pageLens,
   };
 })();

@@ -9,7 +9,7 @@ This file is generated from typed public records. Prefer each record's canonical
 - Site language: en
 - Canonical origin: https://electronicartefacts.com
 - Search endpoint: https://electronicartefacts.com/search/?q={search_term_string}
-- Public records: 226
+- Public records: 232
 - Last curated source update: 2026-07-09
 
 ## organization
@@ -107,6 +107,45 @@ This file is generated from typed public records. Prefer each record's canonical
   - JSON-LD: https://electronicartefacts.com/fr/id/research-field/runtime-theory/index.jsonld
   - Modified: 2026-07-04
   - Keywords: Théorie du runtime, Runtime, Theory, Exécution, Events, Primitives, Technologie, Recherche
+
+## research question
+
+- [Comment les datasets vocaux peuvent-ils devenir reproductibles, structurés et privacy-first ?](https://electronicartefacts.com/fr/research/questions/speech-dataset-reproducibility/): Question de recherche publique d'Electronic Artefacts sur les datasets vocaux reproductibles, l'enregistrement local-first et les workflows vocaux riches en métadonnées.
+  - Entity ID: ea:researchQuestion:speech-dataset-reproducibility-fr
+  - Identifier: https://electronicartefacts.com/fr/id/research-question/speech-dataset-reproducibility/
+  - JSON-LD: https://electronicartefacts.com/fr/id/research-question/speech-dataset-reproducibility/index.jsonld
+  - Modified: 2026-07-09
+  - Keywords: Comment les datasets vocaux peuvent-ils devenir reproductibles, structurés et privacy-first ?, Datasets vocaux, Confidentialité, Web Audio, Local First, Open Source, Ingénierie audio, Machine Learning
+- [Comment un logiciel peut-il devenir explicable par son propre graphe de connaissance ?](https://electronicartefacts.com/fr/research/questions/self-explaining-knowledge-graph-software/): Question de recherche publique d'Electronic Artefacts sur les logiciels explicables, les graphes de connaissance, la documentation générée et les surfaces publiques sémantiques.
+  - Entity ID: ea:researchQuestion:self-explaining-knowledge-graph-software-fr
+  - Identifier: https://electronicartefacts.com/fr/id/research-question/self-explaining-knowledge-graph-software/
+  - JSON-LD: https://electronicartefacts.com/fr/id/research-question/self-explaining-knowledge-graph-software/index.jsonld
+  - Modified: 2026-07-09
+  - Keywords: Comment un logiciel peut-il devenir explicable par son propre graphe de connaissance ?, Graphe de connaissance, Linked Data, Documentation, Logiciel explicable, Génération de site statique, Architecture de l'information, Architecture logicielle
+- [Comment une IA peut-elle comprendre quelqu'un dès sa première conversation ?](https://electronicartefacts.com/fr/research/questions/first-conversation-understanding/): Question de recherche publique d'Electronic Artefacts sur la compréhension au premier contact, l'onboarding conversationnel et le contexte utilisateur structuré en graphe.
+  - Entity ID: ea:researchQuestion:first-conversation-understanding-fr
+  - Identifier: https://electronicartefacts.com/fr/id/research-question/first-conversation-understanding/
+  - JSON-LD: https://electronicartefacts.com/fr/id/research-question/first-conversation-understanding/index.jsonld
+  - Modified: 2026-07-09
+  - Keywords: Comment une IA peut-elle comprendre quelqu'un dès sa première conversation ?, Onboarding conversationnel, Agents IA, Graphe de connaissance, Voix, Compréhension utilisateur, Intelligence artificielle, Interaction humain-machine
+- [How can an AI understand someone during its very first conversation?](https://electronicartefacts.com/research/questions/first-conversation-understanding/): A public Electronic Artefacts research question about first-contact understanding, conversational onboarding and graph-shaped user context.
+  - Entity ID: ea:researchQuestion:first-conversation-understanding
+  - Identifier: https://electronicartefacts.com/id/research-question/first-conversation-understanding/
+  - JSON-LD: https://electronicartefacts.com/id/research-question/first-conversation-understanding/index.jsonld
+  - Modified: 2026-07-09
+  - Keywords: How can an AI understand someone during its very first conversation?, Conversational Onboarding, AI Agents, Knowledge Graph, Speech, User Understanding, Artificial Intelligence, Human Computer Interaction
+- [How can software become explainable through its own knowledge graph?](https://electronicartefacts.com/research/questions/self-explaining-knowledge-graph-software/): A public Electronic Artefacts research question about self-explaining software, knowledge graphs, generated documentation and semantic public surfaces.
+  - Entity ID: ea:researchQuestion:self-explaining-knowledge-graph-software
+  - Identifier: https://electronicartefacts.com/id/research-question/self-explaining-knowledge-graph-software/
+  - JSON-LD: https://electronicartefacts.com/id/research-question/self-explaining-knowledge-graph-software/index.jsonld
+  - Modified: 2026-07-09
+  - Keywords: How can software become explainable through its own knowledge graph?, Knowledge Graph, Linked Data, Documentation, Explainable Software, Static Site Generation, Information Architecture, Software Architecture
+- [How can speech datasets become reproducible, structured and privacy-first?](https://electronicartefacts.com/research/questions/speech-dataset-reproducibility/): A public Electronic Artefacts research question about reproducible speech datasets, local-first recording and metadata-rich voice workflows.
+  - Entity ID: ea:researchQuestion:speech-dataset-reproducibility
+  - Identifier: https://electronicartefacts.com/id/research-question/speech-dataset-reproducibility/
+  - JSON-LD: https://electronicartefacts.com/id/research-question/speech-dataset-reproducibility/index.jsonld
+  - Modified: 2026-07-09
+  - Keywords: How can speech datasets become reproducible, structured and privacy-first?, Speech Datasets, Privacy, Web Audio, Local First, Open Source, Audio Engineering, Machine Learning
 
 ## publication
 

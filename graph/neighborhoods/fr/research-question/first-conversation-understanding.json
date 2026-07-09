@@ -1,0 +1,340 @@
+{
+  "id": "local:ea:researchQuestion:first-conversation-understanding-fr",
+  "kind": "local",
+  "focus": "ea:researchQuestion:first-conversation-understanding-fr",
+  "nodes": [
+    {
+      "id": "ea:researchQuestion:first-conversation-understanding-fr",
+      "type": "researchQuestion",
+      "title": "Comment une IA peut-elle comprendre quelqu'un dès sa première conversation ?",
+      "route": "/fr/research/questions/first-conversation-understanding/",
+      "status": "active",
+      "confidence": "observed"
+    },
+    {
+      "id": "ea:project:voice-capture-studio-fr",
+      "type": "project",
+      "title": "Voice Capture Studio",
+      "route": "/fr/projects/voice-capture-studio/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:project:vestiges-fr",
+      "type": "project",
+      "title": "Vestiges",
+      "route": "/fr/projects/vestiges/",
+      "status": "development",
+      "confidence": "observed"
+    },
+    {
+      "id": "ea:program:vaste-fr",
+      "type": "program",
+      "title": "VASTE",
+      "route": "/fr/programs/vaste/",
+      "status": "development",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:program:oreth-fr",
+      "type": "program",
+      "title": "ORETH",
+      "route": "/fr/programs/oreth/",
+      "status": "prototype",
+      "confidence": "observed"
+    },
+    {
+      "id": "ea:concept:ai-agent-fr",
+      "type": "concept",
+      "title": "Agent d'IA",
+      "route": "/fr/knowledge/concepts/ai-agent/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:concept:knowledge-graph-fr",
+      "type": "concept",
+      "title": "Graphe de connaissances",
+      "route": "/fr/knowledge/concepts/knowledge-graph/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:concept:machine-learning-workflows-fr",
+      "type": "concept",
+      "title": "Workflows de machine learning",
+      "route": "/fr/knowledge/concepts/machine-learning-workflows/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:concept:human-computer-interaction-fr",
+      "type": "concept",
+      "title": "Interaction humain-machine",
+      "route": "/fr/knowledge/concepts/human-computer-interaction/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:concept:contextual-execution-fr",
+      "type": "concept",
+      "title": "Exécution contextuelle",
+      "route": "/fr/knowledge/concepts/contextual-execution/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:concept:entity-identity-fr",
+      "type": "concept",
+      "title": "Identité d'entité",
+      "route": "/fr/knowledge/concepts/entity-identity/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:concept:voice-technology-fr",
+      "type": "concept",
+      "title": "Technologie vocale",
+      "route": "/fr/knowledge/concepts/voice-technology/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:technology:model-context-protocol-fr",
+      "type": "technology",
+      "title": "Model Context Protocol",
+      "route": "/fr/knowledge/technologies/model-context-protocol/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:technology:web-audio-api-fr",
+      "type": "technology",
+      "title": "Web Audio API",
+      "route": "/fr/knowledge/technologies/web-audio-api/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:technology:webnn-fr",
+      "type": "technology",
+      "title": "WebNN",
+      "route": "/fr/knowledge/technologies/webnn/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:publication:ai-agents-vs-ai-workflows-fr",
+      "type": "publication",
+      "title": "Agents d'IA et workflows d'IA",
+      "route": "/fr/publications/ai-agents-vs-ai-workflows/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:retrieval-augmented-generation-and-knowledge-systems-fr",
+      "type": "publication",
+      "title": "Génération augmentée par récupération et systèmes de connaissance",
+      "route": "/fr/publications/retrieval-augmented-generation-and-knowledge-systems/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:model-context-protocol-and-tool-using-ai-systems-fr",
+      "type": "publication",
+      "title": "Model Context Protocol et systèmes d'IA utilisant des outils",
+      "route": "/fr/publications/model-context-protocol-and-tool-using-ai-systems/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:human-computer-interaction-for-creative-tools-fr",
+      "type": "publication",
+      "title": "Interaction humain-machine pour les outils créatifs",
+      "route": "/fr/publications/human-computer-interaction-for-creative-tools/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:collection:voice-capture-studio-fr",
+      "type": "collection",
+      "title": "Collection Voice Capture Studio",
+      "route": "/fr/archive/collections/voice-capture-studio/",
+      "status": "active",
+      "confidence": "published"
+    }
+  ],
+  "edges": [
+    {
+      "id": "ear:first-conversation-understanding-implemented-by-voice-capture-studio",
+      "source": "ea:researchQuestion:first-conversation-understanding-fr",
+      "target": "ea:project:voice-capture-studio-fr",
+      "predicate": "implementedBy",
+      "label": "Implemented by",
+      "statement": "Voice Capture Studio is listed as a current software or project answer for the research question \"How can an AI understand someone during its very first conversation?\".",
+      "confidence": "observed"
+    },
+    {
+      "id": "ear:first-conversation-understanding-implemented-by-vestiges",
+      "source": "ea:researchQuestion:first-conversation-understanding-fr",
+      "target": "ea:project:vestiges-fr",
+      "predicate": "implementedBy",
+      "label": "Implemented by",
+      "statement": "Vestiges is listed as a current software or project answer for the research question \"How can an AI understand someone during its very first conversation?\".",
+      "confidence": "observed"
+    },
+    {
+      "id": "ear:first-conversation-understanding-implemented-by-vaste",
+      "source": "ea:researchQuestion:first-conversation-understanding-fr",
+      "target": "ea:program:vaste-fr",
+      "predicate": "implementedBy",
+      "label": "Implemented by",
+      "statement": "VASTE is listed as a current software or project answer for the research question \"How can an AI understand someone during its very first conversation?\".",
+      "confidence": "observed"
+    },
+    {
+      "id": "ear:first-conversation-understanding-implemented-by-oreth",
+      "source": "ea:researchQuestion:first-conversation-understanding-fr",
+      "target": "ea:program:oreth-fr",
+      "predicate": "implementedBy",
+      "label": "Implemented by",
+      "statement": "ORETH is listed as a current software or project answer for the research question \"How can an AI understand someone during its very first conversation?\".",
+      "confidence": "observed"
+    },
+    {
+      "id": "ear:first-conversation-understanding-applies-concept-ai-agent",
+      "source": "ea:researchQuestion:first-conversation-understanding-fr",
+      "target": "ea:concept:ai-agent-fr",
+      "predicate": "appliesConcept",
+      "label": "Applies concept",
+      "statement": "The research question \"How can an AI understand someone during its very first conversation?\" applies AI Agent as part of its current model.",
+      "confidence": "observed"
+    },
+    {
+      "id": "ear:first-conversation-understanding-applies-concept-knowledge-graph",
+      "source": "ea:researchQuestion:first-conversation-understanding-fr",
+      "target": "ea:concept:knowledge-graph-fr",
+      "predicate": "appliesConcept",
+      "label": "Applies concept",
+      "statement": "The research question \"How can an AI understand someone during its very first conversation?\" applies Knowledge Graph as part of its current model.",
+      "confidence": "observed"
+    },
+    {
+      "id": "ear:first-conversation-understanding-applies-concept-machine-learning-workflows",
+      "source": "ea:researchQuestion:first-conversation-understanding-fr",
+      "target": "ea:concept:machine-learning-workflows-fr",
+      "predicate": "appliesConcept",
+      "label": "Applies concept",
+      "statement": "The research question \"How can an AI understand someone during its very first conversation?\" applies Machine Learning Workflows as part of its current model.",
+      "confidence": "observed"
+    },
+    {
+      "id": "ear:first-conversation-understanding-applies-concept-human-computer-interaction",
+      "source": "ea:researchQuestion:first-conversation-understanding-fr",
+      "target": "ea:concept:human-computer-interaction-fr",
+      "predicate": "appliesConcept",
+      "label": "Applies concept",
+      "statement": "The research question \"How can an AI understand someone during its very first conversation?\" applies Human Computer Interaction as part of its current model.",
+      "confidence": "observed"
+    },
+    {
+      "id": "ear:first-conversation-understanding-applies-concept-contextual-execution",
+      "source": "ea:researchQuestion:first-conversation-understanding-fr",
+      "target": "ea:concept:contextual-execution-fr",
+      "predicate": "appliesConcept",
+      "label": "Applies concept",
+      "statement": "The research question \"How can an AI understand someone during its very first conversation?\" applies Contextual Execution as part of its current model.",
+      "confidence": "observed"
+    },
+    {
+      "id": "ear:first-conversation-understanding-applies-concept-entity-identity",
+      "source": "ea:researchQuestion:first-conversation-understanding-fr",
+      "target": "ea:concept:entity-identity-fr",
+      "predicate": "appliesConcept",
+      "label": "Applies concept",
+      "statement": "The research question \"How can an AI understand someone during its very first conversation?\" applies Entity Identity as part of its current model.",
+      "confidence": "observed"
+    },
+    {
+      "id": "ear:first-conversation-understanding-applies-concept-voice-technology",
+      "source": "ea:researchQuestion:first-conversation-understanding-fr",
+      "target": "ea:concept:voice-technology-fr",
+      "predicate": "appliesConcept",
+      "label": "Applies concept",
+      "statement": "The research question \"How can an AI understand someone during its very first conversation?\" applies Voice Technology as part of its current model.",
+      "confidence": "observed"
+    },
+    {
+      "id": "ear:first-conversation-understanding-uses-technology-model-context-protocol",
+      "source": "ea:researchQuestion:first-conversation-understanding-fr",
+      "target": "ea:technology:model-context-protocol-fr",
+      "predicate": "usesTechnology",
+      "label": "Uses technology",
+      "statement": "The research question \"How can an AI understand someone during its very first conversation?\" uses Model Context Protocol as a relevant technical reference.",
+      "confidence": "observed"
+    },
+    {
+      "id": "ear:first-conversation-understanding-uses-technology-web-audio-api",
+      "source": "ea:researchQuestion:first-conversation-understanding-fr",
+      "target": "ea:technology:web-audio-api-fr",
+      "predicate": "usesTechnology",
+      "label": "Uses technology",
+      "statement": "The research question \"How can an AI understand someone during its very first conversation?\" uses Web Audio API as a relevant technical reference.",
+      "confidence": "observed"
+    },
+    {
+      "id": "ear:first-conversation-understanding-uses-technology-webnn",
+      "source": "ea:researchQuestion:first-conversation-understanding-fr",
+      "target": "ea:technology:webnn-fr",
+      "predicate": "usesTechnology",
+      "label": "Uses technology",
+      "statement": "The research question \"How can an AI understand someone during its very first conversation?\" uses WebNN as a relevant technical reference.",
+      "confidence": "observed"
+    },
+    {
+      "id": "ear:ai-agents-vs-ai-workflows-documents-first-conversation-understanding",
+      "source": "ea:publication:ai-agents-vs-ai-workflows-fr",
+      "target": "ea:researchQuestion:first-conversation-understanding-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "AI Agents vs AI Workflows documents context, evidence or vocabulary for the research question \"How can an AI understand someone during its very first conversation?\".",
+      "confidence": "observed"
+    },
+    {
+      "id": "ear:retrieval-augmented-generation-and-knowledge-systems-documents-first-conversation-understanding",
+      "source": "ea:publication:retrieval-augmented-generation-and-knowledge-systems-fr",
+      "target": "ea:researchQuestion:first-conversation-understanding-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Retrieval-Augmented Generation and Knowledge Systems documents context, evidence or vocabulary for the research question \"How can an AI understand someone during its very first conversation?\".",
+      "confidence": "observed"
+    },
+    {
+      "id": "ear:model-context-protocol-and-tool-using-ai-systems-documents-first-conversation-understanding",
+      "source": "ea:publication:model-context-protocol-and-tool-using-ai-systems-fr",
+      "target": "ea:researchQuestion:first-conversation-understanding-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Model Context Protocol and Tool-Using AI Systems documents context, evidence or vocabulary for the research question \"How can an AI understand someone during its very first conversation?\".",
+      "confidence": "observed"
+    },
+    {
+      "id": "ear:human-computer-interaction-for-creative-tools-documents-first-conversation-understanding",
+      "source": "ea:publication:human-computer-interaction-for-creative-tools-fr",
+      "target": "ea:researchQuestion:first-conversation-understanding-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Human Computer Interaction for Creative Tools documents context, evidence or vocabulary for the research question \"How can an AI understand someone during its very first conversation?\".",
+      "confidence": "observed"
+    },
+    {
+      "id": "ear:first-conversation-understanding-member-of-collection-voice-capture-studio",
+      "source": "ea:researchQuestion:first-conversation-understanding-fr",
+      "target": "ea:collection:voice-capture-studio-fr",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "The research question \"How can an AI understand someone during its very first conversation?\" belongs to the Voice Capture Studio Collection collection for editorial navigation.",
+      "confidence": "observed"
+    }
+  ]
+}

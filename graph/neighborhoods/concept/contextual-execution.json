@@ -90,6 +90,14 @@
       "route": "/publications/runtime-engines-and-domain-operating-systems/",
       "status": "active",
       "confidence": "published"
+    },
+    {
+      "id": "ea:researchQuestion:first-conversation-understanding",
+      "type": "researchQuestion",
+      "title": "How can an AI understand someone during its very first conversation?",
+      "route": "/research/questions/first-conversation-understanding/",
+      "status": "active",
+      "confidence": "observed"
     }
   ],
   "edges": [
@@ -182,6 +190,15 @@
       "label": "Documents",
       "statement": "Runtime Engines and Domain Operating Systems explains capability evaluation through contextual execution.",
       "confidence": "published"
+    },
+    {
+      "id": "ear:first-conversation-understanding-applies-concept-contextual-execution",
+      "source": "ea:researchQuestion:first-conversation-understanding",
+      "target": "ea:concept:contextual-execution",
+      "predicate": "appliesConcept",
+      "label": "Applies concept",
+      "statement": "The research question \"How can an AI understand someone during its very first conversation?\" applies Contextual Execution as part of its current model.",
+      "confidence": "observed"
     }
   ]
 }
