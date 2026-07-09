@@ -7,6 +7,7 @@ import { validateGraph } from "../src/build/validate-graph.js";
 import { buildRoutes } from "../src/build/build-routes.js";
 import { buildCatalog, isPublicEntity } from "../src/build/build-catalog.js";
 import { buildI18nAlternates } from "../src/build/build-i18n-alternates.js";
+import { loadPreviousPublicEntities, removeStaleGeneratedOutputs } from "../src/build/reconcile-generated-output.js";
 import { routeToFile, writeJson, writeText } from "../src/build/write-output.js";
 import { metadataFor } from "../src/seo/metadata.js";
 import { buildAgentManifest, buildLlmsFullTxt, buildLlmsTxt } from "../src/seo/agent-index.js";
@@ -31,6 +32,7 @@ import type { Locale } from "../src/schema/entity.js";
 
 const rootDir = path.resolve(".");
 const origin = "https://electronicartefacts.com";
+const previousPublicEntities = await loadPreviousPublicEntities(rootDir);
 const entities = await loadContent(rootDir);
 const relations = withDerivedRelations(entities, await loadRelations(rootDir));
 validateGraph(entities, relations);
@@ -536,5 +538,6 @@ await writeText(path.join(rootDir, "humans.txt"), buildHumansTxt());
 const securityTxt = buildSecurityTxt();
 await writeText(path.join(rootDir, "security.txt"), securityTxt);
 await writeText(path.join(rootDir, ".well-known/security.txt"), securityTxt);
+const removedOutputs = await removeStaleGeneratedOutputs(rootDir, previousPublicEntities, publicEntities);
 
-process.stdout.write(`Generated ${publicEntities.length} canonical entity pages, ${routes.length} identifier routes, search data and graph neighborhoods.\n`);
+process.stdout.write(`Generated ${publicEntities.length} canonical entity pages, ${routes.length} identifier routes, search data and graph neighborhoods; removed ${removedOutputs.length} stale generated files.\n`);
