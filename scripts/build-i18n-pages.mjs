@@ -235,7 +235,7 @@ const frenchPrivacyMain = `<main id="main" class="site-main">
           <p class="eyebrow">CONFIDENTIALITÉ</p>
           <h1 class="display-title">Gestion des données du site.</h1>
           <p class="lede">
-            Electronic Artefacts utilise une mesure d'audience limitée. Google Analytics 4 n'est chargé qu'après votre
+            Electronic Artefacts utilise une mesure d'audience fondée sur le consentement. Google Analytics 4 n'est chargé qu'après votre
             consentement explicite, et le refus n'a aucun effet sur l'accès au site.
           </p>
         </div>
@@ -283,7 +283,29 @@ const frenchPrivacyMain = `<main id="main" class="site-main">
             <p class="card__copy">
               Avant consentement, le site ne charge pas le script Google Analytics et n'envoie pas d'événement analytics à
               Google. Après consentement, le site peut mesurer les pages consultées, les référents, des informations larges
-              sur l'appareil ou le navigateur et l'activité de session.
+              sur l'appareil ou le navigateur, l'activité de session et les interactions avec le site public.
+            </p>
+          </article>
+
+          <article class="panel">
+            <p class="card__meta">Événements d'interaction</p>
+            <h2 class="card__title">Navigation, recherche et activité de graphe</h2>
+            <p class="card__copy">
+              Si l'analytics est accepté, le site peut envoyer des événements liés aux clics internes et externes, aux
+              téléchargements, aux liens d'intention de contact, aux changements de langue, aux termes de recherche interne,
+              aux filtres, aux onglets, aux sélections de nœuds de graphe, aux sections vues, aux seuils de scroll, aux
+              seuils de temps actif, aux likes et aux actions de partage. Les adresses e-mail et numéros de téléphone
+              évidents saisis dans les champs de recherche sont masqués avant l'envoi.
+            </p>
+          </article>
+
+          <article class="panel">
+            <p class="card__meta">Minimisation</p>
+            <h2 class="card__title">Pas de profils personnels volontaires</h2>
+            <p class="card__copy">
+              L'implémentation n'envoie pas volontairement à Google Analytics de noms, adresses e-mail, numéros de téléphone,
+              contenus de messages, identifiants de compte, données utilisateur publicitaires ou signaux de personnalisation
+              publicitaire.
             </p>
           </article>
 
@@ -481,9 +503,10 @@ const frenchLegalMain = `<main id="main" class="site-main">
             <p class="card__meta">Mesure d'audience</p>
             <h2 class="card__title">Google Analytics 4</h2>
             <p class="card__copy">
-              Google Analytics est utilisé uniquement après consentement cookies pour mesurer le trafic public et améliorer
-              le site. Les détails relatifs aux cookies, au retrait du consentement et au traitement des données sont
-              indiqués dans la politique de confidentialité.
+              Google Analytics est utilisé uniquement après consentement cookies pour mesurer le trafic public, les parcours
+              de navigation et les événements d'interaction utiles à l'amélioration du site. Les détails relatifs aux
+              cookies, au retrait du consentement et au traitement des données sont indiqués dans la politique de
+              confidentialité.
             </p>
             <div class="link-row">
               <a class="tag" href="/fr/confidentialite.html">Politique de confidentialité</a>

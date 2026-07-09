@@ -15,18 +15,65 @@ Electronic Artefacts now has a consent-gated Google Analytics 4 foundation for p
 
 ## Activation
 
-Set the GA4 Measurement ID in `assets/js/core/analytics-config.js`:
+The active GA4 Measurement ID is set in `assets/js/core/analytics-config.js`:
 
 ```js
 window.EA_ANALYTICS_CONFIG = {
   enabled: true,
   provider: "Google Analytics 4",
-  measurementId: "G-XXXXXXXXXX",
+  measurementId: "G-67DKY05YS7",
   privacyUrl: "/confidentialite.html",
 };
 ```
 
-Leave `measurementId` empty until a real GA4 property is ready. With an empty ID, the runtime exposes `window.EA_ANALYTICS.configured === false` and does not display a banner or contact Google.
+With an empty or invalid ID, the runtime exposes `window.EA_ANALYTICS.configured === false` and does not display a banner or contact Google.
+
+## Event Taxonomy
+
+The runtime exposes `window.EA_ANALYTICS.track(eventName, params)` and only sends events after a stored or freshly granted analytics consent. Events are not queued before consent.
+
+Every event includes shared page context:
+
+- `page_type`: `document.body.dataset.page`
+- `page_locale`: `en` or `fr`
+- `page_path`: current path without query parameters
+- `content_group`: first public route segment
+- `entry_id`: body or nearest public `data-entry-id`, when present
+
+Recommended GA4 events used:
+
+- `search`: site search terms, source and result count
+- `select_content`: internal navigation, cards, tabs, local likes, command palette opens and search pagination
+- `share`: successful native-share or clipboard-share actions
+- `generate_lead`: `mailto:` or `tel:` contact links
+- `file_download`: direct public file/media downloads
+
+Custom Electronic Artefacts events:
+
+- `ea_page_context`: first consented context snapshot for the current page
+- `ea_scroll_depth`: 25%, 50%, 75%, 90% and 100% scroll milestones
+- `ea_section_view`: first consented view of major page sections
+- `ea_time_milestone`: 30s, 60s, 120s and 300s active-time milestones
+- `ea_outbound_click`: external-domain clicks without query strings
+- `ea_filter_change`: taxonomy, search and moodboard filters
+- `ea_graph_node_select`: graph-surface and project-graph node selections
+- `ea_contact_intent`: internal links toward the contact page
+- `ea_language_switch`: language-menu choices
+- `ea_privacy_preferences`: cookie-preference panel opens
+- `ea_command_search`: command-palette searches
+- `ea_share_intent`: share-button clicks before the browser share/copy operation resolves
+- `ea_ui_action`: small UI actions that do not fit a recommended event
+
+Search terms and labels are trimmed, length-limited and pass through simple redaction for obvious email addresses and phone numbers before being sent. The implementation does not intentionally send message bodies, account identifiers, ad user data or ad personalization signals.
+
+Suggested GA4 custom dimensions:
+
+- Event scope: `page_type`, `page_locale`, `content_group`, `entry_id`
+- Event scope: `link_location`, `link_text`, `content_type`, `content_id`
+- Event scope: `search_source`, `result_count`
+- Event scope: `filter_key`, `filter_value`, `filter_scope`
+- Event scope: `graph_type`, `node_label`, `node_title`
+- Event scope: `percent_scrolled`, `active_time_seconds`, `section_label`
 
 ## Compliance Notes
 

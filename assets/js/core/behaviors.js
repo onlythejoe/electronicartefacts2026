@@ -368,15 +368,28 @@
           text: document.querySelector('meta[name="description"]')?.getAttribute("content") || "Electronic Artefacts article",
           url: window.location.href,
         };
+        const trackShare = (method) => {
+          window.EA_ANALYTICS?.track?.("share", {
+            method,
+            content_type: "page",
+            item_id: rawKey,
+          });
+        };
         try {
           if (navigator.share) {
             await navigator.share(shareData);
+            trackShare("native_share");
             setFeedback(translate("Share sheet opened."));
             return;
           }
           await navigator.clipboard.writeText(shareData.url);
+          trackShare("clipboard");
           setFeedback(translate("Link copied."));
         } catch {
+          window.EA_ANALYTICS?.track?.("ea_ui_action", {
+            action: "share_unavailable",
+            link_location: "engagement_panel",
+          });
           setFeedback(translate("Share unavailable."));
         }
       });

@@ -32,9 +32,11 @@ const runAnalytics = async (options: {
 
   const document = {
     readyState: "complete",
-    documentElement: { lang: "en" },
+    title: "Analytics Test | Electronic Artefacts",
+    referrer: "",
+    documentElement: { lang: "en", scrollHeight: 2000 },
     body: {
-      dataset: {},
+      dataset: { page: "test-page", entryId: "ea:test" },
       appendChild(node: { tagName: string; remove(): void }) {
         bodyChildren.push(node);
         return node;
@@ -49,6 +51,9 @@ const runAnalytics = async (options: {
     createElement,
     querySelectorAll() {
       return [];
+    },
+    querySelector() {
+      return null;
     },
     addEventListener() {},
   };
@@ -77,7 +82,24 @@ const runAnalytics = async (options: {
     encodeURIComponent,
     document,
     window: {
-      location: { hostname: "electronicartefacts.com" },
+      location: { hostname: "electronicartefacts.com", pathname: "/test.html" },
+      innerHeight: 900,
+      innerWidth: 1440,
+      scrollY: 0,
+      screen: { width: 1440 },
+      addEventListener() {},
+      requestAnimationFrame(callback: () => void) {
+        callback();
+        return 1;
+      },
+      setTimeout(callback: () => void) {
+        callback();
+        return 1;
+      },
+      clearTimeout() {},
+      setInterval() {
+        return 1;
+      },
       localStorage: {
         getItem: (key: string) => storage.get(key) || null,
         setItem: (key: string, value: string) => storage.set(key, value),
@@ -120,4 +142,41 @@ test("analytics runtime honors stored refusal and clears accessible GA cookies",
   assert.equal(harness.bodyChildren.length, 0);
   assert.ok(harness.cookieWrites.some((value) => value.startsWith("_ga=")));
   assert.ok(harness.cookieWrites.some((value) => value.startsWith("_gid=")));
+});
+
+test("analytics runtime sends sanitized events only after consent", async () => {
+  const harness = await runAnalytics();
+  const analytics = (harness.context.window as typeof harness.context.window & {
+    dataLayer?: unknown[];
+    EA_ANALYTICS: {
+      setConsent(status: "granted" | "denied"): void;
+      track(eventName: string, params?: Record<string, unknown>): boolean;
+    };
+  }).EA_ANALYTICS;
+
+  assert.equal(analytics.track("search", { search_term: "before@example.com" }), false);
+
+  analytics.setConsent("granted");
+  assert.equal(analytics.track("search", { search_term: "runtime test@example.com", result_count: 3 }), true);
+
+  const dataLayer = (harness.context.window as typeof harness.context.window & { dataLayer: unknown[] }).dataLayer;
+  const searchEvent = dataLayer.find((entry) =>
+    Array.isArray(entry) && entry[0] === "event" && entry[1] === "search",
+  ) as unknown[] | undefined;
+
+  assert.ok(searchEvent, "search event should be queued after consent");
+  assert.deepEqual(
+    {
+      search_term: (searchEvent[2] as Record<string, unknown>).search_term,
+      result_count: (searchEvent[2] as Record<string, unknown>).result_count,
+      page_type: (searchEvent[2] as Record<string, unknown>).page_type,
+      entry_id: (searchEvent[2] as Record<string, unknown>).entry_id,
+    },
+    {
+      search_term: "runtime [email]",
+      result_count: 3,
+      page_type: "test-page",
+      entry_id: "ea:test",
+    },
+  );
 });
