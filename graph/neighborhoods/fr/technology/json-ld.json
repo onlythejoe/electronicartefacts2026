@@ -1,0 +1,51 @@
+{
+  "id": "local:ea:technology:json-ld-fr",
+  "kind": "local",
+  "focus": "ea:technology:json-ld-fr",
+  "nodes": [
+    {
+      "id": "ea:technology:json-ld-fr",
+      "type": "technology",
+      "title": "JSON-LD",
+      "route": "/fr/knowledge/technologies/json-ld/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:ai-search-structured-content-and-knowledge-graph-seo-fr",
+      "type": "publication",
+      "title": "Recherche IA, contenu structuré et SEO par graphe de connaissances",
+      "route": "/fr/publications/ai-search-structured-content-and-knowledge-graph-seo/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:linked-data-and-public-knowledge-pages-fr",
+      "type": "publication",
+      "title": "Données liées et pages publiques de connaissance",
+      "route": "/fr/publications/linked-data-and-public-knowledge-pages/",
+      "status": "active",
+      "confidence": "published"
+    }
+  ],
+  "edges": [
+    {
+      "id": "ear:ai-search-seo-article-uses-json-ld",
+      "source": "ea:publication:ai-search-structured-content-and-knowledge-graph-seo-fr",
+      "target": "ea:technology:json-ld-fr",
+      "predicate": "usesTechnology",
+      "label": "Uses technology",
+      "statement": "AI Search, Structured Content and Knowledge Graph SEO uses JSON-LD as the structured data bridge between articles and graph records.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:linked-data-article-uses-json-ld",
+      "source": "ea:publication:linked-data-and-public-knowledge-pages-fr",
+      "target": "ea:technology:json-ld-fr",
+      "predicate": "usesTechnology",
+      "label": "Uses technology",
+      "statement": "Linked Data and Public Knowledge Pages uses JSON-LD as the practical structured-data format for static knowledge pages.",
+      "confidence": "published"
+    }
+  ]
+}

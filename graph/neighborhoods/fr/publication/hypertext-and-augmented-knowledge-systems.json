@@ -1,0 +1,102 @@
+{
+  "id": "local:ea:publication:hypertext-and-augmented-knowledge-systems-fr",
+  "kind": "local",
+  "focus": "ea:publication:hypertext-and-augmented-knowledge-systems-fr",
+  "nodes": [
+    {
+      "id": "ea:publication:hypertext-and-augmented-knowledge-systems-fr",
+      "type": "publication",
+      "title": "Hypertexte et systèmes de connaissance augmentée",
+      "route": "/fr/publications/hypertext-and-augmented-knowledge-systems/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:concept:hypertext-fr",
+      "type": "concept",
+      "title": "Hypertexte",
+      "route": "/fr/knowledge/concepts/hypertext/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:concept:augmented-intelligence-fr",
+      "type": "concept",
+      "title": "Intelligence augmentée",
+      "route": "/fr/knowledge/concepts/augmented-intelligence/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:concept:knowledge-graph-fr",
+      "type": "concept",
+      "title": "Graphe de connaissances",
+      "route": "/fr/knowledge/concepts/knowledge-graph/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:concept:linked-data-fr",
+      "type": "concept",
+      "title": "Données liées",
+      "route": "/fr/knowledge/concepts/linked-data/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:collection:knowledge-hub-second-wave-fr",
+      "type": "collection",
+      "title": "Hub de connaissance, deuxième vague",
+      "route": "/fr/archive/collections/knowledge-hub-second-wave/",
+      "status": "active",
+      "confidence": "published"
+    }
+  ],
+  "edges": [
+    {
+      "id": "ear:hypertext-article-documents-hypertext",
+      "source": "ea:publication:hypertext-and-augmented-knowledge-systems-fr",
+      "target": "ea:concept:hypertext-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Hypertext and Augmented Knowledge Systems documents hypertext as an architecture for linked public knowledge.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:hypertext-article-documents-augmented-intelligence",
+      "source": "ea:publication:hypertext-and-augmented-knowledge-systems-fr",
+      "target": "ea:concept:augmented-intelligence-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Hypertext and Augmented Knowledge Systems connects hypertext to augmented intelligence and human knowledge work.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:hypertext-article-documents-knowledge-graph",
+      "source": "ea:publication:hypertext-and-augmented-knowledge-systems-fr",
+      "target": "ea:concept:knowledge-graph-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Hypertext and Augmented Knowledge Systems explains how knowledge graphs strengthen linked pages with explicit relations.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:hypertext-article-documents-linked-data",
+      "source": "ea:publication:hypertext-and-augmented-knowledge-systems-fr",
+      "target": "ea:concept:linked-data-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Hypertext and Augmented Knowledge Systems links hypertext practice to Linked Data and stable identifiers.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:knowledge-hub-second-wave-has-hypertext-article",
+      "source": "ea:collection:knowledge-hub-second-wave-fr",
+      "target": "ea:publication:hypertext-and-augmented-knowledge-systems-fr",
+      "predicate": "hasPart",
+      "label": "Has part",
+      "statement": "Knowledge Hub Second Wave includes Hypertext and Augmented Knowledge Systems as a core article.",
+      "confidence": "published"
+    }
+  ]
+}

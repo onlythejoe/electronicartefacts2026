@@ -1,0 +1,102 @@
+{
+  "id": "local:ea:publication:personal-knowledge-systems-and-digital-gardens-fr",
+  "kind": "local",
+  "focus": "ea:publication:personal-knowledge-systems-and-digital-gardens-fr",
+  "nodes": [
+    {
+      "id": "ea:publication:personal-knowledge-systems-and-digital-gardens-fr",
+      "type": "publication",
+      "title": "Systèmes personnels de connaissance et jardins numériques",
+      "route": "/fr/publications/personal-knowledge-systems-and-digital-gardens/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:concept:personal-knowledge-system-fr",
+      "type": "concept",
+      "title": "Système personnel de connaissance",
+      "route": "/fr/knowledge/concepts/personal-knowledge-system/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:concept:hypertext-fr",
+      "type": "concept",
+      "title": "Hypertexte",
+      "route": "/fr/knowledge/concepts/hypertext/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:concept:metadata-fr",
+      "type": "concept",
+      "title": "Métadonnées",
+      "route": "/fr/knowledge/concepts/metadata/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:concept:digital-preservation-fr",
+      "type": "concept",
+      "title": "Préservation numérique",
+      "route": "/fr/knowledge/concepts/digital-preservation/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:collection:knowledge-hub-second-wave-fr",
+      "type": "collection",
+      "title": "Hub de connaissance, deuxième vague",
+      "route": "/fr/archive/collections/knowledge-hub-second-wave/",
+      "status": "active",
+      "confidence": "published"
+    }
+  ],
+  "edges": [
+    {
+      "id": "ear:personal-knowledge-article-documents-personal-knowledge-system",
+      "source": "ea:publication:personal-knowledge-systems-and-digital-gardens-fr",
+      "target": "ea:concept:personal-knowledge-system-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Personal Knowledge Systems and Digital Gardens documents personal knowledge systems as a practice of capture, linking and revision.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:personal-knowledge-article-documents-hypertext",
+      "source": "ea:publication:personal-knowledge-systems-and-digital-gardens-fr",
+      "target": "ea:concept:hypertext-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Personal Knowledge Systems and Digital Gardens uses hypertext as the linking model for public knowledge gardens.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:personal-knowledge-article-documents-metadata",
+      "source": "ea:publication:personal-knowledge-systems-and-digital-gardens-fr",
+      "target": "ea:concept:metadata-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Personal Knowledge Systems and Digital Gardens connects durable note systems to metadata and publication state.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:personal-knowledge-article-documents-digital-preservation",
+      "source": "ea:publication:personal-knowledge-systems-and-digital-gardens-fr",
+      "target": "ea:concept:digital-preservation-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Personal Knowledge Systems and Digital Gardens links revision and retrieval practice to digital preservation concerns.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:knowledge-hub-second-wave-has-personal-knowledge-article",
+      "source": "ea:collection:knowledge-hub-second-wave-fr",
+      "target": "ea:publication:personal-knowledge-systems-and-digital-gardens-fr",
+      "predicate": "hasPart",
+      "label": "Has part",
+      "statement": "Knowledge Hub Second Wave includes Personal Knowledge Systems and Digital Gardens as a core article.",
+      "confidence": "published"
+    }
+  ]
+}

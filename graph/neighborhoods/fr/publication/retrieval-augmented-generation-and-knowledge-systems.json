@@ -1,0 +1,119 @@
+{
+  "id": "local:ea:publication:retrieval-augmented-generation-and-knowledge-systems-fr",
+  "kind": "local",
+  "focus": "ea:publication:retrieval-augmented-generation-and-knowledge-systems-fr",
+  "nodes": [
+    {
+      "id": "ea:publication:retrieval-augmented-generation-and-knowledge-systems-fr",
+      "type": "publication",
+      "title": "Génération augmentée par récupération et systèmes de connaissance",
+      "route": "/fr/publications/retrieval-augmented-generation-and-knowledge-systems/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:concept:retrieval-augmented-generation-fr",
+      "type": "concept",
+      "title": "Génération augmentée par récupération",
+      "route": "/fr/knowledge/concepts/retrieval-augmented-generation/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:concept:knowledge-graph-fr",
+      "type": "concept",
+      "title": "Graphe de connaissances",
+      "route": "/fr/knowledge/concepts/knowledge-graph/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:concept:metadata-fr",
+      "type": "concept",
+      "title": "Métadonnées",
+      "route": "/fr/knowledge/concepts/metadata/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:concept:provenance-fr",
+      "type": "concept",
+      "title": "Provenance",
+      "route": "/fr/knowledge/concepts/provenance/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:program:vaste-fr",
+      "type": "program",
+      "title": "VASTE",
+      "route": "/fr/programs/vaste/",
+      "status": "development",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:collection:knowledge-hub-third-wave-fr",
+      "type": "collection",
+      "title": "Hub de connaissance, troisième vague",
+      "route": "/fr/archive/collections/knowledge-hub-third-wave/",
+      "status": "active",
+      "confidence": "published"
+    }
+  ],
+  "edges": [
+    {
+      "id": "ear:rag-article-documents-rag",
+      "source": "ea:publication:retrieval-augmented-generation-and-knowledge-systems-fr",
+      "target": "ea:concept:retrieval-augmented-generation-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Retrieval-Augmented Generation and Knowledge Systems documents RAG architecture end to end.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:rag-article-documents-knowledge-graph",
+      "source": "ea:publication:retrieval-augmented-generation-and-knowledge-systems-fr",
+      "target": "ea:concept:knowledge-graph-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Retrieval-Augmented Generation and Knowledge Systems explains graph-grounded retrieval.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:rag-article-documents-metadata",
+      "source": "ea:publication:retrieval-augmented-generation-and-knowledge-systems-fr",
+      "target": "ea:concept:metadata-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Retrieval-Augmented Generation and Knowledge Systems treats metadata as retrieval infrastructure.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:rag-article-documents-provenance",
+      "source": "ea:publication:retrieval-augmented-generation-and-knowledge-systems-fr",
+      "target": "ea:concept:provenance-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Retrieval-Augmented Generation and Knowledge Systems connects citations and source grounding to provenance.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:rag-article-documents-vaste",
+      "source": "ea:publication:retrieval-augmented-generation-and-knowledge-systems-fr",
+      "target": "ea:program:vaste-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Retrieval-Augmented Generation and Knowledge Systems uses VASTE as a context for identity-aware graph retrieval.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:knowledge-hub-third-wave-has-rag-article",
+      "source": "ea:collection:knowledge-hub-third-wave-fr",
+      "target": "ea:publication:retrieval-augmented-generation-and-knowledge-systems-fr",
+      "predicate": "hasPart",
+      "label": "Has part",
+      "statement": "Knowledge Hub Third Wave includes Retrieval-Augmented Generation and Knowledge Systems.",
+      "confidence": "published"
+    }
+  ]
+}

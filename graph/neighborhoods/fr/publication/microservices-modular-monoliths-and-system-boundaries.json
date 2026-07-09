@@ -1,0 +1,102 @@
+{
+  "id": "local:ea:publication:microservices-modular-monoliths-and-system-boundaries-fr",
+  "kind": "local",
+  "focus": "ea:publication:microservices-modular-monoliths-and-system-boundaries-fr",
+  "nodes": [
+    {
+      "id": "ea:publication:microservices-modular-monoliths-and-system-boundaries-fr",
+      "type": "publication",
+      "title": "Microservices, monolithes modulaires et frontières de système",
+      "route": "/fr/publications/microservices-modular-monoliths-and-system-boundaries/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:concept:microservice-architecture-fr",
+      "type": "concept",
+      "title": "Architecture de microservices",
+      "route": "/fr/knowledge/concepts/microservice-architecture/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:concept:systems-thinking-fr",
+      "type": "concept",
+      "title": "Pensée systémique",
+      "route": "/fr/knowledge/concepts/systems-thinking/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:concept:event-driven-architecture-fr",
+      "type": "concept",
+      "title": "Architecture événementielle",
+      "route": "/fr/knowledge/concepts/event-driven-architecture/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:program:vaste-fr",
+      "type": "program",
+      "title": "VASTE",
+      "route": "/fr/programs/vaste/",
+      "status": "development",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:collection:knowledge-hub-third-wave-fr",
+      "type": "collection",
+      "title": "Hub de connaissance, troisième vague",
+      "route": "/fr/archive/collections/knowledge-hub-third-wave/",
+      "status": "active",
+      "confidence": "published"
+    }
+  ],
+  "edges": [
+    {
+      "id": "ear:microservices-article-documents-microservice-architecture",
+      "source": "ea:publication:microservices-modular-monoliths-and-system-boundaries-fr",
+      "target": "ea:concept:microservice-architecture-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Microservices, Modular Monoliths and System Boundaries documents microservice architecture and its tradeoffs.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:microservices-article-documents-systems-thinking",
+      "source": "ea:publication:microservices-modular-monoliths-and-system-boundaries-fr",
+      "target": "ea:concept:systems-thinking-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Microservices, Modular Monoliths and System Boundaries applies systems thinking to organizational and operational cost.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:microservices-article-documents-event-driven-architecture",
+      "source": "ea:publication:microservices-modular-monoliths-and-system-boundaries-fr",
+      "target": "ea:concept:event-driven-architecture-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Microservices, Modular Monoliths and System Boundaries explains events as one service communication pattern.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:microservices-article-documents-vaste",
+      "source": "ea:publication:microservices-modular-monoliths-and-system-boundaries-fr",
+      "target": "ea:program:vaste-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Microservices, Modular Monoliths and System Boundaries evaluates VASTE through conservative runtime boundaries.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:knowledge-hub-third-wave-has-microservices-article",
+      "source": "ea:collection:knowledge-hub-third-wave-fr",
+      "target": "ea:publication:microservices-modular-monoliths-and-system-boundaries-fr",
+      "predicate": "hasPart",
+      "label": "Has part",
+      "statement": "Knowledge Hub Third Wave includes Microservices, Modular Monoliths and System Boundaries.",
+      "confidence": "published"
+    }
+  ]
+}

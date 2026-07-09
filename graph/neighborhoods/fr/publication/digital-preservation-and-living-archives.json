@@ -1,0 +1,102 @@
+{
+  "id": "local:ea:publication:digital-preservation-and-living-archives-fr",
+  "kind": "local",
+  "focus": "ea:publication:digital-preservation-and-living-archives-fr",
+  "nodes": [
+    {
+      "id": "ea:publication:digital-preservation-and-living-archives-fr",
+      "type": "publication",
+      "title": "Préservation numérique et archives vivantes",
+      "route": "/fr/publications/digital-preservation-and-living-archives/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:concept:digital-preservation-fr",
+      "type": "concept",
+      "title": "Préservation numérique",
+      "route": "/fr/knowledge/concepts/digital-preservation/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:concept:provenance-fr",
+      "type": "concept",
+      "title": "Provenance",
+      "route": "/fr/knowledge/concepts/provenance/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:project:palimpsests-fr",
+      "type": "project",
+      "title": "Palimpsests",
+      "route": "/fr/projects/palimpsests/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:project:vestiges-fr",
+      "type": "project",
+      "title": "Vestiges",
+      "route": "/fr/projects/vestiges/",
+      "status": "development",
+      "confidence": "observed"
+    },
+    {
+      "id": "ea:collection:knowledge-hub-foundations-fr",
+      "type": "collection",
+      "title": "Fondations du hub de connaissance",
+      "route": "/fr/archive/collections/knowledge-hub-foundations/",
+      "status": "active",
+      "confidence": "published"
+    }
+  ],
+  "edges": [
+    {
+      "id": "ear:digital-preservation-article-documents-digital-preservation",
+      "source": "ea:publication:digital-preservation-and-living-archives-fr",
+      "target": "ea:concept:digital-preservation-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Digital Preservation and Living Archives documents digital preservation as long-term care for digital objects and context.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:digital-preservation-article-documents-provenance",
+      "source": "ea:publication:digital-preservation-and-living-archives-fr",
+      "target": "ea:concept:provenance-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Digital Preservation and Living Archives explains provenance as a central layer of living archive practice.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:digital-preservation-article-documents-palimpsests",
+      "source": "ea:publication:digital-preservation-and-living-archives-fr",
+      "target": "ea:project:palimpsests-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Digital Preservation and Living Archives uses Palimpsests as an example of born-digital cultural preservation.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:digital-preservation-article-documents-vestiges",
+      "source": "ea:publication:digital-preservation-and-living-archives-fr",
+      "target": "ea:project:vestiges-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Digital Preservation and Living Archives connects Vestiges to living archive and cultural knowledge preservation.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:knowledge-hub-foundations-has-digital-preservation-article",
+      "source": "ea:collection:knowledge-hub-foundations-fr",
+      "target": "ea:publication:digital-preservation-and-living-archives-fr",
+      "predicate": "hasPart",
+      "label": "Has part",
+      "statement": "Knowledge Hub Foundations includes Digital Preservation and Living Archives as a foundation article.",
+      "confidence": "published"
+    }
+  ]
+}

@@ -4,20 +4,20 @@
   "focus": "ea:technology:skos",
   "nodes": [
     {
-      "id": "ea:publication:ontologies-taxonomies-and-knowledge-modeling",
-      "type": "publication",
-      "title": "Ontologies, Taxonomies and Knowledge Modeling",
-      "route": "/publications/ontologies-taxonomies-and-knowledge-modeling/",
-      "status": "active",
-      "confidence": "published"
-    },
-    {
       "id": "ea:technology:skos",
       "type": "technology",
       "title": "SKOS",
       "route": "/knowledge/technologies/skos/",
       "status": "active",
       "confidence": "canonical"
+    },
+    {
+      "id": "ea:publication:ontologies-taxonomies-and-knowledge-modeling",
+      "type": "publication",
+      "title": "Ontologies, Taxonomies and Knowledge Modeling",
+      "route": "/publications/ontologies-taxonomies-and-knowledge-modeling/",
+      "status": "active",
+      "confidence": "published"
     }
   ],
   "edges": [

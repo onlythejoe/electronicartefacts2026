@@ -1,16 +1,119 @@
 {
-  "id": "local:ea:collection:knowledge-hub-foundations-fr",
+  "id": "local:ea:collection:knowledge-hub-foundations",
   "kind": "local",
-  "focus": "ea:collection:knowledge-hub-foundations-fr",
+  "focus": "ea:collection:knowledge-hub-foundations",
   "nodes": [
     {
-      "id": "ea:collection:knowledge-hub-foundations-fr",
+      "id": "ea:collection:knowledge-hub-foundations",
       "type": "collection",
-      "title": "Fondations du hub de connaissance",
-      "route": "/fr/archive/collections/knowledge-hub-foundations/",
+      "title": "Knowledge Hub Foundations",
+      "route": "/archive/collections/knowledge-hub-foundations/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:knowledge-graphs-for-cultural-infrastructure",
+      "type": "publication",
+      "title": "Knowledge Graphs for Cultural Infrastructure",
+      "route": "/publications/knowledge-graphs-for-cultural-infrastructure/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:linked-data-and-public-knowledge-pages",
+      "type": "publication",
+      "title": "Linked Data and Public Knowledge Pages",
+      "route": "/publications/linked-data-and-public-knowledge-pages/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:contextual-execution-and-graph-runtimes",
+      "type": "publication",
+      "title": "Contextual Execution and Graph Runtimes",
+      "route": "/publications/contextual-execution-and-graph-runtimes/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:digital-preservation-and-living-archives",
+      "type": "publication",
+      "title": "Digital Preservation and Living Archives",
+      "route": "/publications/digital-preservation-and-living-archives/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:generative-systems-cybernetics-and-creative-coding",
+      "type": "publication",
+      "title": "Generative Systems, Cybernetics and Creative Coding",
+      "route": "/publications/generative-systems-cybernetics-and-creative-coding/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:signal-archaeology-audio-memory-and-machine-listening",
+      "type": "publication",
+      "title": "Signal Archaeology, Audio Memory and Machine Listening",
+      "route": "/publications/signal-archaeology-audio-memory-and-machine-listening/",
       "status": "active",
       "confidence": "published"
     }
   ],
-  "edges": []
+  "edges": [
+    {
+      "id": "ear:knowledge-hub-foundations-has-knowledge-graphs-article",
+      "source": "ea:collection:knowledge-hub-foundations",
+      "target": "ea:publication:knowledge-graphs-for-cultural-infrastructure",
+      "predicate": "hasPart",
+      "label": "Has part",
+      "statement": "Knowledge Hub Foundations includes Knowledge Graphs for Cultural Infrastructure as a foundation article.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:knowledge-hub-foundations-has-linked-data-article",
+      "source": "ea:collection:knowledge-hub-foundations",
+      "target": "ea:publication:linked-data-and-public-knowledge-pages",
+      "predicate": "hasPart",
+      "label": "Has part",
+      "statement": "Knowledge Hub Foundations includes Linked Data and Public Knowledge Pages as a foundation article.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:knowledge-hub-foundations-has-contextual-execution-article",
+      "source": "ea:collection:knowledge-hub-foundations",
+      "target": "ea:publication:contextual-execution-and-graph-runtimes",
+      "predicate": "hasPart",
+      "label": "Has part",
+      "statement": "Knowledge Hub Foundations includes Contextual Execution and Graph Runtimes as a foundation article.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:knowledge-hub-foundations-has-digital-preservation-article",
+      "source": "ea:collection:knowledge-hub-foundations",
+      "target": "ea:publication:digital-preservation-and-living-archives",
+      "predicate": "hasPart",
+      "label": "Has part",
+      "statement": "Knowledge Hub Foundations includes Digital Preservation and Living Archives as a foundation article.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:knowledge-hub-foundations-has-generative-systems-article",
+      "source": "ea:collection:knowledge-hub-foundations",
+      "target": "ea:publication:generative-systems-cybernetics-and-creative-coding",
+      "predicate": "hasPart",
+      "label": "Has part",
+      "statement": "Knowledge Hub Foundations includes Generative Systems, Cybernetics and Creative Coding as a foundation article.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:knowledge-hub-foundations-has-signal-archaeology-article",
+      "source": "ea:collection:knowledge-hub-foundations",
+      "target": "ea:publication:signal-archaeology-audio-memory-and-machine-listening",
+      "predicate": "hasPart",
+      "label": "Has part",
+      "statement": "Knowledge Hub Foundations includes Signal Archaeology, Audio Memory and Machine Listening as a foundation article.",
+      "confidence": "published"
+    }
+  ]
 }

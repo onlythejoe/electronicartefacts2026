@@ -1,0 +1,85 @@
+{
+  "id": "local:ea:publication:redis-streams-for-orchestration-fr",
+  "kind": "local",
+  "focus": "ea:publication:redis-streams-for-orchestration-fr",
+  "nodes": [
+    {
+      "id": "ea:publication:redis-streams-for-orchestration-fr",
+      "type": "publication",
+      "title": "Redis Streams pour l’orchestration",
+      "route": "/fr/publications/redis-streams-for-orchestration/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:technology:redis-streams-fr",
+      "type": "technology",
+      "title": "Redis Streams",
+      "route": "/fr/knowledge/technologies/redis-streams/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:concept:event-driven-architecture-fr",
+      "type": "concept",
+      "title": "Architecture événementielle",
+      "route": "/fr/knowledge/concepts/event-driven-architecture/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:program:vaste-fr",
+      "type": "program",
+      "title": "VASTE",
+      "route": "/fr/programs/vaste/",
+      "status": "development",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:collection:knowledge-hub-third-wave-fr",
+      "type": "collection",
+      "title": "Hub de connaissance, troisième vague",
+      "route": "/fr/archive/collections/knowledge-hub-third-wave/",
+      "status": "active",
+      "confidence": "published"
+    }
+  ],
+  "edges": [
+    {
+      "id": "ear:redis-streams-article-uses-redis-streams",
+      "source": "ea:publication:redis-streams-for-orchestration-fr",
+      "target": "ea:technology:redis-streams-fr",
+      "predicate": "usesTechnology",
+      "label": "Uses technology",
+      "statement": "Redis Streams for Orchestration documents Redis Streams as its implementation primitive.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:redis-streams-article-documents-event-driven-architecture",
+      "source": "ea:publication:redis-streams-for-orchestration-fr",
+      "target": "ea:concept:event-driven-architecture-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Redis Streams for Orchestration places Redis consumer groups within event-driven architecture.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:redis-streams-article-documents-vaste",
+      "source": "ea:publication:redis-streams-for-orchestration-fr",
+      "target": "ea:program:vaste-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Redis Streams for Orchestration describes a possible bounded transport layer for VASTE projections.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:knowledge-hub-third-wave-has-redis-streams-article",
+      "source": "ea:collection:knowledge-hub-third-wave-fr",
+      "target": "ea:publication:redis-streams-for-orchestration-fr",
+      "predicate": "hasPart",
+      "label": "Has part",
+      "statement": "Knowledge Hub Third Wave includes Redis Streams for Orchestration.",
+      "confidence": "published"
+    }
+  ]
+}

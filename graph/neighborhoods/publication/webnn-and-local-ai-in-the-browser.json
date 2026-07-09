@@ -4,30 +4,6 @@
   "focus": "ea:publication:webnn-and-local-ai-in-the-browser",
   "nodes": [
     {
-      "id": "ea:collection:knowledge-hub-fourth-wave",
-      "type": "collection",
-      "title": "Knowledge Hub Fourth Wave",
-      "route": "/archive/collections/knowledge-hub-fourth-wave/",
-      "status": "active",
-      "confidence": "published"
-    },
-    {
-      "id": "ea:concept:human-computer-interaction",
-      "type": "concept",
-      "title": "Human Computer Interaction",
-      "route": "/knowledge/concepts/human-computer-interaction/",
-      "status": "active",
-      "confidence": "canonical"
-    },
-    {
-      "id": "ea:concept:multimodal-ai",
-      "type": "concept",
-      "title": "Multimodal AI",
-      "route": "/knowledge/concepts/multimodal-ai/",
-      "status": "active",
-      "confidence": "validated"
-    },
-    {
       "id": "ea:publication:webnn-and-local-ai-in-the-browser",
       "type": "publication",
       "title": "WebNN and Local AI in the Browser",
@@ -42,6 +18,30 @@
       "route": "/knowledge/technologies/webnn/",
       "status": "active",
       "confidence": "canonical"
+    },
+    {
+      "id": "ea:concept:multimodal-ai",
+      "type": "concept",
+      "title": "Multimodal AI",
+      "route": "/knowledge/concepts/multimodal-ai/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:concept:human-computer-interaction",
+      "type": "concept",
+      "title": "Human Computer Interaction",
+      "route": "/knowledge/concepts/human-computer-interaction/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:collection:knowledge-hub-fourth-wave",
+      "type": "collection",
+      "title": "Knowledge Hub Fourth Wave",
+      "route": "/archive/collections/knowledge-hub-fourth-wave/",
+      "status": "active",
+      "confidence": "published"
     }
   ],
   "edges": [

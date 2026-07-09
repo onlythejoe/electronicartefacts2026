@@ -1,0 +1,119 @@
+{
+  "id": "local:ea:publication:generative-ai-latent-space-and-creative-workflows-fr",
+  "kind": "local",
+  "focus": "ea:publication:generative-ai-latent-space-and-creative-workflows-fr",
+  "nodes": [
+    {
+      "id": "ea:publication:generative-ai-latent-space-and-creative-workflows-fr",
+      "type": "publication",
+      "title": "IA générative, espace latent et workflows créatifs",
+      "route": "/fr/publications/generative-ai-latent-space-and-creative-workflows/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:concept:generative-ai-fr",
+      "type": "concept",
+      "title": "IA générative",
+      "route": "/fr/knowledge/concepts/generative-ai/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:concept:augmented-intelligence-fr",
+      "type": "concept",
+      "title": "Intelligence augmentée",
+      "route": "/fr/knowledge/concepts/augmented-intelligence/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:concept:provenance-fr",
+      "type": "concept",
+      "title": "Provenance",
+      "route": "/fr/knowledge/concepts/provenance/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:concept:generative-system-fr",
+      "type": "concept",
+      "title": "Système génératif",
+      "route": "/fr/knowledge/concepts/generative-system/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:concept:human-computer-interaction-fr",
+      "type": "concept",
+      "title": "Interaction humain-machine",
+      "route": "/fr/knowledge/concepts/human-computer-interaction/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:collection:knowledge-hub-second-wave-fr",
+      "type": "collection",
+      "title": "Hub de connaissance, deuxième vague",
+      "route": "/fr/archive/collections/knowledge-hub-second-wave/",
+      "status": "active",
+      "confidence": "published"
+    }
+  ],
+  "edges": [
+    {
+      "id": "ear:generative-ai-article-documents-generative-ai",
+      "source": "ea:publication:generative-ai-latent-space-and-creative-workflows-fr",
+      "target": "ea:concept:generative-ai-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Generative AI, Latent Space and Creative Workflows documents generative AI as a creative workflow topic.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:generative-ai-article-documents-augmented-intelligence",
+      "source": "ea:publication:generative-ai-latent-space-and-creative-workflows-fr",
+      "target": "ea:concept:augmented-intelligence-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Generative AI, Latent Space and Creative Workflows connects generative AI to augmented intelligence.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:generative-ai-article-documents-provenance",
+      "source": "ea:publication:generative-ai-latent-space-and-creative-workflows-fr",
+      "target": "ea:concept:provenance-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Generative AI, Latent Space and Creative Workflows explains provenance as a requirement for responsible AI-assisted production.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:generative-ai-article-documents-generative-system",
+      "source": "ea:publication:generative-ai-latent-space-and-creative-workflows-fr",
+      "target": "ea:concept:generative-system-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Generative AI, Latent Space and Creative Workflows situates generative AI within the broader generative systems lineage.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:generative-ai-article-documents-hci",
+      "source": "ea:publication:generative-ai-latent-space-and-creative-workflows-fr",
+      "target": "ea:concept:human-computer-interaction-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Generative AI, Latent Space and Creative Workflows links AI workflows to human computer interaction and creative agency.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:knowledge-hub-second-wave-has-generative-ai-article",
+      "source": "ea:collection:knowledge-hub-second-wave-fr",
+      "target": "ea:publication:generative-ai-latent-space-and-creative-workflows-fr",
+      "predicate": "hasPart",
+      "label": "Has part",
+      "statement": "Knowledge Hub Second Wave includes Generative AI, Latent Space and Creative Workflows as a core article.",
+      "confidence": "published"
+    }
+  ]
+}

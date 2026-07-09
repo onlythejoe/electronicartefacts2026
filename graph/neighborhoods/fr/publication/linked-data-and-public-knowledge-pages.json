@@ -1,0 +1,102 @@
+{
+  "id": "local:ea:publication:linked-data-and-public-knowledge-pages-fr",
+  "kind": "local",
+  "focus": "ea:publication:linked-data-and-public-knowledge-pages-fr",
+  "nodes": [
+    {
+      "id": "ea:publication:linked-data-and-public-knowledge-pages-fr",
+      "type": "publication",
+      "title": "Données liées et pages publiques de connaissance",
+      "route": "/fr/publications/linked-data-and-public-knowledge-pages/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:concept:linked-data-fr",
+      "type": "concept",
+      "title": "Données liées",
+      "route": "/fr/knowledge/concepts/linked-data/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:concept:entity-identity-fr",
+      "type": "concept",
+      "title": "Identité d'entité",
+      "route": "/fr/knowledge/concepts/entity-identity/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:technology:json-ld-fr",
+      "type": "technology",
+      "title": "JSON-LD",
+      "route": "/fr/knowledge/technologies/json-ld/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:technology:rdf-fr",
+      "type": "technology",
+      "title": "RDF",
+      "route": "/fr/knowledge/technologies/rdf/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:collection:knowledge-hub-foundations-fr",
+      "type": "collection",
+      "title": "Fondations du hub de connaissance",
+      "route": "/fr/archive/collections/knowledge-hub-foundations/",
+      "status": "active",
+      "confidence": "published"
+    }
+  ],
+  "edges": [
+    {
+      "id": "ear:linked-data-article-documents-linked-data",
+      "source": "ea:publication:linked-data-and-public-knowledge-pages-fr",
+      "target": "ea:concept:linked-data-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Linked Data and Public Knowledge Pages documents Linked Data as a publishing discipline for public knowledge pages.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:linked-data-article-documents-entity-identity",
+      "source": "ea:publication:linked-data-and-public-knowledge-pages-fr",
+      "target": "ea:concept:entity-identity-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Linked Data and Public Knowledge Pages explains the difference between page URLs and entity identifiers.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:linked-data-article-uses-json-ld",
+      "source": "ea:publication:linked-data-and-public-knowledge-pages-fr",
+      "target": "ea:technology:json-ld-fr",
+      "predicate": "usesTechnology",
+      "label": "Uses technology",
+      "statement": "Linked Data and Public Knowledge Pages uses JSON-LD as the practical structured-data format for static knowledge pages.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:linked-data-article-uses-rdf",
+      "source": "ea:publication:linked-data-and-public-knowledge-pages-fr",
+      "target": "ea:technology:rdf-fr",
+      "predicate": "usesTechnology",
+      "label": "Uses technology",
+      "statement": "Linked Data and Public Knowledge Pages uses RDF as the underlying graph-data reference for Linked Data.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:knowledge-hub-foundations-has-linked-data-article",
+      "source": "ea:collection:knowledge-hub-foundations-fr",
+      "target": "ea:publication:linked-data-and-public-knowledge-pages-fr",
+      "predicate": "hasPart",
+      "label": "Has part",
+      "statement": "Knowledge Hub Foundations includes Linked Data and Public Knowledge Pages as a foundation article.",
+      "confidence": "published"
+    }
+  ]
+}

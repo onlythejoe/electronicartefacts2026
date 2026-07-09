@@ -86,7 +86,7 @@ const pages = [
     englishRoute: "/mentions-legales.html",
     frenchRoute: "/fr/mentions-legales.html",
     title: "Mentions légales | Electronic Artefacts",
-    description: "Informations légales et coordonnées de l’éditeur du site Electronic Artefacts.",
+    description: "Informations légales, services tiers et crédits techniques du site Electronic Artefacts.",
   },
   {
     source: "confidentialite.html",
@@ -94,7 +94,7 @@ const pages = [
     englishRoute: "/confidentialite.html",
     frenchRoute: "/fr/confidentialite.html",
     title: "Politique de confidentialité | Electronic Artefacts",
-    description: "Informations sur la confidentialité et le stockage local utilisés par le site Electronic Artefacts.",
+    description: "Informations sur la confidentialité, les cookies, Google Analytics et le stockage local du site Electronic Artefacts.",
   },
   {
     source: "search.html",
@@ -228,6 +228,294 @@ const frenchCreativeWorkMicrodata = `      <!-- CREATIVEWORK MICRODATA START -->
       <link itemprop="url" href="https://electronicartefacts.com/fr/" />
       <meta itemprop="inLanguage" content="fr" />
       <!-- CREATIVEWORK MICRODATA END -->`;
+
+const frenchPrivacyMain = `<main id="main" class="site-main">
+      <section class="zone-card hero">
+        <div class="section-head">
+          <p class="eyebrow">CONFIDENTIALITÉ</p>
+          <h1 class="display-title">Gestion des données du site.</h1>
+          <p class="lede">
+            Electronic Artefacts utilise une mesure d'audience limitée. Google Analytics 4 n'est chargé qu'après votre
+            consentement explicite, et le refus n'a aucun effet sur l'accès au site.
+          </p>
+        </div>
+
+        <div class="card-grid card-grid--two">
+          <article class="panel">
+            <p class="card__meta">Données de contact</p>
+            <h2 class="card__title">Uniquement si vous écrivez</h2>
+            <p class="card__copy">
+              Si vous contactez le studio par e-mail ou via une plateforme externe, les informations transmises servent à
+              répondre à votre demande et à suivre l'échange.
+            </p>
+          </article>
+
+          <article class="panel">
+            <p class="card__meta">Préférences locales</p>
+            <h2 class="card__title">Stockées dans votre navigateur</h2>
+            <p class="card__copy">
+              Le site mémorise certaines préférences d'interface et votre choix relatif à l'analytics dans localStorage. Ce
+              choix est conservé jusqu'à six mois avant une nouvelle demande.
+            </p>
+          </article>
+
+          <article class="panel">
+            <p class="card__meta">Services externes</p>
+            <h2 class="card__title">Plateformes tierces</h2>
+            <p class="card__copy">
+              Instagram, GitHub, SoundCloud et VASTE sont des services externes avec leurs propres règles de confidentialité.
+              Les ouvrir vous fait quitter le site Electronic Artefacts.
+            </p>
+          </article>
+
+          <article class="panel">
+            <p class="card__meta">Fournisseurs techniques</p>
+            <h2 class="card__title">GitHub Pages, IONOS et Google</h2>
+            <p class="card__copy">
+              Le site est hébergé sur GitHub Pages et le nom de domaine est géré via IONOS. Si vous acceptez l'analytics,
+              Google LLC traite des données de mesure d'audience via Google Analytics 4.
+            </p>
+          </article>
+
+          <article class="panel">
+            <p class="card__meta">Mesure d'audience</p>
+            <h2 class="card__title">Consentement avant Google Analytics</h2>
+            <p class="card__copy">
+              Avant consentement, le site ne charge pas le script Google Analytics et n'envoie pas d'événement analytics à
+              Google. Après consentement, le site peut mesurer les pages consultées, les référents, des informations larges
+              sur l'appareil ou le navigateur et l'activité de session.
+            </p>
+          </article>
+
+          <article class="panel">
+            <p class="card__meta">Conservation</p>
+            <h2 class="card__title">Limitée au besoin</h2>
+            <p class="card__copy">
+              Les échanges par e-mail sont conservés le temps nécessaire pour répondre et suivre la demande, puis archivés ou
+              supprimés selon le fonctionnement du studio.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="zone-card hero">
+        <div class="section-head">
+          <p class="eyebrow">COOKIES ET TRACEURS</p>
+          <h2>Les cookies analytics demandent votre consentement</h2>
+          <p class="lede">
+            Les cookies Google Analytics sont optionnels. Vous pouvez les accepter ou les refuser depuis le bandeau avec le
+            même niveau d'effort, puis rouvrir ce choix depuis le pied de page.
+          </p>
+        </div>
+
+        <div class="card-grid card-grid--two">
+          <article class="panel">
+            <p class="card__meta">Google Analytics 4</p>
+            <h2 class="card__title">_ga et _ga_&lt;container-id&gt;</h2>
+            <p class="card__copy">
+              Si l'analytics est accepté, GA4 peut déposer des cookies comme <code>_ga</code> et
+              <code>_ga_&lt;container-id&gt;</code>. Google les décrit comme des cookies de distinction des utilisateurs et
+              de maintien de l'état de session, avec une durée par défaut pouvant aller jusqu'à deux ans.
+            </p>
+          </article>
+
+          <article class="panel">
+            <p class="card__meta">Consent Mode</p>
+            <h2 class="card__title">Le stockage publicitaire reste refusé</h2>
+            <p class="card__copy">
+              L'implémentation transmet des signaux de consentement Google avec le stockage analytics accordé uniquement
+              après opt-in. Le stockage publicitaire, les données utilisateur publicitaires et la personnalisation
+              publicitaire restent refusés.
+            </p>
+          </article>
+
+          <article class="panel">
+            <p class="card__meta">Transferts et fournisseur</p>
+            <h2 class="card__title">Google peut traiter les données hors UE</h2>
+            <p class="card__copy">
+              Google Analytics peut impliquer des transferts ou accès par des entités Google situées hors de l'Espace
+              économique européen. C'est pourquoi l'analytics est optionnel et fondé sur le consentement.
+            </p>
+          </article>
+
+          <article class="panel">
+            <p class="card__meta">Modifier votre choix</p>
+            <h2 class="card__title">Retirer le consentement</h2>
+            <p class="card__copy">
+              Utilisez le contrôle de préférences cookies dans le pied de page pour refuser l'analytics après acceptation.
+              Le site envoie alors un signal de refus et supprime les cookies Google Analytics accessibles localement.
+            </p>
+            <div class="link-row">
+              <button class="tag footer-consent-button" type="button" data-analytics-preferences>Préférences cookies</button>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="zone-card hero">
+        <div class="section-head">
+          <p class="eyebrow">DROITS</p>
+          <h2>Accès, correction et suppression</h2>
+          <p class="lede">
+            Pour consulter, corriger ou supprimer des informations que vous avez transmises au studio, utilisez l'adresse de
+            contact ci-dessous.
+          </p>
+        </div>
+
+        <div class="card-grid card-grid--two">
+          <article class="panel">
+            <p class="card__meta">Contact</p>
+            <h2 class="card__title">electronic.artefacts@gmail.com</h2>
+            <p class="card__copy">Adresse à utiliser pour les demandes liées à la confidentialité et aux données.</p>
+            <div class="link-row">
+              <a class="tag" href="mailto:electronic.artefacts@gmail.com">Envoyer un e-mail</a>
+            </div>
+          </article>
+
+          <article class="panel">
+            <p class="card__meta">Périmètre</p>
+            <h2 class="card__title">Ce site uniquement</h2>
+            <p class="card__copy">
+              Cette politique concerne le site public Electronic Artefacts et ne couvre pas les plateformes tierces liées
+              depuis celui-ci.
+            </p>
+          </article>
+        </div>
+      </section>
+    </main>`;
+
+const frenchLegalMain = `<main id="main" class="site-main">
+      <section class="zone-card hero">
+        <div class="section-head">
+          <p class="eyebrow">MENTIONS LÉGALES</p>
+          <h1 class="display-title">Éditeur et informations d'hébergement.</h1>
+          <p class="lede">
+            Informations légales et techniques relatives au site Electronic Artefacts.
+          </p>
+        </div>
+
+        <div class="card-grid card-grid--two">
+          <article class="panel">
+            <p class="card__meta">Nom de publication</p>
+            <h2 class="card__title">Electronic Artefacts</h2>
+            <p class="card__copy">Nom public du studio utilisé sur le site et les canaux sociaux.</p>
+          </article>
+
+          <article class="panel">
+            <p class="card__meta">Contact</p>
+            <h2 class="card__title">electronic.artefacts@gmail.com</h2>
+            <p class="card__copy">Adresse de contact pour les demandes éditoriales, commerciales et liées aux droits.</p>
+            <div class="link-row">
+              <a class="tag" href="mailto:electronic.artefacts@gmail.com">Envoyer un e-mail</a>
+            </div>
+          </article>
+
+          <article class="panel">
+            <p class="card__meta">Éditeur</p>
+            <h2 class="card__title">Studio indépendant</h2>
+            <p class="card__copy">
+              Electronic Artefacts est présenté sous son nom public de studio. Les demandes formelles peuvent être adressées
+              à l'adresse indiquée sur cette page.
+            </p>
+          </article>
+
+          <article class="panel">
+            <p class="card__meta">Hébergement</p>
+            <h2 class="card__title">GitHub Pages</h2>
+            <p class="card__copy">
+              Le site est hébergé sur GitHub Pages, service d'hébergement fourni par GitHub, Inc.
+            </p>
+          </article>
+
+          <article class="panel">
+            <p class="card__meta">Nom de domaine</p>
+            <h2 class="card__title">IONOS</h2>
+            <p class="card__copy">
+              Le nom de domaine utilisé par le site est enregistré et géré via IONOS.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="zone-card hero">
+        <div class="section-head">
+          <p class="eyebrow">PROPRIÉTÉ INTELLECTUELLE</p>
+          <h2>Propriété des contenus et réutilisation</h2>
+          <p class="lede">
+            Les textes, visuels, codes, sons et éléments d'identité publiés sur ce site appartiennent à Electronic Artefacts
+            ou aux ayants droit crédités.
+          </p>
+        </div>
+
+        <div class="card-grid card-grid--two">
+          <article class="panel">
+            <p class="card__meta">Copyright</p>
+            <h2 class="card__title">Contenus protégés</h2>
+            <p class="card__copy">
+              Aucun élément du site ne doit être repris, copié ou redistribué sans autorisation lorsqu'il n'est pas
+              explicitement placé sous une autre licence.
+            </p>
+          </article>
+
+          <article class="panel">
+            <p class="card__meta">Ressources tierces</p>
+            <h2 class="card__title">Créditées lorsque possible</h2>
+            <p class="card__copy">
+              Les médias ou références externes restent soumis à leur licence ou à leurs conditions d'origine.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="zone-card hero">
+        <div class="section-head">
+          <p class="eyebrow">SERVICES TIERS</p>
+          <h2>Hébergement, domaine, analytics et crédits</h2>
+          <p class="lede">
+            Le site public est publié par Electronic Artefacts et s'appuie sur un nombre limité de prestataires techniques.
+          </p>
+        </div>
+
+        <div class="card-grid card-grid--two">
+          <article class="panel">
+            <p class="card__meta">Mesure d'audience</p>
+            <h2 class="card__title">Google Analytics 4</h2>
+            <p class="card__copy">
+              Google Analytics est utilisé uniquement après consentement cookies pour mesurer le trafic public et améliorer
+              le site. Les détails relatifs aux cookies, au retrait du consentement et au traitement des données sont
+              indiqués dans la politique de confidentialité.
+            </p>
+            <div class="link-row">
+              <a class="tag" href="/fr/confidentialite.html">Politique de confidentialité</a>
+            </div>
+          </article>
+
+          <article class="panel">
+            <p class="card__meta">Crédits techniques</p>
+            <h2 class="card__title">Plateforme statique de connaissance</h2>
+            <p class="card__copy">
+              Le site est généré depuis les contenus, templates, données de graphe et ressources publiques d'Electronic
+              Artefacts. L'hébergement est assuré par GitHub Pages et le domaine est géré via IONOS.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section class="zone-card hero">
+        <div class="section-head">
+          <p class="eyebrow">CONTACT POUR DEMANDES LÉGALES</p>
+          <h2>Questions et demandes formelles</h2>
+          <p class="lede">
+            Pour toute demande légale, éditoriale ou liée aux droits concernant le site, contactez Electronic Artefacts par
+            e-mail.
+          </p>
+        </div>
+
+        <div class="panel panel--soft">
+          <p class="card__copy">electronic.artefacts@gmail.com</p>
+        </div>
+      </section>
+    </main>`;
 
 const seoBlock = (page) => {
   const canonical = `${origin}${page.frenchRoute}`;
@@ -363,6 +651,13 @@ for (const page of pages) {
     .replaceAll('href="./assets/', 'href="/assets/')
     .replaceAll('src="./assets/', 'src="/assets/')
     .replace('<body data-page=', '<body data-locale="fr" data-page=');
+
+  if (page.source === "confidentialite.html") {
+    html = html.replace(/    <main id="main" class="site-main">[\s\S]*?    <\/main>/, frenchPrivacyMain);
+  }
+  if (page.source === "mentions-legales.html") {
+    html = html.replace(/    <main id="main" class="site-main">[\s\S]*?    <\/main>/, frenchLegalMain);
+  }
 
   const output = path.join(rootDir, page.output);
   await mkdir(path.dirname(output), { recursive: true });

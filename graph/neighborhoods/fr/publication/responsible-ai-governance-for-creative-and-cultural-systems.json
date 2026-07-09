@@ -1,0 +1,102 @@
+{
+  "id": "local:ea:publication:responsible-ai-governance-for-creative-and-cultural-systems-fr",
+  "kind": "local",
+  "focus": "ea:publication:responsible-ai-governance-for-creative-and-cultural-systems-fr",
+  "nodes": [
+    {
+      "id": "ea:publication:responsible-ai-governance-for-creative-and-cultural-systems-fr",
+      "type": "publication",
+      "title": "Gouvernance responsable de l'IA pour les systèmes créatifs et culturels",
+      "route": "/fr/publications/responsible-ai-governance-for-creative-and-cultural-systems/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:concept:generative-ai-fr",
+      "type": "concept",
+      "title": "IA générative",
+      "route": "/fr/knowledge/concepts/generative-ai/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:concept:augmented-intelligence-fr",
+      "type": "concept",
+      "title": "Intelligence augmentée",
+      "route": "/fr/knowledge/concepts/augmented-intelligence/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:concept:provenance-fr",
+      "type": "concept",
+      "title": "Provenance",
+      "route": "/fr/knowledge/concepts/provenance/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:concept:contextual-execution-fr",
+      "type": "concept",
+      "title": "Exécution contextuelle",
+      "route": "/fr/knowledge/concepts/contextual-execution/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:collection:knowledge-hub-fourth-wave-fr",
+      "type": "collection",
+      "title": "Hub de connaissance, quatrième vague",
+      "route": "/fr/archive/collections/knowledge-hub-fourth-wave/",
+      "status": "active",
+      "confidence": "published"
+    }
+  ],
+  "edges": [
+    {
+      "id": "ear:responsible-ai-governance-article-documents-generative-ai",
+      "source": "ea:publication:responsible-ai-governance-for-creative-and-cultural-systems-fr",
+      "target": "ea:concept:generative-ai-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Responsible AI Governance for Creative and Cultural Systems documents governance practices for generative AI use in creative systems.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:responsible-ai-governance-article-documents-augmented-intelligence",
+      "source": "ea:publication:responsible-ai-governance-for-creative-and-cultural-systems-fr",
+      "target": "ea:concept:augmented-intelligence-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Responsible AI Governance for Creative and Cultural Systems frames responsible AI as augmented intelligence rather than unchecked replacement.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:responsible-ai-governance-article-documents-provenance",
+      "source": "ea:publication:responsible-ai-governance-for-creative-and-cultural-systems-fr",
+      "target": "ea:concept:provenance-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Responsible AI Governance for Creative and Cultural Systems treats provenance as a governance requirement for AI-assisted cultural records.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:responsible-ai-governance-article-documents-contextual-execution",
+      "source": "ea:publication:responsible-ai-governance-for-creative-and-cultural-systems-fr",
+      "target": "ea:concept:contextual-execution-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Responsible AI Governance for Creative and Cultural Systems links governance controls to contextual execution and permission boundaries.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:knowledge-hub-fourth-wave-has-responsible-ai-governance-article",
+      "source": "ea:publication:responsible-ai-governance-for-creative-and-cultural-systems-fr",
+      "target": "ea:collection:knowledge-hub-fourth-wave-fr",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Responsible AI Governance for Creative and Cultural Systems is part of the fourth Knowledge Hub wave.",
+      "confidence": "published"
+    }
+  ]
+}

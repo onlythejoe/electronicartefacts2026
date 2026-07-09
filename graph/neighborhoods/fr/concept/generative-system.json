@@ -1,0 +1,136 @@
+{
+  "id": "local:ea:concept:generative-system-fr",
+  "kind": "local",
+  "focus": "ea:concept:generative-system-fr",
+  "nodes": [
+    {
+      "id": "ea:concept:generative-system-fr",
+      "type": "concept",
+      "title": "Système génératif",
+      "route": "/fr/knowledge/concepts/generative-system/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:program:oreth-fr",
+      "type": "program",
+      "title": "ORETH",
+      "route": "/fr/programs/oreth/",
+      "status": "prototype",
+      "confidence": "observed"
+    },
+    {
+      "id": "ea:publication:generative-systems-cybernetics-and-creative-coding-fr",
+      "type": "publication",
+      "title": "Systèmes génératifs, cybernétique et programmation créative",
+      "route": "/fr/publications/generative-systems-cybernetics-and-creative-coding/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:creative-coding-pedagogy-from-logo-to-p5js-fr",
+      "type": "publication",
+      "title": "Pédagogie de la programmation créative, de Logo à p5.js",
+      "route": "/fr/publications/creative-coding-pedagogy-from-logo-to-p5js/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:procedural-graphics-shaders-and-visual-systems-fr",
+      "type": "publication",
+      "title": "Graphisme procédural, shaders et systèmes visuels",
+      "route": "/fr/publications/procedural-graphics-shaders-and-visual-systems/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:algorithmic-composition-and-rule-based-music-fr",
+      "type": "publication",
+      "title": "Composition algorithmique et musique fondée sur des règles",
+      "route": "/fr/publications/algorithmic-composition-and-rule-based-music/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:generative-ai-latent-space-and-creative-workflows-fr",
+      "type": "publication",
+      "title": "IA générative, espace latent et workflows créatifs",
+      "route": "/fr/publications/generative-ai-latent-space-and-creative-workflows/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:systems-thinking-for-creative-practice-fr",
+      "type": "publication",
+      "title": "Pensée systémique pour la pratique créative",
+      "route": "/fr/publications/systems-thinking-for-creative-practice/",
+      "status": "active",
+      "confidence": "published"
+    }
+  ],
+  "edges": [
+    {
+      "id": "ear:oreth-applies-generative-system",
+      "source": "ea:program:oreth-fr",
+      "target": "ea:concept:generative-system-fr",
+      "predicate": "appliesConcept",
+      "label": "Applies concept",
+      "statement": "ORETH applies generative-system thinking to experimental audio structures and pattern exploration.",
+      "confidence": "observed"
+    },
+    {
+      "id": "ear:generative-systems-article-documents-generative-system",
+      "source": "ea:publication:generative-systems-cybernetics-and-creative-coding-fr",
+      "target": "ea:concept:generative-system-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Generative Systems, Cybernetics and Creative Coding documents generative systems through constraints, rules and selection.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:creative-coding-pedagogy-article-documents-generative-system",
+      "source": "ea:publication:creative-coding-pedagogy-from-logo-to-p5js-fr",
+      "target": "ea:concept:generative-system-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Creative Coding Pedagogy from Logo to p5.js connects sketch-based learning to generative system design.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:procedural-graphics-article-documents-generative-system",
+      "source": "ea:publication:procedural-graphics-shaders-and-visual-systems-fr",
+      "target": "ea:concept:generative-system-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Procedural Graphics, Shaders and Visual Systems links procedural visuals to generative-system thinking.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:algorithmic-composition-article-documents-generative-system",
+      "source": "ea:publication:algorithmic-composition-and-rule-based-music-fr",
+      "target": "ea:concept:generative-system-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Algorithmic Composition and Rule-Based Music connects rule-based music to generative systems.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:generative-ai-article-documents-generative-system",
+      "source": "ea:publication:generative-ai-latent-space-and-creative-workflows-fr",
+      "target": "ea:concept:generative-system-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Generative AI, Latent Space and Creative Workflows situates generative AI within the broader generative systems lineage.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:systems-thinking-article-documents-generative-system",
+      "source": "ea:publication:systems-thinking-for-creative-practice-fr",
+      "target": "ea:concept:generative-system-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Systems Thinking for Creative Practice explains constraints and emergence in generative systems.",
+      "confidence": "published"
+    }
+  ]
+}

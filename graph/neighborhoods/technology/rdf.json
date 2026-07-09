@@ -4,6 +4,14 @@
   "focus": "ea:technology:rdf",
   "nodes": [
     {
+      "id": "ea:technology:rdf",
+      "type": "technology",
+      "title": "RDF",
+      "route": "/knowledge/technologies/rdf/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
       "id": "ea:publication:knowledge-graphs-for-cultural-infrastructure",
       "type": "publication",
       "title": "Knowledge Graphs for Cultural Infrastructure",
@@ -16,14 +24,6 @@
       "type": "publication",
       "title": "Linked Data and Public Knowledge Pages",
       "route": "/publications/linked-data-and-public-knowledge-pages/",
-      "status": "active",
-      "confidence": "published"
-    },
-    {
-      "id": "ea:technology:rdf",
-      "type": "technology",
-      "title": "RDF",
-      "route": "/knowledge/technologies/rdf/",
       "status": "active",
       "confidence": "published"
     }

@@ -1,0 +1,102 @@
+{
+  "id": "local:ea:publication:prompt-injection-and-trust-boundaries-in-ai-knowledge-systems-fr",
+  "kind": "local",
+  "focus": "ea:publication:prompt-injection-and-trust-boundaries-in-ai-knowledge-systems-fr",
+  "nodes": [
+    {
+      "id": "ea:publication:prompt-injection-and-trust-boundaries-in-ai-knowledge-systems-fr",
+      "type": "publication",
+      "title": "Injection de prompt et frontières de confiance dans les systèmes de connaissance IA",
+      "route": "/fr/publications/prompt-injection-and-trust-boundaries-in-ai-knowledge-systems/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:concept:ai-agent-fr",
+      "type": "concept",
+      "title": "Agent d'IA",
+      "route": "/fr/knowledge/concepts/ai-agent/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:concept:contextual-execution-fr",
+      "type": "concept",
+      "title": "Exécution contextuelle",
+      "route": "/fr/knowledge/concepts/contextual-execution/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:concept:graph-runtime-fr",
+      "type": "concept",
+      "title": "Runtime de graphe",
+      "route": "/fr/knowledge/concepts/graph-runtime/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:technology:model-context-protocol-fr",
+      "type": "technology",
+      "title": "Model Context Protocol",
+      "route": "/fr/knowledge/technologies/model-context-protocol/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:collection:knowledge-hub-fourth-wave-fr",
+      "type": "collection",
+      "title": "Hub de connaissance, quatrième vague",
+      "route": "/fr/archive/collections/knowledge-hub-fourth-wave/",
+      "status": "active",
+      "confidence": "published"
+    }
+  ],
+  "edges": [
+    {
+      "id": "ear:prompt-injection-article-documents-ai-agent",
+      "source": "ea:publication:prompt-injection-and-trust-boundaries-in-ai-knowledge-systems-fr",
+      "target": "ea:concept:ai-agent-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Prompt Injection and Trust Boundaries in AI Knowledge Systems documents prompt-injection risks for AI agents.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:prompt-injection-article-documents-contextual-execution",
+      "source": "ea:publication:prompt-injection-and-trust-boundaries-in-ai-knowledge-systems-fr",
+      "target": "ea:concept:contextual-execution-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Prompt Injection and Trust Boundaries in AI Knowledge Systems explains why permissions should be enforced through contextual execution.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:prompt-injection-article-documents-graph-runtime",
+      "source": "ea:publication:prompt-injection-and-trust-boundaries-in-ai-knowledge-systems-fr",
+      "target": "ea:concept:graph-runtime-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Prompt Injection and Trust Boundaries in AI Knowledge Systems uses graph runtimes as a control layer for AI knowledge operations.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:prompt-injection-article-uses-mcp",
+      "source": "ea:publication:prompt-injection-and-trust-boundaries-in-ai-knowledge-systems-fr",
+      "target": "ea:technology:model-context-protocol-fr",
+      "predicate": "usesTechnology",
+      "label": "Uses technology",
+      "statement": "Prompt Injection and Trust Boundaries in AI Knowledge Systems uses MCP as a reference surface for resources, tools and host-side consent.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:knowledge-hub-fourth-wave-has-prompt-injection-article",
+      "source": "ea:publication:prompt-injection-and-trust-boundaries-in-ai-knowledge-systems-fr",
+      "target": "ea:collection:knowledge-hub-fourth-wave-fr",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Prompt Injection and Trust Boundaries in AI Knowledge Systems is part of the fourth Knowledge Hub wave.",
+      "confidence": "published"
+    }
+  ]
+}

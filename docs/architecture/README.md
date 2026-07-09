@@ -13,3 +13,4 @@ Architecture and strategy documents for the Electronic Artefacts knowledge platf
 - [Strategic SEO knowledge graph audit 2026](STRATEGIC-SEO-KNOWLEDGE-GRAPH-AUDIT-2026.md)
 - [UX IA brand audit 2026](AUDIT-UX-IA-BRAND-2026.md)
 - [Contact discovery spec](CONTACT-DISCOVERY-SPEC.md)
+- [Analytics consent implementation 2026-07-09](ANALYTICS-CONSENT-IMPLEMENTATION-2026-07-09.md)

@@ -4,20 +4,20 @@
   "focus": "ea:technology:css-fonts",
   "nodes": [
     {
-      "id": "ea:publication:typography-reading-systems-and-digital-interfaces",
-      "type": "publication",
-      "title": "Typography, Reading Systems and Digital Interfaces",
-      "route": "/publications/typography-reading-systems-and-digital-interfaces/",
-      "status": "active",
-      "confidence": "published"
-    },
-    {
       "id": "ea:technology:css-fonts",
       "type": "technology",
       "title": "CSS Fonts",
       "route": "/knowledge/technologies/css-fonts/",
       "status": "active",
       "confidence": "validated"
+    },
+    {
+      "id": "ea:publication:typography-reading-systems-and-digital-interfaces",
+      "type": "publication",
+      "title": "Typography, Reading Systems and Digital Interfaces",
+      "route": "/publications/typography-reading-systems-and-digital-interfaces/",
+      "status": "active",
+      "confidence": "published"
     }
   ],
   "edges": [

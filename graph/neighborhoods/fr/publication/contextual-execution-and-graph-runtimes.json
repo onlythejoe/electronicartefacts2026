@@ -1,0 +1,102 @@
+{
+  "id": "local:ea:publication:contextual-execution-and-graph-runtimes-fr",
+  "kind": "local",
+  "focus": "ea:publication:contextual-execution-and-graph-runtimes-fr",
+  "nodes": [
+    {
+      "id": "ea:publication:contextual-execution-and-graph-runtimes-fr",
+      "type": "publication",
+      "title": "Exécution contextuelle et runtimes de graphe",
+      "route": "/fr/publications/contextual-execution-and-graph-runtimes/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:concept:contextual-execution-fr",
+      "type": "concept",
+      "title": "Exécution contextuelle",
+      "route": "/fr/knowledge/concepts/contextual-execution/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:concept:graph-runtime-fr",
+      "type": "concept",
+      "title": "Runtime de graphe",
+      "route": "/fr/knowledge/concepts/graph-runtime/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:researchField:runtime-theory-fr",
+      "type": "researchField",
+      "title": "Théorie du runtime",
+      "route": "/fr/research/fields/runtime-theory/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:program:vaste-fr",
+      "type": "program",
+      "title": "VASTE",
+      "route": "/fr/programs/vaste/",
+      "status": "development",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:collection:knowledge-hub-foundations-fr",
+      "type": "collection",
+      "title": "Fondations du hub de connaissance",
+      "route": "/fr/archive/collections/knowledge-hub-foundations/",
+      "status": "active",
+      "confidence": "published"
+    }
+  ],
+  "edges": [
+    {
+      "id": "ear:contextual-execution-article-documents-contextual-execution",
+      "source": "ea:publication:contextual-execution-and-graph-runtimes-fr",
+      "target": "ea:concept:contextual-execution-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Contextual Execution and Graph Runtimes documents contextual execution as a runtime principle.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:contextual-execution-article-documents-graph-runtime",
+      "source": "ea:publication:contextual-execution-and-graph-runtimes-fr",
+      "target": "ea:concept:graph-runtime-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Contextual Execution and Graph Runtimes explains how contextual execution extends the graph-runtime concept.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:contextual-execution-article-documents-runtime-theory",
+      "source": "ea:publication:contextual-execution-and-graph-runtimes-fr",
+      "target": "ea:researchField:runtime-theory-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Contextual Execution and Graph Runtimes connects contextual execution to Runtime Theory.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:contextual-execution-article-documents-vaste",
+      "source": "ea:publication:contextual-execution-and-graph-runtimes-fr",
+      "target": "ea:program:vaste-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Contextual Execution and Graph Runtimes uses VASTE as the program context for graph runtime execution.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:knowledge-hub-foundations-has-contextual-execution-article",
+      "source": "ea:collection:knowledge-hub-foundations-fr",
+      "target": "ea:publication:contextual-execution-and-graph-runtimes-fr",
+      "predicate": "hasPart",
+      "label": "Has part",
+      "statement": "Knowledge Hub Foundations includes Contextual Execution and Graph Runtimes as a foundation article.",
+      "confidence": "published"
+    }
+  ]
+}

@@ -4,99 +4,11 @@
   "focus": "ea:program:vaste",
   "nodes": [
     {
-      "id": "ea:concept:contextual-execution",
-      "type": "concept",
-      "title": "Contextual Execution",
-      "route": "/knowledge/concepts/contextual-execution/",
-      "status": "active",
-      "confidence": "canonical"
-    },
-    {
-      "id": "ea:concept:domain-operating-system",
-      "type": "concept",
-      "title": "Domain Operating System",
-      "route": "/knowledge/concepts/domain-operating-system/",
-      "status": "active",
-      "confidence": "observed"
-    },
-    {
-      "id": "ea:concept:event-driven-architecture",
-      "type": "concept",
-      "title": "Event-Driven Architecture",
-      "route": "/knowledge/concepts/event-driven-architecture/",
-      "status": "active",
-      "confidence": "canonical"
-    },
-    {
-      "id": "ea:concept:graph-modeling",
-      "type": "concept",
-      "title": "Graph Modeling",
-      "route": "/knowledge/concepts/graph-modeling/",
-      "status": "active",
-      "confidence": "canonical"
-    },
-    {
-      "id": "ea:concept:graph-runtime",
-      "type": "concept",
-      "title": "Graph Runtime",
-      "route": "/knowledge/concepts/graph-runtime/",
-      "status": "active",
-      "confidence": "canonical"
-    },
-    {
-      "id": "ea:concept:systems-thinking",
-      "type": "concept",
-      "title": "Systems Thinking",
-      "route": "/knowledge/concepts/systems-thinking/",
-      "status": "active",
-      "confidence": "canonical"
-    },
-    {
-      "id": "ea:organization:electronic-artefacts",
-      "type": "organization",
-      "title": "Electronic Artefacts",
-      "route": "/organizations/electronic-artefacts/",
-      "status": "active",
-      "confidence": "canonical"
-    },
-    {
       "id": "ea:program:vaste",
       "type": "program",
       "title": "VASTE",
       "route": "/programs/vaste/",
       "status": "development",
-      "confidence": "published"
-    },
-    {
-      "id": "ea:project:vestiges",
-      "type": "project",
-      "title": "Vestiges",
-      "route": "/projects/vestiges/",
-      "status": "development",
-      "confidence": "observed"
-    },
-    {
-      "id": "ea:publication:ai-agents-vs-ai-workflows",
-      "type": "publication",
-      "title": "AI Agents vs AI Workflows",
-      "route": "/publications/ai-agents-vs-ai-workflows/",
-      "status": "active",
-      "confidence": "published"
-    },
-    {
-      "id": "ea:publication:contextual-execution-and-graph-runtimes",
-      "type": "publication",
-      "title": "Contextual Execution and Graph Runtimes",
-      "route": "/publications/contextual-execution-and-graph-runtimes/",
-      "status": "active",
-      "confidence": "published"
-    },
-    {
-      "id": "ea:publication:event-driven-architecture-and-event-streams",
-      "type": "publication",
-      "title": "Event-Driven Architecture and Event Streams",
-      "route": "/publications/event-driven-architecture-and-event-streams/",
-      "status": "active",
       "confidence": "published"
     },
     {
@@ -108,22 +20,6 @@
       "confidence": "published"
     },
     {
-      "id": "ea:publication:human-computer-interaction-for-creative-tools",
-      "type": "publication",
-      "title": "Human Computer Interaction for Creative Tools",
-      "route": "/publications/human-computer-interaction-for-creative-tools/",
-      "status": "active",
-      "confidence": "published"
-    },
-    {
-      "id": "ea:publication:microservices-modular-monoliths-and-system-boundaries",
-      "type": "publication",
-      "title": "Microservices, Modular Monoliths and System Boundaries",
-      "route": "/publications/microservices-modular-monoliths-and-system-boundaries/",
-      "status": "active",
-      "confidence": "published"
-    },
-    {
       "id": "ea:publication:model-context-protocol-and-tool-using-ai-systems",
       "type": "publication",
       "title": "Model Context Protocol and Tool-Using AI Systems",
@@ -132,10 +28,50 @@
       "confidence": "published"
     },
     {
-      "id": "ea:publication:redis-streams-for-orchestration",
+      "id": "ea:technology:model-context-protocol",
+      "type": "technology",
+      "title": "Model Context Protocol",
+      "route": "/knowledge/technologies/model-context-protocol/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:technology:opentelemetry",
+      "type": "technology",
+      "title": "OpenTelemetry",
+      "route": "/knowledge/technologies/opentelemetry/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:concept:contextual-execution",
+      "type": "concept",
+      "title": "Contextual Execution",
+      "route": "/knowledge/concepts/contextual-execution/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:publication:contextual-execution-and-graph-runtimes",
       "type": "publication",
-      "title": "Redis Streams for Orchestration",
-      "route": "/publications/redis-streams-for-orchestration/",
+      "title": "Contextual Execution and Graph Runtimes",
+      "route": "/publications/contextual-execution-and-graph-runtimes/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:human-computer-interaction-for-creative-tools",
+      "type": "publication",
+      "title": "Human Computer Interaction for Creative Tools",
+      "route": "/publications/human-computer-interaction-for-creative-tools/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:ai-agents-vs-ai-workflows",
+      "type": "publication",
+      "title": "AI Agents vs AI Workflows",
+      "route": "/publications/ai-agents-vs-ai-workflows/",
       "status": "active",
       "confidence": "published"
     },
@@ -144,14 +80,6 @@
       "type": "publication",
       "title": "Retrieval-Augmented Generation and Knowledge Systems",
       "route": "/publications/retrieval-augmented-generation-and-knowledge-systems/",
-      "status": "active",
-      "confidence": "published"
-    },
-    {
-      "id": "ea:publication:runtime-engines-and-domain-operating-systems",
-      "type": "publication",
-      "title": "Runtime Engines and Domain Operating Systems",
-      "route": "/publications/runtime-engines-and-domain-operating-systems/",
       "status": "active",
       "confidence": "published"
     },
@@ -172,6 +100,78 @@
       "confidence": "published"
     },
     {
+      "id": "ea:publication:event-driven-architecture-and-event-streams",
+      "type": "publication",
+      "title": "Event-Driven Architecture and Event Streams",
+      "route": "/publications/event-driven-architecture-and-event-streams/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:redis-streams-for-orchestration",
+      "type": "publication",
+      "title": "Redis Streams for Orchestration",
+      "route": "/publications/redis-streams-for-orchestration/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:microservices-modular-monoliths-and-system-boundaries",
+      "type": "publication",
+      "title": "Microservices, Modular Monoliths and System Boundaries",
+      "route": "/publications/microservices-modular-monoliths-and-system-boundaries/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:runtime-engines-and-domain-operating-systems",
+      "type": "publication",
+      "title": "Runtime Engines and Domain Operating Systems",
+      "route": "/publications/runtime-engines-and-domain-operating-systems/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:concept:systems-thinking",
+      "type": "concept",
+      "title": "Systems Thinking",
+      "route": "/knowledge/concepts/systems-thinking/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:concept:event-driven-architecture",
+      "type": "concept",
+      "title": "Event-Driven Architecture",
+      "route": "/knowledge/concepts/event-driven-architecture/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:concept:graph-modeling",
+      "type": "concept",
+      "title": "Graph Modeling",
+      "route": "/knowledge/concepts/graph-modeling/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:concept:domain-operating-system",
+      "type": "concept",
+      "title": "Domain Operating System",
+      "route": "/knowledge/concepts/domain-operating-system/",
+      "status": "active",
+      "confidence": "observed"
+    },
+    {
+      "id": "ea:concept:graph-runtime",
+      "type": "concept",
+      "title": "Graph Runtime",
+      "route": "/knowledge/concepts/graph-runtime/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
       "id": "ea:researchField:runtime-theory",
       "type": "researchField",
       "title": "Runtime Theory",
@@ -180,18 +180,18 @@
       "confidence": "validated"
     },
     {
-      "id": "ea:technology:model-context-protocol",
-      "type": "technology",
-      "title": "Model Context Protocol",
-      "route": "/knowledge/technologies/model-context-protocol/",
-      "status": "active",
-      "confidence": "canonical"
+      "id": "ea:project:vestiges",
+      "type": "project",
+      "title": "Vestiges",
+      "route": "/projects/vestiges/",
+      "status": "development",
+      "confidence": "observed"
     },
     {
-      "id": "ea:technology:opentelemetry",
-      "type": "technology",
-      "title": "OpenTelemetry",
-      "route": "/knowledge/technologies/opentelemetry/",
+      "id": "ea:organization:electronic-artefacts",
+      "type": "organization",
+      "title": "Electronic Artefacts",
+      "route": "/organizations/electronic-artefacts/",
       "status": "active",
       "confidence": "canonical"
     }

@@ -1,0 +1,85 @@
+{
+  "id": "local:ea:concept:signal-archaeology-fr",
+  "kind": "local",
+  "focus": "ea:concept:signal-archaeology-fr",
+  "nodes": [
+    {
+      "id": "ea:concept:signal-archaeology-fr",
+      "type": "concept",
+      "title": "Archéologie du signal",
+      "route": "/fr/knowledge/concepts/signal-archaeology/",
+      "status": "active",
+      "confidence": "observed"
+    },
+    {
+      "id": "ea:program:oreth-fr",
+      "type": "program",
+      "title": "ORETH",
+      "route": "/fr/programs/oreth/",
+      "status": "prototype",
+      "confidence": "observed"
+    },
+    {
+      "id": "ea:project:palimpsests-fr",
+      "type": "project",
+      "title": "Palimpsests",
+      "route": "/fr/projects/palimpsests/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:signal-archaeology-audio-memory-and-machine-listening-fr",
+      "type": "publication",
+      "title": "Archéologie du signal, mémoire audio et écoute machine",
+      "route": "/fr/publications/signal-archaeology-audio-memory-and-machine-listening/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:web-audio-and-browser-based-sound-systems-fr",
+      "type": "publication",
+      "title": "Web Audio et systèmes sonores dans le navigateur",
+      "route": "/fr/publications/web-audio-and-browser-based-sound-systems/",
+      "status": "active",
+      "confidence": "published"
+    }
+  ],
+  "edges": [
+    {
+      "id": "ear:oreth-applies-signal-archaeology",
+      "source": "ea:program:oreth-fr",
+      "target": "ea:concept:signal-archaeology-fr",
+      "predicate": "appliesConcept",
+      "label": "Applies concept",
+      "statement": "ORETH applies signal archaeology to audio analysis, machine listening and sonic trace interpretation.",
+      "confidence": "observed"
+    },
+    {
+      "id": "ear:palimpsests-applies-signal-archaeology",
+      "source": "ea:project:palimpsests-fr",
+      "target": "ea:concept:signal-archaeology-fr",
+      "predicate": "appliesConcept",
+      "label": "Applies concept",
+      "statement": "Palimpsests applies signal archaeology by treating sonic residue and media traces as cultural material.",
+      "confidence": "observed"
+    },
+    {
+      "id": "ear:signal-archaeology-article-documents-signal-archaeology",
+      "source": "ea:publication:signal-archaeology-audio-memory-and-machine-listening-fr",
+      "target": "ea:concept:signal-archaeology-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Signal Archaeology, Audio Memory and Machine Listening documents signal archaeology as a concept.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:web-audio-article-documents-signal-archaeology",
+      "source": "ea:publication:web-audio-and-browser-based-sound-systems-fr",
+      "target": "ea:concept:signal-archaeology-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Web Audio and Browser-Based Sound Systems connects browser sound tools to signal archaeology.",
+      "confidence": "published"
+    }
+  ]
+}

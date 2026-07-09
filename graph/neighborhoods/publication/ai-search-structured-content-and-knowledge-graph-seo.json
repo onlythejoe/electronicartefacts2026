@@ -4,10 +4,10 @@
   "focus": "ea:publication:ai-search-structured-content-and-knowledge-graph-seo",
   "nodes": [
     {
-      "id": "ea:collection:knowledge-hub-fourth-wave",
-      "type": "collection",
-      "title": "Knowledge Hub Fourth Wave",
-      "route": "/archive/collections/knowledge-hub-fourth-wave/",
+      "id": "ea:publication:ai-search-structured-content-and-knowledge-graph-seo",
+      "type": "publication",
+      "title": "AI Search, Structured Content and Knowledge Graph SEO",
+      "route": "/publications/ai-search-structured-content-and-knowledge-graph-seo/",
       "status": "active",
       "confidence": "published"
     },
@@ -28,6 +28,14 @@
       "confidence": "validated"
     },
     {
+      "id": "ea:technology:json-ld",
+      "type": "technology",
+      "title": "JSON-LD",
+      "route": "/knowledge/technologies/json-ld/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
       "id": "ea:concept:retrieval-augmented-generation",
       "type": "concept",
       "title": "Retrieval-Augmented Generation",
@@ -36,18 +44,10 @@
       "confidence": "canonical"
     },
     {
-      "id": "ea:publication:ai-search-structured-content-and-knowledge-graph-seo",
-      "type": "publication",
-      "title": "AI Search, Structured Content and Knowledge Graph SEO",
-      "route": "/publications/ai-search-structured-content-and-knowledge-graph-seo/",
-      "status": "active",
-      "confidence": "published"
-    },
-    {
-      "id": "ea:technology:json-ld",
-      "type": "technology",
-      "title": "JSON-LD",
-      "route": "/knowledge/technologies/json-ld/",
+      "id": "ea:collection:knowledge-hub-fourth-wave",
+      "type": "collection",
+      "title": "Knowledge Hub Fourth Wave",
+      "route": "/archive/collections/knowledge-hub-fourth-wave/",
       "status": "active",
       "confidence": "published"
     }

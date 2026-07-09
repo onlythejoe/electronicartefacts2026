@@ -1,0 +1,68 @@
+{
+  "id": "local:ea:organization:electronic-artefacts-fr",
+  "kind": "local",
+  "focus": "ea:organization:electronic-artefacts-fr",
+  "nodes": [
+    {
+      "id": "ea:organization:electronic-artefacts-fr",
+      "type": "organization",
+      "title": "Electronic Artefacts",
+      "route": "/fr/organizations/electronic-artefacts/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:publication:foundational-lineage-001-fr",
+      "type": "publication",
+      "title": "Foundational Lineage #001",
+      "route": "/fr/publications/foundational-lineage-001/",
+      "status": "research",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:program:vaste-fr",
+      "type": "program",
+      "title": "VASTE",
+      "route": "/fr/programs/vaste/",
+      "status": "development",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:project:vestiges-fr",
+      "type": "project",
+      "title": "Vestiges",
+      "route": "/fr/projects/vestiges/",
+      "status": "development",
+      "confidence": "observed"
+    }
+  ],
+  "edges": [
+    {
+      "id": "ear:electronic-artefacts-publishes-foundational-lineage",
+      "source": "ea:publication:foundational-lineage-001-fr",
+      "target": "ea:organization:electronic-artefacts-fr",
+      "predicate": "publishedBy",
+      "label": "Published by",
+      "statement": "Electronic Artefacts publishes and maintains Foundational Lineage",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:electronic-artefacts-maintains-vaste",
+      "source": "ea:program:vaste-fr",
+      "target": "ea:organization:electronic-artefacts-fr",
+      "predicate": "maintainedBy",
+      "label": "Maintained by",
+      "statement": "Electronic Artefacts develops and maintains the VASTE program.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:electronic-artefacts-creates-vestiges",
+      "source": "ea:project:vestiges-fr",
+      "target": "ea:organization:electronic-artefacts-fr",
+      "predicate": "createdBy",
+      "label": "Created by",
+      "statement": "Electronic Artefacts created Vestiges as the flagship public application of VASTE.",
+      "confidence": "published"
+    }
+  ]
+}

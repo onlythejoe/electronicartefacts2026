@@ -4,20 +4,20 @@
   "focus": "ea:technology:llama-cpp",
   "nodes": [
     {
-      "id": "ea:publication:local-and-open-source-ai-systems",
-      "type": "publication",
-      "title": "Local and Open Source AI Systems",
-      "route": "/publications/local-and-open-source-ai-systems/",
-      "status": "active",
-      "confidence": "published"
-    },
-    {
       "id": "ea:technology:llama-cpp",
       "type": "technology",
       "title": "llama.cpp",
       "route": "/knowledge/technologies/llama-cpp/",
       "status": "active",
       "confidence": "canonical"
+    },
+    {
+      "id": "ea:publication:local-and-open-source-ai-systems",
+      "type": "publication",
+      "title": "Local and Open Source AI Systems",
+      "route": "/publications/local-and-open-source-ai-systems/",
+      "status": "active",
+      "confidence": "published"
     }
   ],
   "edges": [

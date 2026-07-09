@@ -1,0 +1,34 @@
+{
+  "id": "local:ea:concept:internet-culture-fr",
+  "kind": "local",
+  "focus": "ea:concept:internet-culture-fr",
+  "nodes": [
+    {
+      "id": "ea:concept:internet-culture-fr",
+      "type": "concept",
+      "title": "Culture Internet",
+      "route": "/fr/knowledge/concepts/internet-culture/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:publication:open-source-as-cultural-infrastructure-fr",
+      "type": "publication",
+      "title": "L’open source comme infrastructure culturelle",
+      "route": "/fr/publications/open-source-as-cultural-infrastructure/",
+      "status": "active",
+      "confidence": "published"
+    }
+  ],
+  "edges": [
+    {
+      "id": "ear:open-source-article-documents-internet-culture",
+      "source": "ea:publication:open-source-as-cultural-infrastructure-fr",
+      "target": "ea:concept:internet-culture-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Open Source as Cultural Infrastructure frames open collaboration as part of broader internet culture.",
+      "confidence": "published"
+    }
+  ]
+}

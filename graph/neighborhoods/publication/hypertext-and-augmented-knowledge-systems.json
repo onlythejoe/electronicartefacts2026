@@ -4,26 +4,26 @@
   "focus": "ea:publication:hypertext-and-augmented-knowledge-systems",
   "nodes": [
     {
-      "id": "ea:collection:knowledge-hub-second-wave",
-      "type": "collection",
-      "title": "Knowledge Hub Second Wave",
-      "route": "/archive/collections/knowledge-hub-second-wave/",
+      "id": "ea:publication:hypertext-and-augmented-knowledge-systems",
+      "type": "publication",
+      "title": "Hypertext and Augmented Knowledge Systems",
+      "route": "/publications/hypertext-and-augmented-knowledge-systems/",
       "status": "active",
       "confidence": "published"
-    },
-    {
-      "id": "ea:concept:augmented-intelligence",
-      "type": "concept",
-      "title": "Augmented Intelligence",
-      "route": "/knowledge/concepts/augmented-intelligence/",
-      "status": "active",
-      "confidence": "canonical"
     },
     {
       "id": "ea:concept:hypertext",
       "type": "concept",
       "title": "Hypertext",
       "route": "/knowledge/concepts/hypertext/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:concept:augmented-intelligence",
+      "type": "concept",
+      "title": "Augmented Intelligence",
+      "route": "/knowledge/concepts/augmented-intelligence/",
       "status": "active",
       "confidence": "canonical"
     },
@@ -44,10 +44,10 @@
       "confidence": "validated"
     },
     {
-      "id": "ea:publication:hypertext-and-augmented-knowledge-systems",
-      "type": "publication",
-      "title": "Hypertext and Augmented Knowledge Systems",
-      "route": "/publications/hypertext-and-augmented-knowledge-systems/",
+      "id": "ea:collection:knowledge-hub-second-wave",
+      "type": "collection",
+      "title": "Knowledge Hub Second Wave",
+      "route": "/archive/collections/knowledge-hub-second-wave/",
       "status": "active",
       "confidence": "published"
     }

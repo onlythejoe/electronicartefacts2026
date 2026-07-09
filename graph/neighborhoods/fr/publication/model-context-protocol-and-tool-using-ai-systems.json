@@ -1,0 +1,102 @@
+{
+  "id": "local:ea:publication:model-context-protocol-and-tool-using-ai-systems-fr",
+  "kind": "local",
+  "focus": "ea:publication:model-context-protocol-and-tool-using-ai-systems-fr",
+  "nodes": [
+    {
+      "id": "ea:publication:model-context-protocol-and-tool-using-ai-systems-fr",
+      "type": "publication",
+      "title": "Model Context Protocol et systèmes d'IA utilisant des outils",
+      "route": "/fr/publications/model-context-protocol-and-tool-using-ai-systems/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:technology:model-context-protocol-fr",
+      "type": "technology",
+      "title": "Model Context Protocol",
+      "route": "/fr/knowledge/technologies/model-context-protocol/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:concept:ai-agent-fr",
+      "type": "concept",
+      "title": "Agent d'IA",
+      "route": "/fr/knowledge/concepts/ai-agent/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:concept:contextual-execution-fr",
+      "type": "concept",
+      "title": "Exécution contextuelle",
+      "route": "/fr/knowledge/concepts/contextual-execution/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:program:vaste-fr",
+      "type": "program",
+      "title": "VASTE",
+      "route": "/fr/programs/vaste/",
+      "status": "development",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:collection:knowledge-hub-fourth-wave-fr",
+      "type": "collection",
+      "title": "Hub de connaissance, quatrième vague",
+      "route": "/fr/archive/collections/knowledge-hub-fourth-wave/",
+      "status": "active",
+      "confidence": "published"
+    }
+  ],
+  "edges": [
+    {
+      "id": "ear:mcp-article-documents-mcp",
+      "source": "ea:publication:model-context-protocol-and-tool-using-ai-systems-fr",
+      "target": "ea:technology:model-context-protocol-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Model Context Protocol and Tool-Using AI Systems documents MCP as a capability protocol for AI tools, prompts and resources.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:mcp-article-documents-ai-agent",
+      "source": "ea:publication:model-context-protocol-and-tool-using-ai-systems-fr",
+      "target": "ea:concept:ai-agent-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Model Context Protocol and Tool-Using AI Systems explains how MCP relates to AI agents and deterministic workflows.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:mcp-article-documents-contextual-execution",
+      "source": "ea:publication:model-context-protocol-and-tool-using-ai-systems-fr",
+      "target": "ea:concept:contextual-execution-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Model Context Protocol and Tool-Using AI Systems connects MCP permissions to contextual execution boundaries.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:mcp-article-documents-vaste",
+      "source": "ea:publication:model-context-protocol-and-tool-using-ai-systems-fr",
+      "target": "ea:program:vaste-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Model Context Protocol and Tool-Using AI Systems uses VASTE as the graph-runtime context for scoped AI tools.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:knowledge-hub-fourth-wave-has-mcp-article",
+      "source": "ea:publication:model-context-protocol-and-tool-using-ai-systems-fr",
+      "target": "ea:collection:knowledge-hub-fourth-wave-fr",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Model Context Protocol and Tool-Using AI Systems is part of the fourth Knowledge Hub wave.",
+      "confidence": "published"
+    }
+  ]
+}

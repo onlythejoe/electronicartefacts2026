@@ -4,12 +4,28 @@
   "focus": "ea:publication:typography-reading-systems-and-digital-interfaces",
   "nodes": [
     {
-      "id": "ea:collection:knowledge-hub-second-wave",
-      "type": "collection",
-      "title": "Knowledge Hub Second Wave",
-      "route": "/archive/collections/knowledge-hub-second-wave/",
+      "id": "ea:publication:typography-reading-systems-and-digital-interfaces",
+      "type": "publication",
+      "title": "Typography, Reading Systems and Digital Interfaces",
+      "route": "/publications/typography-reading-systems-and-digital-interfaces/",
       "status": "active",
       "confidence": "published"
+    },
+    {
+      "id": "ea:concept:typography",
+      "type": "concept",
+      "title": "Typography",
+      "route": "/knowledge/concepts/typography/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:technology:css-fonts",
+      "type": "technology",
+      "title": "CSS Fonts",
+      "route": "/knowledge/technologies/css-fonts/",
+      "status": "active",
+      "confidence": "validated"
     },
     {
       "id": "ea:concept:human-computer-interaction",
@@ -28,28 +44,12 @@
       "confidence": "canonical"
     },
     {
-      "id": "ea:concept:typography",
-      "type": "concept",
-      "title": "Typography",
-      "route": "/knowledge/concepts/typography/",
-      "status": "active",
-      "confidence": "canonical"
-    },
-    {
-      "id": "ea:publication:typography-reading-systems-and-digital-interfaces",
-      "type": "publication",
-      "title": "Typography, Reading Systems and Digital Interfaces",
-      "route": "/publications/typography-reading-systems-and-digital-interfaces/",
+      "id": "ea:collection:knowledge-hub-second-wave",
+      "type": "collection",
+      "title": "Knowledge Hub Second Wave",
+      "route": "/archive/collections/knowledge-hub-second-wave/",
       "status": "active",
       "confidence": "published"
-    },
-    {
-      "id": "ea:technology:css-fonts",
-      "type": "technology",
-      "title": "CSS Fonts",
-      "route": "/knowledge/technologies/css-fonts/",
-      "status": "active",
-      "confidence": "validated"
     }
   ],
   "edges": [

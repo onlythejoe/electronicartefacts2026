@@ -4,30 +4,6 @@
   "focus": "ea:program:oreth",
   "nodes": [
     {
-      "id": "ea:concept:generative-system",
-      "type": "concept",
-      "title": "Generative System",
-      "route": "/knowledge/concepts/generative-system/",
-      "status": "active",
-      "confidence": "validated"
-    },
-    {
-      "id": "ea:concept:multimodal-ai",
-      "type": "concept",
-      "title": "Multimodal AI",
-      "route": "/knowledge/concepts/multimodal-ai/",
-      "status": "active",
-      "confidence": "validated"
-    },
-    {
-      "id": "ea:concept:signal-archaeology",
-      "type": "concept",
-      "title": "Signal Archaeology",
-      "route": "/knowledge/concepts/signal-archaeology/",
-      "status": "active",
-      "confidence": "observed"
-    },
-    {
       "id": "ea:program:oreth",
       "type": "program",
       "title": "ORETH",
@@ -44,26 +20,26 @@
       "confidence": "published"
     },
     {
-      "id": "ea:publication:algorithmic-composition-and-rule-based-music",
-      "type": "publication",
-      "title": "Algorithmic Composition and Rule-Based Music",
-      "route": "/publications/algorithmic-composition-and-rule-based-music/",
+      "id": "ea:concept:signal-archaeology",
+      "type": "concept",
+      "title": "Signal Archaeology",
+      "route": "/knowledge/concepts/signal-archaeology/",
       "status": "active",
-      "confidence": "published"
+      "confidence": "observed"
+    },
+    {
+      "id": "ea:concept:generative-system",
+      "type": "concept",
+      "title": "Generative System",
+      "route": "/knowledge/concepts/generative-system/",
+      "status": "active",
+      "confidence": "validated"
     },
     {
       "id": "ea:publication:generative-systems-cybernetics-and-creative-coding",
       "type": "publication",
       "title": "Generative Systems, Cybernetics and Creative Coding",
       "route": "/publications/generative-systems-cybernetics-and-creative-coding/",
-      "status": "active",
-      "confidence": "published"
-    },
-    {
-      "id": "ea:publication:multimodal-ai-across-text-image-audio-and-video",
-      "type": "publication",
-      "title": "Multimodal AI Across Text, Image, Audio and Video",
-      "route": "/publications/multimodal-ai-across-text-image-audio-and-video/",
       "status": "active",
       "confidence": "published"
     },
@@ -82,6 +58,30 @@
       "route": "/publications/web-audio-and-browser-based-sound-systems/",
       "status": "active",
       "confidence": "published"
+    },
+    {
+      "id": "ea:publication:algorithmic-composition-and-rule-based-music",
+      "type": "publication",
+      "title": "Algorithmic Composition and Rule-Based Music",
+      "route": "/publications/algorithmic-composition-and-rule-based-music/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:multimodal-ai-across-text-image-audio-and-video",
+      "type": "publication",
+      "title": "Multimodal AI Across Text, Image, Audio and Video",
+      "route": "/publications/multimodal-ai-across-text-image-audio-and-video/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:concept:multimodal-ai",
+      "type": "concept",
+      "title": "Multimodal AI",
+      "route": "/knowledge/concepts/multimodal-ai/",
+      "status": "active",
+      "confidence": "validated"
     }
   ],
   "edges": [

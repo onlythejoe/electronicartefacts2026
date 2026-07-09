@@ -1,0 +1,136 @@
+{
+  "id": "local:ea:publication:ontologies-taxonomies-and-knowledge-modeling-fr",
+  "kind": "local",
+  "focus": "ea:publication:ontologies-taxonomies-and-knowledge-modeling-fr",
+  "nodes": [
+    {
+      "id": "ea:publication:ontologies-taxonomies-and-knowledge-modeling-fr",
+      "type": "publication",
+      "title": "Ontologies, taxonomies et modélisation des connaissances",
+      "route": "/fr/publications/ontologies-taxonomies-and-knowledge-modeling/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:concept:ontology-fr",
+      "type": "concept",
+      "title": "Ontologie",
+      "route": "/fr/knowledge/concepts/ontology/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:concept:knowledge-graph-fr",
+      "type": "concept",
+      "title": "Graphe de connaissances",
+      "route": "/fr/knowledge/concepts/knowledge-graph/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:concept:metadata-fr",
+      "type": "concept",
+      "title": "Métadonnées",
+      "route": "/fr/knowledge/concepts/metadata/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:technology:owl-fr",
+      "type": "technology",
+      "title": "OWL",
+      "route": "/fr/knowledge/technologies/owl/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:technology:skos-fr",
+      "type": "technology",
+      "title": "SKOS",
+      "route": "/fr/knowledge/technologies/skos/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:project:vestiges-fr",
+      "type": "project",
+      "title": "Vestiges",
+      "route": "/fr/projects/vestiges/",
+      "status": "development",
+      "confidence": "observed"
+    },
+    {
+      "id": "ea:collection:knowledge-hub-third-wave-fr",
+      "type": "collection",
+      "title": "Hub de connaissance, troisième vague",
+      "route": "/fr/archive/collections/knowledge-hub-third-wave/",
+      "status": "active",
+      "confidence": "published"
+    }
+  ],
+  "edges": [
+    {
+      "id": "ear:ontology-article-documents-ontology",
+      "source": "ea:publication:ontologies-taxonomies-and-knowledge-modeling-fr",
+      "target": "ea:concept:ontology-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Ontologies, Taxonomies and Knowledge Modeling documents ontology and vocabulary distinctions.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:ontology-article-documents-knowledge-graph",
+      "source": "ea:publication:ontologies-taxonomies-and-knowledge-modeling-fr",
+      "target": "ea:concept:knowledge-graph-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Ontologies, Taxonomies and Knowledge Modeling connects semantic models to knowledge graphs.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:ontology-article-documents-metadata",
+      "source": "ea:publication:ontologies-taxonomies-and-knowledge-modeling-fr",
+      "target": "ea:concept:metadata-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Ontologies, Taxonomies and Knowledge Modeling positions metadata within a broader semantic architecture.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:ontology-article-uses-owl",
+      "source": "ea:publication:ontologies-taxonomies-and-knowledge-modeling-fr",
+      "target": "ea:technology:owl-fr",
+      "predicate": "usesTechnology",
+      "label": "Uses technology",
+      "statement": "Ontologies, Taxonomies and Knowledge Modeling uses OWL as its formal ontology reference.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:ontology-article-uses-skos",
+      "source": "ea:publication:ontologies-taxonomies-and-knowledge-modeling-fr",
+      "target": "ea:technology:skos-fr",
+      "predicate": "usesTechnology",
+      "label": "Uses technology",
+      "statement": "Ontologies, Taxonomies and Knowledge Modeling uses SKOS as its vocabulary and taxonomy reference.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:ontology-article-documents-vestiges",
+      "source": "ea:publication:ontologies-taxonomies-and-knowledge-modeling-fr",
+      "target": "ea:project:vestiges-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Ontologies, Taxonomies and Knowledge Modeling connects semantic modeling to the Vestiges cultural graph.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:knowledge-hub-third-wave-has-ontology-article",
+      "source": "ea:collection:knowledge-hub-third-wave-fr",
+      "target": "ea:publication:ontologies-taxonomies-and-knowledge-modeling-fr",
+      "predicate": "hasPart",
+      "label": "Has part",
+      "statement": "Knowledge Hub Third Wave includes Ontologies, Taxonomies and Knowledge Modeling.",
+      "confidence": "published"
+    }
+  ]
+}

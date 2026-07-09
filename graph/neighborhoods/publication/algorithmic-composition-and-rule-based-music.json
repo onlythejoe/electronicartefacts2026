@@ -4,10 +4,10 @@
   "focus": "ea:publication:algorithmic-composition-and-rule-based-music",
   "nodes": [
     {
-      "id": "ea:collection:knowledge-hub-second-wave",
-      "type": "collection",
-      "title": "Knowledge Hub Second Wave",
-      "route": "/archive/collections/knowledge-hub-second-wave/",
+      "id": "ea:publication:algorithmic-composition-and-rule-based-music",
+      "type": "publication",
+      "title": "Algorithmic Composition and Rule-Based Music",
+      "route": "/publications/algorithmic-composition-and-rule-based-music/",
       "status": "active",
       "confidence": "published"
     },
@@ -20,14 +20,6 @@
       "confidence": "canonical"
     },
     {
-      "id": "ea:concept:cybernetic-feedback",
-      "type": "concept",
-      "title": "Cybernetic Feedback",
-      "route": "/knowledge/concepts/cybernetic-feedback/",
-      "status": "active",
-      "confidence": "validated"
-    },
-    {
       "id": "ea:concept:generative-system",
       "type": "concept",
       "title": "Generative System",
@@ -36,10 +28,10 @@
       "confidence": "validated"
     },
     {
-      "id": "ea:concept:web-audio",
+      "id": "ea:concept:cybernetic-feedback",
       "type": "concept",
-      "title": "Web Audio",
-      "route": "/knowledge/concepts/web-audio/",
+      "title": "Cybernetic Feedback",
+      "route": "/knowledge/concepts/cybernetic-feedback/",
       "status": "active",
       "confidence": "validated"
     },
@@ -52,10 +44,18 @@
       "confidence": "observed"
     },
     {
-      "id": "ea:publication:algorithmic-composition-and-rule-based-music",
-      "type": "publication",
-      "title": "Algorithmic Composition and Rule-Based Music",
-      "route": "/publications/algorithmic-composition-and-rule-based-music/",
+      "id": "ea:concept:web-audio",
+      "type": "concept",
+      "title": "Web Audio",
+      "route": "/knowledge/concepts/web-audio/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:collection:knowledge-hub-second-wave",
+      "type": "collection",
+      "title": "Knowledge Hub Second Wave",
+      "route": "/archive/collections/knowledge-hub-second-wave/",
       "status": "active",
       "confidence": "published"
     }

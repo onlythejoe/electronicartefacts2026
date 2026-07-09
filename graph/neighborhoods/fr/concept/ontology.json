@@ -1,0 +1,51 @@
+{
+  "id": "local:ea:concept:ontology-fr",
+  "kind": "local",
+  "focus": "ea:concept:ontology-fr",
+  "nodes": [
+    {
+      "id": "ea:concept:ontology-fr",
+      "type": "concept",
+      "title": "Ontologie",
+      "route": "/fr/knowledge/concepts/ontology/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:publication:ontologies-taxonomies-and-knowledge-modeling-fr",
+      "type": "publication",
+      "title": "Ontologies, taxonomies et modélisation des connaissances",
+      "route": "/fr/publications/ontologies-taxonomies-and-knowledge-modeling/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:project:vestiges-fr",
+      "type": "project",
+      "title": "Vestiges",
+      "route": "/fr/projects/vestiges/",
+      "status": "development",
+      "confidence": "observed"
+    }
+  ],
+  "edges": [
+    {
+      "id": "ear:ontology-article-documents-ontology",
+      "source": "ea:publication:ontologies-taxonomies-and-knowledge-modeling-fr",
+      "target": "ea:concept:ontology-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Ontologies, Taxonomies and Knowledge Modeling documents ontology and vocabulary distinctions.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:vestiges-applies-ontology",
+      "source": "ea:project:vestiges-fr",
+      "target": "ea:concept:ontology-fr",
+      "predicate": "appliesConcept",
+      "label": "Applies concept",
+      "statement": "Vestiges applies ontology design to people, techniques, materials, institutions and cultural relations.",
+      "confidence": "observed"
+    }
+  ]
+}

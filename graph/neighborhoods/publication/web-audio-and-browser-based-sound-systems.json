@@ -4,20 +4,12 @@
   "focus": "ea:publication:web-audio-and-browser-based-sound-systems",
   "nodes": [
     {
-      "id": "ea:collection:knowledge-hub-second-wave",
-      "type": "collection",
-      "title": "Knowledge Hub Second Wave",
-      "route": "/archive/collections/knowledge-hub-second-wave/",
+      "id": "ea:publication:web-audio-and-browser-based-sound-systems",
+      "type": "publication",
+      "title": "Web Audio and Browser-Based Sound Systems",
+      "route": "/publications/web-audio-and-browser-based-sound-systems/",
       "status": "active",
       "confidence": "published"
-    },
-    {
-      "id": "ea:concept:signal-archaeology",
-      "type": "concept",
-      "title": "Signal Archaeology",
-      "route": "/knowledge/concepts/signal-archaeology/",
-      "status": "active",
-      "confidence": "observed"
     },
     {
       "id": "ea:concept:web-audio",
@@ -28,6 +20,22 @@
       "confidence": "validated"
     },
     {
+      "id": "ea:technology:web-audio-api",
+      "type": "technology",
+      "title": "Web Audio API",
+      "route": "/knowledge/technologies/web-audio-api/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:concept:signal-archaeology",
+      "type": "concept",
+      "title": "Signal Archaeology",
+      "route": "/knowledge/concepts/signal-archaeology/",
+      "status": "active",
+      "confidence": "observed"
+    },
+    {
       "id": "ea:program:oreth",
       "type": "program",
       "title": "ORETH",
@@ -36,20 +44,12 @@
       "confidence": "observed"
     },
     {
-      "id": "ea:publication:web-audio-and-browser-based-sound-systems",
-      "type": "publication",
-      "title": "Web Audio and Browser-Based Sound Systems",
-      "route": "/publications/web-audio-and-browser-based-sound-systems/",
+      "id": "ea:collection:knowledge-hub-second-wave",
+      "type": "collection",
+      "title": "Knowledge Hub Second Wave",
+      "route": "/archive/collections/knowledge-hub-second-wave/",
       "status": "active",
       "confidence": "published"
-    },
-    {
-      "id": "ea:technology:web-audio-api",
-      "type": "technology",
-      "title": "Web Audio API",
-      "route": "/knowledge/technologies/web-audio-api/",
-      "status": "active",
-      "confidence": "canonical"
     }
   ],
   "edges": [

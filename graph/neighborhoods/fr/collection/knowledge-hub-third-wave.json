@@ -1,0 +1,221 @@
+{
+  "id": "local:ea:collection:knowledge-hub-third-wave-fr",
+  "kind": "local",
+  "focus": "ea:collection:knowledge-hub-third-wave-fr",
+  "nodes": [
+    {
+      "id": "ea:collection:knowledge-hub-third-wave-fr",
+      "type": "collection",
+      "title": "Hub de connaissance, troisième vague",
+      "route": "/fr/archive/collections/knowledge-hub-third-wave/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:how-large-language-models-actually-work-fr",
+      "type": "publication",
+      "title": "Comment fonctionnent vraiment les grands modèles de langage",
+      "route": "/fr/publications/how-large-language-models-actually-work/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:ai-agents-vs-ai-workflows-fr",
+      "type": "publication",
+      "title": "Agents d'IA et workflows d'IA",
+      "route": "/fr/publications/ai-agents-vs-ai-workflows/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:local-and-open-source-ai-systems-fr",
+      "type": "publication",
+      "title": "Systèmes d’IA locaux et open source",
+      "route": "/fr/publications/local-and-open-source-ai-systems/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:retrieval-augmented-generation-and-knowledge-systems-fr",
+      "type": "publication",
+      "title": "Génération augmentée par récupération et systèmes de connaissance",
+      "route": "/fr/publications/retrieval-augmented-generation-and-knowledge-systems/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:multimodal-ai-across-text-image-audio-and-video-fr",
+      "type": "publication",
+      "title": "IA multimodale pour le texte, l'image, l'audio et la vidéo",
+      "route": "/fr/publications/multimodal-ai-across-text-image-audio-and-video/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:systems-thinking-for-creative-practice-fr",
+      "type": "publication",
+      "title": "Pensée systémique pour la pratique créative",
+      "route": "/fr/publications/systems-thinking-for-creative-practice/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:ontologies-taxonomies-and-knowledge-modeling-fr",
+      "type": "publication",
+      "title": "Ontologies, taxonomies et modélisation des connaissances",
+      "route": "/fr/publications/ontologies-taxonomies-and-knowledge-modeling/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:why-graphs-are-more-powerful-than-folders-fr",
+      "type": "publication",
+      "title": "Pourquoi les graphes sont plus puissants que les dossiers",
+      "route": "/fr/publications/why-graphs-are-more-powerful-than-folders/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:event-driven-architecture-and-event-streams-fr",
+      "type": "publication",
+      "title": "Architecture événementielle et flux d'événements",
+      "route": "/fr/publications/event-driven-architecture-and-event-streams/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:redis-streams-for-orchestration-fr",
+      "type": "publication",
+      "title": "Redis Streams pour l’orchestration",
+      "route": "/fr/publications/redis-streams-for-orchestration/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:microservices-modular-monoliths-and-system-boundaries-fr",
+      "type": "publication",
+      "title": "Microservices, monolithes modulaires et frontières de système",
+      "route": "/fr/publications/microservices-modular-monoliths-and-system-boundaries/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:runtime-engines-and-domain-operating-systems-fr",
+      "type": "publication",
+      "title": "Moteurs d'exécution et systèmes d'exploitation de domaine",
+      "route": "/fr/publications/runtime-engines-and-domain-operating-systems/",
+      "status": "active",
+      "confidence": "published"
+    }
+  ],
+  "edges": [
+    {
+      "id": "ear:knowledge-hub-third-wave-has-llm-article",
+      "source": "ea:collection:knowledge-hub-third-wave-fr",
+      "target": "ea:publication:how-large-language-models-actually-work-fr",
+      "predicate": "hasPart",
+      "label": "Has part",
+      "statement": "Knowledge Hub Third Wave includes How Large Language Models Actually Work.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:knowledge-hub-third-wave-has-agents-article",
+      "source": "ea:collection:knowledge-hub-third-wave-fr",
+      "target": "ea:publication:ai-agents-vs-ai-workflows-fr",
+      "predicate": "hasPart",
+      "label": "Has part",
+      "statement": "Knowledge Hub Third Wave includes AI Agents vs AI Workflows.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:knowledge-hub-third-wave-has-local-ai-article",
+      "source": "ea:collection:knowledge-hub-third-wave-fr",
+      "target": "ea:publication:local-and-open-source-ai-systems-fr",
+      "predicate": "hasPart",
+      "label": "Has part",
+      "statement": "Knowledge Hub Third Wave includes Local and Open Source AI Systems.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:knowledge-hub-third-wave-has-rag-article",
+      "source": "ea:collection:knowledge-hub-third-wave-fr",
+      "target": "ea:publication:retrieval-augmented-generation-and-knowledge-systems-fr",
+      "predicate": "hasPart",
+      "label": "Has part",
+      "statement": "Knowledge Hub Third Wave includes Retrieval-Augmented Generation and Knowledge Systems.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:knowledge-hub-third-wave-has-multimodal-article",
+      "source": "ea:collection:knowledge-hub-third-wave-fr",
+      "target": "ea:publication:multimodal-ai-across-text-image-audio-and-video-fr",
+      "predicate": "hasPart",
+      "label": "Has part",
+      "statement": "Knowledge Hub Third Wave includes Multimodal AI Across Text, Image, Audio and Video.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:knowledge-hub-third-wave-has-systems-thinking-article",
+      "source": "ea:collection:knowledge-hub-third-wave-fr",
+      "target": "ea:publication:systems-thinking-for-creative-practice-fr",
+      "predicate": "hasPart",
+      "label": "Has part",
+      "statement": "Knowledge Hub Third Wave includes Systems Thinking for Creative Practice.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:knowledge-hub-third-wave-has-ontology-article",
+      "source": "ea:collection:knowledge-hub-third-wave-fr",
+      "target": "ea:publication:ontologies-taxonomies-and-knowledge-modeling-fr",
+      "predicate": "hasPart",
+      "label": "Has part",
+      "statement": "Knowledge Hub Third Wave includes Ontologies, Taxonomies and Knowledge Modeling.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:knowledge-hub-third-wave-has-graphs-folders-article",
+      "source": "ea:collection:knowledge-hub-third-wave-fr",
+      "target": "ea:publication:why-graphs-are-more-powerful-than-folders-fr",
+      "predicate": "hasPart",
+      "label": "Has part",
+      "statement": "Knowledge Hub Third Wave includes Why Graphs Are More Powerful Than Folders.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:knowledge-hub-third-wave-has-event-architecture-article",
+      "source": "ea:collection:knowledge-hub-third-wave-fr",
+      "target": "ea:publication:event-driven-architecture-and-event-streams-fr",
+      "predicate": "hasPart",
+      "label": "Has part",
+      "statement": "Knowledge Hub Third Wave includes Event-Driven Architecture and Event Streams.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:knowledge-hub-third-wave-has-redis-streams-article",
+      "source": "ea:collection:knowledge-hub-third-wave-fr",
+      "target": "ea:publication:redis-streams-for-orchestration-fr",
+      "predicate": "hasPart",
+      "label": "Has part",
+      "statement": "Knowledge Hub Third Wave includes Redis Streams for Orchestration.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:knowledge-hub-third-wave-has-microservices-article",
+      "source": "ea:collection:knowledge-hub-third-wave-fr",
+      "target": "ea:publication:microservices-modular-monoliths-and-system-boundaries-fr",
+      "predicate": "hasPart",
+      "label": "Has part",
+      "statement": "Knowledge Hub Third Wave includes Microservices, Modular Monoliths and System Boundaries.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:knowledge-hub-third-wave-has-domain-os-article",
+      "source": "ea:collection:knowledge-hub-third-wave-fr",
+      "target": "ea:publication:runtime-engines-and-domain-operating-systems-fr",
+      "predicate": "hasPart",
+      "label": "Has part",
+      "statement": "Knowledge Hub Third Wave includes Runtime Engines and Domain Operating Systems.",
+      "confidence": "published"
+    }
+  ]
+}

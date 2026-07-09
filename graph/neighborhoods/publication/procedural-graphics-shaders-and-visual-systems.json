@@ -4,12 +4,28 @@
   "focus": "ea:publication:procedural-graphics-shaders-and-visual-systems",
   "nodes": [
     {
-      "id": "ea:collection:knowledge-hub-second-wave",
-      "type": "collection",
-      "title": "Knowledge Hub Second Wave",
-      "route": "/archive/collections/knowledge-hub-second-wave/",
+      "id": "ea:publication:procedural-graphics-shaders-and-visual-systems",
+      "type": "publication",
+      "title": "Procedural Graphics, Shaders and Visual Systems",
+      "route": "/publications/procedural-graphics-shaders-and-visual-systems/",
       "status": "active",
       "confidence": "published"
+    },
+    {
+      "id": "ea:concept:procedural-graphics",
+      "type": "concept",
+      "title": "Procedural Graphics",
+      "route": "/knowledge/concepts/procedural-graphics/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:technology:webgl",
+      "type": "technology",
+      "title": "WebGL",
+      "route": "/knowledge/technologies/webgl/",
+      "status": "active",
+      "confidence": "canonical"
     },
     {
       "id": "ea:concept:generative-system",
@@ -28,28 +44,12 @@
       "confidence": "validated"
     },
     {
-      "id": "ea:concept:procedural-graphics",
-      "type": "concept",
-      "title": "Procedural Graphics",
-      "route": "/knowledge/concepts/procedural-graphics/",
-      "status": "active",
-      "confidence": "canonical"
-    },
-    {
-      "id": "ea:publication:procedural-graphics-shaders-and-visual-systems",
-      "type": "publication",
-      "title": "Procedural Graphics, Shaders and Visual Systems",
-      "route": "/publications/procedural-graphics-shaders-and-visual-systems/",
+      "id": "ea:collection:knowledge-hub-second-wave",
+      "type": "collection",
+      "title": "Knowledge Hub Second Wave",
+      "route": "/archive/collections/knowledge-hub-second-wave/",
       "status": "active",
       "confidence": "published"
-    },
-    {
-      "id": "ea:technology:webgl",
-      "type": "technology",
-      "title": "WebGL",
-      "route": "/knowledge/technologies/webgl/",
-      "status": "active",
-      "confidence": "canonical"
     }
   ],
   "edges": [

@@ -1,16 +1,51 @@
 {
-  "id": "local:ea:concept:web-audio-fr",
+  "id": "local:ea:concept:web-audio",
   "kind": "local",
-  "focus": "ea:concept:web-audio-fr",
+  "focus": "ea:concept:web-audio",
   "nodes": [
     {
-      "id": "ea:concept:web-audio-fr",
+      "id": "ea:concept:web-audio",
       "type": "concept",
-      "title": "Audio web",
-      "route": "/fr/knowledge/concepts/web-audio/",
+      "title": "Web Audio",
+      "route": "/knowledge/concepts/web-audio/",
       "status": "active",
       "confidence": "validated"
+    },
+    {
+      "id": "ea:publication:web-audio-and-browser-based-sound-systems",
+      "type": "publication",
+      "title": "Web Audio and Browser-Based Sound Systems",
+      "route": "/publications/web-audio-and-browser-based-sound-systems/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:algorithmic-composition-and-rule-based-music",
+      "type": "publication",
+      "title": "Algorithmic Composition and Rule-Based Music",
+      "route": "/publications/algorithmic-composition-and-rule-based-music/",
+      "status": "active",
+      "confidence": "published"
     }
   ],
-  "edges": []
+  "edges": [
+    {
+      "id": "ear:web-audio-article-documents-web-audio",
+      "source": "ea:publication:web-audio-and-browser-based-sound-systems",
+      "target": "ea:concept:web-audio",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Web Audio and Browser-Based Sound Systems documents web audio as a browser-native sound practice.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:algorithmic-composition-article-documents-web-audio",
+      "source": "ea:publication:algorithmic-composition-and-rule-based-music",
+      "target": "ea:concept:web-audio",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Algorithmic Composition and Rule-Based Music connects rule-based music to browser sound systems.",
+      "confidence": "published"
+    }
+  ]
 }

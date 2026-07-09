@@ -4,20 +4,20 @@
   "focus": "ea:technology:transformer-architecture",
   "nodes": [
     {
-      "id": "ea:publication:how-large-language-models-actually-work",
-      "type": "publication",
-      "title": "How Large Language Models Actually Work",
-      "route": "/publications/how-large-language-models-actually-work/",
-      "status": "active",
-      "confidence": "published"
-    },
-    {
       "id": "ea:technology:transformer-architecture",
       "type": "technology",
       "title": "Transformer Architecture",
       "route": "/knowledge/technologies/transformer-architecture/",
       "status": "active",
       "confidence": "canonical"
+    },
+    {
+      "id": "ea:publication:how-large-language-models-actually-work",
+      "type": "publication",
+      "title": "How Large Language Models Actually Work",
+      "route": "/publications/how-large-language-models-actually-work/",
+      "status": "active",
+      "confidence": "published"
     }
   ],
   "edges": [

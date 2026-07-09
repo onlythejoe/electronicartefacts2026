@@ -4,20 +4,12 @@
   "focus": "ea:publication:local-and-open-source-ai-systems",
   "nodes": [
     {
-      "id": "ea:collection:knowledge-hub-third-wave",
-      "type": "collection",
-      "title": "Knowledge Hub Third Wave",
-      "route": "/archive/collections/knowledge-hub-third-wave/",
+      "id": "ea:publication:local-and-open-source-ai-systems",
+      "type": "publication",
+      "title": "Local and Open Source AI Systems",
+      "route": "/publications/local-and-open-source-ai-systems/",
       "status": "active",
       "confidence": "published"
-    },
-    {
-      "id": "ea:concept:open-source",
-      "type": "concept",
-      "title": "Open Source",
-      "route": "/knowledge/concepts/open-source/",
-      "status": "active",
-      "confidence": "canonical"
     },
     {
       "id": "ea:concept:open-weight-model",
@@ -28,20 +20,12 @@
       "confidence": "validated"
     },
     {
-      "id": "ea:concept:provenance",
+      "id": "ea:concept:open-source",
       "type": "concept",
-      "title": "Provenance",
-      "route": "/knowledge/concepts/provenance/",
+      "title": "Open Source",
+      "route": "/knowledge/concepts/open-source/",
       "status": "active",
-      "confidence": "validated"
-    },
-    {
-      "id": "ea:publication:local-and-open-source-ai-systems",
-      "type": "publication",
-      "title": "Local and Open Source AI Systems",
-      "route": "/publications/local-and-open-source-ai-systems/",
-      "status": "active",
-      "confidence": "published"
+      "confidence": "canonical"
     },
     {
       "id": "ea:technology:llama-cpp",
@@ -50,6 +34,22 @@
       "route": "/knowledge/technologies/llama-cpp/",
       "status": "active",
       "confidence": "canonical"
+    },
+    {
+      "id": "ea:concept:provenance",
+      "type": "concept",
+      "title": "Provenance",
+      "route": "/knowledge/concepts/provenance/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:collection:knowledge-hub-third-wave",
+      "type": "collection",
+      "title": "Knowledge Hub Third Wave",
+      "route": "/archive/collections/knowledge-hub-third-wave/",
+      "status": "active",
+      "confidence": "published"
     }
   ],
   "edges": [

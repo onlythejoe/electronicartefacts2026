@@ -4,12 +4,36 @@
   "focus": "ea:researchField:runtime-theory",
   "nodes": [
     {
+      "id": "ea:researchField:runtime-theory",
+      "type": "researchField",
+      "title": "Runtime Theory",
+      "route": "/research/fields/runtime-theory/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:publication:foundational-lineage-001",
+      "type": "publication",
+      "title": "Foundational Lineage #001",
+      "route": "/publications/foundational-lineage-001/",
+      "status": "research",
+      "confidence": "published"
+    },
+    {
       "id": "ea:concept:contextual-execution",
       "type": "concept",
       "title": "Contextual Execution",
       "route": "/knowledge/concepts/contextual-execution/",
       "status": "active",
       "confidence": "canonical"
+    },
+    {
+      "id": "ea:publication:contextual-execution-and-graph-runtimes",
+      "type": "publication",
+      "title": "Contextual Execution and Graph Runtimes",
+      "route": "/publications/contextual-execution-and-graph-runtimes/",
+      "status": "active",
+      "confidence": "published"
     },
     {
       "id": "ea:concept:graph-runtime",
@@ -26,30 +50,6 @@
       "route": "/programs/vaste/",
       "status": "development",
       "confidence": "published"
-    },
-    {
-      "id": "ea:publication:contextual-execution-and-graph-runtimes",
-      "type": "publication",
-      "title": "Contextual Execution and Graph Runtimes",
-      "route": "/publications/contextual-execution-and-graph-runtimes/",
-      "status": "active",
-      "confidence": "published"
-    },
-    {
-      "id": "ea:publication:foundational-lineage-001",
-      "type": "publication",
-      "title": "Foundational Lineage #001",
-      "route": "/publications/foundational-lineage-001/",
-      "status": "research",
-      "confidence": "published"
-    },
-    {
-      "id": "ea:researchField:runtime-theory",
-      "type": "researchField",
-      "title": "Runtime Theory",
-      "route": "/research/fields/runtime-theory/",
-      "status": "active",
-      "confidence": "validated"
     }
   ],
   "edges": [

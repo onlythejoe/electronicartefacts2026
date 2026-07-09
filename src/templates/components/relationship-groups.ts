@@ -1,7 +1,7 @@
 import { predicateDefinitions } from "../../schema/predicates.js";
 import type { Entity } from "../../schema/entities.js";
 import type { RelationStatement } from "../../schema/relation.js";
-import { publicEntityIds, publicRelationsForEntity } from "../../semantic/visibility.js";
+import { connectedEntityIdForRelation, publicEntityIds, publicRelationsForEntity } from "../../semantic/visibility.js";
 import { escapeHtml } from "../html.js";
 
 export const renderRelationshipGroups = (
@@ -30,8 +30,7 @@ export const renderRelationshipGroups = (
             <p class="card__meta">${escapeHtml(group)}</p>
             <div class="stack">
               ${items.map((relation) => {
-                const outbound = relation.subject === entity.id;
-                const connectedId = outbound ? relation.object : relation.subject;
+                const connectedId = connectedEntityIdForRelation(entity, relation);
                 const connectedEntity = byId.get(connectedId);
                 return `
                   <div class="panel panel--soft">

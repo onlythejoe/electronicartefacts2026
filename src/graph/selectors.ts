@@ -32,6 +32,23 @@ export interface GraphView {
   edges: GraphEdge[];
 }
 
+const localizedEndpointIndex = (entities: Entity[], locale: Entity["locale"]): Map<EntityId, Entity> => {
+  const byEndpoint = new Map<EntityId, Entity>();
+  const prefer = (endpointId: EntityId, entity: Entity) => {
+    const current = byEndpoint.get(endpointId);
+    if (!current || (current.locale !== locale && entity.locale === locale)) {
+      byEndpoint.set(endpointId, entity);
+    }
+  };
+
+  for (const entity of entities) {
+    prefer(entity.id, entity);
+    if (entity.translationOf) prefer(entity.translationOf, entity);
+  }
+
+  return byEndpoint;
+};
+
 export const localNeighborhood = (
   focus: Entity,
   entities: Entity[],
@@ -40,17 +57,27 @@ export const localNeighborhood = (
 ): GraphView => {
   const publicIds = publicEntityIds(entities);
   const connected = publicRelationsForEntity(focus, relations, publicIds);
-  const ids = new Set<EntityId>([focus.id]);
+  const localizedByEndpoint = localizedEndpointIndex(entities, focus.locale);
+  const nodesById = new Map<EntityId, Entity>();
+  const addNode = (endpointId: EntityId) => {
+    const entity = localizedByEndpoint.get(endpointId);
+    if (entity) nodesById.set(entity.id, entity);
+  };
+
+  addNode(focus.id);
+  if (focus.translationOf) addNode(focus.translationOf);
   connected.forEach((relation) => {
-    ids.add(relation.subject);
-    ids.add(relation.object);
+    addNode(relation.subject);
+    addNode(relation.object);
   });
   const routeById = Object.fromEntries(routes.map((route) => [route.id, route.route]));
+  const localizedEndpointId = (endpointId: EntityId): EntityId =>
+    localizedByEndpoint.get(endpointId)?.id || endpointId;
   return {
     id: `local:${focus.id}`,
     kind: "local",
     focus: focus.id,
-    nodes: entities.filter((entity) => ids.has(entity.id)).map((entity) => ({
+    nodes: [...nodesById.values()].map((entity) => ({
       id: entity.id,
       type: entity.type,
       title: entity.title,
@@ -60,8 +87,8 @@ export const localNeighborhood = (
     })),
     edges: connected.map((relation) => ({
       id: relation.id,
-      source: relation.subject,
-      target: relation.object,
+      source: localizedEndpointId(relation.subject),
+      target: localizedEndpointId(relation.object),
       predicate: relation.predicate,
       label: predicateDefinitions[relation.predicate].label,
       statement: relation.statement,

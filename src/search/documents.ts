@@ -1,7 +1,12 @@
 import type { Entity, PublicationEntity, ResearchFieldEntity } from "../schema/entities.js";
 import type { RelationStatement } from "../schema/relation.js";
 import type { RouteRecord } from "../build/build-routes.js";
-import { isPublicEntity, publicEntityIds, publicRelationsForEntity } from "../semantic/visibility.js";
+import {
+  connectedEntityIdForRelation,
+  isPublicEntity,
+  publicEntityIds,
+  publicRelationsForEntity,
+} from "../semantic/visibility.js";
 
 export interface SearchDocument {
   id: Entity["id"];
@@ -55,7 +60,7 @@ export const buildSearchDocuments = (
           ? (entity as ResearchFieldEntity).questions.map((item) => item.question)
           : [],
         relationLabels: connected.map((relation) => `${relation.predicate} ${relation.statement}`),
-        relatedEntityIds: connected.map((relation) => relation.subject === entity.id ? relation.object : relation.subject),
+        relatedEntityIds: connected.map((relation) => connectedEntityIdForRelation(entity, relation)),
         status: entity.status,
         confidence: entity.confidence,
         modifiedAt: entity.version.modifiedAt,

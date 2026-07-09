@@ -1,0 +1,136 @@
+{
+  "id": "local:ea:concept:knowledge-graph-fr",
+  "kind": "local",
+  "focus": "ea:concept:knowledge-graph-fr",
+  "nodes": [
+    {
+      "id": "ea:concept:knowledge-graph-fr",
+      "type": "concept",
+      "title": "Graphe de connaissances",
+      "route": "/fr/knowledge/concepts/knowledge-graph/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:publication:ai-search-structured-content-and-knowledge-graph-seo-fr",
+      "type": "publication",
+      "title": "Recherche IA, contenu structuré et SEO par graphe de connaissances",
+      "route": "/fr/publications/ai-search-structured-content-and-knowledge-graph-seo/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:project:vestiges-fr",
+      "type": "project",
+      "title": "Vestiges",
+      "route": "/fr/projects/vestiges/",
+      "status": "development",
+      "confidence": "observed"
+    },
+    {
+      "id": "ea:publication:knowledge-graphs-for-cultural-infrastructure-fr",
+      "type": "publication",
+      "title": "Graphes de connaissances pour les infrastructures culturelles",
+      "route": "/fr/publications/knowledge-graphs-for-cultural-infrastructure/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:hypertext-and-augmented-knowledge-systems-fr",
+      "type": "publication",
+      "title": "Hypertexte et systèmes de connaissance augmentée",
+      "route": "/fr/publications/hypertext-and-augmented-knowledge-systems/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:retrieval-augmented-generation-and-knowledge-systems-fr",
+      "type": "publication",
+      "title": "Génération augmentée par récupération et systèmes de connaissance",
+      "route": "/fr/publications/retrieval-augmented-generation-and-knowledge-systems/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:ontologies-taxonomies-and-knowledge-modeling-fr",
+      "type": "publication",
+      "title": "Ontologies, taxonomies et modélisation des connaissances",
+      "route": "/fr/publications/ontologies-taxonomies-and-knowledge-modeling/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:why-graphs-are-more-powerful-than-folders-fr",
+      "type": "publication",
+      "title": "Pourquoi les graphes sont plus puissants que les dossiers",
+      "route": "/fr/publications/why-graphs-are-more-powerful-than-folders/",
+      "status": "active",
+      "confidence": "published"
+    }
+  ],
+  "edges": [
+    {
+      "id": "ear:ai-search-seo-article-documents-knowledge-graph",
+      "source": "ea:publication:ai-search-structured-content-and-knowledge-graph-seo-fr",
+      "target": "ea:concept:knowledge-graph-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "AI Search, Structured Content and Knowledge Graph SEO documents knowledge graphs as an SEO architecture for AI retrieval.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:vestiges-applies-knowledge-graph",
+      "source": "ea:project:vestiges-fr",
+      "target": "ea:concept:knowledge-graph-fr",
+      "predicate": "appliesConcept",
+      "label": "Applies concept",
+      "statement": "Vestiges applies knowledge-graph principles to culture, craft, institutions, techniques and public knowledge pages.",
+      "confidence": "observed"
+    },
+    {
+      "id": "ear:knowledge-graphs-article-documents-knowledge-graph",
+      "source": "ea:publication:knowledge-graphs-for-cultural-infrastructure-fr",
+      "target": "ea:concept:knowledge-graph-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Knowledge Graphs for Cultural Infrastructure documents the knowledge-graph concept for cultural publishing.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:hypertext-article-documents-knowledge-graph",
+      "source": "ea:publication:hypertext-and-augmented-knowledge-systems-fr",
+      "target": "ea:concept:knowledge-graph-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Hypertext and Augmented Knowledge Systems explains how knowledge graphs strengthen linked pages with explicit relations.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:rag-article-documents-knowledge-graph",
+      "source": "ea:publication:retrieval-augmented-generation-and-knowledge-systems-fr",
+      "target": "ea:concept:knowledge-graph-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Retrieval-Augmented Generation and Knowledge Systems explains graph-grounded retrieval.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:ontology-article-documents-knowledge-graph",
+      "source": "ea:publication:ontologies-taxonomies-and-knowledge-modeling-fr",
+      "target": "ea:concept:knowledge-graph-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Ontologies, Taxonomies and Knowledge Modeling connects semantic models to knowledge graphs.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:graphs-folders-article-documents-knowledge-graph",
+      "source": "ea:publication:why-graphs-are-more-powerful-than-folders-fr",
+      "target": "ea:concept:knowledge-graph-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Why Graphs Are More Powerful Than Folders explains knowledge graph identity and traversal.",
+      "confidence": "published"
+    }
+  ]
+}

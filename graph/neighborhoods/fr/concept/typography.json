@@ -1,0 +1,51 @@
+{
+  "id": "local:ea:concept:typography-fr",
+  "kind": "local",
+  "focus": "ea:concept:typography-fr",
+  "nodes": [
+    {
+      "id": "ea:concept:typography-fr",
+      "type": "concept",
+      "title": "Typographie",
+      "route": "/fr/knowledge/concepts/typography/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:publication:motion-design-time-and-interface-semantics-fr",
+      "type": "publication",
+      "title": "Motion design, temps et sémantique d'interface",
+      "route": "/fr/publications/motion-design-time-and-interface-semantics/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:typography-reading-systems-and-digital-interfaces-fr",
+      "type": "publication",
+      "title": "Typographie, systèmes de lecture et interfaces numériques",
+      "route": "/fr/publications/typography-reading-systems-and-digital-interfaces/",
+      "status": "active",
+      "confidence": "published"
+    }
+  ],
+  "edges": [
+    {
+      "id": "ear:motion-design-article-documents-typography",
+      "source": "ea:publication:motion-design-time-and-interface-semantics-fr",
+      "target": "ea:concept:typography-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Motion Design, Time and Interface Semantics connects motion to typography and reading behavior.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:typography-article-documents-typography",
+      "source": "ea:publication:typography-reading-systems-and-digital-interfaces-fr",
+      "target": "ea:concept:typography-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Typography, Reading Systems and Digital Interfaces documents typography as reading infrastructure.",
+      "confidence": "published"
+    }
+  ]
+}

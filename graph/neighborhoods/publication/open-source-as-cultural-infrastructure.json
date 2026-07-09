@@ -4,26 +4,26 @@
   "focus": "ea:publication:open-source-as-cultural-infrastructure",
   "nodes": [
     {
-      "id": "ea:collection:knowledge-hub-second-wave",
-      "type": "collection",
-      "title": "Knowledge Hub Second Wave",
-      "route": "/archive/collections/knowledge-hub-second-wave/",
+      "id": "ea:publication:open-source-as-cultural-infrastructure",
+      "type": "publication",
+      "title": "Open Source as Cultural Infrastructure",
+      "route": "/publications/open-source-as-cultural-infrastructure/",
       "status": "active",
       "confidence": "published"
+    },
+    {
+      "id": "ea:concept:open-source",
+      "type": "concept",
+      "title": "Open Source",
+      "route": "/knowledge/concepts/open-source/",
+      "status": "active",
+      "confidence": "canonical"
     },
     {
       "id": "ea:concept:creative-coding",
       "type": "concept",
       "title": "Creative Coding",
       "route": "/knowledge/concepts/creative-coding/",
-      "status": "active",
-      "confidence": "validated"
-    },
-    {
-      "id": "ea:concept:digital-preservation",
-      "type": "concept",
-      "title": "Digital Preservation",
-      "route": "/knowledge/concepts/digital-preservation/",
       "status": "active",
       "confidence": "validated"
     },
@@ -36,18 +36,18 @@
       "confidence": "validated"
     },
     {
-      "id": "ea:concept:open-source",
+      "id": "ea:concept:digital-preservation",
       "type": "concept",
-      "title": "Open Source",
-      "route": "/knowledge/concepts/open-source/",
+      "title": "Digital Preservation",
+      "route": "/knowledge/concepts/digital-preservation/",
       "status": "active",
-      "confidence": "canonical"
+      "confidence": "validated"
     },
     {
-      "id": "ea:publication:open-source-as-cultural-infrastructure",
-      "type": "publication",
-      "title": "Open Source as Cultural Infrastructure",
-      "route": "/publications/open-source-as-cultural-infrastructure/",
+      "id": "ea:collection:knowledge-hub-second-wave",
+      "type": "collection",
+      "title": "Knowledge Hub Second Wave",
+      "route": "/archive/collections/knowledge-hub-second-wave/",
       "status": "active",
       "confidence": "published"
     }

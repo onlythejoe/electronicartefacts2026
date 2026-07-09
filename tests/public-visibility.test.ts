@@ -2,8 +2,11 @@ import assert from "node:assert/strict";
 import test from "node:test";
 import path from "node:path";
 import { loadContent } from "../src/build/load-content.js";
+import { loadRelations } from "../src/build/load-relations.js";
 import { buildRoutes } from "../src/build/build-routes.js";
 import { buildGraphViews } from "../src/graph/build-views.js";
+import { routeForEntity } from "../src/config/routes.js";
+import { renderLocalGraph } from "../src/templates/components/local-graph.js";
 import { renderRelationshipGroups } from "../src/templates/components/relationship-groups.js";
 import { renderProjectPage } from "../src/templates/project-page.js";
 import type { Entity, ProjectEntity } from "../src/schema/entities.js";
@@ -11,6 +14,21 @@ import type { RelationStatement } from "../src/schema/relation.js";
 
 const routeIndex = (entities: Entity[]) =>
   Object.fromEntries(buildRoutes(entities).map((route) => [route.id, route.route]));
+
+const localizedView = (entities: Entity[], locale: Entity["locale"]) => {
+  const byId = new Map(entities.map((entity) => [entity.id, entity]));
+  const routeById = routeIndex(entities);
+
+  for (const entity of entities) {
+    if (entity.locale !== locale || !entity.translationOf) continue;
+    byId.set(entity.translationOf, entity);
+    byId.set(entity.id, entity);
+    routeById[entity.translationOf] = routeForEntity(entity);
+    routeById[entity.id] = routeForEntity(entity);
+  }
+
+  return { byId, routeById };
+};
 
 const loadFixture = async () => {
   const entities = await loadContent(path.resolve("."));
@@ -108,4 +126,20 @@ test("project pages hide non-public references and internal relations", async ()
   assert.doesNotMatch(html, /Hidden Project Reference/);
   assert.doesNotMatch(html, /Internal-only delivery detail/);
   assert.equal(routeIndex(entities)[project.id], "/projects/vestiges/");
+});
+
+test("translated pages inherit canonical public relations with localized routes", async () => {
+  const { entities } = await loadFixture();
+  const relations = await loadRelations(path.resolve("."));
+  const frenchGraphRuntime = entities.find((entity) => entity.id === "ea:concept:graph-runtime-fr")!;
+  const { byId, routeById } = localizedView(entities, "fr");
+
+  const relationships = renderRelationshipGroups(frenchGraphRuntime, relations, byId, routeById);
+  const graph = renderLocalGraph(frenchGraphRuntime, relations, byId);
+
+  assert.match(relationships, /TYPED RELATIONSHIPS/);
+  assert.match(relationships, /href="\/fr\//);
+  assert.doesNotMatch(relationships, /href="#"/);
+  assert.match(graph, /7 useful links/);
+  assert.match(graph, /data-graph-src="\/graph\/neighborhoods\/fr\/concept\/graph-runtime\.json"/);
 });

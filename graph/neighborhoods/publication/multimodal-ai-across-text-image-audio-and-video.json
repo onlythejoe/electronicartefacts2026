@@ -4,10 +4,10 @@
   "focus": "ea:publication:multimodal-ai-across-text-image-audio-and-video",
   "nodes": [
     {
-      "id": "ea:collection:knowledge-hub-third-wave",
-      "type": "collection",
-      "title": "Knowledge Hub Third Wave",
-      "route": "/archive/collections/knowledge-hub-third-wave/",
+      "id": "ea:publication:multimodal-ai-across-text-image-audio-and-video",
+      "type": "publication",
+      "title": "Multimodal AI Across Text, Image, Audio and Video",
+      "route": "/publications/multimodal-ai-across-text-image-audio-and-video/",
       "status": "active",
       "confidence": "published"
     },
@@ -16,14 +16,6 @@
       "type": "concept",
       "title": "Multimodal AI",
       "route": "/knowledge/concepts/multimodal-ai/",
-      "status": "active",
-      "confidence": "validated"
-    },
-    {
-      "id": "ea:concept:provenance",
-      "type": "concept",
-      "title": "Provenance",
-      "route": "/knowledge/concepts/provenance/",
       "status": "active",
       "confidence": "validated"
     },
@@ -44,10 +36,18 @@
       "confidence": "published"
     },
     {
-      "id": "ea:publication:multimodal-ai-across-text-image-audio-and-video",
-      "type": "publication",
-      "title": "Multimodal AI Across Text, Image, Audio and Video",
-      "route": "/publications/multimodal-ai-across-text-image-audio-and-video/",
+      "id": "ea:concept:provenance",
+      "type": "concept",
+      "title": "Provenance",
+      "route": "/knowledge/concepts/provenance/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:collection:knowledge-hub-third-wave",
+      "type": "collection",
+      "title": "Knowledge Hub Third Wave",
+      "route": "/archive/collections/knowledge-hub-third-wave/",
       "status": "active",
       "confidence": "published"
     }

@@ -4,20 +4,12 @@
   "focus": "ea:publication:runtime-engines-and-domain-operating-systems",
   "nodes": [
     {
-      "id": "ea:collection:knowledge-hub-third-wave",
-      "type": "collection",
-      "title": "Knowledge Hub Third Wave",
-      "route": "/archive/collections/knowledge-hub-third-wave/",
+      "id": "ea:publication:runtime-engines-and-domain-operating-systems",
+      "type": "publication",
+      "title": "Runtime Engines and Domain Operating Systems",
+      "route": "/publications/runtime-engines-and-domain-operating-systems/",
       "status": "active",
       "confidence": "published"
-    },
-    {
-      "id": "ea:concept:contextual-execution",
-      "type": "concept",
-      "title": "Contextual Execution",
-      "route": "/knowledge/concepts/contextual-execution/",
-      "status": "active",
-      "confidence": "canonical"
     },
     {
       "id": "ea:concept:domain-operating-system",
@@ -32,6 +24,14 @@
       "type": "concept",
       "title": "Graph Runtime",
       "route": "/knowledge/concepts/graph-runtime/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:concept:contextual-execution",
+      "type": "concept",
+      "title": "Contextual Execution",
+      "route": "/knowledge/concepts/contextual-execution/",
       "status": "active",
       "confidence": "canonical"
     },
@@ -52,10 +52,10 @@
       "confidence": "observed"
     },
     {
-      "id": "ea:publication:runtime-engines-and-domain-operating-systems",
-      "type": "publication",
-      "title": "Runtime Engines and Domain Operating Systems",
-      "route": "/publications/runtime-engines-and-domain-operating-systems/",
+      "id": "ea:collection:knowledge-hub-third-wave",
+      "type": "collection",
+      "title": "Knowledge Hub Third Wave",
+      "route": "/archive/collections/knowledge-hub-third-wave/",
       "status": "active",
       "confidence": "published"
     }

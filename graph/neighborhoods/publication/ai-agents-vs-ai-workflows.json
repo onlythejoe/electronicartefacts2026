@@ -4,10 +4,10 @@
   "focus": "ea:publication:ai-agents-vs-ai-workflows",
   "nodes": [
     {
-      "id": "ea:collection:knowledge-hub-third-wave",
-      "type": "collection",
-      "title": "Knowledge Hub Third Wave",
-      "route": "/archive/collections/knowledge-hub-third-wave/",
+      "id": "ea:publication:ai-agents-vs-ai-workflows",
+      "type": "publication",
+      "title": "AI Agents vs AI Workflows",
+      "route": "/publications/ai-agents-vs-ai-workflows/",
       "status": "active",
       "confidence": "published"
     },
@@ -20,20 +20,20 @@
       "confidence": "validated"
     },
     {
-      "id": "ea:concept:autonomous-system",
-      "type": "concept",
-      "title": "Autonomous System",
-      "route": "/knowledge/concepts/autonomous-system/",
-      "status": "active",
-      "confidence": "validated"
-    },
-    {
       "id": "ea:concept:contextual-execution",
       "type": "concept",
       "title": "Contextual Execution",
       "route": "/knowledge/concepts/contextual-execution/",
       "status": "active",
       "confidence": "canonical"
+    },
+    {
+      "id": "ea:concept:autonomous-system",
+      "type": "concept",
+      "title": "Autonomous System",
+      "route": "/knowledge/concepts/autonomous-system/",
+      "status": "active",
+      "confidence": "validated"
     },
     {
       "id": "ea:program:vaste",
@@ -44,10 +44,10 @@
       "confidence": "published"
     },
     {
-      "id": "ea:publication:ai-agents-vs-ai-workflows",
-      "type": "publication",
-      "title": "AI Agents vs AI Workflows",
-      "route": "/publications/ai-agents-vs-ai-workflows/",
+      "id": "ea:collection:knowledge-hub-third-wave",
+      "type": "collection",
+      "title": "Knowledge Hub Third Wave",
+      "route": "/archive/collections/knowledge-hub-third-wave/",
       "status": "active",
       "confidence": "published"
     }

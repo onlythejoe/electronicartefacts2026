@@ -1,0 +1,102 @@
+{
+  "id": "local:ea:publication:ai-agents-vs-ai-workflows-fr",
+  "kind": "local",
+  "focus": "ea:publication:ai-agents-vs-ai-workflows-fr",
+  "nodes": [
+    {
+      "id": "ea:publication:ai-agents-vs-ai-workflows-fr",
+      "type": "publication",
+      "title": "Agents d'IA et workflows d'IA",
+      "route": "/fr/publications/ai-agents-vs-ai-workflows/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:concept:ai-agent-fr",
+      "type": "concept",
+      "title": "Agent d'IA",
+      "route": "/fr/knowledge/concepts/ai-agent/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:concept:contextual-execution-fr",
+      "type": "concept",
+      "title": "Exécution contextuelle",
+      "route": "/fr/knowledge/concepts/contextual-execution/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:concept:autonomous-system-fr",
+      "type": "concept",
+      "title": "Système autonome",
+      "route": "/fr/knowledge/concepts/autonomous-system/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:program:vaste-fr",
+      "type": "program",
+      "title": "VASTE",
+      "route": "/fr/programs/vaste/",
+      "status": "development",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:collection:knowledge-hub-third-wave-fr",
+      "type": "collection",
+      "title": "Hub de connaissance, troisième vague",
+      "route": "/fr/archive/collections/knowledge-hub-third-wave/",
+      "status": "active",
+      "confidence": "published"
+    }
+  ],
+  "edges": [
+    {
+      "id": "ear:agents-article-documents-ai-agent",
+      "source": "ea:publication:ai-agents-vs-ai-workflows-fr",
+      "target": "ea:concept:ai-agent-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "AI Agents vs AI Workflows documents model-directed agency and deterministic workflow boundaries.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:agents-article-documents-contextual-execution",
+      "source": "ea:publication:ai-agents-vs-ai-workflows-fr",
+      "target": "ea:concept:contextual-execution-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "AI Agents vs AI Workflows connects agent permissions to contextual execution.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:agents-article-documents-autonomous-system",
+      "source": "ea:publication:ai-agents-vs-ai-workflows-fr",
+      "target": "ea:concept:autonomous-system-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "AI Agents vs AI Workflows distinguishes bounded agents from broader autonomous systems.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:agents-article-documents-vaste",
+      "source": "ea:publication:ai-agents-vs-ai-workflows-fr",
+      "target": "ea:program:vaste-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "AI Agents vs AI Workflows uses VASTE as a context for identity-aware agent permissions.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:knowledge-hub-third-wave-has-agents-article",
+      "source": "ea:collection:knowledge-hub-third-wave-fr",
+      "target": "ea:publication:ai-agents-vs-ai-workflows-fr",
+      "predicate": "hasPart",
+      "label": "Has part",
+      "statement": "Knowledge Hub Third Wave includes AI Agents vs AI Workflows.",
+      "confidence": "published"
+    }
+  ]
+}

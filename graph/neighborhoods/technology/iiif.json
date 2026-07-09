@@ -4,12 +4,12 @@
   "focus": "ea:technology:iiif",
   "nodes": [
     {
-      "id": "ea:project:vestiges",
-      "type": "project",
-      "title": "Vestiges",
-      "route": "/projects/vestiges/",
-      "status": "development",
-      "confidence": "observed"
+      "id": "ea:technology:iiif",
+      "type": "technology",
+      "title": "IIIF",
+      "route": "/knowledge/technologies/iiif/",
+      "status": "active",
+      "confidence": "canonical"
     },
     {
       "id": "ea:publication:iiif-and-compound-cultural-objects",
@@ -20,12 +20,12 @@
       "confidence": "published"
     },
     {
-      "id": "ea:technology:iiif",
-      "type": "technology",
-      "title": "IIIF",
-      "route": "/knowledge/technologies/iiif/",
-      "status": "active",
-      "confidence": "canonical"
+      "id": "ea:project:vestiges",
+      "type": "project",
+      "title": "Vestiges",
+      "route": "/projects/vestiges/",
+      "status": "development",
+      "confidence": "observed"
     }
   ],
   "edges": [

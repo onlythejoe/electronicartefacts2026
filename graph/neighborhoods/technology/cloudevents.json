@@ -4,20 +4,20 @@
   "focus": "ea:technology:cloudevents",
   "nodes": [
     {
-      "id": "ea:publication:event-driven-architecture-and-event-streams",
-      "type": "publication",
-      "title": "Event-Driven Architecture and Event Streams",
-      "route": "/publications/event-driven-architecture-and-event-streams/",
-      "status": "active",
-      "confidence": "published"
-    },
-    {
       "id": "ea:technology:cloudevents",
       "type": "technology",
       "title": "CloudEvents",
       "route": "/knowledge/technologies/cloudevents/",
       "status": "active",
       "confidence": "canonical"
+    },
+    {
+      "id": "ea:publication:event-driven-architecture-and-event-streams",
+      "type": "publication",
+      "title": "Event-Driven Architecture and Event Streams",
+      "route": "/publications/event-driven-architecture-and-event-streams/",
+      "status": "active",
+      "confidence": "published"
     }
   ],
   "edges": [

@@ -1,0 +1,85 @@
+{
+  "id": "local:ea:concept:ai-agent-fr",
+  "kind": "local",
+  "focus": "ea:concept:ai-agent-fr",
+  "nodes": [
+    {
+      "id": "ea:concept:ai-agent-fr",
+      "type": "concept",
+      "title": "Agent d'IA",
+      "route": "/fr/knowledge/concepts/ai-agent/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:publication:model-context-protocol-and-tool-using-ai-systems-fr",
+      "type": "publication",
+      "title": "Model Context Protocol et systèmes d'IA utilisant des outils",
+      "route": "/fr/publications/model-context-protocol-and-tool-using-ai-systems/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:observability-for-ai-agents-and-tool-calling-systems-fr",
+      "type": "publication",
+      "title": "Observabilité des agents d'IA et des systèmes d'appel d'outils",
+      "route": "/fr/publications/observability-for-ai-agents-and-tool-calling-systems/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:prompt-injection-and-trust-boundaries-in-ai-knowledge-systems-fr",
+      "type": "publication",
+      "title": "Injection de prompt et frontières de confiance dans les systèmes de connaissance IA",
+      "route": "/fr/publications/prompt-injection-and-trust-boundaries-in-ai-knowledge-systems/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:ai-agents-vs-ai-workflows-fr",
+      "type": "publication",
+      "title": "Agents d'IA et workflows d'IA",
+      "route": "/fr/publications/ai-agents-vs-ai-workflows/",
+      "status": "active",
+      "confidence": "published"
+    }
+  ],
+  "edges": [
+    {
+      "id": "ear:mcp-article-documents-ai-agent",
+      "source": "ea:publication:model-context-protocol-and-tool-using-ai-systems-fr",
+      "target": "ea:concept:ai-agent-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Model Context Protocol and Tool-Using AI Systems explains how MCP relates to AI agents and deterministic workflows.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:observability-article-documents-ai-agent",
+      "source": "ea:publication:observability-for-ai-agents-and-tool-calling-systems-fr",
+      "target": "ea:concept:ai-agent-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Observability for AI Agents and Tool-Calling Systems explains why agents need traceable model and tool behavior.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:prompt-injection-article-documents-ai-agent",
+      "source": "ea:publication:prompt-injection-and-trust-boundaries-in-ai-knowledge-systems-fr",
+      "target": "ea:concept:ai-agent-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Prompt Injection and Trust Boundaries in AI Knowledge Systems documents prompt-injection risks for AI agents.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:agents-article-documents-ai-agent",
+      "source": "ea:publication:ai-agents-vs-ai-workflows-fr",
+      "target": "ea:concept:ai-agent-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "AI Agents vs AI Workflows documents model-directed agency and deterministic workflow boundaries.",
+      "confidence": "published"
+    }
+  ]
+}

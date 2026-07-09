@@ -4,12 +4,20 @@
   "focus": "ea:publication:systems-thinking-for-creative-practice",
   "nodes": [
     {
-      "id": "ea:collection:knowledge-hub-third-wave",
-      "type": "collection",
-      "title": "Knowledge Hub Third Wave",
-      "route": "/archive/collections/knowledge-hub-third-wave/",
+      "id": "ea:publication:systems-thinking-for-creative-practice",
+      "type": "publication",
+      "title": "Systems Thinking for Creative Practice",
+      "route": "/publications/systems-thinking-for-creative-practice/",
       "status": "active",
       "confidence": "published"
+    },
+    {
+      "id": "ea:concept:systems-thinking",
+      "type": "concept",
+      "title": "Systems Thinking",
+      "route": "/knowledge/concepts/systems-thinking/",
+      "status": "active",
+      "confidence": "canonical"
     },
     {
       "id": "ea:concept:cybernetic-feedback",
@@ -28,14 +36,6 @@
       "confidence": "validated"
     },
     {
-      "id": "ea:concept:systems-thinking",
-      "type": "concept",
-      "title": "Systems Thinking",
-      "route": "/knowledge/concepts/systems-thinking/",
-      "status": "active",
-      "confidence": "canonical"
-    },
-    {
       "id": "ea:program:vaste",
       "type": "program",
       "title": "VASTE",
@@ -44,10 +44,10 @@
       "confidence": "published"
     },
     {
-      "id": "ea:publication:systems-thinking-for-creative-practice",
-      "type": "publication",
-      "title": "Systems Thinking for Creative Practice",
-      "route": "/publications/systems-thinking-for-creative-practice/",
+      "id": "ea:collection:knowledge-hub-third-wave",
+      "type": "collection",
+      "title": "Knowledge Hub Third Wave",
+      "route": "/archive/collections/knowledge-hub-third-wave/",
       "status": "active",
       "confidence": "published"
     }

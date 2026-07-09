@@ -4,20 +4,12 @@
   "focus": "ea:publication:why-graphs-are-more-powerful-than-folders",
   "nodes": [
     {
-      "id": "ea:collection:knowledge-hub-third-wave",
-      "type": "collection",
-      "title": "Knowledge Hub Third Wave",
-      "route": "/archive/collections/knowledge-hub-third-wave/",
+      "id": "ea:publication:why-graphs-are-more-powerful-than-folders",
+      "type": "publication",
+      "title": "Why Graphs Are More Powerful Than Folders",
+      "route": "/publications/why-graphs-are-more-powerful-than-folders/",
       "status": "active",
       "confidence": "published"
-    },
-    {
-      "id": "ea:concept:entity-identity",
-      "type": "concept",
-      "title": "Entity Identity",
-      "route": "/knowledge/concepts/entity-identity/",
-      "status": "active",
-      "confidence": "canonical"
     },
     {
       "id": "ea:concept:graph-modeling",
@@ -32,6 +24,14 @@
       "type": "concept",
       "title": "Knowledge Graph",
       "route": "/knowledge/concepts/knowledge-graph/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:concept:entity-identity",
+      "type": "concept",
+      "title": "Entity Identity",
+      "route": "/knowledge/concepts/entity-identity/",
       "status": "active",
       "confidence": "canonical"
     },
@@ -52,10 +52,10 @@
       "confidence": "observed"
     },
     {
-      "id": "ea:publication:why-graphs-are-more-powerful-than-folders",
-      "type": "publication",
-      "title": "Why Graphs Are More Powerful Than Folders",
-      "route": "/publications/why-graphs-are-more-powerful-than-folders/",
+      "id": "ea:collection:knowledge-hub-third-wave",
+      "type": "collection",
+      "title": "Knowledge Hub Third Wave",
+      "route": "/archive/collections/knowledge-hub-third-wave/",
       "status": "active",
       "confidence": "published"
     }

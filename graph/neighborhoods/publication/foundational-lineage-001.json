@@ -4,12 +4,28 @@
   "focus": "ea:publication:foundational-lineage-001",
   "nodes": [
     {
+      "id": "ea:publication:foundational-lineage-001",
+      "type": "publication",
+      "title": "Foundational Lineage #001",
+      "route": "/publications/foundational-lineage-001/",
+      "status": "research",
+      "confidence": "published"
+    },
+    {
       "id": "ea:organization:electronic-artefacts",
       "type": "organization",
       "title": "Electronic Artefacts",
       "route": "/organizations/electronic-artefacts/",
       "status": "active",
       "confidence": "canonical"
+    },
+    {
+      "id": "ea:researchField:runtime-theory",
+      "type": "researchField",
+      "title": "Runtime Theory",
+      "route": "/research/fields/runtime-theory/",
+      "status": "active",
+      "confidence": "validated"
     },
     {
       "id": "ea:program:vaste",
@@ -26,22 +42,6 @@
       "route": "/projects/vestiges/",
       "status": "development",
       "confidence": "observed"
-    },
-    {
-      "id": "ea:publication:foundational-lineage-001",
-      "type": "publication",
-      "title": "Foundational Lineage #001",
-      "route": "/publications/foundational-lineage-001/",
-      "status": "research",
-      "confidence": "published"
-    },
-    {
-      "id": "ea:researchField:runtime-theory",
-      "type": "researchField",
-      "title": "Runtime Theory",
-      "route": "/research/fields/runtime-theory/",
-      "status": "active",
-      "confidence": "validated"
     }
   ],
   "edges": [

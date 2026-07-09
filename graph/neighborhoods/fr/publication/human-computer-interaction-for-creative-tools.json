@@ -1,0 +1,102 @@
+{
+  "id": "local:ea:publication:human-computer-interaction-for-creative-tools-fr",
+  "kind": "local",
+  "focus": "ea:publication:human-computer-interaction-for-creative-tools-fr",
+  "nodes": [
+    {
+      "id": "ea:publication:human-computer-interaction-for-creative-tools-fr",
+      "type": "publication",
+      "title": "Interaction humain-machine pour les outils créatifs",
+      "route": "/fr/publications/human-computer-interaction-for-creative-tools/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:concept:human-computer-interaction-fr",
+      "type": "concept",
+      "title": "Interaction humain-machine",
+      "route": "/fr/knowledge/concepts/human-computer-interaction/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:concept:augmented-intelligence-fr",
+      "type": "concept",
+      "title": "Intelligence augmentée",
+      "route": "/fr/knowledge/concepts/augmented-intelligence/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:concept:motion-design-fr",
+      "type": "concept",
+      "title": "Motion design",
+      "route": "/fr/knowledge/concepts/motion-design/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:program:vaste-fr",
+      "type": "program",
+      "title": "VASTE",
+      "route": "/fr/programs/vaste/",
+      "status": "development",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:collection:knowledge-hub-second-wave-fr",
+      "type": "collection",
+      "title": "Hub de connaissance, deuxième vague",
+      "route": "/fr/archive/collections/knowledge-hub-second-wave/",
+      "status": "active",
+      "confidence": "published"
+    }
+  ],
+  "edges": [
+    {
+      "id": "ear:hci-article-documents-hci",
+      "source": "ea:publication:human-computer-interaction-for-creative-tools-fr",
+      "target": "ea:concept:human-computer-interaction-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Human Computer Interaction for Creative Tools documents HCI as a creative tool discipline.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:hci-article-documents-augmented-intelligence",
+      "source": "ea:publication:human-computer-interaction-for-creative-tools-fr",
+      "target": "ea:concept:augmented-intelligence-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Human Computer Interaction for Creative Tools connects interface design to augmented intelligence.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:hci-article-documents-motion-design",
+      "source": "ea:publication:human-computer-interaction-for-creative-tools-fr",
+      "target": "ea:concept:motion-design-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Human Computer Interaction for Creative Tools links feedback and state communication to motion design.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:hci-article-documents-vaste",
+      "source": "ea:publication:human-computer-interaction-for-creative-tools-fr",
+      "target": "ea:program:vaste-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Human Computer Interaction for Creative Tools uses VASTE as a context for graph-aware creative systems.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:knowledge-hub-second-wave-has-hci-article",
+      "source": "ea:collection:knowledge-hub-second-wave-fr",
+      "target": "ea:publication:human-computer-interaction-for-creative-tools-fr",
+      "predicate": "hasPart",
+      "label": "Has part",
+      "statement": "Knowledge Hub Second Wave includes Human Computer Interaction for Creative Tools as a core article.",
+      "confidence": "published"
+    }
+  ]
+}

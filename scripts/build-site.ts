@@ -24,6 +24,7 @@ import { escapeHtml } from "../src/templates/html.js";
 import { buildSearchDocuments } from "../src/search/documents.js";
 import { buildSearchIndex } from "../src/search/build-index.js";
 import { buildGraphViews } from "../src/graph/build-views.js";
+import { graphNeighborhoodRoute } from "../src/graph/paths.js";
 import type { Entity, PublicationEntity } from "../src/schema/entities.js";
 import type { Locale } from "../src/schema/entity.js";
 
@@ -506,8 +507,7 @@ await writeJson(path.join(rootDir, "graph/relations.json"), catalog.relations);
 await writeJson(path.join(rootDir, "graph/catalog.jsonld"), buildKnowledgeGraphCatalogJsonLd(entities, relations));
 for (const view of graphViews) {
   const entity = byId.get(view.focus)!;
-  const type = entity.type === "researchField" ? "research-field" : entity.type;
-  await writeJson(path.join(rootDir, `graph/neighborhoods/${type}/${entity.slug.canonical}.json`), view);
+  await writeJson(path.join(rootDir, graphNeighborhoodRoute(entity).replace(/^\//, "")), view);
 }
 
 await writeJson(path.join(rootDir, "generated/public/catalog.json"), catalog);

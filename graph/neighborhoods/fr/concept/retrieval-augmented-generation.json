@@ -1,0 +1,51 @@
+{
+  "id": "local:ea:concept:retrieval-augmented-generation-fr",
+  "kind": "local",
+  "focus": "ea:concept:retrieval-augmented-generation-fr",
+  "nodes": [
+    {
+      "id": "ea:concept:retrieval-augmented-generation-fr",
+      "type": "concept",
+      "title": "Génération augmentée par récupération",
+      "route": "/fr/knowledge/concepts/retrieval-augmented-generation/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:publication:ai-search-structured-content-and-knowledge-graph-seo-fr",
+      "type": "publication",
+      "title": "Recherche IA, contenu structuré et SEO par graphe de connaissances",
+      "route": "/fr/publications/ai-search-structured-content-and-knowledge-graph-seo/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:retrieval-augmented-generation-and-knowledge-systems-fr",
+      "type": "publication",
+      "title": "Génération augmentée par récupération et systèmes de connaissance",
+      "route": "/fr/publications/retrieval-augmented-generation-and-knowledge-systems/",
+      "status": "active",
+      "confidence": "published"
+    }
+  ],
+  "edges": [
+    {
+      "id": "ear:ai-search-seo-article-documents-rag",
+      "source": "ea:publication:ai-search-structured-content-and-knowledge-graph-seo-fr",
+      "target": "ea:concept:retrieval-augmented-generation-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "AI Search, Structured Content and Knowledge Graph SEO connects AI search visibility to retrieval-augmented generation patterns.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:rag-article-documents-rag",
+      "source": "ea:publication:retrieval-augmented-generation-and-knowledge-systems-fr",
+      "target": "ea:concept:retrieval-augmented-generation-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Retrieval-Augmented Generation and Knowledge Systems documents RAG architecture end to end.",
+      "confidence": "published"
+    }
+  ]
+}

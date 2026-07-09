@@ -4,12 +4,20 @@
   "focus": "ea:publication:observability-for-ai-agents-and-tool-calling-systems",
   "nodes": [
     {
-      "id": "ea:collection:knowledge-hub-fourth-wave",
-      "type": "collection",
-      "title": "Knowledge Hub Fourth Wave",
-      "route": "/archive/collections/knowledge-hub-fourth-wave/",
+      "id": "ea:publication:observability-for-ai-agents-and-tool-calling-systems",
+      "type": "publication",
+      "title": "Observability for AI Agents and Tool-Calling Systems",
+      "route": "/publications/observability-for-ai-agents-and-tool-calling-systems/",
       "status": "active",
       "confidence": "published"
+    },
+    {
+      "id": "ea:technology:opentelemetry",
+      "type": "technology",
+      "title": "OpenTelemetry",
+      "route": "/knowledge/technologies/opentelemetry/",
+      "status": "active",
+      "confidence": "canonical"
     },
     {
       "id": "ea:concept:ai-agent",
@@ -20,22 +28,6 @@
       "confidence": "validated"
     },
     {
-      "id": "ea:concept:contextual-execution",
-      "type": "concept",
-      "title": "Contextual Execution",
-      "route": "/knowledge/concepts/contextual-execution/",
-      "status": "active",
-      "confidence": "canonical"
-    },
-    {
-      "id": "ea:publication:observability-for-ai-agents-and-tool-calling-systems",
-      "type": "publication",
-      "title": "Observability for AI Agents and Tool-Calling Systems",
-      "route": "/publications/observability-for-ai-agents-and-tool-calling-systems/",
-      "status": "active",
-      "confidence": "published"
-    },
-    {
       "id": "ea:technology:model-context-protocol",
       "type": "technology",
       "title": "Model Context Protocol",
@@ -44,12 +36,20 @@
       "confidence": "canonical"
     },
     {
-      "id": "ea:technology:opentelemetry",
-      "type": "technology",
-      "title": "OpenTelemetry",
-      "route": "/knowledge/technologies/opentelemetry/",
+      "id": "ea:concept:contextual-execution",
+      "type": "concept",
+      "title": "Contextual Execution",
+      "route": "/knowledge/concepts/contextual-execution/",
       "status": "active",
       "confidence": "canonical"
+    },
+    {
+      "id": "ea:collection:knowledge-hub-fourth-wave",
+      "type": "collection",
+      "title": "Knowledge Hub Fourth Wave",
+      "route": "/archive/collections/knowledge-hub-fourth-wave/",
+      "status": "active",
+      "confidence": "published"
     }
   ],
   "edges": [

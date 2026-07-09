@@ -1,0 +1,102 @@
+{
+  "id": "local:ea:researchField:runtime-theory-fr",
+  "kind": "local",
+  "focus": "ea:researchField:runtime-theory-fr",
+  "nodes": [
+    {
+      "id": "ea:researchField:runtime-theory-fr",
+      "type": "researchField",
+      "title": "Théorie du runtime",
+      "route": "/fr/research/fields/runtime-theory/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:publication:foundational-lineage-001-fr",
+      "type": "publication",
+      "title": "Foundational Lineage #001",
+      "route": "/fr/publications/foundational-lineage-001/",
+      "status": "research",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:concept:contextual-execution-fr",
+      "type": "concept",
+      "title": "Exécution contextuelle",
+      "route": "/fr/knowledge/concepts/contextual-execution/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:publication:contextual-execution-and-graph-runtimes-fr",
+      "type": "publication",
+      "title": "Exécution contextuelle et runtimes de graphe",
+      "route": "/fr/publications/contextual-execution-and-graph-runtimes/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:concept:graph-runtime-fr",
+      "type": "concept",
+      "title": "Runtime de graphe",
+      "route": "/fr/knowledge/concepts/graph-runtime/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:program:vaste-fr",
+      "type": "program",
+      "title": "VASTE",
+      "route": "/fr/programs/vaste/",
+      "status": "development",
+      "confidence": "published"
+    }
+  ],
+  "edges": [
+    {
+      "id": "ear:foundational-lineage-documents-runtime-theory",
+      "source": "ea:publication:foundational-lineage-001-fr",
+      "target": "ea:researchField:runtime-theory-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Foundational Lineage",
+      "confidence": "observed"
+    },
+    {
+      "id": "ear:runtime-theory-defines-contextual-execution",
+      "source": "ea:researchField:runtime-theory-fr",
+      "target": "ea:concept:contextual-execution-fr",
+      "predicate": "defines",
+      "label": "Defines",
+      "statement": "Runtime Theory defines the research boundary for contextual execution inside Electronic Artefacts.",
+      "confidence": "validated"
+    },
+    {
+      "id": "ear:contextual-execution-article-documents-runtime-theory",
+      "source": "ea:publication:contextual-execution-and-graph-runtimes-fr",
+      "target": "ea:researchField:runtime-theory-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Contextual Execution and Graph Runtimes connects contextual execution to Runtime Theory.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:runtime-theory-defines-graph-runtime",
+      "source": "ea:researchField:runtime-theory-fr",
+      "target": "ea:concept:graph-runtime-fr",
+      "predicate": "defines",
+      "label": "Defines",
+      "statement": "Runtime Theory supplies the research questions and boundaries used to define graph runtime within Electronic Artefacts.",
+      "confidence": "validated"
+    },
+    {
+      "id": "ear:vaste-derived-from-runtime-theory",
+      "source": "ea:program:vaste-fr",
+      "target": "ea:researchField:runtime-theory-fr",
+      "predicate": "derivedFrom",
+      "label": "Derived from",
+      "statement": "VASTE derives its runtime primitives and contextual execution questions from the Runtime Theory research field.",
+      "confidence": "validated"
+    }
+  ]
+}

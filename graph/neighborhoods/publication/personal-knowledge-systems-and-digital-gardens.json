@@ -4,18 +4,18 @@
   "focus": "ea:publication:personal-knowledge-systems-and-digital-gardens",
   "nodes": [
     {
-      "id": "ea:collection:knowledge-hub-second-wave",
-      "type": "collection",
-      "title": "Knowledge Hub Second Wave",
-      "route": "/archive/collections/knowledge-hub-second-wave/",
+      "id": "ea:publication:personal-knowledge-systems-and-digital-gardens",
+      "type": "publication",
+      "title": "Personal Knowledge Systems and Digital Gardens",
+      "route": "/publications/personal-knowledge-systems-and-digital-gardens/",
       "status": "active",
       "confidence": "published"
     },
     {
-      "id": "ea:concept:digital-preservation",
+      "id": "ea:concept:personal-knowledge-system",
       "type": "concept",
-      "title": "Digital Preservation",
-      "route": "/knowledge/concepts/digital-preservation/",
+      "title": "Personal Knowledge System",
+      "route": "/knowledge/concepts/personal-knowledge-system/",
       "status": "active",
       "confidence": "validated"
     },
@@ -36,18 +36,18 @@
       "confidence": "canonical"
     },
     {
-      "id": "ea:concept:personal-knowledge-system",
+      "id": "ea:concept:digital-preservation",
       "type": "concept",
-      "title": "Personal Knowledge System",
-      "route": "/knowledge/concepts/personal-knowledge-system/",
+      "title": "Digital Preservation",
+      "route": "/knowledge/concepts/digital-preservation/",
       "status": "active",
       "confidence": "validated"
     },
     {
-      "id": "ea:publication:personal-knowledge-systems-and-digital-gardens",
-      "type": "publication",
-      "title": "Personal Knowledge Systems and Digital Gardens",
-      "route": "/publications/personal-knowledge-systems-and-digital-gardens/",
+      "id": "ea:collection:knowledge-hub-second-wave",
+      "type": "collection",
+      "title": "Knowledge Hub Second Wave",
+      "route": "/archive/collections/knowledge-hub-second-wave/",
       "status": "active",
       "confidence": "published"
     }

@@ -1,0 +1,119 @@
+{
+  "id": "local:ea:publication:knowledge-graphs-for-cultural-infrastructure-fr",
+  "kind": "local",
+  "focus": "ea:publication:knowledge-graphs-for-cultural-infrastructure-fr",
+  "nodes": [
+    {
+      "id": "ea:publication:knowledge-graphs-for-cultural-infrastructure-fr",
+      "type": "publication",
+      "title": "Graphes de connaissances pour les infrastructures culturelles",
+      "route": "/fr/publications/knowledge-graphs-for-cultural-infrastructure/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:concept:knowledge-graph-fr",
+      "type": "concept",
+      "title": "Graphe de connaissances",
+      "route": "/fr/knowledge/concepts/knowledge-graph/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:concept:entity-identity-fr",
+      "type": "concept",
+      "title": "Identité d'entité",
+      "route": "/fr/knowledge/concepts/entity-identity/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:concept:provenance-fr",
+      "type": "concept",
+      "title": "Provenance",
+      "route": "/fr/knowledge/concepts/provenance/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:project:vestiges-fr",
+      "type": "project",
+      "title": "Vestiges",
+      "route": "/fr/projects/vestiges/",
+      "status": "development",
+      "confidence": "observed"
+    },
+    {
+      "id": "ea:technology:rdf-fr",
+      "type": "technology",
+      "title": "RDF",
+      "route": "/fr/knowledge/technologies/rdf/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:collection:knowledge-hub-foundations-fr",
+      "type": "collection",
+      "title": "Fondations du hub de connaissance",
+      "route": "/fr/archive/collections/knowledge-hub-foundations/",
+      "status": "active",
+      "confidence": "published"
+    }
+  ],
+  "edges": [
+    {
+      "id": "ear:knowledge-graphs-article-documents-knowledge-graph",
+      "source": "ea:publication:knowledge-graphs-for-cultural-infrastructure-fr",
+      "target": "ea:concept:knowledge-graph-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Knowledge Graphs for Cultural Infrastructure documents the knowledge-graph concept for cultural publishing.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:knowledge-graphs-article-documents-entity-identity",
+      "source": "ea:publication:knowledge-graphs-for-cultural-infrastructure-fr",
+      "target": "ea:concept:entity-identity-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Knowledge Graphs for Cultural Infrastructure explains why stable entity identity matters for graph publishing.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:knowledge-graphs-article-documents-provenance",
+      "source": "ea:publication:knowledge-graphs-for-cultural-infrastructure-fr",
+      "target": "ea:concept:provenance-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Knowledge Graphs for Cultural Infrastructure frames provenance as a trust layer for cultural knowledge graphs.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:knowledge-graphs-article-documents-vestiges",
+      "source": "ea:publication:knowledge-graphs-for-cultural-infrastructure-fr",
+      "target": "ea:project:vestiges-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Knowledge Graphs for Cultural Infrastructure uses Vestiges as the applied cultural infrastructure example.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:knowledge-graphs-article-uses-rdf",
+      "source": "ea:publication:knowledge-graphs-for-cultural-infrastructure-fr",
+      "target": "ea:technology:rdf-fr",
+      "predicate": "usesTechnology",
+      "label": "Uses technology",
+      "statement": "Knowledge Graphs for Cultural Infrastructure uses RDF as the reference model for graph statements and resources.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:knowledge-hub-foundations-has-knowledge-graphs-article",
+      "source": "ea:collection:knowledge-hub-foundations-fr",
+      "target": "ea:publication:knowledge-graphs-for-cultural-infrastructure-fr",
+      "predicate": "hasPart",
+      "label": "Has part",
+      "statement": "Knowledge Hub Foundations includes Knowledge Graphs for Cultural Infrastructure as a foundation article.",
+      "confidence": "published"
+    }
+  ]
+}

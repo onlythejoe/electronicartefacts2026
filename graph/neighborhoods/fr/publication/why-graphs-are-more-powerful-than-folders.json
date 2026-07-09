@@ -1,0 +1,119 @@
+{
+  "id": "local:ea:publication:why-graphs-are-more-powerful-than-folders-fr",
+  "kind": "local",
+  "focus": "ea:publication:why-graphs-are-more-powerful-than-folders-fr",
+  "nodes": [
+    {
+      "id": "ea:publication:why-graphs-are-more-powerful-than-folders-fr",
+      "type": "publication",
+      "title": "Pourquoi les graphes sont plus puissants que les dossiers",
+      "route": "/fr/publications/why-graphs-are-more-powerful-than-folders/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:concept:graph-modeling-fr",
+      "type": "concept",
+      "title": "Modélisation de graphe",
+      "route": "/fr/knowledge/concepts/graph-modeling/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:concept:knowledge-graph-fr",
+      "type": "concept",
+      "title": "Graphe de connaissances",
+      "route": "/fr/knowledge/concepts/knowledge-graph/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:concept:entity-identity-fr",
+      "type": "concept",
+      "title": "Identité d'entité",
+      "route": "/fr/knowledge/concepts/entity-identity/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:program:vaste-fr",
+      "type": "program",
+      "title": "VASTE",
+      "route": "/fr/programs/vaste/",
+      "status": "development",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:project:vestiges-fr",
+      "type": "project",
+      "title": "Vestiges",
+      "route": "/fr/projects/vestiges/",
+      "status": "development",
+      "confidence": "observed"
+    },
+    {
+      "id": "ea:collection:knowledge-hub-third-wave-fr",
+      "type": "collection",
+      "title": "Hub de connaissance, troisième vague",
+      "route": "/fr/archive/collections/knowledge-hub-third-wave/",
+      "status": "active",
+      "confidence": "published"
+    }
+  ],
+  "edges": [
+    {
+      "id": "ear:graphs-folders-article-documents-graph-modeling",
+      "source": "ea:publication:why-graphs-are-more-powerful-than-folders-fr",
+      "target": "ea:concept:graph-modeling-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Why Graphs Are More Powerful Than Folders documents graph modeling for connected domains.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:graphs-folders-article-documents-knowledge-graph",
+      "source": "ea:publication:why-graphs-are-more-powerful-than-folders-fr",
+      "target": "ea:concept:knowledge-graph-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Why Graphs Are More Powerful Than Folders explains knowledge graph identity and traversal.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:graphs-folders-article-documents-entity-identity",
+      "source": "ea:publication:why-graphs-are-more-powerful-than-folders-fr",
+      "target": "ea:concept:entity-identity-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Why Graphs Are More Powerful Than Folders explains why entity identity should survive path changes.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:graphs-folders-article-documents-vaste",
+      "source": "ea:publication:why-graphs-are-more-powerful-than-folders-fr",
+      "target": "ea:program:vaste-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Why Graphs Are More Powerful Than Folders uses VASTE as a graph-runtime application.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:graphs-folders-article-documents-vestiges",
+      "source": "ea:publication:why-graphs-are-more-powerful-than-folders-fr",
+      "target": "ea:project:vestiges-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Why Graphs Are More Powerful Than Folders uses Vestiges as a cultural graph case.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:knowledge-hub-third-wave-has-graphs-folders-article",
+      "source": "ea:collection:knowledge-hub-third-wave-fr",
+      "target": "ea:publication:why-graphs-are-more-powerful-than-folders-fr",
+      "predicate": "hasPart",
+      "label": "Has part",
+      "statement": "Knowledge Hub Third Wave includes Why Graphs Are More Powerful Than Folders.",
+      "confidence": "published"
+    }
+  ]
+}

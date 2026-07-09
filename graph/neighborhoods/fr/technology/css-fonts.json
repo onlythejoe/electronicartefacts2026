@@ -1,0 +1,34 @@
+{
+  "id": "local:ea:technology:css-fonts-fr",
+  "kind": "local",
+  "focus": "ea:technology:css-fonts-fr",
+  "nodes": [
+    {
+      "id": "ea:technology:css-fonts-fr",
+      "type": "technology",
+      "title": "CSS Fonts",
+      "route": "/fr/knowledge/technologies/css-fonts/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:publication:typography-reading-systems-and-digital-interfaces-fr",
+      "type": "publication",
+      "title": "Typographie, systèmes de lecture et interfaces numériques",
+      "route": "/fr/publications/typography-reading-systems-and-digital-interfaces/",
+      "status": "active",
+      "confidence": "published"
+    }
+  ],
+  "edges": [
+    {
+      "id": "ear:typography-article-uses-css-fonts",
+      "source": "ea:publication:typography-reading-systems-and-digital-interfaces-fr",
+      "target": "ea:technology:css-fonts-fr",
+      "predicate": "usesTechnology",
+      "label": "Uses technology",
+      "statement": "Typography, Reading Systems and Digital Interfaces uses CSS Fonts as the browser typography reference.",
+      "confidence": "published"
+    }
+  ]
+}

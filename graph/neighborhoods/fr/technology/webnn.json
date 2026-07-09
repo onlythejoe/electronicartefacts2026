@@ -1,0 +1,34 @@
+{
+  "id": "local:ea:technology:webnn-fr",
+  "kind": "local",
+  "focus": "ea:technology:webnn-fr",
+  "nodes": [
+    {
+      "id": "ea:technology:webnn-fr",
+      "type": "technology",
+      "title": "WebNN",
+      "route": "/fr/knowledge/technologies/webnn/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:publication:webnn-and-local-ai-in-the-browser-fr",
+      "type": "publication",
+      "title": "WebNN et IA locale dans le navigateur",
+      "route": "/fr/publications/webnn-and-local-ai-in-the-browser/",
+      "status": "active",
+      "confidence": "published"
+    }
+  ],
+  "edges": [
+    {
+      "id": "ear:webnn-article-documents-webnn",
+      "source": "ea:publication:webnn-and-local-ai-in-the-browser-fr",
+      "target": "ea:technology:webnn-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "WebNN and Local AI in the Browser documents WebNN as browser-local inference infrastructure.",
+      "confidence": "published"
+    }
+  ]
+}

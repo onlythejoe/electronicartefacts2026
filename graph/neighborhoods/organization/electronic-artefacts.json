@@ -12,6 +12,14 @@
       "confidence": "canonical"
     },
     {
+      "id": "ea:publication:foundational-lineage-001",
+      "type": "publication",
+      "title": "Foundational Lineage #001",
+      "route": "/publications/foundational-lineage-001/",
+      "status": "research",
+      "confidence": "published"
+    },
+    {
       "id": "ea:program:vaste",
       "type": "program",
       "title": "VASTE",
@@ -26,14 +34,6 @@
       "route": "/projects/vestiges/",
       "status": "development",
       "confidence": "observed"
-    },
-    {
-      "id": "ea:publication:foundational-lineage-001",
-      "type": "publication",
-      "title": "Foundational Lineage #001",
-      "route": "/publications/foundational-lineage-001/",
-      "status": "research",
-      "confidence": "published"
     }
   ],
   "edges": [

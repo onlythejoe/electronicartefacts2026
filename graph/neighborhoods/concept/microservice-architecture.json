@@ -1,16 +1,34 @@
 {
-  "id": "local:ea:concept:microservice-architecture-fr",
+  "id": "local:ea:concept:microservice-architecture",
   "kind": "local",
-  "focus": "ea:concept:microservice-architecture-fr",
+  "focus": "ea:concept:microservice-architecture",
   "nodes": [
     {
-      "id": "ea:concept:microservice-architecture-fr",
+      "id": "ea:concept:microservice-architecture",
       "type": "concept",
-      "title": "Architecture de microservices",
-      "route": "/fr/knowledge/concepts/microservice-architecture/",
+      "title": "Microservice Architecture",
+      "route": "/knowledge/concepts/microservice-architecture/",
       "status": "active",
       "confidence": "validated"
+    },
+    {
+      "id": "ea:publication:microservices-modular-monoliths-and-system-boundaries",
+      "type": "publication",
+      "title": "Microservices, Modular Monoliths and System Boundaries",
+      "route": "/publications/microservices-modular-monoliths-and-system-boundaries/",
+      "status": "active",
+      "confidence": "published"
     }
   ],
-  "edges": []
+  "edges": [
+    {
+      "id": "ear:microservices-article-documents-microservice-architecture",
+      "source": "ea:publication:microservices-modular-monoliths-and-system-boundaries",
+      "target": "ea:concept:microservice-architecture",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Microservices, Modular Monoliths and System Boundaries documents microservice architecture and its tradeoffs.",
+      "confidence": "published"
+    }
+  ]
 }

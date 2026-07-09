@@ -4,26 +4,26 @@
   "focus": "ea:project:vestiges",
   "nodes": [
     {
-      "id": "ea:concept:domain-operating-system",
-      "type": "concept",
-      "title": "Domain Operating System",
-      "route": "/knowledge/concepts/domain-operating-system/",
-      "status": "active",
+      "id": "ea:project:vestiges",
+      "type": "project",
+      "title": "Vestiges",
+      "route": "/projects/vestiges/",
+      "status": "development",
       "confidence": "observed"
     },
     {
-      "id": "ea:concept:graph-modeling",
-      "type": "concept",
-      "title": "Graph Modeling",
-      "route": "/knowledge/concepts/graph-modeling/",
+      "id": "ea:publication:iiif-and-compound-cultural-objects",
+      "type": "publication",
+      "title": "IIIF and Compound Cultural Objects",
+      "route": "/publications/iiif-and-compound-cultural-objects/",
       "status": "active",
-      "confidence": "canonical"
+      "confidence": "published"
     },
     {
-      "id": "ea:concept:graph-runtime",
-      "type": "concept",
-      "title": "Graph Runtime",
-      "route": "/knowledge/concepts/graph-runtime/",
+      "id": "ea:technology:iiif",
+      "type": "technology",
+      "title": "IIIF",
+      "route": "/knowledge/technologies/iiif/",
       "status": "active",
       "confidence": "canonical"
     },
@@ -36,66 +36,18 @@
       "confidence": "canonical"
     },
     {
-      "id": "ea:concept:ontology",
-      "type": "concept",
-      "title": "Ontology",
-      "route": "/knowledge/concepts/ontology/",
+      "id": "ea:publication:knowledge-graphs-for-cultural-infrastructure",
+      "type": "publication",
+      "title": "Knowledge Graphs for Cultural Infrastructure",
+      "route": "/publications/knowledge-graphs-for-cultural-infrastructure/",
       "status": "active",
-      "confidence": "canonical"
-    },
-    {
-      "id": "ea:organization:electronic-artefacts",
-      "type": "organization",
-      "title": "Electronic Artefacts",
-      "route": "/organizations/electronic-artefacts/",
-      "status": "active",
-      "confidence": "canonical"
-    },
-    {
-      "id": "ea:program:vaste",
-      "type": "program",
-      "title": "VASTE",
-      "route": "/programs/vaste/",
-      "status": "development",
       "confidence": "published"
-    },
-    {
-      "id": "ea:project:vestiges",
-      "type": "project",
-      "title": "Vestiges",
-      "route": "/projects/vestiges/",
-      "status": "development",
-      "confidence": "observed"
     },
     {
       "id": "ea:publication:digital-preservation-and-living-archives",
       "type": "publication",
       "title": "Digital Preservation and Living Archives",
       "route": "/publications/digital-preservation-and-living-archives/",
-      "status": "active",
-      "confidence": "published"
-    },
-    {
-      "id": "ea:publication:foundational-lineage-001",
-      "type": "publication",
-      "title": "Foundational Lineage #001",
-      "route": "/publications/foundational-lineage-001/",
-      "status": "research",
-      "confidence": "published"
-    },
-    {
-      "id": "ea:publication:iiif-and-compound-cultural-objects",
-      "type": "publication",
-      "title": "IIIF and Compound Cultural Objects",
-      "route": "/publications/iiif-and-compound-cultural-objects/",
-      "status": "active",
-      "confidence": "published"
-    },
-    {
-      "id": "ea:publication:knowledge-graphs-for-cultural-infrastructure",
-      "type": "publication",
-      "title": "Knowledge Graphs for Cultural Infrastructure",
-      "route": "/publications/knowledge-graphs-for-cultural-infrastructure/",
       "status": "active",
       "confidence": "published"
     },
@@ -116,14 +68,6 @@
       "confidence": "published"
     },
     {
-      "id": "ea:publication:runtime-engines-and-domain-operating-systems",
-      "type": "publication",
-      "title": "Runtime Engines and Domain Operating Systems",
-      "route": "/publications/runtime-engines-and-domain-operating-systems/",
-      "status": "active",
-      "confidence": "published"
-    },
-    {
       "id": "ea:publication:why-graphs-are-more-powerful-than-folders",
       "type": "publication",
       "title": "Why Graphs Are More Powerful Than Folders",
@@ -132,10 +76,66 @@
       "confidence": "published"
     },
     {
-      "id": "ea:technology:iiif",
-      "type": "technology",
-      "title": "IIIF",
-      "route": "/knowledge/technologies/iiif/",
+      "id": "ea:publication:runtime-engines-and-domain-operating-systems",
+      "type": "publication",
+      "title": "Runtime Engines and Domain Operating Systems",
+      "route": "/publications/runtime-engines-and-domain-operating-systems/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:concept:ontology",
+      "type": "concept",
+      "title": "Ontology",
+      "route": "/knowledge/concepts/ontology/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:concept:graph-modeling",
+      "type": "concept",
+      "title": "Graph Modeling",
+      "route": "/knowledge/concepts/graph-modeling/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:concept:domain-operating-system",
+      "type": "concept",
+      "title": "Domain Operating System",
+      "route": "/knowledge/concepts/domain-operating-system/",
+      "status": "active",
+      "confidence": "observed"
+    },
+    {
+      "id": "ea:program:vaste",
+      "type": "program",
+      "title": "VASTE",
+      "route": "/programs/vaste/",
+      "status": "development",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:concept:graph-runtime",
+      "type": "concept",
+      "title": "Graph Runtime",
+      "route": "/knowledge/concepts/graph-runtime/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:publication:foundational-lineage-001",
+      "type": "publication",
+      "title": "Foundational Lineage #001",
+      "route": "/publications/foundational-lineage-001/",
+      "status": "research",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:organization:electronic-artefacts",
+      "type": "organization",
+      "title": "Electronic Artefacts",
+      "route": "/organizations/electronic-artefacts/",
       "status": "active",
       "confidence": "canonical"
     }

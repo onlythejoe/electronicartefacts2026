@@ -1,16 +1,136 @@
 {
-  "id": "local:ea:concept:graph-runtime-fr",
+  "id": "local:ea:concept:graph-runtime",
   "kind": "local",
-  "focus": "ea:concept:graph-runtime-fr",
+  "focus": "ea:concept:graph-runtime",
   "nodes": [
     {
-      "id": "ea:concept:graph-runtime-fr",
+      "id": "ea:concept:graph-runtime",
       "type": "concept",
-      "title": "Runtime de graphe",
-      "route": "/fr/knowledge/concepts/graph-runtime/",
+      "title": "Graph Runtime",
+      "route": "/knowledge/concepts/graph-runtime/",
       "status": "active",
       "confidence": "canonical"
+    },
+    {
+      "id": "ea:publication:prompt-injection-and-trust-boundaries-in-ai-knowledge-systems",
+      "type": "publication",
+      "title": "Prompt Injection and Trust Boundaries in AI Knowledge Systems",
+      "route": "/publications/prompt-injection-and-trust-boundaries-in-ai-knowledge-systems/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:contextual-execution-and-graph-runtimes",
+      "type": "publication",
+      "title": "Contextual Execution and Graph Runtimes",
+      "route": "/publications/contextual-execution-and-graph-runtimes/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:event-driven-architecture-and-event-streams",
+      "type": "publication",
+      "title": "Event-Driven Architecture and Event Streams",
+      "route": "/publications/event-driven-architecture-and-event-streams/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:runtime-engines-and-domain-operating-systems",
+      "type": "publication",
+      "title": "Runtime Engines and Domain Operating Systems",
+      "route": "/publications/runtime-engines-and-domain-operating-systems/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:researchField:runtime-theory",
+      "type": "researchField",
+      "title": "Runtime Theory",
+      "route": "/research/fields/runtime-theory/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:program:vaste",
+      "type": "program",
+      "title": "VASTE",
+      "route": "/programs/vaste/",
+      "status": "development",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:project:vestiges",
+      "type": "project",
+      "title": "Vestiges",
+      "route": "/projects/vestiges/",
+      "status": "development",
+      "confidence": "observed"
     }
   ],
-  "edges": []
+  "edges": [
+    {
+      "id": "ear:prompt-injection-article-documents-graph-runtime",
+      "source": "ea:publication:prompt-injection-and-trust-boundaries-in-ai-knowledge-systems",
+      "target": "ea:concept:graph-runtime",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Prompt Injection and Trust Boundaries in AI Knowledge Systems uses graph runtimes as a control layer for AI knowledge operations.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:contextual-execution-article-documents-graph-runtime",
+      "source": "ea:publication:contextual-execution-and-graph-runtimes",
+      "target": "ea:concept:graph-runtime",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Contextual Execution and Graph Runtimes explains how contextual execution extends the graph-runtime concept.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:event-architecture-article-documents-graph-runtime",
+      "source": "ea:publication:event-driven-architecture-and-event-streams",
+      "target": "ea:concept:graph-runtime",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Event-Driven Architecture and Event Streams explains event flow inside graph runtimes.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:domain-os-article-documents-graph-runtime",
+      "source": "ea:publication:runtime-engines-and-domain-operating-systems",
+      "target": "ea:concept:graph-runtime",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Runtime Engines and Domain Operating Systems connects domain runtimes to graph execution.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:runtime-theory-defines-graph-runtime",
+      "source": "ea:researchField:runtime-theory",
+      "target": "ea:concept:graph-runtime",
+      "predicate": "defines",
+      "label": "Defines",
+      "statement": "Runtime Theory supplies the research questions and boundaries used to define graph runtime within Electronic Artefacts.",
+      "confidence": "validated"
+    },
+    {
+      "id": "ear:vaste-applies-graph-runtime",
+      "source": "ea:program:vaste",
+      "target": "ea:concept:graph-runtime",
+      "predicate": "appliesConcept",
+      "label": "Applies concept",
+      "statement": "VASTE applies the graph-runtime concept through addressable entities, typed relationships, identity, context and event execution.",
+      "confidence": "observed"
+    },
+    {
+      "id": "ear:vestiges-applies-graph-runtime",
+      "source": "ea:project:vestiges",
+      "target": "ea:concept:graph-runtime",
+      "predicate": "appliesConcept",
+      "label": "Applies concept",
+      "statement": "Vestiges applies graph-runtime principles to cultural, craft and human-knowledge infrastructure.",
+      "confidence": "observed"
+    }
+  ]
 }

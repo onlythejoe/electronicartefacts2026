@@ -4,26 +4,26 @@
   "focus": "ea:publication:knowledge-graphs-for-cultural-infrastructure",
   "nodes": [
     {
-      "id": "ea:collection:knowledge-hub-foundations",
-      "type": "collection",
-      "title": "Knowledge Hub Foundations",
-      "route": "/archive/collections/knowledge-hub-foundations/",
+      "id": "ea:publication:knowledge-graphs-for-cultural-infrastructure",
+      "type": "publication",
+      "title": "Knowledge Graphs for Cultural Infrastructure",
+      "route": "/publications/knowledge-graphs-for-cultural-infrastructure/",
       "status": "active",
       "confidence": "published"
-    },
-    {
-      "id": "ea:concept:entity-identity",
-      "type": "concept",
-      "title": "Entity Identity",
-      "route": "/knowledge/concepts/entity-identity/",
-      "status": "active",
-      "confidence": "canonical"
     },
     {
       "id": "ea:concept:knowledge-graph",
       "type": "concept",
       "title": "Knowledge Graph",
       "route": "/knowledge/concepts/knowledge-graph/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:concept:entity-identity",
+      "type": "concept",
+      "title": "Entity Identity",
+      "route": "/knowledge/concepts/entity-identity/",
       "status": "active",
       "confidence": "canonical"
     },
@@ -44,18 +44,18 @@
       "confidence": "observed"
     },
     {
-      "id": "ea:publication:knowledge-graphs-for-cultural-infrastructure",
-      "type": "publication",
-      "title": "Knowledge Graphs for Cultural Infrastructure",
-      "route": "/publications/knowledge-graphs-for-cultural-infrastructure/",
-      "status": "active",
-      "confidence": "published"
-    },
-    {
       "id": "ea:technology:rdf",
       "type": "technology",
       "title": "RDF",
       "route": "/knowledge/technologies/rdf/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:collection:knowledge-hub-foundations",
+      "type": "collection",
+      "title": "Knowledge Hub Foundations",
+      "route": "/archive/collections/knowledge-hub-foundations/",
       "status": "active",
       "confidence": "published"
     }

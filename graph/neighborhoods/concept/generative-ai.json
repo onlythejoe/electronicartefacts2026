@@ -1,16 +1,68 @@
 {
-  "id": "local:ea:concept:generative-ai-fr",
+  "id": "local:ea:concept:generative-ai",
   "kind": "local",
-  "focus": "ea:concept:generative-ai-fr",
+  "focus": "ea:concept:generative-ai",
   "nodes": [
     {
-      "id": "ea:concept:generative-ai-fr",
+      "id": "ea:concept:generative-ai",
       "type": "concept",
-      "title": "IA générative",
-      "route": "/fr/knowledge/concepts/generative-ai/",
+      "title": "Generative AI",
+      "route": "/knowledge/concepts/generative-ai/",
       "status": "active",
       "confidence": "validated"
+    },
+    {
+      "id": "ea:publication:responsible-ai-governance-for-creative-and-cultural-systems",
+      "type": "publication",
+      "title": "Responsible AI Governance for Creative and Cultural Systems",
+      "route": "/publications/responsible-ai-governance-for-creative-and-cultural-systems/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:generative-ai-latent-space-and-creative-workflows",
+      "type": "publication",
+      "title": "Generative AI, Latent Space and Creative Workflows",
+      "route": "/publications/generative-ai-latent-space-and-creative-workflows/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:how-large-language-models-actually-work",
+      "type": "publication",
+      "title": "How Large Language Models Actually Work",
+      "route": "/publications/how-large-language-models-actually-work/",
+      "status": "active",
+      "confidence": "published"
     }
   ],
-  "edges": []
+  "edges": [
+    {
+      "id": "ear:responsible-ai-governance-article-documents-generative-ai",
+      "source": "ea:publication:responsible-ai-governance-for-creative-and-cultural-systems",
+      "target": "ea:concept:generative-ai",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Responsible AI Governance for Creative and Cultural Systems documents governance practices for generative AI use in creative systems.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:generative-ai-article-documents-generative-ai",
+      "source": "ea:publication:generative-ai-latent-space-and-creative-workflows",
+      "target": "ea:concept:generative-ai",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Generative AI, Latent Space and Creative Workflows documents generative AI as a creative workflow topic.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:llm-article-documents-generative-ai",
+      "source": "ea:publication:how-large-language-models-actually-work",
+      "target": "ea:concept:generative-ai",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "How Large Language Models Actually Work situates LLMs within generative AI.",
+      "confidence": "published"
+    }
+  ]
 }

@@ -1,0 +1,102 @@
+{
+  "id": "local:ea:publication:local-and-open-source-ai-systems-fr",
+  "kind": "local",
+  "focus": "ea:publication:local-and-open-source-ai-systems-fr",
+  "nodes": [
+    {
+      "id": "ea:publication:local-and-open-source-ai-systems-fr",
+      "type": "publication",
+      "title": "Systèmes d’IA locaux et open source",
+      "route": "/fr/publications/local-and-open-source-ai-systems/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:concept:open-weight-model-fr",
+      "type": "concept",
+      "title": "Modèle à poids ouverts",
+      "route": "/fr/knowledge/concepts/open-weight-model/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:concept:open-source-fr",
+      "type": "concept",
+      "title": "open source",
+      "route": "/fr/knowledge/concepts/open-source/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:technology:llama-cpp-fr",
+      "type": "technology",
+      "title": "llama.cpp",
+      "route": "/fr/knowledge/technologies/llama-cpp/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:concept:provenance-fr",
+      "type": "concept",
+      "title": "Provenance",
+      "route": "/fr/knowledge/concepts/provenance/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:collection:knowledge-hub-third-wave-fr",
+      "type": "collection",
+      "title": "Hub de connaissance, troisième vague",
+      "route": "/fr/archive/collections/knowledge-hub-third-wave/",
+      "status": "active",
+      "confidence": "published"
+    }
+  ],
+  "edges": [
+    {
+      "id": "ear:local-ai-article-documents-open-weight-model",
+      "source": "ea:publication:local-and-open-source-ai-systems-fr",
+      "target": "ea:concept:open-weight-model-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Local and Open Source AI Systems documents the distinction between open-weight and open-source models.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:local-ai-article-documents-open-source",
+      "source": "ea:publication:local-and-open-source-ai-systems-fr",
+      "target": "ea:concept:open-source-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Local and Open Source AI Systems applies open-source principles to AI infrastructure and licensing.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:local-ai-article-uses-llama-cpp",
+      "source": "ea:publication:local-and-open-source-ai-systems-fr",
+      "target": "ea:technology:llama-cpp-fr",
+      "predicate": "usesTechnology",
+      "label": "Uses technology",
+      "statement": "Local and Open Source AI Systems uses llama.cpp as a reference local inference runtime.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:local-ai-article-documents-provenance",
+      "source": "ea:publication:local-and-open-source-ai-systems-fr",
+      "target": "ea:concept:provenance-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Local and Open Source AI Systems connects model deployment to provenance and reproducibility.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:knowledge-hub-third-wave-has-local-ai-article",
+      "source": "ea:collection:knowledge-hub-third-wave-fr",
+      "target": "ea:publication:local-and-open-source-ai-systems-fr",
+      "predicate": "hasPart",
+      "label": "Has part",
+      "statement": "Knowledge Hub Third Wave includes Local and Open Source AI Systems.",
+      "confidence": "published"
+    }
+  ]
+}

@@ -4,12 +4,12 @@
   "focus": "ea:technology:opentelemetry",
   "nodes": [
     {
-      "id": "ea:program:vaste",
-      "type": "program",
-      "title": "VASTE",
-      "route": "/programs/vaste/",
-      "status": "development",
-      "confidence": "published"
+      "id": "ea:technology:opentelemetry",
+      "type": "technology",
+      "title": "OpenTelemetry",
+      "route": "/knowledge/technologies/opentelemetry/",
+      "status": "active",
+      "confidence": "canonical"
     },
     {
       "id": "ea:publication:observability-for-ai-agents-and-tool-calling-systems",
@@ -20,12 +20,12 @@
       "confidence": "published"
     },
     {
-      "id": "ea:technology:opentelemetry",
-      "type": "technology",
-      "title": "OpenTelemetry",
-      "route": "/knowledge/technologies/opentelemetry/",
-      "status": "active",
-      "confidence": "canonical"
+      "id": "ea:program:vaste",
+      "type": "program",
+      "title": "VASTE",
+      "route": "/programs/vaste/",
+      "status": "development",
+      "confidence": "published"
     }
   ],
   "edges": [

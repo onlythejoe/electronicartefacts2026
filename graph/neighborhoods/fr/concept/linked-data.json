@@ -1,0 +1,68 @@
+{
+  "id": "local:ea:concept:linked-data-fr",
+  "kind": "local",
+  "focus": "ea:concept:linked-data-fr",
+  "nodes": [
+    {
+      "id": "ea:concept:linked-data-fr",
+      "type": "concept",
+      "title": "Données liées",
+      "route": "/fr/knowledge/concepts/linked-data/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:publication:ai-search-structured-content-and-knowledge-graph-seo-fr",
+      "type": "publication",
+      "title": "Recherche IA, contenu structuré et SEO par graphe de connaissances",
+      "route": "/fr/publications/ai-search-structured-content-and-knowledge-graph-seo/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:linked-data-and-public-knowledge-pages-fr",
+      "type": "publication",
+      "title": "Données liées et pages publiques de connaissance",
+      "route": "/fr/publications/linked-data-and-public-knowledge-pages/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:hypertext-and-augmented-knowledge-systems-fr",
+      "type": "publication",
+      "title": "Hypertexte et systèmes de connaissance augmentée",
+      "route": "/fr/publications/hypertext-and-augmented-knowledge-systems/",
+      "status": "active",
+      "confidence": "published"
+    }
+  ],
+  "edges": [
+    {
+      "id": "ear:ai-search-seo-article-documents-linked-data",
+      "source": "ea:publication:ai-search-structured-content-and-knowledge-graph-seo-fr",
+      "target": "ea:concept:linked-data-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "AI Search, Structured Content and Knowledge Graph SEO explains how Linked Data supports crawlable, machine-readable public knowledge pages.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:linked-data-article-documents-linked-data",
+      "source": "ea:publication:linked-data-and-public-knowledge-pages-fr",
+      "target": "ea:concept:linked-data-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Linked Data and Public Knowledge Pages documents Linked Data as a publishing discipline for public knowledge pages.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:hypertext-article-documents-linked-data",
+      "source": "ea:publication:hypertext-and-augmented-knowledge-systems-fr",
+      "target": "ea:concept:linked-data-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Hypertext and Augmented Knowledge Systems links hypertext practice to Linked Data and stable identifiers.",
+      "confidence": "published"
+    }
+  ]
+}

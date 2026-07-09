@@ -1,0 +1,68 @@
+{
+  "id": "local:ea:concept:systems-thinking-fr",
+  "kind": "local",
+  "focus": "ea:concept:systems-thinking-fr",
+  "nodes": [
+    {
+      "id": "ea:concept:systems-thinking-fr",
+      "type": "concept",
+      "title": "Pensée systémique",
+      "route": "/fr/knowledge/concepts/systems-thinking/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:publication:systems-thinking-for-creative-practice-fr",
+      "type": "publication",
+      "title": "Pensée systémique pour la pratique créative",
+      "route": "/fr/publications/systems-thinking-for-creative-practice/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:microservices-modular-monoliths-and-system-boundaries-fr",
+      "type": "publication",
+      "title": "Microservices, monolithes modulaires et frontières de système",
+      "route": "/fr/publications/microservices-modular-monoliths-and-system-boundaries/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:program:vaste-fr",
+      "type": "program",
+      "title": "VASTE",
+      "route": "/fr/programs/vaste/",
+      "status": "development",
+      "confidence": "published"
+    }
+  ],
+  "edges": [
+    {
+      "id": "ear:systems-thinking-article-documents-systems-thinking",
+      "source": "ea:publication:systems-thinking-for-creative-practice-fr",
+      "target": "ea:concept:systems-thinking-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Systems Thinking for Creative Practice documents systems thinking for creative and technical work.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:microservices-article-documents-systems-thinking",
+      "source": "ea:publication:microservices-modular-monoliths-and-system-boundaries-fr",
+      "target": "ea:concept:systems-thinking-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Microservices, Modular Monoliths and System Boundaries applies systems thinking to organizational and operational cost.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:vaste-applies-systems-thinking",
+      "source": "ea:program:vaste-fr",
+      "target": "ea:concept:systems-thinking-fr",
+      "predicate": "appliesConcept",
+      "label": "Applies concept",
+      "statement": "VASTE applies systems thinking to entities, context, events and projections.",
+      "confidence": "observed"
+    }
+  ]
+}

@@ -1,16 +1,85 @@
 {
-  "id": "local:ea:concept:entity-identity-fr",
+  "id": "local:ea:concept:entity-identity",
   "kind": "local",
-  "focus": "ea:concept:entity-identity-fr",
+  "focus": "ea:concept:entity-identity",
   "nodes": [
     {
-      "id": "ea:concept:entity-identity-fr",
+      "id": "ea:concept:entity-identity",
       "type": "concept",
-      "title": "Identité d'entité",
-      "route": "/fr/knowledge/concepts/entity-identity/",
+      "title": "Entity Identity",
+      "route": "/knowledge/concepts/entity-identity/",
       "status": "active",
       "confidence": "canonical"
+    },
+    {
+      "id": "ea:publication:verifiable-credentials-for-cultural-archives-and-creator-identity",
+      "type": "publication",
+      "title": "Verifiable Credentials for Cultural Archives and Creator Identity",
+      "route": "/publications/verifiable-credentials-for-cultural-archives-and-creator-identity/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:knowledge-graphs-for-cultural-infrastructure",
+      "type": "publication",
+      "title": "Knowledge Graphs for Cultural Infrastructure",
+      "route": "/publications/knowledge-graphs-for-cultural-infrastructure/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:linked-data-and-public-knowledge-pages",
+      "type": "publication",
+      "title": "Linked Data and Public Knowledge Pages",
+      "route": "/publications/linked-data-and-public-knowledge-pages/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:why-graphs-are-more-powerful-than-folders",
+      "type": "publication",
+      "title": "Why Graphs Are More Powerful Than Folders",
+      "route": "/publications/why-graphs-are-more-powerful-than-folders/",
+      "status": "active",
+      "confidence": "published"
     }
   ],
-  "edges": []
+  "edges": [
+    {
+      "id": "ear:verifiable-credentials-article-documents-entity-identity",
+      "source": "ea:publication:verifiable-credentials-for-cultural-archives-and-creator-identity",
+      "target": "ea:concept:entity-identity",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Verifiable Credentials for Cultural Archives and Creator Identity connects signed claims to durable entity identity.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:knowledge-graphs-article-documents-entity-identity",
+      "source": "ea:publication:knowledge-graphs-for-cultural-infrastructure",
+      "target": "ea:concept:entity-identity",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Knowledge Graphs for Cultural Infrastructure explains why stable entity identity matters for graph publishing.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:linked-data-article-documents-entity-identity",
+      "source": "ea:publication:linked-data-and-public-knowledge-pages",
+      "target": "ea:concept:entity-identity",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Linked Data and Public Knowledge Pages explains the difference between page URLs and entity identifiers.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:graphs-folders-article-documents-entity-identity",
+      "source": "ea:publication:why-graphs-are-more-powerful-than-folders",
+      "target": "ea:concept:entity-identity",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Why Graphs Are More Powerful Than Folders explains why entity identity should survive path changes.",
+      "confidence": "published"
+    }
+  ]
 }

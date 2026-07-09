@@ -4,6 +4,14 @@
   "focus": "ea:technology:json-ld",
   "nodes": [
     {
+      "id": "ea:technology:json-ld",
+      "type": "technology",
+      "title": "JSON-LD",
+      "route": "/knowledge/technologies/json-ld/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
       "id": "ea:publication:ai-search-structured-content-and-knowledge-graph-seo",
       "type": "publication",
       "title": "AI Search, Structured Content and Knowledge Graph SEO",
@@ -16,14 +24,6 @@
       "type": "publication",
       "title": "Linked Data and Public Knowledge Pages",
       "route": "/publications/linked-data-and-public-knowledge-pages/",
-      "status": "active",
-      "confidence": "published"
-    },
-    {
-      "id": "ea:technology:json-ld",
-      "type": "technology",
-      "title": "JSON-LD",
-      "route": "/knowledge/technologies/json-ld/",
       "status": "active",
       "confidence": "published"
     }

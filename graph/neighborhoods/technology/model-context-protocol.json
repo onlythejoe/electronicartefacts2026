@@ -4,12 +4,12 @@
   "focus": "ea:technology:model-context-protocol",
   "nodes": [
     {
-      "id": "ea:program:vaste",
-      "type": "program",
-      "title": "VASTE",
-      "route": "/programs/vaste/",
-      "status": "development",
-      "confidence": "published"
+      "id": "ea:technology:model-context-protocol",
+      "type": "technology",
+      "title": "Model Context Protocol",
+      "route": "/knowledge/technologies/model-context-protocol/",
+      "status": "active",
+      "confidence": "canonical"
     },
     {
       "id": "ea:publication:model-context-protocol-and-tool-using-ai-systems",
@@ -28,20 +28,20 @@
       "confidence": "published"
     },
     {
+      "id": "ea:program:vaste",
+      "type": "program",
+      "title": "VASTE",
+      "route": "/programs/vaste/",
+      "status": "development",
+      "confidence": "published"
+    },
+    {
       "id": "ea:publication:prompt-injection-and-trust-boundaries-in-ai-knowledge-systems",
       "type": "publication",
       "title": "Prompt Injection and Trust Boundaries in AI Knowledge Systems",
       "route": "/publications/prompt-injection-and-trust-boundaries-in-ai-knowledge-systems/",
       "status": "active",
       "confidence": "published"
-    },
-    {
-      "id": "ea:technology:model-context-protocol",
-      "type": "technology",
-      "title": "Model Context Protocol",
-      "route": "/knowledge/technologies/model-context-protocol/",
-      "status": "active",
-      "confidence": "canonical"
     }
   ],
   "edges": [

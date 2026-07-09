@@ -4,26 +4,26 @@
   "focus": "ea:publication:human-computer-interaction-for-creative-tools",
   "nodes": [
     {
-      "id": "ea:collection:knowledge-hub-second-wave",
-      "type": "collection",
-      "title": "Knowledge Hub Second Wave",
-      "route": "/archive/collections/knowledge-hub-second-wave/",
+      "id": "ea:publication:human-computer-interaction-for-creative-tools",
+      "type": "publication",
+      "title": "Human Computer Interaction for Creative Tools",
+      "route": "/publications/human-computer-interaction-for-creative-tools/",
       "status": "active",
       "confidence": "published"
-    },
-    {
-      "id": "ea:concept:augmented-intelligence",
-      "type": "concept",
-      "title": "Augmented Intelligence",
-      "route": "/knowledge/concepts/augmented-intelligence/",
-      "status": "active",
-      "confidence": "canonical"
     },
     {
       "id": "ea:concept:human-computer-interaction",
       "type": "concept",
       "title": "Human Computer Interaction",
       "route": "/knowledge/concepts/human-computer-interaction/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:concept:augmented-intelligence",
+      "type": "concept",
+      "title": "Augmented Intelligence",
+      "route": "/knowledge/concepts/augmented-intelligence/",
       "status": "active",
       "confidence": "canonical"
     },
@@ -44,10 +44,10 @@
       "confidence": "published"
     },
     {
-      "id": "ea:publication:human-computer-interaction-for-creative-tools",
-      "type": "publication",
-      "title": "Human Computer Interaction for Creative Tools",
-      "route": "/publications/human-computer-interaction-for-creative-tools/",
+      "id": "ea:collection:knowledge-hub-second-wave",
+      "type": "collection",
+      "title": "Knowledge Hub Second Wave",
+      "route": "/archive/collections/knowledge-hub-second-wave/",
       "status": "active",
       "confidence": "published"
     }

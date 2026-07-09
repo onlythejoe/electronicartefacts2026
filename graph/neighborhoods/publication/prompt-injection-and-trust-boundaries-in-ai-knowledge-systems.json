@@ -4,10 +4,10 @@
   "focus": "ea:publication:prompt-injection-and-trust-boundaries-in-ai-knowledge-systems",
   "nodes": [
     {
-      "id": "ea:collection:knowledge-hub-fourth-wave",
-      "type": "collection",
-      "title": "Knowledge Hub Fourth Wave",
-      "route": "/archive/collections/knowledge-hub-fourth-wave/",
+      "id": "ea:publication:prompt-injection-and-trust-boundaries-in-ai-knowledge-systems",
+      "type": "publication",
+      "title": "Prompt Injection and Trust Boundaries in AI Knowledge Systems",
+      "route": "/publications/prompt-injection-and-trust-boundaries-in-ai-knowledge-systems/",
       "status": "active",
       "confidence": "published"
     },
@@ -36,20 +36,20 @@
       "confidence": "canonical"
     },
     {
-      "id": "ea:publication:prompt-injection-and-trust-boundaries-in-ai-knowledge-systems",
-      "type": "publication",
-      "title": "Prompt Injection and Trust Boundaries in AI Knowledge Systems",
-      "route": "/publications/prompt-injection-and-trust-boundaries-in-ai-knowledge-systems/",
-      "status": "active",
-      "confidence": "published"
-    },
-    {
       "id": "ea:technology:model-context-protocol",
       "type": "technology",
       "title": "Model Context Protocol",
       "route": "/knowledge/technologies/model-context-protocol/",
       "status": "active",
       "confidence": "canonical"
+    },
+    {
+      "id": "ea:collection:knowledge-hub-fourth-wave",
+      "type": "collection",
+      "title": "Knowledge Hub Fourth Wave",
+      "route": "/archive/collections/knowledge-hub-fourth-wave/",
+      "status": "active",
+      "confidence": "published"
     }
   ],
   "edges": [

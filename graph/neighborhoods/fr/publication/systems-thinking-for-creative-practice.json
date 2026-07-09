@@ -1,0 +1,102 @@
+{
+  "id": "local:ea:publication:systems-thinking-for-creative-practice-fr",
+  "kind": "local",
+  "focus": "ea:publication:systems-thinking-for-creative-practice-fr",
+  "nodes": [
+    {
+      "id": "ea:publication:systems-thinking-for-creative-practice-fr",
+      "type": "publication",
+      "title": "Pensée systémique pour la pratique créative",
+      "route": "/fr/publications/systems-thinking-for-creative-practice/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:concept:systems-thinking-fr",
+      "type": "concept",
+      "title": "Pensée systémique",
+      "route": "/fr/knowledge/concepts/systems-thinking/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:concept:cybernetic-feedback-fr",
+      "type": "concept",
+      "title": "Rétroaction cybernétique",
+      "route": "/fr/knowledge/concepts/cybernetic-feedback/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:concept:generative-system-fr",
+      "type": "concept",
+      "title": "Système génératif",
+      "route": "/fr/knowledge/concepts/generative-system/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:program:vaste-fr",
+      "type": "program",
+      "title": "VASTE",
+      "route": "/fr/programs/vaste/",
+      "status": "development",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:collection:knowledge-hub-third-wave-fr",
+      "type": "collection",
+      "title": "Hub de connaissance, troisième vague",
+      "route": "/fr/archive/collections/knowledge-hub-third-wave/",
+      "status": "active",
+      "confidence": "published"
+    }
+  ],
+  "edges": [
+    {
+      "id": "ear:systems-thinking-article-documents-systems-thinking",
+      "source": "ea:publication:systems-thinking-for-creative-practice-fr",
+      "target": "ea:concept:systems-thinking-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Systems Thinking for Creative Practice documents systems thinking for creative and technical work.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:systems-thinking-article-documents-cybernetic-feedback",
+      "source": "ea:publication:systems-thinking-for-creative-practice-fr",
+      "target": "ea:concept:cybernetic-feedback-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Systems Thinking for Creative Practice connects system behavior to cybernetic feedback.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:systems-thinking-article-documents-generative-system",
+      "source": "ea:publication:systems-thinking-for-creative-practice-fr",
+      "target": "ea:concept:generative-system-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Systems Thinking for Creative Practice explains constraints and emergence in generative systems.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:systems-thinking-article-documents-vaste",
+      "source": "ea:publication:systems-thinking-for-creative-practice-fr",
+      "target": "ea:program:vaste-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Systems Thinking for Creative Practice uses VASTE as an applied runtime-systems context.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:knowledge-hub-third-wave-has-systems-thinking-article",
+      "source": "ea:collection:knowledge-hub-third-wave-fr",
+      "target": "ea:publication:systems-thinking-for-creative-practice-fr",
+      "predicate": "hasPart",
+      "label": "Has part",
+      "statement": "Knowledge Hub Third Wave includes Systems Thinking for Creative Practice.",
+      "confidence": "published"
+    }
+  ]
+}

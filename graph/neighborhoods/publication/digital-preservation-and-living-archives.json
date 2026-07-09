@@ -4,10 +4,10 @@
   "focus": "ea:publication:digital-preservation-and-living-archives",
   "nodes": [
     {
-      "id": "ea:collection:knowledge-hub-foundations",
-      "type": "collection",
-      "title": "Knowledge Hub Foundations",
-      "route": "/archive/collections/knowledge-hub-foundations/",
+      "id": "ea:publication:digital-preservation-and-living-archives",
+      "type": "publication",
+      "title": "Digital Preservation and Living Archives",
+      "route": "/publications/digital-preservation-and-living-archives/",
       "status": "active",
       "confidence": "published"
     },
@@ -44,10 +44,10 @@
       "confidence": "observed"
     },
     {
-      "id": "ea:publication:digital-preservation-and-living-archives",
-      "type": "publication",
-      "title": "Digital Preservation and Living Archives",
-      "route": "/publications/digital-preservation-and-living-archives/",
+      "id": "ea:collection:knowledge-hub-foundations",
+      "type": "collection",
+      "title": "Knowledge Hub Foundations",
+      "route": "/archive/collections/knowledge-hub-foundations/",
       "status": "active",
       "confidence": "published"
     }

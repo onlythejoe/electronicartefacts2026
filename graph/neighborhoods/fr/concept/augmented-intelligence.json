@@ -1,0 +1,85 @@
+{
+  "id": "local:ea:concept:augmented-intelligence-fr",
+  "kind": "local",
+  "focus": "ea:concept:augmented-intelligence-fr",
+  "nodes": [
+    {
+      "id": "ea:concept:augmented-intelligence-fr",
+      "type": "concept",
+      "title": "Intelligence augmentée",
+      "route": "/fr/knowledge/concepts/augmented-intelligence/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:publication:responsible-ai-governance-for-creative-and-cultural-systems-fr",
+      "type": "publication",
+      "title": "Gouvernance responsable de l'IA pour les systèmes créatifs et culturels",
+      "route": "/fr/publications/responsible-ai-governance-for-creative-and-cultural-systems/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:hypertext-and-augmented-knowledge-systems-fr",
+      "type": "publication",
+      "title": "Hypertexte et systèmes de connaissance augmentée",
+      "route": "/fr/publications/hypertext-and-augmented-knowledge-systems/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:human-computer-interaction-for-creative-tools-fr",
+      "type": "publication",
+      "title": "Interaction humain-machine pour les outils créatifs",
+      "route": "/fr/publications/human-computer-interaction-for-creative-tools/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:generative-ai-latent-space-and-creative-workflows-fr",
+      "type": "publication",
+      "title": "IA générative, espace latent et workflows créatifs",
+      "route": "/fr/publications/generative-ai-latent-space-and-creative-workflows/",
+      "status": "active",
+      "confidence": "published"
+    }
+  ],
+  "edges": [
+    {
+      "id": "ear:responsible-ai-governance-article-documents-augmented-intelligence",
+      "source": "ea:publication:responsible-ai-governance-for-creative-and-cultural-systems-fr",
+      "target": "ea:concept:augmented-intelligence-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Responsible AI Governance for Creative and Cultural Systems frames responsible AI as augmented intelligence rather than unchecked replacement.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:hypertext-article-documents-augmented-intelligence",
+      "source": "ea:publication:hypertext-and-augmented-knowledge-systems-fr",
+      "target": "ea:concept:augmented-intelligence-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Hypertext and Augmented Knowledge Systems connects hypertext to augmented intelligence and human knowledge work.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:hci-article-documents-augmented-intelligence",
+      "source": "ea:publication:human-computer-interaction-for-creative-tools-fr",
+      "target": "ea:concept:augmented-intelligence-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Human Computer Interaction for Creative Tools connects interface design to augmented intelligence.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:generative-ai-article-documents-augmented-intelligence",
+      "source": "ea:publication:generative-ai-latent-space-and-creative-workflows-fr",
+      "target": "ea:concept:augmented-intelligence-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Generative AI, Latent Space and Creative Workflows connects generative AI to augmented intelligence.",
+      "confidence": "published"
+    }
+  ]
+}

@@ -1,0 +1,170 @@
+{
+  "id": "local:ea:collection:knowledge-hub-fourth-wave-fr",
+  "kind": "local",
+  "focus": "ea:collection:knowledge-hub-fourth-wave-fr",
+  "nodes": [
+    {
+      "id": "ea:collection:knowledge-hub-fourth-wave-fr",
+      "type": "collection",
+      "title": "Hub de connaissance, quatrième vague",
+      "route": "/fr/archive/collections/knowledge-hub-fourth-wave/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:model-context-protocol-and-tool-using-ai-systems-fr",
+      "type": "publication",
+      "title": "Model Context Protocol et systèmes d'IA utilisant des outils",
+      "route": "/fr/publications/model-context-protocol-and-tool-using-ai-systems/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:c2pa-content-credentials-and-generative-media-provenance-fr",
+      "type": "publication",
+      "title": "C2PA, Content Credentials et provenance des médias génératifs",
+      "route": "/fr/publications/c2pa-content-credentials-and-generative-media-provenance/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:webnn-and-local-ai-in-the-browser-fr",
+      "type": "publication",
+      "title": "WebNN et IA locale dans le navigateur",
+      "route": "/fr/publications/webnn-and-local-ai-in-the-browser/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:iiif-and-compound-cultural-objects-fr",
+      "type": "publication",
+      "title": "IIIF et objets culturels composés",
+      "route": "/fr/publications/iiif-and-compound-cultural-objects/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:observability-for-ai-agents-and-tool-calling-systems-fr",
+      "type": "publication",
+      "title": "Observabilité des agents d'IA et des systèmes d'appel d'outils",
+      "route": "/fr/publications/observability-for-ai-agents-and-tool-calling-systems/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:ai-search-structured-content-and-knowledge-graph-seo-fr",
+      "type": "publication",
+      "title": "Recherche IA, contenu structuré et SEO par graphe de connaissances",
+      "route": "/fr/publications/ai-search-structured-content-and-knowledge-graph-seo/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:responsible-ai-governance-for-creative-and-cultural-systems-fr",
+      "type": "publication",
+      "title": "Gouvernance responsable de l'IA pour les systèmes créatifs et culturels",
+      "route": "/fr/publications/responsible-ai-governance-for-creative-and-cultural-systems/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:prompt-injection-and-trust-boundaries-in-ai-knowledge-systems-fr",
+      "type": "publication",
+      "title": "Injection de prompt et frontières de confiance dans les systèmes de connaissance IA",
+      "route": "/fr/publications/prompt-injection-and-trust-boundaries-in-ai-knowledge-systems/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:verifiable-credentials-for-cultural-archives-and-creator-identity-fr",
+      "type": "publication",
+      "title": "Identifiants vérifiables pour les archives culturelles et l’identité des créateurs",
+      "route": "/fr/publications/verifiable-credentials-for-cultural-archives-and-creator-identity/",
+      "status": "active",
+      "confidence": "published"
+    }
+  ],
+  "edges": [
+    {
+      "id": "ear:knowledge-hub-fourth-wave-has-mcp-article",
+      "source": "ea:publication:model-context-protocol-and-tool-using-ai-systems-fr",
+      "target": "ea:collection:knowledge-hub-fourth-wave-fr",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Model Context Protocol and Tool-Using AI Systems is part of the fourth Knowledge Hub wave.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:knowledge-hub-fourth-wave-has-c2pa-article",
+      "source": "ea:publication:c2pa-content-credentials-and-generative-media-provenance-fr",
+      "target": "ea:collection:knowledge-hub-fourth-wave-fr",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "C2PA Content Credentials and Generative Media Provenance is part of the fourth Knowledge Hub wave.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:knowledge-hub-fourth-wave-has-webnn-article",
+      "source": "ea:publication:webnn-and-local-ai-in-the-browser-fr",
+      "target": "ea:collection:knowledge-hub-fourth-wave-fr",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "WebNN and Local AI in the Browser is part of the fourth Knowledge Hub wave.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:knowledge-hub-fourth-wave-has-iiif-article",
+      "source": "ea:publication:iiif-and-compound-cultural-objects-fr",
+      "target": "ea:collection:knowledge-hub-fourth-wave-fr",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "IIIF and Compound Cultural Objects is part of the fourth Knowledge Hub wave.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:knowledge-hub-fourth-wave-has-observability-article",
+      "source": "ea:publication:observability-for-ai-agents-and-tool-calling-systems-fr",
+      "target": "ea:collection:knowledge-hub-fourth-wave-fr",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Observability for AI Agents and Tool-Calling Systems is part of the fourth Knowledge Hub wave.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:knowledge-hub-fourth-wave-has-ai-search-seo-article",
+      "source": "ea:publication:ai-search-structured-content-and-knowledge-graph-seo-fr",
+      "target": "ea:collection:knowledge-hub-fourth-wave-fr",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "AI Search, Structured Content and Knowledge Graph SEO is part of the fourth Knowledge Hub wave.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:knowledge-hub-fourth-wave-has-responsible-ai-governance-article",
+      "source": "ea:publication:responsible-ai-governance-for-creative-and-cultural-systems-fr",
+      "target": "ea:collection:knowledge-hub-fourth-wave-fr",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Responsible AI Governance for Creative and Cultural Systems is part of the fourth Knowledge Hub wave.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:knowledge-hub-fourth-wave-has-prompt-injection-article",
+      "source": "ea:publication:prompt-injection-and-trust-boundaries-in-ai-knowledge-systems-fr",
+      "target": "ea:collection:knowledge-hub-fourth-wave-fr",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Prompt Injection and Trust Boundaries in AI Knowledge Systems is part of the fourth Knowledge Hub wave.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:knowledge-hub-fourth-wave-has-verifiable-credentials-article",
+      "source": "ea:publication:verifiable-credentials-for-cultural-archives-and-creator-identity-fr",
+      "target": "ea:collection:knowledge-hub-fourth-wave-fr",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Verifiable Credentials for Cultural Archives and Creator Identity is part of the fourth Knowledge Hub wave.",
+      "confidence": "published"
+    }
+  ]
+}

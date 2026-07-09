@@ -1,0 +1,85 @@
+{
+  "id": "local:ea:concept:event-driven-architecture-fr",
+  "kind": "local",
+  "focus": "ea:concept:event-driven-architecture-fr",
+  "nodes": [
+    {
+      "id": "ea:concept:event-driven-architecture-fr",
+      "type": "concept",
+      "title": "Architecture événementielle",
+      "route": "/fr/knowledge/concepts/event-driven-architecture/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:publication:event-driven-architecture-and-event-streams-fr",
+      "type": "publication",
+      "title": "Architecture événementielle et flux d'événements",
+      "route": "/fr/publications/event-driven-architecture-and-event-streams/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:redis-streams-for-orchestration-fr",
+      "type": "publication",
+      "title": "Redis Streams pour l’orchestration",
+      "route": "/fr/publications/redis-streams-for-orchestration/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:microservices-modular-monoliths-and-system-boundaries-fr",
+      "type": "publication",
+      "title": "Microservices, monolithes modulaires et frontières de système",
+      "route": "/fr/publications/microservices-modular-monoliths-and-system-boundaries/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:program:vaste-fr",
+      "type": "program",
+      "title": "VASTE",
+      "route": "/fr/programs/vaste/",
+      "status": "development",
+      "confidence": "published"
+    }
+  ],
+  "edges": [
+    {
+      "id": "ear:event-architecture-article-documents-event-driven-architecture",
+      "source": "ea:publication:event-driven-architecture-and-event-streams-fr",
+      "target": "ea:concept:event-driven-architecture-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Event-Driven Architecture and Event Streams documents event-driven system design.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:redis-streams-article-documents-event-driven-architecture",
+      "source": "ea:publication:redis-streams-for-orchestration-fr",
+      "target": "ea:concept:event-driven-architecture-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Redis Streams for Orchestration places Redis consumer groups within event-driven architecture.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:microservices-article-documents-event-driven-architecture",
+      "source": "ea:publication:microservices-modular-monoliths-and-system-boundaries-fr",
+      "target": "ea:concept:event-driven-architecture-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Microservices, Modular Monoliths and System Boundaries explains events as one service communication pattern.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:vaste-applies-event-driven-architecture",
+      "source": "ea:program:vaste-fr",
+      "target": "ea:concept:event-driven-architecture-fr",
+      "predicate": "appliesConcept",
+      "label": "Applies concept",
+      "statement": "VASTE applies event-driven architecture through its event propagation layer.",
+      "confidence": "observed"
+    }
+  ]
+}

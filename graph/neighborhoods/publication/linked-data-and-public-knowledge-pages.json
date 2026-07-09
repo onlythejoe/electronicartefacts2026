@@ -4,20 +4,12 @@
   "focus": "ea:publication:linked-data-and-public-knowledge-pages",
   "nodes": [
     {
-      "id": "ea:collection:knowledge-hub-foundations",
-      "type": "collection",
-      "title": "Knowledge Hub Foundations",
-      "route": "/archive/collections/knowledge-hub-foundations/",
+      "id": "ea:publication:linked-data-and-public-knowledge-pages",
+      "type": "publication",
+      "title": "Linked Data and Public Knowledge Pages",
+      "route": "/publications/linked-data-and-public-knowledge-pages/",
       "status": "active",
       "confidence": "published"
-    },
-    {
-      "id": "ea:concept:entity-identity",
-      "type": "concept",
-      "title": "Entity Identity",
-      "route": "/knowledge/concepts/entity-identity/",
-      "status": "active",
-      "confidence": "canonical"
     },
     {
       "id": "ea:concept:linked-data",
@@ -28,12 +20,12 @@
       "confidence": "validated"
     },
     {
-      "id": "ea:publication:linked-data-and-public-knowledge-pages",
-      "type": "publication",
-      "title": "Linked Data and Public Knowledge Pages",
-      "route": "/publications/linked-data-and-public-knowledge-pages/",
+      "id": "ea:concept:entity-identity",
+      "type": "concept",
+      "title": "Entity Identity",
+      "route": "/knowledge/concepts/entity-identity/",
       "status": "active",
-      "confidence": "published"
+      "confidence": "canonical"
     },
     {
       "id": "ea:technology:json-ld",
@@ -48,6 +40,14 @@
       "type": "technology",
       "title": "RDF",
       "route": "/knowledge/technologies/rdf/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:collection:knowledge-hub-foundations",
+      "type": "collection",
+      "title": "Knowledge Hub Foundations",
+      "route": "/archive/collections/knowledge-hub-foundations/",
       "status": "active",
       "confidence": "published"
     }

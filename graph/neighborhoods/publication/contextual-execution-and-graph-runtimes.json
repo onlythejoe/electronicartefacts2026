@@ -4,10 +4,10 @@
   "focus": "ea:publication:contextual-execution-and-graph-runtimes",
   "nodes": [
     {
-      "id": "ea:collection:knowledge-hub-foundations",
-      "type": "collection",
-      "title": "Knowledge Hub Foundations",
-      "route": "/archive/collections/knowledge-hub-foundations/",
+      "id": "ea:publication:contextual-execution-and-graph-runtimes",
+      "type": "publication",
+      "title": "Contextual Execution and Graph Runtimes",
+      "route": "/publications/contextual-execution-and-graph-runtimes/",
       "status": "active",
       "confidence": "published"
     },
@@ -28,6 +28,14 @@
       "confidence": "canonical"
     },
     {
+      "id": "ea:researchField:runtime-theory",
+      "type": "researchField",
+      "title": "Runtime Theory",
+      "route": "/research/fields/runtime-theory/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
       "id": "ea:program:vaste",
       "type": "program",
       "title": "VASTE",
@@ -36,20 +44,12 @@
       "confidence": "published"
     },
     {
-      "id": "ea:publication:contextual-execution-and-graph-runtimes",
-      "type": "publication",
-      "title": "Contextual Execution and Graph Runtimes",
-      "route": "/publications/contextual-execution-and-graph-runtimes/",
+      "id": "ea:collection:knowledge-hub-foundations",
+      "type": "collection",
+      "title": "Knowledge Hub Foundations",
+      "route": "/archive/collections/knowledge-hub-foundations/",
       "status": "active",
       "confidence": "published"
-    },
-    {
-      "id": "ea:researchField:runtime-theory",
-      "type": "researchField",
-      "title": "Runtime Theory",
-      "route": "/research/fields/runtime-theory/",
-      "status": "active",
-      "confidence": "validated"
     }
   ],
   "edges": [

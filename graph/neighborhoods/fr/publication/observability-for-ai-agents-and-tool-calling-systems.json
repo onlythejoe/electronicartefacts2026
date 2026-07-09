@@ -1,0 +1,102 @@
+{
+  "id": "local:ea:publication:observability-for-ai-agents-and-tool-calling-systems-fr",
+  "kind": "local",
+  "focus": "ea:publication:observability-for-ai-agents-and-tool-calling-systems-fr",
+  "nodes": [
+    {
+      "id": "ea:publication:observability-for-ai-agents-and-tool-calling-systems-fr",
+      "type": "publication",
+      "title": "Observabilité des agents d'IA et des systèmes d'appel d'outils",
+      "route": "/fr/publications/observability-for-ai-agents-and-tool-calling-systems/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:technology:opentelemetry-fr",
+      "type": "technology",
+      "title": "OpenTelemetry",
+      "route": "/fr/knowledge/technologies/opentelemetry/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:concept:ai-agent-fr",
+      "type": "concept",
+      "title": "Agent d'IA",
+      "route": "/fr/knowledge/concepts/ai-agent/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:technology:model-context-protocol-fr",
+      "type": "technology",
+      "title": "Model Context Protocol",
+      "route": "/fr/knowledge/technologies/model-context-protocol/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:concept:contextual-execution-fr",
+      "type": "concept",
+      "title": "Exécution contextuelle",
+      "route": "/fr/knowledge/concepts/contextual-execution/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:collection:knowledge-hub-fourth-wave-fr",
+      "type": "collection",
+      "title": "Hub de connaissance, quatrième vague",
+      "route": "/fr/archive/collections/knowledge-hub-fourth-wave/",
+      "status": "active",
+      "confidence": "published"
+    }
+  ],
+  "edges": [
+    {
+      "id": "ear:observability-article-documents-opentelemetry",
+      "source": "ea:publication:observability-for-ai-agents-and-tool-calling-systems-fr",
+      "target": "ea:technology:opentelemetry-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Observability for AI Agents and Tool-Calling Systems documents OpenTelemetry as telemetry infrastructure.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:observability-article-documents-ai-agent",
+      "source": "ea:publication:observability-for-ai-agents-and-tool-calling-systems-fr",
+      "target": "ea:concept:ai-agent-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Observability for AI Agents and Tool-Calling Systems explains why agents need traceable model and tool behavior.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:observability-article-uses-mcp",
+      "source": "ea:publication:observability-for-ai-agents-and-tool-calling-systems-fr",
+      "target": "ea:technology:model-context-protocol-fr",
+      "predicate": "usesTechnology",
+      "label": "Uses technology",
+      "statement": "Observability for AI Agents and Tool-Calling Systems uses MCP as the reference capability surface for tool telemetry.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:observability-article-documents-contextual-execution",
+      "source": "ea:publication:observability-for-ai-agents-and-tool-calling-systems-fr",
+      "target": "ea:concept:contextual-execution-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Observability for AI Agents and Tool-Calling Systems ties telemetry to context-aware permissions and runtime accountability.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:knowledge-hub-fourth-wave-has-observability-article",
+      "source": "ea:publication:observability-for-ai-agents-and-tool-calling-systems-fr",
+      "target": "ea:collection:knowledge-hub-fourth-wave-fr",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Observability for AI Agents and Tool-Calling Systems is part of the fourth Knowledge Hub wave.",
+      "confidence": "published"
+    }
+  ]
+}

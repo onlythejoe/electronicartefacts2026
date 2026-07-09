@@ -1,0 +1,51 @@
+{
+  "id": "local:ea:technology:opentelemetry-fr",
+  "kind": "local",
+  "focus": "ea:technology:opentelemetry-fr",
+  "nodes": [
+    {
+      "id": "ea:technology:opentelemetry-fr",
+      "type": "technology",
+      "title": "OpenTelemetry",
+      "route": "/fr/knowledge/technologies/opentelemetry/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:publication:observability-for-ai-agents-and-tool-calling-systems-fr",
+      "type": "publication",
+      "title": "Observabilité des agents d'IA et des systèmes d'appel d'outils",
+      "route": "/fr/publications/observability-for-ai-agents-and-tool-calling-systems/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:program:vaste-fr",
+      "type": "program",
+      "title": "VASTE",
+      "route": "/fr/programs/vaste/",
+      "status": "development",
+      "confidence": "published"
+    }
+  ],
+  "edges": [
+    {
+      "id": "ear:observability-article-documents-opentelemetry",
+      "source": "ea:publication:observability-for-ai-agents-and-tool-calling-systems-fr",
+      "target": "ea:technology:opentelemetry-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Observability for AI Agents and Tool-Calling Systems documents OpenTelemetry as telemetry infrastructure.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:vaste-integrates-with-opentelemetry",
+      "source": "ea:program:vaste-fr",
+      "target": "ea:technology:opentelemetry-fr",
+      "predicate": "integratesWith",
+      "label": "Integrates with",
+      "statement": "VASTE can integrate with OpenTelemetry to observe graph-runtime events, tool calls and projection behavior.",
+      "confidence": "observed"
+    }
+  ]
+}

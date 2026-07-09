@@ -4,20 +4,20 @@
   "focus": "ea:technology:web-audio-api",
   "nodes": [
     {
-      "id": "ea:publication:web-audio-and-browser-based-sound-systems",
-      "type": "publication",
-      "title": "Web Audio and Browser-Based Sound Systems",
-      "route": "/publications/web-audio-and-browser-based-sound-systems/",
-      "status": "active",
-      "confidence": "published"
-    },
-    {
       "id": "ea:technology:web-audio-api",
       "type": "technology",
       "title": "Web Audio API",
       "route": "/knowledge/technologies/web-audio-api/",
       "status": "active",
       "confidence": "canonical"
+    },
+    {
+      "id": "ea:publication:web-audio-and-browser-based-sound-systems",
+      "type": "publication",
+      "title": "Web Audio and Browser-Based Sound Systems",
+      "route": "/publications/web-audio-and-browser-based-sound-systems/",
+      "status": "active",
+      "confidence": "published"
     }
   ],
   "edges": [

@@ -1,0 +1,119 @@
+{
+  "id": "local:ea:publication:event-driven-architecture-and-event-streams-fr",
+  "kind": "local",
+  "focus": "ea:publication:event-driven-architecture-and-event-streams-fr",
+  "nodes": [
+    {
+      "id": "ea:publication:event-driven-architecture-and-event-streams-fr",
+      "type": "publication",
+      "title": "Architecture événementielle et flux d'événements",
+      "route": "/fr/publications/event-driven-architecture-and-event-streams/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:concept:event-driven-architecture-fr",
+      "type": "concept",
+      "title": "Architecture événementielle",
+      "route": "/fr/knowledge/concepts/event-driven-architecture/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:technology:cloudevents-fr",
+      "type": "technology",
+      "title": "CloudEvents",
+      "route": "/fr/knowledge/technologies/cloudevents/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:concept:contextual-execution-fr",
+      "type": "concept",
+      "title": "Exécution contextuelle",
+      "route": "/fr/knowledge/concepts/contextual-execution/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:concept:graph-runtime-fr",
+      "type": "concept",
+      "title": "Runtime de graphe",
+      "route": "/fr/knowledge/concepts/graph-runtime/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:program:vaste-fr",
+      "type": "program",
+      "title": "VASTE",
+      "route": "/fr/programs/vaste/",
+      "status": "development",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:collection:knowledge-hub-third-wave-fr",
+      "type": "collection",
+      "title": "Hub de connaissance, troisième vague",
+      "route": "/fr/archive/collections/knowledge-hub-third-wave/",
+      "status": "active",
+      "confidence": "published"
+    }
+  ],
+  "edges": [
+    {
+      "id": "ear:event-architecture-article-documents-event-driven-architecture",
+      "source": "ea:publication:event-driven-architecture-and-event-streams-fr",
+      "target": "ea:concept:event-driven-architecture-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Event-Driven Architecture and Event Streams documents event-driven system design.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:event-architecture-article-uses-cloudevents",
+      "source": "ea:publication:event-driven-architecture-and-event-streams-fr",
+      "target": "ea:technology:cloudevents-fr",
+      "predicate": "usesTechnology",
+      "label": "Uses technology",
+      "statement": "Event-Driven Architecture and Event Streams uses CloudEvents as an interoperable event-envelope reference.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:event-architecture-article-documents-contextual-execution",
+      "source": "ea:publication:event-driven-architecture-and-event-streams-fr",
+      "target": "ea:concept:contextual-execution-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Event-Driven Architecture and Event Streams connects event propagation to contextual execution.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:event-architecture-article-documents-graph-runtime",
+      "source": "ea:publication:event-driven-architecture-and-event-streams-fr",
+      "target": "ea:concept:graph-runtime-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Event-Driven Architecture and Event Streams explains event flow inside graph runtimes.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:event-architecture-article-documents-vaste",
+      "source": "ea:publication:event-driven-architecture-and-event-streams-fr",
+      "target": "ea:program:vaste-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Event-Driven Architecture and Event Streams uses VASTE as an applied event-propagation context.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:knowledge-hub-third-wave-has-event-architecture-article",
+      "source": "ea:collection:knowledge-hub-third-wave-fr",
+      "target": "ea:publication:event-driven-architecture-and-event-streams-fr",
+      "predicate": "hasPart",
+      "label": "Has part",
+      "statement": "Knowledge Hub Third Wave includes Event-Driven Architecture and Event Streams.",
+      "confidence": "published"
+    }
+  ]
+}

@@ -4,10 +4,10 @@
   "focus": "ea:publication:creative-coding-pedagogy-from-logo-to-p5js",
   "nodes": [
     {
-      "id": "ea:collection:knowledge-hub-second-wave",
-      "type": "collection",
-      "title": "Knowledge Hub Second Wave",
-      "route": "/archive/collections/knowledge-hub-second-wave/",
+      "id": "ea:publication:creative-coding-pedagogy-from-logo-to-p5js",
+      "type": "publication",
+      "title": "Creative Coding Pedagogy from Logo to p5.js",
+      "route": "/publications/creative-coding-pedagogy-from-logo-to-p5js/",
       "status": "active",
       "confidence": "published"
     },
@@ -16,14 +16,6 @@
       "type": "concept",
       "title": "Creative Coding",
       "route": "/knowledge/concepts/creative-coding/",
-      "status": "active",
-      "confidence": "validated"
-    },
-    {
-      "id": "ea:concept:generative-system",
-      "type": "concept",
-      "title": "Generative System",
-      "route": "/knowledge/concepts/generative-system/",
       "status": "active",
       "confidence": "validated"
     },
@@ -44,10 +36,18 @@
       "confidence": "canonical"
     },
     {
-      "id": "ea:publication:creative-coding-pedagogy-from-logo-to-p5js",
-      "type": "publication",
-      "title": "Creative Coding Pedagogy from Logo to p5.js",
-      "route": "/publications/creative-coding-pedagogy-from-logo-to-p5js/",
+      "id": "ea:concept:generative-system",
+      "type": "concept",
+      "title": "Generative System",
+      "route": "/knowledge/concepts/generative-system/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:collection:knowledge-hub-second-wave",
+      "type": "collection",
+      "title": "Knowledge Hub Second Wave",
+      "route": "/archive/collections/knowledge-hub-second-wave/",
       "status": "active",
       "confidence": "published"
     }

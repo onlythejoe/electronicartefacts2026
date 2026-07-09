@@ -1,0 +1,68 @@
+{
+  "id": "local:ea:concept:domain-operating-system-fr",
+  "kind": "local",
+  "focus": "ea:concept:domain-operating-system-fr",
+  "nodes": [
+    {
+      "id": "ea:concept:domain-operating-system-fr",
+      "type": "concept",
+      "title": "Système d'exploitation de domaine",
+      "route": "/fr/knowledge/concepts/domain-operating-system/",
+      "status": "active",
+      "confidence": "observed"
+    },
+    {
+      "id": "ea:publication:runtime-engines-and-domain-operating-systems-fr",
+      "type": "publication",
+      "title": "Moteurs d'exécution et systèmes d'exploitation de domaine",
+      "route": "/fr/publications/runtime-engines-and-domain-operating-systems/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:program:vaste-fr",
+      "type": "program",
+      "title": "VASTE",
+      "route": "/fr/programs/vaste/",
+      "status": "development",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:project:vestiges-fr",
+      "type": "project",
+      "title": "Vestiges",
+      "route": "/fr/projects/vestiges/",
+      "status": "development",
+      "confidence": "observed"
+    }
+  ],
+  "edges": [
+    {
+      "id": "ear:domain-os-article-documents-domain-operating-system",
+      "source": "ea:publication:runtime-engines-and-domain-operating-systems-fr",
+      "target": "ea:concept:domain-operating-system-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Runtime Engines and Domain Operating Systems documents the domain operating system concept.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:vaste-applies-domain-operating-system",
+      "source": "ea:program:vaste-fr",
+      "target": "ea:concept:domain-operating-system-fr",
+      "predicate": "appliesConcept",
+      "label": "Applies concept",
+      "statement": "VASTE explores domain operating system architecture for graph-shaped products.",
+      "confidence": "observed"
+    },
+    {
+      "id": "ear:vestiges-applies-domain-operating-system",
+      "source": "ea:project:vestiges-fr",
+      "target": "ea:concept:domain-operating-system-fr",
+      "predicate": "appliesConcept",
+      "label": "Applies concept",
+      "statement": "Vestiges explores a domain operating system for cultural knowledge, contribution and exchange.",
+      "confidence": "observed"
+    }
+  ]
+}

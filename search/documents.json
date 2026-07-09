@@ -1692,8 +1692,22 @@
       "Publication sémantique"
     ],
     "questions": [],
-    "relationLabels": [],
-    "relatedEntityIds": [],
+    "relationLabels": [
+      "hasPart Knowledge Hub Foundations includes Knowledge Graphs for Cultural Infrastructure as a foundation article.",
+      "hasPart Knowledge Hub Foundations includes Linked Data and Public Knowledge Pages as a foundation article.",
+      "hasPart Knowledge Hub Foundations includes Contextual Execution and Graph Runtimes as a foundation article.",
+      "hasPart Knowledge Hub Foundations includes Digital Preservation and Living Archives as a foundation article.",
+      "hasPart Knowledge Hub Foundations includes Generative Systems, Cybernetics and Creative Coding as a foundation article.",
+      "hasPart Knowledge Hub Foundations includes Signal Archaeology, Audio Memory and Machine Listening as a foundation article."
+    ],
+    "relatedEntityIds": [
+      "ea:publication:knowledge-graphs-for-cultural-infrastructure",
+      "ea:publication:linked-data-and-public-knowledge-pages",
+      "ea:publication:contextual-execution-and-graph-runtimes",
+      "ea:publication:digital-preservation-and-living-archives",
+      "ea:publication:generative-systems-cybernetics-and-creative-coding",
+      "ea:publication:signal-archaeology-audio-memory-and-machine-listening"
+    ],
     "status": "active",
     "confidence": "published",
     "modifiedAt": "2026-07-04"
@@ -1724,8 +1738,28 @@
       "infrastructure culturelle"
     ],
     "questions": [],
-    "relationLabels": [],
-    "relatedEntityIds": [],
+    "relationLabels": [
+      "memberOfCollection Model Context Protocol and Tool-Using AI Systems is part of the fourth Knowledge Hub wave.",
+      "memberOfCollection C2PA Content Credentials and Generative Media Provenance is part of the fourth Knowledge Hub wave.",
+      "memberOfCollection WebNN and Local AI in the Browser is part of the fourth Knowledge Hub wave.",
+      "memberOfCollection IIIF and Compound Cultural Objects is part of the fourth Knowledge Hub wave.",
+      "memberOfCollection Observability for AI Agents and Tool-Calling Systems is part of the fourth Knowledge Hub wave.",
+      "memberOfCollection AI Search, Structured Content and Knowledge Graph SEO is part of the fourth Knowledge Hub wave.",
+      "memberOfCollection Responsible AI Governance for Creative and Cultural Systems is part of the fourth Knowledge Hub wave.",
+      "memberOfCollection Prompt Injection and Trust Boundaries in AI Knowledge Systems is part of the fourth Knowledge Hub wave.",
+      "memberOfCollection Verifiable Credentials for Cultural Archives and Creator Identity is part of the fourth Knowledge Hub wave."
+    ],
+    "relatedEntityIds": [
+      "ea:publication:model-context-protocol-and-tool-using-ai-systems",
+      "ea:publication:c2pa-content-credentials-and-generative-media-provenance",
+      "ea:publication:webnn-and-local-ai-in-the-browser",
+      "ea:publication:iiif-and-compound-cultural-objects",
+      "ea:publication:observability-for-ai-agents-and-tool-calling-systems",
+      "ea:publication:ai-search-structured-content-and-knowledge-graph-seo",
+      "ea:publication:responsible-ai-governance-for-creative-and-cultural-systems",
+      "ea:publication:prompt-injection-and-trust-boundaries-in-ai-knowledge-systems",
+      "ea:publication:verifiable-credentials-for-cultural-archives-and-creator-identity"
+    ],
     "status": "active",
     "confidence": "published",
     "modifiedAt": "2026-07-04"
@@ -1753,8 +1787,34 @@
       "bibliothèque de recherche"
     ],
     "questions": [],
-    "relationLabels": [],
-    "relatedEntityIds": [],
+    "relationLabels": [
+      "hasPart Knowledge Hub Second Wave includes Hypertext and Augmented Knowledge Systems as a core article.",
+      "hasPart Knowledge Hub Second Wave includes Personal Knowledge Systems and Digital Gardens as a core article.",
+      "hasPart Knowledge Hub Second Wave includes Open Source as Cultural Infrastructure as a core article.",
+      "hasPart Knowledge Hub Second Wave includes Metadata, Cataloguing and Cultural Memory as a core article.",
+      "hasPart Knowledge Hub Second Wave includes Web Audio and Browser-Based Sound Systems as a core article.",
+      "hasPart Knowledge Hub Second Wave includes Creative Coding Pedagogy from Logo to p5.js as a core article.",
+      "hasPart Knowledge Hub Second Wave includes Procedural Graphics, Shaders and Visual Systems as a core article.",
+      "hasPart Knowledge Hub Second Wave includes Motion Design, Time and Interface Semantics as a core article.",
+      "hasPart Knowledge Hub Second Wave includes Typography, Reading Systems and Digital Interfaces as a core article.",
+      "hasPart Knowledge Hub Second Wave includes Human Computer Interaction for Creative Tools as a core article.",
+      "hasPart Knowledge Hub Second Wave includes Algorithmic Composition and Rule-Based Music as a core article.",
+      "hasPart Knowledge Hub Second Wave includes Generative AI, Latent Space and Creative Workflows as a core article."
+    ],
+    "relatedEntityIds": [
+      "ea:publication:hypertext-and-augmented-knowledge-systems",
+      "ea:publication:personal-knowledge-systems-and-digital-gardens",
+      "ea:publication:open-source-as-cultural-infrastructure",
+      "ea:publication:metadata-cataloguing-and-cultural-memory",
+      "ea:publication:web-audio-and-browser-based-sound-systems",
+      "ea:publication:creative-coding-pedagogy-from-logo-to-p5js",
+      "ea:publication:procedural-graphics-shaders-and-visual-systems",
+      "ea:publication:motion-design-time-and-interface-semantics",
+      "ea:publication:typography-reading-systems-and-digital-interfaces",
+      "ea:publication:human-computer-interaction-for-creative-tools",
+      "ea:publication:algorithmic-composition-and-rule-based-music",
+      "ea:publication:generative-ai-latent-space-and-creative-workflows"
+    ],
     "status": "active",
     "confidence": "published",
     "modifiedAt": "2026-07-04"
@@ -1784,8 +1844,34 @@
       "calcul sur graphe"
     ],
     "questions": [],
-    "relationLabels": [],
-    "relatedEntityIds": [],
+    "relationLabels": [
+      "hasPart Knowledge Hub Third Wave includes How Large Language Models Actually Work.",
+      "hasPart Knowledge Hub Third Wave includes AI Agents vs AI Workflows.",
+      "hasPart Knowledge Hub Third Wave includes Local and Open Source AI Systems.",
+      "hasPart Knowledge Hub Third Wave includes Retrieval-Augmented Generation and Knowledge Systems.",
+      "hasPart Knowledge Hub Third Wave includes Multimodal AI Across Text, Image, Audio and Video.",
+      "hasPart Knowledge Hub Third Wave includes Systems Thinking for Creative Practice.",
+      "hasPart Knowledge Hub Third Wave includes Ontologies, Taxonomies and Knowledge Modeling.",
+      "hasPart Knowledge Hub Third Wave includes Why Graphs Are More Powerful Than Folders.",
+      "hasPart Knowledge Hub Third Wave includes Event-Driven Architecture and Event Streams.",
+      "hasPart Knowledge Hub Third Wave includes Redis Streams for Orchestration.",
+      "hasPart Knowledge Hub Third Wave includes Microservices, Modular Monoliths and System Boundaries.",
+      "hasPart Knowledge Hub Third Wave includes Runtime Engines and Domain Operating Systems."
+    ],
+    "relatedEntityIds": [
+      "ea:publication:how-large-language-models-actually-work",
+      "ea:publication:ai-agents-vs-ai-workflows",
+      "ea:publication:local-and-open-source-ai-systems",
+      "ea:publication:retrieval-augmented-generation-and-knowledge-systems",
+      "ea:publication:multimodal-ai-across-text-image-audio-and-video",
+      "ea:publication:systems-thinking-for-creative-practice",
+      "ea:publication:ontologies-taxonomies-and-knowledge-modeling",
+      "ea:publication:why-graphs-are-more-powerful-than-folders",
+      "ea:publication:event-driven-architecture-and-event-streams",
+      "ea:publication:redis-streams-for-orchestration",
+      "ea:publication:microservices-modular-monoliths-and-system-boundaries",
+      "ea:publication:runtime-engines-and-domain-operating-systems"
+    ],
     "status": "active",
     "confidence": "published",
     "modifiedAt": "2026-07-04"
@@ -1814,8 +1900,18 @@
       "supervision humaine"
     ],
     "questions": [],
-    "relationLabels": [],
-    "relatedEntityIds": [],
+    "relationLabels": [
+      "documents Model Context Protocol and Tool-Using AI Systems explains how MCP relates to AI agents and deterministic workflows.",
+      "documents Observability for AI Agents and Tool-Calling Systems explains why agents need traceable model and tool behavior.",
+      "documents Prompt Injection and Trust Boundaries in AI Knowledge Systems documents prompt-injection risks for AI agents.",
+      "documents AI Agents vs AI Workflows documents model-directed agency and deterministic workflow boundaries."
+    ],
+    "relatedEntityIds": [
+      "ea:publication:model-context-protocol-and-tool-using-ai-systems",
+      "ea:publication:observability-for-ai-agents-and-tool-calling-systems",
+      "ea:publication:prompt-injection-and-trust-boundaries-in-ai-knowledge-systems",
+      "ea:publication:ai-agents-vs-ai-workflows"
+    ],
     "status": "active",
     "confidence": "validated",
     "modifiedAt": "2026-06-25"
@@ -1843,8 +1939,12 @@
       "Music Theory"
     ],
     "questions": [],
-    "relationLabels": [],
-    "relatedEntityIds": [],
+    "relationLabels": [
+      "documents Algorithmic Composition and Rule-Based Music documents algorithmic composition as rule-based musical practice."
+    ],
+    "relatedEntityIds": [
+      "ea:publication:algorithmic-composition-and-rule-based-music"
+    ],
     "status": "active",
     "confidence": "canonical",
     "modifiedAt": "2026-06-25"
@@ -1872,8 +1972,18 @@
       "outils créatifs"
     ],
     "questions": [],
-    "relationLabels": [],
-    "relatedEntityIds": [],
+    "relationLabels": [
+      "documents Responsible AI Governance for Creative and Cultural Systems frames responsible AI as augmented intelligence rather than unchecked replacement.",
+      "documents Hypertext and Augmented Knowledge Systems connects hypertext to augmented intelligence and human knowledge work.",
+      "documents Human Computer Interaction for Creative Tools connects interface design to augmented intelligence.",
+      "documents Generative AI, Latent Space and Creative Workflows connects generative AI to augmented intelligence."
+    ],
+    "relatedEntityIds": [
+      "ea:publication:responsible-ai-governance-for-creative-and-cultural-systems",
+      "ea:publication:hypertext-and-augmented-knowledge-systems",
+      "ea:publication:human-computer-interaction-for-creative-tools",
+      "ea:publication:generative-ai-latent-space-and-creative-workflows"
+    ],
     "status": "active",
     "confidence": "canonical",
     "modifiedAt": "2026-06-25"
@@ -1902,8 +2012,12 @@
       "supervision humaine"
     ],
     "questions": [],
-    "relationLabels": [],
-    "relatedEntityIds": [],
+    "relationLabels": [
+      "documents AI Agents vs AI Workflows distinguishes bounded agents from broader autonomous systems."
+    ],
+    "relatedEntityIds": [
+      "ea:publication:ai-agents-vs-ai-workflows"
+    ],
     "status": "active",
     "confidence": "validated",
     "modifiedAt": "2026-06-25"
@@ -1932,8 +2046,30 @@
       "Permissions"
     ],
     "questions": [],
-    "relationLabels": [],
-    "relatedEntityIds": [],
+    "relationLabels": [
+      "documents Model Context Protocol and Tool-Using AI Systems connects MCP permissions to contextual execution boundaries.",
+      "documents Observability for AI Agents and Tool-Calling Systems ties telemetry to context-aware permissions and runtime accountability.",
+      "documents Responsible AI Governance for Creative and Cultural Systems links governance controls to contextual execution and permission boundaries.",
+      "documents Prompt Injection and Trust Boundaries in AI Knowledge Systems explains why permissions should be enforced through contextual execution.",
+      "appliesConcept VASTE applies contextual execution through identity-aware graph records, relations, permissions and event propagation.",
+      "defines Runtime Theory defines the research boundary for contextual execution inside Electronic Artefacts.",
+      "documents Contextual Execution and Graph Runtimes documents contextual execution as a runtime principle.",
+      "documents AI Agents vs AI Workflows connects agent permissions to contextual execution.",
+      "documents Event-Driven Architecture and Event Streams connects event propagation to contextual execution.",
+      "documents Runtime Engines and Domain Operating Systems explains capability evaluation through contextual execution."
+    ],
+    "relatedEntityIds": [
+      "ea:publication:model-context-protocol-and-tool-using-ai-systems",
+      "ea:publication:observability-for-ai-agents-and-tool-calling-systems",
+      "ea:publication:responsible-ai-governance-for-creative-and-cultural-systems",
+      "ea:publication:prompt-injection-and-trust-boundaries-in-ai-knowledge-systems",
+      "ea:program:vaste",
+      "ea:researchField:runtime-theory",
+      "ea:publication:contextual-execution-and-graph-runtimes",
+      "ea:publication:ai-agents-vs-ai-workflows",
+      "ea:publication:event-driven-architecture-and-event-streams",
+      "ea:publication:runtime-engines-and-domain-operating-systems"
+    ],
     "status": "active",
     "confidence": "canonical",
     "modifiedAt": "2026-06-25"
@@ -1962,8 +2098,16 @@
       "Interaction"
     ],
     "questions": [],
-    "relationLabels": [],
-    "relatedEntityIds": [],
+    "relationLabels": [
+      "documents Generative Systems, Cybernetics and Creative Coding connects creative coding to generative system practice.",
+      "documents Open Source as Cultural Infrastructure connects open source to creative coding tools and pedagogy.",
+      "documents Creative Coding Pedagogy from Logo to p5.js documents creative coding as a learning practice."
+    ],
+    "relatedEntityIds": [
+      "ea:publication:generative-systems-cybernetics-and-creative-coding",
+      "ea:publication:open-source-as-cultural-infrastructure",
+      "ea:publication:creative-coding-pedagogy-from-logo-to-p5js"
+    ],
     "status": "active",
     "confidence": "validated",
     "modifiedAt": "2026-06-25"
@@ -1992,8 +2136,16 @@
       "Generative Systems"
     ],
     "questions": [],
-    "relationLabels": [],
-    "relatedEntityIds": [],
+    "relationLabels": [
+      "documents Generative Systems, Cybernetics and Creative Coding uses cybernetic feedback as a historical and technical foundation.",
+      "documents Algorithmic Composition and Rule-Based Music connects feedback loops to musical systems.",
+      "documents Systems Thinking for Creative Practice connects system behavior to cybernetic feedback."
+    ],
+    "relatedEntityIds": [
+      "ea:publication:generative-systems-cybernetics-and-creative-coding",
+      "ea:publication:algorithmic-composition-and-rule-based-music",
+      "ea:publication:systems-thinking-for-creative-practice"
+    ],
     "status": "active",
     "confidence": "validated",
     "modifiedAt": "2026-06-25"
@@ -2022,8 +2174,26 @@
       "Memory"
     ],
     "questions": [],
-    "relationLabels": [],
-    "relatedEntityIds": [],
+    "relationLabels": [
+      "documents IIIF and Compound Cultural Objects connects object presentation structure to digital preservation practice.",
+      "documents Verifiable Credentials for Cultural Archives and Creator Identity explains how credentials can support preservation events and archive trust.",
+      "appliesConcept Palimpsests applies digital preservation by treating audio, visual and research traces as a compound cultural record.",
+      "documents Digital Preservation and Living Archives documents digital preservation as long-term care for digital objects and context.",
+      "documents Signal Archaeology, Audio Memory and Machine Listening connects audio traces to digital preservation practice.",
+      "documents Personal Knowledge Systems and Digital Gardens links revision and retrieval practice to digital preservation concerns.",
+      "documents Open Source as Cultural Infrastructure connects software access and maintenance to preservation concerns.",
+      "documents Metadata, Cataloguing and Cultural Memory connects metadata to digital preservation and long-term context."
+    ],
+    "relatedEntityIds": [
+      "ea:publication:iiif-and-compound-cultural-objects",
+      "ea:publication:verifiable-credentials-for-cultural-archives-and-creator-identity",
+      "ea:project:palimpsests",
+      "ea:publication:digital-preservation-and-living-archives",
+      "ea:publication:signal-archaeology-audio-memory-and-machine-listening",
+      "ea:publication:personal-knowledge-systems-and-digital-gardens",
+      "ea:publication:open-source-as-cultural-infrastructure",
+      "ea:publication:metadata-cataloguing-and-cultural-memory"
+    ],
     "status": "active",
     "confidence": "validated",
     "modifiedAt": "2026-06-25"
@@ -2052,8 +2222,16 @@
       "Composability"
     ],
     "questions": [],
-    "relationLabels": [],
-    "relatedEntityIds": [],
+    "relationLabels": [
+      "documents Runtime Engines and Domain Operating Systems documents the domain operating system concept.",
+      "appliesConcept VASTE explores domain operating system architecture for graph-shaped products.",
+      "appliesConcept Vestiges explores a domain operating system for cultural knowledge, contribution and exchange."
+    ],
+    "relatedEntityIds": [
+      "ea:publication:runtime-engines-and-domain-operating-systems",
+      "ea:program:vaste",
+      "ea:project:vestiges"
+    ],
     "status": "active",
     "confidence": "observed",
     "modifiedAt": "2026-06-25"
@@ -2082,8 +2260,18 @@
       "graphe de connaissances"
     ],
     "questions": [],
-    "relationLabels": [],
-    "relatedEntityIds": [],
+    "relationLabels": [
+      "documents Verifiable Credentials for Cultural Archives and Creator Identity connects signed claims to durable entity identity.",
+      "documents Knowledge Graphs for Cultural Infrastructure explains why stable entity identity matters for graph publishing.",
+      "documents Linked Data and Public Knowledge Pages explains the difference between page URLs and entity identifiers.",
+      "documents Why Graphs Are More Powerful Than Folders explains why entity identity should survive path changes."
+    ],
+    "relatedEntityIds": [
+      "ea:publication:verifiable-credentials-for-cultural-archives-and-creator-identity",
+      "ea:publication:knowledge-graphs-for-cultural-infrastructure",
+      "ea:publication:linked-data-and-public-knowledge-pages",
+      "ea:publication:why-graphs-are-more-powerful-than-folders"
+    ],
     "status": "active",
     "confidence": "canonical",
     "modifiedAt": "2026-06-25"
@@ -2112,8 +2300,18 @@
       "Projections"
     ],
     "questions": [],
-    "relationLabels": [],
-    "relatedEntityIds": [],
+    "relationLabels": [
+      "documents Event-Driven Architecture and Event Streams documents event-driven system design.",
+      "documents Redis Streams for Orchestration places Redis consumer groups within event-driven architecture.",
+      "documents Microservices, Modular Monoliths and System Boundaries explains events as one service communication pattern.",
+      "appliesConcept VASTE applies event-driven architecture through its event propagation layer."
+    ],
+    "relatedEntityIds": [
+      "ea:publication:event-driven-architecture-and-event-streams",
+      "ea:publication:redis-streams-for-orchestration",
+      "ea:publication:microservices-modular-monoliths-and-system-boundaries",
+      "ea:program:vaste"
+    ],
     "status": "active",
     "confidence": "canonical",
     "modifiedAt": "2026-06-25"
@@ -2141,8 +2339,16 @@
       "Creative Workflows"
     ],
     "questions": [],
-    "relationLabels": [],
-    "relatedEntityIds": [],
+    "relationLabels": [
+      "documents Responsible AI Governance for Creative and Cultural Systems documents governance practices for generative AI use in creative systems.",
+      "documents Generative AI, Latent Space and Creative Workflows documents generative AI as a creative workflow topic.",
+      "documents How Large Language Models Actually Work situates LLMs within generative AI."
+    ],
+    "relatedEntityIds": [
+      "ea:publication:responsible-ai-governance-for-creative-and-cultural-systems",
+      "ea:publication:generative-ai-latent-space-and-creative-workflows",
+      "ea:publication:how-large-language-models-actually-work"
+    ],
     "status": "active",
     "confidence": "validated",
     "modifiedAt": "2026-06-25"
@@ -2171,8 +2377,24 @@
       "Simulation"
     ],
     "questions": [],
-    "relationLabels": [],
-    "relatedEntityIds": [],
+    "relationLabels": [
+      "appliesConcept ORETH applies generative-system thinking to experimental audio structures and pattern exploration.",
+      "documents Generative Systems, Cybernetics and Creative Coding documents generative systems through constraints, rules and selection.",
+      "documents Creative Coding Pedagogy from Logo to p5.js connects sketch-based learning to generative system design.",
+      "documents Procedural Graphics, Shaders and Visual Systems links procedural visuals to generative-system thinking.",
+      "documents Algorithmic Composition and Rule-Based Music connects rule-based music to generative systems.",
+      "documents Generative AI, Latent Space and Creative Workflows situates generative AI within the broader generative systems lineage.",
+      "documents Systems Thinking for Creative Practice explains constraints and emergence in generative systems."
+    ],
+    "relatedEntityIds": [
+      "ea:program:oreth",
+      "ea:publication:generative-systems-cybernetics-and-creative-coding",
+      "ea:publication:creative-coding-pedagogy-from-logo-to-p5js",
+      "ea:publication:procedural-graphics-shaders-and-visual-systems",
+      "ea:publication:algorithmic-composition-and-rule-based-music",
+      "ea:publication:generative-ai-latent-space-and-creative-workflows",
+      "ea:publication:systems-thinking-for-creative-practice"
+    ],
     "status": "active",
     "confidence": "validated",
     "modifiedAt": "2026-06-25"
@@ -2201,8 +2423,16 @@
       "graphe de connaissances"
     ],
     "questions": [],
-    "relationLabels": [],
-    "relatedEntityIds": [],
+    "relationLabels": [
+      "documents Why Graphs Are More Powerful Than Folders documents graph modeling for connected domains.",
+      "appliesConcept VASTE applies graph modeling through addressable entities and typed relationships.",
+      "appliesConcept Vestiges applies graph modeling to cultural knowledge and human know-how."
+    ],
+    "relatedEntityIds": [
+      "ea:publication:why-graphs-are-more-powerful-than-folders",
+      "ea:program:vaste",
+      "ea:project:vestiges"
+    ],
     "status": "active",
     "confidence": "canonical",
     "modifiedAt": "2026-06-25"
@@ -2231,8 +2461,24 @@
       "Exécution"
     ],
     "questions": [],
-    "relationLabels": [],
-    "relatedEntityIds": [],
+    "relationLabels": [
+      "documents Prompt Injection and Trust Boundaries in AI Knowledge Systems uses graph runtimes as a control layer for AI knowledge operations.",
+      "documents Contextual Execution and Graph Runtimes explains how contextual execution extends the graph-runtime concept.",
+      "documents Event-Driven Architecture and Event Streams explains event flow inside graph runtimes.",
+      "documents Runtime Engines and Domain Operating Systems connects domain runtimes to graph execution.",
+      "defines Runtime Theory supplies the research questions and boundaries used to define graph runtime within Electronic Artefacts.",
+      "appliesConcept VASTE applies the graph-runtime concept through addressable entities, typed relationships, identity, context and event execution.",
+      "appliesConcept Vestiges applies graph-runtime principles to cultural, craft and human-knowledge infrastructure."
+    ],
+    "relatedEntityIds": [
+      "ea:publication:prompt-injection-and-trust-boundaries-in-ai-knowledge-systems",
+      "ea:publication:contextual-execution-and-graph-runtimes",
+      "ea:publication:event-driven-architecture-and-event-streams",
+      "ea:publication:runtime-engines-and-domain-operating-systems",
+      "ea:researchField:runtime-theory",
+      "ea:program:vaste",
+      "ea:project:vestiges"
+    ],
     "status": "active",
     "confidence": "canonical",
     "modifiedAt": "2026-06-25"
@@ -2260,8 +2506,20 @@
       "outils créatifs"
     ],
     "questions": [],
-    "relationLabels": [],
-    "relatedEntityIds": [],
+    "relationLabels": [
+      "documents WebNN and Local AI in the Browser frames local inference as a human-computer interaction design problem.",
+      "documents Motion Design, Time and Interface Semantics links motion design to human computer interaction.",
+      "documents Typography, Reading Systems and Digital Interfaces connects typography to human computer interaction and accessibility.",
+      "documents Human Computer Interaction for Creative Tools documents HCI as a creative tool discipline.",
+      "documents Generative AI, Latent Space and Creative Workflows links AI workflows to human computer interaction and creative agency."
+    ],
+    "relatedEntityIds": [
+      "ea:publication:webnn-and-local-ai-in-the-browser",
+      "ea:publication:motion-design-time-and-interface-semantics",
+      "ea:publication:typography-reading-systems-and-digital-interfaces",
+      "ea:publication:human-computer-interaction-for-creative-tools",
+      "ea:publication:generative-ai-latent-space-and-creative-workflows"
+    ],
     "status": "active",
     "confidence": "canonical",
     "modifiedAt": "2026-06-25"
@@ -2289,8 +2547,14 @@
       "Digital Archives"
     ],
     "questions": [],
-    "relationLabels": [],
-    "relatedEntityIds": [],
+    "relationLabels": [
+      "documents Hypertext and Augmented Knowledge Systems documents hypertext as an architecture for linked public knowledge.",
+      "documents Personal Knowledge Systems and Digital Gardens uses hypertext as the linking model for public knowledge gardens."
+    ],
+    "relatedEntityIds": [
+      "ea:publication:hypertext-and-augmented-knowledge-systems",
+      "ea:publication:personal-knowledge-systems-and-digital-gardens"
+    ],
     "status": "active",
     "confidence": "canonical",
     "modifiedAt": "2026-06-25"
@@ -2318,8 +2582,12 @@
       "archives"
     ],
     "questions": [],
-    "relationLabels": [],
-    "relatedEntityIds": [],
+    "relationLabels": [
+      "documents Open Source as Cultural Infrastructure frames open collaboration as part of broader internet culture."
+    ],
+    "relatedEntityIds": [
+      "ea:publication:open-source-as-cultural-infrastructure"
+    ],
     "status": "active",
     "confidence": "validated",
     "modifiedAt": "2026-06-25"
@@ -2348,8 +2616,24 @@
       "Search"
     ],
     "questions": [],
-    "relationLabels": [],
-    "relatedEntityIds": [],
+    "relationLabels": [
+      "documents AI Search, Structured Content and Knowledge Graph SEO documents knowledge graphs as an SEO architecture for AI retrieval.",
+      "appliesConcept Vestiges applies knowledge-graph principles to culture, craft, institutions, techniques and public knowledge pages.",
+      "documents Knowledge Graphs for Cultural Infrastructure documents the knowledge-graph concept for cultural publishing.",
+      "documents Hypertext and Augmented Knowledge Systems explains how knowledge graphs strengthen linked pages with explicit relations.",
+      "documents Retrieval-Augmented Generation and Knowledge Systems explains graph-grounded retrieval.",
+      "documents Ontologies, Taxonomies and Knowledge Modeling connects semantic models to knowledge graphs.",
+      "documents Why Graphs Are More Powerful Than Folders explains knowledge graph identity and traversal."
+    ],
+    "relatedEntityIds": [
+      "ea:publication:ai-search-structured-content-and-knowledge-graph-seo",
+      "ea:project:vestiges",
+      "ea:publication:knowledge-graphs-for-cultural-infrastructure",
+      "ea:publication:hypertext-and-augmented-knowledge-systems",
+      "ea:publication:retrieval-augmented-generation-and-knowledge-systems",
+      "ea:publication:ontologies-taxonomies-and-knowledge-modeling",
+      "ea:publication:why-graphs-are-more-powerful-than-folders"
+    ],
     "status": "active",
     "confidence": "canonical",
     "modifiedAt": "2026-06-25"
@@ -2380,8 +2664,12 @@
       "modèles de langage"
     ],
     "questions": [],
-    "relationLabels": [],
-    "relatedEntityIds": [],
+    "relationLabels": [
+      "documents How Large Language Models Actually Work documents the core LLM concept."
+    ],
+    "relatedEntityIds": [
+      "ea:publication:how-large-language-models-actually-work"
+    ],
     "status": "active",
     "confidence": "canonical",
     "modifiedAt": "2026-06-25"
@@ -2410,8 +2698,16 @@
       "URI"
     ],
     "questions": [],
-    "relationLabels": [],
-    "relatedEntityIds": [],
+    "relationLabels": [
+      "documents AI Search, Structured Content and Knowledge Graph SEO explains how Linked Data supports crawlable, machine-readable public knowledge pages.",
+      "documents Linked Data and Public Knowledge Pages documents Linked Data as a publishing discipline for public knowledge pages.",
+      "documents Hypertext and Augmented Knowledge Systems links hypertext practice to Linked Data and stable identifiers."
+    ],
+    "relatedEntityIds": [
+      "ea:publication:ai-search-structured-content-and-knowledge-graph-seo",
+      "ea:publication:linked-data-and-public-knowledge-pages",
+      "ea:publication:hypertext-and-augmented-knowledge-systems"
+    ],
     "status": "active",
     "confidence": "validated",
     "modifiedAt": "2026-06-25"
@@ -2439,8 +2735,20 @@
       "Préservation"
     ],
     "questions": [],
-    "relationLabels": [],
-    "relatedEntityIds": [],
+    "relationLabels": [
+      "documents Personal Knowledge Systems and Digital Gardens connects durable note systems to metadata and publication state.",
+      "documents Metadata, Cataloguing and Cultural Memory documents metadata as a cultural memory layer.",
+      "documents Typography, Reading Systems and Digital Interfaces links reading systems to visible metadata and article structure.",
+      "documents Retrieval-Augmented Generation and Knowledge Systems treats metadata as retrieval infrastructure.",
+      "documents Ontologies, Taxonomies and Knowledge Modeling positions metadata within a broader semantic architecture."
+    ],
+    "relatedEntityIds": [
+      "ea:publication:personal-knowledge-systems-and-digital-gardens",
+      "ea:publication:metadata-cataloguing-and-cultural-memory",
+      "ea:publication:typography-reading-systems-and-digital-interfaces",
+      "ea:publication:retrieval-augmented-generation-and-knowledge-systems",
+      "ea:publication:ontologies-taxonomies-and-knowledge-modeling"
+    ],
     "status": "active",
     "confidence": "canonical",
     "modifiedAt": "2026-06-25"
@@ -2468,8 +2776,12 @@
       "Distributed Systems"
     ],
     "questions": [],
-    "relationLabels": [],
-    "relatedEntityIds": [],
+    "relationLabels": [
+      "documents Microservices, Modular Monoliths and System Boundaries documents microservice architecture and its tradeoffs."
+    ],
+    "relatedEntityIds": [
+      "ea:publication:microservices-modular-monoliths-and-system-boundaries"
+    ],
     "status": "active",
     "confidence": "validated",
     "modifiedAt": "2026-06-25"
@@ -2497,8 +2809,16 @@
       "culture visuelle"
     ],
     "questions": [],
-    "relationLabels": [],
-    "relatedEntityIds": [],
+    "relationLabels": [
+      "documents Procedural Graphics, Shaders and Visual Systems connects procedural visuals to motion design and time-based behavior.",
+      "documents Motion Design, Time and Interface Semantics documents motion design as interface semantics.",
+      "documents Human Computer Interaction for Creative Tools links feedback and state communication to motion design."
+    ],
+    "relatedEntityIds": [
+      "ea:publication:procedural-graphics-shaders-and-visual-systems",
+      "ea:publication:motion-design-time-and-interface-semantics",
+      "ea:publication:human-computer-interaction-for-creative-tools"
+    ],
     "status": "active",
     "confidence": "validated",
     "modifiedAt": "2026-06-25"
@@ -2527,8 +2847,16 @@
       "Cross-Modal Retrieval"
     ],
     "questions": [],
-    "relationLabels": [],
-    "relatedEntityIds": [],
+    "relationLabels": [
+      "documents WebNN and Local AI in the Browser links WebNN to multimodal browser interfaces and local perception tasks.",
+      "documents Multimodal AI Across Text, Image, Audio and Video documents cross-modal architectures and evaluation.",
+      "appliesConcept ORETH provides an applied context for connecting audio analysis with visual, textual and archival records."
+    ],
+    "relatedEntityIds": [
+      "ea:publication:webnn-and-local-ai-in-the-browser",
+      "ea:publication:multimodal-ai-across-text-image-audio-and-video",
+      "ea:program:oreth"
+    ],
     "status": "active",
     "confidence": "validated",
     "modifiedAt": "2026-06-25"
@@ -2557,8 +2885,14 @@
       "Controlled Vocabulary"
     ],
     "questions": [],
-    "relationLabels": [],
-    "relatedEntityIds": [],
+    "relationLabels": [
+      "documents Ontologies, Taxonomies and Knowledge Modeling documents ontology and vocabulary distinctions.",
+      "appliesConcept Vestiges applies ontology design to people, techniques, materials, institutions and cultural relations."
+    ],
+    "relatedEntityIds": [
+      "ea:publication:ontologies-taxonomies-and-knowledge-modeling",
+      "ea:project:vestiges"
+    ],
     "status": "active",
     "confidence": "canonical",
     "modifiedAt": "2026-06-25"
@@ -2586,8 +2920,16 @@
       "infrastructure"
     ],
     "questions": [],
-    "relationLabels": [],
-    "relatedEntityIds": [],
+    "relationLabels": [
+      "documents Open Source as Cultural Infrastructure documents open source as a licensing, maintenance and cultural infrastructure practice.",
+      "documents Creative Coding Pedagogy from Logo to p5.js connects creative learning to open examples and open-source communities.",
+      "documents Local and Open Source AI Systems applies open-source principles to AI infrastructure and licensing."
+    ],
+    "relatedEntityIds": [
+      "ea:publication:open-source-as-cultural-infrastructure",
+      "ea:publication:creative-coding-pedagogy-from-logo-to-p5js",
+      "ea:publication:local-and-open-source-ai-systems"
+    ],
     "status": "active",
     "confidence": "canonical",
     "modifiedAt": "2026-06-25"
@@ -2615,8 +2957,12 @@
       "quantification"
     ],
     "questions": [],
-    "relationLabels": [],
-    "relatedEntityIds": [],
+    "relationLabels": [
+      "documents Local and Open Source AI Systems documents the distinction between open-weight and open-source models."
+    ],
+    "relatedEntityIds": [
+      "ea:publication:local-and-open-source-ai-systems"
+    ],
     "status": "active",
     "confidence": "validated",
     "modifiedAt": "2026-06-25"
@@ -2644,8 +2990,12 @@
       "Research"
     ],
     "questions": [],
-    "relationLabels": [],
-    "relatedEntityIds": [],
+    "relationLabels": [
+      "documents Personal Knowledge Systems and Digital Gardens documents personal knowledge systems as a practice of capture, linking and revision."
+    ],
+    "relatedEntityIds": [
+      "ea:publication:personal-knowledge-systems-and-digital-gardens"
+    ],
     "status": "active",
     "confidence": "validated",
     "modifiedAt": "2026-06-25"
@@ -2673,8 +3023,14 @@
       "Generative Art"
     ],
     "questions": [],
-    "relationLabels": [],
-    "relatedEntityIds": [],
+    "relationLabels": [
+      "documents Creative Coding Pedagogy from Logo to p5.js links visual learning to procedural graphics.",
+      "documents Procedural Graphics, Shaders and Visual Systems documents procedural graphics as a rule-based visual practice."
+    ],
+    "relatedEntityIds": [
+      "ea:publication:creative-coding-pedagogy-from-logo-to-p5js",
+      "ea:publication:procedural-graphics-shaders-and-visual-systems"
+    ],
     "status": "active",
     "confidence": "canonical",
     "modifiedAt": "2026-06-25"
@@ -2703,8 +3059,34 @@
       "Archive"
     ],
     "questions": [],
-    "relationLabels": [],
-    "relatedEntityIds": [],
+    "relationLabels": [
+      "documents C2PA Content Credentials and Generative Media Provenance explains provenance as evidence rather than proof of truth.",
+      "documents Responsible AI Governance for Creative and Cultural Systems treats provenance as a governance requirement for AI-assisted cultural records.",
+      "documents Verifiable Credentials for Cultural Archives and Creator Identity documents verifiable credentials as one layer of provenance evidence.",
+      "documents Knowledge Graphs for Cultural Infrastructure frames provenance as a trust layer for cultural knowledge graphs.",
+      "documents Digital Preservation and Living Archives explains provenance as a central layer of living archive practice.",
+      "documents Signal Archaeology, Audio Memory and Machine Listening explains why signal interpretation needs provenance.",
+      "documents Metadata, Cataloguing and Cultural Memory explains provenance as a key part of trustworthy metadata.",
+      "documents Generative AI, Latent Space and Creative Workflows explains provenance as a requirement for responsible AI-assisted production.",
+      "documents How Large Language Models Actually Work explains why model and data provenance matter.",
+      "documents Local and Open Source AI Systems connects model deployment to provenance and reproducibility.",
+      "documents Retrieval-Augmented Generation and Knowledge Systems connects citations and source grounding to provenance.",
+      "documents Multimodal AI Across Text, Image, Audio and Video documents provenance risks across generated media."
+    ],
+    "relatedEntityIds": [
+      "ea:publication:c2pa-content-credentials-and-generative-media-provenance",
+      "ea:publication:responsible-ai-governance-for-creative-and-cultural-systems",
+      "ea:publication:verifiable-credentials-for-cultural-archives-and-creator-identity",
+      "ea:publication:knowledge-graphs-for-cultural-infrastructure",
+      "ea:publication:digital-preservation-and-living-archives",
+      "ea:publication:signal-archaeology-audio-memory-and-machine-listening",
+      "ea:publication:metadata-cataloguing-and-cultural-memory",
+      "ea:publication:generative-ai-latent-space-and-creative-workflows",
+      "ea:publication:how-large-language-models-actually-work",
+      "ea:publication:local-and-open-source-ai-systems",
+      "ea:publication:retrieval-augmented-generation-and-knowledge-systems",
+      "ea:publication:multimodal-ai-across-text-image-audio-and-video"
+    ],
     "status": "active",
     "confidence": "validated",
     "modifiedAt": "2026-06-25"
@@ -2735,8 +3117,14 @@
       "Grounding"
     ],
     "questions": [],
-    "relationLabels": [],
-    "relatedEntityIds": [],
+    "relationLabels": [
+      "documents AI Search, Structured Content and Knowledge Graph SEO connects AI search visibility to retrieval-augmented generation patterns.",
+      "documents Retrieval-Augmented Generation and Knowledge Systems documents RAG architecture end to end."
+    ],
+    "relatedEntityIds": [
+      "ea:publication:ai-search-structured-content-and-knowledge-graph-seo",
+      "ea:publication:retrieval-augmented-generation-and-knowledge-systems"
+    ],
     "status": "active",
     "confidence": "canonical",
     "modifiedAt": "2026-06-25"
@@ -2765,8 +3153,18 @@
       "Machine Listening"
     ],
     "questions": [],
-    "relationLabels": [],
-    "relatedEntityIds": [],
+    "relationLabels": [
+      "appliesConcept ORETH applies signal archaeology to audio analysis, machine listening and sonic trace interpretation.",
+      "appliesConcept Palimpsests applies signal archaeology by treating sonic residue and media traces as cultural material.",
+      "documents Signal Archaeology, Audio Memory and Machine Listening documents signal archaeology as a concept.",
+      "documents Web Audio and Browser-Based Sound Systems connects browser sound tools to signal archaeology."
+    ],
+    "relatedEntityIds": [
+      "ea:program:oreth",
+      "ea:project:palimpsests",
+      "ea:publication:signal-archaeology-audio-memory-and-machine-listening",
+      "ea:publication:web-audio-and-browser-based-sound-systems"
+    ],
     "status": "active",
     "confidence": "observed",
     "modifiedAt": "2026-06-25"
@@ -2795,8 +3193,16 @@
       "Complexity"
     ],
     "questions": [],
-    "relationLabels": [],
-    "relatedEntityIds": [],
+    "relationLabels": [
+      "documents Systems Thinking for Creative Practice documents systems thinking for creative and technical work.",
+      "documents Microservices, Modular Monoliths and System Boundaries applies systems thinking to organizational and operational cost.",
+      "appliesConcept VASTE applies systems thinking to entities, context, events and projections."
+    ],
+    "relatedEntityIds": [
+      "ea:publication:systems-thinking-for-creative-practice",
+      "ea:publication:microservices-modular-monoliths-and-system-boundaries",
+      "ea:program:vaste"
+    ],
     "status": "active",
     "confidence": "canonical",
     "modifiedAt": "2026-06-25"
@@ -2824,8 +3230,14 @@
       "accessibilité"
     ],
     "questions": [],
-    "relationLabels": [],
-    "relatedEntityIds": [],
+    "relationLabels": [
+      "documents Motion Design, Time and Interface Semantics connects motion to typography and reading behavior.",
+      "documents Typography, Reading Systems and Digital Interfaces documents typography as reading infrastructure."
+    ],
+    "relatedEntityIds": [
+      "ea:publication:motion-design-time-and-interface-semantics",
+      "ea:publication:typography-reading-systems-and-digital-interfaces"
+    ],
     "status": "active",
     "confidence": "canonical",
     "modifiedAt": "2026-06-25"
@@ -2853,8 +3265,14 @@
       "programmation créative"
     ],
     "questions": [],
-    "relationLabels": [],
-    "relatedEntityIds": [],
+    "relationLabels": [
+      "documents Web Audio and Browser-Based Sound Systems documents web audio as a browser-native sound practice.",
+      "documents Algorithmic Composition and Rule-Based Music connects rule-based music to browser sound systems."
+    ],
+    "relatedEntityIds": [
+      "ea:publication:web-audio-and-browser-based-sound-systems",
+      "ea:publication:algorithmic-composition-and-rule-based-music"
+    ],
     "status": "active",
     "confidence": "validated",
     "modifiedAt": "2026-06-25"
@@ -2914,8 +3332,16 @@
       "Recherche"
     ],
     "questions": [],
-    "relationLabels": [],
-    "relatedEntityIds": [],
+    "relationLabels": [
+      "publishedBy Electronic Artefacts publishes and maintains Foundational Lineage",
+      "maintainedBy Electronic Artefacts develops and maintains the VASTE program.",
+      "createdBy Electronic Artefacts created Vestiges as the flagship public application of VASTE."
+    ],
+    "relatedEntityIds": [
+      "ea:publication:foundational-lineage-001",
+      "ea:program:vaste",
+      "ea:project:vestiges"
+    ],
     "status": "active",
     "confidence": "canonical",
     "modifiedAt": "2026-06-25"
@@ -2947,8 +3373,28 @@
       "Musique expérimentale"
     ],
     "questions": [],
-    "relationLabels": [],
-    "relatedEntityIds": [],
+    "relationLabels": [
+      "poweredBy Palimpsests uses ORETH as its audio intelligence and artistic research layer.",
+      "appliesConcept ORETH applies signal archaeology to audio analysis, machine listening and sonic trace interpretation.",
+      "appliesConcept ORETH applies generative-system thinking to experimental audio structures and pattern exploration.",
+      "documents Generative Systems, Cybernetics and Creative Coding links ORETH to audio pattern exploration and generative systems.",
+      "documents Signal Archaeology, Audio Memory and Machine Listening uses ORETH as the machine-listening and audio research context.",
+      "documents Web Audio and Browser-Based Sound Systems links ORETH to public sound tools and browser-native audio research.",
+      "documents Algorithmic Composition and Rule-Based Music links ORETH to audio analysis and generative musical exploration.",
+      "documents Multimodal AI Across Text, Image, Audio and Video connects ORETH to audio and cross-modal analysis.",
+      "appliesConcept ORETH provides an applied context for connecting audio analysis with visual, textual and archival records."
+    ],
+    "relatedEntityIds": [
+      "ea:project:palimpsests",
+      "ea:concept:signal-archaeology",
+      "ea:concept:generative-system",
+      "ea:publication:generative-systems-cybernetics-and-creative-coding",
+      "ea:publication:signal-archaeology-audio-memory-and-machine-listening",
+      "ea:publication:web-audio-and-browser-based-sound-systems",
+      "ea:publication:algorithmic-composition-and-rule-based-music",
+      "ea:publication:multimodal-ai-across-text-image-audio-and-video",
+      "ea:concept:multimodal-ai"
+    ],
     "status": "prototype",
     "confidence": "observed",
     "modifiedAt": "2026-07-04"
@@ -2983,8 +3429,56 @@
       "Connaissance"
     ],
     "questions": [],
-    "relationLabels": [],
-    "relatedEntityIds": [],
+    "relationLabels": [
+      "documents Foundational Lineage",
+      "documents Model Context Protocol and Tool-Using AI Systems uses VASTE as the graph-runtime context for scoped AI tools.",
+      "integratesWith VASTE can integrate with MCP as a scoped interface for graph resources, prompts and controlled tools.",
+      "integratesWith VASTE can integrate with OpenTelemetry to observe graph-runtime events, tool calls and projection behavior.",
+      "appliesConcept VASTE applies contextual execution through identity-aware graph records, relations, permissions and event propagation.",
+      "documents Contextual Execution and Graph Runtimes uses VASTE as the program context for graph runtime execution.",
+      "documents Human Computer Interaction for Creative Tools uses VASTE as a context for graph-aware creative systems.",
+      "documents AI Agents vs AI Workflows uses VASTE as a context for identity-aware agent permissions.",
+      "documents Retrieval-Augmented Generation and Knowledge Systems uses VASTE as a context for identity-aware graph retrieval.",
+      "documents Systems Thinking for Creative Practice uses VASTE as an applied runtime-systems context.",
+      "documents Why Graphs Are More Powerful Than Folders uses VASTE as a graph-runtime application.",
+      "documents Event-Driven Architecture and Event Streams uses VASTE as an applied event-propagation context.",
+      "documents Redis Streams for Orchestration describes a possible bounded transport layer for VASTE projections.",
+      "documents Microservices, Modular Monoliths and System Boundaries evaluates VASTE through conservative runtime boundaries.",
+      "documents Runtime Engines and Domain Operating Systems uses VASTE as the primary Electronic Artefacts runtime context.",
+      "appliesConcept VASTE applies systems thinking to entities, context, events and projections.",
+      "appliesConcept VASTE applies event-driven architecture through its event propagation layer.",
+      "appliesConcept VASTE applies graph modeling through addressable entities and typed relationships.",
+      "appliesConcept VASTE explores domain operating system architecture for graph-shaped products.",
+      "appliesConcept VASTE applies the graph-runtime concept through addressable entities, typed relationships, identity, context and event execution.",
+      "derivedFrom VASTE derives its runtime primitives and contextual execution questions from the Runtime Theory research field.",
+      "poweredBy Vestiges uses VASTE as its graph runtime and contextual execution foundation.",
+      "maintainedBy Electronic Artefacts develops and maintains the VASTE program."
+    ],
+    "relatedEntityIds": [
+      "ea:publication:foundational-lineage-001",
+      "ea:publication:model-context-protocol-and-tool-using-ai-systems",
+      "ea:technology:model-context-protocol",
+      "ea:technology:opentelemetry",
+      "ea:concept:contextual-execution",
+      "ea:publication:contextual-execution-and-graph-runtimes",
+      "ea:publication:human-computer-interaction-for-creative-tools",
+      "ea:publication:ai-agents-vs-ai-workflows",
+      "ea:publication:retrieval-augmented-generation-and-knowledge-systems",
+      "ea:publication:systems-thinking-for-creative-practice",
+      "ea:publication:why-graphs-are-more-powerful-than-folders",
+      "ea:publication:event-driven-architecture-and-event-streams",
+      "ea:publication:redis-streams-for-orchestration",
+      "ea:publication:microservices-modular-monoliths-and-system-boundaries",
+      "ea:publication:runtime-engines-and-domain-operating-systems",
+      "ea:concept:systems-thinking",
+      "ea:concept:event-driven-architecture",
+      "ea:concept:graph-modeling",
+      "ea:concept:domain-operating-system",
+      "ea:concept:graph-runtime",
+      "ea:researchField:runtime-theory",
+      "ea:project:vestiges",
+      "ea:organization:electronic-artefacts"
+    ],
     "status": "development",
     "confidence": "published",
     "modifiedAt": "2026-07-04"
@@ -3015,8 +3509,28 @@
       "Archives"
     ],
     "questions": [],
-    "relationLabels": [],
-    "relatedEntityIds": [],
+    "relationLabels": [
+      "documents C2PA Content Credentials and Generative Media Provenance applies media provenance to Palimpsests and production memory.",
+      "integratesWith Palimpsests can integrate with C2PA to attach signed provenance and production memory to public media derivatives.",
+      "poweredBy Palimpsests uses ORETH as its audio intelligence and artistic research layer.",
+      "appliesConcept Palimpsests applies signal archaeology by treating sonic residue and media traces as cultural material.",
+      "appliesConcept Palimpsests applies digital preservation by treating audio, visual and research traces as a compound cultural record.",
+      "documents Digital Preservation and Living Archives uses Palimpsests as an example of born-digital cultural preservation.",
+      "documents Generative Systems, Cybernetics and Creative Coding links Palimpsests to repetition, residue and transformation.",
+      "documents Signal Archaeology, Audio Memory and Machine Listening links Palimpsests to audio memory and sonic residue.",
+      "documents Multimodal AI Across Text, Image, Audio and Video uses Palimpsests as a compound media and provenance context."
+    ],
+    "relatedEntityIds": [
+      "ea:publication:c2pa-content-credentials-and-generative-media-provenance",
+      "ea:technology:c2pa",
+      "ea:program:oreth",
+      "ea:concept:signal-archaeology",
+      "ea:concept:digital-preservation",
+      "ea:publication:digital-preservation-and-living-archives",
+      "ea:publication:generative-systems-cybernetics-and-creative-coding",
+      "ea:publication:signal-archaeology-audio-memory-and-machine-listening",
+      "ea:publication:multimodal-ai-across-text-image-audio-and-video"
+    ],
     "status": "active",
     "confidence": "published",
     "modifiedAt": "2026-06-25"
@@ -3052,8 +3566,42 @@
       "Infrastructure culturelle"
     ],
     "questions": [],
-    "relationLabels": [],
-    "relatedEntityIds": [],
+    "relationLabels": [
+      "documents IIIF and Compound Cultural Objects uses Vestiges as a cultural infrastructure context for compound object records.",
+      "integratesWith Vestiges can integrate with IIIF for compound cultural object presentation and annotation-aware viewing.",
+      "appliesConcept Vestiges applies knowledge-graph principles to culture, craft, institutions, techniques and public knowledge pages.",
+      "documents Knowledge Graphs for Cultural Infrastructure uses Vestiges as the applied cultural infrastructure example.",
+      "documents Digital Preservation and Living Archives connects Vestiges to living archive and cultural knowledge preservation.",
+      "documents Metadata, Cataloguing and Cultural Memory links metadata practice to the Vestiges cultural knowledge project.",
+      "documents Ontologies, Taxonomies and Knowledge Modeling connects semantic modeling to the Vestiges cultural graph.",
+      "documents Why Graphs Are More Powerful Than Folders uses Vestiges as a cultural graph case.",
+      "documents Runtime Engines and Domain Operating Systems uses Vestiges as a cultural domain OS application.",
+      "appliesConcept Vestiges applies ontology design to people, techniques, materials, institutions and cultural relations.",
+      "appliesConcept Vestiges applies graph modeling to cultural knowledge and human know-how.",
+      "appliesConcept Vestiges explores a domain operating system for cultural knowledge, contribution and exchange.",
+      "poweredBy Vestiges uses VASTE as its graph runtime and contextual execution foundation.",
+      "appliesConcept Vestiges applies graph-runtime principles to cultural, craft and human-knowledge infrastructure.",
+      "evidencedBy Foundational Lineage",
+      "createdBy Electronic Artefacts created Vestiges as the flagship public application of VASTE."
+    ],
+    "relatedEntityIds": [
+      "ea:publication:iiif-and-compound-cultural-objects",
+      "ea:technology:iiif",
+      "ea:concept:knowledge-graph",
+      "ea:publication:knowledge-graphs-for-cultural-infrastructure",
+      "ea:publication:digital-preservation-and-living-archives",
+      "ea:publication:metadata-cataloguing-and-cultural-memory",
+      "ea:publication:ontologies-taxonomies-and-knowledge-modeling",
+      "ea:publication:why-graphs-are-more-powerful-than-folders",
+      "ea:publication:runtime-engines-and-domain-operating-systems",
+      "ea:concept:ontology",
+      "ea:concept:graph-modeling",
+      "ea:concept:domain-operating-system",
+      "ea:program:vaste",
+      "ea:concept:graph-runtime",
+      "ea:publication:foundational-lineage-001",
+      "ea:organization:electronic-artefacts"
+    ],
     "status": "development",
     "confidence": "observed",
     "modifiedAt": "2026-07-04"
@@ -3084,8 +3632,20 @@
       "automatisation"
     ],
     "questions": [],
-    "relationLabels": [],
-    "relatedEntityIds": [],
+    "relationLabels": [
+      "documents AI Agents vs AI Workflows documents model-directed agency and deterministic workflow boundaries.",
+      "documents AI Agents vs AI Workflows connects agent permissions to contextual execution.",
+      "documents AI Agents vs AI Workflows distinguishes bounded agents from broader autonomous systems.",
+      "documents AI Agents vs AI Workflows uses VASTE as a context for identity-aware agent permissions.",
+      "hasPart Knowledge Hub Third Wave includes AI Agents vs AI Workflows."
+    ],
+    "relatedEntityIds": [
+      "ea:concept:ai-agent",
+      "ea:concept:contextual-execution",
+      "ea:concept:autonomous-system",
+      "ea:program:vaste",
+      "ea:collection:knowledge-hub-third-wave"
+    ],
     "status": "active",
     "confidence": "published",
     "modifiedAt": "2026-06-25"
@@ -3116,8 +3676,20 @@
       "Entity SEO"
     ],
     "questions": [],
-    "relationLabels": [],
-    "relatedEntityIds": [],
+    "relationLabels": [
+      "documents AI Search, Structured Content and Knowledge Graph SEO documents knowledge graphs as an SEO architecture for AI retrieval.",
+      "documents AI Search, Structured Content and Knowledge Graph SEO explains how Linked Data supports crawlable, machine-readable public knowledge pages.",
+      "usesTechnology AI Search, Structured Content and Knowledge Graph SEO uses JSON-LD as the structured data bridge between articles and graph records.",
+      "documents AI Search, Structured Content and Knowledge Graph SEO connects AI search visibility to retrieval-augmented generation patterns.",
+      "memberOfCollection AI Search, Structured Content and Knowledge Graph SEO is part of the fourth Knowledge Hub wave."
+    ],
+    "relatedEntityIds": [
+      "ea:concept:knowledge-graph",
+      "ea:concept:linked-data",
+      "ea:technology:json-ld",
+      "ea:concept:retrieval-augmented-generation",
+      "ea:collection:knowledge-hub-fourth-wave"
+    ],
     "status": "active",
     "confidence": "published",
     "modifiedAt": "2026-06-25"
@@ -3147,8 +3719,22 @@
       "ORETH"
     ],
     "questions": [],
-    "relationLabels": [],
-    "relatedEntityIds": [],
+    "relationLabels": [
+      "documents Algorithmic Composition and Rule-Based Music documents algorithmic composition as rule-based musical practice.",
+      "documents Algorithmic Composition and Rule-Based Music connects rule-based music to generative systems.",
+      "documents Algorithmic Composition and Rule-Based Music connects feedback loops to musical systems.",
+      "documents Algorithmic Composition and Rule-Based Music links ORETH to audio analysis and generative musical exploration.",
+      "documents Algorithmic Composition and Rule-Based Music connects rule-based music to browser sound systems.",
+      "hasPart Knowledge Hub Second Wave includes Algorithmic Composition and Rule-Based Music as a core article."
+    ],
+    "relatedEntityIds": [
+      "ea:concept:algorithmic-composition",
+      "ea:concept:generative-system",
+      "ea:concept:cybernetic-feedback",
+      "ea:program:oreth",
+      "ea:concept:web-audio",
+      "ea:collection:knowledge-hub-second-wave"
+    ],
     "status": "active",
     "confidence": "published",
     "modifiedAt": "2026-06-25"
@@ -3179,8 +3765,18 @@
       "Digital Préservation"
     ],
     "questions": [],
-    "relationLabels": [],
-    "relatedEntityIds": [],
+    "relationLabels": [
+      "documents C2PA Content Credentials and Generative Media Provenance documents C2PA as media provenance infrastructure.",
+      "documents C2PA Content Credentials and Generative Media Provenance explains provenance as evidence rather than proof of truth.",
+      "documents C2PA Content Credentials and Generative Media Provenance applies media provenance to Palimpsests and production memory.",
+      "memberOfCollection C2PA Content Credentials and Generative Media Provenance is part of the fourth Knowledge Hub wave."
+    ],
+    "relatedEntityIds": [
+      "ea:technology:c2pa",
+      "ea:concept:provenance",
+      "ea:project:palimpsests",
+      "ea:collection:knowledge-hub-fourth-wave"
+    ],
     "status": "active",
     "confidence": "published",
     "modifiedAt": "2026-06-25"
@@ -3211,8 +3807,20 @@
       "conception de systèmes"
     ],
     "questions": [],
-    "relationLabels": [],
-    "relatedEntityIds": [],
+    "relationLabels": [
+      "documents Contextual Execution and Graph Runtimes documents contextual execution as a runtime principle.",
+      "documents Contextual Execution and Graph Runtimes explains how contextual execution extends the graph-runtime concept.",
+      "documents Contextual Execution and Graph Runtimes connects contextual execution to Runtime Theory.",
+      "documents Contextual Execution and Graph Runtimes uses VASTE as the program context for graph runtime execution.",
+      "hasPart Knowledge Hub Foundations includes Contextual Execution and Graph Runtimes as a foundation article."
+    ],
+    "relatedEntityIds": [
+      "ea:concept:contextual-execution",
+      "ea:concept:graph-runtime",
+      "ea:researchField:runtime-theory",
+      "ea:program:vaste",
+      "ea:collection:knowledge-hub-foundations"
+    ],
     "status": "active",
     "confidence": "published",
     "modifiedAt": "2026-06-25"
@@ -3242,8 +3850,20 @@
       "Education"
     ],
     "questions": [],
-    "relationLabels": [],
-    "relatedEntityIds": [],
+    "relationLabels": [
+      "documents Creative Coding Pedagogy from Logo to p5.js documents creative coding as a learning practice.",
+      "documents Creative Coding Pedagogy from Logo to p5.js connects creative learning to open examples and open-source communities.",
+      "documents Creative Coding Pedagogy from Logo to p5.js links visual learning to procedural graphics.",
+      "documents Creative Coding Pedagogy from Logo to p5.js connects sketch-based learning to generative system design.",
+      "hasPart Knowledge Hub Second Wave includes Creative Coding Pedagogy from Logo to p5.js as a core article."
+    ],
+    "relatedEntityIds": [
+      "ea:concept:creative-coding",
+      "ea:concept:open-source",
+      "ea:concept:procedural-graphics",
+      "ea:concept:generative-system",
+      "ea:collection:knowledge-hub-second-wave"
+    ],
     "status": "active",
     "confidence": "published",
     "modifiedAt": "2026-06-25"
@@ -3274,8 +3894,20 @@
       "Vestiges"
     ],
     "questions": [],
-    "relationLabels": [],
-    "relatedEntityIds": [],
+    "relationLabels": [
+      "documents Digital Preservation and Living Archives documents digital preservation as long-term care for digital objects and context.",
+      "documents Digital Preservation and Living Archives explains provenance as a central layer of living archive practice.",
+      "documents Digital Preservation and Living Archives uses Palimpsests as an example of born-digital cultural preservation.",
+      "documents Digital Preservation and Living Archives connects Vestiges to living archive and cultural knowledge preservation.",
+      "hasPart Knowledge Hub Foundations includes Digital Preservation and Living Archives as a foundation article."
+    ],
+    "relatedEntityIds": [
+      "ea:concept:digital-preservation",
+      "ea:concept:provenance",
+      "ea:project:palimpsests",
+      "ea:project:vestiges",
+      "ea:collection:knowledge-hub-foundations"
+    ],
     "status": "active",
     "confidence": "published",
     "modifiedAt": "2026-06-25"
@@ -3306,8 +3938,22 @@
       "Event Sourcing"
     ],
     "questions": [],
-    "relationLabels": [],
-    "relatedEntityIds": [],
+    "relationLabels": [
+      "documents Event-Driven Architecture and Event Streams documents event-driven system design.",
+      "usesTechnology Event-Driven Architecture and Event Streams uses CloudEvents as an interoperable event-envelope reference.",
+      "documents Event-Driven Architecture and Event Streams connects event propagation to contextual execution.",
+      "documents Event-Driven Architecture and Event Streams explains event flow inside graph runtimes.",
+      "documents Event-Driven Architecture and Event Streams uses VASTE as an applied event-propagation context.",
+      "hasPart Knowledge Hub Third Wave includes Event-Driven Architecture and Event Streams."
+    ],
+    "relatedEntityIds": [
+      "ea:concept:event-driven-architecture",
+      "ea:technology:cloudevents",
+      "ea:concept:contextual-execution",
+      "ea:concept:graph-runtime",
+      "ea:program:vaste",
+      "ea:collection:knowledge-hub-third-wave"
+    ],
     "status": "active",
     "confidence": "published",
     "modifiedAt": "2026-06-25"
@@ -3337,8 +3983,18 @@
       "Information architecture"
     ],
     "questions": [],
-    "relationLabels": [],
-    "relatedEntityIds": [],
+    "relationLabels": [
+      "publishedBy Electronic Artefacts publishes and maintains Foundational Lineage",
+      "documents Foundational Lineage",
+      "documents Foundational Lineage",
+      "evidencedBy Foundational Lineage"
+    ],
+    "relatedEntityIds": [
+      "ea:organization:electronic-artefacts",
+      "ea:researchField:runtime-theory",
+      "ea:program:vaste",
+      "ea:project:vestiges"
+    ],
     "status": "research",
     "confidence": "published",
     "modifiedAt": "2026-06-25"
@@ -3368,8 +4024,22 @@
       "Provenance"
     ],
     "questions": [],
-    "relationLabels": [],
-    "relatedEntityIds": [],
+    "relationLabels": [
+      "documents Generative AI, Latent Space and Creative Workflows documents generative AI as a creative workflow topic.",
+      "documents Generative AI, Latent Space and Creative Workflows connects generative AI to augmented intelligence.",
+      "documents Generative AI, Latent Space and Creative Workflows explains provenance as a requirement for responsible AI-assisted production.",
+      "documents Generative AI, Latent Space and Creative Workflows situates generative AI within the broader generative systems lineage.",
+      "documents Generative AI, Latent Space and Creative Workflows links AI workflows to human computer interaction and creative agency.",
+      "hasPart Knowledge Hub Second Wave includes Generative AI, Latent Space and Creative Workflows as a core article."
+    ],
+    "relatedEntityIds": [
+      "ea:concept:generative-ai",
+      "ea:concept:augmented-intelligence",
+      "ea:concept:provenance",
+      "ea:concept:generative-system",
+      "ea:concept:human-computer-interaction",
+      "ea:collection:knowledge-hub-second-wave"
+    ],
     "status": "active",
     "confidence": "published",
     "modifiedAt": "2026-06-25"
@@ -3400,8 +4070,22 @@
       "art numérique"
     ],
     "questions": [],
-    "relationLabels": [],
-    "relatedEntityIds": [],
+    "relationLabels": [
+      "documents Generative Systems, Cybernetics and Creative Coding documents generative systems through constraints, rules and selection.",
+      "documents Generative Systems, Cybernetics and Creative Coding uses cybernetic feedback as a historical and technical foundation.",
+      "documents Generative Systems, Cybernetics and Creative Coding connects creative coding to generative system practice.",
+      "documents Generative Systems, Cybernetics and Creative Coding links ORETH to audio pattern exploration and generative systems.",
+      "documents Generative Systems, Cybernetics and Creative Coding links Palimpsests to repetition, residue and transformation.",
+      "hasPart Knowledge Hub Foundations includes Generative Systems, Cybernetics and Creative Coding as a foundation article."
+    ],
+    "relatedEntityIds": [
+      "ea:concept:generative-system",
+      "ea:concept:cybernetic-feedback",
+      "ea:concept:creative-coding",
+      "ea:program:oreth",
+      "ea:project:palimpsests",
+      "ea:collection:knowledge-hub-foundations"
+    ],
     "status": "active",
     "confidence": "published",
     "modifiedAt": "2026-06-25"
@@ -3432,8 +4116,20 @@
       "inférence"
     ],
     "questions": [],
-    "relationLabels": [],
-    "relatedEntityIds": [],
+    "relationLabels": [
+      "documents How Large Language Models Actually Work documents the core LLM concept.",
+      "usesTechnology How Large Language Models Actually Work uses the transformer architecture as its principal technical reference.",
+      "documents How Large Language Models Actually Work situates LLMs within generative AI.",
+      "documents How Large Language Models Actually Work explains why model and data provenance matter.",
+      "hasPart Knowledge Hub Third Wave includes How Large Language Models Actually Work."
+    ],
+    "relatedEntityIds": [
+      "ea:concept:large-language-model",
+      "ea:technology:transformer-architecture",
+      "ea:concept:generative-ai",
+      "ea:concept:provenance",
+      "ea:collection:knowledge-hub-third-wave"
+    ],
     "status": "active",
     "confidence": "published",
     "modifiedAt": "2026-06-25"
@@ -3463,8 +4159,20 @@
       "accessibilité"
     ],
     "questions": [],
-    "relationLabels": [],
-    "relatedEntityIds": [],
+    "relationLabels": [
+      "documents Human Computer Interaction for Creative Tools documents HCI as a creative tool discipline.",
+      "documents Human Computer Interaction for Creative Tools connects interface design to augmented intelligence.",
+      "documents Human Computer Interaction for Creative Tools links feedback and state communication to motion design.",
+      "documents Human Computer Interaction for Creative Tools uses VASTE as a context for graph-aware creative systems.",
+      "hasPart Knowledge Hub Second Wave includes Human Computer Interaction for Creative Tools as a core article."
+    ],
+    "relatedEntityIds": [
+      "ea:concept:human-computer-interaction",
+      "ea:concept:augmented-intelligence",
+      "ea:concept:motion-design",
+      "ea:program:vaste",
+      "ea:collection:knowledge-hub-second-wave"
+    ],
     "status": "active",
     "confidence": "published",
     "modifiedAt": "2026-06-25"
@@ -3495,8 +4203,20 @@
       "histoire des technologies"
     ],
     "questions": [],
-    "relationLabels": [],
-    "relatedEntityIds": [],
+    "relationLabels": [
+      "documents Hypertext and Augmented Knowledge Systems documents hypertext as an architecture for linked public knowledge.",
+      "documents Hypertext and Augmented Knowledge Systems connects hypertext to augmented intelligence and human knowledge work.",
+      "documents Hypertext and Augmented Knowledge Systems explains how knowledge graphs strengthen linked pages with explicit relations.",
+      "documents Hypertext and Augmented Knowledge Systems links hypertext practice to Linked Data and stable identifiers.",
+      "hasPart Knowledge Hub Second Wave includes Hypertext and Augmented Knowledge Systems as a core article."
+    ],
+    "relatedEntityIds": [
+      "ea:concept:hypertext",
+      "ea:concept:augmented-intelligence",
+      "ea:concept:knowledge-graph",
+      "ea:concept:linked-data",
+      "ea:collection:knowledge-hub-second-wave"
+    ],
     "status": "active",
     "confidence": "published",
     "modifiedAt": "2026-06-25"
@@ -3527,8 +4247,18 @@
       "Linked Data"
     ],
     "questions": [],
-    "relationLabels": [],
-    "relatedEntityIds": [],
+    "relationLabels": [
+      "documents IIIF and Compound Cultural Objects documents IIIF as a presentation framework for cultural archive objects.",
+      "documents IIIF and Compound Cultural Objects connects object presentation structure to digital preservation practice.",
+      "documents IIIF and Compound Cultural Objects uses Vestiges as a cultural infrastructure context for compound object records.",
+      "memberOfCollection IIIF and Compound Cultural Objects is part of the fourth Knowledge Hub wave."
+    ],
+    "relatedEntityIds": [
+      "ea:technology:iiif",
+      "ea:concept:digital-preservation",
+      "ea:project:vestiges",
+      "ea:collection:knowledge-hub-fourth-wave"
+    ],
     "status": "active",
     "confidence": "published",
     "modifiedAt": "2026-06-25"
@@ -3559,8 +4289,22 @@
       "Vestiges"
     ],
     "questions": [],
-    "relationLabels": [],
-    "relatedEntityIds": [],
+    "relationLabels": [
+      "documents Knowledge Graphs for Cultural Infrastructure documents the knowledge-graph concept for cultural publishing.",
+      "documents Knowledge Graphs for Cultural Infrastructure explains why stable entity identity matters for graph publishing.",
+      "documents Knowledge Graphs for Cultural Infrastructure frames provenance as a trust layer for cultural knowledge graphs.",
+      "documents Knowledge Graphs for Cultural Infrastructure uses Vestiges as the applied cultural infrastructure example.",
+      "usesTechnology Knowledge Graphs for Cultural Infrastructure uses RDF as the reference model for graph statements and resources.",
+      "hasPart Knowledge Hub Foundations includes Knowledge Graphs for Cultural Infrastructure as a foundation article."
+    ],
+    "relatedEntityIds": [
+      "ea:concept:knowledge-graph",
+      "ea:concept:entity-identity",
+      "ea:concept:provenance",
+      "ea:project:vestiges",
+      "ea:technology:rdf",
+      "ea:collection:knowledge-hub-foundations"
+    ],
     "status": "active",
     "confidence": "published",
     "modifiedAt": "2026-06-25"
@@ -3591,8 +4335,20 @@
       "Knowledge Pages"
     ],
     "questions": [],
-    "relationLabels": [],
-    "relatedEntityIds": [],
+    "relationLabels": [
+      "documents Linked Data and Public Knowledge Pages documents Linked Data as a publishing discipline for public knowledge pages.",
+      "documents Linked Data and Public Knowledge Pages explains the difference between page URLs and entity identifiers.",
+      "usesTechnology Linked Data and Public Knowledge Pages uses JSON-LD as the practical structured-data format for static knowledge pages.",
+      "usesTechnology Linked Data and Public Knowledge Pages uses RDF as the underlying graph-data reference for Linked Data.",
+      "hasPart Knowledge Hub Foundations includes Linked Data and Public Knowledge Pages as a foundation article."
+    ],
+    "relatedEntityIds": [
+      "ea:concept:linked-data",
+      "ea:concept:entity-identity",
+      "ea:technology:json-ld",
+      "ea:technology:rdf",
+      "ea:collection:knowledge-hub-foundations"
+    ],
     "status": "active",
     "confidence": "published",
     "modifiedAt": "2026-06-25"
@@ -3623,8 +4379,20 @@
       "llama.cpp"
     ],
     "questions": [],
-    "relationLabels": [],
-    "relatedEntityIds": [],
+    "relationLabels": [
+      "documents Local and Open Source AI Systems documents the distinction between open-weight and open-source models.",
+      "documents Local and Open Source AI Systems applies open-source principles to AI infrastructure and licensing.",
+      "usesTechnology Local and Open Source AI Systems uses llama.cpp as a reference local inference runtime.",
+      "documents Local and Open Source AI Systems connects model deployment to provenance and reproducibility.",
+      "hasPart Knowledge Hub Third Wave includes Local and Open Source AI Systems."
+    ],
+    "relatedEntityIds": [
+      "ea:concept:open-weight-model",
+      "ea:concept:open-source",
+      "ea:technology:llama-cpp",
+      "ea:concept:provenance",
+      "ea:collection:knowledge-hub-third-wave"
+    ],
     "status": "active",
     "confidence": "published",
     "modifiedAt": "2026-06-25"
@@ -3654,8 +4422,20 @@
       "Cultural Memory"
     ],
     "questions": [],
-    "relationLabels": [],
-    "relatedEntityIds": [],
+    "relationLabels": [
+      "documents Metadata, Cataloguing and Cultural Memory documents metadata as a cultural memory layer.",
+      "documents Metadata, Cataloguing and Cultural Memory explains provenance as a key part of trustworthy metadata.",
+      "documents Metadata, Cataloguing and Cultural Memory connects metadata to digital preservation and long-term context.",
+      "documents Metadata, Cataloguing and Cultural Memory links metadata practice to the Vestiges cultural knowledge project.",
+      "hasPart Knowledge Hub Second Wave includes Metadata, Cataloguing and Cultural Memory as a core article."
+    ],
+    "relatedEntityIds": [
+      "ea:concept:metadata",
+      "ea:concept:provenance",
+      "ea:concept:digital-preservation",
+      "ea:project:vestiges",
+      "ea:collection:knowledge-hub-second-wave"
+    ],
     "status": "active",
     "confidence": "published",
     "modifiedAt": "2026-06-25"
@@ -3686,8 +4466,20 @@
       "Distributed Systems"
     ],
     "questions": [],
-    "relationLabels": [],
-    "relatedEntityIds": [],
+    "relationLabels": [
+      "documents Microservices, Modular Monoliths and System Boundaries documents microservice architecture and its tradeoffs.",
+      "documents Microservices, Modular Monoliths and System Boundaries applies systems thinking to organizational and operational cost.",
+      "documents Microservices, Modular Monoliths and System Boundaries explains events as one service communication pattern.",
+      "documents Microservices, Modular Monoliths and System Boundaries evaluates VASTE through conservative runtime boundaries.",
+      "hasPart Knowledge Hub Third Wave includes Microservices, Modular Monoliths and System Boundaries."
+    ],
+    "relatedEntityIds": [
+      "ea:concept:microservice-architecture",
+      "ea:concept:systems-thinking",
+      "ea:concept:event-driven-architecture",
+      "ea:program:vaste",
+      "ea:collection:knowledge-hub-third-wave"
+    ],
     "status": "active",
     "confidence": "published",
     "modifiedAt": "2026-06-25"
@@ -3718,8 +4510,20 @@
       "VASTE"
     ],
     "questions": [],
-    "relationLabels": [],
-    "relatedEntityIds": [],
+    "relationLabels": [
+      "documents Model Context Protocol and Tool-Using AI Systems documents MCP as a capability protocol for AI tools, prompts and resources.",
+      "documents Model Context Protocol and Tool-Using AI Systems explains how MCP relates to AI agents and deterministic workflows.",
+      "documents Model Context Protocol and Tool-Using AI Systems connects MCP permissions to contextual execution boundaries.",
+      "documents Model Context Protocol and Tool-Using AI Systems uses VASTE as the graph-runtime context for scoped AI tools.",
+      "memberOfCollection Model Context Protocol and Tool-Using AI Systems is part of the fourth Knowledge Hub wave."
+    ],
+    "relatedEntityIds": [
+      "ea:technology:model-context-protocol",
+      "ea:concept:ai-agent",
+      "ea:concept:contextual-execution",
+      "ea:program:vaste",
+      "ea:collection:knowledge-hub-fourth-wave"
+    ],
     "status": "active",
     "confidence": "published",
     "modifiedAt": "2026-06-25"
@@ -3749,8 +4553,20 @@
       "accessibilité"
     ],
     "questions": [],
-    "relationLabels": [],
-    "relatedEntityIds": [],
+    "relationLabels": [
+      "documents Motion Design, Time and Interface Semantics documents motion design as interface semantics.",
+      "usesTechnology Motion Design, Time and Interface Semantics uses Web Animations as its main web timing reference.",
+      "documents Motion Design, Time and Interface Semantics links motion design to human computer interaction.",
+      "documents Motion Design, Time and Interface Semantics connects motion to typography and reading behavior.",
+      "hasPart Knowledge Hub Second Wave includes Motion Design, Time and Interface Semantics as a core article."
+    ],
+    "relatedEntityIds": [
+      "ea:concept:motion-design",
+      "ea:technology:web-animations",
+      "ea:concept:human-computer-interaction",
+      "ea:concept:typography",
+      "ea:collection:knowledge-hub-second-wave"
+    ],
     "status": "active",
     "confidence": "published",
     "modifiedAt": "2026-06-25"
@@ -3781,8 +4597,20 @@
       "Cross-Modal Retrieval"
     ],
     "questions": [],
-    "relationLabels": [],
-    "relatedEntityIds": [],
+    "relationLabels": [
+      "documents Multimodal AI Across Text, Image, Audio and Video documents cross-modal architectures and evaluation.",
+      "documents Multimodal AI Across Text, Image, Audio and Video connects ORETH to audio and cross-modal analysis.",
+      "documents Multimodal AI Across Text, Image, Audio and Video uses Palimpsests as a compound media and provenance context.",
+      "documents Multimodal AI Across Text, Image, Audio and Video documents provenance risks across generated media.",
+      "hasPart Knowledge Hub Third Wave includes Multimodal AI Across Text, Image, Audio and Video."
+    ],
+    "relatedEntityIds": [
+      "ea:concept:multimodal-ai",
+      "ea:program:oreth",
+      "ea:project:palimpsests",
+      "ea:concept:provenance",
+      "ea:collection:knowledge-hub-third-wave"
+    ],
     "status": "active",
     "confidence": "published",
     "modifiedAt": "2026-06-25"
@@ -3813,8 +4641,20 @@
       "Tracing"
     ],
     "questions": [],
-    "relationLabels": [],
-    "relatedEntityIds": [],
+    "relationLabels": [
+      "documents Observability for AI Agents and Tool-Calling Systems documents OpenTelemetry as telemetry infrastructure.",
+      "documents Observability for AI Agents and Tool-Calling Systems explains why agents need traceable model and tool behavior.",
+      "usesTechnology Observability for AI Agents and Tool-Calling Systems uses MCP as the reference capability surface for tool telemetry.",
+      "documents Observability for AI Agents and Tool-Calling Systems ties telemetry to context-aware permissions and runtime accountability.",
+      "memberOfCollection Observability for AI Agents and Tool-Calling Systems is part of the fourth Knowledge Hub wave."
+    ],
+    "relatedEntityIds": [
+      "ea:technology:opentelemetry",
+      "ea:concept:ai-agent",
+      "ea:technology:model-context-protocol",
+      "ea:concept:contextual-execution",
+      "ea:collection:knowledge-hub-fourth-wave"
+    ],
     "status": "active",
     "confidence": "published",
     "modifiedAt": "2026-06-25"
@@ -3845,8 +4685,24 @@
       "Knowledge Modeling"
     ],
     "questions": [],
-    "relationLabels": [],
-    "relatedEntityIds": [],
+    "relationLabels": [
+      "documents Ontologies, Taxonomies and Knowledge Modeling documents ontology and vocabulary distinctions.",
+      "documents Ontologies, Taxonomies and Knowledge Modeling connects semantic models to knowledge graphs.",
+      "documents Ontologies, Taxonomies and Knowledge Modeling positions metadata within a broader semantic architecture.",
+      "usesTechnology Ontologies, Taxonomies and Knowledge Modeling uses OWL as its formal ontology reference.",
+      "usesTechnology Ontologies, Taxonomies and Knowledge Modeling uses SKOS as its vocabulary and taxonomy reference.",
+      "documents Ontologies, Taxonomies and Knowledge Modeling connects semantic modeling to the Vestiges cultural graph.",
+      "hasPart Knowledge Hub Third Wave includes Ontologies, Taxonomies and Knowledge Modeling."
+    ],
+    "relatedEntityIds": [
+      "ea:concept:ontology",
+      "ea:concept:knowledge-graph",
+      "ea:concept:metadata",
+      "ea:technology:owl",
+      "ea:technology:skos",
+      "ea:project:vestiges",
+      "ea:collection:knowledge-hub-third-wave"
+    ],
     "status": "active",
     "confidence": "published",
     "modifiedAt": "2026-06-25"
@@ -3876,8 +4732,20 @@
       "Maintainers"
     ],
     "questions": [],
-    "relationLabels": [],
-    "relatedEntityIds": [],
+    "relationLabels": [
+      "documents Open Source as Cultural Infrastructure documents open source as a licensing, maintenance and cultural infrastructure practice.",
+      "documents Open Source as Cultural Infrastructure connects open source to creative coding tools and pedagogy.",
+      "documents Open Source as Cultural Infrastructure frames open collaboration as part of broader internet culture.",
+      "documents Open Source as Cultural Infrastructure connects software access and maintenance to preservation concerns.",
+      "hasPart Knowledge Hub Second Wave includes Open Source as Cultural Infrastructure as a core article."
+    ],
+    "relatedEntityIds": [
+      "ea:concept:open-source",
+      "ea:concept:creative-coding",
+      "ea:concept:internet-culture",
+      "ea:concept:digital-preservation",
+      "ea:collection:knowledge-hub-second-wave"
+    ],
     "status": "active",
     "confidence": "published",
     "modifiedAt": "2026-06-25"
@@ -3907,8 +4775,20 @@
       "méthodes de recherche"
     ],
     "questions": [],
-    "relationLabels": [],
-    "relatedEntityIds": [],
+    "relationLabels": [
+      "documents Personal Knowledge Systems and Digital Gardens documents personal knowledge systems as a practice of capture, linking and revision.",
+      "documents Personal Knowledge Systems and Digital Gardens uses hypertext as the linking model for public knowledge gardens.",
+      "documents Personal Knowledge Systems and Digital Gardens connects durable note systems to metadata and publication state.",
+      "documents Personal Knowledge Systems and Digital Gardens links revision and retrieval practice to digital preservation concerns.",
+      "hasPart Knowledge Hub Second Wave includes Personal Knowledge Systems and Digital Gardens as a core article."
+    ],
+    "relatedEntityIds": [
+      "ea:concept:personal-knowledge-system",
+      "ea:concept:hypertext",
+      "ea:concept:metadata",
+      "ea:concept:digital-preservation",
+      "ea:collection:knowledge-hub-second-wave"
+    ],
     "status": "active",
     "confidence": "published",
     "modifiedAt": "2026-06-25"
@@ -3938,8 +4818,20 @@
       "Generative Art"
     ],
     "questions": [],
-    "relationLabels": [],
-    "relatedEntityIds": [],
+    "relationLabels": [
+      "documents Procedural Graphics, Shaders and Visual Systems documents procedural graphics as a rule-based visual practice.",
+      "usesTechnology Procedural Graphics, Shaders and Visual Systems uses WebGL as the browser graphics reference technology.",
+      "documents Procedural Graphics, Shaders and Visual Systems links procedural visuals to generative-system thinking.",
+      "documents Procedural Graphics, Shaders and Visual Systems connects procedural visuals to motion design and time-based behavior.",
+      "hasPart Knowledge Hub Second Wave includes Procedural Graphics, Shaders and Visual Systems as a core article."
+    ],
+    "relatedEntityIds": [
+      "ea:concept:procedural-graphics",
+      "ea:technology:webgl",
+      "ea:concept:generative-system",
+      "ea:concept:motion-design",
+      "ea:collection:knowledge-hub-second-wave"
+    ],
     "status": "active",
     "confidence": "published",
     "modifiedAt": "2026-06-25"
@@ -3970,8 +4862,20 @@
       "Trust Boundaries"
     ],
     "questions": [],
-    "relationLabels": [],
-    "relatedEntityIds": [],
+    "relationLabels": [
+      "documents Prompt Injection and Trust Boundaries in AI Knowledge Systems documents prompt-injection risks for AI agents.",
+      "documents Prompt Injection and Trust Boundaries in AI Knowledge Systems explains why permissions should be enforced through contextual execution.",
+      "documents Prompt Injection and Trust Boundaries in AI Knowledge Systems uses graph runtimes as a control layer for AI knowledge operations.",
+      "usesTechnology Prompt Injection and Trust Boundaries in AI Knowledge Systems uses MCP as a reference surface for resources, tools and host-side consent.",
+      "memberOfCollection Prompt Injection and Trust Boundaries in AI Knowledge Systems is part of the fourth Knowledge Hub wave."
+    ],
+    "relatedEntityIds": [
+      "ea:concept:ai-agent",
+      "ea:concept:contextual-execution",
+      "ea:concept:graph-runtime",
+      "ea:technology:model-context-protocol",
+      "ea:collection:knowledge-hub-fourth-wave"
+    ],
     "status": "active",
     "confidence": "published",
     "modifiedAt": "2026-06-25"
@@ -4002,8 +4906,18 @@
       "Idempotency"
     ],
     "questions": [],
-    "relationLabels": [],
-    "relatedEntityIds": [],
+    "relationLabels": [
+      "usesTechnology Redis Streams for Orchestration documents Redis Streams as its implementation primitive.",
+      "documents Redis Streams for Orchestration places Redis consumer groups within event-driven architecture.",
+      "documents Redis Streams for Orchestration describes a possible bounded transport layer for VASTE projections.",
+      "hasPart Knowledge Hub Third Wave includes Redis Streams for Orchestration."
+    ],
+    "relatedEntityIds": [
+      "ea:technology:redis-streams",
+      "ea:concept:event-driven-architecture",
+      "ea:program:vaste",
+      "ea:collection:knowledge-hub-third-wave"
+    ],
     "status": "active",
     "confidence": "published",
     "modifiedAt": "2026-06-25"
@@ -4034,8 +4948,20 @@
       "Provenance"
     ],
     "questions": [],
-    "relationLabels": [],
-    "relatedEntityIds": [],
+    "relationLabels": [
+      "documents Responsible AI Governance for Creative and Cultural Systems documents governance practices for generative AI use in creative systems.",
+      "documents Responsible AI Governance for Creative and Cultural Systems frames responsible AI as augmented intelligence rather than unchecked replacement.",
+      "documents Responsible AI Governance for Creative and Cultural Systems treats provenance as a governance requirement for AI-assisted cultural records.",
+      "documents Responsible AI Governance for Creative and Cultural Systems links governance controls to contextual execution and permission boundaries.",
+      "memberOfCollection Responsible AI Governance for Creative and Cultural Systems is part of the fourth Knowledge Hub wave."
+    ],
+    "relatedEntityIds": [
+      "ea:concept:generative-ai",
+      "ea:concept:augmented-intelligence",
+      "ea:concept:provenance",
+      "ea:concept:contextual-execution",
+      "ea:collection:knowledge-hub-fourth-wave"
+    ],
     "status": "active",
     "confidence": "published",
     "modifiedAt": "2026-06-25"
@@ -4066,8 +4992,22 @@
       "Citations"
     ],
     "questions": [],
-    "relationLabels": [],
-    "relatedEntityIds": [],
+    "relationLabels": [
+      "documents Retrieval-Augmented Generation and Knowledge Systems documents RAG architecture end to end.",
+      "documents Retrieval-Augmented Generation and Knowledge Systems explains graph-grounded retrieval.",
+      "documents Retrieval-Augmented Generation and Knowledge Systems treats metadata as retrieval infrastructure.",
+      "documents Retrieval-Augmented Generation and Knowledge Systems connects citations and source grounding to provenance.",
+      "documents Retrieval-Augmented Generation and Knowledge Systems uses VASTE as a context for identity-aware graph retrieval.",
+      "hasPart Knowledge Hub Third Wave includes Retrieval-Augmented Generation and Knowledge Systems."
+    ],
+    "relatedEntityIds": [
+      "ea:concept:retrieval-augmented-generation",
+      "ea:concept:knowledge-graph",
+      "ea:concept:metadata",
+      "ea:concept:provenance",
+      "ea:program:vaste",
+      "ea:collection:knowledge-hub-third-wave"
+    ],
     "status": "active",
     "confidence": "published",
     "modifiedAt": "2026-06-25"
@@ -4098,8 +5038,22 @@
       "systèmes composables"
     ],
     "questions": [],
-    "relationLabels": [],
-    "relatedEntityIds": [],
+    "relationLabels": [
+      "documents Runtime Engines and Domain Operating Systems documents the domain operating system concept.",
+      "documents Runtime Engines and Domain Operating Systems connects domain runtimes to graph execution.",
+      "documents Runtime Engines and Domain Operating Systems explains capability evaluation through contextual execution.",
+      "documents Runtime Engines and Domain Operating Systems uses VASTE as the primary Electronic Artefacts runtime context.",
+      "documents Runtime Engines and Domain Operating Systems uses Vestiges as a cultural domain OS application.",
+      "hasPart Knowledge Hub Third Wave includes Runtime Engines and Domain Operating Systems."
+    ],
+    "relatedEntityIds": [
+      "ea:concept:domain-operating-system",
+      "ea:concept:graph-runtime",
+      "ea:concept:contextual-execution",
+      "ea:program:vaste",
+      "ea:project:vestiges",
+      "ea:collection:knowledge-hub-third-wave"
+    ],
     "status": "active",
     "confidence": "published",
     "modifiedAt": "2026-06-25"
@@ -4130,8 +5084,22 @@
       "Palimpsests"
     ],
     "questions": [],
-    "relationLabels": [],
-    "relatedEntityIds": [],
+    "relationLabels": [
+      "documents Signal Archaeology, Audio Memory and Machine Listening documents signal archaeology as a concept.",
+      "documents Signal Archaeology, Audio Memory and Machine Listening explains why signal interpretation needs provenance.",
+      "documents Signal Archaeology, Audio Memory and Machine Listening connects audio traces to digital preservation practice.",
+      "documents Signal Archaeology, Audio Memory and Machine Listening uses ORETH as the machine-listening and audio research context.",
+      "documents Signal Archaeology, Audio Memory and Machine Listening links Palimpsests to audio memory and sonic residue.",
+      "hasPart Knowledge Hub Foundations includes Signal Archaeology, Audio Memory and Machine Listening as a foundation article."
+    ],
+    "relatedEntityIds": [
+      "ea:concept:signal-archaeology",
+      "ea:concept:provenance",
+      "ea:concept:digital-preservation",
+      "ea:program:oreth",
+      "ea:project:palimpsests",
+      "ea:collection:knowledge-hub-foundations"
+    ],
     "status": "active",
     "confidence": "published",
     "modifiedAt": "2026-06-25"
@@ -4162,8 +5130,20 @@
       "Leverage Points"
     ],
     "questions": [],
-    "relationLabels": [],
-    "relatedEntityIds": [],
+    "relationLabels": [
+      "documents Systems Thinking for Creative Practice documents systems thinking for creative and technical work.",
+      "documents Systems Thinking for Creative Practice connects system behavior to cybernetic feedback.",
+      "documents Systems Thinking for Creative Practice explains constraints and emergence in generative systems.",
+      "documents Systems Thinking for Creative Practice uses VASTE as an applied runtime-systems context.",
+      "hasPart Knowledge Hub Third Wave includes Systems Thinking for Creative Practice."
+    ],
+    "relatedEntityIds": [
+      "ea:concept:systems-thinking",
+      "ea:concept:cybernetic-feedback",
+      "ea:concept:generative-system",
+      "ea:program:vaste",
+      "ea:collection:knowledge-hub-third-wave"
+    ],
     "status": "active",
     "confidence": "published",
     "modifiedAt": "2026-06-25"
@@ -4193,8 +5173,20 @@
       "accessibilité"
     ],
     "questions": [],
-    "relationLabels": [],
-    "relatedEntityIds": [],
+    "relationLabels": [
+      "documents Typography, Reading Systems and Digital Interfaces documents typography as reading infrastructure.",
+      "usesTechnology Typography, Reading Systems and Digital Interfaces uses CSS Fonts as the browser typography reference.",
+      "documents Typography, Reading Systems and Digital Interfaces connects typography to human computer interaction and accessibility.",
+      "documents Typography, Reading Systems and Digital Interfaces links reading systems to visible metadata and article structure.",
+      "hasPart Knowledge Hub Second Wave includes Typography, Reading Systems and Digital Interfaces as a core article."
+    ],
+    "relatedEntityIds": [
+      "ea:concept:typography",
+      "ea:technology:css-fonts",
+      "ea:concept:human-computer-interaction",
+      "ea:concept:metadata",
+      "ea:collection:knowledge-hub-second-wave"
+    ],
     "status": "active",
     "confidence": "published",
     "modifiedAt": "2026-06-25"
@@ -4225,8 +5217,20 @@
       "Cultural Archives"
     ],
     "questions": [],
-    "relationLabels": [],
-    "relatedEntityIds": [],
+    "relationLabels": [
+      "documents Verifiable Credentials for Cultural Archives and Creator Identity documents verifiable credentials as one layer of provenance evidence.",
+      "documents Verifiable Credentials for Cultural Archives and Creator Identity connects signed claims to durable entity identity.",
+      "documents Verifiable Credentials for Cultural Archives and Creator Identity explains how credentials can support preservation events and archive trust.",
+      "usesTechnology Verifiable Credentials for Cultural Archives and Creator Identity compares W3C credentials with C2PA media provenance.",
+      "memberOfCollection Verifiable Credentials for Cultural Archives and Creator Identity is part of the fourth Knowledge Hub wave."
+    ],
+    "relatedEntityIds": [
+      "ea:concept:provenance",
+      "ea:concept:entity-identity",
+      "ea:concept:digital-preservation",
+      "ea:technology:c2pa",
+      "ea:collection:knowledge-hub-fourth-wave"
+    ],
     "status": "active",
     "confidence": "published",
     "modifiedAt": "2026-06-25"
@@ -4256,8 +5260,20 @@
       "ORETH"
     ],
     "questions": [],
-    "relationLabels": [],
-    "relatedEntityIds": [],
+    "relationLabels": [
+      "documents Web Audio and Browser-Based Sound Systems documents web audio as a browser-native sound practice.",
+      "usesTechnology Web Audio and Browser-Based Sound Systems uses the Web Audio API as its main browser audio reference.",
+      "documents Web Audio and Browser-Based Sound Systems connects browser sound tools to signal archaeology.",
+      "documents Web Audio and Browser-Based Sound Systems links ORETH to public sound tools and browser-native audio research.",
+      "hasPart Knowledge Hub Second Wave includes Web Audio and Browser-Based Sound Systems as a core article."
+    ],
+    "relatedEntityIds": [
+      "ea:concept:web-audio",
+      "ea:technology:web-audio-api",
+      "ea:concept:signal-archaeology",
+      "ea:program:oreth",
+      "ea:collection:knowledge-hub-second-wave"
+    ],
     "status": "active",
     "confidence": "published",
     "modifiedAt": "2026-06-25"
@@ -4288,8 +5304,18 @@
       "interaction humain-machine"
     ],
     "questions": [],
-    "relationLabels": [],
-    "relatedEntityIds": [],
+    "relationLabels": [
+      "documents WebNN and Local AI in the Browser documents WebNN as browser-local inference infrastructure.",
+      "documents WebNN and Local AI in the Browser links WebNN to multimodal browser interfaces and local perception tasks.",
+      "documents WebNN and Local AI in the Browser frames local inference as a human-computer interaction design problem.",
+      "memberOfCollection WebNN and Local AI in the Browser is part of the fourth Knowledge Hub wave."
+    ],
+    "relatedEntityIds": [
+      "ea:technology:webnn",
+      "ea:concept:multimodal-ai",
+      "ea:concept:human-computer-interaction",
+      "ea:collection:knowledge-hub-fourth-wave"
+    ],
     "status": "active",
     "confidence": "published",
     "modifiedAt": "2026-06-25"
@@ -4320,8 +5346,22 @@
       "VASTE"
     ],
     "questions": [],
-    "relationLabels": [],
-    "relatedEntityIds": [],
+    "relationLabels": [
+      "documents Why Graphs Are More Powerful Than Folders documents graph modeling for connected domains.",
+      "documents Why Graphs Are More Powerful Than Folders explains knowledge graph identity and traversal.",
+      "documents Why Graphs Are More Powerful Than Folders explains why entity identity should survive path changes.",
+      "documents Why Graphs Are More Powerful Than Folders uses VASTE as a graph-runtime application.",
+      "documents Why Graphs Are More Powerful Than Folders uses Vestiges as a cultural graph case.",
+      "hasPart Knowledge Hub Third Wave includes Why Graphs Are More Powerful Than Folders."
+    ],
+    "relatedEntityIds": [
+      "ea:concept:graph-modeling",
+      "ea:concept:knowledge-graph",
+      "ea:concept:entity-identity",
+      "ea:program:vaste",
+      "ea:project:vestiges",
+      "ea:collection:knowledge-hub-third-wave"
+    ],
     "status": "active",
     "confidence": "published",
     "modifiedAt": "2026-06-25"
@@ -4354,8 +5394,20 @@
       "Quel minimum est nécessaire pour qu’un univers d’entités exécute des événements de manière cohérente ?",
       "Comment l’identité et le contexte doivent-ils contraindre l’exécution et la propagation des événements ?"
     ],
-    "relationLabels": [],
-    "relatedEntityIds": [],
+    "relationLabels": [
+      "documents Foundational Lineage",
+      "defines Runtime Theory defines the research boundary for contextual execution inside Electronic Artefacts.",
+      "documents Contextual Execution and Graph Runtimes connects contextual execution to Runtime Theory.",
+      "defines Runtime Theory supplies the research questions and boundaries used to define graph runtime within Electronic Artefacts.",
+      "derivedFrom VASTE derives its runtime primitives and contextual execution questions from the Runtime Theory research field."
+    ],
+    "relatedEntityIds": [
+      "ea:publication:foundational-lineage-001",
+      "ea:concept:contextual-execution",
+      "ea:publication:contextual-execution-and-graph-runtimes",
+      "ea:concept:graph-runtime",
+      "ea:program:vaste"
+    ],
     "status": "active",
     "confidence": "validated",
     "modifiedAt": "2026-07-04"
@@ -4412,8 +5464,16 @@
       "Media Authenticity"
     ],
     "questions": [],
-    "relationLabels": [],
-    "relatedEntityIds": [],
+    "relationLabels": [
+      "documents C2PA Content Credentials and Generative Media Provenance documents C2PA as media provenance infrastructure.",
+      "integratesWith Palimpsests can integrate with C2PA to attach signed provenance and production memory to public media derivatives.",
+      "usesTechnology Verifiable Credentials for Cultural Archives and Creator Identity compares W3C credentials with C2PA media provenance."
+    ],
+    "relatedEntityIds": [
+      "ea:publication:c2pa-content-credentials-and-generative-media-provenance",
+      "ea:project:palimpsests",
+      "ea:publication:verifiable-credentials-for-cultural-archives-and-creator-identity"
+    ],
     "status": "active",
     "confidence": "canonical",
     "modifiedAt": "2026-06-25"
@@ -4439,8 +5499,12 @@
       "Interoperability"
     ],
     "questions": [],
-    "relationLabels": [],
-    "relatedEntityIds": [],
+    "relationLabels": [
+      "usesTechnology Event-Driven Architecture and Event Streams uses CloudEvents as an interoperable event-envelope reference."
+    ],
+    "relatedEntityIds": [
+      "ea:publication:event-driven-architecture-and-event-streams"
+    ],
     "status": "active",
     "confidence": "canonical",
     "modifiedAt": "2026-06-25"
@@ -4466,8 +5530,12 @@
       "Web"
     ],
     "questions": [],
-    "relationLabels": [],
-    "relatedEntityIds": [],
+    "relationLabels": [
+      "usesTechnology Typography, Reading Systems and Digital Interfaces uses CSS Fonts as the browser typography reference."
+    ],
+    "relatedEntityIds": [
+      "ea:publication:typography-reading-systems-and-digital-interfaces"
+    ],
     "status": "active",
     "confidence": "validated",
     "modifiedAt": "2026-06-25"
@@ -4496,8 +5564,14 @@
       "Presentation API"
     ],
     "questions": [],
-    "relationLabels": [],
-    "relatedEntityIds": [],
+    "relationLabels": [
+      "documents IIIF and Compound Cultural Objects documents IIIF as a presentation framework for cultural archive objects.",
+      "integratesWith Vestiges can integrate with IIIF for compound cultural object presentation and annotation-aware viewing."
+    ],
+    "relatedEntityIds": [
+      "ea:publication:iiif-and-compound-cultural-objects",
+      "ea:project:vestiges"
+    ],
     "status": "active",
     "confidence": "canonical",
     "modifiedAt": "2026-06-25"
@@ -4524,8 +5598,14 @@
       "SEO"
     ],
     "questions": [],
-    "relationLabels": [],
-    "relatedEntityIds": [],
+    "relationLabels": [
+      "usesTechnology AI Search, Structured Content and Knowledge Graph SEO uses JSON-LD as the structured data bridge between articles and graph records.",
+      "usesTechnology Linked Data and Public Knowledge Pages uses JSON-LD as the practical structured-data format for static knowledge pages."
+    ],
+    "relatedEntityIds": [
+      "ea:publication:ai-search-structured-content-and-knowledge-graph-seo",
+      "ea:publication:linked-data-and-public-knowledge-pages"
+    ],
     "status": "active",
     "confidence": "published",
     "modifiedAt": "2026-06-25"
@@ -4552,8 +5632,12 @@
       "quantification"
     ],
     "questions": [],
-    "relationLabels": [],
-    "relatedEntityIds": [],
+    "relationLabels": [
+      "usesTechnology Local and Open Source AI Systems uses llama.cpp as a reference local inference runtime."
+    ],
+    "relatedEntityIds": [
+      "ea:publication:local-and-open-source-ai-systems"
+    ],
     "status": "active",
     "confidence": "canonical",
     "modifiedAt": "2026-06-25"
@@ -4582,8 +5666,18 @@
       "JSON-RPC"
     ],
     "questions": [],
-    "relationLabels": [],
-    "relatedEntityIds": [],
+    "relationLabels": [
+      "documents Model Context Protocol and Tool-Using AI Systems documents MCP as a capability protocol for AI tools, prompts and resources.",
+      "usesTechnology Observability for AI Agents and Tool-Calling Systems uses MCP as the reference capability surface for tool telemetry.",
+      "integratesWith VASTE can integrate with MCP as a scoped interface for graph resources, prompts and controlled tools.",
+      "usesTechnology Prompt Injection and Trust Boundaries in AI Knowledge Systems uses MCP as a reference surface for resources, tools and host-side consent."
+    ],
+    "relatedEntityIds": [
+      "ea:publication:model-context-protocol-and-tool-using-ai-systems",
+      "ea:publication:observability-for-ai-agents-and-tool-calling-systems",
+      "ea:program:vaste",
+      "ea:publication:prompt-injection-and-trust-boundaries-in-ai-knowledge-systems"
+    ],
     "status": "active",
     "confidence": "canonical",
     "modifiedAt": "2026-06-25"
@@ -4610,8 +5704,14 @@
       "Metrics"
     ],
     "questions": [],
-    "relationLabels": [],
-    "relatedEntityIds": [],
+    "relationLabels": [
+      "documents Observability for AI Agents and Tool-Calling Systems documents OpenTelemetry as telemetry infrastructure.",
+      "integratesWith VASTE can integrate with OpenTelemetry to observe graph-runtime events, tool calls and projection behavior."
+    ],
+    "relatedEntityIds": [
+      "ea:publication:observability-for-ai-agents-and-tool-calling-systems",
+      "ea:program:vaste"
+    ],
     "status": "active",
     "confidence": "canonical",
     "modifiedAt": "2026-06-25"
@@ -4639,8 +5739,12 @@
       "Semantic Web"
     ],
     "questions": [],
-    "relationLabels": [],
-    "relatedEntityIds": [],
+    "relationLabels": [
+      "usesTechnology Ontologies, Taxonomies and Knowledge Modeling uses OWL as its formal ontology reference."
+    ],
+    "relatedEntityIds": [
+      "ea:publication:ontologies-taxonomies-and-knowledge-modeling"
+    ],
     "status": "active",
     "confidence": "canonical",
     "modifiedAt": "2026-06-25"
@@ -4667,8 +5771,14 @@
       "Graph"
     ],
     "questions": [],
-    "relationLabels": [],
-    "relatedEntityIds": [],
+    "relationLabels": [
+      "usesTechnology Knowledge Graphs for Cultural Infrastructure uses RDF as the reference model for graph statements and resources.",
+      "usesTechnology Linked Data and Public Knowledge Pages uses RDF as the underlying graph-data reference for Linked Data."
+    ],
+    "relatedEntityIds": [
+      "ea:publication:knowledge-graphs-for-cultural-infrastructure",
+      "ea:publication:linked-data-and-public-knowledge-pages"
+    ],
     "status": "active",
     "confidence": "published",
     "modifiedAt": "2026-06-25"
@@ -4695,8 +5805,12 @@
       "orchestration"
     ],
     "questions": [],
-    "relationLabels": [],
-    "relatedEntityIds": [],
+    "relationLabels": [
+      "usesTechnology Redis Streams for Orchestration documents Redis Streams as its implementation primitive."
+    ],
+    "relatedEntityIds": [
+      "ea:publication:redis-streams-for-orchestration"
+    ],
     "status": "active",
     "confidence": "canonical",
     "modifiedAt": "2026-06-25"
@@ -4724,8 +5838,12 @@
       "Controlled Vocabulary"
     ],
     "questions": [],
-    "relationLabels": [],
-    "relatedEntityIds": [],
+    "relationLabels": [
+      "usesTechnology Ontologies, Taxonomies and Knowledge Modeling uses SKOS as its vocabulary and taxonomy reference."
+    ],
+    "relatedEntityIds": [
+      "ea:publication:ontologies-taxonomies-and-knowledge-modeling"
+    ],
     "status": "active",
     "confidence": "canonical",
     "modifiedAt": "2026-06-25"
@@ -4751,8 +5869,12 @@
       "Neural Networks"
     ],
     "questions": [],
-    "relationLabels": [],
-    "relatedEntityIds": [],
+    "relationLabels": [
+      "usesTechnology How Large Language Models Actually Work uses the transformer architecture as its principal technical reference."
+    ],
+    "relatedEntityIds": [
+      "ea:publication:how-large-language-models-actually-work"
+    ],
     "status": "active",
     "confidence": "canonical",
     "modifiedAt": "2026-06-25"
@@ -4778,8 +5900,12 @@
       "Interface"
     ],
     "questions": [],
-    "relationLabels": [],
-    "relatedEntityIds": [],
+    "relationLabels": [
+      "usesTechnology Motion Design, Time and Interface Semantics uses Web Animations as its main web timing reference."
+    ],
+    "relatedEntityIds": [
+      "ea:publication:motion-design-time-and-interface-semantics"
+    ],
     "status": "active",
     "confidence": "validated",
     "modifiedAt": "2026-06-25"
@@ -4805,8 +5931,12 @@
       "Audio Graph"
     ],
     "questions": [],
-    "relationLabels": [],
-    "relatedEntityIds": [],
+    "relationLabels": [
+      "usesTechnology Web Audio and Browser-Based Sound Systems uses the Web Audio API as its main browser audio reference."
+    ],
+    "relatedEntityIds": [
+      "ea:publication:web-audio-and-browser-based-sound-systems"
+    ],
     "status": "active",
     "confidence": "canonical",
     "modifiedAt": "2026-06-25"
@@ -4832,8 +5962,12 @@
       "Browser Graphics"
     ],
     "questions": [],
-    "relationLabels": [],
-    "relatedEntityIds": [],
+    "relationLabels": [
+      "usesTechnology Procedural Graphics, Shaders and Visual Systems uses WebGL as the browser graphics reference technology."
+    ],
+    "relatedEntityIds": [
+      "ea:publication:procedural-graphics-shaders-and-visual-systems"
+    ],
     "status": "active",
     "confidence": "canonical",
     "modifiedAt": "2026-06-25"
@@ -4862,8 +5996,12 @@
       "apprentissage automatique Web"
     ],
     "questions": [],
-    "relationLabels": [],
-    "relatedEntityIds": [],
+    "relationLabels": [
+      "documents WebNN and Local AI in the Browser documents WebNN as browser-local inference infrastructure."
+    ],
+    "relatedEntityIds": [
+      "ea:publication:webnn-and-local-ai-in-the-browser"
+    ],
     "status": "active",
     "confidence": "canonical",
     "modifiedAt": "2026-06-25"

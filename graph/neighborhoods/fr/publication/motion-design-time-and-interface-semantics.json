@@ -1,0 +1,102 @@
+{
+  "id": "local:ea:publication:motion-design-time-and-interface-semantics-fr",
+  "kind": "local",
+  "focus": "ea:publication:motion-design-time-and-interface-semantics-fr",
+  "nodes": [
+    {
+      "id": "ea:publication:motion-design-time-and-interface-semantics-fr",
+      "type": "publication",
+      "title": "Motion design, temps et sémantique d'interface",
+      "route": "/fr/publications/motion-design-time-and-interface-semantics/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:concept:motion-design-fr",
+      "type": "concept",
+      "title": "Motion design",
+      "route": "/fr/knowledge/concepts/motion-design/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:technology:web-animations-fr",
+      "type": "technology",
+      "title": "Web Animations",
+      "route": "/fr/knowledge/technologies/web-animations/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:concept:human-computer-interaction-fr",
+      "type": "concept",
+      "title": "Interaction humain-machine",
+      "route": "/fr/knowledge/concepts/human-computer-interaction/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:concept:typography-fr",
+      "type": "concept",
+      "title": "Typographie",
+      "route": "/fr/knowledge/concepts/typography/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:collection:knowledge-hub-second-wave-fr",
+      "type": "collection",
+      "title": "Hub de connaissance, deuxième vague",
+      "route": "/fr/archive/collections/knowledge-hub-second-wave/",
+      "status": "active",
+      "confidence": "published"
+    }
+  ],
+  "edges": [
+    {
+      "id": "ear:motion-design-article-documents-motion-design",
+      "source": "ea:publication:motion-design-time-and-interface-semantics-fr",
+      "target": "ea:concept:motion-design-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Motion Design, Time and Interface Semantics documents motion design as interface semantics.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:motion-design-article-uses-web-animations",
+      "source": "ea:publication:motion-design-time-and-interface-semantics-fr",
+      "target": "ea:technology:web-animations-fr",
+      "predicate": "usesTechnology",
+      "label": "Uses technology",
+      "statement": "Motion Design, Time and Interface Semantics uses Web Animations as its main web timing reference.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:motion-design-article-documents-hci",
+      "source": "ea:publication:motion-design-time-and-interface-semantics-fr",
+      "target": "ea:concept:human-computer-interaction-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Motion Design, Time and Interface Semantics links motion design to human computer interaction.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:motion-design-article-documents-typography",
+      "source": "ea:publication:motion-design-time-and-interface-semantics-fr",
+      "target": "ea:concept:typography-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Motion Design, Time and Interface Semantics connects motion to typography and reading behavior.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:knowledge-hub-second-wave-has-motion-design-article",
+      "source": "ea:collection:knowledge-hub-second-wave-fr",
+      "target": "ea:publication:motion-design-time-and-interface-semantics-fr",
+      "predicate": "hasPart",
+      "label": "Has part",
+      "statement": "Knowledge Hub Second Wave includes Motion Design, Time and Interface Semantics as a core article.",
+      "confidence": "published"
+    }
+  ]
+}

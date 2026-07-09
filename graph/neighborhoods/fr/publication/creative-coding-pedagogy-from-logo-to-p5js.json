@@ -1,0 +1,102 @@
+{
+  "id": "local:ea:publication:creative-coding-pedagogy-from-logo-to-p5js-fr",
+  "kind": "local",
+  "focus": "ea:publication:creative-coding-pedagogy-from-logo-to-p5js-fr",
+  "nodes": [
+    {
+      "id": "ea:publication:creative-coding-pedagogy-from-logo-to-p5js-fr",
+      "type": "publication",
+      "title": "Pédagogie de la programmation créative, de Logo à p5.js",
+      "route": "/fr/publications/creative-coding-pedagogy-from-logo-to-p5js/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:concept:creative-coding-fr",
+      "type": "concept",
+      "title": "Programmation créative",
+      "route": "/fr/knowledge/concepts/creative-coding/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:concept:open-source-fr",
+      "type": "concept",
+      "title": "open source",
+      "route": "/fr/knowledge/concepts/open-source/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:concept:procedural-graphics-fr",
+      "type": "concept",
+      "title": "Graphisme procédural",
+      "route": "/fr/knowledge/concepts/procedural-graphics/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:concept:generative-system-fr",
+      "type": "concept",
+      "title": "Système génératif",
+      "route": "/fr/knowledge/concepts/generative-system/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:collection:knowledge-hub-second-wave-fr",
+      "type": "collection",
+      "title": "Hub de connaissance, deuxième vague",
+      "route": "/fr/archive/collections/knowledge-hub-second-wave/",
+      "status": "active",
+      "confidence": "published"
+    }
+  ],
+  "edges": [
+    {
+      "id": "ear:creative-coding-pedagogy-article-documents-creative-coding",
+      "source": "ea:publication:creative-coding-pedagogy-from-logo-to-p5js-fr",
+      "target": "ea:concept:creative-coding-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Creative Coding Pedagogy from Logo to p5.js documents creative coding as a learning practice.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:creative-coding-pedagogy-article-documents-open-source",
+      "source": "ea:publication:creative-coding-pedagogy-from-logo-to-p5js-fr",
+      "target": "ea:concept:open-source-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Creative Coding Pedagogy from Logo to p5.js connects creative learning to open examples and open-source communities.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:creative-coding-pedagogy-article-documents-procedural-graphics",
+      "source": "ea:publication:creative-coding-pedagogy-from-logo-to-p5js-fr",
+      "target": "ea:concept:procedural-graphics-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Creative Coding Pedagogy from Logo to p5.js links visual learning to procedural graphics.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:creative-coding-pedagogy-article-documents-generative-system",
+      "source": "ea:publication:creative-coding-pedagogy-from-logo-to-p5js-fr",
+      "target": "ea:concept:generative-system-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Creative Coding Pedagogy from Logo to p5.js connects sketch-based learning to generative system design.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:knowledge-hub-second-wave-has-creative-coding-pedagogy-article",
+      "source": "ea:collection:knowledge-hub-second-wave-fr",
+      "target": "ea:publication:creative-coding-pedagogy-from-logo-to-p5js-fr",
+      "predicate": "hasPart",
+      "label": "Has part",
+      "statement": "Knowledge Hub Second Wave includes Creative Coding Pedagogy from Logo to p5.js as a core article.",
+      "confidence": "published"
+    }
+  ]
+}

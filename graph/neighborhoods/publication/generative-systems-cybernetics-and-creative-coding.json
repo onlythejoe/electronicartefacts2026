@@ -4,18 +4,18 @@
   "focus": "ea:publication:generative-systems-cybernetics-and-creative-coding",
   "nodes": [
     {
-      "id": "ea:collection:knowledge-hub-foundations",
-      "type": "collection",
-      "title": "Knowledge Hub Foundations",
-      "route": "/archive/collections/knowledge-hub-foundations/",
+      "id": "ea:publication:generative-systems-cybernetics-and-creative-coding",
+      "type": "publication",
+      "title": "Generative Systems, Cybernetics and Creative Coding",
+      "route": "/publications/generative-systems-cybernetics-and-creative-coding/",
       "status": "active",
       "confidence": "published"
     },
     {
-      "id": "ea:concept:creative-coding",
+      "id": "ea:concept:generative-system",
       "type": "concept",
-      "title": "Creative Coding",
-      "route": "/knowledge/concepts/creative-coding/",
+      "title": "Generative System",
+      "route": "/knowledge/concepts/generative-system/",
       "status": "active",
       "confidence": "validated"
     },
@@ -28,10 +28,10 @@
       "confidence": "validated"
     },
     {
-      "id": "ea:concept:generative-system",
+      "id": "ea:concept:creative-coding",
       "type": "concept",
-      "title": "Generative System",
-      "route": "/knowledge/concepts/generative-system/",
+      "title": "Creative Coding",
+      "route": "/knowledge/concepts/creative-coding/",
       "status": "active",
       "confidence": "validated"
     },
@@ -52,10 +52,10 @@
       "confidence": "published"
     },
     {
-      "id": "ea:publication:generative-systems-cybernetics-and-creative-coding",
-      "type": "publication",
-      "title": "Generative Systems, Cybernetics and Creative Coding",
-      "route": "/publications/generative-systems-cybernetics-and-creative-coding/",
+      "id": "ea:collection:knowledge-hub-foundations",
+      "type": "collection",
+      "title": "Knowledge Hub Foundations",
+      "route": "/archive/collections/knowledge-hub-foundations/",
       "status": "active",
       "confidence": "published"
     }

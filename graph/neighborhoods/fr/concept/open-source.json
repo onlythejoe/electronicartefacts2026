@@ -1,0 +1,68 @@
+{
+  "id": "local:ea:concept:open-source-fr",
+  "kind": "local",
+  "focus": "ea:concept:open-source-fr",
+  "nodes": [
+    {
+      "id": "ea:concept:open-source-fr",
+      "type": "concept",
+      "title": "open source",
+      "route": "/fr/knowledge/concepts/open-source/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:publication:open-source-as-cultural-infrastructure-fr",
+      "type": "publication",
+      "title": "L’open source comme infrastructure culturelle",
+      "route": "/fr/publications/open-source-as-cultural-infrastructure/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:creative-coding-pedagogy-from-logo-to-p5js-fr",
+      "type": "publication",
+      "title": "Pédagogie de la programmation créative, de Logo à p5.js",
+      "route": "/fr/publications/creative-coding-pedagogy-from-logo-to-p5js/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:local-and-open-source-ai-systems-fr",
+      "type": "publication",
+      "title": "Systèmes d’IA locaux et open source",
+      "route": "/fr/publications/local-and-open-source-ai-systems/",
+      "status": "active",
+      "confidence": "published"
+    }
+  ],
+  "edges": [
+    {
+      "id": "ear:open-source-article-documents-open-source",
+      "source": "ea:publication:open-source-as-cultural-infrastructure-fr",
+      "target": "ea:concept:open-source-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Open Source as Cultural Infrastructure documents open source as a licensing, maintenance and cultural infrastructure practice.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:creative-coding-pedagogy-article-documents-open-source",
+      "source": "ea:publication:creative-coding-pedagogy-from-logo-to-p5js-fr",
+      "target": "ea:concept:open-source-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Creative Coding Pedagogy from Logo to p5.js connects creative learning to open examples and open-source communities.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:local-ai-article-documents-open-source",
+      "source": "ea:publication:local-and-open-source-ai-systems-fr",
+      "target": "ea:concept:open-source-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Local and Open Source AI Systems applies open-source principles to AI infrastructure and licensing.",
+      "confidence": "published"
+    }
+  ]
+}

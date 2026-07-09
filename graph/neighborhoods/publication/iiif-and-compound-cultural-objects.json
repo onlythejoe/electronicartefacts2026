@@ -4,12 +4,20 @@
   "focus": "ea:publication:iiif-and-compound-cultural-objects",
   "nodes": [
     {
-      "id": "ea:collection:knowledge-hub-fourth-wave",
-      "type": "collection",
-      "title": "Knowledge Hub Fourth Wave",
-      "route": "/archive/collections/knowledge-hub-fourth-wave/",
+      "id": "ea:publication:iiif-and-compound-cultural-objects",
+      "type": "publication",
+      "title": "IIIF and Compound Cultural Objects",
+      "route": "/publications/iiif-and-compound-cultural-objects/",
       "status": "active",
       "confidence": "published"
+    },
+    {
+      "id": "ea:technology:iiif",
+      "type": "technology",
+      "title": "IIIF",
+      "route": "/knowledge/technologies/iiif/",
+      "status": "active",
+      "confidence": "canonical"
     },
     {
       "id": "ea:concept:digital-preservation",
@@ -28,20 +36,12 @@
       "confidence": "observed"
     },
     {
-      "id": "ea:publication:iiif-and-compound-cultural-objects",
-      "type": "publication",
-      "title": "IIIF and Compound Cultural Objects",
-      "route": "/publications/iiif-and-compound-cultural-objects/",
+      "id": "ea:collection:knowledge-hub-fourth-wave",
+      "type": "collection",
+      "title": "Knowledge Hub Fourth Wave",
+      "route": "/archive/collections/knowledge-hub-fourth-wave/",
       "status": "active",
       "confidence": "published"
-    },
-    {
-      "id": "ea:technology:iiif",
-      "type": "technology",
-      "title": "IIIF",
-      "route": "/knowledge/technologies/iiif/",
-      "status": "active",
-      "confidence": "canonical"
     }
   ],
   "edges": [

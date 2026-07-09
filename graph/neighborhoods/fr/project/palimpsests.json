@@ -1,0 +1,170 @@
+{
+  "id": "local:ea:project:palimpsests-fr",
+  "kind": "local",
+  "focus": "ea:project:palimpsests-fr",
+  "nodes": [
+    {
+      "id": "ea:project:palimpsests-fr",
+      "type": "project",
+      "title": "Palimpsests",
+      "route": "/fr/projects/palimpsests/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:c2pa-content-credentials-and-generative-media-provenance-fr",
+      "type": "publication",
+      "title": "C2PA, Content Credentials et provenance des médias génératifs",
+      "route": "/fr/publications/c2pa-content-credentials-and-generative-media-provenance/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:technology:c2pa-fr",
+      "type": "technology",
+      "title": "C2PA",
+      "route": "/fr/knowledge/technologies/c2pa/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:program:oreth-fr",
+      "type": "program",
+      "title": "ORETH",
+      "route": "/fr/programs/oreth/",
+      "status": "prototype",
+      "confidence": "observed"
+    },
+    {
+      "id": "ea:concept:signal-archaeology-fr",
+      "type": "concept",
+      "title": "Archéologie du signal",
+      "route": "/fr/knowledge/concepts/signal-archaeology/",
+      "status": "active",
+      "confidence": "observed"
+    },
+    {
+      "id": "ea:concept:digital-preservation-fr",
+      "type": "concept",
+      "title": "Préservation numérique",
+      "route": "/fr/knowledge/concepts/digital-preservation/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:publication:digital-preservation-and-living-archives-fr",
+      "type": "publication",
+      "title": "Préservation numérique et archives vivantes",
+      "route": "/fr/publications/digital-preservation-and-living-archives/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:generative-systems-cybernetics-and-creative-coding-fr",
+      "type": "publication",
+      "title": "Systèmes génératifs, cybernétique et programmation créative",
+      "route": "/fr/publications/generative-systems-cybernetics-and-creative-coding/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:signal-archaeology-audio-memory-and-machine-listening-fr",
+      "type": "publication",
+      "title": "Archéologie du signal, mémoire audio et écoute machine",
+      "route": "/fr/publications/signal-archaeology-audio-memory-and-machine-listening/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:multimodal-ai-across-text-image-audio-and-video-fr",
+      "type": "publication",
+      "title": "IA multimodale pour le texte, l'image, l'audio et la vidéo",
+      "route": "/fr/publications/multimodal-ai-across-text-image-audio-and-video/",
+      "status": "active",
+      "confidence": "published"
+    }
+  ],
+  "edges": [
+    {
+      "id": "ear:c2pa-article-documents-palimpsests",
+      "source": "ea:publication:c2pa-content-credentials-and-generative-media-provenance-fr",
+      "target": "ea:project:palimpsests-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "C2PA Content Credentials and Generative Media Provenance applies media provenance to Palimpsests and production memory.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:palimpsests-integrates-with-c2pa",
+      "source": "ea:project:palimpsests-fr",
+      "target": "ea:technology:c2pa-fr",
+      "predicate": "integratesWith",
+      "label": "Integrates with",
+      "statement": "Palimpsests can integrate with C2PA to attach signed provenance and production memory to public media derivatives.",
+      "confidence": "observed"
+    },
+    {
+      "id": "ear:palimpsests-powered-by-oreth",
+      "source": "ea:project:palimpsests-fr",
+      "target": "ea:program:oreth-fr",
+      "predicate": "poweredBy",
+      "label": "Powered by",
+      "statement": "Palimpsests uses ORETH as its audio intelligence and artistic research layer.",
+      "confidence": "observed"
+    },
+    {
+      "id": "ear:palimpsests-applies-signal-archaeology",
+      "source": "ea:project:palimpsests-fr",
+      "target": "ea:concept:signal-archaeology-fr",
+      "predicate": "appliesConcept",
+      "label": "Applies concept",
+      "statement": "Palimpsests applies signal archaeology by treating sonic residue and media traces as cultural material.",
+      "confidence": "observed"
+    },
+    {
+      "id": "ear:palimpsests-applies-digital-preservation",
+      "source": "ea:project:palimpsests-fr",
+      "target": "ea:concept:digital-preservation-fr",
+      "predicate": "appliesConcept",
+      "label": "Applies concept",
+      "statement": "Palimpsests applies digital preservation by treating audio, visual and research traces as a compound cultural record.",
+      "confidence": "observed"
+    },
+    {
+      "id": "ear:digital-preservation-article-documents-palimpsests",
+      "source": "ea:publication:digital-preservation-and-living-archives-fr",
+      "target": "ea:project:palimpsests-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Digital Preservation and Living Archives uses Palimpsests as an example of born-digital cultural preservation.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:generative-systems-article-documents-palimpsests",
+      "source": "ea:publication:generative-systems-cybernetics-and-creative-coding-fr",
+      "target": "ea:project:palimpsests-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Generative Systems, Cybernetics and Creative Coding links Palimpsests to repetition, residue and transformation.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:signal-archaeology-article-documents-palimpsests",
+      "source": "ea:publication:signal-archaeology-audio-memory-and-machine-listening-fr",
+      "target": "ea:project:palimpsests-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Signal Archaeology, Audio Memory and Machine Listening links Palimpsests to audio memory and sonic residue.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:multimodal-article-documents-palimpsests",
+      "source": "ea:publication:multimodal-ai-across-text-image-audio-and-video-fr",
+      "target": "ea:project:palimpsests-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Multimodal AI Across Text, Image, Audio and Video uses Palimpsests as a compound media and provenance context.",
+      "confidence": "published"
+    }
+  ]
+}

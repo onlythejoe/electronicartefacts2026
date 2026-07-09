@@ -1,0 +1,85 @@
+{
+  "id": "local:ea:publication:webnn-and-local-ai-in-the-browser-fr",
+  "kind": "local",
+  "focus": "ea:publication:webnn-and-local-ai-in-the-browser-fr",
+  "nodes": [
+    {
+      "id": "ea:publication:webnn-and-local-ai-in-the-browser-fr",
+      "type": "publication",
+      "title": "WebNN et IA locale dans le navigateur",
+      "route": "/fr/publications/webnn-and-local-ai-in-the-browser/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:technology:webnn-fr",
+      "type": "technology",
+      "title": "WebNN",
+      "route": "/fr/knowledge/technologies/webnn/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:concept:multimodal-ai-fr",
+      "type": "concept",
+      "title": "IA multimodale",
+      "route": "/fr/knowledge/concepts/multimodal-ai/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:concept:human-computer-interaction-fr",
+      "type": "concept",
+      "title": "Interaction humain-machine",
+      "route": "/fr/knowledge/concepts/human-computer-interaction/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:collection:knowledge-hub-fourth-wave-fr",
+      "type": "collection",
+      "title": "Hub de connaissance, quatrième vague",
+      "route": "/fr/archive/collections/knowledge-hub-fourth-wave/",
+      "status": "active",
+      "confidence": "published"
+    }
+  ],
+  "edges": [
+    {
+      "id": "ear:webnn-article-documents-webnn",
+      "source": "ea:publication:webnn-and-local-ai-in-the-browser-fr",
+      "target": "ea:technology:webnn-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "WebNN and Local AI in the Browser documents WebNN as browser-local inference infrastructure.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:webnn-article-documents-multimodal-ai",
+      "source": "ea:publication:webnn-and-local-ai-in-the-browser-fr",
+      "target": "ea:concept:multimodal-ai-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "WebNN and Local AI in the Browser links WebNN to multimodal browser interfaces and local perception tasks.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:webnn-article-documents-hci",
+      "source": "ea:publication:webnn-and-local-ai-in-the-browser-fr",
+      "target": "ea:concept:human-computer-interaction-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "WebNN and Local AI in the Browser frames local inference as a human-computer interaction design problem.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:knowledge-hub-fourth-wave-has-webnn-article",
+      "source": "ea:publication:webnn-and-local-ai-in-the-browser-fr",
+      "target": "ea:collection:knowledge-hub-fourth-wave-fr",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "WebNN and Local AI in the Browser is part of the fourth Knowledge Hub wave.",
+      "confidence": "published"
+    }
+  ]
+}

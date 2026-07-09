@@ -4,12 +4,20 @@
   "focus": "ea:publication:generative-ai-latent-space-and-creative-workflows",
   "nodes": [
     {
-      "id": "ea:collection:knowledge-hub-second-wave",
-      "type": "collection",
-      "title": "Knowledge Hub Second Wave",
-      "route": "/archive/collections/knowledge-hub-second-wave/",
+      "id": "ea:publication:generative-ai-latent-space-and-creative-workflows",
+      "type": "publication",
+      "title": "Generative AI, Latent Space and Creative Workflows",
+      "route": "/publications/generative-ai-latent-space-and-creative-workflows/",
       "status": "active",
       "confidence": "published"
+    },
+    {
+      "id": "ea:concept:generative-ai",
+      "type": "concept",
+      "title": "Generative AI",
+      "route": "/knowledge/concepts/generative-ai/",
+      "status": "active",
+      "confidence": "validated"
     },
     {
       "id": "ea:concept:augmented-intelligence",
@@ -20,10 +28,10 @@
       "confidence": "canonical"
     },
     {
-      "id": "ea:concept:generative-ai",
+      "id": "ea:concept:provenance",
       "type": "concept",
-      "title": "Generative AI",
-      "route": "/knowledge/concepts/generative-ai/",
+      "title": "Provenance",
+      "route": "/knowledge/concepts/provenance/",
       "status": "active",
       "confidence": "validated"
     },
@@ -44,18 +52,10 @@
       "confidence": "canonical"
     },
     {
-      "id": "ea:concept:provenance",
-      "type": "concept",
-      "title": "Provenance",
-      "route": "/knowledge/concepts/provenance/",
-      "status": "active",
-      "confidence": "validated"
-    },
-    {
-      "id": "ea:publication:generative-ai-latent-space-and-creative-workflows",
-      "type": "publication",
-      "title": "Generative AI, Latent Space and Creative Workflows",
-      "route": "/publications/generative-ai-latent-space-and-creative-workflows/",
+      "id": "ea:collection:knowledge-hub-second-wave",
+      "type": "collection",
+      "title": "Knowledge Hub Second Wave",
+      "route": "/archive/collections/knowledge-hub-second-wave/",
       "status": "active",
       "confidence": "published"
     }

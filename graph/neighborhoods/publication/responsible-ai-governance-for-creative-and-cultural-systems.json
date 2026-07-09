@@ -4,28 +4,12 @@
   "focus": "ea:publication:responsible-ai-governance-for-creative-and-cultural-systems",
   "nodes": [
     {
-      "id": "ea:collection:knowledge-hub-fourth-wave",
-      "type": "collection",
-      "title": "Knowledge Hub Fourth Wave",
-      "route": "/archive/collections/knowledge-hub-fourth-wave/",
+      "id": "ea:publication:responsible-ai-governance-for-creative-and-cultural-systems",
+      "type": "publication",
+      "title": "Responsible AI Governance for Creative and Cultural Systems",
+      "route": "/publications/responsible-ai-governance-for-creative-and-cultural-systems/",
       "status": "active",
       "confidence": "published"
-    },
-    {
-      "id": "ea:concept:augmented-intelligence",
-      "type": "concept",
-      "title": "Augmented Intelligence",
-      "route": "/knowledge/concepts/augmented-intelligence/",
-      "status": "active",
-      "confidence": "canonical"
-    },
-    {
-      "id": "ea:concept:contextual-execution",
-      "type": "concept",
-      "title": "Contextual Execution",
-      "route": "/knowledge/concepts/contextual-execution/",
-      "status": "active",
-      "confidence": "canonical"
     },
     {
       "id": "ea:concept:generative-ai",
@@ -36,6 +20,14 @@
       "confidence": "validated"
     },
     {
+      "id": "ea:concept:augmented-intelligence",
+      "type": "concept",
+      "title": "Augmented Intelligence",
+      "route": "/knowledge/concepts/augmented-intelligence/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
       "id": "ea:concept:provenance",
       "type": "concept",
       "title": "Provenance",
@@ -44,10 +36,18 @@
       "confidence": "validated"
     },
     {
-      "id": "ea:publication:responsible-ai-governance-for-creative-and-cultural-systems",
-      "type": "publication",
-      "title": "Responsible AI Governance for Creative and Cultural Systems",
-      "route": "/publications/responsible-ai-governance-for-creative-and-cultural-systems/",
+      "id": "ea:concept:contextual-execution",
+      "type": "concept",
+      "title": "Contextual Execution",
+      "route": "/knowledge/concepts/contextual-execution/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:collection:knowledge-hub-fourth-wave",
+      "type": "collection",
+      "title": "Knowledge Hub Fourth Wave",
+      "route": "/archive/collections/knowledge-hub-fourth-wave/",
       "status": "active",
       "confidence": "published"
     }

@@ -1,0 +1,102 @@
+{
+  "id": "local:ea:concept:metadata-fr",
+  "kind": "local",
+  "focus": "ea:concept:metadata-fr",
+  "nodes": [
+    {
+      "id": "ea:concept:metadata-fr",
+      "type": "concept",
+      "title": "Métadonnées",
+      "route": "/fr/knowledge/concepts/metadata/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:publication:personal-knowledge-systems-and-digital-gardens-fr",
+      "type": "publication",
+      "title": "Systèmes personnels de connaissance et jardins numériques",
+      "route": "/fr/publications/personal-knowledge-systems-and-digital-gardens/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:metadata-cataloguing-and-cultural-memory-fr",
+      "type": "publication",
+      "title": "Métadonnées, catalogage et mémoire culturelle",
+      "route": "/fr/publications/metadata-cataloguing-and-cultural-memory/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:typography-reading-systems-and-digital-interfaces-fr",
+      "type": "publication",
+      "title": "Typographie, systèmes de lecture et interfaces numériques",
+      "route": "/fr/publications/typography-reading-systems-and-digital-interfaces/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:retrieval-augmented-generation-and-knowledge-systems-fr",
+      "type": "publication",
+      "title": "Génération augmentée par récupération et systèmes de connaissance",
+      "route": "/fr/publications/retrieval-augmented-generation-and-knowledge-systems/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:ontologies-taxonomies-and-knowledge-modeling-fr",
+      "type": "publication",
+      "title": "Ontologies, taxonomies et modélisation des connaissances",
+      "route": "/fr/publications/ontologies-taxonomies-and-knowledge-modeling/",
+      "status": "active",
+      "confidence": "published"
+    }
+  ],
+  "edges": [
+    {
+      "id": "ear:personal-knowledge-article-documents-metadata",
+      "source": "ea:publication:personal-knowledge-systems-and-digital-gardens-fr",
+      "target": "ea:concept:metadata-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Personal Knowledge Systems and Digital Gardens connects durable note systems to metadata and publication state.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:metadata-article-documents-metadata",
+      "source": "ea:publication:metadata-cataloguing-and-cultural-memory-fr",
+      "target": "ea:concept:metadata-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Metadata, Cataloguing and Cultural Memory documents metadata as a cultural memory layer.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:typography-article-documents-metadata",
+      "source": "ea:publication:typography-reading-systems-and-digital-interfaces-fr",
+      "target": "ea:concept:metadata-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Typography, Reading Systems and Digital Interfaces links reading systems to visible metadata and article structure.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:rag-article-documents-metadata",
+      "source": "ea:publication:retrieval-augmented-generation-and-knowledge-systems-fr",
+      "target": "ea:concept:metadata-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Retrieval-Augmented Generation and Knowledge Systems treats metadata as retrieval infrastructure.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:ontology-article-documents-metadata",
+      "source": "ea:publication:ontologies-taxonomies-and-knowledge-modeling-fr",
+      "target": "ea:concept:metadata-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Ontologies, Taxonomies and Knowledge Modeling positions metadata within a broader semantic architecture.",
+      "confidence": "published"
+    }
+  ]
+}

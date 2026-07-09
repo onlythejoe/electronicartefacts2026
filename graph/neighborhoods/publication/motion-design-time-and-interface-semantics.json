@@ -4,20 +4,12 @@
   "focus": "ea:publication:motion-design-time-and-interface-semantics",
   "nodes": [
     {
-      "id": "ea:collection:knowledge-hub-second-wave",
-      "type": "collection",
-      "title": "Knowledge Hub Second Wave",
-      "route": "/archive/collections/knowledge-hub-second-wave/",
+      "id": "ea:publication:motion-design-time-and-interface-semantics",
+      "type": "publication",
+      "title": "Motion Design, Time and Interface Semantics",
+      "route": "/publications/motion-design-time-and-interface-semantics/",
       "status": "active",
       "confidence": "published"
-    },
-    {
-      "id": "ea:concept:human-computer-interaction",
-      "type": "concept",
-      "title": "Human Computer Interaction",
-      "route": "/knowledge/concepts/human-computer-interaction/",
-      "status": "active",
-      "confidence": "canonical"
     },
     {
       "id": "ea:concept:motion-design",
@@ -28,6 +20,22 @@
       "confidence": "validated"
     },
     {
+      "id": "ea:technology:web-animations",
+      "type": "technology",
+      "title": "Web Animations",
+      "route": "/knowledge/technologies/web-animations/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:concept:human-computer-interaction",
+      "type": "concept",
+      "title": "Human Computer Interaction",
+      "route": "/knowledge/concepts/human-computer-interaction/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
       "id": "ea:concept:typography",
       "type": "concept",
       "title": "Typography",
@@ -36,20 +44,12 @@
       "confidence": "canonical"
     },
     {
-      "id": "ea:publication:motion-design-time-and-interface-semantics",
-      "type": "publication",
-      "title": "Motion Design, Time and Interface Semantics",
-      "route": "/publications/motion-design-time-and-interface-semantics/",
+      "id": "ea:collection:knowledge-hub-second-wave",
+      "type": "collection",
+      "title": "Knowledge Hub Second Wave",
+      "route": "/archive/collections/knowledge-hub-second-wave/",
       "status": "active",
       "confidence": "published"
-    },
-    {
-      "id": "ea:technology:web-animations",
-      "type": "technology",
-      "title": "Web Animations",
-      "route": "/knowledge/technologies/web-animations/",
-      "status": "active",
-      "confidence": "validated"
     }
   ],
   "edges": [

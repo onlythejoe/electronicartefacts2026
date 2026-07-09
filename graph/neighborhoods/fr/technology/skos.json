@@ -1,0 +1,34 @@
+{
+  "id": "local:ea:technology:skos-fr",
+  "kind": "local",
+  "focus": "ea:technology:skos-fr",
+  "nodes": [
+    {
+      "id": "ea:technology:skos-fr",
+      "type": "technology",
+      "title": "SKOS",
+      "route": "/fr/knowledge/technologies/skos/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:publication:ontologies-taxonomies-and-knowledge-modeling-fr",
+      "type": "publication",
+      "title": "Ontologies, taxonomies et modélisation des connaissances",
+      "route": "/fr/publications/ontologies-taxonomies-and-knowledge-modeling/",
+      "status": "active",
+      "confidence": "published"
+    }
+  ],
+  "edges": [
+    {
+      "id": "ear:ontology-article-uses-skos",
+      "source": "ea:publication:ontologies-taxonomies-and-knowledge-modeling-fr",
+      "target": "ea:technology:skos-fr",
+      "predicate": "usesTechnology",
+      "label": "Uses technology",
+      "statement": "Ontologies, Taxonomies and Knowledge Modeling uses SKOS as its vocabulary and taxonomy reference.",
+      "confidence": "published"
+    }
+  ]
+}

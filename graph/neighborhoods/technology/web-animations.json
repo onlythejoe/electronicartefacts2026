@@ -4,20 +4,20 @@
   "focus": "ea:technology:web-animations",
   "nodes": [
     {
-      "id": "ea:publication:motion-design-time-and-interface-semantics",
-      "type": "publication",
-      "title": "Motion Design, Time and Interface Semantics",
-      "route": "/publications/motion-design-time-and-interface-semantics/",
-      "status": "active",
-      "confidence": "published"
-    },
-    {
       "id": "ea:technology:web-animations",
       "type": "technology",
       "title": "Web Animations",
       "route": "/knowledge/technologies/web-animations/",
       "status": "active",
       "confidence": "validated"
+    },
+    {
+      "id": "ea:publication:motion-design-time-and-interface-semantics",
+      "type": "publication",
+      "title": "Motion Design, Time and Interface Semantics",
+      "route": "/publications/motion-design-time-and-interface-semantics/",
+      "status": "active",
+      "confidence": "published"
     }
   ],
   "edges": [

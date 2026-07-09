@@ -4,7 +4,12 @@ import { predicateDefinitions } from "../schema/predicates.js";
 import type { Entity, ProjectEntity } from "../schema/entities.js";
 import type { EntityRef, MediaRef } from "../schema/entity.js";
 import type { RelationStatement } from "../schema/relation.js";
-import { publicEntityIds, publicRefs, publicRelationsForEntity } from "../semantic/visibility.js";
+import {
+  connectedEntityIdForRelation,
+  publicEntityIds,
+  publicRefs,
+  publicRelationsForEntity,
+} from "../semantic/visibility.js";
 import { renderCitationPanel } from "./components/citation-panel.js";
 import { renderEntityMetadata } from "./components/entity-metadata.js";
 import { renderRelationshipGroups } from "./components/relationship-groups.js";
@@ -411,8 +416,7 @@ const relationDisplay = (
   byId: Map<string, Entity>,
   routeById: Record<string, string>,
 ) => {
-  const outbound = relation.subject === project.id;
-  const connectedId = outbound ? relation.object : relation.subject;
+  const connectedId = connectedEntityIdForRelation(project, relation);
   const connectedEntity = byId.get(connectedId);
   const predicate = predicateDefinitions[relation.predicate];
   return {

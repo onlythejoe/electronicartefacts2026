@@ -1,0 +1,51 @@
+{
+  "id": "local:ea:concept:hypertext-fr",
+  "kind": "local",
+  "focus": "ea:concept:hypertext-fr",
+  "nodes": [
+    {
+      "id": "ea:concept:hypertext-fr",
+      "type": "concept",
+      "title": "Hypertexte",
+      "route": "/fr/knowledge/concepts/hypertext/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:publication:hypertext-and-augmented-knowledge-systems-fr",
+      "type": "publication",
+      "title": "Hypertexte et systèmes de connaissance augmentée",
+      "route": "/fr/publications/hypertext-and-augmented-knowledge-systems/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:personal-knowledge-systems-and-digital-gardens-fr",
+      "type": "publication",
+      "title": "Systèmes personnels de connaissance et jardins numériques",
+      "route": "/fr/publications/personal-knowledge-systems-and-digital-gardens/",
+      "status": "active",
+      "confidence": "published"
+    }
+  ],
+  "edges": [
+    {
+      "id": "ear:hypertext-article-documents-hypertext",
+      "source": "ea:publication:hypertext-and-augmented-knowledge-systems-fr",
+      "target": "ea:concept:hypertext-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Hypertext and Augmented Knowledge Systems documents hypertext as an architecture for linked public knowledge.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:personal-knowledge-article-documents-hypertext",
+      "source": "ea:publication:personal-knowledge-systems-and-digital-gardens-fr",
+      "target": "ea:concept:hypertext-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Personal Knowledge Systems and Digital Gardens uses hypertext as the linking model for public knowledge gardens.",
+      "confidence": "published"
+    }
+  ]
+}

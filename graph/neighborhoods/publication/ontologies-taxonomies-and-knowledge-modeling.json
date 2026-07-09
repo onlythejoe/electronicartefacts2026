@@ -4,12 +4,20 @@
   "focus": "ea:publication:ontologies-taxonomies-and-knowledge-modeling",
   "nodes": [
     {
-      "id": "ea:collection:knowledge-hub-third-wave",
-      "type": "collection",
-      "title": "Knowledge Hub Third Wave",
-      "route": "/archive/collections/knowledge-hub-third-wave/",
+      "id": "ea:publication:ontologies-taxonomies-and-knowledge-modeling",
+      "type": "publication",
+      "title": "Ontologies, Taxonomies and Knowledge Modeling",
+      "route": "/publications/ontologies-taxonomies-and-knowledge-modeling/",
       "status": "active",
       "confidence": "published"
+    },
+    {
+      "id": "ea:concept:ontology",
+      "type": "concept",
+      "title": "Ontology",
+      "route": "/knowledge/concepts/ontology/",
+      "status": "active",
+      "confidence": "canonical"
     },
     {
       "id": "ea:concept:knowledge-graph",
@@ -28,30 +36,6 @@
       "confidence": "canonical"
     },
     {
-      "id": "ea:concept:ontology",
-      "type": "concept",
-      "title": "Ontology",
-      "route": "/knowledge/concepts/ontology/",
-      "status": "active",
-      "confidence": "canonical"
-    },
-    {
-      "id": "ea:project:vestiges",
-      "type": "project",
-      "title": "Vestiges",
-      "route": "/projects/vestiges/",
-      "status": "development",
-      "confidence": "observed"
-    },
-    {
-      "id": "ea:publication:ontologies-taxonomies-and-knowledge-modeling",
-      "type": "publication",
-      "title": "Ontologies, Taxonomies and Knowledge Modeling",
-      "route": "/publications/ontologies-taxonomies-and-knowledge-modeling/",
-      "status": "active",
-      "confidence": "published"
-    },
-    {
       "id": "ea:technology:owl",
       "type": "technology",
       "title": "OWL",
@@ -66,6 +50,22 @@
       "route": "/knowledge/technologies/skos/",
       "status": "active",
       "confidence": "canonical"
+    },
+    {
+      "id": "ea:project:vestiges",
+      "type": "project",
+      "title": "Vestiges",
+      "route": "/projects/vestiges/",
+      "status": "development",
+      "confidence": "observed"
+    },
+    {
+      "id": "ea:collection:knowledge-hub-third-wave",
+      "type": "collection",
+      "title": "Knowledge Hub Third Wave",
+      "route": "/archive/collections/knowledge-hub-third-wave/",
+      "status": "active",
+      "confidence": "published"
     }
   ],
   "edges": [

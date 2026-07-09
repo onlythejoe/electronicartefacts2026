@@ -4,12 +4,20 @@
   "focus": "ea:publication:redis-streams-for-orchestration",
   "nodes": [
     {
-      "id": "ea:collection:knowledge-hub-third-wave",
-      "type": "collection",
-      "title": "Knowledge Hub Third Wave",
-      "route": "/archive/collections/knowledge-hub-third-wave/",
+      "id": "ea:publication:redis-streams-for-orchestration",
+      "type": "publication",
+      "title": "Redis Streams for Orchestration",
+      "route": "/publications/redis-streams-for-orchestration/",
       "status": "active",
       "confidence": "published"
+    },
+    {
+      "id": "ea:technology:redis-streams",
+      "type": "technology",
+      "title": "Redis Streams",
+      "route": "/knowledge/technologies/redis-streams/",
+      "status": "active",
+      "confidence": "canonical"
     },
     {
       "id": "ea:concept:event-driven-architecture",
@@ -28,20 +36,12 @@
       "confidence": "published"
     },
     {
-      "id": "ea:publication:redis-streams-for-orchestration",
-      "type": "publication",
-      "title": "Redis Streams for Orchestration",
-      "route": "/publications/redis-streams-for-orchestration/",
+      "id": "ea:collection:knowledge-hub-third-wave",
+      "type": "collection",
+      "title": "Knowledge Hub Third Wave",
+      "route": "/archive/collections/knowledge-hub-third-wave/",
       "status": "active",
       "confidence": "published"
-    },
-    {
-      "id": "ea:technology:redis-streams",
-      "type": "technology",
-      "title": "Redis Streams",
-      "route": "/knowledge/technologies/redis-streams/",
-      "status": "active",
-      "confidence": "canonical"
     }
   ],
   "edges": [

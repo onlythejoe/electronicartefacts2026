@@ -4,12 +4,20 @@
   "focus": "ea:publication:retrieval-augmented-generation-and-knowledge-systems",
   "nodes": [
     {
-      "id": "ea:collection:knowledge-hub-third-wave",
-      "type": "collection",
-      "title": "Knowledge Hub Third Wave",
-      "route": "/archive/collections/knowledge-hub-third-wave/",
+      "id": "ea:publication:retrieval-augmented-generation-and-knowledge-systems",
+      "type": "publication",
+      "title": "Retrieval-Augmented Generation and Knowledge Systems",
+      "route": "/publications/retrieval-augmented-generation-and-knowledge-systems/",
       "status": "active",
       "confidence": "published"
+    },
+    {
+      "id": "ea:concept:retrieval-augmented-generation",
+      "type": "concept",
+      "title": "Retrieval-Augmented Generation",
+      "route": "/knowledge/concepts/retrieval-augmented-generation/",
+      "status": "active",
+      "confidence": "canonical"
     },
     {
       "id": "ea:concept:knowledge-graph",
@@ -36,14 +44,6 @@
       "confidence": "validated"
     },
     {
-      "id": "ea:concept:retrieval-augmented-generation",
-      "type": "concept",
-      "title": "Retrieval-Augmented Generation",
-      "route": "/knowledge/concepts/retrieval-augmented-generation/",
-      "status": "active",
-      "confidence": "canonical"
-    },
-    {
       "id": "ea:program:vaste",
       "type": "program",
       "title": "VASTE",
@@ -52,10 +52,10 @@
       "confidence": "published"
     },
     {
-      "id": "ea:publication:retrieval-augmented-generation-and-knowledge-systems",
-      "type": "publication",
-      "title": "Retrieval-Augmented Generation and Knowledge Systems",
-      "route": "/publications/retrieval-augmented-generation-and-knowledge-systems/",
+      "id": "ea:collection:knowledge-hub-third-wave",
+      "type": "collection",
+      "title": "Knowledge Hub Third Wave",
+      "route": "/archive/collections/knowledge-hub-third-wave/",
       "status": "active",
       "confidence": "published"
     }

@@ -4,20 +4,20 @@
   "focus": "ea:publication:signal-archaeology-audio-memory-and-machine-listening",
   "nodes": [
     {
-      "id": "ea:collection:knowledge-hub-foundations",
-      "type": "collection",
-      "title": "Knowledge Hub Foundations",
-      "route": "/archive/collections/knowledge-hub-foundations/",
+      "id": "ea:publication:signal-archaeology-audio-memory-and-machine-listening",
+      "type": "publication",
+      "title": "Signal Archaeology, Audio Memory and Machine Listening",
+      "route": "/publications/signal-archaeology-audio-memory-and-machine-listening/",
       "status": "active",
       "confidence": "published"
     },
     {
-      "id": "ea:concept:digital-preservation",
+      "id": "ea:concept:signal-archaeology",
       "type": "concept",
-      "title": "Digital Preservation",
-      "route": "/knowledge/concepts/digital-preservation/",
+      "title": "Signal Archaeology",
+      "route": "/knowledge/concepts/signal-archaeology/",
       "status": "active",
-      "confidence": "validated"
+      "confidence": "observed"
     },
     {
       "id": "ea:concept:provenance",
@@ -28,12 +28,12 @@
       "confidence": "validated"
     },
     {
-      "id": "ea:concept:signal-archaeology",
+      "id": "ea:concept:digital-preservation",
       "type": "concept",
-      "title": "Signal Archaeology",
-      "route": "/knowledge/concepts/signal-archaeology/",
+      "title": "Digital Preservation",
+      "route": "/knowledge/concepts/digital-preservation/",
       "status": "active",
-      "confidence": "observed"
+      "confidence": "validated"
     },
     {
       "id": "ea:program:oreth",
@@ -52,10 +52,10 @@
       "confidence": "published"
     },
     {
-      "id": "ea:publication:signal-archaeology-audio-memory-and-machine-listening",
-      "type": "publication",
-      "title": "Signal Archaeology, Audio Memory and Machine Listening",
-      "route": "/publications/signal-archaeology-audio-memory-and-machine-listening/",
+      "id": "ea:collection:knowledge-hub-foundations",
+      "type": "collection",
+      "title": "Knowledge Hub Foundations",
+      "route": "/archive/collections/knowledge-hub-foundations/",
       "status": "active",
       "confidence": "published"
     }

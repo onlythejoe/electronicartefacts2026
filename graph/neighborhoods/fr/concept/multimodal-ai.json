@@ -1,0 +1,68 @@
+{
+  "id": "local:ea:concept:multimodal-ai-fr",
+  "kind": "local",
+  "focus": "ea:concept:multimodal-ai-fr",
+  "nodes": [
+    {
+      "id": "ea:concept:multimodal-ai-fr",
+      "type": "concept",
+      "title": "IA multimodale",
+      "route": "/fr/knowledge/concepts/multimodal-ai/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:publication:webnn-and-local-ai-in-the-browser-fr",
+      "type": "publication",
+      "title": "WebNN et IA locale dans le navigateur",
+      "route": "/fr/publications/webnn-and-local-ai-in-the-browser/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:multimodal-ai-across-text-image-audio-and-video-fr",
+      "type": "publication",
+      "title": "IA multimodale pour le texte, l'image, l'audio et la vidéo",
+      "route": "/fr/publications/multimodal-ai-across-text-image-audio-and-video/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:program:oreth-fr",
+      "type": "program",
+      "title": "ORETH",
+      "route": "/fr/programs/oreth/",
+      "status": "prototype",
+      "confidence": "observed"
+    }
+  ],
+  "edges": [
+    {
+      "id": "ear:webnn-article-documents-multimodal-ai",
+      "source": "ea:publication:webnn-and-local-ai-in-the-browser-fr",
+      "target": "ea:concept:multimodal-ai-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "WebNN and Local AI in the Browser links WebNN to multimodal browser interfaces and local perception tasks.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:multimodal-article-documents-multimodal-ai",
+      "source": "ea:publication:multimodal-ai-across-text-image-audio-and-video-fr",
+      "target": "ea:concept:multimodal-ai-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Multimodal AI Across Text, Image, Audio and Video documents cross-modal architectures and evaluation.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:oreth-applies-multimodal-ai",
+      "source": "ea:program:oreth-fr",
+      "target": "ea:concept:multimodal-ai-fr",
+      "predicate": "appliesConcept",
+      "label": "Applies concept",
+      "statement": "ORETH provides an applied context for connecting audio analysis with visual, textual and archival records.",
+      "confidence": "observed"
+    }
+  ]
+}

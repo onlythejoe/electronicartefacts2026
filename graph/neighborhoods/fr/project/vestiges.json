@@ -1,0 +1,289 @@
+{
+  "id": "local:ea:project:vestiges-fr",
+  "kind": "local",
+  "focus": "ea:project:vestiges-fr",
+  "nodes": [
+    {
+      "id": "ea:project:vestiges-fr",
+      "type": "project",
+      "title": "Vestiges",
+      "route": "/fr/projects/vestiges/",
+      "status": "development",
+      "confidence": "observed"
+    },
+    {
+      "id": "ea:publication:iiif-and-compound-cultural-objects-fr",
+      "type": "publication",
+      "title": "IIIF et objets culturels composés",
+      "route": "/fr/publications/iiif-and-compound-cultural-objects/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:technology:iiif-fr",
+      "type": "technology",
+      "title": "IIIF",
+      "route": "/fr/knowledge/technologies/iiif/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:concept:knowledge-graph-fr",
+      "type": "concept",
+      "title": "Graphe de connaissances",
+      "route": "/fr/knowledge/concepts/knowledge-graph/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:publication:knowledge-graphs-for-cultural-infrastructure-fr",
+      "type": "publication",
+      "title": "Graphes de connaissances pour les infrastructures culturelles",
+      "route": "/fr/publications/knowledge-graphs-for-cultural-infrastructure/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:digital-preservation-and-living-archives-fr",
+      "type": "publication",
+      "title": "Préservation numérique et archives vivantes",
+      "route": "/fr/publications/digital-preservation-and-living-archives/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:metadata-cataloguing-and-cultural-memory-fr",
+      "type": "publication",
+      "title": "Métadonnées, catalogage et mémoire culturelle",
+      "route": "/fr/publications/metadata-cataloguing-and-cultural-memory/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:ontologies-taxonomies-and-knowledge-modeling-fr",
+      "type": "publication",
+      "title": "Ontologies, taxonomies et modélisation des connaissances",
+      "route": "/fr/publications/ontologies-taxonomies-and-knowledge-modeling/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:why-graphs-are-more-powerful-than-folders-fr",
+      "type": "publication",
+      "title": "Pourquoi les graphes sont plus puissants que les dossiers",
+      "route": "/fr/publications/why-graphs-are-more-powerful-than-folders/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:runtime-engines-and-domain-operating-systems-fr",
+      "type": "publication",
+      "title": "Moteurs d'exécution et systèmes d'exploitation de domaine",
+      "route": "/fr/publications/runtime-engines-and-domain-operating-systems/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:concept:ontology-fr",
+      "type": "concept",
+      "title": "Ontologie",
+      "route": "/fr/knowledge/concepts/ontology/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:concept:graph-modeling-fr",
+      "type": "concept",
+      "title": "Modélisation de graphe",
+      "route": "/fr/knowledge/concepts/graph-modeling/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:concept:domain-operating-system-fr",
+      "type": "concept",
+      "title": "Système d'exploitation de domaine",
+      "route": "/fr/knowledge/concepts/domain-operating-system/",
+      "status": "active",
+      "confidence": "observed"
+    },
+    {
+      "id": "ea:program:vaste-fr",
+      "type": "program",
+      "title": "VASTE",
+      "route": "/fr/programs/vaste/",
+      "status": "development",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:concept:graph-runtime-fr",
+      "type": "concept",
+      "title": "Runtime de graphe",
+      "route": "/fr/knowledge/concepts/graph-runtime/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:publication:foundational-lineage-001-fr",
+      "type": "publication",
+      "title": "Foundational Lineage #001",
+      "route": "/fr/publications/foundational-lineage-001/",
+      "status": "research",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:organization:electronic-artefacts-fr",
+      "type": "organization",
+      "title": "Electronic Artefacts",
+      "route": "/fr/organizations/electronic-artefacts/",
+      "status": "active",
+      "confidence": "canonical"
+    }
+  ],
+  "edges": [
+    {
+      "id": "ear:iiif-article-documents-vestiges",
+      "source": "ea:publication:iiif-and-compound-cultural-objects-fr",
+      "target": "ea:project:vestiges-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "IIIF and Compound Cultural Objects uses Vestiges as a cultural infrastructure context for compound object records.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:vestiges-integrates-with-iiif",
+      "source": "ea:project:vestiges-fr",
+      "target": "ea:technology:iiif-fr",
+      "predicate": "integratesWith",
+      "label": "Integrates with",
+      "statement": "Vestiges can integrate with IIIF for compound cultural object presentation and annotation-aware viewing.",
+      "confidence": "observed"
+    },
+    {
+      "id": "ear:vestiges-applies-knowledge-graph",
+      "source": "ea:project:vestiges-fr",
+      "target": "ea:concept:knowledge-graph-fr",
+      "predicate": "appliesConcept",
+      "label": "Applies concept",
+      "statement": "Vestiges applies knowledge-graph principles to culture, craft, institutions, techniques and public knowledge pages.",
+      "confidence": "observed"
+    },
+    {
+      "id": "ear:knowledge-graphs-article-documents-vestiges",
+      "source": "ea:publication:knowledge-graphs-for-cultural-infrastructure-fr",
+      "target": "ea:project:vestiges-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Knowledge Graphs for Cultural Infrastructure uses Vestiges as the applied cultural infrastructure example.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:digital-preservation-article-documents-vestiges",
+      "source": "ea:publication:digital-preservation-and-living-archives-fr",
+      "target": "ea:project:vestiges-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Digital Preservation and Living Archives connects Vestiges to living archive and cultural knowledge preservation.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:metadata-article-documents-vestiges",
+      "source": "ea:publication:metadata-cataloguing-and-cultural-memory-fr",
+      "target": "ea:project:vestiges-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Metadata, Cataloguing and Cultural Memory links metadata practice to the Vestiges cultural knowledge project.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:ontology-article-documents-vestiges",
+      "source": "ea:publication:ontologies-taxonomies-and-knowledge-modeling-fr",
+      "target": "ea:project:vestiges-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Ontologies, Taxonomies and Knowledge Modeling connects semantic modeling to the Vestiges cultural graph.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:graphs-folders-article-documents-vestiges",
+      "source": "ea:publication:why-graphs-are-more-powerful-than-folders-fr",
+      "target": "ea:project:vestiges-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Why Graphs Are More Powerful Than Folders uses Vestiges as a cultural graph case.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:domain-os-article-documents-vestiges",
+      "source": "ea:publication:runtime-engines-and-domain-operating-systems-fr",
+      "target": "ea:project:vestiges-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Runtime Engines and Domain Operating Systems uses Vestiges as a cultural domain OS application.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:vestiges-applies-ontology",
+      "source": "ea:project:vestiges-fr",
+      "target": "ea:concept:ontology-fr",
+      "predicate": "appliesConcept",
+      "label": "Applies concept",
+      "statement": "Vestiges applies ontology design to people, techniques, materials, institutions and cultural relations.",
+      "confidence": "observed"
+    },
+    {
+      "id": "ear:vestiges-applies-graph-modeling",
+      "source": "ea:project:vestiges-fr",
+      "target": "ea:concept:graph-modeling-fr",
+      "predicate": "appliesConcept",
+      "label": "Applies concept",
+      "statement": "Vestiges applies graph modeling to cultural knowledge and human know-how.",
+      "confidence": "observed"
+    },
+    {
+      "id": "ear:vestiges-applies-domain-operating-system",
+      "source": "ea:project:vestiges-fr",
+      "target": "ea:concept:domain-operating-system-fr",
+      "predicate": "appliesConcept",
+      "label": "Applies concept",
+      "statement": "Vestiges explores a domain operating system for cultural knowledge, contribution and exchange.",
+      "confidence": "observed"
+    },
+    {
+      "id": "ear:vestiges-powered-by-vaste",
+      "source": "ea:project:vestiges-fr",
+      "target": "ea:program:vaste-fr",
+      "predicate": "poweredBy",
+      "label": "Powered by",
+      "statement": "Vestiges uses VASTE as its graph runtime and contextual execution foundation.",
+      "confidence": "observed"
+    },
+    {
+      "id": "ear:vestiges-applies-graph-runtime",
+      "source": "ea:project:vestiges-fr",
+      "target": "ea:concept:graph-runtime-fr",
+      "predicate": "appliesConcept",
+      "label": "Applies concept",
+      "statement": "Vestiges applies graph-runtime principles to cultural, craft and human-knowledge infrastructure.",
+      "confidence": "observed"
+    },
+    {
+      "id": "ear:vestiges-evidenced-by-foundational-lineage",
+      "source": "ea:project:vestiges-fr",
+      "target": "ea:publication:foundational-lineage-001-fr",
+      "predicate": "evidencedBy",
+      "label": "Evidenced by",
+      "statement": "Foundational Lineage",
+      "confidence": "observed"
+    },
+    {
+      "id": "ear:electronic-artefacts-creates-vestiges",
+      "source": "ea:project:vestiges-fr",
+      "target": "ea:organization:electronic-artefacts-fr",
+      "predicate": "createdBy",
+      "label": "Created by",
+      "statement": "Electronic Artefacts created Vestiges as the flagship public application of VASTE.",
+      "confidence": "published"
+    }
+  ]
+}

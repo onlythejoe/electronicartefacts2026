@@ -4,20 +4,12 @@
   "focus": "ea:publication:metadata-cataloguing-and-cultural-memory",
   "nodes": [
     {
-      "id": "ea:collection:knowledge-hub-second-wave",
-      "type": "collection",
-      "title": "Knowledge Hub Second Wave",
-      "route": "/archive/collections/knowledge-hub-second-wave/",
+      "id": "ea:publication:metadata-cataloguing-and-cultural-memory",
+      "type": "publication",
+      "title": "Metadata, Cataloguing and Cultural Memory",
+      "route": "/publications/metadata-cataloguing-and-cultural-memory/",
       "status": "active",
       "confidence": "published"
-    },
-    {
-      "id": "ea:concept:digital-preservation",
-      "type": "concept",
-      "title": "Digital Preservation",
-      "route": "/knowledge/concepts/digital-preservation/",
-      "status": "active",
-      "confidence": "validated"
     },
     {
       "id": "ea:concept:metadata",
@@ -36,6 +28,14 @@
       "confidence": "validated"
     },
     {
+      "id": "ea:concept:digital-preservation",
+      "type": "concept",
+      "title": "Digital Preservation",
+      "route": "/knowledge/concepts/digital-preservation/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
       "id": "ea:project:vestiges",
       "type": "project",
       "title": "Vestiges",
@@ -44,10 +44,10 @@
       "confidence": "observed"
     },
     {
-      "id": "ea:publication:metadata-cataloguing-and-cultural-memory",
-      "type": "publication",
-      "title": "Metadata, Cataloguing and Cultural Memory",
-      "route": "/publications/metadata-cataloguing-and-cultural-memory/",
+      "id": "ea:collection:knowledge-hub-second-wave",
+      "type": "collection",
+      "title": "Knowledge Hub Second Wave",
+      "route": "/archive/collections/knowledge-hub-second-wave/",
       "status": "active",
       "confidence": "published"
     }

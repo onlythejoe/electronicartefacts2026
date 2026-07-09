@@ -1,0 +1,221 @@
+{
+  "id": "local:ea:concept:provenance-fr",
+  "kind": "local",
+  "focus": "ea:concept:provenance-fr",
+  "nodes": [
+    {
+      "id": "ea:concept:provenance-fr",
+      "type": "concept",
+      "title": "Provenance",
+      "route": "/fr/knowledge/concepts/provenance/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:publication:c2pa-content-credentials-and-generative-media-provenance-fr",
+      "type": "publication",
+      "title": "C2PA, Content Credentials et provenance des médias génératifs",
+      "route": "/fr/publications/c2pa-content-credentials-and-generative-media-provenance/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:responsible-ai-governance-for-creative-and-cultural-systems-fr",
+      "type": "publication",
+      "title": "Gouvernance responsable de l'IA pour les systèmes créatifs et culturels",
+      "route": "/fr/publications/responsible-ai-governance-for-creative-and-cultural-systems/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:verifiable-credentials-for-cultural-archives-and-creator-identity-fr",
+      "type": "publication",
+      "title": "Identifiants vérifiables pour les archives culturelles et l’identité des créateurs",
+      "route": "/fr/publications/verifiable-credentials-for-cultural-archives-and-creator-identity/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:knowledge-graphs-for-cultural-infrastructure-fr",
+      "type": "publication",
+      "title": "Graphes de connaissances pour les infrastructures culturelles",
+      "route": "/fr/publications/knowledge-graphs-for-cultural-infrastructure/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:digital-preservation-and-living-archives-fr",
+      "type": "publication",
+      "title": "Préservation numérique et archives vivantes",
+      "route": "/fr/publications/digital-preservation-and-living-archives/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:signal-archaeology-audio-memory-and-machine-listening-fr",
+      "type": "publication",
+      "title": "Archéologie du signal, mémoire audio et écoute machine",
+      "route": "/fr/publications/signal-archaeology-audio-memory-and-machine-listening/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:metadata-cataloguing-and-cultural-memory-fr",
+      "type": "publication",
+      "title": "Métadonnées, catalogage et mémoire culturelle",
+      "route": "/fr/publications/metadata-cataloguing-and-cultural-memory/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:generative-ai-latent-space-and-creative-workflows-fr",
+      "type": "publication",
+      "title": "IA générative, espace latent et workflows créatifs",
+      "route": "/fr/publications/generative-ai-latent-space-and-creative-workflows/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:how-large-language-models-actually-work-fr",
+      "type": "publication",
+      "title": "Comment fonctionnent vraiment les grands modèles de langage",
+      "route": "/fr/publications/how-large-language-models-actually-work/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:local-and-open-source-ai-systems-fr",
+      "type": "publication",
+      "title": "Systèmes d’IA locaux et open source",
+      "route": "/fr/publications/local-and-open-source-ai-systems/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:retrieval-augmented-generation-and-knowledge-systems-fr",
+      "type": "publication",
+      "title": "Génération augmentée par récupération et systèmes de connaissance",
+      "route": "/fr/publications/retrieval-augmented-generation-and-knowledge-systems/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:multimodal-ai-across-text-image-audio-and-video-fr",
+      "type": "publication",
+      "title": "IA multimodale pour le texte, l'image, l'audio et la vidéo",
+      "route": "/fr/publications/multimodal-ai-across-text-image-audio-and-video/",
+      "status": "active",
+      "confidence": "published"
+    }
+  ],
+  "edges": [
+    {
+      "id": "ear:c2pa-article-documents-provenance",
+      "source": "ea:publication:c2pa-content-credentials-and-generative-media-provenance-fr",
+      "target": "ea:concept:provenance-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "C2PA Content Credentials and Generative Media Provenance explains provenance as evidence rather than proof of truth.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:responsible-ai-governance-article-documents-provenance",
+      "source": "ea:publication:responsible-ai-governance-for-creative-and-cultural-systems-fr",
+      "target": "ea:concept:provenance-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Responsible AI Governance for Creative and Cultural Systems treats provenance as a governance requirement for AI-assisted cultural records.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:verifiable-credentials-article-documents-provenance",
+      "source": "ea:publication:verifiable-credentials-for-cultural-archives-and-creator-identity-fr",
+      "target": "ea:concept:provenance-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Verifiable Credentials for Cultural Archives and Creator Identity documents verifiable credentials as one layer of provenance evidence.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:knowledge-graphs-article-documents-provenance",
+      "source": "ea:publication:knowledge-graphs-for-cultural-infrastructure-fr",
+      "target": "ea:concept:provenance-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Knowledge Graphs for Cultural Infrastructure frames provenance as a trust layer for cultural knowledge graphs.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:digital-preservation-article-documents-provenance",
+      "source": "ea:publication:digital-preservation-and-living-archives-fr",
+      "target": "ea:concept:provenance-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Digital Preservation and Living Archives explains provenance as a central layer of living archive practice.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:signal-archaeology-article-documents-provenance",
+      "source": "ea:publication:signal-archaeology-audio-memory-and-machine-listening-fr",
+      "target": "ea:concept:provenance-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Signal Archaeology, Audio Memory and Machine Listening explains why signal interpretation needs provenance.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:metadata-article-documents-provenance",
+      "source": "ea:publication:metadata-cataloguing-and-cultural-memory-fr",
+      "target": "ea:concept:provenance-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Metadata, Cataloguing and Cultural Memory explains provenance as a key part of trustworthy metadata.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:generative-ai-article-documents-provenance",
+      "source": "ea:publication:generative-ai-latent-space-and-creative-workflows-fr",
+      "target": "ea:concept:provenance-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Generative AI, Latent Space and Creative Workflows explains provenance as a requirement for responsible AI-assisted production.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:llm-article-documents-provenance",
+      "source": "ea:publication:how-large-language-models-actually-work-fr",
+      "target": "ea:concept:provenance-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "How Large Language Models Actually Work explains why model and data provenance matter.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:local-ai-article-documents-provenance",
+      "source": "ea:publication:local-and-open-source-ai-systems-fr",
+      "target": "ea:concept:provenance-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Local and Open Source AI Systems connects model deployment to provenance and reproducibility.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:rag-article-documents-provenance",
+      "source": "ea:publication:retrieval-augmented-generation-and-knowledge-systems-fr",
+      "target": "ea:concept:provenance-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Retrieval-Augmented Generation and Knowledge Systems connects citations and source grounding to provenance.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:multimodal-article-documents-provenance",
+      "source": "ea:publication:multimodal-ai-across-text-image-audio-and-video-fr",
+      "target": "ea:concept:provenance-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Multimodal AI Across Text, Image, Audio and Video documents provenance risks across generated media.",
+      "confidence": "published"
+    }
+  ]
+}

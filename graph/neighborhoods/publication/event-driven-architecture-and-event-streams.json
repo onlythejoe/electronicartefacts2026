@@ -4,26 +4,34 @@
   "focus": "ea:publication:event-driven-architecture-and-event-streams",
   "nodes": [
     {
-      "id": "ea:collection:knowledge-hub-third-wave",
-      "type": "collection",
-      "title": "Knowledge Hub Third Wave",
-      "route": "/archive/collections/knowledge-hub-third-wave/",
+      "id": "ea:publication:event-driven-architecture-and-event-streams",
+      "type": "publication",
+      "title": "Event-Driven Architecture and Event Streams",
+      "route": "/publications/event-driven-architecture-and-event-streams/",
       "status": "active",
       "confidence": "published"
-    },
-    {
-      "id": "ea:concept:contextual-execution",
-      "type": "concept",
-      "title": "Contextual Execution",
-      "route": "/knowledge/concepts/contextual-execution/",
-      "status": "active",
-      "confidence": "canonical"
     },
     {
       "id": "ea:concept:event-driven-architecture",
       "type": "concept",
       "title": "Event-Driven Architecture",
       "route": "/knowledge/concepts/event-driven-architecture/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:technology:cloudevents",
+      "type": "technology",
+      "title": "CloudEvents",
+      "route": "/knowledge/technologies/cloudevents/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:concept:contextual-execution",
+      "type": "concept",
+      "title": "Contextual Execution",
+      "route": "/knowledge/concepts/contextual-execution/",
       "status": "active",
       "confidence": "canonical"
     },
@@ -44,20 +52,12 @@
       "confidence": "published"
     },
     {
-      "id": "ea:publication:event-driven-architecture-and-event-streams",
-      "type": "publication",
-      "title": "Event-Driven Architecture and Event Streams",
-      "route": "/publications/event-driven-architecture-and-event-streams/",
+      "id": "ea:collection:knowledge-hub-third-wave",
+      "type": "collection",
+      "title": "Knowledge Hub Third Wave",
+      "route": "/archive/collections/knowledge-hub-third-wave/",
       "status": "active",
       "confidence": "published"
-    },
-    {
-      "id": "ea:technology:cloudevents",
-      "type": "technology",
-      "title": "CloudEvents",
-      "route": "/knowledge/technologies/cloudevents/",
-      "status": "active",
-      "confidence": "canonical"
     }
   ],
   "edges": [

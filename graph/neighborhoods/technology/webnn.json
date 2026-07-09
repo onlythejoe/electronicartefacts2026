@@ -4,20 +4,20 @@
   "focus": "ea:technology:webnn",
   "nodes": [
     {
-      "id": "ea:publication:webnn-and-local-ai-in-the-browser",
-      "type": "publication",
-      "title": "WebNN and Local AI in the Browser",
-      "route": "/publications/webnn-and-local-ai-in-the-browser/",
-      "status": "active",
-      "confidence": "published"
-    },
-    {
       "id": "ea:technology:webnn",
       "type": "technology",
       "title": "WebNN",
       "route": "/knowledge/technologies/webnn/",
       "status": "active",
       "confidence": "canonical"
+    },
+    {
+      "id": "ea:publication:webnn-and-local-ai-in-the-browser",
+      "type": "publication",
+      "title": "WebNN and Local AI in the Browser",
+      "route": "/publications/webnn-and-local-ai-in-the-browser/",
+      "status": "active",
+      "confidence": "published"
     }
   ],
   "edges": [

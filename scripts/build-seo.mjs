@@ -131,11 +131,11 @@ const pages = {
   },
   "mentions-legales.html": {
     title: "Legal Notice | Electronic Artefacts",
-    description: "Legal information and publisher details for the Electronic Artefacts website.",
+    description: "Legal information, publisher details, third-party services and technical credits for the Electronic Artefacts website.",
   },
   "confidentialite.html": {
     title: "Privacy Policy | Electronic Artefacts",
-    description: "Privacy and browser-storage information for the Electronic Artefacts website.",
+    description: "Privacy, cookies, Google Analytics consent and browser-storage information for the Electronic Artefacts website.",
   },
   "search.html": {
     title: "Search | Electronic Artefacts",

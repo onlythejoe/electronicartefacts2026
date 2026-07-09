@@ -4,20 +4,12 @@
   "focus": "ea:publication:how-large-language-models-actually-work",
   "nodes": [
     {
-      "id": "ea:collection:knowledge-hub-third-wave",
-      "type": "collection",
-      "title": "Knowledge Hub Third Wave",
-      "route": "/archive/collections/knowledge-hub-third-wave/",
+      "id": "ea:publication:how-large-language-models-actually-work",
+      "type": "publication",
+      "title": "How Large Language Models Actually Work",
+      "route": "/publications/how-large-language-models-actually-work/",
       "status": "active",
       "confidence": "published"
-    },
-    {
-      "id": "ea:concept:generative-ai",
-      "type": "concept",
-      "title": "Generative AI",
-      "route": "/knowledge/concepts/generative-ai/",
-      "status": "active",
-      "confidence": "validated"
     },
     {
       "id": "ea:concept:large-language-model",
@@ -28,6 +20,22 @@
       "confidence": "canonical"
     },
     {
+      "id": "ea:technology:transformer-architecture",
+      "type": "technology",
+      "title": "Transformer Architecture",
+      "route": "/knowledge/technologies/transformer-architecture/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:concept:generative-ai",
+      "type": "concept",
+      "title": "Generative AI",
+      "route": "/knowledge/concepts/generative-ai/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
       "id": "ea:concept:provenance",
       "type": "concept",
       "title": "Provenance",
@@ -36,20 +44,12 @@
       "confidence": "validated"
     },
     {
-      "id": "ea:publication:how-large-language-models-actually-work",
-      "type": "publication",
-      "title": "How Large Language Models Actually Work",
-      "route": "/publications/how-large-language-models-actually-work/",
+      "id": "ea:collection:knowledge-hub-third-wave",
+      "type": "collection",
+      "title": "Knowledge Hub Third Wave",
+      "route": "/archive/collections/knowledge-hub-third-wave/",
       "status": "active",
       "confidence": "published"
-    },
-    {
-      "id": "ea:technology:transformer-architecture",
-      "type": "technology",
-      "title": "Transformer Architecture",
-      "route": "/knowledge/technologies/transformer-architecture/",
-      "status": "active",
-      "confidence": "canonical"
     }
   ],
   "edges": [

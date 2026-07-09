@@ -1,0 +1,34 @@
+{
+  "id": "local:ea:technology:cloudevents-fr",
+  "kind": "local",
+  "focus": "ea:technology:cloudevents-fr",
+  "nodes": [
+    {
+      "id": "ea:technology:cloudevents-fr",
+      "type": "technology",
+      "title": "CloudEvents",
+      "route": "/fr/knowledge/technologies/cloudevents/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:publication:event-driven-architecture-and-event-streams-fr",
+      "type": "publication",
+      "title": "Architecture événementielle et flux d'événements",
+      "route": "/fr/publications/event-driven-architecture-and-event-streams/",
+      "status": "active",
+      "confidence": "published"
+    }
+  ],
+  "edges": [
+    {
+      "id": "ear:event-architecture-article-uses-cloudevents",
+      "source": "ea:publication:event-driven-architecture-and-event-streams-fr",
+      "target": "ea:technology:cloudevents-fr",
+      "predicate": "usesTechnology",
+      "label": "Uses technology",
+      "statement": "Event-Driven Architecture and Event Streams uses CloudEvents as an interoperable event-envelope reference.",
+      "confidence": "published"
+    }
+  ]
+}

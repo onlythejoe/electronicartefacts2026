@@ -4,30 +4,6 @@
   "focus": "ea:project:palimpsests",
   "nodes": [
     {
-      "id": "ea:concept:digital-preservation",
-      "type": "concept",
-      "title": "Digital Preservation",
-      "route": "/knowledge/concepts/digital-preservation/",
-      "status": "active",
-      "confidence": "validated"
-    },
-    {
-      "id": "ea:concept:signal-archaeology",
-      "type": "concept",
-      "title": "Signal Archaeology",
-      "route": "/knowledge/concepts/signal-archaeology/",
-      "status": "active",
-      "confidence": "observed"
-    },
-    {
-      "id": "ea:program:oreth",
-      "type": "program",
-      "title": "ORETH",
-      "route": "/programs/oreth/",
-      "status": "prototype",
-      "confidence": "observed"
-    },
-    {
       "id": "ea:project:palimpsests",
       "type": "project",
       "title": "Palimpsests",
@@ -42,6 +18,38 @@
       "route": "/publications/c2pa-content-credentials-and-generative-media-provenance/",
       "status": "active",
       "confidence": "published"
+    },
+    {
+      "id": "ea:technology:c2pa",
+      "type": "technology",
+      "title": "C2PA",
+      "route": "/knowledge/technologies/c2pa/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:program:oreth",
+      "type": "program",
+      "title": "ORETH",
+      "route": "/programs/oreth/",
+      "status": "prototype",
+      "confidence": "observed"
+    },
+    {
+      "id": "ea:concept:signal-archaeology",
+      "type": "concept",
+      "title": "Signal Archaeology",
+      "route": "/knowledge/concepts/signal-archaeology/",
+      "status": "active",
+      "confidence": "observed"
+    },
+    {
+      "id": "ea:concept:digital-preservation",
+      "type": "concept",
+      "title": "Digital Preservation",
+      "route": "/knowledge/concepts/digital-preservation/",
+      "status": "active",
+      "confidence": "validated"
     },
     {
       "id": "ea:publication:digital-preservation-and-living-archives",
@@ -60,14 +68,6 @@
       "confidence": "published"
     },
     {
-      "id": "ea:publication:multimodal-ai-across-text-image-audio-and-video",
-      "type": "publication",
-      "title": "Multimodal AI Across Text, Image, Audio and Video",
-      "route": "/publications/multimodal-ai-across-text-image-audio-and-video/",
-      "status": "active",
-      "confidence": "published"
-    },
-    {
       "id": "ea:publication:signal-archaeology-audio-memory-and-machine-listening",
       "type": "publication",
       "title": "Signal Archaeology, Audio Memory and Machine Listening",
@@ -76,12 +76,12 @@
       "confidence": "published"
     },
     {
-      "id": "ea:technology:c2pa",
-      "type": "technology",
-      "title": "C2PA",
-      "route": "/knowledge/technologies/c2pa/",
+      "id": "ea:publication:multimodal-ai-across-text-image-audio-and-video",
+      "type": "publication",
+      "title": "Multimodal AI Across Text, Image, Audio and Video",
+      "route": "/publications/multimodal-ai-across-text-image-audio-and-video/",
       "status": "active",
-      "confidence": "canonical"
+      "confidence": "published"
     }
   ],
   "edges": [

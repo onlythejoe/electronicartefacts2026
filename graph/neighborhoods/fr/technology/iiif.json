@@ -1,0 +1,51 @@
+{
+  "id": "local:ea:technology:iiif-fr",
+  "kind": "local",
+  "focus": "ea:technology:iiif-fr",
+  "nodes": [
+    {
+      "id": "ea:technology:iiif-fr",
+      "type": "technology",
+      "title": "IIIF",
+      "route": "/fr/knowledge/technologies/iiif/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:publication:iiif-and-compound-cultural-objects-fr",
+      "type": "publication",
+      "title": "IIIF et objets culturels composés",
+      "route": "/fr/publications/iiif-and-compound-cultural-objects/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:project:vestiges-fr",
+      "type": "project",
+      "title": "Vestiges",
+      "route": "/fr/projects/vestiges/",
+      "status": "development",
+      "confidence": "observed"
+    }
+  ],
+  "edges": [
+    {
+      "id": "ear:iiif-article-documents-iiif",
+      "source": "ea:publication:iiif-and-compound-cultural-objects-fr",
+      "target": "ea:technology:iiif-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "IIIF and Compound Cultural Objects documents IIIF as a presentation framework for cultural archive objects.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:vestiges-integrates-with-iiif",
+      "source": "ea:project:vestiges-fr",
+      "target": "ea:technology:iiif-fr",
+      "predicate": "integratesWith",
+      "label": "Integrates with",
+      "statement": "Vestiges can integrate with IIIF for compound cultural object presentation and annotation-aware viewing.",
+      "confidence": "observed"
+    }
+  ]
+}
