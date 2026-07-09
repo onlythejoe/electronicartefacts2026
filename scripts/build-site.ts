@@ -524,7 +524,6 @@ await writeJson(path.join(rootDir, "generated/manifest/entities.json"), publicEn
 await writeJson(path.join(rootDir, "generated/manifest/relations.json"), catalog.relations);
 await writeJson(path.join(rootDir, "generated/manifest/build.json"), {
   schemaVersion: "1.0.0",
-  builtAt: new Date().toISOString(),
   entities: publicEntities.length,
   relations: catalog.relations.length,
 });

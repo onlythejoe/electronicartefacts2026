@@ -7,9 +7,11 @@ import { buildRoutes } from "../src/build/build-routes.js";
 import { buildGraphViews } from "../src/graph/build-views.js";
 import { routeForEntity } from "../src/config/routes.js";
 import { renderLocalGraph } from "../src/templates/components/local-graph.js";
+import { renderEditorialPanels } from "../src/templates/components/editorial-panels.js";
 import { renderRelationshipGroups } from "../src/templates/components/relationship-groups.js";
 import { renderProjectPage } from "../src/templates/project-page.js";
-import type { Entity, ProjectEntity } from "../src/schema/entities.js";
+import { renderPublicationPage } from "../src/templates/publication-page.js";
+import type { Entity, FrameworkEntity, ProjectEntity, PublicationEntity } from "../src/schema/entities.js";
 import type { RelationStatement } from "../src/schema/relation.js";
 
 const routeIndex = (entities: Entity[]) =>
@@ -126,6 +128,36 @@ test("project pages hide non-public references and internal relations", async ()
   assert.doesNotMatch(html, /Hidden Project Reference/);
   assert.doesNotMatch(html, /Internal-only delivery detail/);
   assert.equal(routeIndex(entities)[project.id], "/projects/vestiges/");
+});
+
+test("editorial and publication renderers hide non-public typed references", async () => {
+  const { byId, routeById } = await loadFixture();
+  const hiddenConcept: Entity = {
+    ...byId.get("ea:concept:graph-runtime")!,
+    id: "ea:concept:hidden-editorial-reference",
+    slug: { canonical: "hidden-editorial-reference" },
+    title: "Hidden Editorial Reference",
+    visibility: "archive",
+    publicationClass: "supporting",
+  } as Entity;
+  const scopedById = new Map([...byId, [hiddenConcept.id, hiddenConcept]]);
+  const scopedRouteById = { ...routeById, ...routeIndex([hiddenConcept]) };
+  const framework = byId.get("ea:framework:electronic-artefacts-lightweight-template") as FrameworkEntity;
+  const publication = byId.get("ea:publication:knowledge-graphs-for-cultural-infrastructure") as PublicationEntity;
+
+  const editorial = renderEditorialPanels({
+    ...framework,
+    components: [{ id: hiddenConcept.id }],
+  }, scopedById, scopedRouteById);
+  const article = renderPublicationPage({
+    ...publication,
+    subjects: [{ id: hiddenConcept.id }],
+    evidence: [{ id: hiddenConcept.id }],
+  }, [], scopedById, scopedRouteById);
+
+  assert.doesNotMatch(editorial, /Hidden Editorial Reference/);
+  assert.doesNotMatch(article, /Hidden Editorial Reference/);
+  assert.doesNotMatch(article, /hidden-editorial-reference/);
 });
 
 test("translated pages inherit canonical public relations with localized routes", async () => {

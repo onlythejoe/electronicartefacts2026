@@ -60,7 +60,6 @@ for (const file of staticFrenchPages) {
 
 const percent = (value, total) => total ? Number(((value / total) * 100).toFixed(2)) : 0;
 const report = {
-  generatedAt: new Date().toISOString(),
   staticPages: {
     total: staticFrenchPages.length,
     generated: generatedStaticPages.length,

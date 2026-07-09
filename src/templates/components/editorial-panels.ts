@@ -10,6 +10,7 @@ import type {
   TechnologyEntity,
 } from "../../schema/entities.js";
 import type { EntityRef, SourceRef } from "../../schema/entity.js";
+import { publicRefs } from "../../semantic/visibility.js";
 import { escapeHtml } from "../html.js";
 
 const labelFrom = (value: string): string => {
@@ -71,10 +72,11 @@ const renderRefs = (
   routeById: Record<string, string>,
   locale?: string,
 ): string => {
-  if (!refs.length) return "";
+  const visibleRefs = publicRefs(refs, byId);
+  if (!visibleRefs.length) return "";
   return `
     <div class="article-link-cloud">
-      ${refs.map((ref) => `
+      ${visibleRefs.map((ref) => `
         <a class="tag" href="${escapeHtml(routeById[ref.id] || "#")}">${escapeHtml(refTitle(ref, byId, locale))}</a>
       `).join("")}
     </div>`;

@@ -3,7 +3,7 @@ import { routeForEntity } from "../config/routes.js";
 import type { Entity, PublicationEntity } from "../schema/entities.js";
 import type { EntityRef, SourceRef } from "../schema/entity.js";
 import type { RelationStatement } from "../schema/relation.js";
-import { publicEntityIds, publicRelationsForEntity } from "../semantic/visibility.js";
+import { publicEntityIds, publicRelationsForEntity, publicRefs } from "../semantic/visibility.js";
 import { renderBreadcrumbs } from "./components/breadcrumbs.js";
 import { renderCitationPanel } from "./components/citation-panel.js";
 import { renderEntityMetadata } from "./components/entity-metadata.js";
@@ -51,11 +51,12 @@ const renderLinkedRefs = (
   routeById: Record<string, string>,
   locale?: string,
 ): string => {
-  if (!refs.length) return `<p class="card__copy">No explicit linked entities.</p>`;
+  const visibleRefs = publicRefs(refs, byId);
+  if (!visibleRefs.length) return `<p class="card__copy">No explicit linked entities.</p>`;
 
   return `
     <div class="article-link-cloud">
-      ${refs.map((ref) => `
+      ${visibleRefs.map((ref) => `
         <a class="tag" href="${escapeHtml(refRoute(ref, routeById))}">${escapeHtml(refTitle(ref, byId, locale))}</a>
       `).join("")}
     </div>`;
