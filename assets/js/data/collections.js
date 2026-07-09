@@ -30,6 +30,16 @@ window.EA_COLLECTIONS = [
     rules: { entityIds: ["vestiges", "vaste", "graph-runtime-studies", "taxonomy-schema"], tags: ["Vestiges", "Knowledge Graph"], kinds: ["project", "program", "researchField", "researchLog", "artefact"] },
   },
   {
+    id: "voice-capture-studio-collection",
+    title: "Voice Capture Studio Collection",
+    kind: "collection",
+    type: "Collection",
+    status: "active",
+    visibility: "public",
+    summary: "Speech recording, local-first browser software and structured voice export context around Voice Capture Studio.",
+    rules: { entityIds: ["voice-capture-studio", "oreth-program", "ea-lightweight-template"], tags: ["Voice Capture Studio", "Speech Recording", "Voice Dataset", "Web Audio"], kinds: ["project", "program", "artefact"] },
+  },
+  {
     id: "visual-research-collection",
     title: "Visual Research Collection",
     kind: "collection",

@@ -24,6 +24,7 @@ const collectEntityRefs = (entity: Entity): EntityId[] => {
   if (entity.type === "collection") {
     refs.push(...entity.curator.map((item) => item.id), ...entity.explicitMembers.map((item) => item.id));
   }
+  if (entity.type === "artefact" && entity.sourceProject) refs.push(entity.sourceProject.id);
   if (entity.type === "event") {
     refs.push(...entity.participants.map((item) => item.id), ...(entity.result || []).map((item) => item.id));
   }

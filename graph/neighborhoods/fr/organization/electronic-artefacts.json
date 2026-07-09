@@ -34,6 +34,14 @@
       "route": "/fr/projects/vestiges/",
       "status": "development",
       "confidence": "observed"
+    },
+    {
+      "id": "ea:project:voice-capture-studio-fr",
+      "type": "project",
+      "title": "Voice Capture Studio",
+      "route": "/fr/projects/voice-capture-studio/",
+      "status": "active",
+      "confidence": "published"
     }
   ],
   "edges": [
@@ -62,6 +70,33 @@
       "predicate": "createdBy",
       "label": "Created by",
       "statement": "Electronic Artefacts created Vestiges as the flagship public application of VASTE.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:electronic-artefacts-created-voice-capture-studio",
+      "source": "ea:project:voice-capture-studio-fr",
+      "target": "ea:organization:electronic-artefacts-fr",
+      "predicate": "createdBy",
+      "label": "Created by",
+      "statement": "Electronic Artefacts created Voice Capture Studio as an open-source browser application for local-first speech recording.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:electronic-artefacts-maintains-voice-capture-studio",
+      "source": "ea:project:voice-capture-studio-fr",
+      "target": "ea:organization:electronic-artefacts-fr",
+      "predicate": "maintainedBy",
+      "label": "Maintained by",
+      "statement": "Electronic Artefacts maintains the Voice Capture Studio project, repository and public GitHub Pages deployment.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:voice-capture-studio-published-by-electronic-artefacts",
+      "source": "ea:project:voice-capture-studio-fr",
+      "target": "ea:organization:electronic-artefacts-fr",
+      "predicate": "publishedBy",
+      "label": "Published by",
+      "statement": "Voice Capture Studio is published by Electronic Artefacts as an open-source software artefact.",
       "confidence": "published"
     }
   ]

@@ -5,7 +5,7 @@ export const site = {
   alternateNames: ["electronicArtefacts", "electronicartefacts.com"],
   origin: "https://electronicartefacts.com",
   description: "Electronic Artefacts is an independent creative technology studio for complex digital products, knowledge systems, proprietary software and research-led cultural work.",
-  updatedAt: "2026-07-08",
+  updatedAt: "2026-07-09",
   locale: localeConfig(defaultLocale).ogLocale,
   language: defaultLocale,
   publisherId: "ea:organization:electronic-artefacts",

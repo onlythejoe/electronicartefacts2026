@@ -9,8 +9,8 @@ This file is generated from typed public records. Prefer each record's canonical
 - Site language: en
 - Canonical origin: https://electronicartefacts.com
 - Search endpoint: https://electronicartefacts.com/search/?q={search_term_string}
-- Public records: 210
-- Last curated source update: 2026-07-04
+- Public records: 226
+- Last curated source update: 2026-07-09
 
 ## organization
 
@@ -80,6 +80,18 @@ This file is generated from typed public records. Prefer each record's canonical
   - JSON-LD: https://electronicartefacts.com/id/project/vestiges/index.jsonld
   - Modified: 2026-06-24
   - Keywords: Vestiges, VASTE, Knowledge Graph, Craft, Culture, Cultural Infrastructure, Technology, Knowledge Graphs
+- [Voice Capture Studio](https://electronicartefacts.com/fr/projects/voice-capture-studio/): Un studio d’enregistrement local-first pour datasets vocaux, voix off et doublage, construit comme une application de navigateur open source avec exports WAV et métadonnées structurées.
+  - Entity ID: ea:project:voice-capture-studio-fr
+  - Identifier: https://electronicartefacts.com/fr/id/project/voice-capture-studio/
+  - JSON-LD: https://electronicartefacts.com/fr/id/project/voice-capture-studio/index.jsonld
+  - Modified: 2026-07-09
+  - Keywords: Voice Capture Studio, enregistrement vocal, dataset vocal, logiciel de navigateur, Web Audio, open source, local-first, vie privée
+- [Voice Capture Studio](https://electronicartefacts.com/projects/voice-capture-studio/): A local-first recording studio for speech datasets, voice-over and dubbing workflows, built as an open-source browser application with structured WAV and metadata exports.
+  - Entity ID: ea:project:voice-capture-studio
+  - Identifier: https://electronicartefacts.com/id/project/voice-capture-studio/
+  - JSON-LD: https://electronicartefacts.com/id/project/voice-capture-studio/index.jsonld
+  - Modified: 2026-07-09
+  - Keywords: Voice Capture Studio, Speech Recording, Voice Dataset, Browser Software, Web Audio, Open Source, Local First, Privacy
 
 ## research field
 
@@ -635,6 +647,12 @@ This file is generated from typed public records. Prefer each record's canonical
   - JSON-LD: https://electronicartefacts.com/id/concept/autonomous-system/index.jsonld
   - Modified: 2026-06-24
   - Keywords: Autonomous System, Autonomous Systems, AI Agents, Feedback, Governance, Human Oversight, Artificial Intelligence, Robotics
+- [Browser Software](https://electronicartefacts.com/knowledge/concepts/browser-software/): Browser software is application software delivered through web standards while relying on the browser runtime for interface, storage, permissions, media and distribution behavior.
+  - Entity ID: ea:concept:browser-software
+  - Identifier: https://electronicartefacts.com/id/concept/browser-software/
+  - JSON-LD: https://electronicartefacts.com/id/concept/browser-software/index.jsonld
+  - Modified: 2026-07-09
+  - Keywords: Browser Software, Web App, PWA, Local First, Web Development, Human Computer Interaction, Software Architecture
 - [Composition algorithmique](https://electronicartefacts.com/fr/knowledge/concepts/algorithmic-composition/): Composition algorithmique désigne le sujet "Composition algorithmique" dans le graphe public d'Electronic Artefacts.
   - Entity ID: ea:concept:algorithmic-composition-fr
   - Identifier: https://electronicartefacts.com/fr/id/concept/algorithmic-composition/
@@ -683,6 +701,12 @@ This file is generated from typed public records. Prefer each record's canonical
   - JSON-LD: https://electronicartefacts.com/fr/id/concept/linked-data/index.jsonld
   - Modified: 2026-06-25
   - Keywords: Données liées, Linked Data, Semantic Web, JSON-LD, RDF, URI, systèmes de connaissance, développement web
+- [Enregistrement vocal](https://electronicartefacts.com/fr/knowledge/concepts/speech-recording/): L’enregistrement vocal est la capture dirigée de parole avec les métadonnées techniques, contextuelles et de consentement nécessaires à la révision, à la réutilisation et à la conservation.
+  - Entity ID: ea:concept:speech-recording-fr
+  - Identifier: https://electronicartefacts.com/fr/id/concept/speech-recording/
+  - JSON-LD: https://electronicartefacts.com/fr/id/concept/speech-recording/index.jsonld
+  - Modified: 2026-07-09
+  - Keywords: Enregistrement vocal, enregistrement vocal, voix, audio, workflow, ingénierie audio, interaction humain-machine, développement web
 - [Entity Identity](https://electronicartefacts.com/knowledge/concepts/entity-identity/): Entity identity is the durable naming of a person, concept, project, program, publication or artefact so that references remain stable as descriptions evolve.
   - Entity ID: ea:concept:entity-identity
   - Identifier: https://electronicartefacts.com/id/concept/entity-identity/
@@ -803,6 +827,12 @@ This file is generated from typed public records. Prefer each record's canonical
   - JSON-LD: https://electronicartefacts.com/id/concept/internet-culture/index.jsonld
   - Modified: 2026-06-24
   - Keywords: Internet Culture, Network Culture, Memes, Archives, History of Technology
+- [Jeux de données vocales](https://electronicartefacts.com/fr/knowledge/concepts/speech-datasets/): Les jeux de données vocales sont des collections structurées de parole enregistrée, de transcriptions, de contexte locuteur et de métadonnées qualité préparées pour l’analyse, la conservation ou des workflows de machine learning.
+  - Entity ID: ea:concept:speech-datasets-fr
+  - Identifier: https://electronicartefacts.com/fr/id/concept/speech-datasets/
+  - JSON-LD: https://electronicartefacts.com/fr/id/concept/speech-datasets/index.jsonld
+  - Modified: 2026-07-09
+  - Keywords: Jeux de données vocales, dataset vocal, données vocales, métadonnées, qualité dataset, ingénierie audio, machine learning, préservation numérique
 - [Knowledge Graph](https://electronicartefacts.com/knowledge/concepts/knowledge-graph/): A knowledge graph is a structured network of entities, identifiers and typed relationships that makes knowledge navigable, queryable and reusable across contexts.
   - Entity ID: ea:concept:knowledge-graph
   - Identifier: https://electronicartefacts.com/id/concept/knowledge-graph/
@@ -821,6 +851,18 @@ This file is generated from typed public records. Prefer each record's canonical
   - JSON-LD: https://electronicartefacts.com/id/concept/linked-data/index.jsonld
   - Modified: 2026-06-23
   - Keywords: Linked Data, Semantic Web, JSON-LD, RDF, URI, Knowledge Systems, Web Development, SEO
+- [Logiciel de navigateur](https://electronicartefacts.com/fr/knowledge/concepts/browser-software/): Un logiciel de navigateur est une application fournie par les standards du Web et exécutée dans le runtime du navigateur pour l’interface, le stockage, les permissions, les médias et la distribution.
+  - Entity ID: ea:concept:browser-software-fr
+  - Identifier: https://electronicartefacts.com/fr/id/concept/browser-software/
+  - JSON-LD: https://electronicartefacts.com/fr/id/concept/browser-software/index.jsonld
+  - Modified: 2026-07-09
+  - Keywords: Logiciel de navigateur, logiciel de navigateur, application web, PWA, local-first, développement web, interaction humain-machine, architecture logicielle
+- [Machine Learning Workflows](https://electronicartefacts.com/knowledge/concepts/machine-learning-workflows/): Machine learning workflows are the ordered practices that move from source material and metadata through validation, preparation, training, evaluation and deployment decisions.
+  - Entity ID: ea:concept:machine-learning-workflows
+  - Identifier: https://electronicartefacts.com/id/concept/machine-learning-workflows/
+  - JSON-LD: https://electronicartefacts.com/id/concept/machine-learning-workflows/index.jsonld
+  - Modified: 2026-07-09
+  - Keywords: Machine Learning Workflows, Machine Learning, Workflow, Dataset Preparation, Evaluation, Artificial Intelligence, Data Engineering, Software Architecture
 - [Metadata](https://electronicartefacts.com/knowledge/concepts/metadata/): Metadata is structured information about a resource, such as title, creator, date, format, source, rights, subject, relation and preservation context.
   - Entity ID: ea:concept:metadata
   - Identifier: https://electronicartefacts.com/id/concept/metadata/
@@ -965,6 +1007,18 @@ This file is generated from typed public records. Prefer each record's canonical
   - JSON-LD: https://electronicartefacts.com/id/concept/signal-archaeology/index.jsonld
   - Modified: 2026-06-23
   - Keywords: Signal Archaeology, Audio, Archive, Memory, Machine Listening, Audio Engineering, Digital Art, Archives
+- [Speech Datasets](https://electronicartefacts.com/knowledge/concepts/speech-datasets/): Speech datasets are structured collections of recorded speech, transcripts, speaker context and quality metadata prepared for analysis, preservation or downstream machine-learning workflows.
+  - Entity ID: ea:concept:speech-datasets
+  - Identifier: https://electronicartefacts.com/id/concept/speech-datasets/
+  - JSON-LD: https://electronicartefacts.com/id/concept/speech-datasets/index.jsonld
+  - Modified: 2026-07-09
+  - Keywords: Speech Datasets, Speech Dataset, Voice Data, Metadata, Dataset Readiness, Audio Engineering, Machine Learning, Digital Preservation
+- [Speech Recording](https://electronicartefacts.com/knowledge/concepts/speech-recording/): Speech recording is the directed capture of spoken language with enough technical, contextual and consent metadata to support review, reuse and preservation.
+  - Entity ID: ea:concept:speech-recording
+  - Identifier: https://electronicartefacts.com/id/concept/speech-recording/
+  - JSON-LD: https://electronicartefacts.com/id/concept/speech-recording/index.jsonld
+  - Modified: 2026-07-09
+  - Keywords: Speech Recording, Voice, Audio, Workflow, Audio Engineering, Human Computer Interaction, Web Development
 - [Système autonome](https://electronicartefacts.com/fr/knowledge/concepts/autonomous-system/): Système autonome désigne les systèmes capables de poursuivre un objectif sans intervention permanente, avec des limites de contrôle explicites.
   - Entity ID: ea:concept:autonomous-system-fr
   - Identifier: https://electronicartefacts.com/fr/id/concept/autonomous-system/
@@ -995,6 +1049,12 @@ This file is generated from typed public records. Prefer each record's canonical
   - JSON-LD: https://electronicartefacts.com/id/concept/systems-thinking/index.jsonld
   - Modified: 2026-06-24
   - Keywords: Systems Thinking, Feedback, Boundaries, Leverage Points, Complexity, Systems Design, Cybernetics, Design
+- [Technologie vocale](https://electronicartefacts.com/fr/knowledge/concepts/voice-technology/): La technologie vocale désigne la conception et l’ingénierie de systèmes qui capturent, analysent, transforment, préservent ou présentent la voix parlée comme matériau technique et culturel.
+  - Entity ID: ea:concept:voice-technology-fr
+  - Identifier: https://electronicartefacts.com/fr/id/concept/voice-technology/
+  - JSON-LD: https://electronicartefacts.com/fr/id/concept/voice-technology/index.jsonld
+  - Modified: 2026-07-09
+  - Keywords: Technologie vocale, technologie vocale, parole, audio, interaction humain-machine, ingénierie audio, intelligence artificielle
 - [Typographie](https://electronicartefacts.com/fr/knowledge/concepts/typography/): Typographie désigne la composition du texte par caracteres, espacements, hierarchie, rythme et conditions de lecture.
   - Entity ID: ea:concept:typography-fr
   - Identifier: https://electronicartefacts.com/fr/id/concept/typography/
@@ -1007,12 +1067,24 @@ This file is generated from typed public records. Prefer each record's canonical
   - JSON-LD: https://electronicartefacts.com/id/concept/typography/index.jsonld
   - Modified: 2026-06-24
   - Keywords: Typography, Reading, Interface Design, Accessibility, Design, Visual Culture, Web Development
+- [Voice Technology](https://electronicartefacts.com/knowledge/concepts/voice-technology/): Voice technology is the design and engineering of systems that capture, analyze, transform, preserve or present spoken voice as technical and cultural material.
+  - Entity ID: ea:concept:voice-technology
+  - Identifier: https://electronicartefacts.com/id/concept/voice-technology/
+  - JSON-LD: https://electronicartefacts.com/id/concept/voice-technology/index.jsonld
+  - Modified: 2026-07-09
+  - Keywords: Voice Technology, Speech, Audio, Human Computer Interaction, Audio Engineering, Artificial Intelligence
 - [Web Audio](https://electronicartefacts.com/knowledge/concepts/web-audio/): Web audio is the use of browser-based audio APIs and related web technologies to synthesize, process, analyze, route and present sound.
   - Entity ID: ea:concept:web-audio
   - Identifier: https://electronicartefacts.com/id/concept/web-audio/
   - JSON-LD: https://electronicartefacts.com/id/concept/web-audio/index.jsonld
   - Modified: 2026-06-24
   - Keywords: Web Audio, Browser, Sound Design, Creative Coding, Audio Engineering, Web Development
+- [Workflows de machine learning](https://electronicartefacts.com/fr/knowledge/concepts/machine-learning-workflows/): Les workflows de machine learning sont les pratiques ordonnées qui font passer un matériau source et ses métadonnées par validation, préparation, entraînement, évaluation et décisions de déploiement.
+  - Entity ID: ea:concept:machine-learning-workflows-fr
+  - Identifier: https://electronicartefacts.com/fr/id/concept/machine-learning-workflows/
+  - JSON-LD: https://electronicartefacts.com/fr/id/concept/machine-learning-workflows/index.jsonld
+  - Modified: 2026-07-09
+  - Keywords: Workflows de machine learning, machine learning, workflow, préparation de dataset, évaluation, intelligence artificielle, ingénierie des données, architecture logicielle
 
 ## technology
 
@@ -1250,6 +1322,12 @@ This file is generated from typed public records. Prefer each record's canonical
 
 ## collection
 
+- [Collection Voice Capture Studio](https://electronicartefacts.com/fr/archive/collections/voice-capture-studio/): Collection éditoriale autour du projet Voice Capture Studio et de son contexte de connaissance sur l’enregistrement vocal.
+  - Entity ID: ea:collection:voice-capture-studio-fr
+  - Identifier: https://electronicartefacts.com/fr/id/collection/voice-capture-studio/
+  - JSON-LD: https://electronicartefacts.com/fr/id/collection/voice-capture-studio/index.jsonld
+  - Modified: 2026-07-09
+  - Keywords: Collection Voice Capture Studio, Voice Capture Studio, technologie vocale, enregistrement vocal, logiciel de navigateur, open source, ingénierie audio, développement web
 - [Fondations du hub de connaissance](https://electronicartefacts.com/fr/archive/collections/knowledge-hub-foundations/): Collection fondatrice du Knowledge Hub reliant concepts, technologies, programmes, projets et publications d’Electronic Artefacts.
   - Entity ID: ea:collection:knowledge-hub-foundations-fr
   - Identifier: https://electronicartefacts.com/fr/id/collection/knowledge-hub-foundations/
@@ -1298,3 +1376,24 @@ This file is generated from typed public records. Prefer each record's canonical
   - JSON-LD: https://electronicartefacts.com/id/collection/knowledge-hub-third-wave/index.jsonld
   - Modified: 2026-06-24
   - Keywords: Knowledge Hub Third Wave, Knowledge Hub, Third Wave, Artificial Intelligence, Systems Architecture, Graph Computing, Systems Design, Knowledge Systems
+- [Voice Capture Studio Collection](https://electronicartefacts.com/archive/collections/voice-capture-studio/): A curated collection around the Voice Capture Studio project and its speech-recording knowledge context.
+  - Entity ID: ea:collection:voice-capture-studio
+  - Identifier: https://electronicartefacts.com/id/collection/voice-capture-studio/
+  - JSON-LD: https://electronicartefacts.com/id/collection/voice-capture-studio/index.jsonld
+  - Modified: 2026-07-09
+  - Keywords: Voice Capture Studio Collection, Voice Capture Studio, Voice Technology, Speech Recording, Browser Software, Open Source, Audio Engineering, Web Development
+
+## artefact
+
+- [Dépôt Voice Capture Studio](https://electronicartefacts.com/fr/archive/artefacts/voice-capture-studio-repository/): Fiche d’artefact de code pour le dépôt public Voice Capture Studio et son architecture documentée d’enregistrement dans le navigateur.
+  - Entity ID: ea:artefact:voice-capture-studio-repository-fr
+  - Identifier: https://electronicartefacts.com/fr/id/artefact/voice-capture-studio-repository/
+  - JSON-LD: https://electronicartefacts.com/fr/id/artefact/voice-capture-studio-repository/index.jsonld
+  - Modified: 2026-07-09
+  - Keywords: Dépôt Voice Capture Studio, Voice Capture Studio, GitHub, open source, logiciel de navigateur, capture vocale, développement web, ingénierie audio
+- [Voice Capture Studio Repository](https://electronicartefacts.com/archive/artefacts/voice-capture-studio-repository/): A code artefact record for the public Voice Capture Studio repository and its documented browser recording architecture.
+  - Entity ID: ea:artefact:voice-capture-studio-repository
+  - Identifier: https://electronicartefacts.com/id/artefact/voice-capture-studio-repository/
+  - JSON-LD: https://electronicartefacts.com/id/artefact/voice-capture-studio-repository/index.jsonld
+  - Modified: 2026-07-09
+  - Keywords: Voice Capture Studio Repository, Voice Capture Studio, GitHub, Open Source, Browser Software, Voice Capture, Web Development, Audio Engineering

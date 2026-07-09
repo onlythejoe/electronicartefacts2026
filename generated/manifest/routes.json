@@ -1,5 +1,11 @@
 [
   {
+    "id": "ea:artefact:voice-capture-studio-repository",
+    "locale": "en",
+    "route": "/archive/artefacts/voice-capture-studio-repository/",
+    "identifier": "/id/artefact/voice-capture-studio-repository/"
+  },
+  {
     "id": "ea:collection:knowledge-hub-foundations",
     "locale": "en",
     "route": "/archive/collections/knowledge-hub-foundations/",
@@ -24,6 +30,12 @@
     "identifier": "/id/collection/knowledge-hub-third-wave/"
   },
   {
+    "id": "ea:collection:voice-capture-studio",
+    "locale": "en",
+    "route": "/archive/collections/voice-capture-studio/",
+    "identifier": "/id/collection/voice-capture-studio/"
+  },
+  {
     "id": "ea:concept:ai-agent",
     "locale": "en",
     "route": "/knowledge/concepts/ai-agent/",
@@ -46,6 +58,12 @@
     "locale": "en",
     "route": "/knowledge/concepts/autonomous-system/",
     "identifier": "/id/concept/autonomous-system/"
+  },
+  {
+    "id": "ea:concept:browser-software",
+    "locale": "en",
+    "route": "/knowledge/concepts/browser-software/",
+    "identifier": "/id/concept/browser-software/"
   },
   {
     "id": "ea:concept:contextual-execution",
@@ -150,6 +168,12 @@
     "identifier": "/id/concept/linked-data/"
   },
   {
+    "id": "ea:concept:machine-learning-workflows",
+    "locale": "en",
+    "route": "/knowledge/concepts/machine-learning-workflows/",
+    "identifier": "/id/concept/machine-learning-workflows/"
+  },
+  {
     "id": "ea:concept:metadata",
     "locale": "en",
     "route": "/knowledge/concepts/metadata/",
@@ -222,6 +246,18 @@
     "identifier": "/id/concept/signal-archaeology/"
   },
   {
+    "id": "ea:concept:speech-datasets",
+    "locale": "en",
+    "route": "/knowledge/concepts/speech-datasets/",
+    "identifier": "/id/concept/speech-datasets/"
+  },
+  {
+    "id": "ea:concept:speech-recording",
+    "locale": "en",
+    "route": "/knowledge/concepts/speech-recording/",
+    "identifier": "/id/concept/speech-recording/"
+  },
+  {
     "id": "ea:concept:systems-thinking",
     "locale": "en",
     "route": "/knowledge/concepts/systems-thinking/",
@@ -234,10 +270,22 @@
     "identifier": "/id/concept/typography/"
   },
   {
+    "id": "ea:concept:voice-technology",
+    "locale": "en",
+    "route": "/knowledge/concepts/voice-technology/",
+    "identifier": "/id/concept/voice-technology/"
+  },
+  {
     "id": "ea:concept:web-audio",
     "locale": "en",
     "route": "/knowledge/concepts/web-audio/",
     "identifier": "/id/concept/web-audio/"
+  },
+  {
+    "id": "ea:artefact:voice-capture-studio-repository-fr",
+    "locale": "fr",
+    "route": "/fr/archive/artefacts/voice-capture-studio-repository/",
+    "identifier": "/fr/id/artefact/voice-capture-studio-repository/"
   },
   {
     "id": "ea:collection:knowledge-hub-foundations-fr",
@@ -264,6 +312,12 @@
     "identifier": "/fr/id/collection/knowledge-hub-third-wave/"
   },
   {
+    "id": "ea:collection:voice-capture-studio-fr",
+    "locale": "fr",
+    "route": "/fr/archive/collections/voice-capture-studio/",
+    "identifier": "/fr/id/collection/voice-capture-studio/"
+  },
+  {
     "id": "ea:concept:ai-agent-fr",
     "locale": "fr",
     "route": "/fr/knowledge/concepts/ai-agent/",
@@ -286,6 +340,12 @@
     "locale": "fr",
     "route": "/fr/knowledge/concepts/autonomous-system/",
     "identifier": "/fr/id/concept/autonomous-system/"
+  },
+  {
+    "id": "ea:concept:browser-software-fr",
+    "locale": "fr",
+    "route": "/fr/knowledge/concepts/browser-software/",
+    "identifier": "/fr/id/concept/browser-software/"
   },
   {
     "id": "ea:concept:contextual-execution-fr",
@@ -390,6 +450,12 @@
     "identifier": "/fr/id/concept/linked-data/"
   },
   {
+    "id": "ea:concept:machine-learning-workflows-fr",
+    "locale": "fr",
+    "route": "/fr/knowledge/concepts/machine-learning-workflows/",
+    "identifier": "/fr/id/concept/machine-learning-workflows/"
+  },
+  {
     "id": "ea:concept:metadata-fr",
     "locale": "fr",
     "route": "/fr/knowledge/concepts/metadata/",
@@ -462,6 +528,18 @@
     "identifier": "/fr/id/concept/signal-archaeology/"
   },
   {
+    "id": "ea:concept:speech-datasets-fr",
+    "locale": "fr",
+    "route": "/fr/knowledge/concepts/speech-datasets/",
+    "identifier": "/fr/id/concept/speech-datasets/"
+  },
+  {
+    "id": "ea:concept:speech-recording-fr",
+    "locale": "fr",
+    "route": "/fr/knowledge/concepts/speech-recording/",
+    "identifier": "/fr/id/concept/speech-recording/"
+  },
+  {
     "id": "ea:concept:systems-thinking-fr",
     "locale": "fr",
     "route": "/fr/knowledge/concepts/systems-thinking/",
@@ -472,6 +550,12 @@
     "locale": "fr",
     "route": "/fr/knowledge/concepts/typography/",
     "identifier": "/fr/id/concept/typography/"
+  },
+  {
+    "id": "ea:concept:voice-technology-fr",
+    "locale": "fr",
+    "route": "/fr/knowledge/concepts/voice-technology/",
+    "identifier": "/fr/id/concept/voice-technology/"
   },
   {
     "id": "ea:concept:web-audio-fr",
@@ -514,6 +598,12 @@
     "locale": "fr",
     "route": "/fr/projects/vestiges/",
     "identifier": "/fr/id/project/vestiges/"
+  },
+  {
+    "id": "ea:project:voice-capture-studio-fr",
+    "locale": "fr",
+    "route": "/fr/projects/voice-capture-studio/",
+    "identifier": "/fr/id/project/voice-capture-studio/"
   },
   {
     "id": "ea:publication:ai-agents-vs-ai-workflows-fr",
@@ -904,6 +994,12 @@
     "locale": "en",
     "route": "/projects/vestiges/",
     "identifier": "/id/project/vestiges/"
+  },
+  {
+    "id": "ea:project:voice-capture-studio",
+    "locale": "en",
+    "route": "/projects/voice-capture-studio/",
+    "identifier": "/id/project/voice-capture-studio/"
   },
   {
     "id": "ea:publication:ai-agents-vs-ai-workflows",

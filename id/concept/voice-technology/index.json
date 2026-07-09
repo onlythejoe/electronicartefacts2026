@@ -1,0 +1,84 @@
+{
+  "id": "ea:concept:voice-technology",
+  "type": "concept",
+  "slug": {
+    "canonical": "voice-technology"
+  },
+  "title": "Voice Technology",
+  "definition": "Voice technology is the design and engineering of systems that capture, analyze, transform, preserve or present spoken voice as technical and cultural material.",
+  "abstract": "Voice technology spans recording, metadata, speech interfaces, voice archives, speech datasets and machine listening without reducing voice to a model output.",
+  "description": "A canonical concept record for voice systems inside Electronic Artefacts research.",
+  "locale": "en",
+  "visibility": "public",
+  "publicationClass": "canonical",
+  "status": "active",
+  "maturity": "research",
+  "confidence": "validated",
+  "version": {
+    "version": "1.0.0",
+    "createdAt": "2026-07-09",
+    "publishedAt": "2026-07-09",
+    "modifiedAt": "2026-07-09"
+  },
+  "authors": [
+    {
+      "id": "ea:organization:electronic-artefacts"
+    }
+  ],
+  "publisher": "ea:organization:electronic-artefacts",
+  "tags": [
+    "Voice Technology",
+    "Speech",
+    "Audio",
+    "Human Computer Interaction"
+  ],
+  "disciplines": [
+    "Audio Engineering",
+    "Human Computer Interaction",
+    "Artificial Intelligence"
+  ],
+  "scope": [
+    "Voice capture",
+    "Speech metadata",
+    "Voice archives",
+    "Speech interfaces",
+    "Machine-listening workflows"
+  ],
+  "exclusions": [
+    "Voice cloning claims with no dataset, consent or provenance context",
+    "Audio branding with no technical system layer"
+  ],
+  "claims": [
+    "Voice technology should preserve speaker agency, capture context and downstream boundaries.",
+    "Voice tools are strongest when recording quality and metadata quality are treated as one workflow."
+  ],
+  "bodyHtml": "<h2 id=\"definition\">Definition</h2>\n<p>Voice technology describes systems that work with spoken voice as audio, data, interface and cultural material.</p>\n<h2 id=\"scope\">Scope</h2>\n<p>The concept includes capture tools, speech datasets, transcripts, speaker profiles, speech interfaces, review workflows and voice archives.</p>\n<h2 id=\"applications\">Applications</h2>\n<p>Electronic Artefacts uses voice technology to connect audio research, browser tools and privacy-first dataset preparation.</p>\n<h2 id=\"limits\">Limits</h2>\n<p>Voice technology should not be collapsed into voice cloning. Recording, reviewing, preserving and governing voice data are distinct technical problems.</p>\n",
+  "headings": [
+    "Definition",
+    "Scope",
+    "Applications",
+    "Limits"
+  ],
+  "headingItems": [
+    {
+      "level": 2,
+      "title": "Definition",
+      "id": "definition"
+    },
+    {
+      "level": 2,
+      "title": "Scope",
+      "id": "scope"
+    },
+    {
+      "level": 2,
+      "title": "Applications",
+      "id": "applications"
+    },
+    {
+      "level": 2,
+      "title": "Limits",
+      "id": "limits"
+    }
+  ]
+}

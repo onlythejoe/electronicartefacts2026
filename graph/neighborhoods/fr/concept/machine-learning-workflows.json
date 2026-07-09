@@ -1,0 +1,34 @@
+{
+  "id": "local:ea:concept:machine-learning-workflows-fr",
+  "kind": "local",
+  "focus": "ea:concept:machine-learning-workflows-fr",
+  "nodes": [
+    {
+      "id": "ea:concept:machine-learning-workflows-fr",
+      "type": "concept",
+      "title": "Workflows de machine learning",
+      "route": "/fr/knowledge/concepts/machine-learning-workflows/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:project:voice-capture-studio-fr",
+      "type": "project",
+      "title": "Voice Capture Studio",
+      "route": "/fr/projects/voice-capture-studio/",
+      "status": "active",
+      "confidence": "published"
+    }
+  ],
+  "edges": [
+    {
+      "id": "ear:voice-capture-studio-applies-machine-learning-workflows",
+      "source": "ea:project:voice-capture-studio-fr",
+      "target": "ea:concept:machine-learning-workflows-fr",
+      "predicate": "appliesConcept",
+      "label": "Applies concept",
+      "statement": "Voice Capture Studio supports downstream machine-learning workflows by preparing accepted recordings and metadata without performing model training itself.",
+      "confidence": "published"
+    }
+  ]
+}

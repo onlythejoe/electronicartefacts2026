@@ -1,0 +1,51 @@
+{
+  "id": "local:ea:collection:voice-capture-studio",
+  "kind": "local",
+  "focus": "ea:collection:voice-capture-studio",
+  "nodes": [
+    {
+      "id": "ea:collection:voice-capture-studio",
+      "type": "collection",
+      "title": "Voice Capture Studio Collection",
+      "route": "/archive/collections/voice-capture-studio/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:project:voice-capture-studio",
+      "type": "project",
+      "title": "Voice Capture Studio",
+      "route": "/projects/voice-capture-studio/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:artefact:voice-capture-studio-repository",
+      "type": "artefact",
+      "title": "Voice Capture Studio Repository",
+      "route": "/archive/artefacts/voice-capture-studio-repository/",
+      "status": "active",
+      "confidence": "published"
+    }
+  ],
+  "edges": [
+    {
+      "id": "ear:voice-capture-studio-member-of-collection",
+      "source": "ea:project:voice-capture-studio",
+      "target": "ea:collection:voice-capture-studio",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Voice Capture Studio is the lead project in the Voice Capture Studio Collection.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:voice-capture-repository-member-of-collection",
+      "source": "ea:artefact:voice-capture-studio-repository",
+      "target": "ea:collection:voice-capture-studio",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "The Voice Capture Studio repository is part of the Voice Capture Studio Collection as the public source artefact.",
+      "confidence": "published"
+    }
+  ]
+}

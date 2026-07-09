@@ -185,7 +185,7 @@ const sitemapLocs = new Set(all(sitemap, /<loc>([^<]+)<\/loc>/g));
 for (const canonical of indexableCanonicals.keys()) {
   if (!sitemapLocs.has(canonical)) issues.push([canonical, "indexable canonical missing from sitemap"]);
 }
-if (!/<loc>https:\/\/electronicartefacts\.com\/<\/loc>[\s\S]*?<lastmod>2026-07-08<\/lastmod>/.test(sitemap)) {
+if (!/<loc>https:\/\/electronicartefacts\.com\/<\/loc>[\s\S]*?<lastmod>2026-07-09<\/lastmod>/.test(sitemap)) {
   issues.push(["sitemap.xml", "homepage lastmod does not reflect the current search-surface update"]);
 }
 

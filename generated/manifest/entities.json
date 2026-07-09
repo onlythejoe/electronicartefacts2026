@@ -1,5 +1,100 @@
 [
   {
+    "id": "ea:artefact:voice-capture-studio-repository",
+    "type": "artefact",
+    "slug": {
+      "canonical": "voice-capture-studio-repository"
+    },
+    "title": "Voice Capture Studio Repository",
+    "subtitle": "Open Source Code Artefact",
+    "abstract": "The Voice Capture Studio repository contains the open-source React, Vite and TypeScript application, documentation, tests and GitHub Pages deployment workflow for local-first voice capture.",
+    "description": "A code artefact record for the public Voice Capture Studio repository and its documented browser recording architecture.",
+    "locale": "en",
+    "visibility": "public",
+    "publicationClass": "published",
+    "status": "active",
+    "maturity": "development",
+    "confidence": "published",
+    "version": {
+      "version": "1.0.0",
+      "createdAt": "2026-07-09",
+      "publishedAt": "2026-07-09",
+      "modifiedAt": "2026-07-09"
+    },
+    "authors": [
+      {
+        "id": "ea:organization:electronic-artefacts"
+      }
+    ],
+    "publisher": "ea:organization:electronic-artefacts",
+    "tags": [
+      "Voice Capture Studio",
+      "GitHub",
+      "Open Source",
+      "Browser Software",
+      "Voice Capture"
+    ],
+    "disciplines": [
+      "Web Development",
+      "Audio Engineering",
+      "Open Source"
+    ],
+    "sources": [
+      {
+        "title": "Voice Capture Studio repository",
+        "url": "https://github.com/electronicartefacts/voice-capture-studio",
+        "publisher": "GitHub",
+        "accessedAt": "2026-07-09"
+      },
+      {
+        "title": "Voice Capture Studio live demo",
+        "url": "https://electronicartefacts.github.io/voice-capture-studio/",
+        "publisher": "GitHub Pages",
+        "accessedAt": "2026-07-09"
+      }
+    ],
+    "rights": "Copyright 2026 Electronic Artefacts.",
+    "license": "MIT",
+    "artefactType": "code",
+    "createdAt": "2026-07-09",
+    "provenance": "Public GitHub repository created and maintained by Electronic Artefacts for the Voice Capture Studio browser application.",
+    "sourceProject": {
+      "id": "ea:project:voice-capture-studio"
+    },
+    "format": "Git repository",
+    "preservationStatus": "active",
+    "significance": "The repository is the public source of truth for the application code, architecture notes, export contracts, tests, contribution workflow and GitHub Pages deployment.",
+    "bodyHtml": "<h2 id=\"description\">Description</h2>\n<p>The repository contains the open-source implementation of Voice Capture Studio: a static browser application for guided speech recording, local workspace state and structured WAV plus JSON exports.</p>\n<h2 id=\"provenance\">Provenance</h2>\n<p>Electronic Artefacts publishes and maintains the repository at <a href=\"https://github.com/electronicartefacts/voice-capture-studio\">github.com/electronicartefacts/voice-capture-studio</a>. The live application is deployed through GitHub Pages at <a href=\"https://electronicartefacts.github.io/voice-capture-studio/\">electronicartefacts.github.io/voice-capture-studio</a>.</p>\n<h2 id=\"significance\">Significance</h2>\n<p>This code artefact makes the product inspectable. It preserves the architecture doctrine, system model, corpus structure, workspace structure, export structure, tests, contribution guidelines and deployment workflow used to evaluate the application.</p>\n<h2 id=\"rights\">Rights</h2>\n<p>Voice Capture Studio is released under the MIT License. User voice data and generated workspaces do not belong in the repository.</p>\n",
+    "headings": [
+      "Description",
+      "Provenance",
+      "Significance",
+      "Rights"
+    ],
+    "headingItems": [
+      {
+        "level": 2,
+        "title": "Description",
+        "id": "description"
+      },
+      {
+        "level": 2,
+        "title": "Provenance",
+        "id": "provenance"
+      },
+      {
+        "level": 2,
+        "title": "Significance",
+        "id": "significance"
+      },
+      {
+        "level": 2,
+        "title": "Rights",
+        "id": "rights"
+      }
+    ]
+  },
+  {
     "id": "ea:collection:knowledge-hub-foundations",
     "type": "collection",
     "slug": {
@@ -657,6 +752,131 @@
     ]
   },
   {
+    "id": "ea:collection:voice-capture-studio",
+    "type": "collection",
+    "slug": {
+      "canonical": "voice-capture-studio"
+    },
+    "title": "Voice Capture Studio Collection",
+    "subtitle": "Voice Workflow Collection",
+    "abstract": "The Voice Capture Studio Collection gathers the project, source repository and vocabulary needed to understand local-first speech recording, voice datasets, browser software and privacy-first exports.",
+    "description": "A curated collection around the Voice Capture Studio project and its speech-recording knowledge context.",
+    "locale": "en",
+    "visibility": "public",
+    "publicationClass": "published",
+    "status": "active",
+    "maturity": "research",
+    "confidence": "published",
+    "version": {
+      "version": "1.0.0",
+      "createdAt": "2026-07-09",
+      "publishedAt": "2026-07-09",
+      "modifiedAt": "2026-07-09"
+    },
+    "authors": [
+      {
+        "id": "ea:organization:electronic-artefacts"
+      }
+    ],
+    "publisher": "ea:organization:electronic-artefacts",
+    "tags": [
+      "Voice Capture Studio",
+      "Voice Technology",
+      "Speech Recording",
+      "Browser Software",
+      "Open Source"
+    ],
+    "disciplines": [
+      "Audio Engineering",
+      "Web Development",
+      "Human Computer Interaction",
+      "Machine Learning"
+    ],
+    "thesis": "Voice Capture Studio is best understood as a browser software artefact where speech recording, local-first privacy, metadata and downstream machine-learning workflows meet.",
+    "curator": [
+      {
+        "id": "ea:organization:electronic-artefacts"
+      }
+    ],
+    "explicitMembers": [
+      {
+        "id": "ea:project:voice-capture-studio"
+      },
+      {
+        "id": "ea:artefact:voice-capture-studio-repository"
+      },
+      {
+        "id": "ea:concept:speech-recording"
+      },
+      {
+        "id": "ea:concept:speech-datasets"
+      },
+      {
+        "id": "ea:concept:browser-software"
+      },
+      {
+        "id": "ea:concept:voice-technology"
+      },
+      {
+        "id": "ea:concept:machine-learning-workflows"
+      },
+      {
+        "id": "ea:concept:open-source"
+      },
+      {
+        "id": "ea:concept:web-audio"
+      },
+      {
+        "id": "ea:concept:metadata"
+      },
+      {
+        "id": "ea:concept:provenance"
+      },
+      {
+        "id": "ea:concept:human-computer-interaction"
+      },
+      {
+        "id": "ea:technology:web-audio-api"
+      }
+    ],
+    "selectionNote": "The collection keeps the live app close to the vocabulary needed to evaluate its recording model, privacy boundary and export structure.",
+    "bodyHtml": "<h2 id=\"thesis\">Thesis</h2>\n<p>Voice Capture Studio is not only a product page. It is a compact knowledge neighborhood around local speech recording, structured exports and browser-based privacy boundaries.</p>\n<h2 id=\"selection-logic\">Selection logic</h2>\n<p>The collection includes the live project, the repository artefact and a small vocabulary of concepts that make the workflow understandable: speech recording, speech datasets, browser software, voice technology, machine-learning workflows, open source, web audio, metadata, provenance and HCI.</p>\n<h2 id=\"editorial-role\">Editorial role</h2>\n<p>Use this collection when the question is not simply “what is the app?” but “what kind of recording workflow does this app represent?”</p>\n<h2 id=\"current-members\">Current members</h2>\n<p>The collection starts with the project and repository, then connects them to the durable concepts and technology records that explain their role in the Electronic Artefacts graph.</p>\n<h2 id=\"future-expansion\">Future expansion</h2>\n<p>Future members should include release notes, screenshots, export examples and dataset-readiness reports once those artefacts can be published without exposing private voice data.</p>\n",
+    "headings": [
+      "Thesis",
+      "Selection logic",
+      "Editorial role",
+      "Current members",
+      "Future expansion"
+    ],
+    "headingItems": [
+      {
+        "level": 2,
+        "title": "Thesis",
+        "id": "thesis"
+      },
+      {
+        "level": 2,
+        "title": "Selection logic",
+        "id": "selection-logic"
+      },
+      {
+        "level": 2,
+        "title": "Editorial role",
+        "id": "editorial-role"
+      },
+      {
+        "level": 2,
+        "title": "Current members",
+        "id": "current-members"
+      },
+      {
+        "level": 2,
+        "title": "Future expansion",
+        "id": "future-expansion"
+      }
+    ]
+  },
+  {
     "id": "ea:concept:ai-agent",
     "type": "concept",
     "slug": {
@@ -1064,6 +1284,90 @@
         "level": 2,
         "title": "References",
         "id": "references"
+      }
+    ]
+  },
+  {
+    "id": "ea:concept:browser-software",
+    "type": "concept",
+    "slug": {
+      "canonical": "browser-software"
+    },
+    "title": "Browser Software",
+    "definition": "Browser software is application software delivered through web standards while relying on the browser runtime for interface, storage, permissions, media and distribution behavior.",
+    "abstract": "Browser software treats the web browser as an application runtime, not only as a document viewer or marketing surface.",
+    "description": "A canonical concept record for applications built directly on browser capabilities.",
+    "locale": "en",
+    "visibility": "public",
+    "publicationClass": "canonical",
+    "status": "active",
+    "maturity": "research",
+    "confidence": "validated",
+    "version": {
+      "version": "1.0.0",
+      "createdAt": "2026-07-09",
+      "publishedAt": "2026-07-09",
+      "modifiedAt": "2026-07-09"
+    },
+    "authors": [
+      {
+        "id": "ea:organization:electronic-artefacts"
+      }
+    ],
+    "publisher": "ea:organization:electronic-artefacts",
+    "tags": [
+      "Browser Software",
+      "Web App",
+      "PWA",
+      "Local First"
+    ],
+    "disciplines": [
+      "Web Development",
+      "Human Computer Interaction",
+      "Software Architecture"
+    ],
+    "scope": [
+      "Web applications",
+      "Progressive web apps",
+      "Browser permissions",
+      "Local storage",
+      "Static deployment"
+    ],
+    "exclusions": [
+      "Static pages with no application behavior",
+      "Native desktop software with no browser runtime"
+    ],
+    "claims": [
+      "Browser software can reduce installation friction while still requiring careful storage, permission and compatibility design.",
+      "Local-first browser tools need explicit export paths because browser storage is not a permanent archive by itself."
+    ],
+    "bodyHtml": "<h2 id=\"definition\">Definition</h2>\n<p>Browser software is application software that runs inside browser runtimes and uses web platform capabilities for its interface and behavior.</p>\n<h2 id=\"scope\">Scope</h2>\n<p>The concept includes routing, service workers, browser storage, microphone and file permissions, media APIs, static hosting and progressive enhancement.</p>\n<h2 id=\"applications\">Applications</h2>\n<p>Electronic Artefacts uses browser software for public tools, research surfaces, local-first experiments and durable static applications.</p>\n<h2 id=\"limits\">Limits</h2>\n<p>Browser delivery does not remove infrastructure responsibility. Storage, offline behavior, accessibility, device support and export paths still need design.</p>\n",
+    "headings": [
+      "Definition",
+      "Scope",
+      "Applications",
+      "Limits"
+    ],
+    "headingItems": [
+      {
+        "level": 2,
+        "title": "Definition",
+        "id": "definition"
+      },
+      {
+        "level": 2,
+        "title": "Scope",
+        "id": "scope"
+      },
+      {
+        "level": 2,
+        "title": "Applications",
+        "id": "applications"
+      },
+      {
+        "level": 2,
+        "title": "Limits",
+        "id": "limits"
       }
     ]
   },
@@ -2872,6 +3176,90 @@
     ]
   },
   {
+    "id": "ea:concept:machine-learning-workflows",
+    "type": "concept",
+    "slug": {
+      "canonical": "machine-learning-workflows"
+    },
+    "title": "Machine Learning Workflows",
+    "definition": "Machine learning workflows are the ordered practices that move from source material and metadata through validation, preparation, training, evaluation and deployment decisions.",
+    "abstract": "Machine learning workflows depend on source quality, dataset structure, documentation, evaluation and governance as much as on model architecture.",
+    "description": "A canonical concept record for downstream machine-learning preparation and evaluation paths.",
+    "locale": "en",
+    "visibility": "public",
+    "publicationClass": "canonical",
+    "status": "active",
+    "maturity": "research",
+    "confidence": "validated",
+    "version": {
+      "version": "1.0.0",
+      "createdAt": "2026-07-09",
+      "publishedAt": "2026-07-09",
+      "modifiedAt": "2026-07-09"
+    },
+    "authors": [
+      {
+        "id": "ea:organization:electronic-artefacts"
+      }
+    ],
+    "publisher": "ea:organization:electronic-artefacts",
+    "tags": [
+      "Machine Learning",
+      "Workflow",
+      "Dataset Preparation",
+      "Evaluation"
+    ],
+    "disciplines": [
+      "Artificial Intelligence",
+      "Data Engineering",
+      "Software Architecture"
+    ],
+    "scope": [
+      "Dataset preparation",
+      "Validation gates",
+      "Model training inputs",
+      "Evaluation reports",
+      "Governance checkpoints"
+    ],
+    "exclusions": [
+      "Isolated model prompts with no data lifecycle",
+      "Claims about training quality without source evidence"
+    ],
+    "claims": [
+      "Workflow quality begins before training, at the point where source material is captured, reviewed and documented.",
+      "Clear boundaries between preparation, training and deployment reduce misleading AI claims."
+    ],
+    "bodyHtml": "<h2 id=\"definition\">Definition</h2>\n<p>Machine learning workflows are the practical sequences that connect source material, metadata, validation, model work and evaluation.</p>\n<h2 id=\"scope\">Scope</h2>\n<p>The concept includes dataset capture, quality gates, manifests, transformation, training inputs, evaluation reports and governance checkpoints.</p>\n<h2 id=\"applications\">Applications</h2>\n<p>Electronic Artefacts uses the concept to separate dataset preparation from later model training, especially for sensitive media such as voice.</p>\n<h2 id=\"limits\">Limits</h2>\n<p>Preparing a dataset is not the same as training a model. A responsible workflow keeps those stages visible and separately governed.</p>\n",
+    "headings": [
+      "Definition",
+      "Scope",
+      "Applications",
+      "Limits"
+    ],
+    "headingItems": [
+      {
+        "level": 2,
+        "title": "Definition",
+        "id": "definition"
+      },
+      {
+        "level": 2,
+        "title": "Scope",
+        "id": "scope"
+      },
+      {
+        "level": 2,
+        "title": "Applications",
+        "id": "applications"
+      },
+      {
+        "level": 2,
+        "title": "Limits",
+        "id": "limits"
+      }
+    ]
+  },
+  {
     "id": "ea:concept:metadata",
     "type": "concept",
     "slug": {
@@ -4101,6 +4489,175 @@
     ]
   },
   {
+    "id": "ea:concept:speech-datasets",
+    "type": "concept",
+    "slug": {
+      "canonical": "speech-datasets"
+    },
+    "title": "Speech Datasets",
+    "definition": "Speech datasets are structured collections of recorded speech, transcripts, speaker context and quality metadata prepared for analysis, preservation or downstream machine-learning workflows.",
+    "abstract": "Speech datasets turn individual voice recordings into reviewable, documented and reusable collections without erasing the conditions of capture.",
+    "description": "A canonical concept record for structured speech data and voice-capture metadata.",
+    "locale": "en",
+    "visibility": "public",
+    "publicationClass": "canonical",
+    "status": "active",
+    "maturity": "research",
+    "confidence": "validated",
+    "version": {
+      "version": "1.0.0",
+      "createdAt": "2026-07-09",
+      "publishedAt": "2026-07-09",
+      "modifiedAt": "2026-07-09"
+    },
+    "authors": [
+      {
+        "id": "ea:organization:electronic-artefacts"
+      }
+    ],
+    "publisher": "ea:organization:electronic-artefacts",
+    "tags": [
+      "Speech Dataset",
+      "Voice Data",
+      "Metadata",
+      "Dataset Readiness"
+    ],
+    "disciplines": [
+      "Audio Engineering",
+      "Machine Learning",
+      "Metadata",
+      "Digital Preservation"
+    ],
+    "scope": [
+      "Voice archives",
+      "Transcripts",
+      "Prompt corpora",
+      "Quality reports",
+      "Dataset readiness metadata"
+    ],
+    "exclusions": [
+      "Raw audio folders with no manifest or review state",
+      "Training runs, model checkpoints or generated voices"
+    ],
+    "claims": [
+      "A speech dataset is only useful when its capture method, language, speaker context and quality limits remain visible.",
+      "Smaller accepted datasets can be more valuable than larger incoherent collections."
+    ],
+    "bodyHtml": "<h2 id=\"definition\">Definition</h2>\n<p>Speech datasets are organized collections of speech recordings and companion metadata.</p>\n<h2 id=\"scope\">Scope</h2>\n<p>The concept includes audio files, transcripts, timing, prompt identifiers, speaker context, consent notes, quality gates, checksums and export manifests.</p>\n<h2 id=\"applications\">Applications</h2>\n<p>Speech datasets can support archives, voice-over production, dubbing review, speech analysis and downstream model workflows when governance and consent allow it.</p>\n<h2 id=\"limits\">Limits</h2>\n<p>Dataset preparation is not model training. The dataset remains a source collection that can be accepted, rejected, transformed or preserved by later systems.</p>\n",
+    "headings": [
+      "Definition",
+      "Scope",
+      "Applications",
+      "Limits"
+    ],
+    "headingItems": [
+      {
+        "level": 2,
+        "title": "Definition",
+        "id": "definition"
+      },
+      {
+        "level": 2,
+        "title": "Scope",
+        "id": "scope"
+      },
+      {
+        "level": 2,
+        "title": "Applications",
+        "id": "applications"
+      },
+      {
+        "level": 2,
+        "title": "Limits",
+        "id": "limits"
+      }
+    ]
+  },
+  {
+    "id": "ea:concept:speech-recording",
+    "type": "concept",
+    "slug": {
+      "canonical": "speech-recording"
+    },
+    "title": "Speech Recording",
+    "definition": "Speech recording is the directed capture of spoken language with enough technical, contextual and consent metadata to support review, reuse and preservation.",
+    "abstract": "Speech recording connects audio quality, speaker context, prompts, transcripts, metadata and review workflows into a durable voice record.",
+    "description": "A canonical concept record for professional speech capture and review workflows.",
+    "locale": "en",
+    "visibility": "public",
+    "publicationClass": "canonical",
+    "status": "active",
+    "maturity": "research",
+    "confidence": "validated",
+    "version": {
+      "version": "1.0.0",
+      "createdAt": "2026-07-09",
+      "publishedAt": "2026-07-09",
+      "modifiedAt": "2026-07-09"
+    },
+    "authors": [
+      {
+        "id": "ea:organization:electronic-artefacts"
+      }
+    ],
+    "publisher": "ea:organization:electronic-artefacts",
+    "tags": [
+      "Speech Recording",
+      "Voice",
+      "Audio",
+      "Workflow"
+    ],
+    "disciplines": [
+      "Audio Engineering",
+      "Human Computer Interaction",
+      "Web Development"
+    ],
+    "scope": [
+      "Prompted speech capture",
+      "Voice-over sessions",
+      "Dubbing takes",
+      "Room tone and microphone context",
+      "Reviewable audio metadata"
+    ],
+    "exclusions": [
+      "Unstructured voice notes with no review or provenance layer",
+      "Model training itself"
+    ],
+    "claims": [
+      "Speech recording becomes reusable when audio, prompts, speaker context and review state are preserved together.",
+      "Browser recording tools can support professional capture when they expose permissions, quality checks and export structure clearly."
+    ],
+    "bodyHtml": "<h2 id=\"definition\">Definition</h2>\n<p>Speech recording is the controlled capture of spoken language for later review, editing, preservation or dataset preparation.</p>\n<h2 id=\"scope\">Scope</h2>\n<p>The concept includes prompts, speaker information, microphone context, room tone, takes, transcripts, timing, quality checks and export metadata.</p>\n<h2 id=\"applications\">Applications</h2>\n<p>Electronic Artefacts uses the concept to frame browser-first voice capture tools, ORETH-adjacent audio research and structured voice archives.</p>\n<h2 id=\"limits\">Limits</h2>\n<p>Speech recording does not itself train a model. It produces source material whose downstream use depends on separate consent, quality and processing decisions.</p>\n",
+    "headings": [
+      "Definition",
+      "Scope",
+      "Applications",
+      "Limits"
+    ],
+    "headingItems": [
+      {
+        "level": 2,
+        "title": "Definition",
+        "id": "definition"
+      },
+      {
+        "level": 2,
+        "title": "Scope",
+        "id": "scope"
+      },
+      {
+        "level": 2,
+        "title": "Applications",
+        "id": "applications"
+      },
+      {
+        "level": 2,
+        "title": "Limits",
+        "id": "limits"
+      }
+    ]
+  },
+  {
     "id": "ea:concept:systems-thinking",
     "type": "concept",
     "slug": {
@@ -4309,6 +4866,90 @@
     ]
   },
   {
+    "id": "ea:concept:voice-technology",
+    "type": "concept",
+    "slug": {
+      "canonical": "voice-technology"
+    },
+    "title": "Voice Technology",
+    "definition": "Voice technology is the design and engineering of systems that capture, analyze, transform, preserve or present spoken voice as technical and cultural material.",
+    "abstract": "Voice technology spans recording, metadata, speech interfaces, voice archives, speech datasets and machine listening without reducing voice to a model output.",
+    "description": "A canonical concept record for voice systems inside Electronic Artefacts research.",
+    "locale": "en",
+    "visibility": "public",
+    "publicationClass": "canonical",
+    "status": "active",
+    "maturity": "research",
+    "confidence": "validated",
+    "version": {
+      "version": "1.0.0",
+      "createdAt": "2026-07-09",
+      "publishedAt": "2026-07-09",
+      "modifiedAt": "2026-07-09"
+    },
+    "authors": [
+      {
+        "id": "ea:organization:electronic-artefacts"
+      }
+    ],
+    "publisher": "ea:organization:electronic-artefacts",
+    "tags": [
+      "Voice Technology",
+      "Speech",
+      "Audio",
+      "Human Computer Interaction"
+    ],
+    "disciplines": [
+      "Audio Engineering",
+      "Human Computer Interaction",
+      "Artificial Intelligence"
+    ],
+    "scope": [
+      "Voice capture",
+      "Speech metadata",
+      "Voice archives",
+      "Speech interfaces",
+      "Machine-listening workflows"
+    ],
+    "exclusions": [
+      "Voice cloning claims with no dataset, consent or provenance context",
+      "Audio branding with no technical system layer"
+    ],
+    "claims": [
+      "Voice technology should preserve speaker agency, capture context and downstream boundaries.",
+      "Voice tools are strongest when recording quality and metadata quality are treated as one workflow."
+    ],
+    "bodyHtml": "<h2 id=\"definition\">Definition</h2>\n<p>Voice technology describes systems that work with spoken voice as audio, data, interface and cultural material.</p>\n<h2 id=\"scope\">Scope</h2>\n<p>The concept includes capture tools, speech datasets, transcripts, speaker profiles, speech interfaces, review workflows and voice archives.</p>\n<h2 id=\"applications\">Applications</h2>\n<p>Electronic Artefacts uses voice technology to connect audio research, browser tools and privacy-first dataset preparation.</p>\n<h2 id=\"limits\">Limits</h2>\n<p>Voice technology should not be collapsed into voice cloning. Recording, reviewing, preserving and governing voice data are distinct technical problems.</p>\n",
+    "headings": [
+      "Definition",
+      "Scope",
+      "Applications",
+      "Limits"
+    ],
+    "headingItems": [
+      {
+        "level": 2,
+        "title": "Definition",
+        "id": "definition"
+      },
+      {
+        "level": 2,
+        "title": "Scope",
+        "id": "scope"
+      },
+      {
+        "level": 2,
+        "title": "Applications",
+        "id": "applications"
+      },
+      {
+        "level": 2,
+        "title": "Limits",
+        "id": "limits"
+      }
+    ]
+  },
+  {
     "id": "ea:concept:web-audio",
     "type": "concept",
     "slug": {
@@ -4405,6 +5046,102 @@
         "level": 2,
         "title": "References",
         "id": "references"
+      }
+    ]
+  },
+  {
+    "id": "ea:artefact:voice-capture-studio-repository-fr",
+    "type": "artefact",
+    "translationOf": "ea:artefact:voice-capture-studio-repository",
+    "slug": {
+      "canonical": "voice-capture-studio-repository"
+    },
+    "title": "Dépôt Voice Capture Studio",
+    "subtitle": "Artefact de code open source",
+    "abstract": "Le dépôt Voice Capture Studio contient l’application open source React, Vite et TypeScript, sa documentation, ses tests et son workflow GitHub Pages pour la capture vocale local-first.",
+    "description": "Fiche d’artefact de code pour le dépôt public Voice Capture Studio et son architecture documentée d’enregistrement dans le navigateur.",
+    "locale": "fr",
+    "visibility": "public",
+    "publicationClass": "published",
+    "status": "active",
+    "maturity": "development",
+    "confidence": "published",
+    "version": {
+      "version": "1.0.0",
+      "createdAt": "2026-07-09",
+      "publishedAt": "2026-07-09",
+      "modifiedAt": "2026-07-09"
+    },
+    "authors": [
+      {
+        "id": "ea:organization:electronic-artefacts"
+      }
+    ],
+    "publisher": "ea:organization:electronic-artefacts",
+    "tags": [
+      "Voice Capture Studio",
+      "GitHub",
+      "open source",
+      "logiciel de navigateur",
+      "capture vocale"
+    ],
+    "disciplines": [
+      "développement web",
+      "ingénierie audio",
+      "open source"
+    ],
+    "sources": [
+      {
+        "title": "Voice Capture Studio repository",
+        "url": "https://github.com/electronicartefacts/voice-capture-studio",
+        "publisher": "GitHub",
+        "accessedAt": "2026-07-09"
+      },
+      {
+        "title": "Voice Capture Studio live demo",
+        "url": "https://electronicartefacts.github.io/voice-capture-studio/",
+        "publisher": "GitHub Pages",
+        "accessedAt": "2026-07-09"
+      }
+    ],
+    "rights": "Copyright 2026 Electronic Artefacts.",
+    "license": "MIT",
+    "artefactType": "code",
+    "createdAt": "2026-07-09",
+    "provenance": "Dépôt GitHub public créé et maintenu par Electronic Artefacts pour l’application de navigateur Voice Capture Studio.",
+    "sourceProject": {
+      "id": "ea:project:voice-capture-studio"
+    },
+    "format": "Dépôt Git",
+    "preservationStatus": "active",
+    "significance": "Le dépôt est la source publique pour le code applicatif, les notes d’architecture, les contrats d’export, les tests, le workflow de contribution et le déploiement GitHub Pages.",
+    "bodyHtml": "<h2 id=\"description\">Description</h2>\n<p>Le dépôt contient l’implémentation open source de Voice Capture Studio : une application statique de navigateur pour l’enregistrement vocal guidé, l’état local du workspace et les exports structurés WAV et JSON.</p>\n<h2 id=\"provenance\">Provenance</h2>\n<p>Electronic Artefacts publie et maintient le dépôt sur <a href=\"https://github.com/electronicartefacts/voice-capture-studio\">github.com/electronicartefacts/voice-capture-studio</a>. L’application live est déployée sur GitHub Pages à l’adresse <a href=\"https://electronicartefacts.github.io/voice-capture-studio/\">electronicartefacts.github.io/voice-capture-studio</a>.</p>\n<h2 id=\"importance\">Importance</h2>\n<p>Cet artefact de code rend le produit inspectable. Il conserve doctrine d’architecture, modèle système, structure de corpus, structure de workspace, structure d’export, tests, règles de contribution et workflow de déploiement.</p>\n<h2 id=\"droits\">Droits</h2>\n<p>Voice Capture Studio est publié sous licence MIT. Les données vocales utilisateur et les workspaces générés n’appartiennent pas au dépôt.</p>\n",
+    "headings": [
+      "Description",
+      "Provenance",
+      "Importance",
+      "Droits"
+    ],
+    "headingItems": [
+      {
+        "level": 2,
+        "title": "Description",
+        "id": "description"
+      },
+      {
+        "level": 2,
+        "title": "Provenance",
+        "id": "provenance"
+      },
+      {
+        "level": 2,
+        "title": "Importance",
+        "id": "importance"
+      },
+      {
+        "level": 2,
+        "title": "Droits",
+        "id": "droits"
       }
     ]
   },
@@ -5070,6 +5807,132 @@
     ]
   },
   {
+    "id": "ea:collection:voice-capture-studio-fr",
+    "type": "collection",
+    "translationOf": "ea:collection:voice-capture-studio",
+    "slug": {
+      "canonical": "voice-capture-studio"
+    },
+    "title": "Collection Voice Capture Studio",
+    "subtitle": "Collection de workflows vocaux",
+    "abstract": "La collection Voice Capture Studio réunit le projet, le dépôt source et le vocabulaire utile pour comprendre l’enregistrement vocal local-first, les datasets vocaux, le logiciel de navigateur et les exports privacy-first.",
+    "description": "Collection éditoriale autour du projet Voice Capture Studio et de son contexte de connaissance sur l’enregistrement vocal.",
+    "locale": "fr",
+    "visibility": "public",
+    "publicationClass": "published",
+    "status": "active",
+    "maturity": "research",
+    "confidence": "published",
+    "version": {
+      "version": "1.0.0",
+      "createdAt": "2026-07-09",
+      "publishedAt": "2026-07-09",
+      "modifiedAt": "2026-07-09"
+    },
+    "authors": [
+      {
+        "id": "ea:organization:electronic-artefacts"
+      }
+    ],
+    "publisher": "ea:organization:electronic-artefacts",
+    "tags": [
+      "Voice Capture Studio",
+      "technologie vocale",
+      "enregistrement vocal",
+      "logiciel de navigateur",
+      "open source"
+    ],
+    "disciplines": [
+      "ingénierie audio",
+      "développement web",
+      "interaction humain-machine",
+      "machine learning"
+    ],
+    "thesis": "Voice Capture Studio se comprend comme un artefact logiciel de navigateur où enregistrement vocal, vie privée local-first, métadonnées et workflows de machine learning en aval se rencontrent.",
+    "curator": [
+      {
+        "id": "ea:organization:electronic-artefacts"
+      }
+    ],
+    "explicitMembers": [
+      {
+        "id": "ea:project:voice-capture-studio"
+      },
+      {
+        "id": "ea:artefact:voice-capture-studio-repository"
+      },
+      {
+        "id": "ea:concept:speech-recording"
+      },
+      {
+        "id": "ea:concept:speech-datasets"
+      },
+      {
+        "id": "ea:concept:browser-software"
+      },
+      {
+        "id": "ea:concept:voice-technology"
+      },
+      {
+        "id": "ea:concept:machine-learning-workflows"
+      },
+      {
+        "id": "ea:concept:open-source"
+      },
+      {
+        "id": "ea:concept:web-audio"
+      },
+      {
+        "id": "ea:concept:metadata"
+      },
+      {
+        "id": "ea:concept:provenance"
+      },
+      {
+        "id": "ea:concept:human-computer-interaction"
+      },
+      {
+        "id": "ea:technology:web-audio-api"
+      }
+    ],
+    "selectionNote": "La collection garde l’application live proche du vocabulaire nécessaire pour évaluer son modèle d’enregistrement, sa frontière de vie privée et sa structure d’export.",
+    "bodyHtml": "<h2 id=\"these\">Thèse</h2>\n<p>Voice Capture Studio n’est pas seulement une fiche produit. C’est un petit voisinage de connaissance autour de l’enregistrement vocal local, des exports structurés et des frontières de vie privée dans le navigateur.</p>\n<h2 id=\"logique-de-selection\">Logique de sélection</h2>\n<p>La collection inclut le projet live, l’artefact de dépôt et un vocabulaire limité : enregistrement vocal, datasets vocaux, logiciel de navigateur, technologie vocale, workflows de machine learning, open source, audio web, métadonnées, provenance et IHM.</p>\n<h2 id=\"role-editorial\">Rôle éditorial</h2>\n<p>Utilisez cette collection lorsque la question n’est pas seulement “qu’est-ce que l’application ?” mais “quel type de workflow d’enregistrement représente-t-elle ?”</p>\n<h2 id=\"membres-actuels\">Membres actuels</h2>\n<p>La collection commence par le projet et le dépôt, puis les relie aux concepts et technologies durables qui expliquent leur rôle dans le graphe Electronic Artefacts.</p>\n<h2 id=\"evolution\">Évolution</h2>\n<p>Les futurs membres devraient inclure notes de release, captures, exemples d’export et rapports de préparation dataset dès que ces artefacts pourront être publiés sans exposer de données vocales privées.</p>\n",
+    "headings": [
+      "Thèse",
+      "Logique de sélection",
+      "Rôle éditorial",
+      "Membres actuels",
+      "Évolution"
+    ],
+    "headingItems": [
+      {
+        "level": 2,
+        "title": "Thèse",
+        "id": "these"
+      },
+      {
+        "level": 2,
+        "title": "Logique de sélection",
+        "id": "logique-de-selection"
+      },
+      {
+        "level": 2,
+        "title": "Rôle éditorial",
+        "id": "role-editorial"
+      },
+      {
+        "level": 2,
+        "title": "Membres actuels",
+        "id": "membres-actuels"
+      },
+      {
+        "level": 2,
+        "title": "Évolution",
+        "id": "evolution"
+      }
+    ]
+  },
+  {
     "id": "ea:concept:ai-agent-fr",
     "type": "concept",
     "translationOf": "ea:concept:ai-agent",
@@ -5445,6 +6308,91 @@
         "level": 2,
         "title": "Références",
         "id": "references"
+      }
+    ]
+  },
+  {
+    "id": "ea:concept:browser-software-fr",
+    "type": "concept",
+    "translationOf": "ea:concept:browser-software",
+    "slug": {
+      "canonical": "browser-software"
+    },
+    "title": "Logiciel de navigateur",
+    "definition": "Un logiciel de navigateur est une application fournie par les standards du Web et exécutée dans le runtime du navigateur pour l’interface, le stockage, les permissions, les médias et la distribution.",
+    "abstract": "Le logiciel de navigateur traite le navigateur comme un runtime applicatif, pas seulement comme un lecteur de documents ou une surface marketing.",
+    "description": "Fiche canonique pour les applications construites directement sur les capacités du navigateur.",
+    "locale": "fr",
+    "visibility": "public",
+    "publicationClass": "canonical",
+    "status": "active",
+    "maturity": "research",
+    "confidence": "validated",
+    "version": {
+      "version": "1.0.0",
+      "createdAt": "2026-07-09",
+      "publishedAt": "2026-07-09",
+      "modifiedAt": "2026-07-09"
+    },
+    "authors": [
+      {
+        "id": "ea:organization:electronic-artefacts"
+      }
+    ],
+    "publisher": "ea:organization:electronic-artefacts",
+    "tags": [
+      "logiciel de navigateur",
+      "application web",
+      "PWA",
+      "local-first"
+    ],
+    "disciplines": [
+      "développement web",
+      "interaction humain-machine",
+      "architecture logicielle"
+    ],
+    "scope": [
+      "Applications web",
+      "Applications web progressives",
+      "Permissions navigateur",
+      "Stockage local",
+      "Déploiement statique"
+    ],
+    "exclusions": [
+      "Pages statiques sans comportement applicatif",
+      "Logiciels natifs sans runtime navigateur"
+    ],
+    "claims": [
+      "Le logiciel de navigateur réduit la friction d’installation mais demande une vraie conception du stockage, des permissions et de la compatibilité.",
+      "Les outils local-first dans le navigateur ont besoin de chemins d’export explicites, car le stockage navigateur n’est pas une archive permanente."
+    ],
+    "bodyHtml": "<h2 id=\"definition\">Définition</h2>\n<p>Un logiciel de navigateur est une application qui s’exécute dans un navigateur et utilise les capacités de la plateforme Web.</p>\n<h2 id=\"perimetre\">Périmètre</h2>\n<p>Le concept inclut routage, service workers, stockage navigateur, permissions micro et fichiers, APIs média, hébergement statique et amélioration progressive.</p>\n<h2 id=\"applications\">Applications</h2>\n<p>Electronic Artefacts l’utilise pour des outils publics, des surfaces de recherche, des expériences local-first et des applications statiques durables.</p>\n<h2 id=\"limites\">Limites</h2>\n<p>La distribution par navigateur ne supprime pas la responsabilité d’infrastructure. Stockage, hors-ligne, accessibilité, support matériel et exports restent à concevoir.</p>\n",
+    "headings": [
+      "Définition",
+      "Périmètre",
+      "Applications",
+      "Limites"
+    ],
+    "headingItems": [
+      {
+        "level": 2,
+        "title": "Définition",
+        "id": "definition"
+      },
+      {
+        "level": 2,
+        "title": "Périmètre",
+        "id": "perimetre"
+      },
+      {
+        "level": 2,
+        "title": "Applications",
+        "id": "applications"
+      },
+      {
+        "level": 2,
+        "title": "Limites",
+        "id": "limites"
       }
     ]
   },
@@ -7046,6 +7994,91 @@
     ]
   },
   {
+    "id": "ea:concept:machine-learning-workflows-fr",
+    "type": "concept",
+    "translationOf": "ea:concept:machine-learning-workflows",
+    "slug": {
+      "canonical": "machine-learning-workflows"
+    },
+    "title": "Workflows de machine learning",
+    "definition": "Les workflows de machine learning sont les pratiques ordonnées qui font passer un matériau source et ses métadonnées par validation, préparation, entraînement, évaluation et décisions de déploiement.",
+    "abstract": "Les workflows de machine learning dépendent de la qualité des sources, de la structure des datasets, de la documentation, de l’évaluation et de la gouvernance.",
+    "description": "Fiche canonique pour les chemins de préparation et d’évaluation en machine learning.",
+    "locale": "fr",
+    "visibility": "public",
+    "publicationClass": "canonical",
+    "status": "active",
+    "maturity": "research",
+    "confidence": "validated",
+    "version": {
+      "version": "1.0.0",
+      "createdAt": "2026-07-09",
+      "publishedAt": "2026-07-09",
+      "modifiedAt": "2026-07-09"
+    },
+    "authors": [
+      {
+        "id": "ea:organization:electronic-artefacts"
+      }
+    ],
+    "publisher": "ea:organization:electronic-artefacts",
+    "tags": [
+      "machine learning",
+      "workflow",
+      "préparation de dataset",
+      "évaluation"
+    ],
+    "disciplines": [
+      "intelligence artificielle",
+      "ingénierie des données",
+      "architecture logicielle"
+    ],
+    "scope": [
+      "Préparation de datasets",
+      "Contrôles de validation",
+      "Entrées d’entraînement",
+      "Rapports d’évaluation",
+      "Points de gouvernance"
+    ],
+    "exclusions": [
+      "Prompts isolés sans cycle de vie des données",
+      "Claims de qualité d’entraînement sans preuve sur les sources"
+    ],
+    "claims": [
+      "La qualité d’un workflow commence avant l’entraînement, au moment où le matériau source est capturé, révisé et documenté.",
+      "Des frontières claires entre préparation, entraînement et déploiement réduisent les claims trompeurs sur l’IA."
+    ],
+    "bodyHtml": "<h2 id=\"definition\">Définition</h2>\n<p>Les workflows de machine learning relient matériau source, métadonnées, validation, travail de modèle et évaluation.</p>\n<h2 id=\"perimetre\">Périmètre</h2>\n<p>Le concept inclut capture de dataset, contrôles qualité, manifestes, transformation, entrées d’entraînement, rapports d’évaluation et points de gouvernance.</p>\n<h2 id=\"applications\">Applications</h2>\n<p>Electronic Artefacts l’utilise pour séparer préparation de dataset et entraînement de modèle, notamment pour les médias sensibles comme la voix.</p>\n<h2 id=\"limites\">Limites</h2>\n<p>Préparer un dataset n’est pas entraîner un modèle. Un workflow responsable garde ces étapes visibles et gouvernées séparément.</p>\n",
+    "headings": [
+      "Définition",
+      "Périmètre",
+      "Applications",
+      "Limites"
+    ],
+    "headingItems": [
+      {
+        "level": 2,
+        "title": "Définition",
+        "id": "definition"
+      },
+      {
+        "level": 2,
+        "title": "Périmètre",
+        "id": "perimetre"
+      },
+      {
+        "level": 2,
+        "title": "Applications",
+        "id": "applications"
+      },
+      {
+        "level": 2,
+        "title": "Limites",
+        "id": "limites"
+      }
+    ]
+  },
+  {
     "id": "ea:concept:metadata-fr",
     "type": "concept",
     "translationOf": "ea:concept:metadata",
@@ -8161,6 +9194,177 @@
     ]
   },
   {
+    "id": "ea:concept:speech-datasets-fr",
+    "type": "concept",
+    "translationOf": "ea:concept:speech-datasets",
+    "slug": {
+      "canonical": "speech-datasets"
+    },
+    "title": "Jeux de données vocales",
+    "definition": "Les jeux de données vocales sont des collections structurées de parole enregistrée, de transcriptions, de contexte locuteur et de métadonnées qualité préparées pour l’analyse, la conservation ou des workflows de machine learning.",
+    "abstract": "Les jeux de données vocales transforment des enregistrements individuels en collections documentées, révisables et réutilisables.",
+    "description": "Fiche canonique pour les données vocales structurées et les métadonnées de capture.",
+    "locale": "fr",
+    "visibility": "public",
+    "publicationClass": "canonical",
+    "status": "active",
+    "maturity": "research",
+    "confidence": "validated",
+    "version": {
+      "version": "1.0.0",
+      "createdAt": "2026-07-09",
+      "publishedAt": "2026-07-09",
+      "modifiedAt": "2026-07-09"
+    },
+    "authors": [
+      {
+        "id": "ea:organization:electronic-artefacts"
+      }
+    ],
+    "publisher": "ea:organization:electronic-artefacts",
+    "tags": [
+      "dataset vocal",
+      "données vocales",
+      "métadonnées",
+      "qualité dataset"
+    ],
+    "disciplines": [
+      "ingénierie audio",
+      "machine learning",
+      "métadonnées",
+      "préservation numérique"
+    ],
+    "scope": [
+      "Archives vocales",
+      "Transcriptions",
+      "Corpus de prompts",
+      "Rapports qualité",
+      "Métadonnées de préparation dataset"
+    ],
+    "exclusions": [
+      "Dossiers audio bruts sans manifeste ou état de révision",
+      "Entraînements, checkpoints de modèles ou voix générées"
+    ],
+    "claims": [
+      "Un dataset vocal n’est utile que si la méthode de capture, la langue, le contexte locuteur et les limites qualité restent visibles.",
+      "De petits datasets acceptés peuvent avoir plus de valeur que de grandes collections incohérentes."
+    ],
+    "bodyHtml": "<h2 id=\"definition\">Définition</h2>\n<p>Les jeux de données vocales sont des collections organisées d’enregistrements de parole et de métadonnées associées.</p>\n<h2 id=\"perimetre\">Périmètre</h2>\n<p>Le concept inclut fichiers audio, transcriptions, timing, identifiants de prompts, contexte locuteur, notes de consentement, contrôles qualité, checksums et manifestes d’export.</p>\n<h2 id=\"applications\">Applications</h2>\n<p>Ils peuvent soutenir archives, voix off, doublage, analyse de la parole et workflows de modèles lorsque gouvernance et consentement le permettent.</p>\n<h2 id=\"limites\">Limites</h2>\n<p>La préparation d’un dataset n’est pas l’entraînement d’un modèle. Le dataset reste une collection source que d’autres systèmes peuvent accepter, rejeter, transformer ou préserver.</p>\n",
+    "headings": [
+      "Définition",
+      "Périmètre",
+      "Applications",
+      "Limites"
+    ],
+    "headingItems": [
+      {
+        "level": 2,
+        "title": "Définition",
+        "id": "definition"
+      },
+      {
+        "level": 2,
+        "title": "Périmètre",
+        "id": "perimetre"
+      },
+      {
+        "level": 2,
+        "title": "Applications",
+        "id": "applications"
+      },
+      {
+        "level": 2,
+        "title": "Limites",
+        "id": "limites"
+      }
+    ]
+  },
+  {
+    "id": "ea:concept:speech-recording-fr",
+    "type": "concept",
+    "translationOf": "ea:concept:speech-recording",
+    "slug": {
+      "canonical": "speech-recording"
+    },
+    "title": "Enregistrement vocal",
+    "definition": "L’enregistrement vocal est la capture dirigée de parole avec les métadonnées techniques, contextuelles et de consentement nécessaires à la révision, à la réutilisation et à la conservation.",
+    "abstract": "L’enregistrement vocal relie qualité audio, contexte de locuteur, prompts, transcriptions, métadonnées et révision dans un enregistrement durable.",
+    "description": "Fiche canonique pour les workflows professionnels de capture et de révision de parole.",
+    "locale": "fr",
+    "visibility": "public",
+    "publicationClass": "canonical",
+    "status": "active",
+    "maturity": "research",
+    "confidence": "validated",
+    "version": {
+      "version": "1.0.0",
+      "createdAt": "2026-07-09",
+      "publishedAt": "2026-07-09",
+      "modifiedAt": "2026-07-09"
+    },
+    "authors": [
+      {
+        "id": "ea:organization:electronic-artefacts"
+      }
+    ],
+    "publisher": "ea:organization:electronic-artefacts",
+    "tags": [
+      "enregistrement vocal",
+      "voix",
+      "audio",
+      "workflow"
+    ],
+    "disciplines": [
+      "ingénierie audio",
+      "interaction humain-machine",
+      "développement web"
+    ],
+    "scope": [
+      "Capture vocale guidée",
+      "Sessions de voix off",
+      "Prises de doublage",
+      "Silence de pièce et contexte micro",
+      "Métadonnées audio révisables"
+    ],
+    "exclusions": [
+      "Notes vocales non structurées sans couche de révision ou de provenance",
+      "Entraînement de modèles"
+    ],
+    "claims": [
+      "Un enregistrement vocal devient réutilisable lorsque l’audio, les prompts, le contexte du locuteur et l’état de révision restent associés.",
+      "Les outils de capture dans le navigateur peuvent soutenir une capture professionnelle lorsqu’ils exposent clairement permissions, qualité et exports."
+    ],
+    "bodyHtml": "<h2 id=\"definition\">Définition</h2>\n<p>L’enregistrement vocal est la capture contrôlée de parole pour une révision, une édition, une conservation ou une préparation de dataset ultérieure.</p>\n<h2 id=\"perimetre\">Périmètre</h2>\n<p>Le concept inclut les prompts, les informations de locuteur, le contexte micro, le silence de pièce, les prises, les transcriptions, le timing, les contrôles qualité et les métadonnées d’export.</p>\n<h2 id=\"applications\">Applications</h2>\n<p>Electronic Artefacts l’utilise pour décrire les outils de capture vocale dans le navigateur, les recherches audio proches d’ORETH et les archives vocales structurées.</p>\n<h2 id=\"limites\">Limites</h2>\n<p>L’enregistrement vocal n’entraîne pas lui-même un modèle. Il produit un matériau source dont l’usage ultérieur dépend de décisions séparées de consentement, de qualité et de traitement.</p>\n",
+    "headings": [
+      "Définition",
+      "Périmètre",
+      "Applications",
+      "Limites"
+    ],
+    "headingItems": [
+      {
+        "level": 2,
+        "title": "Définition",
+        "id": "definition"
+      },
+      {
+        "level": 2,
+        "title": "Périmètre",
+        "id": "perimetre"
+      },
+      {
+        "level": 2,
+        "title": "Applications",
+        "id": "applications"
+      },
+      {
+        "level": 2,
+        "title": "Limites",
+        "id": "limites"
+      }
+    ]
+  },
+  {
     "id": "ea:concept:systems-thinking-fr",
     "type": "concept",
     "translationOf": "ea:concept:systems-thinking",
@@ -8346,6 +9550,91 @@
         "level": 2,
         "title": "Références",
         "id": "references"
+      }
+    ]
+  },
+  {
+    "id": "ea:concept:voice-technology-fr",
+    "type": "concept",
+    "translationOf": "ea:concept:voice-technology",
+    "slug": {
+      "canonical": "voice-technology"
+    },
+    "title": "Technologie vocale",
+    "definition": "La technologie vocale désigne la conception et l’ingénierie de systèmes qui capturent, analysent, transforment, préservent ou présentent la voix parlée comme matériau technique et culturel.",
+    "abstract": "La technologie vocale réunit capture, métadonnées, interfaces vocales, archives, datasets et écoute machine sans réduire la voix à une sortie de modèle.",
+    "description": "Fiche canonique pour les systèmes vocaux dans la recherche Electronic Artefacts.",
+    "locale": "fr",
+    "visibility": "public",
+    "publicationClass": "canonical",
+    "status": "active",
+    "maturity": "research",
+    "confidence": "validated",
+    "version": {
+      "version": "1.0.0",
+      "createdAt": "2026-07-09",
+      "publishedAt": "2026-07-09",
+      "modifiedAt": "2026-07-09"
+    },
+    "authors": [
+      {
+        "id": "ea:organization:electronic-artefacts"
+      }
+    ],
+    "publisher": "ea:organization:electronic-artefacts",
+    "tags": [
+      "technologie vocale",
+      "parole",
+      "audio",
+      "interaction humain-machine"
+    ],
+    "disciplines": [
+      "ingénierie audio",
+      "interaction humain-machine",
+      "intelligence artificielle"
+    ],
+    "scope": [
+      "Capture vocale",
+      "Métadonnées de parole",
+      "Archives vocales",
+      "Interfaces vocales",
+      "Workflows d’écoute machine"
+    ],
+    "exclusions": [
+      "Promesses de clonage vocal sans dataset, consentement ou provenance",
+      "Branding sonore sans couche système"
+    ],
+    "claims": [
+      "La technologie vocale doit préserver l’agence du locuteur, le contexte de capture et les frontières d’usage.",
+      "Les outils vocaux sont plus solides lorsque qualité d’enregistrement et qualité des métadonnées sont traitées ensemble."
+    ],
+    "bodyHtml": "<h2 id=\"definition\">Définition</h2>\n<p>La technologie vocale décrit les systèmes qui travaillent avec la voix parlée comme audio, donnée, interface et matériau culturel.</p>\n<h2 id=\"perimetre\">Périmètre</h2>\n<p>Elle inclut outils de capture, datasets vocaux, transcriptions, profils de locuteurs, interfaces de parole, workflows de révision et archives vocales.</p>\n<h2 id=\"applications\">Applications</h2>\n<p>Electronic Artefacts l’utilise pour relier recherche audio, outils de navigateur et préparation de datasets respectueuse de la vie privée.</p>\n<h2 id=\"limites\">Limites</h2>\n<p>La technologie vocale ne doit pas être réduite au clonage vocal. Enregistrer, réviser, préserver et gouverner des données vocales sont des problèmes techniques distincts.</p>\n",
+    "headings": [
+      "Définition",
+      "Périmètre",
+      "Applications",
+      "Limites"
+    ],
+    "headingItems": [
+      {
+        "level": 2,
+        "title": "Définition",
+        "id": "definition"
+      },
+      {
+        "level": 2,
+        "title": "Périmètre",
+        "id": "perimetre"
+      },
+      {
+        "level": 2,
+        "title": "Applications",
+        "id": "applications"
+      },
+      {
+        "level": 2,
+        "title": "Limites",
+        "id": "limites"
       }
     ]
   },
@@ -9217,6 +10506,279 @@
         "level": 2,
         "title": "Canal public",
         "id": "canal-public"
+      }
+    ]
+  },
+  {
+    "id": "ea:project:voice-capture-studio-fr",
+    "type": "project",
+    "translationOf": "ea:project:voice-capture-studio",
+    "slug": {
+      "canonical": "voice-capture-studio"
+    },
+    "title": "Voice Capture Studio",
+    "subtitle": "Studio d’enregistrement vocal local-first",
+    "abstract": "Voice Capture Studio est une application open source de navigateur pour l’enregistrement vocal dirigé, la révision locale et l’export de voix structurée.",
+    "description": "Un studio d’enregistrement local-first pour datasets vocaux, voix off et doublage, construit comme une application de navigateur open source avec exports WAV et métadonnées structurées.",
+    "locale": "fr",
+    "visibility": "public",
+    "publicationClass": "canonical",
+    "status": "active",
+    "maturity": "development",
+    "confidence": "published",
+    "version": {
+      "version": "1.0.0",
+      "createdAt": "2026-07-09",
+      "publishedAt": "2026-07-09",
+      "modifiedAt": "2026-07-09",
+      "changeSummary": "Intégration publique initiale du projet open source Voice Capture Studio."
+    },
+    "authors": [
+      {
+        "id": "ea:organization:electronic-artefacts"
+      }
+    ],
+    "publisher": "ea:organization:electronic-artefacts",
+    "tags": [
+      "Voice Capture Studio",
+      "enregistrement vocal",
+      "dataset vocal",
+      "logiciel de navigateur",
+      "Web Audio",
+      "open source",
+      "local-first",
+      "vie privée"
+    ],
+    "disciplines": [
+      "ingénierie audio",
+      "développement web",
+      "interaction humain-machine",
+      "machine learning",
+      "open source"
+    ],
+    "media": [
+      {
+        "id": "voice-capture-studio-capture-screen-fr",
+        "type": "image",
+        "src": "/assets/media/projects/voice-capture-studio/voice-capture-studio-capture.png",
+        "alt": "Écran live de capture Voice Capture Studio montrant les modes Dataset ML, Doublage et Master audio.",
+        "caption": "Écran live GitHub Pages avec stockage navigateur local, modes de capture et état de calibration."
+      },
+      {
+        "id": "voice-capture-studio-quality-screen-fr",
+        "type": "image",
+        "src": "/assets/media/projects/voice-capture-studio/voice-capture-studio-live.png",
+        "alt": "Écran qualité et exports de Voice Capture Studio.",
+        "caption": "Écran qualité et exports montrant progression locale, version du corpus et contrôles de préparation dataset."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Voice Capture Studio live demo",
+        "url": "https://electronicartefacts.github.io/voice-capture-studio/",
+        "publisher": "GitHub Pages",
+        "accessedAt": "2026-07-09"
+      },
+      {
+        "title": "Voice Capture Studio repository",
+        "url": "https://github.com/electronicartefacts/voice-capture-studio",
+        "publisher": "GitHub",
+        "accessedAt": "2026-07-09"
+      },
+      {
+        "title": "Voice Capture Studio architecture doctrine",
+        "url": "https://github.com/electronicartefacts/voice-capture-studio/blob/main/docs/architecture-doctrine.md",
+        "publisher": "GitHub",
+        "accessedAt": "2026-07-09"
+      }
+    ],
+    "rights": "Copyright 2026 Electronic Artefacts.",
+    "license": "MIT",
+    "featured": true,
+    "category": "internal",
+    "brief": "Standardiser l’enregistrement professionnel de parole dans le navigateur afin d’exporter des voix propres, révisables et accompagnées des métadonnées utiles aux workflows en aval.",
+    "context": "Les données vocales sont souvent capturées avec des outils improvisés, des dossiers peu structurés et un contexte incomplet. Cela fragilise révision, consentement, contrôle qualité, doublage et préparation de datasets avant même tout workflow de modèle ou d’archive.",
+    "stakeholders": [
+      {
+        "id": "ea:organization:electronic-artefacts"
+      }
+    ],
+    "constraints": [
+      "Garder les enregistrements et workspaces locaux au navigateur et aux dossiers choisis par l’utilisateur.",
+      "Rendre visibles les permissions micro, la durabilité du stockage et les chemins d’export avant l’enregistrement.",
+      "Préserver la frontière entre préparation de dataset et entraînement de modèle.",
+      "Utiliser des formats ouverts et une documentation lisible hors de l’application.",
+      "Maintenir une application déployable comme surface statique GitHub Pages."
+    ],
+    "approach": [
+      "Construire une interface de capture autour de sessions guidées, du choix de langue, de profils locuteurs et de la révision des prises.",
+      "Capturer l’audio local via Web Audio, puis exporter WAV et JSON pour une révision structurée.",
+      "Traiter les états keeper, review et reject comme partie de la couverture du corpus.",
+      "Séparer l’orchestration React des domaines corpus, sessions, workspace, recording, export et settings.",
+      "Publier le code, la documentation, les modèles d’issues et le workflow GitHub Pages comme base open source."
+    ],
+    "outputs": [
+      {
+        "id": "ea:project:voice-capture-studio"
+      },
+      {
+        "id": "ea:artefact:voice-capture-studio-repository"
+      }
+    ],
+    "outcomes": [
+      "Une application GitHub Pages live pour capturer la parole localement dans un navigateur sécurisé.",
+      "Un dépôt open source documenté avec notes d’architecture, de corpus, de workspace et d’export.",
+      "Un modèle d’export structuré pour WAV, transcriptions, timing, intentions, rapports qualité et manifestes.",
+      "Un workflow privacy-first où les enregistrements utilisateurs ne sont pas envoyés à un service distant par le site."
+    ],
+    "evidence": [
+      {
+        "id": "ea:artefact:voice-capture-studio-repository"
+      }
+    ],
+    "credits": [
+      {
+        "id": "ea:organization:electronic-artefacts"
+      }
+    ],
+    "visualLanguage": [
+      "Noir",
+      "Ivoire",
+      "Graphite",
+      "Vert signal",
+      "Rouge chaud"
+    ],
+    "textures": [
+      "Console locale",
+      "Forme d’onde audio",
+      "Calibration studio",
+      "Export structuré"
+    ],
+    "symbols": [
+      "Microphone",
+      "Corpus",
+      "Prise",
+      "Dossier local"
+    ],
+    "developmentFocus": [
+      "React 19",
+      "Vite 6",
+      "TypeScript",
+      "Web Audio API",
+      "Export WAV PCM",
+      "Workspace navigateur privé",
+      "File System Access API",
+      "GitHub Pages"
+    ],
+    "marketingFocus": [
+      "Enregistrement local-first",
+      "Préparation de dataset vocal",
+      "Outil de navigateur open source",
+      "Workflow voix off",
+      "Workflow doublage",
+      "Capture privacy-first"
+    ],
+    "socialLinks": [
+      {
+        "label": "Démo live",
+        "href": "https://electronicartefacts.github.io/voice-capture-studio/"
+      },
+      {
+        "label": "Dépôt GitHub",
+        "href": "https://github.com/electronicartefacts/voice-capture-studio"
+      },
+      {
+        "label": "Documentation",
+        "href": "https://github.com/electronicartefacts/voice-capture-studio/tree/main/docs"
+      }
+    ],
+    "bodyHtml": "<h2 id=\"vue-d-ensemble\">Vue d’ensemble</h2>\n<p>Voice Capture Studio est une application de navigateur local-first pour la capture vocale dirigée. Elle aide un locuteur à passer d’une session vide à des prises propres, révisables et accompagnées de transcriptions, timing, qualité et structure d’export.</p>\n<p>L’application est disponible sur <a href=\"https://electronicartefacts.github.io/voice-capture-studio/\">electronicartefacts.github.io/voice-capture-studio</a> et le code source est public sur <a href=\"https://github.com/electronicartefacts/voice-capture-studio\">github.com/electronicartefacts/voice-capture-studio</a>.</p>\n<h2 id=\"objectif\">Objectif</h2>\n<p>Le projet existe parce que la voix professionnelle est souvent enregistrée avant que le workflow soit prêt. Une prise peut sembler utilisable, mais le prompt, la langue, le locuteur, la pièce, le micro, l’état de révision, le timing et le manifeste d’export peuvent se perdre dans des dossiers informels.</p>\n<p>Voice Capture Studio traite ces détails comme une partie de l’enregistrement. L’application prépare un matériau vocal structuré pour archives, datasets de parole, voix off, doublage et workflows de machine learning en aval.</p>\n<h2 id=\"ce-que-l-application-ne-fait-pas\">Ce que l’application ne fait pas</h2>\n<p>Voice Capture Studio n’entraîne pas de modèles d’IA. L’application enregistre la parole, révise les prises et exporte un matériau structuré. Tout entraînement, alignement, normalisation, traitement d’archive ou évaluation de modèle appartient à un workflow séparé avec ses propres exigences de gouvernance et de consentement.</p>\n<p>Cette frontière compte : l’application prépare le matériau source, elle ne prétend pas être une pipeline de modèle.</p>\n<h2 id=\"modes-d-enregistrement\">Modes d’enregistrement</h2>\n<p>L’application live expose trois modes :</p>\n<ul>\n<li>Dataset ML : phrases calibrées, progression phonétique et exports prêts pour des workflows d’entraînement.</li>\n<li>Doublage : texte collé ou fichier découpé en répliques enregistrables.</li>\n<li>Master audio : texte local, piste de référence et capture de voix séparée.</li>\n</ul>\n<p>La page utilise “dataset” au sens de préparation : des enregistrements acceptés et leurs métadonnées peuvent devenir des entrées utiles, mais l’entraînement de modèle reste en aval.</p>\n<h2 id=\"fonctions-cles\">Fonctions clés</h2>\n<ul>\n<li>Sessions guidées pour corpus de départ français et anglais.</li>\n<li>Capture micro locale dans le navigateur.</li>\n<li>Export WAV PCM mono 48 kHz / 24-bit lorsque le navigateur le permet.</li>\n<li>Calibration du silence de pièce et premiers contrôles techniques.</li>\n<li>Métadonnées de transcription, timing, intention, prosodie et qualité pour chaque prise acceptée.</li>\n<li>États keeper, review et reject pour ne faire progresser la couverture que sur le matériau accepté.</li>\n<li>Workspace privé du navigateur avec téléchargements explicites et export dossier lorsque possible.</li>\n<li>Manifest PWA et service worker pour une distribution statique sur GitHub Pages.</li>\n</ul>\n<h2 id=\"architecture\">Architecture</h2>\n<p>Le dépôt sépare le shell applicatif React des modules de domaine. Le shell coordonne capture navigateur, adaptateurs de stockage et orchestration d’export. Les domaines portent corpus, sessions, workspace, couverture, recording, speakers, settings et contrats d’export.</p>\n<p>La décision importante est la direction des dépendances : les domaines n’importent pas React, l’interface navigateur, les routes ou le CSS. Cela garde les comportements de capture, de planification du corpus et d’export testables hors d’une interface unique.</p>\n<h2 id=\"stack-technique\">Stack technique</h2>\n<p>Voice Capture Studio est construit avec React, Vite et TypeScript. L’application utilise Web Audio pour la capture locale, le stockage navigateur pour l’état du workspace, la File System Access API lorsque disponible, le téléchargement explicite en fallback, un manifest PWA et un workflow de déploiement GitHub Pages.</p>\n<p>La validation du dépôt vérifie formatage, linting, références TypeScript, tests unitaires et build de production.</p>\n<h2 id=\"philosophie-de-design\">Philosophie de design</h2>\n<p>L’interface n’est pas un enregistreur générique. Elle fonctionne comme une petite surface de studio : choisir un mode, vérifier l’environnement, confirmer locuteur et langue, capturer la calibration, enregistrer les prises, puis exporter la session avec assez de métadonnées pour la relire plus tard.</p>\n<p>Le design rend l’état technique visible parce qu’un logiciel local-first doit produire de la confiance. Mode de stockage, micro, support WAV, accès dossier, version du corpus et calibration font partie de l’expérience.</p>\n<h2 id=\"open-source\">Open source</h2>\n<p>Le projet est publié sous licence MIT. L’open source est important ici parce que les workflows vocaux doivent être inspectables. Une équipe qui prépare de la voix doit savoir ce qui est stocké, ce qui est exporté, ce qui n’est jamais envoyé et où se situent les frontières de données.</p>\n<p>Le dépôt inclut contribution guidelines, signalement sécurité, modèles d’issues, modèle de pull request et documentation d’architecture, corpus, workspace, export et GitHub Pages.</p>\n<h2 id=\"vie-privee\">Vie privée</h2>\n<p>Les enregistrements vocaux et workspaces générés sont des données utilisateur. L’application est conçue pour que les prises restent dans le navigateur ou dans le dossier choisi par l’utilisateur. Le dépôt public doit contenir code et définitions de corpus, pas des voix privées.</p>\n<p>Le stockage navigateur est utile, mais ce n’est pas une archive permanente. Les exports explicites et les workflows dossier sont donc des parties centrales du produit.</p>\n<h2 id=\"modele-d-export\">Modèle d’export</h2>\n<p>La cible principale est un dossier de session de capture structuré. Le dépôt documente fichiers JSON de session, locuteur, corpus et manifeste, WAV et transcript par prise, métadonnées de timing et d’intention, rapports qualité et rapports de préparation dataset.</p>\n<p>Chaque prise acceptée est plus qu’un fichier audio. Elle porte assez de structure pour soutenir alignement, révision, analyse de couverture ou traitement d’archive en aval.</p>\n<h2 id=\"documentation\">Documentation</h2>\n<p>Points d’entrée utiles :</p>\n<ul>\n<li><a href=\"https://github.com/electronicartefacts/voice-capture-studio/blob/main/docs/architecture-doctrine.md\">Architecture doctrine</a></li>\n<li><a href=\"https://github.com/electronicartefacts/voice-capture-studio/blob/main/docs/system-model.md\">System model</a></li>\n<li><a href=\"https://github.com/electronicartefacts/voice-capture-studio/blob/main/docs/corpus-structure.md\">Corpus structure</a></li>\n<li><a href=\"https://github.com/electronicartefacts/voice-capture-studio/blob/main/docs/workspace-structure.md\">Workspace structure</a></li>\n<li><a href=\"https://github.com/electronicartefacts/voice-capture-studio/blob/main/docs/export-structure.md\">Export structure</a></li>\n</ul>\n<h2 id=\"roadmap\">Roadmap</h2>\n<p>La roadmap publique inclut la restauration/import de workspaces sauvegardés, des migrations explicites de schéma, des tombstones de corpus pour la compatibilité longue durée, un meilleur premier parcours de sélection de dossier, des cibles d’export supplémentaires et l’automatisation des captures/release artifacts.</p>\n<p>Ces éléments relèvent de l’infrastructure produit. Ils distinguent une application locale prometteuse d’un vrai workflow d’archive vocale.</p>\n<h2 id=\"projets-electronic-artefacts-lies\">Projets Electronic Artefacts liés</h2>\n<p>Voice Capture Studio se situe près d’<a href=\"/fr/programs/oreth/\">ORETH</a> parce que les deux traitent l’audio comme matériau structuré. Il se relie à l’<a href=\"/fr/knowledge/concepts/web-audio/\">Audio web</a> et au <a href=\"/fr/knowledge/technologies/web-audio-api/\">Web Audio API</a> parce que le navigateur est le runtime. Il se relie à l’<a href=\"/fr/knowledge/concepts/open-source/\">open source</a> parce que code et documentation sont inspectables.</p>\n<p>Le projet étend aussi l’écosystème Electronic Artefacts vers un artefact pratique de technologie vocale : un outil qui fait une chose clairement avant qu’une archive, un modèle, un doublage ou un workflow de production ne reçoive les données.</p>\n",
+    "headings": [
+      "Vue d’ensemble",
+      "Objectif",
+      "Ce que l’application ne fait pas",
+      "Modes d’enregistrement",
+      "Fonctions clés",
+      "Architecture",
+      "Stack technique",
+      "Philosophie de design",
+      "Open source",
+      "Vie privée",
+      "Modèle d’export",
+      "Documentation",
+      "Roadmap",
+      "Projets Electronic Artefacts liés"
+    ],
+    "headingItems": [
+      {
+        "level": 2,
+        "title": "Vue d’ensemble",
+        "id": "vue-d-ensemble"
+      },
+      {
+        "level": 2,
+        "title": "Objectif",
+        "id": "objectif"
+      },
+      {
+        "level": 2,
+        "title": "Ce que l’application ne fait pas",
+        "id": "ce-que-l-application-ne-fait-pas"
+      },
+      {
+        "level": 2,
+        "title": "Modes d’enregistrement",
+        "id": "modes-d-enregistrement"
+      },
+      {
+        "level": 2,
+        "title": "Fonctions clés",
+        "id": "fonctions-cles"
+      },
+      {
+        "level": 2,
+        "title": "Architecture",
+        "id": "architecture"
+      },
+      {
+        "level": 2,
+        "title": "Stack technique",
+        "id": "stack-technique"
+      },
+      {
+        "level": 2,
+        "title": "Philosophie de design",
+        "id": "philosophie-de-design"
+      },
+      {
+        "level": 2,
+        "title": "Open source",
+        "id": "open-source"
+      },
+      {
+        "level": 2,
+        "title": "Vie privée",
+        "id": "vie-privee"
+      },
+      {
+        "level": 2,
+        "title": "Modèle d’export",
+        "id": "modele-d-export"
+      },
+      {
+        "level": 2,
+        "title": "Documentation",
+        "id": "documentation"
+      },
+      {
+        "level": 2,
+        "title": "Roadmap",
+        "id": "roadmap"
+      },
+      {
+        "level": 2,
+        "title": "Projets Electronic Artefacts liés",
+        "id": "projets-electronic-artefacts-lies"
       }
     ]
   },
@@ -16925,6 +18487,278 @@
         "level": 2,
         "title": "Public channel",
         "id": "public-channel"
+      }
+    ]
+  },
+  {
+    "id": "ea:project:voice-capture-studio",
+    "type": "project",
+    "slug": {
+      "canonical": "voice-capture-studio"
+    },
+    "title": "Voice Capture Studio",
+    "subtitle": "Local-First Voice Recording Studio",
+    "abstract": "Voice Capture Studio is an open-source browser application for directed speech recording, local review and dataset-ready voice exports.",
+    "description": "A local-first recording studio for speech datasets, voice-over and dubbing workflows, built as an open-source browser application with structured WAV and metadata exports.",
+    "locale": "en",
+    "visibility": "public",
+    "publicationClass": "canonical",
+    "status": "active",
+    "maturity": "development",
+    "confidence": "published",
+    "version": {
+      "version": "1.0.0",
+      "createdAt": "2026-07-09",
+      "publishedAt": "2026-07-09",
+      "modifiedAt": "2026-07-09",
+      "changeSummary": "Initial public integration of the live open-source Voice Capture Studio project."
+    },
+    "authors": [
+      {
+        "id": "ea:organization:electronic-artefacts"
+      }
+    ],
+    "publisher": "ea:organization:electronic-artefacts",
+    "tags": [
+      "Voice Capture Studio",
+      "Speech Recording",
+      "Voice Dataset",
+      "Browser Software",
+      "Web Audio",
+      "Open Source",
+      "Local First",
+      "Privacy"
+    ],
+    "disciplines": [
+      "Audio Engineering",
+      "Web Development",
+      "Human Computer Interaction",
+      "Machine Learning",
+      "Open Source"
+    ],
+    "media": [
+      {
+        "id": "voice-capture-studio-capture-screen",
+        "type": "image",
+        "src": "/assets/media/projects/voice-capture-studio/voice-capture-studio-capture.png",
+        "alt": "Voice Capture Studio live capture screen showing dataset, dubbing and master audio modes.",
+        "caption": "Live GitHub Pages capture screen with local browser storage, recording modes and calibration status."
+      },
+      {
+        "id": "voice-capture-studio-quality-screen",
+        "type": "image",
+        "src": "/assets/media/projects/voice-capture-studio/voice-capture-studio-live.png",
+        "alt": "Voice Capture Studio quality and export screen.",
+        "caption": "Live quality and export screen showing local progress, corpus version and dataset readiness checks."
+      }
+    ],
+    "sources": [
+      {
+        "title": "Voice Capture Studio live demo",
+        "url": "https://electronicartefacts.github.io/voice-capture-studio/",
+        "publisher": "GitHub Pages",
+        "accessedAt": "2026-07-09"
+      },
+      {
+        "title": "Voice Capture Studio repository",
+        "url": "https://github.com/electronicartefacts/voice-capture-studio",
+        "publisher": "GitHub",
+        "accessedAt": "2026-07-09"
+      },
+      {
+        "title": "Voice Capture Studio architecture doctrine",
+        "url": "https://github.com/electronicartefacts/voice-capture-studio/blob/main/docs/architecture-doctrine.md",
+        "publisher": "GitHub",
+        "accessedAt": "2026-07-09"
+      }
+    ],
+    "rights": "Copyright 2026 Electronic Artefacts.",
+    "license": "MIT",
+    "featured": true,
+    "category": "internal",
+    "brief": "Standardize professional speech recording in the browser so clean, reviewable voice material can be exported with the metadata downstream workflows need.",
+    "context": "Voice data is often captured through improvised tools, loose folders and missing context. That weakens review, consent, quality control, dubbing reuse and dataset preparation before any model or archive workflow begins.",
+    "stakeholders": [
+      {
+        "id": "ea:organization:electronic-artefacts"
+      }
+    ],
+    "constraints": [
+      "Keep recordings and workspaces local to the user’s browser and chosen folders.",
+      "Make microphone permissions, storage durability and export paths visible before recording.",
+      "Preserve the boundary between dataset preparation and model training.",
+      "Use open formats and documentation so recorded material remains inspectable outside the app.",
+      "Keep the app deployable as a static GitHub Pages surface."
+    ],
+    "approach": [
+      "Build a browser-first recording interface around guided prompt sessions, language selection, speaker profiles and take review.",
+      "Capture local audio through Web Audio, then export WAV and JSON metadata for structured review.",
+      "Treat keeper, review and reject states as part of corpus coverage rather than counting every attempt.",
+      "Separate React orchestration from domain modules for corpus, sessions, workspace, recording, export and settings.",
+      "Publish the code, documentation, issue templates and GitHub Pages workflow as an open-source foundation."
+    ],
+    "outputs": [
+      {
+        "id": "ea:project:voice-capture-studio"
+      },
+      {
+        "id": "ea:artefact:voice-capture-studio-repository"
+      }
+    ],
+    "outcomes": [
+      "A live GitHub Pages application for local speech capture in a secure browser context.",
+      "A documented open-source repository with architecture, corpus, workspace and export notes.",
+      "A structured export model for WAV audio, transcripts, timing, intent, quality reports and manifests.",
+      "A privacy-first workflow where user recordings are not uploaded to a remote service by the website."
+    ],
+    "evidence": [
+      {
+        "id": "ea:artefact:voice-capture-studio-repository"
+      }
+    ],
+    "credits": [
+      {
+        "id": "ea:organization:electronic-artefacts"
+      }
+    ],
+    "visualLanguage": [
+      "Black",
+      "Ivory",
+      "Graphite",
+      "Signal green",
+      "Warm red"
+    ],
+    "textures": [
+      "Local console",
+      "Audio waveform",
+      "Studio calibration",
+      "Structured export"
+    ],
+    "symbols": [
+      "Microphone",
+      "Corpus",
+      "Take",
+      "Local folder"
+    ],
+    "developmentFocus": [
+      "React 19",
+      "Vite 6",
+      "TypeScript",
+      "Web Audio API",
+      "WAV PCM export",
+      "Browser-private workspace",
+      "File System Access API",
+      "GitHub Pages"
+    ],
+    "marketingFocus": [
+      "Local-first recording",
+      "Speech dataset preparation",
+      "Open-source browser tool",
+      "Voice-over workflow",
+      "Dubbing workflow",
+      "Privacy-first capture"
+    ],
+    "socialLinks": [
+      {
+        "label": "Live demo",
+        "href": "https://electronicartefacts.github.io/voice-capture-studio/"
+      },
+      {
+        "label": "GitHub repository",
+        "href": "https://github.com/electronicartefacts/voice-capture-studio"
+      },
+      {
+        "label": "Documentation",
+        "href": "https://github.com/electronicartefacts/voice-capture-studio/tree/main/docs"
+      }
+    ],
+    "bodyHtml": "<h2 id=\"overview\">Overview</h2>\n<p>Voice Capture Studio is a local-first browser application for directed voice capture. It helps a speaker move from an empty session to clean, reviewable takes with transcripts, timing, quality metadata and export structure attached.</p>\n<p>The application is live at <a href=\"https://electronicartefacts.github.io/voice-capture-studio/\">electronicartefacts.github.io/voice-capture-studio</a> and the source code is public at <a href=\"https://github.com/electronicartefacts/voice-capture-studio\">github.com/electronicartefacts/voice-capture-studio</a>.</p>\n<h2 id=\"purpose\">Purpose</h2>\n<p>The project exists because professional voice material is often captured before the workflow is ready for it. A recording may sound usable, but the prompt, language, speaker, room, microphone, review state, timing and export manifest can disappear into loose folders.</p>\n<p>Voice Capture Studio treats those details as part of the recording. It prepares structured voice material for downstream archives, speech datasets, voice-over review, dubbing and machine-learning workflows.</p>\n<h2 id=\"what-it-does-not-do\">What It Does Not Do</h2>\n<p>Voice Capture Studio does not train AI models. It records speech, reviews takes and exports structured material. Any later training, alignment, normalization, archive processing or model evaluation belongs to a separate workflow with its own governance and consent requirements.</p>\n<p>That boundary is important: the application prepares source material; it does not claim the authority of a model pipeline.</p>\n<h2 id=\"recording-modes\">Recording Modes</h2>\n<p>The live application exposes three capture modes:</p>\n<ul>\n<li>Dataset ML: prompted recording for calibrated phrases, phonetic progress and training-ready exports.</li>\n<li>Dubbing: pasted text or segmented files transformed into recordable lines.</li>\n<li>Master audio: local text, reference audio and a separate voice capture lane.</li>\n</ul>\n<p>The project page uses “dataset” in the preparation sense: accepted recordings and metadata can become useful inputs, but model training remains downstream.</p>\n<h2 id=\"key-features\">Key Features</h2>\n<ul>\n<li>Guided prompt sessions for French and English starter corpora.</li>\n<li>Local microphone capture through the browser.</li>\n<li>WAV PCM mono export at 48 kHz / 24-bit where browser support allows it.</li>\n<li>Room-tone calibration and first-pass technical quality checks.</li>\n<li>Transcript, timing, intent, prosody and quality metadata for each accepted take.</li>\n<li>Keeper, review and reject states so coverage advances only on accepted material.</li>\n<li>Browser-private workspace storage with downloads and folder export where supported.</li>\n<li>PWA manifest and service-worker support for static GitHub Pages distribution.</li>\n</ul>\n<h2 id=\"architecture-overview\">Architecture Overview</h2>\n<p>The repository separates the React application shell from domain modules. The app shell coordinates browser capture, storage adapters and export orchestration. The domains own corpus, sessions, workspace, coverage, recording, speakers, settings and export contracts.</p>\n<p>The important architectural decision is dependency direction: domain modules do not import React, browser UI, routes or CSS. That keeps recording behavior, corpus planning and export contracts testable without tying them to one interface.</p>\n<h2 id=\"technology-stack\">Technology Stack</h2>\n<p>Voice Capture Studio is built with React, Vite and TypeScript. It uses Web Audio for local capture, browser storage for local workspace state, the File System Access API where available, explicit downloads as a fallback, a PWA manifest and a GitHub Pages deployment workflow.</p>\n<p>The validation gate in the repository runs formatting, linting, TypeScript project references, unit tests and the production build.</p>\n<h2 id=\"design-philosophy\">Design Philosophy</h2>\n<p>The interface is not a generic recorder. It behaves like a small studio surface: choose a mode, check the environment, confirm the speaker and language, capture calibration material, record takes, then export the session with enough metadata to be reviewed later.</p>\n<p>The design keeps technical state visible because local-first software needs trust cues. Storage mode, microphone readiness, WAV support, folder access, corpus version and calibration status are part of the user experience.</p>\n<h2 id=\"open-source-philosophy\">Open Source Philosophy</h2>\n<p>The project is released under the MIT License. Open source matters here because voice workflows should be inspectable. A team preparing voice material needs to know what is stored, what is exported, what is never uploaded and where data boundaries sit.</p>\n<p>The repository includes contribution guidelines, security reporting, issue templates, a pull-request template and documentation for architecture, corpus structure, workspace structure, export structure and GitHub Pages.</p>\n<h2 id=\"privacy\">Privacy</h2>\n<p>Voice recordings and generated workspaces are user data. The application is designed so recordings remain local to the browser or the folder selected by the user. The public repository should contain code and corpus definitions, not private voice recordings.</p>\n<p>Browser storage is useful, but it is not a permanent archive. The app therefore treats explicit export and folder workflows as first-class parts of the product.</p>\n<h2 id=\"export-model\">Export Model</h2>\n<p>The primary export target is a structured capture-session folder. The current repository documents session, speaker, corpus and manifest JSON files, take-level WAV and transcript files, timing and intent metadata, quality reports and dataset-readiness reports.</p>\n<p>Every accepted take is more than audio. It carries enough structure to support later alignment, review, coverage analysis or archive processing.</p>\n<h2 id=\"documentation\">Documentation</h2>\n<p>Useful entry points:</p>\n<ul>\n<li><a href=\"https://github.com/electronicartefacts/voice-capture-studio/blob/main/docs/architecture-doctrine.md\">Architecture doctrine</a></li>\n<li><a href=\"https://github.com/electronicartefacts/voice-capture-studio/blob/main/docs/system-model.md\">System model</a></li>\n<li><a href=\"https://github.com/electronicartefacts/voice-capture-studio/blob/main/docs/corpus-structure.md\">Corpus structure</a></li>\n<li><a href=\"https://github.com/electronicartefacts/voice-capture-studio/blob/main/docs/workspace-structure.md\">Workspace structure</a></li>\n<li><a href=\"https://github.com/electronicartefacts/voice-capture-studio/blob/main/docs/export-structure.md\">Export structure</a></li>\n</ul>\n<h2 id=\"roadmap\">Roadmap</h2>\n<p>The public roadmap includes workspace restore/import for downloaded backups, explicit workspace schema migrations, corpus tombstones for long-lived compatibility, a stronger first-run folder flow, additional export targets and screenshot/release automation.</p>\n<p>Those items are product infrastructure, not decoration. They make the difference between a promising local app and a voice archive workflow that can survive real use.</p>\n<h2 id=\"related-electronic-artefacts-work\">Related Electronic Artefacts Work</h2>\n<p>Voice Capture Studio sits near <a href=\"/programs/oreth/\">ORETH</a> because both treat audio as structured material. It sits near <a href=\"/knowledge/concepts/web-audio/\">Web Audio</a> and the <a href=\"/knowledge/technologies/web-audio-api/\">Web Audio API</a> because the browser is the runtime. It sits near <a href=\"/knowledge/concepts/open-source/\">Open Source</a> because the code and documentation are inspectable.</p>\n<p>It also expands the Electronic Artefacts ecosystem into a practical voice-technology artefact: a tool that does one thing clearly before any archive, model, dubbing or production workflow receives the data.</p>\n",
+    "headings": [
+      "Overview",
+      "Purpose",
+      "What It Does Not Do",
+      "Recording Modes",
+      "Key Features",
+      "Architecture Overview",
+      "Technology Stack",
+      "Design Philosophy",
+      "Open Source Philosophy",
+      "Privacy",
+      "Export Model",
+      "Documentation",
+      "Roadmap",
+      "Related Electronic Artefacts Work"
+    ],
+    "headingItems": [
+      {
+        "level": 2,
+        "title": "Overview",
+        "id": "overview"
+      },
+      {
+        "level": 2,
+        "title": "Purpose",
+        "id": "purpose"
+      },
+      {
+        "level": 2,
+        "title": "What It Does Not Do",
+        "id": "what-it-does-not-do"
+      },
+      {
+        "level": 2,
+        "title": "Recording Modes",
+        "id": "recording-modes"
+      },
+      {
+        "level": 2,
+        "title": "Key Features",
+        "id": "key-features"
+      },
+      {
+        "level": 2,
+        "title": "Architecture Overview",
+        "id": "architecture-overview"
+      },
+      {
+        "level": 2,
+        "title": "Technology Stack",
+        "id": "technology-stack"
+      },
+      {
+        "level": 2,
+        "title": "Design Philosophy",
+        "id": "design-philosophy"
+      },
+      {
+        "level": 2,
+        "title": "Open Source Philosophy",
+        "id": "open-source-philosophy"
+      },
+      {
+        "level": 2,
+        "title": "Privacy",
+        "id": "privacy"
+      },
+      {
+        "level": 2,
+        "title": "Export Model",
+        "id": "export-model"
+      },
+      {
+        "level": 2,
+        "title": "Documentation",
+        "id": "documentation"
+      },
+      {
+        "level": 2,
+        "title": "Roadmap",
+        "id": "roadmap"
+      },
+      {
+        "level": 2,
+        "title": "Related Electronic Artefacts Work",
+        "id": "related-electronic-artefacts-work"
       }
     ]
   },

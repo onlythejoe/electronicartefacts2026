@@ -50,6 +50,14 @@
       "route": "/publications/ontologies-taxonomies-and-knowledge-modeling/",
       "status": "active",
       "confidence": "published"
+    },
+    {
+      "id": "ea:project:voice-capture-studio",
+      "type": "project",
+      "title": "Voice Capture Studio",
+      "route": "/projects/voice-capture-studio/",
+      "status": "active",
+      "confidence": "published"
     }
   ],
   "edges": [
@@ -96,6 +104,15 @@
       "predicate": "documents",
       "label": "Documents",
       "statement": "Ontologies, Taxonomies and Knowledge Modeling positions metadata within a broader semantic architecture.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:voice-capture-studio-applies-metadata",
+      "source": "ea:project:voice-capture-studio",
+      "target": "ea:concept:metadata",
+      "predicate": "appliesConcept",
+      "label": "Applies concept",
+      "statement": "Voice Capture Studio applies metadata discipline by attaching transcript, timing, intent, quality and manifest information to recorded takes.",
       "confidence": "published"
     }
   ]

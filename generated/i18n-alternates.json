@@ -19,6 +19,10 @@
     "en": "/archive.html",
     "fr": "/fr/archive.html"
   },
+  "/archive/artefacts/voice-capture-studio-repository/": {
+    "en": "/archive/artefacts/voice-capture-studio-repository/",
+    "fr": "/fr/archive/artefacts/voice-capture-studio-repository/"
+  },
   "/archive/collections/": {
     "en": "/archive/collections/"
   },
@@ -37,6 +41,10 @@
   "/archive/collections/knowledge-hub-third-wave/": {
     "en": "/archive/collections/knowledge-hub-third-wave/",
     "fr": "/fr/archive/collections/knowledge-hub-third-wave/"
+  },
+  "/archive/collections/voice-capture-studio/": {
+    "en": "/archive/collections/voice-capture-studio/",
+    "fr": "/fr/archive/collections/voice-capture-studio/"
   },
   "/artefact.html": {
     "en": "/artefact.html",
@@ -94,6 +102,10 @@
     "en": "/archive.html",
     "fr": "/fr/archive.html"
   },
+  "/fr/archive/artefacts/voice-capture-studio-repository/": {
+    "en": "/archive/artefacts/voice-capture-studio-repository/",
+    "fr": "/fr/archive/artefacts/voice-capture-studio-repository/"
+  },
   "/fr/archive/collections/knowledge-hub-foundations/": {
     "en": "/archive/collections/knowledge-hub-foundations/",
     "fr": "/fr/archive/collections/knowledge-hub-foundations/"
@@ -109,6 +121,10 @@
   "/fr/archive/collections/knowledge-hub-third-wave/": {
     "en": "/archive/collections/knowledge-hub-third-wave/",
     "fr": "/fr/archive/collections/knowledge-hub-third-wave/"
+  },
+  "/fr/archive/collections/voice-capture-studio/": {
+    "en": "/archive/collections/voice-capture-studio/",
+    "fr": "/fr/archive/collections/voice-capture-studio/"
   },
   "/fr/artefact.html": {
     "en": "/artefact.html",
@@ -169,6 +185,10 @@
   "/fr/knowledge/concepts/autonomous-system/": {
     "en": "/knowledge/concepts/autonomous-system/",
     "fr": "/fr/knowledge/concepts/autonomous-system/"
+  },
+  "/fr/knowledge/concepts/browser-software/": {
+    "en": "/knowledge/concepts/browser-software/",
+    "fr": "/fr/knowledge/concepts/browser-software/"
   },
   "/fr/knowledge/concepts/contextual-execution/": {
     "en": "/knowledge/concepts/contextual-execution/",
@@ -238,6 +258,10 @@
     "en": "/knowledge/concepts/linked-data/",
     "fr": "/fr/knowledge/concepts/linked-data/"
   },
+  "/fr/knowledge/concepts/machine-learning-workflows/": {
+    "en": "/knowledge/concepts/machine-learning-workflows/",
+    "fr": "/fr/knowledge/concepts/machine-learning-workflows/"
+  },
   "/fr/knowledge/concepts/metadata/": {
     "en": "/knowledge/concepts/metadata/",
     "fr": "/fr/knowledge/concepts/metadata/"
@@ -286,6 +310,14 @@
     "en": "/knowledge/concepts/signal-archaeology/",
     "fr": "/fr/knowledge/concepts/signal-archaeology/"
   },
+  "/fr/knowledge/concepts/speech-datasets/": {
+    "en": "/knowledge/concepts/speech-datasets/",
+    "fr": "/fr/knowledge/concepts/speech-datasets/"
+  },
+  "/fr/knowledge/concepts/speech-recording/": {
+    "en": "/knowledge/concepts/speech-recording/",
+    "fr": "/fr/knowledge/concepts/speech-recording/"
+  },
   "/fr/knowledge/concepts/systems-thinking/": {
     "en": "/knowledge/concepts/systems-thinking/",
     "fr": "/fr/knowledge/concepts/systems-thinking/"
@@ -293,6 +325,10 @@
   "/fr/knowledge/concepts/typography/": {
     "en": "/knowledge/concepts/typography/",
     "fr": "/fr/knowledge/concepts/typography/"
+  },
+  "/fr/knowledge/concepts/voice-technology/": {
+    "en": "/knowledge/concepts/voice-technology/",
+    "fr": "/fr/knowledge/concepts/voice-technology/"
   },
   "/fr/knowledge/concepts/web-audio/": {
     "en": "/knowledge/concepts/web-audio/",
@@ -433,6 +469,10 @@
   "/fr/projects/vestiges/": {
     "fr": "/fr/projects/vestiges/",
     "en": "/projects/vestiges/"
+  },
+  "/fr/projects/voice-capture-studio/": {
+    "fr": "/fr/projects/voice-capture-studio/",
+    "en": "/projects/voice-capture-studio/"
   },
   "/fr/publications/": {
     "en": "/publications/",
@@ -650,6 +690,10 @@
     "en": "/knowledge/concepts/autonomous-system/",
     "fr": "/fr/knowledge/concepts/autonomous-system/"
   },
+  "/knowledge/concepts/browser-software/": {
+    "en": "/knowledge/concepts/browser-software/",
+    "fr": "/fr/knowledge/concepts/browser-software/"
+  },
   "/knowledge/concepts/contextual-execution/": {
     "en": "/knowledge/concepts/contextual-execution/",
     "fr": "/fr/knowledge/concepts/contextual-execution/"
@@ -718,6 +762,10 @@
     "en": "/knowledge/concepts/linked-data/",
     "fr": "/fr/knowledge/concepts/linked-data/"
   },
+  "/knowledge/concepts/machine-learning-workflows/": {
+    "en": "/knowledge/concepts/machine-learning-workflows/",
+    "fr": "/fr/knowledge/concepts/machine-learning-workflows/"
+  },
   "/knowledge/concepts/metadata/": {
     "en": "/knowledge/concepts/metadata/",
     "fr": "/fr/knowledge/concepts/metadata/"
@@ -766,6 +814,14 @@
     "en": "/knowledge/concepts/signal-archaeology/",
     "fr": "/fr/knowledge/concepts/signal-archaeology/"
   },
+  "/knowledge/concepts/speech-datasets/": {
+    "en": "/knowledge/concepts/speech-datasets/",
+    "fr": "/fr/knowledge/concepts/speech-datasets/"
+  },
+  "/knowledge/concepts/speech-recording/": {
+    "en": "/knowledge/concepts/speech-recording/",
+    "fr": "/fr/knowledge/concepts/speech-recording/"
+  },
   "/knowledge/concepts/systems-thinking/": {
     "en": "/knowledge/concepts/systems-thinking/",
     "fr": "/fr/knowledge/concepts/systems-thinking/"
@@ -773,6 +829,10 @@
   "/knowledge/concepts/typography/": {
     "en": "/knowledge/concepts/typography/",
     "fr": "/fr/knowledge/concepts/typography/"
+  },
+  "/knowledge/concepts/voice-technology/": {
+    "en": "/knowledge/concepts/voice-technology/",
+    "fr": "/fr/knowledge/concepts/voice-technology/"
   },
   "/knowledge/concepts/web-audio/": {
     "en": "/knowledge/concepts/web-audio/",
@@ -913,6 +973,10 @@
   "/projects/vestiges/": {
     "fr": "/fr/projects/vestiges/",
     "en": "/projects/vestiges/"
+  },
+  "/projects/voice-capture-studio/": {
+    "fr": "/fr/projects/voice-capture-studio/",
+    "en": "/projects/voice-capture-studio/"
   },
   "/publications/": {
     "en": "/publications/",

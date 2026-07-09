@@ -1,0 +1,34 @@
+{
+  "id": "local:ea:concept:speech-datasets-fr",
+  "kind": "local",
+  "focus": "ea:concept:speech-datasets-fr",
+  "nodes": [
+    {
+      "id": "ea:concept:speech-datasets-fr",
+      "type": "concept",
+      "title": "Jeux de données vocales",
+      "route": "/fr/knowledge/concepts/speech-datasets/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:project:voice-capture-studio-fr",
+      "type": "project",
+      "title": "Voice Capture Studio",
+      "route": "/fr/projects/voice-capture-studio/",
+      "status": "active",
+      "confidence": "published"
+    }
+  ],
+  "edges": [
+    {
+      "id": "ear:voice-capture-studio-applies-speech-datasets",
+      "source": "ea:project:voice-capture-studio-fr",
+      "target": "ea:concept:speech-datasets-fr",
+      "predicate": "appliesConcept",
+      "label": "Applies concept",
+      "statement": "Voice Capture Studio prepares structured speech dataset material through WAV audio, transcripts, timing, intent, quality metadata and manifests.",
+      "confidence": "published"
+    }
+  ]
+}

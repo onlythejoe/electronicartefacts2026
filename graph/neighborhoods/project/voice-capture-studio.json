@@ -1,0 +1,282 @@
+{
+  "id": "local:ea:project:voice-capture-studio",
+  "kind": "local",
+  "focus": "ea:project:voice-capture-studio",
+  "nodes": [
+    {
+      "id": "ea:project:voice-capture-studio",
+      "type": "project",
+      "title": "Voice Capture Studio",
+      "route": "/projects/voice-capture-studio/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:organization:electronic-artefacts",
+      "type": "organization",
+      "title": "Electronic Artefacts",
+      "route": "/organizations/electronic-artefacts/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:artefact:voice-capture-studio-repository",
+      "type": "artefact",
+      "title": "Voice Capture Studio Repository",
+      "route": "/archive/artefacts/voice-capture-studio-repository/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:collection:voice-capture-studio",
+      "type": "collection",
+      "title": "Voice Capture Studio Collection",
+      "route": "/archive/collections/voice-capture-studio/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:concept:speech-recording",
+      "type": "concept",
+      "title": "Speech Recording",
+      "route": "/knowledge/concepts/speech-recording/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:concept:speech-datasets",
+      "type": "concept",
+      "title": "Speech Datasets",
+      "route": "/knowledge/concepts/speech-datasets/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:concept:browser-software",
+      "type": "concept",
+      "title": "Browser Software",
+      "route": "/knowledge/concepts/browser-software/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:concept:voice-technology",
+      "type": "concept",
+      "title": "Voice Technology",
+      "route": "/knowledge/concepts/voice-technology/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:concept:machine-learning-workflows",
+      "type": "concept",
+      "title": "Machine Learning Workflows",
+      "route": "/knowledge/concepts/machine-learning-workflows/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:concept:open-source",
+      "type": "concept",
+      "title": "Open Source",
+      "route": "/knowledge/concepts/open-source/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:concept:web-audio",
+      "type": "concept",
+      "title": "Web Audio",
+      "route": "/knowledge/concepts/web-audio/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:concept:metadata",
+      "type": "concept",
+      "title": "Metadata",
+      "route": "/knowledge/concepts/metadata/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:concept:provenance",
+      "type": "concept",
+      "title": "Provenance",
+      "route": "/knowledge/concepts/provenance/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:concept:human-computer-interaction",
+      "type": "concept",
+      "title": "Human Computer Interaction",
+      "route": "/knowledge/concepts/human-computer-interaction/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:technology:web-audio-api",
+      "type": "technology",
+      "title": "Web Audio API",
+      "route": "/knowledge/technologies/web-audio-api/",
+      "status": "active",
+      "confidence": "canonical"
+    }
+  ],
+  "edges": [
+    {
+      "id": "ear:electronic-artefacts-created-voice-capture-studio",
+      "source": "ea:project:voice-capture-studio",
+      "target": "ea:organization:electronic-artefacts",
+      "predicate": "createdBy",
+      "label": "Created by",
+      "statement": "Electronic Artefacts created Voice Capture Studio as an open-source browser application for local-first speech recording.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:electronic-artefacts-maintains-voice-capture-studio",
+      "source": "ea:project:voice-capture-studio",
+      "target": "ea:organization:electronic-artefacts",
+      "predicate": "maintainedBy",
+      "label": "Maintained by",
+      "statement": "Electronic Artefacts maintains the Voice Capture Studio project, repository and public GitHub Pages deployment.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:voice-capture-studio-published-by-electronic-artefacts",
+      "source": "ea:project:voice-capture-studio",
+      "target": "ea:organization:electronic-artefacts",
+      "predicate": "publishedBy",
+      "label": "Published by",
+      "statement": "Voice Capture Studio is published by Electronic Artefacts as an open-source software artefact.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:voice-capture-studio-evidenced-by-repository",
+      "source": "ea:project:voice-capture-studio",
+      "target": "ea:artefact:voice-capture-studio-repository",
+      "predicate": "evidencedBy",
+      "label": "Evidenced by",
+      "statement": "The public GitHub repository provides source evidence for Voice Capture Studio, including code, documentation, tests and deployment configuration.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:voice-capture-repository-documents-project",
+      "source": "ea:artefact:voice-capture-studio-repository",
+      "target": "ea:project:voice-capture-studio",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "The Voice Capture Studio repository documents the application architecture, export structure, privacy boundary and GitHub Pages deployment.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:voice-capture-studio-member-of-collection",
+      "source": "ea:project:voice-capture-studio",
+      "target": "ea:collection:voice-capture-studio",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Voice Capture Studio is the lead project in the Voice Capture Studio Collection.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:voice-capture-studio-applies-speech-recording",
+      "source": "ea:project:voice-capture-studio",
+      "target": "ea:concept:speech-recording",
+      "predicate": "appliesConcept",
+      "label": "Applies concept",
+      "statement": "Voice Capture Studio applies speech-recording principles through guided prompts, room-tone calibration, takes and review states.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:voice-capture-studio-applies-speech-datasets",
+      "source": "ea:project:voice-capture-studio",
+      "target": "ea:concept:speech-datasets",
+      "predicate": "appliesConcept",
+      "label": "Applies concept",
+      "statement": "Voice Capture Studio prepares structured speech dataset material through WAV audio, transcripts, timing, intent, quality metadata and manifests.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:voice-capture-studio-applies-browser-software",
+      "source": "ea:project:voice-capture-studio",
+      "target": "ea:concept:browser-software",
+      "predicate": "appliesConcept",
+      "label": "Applies concept",
+      "statement": "Voice Capture Studio applies browser-software principles by running as a static web application with local storage, microphone access and explicit exports.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:voice-capture-studio-applies-voice-technology",
+      "source": "ea:project:voice-capture-studio",
+      "target": "ea:concept:voice-technology",
+      "predicate": "appliesConcept",
+      "label": "Applies concept",
+      "statement": "Voice Capture Studio applies voice-technology concerns around capture, metadata, review, local privacy and downstream workflow boundaries.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:voice-capture-studio-applies-machine-learning-workflows",
+      "source": "ea:project:voice-capture-studio",
+      "target": "ea:concept:machine-learning-workflows",
+      "predicate": "appliesConcept",
+      "label": "Applies concept",
+      "statement": "Voice Capture Studio supports downstream machine-learning workflows by preparing accepted recordings and metadata without performing model training itself.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:voice-capture-studio-applies-open-source",
+      "source": "ea:project:voice-capture-studio",
+      "target": "ea:concept:open-source",
+      "predicate": "appliesConcept",
+      "label": "Applies concept",
+      "statement": "Voice Capture Studio applies open-source practice through a public MIT-licensed repository with contribution, issue and documentation surfaces.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:voice-capture-studio-applies-web-audio",
+      "source": "ea:project:voice-capture-studio",
+      "target": "ea:concept:web-audio",
+      "predicate": "appliesConcept",
+      "label": "Applies concept",
+      "statement": "Voice Capture Studio applies web-audio practice by capturing and preparing speech directly inside a browser runtime.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:voice-capture-studio-applies-metadata",
+      "source": "ea:project:voice-capture-studio",
+      "target": "ea:concept:metadata",
+      "predicate": "appliesConcept",
+      "label": "Applies concept",
+      "statement": "Voice Capture Studio applies metadata discipline by attaching transcript, timing, intent, quality and manifest information to recorded takes.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:voice-capture-studio-applies-provenance",
+      "source": "ea:project:voice-capture-studio",
+      "target": "ea:concept:provenance",
+      "predicate": "appliesConcept",
+      "label": "Applies concept",
+      "statement": "Voice Capture Studio applies provenance concerns by keeping prompt identifiers, corpus versions, speaker context and export manifests visible.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:voice-capture-studio-applies-hci",
+      "source": "ea:project:voice-capture-studio",
+      "target": "ea:concept:human-computer-interaction",
+      "predicate": "appliesConcept",
+      "label": "Applies concept",
+      "statement": "Voice Capture Studio applies HCI principles by making recording modes, environment checks, local storage and quality gates visible before capture.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:voice-capture-studio-uses-web-audio-api",
+      "source": "ea:project:voice-capture-studio",
+      "target": "ea:technology:web-audio-api",
+      "predicate": "usesTechnology",
+      "label": "Uses technology",
+      "statement": "Voice Capture Studio uses the Web Audio API for browser-local microphone capture and recording workflows.",
+      "confidence": "published"
+    }
+  ]
+}

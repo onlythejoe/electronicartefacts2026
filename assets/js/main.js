@@ -589,8 +589,8 @@
       <section class="zone-card hero" id="about-entities">
         <div class="section-head">
           <p class="eyebrow">NAMED ENTITIES</p>
-          <h2>Five names, five distinct roles.</h2>
-          <p class="lede">VASTE is the runtime, Forge the production system, Vestiges the flagship platform, Palimpsests the artistic cycle, and client work the proof under real constraints.</p>
+          <h2>Six names, six distinct roles.</h2>
+          <p class="lede">VASTE is the runtime, Forge the production system, Vestiges the flagship platform, Voice Capture Studio the open-source tool, Palimpsests the artistic cycle, and client work the proof under real constraints.</p>
         </div>
         <div class="card-grid card-grid--two">
           <article class="panel panel--soft">
@@ -616,6 +616,12 @@
             <h3 class="card__title">VASTE flagship platform.</h3>
             <p class="card__copy">A knowledge infrastructure for culture and craft, designed to map, preserve and activate human know-how.</p>
             <div class="link-row"><a class="tag" href="./project.html?id=vestiges">Open Vestiges</a></div>
+          </article>
+          <article class="panel panel--soft">
+            <p class="card__meta">Voice Capture Studio</p>
+            <h3 class="card__title">Open-source browser tool.</h3>
+            <p class="card__copy">A local-first recording application for speech datasets, voice-over, dubbing and structured voice exports.</p>
+            <div class="link-row"><a class="tag" href="./project.html?id=voice-capture-studio">Open Voice Capture Studio</a></div>
           </article>
           <article class="panel panel--soft">
             <p class="card__meta">Client work</p>
@@ -4110,6 +4116,11 @@
         label: "Knowledge Infrastructure",
         copy: "Flagship products that turn research and runtime architecture into public infrastructure with a concrete economic purpose.",
         items: [entityById("vestiges")].filter(Boolean),
+      },
+      {
+        label: "Open Source Software",
+        copy: "Public code artefacts and browser tools that expose their architecture, documentation and contribution path.",
+        items: [entityById("voice-capture-studio")].filter(Boolean),
       },
       {
         label: "External Partnerships",

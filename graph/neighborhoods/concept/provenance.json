@@ -106,6 +106,14 @@
       "route": "/publications/multimodal-ai-across-text-image-audio-and-video/",
       "status": "active",
       "confidence": "published"
+    },
+    {
+      "id": "ea:project:voice-capture-studio",
+      "type": "project",
+      "title": "Voice Capture Studio",
+      "route": "/projects/voice-capture-studio/",
+      "status": "active",
+      "confidence": "published"
     }
   ],
   "edges": [
@@ -215,6 +223,15 @@
       "predicate": "documents",
       "label": "Documents",
       "statement": "Multimodal AI Across Text, Image, Audio and Video documents provenance risks across generated media.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:voice-capture-studio-applies-provenance",
+      "source": "ea:project:voice-capture-studio",
+      "target": "ea:concept:provenance",
+      "predicate": "appliesConcept",
+      "label": "Applies concept",
+      "statement": "Voice Capture Studio applies provenance concerns by keeping prompt identifiers, corpus versions, speaker context and export manifests visible.",
       "confidence": "published"
     }
   ]

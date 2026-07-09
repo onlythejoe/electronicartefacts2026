@@ -207,6 +207,16 @@ const collection = base.extend({
   explicitMembers: z.array(ref).min(1),
   selectionNote: z.string().min(20),
 });
+const artefact = base.extend({
+  type: z.literal("artefact"),
+  artefactType: z.enum(["audio", "visual", "document", "prototype", "code", "record"]),
+  createdAt: isoDate.optional(),
+  provenance: z.string().min(20),
+  sourceProject: ref.optional(),
+  format: z.string().optional(),
+  preservationStatus: z.enum(["active", "stable", "at-risk", "lost", "superseded"]),
+  significance: z.string().min(20),
+});
 const tool = base.extend({
   type: z.literal("tool"),
   purpose: z.string().min(20),
@@ -231,7 +241,7 @@ const event = base.extend({
 
 export const entityFrontmatterSchema = z.discriminatedUnion("type", [
   concept, method, framework, technology, researchField, program, project, publication,
-  collection, organization, tool, dataset, event,
+  collection, artefact, organization, tool, dataset, event,
 ]).superRefine((entity, context) => {
   if (entity.type === "event" && entity.endDate && entity.startDate > entity.endDate) {
     context.addIssue({

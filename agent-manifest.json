@@ -76,15 +76,16 @@
   "countsByType": {
     "organization": 2,
     "program": 4,
-    "project": 4,
+    "project": 6,
     "researchField": 2,
     "publication": 80,
-    "concept": 72,
+    "concept": 82,
     "technology": 36,
     "framework": 2,
-    "collection": 8
+    "collection": 10,
+    "artefact": 2
   },
-  "lastModified": "2026-07-04",
+  "lastModified": "2026-07-09",
   "records": [
     {
       "id": "ea:organization:electronic-artefacts-fr",
@@ -355,6 +356,65 @@
       "confidence": "observed",
       "publishedAt": "2026-06-22",
       "modifiedAt": "2026-06-24"
+    },
+    {
+      "id": "ea:project:voice-capture-studio-fr",
+      "locale": "fr",
+      "translationOf": "ea:project:voice-capture-studio",
+      "type": "project",
+      "title": "Voice Capture Studio",
+      "summary": "Un studio d’enregistrement local-first pour datasets vocaux, voix off et doublage, construit comme une application de navigateur open source avec exports WAV et métadonnées structurées.",
+      "url": "https://electronicartefacts.com/fr/projects/voice-capture-studio/",
+      "route": "/fr/projects/voice-capture-studio/",
+      "identifier": "https://electronicartefacts.com/fr/id/project/voice-capture-studio/",
+      "jsonLd": "https://electronicartefacts.com/fr/id/project/voice-capture-studio/index.jsonld",
+      "tags": [
+        "Voice Capture Studio",
+        "enregistrement vocal",
+        "dataset vocal",
+        "logiciel de navigateur",
+        "Web Audio",
+        "open source",
+        "local-first",
+        "vie privée",
+        "ingénierie audio",
+        "développement web",
+        "interaction humain-machine",
+        "machine learning"
+      ],
+      "status": "active",
+      "confidence": "published",
+      "publishedAt": "2026-07-09",
+      "modifiedAt": "2026-07-09"
+    },
+    {
+      "id": "ea:project:voice-capture-studio",
+      "locale": "en",
+      "type": "project",
+      "title": "Voice Capture Studio",
+      "summary": "A local-first recording studio for speech datasets, voice-over and dubbing workflows, built as an open-source browser application with structured WAV and metadata exports.",
+      "url": "https://electronicartefacts.com/projects/voice-capture-studio/",
+      "route": "/projects/voice-capture-studio/",
+      "identifier": "https://electronicartefacts.com/id/project/voice-capture-studio/",
+      "jsonLd": "https://electronicartefacts.com/id/project/voice-capture-studio/index.jsonld",
+      "tags": [
+        "Voice Capture Studio",
+        "Speech Recording",
+        "Voice Dataset",
+        "Browser Software",
+        "Web Audio",
+        "Open Source",
+        "Local First",
+        "Privacy",
+        "Audio Engineering",
+        "Web Development",
+        "Human Computer Interaction",
+        "Machine Learning"
+      ],
+      "status": "active",
+      "confidence": "published",
+      "publishedAt": "2026-07-09",
+      "modifiedAt": "2026-07-09"
     },
     {
       "id": "ea:researchField:runtime-theory",
@@ -2774,6 +2834,30 @@
       "modifiedAt": "2026-06-24"
     },
     {
+      "id": "ea:concept:browser-software",
+      "locale": "en",
+      "type": "concept",
+      "title": "Browser Software",
+      "summary": "Browser software is application software delivered through web standards while relying on the browser runtime for interface, storage, permissions, media and distribution behavior.",
+      "url": "https://electronicartefacts.com/knowledge/concepts/browser-software/",
+      "route": "/knowledge/concepts/browser-software/",
+      "identifier": "https://electronicartefacts.com/id/concept/browser-software/",
+      "jsonLd": "https://electronicartefacts.com/id/concept/browser-software/index.jsonld",
+      "tags": [
+        "Browser Software",
+        "Web App",
+        "PWA",
+        "Local First",
+        "Web Development",
+        "Human Computer Interaction",
+        "Software Architecture"
+      ],
+      "status": "active",
+      "confidence": "validated",
+      "publishedAt": "2026-07-09",
+      "modifiedAt": "2026-07-09"
+    },
+    {
       "id": "ea:concept:algorithmic-composition-fr",
       "locale": "fr",
       "translationOf": "ea:concept:algorithmic-composition",
@@ -2980,6 +3064,32 @@
       "confidence": "validated",
       "publishedAt": "2026-06-25",
       "modifiedAt": "2026-06-25"
+    },
+    {
+      "id": "ea:concept:speech-recording-fr",
+      "locale": "fr",
+      "translationOf": "ea:concept:speech-recording",
+      "type": "concept",
+      "title": "Enregistrement vocal",
+      "summary": "L’enregistrement vocal est la capture dirigée de parole avec les métadonnées techniques, contextuelles et de consentement nécessaires à la révision, à la réutilisation et à la conservation.",
+      "url": "https://electronicartefacts.com/fr/knowledge/concepts/speech-recording/",
+      "route": "/fr/knowledge/concepts/speech-recording/",
+      "identifier": "https://electronicartefacts.com/fr/id/concept/speech-recording/",
+      "jsonLd": "https://electronicartefacts.com/fr/id/concept/speech-recording/index.jsonld",
+      "tags": [
+        "Enregistrement vocal",
+        "enregistrement vocal",
+        "voix",
+        "audio",
+        "workflow",
+        "ingénierie audio",
+        "interaction humain-machine",
+        "développement web"
+      ],
+      "status": "active",
+      "confidence": "validated",
+      "publishedAt": "2026-07-09",
+      "modifiedAt": "2026-07-09"
     },
     {
       "id": "ea:concept:entity-identity",
@@ -3505,6 +3615,32 @@
       "modifiedAt": "2026-06-24"
     },
     {
+      "id": "ea:concept:speech-datasets-fr",
+      "locale": "fr",
+      "translationOf": "ea:concept:speech-datasets",
+      "type": "concept",
+      "title": "Jeux de données vocales",
+      "summary": "Les jeux de données vocales sont des collections structurées de parole enregistrée, de transcriptions, de contexte locuteur et de métadonnées qualité préparées pour l’analyse, la conservation ou des workflows de...",
+      "url": "https://electronicartefacts.com/fr/knowledge/concepts/speech-datasets/",
+      "route": "/fr/knowledge/concepts/speech-datasets/",
+      "identifier": "https://electronicartefacts.com/fr/id/concept/speech-datasets/",
+      "jsonLd": "https://electronicartefacts.com/fr/id/concept/speech-datasets/index.jsonld",
+      "tags": [
+        "Jeux de données vocales",
+        "dataset vocal",
+        "données vocales",
+        "métadonnées",
+        "qualité dataset",
+        "ingénierie audio",
+        "machine learning",
+        "préservation numérique"
+      ],
+      "status": "active",
+      "confidence": "validated",
+      "publishedAt": "2026-07-09",
+      "modifiedAt": "2026-07-09"
+    },
+    {
       "id": "ea:concept:knowledge-graph",
       "locale": "en",
       "type": "concept",
@@ -3582,6 +3718,57 @@
       "confidence": "validated",
       "publishedAt": "2026-06-23",
       "modifiedAt": "2026-06-23"
+    },
+    {
+      "id": "ea:concept:browser-software-fr",
+      "locale": "fr",
+      "translationOf": "ea:concept:browser-software",
+      "type": "concept",
+      "title": "Logiciel de navigateur",
+      "summary": "Un logiciel de navigateur est une application fournie par les standards du Web et exécutée dans le runtime du navigateur pour l’interface, le stockage, les permissions, les médias et la distribution.",
+      "url": "https://electronicartefacts.com/fr/knowledge/concepts/browser-software/",
+      "route": "/fr/knowledge/concepts/browser-software/",
+      "identifier": "https://electronicartefacts.com/fr/id/concept/browser-software/",
+      "jsonLd": "https://electronicartefacts.com/fr/id/concept/browser-software/index.jsonld",
+      "tags": [
+        "Logiciel de navigateur",
+        "logiciel de navigateur",
+        "application web",
+        "PWA",
+        "local-first",
+        "développement web",
+        "interaction humain-machine",
+        "architecture logicielle"
+      ],
+      "status": "active",
+      "confidence": "validated",
+      "publishedAt": "2026-07-09",
+      "modifiedAt": "2026-07-09"
+    },
+    {
+      "id": "ea:concept:machine-learning-workflows",
+      "locale": "en",
+      "type": "concept",
+      "title": "Machine Learning Workflows",
+      "summary": "Machine learning workflows are the ordered practices that move from source material and metadata through validation, preparation, training, evaluation and deployment decisions.",
+      "url": "https://electronicartefacts.com/knowledge/concepts/machine-learning-workflows/",
+      "route": "/knowledge/concepts/machine-learning-workflows/",
+      "identifier": "https://electronicartefacts.com/id/concept/machine-learning-workflows/",
+      "jsonLd": "https://electronicartefacts.com/id/concept/machine-learning-workflows/index.jsonld",
+      "tags": [
+        "Machine Learning Workflows",
+        "Machine Learning",
+        "Workflow",
+        "Dataset Preparation",
+        "Evaluation",
+        "Artificial Intelligence",
+        "Data Engineering",
+        "Software Architecture"
+      ],
+      "status": "active",
+      "confidence": "validated",
+      "publishedAt": "2026-07-09",
+      "modifiedAt": "2026-07-09"
     },
     {
       "id": "ea:concept:metadata",
@@ -4208,6 +4395,55 @@
       "modifiedAt": "2026-06-23"
     },
     {
+      "id": "ea:concept:speech-datasets",
+      "locale": "en",
+      "type": "concept",
+      "title": "Speech Datasets",
+      "summary": "Speech datasets are structured collections of recorded speech, transcripts, speaker context and quality metadata prepared for analysis, preservation or downstream machine-learning workflows.",
+      "url": "https://electronicartefacts.com/knowledge/concepts/speech-datasets/",
+      "route": "/knowledge/concepts/speech-datasets/",
+      "identifier": "https://electronicartefacts.com/id/concept/speech-datasets/",
+      "jsonLd": "https://electronicartefacts.com/id/concept/speech-datasets/index.jsonld",
+      "tags": [
+        "Speech Datasets",
+        "Speech Dataset",
+        "Voice Data",
+        "Metadata",
+        "Dataset Readiness",
+        "Audio Engineering",
+        "Machine Learning",
+        "Digital Preservation"
+      ],
+      "status": "active",
+      "confidence": "validated",
+      "publishedAt": "2026-07-09",
+      "modifiedAt": "2026-07-09"
+    },
+    {
+      "id": "ea:concept:speech-recording",
+      "locale": "en",
+      "type": "concept",
+      "title": "Speech Recording",
+      "summary": "Speech recording is the directed capture of spoken language with enough technical, contextual and consent metadata to support review, reuse and preservation.",
+      "url": "https://electronicartefacts.com/knowledge/concepts/speech-recording/",
+      "route": "/knowledge/concepts/speech-recording/",
+      "identifier": "https://electronicartefacts.com/id/concept/speech-recording/",
+      "jsonLd": "https://electronicartefacts.com/id/concept/speech-recording/index.jsonld",
+      "tags": [
+        "Speech Recording",
+        "Voice",
+        "Audio",
+        "Workflow",
+        "Audio Engineering",
+        "Human Computer Interaction",
+        "Web Development"
+      ],
+      "status": "active",
+      "confidence": "validated",
+      "publishedAt": "2026-07-09",
+      "modifiedAt": "2026-07-09"
+    },
+    {
       "id": "ea:concept:autonomous-system-fr",
       "locale": "fr",
       "translationOf": "ea:concept:autonomous-system",
@@ -4344,6 +4580,31 @@
       "modifiedAt": "2026-06-24"
     },
     {
+      "id": "ea:concept:voice-technology-fr",
+      "locale": "fr",
+      "translationOf": "ea:concept:voice-technology",
+      "type": "concept",
+      "title": "Technologie vocale",
+      "summary": "La technologie vocale désigne la conception et l’ingénierie de systèmes qui capturent, analysent, transforment, préservent ou présentent la voix parlée comme matériau technique et culturel.",
+      "url": "https://electronicartefacts.com/fr/knowledge/concepts/voice-technology/",
+      "route": "/fr/knowledge/concepts/voice-technology/",
+      "identifier": "https://electronicartefacts.com/fr/id/concept/voice-technology/",
+      "jsonLd": "https://electronicartefacts.com/fr/id/concept/voice-technology/index.jsonld",
+      "tags": [
+        "Technologie vocale",
+        "technologie vocale",
+        "parole",
+        "audio",
+        "interaction humain-machine",
+        "ingénierie audio",
+        "intelligence artificielle"
+      ],
+      "status": "active",
+      "confidence": "validated",
+      "publishedAt": "2026-07-09",
+      "modifiedAt": "2026-07-09"
+    },
+    {
       "id": "ea:concept:typography-fr",
       "locale": "fr",
       "translationOf": "ea:concept:typography",
@@ -4394,6 +4655,29 @@
       "modifiedAt": "2026-06-24"
     },
     {
+      "id": "ea:concept:voice-technology",
+      "locale": "en",
+      "type": "concept",
+      "title": "Voice Technology",
+      "summary": "Voice technology is the design and engineering of systems that capture, analyze, transform, preserve or present spoken voice as technical and cultural material.",
+      "url": "https://electronicartefacts.com/knowledge/concepts/voice-technology/",
+      "route": "/knowledge/concepts/voice-technology/",
+      "identifier": "https://electronicartefacts.com/id/concept/voice-technology/",
+      "jsonLd": "https://electronicartefacts.com/id/concept/voice-technology/index.jsonld",
+      "tags": [
+        "Voice Technology",
+        "Speech",
+        "Audio",
+        "Human Computer Interaction",
+        "Audio Engineering",
+        "Artificial Intelligence"
+      ],
+      "status": "active",
+      "confidence": "validated",
+      "publishedAt": "2026-07-09",
+      "modifiedAt": "2026-07-09"
+    },
+    {
       "id": "ea:concept:web-audio",
       "locale": "en",
       "type": "concept",
@@ -4415,6 +4699,32 @@
       "confidence": "validated",
       "publishedAt": "2026-06-24",
       "modifiedAt": "2026-06-24"
+    },
+    {
+      "id": "ea:concept:machine-learning-workflows-fr",
+      "locale": "fr",
+      "translationOf": "ea:concept:machine-learning-workflows",
+      "type": "concept",
+      "title": "Workflows de machine learning",
+      "summary": "Les workflows de machine learning sont les pratiques ordonnées qui font passer un matériau source et ses métadonnées par validation, préparation, entraînement, évaluation et décisions de déploiement.",
+      "url": "https://electronicartefacts.com/fr/knowledge/concepts/machine-learning-workflows/",
+      "route": "/fr/knowledge/concepts/machine-learning-workflows/",
+      "identifier": "https://electronicartefacts.com/fr/id/concept/machine-learning-workflows/",
+      "jsonLd": "https://electronicartefacts.com/fr/id/concept/machine-learning-workflows/index.jsonld",
+      "tags": [
+        "Workflows de machine learning",
+        "machine learning",
+        "workflow",
+        "préparation de dataset",
+        "évaluation",
+        "intelligence artificielle",
+        "ingénierie des données",
+        "architecture logicielle"
+      ],
+      "status": "active",
+      "confidence": "validated",
+      "publishedAt": "2026-07-09",
+      "modifiedAt": "2026-07-09"
     },
     {
       "id": "ea:technology:activitypub-fr",
@@ -5338,6 +5648,34 @@
       "modifiedAt": "2026-06-26"
     },
     {
+      "id": "ea:collection:voice-capture-studio-fr",
+      "locale": "fr",
+      "translationOf": "ea:collection:voice-capture-studio",
+      "type": "collection",
+      "title": "Collection Voice Capture Studio",
+      "summary": "Collection éditoriale autour du projet Voice Capture Studio et de son contexte de connaissance sur l’enregistrement vocal.",
+      "url": "https://electronicartefacts.com/fr/archive/collections/voice-capture-studio/",
+      "route": "/fr/archive/collections/voice-capture-studio/",
+      "identifier": "https://electronicartefacts.com/fr/id/collection/voice-capture-studio/",
+      "jsonLd": "https://electronicartefacts.com/fr/id/collection/voice-capture-studio/index.jsonld",
+      "tags": [
+        "Collection Voice Capture Studio",
+        "Voice Capture Studio",
+        "technologie vocale",
+        "enregistrement vocal",
+        "logiciel de navigateur",
+        "open source",
+        "ingénierie audio",
+        "développement web",
+        "interaction humain-machine",
+        "machine learning"
+      ],
+      "status": "active",
+      "confidence": "published",
+      "publishedAt": "2026-07-09",
+      "modifiedAt": "2026-07-09"
+    },
+    {
       "id": "ea:collection:knowledge-hub-foundations-fr",
       "locale": "fr",
       "translationOf": "ea:collection:knowledge-hub-foundations",
@@ -5560,6 +5898,84 @@
       "confidence": "published",
       "publishedAt": "2026-06-24",
       "modifiedAt": "2026-06-24"
+    },
+    {
+      "id": "ea:collection:voice-capture-studio",
+      "locale": "en",
+      "type": "collection",
+      "title": "Voice Capture Studio Collection",
+      "summary": "A curated collection around the Voice Capture Studio project and its speech-recording knowledge context.",
+      "url": "https://electronicartefacts.com/archive/collections/voice-capture-studio/",
+      "route": "/archive/collections/voice-capture-studio/",
+      "identifier": "https://electronicartefacts.com/id/collection/voice-capture-studio/",
+      "jsonLd": "https://electronicartefacts.com/id/collection/voice-capture-studio/index.jsonld",
+      "tags": [
+        "Voice Capture Studio Collection",
+        "Voice Capture Studio",
+        "Voice Technology",
+        "Speech Recording",
+        "Browser Software",
+        "Open Source",
+        "Audio Engineering",
+        "Web Development",
+        "Human Computer Interaction",
+        "Machine Learning"
+      ],
+      "status": "active",
+      "confidence": "published",
+      "publishedAt": "2026-07-09",
+      "modifiedAt": "2026-07-09"
+    },
+    {
+      "id": "ea:artefact:voice-capture-studio-repository-fr",
+      "locale": "fr",
+      "translationOf": "ea:artefact:voice-capture-studio-repository",
+      "type": "artefact",
+      "title": "Dépôt Voice Capture Studio",
+      "summary": "Fiche d’artefact de code pour le dépôt public Voice Capture Studio et son architecture documentée d’enregistrement dans le navigateur.",
+      "url": "https://electronicartefacts.com/fr/archive/artefacts/voice-capture-studio-repository/",
+      "route": "/fr/archive/artefacts/voice-capture-studio-repository/",
+      "identifier": "https://electronicartefacts.com/fr/id/artefact/voice-capture-studio-repository/",
+      "jsonLd": "https://electronicartefacts.com/fr/id/artefact/voice-capture-studio-repository/index.jsonld",
+      "tags": [
+        "Dépôt Voice Capture Studio",
+        "Voice Capture Studio",
+        "GitHub",
+        "open source",
+        "logiciel de navigateur",
+        "capture vocale",
+        "développement web",
+        "ingénierie audio"
+      ],
+      "status": "active",
+      "confidence": "published",
+      "publishedAt": "2026-07-09",
+      "modifiedAt": "2026-07-09"
+    },
+    {
+      "id": "ea:artefact:voice-capture-studio-repository",
+      "locale": "en",
+      "type": "artefact",
+      "title": "Voice Capture Studio Repository",
+      "summary": "A code artefact record for the public Voice Capture Studio repository and its documented browser recording architecture.",
+      "url": "https://electronicartefacts.com/archive/artefacts/voice-capture-studio-repository/",
+      "route": "/archive/artefacts/voice-capture-studio-repository/",
+      "identifier": "https://electronicartefacts.com/id/artefact/voice-capture-studio-repository/",
+      "jsonLd": "https://electronicartefacts.com/id/artefact/voice-capture-studio-repository/index.jsonld",
+      "tags": [
+        "Voice Capture Studio Repository",
+        "Voice Capture Studio",
+        "GitHub",
+        "Open Source",
+        "Browser Software",
+        "Voice Capture",
+        "Web Development",
+        "Audio Engineering"
+      ],
+      "status": "active",
+      "confidence": "published",
+      "publishedAt": "2026-07-09",
+      "modifiedAt": "2026-07-09"
     }
   ]
 }

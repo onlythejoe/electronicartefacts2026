@@ -30,6 +30,7 @@ Use canonical HTML URLs for human-facing citations. Use identifier routes under 
 
 ## Canonical Records
 
+- [Voice Capture Studio](https://electronicartefacts.com/projects/voice-capture-studio/): A local-first recording studio for speech datasets, voice-over and dubbing workflows, built as an open-source browser application with structured WAV and metadata exports.
 - [Electronic Artefacts](https://electronicartefacts.com/organizations/electronic-artefacts/): Strategy, design, engineering and cultural research brought together to build clear, durable digital products and knowledge systems.
 - [VASTE](https://electronicartefacts.com/programs/vaste/): VASTE connects Runtime Theory to implemented graph systems and can be evaluated through scoped repository access, technical pilots, implementation work and licensing conversations.
 - [Vestiges](https://electronicartefacts.com/projects/vestiges/): A knowledge-first product where provenance, contribution, discovery and professional services grow from one historized graph.
@@ -39,6 +40,7 @@ Use canonical HTML URLs for human-facing citations. Use identifier routes under 
 - [Knowledge Graph](https://electronicartefacts.com/knowledge/concepts/knowledge-graph/): A knowledge graph is a structured network of entities, identifiers and typed relationships that makes knowledge navigable, queryable and reusable across contexts.
 - [Retrieval-Augmented Generation](https://electronicartefacts.com/knowledge/concepts/retrieval-augmented-generation/): Retrieval-augmented generation is an architecture that retrieves external information at query time and supplies selected evidence to a generative model before or during...
 - [Model Context Protocol](https://electronicartefacts.com/knowledge/technologies/model-context-protocol/): A technology record for MCP as an integration protocol for tool-using AI applications, resources and contextual workflows.
+- [Voice Capture Studio](https://electronicartefacts.com/fr/projects/voice-capture-studio/): Un studio d’enregistrement local-first pour datasets vocaux, voix off et doublage, construit comme une application de navigateur open source avec exports WAV et métadonnées...
 - [Electronic Artefacts](https://electronicartefacts.com/fr/organizations/electronic-artefacts/): Stratégie, design, ingénierie et recherche culturelle réunis pour construire des produits numériques et des systèmes de connaissance clairs et durables.
 - [ORETH](https://electronicartefacts.com/fr/programs/oreth/): Fiche publique du programme ORETH, à la fois système de recherche audio et couche technico-culturelle reliée à Palimpsests.
 - [ORETH](https://electronicartefacts.com/programs/oreth/): A public program record for ORETH as both an audio research system and the technical-cultural layer connected to Palimpsests.
@@ -46,8 +48,6 @@ Use canonical HTML URLs for human-facing citations. Use identifier routes under 
 - [Palimpsests](https://electronicartefacts.com/fr/projects/palimpsests/): Une œuvre musicale et éditoriale en cinq actes reliant recherche sonore, mémoire culturelle, archives et production visuelle.
 - [Palimpsests](https://electronicartefacts.com/projects/palimpsests/): A canonical project record for Palimpsests as a compound audio, visual and research publication within Electronic Artefacts.
 - [Vestiges](https://electronicartefacts.com/fr/projects/vestiges/): Un produit centré sur la connaissance où provenance, contribution, découverte et services professionnels émergent d’un même graphe historisé.
-- [Runtime Theory](https://electronicartefacts.com/research/fields/runtime-theory/): An active Electronic Artefacts research field connecting early VOID experiments, VASTE and the definition of graph runtime.
-- [Théorie du runtime](https://electronicartefacts.com/fr/research/fields/runtime-theory/): Champ de recherche actif d’Electronic Artefacts reliant les premiers travaux VOID, VASTE et la définition d’un runtime de graphe.
 
 ## Optional
 
@@ -57,4 +57,4 @@ Use canonical HTML URLs for human-facing citations. Use identifier routes under 
 - [Humans.txt](https://electronicartefacts.com/humans.txt)
 - [Security.txt](https://electronicartefacts.com/.well-known/security.txt)
 
-Last curated source update: 2026-07-04
+Last curated source update: 2026-07-09

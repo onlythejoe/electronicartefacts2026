@@ -34,6 +34,14 @@
       "route": "/publications/local-and-open-source-ai-systems/",
       "status": "active",
       "confidence": "published"
+    },
+    {
+      "id": "ea:project:voice-capture-studio",
+      "type": "project",
+      "title": "Voice Capture Studio",
+      "route": "/projects/voice-capture-studio/",
+      "status": "active",
+      "confidence": "published"
     }
   ],
   "edges": [
@@ -62,6 +70,15 @@
       "predicate": "documents",
       "label": "Documents",
       "statement": "Local and Open Source AI Systems applies open-source principles to AI infrastructure and licensing.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:voice-capture-studio-applies-open-source",
+      "source": "ea:project:voice-capture-studio",
+      "target": "ea:concept:open-source",
+      "predicate": "appliesConcept",
+      "label": "Applies concept",
+      "statement": "Voice Capture Studio applies open-source practice through a public MIT-licensed repository with contribution, issue and documentation surfaces.",
       "confidence": "published"
     }
   ]

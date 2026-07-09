@@ -1,0 +1,34 @@
+{
+  "id": "local:ea:concept:voice-technology",
+  "kind": "local",
+  "focus": "ea:concept:voice-technology",
+  "nodes": [
+    {
+      "id": "ea:concept:voice-technology",
+      "type": "concept",
+      "title": "Voice Technology",
+      "route": "/knowledge/concepts/voice-technology/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:project:voice-capture-studio",
+      "type": "project",
+      "title": "Voice Capture Studio",
+      "route": "/projects/voice-capture-studio/",
+      "status": "active",
+      "confidence": "published"
+    }
+  ],
+  "edges": [
+    {
+      "id": "ear:voice-capture-studio-applies-voice-technology",
+      "source": "ea:project:voice-capture-studio",
+      "target": "ea:concept:voice-technology",
+      "predicate": "appliesConcept",
+      "label": "Applies concept",
+      "statement": "Voice Capture Studio applies voice-technology concerns around capture, metadata, review, local privacy and downstream workflow boundaries.",
+      "confidence": "published"
+    }
+  ]
+}

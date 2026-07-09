@@ -66,6 +66,7 @@ const featuredRecords = (records: Entity[], limit: number): Entity[] => {
     "ea:organization:electronic-artefacts",
     "ea:program:vaste",
     "ea:project:vestiges",
+    "ea:project:voice-capture-studio",
     "ea:concept:ai-agent",
     "ea:concept:retrieval-augmented-generation",
     "ea:concept:knowledge-graph",

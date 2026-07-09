@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-07-09T11:38:05.184Z",
+  "generatedAt": "2026-07-09T13:48:52.514Z",
   "staticPages": {
     "total": 26,
     "generated": 26,
@@ -10,24 +10,27 @@
     ]
   },
   "canonicalEntities": {
-    "english": 105,
-    "french": 105,
+    "english": 113,
+    "french": 113,
     "coveragePercent": 100
   },
   "editorialWords": {
-    "englishSourceWords": 71105,
-    "sourceWordsCoveredByFrenchRecords": 71105,
+    "englishSourceWords": 72588,
+    "sourceWordsCoveredByFrenchRecords": 72588,
     "coveragePercent": 100
   },
   "translatedEntityIds": [
+    "ea:artefact:voice-capture-studio-repository",
     "ea:collection:knowledge-hub-foundations",
     "ea:collection:knowledge-hub-fourth-wave",
     "ea:collection:knowledge-hub-second-wave",
     "ea:collection:knowledge-hub-third-wave",
+    "ea:collection:voice-capture-studio",
     "ea:concept:ai-agent",
     "ea:concept:algorithmic-composition",
     "ea:concept:augmented-intelligence",
     "ea:concept:autonomous-system",
+    "ea:concept:browser-software",
     "ea:concept:contextual-execution",
     "ea:concept:creative-coding",
     "ea:concept:cybernetic-feedback",
@@ -45,6 +48,7 @@
     "ea:concept:knowledge-graph",
     "ea:concept:large-language-model",
     "ea:concept:linked-data",
+    "ea:concept:machine-learning-workflows",
     "ea:concept:metadata",
     "ea:concept:microservice-architecture",
     "ea:concept:motion-design",
@@ -57,8 +61,11 @@
     "ea:concept:provenance",
     "ea:concept:retrieval-augmented-generation",
     "ea:concept:signal-archaeology",
+    "ea:concept:speech-datasets",
+    "ea:concept:speech-recording",
     "ea:concept:systems-thinking",
     "ea:concept:typography",
+    "ea:concept:voice-technology",
     "ea:concept:web-audio",
     "ea:framework:electronic-artefacts-lightweight-template",
     "ea:organization:electronic-artefacts",
@@ -66,6 +73,7 @@
     "ea:program:vaste",
     "ea:project:palimpsests",
     "ea:project:vestiges",
+    "ea:project:voice-capture-studio",
     "ea:publication:ai-agents-vs-ai-workflows",
     "ea:publication:ai-search-structured-content-and-knowledge-graph-seo",
     "ea:publication:algorithmic-composition-and-rule-based-music",

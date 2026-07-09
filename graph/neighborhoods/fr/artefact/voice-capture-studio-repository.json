@@ -1,0 +1,60 @@
+{
+  "id": "local:ea:artefact:voice-capture-studio-repository-fr",
+  "kind": "local",
+  "focus": "ea:artefact:voice-capture-studio-repository-fr",
+  "nodes": [
+    {
+      "id": "ea:artefact:voice-capture-studio-repository-fr",
+      "type": "artefact",
+      "title": "Dépôt Voice Capture Studio",
+      "route": "/fr/archive/artefacts/voice-capture-studio-repository/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:project:voice-capture-studio-fr",
+      "type": "project",
+      "title": "Voice Capture Studio",
+      "route": "/fr/projects/voice-capture-studio/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:collection:voice-capture-studio-fr",
+      "type": "collection",
+      "title": "Collection Voice Capture Studio",
+      "route": "/fr/archive/collections/voice-capture-studio/",
+      "status": "active",
+      "confidence": "published"
+    }
+  ],
+  "edges": [
+    {
+      "id": "ear:voice-capture-studio-evidenced-by-repository",
+      "source": "ea:project:voice-capture-studio-fr",
+      "target": "ea:artefact:voice-capture-studio-repository-fr",
+      "predicate": "evidencedBy",
+      "label": "Evidenced by",
+      "statement": "The public GitHub repository provides source evidence for Voice Capture Studio, including code, documentation, tests and deployment configuration.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:voice-capture-repository-documents-project",
+      "source": "ea:artefact:voice-capture-studio-repository-fr",
+      "target": "ea:project:voice-capture-studio-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "The Voice Capture Studio repository documents the application architecture, export structure, privacy boundary and GitHub Pages deployment.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:voice-capture-repository-member-of-collection",
+      "source": "ea:artefact:voice-capture-studio-repository-fr",
+      "target": "ea:collection:voice-capture-studio-fr",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "The Voice Capture Studio repository is part of the Voice Capture Studio Collection as the public source artefact.",
+      "confidence": "published"
+    }
+  ]
+}

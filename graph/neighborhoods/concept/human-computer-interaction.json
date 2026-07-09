@@ -50,6 +50,14 @@
       "route": "/publications/generative-ai-latent-space-and-creative-workflows/",
       "status": "active",
       "confidence": "published"
+    },
+    {
+      "id": "ea:project:voice-capture-studio",
+      "type": "project",
+      "title": "Voice Capture Studio",
+      "route": "/projects/voice-capture-studio/",
+      "status": "active",
+      "confidence": "published"
     }
   ],
   "edges": [
@@ -96,6 +104,15 @@
       "predicate": "documents",
       "label": "Documents",
       "statement": "Generative AI, Latent Space and Creative Workflows links AI workflows to human computer interaction and creative agency.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:voice-capture-studio-applies-hci",
+      "source": "ea:project:voice-capture-studio",
+      "target": "ea:concept:human-computer-interaction",
+      "predicate": "appliesConcept",
+      "label": "Applies concept",
+      "statement": "Voice Capture Studio applies HCI principles by making recording modes, environment checks, local storage and quality gates visible before capture.",
       "confidence": "published"
     }
   ]

@@ -1,0 +1,84 @@
+{
+  "id": "ea:concept:speech-recording",
+  "type": "concept",
+  "slug": {
+    "canonical": "speech-recording"
+  },
+  "title": "Speech Recording",
+  "definition": "Speech recording is the directed capture of spoken language with enough technical, contextual and consent metadata to support review, reuse and preservation.",
+  "abstract": "Speech recording connects audio quality, speaker context, prompts, transcripts, metadata and review workflows into a durable voice record.",
+  "description": "A canonical concept record for professional speech capture and review workflows.",
+  "locale": "en",
+  "visibility": "public",
+  "publicationClass": "canonical",
+  "status": "active",
+  "maturity": "research",
+  "confidence": "validated",
+  "version": {
+    "version": "1.0.0",
+    "createdAt": "2026-07-09",
+    "publishedAt": "2026-07-09",
+    "modifiedAt": "2026-07-09"
+  },
+  "authors": [
+    {
+      "id": "ea:organization:electronic-artefacts"
+    }
+  ],
+  "publisher": "ea:organization:electronic-artefacts",
+  "tags": [
+    "Speech Recording",
+    "Voice",
+    "Audio",
+    "Workflow"
+  ],
+  "disciplines": [
+    "Audio Engineering",
+    "Human Computer Interaction",
+    "Web Development"
+  ],
+  "scope": [
+    "Prompted speech capture",
+    "Voice-over sessions",
+    "Dubbing takes",
+    "Room tone and microphone context",
+    "Reviewable audio metadata"
+  ],
+  "exclusions": [
+    "Unstructured voice notes with no review or provenance layer",
+    "Model training itself"
+  ],
+  "claims": [
+    "Speech recording becomes reusable when audio, prompts, speaker context and review state are preserved together.",
+    "Browser recording tools can support professional capture when they expose permissions, quality checks and export structure clearly."
+  ],
+  "bodyHtml": "<h2 id=\"definition\">Definition</h2>\n<p>Speech recording is the controlled capture of spoken language for later review, editing, preservation or dataset preparation.</p>\n<h2 id=\"scope\">Scope</h2>\n<p>The concept includes prompts, speaker information, microphone context, room tone, takes, transcripts, timing, quality checks and export metadata.</p>\n<h2 id=\"applications\">Applications</h2>\n<p>Electronic Artefacts uses the concept to frame browser-first voice capture tools, ORETH-adjacent audio research and structured voice archives.</p>\n<h2 id=\"limits\">Limits</h2>\n<p>Speech recording does not itself train a model. It produces source material whose downstream use depends on separate consent, quality and processing decisions.</p>\n",
+  "headings": [
+    "Definition",
+    "Scope",
+    "Applications",
+    "Limits"
+  ],
+  "headingItems": [
+    {
+      "level": 2,
+      "title": "Definition",
+      "id": "definition"
+    },
+    {
+      "level": 2,
+      "title": "Scope",
+      "id": "scope"
+    },
+    {
+      "level": 2,
+      "title": "Applications",
+      "id": "applications"
+    },
+    {
+      "level": 2,
+      "title": "Limits",
+      "id": "limits"
+    }
+  ]
+}

@@ -26,6 +26,14 @@
       "route": "/fr/publications/algorithmic-composition-and-rule-based-music/",
       "status": "active",
       "confidence": "published"
+    },
+    {
+      "id": "ea:project:voice-capture-studio-fr",
+      "type": "project",
+      "title": "Voice Capture Studio",
+      "route": "/fr/projects/voice-capture-studio/",
+      "status": "active",
+      "confidence": "published"
     }
   ],
   "edges": [
@@ -45,6 +53,15 @@
       "predicate": "documents",
       "label": "Documents",
       "statement": "Algorithmic Composition and Rule-Based Music connects rule-based music to browser sound systems.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:voice-capture-studio-applies-web-audio",
+      "source": "ea:project:voice-capture-studio-fr",
+      "target": "ea:concept:web-audio-fr",
+      "predicate": "appliesConcept",
+      "label": "Applies concept",
+      "statement": "Voice Capture Studio applies web-audio practice by capturing and preparing speech directly inside a browser runtime.",
       "confidence": "published"
     }
   ]

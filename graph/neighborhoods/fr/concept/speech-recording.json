@@ -1,0 +1,34 @@
+{
+  "id": "local:ea:concept:speech-recording-fr",
+  "kind": "local",
+  "focus": "ea:concept:speech-recording-fr",
+  "nodes": [
+    {
+      "id": "ea:concept:speech-recording-fr",
+      "type": "concept",
+      "title": "Enregistrement vocal",
+      "route": "/fr/knowledge/concepts/speech-recording/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:project:voice-capture-studio-fr",
+      "type": "project",
+      "title": "Voice Capture Studio",
+      "route": "/fr/projects/voice-capture-studio/",
+      "status": "active",
+      "confidence": "published"
+    }
+  ],
+  "edges": [
+    {
+      "id": "ear:voice-capture-studio-applies-speech-recording",
+      "source": "ea:project:voice-capture-studio-fr",
+      "target": "ea:concept:speech-recording-fr",
+      "predicate": "appliesConcept",
+      "label": "Applies concept",
+      "statement": "Voice Capture Studio applies speech-recording principles through guided prompts, room-tone calibration, takes and review states.",
+      "confidence": "published"
+    }
+  ]
+}
