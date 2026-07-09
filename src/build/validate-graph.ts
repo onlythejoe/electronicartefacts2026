@@ -1,8 +1,9 @@
 import { predicateDefinitions } from "../schema/predicates.js";
 import type { Entity } from "../schema/entities.js";
-import type { EntityId } from "../schema/entity.js";
+import type { EntityId, Locale } from "../schema/entity.js";
 import type { RelationStatement } from "../schema/relation.js";
 import { isPublicEntity } from "../semantic/visibility.js";
+import { identifierPath, routeForEntity } from "../config/routes.js";
 
 const collectEntityRefs = (entity: Entity): EntityId[] => {
   const refs: EntityId[] = [entity.publisher, ...entity.authors.map((item) => item.id)];
@@ -32,20 +33,45 @@ const collectEntityRefs = (entity: Entity): EntityId[] => {
 export const validateGraph = (entities: Entity[], relations: RelationStatement[]): void => {
   const byId = new Map(entities.map((entity) => [entity.id, entity]));
   if (byId.size !== entities.length) throw new Error("Duplicate entity ID");
-  const routeKeys = new Set<string>();
+  const routes = new Map<string, EntityId>();
+  const identifiers = new Map<string, EntityId>();
+  const translationLocales = new Map<EntityId, Set<Locale>>();
   for (const entity of entities) {
-    const routeKey = `${entity.locale}:${entity.type}:${entity.slug.canonical}`;
-    if (routeKeys.has(routeKey)) throw new Error(`Duplicate entity route key ${routeKey}`);
-    routeKeys.add(routeKey);
+    const idType = entity.id.split(":")[1];
+    if (idType !== entity.type) {
+      throw new Error(`${entity.id} ID type ${idType} does not match entity type ${entity.type}`);
+    }
+
+    const route = routeForEntity(entity);
+    const existingRoute = routes.get(route);
+    if (existingRoute) throw new Error(`Duplicate entity route ${route} for ${existingRoute} and ${entity.id}`);
+    routes.set(route, entity.id);
+
+    const identifier = identifierPath(entity);
+    const existingIdentifier = identifiers.get(identifier);
+    if (existingIdentifier) {
+      throw new Error(`Duplicate entity identifier ${identifier} for ${existingIdentifier} and ${entity.id}`);
+    }
+    identifiers.set(identifier, entity.id);
+
     if (entity.translationOf) {
       const source = byId.get(entity.translationOf);
       if (!source) throw new Error(`${entity.id} translates unknown entity ${entity.translationOf}`);
+      if (source.translationOf) {
+        throw new Error(`${entity.id} translates translated entity ${entity.translationOf}`);
+      }
       if (source.type !== entity.type) {
         throw new Error(`${entity.id} translation type ${entity.type} does not match ${source.type}`);
       }
       if (source.locale === entity.locale) {
         throw new Error(`${entity.id} translation must use a different locale from ${entity.translationOf}`);
       }
+      const locales = translationLocales.get(entity.translationOf) || new Set<Locale>();
+      if (locales.has(entity.locale)) {
+        throw new Error(`${entity.translationOf} has multiple ${entity.locale} translations`);
+      }
+      locales.add(entity.locale);
+      translationLocales.set(entity.translationOf, locales);
     }
     for (const ref of collectEntityRefs(entity)) {
       if (!byId.has(ref)) throw new Error(`${entity.id} references unknown entity ${ref}`);

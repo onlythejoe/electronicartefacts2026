@@ -1,7 +1,13 @@
 import { z } from "zod";
 import { predicateDefinitions } from "./predicates.js";
 
-const isoDate = z.string().regex(/^\d{4}-\d{2}-\d{2}$/);
+const isIsoCalendarDate = (value: string): boolean => {
+  if (!/^\d{4}-\d{2}-\d{2}$/.test(value)) return false;
+  const date = new Date(`${value}T00:00:00.000Z`);
+  return !Number.isNaN(date.getTime()) && date.toISOString().slice(0, 10) === value;
+};
+
+const isoDate = z.string().refine(isIsoCalendarDate, "Date must be a valid ISO calendar date (YYYY-MM-DD)");
 const entityType = z.enum([
   "concept", "method", "framework", "technology", "researchField", "project", "program",
   "publication", "collection", "artefact", "timeline", "artist", "organization", "tool", "dataset", "event",
@@ -30,6 +36,37 @@ const sourceRef = z.object({
   accessedAt: isoDate.optional(),
   locator: z.string().optional(),
 });
+const versionInfo = z.object({
+  version: z.string().regex(/^\d+\.\d+\.\d+$/),
+  createdAt: isoDate,
+  publishedAt: isoDate.optional(),
+  modifiedAt: isoDate,
+  reviewedAt: isoDate.optional(),
+  supersedes: entityId.optional(),
+  changeSummary: z.string().optional(),
+}).superRefine((version, context) => {
+  if (version.createdAt > version.modifiedAt) {
+    context.addIssue({
+      code: z.ZodIssueCode.custom,
+      path: ["modifiedAt"],
+      message: "modifiedAt must be on or after createdAt",
+    });
+  }
+  if (version.publishedAt && version.createdAt > version.publishedAt) {
+    context.addIssue({
+      code: z.ZodIssueCode.custom,
+      path: ["publishedAt"],
+      message: "publishedAt must be on or after createdAt",
+    });
+  }
+  if (version.publishedAt && version.publishedAt > version.modifiedAt) {
+    context.addIssue({
+      code: z.ZodIssueCode.custom,
+      path: ["modifiedAt"],
+      message: "modifiedAt must be on or after publishedAt",
+    });
+  }
+});
 
 const baseShape = {
   id: entityId,
@@ -52,15 +89,7 @@ const baseShape = {
   status: z.enum(["concept", "research", "experimental", "prototype", "development", "production", "released", "active", "archived", "deprecated"]),
   maturity: z.enum(["concept", "research", "prototype", "experimental", "development", "production", "released", "archived", "deprecated"]),
   confidence: z.enum(["speculative", "observed", "validated", "published", "canonical"]),
-  version: z.object({
-    version: z.string().regex(/^\d+\.\d+\.\d+$/),
-    createdAt: isoDate,
-    publishedAt: isoDate.optional(),
-    modifiedAt: isoDate,
-    reviewedAt: isoDate.optional(),
-    supersedes: entityId.optional(),
-    changeSummary: z.string().optional(),
-  }),
+  version: versionInfo,
   authors: z.array(agentRef).min(1),
   contributors: z.array(agentRef).optional(),
   publisher: z.string().regex(/^ea:organization:[a-z0-9][a-z0-9-]*$/),
@@ -203,7 +232,15 @@ const event = base.extend({
 export const entityFrontmatterSchema = z.discriminatedUnion("type", [
   concept, method, framework, technology, researchField, program, project, publication,
   collection, organization, tool, dataset, event,
-]);
+]).superRefine((entity, context) => {
+  if (entity.type === "event" && entity.endDate && entity.startDate > entity.endDate) {
+    context.addIssue({
+      code: z.ZodIssueCode.custom,
+      path: ["endDate"],
+      message: "endDate must be on or after startDate",
+    });
+  }
+});
 
 export const relationSchema = z.object({
   id: z.string().regex(/^ear:[a-z0-9][a-z0-9-]*$/),
@@ -218,6 +255,14 @@ export const relationSchema = z.object({
   createdAt: isoDate,
   reviewedAt: isoDate.optional(),
   visibility: z.enum(["public", "internal"]),
+}).superRefine((relation, context) => {
+  if (relation.validFrom && relation.validTo && relation.validFrom > relation.validTo) {
+    context.addIssue({
+      code: z.ZodIssueCode.custom,
+      path: ["validTo"],
+      message: "validTo must be on or after validFrom",
+    });
+  }
 });
 
 export type ParsedEntityFrontmatter = z.infer<typeof entityFrontmatterSchema>;
