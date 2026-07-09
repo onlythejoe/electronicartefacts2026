@@ -57,7 +57,9 @@
   font-size: clamp(2.2rem, 5vw, 4.7rem);
   line-height: 0.94;
   letter-spacing: 0;
-  overflow-wrap: anywhere;
+  overflow-wrap: break-word;
+  word-break: normal;
+  hyphens: none;
   text-wrap: balance;
 }
 
@@ -83,8 +85,8 @@
   font-size: clamp(1.2rem, 2vw, 1.7rem);
   line-height: 1.06;
   letter-spacing: 0;
-  overflow-wrap: anywhere;
-  word-break: break-word;
+  overflow-wrap: break-word;
+  word-break: normal;
   hyphens: none;
 }
 

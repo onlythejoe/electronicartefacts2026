@@ -47,11 +47,11 @@
   const copy = () => isFrench()
     ? {
         title: "Mesure d'audience",
-        body: "Electronic Artefacts utilise Google Analytics uniquement si vous l'acceptez, afin de comprendre les pages consultees et d'ameliorer le site. Le refus est sans effet sur l'acces.",
+        body: "Electronic Artefacts utilise Google Analytics uniquement si vous l’acceptez, afin de comprendre les pages consultées et d’améliorer le site. Le refus est sans effet sur l’accès.",
         accept: "Accepter",
         reject: "Refuser",
-        privacy: "Politique de confidentialite",
-        settings: "Preferences de confidentialite",
+        privacy: "Politique de confidentialité",
+        settings: "Préférences de confidentialité",
       }
     : {
         title: "Audience measurement",

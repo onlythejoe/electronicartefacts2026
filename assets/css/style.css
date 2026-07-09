@@ -12992,11 +12992,16 @@ figcaption strong,
   }
 
   .site-nav a {
-    min-width: 6.5rem;
+    min-width: 6rem;
     min-height: 2.75rem;
     font-size: 0.7rem;
     line-height: 1;
     white-space: nowrap;
+  }
+
+  .site-nav {
+    mask-image: none;
+    -webkit-mask-image: none;
   }
 
   :where(.eyebrow, .card__meta, figcaption, .metric-pill span) {
@@ -13075,15 +13080,47 @@ figcaption strong,
   }
 
   .entity-breadcrumbs > span[aria-current="page"] {
-    max-width: min(18rem, 74vw);
+    flex: 0 0 100%;
+    width: 100%;
+    min-width: 0;
+    max-width: none;
     overflow: visible;
     text-overflow: clip;
     white-space: normal;
+    line-height: 1.32;
     text-wrap: pretty;
+  }
+
+  .entity-breadcrumbs {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: start;
+    overflow: visible;
   }
 }
 
 @media (max-width: 24rem) {
+  .site-nav {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    width: 100%;
+    margin-left: 0;
+    overflow: visible;
+  }
+
+  .site-nav::after {
+    display: none;
+  }
+
+  .site-nav a {
+    width: 100%;
+    min-width: 0;
+    min-height: 2.45rem;
+    padding-inline: 0.2rem;
+    font-size: 0.56rem;
+    letter-spacing: 0.04em;
+  }
+
   .capability-map {
     grid-template-columns: minmax(0, 1fr);
   }

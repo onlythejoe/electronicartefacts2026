@@ -433,11 +433,23 @@
       if (!nodes.length || !kicker || !title || !copy || !tools || !outputs) return;
 
       const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      const compactLayoutQuery = window.matchMedia("(max-width: 48rem)");
       let rafId = 0;
       let width = 1;
       let height = 1;
       let frameActive = false;
+      let compactLayout = compactLayoutQuery.matches;
       const bubbleState = [];
+
+      const resetBubbleStyles = () => {
+        nodes.forEach((node) => {
+          node.style.removeProperty("will-change");
+          node.style.removeProperty("left");
+          node.style.removeProperty("top");
+          node.style.removeProperty("width");
+          node.style.removeProperty("height");
+        });
+      };
 
       const renderTokens = (target, value) => {
         target.replaceChildren(
@@ -517,7 +529,7 @@
       };
 
       const frame = () => {
-        if (!bubbleState.length) return;
+        if (compactLayout || !bubbleState.length) return;
         const attraction = 0.02;
         const hoverScale = 1.28;
         const iterations = 5;
@@ -580,7 +592,7 @@
       };
 
       const start = () => {
-        if (frameActive || reduceMotion) return;
+        if (frameActive || reduceMotion || compactLayout) return;
         frameActive = true;
         rafId = window.requestAnimationFrame(frame);
       };
@@ -590,8 +602,10 @@
         window.cancelAnimationFrame(rafId);
       };
 
-      measure();
-      initBubbleState();
+      if (!compactLayout) {
+        measure();
+        initBubbleState();
+      }
 
       const syncFromPointer = (node) => {
         bubbleState.forEach((bubble) => {
@@ -614,6 +628,25 @@
       if (!reduceMotion) start();
 
       const resize = () => {
+        const nextCompactLayout = compactLayoutQuery.matches;
+        if (nextCompactLayout) {
+          if (!compactLayout) {
+            compactLayout = true;
+            stop();
+            bubbleState.length = 0;
+            resetBubbleStyles();
+          }
+          return;
+        }
+
+        if (compactLayout) {
+          compactLayout = false;
+          measure();
+          initBubbleState();
+          if (!reduceMotion) start();
+          return;
+        }
+
         const previousWidth = width;
         const previousHeight = height;
         measure();
@@ -635,6 +668,7 @@
       } else {
         window.addEventListener("resize", resize, { passive: true });
       }
+      compactLayoutQuery.addEventListener?.("change", resize);
     });
   };
 

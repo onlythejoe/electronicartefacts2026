@@ -7,6 +7,7 @@ import vm from "node:vm";
 const runAnalytics = async (options: {
   storedConsent?: { status: "granted" | "denied"; updatedAt: number; provider: string };
   cookie?: string;
+  locale?: "en" | "fr";
 } = {}) => {
   const source = await readFile(path.resolve("assets/js/core/analytics.js"), "utf8");
   const storage = new Map<string, string>();
@@ -14,7 +15,7 @@ const runAnalytics = async (options: {
     storage.set("ea:analytics-consent:v1", JSON.stringify(options.storedConsent));
   }
   const headChildren: Array<{ tagName: string; src?: string; async?: boolean }> = [];
-  const bodyChildren: Array<{ tagName: string; remove(): void }> = [];
+  const bodyChildren: Array<{ tagName: string; innerHTML?: string; remove(): void }> = [];
   const cookieWrites: string[] = [];
   let cookieValue = options.cookie || "";
 
@@ -34,10 +35,10 @@ const runAnalytics = async (options: {
     readyState: "complete",
     title: "Analytics Test | Electronic Artefacts",
     referrer: "",
-    documentElement: { lang: "en", scrollHeight: 2000 },
+    documentElement: { lang: options.locale || "en", scrollHeight: 2000 },
     body: {
       dataset: { page: "test-page", entryId: "ea:test" },
-      appendChild(node: { tagName: string; remove(): void }) {
+      appendChild(node: { tagName: string; innerHTML?: string; remove(): void }) {
         bodyChildren.push(node);
         return node;
       },
@@ -130,6 +131,17 @@ test("analytics runtime does not inject Google tags before consent", async () =>
 
   assert.equal(harness.headChildren.length, 1);
   assert.match(harness.headChildren[0].src || "", /googletagmanager\.com\/gtag\/js\?id=G-TEST1234/);
+});
+
+test("analytics consent banner uses readable French copy", async () => {
+  const harness = await runAnalytics({ locale: "fr" });
+  const banner = harness.bodyChildren[0];
+
+  assert.ok(banner, "a French consent banner should be shown when no choice exists");
+  assert.match(banner.innerHTML || "", /pages consultées/);
+  assert.match(banner.innerHTML || "", /d’améliorer/);
+  assert.match(banner.innerHTML || "", /Politique de confidentialité/);
+  assert.match(banner.innerHTML || "", /Préférences de confidentialité/);
 });
 
 test("analytics runtime honors stored refusal and clears accessible GA cookies", async () => {

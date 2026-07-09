@@ -20344,11 +20344,11 @@ window.EA_ANALYTICS_CONFIG = {
   const copy = () => isFrench()
     ? {
         title: "Mesure d'audience",
-        body: "Electronic Artefacts utilise Google Analytics uniquement si vous l'acceptez, afin de comprendre les pages consultees et d'ameliorer le site. Le refus est sans effet sur l'acces.",
+        body: "Electronic Artefacts utilise Google Analytics uniquement si vous l’acceptez, afin de comprendre les pages consultées et d’améliorer le site. Le refus est sans effet sur l’accès.",
         accept: "Accepter",
         reject: "Refuser",
-        privacy: "Politique de confidentialite",
-        settings: "Preferences de confidentialite",
+        privacy: "Politique de confidentialité",
+        settings: "Préférences de confidentialité",
       }
     : {
         title: "Audience measurement",
@@ -24292,11 +24292,23 @@ window.EA_ANALYTICS_CONFIG = {
       if (!nodes.length || !kicker || !title || !copy || !tools || !outputs) return;
 
       const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+      const compactLayoutQuery = window.matchMedia("(max-width: 48rem)");
       let rafId = 0;
       let width = 1;
       let height = 1;
       let frameActive = false;
+      let compactLayout = compactLayoutQuery.matches;
       const bubbleState = [];
+
+      const resetBubbleStyles = () => {
+        nodes.forEach((node) => {
+          node.style.removeProperty("will-change");
+          node.style.removeProperty("left");
+          node.style.removeProperty("top");
+          node.style.removeProperty("width");
+          node.style.removeProperty("height");
+        });
+      };
 
       const renderTokens = (target, value) => {
         target.replaceChildren(
@@ -24376,7 +24388,7 @@ window.EA_ANALYTICS_CONFIG = {
       };
 
       const frame = () => {
-        if (!bubbleState.length) return;
+        if (compactLayout || !bubbleState.length) return;
         const attraction = 0.02;
         const hoverScale = 1.28;
         const iterations = 5;
@@ -24439,7 +24451,7 @@ window.EA_ANALYTICS_CONFIG = {
       };
 
       const start = () => {
-        if (frameActive || reduceMotion) return;
+        if (frameActive || reduceMotion || compactLayout) return;
         frameActive = true;
         rafId = window.requestAnimationFrame(frame);
       };
@@ -24449,8 +24461,10 @@ window.EA_ANALYTICS_CONFIG = {
         window.cancelAnimationFrame(rafId);
       };
 
-      measure();
-      initBubbleState();
+      if (!compactLayout) {
+        measure();
+        initBubbleState();
+      }
 
       const syncFromPointer = (node) => {
         bubbleState.forEach((bubble) => {
@@ -24473,6 +24487,25 @@ window.EA_ANALYTICS_CONFIG = {
       if (!reduceMotion) start();
 
       const resize = () => {
+        const nextCompactLayout = compactLayoutQuery.matches;
+        if (nextCompactLayout) {
+          if (!compactLayout) {
+            compactLayout = true;
+            stop();
+            bubbleState.length = 0;
+            resetBubbleStyles();
+          }
+          return;
+        }
+
+        if (compactLayout) {
+          compactLayout = false;
+          measure();
+          initBubbleState();
+          if (!reduceMotion) start();
+          return;
+        }
+
         const previousWidth = width;
         const previousHeight = height;
         measure();
@@ -24494,6 +24527,7 @@ window.EA_ANALYTICS_CONFIG = {
       } else {
         window.addEventListener("resize", resize, { passive: true });
       }
+      compactLayoutQuery.addEventListener?.("change", resize);
     });
   };
 
