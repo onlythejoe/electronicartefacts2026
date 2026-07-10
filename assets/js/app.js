@@ -21340,13 +21340,21 @@ window.EA_ANALYTICS_CONFIG = {
 
   const projectButterflyBubble = (item, variant = "card") => {
     if (item?.id !== "oeil-de-meg") return "";
+    const label = document.documentElement.lang?.startsWith("fr")
+      ? "Faire battre le papillon de L’Œil de Meg"
+      : "Make the L’Œil de Meg butterfly flutter";
     return `
-      <span class="project-mark-bubble project-mark-bubble--${esc(variant)} project-mark-bubble--butterfly" aria-hidden="true">
-        <span class="project-mark-bubble__coin">
-          <img class="project-mark-bubble__picto project-mark-bubble__picto--butterfly" src="./assets/media/projects/oeil-de-meg/wing.png" alt="" loading="lazy" />
-          <img class="project-mark-bubble__picto project-mark-bubble__picto--butterfly" src="./assets/media/projects/oeil-de-meg/wing.png" alt="" loading="lazy" />
+      <button class="project-butterfly project-butterfly--${esc(variant)}" type="button" data-project-butterfly aria-label="${esc(label)}">
+        <span class="project-butterfly__stage" aria-hidden="true">
+          <span class="project-butterfly__hinge project-butterfly__hinge--left">
+            <img class="project-butterfly__wing" src="./assets/media/projects/oeil-de-meg/wing.png" alt="" loading="lazy" />
+          </span>
+          <span class="project-butterfly__body"></span>
+          <span class="project-butterfly__hinge project-butterfly__hinge--right">
+            <img class="project-butterfly__wing project-butterfly__wing--mirror" src="./assets/media/projects/oeil-de-meg/wing.png" alt="" loading="lazy" />
+          </span>
         </span>
-      </span>
+      </button>
     `;
   };
 
@@ -22416,6 +22424,9 @@ window.EA_ANALYTICS_CONFIG = {
     ].map(entityById);
     if (!lead) return "";
     const supporting = [oeilDeMeg, vaste, vestiges, forge].filter(Boolean);
+    const signalCopy = document.documentElement.lang?.startsWith("fr")
+      ? "Choisissez un système pour l’explorer directement : un signal, une destination."
+      : "Choose a system to explore it directly — one signal, one destination.";
 
     return `
       <section class="zone-card hero selected-works-panel">
@@ -22428,7 +22439,7 @@ window.EA_ANALYTICS_CONFIG = {
           <aside class="panel panel--soft selected-works-panel__info">
             <p class="card__meta">STUDIO SIGNALS</p>
             <strong>Four systems in motion.</strong>
-            <p class="card__copy">Follow the newest public release, the active runtime, the platform in formation and the R&amp;D engine that connects them.</p>
+            <p class="card__copy">${esc(signalCopy)}</p>
             ${metricRail(
               [
                 { label: "Newest", value: "Voice Capture", note: "Live open source", tone: "live", fill: 0.96 },
@@ -22438,14 +22449,14 @@ window.EA_ANALYTICS_CONFIG = {
               ],
               { limit: 4, compact: true },
             )}
-            ${linkRow(
-              { label: "Discover Voice Capture", href: "https://electronicartefacts.github.io/voice-capture-studio/", target: "_blank" },
-              [
-                vaste ? { label: "View VASTE", href: entryHrefFor(vaste) } : null,
-                vestiges ? { label: "View Vestiges", href: entryHrefFor(vestiges) } : null,
-                forge ? { label: "Open Forge", href: entryHrefFor(forge) } : null,
-              ].filter(Boolean),
-            )}
+            <div class="selected-works-panel__signal-links" aria-label="Studio systems">
+              ${[
+                { item: lead, label: "Discover Voice Capture", href: "https://electronicartefacts.github.io/voice-capture-studio/", target: "_blank" },
+                vaste ? { item: vaste, label: "View VASTE", href: entryHrefFor(vaste) } : null,
+                vestiges ? { item: vestiges, label: "View Vestiges", href: entryHrefFor(vestiges) } : null,
+                forge ? { item: forge, label: "Open Forge", href: entryHrefFor(forge) } : null,
+              ].filter(Boolean).map((action) => `<a class="metric-pill metric-pill--${esc(action.item?.status || "active")}" href="${esc(action.href)}"${action.target ? ` target="${esc(action.target)}" rel="noreferrer"` : ""}><span>${esc(action.label)}</span><strong>${esc(action.item?.title || "")}</strong></a>`).join("")}
+            </div>
           </aside>
         </div>
         <div class="selected-works-panel__grid">
@@ -25358,6 +25369,75 @@ window.EA_ANALYTICS_CONFIG = {
     });
   };
 
+  const initProjectButterflies = (root = document) => {
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+
+    root.querySelectorAll("[data-project-butterfly]").forEach((butterfly) => {
+      if (butterfly.dataset.boundProjectButterfly === "true") return;
+      const stage = butterfly.querySelector(".project-butterfly__stage");
+      const left = butterfly.querySelector(".project-butterfly__hinge--left");
+      const right = butterfly.querySelector(".project-butterfly__hinge--right");
+      if (!stage || !left || !right) return;
+      butterfly.dataset.boundProjectButterfly = "true";
+
+      const random = (min, max) => min + Math.random() * (max - min);
+      let phase = random(0, Math.PI * 2);
+      let amplitude = random(11, 17);
+      let targetAmplitude = amplitude;
+      let frequency = random(0.48, 0.72);
+      let targetFrequency = frequency;
+      let nextShift = 0;
+      let boost = 0;
+      let boostUntil = 0;
+      let last = performance.now();
+
+      const shiftCadence = (now) => {
+        if (now < nextShift) return;
+        const resting = Math.random() < 0.22;
+        targetAmplitude = resting ? random(3, 7) : random(12, 22);
+        targetFrequency = resting ? random(0.16, 0.32) : random(0.5, 1.08);
+        nextShift = now + random(resting ? 2300 : 1300, resting ? 6200 : 3900);
+      };
+
+      const flutter = () => {
+        boost = Math.max(boost, 1);
+        boostUntil = performance.now() + 900;
+        butterfly.classList.add("is-fluttering");
+        window.setTimeout(() => butterfly.classList.remove("is-fluttering"), 940);
+      };
+
+      butterfly.addEventListener("click", flutter);
+      butterfly.addEventListener("pointerenter", () => {
+        targetAmplitude = Math.max(targetAmplitude, 20);
+        targetFrequency = Math.max(targetFrequency, 1.12);
+      });
+
+      const tick = (now) => {
+        const dt = Math.min(52, now - last) / 1000;
+        last = now;
+        shiftCadence(now);
+        boost *= Math.exp(-dt / 0.56);
+        const lift = now < boostUntil ? 1 : 0;
+        amplitude += (targetAmplitude - amplitude) * (1 - Math.exp(-dt / 0.85));
+        frequency += (targetFrequency - frequency) * (1 - Math.exp(-dt / 0.9));
+        phase += Math.PI * 2 * frequency * (1 + boost * 0.78) * dt;
+
+        const flutterWave = Math.sin(phase) * amplitude * (1 + boost * 0.48);
+        const asymmetry = Math.sin(now / 720 + 1.1) * 2.4;
+        const torsion = Math.sin(now / 1040) * 4.2;
+        const bob = Math.sin(now / 820) * 1.25 - lift * 2.2;
+        const roll = Math.sin(now / 1680) * 2.6;
+
+        stage.style.transform = `translate3d(0, ${bob.toFixed(2)}px, 0) rotateZ(${roll.toFixed(2)}deg)`;
+        left.style.transform = `rotateZ(${-8 + torsion * 0.35}deg) rotateY(${(-flutterWave + asymmetry).toFixed(2)}deg) rotateX(${(torsion * 0.3).toFixed(2)}deg)`;
+        right.style.transform = `rotateZ(${8 - torsion * 0.35}deg) rotateY(${(flutterWave + asymmetry).toFixed(2)}deg) rotateX(${(-torsion * 0.3).toFixed(2)}deg)`;
+        window.requestAnimationFrame(tick);
+      };
+
+      window.requestAnimationFrame(tick);
+    });
+  };
+
   const toast = (message) => {
     let stack = document.querySelector("[data-toast-stack]");
     if (!stack) {
@@ -26024,6 +26104,7 @@ window.EA_ANALYTICS_CONFIG = {
     initIntentHeroes();
     initFilterSummaries(filterState);
     initProjectDossier();
+    initProjectButterflies();
     scheduleIdle(() => {
       initCommandPalette();
       initUXDock();
@@ -26040,6 +26121,7 @@ window.EA_ANALYTICS_CONFIG = {
   const refreshCardSurfaces = (root = document) => {
     initCardSpotlight(root);
     initQuickView(root);
+    initProjectButterflies(root);
     initTaxonomyPills(root);
     initLyricsHighlights(root);
     initProjectDossier(root);
@@ -26301,6 +26383,7 @@ window.EA_ANALYTICS_CONFIG = {
     initEngagementPanels,
     initIntentHeroes,
     initUXEnhancements,
+    initProjectButterflies,
     refreshCardSurfaces,
     syncNavigationState,
     syncPageTitle,

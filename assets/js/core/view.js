@@ -185,13 +185,21 @@
 
   const projectButterflyBubble = (item, variant = "card") => {
     if (item?.id !== "oeil-de-meg") return "";
+    const label = document.documentElement.lang?.startsWith("fr")
+      ? "Faire battre le papillon de L’Œil de Meg"
+      : "Make the L’Œil de Meg butterfly flutter";
     return `
-      <span class="project-mark-bubble project-mark-bubble--${esc(variant)} project-mark-bubble--butterfly" aria-hidden="true">
-        <span class="project-mark-bubble__coin">
-          <img class="project-mark-bubble__picto project-mark-bubble__picto--butterfly" src="./assets/media/projects/oeil-de-meg/wing.png" alt="" loading="lazy" />
-          <img class="project-mark-bubble__picto project-mark-bubble__picto--butterfly" src="./assets/media/projects/oeil-de-meg/wing.png" alt="" loading="lazy" />
+      <button class="project-butterfly project-butterfly--${esc(variant)}" type="button" data-project-butterfly aria-label="${esc(label)}">
+        <span class="project-butterfly__stage" aria-hidden="true">
+          <span class="project-butterfly__hinge project-butterfly__hinge--left">
+            <img class="project-butterfly__wing" src="./assets/media/projects/oeil-de-meg/wing.png" alt="" loading="lazy" />
+          </span>
+          <span class="project-butterfly__body"></span>
+          <span class="project-butterfly__hinge project-butterfly__hinge--right">
+            <img class="project-butterfly__wing project-butterfly__wing--mirror" src="./assets/media/projects/oeil-de-meg/wing.png" alt="" loading="lazy" />
+          </span>
         </span>
-      </span>
+      </button>
     `;
   };
 
@@ -1261,6 +1269,9 @@
     ].map(entityById);
     if (!lead) return "";
     const supporting = [oeilDeMeg, vaste, vestiges, forge].filter(Boolean);
+    const signalCopy = document.documentElement.lang?.startsWith("fr")
+      ? "Choisissez un système pour l’explorer directement : un signal, une destination."
+      : "Choose a system to explore it directly — one signal, one destination.";
 
     return `
       <section class="zone-card hero selected-works-panel">
@@ -1273,7 +1284,7 @@
           <aside class="panel panel--soft selected-works-panel__info">
             <p class="card__meta">STUDIO SIGNALS</p>
             <strong>Four systems in motion.</strong>
-            <p class="card__copy">Follow the newest public release, the active runtime, the platform in formation and the R&amp;D engine that connects them.</p>
+            <p class="card__copy">${esc(signalCopy)}</p>
             ${metricRail(
               [
                 { label: "Newest", value: "Voice Capture", note: "Live open source", tone: "live", fill: 0.96 },
@@ -1283,14 +1294,14 @@
               ],
               { limit: 4, compact: true },
             )}
-            ${linkRow(
-              { label: "Discover Voice Capture", href: "https://electronicartefacts.github.io/voice-capture-studio/", target: "_blank" },
-              [
-                vaste ? { label: "View VASTE", href: entryHrefFor(vaste) } : null,
-                vestiges ? { label: "View Vestiges", href: entryHrefFor(vestiges) } : null,
-                forge ? { label: "Open Forge", href: entryHrefFor(forge) } : null,
-              ].filter(Boolean),
-            )}
+            <div class="selected-works-panel__signal-links" aria-label="Studio systems">
+              ${[
+                { item: lead, label: "Discover Voice Capture", href: "https://electronicartefacts.github.io/voice-capture-studio/", target: "_blank" },
+                vaste ? { item: vaste, label: "View VASTE", href: entryHrefFor(vaste) } : null,
+                vestiges ? { item: vestiges, label: "View Vestiges", href: entryHrefFor(vestiges) } : null,
+                forge ? { item: forge, label: "Open Forge", href: entryHrefFor(forge) } : null,
+              ].filter(Boolean).map((action) => `<a class="metric-pill metric-pill--${esc(action.item?.status || "active")}" href="${esc(action.href)}"${action.target ? ` target="${esc(action.target)}" rel="noreferrer"` : ""}><span>${esc(action.label)}</span><strong>${esc(action.item?.title || "")}</strong></a>`).join("")}
+            </div>
           </aside>
         </div>
         <div class="selected-works-panel__grid">

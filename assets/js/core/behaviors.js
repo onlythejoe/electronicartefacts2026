@@ -1444,6 +1444,75 @@
     });
   };
 
+  const initProjectButterflies = (root = document) => {
+    if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
+
+    root.querySelectorAll("[data-project-butterfly]").forEach((butterfly) => {
+      if (butterfly.dataset.boundProjectButterfly === "true") return;
+      const stage = butterfly.querySelector(".project-butterfly__stage");
+      const left = butterfly.querySelector(".project-butterfly__hinge--left");
+      const right = butterfly.querySelector(".project-butterfly__hinge--right");
+      if (!stage || !left || !right) return;
+      butterfly.dataset.boundProjectButterfly = "true";
+
+      const random = (min, max) => min + Math.random() * (max - min);
+      let phase = random(0, Math.PI * 2);
+      let amplitude = random(11, 17);
+      let targetAmplitude = amplitude;
+      let frequency = random(0.48, 0.72);
+      let targetFrequency = frequency;
+      let nextShift = 0;
+      let boost = 0;
+      let boostUntil = 0;
+      let last = performance.now();
+
+      const shiftCadence = (now) => {
+        if (now < nextShift) return;
+        const resting = Math.random() < 0.22;
+        targetAmplitude = resting ? random(3, 7) : random(12, 22);
+        targetFrequency = resting ? random(0.16, 0.32) : random(0.5, 1.08);
+        nextShift = now + random(resting ? 2300 : 1300, resting ? 6200 : 3900);
+      };
+
+      const flutter = () => {
+        boost = Math.max(boost, 1);
+        boostUntil = performance.now() + 900;
+        butterfly.classList.add("is-fluttering");
+        window.setTimeout(() => butterfly.classList.remove("is-fluttering"), 940);
+      };
+
+      butterfly.addEventListener("click", flutter);
+      butterfly.addEventListener("pointerenter", () => {
+        targetAmplitude = Math.max(targetAmplitude, 20);
+        targetFrequency = Math.max(targetFrequency, 1.12);
+      });
+
+      const tick = (now) => {
+        const dt = Math.min(52, now - last) / 1000;
+        last = now;
+        shiftCadence(now);
+        boost *= Math.exp(-dt / 0.56);
+        const lift = now < boostUntil ? 1 : 0;
+        amplitude += (targetAmplitude - amplitude) * (1 - Math.exp(-dt / 0.85));
+        frequency += (targetFrequency - frequency) * (1 - Math.exp(-dt / 0.9));
+        phase += Math.PI * 2 * frequency * (1 + boost * 0.78) * dt;
+
+        const flutterWave = Math.sin(phase) * amplitude * (1 + boost * 0.48);
+        const asymmetry = Math.sin(now / 720 + 1.1) * 2.4;
+        const torsion = Math.sin(now / 1040) * 4.2;
+        const bob = Math.sin(now / 820) * 1.25 - lift * 2.2;
+        const roll = Math.sin(now / 1680) * 2.6;
+
+        stage.style.transform = `translate3d(0, ${bob.toFixed(2)}px, 0) rotateZ(${roll.toFixed(2)}deg)`;
+        left.style.transform = `rotateZ(${-8 + torsion * 0.35}deg) rotateY(${(-flutterWave + asymmetry).toFixed(2)}deg) rotateX(${(torsion * 0.3).toFixed(2)}deg)`;
+        right.style.transform = `rotateZ(${8 - torsion * 0.35}deg) rotateY(${(flutterWave + asymmetry).toFixed(2)}deg) rotateX(${(-torsion * 0.3).toFixed(2)}deg)`;
+        window.requestAnimationFrame(tick);
+      };
+
+      window.requestAnimationFrame(tick);
+    });
+  };
+
   const toast = (message) => {
     let stack = document.querySelector("[data-toast-stack]");
     if (!stack) {
@@ -2110,6 +2179,7 @@
     initIntentHeroes();
     initFilterSummaries(filterState);
     initProjectDossier();
+    initProjectButterflies();
     scheduleIdle(() => {
       initCommandPalette();
       initUXDock();
@@ -2126,6 +2196,7 @@
   const refreshCardSurfaces = (root = document) => {
     initCardSpotlight(root);
     initQuickView(root);
+    initProjectButterflies(root);
     initTaxonomyPills(root);
     initLyricsHighlights(root);
     initProjectDossier(root);
@@ -2387,6 +2458,7 @@
     initEngagementPanels,
     initIntentHeroes,
     initUXEnhancements,
+    initProjectButterflies,
     refreshCardSurfaces,
     syncNavigationState,
     syncPageTitle,
