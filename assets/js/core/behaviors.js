@@ -2186,10 +2186,25 @@
       });
 
       const movableLayers = [...scope.querySelectorAll(movableLayerSelector)].filter((layer) => stage.contains(layer));
+      let selectedMovableLayer = null;
+      const selectMovableLayer = (layer) => {
+        if (selectedMovableLayer === layer) return;
+        if (selectedMovableLayer) {
+          selectedMovableLayer.classList.remove("is-hero-selected");
+          delete selectedMovableLayer.dataset.heroSelected;
+        }
+        selectedMovableLayer = layer;
+        layer.classList.add("is-hero-selected");
+        layer.dataset.heroSelected = "true";
+      };
       movableLayers.forEach((layer) => {
         if (layer.dataset.heroMovableBound === "true") return;
         layer.dataset.heroMovableBound = "true";
         layer.dataset.heroMovable = "true";
+        layer.draggable = false;
+        layer.querySelectorAll("img").forEach((image) => {
+          image.draggable = false;
+        });
 
         let drag = null;
         let pendingPress = null;
@@ -2207,6 +2222,7 @@
             startY: currentDragY(),
           };
           pendingPress = null;
+          selectMovableLayer(layer);
           scope.classList.add("is-hero-dragging");
           layer.classList.add("is-hero-dragging");
           return true;
@@ -2265,13 +2281,20 @@
 
         layer.addEventListener("pointerup", finishDrag);
         layer.addEventListener("pointercancel", finishDrag);
+        layer.addEventListener("dragstart", (event) => event.preventDefault());
         layer.addEventListener("contextmenu", (event) => {
           if (drag) event.preventDefault();
         });
         layer.addEventListener("click", (event) => {
-          if (performance.now() > suppressClickUntil) return;
+          if (performance.now() <= suppressClickUntil) {
+            event.preventDefault();
+            event.stopPropagation();
+            return;
+          }
+          if (selectedMovableLayer === layer) return;
           event.preventDefault();
           event.stopPropagation();
+          selectMovableLayer(layer);
         }, true);
       });
 
@@ -2359,6 +2382,7 @@
       });
       scope.addEventListener("pointermove", (event) => {
         scope.classList.add("is-intent-active");
+        if (scope.classList.contains("is-hero-dragging")) return;
         updateTargetFromPoint(event.clientX, event.clientY);
         if (!(event.target instanceof Element)) return;
         const layer = event.target.closest(activeLayerSelector);
