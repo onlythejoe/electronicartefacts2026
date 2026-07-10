@@ -14023,3 +14023,163 @@ figcaption strong,
     transform: none !important;
   }
 }
+
+/* Oeil de Meg detail page: deliberate light reading surface. */
+body:has(.detail-hero[data-entry-id="oeil-de-meg"]) {
+  --text: #1b1a18;
+  --muted: rgba(27, 26, 24, 0.66);
+  --accent: #765b3e;
+  --accent-soft: rgba(118, 91, 62, 0.12);
+  --border: rgba(50, 40, 31, 0.14);
+  --border-strong: rgba(50, 40, 31, 0.24);
+  --shadow-soft: 0 16px 30px rgba(75, 56, 38, 0.12);
+  --shadow: 0 28px 70px rgba(75, 56, 38, 0.16);
+}
+
+body:has(.detail-hero[data-entry-id="oeil-de-meg"]) .site-main {
+  gap: clamp(1.8rem, 3.8vw, 3.2rem);
+}
+
+body:has(.detail-hero[data-entry-id="oeil-de-meg"]) .site-main :is(
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  p,
+  li,
+  dt,
+  dd,
+  strong,
+  em,
+  span,
+  a,
+  button,
+  .card__title,
+  .card__copy,
+  .card__meta,
+  .lede,
+  .eyebrow
+) {
+  color: #1b1a18;
+  text-shadow: none;
+}
+
+body:has(.detail-hero[data-entry-id="oeil-de-meg"]) .site-main :is(
+  .zone-card,
+  .panel,
+  .project-card,
+  .detail-hero,
+  .project-architecture__hero
+) {
+  border-color: rgba(50, 40, 31, 0.13);
+  background:
+    linear-gradient(145deg, rgba(255, 255, 255, 0.82), rgba(248, 242, 234, 0.72)),
+    rgba(255, 255, 255, 0.68);
+  box-shadow: 0 18px 42px rgba(75, 56, 38, 0.1);
+}
+
+body:has(.detail-hero[data-entry-id="oeil-de-meg"]) .site-main :is(
+  .panel--soft,
+  .project-architecture__hero,
+  .project-gallery__item
+) {
+  background:
+    linear-gradient(145deg, rgba(255, 255, 255, 0.78), rgba(245, 237, 227, 0.68)),
+    rgba(255, 255, 255, 0.62);
+}
+
+body:has(.detail-hero[data-entry-id="oeil-de-meg"]) .site-main :is(
+  .button,
+  .tag,
+  .chip,
+  .status-badge,
+  .entity-badge,
+  .metadata-row,
+  .relation-item
+) {
+  border-color: rgba(50, 40, 31, 0.16);
+  background: rgba(255, 255, 255, 0.68);
+  color: #1b1a18;
+}
+
+body:has(.detail-hero[data-entry-id="oeil-de-meg"]) .site-main :is(
+  .button--primary,
+  .button--secondary,
+  .tag:hover,
+  .tag:focus-visible,
+  .button:hover,
+  .button:focus-visible
+) {
+  border-color: rgba(50, 40, 31, 0.28);
+  background: #e8dac9;
+  color: #1b1a18;
+}
+
+body:has(.detail-hero[data-entry-id="oeil-de-meg"]) .detail-hero__visual figcaption,
+body:has(.detail-hero[data-entry-id="oeil-de-meg"]) .project-gallery figcaption {
+  border-color: rgba(50, 40, 31, 0.16);
+  background: rgba(255, 250, 243, 0.86);
+  color: #1b1a18;
+}
+
+body:has(.detail-hero[data-entry-id="oeil-de-meg"]) .shell-header.zone-card {
+  border-color: rgba(50, 40, 31, 0.16);
+  background:
+    linear-gradient(180deg, rgba(255, 252, 247, 0.94), rgba(239, 229, 217, 0.9)),
+    rgba(255, 250, 243, 0.9);
+  box-shadow: 0 18px 42px rgba(75, 56, 38, 0.16);
+}
+
+body:has(.detail-hero[data-entry-id="oeil-de-meg"]) .brand-text strong,
+body:has(.detail-hero[data-entry-id="oeil-de-meg"]) .brand-text > span,
+body:has(.detail-hero[data-entry-id="oeil-de-meg"]) .site-nav a,
+body:has(.detail-hero[data-entry-id="oeil-de-meg"]) .language-switcher {
+  color: #1b1a18;
+}
+
+body:has(.detail-hero[data-entry-id="oeil-de-meg"]) .site-nav a {
+  border-color: rgba(50, 40, 31, 0.12);
+  background: rgba(255, 255, 255, 0.58);
+}
+
+body:has(.detail-hero[data-entry-id="oeil-de-meg"]) .site-nav a[aria-current="page"] {
+  border-color: rgba(50, 40, 31, 0.24);
+  background: #e3d4c2;
+  color: #1b1a18;
+}
+
+body:has(.detail-hero[data-entry-id="oeil-de-meg"]) .detail-grid,
+body:has(.detail-hero[data-entry-id="oeil-de-meg"]) .project-visual-section {
+  row-gap: clamp(1.25rem, 2.8vw, 2rem);
+}
+
+body:has(.detail-hero[data-entry-id="oeil-de-meg"]) .knowledge-panel > .stack {
+  gap: clamp(0.9rem, 2vw, 1.35rem);
+}
+
+body:has(.detail-hero[data-entry-id="oeil-de-meg"]) .project-architecture__grid {
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 14rem), 1fr));
+  gap: clamp(0.9rem, 2vw, 1.25rem);
+}
+
+body:has(.detail-hero[data-entry-id="oeil-de-meg"]) .project-architecture > .tag-cluster {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 9rem), 1fr));
+  gap: 0.7rem;
+}
+
+body:has(.detail-hero[data-entry-id="oeil-de-meg"]) .project-architecture > .tag-cluster > * {
+  justify-content: center;
+  width: 100%;
+}
+
+body:has(.detail-hero[data-entry-id="oeil-de-meg"]) .relation-mosaic {
+  grid-template-columns: repeat(auto-fit, minmax(min(100%, 13.5rem), 1fr));
+  gap: clamp(0.9rem, 2vw, 1.25rem);
+}
+
+body:has(.detail-hero[data-entry-id="oeil-de-meg"]) .relation-mosaic > .panel {
+  width: 100%;
+  max-width: none;
+}
