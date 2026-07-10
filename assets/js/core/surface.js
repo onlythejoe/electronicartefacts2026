@@ -56,7 +56,7 @@
                 ${actions
                   .map(
                     (action, index) =>
-                      `<a class="button ${index === 0 ? "button--primary" : "button--secondary"}" href="${esc(action.href)}"${action.target ? ` target="${esc(action.target)}" rel="noreferrer"` : ""}>${esc(action.label)}</a>`,
+                      `<a class="button ${index === 0 ? "button--primary" : "button--secondary"}" href="${esc(action.href)}"${action.target ? ` target="${esc(action.target)}" rel="noreferrer"` : ""}>${action.icon ? `<span class="graph-surface__action-icon" aria-hidden="true">${esc(action.icon)}</span>` : ""}<span class="graph-surface__action-label">${esc(action.label)}</span></a>`,
                   )
                   .join("")}
               </div>
@@ -711,9 +711,9 @@
         },
       ],
       actions: [
-        { label: "Search", href: "./search.html" },
-        { label: "Projects", href: "./projects.html" },
-        { label: "Knowledge", href: "./knowledge/" },
+        { label: "Search", icon: "⌕", href: "./search.html" },
+        { label: "Projects", icon: "◈", href: "./projects.html" },
+        { label: "Knowledge", icon: "✦", href: "./knowledge/" },
       ],
     });
   };

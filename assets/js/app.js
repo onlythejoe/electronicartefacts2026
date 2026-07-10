@@ -21347,7 +21347,6 @@ window.EA_ANALYTICS_CONFIG = {
           <span class="project-butterfly__hinge project-butterfly__hinge--left">
             <img class="project-butterfly__wing project-butterfly__wing--left" src="./assets/media/projects/oeil-de-meg/wing.png" alt="" loading="lazy" />
           </span>
-          <span class="project-butterfly__body"></span>
           <span class="project-butterfly__hinge project-butterfly__hinge--right">
             <img class="project-butterfly__wing project-butterfly__wing--right" src="./assets/media/projects/oeil-de-meg/wing.png" alt="" loading="lazy" />
           </span>
@@ -22649,7 +22648,7 @@ window.EA_ANALYTICS_CONFIG = {
                 ${actions
                   .map(
                     (action, index) =>
-                      `<a class="button ${index === 0 ? "button--primary" : "button--secondary"}" href="${esc(action.href)}"${action.target ? ` target="${esc(action.target)}" rel="noreferrer"` : ""}>${esc(action.label)}</a>`,
+                      `<a class="button ${index === 0 ? "button--primary" : "button--secondary"}" href="${esc(action.href)}"${action.target ? ` target="${esc(action.target)}" rel="noreferrer"` : ""}>${action.icon ? `<span class="graph-surface__action-icon" aria-hidden="true">${esc(action.icon)}</span>` : ""}<span class="graph-surface__action-label">${esc(action.label)}</span></a>`,
                   )
                   .join("")}
               </div>
@@ -23304,9 +23303,9 @@ window.EA_ANALYTICS_CONFIG = {
         },
       ],
       actions: [
-        { label: "Search", href: "./search.html" },
-        { label: "Projects", href: "./projects.html" },
-        { label: "Knowledge", href: "./knowledge/" },
+        { label: "Search", icon: "⌕", href: "./search.html" },
+        { label: "Projects", icon: "◈", href: "./projects.html" },
+        { label: "Knowledge", icon: "✦", href: "./knowledge/" },
       ],
     });
   };

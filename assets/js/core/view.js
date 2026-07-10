@@ -194,7 +194,6 @@
           <span class="project-butterfly__hinge project-butterfly__hinge--left">
             <img class="project-butterfly__wing project-butterfly__wing--left" src="./assets/media/projects/oeil-de-meg/wing.png" alt="" loading="lazy" />
           </span>
-          <span class="project-butterfly__body"></span>
           <span class="project-butterfly__hinge project-butterfly__hinge--right">
             <img class="project-butterfly__wing project-butterfly__wing--right" src="./assets/media/projects/oeil-de-meg/wing.png" alt="" loading="lazy" />
           </span>

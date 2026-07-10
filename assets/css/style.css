@@ -6107,6 +6107,14 @@ body[data-entry-id="vestiges"] .project-process__marker {
   z-index: 1;
 }
 
+.graph-surface__action-icon {
+  display: inline-grid;
+  place-items: center;
+  flex: 0 0 auto;
+  font-size: 1.15em;
+  line-height: 1;
+}
+
 .graph-surface__stage {
   position: relative;
   display: grid;
@@ -13920,45 +13928,6 @@ figcaption strong,
   transform: scaleX(-1);
 }
 
-.project-butterfly__body {
-  position: absolute;
-  left: 50%;
-  bottom: 0.14rem;
-  z-index: 1;
-  width: 0.19rem;
-  height: 1.12rem;
-  border-radius: 999px;
-  background: linear-gradient(180deg, #6d5545, #211813 78%);
-  box-shadow: 0 0.12rem 0.22rem rgba(41, 30, 24, 0.25);
-  transform: translateX(-50%) rotate(8deg);
-}
-
-.project-butterfly__body::before,
-.project-butterfly__body::after {
-  content: "";
-  position: absolute;
-  top: -0.34rem;
-  width: 0.4rem;
-  height: 0.52rem;
-  border-top: 1px solid rgba(54, 39, 30, 0.88);
-}
-
-.project-butterfly__body::before {
-  right: 52%;
-  border-left: 1px solid rgba(54, 39, 30, 0.88);
-  border-radius: 0.45rem 0 0;
-  transform: rotate(-18deg);
-  transform-origin: 100% 100%;
-}
-
-.project-butterfly__body::after {
-  left: 52%;
-  border-right: 1px solid rgba(54, 39, 30, 0.88);
-  border-radius: 0 0.45rem 0 0;
-  transform: rotate(18deg);
-  transform-origin: 0 100%;
-}
-
 .project-butterfly--hero {
   top: 0;
   right: 0;
@@ -14021,6 +13990,59 @@ figcaption strong,
   .project-butterfly__stage,
   .project-butterfly__hinge {
     transform: none !important;
+  }
+}
+
+/* Mobile reading refinements from the public review pass. */
+@media (max-width: 48rem) {
+  .research-atlas__meta-row .status-badge {
+    min-height: 1.8rem;
+    padding: 0.34rem 0.58rem;
+    font-size: 0.58rem;
+    letter-spacing: 0.065em;
+  }
+
+  body[data-page="home"] .intent-hero__chips {
+    mask-image: linear-gradient(90deg, transparent 0, #000 1.1rem, #000 calc(100% - 1.1rem), transparent 100%);
+    -webkit-mask-image: linear-gradient(90deg, transparent 0, #000 1.1rem, #000 calc(100% - 1.1rem), transparent 100%);
+    padding-inline: 0.85rem;
+  }
+
+  .graph-surface--home .graph-surface__content > .button-row {
+    justify-content: center;
+    gap: 0.9rem;
+  }
+
+  .graph-surface--home .graph-surface__content > .button-row .button {
+    display: inline-grid;
+    place-items: center;
+    width: 3.7rem;
+    min-width: 3.7rem;
+    height: 3.7rem;
+    min-height: 3.7rem;
+    padding: 0.35rem;
+    border-radius: 50%;
+  }
+
+  .graph-surface--home .graph-surface__content > .button-row .graph-surface__action-icon {
+    font-size: 1.35rem;
+  }
+
+  .graph-surface--home .graph-surface__content > .button-row .graph-surface__action-label {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+  }
+
+  .signature-banner--oreth {
+    min-height: clamp(40rem, 126vw, 52rem);
+  }
+
+  .signature-banner--oreth .signature-banner__media {
+    min-height: clamp(25rem, 86vw, 35rem);
   }
 }
 

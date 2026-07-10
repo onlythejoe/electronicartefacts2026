@@ -15,7 +15,8 @@ test("the Oeil de Meg butterfly keeps its wing roots inward and is reused across
   assert.match(styles, /\.project-butterfly__wing--left\s*\{\s*transform:\s*scaleX\(-1\)/);
   assert.doesNotMatch(styles, /\.project-butterfly__wing--right\s*\{[^}]*scaleX\(-1\)/);
   assert.match(styles, /\.project-butterfly__wing\s*\{[^}]*z-index:\s*5/);
-  assert.match(styles, /\.project-butterfly__body\s*\{[^}]*z-index:\s*1/);
+  assert.doesNotMatch(view, /project-butterfly__body/);
+  assert.doesNotMatch(styles, /project-butterfly__body/);
   assert.match(styles, /body:has\(\.detail-hero\[data-entry-id="oeil-de-meg"\]\)/);
   assert.match(styles, /\.detail-hero\[data-entry-id="oeil-de-meg"\][\s\S]*object-fit:\s*contain/);
   assert.match(main, /class="stack relation-mosaic"/);
