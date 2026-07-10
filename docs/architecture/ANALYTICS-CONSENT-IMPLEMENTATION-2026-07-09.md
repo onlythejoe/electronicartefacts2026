@@ -58,13 +58,17 @@ Custom Electronic Artefacts events:
 - `ea_filter_change`: taxonomy, search and moodboard filters
 - `ea_graph_node_select`: graph-surface and project-graph node selections
 - `ea_contact_intent`: internal links toward the contact page
+- `ea_contact_discovery_start`: first local interaction that opens the contact brief, with the inferred pathway and signal count only
+- `ea_contact_pathway_select`: manual change of the proposed collaboration pathway
+- `ea_contact_brief_ready`: contact details become valid, with completion counts only
+- `ea_contact_brief_copy`: successful local brief copy, with completion counts only
 - `ea_language_switch`: language-menu choices
 - `ea_privacy_preferences`: cookie-preference panel opens
 - `ea_command_search`: command-palette searches
 - `ea_share_intent`: share-button clicks before the browser share/copy operation resolves
 - `ea_ui_action`: small UI actions that do not fit a recommended event
 
-Search terms and labels are trimmed, length-limited and pass through simple redaction for obvious email addresses and phone numbers before being sent. The implementation does not intentionally send message bodies, account identifiers, ad user data or ad personalization signals.
+Search terms and labels are trimmed, length-limited and pass through simple redaction for obvious email addresses and phone numbers before being sent. Contact-brief analytics deliberately contain only pathway and completion counts: never the intent text, answers, name, email address, organisation or copied brief. The implementation does not intentionally send message bodies, account identifiers, ad user data or ad personalization signals.
 
 Suggested GA4 custom dimensions:
 
@@ -74,6 +78,7 @@ Suggested GA4 custom dimensions:
 - Event scope: `filter_key`, `filter_value`, `filter_scope`
 - Event scope: `graph_type`, `node_label`, `node_title`
 - Event scope: `percent_scrolled`, `active_time_seconds`, `section_label`
+- Event scope: `contact_pathway`, `answered_question_count`, `detected_signal_count`
 
 ## Compliance Notes
 

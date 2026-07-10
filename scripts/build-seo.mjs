@@ -5,7 +5,7 @@ import { fileURLToPath } from "node:url";
 const rootDir = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const origin = "https://electronicartefacts.com";
 const siteDescription = "Electronic Artefacts is an independent creative technology studio for complex digital products, knowledge systems, proprietary software and research-led cultural work.";
-const siteUpdatedAt = "2026-07-09";
+const siteUpdatedAt = "2026-07-10";
 const socialImage = `${origin}/assets/media/projects/electronic-artefacts/electronic-artefacts-search.jpg`;
 const logoImage = `${origin}/assets/media/projects/electronic-artefacts/electronic-artefacts-logo.jpg`;
 const organizationId = `${origin}/id/organization/electronic-artefacts/`;

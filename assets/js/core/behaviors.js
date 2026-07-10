@@ -15,6 +15,7 @@
     }
     window.setTimeout(callback, 0);
   };
+  const trackAnalytics = (eventName, params) => window.EA_ANALYTICS?.track?.(eventName, params);
 
   const initLanguageSwitcher = async () => {
     const root = document.querySelector("[data-language-switcher]");
@@ -1814,7 +1815,7 @@
       Investment: ["investor", "investment", "funding", "fund", "grant"],
     };
 
-    const state = { intent: "", pathway: "build", tags: [], answers: {} };
+    const state = { intent: "", pathway: "build", tags: [], answers: {}, started: false, ready: false };
     const intent = root.querySelector("[data-contact-intent]");
     const workspace = root.querySelector("[data-contact-workspace]");
     const status = root.querySelector("[data-contact-status]");
@@ -1855,16 +1856,16 @@
 
     const renderPathways = () => {
       pathwayTray.innerHTML = Object.entries(pathways)
-        .map(([key, config]) => `<button type="button" class="contact-pathway${state.pathway === key ? " is-active" : ""}" data-contact-pathway="${esc(key)}" aria-pressed="${state.pathway === key ? "true" : "false"}">${esc(config.label)}</button>`)
+        .map(([key, config]) => `<button type="button" class="contact-pathway${state.pathway === key ? " is-active" : ""}" data-contact-pathway="${esc(key)}" aria-pressed="${state.pathway === key ? "true" : "false"}">${esc(translate(config.label))}</button>`)
         .join("");
-      pathwayTitle.textContent = pathways[state.pathway].label;
-      pathwayCopy.textContent = pathways[state.pathway].copy;
+      pathwayTitle.textContent = translate(pathways[state.pathway].label);
+      pathwayCopy.textContent = translate(pathways[state.pathway].copy);
     };
 
     const renderTags = () => {
       tagTray.innerHTML = state.tags.length
         ? state.tags.map((tag) => `<button type="button" class="contact-detected-tag" data-contact-remove-tag="${esc(tag)}" aria-label="Remove ${esc(tag)}"><span>✓</span>${esc(tag)}<b aria-hidden="true">×</b></button>`).join("")
-        : `<p class="card__copy">No specific signals detected yet. Add a little more context or create a tag.</p>`;
+        : `<p class="card__copy">${esc(translate("No specific signals detected yet. Add a little more context or create a tag."))}</p>`;
     };
 
     const renderQuestions = () => {
@@ -1873,9 +1874,9 @@
         .map(([key, label, type, options]) => {
           const value = state.answers[key] || "";
           if (type === "select") {
-            return `<label class="contact-question"><span>${esc(label)}</span><select data-contact-answer="${esc(key)}"><option value="">Select an option</option>${options.map((option) => `<option value="${esc(option)}"${value === option ? " selected" : ""}>${esc(option)}</option>`).join("")}</select></label>`;
+            return `<label class="contact-question"><span>${esc(translate(label))}</span><select data-contact-answer="${esc(key)}"><option value="">${esc(translate("Select an option"))}</option>${options.map((option) => `<option value="${esc(option)}"${value === option ? " selected" : ""}>${esc(translate(option))}</option>`).join("")}</select></label>`;
           }
-          return `<label class="contact-question"><span>${esc(label)}</span><input type="text" data-contact-answer="${esc(key)}" value="${esc(value)}" placeholder="${esc(options)}" /></label>`;
+          return `<label class="contact-question"><span>${esc(translate(label))}</span><input type="text" data-contact-answer="${esc(key)}" value="${esc(value)}" placeholder="${esc(translate(options))}" /></label>`;
         })
         .join("");
     };
@@ -1903,15 +1904,26 @@
       const config = pathways[state.pathway];
       const answered = config.questions.filter(([key]) => state.answers[key]).length;
       const rows = [
-        ["Pathway", config.label],
-        ["Intent", state.intent],
-        ["Signals", state.tags.join(", ") || "To be clarified"],
-        ...config.questions.filter(([key]) => state.answers[key]).map(([key, label]) => [label, state.answers[key]]),
+        [translate("Pathway"), translate(config.label)],
+        [translate("Intent"), state.intent],
+        [translate("Signals"), state.tags.join(", ") || translate("To be clarified")],
+        ...config.questions.filter(([key]) => state.answers[key]).map(([key, label]) => [translate(label), state.answers[key]]),
       ];
       summary.innerHTML = rows.map(([label, value]) => `<div><dt>${esc(label)}</dt><dd>${esc(value)}</dd></div>`).join("");
-      completeness.textContent = answered === config.questions.length ? "Brief ready" : `${answered}/${config.questions.length} questions answered`;
+      completeness.textContent = answered === config.questions.length
+        ? translate("Brief ready")
+        : isFrench() ? `${answered}/${config.questions.length} questions renseignées` : `${answered}/${config.questions.length} questions answered`;
       const subject = encodeURIComponent(`[${config.label}] ${state.intent.slice(0, 70) || "New discovery brief"}`);
       const contactValid = Boolean(nameInput.value.trim()) && /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emailInput.value.trim());
+      if (contactValid && !state.ready) {
+        state.ready = true;
+        trackAnalytics("ea_contact_brief_ready", {
+          contact_pathway: state.pathway,
+          answered_question_count: answered,
+          detected_signal_count: state.tags.length,
+        });
+      }
+      if (!contactValid) state.ready = false;
       submit.href = contactValid
         ? `mailto:electronic.artefacts@gmail.com?subject=${subject}&body=${encodeURIComponent(briefText())}`
         : "#contact-identity-title";
@@ -1931,13 +1943,22 @@
       state.intent = intent.value.trim();
       if (state.intent.length < 3) {
         workspace.hidden = true;
-        status.textContent = "Start with a sentence. No formal brief required.";
+        status.textContent = translate("Start with a sentence. No formal brief required.");
         return;
       }
       state.pathway = detectPathway(state.intent);
       state.tags = detectTags(state.intent);
+      if (!state.started) {
+        state.started = true;
+        trackAnalytics("ea_contact_discovery_start", {
+          contact_pathway: state.pathway,
+          detected_signal_count: state.tags.length,
+        });
+      }
       workspace.hidden = false;
-      status.textContent = `A likely pathway and ${state.tags.length} signals were identified locally.`;
+      status.textContent = isFrench()
+        ? `Un parcours probable et ${state.tags.length} signaux ont été identifiés localement.`
+        : `A likely pathway and ${state.tags.length} signals were identified locally.`;
       refresh({ resetAnswers: true });
     };
 
@@ -1955,6 +1976,7 @@
       const button = event.target.closest("[data-contact-pathway]");
       if (!button) return;
       state.pathway = button.getAttribute("data-contact-pathway");
+      trackAnalytics("ea_contact_pathway_select", { contact_pathway: state.pathway });
       refresh({ resetAnswers: true });
     });
     tagTray.addEventListener("click", (event) => {
@@ -1985,19 +2007,31 @@
     });
     [nameInput, emailInput, organizationInput].forEach((field) => field.addEventListener("input", renderSummary));
     submit.addEventListener("click", (event) => {
-      if (submit.getAttribute("aria-disabled") !== "true") return;
-      event.preventDefault();
-      status.textContent = "Add your name and a valid email address before preparing the message.";
-      (!nameInput.value.trim() ? nameInput : emailInput).focus();
+      if (submit.getAttribute("aria-disabled") === "true") {
+        event.preventDefault();
+        status.textContent = translate("Add your name and a valid email address before preparing the message.");
+        (!nameInput.value.trim() ? nameInput : emailInput).focus();
+        return;
+      }
+      trackAnalytics("generate_lead", {
+        method: "contact_brief_email",
+        contact_pathway: state.pathway,
+        answered_question_count: pathways[state.pathway].questions.filter(([key]) => state.answers[key]).length,
+        detected_signal_count: state.tags.length,
+      });
     });
     root.querySelector("[data-contact-copy]")?.addEventListener("click", async (event) => {
       const button = event.currentTarget;
       const original = button.textContent;
       try {
         await navigator.clipboard.writeText(briefText());
-        button.textContent = "Brief copied";
+        button.textContent = translate("Brief copied");
+        trackAnalytics("ea_contact_brief_copy", {
+          contact_pathway: state.pathway,
+          answered_question_count: pathways[state.pathway].questions.filter(([key]) => state.answers[key]).length,
+        });
       } catch {
-        button.textContent = "Copy unavailable";
+        button.textContent = translate("Copy unavailable");
       }
       window.setTimeout(() => { button.textContent = original; }, 1600);
     });

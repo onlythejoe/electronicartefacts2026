@@ -245,6 +245,7 @@
 
   const trackAnchorClick = (anchor) => {
     if (!anchor?.href) return;
+    if (anchor.matches("[data-analytics-ignore]")) return;
     const href = anchor.getAttribute("href") || "";
     const label = elementText(anchor);
     const location = elementLocation(anchor);
@@ -469,7 +470,9 @@
         return;
       }
       const button = event.target?.closest?.("button, [role='button']");
-      if (button) trackButtonClick(button);
+      if (!button) return;
+      if (button.matches("[data-analytics-preferences]")) showBanner();
+      trackButtonClick(button);
     });
 
     document.addEventListener("input", (event) => {

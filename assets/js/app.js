@@ -20035,6 +20035,49 @@ window.EA_SEARCH = {
     "Program exchange flow": "Flux d’échange entre les programmes",
     "Project brief signal flow": "Parcours de qualification du brief",
     "Contact workflow statistics": "Indicateurs du parcours de contact",
+    "Build Something": "Construire un projet",
+    "A client or commissioned project requiring strategy, design, technology or delivery.": "Un projet client ou commandité qui demande stratégie, design, technologie ou réalisation.",
+    "Work With VASTE": "Collaborer avec VASTE",
+    "A technical, design, pilot or research collaboration around the VASTE ecosystem.": "Une collaboration technique, de design, de pilote ou de recherche autour de l’écosystème VASTE.",
+    "Support The Ecosystem": "Soutenir l’écosystème",
+    "An institutional, strategic, financial, educational or cultural partnership.": "Un partenariat institutionnel, stratégique, financier, éducatif ou culturel.",
+    "Creative & Artistic Collaboration": "Collaboration créative et artistique",
+    "A shared cultural, visual, spatial, narrative or experimental project.": "Un projet culturel, visuel, spatial, narratif ou expérimental partagé.",
+    "Label & Publishing": "Label et édition",
+    "A music, sound, audiovisual, release, distribution or artistic publishing conversation.": "Un échange autour de la musique, du son, de l’audiovisuel, d’une sortie, de la distribution ou de l’édition artistique.",
+    "No specific signals detected yet. Add a little more context or create a tag.": "Aucun signal précis détecté pour le moment. Ajoutez un peu de contexte ou créez un signal.",
+    "Change collaboration pathway": "Changer de parcours de collaboration",
+    "e.g. exhibition, API, distribution": "ex. exposition, API, diffusion",
+    "Select an option": "Sélectionnez une option",
+    "Project stage": "Étape du projet",
+    "New idea": "Nouvelle idée",
+    "Existing project": "Projet existant",
+    "Redesign": "Refonte",
+    "Active product": "Produit actif",
+    "Who is it for?": "À qui ce projet s’adresse-t-il ?",
+    "Audience, users or community": "Public, utilisateurs ou communauté",
+    "Preferred timing": "Calendrier souhaité",
+    "Exploring": "Exploration",
+    "1–2 months": "1 à 2 mois",
+    "3–6 months": "3 à 6 mois",
+    "6+ months": "Plus de 6 mois",
+    "Indicative budget": "Budget indicatif",
+    "Not defined": "Non défini",
+    "Under €5k": "Moins de 5 k€",
+    "€5k–€10k": "5 k€ à 10 k€",
+    "€10k–€25k": "10 k€ à 25 k€",
+    "€25k+": "Plus de 25 k€",
+    "Known requirements": "Contraintes déjà connues",
+    "Existing stack, integrations, content or constraints": "Stack existante, intégrations, contenu ou contraintes",
+    "Pathway": "Parcours",
+    "Intent": "Intention",
+    "Signals": "Signaux",
+    "To be clarified": "À préciser",
+    "Brief ready": "Brief prêt",
+    "Start with a sentence. No formal brief required.": "Commencez par une phrase. Aucun brief formel n’est nécessaire.",
+    "Add your name and a valid email address before preparing the message.": "Ajoutez votre nom et une adresse e-mail valide avant de préparer le message.",
+    "Brief copied": "Brief copié",
+    "Copy unavailable": "Copie indisponible",
     "Project sections": "Sections du projet",
     "Project dossier sections": "Sections du dossier projet",
     "01 / Problem": "01 / Problème",
@@ -20567,6 +20610,7 @@ window.EA_ANALYTICS_CONFIG = {
 
   const trackAnchorClick = (anchor) => {
     if (!anchor?.href) return;
+    if (anchor.matches("[data-analytics-ignore]")) return;
     const href = anchor.getAttribute("href") || "";
     const label = elementText(anchor);
     const location = elementLocation(anchor);
@@ -20791,7 +20835,9 @@ window.EA_ANALYTICS_CONFIG = {
         return;
       }
       const button = event.target?.closest?.("button, [role='button']");
-      if (button) trackButtonClick(button);
+      if (!button) return;
+      if (button.matches("[data-analytics-preferences]")) showBanner();
+      trackButtonClick(button);
     });
 
     document.addEventListener("input", (event) => {
@@ -23938,6 +23984,7 @@ window.EA_ANALYTICS_CONFIG = {
     }
     window.setTimeout(callback, 0);
   };
+  const trackAnalytics = (eventName, params) => window.EA_ANALYTICS?.track?.(eventName, params);
 
   const initLanguageSwitcher = async () => {
     const root = document.querySelector("[data-language-switcher]");
@@ -25737,7 +25784,7 @@ window.EA_ANALYTICS_CONFIG = {
       Investment: ["investor", "investment", "funding", "fund", "grant"],
     };
 
-    const state = { intent: "", pathway: "build", tags: [], answers: {} };
+    const state = { intent: "", pathway: "build", tags: [], answers: {}, started: false, ready: false };
     const intent = root.querySelector("[data-contact-intent]");
     const workspace = root.querySelector("[data-contact-workspace]");
     const status = root.querySelector("[data-contact-status]");
@@ -25778,16 +25825,16 @@ window.EA_ANALYTICS_CONFIG = {
 
     const renderPathways = () => {
       pathwayTray.innerHTML = Object.entries(pathways)
-        .map(([key, config]) => `<button type="button" class="contact-pathway${state.pathway === key ? " is-active" : ""}" data-contact-pathway="${esc(key)}" aria-pressed="${state.pathway === key ? "true" : "false"}">${esc(config.label)}</button>`)
+        .map(([key, config]) => `<button type="button" class="contact-pathway${state.pathway === key ? " is-active" : ""}" data-contact-pathway="${esc(key)}" aria-pressed="${state.pathway === key ? "true" : "false"}">${esc(translate(config.label))}</button>`)
         .join("");
-      pathwayTitle.textContent = pathways[state.pathway].label;
-      pathwayCopy.textContent = pathways[state.pathway].copy;
+      pathwayTitle.textContent = translate(pathways[state.pathway].label);
+      pathwayCopy.textContent = translate(pathways[state.pathway].copy);
     };
 
     const renderTags = () => {
       tagTray.innerHTML = state.tags.length
         ? state.tags.map((tag) => `<button type="button" class="contact-detected-tag" data-contact-remove-tag="${esc(tag)}" aria-label="Remove ${esc(tag)}"><span>✓</span>${esc(tag)}<b aria-hidden="true">×</b></button>`).join("")
-        : `<p class="card__copy">No specific signals detected yet. Add a little more context or create a tag.</p>`;
+        : `<p class="card__copy">${esc(translate("No specific signals detected yet. Add a little more context or create a tag."))}</p>`;
     };
 
     const renderQuestions = () => {
@@ -25796,9 +25843,9 @@ window.EA_ANALYTICS_CONFIG = {
         .map(([key, label, type, options]) => {
           const value = state.answers[key] || "";
           if (type === "select") {
-            return `<label class="contact-question"><span>${esc(label)}</span><select data-contact-answer="${esc(key)}"><option value="">Select an option</option>${options.map((option) => `<option value="${esc(option)}"${value === option ? " selected" : ""}>${esc(option)}</option>`).join("")}</select></label>`;
+            return `<label class="contact-question"><span>${esc(translate(label))}</span><select data-contact-answer="${esc(key)}"><option value="">${esc(translate("Select an option"))}</option>${options.map((option) => `<option value="${esc(option)}"${value === option ? " selected" : ""}>${esc(translate(option))}</option>`).join("")}</select></label>`;
           }
-          return `<label class="contact-question"><span>${esc(label)}</span><input type="text" data-contact-answer="${esc(key)}" value="${esc(value)}" placeholder="${esc(options)}" /></label>`;
+          return `<label class="contact-question"><span>${esc(translate(label))}</span><input type="text" data-contact-answer="${esc(key)}" value="${esc(value)}" placeholder="${esc(translate(options))}" /></label>`;
         })
         .join("");
     };
@@ -25826,15 +25873,26 @@ window.EA_ANALYTICS_CONFIG = {
       const config = pathways[state.pathway];
       const answered = config.questions.filter(([key]) => state.answers[key]).length;
       const rows = [
-        ["Pathway", config.label],
-        ["Intent", state.intent],
-        ["Signals", state.tags.join(", ") || "To be clarified"],
-        ...config.questions.filter(([key]) => state.answers[key]).map(([key, label]) => [label, state.answers[key]]),
+        [translate("Pathway"), translate(config.label)],
+        [translate("Intent"), state.intent],
+        [translate("Signals"), state.tags.join(", ") || translate("To be clarified")],
+        ...config.questions.filter(([key]) => state.answers[key]).map(([key, label]) => [translate(label), state.answers[key]]),
       ];
       summary.innerHTML = rows.map(([label, value]) => `<div><dt>${esc(label)}</dt><dd>${esc(value)}</dd></div>`).join("");
-      completeness.textContent = answered === config.questions.length ? "Brief ready" : `${answered}/${config.questions.length} questions answered`;
+      completeness.textContent = answered === config.questions.length
+        ? translate("Brief ready")
+        : isFrench() ? `${answered}/${config.questions.length} questions renseignées` : `${answered}/${config.questions.length} questions answered`;
       const subject = encodeURIComponent(`[${config.label}] ${state.intent.slice(0, 70) || "New discovery brief"}`);
       const contactValid = Boolean(nameInput.value.trim()) && /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(emailInput.value.trim());
+      if (contactValid && !state.ready) {
+        state.ready = true;
+        trackAnalytics("ea_contact_brief_ready", {
+          contact_pathway: state.pathway,
+          answered_question_count: answered,
+          detected_signal_count: state.tags.length,
+        });
+      }
+      if (!contactValid) state.ready = false;
       submit.href = contactValid
         ? `mailto:electronic.artefacts@gmail.com?subject=${subject}&body=${encodeURIComponent(briefText())}`
         : "#contact-identity-title";
@@ -25854,13 +25912,22 @@ window.EA_ANALYTICS_CONFIG = {
       state.intent = intent.value.trim();
       if (state.intent.length < 3) {
         workspace.hidden = true;
-        status.textContent = "Start with a sentence. No formal brief required.";
+        status.textContent = translate("Start with a sentence. No formal brief required.");
         return;
       }
       state.pathway = detectPathway(state.intent);
       state.tags = detectTags(state.intent);
+      if (!state.started) {
+        state.started = true;
+        trackAnalytics("ea_contact_discovery_start", {
+          contact_pathway: state.pathway,
+          detected_signal_count: state.tags.length,
+        });
+      }
       workspace.hidden = false;
-      status.textContent = `A likely pathway and ${state.tags.length} signals were identified locally.`;
+      status.textContent = isFrench()
+        ? `Un parcours probable et ${state.tags.length} signaux ont été identifiés localement.`
+        : `A likely pathway and ${state.tags.length} signals were identified locally.`;
       refresh({ resetAnswers: true });
     };
 
@@ -25878,6 +25945,7 @@ window.EA_ANALYTICS_CONFIG = {
       const button = event.target.closest("[data-contact-pathway]");
       if (!button) return;
       state.pathway = button.getAttribute("data-contact-pathway");
+      trackAnalytics("ea_contact_pathway_select", { contact_pathway: state.pathway });
       refresh({ resetAnswers: true });
     });
     tagTray.addEventListener("click", (event) => {
@@ -25908,19 +25976,31 @@ window.EA_ANALYTICS_CONFIG = {
     });
     [nameInput, emailInput, organizationInput].forEach((field) => field.addEventListener("input", renderSummary));
     submit.addEventListener("click", (event) => {
-      if (submit.getAttribute("aria-disabled") !== "true") return;
-      event.preventDefault();
-      status.textContent = "Add your name and a valid email address before preparing the message.";
-      (!nameInput.value.trim() ? nameInput : emailInput).focus();
+      if (submit.getAttribute("aria-disabled") === "true") {
+        event.preventDefault();
+        status.textContent = translate("Add your name and a valid email address before preparing the message.");
+        (!nameInput.value.trim() ? nameInput : emailInput).focus();
+        return;
+      }
+      trackAnalytics("generate_lead", {
+        method: "contact_brief_email",
+        contact_pathway: state.pathway,
+        answered_question_count: pathways[state.pathway].questions.filter(([key]) => state.answers[key]).length,
+        detected_signal_count: state.tags.length,
+      });
     });
     root.querySelector("[data-contact-copy]")?.addEventListener("click", async (event) => {
       const button = event.currentTarget;
       const original = button.textContent;
       try {
         await navigator.clipboard.writeText(briefText());
-        button.textContent = "Brief copied";
+        button.textContent = translate("Brief copied");
+        trackAnalytics("ea_contact_brief_copy", {
+          contact_pathway: state.pathway,
+          answered_question_count: pathways[state.pathway].questions.filter(([key]) => state.answers[key]).length,
+        });
       } catch {
-        button.textContent = "Copy unavailable";
+        button.textContent = translate("Copy unavailable");
       }
       window.setTimeout(() => { button.textContent = original; }, 1600);
     });
@@ -27137,7 +27217,7 @@ window.EA_ANALYTICS_CONFIG = {
         <aside class="contact-brief" aria-labelledby="contact-brief-title">
           <div class="contact-brief__head"><p class="card__meta">LIVE BRIEF</p><h2 id="contact-brief-title">Your entry point</h2><span data-contact-completeness>Intent captured</span></div>
           <dl data-contact-summary></dl>
-          <div class="contact-brief__actions"><a class="button button--primary" data-contact-submit href="mailto:electronic.artefacts@gmail.com">Prepare email</a><button class="button button--secondary" type="button" data-contact-copy>Copy brief</button></div>
+          <div class="contact-brief__actions"><a class="button button--primary" data-contact-submit data-analytics-ignore href="mailto:electronic.artefacts@gmail.com">Prepare email</a><button class="button button--secondary" type="button" data-contact-copy>Copy brief</button></div>
           <p class="contact-brief__note">Nothing is uploaded. “Prepare email” opens your mail application with the brief included.</p>
         </aside>
       </div>

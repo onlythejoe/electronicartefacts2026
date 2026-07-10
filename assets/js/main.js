@@ -693,7 +693,7 @@
         <aside class="contact-brief" aria-labelledby="contact-brief-title">
           <div class="contact-brief__head"><p class="card__meta">LIVE BRIEF</p><h2 id="contact-brief-title">Your entry point</h2><span data-contact-completeness>Intent captured</span></div>
           <dl data-contact-summary></dl>
-          <div class="contact-brief__actions"><a class="button button--primary" data-contact-submit href="mailto:electronic.artefacts@gmail.com">Prepare email</a><button class="button button--secondary" type="button" data-contact-copy>Copy brief</button></div>
+          <div class="contact-brief__actions"><a class="button button--primary" data-contact-submit data-analytics-ignore href="mailto:electronic.artefacts@gmail.com">Prepare email</a><button class="button button--secondary" type="button" data-contact-copy>Copy brief</button></div>
           <p class="contact-brief__note">Nothing is uploaded. “Prepare email” opens your mail application with the brief included.</p>
         </aside>
       </div>
