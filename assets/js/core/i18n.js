@@ -562,6 +562,8 @@
     "Next": "Suivant",
     "Previous Question": "Question précédente",
     "Next Question": "Question suivante",
+    "Back to research title": "Revenir au titre de la recherche",
+    "Back to title": "Titre",
     "Research questions": "Questions de recherche",
     "research question": "question de recherche",
     "program": "programme",

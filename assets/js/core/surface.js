@@ -635,8 +635,9 @@
           </article>
         </div>
         <div class="research-atlas__nav">
-          <button type="button" class="button button--secondary" data-research-atlas-prev aria-label="${esc(translate("Previous Question"))}"><span aria-hidden="true">←</span> <span>${esc(translate("Previous"))}</span></button>
-          <button type="button" class="button button--secondary" data-research-atlas-next aria-label="${esc(translate("Next Question"))}"><span>${esc(translate("Next"))}</span> <span aria-hidden="true">→</span></button>
+          <button type="button" class="button button--secondary" data-research-atlas-prev aria-label="${esc(translate("Previous Question"))}"><span class="research-atlas__button-icon" aria-hidden="true">←</span> <span class="research-atlas__button-label">${esc(translate("Previous"))}</span></button>
+          <button type="button" class="button button--secondary research-atlas__title-button" data-research-atlas-title aria-label="${esc(translate("Back to research title"))}" title="${esc(translate("Back to research title"))}"><span class="research-atlas__button-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><circle cx="10.8" cy="10.8" r="6.2"></circle><path d="m15.5 15.5 5 5"></path></svg></span> <span class="research-atlas__button-label">${esc(translate("Back to title"))}</span></button>
+          <button type="button" class="button button--secondary" data-research-atlas-next aria-label="${esc(translate("Next Question"))}"><span class="research-atlas__button-label">${esc(translate("Next"))}</span> <span class="research-atlas__button-icon" aria-hidden="true">→</span></button>
         </div>
       </section>
     `;
@@ -1123,6 +1124,9 @@
 
       atlas.querySelector("[data-research-atlas-prev]")?.addEventListener("click", () => navigate(-1));
       atlas.querySelector("[data-research-atlas-next]")?.addEventListener("click", () => navigate(1));
+      atlas.querySelector("[data-research-atlas-title]")?.addEventListener("click", () => {
+        atlas.querySelector("#research-atlas-title")?.scrollIntoView({ behavior: "smooth", block: "start" });
+      });
       dots?.addEventListener("click", (event) => {
         const target = event.target instanceof Element ? event.target.closest("[data-research-atlas-dot]") : null;
         if (!target) return;
