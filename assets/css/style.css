@@ -13729,7 +13729,7 @@ figcaption strong,
   left: -0.05rem;
 }
 
-.project-butterfly__wing--mirror {
+.project-butterfly__wing--left {
   transform: scaleX(-1);
 }
 
@@ -13744,6 +13744,45 @@ figcaption strong,
   background: linear-gradient(180deg, #6d5545, #211813 78%);
   box-shadow: 0 0.12rem 0.22rem rgba(41, 30, 24, 0.25);
   transform: translateX(-50%) rotate(8deg);
+}
+
+.project-butterfly__body::before,
+.project-butterfly__body::after {
+  content: "";
+  position: absolute;
+  top: -0.34rem;
+  width: 0.4rem;
+  height: 0.52rem;
+  border-top: 1px solid rgba(54, 39, 30, 0.88);
+}
+
+.project-butterfly__body::before {
+  right: 52%;
+  border-left: 1px solid rgba(54, 39, 30, 0.88);
+  border-radius: 0.45rem 0 0;
+  transform: rotate(-18deg);
+  transform-origin: 100% 100%;
+}
+
+.project-butterfly__body::after {
+  left: 52%;
+  border-right: 1px solid rgba(54, 39, 30, 0.88);
+  border-radius: 0 0.45rem 0 0;
+  transform: rotate(18deg);
+  transform-origin: 0 100%;
+}
+
+.project-butterfly--hero {
+  top: 0;
+  right: 0;
+  width: 4.5rem;
+  height: 3.55rem;
+}
+
+.detail-hero[data-entry-id="oeil-de-meg"] .detail-hero__content,
+.section-head--signature {
+  position: relative;
+  padding-right: clamp(5rem, 9vw, 6.5rem);
 }
 
 .project-butterfly:hover .project-butterfly__wing,

@@ -2439,6 +2439,7 @@
           <h1 class="display-title">${esc(item.title)}</h1>
           <p class="lede">${esc(signatureCopy)}</p>
           ${projectSignatureBubble(item, "hero")}
+          ${projectButterflyBubble(item, "hero")}
           <div class="button-row button-row--compact">
             ${heroActions.map((link, index) => `<a class="button ${index === 0 ? "button--primary" : "button--secondary"}" href="${esc(link.href)}"${link.target ? ' target="_blank" rel="noreferrer"' : ""}>${esc(link.label)}</a>`).join("")}
           </div>
@@ -4285,6 +4286,7 @@
       <section class="zone-card hero">
         <div class="section-head${item.id === "oeil-de-meg" ? " section-head--signature" : ""}">
           ${projectSignatureBubble(item, "hero")}
+          ${projectButterflyBubble(item, "hero")}
           <p class="eyebrow">PROJECT DOSSIER</p>
           <h1 class="display-title">${esc(item.title)}</h1>
           <p class="lede">${esc(item.summary || item.description || "")}</p>

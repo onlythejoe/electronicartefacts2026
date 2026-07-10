@@ -192,11 +192,11 @@
       <button class="project-butterfly project-butterfly--${esc(variant)}" type="button" data-project-butterfly aria-label="${esc(label)}">
         <span class="project-butterfly__stage" aria-hidden="true">
           <span class="project-butterfly__hinge project-butterfly__hinge--left">
-            <img class="project-butterfly__wing" src="./assets/media/projects/oeil-de-meg/wing.png" alt="" loading="lazy" />
+            <img class="project-butterfly__wing project-butterfly__wing--left" src="./assets/media/projects/oeil-de-meg/wing.png" alt="" loading="lazy" />
           </span>
           <span class="project-butterfly__body"></span>
           <span class="project-butterfly__hinge project-butterfly__hinge--right">
-            <img class="project-butterfly__wing project-butterfly__wing--mirror" src="./assets/media/projects/oeil-de-meg/wing.png" alt="" loading="lazy" />
+            <img class="project-butterfly__wing project-butterfly__wing--right" src="./assets/media/projects/oeil-de-meg/wing.png" alt="" loading="lazy" />
           </span>
         </span>
       </button>
@@ -817,7 +817,7 @@
   };
 
   const projectCard = (item) => `
-    <article class="project-card" ${cardBaseAttrs(item)}>
+    <article class="project-card${item.id === "oeil-de-meg" ? " project-card--oeil-de-meg" : ""}" ${cardBaseAttrs(item)}>
       ${entryHrefFor(item) ? `<a class="project-card__overlay-link" href="${esc(entryHrefFor(item))}" aria-label="Open ${esc(item.title)} detail"></a>` : ""}
       <div class="project-card__top">
         <div>
@@ -828,6 +828,7 @@
           ${item.id === "oeil-de-meg" ? chip("PHP") : ""}
           ${statusBadge(item.status, item.statusLabel)}
           ${projectSignatureBubble(item, "card")}
+          ${projectButterflyBubble(item, "card")}
         </div>
       </div>
       ${cardMediaPlate(item)}
@@ -856,6 +857,7 @@
           ${item.id === "oeil-de-meg" ? chip("PHP") : ""}
           ${statusBadge(item.status, item.statusLabel)}
           ${projectSignatureBubble(item, "card")}
+          ${projectButterflyBubble(item, "card")}
         </div>
       </div>
       ${cardMediaPlate(item)}
