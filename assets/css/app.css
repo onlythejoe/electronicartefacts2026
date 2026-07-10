@@ -5662,6 +5662,32 @@ body.is-header-hidden .shell-header.zone-card {
   --project-rgb: 247, 244, 239;
 }
 
+body:has(.detail-hero[data-entry-id="oeil-de-meg"]) {
+  color: #1b1a18;
+  background:
+    radial-gradient(circle at 12% 0%, rgba(255, 255, 255, 0.95), transparent 34%),
+    radial-gradient(circle at 88% 18%, rgba(234, 220, 207, 0.48), transparent 40%),
+    linear-gradient(180deg, #f6f1e9 0%, #e9e1d7 56%, #f4eee6 100%);
+}
+
+body:has(.detail-hero[data-entry-id="oeil-de-meg"])::before {
+  opacity: 0.06;
+}
+
+body:has(.detail-hero[data-entry-id="oeil-de-meg"])::after {
+  background: radial-gradient(circle at center, transparent 48%, rgba(71, 53, 39, 0.1) 100%);
+  opacity: 0.32;
+}
+
+.detail-hero[data-entry-id="oeil-de-meg"] .detail-hero__visual {
+  min-height: clamp(18rem, 32vw, 26rem);
+}
+
+.detail-hero[data-entry-id="oeil-de-meg"] .detail-hero__visual .project-immersive__image {
+  object-fit: contain;
+  padding: clamp(1rem, 3vw, 2.5rem);
+}
+
 .detail-hero[data-entry-id="vestiges"] .detail-hero__visual {
   padding: clamp(1.5rem, 5vw, 4.5rem);
   background:
@@ -11527,6 +11553,20 @@ input:focus-visible {
     min-height: clamp(18rem, 58vw, 30rem);
   }
 
+  .detail-hero[data-entry-id="oeil-de-meg"] .detail-hero__visual {
+    min-height: clamp(14rem, 48vw, 20rem);
+  }
+
+  .relation-mosaic {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    align-items: stretch;
+  }
+
+  .relation-mosaic > .panel {
+    width: 100%;
+    max-width: none;
+  }
+
   .signature-banner__copy {
     max-width: none;
   }
@@ -17240,7 +17280,7 @@ figcaption strong,
   height: 100%;
   transform-style: preserve-3d;
   will-change: transform;
-  z-index: 3;
+  z-index: 4;
 }
 
 .project-butterfly__hinge--left {
@@ -17263,7 +17303,7 @@ figcaption strong,
   filter: sepia(0.16) saturate(1.22) drop-shadow(0 0.22rem 0.28rem rgba(41, 30, 24, 0.26));
   pointer-events: none;
   user-select: none;
-  z-index: 4;
+  z-index: 5;
 }
 
 .project-butterfly__hinge--left .project-butterfly__wing {
@@ -17282,7 +17322,7 @@ figcaption strong,
   position: absolute;
   left: 50%;
   bottom: 0.14rem;
-  z-index: 5;
+  z-index: 1;
   width: 0.19rem;
   height: 1.12rem;
   border-radius: 999px;

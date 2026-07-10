@@ -27470,7 +27470,7 @@ window.EA_ANALYTICS_CONFIG = {
     return panelShell(
       "Lineage",
       "Where this work comes from, what supports it and what sits nearby.",
-      `<div class="stack">
+      `<div class="stack relation-mosaic">
         ${sections
           .map(
             ([label, values]) => `
@@ -27726,7 +27726,7 @@ window.EA_ANALYTICS_CONFIG = {
               }
             </article>
             <div class="project-moodboard__canvas">
-              ${assets
+              ${(item.id === "oeil-de-meg" ? assets.filter((media) => !String(media.src || "").endsWith("/cover.svg")) : assets)
                 .slice(0, 10)
                 .map((media, index) => {
                   const group = projectVisualGroup(media);
@@ -27979,6 +27979,7 @@ window.EA_ANALYTICS_CONFIG = {
   const projectGalleryPanel = (item) => {
     if (item.kind !== "project") return "";
     if (isOrethSignature(item)) return "";
+    if (item.id === "oeil-de-meg") return "";
     const gallery = item.media?.gallery || [];
     if (item.id === "palimpsests" && gallery.length) {
       const heroImage = gallery.find((image) => String(image.src || "").includes("palimpsests.jpg")) || gallery[0];
