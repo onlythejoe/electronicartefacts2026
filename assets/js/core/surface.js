@@ -650,8 +650,8 @@
     const routeFor = (id, fallback = "") => catalog.routeFor?.(id) || entityById(id)?.route || fallback;
     return graphSurface({
       eyebrow: "LAYER",
-      title: "Live map of the studio’s work.",
-      copy: "A navigable view of current projects, programs and knowledge routes in the Electronic Artefacts graph.",
+      title: "The studio’s work, online.",
+      copy: "Discover the projects, programs and knowledge paths published by Electronic Artefacts.",
       coreLabel: "Electronic Artefacts",
       coreCopy: `${projects} projects / ${programs} programs / ${research} fields`,
       variant: "home",

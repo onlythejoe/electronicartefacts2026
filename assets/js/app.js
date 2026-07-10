@@ -18947,9 +18947,8 @@ window.EA_SEARCH = {
     "Discover Palimpsests": "Découvrir Palimpsests",
     "LAYER": "COUCHE",
     "Live ecosystem map.": "Cartographie vivante de l’écosystème.",
-    "Live map of the studio’s work.": "Carte active des travaux du studio.",
-    "Real projects, programs and knowledge routes from the current Electronic Artefacts graph.": "Une cartographie des projets, programmes et parcours de connaissance d’Electronic Artefacts.",
-    "A navigable view of current projects, programs and knowledge routes in the Electronic Artefacts graph.": "Une vue navigable des projets, programmes et parcours de connaissance dans le graphe Electronic Artefacts.",
+    "The studio’s work, online.": "Les travaux du studio, en ligne.",
+    "Discover the projects, programs and knowledge paths published by Electronic Artefacts.": "Découvrez les projets, programmes et parcours de connaissance publiés par Electronic Artefacts.",
     "Knowledge": "Connaissances",
     "Runtime / active": "Moteur / actif",
     "Flagship platform": "Plateforme principale",
@@ -23242,8 +23241,8 @@ window.EA_ANALYTICS_CONFIG = {
     const routeFor = (id, fallback = "") => catalog.routeFor?.(id) || entityById(id)?.route || fallback;
     return graphSurface({
       eyebrow: "LAYER",
-      title: "Live map of the studio’s work.",
-      copy: "A navigable view of current projects, programs and knowledge routes in the Electronic Artefacts graph.",
+      title: "The studio’s work, online.",
+      copy: "Discover the projects, programs and knowledge paths published by Electronic Artefacts.",
       coreLabel: "Electronic Artefacts",
       coreCopy: `${projects} projects / ${programs} programs / ${research} fields`,
       variant: "home",
