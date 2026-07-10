@@ -13452,6 +13452,9 @@ figcaption strong,
 @media (max-width: 48rem) {
   /* Let the horizontal navigation reach the card's right edge when it is scrolled. */
   .site-nav {
+    width: 100%;
+    margin-left: var(--gutter);
+    padding-left: 0;
     padding-right: 0;
   }
 
@@ -13486,41 +13489,6 @@ figcaption strong,
   /* The question number already appears in the panel; it does not need a central graph badge. */
   .research-atlas__core.graph-surface__core {
     display: none;
-  }
-
-  /* Make the atlas selector explicit and tappable instead of a row of anonymous dots. */
-  .research-atlas__dots {
-    gap: 0.4rem;
-  }
-
-  .research-atlas__dots button,
-  .research-atlas__dots button.is-active {
-    width: 2rem;
-    height: 1.55rem;
-    border: 1px solid rgba(247, 244, 239, 0.18);
-    border-radius: 999px;
-    background: rgba(255, 255, 255, 0.045);
-    color: rgba(247, 244, 239, 0.68);
-    box-shadow: none;
-  }
-
-  .research-atlas__dots button span {
-    position: static;
-    width: auto;
-    height: auto;
-    overflow: visible;
-    clip: auto;
-    color: inherit;
-    font-size: 0.55rem;
-    font-weight: 840;
-    letter-spacing: 0.06em;
-    line-height: 1;
-  }
-
-  .research-atlas__dots button.is-active {
-    border-color: rgba(var(--atlas-tone), 0.86);
-    background: rgba(var(--atlas-tone), 0.88);
-    color: #07131c;
   }
 
   /* The home graph remains a map, while each label stays on one readable line. */
@@ -13563,8 +13531,32 @@ figcaption strong,
   }
 
   .signature-banner--oreth .signature-banner__image {
-    width: 116%;
+    width: 140%;
     max-width: none;
-    transform: translateY(4%);
+    transform: translateY(7%);
+  }
+
+  .selected-works-card[data-entry-id="forge"] {
+    --project-rgb: 59, 130, 246;
+    border-color: rgba(96, 165, 250, 0.58);
+    background:
+      radial-gradient(circle at 88% 8%, rgba(96, 165, 250, 0.26), transparent 30%),
+      radial-gradient(circle at 10% 96%, rgba(37, 99, 235, 0.18), transparent 42%),
+      linear-gradient(145deg, #132a48, #0a1a2e 64%, #071424);
+    box-shadow:
+      0 0 0 1px rgba(96, 165, 250, 0.14),
+      0 20px 38px rgba(4, 18, 38, 0.42);
+  }
+
+  .selected-works-card[data-entry-id="forge"] .project-card__editorial-note {
+    border-color: rgba(96, 165, 250, 0.5);
+    background: rgba(96, 165, 250, 0.12);
+    color: rgba(219, 234, 254, 0.9);
+  }
+
+  .selected-works-card[data-entry-id="forge"] .chip,
+  .selected-works-card[data-entry-id="forge"] .status-badge {
+    border-color: rgba(96, 165, 250, 0.42);
+    background: rgba(30, 64, 175, 0.26);
   }
 }

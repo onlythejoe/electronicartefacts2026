@@ -189,6 +189,7 @@
       <span class="project-mark-bubble project-mark-bubble--${esc(variant)} project-mark-bubble--butterfly" aria-hidden="true">
         <span class="project-mark-bubble__coin">
           <img class="project-mark-bubble__picto project-mark-bubble__picto--butterfly" src="./assets/media/projects/oeil-de-meg/wing.png" alt="" loading="lazy" />
+          <img class="project-mark-bubble__picto project-mark-bubble__picto--butterfly" src="./assets/media/projects/oeil-de-meg/wing.png" alt="" loading="lazy" />
         </span>
       </span>
     `;
@@ -892,6 +893,7 @@
             ${item.id === "oeil-de-meg" ? chip("PHP") : ""}
             ${statusBadge(item.status, item.statusLabel)}
             ${projectSignatureBubble(item, "card")}
+            ${projectButterflyBubble(item, "card")}
           </div>
         </div>
         ${cardMediaPlate(item, { kicker: featured ? "Lead visual" : "Visual", caption: !isVestiges, action: options.mediaAction })}

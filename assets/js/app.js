@@ -21344,6 +21344,7 @@ window.EA_ANALYTICS_CONFIG = {
       <span class="project-mark-bubble project-mark-bubble--${esc(variant)} project-mark-bubble--butterfly" aria-hidden="true">
         <span class="project-mark-bubble__coin">
           <img class="project-mark-bubble__picto project-mark-bubble__picto--butterfly" src="./assets/media/projects/oeil-de-meg/wing.png" alt="" loading="lazy" />
+          <img class="project-mark-bubble__picto project-mark-bubble__picto--butterfly" src="./assets/media/projects/oeil-de-meg/wing.png" alt="" loading="lazy" />
         </span>
       </span>
     `;
@@ -22047,6 +22048,7 @@ window.EA_ANALYTICS_CONFIG = {
             ${item.id === "oeil-de-meg" ? chip("PHP") : ""}
             ${statusBadge(item.status, item.statusLabel)}
             ${projectSignatureBubble(item, "card")}
+            ${projectButterflyBubble(item, "card")}
           </div>
         </div>
         ${cardMediaPlate(item, { kicker: featured ? "Lead visual" : "Visual", caption: !isVestiges, action: options.mediaAction })}
@@ -23216,9 +23218,6 @@ window.EA_ANALYTICS_CONFIG = {
         </div>
         <div class="research-atlas__nav">
           <button type="button" class="button button--secondary" data-research-atlas-prev aria-label="${esc(translate("Previous Question"))}"><span aria-hidden="true">←</span> <span>${esc(translate("Previous"))}</span></button>
-          <div class="research-atlas__dots" data-research-atlas-dots aria-label="${esc(translate("Research questions"))}">
-            ${researchDots(questions, 0)}
-          </div>
           <button type="button" class="button button--secondary" data-research-atlas-next aria-label="${esc(translate("Next Question"))}"><span>${esc(translate("Next"))}</span> <span aria-hidden="true">→</span></button>
         </div>
       </section>

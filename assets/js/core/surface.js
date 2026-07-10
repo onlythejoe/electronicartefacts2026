@@ -636,9 +636,6 @@
         </div>
         <div class="research-atlas__nav">
           <button type="button" class="button button--secondary" data-research-atlas-prev aria-label="${esc(translate("Previous Question"))}"><span aria-hidden="true">←</span> <span>${esc(translate("Previous"))}</span></button>
-          <div class="research-atlas__dots" data-research-atlas-dots aria-label="${esc(translate("Research questions"))}">
-            ${researchDots(questions, 0)}
-          </div>
           <button type="button" class="button button--secondary" data-research-atlas-next aria-label="${esc(translate("Next Question"))}"><span>${esc(translate("Next"))}</span> <span aria-hidden="true">→</span></button>
         </div>
       </section>
