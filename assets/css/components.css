@@ -1197,6 +1197,8 @@
   padding: 1px;
   list-style: none;
   background: var(--border);
+  border-radius: var(--radius-lg);
+  overflow: hidden;
 }
 
 .forensic-workflow li {
@@ -1204,6 +1206,7 @@
   min-height: 13rem;
   padding: clamp(1rem, 1.6vw, 1.35rem);
   background: #08090a;
+  border-radius: calc(var(--radius-md) - 0.1rem);
 }
 
 .forensic-workflow span,

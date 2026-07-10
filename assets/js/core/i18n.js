@@ -663,7 +663,7 @@
     "Tell us what you’re working on.": "Décrivez ce sur quoi vous travaillez.",
     "Describe the idea that needs a system.": "Décrivez l’idée qui a besoin d’un système.",
     "What would you like to build together?": "Qu’aimeriez-vous construire ensemble ?",
-    "What needs to change — and why now?": "Que faut-il changer — et pourquoi maintenant ?",
+    "What needs to change and why now?": "Que faut-il changer et pourquoi maintenant ?",
     "What would you like to create together?": "Qu’aimeriez-vous créer ensemble ?",
     "Describe your idea, project or collaboration": "Décrivez votre idée, votre projet ou votre collaboration",
     "PROJECT / COLLABORATION DISCOVERY": "DÉCOUVERTE DU PROJET / DE LA COLLABORATION",

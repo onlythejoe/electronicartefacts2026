@@ -660,7 +660,7 @@
       <div class="contact-discovery__intro">
         <div>
           <p class="eyebrow">PROJECT / COLLABORATION DISCOVERY</p>
-          <h2 class="display-title">What needs to change — and why now?</h2>
+          <h2 class="display-title">What needs to change and why now?</h2>
           <p class="lede">Describe the situation in your own words. The brief will identify the relevant pathway, surface the missing context and prepare a focused first conversation. Nothing leaves your browser.</p>
         </div>
       </div>

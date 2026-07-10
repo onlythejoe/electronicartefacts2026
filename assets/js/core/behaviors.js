@@ -584,10 +584,31 @@
         start();
       };
 
+      const moveSelection = (node, direction) => {
+        const currentIndex = nodes.indexOf(node);
+        const nextIndex = Math.min(nodes.length - 1, Math.max(0, currentIndex + direction));
+        const nextNode = nodes[nextIndex];
+        if (!nextNode || nextNode === node) return;
+        syncFromPointer(nextNode);
+        if (compactLayout) nextNode.scrollIntoView({ behavior: reduceMotion ? "auto" : "smooth", block: "nearest", inline: "center" });
+        nextNode.focus({ preventScroll: true });
+      };
+
       nodes.forEach((node) => {
         node.addEventListener("pointerenter", () => syncFromPointer(node));
         node.addEventListener("focus", () => syncFromPointer(node));
         node.addEventListener("click", () => syncFromPointer(node));
+        node.addEventListener("keydown", (event) => {
+          if (!compactLayout) return;
+          if (event.key === "ArrowRight" || event.key === "ArrowDown") {
+            event.preventDefault();
+            moveSelection(node, 1);
+          }
+          if (event.key === "ArrowLeft" || event.key === "ArrowUp") {
+            event.preventDefault();
+            moveSelection(node, -1);
+          }
+        });
       });
 
       if (bubbleState[0]) activate(bubbleState[0].el);
@@ -1944,14 +1965,41 @@
       window.setTimeout(() => { button.textContent = original; }, 1600);
     });
 
-    const prompts = ["Tell us what you’re working on.", "What would you like to build together?", "Describe the idea that needs a system.", "What should exist that doesn’t exist yet?"];
+    const prompts = [
+      translate("Tell us what you’re working on."),
+      translate("What would you like to build together?"),
+      translate("Describe the idea that needs a system."),
+      translate("What should exist that doesn’t exist yet?"),
+    ];
     if (!window.matchMedia("(prefers-reduced-motion: reduce)").matches) {
       let promptIndex = 0;
-      window.setInterval(() => {
-        if (document.activeElement === intent || intent.value) return;
-        promptIndex = (promptIndex + 1) % prompts.length;
-        intent.placeholder = prompts[promptIndex];
-      }, 4200);
+      let characterIndex = prompts[0].length;
+      let deleting = true;
+      const animatePrompt = () => {
+        if (document.activeElement === intent || intent.value) {
+          window.setTimeout(animatePrompt, 500);
+          return;
+        }
+
+        const prompt = prompts[promptIndex];
+        if (deleting) {
+          characterIndex -= 1;
+          intent.placeholder = prompt.slice(0, characterIndex);
+          if (characterIndex === 0) {
+            deleting = false;
+            promptIndex = (promptIndex + 1) % prompts.length;
+          }
+        } else {
+          const nextPrompt = prompts[promptIndex];
+          characterIndex += 1;
+          intent.placeholder = nextPrompt.slice(0, characterIndex);
+          if (characterIndex === nextPrompt.length) deleting = true;
+        }
+
+        const pause = characterIndex === 0 ? 300 : characterIndex === prompts[promptIndex].length && deleting ? 1800 : deleting ? 42 : 68;
+        window.setTimeout(animatePrompt, pause);
+      };
+      window.setTimeout(animatePrompt, 1800);
     }
   };
 
