@@ -5,7 +5,7 @@
   const { esc, setYear, slugify } = window.EA_UTILS;
   const { loadIncludes } = window.EA_INCLUDES;
   const { statusBadge, chip, tagRow, metadataList, linkRow, metricRail, cardLinkAttrs, cardOverlayLink } = window.EA_UI;
-  const { initFilters, initSearch, initLanguageSwitcher, initCardLinks, initContactDiscovery, initCapabilityMaps, initUXEnhancements, initEngagementPanels, refreshCardSurfaces, syncNavigationState, syncSeoMeta } = window.EA_BEHAVIORS;
+  const { initFilters, initSearch, initLanguageSwitcher, initCardLinks, initContactDiscovery, initCapabilityMaps, initProgressiveGrids, initUXEnhancements, initEngagementPanels, refreshCardSurfaces, syncNavigationState, syncSeoMeta } = window.EA_BEHAVIORS;
   const {
     cardBaseAttrs,
     mediaFrom,
@@ -4497,6 +4497,7 @@
     initCardLinks();
     initContactDiscovery();
     initCapabilityMaps();
+    initProgressiveGrids();
     initUXEnhancements(filterState);
     initEngagementPanels();
     startVasteEngineAnimation();

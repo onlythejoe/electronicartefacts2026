@@ -670,6 +670,32 @@
     });
   };
 
+  const initProgressiveGrids = (root = document) => {
+    root.querySelectorAll("[data-progressive-grid]").forEach((grid) => {
+      if (grid.dataset.boundProgressiveGrid === "true") return;
+      grid.dataset.boundProgressiveGrid = "true";
+      const items = [...grid.querySelectorAll("[data-progressive-grid-item]")];
+      const more = grid.querySelector("[data-progressive-grid-more]");
+      if (!items.length || !more) return;
+
+      const initialCount = Number(grid.dataset.initialCount) || 12;
+      const step = Number(grid.dataset.loadStep) || 12;
+      let visibleCount = Math.min(initialCount, items.length);
+      const render = () => {
+        items.forEach((item, index) => {
+          item.hidden = index >= visibleCount;
+        });
+        more.hidden = visibleCount >= items.length;
+      };
+      more.addEventListener("click", () => {
+        visibleCount = Math.min(items.length, visibleCount + step);
+        render();
+        items[Math.min(visibleCount - step, items.length - 1)]?.querySelector("a")?.focus({ preventScroll: true });
+      });
+      render();
+    });
+  };
+
   const initAmbientField = () => {
     if (document.querySelector("[data-ambient-field]")) return;
     const root = document.createElement("div");
@@ -2480,6 +2506,7 @@
     initCardLinks,
     initContactDiscovery,
     initCapabilityMaps,
+    initProgressiveGrids,
     initEngagementPanels,
     initIntentHeroes,
     initUXEnhancements,

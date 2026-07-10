@@ -131,6 +131,7 @@ interface HubCopy {
   graphIndexTitle: string;
   graphIndexCopy: string;
   graphIndexLabel: string;
+  loadMoreLabel: string;
   overviewLabel: string;
   openPage: string;
   recordSingular: string;
@@ -155,6 +156,7 @@ const hubCopy: Record<HubLocale, HubCopy> = {
     graphIndexTitle: "Browse the connected records.",
     graphIndexCopy: "Every entry keeps its type, status, context and route into the wider knowledge system.",
     graphIndexLabel: "Graph index",
+    loadMoreLabel: "Show more",
     overviewLabel: "Knowledge graph overview",
     openPage: "Open page",
     recordSingular: "record",
@@ -199,6 +201,7 @@ const hubCopy: Record<HubLocale, HubCopy> = {
     graphIndexTitle: "Parcourez les enregistrements connectés.",
     graphIndexCopy: "Chaque entrée conserve son type, son état, son contexte et sa route dans le système de connaissance élargi.",
     graphIndexLabel: "Index du graphe",
+    loadMoreLabel: "Voir plus",
     overviewLabel: "Aperçu du graphe de connaissance",
     openPage: "Ouvrir la page",
     recordSingular: "enregistrement",
@@ -294,17 +297,13 @@ const hubCards = (items: Entity[], locale: HubLocale) => {
     return `<div class="generated-hub-layout"><article class="panel generated-hub-card generated-hub-card--lead"><p class="card__meta">${escapeHtml(copy.emptyMeta)}</p><h2 class="card__title">${escapeHtml(copy.emptyTitle)}</h2><p class="card__copy">${escapeHtml(copy.emptyCopy)}</p></article></div>`;
   }
 
-  const lead = items[0]!;
-  const secondary = items.slice(1);
   const groups = Object.entries(items.reduce<Record<string, number>>((acc, entity) => {
     acc[entity.type] = (acc[entity.type] || 0) + 1;
     return acc;
   }, {}));
 
   return `
-    <div class="generated-hub-layout">
-      ${hubCard(lead, 0, locale, { lead: true })}
-      <div class="generated-hub-stack">
+    <div class="generated-hub-stack generated-hub-stack--full" data-progressive-grid data-initial-count="12" data-load-step="12">
         <div class="generated-hub-stack__head">
           <p class="card__meta">${escapeHtml(copy.graphIndexLabel)}</p>
           <strong>${items.length} ${items.length === 1 ? escapeHtml(copy.recordSingular) : escapeHtml(copy.recordPlural)}</strong>
@@ -313,7 +312,7 @@ const hubCards = (items: Entity[], locale: HubLocale) => {
           ${groups
             .map(
               ([type, count]) => `
-                <a class="generated-hub-rail__item" href="${routeForEntity(items.find((entity) => entity.type === type) || lead)}">
+                <a class="generated-hub-rail__item" href="${routeForEntity(items.find((entity) => entity.type === type) || items[0]!)}">
                   <span>${String(count).padStart(2, "0")}</span>
                   <strong>${escapeHtml(typeLabel(type, locale))}</strong>
                 </a>`,
@@ -321,9 +320,9 @@ const hubCards = (items: Entity[], locale: HubLocale) => {
             .join("")}
         </nav>
         <div class="generated-hub-grid">
-          ${(secondary.length ? secondary : items).map((entity, index) => hubCard(entity, secondary.length ? index + 1 : index, locale)).join("")}
+          ${items.map((entity, index) => `<div data-progressive-grid-item>${hubCard(entity, index, locale)}</div>`).join("")}
         </div>
-      </div>
+        <button class="button button--secondary generated-hub-load-more" type="button" data-progressive-grid-more>${escapeHtml(copy.loadMoreLabel)}</button>
     </div>`;
 };
 
@@ -372,6 +371,14 @@ const writeHub = async (route: string, title: string, description: string, items
           </div>
         </div>
         <div class="intent-hero__stage knowledge-map-panel" data-intent-stage aria-label="${escapeHtml(copy.overviewLabel)}">
+          <div class="knowledge-map-panel__network" aria-hidden="true">
+            <span class="knowledge-map-panel__network-node knowledge-map-panel__network-node--a"></span>
+            <span class="knowledge-map-panel__network-node knowledge-map-panel__network-node--b"></span>
+            <span class="knowledge-map-panel__network-node knowledge-map-panel__network-node--c"></span>
+            <span class="knowledge-map-panel__network-node knowledge-map-panel__network-node--d"></span>
+            <span class="knowledge-map-panel__network-node knowledge-map-panel__network-node--e"></span>
+            <span class="knowledge-map-panel__network-node knowledge-map-panel__network-node--f"></span>
+          </div>
           <div class="knowledge-map-panel__summary" data-depth="1.05">
             <p class="card__meta">${escapeHtml(copy.summaryLabel)}</p>
             <strong>${items.length}</strong>
