@@ -502,7 +502,7 @@
   }
 
   .capability-node {
-    position: relative;
+    position: fixed;
     inset: auto;
     flex: 0 0 min(78vw, 18rem);
     width: auto;
@@ -14386,7 +14386,12 @@ body:has(.detail-hero[data-entry-id="oeil-de-meg"]) .consent-banner__copy .tag:f
 @media (max-width: 48rem) {
   .shell-header.zone-card {
     --header-inset: clamp(0.85rem, 4vw, 1rem);
-    position: relative;
+    position: fixed;
+    left: var(--gutter);
+    right: var(--gutter);
+    width: auto;
+    margin: 0;
+    box-sizing: border-box;
     grid-template-columns: 1fr;
     gap: 0.58rem;
     min-height: 8.7rem;
