@@ -17524,11 +17524,12 @@ figcaption strong,
   }
 
   .signature-banner--oreth {
-    min-height: clamp(40rem, 126vw, 52rem);
+    width: 100%;
+    min-height: clamp(48rem, 148vw, 62rem);
   }
 
   .signature-banner--oreth .signature-banner__media {
-    min-height: clamp(25rem, 86vw, 35rem);
+    min-height: clamp(30rem, 96vw, 40rem);
   }
 }
 

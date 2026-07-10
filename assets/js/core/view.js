@@ -1189,24 +1189,20 @@
   const featuredWork = () => {
     const palimpsests = entityById("palimpsests");
     if (!palimpsests) return "";
-    return `
-      <section class="zone-card hero">
-        ${signatureBanner(palimpsests, {
-          variant: "oreth",
-          eyebrow: "PALIMPSESTS / ORETH",
-          title: "Palimpsests",
-          copy: "Palimpsests is an album cycle by ORETH, unfolding across five acts and an evolving archive.",
-          loading: "lazy",
-          fetchPriority: "low",
-          tags: homeCardPills(palimpsests),
-          actions: [
-            { label: "Discover Palimpsests", href: "./palimpsests.html" },
-            { label: "Browse archive", href: "./archive.html" },
-            { label: "Start a Collaboration", href: "./contact.html" },
-          ],
-        })}
-      </section>
-    `;
+    return signatureBanner(palimpsests, {
+      variant: "oreth",
+      eyebrow: "PALIMPSESTS / ORETH",
+      title: "Palimpsests",
+      copy: "Palimpsests is an album cycle by ORETH, unfolding across five acts and an evolving archive.",
+      loading: "lazy",
+      fetchPriority: "low",
+      tags: homeCardPills(palimpsests),
+      actions: [
+        { label: "Discover Palimpsests", href: "./palimpsests.html" },
+        { label: "Browse archive", href: "./archive.html" },
+        { label: "Start a Collaboration", href: "./contact.html" },
+      ],
+    });
   };
 
   const vasteBanner = () => `
