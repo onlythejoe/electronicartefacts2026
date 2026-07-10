@@ -14160,6 +14160,13 @@ body:has(.detail-hero[data-entry-id="oeil-de-meg"]) .language-switcher {
   color: #1b1a18;
 }
 
+body:has(.detail-hero[data-entry-id="oeil-de-meg"]) :is(
+  .brand-name-brand,
+  .brand-name-accent
+) {
+  color: #1b1a18;
+}
+
 body:has(.detail-hero[data-entry-id="oeil-de-meg"]) .site-nav a {
   border-color: rgba(50, 40, 31, 0.12);
   background: rgba(255, 255, 255, 0.58);
@@ -14204,4 +14211,89 @@ body:has(.detail-hero[data-entry-id="oeil-de-meg"]) .relation-mosaic {
 body:has(.detail-hero[data-entry-id="oeil-de-meg"]) .relation-mosaic > .panel {
   width: 100%;
   max-width: none;
+}
+
+body:has(.detail-hero[data-entry-id="oeil-de-meg"]) .consent-banner__panel {
+  border-color: rgba(77, 103, 126, 0.36);
+  background:
+    linear-gradient(135deg, rgba(66, 94, 119, 0.82), rgba(48, 72, 94, 0.72)),
+    rgba(58, 83, 106, 0.66);
+  box-shadow:
+    0 18px 48px rgba(62, 45, 31, 0.16),
+    inset 0 1px 0 rgba(255, 255, 255, 0.22);
+  backdrop-filter: blur(24px) saturate(132%);
+  -webkit-backdrop-filter: blur(24px) saturate(132%);
+}
+
+body:has(.detail-hero[data-entry-id="oeil-de-meg"]) .consent-banner__copy :is(
+  .card__meta,
+  .card__title,
+  .card__copy
+) {
+  color: rgba(255, 255, 255, 0.96);
+  text-shadow: none;
+}
+
+body:has(.detail-hero[data-entry-id="oeil-de-meg"]) .consent-banner__copy .card__meta {
+  color: rgba(255, 255, 255, 0.68);
+}
+
+body:has(.detail-hero[data-entry-id="oeil-de-meg"]) .consent-banner__copy .tag {
+  min-height: 0;
+  margin-top: 0.52rem;
+  padding: 0;
+  border: 0;
+  border-radius: 0;
+  background: transparent;
+  color: rgba(255, 255, 255, 0.88);
+  font-size: 0.68rem;
+  letter-spacing: 0.06em;
+  text-decoration: underline;
+  text-decoration-color: rgba(255, 255, 255, 0.46);
+  text-underline-offset: 0.22rem;
+}
+
+body:has(.detail-hero[data-entry-id="oeil-de-meg"]) .consent-banner__actions .button {
+  min-height: 2.45rem;
+  padding-inline: 0.9rem;
+  border-color: rgba(255, 255, 255, 0.36);
+  background: rgba(255, 255, 255, 0.08);
+  box-shadow: none;
+  color: rgba(255, 255, 255, 0.92);
+  font-size: 0.76rem;
+  letter-spacing: 0.06em;
+}
+
+body:has(.detail-hero[data-entry-id="oeil-de-meg"]) .consent-banner__actions .button--primary {
+  border-color: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.18);
+  color: #ffffff;
+}
+
+body:has(.detail-hero[data-entry-id="oeil-de-meg"]) .consent-banner__actions .button:hover,
+body:has(.detail-hero[data-entry-id="oeil-de-meg"]) .consent-banner__actions .button:focus-visible,
+body:has(.detail-hero[data-entry-id="oeil-de-meg"]) .consent-banner__copy .tag:hover,
+body:has(.detail-hero[data-entry-id="oeil-de-meg"]) .consent-banner__copy .tag:focus-visible {
+  border-color: rgba(255, 255, 255, 0.76);
+  background: rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+}
+
+@media (max-width: 48rem) {
+  body:has(.detail-hero[data-entry-id="oeil-de-meg"]) .shell-header.zone-card .site-nav > a {
+    box-shadow: 0 0.6rem 1.35rem rgba(111, 84, 59, 0.1);
+  }
+
+  body:has(.detail-hero[data-entry-id="oeil-de-meg"]) .consent-banner__panel {
+    gap: 0.62rem;
+    padding: 0.9rem;
+  }
+
+  body:has(.detail-hero[data-entry-id="oeil-de-meg"]) .consent-banner__actions {
+    gap: 0.42rem;
+  }
+
+  body:has(.detail-hero[data-entry-id="oeil-de-meg"]) .consent-banner__actions .button {
+    min-height: 2.45rem;
+  }
 }
