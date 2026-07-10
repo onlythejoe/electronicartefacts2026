@@ -14708,6 +14708,7 @@ input:focus-visible {
 
 .intent-hero [data-hero-movable="true"].is-hero-dragging {
   z-index: 40 !important;
+  --intent-shift-z: 0px !important;
   cursor: grabbing;
   transition: none;
 }

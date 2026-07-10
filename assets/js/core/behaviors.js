@@ -2276,7 +2276,7 @@
           if (event.button !== 0 || drag || selectedMovableLayer !== layer) return;
           pendingPress = { pointerId: event.pointerId, x: event.clientX, y: event.clientY };
           layer.setPointerCapture?.(event.pointerId);
-        });
+        }, true);
 
         layer.addEventListener("pointermove", (event) => {
           if (!drag) {
