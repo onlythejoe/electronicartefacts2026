@@ -17837,8 +17837,8 @@ body:has(.detail-hero[data-entry-id="oeil-de-meg"]) .consent-banner__copy .tag:f
 
   .shell-header.zone-card .site-nav {
     box-sizing: border-box;
-    width: calc(100% - (var(--header-inset) * 2));
-    margin-inline: var(--header-inset);
+    width: 100%;
+    margin-inline: 0;
     margin-top: 0.08rem;
     padding: 0.12rem 0 0.02rem;
   }
