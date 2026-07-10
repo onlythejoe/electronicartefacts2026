@@ -14390,7 +14390,7 @@ body:has(.detail-hero[data-entry-id="oeil-de-meg"]) .consent-banner__copy .tag:f
     grid-template-columns: 1fr;
     gap: 0.58rem;
     min-height: 8.7rem;
-    padding: var(--header-inset) 0 0.72rem;
+    padding: var(--header-inset) 0 var(--header-inset);
     overflow: visible;
     border-color: rgba(247, 244, 239, 0.16);
     background:
@@ -14428,7 +14428,10 @@ body:has(.detail-hero[data-entry-id="oeil-de-meg"]) .consent-banner__copy .tag:f
   }
 
   .shell-header.zone-card .site-nav {
+    box-sizing: border-box;
+    width: calc(100% - (var(--header-inset) * 2));
+    margin-inline: var(--header-inset);
     margin-top: 0.08rem;
-    padding-top: 0.12rem;
+    padding: 0.12rem 0 0.02rem;
   }
 }
