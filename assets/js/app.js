@@ -18453,7 +18453,7 @@ window.EA_PUBLIC_CATALOG = {
   }
 };
 
-/* ==== assets/js/data/search-index.js ==== */
+/* ==== src/legacy-data/search-index.js ==== */
 window.EA_SEARCH = {
   buildIndex(catalog) {
     const entities = catalog.indexes?.entities || [];

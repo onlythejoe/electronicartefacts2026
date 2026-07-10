@@ -16405,3 +16405,187 @@ figcaption strong,
     grid-column: 1;
   }
 }
+
+/* Navigation and graph clarity pass. */
+.site-nav a {
+  flex: 0 0 auto;
+  max-width: none;
+  font-size: clamp(0.62rem, 0.7vw, 0.74rem);
+  letter-spacing: 0.085em;
+  overflow-wrap: normal;
+  white-space: nowrap;
+  text-wrap: nowrap;
+}
+
+.footer-signature {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 0.7rem;
+  padding: 0.32rem 0 0.32rem 1rem;
+  border: 0;
+  border-left: 1px solid rgba(247, 244, 239, 0.16);
+  border-radius: 0;
+  background: transparent;
+  box-shadow: none;
+  text-align: right;
+}
+
+.footer-signature::before {
+  position: static;
+  flex: 0 0 0.34rem;
+  width: 0.34rem;
+  height: 0.34rem;
+  background: var(--accent);
+  box-shadow: 0 0 0.8rem rgba(234, 220, 207, 0.22);
+}
+
+.footer-signature__framework {
+  max-width: 22ch;
+  font-size: 0.82rem;
+  font-weight: 720;
+  line-height: 1.28;
+}
+
+.footer-signature .footer-note {
+  flex: 0 0 auto;
+  color: rgba(247, 244, 239, 0.52);
+  font-size: 0.76rem;
+}
+
+.research-atlas__projection,
+.research-atlas__panel,
+.graph-surface--home {
+  background: rgba(255, 255, 255, 0.018);
+  box-shadow: none;
+}
+
+.research-atlas__graph.graph-surface__stage,
+.graph-surface--home .graph-surface__stage {
+  border-color: rgba(247, 244, 239, 0.09);
+  background: transparent;
+}
+
+.research-atlas__graph.graph-surface__stage::before,
+.research-atlas__graph.graph-surface__stage::after,
+.graph-surface--home .graph-surface__stage::before,
+.graph-surface--home .graph-surface__stage::after {
+  opacity: 0.26;
+}
+
+.research-atlas__graph::before,
+.research-atlas__graph::after,
+.graph-surface--home .graph-surface__halo,
+.graph-surface--home .graph-surface__ring {
+  opacity: 0.34;
+}
+
+.research-atlas__core.graph-surface__core {
+  width: clamp(3.15rem, 5vw, 4rem);
+  padding: 0.35rem;
+  border-color: rgba(247, 244, 239, 0.16);
+  background: rgba(3, 4, 6, 0.42);
+  box-shadow: none;
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.research-atlas__core span {
+  display: none;
+}
+
+.research-atlas__core strong {
+  font-size: 0.62rem;
+}
+
+.research-atlas__node.graph-surface__node {
+  width: 3rem;
+  min-height: 3rem;
+}
+
+.research-atlas__node-pin {
+  width: 0.58rem;
+  height: 0.58rem;
+  box-shadow: 0 0 0 0.28rem color-mix(in srgb, var(--node-color), transparent 88%);
+}
+
+.research-atlas__node-label.graph-surface__node-body {
+  display: none;
+}
+
+.research-atlas__node.graph-surface__node:hover .research-atlas__node-label,
+.research-atlas__node.graph-surface__node:focus-visible .research-atlas__node-label {
+  display: grid;
+}
+
+@media (max-width: 48rem) {
+  .site-nav a {
+    min-width: auto;
+    min-height: 2.4rem;
+    padding-inline: 0.58rem;
+    font-size: 0.62rem;
+    letter-spacing: 0.065em;
+  }
+
+  .footer-signature {
+    justify-content: flex-start;
+    margin-top: 0.45rem;
+    padding: 0.8rem 0 0;
+    border-top: 1px solid rgba(247, 244, 239, 0.12);
+    border-left: 0;
+    text-align: left;
+  }
+
+  .footer-signature__framework {
+    max-width: 25ch;
+  }
+
+  body[data-page="home"] .home-intent-stage {
+    min-height: clamp(19rem, 80vw, 23rem);
+  }
+
+  body[data-page="home"] .home-intent-stage__frame--lead {
+    left: 2%;
+    top: 10%;
+    width: 60%;
+    height: 72%;
+  }
+
+  body[data-page="home"] .home-intent-stage__frame--system {
+    right: 2%;
+    top: 10%;
+    width: 34%;
+    height: 34%;
+  }
+
+  body[data-page="home"] .home-intent-stage__frame--proof {
+    right: 2%;
+    top: 48%;
+    width: 34%;
+    height: 34%;
+  }
+
+  body[data-page="home"] .home-intent-stage__frame figcaption {
+    display: flex;
+    left: 0.34rem;
+    right: 0.34rem;
+    bottom: 0.34rem;
+    padding: 0.3rem 0.36rem;
+    font-size: 0.5rem;
+    letter-spacing: 0.04em;
+  }
+
+  body[data-page="home"] .home-intent-stage__frame figcaption span {
+    display: none;
+  }
+
+  body[data-page="home"] .home-intent-stage__frame figcaption strong {
+    width: 100%;
+    text-align: left;
+    white-space: nowrap;
+  }
+
+  .research-atlas__graph.graph-surface__stage {
+    min-height: clamp(18rem, 74vw, 22rem);
+  }
+}
