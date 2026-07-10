@@ -758,7 +758,7 @@
       .join(" ");
 
     return `
-      <figure class="card-media-plate" aria-hidden="true">
+      <figure class="card-media-plate"${options.action ? "" : ' aria-hidden="true"'}>
         <img ${imageAttrs} />
         ${
           showCaption
@@ -766,6 +766,11 @@
                 <span>${esc(options.kicker || "Visual")}</span>
                 <strong>${esc(label)}</strong>
               </figcaption>`
+            : ""
+        }
+        ${
+          options.action?.href
+            ? `<a class="card-media-plate__action" href="${esc(options.action.href)}"${options.action.target ? ` target="${esc(options.action.target)}" rel="noreferrer"` : ""}>${esc(options.action.label || "Discover")} <span aria-hidden="true">↗</span></a>`
             : ""
         }
       </figure>
@@ -889,12 +894,18 @@
             ${projectSignatureBubble(item, "card")}
           </div>
         </div>
-        ${cardMediaPlate(item, { kicker: featured ? "Lead visual" : "Visual", caption: !isVestiges })}
+        ${cardMediaPlate(item, { kicker: featured ? "Lead visual" : "Visual", caption: !isVestiges, action: options.mediaAction })}
         ${cardCopy(item.summary || item.description, featured ? 2 : 1)}
         <p class="project-card__editorial-note">${esc(projectReadAs(item))}</p>
         ${signalStrip(item)}
         ${tagRow(homeCardPills(item), { limit: featured ? 4 : 2, compact: true })}
-        ${featured ? linkRow({ label: "View project", href }, [{ label: "More work", href: "./work.html" }]) : ""}
+        ${
+          options.actions?.length
+            ? `<div class="selected-works-card__actions">${linkRow(options.actions[0], options.actions.slice(1))}</div>`
+            : featured
+              ? linkRow({ label: "View project", href }, [{ label: "More work", href: "./work.html" }])
+              : ""
+        }
       </article>
     `;
   };
@@ -1239,47 +1250,71 @@
   `;
 
   const featuredResearch = () => {
-    const projects = (catalog.projects || [])
-      .filter((item) => item.id !== "palimpsests")
-      .slice()
-      .sort((a, b) => entityDateValue(b) - entityDateValue(a));
-    if (!projects.length) return "";
-
-    const lead = featuredProjectForHome(["palimpsests"]) || projects[0];
-    const supporting = projects.filter((item) => item.id !== lead.id).slice(0, 4);
-    const routeCount = countLabel(projects.length, "project");
+    const [lead, oeilDeMeg, vaste, vestiges, forge] = [
+      "voice-capture-studio",
+      "oeil-de-meg",
+      "vaste",
+      "vestiges",
+      "forge",
+    ].map(entityById);
+    if (!lead) return "";
+    const supporting = [oeilDeMeg, vaste, vestiges, forge].filter(Boolean);
 
     return `
       <section class="zone-card hero selected-works-panel">
         <div class="selected-works-panel__head">
           <div class="section-head">
             <p class="eyebrow">WORK</p>
-            <h2>Selected work, with the role and status made explicit.</h2>
-            <p class="lede">Client delivery, proprietary platforms and cultural publishing — three forms of the same exacting practice.</p>
+            <h2>A live studio signal, from client proof to internal R&amp;D.</h2>
+            <p class="lede">Voice Capture Studio is the newest release. VASTE is the active runtime, Vestiges the future flagship, and Forge the internal production system behind emerging pipelines.</p>
           </div>
           <aside class="panel panel--soft selected-works-panel__info">
-            <p class="card__meta">CURATED PATH</p>
-            <strong>${esc(routeCount)}</strong>
-            <p class="card__copy">Begin with the lead project, then compare work across product, technology and culture.</p>
+            <p class="card__meta">STUDIO SIGNALS</p>
+            <strong>Four systems in motion.</strong>
+            <p class="card__copy">Follow the newest public release, the active runtime, the platform in formation and the R&amp;D engine that connects them.</p>
             ${metricRail(
               [
-                { label: "Lead", value: lead.title || lead.category || lead.type || "Project", note: lead.statusLabel || lead.status || "", tone: "system", fill: 0.9 },
-                { label: "Mode", value: lead.category || lead.type || "Project", note: lead.temporality?.creationYear || "", tone: "visual", fill: 0.72 },
+                { label: "Newest", value: "Voice Capture", note: "Live open source", tone: "live", fill: 0.96 },
+                { label: "Trending", value: "VASTE", note: "Knowledge runtime", tone: "system", fill: 0.88 },
+                { label: "Future flagship", value: "Vestiges", note: "Living knowledge platform", tone: "visual", fill: 0.82 },
+                { label: "Internal R&D", value: "Forge", note: "ML · photogrammetry · AI", tone: "research", fill: 0.76 },
               ],
-              { limit: 2, compact: true },
+              { limit: 4, compact: true },
             )}
-            ${linkRow({ label: "Browse Projects", href: "./projects.html" }, [{ label: "See More Work", href: "./work.html" }])}
+            ${linkRow(
+              { label: "Discover Voice Capture", href: "https://electronicartefacts.github.io/voice-capture-studio/", target: "_blank" },
+              [
+                vaste ? { label: "View VASTE", href: entryHrefFor(vaste) } : null,
+                vestiges ? { label: "View Vestiges", href: entryHrefFor(vestiges) } : null,
+                forge ? { label: "Open Forge", href: entryHrefFor(forge) } : null,
+              ].filter(Boolean),
+            )}
           </aside>
         </div>
         <div class="selected-works-panel__grid">
-          ${selectedWorksCard(lead, { featured: true })}
+          ${selectedWorksCard(lead, {
+            featured: true,
+            mediaAction: { label: "Discover", href: "https://electronicartefacts.github.io/voice-capture-studio/", target: "_blank" },
+            actions: [
+              { label: "Discover Voice Capture", href: "https://electronicartefacts.github.io/voice-capture-studio/", target: "_blank" },
+              { label: "Project dossier", href: entryHrefFor(lead) },
+            ],
+          })}
           <div class="selected-works-panel__stack">
             <div class="selected-works-panel__stack-head">
               <p class="card__meta">MORE PATHS</p>
               <span>${esc(countLabel(supporting.length, "item"))}</span>
             </div>
             <div class="selected-works-panel__stack-grid">
-              ${supporting.map((item) => selectedWorksCard(item, { featured: false })).join("")}
+              ${supporting.map((item) => selectedWorksCard(item, {
+                featured: false,
+                actions: item.id === "oeil-de-meg"
+                  ? [
+                    { label: "Discover L’Œil de Meg", href: "https://oeildemeg.fr/", target: "_blank" },
+                    { label: "Project dossier", href: entryHrefFor(item) },
+                  ]
+                  : [],
+              })).join("")}
             </div>
           </div>
         </div>

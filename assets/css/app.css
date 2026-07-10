@@ -16589,3 +16589,158 @@ figcaption strong,
     min-height: clamp(18rem, 74vw, 22rem);
   }
 }
+
+/* Home atlas and selected work: content-first composition. */
+.research-atlas__lower {
+  grid-template-areas:
+    "understanding artefacts"
+    "actions actions";
+  grid-template-columns: minmax(0, 1.08fr) minmax(16rem, 0.92fr);
+  gap: 1rem 1.15rem;
+}
+
+.research-atlas__field {
+  grid-area: understanding;
+  padding-right: 0.35rem;
+}
+
+.research-atlas__artefacts {
+  grid-area: artefacts;
+}
+
+.research-atlas__actions {
+  grid-area: actions;
+  grid-template-columns: repeat(auto-fit, minmax(10rem, 1fr));
+  gap: 0.42rem;
+  padding-top: 0.18rem;
+}
+
+.research-atlas__actions .card__meta {
+  grid-column: 1 / -1;
+  margin-bottom: 0.08rem;
+}
+
+.research-atlas__actions a {
+  min-height: 2.65rem;
+  padding: 0.54rem 0.65rem;
+  border: 1px solid rgba(247, 244, 239, 0.09);
+  border-radius: calc(var(--radius-sm) - 0.08rem);
+  background: rgba(255, 255, 255, 0.018);
+}
+
+.research-atlas__artefact-list a {
+  min-height: 6.75rem;
+  align-content: center;
+}
+
+.selected-works-panel__head {
+  grid-template-columns: minmax(0, 1fr) minmax(19rem, 0.94fr);
+  align-items: stretch;
+}
+
+.selected-works-panel__head > .section-head {
+  display: grid;
+  align-content: space-between;
+  gap: 1rem;
+  min-height: 100%;
+  padding: clamp(1.05rem, 2vw, 1.35rem);
+  border: 1px solid rgba(247, 244, 239, 0.08);
+  border-radius: calc(var(--radius-lg) - 0.1rem);
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.042), rgba(255, 255, 255, 0.012));
+}
+
+.selected-works-panel__head > .section-head h2 {
+  max-width: 16ch;
+}
+
+.selected-works-panel__info .metric-rail {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.selected-works-panel__info .metric-pill {
+  width: 100%;
+  min-width: 0;
+}
+
+.selected-works-panel__info .link-row,
+.selected-works-card__actions .link-row {
+  align-items: stretch;
+}
+
+.selected-works-panel__info .link-row .tag,
+.selected-works-card__actions .tag {
+  min-height: 2.35rem;
+}
+
+.card-media-plate {
+  isolation: isolate;
+}
+
+.card-media-plate__action {
+  position: absolute;
+  right: 0.62rem;
+  top: 0.62rem;
+  z-index: 3;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  min-height: 2.2rem;
+  padding: 0.38rem 0.58rem;
+  border: 1px solid rgba(247, 244, 239, 0.24);
+  border-radius: 999px;
+  background: rgba(5, 6, 8, 0.8);
+  color: rgba(247, 244, 239, 0.96);
+  font-size: 0.68rem;
+  font-weight: 820;
+  letter-spacing: 0.07em;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.card-media-plate__action:hover,
+.card-media-plate__action:focus-visible {
+  border-color: rgba(247, 244, 239, 0.64);
+  background: rgba(247, 244, 239, 0.96);
+  color: #070708;
+}
+
+.selected-works-card__actions {
+  position: relative;
+  z-index: 1;
+}
+
+@media (max-width: 64rem) {
+  .research-atlas__lower {
+    grid-template-areas:
+      "understanding artefacts"
+      "actions actions";
+  }
+}
+
+@media (max-width: 48rem) {
+  .research-atlas__lower {
+    grid-template-areas:
+      "understanding"
+      "artefacts"
+      "actions";
+    grid-template-columns: 1fr;
+  }
+
+  .research-atlas__actions {
+    grid-template-columns: 1fr;
+  }
+
+  .selected-works-panel__head > .section-head {
+    padding: 1rem;
+  }
+
+  .selected-works-panel__info .metric-rail {
+    grid-template-columns: 1fr;
+  }
+
+  .card-media-plate__action {
+    right: 0.38rem;
+    top: 0.38rem;
+  }
+}
