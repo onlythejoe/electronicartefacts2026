@@ -32,6 +32,7 @@ Do not submit before the deployment is live: search engines verify the public ke
 
 - `content/` - source-of-truth Markdown entities and YAML relation statements.
 - `src/schema/` - entity, relation, predicate, and frontmatter contracts.
+- `src/legacy-data/` - non-published compatibility inputs for the legacy browser runtime.
 - `src/config/` - site constants, route rules, and publication contracts.
 - `src/build/` - loaders, graph validation, catalog building, route building, and output helpers.
 - `src/templates/` - page layouts and reusable HTML components.

@@ -29,7 +29,7 @@ The site is a static knowledge platform generated from repository source files.
 | SEO | `src/seo/metadata.ts`, `src/seo/sitemaps.ts`, JSON-LD | Strong foundation after generated entity pages |
 | Search | `src/search/documents.ts` and `search/*.json` | Good foundation for weighted future search |
 | Graph outputs | `graph/entities.json`, `graph/relations.json`, `graph/neighborhoods/*` | Useful for AI and local graph navigation |
-| Legacy data | `assets/js/data/*.js` | Historical corpus, not the current canonical source |
+| Legacy data | `src/legacy-data/*.js` | Historical corpus, not the current canonical source and not publicly served |
 
 ## Existing structures
 
@@ -136,7 +136,7 @@ New durable knowledge should be integrated as follows:
 
 ## Structures not created
 
-No blog collection was created. No separate category engine was created. No duplicate project summaries were created outside the graph. No legacy `assets/js/data/*.js` mutation was made because those files are no longer the best canonical source for new knowledge.
+No blog collection was created. No separate category engine was created. No duplicate project summaries were created outside the graph. No legacy `src/legacy-data/*.js` mutation was made because those files are no longer the best canonical source for new knowledge.
 
 ## Recommendations
 

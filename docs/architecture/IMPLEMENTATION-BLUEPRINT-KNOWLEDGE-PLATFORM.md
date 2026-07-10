@@ -16,7 +16,7 @@ This blueprint converts the approved architecture into a migration that can be e
 The site is a static application with two build scripts and no package manifest.
 
 ```text
-assets/js/data/*.js
+src/legacy-data/*.js
         │
         ▼
 scripts/build-assets.mjs
@@ -62,14 +62,14 @@ The deployment output and source files currently occupy the same directories. Ge
 
 | Concern | Current implementation | Assessment |
 |---|---|---|
-| Entity source | `assets/js/data/entities.js` | Rich content; untyped and structurally inconsistent |
-| Taxonomies | `assets/js/data/taxonomies.js` | Reusable; should become validated controlled vocabularies |
-| Relations | Embedded `relations` plus `assets/js/data/relations.js` | Duplicated, weakly typed, `relatedTo` overloaded |
-| Collections | `assets/js/data/collections.js` with runtime rule resolver | Reusable concept; rules need validation and deterministic build resolution |
-| Timelines | `assets/js/data/timelines.js` | Reusable; timeline entries should become Event entities |
-| Activity | `assets/js/data/activity.js` | Reusable as change/event input; not a durable publication model |
+| Entity source | `src/legacy-data/entities.js` | Rich content; untyped and structurally inconsistent |
+| Taxonomies | `src/legacy-data/taxonomies.js` | Reusable; should become validated controlled vocabularies |
+| Relations | Embedded `relations` plus `src/legacy-data/relations.js` | Duplicated, weakly typed, `relatedTo` overloaded |
+| Collections | `src/legacy-data/collections.js` with runtime rule resolver | Reusable concept; rules need validation and deterministic build resolution |
+| Timelines | `src/legacy-data/timelines.js` | Reusable; timeline entries should become Event entities |
+| Activity | `src/legacy-data/activity.js` | Reusable as change/event input; not a durable publication model |
 | Catalog | `assets/js/catalog.js` | Useful runtime indexes; should consume generated public data |
-| Search index | `assets/js/data/search-index.js` | Basic substring index; replace with build-generated weighted index |
+| Search index | `src/legacy-data/search-index.js` | Basic substring index; replace with build-generated weighted index |
 | Routing | Hard-coded helpers in `main.js`, `view.js`, `behaviors.js` | Must be centralized |
 | Page templates | Flat HTML shells plus `data-render` targets | Reusable for hubs; detail pages must become generated HTML |
 | Detail rendering | `renderDetailPage()` in `assets/js/main.js` | Reusable section renderers; currently too generic and browser-only |

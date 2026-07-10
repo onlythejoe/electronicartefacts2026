@@ -1,0 +1,737 @@
+- generic [active] [ref=e1]:
+  - link "Aller au contenu principal" [ref=e2]:
+    - /url: "#main"
+  - banner:
+    - generic [ref=e3]:
+      - link "electronic Artefacts Studio de technologies créatives pour systèmes numériques complexes" [ref=e4]:
+        - /url: /fr/
+        - generic [ref=e5]:
+          - strong [ref=e6]:
+            - generic [ref=e7]: electronic
+            - generic [ref=e8]: Artefacts
+          - generic [ref=e9]: Studio de technologies créatives pour systèmes numériques complexes
+      - navigation "Navigation principale" [ref=e10]:
+        - link "ACCUEIL" [ref=e11]:
+          - /url: /fr/
+        - link "EXPERTISE" [ref=e12]:
+          - /url: /fr/work.html
+        - link "PROJETS" [ref=e13]:
+          - /url: /fr/projects.html
+        - link "PROGRAMMES" [ref=e14]:
+          - /url: /fr/programs.html
+        - link "RECHERCHE" [ref=e15]:
+          - /url: /fr/research.html
+        - link "CONNAISSANCES" [ref=e16]:
+          - /url: /fr/knowledge/
+        - link "À PROPOS" [ref=e17]:
+          - /url: /fr/about.html
+        - link "CONTACT" [ref=e18]:
+          - /url: /fr/contact.html
+      - button [ref=e20]:
+        - strong [ref=e23]: FR
+  - main [ref=e24]:
+    - generic [ref=e25]:
+      - generic [ref=e26]:
+        - navigation "Fil d’Ariane" [ref=e27]:
+          - link "Accueil" [ref=e28]:
+            - /url: /fr/
+          - generic [ref=e29]: /
+          - link "Projets" [ref=e30]:
+            - /url: /fr/projects.html
+          - generic [ref=e31]: /
+          - generic [ref=e32]: Voice Capture Studio
+        - paragraph [ref=e33]: DOSSIER PROJET
+        - heading "Voice Capture Studio" [level=1] [ref=e34]
+        - paragraph [ref=e35]: Studio d’enregistrement vocal local-first
+        - paragraph [ref=e36]: Voice Capture Studio est une application open source de navigateur pour l’enregistrement vocal dirigé, la révision locale et l’export de voix structurée.
+        - generic [ref=e37]:
+          - link "Lire le brief" [ref=e38]:
+            - /url: "#project-brief"
+          - link "See related context" [ref=e39]:
+            - /url: "#project-graph"
+          - link "Démo live" [ref=e40]:
+            - /url: https://electronicartefacts.github.io/voice-capture-studio/
+          - link "Dépôt GitHub" [ref=e41]:
+            - /url: https://github.com/electronicartefacts/voice-capture-studio
+          - link "Documentation" [ref=e42]:
+            - /url: https://github.com/electronicartefacts/voice-capture-studio/tree/main/docs
+        - generic [ref=e43]:
+          - generic [ref=e44]:
+            - generic [ref=e45]: État
+            - strong [ref=e46]: active
+            - emphasis [ref=e47]: développement
+          - generic [ref=e48]:
+            - generic [ref=e49]: Catégorie
+            - strong [ref=e50]: internal
+            - emphasis [ref=e51]: published
+          - generic [ref=e52]:
+            - generic [ref=e53]: Associé
+            - strong [ref=e54]: "20"
+            - emphasis [ref=e55]: useful links
+          - generic [ref=e56]:
+            - generic [ref=e57]: Médias
+            - strong [ref=e58]: "2"
+            - emphasis [ref=e59]: assets
+        - generic [ref=e60]:
+          - generic [ref=e61]: ingénierie audio
+          - generic [ref=e62]: développement web
+          - generic [ref=e63]: interaction humain-machine
+          - generic [ref=e64]: machine learning
+          - generic [ref=e65]: open source
+          - generic [ref=e66]: Voice Capture Studio
+          - generic [ref=e67]: enregistrement vocal
+          - generic [ref=e68]: dataset vocal
+          - generic [ref=e69]: logiciel de navigateur
+          - generic [ref=e70]: Web Audio
+        - navigation "Sections du projet" [ref=e71]:
+          - link "Brief" [ref=e72]:
+            - /url: "#project-brief"
+          - link "Système" [ref=e73]:
+            - /url: "#project-system"
+          - link "DA" [ref=e74]:
+            - /url: "#project-moodboard"
+          - link "Dev" [ref=e75]:
+            - /url: "#project-dev"
+          - link "Marketing" [ref=e76]:
+            - /url: "#project-marketing"
+          - link "Médias" [ref=e77]:
+            - /url: "#project-media"
+          - link "Graph" [ref=e78]:
+            - /url: "#project-graph"
+          - link "Thèse" [ref=e79]:
+            - /url: "#project-thesis"
+      - figure "Écran live GitHub Pages avec stockage navigateur local, modes de capture et état de calibration. internal" [ref=e80]:
+        - img "Écran live de capture Voice Capture Studio montrant les modes Dataset ML, Doublage et Master audio." [ref=e81]
+        - generic [ref=e82]:
+          - generic [ref=e83]: Écran live GitHub Pages avec stockage navigateur local, modes de capture et état de calibration.
+          - strong [ref=e84]: internal
+    - generic [ref=e85]:
+      - generic [ref=e86]:
+        - paragraph [ref=e87]: CADRE DU PROJET
+        - heading "Brief, contexte et cadre de fonctionnement réunis." [level=2] [ref=e88]
+        - paragraph [ref=e89]: Cette section rassemble le brief, les contraintes, les résultats et les preuves publiques dans un cadre de projet lisible.
+      - generic [ref=e90]:
+        - article [ref=e91]:
+          - paragraph [ref=e92]: Brief
+          - heading "Standardiser l’enregistrement professionnel de parole dans le navigateur afin d’exporter des voix propres, révisables et accompagnées des métadonnées utiles aux workflows en aval." [level=3] [ref=e93]
+        - article [ref=e94]:
+          - paragraph [ref=e95]: Contexte
+          - paragraph [ref=e96]: Les données vocales sont souvent capturées avec des outils improvisés, des dossiers peu structurés et un contexte incomplet. Cela fragilise révision, consentement, contrôle qualité, doublage et préparation de datasets avant même tout workflow de modèle ou d’archive.
+        - article [ref=e97]:
+          - paragraph [ref=e98]: Contraintes
+          - list [ref=e99]:
+            - listitem [ref=e100]: Garder les enregistrements et workspaces locaux au navigateur et aux dossiers choisis par l’utilisateur.
+            - listitem [ref=e101]: Rendre visibles les permissions micro, la durabilité du stockage et les chemins d’export avant l’enregistrement.
+            - listitem [ref=e102]: Préserver la frontière entre préparation de dataset et entraînement de modèle.
+            - listitem [ref=e103]: Utiliser des formats ouverts et une documentation lisible hors de l’application.
+            - listitem [ref=e104]: Maintenir une application déployable comme surface statique GitHub Pages.
+        - article [ref=e105]:
+          - paragraph [ref=e106]: Résultats
+          - list [ref=e107]:
+            - listitem [ref=e108]: Une application GitHub Pages live pour capturer la parole localement dans un navigateur sécurisé.
+            - listitem [ref=e109]: Un dépôt open source documenté avec notes d’architecture, de corpus, de workspace et d’export.
+            - listitem [ref=e110]: Un modèle d’export structuré pour WAV, transcriptions, timing, intentions, rapports qualité et manifestes.
+            - listitem [ref=e111]: Un workflow privacy-first où les enregistrements utilisateurs ne sont pas envoyés à un service distant par le site.
+        - article [ref=e112]:
+          - paragraph [ref=e113]: État de publication
+          - generic [ref=e114]:
+            - generic [ref=e115]:
+              - term [ref=e116]: État
+              - definition [ref=e117]: active
+            - generic [ref=e118]:
+              - term [ref=e119]: Maturité
+              - definition [ref=e120]: développement
+            - generic [ref=e121]:
+              - term [ref=e122]: Confiance
+              - definition [ref=e123]: published
+            - generic [ref=e124]:
+              - term [ref=e125]: Mis à jour
+              - definition [ref=e126]: 2026-07-09
+    - generic [ref=e127]:
+      - generic [ref=e129]:
+        - paragraph [ref=e130]: DIRECTION ARTISTIQUE
+        - heading "Moodboard, signes et système visuel." [level=2] [ref=e131]
+        - paragraph [ref=e132]: Les éléments d'identité, d'ambiance et de langage visuel sont réunis ici lorsqu'ils éclairent la direction du projet.
+      - generic [ref=e133]:
+        - article [ref=e134]:
+          - paragraph [ref=e135]: Kit d'identité
+          - heading "Visual identity signals" [level=3] [ref=e136]
+          - paragraph [ref=e137]: Studio d’enregistrement vocal local-first
+          - generic [ref=e138]:
+            - generic [ref=e139]: Noir
+            - generic [ref=e140]: Ivoire
+            - generic [ref=e141]: Graphite
+            - generic [ref=e142]: Vert signal
+            - generic [ref=e143]: Rouge chaud
+        - generic [ref=e144]:
+          - figure "Écran live GitHub Pages avec stockage navigateur local, modes de capture et état de calibration." [ref=e145]:
+            - img "Écran live de capture Voice Capture Studio montrant les modes Dataset ML, Doublage et Master audio." [ref=e146]
+          - figure "Écran qualité et exports montrant progression locale, version du corpus et contrôles de préparation dataset." [ref=e148]:
+            - img "Écran qualité et exports de Voice Capture Studio." [ref=e149]
+        - complementary [ref=e151]:
+          - paragraph [ref=e152]: Charte graphique
+          - generic "Visual language" [ref=e153]:
+            - strong [ref=e156]: Noir
+            - strong [ref=e159]: Ivoire
+            - strong [ref=e162]: Graphite
+            - strong [ref=e165]: Vert signal
+            - strong [ref=e168]: Rouge chaud
+          - generic [ref=e169]:
+            - paragraph [ref=e170]: Repères
+            - generic [ref=e171]:
+              - generic [ref=e172]: Console locale
+              - generic [ref=e173]: Forme d’onde audio
+              - generic [ref=e174]: Calibration studio
+              - generic [ref=e175]: Export structuré
+              - generic [ref=e176]: Microphone
+              - generic [ref=e177]: Corpus
+              - generic [ref=e178]: Prise
+              - generic [ref=e179]: Dossier local
+              - generic [ref=e180]: ingénierie audio
+              - generic [ref=e181]: développement web
+    - generic [ref=e182]:
+      - generic [ref=e183]:
+        - paragraph [ref=e184]: DÉVELOPPEMENT
+        - heading "Architecture, logique d’implémentation et produit livré." [level=2] [ref=e185]
+        - paragraph [ref=e186]: La lecture technique rassemble les étapes d'approche, les choix d'implémentation, les contraintes actuelles et l'état de réalisation.
+      - generic [ref=e187]:
+        - article [ref=e188]:
+          - paragraph [ref=e189]: Thèse de réalisation
+          - heading "Construire une interface de capture autour de sessions guidées, du choix de langue, de profils locuteurs et de la révision des prises." [level=3] [ref=e190]
+          - list [ref=e191]:
+            - listitem [ref=e192]:
+              - button "Focus development step 1" [ref=e193]: "01"
+              - paragraph [ref=e194]: Capturer l’audio local via Web Audio, puis exporter WAV et JSON pour une révision structurée.
+            - listitem [ref=e195]:
+              - button "Focus development step 2" [ref=e196]: "02"
+              - paragraph [ref=e197]: Traiter les états keeper, review et reject comme partie de la couverture du corpus.
+            - listitem [ref=e198]:
+              - button "Focus development step 3" [ref=e199]: "03"
+              - paragraph [ref=e200]: Séparer l’orchestration React des domaines corpus, sessions, workspace, recording, export et settings.
+            - listitem [ref=e201]:
+              - button "Focus development step 4" [ref=e202]: "04"
+              - paragraph [ref=e203]: Publier le code, la documentation, les modèles d’issues et le workflow GitHub Pages comme base open source.
+        - article [ref=e204]:
+          - paragraph [ref=e205]: Liens techniques
+          - heading "14" [level=3] [ref=e206]
+          - paragraph [ref=e207]: Public technologies, frameworks or dependencies connected to the project.
+          - generic [ref=e208]:
+            - link "Enregistrement vocal" [ref=e209]:
+              - /url: /fr/knowledge/concepts/speech-recording/
+            - link "Jeux de données vocales" [ref=e210]:
+              - /url: /fr/knowledge/concepts/speech-datasets/
+            - link "Logiciel de navigateur" [ref=e211]:
+              - /url: /fr/knowledge/concepts/browser-software/
+            - link "Technologie vocale" [ref=e212]:
+              - /url: /fr/knowledge/concepts/voice-technology/
+            - link "Workflows de machine learning" [ref=e213]:
+              - /url: /fr/knowledge/concepts/machine-learning-workflows/
+        - article [ref=e214]:
+          - paragraph [ref=e215]: Contraintes
+          - heading "5 active" [level=3] [ref=e216]
+          - list [ref=e217]:
+            - listitem [ref=e218]: Garder les enregistrements et workspaces locaux au navigateur et aux dossiers choisis par l’utilisateur.
+            - listitem [ref=e219]: Rendre visibles les permissions micro, la durabilité du stockage et les chemins d’export avant l’enregistrement.
+            - listitem [ref=e220]: Préserver la frontière entre préparation de dataset et entraînement de modèle.
+            - listitem [ref=e221]: Utiliser des formats ouverts et une documentation lisible hors de l’application.
+        - article [ref=e222]:
+          - paragraph [ref=e223]: Pile de réalisation
+          - heading "8 signaux actifs" [level=3] [ref=e224]
+          - generic [ref=e225]:
+            - generic [ref=e226]: React 19
+            - generic [ref=e227]: Vite 6
+            - generic [ref=e228]: TypeScript
+            - generic [ref=e229]: Web Audio API
+            - generic [ref=e230]: Export WAV PCM
+            - generic [ref=e231]: Workspace navigateur privé
+            - generic [ref=e232]: File System Access API
+            - generic [ref=e233]: GitHub Pages
+    - generic [ref=e234]:
+      - generic [ref=e235]:
+        - paragraph [ref=e236]: POSITIONNEMENT
+        - heading "Positionnement, publics et preuves." [level=2] [ref=e237]
+        - paragraph [ref=e238]: "Cette vue présente le projet comme une offre publique : à qui elle s'adresse, ce qu'elle promet et ce qui peut déjà être montré."
+      - generic [ref=e239]:
+        - article [ref=e240]:
+          - paragraph [ref=e241]: Positionnement
+          - heading "Standardiser l’enregistrement professionnel de parole dans le navigateur afin d’exporter des voix propres, révisables et accompagnées des métadonnées utiles aux workflows en aval." [level=3] [ref=e242]
+          - paragraph [ref=e243]: Les données vocales sont souvent capturées avec des outils improvisés, des dossiers peu structurés et un contexte incomplet. Cela fragilise révision, consentement, contrôle qualité, doublage et préparation de datasets avant même tout workflow de modèle ou d’archive.
+        - article [ref=e244]:
+          - paragraph [ref=e245]: Publics
+          - heading "1 groupe public" [level=3] [ref=e246]
+          - link "Electronic Artefacts" [ref=e248]:
+            - /url: /fr/organizations/electronic-artefacts/
+        - article [ref=e249]:
+          - paragraph [ref=e250]: Réalisations
+          - heading "6 signals" [level=3] [ref=e251]
+          - list [ref=e252]:
+            - listitem [ref=e253]: Une application GitHub Pages live pour capturer la parole localement dans un navigateur sécurisé.
+            - listitem [ref=e254]: Un dépôt open source documenté avec notes d’architecture, de corpus, de workspace et d’export.
+            - listitem [ref=e255]: Un modèle d’export structuré pour WAV, transcriptions, timing, intentions, rapports qualité et manifestes.
+            - listitem [ref=e256]: Un workflow privacy-first où les enregistrements utilisateurs ne sont pas envoyés à un service distant par le site.
+            - listitem [ref=e257]: Dépôt Voice Capture Studio
+            - listitem [ref=e258]: 2 media assets
+        - article [ref=e259]:
+          - paragraph [ref=e260]: Axes de message
+          - heading "Studio d’enregistrement vocal local-first" [level=3] [ref=e261]
+          - generic [ref=e262]:
+            - generic [ref=e263]: Enregistrement local-first
+            - generic [ref=e264]: Préparation de dataset vocal
+            - generic [ref=e265]: Outil de navigateur open source
+            - generic [ref=e266]: Workflow voix off
+            - generic [ref=e267]: Workflow doublage
+            - generic [ref=e268]: Capture privacy-first
+            - generic [ref=e269]: internal
+            - generic [ref=e270]: active
+    - generic [ref=e271]:
+      - generic [ref=e272]:
+        - generic [ref=e273]:
+          - paragraph [ref=e274]: LECTURE DU PROJET
+          - heading "Un guide concis du dossier projet." [level=2] [ref=e275]
+          - paragraph [ref=e276]: Passez du cadrage stratégique au contexte, à l'implémentation et aux preuves sans perdre le fil de la page.
+        - tablist "Sections du dossier projet" [ref=e277]:
+          - tab "Brief" [selected] [ref=e278]
+          - tab "Contexte" [ref=e279]
+          - tab "Approach" [ref=e280]
+          - tab "Réalisations" [ref=e281]
+      - tabpanel "Brief" [ref=e283]:
+        - paragraph [ref=e284]: BRIEF PROJET
+        - heading "Le problème auquel répond ce projet." [level=3] [ref=e285]
+        - paragraph [ref=e286]: Standardiser l’enregistrement professionnel de parole dans le navigateur afin d’exporter des voix propres, révisables et accompagnées des métadonnées utiles aux workflows en aval.
+    - generic [ref=e287]:
+      - generic [ref=e288]:
+        - generic [ref=e289]:
+          - paragraph [ref=e290]: LIVRABLES
+          - heading "Livrables adressables." [level=2] [ref=e291]
+        - generic [ref=e292]:
+          - article [ref=e293]:
+            - paragraph [ref=e294]: PROJET
+            - heading [level=3] [ref=e295]:
+              - link "Voice Capture Studio" [ref=e296]:
+                - /url: /fr/projects/voice-capture-studio/
+            - paragraph [ref=e297]: Voice Capture Studio est une application open source de navigateur pour l’enregistrement vocal dirigé, la révision locale et l’export de voix structurée.
+            - link "Ouvrir la page" [ref=e299]:
+              - /url: /fr/projects/voice-capture-studio/
+          - article [ref=e300]:
+            - paragraph [ref=e301]: ARTEFACT
+            - heading [level=3] [ref=e302]:
+              - link "Dépôt Voice Capture Studio" [ref=e303]:
+                - /url: /fr/archive/artefacts/voice-capture-studio-repository/
+            - paragraph [ref=e304]: Le dépôt Voice Capture Studio contient l’application open source React, Vite et TypeScript, sa documentation, ses tests et son workflow GitHub Pages pour la capture vocale local-first.
+            - link "Ouvrir la page" [ref=e306]:
+              - /url: /fr/archive/artefacts/voice-capture-studio-repository/
+      - generic [ref=e307]:
+        - generic [ref=e308]:
+          - paragraph [ref=e309]: PRODUCTION
+          - heading "Parties prenantes et crédits." [level=2] [ref=e310]
+        - article [ref=e312]:
+          - paragraph [ref=e313]: ORGANISATION
+          - heading [level=3] [ref=e314]:
+            - link "Electronic Artefacts" [ref=e315]:
+              - /url: /fr/organizations/electronic-artefacts/
+          - paragraph [ref=e316]: Electronic Artefacts est un studio indépendant de technologies créatives qui mène des missions clients, développe ses propres systèmes et publie des travaux de recherche et de création.
+          - link "Ouvrir la page" [ref=e318]:
+            - /url: /fr/organizations/electronic-artefacts/
+    - generic [ref=e319]:
+      - generic [ref=e320]:
+        - paragraph [ref=e321]: MEDIA EVIDENCE
+        - heading "Visual and documentary material." [level=2] [ref=e322]
+        - paragraph [ref=e323]: Screenshots, marks, recordings and documents appear here when they help show how the project works.
+      - generic [ref=e324]:
+        - figure "Écran live GitHub Pages avec stockage navigateur local, modes de capture et état de calibration." [ref=e325]:
+          - img "Écran live de capture Voice Capture Studio montrant les modes Dataset ML, Doublage et Master audio." [ref=e326]
+        - figure "Écran qualité et exports montrant progression locale, version du corpus et contrôles de préparation dataset." [ref=e328]:
+          - img "Écran qualité et exports de Voice Capture Studio." [ref=e329]
+    - generic [ref=e331]:
+      - generic [ref=e332]:
+        - generic [ref=e333]:
+          - paragraph [ref=e334]: RELATED CONTEXT
+          - heading "20 useful links around Voice Capture Studio." [level=2] [ref=e335]
+          - paragraph [ref=e336]: Use these links to move from the project toward related people, systems, concepts and evidence.
+        - article [ref=e337]:
+          - paragraph [ref=e338]: Created by
+          - heading [level=3] [ref=e339]:
+            - link "Electronic Artefacts" [ref=e340]:
+              - /url: /fr/organizations/electronic-artefacts/
+          - paragraph [ref=e341]: Electronic Artefacts created Voice Capture Studio as an open-source browser application for local-first speech recording.
+      - generic [ref=e342]:
+        - generic [ref=e360]:
+          - generic [ref=e361]: PROJET
+          - strong [ref=e362]: Voice Capture Studio
+        - button "PRODUCTION Electronic Artefacts" [ref=e363]:
+          - generic [ref=e364]: PRODUCTION
+          - strong [ref=e365]: Electronic Artefacts
+        - button "PRODUCTION Electronic Artefacts" [ref=e366]:
+          - generic [ref=e367]: PRODUCTION
+          - strong [ref=e368]: Electronic Artefacts
+        - button "PRODUCTION Electronic Artefacts" [ref=e369]:
+          - generic [ref=e370]: PRODUCTION
+          - strong [ref=e371]: Electronic Artefacts
+        - button "EVIDENCE Dépôt Voice Capture Studio" [ref=e372]:
+          - generic [ref=e373]: EVIDENCE
+          - strong [ref=e374]: Dépôt Voice Capture Studio
+        - button "EVIDENCE Dépôt Voice Capture Studio" [ref=e375]:
+          - generic [ref=e376]: EVIDENCE
+          - strong [ref=e377]: Dépôt Voice Capture Studio
+        - button "STRUCTURE Collection Voice Capture Studio" [ref=e378]:
+          - generic [ref=e379]: STRUCTURE
+          - strong [ref=e380]: Collection Voice Capture Studio
+        - button "IMPLEMENTATION Enregistrement vocal" [ref=e381]:
+          - generic [ref=e382]: IMPLEMENTATION
+          - strong [ref=e383]: Enregistrement vocal
+        - button "IMPLEMENTATION Jeux de données vocales" [ref=e384]:
+          - generic [ref=e385]: IMPLEMENTATION
+          - strong [ref=e386]: Jeux de données vocales
+        - button "IMPLEMENTATION Logiciel de navigateur" [ref=e387]:
+          - generic [ref=e388]: IMPLEMENTATION
+          - strong [ref=e389]: Logiciel de navigateur
+        - button "IMPLEMENTATION Technologie vocale" [ref=e390]:
+          - generic [ref=e391]: IMPLEMENTATION
+          - strong [ref=e392]: Technologie vocale
+        - button "IMPLEMENTATION Workflows de machine learning" [ref=e393]:
+          - generic [ref=e394]: IMPLEMENTATION
+          - strong [ref=e395]: Workflows de machine learning
+        - button "IMPLEMENTATION open source" [ref=e396]:
+          - generic [ref=e397]: IMPLEMENTATION
+          - strong [ref=e398]: open source
+        - button "IMPLEMENTATION Audio web" [ref=e399]:
+          - generic [ref=e400]: IMPLEMENTATION
+          - strong [ref=e401]: Audio web
+        - button "IMPLEMENTATION Métadonnées" [ref=e402]:
+          - generic [ref=e403]: IMPLEMENTATION
+          - strong [ref=e404]: Métadonnées
+        - button "IMPLEMENTATION Provenance" [ref=e405]:
+          - generic [ref=e406]: IMPLEMENTATION
+          - strong [ref=e407]: Provenance
+        - button "IMPLEMENTATION Interaction humain-machine" [ref=e408]:
+          - generic [ref=e409]: IMPLEMENTATION
+          - strong [ref=e410]: Interaction humain-machine
+        - button "IMPLEMENTATION Web Audio API" [ref=e411]:
+          - generic [ref=e412]: IMPLEMENTATION
+          - strong [ref=e413]: Web Audio API
+        - button "IMPLEMENTATION Comment une IA peut-elle comprendre quelqu'un dès sa première conversation ?" [ref=e414]:
+          - generic [ref=e415]: IMPLEMENTATION
+          - strong [ref=e416]: Comment une IA peut-elle comprendre quelqu'un dès sa première conversation ?
+        - button "IMPLEMENTATION Comment un logiciel peut-il devenir explicable par son propre graphe de connaissance ?" [ref=e417]:
+          - generic [ref=e418]: IMPLEMENTATION
+          - strong [ref=e419]: Comment un logiciel peut-il devenir explicable par son propre graphe de connaissance ?
+        - button "IMPLEMENTATION Comment les datasets vocaux peuvent-ils devenir reproductibles, structurés et privacy-first ?" [ref=e420]:
+          - generic [ref=e421]: IMPLEMENTATION
+          - strong [ref=e422]: Comment les datasets vocaux peuvent-ils devenir reproductibles, structurés et privacy-first ?
+    - article [ref=e423]:
+      - generic [ref=e424]:
+        - paragraph [ref=e425]: THÈSE DU PROJET
+        - heading "Notes de lecture détaillées." [level=2] [ref=e426]
+      - heading "Vue d’ensemble" [level=2] [ref=e427]
+      - paragraph [ref=e428]: Voice Capture Studio est une application de navigateur local-first pour la capture vocale dirigée. Elle aide un locuteur à passer d’une session vide à des prises propres, révisables et accompagnées de transcriptions, timing, qualité et structure d’export.
+      - paragraph [ref=e429]:
+        - text: L’application est disponible sur
+        - link "electronicartefacts.github.io/voice-capture-studio" [ref=e430]:
+          - /url: https://electronicartefacts.github.io/voice-capture-studio/
+        - text: et le code source est public sur
+        - link "github.com/electronicartefacts/voice-capture-studio" [ref=e431]:
+          - /url: https://github.com/electronicartefacts/voice-capture-studio
+        - text: .
+      - heading "Objectif" [level=2] [ref=e432]
+      - paragraph [ref=e433]: Le projet existe parce que la voix professionnelle est souvent enregistrée avant que le workflow soit prêt. Une prise peut sembler utilisable, mais le prompt, la langue, le locuteur, la pièce, le micro, l’état de révision, le timing et le manifeste d’export peuvent se perdre dans des dossiers informels.
+      - paragraph [ref=e434]: Voice Capture Studio traite ces détails comme une partie de l’enregistrement. L’application prépare un matériau vocal structuré pour archives, datasets de parole, voix off, doublage et workflows de machine learning en aval.
+      - heading "Ce que l’application ne fait pas" [level=2] [ref=e435]
+      - paragraph [ref=e436]: Voice Capture Studio n’entraîne pas de modèles d’IA. L’application enregistre la parole, révise les prises et exporte un matériau structuré. Tout entraînement, alignement, normalisation, traitement d’archive ou évaluation de modèle appartient à un workflow séparé avec ses propres exigences de gouvernance et de consentement.
+      - paragraph [ref=e437]: "Cette frontière compte : l’application prépare le matériau source, elle ne prétend pas être une pipeline de modèle."
+      - heading "Modes d’enregistrement" [level=2] [ref=e438]
+      - paragraph [ref=e439]: "L’application live expose trois modes :"
+      - list [ref=e440]:
+        - listitem [ref=e441]: "Dataset ML : phrases calibrées, progression phonétique et exports prêts pour des workflows d’entraînement."
+        - listitem [ref=e442]: "Doublage : texte collé ou fichier découpé en répliques enregistrables."
+        - listitem [ref=e443]: "Master audio : texte local, piste de référence et capture de voix séparée."
+      - paragraph [ref=e444]: "La page utilise “dataset” au sens de préparation : des enregistrements acceptés et leurs métadonnées peuvent devenir des entrées utiles, mais l’entraînement de modèle reste en aval."
+      - heading "Fonctions clés" [level=2] [ref=e445]
+      - list [ref=e446]:
+        - listitem [ref=e447]: Sessions guidées pour corpus de départ français et anglais.
+        - listitem [ref=e448]: Capture micro locale dans le navigateur.
+        - listitem [ref=e449]: Export WAV PCM mono 48 kHz / 24-bit lorsque le navigateur le permet.
+        - listitem [ref=e450]: Calibration du silence de pièce et premiers contrôles techniques.
+        - listitem [ref=e451]: Métadonnées de transcription, timing, intention, prosodie et qualité pour chaque prise acceptée.
+        - listitem [ref=e452]: États keeper, review et reject pour ne faire progresser la couverture que sur le matériau accepté.
+        - listitem [ref=e453]: Workspace privé du navigateur avec téléchargements explicites et export dossier lorsque possible.
+        - listitem [ref=e454]: Manifest PWA et service worker pour une distribution statique sur GitHub Pages.
+      - heading "Architecture" [level=2] [ref=e455]
+      - paragraph [ref=e456]: Le dépôt sépare le shell applicatif React des modules de domaine. Le shell coordonne capture navigateur, adaptateurs de stockage et orchestration d’export. Les domaines portent corpus, sessions, workspace, couverture, recording, speakers, settings et contrats d’export.
+      - paragraph [ref=e457]: "La décision importante est la direction des dépendances : les domaines n’importent pas React, l’interface navigateur, les routes ou le CSS. Cela garde les comportements de capture, de planification du corpus et d’export testables hors d’une interface unique."
+      - heading "Stack technique" [level=2] [ref=e458]
+      - paragraph [ref=e459]: Voice Capture Studio est construit avec React, Vite et TypeScript. L’application utilise Web Audio pour la capture locale, le stockage navigateur pour l’état du workspace, la File System Access API lorsque disponible, le téléchargement explicite en fallback, un manifest PWA et un workflow de déploiement GitHub Pages.
+      - paragraph [ref=e460]: La validation du dépôt vérifie formatage, linting, références TypeScript, tests unitaires et build de production.
+      - heading "Philosophie de design" [level=2] [ref=e461]
+      - paragraph [ref=e462]: "L’interface n’est pas un enregistreur générique. Elle fonctionne comme une petite surface de studio : choisir un mode, vérifier l’environnement, confirmer locuteur et langue, capturer la calibration, enregistrer les prises, puis exporter la session avec assez de métadonnées pour la relire plus tard."
+      - paragraph [ref=e463]: Le design rend l’état technique visible parce qu’un logiciel local-first doit produire de la confiance. Mode de stockage, micro, support WAV, accès dossier, version du corpus et calibration font partie de l’expérience.
+      - heading "Ouvrir source" [level=2] [ref=e464]
+      - paragraph [ref=e465]: Le projet est publié sous licence MIT. L’open source est important ici parce que les workflows vocaux doivent être inspectables. Une équipe qui prépare de la voix doit savoir ce qui est stocké, ce qui est exporté, ce qui n’est jamais envoyé et où se situent les frontières de données.
+      - paragraph [ref=e466]: Le dépôt inclut contribution guidelines, signalement sécurité, modèles d’issues, modèle de pull request et documentation d’architecture, corpus, workspace, export et GitHub Pages.
+      - heading "Vie privée" [level=2] [ref=e467]
+      - paragraph [ref=e468]: Les enregistrements vocaux et workspaces générés sont des données utilisateur. L’application est conçue pour que les prises restent dans le navigateur ou dans le dossier choisi par l’utilisateur. Le dépôt public doit contenir code et définitions de corpus, pas des voix privées.
+      - paragraph [ref=e469]: Le stockage navigateur est utile, mais ce n’est pas une archive permanente. Les exports explicites et les workflows dossier sont donc des parties centrales du produit.
+      - heading "Modèle d’export" [level=2] [ref=e470]
+      - paragraph [ref=e471]: La cible principale est un dossier de session de capture structuré. Le dépôt documente fichiers JSON de session, locuteur, corpus et manifeste, WAV et transcript par prise, métadonnées de timing et d’intention, rapports qualité et rapports de préparation dataset.
+      - paragraph [ref=e472]: Chaque prise acceptée est plus qu’un fichier audio. Elle porte assez de structure pour soutenir alignement, révision, analyse de couverture ou traitement d’archive en aval.
+      - heading "Documentation" [level=2] [ref=e473]
+      - paragraph [ref=e474]: "Points d’entrée utiles :"
+      - list [ref=e475]:
+        - listitem [ref=e476]:
+          - link "Architecture doctrine" [ref=e477]:
+            - /url: https://github.com/electronicartefacts/voice-capture-studio/blob/main/docs/architecture-doctrine.md
+        - listitem [ref=e478]:
+          - link "System model" [ref=e479]:
+            - /url: https://github.com/electronicartefacts/voice-capture-studio/blob/main/docs/system-model.md
+        - listitem [ref=e480]:
+          - link "Corpus structure" [ref=e481]:
+            - /url: https://github.com/electronicartefacts/voice-capture-studio/blob/main/docs/corpus-structure.md
+        - listitem [ref=e482]:
+          - link "Workspace structure" [ref=e483]:
+            - /url: https://github.com/electronicartefacts/voice-capture-studio/blob/main/docs/workspace-structure.md
+        - listitem [ref=e484]:
+          - link "Export structure" [ref=e485]:
+            - /url: https://github.com/electronicartefacts/voice-capture-studio/blob/main/docs/export-structure.md
+      - heading "Roadmap" [level=2] [ref=e486]
+      - paragraph [ref=e487]: La roadmap publique inclut la restauration/import de workspaces sauvegardés, des migrations explicites de schéma, des tombstones de corpus pour la compatibilité longue durée, un meilleur premier parcours de sélection de dossier, des cibles d’export supplémentaires et l’automatisation des captures/release artifacts.
+      - paragraph [ref=e488]: Ces éléments relèvent de l’infrastructure produit. Ils distinguent une application locale prometteuse d’un vrai workflow d’archive vocale.
+      - heading "Projets Electronic Artefacts liés" [level=2] [ref=e489]
+      - paragraph [ref=e490]:
+        - text: Voice Capture Studio se situe près d’
+        - link "ORETH" [ref=e491]:
+          - /url: /fr/programs/oreth/
+        - text: parce que les deux traitent l’audio comme matériau structuré. Il se relie à l’
+        - link "Audio web" [ref=e492]:
+          - /url: /fr/knowledge/concepts/web-audio/
+        - text: et au
+        - link "Web Audio API" [ref=e493]:
+          - /url: /fr/knowledge/technologies/web-audio-api/
+        - text: parce que le navigateur est le runtime. Il se relie à l’
+        - link "open source" [ref=e494]:
+          - /url: /fr/knowledge/concepts/open-source/
+        - text: parce que code et documentation sont inspectables.
+      - paragraph [ref=e495]: "Le projet étend aussi l’écosystème Electronic Artefacts vers un artefact pratique de technologie vocale : un outil qui fait une chose clairement avant qu’une archive, un modèle, un doublage ou un workflow de production ne reçoive les données."
+    - generic [ref=e496]:
+      - generic [ref=e497]:
+        - generic [ref=e498]:
+          - generic [ref=e499]:
+            - paragraph [ref=e500]: Enregistrer et partager
+            - heading "Voice Capture Studio" [level=2] [ref=e501]
+          - generic [ref=e502]: Actif
+        - generic "Actions sur l’article" [ref=e503]:
+          - button "Aimer cet article" [ref=e504]:
+            - generic [ref=e505]: ♡
+            - strong [ref=e506]: "0"
+          - button [ref=e507]:
+            - generic [ref=e508]: ↗
+            - strong [ref=e509]: Partager
+        - generic "Métadonnées de l’article" [ref=e510]:
+          - generic [ref=e511]:
+            - term [ref=e512]: Type
+            - definition [ref=e513]: Projet
+          - generic [ref=e514]:
+            - term [ref=e515]: Maturité
+            - definition [ref=e516]: Développement
+          - generic [ref=e517]:
+            - term [ref=e518]: Mis à jour
+            - definition [ref=e519]: 2026-07-09
+          - generic [ref=e520]:
+            - term [ref=e521]: Version
+            - definition [ref=e522]: 1.0.0
+        - paragraph [ref=e523]
+      - generic [ref=e524]:
+        - generic [ref=e525]:
+          - paragraph [ref=e526]: Référence
+          - heading "Citer cette page" [level=2] [ref=e527]
+        - paragraph [ref=e528]: Voice Capture Studio. 1.0.0. Electronic Artefacts, 2026-07-09. https://electronicartefacts.com/fr/projects/voice-capture-studio/
+        - link "URL canonique" [ref=e530]:
+          - /url: https://electronicartefacts.com/fr/projects/voice-capture-studio/
+    - generic [ref=e531]:
+      - generic [ref=e532]:
+        - paragraph [ref=e533]: RELATIONS TYPÉES
+        - heading "Travaux et idées associés." [level=2] [ref=e534]
+        - paragraph [ref=e535]: Chaque relation précise ce qui relie les deux entrées et pourquoi ce lien compte.
+      - generic [ref=e536]:
+        - article [ref=e537]:
+          - paragraph [ref=e538]: production
+          - generic [ref=e539]:
+            - generic [ref=e540]:
+              - paragraph [ref=e541]: Created by
+              - heading [level=3] [ref=e542]:
+                - link "Electronic Artefacts" [ref=e543]:
+                  - /url: /fr/organizations/electronic-artefacts/
+              - paragraph [ref=e544]: Electronic Artefacts created Voice Capture Studio as an open-source browser application for local-first speech recording.
+            - generic [ref=e545]:
+              - paragraph [ref=e546]: Maintained by
+              - heading [level=3] [ref=e547]:
+                - link "Electronic Artefacts" [ref=e548]:
+                  - /url: /fr/organizations/electronic-artefacts/
+              - paragraph [ref=e549]: Electronic Artefacts maintains the Voice Capture Studio project, repository and public GitHub Pages deployment.
+            - generic [ref=e550]:
+              - paragraph [ref=e551]: Published by
+              - heading [level=3] [ref=e552]:
+                - link "Electronic Artefacts" [ref=e553]:
+                  - /url: /fr/organizations/electronic-artefacts/
+              - paragraph [ref=e554]: Voice Capture Studio is published by Electronic Artefacts as an open-source software artefact.
+        - article [ref=e555]:
+          - paragraph [ref=e556]: evidence
+          - generic [ref=e557]:
+            - generic [ref=e558]:
+              - paragraph [ref=e559]: Evidenced by
+              - heading [level=3] [ref=e560]:
+                - link "Dépôt Voice Capture Studio" [ref=e561]:
+                  - /url: /fr/archive/artefacts/voice-capture-studio-repository/
+              - paragraph [ref=e562]: The public GitHub repository provides source evidence for Voice Capture Studio, including code, documentation, tests and deployment configuration.
+            - generic [ref=e563]:
+              - paragraph [ref=e564]: Documented by
+              - heading [level=3] [ref=e565]:
+                - link "Dépôt Voice Capture Studio" [ref=e566]:
+                  - /url: /fr/archive/artefacts/voice-capture-studio-repository/
+              - paragraph [ref=e567]: The Voice Capture Studio repository documents the application architecture, export structure, privacy boundary and GitHub Pages deployment.
+        - article [ref=e568]:
+          - paragraph [ref=e569]: structure
+          - generic [ref=e571]:
+            - paragraph [ref=e572]: Member of collection
+            - heading [level=3] [ref=e573]:
+              - link "Collection Voice Capture Studio" [ref=e574]:
+                - /url: /fr/archive/collections/voice-capture-studio/
+            - paragraph [ref=e575]: Voice Capture Studio is the lead project in the Voice Capture Studio Collection.
+        - article [ref=e576]:
+          - paragraph [ref=e577]: implementation
+          - generic [ref=e578]:
+            - generic [ref=e579]:
+              - paragraph [ref=e580]: Applies concept
+              - heading [level=3] [ref=e581]:
+                - link "Enregistrement vocal" [ref=e582]:
+                  - /url: /fr/knowledge/concepts/speech-recording/
+              - paragraph [ref=e583]: Voice Capture Studio applies speech-recording principles through guided prompts, room-tone calibration, takes and review states.
+            - generic [ref=e584]:
+              - paragraph [ref=e585]: Applies concept
+              - heading [level=3] [ref=e586]:
+                - link "Jeux de données vocales" [ref=e587]:
+                  - /url: /fr/knowledge/concepts/speech-datasets/
+              - paragraph [ref=e588]: Voice Capture Studio prepares structured speech dataset material through WAV audio, transcripts, timing, intent, quality metadata and manifests.
+            - generic [ref=e589]:
+              - paragraph [ref=e590]: Applies concept
+              - heading [level=3] [ref=e591]:
+                - link "Logiciel de navigateur" [ref=e592]:
+                  - /url: /fr/knowledge/concepts/browser-software/
+              - paragraph [ref=e593]: Voice Capture Studio applies browser-software principles by running as a static web application with local storage, microphone access and explicit exports.
+            - generic [ref=e594]:
+              - paragraph [ref=e595]: Applies concept
+              - heading [level=3] [ref=e596]:
+                - link "Technologie vocale" [ref=e597]:
+                  - /url: /fr/knowledge/concepts/voice-technology/
+              - paragraph [ref=e598]: Voice Capture Studio applies voice-technology concerns around capture, metadata, review, local privacy and downstream workflow boundaries.
+            - generic [ref=e599]:
+              - paragraph [ref=e600]: Applies concept
+              - heading [level=3] [ref=e601]:
+                - link "Workflows de machine learning" [ref=e602]:
+                  - /url: /fr/knowledge/concepts/machine-learning-workflows/
+              - paragraph [ref=e603]: Voice Capture Studio supports downstream machine-learning workflows by preparing accepted recordings and metadata without performing model training itself.
+            - generic [ref=e604]:
+              - paragraph [ref=e605]: Applies concept
+              - heading [level=3] [ref=e606]:
+                - link "open source" [ref=e607]:
+                  - /url: /fr/knowledge/concepts/open-source/
+              - paragraph [ref=e608]: Voice Capture Studio applies open-source practice through a public MIT-licensed repository with contribution, issue and documentation surfaces.
+            - generic [ref=e609]:
+              - paragraph [ref=e610]: Applies concept
+              - heading [level=3] [ref=e611]:
+                - link "Audio web" [ref=e612]:
+                  - /url: /fr/knowledge/concepts/web-audio/
+              - paragraph [ref=e613]: Voice Capture Studio applies web-audio practice by capturing and preparing speech directly inside a browser runtime.
+            - generic [ref=e614]:
+              - paragraph [ref=e615]: Applies concept
+              - heading [level=3] [ref=e616]:
+                - link "Métadonnées" [ref=e617]:
+                  - /url: /fr/knowledge/concepts/metadata/
+              - paragraph [ref=e618]: Voice Capture Studio applies metadata discipline by attaching transcript, timing, intent, quality and manifest information to recorded takes.
+            - generic [ref=e619]:
+              - paragraph [ref=e620]: Applies concept
+              - heading [level=3] [ref=e621]:
+                - link "Provenance" [ref=e622]:
+                  - /url: /fr/knowledge/concepts/provenance/
+              - paragraph [ref=e623]: Voice Capture Studio applies provenance concerns by keeping prompt identifiers, corpus versions, speaker context and export manifests visible.
+            - generic [ref=e624]:
+              - paragraph [ref=e625]: Applies concept
+              - heading [level=3] [ref=e626]:
+                - link "Interaction humain-machine" [ref=e627]:
+                  - /url: /fr/knowledge/concepts/human-computer-interaction/
+              - paragraph [ref=e628]: Voice Capture Studio applies HCI principles by making recording modes, environment checks, local storage and quality gates visible before capture.
+            - generic [ref=e629]:
+              - paragraph [ref=e630]: Uses technology
+              - heading [level=3] [ref=e631]:
+                - link "Web Audio API" [ref=e632]:
+                  - /url: /fr/knowledge/technologies/web-audio-api/
+              - paragraph [ref=e633]: Voice Capture Studio uses the Web Audio API for browser-local microphone capture and recording workflows.
+            - generic [ref=e634]:
+              - paragraph [ref=e635]: Implements
+              - heading [level=3] [ref=e636]:
+                - link "Comment une IA peut-elle comprendre quelqu'un dès sa première conversation ?" [ref=e637]:
+                  - /url: /fr/research/questions/first-conversation-understanding/
+              - paragraph [ref=e638]: Voice Capture Studio is listed as a current software or project answer for the research question "How can an AI understand someone during its very first conversation?".
+            - generic [ref=e639]:
+              - paragraph [ref=e640]: Implements
+              - heading [level=3] [ref=e641]:
+                - link "Comment un logiciel peut-il devenir explicable par son propre graphe de connaissance ?" [ref=e642]:
+                  - /url: /fr/research/questions/self-explaining-knowledge-graph-software/
+              - paragraph [ref=e643]: Voice Capture Studio is listed as a current software or project answer for the research question "How can software become explainable through its own knowledge graph?".
+            - generic [ref=e644]:
+              - paragraph [ref=e645]: Implements
+              - heading [level=3] [ref=e646]:
+                - link "Comment les datasets vocaux peuvent-ils devenir reproductibles, structurés et privacy-first ?" [ref=e647]:
+                  - /url: /fr/research/questions/speech-dataset-reproducibility/
+              - paragraph [ref=e648]: Voice Capture Studio is listed as a current software or project answer for the research question "How can speech datasets become reproducible, structured and privacy-first?".
+  - contentinfo [ref=e649]:
+    - generic [ref=e650]:
+      - generic [ref=e651]:
+        - generic [ref=e652]:
+          - strong [ref=e653]:
+            - generic [ref=e654]: electronic
+            - generic [ref=e655]: Artefacts
+          - generic [ref=e656]: Studio indépendant de technologies créatives pour produits numériques complexes, systèmes de connaissance, logiciels propriétaires et création culturelle issue de la recherche.
+        - navigation "Liens rapides" [ref=e657]:
+          - link "ACCUEIL" [ref=e658]:
+            - /url: /fr/
+          - link "EXPERTISE" [ref=e659]:
+            - /url: /fr/work.html
+          - link "PROJETS" [ref=e660]:
+            - /url: /fr/projects.html
+          - link "PROGRAMMES" [ref=e661]:
+            - /url: /fr/programs.html
+          - link "RECHERCHE" [ref=e662]:
+            - /url: /fr/research.html
+          - link "CONNAISSANCES" [ref=e663]:
+            - /url: /fr/knowledge/
+          - link "PUBLICATIONS" [ref=e664]:
+            - /url: /fr/publications/
+          - link "ARCHIVES" [ref=e665]:
+            - /url: /fr/archive.html
+          - link "À PROPOS" [ref=e666]:
+            - /url: /fr/about.html
+          - link "CONTACT" [ref=e667]:
+            - /url: /fr/contact.html
+          - link "RECHERCHE" [ref=e668]:
+            - /url: /fr/search.html
+          - link "MENTIONS LÉGALES" [ref=e669]:
+            - /url: /fr/mentions-legales.html
+          - link "CONFIDENTIALITÉ" [ref=e670]:
+            - /url: /fr/confidentialite.html
+          - button "COOKIES" [ref=e671]
+          - link "VASTE" [ref=e672]:
+            - /url: https://www.vaste.space/
+      - generic "Signature du site" [ref=e673]:
+        - link "Construit avec l’Electronic Artefacts Light Framework" [ref=e674]:
+          - /url: /fr/knowledge/frameworks/electronic-artefacts-lightweight-template/
+        - generic [ref=e675]: © 2026
+  - region "Préférences de confidentialité":
+    - dialog [ref=e676]:
+      - generic [ref=e677]:
+        - paragraph [ref=e678]: Préférences de confidentialité
+        - heading "Mesure d'audience" [level=2] [ref=e679]
+        - paragraph [ref=e680]: Electronic Artefacts utilise Google Analytics uniquement si vous l’acceptez, afin de comprendre les pages consultées et d’améliorer le site. Le refus est sans effet sur l’accès.
+        - link "Politique de confidentialité" [ref=e681]:
+          - /url: /fr/confidentialite.html
+      - generic [ref=e682]:
+        - button "Refuser" [ref=e683]
+        - button "Accepter" [ref=e684]

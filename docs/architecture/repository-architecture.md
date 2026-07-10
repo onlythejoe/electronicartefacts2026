@@ -7,6 +7,7 @@ This repo is a static site with a typed knowledge-graph build layer. The public 
 | Layer | Paths | Responsibility |
 | --- | --- | --- |
 | Content source | `content/**/*.md`, `content/relations/*.yaml` | Canonical entities and typed relation statements. |
+| Legacy compatibility input | `src/legacy-data/` | Historical browser-runtime data; kept outside the published asset tree. |
 | Contracts | `src/schema/`, `src/config/` | Entity types, relation predicates, route rules, publication contracts, and site constants. |
 | Build pipeline | `src/build/`, `scripts/build-site.ts`, `scripts/validate-content.ts` | Load content, validate graph integrity, build routes, render output, and write manifests. |
 | Rendering | `src/templates/`, `assets/partials/` | HTML layout, page templates, reusable components, header, and footer. |

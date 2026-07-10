@@ -15,17 +15,17 @@ const cssSources = [
   "assets/css/style.css",
 ];
 
-const dataSources = [
-  "assets/js/data/taxonomies.js",
-  "assets/js/data/entities.js",
-  "assets/js/data/relations.js",
-  "assets/js/data/timelines.js",
-  "assets/js/data/activity.js",
-  "assets/js/data/collections.js",
+const legacyDataSources = [
+  "src/legacy-data/taxonomies.js",
+  "src/legacy-data/entities.js",
+  "src/legacy-data/relations.js",
+  "src/legacy-data/timelines.js",
+  "src/legacy-data/activity.js",
+  "src/legacy-data/collections.js",
 ];
 
 const jsSources = [
-  "assets/js/data/search-index.js",
+  "src/legacy-data/search-index.js",
   "assets/js/catalog.js",
   "assets/js/core/utils.js",
   "assets/js/core/includes.js",
@@ -42,7 +42,7 @@ const jsSources = [
 const buildPublicData = async () => {
   const context = vm.createContext({ window: {} });
   let collectionRuntime = "";
-  for (const source of dataSources) {
+  for (const source of legacyDataSources) {
     const content = await readFile(path.join(rootDir, source), "utf8");
     vm.runInContext(content, context, { filename: source });
     if (source.endsWith("collections.js")) {

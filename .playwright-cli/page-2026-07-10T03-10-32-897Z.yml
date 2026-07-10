@@ -1,0 +1,4 @@
+- main [ref=e3]:
+  - generic [ref=e5]:
+    - heading "Welcome to Voice Capture Studio." [level=1] [ref=e6]
+    - button "Enable your microphone" [ref=e7] [cursor=pointer]

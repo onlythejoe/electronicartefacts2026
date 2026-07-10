@@ -1,0 +1,501 @@
+- generic [active] [ref=e1]:
+  - link "Aller au contenu principal" [ref=e2] [cursor=pointer]:
+    - /url: "#main"
+  - banner:
+    - generic [ref=e3]:
+      - link "electronic Artefacts Studio de technologies créatives pour systèmes numériques complexes" [ref=e4] [cursor=pointer]:
+        - /url: /fr/
+        - generic [ref=e5]:
+          - strong [ref=e6]:
+            - generic [ref=e7]: electronic
+            - generic [ref=e8]: Artefacts
+          - generic [ref=e9]: Studio de technologies créatives pour systèmes numériques complexes
+      - navigation "Navigation principale" [ref=e10]:
+        - link "ACCUEIL" [ref=e11] [cursor=pointer]:
+          - /url: /fr/
+        - link "EXPERTISE" [ref=e12] [cursor=pointer]:
+          - /url: /fr/work.html
+        - link "PROJETS" [ref=e13] [cursor=pointer]:
+          - /url: /fr/projects.html
+        - link "PROGRAMMES" [ref=e14] [cursor=pointer]:
+          - /url: /fr/programs.html
+        - link "RECHERCHE" [ref=e15] [cursor=pointer]:
+          - /url: /fr/research.html
+        - link "CONNAISSANCES" [ref=e16] [cursor=pointer]:
+          - /url: /fr/knowledge/
+        - link "À PROPOS" [ref=e17] [cursor=pointer]:
+          - /url: /fr/about.html
+        - link "CONTACT" [ref=e18] [cursor=pointer]:
+          - /url: /fr/contact.html
+      - button [ref=e20] [cursor=pointer]:
+        - strong [ref=e23]: EN
+  - main [ref=e24]:
+    - heading "Rendre les systèmes numériques complexes lisibles." [level=1] [ref=e25]
+    - generic [ref=e28]:
+      - generic [ref=e29]:
+        - paragraph [ref=e30]: ELECTRONIC ARTEFACTS
+        - heading "Rendre les systèmes complexes lisibles." [level=1] [ref=e31]
+        - paragraph [ref=e32]: Electronic Artefacts est un studio indépendant de technologies créatives. Nous concevons des produits pour nos clients, développons nos propres systèmes et publions des travaux de recherche et de création.
+        - generic [ref=e33]:
+          - link "Voir les réalisations clients" [ref=e34] [cursor=pointer]:
+            - /url: /fr/work.html
+          - link "Parler d’un projet" [ref=e35] [cursor=pointer]:
+            - /url: /fr/contact.html
+        - generic "Pratiques du studio" [ref=e36]:
+          - generic [ref=e37]: Produits clients
+          - generic [ref=e38]: Systèmes propriétaires
+          - generic [ref=e39]: Recherche
+          - generic [ref=e40]: Édition artistique
+      - complementary "Projets actuels d’Electronic Artefacts" [ref=e41]:
+        - generic:
+          - generic: Réalisations sélectionnées
+          - strong: Systèmes actifs et projets livrés
+        - link "Voice Capture Studio capture screen Notre prochain projet phare Voice Capture Studio" [ref=e43] [cursor=pointer]:
+          - /url: /fr/projects/voice-capture-studio/
+          - img "Voice Capture Studio capture screen" [ref=e44]
+          - generic [ref=e45]:
+            - generic [ref=e46]: Notre prochain projet phare
+            - strong [ref=e47]: Voice Capture Studio
+        - link "Visuel sphérique d’UnionMob composé d’interfaces de boussole et de signes UnionMob Partenariat CTO externe UnionMob" [ref=e48] [cursor=pointer]:
+          - /url: /fr/project.html?id=unionmob
+          - img "Visuel sphérique d’UnionMob composé d’interfaces de boussole et de signes UnionMob" [ref=e49]
+          - generic [ref=e50]:
+            - generic [ref=e51]: Partenariat CTO externe
+            - strong [ref=e52]: UnionMob
+        - link "Logotype de L’Œil de Meg Projet client livré L’Œil de Meg" [ref=e53] [cursor=pointer]:
+          - /url: /fr/project.html?id=oeil-de-meg
+          - img "Logotype de L’Œil de Meg" [ref=e54]
+          - generic [ref=e55]:
+            - generic [ref=e56]: Projet client livré
+            - strong [ref=e57]: L’Œil de Meg
+    - generic [ref=e59]:
+      - generic [ref=e60]:
+        - paragraph [ref=e61]: TECHNOLOGIE PROPRIÉTAIRE
+        - heading "VASTE est le runtime au cœur des systèmes de connaissance du studio." [level=2] [ref=e62]
+        - paragraph [ref=e63]: Il fournit la logique commune d’identité, de contexte, de permissions et de produits fondés sur des graphes.
+      - article [ref=e65]:
+        - generic [ref=e66]:
+          - generic [ref=e67]:
+            - paragraph [ref=e68]: SOCLE D’EXÉCUTION
+            - heading "VASTE" [level=3] [ref=e69]
+            - paragraph [ref=e70]: Une fondation réutilisable pour les plateformes dont les entités, les relations et les permissions doivent rester cohérentes à mesure qu’elles évoluent.
+            - generic "Caractéristiques de VASTE" [ref=e71]:
+              - generic [ref=e72]: Moteur
+              - generic [ref=e73]: Systèmes de graphes
+              - generic [ref=e74]: Moteur de recherche
+          - generic [ref=e81]:
+            - link "Découvrir VASTE" [ref=e82] [cursor=pointer]:
+              - /url: https://www.vaste.space/
+            - link "Explorer la recherche" [ref=e83] [cursor=pointer]:
+              - /url: /fr/research.html
+    - region [ref=e85]:
+      - generic [ref=e86]:
+        - complementary "Graphe de recherche animé" [ref=e87]:
+          - generic [ref=e88]:
+            - generic:
+              - generic: Question
+              - strong: "#001"
+            - generic [ref=e90]:
+              - link "Voice Capture Studio - projet" [ref=e91] [cursor=pointer]:
+                - /url: /fr/projects/voice-capture-studio/
+              - link "Vestiges - projet" [ref=e93] [cursor=pointer]:
+                - /url: /fr/projects/vestiges/
+              - link "VASTE - programme" [ref=e95] [cursor=pointer]:
+                - /url: /fr/programs/vaste/
+              - link "ORETH - programme" [ref=e97] [cursor=pointer]:
+                - /url: /fr/programs/oreth/
+              - link "AI Agent - concept" [ref=e99] [cursor=pointer]:
+                - /url: /fr/knowledge/concepts/ai-agent/
+              - link "Knowledge Graph - concept" [ref=e101] [cursor=pointer]:
+                - /url: /fr/knowledge/concepts/knowledge-graph/
+          - link "Voir le graphe complet" [ref=e103] [cursor=pointer]:
+            - /url: /graph/neighborhoods/fr/research-question/first-conversation-understanding-fr.json
+        - article [ref=e104]:
+          - generic [ref=e105]:
+            - generic [ref=e106]: Actif
+            - generic [ref=e107]: "Recherche #001"
+            - generic [ref=e108]: Démarré 01 JANV. 2026
+            - generic [ref=e109]: Mis à jour 09 JUIL. 2026
+          - generic [ref=e110]:
+            - paragraph [ref=e111]: ATLAS DE RECHERCHE
+            - heading "Comment une IA peut-elle comprendre quelqu'un dès sa première conversation ?" [level=2] [ref=e112]
+            - paragraph [ref=e113]: Cette question étudie si l'onboarding conversationnel peut construire un premier modèle fiable d'une personne sans réduire l'intention, l'incertitude et le contexte à un formulaire statique.
+            - generic [ref=e114]:
+              - generic [ref=e115]: Onboarding conversationnel
+              - generic [ref=e116]: Agents IA
+              - generic [ref=e117]: Graphe de connaissance
+              - generic [ref=e118]: Voix
+              - generic [ref=e119]: Compréhension utilisateur
+          - generic [ref=e120]:
+            - article [ref=e121]:
+              - paragraph [ref=e122]: Compréhension actuelle
+              - heading "La compréhension doit émerger progressivement. Une première conversation peut identifier des entités, objectifs, contraintes, risques et inconnues provisoires, puis garder ces hypothèses révisables." [level=3] [ref=e123]
+              - paragraph [ref=e124]: Les formulaires collectent des réponses, mais ils capturent mal l'intention, l'incertitude, le vocabulaire, le contexte évolutif et les raisons qui poussent une personne à agir maintenant.
+            - article [ref=e125]:
+              - paragraph [ref=e126]: Artefacts reliés
+              - generic [ref=e127]:
+                - link "VA VASTE programme" [ref=e128] [cursor=pointer]:
+                  - /url: /fr/programs/vaste/
+                  - generic [ref=e129]: VA
+                  - strong [ref=e130]: VASTE
+                  - generic [ref=e131]: programme
+                - link "OR ORETH programme" [ref=e132] [cursor=pointer]:
+                  - /url: /fr/programs/oreth/
+                  - generic [ref=e133]: OR
+                  - strong [ref=e134]: ORETH
+                  - generic [ref=e135]: programme
+                - link "VO Voice Capture Studio projet" [ref=e136] [cursor=pointer]:
+                  - /url: /fr/projects/voice-capture-studio/
+                  - generic [ref=e137]: VO
+                  - strong [ref=e138]: Voice Capture Studio
+                  - generic [ref=e139]: projet
+                - link "VE Vestiges projet" [ref=e140] [cursor=pointer]:
+                  - /url: /fr/projects/vestiges/
+                  - generic [ref=e141]: VE
+                  - strong [ref=e142]: Vestiges
+                  - generic [ref=e143]: projet
+            - navigation "Actions associées" [ref=e144]:
+              - paragraph [ref=e145]: Actions associées
+              - link "Explorer la recherche" [ref=e146] [cursor=pointer]:
+                - /url: /fr/research/questions/first-conversation-understanding/
+                - text: Explorer la recherche
+                - generic [ref=e147]: →
+              - link "Ouvrir le graphe" [ref=e148] [cursor=pointer]:
+                - /url: /graph/neighborhoods/fr/research-question/first-conversation-understanding-fr.json
+                - text: Ouvrir le graphe
+                - generic [ref=e149]: →
+              - link "Logiciel relié" [ref=e150] [cursor=pointer]:
+                - /url: /fr/programs/vaste/
+                - text: Logiciel relié
+                - generic [ref=e151]: →
+              - link "Dépôt" [ref=e152] [cursor=pointer]:
+                - /url: https://github.com/electronicartefacts/voice-capture-studio
+                - text: Dépôt
+                - generic [ref=e153]: →
+              - link "Documentation" [ref=e154] [cursor=pointer]:
+                - /url: /fr/publications/ai-agents-vs-ai-workflows/
+                - text: Documentation
+                - generic [ref=e155]: →
+          - generic "Chronologie de recherche" [ref=e156]:
+            - generic [ref=e157]:
+              - strong [ref=e158]: 01 JANV. 2026
+              - text: Cadrage de la recherche
+            - generic [ref=e159]:
+              - strong [ref=e160]: 09 JUIL. 2026
+              - text: Intégration dans l'atlas de la page d'accueil
+      - generic [ref=e161]:
+        - button "Question précédente" [ref=e162]:
+          - generic [ref=e163]: ←
+          - generic [ref=e164]: Précédent
+        - generic "Questions de recherche" [ref=e165]:
+          - button "Ouvrir la question de recherche 1" [ref=e166] [cursor=pointer]:
+            - generic [ref=e167]: "Recherche #001"
+          - button "Ouvrir la question de recherche 2" [ref=e168] [cursor=pointer]:
+            - generic [ref=e169]: "Recherche #002"
+          - button "Ouvrir la question de recherche 3" [ref=e170] [cursor=pointer]:
+            - generic [ref=e171]: "Recherche #003"
+        - button "Question suivante" [ref=e172]:
+          - generic [ref=e173]: Suivant
+          - generic [ref=e174]: →
+    - generic [ref=e175]:
+      - generic [ref=e176]:
+        - generic [ref=e177]:
+          - paragraph [ref=e178]: TROIS PRATIQUES
+          - heading "Un studio. Trois façons distinctes de travailler." [level=2] [ref=e179]
+          - paragraph [ref=e180]: Les missions clients répondent à des problèmes immédiats. Les systèmes propriétaires étendent les capacités du studio. La recherche et l’édition artistique maintiennent la pratique ouverte à de nouvelles formes.
+        - generic [ref=e181]:
+          - article "Découvrir VASTE" [ref=e182]:
+            - paragraph [ref=e183]: Technologie
+            - heading "Systèmes propriétaires" [level=3] [ref=e184]
+            - paragraph [ref=e185]: Explorez VASTE et les programmes logiciels réutilisables qui sous-tendent les plateformes de connaissance et les produits du studio.
+            - paragraph [ref=e186]: Partenariats techniques, pilotes et licences.
+            - link "Découvrir les programmes" [ref=e188] [cursor=pointer]:
+              - /url: /fr/vaste.html
+          - article "Voir les réalisations clients" [ref=e189]:
+            - paragraph [ref=e190]: Réalisation
+            - heading "Produits et plateformes pour nos clients" [level=3] [ref=e191]
+            - paragraph [ref=e192]: Découvrez comment stratégie, contenu, interface et ingénierie s’articulent dans les projets commandités.
+            - paragraph [ref=e193]: Cadrage produit, design, réalisation et reprise.
+            - link "Voir les réalisations clients" [ref=e195] [cursor=pointer]:
+              - /url: /fr/work.html
+          - article "Découvrir Palimpsests" [ref=e196]:
+            - paragraph [ref=e197]: Culture et recherche
+            - heading "Recherche et édition artistique" [level=3] [ref=e198]
+            - paragraph [ref=e199]: Explorez les recherches, publications et œuvres musicales qui donnent au studio sa profondeur culturelle.
+            - paragraph [ref=e200]: Recherche, partenariats éditoriaux et collaborations artistiques.
+            - link "Explorer le travail culturel" [ref=e202] [cursor=pointer]:
+              - /url: /fr/palimpsests.html
+      - generic [ref=e203]:
+        - generic [ref=e204]:
+          - generic [ref=e205]:
+            - paragraph [ref=e206]: COUCHE
+            - heading "Carte active des travaux du studio." [level=2] [ref=e207]
+            - paragraph [ref=e208]: Une vue navigable des projets, programmes et parcours de connaissance dans le graphe Electronic Artefacts.
+          - generic [ref=e209]:
+            - link "Rechercher" [ref=e210] [cursor=pointer]:
+              - /url: /fr/search.html
+            - link "Projets" [ref=e211] [cursor=pointer]:
+              - /url: /fr/projects.html
+            - link "Connaissances" [ref=e212] [cursor=pointer]:
+              - /url: /fr/knowledge/
+        - generic [ref=e213]:
+          - link "VASTE - Moteur / actif" [ref=e215] [cursor=pointer]:
+            - /url: https://www.vaste.space/
+            - generic [ref=e217]:
+              - strong [ref=e218]: VASTE
+              - generic [ref=e219]: Moteur / actif
+          - link "Vestiges - Plateforme principale" [ref=e220] [cursor=pointer]:
+            - /url: /fr/projects/vestiges/
+            - generic [ref=e222]:
+              - strong [ref=e223]: Vestiges
+              - generic [ref=e224]: Plateforme principale
+          - link "L’Œil de Meg - Réalisation client / active" [ref=e225] [cursor=pointer]:
+            - /url: /fr/project.html?id=oeil-de-meg
+            - generic [ref=e227]:
+              - strong [ref=e228]: L’Œil de Meg
+              - generic [ref=e229]: Réalisation client / active
+          - link "Palimpsests - Album / culture" [ref=e230] [cursor=pointer]:
+            - /url: /fr/projects/palimpsests/
+            - generic [ref=e232]:
+              - strong [ref=e233]: Palimpsests
+              - generic [ref=e234]: Album / culture
+          - link "Théorie du runtime - Domaine de recherche" [ref=e235] [cursor=pointer]:
+            - /url: /fr/research/fields/runtime-theory/
+            - generic [ref=e237]:
+              - strong [ref=e238]: Théorie du runtime
+              - generic [ref=e239]: Domaine de recherche
+          - link "Connaissances - Pages conceptuelles" [ref=e240] [cursor=pointer]:
+            - /url: /fr/knowledge/
+            - generic [ref=e242]:
+              - strong [ref=e243]: Connaissances
+              - generic [ref=e244]: Pages conceptuelles
+          - link "Archives - Couche mémorielle" [ref=e245] [cursor=pointer]:
+            - /url: /fr/archive.html
+            - generic [ref=e247]:
+              - strong [ref=e248]: Archives
+              - generic [ref=e249]: Couche mémorielle
+    - generic [ref=e253]:
+      - paragraph [ref=e254]: PALIMPSESTS / ORETH
+      - heading "Palimpsests" [level=2] [ref=e255]
+      - paragraph [ref=e256]: Palimpsests est un cycle d’albums d’ORETH, déployé en cinq actes et prolongé par des archives en constante évolution.
+      - generic [ref=e257]:
+        - generic [ref=e258]: Cycle d’album
+        - generic [ref=e259]: ORETH
+        - generic [ref=e260]: Cinq actes
+        - generic [ref=e261]: Archives
+      - generic [ref=e262]:
+        - link "Découvrir Palimpsests" [ref=e263] [cursor=pointer]:
+          - /url: /fr/palimpsests.html
+        - link "Parcourir les archives" [ref=e264] [cursor=pointer]:
+          - /url: /fr/archive.html
+        - link "Démarrer une collaboration" [ref=e265] [cursor=pointer]:
+          - /url: /fr/contact.html
+    - generic [ref=e268]:
+      - generic [ref=e269]:
+        - generic [ref=e270]:
+          - paragraph [ref=e271]: EXPERTISE
+          - heading "Une sélection qui précise le rôle et le statut de chaque projet." [level=2] [ref=e272]
+          - paragraph [ref=e273]: "Réalisations clients, plateformes propriétaires et édition culturelle : trois formes d’une même pratique exigeante."
+        - complementary [ref=e274]:
+          - paragraph [ref=e275]: PARCOURS ÉDITORIAL
+          - strong [ref=e276]: 8 projects
+          - paragraph [ref=e277]: Commencez par le projet principal, puis comparez les réalisations dans les domaines du produit, de la technologie et de la culture.
+          - generic [ref=e278]:
+            - generic [ref=e279]:
+              - generic [ref=e280]: Projet principal
+              - strong [ref=e281]: Voice Capture Studio
+            - generic [ref=e282]:
+              - generic [ref=e283]: Mode
+              - strong [ref=e284]: Logiciel
+          - generic [ref=e285]:
+            - link "Parcourir les projets" [ref=e286] [cursor=pointer]:
+              - /url: /fr/projects.html
+            - link "Voir plus de réalisations" [ref=e287] [cursor=pointer]:
+              - /url: /fr/work.html
+      - generic [ref=e288]:
+        - article "Ouvrir le dossier Voice Capture Studio" [ref=e289] [cursor=pointer]:
+          - link "Ouvrir le dossier Voice Capture Studio" [ref=e290]:
+            - /url: /fr/projects/voice-capture-studio/
+          - generic [ref=e291]:
+            - generic [ref=e292]:
+              - paragraph [ref=e293]: Logiciel
+              - heading "Voice Capture Studio" [level=3] [ref=e294]
+            - generic [ref=e295]: ◌ Live open source
+          - figure [ref=e297]:
+            - generic [ref=e298]:
+              - generic [ref=e299]: Lead visual
+              - strong [ref=e300]: Live GitHub Pages capture screen with local browser storage and recording modes.
+          - paragraph [ref=e301]: Local-first browser studio for speech datasets, voice-over, dubbing and structured WAV plus metadata exports.
+          - paragraph [ref=e302]: Open-source browser studio for local speech capture and structured voice exports.
+          - generic [ref=e303]:
+            - generic [ref=e304]: Live demo
+            - generic [ref=e305]: Ouvrir source
+            - generic [ref=e306]: Local-first
+            - generic [ref=e307]: Voice capture
+          - generic [ref=e308]:
+            - link "Voir le projet" [ref=e309]:
+              - /url: /fr/projects/voice-capture-studio/
+            - link "Autres réalisations" [ref=e310]:
+              - /url: /fr/work.html
+        - generic [ref=e311]:
+          - generic [ref=e312]:
+            - paragraph [ref=e313]: AUTRES PARCOURS
+            - generic [ref=e314]: 4 éléments
+          - generic [ref=e315]:
+            - article "Ouvrir le projet Vestiges" [ref=e316] [cursor=pointer]:
+              - link "Ouvrir le projet Vestiges" [ref=e317]:
+                - /url: /fr/projects/vestiges/
+              - generic [ref=e318]:
+                - generic [ref=e319]:
+                  - paragraph [ref=e320]: Plateforme
+                  - heading "Vestiges" [level=3] [ref=e321]
+                  - paragraph [ref=e322]: Living Knowledge Infrastructure
+                - generic [ref=e323]: ◌ In development
+              - figure [ref=e325]
+              - paragraph [ref=e326]: Infrastructure de connaissance vivante pour la culture, les savoir-faire, la provenance et la collaboration professionnelle.
+              - paragraph [ref=e327]: Une plateforme qui relie personnes, pratiques, matériaux et institutions.
+              - generic [ref=e328]:
+                - generic [ref=e329]: Connaissance vivante
+                - generic [ref=e330]: VASTE
+                - generic [ref=e331]: "+2"
+            - article "Ouvrir le projet Electronic Artefacts Website" [ref=e332] [cursor=pointer]:
+              - link "Ouvrir le projet Electronic Artefacts Website" [ref=e333]:
+                - /url: /fr/project.html?id=electronic-artefacts-website
+              - generic [ref=e334]:
+                - generic [ref=e335]:
+                  - paragraph [ref=e336]: Plateforme
+                  - heading "Electronic Artefacts Website" [level=3] [ref=e337]
+                  - paragraph [ref=e338]: Plateforme publique de connaissance
+                - generic [ref=e339]: ◌ Production
+              - paragraph [ref=e341]: Plateforme publique de connaissance de l’écosystème Electronic Artefacts.
+              - paragraph [ref=e342]: Structure du produit, workflow et logique opérationnelle.
+              - generic [ref=e343]:
+                - generic [ref=e344]: Plateforme
+                - generic [ref=e345]: Production
+                - generic [ref=e346]: "+2"
+            - article "Ouvrir le projet null_human" [ref=e347] [cursor=pointer]:
+              - link "Ouvrir le projet null_human" [ref=e348]:
+                - /url: /fr/project.html?id=null-underscore-human
+              - generic [ref=e349]:
+                - generic [ref=e350]:
+                  - paragraph [ref=e351]: Publication
+                  - heading "null_human" [level=3] [ref=e352]
+                  - paragraph [ref=e353]: Projet d’identité artistique
+                - generic [ref=e354]: ◌ Concept
+              - paragraph [ref=e356]: Projet spéculatif autour de l’identité artistique.
+              - paragraph [ref=e357]: Publication inscrite dans l’univers d’Electronic Artefacts.
+              - generic [ref=e358]:
+                - generic [ref=e359]: Publication
+                - generic [ref=e360]: Concept
+                - generic [ref=e361]: "+2"
+            - article "Ouvrir le projet UnionMob" [ref=e362] [cursor=pointer]:
+              - link "Ouvrir le projet UnionMob" [ref=e363]:
+                - /url: /fr/project.html?id=unionmob
+              - generic [ref=e364]:
+                - generic [ref=e365]:
+                  - paragraph [ref=e366]: Collaboration externe
+                  - heading "UnionMob" [level=3] [ref=e367]
+                  - paragraph [ref=e368]: Organisation créative indépendante / partenariat CTO
+                - generic [ref=e369]: ◌ Partenariat CTO externe
+              - figure [ref=e371]:
+                - generic [ref=e372]:
+                  - generic [ref=e373]: Visuel
+                  - strong [ref=e374]: Univers visuel d’UnionMob.
+              - paragraph [ref=e375]: Organisation créative indépendante fondée par Zarah Nkounkou, accompagnée par Electronic Artefacts comme partenaire technologique et CTO.
+              - paragraph [ref=e376]: Partenariat CTO qui maintient une séparation claire entre UnionMob et UMOS.
+              - generic [ref=e377]:
+                - generic [ref=e378]: Projet externe
+                - generic [ref=e379]: CTO
+                - generic [ref=e380]: "+2"
+      - generic [ref=e381]:
+        - link "Parcourir les projets" [ref=e382] [cursor=pointer]:
+          - /url: /fr/projects.html
+        - link "Voir plus de réalisations" [ref=e383] [cursor=pointer]:
+          - /url: /fr/work.html
+    - generic [ref=e385]:
+      - generic [ref=e386]:
+        - paragraph [ref=e387]: ALLER PLUS LOIN
+        - heading "Choisissez le prochain niveau de détail." [level=2] [ref=e388]
+        - paragraph [ref=e389]: Passez des résultats visibles aux systèmes, aux recherches ou aux archives qui les sous-tendent.
+      - generic [ref=e390]:
+        - article "Parcourir les projets" [ref=e391]:
+          - paragraph [ref=e392]: Accueil
+          - heading "Projets" [level=3] [ref=e393]
+          - paragraph [ref=e394]: Comparez réalisations publiques, systèmes clients et collaborations.
+          - paragraph [ref=e395]: Idéal pour voir ce que produit le studio.
+          - link "Parcourir les projets" [ref=e397] [cursor=pointer]:
+            - /url: /fr/projects.html
+        - article "Explorer la recherche" [ref=e398]:
+          - paragraph [ref=e399]: Accueil
+          - heading "Recherche" [level=3] [ref=e400]
+          - paragraph [ref=e401]: Explorez les questions, méthodes et expérimentations derrière les réalisations.
+          - paragraph [ref=e402]: Idéal pour comprendre la réflexion derrière les réalisations.
+          - link "Explorer la recherche" [ref=e404] [cursor=pointer]:
+            - /url: /fr/research.html
+        - article "Voir les programmes" [ref=e405]:
+          - paragraph [ref=e406]: Accueil
+          - heading "Programmes" [level=3] [ref=e407]
+          - paragraph [ref=e408]: Comprendre les systèmes logiciels réutilisables derrière les réalisations.
+          - paragraph [ref=e409]: Idéal pour découvrir le cœur opérationnel.
+          - link "Voir les programmes" [ref=e411] [cursor=pointer]:
+            - /url: /fr/programs.html
+        - article "Ouvrir les archives" [ref=e412]:
+          - paragraph [ref=e413]: Accueil
+          - heading "Archives" [level=3] [ref=e414]
+          - paragraph [ref=e415]: Parcourez les traces, fragments et matériaux historiques avec leur contexte.
+          - paragraph [ref=e416]: Idéal pour obtenir davantage de contexte et de profondeur.
+          - link "Ouvrir les archives" [ref=e418] [cursor=pointer]:
+            - /url: /fr/archive.html
+  - contentinfo [ref=e419]:
+    - generic [ref=e420]:
+      - generic [ref=e421]:
+        - generic [ref=e422]:
+          - strong [ref=e423]:
+            - generic [ref=e424]: electronic
+            - generic [ref=e425]: Artefacts
+          - generic [ref=e426]: Studio indépendant de technologies créatives pour produits numériques complexes, systèmes de connaissance, logiciels propriétaires et création culturelle issue de la recherche.
+        - navigation "Liens rapides" [ref=e427]:
+          - link "ACCUEIL" [ref=e428] [cursor=pointer]:
+            - /url: /fr/
+          - link "EXPERTISE" [ref=e429] [cursor=pointer]:
+            - /url: /fr/work.html
+          - link "PROJETS" [ref=e430] [cursor=pointer]:
+            - /url: /fr/projects.html
+          - link "PROGRAMMES" [ref=e431] [cursor=pointer]:
+            - /url: /fr/programs.html
+          - link "RECHERCHE" [ref=e432] [cursor=pointer]:
+            - /url: /fr/research.html
+          - link "CONNAISSANCES" [ref=e433] [cursor=pointer]:
+            - /url: /fr/knowledge/
+          - link "PUBLICATIONS" [ref=e434] [cursor=pointer]:
+            - /url: /fr/publications/
+          - link "ARCHIVES" [ref=e435] [cursor=pointer]:
+            - /url: /fr/archive.html
+          - link "À PROPOS" [ref=e436] [cursor=pointer]:
+            - /url: /fr/about.html
+          - link "CONTACT" [ref=e437] [cursor=pointer]:
+            - /url: /fr/contact.html
+          - link "RECHERCHE" [ref=e438] [cursor=pointer]:
+            - /url: /fr/search.html
+          - link "MENTIONS LÉGALES" [ref=e439] [cursor=pointer]:
+            - /url: /fr/mentions-legales.html
+          - link "CONFIDENTIALITÉ" [ref=e440] [cursor=pointer]:
+            - /url: /fr/confidentialite.html
+          - button "COOKIES" [ref=e441] [cursor=pointer]
+          - link "VASTE" [ref=e442] [cursor=pointer]:
+            - /url: https://www.vaste.space/
+      - generic "Signature du site" [ref=e443]:
+        - link "Construit avec l’Electronic Artefacts Light Framework" [ref=e444] [cursor=pointer]:
+          - /url: /fr/knowledge/frameworks/electronic-artefacts-lightweight-template/
+        - generic [ref=e445]: ©
+  - region "Préférences de confidentialité":
+    - dialog [ref=e446]:
+      - generic [ref=e447]:
+        - paragraph [ref=e448]: Préférences de confidentialité
+        - heading "Mesure d'audience" [level=2] [ref=e449]
+        - paragraph [ref=e450]: Electronic Artefacts utilise Google Analytics uniquement si vous l’acceptez, afin de comprendre les pages consultées et d’améliorer le site. Le refus est sans effet sur l’accès.
+        - link "Politique de confidentialité" [ref=e451] [cursor=pointer]:
+          - /url: /fr/confidentialite.html
+      - generic [ref=e452]:
+        - button "Refuser" [ref=e453]
+        - button "Accepter" [ref=e454]
