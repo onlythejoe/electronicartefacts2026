@@ -25033,6 +25033,26 @@ window.EA_ANALYTICS_CONFIG = {
       ".ux-dock button",
       ".site-nav a",
     ].join(",");
+    const textSelector = [
+      "input",
+      "textarea",
+      "[contenteditable='true']",
+      "p",
+      "h1",
+      "h2",
+      "h3",
+      "h4",
+      "h5",
+      "h6",
+      "li",
+      "blockquote",
+      "figcaption",
+      "td",
+      "th",
+      ".lede",
+      ".eyebrow",
+      ".tag",
+    ].join(",");
 
     let currentX = Math.max(0, window.innerWidth * 0.5);
     let currentY = Math.max(0, window.innerHeight * 0.5);
@@ -25043,12 +25063,26 @@ window.EA_ANALYTICS_CONFIG = {
     let visible = false;
     let pointerDown = false;
     let hoveringInteractive = false;
+    let hoveringText = false;
     let frame = 0;
 
     const resolveScale = () => {
-      targetScale = pointerDown ? (hoveringInteractive ? 1.16 : 0.82) : hoveringInteractive ? 1.52 : 1;
+      targetScale = hoveringText ? 1 : pointerDown ? (hoveringInteractive ? 1.16 : 0.82) : hoveringInteractive ? 1.52 : 1;
       cursor.classList.toggle("is-interactive", hoveringInteractive);
       cursor.classList.toggle("is-pressed", pointerDown);
+      cursor.classList.toggle("is-text", hoveringText);
+    };
+
+    const hasActiveTextSelection = () => {
+      const activeElement = document.activeElement;
+      const hasInputSelection = activeElement instanceof HTMLInputElement || activeElement instanceof HTMLTextAreaElement
+        ? activeElement.selectionStart !== activeElement.selectionEnd
+        : false;
+      return hasInputSelection || Boolean(window.getSelection?.()?.toString());
+    };
+
+    const syncSelectionState = () => {
+      cursor.classList.toggle("is-selecting", hasActiveTextSelection());
     };
 
     const render = () => {
@@ -25084,8 +25118,14 @@ window.EA_ANALYTICS_CONFIG = {
 
       if (event.target instanceof Element) {
         const nextHoveringInteractive = Boolean(event.target.closest(interactiveSelector));
+        const isEditableText = Boolean(event.target.closest("input, textarea, [contenteditable='true']"));
+        const nextHoveringText = isEditableText || (!nextHoveringInteractive && Boolean(event.target.closest(textSelector)));
         if (nextHoveringInteractive !== hoveringInteractive) {
           hoveringInteractive = nextHoveringInteractive;
+          resolveScale();
+        }
+        if (nextHoveringText !== hoveringText) {
+          hoveringText = nextHoveringText;
           resolveScale();
         }
       }
@@ -25104,8 +25144,10 @@ window.EA_ANALYTICS_CONFIG = {
       if (event.button !== 0) return;
       pointerDown = false;
       resolveScale();
+      syncSelectionState();
       scheduleRender();
     });
+    document.addEventListener("selectionchange", syncSelectionState);
     document.documentElement.addEventListener("pointerleave", hideCursor);
     window.addEventListener("blur", hideCursor);
   };
