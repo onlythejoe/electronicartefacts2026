@@ -16744,3 +16744,124 @@ figcaption strong,
     top: 0.38rem;
   }
 }
+
+/* Home mobile review: preserve compact, legible surfaces without collapsing content. */
+@media (max-width: 48rem) {
+  /* Let the horizontal navigation reach the card's right edge when it is scrolled. */
+  .site-nav {
+    padding-right: 0;
+  }
+
+  .site-nav::after {
+    flex-basis: 0;
+  }
+
+  /* Keep related artefacts as an actual cluster rather than four full-width cards. */
+  .research-atlas__artefact-list {
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 0.38rem;
+  }
+
+  .research-atlas__artefact-list a {
+    min-height: 6rem;
+    padding: 0.48rem 0.24rem;
+  }
+
+  .research-atlas__artefact-list span {
+    width: 1.9rem;
+  }
+
+  .research-atlas__artefact-list strong {
+    font-size: 0.66rem;
+  }
+
+  .research-atlas__artefact-list small {
+    font-size: 0.46rem;
+    letter-spacing: 0.055em;
+  }
+
+  /* The question number already appears in the panel; it does not need a central graph badge. */
+  .research-atlas__core.graph-surface__core {
+    display: none;
+  }
+
+  /* Make the atlas selector explicit and tappable instead of a row of anonymous dots. */
+  .research-atlas__dots {
+    gap: 0.4rem;
+  }
+
+  .research-atlas__dots button,
+  .research-atlas__dots button.is-active {
+    width: 2rem;
+    height: 1.55rem;
+    border: 1px solid rgba(247, 244, 239, 0.18);
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.045);
+    color: rgba(247, 244, 239, 0.68);
+    box-shadow: none;
+  }
+
+  .research-atlas__dots button span {
+    position: static;
+    width: auto;
+    height: auto;
+    overflow: visible;
+    clip: auto;
+    color: inherit;
+    font-size: 0.55rem;
+    font-weight: 840;
+    letter-spacing: 0.06em;
+    line-height: 1;
+  }
+
+  .research-atlas__dots button.is-active {
+    border-color: rgba(var(--atlas-tone), 0.86);
+    background: rgba(var(--atlas-tone), 0.88);
+    color: #07131c;
+  }
+
+  /* The home graph remains a map, while each label stays on one readable line. */
+  .graph-surface--home .graph-surface__node-body {
+    width: max-content;
+    max-width: none;
+    padding: 0.3rem 0.38rem;
+  }
+
+  .graph-surface--home .graph-surface__node-body strong {
+    font-size: clamp(0.5rem, 1.9vw, 0.6rem);
+    line-height: 1.05;
+    white-space: nowrap;
+  }
+
+  .graph-surface--home .graph-surface__node-body small {
+    font-size: 0.43rem;
+    line-height: 1.05;
+    white-space: nowrap;
+  }
+
+  /* The studio signal must stack before its content can flow naturally. */
+  .selected-works-panel__head {
+    grid-template-columns: minmax(0, 1fr);
+    align-items: start;
+  }
+
+  .selected-works-panel__info {
+    min-width: 0;
+  }
+
+  .selected-works-panel__info .link-row {
+    flex-wrap: wrap;
+  }
+
+  .selected-works-panel__info .link-row .tag {
+    flex: 0 1 auto;
+    width: 100%;
+    min-height: 2.65rem;
+  }
+
+  .signature-banner--oreth .signature-banner__image {
+    width: 116%;
+    max-width: none;
+    transform: translateY(4%);
+  }
+}

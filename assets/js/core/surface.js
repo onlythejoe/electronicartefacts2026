@@ -854,13 +854,15 @@
       ctx.arc(centerX, centerY, orbit2, 0, Math.PI * 2);
       ctx.stroke();
 
-      ctx.beginPath();
-      ctx.arc(centerX, centerY, Math.max(22, minDim * 0.08), 0, Math.PI * 2);
-      ctx.fillStyle = "rgba(234,220,207,0.12)";
-      ctx.fill();
-      ctx.strokeStyle = "rgba(255,255,255,0.88)";
-      ctx.lineWidth = 1.2;
-      ctx.stroke();
+      if (!isResearchAtlasGraph) {
+        ctx.beginPath();
+        ctx.arc(centerX, centerY, Math.max(22, minDim * 0.08), 0, Math.PI * 2);
+        ctx.fillStyle = "rgba(234,220,207,0.12)";
+        ctx.fill();
+        ctx.strokeStyle = "rgba(255,255,255,0.88)";
+        ctx.lineWidth = 1.2;
+        ctx.stroke();
+      }
 
       const activeNodes = context.nodes.filter((node) =>
         !node.el.hidden &&
