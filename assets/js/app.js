@@ -18736,7 +18736,7 @@ window.EA_SEARCH = {
 /* ==== assets/js/core/includes.js ==== */
 (function () {
   const includeCache = new Map();
-  const includeVersion = "27";
+  const includeVersion = "28";
 
   const resolveIncludeUrl = (key) => {
     if (!key) return null;
@@ -19174,6 +19174,11 @@ window.EA_SEARCH = {
     "Status": "État",
     "Entity type": "Type d’entité",
     "All": "Tous",
+    "Approach": "Approche",
+    "Graph": "Graphe",
+    "Electronic Artefacts home": "Accueil Electronic Artefacts",
+    "Resources and legal": "Ressources et informations légales",
+    "Page actions": "Actions de la page",
     "Open": "Ouvrir",
     "Unavailable": "Indisponible",
     "Unlisted": "Non renseigné",
@@ -20748,15 +20753,6 @@ window.EA_ANALYTICS_CONFIG = {
       return;
     }
 
-    if (button.matches("[data-like-button]")) {
-      track("select_content", {
-        content_type: "local_like",
-        content_id: nearestEntryId(button) || currentPageParams().page_path,
-        link_location: location,
-      });
-      return;
-    }
-
     if (button.matches("[data-share-button]")) {
       track("ea_share_intent", {
         method: navigator.share ? "native_share" : "clipboard",
@@ -21540,13 +21536,13 @@ window.EA_ANALYTICS_CONFIG = {
     <figure class="program-commercial-hero__media computation-field computation-field--${esc(variant)}" data-computation-field data-computation-variant="${esc(variant)}" data-depth="0.86">
       <canvas class="computation-field__canvas" aria-hidden="true"></canvas>
       <div class="computation-field__hud" aria-hidden="true">
-        <span>EA.RUNTIME / SIGNAL BUS</span>
-        <span data-computation-rate>128.4 GB/s</span>
+        <span>EA.MODEL / ARCHITECTURE</span>
+        <span>CONTEXT / IDENTITY / EXECUTION</span>
       </div>
       <div class="computation-field__events" data-computation-events aria-hidden="true"></div>
       <figcaption>
-        <span>Live computation field</span>
-        <strong>Information propagates through context, identity and execution layers.</strong>
+        <span>Architecture study</span>
+        <strong>A browser visualization of connected system layers, not live telemetry.</strong>
       </figcaption>
     </figure>
   `;
@@ -21557,12 +21553,12 @@ window.EA_ANALYTICS_CONFIG = {
 
     const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     const eventLabels = [
-      "packet routed",
-      "graph resolved",
-      "context synced",
-      "state committed",
-      "signal indexed",
-      "identity verified",
+      "durable identity",
+      "explicit relation",
+      "context boundary",
+      "permission rule",
+      "event projection",
+      "provenance record",
     ];
     const glyphs = ["0", "1", "A", "B", "C", "D", "E", "F", "/", "=", "∴", "◇"];
 
@@ -24250,28 +24246,8 @@ window.EA_ANALYTICS_CONFIG = {
       panel.dataset.boundEngagement = "true";
 
       const rawKey = panel.getAttribute("data-like-key") || window.location.pathname || "page";
-      const storageKey = `ea:article-likes:${slugify(rawKey) || "page"}`;
-      const countNode = panel.querySelector("[data-like-count]");
-      const likeButton = panel.querySelector("[data-like-button]");
       const shareButton = panel.querySelector("[data-share-button]");
       const feedback = panel.querySelector("[data-engagement-feedback]");
-
-      const readCount = () => {
-        try {
-          const value = Number(window.localStorage.getItem(storageKey) || "0");
-          return Number.isFinite(value) && value > 0 ? Math.floor(value) : 0;
-        } catch {
-          return 0;
-        }
-      };
-
-      const writeCount = (value) => {
-        try {
-          window.localStorage.setItem(storageKey, String(value));
-        } catch {
-          return;
-        }
-      };
 
       const setFeedback = (message) => {
         if (!feedback) return;
@@ -24281,20 +24257,6 @@ window.EA_ANALYTICS_CONFIG = {
           feedback.textContent = "";
         }, 2200);
       };
-
-      const syncCount = (value) => {
-        if (countNode) countNode.textContent = String(value);
-        likeButton?.classList.toggle("has-likes", value > 0);
-      };
-
-      syncCount(readCount());
-
-      likeButton?.addEventListener("click", () => {
-        const next = readCount() + 1;
-        writeCount(next);
-        syncCount(next);
-        setFeedback(translate(next === 1 ? "Saved as a local like." : "Local like added."));
-      });
 
       shareButton?.addEventListener("click", async () => {
         const shareData = {
@@ -27372,9 +27334,7 @@ window.EA_ANALYTICS_CONFIG = {
   };
 
   const referenceDossierPanel = (item) => {
-    const relationCount = relationEntriesFor(item).length;
-    const galleryCount = item.media?.gallery?.length || 0;
-    const signalCount = signalValuesFor(item, 12).length;
+    const updated = item.temporality?.lastUpdated || item.temporality?.creationYear;
     return `
       <section class="panel knowledge-panel knowledge-panel--intro">
         <div class="section-head">
@@ -27384,9 +27344,7 @@ window.EA_ANALYTICS_CONFIG = {
         </div>
         <div class="detail-reference-strip">
           <span><strong>${esc(statusLabelFor(item))}</strong><em>Status</em></span>
-          <span><strong>${esc(countLabel(relationCount, "link"))}</strong><em>Relations</em></span>
-          <span><strong>${esc(countLabel(galleryCount, "asset"))}</strong><em>Media</em></span>
-          <span><strong>${esc(countLabel(signalCount, "signal"))}</strong><em>Signals</em></span>
+          ${updated ? `<span><strong>${esc(updated)}</strong><em>Updated</em></span>` : ""}
         </div>
       </section>
     `;
@@ -27396,16 +27354,12 @@ window.EA_ANALYTICS_CONFIG = {
     <section class="panel knowledge-panel engagement-panel" data-engagement-panel data-like-key="${esc(item.id || item.title || "record")}">
       <div class="engagement-panel__header">
         <div>
-          <p class="card__meta">Save and share</p>
+          <p class="card__meta">Page actions</p>
           <h2 class="card__title">${esc(item.title || "Record")}</h2>
         </div>
         <span class="engagement-panel__status">${esc(statusLabelFor(item))}</span>
       </div>
-      <div class="engagement-panel__actions" aria-label="Article actions">
-        <button class="engagement-action engagement-action--like" type="button" data-like-button aria-label="Like this article">
-          <span aria-hidden="true">♡</span>
-          <strong data-like-count>0</strong>
-        </button>
+      <div class="engagement-panel__actions" aria-label="Page actions">
         <button class="engagement-action" type="button" data-share-button>
           <span aria-hidden="true">↗</span>
           <strong>Share</strong>
@@ -30913,6 +30867,8 @@ window.EA_ANALYTICS_CONFIG = {
     syncSeoMeta({ current, entityById });
     const includesReady = loadIncludes();
     renderPageSections();
+    const seoHeading = document.querySelector("[data-seo-h1]");
+    if (seoHeading && document.querySelectorAll("main h1").length > 1) seoHeading.remove();
     await includesReady;
     window.EA_I18N?.localizeRoot(document);
     syncNavigationState(current);

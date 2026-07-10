@@ -39,3 +39,24 @@ test("generated French pilot pages expose localized metadata", async (context) =
     throw error;
   }
 });
+
+test("generated project pages keep machine details secondary and avoid fake telemetry", async (context) => {
+  const englishFile = path.resolve("programs/vaste/index.html");
+  const frenchFile = path.resolve("fr/projects/vestiges/index.html");
+  try {
+    const [programHtml, frenchProjectHtml] = await Promise.all([
+      readFile(englishFile, "utf8"),
+      readFile(frenchFile, "utf8"),
+    ]);
+    assert.doesNotMatch(programHtml, /128\.4 GB\/s|Live computation field/);
+    assert.match(programHtml, /<details class="zone-card record-details">/);
+    assert.match(frenchProjectHtml, /<summary>[\s\S]*Détails de la fiche/);
+    assert.doesNotMatch(frenchProjectHtml, />See related context<|\b18 useful links\b|<dt>Confidence<\/dt>/);
+  } catch (error) {
+    if ((error as NodeJS.ErrnoException).code === "ENOENT") {
+      context.skip("Run npm run build to generate static output");
+      return;
+    }
+    throw error;
+  }
+});

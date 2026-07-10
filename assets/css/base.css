@@ -44,6 +44,10 @@ body {
   border: 0 !important;
 }
 
+#main:focus {
+  outline: none;
+}
+
 @keyframes fade-up {
   from {
     opacity: 0;

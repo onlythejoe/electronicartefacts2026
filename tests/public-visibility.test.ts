@@ -169,9 +169,9 @@ test("translated pages inherit canonical public relations with localized routes"
   const relationships = renderRelationshipGroups(frenchGraphRuntime, relations, byId, routeById);
   const graph = renderLocalGraph(frenchGraphRuntime, relations, byId);
 
-  assert.match(relationships, /TYPED RELATIONSHIPS/);
+  assert.match(relationships, /RELATIONS DOCUMENTÉES/);
   assert.match(relationships, /href="\/fr\//);
   assert.doesNotMatch(relationships, /href="#"/);
-  assert.match(graph, /7 useful links/);
+  assert.match(graph, /7 liens publics relient/);
   assert.match(graph, /data-graph-src="\/graph\/neighborhoods\/fr\/concept\/graph-runtime\.json"/);
 });

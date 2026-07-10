@@ -13,25 +13,21 @@ export const renderEntityMetadata = (entity: Entity): string => `
   <section class="panel knowledge-panel engagement-panel" data-engagement-panel data-like-key="${escapeHtml(entity.id)}">
     <div class="engagement-panel__header">
       <div>
-        <p class="card__meta">Save and share</p>
+        <p class="card__meta">${entity.locale === "fr" ? "Actions de la page" : "Page actions"}</p>
         <h2 class="card__title">${escapeHtml(entity.title)}</h2>
       </div>
       <span class="engagement-panel__status">${escapeHtml(displayValue(entity.status))}</span>
     </div>
-    <div class="engagement-panel__actions" aria-label="Article actions">
-      <button class="engagement-action engagement-action--like" type="button" data-like-button aria-label="Like this article">
-        <span aria-hidden="true">♡</span>
-        <strong data-like-count>0</strong>
-      </button>
+    <div class="engagement-panel__actions" aria-label="${entity.locale === "fr" ? "Actions de la page" : "Page actions"}">
       <button class="engagement-action" type="button" data-share-button>
         <span aria-hidden="true">↗</span>
-        <strong>Share</strong>
+        <strong>${entity.locale === "fr" ? "Partager" : "Share"}</strong>
       </button>
     </div>
-    <dl class="engagement-meta" aria-label="Compact article metadata">
+    <dl class="engagement-meta" aria-label="${entity.locale === "fr" ? "Métadonnées de la page" : "Compact page metadata"}">
       <div><dt>Type</dt><dd>${escapeHtml(displayValue(entity.type))}</dd></div>
-      <div><dt>Maturity</dt><dd>${escapeHtml(displayValue(entity.maturity))}</dd></div>
-      <div><dt>Updated</dt><dd>${escapeHtml(entity.version.modifiedAt)}</dd></div>
+      <div><dt>${entity.locale === "fr" ? "Maturité" : "Maturity"}</dt><dd>${escapeHtml(displayValue(entity.maturity))}</dd></div>
+      <div><dt>${entity.locale === "fr" ? "Mis à jour" : "Updated"}</dt><dd>${escapeHtml(entity.version.modifiedAt)}</dd></div>
       <div><dt>Version</dt><dd>${escapeHtml(entity.version.version)}</dd></div>
     </dl>
     <p class="engagement-panel__feedback" data-engagement-feedback aria-live="polite"></p>

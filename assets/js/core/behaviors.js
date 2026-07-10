@@ -323,28 +323,8 @@
       panel.dataset.boundEngagement = "true";
 
       const rawKey = panel.getAttribute("data-like-key") || window.location.pathname || "page";
-      const storageKey = `ea:article-likes:${slugify(rawKey) || "page"}`;
-      const countNode = panel.querySelector("[data-like-count]");
-      const likeButton = panel.querySelector("[data-like-button]");
       const shareButton = panel.querySelector("[data-share-button]");
       const feedback = panel.querySelector("[data-engagement-feedback]");
-
-      const readCount = () => {
-        try {
-          const value = Number(window.localStorage.getItem(storageKey) || "0");
-          return Number.isFinite(value) && value > 0 ? Math.floor(value) : 0;
-        } catch {
-          return 0;
-        }
-      };
-
-      const writeCount = (value) => {
-        try {
-          window.localStorage.setItem(storageKey, String(value));
-        } catch {
-          return;
-        }
-      };
 
       const setFeedback = (message) => {
         if (!feedback) return;
@@ -354,20 +334,6 @@
           feedback.textContent = "";
         }, 2200);
       };
-
-      const syncCount = (value) => {
-        if (countNode) countNode.textContent = String(value);
-        likeButton?.classList.toggle("has-likes", value > 0);
-      };
-
-      syncCount(readCount());
-
-      likeButton?.addEventListener("click", () => {
-        const next = readCount() + 1;
-        writeCount(next);
-        syncCount(next);
-        setFeedback(translate(next === 1 ? "Saved as a local like." : "Local like added."));
-      });
 
       shareButton?.addEventListener("click", async () => {
         const shareData = {

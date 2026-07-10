@@ -12,8 +12,12 @@ import {
 } from "../semantic/visibility.js";
 import { renderCitationPanel } from "./components/citation-panel.js";
 import { renderEntityMetadata } from "./components/entity-metadata.js";
+import { renderRecordDetails } from "./components/record-details.js";
 import { renderRelationshipGroups } from "./components/relationship-groups.js";
 import { escapeHtml } from "./html.js";
+
+const ui = (project: ProjectEntity, english: string, french: string): string =>
+  project.locale === "fr" ? french : english;
 
 const labelFrom = (value: string): string =>
   value
@@ -167,9 +171,9 @@ const renderMetric = (label: string, value: string, note?: string, tone = "neutr
 
 const renderProjectBreadcrumb = (project: ProjectEntity): string => `
   <nav class="project-dossier-breadcrumbs" aria-label="Breadcrumb">
-    <a href="/">Home</a>
+    <a href="${project.locale === "fr" ? "/fr/" : "/"}">${ui(project, "Home", "Accueil")}</a>
     <span aria-hidden="true">/</span>
-    <a href="/projects.html">Projects</a>
+    <a href="${project.locale === "fr" ? "/fr/projects.html" : "/projects.html"}">${ui(project, "Projects", "Projets")}</a>
     <span aria-hidden="true">/</span>
     <span aria-current="page">${escapeHtml(project.title)}</span>
   </nav>`;
@@ -378,12 +382,11 @@ const renderProjectSystem = (project: ProjectEntity): string => {
             </ul>
           </article>` : ""}
         <article class="panel project-intelligence__card project-intelligence__card--state">
-          <p class="card__meta">Publication state</p>
+          <p class="card__meta">${ui(project, "Current state", "État actuel")}</p>
           <dl class="project-snapshot">
-            <div><dt>Status</dt><dd>${escapeHtml(project.status)}</dd></div>
-            <div><dt>Maturity</dt><dd>${escapeHtml(project.maturity)}</dd></div>
-            <div><dt>Confidence</dt><dd>${escapeHtml(project.confidence)}</dd></div>
-            <div><dt>Updated</dt><dd>${escapeHtml(project.version.modifiedAt)}</dd></div>
+            <div><dt>${ui(project, "Status", "État")}</dt><dd>${escapeHtml(project.status)}</dd></div>
+            <div><dt>${ui(project, "Maturity", "Maturité")}</dt><dd>${escapeHtml(project.maturity)}</dd></div>
+            <div><dt>${ui(project, "Updated", "Mis à jour")}</dt><dd>${escapeHtml(project.version.modifiedAt)}</dd></div>
           </dl>
         </article>
       </div>
@@ -425,7 +428,9 @@ const relationDisplay = (
     group: predicate.group,
     title: connectedEntity?.title || compactId(connectedId),
     type: connectedEntity?.type || "record",
-    statement: relation.statement,
+    statement: project.locale === "fr"
+      ? `Relation documentée avec ${connectedEntity?.title || compactId(connectedId)}.`
+      : relation.statement,
     route: routeById[connectedId] || "#",
   };
 };
@@ -458,7 +463,7 @@ const renderProjectMoodboard = (project: ProjectEntity): string => {
       <div class="project-moodboard__layout">
         <article class="panel project-moodboard__identity">
           <p class="card__meta">Identity kit</p>
-          <h3 class="card__title">${escapeHtml(logoAssets.length ? `${logoAssets.length} mark asset${logoAssets.length === 1 ? "" : "s"}` : "Visual identity signals")}</h3>
+          <h3 class="card__title">${escapeHtml(logoAssets.length ? ui(project, "Project marks", "Signes du projet") : ui(project, "Visual identity", "Identité visuelle"))}</h3>
           <p class="card__copy">${escapeHtml(logoAssets[0]?.caption || project.subtitle || project.abstract)}</p>
           ${logoAssets.length ? `
             <div class="project-moodboard__logo-rail">
@@ -540,25 +545,25 @@ const renderProjectDevelopment = (
             </ol>` : ""}
         </article>
         <article class="panel project-discipline__card">
-          <p class="card__meta">Technical links</p>
-          <h3 class="card__title">${escapeHtml(String(implementation.length))}</h3>
-          <p class="card__copy">${escapeHtml(implementation.length ? "Public technologies, frameworks or dependencies connected to the project." : "No public implementation dependency is listed yet.")}</p>
+          <p class="card__meta">${ui(project, "Technical foundations", "Fondations techniques")}</p>
+          <h3 class="card__title">${ui(project, "Connected references", "Références reliées")}</h3>
+          <p class="card__copy">${escapeHtml(implementation.length ? ui(project, "Public technologies, frameworks and dependencies connected to the project.", "Technologies, frameworks et dépendances publiques reliés au projet.") : ui(project, "No public implementation dependency is listed yet.", "Aucune dépendance d’implémentation publique n’est encore renseignée."))}</p>
           ${implementation.length ? `
             <div class="project-discipline__links">
               ${implementation.slice(0, 5).map((item) => `<a class="tag" href="${escapeHtml(item.route)}">${escapeHtml(item.title)}</a>`).join("")}
             </div>` : ""}
         </article>
         <article class="panel project-discipline__card">
-          <p class="card__meta">Constraints</p>
-          <h3 class="card__title">${escapeHtml(project.constraints?.length ? `${project.constraints.length} active` : labelFrom(project.status))}</h3>
+          <p class="card__meta">${ui(project, "Constraints", "Contraintes")}</p>
+          <h3 class="card__title">${escapeHtml(project.constraints?.length ? ui(project, "Documented constraints", "Contraintes documentées") : labelFrom(project.status))}</h3>
           ${project.constraints?.length ? `
             <ul class="project-list">
               ${project.constraints.slice(0, 4).map((item) => `<li>${escapeHtml(item)}</li>`).join("")}
             </ul>` : `<p class="card__copy">Technical constraints appear here when they are useful to the public dossier.</p>`}
         </article>
         <article class="panel project-discipline__card project-discipline__card--stack">
-          <p class="card__meta">Build stack</p>
-          <h3 class="card__title">${escapeHtml(devFocus.length ? `${devFocus.length} active signals` : project.category)}</h3>
+          <p class="card__meta">${ui(project, "Technical focus", "Axes techniques")}</p>
+          <h3 class="card__title">${escapeHtml(devFocus.length ? ui(project, "Current implementation", "Implémentation actuelle") : project.category)}</h3>
           ${renderChips(devFocus, "tag-cluster tag-cluster--compact")}
         </article>
       </div>
@@ -577,13 +582,11 @@ const renderProjectMarketing = (
   const proofSignals = uniqueStrings([
     ...(project.outcomes || []),
     ...publicRefs(project.evidence, byId).map((ref) => ref.label || refDetails(ref, byId, routeById).title),
-    ...(project.media?.length ? [`${project.media.length} media asset${project.media.length === 1 ? "" : "s"}`] : []),
   ]).slice(0, 6);
   const marketingFocus = uniqueStrings([
     ...(project.marketingFocus || []),
     project.category,
-    project.status,
-    ...(project.tags || []),
+    ...(project.tags || []).filter((tag) => tag.toLowerCase() !== "internal"),
   ]).slice(0, 8);
 
   return `
@@ -600,16 +603,16 @@ const renderProjectMarketing = (
           <p class="card__copy">${escapeHtml(project.context)}</p>
         </article>
         <article class="panel project-discipline__card">
-          <p class="card__meta">Audience</p>
-          <h3 class="card__title">${escapeHtml(audience.length ? `${audience.length} public group${audience.length === 1 ? "" : "s"}` : "Audience to define")}</h3>
+          <p class="card__meta">${ui(project, "Participants", "Participants")}</p>
+          <h3 class="card__title">${escapeHtml(audience.length ? ui(project, "Named organizations and people", "Organisations et personnes nommées") : ui(project, "Participants to define", "Participants à définir"))}</h3>
           ${audience.length ? `
             <div class="project-discipline__links">
               ${audience.map((item) => `<a class="tag" href="${escapeHtml(item.route)}">${escapeHtml(item.title)}</a>`).join("")}
             </div>` : `<p class="card__copy">Audience groups appear here when they are useful to explain the project.</p>`}
         </article>
         <article class="panel project-discipline__card">
-          <p class="card__meta">Proof</p>
-          <h3 class="card__title">${escapeHtml(proofSignals.length ? `${proofSignals.length} signals` : "Proof pending")}</h3>
+          <p class="card__meta">${ui(project, "Evidence", "Preuves")}</p>
+          <h3 class="card__title">${escapeHtml(proofSignals.length ? ui(project, "Documented outcomes", "Résultats documentés") : ui(project, "Evidence pending", "Preuves à venir"))}</h3>
           ${proofSignals.length ? `<ul class="project-list">${proofSignals.map((item) => `<li>${escapeHtml(item)}</li>`).join("")}</ul>` : `<p class="card__copy">Outcomes, evidence and media will populate this block.</p>`}
         </article>
         <article class="panel project-discipline__card">
@@ -638,9 +641,9 @@ const renderProjectGraph = (
     <section class="zone-card hero project-graph" id="project-graph" data-project-graph>
       <div class="project-graph__intro">
         <div class="section-head">
-          <p class="eyebrow">RELATED CONTEXT</p>
-          <h2>${escapeHtml(String(nodes.length))} useful links around ${escapeHtml(project.title)}.</h2>
-          <p class="lede">Use these links to move from the project toward related people, systems, concepts and evidence.</p>
+          <p class="eyebrow">${ui(project, "RELATED CONTEXT", "CONTEXTE ASSOCIÉ")}</p>
+          <h2>${escapeHtml(ui(project, `Useful links around ${project.title}.`, `Liens utiles autour de ${project.title}.`))}</h2>
+          <p class="lede">${ui(project, "Move from the project toward related people, systems, concepts and evidence.", "Passez du projet aux personnes, systèmes, concepts et preuves qui lui sont reliés.")}</p>
         </div>
         <article class="panel panel--soft project-graph__detail" data-project-graph-detail>
           <p class="card__meta" data-project-graph-label>${escapeHtml(first.label)}</p>
@@ -658,7 +661,7 @@ const renderProjectGraph = (
           }).join("")}
         </svg>
         <div class="project-graph__center">
-          <span>PROJECT</span>
+          <span>${ui(project, "PROJECT", "PROJET")}</span>
           <strong>${escapeHtml(project.title)}</strong>
         </div>
         ${nodes.map((node, index) => {
@@ -713,20 +716,18 @@ export const renderProjectPage = (
     <section class="zone-card hero detail-hero detail-hero--with-media project-dossier-hero" id="project-overview" data-entry-id="${escapeHtml(project.slug.canonical)}">
       <div class="section-head detail-hero__content">
         ${renderProjectBreadcrumb(project)}
-        <p class="eyebrow">PROJECT DOSSIER</p>
+        <p class="eyebrow">${ui(project, "PROJECT DOSSIER", "DOSSIER PROJET")}</p>
         <h1 class="display-title">${escapeHtml(project.title)}</h1>
         ${project.subtitle ? `<p class="card__meta">${escapeHtml(project.subtitle)}</p>` : ""}
         <p class="lede">${escapeHtml(project.abstract)}</p>
         <div class="button-row button-row--compact">
-          <a class="button button--primary" href="#project-brief">Read the brief</a>
-          <a class="button button--secondary" href="${hasGraph ? "#project-graph" : "#project-thesis"}">${hasGraph ? "See related context" : "Read thesis"}</a>
+          <a class="button button--primary" href="#project-brief">${ui(project, "Read the brief", "Lire le brief")}</a>
+          <a class="button button--secondary" href="${hasGraph ? "#project-graph" : "#project-thesis"}">${hasGraph ? ui(project, "See related context", "Voir le contexte associé") : ui(project, "Read thesis", "Lire la thèse")}</a>
           ${(project.socialLinks || []).map((link) => `<a class="button button--secondary" href="${escapeHtml(link.href)}" target="_blank" rel="noreferrer">${escapeHtml(link.label)}</a>`).join("")}
         </div>
         <div class="metric-rail">
-          ${renderMetric("Status", labelFrom(project.status), project.maturity, "surface")}
-          ${renderMetric("Category", isVestiges ? "Flagship platform" : labelFrom(project.category), project.confidence, "research")}
-          ${renderMetric("Related", String(connected.length), "useful links", "system")}
-          ${renderMetric("Media", String(mediaCount), mediaCount === 1 ? "asset" : "assets", "visual")}
+          ${renderMetric(ui(project, "Status", "État"), labelFrom(project.status), project.maturity, "surface")}
+          ${renderMetric(ui(project, "Category", "Catégorie"), isVestiges ? ui(project, "Flagship platform", "Plateforme phare") : labelFrom(project.category), undefined, "research")}
         </div>
         ${renderChips(tags.slice(0, 10))}
         <nav class="project-dossier-nav" aria-label="Project sections">
@@ -753,10 +754,12 @@ export const renderProjectPage = (
       </div>
       ${project.bodyHtml}
     </article>
-    <section class="detail-grid">
-      ${renderEntityMetadata(project)}
-      ${renderCitationPanel(project, `${site.origin}${routeForEntity(project)}`)}
-    </section>
     ${renderRelationshipGroups(project, relations, byId, routeById)}
+    ${renderRecordDetails(project, `
+      <section class="detail-grid">
+        ${renderEntityMetadata(project)}
+        ${renderCitationPanel(project, `${site.origin}${routeForEntity(project)}`)}
+      </section>
+    `)}
   `;
 };

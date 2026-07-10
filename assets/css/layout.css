@@ -414,6 +414,15 @@ section[data-render] {
   margin-top: 0.65rem;
 }
 
+.footer-links--utility {
+  margin-top: 0.1rem;
+}
+
+.footer-links--utility .tag {
+  color: var(--muted);
+  font-size: 0.68rem;
+}
+
 .footer-main {
   gap: 0.95rem;
   min-width: min(100%, 34rem);

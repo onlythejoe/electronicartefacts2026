@@ -976,9 +976,7 @@
   };
 
   const referenceDossierPanel = (item) => {
-    const relationCount = relationEntriesFor(item).length;
-    const galleryCount = item.media?.gallery?.length || 0;
-    const signalCount = signalValuesFor(item, 12).length;
+    const updated = item.temporality?.lastUpdated || item.temporality?.creationYear;
     return `
       <section class="panel knowledge-panel knowledge-panel--intro">
         <div class="section-head">
@@ -988,9 +986,7 @@
         </div>
         <div class="detail-reference-strip">
           <span><strong>${esc(statusLabelFor(item))}</strong><em>Status</em></span>
-          <span><strong>${esc(countLabel(relationCount, "link"))}</strong><em>Relations</em></span>
-          <span><strong>${esc(countLabel(galleryCount, "asset"))}</strong><em>Media</em></span>
-          <span><strong>${esc(countLabel(signalCount, "signal"))}</strong><em>Signals</em></span>
+          ${updated ? `<span><strong>${esc(updated)}</strong><em>Updated</em></span>` : ""}
         </div>
       </section>
     `;
@@ -1000,16 +996,12 @@
     <section class="panel knowledge-panel engagement-panel" data-engagement-panel data-like-key="${esc(item.id || item.title || "record")}">
       <div class="engagement-panel__header">
         <div>
-          <p class="card__meta">Save and share</p>
+          <p class="card__meta">Page actions</p>
           <h2 class="card__title">${esc(item.title || "Record")}</h2>
         </div>
         <span class="engagement-panel__status">${esc(statusLabelFor(item))}</span>
       </div>
-      <div class="engagement-panel__actions" aria-label="Article actions">
-        <button class="engagement-action engagement-action--like" type="button" data-like-button aria-label="Like this article">
-          <span aria-hidden="true">♡</span>
-          <strong data-like-count>0</strong>
-        </button>
+      <div class="engagement-panel__actions" aria-label="Page actions">
         <button class="engagement-action" type="button" data-share-button>
           <span aria-hidden="true">↗</span>
           <strong>Share</strong>
@@ -4517,6 +4509,8 @@
     syncSeoMeta({ current, entityById });
     const includesReady = loadIncludes();
     renderPageSections();
+    const seoHeading = document.querySelector("[data-seo-h1]");
+    if (seoHeading && document.querySelectorAll("main h1").length > 1) seoHeading.remove();
     await includesReady;
     window.EA_I18N?.localizeRoot(document);
     syncNavigationState(current);

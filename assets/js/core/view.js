@@ -385,13 +385,13 @@
     <figure class="program-commercial-hero__media computation-field computation-field--${esc(variant)}" data-computation-field data-computation-variant="${esc(variant)}" data-depth="0.86">
       <canvas class="computation-field__canvas" aria-hidden="true"></canvas>
       <div class="computation-field__hud" aria-hidden="true">
-        <span>EA.RUNTIME / SIGNAL BUS</span>
-        <span data-computation-rate>128.4 GB/s</span>
+        <span>EA.MODEL / ARCHITECTURE</span>
+        <span>CONTEXT / IDENTITY / EXECUTION</span>
       </div>
       <div class="computation-field__events" data-computation-events aria-hidden="true"></div>
       <figcaption>
-        <span>Live computation field</span>
-        <strong>Information propagates through context, identity and execution layers.</strong>
+        <span>Architecture study</span>
+        <strong>A browser visualization of connected system layers, not live telemetry.</strong>
       </figcaption>
     </figure>
   `;
@@ -402,12 +402,12 @@
 
     const reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
     const eventLabels = [
-      "packet routed",
-      "graph resolved",
-      "context synced",
-      "state committed",
-      "signal indexed",
-      "identity verified",
+      "durable identity",
+      "explicit relation",
+      "context boundary",
+      "permission rule",
+      "event projection",
+      "provenance record",
     ];
     const glyphs = ["0", "1", "A", "B", "C", "D", "E", "F", "/", "=", "∴", "◇"];
 

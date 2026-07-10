@@ -4,12 +4,70 @@ import type { RelationStatement } from "../../schema/relation.js";
 import { connectedEntityIdForRelation, publicEntityIds, publicRelationsForEntity } from "../../semantic/visibility.js";
 import { escapeHtml } from "../html.js";
 
+const frenchRelationLabels: Record<string, string> = {
+  "Defines": "Définit",
+  "Refines": "Affîne",
+  "Contrasts with": "Contraste avec",
+  "Influenced by": "Influencé par",
+  "Tests": "Met à l’épreuve",
+  "Supports claim": "Étaye l’affirmation",
+  "Contradicts claim": "Contredit l’affirmation",
+  "Cites": "Cite",
+  "Applies concept": "Applique le concept",
+  "Applied by": "Appliqué par",
+  "Uses method": "Utilise la méthode",
+  "Used by": "Utilisé par",
+  "Implements framework": "Implémente le framework",
+  "Implemented by": "Implémenté par",
+  "Uses technology": "Utilise la technologie",
+  "Implements": "Implémente",
+  "Demonstrated by": "Démontré par",
+  "Created by": "Créé par",
+  "Contributed by": "Avec la contribution de",
+  "Produced by": "Produit par",
+  "Published by": "Publié par",
+  "Commissioned by": "Commandé par",
+  "Maintained by": "Maintenu par",
+  "Funded by": "Financé par",
+  "Has part": "Comprend",
+  "Part of": "Fait partie de",
+  "Member of collection": "Membre de la collection",
+  "Documents": "Documente",
+  "Documented by": "Documenté par",
+  "Subject of": "Sujet de",
+  "Depends on": "Dépend de",
+  "Powered by": "Fondé sur",
+  "Integrates with": "S’intègre à",
+  "Supersedes": "Remplace",
+  "Version of": "Version de",
+  "Forked from": "Dérivé de",
+  "Evidenced by": "Étayé par",
+  "Derived from": "Issu de",
+  "Uses dataset": "Utilise le jeu de données",
+  "Generated artefact": "Génère l’artefact",
+  "Has source": "A pour source",
+  "Preceded by": "Précédé par",
+  "Followed by": "Suivi par",
+  "Occurred during": "Survenu pendant",
+  "Resulted in": "A produit",
+};
+
+const frenchGroupLabels: Record<string, string> = {
+  knowledge: "connaissance",
+  implementation: "implémentation",
+  production: "production",
+  structure: "structure",
+  evidence: "preuves",
+  history: "historique",
+};
+
 const relationLabelForEntity = (entity: Entity, relation: RelationStatement): string => {
   const definition = predicateDefinitions[relation.predicate];
   const entityIds = new Set([entity.id, entity.translationOf].filter(Boolean));
-  return entityIds.has(relation.object) && definition.inverseLabel
+  const label = entityIds.has(relation.object) && definition.inverseLabel
     ? definition.inverseLabel
     : definition.label;
+  return entity.locale === "fr" ? frenchRelationLabels[label] || label : label;
 };
 
 export const renderRelationshipGroups = (
@@ -28,14 +86,14 @@ export const renderRelationshipGroups = (
   return `
     <section class="zone-card hero">
       <div class="section-head">
-        <p class="eyebrow">TYPED RELATIONSHIPS</p>
-        <h2>Connected work and ideas.</h2>
-        <p class="lede">Each relation names what connects the two entries and why that connection matters.</p>
+        <p class="eyebrow">${entity.locale === "fr" ? "RELATIONS DOCUMENTÉES" : "DOCUMENTED RELATIONSHIPS"}</p>
+        <h2>${entity.locale === "fr" ? "Travaux et idées associés." : "Connected work and ideas."}</h2>
+        <p class="lede">${entity.locale === "fr" ? "Chaque lien précise la nature de la relation entre deux entrées." : "Each link names the relationship between two entries and why it matters."}</p>
       </div>
       <div class="card-grid card-grid--two">
         ${[...groups.entries()].map(([group, items]) => `
           <article class="panel">
-            <p class="card__meta">${escapeHtml(group)}</p>
+            <p class="card__meta">${escapeHtml(entity.locale === "fr" ? frenchGroupLabels[group] || group : group)}</p>
             <div class="stack">
               ${items.map((relation) => {
                 const connectedId = connectedEntityIdForRelation(entity, relation);
@@ -44,7 +102,7 @@ export const renderRelationshipGroups = (
                   <div class="panel panel--soft">
                     <p class="card__meta">${escapeHtml(relationLabelForEntity(entity, relation))}</p>
                     <h3 class="card__title"><a href="${escapeHtml(routeById[connectedId] || "#")}">${escapeHtml(connectedEntity?.title || connectedId)}</a></h3>
-                    <p class="card__copy">${escapeHtml(relation.statement)}</p>
+                    ${entity.locale === "fr" ? "" : `<p class="card__copy">${escapeHtml(relation.statement)}</p>`}
                   </div>`;
               }).join("")}
             </div>

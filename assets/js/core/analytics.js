@@ -432,15 +432,6 @@
       return;
     }
 
-    if (button.matches("[data-like-button]")) {
-      track("select_content", {
-        content_type: "local_like",
-        content_id: nearestEntryId(button) || currentPageParams().page_path,
-        link_location: location,
-      });
-      return;
-    }
-
     if (button.matches("[data-share-button]")) {
       track("ea_share_intent", {
         method: navigator.share ? "native_share" : "clipboard",

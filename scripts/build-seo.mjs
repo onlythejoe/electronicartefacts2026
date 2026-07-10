@@ -401,7 +401,9 @@ for (const [file, config] of Object.entries(pages)) {
   }
 
   html = injectSeoH1(html, config);
-  html = html.replace(/assets\/js\/app\.js\?v=\d+/, "assets/js/app.js?v=48");
+  html = html.replace(/<main id="main"(?![^>]*\btabindex=)/, '<main id="main" tabindex="-1"');
+  html = html.replace(/assets\/css\/app\.css\?v=\d+/, "assets/css/app.css?v=50");
+  html = html.replace(/assets\/js\/app\.js\?v=\d+/, "assets/js/app.js?v=49");
 
   await writeFile(absolutePath, html);
 }

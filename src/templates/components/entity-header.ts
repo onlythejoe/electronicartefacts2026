@@ -17,7 +17,6 @@ export const renderEntityHeader = (entity: Entity): string => `
     </div>
     <div class="pill-cloud">
       <span class="tag">${escapeHtml(entity.status)}</span>
-      <span class="tag">${escapeHtml(entity.confidence)}</span>
-      <span class="tag">v${escapeHtml(entity.version.version)}</span>
+      <span class="tag">${escapeHtml(entity.maturity)}</span>
     </div>
   </section>`;
