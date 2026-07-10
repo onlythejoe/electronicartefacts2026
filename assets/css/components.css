@@ -1192,13 +1192,10 @@
 .forensic-workflow {
   display: grid;
   grid-template-columns: repeat(7, minmax(0, 1fr));
-  gap: 1px;
+  gap: 0.55rem;
   margin: var(--card-grid-gap) 0 0;
-  padding: 1px;
+  padding: 0;
   list-style: none;
-  background: var(--border);
-  border-radius: var(--radius-lg);
-  overflow: hidden;
 }
 
 .forensic-workflow li {
@@ -1206,7 +1203,12 @@
   min-height: 13rem;
   padding: clamp(1rem, 1.6vw, 1.35rem);
   background: #08090a;
-  border-radius: calc(var(--radius-md) - 0.1rem);
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  border-radius: var(--radius-md);
+  box-shadow: none;
+  overflow-wrap: normal;
+  word-break: normal;
+  hyphens: none;
 }
 
 .forensic-workflow span,
@@ -1232,6 +1234,9 @@
   color: var(--muted);
   font-size: 0.78rem;
   line-height: 1.55;
+  overflow-wrap: normal;
+  word-break: normal;
+  hyphens: none;
 }
 
 @media (max-width: 1120px) {

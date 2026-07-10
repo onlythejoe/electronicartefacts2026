@@ -469,7 +469,7 @@
             || node.style.getPropertyValue("--cap-size")
             || node.dataset.capabilitySize
             || "7rem";
-          const baseWidth = Number.parseFloat(sizeValue) || 112;
+          const baseWidth = node.getBoundingClientRect().width || (Number.parseFloat(sizeValue) * 16) || 112;
           const baseR = Math.max(44, baseWidth / 2);
           const x = (leftPct / 100) * width;
           const y = (topPct / 100) * height;
@@ -484,6 +484,9 @@
             r: baseR,
             baseR,
             hover: index === 0,
+            phase: index * 1.17,
+            vx: (index % 2 ? -1 : 1) * 0.08,
+            vy: (index % 3 - 1) * 0.06,
           });
           node.style.willChange = "left, top, width, height, transform";
         });
@@ -496,9 +499,9 @@
 
       const frame = () => {
         if (compactLayout || !bubbleState.length) return;
-        const attraction = 0.02;
         const hoverScale = 1.28;
         const iterations = 5;
+        const time = performance.now() * 0.001;
 
         bubbleState.forEach((bubble) => {
           bubble.px = bubble.x;
@@ -506,8 +509,16 @@
         });
 
         bubbleState.forEach((bubble) => {
-          bubble.x += (bubble.ax - bubble.x) * attraction;
-          bubble.y += (bubble.ay - bubble.y) * attraction;
+          const driftX = Math.sin(time * 0.42 + bubble.phase) * width * 0.045;
+          const driftY = Math.cos(time * 0.36 + bubble.phase * 1.23) * height * 0.055;
+          const targetX = bubble.ax + driftX;
+          const targetY = bubble.ay + driftY;
+          bubble.vx += (targetX - bubble.x) * 0.0009;
+          bubble.vy += (targetY - bubble.y) * 0.0009;
+          bubble.vx *= 0.985;
+          bubble.vy *= 0.985;
+          bubble.x += bubble.vx;
+          bubble.y += bubble.vy;
         });
 
         for (let iter = 0; iter < iterations; iter += 1) {

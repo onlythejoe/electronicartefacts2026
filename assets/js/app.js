@@ -24396,7 +24396,7 @@ window.EA_ANALYTICS_CONFIG = {
             || node.style.getPropertyValue("--cap-size")
             || node.dataset.capabilitySize
             || "7rem";
-          const baseWidth = Number.parseFloat(sizeValue) || 112;
+          const baseWidth = node.getBoundingClientRect().width || (Number.parseFloat(sizeValue) * 16) || 112;
           const baseR = Math.max(44, baseWidth / 2);
           const x = (leftPct / 100) * width;
           const y = (topPct / 100) * height;
@@ -24411,6 +24411,9 @@ window.EA_ANALYTICS_CONFIG = {
             r: baseR,
             baseR,
             hover: index === 0,
+            phase: index * 1.17,
+            vx: (index % 2 ? -1 : 1) * 0.08,
+            vy: (index % 3 - 1) * 0.06,
           });
           node.style.willChange = "left, top, width, height, transform";
         });
@@ -24423,9 +24426,9 @@ window.EA_ANALYTICS_CONFIG = {
 
       const frame = () => {
         if (compactLayout || !bubbleState.length) return;
-        const attraction = 0.02;
         const hoverScale = 1.28;
         const iterations = 5;
+        const time = performance.now() * 0.001;
 
         bubbleState.forEach((bubble) => {
           bubble.px = bubble.x;
@@ -24433,8 +24436,16 @@ window.EA_ANALYTICS_CONFIG = {
         });
 
         bubbleState.forEach((bubble) => {
-          bubble.x += (bubble.ax - bubble.x) * attraction;
-          bubble.y += (bubble.ay - bubble.y) * attraction;
+          const driftX = Math.sin(time * 0.42 + bubble.phase) * width * 0.045;
+          const driftY = Math.cos(time * 0.36 + bubble.phase * 1.23) * height * 0.055;
+          const targetX = bubble.ax + driftX;
+          const targetY = bubble.ay + driftY;
+          bubble.vx += (targetX - bubble.x) * 0.0009;
+          bubble.vy += (targetY - bubble.y) * 0.0009;
+          bubble.vx *= 0.985;
+          bubble.vy *= 0.985;
+          bubble.x += bubble.vx;
+          bubble.y += bubble.vy;
         });
 
         for (let iter = 0; iter < iterations; iter += 1) {
@@ -29568,7 +29579,7 @@ window.EA_ANALYTICS_CONFIG = {
         outputs: ["Positioning", "Brief", "Roadmap"],
         x: 16,
         y: 15,
-        size: "10.3rem",
+        size: "13.5rem",
         rgb: "234, 220, 207",
       },
       {
@@ -29580,7 +29591,7 @@ window.EA_ANALYTICS_CONFIG = {
         outputs: ["Identity", "Art direction", "Brand kit"],
         x: 42,
         y: 10,
-        size: "11.2rem",
+        size: "13rem",
         rgb: "244, 114, 182",
       },
       {
@@ -29592,7 +29603,7 @@ window.EA_ANALYTICS_CONFIG = {
         outputs: ["Narrative", "Information model", "Editorial system"],
         x: 70,
         y: 14,
-        size: "10.8rem",
+        size: "13rem",
         rgb: "251, 191, 36",
       },
       {
@@ -29604,7 +29615,7 @@ window.EA_ANALYTICS_CONFIG = {
         outputs: ["User flows", "Interface", "Interaction model"],
         x: 12,
         y: 61,
-        size: "10.1rem",
+        size: "12rem",
         rgb: "56, 189, 248",
       },
       {
@@ -29616,7 +29627,7 @@ window.EA_ANALYTICS_CONFIG = {
         outputs: ["Product model", "Prototype", "Design system"],
         x: 39,
         y: 44,
-        size: "11.4rem",
+        size: "13rem",
         rgb: "45, 212, 191",
       },
       {
@@ -29628,7 +29639,7 @@ window.EA_ANALYTICS_CONFIG = {
         outputs: ["Front end", "CMS", "Production site"],
         x: 68,
         y: 52,
-        size: "10.7rem",
+        size: "13.5rem",
         rgb: "96, 165, 250",
       },
       {
@@ -29640,7 +29651,7 @@ window.EA_ANALYTICS_CONFIG = {
         outputs: ["Architecture", "Platform", "Workflow"],
         x: 89,
         y: 68,
-        size: "11.5rem",
+        size: "14rem",
         rgb: "74, 222, 128",
       },
       {
@@ -29652,7 +29663,7 @@ window.EA_ANALYTICS_CONFIG = {
         outputs: ["Prototype", "Automation", "Knowledge system"],
         x: 58,
         y: 86,
-        size: "11rem",
+        size: "14rem",
         rgb: "34, 211, 238",
       },
     ];

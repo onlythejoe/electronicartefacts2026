@@ -3158,7 +3158,7 @@
         outputs: ["Positioning", "Brief", "Roadmap"],
         x: 16,
         y: 15,
-        size: "10.3rem",
+        size: "13.5rem",
         rgb: "234, 220, 207",
       },
       {
@@ -3170,7 +3170,7 @@
         outputs: ["Identity", "Art direction", "Brand kit"],
         x: 42,
         y: 10,
-        size: "11.2rem",
+        size: "13rem",
         rgb: "244, 114, 182",
       },
       {
@@ -3182,7 +3182,7 @@
         outputs: ["Narrative", "Information model", "Editorial system"],
         x: 70,
         y: 14,
-        size: "10.8rem",
+        size: "13rem",
         rgb: "251, 191, 36",
       },
       {
@@ -3194,7 +3194,7 @@
         outputs: ["User flows", "Interface", "Interaction model"],
         x: 12,
         y: 61,
-        size: "10.1rem",
+        size: "12rem",
         rgb: "56, 189, 248",
       },
       {
@@ -3206,7 +3206,7 @@
         outputs: ["Product model", "Prototype", "Design system"],
         x: 39,
         y: 44,
-        size: "11.4rem",
+        size: "13rem",
         rgb: "45, 212, 191",
       },
       {
@@ -3218,7 +3218,7 @@
         outputs: ["Front end", "CMS", "Production site"],
         x: 68,
         y: 52,
-        size: "10.7rem",
+        size: "13.5rem",
         rgb: "96, 165, 250",
       },
       {
@@ -3230,7 +3230,7 @@
         outputs: ["Architecture", "Platform", "Workflow"],
         x: 89,
         y: 68,
-        size: "11.5rem",
+        size: "14rem",
         rgb: "74, 222, 128",
       },
       {
@@ -3242,7 +3242,7 @@
         outputs: ["Prototype", "Automation", "Knowledge system"],
         x: 58,
         y: 86,
-        size: "11rem",
+        size: "14rem",
         rgb: "34, 211, 238",
       },
     ];

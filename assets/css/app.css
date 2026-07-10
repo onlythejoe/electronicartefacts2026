@@ -2146,13 +2146,10 @@ body.is-header-hidden .shell-header.zone-card {
 .forensic-workflow {
   display: grid;
   grid-template-columns: repeat(7, minmax(0, 1fr));
-  gap: 1px;
+  gap: 0.55rem;
   margin: var(--card-grid-gap) 0 0;
-  padding: 1px;
+  padding: 0;
   list-style: none;
-  background: var(--border);
-  border-radius: var(--radius-lg);
-  overflow: hidden;
 }
 
 .forensic-workflow li {
@@ -2160,7 +2157,12 @@ body.is-header-hidden .shell-header.zone-card {
   min-height: 13rem;
   padding: clamp(1rem, 1.6vw, 1.35rem);
   background: #08090a;
-  border-radius: calc(var(--radius-md) - 0.1rem);
+  border: 1px solid rgba(255, 255, 255, 0.09);
+  border-radius: var(--radius-md);
+  box-shadow: none;
+  overflow-wrap: normal;
+  word-break: normal;
+  hyphens: none;
 }
 
 .forensic-workflow span,
@@ -2186,6 +2188,9 @@ body.is-header-hidden .shell-header.zone-card {
   color: var(--muted);
   font-size: 0.78rem;
   line-height: 1.55;
+  overflow-wrap: normal;
+  word-break: normal;
+  hyphens: none;
 }
 
 @media (max-width: 1120px) {
@@ -3477,6 +3482,7 @@ body.is-header-hidden .shell-header.zone-card {
 
 .capability-reader__index span:first-child {
   color: var(--accent);
+  white-space: nowrap;
 }
 
 .capability-reader__copy {
@@ -3606,13 +3612,14 @@ body.is-header-hidden .shell-header.zone-card {
 }
 
 .capability-node strong {
-  display: -webkit-box;
-  overflow: hidden;
+  display: block;
+  overflow: visible;
   color: rgba(247, 244, 239, 0.78);
-  font-size: 0.92rem;
+  font-size: clamp(0.68rem, 1.05vw, 0.92rem);
   line-height: 1.18;
-  -webkit-box-orient: vertical;
-  -webkit-line-clamp: 2;
+  overflow-wrap: normal;
+  hyphens: none;
+  text-wrap: balance;
 }
 
 .capability-node:hover,
