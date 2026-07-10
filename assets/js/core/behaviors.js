@@ -2145,6 +2145,21 @@
       ".intent-hero__stats span",
       ".computation-field",
     ].join(",");
+    const movableLayerSelector = [
+      ".home-intent-stage__frame",
+      ".home-intent-stage__channels a",
+      ".intent-media-stack a",
+      ".projects-hero__frame",
+      ".archive-stack__sheet",
+      ".research-constellation__node",
+      ".about-orbit__core",
+      ".about-orbit__node",
+      ".contact-signal__card",
+      ".knowledge-graph-stage__node",
+      ".intent-hero__stats span",
+      ".computation-field",
+      "[data-forge-artifact]",
+    ].join(",");
     const layerDepth = (layer) => {
       const explicit = Number.parseFloat(layer.getAttribute("data-depth") || "");
       if (Number.isFinite(explicit)) return explicit;
@@ -2168,6 +2183,96 @@
       scope.classList.add("is-intent-ready");
       layers.forEach((layer) => {
         layer.style.setProperty("--intent-layer-depth", layerDepth(layer).toFixed(2));
+      });
+
+      const movableLayers = [...scope.querySelectorAll(movableLayerSelector)].filter((layer) => stage.contains(layer));
+      movableLayers.forEach((layer) => {
+        if (layer.dataset.heroMovableBound === "true") return;
+        layer.dataset.heroMovableBound = "true";
+        layer.dataset.heroMovable = "true";
+
+        let drag = null;
+        let pendingPress = null;
+        let suppressClickUntil = 0;
+        const dragThreshold = 8;
+        const currentDragX = () => Number.parseFloat(layer.dataset.heroDragX || "0") || 0;
+        const currentDragY = () => Number.parseFloat(layer.dataset.heroDragY || "0") || 0;
+        const startDrag = (event) => {
+          if (!pendingPress || drag || event.pointerId !== pendingPress.pointerId) return false;
+          drag = {
+            pointerId: event.pointerId,
+            pointerStartX: pendingPress.x,
+            pointerStartY: pendingPress.y,
+            startX: currentDragX(),
+            startY: currentDragY(),
+          };
+          pendingPress = null;
+          scope.classList.add("is-hero-dragging");
+          layer.classList.add("is-hero-dragging");
+          return true;
+        };
+        const setPosition = (clientX, clientY) => {
+          if (!drag) return;
+          const stageRect = stage.getBoundingClientRect();
+          const layerRect = layer.getBoundingClientRect();
+          const padding = 12;
+          const requestedX = drag.startX + clientX - drag.pointerStartX;
+          const requestedY = drag.startY + clientY - drag.pointerStartY;
+          const minX = stageRect.left + padding - layerRect.left + currentDragX();
+          const maxX = stageRect.right - padding - layerRect.right + currentDragX();
+          const minY = stageRect.top + padding - layerRect.top + currentDragY();
+          const maxY = stageRect.bottom - padding - layerRect.bottom + currentDragY();
+          const nextX = Math.min(Math.max(requestedX, minX), Math.max(minX, maxX));
+          const nextY = Math.min(Math.max(requestedY, minY), Math.max(minY, maxY));
+          layer.dataset.heroDragX = nextX.toFixed(1);
+          layer.dataset.heroDragY = nextY.toFixed(1);
+          layer.style.setProperty("--hero-drag-x", `${nextX.toFixed(1)}px`);
+          layer.style.setProperty("--hero-drag-y", `${nextY.toFixed(1)}px`);
+        };
+        const finishDrag = () => {
+          pendingPress = null;
+          if (!drag) return;
+          scope.classList.remove("is-hero-dragging");
+          layer.classList.remove("is-hero-dragging");
+          layer.releasePointerCapture?.(drag.pointerId);
+          suppressClickUntil = performance.now() + 220;
+          drag = null;
+        };
+
+        layer.addEventListener("pointerdown", (event) => {
+          if (event.button !== 0 || drag) return;
+          pendingPress = { pointerId: event.pointerId, x: event.clientX, y: event.clientY };
+          layer.setPointerCapture?.(event.pointerId);
+        });
+
+        layer.addEventListener("pointermove", (event) => {
+          if (!drag) {
+            if (
+              pendingPress &&
+              event.pointerId === pendingPress.pointerId &&
+              Math.hypot(event.clientX - pendingPress.x, event.clientY - pendingPress.y) >= dragThreshold
+            ) {
+              startDrag(event);
+              event.preventDefault();
+              setPosition(event.clientX, event.clientY);
+            }
+            return;
+          }
+          if (event.pointerId !== drag.pointerId) return;
+          event.preventDefault();
+          setPosition(event.clientX, event.clientY);
+        });
+
+        layer.addEventListener("pointerup", finishDrag);
+        layer.addEventListener("pointercancel", finishDrag);
+        layer.addEventListener("contextmenu", (event) => {
+          if (drag) event.preventDefault();
+        });
+        layer.addEventListener("click", (event) => {
+          if (performance.now() > suppressClickUntil) return;
+          event.preventDefault();
+          event.stopPropagation();
+        }, true);
       });
 
       if (reduceMotion || coarsePointer || !finePointer || !layers.length) return;

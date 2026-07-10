@@ -11196,13 +11196,31 @@ input:focus-visible {
   --intent-shift-y: 0px;
   --intent-shift-z: 0px;
   --intent-active-scale: 1;
-  translate: var(--intent-shift-x) var(--intent-shift-y) var(--intent-shift-z);
+  translate:
+    calc(var(--intent-shift-x) + var(--hero-drag-x, 0px))
+    calc(var(--intent-shift-y) + var(--hero-drag-y, 0px))
+    var(--intent-shift-z);
   scale: var(--intent-active-scale);
   transition:
     translate 260ms cubic-bezier(0.2, 0.8, 0.2, 1),
     scale 220ms cubic-bezier(0.2, 0.8, 0.2, 1),
     filter 220ms ease;
   will-change: translate, scale, filter;
+}
+
+.intent-hero [data-hero-movable="true"] {
+  --hero-drag-x: 0px;
+  --hero-drag-y: 0px;
+  cursor: grab;
+  touch-action: pan-y;
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.intent-hero [data-hero-movable="true"].is-hero-dragging {
+  z-index: 40 !important;
+  cursor: grabbing;
+  transition: none;
 }
 
 .intent-hero__copy > .eyebrow,
@@ -12336,6 +12354,10 @@ input:focus-visible {
     font-size: 0.54rem;
   }
 
+  .intent-hero [data-hero-movable="true"] {
+    translate: var(--hero-drag-x) var(--hero-drag-y) 0;
+  }
+
   .intent-hero__stats,
   .generated-hub-hero__metrics.intent-hero__stats {
     right: 0.45rem;
@@ -12514,6 +12536,10 @@ input:focus-visible {
     transform: none !important;
     translate: none !important;
     scale: 1 !important;
+  }
+
+  .intent-hero [data-hero-movable="true"] {
+    translate: var(--hero-drag-x) var(--hero-drag-y) 0 !important;
   }
 
   .home-intent-stage__frame,
