@@ -20103,6 +20103,12 @@ window.EA_SEARCH = {
     "Repository access": "Accès au dépôt",
     "Pilot": "Pilote",
     "Licensing": "Licence",
+    "FORGE / OBJECT 360": "FORGE / OBJET 360",
+    "TEXTURED GLB / 2026.06": "GLB TEXTURÉ / 2026.06",
+    "Preparing 3D artefact": "Préparation de l’artefact 3D",
+    "3D unavailable — FORGE artefact preserved as GLB": "3D indisponible — artefact FORGE préservé au format GLB",
+    "Artefact 3D issu du pipeline FORGE": "Artefact 3D issu du pipeline FORGE",
+    "Reconstruction texturée manipulable — glissez pour l’examiner.": "Reconstruction texturée manipulable — glissez pour l’examiner.",
     "Live computation field": "Champ de calcul actif",
     "01 / Repository access": "01 / Accès au dépôt",
     "Review the actual program.": "Examiner le programme réel.",
@@ -21593,6 +21599,55 @@ window.EA_ANALYTICS_CONFIG = {
     </figure>
   `;
 
+  const forgeArtifactMarkup = () => `
+    <figure class="forge-artifact" data-forge-artifact data-depth="0.96">
+      <model-viewer
+        class="forge-artifact__model"
+        src="./assets/media/forge/artifact-ultra-object-360.glb"
+        alt="A textured physical artefact reconstructed by the FORGE production pipeline."
+        loading="eager"
+        reveal="auto"
+        camera-controls
+        auto-rotate
+        rotation-per-second="10deg"
+        interaction-prompt="none"
+        camera-orbit="-28deg 74deg 112%"
+        min-camera-orbit="auto auto 78%"
+        max-camera-orbit="auto auto 170%"
+        field-of-view="24deg"
+        shadow-intensity="0.8"
+        exposure="0.92">
+        <div slot="poster" class="forge-artifact__poster" aria-hidden="true">
+          <span class="forge-artifact__loading-mark"></span>
+          <span>Preparing 3D artefact</span>
+        </div>
+      </model-viewer>
+      <div class="forge-artifact__hud" aria-hidden="true">
+        <span>FORGE / OBJECT 360</span>
+        <span>TEXTURED GLB / 2026.06</span>
+      </div>
+      <div class="forge-artifact__axis" aria-hidden="true"><i></i><i></i><i></i></div>
+      <figcaption>
+        <span>Artefact 3D issu du pipeline FORGE</span>
+        <strong>Reconstruction texturée manipulable — glissez pour l’examiner.</strong>
+      </figcaption>
+    </figure>
+  `;
+
+  const initForgeArtifactViewer = () => {
+    const roots = [...document.querySelectorAll("[data-forge-artifact]")];
+    if (!roots.length || document.querySelector('script[data-forge-model-viewer]')) return;
+
+    const script = document.createElement("script");
+    script.type = "module";
+    script.src = "https://unpkg.com/@google/model-viewer@3.5.0/dist/model-viewer.min.js";
+    script.dataset.forgeModelViewer = "true";
+    script.addEventListener("error", () => {
+      roots.forEach((root) => root.classList.add("forge-artifact--fallback"));
+    });
+    document.head.append(script);
+  };
+
   const startComputationFieldAnimation = () => {
     const roots = [...document.querySelectorAll("[data-computation-field]")];
     if (!roots.length) return;
@@ -22599,6 +22654,8 @@ window.EA_ANALYTICS_CONFIG = {
     startVasteEngineAnimation,
     computationFieldMarkup,
     startComputationFieldAnimation,
+    forgeArtifactMarkup,
+    initForgeArtifactViewer,
     cardImageFor,
     signalStrip,
     cardCopy,
@@ -24469,7 +24526,7 @@ window.EA_ANALYTICS_CONFIG = {
 
       const frame = () => {
         if (compactLayout || !bubbleState.length) return;
-        const hoverScale = 1.28;
+        const hoverScale = 1;
         const iterations = 5;
         const time = performance.now() * 0.001;
 
@@ -24479,8 +24536,8 @@ window.EA_ANALYTICS_CONFIG = {
         });
 
         bubbleState.forEach((bubble) => {
-          const driftX = Math.sin(time * 0.42 + bubble.phase) * width * 0.045;
-          const driftY = Math.cos(time * 0.36 + bubble.phase * 1.23) * height * 0.055;
+          const driftX = 0;
+          const driftY = 0;
           const targetX = bubble.ax + driftX;
           const targetY = bubble.ay + driftY;
           bubble.vx += (targetX - bubble.x) * 0.0009;
@@ -24507,7 +24564,7 @@ window.EA_ANALYTICS_CONFIG = {
               const dist = Math.sqrt(distSq);
               const targetRa = a.hover ? a.baseR * hoverScale : a.baseR;
               const targetRb = b.hover ? b.baseR * hoverScale : b.baseR;
-              const minDist = targetRa + targetRb + 30;
+              const minDist = targetRa + targetRb + 24;
               if (dist < minDist) {
                 const overlap = minDist - dist;
                 const nx = dx / dist;
@@ -26541,6 +26598,8 @@ window.EA_ANALYTICS_CONFIG = {
     startVasteEngineAnimation,
     computationFieldMarkup,
     startComputationFieldAnimation,
+    forgeArtifactMarkup,
+    initForgeArtifactViewer,
     cardImageFor,
     signalStrip,
     cardCopy,
@@ -29680,9 +29739,9 @@ window.EA_ANALYTICS_CONFIG = {
         copy: "Clarify the opportunity, the audience, the constraints and the sequence of decisions before time and budget are committed.",
         tools: ["Research", "Workshops", "Notion", "Figma"],
         outputs: ["Positioning", "Brief", "Roadmap"],
-        x: 16,
-        y: 15,
-        size: "13.5rem",
+        x: 19,
+        y: 16,
+        size: "12rem",
         rgb: "234, 220, 207",
       },
       {
@@ -29692,9 +29751,9 @@ window.EA_ANALYTICS_CONFIG = {
         copy: "Design identity as a working system: marks, typography, image direction and motion rules that survive beyond the launch window.",
         tools: ["Illustrator", "Photoshop", "InDesign", "Figma"],
         outputs: ["Identity", "Art direction", "Brand kit"],
-        x: 42,
-        y: 10,
-        size: "13rem",
+        x: 47,
+        y: 14,
+        size: "12rem",
         rgb: "244, 114, 182",
       },
       {
@@ -29704,9 +29763,9 @@ window.EA_ANALYTICS_CONFIG = {
         copy: "Organise messages, stories and knowledge so a complex subject becomes clear without collapsing into generic marketing language.",
         tools: ["Content models", "Taxonomy", "Writing", "CMS"],
         outputs: ["Narrative", "Information model", "Editorial system"],
-        x: 70,
-        y: 14,
-        size: "13rem",
+        x: 80,
+        y: 18,
+        size: "12rem",
         rgb: "251, 191, 36",
       },
       {
@@ -29716,9 +29775,9 @@ window.EA_ANALYTICS_CONFIG = {
         copy: "Shape interfaces around real tasks, responsive constraints and a visual hierarchy that makes the next action obvious.",
         tools: ["Figma", "Accessibility", "Prototypes", "Testing"],
         outputs: ["User flows", "Interface", "Interaction model"],
-        x: 12,
-        y: 61,
-        size: "12rem",
+        x: 19,
+        y: 83,
+        size: "11.5rem",
         rgb: "56, 189, 248",
       },
       {
@@ -29728,9 +29787,9 @@ window.EA_ANALYTICS_CONFIG = {
         copy: "Connect user needs, business rules and content structures into products that remain understandable as scope grows.",
         tools: ["Discovery", "User flows", "Figma", "Prototyping"],
         outputs: ["Product model", "Prototype", "Design system"],
-        x: 39,
-        y: 44,
-        size: "13rem",
+        x: 30,
+        y: 49,
+        size: "12rem",
         rgb: "45, 212, 191",
       },
       {
@@ -29740,9 +29799,9 @@ window.EA_ANALYTICS_CONFIG = {
         copy: "Implement the public surface, not only the mock-up: responsive front ends, content systems, APIs, deployment and measurable performance.",
         tools: ["JavaScript", "TypeScript", "PHP", "WordPress"],
         outputs: ["Front end", "CMS", "Production site"],
-        x: 68,
+        x: 70,
         y: 52,
-        size: "13.5rem",
+        size: "12.5rem",
         rgb: "96, 165, 250",
       },
       {
@@ -29752,9 +29811,9 @@ window.EA_ANALYTICS_CONFIG = {
         copy: "Design data models, workflows, services and maintainable architectures when the work exceeds a single website.",
         tools: ["Node.js", "Python", "Rust", "GitHub"],
         outputs: ["Architecture", "Platform", "Workflow"],
-        x: 89,
-        y: 68,
-        size: "14rem",
+        x: 80,
+        y: 82,
+        size: "12.5rem",
         rgb: "74, 222, 128",
       },
       {
@@ -29764,9 +29823,9 @@ window.EA_ANALYTICS_CONFIG = {
         copy: "Prototype workflows, assistants and knowledge structures when automation should create leverage without obscuring authorship or control.",
         tools: ["OpenAI", "Python", "APIs", "Custom tooling"],
         outputs: ["Prototype", "Automation", "Knowledge system"],
-        x: 58,
-        y: 86,
-        size: "14rem",
+        x: 48,
+        y: 84,
+        size: "12.5rem",
         rgb: "34, 211, 238",
       },
     ];
@@ -30415,6 +30474,7 @@ window.EA_ANALYTICS_CONFIG = {
           </div>
           <div class="intent-hero__stage intent-hero__stage--programs" data-intent-stage>
             ${computationFieldMarkup("hero")}
+            ${forgeArtifactMarkup()}
             ${intentHeroStats(
               [
                 { value: "04", label: "access formats" },
@@ -31026,6 +31086,7 @@ window.EA_ANALYTICS_CONFIG = {
     initEngagementPanels();
     startVasteEngineAnimation();
     startComputationFieldAnimation();
+    initForgeArtifactViewer();
     startGraphSurfaceAnimation();
     startResearchAtlas?.();
   };

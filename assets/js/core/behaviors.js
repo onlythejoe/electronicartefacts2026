@@ -500,7 +500,7 @@
 
       const frame = () => {
         if (compactLayout || !bubbleState.length) return;
-        const hoverScale = 1.28;
+        const hoverScale = 1;
         const iterations = 5;
         const time = performance.now() * 0.001;
 
@@ -510,8 +510,8 @@
         });
 
         bubbleState.forEach((bubble) => {
-          const driftX = Math.sin(time * 0.42 + bubble.phase) * width * 0.045;
-          const driftY = Math.cos(time * 0.36 + bubble.phase * 1.23) * height * 0.055;
+          const driftX = 0;
+          const driftY = 0;
           const targetX = bubble.ax + driftX;
           const targetY = bubble.ay + driftY;
           bubble.vx += (targetX - bubble.x) * 0.0009;
@@ -538,7 +538,7 @@
               const dist = Math.sqrt(distSq);
               const targetRa = a.hover ? a.baseR * hoverScale : a.baseR;
               const targetRb = b.hover ? b.baseR * hoverScale : b.baseR;
-              const minDist = targetRa + targetRb + 30;
+              const minDist = targetRa + targetRb + 24;
               if (dist < minDist) {
                 const overlap = minDist - dist;
                 const nx = dx / dist;

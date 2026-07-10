@@ -395,6 +395,55 @@
     </figure>
   `;
 
+  const forgeArtifactMarkup = () => `
+    <figure class="forge-artifact" data-forge-artifact data-depth="0.96">
+      <model-viewer
+        class="forge-artifact__model"
+        src="./assets/media/forge/artifact-ultra-object-360.glb"
+        alt="A textured physical artefact reconstructed by the FORGE production pipeline."
+        loading="eager"
+        reveal="auto"
+        camera-controls
+        auto-rotate
+        rotation-per-second="10deg"
+        interaction-prompt="none"
+        camera-orbit="-28deg 74deg 112%"
+        min-camera-orbit="auto auto 78%"
+        max-camera-orbit="auto auto 170%"
+        field-of-view="24deg"
+        shadow-intensity="0.8"
+        exposure="0.92">
+        <div slot="poster" class="forge-artifact__poster" aria-hidden="true">
+          <span class="forge-artifact__loading-mark"></span>
+          <span>Preparing 3D artefact</span>
+        </div>
+      </model-viewer>
+      <div class="forge-artifact__hud" aria-hidden="true">
+        <span>FORGE / OBJECT 360</span>
+        <span>TEXTURED GLB / 2026.06</span>
+      </div>
+      <div class="forge-artifact__axis" aria-hidden="true"><i></i><i></i><i></i></div>
+      <figcaption>
+        <span>Artefact 3D issu du pipeline FORGE</span>
+        <strong>Reconstruction texturée manipulable — glissez pour l’examiner.</strong>
+      </figcaption>
+    </figure>
+  `;
+
+  const initForgeArtifactViewer = () => {
+    const roots = [...document.querySelectorAll("[data-forge-artifact]")];
+    if (!roots.length || document.querySelector('script[data-forge-model-viewer]')) return;
+
+    const script = document.createElement("script");
+    script.type = "module";
+    script.src = "https://unpkg.com/@google/model-viewer@3.5.0/dist/model-viewer.min.js";
+    script.dataset.forgeModelViewer = "true";
+    script.addEventListener("error", () => {
+      roots.forEach((root) => root.classList.add("forge-artifact--fallback"));
+    });
+    document.head.append(script);
+  };
+
   const startComputationFieldAnimation = () => {
     const roots = [...document.querySelectorAll("[data-computation-field]")];
     if (!roots.length) return;
@@ -1401,6 +1450,8 @@
     startVasteEngineAnimation,
     computationFieldMarkup,
     startComputationFieldAnimation,
+    forgeArtifactMarkup,
+    initForgeArtifactViewer,
     cardImageFor,
     signalStrip,
     cardCopy,

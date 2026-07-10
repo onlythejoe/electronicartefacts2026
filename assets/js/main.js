@@ -17,6 +17,8 @@
     startVasteEngineAnimation,
     computationFieldMarkup,
     startComputationFieldAnimation,
+    forgeArtifactMarkup,
+    initForgeArtifactViewer,
     cardImageFor,
     signalStrip,
     cardCopy,
@@ -3156,9 +3158,9 @@
         copy: "Clarify the opportunity, the audience, the constraints and the sequence of decisions before time and budget are committed.",
         tools: ["Research", "Workshops", "Notion", "Figma"],
         outputs: ["Positioning", "Brief", "Roadmap"],
-        x: 16,
-        y: 15,
-        size: "13.5rem",
+        x: 19,
+        y: 16,
+        size: "12rem",
         rgb: "234, 220, 207",
       },
       {
@@ -3168,9 +3170,9 @@
         copy: "Design identity as a working system: marks, typography, image direction and motion rules that survive beyond the launch window.",
         tools: ["Illustrator", "Photoshop", "InDesign", "Figma"],
         outputs: ["Identity", "Art direction", "Brand kit"],
-        x: 42,
-        y: 10,
-        size: "13rem",
+        x: 47,
+        y: 14,
+        size: "12rem",
         rgb: "244, 114, 182",
       },
       {
@@ -3180,9 +3182,9 @@
         copy: "Organise messages, stories and knowledge so a complex subject becomes clear without collapsing into generic marketing language.",
         tools: ["Content models", "Taxonomy", "Writing", "CMS"],
         outputs: ["Narrative", "Information model", "Editorial system"],
-        x: 70,
-        y: 14,
-        size: "13rem",
+        x: 80,
+        y: 18,
+        size: "12rem",
         rgb: "251, 191, 36",
       },
       {
@@ -3192,9 +3194,9 @@
         copy: "Shape interfaces around real tasks, responsive constraints and a visual hierarchy that makes the next action obvious.",
         tools: ["Figma", "Accessibility", "Prototypes", "Testing"],
         outputs: ["User flows", "Interface", "Interaction model"],
-        x: 12,
-        y: 61,
-        size: "12rem",
+        x: 19,
+        y: 83,
+        size: "11.5rem",
         rgb: "56, 189, 248",
       },
       {
@@ -3204,9 +3206,9 @@
         copy: "Connect user needs, business rules and content structures into products that remain understandable as scope grows.",
         tools: ["Discovery", "User flows", "Figma", "Prototyping"],
         outputs: ["Product model", "Prototype", "Design system"],
-        x: 39,
-        y: 44,
-        size: "13rem",
+        x: 30,
+        y: 49,
+        size: "12rem",
         rgb: "45, 212, 191",
       },
       {
@@ -3216,9 +3218,9 @@
         copy: "Implement the public surface, not only the mock-up: responsive front ends, content systems, APIs, deployment and measurable performance.",
         tools: ["JavaScript", "TypeScript", "PHP", "WordPress"],
         outputs: ["Front end", "CMS", "Production site"],
-        x: 68,
+        x: 70,
         y: 52,
-        size: "13.5rem",
+        size: "12.5rem",
         rgb: "96, 165, 250",
       },
       {
@@ -3228,9 +3230,9 @@
         copy: "Design data models, workflows, services and maintainable architectures when the work exceeds a single website.",
         tools: ["Node.js", "Python", "Rust", "GitHub"],
         outputs: ["Architecture", "Platform", "Workflow"],
-        x: 89,
-        y: 68,
-        size: "14rem",
+        x: 80,
+        y: 82,
+        size: "12.5rem",
         rgb: "74, 222, 128",
       },
       {
@@ -3240,9 +3242,9 @@
         copy: "Prototype workflows, assistants and knowledge structures when automation should create leverage without obscuring authorship or control.",
         tools: ["OpenAI", "Python", "APIs", "Custom tooling"],
         outputs: ["Prototype", "Automation", "Knowledge system"],
-        x: 58,
-        y: 86,
-        size: "14rem",
+        x: 48,
+        y: 84,
+        size: "12.5rem",
         rgb: "34, 211, 238",
       },
     ];
@@ -3891,6 +3893,7 @@
           </div>
           <div class="intent-hero__stage intent-hero__stage--programs" data-intent-stage>
             ${computationFieldMarkup("hero")}
+            ${forgeArtifactMarkup()}
             ${intentHeroStats(
               [
                 { value: "04", label: "access formats" },
@@ -4502,6 +4505,7 @@
     initEngagementPanels();
     startVasteEngineAnimation();
     startComputationFieldAnimation();
+    initForgeArtifactViewer();
     startGraphSurfaceAnimation();
     startResearchAtlas?.();
   };

@@ -188,12 +188,35 @@
     box-shadow 220ms ease;
 }
 
+@media (min-width: 48.01rem) {
+  /* Give the initially active bubble enough room to breathe when it expands. */
+  .capability-node:first-child {
+    --cap-x: 14% !important;
+  }
+}
+
 .capability-node::before {
   content: "";
   position: absolute;
   inset: 0;
   border-radius: inherit;
+  background: radial-gradient(circle at 30% 24%, rgba(255, 255, 255, 0.14), transparent 36%);
+  opacity: 0.42;
+  animation: capability-node-glow 5.5s ease-in-out infinite alternate;
   pointer-events: none;
+}
+
+.capability-node:nth-child(2n)::before {
+  animation-delay: -2.4s;
+}
+
+.capability-node:nth-child(3n)::before {
+  animation-delay: -4.1s;
+}
+
+@keyframes capability-node-glow {
+  from { opacity: 0.24; transform: scale(0.9); }
+  to { opacity: 0.7; transform: scale(1.08); }
 }
 
 .capability-node__mark,
@@ -223,7 +246,7 @@
 .capability-node:focus-visible,
 .capability-node.is-active {
   z-index: 4;
-  transform: translate(-50%, -50%) scale(1.12);
+  transform: translate(-50%, -50%);
   border-color: rgba(var(--cap-rgb), 0.72);
   background:
     radial-gradient(circle at 34% 26%, rgba(255, 255, 255, 0.2), transparent 34%),
@@ -523,6 +546,45 @@
   .capability-node strong {
     font-size: 0.78rem;
   }
+
+  /* Keep the capability map as one contained composition on touch screens. */
+  [data-page="work"] .capability-map {
+    position: relative;
+    display: block;
+    min-height: clamp(31rem, 136vw, 40rem);
+    padding: 0;
+    overflow: hidden;
+    overscroll-behavior-inline: auto;
+    scroll-snap-type: none;
+  }
+
+  [data-page="work"] .capability-map::before { inset: 4%; }
+
+  [data-page="work"] .capability-node,
+  [data-page="work"] .capability-node:hover,
+  [data-page="work"] .capability-node:focus-visible,
+  [data-page="work"] .capability-node.is-active {
+    position: absolute;
+    left: var(--cap-x, 50%);
+    top: var(--cap-y, 50%);
+    width: clamp(5.7rem, 28vw, 7.9rem);
+    min-height: 0;
+    height: auto;
+    padding: 0.72rem 0.48rem;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  [data-page="work"] .capability-node:hover,
+  [data-page="work"] .capability-node:focus-visible,
+  [data-page="work"] .capability-node.is-active { transform: translate(-50%, -50%) scale(1.04); }
+
+  [data-page="work"] .capability-node strong {
+    font-size: clamp(0.62rem, 2.8vw, 0.8rem);
+    line-height: 1.16;
+  }
+
+  [data-page="work"] .capability-node__mark { font-size: clamp(0.62rem, 2.6vw, 0.74rem); }
 
   .capability-outcomes {
     grid-template-columns: 1fr;
@@ -3569,6 +3631,165 @@ body:has(.detail-hero[data-entry-id="oeil-de-meg"])::after {
 
 .computation-field figcaption {
   z-index: 6;
+}
+
+.forge-artifact {
+  position: absolute;
+  z-index: 7;
+  right: clamp(1rem, 4.2vw, 3.1rem);
+  bottom: clamp(5.9rem, 9vw, 7.6rem);
+  width: clamp(12.5rem, 27vw, 21rem);
+  aspect-ratio: 1 / 1.08;
+  margin: 0;
+  overflow: hidden;
+  border: 1px solid rgba(147, 200, 255, 0.3);
+  border-radius: 1.1rem;
+  background:
+    radial-gradient(circle at 44% 41%, rgba(110, 181, 255, 0.2), transparent 29%),
+    linear-gradient(145deg, rgba(6, 20, 42, 0.9), rgba(2, 8, 19, 0.96));
+  box-shadow: 0 22px 46px rgba(0, 0, 0, 0.3), inset 0 0 0 1px rgba(255, 255, 255, 0.035);
+  isolation: isolate;
+}
+
+.forge-artifact::before,
+.forge-artifact::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.forge-artifact::before {
+  background:
+    linear-gradient(90deg, rgba(4, 11, 24, 0.72), transparent 17%, transparent 78%, rgba(4, 11, 24, 0.58)),
+    linear-gradient(180deg, rgba(5, 12, 25, 0.48), transparent 24%, transparent 69%, rgba(5, 12, 25, 0.7));
+}
+
+.forge-artifact::after {
+  opacity: 0.52;
+  background-image:
+    linear-gradient(rgba(137, 191, 255, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(137, 191, 255, 0.08) 1px, transparent 1px);
+  background-size: 100% 3.1rem, 3.1rem 100%;
+  mask-image: radial-gradient(ellipse at center, #000 8%, transparent 74%);
+  -webkit-mask-image: radial-gradient(ellipse at center, #000 8%, transparent 74%);
+}
+
+.forge-artifact__model {
+  display: block;
+  width: 100%;
+  height: 100%;
+  --poster-color: transparent;
+  --progress-bar-color: rgba(156, 211, 255, 0.85);
+}
+
+.forge-artifact__poster {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-content: center;
+  gap: 0.72rem;
+  color: rgba(202, 228, 255, 0.76);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.58rem;
+  font-weight: 700;
+  letter-spacing: 0.14em;
+  text-align: center;
+  text-transform: uppercase;
+  background: radial-gradient(circle, rgba(126, 189, 255, 0.13), transparent 46%);
+}
+
+.forge-artifact__loading-mark {
+  width: 1.9rem;
+  height: 1.9rem;
+  margin: auto;
+  border: 1px solid rgba(161, 211, 255, 0.22);
+  border-top-color: rgba(190, 229, 255, 0.92);
+  border-radius: 50%;
+  animation: forge-artifact-spin 1.2s linear infinite;
+}
+
+.forge-artifact__hud,
+.forge-artifact__axis,
+.forge-artifact figcaption {
+  position: absolute;
+  z-index: 3;
+  pointer-events: none;
+}
+
+.forge-artifact__hud {
+  top: 0.78rem;
+  right: 0.82rem;
+  left: 0.82rem;
+  display: flex;
+  justify-content: space-between;
+  gap: 0.55rem;
+  color: rgba(187, 220, 255, 0.72);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: clamp(0.42rem, 0.58vw, 0.54rem);
+  font-weight: 700;
+  letter-spacing: 0.11em;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+.forge-artifact__axis {
+  right: 1rem;
+  bottom: 5.15rem;
+  display: grid;
+  gap: 0.25rem;
+}
+
+.forge-artifact__axis i {
+  display: block;
+  width: 1.15rem;
+  height: 1px;
+  transform-origin: left center;
+  background: rgba(185, 226, 255, 0.7);
+}
+
+.forge-artifact__axis i:nth-child(2) { transform: rotate(120deg); background: rgba(116, 179, 255, 0.62); }
+.forge-artifact__axis i:nth-child(3) { transform: rotate(240deg); background: rgba(226, 245, 255, 0.45); }
+
+.forge-artifact figcaption {
+  right: 0.72rem;
+  bottom: 0.72rem;
+  left: 0.72rem;
+  display: grid;
+  gap: 0.16rem;
+  padding: 0.58rem 0.65rem;
+  border: 1px solid rgba(180, 219, 255, 0.17);
+  border-radius: 0.7rem;
+  background: rgba(3, 11, 24, 0.76);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.forge-artifact figcaption span {
+  color: rgba(187, 218, 255, 0.62);
+  font-size: 0.52rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.forge-artifact figcaption strong {
+  color: rgba(241, 248, 255, 0.96);
+  font-size: clamp(0.62rem, 0.86vw, 0.78rem);
+  line-height: 1.25;
+}
+
+.forge-artifact--fallback .forge-artifact__poster::after {
+  content: "3D unavailable — FORGE artefact preserved as GLB";
+  max-width: 14rem;
+  color: rgba(222, 239, 255, 0.7);
+  font-size: 0.54rem;
+  line-height: 1.45;
+}
+
+@keyframes forge-artifact-spin {
+  to { transform: rotate(360deg); }
 }
 
 .program-runtime-field__grid {
@@ -12137,6 +12358,12 @@ input:focus-visible {
     font-size: 0.5rem;
   }
 
+  .intent-hero__stage--programs .forge-artifact {
+    right: clamp(0.75rem, 5vw, 1.5rem);
+    bottom: 5.9rem;
+    width: min(62vw, 19rem);
+  }
+
   .home-intent-stage__frame--lead {
     left: 4%;
     top: 10%;
@@ -12318,6 +12545,24 @@ input:focus-visible {
 }
 
 @media (max-width: 48rem) {
+  .intent-hero__stage--programs .forge-artifact {
+    right: 0.72rem;
+    bottom: 6.1rem;
+    width: min(67vw, 18.5rem);
+  }
+
+  .forge-artifact__hud {
+    font-size: 0.43rem;
+  }
+
+  .forge-artifact figcaption {
+    padding: 0.48rem 0.54rem;
+  }
+
+  .forge-artifact figcaption span {
+    font-size: 0.46rem;
+  }
+
   [data-page="work"] .work-capabilities h2,
   [data-page="work"] .work-capabilities h3,
   [data-page="work"] .work-capabilities p {
@@ -14438,5 +14683,18 @@ body:has(.detail-hero[data-entry-id="oeil-de-meg"]) .consent-banner__copy .tag:f
     margin-inline: 0;
     margin-top: 0.08rem;
     padding: 0.12rem 0 0.02rem;
+  }
+}
+
+/* Keep the language picker clear of the fixed header's navigation. */
+@media (min-width: 64.0625rem) {
+  .shell-header.zone-card .language-switcher__menu {
+    top: calc(100% + 2.2rem);
+  }
+}
+
+@media (max-width: 64rem) {
+  .shell-header.zone-card .language-switcher__menu {
+    top: calc(100% + 6.8rem);
   }
 }
