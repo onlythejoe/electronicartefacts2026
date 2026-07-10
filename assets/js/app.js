@@ -26235,45 +26235,62 @@ window.EA_ANALYTICS_CONFIG = {
         let drag = null;
         let pendingPress = null;
         let suppressClickUntil = 0;
-        const dragThreshold = 8;
+        const dragThreshold = 6;
         const currentDragX = () => Number.parseFloat(layer.dataset.heroDragX || "0") || 0;
         const currentDragY = () => Number.parseFloat(layer.dataset.heroDragY || "0") || 0;
-        const startDrag = (event) => {
-          if (!pendingPress || drag || event.pointerId !== pendingPress.pointerId) return false;
-          drag = {
-            pointerId: event.pointerId,
-            pointerStartX: pendingPress.x,
-            pointerStartY: pendingPress.y,
-            startX: currentDragX(),
-            startY: currentDragY(),
-          };
-          pendingPress = null;
-          selectMovableLayer(layer);
-          scope.classList.add("is-hero-dragging");
-          layer.classList.add("is-hero-dragging");
-          return true;
+        const clamp = (value, min, max) => {
+          if (min > max) return (min + max) / 2;
+          return Math.min(Math.max(value, min), max);
         };
-        const setPosition = (clientX, clientY) => {
+        const commitPosition = () => {
           if (!drag) return;
-          const stageRect = stage.getBoundingClientRect();
-          const layerRect = layer.getBoundingClientRect();
-          const padding = 12;
-          const requestedX = drag.startX + clientX - drag.pointerStartX;
-          const requestedY = drag.startY + clientY - drag.pointerStartY;
-          const minX = stageRect.left + padding - layerRect.left + currentDragX();
-          const maxX = stageRect.right - padding - layerRect.right + currentDragX();
-          const minY = stageRect.top + padding - layerRect.top + currentDragY();
-          const maxY = stageRect.bottom - padding - layerRect.bottom + currentDragY();
-          const nextX = Math.min(Math.max(requestedX, minX), Math.max(minX, maxX));
-          const nextY = Math.min(Math.max(requestedY, minY), Math.max(minY, maxY));
+          drag.frame = 0;
+          const nextX = clamp(drag.requestedX, drag.minX, drag.maxX);
+          const nextY = clamp(drag.requestedY, drag.minY, drag.maxY);
           layer.dataset.heroDragX = nextX.toFixed(1);
           layer.dataset.heroDragY = nextY.toFixed(1);
           layer.style.setProperty("--hero-drag-x", `${nextX.toFixed(1)}px`);
           layer.style.setProperty("--hero-drag-y", `${nextY.toFixed(1)}px`);
         };
+        const startDrag = (event) => {
+          if (!pendingPress || drag || event.pointerId !== pendingPress.pointerId) return false;
+          const stageRect = stage.getBoundingClientRect();
+          const layerRect = layer.getBoundingClientRect();
+          const startX = currentDragX();
+          const startY = currentDragY();
+          const padding = 12;
+          drag = {
+            pointerId: event.pointerId,
+            pointerStartX: pendingPress.x,
+            pointerStartY: pendingPress.y,
+            startX,
+            startY,
+            requestedX: startX,
+            requestedY: startY,
+            minX: startX + stageRect.left + padding - layerRect.left,
+            maxX: startX + stageRect.right - padding - layerRect.right,
+            minY: startY + stageRect.top + padding - layerRect.top,
+            maxY: startY + stageRect.bottom - padding - layerRect.bottom,
+            frame: 0,
+          };
+          pendingPress = null;
+          scope.classList.add("is-hero-dragging");
+          layer.classList.add("is-hero-dragging");
+          return true;
+        };
+        const requestPosition = (clientX, clientY) => {
+          if (!drag) return;
+          drag.requestedX = drag.startX + clientX - drag.pointerStartX;
+          drag.requestedY = drag.startY + clientY - drag.pointerStartY;
+          if (!drag.frame) drag.frame = requestAnimationFrame(commitPosition);
+        };
         const finishDrag = () => {
           pendingPress = null;
           if (!drag) return;
+          if (drag.frame) {
+            cancelAnimationFrame(drag.frame);
+            commitPosition();
+          }
           scope.classList.remove("is-hero-dragging");
           layer.classList.remove("is-hero-dragging");
           layer.releasePointerCapture?.(drag.pointerId);
@@ -26282,7 +26299,7 @@ window.EA_ANALYTICS_CONFIG = {
         };
 
         layer.addEventListener("pointerdown", (event) => {
-          if (event.button !== 0 || drag) return;
+          if (event.button !== 0 || drag || selectedMovableLayer !== layer) return;
           pendingPress = { pointerId: event.pointerId, x: event.clientX, y: event.clientY };
           layer.setPointerCapture?.(event.pointerId);
         });
@@ -26296,13 +26313,13 @@ window.EA_ANALYTICS_CONFIG = {
             ) {
               startDrag(event);
               event.preventDefault();
-              setPosition(event.clientX, event.clientY);
+              requestPosition(event.clientX, event.clientY);
             }
             return;
           }
           if (event.pointerId !== drag.pointerId) return;
           event.preventDefault();
-          setPosition(event.clientX, event.clientY);
+          requestPosition(event.clientX, event.clientY);
         });
 
         layer.addEventListener("pointerup", finishDrag);

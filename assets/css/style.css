@@ -11226,6 +11226,7 @@ input:focus-visible {
 
 .intent-hero [data-hero-movable="true"].is-hero-selected {
   z-index: 30 !important;
+  touch-action: none;
   outline: 1px solid rgba(247, 244, 239, 0.96);
   outline-offset: 2px;
   box-shadow:
