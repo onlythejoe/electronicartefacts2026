@@ -126,11 +126,15 @@ export const renderEntityPage = (
   relations: RelationStatement[],
   byId: Map<string, Entity>,
   routeById: Record<string, string>,
-): string => entity.type === "project" ? renderProjectPage(entity, relations, byId, routeById) : `
+): string => {
+  if (entity.type === "project") return renderProjectPage(entity, relations, byId, routeById);
+  const body = `<article class="zone-card hero publication-body${isVasteProgram(entity) ? " publication-body--vaste" : ""}">${renderEntityBody(entity)}</article>`;
+  const editorialPanels = renderEditorialPanels(entity, byId, routeById);
+  const editorialFlow = isVasteProgram(entity) ? `${body}\n  ${editorialPanels}` : `${editorialPanels}\n  ${body}`;
+  return `
   <section class="zone-card entity-breadcrumb-card">${renderBreadcrumbs(entity)}</section>
   ${renderEntityHeader(entity)}${renderVasteOverview(entity)}${renderProgramComputationField(entity)}
-  ${renderEditorialPanels(entity, byId, routeById)}
-  <article class="zone-card hero publication-body${isVasteProgram(entity) ? " publication-body--vaste" : ""}">${renderEntityBody(entity)}</article>
+  ${editorialFlow}
   ${renderRelationshipGroups(entity, relations, byId, routeById)}
   ${renderRecordDetails(entity, `
     <section class="detail-grid">
@@ -140,3 +144,4 @@ export const renderEntityPage = (
     <section class="record-details__graph">${renderLocalGraph(entity, relations, byId)}</section>
   `)}
 `;
+};
