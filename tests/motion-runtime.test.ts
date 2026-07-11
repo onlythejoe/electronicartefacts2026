@@ -15,6 +15,9 @@ test("the published runtime provides progressive page and media transitions", as
   assert.match(styles, /@view-transition\s*\{\s*navigation: auto;/);
   assert.match(styles, /body\.is-page-leaving > main/);
   assert.match(styles, /prefers-reduced-motion: reduce/);
-  assert.match(home, /assets\/css\/app\.css\?v=51/);
-  assert.match(home, /assets\/js\/app\.js\?v=50/);
+  assert.match(runtime, /scope\.classList\.add\("has-hero-selection"\)/);
+  assert.match(runtime, /event\.key === "Escape"/);
+  assert.match(styles, /\.intent-hero\.has-hero-selection/);
+  assert.match(home, /assets\/css\/app\.css\?v=52/);
+  assert.match(home, /assets\/js\/app\.js\?v=51/);
 });
