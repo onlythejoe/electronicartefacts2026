@@ -50,7 +50,7 @@ disciplines:
   - ingénierie audio
   - développement web
   - interaction humain-machine
-  - machine learning
+  - apprentissage automatique
 ---
 
 ## Thèse

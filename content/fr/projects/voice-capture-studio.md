@@ -130,7 +130,7 @@ disciplines:
   - ingénierie audio
   - développement web
   - interaction humain-machine
-  - machine learning
+  - apprentissage automatique
   - open source
 featured: true
 ---

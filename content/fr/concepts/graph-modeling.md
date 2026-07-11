@@ -47,7 +47,7 @@ tags:
 disciplines:
   - systèmes de connaissance
   - conception de systèmes
-  - Information Architecture
+  - architecture de l’information
   - architecture logicielle
 translationOf: ea:concept:graph-modeling
 ---

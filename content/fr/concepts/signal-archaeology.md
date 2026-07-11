@@ -40,7 +40,7 @@ claims:
     mélanger les langues.
 tags:
   - Signal Archaeology
-  - Audio
+  - audio
   - Archive
   - Memory
   - Machine Listening

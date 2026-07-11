@@ -38,9 +38,9 @@
     "Assisted Boot"
   ],
   "disciplines": [
-    "Architecture logicielle",
+    "architecture logicielle",
     "Runtime Systems",
-    "Systèmes de connaissance"
+    "systèmes de connaissance"
   ],
   "mandate": "Développer et valider un runtime graph-native où identité, topologie, exécution, observation et contexte local restent explicites, gouvernables et portables.",
   "domain": "Runtime Systems",

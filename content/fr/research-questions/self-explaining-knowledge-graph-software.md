@@ -100,9 +100,9 @@ tags:
   - Génération de site statique
 disciplines:
   - Architecture de l'information
-  - Architecture logicielle
-  - Systèmes de connaissance
-  - Développement web
+  - architecture logicielle
+  - systèmes de connaissance
+  - développement web
 ---
 
 ## Observation

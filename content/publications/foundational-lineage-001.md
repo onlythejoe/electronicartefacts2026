@@ -35,7 +35,7 @@ tags:
   - Foundational
   - Lineage
   - Research
-  - Information architecture
+  - Information Architecture
 ---
 
 ## Question

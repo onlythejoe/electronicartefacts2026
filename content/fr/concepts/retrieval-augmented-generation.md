@@ -57,7 +57,7 @@ tags:
 disciplines:
   - intelligence artificielle
   - systèmes de connaissance
-  - Information Architecture
+  - architecture de l’information
   - apprentissage automatique
 translationOf: ea:concept:retrieval-augmented-generation
 ---

@@ -57,7 +57,7 @@ tags:
   - Search
 disciplines:
   - systèmes de connaissance
-  - Information Architecture
+  - architecture de l’information
   - développement web
   - Research
 translationOf: ea:concept:knowledge-graph

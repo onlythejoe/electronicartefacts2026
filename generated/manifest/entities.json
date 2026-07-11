@@ -2527,8 +2527,8 @@
       "Execution"
     ],
     "disciplines": [
-      "Software architecture",
-      "Knowledge systems"
+      "Software Architecture",
+      "Knowledge Systems"
     ],
     "scope": [
       "Addressable entities",
@@ -2749,7 +2749,7 @@
       "Linking",
       "Web pages",
       "Digital archives",
-      "Knowledge systems"
+      "Knowledge Systems"
     ],
     "exclusions": [
       "A linear PDF with no meaningful internal or external links",
@@ -6458,7 +6458,7 @@
       "ingénierie audio",
       "développement web",
       "interaction humain-machine",
-      "machine learning"
+      "apprentissage automatique"
     ],
     "thesis": "Voice Capture Studio se comprend comme un artefact logiciel de navigateur où enregistrement vocal, vie privée local-first, métadonnées et workflows de machine learning en aval se rencontrent.",
     "curator": [
@@ -7880,7 +7880,7 @@
     "disciplines": [
       "systèmes de connaissance",
       "conception de systèmes",
-      "Information Architecture",
+      "architecture de l’information",
       "architecture logicielle"
     ],
     "scope": [
@@ -8339,7 +8339,7 @@
     ],
     "disciplines": [
       "systèmes de connaissance",
-      "Information Architecture",
+      "architecture de l’information",
       "développement web",
       "Research"
     ],
@@ -8542,7 +8542,7 @@
       "systèmes de connaissance",
       "développement web",
       "SEO",
-      "Information Architecture"
+      "architecture de l’information"
     ],
     "sources": [
       {
@@ -8635,7 +8635,7 @@
     ],
     "publisher": "ea:organization:electronic-artefacts",
     "tags": [
-      "machine learning",
+      "apprentissage automatique",
       "workflow",
       "préparation de dataset",
       "évaluation"
@@ -9004,7 +9004,7 @@
     "tags": [
       "Multimodal AI",
       "Vision Language",
-      "Audio",
+      "audio",
       "Video",
       "Cross-Modal Retrieval"
     ],
@@ -9106,7 +9106,7 @@
     ],
     "disciplines": [
       "systèmes de connaissance",
-      "Information Architecture",
+      "architecture de l’information",
       "Philosophy",
       "Semantic Web"
     ],
@@ -9662,7 +9662,7 @@
     "disciplines": [
       "intelligence artificielle",
       "systèmes de connaissance",
-      "Information Architecture",
+      "architecture de l’information",
       "apprentissage automatique"
     ],
     "sources": [
@@ -9750,7 +9750,7 @@
     "publisher": "ea:organization:electronic-artefacts",
     "tags": [
       "Signal Archaeology",
-      "Audio",
+      "audio",
       "Archive",
       "Memory",
       "Machine Listening"
@@ -9933,7 +9933,7 @@
     ],
     "disciplines": [
       "ingénierie audio",
-      "machine learning",
+      "apprentissage automatique",
       "métadonnées",
       "préservation numérique"
     ],
@@ -10473,8 +10473,8 @@
       "Intelligence"
     ],
     "disciplines": [
-      "Architecture logicielle",
-      "Runtime Systems"
+      "architecture logicielle",
+      "systèmes d’exécution"
     ],
     "scope": [
       "Manifests d’extension",
@@ -10563,8 +10563,8 @@
       "Graphe"
     ],
     "disciplines": [
-      "Architecture logicielle",
-      "Runtime Systems"
+      "architecture logicielle",
+      "systèmes d’exécution"
     ],
     "scope": [
       "Contrats des primitives et invariants runtime",
@@ -10851,10 +10851,10 @@
       "Framework front-end"
     ],
     "disciplines": [
-      "Développement web",
+      "développement web",
       "Technologies de design",
-      "Technologies créatives",
-      "Systèmes de connaissance"
+      "technologies créatives",
+      "systèmes de connaissance"
     ],
     "principles": [
       "Garder la page canonique lisible en HTML statique.",
@@ -10928,15 +10928,15 @@
     ],
     "publisher": "ea:organization:electronic-artefacts",
     "tags": [
-      "Technologies créatives",
-      "Systèmes de connaissance",
-      "Logiciel",
-      "Design",
+      "technologies créatives",
+      "systèmes de connaissance",
+      "logiciel",
+      "design",
       "Recherche"
     ],
     "disciplines": [
       "Technologie",
-      "Design",
+      "design",
       "Recherche",
       "Production culturelle"
     ],
@@ -11018,8 +11018,8 @@
       "Musique",
       "Technologie",
       "Recherche",
-      "Ingénierie audio",
-      "Art numérique"
+      "ingénierie audio",
+      "art numérique"
     ],
     "mandate": "Étudier comment un système artificiel relié à des capteurs pourrait passer de l’imitation à un apprentissage auto-organisé de la parole, sans corpus prédéfini.",
     "domain": "Audio Intelligence",
@@ -11133,9 +11133,9 @@
       "Assisted Boot"
     ],
     "disciplines": [
-      "Architecture logicielle",
+      "architecture logicielle",
       "Runtime Systems",
-      "Systèmes de connaissance"
+      "systèmes de connaissance"
     ],
     "mandate": "Développer et valider un runtime graph-native où identité, topologie, exécution, observation et contexte local restent explicites, gouvernables et portables.",
     "domain": "Runtime Systems",
@@ -11431,7 +11431,7 @@
       "Technologie",
       "Art",
       "Artisanat",
-      "Design"
+      "design"
     ],
     "media": [
       {
@@ -11565,7 +11565,7 @@
       "ingénierie audio",
       "développement web",
       "interaction humain-machine",
-      "machine learning",
+      "apprentissage automatique",
       "open source"
     ],
     "media": [
@@ -11968,7 +11968,7 @@
       "SEO",
       "systèmes de connaissance",
       "développement web",
-      "Information Architecture"
+      "architecture de l’information"
     ],
     "sources": [
       {
@@ -12899,7 +12899,7 @@
       "Foundational",
       "Lineage",
       "Research",
-      "Information architecture"
+      "architecture de l’information"
     ],
     "disciplines": [],
     "format": "researchNote",
@@ -13824,7 +13824,7 @@
     "disciplines": [
       "systèmes de connaissance",
       "archives",
-      "Information Architecture",
+      "architecture de l’information",
       "méthodes de recherche"
     ],
     "sources": [
@@ -15052,7 +15052,7 @@
     ],
     "disciplines": [
       "systèmes de connaissance",
-      "Information Architecture",
+      "architecture de l’information",
       "Semantic Web",
       "Philosophy"
     ],
@@ -15988,7 +15988,7 @@
     "disciplines": [
       "intelligence artificielle",
       "systèmes de connaissance",
-      "Information Architecture",
+      "architecture de l’information",
       "apprentissage automatique"
     ],
     "sources": [
@@ -16264,7 +16264,7 @@
     "publisher": "ea:organization:electronic-artefacts",
     "tags": [
       "Signal Archaeology",
-      "Audio",
+      "audio",
       "Machine Listening",
       "ORETH",
       "Palimpsests"
@@ -17064,13 +17064,13 @@
       "Graph Modeling",
       "Folders",
       "graphe de connaissances",
-      "Information Architecture",
+      "architecture de l’information",
       "VASTE"
     ],
     "disciplines": [
       "systèmes de connaissance",
       "conception de systèmes",
-      "Information Architecture",
+      "architecture de l’information",
       "architecture logicielle"
     ],
     "sources": [
@@ -17311,14 +17311,14 @@
       "Onboarding conversationnel",
       "Agents IA",
       "Graphe de connaissance",
-      "Voix",
+      "voix",
       "Compréhension utilisateur"
     ],
     "disciplines": [
-      "Intelligence artificielle",
-      "Interaction humain-machine",
-      "Systèmes de connaissance",
-      "Architecture logicielle"
+      "intelligence artificielle",
+      "interaction humain-machine",
+      "systèmes de connaissance",
+      "architecture logicielle"
     ],
     "featured": true,
     "started": "2026-01-01",
@@ -17529,9 +17529,9 @@
     ],
     "disciplines": [
       "Architecture de l'information",
-      "Architecture logicielle",
-      "Systèmes de connaissance",
-      "Développement web"
+      "architecture logicielle",
+      "systèmes de connaissance",
+      "développement web"
     ],
     "featured": true,
     "started": "2026-03-01",
@@ -17747,13 +17747,13 @@
       "Confidentialité",
       "Web Audio",
       "Local First",
-      "Open Source"
+      "open source"
     ],
     "disciplines": [
-      "Ingénierie audio",
-      "Machine Learning",
-      "Développement web",
-      "Ingénierie des données"
+      "ingénierie audio",
+      "apprentissage automatique",
+      "développement web",
+      "ingénierie des données"
     ],
     "featured": true,
     "started": "2026-02-01",
@@ -18945,7 +18945,7 @@
     ],
     "disciplines": [
       "systèmes de connaissance",
-      "Information Architecture",
+      "architecture de l’information",
       "Semantic Web"
     ],
     "sources": [
@@ -19507,7 +19507,7 @@
     ],
     "publisher": "ea:organization:electronic-artefacts",
     "tags": [
-      "Creative technology",
+      "Creative Technology",
       "Software",
       "Research",
       "Culture",
@@ -22248,7 +22248,7 @@
       "Foundational",
       "Lineage",
       "Research",
-      "Information architecture"
+      "Information Architecture"
     ],
     "format": "researchNote",
     "subjects": [

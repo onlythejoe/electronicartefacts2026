@@ -101,10 +101,10 @@
       "jsonLd": "https://electronicartefacts.com/fr/id/organization/electronic-artefacts/index.jsonld",
       "tags": [
         "Electronic Artefacts",
-        "Technologies créatives",
-        "Systèmes de connaissance",
-        "Logiciel",
-        "Design",
+        "technologies créatives",
+        "systèmes de connaissance",
+        "logiciel",
+        "design",
         "Recherche",
         "Technologie",
         "Production culturelle"
@@ -126,7 +126,7 @@
       "jsonLd": "https://electronicartefacts.com/id/organization/electronic-artefacts/index.jsonld",
       "tags": [
         "Electronic Artefacts",
-        "Creative technology",
+        "Creative Technology",
         "Software",
         "Research",
         "Culture",
@@ -159,8 +159,8 @@
         "Musique",
         "Technologie",
         "Recherche",
-        "Ingénierie audio",
-        "Art numérique"
+        "ingénierie audio",
+        "art numérique"
       ],
       "status": "archived",
       "confidence": "observed",
@@ -215,9 +215,9 @@
         "Portabilité",
         "Extensions",
         "Assisted Boot",
-        "Architecture logicielle",
+        "architecture logicielle",
         "Runtime Systems",
-        "Systèmes de connaissance"
+        "systèmes de connaissance"
       ],
       "status": "development",
       "confidence": "validated",
@@ -325,7 +325,7 @@
         "CRM",
         "Cartographie",
         "Technologie",
-        "Design"
+        "design"
       ],
       "status": "development",
       "confidence": "observed",
@@ -380,7 +380,7 @@
         "ingénierie audio",
         "développement web",
         "interaction humain-machine",
-        "machine learning"
+        "apprentissage automatique"
       ],
       "status": "active",
       "confidence": "published",
@@ -487,11 +487,11 @@
         "Confidentialité",
         "Web Audio",
         "Local First",
-        "Open Source",
-        "Ingénierie audio",
-        "Machine Learning",
-        "Développement web",
-        "Ingénierie des données"
+        "open source",
+        "ingénierie audio",
+        "apprentissage automatique",
+        "développement web",
+        "ingénierie des données"
       ],
       "status": "active",
       "confidence": "published",
@@ -518,9 +518,9 @@
         "Logiciel explicable",
         "Génération de site statique",
         "Architecture de l'information",
-        "Architecture logicielle",
-        "Systèmes de connaissance",
-        "Développement web"
+        "architecture logicielle",
+        "systèmes de connaissance",
+        "développement web"
       ],
       "status": "active",
       "confidence": "validated",
@@ -544,12 +544,12 @@
         "Onboarding conversationnel",
         "Agents IA",
         "Graphe de connaissance",
-        "Voix",
+        "voix",
         "Compréhension utilisateur",
-        "Intelligence artificielle",
-        "Interaction humain-machine",
-        "Systèmes de connaissance",
-        "Architecture logicielle"
+        "intelligence artificielle",
+        "interaction humain-machine",
+        "systèmes de connaissance",
+        "architecture logicielle"
       ],
       "status": "active",
       "confidence": "observed",
@@ -761,7 +761,7 @@
       "tags": [
         "Archéologie du signal, mémoire audio et écoute machine",
         "Signal Archaeology",
-        "Audio",
+        "audio",
         "Machine Listening",
         "ORETH",
         "Palimpsests",
@@ -1085,7 +1085,7 @@
         "Foundational",
         "Lineage",
         "Research",
-        "Information architecture"
+        "architecture de l’information"
       ],
       "status": "research",
       "confidence": "published",
@@ -1107,7 +1107,7 @@
         "Foundational",
         "Lineage",
         "Research",
-        "Information architecture"
+        "Information Architecture"
       ],
       "status": "research",
       "confidence": "published",
@@ -1134,7 +1134,7 @@
         "Citations",
         "intelligence artificielle",
         "systèmes de connaissance",
-        "Information Architecture",
+        "architecture de l’information",
         "apprentissage automatique"
       ],
       "status": "active",
@@ -1240,7 +1240,7 @@
         "V6",
         "systèmes de connaissance",
         "archives",
-        "Information Architecture",
+        "architecture de l’information",
         "méthodes de recherche"
       ],
       "status": "active",
@@ -2040,7 +2040,7 @@
         "OWL",
         "Knowledge Modeling",
         "systèmes de connaissance",
-        "Information Architecture",
+        "architecture de l’information",
         "Semantic Web",
         "Philosophy"
       ],
@@ -2167,7 +2167,7 @@
         "Graph Modeling",
         "Folders",
         "graphe de connaissances",
-        "Information Architecture",
+        "architecture de l’information",
         "VASTE",
         "systèmes de connaissance",
         "conception de systèmes",
@@ -2280,7 +2280,7 @@
         "SEO",
         "systèmes de connaissance",
         "développement web",
-        "Information Architecture"
+        "architecture de l’information"
       ],
       "status": "active",
       "confidence": "published",
@@ -2909,7 +2909,7 @@
       "tags": [
         "Archéologie du signal",
         "Signal Archaeology",
-        "Audio",
+        "audio",
         "Archive",
         "Memory",
         "Machine Listening",
@@ -2940,8 +2940,8 @@
         "Extensions",
         "Runtime",
         "Intelligence",
-        "Architecture logicielle",
-        "Runtime Systems"
+        "architecture logicielle",
+        "systèmes d’exécution"
       ],
       "status": "experimental",
       "confidence": "validated",
@@ -3304,7 +3304,7 @@
         "systèmes de connaissance",
         "développement web",
         "SEO",
-        "Information Architecture"
+        "architecture de l’information"
       ],
       "status": "active",
       "confidence": "validated",
@@ -3462,7 +3462,7 @@
         "Grounding",
         "intelligence artificielle",
         "systèmes de connaissance",
-        "Information Architecture",
+        "architecture de l’information",
         "apprentissage automatique"
       ],
       "status": "active",
@@ -3592,8 +3592,8 @@
         "Context",
         "Identity",
         "Execution",
-        "Software architecture",
-        "Knowledge systems"
+        "Software Architecture",
+        "Knowledge Systems"
       ],
       "status": "active",
       "confidence": "canonical",
@@ -3619,7 +3619,7 @@
         "Relations",
         "Search",
         "systèmes de connaissance",
-        "Information Architecture",
+        "architecture de l’information",
         "développement web",
         "Research"
       ],
@@ -3771,7 +3771,7 @@
         "IA multimodale",
         "Multimodal AI",
         "Vision Language",
-        "Audio",
+        "audio",
         "Video",
         "Cross-Modal Retrieval",
         "intelligence artificielle",
@@ -3903,7 +3903,7 @@
         "métadonnées",
         "qualité dataset",
         "ingénierie audio",
-        "machine learning",
+        "apprentissage automatique",
         "préservation numérique"
       ],
       "status": "active",
@@ -3981,8 +3981,8 @@
         "Runtime",
         "Primitives",
         "Graphe",
-        "Architecture logicielle",
-        "Runtime Systems"
+        "architecture logicielle",
+        "systèmes d’exécution"
       ],
       "status": "experimental",
       "confidence": "validated",
@@ -4188,7 +4188,7 @@
         "graphe de connaissances",
         "systèmes de connaissance",
         "conception de systèmes",
-        "Information Architecture",
+        "architecture de l’information",
         "architecture logicielle"
       ],
       "status": "active",
@@ -4291,7 +4291,7 @@
         "OWL",
         "Controlled Vocabulary",
         "systèmes de connaissance",
-        "Information Architecture",
+        "architecture de l’information",
         "Philosophy",
         "Semantic Web"
       ],
@@ -5131,7 +5131,7 @@
       "jsonLd": "https://electronicartefacts.com/fr/id/concept/machine-learning-workflows/index.jsonld",
       "tags": [
         "Workflows de machine learning",
-        "machine learning",
+        "apprentissage automatique",
         "workflow",
         "préparation de dataset",
         "évaluation",
@@ -5763,7 +5763,7 @@
         "Taxonomy",
         "Controlled Vocabulary",
         "systèmes de connaissance",
-        "Information Architecture",
+        "architecture de l’information",
         "Semantic Web"
       ],
       "status": "active",
@@ -6027,10 +6027,10 @@
         "Site statique",
         "Amélioration progressive",
         "Framework front-end",
-        "Développement web",
+        "développement web",
         "Technologies de design",
-        "Technologies créatives",
-        "Systèmes de connaissance"
+        "technologies créatives",
+        "systèmes de connaissance"
       ],
       "status": "active",
       "confidence": "published",
@@ -6086,7 +6086,7 @@
         "ingénierie audio",
         "développement web",
         "interaction humain-machine",
-        "machine learning"
+        "apprentissage automatique"
       ],
       "status": "active",
       "confidence": "published",

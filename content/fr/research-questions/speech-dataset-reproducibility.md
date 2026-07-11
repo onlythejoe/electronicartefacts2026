@@ -97,12 +97,12 @@ tags:
   - Confidentialité
   - Web Audio
   - Local First
-  - Open Source
+  - open source
 disciplines:
-  - Ingénierie audio
-  - Machine Learning
-  - Développement web
-  - Ingénierie des données
+  - ingénierie audio
+  - apprentissage automatique
+  - développement web
+  - ingénierie des données
 ---
 
 ## Observation

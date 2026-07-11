@@ -38,7 +38,7 @@ tags:
   - Controlled Vocabulary
 disciplines:
   - systèmes de connaissance
-  - Information Architecture
+  - architecture de l’information
   - Semantic Web
 ---
 

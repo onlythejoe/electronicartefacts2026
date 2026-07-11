@@ -34,8 +34,8 @@
     "Graphe"
   ],
   "disciplines": [
-    "Architecture logicielle",
-    "Runtime Systems"
+    "architecture logicielle",
+    "systèmes d’exécution"
   ],
   "scope": [
     "Contrats des primitives et invariants runtime",

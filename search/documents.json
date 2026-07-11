@@ -194,6 +194,7 @@
     ],
     "questions": [],
     "relationLabels": [
+      "memberOfCollection ActivityPub belongs to the second Knowledge Hub wave as a protocol reference for federation and network culture.",
       "hasPart Knowledge Hub Second Wave includes Hypertext and Augmented Knowledge Systems as a core article.",
       "hasPart Knowledge Hub Second Wave includes Personal Knowledge Systems and Digital Gardens as a core article.",
       "hasPart Knowledge Hub Second Wave includes Open Source as Cultural Infrastructure as a core article.",
@@ -208,6 +209,7 @@
       "hasPart Knowledge Hub Second Wave includes Generative AI, Latent Space and Creative Workflows as a core article."
     ],
     "relatedEntityIds": [
+      "ea:technology:activitypub",
       "ea:publication:hypertext-and-augmented-knowledge-systems",
       "ea:publication:personal-knowledge-systems-and-digital-gardens",
       "ea:publication:open-source-as-cultural-infrastructure",
@@ -1112,9 +1114,11 @@
     ],
     "questions": [],
     "relationLabels": [
+      "cites Internet Culture cites ActivityPub as a standardized reference for federated social-web infrastructure.",
       "documents Open Source as Cultural Infrastructure frames open collaboration as part of broader internet culture."
     ],
     "relatedEntityIds": [
+      "ea:technology:activitypub",
       "ea:publication:open-source-as-cultural-infrastructure"
     ],
     "status": "active",
@@ -2379,6 +2383,7 @@
     ],
     "questions": [],
     "relationLabels": [
+      "memberOfCollection ActivityPub belongs to the second Knowledge Hub wave as a protocol reference for federation and network culture.",
       "hasPart Knowledge Hub Second Wave includes Hypertext and Augmented Knowledge Systems as a core article.",
       "hasPart Knowledge Hub Second Wave includes Personal Knowledge Systems and Digital Gardens as a core article.",
       "hasPart Knowledge Hub Second Wave includes Open Source as Cultural Infrastructure as a core article.",
@@ -2393,6 +2398,7 @@
       "hasPart Knowledge Hub Second Wave includes Generative AI, Latent Space and Creative Workflows as a core article."
     ],
     "relatedEntityIds": [
+      "ea:technology:activitypub",
       "ea:publication:hypertext-and-augmented-knowledge-systems",
       "ea:publication:personal-knowledge-systems-and-digital-gardens",
       "ea:publication:open-source-as-cultural-infrastructure",
@@ -3267,9 +3273,11 @@
     ],
     "questions": [],
     "relationLabels": [
+      "cites Internet Culture cites ActivityPub as a standardized reference for federated social-web infrastructure.",
       "documents Open Source as Cultural Infrastructure frames open collaboration as part of broader internet culture."
     ],
     "relatedEntityIds": [
+      "ea:technology:activitypub",
       "ea:publication:open-source-as-cultural-infrastructure"
     ],
     "status": "active",
@@ -3419,7 +3427,7 @@
     ],
     "body": "Définition Les workflows de machine learning relient matériau source, métadonnées, validation, travail de modèle et évaluation. Périmètre Le concept inclut capture de dataset, contrôles qualité, manifestes, transformation, entrées d’entraînement, rapports d’évaluation et points de gouvernance. Applications Electronic Artefacts l’utilise pour séparer préparation de dataset et entraînement de modèle, notamment pour les médias sensibles comme la voix. Limites Préparer un dataset n’est pas entraîner un modèle. Un workflow responsable garde ces étapes visibles et gouvernées séparément.",
     "tags": [
-      "machine learning",
+      "apprentissage automatique",
       "workflow",
       "préparation de dataset",
       "évaluation"
@@ -3575,7 +3583,7 @@
     "tags": [
       "Multimodal AI",
       "Vision Language",
-      "Audio",
+      "audio",
       "Video",
       "Cross-Modal Retrieval"
     ],
@@ -3892,7 +3900,7 @@
     "body": "Définition Archéologie du signal désigne l’analyse des traces sonores, médiatiques et techniques pour rendre lisibles des mémoires enfouies. Usage Cette fiche fixe le vocabulaire français de la notion et la relie aux projets, publications et technologies qui l’emploient dans le graphe. Périmètre Le périmètre précise les usages inclus, les limites explicites et les relations utiles pour poursuivre la lecture. Références Les sources associées sont conservées dans la fiche canonique du graphe.",
     "tags": [
       "Signal Archaeology",
-      "Audio",
+      "audio",
       "Archive",
       "Memory",
       "Machine Listening"
@@ -4363,10 +4371,10 @@
     ],
     "body": "Le studio Electronic Artefacts est un studio indépendant de technologies créatives. Il travaille sur des produits numériques, des systèmes de connaissance, des plateformes culturelles, des logiciels propriétaires et des formes de publication issues de la recherche. Le studio intervient de la stratégie à la réalisation : cadrage produit, architecture de l’information, identité, expérience utilisateur, développement, automatisation, documentation et mise en production. Une pratique connectée La recherche, le design et l’ingénierie ne sont pas traités comme des services isolés. Ils forment un même système de travail. Cette continuité permet de préserver la cohérence entre une intention, son modèle d’information, son interface publique et son fonctionnement technique. Produits et programmes Electronic Artefacts développe ses propres programmes, notamment VASTE et ORETH, et les applique à des projets publics comme V6 et Palimpsests. Ces programmes constituent des environnements de recherche et des actifs techniques pouvant soutenir des collaborations, des pilotes ou des produits plus larges. Travail client Le studio accompagne également des organisations, artistes et équipes qui ont besoin de clarifier, concevoir ou reconstruire un produit, une plateforme, une identité ou un système de travail. Les missions peuvent prendre la forme d’un audit, d’un cadrage, d’une réalisation complète, d’une reprise technique ou d’un programme de recherche appliquée. Publication publique Le site Electronic Artefacts constitue la surface publique du studio. Il documente les projets, programmes, concepts, publications et relations qui composent son écosystème. Les fiches canoniques, identifiants stables et sources explicites sont conçus pour rester utiles aux lecteurs, aux moteurs de recherche et aux systèmes automatisés.",
     "tags": [
-      "Technologies créatives",
-      "Systèmes de connaissance",
-      "Logiciel",
-      "Design",
+      "technologies créatives",
+      "systèmes de connaissance",
+      "logiciel",
+      "design",
       "Recherche"
     ],
     "questions": [],
@@ -5135,7 +5143,7 @@
       "Foundational",
       "Lineage",
       "Research",
-      "Information architecture"
+      "architecture de l’information"
     ],
     "questions": [],
     "relationLabels": [
@@ -6247,7 +6255,7 @@
     "body": "Problème Cette synthèse clarifie le sujet « Archéologie du signal, mémoire audio et écoute machine » pour aider le lecteur à comprendre le vocabulaire, les enjeux pratiques et les liens avec les autres pages du graphe Electronic Artefacts. Architecture Le sujet est présenté à travers ses composants, ses relations avec les concepts voisins et les décisions de conception qu’il implique. Mise en œuvre La page met l’accent sur les usages concrets, les contraintes de gouvernance et les conditions d’application dans un système réel. Éléments de preuve Les sources, relations et éléments de contexte restent associés à la fiche pour distinguer synthèse éditoriale, preuve et référence. Limites Les limites décrivent ce que la fiche ne couvre pas encore, les sources disponibles et les conditions d’usage documentées. Références Les sources principales restent disponibles dans le bloc de références de la fiche.",
     "tags": [
       "Signal Archaeology",
-      "Audio",
+      "audio",
       "Machine Listening",
       "ORETH",
       "Palimpsests"
@@ -6515,7 +6523,7 @@
       "Graph Modeling",
       "Folders",
       "graphe de connaissances",
-      "Information Architecture",
+      "architecture de l’information",
       "VASTE"
     ],
     "questions": [],
@@ -6607,7 +6615,7 @@
       "Onboarding conversationnel",
       "Agents IA",
       "Graphe de connaissance",
-      "Voix",
+      "voix",
       "Compréhension utilisateur"
     ],
     "questions": [
@@ -6760,7 +6768,7 @@
       "Confidentialité",
       "Web Audio",
       "Local First",
-      "Open Source"
+      "open source"
     ],
     "questions": [
       "Comment les datasets vocaux peuvent-ils devenir reproductibles, structurés et privacy-first ?",
@@ -6831,8 +6839,14 @@
       "Social Web"
     ],
     "questions": [],
-    "relationLabels": [],
-    "relatedEntityIds": [],
+    "relationLabels": [
+      "cites Internet Culture cites ActivityPub as a standardized reference for federated social-web infrastructure.",
+      "memberOfCollection ActivityPub belongs to the second Knowledge Hub wave as a protocol reference for federation and network culture."
+    ],
+    "relatedEntityIds": [
+      "ea:concept:internet-culture",
+      "ea:collection:knowledge-hub-second-wave"
+    ],
     "status": "active",
     "confidence": "canonical",
     "modifiedAt": "2026-06-25"
@@ -7475,7 +7489,7 @@
     ],
     "body": "Institutional role Electronic Artefacts designs and builds digital products, knowledge systems and cultural platforms. Client commissions address concrete needs; proprietary programs turn recurring methods into reusable technology; research and artistic publishing create space for questions beyond a commercial brief. Operating layers Research frames the question. Programs retain reusable logic. Projects put that logic to work in public, cultural or client contexts. Publications make the thinking citable. The archive preserves evidence, versions and lineage. Public knowledge system The public platform connects these layers through stable entities and explicit relationships. A project can be traced back to the concepts, methods, programs, people and evidence that made it possible without forcing every visitor to learn the underlying model first. Responsibilities Electronic Artefacts distinguishes publication status, maturity, confidence and visibility. This allows experimental work to remain public without presenting it as proven, finished or available on the same terms as a delivered product.",
     "tags": [
-      "Creative technology",
+      "Creative Technology",
       "Software",
       "Research",
       "Culture",
@@ -8377,7 +8391,7 @@
       "Foundational",
       "Lineage",
       "Research",
-      "Information architecture"
+      "Information Architecture"
     ],
     "questions": [],
     "relationLabels": [
@@ -10603,8 +10617,14 @@
       "Social Web"
     ],
     "questions": [],
-    "relationLabels": [],
-    "relatedEntityIds": [],
+    "relationLabels": [
+      "cites Internet Culture cites ActivityPub as a standardized reference for federated social-web infrastructure.",
+      "memberOfCollection ActivityPub belongs to the second Knowledge Hub wave as a protocol reference for federation and network culture."
+    ],
+    "relatedEntityIds": [
+      "ea:concept:internet-culture",
+      "ea:collection:knowledge-hub-second-wave"
+    ],
     "status": "active",
     "confidence": "canonical",
     "modifiedAt": "2026-06-24"

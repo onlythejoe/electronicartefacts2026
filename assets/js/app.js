@@ -6247,8 +6247,8 @@ window.EA_PUBLIC_CATALOG = {
         "Execution"
       ],
       "discipline": [
-        "Software architecture",
-        "Knowledge systems"
+        "Software Architecture",
+        "Knowledge Systems"
       ],
       "route": "/knowledge/concepts/graph-runtime/",
       "identifier": "/id/concept/graph-runtime/",
@@ -7589,7 +7589,7 @@ window.EA_PUBLIC_CATALOG = {
         "ingénierie audio",
         "développement web",
         "interaction humain-machine",
-        "machine learning"
+        "apprentissage automatique"
       ],
       "route": "/fr/archive/collections/voice-capture-studio/",
       "identifier": "/fr/id/collection/voice-capture-studio/",
@@ -8154,7 +8154,7 @@ window.EA_PUBLIC_CATALOG = {
       "discipline": [
         "systèmes de connaissance",
         "conception de systèmes",
-        "Information Architecture",
+        "architecture de l’information",
         "architecture logicielle"
       ],
       "route": "/fr/knowledge/concepts/graph-modeling/",
@@ -8338,7 +8338,7 @@ window.EA_PUBLIC_CATALOG = {
       ],
       "discipline": [
         "systèmes de connaissance",
-        "Information Architecture",
+        "architecture de l’information",
         "développement web",
         "Research"
       ],
@@ -8416,7 +8416,7 @@ window.EA_PUBLIC_CATALOG = {
         "systèmes de connaissance",
         "développement web",
         "SEO",
-        "Information Architecture"
+        "architecture de l’information"
       ],
       "route": "/fr/knowledge/concepts/linked-data/",
       "identifier": "/fr/id/concept/linked-data/",
@@ -8444,7 +8444,7 @@ window.EA_PUBLIC_CATALOG = {
       "visibility": "public",
       "publicationClass": "canonical",
       "tags": [
-        "machine learning",
+        "apprentissage automatique",
         "workflow",
         "préparation de dataset",
         "évaluation"
@@ -8592,7 +8592,7 @@ window.EA_PUBLIC_CATALOG = {
       "tags": [
         "Multimodal AI",
         "Vision Language",
-        "Audio",
+        "audio",
         "Video",
         "Cross-Modal Retrieval"
       ],
@@ -8636,7 +8636,7 @@ window.EA_PUBLIC_CATALOG = {
       ],
       "discipline": [
         "systèmes de connaissance",
-        "Information Architecture",
+        "architecture de l’information",
         "Philosophy",
         "Semantic Web"
       ],
@@ -8860,7 +8860,7 @@ window.EA_PUBLIC_CATALOG = {
       "discipline": [
         "intelligence artificielle",
         "systèmes de connaissance",
-        "Information Architecture",
+        "architecture de l’information",
         "apprentissage automatique"
       ],
       "route": "/fr/knowledge/concepts/retrieval-augmented-generation/",
@@ -8890,7 +8890,7 @@ window.EA_PUBLIC_CATALOG = {
       "publicationClass": "canonical",
       "tags": [
         "Signal Archaeology",
-        "Audio",
+        "audio",
         "Archive",
         "Memory",
         "Machine Listening"
@@ -8970,7 +8970,7 @@ window.EA_PUBLIC_CATALOG = {
       ],
       "discipline": [
         "ingénierie audio",
-        "machine learning",
+        "apprentissage automatique",
         "métadonnées",
         "préservation numérique"
       ],
@@ -9187,8 +9187,8 @@ window.EA_PUBLIC_CATALOG = {
         "Intelligence"
       ],
       "discipline": [
-        "Architecture logicielle",
-        "Runtime Systems"
+        "architecture logicielle",
+        "systèmes d’exécution"
       ],
       "route": "/fr/knowledge/concepts/vaste-extension-architecture/",
       "identifier": "/fr/id/concept/vaste-extension-architecture/",
@@ -9222,8 +9222,8 @@ window.EA_PUBLIC_CATALOG = {
         "Graphe"
       ],
       "discipline": [
-        "Architecture logicielle",
-        "Runtime Systems"
+        "architecture logicielle",
+        "systèmes d’exécution"
       ],
       "route": "/fr/knowledge/concepts/vaste-five-primitives/",
       "identifier": "/fr/id/concept/vaste-five-primitives/",
@@ -9333,10 +9333,10 @@ window.EA_PUBLIC_CATALOG = {
         "Framework front-end"
       ],
       "discipline": [
-        "Développement web",
+        "développement web",
         "Technologies de design",
-        "Technologies créatives",
-        "Systèmes de connaissance"
+        "technologies créatives",
+        "systèmes de connaissance"
       ],
       "route": "/fr/knowledge/frameworks/electronic-artefacts-lightweight-template/",
       "identifier": "/fr/id/framework/electronic-artefacts-lightweight-template/",
@@ -9364,15 +9364,15 @@ window.EA_PUBLIC_CATALOG = {
       "visibility": "public",
       "publicationClass": "canonical",
       "tags": [
-        "Technologies créatives",
-        "Systèmes de connaissance",
-        "Logiciel",
-        "Design",
+        "technologies créatives",
+        "systèmes de connaissance",
+        "logiciel",
+        "design",
         "Recherche"
       ],
       "discipline": [
         "Technologie",
-        "Design",
+        "design",
         "Recherche",
         "Production culturelle"
       ],
@@ -9413,8 +9413,8 @@ window.EA_PUBLIC_CATALOG = {
         "Musique",
         "Technologie",
         "Recherche",
-        "Ingénierie audio",
-        "Art numérique"
+        "ingénierie audio",
+        "art numérique"
       ],
       "route": "/fr/programs/oreth/",
       "identifier": "/fr/id/program/oreth/",
@@ -9450,9 +9450,9 @@ window.EA_PUBLIC_CATALOG = {
         "Assisted Boot"
       ],
       "discipline": [
-        "Architecture logicielle",
+        "architecture logicielle",
         "Runtime Systems",
-        "Systèmes de connaissance"
+        "systèmes de connaissance"
       ],
       "route": "/fr/programs/vaste/",
       "identifier": "/fr/id/program/vaste/",
@@ -9530,7 +9530,7 @@ window.EA_PUBLIC_CATALOG = {
         "Technologie",
         "Art",
         "Artisanat",
-        "Design"
+        "design"
       ],
       "route": "/fr/projects/v6/",
       "identifier": "/fr/id/project/v6/",
@@ -9571,7 +9571,7 @@ window.EA_PUBLIC_CATALOG = {
         "ingénierie audio",
         "développement web",
         "interaction humain-machine",
-        "machine learning",
+        "apprentissage automatique",
         "open source"
       ],
       "route": "/fr/projects/voice-capture-studio/",
@@ -9648,7 +9648,7 @@ window.EA_PUBLIC_CATALOG = {
         "SEO",
         "systèmes de connaissance",
         "développement web",
-        "Information Architecture"
+        "architecture de l’information"
       ],
       "route": "/fr/publications/ai-search-structured-content-and-knowledge-graph-seo/",
       "identifier": "/fr/id/publication/ai-search-structured-content-and-knowledge-graph-seo/",
@@ -9905,7 +9905,7 @@ window.EA_PUBLIC_CATALOG = {
         "Foundational",
         "Lineage",
         "Research",
-        "Information architecture"
+        "architecture de l’information"
       ],
       "discipline": [],
       "route": "/fr/publications/foundational-lineage-001/",
@@ -10170,7 +10170,7 @@ window.EA_PUBLIC_CATALOG = {
       "discipline": [
         "systèmes de connaissance",
         "archives",
-        "Information Architecture",
+        "architecture de l’information",
         "méthodes de recherche"
       ],
       "route": "/fr/publications/knowledge-graphs-for-cultural-infrastructure/",
@@ -10507,7 +10507,7 @@ window.EA_PUBLIC_CATALOG = {
       ],
       "discipline": [
         "systèmes de connaissance",
-        "Information Architecture",
+        "architecture de l’information",
         "Semantic Web",
         "Philosophy"
       ],
@@ -10771,7 +10771,7 @@ window.EA_PUBLIC_CATALOG = {
       "discipline": [
         "intelligence artificielle",
         "systèmes de connaissance",
-        "Information Architecture",
+        "architecture de l’information",
         "apprentissage automatique"
       ],
       "route": "/fr/publications/retrieval-augmented-generation-and-knowledge-systems/",
@@ -10839,7 +10839,7 @@ window.EA_PUBLIC_CATALOG = {
       "publicationClass": "published",
       "tags": [
         "Signal Archaeology",
-        "Audio",
+        "audio",
         "Machine Listening",
         "ORETH",
         "Palimpsests"
@@ -11068,13 +11068,13 @@ window.EA_PUBLIC_CATALOG = {
         "Graph Modeling",
         "Folders",
         "graphe de connaissances",
-        "Information Architecture",
+        "architecture de l’information",
         "VASTE"
       ],
       "discipline": [
         "systèmes de connaissance",
         "conception de systèmes",
-        "Information Architecture",
+        "architecture de l’information",
         "architecture logicielle"
       ],
       "route": "/fr/publications/why-graphs-are-more-powerful-than-folders/",
@@ -11144,14 +11144,14 @@ window.EA_PUBLIC_CATALOG = {
         "Onboarding conversationnel",
         "Agents IA",
         "Graphe de connaissance",
-        "Voix",
+        "voix",
         "Compréhension utilisateur"
       ],
       "discipline": [
-        "Intelligence artificielle",
-        "Interaction humain-machine",
-        "Systèmes de connaissance",
-        "Architecture logicielle"
+        "intelligence artificielle",
+        "interaction humain-machine",
+        "systèmes de connaissance",
+        "architecture logicielle"
       ],
       "route": "/fr/research/questions/first-conversation-understanding/",
       "identifier": "/fr/id/research-question/first-conversation-understanding/",
@@ -11321,9 +11321,9 @@ window.EA_PUBLIC_CATALOG = {
       ],
       "discipline": [
         "Architecture de l'information",
-        "Architecture logicielle",
-        "Systèmes de connaissance",
-        "Développement web"
+        "architecture logicielle",
+        "systèmes de connaissance",
+        "développement web"
       ],
       "route": "/fr/research/questions/self-explaining-knowledge-graph-software/",
       "identifier": "/fr/id/research-question/self-explaining-knowledge-graph-software/",
@@ -11498,13 +11498,13 @@ window.EA_PUBLIC_CATALOG = {
         "Confidentialité",
         "Web Audio",
         "Local First",
-        "Open Source"
+        "open source"
       ],
       "discipline": [
-        "Ingénierie audio",
-        "Machine Learning",
-        "Développement web",
-        "Ingénierie des données"
+        "ingénierie audio",
+        "apprentissage automatique",
+        "développement web",
+        "ingénierie des données"
       ],
       "route": "/fr/research/questions/speech-dataset-reproducibility/",
       "identifier": "/fr/id/research-question/speech-dataset-reproducibility/",
@@ -12089,7 +12089,7 @@ window.EA_PUBLIC_CATALOG = {
       ],
       "discipline": [
         "systèmes de connaissance",
-        "Information Architecture",
+        "architecture de l’information",
         "Semantic Web"
       ],
       "route": "/fr/knowledge/technologies/skos/",
@@ -12326,7 +12326,7 @@ window.EA_PUBLIC_CATALOG = {
       "visibility": "public",
       "publicationClass": "canonical",
       "tags": [
-        "Creative technology",
+        "Creative Technology",
         "Software",
         "Research",
         "Culture",
@@ -12850,7 +12850,7 @@ window.EA_PUBLIC_CATALOG = {
         "Foundational",
         "Lineage",
         "Research",
-        "Information architecture"
+        "Information Architecture"
       ],
       "discipline": [],
       "route": "/publications/foundational-lineage-001/",
@@ -15165,6 +15165,28 @@ window.EA_PUBLIC_CATALOG = {
     }
   ],
   "relations": [
+    {
+      "id": "ear:internet-culture-cites-activitypub",
+      "subject": "ea:concept:internet-culture",
+      "predicate": "cites",
+      "object": "ea:technology:activitypub",
+      "statement": "Internet Culture cites ActivityPub as a standardized reference for federated social-web infrastructure.",
+      "confidence": "canonical",
+      "createdAt": "2026-07-12",
+      "reviewedAt": "2026-07-12",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:activitypub-member-of-second-wave",
+      "subject": "ea:technology:activitypub",
+      "predicate": "memberOfCollection",
+      "object": "ea:collection:knowledge-hub-second-wave",
+      "statement": "ActivityPub belongs to the second Knowledge Hub wave as a protocol reference for federation and network culture.",
+      "confidence": "published",
+      "createdAt": "2026-07-12",
+      "reviewedAt": "2026-07-12",
+      "visibility": "public"
+    },
     {
       "id": "ear:electronic-artefacts-publishes-foundational-lineage",
       "subject": "ea:publication:foundational-lineage-001",

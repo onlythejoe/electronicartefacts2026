@@ -40,8 +40,8 @@ tags:
   - Identity
   - Execution
 disciplines:
-  - Software architecture
-  - Knowledge systems
+  - Software Architecture
+  - Knowledge Systems
 ---
 
 ## Definition

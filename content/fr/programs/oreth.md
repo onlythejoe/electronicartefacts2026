@@ -51,8 +51,8 @@ disciplines:
   - Musique
   - Technologie
   - Recherche
-  - Ingénierie audio
-  - Art numérique
+  - ingénierie audio
+  - art numérique
 ---
 
 ## Mandat

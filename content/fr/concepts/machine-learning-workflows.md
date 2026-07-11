@@ -35,7 +35,7 @@ claims:
   - La qualité d’un workflow commence avant l’entraînement, au moment où le matériau source est capturé, révisé et documenté.
   - Des frontières claires entre préparation, entraînement et déploiement réduisent les claims trompeurs sur l’IA.
 tags:
-  - machine learning
+  - apprentissage automatique
   - workflow
   - préparation de dataset
   - évaluation

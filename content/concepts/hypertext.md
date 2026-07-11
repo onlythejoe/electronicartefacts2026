@@ -26,7 +26,7 @@ scope:
   - Linking
   - Web pages
   - Digital archives
-  - Knowledge systems
+  - Knowledge Systems
 exclusions:
   - A linear PDF with no meaningful internal or external links
   - A navigation menu that does not change the structure of knowledge

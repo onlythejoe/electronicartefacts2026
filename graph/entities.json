@@ -832,8 +832,8 @@
       "Execution"
     ],
     "discipline": [
-      "Software architecture",
-      "Knowledge systems"
+      "Software Architecture",
+      "Knowledge Systems"
     ],
     "route": "/knowledge/concepts/graph-runtime/",
     "identifier": "/id/concept/graph-runtime/",
@@ -2174,7 +2174,7 @@
       "ingénierie audio",
       "développement web",
       "interaction humain-machine",
-      "machine learning"
+      "apprentissage automatique"
     ],
     "route": "/fr/archive/collections/voice-capture-studio/",
     "identifier": "/fr/id/collection/voice-capture-studio/",
@@ -2739,7 +2739,7 @@
     "discipline": [
       "systèmes de connaissance",
       "conception de systèmes",
-      "Information Architecture",
+      "architecture de l’information",
       "architecture logicielle"
     ],
     "route": "/fr/knowledge/concepts/graph-modeling/",
@@ -2923,7 +2923,7 @@
     ],
     "discipline": [
       "systèmes de connaissance",
-      "Information Architecture",
+      "architecture de l’information",
       "développement web",
       "Research"
     ],
@@ -3001,7 +3001,7 @@
       "systèmes de connaissance",
       "développement web",
       "SEO",
-      "Information Architecture"
+      "architecture de l’information"
     ],
     "route": "/fr/knowledge/concepts/linked-data/",
     "identifier": "/fr/id/concept/linked-data/",
@@ -3029,7 +3029,7 @@
     "visibility": "public",
     "publicationClass": "canonical",
     "tags": [
-      "machine learning",
+      "apprentissage automatique",
       "workflow",
       "préparation de dataset",
       "évaluation"
@@ -3177,7 +3177,7 @@
     "tags": [
       "Multimodal AI",
       "Vision Language",
-      "Audio",
+      "audio",
       "Video",
       "Cross-Modal Retrieval"
     ],
@@ -3221,7 +3221,7 @@
     ],
     "discipline": [
       "systèmes de connaissance",
-      "Information Architecture",
+      "architecture de l’information",
       "Philosophy",
       "Semantic Web"
     ],
@@ -3445,7 +3445,7 @@
     "discipline": [
       "intelligence artificielle",
       "systèmes de connaissance",
-      "Information Architecture",
+      "architecture de l’information",
       "apprentissage automatique"
     ],
     "route": "/fr/knowledge/concepts/retrieval-augmented-generation/",
@@ -3475,7 +3475,7 @@
     "publicationClass": "canonical",
     "tags": [
       "Signal Archaeology",
-      "Audio",
+      "audio",
       "Archive",
       "Memory",
       "Machine Listening"
@@ -3555,7 +3555,7 @@
     ],
     "discipline": [
       "ingénierie audio",
-      "machine learning",
+      "apprentissage automatique",
       "métadonnées",
       "préservation numérique"
     ],
@@ -3772,8 +3772,8 @@
       "Intelligence"
     ],
     "discipline": [
-      "Architecture logicielle",
-      "Runtime Systems"
+      "architecture logicielle",
+      "systèmes d’exécution"
     ],
     "route": "/fr/knowledge/concepts/vaste-extension-architecture/",
     "identifier": "/fr/id/concept/vaste-extension-architecture/",
@@ -3807,8 +3807,8 @@
       "Graphe"
     ],
     "discipline": [
-      "Architecture logicielle",
-      "Runtime Systems"
+      "architecture logicielle",
+      "systèmes d’exécution"
     ],
     "route": "/fr/knowledge/concepts/vaste-five-primitives/",
     "identifier": "/fr/id/concept/vaste-five-primitives/",
@@ -3918,10 +3918,10 @@
       "Framework front-end"
     ],
     "discipline": [
-      "Développement web",
+      "développement web",
       "Technologies de design",
-      "Technologies créatives",
-      "Systèmes de connaissance"
+      "technologies créatives",
+      "systèmes de connaissance"
     ],
     "route": "/fr/knowledge/frameworks/electronic-artefacts-lightweight-template/",
     "identifier": "/fr/id/framework/electronic-artefacts-lightweight-template/",
@@ -3949,15 +3949,15 @@
     "visibility": "public",
     "publicationClass": "canonical",
     "tags": [
-      "Technologies créatives",
-      "Systèmes de connaissance",
-      "Logiciel",
-      "Design",
+      "technologies créatives",
+      "systèmes de connaissance",
+      "logiciel",
+      "design",
       "Recherche"
     ],
     "discipline": [
       "Technologie",
-      "Design",
+      "design",
       "Recherche",
       "Production culturelle"
     ],
@@ -3998,8 +3998,8 @@
       "Musique",
       "Technologie",
       "Recherche",
-      "Ingénierie audio",
-      "Art numérique"
+      "ingénierie audio",
+      "art numérique"
     ],
     "route": "/fr/programs/oreth/",
     "identifier": "/fr/id/program/oreth/",
@@ -4035,9 +4035,9 @@
       "Assisted Boot"
     ],
     "discipline": [
-      "Architecture logicielle",
+      "architecture logicielle",
       "Runtime Systems",
-      "Systèmes de connaissance"
+      "systèmes de connaissance"
     ],
     "route": "/fr/programs/vaste/",
     "identifier": "/fr/id/program/vaste/",
@@ -4115,7 +4115,7 @@
       "Technologie",
       "Art",
       "Artisanat",
-      "Design"
+      "design"
     ],
     "route": "/fr/projects/v6/",
     "identifier": "/fr/id/project/v6/",
@@ -4156,7 +4156,7 @@
       "ingénierie audio",
       "développement web",
       "interaction humain-machine",
-      "machine learning",
+      "apprentissage automatique",
       "open source"
     ],
     "route": "/fr/projects/voice-capture-studio/",
@@ -4233,7 +4233,7 @@
       "SEO",
       "systèmes de connaissance",
       "développement web",
-      "Information Architecture"
+      "architecture de l’information"
     ],
     "route": "/fr/publications/ai-search-structured-content-and-knowledge-graph-seo/",
     "identifier": "/fr/id/publication/ai-search-structured-content-and-knowledge-graph-seo/",
@@ -4490,7 +4490,7 @@
       "Foundational",
       "Lineage",
       "Research",
-      "Information architecture"
+      "architecture de l’information"
     ],
     "discipline": [],
     "route": "/fr/publications/foundational-lineage-001/",
@@ -4755,7 +4755,7 @@
     "discipline": [
       "systèmes de connaissance",
       "archives",
-      "Information Architecture",
+      "architecture de l’information",
       "méthodes de recherche"
     ],
     "route": "/fr/publications/knowledge-graphs-for-cultural-infrastructure/",
@@ -5092,7 +5092,7 @@
     ],
     "discipline": [
       "systèmes de connaissance",
-      "Information Architecture",
+      "architecture de l’information",
       "Semantic Web",
       "Philosophy"
     ],
@@ -5356,7 +5356,7 @@
     "discipline": [
       "intelligence artificielle",
       "systèmes de connaissance",
-      "Information Architecture",
+      "architecture de l’information",
       "apprentissage automatique"
     ],
     "route": "/fr/publications/retrieval-augmented-generation-and-knowledge-systems/",
@@ -5424,7 +5424,7 @@
     "publicationClass": "published",
     "tags": [
       "Signal Archaeology",
-      "Audio",
+      "audio",
       "Machine Listening",
       "ORETH",
       "Palimpsests"
@@ -5653,13 +5653,13 @@
       "Graph Modeling",
       "Folders",
       "graphe de connaissances",
-      "Information Architecture",
+      "architecture de l’information",
       "VASTE"
     ],
     "discipline": [
       "systèmes de connaissance",
       "conception de systèmes",
-      "Information Architecture",
+      "architecture de l’information",
       "architecture logicielle"
     ],
     "route": "/fr/publications/why-graphs-are-more-powerful-than-folders/",
@@ -5729,14 +5729,14 @@
       "Onboarding conversationnel",
       "Agents IA",
       "Graphe de connaissance",
-      "Voix",
+      "voix",
       "Compréhension utilisateur"
     ],
     "discipline": [
-      "Intelligence artificielle",
-      "Interaction humain-machine",
-      "Systèmes de connaissance",
-      "Architecture logicielle"
+      "intelligence artificielle",
+      "interaction humain-machine",
+      "systèmes de connaissance",
+      "architecture logicielle"
     ],
     "route": "/fr/research/questions/first-conversation-understanding/",
     "identifier": "/fr/id/research-question/first-conversation-understanding/",
@@ -5906,9 +5906,9 @@
     ],
     "discipline": [
       "Architecture de l'information",
-      "Architecture logicielle",
-      "Systèmes de connaissance",
-      "Développement web"
+      "architecture logicielle",
+      "systèmes de connaissance",
+      "développement web"
     ],
     "route": "/fr/research/questions/self-explaining-knowledge-graph-software/",
     "identifier": "/fr/id/research-question/self-explaining-knowledge-graph-software/",
@@ -6083,13 +6083,13 @@
       "Confidentialité",
       "Web Audio",
       "Local First",
-      "Open Source"
+      "open source"
     ],
     "discipline": [
-      "Ingénierie audio",
-      "Machine Learning",
-      "Développement web",
-      "Ingénierie des données"
+      "ingénierie audio",
+      "apprentissage automatique",
+      "développement web",
+      "ingénierie des données"
     ],
     "route": "/fr/research/questions/speech-dataset-reproducibility/",
     "identifier": "/fr/id/research-question/speech-dataset-reproducibility/",
@@ -6674,7 +6674,7 @@
     ],
     "discipline": [
       "systèmes de connaissance",
-      "Information Architecture",
+      "architecture de l’information",
       "Semantic Web"
     ],
     "route": "/fr/knowledge/technologies/skos/",
@@ -6911,7 +6911,7 @@
     "visibility": "public",
     "publicationClass": "canonical",
     "tags": [
-      "Creative technology",
+      "Creative Technology",
       "Software",
       "Research",
       "Culture",
@@ -7435,7 +7435,7 @@
       "Foundational",
       "Lineage",
       "Research",
-      "Information architecture"
+      "Information Architecture"
     ],
     "discipline": [],
     "route": "/publications/foundational-lineage-001/",

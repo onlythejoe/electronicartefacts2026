@@ -61,7 +61,7 @@ tags:
   - Knowledge Modeling
 disciplines:
   - systèmes de connaissance
-  - Information Architecture
+  - architecture de l’information
   - Semantic Web
   - Philosophy
 translationOf: ea:publication:ontologies-taxonomies-and-knowledge-modeling

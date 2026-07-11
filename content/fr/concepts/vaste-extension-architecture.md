@@ -22,7 +22,7 @@ claims:
   - Le runtime démarre et exécute sans extension installée.
   - Installation et exposition visible sont deux états distincts.
 tags: [VASTE, Extensions, Runtime, Intelligence]
-disciplines: [Architecture logicielle, Runtime Systems]
+disciplines: [architecture logicielle, systèmes d’exécution]
 ---
 
 ## Frontière

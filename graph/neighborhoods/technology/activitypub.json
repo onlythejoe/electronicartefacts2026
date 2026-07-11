@@ -10,7 +10,42 @@
       "route": "/knowledge/technologies/activitypub/",
       "status": "active",
       "confidence": "canonical"
+    },
+    {
+      "id": "ea:concept:internet-culture",
+      "type": "concept",
+      "title": "Internet Culture",
+      "route": "/knowledge/concepts/internet-culture/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:collection:knowledge-hub-second-wave",
+      "type": "collection",
+      "title": "Knowledge Hub Second Wave",
+      "route": "/archive/collections/knowledge-hub-second-wave/",
+      "status": "active",
+      "confidence": "published"
     }
   ],
-  "edges": []
+  "edges": [
+    {
+      "id": "ear:internet-culture-cites-activitypub",
+      "source": "ea:concept:internet-culture",
+      "target": "ea:technology:activitypub",
+      "predicate": "cites",
+      "label": "Cites",
+      "statement": "Internet Culture cites ActivityPub as a standardized reference for federated social-web infrastructure.",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ear:activitypub-member-of-second-wave",
+      "source": "ea:technology:activitypub",
+      "target": "ea:collection:knowledge-hub-second-wave",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "ActivityPub belongs to the second Knowledge Hub wave as a protocol reference for federation and network culture.",
+      "confidence": "published"
+    }
+  ]
 }

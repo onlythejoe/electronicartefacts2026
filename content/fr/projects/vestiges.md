@@ -62,7 +62,7 @@ disciplines:
   - Technologie
   - Art
   - Artisanat
-  - Design
+  - design
 developmentFocus:
   - Cartographie de pratiques
   - Gestion de relations

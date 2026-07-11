@@ -41,7 +41,7 @@ tags:
   - qualité dataset
 disciplines:
   - ingénierie audio
-  - machine learning
+  - apprentissage automatique
   - métadonnées
   - préservation numérique
 ---

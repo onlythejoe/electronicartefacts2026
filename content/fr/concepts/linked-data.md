@@ -60,7 +60,7 @@ disciplines:
   - systèmes de connaissance
   - développement web
   - SEO
-  - Information Architecture
+  - architecture de l’information
 translationOf: ea:concept:linked-data
 ---
 

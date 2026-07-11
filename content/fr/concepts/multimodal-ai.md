@@ -48,7 +48,7 @@ sources:
 tags:
   - Multimodal AI
   - Vision Language
-  - Audio
+  - audio
   - Video
   - Cross-Modal Retrieval
 disciplines:

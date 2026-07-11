@@ -41,10 +41,10 @@ tags:
   - Amélioration progressive
   - Framework front-end
 disciplines:
-  - Développement web
+  - développement web
   - Technologies de design
-  - Technologies créatives
-  - Systèmes de connaissance
+  - technologies créatives
+  - systèmes de connaissance
 ---
 
 ## Rôle

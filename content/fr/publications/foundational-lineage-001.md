@@ -36,7 +36,7 @@ tags:
   - Foundational
   - Lineage
   - Research
-  - Information architecture
+  - architecture de l’information
 translationOf: ea:publication:foundational-lineage-001
 disciplines: []
 ---

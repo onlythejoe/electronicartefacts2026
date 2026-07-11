@@ -33,7 +33,7 @@ claims:
   - Le vocabulaire fondamental est fermé à cinq primitives.
   - Les données des primitives restent explicites, sérialisables et séparées de l’autorité runtime.
 tags: [VASTE, Runtime, Primitives, Graphe]
-disciplines: [Architecture logicielle, Runtime Systems]
+disciplines: [architecture logicielle, systèmes d’exécution]
 ---
 
 ## Vocabulaire fermé

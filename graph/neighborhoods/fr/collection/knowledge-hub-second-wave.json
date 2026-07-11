@@ -12,6 +12,14 @@
       "confidence": "published"
     },
     {
+      "id": "ea:technology:activitypub-fr",
+      "type": "technology",
+      "title": "ActivityPub",
+      "route": "/fr/knowledge/technologies/activitypub/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
       "id": "ea:publication:hypertext-and-augmented-knowledge-systems-fr",
       "type": "publication",
       "title": "Hypertexte et systèmes de connaissance augmentée",
@@ -109,6 +117,15 @@
     }
   ],
   "edges": [
+    {
+      "id": "ear:activitypub-member-of-second-wave",
+      "source": "ea:technology:activitypub-fr",
+      "target": "ea:collection:knowledge-hub-second-wave-fr",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "ActivityPub belongs to the second Knowledge Hub wave as a protocol reference for federation and network culture.",
+      "confidence": "published"
+    },
     {
       "id": "ear:knowledge-hub-second-wave-has-hypertext-article",
       "source": "ea:collection:knowledge-hub-second-wave-fr",

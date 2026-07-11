@@ -24,14 +24,14 @@ authors:
 publisher: ea:organization:electronic-artefacts
 organizationType: studio
 tags:
-  - Technologies créatives
-  - Systèmes de connaissance
-  - Logiciel
-  - Design
+  - technologies créatives
+  - systèmes de connaissance
+  - logiciel
+  - design
   - Recherche
 disciplines:
   - Technologie
-  - Design
+  - design
   - Recherche
   - Production culturelle
 ---

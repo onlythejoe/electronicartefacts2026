@@ -50,7 +50,7 @@ citation:
     technique, version 1.0.0, 2026.
 tags:
   - Signal Archaeology
-  - Audio
+  - audio
   - Machine Listening
   - ORETH
   - Palimpsests

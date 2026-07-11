@@ -62,7 +62,7 @@ disciplines:
   - SEO
   - systèmes de connaissance
   - développement web
-  - Information Architecture
+  - architecture de l’information
 translationOf: ea:publication:ai-search-structured-content-and-knowledge-graph-seo
 ---
 

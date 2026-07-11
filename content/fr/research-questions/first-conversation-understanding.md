@@ -93,13 +93,13 @@ tags:
   - Onboarding conversationnel
   - Agents IA
   - Graphe de connaissance
-  - Voix
+  - voix
   - Compréhension utilisateur
 disciplines:
-  - Intelligence artificielle
-  - Interaction humain-machine
-  - Systèmes de connaissance
-  - Architecture logicielle
+  - intelligence artificielle
+  - interaction humain-machine
+  - systèmes de connaissance
+  - architecture logicielle
 ---
 
 ## Observation

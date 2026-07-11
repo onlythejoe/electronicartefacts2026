@@ -53,12 +53,12 @@ tags:
   - Graph Modeling
   - Folders
   - graphe de connaissances
-  - Information Architecture
+  - architecture de l’information
   - VASTE
 disciplines:
   - systèmes de connaissance
   - conception de systèmes
-  - Information Architecture
+  - architecture de l’information
   - architecture logicielle
 translationOf: ea:publication:why-graphs-are-more-powerful-than-folders
 ---

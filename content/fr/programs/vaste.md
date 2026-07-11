@@ -58,9 +58,9 @@ tags:
   - Extensions
   - Assisted Boot
 disciplines:
-  - Architecture logicielle
+  - architecture logicielle
   - Runtime Systems
-  - Systèmes de connaissance
+  - systèmes de connaissance
 ---
 
 ## Définition

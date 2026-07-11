@@ -23,7 +23,7 @@ authors:
 publisher: ea:organization:electronic-artefacts
 organizationType: studio
 tags:
-  - Creative technology
+  - Creative Technology
   - Software
   - Research
   - Culture

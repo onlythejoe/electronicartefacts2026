@@ -12,6 +12,14 @@
       "confidence": "validated"
     },
     {
+      "id": "ea:technology:activitypub",
+      "type": "technology",
+      "title": "ActivityPub",
+      "route": "/knowledge/technologies/activitypub/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
       "id": "ea:publication:open-source-as-cultural-infrastructure",
       "type": "publication",
       "title": "Open Source as Cultural Infrastructure",
@@ -21,6 +29,15 @@
     }
   ],
   "edges": [
+    {
+      "id": "ear:internet-culture-cites-activitypub",
+      "source": "ea:concept:internet-culture",
+      "target": "ea:technology:activitypub",
+      "predicate": "cites",
+      "label": "Cites",
+      "statement": "Internet Culture cites ActivityPub as a standardized reference for federated social-web infrastructure.",
+      "confidence": "canonical"
+    },
     {
       "id": "ear:open-source-article-documents-internet-culture",
       "source": "ea:publication:open-source-as-cultural-infrastructure",

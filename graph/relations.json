@@ -1,5 +1,27 @@
 [
   {
+    "id": "ear:internet-culture-cites-activitypub",
+    "subject": "ea:concept:internet-culture",
+    "predicate": "cites",
+    "object": "ea:technology:activitypub",
+    "statement": "Internet Culture cites ActivityPub as a standardized reference for federated social-web infrastructure.",
+    "confidence": "canonical",
+    "createdAt": "2026-07-12",
+    "reviewedAt": "2026-07-12",
+    "visibility": "public"
+  },
+  {
+    "id": "ear:activitypub-member-of-second-wave",
+    "subject": "ea:technology:activitypub",
+    "predicate": "memberOfCollection",
+    "object": "ea:collection:knowledge-hub-second-wave",
+    "statement": "ActivityPub belongs to the second Knowledge Hub wave as a protocol reference for federation and network culture.",
+    "confidence": "published",
+    "createdAt": "2026-07-12",
+    "reviewedAt": "2026-07-12",
+    "visibility": "public"
+  },
+  {
     "id": "ear:electronic-artefacts-publishes-foundational-lineage",
     "subject": "ea:publication:foundational-lineage-001",
     "predicate": "publishedBy",

@@ -19,13 +19,13 @@ This file is generated from typed public records. Prefer each record's canonical
   - Identifier: https://electronicartefacts.com/fr/id/organization/electronic-artefacts/
   - JSON-LD: https://electronicartefacts.com/fr/id/organization/electronic-artefacts/index.jsonld
   - Modified: 2026-06-25
-  - Keywords: Electronic Artefacts, Technologies créatives, Systèmes de connaissance, Logiciel, Design, Recherche, Technologie, Production culturelle
+  - Keywords: Electronic Artefacts, technologies créatives, systèmes de connaissance, logiciel, design, Recherche, Technologie, Production culturelle
 - [Electronic Artefacts](https://electronicartefacts.com/organizations/electronic-artefacts/): Strategy, design, engineering and cultural research brought together to build clear, durable digital products and knowledge systems.
   - Entity ID: ea:organization:electronic-artefacts
   - Identifier: https://electronicartefacts.com/id/organization/electronic-artefacts/
   - JSON-LD: https://electronicartefacts.com/id/organization/electronic-artefacts/index.jsonld
   - Modified: 2026-06-22
-  - Keywords: Electronic Artefacts, Creative technology, Software, Research, Culture, Publishing
+  - Keywords: Electronic Artefacts, Creative Technology, Software, Research, Culture, Publishing
 
 ## program
 
@@ -46,7 +46,7 @@ This file is generated from typed public records. Prefer each record's canonical
   - Identifier: https://electronicartefacts.com/fr/id/program/vaste/
   - JSON-LD: https://electronicartefacts.com/fr/id/program/vaste/index.jsonld
   - Modified: 2026-07-11
-  - Keywords: VASTE, TypeScript, Graph Runtime, Exécution gouvernée, Portabilité, Extensions, Assisted Boot, Architecture logicielle
+  - Keywords: VASTE, TypeScript, Graph Runtime, Exécution gouvernée, Portabilité, Extensions, Assisted Boot, architecture logicielle
 - [VASTE](https://electronicartefacts.com/programs/vaste/): The canonical public record of VASTE: its runtime architecture, primitives, governed execution, extension system, Assisted Boot, experimental .vast format, validation record and current limits.
   - Entity ID: ea:program:vaste
   - Identifier: https://electronicartefacts.com/id/program/vaste/
@@ -73,7 +73,7 @@ This file is generated from typed public records. Prefer each record's canonical
   - Identifier: https://electronicartefacts.com/fr/id/project/v6/
   - JSON-LD: https://electronicartefacts.com/fr/id/project/v6/index.jsonld
   - Modified: 2026-07-11
-  - Keywords: V6, VASTE, Art, Artisanat, CRM, Cartographie, Technologie, Design
+  - Keywords: V6, VASTE, Art, Artisanat, CRM, Cartographie, Technologie, design
 - [V6](https://electronicartefacts.com/projects/v6/): An in-development VASTE test platform for art, craft, mapping and relationship management, targeted for 2027.
   - Entity ID: ea:project:vestiges
   - Identifier: https://electronicartefacts.com/id/project/v6/
@@ -115,19 +115,19 @@ This file is generated from typed public records. Prefer each record's canonical
   - Identifier: https://electronicartefacts.com/fr/id/research-question/speech-dataset-reproducibility/
   - JSON-LD: https://electronicartefacts.com/fr/id/research-question/speech-dataset-reproducibility/index.jsonld
   - Modified: 2026-07-09
-  - Keywords: Comment les datasets vocaux peuvent-ils devenir reproductibles, structurés et privacy-first ?, Datasets vocaux, Confidentialité, Web Audio, Local First, Open Source, Ingénierie audio, Machine Learning
+  - Keywords: Comment les datasets vocaux peuvent-ils devenir reproductibles, structurés et privacy-first ?, Datasets vocaux, Confidentialité, Web Audio, Local First, open source, ingénierie audio, apprentissage automatique
 - [Comment un logiciel peut-il devenir explicable par son propre graphe de connaissance ?](https://electronicartefacts.com/fr/research/questions/self-explaining-knowledge-graph-software/): Question de recherche publique d'Electronic Artefacts sur les logiciels explicables, les graphes de connaissance, la documentation générée et les surfaces publiques sémantiques.
   - Entity ID: ea:researchQuestion:self-explaining-knowledge-graph-software-fr
   - Identifier: https://electronicartefacts.com/fr/id/research-question/self-explaining-knowledge-graph-software/
   - JSON-LD: https://electronicartefacts.com/fr/id/research-question/self-explaining-knowledge-graph-software/index.jsonld
   - Modified: 2026-07-09
-  - Keywords: Comment un logiciel peut-il devenir explicable par son propre graphe de connaissance ?, Graphe de connaissance, Linked Data, Documentation, Logiciel explicable, Génération de site statique, Architecture de l'information, Architecture logicielle
+  - Keywords: Comment un logiciel peut-il devenir explicable par son propre graphe de connaissance ?, Graphe de connaissance, Linked Data, Documentation, Logiciel explicable, Génération de site statique, Architecture de l'information, architecture logicielle
 - [Comment une IA peut-elle comprendre quelqu'un dès sa première conversation ?](https://electronicartefacts.com/fr/research/questions/first-conversation-understanding/): Question de recherche publique d'Electronic Artefacts sur la compréhension au premier contact, l'onboarding conversationnel et le contexte utilisateur structuré en graphe.
   - Entity ID: ea:researchQuestion:first-conversation-understanding-fr
   - Identifier: https://electronicartefacts.com/fr/id/research-question/first-conversation-understanding/
   - JSON-LD: https://electronicartefacts.com/fr/id/research-question/first-conversation-understanding/index.jsonld
   - Modified: 2026-07-09
-  - Keywords: Comment une IA peut-elle comprendre quelqu'un dès sa première conversation ?, Onboarding conversationnel, Agents IA, Graphe de connaissance, Voix, Compréhension utilisateur, Intelligence artificielle, Interaction humain-machine
+  - Keywords: Comment une IA peut-elle comprendre quelqu'un dès sa première conversation ?, Onboarding conversationnel, Agents IA, Graphe de connaissance, voix, Compréhension utilisateur, intelligence artificielle, interaction humain-machine
 - [How can an AI understand someone during its very first conversation?](https://electronicartefacts.com/research/questions/first-conversation-understanding/): A public Electronic Artefacts research question about first-contact understanding, conversational onboarding and graph-shaped user context.
   - Entity ID: ea:researchQuestion:first-conversation-understanding
   - Identifier: https://electronicartefacts.com/id/research-question/first-conversation-understanding/
@@ -178,7 +178,7 @@ This file is generated from typed public records. Prefer each record's canonical
   - Identifier: https://electronicartefacts.com/fr/id/publication/signal-archaeology-audio-memory-and-machine-listening/
   - JSON-LD: https://electronicartefacts.com/fr/id/publication/signal-archaeology-audio-memory-and-machine-listening/index.jsonld
   - Modified: 2026-06-25
-  - Keywords: Archéologie du signal, mémoire audio et écoute machine, Signal Archaeology, Audio, Machine Listening, ORETH, Palimpsests, ingénierie audio, Sound Design
+  - Keywords: Archéologie du signal, mémoire audio et écoute machine, Signal Archaeology, audio, Machine Listening, ORETH, Palimpsests, ingénierie audio, Sound Design
 - [Architecture événementielle et flux d'événements](https://electronicartefacts.com/fr/publications/event-driven-architecture-and-event-streams/): Repères pour comprendre Architecture événementielle et flux d'événements dans un contexte de conception : concepts clés, implications pratiques, limites et références reliées au graphe Electronic Artefacts.
   - Entity ID: ea:publication:event-driven-architecture-and-event-streams-fr
   - Identifier: https://electronicartefacts.com/fr/id/publication/event-driven-architecture-and-event-streams/
@@ -250,13 +250,13 @@ This file is generated from typed public records. Prefer each record's canonical
   - Identifier: https://electronicartefacts.com/fr/id/publication/foundational-lineage-001/
   - JSON-LD: https://electronicartefacts.com/fr/id/publication/foundational-lineage-001/index.jsonld
   - Modified: 2026-06-25
-  - Keywords: Foundational Lineage #001, Foundational, Lineage, Research, Information architecture
+  - Keywords: Foundational Lineage #001, Foundational, Lineage, Research, architecture de l’information
 - [Foundational Lineage #001](https://electronicartefacts.com/publications/foundational-lineage-001/): A concise record of the foundational research lineage connecting information architecture, taxonomy, runtime systems and public knowledge structures.
   - Entity ID: ea:publication:foundational-lineage-001
   - Identifier: https://electronicartefacts.com/id/publication/foundational-lineage-001/
   - JSON-LD: https://electronicartefacts.com/id/publication/foundational-lineage-001/index.jsonld
   - Modified: 2026-06-22
-  - Keywords: Foundational Lineage #001, Foundational, Lineage, Research, Information architecture
+  - Keywords: Foundational Lineage #001, Foundational, Lineage, Research, Information Architecture
 - [Génération augmentée par récupération et systèmes de connaissance](https://electronicartefacts.com/fr/publications/retrieval-augmented-generation-and-knowledge-systems/): Repères pour comprendre Génération augmentée par récupération et systèmes de connaissance dans un contexte de conception : concepts clés, implications pratiques, limites et références reliées au graphe Electronic Artefacts.
   - Entity ID: ea:publication:retrieval-augmented-generation-and-knowledge-systems-fr
   - Identifier: https://electronicartefacts.com/fr/id/publication/retrieval-augmented-generation-and-knowledge-systems/
@@ -466,7 +466,7 @@ This file is generated from typed public records. Prefer each record's canonical
   - Identifier: https://electronicartefacts.com/fr/id/publication/ontologies-taxonomies-and-knowledge-modeling/
   - JSON-LD: https://electronicartefacts.com/fr/id/publication/ontologies-taxonomies-and-knowledge-modeling/index.jsonld
   - Modified: 2026-06-25
-  - Keywords: Ontologies, taxonomies et modélisation des connaissances, Ontology, Taxonomy, SKOS, OWL, Knowledge Modeling, systèmes de connaissance, Information Architecture
+  - Keywords: Ontologies, taxonomies et modélisation des connaissances, Ontology, Taxonomy, SKOS, OWL, Knowledge Modeling, systèmes de connaissance, architecture de l’information
 - [Open Source as Cultural Infrastructure](https://electronicartefacts.com/publications/open-source-as-cultural-infrastructure/): A technical article on open source software, maintainership, creative coding, infrastructure and Electronic Artefacts knowledge culture.
   - Entity ID: ea:publication:open-source-as-cultural-infrastructure
   - Identifier: https://electronicartefacts.com/id/publication/open-source-as-cultural-infrastructure/
@@ -496,7 +496,7 @@ This file is generated from typed public records. Prefer each record's canonical
   - Identifier: https://electronicartefacts.com/fr/id/publication/why-graphs-are-more-powerful-than-folders/
   - JSON-LD: https://electronicartefacts.com/fr/id/publication/why-graphs-are-more-powerful-than-folders/index.jsonld
   - Modified: 2026-06-25
-  - Keywords: Pourquoi les graphes sont plus puissants que les dossiers, Graph Modeling, Folders, graphe de connaissances, Information Architecture, VASTE, systèmes de connaissance, conception de systèmes
+  - Keywords: Pourquoi les graphes sont plus puissants que les dossiers, Graph Modeling, Folders, graphe de connaissances, architecture de l’information, VASTE, systèmes de connaissance, conception de systèmes
 - [Préservation numérique et archives vivantes](https://electronicartefacts.com/fr/publications/digital-preservation-and-living-archives/): Repères pour comprendre Préservation numérique et archives vivantes dans un contexte de conception : concepts clés, implications pratiques, limites et références reliées au graphe Electronic Artefacts.
   - Entity ID: ea:publication:digital-preservation-and-living-archives-fr
   - Identifier: https://electronicartefacts.com/fr/id/publication/digital-preservation-and-living-archives/
@@ -667,13 +667,13 @@ This file is generated from typed public records. Prefer each record's canonical
   - Identifier: https://electronicartefacts.com/fr/id/concept/signal-archaeology/
   - JSON-LD: https://electronicartefacts.com/fr/id/concept/signal-archaeology/index.jsonld
   - Modified: 2026-06-25
-  - Keywords: Archéologie du signal, Signal Archaeology, Audio, Archive, Memory, Machine Listening, ingénierie audio, art numérique
+  - Keywords: Archéologie du signal, Signal Archaeology, audio, Archive, Memory, Machine Listening, ingénierie audio, art numérique
 - [Architecture d’extensions VASTE](https://electronicartefacts.com/fr/knowledge/concepts/vaste-extension-architecture/): Une extension VASTE est une unité optionnelle de capability, limitée à un System, qui déclare actions de domaine, bindings et Surfaces tandis que l’autorité runtime reste dans le chemin d’exécution central.
   - Entity ID: ea:concept:vaste-extension-architecture-fr
   - Identifier: https://electronicartefacts.com/fr/id/concept/vaste-extension-architecture/
   - JSON-LD: https://electronicartefacts.com/fr/id/concept/vaste-extension-architecture/index.jsonld
   - Modified: 2026-07-11
-  - Keywords: Architecture d’extensions VASTE, VASTE, Extensions, Runtime, Intelligence, Architecture logicielle, Runtime Systems
+  - Keywords: Architecture d’extensions VASTE, VASTE, Extensions, Runtime, Intelligence, architecture logicielle, systèmes d’exécution
 - [Architecture de microservices](https://electronicartefacts.com/fr/knowledge/concepts/microservice-architecture/): Architecture de microservices désigne les architectures de services séparés par domaine, contrat et responsabilité opérationnelle.
   - Entity ID: ea:concept:microservice-architecture-fr
   - Identifier: https://electronicartefacts.com/fr/id/concept/microservice-architecture/
@@ -823,13 +823,13 @@ This file is generated from typed public records. Prefer each record's canonical
   - Identifier: https://electronicartefacts.com/id/concept/graph-runtime/
   - JSON-LD: https://electronicartefacts.com/id/concept/graph-runtime/index.jsonld
   - Modified: 2026-06-22
-  - Keywords: Graph Runtime, Graph, Runtime, Context, Identity, Execution, Software architecture, Knowledge systems
+  - Keywords: Graph Runtime, Graph, Runtime, Context, Identity, Execution, Software Architecture, Knowledge Systems
 - [Graphe de connaissances](https://electronicartefacts.com/fr/knowledge/concepts/knowledge-graph/): Graphe de connaissances désigne les graphes de connaissances qui structurent des entités, des relations, des sources et des preuves.
   - Entity ID: ea:concept:knowledge-graph-fr
   - Identifier: https://electronicartefacts.com/fr/id/concept/knowledge-graph/
   - JSON-LD: https://electronicartefacts.com/fr/id/concept/knowledge-graph/index.jsonld
   - Modified: 2026-06-25
-  - Keywords: Graphe de connaissances, graphe de connaissances, Semantic Web, Entities, Relations, Search, systèmes de connaissance, Information Architecture
+  - Keywords: Graphe de connaissances, graphe de connaissances, Semantic Web, Entities, Relations, Search, systèmes de connaissance, architecture de l’information
 - [Graphisme procédural](https://electronicartefacts.com/fr/knowledge/concepts/procedural-graphics/): Graphisme procédural désigne les images et formes visuelles générées par algorithmes, shaders où règles paramétriques.
   - Entity ID: ea:concept:procedural-graphics-fr
   - Identifier: https://electronicartefacts.com/fr/id/concept/procedural-graphics/
@@ -865,7 +865,7 @@ This file is generated from typed public records. Prefer each record's canonical
   - Identifier: https://electronicartefacts.com/fr/id/concept/multimodal-ai/
   - JSON-LD: https://electronicartefacts.com/fr/id/concept/multimodal-ai/index.jsonld
   - Modified: 2026-06-25
-  - Keywords: IA multimodale, Multimodal AI, Vision Language, Audio, Video, Cross-Modal Retrieval, intelligence artificielle, apprentissage automatique
+  - Keywords: IA multimodale, Multimodal AI, Vision Language, audio, Video, Cross-Modal Retrieval, intelligence artificielle, apprentissage automatique
 - [Identité d'entité](https://electronicartefacts.com/fr/knowledge/concepts/entity-identity/): Identité d'entité désigne le sujet "Identité d'entité" dans le graphe public d'Electronic Artefacts.
   - Entity ID: ea:concept:entity-identity-fr
   - Identifier: https://electronicartefacts.com/fr/id/concept/entity-identity/
@@ -895,7 +895,7 @@ This file is generated from typed public records. Prefer each record's canonical
   - Identifier: https://electronicartefacts.com/fr/id/concept/speech-datasets/
   - JSON-LD: https://electronicartefacts.com/fr/id/concept/speech-datasets/index.jsonld
   - Modified: 2026-07-09
-  - Keywords: Jeux de données vocales, dataset vocal, données vocales, métadonnées, qualité dataset, ingénierie audio, machine learning, préservation numérique
+  - Keywords: Jeux de données vocales, dataset vocal, données vocales, métadonnées, qualité dataset, ingénierie audio, apprentissage automatique, préservation numérique
 - [Knowledge Graph](https://electronicartefacts.com/knowledge/concepts/knowledge-graph/): A knowledge graph is a structured network of entities, identifiers and typed relationships that makes knowledge navigable, queryable and reusable across contexts.
   - Entity ID: ea:concept:knowledge-graph
   - Identifier: https://electronicartefacts.com/id/concept/knowledge-graph/
@@ -913,7 +913,7 @@ This file is generated from typed public records. Prefer each record's canonical
   - Identifier: https://electronicartefacts.com/fr/id/concept/vaste-five-primitives/
   - JSON-LD: https://electronicartefacts.com/fr/id/concept/vaste-five-primitives/index.jsonld
   - Modified: 2026-07-11
-  - Keywords: Les cinq primitives de VASTE, VASTE, Runtime, Primitives, Graphe, Architecture logicielle, Runtime Systems
+  - Keywords: Les cinq primitives de VASTE, VASTE, Runtime, Primitives, Graphe, architecture logicielle, systèmes d’exécution
 - [Linked Data](https://electronicartefacts.com/knowledge/concepts/linked-data/): Linked Data is a web publishing approach that identifies things with stable URIs and connects them through machine-readable statements.
   - Entity ID: ea:concept:linked-data
   - Identifier: https://electronicartefacts.com/id/concept/linked-data/
@@ -985,7 +985,7 @@ This file is generated from typed public records. Prefer each record's canonical
   - Identifier: https://electronicartefacts.com/fr/id/concept/ontology/
   - JSON-LD: https://electronicartefacts.com/fr/id/concept/ontology/index.jsonld
   - Modified: 2026-06-25
-  - Keywords: Ontologie, Ontology, Taxonomy, SKOS, OWL, Controlled Vocabulary, systèmes de connaissance, Information Architecture
+  - Keywords: Ontologie, Ontology, Taxonomy, SKOS, OWL, Controlled Vocabulary, systèmes de connaissance, architecture de l’information
 - [Ontology](https://electronicartefacts.com/knowledge/concepts/ontology/): In knowledge engineering, an ontology is an explicit specification of the kinds of entities, properties, relationships and constraints used to represent a domain.
   - Entity ID: ea:concept:ontology
   - Identifier: https://electronicartefacts.com/id/concept/ontology/
@@ -1183,7 +1183,7 @@ This file is generated from typed public records. Prefer each record's canonical
   - Identifier: https://electronicartefacts.com/fr/id/concept/machine-learning-workflows/
   - JSON-LD: https://electronicartefacts.com/fr/id/concept/machine-learning-workflows/index.jsonld
   - Modified: 2026-07-09
-  - Keywords: Workflows de machine learning, machine learning, workflow, préparation de dataset, évaluation, intelligence artificielle, ingénierie des données, architecture logicielle
+  - Keywords: Workflows de machine learning, apprentissage automatique, workflow, préparation de dataset, évaluation, intelligence artificielle, ingénierie des données, architecture logicielle
 
 ## technology
 
@@ -1342,7 +1342,7 @@ This file is generated from typed public records. Prefer each record's canonical
   - Identifier: https://electronicartefacts.com/fr/id/technology/skos/
   - JSON-LD: https://electronicartefacts.com/fr/id/technology/skos/index.jsonld
   - Modified: 2026-06-25
-  - Keywords: SKOS, Simple Knowledge Organization System, Taxonomy, Controlled Vocabulary, systèmes de connaissance, Information Architecture, Semantic Web
+  - Keywords: SKOS, Simple Knowledge Organization System, Taxonomy, Controlled Vocabulary, systèmes de connaissance, architecture de l’information, Semantic Web
 - [SKOS](https://electronicartefacts.com/knowledge/technologies/skos/): A technology record for controlled vocabularies and lightweight semantic organization.
   - Entity ID: ea:technology:skos
   - Identifier: https://electronicartefacts.com/id/technology/skos/
@@ -1411,7 +1411,7 @@ This file is generated from typed public records. Prefer each record's canonical
   - Identifier: https://electronicartefacts.com/fr/id/framework/electronic-artefacts-lightweight-template/
   - JSON-LD: https://electronicartefacts.com/fr/id/framework/electronic-artefacts-lightweight-template/index.jsonld
   - Modified: 2026-06-26
-  - Keywords: Electronic Artefacts Lightweight Template, HTML, CSS, JavaScript, Site statique, Amélioration progressive, Framework front-end, Développement web
+  - Keywords: Electronic Artefacts Lightweight Template, HTML, CSS, JavaScript, Site statique, Amélioration progressive, Framework front-end, développement web
 - [Electronic Artefacts Lightweight Template](https://electronicartefacts.com/knowledge/frameworks/electronic-artefacts-lightweight-template/): A lightweight vanilla HTML, CSS and JavaScript framework used by Electronic Artefacts for fast prototyping, public showcases and small production surfaces.
   - Entity ID: ea:framework:electronic-artefacts-lightweight-template
   - Identifier: https://electronicartefacts.com/id/framework/electronic-artefacts-lightweight-template/

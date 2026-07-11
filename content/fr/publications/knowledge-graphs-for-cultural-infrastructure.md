@@ -62,7 +62,7 @@ tags:
 disciplines:
   - systèmes de connaissance
   - archives
-  - Information Architecture
+  - architecture de l’information
   - méthodes de recherche
 translationOf: ea:publication:knowledge-graphs-for-cultural-infrastructure
 ---

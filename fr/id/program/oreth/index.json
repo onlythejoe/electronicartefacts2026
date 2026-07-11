@@ -39,8 +39,8 @@
     "Musique",
     "Technologie",
     "Recherche",
-    "Ingénierie audio",
-    "Art numérique"
+    "ingénierie audio",
+    "art numérique"
   ],
   "mandate": "Étudier comment un système artificiel relié à des capteurs pourrait passer de l’imitation à un apprentissage auto-organisé de la parole, sans corpus prédéfini.",
   "domain": "Audio Intelligence",
