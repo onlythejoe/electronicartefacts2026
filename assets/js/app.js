@@ -18466,6 +18466,8 @@ window.EA_PUBLIC_CATALOG = {
   }
 };
 
+window.EA_EMBEDDED_INCLUDES = {"header":"<div class=\"shell-header zone-card\">\n  <a class=\"brand-lockup\" href=\"./index.html\">\n    <span class=\"brand-text\">\n      <strong><span class=\"brand-name-brand\">electronic</span><span class=\"brand-name-accent\">Artefacts</span></strong>\n      <span>Creative technology studio for complex digital systems</span>\n    </span>\n  </a>\n\n  <nav class=\"site-nav\" aria-label=\"Main navigation\">\n    <a data-nav=\"home\" href=\"./index.html\">HOME</a>\n    <a data-nav=\"work\" href=\"./work.html\">WORK</a>\n    <a data-nav=\"projects\" href=\"./projects.html\">PROJECTS</a>\n    <a data-nav=\"programs\" href=\"./programs.html\">PROGRAMS</a>\n    <a data-nav=\"research\" href=\"./research.html\">RESEARCH</a>\n    <a data-nav=\"knowledge\" href=\"/knowledge/\">KNOWLEDGE</a>\n    <a data-nav=\"about\" href=\"./about.html\">ABOUT</a>\n    <a data-nav=\"contact\" href=\"./contact.html\">CONTACT</a>\n  </nav>\n\n  <div class=\"language-switcher\" data-language-switcher>\n    <button class=\"language-switcher__trigger\" type=\"button\" aria-haspopup=\"menu\" aria-expanded=\"false\" title=\"Choose language\" data-language-trigger>\n      <span class=\"language-switcher__planet\" aria-hidden=\"true\">\n        <span></span>\n      </span>\n      <strong data-language-current>EN</strong>\n    </button>\n    <div class=\"language-switcher__menu\" role=\"menu\" hidden data-language-menu>\n      <div class=\"language-switcher__menu-shell\">\n        <span class=\"language-switcher__eyebrow\">Language</span>\n        <div class=\"language-switcher__rail\" aria-label=\"Available languages\">\n          <button type=\"button\" role=\"menuitemradio\" aria-checked=\"true\" data-language-option=\"en\">\n            <span class=\"language-switcher__option-dot\" aria-hidden=\"true\"></span>\n            <span class=\"language-switcher__option-copy\">\n              <span>English</span>\n              <em>Original interface</em>\n            </span>\n            <strong>EN</strong>\n          </button>\n          <button type=\"button\" role=\"menuitemradio\" aria-checked=\"false\" data-language-option=\"fr\">\n            <span class=\"language-switcher__option-dot\" aria-hidden=\"true\"></span>\n            <span class=\"language-switcher__option-copy\">\n              <span>Français</span>\n              <em>Version française</em>\n            </span>\n            <strong>FR</strong>\n          </button>\n        </div>\n        <span class=\"language-switcher__status\" data-language-status>Current language</span>\n      </div>\n    </div>\n  </div>\n</div>","footer":"<div class=\"shell-footer zone-card\">\n  <div class=\"footer-main\">\n    <div class=\"footer-stack footer-stack--brand\">\n      <a class=\"footer-brand\" href=\"/\" aria-label=\"Electronic Artefacts home\">\n        <span class=\"brand-name-brand\">electronic</span><span class=\"brand-name-accent\">Artefacts</span>\n      </a>\n      <span>Independent creative technology studio for complex digital products, knowledge systems, proprietary software and research-led cultural work.</span>\n    </div>\n    <nav class=\"footer-links\" aria-label=\"Quick links\">\n      <a class=\"tag\" href=\"/work.html\">WORK</a>\n      <a class=\"tag\" href=\"/projects.html\">PROJECTS</a>\n      <a class=\"tag\" href=\"/programs.html\">PROGRAMS</a>\n      <a class=\"tag\" href=\"/research.html\">RESEARCH</a>\n      <a class=\"tag\" href=\"/about.html\">ABOUT</a>\n      <a class=\"tag\" href=\"/contact.html\">CONTACT</a>\n    </nav>\n    <nav class=\"footer-links footer-links--utility\" aria-label=\"Resources and legal\">\n      <a class=\"tag\" href=\"/knowledge/\">KNOWLEDGE</a>\n      <a class=\"tag\" href=\"/archive.html\">ARCHIVE</a>\n      <a class=\"tag\" href=\"/search/\">SEARCH</a>\n      <a class=\"tag\" href=\"/mentions-legales.html\">LEGAL</a>\n      <a class=\"tag\" href=\"/confidentialite.html\">PRIVACY</a>\n      <button class=\"tag footer-consent-button\" type=\"button\" data-analytics-preferences>COOKIES</button>\n    </nav>\n  </div>\n  <div class=\"footer-signature\" aria-label=\"Site signature\">\n    <a class=\"footer-signature__framework\" href=\"/knowledge/frameworks/electronic-artefacts-lightweight-template/\">\n      Built on the Electronic Artefacts Light Framework\n    </a>\n    <span class=\"footer-note\">© <span id=\"current-year\"></span></span>\n  </div>\n</div>"};
+
 /* ==== src/legacy-data/search-index.js ==== */
 window.EA_SEARCH = {
   buildIndex(catalog) {
@@ -18763,6 +18765,15 @@ window.EA_SEARCH = {
   };
 
   const fetchInclude = async (url) => {
+    const path = new URL(url, window.location.origin).pathname;
+    const embeddedKey = path === "/assets/partials/header.html"
+      ? "header"
+      : path === "/assets/partials/footer.html"
+        ? "footer"
+        : null;
+    if (embeddedKey && window.EA_EMBEDDED_INCLUDES?.[embeddedKey]) {
+      return window.EA_EMBEDDED_INCLUDES[embeddedKey];
+    }
     if (!includeCache.has(url)) {
       includeCache.set(
         url,
@@ -24055,6 +24066,75 @@ window.EA_ANALYTICS_CONFIG = {
     window.setTimeout(callback, 0);
   };
   const trackAnalytics = (eventName, params) => window.EA_ANALYTICS?.track?.(eventName, params);
+  const reduceMotion = () => typeof window.matchMedia !== "function" || window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  let navigationTimer = 0;
+
+  const navigateWithTransition = (target) => {
+    if (!target) return;
+    const url = new URL(target, window.location.href);
+    const destination = url.origin === window.location.origin ? `${url.pathname}${url.search}${url.hash}` : url.href;
+    if (reduceMotion() || typeof document.startViewTransition === "function") {
+      window.location.assign(destination);
+      return;
+    }
+    if (document.body.classList.contains("is-page-leaving")) return;
+    document.body.classList.add("is-page-leaving");
+    document.documentElement.dataset.navigationPending = "true";
+    window.clearTimeout(navigationTimer);
+    navigationTimer = window.setTimeout(() => window.location.assign(destination), 150);
+  };
+
+  const initPageTransitions = () => {
+    if (document.body.dataset.boundPageTransitions === "true") return;
+    document.body.dataset.boundPageTransitions = "true";
+
+    document.addEventListener("click", (event) => {
+      if (event.defaultPrevented || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+      const anchor = event.target.closest?.("a[href]");
+      if (!anchor || anchor.target && anchor.target !== "_self" || anchor.hasAttribute("download") || anchor.dataset.noPageTransition === "true") return;
+      const url = new URL(anchor.href, window.location.href);
+      if (url.origin !== window.location.origin) return;
+      const sameDocument = url.pathname === window.location.pathname && url.search === window.location.search;
+      if (sameDocument) return;
+      event.preventDefault();
+      navigateWithTransition(url.href);
+    });
+
+    window.addEventListener("pageshow", () => {
+      window.clearTimeout(navigationTimer);
+      document.body.classList.remove("is-page-leaving");
+      delete document.documentElement.dataset.navigationPending;
+    });
+  };
+
+  const initMediaReadiness = (root = document) => {
+    root.querySelectorAll(".site-main img:not(.project-butterfly__wing):not(.project-meg-badge__picto)").forEach((image) => {
+      if (image.dataset.boundMediaReadiness === "true") return;
+      image.dataset.boundMediaReadiness = "true";
+      const markReady = () => {
+        image.dataset.mediaState = "ready";
+      };
+      if (image.complete && image.naturalWidth > 0) {
+        markReady();
+        return;
+      }
+      image.dataset.mediaState = "loading";
+      image.addEventListener("load", markReady, { once: true });
+      image.addEventListener("error", markReady, { once: true });
+    });
+  };
+
+  const animateContentRefresh = (root) => {
+    if (!root || reduceMotion() || typeof root.animate !== "function") return;
+    root.getAnimations?.().forEach((animation) => animation.cancel());
+    root.animate(
+      [
+        { opacity: 0.35, transform: "translate3d(0, 0.35rem, 0)" },
+        { opacity: 1, transform: "translate3d(0, 0, 0)" },
+      ],
+      { duration: 260, easing: "cubic-bezier(0.2, 0.78, 0.18, 1)" },
+    );
+  };
 
   const initLanguageSwitcher = async () => {
     const root = document.querySelector("[data-language-switcher]");
@@ -24160,7 +24240,7 @@ window.EA_ANALYTICS_CONFIG = {
       const active = routeLocale(currentPath);
       sync(language);
       if (target && normalizePath(target) !== currentPath) {
-        window.location.assign(preserveCurrentUrlState(target));
+        navigateWithTransition(preserveCurrentUrlState(target));
         return;
       }
       if (manual && language !== active && !target) {
@@ -24414,7 +24494,7 @@ window.EA_ANALYTICS_CONFIG = {
     document.body.dataset.boundCardLinks = "true";
 
     const navigate = (target) => {
-      if (target) window.location.href = target;
+      navigateWithTransition(target);
     };
 
     document.addEventListener("click", (event) => {
@@ -26483,6 +26563,8 @@ window.EA_ANALYTICS_CONFIG = {
   };
 
   const initUXEnhancements = (filterState) => {
+    initPageTransitions();
+    initMediaReadiness();
     initAmbientField();
     initScrollProgress();
     initAutoHideHeader();
@@ -26506,6 +26588,7 @@ window.EA_ANALYTICS_CONFIG = {
   };
 
   const refreshCardSurfaces = (root = document) => {
+    initMediaReadiness(root);
     initCardSpotlight(root);
     initQuickView(root);
     initProjectButterflies(root);
@@ -26772,6 +26855,7 @@ window.EA_ANALYTICS_CONFIG = {
     initIntentHeroes,
     initUXEnhancements,
     initProjectButterflies,
+    animateContentRefresh,
     refreshCardSurfaces,
     syncNavigationState,
     syncPageTitle,
@@ -29698,6 +29782,8 @@ window.EA_ANALYTICS_CONFIG = {
     const target = document.querySelector("[data-search-results]");
     if (!target) return;
     target.innerHTML = searchOverviewMarkup();
+    window.EA_BEHAVIORS?.refreshCardSurfaces(target);
+    window.EA_BEHAVIORS?.animateContentRefresh(target);
   };
 
   const renderCrossNavigation = () => crossNavigation();

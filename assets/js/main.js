@@ -2916,6 +2916,8 @@
     const target = document.querySelector("[data-search-results]");
     if (!target) return;
     target.innerHTML = searchOverviewMarkup();
+    window.EA_BEHAVIORS?.refreshCardSurfaces(target);
+    window.EA_BEHAVIORS?.animateContentRefresh(target);
   };
 
   const renderCrossNavigation = () => crossNavigation();

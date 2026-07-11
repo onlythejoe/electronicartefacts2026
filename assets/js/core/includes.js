@@ -14,6 +14,15 @@
   };
 
   const fetchInclude = async (url) => {
+    const path = new URL(url, window.location.origin).pathname;
+    const embeddedKey = path === "/assets/partials/header.html"
+      ? "header"
+      : path === "/assets/partials/footer.html"
+        ? "footer"
+        : null;
+    if (embeddedKey && window.EA_EMBEDDED_INCLUDES?.[embeddedKey]) {
+      return window.EA_EMBEDDED_INCLUDES[embeddedKey];
+    }
     if (!includeCache.has(url)) {
       includeCache.set(
         url,

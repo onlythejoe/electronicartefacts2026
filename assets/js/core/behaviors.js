@@ -16,6 +16,75 @@
     window.setTimeout(callback, 0);
   };
   const trackAnalytics = (eventName, params) => window.EA_ANALYTICS?.track?.(eventName, params);
+  const reduceMotion = () => typeof window.matchMedia !== "function" || window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  let navigationTimer = 0;
+
+  const navigateWithTransition = (target) => {
+    if (!target) return;
+    const url = new URL(target, window.location.href);
+    const destination = url.origin === window.location.origin ? `${url.pathname}${url.search}${url.hash}` : url.href;
+    if (reduceMotion() || typeof document.startViewTransition === "function") {
+      window.location.assign(destination);
+      return;
+    }
+    if (document.body.classList.contains("is-page-leaving")) return;
+    document.body.classList.add("is-page-leaving");
+    document.documentElement.dataset.navigationPending = "true";
+    window.clearTimeout(navigationTimer);
+    navigationTimer = window.setTimeout(() => window.location.assign(destination), 150);
+  };
+
+  const initPageTransitions = () => {
+    if (document.body.dataset.boundPageTransitions === "true") return;
+    document.body.dataset.boundPageTransitions = "true";
+
+    document.addEventListener("click", (event) => {
+      if (event.defaultPrevented || event.button !== 0 || event.metaKey || event.ctrlKey || event.shiftKey || event.altKey) return;
+      const anchor = event.target.closest?.("a[href]");
+      if (!anchor || anchor.target && anchor.target !== "_self" || anchor.hasAttribute("download") || anchor.dataset.noPageTransition === "true") return;
+      const url = new URL(anchor.href, window.location.href);
+      if (url.origin !== window.location.origin) return;
+      const sameDocument = url.pathname === window.location.pathname && url.search === window.location.search;
+      if (sameDocument) return;
+      event.preventDefault();
+      navigateWithTransition(url.href);
+    });
+
+    window.addEventListener("pageshow", () => {
+      window.clearTimeout(navigationTimer);
+      document.body.classList.remove("is-page-leaving");
+      delete document.documentElement.dataset.navigationPending;
+    });
+  };
+
+  const initMediaReadiness = (root = document) => {
+    root.querySelectorAll(".site-main img:not(.project-butterfly__wing):not(.project-meg-badge__picto)").forEach((image) => {
+      if (image.dataset.boundMediaReadiness === "true") return;
+      image.dataset.boundMediaReadiness = "true";
+      const markReady = () => {
+        image.dataset.mediaState = "ready";
+      };
+      if (image.complete && image.naturalWidth > 0) {
+        markReady();
+        return;
+      }
+      image.dataset.mediaState = "loading";
+      image.addEventListener("load", markReady, { once: true });
+      image.addEventListener("error", markReady, { once: true });
+    });
+  };
+
+  const animateContentRefresh = (root) => {
+    if (!root || reduceMotion() || typeof root.animate !== "function") return;
+    root.getAnimations?.().forEach((animation) => animation.cancel());
+    root.animate(
+      [
+        { opacity: 0.35, transform: "translate3d(0, 0.35rem, 0)" },
+        { opacity: 1, transform: "translate3d(0, 0, 0)" },
+      ],
+      { duration: 260, easing: "cubic-bezier(0.2, 0.78, 0.18, 1)" },
+    );
+  };
 
   const initLanguageSwitcher = async () => {
     const root = document.querySelector("[data-language-switcher]");
@@ -121,7 +190,7 @@
       const active = routeLocale(currentPath);
       sync(language);
       if (target && normalizePath(target) !== currentPath) {
-        window.location.assign(preserveCurrentUrlState(target));
+        navigateWithTransition(preserveCurrentUrlState(target));
         return;
       }
       if (manual && language !== active && !target) {
@@ -375,7 +444,7 @@
     document.body.dataset.boundCardLinks = "true";
 
     const navigate = (target) => {
-      if (target) window.location.href = target;
+      navigateWithTransition(target);
     };
 
     document.addEventListener("click", (event) => {
@@ -2444,6 +2513,8 @@
   };
 
   const initUXEnhancements = (filterState) => {
+    initPageTransitions();
+    initMediaReadiness();
     initAmbientField();
     initScrollProgress();
     initAutoHideHeader();
@@ -2467,6 +2538,7 @@
   };
 
   const refreshCardSurfaces = (root = document) => {
+    initMediaReadiness(root);
     initCardSpotlight(root);
     initQuickView(root);
     initProjectButterflies(root);
@@ -2733,6 +2805,7 @@
     initIntentHeroes,
     initUXEnhancements,
     initProjectButterflies,
+    animateContentRefresh,
     refreshCardSurfaces,
     syncNavigationState,
     syncPageTitle,
