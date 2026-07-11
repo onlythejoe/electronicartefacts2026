@@ -30,12 +30,6 @@ const upperLabel = (value: string): string => labelFrom(value).toUpperCase();
 
 const compactId = (id: string): string => id.split(":").at(-1) || id;
 
-const designSignalPattern =
-  /\b(art direction|brand|branding|charte|cover|design|identity|logo|mark|mood|moodboard|monogram|palette|picto|signage|symbol|ui|visual|wordmark)\b/i;
-const identitySignalPattern = /\b(brand|branding|cover|identity|logo|mark|monogram|picto|symbol|wordmark)\b/i;
-const interfaceSignalPattern = /\b(admin|app|dashboard|flow|interface|landing|mobile|navigation|page|portfolio|screen|site|ui|ux)\b/i;
-const atmosphereSignalPattern = /\b(atmosphere|forest|hero|image|mood|moodboard|room|signage|suite|texture|visual)\b/i;
-
 const colorMap: Record<string, string> = {
   amber: "#d89f4f",
   black: "#050505",
@@ -69,6 +63,11 @@ const firstVisualMedia = (project: ProjectEntity): MediaRef | null =>
   project.media?.[0] ||
   null;
 
+const documentaryMediaFor = (project: ProjectEntity): MediaRef[] => {
+  const heroMedia = firstVisualMedia(project);
+  return (project.media || []).filter((media) => media.src && media !== heroMedia);
+};
+
 const renderChips = (items: string[] = [], className = "tag-cluster tag-cluster--compact"): string =>
   items.length
     ? `<div class="${className}">${items.map((item) => `<span class="chip">${escapeHtml(item)}</span>`).join("")}</div>`
@@ -79,47 +78,8 @@ const uniqueStrings = (items: string[]): string[] => [...new Set(items.filter(Bo
 const uniqueRefs = (refs: EntityRef[]): EntityRef[] =>
   [...new Map(refs.map((ref) => [ref.id, ref])).values()];
 
-const mediaDescriptor = (media: MediaRef): string =>
-  [media.id, media.src, media.alt, media.caption].filter(Boolean).join(" ");
-
-const projectDescriptor = (project: ProjectEntity): string =>
-  [
-    project.title,
-    project.subtitle,
-    project.abstract,
-    project.description,
-    project.category,
-    ...(project.tags || []),
-    ...(project.disciplines || []),
-    ...(project.visualLanguage || []),
-    ...(project.textures || []),
-    ...(project.symbols || []),
-  ]
-    .filter(Boolean)
-    .join(" ");
-
-const visualAssetGroup = (media: MediaRef): "identity" | "interface" | "atmosphere" | "reference" => {
-  const text = mediaDescriptor(media);
-  if (identitySignalPattern.test(text)) return "identity";
-  if (interfaceSignalPattern.test(text)) return "interface";
-  if (atmosphereSignalPattern.test(text)) return "atmosphere";
-  return "reference";
-};
-
-const mediaHasVisualSignal = (media: MediaRef): boolean => {
-  const text = mediaDescriptor(media);
-  return designSignalPattern.test(text) || identitySignalPattern.test(text) || interfaceSignalPattern.test(text) || atmosphereSignalPattern.test(text);
-};
-
-const designMediaFor = (project: ProjectEntity): MediaRef[] => {
-  const gallery = (project.media || []).filter((media) => media.type === "image" || media.type === "video");
-  const matching = gallery.filter(mediaHasVisualSignal);
-  if (matching.length) return matching;
-  return designSignalPattern.test(projectDescriptor(project)) ? gallery : [];
-};
-
 const projectHasArtDirection = (project: ProjectEntity): boolean =>
-  Boolean(project.visualLanguage?.length || project.textures?.length || project.symbols?.length || designMediaFor(project).length);
+  Boolean(project.visualLanguage?.length || project.textures?.length || project.symbols?.length);
 
 const colorForToken = (token: string, index: number): string => {
   const key = token.toLowerCase().trim();
@@ -129,8 +89,8 @@ const colorForToken = (token: string, index: number): string => {
 const projectVisualTokens = (project: ProjectEntity): string[] => {
   if (project.visualLanguage?.length) return uniqueStrings(project.visualLanguage).slice(0, 6);
   const cues = uniqueStrings([
-    ...(project.disciplines || []).filter((item) => designSignalPattern.test(item)),
-    ...(project.tags || []).filter((item) => designSignalPattern.test(item)),
+    ...(project.disciplines || []),
+    ...(project.tags || []),
   ]);
   return cues.slice(0, 6);
 };
@@ -190,7 +150,7 @@ const renderMediaElement = (media: MediaRef, className: string, loading: "eager"
 
 const renderHeroVisual = (project: ProjectEntity): string => {
   const media = firstVisualMedia(project);
-  const categoryLabel = project.slug.canonical === "vestiges" ? "Living knowledge platform" : project.category;
+  const categoryLabel = project.category;
   if (!media) {
     return `
       <figure class="detail-hero__visual project-dossier-hero__visual project-dossier-hero__visual--empty">
@@ -394,8 +354,8 @@ const renderProjectSystem = (project: ProjectEntity): string => {
 };
 
 const renderProjectMedia = (project: ProjectEntity): string => {
-  const gallery = (project.media || []).filter((media) => media.src);
-  if (gallery.length <= 1) return "";
+  const gallery = documentaryMediaFor(project);
+  if (!gallery.length) return "";
   return `
     <section class="zone-card hero project-media-section" id="project-media">
       <div class="section-head">
@@ -437,11 +397,6 @@ const relationDisplay = (
 
 const renderProjectMoodboard = (project: ProjectEntity): string => {
   if (!projectHasArtDirection(project)) return "";
-  const isVestiges = project.slug.canonical === "vestiges";
-  const assets = designMediaFor(project);
-  const logoAssets = assets.filter((media) => visualAssetGroup(media) === "identity");
-  const leadAssets = assets.length ? assets.slice(0, 8) : project.media?.slice(0, 4) || [];
-  const groups = uniqueStrings(leadAssets.map((media) => visualAssetGroup(media)));
   const visualTokens = projectVisualTokens(project);
   const cueTokens = projectMoodCues(project);
 
@@ -450,43 +405,17 @@ const renderProjectMoodboard = (project: ProjectEntity): string => {
       <div class="project-moodboard__intro">
         <div class="section-head">
           <p class="eyebrow">ART DIRECTION</p>
-          <h2>${isVestiges ? "A restrained identity for living knowledge." : "Moodboard, marks and visual system."}</h2>
-          <p class="lede">${isVestiges ? "White space, black structure and archival restraint keep the identity quiet enough for many cultures, practices and sources to coexist." : "Identity, mood and visual-language material are gathered here when they help explain the project direction."}</p>
+          <h2>${ui(project, "Visual system.", "Système visuel.")}</h2>
+          <p class="lede">${ui(project, "The visual language is documented here as a compact system; project media appears once, in its dedicated hero or documentary gallery.", "Le langage visuel est documenté ici comme un système concis ; chaque média projet apparaît une seule fois, dans le hero ou la galerie documentaire.")}</p>
         </div>
-        ${groups.length > 1 ? `
-          <div class="project-moodboard__filters" aria-label="Moodboard asset filters">
-            <button class="project-command__tab is-active" type="button" aria-pressed="true" data-project-mood-filter="all">All</button>
-            ${groups.map((group) => `
-              <button class="project-command__tab" type="button" aria-pressed="false" data-project-mood-filter="${escapeHtml(group)}">${escapeHtml(labelFrom(group))}</button>`).join("")}
-          </div>` : ""}
       </div>
       <div class="project-moodboard__layout">
         <article class="panel project-moodboard__identity">
-          <p class="card__meta">Identity kit</p>
-          <h3 class="card__title">${escapeHtml(logoAssets.length ? ui(project, "Project marks", "Signes du projet") : ui(project, "Visual identity", "Identité visuelle"))}</h3>
-          <p class="card__copy">${escapeHtml(logoAssets[0]?.caption || project.subtitle || project.abstract)}</p>
-          ${logoAssets.length ? `
-            <div class="project-moodboard__logo-rail">
-              ${logoAssets.slice(0, 3).map((media) => `
-                <figure>
-                  ${renderMediaElement(media, "project-moodboard__logo", "lazy")}
-                </figure>`).join("")}
-            </div>` : renderChips(visualTokens, "tag-cluster tag-cluster--compact")}
+          <p class="card__meta">${ui(project, "Identity", "Identité")}</p>
+          <h3 class="card__title">${escapeHtml(ui(project, "Visual language", "Langage visuel"))}</h3>
+          <p class="card__copy">${escapeHtml(project.subtitle || project.abstract)}</p>
+          ${renderChips(visualTokens, "tag-cluster tag-cluster--compact")}
         </article>
-        <div class="project-moodboard__canvas">
-          ${leadAssets.map((media, index) => {
-            const group = visualAssetGroup(media);
-            return `
-              <figure
-                class="project-moodboard__asset project-moodboard__asset--${index % 5}"
-                data-project-mood-asset
-                data-mood-kind="${escapeHtml(group)}"
-              >
-                ${renderMediaElement(media, "project-moodboard__media", "lazy")}
-                ${media.caption ? `<figcaption>${escapeHtml(media.caption)}</figcaption>` : ""}
-              </figure>`;
-          }).join("")}
-        </div>
         <aside class="panel project-moodboard__system">
           <p class="card__meta">Graphic charter</p>
           <div class="project-moodboard__swatches" aria-label="Visual language">
@@ -693,10 +622,9 @@ export const renderProjectPage = (
   byId: Map<string, Entity>,
   routeById: Record<string, string>,
 ): string => {
-  const isVestiges = project.slug.canonical === "vestiges";
   const connected = connectedRelationsFor(project, relations, byId);
   const tags = uniqueStrings([...(project.disciplines || []), ...(project.tags || [])]);
-  const mediaCount = project.media?.length || 0;
+  const documentaryMediaCount = documentaryMediaFor(project).length;
   const hasGraph = connected.length > 0;
   const hasArtDirection = projectHasArtDirection(project);
   const outputRefs = uniqueRefs(publicRefs(project.outputs.filter((ref) => ref.id !== project.id), byId));
@@ -707,7 +635,7 @@ export const renderProjectPage = (
     ...(hasArtDirection ? [{ label: "DA", href: "#project-moodboard" }] : []),
     { label: "Dev", href: "#project-dev" },
     { label: "Marketing", href: "#project-marketing" },
-    ...(mediaCount > 1 ? [{ label: "Media", href: "#project-media" }] : []),
+    ...(documentaryMediaCount ? [{ label: "Media", href: "#project-media" }] : []),
     ...(hasGraph ? [{ label: "Graph", href: "#project-graph" }] : []),
     { label: "Thesis", href: "#project-thesis" },
   ];
@@ -727,7 +655,7 @@ export const renderProjectPage = (
         </div>
         <div class="metric-rail">
           ${renderMetric(ui(project, "Status", "État"), labelFrom(project.status), project.maturity, "surface")}
-          ${renderMetric(ui(project, "Category", "Catégorie"), isVestiges ? ui(project, "Flagship platform", "Plateforme phare") : labelFrom(project.category), undefined, "research")}
+          ${renderMetric(ui(project, "Category", "Catégorie"), labelFrom(project.category), undefined, "research")}
         </div>
         ${renderChips(tags.slice(0, 10))}
         <nav class="project-dossier-nav" aria-label="Project sections">
@@ -750,7 +678,7 @@ export const renderProjectPage = (
     <article class="zone-card hero publication-body project-dossier-body" id="project-thesis">
       <div class="section-head">
         <p class="eyebrow">PROJECT THESIS</p>
-        <h2>${isVestiges ? "Vestiges as living knowledge infrastructure." : "Detailed reading notes."}</h2>
+        <h2>${ui(project, "Detailed reading notes.", "Notes de lecture détaillées.")}</h2>
       </div>
       ${project.bodyHtml}
     </article>

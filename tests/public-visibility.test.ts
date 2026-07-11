@@ -130,6 +130,17 @@ test("project pages hide non-public references and internal relations", async ()
   assert.equal(routeIndex(entities)[project.id], "/projects/v6/");
 });
 
+test("project pages render each declared visual once", async () => {
+  const { byId, routeById } = await loadFixture();
+  const project = byId.get("ea:project:voice-capture-studio") as ProjectEntity;
+  const html = renderProjectPage(project, [], byId, routeById);
+
+  for (const media of project.media || []) {
+    const occurrences = html.split(media.src).length - 1;
+    assert.equal(occurrences, 1, `${media.id} should appear once`);
+  }
+});
+
 test("editorial and publication renderers hide non-public typed references", async () => {
   const { byId, routeById } = await loadFixture();
   const hiddenConcept: Entity = {

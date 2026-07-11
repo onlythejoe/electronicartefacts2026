@@ -3512,11 +3512,6 @@ window.EA_ENTITIES = {
         "folder": "./assets/media/projects/atypikhouse",
         "gallery": [
           {
-            "src": "./assets/media/projects/atypikhouse/cover.svg",
-            "alt": "AtypikHouse dossier cover",
-            "caption": "Project dossier cover."
-          },
-          {
             "src": "./assets/media/projects/atypikhouse/atypikhouse-landing-page.jpg",
             "alt": "AtypikHouse landing page with logo",
             "caption": "Landing page."
@@ -3688,11 +3683,6 @@ window.EA_ENTITIES = {
       "media": {
         "folder": "./assets/media/projects/oeil-de-meg",
         "gallery": [
-          {
-            "src": "./assets/media/projects/oeil-de-meg/cover.svg",
-            "alt": "L’Œil de Meg dossier cover",
-            "caption": "Project dossier cover."
-          },
           {
             "src": "./assets/media/projects/oeil-de-meg/oeil-de-meg-logo.png",
             "alt": "L’Œil de Meg wordmark",

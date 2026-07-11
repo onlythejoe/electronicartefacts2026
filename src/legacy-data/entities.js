@@ -2249,7 +2249,6 @@ window.EA_ENTITIES = {
       media: {
         folder: "./assets/media/projects/atypikhouse",
         gallery: [
-          { src: "./assets/media/projects/atypikhouse/cover.svg", alt: "AtypikHouse dossier cover", caption: "Project dossier cover." },
           { src: "./assets/media/projects/atypikhouse/atypikhouse-landing-page.jpg", alt: "AtypikHouse landing page with logo", caption: "Landing page." },
           { src: "./assets/media/projects/atypikhouse/atypikhouse-dashboard-home.jpg", alt: "AtypikHouse dashboard home view", caption: "Dashboard home." },
           { src: "./assets/media/projects/atypikhouse/atypikhouse-dashboard-ipad.jpg", alt: "AtypikHouse dashboard on a tablet", caption: "Tablet view." },
@@ -2334,7 +2333,6 @@ window.EA_ENTITIES = {
       media: {
         folder: "./assets/media/projects/oeil-de-meg",
         gallery: [
-          { src: "./assets/media/projects/oeil-de-meg/cover.svg", alt: "L’Œil de Meg dossier cover", caption: "Project dossier cover." },
           { src: "./assets/media/projects/oeil-de-meg/oeil-de-meg-logo.png", alt: "L’Œil de Meg wordmark", caption: "Wordmark version of the logo." },
           { src: "./assets/media/projects/oeil-de-meg/oeil-de-meg-picto.svg", alt: "L’Œil de Meg pictogram", caption: "Compact pictogram used as a signature mark." },
           {
