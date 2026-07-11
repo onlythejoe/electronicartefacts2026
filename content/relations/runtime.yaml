@@ -77,3 +77,83 @@
   createdAt: "2026-06-22"
   reviewedAt: "2026-06-22"
   visibility: public
+
+- id: ear:vaste-has-five-primitives
+  subject: ea:program:vaste
+  predicate: hasPart
+  object: ea:concept:vaste-five-primitives
+  statement: VASTE is composed from the closed primitive roster Vertex, Tie, Action, Surface and Environment.
+  confidence: validated
+  createdAt: "2026-07-11"
+  reviewedAt: "2026-07-11"
+  visibility: public
+
+- id: ear:vaste-has-portable-format
+  subject: ea:program:vaste
+  predicate: hasPart
+  object: ea:concept:vast-portable-graph-format
+  statement: VASTE implements the experimental vast/1 portable graph package format for whole-System and subtree closures.
+  confidence: validated
+  createdAt: "2026-07-11"
+  reviewedAt: "2026-07-11"
+  visibility: public
+
+- id: ear:vaste-has-situated-governance
+  subject: ea:program:vaste
+  predicate: hasPart
+  object: ea:concept:situated-actors-and-governance
+  statement: VASTE resolves Actor identity and effective authority inside a System, Environment, topology and policy context.
+  confidence: validated
+  createdAt: "2026-07-11"
+  reviewedAt: "2026-07-11"
+  visibility: public
+
+- id: ear:vaste-has-extension-architecture
+  subject: ea:program:vaste
+  predicate: hasPart
+  object: ea:concept:vaste-extension-architecture
+  statement: VASTE extends the runtime through optional System-scoped capability units without changing the five primitives.
+  confidence: validated
+  createdAt: "2026-07-11"
+  reviewedAt: "2026-07-11"
+  visibility: public
+
+- id: ear:vab-part-of-vaste
+  subject: ea:concept:vab-and-genesis
+  predicate: partOf
+  object: ea:program:vaste
+  statement: VAB is the Assisted Boot orchestration path used to propose and materialize a governed VASTE System.
+  confidence: validated
+  createdAt: "2026-07-11"
+  reviewedAt: "2026-07-11"
+  visibility: public
+
+- id: ear:vaste-evidenced-by-validation-record
+  subject: ea:program:vaste
+  predicate: evidencedBy
+  object: ea:artefact:vaste-validation-record
+  statement: The VASTE Validation Record maps major public claims to internal contracts, implementation, tests, commits and limitations.
+  confidence: validated
+  createdAt: "2026-07-11"
+  reviewedAt: "2026-07-11"
+  visibility: public
+
+- id: ear:vast-format-evidenced-by-validation-record
+  subject: ea:concept:vast-portable-graph-format
+  predicate: evidencedBy
+  object: ea:artefact:vaste-validation-record
+  statement: The validation record documents the implemented vast/1 round-trip and its trust and compatibility limits.
+  confidence: validated
+  createdAt: "2026-07-11"
+  reviewedAt: "2026-07-11"
+  visibility: public
+
+- id: ear:vab-evidenced-by-validation-record
+  subject: ea:concept:vab-and-genesis
+  predicate: evidencedBy
+  object: ea:artefact:vaste-validation-record
+  statement: The validation record documents plan assent sealing and the internal VAB-to-vast end-to-end scenario.
+  confidence: validated
+  createdAt: "2026-07-11"
+  reviewedAt: "2026-07-11"
+  visibility: public
