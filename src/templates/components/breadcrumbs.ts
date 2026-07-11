@@ -14,8 +14,6 @@ const sectionLabel = (entity: Entity): string => {
 export const renderBreadcrumbs = (entity: Entity): string => `
   <nav class="link-row entity-breadcrumbs" aria-label="Breadcrumb">
     <a class="tag" href="/">Home</a>
-    <span aria-hidden="true">/</span>
     <span class="tag">${escapeHtml(sectionLabel(entity))}</span>
-    <span aria-hidden="true">/</span>
-    <span aria-current="page">${escapeHtml(entity.title)}</span>
+    <span class="tag entity-breadcrumbs__current" aria-current="page">${escapeHtml(entity.title)}</span>
   </nav>`;

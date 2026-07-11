@@ -7,7 +7,7 @@ export const renderLegacyRedirectPage = (title: string, routeMap: Record<string,
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="robots" content="noindex,follow" />
     <title>${escapeHtml(title)} | Electronic Artefacts</title>
-    <link rel="stylesheet" href="/assets/css/app.css?v=53" />
+    <link rel="stylesheet" href="/assets/css/app.css?v=54" />
     <script>
       (function () {
         var id = new URLSearchParams(window.location.search).get("id");

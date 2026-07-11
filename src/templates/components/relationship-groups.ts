@@ -108,7 +108,13 @@ export const renderRelationshipGroups = (
             <div class="stack">
               ${items.slice(0, condensed ? 6 : items.length).map(renderRelation).join("")}${condensed && items.length > 6 ? `
                 <details class="relationship-overflow">
-                  <summary>${entity.locale === "fr" ? `Voir ${items.length - 6} relations supplémentaires` : `Show ${items.length - 6} more relationships`}</summary>
+                  <summary>
+                    <span class="relationship-overflow__label">
+                      <span class="relationship-overflow__show">${entity.locale === "fr" ? `Voir ${items.length - 6} relations supplémentaires` : `Show ${items.length - 6} more relationships`}</span>
+                      <span class="relationship-overflow__hide">${entity.locale === "fr" ? "Masquer les relations supplémentaires" : "Hide additional relationships"}</span>
+                    </span>
+                    <span class="relationship-overflow__icon" aria-hidden="true"></span>
+                  </summary>
                   <div class="stack">${items.slice(6).map(renderRelation).join("")}</div>
                 </details>` : ""}
             </div>

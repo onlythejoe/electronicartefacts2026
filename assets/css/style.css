@@ -3003,16 +3003,22 @@ body:has(.detail-hero[data-entry-id="oeil-de-meg"])::after {
 }
 
 .entity-breadcrumb-card {
+  overflow: hidden;
   padding: clamp(0.7rem, 1.4vw, 1rem);
 }
 
 .entity-breadcrumbs {
   flex-wrap: nowrap;
-  gap: 0.55rem;
+  align-items: center;
+  gap: 0.45rem;
   overflow-x: auto;
   overflow-y: hidden;
-  padding-bottom: 0.04rem;
+  padding: 0.08rem clamp(1.25rem, 4vw, 2.25rem) 0.14rem;
+  overscroll-behavior-inline: contain;
+  scroll-snap-type: x proximity;
   scrollbar-width: none;
+  mask-image: linear-gradient(90deg, transparent 0, #000 clamp(1rem, 4vw, 2rem), #000 calc(100% - clamp(1rem, 4vw, 2rem)), transparent 100%);
+  -webkit-mask-image: linear-gradient(90deg, transparent 0, #000 clamp(1rem, 4vw, 2rem), #000 calc(100% - clamp(1rem, 4vw, 2rem)), transparent 100%);
 }
 
 .entity-breadcrumbs::-webkit-scrollbar {
@@ -3023,20 +3029,16 @@ body:has(.detail-hero[data-entry-id="oeil-de-meg"])::after {
 .entity-breadcrumbs .tag,
 .entity-breadcrumbs span {
   flex: 0 0 auto;
-}
-
-.entity-breadcrumbs > span[aria-hidden="true"] {
-  color: rgba(247, 244, 239, 0.42);
-  font-size: 0.92rem;
+  max-width: none;
+  overflow-wrap: normal;
+  scroll-snap-align: start;
+  white-space: nowrap;
 }
 
 .entity-breadcrumbs > span[aria-current="page"] {
-  max-width: min(42vw, 24rem);
-  overflow: hidden;
   color: rgba(247, 244, 239, 0.88);
   font-weight: 760;
-  text-overflow: ellipsis;
-  white-space: nowrap;
+  background: linear-gradient(180deg, rgba(125, 211, 252, 0.12), rgba(255, 255, 255, 0.035));
 }
 
 .entity-hero {
@@ -3197,19 +3199,87 @@ body:has(.detail-hero[data-entry-id="oeil-de-meg"])::after {
 }
 
 .relationship-overflow {
-  padding-top: 0.25rem;
+  padding-top: 0.35rem;
 }
 
 .relationship-overflow summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.75rem;
+  min-height: 3rem;
+  padding: 0.72rem 0.78rem 0.72rem 0.95rem;
+  border: 1px solid rgba(147, 197, 253, 0.18);
+  border-radius: var(--radius-md);
+  background:
+    linear-gradient(135deg, rgba(96, 165, 250, 0.11), rgba(255, 255, 255, 0.025)),
+    rgba(255, 255, 255, 0.018);
   cursor: pointer;
-  color: rgba(191, 219, 254, 0.82);
-  font-size: 0.78rem;
-  font-weight: 780;
-  letter-spacing: 0.035em;
+  color: rgba(219, 234, 254, 0.92);
+  font-size: 0.8rem;
+  font-weight: 790;
+  letter-spacing: 0.025em;
+  list-style: none;
+  transition: border-color 180ms ease, background 180ms ease, transform 180ms ease;
+}
+
+.relationship-overflow summary::-webkit-details-marker {
+  display: none;
+}
+
+.relationship-overflow summary:hover,
+.relationship-overflow summary:focus-visible {
+  border-color: rgba(147, 197, 253, 0.34);
+  background:
+    linear-gradient(135deg, rgba(96, 165, 250, 0.17), rgba(255, 255, 255, 0.045)),
+    rgba(255, 255, 255, 0.025);
+}
+
+.relationship-overflow__icon {
+  position: relative;
+  flex: 0 0 2rem;
+  width: 2rem;
+  height: 2rem;
+  border: 1px solid rgba(191, 219, 254, 0.2);
+  border-radius: 999px;
+  background: rgba(191, 219, 254, 0.075);
+}
+
+.relationship-overflow__icon::before,
+.relationship-overflow__icon::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 0.72rem;
+  height: 1px;
+  background: currentColor;
+  transform: translate(-50%, -50%);
+  transition: transform 180ms ease;
+}
+
+.relationship-overflow__icon::after {
+  transform: translate(-50%, -50%) rotate(90deg);
+}
+
+.relationship-overflow__hide {
+  display: none;
 }
 
 .relationship-overflow[open] summary {
   margin-bottom: 0.7rem;
+}
+
+.relationship-overflow[open] .relationship-overflow__show {
+  display: none;
+}
+
+.relationship-overflow[open] .relationship-overflow__hide {
+  display: inline;
+}
+
+.relationship-overflow[open] .relationship-overflow__icon::after {
+  transform: translate(-50%, -50%) rotate(0deg);
 }
 
 @media (max-width: 54rem) {
@@ -14099,22 +14169,18 @@ figcaption strong,
   }
 
   .entity-breadcrumbs > span[aria-current="page"] {
-    flex: 0 0 100%;
-    width: 100%;
-    min-width: 0;
+    flex: 0 0 auto;
+    width: auto;
     max-width: none;
-    overflow: visible;
-    text-overflow: clip;
-    white-space: normal;
-    line-height: 1.32;
-    text-wrap: pretty;
+    white-space: nowrap;
   }
 
   .entity-breadcrumbs {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
     justify-content: start;
-    overflow: visible;
+    overflow-x: auto;
+    overflow-y: hidden;
   }
 }
 
