@@ -189,7 +189,7 @@
           <div class="vaste-demo__canvas-shell" data-demo-canvas-shell>
             <canvas class="vaste-demo__canvas" data-demo-canvas></canvas>
             <div class="vaste-demo__canvas-label" aria-hidden="true"><span data-demo-scene-label>RUNTIME / SYSTEM:EA</span><i data-demo-frame>0000</i></div>
-            <p class="vaste-demo__hint" data-demo-hint>Drag a Vertex · tap to inspect</p>
+            <p class="vaste-demo__hint" data-demo-hint>Drag a nucleus into a membrane to nest it</p>
           </div>
 
           <aside class="vaste-demo__inspector" aria-label="Vertex inspector">
@@ -200,6 +200,8 @@
               <div><dt>ID</dt><dd data-demo-selection-id>system:ea</dd></div>
               <div><dt>STATE</dt><dd data-demo-selection-state>OBSERVABLE</dd></div>
               <div><dt>TIES</dt><dd data-demo-selection-links>5</dd></div>
+              <div><dt>PARENT</dt><dd data-demo-selection-parent>—</dd></div>
+              <div><dt>CHILDREN</dt><dd data-demo-selection-children>2</dd></div>
             </dl>
             <p class="vaste-demo__inspector-note">This demo is a local explanatory projection, not a runtime instance or execution evidence.</p>
           </aside>
@@ -208,6 +210,7 @@
         <div class="vaste-demo__toolbar" aria-label="Graph actions">
           <button type="button" data-demo-action="add"><span aria-hidden="true">＋</span>Add Vertex</button>
           <button type="button" data-demo-action="link"><span aria-hidden="true">⌁</span><span data-demo-link-label>Connect</span></button>
+          <button type="button" data-demo-action="detach"><span aria-hidden="true">↗</span>Detach</button>
           <button type="button" data-demo-action="links" aria-pressed="true"><span aria-hidden="true">⌘</span><span data-demo-links-label>Ties visible</span></button>
           <button type="button" data-demo-action="reset"><span aria-hidden="true">↺</span>Reset</button>
           <span class="vaste-demo__live" data-demo-live aria-live="polite"></span>

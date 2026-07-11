@@ -19,7 +19,7 @@ version:
   publishedAt: "2026-01-01"
   modifiedAt: "2026-07-12"
   reviewedAt: "2026-07-12"
-  changeSummary: Added a responsive interactive Surface for exploring runtime, portability and Assisted Boot concepts.
+  changeSummary: Added a responsive interactive Surface with recursive Vertex containment, runtime, portability and Assisted Boot projections.
 authors:
   - id: ea:organization:electronic-artefacts
 publisher: ea:organization:electronic-artefacts

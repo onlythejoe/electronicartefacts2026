@@ -255,6 +255,7 @@
 .vaste-demo__toolbar button { flex: 0 0 auto; display: inline-flex; align-items: center; gap: 0.4rem; padding: 0.62rem 0.72rem; border-radius: 0.5rem; }
 .vaste-demo__toolbar button[aria-pressed="true"] { color: rgba(var(--demo-mint), 0.9); border-color: rgba(var(--demo-mint), 0.26); }
 .vaste-demo__toolbar button.is-active { color: #fff; border-color: rgba(var(--demo-violet), 0.6); background: rgba(var(--demo-violet), 0.1); }
+.vaste-demo__toolbar button:disabled { opacity: 0.32; cursor: not-allowed; border-color: rgba(255, 255, 255, 0.08); background: transparent; }
 .vaste-demo__live { margin-left: auto; flex: 0 0 auto; padding: 0 0.35rem; color: rgba(255, 255, 255, 0.34); font: 500 0.6rem/1.2 var(--font-mono, monospace); }
 
 @media (max-width: 820px) {

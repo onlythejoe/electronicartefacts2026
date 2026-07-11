@@ -16,6 +16,10 @@ test("the VASTE dossier publishes a responsive interactive graph surface", async
   assert.match(template, /projection pédagogique locale/);
   assert.match(template, /local explanatory projection/);
   assert.match(runtime, /pointerdown/);
+  assert.match(runtime, /attachChild/);
+  assert.match(runtime, /detachChild/);
+  assert.match(runtime, /isDescendant/);
+  assert.match(runtime, /parentId/);
   assert.match(runtime, /ResizeObserver/);
   assert.match(runtime, /prefers-reduced-motion/);
   assert.match(styles, /@media \(max-width: 820px\)/);

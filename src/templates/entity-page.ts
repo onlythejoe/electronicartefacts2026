@@ -145,7 +145,7 @@ const renderVasteGraphDemo = (entity: Entity): string => {
           <div class="vaste-demo__canvas-shell" data-demo-canvas-shell>
             <canvas class="vaste-demo__canvas" data-demo-canvas></canvas>
             <div class="vaste-demo__canvas-label" aria-hidden="true"><span data-demo-scene-label>RUNTIME / SYSTEM:EA</span><i data-demo-frame>0000</i></div>
-            <p class="vaste-demo__hint" data-demo-hint>${french ? "Glissez un Vertex · touchez pour l’inspecter" : "Drag a Vertex · tap to inspect"}</p>
+            <p class="vaste-demo__hint" data-demo-hint>${french ? "Glissez un noyau dans une membrane pour l’imbriquer" : "Drag a nucleus into a membrane to nest it"}</p>
           </div>
 
           <aside class="vaste-demo__inspector" aria-label="${french ? "Inspecteur de Vertex" : "Vertex inspector"}">
@@ -156,6 +156,8 @@ const renderVasteGraphDemo = (entity: Entity): string => {
               <div><dt>ID</dt><dd data-demo-selection-id>system:ea</dd></div>
               <div><dt>${french ? "ÉTAT" : "STATE"}</dt><dd data-demo-selection-state>${french ? "OBSERVABLE" : "OBSERVABLE"}</dd></div>
               <div><dt>${french ? "LIENS" : "TIES"}</dt><dd data-demo-selection-links>5</dd></div>
+              <div><dt>${french ? "PARENT" : "PARENT"}</dt><dd data-demo-selection-parent>—</dd></div>
+              <div><dt>${french ? "CONTENU" : "CHILDREN"}</dt><dd data-demo-selection-children>2</dd></div>
             </dl>
             <p class="vaste-demo__inspector-note">${french
               ? "Cette démo est une projection pédagogique locale, pas une instance du runtime ni une preuve d’exécution."
@@ -166,6 +168,7 @@ const renderVasteGraphDemo = (entity: Entity): string => {
         <div class="vaste-demo__toolbar" aria-label="${french ? "Actions sur le graphe" : "Graph actions"}">
           <button type="button" data-demo-action="add"><span aria-hidden="true">＋</span>${french ? "Ajouter un Vertex" : "Add Vertex"}</button>
           <button type="button" data-demo-action="link"><span aria-hidden="true">⌁</span><span data-demo-link-label>${french ? "Relier" : "Connect"}</span></button>
+          <button type="button" data-demo-action="detach"><span aria-hidden="true">↗</span>${french ? "Détacher" : "Detach"}</button>
           <button type="button" data-demo-action="links" aria-pressed="true"><span aria-hidden="true">⌘</span><span data-demo-links-label>${french ? "Liens visibles" : "Ties visible"}</span></button>
           <button type="button" data-demo-action="reset"><span aria-hidden="true">↺</span>${french ? "Réinitialiser" : "Reset"}</button>
           <span class="vaste-demo__live" data-demo-live aria-live="polite"></span>

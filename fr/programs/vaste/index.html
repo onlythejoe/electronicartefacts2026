@@ -189,7 +189,7 @@
           <div class="vaste-demo__canvas-shell" data-demo-canvas-shell>
             <canvas class="vaste-demo__canvas" data-demo-canvas></canvas>
             <div class="vaste-demo__canvas-label" aria-hidden="true"><span data-demo-scene-label>RUNTIME / SYSTEM:EA</span><i data-demo-frame>0000</i></div>
-            <p class="vaste-demo__hint" data-demo-hint>Glissez un Vertex · touchez pour l’inspecter</p>
+            <p class="vaste-demo__hint" data-demo-hint>Glissez un noyau dans une membrane pour l’imbriquer</p>
           </div>
 
           <aside class="vaste-demo__inspector" aria-label="Inspecteur de Vertex">
@@ -200,6 +200,8 @@
               <div><dt>ID</dt><dd data-demo-selection-id>system:ea</dd></div>
               <div><dt>ÉTAT</dt><dd data-demo-selection-state>OBSERVABLE</dd></div>
               <div><dt>LIENS</dt><dd data-demo-selection-links>5</dd></div>
+              <div><dt>PARENT</dt><dd data-demo-selection-parent>—</dd></div>
+              <div><dt>CONTENU</dt><dd data-demo-selection-children>2</dd></div>
             </dl>
             <p class="vaste-demo__inspector-note">Cette démo est une projection pédagogique locale, pas une instance du runtime ni une preuve d’exécution.</p>
           </aside>
@@ -208,6 +210,7 @@
         <div class="vaste-demo__toolbar" aria-label="Actions sur le graphe">
           <button type="button" data-demo-action="add"><span aria-hidden="true">＋</span>Ajouter un Vertex</button>
           <button type="button" data-demo-action="link"><span aria-hidden="true">⌁</span><span data-demo-link-label>Relier</span></button>
+          <button type="button" data-demo-action="detach"><span aria-hidden="true">↗</span>Détacher</button>
           <button type="button" data-demo-action="links" aria-pressed="true"><span aria-hidden="true">⌘</span><span data-demo-links-label>Liens visibles</span></button>
           <button type="button" data-demo-action="reset"><span aria-hidden="true">↺</span>Réinitialiser</button>
           <span class="vaste-demo__live" data-demo-live aria-live="polite"></span>
