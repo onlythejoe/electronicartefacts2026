@@ -1,0 +1,90 @@
+{
+  "id": "ea:concept:vab-and-genesis",
+  "type": "concept",
+  "slug": {
+    "canonical": "vab-and-genesis"
+  },
+  "title": "VAB and Genesis",
+  "definition": "VAB is VASTE’s Assisted Boot orchestration path for understanding an initial intent, composing a sealed plan, admitting a Founding Actor and materializing a governed starting graph.",
+  "abstract": "What VAB currently implements, how explicit assent seals a boot plan, and what remains before a complete Electronic Artefacts Genesis handover.",
+  "description": "A maturity-aware guide to VASTE Assisted Boot, Founding Actor admission, composition and Genesis.",
+  "locale": "en",
+  "visibility": "public",
+  "publicationClass": "canonical",
+  "status": "experimental",
+  "maturity": "prototype",
+  "confidence": "validated",
+  "version": {
+    "version": "1.0.0",
+    "createdAt": "2026-07-11",
+    "publishedAt": "2026-07-11",
+    "modifiedAt": "2026-07-11"
+  },
+  "authors": [
+    {
+      "id": "ea:organization:electronic-artefacts"
+    }
+  ],
+  "publisher": "ea:organization:electronic-artefacts",
+  "tags": [
+    "VASTE",
+    "VAB",
+    "Assisted Boot",
+    "Genesis"
+  ],
+  "disciplines": [
+    "Runtime Systems",
+    "Human Computer Interaction"
+  ],
+  "scope": [
+    "Assisted Boot conversation",
+    "Cognition and planning",
+    "Founding Actor",
+    "Assent seal",
+    "Genesis trajectory"
+  ],
+  "exclusions": [
+    "Permanent assistant",
+    "Fully autonomous deployment",
+    "Demonstrated production handover"
+  ],
+  "claims": [
+    "Boot composition requires explicit assent to the exact plan hash.",
+    "A VAB-born System has been exported and imported as a .vast package in an internal E2E test."
+  ],
+  "bodyHtml": "<h2 id=\"role\">Role</h2>\n<p>VAB is a boot orchestrator and conversational Surface, not another runtime and not necessarily the permanent assistant after boot. Its task is to turn first intent into an inspectable proposal, secure assent to the exact declarative plan, and invoke runtime-owned creation paths.</p>\n<h2 id=\"current-path\">Current path</h2>\n<p>The repository implements conversation sessions, cognitive state composition, heuristic fallback and configured model invocation, streaming output, speech affordances, extension selection, Founding Actor admission, restart reconciliation and a web boot Surface. A boot plan carries an <code>assentedPlanHash</code>; changing the plan after assent invalidates the seal.</p>\n<p>The working sequence is:</p>\n<pre><code class=\"language-text\">conversation → interpreted needs → graph and extension proposal\n→ explicit assent seal → governed creation → living System Surface\n</code></pre>\n<p>Internal E2E validation continues from a born System to <code>.vast</code> export, fresh import and stable package identity.</p>\n<h2 id=\"founding-actor\">Founding Actor</h2>\n<p>The Founding Actor is the first admitted human identity for the born System. This does not make the Actor universally omnipotent. Credentials, session admission, capabilities and graph governance remain separate runtime checks.</p>\n<h2 id=\"genesis-versus-implementation\">Genesis versus implementation</h2>\n<p>Genesis names the governed birth of a useful System. Electronic Artefacts Genesis would additionally require organizational root data, governance, registries, operational Surfaces, durable recovery and an approved handover into a candidate Environment. The repository provides important pieces but does not yet demonstrate that complete operational loop.</p>\n<h2 id=\"remaining-thresholds\">Remaining thresholds</h2>\n<ul>\n<li>durable and reviewable provisioning across failures;</li>\n<li>explicit rollback and recovery behavior;</li>\n<li>local credential and authority rebinding after import;</li>\n<li>security review of model, extension and package trust boundaries;</li>\n<li>one real EA graph operated, exported, revalidated and handed over without authority bypass.</li>\n</ul>\n",
+  "headings": [
+    "Role",
+    "Current path",
+    "Founding Actor",
+    "Genesis versus implementation",
+    "Remaining thresholds"
+  ],
+  "headingItems": [
+    {
+      "level": 2,
+      "title": "Role",
+      "id": "role"
+    },
+    {
+      "level": 2,
+      "title": "Current path",
+      "id": "current-path"
+    },
+    {
+      "level": 2,
+      "title": "Founding Actor",
+      "id": "founding-actor"
+    },
+    {
+      "level": 2,
+      "title": "Genesis versus implementation",
+      "id": "genesis-versus-implementation"
+    },
+    {
+      "level": 2,
+      "title": "Remaining thresholds",
+      "id": "remaining-thresholds"
+    }
+  ]
+}

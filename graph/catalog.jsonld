@@ -55,12 +55,12 @@
         {
           "@type": "PropertyValue",
           "name": "publicRecords",
-          "value": 232
+          "value": 244
         },
         {
           "@type": "PropertyValue",
           "name": "publicRelations",
-          "value": 310
+          "value": 318
         }
       ],
       "includedInDataCatalog": {
@@ -74,7 +74,7 @@
       "@type": "ItemList",
       "@id": "https://electronicartefacts.com/graph/catalog.jsonld#records",
       "name": "Electronic Artefacts public records",
-      "numberOfItems": 232,
+      "numberOfItems": 244,
       "itemListElement": [
         {
           "@type": "ListItem",
@@ -88,6 +88,24 @@
         {
           "@type": "ListItem",
           "position": 2,
+          "name": "Registre des validations VASTE",
+          "url": "https://electronicartefacts.com/fr/archive/artefacts/vaste-validation-record/",
+          "item": {
+            "@id": "https://electronicartefacts.com/fr/id/artefact/vaste-validation-record/"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "VASTE Validation Record",
+          "url": "https://electronicartefacts.com/archive/artefacts/vaste-validation-record/",
+          "item": {
+            "@id": "https://electronicartefacts.com/id/artefact/vaste-validation-record/"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
           "name": "Voice Capture Studio Repository",
           "url": "https://electronicartefacts.com/archive/artefacts/voice-capture-studio-repository/",
           "item": {
@@ -96,7 +114,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 3,
+          "position": 5,
           "name": "Collection Voice Capture Studio",
           "url": "https://electronicartefacts.com/fr/archive/collections/voice-capture-studio/",
           "item": {
@@ -105,7 +123,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 4,
+          "position": 6,
           "name": "Fondations du hub de connaissance",
           "url": "https://electronicartefacts.com/fr/archive/collections/knowledge-hub-foundations/",
           "item": {
@@ -114,7 +132,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 5,
+          "position": 7,
           "name": "Hub de connaissance, deuxième vague",
           "url": "https://electronicartefacts.com/fr/archive/collections/knowledge-hub-second-wave/",
           "item": {
@@ -123,7 +141,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 6,
+          "position": 8,
           "name": "Hub de connaissance, quatrième vague",
           "url": "https://electronicartefacts.com/fr/archive/collections/knowledge-hub-fourth-wave/",
           "item": {
@@ -132,7 +150,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 7,
+          "position": 9,
           "name": "Hub de connaissance, troisième vague",
           "url": "https://electronicartefacts.com/fr/archive/collections/knowledge-hub-third-wave/",
           "item": {
@@ -141,7 +159,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 8,
+          "position": 10,
           "name": "Knowledge Hub Foundations",
           "url": "https://electronicartefacts.com/archive/collections/knowledge-hub-foundations/",
           "item": {
@@ -150,7 +168,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 9,
+          "position": 11,
           "name": "Knowledge Hub Fourth Wave",
           "url": "https://electronicartefacts.com/archive/collections/knowledge-hub-fourth-wave/",
           "item": {
@@ -159,7 +177,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 10,
+          "position": 12,
           "name": "Knowledge Hub Second Wave",
           "url": "https://electronicartefacts.com/archive/collections/knowledge-hub-second-wave/",
           "item": {
@@ -168,7 +186,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 11,
+          "position": 13,
           "name": "Knowledge Hub Third Wave",
           "url": "https://electronicartefacts.com/archive/collections/knowledge-hub-third-wave/",
           "item": {
@@ -177,7 +195,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 12,
+          "position": 14,
           "name": "Voice Capture Studio Collection",
           "url": "https://electronicartefacts.com/archive/collections/voice-capture-studio/",
           "item": {
@@ -186,7 +204,25 @@
         },
         {
           "@type": "ListItem",
-          "position": 13,
+          "position": 15,
+          "name": ".vast Portable Graph Format",
+          "url": "https://electronicartefacts.com/knowledge/concepts/vast-portable-graph-format/",
+          "item": {
+            "@id": "https://electronicartefacts.com/id/concept/vast-portable-graph-format/"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 16,
+          "name": "Actors situés et gouvernance topologique",
+          "url": "https://electronicartefacts.com/fr/knowledge/concepts/situated-actors-and-governance/",
+          "item": {
+            "@id": "https://electronicartefacts.com/fr/id/concept/situated-actors-and-governance/"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 17,
           "name": "Agent d'IA",
           "url": "https://electronicartefacts.com/fr/knowledge/concepts/ai-agent/",
           "item": {
@@ -195,7 +231,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 14,
+          "position": 18,
           "name": "AI Agent",
           "url": "https://electronicartefacts.com/knowledge/concepts/ai-agent/",
           "item": {
@@ -204,7 +240,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 15,
+          "position": 19,
           "name": "Algorithmic Composition",
           "url": "https://electronicartefacts.com/knowledge/concepts/algorithmic-composition/",
           "item": {
@@ -213,7 +249,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 16,
+          "position": 20,
           "name": "Archéologie du signal",
           "url": "https://electronicartefacts.com/fr/knowledge/concepts/signal-archaeology/",
           "item": {
@@ -222,7 +258,16 @@
         },
         {
           "@type": "ListItem",
-          "position": 17,
+          "position": 21,
+          "name": "Architecture d’extensions VASTE",
+          "url": "https://electronicartefacts.com/fr/knowledge/concepts/vaste-extension-architecture/",
+          "item": {
+            "@id": "https://electronicartefacts.com/fr/id/concept/vaste-extension-architecture/"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 22,
           "name": "Architecture de microservices",
           "url": "https://electronicartefacts.com/fr/knowledge/concepts/microservice-architecture/",
           "item": {
@@ -231,7 +276,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 18,
+          "position": 23,
           "name": "Architecture événementielle",
           "url": "https://electronicartefacts.com/fr/knowledge/concepts/event-driven-architecture/",
           "item": {
@@ -240,7 +285,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 19,
+          "position": 24,
           "name": "Audio web",
           "url": "https://electronicartefacts.com/fr/knowledge/concepts/web-audio/",
           "item": {
@@ -249,7 +294,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 20,
+          "position": 25,
           "name": "Augmented Intelligence",
           "url": "https://electronicartefacts.com/knowledge/concepts/augmented-intelligence/",
           "item": {
@@ -258,7 +303,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 21,
+          "position": 26,
           "name": "Autonomous System",
           "url": "https://electronicartefacts.com/knowledge/concepts/autonomous-system/",
           "item": {
@@ -267,7 +312,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 22,
+          "position": 27,
           "name": "Browser Software",
           "url": "https://electronicartefacts.com/knowledge/concepts/browser-software/",
           "item": {
@@ -276,7 +321,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 23,
+          "position": 28,
           "name": "Composition algorithmique",
           "url": "https://electronicartefacts.com/fr/knowledge/concepts/algorithmic-composition/",
           "item": {
@@ -285,7 +330,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 24,
+          "position": 29,
           "name": "Contextual Execution",
           "url": "https://electronicartefacts.com/knowledge/concepts/contextual-execution/",
           "item": {
@@ -294,7 +339,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 25,
+          "position": 30,
           "name": "Creative Coding",
           "url": "https://electronicartefacts.com/knowledge/concepts/creative-coding/",
           "item": {
@@ -303,7 +348,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 26,
+          "position": 31,
           "name": "Culture Internet",
           "url": "https://electronicartefacts.com/fr/knowledge/concepts/internet-culture/",
           "item": {
@@ -312,7 +357,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 27,
+          "position": 32,
           "name": "Cybernetic Feedback",
           "url": "https://electronicartefacts.com/knowledge/concepts/cybernetic-feedback/",
           "item": {
@@ -321,7 +366,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 28,
+          "position": 33,
           "name": "Digital Preservation",
           "url": "https://electronicartefacts.com/knowledge/concepts/digital-preservation/",
           "item": {
@@ -330,7 +375,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 29,
+          "position": 34,
           "name": "Domain Operating System",
           "url": "https://electronicartefacts.com/knowledge/concepts/domain-operating-system/",
           "item": {
@@ -339,7 +384,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 30,
+          "position": 35,
           "name": "Données liées",
           "url": "https://electronicartefacts.com/fr/knowledge/concepts/linked-data/",
           "item": {
@@ -348,7 +393,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 31,
+          "position": 36,
           "name": "Enregistrement vocal",
           "url": "https://electronicartefacts.com/fr/knowledge/concepts/speech-recording/",
           "item": {
@@ -357,7 +402,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 32,
+          "position": 37,
           "name": "Entity Identity",
           "url": "https://electronicartefacts.com/knowledge/concepts/entity-identity/",
           "item": {
@@ -366,7 +411,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 33,
+          "position": 38,
           "name": "Event-Driven Architecture",
           "url": "https://electronicartefacts.com/knowledge/concepts/event-driven-architecture/",
           "item": {
@@ -375,7 +420,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 34,
+          "position": 39,
           "name": "Exécution contextuelle",
           "url": "https://electronicartefacts.com/fr/knowledge/concepts/contextual-execution/",
           "item": {
@@ -384,7 +429,16 @@
         },
         {
           "@type": "ListItem",
-          "position": 35,
+          "position": 40,
+          "name": "Format de graphe portable .vast",
+          "url": "https://electronicartefacts.com/fr/knowledge/concepts/vast-portable-graph-format/",
+          "item": {
+            "@id": "https://electronicartefacts.com/fr/id/concept/vast-portable-graph-format/"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 41,
           "name": "Génération augmentée par récupération",
           "url": "https://electronicartefacts.com/fr/knowledge/concepts/retrieval-augmented-generation/",
           "item": {
@@ -393,7 +447,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 36,
+          "position": 42,
           "name": "Generative AI",
           "url": "https://electronicartefacts.com/knowledge/concepts/generative-ai/",
           "item": {
@@ -402,7 +456,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 37,
+          "position": 43,
           "name": "Generative System",
           "url": "https://electronicartefacts.com/knowledge/concepts/generative-system/",
           "item": {
@@ -411,7 +465,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 38,
+          "position": 44,
           "name": "Grand modèle de langage",
           "url": "https://electronicartefacts.com/fr/knowledge/concepts/large-language-model/",
           "item": {
@@ -420,7 +474,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 39,
+          "position": 45,
           "name": "Graph Modeling",
           "url": "https://electronicartefacts.com/knowledge/concepts/graph-modeling/",
           "item": {
@@ -429,7 +483,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 40,
+          "position": 46,
           "name": "Graph Runtime",
           "url": "https://electronicartefacts.com/knowledge/concepts/graph-runtime/",
           "item": {
@@ -438,7 +492,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 41,
+          "position": 47,
           "name": "Graphe de connaissances",
           "url": "https://electronicartefacts.com/fr/knowledge/concepts/knowledge-graph/",
           "item": {
@@ -447,7 +501,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 42,
+          "position": 48,
           "name": "Graphisme procédural",
           "url": "https://electronicartefacts.com/fr/knowledge/concepts/procedural-graphics/",
           "item": {
@@ -456,7 +510,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 43,
+          "position": 49,
           "name": "Human Computer Interaction",
           "url": "https://electronicartefacts.com/knowledge/concepts/human-computer-interaction/",
           "item": {
@@ -465,7 +519,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 44,
+          "position": 50,
           "name": "Hypertext",
           "url": "https://electronicartefacts.com/knowledge/concepts/hypertext/",
           "item": {
@@ -474,7 +528,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 45,
+          "position": 51,
           "name": "Hypertexte",
           "url": "https://electronicartefacts.com/fr/knowledge/concepts/hypertext/",
           "item": {
@@ -483,7 +537,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 46,
+          "position": 52,
           "name": "IA générative",
           "url": "https://electronicartefacts.com/fr/knowledge/concepts/generative-ai/",
           "item": {
@@ -492,7 +546,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 47,
+          "position": 53,
           "name": "IA multimodale",
           "url": "https://electronicartefacts.com/fr/knowledge/concepts/multimodal-ai/",
           "item": {
@@ -501,7 +555,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 48,
+          "position": 54,
           "name": "Identité d'entité",
           "url": "https://electronicartefacts.com/fr/knowledge/concepts/entity-identity/",
           "item": {
@@ -510,7 +564,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 49,
+          "position": 55,
           "name": "Intelligence augmentée",
           "url": "https://electronicartefacts.com/fr/knowledge/concepts/augmented-intelligence/",
           "item": {
@@ -519,7 +573,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 50,
+          "position": 56,
           "name": "Interaction humain-machine",
           "url": "https://electronicartefacts.com/fr/knowledge/concepts/human-computer-interaction/",
           "item": {
@@ -528,7 +582,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 51,
+          "position": 57,
           "name": "Internet Culture",
           "url": "https://electronicartefacts.com/knowledge/concepts/internet-culture/",
           "item": {
@@ -537,7 +591,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 52,
+          "position": 58,
           "name": "Jeux de données vocales",
           "url": "https://electronicartefacts.com/fr/knowledge/concepts/speech-datasets/",
           "item": {
@@ -546,7 +600,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 53,
+          "position": 59,
           "name": "Knowledge Graph",
           "url": "https://electronicartefacts.com/knowledge/concepts/knowledge-graph/",
           "item": {
@@ -555,7 +609,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 54,
+          "position": 60,
           "name": "Large Language Model",
           "url": "https://electronicartefacts.com/knowledge/concepts/large-language-model/",
           "item": {
@@ -564,7 +618,16 @@
         },
         {
           "@type": "ListItem",
-          "position": 55,
+          "position": 61,
+          "name": "Les cinq primitives de VASTE",
+          "url": "https://electronicartefacts.com/fr/knowledge/concepts/vaste-five-primitives/",
+          "item": {
+            "@id": "https://electronicartefacts.com/fr/id/concept/vaste-five-primitives/"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 62,
           "name": "Linked Data",
           "url": "https://electronicartefacts.com/knowledge/concepts/linked-data/",
           "item": {
@@ -573,7 +636,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 56,
+          "position": 63,
           "name": "Logiciel de navigateur",
           "url": "https://electronicartefacts.com/fr/knowledge/concepts/browser-software/",
           "item": {
@@ -582,7 +645,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 57,
+          "position": 64,
           "name": "Machine Learning Workflows",
           "url": "https://electronicartefacts.com/knowledge/concepts/machine-learning-workflows/",
           "item": {
@@ -591,7 +654,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 58,
+          "position": 65,
           "name": "Metadata",
           "url": "https://electronicartefacts.com/knowledge/concepts/metadata/",
           "item": {
@@ -600,7 +663,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 59,
+          "position": 66,
           "name": "Métadonnées",
           "url": "https://electronicartefacts.com/fr/knowledge/concepts/metadata/",
           "item": {
@@ -609,7 +672,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 60,
+          "position": 67,
           "name": "Microservice Architecture",
           "url": "https://electronicartefacts.com/knowledge/concepts/microservice-architecture/",
           "item": {
@@ -618,7 +681,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 61,
+          "position": 68,
           "name": "Modèle à poids ouverts",
           "url": "https://electronicartefacts.com/fr/knowledge/concepts/open-weight-model/",
           "item": {
@@ -627,7 +690,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 62,
+          "position": 69,
           "name": "Modélisation de graphe",
           "url": "https://electronicartefacts.com/fr/knowledge/concepts/graph-modeling/",
           "item": {
@@ -636,7 +699,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 63,
+          "position": 70,
           "name": "Motion design",
           "url": "https://electronicartefacts.com/fr/knowledge/concepts/motion-design/",
           "item": {
@@ -645,7 +708,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 64,
+          "position": 71,
           "name": "Motion Design",
           "url": "https://electronicartefacts.com/knowledge/concepts/motion-design/",
           "item": {
@@ -654,7 +717,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 65,
+          "position": 72,
           "name": "Multimodal AI",
           "url": "https://electronicartefacts.com/knowledge/concepts/multimodal-ai/",
           "item": {
@@ -663,7 +726,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 66,
+          "position": 73,
           "name": "Ontologie",
           "url": "https://electronicartefacts.com/fr/knowledge/concepts/ontology/",
           "item": {
@@ -672,7 +735,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 67,
+          "position": 74,
           "name": "Ontology",
           "url": "https://electronicartefacts.com/knowledge/concepts/ontology/",
           "item": {
@@ -681,7 +744,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 68,
+          "position": 75,
           "name": "open source",
           "url": "https://electronicartefacts.com/fr/knowledge/concepts/open-source/",
           "item": {
@@ -690,7 +753,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 69,
+          "position": 76,
           "name": "Open Source",
           "url": "https://electronicartefacts.com/knowledge/concepts/open-source/",
           "item": {
@@ -699,7 +762,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 70,
+          "position": 77,
           "name": "Open-Weight Model",
           "url": "https://electronicartefacts.com/knowledge/concepts/open-weight-model/",
           "item": {
@@ -708,7 +771,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 71,
+          "position": 78,
           "name": "Pensée systémique",
           "url": "https://electronicartefacts.com/fr/knowledge/concepts/systems-thinking/",
           "item": {
@@ -717,7 +780,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 72,
+          "position": 79,
           "name": "Personal Knowledge System",
           "url": "https://electronicartefacts.com/knowledge/concepts/personal-knowledge-system/",
           "item": {
@@ -726,7 +789,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 73,
+          "position": 80,
           "name": "Préservation numérique",
           "url": "https://electronicartefacts.com/fr/knowledge/concepts/digital-preservation/",
           "item": {
@@ -735,7 +798,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 74,
+          "position": 81,
           "name": "Procedural Graphics",
           "url": "https://electronicartefacts.com/knowledge/concepts/procedural-graphics/",
           "item": {
@@ -744,7 +807,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 75,
+          "position": 82,
           "name": "Programmation créative",
           "url": "https://electronicartefacts.com/fr/knowledge/concepts/creative-coding/",
           "item": {
@@ -753,7 +816,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 76,
+          "position": 83,
           "name": "Provenance",
           "url": "https://electronicartefacts.com/knowledge/concepts/provenance/",
           "item": {
@@ -762,7 +825,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 77,
+          "position": 84,
           "name": "Provenance",
           "url": "https://electronicartefacts.com/fr/knowledge/concepts/provenance/",
           "item": {
@@ -771,7 +834,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 78,
+          "position": 85,
           "name": "Retrieval-Augmented Generation",
           "url": "https://electronicartefacts.com/knowledge/concepts/retrieval-augmented-generation/",
           "item": {
@@ -780,7 +843,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 79,
+          "position": 86,
           "name": "Rétroaction cybernétique",
           "url": "https://electronicartefacts.com/fr/knowledge/concepts/cybernetic-feedback/",
           "item": {
@@ -789,7 +852,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 80,
+          "position": 87,
           "name": "Runtime de graphe",
           "url": "https://electronicartefacts.com/fr/knowledge/concepts/graph-runtime/",
           "item": {
@@ -798,7 +861,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 81,
+          "position": 88,
           "name": "Signal Archaeology",
           "url": "https://electronicartefacts.com/knowledge/concepts/signal-archaeology/",
           "item": {
@@ -807,7 +870,16 @@
         },
         {
           "@type": "ListItem",
-          "position": 82,
+          "position": 89,
+          "name": "Situated Actors and Topological Governance",
+          "url": "https://electronicartefacts.com/knowledge/concepts/situated-actors-and-governance/",
+          "item": {
+            "@id": "https://electronicartefacts.com/id/concept/situated-actors-and-governance/"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 90,
           "name": "Speech Datasets",
           "url": "https://electronicartefacts.com/knowledge/concepts/speech-datasets/",
           "item": {
@@ -816,7 +888,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 83,
+          "position": 91,
           "name": "Speech Recording",
           "url": "https://electronicartefacts.com/knowledge/concepts/speech-recording/",
           "item": {
@@ -825,7 +897,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 84,
+          "position": 92,
           "name": "Système autonome",
           "url": "https://electronicartefacts.com/fr/knowledge/concepts/autonomous-system/",
           "item": {
@@ -834,7 +906,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 85,
+          "position": 93,
           "name": "Système d'exploitation de domaine",
           "url": "https://electronicartefacts.com/fr/knowledge/concepts/domain-operating-system/",
           "item": {
@@ -843,7 +915,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 86,
+          "position": 94,
           "name": "Système génératif",
           "url": "https://electronicartefacts.com/fr/knowledge/concepts/generative-system/",
           "item": {
@@ -852,7 +924,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 87,
+          "position": 95,
           "name": "Système personnel de connaissance",
           "url": "https://electronicartefacts.com/fr/knowledge/concepts/personal-knowledge-system/",
           "item": {
@@ -861,7 +933,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 88,
+          "position": 96,
           "name": "Systems Thinking",
           "url": "https://electronicartefacts.com/knowledge/concepts/systems-thinking/",
           "item": {
@@ -870,7 +942,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 89,
+          "position": 97,
           "name": "Technologie vocale",
           "url": "https://electronicartefacts.com/fr/knowledge/concepts/voice-technology/",
           "item": {
@@ -879,7 +951,16 @@
         },
         {
           "@type": "ListItem",
-          "position": 90,
+          "position": 98,
+          "name": "The Five VASTE Primitives",
+          "url": "https://electronicartefacts.com/knowledge/concepts/vaste-five-primitives/",
+          "item": {
+            "@id": "https://electronicartefacts.com/id/concept/vaste-five-primitives/"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 99,
           "name": "Typographie",
           "url": "https://electronicartefacts.com/fr/knowledge/concepts/typography/",
           "item": {
@@ -888,7 +969,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 91,
+          "position": 100,
           "name": "Typography",
           "url": "https://electronicartefacts.com/knowledge/concepts/typography/",
           "item": {
@@ -897,7 +978,34 @@
         },
         {
           "@type": "ListItem",
-          "position": 92,
+          "position": 101,
+          "name": "VAB and Genesis",
+          "url": "https://electronicartefacts.com/knowledge/concepts/vab-and-genesis/",
+          "item": {
+            "@id": "https://electronicartefacts.com/id/concept/vab-and-genesis/"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 102,
+          "name": "VAB et Genesis",
+          "url": "https://electronicartefacts.com/fr/knowledge/concepts/vab-and-genesis/",
+          "item": {
+            "@id": "https://electronicartefacts.com/fr/id/concept/vab-and-genesis/"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 103,
+          "name": "VASTE Extension Architecture",
+          "url": "https://electronicartefacts.com/knowledge/concepts/vaste-extension-architecture/",
+          "item": {
+            "@id": "https://electronicartefacts.com/id/concept/vaste-extension-architecture/"
+          }
+        },
+        {
+          "@type": "ListItem",
+          "position": 104,
           "name": "Voice Technology",
           "url": "https://electronicartefacts.com/knowledge/concepts/voice-technology/",
           "item": {
@@ -906,7 +1014,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 93,
+          "position": 105,
           "name": "Web Audio",
           "url": "https://electronicartefacts.com/knowledge/concepts/web-audio/",
           "item": {
@@ -915,7 +1023,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 94,
+          "position": 106,
           "name": "Workflows de machine learning",
           "url": "https://electronicartefacts.com/fr/knowledge/concepts/machine-learning-workflows/",
           "item": {
@@ -924,7 +1032,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 95,
+          "position": 107,
           "name": "Electronic Artefacts Lightweight Template",
           "url": "https://electronicartefacts.com/fr/knowledge/frameworks/electronic-artefacts-lightweight-template/",
           "item": {
@@ -933,7 +1041,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 96,
+          "position": 108,
           "name": "Electronic Artefacts Lightweight Template",
           "url": "https://electronicartefacts.com/knowledge/frameworks/electronic-artefacts-lightweight-template/",
           "item": {
@@ -942,7 +1050,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 97,
+          "position": 109,
           "name": "Electronic Artefacts",
           "url": "https://electronicartefacts.com/fr/organizations/electronic-artefacts/",
           "item": {
@@ -951,7 +1059,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 98,
+          "position": 110,
           "name": "Electronic Artefacts",
           "url": "https://electronicartefacts.com/organizations/electronic-artefacts/",
           "item": {
@@ -960,7 +1068,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 99,
+          "position": 111,
           "name": "ORETH",
           "url": "https://electronicartefacts.com/fr/programs/oreth/",
           "item": {
@@ -969,7 +1077,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 100,
+          "position": 112,
           "name": "ORETH",
           "url": "https://electronicartefacts.com/programs/oreth/",
           "item": {
@@ -978,7 +1086,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 101,
+          "position": 113,
           "name": "VASTE",
           "url": "https://electronicartefacts.com/fr/programs/vaste/",
           "item": {
@@ -987,7 +1095,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 102,
+          "position": 114,
           "name": "VASTE",
           "url": "https://electronicartefacts.com/programs/vaste/",
           "item": {
@@ -996,7 +1104,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 103,
+          "position": 115,
           "name": "Palimpsests",
           "url": "https://electronicartefacts.com/fr/projects/palimpsests/",
           "item": {
@@ -1005,7 +1113,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 104,
+          "position": 116,
           "name": "Palimpsests",
           "url": "https://electronicartefacts.com/projects/palimpsests/",
           "item": {
@@ -1014,7 +1122,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 105,
+          "position": 117,
           "name": "V6",
           "url": "https://electronicartefacts.com/fr/projects/v6/",
           "item": {
@@ -1023,7 +1131,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 106,
+          "position": 118,
           "name": "V6",
           "url": "https://electronicartefacts.com/projects/v6/",
           "item": {
@@ -1032,7 +1140,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 107,
+          "position": 119,
           "name": "Voice Capture Studio",
           "url": "https://electronicartefacts.com/fr/projects/voice-capture-studio/",
           "item": {
@@ -1041,7 +1149,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 108,
+          "position": 120,
           "name": "Voice Capture Studio",
           "url": "https://electronicartefacts.com/projects/voice-capture-studio/",
           "item": {
@@ -1050,7 +1158,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 109,
+          "position": 121,
           "name": "Agents d'IA et workflows d'IA",
           "url": "https://electronicartefacts.com/fr/publications/ai-agents-vs-ai-workflows/",
           "item": {
@@ -1059,7 +1167,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 110,
+          "position": 122,
           "name": "AI Agents vs AI Workflows",
           "url": "https://electronicartefacts.com/publications/ai-agents-vs-ai-workflows/",
           "item": {
@@ -1068,7 +1176,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 111,
+          "position": 123,
           "name": "AI Search, Structured Content and Knowledge Graph SEO",
           "url": "https://electronicartefacts.com/publications/ai-search-structured-content-and-knowledge-graph-seo/",
           "item": {
@@ -1077,7 +1185,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 112,
+          "position": 124,
           "name": "Algorithmic Composition and Rule-Based Music",
           "url": "https://electronicartefacts.com/publications/algorithmic-composition-and-rule-based-music/",
           "item": {
@@ -1086,7 +1194,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 113,
+          "position": 125,
           "name": "Archéologie du signal, mémoire audio et écoute machine",
           "url": "https://electronicartefacts.com/fr/publications/signal-archaeology-audio-memory-and-machine-listening/",
           "item": {
@@ -1095,7 +1203,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 114,
+          "position": 126,
           "name": "Architecture événementielle et flux d'événements",
           "url": "https://electronicartefacts.com/fr/publications/event-driven-architecture-and-event-streams/",
           "item": {
@@ -1104,7 +1212,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 115,
+          "position": 127,
           "name": "C2PA Content Credentials and Generative Media Provenance",
           "url": "https://electronicartefacts.com/publications/c2pa-content-credentials-and-generative-media-provenance/",
           "item": {
@@ -1113,7 +1221,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 116,
+          "position": 128,
           "name": "C2PA, Content Credentials et provenance des médias génératifs",
           "url": "https://electronicartefacts.com/fr/publications/c2pa-content-credentials-and-generative-media-provenance/",
           "item": {
@@ -1122,7 +1230,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 117,
+          "position": 129,
           "name": "Comment fonctionnent vraiment les grands modèles de langage",
           "url": "https://electronicartefacts.com/fr/publications/how-large-language-models-actually-work/",
           "item": {
@@ -1131,7 +1239,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 118,
+          "position": 130,
           "name": "Composition algorithmique et musique fondée sur des règles",
           "url": "https://electronicartefacts.com/fr/publications/algorithmic-composition-and-rule-based-music/",
           "item": {
@@ -1140,7 +1248,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 119,
+          "position": 131,
           "name": "Contextual Execution and Graph Runtimes",
           "url": "https://electronicartefacts.com/publications/contextual-execution-and-graph-runtimes/",
           "item": {
@@ -1149,7 +1257,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 120,
+          "position": 132,
           "name": "Creative Coding Pedagogy from Logo to p5.js",
           "url": "https://electronicartefacts.com/publications/creative-coding-pedagogy-from-logo-to-p5js/",
           "item": {
@@ -1158,7 +1266,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 121,
+          "position": 133,
           "name": "Digital Preservation and Living Archives",
           "url": "https://electronicartefacts.com/publications/digital-preservation-and-living-archives/",
           "item": {
@@ -1167,7 +1275,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 122,
+          "position": 134,
           "name": "Données liées et pages publiques de connaissance",
           "url": "https://electronicartefacts.com/fr/publications/linked-data-and-public-knowledge-pages/",
           "item": {
@@ -1176,7 +1284,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 123,
+          "position": 135,
           "name": "Event-Driven Architecture and Event Streams",
           "url": "https://electronicartefacts.com/publications/event-driven-architecture-and-event-streams/",
           "item": {
@@ -1185,7 +1293,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 124,
+          "position": 136,
           "name": "Exécution contextuelle et runtimes de graphe",
           "url": "https://electronicartefacts.com/fr/publications/contextual-execution-and-graph-runtimes/",
           "item": {
@@ -1194,7 +1302,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 125,
+          "position": 137,
           "name": "Foundational Lineage #001",
           "url": "https://electronicartefacts.com/fr/publications/foundational-lineage-001/",
           "item": {
@@ -1203,7 +1311,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 126,
+          "position": 138,
           "name": "Foundational Lineage #001",
           "url": "https://electronicartefacts.com/publications/foundational-lineage-001/",
           "item": {
@@ -1212,7 +1320,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 127,
+          "position": 139,
           "name": "Génération augmentée par récupération et systèmes de connaissance",
           "url": "https://electronicartefacts.com/fr/publications/retrieval-augmented-generation-and-knowledge-systems/",
           "item": {
@@ -1221,7 +1329,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 128,
+          "position": 140,
           "name": "Generative AI, Latent Space and Creative Workflows",
           "url": "https://electronicartefacts.com/publications/generative-ai-latent-space-and-creative-workflows/",
           "item": {
@@ -1230,7 +1338,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 129,
+          "position": 141,
           "name": "Generative Systems, Cybernetics and Creative Coding",
           "url": "https://electronicartefacts.com/publications/generative-systems-cybernetics-and-creative-coding/",
           "item": {
@@ -1239,7 +1347,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 130,
+          "position": 142,
           "name": "Gouvernance responsable de l'IA pour les systèmes créatifs et culturels",
           "url": "https://electronicartefacts.com/fr/publications/responsible-ai-governance-for-creative-and-cultural-systems/",
           "item": {
@@ -1248,7 +1356,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 131,
+          "position": 143,
           "name": "Graphes de connaissances pour les infrastructures culturelles",
           "url": "https://electronicartefacts.com/fr/publications/knowledge-graphs-for-cultural-infrastructure/",
           "item": {
@@ -1257,7 +1365,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 132,
+          "position": 144,
           "name": "Graphisme procédural, shaders et systèmes visuels",
           "url": "https://electronicartefacts.com/fr/publications/procedural-graphics-shaders-and-visual-systems/",
           "item": {
@@ -1266,7 +1374,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 133,
+          "position": 145,
           "name": "How Large Language Models Actually Work",
           "url": "https://electronicartefacts.com/publications/how-large-language-models-actually-work/",
           "item": {
@@ -1275,7 +1383,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 134,
+          "position": 146,
           "name": "Human Computer Interaction for Creative Tools",
           "url": "https://electronicartefacts.com/publications/human-computer-interaction-for-creative-tools/",
           "item": {
@@ -1284,7 +1392,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 135,
+          "position": 147,
           "name": "Hypertext and Augmented Knowledge Systems",
           "url": "https://electronicartefacts.com/publications/hypertext-and-augmented-knowledge-systems/",
           "item": {
@@ -1293,7 +1401,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 136,
+          "position": 148,
           "name": "Hypertexte et systèmes de connaissance augmentée",
           "url": "https://electronicartefacts.com/fr/publications/hypertext-and-augmented-knowledge-systems/",
           "item": {
@@ -1302,7 +1410,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 137,
+          "position": 149,
           "name": "IA générative, espace latent et workflows créatifs",
           "url": "https://electronicartefacts.com/fr/publications/generative-ai-latent-space-and-creative-workflows/",
           "item": {
@@ -1311,7 +1419,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 138,
+          "position": 150,
           "name": "IA multimodale pour le texte, l'image, l'audio et la vidéo",
           "url": "https://electronicartefacts.com/fr/publications/multimodal-ai-across-text-image-audio-and-video/",
           "item": {
@@ -1320,7 +1428,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 139,
+          "position": 151,
           "name": "Identifiants vérifiables pour les archives culturelles et l’identité des créateurs",
           "url": "https://electronicartefacts.com/fr/publications/verifiable-credentials-for-cultural-archives-and-creator-identity/",
           "item": {
@@ -1329,7 +1437,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 140,
+          "position": 152,
           "name": "IIIF and Compound Cultural Objects",
           "url": "https://electronicartefacts.com/publications/iiif-and-compound-cultural-objects/",
           "item": {
@@ -1338,7 +1446,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 141,
+          "position": 153,
           "name": "IIIF et objets culturels composés",
           "url": "https://electronicartefacts.com/fr/publications/iiif-and-compound-cultural-objects/",
           "item": {
@@ -1347,7 +1455,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 142,
+          "position": 154,
           "name": "Injection de prompt et frontières de confiance dans les systèmes de connaissance IA",
           "url": "https://electronicartefacts.com/fr/publications/prompt-injection-and-trust-boundaries-in-ai-knowledge-systems/",
           "item": {
@@ -1356,7 +1464,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 143,
+          "position": 155,
           "name": "Interaction humain-machine pour les outils créatifs",
           "url": "https://electronicartefacts.com/fr/publications/human-computer-interaction-for-creative-tools/",
           "item": {
@@ -1365,7 +1473,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 144,
+          "position": 156,
           "name": "Knowledge Graphs for Cultural Infrastructure",
           "url": "https://electronicartefacts.com/publications/knowledge-graphs-for-cultural-infrastructure/",
           "item": {
@@ -1374,7 +1482,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 145,
+          "position": 157,
           "name": "L’open source comme infrastructure culturelle",
           "url": "https://electronicartefacts.com/fr/publications/open-source-as-cultural-infrastructure/",
           "item": {
@@ -1383,7 +1491,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 146,
+          "position": 158,
           "name": "Linked Data and Public Knowledge Pages",
           "url": "https://electronicartefacts.com/publications/linked-data-and-public-knowledge-pages/",
           "item": {
@@ -1392,7 +1500,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 147,
+          "position": 159,
           "name": "Local and Open Source AI Systems",
           "url": "https://electronicartefacts.com/publications/local-and-open-source-ai-systems/",
           "item": {
@@ -1401,7 +1509,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 148,
+          "position": 160,
           "name": "Metadata, Cataloguing and Cultural Memory",
           "url": "https://electronicartefacts.com/publications/metadata-cataloguing-and-cultural-memory/",
           "item": {
@@ -1410,7 +1518,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 149,
+          "position": 161,
           "name": "Métadonnées, catalogage et mémoire culturelle",
           "url": "https://electronicartefacts.com/fr/publications/metadata-cataloguing-and-cultural-memory/",
           "item": {
@@ -1419,7 +1527,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 150,
+          "position": 162,
           "name": "Microservices, Modular Monoliths and System Boundaries",
           "url": "https://electronicartefacts.com/publications/microservices-modular-monoliths-and-system-boundaries/",
           "item": {
@@ -1428,7 +1536,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 151,
+          "position": 163,
           "name": "Microservices, monolithes modulaires et frontières de système",
           "url": "https://electronicartefacts.com/fr/publications/microservices-modular-monoliths-and-system-boundaries/",
           "item": {
@@ -1437,7 +1545,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 152,
+          "position": 164,
           "name": "Model Context Protocol and Tool-Using AI Systems",
           "url": "https://electronicartefacts.com/publications/model-context-protocol-and-tool-using-ai-systems/",
           "item": {
@@ -1446,7 +1554,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 153,
+          "position": 165,
           "name": "Model Context Protocol et systèmes d'IA utilisant des outils",
           "url": "https://electronicartefacts.com/fr/publications/model-context-protocol-and-tool-using-ai-systems/",
           "item": {
@@ -1455,7 +1563,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 154,
+          "position": 166,
           "name": "Moteurs d'exécution et systèmes d'exploitation de domaine",
           "url": "https://electronicartefacts.com/fr/publications/runtime-engines-and-domain-operating-systems/",
           "item": {
@@ -1464,7 +1572,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 155,
+          "position": 167,
           "name": "Motion design, temps et sémantique d'interface",
           "url": "https://electronicartefacts.com/fr/publications/motion-design-time-and-interface-semantics/",
           "item": {
@@ -1473,7 +1581,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 156,
+          "position": 168,
           "name": "Motion Design, Time and Interface Semantics",
           "url": "https://electronicartefacts.com/publications/motion-design-time-and-interface-semantics/",
           "item": {
@@ -1482,7 +1590,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 157,
+          "position": 169,
           "name": "Multimodal AI Across Text, Image, Audio and Video",
           "url": "https://electronicartefacts.com/publications/multimodal-ai-across-text-image-audio-and-video/",
           "item": {
@@ -1491,7 +1599,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 158,
+          "position": 170,
           "name": "Observabilité des agents d'IA et des systèmes d'appel d'outils",
           "url": "https://electronicartefacts.com/fr/publications/observability-for-ai-agents-and-tool-calling-systems/",
           "item": {
@@ -1500,7 +1608,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 159,
+          "position": 171,
           "name": "Observability for AI Agents and Tool-Calling Systems",
           "url": "https://electronicartefacts.com/publications/observability-for-ai-agents-and-tool-calling-systems/",
           "item": {
@@ -1509,7 +1617,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 160,
+          "position": 172,
           "name": "Ontologies, Taxonomies and Knowledge Modeling",
           "url": "https://electronicartefacts.com/publications/ontologies-taxonomies-and-knowledge-modeling/",
           "item": {
@@ -1518,7 +1626,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 161,
+          "position": 173,
           "name": "Ontologies, taxonomies et modélisation des connaissances",
           "url": "https://electronicartefacts.com/fr/publications/ontologies-taxonomies-and-knowledge-modeling/",
           "item": {
@@ -1527,7 +1635,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 162,
+          "position": 174,
           "name": "Open Source as Cultural Infrastructure",
           "url": "https://electronicartefacts.com/publications/open-source-as-cultural-infrastructure/",
           "item": {
@@ -1536,7 +1644,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 163,
+          "position": 175,
           "name": "Pédagogie de la programmation créative, de Logo à p5.js",
           "url": "https://electronicartefacts.com/fr/publications/creative-coding-pedagogy-from-logo-to-p5js/",
           "item": {
@@ -1545,7 +1653,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 164,
+          "position": 176,
           "name": "Pensée systémique pour la pratique créative",
           "url": "https://electronicartefacts.com/fr/publications/systems-thinking-for-creative-practice/",
           "item": {
@@ -1554,7 +1662,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 165,
+          "position": 177,
           "name": "Personal Knowledge Systems and Digital Gardens",
           "url": "https://electronicartefacts.com/publications/personal-knowledge-systems-and-digital-gardens/",
           "item": {
@@ -1563,7 +1671,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 166,
+          "position": 178,
           "name": "Pourquoi les graphes sont plus puissants que les dossiers",
           "url": "https://electronicartefacts.com/fr/publications/why-graphs-are-more-powerful-than-folders/",
           "item": {
@@ -1572,7 +1680,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 167,
+          "position": 179,
           "name": "Préservation numérique et archives vivantes",
           "url": "https://electronicartefacts.com/fr/publications/digital-preservation-and-living-archives/",
           "item": {
@@ -1581,7 +1689,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 168,
+          "position": 180,
           "name": "Procedural Graphics, Shaders and Visual Systems",
           "url": "https://electronicartefacts.com/publications/procedural-graphics-shaders-and-visual-systems/",
           "item": {
@@ -1590,7 +1698,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 169,
+          "position": 181,
           "name": "Prompt Injection and Trust Boundaries in AI Knowledge Systems",
           "url": "https://electronicartefacts.com/publications/prompt-injection-and-trust-boundaries-in-ai-knowledge-systems/",
           "item": {
@@ -1599,7 +1707,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 170,
+          "position": 182,
           "name": "Recherche IA, contenu structuré et SEO par graphe de connaissances",
           "url": "https://electronicartefacts.com/fr/publications/ai-search-structured-content-and-knowledge-graph-seo/",
           "item": {
@@ -1608,7 +1716,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 171,
+          "position": 183,
           "name": "Redis Streams for Orchestration",
           "url": "https://electronicartefacts.com/publications/redis-streams-for-orchestration/",
           "item": {
@@ -1617,7 +1725,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 172,
+          "position": 184,
           "name": "Redis Streams pour l’orchestration",
           "url": "https://electronicartefacts.com/fr/publications/redis-streams-for-orchestration/",
           "item": {
@@ -1626,7 +1734,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 173,
+          "position": 185,
           "name": "Responsible AI Governance for Creative and Cultural Systems",
           "url": "https://electronicartefacts.com/publications/responsible-ai-governance-for-creative-and-cultural-systems/",
           "item": {
@@ -1635,7 +1743,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 174,
+          "position": 186,
           "name": "Retrieval-Augmented Generation and Knowledge Systems",
           "url": "https://electronicartefacts.com/publications/retrieval-augmented-generation-and-knowledge-systems/",
           "item": {
@@ -1644,7 +1752,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 175,
+          "position": 187,
           "name": "Runtime Engines and Domain Operating Systems",
           "url": "https://electronicartefacts.com/publications/runtime-engines-and-domain-operating-systems/",
           "item": {
@@ -1653,7 +1761,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 176,
+          "position": 188,
           "name": "Signal Archaeology, Audio Memory and Machine Listening",
           "url": "https://electronicartefacts.com/publications/signal-archaeology-audio-memory-and-machine-listening/",
           "item": {
@@ -1662,7 +1770,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 177,
+          "position": 189,
           "name": "Systèmes d’IA locaux et open source",
           "url": "https://electronicartefacts.com/fr/publications/local-and-open-source-ai-systems/",
           "item": {
@@ -1671,7 +1779,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 178,
+          "position": 190,
           "name": "Systèmes génératifs, cybernétique et programmation créative",
           "url": "https://electronicartefacts.com/fr/publications/generative-systems-cybernetics-and-creative-coding/",
           "item": {
@@ -1680,7 +1788,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 179,
+          "position": 191,
           "name": "Systèmes personnels de connaissance et jardins numériques",
           "url": "https://electronicartefacts.com/fr/publications/personal-knowledge-systems-and-digital-gardens/",
           "item": {
@@ -1689,7 +1797,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 180,
+          "position": 192,
           "name": "Systems Thinking for Creative Practice",
           "url": "https://electronicartefacts.com/publications/systems-thinking-for-creative-practice/",
           "item": {
@@ -1698,7 +1806,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 181,
+          "position": 193,
           "name": "Typographie, systèmes de lecture et interfaces numériques",
           "url": "https://electronicartefacts.com/fr/publications/typography-reading-systems-and-digital-interfaces/",
           "item": {
@@ -1707,7 +1815,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 182,
+          "position": 194,
           "name": "Typography, Reading Systems and Digital Interfaces",
           "url": "https://electronicartefacts.com/publications/typography-reading-systems-and-digital-interfaces/",
           "item": {
@@ -1716,7 +1824,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 183,
+          "position": 195,
           "name": "Verifiable Credentials for Cultural Archives and Creator Identity",
           "url": "https://electronicartefacts.com/publications/verifiable-credentials-for-cultural-archives-and-creator-identity/",
           "item": {
@@ -1725,7 +1833,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 184,
+          "position": 196,
           "name": "Web Audio and Browser-Based Sound Systems",
           "url": "https://electronicartefacts.com/publications/web-audio-and-browser-based-sound-systems/",
           "item": {
@@ -1734,7 +1842,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 185,
+          "position": 197,
           "name": "Web Audio et systèmes sonores dans le navigateur",
           "url": "https://electronicartefacts.com/fr/publications/web-audio-and-browser-based-sound-systems/",
           "item": {
@@ -1743,7 +1851,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 186,
+          "position": 198,
           "name": "WebNN and Local AI in the Browser",
           "url": "https://electronicartefacts.com/publications/webnn-and-local-ai-in-the-browser/",
           "item": {
@@ -1752,7 +1860,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 187,
+          "position": 199,
           "name": "WebNN et IA locale dans le navigateur",
           "url": "https://electronicartefacts.com/fr/publications/webnn-and-local-ai-in-the-browser/",
           "item": {
@@ -1761,7 +1869,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 188,
+          "position": 200,
           "name": "Why Graphs Are More Powerful Than Folders",
           "url": "https://electronicartefacts.com/publications/why-graphs-are-more-powerful-than-folders/",
           "item": {
@@ -1770,7 +1878,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 189,
+          "position": 201,
           "name": "Runtime Theory",
           "url": "https://electronicartefacts.com/research/fields/runtime-theory/",
           "item": {
@@ -1779,7 +1887,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 190,
+          "position": 202,
           "name": "Théorie du runtime",
           "url": "https://electronicartefacts.com/fr/research/fields/runtime-theory/",
           "item": {
@@ -1788,7 +1896,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 191,
+          "position": 203,
           "name": "Comment les datasets vocaux peuvent-ils devenir reproductibles, structurés et privacy-first ?",
           "url": "https://electronicartefacts.com/fr/research/questions/speech-dataset-reproducibility/",
           "item": {
@@ -1797,7 +1905,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 192,
+          "position": 204,
           "name": "Comment un logiciel peut-il devenir explicable par son propre graphe de connaissance ?",
           "url": "https://electronicartefacts.com/fr/research/questions/self-explaining-knowledge-graph-software/",
           "item": {
@@ -1806,7 +1914,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 193,
+          "position": 205,
           "name": "Comment une IA peut-elle comprendre quelqu'un dès sa première conversation ?",
           "url": "https://electronicartefacts.com/fr/research/questions/first-conversation-understanding/",
           "item": {
@@ -1815,7 +1923,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 194,
+          "position": 206,
           "name": "How can an AI understand someone during its very first conversation?",
           "url": "https://electronicartefacts.com/research/questions/first-conversation-understanding/",
           "item": {
@@ -1824,7 +1932,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 195,
+          "position": 207,
           "name": "How can software become explainable through its own knowledge graph?",
           "url": "https://electronicartefacts.com/research/questions/self-explaining-knowledge-graph-software/",
           "item": {
@@ -1833,7 +1941,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 196,
+          "position": 208,
           "name": "How can speech datasets become reproducible, structured and privacy-first?",
           "url": "https://electronicartefacts.com/research/questions/speech-dataset-reproducibility/",
           "item": {
@@ -1842,7 +1950,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 197,
+          "position": 209,
           "name": "ActivityPub",
           "url": "https://electronicartefacts.com/fr/knowledge/technologies/activitypub/",
           "item": {
@@ -1851,7 +1959,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 198,
+          "position": 210,
           "name": "ActivityPub",
           "url": "https://electronicartefacts.com/knowledge/technologies/activitypub/",
           "item": {
@@ -1860,7 +1968,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 199,
+          "position": 211,
           "name": "Architecture Transformer",
           "url": "https://electronicartefacts.com/fr/knowledge/technologies/transformer-architecture/",
           "item": {
@@ -1869,7 +1977,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 200,
+          "position": 212,
           "name": "C2PA",
           "url": "https://electronicartefacts.com/fr/knowledge/technologies/c2pa/",
           "item": {
@@ -1878,7 +1986,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 201,
+          "position": 213,
           "name": "C2PA",
           "url": "https://electronicartefacts.com/knowledge/technologies/c2pa/",
           "item": {
@@ -1887,7 +1995,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 202,
+          "position": 214,
           "name": "CloudEvents",
           "url": "https://electronicartefacts.com/fr/knowledge/technologies/cloudevents/",
           "item": {
@@ -1896,7 +2004,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 203,
+          "position": 215,
           "name": "CloudEvents",
           "url": "https://electronicartefacts.com/knowledge/technologies/cloudevents/",
           "item": {
@@ -1905,7 +2013,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 204,
+          "position": 216,
           "name": "CSS Fonts",
           "url": "https://electronicartefacts.com/fr/knowledge/technologies/css-fonts/",
           "item": {
@@ -1914,7 +2022,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 205,
+          "position": 217,
           "name": "CSS Fonts",
           "url": "https://electronicartefacts.com/knowledge/technologies/css-fonts/",
           "item": {
@@ -1923,7 +2031,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 206,
+          "position": 218,
           "name": "IIIF",
           "url": "https://electronicartefacts.com/fr/knowledge/technologies/iiif/",
           "item": {
@@ -1932,7 +2040,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 207,
+          "position": 219,
           "name": "IIIF",
           "url": "https://electronicartefacts.com/knowledge/technologies/iiif/",
           "item": {
@@ -1941,7 +2049,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 208,
+          "position": 220,
           "name": "JSON-LD",
           "url": "https://electronicartefacts.com/fr/knowledge/technologies/json-ld/",
           "item": {
@@ -1950,7 +2058,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 209,
+          "position": 221,
           "name": "JSON-LD",
           "url": "https://electronicartefacts.com/knowledge/technologies/json-ld/",
           "item": {
@@ -1959,7 +2067,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 210,
+          "position": 222,
           "name": "llama.cpp",
           "url": "https://electronicartefacts.com/fr/knowledge/technologies/llama-cpp/",
           "item": {
@@ -1968,7 +2076,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 211,
+          "position": 223,
           "name": "llama.cpp",
           "url": "https://electronicartefacts.com/knowledge/technologies/llama-cpp/",
           "item": {
@@ -1977,7 +2085,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 212,
+          "position": 224,
           "name": "Model Context Protocol",
           "url": "https://electronicartefacts.com/fr/knowledge/technologies/model-context-protocol/",
           "item": {
@@ -1986,7 +2094,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 213,
+          "position": 225,
           "name": "Model Context Protocol",
           "url": "https://electronicartefacts.com/knowledge/technologies/model-context-protocol/",
           "item": {
@@ -1995,7 +2103,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 214,
+          "position": 226,
           "name": "OpenTelemetry",
           "url": "https://electronicartefacts.com/fr/knowledge/technologies/opentelemetry/",
           "item": {
@@ -2004,7 +2112,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 215,
+          "position": 227,
           "name": "OpenTelemetry",
           "url": "https://electronicartefacts.com/knowledge/technologies/opentelemetry/",
           "item": {
@@ -2013,7 +2121,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 216,
+          "position": 228,
           "name": "OWL",
           "url": "https://electronicartefacts.com/fr/knowledge/technologies/owl/",
           "item": {
@@ -2022,7 +2130,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 217,
+          "position": 229,
           "name": "OWL",
           "url": "https://electronicartefacts.com/knowledge/technologies/owl/",
           "item": {
@@ -2031,7 +2139,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 218,
+          "position": 230,
           "name": "RDF",
           "url": "https://electronicartefacts.com/fr/knowledge/technologies/rdf/",
           "item": {
@@ -2040,7 +2148,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 219,
+          "position": 231,
           "name": "RDF",
           "url": "https://electronicartefacts.com/knowledge/technologies/rdf/",
           "item": {
@@ -2049,7 +2157,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 220,
+          "position": 232,
           "name": "Redis Streams",
           "url": "https://electronicartefacts.com/fr/knowledge/technologies/redis-streams/",
           "item": {
@@ -2058,7 +2166,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 221,
+          "position": 233,
           "name": "Redis Streams",
           "url": "https://electronicartefacts.com/knowledge/technologies/redis-streams/",
           "item": {
@@ -2067,7 +2175,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 222,
+          "position": 234,
           "name": "SKOS",
           "url": "https://electronicartefacts.com/fr/knowledge/technologies/skos/",
           "item": {
@@ -2076,7 +2184,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 223,
+          "position": 235,
           "name": "SKOS",
           "url": "https://electronicartefacts.com/knowledge/technologies/skos/",
           "item": {
@@ -2085,7 +2193,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 224,
+          "position": 236,
           "name": "Transformer Architecture",
           "url": "https://electronicartefacts.com/knowledge/technologies/transformer-architecture/",
           "item": {
@@ -2094,7 +2202,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 225,
+          "position": 237,
           "name": "Web Animations",
           "url": "https://electronicartefacts.com/fr/knowledge/technologies/web-animations/",
           "item": {
@@ -2103,7 +2211,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 226,
+          "position": 238,
           "name": "Web Animations",
           "url": "https://electronicartefacts.com/knowledge/technologies/web-animations/",
           "item": {
@@ -2112,7 +2220,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 227,
+          "position": 239,
           "name": "Web Audio API",
           "url": "https://electronicartefacts.com/fr/knowledge/technologies/web-audio-api/",
           "item": {
@@ -2121,7 +2229,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 228,
+          "position": 240,
           "name": "Web Audio API",
           "url": "https://electronicartefacts.com/knowledge/technologies/web-audio-api/",
           "item": {
@@ -2130,7 +2238,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 229,
+          "position": 241,
           "name": "WebGL",
           "url": "https://electronicartefacts.com/fr/knowledge/technologies/webgl/",
           "item": {
@@ -2139,7 +2247,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 230,
+          "position": 242,
           "name": "WebGL",
           "url": "https://electronicartefacts.com/knowledge/technologies/webgl/",
           "item": {
@@ -2148,7 +2256,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 231,
+          "position": 243,
           "name": "WebNN",
           "url": "https://electronicartefacts.com/fr/knowledge/technologies/webnn/",
           "item": {
@@ -2157,7 +2265,7 @@
         },
         {
           "@type": "ListItem",
-          "position": 232,
+          "position": 244,
           "name": "WebNN",
           "url": "https://electronicartefacts.com/knowledge/technologies/webnn/",
           "item": {

@@ -1,0 +1,34 @@
+{
+  "id": "local:ea:concept:situated-actors-and-governance",
+  "kind": "local",
+  "focus": "ea:concept:situated-actors-and-governance",
+  "nodes": [
+    {
+      "id": "ea:concept:situated-actors-and-governance",
+      "type": "concept",
+      "title": "Situated Actors and Topological Governance",
+      "route": "/knowledge/concepts/situated-actors-and-governance/",
+      "status": "experimental",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:program:vaste",
+      "type": "program",
+      "title": "VASTE",
+      "route": "/programs/vaste/",
+      "status": "development",
+      "confidence": "validated"
+    }
+  ],
+  "edges": [
+    {
+      "id": "ear:vaste-has-situated-governance",
+      "source": "ea:program:vaste",
+      "target": "ea:concept:situated-actors-and-governance",
+      "predicate": "hasPart",
+      "label": "Has part",
+      "statement": "VASTE resolves Actor identity and effective authority inside a System, Environment, topology and policy context.",
+      "confidence": "validated"
+    }
+  ]
+}

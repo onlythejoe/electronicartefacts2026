@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="dark" />
+    <meta name="description" content="Un fichier .vast est un package JSON scellé expérimental `vast/1` qui transporte une clôture relative au System — System entier ou sous-arbre — avec…" />
+    <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1" />
+    <meta name="author" content="Electronic Artefacts" />
+    <meta name="application-name" content="Electronic Artefacts" />
+    <meta name="apple-mobile-web-app-title" content="Electronic Artefacts" />
+    <meta name="keywords" content="Format de graphe portable .vast, concept, VASTE, Portabilité, Graph Closure, Intégrité, Runtime Systems, Portabilité des données" />
+    <meta name="theme-color" content="#000000" />
+    <link rel="canonical" href="https://electronicartefacts.com/fr/knowledge/concepts/vast-portable-graph-format/" />
+    <link rel="alternate" hreflang="en" href="https://electronicartefacts.com/knowledge/concepts/vast-portable-graph-format/" />
+    <link rel="alternate" hreflang="fr" href="https://electronicartefacts.com/fr/knowledge/concepts/vast-portable-graph-format/" />
+    <link rel="alternate" hreflang="x-default" href="https://electronicartefacts.com/knowledge/concepts/vast-portable-graph-format/" />
+    <link rel="alternate" type="application/ld+json" href="https://electronicartefacts.com/fr/id/concept/vast-portable-graph-format/index.jsonld" />
+    <link rel="alternate" type="application/ld+json" href="/graph/catalog.jsonld" title="Public knowledge graph catalog" />
+    <link rel="alternate" type="text/plain" href="/llms.txt" title="LLM-readable site index" />
+    <link rel="alternate" type="application/json" href="/agent-manifest.json" title="Agent manifest" />
+    <link rel="search" type="application/opensearchdescription+xml" href="/opensearch.xml" title="Electronic Artefacts Search" />
+    <link rel="icon" type="image/png" sizes="192x192" href="/assets/media/projects/electronic-artefacts/electronic-artefacts-icon-192.png" />
+    <link rel="apple-touch-icon" sizes="192x192" href="/assets/media/projects/electronic-artefacts/electronic-artefacts-icon-192.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <meta property="og:title" content="Format de graphe portable .vast | Electronic Artefacts" />
+    <meta property="og:description" content="Un fichier .vast est un package JSON scellé expérimental `vast/1` qui transporte une clôture relative au System — System entier ou sous-arbre — avec…" />
+    <meta property="og:type" content="article" />
+    <meta property="og:site_name" content="Electronic Artefacts" />
+    <meta property="og:locale" content="fr_FR" />
+    <meta property="og:locale:alternate" content="en_US" />
+    <meta property="og:url" content="https://electronicartefacts.com/fr/knowledge/concepts/vast-portable-graph-format/" />
+    <meta property="og:image" content="https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-social.jpg" />
+    <meta property="og:image:secure_url" content="https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-social.jpg" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:image:alt" content="Format de graphe portable .vast" />
+    <meta property="article:published_time" content="2026-07-11" />
+    <meta property="article:modified_time" content="2026-07-11" />
+    <meta property="article:tag" content="Format de graphe portable .vast" />
+    <meta property="article:tag" content="concept" />
+    <meta property="article:tag" content="VASTE" />
+    <meta property="article:tag" content="Portabilité" />
+    <meta property="article:tag" content="Graph Closure" />
+    <meta property="article:tag" content="Intégrité" />
+    <meta property="article:tag" content="Runtime Systems" />
+    <meta property="article:tag" content="Portabilité des données" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Format de graphe portable .vast | Electronic Artefacts" />
+    <meta name="twitter:description" content="Un fichier .vast est un package JSON scellé expérimental `vast/1` qui transporte une clôture relative au System — System entier ou sous-arbre — avec…" />
+    <meta name="twitter:image" content="https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-social.jpg" />
+    <meta name="twitter:image:alt" content="Format de graphe portable .vast" />
+    <title>Format de graphe portable .vast | Electronic Artefacts</title>
+    <script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"WebPage","@id":"https://electronicartefacts.com/fr/knowledge/concepts/vast-portable-graph-format/#webpage","url":"https://electronicartefacts.com/fr/knowledge/concepts/vast-portable-graph-format/","name":"Format de graphe portable .vast","description":"Guide public factuel du format expérimental de package de graphe portable VASTE.","inLanguage":"fr","datePublished":"2026-07-11","dateModified":"2026-07-11","primaryImageOfPage":{"@type":"ImageObject","url":"https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-social.jpg","description":"Format de graphe portable .vast"},"breadcrumb":{"@id":"https://electronicartefacts.com/fr/knowledge/concepts/vast-portable-graph-format/#breadcrumb"},"mainEntity":{"@id":"https://electronicartefacts.com/fr/id/concept/vast-portable-graph-format/"},"isPartOf":{"@id":"https://electronicartefacts.com/#website"},"publisher":{"@id":"https://electronicartefacts.com/id/organization/electronic-artefacts/"},"isAccessibleForFree":true},{"@type":"DefinedTerm","@id":"https://electronicartefacts.com/fr/id/concept/vast-portable-graph-format/","identifier":"ea:concept:vast-portable-graph-format-fr","name":"Format de graphe portable .vast","abstract":"Modèle d’export/import .vast implémenté, garanties d’intégrité, références de frontière, round-trip testé et limites de confiance et migration.","description":"Un fichier .vast est un package JSON scellé expérimental `vast/1` qui transporte une clôture relative au System — System entier ou sous-arbre — avec manifeste et hash d’intégrité, jamais un Environment vivant.","url":"https://electronicartefacts.com/fr/knowledge/concepts/vast-portable-graph-format/","mainEntityOfPage":{"@id":"https://electronicartefacts.com/fr/knowledge/concepts/vast-portable-graph-format/#webpage"},"image":{"@type":"ImageObject","url":"https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-social.jpg","description":"Format de graphe portable .vast"},"author":[{"@id":"https://electronicartefacts.com/id/organization/electronic-artefacts/"}],"creator":[{"@id":"https://electronicartefacts.com/id/organization/electronic-artefacts/"}],"keywords":["VASTE","Portabilité","Graph Closure","Intégrité","Runtime Systems","Portabilité des données"],"inLanguage":"fr","dateCreated":"2026-07-11","datePublished":"2026-07-11","dateModified":"2026-07-11","publisher":{"@id":"https://electronicartefacts.com/id/organization/electronic-artefacts/"},"copyrightHolder":{"@id":"https://electronicartefacts.com/id/organization/electronic-artefacts/"},"isAccessibleForFree":true,"wordCount":262,"inDefinedTermSet":"https://electronicartefacts.com/knowledge/concepts/","termCode":"vast-portable-graph-format"},{"@type":"Organization","@id":"https://electronicartefacts.com/id/organization/electronic-artefacts/","name":"Electronic Artefacts","alternateName":["electronicArtefacts","electronicartefacts.com"],"url":"https://electronicartefacts.com/","description":"Electronic Artefacts is an independent creative technology studio for complex digital products, knowledge systems, proprietary software and research-led cultural work.","keywords":["creative technology","digital product strategy","UX design","web development","knowledge graph","AI agents","retrieval-augmented generation","linked data","digital preservation","cultural infrastructure","software systems","research publishing"],"knowsAbout":["AI agents","knowledge graphs","retrieval-augmented generation","linked data","JSON-LD","creative coding","digital preservation","cultural knowledge systems","software architecture","human-computer interaction","generative AI","provenance"],"logo":{"@type":"ImageObject","url":"https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-mark-1024.png","contentUrl":"https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-mark-1024.png","width":1024,"height":1024},"image":"https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-social.jpg","email":"electronic.artefacts@gmail.com","contactPoint":[{"@type":"ContactPoint","email":"electronic.artefacts@gmail.com","contactType":"inquiries","availableLanguage":["en","fr"]}],"sameAs":["https://www.instagram.com/electronic.artefacts/","https://github.com/onlythejoe","https://soundcloud.com/electronic-artefacts"]},{"@type":"WebSite","@id":"https://electronicartefacts.com/#website","url":"https://electronicartefacts.com/","name":"Electronic Artefacts","alternateName":["electronicArtefacts","electronicartefacts.com"],"description":"Electronic Artefacts is an independent creative technology studio for complex digital products, knowledge systems, proprietary software and research-led cultural work.","keywords":["creative technology","digital product strategy","UX design","web development","knowledge graph","AI agents","retrieval-augmented generation","linked data","digital preservation","cultural infrastructure","software systems","research publishing"],"dateModified":"2026-07-10","publisher":{"@id":"https://electronicartefacts.com/id/organization/electronic-artefacts/"},"inLanguage":"en"},{"@type":"BreadcrumbList","@id":"https://electronicartefacts.com/fr/knowledge/concepts/vast-portable-graph-format/#breadcrumb","itemListElement":[{"@type":"ListItem","position":1,"name":"Electronic Artefacts","item":"https://electronicartefacts.com/"},{"@type":"ListItem","position":2,"name":"Knowledge","item":"https://electronicartefacts.com/knowledge/concepts/"},{"@type":"ListItem","position":3,"name":"Format de graphe portable .vast","item":"https://electronicartefacts.com/fr/knowledge/concepts/vast-portable-graph-format/"}]}]}</script>
+    <link rel="stylesheet" href="/assets/css/app.css?v=52" />
+    <script type="module" src="/assets/js/app.js?v=51"></script>
+  </head>
+  <body data-page="concept" data-generated-page="true" data-entry-id="vast-portable-graph-format">
+    <a class="skip-link" href="#main">Skip to main content</a>
+    <header><div class="shell-header zone-card">
+  <a class="brand-lockup" href="/index.html">
+    <span class="brand-text">
+      <strong><span class="brand-name-brand">electronic</span><span class="brand-name-accent">Artefacts</span></strong>
+      <span>Creative technology studio for complex digital systems</span>
+    </span>
+  </a>
+
+  <nav class="site-nav" aria-label="Main navigation">
+    <a data-nav="home" href="/index.html">HOME</a>
+    <a data-nav="work" href="/work.html">WORK</a>
+    <a data-nav="projects" href="/projects.html">PROJECTS</a>
+    <a data-nav="programs" href="/programs.html">PROGRAMS</a>
+    <a data-nav="research" href="/research.html">RESEARCH</a>
+    <a data-nav="knowledge" href="/knowledge/">KNOWLEDGE</a>
+    <a data-nav="about" href="/about.html">ABOUT</a>
+    <a data-nav="contact" href="/contact.html">CONTACT</a>
+  </nav>
+
+  <div class="language-switcher" data-language-switcher>
+    <button class="language-switcher__trigger" type="button" aria-haspopup="menu" aria-expanded="false" title="Choose language" data-language-trigger>
+      <span class="language-switcher__planet" aria-hidden="true">
+        <span></span>
+      </span>
+      <strong data-language-current>EN</strong>
+    </button>
+    <div class="language-switcher__menu" role="menu" hidden data-language-menu>
+      <div class="language-switcher__menu-shell">
+        <span class="language-switcher__eyebrow">Language</span>
+        <div class="language-switcher__rail" aria-label="Available languages">
+          <button type="button" role="menuitemradio" aria-checked="true" data-language-option="en">
+            <span class="language-switcher__option-dot" aria-hidden="true"></span>
+            <span class="language-switcher__option-copy">
+              <span>English</span>
+              <em>Original interface</em>
+            </span>
+            <strong>EN</strong>
+          </button>
+          <button type="button" role="menuitemradio" aria-checked="false" data-language-option="fr">
+            <span class="language-switcher__option-dot" aria-hidden="true"></span>
+            <span class="language-switcher__option-copy">
+              <span>Français</span>
+              <em>Version française</em>
+            </span>
+            <strong>FR</strong>
+          </button>
+        </div>
+        <span class="language-switcher__status" data-language-status>Current language</span>
+      </div>
+    </div>
+  </div>
+</div>
+</header>
+    <main id="main" class="site-main" tabindex="-1">
+  <section class="zone-card entity-breadcrumb-card">
+  <nav class="link-row entity-breadcrumbs" aria-label="Breadcrumb">
+    <a class="tag" href="/">Home</a>
+    <span aria-hidden="true">/</span>
+    <span class="tag">Knowledge</span>
+    <span aria-hidden="true">/</span>
+    <span aria-current="page">Format de graphe portable .vast</span>
+  </nav></section>
+
+  <section class="zone-card hero entity-hero">
+    <div class="section-head">
+      <p class="eyebrow">CONCEPT</p>
+      <h1 class="display-title">Format de graphe portable .vast</h1>
+
+      <p class="lede"><strong>Un fichier .vast est un package JSON scellé expérimental `vast/1` qui transporte une clôture relative au System — System entier ou sous-arbre — avec manifeste et hash d’intégrité, jamais un Environment vivant.</strong></p>
+      <p class="card__copy">Modèle d’export/import .vast implémenté, garanties d’intégrité, références de frontière, round-trip testé et limites de confiance et migration.</p>
+    </div>
+    <div class="pill-cloud">
+      <span class="tag">experimental</span>
+      <span class="tag">prototype</span>
+    </div>
+  </section>
+
+    <section class="zone-card hero">
+      <div class="section-head">
+        <p class="eyebrow">EDITORIAL FRAME</p>
+        <h2>What this entry establishes.</h2>
+        <p class="lede">A concise view of its scope, position, limitations and supporting sources.</p>
+      </div>
+      <div class="card-grid card-grid--two">
+
+      <article class="panel">
+        <div class="section-head">
+          <p class="card__meta">Scope</p>
+          <h2 class="card__title">Defined scope</h2>
+        </div>
+
+    <ol class="article-mini-list">
+      <li><strong>Package vast/1</strong></li><li><strong>Canonicalisation et intégrité</strong></li><li><strong>Clôture System et sous-arbre</strong></li><li><strong>Rebinding à l’import</strong></li>
+    </ol>
+      </article>
+      <article class="panel">
+        <div class="section-head">
+          <p class="card__meta">Position</p>
+          <h2 class="card__title">Editorial position</h2>
+        </div>
+
+    <ol class="article-mini-list">
+      <li><strong>L’implémentation actuelle fait le round-trip d’un System par fichier sous un nouvel ID.</strong></li><li><strong>Le scellement détecte une altération du contenu ou du manifeste avant import.</strong></li>
+    </ol>
+      </article>
+      <article class="panel">
+        <div class="section-head">
+          <p class="card__meta">Limits</p>
+          <h2 class="card__title">Explicit limits</h2>
+        </div>
+
+    <ol class="article-mini-list">
+      <li><strong>Environment vivant</strong></li><li><strong>Autorité locale automatique</strong></li><li><strong>Certification de confiance production</strong></li>
+    </ol>
+      </article>
+      <article class="panel">
+        <div class="section-head">
+          <p class="card__meta">Topics</p>
+          <h2 class="card__title">Tags and disciplines</h2>
+        </div>
+
+    <div class="tag-cluster tag-cluster--compact">
+      <span class="chip">VASTE</span><span class="chip">Portabilité</span><span class="chip">Graph Closure</span><span class="chip">Intégrité</span><span class="chip">Runtime Systems</span><span class="chip">Portabilité des données</span>
+    </div>
+      </article>
+      </div>
+    </section>
+  <article class="zone-card hero publication-body"><h2 id="sens-implemente">Sens implémenté</h2>
+<p><code>.vast</code> est une convention de fichier soutenue par le runtime, pas un acronyme développé par les contrats. Le dépôt n’établit pas « Vertex Action Surface Tie » comme signification technique. <code>vast/1</code> sérialise une clôture portable en JSON.</p>
+<p>Le corps canonique contient Vertices et Ties relatifs au System. Le manifeste enregistre ID et version du package, type et racine de clôture, compteurs, compatibilité, références de frontière et <code>packageHash</code> SHA-256. La canonicalisation stable rend l’identité indépendante du System ID d’arrivée.</p>
+<h2 id="deux-formes-de-cloture">Deux formes de clôture</h2>
+<ul>
+<li><strong>System closure</strong> : partition structurelle complète avec Vertex racine.</li>
+<li><strong>Subtree closure</strong> : containment depuis une ancre. Les Ties traversant la frontière sont refusés ou externalisés comme références déclarées, jamais copiés silencieusement.</li>
+</ul>
+<h2 id="round-trip-valide">Round-trip validé</h2>
+<p>Le scénario interne exporte le System A, écrit puis relit le JSON, vérifie le scellement, importe dans un runtime neuf comme System B, poursuit l’exécution canonique et compare le hash d’un réexport avant nouvelle écriture. Les tests couvrent aussi version inconnue, altération et collision. Un scénario E2E exporte un graphe né via VAB et un sous-arbre Workspace utilisé.</p>
+<h2 id="portable-et-local">Portable et local</h2>
+<p>Sont portables : identité relative, données Vertex/Tie, structure, manifeste, déclarations de provenance, compatibilité et références de frontière.</p>
+<p>Restent locaux : Environment actif, credentials, secrets, processus, emplacement filesystem, providers, grants de ressources et autorité effective. Ils doivent être résolus ou revalidés à l’arrivée.</p>
+<h2 id="limites">Limites</h2>
+<p><code>vast/1</code> est expérimental. Un hash prouve l’intégrité, pas l’identité de l’auteur. Signatures et provenance ne forment pas encore une chaîne de confiance marketplace. Montage multiple, upgrade atomique, migrations, limites de ressources et durcissement hostile ne sont pas présentés comme garanties livrées.</p>
+</article>
+
+    <section class="zone-card hero">
+      <div class="section-head">
+        <p class="eyebrow">RELATIONS DOCUMENTÉES</p>
+        <h2>Travaux et idées associés.</h2>
+        <p class="lede">Chaque lien précise la nature de la relation entre deux entrées.</p>
+      </div>
+      <div class="card-grid card-grid--two">
+
+          <article class="panel">
+            <p class="card__meta">structure</p>
+            <div class="stack">
+
+                  <div class="panel panel--soft">
+                    <p class="card__meta">Comprend</p>
+                    <h3 class="card__title"><a href="/fr/programs/vaste/">VASTE</a></h3>
+
+                  </div>
+            </div>
+          </article>
+          <article class="panel">
+            <p class="card__meta">preuves</p>
+            <div class="stack">
+
+                  <div class="panel panel--soft">
+                    <p class="card__meta">Étayé par</p>
+                    <h3 class="card__title"><a href="/fr/archive/artefacts/vaste-validation-record/">Registre des validations VASTE</a></h3>
+
+                  </div>
+            </div>
+          </article>
+      </div>
+    </section>
+
+    <details class="zone-card record-details">
+      <summary>
+        <span>Détails de la fiche</span>
+        <small>Métadonnées, partage et citation</small>
+      </summary>
+      <div class="record-details__body">
+    <section class="detail-grid">
+
+  <section class="panel knowledge-panel engagement-panel" data-engagement-panel data-like-key="ea:concept:vast-portable-graph-format-fr">
+    <div class="engagement-panel__header">
+      <div>
+        <p class="card__meta">Actions de la page</p>
+        <h2 class="card__title">Format de graphe portable .vast</h2>
+      </div>
+      <span class="engagement-panel__status">Experimental</span>
+    </div>
+    <div class="engagement-panel__actions" aria-label="Actions de la page">
+      <button class="engagement-action" type="button" data-share-button>
+        <span aria-hidden="true">↗</span>
+        <strong>Partager</strong>
+      </button>
+    </div>
+    <dl class="engagement-meta" aria-label="Métadonnées de la page">
+      <div><dt>Type</dt><dd>Concept</dd></div>
+      <div><dt>Maturité</dt><dd>Prototype</dd></div>
+      <div><dt>Mis à jour</dt><dd>2026-07-11</dd></div>
+      <div><dt>Version</dt><dd>1.0.0</dd></div>
+    </dl>
+    <p class="engagement-panel__feedback" data-engagement-feedback aria-live="polite"></p>
+  </section>
+
+    <section class="panel knowledge-panel">
+      <div class="section-head">
+        <p class="card__meta">Référence</p>
+        <h2 class="card__title">Citer cette page</h2>
+      </div>
+      <p class="card__copy">Format de graphe portable .vast. 1.0.0. Electronic Artefacts, 2026-07-11. https://electronicartefacts.com/fr/knowledge/concepts/vast-portable-graph-format/</p>
+      <div class="link-row"><a class="tag" href="https://electronicartefacts.com/fr/knowledge/concepts/vast-portable-graph-format/">URL canonique</a></div>
+    </section>
+    </section>
+    <section class="record-details__graph">
+    <section class="panel knowledge-panel" data-local-graph data-graph-src="/graph/neighborhoods/fr/concept/vast-portable-graph-format.json">
+      <div class="section-head">
+        <p class="card__meta">Contexte associé</p>
+        <h2 class="card__title">Relations de proximité</h2>
+        <p class="card__copy">2 liens publics relient cette page à des projets, concepts et références proches.</p>
+      </div>
+    </section></section>
+  </div>
+    </details>
+</main>
+    <footer><div class="shell-footer zone-card">
+  <div class="footer-main">
+    <div class="footer-stack footer-stack--brand">
+      <a class="footer-brand" href="/" aria-label="Electronic Artefacts home">
+        <span class="brand-name-brand">electronic</span><span class="brand-name-accent">Artefacts</span>
+      </a>
+      <span>Independent creative technology studio for complex digital products, knowledge systems, proprietary software and research-led cultural work.</span>
+    </div>
+    <nav class="footer-links" aria-label="Quick links">
+      <a class="tag" href="/work.html">WORK</a>
+      <a class="tag" href="/projects.html">PROJECTS</a>
+      <a class="tag" href="/programs.html">PROGRAMS</a>
+      <a class="tag" href="/research.html">RESEARCH</a>
+      <a class="tag" href="/about.html">ABOUT</a>
+      <a class="tag" href="/contact.html">CONTACT</a>
+    </nav>
+    <nav class="footer-links footer-links--utility" aria-label="Resources and legal">
+      <a class="tag" href="/knowledge/">KNOWLEDGE</a>
+      <a class="tag" href="/archive.html">ARCHIVE</a>
+      <a class="tag" href="/search/">SEARCH</a>
+      <a class="tag" href="/mentions-legales.html">LEGAL</a>
+      <a class="tag" href="/confidentialite.html">PRIVACY</a>
+      <button class="tag footer-consent-button" type="button" data-analytics-preferences>COOKIES</button>
+    </nav>
+  </div>
+  <div class="footer-signature" aria-label="Site signature">
+    <a class="footer-signature__framework" href="/knowledge/frameworks/electronic-artefacts-lightweight-template/">
+      Built on the Electronic Artefacts Light Framework
+    </a>
+    <span class="footer-note">© <span id="current-year"></span></span>
+  </div>
+</div>
+</footer>
+  </body>
+</html>

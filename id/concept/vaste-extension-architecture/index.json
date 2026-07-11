@@ -1,0 +1,89 @@
+{
+  "id": "ea:concept:vaste-extension-architecture",
+  "type": "concept",
+  "slug": {
+    "canonical": "vaste-extension-architecture"
+  },
+  "title": "VASTE Extension Architecture",
+  "definition": "A VASTE extension is an optional, System-scoped capability unit that declares domain actions, bindings and surfaces while runtime authority remains in the core execution path.",
+  "abstract": "Extension manifests, lifecycle, measured families, zero-extension boot, Intelligence boundaries and the current in-process trust limit.",
+  "description": "The implemented and specified extension system of VASTE, with a maturity-aware inventory.",
+  "locale": "en",
+  "visibility": "public",
+  "publicationClass": "canonical",
+  "status": "experimental",
+  "maturity": "development",
+  "confidence": "validated",
+  "version": {
+    "version": "1.0.0",
+    "createdAt": "2026-07-11",
+    "publishedAt": "2026-07-11",
+    "modifiedAt": "2026-07-11"
+  },
+  "authors": [
+    {
+      "id": "ea:organization:electronic-artefacts"
+    }
+  ],
+  "publisher": "ea:organization:electronic-artefacts",
+  "tags": [
+    "VASTE",
+    "Extensions",
+    "Runtime",
+    "Intelligence"
+  ],
+  "disciplines": [
+    "Software Architecture",
+    "Runtime Systems"
+  ],
+  "scope": [
+    "Extension manifests",
+    "Runtime lifecycle",
+    "Capability boundaries",
+    "Extension families"
+  ],
+  "exclusions": [
+    "Public marketplace",
+    "Safe untrusted execution",
+    "Uniform extension maturity"
+  ],
+  "claims": [
+    "Core runtime boots and executes without installed extensions.",
+    "Extension installation and visible exposure are separate lifecycle states."
+  ],
+  "bodyHtml": "<h2 id=\"boundary\">Boundary</h2>\n<p>Extensions add meaning and optional capability without changing the primitive vocabulary. They may own actions, manifests, bindings, domains and Surface specifications. The runtime still owns namespace registration, routing, scheduling, execution, typed effects, mutation and lifecycle state. A manifest requests capability; it does not grant itself permission.</p>\n<h2 id=\"lifecycle\">Lifecycle</h2>\n<p>The current runtime has install, enable, disable, upgrade and remove Actions. Artifacts and registrations are System-scoped. Installation does not imply that a Surface is exposed, and disabling an extension must not erase canonical graph truth. Tests cover packaging, identity, lifecycle tooling, coupling rules and boot with zero extensions.</p>\n<h2 id=\"measured-families\">Measured families</h2>\n<p>The repository’s coupling census groups current extensions into five families:</p>\n<ul>\n<li><strong>Foundational</strong> — Actor, Knowledge, Assets and graph-adjacent meaning.</li>\n<li><strong>Coordination</strong> — Flow, Program and Simulation orchestration.</li>\n<li><strong>Knowledge and cognition</strong> — World Model, Intelligence and Perception.</li>\n<li><strong>Experience</strong> — Workspace, Studio, Expression and projection.</li>\n<li><strong>Tooling</strong> — SDK and supporting authoring boundaries.</li>\n</ul>\n<p>This is an architectural taxonomy, not a claim that every directory is equally complete. Some contain executable registration and Actions; others are partial or doctrine-led.</p>\n<h2 id=\"intelligence\">Intelligence</h2>\n<p>Intelligence is an advisory extension with provider adapters and model configuration. It may propose structured output or stream language, but it does not bypass Actor admission, policy or Action execution. Provider, model and runtime capability remain distinct.</p>\n<h2 id=\"trust-limit\">Trust limit</h2>\n<p>Trusted first-party extensions currently execute in-process. Contracts describe package provenance, signatures, trust tiers, grants and future sandbox execution, but cryptographic verification and marketplace-grade isolation are incomplete. Therefore VASTE does not yet treat arbitrary third-party extensions as safe.</p>\n",
+  "headings": [
+    "Boundary",
+    "Lifecycle",
+    "Measured families",
+    "Intelligence",
+    "Trust limit"
+  ],
+  "headingItems": [
+    {
+      "level": 2,
+      "title": "Boundary",
+      "id": "boundary"
+    },
+    {
+      "level": 2,
+      "title": "Lifecycle",
+      "id": "lifecycle"
+    },
+    {
+      "level": 2,
+      "title": "Measured families",
+      "id": "measured-families"
+    },
+    {
+      "level": 2,
+      "title": "Intelligence",
+      "id": "intelligence"
+    },
+    {
+      "level": 2,
+      "title": "Trust limit",
+      "id": "trust-limit"
+    }
+  ]
+}

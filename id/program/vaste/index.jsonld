@@ -6,10 +6,10 @@
       "@id": "https://electronicartefacts.com/programs/vaste/#webpage",
       "url": "https://electronicartefacts.com/programs/vaste/",
       "name": "VASTE",
-      "description": "VASTE connects Runtime Theory to an in-development runtime for graph systems, contextual execution, identity and modular world construction.",
+      "description": "The canonical public record of VASTE: its runtime architecture, primitives, governed execution, extension system, Assisted Boot, experimental .vast format, validation record and current limits.",
       "inLanguage": "en",
       "datePublished": "2026-01-01",
-      "dateModified": "2026-06-22",
+      "dateModified": "2026-07-11",
       "primaryImageOfPage": {
         "@type": "ImageObject",
         "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-social.jpg",
@@ -34,8 +34,8 @@
       "@id": "https://electronicartefacts.com/id/program/vaste/",
       "identifier": "ea:program:vaste",
       "name": "VASTE",
-      "abstract": "VASTE is the future Electronic Artefacts runtime platform, currently in R&D and targeted for delivery in 2027.",
-      "description": "VASTE is the future Electronic Artefacts runtime platform, currently in R&D and targeted for delivery in 2027.",
+      "abstract": "VASTE is an experimental graph-native runtime for building portable, contextual and governed systems from five primitives: Vertex, Tie, Action, Surface and Environment.",
+      "description": "VASTE is an experimental graph-native runtime for building portable, contextual and governed systems from five primitives: Vertex, Tie, Action, Surface and Environment.",
       "url": "https://electronicartefacts.com/programs/vaste/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/programs/vaste/#webpage"
@@ -57,19 +57,19 @@
       ],
       "keywords": [
         "TypeScript",
-        "Graph",
-        "Context",
-        "Identity",
-        "Simulation",
-        "Knowledge",
-        "Technology",
-        "Systems",
-        "Research"
+        "Graph Runtime",
+        "Governed Execution",
+        "Portability",
+        "Extensions",
+        "Assisted Boot",
+        "Software Architecture",
+        "Runtime Systems",
+        "Knowledge Systems"
       ],
       "inLanguage": "en",
       "dateCreated": "2024-01-01",
       "datePublished": "2026-01-01",
-      "dateModified": "2026-06-22",
+      "dateModified": "2026-07-11",
       "publisher": {
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
@@ -77,7 +77,7 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 341,
+      "wordCount": 1384,
       "sameAs": [
         "https://www.vaste.space/"
       ],

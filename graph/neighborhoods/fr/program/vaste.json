@@ -9,7 +9,7 @@
       "title": "VASTE",
       "route": "/fr/programs/vaste/",
       "status": "development",
-      "confidence": "published"
+      "confidence": "validated"
     },
     {
       "id": "ea:publication:foundational-lineage-001-fr",
@@ -194,6 +194,54 @@
       "route": "/fr/organizations/electronic-artefacts/",
       "status": "active",
       "confidence": "canonical"
+    },
+    {
+      "id": "ea:concept:vaste-five-primitives-fr",
+      "type": "concept",
+      "title": "Les cinq primitives de VASTE",
+      "route": "/fr/knowledge/concepts/vaste-five-primitives/",
+      "status": "experimental",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:concept:vast-portable-graph-format-fr",
+      "type": "concept",
+      "title": "Format de graphe portable .vast",
+      "route": "/fr/knowledge/concepts/vast-portable-graph-format/",
+      "status": "experimental",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:concept:situated-actors-and-governance-fr",
+      "type": "concept",
+      "title": "Actors situés et gouvernance topologique",
+      "route": "/fr/knowledge/concepts/situated-actors-and-governance/",
+      "status": "experimental",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:concept:vaste-extension-architecture-fr",
+      "type": "concept",
+      "title": "Architecture d’extensions VASTE",
+      "route": "/fr/knowledge/concepts/vaste-extension-architecture/",
+      "status": "experimental",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:concept:vab-and-genesis-fr",
+      "type": "concept",
+      "title": "VAB et Genesis",
+      "route": "/fr/knowledge/concepts/vab-and-genesis/",
+      "status": "experimental",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:artefact:vaste-validation-record-fr",
+      "type": "artefact",
+      "title": "Registre des validations VASTE",
+      "route": "/fr/archive/artefacts/vaste-validation-record/",
+      "status": "active",
+      "confidence": "validated"
     },
     {
       "id": "ea:researchQuestion:first-conversation-understanding-fr",
@@ -419,6 +467,60 @@
       "label": "Maintained by",
       "statement": "Electronic Artefacts develops and maintains the VASTE program.",
       "confidence": "published"
+    },
+    {
+      "id": "ear:vaste-has-five-primitives",
+      "source": "ea:program:vaste-fr",
+      "target": "ea:concept:vaste-five-primitives-fr",
+      "predicate": "hasPart",
+      "label": "Has part",
+      "statement": "VASTE is composed from the closed primitive roster Vertex, Tie, Action, Surface and Environment.",
+      "confidence": "validated"
+    },
+    {
+      "id": "ear:vaste-has-portable-format",
+      "source": "ea:program:vaste-fr",
+      "target": "ea:concept:vast-portable-graph-format-fr",
+      "predicate": "hasPart",
+      "label": "Has part",
+      "statement": "VASTE implements the experimental vast/1 portable graph package format for whole-System and subtree closures.",
+      "confidence": "validated"
+    },
+    {
+      "id": "ear:vaste-has-situated-governance",
+      "source": "ea:program:vaste-fr",
+      "target": "ea:concept:situated-actors-and-governance-fr",
+      "predicate": "hasPart",
+      "label": "Has part",
+      "statement": "VASTE resolves Actor identity and effective authority inside a System, Environment, topology and policy context.",
+      "confidence": "validated"
+    },
+    {
+      "id": "ear:vaste-has-extension-architecture",
+      "source": "ea:program:vaste-fr",
+      "target": "ea:concept:vaste-extension-architecture-fr",
+      "predicate": "hasPart",
+      "label": "Has part",
+      "statement": "VASTE extends the runtime through optional System-scoped capability units without changing the five primitives.",
+      "confidence": "validated"
+    },
+    {
+      "id": "ear:vab-part-of-vaste",
+      "source": "ea:concept:vab-and-genesis-fr",
+      "target": "ea:program:vaste-fr",
+      "predicate": "partOf",
+      "label": "Part of",
+      "statement": "VAB is the Assisted Boot orchestration path used to propose and materialize a governed VASTE System.",
+      "confidence": "validated"
+    },
+    {
+      "id": "ear:vaste-evidenced-by-validation-record",
+      "source": "ea:program:vaste-fr",
+      "target": "ea:artefact:vaste-validation-record-fr",
+      "predicate": "evidencedBy",
+      "label": "Evidenced by",
+      "statement": "The VASTE Validation Record maps major public claims to internal contracts, implementation, tests, commits and limitations.",
+      "confidence": "validated"
     },
     {
       "id": "ear:first-conversation-understanding-implemented-by-vaste",

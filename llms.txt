@@ -33,7 +33,7 @@ Use canonical HTML URLs for human-facing citations. Use identifier routes under 
 
 - [Voice Capture Studio](https://electronicartefacts.com/projects/voice-capture-studio/): A local-first recording studio for speech datasets, voice-over and dubbing workflows, built as an open-source browser application with structured WAV and metadata exports.
 - [Electronic Artefacts](https://electronicartefacts.com/organizations/electronic-artefacts/): Strategy, design, engineering and cultural research brought together to build clear, durable digital products and knowledge systems.
-- [VASTE](https://electronicartefacts.com/programs/vaste/): VASTE connects Runtime Theory to an in-development runtime for graph systems, contextual execution, identity and modular world construction.
+- [VASTE](https://electronicartefacts.com/programs/vaste/): The canonical public record of VASTE: its runtime architecture, primitives, governed execution, extension system, Assisted Boot, experimental .vast format, validation record...
 - [V6](https://electronicartefacts.com/projects/v6/): An in-development VASTE test platform for art, craft, mapping and relationship management, targeted for 2027.
 - [AI Agents vs AI Workflows](https://electronicartefacts.com/publications/ai-agents-vs-ai-workflows/): Understand the difference between AI agents and AI workflows, when to use each architecture, and how to design reliable hybrid systems.
 - [Retrieval-Augmented Generation and Knowledge Systems](https://electronicartefacts.com/publications/retrieval-augmented-generation-and-knowledge-systems/): Learn how retrieval-augmented generation works and how to build source-grounded RAG systems with metadata, knowledge graphs and evaluation.

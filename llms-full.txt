@@ -9,7 +9,7 @@ This file is generated from typed public records. Prefer each record's canonical
 - Site language: en
 - Canonical origin: https://electronicartefacts.com
 - Search endpoint: https://electronicartefacts.com/search/?q={search_term_string}
-- Public records: 232
+- Public records: 244
 - Last curated source update: 2026-07-11
 
 ## organization
@@ -41,18 +41,18 @@ This file is generated from typed public records. Prefer each record's canonical
   - JSON-LD: https://electronicartefacts.com/id/program/oreth/index.jsonld
   - Modified: 2026-06-23
   - Keywords: ORETH, Audio Intelligence, Machine Listening, Signal Processing, Sound Design, Palimpsests, Experimental Music, Music
-- [VASTE](https://electronicartefacts.com/fr/programs/vaste/): VASTE relie Runtime Theory à un runtime en développement pour systèmes de graphe, exécution contextuelle, identité et mondes modulaires.
+- [VASTE](https://electronicartefacts.com/fr/programs/vaste/): Le dossier public canonique de VASTE : architecture runtime, primitives, exécution gouvernée, extensions, Assisted Boot, format .vast expérimental, preuves et limites actuelles.
   - Entity ID: ea:program:vaste-fr
   - Identifier: https://electronicartefacts.com/fr/id/program/vaste/
   - JSON-LD: https://electronicartefacts.com/fr/id/program/vaste/index.jsonld
-  - Modified: 2026-07-04
-  - Keywords: VASTE, TypeScript, Graphe, Contexte, Identité, Simulation, Connaissance, Technologie
-- [VASTE](https://electronicartefacts.com/programs/vaste/): VASTE connects Runtime Theory to an in-development runtime for graph systems, contextual execution, identity and modular world construction.
+  - Modified: 2026-07-11
+  - Keywords: VASTE, TypeScript, Graph Runtime, Exécution gouvernée, Portabilité, Extensions, Assisted Boot, Architecture logicielle
+- [VASTE](https://electronicartefacts.com/programs/vaste/): The canonical public record of VASTE: its runtime architecture, primitives, governed execution, extension system, Assisted Boot, experimental .vast format, validation record and current limits.
   - Entity ID: ea:program:vaste
   - Identifier: https://electronicartefacts.com/id/program/vaste/
   - JSON-LD: https://electronicartefacts.com/id/program/vaste/index.jsonld
-  - Modified: 2026-06-22
-  - Keywords: VASTE, TypeScript, Graph, Context, Identity, Simulation, Knowledge, Technology
+  - Modified: 2026-07-11
+  - Keywords: VASTE, TypeScript, Graph Runtime, Governed Execution, Portability, Extensions, Assisted Boot, Software Architecture
 
 ## project
 
@@ -632,6 +632,18 @@ This file is generated from typed public records. Prefer each record's canonical
 
 ## concept
 
+- [.vast Portable Graph Format](https://electronicartefacts.com/knowledge/concepts/vast-portable-graph-format/): A .vast file is an experimental `vast/1` sealed JSON package carrying a System-relative whole-System or subtree closure, its manifest and integrity hash—not a live Environment.
+  - Entity ID: ea:concept:vast-portable-graph-format
+  - Identifier: https://electronicartefacts.com/id/concept/vast-portable-graph-format/
+  - JSON-LD: https://electronicartefacts.com/id/concept/vast-portable-graph-format/index.jsonld
+  - Modified: 2026-07-11
+  - Keywords: .vast Portable Graph Format, VASTE, Portability, Graph Closure, Integrity, Runtime Systems, Data Portability
+- [Actors situés et gouvernance topologique](https://electronicartefacts.com/fr/knowledge/concepts/situated-actors-and-governance/): Dans VASTE, un Actor est une identité de graphe possédée par une extension ; observation et action effectives sont résolues dans un System, un Environment, une topologie et une policy précis.
+  - Entity ID: ea:concept:situated-actors-and-governance-fr
+  - Identifier: https://electronicartefacts.com/fr/id/concept/situated-actors-and-governance/
+  - JSON-LD: https://electronicartefacts.com/fr/id/concept/situated-actors-and-governance/index.jsonld
+  - Modified: 2026-07-11
+  - Keywords: Actors situés et gouvernance topologique, VASTE, Actor, Gouvernance, Identité, Capabilities, Runtime Systems, Architecture de sécurité
 - [Agent d'IA](https://electronicartefacts.com/fr/knowledge/concepts/ai-agent/): Agent d'IA désigne les agents logiciels capables d'observer un contexte, de choisir une action et de mobiliser des outils avec une autonomie encadrée.
   - Entity ID: ea:concept:ai-agent-fr
   - Identifier: https://electronicartefacts.com/fr/id/concept/ai-agent/
@@ -656,6 +668,12 @@ This file is generated from typed public records. Prefer each record's canonical
   - JSON-LD: https://electronicartefacts.com/fr/id/concept/signal-archaeology/index.jsonld
   - Modified: 2026-06-25
   - Keywords: Archéologie du signal, Signal Archaeology, Audio, Archive, Memory, Machine Listening, ingénierie audio, art numérique
+- [Architecture d’extensions VASTE](https://electronicartefacts.com/fr/knowledge/concepts/vaste-extension-architecture/): Une extension VASTE est une unité optionnelle de capability, limitée à un System, qui déclare actions de domaine, bindings et Surfaces tandis que l’autorité runtime reste dans le chemin d’exécution central.
+  - Entity ID: ea:concept:vaste-extension-architecture-fr
+  - Identifier: https://electronicartefacts.com/fr/id/concept/vaste-extension-architecture/
+  - JSON-LD: https://electronicartefacts.com/fr/id/concept/vaste-extension-architecture/index.jsonld
+  - Modified: 2026-07-11
+  - Keywords: Architecture d’extensions VASTE, VASTE, Extensions, Runtime, Intelligence, Architecture logicielle, Runtime Systems
 - [Architecture de microservices](https://electronicartefacts.com/fr/knowledge/concepts/microservice-architecture/): Architecture de microservices désigne les architectures de services séparés par domaine, contrat et responsabilité opérationnelle.
   - Entity ID: ea:concept:microservice-architecture-fr
   - Identifier: https://electronicartefacts.com/fr/id/concept/microservice-architecture/
@@ -764,6 +782,12 @@ This file is generated from typed public records. Prefer each record's canonical
   - JSON-LD: https://electronicartefacts.com/fr/id/concept/contextual-execution/index.jsonld
   - Modified: 2026-06-25
   - Keywords: Exécution contextuelle, Context, Exécution, Runtime, Identity, Permissions, conception de systèmes, programmation
+- [Format de graphe portable .vast](https://electronicartefacts.com/fr/knowledge/concepts/vast-portable-graph-format/): Un fichier .vast est un package JSON scellé expérimental `vast/1` qui transporte une clôture relative au System — System entier ou sous-arbre — avec manifeste et hash d’intégrité, jamais un Environment vivant.
+  - Entity ID: ea:concept:vast-portable-graph-format-fr
+  - Identifier: https://electronicartefacts.com/fr/id/concept/vast-portable-graph-format/
+  - JSON-LD: https://electronicartefacts.com/fr/id/concept/vast-portable-graph-format/index.jsonld
+  - Modified: 2026-07-11
+  - Keywords: Format de graphe portable .vast, VASTE, Portabilité, Graph Closure, Intégrité, Runtime Systems, Portabilité des données
 - [Génération augmentée par récupération](https://electronicartefacts.com/fr/knowledge/concepts/retrieval-augmented-generation/): Génération augmentée par récupération désigne les architectures qui récupèrent des sources externes avant où pendant la génération d'une réponse par IA.
   - Entity ID: ea:concept:retrieval-augmented-generation-fr
   - Identifier: https://electronicartefacts.com/fr/id/concept/retrieval-augmented-generation/
@@ -884,6 +908,12 @@ This file is generated from typed public records. Prefer each record's canonical
   - JSON-LD: https://electronicartefacts.com/id/concept/large-language-model/index.jsonld
   - Modified: 2026-06-24
   - Keywords: Large Language Model, LLM, Transformer, Tokens, Inference, Language Models, Artificial Intelligence, Machine Learning
+- [Les cinq primitives de VASTE](https://electronicartefacts.com/fr/knowledge/concepts/vaste-five-primitives/): VASTE possède un vocabulaire fermé de cinq primitives — Vertex, Tie, Action, Surface et Environment — qui composent identité de graphe, topologie, changement admis, observation et contexte local d’exécution.
+  - Entity ID: ea:concept:vaste-five-primitives-fr
+  - Identifier: https://electronicartefacts.com/fr/id/concept/vaste-five-primitives/
+  - JSON-LD: https://electronicartefacts.com/fr/id/concept/vaste-five-primitives/index.jsonld
+  - Modified: 2026-07-11
+  - Keywords: Les cinq primitives de VASTE, VASTE, Runtime, Primitives, Graphe, Architecture logicielle, Runtime Systems
 - [Linked Data](https://electronicartefacts.com/knowledge/concepts/linked-data/): Linked Data is a web publishing approach that identifies things with stable URIs and connects them through machine-readable statements.
   - Entity ID: ea:concept:linked-data
   - Identifier: https://electronicartefacts.com/id/concept/linked-data/
@@ -1046,6 +1076,12 @@ This file is generated from typed public records. Prefer each record's canonical
   - JSON-LD: https://electronicartefacts.com/id/concept/signal-archaeology/index.jsonld
   - Modified: 2026-06-23
   - Keywords: Signal Archaeology, Audio, Archive, Memory, Machine Listening, Audio Engineering, Digital Art, Archives
+- [Situated Actors and Topological Governance](https://electronicartefacts.com/knowledge/concepts/situated-actors-and-governance/): In VASTE, an Actor is an extension-owned graph identity whose effective observation and action are resolved inside a specific System, Environment, topology and policy context.
+  - Entity ID: ea:concept:situated-actors-and-governance
+  - Identifier: https://electronicartefacts.com/id/concept/situated-actors-and-governance/
+  - JSON-LD: https://electronicartefacts.com/id/concept/situated-actors-and-governance/index.jsonld
+  - Modified: 2026-07-11
+  - Keywords: Situated Actors and Topological Governance, VASTE, Actor, Governance, Identity, Capabilities, Runtime Systems, Security Architecture
 - [Speech Datasets](https://electronicartefacts.com/knowledge/concepts/speech-datasets/): Speech datasets are structured collections of recorded speech, transcripts, speaker context and quality metadata prepared for analysis, preservation or downstream machine-learning workflows.
   - Entity ID: ea:concept:speech-datasets
   - Identifier: https://electronicartefacts.com/id/concept/speech-datasets/
@@ -1094,6 +1130,12 @@ This file is generated from typed public records. Prefer each record's canonical
   - JSON-LD: https://electronicartefacts.com/fr/id/concept/voice-technology/index.jsonld
   - Modified: 2026-07-09
   - Keywords: Technologie vocale, technologie vocale, parole, audio, interaction humain-machine, ingénierie audio, intelligence artificielle
+- [The Five VASTE Primitives](https://electronicartefacts.com/knowledge/concepts/vaste-five-primitives/): VASTE has a closed primitive roster—Vertex, Tie, Action, Surface and Environment—from which graph identity, topology, admitted change, observation and execution-local context are composed.
+  - Entity ID: ea:concept:vaste-five-primitives
+  - Identifier: https://electronicartefacts.com/id/concept/vaste-five-primitives/
+  - JSON-LD: https://electronicartefacts.com/id/concept/vaste-five-primitives/index.jsonld
+  - Modified: 2026-07-11
+  - Keywords: The Five VASTE Primitives, VASTE, Runtime, Primitives, Graph, Software Architecture, Runtime Systems
 - [Typographie](https://electronicartefacts.com/fr/knowledge/concepts/typography/): Typographie désigne la composition du texte par caracteres, espacements, hierarchie, rythme et conditions de lecture.
   - Entity ID: ea:concept:typography-fr
   - Identifier: https://electronicartefacts.com/fr/id/concept/typography/
@@ -1106,6 +1148,24 @@ This file is generated from typed public records. Prefer each record's canonical
   - JSON-LD: https://electronicartefacts.com/id/concept/typography/index.jsonld
   - Modified: 2026-06-24
   - Keywords: Typography, Reading, Interface Design, Accessibility, Design, Visual Culture, Web Development
+- [VAB and Genesis](https://electronicartefacts.com/knowledge/concepts/vab-and-genesis/): VAB is VASTE’s Assisted Boot orchestration path for understanding an initial intent, composing a sealed plan, admitting a Founding Actor and materializing a governed starting graph.
+  - Entity ID: ea:concept:vab-and-genesis
+  - Identifier: https://electronicartefacts.com/id/concept/vab-and-genesis/
+  - JSON-LD: https://electronicartefacts.com/id/concept/vab-and-genesis/index.jsonld
+  - Modified: 2026-07-11
+  - Keywords: VAB and Genesis, VASTE, VAB, Assisted Boot, Genesis, Runtime Systems, Human Computer Interaction
+- [VAB et Genesis](https://electronicartefacts.com/fr/knowledge/concepts/vab-and-genesis/): VAB est le chemin d’orchestration Assisted Boot de VASTE : comprendre l’intention initiale, composer un plan scellé, admettre un Founding Actor et matérialiser un graphe initial gouverné.
+  - Entity ID: ea:concept:vab-and-genesis-fr
+  - Identifier: https://electronicartefacts.com/fr/id/concept/vab-and-genesis/
+  - JSON-LD: https://electronicartefacts.com/fr/id/concept/vab-and-genesis/index.jsonld
+  - Modified: 2026-07-11
+  - Keywords: VAB et Genesis, VASTE, VAB, Assisted Boot, Genesis, Runtime Systems, Interaction humain machine
+- [VASTE Extension Architecture](https://electronicartefacts.com/knowledge/concepts/vaste-extension-architecture/): A VASTE extension is an optional, System-scoped capability unit that declares domain actions, bindings and surfaces while runtime authority remains in the core execution path.
+  - Entity ID: ea:concept:vaste-extension-architecture
+  - Identifier: https://electronicartefacts.com/id/concept/vaste-extension-architecture/
+  - JSON-LD: https://electronicartefacts.com/id/concept/vaste-extension-architecture/index.jsonld
+  - Modified: 2026-07-11
+  - Keywords: VASTE Extension Architecture, VASTE, Extensions, Runtime, Intelligence, Software Architecture, Runtime Systems
 - [Voice Technology](https://electronicartefacts.com/knowledge/concepts/voice-technology/): Voice technology is the design and engineering of systems that capture, analyze, transform, preserve or present spoken voice as technical and cultural material.
   - Entity ID: ea:concept:voice-technology
   - Identifier: https://electronicartefacts.com/id/concept/voice-technology/
@@ -1430,6 +1490,18 @@ This file is generated from typed public records. Prefer each record's canonical
   - JSON-LD: https://electronicartefacts.com/fr/id/artefact/voice-capture-studio-repository/index.jsonld
   - Modified: 2026-07-09
   - Keywords: Dépôt Voice Capture Studio, Voice Capture Studio, GitHub, open source, logiciel de navigateur, capture vocale, développement web, ingénierie audio
+- [Registre des validations VASTE](https://electronicartefacts.com/fr/archive/artefacts/vaste-validation-record/): Preuves concernant primitives, exécution gouvernée, extensions, Assisted Boot et portabilité .vast, avec limites explicites.
+  - Entity ID: ea:artefact:vaste-validation-record-fr
+  - Identifier: https://electronicartefacts.com/fr/id/artefact/vaste-validation-record/
+  - JSON-LD: https://electronicartefacts.com/fr/id/artefact/vaste-validation-record/index.jsonld
+  - Modified: 2026-07-11
+  - Keywords: Registre des validations VASTE, VASTE, Preuves, Validation, Runtime, Vérification logicielle, Runtime Systems
+- [VASTE Validation Record](https://electronicartefacts.com/archive/artefacts/vaste-validation-record/): Evidence for VASTE primitives, governed execution, extensions, Assisted Boot and .vast portability, with explicit limits.
+  - Entity ID: ea:artefact:vaste-validation-record
+  - Identifier: https://electronicartefacts.com/id/artefact/vaste-validation-record/
+  - JSON-LD: https://electronicartefacts.com/id/artefact/vaste-validation-record/index.jsonld
+  - Modified: 2026-07-11
+  - Keywords: VASTE Validation Record, VASTE, Evidence, Validation, Runtime, Software Verification, Runtime Systems
 - [Voice Capture Studio Repository](https://electronicartefacts.com/archive/artefacts/voice-capture-studio-repository/): A code artefact record for the public Voice Capture Studio repository and its documented browser recording architecture.
   - Entity ID: ea:artefact:voice-capture-studio-repository
   - Identifier: https://electronicartefacts.com/id/artefact/voice-capture-studio-repository/

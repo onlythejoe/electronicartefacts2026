@@ -19,6 +19,10 @@
     "en": "/archive.html",
     "fr": "/fr/archive.html"
   },
+  "/archive/artefacts/vaste-validation-record/": {
+    "en": "/archive/artefacts/vaste-validation-record/",
+    "fr": "/fr/archive/artefacts/vaste-validation-record/"
+  },
   "/archive/artefacts/voice-capture-studio-repository/": {
     "en": "/archive/artefacts/voice-capture-studio-repository/",
     "fr": "/fr/archive/artefacts/voice-capture-studio-repository/"
@@ -101,6 +105,10 @@
   "/fr/archive.html": {
     "en": "/archive.html",
     "fr": "/fr/archive.html"
+  },
+  "/fr/archive/artefacts/vaste-validation-record/": {
+    "en": "/archive/artefacts/vaste-validation-record/",
+    "fr": "/fr/archive/artefacts/vaste-validation-record/"
   },
   "/fr/archive/artefacts/voice-capture-studio-repository/": {
     "en": "/archive/artefacts/voice-capture-studio-repository/",
@@ -310,6 +318,10 @@
     "en": "/knowledge/concepts/signal-archaeology/",
     "fr": "/fr/knowledge/concepts/signal-archaeology/"
   },
+  "/fr/knowledge/concepts/situated-actors-and-governance/": {
+    "en": "/knowledge/concepts/situated-actors-and-governance/",
+    "fr": "/fr/knowledge/concepts/situated-actors-and-governance/"
+  },
   "/fr/knowledge/concepts/speech-datasets/": {
     "en": "/knowledge/concepts/speech-datasets/",
     "fr": "/fr/knowledge/concepts/speech-datasets/"
@@ -325,6 +337,22 @@
   "/fr/knowledge/concepts/typography/": {
     "en": "/knowledge/concepts/typography/",
     "fr": "/fr/knowledge/concepts/typography/"
+  },
+  "/fr/knowledge/concepts/vab-and-genesis/": {
+    "en": "/knowledge/concepts/vab-and-genesis/",
+    "fr": "/fr/knowledge/concepts/vab-and-genesis/"
+  },
+  "/fr/knowledge/concepts/vast-portable-graph-format/": {
+    "en": "/knowledge/concepts/vast-portable-graph-format/",
+    "fr": "/fr/knowledge/concepts/vast-portable-graph-format/"
+  },
+  "/fr/knowledge/concepts/vaste-extension-architecture/": {
+    "en": "/knowledge/concepts/vaste-extension-architecture/",
+    "fr": "/fr/knowledge/concepts/vaste-extension-architecture/"
+  },
+  "/fr/knowledge/concepts/vaste-five-primitives/": {
+    "en": "/knowledge/concepts/vaste-five-primitives/",
+    "fr": "/fr/knowledge/concepts/vaste-five-primitives/"
   },
   "/fr/knowledge/concepts/voice-technology/": {
     "en": "/knowledge/concepts/voice-technology/",
@@ -830,6 +858,10 @@
     "en": "/knowledge/concepts/signal-archaeology/",
     "fr": "/fr/knowledge/concepts/signal-archaeology/"
   },
+  "/knowledge/concepts/situated-actors-and-governance/": {
+    "en": "/knowledge/concepts/situated-actors-and-governance/",
+    "fr": "/fr/knowledge/concepts/situated-actors-and-governance/"
+  },
   "/knowledge/concepts/speech-datasets/": {
     "en": "/knowledge/concepts/speech-datasets/",
     "fr": "/fr/knowledge/concepts/speech-datasets/"
@@ -845,6 +877,22 @@
   "/knowledge/concepts/typography/": {
     "en": "/knowledge/concepts/typography/",
     "fr": "/fr/knowledge/concepts/typography/"
+  },
+  "/knowledge/concepts/vab-and-genesis/": {
+    "en": "/knowledge/concepts/vab-and-genesis/",
+    "fr": "/fr/knowledge/concepts/vab-and-genesis/"
+  },
+  "/knowledge/concepts/vast-portable-graph-format/": {
+    "en": "/knowledge/concepts/vast-portable-graph-format/",
+    "fr": "/fr/knowledge/concepts/vast-portable-graph-format/"
+  },
+  "/knowledge/concepts/vaste-extension-architecture/": {
+    "en": "/knowledge/concepts/vaste-extension-architecture/",
+    "fr": "/fr/knowledge/concepts/vaste-extension-architecture/"
+  },
+  "/knowledge/concepts/vaste-five-primitives/": {
+    "en": "/knowledge/concepts/vaste-five-primitives/",
+    "fr": "/fr/knowledge/concepts/vaste-five-primitives/"
   },
   "/knowledge/concepts/voice-technology/": {
     "en": "/knowledge/concepts/voice-technology/",

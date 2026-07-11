@@ -1,0 +1,74 @@
+{
+  "id": "ea:artefact:vaste-validation-record",
+  "type": "artefact",
+  "slug": {
+    "canonical": "vaste-validation-record"
+  },
+  "title": "VASTE Validation Record",
+  "subtitle": "Repository evidence reviewed 11 July 2026",
+  "abstract": "A public, limitation-aware registry of VASTE claims backed by internal contracts, implementation and automated tests at repository commit a51c9897.",
+  "description": "Evidence for VASTE primitives, governed execution, extensions, Assisted Boot and .vast portability, with explicit limits.",
+  "locale": "en",
+  "visibility": "public",
+  "publicationClass": "published",
+  "status": "active",
+  "maturity": "development",
+  "confidence": "validated",
+  "version": {
+    "version": "1.0.0",
+    "createdAt": "2026-07-11",
+    "publishedAt": "2026-07-11",
+    "modifiedAt": "2026-07-11"
+  },
+  "authors": [
+    {
+      "id": "ea:organization:electronic-artefacts"
+    }
+  ],
+  "publisher": "ea:organization:electronic-artefacts",
+  "tags": [
+    "VASTE",
+    "Evidence",
+    "Validation",
+    "Runtime"
+  ],
+  "disciplines": [
+    "Software Verification",
+    "Runtime Systems"
+  ],
+  "artefactType": "document",
+  "createdAt": "2026-07-11",
+  "provenance": "Internal VASTE repository review at commit a51c9897 on branch codex/vaiste-audit-simulation-isolation; uncommitted mount work excluded from published claims.",
+  "format": "Public evidence register",
+  "preservationStatus": "active",
+  "significance": "It separates implemented and tested runtime properties from specifications, observations and operational aspirations.",
+  "bodyHtml": "<h2 id=\"reading-status\">Reading status</h2>\n<p>“Validated” means an automated internal repository scenario exists and its code was inspected during this review. It does not mean independent certification, production operation or security assurance. Repository access is available during a bounded technical review.</p>\n<h2 id=\"evidence-register\">Evidence register</h2>\n<table>\n<thead>\n<tr>\n<th>ID</th>\n<th>Claim</th>\n<th>Repository evidence</th>\n<th>Status</th>\n<th>Limit</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>VST-PRIM-01</td>\n<td>The primitive roster is Vertex, Tie, Action, Surface, Environment.</td>\n<td><code>packages/contracts/src/primitives.ts</code>; <code>src/primitives/*</code>; kernel-purity tests</td>\n<td>Validated</td>\n<td>Ontology can still evolve through explicit doctrine revision.</td>\n</tr>\n<tr>\n<td>VST-EXEC-01</td>\n<td>Actions contain admitted intent; runtime applies typed effects.</td>\n<td>action validators; execution and effects paths; transaction tests</td>\n<td>Validated</td>\n<td>External side effects are not universally reversible.</td>\n</tr>\n<tr>\n<td>VST-GOV-01</td>\n<td>Human access fails closed and graph governance participates in authorization.</td>\n<td>Actor admission, HTTP transport and graph-governance gate tests</td>\n<td>Validated</td>\n<td>Not a complete decentralized trust system.</td>\n</tr>\n<tr>\n<td>VST-EXT-01</td>\n<td>Core runtime boots with zero extensions; lifecycle is System-scoped.</td>\n<td>zero-kernel-diff, extension lifecycle and packaging tests</td>\n<td>Validated</td>\n<td>Untrusted code still lacks production isolation.</td>\n</tr>\n<tr>\n<td>VST-VAST-01</td>\n<td><code>vast/1</code> round-trips a System through disk under a different System ID with stable sealed identity.</td>\n<td><code>vast-package-roundtrip.test.ts</code>; commits b3ca7d1d and 13b16c6e</td>\n<td>Validated</td>\n<td>Experimental format; no public compatibility commitment.</td>\n</tr>\n<tr>\n<td>VST-VAST-02</td>\n<td>Subtree export declares or refuses boundary references.</td>\n<td><code>vast-package-vab-e2e.test.ts</code></td>\n<td>Validated</td>\n<td>General multi-package mount is not published as complete.</td>\n</tr>\n<tr>\n<td>VST-VAB-01</td>\n<td>A boot plan is bound to explicit assent by content hash.</td>\n<td><code>boot-plan-assent-seal.test.ts</code>; commit cb2d567c</td>\n<td>Validated</td>\n<td>Human-understanding quality remains an active research area.</td>\n</tr>\n<tr>\n<td>VST-VAB-02</td>\n<td>A VAB-born System can become a <code>.vast</code> file and re-enter a fresh runtime.</td>\n<td><code>vast-package-vab-e2e.test.ts</code>; commit 13b16c6e</td>\n<td>Validated</td>\n<td>Not the complete EA Genesis handover.</td>\n</tr>\n<tr>\n<td>VST-REPLAY-01</td>\n<td>Runtime snapshots and event records support deterministic reconstruction scenarios.</td>\n<td>snapshot, replay and proof-chain integration tests</td>\n<td>Validated</td>\n<td>Durable backend guarantees depend on deployment.</td>\n</tr>\n<tr>\n<td>VST-PERF-01</td>\n<td>Dedicated scaling, soak and containment benchmarks exist.</td>\n<td>benchmark scripts and benchmark tests</td>\n<td>Observed</td>\n<td>No general performance number published without reproducible machine metadata.</td>\n</tr>\n</tbody>\n</table>\n<h2 id=\"excluded-from-claims\">Excluded from claims</h2>\n<p>The working tree contained uncommitted <code>.vast</code> mount changes during review. They were inspected only as emerging work and are excluded from validated public claims. Likewise, contracts for sandboxing, signatures, trust tiers and federation are not described as operational enforcement unless a runtime path and test prove them.</p>\n<h2 id=\"reproduction-frame\">Reproduction frame</h2>\n<p>Repository: <code>onlythejoe/VASTE</code> (private). Reviewed commit: <code>a51c9897</code>. Declared engine: Node.js 22.12+. Primary gates: typecheck, test shards, runtime scaling smoke and module-vocabulary check. Exact results from this publication branch are recorded in the accompanying site audit, not inferred from old benchmark copy.</p>\n",
+  "headings": [
+    "Reading status",
+    "Evidence register",
+    "Excluded from claims",
+    "Reproduction frame"
+  ],
+  "headingItems": [
+    {
+      "level": 2,
+      "title": "Reading status",
+      "id": "reading-status"
+    },
+    {
+      "level": 2,
+      "title": "Evidence register",
+      "id": "evidence-register"
+    },
+    {
+      "level": 2,
+      "title": "Excluded from claims",
+      "id": "excluded-from-claims"
+    },
+    {
+      "level": 2,
+      "title": "Reproduction frame",
+      "id": "reproduction-frame"
+    }
+  ]
+}

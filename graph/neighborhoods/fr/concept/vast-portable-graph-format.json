@@ -1,0 +1,51 @@
+{
+  "id": "local:ea:concept:vast-portable-graph-format-fr",
+  "kind": "local",
+  "focus": "ea:concept:vast-portable-graph-format-fr",
+  "nodes": [
+    {
+      "id": "ea:concept:vast-portable-graph-format-fr",
+      "type": "concept",
+      "title": "Format de graphe portable .vast",
+      "route": "/fr/knowledge/concepts/vast-portable-graph-format/",
+      "status": "experimental",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:program:vaste-fr",
+      "type": "program",
+      "title": "VASTE",
+      "route": "/fr/programs/vaste/",
+      "status": "development",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:artefact:vaste-validation-record-fr",
+      "type": "artefact",
+      "title": "Registre des validations VASTE",
+      "route": "/fr/archive/artefacts/vaste-validation-record/",
+      "status": "active",
+      "confidence": "validated"
+    }
+  ],
+  "edges": [
+    {
+      "id": "ear:vaste-has-portable-format",
+      "source": "ea:program:vaste-fr",
+      "target": "ea:concept:vast-portable-graph-format-fr",
+      "predicate": "hasPart",
+      "label": "Has part",
+      "statement": "VASTE implements the experimental vast/1 portable graph package format for whole-System and subtree closures.",
+      "confidence": "validated"
+    },
+    {
+      "id": "ear:vast-format-evidenced-by-validation-record",
+      "source": "ea:concept:vast-portable-graph-format-fr",
+      "target": "ea:artefact:vaste-validation-record-fr",
+      "predicate": "evidencedBy",
+      "label": "Evidenced by",
+      "statement": "The validation record documents the implemented vast/1 round-trip and its trust and compatibility limits.",
+      "confidence": "validated"
+    }
+  ]
+}

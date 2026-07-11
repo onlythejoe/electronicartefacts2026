@@ -1,0 +1,90 @@
+{
+  "id": "ea:concept:situated-actors-and-governance",
+  "type": "concept",
+  "slug": {
+    "canonical": "situated-actors-and-governance"
+  },
+  "title": "Situated Actors and Topological Governance",
+  "definition": "In VASTE, an Actor is an extension-owned graph identity whose effective observation and action are resolved inside a specific System, Environment, topology and policy context.",
+  "abstract": "How VASTE separates identity, credentials, capabilities, policy and effective authority while placing the observer inside the graph.",
+  "description": "A public account of Actor identity, graph-derived governance, local authority and portable declarations in VASTE.",
+  "locale": "en",
+  "visibility": "public",
+  "publicationClass": "canonical",
+  "status": "experimental",
+  "maturity": "development",
+  "confidence": "validated",
+  "version": {
+    "version": "1.0.0",
+    "createdAt": "2026-07-11",
+    "publishedAt": "2026-07-11",
+    "modifiedAt": "2026-07-11"
+  },
+  "authors": [
+    {
+      "id": "ea:organization:electronic-artefacts"
+    }
+  ],
+  "publisher": "ea:organization:electronic-artefacts",
+  "tags": [
+    "VASTE",
+    "Actor",
+    "Governance",
+    "Identity",
+    "Capabilities"
+  ],
+  "disciplines": [
+    "Runtime Systems",
+    "Security Architecture"
+  ],
+  "scope": [
+    "Actor identity",
+    "Graph position",
+    "Capabilities and policy",
+    "Local authority"
+  ],
+  "exclusions": [
+    "Universal administrator",
+    "Portable live credentials",
+    "Completed decentralized identity stack"
+  ],
+  "claims": [
+    "Hosts cannot fabricate a human Actor or silently default to administrator.",
+    "Effective authority is resolved at execution time rather than implied by identity alone."
+  ],
+  "bodyHtml": "<h2 id=\"the-observer-is-inside\">The observer is inside</h2>\n<p>VASTE does not assume an omniscient user outside the graph. Actor is an extension-owned specialization represented through graph state, credentials and admitted sessions. An execution occurs in an immutable Environment, inside one System, and may stand at a specific <code>locationVertexId</code>. Accessible Surfaces and Actions depend on that situated context.</p>\n<h2 id=\"six-separate-questions\">Six separate questions</h2>\n<ol>\n<li><strong>Identity</strong> — which Actor Vertex is being resolved?</li>\n<li><strong>Credential</strong> — which local evidence binds the request to that identity?</li>\n<li><strong>Capability declaration</strong> — what operation shape may be requested?</li>\n<li><strong>Policy</strong> — which rules govern this System and location?</li>\n<li><strong>Authority</strong> — which execution boundary may interpret the Action?</li>\n<li><strong>Effective authorization</strong> — does this request pass every gate now?</li>\n</ol>\n<p>Collapsing these questions into a role string would erase the runtime’s main trust boundaries.</p>\n<h2 id=\"graph-derived-governance\">Graph-derived governance</h2>\n<p>The runtime contains a graph-authority seam registered by Actor. Governance records may therefore be read from the graph instead of a parallel global role table. System boundaries, containment and explicit Ties influence resolution, but topology does not grant authority by itself. Capabilities and policy checks remain explicit, and typed effect capabilities are enforced separately from permission to invoke a binding.</p>\n<h2 id=\"portable-governance-local-authority\">Portable governance, local authority</h2>\n<p>A <code>.vast</code> closure may preserve Actor vertices, roles, grants, delegations and governance declarations as graph data. It cannot carry an already admitted session or force the receiving Environment to trust a credential. Import must rebind local identity evidence and revalidate authority. Integrity of a package is not authorization to execute it.</p>\n<h2 id=\"current-evidence-and-limits\">Current evidence and limits</h2>\n<p>Internal tests cover Founding Actor admission, credential transport, fail-closed HTTP access, grant/revoke Actions and graph-governance gates. Complete revocation infrastructure, external attestation verification and distributed trust are not claimed as operational.</p>\n",
+  "headings": [
+    "The observer is inside",
+    "Six separate questions",
+    "Graph-derived governance",
+    "Portable governance, local authority",
+    "Current evidence and limits"
+  ],
+  "headingItems": [
+    {
+      "level": 2,
+      "title": "The observer is inside",
+      "id": "the-observer-is-inside"
+    },
+    {
+      "level": 2,
+      "title": "Six separate questions",
+      "id": "six-separate-questions"
+    },
+    {
+      "level": 2,
+      "title": "Graph-derived governance",
+      "id": "graph-derived-governance"
+    },
+    {
+      "level": 2,
+      "title": "Portable governance, local authority",
+      "id": "portable-governance-local-authority"
+    },
+    {
+      "level": 2,
+      "title": "Current evidence and limits",
+      "id": "current-evidence-and-limits"
+    }
+  ]
+}

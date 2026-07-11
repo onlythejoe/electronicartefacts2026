@@ -1,0 +1,68 @@
+{
+  "id": "local:ea:artefact:vaste-validation-record-fr",
+  "kind": "local",
+  "focus": "ea:artefact:vaste-validation-record-fr",
+  "nodes": [
+    {
+      "id": "ea:artefact:vaste-validation-record-fr",
+      "type": "artefact",
+      "title": "Registre des validations VASTE",
+      "route": "/fr/archive/artefacts/vaste-validation-record/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:program:vaste-fr",
+      "type": "program",
+      "title": "VASTE",
+      "route": "/fr/programs/vaste/",
+      "status": "development",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:concept:vast-portable-graph-format-fr",
+      "type": "concept",
+      "title": "Format de graphe portable .vast",
+      "route": "/fr/knowledge/concepts/vast-portable-graph-format/",
+      "status": "experimental",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:concept:vab-and-genesis-fr",
+      "type": "concept",
+      "title": "VAB et Genesis",
+      "route": "/fr/knowledge/concepts/vab-and-genesis/",
+      "status": "experimental",
+      "confidence": "validated"
+    }
+  ],
+  "edges": [
+    {
+      "id": "ear:vaste-evidenced-by-validation-record",
+      "source": "ea:program:vaste-fr",
+      "target": "ea:artefact:vaste-validation-record-fr",
+      "predicate": "evidencedBy",
+      "label": "Evidenced by",
+      "statement": "The VASTE Validation Record maps major public claims to internal contracts, implementation, tests, commits and limitations.",
+      "confidence": "validated"
+    },
+    {
+      "id": "ear:vast-format-evidenced-by-validation-record",
+      "source": "ea:concept:vast-portable-graph-format-fr",
+      "target": "ea:artefact:vaste-validation-record-fr",
+      "predicate": "evidencedBy",
+      "label": "Evidenced by",
+      "statement": "The validation record documents the implemented vast/1 round-trip and its trust and compatibility limits.",
+      "confidence": "validated"
+    },
+    {
+      "id": "ear:vab-evidenced-by-validation-record",
+      "source": "ea:concept:vab-and-genesis-fr",
+      "target": "ea:artefact:vaste-validation-record-fr",
+      "predicate": "evidencedBy",
+      "label": "Evidenced by",
+      "statement": "The validation record documents plan assent sealing and the internal VAB-to-vast end-to-end scenario.",
+      "confidence": "validated"
+    }
+  ]
+}

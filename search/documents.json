@@ -1,5 +1,41 @@
 [
   {
+    "id": "ea:artefact:vaste-validation-record",
+    "locale": "en",
+    "route": "/archive/artefacts/vaste-validation-record/",
+    "type": "artefact",
+    "title": "VASTE Validation Record",
+    "alternateNames": [],
+    "abstract": "A public, limitation-aware registry of VASTE claims backed by internal contracts, implementation and automated tests at repository commit a51c9897.",
+    "headings": [
+      "Reading status",
+      "Evidence register",
+      "Excluded from claims",
+      "Reproduction frame"
+    ],
+    "body": "Reading status “Validated” means an automated internal repository scenario exists and its code was inspected during this review. It does not mean independent certification, production operation or security assurance. Repository access is available during a bounded technical review. Evidence register ID Claim Repository evidence Status Limit VST-PRIM-01 The primitive roster is Vertex, Tie, Action, Surface, Environment. packages/contracts/src/primitives.ts ; src/primitives/* ; kernel-purity tests Validated Ontology can still evolve through explicit doctrine revision. VST-EXEC-01 Actions contain admitted intent; runtime applies typed effects. action validators; execution and effects paths; transaction tests Validated External side effects are not universally reversible. VST-GOV-01 Human access fails closed and graph governance participates in authorization. Actor admission, HTTP transport and graph-governance gate tests Validated Not a complete decentralized trust system. VST-EXT-01 Core runtime boots with zero extensions; lifecycle is System-scoped. zero-kernel-diff, extension lifecycle and packaging tests Validated Untrusted code still lacks production isolation. VST-VAST-01 vast/1 round-trips a System through disk under a different System ID with stable sealed identity. vast-package-roundtrip.test.ts ; commits b3ca7d1d and 13b16c6e Validated Experimental format; no public compatibility commitment. VST-VAST-02 Subtree export declares or refuses boundary references. vast-package-vab-e2e.test.ts Validated General multi-package mount is not published as complete. VST-VAB-01 A boot plan is bound to explicit assent by content hash. boot-plan-assent-seal.test.ts ; commit cb2d567c Validated Human-understanding quality remains an active research area. VST-VAB-02 A VAB-born System can become a .vast file and re-enter a fresh runtime. vast-package-vab-e2e.test.ts ; commit 13b16c6e Validated Not the complete EA Genesis handover. VST-REPLAY-01 Runtime snapshots and event records support deterministic reconstruction scenarios. snapshot, replay and proof-chain integration tests Validated Durable backend guarantees depend on deployment. VST-PERF-01 Dedicated scaling, soak and containment benchmarks exist. benchmark scripts and benchmark tests Observed No general performance number published without reproducible machine metadata. Excluded from claims The working tree contained uncommitted .vast mount changes during review. They were inspected only as emerging work and are excluded from validated public claims. Likewise, contracts for sandboxing, signatures, trust tiers and federation are not described as operational enforcement unless a runtime path and test prove them. Reproduction frame Repository: onlythejoe/VASTE (private). Reviewed commit: a51c9897 . Declared engine: Node.js 22.12+. Primary gates: typecheck, test shards, runtime scaling smoke and module-vocabulary check. Exact results from this publication branch are recorded in the accompanying site audit, not inferred from old benchmark copy.",
+    "tags": [
+      "VASTE",
+      "Evidence",
+      "Validation",
+      "Runtime"
+    ],
+    "questions": [],
+    "relationLabels": [
+      "evidencedBy The VASTE Validation Record maps major public claims to internal contracts, implementation, tests, commits and limitations.",
+      "evidencedBy The validation record documents the implemented vast/1 round-trip and its trust and compatibility limits.",
+      "evidencedBy The validation record documents plan assent sealing and the internal VAB-to-vast end-to-end scenario."
+    ],
+    "relatedEntityIds": [
+      "ea:program:vaste",
+      "ea:concept:vast-portable-graph-format",
+      "ea:concept:vab-and-genesis"
+    ],
+    "status": "active",
+    "confidence": "validated",
+    "modifiedAt": "2026-07-11"
+  },
+  {
     "id": "ea:artefact:voice-capture-studio-repository",
     "locale": "en",
     "route": "/archive/artefacts/voice-capture-studio-repository/",
@@ -1750,6 +1786,41 @@
     "modifiedAt": "2026-06-23"
   },
   {
+    "id": "ea:concept:situated-actors-and-governance",
+    "locale": "en",
+    "route": "/knowledge/concepts/situated-actors-and-governance/",
+    "type": "concept",
+    "title": "Situated Actors and Topological Governance",
+    "alternateNames": [],
+    "definition": "In VASTE, an Actor is an extension-owned graph identity whose effective observation and action are resolved inside a specific System, Environment, topology and policy context.",
+    "abstract": "How VASTE separates identity, credentials, capabilities, policy and effective authority while placing the observer inside the graph.",
+    "headings": [
+      "The observer is inside",
+      "Six separate questions",
+      "Graph-derived governance",
+      "Portable governance, local authority",
+      "Current evidence and limits"
+    ],
+    "body": "The observer is inside VASTE does not assume an omniscient user outside the graph. Actor is an extension-owned specialization represented through graph state, credentials and admitted sessions. An execution occurs in an immutable Environment, inside one System, and may stand at a specific locationVertexId . Accessible Surfaces and Actions depend on that situated context. Six separate questions Identity — which Actor Vertex is being resolved? Credential — which local evidence binds the request to that identity? Capability declaration — what operation shape may be requested? Policy — which rules govern this System and location? Authority — which execution boundary may interpret the Action? Effective authorization — does this request pass every gate now? Collapsing these questions into a role string would erase the runtime’s main trust boundaries. Graph-derived governance The runtime contains a graph-authority seam registered by Actor. Governance records may therefore be read from the graph instead of a parallel global role table. System boundaries, containment and explicit Ties influence resolution, but topology does not grant authority by itself. Capabilities and policy checks remain explicit, and typed effect capabilities are enforced separately from permission to invoke a binding. Portable governance, local authority A .vast closure may preserve Actor vertices, roles, grants, delegations and governance declarations as graph data. It cannot carry an already admitted session or force the receiving Environment to trust a credential. Import must rebind local identity evidence and revalidate authority. Integrity of a package is not authorization to execute it. Current evidence and limits Internal tests cover Founding Actor admission, credential transport, fail-closed HTTP access, grant/revoke Actions and graph-governance gates. Complete revocation infrastructure, external attestation verification and distributed trust are not claimed as operational.",
+    "tags": [
+      "VASTE",
+      "Actor",
+      "Governance",
+      "Identity",
+      "Capabilities"
+    ],
+    "questions": [],
+    "relationLabels": [
+      "hasPart VASTE resolves Actor identity and effective authority inside a System, Environment, topology and policy context."
+    ],
+    "relatedEntityIds": [
+      "ea:program:vaste"
+    ],
+    "status": "experimental",
+    "confidence": "validated",
+    "modifiedAt": "2026-07-11"
+  },
+  {
     "id": "ea:concept:speech-datasets",
     "locale": "en",
     "route": "/knowledge/concepts/speech-datasets/",
@@ -1896,6 +1967,149 @@
     "modifiedAt": "2026-06-24"
   },
   {
+    "id": "ea:concept:vab-and-genesis",
+    "locale": "en",
+    "route": "/knowledge/concepts/vab-and-genesis/",
+    "type": "concept",
+    "title": "VAB and Genesis",
+    "alternateNames": [],
+    "definition": "VAB is VASTE’s Assisted Boot orchestration path for understanding an initial intent, composing a sealed plan, admitting a Founding Actor and materializing a governed starting graph.",
+    "abstract": "What VAB currently implements, how explicit assent seals a boot plan, and what remains before a complete Electronic Artefacts Genesis handover.",
+    "headings": [
+      "Role",
+      "Current path",
+      "Founding Actor",
+      "Genesis versus implementation",
+      "Remaining thresholds"
+    ],
+    "body": "Role VAB is a boot orchestrator and conversational Surface, not another runtime and not necessarily the permanent assistant after boot. Its task is to turn first intent into an inspectable proposal, secure assent to the exact declarative plan, and invoke runtime-owned creation paths. Current path The repository implements conversation sessions, cognitive state composition, heuristic fallback and configured model invocation, streaming output, speech affordances, extension selection, Founding Actor admission, restart reconciliation and a web boot Surface. A boot plan carries an assentedPlanHash ; changing the plan after assent invalidates the seal. The working sequence is: conversation → interpreted needs → graph and extension proposal → explicit assent seal → governed creation → living System Surface Internal E2E validation continues from a born System to .vast export, fresh import and stable package identity. Founding Actor The Founding Actor is the first admitted human identity for the born System. This does not make the Actor universally omnipotent. Credentials, session admission, capabilities and graph governance remain separate runtime checks. Genesis versus implementation Genesis names the governed birth of a useful System. Electronic Artefacts Genesis would additionally require organizational root data, governance, registries, operational Surfaces, durable recovery and an approved handover into a candidate Environment. The repository provides important pieces but does not yet demonstrate that complete operational loop. Remaining thresholds durable and reviewable provisioning across failures; explicit rollback and recovery behavior; local credential and authority rebinding after import; security review of model, extension and package trust boundaries; one real EA graph operated, exported, revalidated and handed over without authority bypass.",
+    "tags": [
+      "VASTE",
+      "VAB",
+      "Assisted Boot",
+      "Genesis"
+    ],
+    "questions": [],
+    "relationLabels": [
+      "partOf VAB is the Assisted Boot orchestration path used to propose and materialize a governed VASTE System.",
+      "evidencedBy The validation record documents plan assent sealing and the internal VAB-to-vast end-to-end scenario."
+    ],
+    "relatedEntityIds": [
+      "ea:program:vaste",
+      "ea:artefact:vaste-validation-record"
+    ],
+    "status": "experimental",
+    "confidence": "validated",
+    "modifiedAt": "2026-07-11"
+  },
+  {
+    "id": "ea:concept:vast-portable-graph-format",
+    "locale": "en",
+    "route": "/knowledge/concepts/vast-portable-graph-format/",
+    "type": "concept",
+    "title": ".vast Portable Graph Format",
+    "alternateNames": [],
+    "definition": "A .vast file is an experimental `vast/1` sealed JSON package carrying a System-relative whole-System or subtree closure, its manifest and integrity hash—not a live Environment.",
+    "abstract": "The implemented .vast export/import model, integrity guarantees, boundary references, tested round-trip and unresolved trust and migration limits.",
+    "headings": [
+      "Implemented meaning",
+      "Two closure forms",
+      "Verified round-trip",
+      "Portable versus local",
+      "Limits"
+    ],
+    "body": "Implemented meaning .vast is a file convention backed by runtime code, not an acronym expanded by the contracts. The repository does not establish “Vertex Action Surface Tie” as the technical meaning of the name. Version vast/1 serializes a portable closure in JSON. The canonical body contains System-relative vertices and ties. The manifest records package ID and version, closure kind and root, vertex and tie counts, compatibility, boundary references and a SHA-256 packageHash . Stable canonicalization makes identity independent from the target System ID. Two closure forms System closure exports the complete structural partition, including its root Vertex. Subtree closure follows containment from an anchor. Ties crossing the selected boundary must be refused or externalized as declared references; they cannot be silently copied. Verified round-trip The internal round-trip scenario is concrete: export System A → write .vast JSON → read and verify → import into a fresh runtime as System B → execute a canonical Action → re-export an untouched import → compare packageHash Tests verify identical sealed identity before subsequent writes, continued runtime execution after import, rejection of unsupported format versions, tamper rejection and collision failure. Another E2E scenario exports a VAB-born production graph and a lived-in Workspace subtree. Portable versus local Portable: graph identity relative to the package, Vertex/Tie data, structural closure, manifest, provenance declarations, compatibility and boundary references. Local: active Environment, credentials, secrets, processes, filesystem placement, provider configuration, resource grants and effective authority. These must be resolved or revalidated on arrival. Limits vast/1 is experimental. A package hash provides integrity, not author trust. Signature and provenance structures are not yet a marketplace-grade verification chain. Multi-package mounting, atomic upgrade, migrations, resource limits and hostile-input hardening are not presented as released guarantees. Current tests are internal repository validation, not independent certification.",
+    "tags": [
+      "VASTE",
+      "Portability",
+      "Graph Closure",
+      "Integrity"
+    ],
+    "questions": [],
+    "relationLabels": [
+      "hasPart VASTE implements the experimental vast/1 portable graph package format for whole-System and subtree closures.",
+      "evidencedBy The validation record documents the implemented vast/1 round-trip and its trust and compatibility limits."
+    ],
+    "relatedEntityIds": [
+      "ea:program:vaste",
+      "ea:artefact:vaste-validation-record"
+    ],
+    "status": "experimental",
+    "confidence": "validated",
+    "modifiedAt": "2026-07-11"
+  },
+  {
+    "id": "ea:concept:vaste-extension-architecture",
+    "locale": "en",
+    "route": "/knowledge/concepts/vaste-extension-architecture/",
+    "type": "concept",
+    "title": "VASTE Extension Architecture",
+    "alternateNames": [],
+    "definition": "A VASTE extension is an optional, System-scoped capability unit that declares domain actions, bindings and surfaces while runtime authority remains in the core execution path.",
+    "abstract": "Extension manifests, lifecycle, measured families, zero-extension boot, Intelligence boundaries and the current in-process trust limit.",
+    "headings": [
+      "Boundary",
+      "Lifecycle",
+      "Measured families",
+      "Intelligence",
+      "Trust limit"
+    ],
+    "body": "Boundary Extensions add meaning and optional capability without changing the primitive vocabulary. They may own actions, manifests, bindings, domains and Surface specifications. The runtime still owns namespace registration, routing, scheduling, execution, typed effects, mutation and lifecycle state. A manifest requests capability; it does not grant itself permission. Lifecycle The current runtime has install, enable, disable, upgrade and remove Actions. Artifacts and registrations are System-scoped. Installation does not imply that a Surface is exposed, and disabling an extension must not erase canonical graph truth. Tests cover packaging, identity, lifecycle tooling, coupling rules and boot with zero extensions. Measured families The repository’s coupling census groups current extensions into five families: Foundational — Actor, Knowledge, Assets and graph-adjacent meaning. Coordination — Flow, Program and Simulation orchestration. Knowledge and cognition — World Model, Intelligence and Perception. Experience — Workspace, Studio, Expression and projection. Tooling — SDK and supporting authoring boundaries. This is an architectural taxonomy, not a claim that every directory is equally complete. Some contain executable registration and Actions; others are partial or doctrine-led. Intelligence Intelligence is an advisory extension with provider adapters and model configuration. It may propose structured output or stream language, but it does not bypass Actor admission, policy or Action execution. Provider, model and runtime capability remain distinct. Trust limit Trusted first-party extensions currently execute in-process. Contracts describe package provenance, signatures, trust tiers, grants and future sandbox execution, but cryptographic verification and marketplace-grade isolation are incomplete. Therefore VASTE does not yet treat arbitrary third-party extensions as safe.",
+    "tags": [
+      "VASTE",
+      "Extensions",
+      "Runtime",
+      "Intelligence"
+    ],
+    "questions": [],
+    "relationLabels": [
+      "hasPart VASTE extends the runtime through optional System-scoped capability units without changing the five primitives."
+    ],
+    "relatedEntityIds": [
+      "ea:program:vaste"
+    ],
+    "status": "experimental",
+    "confidence": "validated",
+    "modifiedAt": "2026-07-11"
+  },
+  {
+    "id": "ea:concept:vaste-five-primitives",
+    "locale": "en",
+    "route": "/knowledge/concepts/vaste-five-primitives/",
+    "type": "concept",
+    "title": "The Five VASTE Primitives",
+    "alternateNames": [],
+    "definition": "VASTE has a closed primitive roster—Vertex, Tie, Action, Surface and Environment—from which graph identity, topology, admitted change, observation and execution-local context are composed.",
+    "abstract": "A contract-grounded guide to the five irreducible VASTE primitives, their invariants and the concepts that must not be mistaken for primitives.",
+    "headings": [
+      "Closed vocabulary",
+      "Vertex",
+      "Tie",
+      "Action",
+      "Surface",
+      "Environment",
+      "Boundaries that matter",
+      "Evidence and limit"
+    ],
+    "body": "Closed vocabulary VASTE permits no sixth primitive. Operationally important concepts such as System, Actor, Workspace, Program, projection, host and extension are composed above the primitive layer. This keeps the kernel independent from product meaning. Vertex A Vertex is behaviorless data with id , systemId , a namespaced type , serializable data and optional metadata. The validator rejects functions, circular structures, non-finite numbers and invalid metadata versions. Every Vertex belongs to exactly one System partition. A freshly bootstrapped System is represented by a system:root Vertex; shared systemId establishes membership, while explicit Ties refine nested topology. Tie A Tie is a directed relation with its own ID, System, endpoints, namespaced type, domain reference and metadata. The runtime validates endpoint and System boundaries. Cross-System relations require both an explicit allowance and target System ID. A Tie is topology, not a hidden mutation channel. Action An Action describes admitted intent. The primitive contract requires it to be declarative, serializable, replayable and deterministic, with namespace, authority, access level, input/output contracts, preconditions, postconditions, failure modes and state transitions. Primitive validation rejects embedded handlers and direct mutation fields. Routing and effects belong to the runtime. Surface Surface is the authorityless membrane through which a Vertex-System may be observed or interacted with. Its invariant scanner rejects runtime, store, dispatch and mutation-like fields. SurfaceSpec enriches the membrane; lifecycle and projection state are runtime-owned. A Surface can be materialized as web, shell, API, stream or another support, but the support is not its identity. Environment Environment is immutable and recreated for an execution. It carries the resolved System, identity and authority claims, permissions, invocation scope, trace, execution tick, resource budgets and optional graph location. It explicitly carries no persistence, state storage, computation results or cross-execution accumulation. Boundaries that matter System : isolation partition plus root closure; compatibility/runtime boundary, not primitive. Actor : identity and admission extension; typically represented by specialized Vertices. Partition : all graph records scoped by one systemId . Closure : selected portable structural content, either an entire partition or a contained subtree. Projection : derived observation; never canonical state by itself. Environment : local execution context, excluded from portable graph packages. Evidence and limit Contracts live in packages/contracts/src/primitives.ts ; runtime validators live in src/primitives ; integration tests cover namespace, boundaries, execution and kernel purity. These internal validations support the primitive claims. They do not establish that every extension or future platform layer is complete.",
+    "tags": [
+      "VASTE",
+      "Runtime",
+      "Primitives",
+      "Graph"
+    ],
+    "questions": [],
+    "relationLabels": [
+      "hasPart VASTE is composed from the closed primitive roster Vertex, Tie, Action, Surface and Environment."
+    ],
+    "relatedEntityIds": [
+      "ea:program:vaste"
+    ],
+    "status": "experimental",
+    "confidence": "validated",
+    "modifiedAt": "2026-07-11"
+  },
+  {
     "id": "ea:concept:voice-technology",
     "locale": "en",
     "route": "/knowledge/concepts/voice-technology/",
@@ -1969,6 +2183,42 @@
     "status": "active",
     "confidence": "validated",
     "modifiedAt": "2026-06-24"
+  },
+  {
+    "id": "ea:artefact:vaste-validation-record-fr",
+    "locale": "fr",
+    "route": "/fr/archive/artefacts/vaste-validation-record/",
+    "type": "artefact",
+    "title": "Registre des validations VASTE",
+    "alternateNames": [],
+    "abstract": "Registre public et limité des claims VASTE soutenus par contrats, implémentation et tests internes au commit a51c9897.",
+    "headings": [
+      "Lecture du statut",
+      "Registre",
+      "Claims exclus",
+      "Cadre"
+    ],
+    "body": "Lecture du statut « Validé » signifie qu’un scénario automatisé interne existe et que son code a été inspecté. Ce n’est ni une certification indépendante, ni une preuve de production, ni une assurance de sécurité. Le dépôt est accessible lors d’une revue technique bornée. Registre ID Claim Preuve interne Statut Limite VST-PRIM-01 Cinq primitives fermées. Contrats, validateurs et tests de pureté kernel Validé Ontologie révisable explicitement. VST-EXEC-01 Action décrit l’intention ; le runtime applique les effets. Execution, effects et tests transactionnels Validé Effets externes pas tous réversibles. VST-GOV-01 Accès humain fail-closed et gouvernance issue du graphe. Tests Actor, HTTP et graph governance Validé Confiance distribuée incomplète. VST-EXT-01 Boot sans extension et lifecycle par System. Tests lifecycle, packaging, Zero Kernel Diff Validé Isolation du code non fiable incomplète. VST-VAST-01 Round-trip vast/1 par fichier sous un autre System ID. Test round-trip ; commits b3ca7d1d et 13b16c6e Validé Format expérimental. VST-VAST-02 Les frontières d’un sous-arbre sont refusées ou déclarées. Test E2E VAB/package Validé Montage multiple non déclaré complet. VST-VAB-01 Assentiment lié au hash exact du plan. Test assent seal ; commit cb2d567c Validé Qualité de compréhension encore étudiée. VST-VAB-02 Un System né via VAB peut devenir .vast puis être réimporté. Test E2E ; commit 13b16c6e Validé Pas le handover EA complet. VST-REPLAY-01 Snapshots et événements reconstruisent des scénarios déterministes. Tests snapshot, replay, proof chain Validé Durabilité selon backend. VST-PERF-01 Des benchmarks scaling et soak existent. Scripts et tests benchmark Observé Aucun chiffre général sans machine reproductible. Claims exclus Le working tree contenait des changements .vast non commités. Ils sont traités comme travail émergent et exclus. Sandboxing, signatures, trust tiers et fédération ne sont pas décrits comme enforcement opérationnel sans chemin runtime et test. Cadre Dépôt privé onlythejoe/VASTE , commit revu a51c9897 , Node.js 22.12+ déclaré. Les gates principaux sont typecheck, tests shardés, smoke benchmark runtime et contrôle du vocabulaire kernel.",
+    "tags": [
+      "VASTE",
+      "Preuves",
+      "Validation",
+      "Runtime"
+    ],
+    "questions": [],
+    "relationLabels": [
+      "evidencedBy The VASTE Validation Record maps major public claims to internal contracts, implementation, tests, commits and limitations.",
+      "evidencedBy The validation record documents the implemented vast/1 round-trip and its trust and compatibility limits.",
+      "evidencedBy The validation record documents plan assent sealing and the internal VAB-to-vast end-to-end scenario."
+    ],
+    "relatedEntityIds": [
+      "ea:program:vaste",
+      "ea:concept:vast-portable-graph-format",
+      "ea:concept:vab-and-genesis"
+    ],
+    "status": "active",
+    "confidence": "validated",
+    "modifiedAt": "2026-07-11"
   },
   {
     "id": "ea:artefact:voice-capture-studio-repository-fr",
@@ -3665,6 +3915,41 @@
     "modifiedAt": "2026-06-25"
   },
   {
+    "id": "ea:concept:situated-actors-and-governance-fr",
+    "locale": "fr",
+    "route": "/fr/knowledge/concepts/situated-actors-and-governance/",
+    "type": "concept",
+    "title": "Actors situés et gouvernance topologique",
+    "alternateNames": [],
+    "definition": "Dans VASTE, un Actor est une identité de graphe possédée par une extension ; observation et action effectives sont résolues dans un System, un Environment, une topologie et une policy précis.",
+    "abstract": "Comment VASTE sépare identité, credentials, capabilities, policy et autorité effective en plaçant l’observateur dans le graphe.",
+    "headings": [
+      "L’observateur est à l’intérieur",
+      "Six questions distinctes",
+      "Gouvernance dérivée du graphe",
+      "Gouvernance portable, autorité locale",
+      "Preuves et limites"
+    ],
+    "body": "L’observateur est à l’intérieur VASTE ne suppose pas un utilisateur omniscient extérieur au graphe. Actor est une spécialisation possédée par une extension, représentée par état de graphe, credentials et sessions admises. Une exécution se produit dans un Environment immuable, au sein d’un System, éventuellement depuis un locationVertexId . Surfaces et Actions accessibles dépendent de ce contexte situé. Six questions distinctes Identité : quel Actor Vertex est résolu ? Credential : quelle preuve locale relie la requête à cette identité ? Capability déclarée : quelle opération peut être demandée ? Policy : quelles règles gouvernent ce System et cette position ? Autorité : quelle frontière peut interpréter l’Action ? Autorisation effective : la requête passe-t-elle tous les gates maintenant ? Gouvernance dérivée du graphe Le runtime possède une seam d’autorité enregistrée par Actor. Les enregistrements de gouvernance peuvent être lus depuis le graphe plutôt que depuis une table globale parallèle. Frontières System, containment et Ties participent à la résolution, mais la topologie ne confère pas seule une autorité. Capabilities et policies restent explicites ; invoquer un binding et appliquer un effet sont deux contrôles séparés. Gouvernance portable, autorité locale Une clôture .vast peut conserver Actors, rôles, grants, délégations et déclarations de gouvernance. Elle ne transporte ni session admise ni confiance forcée dans un credential. L’import doit relier les preuves locales et revalider l’autorité. L’intégrité du package n’est pas une autorisation d’exécution. Preuves et limites Les tests internes couvrent Founding Actor, transport de credentials, accès HTTP fail-closed, Actions de grant/revoke et gates de gouvernance. Révocation complète, attestations externes et confiance distribuée ne sont pas déclarées opérationnelles.",
+    "tags": [
+      "VASTE",
+      "Actor",
+      "Gouvernance",
+      "Identité",
+      "Capabilities"
+    ],
+    "questions": [],
+    "relationLabels": [
+      "hasPart VASTE resolves Actor identity and effective authority inside a System, Environment, topology and policy context."
+    ],
+    "relatedEntityIds": [
+      "ea:program:vaste"
+    ],
+    "status": "experimental",
+    "confidence": "validated",
+    "modifiedAt": "2026-07-11"
+  },
+  {
     "id": "ea:concept:speech-datasets-fr",
     "locale": "fr",
     "route": "/fr/knowledge/concepts/speech-datasets/",
@@ -3806,6 +4091,149 @@
     "status": "active",
     "confidence": "canonical",
     "modifiedAt": "2026-06-25"
+  },
+  {
+    "id": "ea:concept:vab-and-genesis-fr",
+    "locale": "fr",
+    "route": "/fr/knowledge/concepts/vab-and-genesis/",
+    "type": "concept",
+    "title": "VAB et Genesis",
+    "alternateNames": [],
+    "definition": "VAB est le chemin d’orchestration Assisted Boot de VASTE : comprendre l’intention initiale, composer un plan scellé, admettre un Founding Actor et matérialiser un graphe initial gouverné.",
+    "abstract": "Ce que VAB implémente, comment l’assentiment scelle un plan de boot et ce qui manque avant un handover Electronic Artefacts Genesis complet.",
+    "headings": [
+      "Rôle",
+      "Chemin actuel",
+      "Founding Actor",
+      "Genesis et implémentation",
+      "Seuils restants"
+    ],
+    "body": "Rôle VAB est un orchestrateur de boot et une Surface conversationnelle, pas un autre runtime ni nécessairement l’assistant permanent. Il transforme une intention initiale en proposition inspectable, obtient l’assentiment au plan déclaratif exact et invoque les chemins de création possédés par le runtime. Chemin actuel Le dépôt implémente sessions de conversation, composition d’état cognitif, fallback heuristique et invocation de modèle configuré, streaming, parole, sélection d’extensions, admission du Founding Actor, réconciliation après redémarrage et Surface web. Le plan porte un assentedPlanHash ; toute modification après assentiment invalide le scellement. conversation → besoins interprétés → proposition graphe/extensions → scellement d’assentiment → création gouvernée → Surface du System vivant Le test E2E interne poursuit ce chemin jusqu’à l’export .vast , l’import neuf et l’identité stable du package. Founding Actor Le Founding Actor est la première identité humaine admise dans le System né. Il ne devient pas un administrateur universel. Credentials, session, capabilities et gouvernance du graphe restent des contrôles distincts. Genesis et implémentation Genesis désigne la naissance gouvernée d’un System utile. Electronic Artefacts Genesis exige en plus racine organisationnelle, gouvernance, registries, Surfaces opérationnelles, récupération durable et handover approuvé vers un Environment candidat. Le dépôt fournit des pièces importantes sans démontrer encore cette boucle opérationnelle complète. Seuils restants provisioning durable et révisable après défaillance ; rollback et recovery explicites ; rebinding local des credentials et autorités après import ; audit sécurité des frontières modèles, extensions et packages ; premier graphe EA réellement opéré, exporté, revalidé et transmis sans bypass d’autorité.",
+    "tags": [
+      "VASTE",
+      "VAB",
+      "Assisted Boot",
+      "Genesis"
+    ],
+    "questions": [],
+    "relationLabels": [
+      "partOf VAB is the Assisted Boot orchestration path used to propose and materialize a governed VASTE System.",
+      "evidencedBy The validation record documents plan assent sealing and the internal VAB-to-vast end-to-end scenario."
+    ],
+    "relatedEntityIds": [
+      "ea:program:vaste",
+      "ea:artefact:vaste-validation-record"
+    ],
+    "status": "experimental",
+    "confidence": "validated",
+    "modifiedAt": "2026-07-11"
+  },
+  {
+    "id": "ea:concept:vast-portable-graph-format-fr",
+    "locale": "fr",
+    "route": "/fr/knowledge/concepts/vast-portable-graph-format/",
+    "type": "concept",
+    "title": "Format de graphe portable .vast",
+    "alternateNames": [],
+    "definition": "Un fichier .vast est un package JSON scellé expérimental `vast/1` qui transporte une clôture relative au System — System entier ou sous-arbre — avec manifeste et hash d’intégrité, jamais un Environment vivant.",
+    "abstract": "Modèle d’export/import .vast implémenté, garanties d’intégrité, références de frontière, round-trip testé et limites de confiance et migration.",
+    "headings": [
+      "Sens implémenté",
+      "Deux formes de clôture",
+      "Round-trip validé",
+      "Portable et local",
+      "Limites"
+    ],
+    "body": "Sens implémenté .vast est une convention de fichier soutenue par le runtime, pas un acronyme développé par les contrats. Le dépôt n’établit pas « Vertex Action Surface Tie » comme signification technique. vast/1 sérialise une clôture portable en JSON. Le corps canonique contient Vertices et Ties relatifs au System. Le manifeste enregistre ID et version du package, type et racine de clôture, compteurs, compatibilité, références de frontière et packageHash SHA-256. La canonicalisation stable rend l’identité indépendante du System ID d’arrivée. Deux formes de clôture System closure : partition structurelle complète avec Vertex racine. Subtree closure : containment depuis une ancre. Les Ties traversant la frontière sont refusés ou externalisés comme références déclarées, jamais copiés silencieusement. Round-trip validé Le scénario interne exporte le System A, écrit puis relit le JSON, vérifie le scellement, importe dans un runtime neuf comme System B, poursuit l’exécution canonique et compare le hash d’un réexport avant nouvelle écriture. Les tests couvrent aussi version inconnue, altération et collision. Un scénario E2E exporte un graphe né via VAB et un sous-arbre Workspace utilisé. Portable et local Sont portables : identité relative, données Vertex/Tie, structure, manifeste, déclarations de provenance, compatibilité et références de frontière. Restent locaux : Environment actif, credentials, secrets, processus, emplacement filesystem, providers, grants de ressources et autorité effective. Ils doivent être résolus ou revalidés à l’arrivée. Limites vast/1 est expérimental. Un hash prouve l’intégrité, pas l’identité de l’auteur. Signatures et provenance ne forment pas encore une chaîne de confiance marketplace. Montage multiple, upgrade atomique, migrations, limites de ressources et durcissement hostile ne sont pas présentés comme garanties livrées.",
+    "tags": [
+      "VASTE",
+      "Portabilité",
+      "Graph Closure",
+      "Intégrité"
+    ],
+    "questions": [],
+    "relationLabels": [
+      "hasPart VASTE implements the experimental vast/1 portable graph package format for whole-System and subtree closures.",
+      "evidencedBy The validation record documents the implemented vast/1 round-trip and its trust and compatibility limits."
+    ],
+    "relatedEntityIds": [
+      "ea:program:vaste",
+      "ea:artefact:vaste-validation-record"
+    ],
+    "status": "experimental",
+    "confidence": "validated",
+    "modifiedAt": "2026-07-11"
+  },
+  {
+    "id": "ea:concept:vaste-extension-architecture-fr",
+    "locale": "fr",
+    "route": "/fr/knowledge/concepts/vaste-extension-architecture/",
+    "type": "concept",
+    "title": "Architecture d’extensions VASTE",
+    "alternateNames": [],
+    "definition": "Une extension VASTE est une unité optionnelle de capability, limitée à un System, qui déclare actions de domaine, bindings et Surfaces tandis que l’autorité runtime reste dans le chemin d’exécution central.",
+    "abstract": "Manifests, lifecycle, familles mesurées, boot sans extension, frontière Intelligence et limite de confiance in-process.",
+    "headings": [
+      "Frontière",
+      "Lifecycle",
+      "Familles mesurées",
+      "Intelligence",
+      "Limite de confiance"
+    ],
+    "body": "Frontière Les extensions ajoutent sens et capabilities sans changer les primitives. Elles possèdent actions, manifests, bindings, domaines et Surface specs ; le runtime conserve namespaces, routage, scheduling, exécution, effets typés, mutation et lifecycle. Un manifest demande une capability, il ne s’accorde pas une permission. Lifecycle Install, enable, disable, upgrade et remove existent. Artifacts et registrations sont limités au System. Installer n’expose pas automatiquement une Surface ; désactiver ne doit pas effacer la vérité canonique. Les tests couvrent packaging, identité, lifecycle, couplage et boot sans extension. Familles mesurées Le recensement du dépôt regroupe les extensions en cinq familles : foundational ; coordination ; knowledge et cognition ; experience ; tooling. Actor, Knowledge, Assets, Flow, Program, Simulation, World Model, Intelligence, Perception, Workspace, Studio, Expression et SDK n’ont pas tous la même maturité. Certains ont registrations et Actions exécutables ; d’autres restent partiels ou doctrinaux. Intelligence Intelligence est une extension consultative avec adapters de providers et configuration de modèles. Elle peut proposer une sortie structurée ou diffuser du langage ; elle ne contourne ni admission Actor, ni policy, ni Action. Provider, modèle et capability runtime restent distincts. Limite de confiance Les extensions first-party de confiance s’exécutent actuellement in-process. Provenance, signatures, trust tiers, grants et sandbox futur ont des contrats, mais vérification cryptographique et isolation marketplace sont incomplètes. VASTE ne considère donc pas encore du code tiers arbitraire comme sûr.",
+    "tags": [
+      "VASTE",
+      "Extensions",
+      "Runtime",
+      "Intelligence"
+    ],
+    "questions": [],
+    "relationLabels": [
+      "hasPart VASTE extends the runtime through optional System-scoped capability units without changing the five primitives."
+    ],
+    "relatedEntityIds": [
+      "ea:program:vaste"
+    ],
+    "status": "experimental",
+    "confidence": "validated",
+    "modifiedAt": "2026-07-11"
+  },
+  {
+    "id": "ea:concept:vaste-five-primitives-fr",
+    "locale": "fr",
+    "route": "/fr/knowledge/concepts/vaste-five-primitives/",
+    "type": "concept",
+    "title": "Les cinq primitives de VASTE",
+    "alternateNames": [],
+    "definition": "VASTE possède un vocabulaire fermé de cinq primitives — Vertex, Tie, Action, Surface et Environment — qui composent identité de graphe, topologie, changement admis, observation et contexte local d’exécution.",
+    "abstract": "Guide fondé sur les contrats des cinq primitives irréductibles de VASTE, de leurs invariants et des notions qui ne doivent pas être prises pour des primitives.",
+    "headings": [
+      "Vocabulaire fermé",
+      "Vertex",
+      "Tie",
+      "Action",
+      "Surface",
+      "Environment",
+      "Frontières essentielles",
+      "Preuve et limite"
+    ],
+    "body": "Vocabulaire fermé VASTE n’autorise aucune sixième primitive. System, Actor, Workspace, Program, projection, host et extension sont composés au-dessus de cette couche. Le kernel reste ainsi indépendant du sens des produits. Vertex Un Vertex est une donnée sans comportement avec id , systemId , type namespaced, data sérialisable et métadonnées optionnelles. Le validateur refuse fonctions, références circulaires, nombres non finis et versions invalides. Chaque Vertex appartient à une partition System. Un System neuf possède un Vertex system:root ; le systemId établit l’appartenance, les Ties précisent la topologie. Tie Un Tie est une relation orientée possédant ID, System, extrémités, type namespaced, référence de domaine et métadonnées. Les frontières d’endpoints et de System sont validées. Toute relation inter-System doit déclarer explicitement permission et cible. Un Tie n’est pas un canal de mutation caché. Action Une Action décrit une intention admise. Son contrat impose forme déclarative, sérialisable, rejouable et déterministe, namespace, autorité, niveau d’accès, entrées/sorties, préconditions, postconditions, erreurs et transitions. La validation refuse handlers et champs de mutation directe. Routage et effets appartiennent au runtime. Surface Surface est la membrane sans autorité par laquelle un Vertex-System est observé ou sollicité. Son invariant refuse les champs de runtime, store, dispatch ou mutation. SurfaceSpec enrichit cette membrane ; lifecycle et projection restent au runtime. Web, shell, API ou stream sont des supports, pas l’identité de la Surface. Environment Environment est immuable et recréé pour chaque exécution. Il transporte System résolu, identité, claims d’autorité, permissions, scope, trace, tick, budgets et éventuellement une position dans le graphe. Il ne conserve explicitement ni persistance, ni état métier, ni résultat entre deux exécutions. Frontières essentielles System : partition d’isolation et clôture racine, pas une primitive. Actor : extension d’identité et d’admission. Partition : enregistrements portant un même systemId . Closure : structure portable sélectionnée, System entier ou sous-arbre. Projection : observation dérivée, jamais vérité canonique par elle-même. Environment : contexte local exclu des packages portables. Preuve et limite Les contrats sont dans packages/contracts/src/primitives.ts , les validateurs dans src/primitives , et les tests couvrent namespaces, frontières, exécution et pureté du kernel. Ces validations internes soutiennent les claims sur les primitives, pas l’achèvement de chaque extension ou couche future.",
+    "tags": [
+      "VASTE",
+      "Runtime",
+      "Primitives",
+      "Graphe"
+    ],
+    "questions": [],
+    "relationLabels": [
+      "hasPart VASTE is composed from the closed primitive roster Vertex, Tie, Action, Surface and Environment."
+    ],
+    "relatedEntityIds": [
+      "ea:program:vaste"
+    ],
+    "status": "experimental",
+    "confidence": "validated",
+    "modifiedAt": "2026-07-11"
   },
   {
     "id": "ea:concept:voice-technology-fr",
@@ -4026,23 +4454,32 @@
     "type": "program",
     "title": "VASTE",
     "alternateNames": [],
-    "abstract": "VASTE est la future plateforme runtime d’Electronic Artefacts, actuellement en R&D, avec un horizon de livraison en 2027.",
+    "abstract": "VASTE est un runtime graph-native expérimental pour construire des systèmes portables, contextuels et gouvernés à partir de cinq primitives : Vertex, Tie, Action, Surface et Environment.",
     "headings": [
-      "Mandat",
-      "Fondation de recherche",
-      "Architecture",
-      "Héritage",
-      "Applications de recherche",
-      "État et limites"
+      "Définition",
+      "Pourquoi VASTE existe",
+      "Modèle runtime",
+      "Les cinq primitives",
+      "Exécution gouvernée",
+      "Actors situés",
+      "Portabilité `.vast`",
+      "VAB — Assisted Boot",
+      "Architecture d’extensions",
+      "Intelligence optionnelle",
+      "Implémentation actuelle",
+      "Registre de preuves",
+      "Limites",
+      "Electronic Artefacts Genesis",
+      "Accès"
     ],
-    "body": "Mandat VASTE est la future plateforme runtime développée au sein d’Electronic Artefacts. Elle est actuellement en R&amp;D et explore les architectures de graphe, l’exécution contextuelle, les systèmes d’identité, les environnements de simulation, les structures de connaissance et la construction de mondes modulaires. Son horizon de livraison est 2027. VASTE n’est aujourd’hui ni un produit public, ni un téléchargement, ni un service commercial. La fiche publique présente la direction de la recherche et les questions architecturales en cours ; disponibilité, interfaces et modalités d’accès seront annoncées lorsque la plateforme sera prête. Fondation de recherche Le programme rend Runtime Theory opérationnelle. Il traite entités, relations, identité et contexte comme des préoccupations exécutables du système, et pas seulement comme des questions de base de données ou d’interface. Architecture L’architecture actuelle repose sur des entités de graphe adressables, des relations typées, une identité contextuelle et la propagation d’événements. Les prototypes de recherche peuvent construire des interfaces spécialisées tout en conservant une sémantique commune. Le programme s’organise en plusieurs couches : Couche d’entités : fiches canoniques, références typées, identifiants routables et publication sémantique. Couche relationnelle : prédicats explicites, contexte bidirectionnel et vues locales du graphe. Couche d’identité et de permissions : limites pour utilisateurs, organisations, mainteneurs, accès et visibilité. Couche d’exécution : changements d’état, propagation et réponses du système. Couche de projection : pages publiques, interfaces produit, documents de recherche, flux et interfaces externes. Héritage VASTE succède à ARCA, un système antérieur doté d’une base de code importante, mais jamais publié. ARCA explorait les actifs numériques, la traçabilité et la certification ; son périmètre a ensuite évolué vers des structures généralisées d’exécution et d’information. Applications de recherche V6 est une future plateforme pensée comme terrain de test appliqué pour VASTE. Elle doit cartographier les pratiques de l’art et de l’artisanat et développer une couche orientée CRM pour cet écosystème. Les noms de domaine et présences sociales sont réservés, mais la plateforme reste en développement avec le même horizon 2027. D’autres travaux d’Electronic Artefacts peuvent nourrir ou tester certains aspects de la recherche, mais aucun ne doit être présenté comme un produit VASTE livré avant sa mise à disposition. État et limites VASTE reste en R&amp;D active. Les affirmations architecturales sont publiées lorsqu’elles sont suffisamment stables, tandis que les détails d’implémentation, les caractéristiques de performance, le calendrier de livraison et le périmètre produit restent susceptibles d’évoluer. L’objectif actuel est une livraison en 2027.",
+    "body": "Définition VASTE est un runtime graph-native expérimental pour modéliser, exécuter et exposer des systèmes logiciels, organisationnels ou scientifiques. Son vocabulaire fondamental est fermé : Vertex, Tie, Action, Surface et Environment . System n’est pas une sixième primitive : c’est une partition d’isolation et la clôture structurelle d’un Vertex racine. L’implémentation est active et couverte par des tests, mais ce n’est ni une distribution publique stable ni une frontière de sécurité prête pour la production. Electronic Artefacts publie ce dossier pour distinguer ce qui s’exécute de ce qui est spécifié, observé ou encore étudié. Pourquoi VASTE existe Les applications classiques dispersent souvent identité, données, permissions, automatisation et état d’interface entre plusieurs systèmes. Déplacer l’application ne déplace donc ni son sens ni sa gouvernance. VASTE étudie une autre fondation : la structure du graphe participe à l’exécution, l’observateur agit depuis une position déclarée, toute mutation passe par une Action admise, et la structure portable reste distincte de l’autorité locale d’un Environment. VASTE n’est ni une base de données graphe complétée par une interface, ni l’operating system d’une machine. C’est une grammaire runtime pour des systèmes dont les entités, relations, exécutions et observations doivent rester explicites. Modèle runtime L’architecture actuelle ordonne onze couches : Kernel, Core Primitives, Runtime Engine, System, Domain, Extensions, Capability, System Patterns, Platform, Operational et Apps. Les couches basses connaissent les mécanismes, pas le sens des produits. Les produits sont des assemblies de primitives, extensions, policies et projections. Des tests imposent la règle « Zero Kernel Diff » : plusieurs familles d’assemblies doivent être possibles sans modifier le kernel. Apps et hosts remplaçables ↓ Platform · Operations · System patterns ↓ Extensions · capabilities · sens des domaines ↓ System layer · exécution gouvernée ↓ Vertex · Tie · Action · Surface · Environment ↓ Mécanique déterministe du kernel Les cinq primitives Vertex : atome de graphe sérialisable et sans comportement, avec ID stable, type namespaced, données et appartenance à un System. Tie : relation explicite, typée et orientée. Une relation inter-System échoue sans déclaration explicite. Action : intention admise, déclarative, sérialisable, rejouable et déterministe. Elle ne contient pas de code exécutable. Surface : membrane sans autorité pour observer et interagir. Une projection est un comportement de Surface, pas la vérité canonique. Environment : contexte d’exécution immuable et éphémère — System, claims d’Actor, scope, position, autorité, temps et budgets. Il ne conserve aucun état métier. Ces responsabilités et leurs invariants testés sont détaillés dans Les cinq primitives de VASTE . Exécution gouvernée Une Action traverse un namespace enregistré, est résolue dans un System et un Environment, contrôlée pour l’accès et l’autorité, interprétée par l’execution engine puis traduite en effets typés. Seule la couche d’effets du runtime peut modifier l’état canonique. Receipts, événements et replay rendent ce chemin inspectable ; cela ne signifie pas que tout backend est durable ou tout effet externe réversible. L’identité Actor appartient à une extension. Un host peut transporter des credentials, mais il ne peut ni fabriquer un Actor humain ni attribuer implicitement un rôle administrateur. La gouvernance peut être lue depuis le graphe via l’extension Actor. Les gates principaux sont implémentés ; l’infrastructure complète de confiance portable ne l’est pas. Actors situés Un Actor est un Vertex spécialisé fourni par l’extension Actor, pas une primitive ni un compte omniscient extérieur au graphe. Une exécution admise se tient dans un Environment et peut porter un locationVertexId . Observation et action dépendent de la partition, de la topologie, des bindings, des capabilities et des policies du runtime. Identité, capability déclarée et autorité effective sont distinctes. Un graphe portable peut transporter identités et déclarations de gouvernance ; l’Environment d’arrivée doit encore résoudre les credentials locaux et revalider l’autorité. Voir Actors situés et gouvernance topologique . Portabilité .vast Le code définit actuellement vast/1 , package JSON expérimental pour un System entier ou un sous-arbre contenu. L’export produit une forme canonique relative au System, un manifeste, des compteurs, des métadonnées de compatibilité, des références de frontière et un hash SHA-256. L’import vérifie format et scellement avant de relier la structure à un nouvel ID de System. Les tests d’intégration internes démontrent : export sur disque, import dans un runtime neuf sous un autre System ID, poursuite d’Actions canoniques et réexport avec le même hash en l’absence d’écriture après import. Un System né via VAB a également suivi ce parcours E2E. Un .vast ne contient pas un Environment actif, des credentials vivants, des secrets locaux, des processus host ou une autorité automatiquement valide. Les contrats de signature et de confiance existent, mais vérification, isolation, révocation et résolution de dépendances ne constituent pas encore une sécurité de marketplace. Détails : Format de graphe portable .vast . VAB — Assisted Boot VAB est le chemin d’orchestration Assisted Boot, pas l’intelligence permanente de chaque System. L’implémentation conserve une session de conversation, compose une cognition heuristique ou reliée à un modèle configuré, produit un plan déclaratif, enregistre l’assentiment explicite par hash, résout les extensions et crée un graphe né par les chemins du runtime. Le dépôt contient une interface web conversationnelle, streaming et parole, la réconciliation après redémarrage, l’admission du Founding Actor et les tests reliant un System né à l’export .vast . C’est une implémentation substantielle, mais pas encore le protocole Genesis/handover autonome complet. VAB et Genesis sépare le chemin fonctionnel de l’horizon opérationnel. Architecture d’extensions Les extensions possèdent actions de domaine, bindings, manifests et Surfaces optionnelles ; le runtime possède routage, exécution, effets et cycle de vie. La taxonomie mesurée du dépôt forme cinq familles : foundational, coordination, knowledge, experience et tooling. Actor, Assets, Knowledge, Workspace, Flow, Intelligence, Perception, Program, Simulation, Studio, Expression et World Model existent à des maturités différentes. Le runtime démarre sans extension. Install, enable, disable, upgrade et remove existent ; installation ne signifie pas exposition. Aujourd’hui, les extensions de confiance s’exécutent dans le processus. Le code tiers non fiable n’a pas de frontière sûre avant enforcement du sandboxing et de la vérification cryptographique. Voir Architecture d’extensions VASTE . Intelligence optionnelle Intelligence est une extension consultative et une frontière de providers, pas VASTE lui-même. Le dépôt contient des adapters, des chemins locaux et OpenAI-compatible, du streaming et des readiness checks. Actor, modèle, provider, policy et Action restent distincts. La réponse d’un modèle ne lui confère aucune autorité implicite sur le graphe. Implémentation actuelle Le workspace TypeScript contient contrats publics, validateurs de primitives, services runtime, stores mémoire et filesystem, bootstrap et replay, extensions, hosts web et shell, surfaces VAB, tests d’intégration et benchmarks dédiés. Node.js 22.12 ou plus est déclaré. Des surfaces navigateur sont servies par un host Node ; cela ne prouve pas que le cœur soit un runtime navigateur autonome. Registre de preuves Le registre public des validations VASTE associe les claims à un commit, un scénario, un statut et des limites. Au 11 juillet 2026, les preuves fortes couvrent notamment invariants des primitives, gouvernance dérivée du graphe, mutations atomiques et replay, boot sans extension, Zero Kernel Diff, round-trip .vast , E2E VAB→package et scellement du plan d’assentiment. Ce sont des validations internes du dépôt, consultables lors d’une revue technique. Elles ne sont ni une certification indépendante, ni une preuve d’uptime, ni un audit de sécurité achevé. Limites Le dépôt est privé ; VASTE n’est ni un téléchargement public ni un SDK stable. vast/1 est expérimental et sa politique de migration peut évoluer. Les extensions non fiables ne sont pas isolées de manière sûre. Event log durable, exécution distribuée et opérations multi-Environment restent incomplets ou dépendants du backend. Des benchmarks existent, mais aucune valeur générale n’est publiée sans contexte reproductible de machine et de commit. VAB est un boot path réel ; provisioning autonome, rollback et handover de production restent incomplets. Electronic Artefacts ne s’opère pas encore lui-même comme un System VASTE. Electronic Artefacts Genesis L’objectif opérationnel est de représenter Electronic Artefacts par un System racine, un Founding Actor, une gouvernance, des registries et des Surfaces opérationnelles ; puis d’utiliser VAB et .vast pour préparer, inspecter et approuver un Environment candidat. VASTE boote Electronic Artefacts → Electronic Artefacts gouverne ses opérations → Electronic Artefacts gouverne le développement de VASTE → un System candidat est construit et exporté → structure et autorité sont revalidées → le Founding Actor approuve le handover Cette boucle est une trajectoire, pas une capacité de production démontrée. Le prochain seuil décisif est un graphe EA Genesis gouverné accomplissant export, import neuf, rebinding local et handover humain sans contourner l’autorité runtime. Accès Le briefing interactif illustre la direction stratégique mais contient actuellement des affirmations plus larges ou plus anciennes que les preuves du dépôt. Ce dossier et ses pages liées forment le registre factuel canonique. Des revues techniques bornées sont accessibles via Electronic Artefacts .",
     "tags": [
       "TypeScript",
-      "Graphe",
-      "Contexte",
-      "Identité",
-      "Simulation",
-      "Connaissance"
+      "Graph Runtime",
+      "Exécution gouvernée",
+      "Portabilité",
+      "Extensions",
+      "Assisted Boot"
     ],
     "questions": [],
     "relationLabels": [
@@ -4069,6 +4506,12 @@
       "derivedFrom VASTE derives its runtime primitives and contextual execution questions from the Runtime Theory research field.",
       "poweredBy V6 is intended to test VASTE as its graph runtime and contextual execution foundation.",
       "maintainedBy Electronic Artefacts develops and maintains the VASTE program.",
+      "hasPart VASTE is composed from the closed primitive roster Vertex, Tie, Action, Surface and Environment.",
+      "hasPart VASTE implements the experimental vast/1 portable graph package format for whole-System and subtree closures.",
+      "hasPart VASTE resolves Actor identity and effective authority inside a System, Environment, topology and policy context.",
+      "hasPart VASTE extends the runtime through optional System-scoped capability units without changing the five primitives.",
+      "partOf VAB is the Assisted Boot orchestration path used to propose and materialize a governed VASTE System.",
+      "evidencedBy The VASTE Validation Record maps major public claims to internal contracts, implementation, tests, commits and limitations.",
       "implementedBy VASTE is listed as a current software or project answer for the research question \"How can an AI understand someone during its very first conversation?\".",
       "implementedBy VASTE is listed as a current software or project answer for the research question \"How can software become explainable through its own knowledge graph?\"."
     ],
@@ -4096,12 +4539,18 @@
       "ea:researchField:runtime-theory",
       "ea:project:vestiges",
       "ea:organization:electronic-artefacts",
+      "ea:concept:vaste-five-primitives",
+      "ea:concept:vast-portable-graph-format",
+      "ea:concept:situated-actors-and-governance",
+      "ea:concept:vaste-extension-architecture",
+      "ea:concept:vab-and-genesis",
+      "ea:artefact:vaste-validation-record",
       "ea:researchQuestion:first-conversation-understanding",
       "ea:researchQuestion:self-explaining-knowledge-graph-software"
     ],
     "status": "development",
-    "confidence": "published",
-    "modifiedAt": "2026-07-04"
+    "confidence": "validated",
+    "modifiedAt": "2026-07-11"
   },
   {
     "id": "ea:project:palimpsests-fr",
@@ -7117,23 +7566,32 @@
     "type": "program",
     "title": "VASTE",
     "alternateNames": [],
-    "abstract": "VASTE is the future Electronic Artefacts runtime platform, currently in R&D and targeted for delivery in 2027.",
+    "abstract": "VASTE is an experimental graph-native runtime for building portable, contextual and governed systems from five primitives: Vertex, Tie, Action, Surface and Environment.",
     "headings": [
-      "Mandate",
-      "Research foundation",
-      "Architecture",
-      "Lineage",
-      "Research applications",
-      "Status and limitations"
+      "Definition",
+      "Why it exists",
+      "Runtime model",
+      "The five primitives",
+      "Governed execution",
+      "Situated actors",
+      "`.vast` portability",
+      "VAB — Assisted Boot",
+      "Extension architecture",
+      "Intelligence is optional",
+      "Current implementation",
+      "Validation record",
+      "Limits",
+      "Electronic Artefacts Genesis",
+      "Access"
     ],
-    "body": "Mandate VASTE is the future runtime platform developed within Electronic Artefacts. It is currently in R&amp;D, where it explores graph architectures, contextual execution, identity systems, simulation frameworks, knowledge structures and modular world construction. Its intended delivery horizon is 2027. VASTE is not currently a public product, a download or a commercial service. The public record describes the direction of the research and the architectural questions being developed; availability, interfaces and access conditions will be announced only when the platform is ready. Research foundation The program operationalizes Runtime Theory. It treats entities, relations, identity and context as executable system concerns rather than only database or interface concerns. Architecture The current architecture is organized around addressable graph entities, typed relationships, contextual identity and event propagation. Research prototypes can build specialized surfaces while retaining shared runtime semantics. The program is structured around several operating layers: Graph entity layer: canonical records, typed references, routeable identifiers and semantic publication. Relationship layer: explicit predicates, bidirectional context and local graph views. Identity and permission layer: boundaries for users, organizations, maintainers, access and visibility. Event execution layer: state changes, propagation and system responses. Projection layer: public pages, product surfaces, search documents, feeds and external interfaces. Lineage VASTE follows ARCA, an unpublished earlier system with a substantial codebase. ARCA explored digital assets, traceability and certification but was never released. Its scope later moved toward generalized execution and information structures. Research applications V6 is a future platform intended as an applied test context for VASTE. It will map art and craft practices and develop a CRM-oriented layer for that ecosystem. Domains and social presences are reserved, but the platform remains in development with the same 2027 horizon. Other Electronic Artefacts work may inform or test parts of the research, but none should be presented as a released VASTE product before delivery. Status and limitations VASTE remains in active R&amp;D. Architectural claims are published only where they are stable enough to explain; implementation details, performance characteristics, release timing and product scope remain subject to revision. The present target is delivery in 2027.",
+    "body": "Definition VASTE is an experimental graph-native runtime for modeling, executing and exposing systems across software, organizations and research domains. Its core vocabulary is deliberately closed: Vertex, Tie, Action, Surface and Environment . A System is not a sixth primitive; it is an isolation partition and the structural closure of a root Vertex. The implementation is active and test-backed, but it is not a stable public distribution or a production security boundary. Electronic Artefacts publishes this record to distinguish what runs today from what is specified, observed or still being researched. Why it exists Conventional applications often split identity, data, permissions, automation and interface state across unrelated stores. Moving the application rarely moves its meaning or governance. VASTE investigates a different foundation: graph structure participates in execution; observers act from a declared location; mutation passes through admitted Actions; and portable structure can be separated from Environment-local authority. This is not a graph database with an interface added on top, and it is not an operating system for a machine. It is a runtime grammar for systems whose entities, relationships, execution and observation must remain explicit. Runtime model The current architecture orders eleven layers: Kernel; Core Primitives; Runtime Engine; System; Domain; Extensions; Capability; System Patterns; Platform; Operational; Apps. The lower layers know mechanics, not product meaning. Products are assemblies of primitives, extensions, policies and projections. Tests enforce a “Zero Kernel Diff” rule: different assembly families must be possible without changing the kernel. Apps and replaceable hosts ↓ Platform · Operations · System patterns ↓ Extensions · capabilities · domain meaning ↓ System layer · governed runtime execution ↓ Vertex · Tie · Action · Surface · Environment ↓ Deterministic kernel mechanics The five primitives Vertex is a behaviorless, serializable graph atom with a stable ID, namespaced type, data and System membership. Tie is an explicit, typed and directed relation. Cross-System ties fail closed unless explicitly declared. Action is admitted intent: declarative, serializable, replayable and deterministic. It contains no executable code. Surface is an authorityless membrane for observation and interaction. A projection is one Surface behavior, not canonical truth. Environment is immutable, ephemeral execution-local context: System, actor claims, scope, location, authority, timing and budgets. It stores no domain state and is rebuilt per execution. These roles and their tested invariants are expanded in The Five VASTE Primitives . Governed execution An Action is routed through a registered namespace, resolved against a System and Environment, checked for access and authority, interpreted by the execution engine, then expressed as typed effects. Only the runtime effect layer may mutate canonical state. Execution receipts, event records and replay surfaces make the path inspectable; this does not mean every backend is durable or every external effect is reversible. Actor identity is extension-owned. A host may transport credentials, but it cannot fabricate a human Actor or default to administrator. Governance can be read from graph state through the Actor registration seam. The current implementation proves important gates; a complete portable trust infrastructure is not yet operational. Situated actors An Actor is a specialized Vertex provided by the Actor extension, not a primitive and not an omniscient account outside the graph. An admitted execution stands in an Environment and may carry a locationVertexId . What can be observed or changed depends on System membership, topology, bindings, capabilities and runtime policy. Identity, declared capability and effective authority are separate. A portable graph may carry identity and governance declarations; a receiving Environment must still resolve local credentials and revalidate authority. See Situated Actors and Topological Governance . .vast portability The current code defines vast/1 , an experimental JSON package for a whole System or a contained subtree. Export produces a System-relative canonical form, manifest counts, compatibility metadata, boundary references and a SHA-256 package hash. Import verifies the format and seal before rebinding the structure to a target System ID. Internal integration tests demonstrate export to disk, import into a fresh runtime under a new System ID, continued canonical Actions, and re-export with the same package hash when no post-import writes occur. A VAB-born System has also been exported and re-imported in an end-to-end test. A .vast package does not contain an active Environment, live credentials, local secrets, host processes or automatically valid authority. Signature metadata and extension trust contracts exist, but marketplace-grade verification, isolation, revocation and dependency resolution are not complete security guarantees. Details: .vast Portable Graph Format . VAB — Assisted Boot VAB is the Assisted Boot orchestration path, not the permanent intelligence of every VASTE System. Its current implementation maintains a boot conversation session, composes cognition from heuristic or configured model-backed input, builds a declarative plan, records explicit assent through a plan hash, resolves extensions and creates a born graph through runtime-owned paths. The repository contains a web conversation surface, streaming and speech affordances, restart reconciliation, Founding Actor admission and tests linking a born System to .vast export. This is substantial implementation, but not yet the full autonomous Genesis and handover protocol. VAB and Genesis separates the working path from the operational horizon. Extension architecture Extensions own domain actions, bindings, manifests and optional surfaces while the runtime owns routing, execution, effects and lifecycle. The measured repository taxonomy groups extensions into five families: foundational, coordination, knowledge, experience and tooling. Actor, Assets, Knowledge, Workspace, Flow, Intelligence, Perception, Program, Simulation, Studio, Expression and World Model are present at different maturity levels. The runtime can boot with zero extensions. Install, enable, disable, upgrade and remove actions exist, and installation does not imply exposure. Today, trusted extensions execute in-process. Untrusted third-party code is not a safe boundary until sandboxing and cryptographic verification are enforced. See VASTE Extension Architecture . Intelligence is optional Intelligence is an advisory extension and provider boundary, not VASTE itself. The repository includes provider adapters, local and OpenAI-compatible configuration paths, streaming surfaces and readiness checks. Actor, model, provider, policy and Action remain distinct. A model gains no implicit graph authority merely by producing a response. Current implementation The TypeScript workspace contains public contracts, primitive validators, runtime services, in-memory and filesystem stores, system bootstrap and replay, extension packages, web and shell hosts, VAB surfaces, integration tests and dedicated runtime benchmarks. Node.js 22.12 or later is the declared engine. Browser surfaces exist through a Node-hosted web path; this is not evidence that the runtime core is a standalone browser runtime. Validation record The public VASTE Validation Record lists claims with commit, scenario, status and limitations. At the 11 July 2026 review point, the strongest evidence includes: primitive invariant and namespace tests; graph-derived governance gates; atomic runtime mutation and replay checks; zero-extension boot and Zero Kernel Diff assembly tests; .vast whole-System round-trip and VAB-to-package E2E tests; boot plan assent sealing and Actor admission checks. These are internal repository validations available during technical review. They are not independent certification, production uptime evidence or a completed security audit. Limits The repository is private and VASTE is not a public download or stable SDK. vast/1 is experimental; compatibility and migration policy may still change. Untrusted extensions are not safely isolated; signing metadata is not the same as verified trust. Durable event-log, distributed execution and multi-Environment operations are incomplete or backend-dependent. Benchmarks exist, but this record publishes no general performance number without a reproducible hardware and commit context. VAB is implemented as a boot path, but complete autonomous provisioning, rollback and production handover remain incomplete. Electronic Artefacts does not yet operate itself as a VASTE System. Electronic Artefacts Genesis The operational goal is to represent Electronic Artefacts through a root System, Founding Actor, governance, registries and operational Surfaces; then use VAB and .vast to prepare, inspect and approve a candidate Environment. That would close a deliberate meta-loop: VASTE boots Electronic Artefacts → Electronic Artefacts governs its operations → Electronic Artefacts governs VASTE development → a candidate System is built and exported → structure and authority are revalidated → the Founding Actor approves handover This loop is a trajectory, not a demonstrated production capability. The next meaningful threshold is one governed EA Genesis graph completing a documented export, fresh import, local rebinding and human-approved handover without bypassing runtime authority. Access The public interactive briefing illustrates the strategic direction but currently contains claims that are broader or older than the repository evidence. The canonical factual record is this page and its linked dossiers. Repository walkthroughs and bounded technical reviews are available through Electronic Artefacts .",
     "tags": [
       "TypeScript",
-      "Graph",
-      "Context",
-      "Identity",
-      "Simulation",
-      "Knowledge"
+      "Graph Runtime",
+      "Governed Execution",
+      "Portability",
+      "Extensions",
+      "Assisted Boot"
     ],
     "questions": [],
     "relationLabels": [
@@ -7160,6 +7618,12 @@
       "derivedFrom VASTE derives its runtime primitives and contextual execution questions from the Runtime Theory research field.",
       "poweredBy V6 is intended to test VASTE as its graph runtime and contextual execution foundation.",
       "maintainedBy Electronic Artefacts develops and maintains the VASTE program.",
+      "hasPart VASTE is composed from the closed primitive roster Vertex, Tie, Action, Surface and Environment.",
+      "hasPart VASTE implements the experimental vast/1 portable graph package format for whole-System and subtree closures.",
+      "hasPart VASTE resolves Actor identity and effective authority inside a System, Environment, topology and policy context.",
+      "hasPart VASTE extends the runtime through optional System-scoped capability units without changing the five primitives.",
+      "partOf VAB is the Assisted Boot orchestration path used to propose and materialize a governed VASTE System.",
+      "evidencedBy The VASTE Validation Record maps major public claims to internal contracts, implementation, tests, commits and limitations.",
       "implementedBy VASTE is listed as a current software or project answer for the research question \"How can an AI understand someone during its very first conversation?\".",
       "implementedBy VASTE is listed as a current software or project answer for the research question \"How can software become explainable through its own knowledge graph?\"."
     ],
@@ -7187,12 +7651,18 @@
       "ea:researchField:runtime-theory",
       "ea:project:vestiges",
       "ea:organization:electronic-artefacts",
+      "ea:concept:vaste-five-primitives",
+      "ea:concept:vast-portable-graph-format",
+      "ea:concept:situated-actors-and-governance",
+      "ea:concept:vaste-extension-architecture",
+      "ea:concept:vab-and-genesis",
+      "ea:artefact:vaste-validation-record",
       "ea:researchQuestion:first-conversation-understanding",
       "ea:researchQuestion:self-explaining-knowledge-graph-software"
     ],
     "status": "development",
-    "confidence": "published",
-    "modifiedAt": "2026-06-22"
+    "confidence": "validated",
+    "modifiedAt": "2026-07-11"
   },
   {
     "id": "ea:project:palimpsests",

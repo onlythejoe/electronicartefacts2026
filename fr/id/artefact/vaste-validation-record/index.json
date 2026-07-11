@@ -1,0 +1,75 @@
+{
+  "id": "ea:artefact:vaste-validation-record-fr",
+  "type": "artefact",
+  "translationOf": "ea:artefact:vaste-validation-record",
+  "slug": {
+    "canonical": "vaste-validation-record"
+  },
+  "title": "Registre des validations VASTE",
+  "subtitle": "Preuves du dépôt revues le 11 juillet 2026",
+  "abstract": "Registre public et limité des claims VASTE soutenus par contrats, implémentation et tests internes au commit a51c9897.",
+  "description": "Preuves concernant primitives, exécution gouvernée, extensions, Assisted Boot et portabilité .vast, avec limites explicites.",
+  "locale": "fr",
+  "visibility": "public",
+  "publicationClass": "published",
+  "status": "active",
+  "maturity": "development",
+  "confidence": "validated",
+  "version": {
+    "version": "1.0.0",
+    "createdAt": "2026-07-11",
+    "publishedAt": "2026-07-11",
+    "modifiedAt": "2026-07-11"
+  },
+  "authors": [
+    {
+      "id": "ea:organization:electronic-artefacts"
+    }
+  ],
+  "publisher": "ea:organization:electronic-artefacts",
+  "tags": [
+    "VASTE",
+    "Preuves",
+    "Validation",
+    "Runtime"
+  ],
+  "disciplines": [
+    "Vérification logicielle",
+    "Runtime Systems"
+  ],
+  "artefactType": "document",
+  "createdAt": "2026-07-11",
+  "provenance": "Revue interne du dépôt VASTE au commit a51c9897 ; le travail local non commité sur le montage est exclu des claims.",
+  "format": "Registre public de preuves",
+  "preservationStatus": "active",
+  "significance": "Le registre sépare propriétés implémentées et testées, spécifications, observations et objectifs opérationnels.",
+  "bodyHtml": "<h2 id=\"lecture-du-statut\">Lecture du statut</h2>\n<p>« Validé » signifie qu’un scénario automatisé interne existe et que son code a été inspecté. Ce n’est ni une certification indépendante, ni une preuve de production, ni une assurance de sécurité. Le dépôt est accessible lors d’une revue technique bornée.</p>\n<h2 id=\"registre\">Registre</h2>\n<table>\n<thead>\n<tr>\n<th>ID</th>\n<th>Claim</th>\n<th>Preuve interne</th>\n<th>Statut</th>\n<th>Limite</th>\n</tr>\n</thead>\n<tbody>\n<tr>\n<td>VST-PRIM-01</td>\n<td>Cinq primitives fermées.</td>\n<td>Contrats, validateurs et tests de pureté kernel</td>\n<td>Validé</td>\n<td>Ontologie révisable explicitement.</td>\n</tr>\n<tr>\n<td>VST-EXEC-01</td>\n<td>Action décrit l’intention ; le runtime applique les effets.</td>\n<td>Execution, effects et tests transactionnels</td>\n<td>Validé</td>\n<td>Effets externes pas tous réversibles.</td>\n</tr>\n<tr>\n<td>VST-GOV-01</td>\n<td>Accès humain fail-closed et gouvernance issue du graphe.</td>\n<td>Tests Actor, HTTP et graph governance</td>\n<td>Validé</td>\n<td>Confiance distribuée incomplète.</td>\n</tr>\n<tr>\n<td>VST-EXT-01</td>\n<td>Boot sans extension et lifecycle par System.</td>\n<td>Tests lifecycle, packaging, Zero Kernel Diff</td>\n<td>Validé</td>\n<td>Isolation du code non fiable incomplète.</td>\n</tr>\n<tr>\n<td>VST-VAST-01</td>\n<td>Round-trip <code>vast/1</code> par fichier sous un autre System ID.</td>\n<td>Test round-trip ; commits b3ca7d1d et 13b16c6e</td>\n<td>Validé</td>\n<td>Format expérimental.</td>\n</tr>\n<tr>\n<td>VST-VAST-02</td>\n<td>Les frontières d’un sous-arbre sont refusées ou déclarées.</td>\n<td>Test E2E VAB/package</td>\n<td>Validé</td>\n<td>Montage multiple non déclaré complet.</td>\n</tr>\n<tr>\n<td>VST-VAB-01</td>\n<td>Assentiment lié au hash exact du plan.</td>\n<td>Test assent seal ; commit cb2d567c</td>\n<td>Validé</td>\n<td>Qualité de compréhension encore étudiée.</td>\n</tr>\n<tr>\n<td>VST-VAB-02</td>\n<td>Un System né via VAB peut devenir <code>.vast</code> puis être réimporté.</td>\n<td>Test E2E ; commit 13b16c6e</td>\n<td>Validé</td>\n<td>Pas le handover EA complet.</td>\n</tr>\n<tr>\n<td>VST-REPLAY-01</td>\n<td>Snapshots et événements reconstruisent des scénarios déterministes.</td>\n<td>Tests snapshot, replay, proof chain</td>\n<td>Validé</td>\n<td>Durabilité selon backend.</td>\n</tr>\n<tr>\n<td>VST-PERF-01</td>\n<td>Des benchmarks scaling et soak existent.</td>\n<td>Scripts et tests benchmark</td>\n<td>Observé</td>\n<td>Aucun chiffre général sans machine reproductible.</td>\n</tr>\n</tbody>\n</table>\n<h2 id=\"claims-exclus\">Claims exclus</h2>\n<p>Le working tree contenait des changements <code>.vast</code> non commités. Ils sont traités comme travail émergent et exclus. Sandboxing, signatures, trust tiers et fédération ne sont pas décrits comme enforcement opérationnel sans chemin runtime et test.</p>\n<h2 id=\"cadre\">Cadre</h2>\n<p>Dépôt privé <code>onlythejoe/VASTE</code>, commit revu <code>a51c9897</code>, Node.js 22.12+ déclaré. Les gates principaux sont typecheck, tests shardés, smoke benchmark runtime et contrôle du vocabulaire kernel.</p>\n",
+  "headings": [
+    "Lecture du statut",
+    "Registre",
+    "Claims exclus",
+    "Cadre"
+  ],
+  "headingItems": [
+    {
+      "level": 2,
+      "title": "Lecture du statut",
+      "id": "lecture-du-statut"
+    },
+    {
+      "level": 2,
+      "title": "Registre",
+      "id": "registre"
+    },
+    {
+      "level": 2,
+      "title": "Claims exclus",
+      "id": "claims-exclus"
+    },
+    {
+      "level": 2,
+      "title": "Cadre",
+      "id": "cadre"
+    }
+  ]
+}

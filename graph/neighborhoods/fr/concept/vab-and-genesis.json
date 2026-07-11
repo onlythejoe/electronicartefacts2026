@@ -1,0 +1,51 @@
+{
+  "id": "local:ea:concept:vab-and-genesis-fr",
+  "kind": "local",
+  "focus": "ea:concept:vab-and-genesis-fr",
+  "nodes": [
+    {
+      "id": "ea:concept:vab-and-genesis-fr",
+      "type": "concept",
+      "title": "VAB et Genesis",
+      "route": "/fr/knowledge/concepts/vab-and-genesis/",
+      "status": "experimental",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:program:vaste-fr",
+      "type": "program",
+      "title": "VASTE",
+      "route": "/fr/programs/vaste/",
+      "status": "development",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:artefact:vaste-validation-record-fr",
+      "type": "artefact",
+      "title": "Registre des validations VASTE",
+      "route": "/fr/archive/artefacts/vaste-validation-record/",
+      "status": "active",
+      "confidence": "validated"
+    }
+  ],
+  "edges": [
+    {
+      "id": "ear:vab-part-of-vaste",
+      "source": "ea:concept:vab-and-genesis-fr",
+      "target": "ea:program:vaste-fr",
+      "predicate": "partOf",
+      "label": "Part of",
+      "statement": "VAB is the Assisted Boot orchestration path used to propose and materialize a governed VASTE System.",
+      "confidence": "validated"
+    },
+    {
+      "id": "ear:vab-evidenced-by-validation-record",
+      "source": "ea:concept:vab-and-genesis-fr",
+      "target": "ea:artefact:vaste-validation-record-fr",
+      "predicate": "evidencedBy",
+      "label": "Evidenced by",
+      "statement": "The validation record documents plan assent sealing and the internal VAB-to-vast end-to-end scenario.",
+      "confidence": "validated"
+    }
+  ]
+}

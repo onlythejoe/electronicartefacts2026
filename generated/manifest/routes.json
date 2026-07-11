@@ -1,5 +1,11 @@
 [
   {
+    "id": "ea:artefact:vaste-validation-record",
+    "locale": "en",
+    "route": "/archive/artefacts/vaste-validation-record/",
+    "identifier": "/id/artefact/vaste-validation-record/"
+  },
+  {
     "id": "ea:artefact:voice-capture-studio-repository",
     "locale": "en",
     "route": "/archive/artefacts/voice-capture-studio-repository/",
@@ -246,6 +252,12 @@
     "identifier": "/id/concept/signal-archaeology/"
   },
   {
+    "id": "ea:concept:situated-actors-and-governance",
+    "locale": "en",
+    "route": "/knowledge/concepts/situated-actors-and-governance/",
+    "identifier": "/id/concept/situated-actors-and-governance/"
+  },
+  {
     "id": "ea:concept:speech-datasets",
     "locale": "en",
     "route": "/knowledge/concepts/speech-datasets/",
@@ -270,6 +282,30 @@
     "identifier": "/id/concept/typography/"
   },
   {
+    "id": "ea:concept:vab-and-genesis",
+    "locale": "en",
+    "route": "/knowledge/concepts/vab-and-genesis/",
+    "identifier": "/id/concept/vab-and-genesis/"
+  },
+  {
+    "id": "ea:concept:vast-portable-graph-format",
+    "locale": "en",
+    "route": "/knowledge/concepts/vast-portable-graph-format/",
+    "identifier": "/id/concept/vast-portable-graph-format/"
+  },
+  {
+    "id": "ea:concept:vaste-extension-architecture",
+    "locale": "en",
+    "route": "/knowledge/concepts/vaste-extension-architecture/",
+    "identifier": "/id/concept/vaste-extension-architecture/"
+  },
+  {
+    "id": "ea:concept:vaste-five-primitives",
+    "locale": "en",
+    "route": "/knowledge/concepts/vaste-five-primitives/",
+    "identifier": "/id/concept/vaste-five-primitives/"
+  },
+  {
     "id": "ea:concept:voice-technology",
     "locale": "en",
     "route": "/knowledge/concepts/voice-technology/",
@@ -280,6 +316,12 @@
     "locale": "en",
     "route": "/knowledge/concepts/web-audio/",
     "identifier": "/id/concept/web-audio/"
+  },
+  {
+    "id": "ea:artefact:vaste-validation-record-fr",
+    "locale": "fr",
+    "route": "/fr/archive/artefacts/vaste-validation-record/",
+    "identifier": "/fr/id/artefact/vaste-validation-record/"
   },
   {
     "id": "ea:artefact:voice-capture-studio-repository-fr",
@@ -528,6 +570,12 @@
     "identifier": "/fr/id/concept/signal-archaeology/"
   },
   {
+    "id": "ea:concept:situated-actors-and-governance-fr",
+    "locale": "fr",
+    "route": "/fr/knowledge/concepts/situated-actors-and-governance/",
+    "identifier": "/fr/id/concept/situated-actors-and-governance/"
+  },
+  {
     "id": "ea:concept:speech-datasets-fr",
     "locale": "fr",
     "route": "/fr/knowledge/concepts/speech-datasets/",
@@ -550,6 +598,30 @@
     "locale": "fr",
     "route": "/fr/knowledge/concepts/typography/",
     "identifier": "/fr/id/concept/typography/"
+  },
+  {
+    "id": "ea:concept:vab-and-genesis-fr",
+    "locale": "fr",
+    "route": "/fr/knowledge/concepts/vab-and-genesis/",
+    "identifier": "/fr/id/concept/vab-and-genesis/"
+  },
+  {
+    "id": "ea:concept:vast-portable-graph-format-fr",
+    "locale": "fr",
+    "route": "/fr/knowledge/concepts/vast-portable-graph-format/",
+    "identifier": "/fr/id/concept/vast-portable-graph-format/"
+  },
+  {
+    "id": "ea:concept:vaste-extension-architecture-fr",
+    "locale": "fr",
+    "route": "/fr/knowledge/concepts/vaste-extension-architecture/",
+    "identifier": "/fr/id/concept/vaste-extension-architecture/"
+  },
+  {
+    "id": "ea:concept:vaste-five-primitives-fr",
+    "locale": "fr",
+    "route": "/fr/knowledge/concepts/vaste-five-primitives/",
+    "identifier": "/fr/id/concept/vaste-five-primitives/"
   },
   {
     "id": "ea:concept:voice-technology-fr",

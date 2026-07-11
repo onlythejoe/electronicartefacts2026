@@ -1,0 +1,91 @@
+{
+  "id": "ea:concept:situated-actors-and-governance-fr",
+  "type": "concept",
+  "translationOf": "ea:concept:situated-actors-and-governance",
+  "slug": {
+    "canonical": "situated-actors-and-governance"
+  },
+  "title": "Actors situés et gouvernance topologique",
+  "definition": "Dans VASTE, un Actor est une identité de graphe possédée par une extension ; observation et action effectives sont résolues dans un System, un Environment, une topologie et une policy précis.",
+  "abstract": "Comment VASTE sépare identité, credentials, capabilities, policy et autorité effective en plaçant l’observateur dans le graphe.",
+  "description": "Dossier public sur l’identité Actor, la gouvernance dérivée du graphe, l’autorité locale et les déclarations portables.",
+  "locale": "fr",
+  "visibility": "public",
+  "publicationClass": "canonical",
+  "status": "experimental",
+  "maturity": "development",
+  "confidence": "validated",
+  "version": {
+    "version": "1.0.0",
+    "createdAt": "2026-07-11",
+    "publishedAt": "2026-07-11",
+    "modifiedAt": "2026-07-11"
+  },
+  "authors": [
+    {
+      "id": "ea:organization:electronic-artefacts"
+    }
+  ],
+  "publisher": "ea:organization:electronic-artefacts",
+  "tags": [
+    "VASTE",
+    "Actor",
+    "Gouvernance",
+    "Identité",
+    "Capabilities"
+  ],
+  "disciplines": [
+    "Runtime Systems",
+    "Architecture de sécurité"
+  ],
+  "scope": [
+    "Identité Actor",
+    "Position dans le graphe",
+    "Capabilities et policy",
+    "Autorité locale"
+  ],
+  "exclusions": [
+    "Administrateur universel",
+    "Credentials vivants portables",
+    "Identité décentralisée achevée"
+  ],
+  "claims": [
+    "Les hosts ne peuvent ni fabriquer un Actor humain ni attribuer silencieusement un rôle administrateur.",
+    "L’autorité effective est résolue à l’exécution et ne découle pas de l’identité seule."
+  ],
+  "bodyHtml": "<h2 id=\"l-observateur-est-a-l-interieur\">L’observateur est à l’intérieur</h2>\n<p>VASTE ne suppose pas un utilisateur omniscient extérieur au graphe. Actor est une spécialisation possédée par une extension, représentée par état de graphe, credentials et sessions admises. Une exécution se produit dans un Environment immuable, au sein d’un System, éventuellement depuis un <code>locationVertexId</code>. Surfaces et Actions accessibles dépendent de ce contexte situé.</p>\n<h2 id=\"six-questions-distinctes\">Six questions distinctes</h2>\n<ol>\n<li><strong>Identité</strong> : quel Actor Vertex est résolu ?</li>\n<li><strong>Credential</strong> : quelle preuve locale relie la requête à cette identité ?</li>\n<li><strong>Capability déclarée</strong> : quelle opération peut être demandée ?</li>\n<li><strong>Policy</strong> : quelles règles gouvernent ce System et cette position ?</li>\n<li><strong>Autorité</strong> : quelle frontière peut interpréter l’Action ?</li>\n<li><strong>Autorisation effective</strong> : la requête passe-t-elle tous les gates maintenant ?</li>\n</ol>\n<h2 id=\"gouvernance-derivee-du-graphe\">Gouvernance dérivée du graphe</h2>\n<p>Le runtime possède une seam d’autorité enregistrée par Actor. Les enregistrements de gouvernance peuvent être lus depuis le graphe plutôt que depuis une table globale parallèle. Frontières System, containment et Ties participent à la résolution, mais la topologie ne confère pas seule une autorité. Capabilities et policies restent explicites ; invoquer un binding et appliquer un effet sont deux contrôles séparés.</p>\n<h2 id=\"gouvernance-portable-autorite-locale\">Gouvernance portable, autorité locale</h2>\n<p>Une clôture <code>.vast</code> peut conserver Actors, rôles, grants, délégations et déclarations de gouvernance. Elle ne transporte ni session admise ni confiance forcée dans un credential. L’import doit relier les preuves locales et revalider l’autorité. L’intégrité du package n’est pas une autorisation d’exécution.</p>\n<h2 id=\"preuves-et-limites\">Preuves et limites</h2>\n<p>Les tests internes couvrent Founding Actor, transport de credentials, accès HTTP fail-closed, Actions de grant/revoke et gates de gouvernance. Révocation complète, attestations externes et confiance distribuée ne sont pas déclarées opérationnelles.</p>\n",
+  "headings": [
+    "L’observateur est à l’intérieur",
+    "Six questions distinctes",
+    "Gouvernance dérivée du graphe",
+    "Gouvernance portable, autorité locale",
+    "Preuves et limites"
+  ],
+  "headingItems": [
+    {
+      "level": 2,
+      "title": "L’observateur est à l’intérieur",
+      "id": "l-observateur-est-a-l-interieur"
+    },
+    {
+      "level": 2,
+      "title": "Six questions distinctes",
+      "id": "six-questions-distinctes"
+    },
+    {
+      "level": 2,
+      "title": "Gouvernance dérivée du graphe",
+      "id": "gouvernance-derivee-du-graphe"
+    },
+    {
+      "level": 2,
+      "title": "Gouvernance portable, autorité locale",
+      "id": "gouvernance-portable-autorite-locale"
+    },
+    {
+      "level": 2,
+      "title": "Preuves et limites",
+      "id": "preuves-et-limites"
+    }
+  ]
+}

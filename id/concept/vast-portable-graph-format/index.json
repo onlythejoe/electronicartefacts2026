@@ -1,0 +1,89 @@
+{
+  "id": "ea:concept:vast-portable-graph-format",
+  "type": "concept",
+  "slug": {
+    "canonical": "vast-portable-graph-format"
+  },
+  "title": ".vast Portable Graph Format",
+  "definition": "A .vast file is an experimental `vast/1` sealed JSON package carrying a System-relative whole-System or subtree closure, its manifest and integrity hash—not a live Environment.",
+  "abstract": "The implemented .vast export/import model, integrity guarantees, boundary references, tested round-trip and unresolved trust and migration limits.",
+  "description": "A factual public guide to the experimental VASTE portable graph package format.",
+  "locale": "en",
+  "visibility": "public",
+  "publicationClass": "canonical",
+  "status": "experimental",
+  "maturity": "prototype",
+  "confidence": "validated",
+  "version": {
+    "version": "1.0.0",
+    "createdAt": "2026-07-11",
+    "publishedAt": "2026-07-11",
+    "modifiedAt": "2026-07-11"
+  },
+  "authors": [
+    {
+      "id": "ea:organization:electronic-artefacts"
+    }
+  ],
+  "publisher": "ea:organization:electronic-artefacts",
+  "tags": [
+    "VASTE",
+    "Portability",
+    "Graph Closure",
+    "Integrity"
+  ],
+  "disciplines": [
+    "Runtime Systems",
+    "Data Portability"
+  ],
+  "scope": [
+    "vast/1 package",
+    "Canonicalization and integrity",
+    "Whole-System and subtree closure",
+    "Import rebinding"
+  ],
+  "exclusions": [
+    "Live Environment",
+    "Automatic local authority",
+    "Production trust certification"
+  ],
+  "claims": [
+    "The current implementation round-trips a whole System through a file under a new System ID.",
+    "The package seal detects content or manifest tampering before import."
+  ],
+  "bodyHtml": "<h2 id=\"implemented-meaning\">Implemented meaning</h2>\n<p><code>.vast</code> is a file convention backed by runtime code, not an acronym expanded by the contracts. The repository does not establish “Vertex Action Surface Tie” as the technical meaning of the name. Version <code>vast/1</code> serializes a portable closure in JSON.</p>\n<p>The canonical body contains System-relative vertices and ties. The manifest records package ID and version, closure kind and root, vertex and tie counts, compatibility, boundary references and a SHA-256 <code>packageHash</code>. Stable canonicalization makes identity independent from the target System ID.</p>\n<h2 id=\"two-closure-forms\">Two closure forms</h2>\n<ul>\n<li><strong>System closure</strong> exports the complete structural partition, including its root Vertex.</li>\n<li><strong>Subtree closure</strong> follows containment from an anchor. Ties crossing the selected boundary must be refused or externalized as declared references; they cannot be silently copied.</li>\n</ul>\n<h2 id=\"verified-round-trip\">Verified round-trip</h2>\n<p>The internal round-trip scenario is concrete:</p>\n<pre><code class=\"language-text\">export System A → write .vast JSON → read and verify\n→ import into a fresh runtime as System B\n→ execute a canonical Action\n→ re-export an untouched import\n→ compare packageHash\n</code></pre>\n<p>Tests verify identical sealed identity before subsequent writes, continued runtime execution after import, rejection of unsupported format versions, tamper rejection and collision failure. Another E2E scenario exports a VAB-born production graph and a lived-in Workspace subtree.</p>\n<h2 id=\"portable-versus-local\">Portable versus local</h2>\n<p>Portable: graph identity relative to the package, Vertex/Tie data, structural closure, manifest, provenance declarations, compatibility and boundary references.</p>\n<p>Local: active Environment, credentials, secrets, processes, filesystem placement, provider configuration, resource grants and effective authority. These must be resolved or revalidated on arrival.</p>\n<h2 id=\"limits\">Limits</h2>\n<p><code>vast/1</code> is experimental. A package hash provides integrity, not author trust. Signature and provenance structures are not yet a marketplace-grade verification chain. Multi-package mounting, atomic upgrade, migrations, resource limits and hostile-input hardening are not presented as released guarantees. Current tests are internal repository validation, not independent certification.</p>\n",
+  "headings": [
+    "Implemented meaning",
+    "Two closure forms",
+    "Verified round-trip",
+    "Portable versus local",
+    "Limits"
+  ],
+  "headingItems": [
+    {
+      "level": 2,
+      "title": "Implemented meaning",
+      "id": "implemented-meaning"
+    },
+    {
+      "level": 2,
+      "title": "Two closure forms",
+      "id": "two-closure-forms"
+    },
+    {
+      "level": 2,
+      "title": "Verified round-trip",
+      "id": "verified-round-trip"
+    },
+    {
+      "level": 2,
+      "title": "Portable versus local",
+      "id": "portable-versus-local"
+    },
+    {
+      "level": 2,
+      "title": "Limits",
+      "id": "limits"
+    }
+  ]
+}

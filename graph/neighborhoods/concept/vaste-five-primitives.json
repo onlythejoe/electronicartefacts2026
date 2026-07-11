@@ -1,0 +1,34 @@
+{
+  "id": "local:ea:concept:vaste-five-primitives",
+  "kind": "local",
+  "focus": "ea:concept:vaste-five-primitives",
+  "nodes": [
+    {
+      "id": "ea:concept:vaste-five-primitives",
+      "type": "concept",
+      "title": "The Five VASTE Primitives",
+      "route": "/knowledge/concepts/vaste-five-primitives/",
+      "status": "experimental",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:program:vaste",
+      "type": "program",
+      "title": "VASTE",
+      "route": "/programs/vaste/",
+      "status": "development",
+      "confidence": "validated"
+    }
+  ],
+  "edges": [
+    {
+      "id": "ear:vaste-has-five-primitives",
+      "source": "ea:program:vaste",
+      "target": "ea:concept:vaste-five-primitives",
+      "predicate": "hasPart",
+      "label": "Has part",
+      "statement": "VASTE is composed from the closed primitive roster Vertex, Tie, Action, Surface and Environment.",
+      "confidence": "validated"
+    }
+  ]
+}

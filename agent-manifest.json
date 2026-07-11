@@ -80,11 +80,11 @@
     "researchField": 2,
     "researchQuestion": 6,
     "publication": 80,
-    "concept": 82,
+    "concept": 92,
     "technology": 36,
     "framework": 2,
     "collection": 10,
-    "artefact": 2
+    "artefact": 4
   },
   "lastModified": "2026-07-11",
   "records": [
@@ -202,7 +202,7 @@
       "translationOf": "ea:program:vaste",
       "type": "program",
       "title": "VASTE",
-      "summary": "VASTE relie Runtime Theory à un runtime en développement pour systèmes de graphe, exécution contextuelle, identité et mondes modulaires.",
+      "summary": "Le dossier public canonique de VASTE : architecture runtime, primitives, exécution gouvernée, extensions, Assisted Boot, format .vast expérimental, preuves et limites actuelles.",
       "url": "https://electronicartefacts.com/fr/programs/vaste/",
       "route": "/fr/programs/vaste/",
       "identifier": "https://electronicartefacts.com/fr/id/program/vaste/",
@@ -210,26 +210,26 @@
       "tags": [
         "VASTE",
         "TypeScript",
-        "Graphe",
-        "Contexte",
-        "Identité",
-        "Simulation",
-        "Connaissance",
-        "Technologie",
-        "Systèmes",
-        "Recherche"
+        "Graph Runtime",
+        "Exécution gouvernée",
+        "Portabilité",
+        "Extensions",
+        "Assisted Boot",
+        "Architecture logicielle",
+        "Runtime Systems",
+        "Systèmes de connaissance"
       ],
       "status": "development",
-      "confidence": "published",
-      "publishedAt": "2026-06-25",
-      "modifiedAt": "2026-07-04"
+      "confidence": "validated",
+      "publishedAt": "2026-01-01",
+      "modifiedAt": "2026-07-11"
     },
     {
       "id": "ea:program:vaste",
       "locale": "en",
       "type": "program",
       "title": "VASTE",
-      "summary": "VASTE connects Runtime Theory to an in-development runtime for graph systems, contextual execution, identity and modular world construction.",
+      "summary": "The canonical public record of VASTE: its runtime architecture, primitives, governed execution, extension system, Assisted Boot, experimental .vast format, validation record and current limits.",
       "url": "https://electronicartefacts.com/programs/vaste/",
       "route": "/programs/vaste/",
       "identifier": "https://electronicartefacts.com/id/program/vaste/",
@@ -237,19 +237,19 @@
       "tags": [
         "VASTE",
         "TypeScript",
-        "Graph",
-        "Context",
-        "Identity",
-        "Simulation",
-        "Knowledge",
-        "Technology",
-        "Systems",
-        "Research"
+        "Graph Runtime",
+        "Governed Execution",
+        "Portability",
+        "Extensions",
+        "Assisted Boot",
+        "Software Architecture",
+        "Runtime Systems",
+        "Knowledge Systems"
       ],
       "status": "development",
-      "confidence": "published",
+      "confidence": "validated",
       "publishedAt": "2026-01-01",
-      "modifiedAt": "2026-06-22"
+      "modifiedAt": "2026-07-11"
     },
     {
       "id": "ea:project:palimpsests-fr",
@@ -2767,6 +2767,56 @@
       "modifiedAt": "2026-06-24"
     },
     {
+      "id": "ea:concept:vast-portable-graph-format",
+      "locale": "en",
+      "type": "concept",
+      "title": ".vast Portable Graph Format",
+      "summary": "A .vast file is an experimental `vast/1` sealed JSON package carrying a System-relative whole-System or subtree closure, its manifest and integrity hash—not a live Environment.",
+      "url": "https://electronicartefacts.com/knowledge/concepts/vast-portable-graph-format/",
+      "route": "/knowledge/concepts/vast-portable-graph-format/",
+      "identifier": "https://electronicartefacts.com/id/concept/vast-portable-graph-format/",
+      "jsonLd": "https://electronicartefacts.com/id/concept/vast-portable-graph-format/index.jsonld",
+      "tags": [
+        ".vast Portable Graph Format",
+        "VASTE",
+        "Portability",
+        "Graph Closure",
+        "Integrity",
+        "Runtime Systems",
+        "Data Portability"
+      ],
+      "status": "experimental",
+      "confidence": "validated",
+      "publishedAt": "2026-07-11",
+      "modifiedAt": "2026-07-11"
+    },
+    {
+      "id": "ea:concept:situated-actors-and-governance-fr",
+      "locale": "fr",
+      "translationOf": "ea:concept:situated-actors-and-governance",
+      "type": "concept",
+      "title": "Actors situés et gouvernance topologique",
+      "summary": "Dans VASTE, un Actor est une identité de graphe possédée par une extension ; observation et action effectives sont résolues dans un System, un Environment, une topologie et une policy précis.",
+      "url": "https://electronicartefacts.com/fr/knowledge/concepts/situated-actors-and-governance/",
+      "route": "/fr/knowledge/concepts/situated-actors-and-governance/",
+      "identifier": "https://electronicartefacts.com/fr/id/concept/situated-actors-and-governance/",
+      "jsonLd": "https://electronicartefacts.com/fr/id/concept/situated-actors-and-governance/index.jsonld",
+      "tags": [
+        "Actors situés et gouvernance topologique",
+        "VASTE",
+        "Actor",
+        "Gouvernance",
+        "Identité",
+        "Capabilities",
+        "Runtime Systems",
+        "Architecture de sécurité"
+      ],
+      "status": "experimental",
+      "confidence": "validated",
+      "publishedAt": "2026-07-11",
+      "modifiedAt": "2026-07-11"
+    },
+    {
       "id": "ea:concept:ai-agent-fr",
       "locale": "fr",
       "translationOf": "ea:concept:ai-agent",
@@ -2872,6 +2922,31 @@
       "confidence": "observed",
       "publishedAt": "2026-06-25",
       "modifiedAt": "2026-06-25"
+    },
+    {
+      "id": "ea:concept:vaste-extension-architecture-fr",
+      "locale": "fr",
+      "translationOf": "ea:concept:vaste-extension-architecture",
+      "type": "concept",
+      "title": "Architecture d’extensions VASTE",
+      "summary": "Une extension VASTE est une unité optionnelle de capability, limitée à un System, qui déclare actions de domaine, bindings et Surfaces tandis que l’autorité runtime reste dans le chemin d’exécution central.",
+      "url": "https://electronicartefacts.com/fr/knowledge/concepts/vaste-extension-architecture/",
+      "route": "/fr/knowledge/concepts/vaste-extension-architecture/",
+      "identifier": "https://electronicartefacts.com/fr/id/concept/vaste-extension-architecture/",
+      "jsonLd": "https://electronicartefacts.com/fr/id/concept/vaste-extension-architecture/index.jsonld",
+      "tags": [
+        "Architecture d’extensions VASTE",
+        "VASTE",
+        "Extensions",
+        "Runtime",
+        "Intelligence",
+        "Architecture logicielle",
+        "Runtime Systems"
+      ],
+      "status": "experimental",
+      "confidence": "validated",
+      "publishedAt": "2026-07-11",
+      "modifiedAt": "2026-07-11"
     },
     {
       "id": "ea:concept:microservice-architecture-fr",
@@ -3341,6 +3416,31 @@
       "confidence": "canonical",
       "publishedAt": "2026-06-25",
       "modifiedAt": "2026-06-25"
+    },
+    {
+      "id": "ea:concept:vast-portable-graph-format-fr",
+      "locale": "fr",
+      "translationOf": "ea:concept:vast-portable-graph-format",
+      "type": "concept",
+      "title": "Format de graphe portable .vast",
+      "summary": "Un fichier .vast est un package JSON scellé expérimental `vast/1` qui transporte une clôture relative au System — System entier ou sous-arbre — avec manifeste et hash d’intégrité, jamais un Environment vivant.",
+      "url": "https://electronicartefacts.com/fr/knowledge/concepts/vast-portable-graph-format/",
+      "route": "/fr/knowledge/concepts/vast-portable-graph-format/",
+      "identifier": "https://electronicartefacts.com/fr/id/concept/vast-portable-graph-format/",
+      "jsonLd": "https://electronicartefacts.com/fr/id/concept/vast-portable-graph-format/index.jsonld",
+      "tags": [
+        "Format de graphe portable .vast",
+        "VASTE",
+        "Portabilité",
+        "Graph Closure",
+        "Intégrité",
+        "Runtime Systems",
+        "Portabilité des données"
+      ],
+      "status": "experimental",
+      "confidence": "validated",
+      "publishedAt": "2026-07-11",
+      "modifiedAt": "2026-07-11"
     },
     {
       "id": "ea:concept:retrieval-augmented-generation-fr",
@@ -3863,6 +3963,31 @@
       "confidence": "canonical",
       "publishedAt": "2026-06-24",
       "modifiedAt": "2026-06-24"
+    },
+    {
+      "id": "ea:concept:vaste-five-primitives-fr",
+      "locale": "fr",
+      "translationOf": "ea:concept:vaste-five-primitives",
+      "type": "concept",
+      "title": "Les cinq primitives de VASTE",
+      "summary": "VASTE possède un vocabulaire fermé de cinq primitives — Vertex, Tie, Action, Surface et Environment — qui composent identité de graphe, topologie, changement admis, observation et contexte local d’exécution.",
+      "url": "https://electronicartefacts.com/fr/knowledge/concepts/vaste-five-primitives/",
+      "route": "/fr/knowledge/concepts/vaste-five-primitives/",
+      "identifier": "https://electronicartefacts.com/fr/id/concept/vaste-five-primitives/",
+      "jsonLd": "https://electronicartefacts.com/fr/id/concept/vaste-five-primitives/index.jsonld",
+      "tags": [
+        "Les cinq primitives de VASTE",
+        "VASTE",
+        "Runtime",
+        "Primitives",
+        "Graphe",
+        "Architecture logicielle",
+        "Runtime Systems"
+      ],
+      "status": "experimental",
+      "confidence": "validated",
+      "publishedAt": "2026-07-11",
+      "modifiedAt": "2026-07-11"
     },
     {
       "id": "ea:concept:linked-data",
@@ -4566,6 +4691,31 @@
       "modifiedAt": "2026-06-23"
     },
     {
+      "id": "ea:concept:situated-actors-and-governance",
+      "locale": "en",
+      "type": "concept",
+      "title": "Situated Actors and Topological Governance",
+      "summary": "In VASTE, an Actor is an extension-owned graph identity whose effective observation and action are resolved inside a specific System, Environment, topology and policy context.",
+      "url": "https://electronicartefacts.com/knowledge/concepts/situated-actors-and-governance/",
+      "route": "/knowledge/concepts/situated-actors-and-governance/",
+      "identifier": "https://electronicartefacts.com/id/concept/situated-actors-and-governance/",
+      "jsonLd": "https://electronicartefacts.com/id/concept/situated-actors-and-governance/index.jsonld",
+      "tags": [
+        "Situated Actors and Topological Governance",
+        "VASTE",
+        "Actor",
+        "Governance",
+        "Identity",
+        "Capabilities",
+        "Runtime Systems",
+        "Security Architecture"
+      ],
+      "status": "experimental",
+      "confidence": "validated",
+      "publishedAt": "2026-07-11",
+      "modifiedAt": "2026-07-11"
+    },
+    {
       "id": "ea:concept:speech-datasets",
       "locale": "en",
       "type": "concept",
@@ -4776,6 +4926,30 @@
       "modifiedAt": "2026-07-09"
     },
     {
+      "id": "ea:concept:vaste-five-primitives",
+      "locale": "en",
+      "type": "concept",
+      "title": "The Five VASTE Primitives",
+      "summary": "VASTE has a closed primitive roster—Vertex, Tie, Action, Surface and Environment—from which graph identity, topology, admitted change, observation and execution-local context are composed.",
+      "url": "https://electronicartefacts.com/knowledge/concepts/vaste-five-primitives/",
+      "route": "/knowledge/concepts/vaste-five-primitives/",
+      "identifier": "https://electronicartefacts.com/id/concept/vaste-five-primitives/",
+      "jsonLd": "https://electronicartefacts.com/id/concept/vaste-five-primitives/index.jsonld",
+      "tags": [
+        "The Five VASTE Primitives",
+        "VASTE",
+        "Runtime",
+        "Primitives",
+        "Graph",
+        "Software Architecture",
+        "Runtime Systems"
+      ],
+      "status": "experimental",
+      "confidence": "validated",
+      "publishedAt": "2026-07-11",
+      "modifiedAt": "2026-07-11"
+    },
+    {
       "id": "ea:concept:typography-fr",
       "locale": "fr",
       "translationOf": "ea:concept:typography",
@@ -4824,6 +4998,79 @@
       "confidence": "canonical",
       "publishedAt": "2026-06-24",
       "modifiedAt": "2026-06-24"
+    },
+    {
+      "id": "ea:concept:vab-and-genesis",
+      "locale": "en",
+      "type": "concept",
+      "title": "VAB and Genesis",
+      "summary": "VAB is VASTE’s Assisted Boot orchestration path for understanding an initial intent, composing a sealed plan, admitting a Founding Actor and materializing a governed starting graph.",
+      "url": "https://electronicartefacts.com/knowledge/concepts/vab-and-genesis/",
+      "route": "/knowledge/concepts/vab-and-genesis/",
+      "identifier": "https://electronicartefacts.com/id/concept/vab-and-genesis/",
+      "jsonLd": "https://electronicartefacts.com/id/concept/vab-and-genesis/index.jsonld",
+      "tags": [
+        "VAB and Genesis",
+        "VASTE",
+        "VAB",
+        "Assisted Boot",
+        "Genesis",
+        "Runtime Systems",
+        "Human Computer Interaction"
+      ],
+      "status": "experimental",
+      "confidence": "validated",
+      "publishedAt": "2026-07-11",
+      "modifiedAt": "2026-07-11"
+    },
+    {
+      "id": "ea:concept:vab-and-genesis-fr",
+      "locale": "fr",
+      "translationOf": "ea:concept:vab-and-genesis",
+      "type": "concept",
+      "title": "VAB et Genesis",
+      "summary": "VAB est le chemin d’orchestration Assisted Boot de VASTE : comprendre l’intention initiale, composer un plan scellé, admettre un Founding Actor et matérialiser un graphe initial gouverné.",
+      "url": "https://electronicartefacts.com/fr/knowledge/concepts/vab-and-genesis/",
+      "route": "/fr/knowledge/concepts/vab-and-genesis/",
+      "identifier": "https://electronicartefacts.com/fr/id/concept/vab-and-genesis/",
+      "jsonLd": "https://electronicartefacts.com/fr/id/concept/vab-and-genesis/index.jsonld",
+      "tags": [
+        "VAB et Genesis",
+        "VASTE",
+        "VAB",
+        "Assisted Boot",
+        "Genesis",
+        "Runtime Systems",
+        "Interaction humain machine"
+      ],
+      "status": "experimental",
+      "confidence": "validated",
+      "publishedAt": "2026-07-11",
+      "modifiedAt": "2026-07-11"
+    },
+    {
+      "id": "ea:concept:vaste-extension-architecture",
+      "locale": "en",
+      "type": "concept",
+      "title": "VASTE Extension Architecture",
+      "summary": "A VASTE extension is an optional, System-scoped capability unit that declares domain actions, bindings and surfaces while runtime authority remains in the core execution path.",
+      "url": "https://electronicartefacts.com/knowledge/concepts/vaste-extension-architecture/",
+      "route": "/knowledge/concepts/vaste-extension-architecture/",
+      "identifier": "https://electronicartefacts.com/id/concept/vaste-extension-architecture/",
+      "jsonLd": "https://electronicartefacts.com/id/concept/vaste-extension-architecture/index.jsonld",
+      "tags": [
+        "VASTE Extension Architecture",
+        "VASTE",
+        "Extensions",
+        "Runtime",
+        "Intelligence",
+        "Software Architecture",
+        "Runtime Systems"
+      ],
+      "status": "experimental",
+      "confidence": "validated",
+      "publishedAt": "2026-07-11",
+      "modifiedAt": "2026-07-11"
     },
     {
       "id": "ea:concept:voice-technology",
@@ -6122,6 +6369,55 @@
       "confidence": "published",
       "publishedAt": "2026-07-09",
       "modifiedAt": "2026-07-09"
+    },
+    {
+      "id": "ea:artefact:vaste-validation-record-fr",
+      "locale": "fr",
+      "translationOf": "ea:artefact:vaste-validation-record",
+      "type": "artefact",
+      "title": "Registre des validations VASTE",
+      "summary": "Preuves concernant primitives, exécution gouvernée, extensions, Assisted Boot et portabilité .vast, avec limites explicites.",
+      "url": "https://electronicartefacts.com/fr/archive/artefacts/vaste-validation-record/",
+      "route": "/fr/archive/artefacts/vaste-validation-record/",
+      "identifier": "https://electronicartefacts.com/fr/id/artefact/vaste-validation-record/",
+      "jsonLd": "https://electronicartefacts.com/fr/id/artefact/vaste-validation-record/index.jsonld",
+      "tags": [
+        "Registre des validations VASTE",
+        "VASTE",
+        "Preuves",
+        "Validation",
+        "Runtime",
+        "Vérification logicielle",
+        "Runtime Systems"
+      ],
+      "status": "active",
+      "confidence": "validated",
+      "publishedAt": "2026-07-11",
+      "modifiedAt": "2026-07-11"
+    },
+    {
+      "id": "ea:artefact:vaste-validation-record",
+      "locale": "en",
+      "type": "artefact",
+      "title": "VASTE Validation Record",
+      "summary": "Evidence for VASTE primitives, governed execution, extensions, Assisted Boot and .vast portability, with explicit limits.",
+      "url": "https://electronicartefacts.com/archive/artefacts/vaste-validation-record/",
+      "route": "/archive/artefacts/vaste-validation-record/",
+      "identifier": "https://electronicartefacts.com/id/artefact/vaste-validation-record/",
+      "jsonLd": "https://electronicartefacts.com/id/artefact/vaste-validation-record/index.jsonld",
+      "tags": [
+        "VASTE Validation Record",
+        "VASTE",
+        "Evidence",
+        "Validation",
+        "Runtime",
+        "Software Verification",
+        "Runtime Systems"
+      ],
+      "status": "active",
+      "confidence": "validated",
+      "publishedAt": "2026-07-11",
+      "modifiedAt": "2026-07-11"
     },
     {
       "id": "ea:artefact:voice-capture-studio-repository",

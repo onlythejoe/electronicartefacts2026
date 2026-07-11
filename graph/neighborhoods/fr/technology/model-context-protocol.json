@@ -33,7 +33,7 @@
       "title": "VASTE",
       "route": "/fr/programs/vaste/",
       "status": "development",
-      "confidence": "published"
+      "confidence": "validated"
     },
     {
       "id": "ea:publication:prompt-injection-and-trust-boundaries-in-ai-knowledge-systems-fr",

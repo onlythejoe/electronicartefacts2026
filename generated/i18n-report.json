@@ -9,16 +9,17 @@
     ]
   },
   "canonicalEntities": {
-    "english": 116,
-    "french": 116,
+    "english": 122,
+    "french": 122,
     "coveragePercent": 100
   },
   "editorialWords": {
-    "englishSourceWords": 72331,
-    "sourceWordsCoveredByFrenchRecords": 72331,
+    "englishSourceWords": 75154,
+    "sourceWordsCoveredByFrenchRecords": 75154,
     "coveragePercent": 100
   },
   "translatedEntityIds": [
+    "ea:artefact:vaste-validation-record",
     "ea:artefact:voice-capture-studio-repository",
     "ea:collection:knowledge-hub-foundations",
     "ea:collection:knowledge-hub-fourth-wave",
@@ -60,10 +61,15 @@
     "ea:concept:provenance",
     "ea:concept:retrieval-augmented-generation",
     "ea:concept:signal-archaeology",
+    "ea:concept:situated-actors-and-governance",
     "ea:concept:speech-datasets",
     "ea:concept:speech-recording",
     "ea:concept:systems-thinking",
     "ea:concept:typography",
+    "ea:concept:vab-and-genesis",
+    "ea:concept:vast-portable-graph-format",
+    "ea:concept:vaste-extension-architecture",
+    "ea:concept:vaste-five-primitives",
     "ea:concept:voice-technology",
     "ea:concept:web-audio",
     "ea:framework:electronic-artefacts-lightweight-template",

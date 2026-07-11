@@ -1,0 +1,34 @@
+{
+  "id": "local:ea:concept:vaste-extension-architecture-fr",
+  "kind": "local",
+  "focus": "ea:concept:vaste-extension-architecture-fr",
+  "nodes": [
+    {
+      "id": "ea:concept:vaste-extension-architecture-fr",
+      "type": "concept",
+      "title": "Architecture d’extensions VASTE",
+      "route": "/fr/knowledge/concepts/vaste-extension-architecture/",
+      "status": "experimental",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:program:vaste-fr",
+      "type": "program",
+      "title": "VASTE",
+      "route": "/fr/programs/vaste/",
+      "status": "development",
+      "confidence": "validated"
+    }
+  ],
+  "edges": [
+    {
+      "id": "ear:vaste-has-extension-architecture",
+      "source": "ea:program:vaste-fr",
+      "target": "ea:concept:vaste-extension-architecture-fr",
+      "predicate": "hasPart",
+      "label": "Has part",
+      "statement": "VASTE extends the runtime through optional System-scoped capability units without changing the five primitives.",
+      "confidence": "validated"
+    }
+  ]
+}
