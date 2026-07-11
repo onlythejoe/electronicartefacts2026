@@ -222,7 +222,7 @@
       "status": "development",
       "confidence": "validated",
       "publishedAt": "2026-01-01",
-      "modifiedAt": "2026-07-11"
+      "modifiedAt": "2026-07-12"
     },
     {
       "id": "ea:program:vaste",
@@ -249,7 +249,7 @@
       "status": "development",
       "confidence": "validated",
       "publishedAt": "2026-01-01",
-      "modifiedAt": "2026-07-11"
+      "modifiedAt": "2026-07-12"
     },
     {
       "id": "ea:project:palimpsests-fr",

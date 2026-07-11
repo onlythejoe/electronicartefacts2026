@@ -45,13 +45,13 @@ This file is generated from typed public records. Prefer each record's canonical
   - Entity ID: ea:program:vaste-fr
   - Identifier: https://electronicartefacts.com/fr/id/program/vaste/
   - JSON-LD: https://electronicartefacts.com/fr/id/program/vaste/index.jsonld
-  - Modified: 2026-07-11
+  - Modified: 2026-07-12
   - Keywords: VASTE, TypeScript, Graph Runtime, Exécution gouvernée, Portabilité, Extensions, Assisted Boot, architecture logicielle
 - [VASTE](https://electronicartefacts.com/programs/vaste/): The canonical public record of VASTE: its runtime architecture, primitives, governed execution, extension system, Assisted Boot, experimental .vast format, validation record and current limits.
   - Entity ID: ea:program:vaste
   - Identifier: https://electronicartefacts.com/id/program/vaste/
   - JSON-LD: https://electronicartefacts.com/id/program/vaste/index.jsonld
-  - Modified: 2026-07-11
+  - Modified: 2026-07-12
   - Keywords: VASTE, TypeScript, Graph Runtime, Governed Execution, Portability, Extensions, Assisted Boot, Software Architecture
 
 ## project

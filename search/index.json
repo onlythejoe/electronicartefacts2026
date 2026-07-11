@@ -4257,7 +4257,7 @@
       "abstract": "VASTE est un runtime graph-native expérimental pour construire des systèmes portables, contextuels et gouvernés à partir de cinq primitives : Vertex, Tie, Action, Surface et Environment.",
       "status": "development",
       "confidence": "validated",
-      "modifiedAt": "2026-07-11"
+      "modifiedAt": "2026-07-12"
     },
     "110": {
       "id": "ea:project:palimpsests-fr",
@@ -5057,7 +5057,7 @@
       "abstract": "VASTE is an experimental graph-native runtime for building portable, contextual and governed systems from five primitives: Vertex, Tie, Action, Surface and Environment.",
       "status": "development",
       "confidence": "validated",
-      "modifiedAt": "2026-07-11"
+      "modifiedAt": "2026-07-12"
     },
     "179": {
       "id": "ea:project:palimpsests",

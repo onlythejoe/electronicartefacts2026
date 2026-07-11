@@ -18,9 +18,9 @@
     "version": "2.0.0",
     "createdAt": "2024-01-01",
     "publishedAt": "2026-01-01",
-    "modifiedAt": "2026-07-11",
-    "reviewedAt": "2026-07-11",
-    "changeSummary": "Rebuilt from the runtime repository, contracts, tests and current architecture record."
+    "modifiedAt": "2026-07-12",
+    "reviewedAt": "2026-07-12",
+    "changeSummary": "Added a responsive interactive Surface for exploring runtime, portability and Assisted Boot concepts."
   },
   "authors": [
     {

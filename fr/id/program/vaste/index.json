@@ -19,9 +19,9 @@
     "version": "2.0.0",
     "createdAt": "2024-01-01",
     "publishedAt": "2026-01-01",
-    "modifiedAt": "2026-07-11",
-    "reviewedAt": "2026-07-11",
-    "changeSummary": "Reconstruction depuis le dépôt runtime, ses contrats, ses tests et son architecture actuelle."
+    "modifiedAt": "2026-07-12",
+    "reviewedAt": "2026-07-12",
+    "changeSummary": "Ajout d’une Surface interactive responsive pour explorer runtime, portabilité et Assisted Boot."
   },
   "authors": [
     {

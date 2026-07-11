@@ -16,6 +16,44 @@ import { escapeHtml } from "./html.js";
 const isVasteProgram = (entity: Entity): boolean =>
   entity.id === "ea:program:vaste" || entity.translationOf === "ea:program:vaste";
 
+const renderVasteRuntimeStack = (french: boolean): string => {
+  const layers = french
+    ? [
+        ["Interface", "Apps et hosts", "Surfaces remplaçables"],
+        ["Orchestration", "Platform · Operations", "System patterns"],
+        ["Domaines", "Extensions · Capabilities", "Sens des produits"],
+        ["Gouvernance", "System layer", "Exécution gouvernée"],
+        ["Primitives", "Vertex · Tie · Action", "Surface · Environment"],
+        ["Fondation", "Kernel", "Mécanique déterministe"],
+      ]
+    : [
+        ["Interface", "Apps and hosts", "Replaceable surfaces"],
+        ["Orchestration", "Platform · Operations", "System patterns"],
+        ["Domains", "Extensions · Capabilities", "Product meaning"],
+        ["Governance", "System layer", "Governed execution"],
+        ["Primitives", "Vertex · Tie · Action", "Surface · Environment"],
+        ["Foundation", "Kernel", "Deterministic mechanics"],
+      ];
+  return `<figure class="vaste-runtime-stack" aria-label="${french ? "Les six niveaux de l’architecture VASTE" : "The six levels of the VASTE architecture"}">
+    <figcaption>${french ? "De la surface remplaçable au kernel déterministe" : "From replaceable surfaces to the deterministic kernel"}</figcaption>
+    <div class="vaste-runtime-stack__flow">
+      ${layers.map(([eyebrow, title, detail], index) => `<div class="vaste-runtime-stack__layer">
+        <em>${String(index + 1).padStart(2, "0")}</em>
+        <span><small>${eyebrow}</small><strong>${title}</strong><span>${detail}</span></span>
+      </div>`).join("")}
+    </div>
+  </figure>`;
+};
+
+const renderVasteGenesisFlow = (french: boolean): string => {
+  const steps = french
+    ? ["VASTE boote Electronic Artefacts", "EA gouverne ses opérations", "EA gouverne le développement de VASTE", "Un System candidat est construit et exporté", "Structure et autorité sont revalidées", "Le Founding Actor approuve le handover"]
+    : ["VASTE boots Electronic Artefacts", "EA governs its operations", "EA governs VASTE development", "A candidate System is built and exported", "Structure and authority are revalidated", "The Founding Actor approves handover"];
+  return `<ol class="vaste-genesis-flow" aria-label="${french ? "Boucle Electronic Artefacts Genesis" : "Electronic Artefacts Genesis loop"}">
+    ${steps.map((step, index) => `<li><em>${String(index + 1).padStart(2, "0")}</em><span>${step}</span></li>`).join("")}
+  </ol>`;
+};
+
 const renderVasteOverview = (entity: Entity): string => {
   if (!isVasteProgram(entity)) return "";
   const french = entity.locale === "fr";
@@ -68,6 +106,75 @@ const renderVasteOverview = (entity: Entity): string => {
     </section>`;
 };
 
+const renderVasteGraphDemo = (entity: Entity): string => {
+  if (!isVasteProgram(entity)) return "";
+  const french = entity.locale === "fr";
+  return `
+    <link rel="stylesheet" href="/assets/css/vaste-demo.css?v=1" />
+    <section class="zone-card hero vaste-demo" data-vaste-demo data-locale="${french ? "fr" : "en"}" aria-labelledby="vaste-demo-title">
+      <div class="vaste-demo__intro">
+        <div class="section-head">
+          <p class="eyebrow">${french ? "SURFACE INTERACTIVE" : "INTERACTIVE SURFACE"}</p>
+          <h2 id="vaste-demo-title">${french ? "Manipuler un système VASTE." : "Manipulate a VASTE system."}</h2>
+          <p class="lede">${french
+            ? "Explorez trois projections simplifiées du runtime. Déplacez les Vertex, inspectez leur rôle et composez vos propres relations."
+            : "Explore three simplified runtime projections. Move Vertices, inspect their roles and compose your own relationships."}</p>
+        </div>
+        <div class="vaste-demo__legend" aria-label="${french ? "Légende" : "Legend"}">
+          <span><i data-tone="vertex"></i>Vertex</span>
+          <span><i data-tone="action"></i>Action</span>
+          <span><i data-tone="surface"></i>Surface</span>
+          <span><i data-tone="environment"></i>Environment</span>
+        </div>
+      </div>
+
+      <div class="vaste-demo__window">
+        <div class="vaste-demo__chrome" aria-hidden="true">
+          <span class="vaste-demo__traffic"><i></i><i></i><i></i></span>
+          <span>VASTE / GRAPH SURFACE</span>
+          <span class="vaste-demo__chrome-state" data-demo-chrome-state>${french ? "SYSTÈME ACTIF" : "SYSTEM ACTIVE"}</span>
+        </div>
+
+        <div class="vaste-demo__scenes" role="tablist" aria-label="${french ? "Choisir une projection" : "Choose a projection"}">
+          <button class="vaste-demo__scene is-active" type="button" role="tab" aria-selected="true" data-demo-scene="runtime">${french ? "Runtime" : "Runtime"}</button>
+          <button class="vaste-demo__scene" type="button" role="tab" aria-selected="false" data-demo-scene="portable">${french ? "Portabilité .vast" : ".vast portability"}</button>
+          <button class="vaste-demo__scene" type="button" role="tab" aria-selected="false" data-demo-scene="boot">Assisted Boot</button>
+        </div>
+
+        <div class="vaste-demo__workspace">
+          <div class="vaste-demo__canvas-shell" data-demo-canvas-shell>
+            <canvas class="vaste-demo__canvas" data-demo-canvas></canvas>
+            <div class="vaste-demo__canvas-label" aria-hidden="true"><span data-demo-scene-label>RUNTIME / SYSTEM:EA</span><i data-demo-frame>0000</i></div>
+            <p class="vaste-demo__hint" data-demo-hint>${french ? "Glissez un Vertex · touchez pour l’inspecter" : "Drag a Vertex · tap to inspect"}</p>
+          </div>
+
+          <aside class="vaste-demo__inspector" aria-label="${french ? "Inspecteur de Vertex" : "Vertex inspector"}">
+            <p class="vaste-demo__inspector-kicker" data-demo-selection-type>System</p>
+            <h3 data-demo-selection-title>Electronic Artefacts</h3>
+            <p data-demo-selection-copy>${french ? "Partition racine et clôture structurelle de cette projection." : "Root partition and structural closure of this projection."}</p>
+            <dl>
+              <div><dt>ID</dt><dd data-demo-selection-id>system:ea</dd></div>
+              <div><dt>${french ? "ÉTAT" : "STATE"}</dt><dd data-demo-selection-state>${french ? "OBSERVABLE" : "OBSERVABLE"}</dd></div>
+              <div><dt>${french ? "LIENS" : "TIES"}</dt><dd data-demo-selection-links>5</dd></div>
+            </dl>
+            <p class="vaste-demo__inspector-note">${french
+              ? "Cette démo est une projection pédagogique locale, pas une instance du runtime ni une preuve d’exécution."
+              : "This demo is a local explanatory projection, not a runtime instance or execution evidence."}</p>
+          </aside>
+        </div>
+
+        <div class="vaste-demo__toolbar" aria-label="${french ? "Actions sur le graphe" : "Graph actions"}">
+          <button type="button" data-demo-action="add"><span aria-hidden="true">＋</span>${french ? "Ajouter un Vertex" : "Add Vertex"}</button>
+          <button type="button" data-demo-action="link"><span aria-hidden="true">⌁</span><span data-demo-link-label>${french ? "Relier" : "Connect"}</span></button>
+          <button type="button" data-demo-action="links" aria-pressed="true"><span aria-hidden="true">⌘</span><span data-demo-links-label>${french ? "Liens visibles" : "Ties visible"}</span></button>
+          <button type="button" data-demo-action="reset"><span aria-hidden="true">↺</span>${french ? "Réinitialiser" : "Reset"}</button>
+          <span class="vaste-demo__live" data-demo-live aria-live="polite"></span>
+        </div>
+      </div>
+      <script type="module" src="/assets/js/vaste-demo.js?v=1"></script>
+    </section>`;
+};
+
 const renderEntityBody = (entity: Entity): string => {
   if (!isVasteProgram(entity)) return entity.bodyHtml;
   const headings: Array<[RegExp, string]> = entity.locale === "fr"
@@ -89,7 +196,16 @@ const renderEntityBody = (entity: Entity): string => {
         [/<h2>Validation record<\/h2>/, '<h2 id="evidence">Validation record</h2>'],
         [/<h2>Limits<\/h2>/, '<h2 id="limits">Limits</h2>'],
       ];
-  return headings.reduce((html, [pattern, replacement]) => html.replace(pattern, replacement), entity.bodyHtml);
+  const french = entity.locale === "fr";
+  const withAnchors = headings.reduce((html, [pattern, replacement]) => html.replace(pattern, replacement), entity.bodyHtml);
+  const withVisualFlows = withAnchors
+    .replace(/<pre><code class="language-text">(?:Apps et hosts remplaçables|Apps and replaceable hosts)[\s\S]*?Mécanique déterministe du kernel\n<\/code><\/pre>|<pre><code class="language-text">Apps and replaceable hosts[\s\S]*?Deterministic kernel mechanics\n<\/code><\/pre>/, renderVasteRuntimeStack(french))
+    .replace(/<pre><code class="language-text">(?:VASTE boote Electronic Artefacts|VASTE boots Electronic Artefacts)[\s\S]*?<\/code><\/pre>/, renderVasteGenesisFlow(french));
+  return withVisualFlows
+    .split(/(?=<h2(?:\s|>))/)
+    .filter(Boolean)
+    .map((section) => `<section class="vaste-dossier-section">${section}</section>`)
+    .join("");
 };
 
 const renderProgramComputationField = (entity: Entity): string => entity.type === "program" ? `
@@ -133,7 +249,7 @@ export const renderEntityPage = (
   const editorialFlow = isVasteProgram(entity) ? `${body}\n  ${editorialPanels}` : `${editorialPanels}\n  ${body}`;
   return `
   <section class="zone-card entity-breadcrumb-card">${renderBreadcrumbs(entity)}</section>
-  ${renderEntityHeader(entity)}${renderVasteOverview(entity)}${renderProgramComputationField(entity)}
+  ${renderEntityHeader(entity)}${renderVasteOverview(entity)}${renderVasteGraphDemo(entity)}${renderProgramComputationField(entity)}
   ${editorialFlow}
   ${renderRelationshipGroups(entity, relations, byId, routeById)}
   ${renderRecordDetails(entity, `

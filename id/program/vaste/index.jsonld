@@ -9,7 +9,7 @@
       "description": "The canonical public record of VASTE: its runtime architecture, primitives, governed execution, extension system, Assisted Boot, experimental .vast format, validation record and current limits.",
       "inLanguage": "en",
       "datePublished": "2026-01-01",
-      "dateModified": "2026-07-11",
+      "dateModified": "2026-07-12",
       "primaryImageOfPage": {
         "@type": "ImageObject",
         "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-social.jpg",
@@ -69,7 +69,7 @@
       "inLanguage": "en",
       "dateCreated": "2024-01-01",
       "datePublished": "2026-01-01",
-      "dateModified": "2026-07-11",
+      "dateModified": "2026-07-12",
       "publisher": {
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },

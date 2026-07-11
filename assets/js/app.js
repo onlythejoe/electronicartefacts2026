@@ -9458,7 +9458,7 @@ window.EA_PUBLIC_CATALOG = {
       "identifier": "/fr/id/program/vaste/",
       "temporality": {
         "creationDate": "2024-01-01",
-        "lastUpdated": "2026-07-11",
+        "lastUpdated": "2026-07-12",
         "releaseDate": "2026-01-01",
         "creationYear": "2024"
       }
@@ -12413,7 +12413,7 @@ window.EA_PUBLIC_CATALOG = {
       "identifier": "/id/program/vaste/",
       "temporality": {
         "creationDate": "2024-01-01",
-        "lastUpdated": "2026-07-11",
+        "lastUpdated": "2026-07-12",
         "releaseDate": "2026-01-01",
         "creationYear": "2024"
       }
