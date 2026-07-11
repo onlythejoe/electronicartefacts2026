@@ -6666,6 +6666,181 @@ body:has(.detail-hero[data-entry-id="oeil-de-meg"])::after {
   margin-top: auto;
 }
 
+.vaste-console {
+  display: grid;
+  gap: clamp(1rem, 2vw, 1.5rem);
+  overflow: hidden;
+  border-color: rgba(125, 211, 252, 0.2);
+  background:
+    radial-gradient(circle at 88% 0%, rgba(93, 108, 255, 0.16), transparent 32%),
+    radial-gradient(circle at 12% 100%, rgba(14, 165, 233, 0.1), transparent 30%),
+    linear-gradient(145deg, rgba(15, 20, 31, 0.98), rgba(8, 10, 15, 0.96));
+}
+
+.vaste-console::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background-image:
+    linear-gradient(rgba(125, 211, 252, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(125, 211, 252, 0.025) 1px, transparent 1px);
+  background-size: 3.5rem 3.5rem;
+  mask-image: linear-gradient(135deg, black, transparent 72%);
+  -webkit-mask-image: linear-gradient(135deg, black, transparent 72%);
+}
+
+.vaste-console > * {
+  position: relative;
+  z-index: 1;
+}
+
+.vaste-console__head {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  gap: 1rem;
+  align-items: end;
+}
+
+.vaste-console__actions {
+  justify-content: flex-end;
+}
+
+.vaste-console__signals {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 0.62rem;
+}
+
+.vaste-console__signals article {
+  display: grid;
+  gap: 0.4rem;
+  min-width: 0;
+  padding: clamp(0.85rem, 1.7vw, 1.2rem);
+  border: 1px solid rgba(255, 255, 255, 0.11);
+  border-radius: var(--radius-md);
+  background: rgba(255, 255, 255, 0.035);
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.035);
+}
+
+.vaste-console__signals span,
+.vaste-console__primitives em {
+  color: rgba(147, 197, 253, 0.78);
+  font-size: 0.63rem;
+  font-style: normal;
+  font-weight: 820;
+  letter-spacing: 0.12em;
+}
+
+.vaste-console__signals strong {
+  color: var(--text);
+  font-size: clamp(0.92rem, 1.35vw, 1.08rem);
+  line-height: 1.18;
+}
+
+.vaste-console__signals p {
+  margin: 0;
+  color: rgba(224, 230, 239, 0.65);
+  font-size: 0.82rem;
+  line-height: 1.42;
+}
+
+.vaste-console__primitives {
+  display: grid;
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+  gap: 0.45rem;
+}
+
+.vaste-console__primitives span {
+  display: grid;
+  gap: 0.24rem;
+  min-width: 0;
+  padding: 0.7rem 0.78rem;
+  border-left: 2px solid rgba(96, 165, 250, 0.46);
+  background: linear-gradient(90deg, rgba(96, 165, 250, 0.09), transparent);
+}
+
+.vaste-console__primitives strong {
+  overflow: hidden;
+  color: rgba(247, 244, 239, 0.92);
+  font-size: clamp(0.78rem, 1.1vw, 0.96rem);
+  text-overflow: ellipsis;
+}
+
+.vaste-console__nav {
+  display: flex;
+  gap: 0.42rem;
+  overflow-x: auto;
+  padding: 0.12rem 0 0.22rem;
+  scrollbar-width: none;
+}
+
+.vaste-console__nav::-webkit-scrollbar {
+  display: none;
+}
+
+.vaste-console__nav a {
+  flex: 0 0 auto;
+  padding: 0.48rem 0.68rem;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 999px;
+  color: rgba(247, 244, 239, 0.76);
+  font-size: 0.72rem;
+  font-weight: 760;
+}
+
+.publication-body--vaste h2[id] {
+  scroll-margin-top: calc(var(--header-offset, 7rem) + 1rem);
+}
+
+.publication-body--vaste h2[id]::before {
+  content: "// ";
+  color: rgba(96, 165, 250, 0.72);
+  font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  font-size: 0.72em;
+}
+
+.relationship-overflow {
+  padding-top: 0.25rem;
+}
+
+.relationship-overflow summary {
+  cursor: pointer;
+  color: rgba(191, 219, 254, 0.82);
+  font-size: 0.78rem;
+  font-weight: 780;
+  letter-spacing: 0.035em;
+}
+
+.relationship-overflow[open] summary {
+  margin-bottom: 0.7rem;
+}
+
+@media (max-width: 54rem) {
+  .vaste-console__head {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .vaste-console__actions {
+    justify-content: flex-start;
+  }
+}
+
+@media (max-width: 42rem) {
+  .vaste-console__signals {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .vaste-console__primitives {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .vaste-console__primitives span:last-child {
+    grid-column: 1 / -1;
+  }
+}
+
 .article-page {
   display: grid;
   gap: var(--section-stack-gap);

@@ -83,6 +83,17 @@ export const renderRelationshipGroups = (
     const group = predicateDefinitions[relation.predicate].group;
     groups.set(group, [...(groups.get(group) || []), relation]);
   }
+  const condensed = entity.id === "ea:program:vaste" || entity.translationOf === "ea:program:vaste";
+  const renderRelation = (relation: RelationStatement): string => {
+    const connectedId = connectedEntityIdForRelation(entity, relation);
+    const connectedEntity = byId.get(connectedId);
+    return `
+                  <div class="panel panel--soft">
+                    <p class="card__meta">${escapeHtml(relationLabelForEntity(entity, relation))}</p>
+                    <h3 class="card__title"><a href="${escapeHtml(routeById[connectedId] || "#")}">${escapeHtml(connectedEntity?.title || connectedId)}</a></h3>
+                    ${entity.locale === "fr" ? "" : `<p class="card__copy">${escapeHtml(relation.statement)}</p>`}
+                  </div>`;
+  };
   return `
     <section class="zone-card hero">
       <div class="section-head">
@@ -95,16 +106,11 @@ export const renderRelationshipGroups = (
           <article class="panel">
             <p class="card__meta">${escapeHtml(entity.locale === "fr" ? frenchGroupLabels[group] || group : group)}</p>
             <div class="stack">
-              ${items.map((relation) => {
-                const connectedId = connectedEntityIdForRelation(entity, relation);
-                const connectedEntity = byId.get(connectedId);
-                return `
-                  <div class="panel panel--soft">
-                    <p class="card__meta">${escapeHtml(relationLabelForEntity(entity, relation))}</p>
-                    <h3 class="card__title"><a href="${escapeHtml(routeById[connectedId] || "#")}">${escapeHtml(connectedEntity?.title || connectedId)}</a></h3>
-                    ${entity.locale === "fr" ? "" : `<p class="card__copy">${escapeHtml(relation.statement)}</p>`}
-                  </div>`;
-              }).join("")}
+              ${items.slice(0, condensed ? 6 : items.length).map(renderRelation).join("")}${condensed && items.length > 6 ? `
+                <details class="relationship-overflow">
+                  <summary>${entity.locale === "fr" ? `Voir ${items.length - 6} relations supplémentaires` : `Show ${items.length - 6} more relationships`}</summary>
+                  <div class="stack">${items.slice(6).map(renderRelation).join("")}</div>
+                </details>` : ""}
             </div>
           </article>`).join("")}
       </div>

@@ -134,6 +134,30 @@
       <span class="tag">experimental</span>
     </div>
   </section>
+    <section class="zone-card hero vaste-console" aria-labelledby="vaste-console-title">
+      <div class="vaste-console__head">
+        <div class="section-head">
+          <p class="eyebrow">RUNTIME STATE</p>
+          <h2 id="vaste-console-title">What works. What remains experimental.</h2>
+          <p class="lede">A fast reading of VASTE’s actual scope before entering the architecture and its evidence.</p>
+        </div>
+        <div class="button-row button-row--compact vaste-console__actions">
+          <a class="button button--primary" href="/archive/artefacts/vaste-validation-record/">Open validation record</a>
+          <a class="button button--secondary" href="https://www.vaste.space/" target="_blank" rel="noreferrer">View interactive briefing ↗</a>
+        </div>
+      </div>
+      <div class="vaste-console__signals" aria-label="VASTE status summary">
+        <article><span>IMPLEMENTED</span><strong>Active, test-backed runtime</strong><p>Primitives, execution, extensions, replay and Assisted Boot.</p></article>
+        <article><span>PORTABLE</span><strong><code>vast/1</code> round-trip</strong><p>System export, import, sealing and rebinding.</p></article>
+        <article><span>NOT STABLE</span><strong>Not yet a public SDK</strong><p>Third-party isolation, portable trust and handover remain incomplete.</p></article>
+      </div>
+      <div class="vaste-console__primitives" aria-label="The five VASTE primitives">
+        <span><em>01</em><strong>Vertex</strong></span><span><em>02</em><strong>Tie</strong></span><span><em>03</em><strong>Action</strong></span><span><em>04</em><strong>Surface</strong></span><span><em>05</em><strong>Environment</strong></span>
+      </div>
+      <nav class="vaste-console__nav" aria-label="Browse the VASTE dossier">
+        <a href="#definition">Definition</a><a href="#runtime-model">Runtime model</a><a href="#governed-execution">Execution</a><a href="#portability">.vast portability</a><a href="#assisted-boot">Assisted Boot</a><a href="#evidence">Evidence</a><a href="#limits">Limits</a>
+      </nav>
+    </section>
   <section class="zone-card hero program-runtime-field">
     <div class="program-runtime-field__grid">
       <div class="section-head">
@@ -219,7 +243,7 @@
       </article>
       </div>
     </section>
-  <article class="zone-card hero publication-body"><h2 id="definition">Definition</h2>
+  <article class="zone-card hero publication-body publication-body--vaste"><h2 id="definition">Definition</h2>
 <p>VASTE is an experimental graph-native runtime for modeling, executing and exposing systems across software, organizations and research domains. Its core vocabulary is deliberately closed: <strong>Vertex, Tie, Action, Surface and Environment</strong>. A System is not a sixth primitive; it is an isolation partition and the structural closure of a root Vertex.</p>
 <p>The implementation is active and test-backed, but it is not a stable public distribution or a production security boundary. Electronic Artefacts publishes this record to distinguish what runs today from what is specified, observed or still being researched.</p>
 <h2 id="why-it-exists">Why it exists</h2>
@@ -345,6 +369,9 @@ Deterministic kernel mechanics
                     <h3 class="card__title"><a href="/publications/retrieval-augmented-generation-and-knowledge-systems/">Retrieval-Augmented Generation and Knowledge Systems</a></h3>
                     <p class="card__copy">Retrieval-Augmented Generation and Knowledge Systems uses VASTE as a context for identity-aware graph retrieval.</p>
                   </div>
+                <details class="relationship-overflow">
+                  <summary>Show 7 more relationships</summary>
+                  <div class="stack">
                   <div class="panel panel--soft">
                     <p class="card__meta">Documented by</p>
                     <h3 class="card__title"><a href="/publications/systems-thinking-for-creative-practice/">Systems Thinking for Creative Practice</a></h3>
@@ -379,7 +406,8 @@ Deterministic kernel mechanics
                     <p class="card__meta">Evidenced by</p>
                     <h3 class="card__title"><a href="/archive/artefacts/vaste-validation-record/">VASTE Validation Record</a></h3>
                     <p class="card__copy">The VASTE Validation Record maps major public claims to internal contracts, implementation, tests, commits and limitations.</p>
-                  </div>
+                  </div></div>
+                </details>
             </div>
           </article>
           <article class="panel">
@@ -416,6 +444,9 @@ Deterministic kernel mechanics
                     <h3 class="card__title"><a href="/knowledge/concepts/graph-modeling/">Graph Modeling</a></h3>
                     <p class="card__copy">VASTE applies graph modeling through addressable entities and typed relationships.</p>
                   </div>
+                <details class="relationship-overflow">
+                  <summary>Show 5 more relationships</summary>
+                  <div class="stack">
                   <div class="panel panel--soft">
                     <p class="card__meta">Applies concept</p>
                     <h3 class="card__title"><a href="/knowledge/concepts/domain-operating-system/">Domain Operating System</a></h3>
@@ -440,7 +471,8 @@ Deterministic kernel mechanics
                     <p class="card__meta">Implements</p>
                     <h3 class="card__title"><a href="/research/questions/self-explaining-knowledge-graph-software/">How can software become explainable through its own knowledge graph?</a></h3>
                     <p class="card__copy">VASTE is listed as a current software or project answer for the research question &quot;How can software become explainable through its own knowledge graph?&quot;.</p>
-                  </div>
+                  </div></div>
+                </details>
             </div>
           </article>
           <article class="panel">
