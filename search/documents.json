@@ -5352,18 +5352,18 @@
     "locale": "fr",
     "route": "/fr/projects/v6/",
     "type": "project",
-    "title": "V6",
+    "title": "Vestiges",
     "alternateNames": [],
-    "abstract": "V6 est une future plateforme destinée à cartographier les pratiques de l’art et de l’artisanat et à développer des workflows orientés CRM, comme contexte de test appliqué pour VASTE.",
+    "abstract": "Vestiges est une future plateforme destinée à cartographier les pratiques de l’art et de l’artisanat et à développer des workflows orientés CRM, comme contexte de test appliqué pour VASTE.",
     "headings": [
       "Positionnement",
       "Thèse de plateforme",
       "Recherche VASTE appliquée",
       "État de développement"
     ],
-    "body": "Positionnement V6 est une future plateforme de cartographie des pratiques de l’art et de l’artisanat, avec des workflows orientés CRM. Elle est préparée comme contexte de test appliqué pour VASTE ; les noms de domaine et présences sociales sont réservés avant son activation. Thèse de plateforme La plateforme traitera relations, pratiques, matériaux, personnes et lieux comme des contextes connectés plutôt que comme des fiches isolées. Cartographie et workflows CRM seront explorés comme les parties d’un même système. Recherche VASTE appliquée V6 doit tester VASTE dans le contexte de l’art et de l’artisanat : entités adressables, relations typées, identité contextuelle, permissions, événements et projections publiques. C’est une application de recherche, pas la preuve d’un produit VASTE déjà livré. État de développement V6 est en développement avec un horizon visé en 2027. Sa présence publique, ses interfaces et ses modalités d’accès seront activées au fil de releases documentées. D’ici là, cette fiche décrit une plateforme projetée et son rôle de recherche, non un service disponible.",
+    "body": "Positionnement Vestiges est une future plateforme de cartographie des pratiques de l’art et de l’artisanat, avec des workflows orientés CRM. Elle est préparée comme contexte de test appliqué pour VASTE ; les noms de domaine et présences sociales sont réservés avant son activation. Thèse de plateforme La plateforme traitera relations, pratiques, matériaux, personnes et lieux comme des contextes connectés plutôt que comme des fiches isolées. Cartographie et workflows CRM seront explorés comme les parties d’un même système. Recherche VASTE appliquée Vestiges doit tester VASTE dans le contexte de l’art et de l’artisanat : entités adressables, relations typées, identité contextuelle, permissions, événements et projections publiques. C’est une application de recherche, pas la preuve d’un produit VASTE déjà livré. État de développement Vestiges est en développement avec un horizon visé en 2027. Sa présence publique, ses interfaces et ses modalités d’accès seront activées au fil de releases documentées. D’ici là, cette fiche décrit une plateforme projetée et son rôle de recherche, non un service disponible.",
     "tags": [
-      "V6",
+      "Vestiges",
       "VASTE",
       "Art",
       "Artisanat",
@@ -5388,8 +5388,8 @@
       "appliesConcept V6 is intended to apply graph-runtime principles to art, craft and CRM-oriented infrastructure.",
       "evidencedBy Foundational Lineage",
       "createdBy Electronic Artefacts is developing V6 as an applied test platform for VASTE, focused on mapping art and craft practices and CRM-oriented workflows.",
-      "implementedBy V6 is listed as a current software or project answer for the research question \"How can an AI understand someone during its very first conversation?\".",
-      "implementedBy V6 is listed as a current software or project answer for the research question \"How can software become explainable through its own knowledge graph?\"."
+      "implementedBy Vestiges is listed as a current software or project answer for the research question \"How can an AI understand someone during its very first conversation?\".",
+      "implementedBy Vestiges is listed as a current software or project answer for the research question \"How can software become explainable through its own knowledge graph?\"."
     ],
     "relatedEntityIds": [
       "ea:publication:iiif-and-compound-cultural-objects",
@@ -7520,7 +7520,7 @@
     ],
     "relationLabels": [
       "implementedBy Voice Capture Studio is listed as a current software or project answer for the research question \"How can an AI understand someone during its very first conversation?\".",
-      "implementedBy V6 is listed as a current software or project answer for the research question \"How can an AI understand someone during its very first conversation?\".",
+      "implementedBy Vestiges is listed as a current software or project answer for the research question \"How can an AI understand someone during its very first conversation?\".",
       "implementedBy VASTE is listed as a current software or project answer for the research question \"How can an AI understand someone during its very first conversation?\".",
       "implementedBy ORETH is listed as a current software or project answer for the research question \"How can an AI understand someone during its very first conversation?\".",
       "appliesConcept The research question \"How can an AI understand someone during its very first conversation?\" applies AI Agent as part of its current model.",
@@ -7592,7 +7592,7 @@
       "Le graphe de connaissance peut devenir la couche documentaire principale lorsque pages, identifiants, voisinages de graphe, documents de recherche et panneaux relationnels sont générés depuis les mêmes fiches source."
     ],
     "relationLabels": [
-      "implementedBy V6 is listed as a current software or project answer for the research question \"How can software become explainable through its own knowledge graph?\".",
+      "implementedBy Vestiges is listed as a current software or project answer for the research question \"How can software become explainable through its own knowledge graph?\".",
       "implementedBy Voice Capture Studio is listed as a current software or project answer for the research question \"How can software become explainable through its own knowledge graph?\".",
       "implementedBy VASTE is listed as a current software or project answer for the research question \"How can software become explainable through its own knowledge graph?\".",
       "implementedBy Electronic Artefacts Lightweight Template is listed as a current software or project answer for the research question \"How can software become explainable through its own knowledge graph?\".",
@@ -8706,18 +8706,18 @@
     "locale": "en",
     "route": "/projects/v6/",
     "type": "project",
-    "title": "V6",
+    "title": "Vestiges",
     "alternateNames": [],
-    "abstract": "V6 is a future platform that will map art and craft practices and develop CRM-oriented workflows as an applied test context for VASTE.",
+    "abstract": "Vestiges is a future platform that will map art and craft practices and develop CRM-oriented workflows as an applied test context for VASTE.",
     "headings": [
       "Position",
       "Platform thesis",
       "Applied VASTE research",
       "Development status"
     ],
-    "body": "Position V6 is a future platform for mapping art and craft practices and developing CRM-oriented workflows. It is being prepared as an applied test context for VASTE, with domains and social presences reserved ahead of activation. Platform thesis The platform will treat relationships, practices, materials, people and places as connected context rather than disconnected records. Mapping and CRM workflows will be explored as one coherent system. Applied VASTE research V6 is intended to test VASTE in an art and craft context: addressable entities, typed relationships, contextual identity, permissions, events and public projections. It is a research application, not evidence of a released VASTE product. Development status V6 is in development with a target horizon of 2027. Its public presence, interfaces and access conditions will activate through documented releases. Until then, the record describes an intended platform and its research role, not a live service.",
+    "body": "Position Vestiges is a future platform for mapping art and craft practices and developing CRM-oriented workflows. It is being prepared as an applied test context for VASTE, with domains and social presences reserved ahead of activation. Platform thesis The platform will treat relationships, practices, materials, people and places as connected context rather than disconnected records. Mapping and CRM workflows will be explored as one coherent system. Applied VASTE research Vestiges is intended to test VASTE in an art and craft context: addressable entities, typed relationships, contextual identity, permissions, events and public projections. It is a research application, not evidence of a released VASTE product. Development status Vestiges is in development with a target horizon of 2027. Its public presence, interfaces and access conditions will activate through documented releases. Until then, the record describes an intended platform and its research role, not a live service.",
     "tags": [
-      "V6",
+      "Vestiges",
       "VASTE",
       "Art",
       "Craft",
@@ -8742,8 +8742,8 @@
       "appliesConcept V6 is intended to apply graph-runtime principles to art, craft and CRM-oriented infrastructure.",
       "evidencedBy Foundational Lineage",
       "createdBy Electronic Artefacts is developing V6 as an applied test platform for VASTE, focused on mapping art and craft practices and CRM-oriented workflows.",
-      "implementedBy V6 is listed as a current software or project answer for the research question \"How can an AI understand someone during its very first conversation?\".",
-      "implementedBy V6 is listed as a current software or project answer for the research question \"How can software become explainable through its own knowledge graph?\"."
+      "implementedBy Vestiges is listed as a current software or project answer for the research question \"How can an AI understand someone during its very first conversation?\".",
+      "implementedBy Vestiges is listed as a current software or project answer for the research question \"How can software become explainable through its own knowledge graph?\"."
     ],
     "relatedEntityIds": [
       "ea:publication:iiif-and-compound-cultural-objects",
@@ -11533,7 +11533,7 @@
     ],
     "relationLabels": [
       "implementedBy Voice Capture Studio is listed as a current software or project answer for the research question \"How can an AI understand someone during its very first conversation?\".",
-      "implementedBy V6 is listed as a current software or project answer for the research question \"How can an AI understand someone during its very first conversation?\".",
+      "implementedBy Vestiges is listed as a current software or project answer for the research question \"How can an AI understand someone during its very first conversation?\".",
       "implementedBy VASTE is listed as a current software or project answer for the research question \"How can an AI understand someone during its very first conversation?\".",
       "implementedBy ORETH is listed as a current software or project answer for the research question \"How can an AI understand someone during its very first conversation?\".",
       "appliesConcept The research question \"How can an AI understand someone during its very first conversation?\" applies AI Agent as part of its current model.",
@@ -11605,7 +11605,7 @@
       "The knowledge graph itself can become the primary documentation layer when pages, identifiers, graph neighborhoods, search documents and relation panels are generated from the same source records."
     ],
     "relationLabels": [
-      "implementedBy V6 is listed as a current software or project answer for the research question \"How can software become explainable through its own knowledge graph?\".",
+      "implementedBy Vestiges is listed as a current software or project answer for the research question \"How can software become explainable through its own knowledge graph?\".",
       "implementedBy Voice Capture Studio is listed as a current software or project answer for the research question \"How can software become explainable through its own knowledge graph?\".",
       "implementedBy VASTE is listed as a current software or project answer for the research question \"How can software become explainable through its own knowledge graph?\".",
       "implementedBy Electronic Artefacts Lightweight Template is listed as a current software or project answer for the research question \"How can software become explainable through its own knowledge graph?\".",

@@ -22,7 +22,7 @@
     {
       "id": "ea:project:vestiges-fr",
       "type": "project",
-      "title": "V6",
+      "title": "Vestiges",
       "route": "/fr/projects/v6/",
       "status": "development",
       "confidence": "observed"

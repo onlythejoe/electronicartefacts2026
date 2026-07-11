@@ -5,7 +5,7 @@
       "@type": "WebPage",
       "@id": "https://electronicartefacts.com/projects/v6/#webpage",
       "url": "https://electronicartefacts.com/projects/v6/",
-      "name": "V6",
+      "name": "Vestiges",
       "description": "An in-development VASTE test platform for art, craft, mapping and relationship management, targeted for 2027.",
       "inLanguage": "en",
       "datePublished": "2026-06-22",
@@ -13,8 +13,8 @@
       "primaryImageOfPage": {
         "@type": "ImageObject",
         "url": "https://electronicartefacts.com/assets/media/projects/vestiges/logo-vestiges.png",
-        "caption": "V6 monogram for the future art and craft platform.",
-        "description": "V6 monogram"
+        "caption": "Vestiges monogram for the future art and craft platform.",
+        "description": "Vestiges monogram"
       },
       "breadcrumb": {
         "@id": "https://electronicartefacts.com/projects/v6/#breadcrumb"
@@ -34,9 +34,9 @@
       "@type": "CreativeWork",
       "@id": "https://electronicartefacts.com/id/project/v6/",
       "identifier": "ea:project:vestiges",
-      "name": "V6",
-      "abstract": "V6 is a future platform that will map art and craft practices and develop CRM-oriented workflows as an applied test context for VASTE.",
-      "description": "V6 is a future platform that will map art and craft practices and develop CRM-oriented workflows as an applied test context for VASTE.",
+      "name": "Vestiges",
+      "abstract": "Vestiges is a future platform that will map art and craft practices and develop CRM-oriented workflows as an applied test context for VASTE.",
+      "description": "Vestiges is a future platform that will map art and craft practices and develop CRM-oriented workflows as an applied test context for VASTE.",
       "url": "https://electronicartefacts.com/projects/v6/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/projects/v6/#webpage"
@@ -44,8 +44,8 @@
       "image": {
         "@type": "ImageObject",
         "url": "https://electronicartefacts.com/assets/media/projects/vestiges/logo-vestiges.png",
-        "caption": "V6 monogram for the future art and craft platform.",
-        "description": "V6 monogram"
+        "caption": "Vestiges monogram for the future art and craft platform.",
+        "description": "Vestiges monogram"
       },
       "author": [
         {
@@ -58,7 +58,7 @@
         }
       ],
       "keywords": [
-        "V6",
+        "Vestiges",
         "VASTE",
         "Art",
         "Craft",
@@ -193,7 +193,7 @@
         {
           "@type": "ListItem",
           "position": 3,
-          "name": "V6",
+          "name": "Vestiges",
           "item": "https://electronicartefacts.com/projects/v6/"
         }
       ]

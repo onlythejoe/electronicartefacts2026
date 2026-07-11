@@ -4,9 +4,9 @@
   "slug": {
     "canonical": "v6"
   },
-  "title": "V6",
+  "title": "Vestiges",
   "subtitle": "Art and Craft Mapping Platform",
-  "abstract": "V6 is a future platform that will map art and craft practices and develop CRM-oriented workflows as an applied test context for VASTE.",
+  "abstract": "Vestiges is a future platform that will map art and craft practices and develop CRM-oriented workflows as an applied test context for VASTE.",
   "description": "An in-development VASTE test platform for art, craft, mapping and relationship management, targeted for 2027.",
   "locale": "en",
   "visibility": "public",
@@ -19,7 +19,7 @@
     "createdAt": "2025-01-01",
     "publishedAt": "2026-06-22",
     "modifiedAt": "2026-07-11",
-    "changeSummary": "Repositioned as V6, an in-development VASTE test platform."
+    "changeSummary": "Restored the Vestiges name for the in-development VASTE test platform."
   },
   "authors": [
     {
@@ -28,7 +28,7 @@
   ],
   "publisher": "ea:organization:electronic-artefacts",
   "tags": [
-    "V6",
+    "Vestiges",
     "VASTE",
     "Art",
     "Craft",
@@ -46,13 +46,13 @@
       "id": "v6-logo",
       "type": "image",
       "src": "/assets/media/projects/vestiges/logo-vestiges.png",
-      "alt": "V6 monogram",
-      "caption": "V6 monogram for the future art and craft platform."
+      "alt": "Vestiges monogram",
+      "caption": "Vestiges monogram for the future art and craft platform."
     }
   ],
   "category": "internal",
   "brief": "Build a future art and craft mapping platform with CRM-oriented workflows as an applied test context for VASTE.",
-  "context": "Art and craft practices are distributed across people, workshops, institutions, materials, places and documents. V6 will explore how those relationships can be mapped and managed without flattening their context.",
+  "context": "Art and craft practices are distributed across people, workshops, institutions, materials, places and documents. Vestiges will explore how those relationships can be mapped and managed without flattening their context.",
   "stakeholders": [
     {
       "id": "ea:organization:electronic-artefacts"
@@ -61,7 +61,7 @@
   "constraints": [
     "Preserve the context and provenance of mapped practices.",
     "Do not present the platform as a live service before it is available.",
-    "Keep V6 distinct from the future VASTE product it helps to test."
+    "Keep Vestiges distinct from the future VASTE product it helps to test."
   ],
   "approach": [
     "Map people, organizations, practices, materials, tools, works, places and documents as connected entities.",
@@ -99,7 +99,7 @@
     "CRM research",
     "VASTE test platform"
   ],
-  "bodyHtml": "<h2 id=\"position\">Position</h2>\n<p>V6 is a future platform for mapping art and craft practices and developing CRM-oriented workflows. It is being prepared as an applied test context for VASTE, with domains and social presences reserved ahead of activation.</p>\n<h2 id=\"platform-thesis\">Platform thesis</h2>\n<p>The platform will treat relationships, practices, materials, people and places as connected context rather than disconnected records. Mapping and CRM workflows will be explored as one coherent system.</p>\n<h2 id=\"applied-vaste-research\">Applied VASTE research</h2>\n<p>V6 is intended to test VASTE in an art and craft context: addressable entities, typed relationships, contextual identity, permissions, events and public projections. It is a research application, not evidence of a released VASTE product.</p>\n<h2 id=\"development-status\">Development status</h2>\n<p>V6 is in development with a target horizon of 2027. Its public presence, interfaces and access conditions will activate through documented releases. Until then, the record describes an intended platform and its research role, not a live service.</p>\n",
+  "bodyHtml": "<h2 id=\"position\">Position</h2>\n<p>Vestiges is a future platform for mapping art and craft practices and developing CRM-oriented workflows. It is being prepared as an applied test context for VASTE, with domains and social presences reserved ahead of activation.</p>\n<h2 id=\"platform-thesis\">Platform thesis</h2>\n<p>The platform will treat relationships, practices, materials, people and places as connected context rather than disconnected records. Mapping and CRM workflows will be explored as one coherent system.</p>\n<h2 id=\"applied-vaste-research\">Applied VASTE research</h2>\n<p>Vestiges is intended to test VASTE in an art and craft context: addressable entities, typed relationships, contextual identity, permissions, events and public projections. It is a research application, not evidence of a released VASTE product.</p>\n<h2 id=\"development-status\">Development status</h2>\n<p>Vestiges is in development with a target horizon of 2027. Its public presence, interfaces and access conditions will activate through documented releases. Until then, the record describes an intended platform and its research role, not a live service.</p>\n",
   "headings": [
     "Position",
     "Platform thesis",

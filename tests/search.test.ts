@@ -12,7 +12,7 @@ test("search documents contain required pilot terms", async () => {
   const entities = await loadContent(path.resolve("."));
   const documents = buildSearchDocuments(entities, await loadRelations(path.resolve(".")), buildRoutes(entities));
   assert.ok(documents.every((document) => ["en", "fr"].includes(document.locale)));
-  assert.ok(documents.some((document) => document.locale === "fr" && document.title === "V6"));
+  assert.ok(documents.some((document) => document.locale === "fr" && document.title === "Vestiges"));
   const corpus = JSON.stringify(documents).toLowerCase();
   for (const term of ["graph runtime", "vaste", "v6", "runtime theory"]) {
     assert.ok(corpus.includes(term), `missing ${term}`);

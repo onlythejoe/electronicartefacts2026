@@ -1123,7 +1123,7 @@
         {
           "@type": "ListItem",
           "position": 117,
-          "name": "V6",
+          "name": "Vestiges",
           "url": "https://electronicartefacts.com/fr/projects/v6/",
           "item": {
             "@id": "https://electronicartefacts.com/fr/id/project/v6/"
@@ -1132,7 +1132,7 @@
         {
           "@type": "ListItem",
           "position": 118,
-          "name": "V6",
+          "name": "Vestiges",
           "url": "https://electronicartefacts.com/projects/v6/",
           "item": {
             "@id": "https://electronicartefacts.com/id/project/v6/"

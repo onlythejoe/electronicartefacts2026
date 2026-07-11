@@ -4275,8 +4275,8 @@
       "locale": "fr",
       "route": "/fr/projects/v6/",
       "type": "project",
-      "title": "V6",
-      "abstract": "V6 est une future plateforme destinée à cartographier les pratiques de l’art et de l’artisanat et à développer des workflows orientés CRM, comme contexte de test appliqué pour VASTE.",
+      "title": "Vestiges",
+      "abstract": "Vestiges est une future plateforme destinée à cartographier les pratiques de l’art et de l’artisanat et à développer des workflows orientés CRM, comme contexte de test appliqué pour VASTE.",
       "status": "development",
       "confidence": "observed",
       "modifiedAt": "2026-07-11"
@@ -5075,8 +5075,8 @@
       "locale": "en",
       "route": "/projects/v6/",
       "type": "project",
-      "title": "V6",
-      "abstract": "V6 is a future platform that will map art and craft practices and develop CRM-oriented workflows as an applied test context for VASTE.",
+      "title": "Vestiges",
+      "abstract": "Vestiges is a future platform that will map art and craft practices and develop CRM-oriented workflows as an applied test context for VASTE.",
       "status": "development",
       "confidence": "observed",
       "modifiedAt": "2026-07-11"
@@ -31673,6 +31673,18 @@
     [
       "vestiges",
       {
+        "0": {
+          "111": 1,
+          "180": 1
+        },
+        "3": {
+          "111": 1,
+          "180": 1
+        },
+        "6": {
+          "111": 1,
+          "180": 1
+        },
         "7": {
           "16": 1,
           "21": 1,
@@ -31680,7 +31692,7 @@
           "69": 1,
           "74": 1,
           "87": 1,
-          "111": 11,
+          "111": 13,
           "119": 1,
           "127": 1,
           "128": 1,
@@ -31688,8 +31700,10 @@
           "137": 1,
           "145": 1,
           "152": 1,
+          "154": 1,
+          "155": 1,
           "161": 1,
-          "180": 11,
+          "180": 13,
           "188": 1,
           "196": 1,
           "197": 1,
@@ -31697,7 +31711,13 @@
           "206": 1,
           "214": 1,
           "221": 1,
+          "223": 1,
+          "224": 1,
           "230": 1
+        },
+        "8": {
+          "111": 3,
+          "180": 3
         }
       }
     ],
@@ -32777,23 +32797,13 @@
     [
       "v6",
       {
-        "0": {
-          "111": 1,
-          "180": 1
-        },
-        "3": {
-          "111": 1,
-          "180": 1
-        },
         "4": {
           "196": 1,
           "221": 1
         },
         "6": {
-          "111": 1,
           "119": 1,
           "128": 1,
-          "180": 1,
           "188": 1,
           "197": 1
         },
@@ -32804,14 +32814,10 @@
           "79": 1,
           "107": 1,
           "109": 1,
-          "111": 6,
-          "154": 1,
-          "155": 1,
+          "111": 4,
           "176": 1,
           "178": 1,
-          "180": 6,
-          "223": 1,
-          "224": 1
+          "180": 4
         },
         "8": {
           "3": 1,
@@ -32825,9 +32831,7 @@
           "58": 1,
           "75": 2,
           "107": 1,
-          "111": 3,
           "153": 1,
-          "180": 3,
           "182": 1,
           "186": 1,
           "188": 4,

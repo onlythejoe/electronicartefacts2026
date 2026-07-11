@@ -1324,7 +1324,7 @@
               <a class="button button--primary vast-banner__action vast-banner__action--brief" href="https://www.vaste.space/" target="_blank" rel="noreferrer">
                 <span>Explore Brief</span><span class="vast-banner__action-mark" aria-hidden="true">↗</span>
               </a>
-              <a class="button button--secondary vast-banner__action vast-banner__action--research" href="./vaste.html">
+              <a class="button button--secondary vast-banner__action vast-banner__action--research" href="${esc(entryHrefFor(vaste))}">
                 <span>Open Research</span><span class="vast-banner__action-mark" aria-hidden="true">→</span>
               </a>
             </div>

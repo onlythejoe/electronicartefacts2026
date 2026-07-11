@@ -14,7 +14,7 @@ window.EA_TAXONOMIES = {
       "label": "Palimpsests"
     },
     "vestiges": {
-      "label": "V6"
+      "label": "Vestiges"
     }
   },
   "maturity": {
@@ -2893,7 +2893,7 @@ window.EA_ENTITIES = {
     },
     {
       "id": "vestiges",
-      "title": "V6",
+      "title": "Vestiges",
       "subtitle": "Art and Craft Mapping Platform",
       "kind": "project",
       "type": "Knowledge Infrastructure Platform",
@@ -2928,7 +2928,7 @@ window.EA_ENTITIES = {
       "summary": "Future art and craft mapping and CRM platform; applied VASTE test context.",
       "mission": "Test how art and craft practices can be mapped and managed as connected context.",
       "coreResource": "Art and craft relationships",
-      "productPosition": "V6 is a future applied test platform for VASTE. It will map art and craft practices and develop CRM-oriented workflows; it is not yet a live public service.",
+      "productPosition": "Vestiges is a future applied test platform for VASTE. It will map art and craft practices and develop CRM-oriented workflows; it is not yet a live public service.",
       "graphPrinciple": "Every person, organisation, technique, material, tool, work, place, project and document receives a durable identity. Teaching, making, using, restoring, supplying and certifying remain explicit, navigable and historised.",
       "graphNodeTypes": [
         "People",
@@ -3120,7 +3120,7 @@ window.EA_ENTITIES = {
           "href": "https://www.vaste.space/"
         },
         {
-          "label": "V6 research platform",
+          "label": "Vestiges research platform",
           "href": "./projects.html"
         }
       ]
@@ -9509,9 +9509,9 @@ window.EA_PUBLIC_CATALOG = {
       "type": "project",
       "locale": "fr",
       "translationOf": "ea:project:vestiges",
-      "title": "V6",
+      "title": "Vestiges",
       "subtitle": "Plateforme de cartographie art et artisanat",
-      "summary": "V6 est une future plateforme destinée à cartographier les pratiques de l’art et de l’artisanat et à développer des workflows orientés CRM, comme contexte de test appliqué pour VASTE.",
+      "summary": "Vestiges est une future plateforme destinée à cartographier les pratiques de l’art et de l’artisanat et à développer des workflows orientés CRM, comme contexte de test appliqué pour VASTE.",
       "description": "Une plateforme de test VASTE en développement pour l’art, l’artisanat, la cartographie et la gestion de relations, avec un horizon 2027.",
       "status": "development",
       "maturity": "prototype",
@@ -9519,7 +9519,7 @@ window.EA_PUBLIC_CATALOG = {
       "visibility": "public",
       "publicationClass": "canonical",
       "tags": [
-        "V6",
+        "Vestiges",
         "VASTE",
         "Art",
         "Artisanat",
@@ -12464,9 +12464,9 @@ window.EA_PUBLIC_CATALOG = {
       "kind": "project",
       "type": "project",
       "locale": "en",
-      "title": "V6",
+      "title": "Vestiges",
       "subtitle": "Art and Craft Mapping Platform",
-      "summary": "V6 is a future platform that will map art and craft practices and develop CRM-oriented workflows as an applied test context for VASTE.",
+      "summary": "Vestiges is a future platform that will map art and craft practices and develop CRM-oriented workflows as an applied test context for VASTE.",
       "description": "An in-development VASTE test platform for art, craft, mapping and relationship management, targeted for 2027.",
       "status": "development",
       "maturity": "prototype",
@@ -12474,7 +12474,7 @@ window.EA_PUBLIC_CATALOG = {
       "visibility": "public",
       "publicationClass": "canonical",
       "tags": [
-        "V6",
+        "Vestiges",
         "VASTE",
         "Art",
         "Craft",
@@ -18053,7 +18053,7 @@ window.EA_PUBLIC_CATALOG = {
       "subject": "ea:researchQuestion:first-conversation-understanding",
       "predicate": "implementedBy",
       "object": "ea:project:vestiges",
-      "statement": "V6 is listed as a current software or project answer for the research question \"How can an AI understand someone during its very first conversation?\".",
+      "statement": "Vestiges is listed as a current software or project answer for the research question \"How can an AI understand someone during its very first conversation?\".",
       "confidence": "observed",
       "validFrom": "2026-01-01",
       "createdAt": "2026-01-01",
@@ -18269,7 +18269,7 @@ window.EA_PUBLIC_CATALOG = {
       "subject": "ea:researchQuestion:self-explaining-knowledge-graph-software",
       "predicate": "implementedBy",
       "object": "ea:project:vestiges",
-      "statement": "V6 is listed as a current software or project answer for the research question \"How can software become explainable through its own knowledge graph?\".",
+      "statement": "Vestiges is listed as a current software or project answer for the research question \"How can software become explainable through its own knowledge graph?\".",
       "confidence": "validated",
       "validFrom": "2026-03-01",
       "createdAt": "2026-03-01",
@@ -24720,7 +24720,7 @@ window.EA_ANALYTICS_CONFIG = {
               <a class="button button--primary vast-banner__action vast-banner__action--brief" href="https://www.vaste.space/" target="_blank" rel="noreferrer">
                 <span>Explore Brief</span><span class="vast-banner__action-mark" aria-hidden="true">↗</span>
               </a>
-              <a class="button button--secondary vast-banner__action vast-banner__action--research" href="./vaste.html">
+              <a class="button button--secondary vast-banner__action vast-banner__action--research" href="${esc(entryHrefFor(vaste))}">
                 <span>Open Research</span><span class="vast-banner__action-mark" aria-hidden="true">→</span>
               </a>
             </div>

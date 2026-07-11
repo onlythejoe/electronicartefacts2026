@@ -1876,7 +1876,7 @@ window.EA_ENTITIES = {
     },
     {
       id: "vestiges",
-      title: "V6",
+      title: "Vestiges",
       subtitle: "Art and Craft Mapping Platform",
       kind: "project",
       type: "Knowledge Infrastructure Platform",
@@ -1902,7 +1902,7 @@ window.EA_ENTITIES = {
       mission: "Test how art and craft practices can be mapped and managed as connected context.",
       coreResource: "Art and craft relationships",
       productPosition:
-        "V6 is a future applied test platform for VASTE. It will map art and craft practices and develop CRM-oriented workflows; it is not yet a live public service.",
+        "Vestiges is a future applied test platform for VASTE. It will map art and craft practices and develop CRM-oriented workflows; it is not yet a live public service.",
       graphPrinciple:
         "Every person, organisation, technique, material, tool, work, place, project and document receives a durable identity. Teaching, making, using, restoring, supplying and certifying remain explicit, navigable and historised.",
       graphNodeTypes: [
@@ -2015,7 +2015,7 @@ window.EA_ENTITIES = {
       relatedPrograms: ["vaste", "forge"],
       links: [
         { label: "Explore VASTE", href: "https://www.vaste.space/" },
-        { label: "V6 research platform", href: "./projects.html" },
+        { label: "Vestiges research platform", href: "./projects.html" },
       ],
     },
     {

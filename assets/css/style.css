@@ -4987,6 +4987,7 @@ body[data-entry-id="forge"] :is(.button--secondary, .tag:hover, .tag:focus-visib
   background:
     linear-gradient(180deg, rgba(247, 244, 239, 0.15), rgba(247, 244, 239, 0.052)),
     rgba(0, 0, 0, 0.18);
+  color: #fff;
 }
 
 @media (min-width: 58rem) {
@@ -5089,6 +5090,23 @@ body[data-entry-id="forge"] :is(.button--secondary, .tag:hover, .tag:focus-visib
     font-size: 0.93rem;
     line-height: 1.45;
   }
+
+  [data-page="projects"] .project-index-card .status-badge {
+    min-height: 1.65rem;
+    padding: 0.3rem 0.58rem;
+    border: 0;
+    border-radius: 0.45rem;
+    background: rgba(255, 255, 255, 0.065);
+    font-size: 0.66rem;
+    line-height: 1.1;
+    letter-spacing: 0.065em;
+  }
+}
+
+[data-page="projects"] .project-index-card[data-entry-id="vestiges"] > .link-row .tag {
+  border-color: rgba(27, 26, 24, 0.78);
+  background: #1b1a18;
+  color: #fff;
 }
 
 [data-entry-id="vestiges"] {
@@ -5433,6 +5451,13 @@ img[src*="unionmob-logo.svg"] {
 [data-entry-id="vestiges"] .metric-pill strong,
 [data-entry-id="vestiges"] .metric-pill em {
   color: #1b1a18;
+}
+
+@media (max-width: 48rem) {
+  [data-page="projects"] .project-index-card[data-entry-id="vestiges"] .status-badge {
+    background: #1b1a18;
+    color: #fff;
+  }
 }
 
 [data-entry-id="vestiges"] .card-media-plate {

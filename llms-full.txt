@@ -68,18 +68,18 @@ This file is generated from typed public records. Prefer each record's canonical
   - JSON-LD: https://electronicartefacts.com/id/project/palimpsests/index.jsonld
   - Modified: 2026-06-23
   - Keywords: Palimpsests, ORETH, Audio, Memory, Transmission, Signal, Digital Art, Music
-- [V6](https://electronicartefacts.com/fr/projects/v6/): Une plateforme de test VASTE en développement pour l’art, l’artisanat, la cartographie et la gestion de relations, avec un horizon 2027.
+- [Vestiges](https://electronicartefacts.com/fr/projects/v6/): Une plateforme de test VASTE en développement pour l’art, l’artisanat, la cartographie et la gestion de relations, avec un horizon 2027.
   - Entity ID: ea:project:vestiges-fr
   - Identifier: https://electronicartefacts.com/fr/id/project/v6/
   - JSON-LD: https://electronicartefacts.com/fr/id/project/v6/index.jsonld
   - Modified: 2026-07-11
-  - Keywords: V6, VASTE, Art, Artisanat, CRM, Cartographie, Technologie, design
-- [V6](https://electronicartefacts.com/projects/v6/): An in-development VASTE test platform for art, craft, mapping and relationship management, targeted for 2027.
+  - Keywords: Vestiges, VASTE, Art, Artisanat, CRM, Cartographie, Technologie, design
+- [Vestiges](https://electronicartefacts.com/projects/v6/): An in-development VASTE test platform for art, craft, mapping and relationship management, targeted for 2027.
   - Entity ID: ea:project:vestiges
   - Identifier: https://electronicartefacts.com/id/project/v6/
   - JSON-LD: https://electronicartefacts.com/id/project/v6/index.jsonld
   - Modified: 2026-07-11
-  - Keywords: V6, VASTE, Art, Craft, CRM, Mapping, Technology, Design
+  - Keywords: Vestiges, VASTE, Art, Craft, CRM, Mapping, Technology, Design
 - [Voice Capture Studio](https://electronicartefacts.com/fr/projects/voice-capture-studio/): Un studio d’enregistrement local-first pour datasets vocaux, voix off et doublage, construit comme une application de navigateur open source avec exports WAV et métadonnées structurées.
   - Entity ID: ea:project:voice-capture-studio-fr
   - Identifier: https://electronicartefacts.com/fr/id/project/voice-capture-studio/
