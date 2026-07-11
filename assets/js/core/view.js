@@ -244,6 +244,27 @@
     let phase = 0;
     let rafId = 0;
     let visible = false;
+    let interactionEnergy = 0;
+    let interactionX = 0.5;
+
+    const activate = (clientX) => {
+      const bounds = root.getBoundingClientRect();
+      interactionX = bounds.width > 0
+        ? Math.max(0, Math.min(1, (clientX - bounds.left) / bounds.width))
+        : 0.5;
+      interactionEnergy = 1;
+      root.classList.add("is-engaged");
+    };
+
+    root.addEventListener("pointerenter", (event) => activate(event.clientX));
+    root.addEventListener("pointermove", (event) => {
+      if (event.pointerType === "mouse") activate(event.clientX);
+    });
+    root.addEventListener("pointerdown", (event) => activate(event.clientX), { passive: true });
+    root.addEventListener("pointerleave", () => root.classList.remove("is-engaged"));
+    root.addEventListener("pointerup", () => {
+      window.setTimeout(() => root.classList.remove("is-engaged"), 420);
+    }, { passive: true });
 
     const animate = () => {
       if (!visible || document.hidden || !document.body.contains(root)) {
@@ -252,13 +273,19 @@
         return;
       }
 
-      phase += 0.02;
+      phase += 0.02 + interactionEnergy * 0.006;
+      interactionEnergy *= 0.965;
 
-      const energies = [
+      const ambientEnergies = [
         (Math.sin(phase) + 1) * 0.5,
         (Math.sin(phase - 1.15) + 1) * 0.5,
         (Math.sin(phase - 2.3) + 1) * 0.5,
       ];
+      const nodePositions = [0.22, 0.48, 0.78];
+      const energies = ambientEnergies.map((energy, index) => {
+        const proximity = Math.max(0, 1 - Math.abs(interactionX - nodePositions[index]) * 2.2);
+        return Math.min(1.08, energy + interactionEnergy * proximity * 0.28);
+      });
 
       links[0].style.strokeWidth = (1.5 + energies[0] * 9.5).toFixed(2);
       links[1].style.strokeWidth = (1.5 + energies[2] * 9.5).toFixed(2);
@@ -954,7 +981,7 @@
             ${projectButterflyBubble(item, "card")}
           </div>
         </div>
-        ${cardMediaPlate(item, { kicker: featured ? "Lead visual" : "Visual", caption: featured ? false : !isVestiges, action: options.mediaAction })}
+        ${cardMediaPlate(item, { kicker: featured ? "Lead visual" : "Visual", caption: !isVestiges && item.id !== "oeil-de-meg", action: options.mediaAction })}
         ${cardCopy(item.summary || item.description, featured ? 2 : 1)}
         <p class="project-card__editorial-note">${esc(projectReadAs(item))}</p>
         ${signalStrip(item)}
@@ -1294,8 +1321,12 @@
             </div>
             ${vasteEngineMarkup()}
             <div class="button-row button-row--compact vast-banner__actions">
-              <a class="button button--primary" href="https://www.vaste.space/" target="_blank" rel="noreferrer">Explore VASTE</a>
-              <a class="button button--secondary" href="./research.html">Explore Research</a>
+              <a class="button button--primary vast-banner__action vast-banner__action--brief" href="https://www.vaste.space/" target="_blank" rel="noreferrer">
+                <span>Explore Brief</span><span class="vast-banner__action-mark" aria-hidden="true">↗</span>
+              </a>
+              <a class="button button--secondary vast-banner__action vast-banner__action--research" href="./vaste.html">
+                <span>Open Research</span><span class="vast-banner__action-mark" aria-hidden="true">→</span>
+              </a>
             </div>
           </div>
         </article>

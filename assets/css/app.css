@@ -4368,6 +4368,33 @@ body.is-header-hidden .shell-header.zone-card {
   margin-inline: auto;
   width: min(100%, 36rem);
   filter: drop-shadow(0 0 18px rgba(255, 255, 255, 0.1));
+  border-radius: 2rem;
+  isolation: isolate;
+  touch-action: pan-y;
+  transition: filter 320ms ease, transform 320ms cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+.vast-engine::before {
+  content: "";
+  position: absolute;
+  inset: 12% 8%;
+  z-index: -1;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(70, 132, 255, 0.15), transparent 66%);
+  opacity: 0;
+  transform: scale(0.88);
+  transition: opacity 320ms ease, transform 520ms cubic-bezier(0.22, 1, 0.36, 1);
+  pointer-events: none;
+}
+
+.vast-engine:is(:hover, .is-engaged) {
+  filter: drop-shadow(0 0 22px rgba(112, 164, 255, 0.18));
+  transform: translateY(-2px);
+}
+
+.vast-engine:is(:hover, .is-engaged)::before {
+  opacity: 1;
+  transform: scale(1);
 }
 
 .vast-engine svg {
@@ -4419,7 +4446,58 @@ body.is-header-hidden .shell-header.zone-card {
 }
 
 .vast-banner__actions {
-  justify-content: flex-start;
+  display: grid;
+  grid-template-columns: minmax(0, 1.18fr) minmax(0, 0.82fr);
+  gap: 0.65rem;
+  align-items: stretch;
+  width: 100%;
+}
+
+.vast-banner__action {
+  min-width: 0;
+  min-height: 3.25rem;
+  justify-content: space-between;
+  padding-inline: 1.15rem;
+  border-radius: 1rem;
+  text-align: left;
+  transition: transform 180ms ease, box-shadow 220ms ease, border-color 220ms ease, background-color 220ms ease;
+}
+
+.vast-banner__action:hover,
+.vast-banner__action:focus-visible {
+  transform: translateY(-2px);
+}
+
+.vast-banner__action--brief:hover,
+.vast-banner__action--brief:focus-visible {
+  box-shadow: 0 12px 30px rgba(190, 214, 255, 0.16);
+}
+
+.vast-banner__action--research:hover,
+.vast-banner__action--research:focus-visible {
+  border-color: rgba(142, 181, 255, 0.48);
+  background: rgba(81, 126, 204, 0.13);
+}
+
+.vast-banner__action-mark {
+  display: grid;
+  place-items: center;
+  flex: 0 0 auto;
+  width: 1.75rem;
+  height: 1.75rem;
+  margin-left: 0.75rem;
+  border: 1px solid currentColor;
+  border-radius: 999px;
+  font-size: 0.82rem;
+  line-height: 1;
+  opacity: 0.62;
+  transition: opacity 180ms ease, transform 180ms ease;
+}
+
+.vast-banner__action:hover .vast-banner__action-mark,
+.vast-banner__action:focus-visible .vast-banner__action-mark {
+  opacity: 1;
+  transform: translate(2px, -1px);
 }
 
 .vast-banner:hover::after,
@@ -12884,8 +12962,8 @@ input:focus-visible {
   }
 
   .vast-banner__actions {
-    flex-direction: column;
-    align-items: stretch;
+    grid-template-columns: 1fr;
+    gap: 0.55rem;
   }
 
   .vast-banner__actions .button {

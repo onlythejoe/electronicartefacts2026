@@ -138,6 +138,8 @@
     "Research engine": "Moteur de recherche",
     "Review the programs": "Découvrir les programmes",
     "Explore Research": "Explorer la recherche",
+    "Explore Brief": "Explorer le brief",
+    "Open Research": "Ouvrir la recherche",
     "Quick preview": "Aperçu rapide",
     "THREE PRACTICES": "TROIS PRATIQUES",
     "One studio. Three distinct ways of working.": "Un studio. Trois façons distinctes de travailler.",
