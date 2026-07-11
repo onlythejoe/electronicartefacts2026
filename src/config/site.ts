@@ -9,8 +9,12 @@ export const site = {
   locale: localeConfig(defaultLocale).ogLocale,
   language: defaultLocale,
   publisherId: "ea:organization:electronic-artefacts",
-  socialImage: "/assets/media/projects/electronic-artefacts/electronic-artefacts-search.jpg",
-  logoImage: "/assets/media/projects/electronic-artefacts/electronic-artefacts-logo.jpg",
+  // Social cards need a dedicated 1.91:1 composition; the former wordmark was
+  // technically valid but left most previews visually empty.
+  socialImage: "/assets/media/projects/electronic-artefacts/electronic-artefacts-social.jpg",
+  // Search engines commonly mask Organization.logo into a circle. This mark is
+  // intentionally square and remains identifiable at small sizes.
+  logoImage: "/assets/media/projects/electronic-artefacts/electronic-artefacts-mark-1024.png",
   contactEmail: "electronic.artefacts@gmail.com",
   keywords: [
     "creative technology",

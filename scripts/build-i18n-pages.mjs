@@ -4,8 +4,8 @@ import { fileURLToPath } from "node:url";
 
 const rootDir = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..");
 const origin = "https://electronicartefacts.com";
-const image = `${origin}/assets/media/projects/electronic-artefacts/electronic-artefacts-search.jpg`;
-const logo = `${origin}/assets/media/projects/electronic-artefacts/electronic-artefacts-logo.jpg`;
+const image = `${origin}/assets/media/projects/electronic-artefacts/electronic-artefacts-social.jpg`;
+const logo = `${origin}/assets/media/projects/electronic-artefacts/electronic-artefacts-mark-1024.png`;
 
 const pages = [
   {
@@ -217,7 +217,7 @@ const frenchOrganizationMicrodata = `    <!-- ENTITY MICRODATA START -->
     <meta itemprop="alternateName" content="electronicArtefacts" />
     <meta itemprop="description" content="Electronic Artefacts est un studio indépendant de technologies créatives qui conçoit des produits numériques, des systèmes de connaissance, des logiciels propriétaires et des projets culturels." />
     <link itemprop="url" href="https://electronicartefacts.com/fr/" />
-    <link itemprop="logo" href="https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-logo.jpg" />
+    <link itemprop="logo" href="https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-mark-1024.png" />
     <link itemprop="sameAs" href="https://www.instagram.com/electronic.artefacts/" />
     <link itemprop="sameAs" href="https://github.com/onlythejoe" />
     <link itemprop="sameAs" href="https://soundcloud.com/electronic-artefacts" />

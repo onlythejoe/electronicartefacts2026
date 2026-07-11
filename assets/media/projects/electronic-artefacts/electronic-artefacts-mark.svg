@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1024" height="1024" viewBox="0 0 1024 1024" role="img" aria-labelledby="title">
+  <title id="title">Electronic Artefacts monogram</title>
+  <defs>
+    <linearGradient id="surface" x1="136" y1="112" x2="890" y2="930" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#151515"/>
+      <stop offset="0.5" stop-color="#050505"/>
+      <stop offset="1" stop-color="#111111"/>
+    </linearGradient>
+  </defs>
+  <rect width="1024" height="1024" fill="#000"/>
+  <circle cx="512" cy="512" r="490" fill="url(#surface)" stroke="#303030" stroke-width="2"/>
+  <circle cx="512" cy="512" r="408" fill="none" stroke="#242424" stroke-width="2"/>
+  <path d="M280 302h290v68H358v98h181v65H358v112h220v68H280V302Z" fill="#f5f5f3"/>
+  <path d="M610 714 728 302h77l118 412h-80l-25-91H688l-25 91h-79l118-412Zm98-294-2 9-1 3-1 5-1 2-43 119h138l-43-119-1-2-1-5-1-3-2-9h-2Z" fill="#f5f5f3"/>
+  <circle cx="860" cy="203" r="15" fill="#f5f5f3"/>
+</svg>

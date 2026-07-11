@@ -47,6 +47,9 @@ export const renderLayout = ({ metadata, body, header, footer, jsonLd, pageClass
     <meta property="og:url" content="${escapeHtml(metadata.canonicalUrl)}" />
     <meta property="og:image" content="${escapeHtml(metadata.image)}" />
     <meta property="og:image:secure_url" content="${escapeHtml(metadata.image)}" />
+    ${metadata.imageType ? `<meta property="og:image:type" content="${escapeHtml(metadata.imageType)}" />` : ""}
+    ${metadata.imageWidth ? `<meta property="og:image:width" content="${metadata.imageWidth}" />` : ""}
+    ${metadata.imageHeight ? `<meta property="og:image:height" content="${metadata.imageHeight}" />` : ""}
     <meta property="og:image:alt" content="${escapeHtml(metadata.imageAlt)}" />
     ${metadata.ogType === "article" && metadata.publishedAt ? `<meta property="article:published_time" content="${escapeHtml(metadata.publishedAt)}" />` : ""}
     ${metadata.ogType === "article" ? `<meta property="article:modified_time" content="${escapeHtml(metadata.modifiedAt)}" />` : ""}

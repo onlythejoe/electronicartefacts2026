@@ -12,7 +12,7 @@
       "dateModified": "2026-06-24",
       "primaryImageOfPage": {
         "@type": "ImageObject",
-        "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-search.jpg",
+        "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-social.jpg",
         "description": "WebNN"
       },
       "breadcrumb": {
@@ -45,7 +45,7 @@
       },
       "image": {
         "@type": "ImageObject",
-        "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-search.jpg",
+        "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-social.jpg",
         "description": "WebNN"
       },
       "author": [
@@ -134,12 +134,12 @@
       ],
       "logo": {
         "@type": "ImageObject",
-        "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-logo.jpg",
-        "contentUrl": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-logo.jpg",
+        "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-mark-1024.png",
+        "contentUrl": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-mark-1024.png",
         "width": 1024,
         "height": 1024
       },
-      "image": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-search.jpg",
+      "image": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-social.jpg",
       "email": "electronic.artefacts@gmail.com",
       "contactPoint": [
         {

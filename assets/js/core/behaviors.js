@@ -2617,7 +2617,7 @@
     const imageCandidate =
       detailEntry?.media?.gallery?.find((item) => item?.src && item.mediaType !== "video" && /\.(png|jpe?g|webp|gif)$/i.test(item.src)) ||
       null;
-    const imageSrc = imageCandidate?.src || "./assets/media/projects/electronic-artefacts/electronic-artefacts-search.jpg";
+    const imageSrc = imageCandidate?.src || "./assets/media/projects/electronic-artefacts/electronic-artefacts-social.jpg";
     const imageAlt = imageCandidate?.alt || detailEntry?.title || "Electronic Artefacts logo";
     const imageUrl = new URL(imageSrc, "https://electronicartefacts.com/").href;
     const robots =

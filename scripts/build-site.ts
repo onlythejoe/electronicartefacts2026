@@ -256,7 +256,7 @@ const hubMetadata = (
     { hreflang: "x-default", href: `${origin}${route}` },
   ],
   robots: "index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1",
-  image: `${origin}/assets/media/projects/electronic-artefacts/electronic-artefacts-search.jpg`,
+  image: `${origin}/assets/media/projects/electronic-artefacts/electronic-artefacts-social.jpg`,
   imageAlt: "Electronic Artefacts knowledge platform",
   ogType: "website" as const,
   keywords: ["Electronic Artefacts", title, "knowledge graph", "creative technology", "research"],

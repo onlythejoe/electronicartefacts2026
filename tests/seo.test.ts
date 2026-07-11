@@ -38,6 +38,11 @@ test("metadata stays descriptive enough for editorial SEO", async () => {
     assert.ok(metadata.description.length <= 160, `${entity.id} description is too long`);
     assert.ok(metadata.keywords.length > 0, `${entity.id} should expose keywords`);
     assert.equal(metadata.modifiedAt, entity.version.modifiedAt);
+    if (!entity.media?.some((item) => item.type === "image")) {
+      assert.equal(metadata.imageWidth, 1200, `${entity.id} fallback social image should declare its width`);
+      assert.equal(metadata.imageHeight, 630, `${entity.id} fallback social image should declare its height`);
+      assert.equal(metadata.imageType, "image/jpeg", `${entity.id} fallback social image should declare its format`);
+    }
   }
 });
 
@@ -56,6 +61,7 @@ test("JSON-LD exposes site, publisher and article evidence", async () => {
   assert.ok(Array.isArray(organization.sameAs));
   assert.deepEqual(organization.alternateName, ["electronicArtefacts", "electronicartefacts.com"]);
   assert.equal((organization.logo as Record<string, unknown>).width, 1024);
+  assert.match((organization.logo as Record<string, unknown>).url as string, /electronic-artefacts-mark-1024\.png$/);
 
   const primary = graph.find((node) => node["@id"] === "https://electronicartefacts.com/id/publication/knowledge-graphs-for-cultural-infrastructure/");
   assert.ok(primary);
@@ -96,7 +102,7 @@ test("sitemap excludes noindex generated search route", async () => {
   assert.match(sitemap, /<loc>https:\/\/electronicartefacts\.com\/fr\/<\/loc>/);
   assert.match(sitemap, /xmlns:image="http:\/\/www\.google\.com\/schemas\/sitemap-image\/1\.1"/);
   assert.match(sitemap, /<loc>https:\/\/electronicartefacts\.com\/<\/loc>.*<lastmod>2026-07-10<\/lastmod>/);
-  assert.match(sitemap, /<image:loc>https:\/\/electronicartefacts\.com\/assets\/media\/projects\/electronic-artefacts\/electronic-artefacts-search\.jpg<\/image:loc>/);
+  assert.match(sitemap, /<image:loc>https:\/\/electronicartefacts\.com\/assets\/media\/projects\/electronic-artefacts\/electronic-artefacts-social\.jpg<\/image:loc>/);
 });
 
 test("agent indexes expose canonical retrieval resources", async () => {

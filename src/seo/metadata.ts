@@ -16,6 +16,9 @@ export interface PageMetadata {
   robots: string;
   image: string;
   imageAlt: string;
+  imageType?: string;
+  imageWidth?: number;
+  imageHeight?: number;
   ogType: "article" | "profile" | "website";
   keywords: string[];
   publishedAt?: string;
@@ -83,6 +86,7 @@ const keywordsFor = (entity: Entity): string[] =>
 
 export const metadataFor = (entity: Entity): PageMetadata => {
   const image = entity.media?.find((item) => item.type === "image");
+  const isDefaultSocialImage = !image;
   const language = entity.locale || defaultLocale;
   const route = routeForEntity(entity, language);
   const canonicalUrl = `${site.origin}${route}`;
@@ -102,6 +106,9 @@ export const metadataFor = (entity: Entity): PageMetadata => {
       : "noindex,follow",
     image: image ? `${site.origin}${image.src}` : `${site.origin}${site.socialImage}`,
     imageAlt: image?.alt || entity.title,
+    imageType: isDefaultSocialImage ? "image/jpeg" : undefined,
+    imageWidth: isDefaultSocialImage ? 1200 : undefined,
+    imageHeight: isDefaultSocialImage ? 630 : undefined,
     ogType: ogTypeFor(entity),
     keywords: keywordsFor(entity),
     publishedAt: entity.version.publishedAt,
