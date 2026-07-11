@@ -18228,6 +18228,61 @@ figcaption strong,
 
 /* Mobile reading refinements from the public review pass. */
 @media (max-width: 48rem) {
+  .research-atlas__node.graph-surface__node {
+    width: min(7.2rem, 34vw);
+    min-height: 3.3rem;
+  }
+
+  .research-atlas__node-label.graph-surface__node-body,
+  .research-atlas__node.graph-surface__node:hover .research-atlas__node-label,
+  .research-atlas__node.graph-surface__node:focus-visible .research-atlas__node-label {
+    display: block;
+    width: max-content;
+    max-width: min(7.2rem, 34vw);
+    padding: 0.28rem 0.38rem;
+    opacity: 1;
+    transform: none;
+  }
+
+  .research-atlas__node-label strong {
+    font-size: 0.55rem;
+    white-space: nowrap;
+  }
+
+  .research-atlas__graph-link {
+    width: 2.9rem;
+    min-width: 2.9rem;
+    max-width: 2.9rem;
+    height: 2.9rem;
+    flex: 0 0 2.9rem;
+  }
+
+  .selected-works-panel__links {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    gap: 0.5rem;
+  }
+
+  .signature-banner__actions {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 0.38rem;
+  }
+
+  .signature-banner__actions .button,
+  .selected-works-panel__links .tag {
+    width: 100%;
+    min-width: 0;
+    justify-content: center;
+    padding-inline: 0.55rem;
+    text-align: center;
+    white-space: normal;
+  }
+
+  .signature-banner__actions .button {
+    font-size: clamp(0.68rem, 3vw, 0.82rem);
+  }
+
   .research-atlas__meta-row .status-badge {
     min-height: 1.8rem;
     padding: 0.34rem 0.58rem;

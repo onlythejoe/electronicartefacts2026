@@ -462,7 +462,7 @@
   const researchGraphStyle = (node, index) => {
     const position = researchGraphPositions[index % researchGraphPositions.length];
     const color = node ? nodeColorFor(node.type || node.kind || node.group, index) : "rgba(234, 220, 207, 0.9)";
-    return `--x:${position.x};--y:${position.y};--z:${position.z};--mobile-x:${scaleLength(position.x, 0.2)};--mobile-y:${scaleLength(position.y, 0.2)};--mobile-z:${scaleLength(position.z, 0.16)};--node-color:${color};--node-delay:${index * 42}ms;`;
+    return `--x:${position.x};--y:${position.y};--z:${position.z};--mobile-x:${scaleLength(position.x, 0.34)};--mobile-y:${scaleLength(position.y, 0.3)};--mobile-z:${scaleLength(position.z, 0.16)};--node-color:${color};--node-delay:${index * 42}ms;`;
   };
   const researchNodeMarkup = (question) => {
     const nodes = researchNodeData(question);
@@ -882,7 +882,7 @@
         const angle = t * 0.25 + index * (Math.PI * 2 / activeNodes.length);
         const nodeWidth = node.el.offsetWidth || 104;
         const nodeHeight = node.el.offsetHeight || 68;
-        const edgePadding = isResearchAtlasGraph ? 34 : 16;
+        const edgePadding = compactGraph ? 8 : isResearchAtlasGraph ? 34 : 16;
         const maxRadiusX = Math.max(minDim * 0.18, width / 2 - nodeWidth / 2 - edgePadding);
         const maxRadiusY = Math.max(minDim * 0.14, height / 2 - nodeHeight / 2 - edgePadding);
         const radiusBase = Math.max(
