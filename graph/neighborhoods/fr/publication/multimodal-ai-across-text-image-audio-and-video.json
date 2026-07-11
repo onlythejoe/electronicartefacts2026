@@ -50,6 +50,14 @@
       "route": "/fr/archive/collections/knowledge-hub-third-wave/",
       "status": "active",
       "confidence": "published"
+    },
+    {
+      "id": "ea:concept:generative-ai-fr",
+      "type": "concept",
+      "title": "IA générative",
+      "route": "/fr/knowledge/concepts/generative-ai/",
+      "status": "active",
+      "confidence": "validated"
     }
   ],
   "edges": [
@@ -96,6 +104,24 @@
       "predicate": "hasPart",
       "label": "Has part",
       "statement": "Knowledge Hub Third Wave includes Multimodal AI Across Text, Image, Audio and Video.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:multimodal-ai-across-text-image-audio-and-video-member-of-collection-knowledge-hub-third-wave",
+      "source": "ea:publication:multimodal-ai-across-text-image-audio-and-video-fr",
+      "target": "ea:collection:knowledge-hub-third-wave-fr",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Multimodal AI Across Text, Image, Audio and Video is an explicit member of the Knowledge Hub Third Wave collection.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:multimodal-ai-across-text-image-audio-and-video-documents-generative-ai",
+      "source": "ea:publication:multimodal-ai-across-text-image-audio-and-video-fr",
+      "target": "ea:concept:generative-ai-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Multimodal AI Across Text, Image, Audio and Video documents Generative AI as one of its declared subjects.",
       "confidence": "published"
     }
   ]

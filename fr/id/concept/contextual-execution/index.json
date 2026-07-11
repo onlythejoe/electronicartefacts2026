@@ -6,9 +6,9 @@
     "canonical": "contextual-execution"
   },
   "title": "Exécution contextuelle",
-  "definition": "Exécution contextuelle désigne le sujet \"Exécution contextuelle\" dans le graphe public d'Electronic Artefacts.",
-  "abstract": "Exécution contextuelle désigne le sujet \"Exécution contextuelle\" dans le graphe public d'Electronic Artefacts. La fiche en précise l'usage, les limites et les relations avec les projets, technologies et publications d'Electronic Artefacts.",
-  "description": "Exécution contextuelle désigne le sujet \"Exécution contextuelle\" dans le graphe public d'Electronic Artefacts. La fiche en précise l'usage, les limites et les relations avec les projets, technologies et publications d'Electronic Artefacts.",
+  "definition": "L’exécution contextuelle consiste à faire de l’identité, de l’état, des permissions, des relations et du contexte opérationnel des contraintes actives sur ce qu’un système peut accomplir.",
+  "abstract": "L’exécution contextuelle évalue une opération à partir de l’identité des entités, des relations du graphe, des permissions, de l’état temporel et du périmètre visé.",
+  "description": "Un concept canonique reliant runtime de graphe, Théorie du runtime, VASTE et systèmes sensibles à l’identité.",
   "locale": "fr",
   "visibility": "public",
   "publicationClass": "canonical",
@@ -16,10 +16,10 @@
   "maturity": "research",
   "confidence": "canonical",
   "version": {
-    "version": "1.0.0",
+    "version": "1.1.0",
     "createdAt": "2026-06-23",
     "publishedAt": "2026-06-25",
-    "modifiedAt": "2026-06-25"
+    "modifiedAt": "2026-07-12"
   },
   "authors": [
     {
@@ -28,11 +28,11 @@
   ],
   "publisher": "ea:organization:electronic-artefacts",
   "tags": [
-    "Context",
+    "contexte",
     "Exécution",
     "Runtime",
-    "Identity",
-    "Permissions"
+    "Identité",
+    "permissions"
   ],
   "disciplines": [
     "conception de systèmes",
@@ -41,24 +41,28 @@
     "architecture logicielle"
   ],
   "scope": [
-    "définition du sujet",
-    "contexte d'usage",
-    "liens avec le graphe",
-    "références associées"
+    "contexte d’exécution",
+    "identité",
+    "permissions",
+    "relations du graphe",
+    "propagation des événements"
   ],
   "exclusions": [
-    "les usages purement promotionnels sans définition vérifiable",
-    "les exemples déconnectés des sources, relations ou contraintes du graphe"
+    "un appel de fonction global sans relation avec l’utilisateur, l’état ou l’entité concernée",
+    "un libellé statique qui n’intervient jamais dans la logique d’exécution"
   ],
   "claims": [
-    "La définition gagne en valeur lorsqu’elle reste reliée à des sources, des pratiques et des objets observables.",
-    "La fiche sert de vocabulaire commun pour relier projets, publications et technologies sans mélanger les langues."
+    "Le contexte devient une question de runtime lorsqu’il modifie l’autorisation ou la pertinence d’une opération.",
+    "Un runtime de graphe doit définir ses frontières de contexte pour rester gouvernable."
   ],
-  "bodyHtml": "<h2 id=\"definition\">Définition</h2>\n<p>Exécution contextuelle désigne le sujet “Exécution contextuelle” dans le graphe public d’Electronic Artefacts.</p>\n<h2 id=\"usage\">Usage</h2>\n<p>Cette fiche fixe le vocabulaire français de la notion et la relie aux projets, publications et technologies qui l’emploient dans le graphe.</p>\n<h2 id=\"perimetre\">Périmètre</h2>\n<p>Le périmètre précise les usages inclus, les limites explicites et les relations utiles pour poursuivre la lecture.</p>\n<h2 id=\"references\">Références</h2>\n<p>Les sources associées sont conservées dans la fiche canonique du graphe.</p>\n",
+  "bodyHtml": "<h2 id=\"definition\">Définition</h2>\n<p>L’exécution contextuelle consiste à intégrer le contexte opérationnel à l’exécution. Le système ne demande pas seulement quelle opération a été sollicitée. Il examine qui la demande, quelle entité est concernée, quelles relations sont actives, dans quel état se trouve le système, quelles permissions s’appliquent et quelles conséquences doivent se propager.</p>\n<p>Dans Electronic Artefacts, cette notion relie la Théorie du runtime à VASTE. Un runtime de graphe prend sa pleine signification lorsque l’identité et la structure relationnelle peuvent influer sur son comportement.</p>\n<h2 id=\"perimetre\">Périmètre</h2>\n<p>Le concept englobe l’identité des personnes et des organisations, l’état des entités, leur visibilité, leur niveau de confiance, leur cycle de vie, les permissions, les relations, la portée des événements et leur validité temporelle. Il inclut également les frontières : où commence le contexte, où il s’arrête et quelles informations peuvent être héritées.</p>\n<h2 id=\"difference-avec-la-configuration\">Différence avec la configuration</h2>\n<p>Une configuration rassemble généralement des valeurs qui modifient le comportement d’un logiciel. L’exécution contextuelle est plus dynamique : elle peut dépendre de l’acteur courant, de l’entité ciblée, des voisins du graphe, de l’opération tentée et de l’historique des événements.</p>\n<h2 id=\"position-d-electronic-artefacts\">Position d’Electronic Artefacts</h2>\n<p>Lorsqu’un contexte détermine l’autorité ou le sens d’une opération, il ne devrait pas rester enfoui dans du code applicatif incident. Il doit être modélisé de façon assez explicite pour être inspecté, testé et expliqué.</p>\n<p>Dans un système de connaissances, une publication ou une archive peut être publique, interne, canonique, spéculative, archivée ou remplacée. Ces états ne doivent pas seulement changer son apparence : ils doivent aussi agir sur l’indexation, la visibilité dans le graphe, la citation et la publication des relations.</p>\n<h2 id=\"applications\">Applications</h2>\n<p>L’exécution contextuelle s’applique aux flux éditoriaux, aux permissions d’archives, aux actions d’agents d’IA, aux systèmes de contribution culturelle, à la gouvernance de projets et aux runtimes comportant plusieurs acteurs.</p>\n<h2 id=\"limites\">Limites</h2>\n<p>Le contexte peut devenir coûteux. Si chaque opération dépend d’une portion trop large du graphe, le système devient difficile à comprendre et à tester. L’enjeu pratique est d’identifier le contexte minimal nécessaire à une exécution correcte.</p>\n<h2 id=\"references\">Références</h2>\n<p>Voir Runtime de graphe, Théorie du runtime et VASTE.</p>\n",
   "headings": [
     "Définition",
-    "Usage",
     "Périmètre",
+    "Différence avec la configuration",
+    "Position d’Electronic Artefacts",
+    "Applications",
+    "Limites",
     "Références"
   ],
   "headingItems": [
@@ -69,13 +73,28 @@
     },
     {
       "level": 2,
-      "title": "Usage",
-      "id": "usage"
+      "title": "Périmètre",
+      "id": "perimetre"
     },
     {
       "level": 2,
-      "title": "Périmètre",
-      "id": "perimetre"
+      "title": "Différence avec la configuration",
+      "id": "difference-avec-la-configuration"
+    },
+    {
+      "level": 2,
+      "title": "Position d’Electronic Artefacts",
+      "id": "position-d-electronic-artefacts"
+    },
+    {
+      "level": 2,
+      "title": "Applications",
+      "id": "applications"
+    },
+    {
+      "level": 2,
+      "title": "Limites",
+      "id": "limites"
     },
     {
       "level": 2,

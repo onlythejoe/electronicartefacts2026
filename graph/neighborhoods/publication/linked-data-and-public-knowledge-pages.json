@@ -58,6 +58,14 @@
       "route": "/research/questions/self-explaining-knowledge-graph-software/",
       "status": "active",
       "confidence": "validated"
+    },
+    {
+      "id": "ea:concept:knowledge-graph",
+      "type": "concept",
+      "title": "Knowledge Graph",
+      "route": "/knowledge/concepts/knowledge-graph/",
+      "status": "active",
+      "confidence": "canonical"
     }
   ],
   "edges": [
@@ -114,6 +122,42 @@
       "label": "Documents",
       "statement": "Linked Data and Public Knowledge Pages documents context, evidence or vocabulary for the research question \"How can software become explainable through its own knowledge graph?\".",
       "confidence": "validated"
+    },
+    {
+      "id": "ear:linked-data-and-public-knowledge-pages-member-of-collection-knowledge-hub-foundations",
+      "source": "ea:publication:linked-data-and-public-knowledge-pages",
+      "target": "ea:collection:knowledge-hub-foundations",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Linked Data and Public Knowledge Pages is an explicit member of the Knowledge Hub Foundations collection.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:linked-data-and-public-knowledge-pages-documents-json-ld",
+      "source": "ea:publication:linked-data-and-public-knowledge-pages",
+      "target": "ea:technology:json-ld",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Linked Data and Public Knowledge Pages documents JSON-LD as one of its declared subjects.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:linked-data-and-public-knowledge-pages-documents-rdf",
+      "source": "ea:publication:linked-data-and-public-knowledge-pages",
+      "target": "ea:technology:rdf",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Linked Data and Public Knowledge Pages documents RDF as one of its declared subjects.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:linked-data-and-public-knowledge-pages-documents-knowledge-graph",
+      "source": "ea:publication:linked-data-and-public-knowledge-pages",
+      "target": "ea:concept:knowledge-graph",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Linked Data and Public Knowledge Pages documents Knowledge Graph as one of its declared subjects.",
+      "confidence": "published"
     }
   ]
 }

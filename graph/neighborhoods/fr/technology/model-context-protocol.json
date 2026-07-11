@@ -50,6 +50,14 @@
       "route": "/fr/research/questions/first-conversation-understanding/",
       "status": "active",
       "confidence": "observed"
+    },
+    {
+      "id": "ea:collection:knowledge-hub-fourth-wave-fr",
+      "type": "collection",
+      "title": "Hub de connaissance, quatrième vague",
+      "route": "/fr/archive/collections/knowledge-hub-fourth-wave/",
+      "status": "active",
+      "confidence": "published"
     }
   ],
   "edges": [
@@ -97,6 +105,33 @@
       "label": "Uses technology",
       "statement": "The research question \"How can an AI understand someone during its very first conversation?\" uses Model Context Protocol as a relevant technical reference.",
       "confidence": "observed"
+    },
+    {
+      "id": "ear:model-context-protocol-member-of-collection-knowledge-hub-fourth-wave",
+      "source": "ea:technology:model-context-protocol-fr",
+      "target": "ea:collection:knowledge-hub-fourth-wave-fr",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Model Context Protocol is an explicit member of the Knowledge Hub Fourth Wave collection.",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ear:observability-for-ai-agents-and-tool-calling-systems-documents-model-context-protocol",
+      "source": "ea:publication:observability-for-ai-agents-and-tool-calling-systems-fr",
+      "target": "ea:technology:model-context-protocol-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Observability for AI Agents and Tool-Calling Systems documents Model Context Protocol as one of its declared subjects.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:prompt-injection-and-trust-boundaries-in-ai-knowledge-systems-documents-model-context-protocol",
+      "source": "ea:publication:prompt-injection-and-trust-boundaries-in-ai-knowledge-systems-fr",
+      "target": "ea:technology:model-context-protocol-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Prompt Injection and Trust Boundaries in AI Knowledge Systems documents Model Context Protocol as one of its declared subjects.",
+      "confidence": "published"
     }
   ]
 }

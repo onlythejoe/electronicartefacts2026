@@ -58,6 +58,14 @@
       "route": "/fr/research/questions/self-explaining-knowledge-graph-software/",
       "status": "active",
       "confidence": "validated"
+    },
+    {
+      "id": "ea:concept:entity-identity-fr",
+      "type": "concept",
+      "title": "Identité d'entité",
+      "route": "/fr/knowledge/concepts/entity-identity/",
+      "status": "active",
+      "confidence": "canonical"
     }
   ],
   "edges": [
@@ -114,6 +122,24 @@
       "label": "Documents",
       "statement": "Contextual Execution and Graph Runtimes documents context, evidence or vocabulary for the research question \"How can software become explainable through its own knowledge graph?\".",
       "confidence": "validated"
+    },
+    {
+      "id": "ear:contextual-execution-and-graph-runtimes-member-of-collection-knowledge-hub-foundations",
+      "source": "ea:publication:contextual-execution-and-graph-runtimes-fr",
+      "target": "ea:collection:knowledge-hub-foundations-fr",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Contextual Execution and Graph Runtimes is an explicit member of the Knowledge Hub Foundations collection.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:contextual-execution-and-graph-runtimes-documents-entity-identity",
+      "source": "ea:publication:contextual-execution-and-graph-runtimes-fr",
+      "target": "ea:concept:entity-identity-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Contextual Execution and Graph Runtimes documents Entity Identity as one of its declared subjects.",
+      "confidence": "published"
     }
   ]
 }

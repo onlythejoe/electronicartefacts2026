@@ -97,6 +97,24 @@
       "label": "Has part",
       "statement": "Knowledge Hub Second Wave includes Typography, Reading Systems and Digital Interfaces as a core article.",
       "confidence": "published"
+    },
+    {
+      "id": "ear:typography-reading-systems-and-digital-interfaces-member-of-collection-knowledge-hub-second-wave",
+      "source": "ea:publication:typography-reading-systems-and-digital-interfaces-fr",
+      "target": "ea:collection:knowledge-hub-second-wave-fr",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Typography, Reading Systems and Digital Interfaces is an explicit member of the Knowledge Hub Second Wave collection.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:typography-reading-systems-and-digital-interfaces-documents-css-fonts",
+      "source": "ea:publication:typography-reading-systems-and-digital-interfaces-fr",
+      "target": "ea:technology:css-fonts-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Typography, Reading Systems and Digital Interfaces documents CSS Fonts as one of its declared subjects.",
+      "confidence": "published"
     }
   ]
 }

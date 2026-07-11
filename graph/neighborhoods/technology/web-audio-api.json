@@ -42,6 +42,22 @@
       "route": "/research/questions/speech-dataset-reproducibility/",
       "status": "active",
       "confidence": "published"
+    },
+    {
+      "id": "ea:collection:knowledge-hub-second-wave",
+      "type": "collection",
+      "title": "Knowledge Hub Second Wave",
+      "route": "/archive/collections/knowledge-hub-second-wave/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:collection:voice-capture-studio",
+      "type": "collection",
+      "title": "Voice Capture Studio Collection",
+      "route": "/archive/collections/voice-capture-studio/",
+      "status": "active",
+      "confidence": "published"
     }
   ],
   "edges": [
@@ -79,6 +95,33 @@
       "predicate": "usesTechnology",
       "label": "Uses technology",
       "statement": "The research question \"How can speech datasets become reproducible, structured and privacy-first?\" uses Web Audio API as a relevant technical reference.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:web-audio-api-member-of-collection-knowledge-hub-second-wave",
+      "source": "ea:technology:web-audio-api",
+      "target": "ea:collection:knowledge-hub-second-wave",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Web Audio API is an explicit member of the Knowledge Hub Second Wave collection.",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ear:web-audio-api-member-of-collection-voice-capture-studio",
+      "source": "ea:technology:web-audio-api",
+      "target": "ea:collection:voice-capture-studio",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Web Audio API is an explicit member of the Voice Capture Studio Collection collection.",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ear:web-audio-and-browser-based-sound-systems-documents-web-audio-api",
+      "source": "ea:publication:web-audio-and-browser-based-sound-systems",
+      "target": "ea:technology:web-audio-api",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Web Audio and Browser-Based Sound Systems documents Web Audio API as one of its declared subjects.",
       "confidence": "published"
     }
   ]

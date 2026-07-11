@@ -50,6 +50,14 @@
       "route": "/archive/collections/knowledge-hub-second-wave/",
       "status": "active",
       "confidence": "published"
+    },
+    {
+      "id": "ea:concept:creative-coding",
+      "type": "concept",
+      "title": "Creative Coding",
+      "route": "/knowledge/concepts/creative-coding/",
+      "status": "active",
+      "confidence": "validated"
     }
   ],
   "edges": [
@@ -96,6 +104,33 @@
       "predicate": "hasPart",
       "label": "Has part",
       "statement": "Knowledge Hub Second Wave includes Procedural Graphics, Shaders and Visual Systems as a core article.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:procedural-graphics-shaders-and-visual-systems-member-of-collection-knowledge-hub-second-wave",
+      "source": "ea:publication:procedural-graphics-shaders-and-visual-systems",
+      "target": "ea:collection:knowledge-hub-second-wave",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Procedural Graphics, Shaders and Visual Systems is an explicit member of the Knowledge Hub Second Wave collection.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:procedural-graphics-shaders-and-visual-systems-documents-webgl",
+      "source": "ea:publication:procedural-graphics-shaders-and-visual-systems",
+      "target": "ea:technology:webgl",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Procedural Graphics, Shaders and Visual Systems documents WebGL as one of its declared subjects.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:procedural-graphics-shaders-and-visual-systems-documents-creative-coding",
+      "source": "ea:publication:procedural-graphics-shaders-and-visual-systems",
+      "target": "ea:concept:creative-coding",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Procedural Graphics, Shaders and Visual Systems documents Creative Coding as one of its declared subjects.",
       "confidence": "published"
     }
   ]

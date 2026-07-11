@@ -66,6 +66,14 @@
       "route": "/fr/research/questions/self-explaining-knowledge-graph-software/",
       "status": "active",
       "confidence": "validated"
+    },
+    {
+      "id": "ea:concept:provenance-fr",
+      "type": "concept",
+      "title": "Provenance",
+      "route": "/fr/knowledge/concepts/provenance/",
+      "status": "active",
+      "confidence": "validated"
     }
   ],
   "edges": [
@@ -131,6 +139,24 @@
       "label": "Documents",
       "statement": "Why Graphs Are More Powerful Than Folders documents context, evidence or vocabulary for the research question \"How can software become explainable through its own knowledge graph?\".",
       "confidence": "validated"
+    },
+    {
+      "id": "ear:why-graphs-are-more-powerful-than-folders-member-of-collection-knowledge-hub-third-wave",
+      "source": "ea:publication:why-graphs-are-more-powerful-than-folders-fr",
+      "target": "ea:collection:knowledge-hub-third-wave-fr",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Why Graphs Are More Powerful Than Folders is an explicit member of the Knowledge Hub Third Wave collection.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:why-graphs-are-more-powerful-than-folders-documents-provenance",
+      "source": "ea:publication:why-graphs-are-more-powerful-than-folders-fr",
+      "target": "ea:concept:provenance-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Why Graphs Are More Powerful Than Folders documents Provenance as one of its declared subjects.",
+      "confidence": "published"
     }
   ]
 }

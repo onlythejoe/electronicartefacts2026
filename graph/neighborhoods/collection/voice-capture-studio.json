@@ -42,6 +42,94 @@
       "route": "/research/questions/speech-dataset-reproducibility/",
       "status": "active",
       "confidence": "published"
+    },
+    {
+      "id": "ea:concept:speech-recording",
+      "type": "concept",
+      "title": "Speech Recording",
+      "route": "/knowledge/concepts/speech-recording/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:concept:speech-datasets",
+      "type": "concept",
+      "title": "Speech Datasets",
+      "route": "/knowledge/concepts/speech-datasets/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:concept:browser-software",
+      "type": "concept",
+      "title": "Browser Software",
+      "route": "/knowledge/concepts/browser-software/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:concept:voice-technology",
+      "type": "concept",
+      "title": "Voice Technology",
+      "route": "/knowledge/concepts/voice-technology/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:concept:machine-learning-workflows",
+      "type": "concept",
+      "title": "Machine Learning Workflows",
+      "route": "/knowledge/concepts/machine-learning-workflows/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:concept:open-source",
+      "type": "concept",
+      "title": "Open Source",
+      "route": "/knowledge/concepts/open-source/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:concept:web-audio",
+      "type": "concept",
+      "title": "Web Audio",
+      "route": "/knowledge/concepts/web-audio/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:concept:metadata",
+      "type": "concept",
+      "title": "Metadata",
+      "route": "/knowledge/concepts/metadata/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:concept:provenance",
+      "type": "concept",
+      "title": "Provenance",
+      "route": "/knowledge/concepts/provenance/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:concept:human-computer-interaction",
+      "type": "concept",
+      "title": "Human Computer Interaction",
+      "route": "/knowledge/concepts/human-computer-interaction/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:technology:web-audio-api",
+      "type": "technology",
+      "title": "Web Audio API",
+      "route": "/knowledge/technologies/web-audio-api/",
+      "status": "active",
+      "confidence": "canonical"
     }
   ],
   "edges": [
@@ -80,6 +168,105 @@
       "label": "Member of collection",
       "statement": "The research question \"How can speech datasets become reproducible, structured and privacy-first?\" belongs to the Voice Capture Studio Collection collection for editorial navigation.",
       "confidence": "published"
+    },
+    {
+      "id": "ear:speech-recording-member-of-collection-voice-capture-studio",
+      "source": "ea:concept:speech-recording",
+      "target": "ea:collection:voice-capture-studio",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Speech Recording is an explicit member of the Voice Capture Studio Collection collection.",
+      "confidence": "validated"
+    },
+    {
+      "id": "ear:speech-datasets-member-of-collection-voice-capture-studio",
+      "source": "ea:concept:speech-datasets",
+      "target": "ea:collection:voice-capture-studio",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Speech Datasets is an explicit member of the Voice Capture Studio Collection collection.",
+      "confidence": "validated"
+    },
+    {
+      "id": "ear:browser-software-member-of-collection-voice-capture-studio",
+      "source": "ea:concept:browser-software",
+      "target": "ea:collection:voice-capture-studio",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Browser Software is an explicit member of the Voice Capture Studio Collection collection.",
+      "confidence": "validated"
+    },
+    {
+      "id": "ear:voice-technology-member-of-collection-voice-capture-studio",
+      "source": "ea:concept:voice-technology",
+      "target": "ea:collection:voice-capture-studio",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Voice Technology is an explicit member of the Voice Capture Studio Collection collection.",
+      "confidence": "validated"
+    },
+    {
+      "id": "ear:machine-learning-workflows-member-of-collection-voice-capture-studio",
+      "source": "ea:concept:machine-learning-workflows",
+      "target": "ea:collection:voice-capture-studio",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Machine Learning Workflows is an explicit member of the Voice Capture Studio Collection collection.",
+      "confidence": "validated"
+    },
+    {
+      "id": "ear:open-source-member-of-collection-voice-capture-studio",
+      "source": "ea:concept:open-source",
+      "target": "ea:collection:voice-capture-studio",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Open Source is an explicit member of the Voice Capture Studio Collection collection.",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ear:web-audio-member-of-collection-voice-capture-studio",
+      "source": "ea:concept:web-audio",
+      "target": "ea:collection:voice-capture-studio",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Web Audio is an explicit member of the Voice Capture Studio Collection collection.",
+      "confidence": "validated"
+    },
+    {
+      "id": "ear:metadata-member-of-collection-voice-capture-studio",
+      "source": "ea:concept:metadata",
+      "target": "ea:collection:voice-capture-studio",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Metadata is an explicit member of the Voice Capture Studio Collection collection.",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ear:provenance-member-of-collection-voice-capture-studio",
+      "source": "ea:concept:provenance",
+      "target": "ea:collection:voice-capture-studio",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Provenance is an explicit member of the Voice Capture Studio Collection collection.",
+      "confidence": "validated"
+    },
+    {
+      "id": "ear:human-computer-interaction-member-of-collection-voice-capture-studio",
+      "source": "ea:concept:human-computer-interaction",
+      "target": "ea:collection:voice-capture-studio",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Human Computer Interaction is an explicit member of the Voice Capture Studio Collection collection.",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ear:web-audio-api-member-of-collection-voice-capture-studio",
+      "source": "ea:technology:web-audio-api",
+      "target": "ea:collection:voice-capture-studio",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Web Audio API is an explicit member of the Voice Capture Studio Collection collection.",
+      "confidence": "canonical"
     }
   ]
 }

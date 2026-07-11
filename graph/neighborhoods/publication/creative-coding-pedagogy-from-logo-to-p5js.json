@@ -97,6 +97,15 @@
       "label": "Has part",
       "statement": "Knowledge Hub Second Wave includes Creative Coding Pedagogy from Logo to p5.js as a core article.",
       "confidence": "published"
+    },
+    {
+      "id": "ear:creative-coding-pedagogy-from-logo-to-p5js-member-of-collection-knowledge-hub-second-wave",
+      "source": "ea:publication:creative-coding-pedagogy-from-logo-to-p5js",
+      "target": "ea:collection:knowledge-hub-second-wave",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Creative Coding Pedagogy from Logo to p5.js is an explicit member of the Knowledge Hub Second Wave collection.",
+      "confidence": "published"
     }
   ]
 }

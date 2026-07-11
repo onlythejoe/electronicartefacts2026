@@ -26,6 +26,14 @@
       "route": "/programs/vaste/",
       "status": "development",
       "confidence": "validated"
+    },
+    {
+      "id": "ea:collection:knowledge-hub-fourth-wave",
+      "type": "collection",
+      "title": "Knowledge Hub Fourth Wave",
+      "route": "/archive/collections/knowledge-hub-fourth-wave/",
+      "status": "active",
+      "confidence": "published"
     }
   ],
   "edges": [
@@ -46,6 +54,15 @@
       "label": "Integrates with",
       "statement": "VASTE can integrate with OpenTelemetry to observe graph-runtime events, tool calls and projection behavior.",
       "confidence": "observed"
+    },
+    {
+      "id": "ear:opentelemetry-member-of-collection-knowledge-hub-fourth-wave",
+      "source": "ea:technology:opentelemetry",
+      "target": "ea:collection:knowledge-hub-fourth-wave",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "OpenTelemetry is an explicit member of the Knowledge Hub Fourth Wave collection.",
+      "confidence": "canonical"
     }
   ]
 }

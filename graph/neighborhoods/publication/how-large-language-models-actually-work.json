@@ -50,6 +50,14 @@
       "route": "/archive/collections/knowledge-hub-third-wave/",
       "status": "active",
       "confidence": "published"
+    },
+    {
+      "id": "ea:concept:augmented-intelligence",
+      "type": "concept",
+      "title": "Augmented Intelligence",
+      "route": "/knowledge/concepts/augmented-intelligence/",
+      "status": "active",
+      "confidence": "canonical"
     }
   ],
   "edges": [
@@ -96,6 +104,33 @@
       "predicate": "hasPart",
       "label": "Has part",
       "statement": "Knowledge Hub Third Wave includes How Large Language Models Actually Work.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:how-large-language-models-actually-work-member-of-collection-knowledge-hub-third-wave",
+      "source": "ea:publication:how-large-language-models-actually-work",
+      "target": "ea:collection:knowledge-hub-third-wave",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "How Large Language Models Actually Work is an explicit member of the Knowledge Hub Third Wave collection.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:how-large-language-models-actually-work-documents-transformer-architecture",
+      "source": "ea:publication:how-large-language-models-actually-work",
+      "target": "ea:technology:transformer-architecture",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "How Large Language Models Actually Work documents Transformer Architecture as one of its declared subjects.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:how-large-language-models-actually-work-documents-augmented-intelligence",
+      "source": "ea:publication:how-large-language-models-actually-work",
+      "target": "ea:concept:augmented-intelligence",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "How Large Language Models Actually Work documents Augmented Intelligence as one of its declared subjects.",
       "confidence": "published"
     }
   ]

@@ -66,6 +66,14 @@
       "route": "/fr/publications/systems-thinking-for-creative-practice/",
       "status": "active",
       "confidence": "published"
+    },
+    {
+      "id": "ea:collection:knowledge-hub-foundations-fr",
+      "type": "collection",
+      "title": "Fondations du hub de connaissance",
+      "route": "/fr/archive/collections/knowledge-hub-foundations/",
+      "status": "active",
+      "confidence": "published"
     }
   ],
   "edges": [
@@ -131,6 +139,15 @@
       "label": "Documents",
       "statement": "Systems Thinking for Creative Practice explains constraints and emergence in generative systems.",
       "confidence": "published"
+    },
+    {
+      "id": "ear:generative-system-member-of-collection-knowledge-hub-foundations",
+      "source": "ea:concept:generative-system-fr",
+      "target": "ea:collection:knowledge-hub-foundations-fr",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Generative System is an explicit member of the Knowledge Hub Foundations collection.",
+      "confidence": "validated"
     }
   ]
 }

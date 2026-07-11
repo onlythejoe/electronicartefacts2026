@@ -42,6 +42,30 @@
       "route": "/fr/research/questions/self-explaining-knowledge-graph-software/",
       "status": "active",
       "confidence": "validated"
+    },
+    {
+      "id": "ea:collection:knowledge-hub-foundations-fr",
+      "type": "collection",
+      "title": "Fondations du hub de connaissance",
+      "route": "/fr/archive/collections/knowledge-hub-foundations/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:iiif-and-compound-cultural-objects-fr",
+      "type": "publication",
+      "title": "IIIF et objets culturels composés",
+      "route": "/fr/publications/iiif-and-compound-cultural-objects/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:verifiable-credentials-for-cultural-archives-and-creator-identity-fr",
+      "type": "publication",
+      "title": "Identifiants vérifiables pour les archives culturelles et l’identité des créateurs",
+      "route": "/fr/publications/verifiable-credentials-for-cultural-archives-and-creator-identity/",
+      "status": "active",
+      "confidence": "published"
     }
   ],
   "edges": [
@@ -80,6 +104,33 @@
       "label": "Applies concept",
       "statement": "The research question \"How can software become explainable through its own knowledge graph?\" applies Linked Data as part of its current model.",
       "confidence": "validated"
+    },
+    {
+      "id": "ear:linked-data-member-of-collection-knowledge-hub-foundations",
+      "source": "ea:concept:linked-data-fr",
+      "target": "ea:collection:knowledge-hub-foundations-fr",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Linked Data is an explicit member of the Knowledge Hub Foundations collection.",
+      "confidence": "validated"
+    },
+    {
+      "id": "ear:iiif-and-compound-cultural-objects-documents-linked-data",
+      "source": "ea:publication:iiif-and-compound-cultural-objects-fr",
+      "target": "ea:concept:linked-data-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "IIIF and Compound Cultural Objects documents Linked Data as one of its declared subjects.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:verifiable-credentials-for-cultural-archives-and-creator-identity-documents-linked-data",
+      "source": "ea:publication:verifiable-credentials-for-cultural-archives-and-creator-identity-fr",
+      "target": "ea:concept:linked-data-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Verifiable Credentials for Cultural Archives and Creator Identity documents Linked Data as one of its declared subjects.",
+      "confidence": "published"
     }
   ]
 }

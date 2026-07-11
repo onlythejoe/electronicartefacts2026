@@ -26,6 +26,14 @@
       "route": "/publications/typography-reading-systems-and-digital-interfaces/",
       "status": "active",
       "confidence": "published"
+    },
+    {
+      "id": "ea:collection:knowledge-hub-second-wave",
+      "type": "collection",
+      "title": "Knowledge Hub Second Wave",
+      "route": "/archive/collections/knowledge-hub-second-wave/",
+      "status": "active",
+      "confidence": "published"
     }
   ],
   "edges": [
@@ -46,6 +54,15 @@
       "label": "Documents",
       "statement": "Typography, Reading Systems and Digital Interfaces documents typography as reading infrastructure.",
       "confidence": "published"
+    },
+    {
+      "id": "ear:typography-member-of-collection-knowledge-hub-second-wave",
+      "source": "ea:concept:typography",
+      "target": "ea:collection:knowledge-hub-second-wave",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Typography is an explicit member of the Knowledge Hub Second Wave collection.",
+      "confidence": "canonical"
     }
   ]
 }

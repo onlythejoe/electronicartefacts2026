@@ -74,6 +74,14 @@
       "route": "/research/questions/self-explaining-knowledge-graph-software/",
       "status": "active",
       "confidence": "validated"
+    },
+    {
+      "id": "ea:publication:model-context-protocol-and-tool-using-ai-systems",
+      "type": "publication",
+      "title": "Model Context Protocol and Tool-Using AI Systems",
+      "route": "/publications/model-context-protocol-and-tool-using-ai-systems/",
+      "status": "active",
+      "confidence": "published"
     }
   ],
   "edges": [
@@ -148,6 +156,15 @@
       "label": "Applies concept",
       "statement": "The research question \"How can software become explainable through its own knowledge graph?\" applies Graph Runtime as part of its current model.",
       "confidence": "validated"
+    },
+    {
+      "id": "ear:model-context-protocol-and-tool-using-ai-systems-documents-graph-runtime",
+      "source": "ea:publication:model-context-protocol-and-tool-using-ai-systems",
+      "target": "ea:concept:graph-runtime",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Model Context Protocol and Tool-Using AI Systems documents Graph Runtime as one of its declared subjects.",
+      "confidence": "published"
     }
   ]
 }

@@ -34,6 +34,14 @@
       "route": "/publications/systems-thinking-for-creative-practice/",
       "status": "active",
       "confidence": "published"
+    },
+    {
+      "id": "ea:collection:knowledge-hub-foundations",
+      "type": "collection",
+      "title": "Knowledge Hub Foundations",
+      "route": "/archive/collections/knowledge-hub-foundations/",
+      "status": "active",
+      "confidence": "published"
     }
   ],
   "edges": [
@@ -63,6 +71,15 @@
       "label": "Documents",
       "statement": "Systems Thinking for Creative Practice connects system behavior to cybernetic feedback.",
       "confidence": "published"
+    },
+    {
+      "id": "ear:cybernetic-feedback-member-of-collection-knowledge-hub-foundations",
+      "source": "ea:concept:cybernetic-feedback",
+      "target": "ea:collection:knowledge-hub-foundations",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Cybernetic Feedback is an explicit member of the Knowledge Hub Foundations collection.",
+      "confidence": "validated"
     }
   ]
 }

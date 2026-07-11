@@ -114,6 +114,150 @@
       "route": "/research/questions/self-explaining-knowledge-graph-software/",
       "status": "active",
       "confidence": "validated"
+    },
+    {
+      "id": "ea:concept:large-language-model",
+      "type": "concept",
+      "title": "Large Language Model",
+      "route": "/knowledge/concepts/large-language-model/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:concept:ai-agent",
+      "type": "concept",
+      "title": "AI Agent",
+      "route": "/knowledge/concepts/ai-agent/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:concept:retrieval-augmented-generation",
+      "type": "concept",
+      "title": "Retrieval-Augmented Generation",
+      "route": "/knowledge/concepts/retrieval-augmented-generation/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:concept:open-weight-model",
+      "type": "concept",
+      "title": "Open-Weight Model",
+      "route": "/knowledge/concepts/open-weight-model/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:concept:multimodal-ai",
+      "type": "concept",
+      "title": "Multimodal AI",
+      "route": "/knowledge/concepts/multimodal-ai/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:concept:autonomous-system",
+      "type": "concept",
+      "title": "Autonomous System",
+      "route": "/knowledge/concepts/autonomous-system/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:concept:systems-thinking",
+      "type": "concept",
+      "title": "Systems Thinking",
+      "route": "/knowledge/concepts/systems-thinking/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:concept:ontology",
+      "type": "concept",
+      "title": "Ontology",
+      "route": "/knowledge/concepts/ontology/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:concept:event-driven-architecture",
+      "type": "concept",
+      "title": "Event-Driven Architecture",
+      "route": "/knowledge/concepts/event-driven-architecture/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:concept:microservice-architecture",
+      "type": "concept",
+      "title": "Microservice Architecture",
+      "route": "/knowledge/concepts/microservice-architecture/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:concept:domain-operating-system",
+      "type": "concept",
+      "title": "Domain Operating System",
+      "route": "/knowledge/concepts/domain-operating-system/",
+      "status": "active",
+      "confidence": "observed"
+    },
+    {
+      "id": "ea:concept:graph-modeling",
+      "type": "concept",
+      "title": "Graph Modeling",
+      "route": "/knowledge/concepts/graph-modeling/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:technology:transformer-architecture",
+      "type": "technology",
+      "title": "Transformer Architecture",
+      "route": "/knowledge/technologies/transformer-architecture/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:technology:llama-cpp",
+      "type": "technology",
+      "title": "llama.cpp",
+      "route": "/knowledge/technologies/llama-cpp/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:technology:redis-streams",
+      "type": "technology",
+      "title": "Redis Streams",
+      "route": "/knowledge/technologies/redis-streams/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:technology:cloudevents",
+      "type": "technology",
+      "title": "CloudEvents",
+      "route": "/knowledge/technologies/cloudevents/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:technology:owl",
+      "type": "technology",
+      "title": "OWL",
+      "route": "/knowledge/technologies/owl/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:technology:skos",
+      "type": "technology",
+      "title": "SKOS",
+      "route": "/knowledge/technologies/skos/",
+      "status": "active",
+      "confidence": "canonical"
     }
   ],
   "edges": [
@@ -233,6 +377,276 @@
       "label": "Member of collection",
       "statement": "The research question \"How can software become explainable through its own knowledge graph?\" belongs to the Knowledge Hub Third Wave collection for editorial navigation.",
       "confidence": "validated"
+    },
+    {
+      "id": "ear:how-large-language-models-actually-work-member-of-collection-knowledge-hub-third-wave",
+      "source": "ea:publication:how-large-language-models-actually-work",
+      "target": "ea:collection:knowledge-hub-third-wave",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "How Large Language Models Actually Work is an explicit member of the Knowledge Hub Third Wave collection.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:ai-agents-vs-ai-workflows-member-of-collection-knowledge-hub-third-wave",
+      "source": "ea:publication:ai-agents-vs-ai-workflows",
+      "target": "ea:collection:knowledge-hub-third-wave",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "AI Agents vs AI Workflows is an explicit member of the Knowledge Hub Third Wave collection.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:local-and-open-source-ai-systems-member-of-collection-knowledge-hub-third-wave",
+      "source": "ea:publication:local-and-open-source-ai-systems",
+      "target": "ea:collection:knowledge-hub-third-wave",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Local and Open Source AI Systems is an explicit member of the Knowledge Hub Third Wave collection.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:retrieval-augmented-generation-and-knowledge-systems-member-of-collection-knowledge-hub-third-wave",
+      "source": "ea:publication:retrieval-augmented-generation-and-knowledge-systems",
+      "target": "ea:collection:knowledge-hub-third-wave",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Retrieval-Augmented Generation and Knowledge Systems is an explicit member of the Knowledge Hub Third Wave collection.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:multimodal-ai-across-text-image-audio-and-video-member-of-collection-knowledge-hub-third-wave",
+      "source": "ea:publication:multimodal-ai-across-text-image-audio-and-video",
+      "target": "ea:collection:knowledge-hub-third-wave",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Multimodal AI Across Text, Image, Audio and Video is an explicit member of the Knowledge Hub Third Wave collection.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:systems-thinking-for-creative-practice-member-of-collection-knowledge-hub-third-wave",
+      "source": "ea:publication:systems-thinking-for-creative-practice",
+      "target": "ea:collection:knowledge-hub-third-wave",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Systems Thinking for Creative Practice is an explicit member of the Knowledge Hub Third Wave collection.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:ontologies-taxonomies-and-knowledge-modeling-member-of-collection-knowledge-hub-third-wave",
+      "source": "ea:publication:ontologies-taxonomies-and-knowledge-modeling",
+      "target": "ea:collection:knowledge-hub-third-wave",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Ontologies, Taxonomies and Knowledge Modeling is an explicit member of the Knowledge Hub Third Wave collection.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:why-graphs-are-more-powerful-than-folders-member-of-collection-knowledge-hub-third-wave",
+      "source": "ea:publication:why-graphs-are-more-powerful-than-folders",
+      "target": "ea:collection:knowledge-hub-third-wave",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Why Graphs Are More Powerful Than Folders is an explicit member of the Knowledge Hub Third Wave collection.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:event-driven-architecture-and-event-streams-member-of-collection-knowledge-hub-third-wave",
+      "source": "ea:publication:event-driven-architecture-and-event-streams",
+      "target": "ea:collection:knowledge-hub-third-wave",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Event-Driven Architecture and Event Streams is an explicit member of the Knowledge Hub Third Wave collection.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:redis-streams-for-orchestration-member-of-collection-knowledge-hub-third-wave",
+      "source": "ea:publication:redis-streams-for-orchestration",
+      "target": "ea:collection:knowledge-hub-third-wave",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Redis Streams for Orchestration is an explicit member of the Knowledge Hub Third Wave collection.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:microservices-modular-monoliths-and-system-boundaries-member-of-collection-knowledge-hub-third-wave",
+      "source": "ea:publication:microservices-modular-monoliths-and-system-boundaries",
+      "target": "ea:collection:knowledge-hub-third-wave",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Microservices, Modular Monoliths and System Boundaries is an explicit member of the Knowledge Hub Third Wave collection.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:runtime-engines-and-domain-operating-systems-member-of-collection-knowledge-hub-third-wave",
+      "source": "ea:publication:runtime-engines-and-domain-operating-systems",
+      "target": "ea:collection:knowledge-hub-third-wave",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Runtime Engines and Domain Operating Systems is an explicit member of the Knowledge Hub Third Wave collection.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:large-language-model-member-of-collection-knowledge-hub-third-wave",
+      "source": "ea:concept:large-language-model",
+      "target": "ea:collection:knowledge-hub-third-wave",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Large Language Model is an explicit member of the Knowledge Hub Third Wave collection.",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ear:ai-agent-member-of-collection-knowledge-hub-third-wave",
+      "source": "ea:concept:ai-agent",
+      "target": "ea:collection:knowledge-hub-third-wave",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "AI Agent is an explicit member of the Knowledge Hub Third Wave collection.",
+      "confidence": "validated"
+    },
+    {
+      "id": "ear:retrieval-augmented-generation-member-of-collection-knowledge-hub-third-wave",
+      "source": "ea:concept:retrieval-augmented-generation",
+      "target": "ea:collection:knowledge-hub-third-wave",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Retrieval-Augmented Generation is an explicit member of the Knowledge Hub Third Wave collection.",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ear:open-weight-model-member-of-collection-knowledge-hub-third-wave",
+      "source": "ea:concept:open-weight-model",
+      "target": "ea:collection:knowledge-hub-third-wave",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Open-Weight Model is an explicit member of the Knowledge Hub Third Wave collection.",
+      "confidence": "validated"
+    },
+    {
+      "id": "ear:multimodal-ai-member-of-collection-knowledge-hub-third-wave",
+      "source": "ea:concept:multimodal-ai",
+      "target": "ea:collection:knowledge-hub-third-wave",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Multimodal AI is an explicit member of the Knowledge Hub Third Wave collection.",
+      "confidence": "validated"
+    },
+    {
+      "id": "ear:autonomous-system-member-of-collection-knowledge-hub-third-wave",
+      "source": "ea:concept:autonomous-system",
+      "target": "ea:collection:knowledge-hub-third-wave",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Autonomous System is an explicit member of the Knowledge Hub Third Wave collection.",
+      "confidence": "validated"
+    },
+    {
+      "id": "ear:systems-thinking-member-of-collection-knowledge-hub-third-wave",
+      "source": "ea:concept:systems-thinking",
+      "target": "ea:collection:knowledge-hub-third-wave",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Systems Thinking is an explicit member of the Knowledge Hub Third Wave collection.",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ear:ontology-member-of-collection-knowledge-hub-third-wave",
+      "source": "ea:concept:ontology",
+      "target": "ea:collection:knowledge-hub-third-wave",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Ontology is an explicit member of the Knowledge Hub Third Wave collection.",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ear:event-driven-architecture-member-of-collection-knowledge-hub-third-wave",
+      "source": "ea:concept:event-driven-architecture",
+      "target": "ea:collection:knowledge-hub-third-wave",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Event-Driven Architecture is an explicit member of the Knowledge Hub Third Wave collection.",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ear:microservice-architecture-member-of-collection-knowledge-hub-third-wave",
+      "source": "ea:concept:microservice-architecture",
+      "target": "ea:collection:knowledge-hub-third-wave",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Microservice Architecture is an explicit member of the Knowledge Hub Third Wave collection.",
+      "confidence": "validated"
+    },
+    {
+      "id": "ear:domain-operating-system-member-of-collection-knowledge-hub-third-wave",
+      "source": "ea:concept:domain-operating-system",
+      "target": "ea:collection:knowledge-hub-third-wave",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Domain Operating System is an explicit member of the Knowledge Hub Third Wave collection.",
+      "confidence": "observed"
+    },
+    {
+      "id": "ear:graph-modeling-member-of-collection-knowledge-hub-third-wave",
+      "source": "ea:concept:graph-modeling",
+      "target": "ea:collection:knowledge-hub-third-wave",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Graph Modeling is an explicit member of the Knowledge Hub Third Wave collection.",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ear:transformer-architecture-member-of-collection-knowledge-hub-third-wave",
+      "source": "ea:technology:transformer-architecture",
+      "target": "ea:collection:knowledge-hub-third-wave",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Transformer Architecture is an explicit member of the Knowledge Hub Third Wave collection.",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ear:llama-cpp-member-of-collection-knowledge-hub-third-wave",
+      "source": "ea:technology:llama-cpp",
+      "target": "ea:collection:knowledge-hub-third-wave",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "llama.cpp is an explicit member of the Knowledge Hub Third Wave collection.",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ear:redis-streams-member-of-collection-knowledge-hub-third-wave",
+      "source": "ea:technology:redis-streams",
+      "target": "ea:collection:knowledge-hub-third-wave",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Redis Streams is an explicit member of the Knowledge Hub Third Wave collection.",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ear:cloudevents-member-of-collection-knowledge-hub-third-wave",
+      "source": "ea:technology:cloudevents",
+      "target": "ea:collection:knowledge-hub-third-wave",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "CloudEvents is an explicit member of the Knowledge Hub Third Wave collection.",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ear:owl-member-of-collection-knowledge-hub-third-wave",
+      "source": "ea:technology:owl",
+      "target": "ea:collection:knowledge-hub-third-wave",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "OWL is an explicit member of the Knowledge Hub Third Wave collection.",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ear:skos-member-of-collection-knowledge-hub-third-wave",
+      "source": "ea:technology:skos",
+      "target": "ea:collection:knowledge-hub-third-wave",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "SKOS is an explicit member of the Knowledge Hub Third Wave collection.",
+      "confidence": "canonical"
     }
   ]
 }

@@ -130,6 +130,38 @@
       "route": "/research/questions/speech-dataset-reproducibility/",
       "status": "active",
       "confidence": "published"
+    },
+    {
+      "id": "ea:collection:knowledge-hub-foundations",
+      "type": "collection",
+      "title": "Knowledge Hub Foundations",
+      "route": "/archive/collections/knowledge-hub-foundations/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:collection:knowledge-hub-fourth-wave",
+      "type": "collection",
+      "title": "Knowledge Hub Fourth Wave",
+      "route": "/archive/collections/knowledge-hub-fourth-wave/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:collection:voice-capture-studio",
+      "type": "collection",
+      "title": "Voice Capture Studio Collection",
+      "route": "/archive/collections/voice-capture-studio/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:why-graphs-are-more-powerful-than-folders",
+      "type": "publication",
+      "title": "Why Graphs Are More Powerful Than Folders",
+      "route": "/publications/why-graphs-are-more-powerful-than-folders/",
+      "status": "active",
+      "confidence": "published"
     }
   ],
   "edges": [
@@ -266,6 +298,42 @@
       "predicate": "appliesConcept",
       "label": "Applies concept",
       "statement": "The research question \"How can speech datasets become reproducible, structured and privacy-first?\" applies Provenance as part of its current model.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:provenance-member-of-collection-knowledge-hub-foundations",
+      "source": "ea:concept:provenance",
+      "target": "ea:collection:knowledge-hub-foundations",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Provenance is an explicit member of the Knowledge Hub Foundations collection.",
+      "confidence": "validated"
+    },
+    {
+      "id": "ear:provenance-member-of-collection-knowledge-hub-fourth-wave",
+      "source": "ea:concept:provenance",
+      "target": "ea:collection:knowledge-hub-fourth-wave",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Provenance is an explicit member of the Knowledge Hub Fourth Wave collection.",
+      "confidence": "validated"
+    },
+    {
+      "id": "ear:provenance-member-of-collection-voice-capture-studio",
+      "source": "ea:concept:provenance",
+      "target": "ea:collection:voice-capture-studio",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Provenance is an explicit member of the Voice Capture Studio Collection collection.",
+      "confidence": "validated"
+    },
+    {
+      "id": "ear:why-graphs-are-more-powerful-than-folders-documents-provenance",
+      "source": "ea:publication:why-graphs-are-more-powerful-than-folders",
+      "target": "ea:concept:provenance",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Why Graphs Are More Powerful Than Folders documents Provenance as one of its declared subjects.",
       "confidence": "published"
     }
   ]

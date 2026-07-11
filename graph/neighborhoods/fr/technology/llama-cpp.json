@@ -18,6 +18,14 @@
       "route": "/fr/publications/local-and-open-source-ai-systems/",
       "status": "active",
       "confidence": "published"
+    },
+    {
+      "id": "ea:collection:knowledge-hub-third-wave-fr",
+      "type": "collection",
+      "title": "Hub de connaissance, troisième vague",
+      "route": "/fr/archive/collections/knowledge-hub-third-wave/",
+      "status": "active",
+      "confidence": "published"
     }
   ],
   "edges": [
@@ -28,6 +36,24 @@
       "predicate": "usesTechnology",
       "label": "Uses technology",
       "statement": "Local and Open Source AI Systems uses llama.cpp as a reference local inference runtime.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:llama-cpp-member-of-collection-knowledge-hub-third-wave",
+      "source": "ea:technology:llama-cpp-fr",
+      "target": "ea:collection:knowledge-hub-third-wave-fr",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "llama.cpp is an explicit member of the Knowledge Hub Third Wave collection.",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ear:local-and-open-source-ai-systems-documents-llama-cpp",
+      "source": "ea:publication:local-and-open-source-ai-systems-fr",
+      "target": "ea:technology:llama-cpp-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Local and Open Source AI Systems documents llama.cpp as one of its declared subjects.",
       "confidence": "published"
     }
   ]

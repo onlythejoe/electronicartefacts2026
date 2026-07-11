@@ -34,6 +34,14 @@
       "route": "/publications/human-computer-interaction-for-creative-tools/",
       "status": "active",
       "confidence": "published"
+    },
+    {
+      "id": "ea:collection:knowledge-hub-second-wave",
+      "type": "collection",
+      "title": "Knowledge Hub Second Wave",
+      "route": "/archive/collections/knowledge-hub-second-wave/",
+      "status": "active",
+      "confidence": "published"
     }
   ],
   "edges": [
@@ -63,6 +71,15 @@
       "label": "Documents",
       "statement": "Human Computer Interaction for Creative Tools links feedback and state communication to motion design.",
       "confidence": "published"
+    },
+    {
+      "id": "ear:motion-design-member-of-collection-knowledge-hub-second-wave",
+      "source": "ea:concept:motion-design",
+      "target": "ea:collection:knowledge-hub-second-wave",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Motion Design is an explicit member of the Knowledge Hub Second Wave collection.",
+      "confidence": "validated"
     }
   ]
 }

@@ -26,6 +26,14 @@
       "route": "/fr/projects/v6/",
       "status": "development",
       "confidence": "observed"
+    },
+    {
+      "id": "ea:collection:knowledge-hub-third-wave-fr",
+      "type": "collection",
+      "title": "Hub de connaissance, troisième vague",
+      "route": "/fr/archive/collections/knowledge-hub-third-wave/",
+      "status": "active",
+      "confidence": "published"
     }
   ],
   "edges": [
@@ -46,6 +54,15 @@
       "label": "Applies concept",
       "statement": "Vestiges applies ontology design to people, techniques, materials, institutions and cultural relations.",
       "confidence": "observed"
+    },
+    {
+      "id": "ear:ontology-member-of-collection-knowledge-hub-third-wave",
+      "source": "ea:concept:ontology-fr",
+      "target": "ea:collection:knowledge-hub-third-wave-fr",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Ontology is an explicit member of the Knowledge Hub Third Wave collection.",
+      "confidence": "canonical"
     }
   ]
 }

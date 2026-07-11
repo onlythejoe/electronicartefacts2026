@@ -114,6 +114,15 @@
       "label": "Has part",
       "statement": "Knowledge Hub Foundations includes Signal Archaeology, Audio Memory and Machine Listening as a foundation article.",
       "confidence": "published"
+    },
+    {
+      "id": "ear:signal-archaeology-audio-memory-and-machine-listening-member-of-collection-knowledge-hub-foundations",
+      "source": "ea:publication:signal-archaeology-audio-memory-and-machine-listening-fr",
+      "target": "ea:collection:knowledge-hub-foundations-fr",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Signal Archaeology, Audio Memory and Machine Listening is an explicit member of the Knowledge Hub Foundations collection.",
+      "confidence": "published"
     }
   ]
 }

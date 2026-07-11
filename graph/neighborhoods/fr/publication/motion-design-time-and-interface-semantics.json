@@ -97,6 +97,24 @@
       "label": "Has part",
       "statement": "Knowledge Hub Second Wave includes Motion Design, Time and Interface Semantics as a core article.",
       "confidence": "published"
+    },
+    {
+      "id": "ear:motion-design-time-and-interface-semantics-member-of-collection-knowledge-hub-second-wave",
+      "source": "ea:publication:motion-design-time-and-interface-semantics-fr",
+      "target": "ea:collection:knowledge-hub-second-wave-fr",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Motion Design, Time and Interface Semantics is an explicit member of the Knowledge Hub Second Wave collection.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:motion-design-time-and-interface-semantics-documents-web-animations",
+      "source": "ea:publication:motion-design-time-and-interface-semantics-fr",
+      "target": "ea:technology:web-animations-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Motion Design, Time and Interface Semantics documents Web Animations as one of its declared subjects.",
+      "confidence": "published"
     }
   ]
 }

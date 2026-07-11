@@ -42,6 +42,30 @@
       "route": "/fr/programs/vaste/",
       "status": "development",
       "confidence": "validated"
+    },
+    {
+      "id": "ea:collection:knowledge-hub-third-wave-fr",
+      "type": "collection",
+      "title": "Hub de connaissance, troisième vague",
+      "route": "/fr/archive/collections/knowledge-hub-third-wave/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:observability-for-ai-agents-and-tool-calling-systems-fr",
+      "type": "publication",
+      "title": "Observabilité des agents d'IA et des systèmes d'appel d'outils",
+      "route": "/fr/publications/observability-for-ai-agents-and-tool-calling-systems/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:runtime-engines-and-domain-operating-systems-fr",
+      "type": "publication",
+      "title": "Moteurs d'exécution et systèmes d'exploitation de domaine",
+      "route": "/fr/publications/runtime-engines-and-domain-operating-systems/",
+      "status": "active",
+      "confidence": "published"
     }
   ],
   "edges": [
@@ -80,6 +104,33 @@
       "label": "Applies concept",
       "statement": "VASTE applies event-driven architecture through its event propagation layer.",
       "confidence": "observed"
+    },
+    {
+      "id": "ear:event-driven-architecture-member-of-collection-knowledge-hub-third-wave",
+      "source": "ea:concept:event-driven-architecture-fr",
+      "target": "ea:collection:knowledge-hub-third-wave-fr",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Event-Driven Architecture is an explicit member of the Knowledge Hub Third Wave collection.",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ear:observability-for-ai-agents-and-tool-calling-systems-documents-event-driven-architecture",
+      "source": "ea:publication:observability-for-ai-agents-and-tool-calling-systems-fr",
+      "target": "ea:concept:event-driven-architecture-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Observability for AI Agents and Tool-Calling Systems documents Event-Driven Architecture as one of its declared subjects.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:runtime-engines-and-domain-operating-systems-documents-event-driven-architecture",
+      "source": "ea:publication:runtime-engines-and-domain-operating-systems-fr",
+      "target": "ea:concept:event-driven-architecture-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Runtime Engines and Domain Operating Systems documents Event-Driven Architecture as one of its declared subjects.",
+      "confidence": "published"
     }
   ]
 }

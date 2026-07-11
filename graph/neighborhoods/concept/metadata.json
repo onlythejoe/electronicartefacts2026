@@ -74,6 +74,38 @@
       "route": "/research/questions/speech-dataset-reproducibility/",
       "status": "active",
       "confidence": "published"
+    },
+    {
+      "id": "ea:collection:knowledge-hub-second-wave",
+      "type": "collection",
+      "title": "Knowledge Hub Second Wave",
+      "route": "/archive/collections/knowledge-hub-second-wave/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:collection:voice-capture-studio",
+      "type": "collection",
+      "title": "Voice Capture Studio Collection",
+      "route": "/archive/collections/voice-capture-studio/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:ai-search-structured-content-and-knowledge-graph-seo",
+      "type": "publication",
+      "title": "AI Search, Structured Content and Knowledge Graph SEO",
+      "route": "/publications/ai-search-structured-content-and-knowledge-graph-seo/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:iiif-and-compound-cultural-objects",
+      "type": "publication",
+      "title": "IIIF and Compound Cultural Objects",
+      "route": "/publications/iiif-and-compound-cultural-objects/",
+      "status": "active",
+      "confidence": "published"
     }
   ],
   "edges": [
@@ -147,6 +179,42 @@
       "predicate": "appliesConcept",
       "label": "Applies concept",
       "statement": "The research question \"How can speech datasets become reproducible, structured and privacy-first?\" applies Metadata as part of its current model.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:metadata-member-of-collection-knowledge-hub-second-wave",
+      "source": "ea:concept:metadata",
+      "target": "ea:collection:knowledge-hub-second-wave",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Metadata is an explicit member of the Knowledge Hub Second Wave collection.",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ear:metadata-member-of-collection-voice-capture-studio",
+      "source": "ea:concept:metadata",
+      "target": "ea:collection:voice-capture-studio",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Metadata is an explicit member of the Voice Capture Studio Collection collection.",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ear:ai-search-structured-content-and-knowledge-graph-seo-documents-metadata",
+      "source": "ea:publication:ai-search-structured-content-and-knowledge-graph-seo",
+      "target": "ea:concept:metadata",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "AI Search, Structured Content and Knowledge Graph SEO documents Metadata as one of its declared subjects.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:iiif-and-compound-cultural-objects-documents-metadata",
+      "source": "ea:publication:iiif-and-compound-cultural-objects",
+      "target": "ea:concept:metadata",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "IIIF and Compound Cultural Objects documents Metadata as one of its declared subjects.",
       "confidence": "published"
     }
   ]

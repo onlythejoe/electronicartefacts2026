@@ -114,6 +114,15 @@
       "label": "Documents",
       "statement": "Open Source as Cultural Infrastructure documents context, evidence or vocabulary for the research question \"How can speech datasets become reproducible, structured and privacy-first?\".",
       "confidence": "published"
+    },
+    {
+      "id": "ear:open-source-as-cultural-infrastructure-member-of-collection-knowledge-hub-second-wave",
+      "source": "ea:publication:open-source-as-cultural-infrastructure",
+      "target": "ea:collection:knowledge-hub-second-wave",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Open Source as Cultural Infrastructure is an explicit member of the Knowledge Hub Second Wave collection.",
+      "confidence": "published"
     }
   ]
 }

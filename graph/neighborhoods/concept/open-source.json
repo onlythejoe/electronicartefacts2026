@@ -50,6 +50,22 @@
       "route": "/research/questions/speech-dataset-reproducibility/",
       "status": "active",
       "confidence": "published"
+    },
+    {
+      "id": "ea:collection:knowledge-hub-second-wave",
+      "type": "collection",
+      "title": "Knowledge Hub Second Wave",
+      "route": "/archive/collections/knowledge-hub-second-wave/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:collection:voice-capture-studio",
+      "type": "collection",
+      "title": "Voice Capture Studio Collection",
+      "route": "/archive/collections/voice-capture-studio/",
+      "status": "active",
+      "confidence": "published"
     }
   ],
   "edges": [
@@ -97,6 +113,24 @@
       "label": "Applies concept",
       "statement": "The research question \"How can speech datasets become reproducible, structured and privacy-first?\" applies Open Source as part of its current model.",
       "confidence": "published"
+    },
+    {
+      "id": "ear:open-source-member-of-collection-knowledge-hub-second-wave",
+      "source": "ea:concept:open-source",
+      "target": "ea:collection:knowledge-hub-second-wave",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Open Source is an explicit member of the Knowledge Hub Second Wave collection.",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ear:open-source-member-of-collection-voice-capture-studio",
+      "source": "ea:concept:open-source",
+      "target": "ea:collection:voice-capture-studio",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Open Source is an explicit member of the Voice Capture Studio Collection collection.",
+      "confidence": "canonical"
     }
   ]
 }

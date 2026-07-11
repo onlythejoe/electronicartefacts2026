@@ -114,6 +114,15 @@
       "label": "Has part",
       "statement": "Knowledge Hub Foundations includes Generative Systems, Cybernetics and Creative Coding as a foundation article.",
       "confidence": "published"
+    },
+    {
+      "id": "ear:generative-systems-cybernetics-and-creative-coding-member-of-collection-knowledge-hub-foundations",
+      "source": "ea:publication:generative-systems-cybernetics-and-creative-coding",
+      "target": "ea:collection:knowledge-hub-foundations",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Generative Systems, Cybernetics and Creative Coding is an explicit member of the Knowledge Hub Foundations collection.",
+      "confidence": "published"
     }
   ]
 }

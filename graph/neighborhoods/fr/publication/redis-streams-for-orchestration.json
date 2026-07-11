@@ -42,6 +42,14 @@
       "route": "/fr/archive/collections/knowledge-hub-third-wave/",
       "status": "active",
       "confidence": "published"
+    },
+    {
+      "id": "ea:concept:contextual-execution-fr",
+      "type": "concept",
+      "title": "Exécution contextuelle",
+      "route": "/fr/knowledge/concepts/contextual-execution/",
+      "status": "active",
+      "confidence": "canonical"
     }
   ],
   "edges": [
@@ -79,6 +87,33 @@
       "predicate": "hasPart",
       "label": "Has part",
       "statement": "Knowledge Hub Third Wave includes Redis Streams for Orchestration.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:redis-streams-for-orchestration-member-of-collection-knowledge-hub-third-wave",
+      "source": "ea:publication:redis-streams-for-orchestration-fr",
+      "target": "ea:collection:knowledge-hub-third-wave-fr",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Redis Streams for Orchestration is an explicit member of the Knowledge Hub Third Wave collection.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:redis-streams-for-orchestration-documents-redis-streams",
+      "source": "ea:publication:redis-streams-for-orchestration-fr",
+      "target": "ea:technology:redis-streams-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Redis Streams for Orchestration documents Redis Streams as one of its declared subjects.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:redis-streams-for-orchestration-documents-contextual-execution",
+      "source": "ea:publication:redis-streams-for-orchestration-fr",
+      "target": "ea:concept:contextual-execution-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Redis Streams for Orchestration documents Contextual Execution as one of its declared subjects.",
       "confidence": "published"
     }
   ]

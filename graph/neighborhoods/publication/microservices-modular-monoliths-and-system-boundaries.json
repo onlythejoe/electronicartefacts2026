@@ -50,6 +50,14 @@
       "route": "/archive/collections/knowledge-hub-third-wave/",
       "status": "active",
       "confidence": "published"
+    },
+    {
+      "id": "ea:concept:contextual-execution",
+      "type": "concept",
+      "title": "Contextual Execution",
+      "route": "/knowledge/concepts/contextual-execution/",
+      "status": "active",
+      "confidence": "canonical"
     }
   ],
   "edges": [
@@ -96,6 +104,24 @@
       "predicate": "hasPart",
       "label": "Has part",
       "statement": "Knowledge Hub Third Wave includes Microservices, Modular Monoliths and System Boundaries.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:microservices-modular-monoliths-and-system-boundaries-member-of-collection-knowledge-hub-third-wave",
+      "source": "ea:publication:microservices-modular-monoliths-and-system-boundaries",
+      "target": "ea:collection:knowledge-hub-third-wave",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Microservices, Modular Monoliths and System Boundaries is an explicit member of the Knowledge Hub Third Wave collection.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:microservices-modular-monoliths-and-system-boundaries-documents-contextual-execution",
+      "source": "ea:publication:microservices-modular-monoliths-and-system-boundaries",
+      "target": "ea:concept:contextual-execution",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Microservices, Modular Monoliths and System Boundaries documents Contextual Execution as one of its declared subjects.",
       "confidence": "published"
     }
   ]

@@ -50,6 +50,14 @@
       "route": "/fr/archive/collections/knowledge-hub-fourth-wave/",
       "status": "active",
       "confidence": "published"
+    },
+    {
+      "id": "ea:concept:systems-thinking-fr",
+      "type": "concept",
+      "title": "Pensée systémique",
+      "route": "/fr/knowledge/concepts/systems-thinking/",
+      "status": "active",
+      "confidence": "canonical"
     }
   ],
   "edges": [
@@ -96,6 +104,15 @@
       "predicate": "memberOfCollection",
       "label": "Member of collection",
       "statement": "Responsible AI Governance for Creative and Cultural Systems is part of the fourth Knowledge Hub wave.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:responsible-ai-governance-for-creative-and-cultural-systems-documents-systems-thinking",
+      "source": "ea:publication:responsible-ai-governance-for-creative-and-cultural-systems-fr",
+      "target": "ea:concept:systems-thinking-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Responsible AI Governance for Creative and Cultural Systems documents Systems Thinking as one of its declared subjects.",
       "confidence": "published"
     }
   ]

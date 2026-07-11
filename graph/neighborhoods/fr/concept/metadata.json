@@ -74,6 +74,38 @@
       "route": "/fr/research/questions/speech-dataset-reproducibility/",
       "status": "active",
       "confidence": "published"
+    },
+    {
+      "id": "ea:collection:knowledge-hub-second-wave-fr",
+      "type": "collection",
+      "title": "Hub de connaissance, deuxième vague",
+      "route": "/fr/archive/collections/knowledge-hub-second-wave/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:collection:voice-capture-studio-fr",
+      "type": "collection",
+      "title": "Collection Voice Capture Studio",
+      "route": "/fr/archive/collections/voice-capture-studio/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:ai-search-structured-content-and-knowledge-graph-seo-fr",
+      "type": "publication",
+      "title": "Recherche IA, contenu structuré et SEO par graphe de connaissances",
+      "route": "/fr/publications/ai-search-structured-content-and-knowledge-graph-seo/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:iiif-and-compound-cultural-objects-fr",
+      "type": "publication",
+      "title": "IIIF et objets culturels composés",
+      "route": "/fr/publications/iiif-and-compound-cultural-objects/",
+      "status": "active",
+      "confidence": "published"
     }
   ],
   "edges": [
@@ -147,6 +179,42 @@
       "predicate": "appliesConcept",
       "label": "Applies concept",
       "statement": "The research question \"How can speech datasets become reproducible, structured and privacy-first?\" applies Metadata as part of its current model.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:metadata-member-of-collection-knowledge-hub-second-wave",
+      "source": "ea:concept:metadata-fr",
+      "target": "ea:collection:knowledge-hub-second-wave-fr",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Metadata is an explicit member of the Knowledge Hub Second Wave collection.",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ear:metadata-member-of-collection-voice-capture-studio",
+      "source": "ea:concept:metadata-fr",
+      "target": "ea:collection:voice-capture-studio-fr",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Metadata is an explicit member of the Voice Capture Studio Collection collection.",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ear:ai-search-structured-content-and-knowledge-graph-seo-documents-metadata",
+      "source": "ea:publication:ai-search-structured-content-and-knowledge-graph-seo-fr",
+      "target": "ea:concept:metadata-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "AI Search, Structured Content and Knowledge Graph SEO documents Metadata as one of its declared subjects.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:iiif-and-compound-cultural-objects-documents-metadata",
+      "source": "ea:publication:iiif-and-compound-cultural-objects-fr",
+      "target": "ea:concept:metadata-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "IIIF and Compound Cultural Objects documents Metadata as one of its declared subjects.",
       "confidence": "published"
     }
   ]

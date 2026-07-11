@@ -6,10 +6,10 @@
       "@id": "https://electronicartefacts.com/fr/knowledge/concepts/knowledge-graph/#webpage",
       "url": "https://electronicartefacts.com/fr/knowledge/concepts/knowledge-graph/",
       "name": "Graphe de connaissances",
-      "description": "Graphe de connaissances désigne les graphes de connaissances qui structurent des entités, des relations, des sources et des preuves. La fiche en précise l'usage, les limites et les relations avec les projets, technologies et publications d'Electronic Artefacts.",
+      "description": "Une définition canonique du graphe de connaissances appliquée à la publication culturelle, technique et scientifique.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
-      "dateModified": "2026-06-25",
+      "dateModified": "2026-07-12",
       "primaryImageOfPage": {
         "@type": "ImageObject",
         "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-social.jpg",
@@ -34,8 +34,8 @@
       "@id": "https://electronicartefacts.com/fr/id/concept/knowledge-graph/",
       "identifier": "ea:concept:knowledge-graph-fr",
       "name": "Graphe de connaissances",
-      "abstract": "Graphe de connaissances désigne les graphes de connaissances qui structurent des entités, des relations, des sources et des preuves. La fiche en précise l'usage, les limites et les relations avec les projets, technologies et publications d'Electronic Artefacts.",
-      "description": "Graphe de connaissances désigne les graphes de connaissances qui structurent des entités, des relations, des sources et des preuves.",
+      "abstract": "Electronic Artefacts emploie le graphe de connaissances comme modèle de publication reliant concepts, projets, programmes, sources et artefacts par des identités stables et des relations explicites.",
+      "description": "Un graphe de connaissances est un réseau structuré d’entités, d’identifiants et de relations typées qui rend les connaissances navigables, interrogeables et réutilisables.",
       "url": "https://electronicartefacts.com/fr/knowledge/concepts/knowledge-graph/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/knowledge/concepts/knowledge-graph/#webpage"
@@ -57,19 +57,18 @@
       ],
       "keywords": [
         "graphe de connaissances",
-        "Semantic Web",
-        "Entities",
+        "Web sémantique",
+        "entités",
         "Relations",
-        "Search",
+        "Recherche",
         "systèmes de connaissance",
         "architecture de l’information",
-        "développement web",
-        "Research"
+        "développement web"
       ],
       "inLanguage": "fr",
       "dateCreated": "2026-06-23",
       "datePublished": "2026-06-25",
-      "dateModified": "2026-06-25",
+      "dateModified": "2026-07-12",
       "publisher": {
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
@@ -77,7 +76,7 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 75,
+      "wordCount": 497,
       "citation": [
         {
           "@type": "CreativeWork",

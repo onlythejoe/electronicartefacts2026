@@ -50,6 +50,14 @@
       "route": "/archive/collections/knowledge-hub-second-wave/",
       "status": "active",
       "confidence": "published"
+    },
+    {
+      "id": "ea:concept:knowledge-graph",
+      "type": "concept",
+      "title": "Knowledge Graph",
+      "route": "/knowledge/concepts/knowledge-graph/",
+      "status": "active",
+      "confidence": "canonical"
     }
   ],
   "edges": [
@@ -96,6 +104,24 @@
       "predicate": "hasPart",
       "label": "Has part",
       "statement": "Knowledge Hub Second Wave includes Metadata, Cataloguing and Cultural Memory as a core article.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:metadata-cataloguing-and-cultural-memory-member-of-collection-knowledge-hub-second-wave",
+      "source": "ea:publication:metadata-cataloguing-and-cultural-memory",
+      "target": "ea:collection:knowledge-hub-second-wave",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Metadata, Cataloguing and Cultural Memory is an explicit member of the Knowledge Hub Second Wave collection.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:metadata-cataloguing-and-cultural-memory-documents-knowledge-graph",
+      "source": "ea:publication:metadata-cataloguing-and-cultural-memory",
+      "target": "ea:concept:knowledge-graph",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Metadata, Cataloguing and Cultural Memory documents Knowledge Graph as one of its declared subjects.",
       "confidence": "published"
     }
   ]

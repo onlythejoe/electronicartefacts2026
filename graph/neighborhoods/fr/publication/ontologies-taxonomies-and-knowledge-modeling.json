@@ -131,6 +131,33 @@
       "label": "Has part",
       "statement": "Knowledge Hub Third Wave includes Ontologies, Taxonomies and Knowledge Modeling.",
       "confidence": "published"
+    },
+    {
+      "id": "ear:ontologies-taxonomies-and-knowledge-modeling-member-of-collection-knowledge-hub-third-wave",
+      "source": "ea:publication:ontologies-taxonomies-and-knowledge-modeling-fr",
+      "target": "ea:collection:knowledge-hub-third-wave-fr",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Ontologies, Taxonomies and Knowledge Modeling is an explicit member of the Knowledge Hub Third Wave collection.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:ontologies-taxonomies-and-knowledge-modeling-documents-owl",
+      "source": "ea:publication:ontologies-taxonomies-and-knowledge-modeling-fr",
+      "target": "ea:technology:owl-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Ontologies, Taxonomies and Knowledge Modeling documents OWL as one of its declared subjects.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:ontologies-taxonomies-and-knowledge-modeling-documents-skos",
+      "source": "ea:publication:ontologies-taxonomies-and-knowledge-modeling-fr",
+      "target": "ea:technology:skos-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Ontologies, Taxonomies and Knowledge Modeling documents SKOS as one of its declared subjects.",
+      "confidence": "published"
     }
   ]
 }

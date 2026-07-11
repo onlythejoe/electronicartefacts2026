@@ -114,6 +114,24 @@
       "label": "Has part",
       "statement": "Knowledge Hub Third Wave includes Event-Driven Architecture and Event Streams.",
       "confidence": "published"
+    },
+    {
+      "id": "ear:event-driven-architecture-and-event-streams-member-of-collection-knowledge-hub-third-wave",
+      "source": "ea:publication:event-driven-architecture-and-event-streams",
+      "target": "ea:collection:knowledge-hub-third-wave",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Event-Driven Architecture and Event Streams is an explicit member of the Knowledge Hub Third Wave collection.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:event-driven-architecture-and-event-streams-documents-cloudevents",
+      "source": "ea:publication:event-driven-architecture-and-event-streams",
+      "target": "ea:technology:cloudevents",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Event-Driven Architecture and Event Streams documents CloudEvents as one of its declared subjects.",
+      "confidence": "published"
     }
   ]
 }

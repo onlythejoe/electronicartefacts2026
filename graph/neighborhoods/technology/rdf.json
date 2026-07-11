@@ -34,6 +34,14 @@
       "route": "/research/questions/self-explaining-knowledge-graph-software/",
       "status": "active",
       "confidence": "validated"
+    },
+    {
+      "id": "ea:collection:knowledge-hub-foundations",
+      "type": "collection",
+      "title": "Knowledge Hub Foundations",
+      "route": "/archive/collections/knowledge-hub-foundations/",
+      "status": "active",
+      "confidence": "published"
     }
   ],
   "edges": [
@@ -63,6 +71,33 @@
       "label": "Uses technology",
       "statement": "The research question \"How can software become explainable through its own knowledge graph?\" uses RDF as a relevant technical reference.",
       "confidence": "validated"
+    },
+    {
+      "id": "ear:rdf-member-of-collection-knowledge-hub-foundations",
+      "source": "ea:technology:rdf",
+      "target": "ea:collection:knowledge-hub-foundations",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "RDF is an explicit member of the Knowledge Hub Foundations collection.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:knowledge-graphs-for-cultural-infrastructure-documents-rdf",
+      "source": "ea:publication:knowledge-graphs-for-cultural-infrastructure",
+      "target": "ea:technology:rdf",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Knowledge Graphs for Cultural Infrastructure documents RDF as one of its declared subjects.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:linked-data-and-public-knowledge-pages-documents-rdf",
+      "source": "ea:publication:linked-data-and-public-knowledge-pages",
+      "target": "ea:technology:rdf",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Linked Data and Public Knowledge Pages documents RDF as one of its declared subjects.",
+      "confidence": "published"
     }
   ]
 }

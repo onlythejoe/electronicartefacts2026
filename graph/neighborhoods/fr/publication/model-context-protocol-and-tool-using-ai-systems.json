@@ -58,6 +58,14 @@
       "route": "/fr/research/questions/first-conversation-understanding/",
       "status": "active",
       "confidence": "observed"
+    },
+    {
+      "id": "ea:concept:graph-runtime-fr",
+      "type": "concept",
+      "title": "Runtime de graphe",
+      "route": "/fr/knowledge/concepts/graph-runtime/",
+      "status": "active",
+      "confidence": "canonical"
     }
   ],
   "edges": [
@@ -114,6 +122,15 @@
       "label": "Documents",
       "statement": "Model Context Protocol and Tool-Using AI Systems documents context, evidence or vocabulary for the research question \"How can an AI understand someone during its very first conversation?\".",
       "confidence": "observed"
+    },
+    {
+      "id": "ear:model-context-protocol-and-tool-using-ai-systems-documents-graph-runtime",
+      "source": "ea:publication:model-context-protocol-and-tool-using-ai-systems-fr",
+      "target": "ea:concept:graph-runtime-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Model Context Protocol and Tool-Using AI Systems documents Graph Runtime as one of its declared subjects.",
+      "confidence": "published"
     }
   ]
 }

@@ -66,6 +66,118 @@
       "route": "/fr/research/questions/self-explaining-knowledge-graph-software/",
       "status": "active",
       "confidence": "validated"
+    },
+    {
+      "id": "ea:concept:knowledge-graph-fr",
+      "type": "concept",
+      "title": "Graphe de connaissances",
+      "route": "/fr/knowledge/concepts/knowledge-graph/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:concept:linked-data-fr",
+      "type": "concept",
+      "title": "Données liées",
+      "route": "/fr/knowledge/concepts/linked-data/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:concept:contextual-execution-fr",
+      "type": "concept",
+      "title": "Exécution contextuelle",
+      "route": "/fr/knowledge/concepts/contextual-execution/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:concept:entity-identity-fr",
+      "type": "concept",
+      "title": "Identité d'entité",
+      "route": "/fr/knowledge/concepts/entity-identity/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:concept:provenance-fr",
+      "type": "concept",
+      "title": "Provenance",
+      "route": "/fr/knowledge/concepts/provenance/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:concept:digital-preservation-fr",
+      "type": "concept",
+      "title": "Préservation numérique",
+      "route": "/fr/knowledge/concepts/digital-preservation/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:concept:generative-system-fr",
+      "type": "concept",
+      "title": "Système génératif",
+      "route": "/fr/knowledge/concepts/generative-system/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:concept:cybernetic-feedback-fr",
+      "type": "concept",
+      "title": "Rétroaction cybernétique",
+      "route": "/fr/knowledge/concepts/cybernetic-feedback/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:concept:creative-coding-fr",
+      "type": "concept",
+      "title": "Programmation créative",
+      "route": "/fr/knowledge/concepts/creative-coding/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:concept:signal-archaeology-fr",
+      "type": "concept",
+      "title": "Archéologie du signal",
+      "route": "/fr/knowledge/concepts/signal-archaeology/",
+      "status": "active",
+      "confidence": "observed"
+    },
+    {
+      "id": "ea:technology:rdf-fr",
+      "type": "technology",
+      "title": "RDF",
+      "route": "/fr/knowledge/technologies/rdf/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:technology:json-ld-fr",
+      "type": "technology",
+      "title": "JSON-LD",
+      "route": "/fr/knowledge/technologies/json-ld/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:program:oreth-fr",
+      "type": "program",
+      "title": "ORETH",
+      "route": "/fr/programs/oreth/",
+      "status": "archived",
+      "confidence": "observed"
+    },
+    {
+      "id": "ea:project:palimpsests-fr",
+      "type": "project",
+      "title": "Palimpsests",
+      "route": "/fr/projects/palimpsests/",
+      "status": "active",
+      "confidence": "published"
     }
   ],
   "edges": [
@@ -131,6 +243,186 @@
       "label": "Member of collection",
       "statement": "The research question \"How can software become explainable through its own knowledge graph?\" belongs to the Knowledge Hub Foundations collection for editorial navigation.",
       "confidence": "validated"
+    },
+    {
+      "id": "ear:knowledge-graphs-for-cultural-infrastructure-member-of-collection-knowledge-hub-foundations",
+      "source": "ea:publication:knowledge-graphs-for-cultural-infrastructure-fr",
+      "target": "ea:collection:knowledge-hub-foundations-fr",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Knowledge Graphs for Cultural Infrastructure is an explicit member of the Knowledge Hub Foundations collection.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:linked-data-and-public-knowledge-pages-member-of-collection-knowledge-hub-foundations",
+      "source": "ea:publication:linked-data-and-public-knowledge-pages-fr",
+      "target": "ea:collection:knowledge-hub-foundations-fr",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Linked Data and Public Knowledge Pages is an explicit member of the Knowledge Hub Foundations collection.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:contextual-execution-and-graph-runtimes-member-of-collection-knowledge-hub-foundations",
+      "source": "ea:publication:contextual-execution-and-graph-runtimes-fr",
+      "target": "ea:collection:knowledge-hub-foundations-fr",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Contextual Execution and Graph Runtimes is an explicit member of the Knowledge Hub Foundations collection.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:digital-preservation-and-living-archives-member-of-collection-knowledge-hub-foundations",
+      "source": "ea:publication:digital-preservation-and-living-archives-fr",
+      "target": "ea:collection:knowledge-hub-foundations-fr",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Digital Preservation and Living Archives is an explicit member of the Knowledge Hub Foundations collection.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:generative-systems-cybernetics-and-creative-coding-member-of-collection-knowledge-hub-foundations",
+      "source": "ea:publication:generative-systems-cybernetics-and-creative-coding-fr",
+      "target": "ea:collection:knowledge-hub-foundations-fr",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Generative Systems, Cybernetics and Creative Coding is an explicit member of the Knowledge Hub Foundations collection.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:signal-archaeology-audio-memory-and-machine-listening-member-of-collection-knowledge-hub-foundations",
+      "source": "ea:publication:signal-archaeology-audio-memory-and-machine-listening-fr",
+      "target": "ea:collection:knowledge-hub-foundations-fr",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Signal Archaeology, Audio Memory and Machine Listening is an explicit member of the Knowledge Hub Foundations collection.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:knowledge-graph-member-of-collection-knowledge-hub-foundations",
+      "source": "ea:concept:knowledge-graph-fr",
+      "target": "ea:collection:knowledge-hub-foundations-fr",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Knowledge Graph is an explicit member of the Knowledge Hub Foundations collection.",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ear:linked-data-member-of-collection-knowledge-hub-foundations",
+      "source": "ea:concept:linked-data-fr",
+      "target": "ea:collection:knowledge-hub-foundations-fr",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Linked Data is an explicit member of the Knowledge Hub Foundations collection.",
+      "confidence": "validated"
+    },
+    {
+      "id": "ear:contextual-execution-member-of-collection-knowledge-hub-foundations",
+      "source": "ea:concept:contextual-execution-fr",
+      "target": "ea:collection:knowledge-hub-foundations-fr",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Contextual Execution is an explicit member of the Knowledge Hub Foundations collection.",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ear:entity-identity-member-of-collection-knowledge-hub-foundations",
+      "source": "ea:concept:entity-identity-fr",
+      "target": "ea:collection:knowledge-hub-foundations-fr",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Entity Identity is an explicit member of the Knowledge Hub Foundations collection.",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ear:provenance-member-of-collection-knowledge-hub-foundations",
+      "source": "ea:concept:provenance-fr",
+      "target": "ea:collection:knowledge-hub-foundations-fr",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Provenance is an explicit member of the Knowledge Hub Foundations collection.",
+      "confidence": "validated"
+    },
+    {
+      "id": "ear:digital-preservation-member-of-collection-knowledge-hub-foundations",
+      "source": "ea:concept:digital-preservation-fr",
+      "target": "ea:collection:knowledge-hub-foundations-fr",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Digital Preservation is an explicit member of the Knowledge Hub Foundations collection.",
+      "confidence": "validated"
+    },
+    {
+      "id": "ear:generative-system-member-of-collection-knowledge-hub-foundations",
+      "source": "ea:concept:generative-system-fr",
+      "target": "ea:collection:knowledge-hub-foundations-fr",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Generative System is an explicit member of the Knowledge Hub Foundations collection.",
+      "confidence": "validated"
+    },
+    {
+      "id": "ear:cybernetic-feedback-member-of-collection-knowledge-hub-foundations",
+      "source": "ea:concept:cybernetic-feedback-fr",
+      "target": "ea:collection:knowledge-hub-foundations-fr",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Cybernetic Feedback is an explicit member of the Knowledge Hub Foundations collection.",
+      "confidence": "validated"
+    },
+    {
+      "id": "ear:creative-coding-member-of-collection-knowledge-hub-foundations",
+      "source": "ea:concept:creative-coding-fr",
+      "target": "ea:collection:knowledge-hub-foundations-fr",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Creative Coding is an explicit member of the Knowledge Hub Foundations collection.",
+      "confidence": "validated"
+    },
+    {
+      "id": "ear:signal-archaeology-member-of-collection-knowledge-hub-foundations",
+      "source": "ea:concept:signal-archaeology-fr",
+      "target": "ea:collection:knowledge-hub-foundations-fr",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Signal Archaeology is an explicit member of the Knowledge Hub Foundations collection.",
+      "confidence": "observed"
+    },
+    {
+      "id": "ear:rdf-member-of-collection-knowledge-hub-foundations",
+      "source": "ea:technology:rdf-fr",
+      "target": "ea:collection:knowledge-hub-foundations-fr",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "RDF is an explicit member of the Knowledge Hub Foundations collection.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:json-ld-member-of-collection-knowledge-hub-foundations",
+      "source": "ea:technology:json-ld-fr",
+      "target": "ea:collection:knowledge-hub-foundations-fr",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "JSON-LD is an explicit member of the Knowledge Hub Foundations collection.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:oreth-member-of-collection-knowledge-hub-foundations",
+      "source": "ea:program:oreth-fr",
+      "target": "ea:collection:knowledge-hub-foundations-fr",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "ORETH is an explicit member of the Knowledge Hub Foundations collection.",
+      "confidence": "observed"
+    },
+    {
+      "id": "ear:palimpsests-member-of-collection-knowledge-hub-foundations",
+      "source": "ea:project:palimpsests-fr",
+      "target": "ea:collection:knowledge-hub-foundations-fr",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Palimpsests is an explicit member of the Knowledge Hub Foundations collection.",
+      "confidence": "published"
     }
   ]
 }

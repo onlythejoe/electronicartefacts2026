@@ -50,6 +50,22 @@
       "route": "/fr/research/questions/speech-dataset-reproducibility/",
       "status": "active",
       "confidence": "published"
+    },
+    {
+      "id": "ea:concept:open-weight-model-fr",
+      "type": "concept",
+      "title": "Modèle à poids ouverts",
+      "route": "/fr/knowledge/concepts/open-weight-model/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:concept:generative-ai-fr",
+      "type": "concept",
+      "title": "IA générative",
+      "route": "/fr/knowledge/concepts/generative-ai/",
+      "status": "active",
+      "confidence": "validated"
     }
   ],
   "edges": [
@@ -96,6 +112,24 @@
       "predicate": "documents",
       "label": "Documents",
       "statement": "WebNN and Local AI in the Browser documents context, evidence or vocabulary for the research question \"How can speech datasets become reproducible, structured and privacy-first?\".",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:webnn-and-local-ai-in-the-browser-documents-open-weight-model",
+      "source": "ea:publication:webnn-and-local-ai-in-the-browser-fr",
+      "target": "ea:concept:open-weight-model-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "WebNN and Local AI in the Browser documents Open-Weight Model as one of its declared subjects.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:webnn-and-local-ai-in-the-browser-documents-generative-ai",
+      "source": "ea:publication:webnn-and-local-ai-in-the-browser-fr",
+      "target": "ea:concept:generative-ai-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "WebNN and Local AI in the Browser documents Generative AI as one of its declared subjects.",
       "confidence": "published"
     }
   ]

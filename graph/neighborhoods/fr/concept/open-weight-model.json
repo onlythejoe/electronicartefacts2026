@@ -18,6 +18,22 @@
       "route": "/fr/publications/local-and-open-source-ai-systems/",
       "status": "active",
       "confidence": "published"
+    },
+    {
+      "id": "ea:collection:knowledge-hub-third-wave-fr",
+      "type": "collection",
+      "title": "Hub de connaissance, troisième vague",
+      "route": "/fr/archive/collections/knowledge-hub-third-wave/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:webnn-and-local-ai-in-the-browser-fr",
+      "type": "publication",
+      "title": "WebNN et IA locale dans le navigateur",
+      "route": "/fr/publications/webnn-and-local-ai-in-the-browser/",
+      "status": "active",
+      "confidence": "published"
     }
   ],
   "edges": [
@@ -28,6 +44,24 @@
       "predicate": "documents",
       "label": "Documents",
       "statement": "Local and Open Source AI Systems documents the distinction between open-weight and open-source models.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:open-weight-model-member-of-collection-knowledge-hub-third-wave",
+      "source": "ea:concept:open-weight-model-fr",
+      "target": "ea:collection:knowledge-hub-third-wave-fr",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Open-Weight Model is an explicit member of the Knowledge Hub Third Wave collection.",
+      "confidence": "validated"
+    },
+    {
+      "id": "ear:webnn-and-local-ai-in-the-browser-documents-open-weight-model",
+      "source": "ea:publication:webnn-and-local-ai-in-the-browser-fr",
+      "target": "ea:concept:open-weight-model-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "WebNN and Local AI in the Browser documents Open-Weight Model as one of its declared subjects.",
       "confidence": "published"
     }
   ]

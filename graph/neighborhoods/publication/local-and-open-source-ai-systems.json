@@ -58,6 +58,14 @@
       "route": "/research/questions/speech-dataset-reproducibility/",
       "status": "active",
       "confidence": "published"
+    },
+    {
+      "id": "ea:concept:large-language-model",
+      "type": "concept",
+      "title": "Large Language Model",
+      "route": "/knowledge/concepts/large-language-model/",
+      "status": "active",
+      "confidence": "canonical"
     }
   ],
   "edges": [
@@ -113,6 +121,33 @@
       "predicate": "documents",
       "label": "Documents",
       "statement": "Local and Open Source AI Systems documents context, evidence or vocabulary for the research question \"How can speech datasets become reproducible, structured and privacy-first?\".",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:local-and-open-source-ai-systems-member-of-collection-knowledge-hub-third-wave",
+      "source": "ea:publication:local-and-open-source-ai-systems",
+      "target": "ea:collection:knowledge-hub-third-wave",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Local and Open Source AI Systems is an explicit member of the Knowledge Hub Third Wave collection.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:local-and-open-source-ai-systems-documents-large-language-model",
+      "source": "ea:publication:local-and-open-source-ai-systems",
+      "target": "ea:concept:large-language-model",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Local and Open Source AI Systems documents Large Language Model as one of its declared subjects.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:local-and-open-source-ai-systems-documents-llama-cpp",
+      "source": "ea:publication:local-and-open-source-ai-systems",
+      "target": "ea:technology:llama-cpp",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Local and Open Source AI Systems documents llama.cpp as one of its declared subjects.",
       "confidence": "published"
     }
   ]

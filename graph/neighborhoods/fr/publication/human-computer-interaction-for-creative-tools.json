@@ -58,6 +58,14 @@
       "route": "/fr/research/questions/first-conversation-understanding/",
       "status": "active",
       "confidence": "observed"
+    },
+    {
+      "id": "ea:concept:creative-coding-fr",
+      "type": "concept",
+      "title": "Programmation créative",
+      "route": "/fr/knowledge/concepts/creative-coding/",
+      "status": "active",
+      "confidence": "validated"
     }
   ],
   "edges": [
@@ -114,6 +122,24 @@
       "label": "Documents",
       "statement": "Human Computer Interaction for Creative Tools documents context, evidence or vocabulary for the research question \"How can an AI understand someone during its very first conversation?\".",
       "confidence": "observed"
+    },
+    {
+      "id": "ear:human-computer-interaction-for-creative-tools-member-of-collection-knowledge-hub-second-wave",
+      "source": "ea:publication:human-computer-interaction-for-creative-tools-fr",
+      "target": "ea:collection:knowledge-hub-second-wave-fr",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Human Computer Interaction for Creative Tools is an explicit member of the Knowledge Hub Second Wave collection.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:human-computer-interaction-for-creative-tools-documents-creative-coding",
+      "source": "ea:publication:human-computer-interaction-for-creative-tools-fr",
+      "target": "ea:concept:creative-coding-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Human Computer Interaction for Creative Tools documents Creative Coding as one of its declared subjects.",
+      "confidence": "published"
     }
   ]
 }

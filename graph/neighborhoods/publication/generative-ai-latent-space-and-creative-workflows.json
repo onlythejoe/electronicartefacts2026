@@ -114,6 +114,15 @@
       "label": "Has part",
       "statement": "Knowledge Hub Second Wave includes Generative AI, Latent Space and Creative Workflows as a core article.",
       "confidence": "published"
+    },
+    {
+      "id": "ear:generative-ai-latent-space-and-creative-workflows-member-of-collection-knowledge-hub-second-wave",
+      "source": "ea:publication:generative-ai-latent-space-and-creative-workflows",
+      "target": "ea:collection:knowledge-hub-second-wave",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Generative AI, Latent Space and Creative Workflows is an explicit member of the Knowledge Hub Second Wave collection.",
+      "confidence": "published"
     }
   ]
 }

@@ -26,6 +26,22 @@
       "route": "/fr/publications/retrieval-augmented-generation-and-knowledge-systems/",
       "status": "active",
       "confidence": "published"
+    },
+    {
+      "id": "ea:collection:knowledge-hub-third-wave-fr",
+      "type": "collection",
+      "title": "Hub de connaissance, troisième vague",
+      "route": "/fr/archive/collections/knowledge-hub-third-wave/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:prompt-injection-and-trust-boundaries-in-ai-knowledge-systems-fr",
+      "type": "publication",
+      "title": "Injection de prompt et frontières de confiance dans les systèmes de connaissance IA",
+      "route": "/fr/publications/prompt-injection-and-trust-boundaries-in-ai-knowledge-systems/",
+      "status": "active",
+      "confidence": "published"
     }
   ],
   "edges": [
@@ -45,6 +61,24 @@
       "predicate": "documents",
       "label": "Documents",
       "statement": "Retrieval-Augmented Generation and Knowledge Systems documents RAG architecture end to end.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:retrieval-augmented-generation-member-of-collection-knowledge-hub-third-wave",
+      "source": "ea:concept:retrieval-augmented-generation-fr",
+      "target": "ea:collection:knowledge-hub-third-wave-fr",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Retrieval-Augmented Generation is an explicit member of the Knowledge Hub Third Wave collection.",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ear:prompt-injection-and-trust-boundaries-in-ai-knowledge-systems-documents-retrieval-augmented-generation",
+      "source": "ea:publication:prompt-injection-and-trust-boundaries-in-ai-knowledge-systems-fr",
+      "target": "ea:concept:retrieval-augmented-generation-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Prompt Injection and Trust Boundaries in AI Knowledge Systems documents Retrieval-Augmented Generation as one of its declared subjects.",
       "confidence": "published"
     }
   ]

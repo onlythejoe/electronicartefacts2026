@@ -26,6 +26,14 @@
       "route": "/research/questions/self-explaining-knowledge-graph-software/",
       "status": "active",
       "confidence": "validated"
+    },
+    {
+      "id": "ea:collection:knowledge-hub-second-wave",
+      "type": "collection",
+      "title": "Knowledge Hub Second Wave",
+      "route": "/archive/collections/knowledge-hub-second-wave/",
+      "status": "active",
+      "confidence": "published"
     }
   ],
   "edges": [
@@ -46,6 +54,24 @@
       "label": "Uses technology",
       "statement": "The research question \"How can software become explainable through its own knowledge graph?\" uses Web Animations as a relevant technical reference.",
       "confidence": "validated"
+    },
+    {
+      "id": "ear:web-animations-member-of-collection-knowledge-hub-second-wave",
+      "source": "ea:technology:web-animations",
+      "target": "ea:collection:knowledge-hub-second-wave",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Web Animations is an explicit member of the Knowledge Hub Second Wave collection.",
+      "confidence": "validated"
+    },
+    {
+      "id": "ear:motion-design-time-and-interface-semantics-documents-web-animations",
+      "source": "ea:publication:motion-design-time-and-interface-semantics",
+      "target": "ea:technology:web-animations",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Motion Design, Time and Interface Semantics documents Web Animations as one of its declared subjects.",
+      "confidence": "published"
     }
   ]
 }

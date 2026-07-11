@@ -18,6 +18,14 @@
       "route": "/fr/publications/how-large-language-models-actually-work/",
       "status": "active",
       "confidence": "published"
+    },
+    {
+      "id": "ea:collection:knowledge-hub-third-wave-fr",
+      "type": "collection",
+      "title": "Hub de connaissance, troisième vague",
+      "route": "/fr/archive/collections/knowledge-hub-third-wave/",
+      "status": "active",
+      "confidence": "published"
     }
   ],
   "edges": [
@@ -28,6 +36,24 @@
       "predicate": "usesTechnology",
       "label": "Uses technology",
       "statement": "How Large Language Models Actually Work uses the transformer architecture as its principal technical reference.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:transformer-architecture-member-of-collection-knowledge-hub-third-wave",
+      "source": "ea:technology:transformer-architecture-fr",
+      "target": "ea:collection:knowledge-hub-third-wave-fr",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Transformer Architecture is an explicit member of the Knowledge Hub Third Wave collection.",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ear:how-large-language-models-actually-work-documents-transformer-architecture",
+      "source": "ea:publication:how-large-language-models-actually-work-fr",
+      "target": "ea:technology:transformer-architecture-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "How Large Language Models Actually Work documents Transformer Architecture as one of its declared subjects.",
       "confidence": "published"
     }
   ]

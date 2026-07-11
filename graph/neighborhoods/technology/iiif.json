@@ -26,6 +26,14 @@
       "route": "/projects/v6/",
       "status": "development",
       "confidence": "observed"
+    },
+    {
+      "id": "ea:collection:knowledge-hub-fourth-wave",
+      "type": "collection",
+      "title": "Knowledge Hub Fourth Wave",
+      "route": "/archive/collections/knowledge-hub-fourth-wave/",
+      "status": "active",
+      "confidence": "published"
     }
   ],
   "edges": [
@@ -46,6 +54,15 @@
       "label": "Integrates with",
       "statement": "Vestiges can integrate with IIIF for compound cultural object presentation and annotation-aware viewing.",
       "confidence": "observed"
+    },
+    {
+      "id": "ear:iiif-member-of-collection-knowledge-hub-fourth-wave",
+      "source": "ea:technology:iiif",
+      "target": "ea:collection:knowledge-hub-fourth-wave",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "IIIF is an explicit member of the Knowledge Hub Fourth Wave collection.",
+      "confidence": "canonical"
     }
   ]
 }

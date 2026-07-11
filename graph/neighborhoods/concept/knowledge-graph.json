@@ -82,6 +82,46 @@
       "route": "/research/questions/self-explaining-knowledge-graph-software/",
       "status": "active",
       "confidence": "validated"
+    },
+    {
+      "id": "ea:collection:knowledge-hub-foundations",
+      "type": "collection",
+      "title": "Knowledge Hub Foundations",
+      "route": "/archive/collections/knowledge-hub-foundations/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:digital-preservation-and-living-archives",
+      "type": "publication",
+      "title": "Digital Preservation and Living Archives",
+      "route": "/publications/digital-preservation-and-living-archives/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:linked-data-and-public-knowledge-pages",
+      "type": "publication",
+      "title": "Linked Data and Public Knowledge Pages",
+      "route": "/publications/linked-data-and-public-knowledge-pages/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:metadata-cataloguing-and-cultural-memory",
+      "type": "publication",
+      "title": "Metadata, Cataloguing and Cultural Memory",
+      "route": "/publications/metadata-cataloguing-and-cultural-memory/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:personal-knowledge-systems-and-digital-gardens",
+      "type": "publication",
+      "title": "Personal Knowledge Systems and Digital Gardens",
+      "route": "/publications/personal-knowledge-systems-and-digital-gardens/",
+      "status": "active",
+      "confidence": "published"
     }
   ],
   "edges": [
@@ -165,6 +205,51 @@
       "label": "Applies concept",
       "statement": "The research question \"How can software become explainable through its own knowledge graph?\" applies Knowledge Graph as part of its current model.",
       "confidence": "validated"
+    },
+    {
+      "id": "ear:knowledge-graph-member-of-collection-knowledge-hub-foundations",
+      "source": "ea:concept:knowledge-graph",
+      "target": "ea:collection:knowledge-hub-foundations",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Knowledge Graph is an explicit member of the Knowledge Hub Foundations collection.",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ear:digital-preservation-and-living-archives-documents-knowledge-graph",
+      "source": "ea:publication:digital-preservation-and-living-archives",
+      "target": "ea:concept:knowledge-graph",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Digital Preservation and Living Archives documents Knowledge Graph as one of its declared subjects.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:linked-data-and-public-knowledge-pages-documents-knowledge-graph",
+      "source": "ea:publication:linked-data-and-public-knowledge-pages",
+      "target": "ea:concept:knowledge-graph",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Linked Data and Public Knowledge Pages documents Knowledge Graph as one of its declared subjects.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:metadata-cataloguing-and-cultural-memory-documents-knowledge-graph",
+      "source": "ea:publication:metadata-cataloguing-and-cultural-memory",
+      "target": "ea:concept:knowledge-graph",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Metadata, Cataloguing and Cultural Memory documents Knowledge Graph as one of its declared subjects.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:personal-knowledge-systems-and-digital-gardens-documents-knowledge-graph",
+      "source": "ea:publication:personal-knowledge-systems-and-digital-gardens",
+      "target": "ea:concept:knowledge-graph",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Personal Knowledge Systems and Digital Gardens documents Knowledge Graph as one of its declared subjects.",
+      "confidence": "published"
     }
   ]
 }

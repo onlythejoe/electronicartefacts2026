@@ -50,6 +50,14 @@
       "route": "/fr/archive/collections/knowledge-hub-third-wave/",
       "status": "active",
       "confidence": "published"
+    },
+    {
+      "id": "ea:concept:graph-modeling-fr",
+      "type": "concept",
+      "title": "Modélisation de graphe",
+      "route": "/fr/knowledge/concepts/graph-modeling/",
+      "status": "active",
+      "confidence": "canonical"
     }
   ],
   "edges": [
@@ -96,6 +104,24 @@
       "predicate": "hasPart",
       "label": "Has part",
       "statement": "Knowledge Hub Third Wave includes Systems Thinking for Creative Practice.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:systems-thinking-for-creative-practice-member-of-collection-knowledge-hub-third-wave",
+      "source": "ea:publication:systems-thinking-for-creative-practice-fr",
+      "target": "ea:collection:knowledge-hub-third-wave-fr",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Systems Thinking for Creative Practice is an explicit member of the Knowledge Hub Third Wave collection.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:systems-thinking-for-creative-practice-documents-graph-modeling",
+      "source": "ea:publication:systems-thinking-for-creative-practice-fr",
+      "target": "ea:concept:graph-modeling-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Systems Thinking for Creative Practice documents Graph Modeling as one of its declared subjects.",
       "confidence": "published"
     }
   ]

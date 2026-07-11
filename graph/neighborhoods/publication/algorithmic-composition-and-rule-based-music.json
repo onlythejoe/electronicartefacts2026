@@ -114,6 +114,15 @@
       "label": "Has part",
       "statement": "Knowledge Hub Second Wave includes Algorithmic Composition and Rule-Based Music as a core article.",
       "confidence": "published"
+    },
+    {
+      "id": "ear:algorithmic-composition-and-rule-based-music-member-of-collection-knowledge-hub-second-wave",
+      "source": "ea:publication:algorithmic-composition-and-rule-based-music",
+      "target": "ea:collection:knowledge-hub-second-wave",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Algorithmic Composition and Rule-Based Music is an explicit member of the Knowledge Hub Second Wave collection.",
+      "confidence": "published"
     }
   ]
 }

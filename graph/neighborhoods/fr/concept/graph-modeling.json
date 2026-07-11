@@ -34,6 +34,22 @@
       "route": "/fr/projects/v6/",
       "status": "development",
       "confidence": "observed"
+    },
+    {
+      "id": "ea:collection:knowledge-hub-third-wave-fr",
+      "type": "collection",
+      "title": "Hub de connaissance, troisième vague",
+      "route": "/fr/archive/collections/knowledge-hub-third-wave/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:systems-thinking-for-creative-practice-fr",
+      "type": "publication",
+      "title": "Pensée systémique pour la pratique créative",
+      "route": "/fr/publications/systems-thinking-for-creative-practice/",
+      "status": "active",
+      "confidence": "published"
     }
   ],
   "edges": [
@@ -63,6 +79,24 @@
       "label": "Applies concept",
       "statement": "Vestiges applies graph modeling to cultural knowledge and human know-how.",
       "confidence": "observed"
+    },
+    {
+      "id": "ear:graph-modeling-member-of-collection-knowledge-hub-third-wave",
+      "source": "ea:concept:graph-modeling-fr",
+      "target": "ea:collection:knowledge-hub-third-wave-fr",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Graph Modeling is an explicit member of the Knowledge Hub Third Wave collection.",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ear:systems-thinking-for-creative-practice-documents-graph-modeling",
+      "source": "ea:publication:systems-thinking-for-creative-practice-fr",
+      "target": "ea:concept:graph-modeling-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Systems Thinking for Creative Practice documents Graph Modeling as one of its declared subjects.",
+      "confidence": "published"
     }
   ]
 }

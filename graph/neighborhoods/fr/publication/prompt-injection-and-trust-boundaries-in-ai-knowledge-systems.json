@@ -50,6 +50,14 @@
       "route": "/fr/archive/collections/knowledge-hub-fourth-wave/",
       "status": "active",
       "confidence": "published"
+    },
+    {
+      "id": "ea:concept:retrieval-augmented-generation-fr",
+      "type": "concept",
+      "title": "Génération augmentée par récupération",
+      "route": "/fr/knowledge/concepts/retrieval-augmented-generation/",
+      "status": "active",
+      "confidence": "canonical"
     }
   ],
   "edges": [
@@ -96,6 +104,24 @@
       "predicate": "memberOfCollection",
       "label": "Member of collection",
       "statement": "Prompt Injection and Trust Boundaries in AI Knowledge Systems is part of the fourth Knowledge Hub wave.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:prompt-injection-and-trust-boundaries-in-ai-knowledge-systems-documents-retrieval-augmented-generation",
+      "source": "ea:publication:prompt-injection-and-trust-boundaries-in-ai-knowledge-systems-fr",
+      "target": "ea:concept:retrieval-augmented-generation-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Prompt Injection and Trust Boundaries in AI Knowledge Systems documents Retrieval-Augmented Generation as one of its declared subjects.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:prompt-injection-and-trust-boundaries-in-ai-knowledge-systems-documents-model-context-protocol",
+      "source": "ea:publication:prompt-injection-and-trust-boundaries-in-ai-knowledge-systems-fr",
+      "target": "ea:technology:model-context-protocol-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Prompt Injection and Trust Boundaries in AI Knowledge Systems documents Model Context Protocol as one of its declared subjects.",
       "confidence": "published"
     }
   ]

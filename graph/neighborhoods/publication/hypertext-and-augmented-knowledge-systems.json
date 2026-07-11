@@ -50,6 +50,14 @@
       "route": "/archive/collections/knowledge-hub-second-wave/",
       "status": "active",
       "confidence": "published"
+    },
+    {
+      "id": "ea:researchField:runtime-theory",
+      "type": "researchField",
+      "title": "Runtime Theory",
+      "route": "/research/fields/runtime-theory/",
+      "status": "active",
+      "confidence": "validated"
     }
   ],
   "edges": [
@@ -96,6 +104,24 @@
       "predicate": "hasPart",
       "label": "Has part",
       "statement": "Knowledge Hub Second Wave includes Hypertext and Augmented Knowledge Systems as a core article.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:hypertext-and-augmented-knowledge-systems-member-of-collection-knowledge-hub-second-wave",
+      "source": "ea:publication:hypertext-and-augmented-knowledge-systems",
+      "target": "ea:collection:knowledge-hub-second-wave",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Hypertext and Augmented Knowledge Systems is an explicit member of the Knowledge Hub Second Wave collection.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:hypertext-and-augmented-knowledge-systems-documents-runtime-theory",
+      "source": "ea:publication:hypertext-and-augmented-knowledge-systems",
+      "target": "ea:researchField:runtime-theory",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Hypertext and Augmented Knowledge Systems documents Runtime Theory as one of its declared subjects.",
       "confidence": "published"
     }
   ]

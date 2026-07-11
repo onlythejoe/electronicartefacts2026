@@ -34,6 +34,14 @@
       "route": "/research/questions/speech-dataset-reproducibility/",
       "status": "active",
       "confidence": "published"
+    },
+    {
+      "id": "ea:collection:voice-capture-studio",
+      "type": "collection",
+      "title": "Voice Capture Studio Collection",
+      "route": "/archive/collections/voice-capture-studio/",
+      "status": "active",
+      "confidence": "published"
     }
   ],
   "edges": [
@@ -63,6 +71,15 @@
       "label": "Applies concept",
       "statement": "The research question \"How can speech datasets become reproducible, structured and privacy-first?\" applies Machine Learning Workflows as part of its current model.",
       "confidence": "published"
+    },
+    {
+      "id": "ear:machine-learning-workflows-member-of-collection-voice-capture-studio",
+      "source": "ea:concept:machine-learning-workflows",
+      "target": "ea:collection:voice-capture-studio",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Machine Learning Workflows is an explicit member of the Voice Capture Studio Collection collection.",
+      "confidence": "validated"
     }
   ]
 }

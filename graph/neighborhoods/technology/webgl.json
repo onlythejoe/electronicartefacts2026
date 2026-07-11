@@ -18,6 +18,14 @@
       "route": "/publications/procedural-graphics-shaders-and-visual-systems/",
       "status": "active",
       "confidence": "published"
+    },
+    {
+      "id": "ea:collection:knowledge-hub-second-wave",
+      "type": "collection",
+      "title": "Knowledge Hub Second Wave",
+      "route": "/archive/collections/knowledge-hub-second-wave/",
+      "status": "active",
+      "confidence": "published"
     }
   ],
   "edges": [
@@ -28,6 +36,24 @@
       "predicate": "usesTechnology",
       "label": "Uses technology",
       "statement": "Procedural Graphics, Shaders and Visual Systems uses WebGL as the browser graphics reference technology.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:webgl-member-of-collection-knowledge-hub-second-wave",
+      "source": "ea:technology:webgl",
+      "target": "ea:collection:knowledge-hub-second-wave",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "WebGL is an explicit member of the Knowledge Hub Second Wave collection.",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ear:procedural-graphics-shaders-and-visual-systems-documents-webgl",
+      "source": "ea:publication:procedural-graphics-shaders-and-visual-systems",
+      "target": "ea:technology:webgl",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Procedural Graphics, Shaders and Visual Systems documents WebGL as one of its declared subjects.",
       "confidence": "published"
     }
   ]

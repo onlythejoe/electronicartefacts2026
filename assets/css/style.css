@@ -5995,7 +5995,32 @@ body[data-entry-id="vestiges"] .project-process__marker {
 }
 
 .research-atlas__graph-link {
-  justify-self: start;
+  position: absolute;
+  left: 0.75rem;
+  bottom: 0.75rem;
+  z-index: 8;
+  display: inline-flex;
+  align-items: center;
+  gap: 0.42rem;
+  background: rgba(2, 4, 7, 0.82);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}
+
+.research-atlas__graph-link-icon {
+  display: inline-grid;
+  place-items: center;
+  width: 1.15rem;
+  height: 1.15rem;
+}
+
+.research-atlas__graph-link-icon svg {
+  width: 100%;
+  height: 100%;
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.7;
+  stroke-linecap: round;
 }
 
 .research-atlas__panel {
@@ -6412,12 +6437,22 @@ body[data-entry-id="vestiges"] .project-process__marker {
 
   .research-atlas__node.graph-surface__node {
     place-items: center;
-    width: 2.4rem;
-    min-height: 2.4rem;
+    width: min(7.2rem, 34vw);
+    min-height: 3.3rem;
   }
 
   .research-atlas__node-label.graph-surface__node-body {
-    display: none;
+    display: block;
+    width: max-content;
+    max-width: min(7.2rem, 34vw);
+    padding: 0.28rem 0.38rem;
+    opacity: 1;
+    transform: none;
+  }
+
+  .research-atlas__node-label strong {
+    font-size: 0.55rem;
+    white-space: nowrap;
   }
 
   .research-atlas__node-pin.graph-surface__node-pin {
@@ -6427,6 +6462,32 @@ body[data-entry-id="vestiges"] .project-process__marker {
     width: 0.82rem;
     height: 0.82rem;
     transform: none;
+  }
+
+  .research-atlas__graph-link {
+    left: auto;
+    right: 0.62rem;
+    bottom: 0.62rem;
+    width: 2.9rem;
+    height: 2.9rem;
+    min-height: 2.9rem;
+    justify-content: center;
+    padding: 0;
+    border-radius: 50%;
+  }
+
+  .research-atlas__graph-link-icon {
+    width: 1.25rem;
+    height: 1.25rem;
+  }
+
+  .research-atlas__graph-link-label {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
   }
 
   .research-atlas__node:nth-child(n + 7) {

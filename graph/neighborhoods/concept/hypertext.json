@@ -34,6 +34,14 @@
       "route": "/research/questions/self-explaining-knowledge-graph-software/",
       "status": "active",
       "confidence": "validated"
+    },
+    {
+      "id": "ea:collection:knowledge-hub-second-wave",
+      "type": "collection",
+      "title": "Knowledge Hub Second Wave",
+      "route": "/archive/collections/knowledge-hub-second-wave/",
+      "status": "active",
+      "confidence": "published"
     }
   ],
   "edges": [
@@ -63,6 +71,15 @@
       "label": "Applies concept",
       "statement": "The research question \"How can software become explainable through its own knowledge graph?\" applies Hypertext as part of its current model.",
       "confidence": "validated"
+    },
+    {
+      "id": "ear:hypertext-member-of-collection-knowledge-hub-second-wave",
+      "source": "ea:concept:hypertext",
+      "target": "ea:collection:knowledge-hub-second-wave",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Hypertext is an explicit member of the Knowledge Hub Second Wave collection.",
+      "confidence": "canonical"
     }
   ]
 }

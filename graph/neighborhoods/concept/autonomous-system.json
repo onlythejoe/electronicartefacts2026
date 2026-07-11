@@ -18,6 +18,14 @@
       "route": "/publications/ai-agents-vs-ai-workflows/",
       "status": "active",
       "confidence": "published"
+    },
+    {
+      "id": "ea:collection:knowledge-hub-third-wave",
+      "type": "collection",
+      "title": "Knowledge Hub Third Wave",
+      "route": "/archive/collections/knowledge-hub-third-wave/",
+      "status": "active",
+      "confidence": "published"
     }
   ],
   "edges": [
@@ -29,6 +37,15 @@
       "label": "Documents",
       "statement": "AI Agents vs AI Workflows distinguishes bounded agents from broader autonomous systems.",
       "confidence": "published"
+    },
+    {
+      "id": "ear:autonomous-system-member-of-collection-knowledge-hub-third-wave",
+      "source": "ea:concept:autonomous-system",
+      "target": "ea:collection:knowledge-hub-third-wave",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Autonomous System is an explicit member of the Knowledge Hub Third Wave collection.",
+      "confidence": "validated"
     }
   ]
 }

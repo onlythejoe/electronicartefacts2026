@@ -26,6 +26,14 @@
       "route": "/research/questions/self-explaining-knowledge-graph-software/",
       "status": "active",
       "confidence": "validated"
+    },
+    {
+      "id": "ea:collection:knowledge-hub-second-wave",
+      "type": "collection",
+      "title": "Knowledge Hub Second Wave",
+      "route": "/archive/collections/knowledge-hub-second-wave/",
+      "status": "active",
+      "confidence": "published"
     }
   ],
   "edges": [
@@ -45,6 +53,15 @@
       "predicate": "appliesConcept",
       "label": "Applies concept",
       "statement": "The research question \"How can software become explainable through its own knowledge graph?\" applies Personal Knowledge System as part of its current model.",
+      "confidence": "validated"
+    },
+    {
+      "id": "ear:personal-knowledge-system-member-of-collection-knowledge-hub-second-wave",
+      "source": "ea:concept:personal-knowledge-system",
+      "target": "ea:collection:knowledge-hub-second-wave",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Personal Knowledge System is an explicit member of the Knowledge Hub Second Wave collection.",
       "confidence": "validated"
     }
   ]

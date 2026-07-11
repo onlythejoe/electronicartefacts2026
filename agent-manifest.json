@@ -86,7 +86,7 @@
     "collection": 10,
     "artefact": 4
   },
-  "lastModified": "2026-07-11",
+  "lastModified": "2026-07-12",
   "records": [
     {
       "id": "ea:organization:electronic-artefacts-fr",
@@ -3395,18 +3395,18 @@
       "translationOf": "ea:concept:contextual-execution",
       "type": "concept",
       "title": "Exécution contextuelle",
-      "summary": "Exécution contextuelle désigne le sujet \"Exécution contextuelle\" dans le graphe public d'Electronic Artefacts.",
+      "summary": "L’exécution contextuelle consiste à faire de l’identité, de l’état, des permissions, des relations et du contexte opérationnel des contraintes actives sur ce qu’un système peut accomplir.",
       "url": "https://electronicartefacts.com/fr/knowledge/concepts/contextual-execution/",
       "route": "/fr/knowledge/concepts/contextual-execution/",
       "identifier": "https://electronicartefacts.com/fr/id/concept/contextual-execution/",
       "jsonLd": "https://electronicartefacts.com/fr/id/concept/contextual-execution/index.jsonld",
       "tags": [
         "Exécution contextuelle",
-        "Context",
+        "contexte",
         "Exécution",
         "Runtime",
-        "Identity",
-        "Permissions",
+        "Identité",
+        "permissions",
         "conception de systèmes",
         "programmation",
         "systèmes de connaissance",
@@ -3415,7 +3415,7 @@
       "status": "active",
       "confidence": "canonical",
       "publishedAt": "2026-06-25",
-      "modifiedAt": "2026-06-25"
+      "modifiedAt": "2026-07-12"
     },
     {
       "id": "ea:concept:vast-portable-graph-format-fr",
@@ -3606,7 +3606,7 @@
       "translationOf": "ea:concept:knowledge-graph",
       "type": "concept",
       "title": "Graphe de connaissances",
-      "summary": "Graphe de connaissances désigne les graphes de connaissances qui structurent des entités, des relations, des sources et des preuves.",
+      "summary": "Un graphe de connaissances est un réseau structuré d’entités, d’identifiants et de relations typées qui rend les connaissances navigables, interrogeables et réutilisables.",
       "url": "https://electronicartefacts.com/fr/knowledge/concepts/knowledge-graph/",
       "route": "/fr/knowledge/concepts/knowledge-graph/",
       "identifier": "https://electronicartefacts.com/fr/id/concept/knowledge-graph/",
@@ -3614,19 +3614,18 @@
       "tags": [
         "Graphe de connaissances",
         "graphe de connaissances",
-        "Semantic Web",
-        "Entities",
+        "Web sémantique",
+        "entités",
         "Relations",
-        "Search",
+        "Recherche",
         "systèmes de connaissance",
         "architecture de l’information",
-        "développement web",
-        "Research"
+        "développement web"
       ],
       "status": "active",
       "confidence": "canonical",
       "publishedAt": "2026-06-25",
-      "modifiedAt": "2026-06-25"
+      "modifiedAt": "2026-07-12"
     },
     {
       "id": "ea:concept:procedural-graphics-fr",
@@ -4651,18 +4650,18 @@
       "jsonLd": "https://electronicartefacts.com/fr/id/concept/graph-runtime/index.jsonld",
       "tags": [
         "Runtime de graphe",
-        "Graph",
+        "Graphe",
         "Runtime",
-        "Context",
-        "Identity",
+        "contexte",
+        "Identité",
         "Exécution",
         "architecture logicielle",
-        "Knowledge systems"
+        "systèmes de connaissance"
       ],
       "status": "active",
       "confidence": "canonical",
       "publishedAt": "2026-06-25",
-      "modifiedAt": "2026-06-25"
+      "modifiedAt": "2026-07-12"
     },
     {
       "id": "ea:concept:signal-archaeology",

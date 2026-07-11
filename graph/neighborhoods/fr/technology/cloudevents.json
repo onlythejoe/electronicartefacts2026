@@ -18,6 +18,14 @@
       "route": "/fr/publications/event-driven-architecture-and-event-streams/",
       "status": "active",
       "confidence": "published"
+    },
+    {
+      "id": "ea:collection:knowledge-hub-third-wave-fr",
+      "type": "collection",
+      "title": "Hub de connaissance, troisième vague",
+      "route": "/fr/archive/collections/knowledge-hub-third-wave/",
+      "status": "active",
+      "confidence": "published"
     }
   ],
   "edges": [
@@ -28,6 +36,24 @@
       "predicate": "usesTechnology",
       "label": "Uses technology",
       "statement": "Event-Driven Architecture and Event Streams uses CloudEvents as an interoperable event-envelope reference.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:cloudevents-member-of-collection-knowledge-hub-third-wave",
+      "source": "ea:technology:cloudevents-fr",
+      "target": "ea:collection:knowledge-hub-third-wave-fr",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "CloudEvents is an explicit member of the Knowledge Hub Third Wave collection.",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ear:event-driven-architecture-and-event-streams-documents-cloudevents",
+      "source": "ea:publication:event-driven-architecture-and-event-streams-fr",
+      "target": "ea:technology:cloudevents-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Event-Driven Architecture and Event Streams documents CloudEvents as one of its declared subjects.",
       "confidence": "published"
     }
   ]

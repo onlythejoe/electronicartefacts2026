@@ -34,6 +34,14 @@
       "route": "/fr/publications/verifiable-credentials-for-cultural-archives-and-creator-identity/",
       "status": "active",
       "confidence": "published"
+    },
+    {
+      "id": "ea:collection:knowledge-hub-fourth-wave-fr",
+      "type": "collection",
+      "title": "Hub de connaissance, quatrième vague",
+      "route": "/fr/archive/collections/knowledge-hub-fourth-wave/",
+      "status": "active",
+      "confidence": "published"
     }
   ],
   "edges": [
@@ -62,6 +70,24 @@
       "predicate": "usesTechnology",
       "label": "Uses technology",
       "statement": "Verifiable Credentials for Cultural Archives and Creator Identity compares W3C credentials with C2PA media provenance.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:c2pa-member-of-collection-knowledge-hub-fourth-wave",
+      "source": "ea:technology:c2pa-fr",
+      "target": "ea:collection:knowledge-hub-fourth-wave-fr",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "C2PA is an explicit member of the Knowledge Hub Fourth Wave collection.",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ear:verifiable-credentials-for-cultural-archives-and-creator-identity-documents-c2pa",
+      "source": "ea:publication:verifiable-credentials-for-cultural-archives-and-creator-identity-fr",
+      "target": "ea:technology:c2pa-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Verifiable Credentials for Cultural Archives and Creator Identity documents C2PA as one of its declared subjects.",
       "confidence": "published"
     }
   ]

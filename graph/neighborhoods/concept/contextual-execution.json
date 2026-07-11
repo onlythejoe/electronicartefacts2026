@@ -98,6 +98,38 @@
       "route": "/research/questions/first-conversation-understanding/",
       "status": "active",
       "confidence": "observed"
+    },
+    {
+      "id": "ea:collection:knowledge-hub-foundations",
+      "type": "collection",
+      "title": "Knowledge Hub Foundations",
+      "route": "/archive/collections/knowledge-hub-foundations/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:collection:knowledge-hub-fourth-wave",
+      "type": "collection",
+      "title": "Knowledge Hub Fourth Wave",
+      "route": "/archive/collections/knowledge-hub-fourth-wave/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:microservices-modular-monoliths-and-system-boundaries",
+      "type": "publication",
+      "title": "Microservices, Modular Monoliths and System Boundaries",
+      "route": "/publications/microservices-modular-monoliths-and-system-boundaries/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:redis-streams-for-orchestration",
+      "type": "publication",
+      "title": "Redis Streams for Orchestration",
+      "route": "/publications/redis-streams-for-orchestration/",
+      "status": "active",
+      "confidence": "published"
     }
   ],
   "edges": [
@@ -199,6 +231,42 @@
       "label": "Applies concept",
       "statement": "The research question \"How can an AI understand someone during its very first conversation?\" applies Contextual Execution as part of its current model.",
       "confidence": "observed"
+    },
+    {
+      "id": "ear:contextual-execution-member-of-collection-knowledge-hub-foundations",
+      "source": "ea:concept:contextual-execution",
+      "target": "ea:collection:knowledge-hub-foundations",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Contextual Execution is an explicit member of the Knowledge Hub Foundations collection.",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ear:contextual-execution-member-of-collection-knowledge-hub-fourth-wave",
+      "source": "ea:concept:contextual-execution",
+      "target": "ea:collection:knowledge-hub-fourth-wave",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Contextual Execution is an explicit member of the Knowledge Hub Fourth Wave collection.",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ear:microservices-modular-monoliths-and-system-boundaries-documents-contextual-execution",
+      "source": "ea:publication:microservices-modular-monoliths-and-system-boundaries",
+      "target": "ea:concept:contextual-execution",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Microservices, Modular Monoliths and System Boundaries documents Contextual Execution as one of its declared subjects.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:redis-streams-for-orchestration-documents-contextual-execution",
+      "source": "ea:publication:redis-streams-for-orchestration",
+      "target": "ea:concept:contextual-execution",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Redis Streams for Orchestration documents Contextual Execution as one of its declared subjects.",
+      "confidence": "published"
     }
   ]
 }

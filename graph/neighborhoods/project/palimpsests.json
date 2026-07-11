@@ -82,6 +82,14 @@
       "route": "/publications/multimodal-ai-across-text-image-audio-and-video/",
       "status": "active",
       "confidence": "published"
+    },
+    {
+      "id": "ea:collection:knowledge-hub-foundations",
+      "type": "collection",
+      "title": "Knowledge Hub Foundations",
+      "route": "/archive/collections/knowledge-hub-foundations/",
+      "status": "active",
+      "confidence": "published"
     }
   ],
   "edges": [
@@ -164,6 +172,15 @@
       "predicate": "documents",
       "label": "Documents",
       "statement": "Multimodal AI Across Text, Image, Audio and Video uses Palimpsests as a compound media and provenance context.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:palimpsests-member-of-collection-knowledge-hub-foundations",
+      "source": "ea:project:palimpsests",
+      "target": "ea:collection:knowledge-hub-foundations",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Palimpsests is an explicit member of the Knowledge Hub Foundations collection.",
       "confidence": "published"
     }
   ]

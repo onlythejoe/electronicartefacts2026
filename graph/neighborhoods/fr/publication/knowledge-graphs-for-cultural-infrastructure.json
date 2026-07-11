@@ -131,6 +131,24 @@
       "label": "Documents",
       "statement": "Knowledge Graphs for Cultural Infrastructure documents context, evidence or vocabulary for the research question \"How can software become explainable through its own knowledge graph?\".",
       "confidence": "validated"
+    },
+    {
+      "id": "ear:knowledge-graphs-for-cultural-infrastructure-member-of-collection-knowledge-hub-foundations",
+      "source": "ea:publication:knowledge-graphs-for-cultural-infrastructure-fr",
+      "target": "ea:collection:knowledge-hub-foundations-fr",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Knowledge Graphs for Cultural Infrastructure is an explicit member of the Knowledge Hub Foundations collection.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:knowledge-graphs-for-cultural-infrastructure-documents-rdf",
+      "source": "ea:publication:knowledge-graphs-for-cultural-infrastructure-fr",
+      "target": "ea:technology:rdf-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Knowledge Graphs for Cultural Infrastructure documents RDF as one of its declared subjects.",
+      "confidence": "published"
     }
   ]
 }

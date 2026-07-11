@@ -26,6 +26,22 @@
       "route": "/publications/retrieval-augmented-generation-and-knowledge-systems/",
       "status": "active",
       "confidence": "published"
+    },
+    {
+      "id": "ea:collection:knowledge-hub-third-wave",
+      "type": "collection",
+      "title": "Knowledge Hub Third Wave",
+      "route": "/archive/collections/knowledge-hub-third-wave/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:prompt-injection-and-trust-boundaries-in-ai-knowledge-systems",
+      "type": "publication",
+      "title": "Prompt Injection and Trust Boundaries in AI Knowledge Systems",
+      "route": "/publications/prompt-injection-and-trust-boundaries-in-ai-knowledge-systems/",
+      "status": "active",
+      "confidence": "published"
     }
   ],
   "edges": [
@@ -45,6 +61,24 @@
       "predicate": "documents",
       "label": "Documents",
       "statement": "Retrieval-Augmented Generation and Knowledge Systems documents RAG architecture end to end.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:retrieval-augmented-generation-member-of-collection-knowledge-hub-third-wave",
+      "source": "ea:concept:retrieval-augmented-generation",
+      "target": "ea:collection:knowledge-hub-third-wave",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Retrieval-Augmented Generation is an explicit member of the Knowledge Hub Third Wave collection.",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ear:prompt-injection-and-trust-boundaries-in-ai-knowledge-systems-documents-retrieval-augmented-generation",
+      "source": "ea:publication:prompt-injection-and-trust-boundaries-in-ai-knowledge-systems",
+      "target": "ea:concept:retrieval-augmented-generation",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Prompt Injection and Trust Boundaries in AI Knowledge Systems documents Retrieval-Augmented Generation as one of its declared subjects.",
       "confidence": "published"
     }
   ]

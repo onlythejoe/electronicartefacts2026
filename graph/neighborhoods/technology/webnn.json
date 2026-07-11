@@ -34,6 +34,14 @@
       "route": "/research/questions/speech-dataset-reproducibility/",
       "status": "active",
       "confidence": "published"
+    },
+    {
+      "id": "ea:collection:knowledge-hub-fourth-wave",
+      "type": "collection",
+      "title": "Knowledge Hub Fourth Wave",
+      "route": "/archive/collections/knowledge-hub-fourth-wave/",
+      "status": "active",
+      "confidence": "published"
     }
   ],
   "edges": [
@@ -63,6 +71,15 @@
       "label": "Uses technology",
       "statement": "The research question \"How can speech datasets become reproducible, structured and privacy-first?\" uses WebNN as a relevant technical reference.",
       "confidence": "published"
+    },
+    {
+      "id": "ear:webnn-member-of-collection-knowledge-hub-fourth-wave",
+      "source": "ea:technology:webnn",
+      "target": "ea:collection:knowledge-hub-fourth-wave",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "WebNN is an explicit member of the Knowledge Hub Fourth Wave collection.",
+      "confidence": "canonical"
     }
   ]
 }

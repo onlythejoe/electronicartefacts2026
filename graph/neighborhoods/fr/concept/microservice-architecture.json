@@ -18,6 +18,14 @@
       "route": "/fr/publications/microservices-modular-monoliths-and-system-boundaries/",
       "status": "active",
       "confidence": "published"
+    },
+    {
+      "id": "ea:collection:knowledge-hub-third-wave-fr",
+      "type": "collection",
+      "title": "Hub de connaissance, troisième vague",
+      "route": "/fr/archive/collections/knowledge-hub-third-wave/",
+      "status": "active",
+      "confidence": "published"
     }
   ],
   "edges": [
@@ -29,6 +37,15 @@
       "label": "Documents",
       "statement": "Microservices, Modular Monoliths and System Boundaries documents microservice architecture and its tradeoffs.",
       "confidence": "published"
+    },
+    {
+      "id": "ear:microservice-architecture-member-of-collection-knowledge-hub-third-wave",
+      "source": "ea:concept:microservice-architecture-fr",
+      "target": "ea:collection:knowledge-hub-third-wave-fr",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Microservice Architecture is an explicit member of the Knowledge Hub Third Wave collection.",
+      "confidence": "validated"
     }
   ]
 }

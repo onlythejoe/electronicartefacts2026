@@ -7794,20 +7794,20 @@ window.EA_PUBLIC_CATALOG = {
       "locale": "fr",
       "translationOf": "ea:concept:contextual-execution",
       "title": "Exécution contextuelle",
-      "summary": "Exécution contextuelle désigne le sujet \"Exécution contextuelle\" dans le graphe public d'Electronic Artefacts. La fiche en précise l'usage, les limites et les relations avec les projets, technologies et publications d'Electronic Artefacts.",
-      "description": "Exécution contextuelle désigne le sujet \"Exécution contextuelle\" dans le graphe public d'Electronic Artefacts. La fiche en précise l'usage, les limites et les relations avec les projets, technologies et publications d'Electronic Artefacts.",
-      "definition": "Exécution contextuelle désigne le sujet \"Exécution contextuelle\" dans le graphe public d'Electronic Artefacts.",
+      "summary": "L’exécution contextuelle évalue une opération à partir de l’identité des entités, des relations du graphe, des permissions, de l’état temporel et du périmètre visé.",
+      "description": "Un concept canonique reliant runtime de graphe, Théorie du runtime, VASTE et systèmes sensibles à l’identité.",
+      "definition": "L’exécution contextuelle consiste à faire de l’identité, de l’état, des permissions, des relations et du contexte opérationnel des contraintes actives sur ce qu’un système peut accomplir.",
       "status": "active",
       "maturity": "research",
       "confidence": "canonical",
       "visibility": "public",
       "publicationClass": "canonical",
       "tags": [
-        "Context",
+        "contexte",
         "Exécution",
         "Runtime",
-        "Identity",
-        "Permissions"
+        "Identité",
+        "permissions"
       ],
       "discipline": [
         "conception de systèmes",
@@ -7819,7 +7819,7 @@ window.EA_PUBLIC_CATALOG = {
       "identifier": "/fr/id/concept/contextual-execution/",
       "temporality": {
         "creationDate": "2026-06-23",
-        "lastUpdated": "2026-06-25",
+        "lastUpdated": "2026-07-12",
         "releaseDate": "2026-06-25",
         "creationYear": "2026"
       }
@@ -8174,8 +8174,8 @@ window.EA_PUBLIC_CATALOG = {
       "locale": "fr",
       "translationOf": "ea:concept:graph-runtime",
       "title": "Runtime de graphe",
-      "summary": "Runtime de graphe désigne les environnements d'exécution où les entités, relations, permissions et événements du graphe participent directement au calcul. La fiche en précise l'usage, les limites et les relations avec les projets, technologies et publications d'Electronic Artefacts.",
-      "description": "Runtime de graphe désigne les environnements d'exécution où les entités, relations, permissions et événements du graphe participent directement au calcul. La fiche en précise l'usage, les limites et les relations avec les projets, technologies et publications d'Electronic Artefacts.",
+      "summary": "Electronic Artefacts emploie « runtime de graphe » pour désigner les systèmes où entités, relations, identité, contexte et événements forment une structure exécutable plutôt qu’un modèle de données passif.",
+      "description": "Une définition canonique du runtime de graphe, de son périmètre et de ses liens avec VASTE, Théorie du runtime et V6.",
       "definition": "Runtime de graphe désigne les environnements d'exécution où les entités, relations, permissions et événements du graphe participent directement au calcul.",
       "status": "active",
       "maturity": "research",
@@ -8183,21 +8183,21 @@ window.EA_PUBLIC_CATALOG = {
       "visibility": "public",
       "publicationClass": "canonical",
       "tags": [
-        "Graph",
+        "Graphe",
         "Runtime",
-        "Context",
-        "Identity",
+        "contexte",
+        "Identité",
         "Exécution"
       ],
       "discipline": [
         "architecture logicielle",
-        "Knowledge systems"
+        "systèmes de connaissance"
       ],
       "route": "/fr/knowledge/concepts/graph-runtime/",
       "identifier": "/fr/id/concept/graph-runtime/",
       "temporality": {
         "creationDate": "2024-01-01",
-        "lastUpdated": "2026-06-25",
+        "lastUpdated": "2026-07-12",
         "releaseDate": "2026-06-25",
         "creationYear": "2024"
       }
@@ -8321,9 +8321,9 @@ window.EA_PUBLIC_CATALOG = {
       "locale": "fr",
       "translationOf": "ea:concept:knowledge-graph",
       "title": "Graphe de connaissances",
-      "summary": "Graphe de connaissances désigne les graphes de connaissances qui structurent des entités, des relations, des sources et des preuves. La fiche en précise l'usage, les limites et les relations avec les projets, technologies et publications d'Electronic Artefacts.",
-      "description": "Graphe de connaissances désigne les graphes de connaissances qui structurent des entités, des relations, des sources et des preuves. La fiche en précise l'usage, les limites et les relations avec les projets, technologies et publications d'Electronic Artefacts.",
-      "definition": "Graphe de connaissances désigne les graphes de connaissances qui structurent des entités, des relations, des sources et des preuves.",
+      "summary": "Electronic Artefacts emploie le graphe de connaissances comme modèle de publication reliant concepts, projets, programmes, sources et artefacts par des identités stables et des relations explicites.",
+      "description": "Une définition canonique du graphe de connaissances appliquée à la publication culturelle, technique et scientifique.",
+      "definition": "Un graphe de connaissances est un réseau structuré d’entités, d’identifiants et de relations typées qui rend les connaissances navigables, interrogeables et réutilisables.",
       "status": "active",
       "maturity": "research",
       "confidence": "canonical",
@@ -8331,22 +8331,22 @@ window.EA_PUBLIC_CATALOG = {
       "publicationClass": "canonical",
       "tags": [
         "graphe de connaissances",
-        "Semantic Web",
-        "Entities",
+        "Web sémantique",
+        "entités",
         "Relations",
-        "Search"
+        "Recherche"
       ],
       "discipline": [
         "systèmes de connaissance",
         "architecture de l’information",
         "développement web",
-        "Research"
+        "Recherche"
       ],
       "route": "/fr/knowledge/concepts/knowledge-graph/",
       "identifier": "/fr/id/concept/knowledge-graph/",
       "temporality": {
         "creationDate": "2026-06-23",
-        "lastUpdated": "2026-06-25",
+        "lastUpdated": "2026-07-12",
         "releaseDate": "2026-06-25",
         "creationYear": "2026"
       }
@@ -18743,6 +18743,1645 @@ window.EA_PUBLIC_CATALOG = {
       "createdAt": "2026-02-01",
       "reviewedAt": "2026-07-09",
       "visibility": "public"
+    },
+    {
+      "id": "ear:knowledge-graphs-for-cultural-infrastructure-member-of-collection-knowledge-hub-foundations",
+      "subject": "ea:publication:knowledge-graphs-for-cultural-infrastructure",
+      "predicate": "memberOfCollection",
+      "object": "ea:collection:knowledge-hub-foundations",
+      "statement": "Knowledge Graphs for Cultural Infrastructure is an explicit member of the Knowledge Hub Foundations collection.",
+      "confidence": "published",
+      "createdAt": "2026-06-23",
+      "reviewedAt": "2026-06-23",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:linked-data-and-public-knowledge-pages-member-of-collection-knowledge-hub-foundations",
+      "subject": "ea:publication:linked-data-and-public-knowledge-pages",
+      "predicate": "memberOfCollection",
+      "object": "ea:collection:knowledge-hub-foundations",
+      "statement": "Linked Data and Public Knowledge Pages is an explicit member of the Knowledge Hub Foundations collection.",
+      "confidence": "published",
+      "createdAt": "2026-06-23",
+      "reviewedAt": "2026-06-23",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:contextual-execution-and-graph-runtimes-member-of-collection-knowledge-hub-foundations",
+      "subject": "ea:publication:contextual-execution-and-graph-runtimes",
+      "predicate": "memberOfCollection",
+      "object": "ea:collection:knowledge-hub-foundations",
+      "statement": "Contextual Execution and Graph Runtimes is an explicit member of the Knowledge Hub Foundations collection.",
+      "confidence": "published",
+      "createdAt": "2026-06-23",
+      "reviewedAt": "2026-06-23",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:digital-preservation-and-living-archives-member-of-collection-knowledge-hub-foundations",
+      "subject": "ea:publication:digital-preservation-and-living-archives",
+      "predicate": "memberOfCollection",
+      "object": "ea:collection:knowledge-hub-foundations",
+      "statement": "Digital Preservation and Living Archives is an explicit member of the Knowledge Hub Foundations collection.",
+      "confidence": "published",
+      "createdAt": "2026-06-23",
+      "reviewedAt": "2026-06-23",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:generative-systems-cybernetics-and-creative-coding-member-of-collection-knowledge-hub-foundations",
+      "subject": "ea:publication:generative-systems-cybernetics-and-creative-coding",
+      "predicate": "memberOfCollection",
+      "object": "ea:collection:knowledge-hub-foundations",
+      "statement": "Generative Systems, Cybernetics and Creative Coding is an explicit member of the Knowledge Hub Foundations collection.",
+      "confidence": "published",
+      "createdAt": "2026-06-23",
+      "reviewedAt": "2026-06-23",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:signal-archaeology-audio-memory-and-machine-listening-member-of-collection-knowledge-hub-foundations",
+      "subject": "ea:publication:signal-archaeology-audio-memory-and-machine-listening",
+      "predicate": "memberOfCollection",
+      "object": "ea:collection:knowledge-hub-foundations",
+      "statement": "Signal Archaeology, Audio Memory and Machine Listening is an explicit member of the Knowledge Hub Foundations collection.",
+      "confidence": "published",
+      "createdAt": "2026-06-23",
+      "reviewedAt": "2026-06-23",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:knowledge-graph-member-of-collection-knowledge-hub-foundations",
+      "subject": "ea:concept:knowledge-graph",
+      "predicate": "memberOfCollection",
+      "object": "ea:collection:knowledge-hub-foundations",
+      "statement": "Knowledge Graph is an explicit member of the Knowledge Hub Foundations collection.",
+      "confidence": "canonical",
+      "createdAt": "2026-06-23",
+      "reviewedAt": "2026-06-23",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:linked-data-member-of-collection-knowledge-hub-foundations",
+      "subject": "ea:concept:linked-data",
+      "predicate": "memberOfCollection",
+      "object": "ea:collection:knowledge-hub-foundations",
+      "statement": "Linked Data is an explicit member of the Knowledge Hub Foundations collection.",
+      "confidence": "validated",
+      "createdAt": "2026-06-23",
+      "reviewedAt": "2026-06-23",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:contextual-execution-member-of-collection-knowledge-hub-foundations",
+      "subject": "ea:concept:contextual-execution",
+      "predicate": "memberOfCollection",
+      "object": "ea:collection:knowledge-hub-foundations",
+      "statement": "Contextual Execution is an explicit member of the Knowledge Hub Foundations collection.",
+      "confidence": "canonical",
+      "createdAt": "2026-06-23",
+      "reviewedAt": "2026-06-23",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:entity-identity-member-of-collection-knowledge-hub-foundations",
+      "subject": "ea:concept:entity-identity",
+      "predicate": "memberOfCollection",
+      "object": "ea:collection:knowledge-hub-foundations",
+      "statement": "Entity Identity is an explicit member of the Knowledge Hub Foundations collection.",
+      "confidence": "canonical",
+      "createdAt": "2026-06-23",
+      "reviewedAt": "2026-06-23",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:provenance-member-of-collection-knowledge-hub-foundations",
+      "subject": "ea:concept:provenance",
+      "predicate": "memberOfCollection",
+      "object": "ea:collection:knowledge-hub-foundations",
+      "statement": "Provenance is an explicit member of the Knowledge Hub Foundations collection.",
+      "confidence": "validated",
+      "createdAt": "2026-06-23",
+      "reviewedAt": "2026-06-23",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:digital-preservation-member-of-collection-knowledge-hub-foundations",
+      "subject": "ea:concept:digital-preservation",
+      "predicate": "memberOfCollection",
+      "object": "ea:collection:knowledge-hub-foundations",
+      "statement": "Digital Preservation is an explicit member of the Knowledge Hub Foundations collection.",
+      "confidence": "validated",
+      "createdAt": "2026-06-23",
+      "reviewedAt": "2026-06-23",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:generative-system-member-of-collection-knowledge-hub-foundations",
+      "subject": "ea:concept:generative-system",
+      "predicate": "memberOfCollection",
+      "object": "ea:collection:knowledge-hub-foundations",
+      "statement": "Generative System is an explicit member of the Knowledge Hub Foundations collection.",
+      "confidence": "validated",
+      "createdAt": "2026-06-23",
+      "reviewedAt": "2026-06-23",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:cybernetic-feedback-member-of-collection-knowledge-hub-foundations",
+      "subject": "ea:concept:cybernetic-feedback",
+      "predicate": "memberOfCollection",
+      "object": "ea:collection:knowledge-hub-foundations",
+      "statement": "Cybernetic Feedback is an explicit member of the Knowledge Hub Foundations collection.",
+      "confidence": "validated",
+      "createdAt": "2026-06-23",
+      "reviewedAt": "2026-06-23",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:creative-coding-member-of-collection-knowledge-hub-foundations",
+      "subject": "ea:concept:creative-coding",
+      "predicate": "memberOfCollection",
+      "object": "ea:collection:knowledge-hub-foundations",
+      "statement": "Creative Coding is an explicit member of the Knowledge Hub Foundations collection.",
+      "confidence": "validated",
+      "createdAt": "2026-06-23",
+      "reviewedAt": "2026-06-23",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:signal-archaeology-member-of-collection-knowledge-hub-foundations",
+      "subject": "ea:concept:signal-archaeology",
+      "predicate": "memberOfCollection",
+      "object": "ea:collection:knowledge-hub-foundations",
+      "statement": "Signal Archaeology is an explicit member of the Knowledge Hub Foundations collection.",
+      "confidence": "observed",
+      "createdAt": "2026-06-23",
+      "reviewedAt": "2026-06-23",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:rdf-member-of-collection-knowledge-hub-foundations",
+      "subject": "ea:technology:rdf",
+      "predicate": "memberOfCollection",
+      "object": "ea:collection:knowledge-hub-foundations",
+      "statement": "RDF is an explicit member of the Knowledge Hub Foundations collection.",
+      "confidence": "published",
+      "createdAt": "2014-02-25",
+      "reviewedAt": "2026-06-23",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:json-ld-member-of-collection-knowledge-hub-foundations",
+      "subject": "ea:technology:json-ld",
+      "predicate": "memberOfCollection",
+      "object": "ea:collection:knowledge-hub-foundations",
+      "statement": "JSON-LD is an explicit member of the Knowledge Hub Foundations collection.",
+      "confidence": "published",
+      "createdAt": "2020-07-16",
+      "reviewedAt": "2026-06-23",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:oreth-member-of-collection-knowledge-hub-foundations",
+      "subject": "ea:program:oreth",
+      "predicate": "memberOfCollection",
+      "object": "ea:collection:knowledge-hub-foundations",
+      "statement": "ORETH is an explicit member of the Knowledge Hub Foundations collection.",
+      "confidence": "observed",
+      "createdAt": "2024-01-01",
+      "reviewedAt": "2026-06-23",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:palimpsests-member-of-collection-knowledge-hub-foundations",
+      "subject": "ea:project:palimpsests",
+      "predicate": "memberOfCollection",
+      "object": "ea:collection:knowledge-hub-foundations",
+      "statement": "Palimpsests is an explicit member of the Knowledge Hub Foundations collection.",
+      "confidence": "published",
+      "createdAt": "2026-01-01",
+      "reviewedAt": "2026-06-23",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:model-context-protocol-member-of-collection-knowledge-hub-fourth-wave",
+      "subject": "ea:technology:model-context-protocol",
+      "predicate": "memberOfCollection",
+      "object": "ea:collection:knowledge-hub-fourth-wave",
+      "statement": "Model Context Protocol is an explicit member of the Knowledge Hub Fourth Wave collection.",
+      "confidence": "canonical",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:c2pa-member-of-collection-knowledge-hub-fourth-wave",
+      "subject": "ea:technology:c2pa",
+      "predicate": "memberOfCollection",
+      "object": "ea:collection:knowledge-hub-fourth-wave",
+      "statement": "C2PA is an explicit member of the Knowledge Hub Fourth Wave collection.",
+      "confidence": "canonical",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:webnn-member-of-collection-knowledge-hub-fourth-wave",
+      "subject": "ea:technology:webnn",
+      "predicate": "memberOfCollection",
+      "object": "ea:collection:knowledge-hub-fourth-wave",
+      "statement": "WebNN is an explicit member of the Knowledge Hub Fourth Wave collection.",
+      "confidence": "canonical",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:iiif-member-of-collection-knowledge-hub-fourth-wave",
+      "subject": "ea:technology:iiif",
+      "predicate": "memberOfCollection",
+      "object": "ea:collection:knowledge-hub-fourth-wave",
+      "statement": "IIIF is an explicit member of the Knowledge Hub Fourth Wave collection.",
+      "confidence": "canonical",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:opentelemetry-member-of-collection-knowledge-hub-fourth-wave",
+      "subject": "ea:technology:opentelemetry",
+      "predicate": "memberOfCollection",
+      "object": "ea:collection:knowledge-hub-fourth-wave",
+      "statement": "OpenTelemetry is an explicit member of the Knowledge Hub Fourth Wave collection.",
+      "confidence": "canonical",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:ai-agent-member-of-collection-knowledge-hub-fourth-wave",
+      "subject": "ea:concept:ai-agent",
+      "predicate": "memberOfCollection",
+      "object": "ea:collection:knowledge-hub-fourth-wave",
+      "statement": "AI Agent is an explicit member of the Knowledge Hub Fourth Wave collection.",
+      "confidence": "validated",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:provenance-member-of-collection-knowledge-hub-fourth-wave",
+      "subject": "ea:concept:provenance",
+      "predicate": "memberOfCollection",
+      "object": "ea:collection:knowledge-hub-fourth-wave",
+      "statement": "Provenance is an explicit member of the Knowledge Hub Fourth Wave collection.",
+      "confidence": "validated",
+      "createdAt": "2026-06-23",
+      "reviewedAt": "2026-06-23",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:digital-preservation-member-of-collection-knowledge-hub-fourth-wave",
+      "subject": "ea:concept:digital-preservation",
+      "predicate": "memberOfCollection",
+      "object": "ea:collection:knowledge-hub-fourth-wave",
+      "statement": "Digital Preservation is an explicit member of the Knowledge Hub Fourth Wave collection.",
+      "confidence": "validated",
+      "createdAt": "2026-06-23",
+      "reviewedAt": "2026-06-23",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:multimodal-ai-member-of-collection-knowledge-hub-fourth-wave",
+      "subject": "ea:concept:multimodal-ai",
+      "predicate": "memberOfCollection",
+      "object": "ea:collection:knowledge-hub-fourth-wave",
+      "statement": "Multimodal AI is an explicit member of the Knowledge Hub Fourth Wave collection.",
+      "confidence": "validated",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:contextual-execution-member-of-collection-knowledge-hub-fourth-wave",
+      "subject": "ea:concept:contextual-execution",
+      "predicate": "memberOfCollection",
+      "object": "ea:collection:knowledge-hub-fourth-wave",
+      "statement": "Contextual Execution is an explicit member of the Knowledge Hub Fourth Wave collection.",
+      "confidence": "canonical",
+      "createdAt": "2026-06-23",
+      "reviewedAt": "2026-06-23",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:hypertext-and-augmented-knowledge-systems-member-of-collection-knowledge-hub-second-wave",
+      "subject": "ea:publication:hypertext-and-augmented-knowledge-systems",
+      "predicate": "memberOfCollection",
+      "object": "ea:collection:knowledge-hub-second-wave",
+      "statement": "Hypertext and Augmented Knowledge Systems is an explicit member of the Knowledge Hub Second Wave collection.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:personal-knowledge-systems-and-digital-gardens-member-of-collection-knowledge-hub-second-wave",
+      "subject": "ea:publication:personal-knowledge-systems-and-digital-gardens",
+      "predicate": "memberOfCollection",
+      "object": "ea:collection:knowledge-hub-second-wave",
+      "statement": "Personal Knowledge Systems and Digital Gardens is an explicit member of the Knowledge Hub Second Wave collection.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:open-source-as-cultural-infrastructure-member-of-collection-knowledge-hub-second-wave",
+      "subject": "ea:publication:open-source-as-cultural-infrastructure",
+      "predicate": "memberOfCollection",
+      "object": "ea:collection:knowledge-hub-second-wave",
+      "statement": "Open Source as Cultural Infrastructure is an explicit member of the Knowledge Hub Second Wave collection.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:metadata-cataloguing-and-cultural-memory-member-of-collection-knowledge-hub-second-wave",
+      "subject": "ea:publication:metadata-cataloguing-and-cultural-memory",
+      "predicate": "memberOfCollection",
+      "object": "ea:collection:knowledge-hub-second-wave",
+      "statement": "Metadata, Cataloguing and Cultural Memory is an explicit member of the Knowledge Hub Second Wave collection.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:web-audio-and-browser-based-sound-systems-member-of-collection-knowledge-hub-second-wave",
+      "subject": "ea:publication:web-audio-and-browser-based-sound-systems",
+      "predicate": "memberOfCollection",
+      "object": "ea:collection:knowledge-hub-second-wave",
+      "statement": "Web Audio and Browser-Based Sound Systems is an explicit member of the Knowledge Hub Second Wave collection.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:creative-coding-pedagogy-from-logo-to-p5js-member-of-collection-knowledge-hub-second-wave",
+      "subject": "ea:publication:creative-coding-pedagogy-from-logo-to-p5js",
+      "predicate": "memberOfCollection",
+      "object": "ea:collection:knowledge-hub-second-wave",
+      "statement": "Creative Coding Pedagogy from Logo to p5.js is an explicit member of the Knowledge Hub Second Wave collection.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:procedural-graphics-shaders-and-visual-systems-member-of-collection-knowledge-hub-second-wave",
+      "subject": "ea:publication:procedural-graphics-shaders-and-visual-systems",
+      "predicate": "memberOfCollection",
+      "object": "ea:collection:knowledge-hub-second-wave",
+      "statement": "Procedural Graphics, Shaders and Visual Systems is an explicit member of the Knowledge Hub Second Wave collection.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:motion-design-time-and-interface-semantics-member-of-collection-knowledge-hub-second-wave",
+      "subject": "ea:publication:motion-design-time-and-interface-semantics",
+      "predicate": "memberOfCollection",
+      "object": "ea:collection:knowledge-hub-second-wave",
+      "statement": "Motion Design, Time and Interface Semantics is an explicit member of the Knowledge Hub Second Wave collection.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:typography-reading-systems-and-digital-interfaces-member-of-collection-knowledge-hub-second-wave",
+      "subject": "ea:publication:typography-reading-systems-and-digital-interfaces",
+      "predicate": "memberOfCollection",
+      "object": "ea:collection:knowledge-hub-second-wave",
+      "statement": "Typography, Reading Systems and Digital Interfaces is an explicit member of the Knowledge Hub Second Wave collection.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:human-computer-interaction-for-creative-tools-member-of-collection-knowledge-hub-second-wave",
+      "subject": "ea:publication:human-computer-interaction-for-creative-tools",
+      "predicate": "memberOfCollection",
+      "object": "ea:collection:knowledge-hub-second-wave",
+      "statement": "Human Computer Interaction for Creative Tools is an explicit member of the Knowledge Hub Second Wave collection.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:algorithmic-composition-and-rule-based-music-member-of-collection-knowledge-hub-second-wave",
+      "subject": "ea:publication:algorithmic-composition-and-rule-based-music",
+      "predicate": "memberOfCollection",
+      "object": "ea:collection:knowledge-hub-second-wave",
+      "statement": "Algorithmic Composition and Rule-Based Music is an explicit member of the Knowledge Hub Second Wave collection.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:generative-ai-latent-space-and-creative-workflows-member-of-collection-knowledge-hub-second-wave",
+      "subject": "ea:publication:generative-ai-latent-space-and-creative-workflows",
+      "predicate": "memberOfCollection",
+      "object": "ea:collection:knowledge-hub-second-wave",
+      "statement": "Generative AI, Latent Space and Creative Workflows is an explicit member of the Knowledge Hub Second Wave collection.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:hypertext-member-of-collection-knowledge-hub-second-wave",
+      "subject": "ea:concept:hypertext",
+      "predicate": "memberOfCollection",
+      "object": "ea:collection:knowledge-hub-second-wave",
+      "statement": "Hypertext is an explicit member of the Knowledge Hub Second Wave collection.",
+      "confidence": "canonical",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:augmented-intelligence-member-of-collection-knowledge-hub-second-wave",
+      "subject": "ea:concept:augmented-intelligence",
+      "predicate": "memberOfCollection",
+      "object": "ea:collection:knowledge-hub-second-wave",
+      "statement": "Augmented Intelligence is an explicit member of the Knowledge Hub Second Wave collection.",
+      "confidence": "canonical",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:personal-knowledge-system-member-of-collection-knowledge-hub-second-wave",
+      "subject": "ea:concept:personal-knowledge-system",
+      "predicate": "memberOfCollection",
+      "object": "ea:collection:knowledge-hub-second-wave",
+      "statement": "Personal Knowledge System is an explicit member of the Knowledge Hub Second Wave collection.",
+      "confidence": "validated",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:open-source-member-of-collection-knowledge-hub-second-wave",
+      "subject": "ea:concept:open-source",
+      "predicate": "memberOfCollection",
+      "object": "ea:collection:knowledge-hub-second-wave",
+      "statement": "Open Source is an explicit member of the Knowledge Hub Second Wave collection.",
+      "confidence": "canonical",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:metadata-member-of-collection-knowledge-hub-second-wave",
+      "subject": "ea:concept:metadata",
+      "predicate": "memberOfCollection",
+      "object": "ea:collection:knowledge-hub-second-wave",
+      "statement": "Metadata is an explicit member of the Knowledge Hub Second Wave collection.",
+      "confidence": "canonical",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:web-audio-member-of-collection-knowledge-hub-second-wave",
+      "subject": "ea:concept:web-audio",
+      "predicate": "memberOfCollection",
+      "object": "ea:collection:knowledge-hub-second-wave",
+      "statement": "Web Audio is an explicit member of the Knowledge Hub Second Wave collection.",
+      "confidence": "validated",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:procedural-graphics-member-of-collection-knowledge-hub-second-wave",
+      "subject": "ea:concept:procedural-graphics",
+      "predicate": "memberOfCollection",
+      "object": "ea:collection:knowledge-hub-second-wave",
+      "statement": "Procedural Graphics is an explicit member of the Knowledge Hub Second Wave collection.",
+      "confidence": "canonical",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:motion-design-member-of-collection-knowledge-hub-second-wave",
+      "subject": "ea:concept:motion-design",
+      "predicate": "memberOfCollection",
+      "object": "ea:collection:knowledge-hub-second-wave",
+      "statement": "Motion Design is an explicit member of the Knowledge Hub Second Wave collection.",
+      "confidence": "validated",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:typography-member-of-collection-knowledge-hub-second-wave",
+      "subject": "ea:concept:typography",
+      "predicate": "memberOfCollection",
+      "object": "ea:collection:knowledge-hub-second-wave",
+      "statement": "Typography is an explicit member of the Knowledge Hub Second Wave collection.",
+      "confidence": "canonical",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:human-computer-interaction-member-of-collection-knowledge-hub-second-wave",
+      "subject": "ea:concept:human-computer-interaction",
+      "predicate": "memberOfCollection",
+      "object": "ea:collection:knowledge-hub-second-wave",
+      "statement": "Human Computer Interaction is an explicit member of the Knowledge Hub Second Wave collection.",
+      "confidence": "canonical",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:internet-culture-member-of-collection-knowledge-hub-second-wave",
+      "subject": "ea:concept:internet-culture",
+      "predicate": "memberOfCollection",
+      "object": "ea:collection:knowledge-hub-second-wave",
+      "statement": "Internet Culture is an explicit member of the Knowledge Hub Second Wave collection.",
+      "confidence": "validated",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:algorithmic-composition-member-of-collection-knowledge-hub-second-wave",
+      "subject": "ea:concept:algorithmic-composition",
+      "predicate": "memberOfCollection",
+      "object": "ea:collection:knowledge-hub-second-wave",
+      "statement": "Algorithmic Composition is an explicit member of the Knowledge Hub Second Wave collection.",
+      "confidence": "canonical",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:generative-ai-member-of-collection-knowledge-hub-second-wave",
+      "subject": "ea:concept:generative-ai",
+      "predicate": "memberOfCollection",
+      "object": "ea:collection:knowledge-hub-second-wave",
+      "statement": "Generative AI is an explicit member of the Knowledge Hub Second Wave collection.",
+      "confidence": "validated",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:web-audio-api-member-of-collection-knowledge-hub-second-wave",
+      "subject": "ea:technology:web-audio-api",
+      "predicate": "memberOfCollection",
+      "object": "ea:collection:knowledge-hub-second-wave",
+      "statement": "Web Audio API is an explicit member of the Knowledge Hub Second Wave collection.",
+      "confidence": "canonical",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:webgl-member-of-collection-knowledge-hub-second-wave",
+      "subject": "ea:technology:webgl",
+      "predicate": "memberOfCollection",
+      "object": "ea:collection:knowledge-hub-second-wave",
+      "statement": "WebGL is an explicit member of the Knowledge Hub Second Wave collection.",
+      "confidence": "canonical",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:web-animations-member-of-collection-knowledge-hub-second-wave",
+      "subject": "ea:technology:web-animations",
+      "predicate": "memberOfCollection",
+      "object": "ea:collection:knowledge-hub-second-wave",
+      "statement": "Web Animations is an explicit member of the Knowledge Hub Second Wave collection.",
+      "confidence": "validated",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:css-fonts-member-of-collection-knowledge-hub-second-wave",
+      "subject": "ea:technology:css-fonts",
+      "predicate": "memberOfCollection",
+      "object": "ea:collection:knowledge-hub-second-wave",
+      "statement": "CSS Fonts is an explicit member of the Knowledge Hub Second Wave collection.",
+      "confidence": "validated",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:how-large-language-models-actually-work-member-of-collection-knowledge-hub-third-wave",
+      "subject": "ea:publication:how-large-language-models-actually-work",
+      "predicate": "memberOfCollection",
+      "object": "ea:collection:knowledge-hub-third-wave",
+      "statement": "How Large Language Models Actually Work is an explicit member of the Knowledge Hub Third Wave collection.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:ai-agents-vs-ai-workflows-member-of-collection-knowledge-hub-third-wave",
+      "subject": "ea:publication:ai-agents-vs-ai-workflows",
+      "predicate": "memberOfCollection",
+      "object": "ea:collection:knowledge-hub-third-wave",
+      "statement": "AI Agents vs AI Workflows is an explicit member of the Knowledge Hub Third Wave collection.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:local-and-open-source-ai-systems-member-of-collection-knowledge-hub-third-wave",
+      "subject": "ea:publication:local-and-open-source-ai-systems",
+      "predicate": "memberOfCollection",
+      "object": "ea:collection:knowledge-hub-third-wave",
+      "statement": "Local and Open Source AI Systems is an explicit member of the Knowledge Hub Third Wave collection.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:retrieval-augmented-generation-and-knowledge-systems-member-of-collection-knowledge-hub-third-wave",
+      "subject": "ea:publication:retrieval-augmented-generation-and-knowledge-systems",
+      "predicate": "memberOfCollection",
+      "object": "ea:collection:knowledge-hub-third-wave",
+      "statement": "Retrieval-Augmented Generation and Knowledge Systems is an explicit member of the Knowledge Hub Third Wave collection.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:multimodal-ai-across-text-image-audio-and-video-member-of-collection-knowledge-hub-third-wave",
+      "subject": "ea:publication:multimodal-ai-across-text-image-audio-and-video",
+      "predicate": "memberOfCollection",
+      "object": "ea:collection:knowledge-hub-third-wave",
+      "statement": "Multimodal AI Across Text, Image, Audio and Video is an explicit member of the Knowledge Hub Third Wave collection.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:systems-thinking-for-creative-practice-member-of-collection-knowledge-hub-third-wave",
+      "subject": "ea:publication:systems-thinking-for-creative-practice",
+      "predicate": "memberOfCollection",
+      "object": "ea:collection:knowledge-hub-third-wave",
+      "statement": "Systems Thinking for Creative Practice is an explicit member of the Knowledge Hub Third Wave collection.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:ontologies-taxonomies-and-knowledge-modeling-member-of-collection-knowledge-hub-third-wave",
+      "subject": "ea:publication:ontologies-taxonomies-and-knowledge-modeling",
+      "predicate": "memberOfCollection",
+      "object": "ea:collection:knowledge-hub-third-wave",
+      "statement": "Ontologies, Taxonomies and Knowledge Modeling is an explicit member of the Knowledge Hub Third Wave collection.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:why-graphs-are-more-powerful-than-folders-member-of-collection-knowledge-hub-third-wave",
+      "subject": "ea:publication:why-graphs-are-more-powerful-than-folders",
+      "predicate": "memberOfCollection",
+      "object": "ea:collection:knowledge-hub-third-wave",
+      "statement": "Why Graphs Are More Powerful Than Folders is an explicit member of the Knowledge Hub Third Wave collection.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:event-driven-architecture-and-event-streams-member-of-collection-knowledge-hub-third-wave",
+      "subject": "ea:publication:event-driven-architecture-and-event-streams",
+      "predicate": "memberOfCollection",
+      "object": "ea:collection:knowledge-hub-third-wave",
+      "statement": "Event-Driven Architecture and Event Streams is an explicit member of the Knowledge Hub Third Wave collection.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:redis-streams-for-orchestration-member-of-collection-knowledge-hub-third-wave",
+      "subject": "ea:publication:redis-streams-for-orchestration",
+      "predicate": "memberOfCollection",
+      "object": "ea:collection:knowledge-hub-third-wave",
+      "statement": "Redis Streams for Orchestration is an explicit member of the Knowledge Hub Third Wave collection.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:microservices-modular-monoliths-and-system-boundaries-member-of-collection-knowledge-hub-third-wave",
+      "subject": "ea:publication:microservices-modular-monoliths-and-system-boundaries",
+      "predicate": "memberOfCollection",
+      "object": "ea:collection:knowledge-hub-third-wave",
+      "statement": "Microservices, Modular Monoliths and System Boundaries is an explicit member of the Knowledge Hub Third Wave collection.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:runtime-engines-and-domain-operating-systems-member-of-collection-knowledge-hub-third-wave",
+      "subject": "ea:publication:runtime-engines-and-domain-operating-systems",
+      "predicate": "memberOfCollection",
+      "object": "ea:collection:knowledge-hub-third-wave",
+      "statement": "Runtime Engines and Domain Operating Systems is an explicit member of the Knowledge Hub Third Wave collection.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:large-language-model-member-of-collection-knowledge-hub-third-wave",
+      "subject": "ea:concept:large-language-model",
+      "predicate": "memberOfCollection",
+      "object": "ea:collection:knowledge-hub-third-wave",
+      "statement": "Large Language Model is an explicit member of the Knowledge Hub Third Wave collection.",
+      "confidence": "canonical",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:ai-agent-member-of-collection-knowledge-hub-third-wave",
+      "subject": "ea:concept:ai-agent",
+      "predicate": "memberOfCollection",
+      "object": "ea:collection:knowledge-hub-third-wave",
+      "statement": "AI Agent is an explicit member of the Knowledge Hub Third Wave collection.",
+      "confidence": "validated",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:retrieval-augmented-generation-member-of-collection-knowledge-hub-third-wave",
+      "subject": "ea:concept:retrieval-augmented-generation",
+      "predicate": "memberOfCollection",
+      "object": "ea:collection:knowledge-hub-third-wave",
+      "statement": "Retrieval-Augmented Generation is an explicit member of the Knowledge Hub Third Wave collection.",
+      "confidence": "canonical",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:open-weight-model-member-of-collection-knowledge-hub-third-wave",
+      "subject": "ea:concept:open-weight-model",
+      "predicate": "memberOfCollection",
+      "object": "ea:collection:knowledge-hub-third-wave",
+      "statement": "Open-Weight Model is an explicit member of the Knowledge Hub Third Wave collection.",
+      "confidence": "validated",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:multimodal-ai-member-of-collection-knowledge-hub-third-wave",
+      "subject": "ea:concept:multimodal-ai",
+      "predicate": "memberOfCollection",
+      "object": "ea:collection:knowledge-hub-third-wave",
+      "statement": "Multimodal AI is an explicit member of the Knowledge Hub Third Wave collection.",
+      "confidence": "validated",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:autonomous-system-member-of-collection-knowledge-hub-third-wave",
+      "subject": "ea:concept:autonomous-system",
+      "predicate": "memberOfCollection",
+      "object": "ea:collection:knowledge-hub-third-wave",
+      "statement": "Autonomous System is an explicit member of the Knowledge Hub Third Wave collection.",
+      "confidence": "validated",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:systems-thinking-member-of-collection-knowledge-hub-third-wave",
+      "subject": "ea:concept:systems-thinking",
+      "predicate": "memberOfCollection",
+      "object": "ea:collection:knowledge-hub-third-wave",
+      "statement": "Systems Thinking is an explicit member of the Knowledge Hub Third Wave collection.",
+      "confidence": "canonical",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:ontology-member-of-collection-knowledge-hub-third-wave",
+      "subject": "ea:concept:ontology",
+      "predicate": "memberOfCollection",
+      "object": "ea:collection:knowledge-hub-third-wave",
+      "statement": "Ontology is an explicit member of the Knowledge Hub Third Wave collection.",
+      "confidence": "canonical",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:event-driven-architecture-member-of-collection-knowledge-hub-third-wave",
+      "subject": "ea:concept:event-driven-architecture",
+      "predicate": "memberOfCollection",
+      "object": "ea:collection:knowledge-hub-third-wave",
+      "statement": "Event-Driven Architecture is an explicit member of the Knowledge Hub Third Wave collection.",
+      "confidence": "canonical",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:microservice-architecture-member-of-collection-knowledge-hub-third-wave",
+      "subject": "ea:concept:microservice-architecture",
+      "predicate": "memberOfCollection",
+      "object": "ea:collection:knowledge-hub-third-wave",
+      "statement": "Microservice Architecture is an explicit member of the Knowledge Hub Third Wave collection.",
+      "confidence": "validated",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:domain-operating-system-member-of-collection-knowledge-hub-third-wave",
+      "subject": "ea:concept:domain-operating-system",
+      "predicate": "memberOfCollection",
+      "object": "ea:collection:knowledge-hub-third-wave",
+      "statement": "Domain Operating System is an explicit member of the Knowledge Hub Third Wave collection.",
+      "confidence": "observed",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:graph-modeling-member-of-collection-knowledge-hub-third-wave",
+      "subject": "ea:concept:graph-modeling",
+      "predicate": "memberOfCollection",
+      "object": "ea:collection:knowledge-hub-third-wave",
+      "statement": "Graph Modeling is an explicit member of the Knowledge Hub Third Wave collection.",
+      "confidence": "canonical",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:transformer-architecture-member-of-collection-knowledge-hub-third-wave",
+      "subject": "ea:technology:transformer-architecture",
+      "predicate": "memberOfCollection",
+      "object": "ea:collection:knowledge-hub-third-wave",
+      "statement": "Transformer Architecture is an explicit member of the Knowledge Hub Third Wave collection.",
+      "confidence": "canonical",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:llama-cpp-member-of-collection-knowledge-hub-third-wave",
+      "subject": "ea:technology:llama-cpp",
+      "predicate": "memberOfCollection",
+      "object": "ea:collection:knowledge-hub-third-wave",
+      "statement": "llama.cpp is an explicit member of the Knowledge Hub Third Wave collection.",
+      "confidence": "canonical",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:redis-streams-member-of-collection-knowledge-hub-third-wave",
+      "subject": "ea:technology:redis-streams",
+      "predicate": "memberOfCollection",
+      "object": "ea:collection:knowledge-hub-third-wave",
+      "statement": "Redis Streams is an explicit member of the Knowledge Hub Third Wave collection.",
+      "confidence": "canonical",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:cloudevents-member-of-collection-knowledge-hub-third-wave",
+      "subject": "ea:technology:cloudevents",
+      "predicate": "memberOfCollection",
+      "object": "ea:collection:knowledge-hub-third-wave",
+      "statement": "CloudEvents is an explicit member of the Knowledge Hub Third Wave collection.",
+      "confidence": "canonical",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:owl-member-of-collection-knowledge-hub-third-wave",
+      "subject": "ea:technology:owl",
+      "predicate": "memberOfCollection",
+      "object": "ea:collection:knowledge-hub-third-wave",
+      "statement": "OWL is an explicit member of the Knowledge Hub Third Wave collection.",
+      "confidence": "canonical",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:skos-member-of-collection-knowledge-hub-third-wave",
+      "subject": "ea:technology:skos",
+      "predicate": "memberOfCollection",
+      "object": "ea:collection:knowledge-hub-third-wave",
+      "statement": "SKOS is an explicit member of the Knowledge Hub Third Wave collection.",
+      "confidence": "canonical",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:speech-recording-member-of-collection-voice-capture-studio",
+      "subject": "ea:concept:speech-recording",
+      "predicate": "memberOfCollection",
+      "object": "ea:collection:voice-capture-studio",
+      "statement": "Speech Recording is an explicit member of the Voice Capture Studio Collection collection.",
+      "confidence": "validated",
+      "createdAt": "2026-07-09",
+      "reviewedAt": "2026-07-09",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:speech-datasets-member-of-collection-voice-capture-studio",
+      "subject": "ea:concept:speech-datasets",
+      "predicate": "memberOfCollection",
+      "object": "ea:collection:voice-capture-studio",
+      "statement": "Speech Datasets is an explicit member of the Voice Capture Studio Collection collection.",
+      "confidence": "validated",
+      "createdAt": "2026-07-09",
+      "reviewedAt": "2026-07-09",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:browser-software-member-of-collection-voice-capture-studio",
+      "subject": "ea:concept:browser-software",
+      "predicate": "memberOfCollection",
+      "object": "ea:collection:voice-capture-studio",
+      "statement": "Browser Software is an explicit member of the Voice Capture Studio Collection collection.",
+      "confidence": "validated",
+      "createdAt": "2026-07-09",
+      "reviewedAt": "2026-07-09",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:voice-technology-member-of-collection-voice-capture-studio",
+      "subject": "ea:concept:voice-technology",
+      "predicate": "memberOfCollection",
+      "object": "ea:collection:voice-capture-studio",
+      "statement": "Voice Technology is an explicit member of the Voice Capture Studio Collection collection.",
+      "confidence": "validated",
+      "createdAt": "2026-07-09",
+      "reviewedAt": "2026-07-09",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:machine-learning-workflows-member-of-collection-voice-capture-studio",
+      "subject": "ea:concept:machine-learning-workflows",
+      "predicate": "memberOfCollection",
+      "object": "ea:collection:voice-capture-studio",
+      "statement": "Machine Learning Workflows is an explicit member of the Voice Capture Studio Collection collection.",
+      "confidence": "validated",
+      "createdAt": "2026-07-09",
+      "reviewedAt": "2026-07-09",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:open-source-member-of-collection-voice-capture-studio",
+      "subject": "ea:concept:open-source",
+      "predicate": "memberOfCollection",
+      "object": "ea:collection:voice-capture-studio",
+      "statement": "Open Source is an explicit member of the Voice Capture Studio Collection collection.",
+      "confidence": "canonical",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:web-audio-member-of-collection-voice-capture-studio",
+      "subject": "ea:concept:web-audio",
+      "predicate": "memberOfCollection",
+      "object": "ea:collection:voice-capture-studio",
+      "statement": "Web Audio is an explicit member of the Voice Capture Studio Collection collection.",
+      "confidence": "validated",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:metadata-member-of-collection-voice-capture-studio",
+      "subject": "ea:concept:metadata",
+      "predicate": "memberOfCollection",
+      "object": "ea:collection:voice-capture-studio",
+      "statement": "Metadata is an explicit member of the Voice Capture Studio Collection collection.",
+      "confidence": "canonical",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:provenance-member-of-collection-voice-capture-studio",
+      "subject": "ea:concept:provenance",
+      "predicate": "memberOfCollection",
+      "object": "ea:collection:voice-capture-studio",
+      "statement": "Provenance is an explicit member of the Voice Capture Studio Collection collection.",
+      "confidence": "validated",
+      "createdAt": "2026-06-23",
+      "reviewedAt": "2026-06-23",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:human-computer-interaction-member-of-collection-voice-capture-studio",
+      "subject": "ea:concept:human-computer-interaction",
+      "predicate": "memberOfCollection",
+      "object": "ea:collection:voice-capture-studio",
+      "statement": "Human Computer Interaction is an explicit member of the Voice Capture Studio Collection collection.",
+      "confidence": "canonical",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:web-audio-api-member-of-collection-voice-capture-studio",
+      "subject": "ea:technology:web-audio-api",
+      "predicate": "memberOfCollection",
+      "object": "ea:collection:voice-capture-studio",
+      "statement": "Web Audio API is an explicit member of the Voice Capture Studio Collection collection.",
+      "confidence": "canonical",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:ai-agents-vs-ai-workflows-documents-large-language-model",
+      "subject": "ea:publication:ai-agents-vs-ai-workflows",
+      "predicate": "documents",
+      "object": "ea:concept:large-language-model",
+      "statement": "AI Agents vs AI Workflows documents Large Language Model as one of its declared subjects.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:ai-search-structured-content-and-knowledge-graph-seo-documents-metadata",
+      "subject": "ea:publication:ai-search-structured-content-and-knowledge-graph-seo",
+      "predicate": "documents",
+      "object": "ea:concept:metadata",
+      "statement": "AI Search, Structured Content and Knowledge Graph SEO documents Metadata as one of its declared subjects.",
+      "confidence": "published",
+      "createdAt": "2026-06-25",
+      "reviewedAt": "2026-06-25",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:ai-search-structured-content-and-knowledge-graph-seo-documents-entity-identity",
+      "subject": "ea:publication:ai-search-structured-content-and-knowledge-graph-seo",
+      "predicate": "documents",
+      "object": "ea:concept:entity-identity",
+      "statement": "AI Search, Structured Content and Knowledge Graph SEO documents Entity Identity as one of its declared subjects.",
+      "confidence": "published",
+      "createdAt": "2026-06-25",
+      "reviewedAt": "2026-06-25",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:ai-search-structured-content-and-knowledge-graph-seo-documents-json-ld",
+      "subject": "ea:publication:ai-search-structured-content-and-knowledge-graph-seo",
+      "predicate": "documents",
+      "object": "ea:technology:json-ld",
+      "statement": "AI Search, Structured Content and Knowledge Graph SEO documents JSON-LD as one of its declared subjects.",
+      "confidence": "published",
+      "createdAt": "2026-06-25",
+      "reviewedAt": "2026-06-25",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:c2pa-content-credentials-and-generative-media-provenance-documents-digital-preservation",
+      "subject": "ea:publication:c2pa-content-credentials-and-generative-media-provenance",
+      "predicate": "documents",
+      "object": "ea:concept:digital-preservation",
+      "statement": "C2PA Content Credentials and Generative Media Provenance documents Digital Preservation as one of its declared subjects.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:c2pa-content-credentials-and-generative-media-provenance-documents-generative-ai",
+      "subject": "ea:publication:c2pa-content-credentials-and-generative-media-provenance",
+      "predicate": "documents",
+      "object": "ea:concept:generative-ai",
+      "statement": "C2PA Content Credentials and Generative Media Provenance documents Generative AI as one of its declared subjects.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:contextual-execution-and-graph-runtimes-documents-entity-identity",
+      "subject": "ea:publication:contextual-execution-and-graph-runtimes",
+      "predicate": "documents",
+      "object": "ea:concept:entity-identity",
+      "statement": "Contextual Execution and Graph Runtimes documents Entity Identity as one of its declared subjects.",
+      "confidence": "published",
+      "createdAt": "2026-06-23",
+      "reviewedAt": "2026-06-23",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:digital-preservation-and-living-archives-documents-knowledge-graph",
+      "subject": "ea:publication:digital-preservation-and-living-archives",
+      "predicate": "documents",
+      "object": "ea:concept:knowledge-graph",
+      "statement": "Digital Preservation and Living Archives documents Knowledge Graph as one of its declared subjects.",
+      "confidence": "published",
+      "createdAt": "2026-06-23",
+      "reviewedAt": "2026-06-23",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:event-driven-architecture-and-event-streams-documents-cloudevents",
+      "subject": "ea:publication:event-driven-architecture-and-event-streams",
+      "predicate": "documents",
+      "object": "ea:technology:cloudevents",
+      "statement": "Event-Driven Architecture and Event Streams documents CloudEvents as one of its declared subjects.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:how-large-language-models-actually-work-documents-transformer-architecture",
+      "subject": "ea:publication:how-large-language-models-actually-work",
+      "predicate": "documents",
+      "object": "ea:technology:transformer-architecture",
+      "statement": "How Large Language Models Actually Work documents Transformer Architecture as one of its declared subjects.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:how-large-language-models-actually-work-documents-augmented-intelligence",
+      "subject": "ea:publication:how-large-language-models-actually-work",
+      "predicate": "documents",
+      "object": "ea:concept:augmented-intelligence",
+      "statement": "How Large Language Models Actually Work documents Augmented Intelligence as one of its declared subjects.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:human-computer-interaction-for-creative-tools-documents-creative-coding",
+      "subject": "ea:publication:human-computer-interaction-for-creative-tools",
+      "predicate": "documents",
+      "object": "ea:concept:creative-coding",
+      "statement": "Human Computer Interaction for Creative Tools documents Creative Coding as one of its declared subjects.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:hypertext-and-augmented-knowledge-systems-documents-runtime-theory",
+      "subject": "ea:publication:hypertext-and-augmented-knowledge-systems",
+      "predicate": "documents",
+      "object": "ea:researchField:runtime-theory",
+      "statement": "Hypertext and Augmented Knowledge Systems documents Runtime Theory as one of its declared subjects.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:iiif-and-compound-cultural-objects-documents-linked-data",
+      "subject": "ea:publication:iiif-and-compound-cultural-objects",
+      "predicate": "documents",
+      "object": "ea:concept:linked-data",
+      "statement": "IIIF and Compound Cultural Objects documents Linked Data as one of its declared subjects.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:iiif-and-compound-cultural-objects-documents-metadata",
+      "subject": "ea:publication:iiif-and-compound-cultural-objects",
+      "predicate": "documents",
+      "object": "ea:concept:metadata",
+      "statement": "IIIF and Compound Cultural Objects documents Metadata as one of its declared subjects.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:knowledge-graphs-for-cultural-infrastructure-documents-rdf",
+      "subject": "ea:publication:knowledge-graphs-for-cultural-infrastructure",
+      "predicate": "documents",
+      "object": "ea:technology:rdf",
+      "statement": "Knowledge Graphs for Cultural Infrastructure documents RDF as one of its declared subjects.",
+      "confidence": "published",
+      "createdAt": "2026-06-23",
+      "reviewedAt": "2026-06-23",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:linked-data-and-public-knowledge-pages-documents-json-ld",
+      "subject": "ea:publication:linked-data-and-public-knowledge-pages",
+      "predicate": "documents",
+      "object": "ea:technology:json-ld",
+      "statement": "Linked Data and Public Knowledge Pages documents JSON-LD as one of its declared subjects.",
+      "confidence": "published",
+      "createdAt": "2026-06-23",
+      "reviewedAt": "2026-06-23",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:linked-data-and-public-knowledge-pages-documents-rdf",
+      "subject": "ea:publication:linked-data-and-public-knowledge-pages",
+      "predicate": "documents",
+      "object": "ea:technology:rdf",
+      "statement": "Linked Data and Public Knowledge Pages documents RDF as one of its declared subjects.",
+      "confidence": "published",
+      "createdAt": "2026-06-23",
+      "reviewedAt": "2026-06-23",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:linked-data-and-public-knowledge-pages-documents-knowledge-graph",
+      "subject": "ea:publication:linked-data-and-public-knowledge-pages",
+      "predicate": "documents",
+      "object": "ea:concept:knowledge-graph",
+      "statement": "Linked Data and Public Knowledge Pages documents Knowledge Graph as one of its declared subjects.",
+      "confidence": "published",
+      "createdAt": "2026-06-23",
+      "reviewedAt": "2026-06-23",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:local-and-open-source-ai-systems-documents-large-language-model",
+      "subject": "ea:publication:local-and-open-source-ai-systems",
+      "predicate": "documents",
+      "object": "ea:concept:large-language-model",
+      "statement": "Local and Open Source AI Systems documents Large Language Model as one of its declared subjects.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:local-and-open-source-ai-systems-documents-llama-cpp",
+      "subject": "ea:publication:local-and-open-source-ai-systems",
+      "predicate": "documents",
+      "object": "ea:technology:llama-cpp",
+      "statement": "Local and Open Source AI Systems documents llama.cpp as one of its declared subjects.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:metadata-cataloguing-and-cultural-memory-documents-knowledge-graph",
+      "subject": "ea:publication:metadata-cataloguing-and-cultural-memory",
+      "predicate": "documents",
+      "object": "ea:concept:knowledge-graph",
+      "statement": "Metadata, Cataloguing and Cultural Memory documents Knowledge Graph as one of its declared subjects.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:microservices-modular-monoliths-and-system-boundaries-documents-contextual-execution",
+      "subject": "ea:publication:microservices-modular-monoliths-and-system-boundaries",
+      "predicate": "documents",
+      "object": "ea:concept:contextual-execution",
+      "statement": "Microservices, Modular Monoliths and System Boundaries documents Contextual Execution as one of its declared subjects.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:model-context-protocol-and-tool-using-ai-systems-documents-graph-runtime",
+      "subject": "ea:publication:model-context-protocol-and-tool-using-ai-systems",
+      "predicate": "documents",
+      "object": "ea:concept:graph-runtime",
+      "statement": "Model Context Protocol and Tool-Using AI Systems documents Graph Runtime as one of its declared subjects.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:motion-design-time-and-interface-semantics-documents-web-animations",
+      "subject": "ea:publication:motion-design-time-and-interface-semantics",
+      "predicate": "documents",
+      "object": "ea:technology:web-animations",
+      "statement": "Motion Design, Time and Interface Semantics documents Web Animations as one of its declared subjects.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:multimodal-ai-across-text-image-audio-and-video-documents-generative-ai",
+      "subject": "ea:publication:multimodal-ai-across-text-image-audio-and-video",
+      "predicate": "documents",
+      "object": "ea:concept:generative-ai",
+      "statement": "Multimodal AI Across Text, Image, Audio and Video documents Generative AI as one of its declared subjects.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:observability-for-ai-agents-and-tool-calling-systems-documents-model-context-protocol",
+      "subject": "ea:publication:observability-for-ai-agents-and-tool-calling-systems",
+      "predicate": "documents",
+      "object": "ea:technology:model-context-protocol",
+      "statement": "Observability for AI Agents and Tool-Calling Systems documents Model Context Protocol as one of its declared subjects.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:observability-for-ai-agents-and-tool-calling-systems-documents-event-driven-architecture",
+      "subject": "ea:publication:observability-for-ai-agents-and-tool-calling-systems",
+      "predicate": "documents",
+      "object": "ea:concept:event-driven-architecture",
+      "statement": "Observability for AI Agents and Tool-Calling Systems documents Event-Driven Architecture as one of its declared subjects.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:ontologies-taxonomies-and-knowledge-modeling-documents-owl",
+      "subject": "ea:publication:ontologies-taxonomies-and-knowledge-modeling",
+      "predicate": "documents",
+      "object": "ea:technology:owl",
+      "statement": "Ontologies, Taxonomies and Knowledge Modeling documents OWL as one of its declared subjects.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:ontologies-taxonomies-and-knowledge-modeling-documents-skos",
+      "subject": "ea:publication:ontologies-taxonomies-and-knowledge-modeling",
+      "predicate": "documents",
+      "object": "ea:technology:skos",
+      "statement": "Ontologies, Taxonomies and Knowledge Modeling documents SKOS as one of its declared subjects.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:personal-knowledge-systems-and-digital-gardens-documents-knowledge-graph",
+      "subject": "ea:publication:personal-knowledge-systems-and-digital-gardens",
+      "predicate": "documents",
+      "object": "ea:concept:knowledge-graph",
+      "statement": "Personal Knowledge Systems and Digital Gardens documents Knowledge Graph as one of its declared subjects.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:procedural-graphics-shaders-and-visual-systems-documents-webgl",
+      "subject": "ea:publication:procedural-graphics-shaders-and-visual-systems",
+      "predicate": "documents",
+      "object": "ea:technology:webgl",
+      "statement": "Procedural Graphics, Shaders and Visual Systems documents WebGL as one of its declared subjects.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:procedural-graphics-shaders-and-visual-systems-documents-creative-coding",
+      "subject": "ea:publication:procedural-graphics-shaders-and-visual-systems",
+      "predicate": "documents",
+      "object": "ea:concept:creative-coding",
+      "statement": "Procedural Graphics, Shaders and Visual Systems documents Creative Coding as one of its declared subjects.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:prompt-injection-and-trust-boundaries-in-ai-knowledge-systems-documents-retrieval-augmented-generation",
+      "subject": "ea:publication:prompt-injection-and-trust-boundaries-in-ai-knowledge-systems",
+      "predicate": "documents",
+      "object": "ea:concept:retrieval-augmented-generation",
+      "statement": "Prompt Injection and Trust Boundaries in AI Knowledge Systems documents Retrieval-Augmented Generation as one of its declared subjects.",
+      "confidence": "published",
+      "createdAt": "2026-06-25",
+      "reviewedAt": "2026-06-25",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:prompt-injection-and-trust-boundaries-in-ai-knowledge-systems-documents-model-context-protocol",
+      "subject": "ea:publication:prompt-injection-and-trust-boundaries-in-ai-knowledge-systems",
+      "predicate": "documents",
+      "object": "ea:technology:model-context-protocol",
+      "statement": "Prompt Injection and Trust Boundaries in AI Knowledge Systems documents Model Context Protocol as one of its declared subjects.",
+      "confidence": "published",
+      "createdAt": "2026-06-25",
+      "reviewedAt": "2026-06-25",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:redis-streams-for-orchestration-documents-redis-streams",
+      "subject": "ea:publication:redis-streams-for-orchestration",
+      "predicate": "documents",
+      "object": "ea:technology:redis-streams",
+      "statement": "Redis Streams for Orchestration documents Redis Streams as one of its declared subjects.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:redis-streams-for-orchestration-documents-contextual-execution",
+      "subject": "ea:publication:redis-streams-for-orchestration",
+      "predicate": "documents",
+      "object": "ea:concept:contextual-execution",
+      "statement": "Redis Streams for Orchestration documents Contextual Execution as one of its declared subjects.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:responsible-ai-governance-for-creative-and-cultural-systems-documents-systems-thinking",
+      "subject": "ea:publication:responsible-ai-governance-for-creative-and-cultural-systems",
+      "predicate": "documents",
+      "object": "ea:concept:systems-thinking",
+      "statement": "Responsible AI Governance for Creative and Cultural Systems documents Systems Thinking as one of its declared subjects.",
+      "confidence": "published",
+      "createdAt": "2026-06-25",
+      "reviewedAt": "2026-06-25",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:retrieval-augmented-generation-and-knowledge-systems-documents-large-language-model",
+      "subject": "ea:publication:retrieval-augmented-generation-and-knowledge-systems",
+      "predicate": "documents",
+      "object": "ea:concept:large-language-model",
+      "statement": "Retrieval-Augmented Generation and Knowledge Systems documents Large Language Model as one of its declared subjects.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:runtime-engines-and-domain-operating-systems-documents-event-driven-architecture",
+      "subject": "ea:publication:runtime-engines-and-domain-operating-systems",
+      "predicate": "documents",
+      "object": "ea:concept:event-driven-architecture",
+      "statement": "Runtime Engines and Domain Operating Systems documents Event-Driven Architecture as one of its declared subjects.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:systems-thinking-for-creative-practice-documents-graph-modeling",
+      "subject": "ea:publication:systems-thinking-for-creative-practice",
+      "predicate": "documents",
+      "object": "ea:concept:graph-modeling",
+      "statement": "Systems Thinking for Creative Practice documents Graph Modeling as one of its declared subjects.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:typography-reading-systems-and-digital-interfaces-documents-css-fonts",
+      "subject": "ea:publication:typography-reading-systems-and-digital-interfaces",
+      "predicate": "documents",
+      "object": "ea:technology:css-fonts",
+      "statement": "Typography, Reading Systems and Digital Interfaces documents CSS Fonts as one of its declared subjects.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:verifiable-credentials-for-cultural-archives-and-creator-identity-documents-linked-data",
+      "subject": "ea:publication:verifiable-credentials-for-cultural-archives-and-creator-identity",
+      "predicate": "documents",
+      "object": "ea:concept:linked-data",
+      "statement": "Verifiable Credentials for Cultural Archives and Creator Identity documents Linked Data as one of its declared subjects.",
+      "confidence": "published",
+      "createdAt": "2026-06-25",
+      "reviewedAt": "2026-06-25",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:verifiable-credentials-for-cultural-archives-and-creator-identity-documents-c2pa",
+      "subject": "ea:publication:verifiable-credentials-for-cultural-archives-and-creator-identity",
+      "predicate": "documents",
+      "object": "ea:technology:c2pa",
+      "statement": "Verifiable Credentials for Cultural Archives and Creator Identity documents C2PA as one of its declared subjects.",
+      "confidence": "published",
+      "createdAt": "2026-06-25",
+      "reviewedAt": "2026-06-25",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:web-audio-and-browser-based-sound-systems-documents-web-audio-api",
+      "subject": "ea:publication:web-audio-and-browser-based-sound-systems",
+      "predicate": "documents",
+      "object": "ea:technology:web-audio-api",
+      "statement": "Web Audio and Browser-Based Sound Systems documents Web Audio API as one of its declared subjects.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:web-audio-and-browser-based-sound-systems-documents-creative-coding",
+      "subject": "ea:publication:web-audio-and-browser-based-sound-systems",
+      "predicate": "documents",
+      "object": "ea:concept:creative-coding",
+      "statement": "Web Audio and Browser-Based Sound Systems documents Creative Coding as one of its declared subjects.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:webnn-and-local-ai-in-the-browser-documents-open-weight-model",
+      "subject": "ea:publication:webnn-and-local-ai-in-the-browser",
+      "predicate": "documents",
+      "object": "ea:concept:open-weight-model",
+      "statement": "WebNN and Local AI in the Browser documents Open-Weight Model as one of its declared subjects.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:webnn-and-local-ai-in-the-browser-documents-generative-ai",
+      "subject": "ea:publication:webnn-and-local-ai-in-the-browser",
+      "predicate": "documents",
+      "object": "ea:concept:generative-ai",
+      "statement": "WebNN and Local AI in the Browser documents Generative AI as one of its declared subjects.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:why-graphs-are-more-powerful-than-folders-documents-provenance",
+      "subject": "ea:publication:why-graphs-are-more-powerful-than-folders",
+      "predicate": "documents",
+      "object": "ea:concept:provenance",
+      "statement": "Why Graphs Are More Powerful Than Folders documents Provenance as one of its declared subjects.",
+      "confidence": "published",
+      "createdAt": "2026-06-24",
+      "reviewedAt": "2026-06-24",
+      "visibility": "public"
     }
   ],
   "routes": {
@@ -22675,7 +24314,7 @@ window.EA_ANALYTICS_CONFIG = {
 
   const selectedWorksCard = (item, options = {}) => {
     if (!item) return "";
-    const href = entryHrefFor(item);
+    const href = options.href || entryHrefFor(item);
     const featured = options.featured !== false;
     const compact = !featured;
     const isVestiges = item.id === "vestiges";
@@ -22709,7 +24348,7 @@ window.EA_ANALYTICS_CONFIG = {
             ${projectButterflyBubble(item, "card")}
           </div>
         </div>
-        ${cardMediaPlate(item, { kicker: featured ? "Lead visual" : "Visual", caption: !isVestiges, action: options.mediaAction })}
+        ${cardMediaPlate(item, { kicker: featured ? "Lead visual" : "Visual", caption: featured ? false : !isVestiges, action: options.mediaAction })}
         ${cardCopy(item.summary || item.description, featured ? 2 : 1)}
         <p class="project-card__editorial-note">${esc(projectReadAs(item))}</p>
         ${signalStrip(item)}
@@ -23002,7 +24641,7 @@ window.EA_ANALYTICS_CONFIG = {
       fetchPriority: "low",
       tags: homeCardPills(palimpsests),
       actions: [
-        { label: "Discover Palimpsests", href: "./palimpsests.html" },
+        { label: "Discover", href: "./palimpsests.html" },
         { label: "Browse archive", href: "./archive.html" },
         { label: "Start a Collaboration", href: "./contact.html" },
       ],
@@ -23122,6 +24761,7 @@ window.EA_ANALYTICS_CONFIG = {
             <div class="selected-works-panel__stack-grid">
               ${supporting.map((item) => selectedWorksCard(item, {
                 featured: false,
+                href: item.id === "forge" ? entryHrefFor(item) : undefined,
                 actions: item.id === "oeil-de-meg"
                   ? [
                     { label: "Discover L’Œil de Meg", href: "https://oeildemeg.fr/", target: "_blank" },
@@ -23869,7 +25509,10 @@ window.EA_ANALYTICS_CONFIG = {
                 ${researchNodeMarkup(active)}
               </div>
             </div>
-            <a class="tag research-atlas__graph-link" href="${esc(graphRouteForQuestion(active))}" target="_blank" rel="noreferrer" data-research-atlas-graph-link>${esc(translate("View full graph"))}</a>
+            <a class="tag research-atlas__graph-link" href="${esc(graphRouteForQuestion(active))}" target="_blank" rel="noreferrer" data-research-atlas-graph-link aria-label="${esc(translate("View full graph"))}">
+              <span class="research-atlas__graph-link-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><circle cx="6" cy="7" r="2.2"></circle><circle cx="18" cy="6" r="2.2"></circle><circle cx="12" cy="18" r="2.2"></circle><path d="m7.9 8.1 3 7.8M16.1 7.3l-3 8.6M8.2 6.8l7.6-.6"></path></svg></span>
+              <span class="research-atlas__graph-link-label">${esc(translate("View full graph"))}</span>
+            </a>
           </aside>
           <article class="research-atlas__panel" data-research-atlas-panel aria-live="polite">
             ${researchQuestionBody(active, 0, questions)}
@@ -24054,7 +25697,9 @@ window.EA_ANALYTICS_CONFIG = {
       }
 
       const { ctx, width, height, centerX, centerY, minDim } = context;
-      const t = performance.now() * 0.001;
+      const isResearchAtlasGraph = context.surface.classList.contains("graph-surface--research-atlas");
+      const compactGraph = isResearchAtlasGraph && minDim < 380;
+      const t = compactGraph ? 0 : performance.now() * 0.001;
 
       ctx.clearRect(0, 0, width, height);
 
@@ -24080,8 +25725,6 @@ window.EA_ANALYTICS_CONFIG = {
         ctx.stroke();
       }
 
-      const isResearchAtlasGraph = context.surface.classList.contains("graph-surface--research-atlas");
-      const compactGraph = isResearchAtlasGraph && minDim < 380;
       const orbit1 = minDim * (compactGraph ? 0.43 : 0.38);
       const orbit2 = minDim * (compactGraph ? 0.3 : 0.22);
       ctx.strokeStyle = "rgba(255,255,255,0.08)";

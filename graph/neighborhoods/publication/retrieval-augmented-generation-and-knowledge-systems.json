@@ -66,6 +66,14 @@
       "route": "/research/questions/first-conversation-understanding/",
       "status": "active",
       "confidence": "observed"
+    },
+    {
+      "id": "ea:concept:large-language-model",
+      "type": "concept",
+      "title": "Large Language Model",
+      "route": "/knowledge/concepts/large-language-model/",
+      "status": "active",
+      "confidence": "canonical"
     }
   ],
   "edges": [
@@ -131,6 +139,24 @@
       "label": "Documents",
       "statement": "Retrieval-Augmented Generation and Knowledge Systems documents context, evidence or vocabulary for the research question \"How can an AI understand someone during its very first conversation?\".",
       "confidence": "observed"
+    },
+    {
+      "id": "ear:retrieval-augmented-generation-and-knowledge-systems-member-of-collection-knowledge-hub-third-wave",
+      "source": "ea:publication:retrieval-augmented-generation-and-knowledge-systems",
+      "target": "ea:collection:knowledge-hub-third-wave",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Retrieval-Augmented Generation and Knowledge Systems is an explicit member of the Knowledge Hub Third Wave collection.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:retrieval-augmented-generation-and-knowledge-systems-documents-large-language-model",
+      "source": "ea:publication:retrieval-augmented-generation-and-knowledge-systems",
+      "target": "ea:concept:large-language-model",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Retrieval-Augmented Generation and Knowledge Systems documents Large Language Model as one of its declared subjects.",
+      "confidence": "published"
     }
   ]
 }

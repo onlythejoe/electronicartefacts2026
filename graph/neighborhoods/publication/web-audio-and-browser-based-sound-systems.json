@@ -58,6 +58,14 @@
       "route": "/research/questions/speech-dataset-reproducibility/",
       "status": "active",
       "confidence": "published"
+    },
+    {
+      "id": "ea:concept:creative-coding",
+      "type": "concept",
+      "title": "Creative Coding",
+      "route": "/knowledge/concepts/creative-coding/",
+      "status": "active",
+      "confidence": "validated"
     }
   ],
   "edges": [
@@ -113,6 +121,33 @@
       "predicate": "documents",
       "label": "Documents",
       "statement": "Web Audio and Browser-Based Sound Systems documents context, evidence or vocabulary for the research question \"How can speech datasets become reproducible, structured and privacy-first?\".",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:web-audio-and-browser-based-sound-systems-member-of-collection-knowledge-hub-second-wave",
+      "source": "ea:publication:web-audio-and-browser-based-sound-systems",
+      "target": "ea:collection:knowledge-hub-second-wave",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Web Audio and Browser-Based Sound Systems is an explicit member of the Knowledge Hub Second Wave collection.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:web-audio-and-browser-based-sound-systems-documents-web-audio-api",
+      "source": "ea:publication:web-audio-and-browser-based-sound-systems",
+      "target": "ea:technology:web-audio-api",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Web Audio and Browser-Based Sound Systems documents Web Audio API as one of its declared subjects.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:web-audio-and-browser-based-sound-systems-documents-creative-coding",
+      "source": "ea:publication:web-audio-and-browser-based-sound-systems",
+      "target": "ea:concept:creative-coding",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Web Audio and Browser-Based Sound Systems documents Creative Coding as one of its declared subjects.",
       "confidence": "published"
     }
   ]

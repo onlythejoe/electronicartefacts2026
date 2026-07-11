@@ -1,4 +1,4 @@
-import type { Entity, ResearchQuestionEntity } from "../schema/entities.js";
+import type { CollectionEntity, Entity, PublicationEntity, ResearchQuestionEntity } from "../schema/entities.js";
 import type { EntityRef, EntityId } from "../schema/entity.js";
 import type { RelationPredicate, RelationStatement } from "../schema/relation.js";
 import { isPublicEntity } from "../semantic/visibility.js";
@@ -21,6 +21,12 @@ const relationIdFor = (
 
 const existingTripleKey = (relation: Pick<RelationStatement, "subject" | "predicate" | "object">): string =>
   `${relation.subject}|${relation.predicate}|${relation.object}`;
+
+const genericRelationIdFor = (
+  subject: Entity,
+  predicate: RelationPredicate,
+  object: Entity,
+): `ear:${string}` => `ear:${slugFromId(subject.id)}-${predicateSlug(predicate)}-${slugFromId(object.id)}`;
 
 const resolveRefs = (
   refs: EntityRef[] | undefined,
@@ -121,10 +127,73 @@ export const deriveResearchQuestionRelations = (
   return derived;
 };
 
+export const deriveEditorialRelations = (
+  entities: Entity[],
+  authoredRelations: RelationStatement[],
+): RelationStatement[] => {
+  const byId = new Map(entities.map((entity) => [entity.id, entity]));
+  const usedIds = new Set(authoredRelations.map((relation) => relation.id));
+  const usedTriples = new Set(authoredRelations.map(existingTripleKey));
+  const derived: RelationStatement[] = [];
+
+  const add = (
+    subject: Entity,
+    predicate: RelationPredicate,
+    object: Entity,
+    statement: string,
+  ) => {
+    const relation: RelationStatement = {
+      id: genericRelationIdFor(subject, predicate, object),
+      subject: subject.id,
+      predicate,
+      object: object.id,
+      statement,
+      confidence: subject.confidence,
+      createdAt: subject.version.createdAt,
+      reviewedAt: subject.version.reviewedAt || subject.version.modifiedAt,
+      visibility: "public",
+    };
+    const triple = existingTripleKey(relation);
+    if (usedIds.has(relation.id) || usedTriples.has(triple)) return;
+    usedIds.add(relation.id);
+    usedTriples.add(triple);
+    derived.push(relation);
+  };
+
+  for (const entity of entities) {
+    if (entity.translationOf || !isPublicEntity(entity)) continue;
+    if (entity.type === "publication") {
+      const publication: PublicationEntity = entity;
+      for (const subject of resolveRefs(publication.subjects, byId)) {
+        add(
+          publication,
+          "documents",
+          subject,
+          `${publication.title} documents ${subject.title} as one of its declared subjects.`,
+        );
+      }
+    }
+    if (entity.type === "collection") {
+      const collection: CollectionEntity = entity;
+      for (const member of resolveRefs(collection.explicitMembers, byId)) {
+        add(
+          member,
+          "memberOfCollection",
+          collection,
+          `${member.title} is an explicit member of the ${collection.title} collection.`,
+        );
+      }
+    }
+  }
+
+  return derived;
+};
+
 export const withDerivedRelations = (
   entities: Entity[],
   authoredRelations: RelationStatement[],
-): RelationStatement[] => [
-  ...authoredRelations,
-  ...deriveResearchQuestionRelations(entities, authoredRelations),
-];
+): RelationStatement[] => {
+  const researchRelations = deriveResearchQuestionRelations(entities, authoredRelations);
+  const editorialRelations = deriveEditorialRelations(entities, [...authoredRelations, ...researchRelations]);
+  return [...authoredRelations, ...researchRelations, ...editorialRelations];
+};

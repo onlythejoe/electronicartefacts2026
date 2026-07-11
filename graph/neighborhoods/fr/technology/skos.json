@@ -18,6 +18,14 @@
       "route": "/fr/publications/ontologies-taxonomies-and-knowledge-modeling/",
       "status": "active",
       "confidence": "published"
+    },
+    {
+      "id": "ea:collection:knowledge-hub-third-wave-fr",
+      "type": "collection",
+      "title": "Hub de connaissance, troisième vague",
+      "route": "/fr/archive/collections/knowledge-hub-third-wave/",
+      "status": "active",
+      "confidence": "published"
     }
   ],
   "edges": [
@@ -28,6 +36,24 @@
       "predicate": "usesTechnology",
       "label": "Uses technology",
       "statement": "Ontologies, Taxonomies and Knowledge Modeling uses SKOS as its vocabulary and taxonomy reference.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:skos-member-of-collection-knowledge-hub-third-wave",
+      "source": "ea:technology:skos-fr",
+      "target": "ea:collection:knowledge-hub-third-wave-fr",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "SKOS is an explicit member of the Knowledge Hub Third Wave collection.",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ear:ontologies-taxonomies-and-knowledge-modeling-documents-skos",
+      "source": "ea:publication:ontologies-taxonomies-and-knowledge-modeling-fr",
+      "target": "ea:technology:skos-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Ontologies, Taxonomies and Knowledge Modeling documents SKOS as one of its declared subjects.",
       "confidence": "published"
     }
   ]

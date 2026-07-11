@@ -114,6 +114,142 @@
       "route": "/fr/publications/generative-ai-latent-space-and-creative-workflows/",
       "status": "active",
       "confidence": "published"
+    },
+    {
+      "id": "ea:concept:hypertext-fr",
+      "type": "concept",
+      "title": "Hypertexte",
+      "route": "/fr/knowledge/concepts/hypertext/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:concept:augmented-intelligence-fr",
+      "type": "concept",
+      "title": "Intelligence augmentée",
+      "route": "/fr/knowledge/concepts/augmented-intelligence/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:concept:personal-knowledge-system-fr",
+      "type": "concept",
+      "title": "Système personnel de connaissance",
+      "route": "/fr/knowledge/concepts/personal-knowledge-system/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:concept:open-source-fr",
+      "type": "concept",
+      "title": "open source",
+      "route": "/fr/knowledge/concepts/open-source/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:concept:metadata-fr",
+      "type": "concept",
+      "title": "Métadonnées",
+      "route": "/fr/knowledge/concepts/metadata/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:concept:web-audio-fr",
+      "type": "concept",
+      "title": "Audio web",
+      "route": "/fr/knowledge/concepts/web-audio/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:concept:procedural-graphics-fr",
+      "type": "concept",
+      "title": "Graphisme procédural",
+      "route": "/fr/knowledge/concepts/procedural-graphics/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:concept:motion-design-fr",
+      "type": "concept",
+      "title": "Motion design",
+      "route": "/fr/knowledge/concepts/motion-design/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:concept:typography-fr",
+      "type": "concept",
+      "title": "Typographie",
+      "route": "/fr/knowledge/concepts/typography/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:concept:human-computer-interaction-fr",
+      "type": "concept",
+      "title": "Interaction humain-machine",
+      "route": "/fr/knowledge/concepts/human-computer-interaction/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:concept:internet-culture-fr",
+      "type": "concept",
+      "title": "Culture Internet",
+      "route": "/fr/knowledge/concepts/internet-culture/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:concept:algorithmic-composition-fr",
+      "type": "concept",
+      "title": "Composition algorithmique",
+      "route": "/fr/knowledge/concepts/algorithmic-composition/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:concept:generative-ai-fr",
+      "type": "concept",
+      "title": "IA générative",
+      "route": "/fr/knowledge/concepts/generative-ai/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:technology:web-audio-api-fr",
+      "type": "technology",
+      "title": "Web Audio API",
+      "route": "/fr/knowledge/technologies/web-audio-api/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:technology:webgl-fr",
+      "type": "technology",
+      "title": "WebGL",
+      "route": "/fr/knowledge/technologies/webgl/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:technology:web-animations-fr",
+      "type": "technology",
+      "title": "Web Animations",
+      "route": "/fr/knowledge/technologies/web-animations/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:technology:css-fonts-fr",
+      "type": "technology",
+      "title": "CSS Fonts",
+      "route": "/fr/knowledge/technologies/css-fonts/",
+      "status": "active",
+      "confidence": "validated"
     }
   ],
   "edges": [
@@ -233,6 +369,267 @@
       "label": "Has part",
       "statement": "Knowledge Hub Second Wave includes Generative AI, Latent Space and Creative Workflows as a core article.",
       "confidence": "published"
+    },
+    {
+      "id": "ear:hypertext-and-augmented-knowledge-systems-member-of-collection-knowledge-hub-second-wave",
+      "source": "ea:publication:hypertext-and-augmented-knowledge-systems-fr",
+      "target": "ea:collection:knowledge-hub-second-wave-fr",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Hypertext and Augmented Knowledge Systems is an explicit member of the Knowledge Hub Second Wave collection.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:personal-knowledge-systems-and-digital-gardens-member-of-collection-knowledge-hub-second-wave",
+      "source": "ea:publication:personal-knowledge-systems-and-digital-gardens-fr",
+      "target": "ea:collection:knowledge-hub-second-wave-fr",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Personal Knowledge Systems and Digital Gardens is an explicit member of the Knowledge Hub Second Wave collection.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:open-source-as-cultural-infrastructure-member-of-collection-knowledge-hub-second-wave",
+      "source": "ea:publication:open-source-as-cultural-infrastructure-fr",
+      "target": "ea:collection:knowledge-hub-second-wave-fr",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Open Source as Cultural Infrastructure is an explicit member of the Knowledge Hub Second Wave collection.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:metadata-cataloguing-and-cultural-memory-member-of-collection-knowledge-hub-second-wave",
+      "source": "ea:publication:metadata-cataloguing-and-cultural-memory-fr",
+      "target": "ea:collection:knowledge-hub-second-wave-fr",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Metadata, Cataloguing and Cultural Memory is an explicit member of the Knowledge Hub Second Wave collection.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:web-audio-and-browser-based-sound-systems-member-of-collection-knowledge-hub-second-wave",
+      "source": "ea:publication:web-audio-and-browser-based-sound-systems-fr",
+      "target": "ea:collection:knowledge-hub-second-wave-fr",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Web Audio and Browser-Based Sound Systems is an explicit member of the Knowledge Hub Second Wave collection.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:creative-coding-pedagogy-from-logo-to-p5js-member-of-collection-knowledge-hub-second-wave",
+      "source": "ea:publication:creative-coding-pedagogy-from-logo-to-p5js-fr",
+      "target": "ea:collection:knowledge-hub-second-wave-fr",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Creative Coding Pedagogy from Logo to p5.js is an explicit member of the Knowledge Hub Second Wave collection.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:procedural-graphics-shaders-and-visual-systems-member-of-collection-knowledge-hub-second-wave",
+      "source": "ea:publication:procedural-graphics-shaders-and-visual-systems-fr",
+      "target": "ea:collection:knowledge-hub-second-wave-fr",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Procedural Graphics, Shaders and Visual Systems is an explicit member of the Knowledge Hub Second Wave collection.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:motion-design-time-and-interface-semantics-member-of-collection-knowledge-hub-second-wave",
+      "source": "ea:publication:motion-design-time-and-interface-semantics-fr",
+      "target": "ea:collection:knowledge-hub-second-wave-fr",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Motion Design, Time and Interface Semantics is an explicit member of the Knowledge Hub Second Wave collection.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:typography-reading-systems-and-digital-interfaces-member-of-collection-knowledge-hub-second-wave",
+      "source": "ea:publication:typography-reading-systems-and-digital-interfaces-fr",
+      "target": "ea:collection:knowledge-hub-second-wave-fr",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Typography, Reading Systems and Digital Interfaces is an explicit member of the Knowledge Hub Second Wave collection.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:human-computer-interaction-for-creative-tools-member-of-collection-knowledge-hub-second-wave",
+      "source": "ea:publication:human-computer-interaction-for-creative-tools-fr",
+      "target": "ea:collection:knowledge-hub-second-wave-fr",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Human Computer Interaction for Creative Tools is an explicit member of the Knowledge Hub Second Wave collection.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:algorithmic-composition-and-rule-based-music-member-of-collection-knowledge-hub-second-wave",
+      "source": "ea:publication:algorithmic-composition-and-rule-based-music-fr",
+      "target": "ea:collection:knowledge-hub-second-wave-fr",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Algorithmic Composition and Rule-Based Music is an explicit member of the Knowledge Hub Second Wave collection.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:generative-ai-latent-space-and-creative-workflows-member-of-collection-knowledge-hub-second-wave",
+      "source": "ea:publication:generative-ai-latent-space-and-creative-workflows-fr",
+      "target": "ea:collection:knowledge-hub-second-wave-fr",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Generative AI, Latent Space and Creative Workflows is an explicit member of the Knowledge Hub Second Wave collection.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:hypertext-member-of-collection-knowledge-hub-second-wave",
+      "source": "ea:concept:hypertext-fr",
+      "target": "ea:collection:knowledge-hub-second-wave-fr",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Hypertext is an explicit member of the Knowledge Hub Second Wave collection.",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ear:augmented-intelligence-member-of-collection-knowledge-hub-second-wave",
+      "source": "ea:concept:augmented-intelligence-fr",
+      "target": "ea:collection:knowledge-hub-second-wave-fr",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Augmented Intelligence is an explicit member of the Knowledge Hub Second Wave collection.",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ear:personal-knowledge-system-member-of-collection-knowledge-hub-second-wave",
+      "source": "ea:concept:personal-knowledge-system-fr",
+      "target": "ea:collection:knowledge-hub-second-wave-fr",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Personal Knowledge System is an explicit member of the Knowledge Hub Second Wave collection.",
+      "confidence": "validated"
+    },
+    {
+      "id": "ear:open-source-member-of-collection-knowledge-hub-second-wave",
+      "source": "ea:concept:open-source-fr",
+      "target": "ea:collection:knowledge-hub-second-wave-fr",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Open Source is an explicit member of the Knowledge Hub Second Wave collection.",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ear:metadata-member-of-collection-knowledge-hub-second-wave",
+      "source": "ea:concept:metadata-fr",
+      "target": "ea:collection:knowledge-hub-second-wave-fr",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Metadata is an explicit member of the Knowledge Hub Second Wave collection.",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ear:web-audio-member-of-collection-knowledge-hub-second-wave",
+      "source": "ea:concept:web-audio-fr",
+      "target": "ea:collection:knowledge-hub-second-wave-fr",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Web Audio is an explicit member of the Knowledge Hub Second Wave collection.",
+      "confidence": "validated"
+    },
+    {
+      "id": "ear:procedural-graphics-member-of-collection-knowledge-hub-second-wave",
+      "source": "ea:concept:procedural-graphics-fr",
+      "target": "ea:collection:knowledge-hub-second-wave-fr",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Procedural Graphics is an explicit member of the Knowledge Hub Second Wave collection.",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ear:motion-design-member-of-collection-knowledge-hub-second-wave",
+      "source": "ea:concept:motion-design-fr",
+      "target": "ea:collection:knowledge-hub-second-wave-fr",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Motion Design is an explicit member of the Knowledge Hub Second Wave collection.",
+      "confidence": "validated"
+    },
+    {
+      "id": "ear:typography-member-of-collection-knowledge-hub-second-wave",
+      "source": "ea:concept:typography-fr",
+      "target": "ea:collection:knowledge-hub-second-wave-fr",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Typography is an explicit member of the Knowledge Hub Second Wave collection.",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ear:human-computer-interaction-member-of-collection-knowledge-hub-second-wave",
+      "source": "ea:concept:human-computer-interaction-fr",
+      "target": "ea:collection:knowledge-hub-second-wave-fr",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Human Computer Interaction is an explicit member of the Knowledge Hub Second Wave collection.",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ear:internet-culture-member-of-collection-knowledge-hub-second-wave",
+      "source": "ea:concept:internet-culture-fr",
+      "target": "ea:collection:knowledge-hub-second-wave-fr",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Internet Culture is an explicit member of the Knowledge Hub Second Wave collection.",
+      "confidence": "validated"
+    },
+    {
+      "id": "ear:algorithmic-composition-member-of-collection-knowledge-hub-second-wave",
+      "source": "ea:concept:algorithmic-composition-fr",
+      "target": "ea:collection:knowledge-hub-second-wave-fr",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Algorithmic Composition is an explicit member of the Knowledge Hub Second Wave collection.",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ear:generative-ai-member-of-collection-knowledge-hub-second-wave",
+      "source": "ea:concept:generative-ai-fr",
+      "target": "ea:collection:knowledge-hub-second-wave-fr",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Generative AI is an explicit member of the Knowledge Hub Second Wave collection.",
+      "confidence": "validated"
+    },
+    {
+      "id": "ear:web-audio-api-member-of-collection-knowledge-hub-second-wave",
+      "source": "ea:technology:web-audio-api-fr",
+      "target": "ea:collection:knowledge-hub-second-wave-fr",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Web Audio API is an explicit member of the Knowledge Hub Second Wave collection.",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ear:webgl-member-of-collection-knowledge-hub-second-wave",
+      "source": "ea:technology:webgl-fr",
+      "target": "ea:collection:knowledge-hub-second-wave-fr",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "WebGL is an explicit member of the Knowledge Hub Second Wave collection.",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ear:web-animations-member-of-collection-knowledge-hub-second-wave",
+      "source": "ea:technology:web-animations-fr",
+      "target": "ea:collection:knowledge-hub-second-wave-fr",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Web Animations is an explicit member of the Knowledge Hub Second Wave collection.",
+      "confidence": "validated"
+    },
+    {
+      "id": "ear:css-fonts-member-of-collection-knowledge-hub-second-wave",
+      "source": "ea:technology:css-fonts-fr",
+      "target": "ea:collection:knowledge-hub-second-wave-fr",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "CSS Fonts is an explicit member of the Knowledge Hub Second Wave collection.",
+      "confidence": "validated"
     }
   ]
 }

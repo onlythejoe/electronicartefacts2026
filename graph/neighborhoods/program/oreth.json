@@ -98,6 +98,14 @@
       "route": "/research/questions/speech-dataset-reproducibility/",
       "status": "active",
       "confidence": "published"
+    },
+    {
+      "id": "ea:collection:knowledge-hub-foundations",
+      "type": "collection",
+      "title": "Knowledge Hub Foundations",
+      "route": "/archive/collections/knowledge-hub-foundations/",
+      "status": "active",
+      "confidence": "published"
     }
   ],
   "edges": [
@@ -199,6 +207,15 @@
       "label": "Implemented by",
       "statement": "ORETH is listed as a current software or project answer for the research question \"How can speech datasets become reproducible, structured and privacy-first?\".",
       "confidence": "published"
+    },
+    {
+      "id": "ear:oreth-member-of-collection-knowledge-hub-foundations",
+      "source": "ea:program:oreth",
+      "target": "ea:collection:knowledge-hub-foundations",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "ORETH is an explicit member of the Knowledge Hub Foundations collection.",
+      "confidence": "observed"
     }
   ]
 }

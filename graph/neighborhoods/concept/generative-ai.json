@@ -34,6 +34,38 @@
       "route": "/publications/how-large-language-models-actually-work/",
       "status": "active",
       "confidence": "published"
+    },
+    {
+      "id": "ea:collection:knowledge-hub-second-wave",
+      "type": "collection",
+      "title": "Knowledge Hub Second Wave",
+      "route": "/archive/collections/knowledge-hub-second-wave/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:c2pa-content-credentials-and-generative-media-provenance",
+      "type": "publication",
+      "title": "C2PA Content Credentials and Generative Media Provenance",
+      "route": "/publications/c2pa-content-credentials-and-generative-media-provenance/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:multimodal-ai-across-text-image-audio-and-video",
+      "type": "publication",
+      "title": "Multimodal AI Across Text, Image, Audio and Video",
+      "route": "/publications/multimodal-ai-across-text-image-audio-and-video/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:webnn-and-local-ai-in-the-browser",
+      "type": "publication",
+      "title": "WebNN and Local AI in the Browser",
+      "route": "/publications/webnn-and-local-ai-in-the-browser/",
+      "status": "active",
+      "confidence": "published"
     }
   ],
   "edges": [
@@ -62,6 +94,42 @@
       "predicate": "documents",
       "label": "Documents",
       "statement": "How Large Language Models Actually Work situates LLMs within generative AI.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:generative-ai-member-of-collection-knowledge-hub-second-wave",
+      "source": "ea:concept:generative-ai",
+      "target": "ea:collection:knowledge-hub-second-wave",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Generative AI is an explicit member of the Knowledge Hub Second Wave collection.",
+      "confidence": "validated"
+    },
+    {
+      "id": "ear:c2pa-content-credentials-and-generative-media-provenance-documents-generative-ai",
+      "source": "ea:publication:c2pa-content-credentials-and-generative-media-provenance",
+      "target": "ea:concept:generative-ai",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "C2PA Content Credentials and Generative Media Provenance documents Generative AI as one of its declared subjects.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:multimodal-ai-across-text-image-audio-and-video-documents-generative-ai",
+      "source": "ea:publication:multimodal-ai-across-text-image-audio-and-video",
+      "target": "ea:concept:generative-ai",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Multimodal AI Across Text, Image, Audio and Video documents Generative AI as one of its declared subjects.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:webnn-and-local-ai-in-the-browser-documents-generative-ai",
+      "source": "ea:publication:webnn-and-local-ai-in-the-browser",
+      "target": "ea:concept:generative-ai",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "WebNN and Local AI in the Browser documents Generative AI as one of its declared subjects.",
       "confidence": "published"
     }
   ]

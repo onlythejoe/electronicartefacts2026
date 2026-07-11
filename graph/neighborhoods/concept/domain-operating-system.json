@@ -34,6 +34,14 @@
       "route": "/projects/v6/",
       "status": "development",
       "confidence": "observed"
+    },
+    {
+      "id": "ea:collection:knowledge-hub-third-wave",
+      "type": "collection",
+      "title": "Knowledge Hub Third Wave",
+      "route": "/archive/collections/knowledge-hub-third-wave/",
+      "status": "active",
+      "confidence": "published"
     }
   ],
   "edges": [
@@ -62,6 +70,15 @@
       "predicate": "appliesConcept",
       "label": "Applies concept",
       "statement": "Vestiges explores a domain operating system for cultural knowledge, contribution and exchange.",
+      "confidence": "observed"
+    },
+    {
+      "id": "ear:domain-operating-system-member-of-collection-knowledge-hub-third-wave",
+      "source": "ea:concept:domain-operating-system",
+      "target": "ea:collection:knowledge-hub-third-wave",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Domain Operating System is an explicit member of the Knowledge Hub Third Wave collection.",
       "confidence": "observed"
     }
   ]

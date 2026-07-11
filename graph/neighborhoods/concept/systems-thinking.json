@@ -34,6 +34,22 @@
       "route": "/programs/vaste/",
       "status": "development",
       "confidence": "validated"
+    },
+    {
+      "id": "ea:collection:knowledge-hub-third-wave",
+      "type": "collection",
+      "title": "Knowledge Hub Third Wave",
+      "route": "/archive/collections/knowledge-hub-third-wave/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:responsible-ai-governance-for-creative-and-cultural-systems",
+      "type": "publication",
+      "title": "Responsible AI Governance for Creative and Cultural Systems",
+      "route": "/publications/responsible-ai-governance-for-creative-and-cultural-systems/",
+      "status": "active",
+      "confidence": "published"
     }
   ],
   "edges": [
@@ -63,6 +79,24 @@
       "label": "Applies concept",
       "statement": "VASTE applies systems thinking to entities, context, events and projections.",
       "confidence": "observed"
+    },
+    {
+      "id": "ear:systems-thinking-member-of-collection-knowledge-hub-third-wave",
+      "source": "ea:concept:systems-thinking",
+      "target": "ea:collection:knowledge-hub-third-wave",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Systems Thinking is an explicit member of the Knowledge Hub Third Wave collection.",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ear:responsible-ai-governance-for-creative-and-cultural-systems-documents-systems-thinking",
+      "source": "ea:publication:responsible-ai-governance-for-creative-and-cultural-systems",
+      "target": "ea:concept:systems-thinking",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Responsible AI Governance for Creative and Cultural Systems documents Systems Thinking as one of its declared subjects.",
+      "confidence": "published"
     }
   ]
 }

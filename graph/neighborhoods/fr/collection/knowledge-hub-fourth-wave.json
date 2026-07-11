@@ -82,6 +82,86 @@
       "route": "/fr/publications/verifiable-credentials-for-cultural-archives-and-creator-identity/",
       "status": "active",
       "confidence": "published"
+    },
+    {
+      "id": "ea:technology:model-context-protocol-fr",
+      "type": "technology",
+      "title": "Model Context Protocol",
+      "route": "/fr/knowledge/technologies/model-context-protocol/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:technology:c2pa-fr",
+      "type": "technology",
+      "title": "C2PA",
+      "route": "/fr/knowledge/technologies/c2pa/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:technology:webnn-fr",
+      "type": "technology",
+      "title": "WebNN",
+      "route": "/fr/knowledge/technologies/webnn/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:technology:iiif-fr",
+      "type": "technology",
+      "title": "IIIF",
+      "route": "/fr/knowledge/technologies/iiif/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:technology:opentelemetry-fr",
+      "type": "technology",
+      "title": "OpenTelemetry",
+      "route": "/fr/knowledge/technologies/opentelemetry/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ea:concept:ai-agent-fr",
+      "type": "concept",
+      "title": "Agent d'IA",
+      "route": "/fr/knowledge/concepts/ai-agent/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:concept:provenance-fr",
+      "type": "concept",
+      "title": "Provenance",
+      "route": "/fr/knowledge/concepts/provenance/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:concept:digital-preservation-fr",
+      "type": "concept",
+      "title": "Préservation numérique",
+      "route": "/fr/knowledge/concepts/digital-preservation/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:concept:multimodal-ai-fr",
+      "type": "concept",
+      "title": "IA multimodale",
+      "route": "/fr/knowledge/concepts/multimodal-ai/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:concept:contextual-execution-fr",
+      "type": "concept",
+      "title": "Exécution contextuelle",
+      "route": "/fr/knowledge/concepts/contextual-execution/",
+      "status": "active",
+      "confidence": "canonical"
     }
   ],
   "edges": [
@@ -165,6 +245,96 @@
       "label": "Member of collection",
       "statement": "Verifiable Credentials for Cultural Archives and Creator Identity is part of the fourth Knowledge Hub wave.",
       "confidence": "published"
+    },
+    {
+      "id": "ear:model-context-protocol-member-of-collection-knowledge-hub-fourth-wave",
+      "source": "ea:technology:model-context-protocol-fr",
+      "target": "ea:collection:knowledge-hub-fourth-wave-fr",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Model Context Protocol is an explicit member of the Knowledge Hub Fourth Wave collection.",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ear:c2pa-member-of-collection-knowledge-hub-fourth-wave",
+      "source": "ea:technology:c2pa-fr",
+      "target": "ea:collection:knowledge-hub-fourth-wave-fr",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "C2PA is an explicit member of the Knowledge Hub Fourth Wave collection.",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ear:webnn-member-of-collection-knowledge-hub-fourth-wave",
+      "source": "ea:technology:webnn-fr",
+      "target": "ea:collection:knowledge-hub-fourth-wave-fr",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "WebNN is an explicit member of the Knowledge Hub Fourth Wave collection.",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ear:iiif-member-of-collection-knowledge-hub-fourth-wave",
+      "source": "ea:technology:iiif-fr",
+      "target": "ea:collection:knowledge-hub-fourth-wave-fr",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "IIIF is an explicit member of the Knowledge Hub Fourth Wave collection.",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ear:opentelemetry-member-of-collection-knowledge-hub-fourth-wave",
+      "source": "ea:technology:opentelemetry-fr",
+      "target": "ea:collection:knowledge-hub-fourth-wave-fr",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "OpenTelemetry is an explicit member of the Knowledge Hub Fourth Wave collection.",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ear:ai-agent-member-of-collection-knowledge-hub-fourth-wave",
+      "source": "ea:concept:ai-agent-fr",
+      "target": "ea:collection:knowledge-hub-fourth-wave-fr",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "AI Agent is an explicit member of the Knowledge Hub Fourth Wave collection.",
+      "confidence": "validated"
+    },
+    {
+      "id": "ear:provenance-member-of-collection-knowledge-hub-fourth-wave",
+      "source": "ea:concept:provenance-fr",
+      "target": "ea:collection:knowledge-hub-fourth-wave-fr",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Provenance is an explicit member of the Knowledge Hub Fourth Wave collection.",
+      "confidence": "validated"
+    },
+    {
+      "id": "ear:digital-preservation-member-of-collection-knowledge-hub-fourth-wave",
+      "source": "ea:concept:digital-preservation-fr",
+      "target": "ea:collection:knowledge-hub-fourth-wave-fr",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Digital Preservation is an explicit member of the Knowledge Hub Fourth Wave collection.",
+      "confidence": "validated"
+    },
+    {
+      "id": "ear:multimodal-ai-member-of-collection-knowledge-hub-fourth-wave",
+      "source": "ea:concept:multimodal-ai-fr",
+      "target": "ea:collection:knowledge-hub-fourth-wave-fr",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Multimodal AI is an explicit member of the Knowledge Hub Fourth Wave collection.",
+      "confidence": "validated"
+    },
+    {
+      "id": "ear:contextual-execution-member-of-collection-knowledge-hub-fourth-wave",
+      "source": "ea:concept:contextual-execution-fr",
+      "target": "ea:collection:knowledge-hub-fourth-wave-fr",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Contextual Execution is an explicit member of the Knowledge Hub Fourth Wave collection.",
+      "confidence": "canonical"
     }
   ]
 }

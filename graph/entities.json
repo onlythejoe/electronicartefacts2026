@@ -2379,20 +2379,20 @@
     "locale": "fr",
     "translationOf": "ea:concept:contextual-execution",
     "title": "Exécution contextuelle",
-    "summary": "Exécution contextuelle désigne le sujet \"Exécution contextuelle\" dans le graphe public d'Electronic Artefacts. La fiche en précise l'usage, les limites et les relations avec les projets, technologies et publications d'Electronic Artefacts.",
-    "description": "Exécution contextuelle désigne le sujet \"Exécution contextuelle\" dans le graphe public d'Electronic Artefacts. La fiche en précise l'usage, les limites et les relations avec les projets, technologies et publications d'Electronic Artefacts.",
-    "definition": "Exécution contextuelle désigne le sujet \"Exécution contextuelle\" dans le graphe public d'Electronic Artefacts.",
+    "summary": "L’exécution contextuelle évalue une opération à partir de l’identité des entités, des relations du graphe, des permissions, de l’état temporel et du périmètre visé.",
+    "description": "Un concept canonique reliant runtime de graphe, Théorie du runtime, VASTE et systèmes sensibles à l’identité.",
+    "definition": "L’exécution contextuelle consiste à faire de l’identité, de l’état, des permissions, des relations et du contexte opérationnel des contraintes actives sur ce qu’un système peut accomplir.",
     "status": "active",
     "maturity": "research",
     "confidence": "canonical",
     "visibility": "public",
     "publicationClass": "canonical",
     "tags": [
-      "Context",
+      "contexte",
       "Exécution",
       "Runtime",
-      "Identity",
-      "Permissions"
+      "Identité",
+      "permissions"
     ],
     "discipline": [
       "conception de systèmes",
@@ -2404,7 +2404,7 @@
     "identifier": "/fr/id/concept/contextual-execution/",
     "temporality": {
       "creationDate": "2026-06-23",
-      "lastUpdated": "2026-06-25",
+      "lastUpdated": "2026-07-12",
       "releaseDate": "2026-06-25",
       "creationYear": "2026"
     }
@@ -2759,8 +2759,8 @@
     "locale": "fr",
     "translationOf": "ea:concept:graph-runtime",
     "title": "Runtime de graphe",
-    "summary": "Runtime de graphe désigne les environnements d'exécution où les entités, relations, permissions et événements du graphe participent directement au calcul. La fiche en précise l'usage, les limites et les relations avec les projets, technologies et publications d'Electronic Artefacts.",
-    "description": "Runtime de graphe désigne les environnements d'exécution où les entités, relations, permissions et événements du graphe participent directement au calcul. La fiche en précise l'usage, les limites et les relations avec les projets, technologies et publications d'Electronic Artefacts.",
+    "summary": "Electronic Artefacts emploie « runtime de graphe » pour désigner les systèmes où entités, relations, identité, contexte et événements forment une structure exécutable plutôt qu’un modèle de données passif.",
+    "description": "Une définition canonique du runtime de graphe, de son périmètre et de ses liens avec VASTE, Théorie du runtime et V6.",
     "definition": "Runtime de graphe désigne les environnements d'exécution où les entités, relations, permissions et événements du graphe participent directement au calcul.",
     "status": "active",
     "maturity": "research",
@@ -2768,21 +2768,21 @@
     "visibility": "public",
     "publicationClass": "canonical",
     "tags": [
-      "Graph",
+      "Graphe",
       "Runtime",
-      "Context",
-      "Identity",
+      "contexte",
+      "Identité",
       "Exécution"
     ],
     "discipline": [
       "architecture logicielle",
-      "Knowledge systems"
+      "systèmes de connaissance"
     ],
     "route": "/fr/knowledge/concepts/graph-runtime/",
     "identifier": "/fr/id/concept/graph-runtime/",
     "temporality": {
       "creationDate": "2024-01-01",
-      "lastUpdated": "2026-06-25",
+      "lastUpdated": "2026-07-12",
       "releaseDate": "2026-06-25",
       "creationYear": "2024"
     }
@@ -2906,9 +2906,9 @@
     "locale": "fr",
     "translationOf": "ea:concept:knowledge-graph",
     "title": "Graphe de connaissances",
-    "summary": "Graphe de connaissances désigne les graphes de connaissances qui structurent des entités, des relations, des sources et des preuves. La fiche en précise l'usage, les limites et les relations avec les projets, technologies et publications d'Electronic Artefacts.",
-    "description": "Graphe de connaissances désigne les graphes de connaissances qui structurent des entités, des relations, des sources et des preuves. La fiche en précise l'usage, les limites et les relations avec les projets, technologies et publications d'Electronic Artefacts.",
-    "definition": "Graphe de connaissances désigne les graphes de connaissances qui structurent des entités, des relations, des sources et des preuves.",
+    "summary": "Electronic Artefacts emploie le graphe de connaissances comme modèle de publication reliant concepts, projets, programmes, sources et artefacts par des identités stables et des relations explicites.",
+    "description": "Une définition canonique du graphe de connaissances appliquée à la publication culturelle, technique et scientifique.",
+    "definition": "Un graphe de connaissances est un réseau structuré d’entités, d’identifiants et de relations typées qui rend les connaissances navigables, interrogeables et réutilisables.",
     "status": "active",
     "maturity": "research",
     "confidence": "canonical",
@@ -2916,22 +2916,22 @@
     "publicationClass": "canonical",
     "tags": [
       "graphe de connaissances",
-      "Semantic Web",
-      "Entities",
+      "Web sémantique",
+      "entités",
       "Relations",
-      "Search"
+      "Recherche"
     ],
     "discipline": [
       "systèmes de connaissance",
       "architecture de l’information",
       "développement web",
-      "Research"
+      "Recherche"
     ],
     "route": "/fr/knowledge/concepts/knowledge-graph/",
     "identifier": "/fr/id/concept/knowledge-graph/",
     "temporality": {
       "creationDate": "2026-06-23",
-      "lastUpdated": "2026-06-25",
+      "lastUpdated": "2026-07-12",
       "releaseDate": "2026-06-25",
       "creationYear": "2026"
     }

@@ -50,6 +50,14 @@
       "route": "/fr/archive/collections/knowledge-hub-second-wave/",
       "status": "active",
       "confidence": "published"
+    },
+    {
+      "id": "ea:concept:knowledge-graph-fr",
+      "type": "concept",
+      "title": "Graphe de connaissances",
+      "route": "/fr/knowledge/concepts/knowledge-graph/",
+      "status": "active",
+      "confidence": "canonical"
     }
   ],
   "edges": [
@@ -96,6 +104,24 @@
       "predicate": "hasPart",
       "label": "Has part",
       "statement": "Knowledge Hub Second Wave includes Personal Knowledge Systems and Digital Gardens as a core article.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:personal-knowledge-systems-and-digital-gardens-member-of-collection-knowledge-hub-second-wave",
+      "source": "ea:publication:personal-knowledge-systems-and-digital-gardens-fr",
+      "target": "ea:collection:knowledge-hub-second-wave-fr",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Personal Knowledge Systems and Digital Gardens is an explicit member of the Knowledge Hub Second Wave collection.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:personal-knowledge-systems-and-digital-gardens-documents-knowledge-graph",
+      "source": "ea:publication:personal-knowledge-systems-and-digital-gardens-fr",
+      "target": "ea:concept:knowledge-graph-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Personal Knowledge Systems and Digital Gardens documents Knowledge Graph as one of its declared subjects.",
       "confidence": "published"
     }
   ]

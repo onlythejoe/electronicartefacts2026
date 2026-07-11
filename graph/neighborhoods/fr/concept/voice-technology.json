@@ -34,6 +34,14 @@
       "route": "/fr/research/questions/speech-dataset-reproducibility/",
       "status": "active",
       "confidence": "published"
+    },
+    {
+      "id": "ea:collection:voice-capture-studio-fr",
+      "type": "collection",
+      "title": "Collection Voice Capture Studio",
+      "route": "/fr/archive/collections/voice-capture-studio/",
+      "status": "active",
+      "confidence": "published"
     }
   ],
   "edges": [
@@ -63,6 +71,15 @@
       "label": "Applies concept",
       "statement": "The research question \"How can speech datasets become reproducible, structured and privacy-first?\" applies Voice Technology as part of its current model.",
       "confidence": "published"
+    },
+    {
+      "id": "ear:voice-technology-member-of-collection-voice-capture-studio",
+      "source": "ea:concept:voice-technology-fr",
+      "target": "ea:collection:voice-capture-studio-fr",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Voice Technology is an explicit member of the Voice Capture Studio Collection collection.",
+      "confidence": "validated"
     }
   ]
 }

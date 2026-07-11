@@ -42,6 +42,14 @@
       "route": "/fr/publications/web-audio-and-browser-based-sound-systems/",
       "status": "active",
       "confidence": "published"
+    },
+    {
+      "id": "ea:collection:knowledge-hub-foundations-fr",
+      "type": "collection",
+      "title": "Fondations du hub de connaissance",
+      "route": "/fr/archive/collections/knowledge-hub-foundations/",
+      "status": "active",
+      "confidence": "published"
     }
   ],
   "edges": [
@@ -80,6 +88,15 @@
       "label": "Documents",
       "statement": "Web Audio and Browser-Based Sound Systems connects browser sound tools to signal archaeology.",
       "confidence": "published"
+    },
+    {
+      "id": "ear:signal-archaeology-member-of-collection-knowledge-hub-foundations",
+      "source": "ea:concept:signal-archaeology-fr",
+      "target": "ea:collection:knowledge-hub-foundations-fr",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Signal Archaeology is an explicit member of the Knowledge Hub Foundations collection.",
+      "confidence": "observed"
     }
   ]
 }

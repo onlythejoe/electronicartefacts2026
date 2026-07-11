@@ -50,6 +50,14 @@
       "route": "/archive/collections/knowledge-hub-fourth-wave/",
       "status": "active",
       "confidence": "published"
+    },
+    {
+      "id": "ea:concept:event-driven-architecture",
+      "type": "concept",
+      "title": "Event-Driven Architecture",
+      "route": "/knowledge/concepts/event-driven-architecture/",
+      "status": "active",
+      "confidence": "canonical"
     }
   ],
   "edges": [
@@ -96,6 +104,24 @@
       "predicate": "memberOfCollection",
       "label": "Member of collection",
       "statement": "Observability for AI Agents and Tool-Calling Systems is part of the fourth Knowledge Hub wave.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:observability-for-ai-agents-and-tool-calling-systems-documents-model-context-protocol",
+      "source": "ea:publication:observability-for-ai-agents-and-tool-calling-systems",
+      "target": "ea:technology:model-context-protocol",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Observability for AI Agents and Tool-Calling Systems documents Model Context Protocol as one of its declared subjects.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:observability-for-ai-agents-and-tool-calling-systems-documents-event-driven-architecture",
+      "source": "ea:publication:observability-for-ai-agents-and-tool-calling-systems",
+      "target": "ea:concept:event-driven-architecture",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Observability for AI Agents and Tool-Calling Systems documents Event-Driven Architecture as one of its declared subjects.",
       "confidence": "published"
     }
   ]

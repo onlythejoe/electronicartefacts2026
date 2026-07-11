@@ -18,6 +18,14 @@
       "route": "/publications/redis-streams-for-orchestration/",
       "status": "active",
       "confidence": "published"
+    },
+    {
+      "id": "ea:collection:knowledge-hub-third-wave",
+      "type": "collection",
+      "title": "Knowledge Hub Third Wave",
+      "route": "/archive/collections/knowledge-hub-third-wave/",
+      "status": "active",
+      "confidence": "published"
     }
   ],
   "edges": [
@@ -28,6 +36,24 @@
       "predicate": "usesTechnology",
       "label": "Uses technology",
       "statement": "Redis Streams for Orchestration documents Redis Streams as its implementation primitive.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:redis-streams-member-of-collection-knowledge-hub-third-wave",
+      "source": "ea:technology:redis-streams",
+      "target": "ea:collection:knowledge-hub-third-wave",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Redis Streams is an explicit member of the Knowledge Hub Third Wave collection.",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ear:redis-streams-for-orchestration-documents-redis-streams",
+      "source": "ea:publication:redis-streams-for-orchestration",
+      "target": "ea:technology:redis-streams",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Redis Streams for Orchestration documents Redis Streams as one of its declared subjects.",
       "confidence": "published"
     }
   ]

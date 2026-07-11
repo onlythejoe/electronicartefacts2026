@@ -58,6 +58,14 @@
       "route": "/fr/research/questions/first-conversation-understanding/",
       "status": "active",
       "confidence": "observed"
+    },
+    {
+      "id": "ea:concept:large-language-model-fr",
+      "type": "concept",
+      "title": "Grand modèle de langage",
+      "route": "/fr/knowledge/concepts/large-language-model/",
+      "status": "active",
+      "confidence": "canonical"
     }
   ],
   "edges": [
@@ -114,6 +122,24 @@
       "label": "Documents",
       "statement": "AI Agents vs AI Workflows documents context, evidence or vocabulary for the research question \"How can an AI understand someone during its very first conversation?\".",
       "confidence": "observed"
+    },
+    {
+      "id": "ear:ai-agents-vs-ai-workflows-member-of-collection-knowledge-hub-third-wave",
+      "source": "ea:publication:ai-agents-vs-ai-workflows-fr",
+      "target": "ea:collection:knowledge-hub-third-wave-fr",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "AI Agents vs AI Workflows is an explicit member of the Knowledge Hub Third Wave collection.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:ai-agents-vs-ai-workflows-documents-large-language-model",
+      "source": "ea:publication:ai-agents-vs-ai-workflows-fr",
+      "target": "ea:concept:large-language-model-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "AI Agents vs AI Workflows documents Large Language Model as one of its declared subjects.",
+      "confidence": "published"
     }
   ]
 }

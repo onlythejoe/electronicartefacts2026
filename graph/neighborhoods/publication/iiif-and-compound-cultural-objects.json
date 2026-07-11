@@ -42,6 +42,22 @@
       "route": "/archive/collections/knowledge-hub-fourth-wave/",
       "status": "active",
       "confidence": "published"
+    },
+    {
+      "id": "ea:concept:linked-data",
+      "type": "concept",
+      "title": "Linked Data",
+      "route": "/knowledge/concepts/linked-data/",
+      "status": "active",
+      "confidence": "validated"
+    },
+    {
+      "id": "ea:concept:metadata",
+      "type": "concept",
+      "title": "Metadata",
+      "route": "/knowledge/concepts/metadata/",
+      "status": "active",
+      "confidence": "canonical"
     }
   ],
   "edges": [
@@ -79,6 +95,24 @@
       "predicate": "memberOfCollection",
       "label": "Member of collection",
       "statement": "IIIF and Compound Cultural Objects is part of the fourth Knowledge Hub wave.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:iiif-and-compound-cultural-objects-documents-linked-data",
+      "source": "ea:publication:iiif-and-compound-cultural-objects",
+      "target": "ea:concept:linked-data",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "IIIF and Compound Cultural Objects documents Linked Data as one of its declared subjects.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:iiif-and-compound-cultural-objects-documents-metadata",
+      "source": "ea:publication:iiif-and-compound-cultural-objects",
+      "target": "ea:concept:metadata",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "IIIF and Compound Cultural Objects documents Metadata as one of its declared subjects.",
       "confidence": "published"
     }
   ]

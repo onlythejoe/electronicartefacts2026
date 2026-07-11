@@ -628,7 +628,10 @@
                 ${researchNodeMarkup(active)}
               </div>
             </div>
-            <a class="tag research-atlas__graph-link" href="${esc(graphRouteForQuestion(active))}" target="_blank" rel="noreferrer" data-research-atlas-graph-link>${esc(translate("View full graph"))}</a>
+            <a class="tag research-atlas__graph-link" href="${esc(graphRouteForQuestion(active))}" target="_blank" rel="noreferrer" data-research-atlas-graph-link aria-label="${esc(translate("View full graph"))}">
+              <span class="research-atlas__graph-link-icon" aria-hidden="true"><svg viewBox="0 0 24 24" focusable="false"><circle cx="6" cy="7" r="2.2"></circle><circle cx="18" cy="6" r="2.2"></circle><circle cx="12" cy="18" r="2.2"></circle><path d="m7.9 8.1 3 7.8M16.1 7.3l-3 8.6M8.2 6.8l7.6-.6"></path></svg></span>
+              <span class="research-atlas__graph-link-label">${esc(translate("View full graph"))}</span>
+            </a>
           </aside>
           <article class="research-atlas__panel" data-research-atlas-panel aria-live="polite">
             ${researchQuestionBody(active, 0, questions)}
@@ -813,7 +816,9 @@
       }
 
       const { ctx, width, height, centerX, centerY, minDim } = context;
-      const t = performance.now() * 0.001;
+      const isResearchAtlasGraph = context.surface.classList.contains("graph-surface--research-atlas");
+      const compactGraph = isResearchAtlasGraph && minDim < 380;
+      const t = compactGraph ? 0 : performance.now() * 0.001;
 
       ctx.clearRect(0, 0, width, height);
 
@@ -839,8 +844,6 @@
         ctx.stroke();
       }
 
-      const isResearchAtlasGraph = context.surface.classList.contains("graph-surface--research-atlas");
-      const compactGraph = isResearchAtlasGraph && minDim < 380;
       const orbit1 = minDim * (compactGraph ? 0.43 : 0.38);
       const orbit2 = minDim * (compactGraph ? 0.3 : 0.22);
       ctx.strokeStyle = "rgba(255,255,255,0.08)";

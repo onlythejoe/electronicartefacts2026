@@ -6,10 +6,10 @@
       "@id": "https://electronicartefacts.com/fr/knowledge/concepts/contextual-execution/#webpage",
       "url": "https://electronicartefacts.com/fr/knowledge/concepts/contextual-execution/",
       "name": "Exécution contextuelle",
-      "description": "Exécution contextuelle désigne le sujet \"Exécution contextuelle\" dans le graphe public d'Electronic Artefacts. La fiche en précise l'usage, les limites et les relations avec les projets, technologies et publications d'Electronic Artefacts.",
+      "description": "Un concept canonique reliant runtime de graphe, Théorie du runtime, VASTE et systèmes sensibles à l’identité.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
-      "dateModified": "2026-06-25",
+      "dateModified": "2026-07-12",
       "primaryImageOfPage": {
         "@type": "ImageObject",
         "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-social.jpg",
@@ -34,8 +34,8 @@
       "@id": "https://electronicartefacts.com/fr/id/concept/contextual-execution/",
       "identifier": "ea:concept:contextual-execution-fr",
       "name": "Exécution contextuelle",
-      "abstract": "Exécution contextuelle désigne le sujet \"Exécution contextuelle\" dans le graphe public d'Electronic Artefacts. La fiche en précise l'usage, les limites et les relations avec les projets, technologies et publications d'Electronic Artefacts.",
-      "description": "Exécution contextuelle désigne le sujet \"Exécution contextuelle\" dans le graphe public d'Electronic Artefacts.",
+      "abstract": "L’exécution contextuelle évalue une opération à partir de l’identité des entités, des relations du graphe, des permissions, de l’état temporel et du périmètre visé.",
+      "description": "L’exécution contextuelle consiste à faire de l’identité, de l’état, des permissions, des relations et du contexte opérationnel des contraintes actives sur ce qu’un système peut accomplir.",
       "url": "https://electronicartefacts.com/fr/knowledge/concepts/contextual-execution/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/knowledge/concepts/contextual-execution/#webpage"
@@ -56,11 +56,11 @@
         }
       ],
       "keywords": [
-        "Context",
+        "contexte",
         "Exécution",
         "Runtime",
-        "Identity",
-        "Permissions",
+        "Identité",
+        "permissions",
         "conception de systèmes",
         "programmation",
         "systèmes de connaissance",
@@ -69,7 +69,7 @@
       "inLanguage": "fr",
       "dateCreated": "2026-06-23",
       "datePublished": "2026-06-25",
-      "dateModified": "2026-06-25",
+      "dateModified": "2026-07-12",
       "publisher": {
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
@@ -77,7 +77,7 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 67,
+      "wordCount": 340,
       "inDefinedTermSet": "https://electronicartefacts.com/knowledge/concepts/",
       "termCode": "contextual-execution"
     },

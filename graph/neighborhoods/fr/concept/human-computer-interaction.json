@@ -66,6 +66,22 @@
       "route": "/fr/research/questions/first-conversation-understanding/",
       "status": "active",
       "confidence": "observed"
+    },
+    {
+      "id": "ea:collection:knowledge-hub-second-wave-fr",
+      "type": "collection",
+      "title": "Hub de connaissance, deuxième vague",
+      "route": "/fr/archive/collections/knowledge-hub-second-wave/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:collection:voice-capture-studio-fr",
+      "type": "collection",
+      "title": "Collection Voice Capture Studio",
+      "route": "/fr/archive/collections/voice-capture-studio/",
+      "status": "active",
+      "confidence": "published"
     }
   ],
   "edges": [
@@ -131,6 +147,24 @@
       "label": "Applies concept",
       "statement": "The research question \"How can an AI understand someone during its very first conversation?\" applies Human Computer Interaction as part of its current model.",
       "confidence": "observed"
+    },
+    {
+      "id": "ear:human-computer-interaction-member-of-collection-knowledge-hub-second-wave",
+      "source": "ea:concept:human-computer-interaction-fr",
+      "target": "ea:collection:knowledge-hub-second-wave-fr",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Human Computer Interaction is an explicit member of the Knowledge Hub Second Wave collection.",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ear:human-computer-interaction-member-of-collection-voice-capture-studio",
+      "source": "ea:concept:human-computer-interaction-fr",
+      "target": "ea:collection:voice-capture-studio-fr",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Human Computer Interaction is an explicit member of the Voice Capture Studio Collection collection.",
+      "confidence": "canonical"
     }
   ]
 }

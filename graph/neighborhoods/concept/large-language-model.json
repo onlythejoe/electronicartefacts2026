@@ -18,6 +18,38 @@
       "route": "/publications/how-large-language-models-actually-work/",
       "status": "active",
       "confidence": "published"
+    },
+    {
+      "id": "ea:collection:knowledge-hub-third-wave",
+      "type": "collection",
+      "title": "Knowledge Hub Third Wave",
+      "route": "/archive/collections/knowledge-hub-third-wave/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:ai-agents-vs-ai-workflows",
+      "type": "publication",
+      "title": "AI Agents vs AI Workflows",
+      "route": "/publications/ai-agents-vs-ai-workflows/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:local-and-open-source-ai-systems",
+      "type": "publication",
+      "title": "Local and Open Source AI Systems",
+      "route": "/publications/local-and-open-source-ai-systems/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:retrieval-augmented-generation-and-knowledge-systems",
+      "type": "publication",
+      "title": "Retrieval-Augmented Generation and Knowledge Systems",
+      "route": "/publications/retrieval-augmented-generation-and-knowledge-systems/",
+      "status": "active",
+      "confidence": "published"
     }
   ],
   "edges": [
@@ -28,6 +60,42 @@
       "predicate": "documents",
       "label": "Documents",
       "statement": "How Large Language Models Actually Work documents the core LLM concept.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:large-language-model-member-of-collection-knowledge-hub-third-wave",
+      "source": "ea:concept:large-language-model",
+      "target": "ea:collection:knowledge-hub-third-wave",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Large Language Model is an explicit member of the Knowledge Hub Third Wave collection.",
+      "confidence": "canonical"
+    },
+    {
+      "id": "ear:ai-agents-vs-ai-workflows-documents-large-language-model",
+      "source": "ea:publication:ai-agents-vs-ai-workflows",
+      "target": "ea:concept:large-language-model",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "AI Agents vs AI Workflows documents Large Language Model as one of its declared subjects.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:local-and-open-source-ai-systems-documents-large-language-model",
+      "source": "ea:publication:local-and-open-source-ai-systems",
+      "target": "ea:concept:large-language-model",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Local and Open Source AI Systems documents Large Language Model as one of its declared subjects.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:retrieval-augmented-generation-and-knowledge-systems-documents-large-language-model",
+      "source": "ea:publication:retrieval-augmented-generation-and-knowledge-systems",
+      "target": "ea:concept:large-language-model",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Retrieval-Augmented Generation and Knowledge Systems documents Large Language Model as one of its declared subjects.",
       "confidence": "published"
     }
   ]

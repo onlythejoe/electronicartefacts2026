@@ -58,6 +58,14 @@
       "route": "/archive/collections/knowledge-hub-third-wave/",
       "status": "active",
       "confidence": "published"
+    },
+    {
+      "id": "ea:concept:event-driven-architecture",
+      "type": "concept",
+      "title": "Event-Driven Architecture",
+      "route": "/knowledge/concepts/event-driven-architecture/",
+      "status": "active",
+      "confidence": "canonical"
     }
   ],
   "edges": [
@@ -113,6 +121,24 @@
       "predicate": "hasPart",
       "label": "Has part",
       "statement": "Knowledge Hub Third Wave includes Runtime Engines and Domain Operating Systems.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:runtime-engines-and-domain-operating-systems-member-of-collection-knowledge-hub-third-wave",
+      "source": "ea:publication:runtime-engines-and-domain-operating-systems",
+      "target": "ea:collection:knowledge-hub-third-wave",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Runtime Engines and Domain Operating Systems is an explicit member of the Knowledge Hub Third Wave collection.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:runtime-engines-and-domain-operating-systems-documents-event-driven-architecture",
+      "source": "ea:publication:runtime-engines-and-domain-operating-systems",
+      "target": "ea:concept:event-driven-architecture",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Runtime Engines and Domain Operating Systems documents Event-Driven Architecture as one of its declared subjects.",
       "confidence": "published"
     }
   ]

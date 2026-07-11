@@ -920,7 +920,7 @@
 
   const selectedWorksCard = (item, options = {}) => {
     if (!item) return "";
-    const href = entryHrefFor(item);
+    const href = options.href || entryHrefFor(item);
     const featured = options.featured !== false;
     const compact = !featured;
     const isVestiges = item.id === "vestiges";
@@ -954,7 +954,7 @@
             ${projectButterflyBubble(item, "card")}
           </div>
         </div>
-        ${cardMediaPlate(item, { kicker: featured ? "Lead visual" : "Visual", caption: !isVestiges, action: options.mediaAction })}
+        ${cardMediaPlate(item, { kicker: featured ? "Lead visual" : "Visual", caption: featured ? false : !isVestiges, action: options.mediaAction })}
         ${cardCopy(item.summary || item.description, featured ? 2 : 1)}
         <p class="project-card__editorial-note">${esc(projectReadAs(item))}</p>
         ${signalStrip(item)}
@@ -1247,7 +1247,7 @@
       fetchPriority: "low",
       tags: homeCardPills(palimpsests),
       actions: [
-        { label: "Discover Palimpsests", href: "./palimpsests.html" },
+        { label: "Discover", href: "./palimpsests.html" },
         { label: "Browse archive", href: "./archive.html" },
         { label: "Start a Collaboration", href: "./contact.html" },
       ],
@@ -1367,6 +1367,7 @@
             <div class="selected-works-panel__stack-grid">
               ${supporting.map((item) => selectedWorksCard(item, {
                 featured: false,
+                href: item.id === "forge" ? entryHrefFor(item) : undefined,
                 actions: item.id === "oeil-de-meg"
                   ? [
                     { label: "Discover L’Œil de Meg", href: "https://oeildemeg.fr/", target: "_blank" },

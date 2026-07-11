@@ -50,6 +50,14 @@
       "route": "/fr/archive/collections/knowledge-hub-foundations/",
       "status": "active",
       "confidence": "published"
+    },
+    {
+      "id": "ea:concept:knowledge-graph-fr",
+      "type": "concept",
+      "title": "Graphe de connaissances",
+      "route": "/fr/knowledge/concepts/knowledge-graph/",
+      "status": "active",
+      "confidence": "canonical"
     }
   ],
   "edges": [
@@ -96,6 +104,24 @@
       "predicate": "hasPart",
       "label": "Has part",
       "statement": "Knowledge Hub Foundations includes Digital Preservation and Living Archives as a foundation article.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:digital-preservation-and-living-archives-member-of-collection-knowledge-hub-foundations",
+      "source": "ea:publication:digital-preservation-and-living-archives-fr",
+      "target": "ea:collection:knowledge-hub-foundations-fr",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Digital Preservation and Living Archives is an explicit member of the Knowledge Hub Foundations collection.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:digital-preservation-and-living-archives-documents-knowledge-graph",
+      "source": "ea:publication:digital-preservation-and-living-archives-fr",
+      "target": "ea:concept:knowledge-graph-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Digital Preservation and Living Archives documents Knowledge Graph as one of its declared subjects.",
       "confidence": "published"
     }
   ]

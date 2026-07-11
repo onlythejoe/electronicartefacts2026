@@ -50,6 +50,14 @@
       "route": "/fr/programs/vaste/",
       "status": "development",
       "confidence": "validated"
+    },
+    {
+      "id": "ea:publication:hypertext-and-augmented-knowledge-systems-fr",
+      "type": "publication",
+      "title": "Hypertexte et systèmes de connaissance augmentée",
+      "route": "/fr/publications/hypertext-and-augmented-knowledge-systems/",
+      "status": "active",
+      "confidence": "published"
     }
   ],
   "edges": [
@@ -97,6 +105,15 @@
       "label": "Derived from",
       "statement": "VASTE derives its runtime primitives and contextual execution questions from the Runtime Theory research field.",
       "confidence": "validated"
+    },
+    {
+      "id": "ear:hypertext-and-augmented-knowledge-systems-documents-runtime-theory",
+      "source": "ea:publication:hypertext-and-augmented-knowledge-systems-fr",
+      "target": "ea:researchField:runtime-theory-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "Hypertext and Augmented Knowledge Systems documents Runtime Theory as one of its declared subjects.",
+      "confidence": "published"
     }
   ]
 }
