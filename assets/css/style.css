@@ -4255,6 +4255,123 @@ body:has(.detail-hero[data-entry-id="oeil-de-meg"])::after {
   margin-top: 0.2rem;
 }
 
+/* Forge is deliberately blue: a precise, internal production surface rather than another generic program card. */
+body[data-entry-id="forge"] {
+  --project-rgb: 96, 165, 250;
+  --bg: #06101f;
+  --bg-elevated: rgba(8, 25, 46, 0.86);
+  --surface: rgba(104, 170, 255, 0.055);
+  --surface-strong: rgba(104, 170, 255, 0.1);
+  --border: rgba(147, 197, 253, 0.18);
+  --border-strong: rgba(147, 197, 253, 0.36);
+  --accent: #93c5fd;
+  --accent-soft: rgba(96, 165, 250, 0.2);
+  --shadow: 0 28px 70px rgba(1, 12, 28, 0.52);
+  --shadow-soft: 0 16px 30px rgba(1, 12, 28, 0.34);
+  background:
+    radial-gradient(circle at 80% 3%, rgba(59, 130, 246, 0.3), transparent 27rem),
+    radial-gradient(circle at 9% 38%, rgba(14, 116, 144, 0.18), transparent 34rem),
+    linear-gradient(180deg, #0b1b32 0%, var(--bg) 54%, #030a15 100%);
+}
+
+body[data-entry-id="forge"]::before {
+  background-image:
+    linear-gradient(rgba(147, 197, 253, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(147, 197, 253, 0.04) 1px, transparent 1px);
+  opacity: 0.54;
+}
+
+body[data-entry-id="forge"] .site-main {
+  gap: clamp(1.7rem, 3.5vw, 3rem);
+  background:
+    radial-gradient(circle at 94% 22%, rgba(59, 130, 246, 0.13), transparent 26rem),
+    radial-gradient(circle at 4% 74%, rgba(14, 116, 144, 0.1), transparent 32rem);
+}
+
+body[data-entry-id="forge"] :is(.shell-header.zone-card, .zone-card, .panel) {
+  border-color: rgba(147, 197, 253, 0.18);
+  background:
+    linear-gradient(145deg, rgba(19, 48, 84, 0.78), rgba(7, 20, 39, 0.86)),
+    rgba(6, 16, 31, 0.78);
+  box-shadow:
+    0 18px 44px rgba(1, 12, 28, 0.25),
+    inset 0 1px 0 rgba(191, 219, 254, 0.08);
+}
+
+body[data-entry-id="forge"] .shell-header.zone-card {
+  background:
+    linear-gradient(145deg, rgba(20, 49, 84, 0.9), rgba(7, 19, 37, 0.94)),
+    rgba(6, 16, 31, 0.9);
+}
+
+body[data-entry-id="forge"] :is(.chip, .tag, .metadata-row, .relation-item, .status-badge) {
+  border-color: rgba(147, 197, 253, 0.28);
+  background: rgba(30, 64, 112, 0.3);
+}
+
+body[data-entry-id="forge"] :is(.button--primary, .site-nav a[aria-current="page"]) {
+  border-color: rgba(191, 219, 254, 0.74);
+  background: linear-gradient(180deg, #dbeafe, #93c5fd);
+  color: #071426;
+}
+
+body[data-entry-id="forge"] :is(.button--secondary, .tag:hover, .tag:focus-visible, .button:hover, .button:focus-visible) {
+  border-color: rgba(191, 219, 254, 0.58);
+  background: rgba(59, 130, 246, 0.28);
+}
+
+.detail-hero[data-entry-id="forge"] {
+  border-color: rgba(147, 197, 253, 0.38);
+  background:
+    radial-gradient(circle at 89% 6%, rgba(96, 165, 250, 0.34), transparent 31%),
+    radial-gradient(circle at 12% 88%, rgba(14, 116, 144, 0.22), transparent 38%),
+    linear-gradient(145deg, #153b69, #0a203c 58%, #06152a);
+}
+
+.forge-signal {
+  display: grid;
+  gap: clamp(1rem, 2vw, 1.45rem);
+  padding: clamp(1.15rem, 2.4vw, 1.7rem);
+  border: 1px solid rgba(147, 197, 253, 0.28);
+  border-radius: var(--radius-xl);
+  background:
+    radial-gradient(circle at 92% 4%, rgba(96, 165, 250, 0.24), transparent 31%),
+    linear-gradient(145deg, rgba(20, 55, 98, 0.92), rgba(7, 24, 47, 0.94));
+  box-shadow: var(--shadow);
+}
+
+.forge-signal__head {
+  max-width: 50rem;
+}
+
+.forge-signal__head .card__title {
+  max-width: 20ch;
+}
+
+.forge-signal__grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--card-grid-gap);
+}
+
+.forge-signal__card {
+  min-width: 0;
+  border-color: rgba(147, 197, 253, 0.22);
+  background:
+    linear-gradient(180deg, rgba(147, 197, 253, 0.1), rgba(255, 255, 255, 0.025)),
+    rgba(4, 18, 37, 0.64);
+}
+
+.forge-signal__card .tag-cluster {
+  margin-top: auto;
+}
+
+@media (max-width: 60rem) {
+  .forge-signal__grid {
+    grid-template-columns: 1fr;
+  }
+}
+
 .project-mark-bubble {
   --bubble-offset-x: 18%;
   --bubble-offset-y: -18%;
@@ -14739,6 +14856,26 @@ body:has(.detail-hero[data-entry-id="oeil-de-meg"]) .consent-banner__copy .tag:f
 
 @media (max-width: 64rem) {
   .shell-header.zone-card .language-switcher__menu {
-    top: calc(100% + 6.8rem);
+    /*
+     * The header is transform-positioned, so a fixed child is contained by
+     * the header rather than the viewport.  Use that containment deliberately:
+     * the picker spans the header width below it instead of expanding from the
+     * globe over the navigation and the reading surface.
+     */
+    position: fixed;
+    inset: calc(100% + 0.72rem) 0 auto;
+    width: auto;
+    min-width: 0;
+    transform: none;
+    transform-origin: 50% -0.35rem;
+    background:
+      linear-gradient(145deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.045) 42%, rgba(0, 0, 0, 0.5)),
+      rgba(8, 8, 8, 0.96);
+  }
+
+  .shell-header.zone-card .language-switcher__menu::before {
+    right: auto;
+    left: 50%;
+    transform: translateX(-50%) rotate(45deg);
   }
 }

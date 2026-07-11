@@ -2185,14 +2185,12 @@
     if (item.kind !== "program") return "";
 
     const relations = item.relations || {};
-    const networkItems = [
-      ...(relations.origin || []),
-      ...(relations.parent || []),
+    const networkItems = [...new Set([
       ...(relations.children || []),
       ...(relations.dependencies || []),
       ...(relations.influences || []),
       ...(relations.relatedTo || []),
-    ];
+    ])];
     const primaryLink = item.links?.[0] || null;
     const signatureTags = [
       item.type,
@@ -2244,7 +2242,31 @@
       buyerFit: ["Partners", "Technical teams", "Cultural projects", "Product owners"],
     };
 
+    const forgeCapabilities = item.id === "forge" && Array.isArray(item.forgeCapabilities)
+      ? `
+        <section class="forge-signal" aria-label="Forge production capabilities">
+          <div class="section-head forge-signal__head">
+            <p class="card__meta">Forge signal</p>
+            <h2 class="card__title">From controlled input to a releasable artefact.</h2>
+            <p class="card__copy">Forge is not a generic generator. It is an internal production engine: each pipeline declares an input, performs visible transformations and retains the evidence needed to judge its output.</p>
+          </div>
+          <div class="forge-signal__grid">
+            ${item.forgeCapabilities.map((capability, index) => `
+              <article class="panel forge-signal__card">
+                <p class="card__meta">0${index + 1} / ${esc(capability.label)}</p>
+                <h3 class="card__title">${esc(capability.title)}</h3>
+                <p class="card__copy">${esc(capability.copy)}</p>
+                ${tagRow(capability.tags || [], { compact: true })}
+                ${capability.label === "Next research line" ? '<div class="link-row"><a class="tag" href="./project.html?id=voice-capture-studio">Open Voice Capture Studio</a></div>' : ""}
+              </article>
+            `).join("")}
+          </div>
+        </section>
+      `
+      : "";
+
     return `
+      ${forgeCapabilities}
       <section class="detail-grid program-detail-grid">
         <article class="panel program-detail-panel program-detail-panel--lead">
           <div class="section-head">
@@ -2284,16 +2306,16 @@
           <p class="card__copy">Mediums, disciplines and tags help compare this program with nearby systems.</p>
           ${tagRow([...(item.tags || []), ...(item.medium || []), ...(item.discipline || [])].filter(Boolean), { compact: true })}
         </article>
-        <article class="panel program-detail-panel">
+        ${networkItems.length ? `<article class="panel program-detail-panel">
           <p class="card__meta">Nearby systems</p>
-          <p class="card__copy">Works connected through origin, lineage, dependency or influence.</p>
+          <p class="card__copy">Direct systems connected through an explicit working relationship.</p>
           <div class="link-row">
             ${resolveIds(networkItems)
               .slice(0, 8)
               .map((entry) => `<a class="tag" href="${esc(entryHref(entry))}">${esc(entry.title)}</a>`)
               .join("")}
           </div>
-        </article>
+        </article>` : ""}
       </section>
       <section class="detail-grid program-commercial-detail">
         <article class="panel program-detail-panel program-detail-panel--lead">

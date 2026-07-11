@@ -547,16 +547,16 @@ window.EA_ENTITIES = {
     {
       "id": "forge",
       "title": "Forge",
-      "subtitle": "Creative Production System",
+      "subtitle": "Artefact Pipeline Engine",
       "kind": "program",
-      "type": "Creative Production System",
+      "type": "Internal Rust Production Engine",
       "status": "research",
-      "statusLabel": "Active Research",
+      "statusLabel": "Internal / Active R&D",
       "maturity": "research",
       "confidence": "observed",
       "visibility": "public",
-      "domain": "Artefact Production",
-      "systemGroup": "Production Systems",
+      "domain": "Artefact Pipelines",
+      "systemGroup": "Rust Production Runtime",
       "temporality": {
         "creationYear": "2026",
         "creationDate": "2026-01-01",
@@ -564,62 +564,43 @@ window.EA_ENTITIES = {
         "lastUpdated": "2026-06-12",
         "era": "foundation"
       },
-      "description": "Forge is an experimental software system dedicated to the creation, transformation and refinement of digital artefacts. The project investigates highly scalable production pipelines capable of generating multiple categories of artefacts from a shared architecture.",
-      "summary": "Experimental production system for artefact generation and refinement.",
+      "description": "Forge is Electronic Artefacts’ internal Rust engine for reproducible artefact pipelines. It turns controlled inputs into inspectable outputs, beginning with video-to-3D object reconstruction and quality-gated refinement.",
+      "summary": "Internal Rust engine for traceable artefact production, refinement and release validation.",
       "discipline": [
-        "Technology",
-        "Systems",
-        "Creative Technology"
+        "Creative Technology",
+        "Computational Imaging",
+        "Pipeline Engineering"
       ],
       "medium": [
-        "Software",
+        "Rust Software",
+        "Photogrammetry",
         "Research"
       ],
       "tags": [
         "Rust",
-        "Pipelines",
-        "Genetic Structures",
-        "Refinement",
-        "Video",
-        "3D Assets",
-        "Artifact Generation"
+        "Artifact Ultra",
+        "Video to 3D Object",
+        "Photogrammetry",
+        "Quality Gates",
+        "8K Texture Atlas"
       ],
       "relations": {
-        "origin": [
-          "vaste"
-        ],
-        "parent": [
-          "vaste"
-        ],
+        "origin": [],
+        "parent": [],
         "children": [],
-        "dependencies": [
-          "vaste"
-        ],
-        "influences": [
-          "palimpsests",
-          "oraclehub"
-        ],
+        "dependencies": [],
+        "influences": [],
         "derivedFrom": [],
         "inspiredBy": [],
-        "poweredBy": [
-          "vaste"
-        ],
+        "poweredBy": [],
         "producedBy": [
           "electronic-artefacts"
         ],
-        "publishedBy": [
-          "electronic-artefacts"
-        ],
-        "maintainedBy": [
-          "electronic-artefacts"
-        ],
-        "partOf": [
-          "electronic-artefacts"
-        ],
+        "publishedBy": [],
+        "maintainedBy": [],
+        "partOf": [],
         "relatedTo": [
-          "oraclehub",
-          "palimpsests",
-          "void"
+          "voice-capture-studio"
         ]
       },
       "links": [
@@ -629,24 +610,54 @@ window.EA_ENTITIES = {
         }
       ],
       "currentDomains": [
-        "Video",
-        "3D Assets"
+        "Video to 3D Object",
+        "Object Photogrammetry",
+        "Mesh Refinement",
+        "Texture Reconstruction"
       ],
       "futureDomains": [
-        "Audio",
-        "Text",
-        "Interactive Experiences",
-        "Research Documents",
-        "Visual Systems",
-        "Synthetic Worlds"
+        "Voice Dataset to Voice Model",
+        "Research Pipelines"
       ],
       "corePrinciples": [
-        "Artifact Pipelines",
-        "Genetic Structures",
-        "Automated Refinement",
-        "Scalability"
+        "Explicit Pipeline Contracts",
+        "Inspectable Artefact Lineage",
+        "Quality-Gated Refinement",
+        "Deterministic Release Criteria"
       ],
-      "longTermVision": "Forge aims to become a universal artefact production framework that can generate entire families of outputs through shared production logic."
+      "forgeCapabilities": [
+        {
+          "label": "Available now",
+          "title": "Video → 3D Object",
+          "copy": "A controlled video sequence becomes an isolated, textured 3D object through a photogrammetry and refinement pipeline.",
+          "tags": [
+            "Object isolation",
+            "Mesh refinement",
+            "GLB output"
+          ]
+        },
+        {
+          "label": "Artifact Ultra",
+          "title": "Release-grade object capture",
+          "copy": "The flagship internal preset detects the support, isolates mesh and texture dynamically, and validates a precise object output before release.",
+          "tags": [
+            "Support detection",
+            "8K texture atlas",
+            "Strict quality gates"
+          ]
+        },
+        {
+          "label": "Next research line",
+          "title": "Voice dataset → voice model",
+          "copy": "Voice Capture Studio is designed to export reviewable WAV and metadata packages that can become a controlled Forge input. The downstream voice-model pipeline remains research, not a public promise.",
+          "tags": [
+            "WAV + metadata",
+            "Quality reports",
+            "Planned intake"
+          ]
+        }
+      ],
+      "longTermVision": "Forge develops a small family of rigorous production pipelines: each one should make its input contract, transformation steps, quality evidence and released artefact legible."
     },
     {
       "id": "ea-lightweight-template",
@@ -2250,12 +2261,14 @@ window.EA_ENTITIES = {
           "electronic-artefacts"
         ],
         "relatedTo": [
+          "forge",
           "oreth-program",
           "palimpsests",
           "ea-lightweight-template"
         ]
       },
       "relatedPrograms": [
+        "forge",
         "oreth-program",
         "ea-lightweight-template"
       ],
@@ -28954,14 +28967,12 @@ window.EA_ANALYTICS_CONFIG = {
     if (item.kind !== "program") return "";
 
     const relations = item.relations || {};
-    const networkItems = [
-      ...(relations.origin || []),
-      ...(relations.parent || []),
+    const networkItems = [...new Set([
       ...(relations.children || []),
       ...(relations.dependencies || []),
       ...(relations.influences || []),
       ...(relations.relatedTo || []),
-    ];
+    ])];
     const primaryLink = item.links?.[0] || null;
     const signatureTags = [
       item.type,
@@ -29013,7 +29024,31 @@ window.EA_ANALYTICS_CONFIG = {
       buyerFit: ["Partners", "Technical teams", "Cultural projects", "Product owners"],
     };
 
+    const forgeCapabilities = item.id === "forge" && Array.isArray(item.forgeCapabilities)
+      ? `
+        <section class="forge-signal" aria-label="Forge production capabilities">
+          <div class="section-head forge-signal__head">
+            <p class="card__meta">Forge signal</p>
+            <h2 class="card__title">From controlled input to a releasable artefact.</h2>
+            <p class="card__copy">Forge is not a generic generator. It is an internal production engine: each pipeline declares an input, performs visible transformations and retains the evidence needed to judge its output.</p>
+          </div>
+          <div class="forge-signal__grid">
+            ${item.forgeCapabilities.map((capability, index) => `
+              <article class="panel forge-signal__card">
+                <p class="card__meta">0${index + 1} / ${esc(capability.label)}</p>
+                <h3 class="card__title">${esc(capability.title)}</h3>
+                <p class="card__copy">${esc(capability.copy)}</p>
+                ${tagRow(capability.tags || [], { compact: true })}
+                ${capability.label === "Next research line" ? '<div class="link-row"><a class="tag" href="./project.html?id=voice-capture-studio">Open Voice Capture Studio</a></div>' : ""}
+              </article>
+            `).join("")}
+          </div>
+        </section>
+      `
+      : "";
+
     return `
+      ${forgeCapabilities}
       <section class="detail-grid program-detail-grid">
         <article class="panel program-detail-panel program-detail-panel--lead">
           <div class="section-head">
@@ -29053,16 +29088,16 @@ window.EA_ANALYTICS_CONFIG = {
           <p class="card__copy">Mediums, disciplines and tags help compare this program with nearby systems.</p>
           ${tagRow([...(item.tags || []), ...(item.medium || []), ...(item.discipline || [])].filter(Boolean), { compact: true })}
         </article>
-        <article class="panel program-detail-panel">
+        ${networkItems.length ? `<article class="panel program-detail-panel">
           <p class="card__meta">Nearby systems</p>
-          <p class="card__copy">Works connected through origin, lineage, dependency or influence.</p>
+          <p class="card__copy">Direct systems connected through an explicit working relationship.</p>
           <div class="link-row">
             ${resolveIds(networkItems)
               .slice(0, 8)
               .map((entry) => `<a class="tag" href="${esc(entryHref(entry))}">${esc(entry.title)}</a>`)
               .join("")}
           </div>
-        </article>
+        </article>` : ""}
       </section>
       <section class="detail-grid program-commercial-detail">
         <article class="panel program-detail-panel program-detail-panel--lead">
