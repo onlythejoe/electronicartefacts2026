@@ -111,7 +111,7 @@ The benefit is responsiveness. The cost is ambiguity, synonym duplication and in
 
 A hybrid system can preserve user tags as observations while mapping selected terms to canonical concepts. Folksonomy becomes input to vocabulary governance rather than an uncontrolled replacement for it.
 
-Vestiges may eventually need this balance. Contributors should be able to describe practices in their own language, while public knowledge pages maintain stable identities and mappings.
+V6 may eventually need this balance. Contributors should be able to describe practices in their own language, while public knowledge pages maintain stable identities and mappings.
 
 ## Ontologies
 
@@ -175,7 +175,7 @@ Direct relations are convenient but can hide time and participants. Reifying an 
 
 CIDOC CRM demonstrates the value of event-centered modeling for cultural heritage. It provides a shared conceptual structure for integrating museum, archive and library information without reducing it to one database schema.
 
-Electronic Artefacts already supports event entities. Future Vestiges records can use them for teaching, transmission, exhibitions and institutional histories.
+Electronic Artefacts already supports event entities. Future V6 records can use them for teaching, transmission, exhibitions and institutional histories.
 
 ## Modeling uncertainty
 
@@ -237,7 +237,7 @@ Electronic Artefacts uses four complementary layers. Entity types identify what 
 
 This architecture can scale because each layer has one responsibility. A publication can belong to several disciplines, carry focused tags, document multiple concepts and connect to projects without being placed in one folder.
 
-VASTE can make the same semantics executable. Vestiges can extend them into cultural knowledge. The public Knowledge Hub provides readable definitions and source trails.
+VASTE can make the same semantics executable. V6 can extend them into cultural knowledge. The public Knowledge Hub provides readable definitions and source trails.
 
 ## Governance
 
@@ -261,7 +261,7 @@ See [OWL](/knowledge/technologies/owl/), [SKOS](/knowledge/technologies/skos/) a
 
 ## Related project
 
-See [Vestiges](/projects/vestiges/) for cultural knowledge modeling.
+See [V6](/projects/v6/) for cultural knowledge modeling.
 
 ## Glossary
 

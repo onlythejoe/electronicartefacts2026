@@ -6,15 +6,15 @@
       "@id": "https://electronicartefacts.com/fr/projects/palimpsests/#webpage",
       "url": "https://electronicartefacts.com/fr/projects/palimpsests/",
       "name": "Palimpsests",
-      "description": "Une œuvre musicale et éditoriale en cinq actes reliant recherche sonore, mémoire culturelle, archives et production visuelle.",
+      "description": "Une fiche canonique pour Palimpsests, album d’ORETH et démonstration de la capacité d’Electronic Artefacts à produire musique, médias et campagnes culturelles.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
-      "dateModified": "2026-06-25",
+      "dateModified": "2026-07-11",
       "primaryImageOfPage": {
         "@type": "ImageObject",
         "url": "https://electronicartefacts.com/assets/media/projects/palimpsests/P1288759-edit-1800.webp",
-        "caption": "Image principale associée au cycle Palimpsests.",
-        "description": "Visuel du cycle Palimpsests"
+        "caption": "Image principale associée à l’album Palimpsests.",
+        "description": "Visuel de l’album Palimpsests"
       },
       "breadcrumb": {
         "@id": "https://electronicartefacts.com/fr/projects/palimpsests/#breadcrumb"
@@ -35,8 +35,8 @@
       "@id": "https://electronicartefacts.com/fr/id/project/palimpsests/",
       "identifier": "ea:project:palimpsests-fr",
       "name": "Palimpsests",
-      "abstract": "Palimpsests est un cycle conceptuel d’ORETH explorant mémoire, héritage, transformation et transmission à travers la composition sonore, l’image et la publication.",
-      "description": "Palimpsests est un cycle conceptuel d’ORETH explorant mémoire, héritage, transformation et transmission à travers la composition sonore, l’image et la publication.",
+      "abstract": "Palimpsests est un album conceptuel en cinq chapitres signé ORETH. Il suit l’évolution d’un système à travers culture numérique, mémoire, transformation et transmission.",
+      "description": "Palimpsests est un album conceptuel en cinq chapitres signé ORETH. Il suit l’évolution d’un système à travers culture numérique, mémoire, transformation et transmission.",
       "url": "https://electronicartefacts.com/fr/projects/palimpsests/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/projects/palimpsests/#webpage"
@@ -44,8 +44,8 @@
       "image": {
         "@type": "ImageObject",
         "url": "https://electronicartefacts.com/assets/media/projects/palimpsests/P1288759-edit-1800.webp",
-        "caption": "Image principale associée au cycle Palimpsests.",
-        "description": "Visuel du cycle Palimpsests"
+        "caption": "Image principale associée à l’album Palimpsests.",
+        "description": "Visuel de l’album Palimpsests"
       },
       "author": [
         {
@@ -61,16 +61,17 @@
         "Palimpsests",
         "ORETH",
         "Musique",
+        "Culture numérique",
         "Mémoire",
-        "Archives",
+        "Transmission",
         "Art sonore",
         "Image",
-        "Recherche"
+        "Édition"
       ],
       "inLanguage": "fr",
       "dateCreated": "2024-01-01",
       "datePublished": "2026-06-25",
-      "dateModified": "2026-06-25",
+      "dateModified": "2026-07-11",
       "publisher": {
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
@@ -78,7 +79,7 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 310
+      "wordCount": 164
     },
     {
       "@type": "Organization",

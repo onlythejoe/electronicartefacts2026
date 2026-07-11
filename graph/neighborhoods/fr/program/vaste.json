@@ -182,8 +182,8 @@
     {
       "id": "ea:project:vestiges-fr",
       "type": "project",
-      "title": "Vestiges",
-      "route": "/fr/projects/vestiges/",
+      "title": "V6",
+      "route": "/fr/projects/v6/",
       "status": "development",
       "confidence": "observed"
     },
@@ -408,7 +408,7 @@
       "target": "ea:program:vaste-fr",
       "predicate": "poweredBy",
       "label": "Powered by",
-      "statement": "Vestiges uses VASTE as its graph runtime and contextual execution foundation.",
+      "statement": "V6 is intended to test VASTE as its graph runtime and contextual execution foundation.",
       "confidence": "observed"
     },
     {

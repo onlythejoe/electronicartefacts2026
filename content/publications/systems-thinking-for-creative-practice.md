@@ -190,7 +190,7 @@ Archiving rejected alternatives preserves knowledge about the path, but publicat
 
 ## Electronic Artefacts model
 
-Electronic Artefacts can be understood as a system connecting programs, projects, concepts, publications and artefacts. VASTE provides runtime infrastructure. Vestiges applies graph knowledge to culture. ORETH connects audio analysis and artistic production. Palimpsests connects memory, sound and archive. The Knowledge Hub exposes shared concepts.
+Electronic Artefacts can be understood as a system connecting programs, projects, concepts, publications and artefacts. VASTE provides runtime infrastructure. V6 applies graph knowledge to culture. ORETH connects audio analysis and artistic production. Palimpsests connects memory, sound and archive. The Knowledge Hub exposes shared concepts.
 
 The value comes from relations. An article strengthens a concept; a concept explains a program; a project demonstrates the program; an archive preserves evidence; search and graph pages return readers to the network.
 
@@ -222,7 +222,7 @@ Read [Systems Thinking](/knowledge/concepts/systems-thinking/), [Cybernetic Feed
 
 ## Related programs
 
-See [VASTE](/programs/vaste/), [ORETH](/programs/oreth/) and [Vestiges](/projects/vestiges/).
+See [VASTE](/programs/vaste/), [ORETH](/programs/oreth/) and [V6](/projects/v6/).
 
 ## Glossary
 

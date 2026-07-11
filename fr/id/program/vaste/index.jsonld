@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/programs/vaste/#webpage",
       "url": "https://electronicartefacts.com/fr/programs/vaste/",
       "name": "VASTE",
-      "description": "Runtime propriétaire reliant Runtime Theory à des systèmes de graphe évaluables par dépôt encadré, pilotes, implémentation ou licence.",
+      "description": "VASTE relie Runtime Theory à un runtime en développement pour systèmes de graphe, exécution contextuelle, identité et mondes modulaires.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-07-04",
@@ -34,8 +34,8 @@
       "@id": "https://electronicartefacts.com/fr/id/program/vaste/",
       "identifier": "ea:program:vaste-fr",
       "name": "VASTE",
-      "abstract": "VASTE est le runtime propriétaire d’Electronic Artefacts pour architectures de graphe, exécution contextuelle, identité et mondes modulaires.",
-      "description": "VASTE est le runtime propriétaire d’Electronic Artefacts pour architectures de graphe, exécution contextuelle, identité et mondes modulaires.",
+      "abstract": "VASTE est la future plateforme runtime d’Electronic Artefacts, actuellement en R&D, avec un horizon de livraison en 2027.",
+      "description": "VASTE est la future plateforme runtime d’Electronic Artefacts, actuellement en R&D, avec un horizon de livraison en 2027.",
       "url": "https://electronicartefacts.com/fr/programs/vaste/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/programs/vaste/#webpage"
@@ -77,7 +77,7 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 793,
+      "wordCount": 397,
       "sameAs": [
         "https://www.vaste.space/"
       ],

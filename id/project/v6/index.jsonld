@@ -3,24 +3,24 @@
   "@graph": [
     {
       "@type": "WebPage",
-      "@id": "https://electronicartefacts.com/projects/vestiges/#webpage",
-      "url": "https://electronicartefacts.com/projects/vestiges/",
-      "name": "Vestiges",
-      "description": "A knowledge-first product where provenance, contribution, discovery and professional services grow from one historized graph.",
+      "@id": "https://electronicartefacts.com/projects/v6/#webpage",
+      "url": "https://electronicartefacts.com/projects/v6/",
+      "name": "V6",
+      "description": "An in-development VASTE test platform for art, craft, mapping and relationship management, targeted for 2027.",
       "inLanguage": "en",
       "datePublished": "2026-06-22",
-      "dateModified": "2026-06-24",
+      "dateModified": "2026-07-11",
       "primaryImageOfPage": {
         "@type": "ImageObject",
         "url": "https://electronicartefacts.com/assets/media/projects/vestiges/logo-vestiges.png",
-        "caption": "Vestiges monogram for the living knowledge platform.",
-        "description": "Vestiges monogram"
+        "caption": "V6 monogram for the future art and craft platform.",
+        "description": "V6 monogram"
       },
       "breadcrumb": {
-        "@id": "https://electronicartefacts.com/projects/vestiges/#breadcrumb"
+        "@id": "https://electronicartefacts.com/projects/v6/#breadcrumb"
       },
       "mainEntity": {
-        "@id": "https://electronicartefacts.com/id/project/vestiges/"
+        "@id": "https://electronicartefacts.com/id/project/v6/"
       },
       "isPartOf": {
         "@id": "https://electronicartefacts.com/#website"
@@ -32,20 +32,20 @@
     },
     {
       "@type": "CreativeWork",
-      "@id": "https://electronicartefacts.com/id/project/vestiges/",
+      "@id": "https://electronicartefacts.com/id/project/v6/",
       "identifier": "ea:project:vestiges",
-      "name": "Vestiges",
-      "abstract": "Vestiges is the flagship VASTE platform for mapping, preserving and activating living know-how across people, practices, materials, places and institutions.",
-      "description": "Vestiges is the flagship VASTE platform for mapping, preserving and activating living know-how across people, practices, materials, places and institutions.",
-      "url": "https://electronicartefacts.com/projects/vestiges/",
+      "name": "V6",
+      "abstract": "V6 is a future platform that will map art and craft practices and develop CRM-oriented workflows as an applied test context for VASTE.",
+      "description": "V6 is a future platform that will map art and craft practices and develop CRM-oriented workflows as an applied test context for VASTE.",
+      "url": "https://electronicartefacts.com/projects/v6/",
       "mainEntityOfPage": {
-        "@id": "https://electronicartefacts.com/projects/vestiges/#webpage"
+        "@id": "https://electronicartefacts.com/projects/v6/#webpage"
       },
       "image": {
         "@type": "ImageObject",
         "url": "https://electronicartefacts.com/assets/media/projects/vestiges/logo-vestiges.png",
-        "caption": "Vestiges monogram for the living knowledge platform.",
-        "description": "Vestiges monogram"
+        "caption": "V6 monogram for the future art and craft platform.",
+        "description": "V6 monogram"
       },
       "author": [
         {
@@ -58,20 +58,19 @@
         }
       ],
       "keywords": [
-        "Vestiges",
+        "V6",
         "VASTE",
-        "Knowledge Graph",
+        "Art",
         "Craft",
-        "Culture",
-        "Cultural Infrastructure",
+        "CRM",
+        "Mapping",
         "Technology",
-        "Knowledge Graphs",
         "Design"
       ],
       "inLanguage": "en",
       "dateCreated": "2025-01-01",
       "datePublished": "2026-06-22",
-      "dateModified": "2026-06-24",
+      "dateModified": "2026-07-11",
       "publisher": {
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
@@ -79,10 +78,7 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 453,
-      "sameAs": [
-        "https://www.instagram.com/vestiges.world/"
-      ]
+      "wordCount": 144
     },
     {
       "@type": "Organization",
@@ -180,7 +176,7 @@
     },
     {
       "@type": "BreadcrumbList",
-      "@id": "https://electronicartefacts.com/projects/vestiges/#breadcrumb",
+      "@id": "https://electronicartefacts.com/projects/v6/#breadcrumb",
       "itemListElement": [
         {
           "@type": "ListItem",
@@ -197,8 +193,8 @@
         {
           "@type": "ListItem",
           "position": 3,
-          "name": "Vestiges",
-          "item": "https://electronicartefacts.com/projects/vestiges/"
+          "name": "V6",
+          "item": "https://electronicartefacts.com/projects/v6/"
         }
       ]
     }

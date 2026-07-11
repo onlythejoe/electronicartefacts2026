@@ -11,7 +11,7 @@
       "publisher": {
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
-      "dateModified": "2026-07-10",
+      "dateModified": "2026-07-11",
       "dataset": {
         "@id": "https://electronicartefacts.com/graph/catalog.jsonld#dataset"
       }
@@ -49,7 +49,7 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "dateModified": "2026-07-10",
+      "dateModified": "2026-07-11",
       "measurementTechnique": "Typed static entity records, JSON-LD identifiers, validated public relation statements and generated search documents.",
       "variableMeasured": [
         {
@@ -1015,19 +1015,19 @@
         {
           "@type": "ListItem",
           "position": 105,
-          "name": "Vestiges",
-          "url": "https://electronicartefacts.com/fr/projects/vestiges/",
+          "name": "V6",
+          "url": "https://electronicartefacts.com/fr/projects/v6/",
           "item": {
-            "@id": "https://electronicartefacts.com/fr/id/project/vestiges/"
+            "@id": "https://electronicartefacts.com/fr/id/project/v6/"
           }
         },
         {
           "@type": "ListItem",
           "position": 106,
-          "name": "Vestiges",
-          "url": "https://electronicartefacts.com/projects/vestiges/",
+          "name": "V6",
+          "url": "https://electronicartefacts.com/projects/v6/",
           "item": {
-            "@id": "https://electronicartefacts.com/id/project/vestiges/"
+            "@id": "https://electronicartefacts.com/id/project/v6/"
           }
         },
         {

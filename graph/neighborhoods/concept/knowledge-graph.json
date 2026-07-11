@@ -22,8 +22,8 @@
     {
       "id": "ea:project:vestiges",
       "type": "project",
-      "title": "Vestiges",
-      "route": "/projects/vestiges/",
+      "title": "V6",
+      "route": "/projects/v6/",
       "status": "development",
       "confidence": "observed"
     },
@@ -100,7 +100,7 @@
       "target": "ea:concept:knowledge-graph",
       "predicate": "appliesConcept",
       "label": "Applies concept",
-      "statement": "Vestiges applies knowledge-graph principles to culture, craft, institutions, techniques and public knowledge pages.",
+      "statement": "V6 is intended to test knowledge-graph principles for art, craft, institutions, techniques and CRM-oriented public surfaces.",
       "confidence": "observed"
     },
     {

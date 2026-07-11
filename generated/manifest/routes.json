@@ -596,8 +596,8 @@
   {
     "id": "ea:project:vestiges-fr",
     "locale": "fr",
-    "route": "/fr/projects/vestiges/",
-    "identifier": "/fr/id/project/vestiges/"
+    "route": "/fr/projects/v6/",
+    "identifier": "/fr/id/project/v6/"
   },
   {
     "id": "ea:project:voice-capture-studio-fr",
@@ -1010,8 +1010,8 @@
   {
     "id": "ea:project:vestiges",
     "locale": "en",
-    "route": "/projects/vestiges/",
-    "identifier": "/id/project/vestiges/"
+    "route": "/projects/v6/",
+    "identifier": "/id/project/v6/"
   },
   {
     "id": "ea:project:voice-capture-studio",

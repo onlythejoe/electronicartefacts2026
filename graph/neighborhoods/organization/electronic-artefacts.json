@@ -30,8 +30,8 @@
     {
       "id": "ea:project:vestiges",
       "type": "project",
-      "title": "Vestiges",
-      "route": "/projects/vestiges/",
+      "title": "V6",
+      "route": "/projects/v6/",
       "status": "development",
       "confidence": "observed"
     },
@@ -69,7 +69,7 @@
       "target": "ea:organization:electronic-artefacts",
       "predicate": "createdBy",
       "label": "Created by",
-      "statement": "Electronic Artefacts created Vestiges as the flagship public application of VASTE.",
+      "statement": "Electronic Artefacts is developing V6 as an applied test platform for VASTE, focused on mapping art and craft practices and CRM-oriented workflows.",
       "confidence": "published"
     },
     {

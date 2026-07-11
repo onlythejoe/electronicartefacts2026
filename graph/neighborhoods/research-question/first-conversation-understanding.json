@@ -22,8 +22,8 @@
     {
       "id": "ea:project:vestiges",
       "type": "project",
-      "title": "Vestiges",
-      "route": "/projects/vestiges/",
+      "title": "V6",
+      "route": "/projects/v6/",
       "status": "development",
       "confidence": "observed"
     },
@@ -40,7 +40,7 @@
       "type": "program",
       "title": "ORETH",
       "route": "/programs/oreth/",
-      "status": "prototype",
+      "status": "archived",
       "confidence": "observed"
     },
     {
@@ -180,7 +180,7 @@
       "target": "ea:project:vestiges",
       "predicate": "implementedBy",
       "label": "Implemented by",
-      "statement": "Vestiges is listed as a current software or project answer for the research question \"How can an AI understand someone during its very first conversation?\".",
+      "statement": "V6 is listed as a current software or project answer for the research question \"How can an AI understand someone during its very first conversation?\".",
       "confidence": "observed"
     },
     {

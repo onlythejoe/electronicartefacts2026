@@ -3,24 +3,24 @@
   "@graph": [
     {
       "@type": "WebPage",
-      "@id": "https://electronicartefacts.com/fr/projects/vestiges/#webpage",
-      "url": "https://electronicartefacts.com/fr/projects/vestiges/",
-      "name": "Vestiges",
-      "description": "Un produit centré sur la connaissance où provenance, contribution, découverte et services professionnels émergent d’un même graphe historisé.",
+      "@id": "https://electronicartefacts.com/fr/projects/v6/#webpage",
+      "url": "https://electronicartefacts.com/fr/projects/v6/",
+      "name": "V6",
+      "description": "Une plateforme de test VASTE en développement pour l’art, l’artisanat, la cartographie et la gestion de relations, avec un horizon 2027.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
-      "dateModified": "2026-07-04",
+      "dateModified": "2026-07-11",
       "primaryImageOfPage": {
         "@type": "ImageObject",
         "url": "https://electronicartefacts.com/assets/media/projects/vestiges/logo-vestiges.png",
-        "caption": "Monogramme de la plateforme de connaissance vivante Vestiges.",
-        "description": "Monogramme Vestiges"
+        "caption": "Monogramme de la future plateforme V6 pour l’art et l’artisanat.",
+        "description": "Monogramme V6"
       },
       "breadcrumb": {
-        "@id": "https://electronicartefacts.com/fr/projects/vestiges/#breadcrumb"
+        "@id": "https://electronicartefacts.com/fr/projects/v6/#breadcrumb"
       },
       "mainEntity": {
-        "@id": "https://electronicartefacts.com/fr/id/project/vestiges/"
+        "@id": "https://electronicartefacts.com/fr/id/project/v6/"
       },
       "isPartOf": {
         "@id": "https://electronicartefacts.com/#website"
@@ -32,20 +32,20 @@
     },
     {
       "@type": "CreativeWork",
-      "@id": "https://electronicartefacts.com/fr/id/project/vestiges/",
+      "@id": "https://electronicartefacts.com/fr/id/project/v6/",
       "identifier": "ea:project:vestiges-fr",
-      "name": "Vestiges",
-      "abstract": "Vestiges est la plateforme VASTE pour cartographier, préserver et activer les savoir-faire vivants entre personnes, pratiques, matériaux et lieux.",
-      "description": "Vestiges est la plateforme VASTE pour cartographier, préserver et activer les savoir-faire vivants entre personnes, pratiques, matériaux et lieux.",
-      "url": "https://electronicartefacts.com/fr/projects/vestiges/",
+      "name": "V6",
+      "abstract": "V6 est une future plateforme destinée à cartographier les pratiques de l’art et de l’artisanat et à développer des workflows orientés CRM, comme contexte de test appliqué pour VASTE.",
+      "description": "V6 est une future plateforme destinée à cartographier les pratiques de l’art et de l’artisanat et à développer des workflows orientés CRM, comme contexte de test appliqué pour VASTE.",
+      "url": "https://electronicartefacts.com/fr/projects/v6/",
       "mainEntityOfPage": {
-        "@id": "https://electronicartefacts.com/fr/projects/vestiges/#webpage"
+        "@id": "https://electronicartefacts.com/fr/projects/v6/#webpage"
       },
       "image": {
         "@type": "ImageObject",
         "url": "https://electronicartefacts.com/assets/media/projects/vestiges/logo-vestiges.png",
-        "caption": "Monogramme de la plateforme de connaissance vivante Vestiges.",
-        "description": "Monogramme Vestiges"
+        "caption": "Monogramme de la future plateforme V6 pour l’art et l’artisanat.",
+        "description": "Monogramme V6"
       },
       "author": [
         {
@@ -58,20 +58,19 @@
         }
       ],
       "keywords": [
-        "Vestiges",
+        "V6",
         "VASTE",
-        "Graphe de connaissance",
-        "Savoir-faire",
-        "Culture",
-        "Infrastructure culturelle",
+        "Art",
+        "Artisanat",
+        "CRM",
+        "Cartographie",
         "Technologie",
-        "Graphes de connaissance",
         "Design"
       ],
       "inLanguage": "fr",
       "dateCreated": "2025-01-01",
       "datePublished": "2026-06-25",
-      "dateModified": "2026-07-04",
+      "dateModified": "2026-07-11",
       "publisher": {
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
@@ -79,10 +78,7 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 544,
-      "sameAs": [
-        "https://www.instagram.com/vestiges.world/"
-      ]
+      "wordCount": 163
     },
     {
       "@type": "Organization",
@@ -180,7 +176,7 @@
     },
     {
       "@type": "BreadcrumbList",
-      "@id": "https://electronicartefacts.com/fr/projects/vestiges/#breadcrumb",
+      "@id": "https://electronicartefacts.com/fr/projects/v6/#breadcrumb",
       "itemListElement": [
         {
           "@type": "ListItem",
@@ -197,8 +193,8 @@
         {
           "@type": "ListItem",
           "position": 3,
-          "name": "Vestiges",
-          "item": "https://electronicartefacts.com/fr/projects/vestiges/"
+          "name": "V6",
+          "item": "https://electronicartefacts.com/fr/projects/v6/"
         }
       ]
     }

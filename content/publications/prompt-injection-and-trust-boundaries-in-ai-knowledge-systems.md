@@ -158,7 +158,7 @@ VASTE should treat prompt injection as a core runtime concern. Any future assist
 
 The public site can also model good practice. Articles can cite sources, expose provenance and link entities without turning visible content into executable instructions. The graph remains the authority layer.
 
-For Palimpsests, ORETH and Vestiges, this matters because archives contain heterogeneous material: notes, filenames, captions, transcripts, comments and embedded metadata. All of it can inform interpretation. None of it should silently control tools.
+For Palimpsests, ORETH and V6, this matters because archives contain heterogeneous material: notes, filenames, captions, transcripts, comments and embedded metadata. All of it can inform interpretation. None of it should silently control tools.
 
 ## Implementation
 

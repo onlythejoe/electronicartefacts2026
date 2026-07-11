@@ -162,7 +162,7 @@ The third mistake is letting time dominate structure. Chronological feeds are us
 
 ## Electronic Artefacts implications
 
-Electronic Artefacts should treat every major article as a node in a long-term knowledge system. VASTE, ORETH, Palimpsests and Vestiges should be linked when they illuminate a subject, not when promotion is needed.
+Electronic Artefacts should treat every major article as a node in a long-term knowledge system. VASTE, ORETH, Palimpsests and V6 should be linked when they illuminate a subject, not when promotion is needed.
 
 The site's advantage is not only its projects. It is the ability to explain the technical, artistic and historical ideas behind those projects in a public, reusable graph.
 

@@ -150,7 +150,7 @@ For Electronic Artefacts, trust policy could be graph-aware. The organization ma
 
 Electronic Artefacts could use verifiable credentials to sign publication records, creator contribution claims, archive deposit events, rights-review milestones or project release statements. These credentials would not replace the Knowledge Hub. They would add a portable trust layer to selected claims.
 
-Palimpsests could benefit from credentials that distinguish creator contribution, media provenance and public release state. Vestiges could use credentials to connect archive objects to institutional statements. VASTE could validate credentials as part of contextual execution before granting access or publication authority.
+Palimpsests could benefit from credentials that distinguish creator contribution, media provenance and public release state. V6 could use credentials to connect archive objects to institutional statements. VASTE could validate credentials as part of contextual execution before granting access or publication authority.
 
 The most valuable use is selective. Not every relation needs a credential. Credentials should be reserved for claims where portability, verification or institutional trust changes the outcome.
 

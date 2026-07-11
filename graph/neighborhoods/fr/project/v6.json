@@ -6,8 +6,8 @@
     {
       "id": "ea:project:vestiges-fr",
       "type": "project",
-      "title": "Vestiges",
-      "route": "/fr/projects/vestiges/",
+      "title": "V6",
+      "route": "/fr/projects/v6/",
       "status": "development",
       "confidence": "observed"
     },
@@ -181,7 +181,7 @@
       "target": "ea:concept:knowledge-graph-fr",
       "predicate": "appliesConcept",
       "label": "Applies concept",
-      "statement": "Vestiges applies knowledge-graph principles to culture, craft, institutions, techniques and public knowledge pages.",
+      "statement": "V6 is intended to test knowledge-graph principles for art, craft, institutions, techniques and CRM-oriented public surfaces.",
       "confidence": "observed"
     },
     {
@@ -271,7 +271,7 @@
       "target": "ea:program:vaste-fr",
       "predicate": "poweredBy",
       "label": "Powered by",
-      "statement": "Vestiges uses VASTE as its graph runtime and contextual execution foundation.",
+      "statement": "V6 is intended to test VASTE as its graph runtime and contextual execution foundation.",
       "confidence": "observed"
     },
     {
@@ -280,7 +280,7 @@
       "target": "ea:concept:graph-runtime-fr",
       "predicate": "appliesConcept",
       "label": "Applies concept",
-      "statement": "Vestiges applies graph-runtime principles to cultural, craft and human-knowledge infrastructure.",
+      "statement": "V6 is intended to apply graph-runtime principles to art, craft and CRM-oriented infrastructure.",
       "confidence": "observed"
     },
     {
@@ -298,7 +298,7 @@
       "target": "ea:organization:electronic-artefacts-fr",
       "predicate": "createdBy",
       "label": "Created by",
-      "statement": "Electronic Artefacts created Vestiges as the flagship public application of VASTE.",
+      "statement": "Electronic Artefacts is developing V6 as an applied test platform for VASTE, focused on mapping art and craft practices and CRM-oriented workflows.",
       "confidence": "published"
     },
     {
@@ -307,7 +307,7 @@
       "target": "ea:project:vestiges-fr",
       "predicate": "implementedBy",
       "label": "Implemented by",
-      "statement": "Vestiges is listed as a current software or project answer for the research question \"How can an AI understand someone during its very first conversation?\".",
+      "statement": "V6 is listed as a current software or project answer for the research question \"How can an AI understand someone during its very first conversation?\".",
       "confidence": "observed"
     },
     {
@@ -316,7 +316,7 @@
       "target": "ea:project:vestiges-fr",
       "predicate": "implementedBy",
       "label": "Implemented by",
-      "statement": "Vestiges is listed as a current software or project answer for the research question \"How can software become explainable through its own knowledge graph?\".",
+      "statement": "V6 is listed as a current software or project answer for the research question \"How can software become explainable through its own knowledge graph?\".",
       "confidence": "validated"
     }
   ]

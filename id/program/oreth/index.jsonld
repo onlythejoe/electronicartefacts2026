@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/programs/oreth/#webpage",
       "url": "https://electronicartefacts.com/programs/oreth/",
       "name": "ORETH",
-      "description": "A public program record for ORETH as both an audio research system and the technical-cultural layer connected to Palimpsests.",
+      "description": "A public record that distinguishes ORETH’s archived speech-synthesis research prototype from its current artistic signature on Palimpsests.",
       "inLanguage": "en",
       "datePublished": "2026-06-23",
       "dateModified": "2026-06-23",
@@ -34,8 +34,8 @@
       "@id": "https://electronicartefacts.com/id/program/oreth/",
       "identifier": "ea:program:oreth",
       "name": "ORETH",
-      "abstract": "ORETH is an Electronic Artefacts audio intelligence and artistic research program concerned with signal analysis, pattern detection, memory, machine listening and experimental music production.",
-      "description": "ORETH is an Electronic Artefacts audio intelligence and artistic research program concerned with signal analysis, pattern detection, memory, machine listening and experimental music production.",
+      "abstract": "ORETH is an archived Electronic Artefacts R&D prototype that explored how an initially imitative speech system could learn to speak from sensor-based experience rather than a fixed corpus. ORETH also signs the album Palimpsests.",
+      "description": "ORETH is an archived Electronic Artefacts R&D prototype that explored how an initially imitative speech system could learn to speak from sensor-based experience rather than a fixed corpus. ORETH also signs the album Palimpsests.",
       "url": "https://electronicartefacts.com/programs/oreth/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/programs/oreth/#webpage"
@@ -79,7 +79,7 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 394
+      "wordCount": 302
     },
     {
       "@type": "Organization",

@@ -113,7 +113,7 @@ The mistake is to begin with a large abstract engine. Contextual execution shoul
 
 For VASTE, contextual execution is a runtime design principle.
 
-For Vestiges, it can govern contribution, validation and public visibility across cultural knowledge nodes.
+For V6, it can govern contribution, validation and public visibility across cultural knowledge nodes.
 
 For the Knowledge Hub, it determines which entities are indexable, which relations can appear publicly, and how publication status affects metadata.
 

@@ -24,7 +24,7 @@
       "type": "program",
       "title": "ORETH",
       "route": "/programs/oreth/",
-      "status": "prototype",
+      "status": "archived",
       "confidence": "observed"
     },
     {

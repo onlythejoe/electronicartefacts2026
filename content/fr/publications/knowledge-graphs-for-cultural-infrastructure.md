@@ -58,7 +58,7 @@ tags:
   - infrastructure culturelle
   - Linked Data
   - Provenance
-  - Vestiges
+  - V6
 disciplines:
   - systèmes de connaissance
   - archives

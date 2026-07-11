@@ -2,19 +2,19 @@ window.EA_TIMELINES = [
   {
     entityId: "vaste",
     entries: [
-      { year: "2023", title: "ARCA lineage", description: "Archive and certification experiments establish the lineage.", type: "concept" },
+      { year: "2023", title: "ARCA lineage", description: "Unpublished traceability and certification codebase establishes the lineage.", type: "concept" },
       { year: "2024", title: "Concept foundation", description: "Initial systems frame.", type: "concept" },
       { year: "2025", title: "Runtime prototype", description: "Prototype runtime and research base.", type: "prototype" },
       { year: "2026", title: "Graph runtime evolution", description: "Graph runtime architecture and contextual execution mature.", type: "development" },
       { year: "2026", title: "Performance optimization phase", description: "Execution paths and pipelines are tuned for efficiency.", type: "production" },
-      { year: "2026", title: "Public website", description: "External reference and studio presence.", type: "released" },
+      { year: "2027", title: "Target delivery", description: "Future platform delivery target; scope remains under R&D.", type: "development" },
     ],
   },
   {
     entityId: "oreth",
     entries: [
-      { year: "2025", title: "Artist formation", description: "Artist identity begins to take shape.", type: "concept" },
-      { year: "2026", title: "Palimpsests cycle", description: "Album cycle enters production.", type: "production" },
+      { year: "2025", title: "Archived R&D", description: "Sensor-informed speech-synthesis research prototype is preserved as an archive.", type: "concept" },
+      { year: "2026", title: "Palimpsests", description: "ORETH signs the five-chapter album in cultural production.", type: "production" },
     ],
   },
   {
@@ -30,9 +30,9 @@ window.EA_TIMELINES = [
   {
     entityId: "vestiges",
     entries: [
-      { year: "2025", title: "Platform thesis", description: "Vestiges is framed as VASTE's flagship product for culture, craft and applied knowledge.", type: "concept" },
-      { year: "2026", title: "Knowledge graph model", description: "Actors, know-how, materials, places and institutions become explicit, addressable nodes.", type: "development" },
-      { year: "2026", title: "Product architecture", description: "Collaborative contribution, native public pages, visual exploration and economic services are structured around the graph.", type: "prototype" },
+      { year: "2025", title: "V6 platform thesis", description: "V6 is framed as a future art and craft mapping and CRM platform.", type: "concept" },
+      { year: "2026", title: "Applied research", description: "V6 is prepared as a VASTE test context; domains and social presences are reserved.", type: "development" },
+      { year: "2027", title: "Target activation", description: "Platform activation is targeted for 2027.", type: "development" },
     ],
   },
   {

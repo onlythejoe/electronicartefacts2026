@@ -7,7 +7,7 @@ window.EA_ENTITIES = {
       kind: "program",
       type: "Proprietary Runtime",
       status: "development",
-      statusLabel: "Active Research",
+      statusLabel: "R&D / 2027 target",
       maturity: "development",
       confidence: "published",
       visibility: "public",
@@ -21,9 +21,9 @@ window.EA_ENTITIES = {
         era: "foundation",
       },
       description:
-        "VASTE is the primary proprietary runtime developed within Electronic Artefacts. The system explores graph architectures, contextual execution, identity systems, simulation frameworks, knowledge structures and modular world construction. Several projects inside the ecosystem directly inherit concepts, architectures or methodologies originating in VASTE.",
+        "VASTE is the future runtime platform developed within Electronic Artefacts. It is currently in R&D, exploring graph architectures, contextual execution, identity systems, simulation frameworks, knowledge structures and modular world construction, with delivery targeted for 2027.",
       summary:
-        "Primary proprietary runtime for graph architectures, identity systems and modular world construction.",
+        "Future runtime platform in R&D for graph architectures, identity systems and modular world construction.",
       discipline: ["Technology", "Systems", "Research"],
       medium: ["Runtime", "Software", "Research"],
       tags: ["TypeScript", "Graph", "Context", "Identity", "Simulation", "Knowledge", "Core Infrastructure"],
@@ -65,9 +65,9 @@ window.EA_ENTITIES = {
         era: "foundation",
       },
       description:
-        "ARCA is the historical origin of VASTE. The project was initially aimed at digital assets management, traceability and certification systems. Through successive experiments, its scope progressively shifted toward more fundamental questions related to information systems, execution environments and generalized runtime structures.",
+        "ARCA is an unpublished historical predecessor of VASTE. It has a substantial codebase and explored digital assets, traceability and certification systems, but it was never released. Its scope later shifted toward more fundamental questions about information systems, execution environments and generalized runtime structures.",
       summary:
-        "Ancestor of VASTE for certificates, NFTs, auctions, authenticity and digital assets.",
+        "Unpublished predecessor of VASTE for traceability, certification and digital assets.",
       discipline: ["Technology", "Systems", "Research"],
       medium: ["Software", "Research", "Archive"],
       tags: ["ARCA", "Certificates", "NFT", "Auctions", "Authenticity", "Traceability", "Digital Assets"],
@@ -153,9 +153,9 @@ window.EA_ENTITIES = {
         era: "palimpsests",
       },
       description:
-        "ORETH is an experimental audio research program. The system explores the observation of complex acoustic phenomena through frequency analysis, event detection, pattern recognition and adaptive learning. Early prototypes were built in Python around libraries such as Librosa, PyQtGraph and NumPy.",
+        "ORETH is an archived internal R&D prototype for speech synthesis and learning. It explored whether an initially imitative, sensor-connected system could discover its own logic for learning to speak without a predefined corpus. ORETH also names the artistic signature used for Palimpsests.",
       summary:
-        "Audio analysis, bio-inspired learning, sonic structures and ML experimentation.",
+        "Archived speech-synthesis research prototype; artistic signature for Palimpsests.",
       discipline: ["Music", "Technology", "Research"],
       medium: ["Software", "Research"],
       tags: ["Python", "Signal Processing", "Machine Learning", "Bio-inspired", "Audio Intelligence", "Palimpsests"],
@@ -197,9 +197,9 @@ window.EA_ENTITIES = {
         era: "foundation",
       },
       description:
-        "Forge is Electronic Artefacts’ internal Rust engine for reproducible artefact pipelines. It turns controlled inputs into inspectable outputs, beginning with video-to-3D object reconstruction and quality-gated refinement.",
+        "Forge is Electronic Artefacts’ internal R&D software for reproducible artefact pipelines and collaboration work. It is available on request to partners and collaborators, not as a public product.",
       summary:
-        "Internal Rust engine for traceable artefact production, refinement and release validation.",
+        "Internal R&D software for traceable artefact production, available on request for collaborations and partnerships.",
       discipline: ["Creative Technology", "Computational Imaging", "Pipeline Engineering"],
       medium: ["Rust Software", "Photogrammetry", "Research"],
       tags: ["Rust", "Artifact Ultra", "Video to 3D Object", "Photogrammetry", "Quality Gates", "8K Texture Atlas"],
@@ -1056,7 +1056,7 @@ window.EA_ENTITIES = {
     {
       id: "void",
       title: "VOID",
-      subtitle: "Experimental Software Engine",
+      subtitle: "Archived Reality-Modeling Research",
       kind: "researchField",
       type: "Experimental Software Engine",
       status: "archived",
@@ -1072,9 +1072,9 @@ window.EA_ENTITIES = {
         era: "foundation",
       },
       description:
-        "VOID was one of the earliest software research projects developed within Electronic Artefacts. Originally conceived as an experimental engine, the project played a major role in shaping later reflections around systems architecture, modularity and creative technology.",
+        "VOID is an archived codebase and one of the earliest research projects developed within Electronic Artefacts. It investigated how reality itself might be modeled in software, rather than how to build a conventional business program. Its fractal and systems thinking became a theoretical foundation for later runtime work, especially VASTE.",
       summary:
-        "Archived software engine that shaped later work on architecture, modularity and creative technology.",
+        "Archived reality-modeling research that shaped fractal systems thinking and the theoretical foundations of VASTE.",
       discipline: ["Research", "Systems", "Technology"],
       medium: ["Research", "Software"],
       tags: ["Rust", "Experimental Engine", "Architecture", "Modularity", "Creative Technology"],
@@ -1876,13 +1876,13 @@ window.EA_ENTITIES = {
     },
     {
       id: "vestiges",
-      title: "Vestiges",
-      subtitle: "Living Knowledge Infrastructure",
+      title: "V6",
+      subtitle: "Art and Craft Mapping Platform",
       kind: "project",
       type: "Knowledge Infrastructure Platform",
       category: "Platform",
       status: "development",
-      statusLabel: "In development",
+      statusLabel: "In development / 2027 target",
       maturity: "prototype",
       confidence: "observed",
       visibility: "public",
@@ -1897,12 +1897,12 @@ window.EA_ENTITIES = {
       medium: ["Software", "Interactive", "Data", "3D"],
       discipline: ["Technology", "Knowledge Graphs", "Culture", "Craft", "Design"],
       description:
-        "Flagship VASTE platform for mapping, preserving and activating living know-how across people, practices, materials, places and institutions.",
-      summary: "Living knowledge infrastructure for culture, craft, provenance and professional collaboration.",
-      mission: "Make human know-how documentable, connected, trustworthy and usable across generations.",
-      coreResource: "Knowledge",
+        "Future platform for mapping art and craft practices and developing CRM-oriented workflows as an applied test context for VASTE.",
+      summary: "Future art and craft mapping and CRM platform; applied VASTE test context.",
+      mission: "Test how art and craft practices can be mapped and managed as connected context.",
+      coreResource: "Art and craft relationships",
       productPosition:
-        "Vestiges is the flagship public application of VASTE. It is not a directory, encyclopedia or marketplace with content attached: its durable asset is a trusted graph of living knowledge.",
+        "V6 is a future applied test platform for VASTE. It will map art and craft practices and develop CRM-oriented workflows; it is not yet a live public service.",
       graphPrinciple:
         "Every person, organisation, technique, material, tool, work, place, project and document receives a durable identity. Teaching, making, using, restoring, supplying and certifying remain explicit, navigable and historised.",
       graphNodeTypes: [
@@ -2015,7 +2015,7 @@ window.EA_ENTITIES = {
       relatedPrograms: ["vaste", "forge"],
       links: [
         { label: "Explore VASTE", href: "https://www.vaste.space/" },
-        { label: "Instagram @vestiges.world", href: "https://www.instagram.com/vestiges.world/" },
+        { label: "V6 research platform", href: "./projects.html" },
       ],
     },
     {
@@ -2025,11 +2025,11 @@ window.EA_ENTITIES = {
       kind: "project",
       type: "External Creative Organisation",
       category: "External Collaboration",
-      status: "development",
-      statusLabel: "External CTO partnership",
-      maturity: "research",
+      status: "archived",
+      statusLabel: "Unpublished archive",
+      maturity: "archived",
       confidence: "observed",
-      visibility: "public",
+      visibility: "archive",
       temporality: {
         creationYear: "2025",
         creationDate: "2025-01-01",
@@ -2044,9 +2044,9 @@ window.EA_ENTITIES = {
       medium: ["Software", "Interactive", "Research"],
       discipline: ["Technology", "Systems", "Development", "Architecture", "Research"],
       description:
-        "UnionMob is an independent creative organisation and external project owned and led by Zarah Nkounkou. Electronic Artefacts contributes as technological collaborator and CTO, rather than as owner or author of the UnionMob brand.",
+        "UnionMob is an unpublished external collaboration archive. It was an independent creative organisation owned and led by Zarah Nkounkou; Electronic Artefacts contributed as technological collaborator and CTO, rather than as owner or author of the UnionMob brand.",
       summary:
-        "Independent creative organisation led by Zarah Nkounkou, with Electronic Artefacts serving as technological collaborator and CTO.",
+        "Unpublished external collaboration archive led by Zarah Nkounkou, with Electronic Artefacts as technological collaborator and CTO.",
       coreIdea:
         "The collaboration explores a bio-inspired organisational model where participants evolve through capabilities, facets and governed contexts, supported by a dedicated technical operating system.",
       theme: "Independent creative ecosystem supported by external CTO leadership",
@@ -2315,8 +2315,8 @@ window.EA_ENTITIES = {
       kind: "project",
       type: "Client Work / Photography Ecosystem",
       category: "Client Work",
-      status: "active",
-      maturity: "production",
+      status: "delivered",
+      maturity: "delivered",
       confidence: "published",
       visibility: "public",
       temporality: {
@@ -2328,8 +2328,8 @@ window.EA_ENTITIES = {
       },
       medium: ["Photography", "Visual", "Software"],
       discipline: ["Photography", "Branding", "UX", "UI"],
-      description: "Photography CRM and portfolio ecosystem presented as a clean live system.",
-      summary: "Photography CRM and portfolio ecosystem.",
+      description: "Delivered client product for L’Œil de Meg: a photography CRM and portfolio ecosystem.",
+      summary: "Delivered client photography CRM and portfolio product.",
       tags: ["Photography", "Client Work"],
       media: {
         folder: "./assets/media/projects/oeil-de-meg",

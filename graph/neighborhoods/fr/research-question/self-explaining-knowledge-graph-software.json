@@ -14,8 +14,8 @@
     {
       "id": "ea:project:vestiges-fr",
       "type": "project",
-      "title": "Vestiges",
-      "route": "/fr/projects/vestiges/",
+      "title": "V6",
+      "route": "/fr/projects/v6/",
       "status": "development",
       "confidence": "observed"
     },
@@ -195,7 +195,7 @@
       "target": "ea:project:vestiges-fr",
       "predicate": "implementedBy",
       "label": "Implemented by",
-      "statement": "Vestiges is listed as a current software or project answer for the research question \"How can software become explainable through its own knowledge graph?\".",
+      "statement": "V6 is listed as a current software or project answer for the research question \"How can software become explainable through its own knowledge graph?\".",
       "confidence": "validated"
     },
     {

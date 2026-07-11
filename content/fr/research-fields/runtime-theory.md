@@ -6,7 +6,7 @@ slug:
 title: Théorie du runtime
 subtitle: Champ de recherche
 abstract: Runtime Theory étudie les identités, relations, contextes et primitives d’événement nécessaires pour qu’un système exécutable reste cohérent.
-description: Champ de recherche actif d’Electronic Artefacts reliant les premiers travaux VOID, VASTE et la définition d’un runtime de graphe.
+description: Champ de recherche actif d’Electronic Artefacts reliant le code archivé de VOID, ARCA, VASTE et la définition d’un runtime de graphe.
 locale: fr
 visibility: public
 publicationClass: canonical
@@ -59,7 +59,7 @@ Runtime Theory demande ce qui est minimalement nécessaire pour qu’un univers 
 
 ## Origine
 
-Le champ prolonge des expérimentations logicielles associées à VOID, puis à ARCA. Ces travaux ont déplacé la recherche d’un moteur borné vers des questions plus générales sur les systèmes d’information et les environnements d’exécution.
+Le champ prolonge VOID, une base de code archivée qui cherchait à modéliser la réalité elle-même dans un programme plutôt qu’à construire un logiciel métier conventionnel. Ses recherches sur les pensées fractales, les systèmes et leur unification ont posé une part importante des fondations théoriques actuelles. VOID a ensuite nourri ARCA et, plus directement, VASTE, son successeur dans cette lignée runtime.
 
 ## Position actuelle
 
@@ -71,7 +71,7 @@ Le champ avance par modèles d’architecture, prototypes, notes d’implémenta
 
 ## Applications
 
-Vestiges applique Runtime Theory à une plateforme de connaissance culturelle. Sa thèse publique dépend d’entités adressables et de relations historisées, tandis que son modèle opérationnel exige permissions, contexte de contribution et propagation contrôlée.
+V6 applique Runtime Theory à une plateforme de connaissance culturelle. Sa thèse publique dépend d’entités adressables et de relations historisées, tandis que son modèle opérationnel exige permissions, contexte de contribution et propagation contrôlée.
 
 ## Questions ouvertes
 

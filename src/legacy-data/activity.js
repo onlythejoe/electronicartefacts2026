@@ -26,10 +26,10 @@ window.EA_ACTIVITY = [
   {
     id: "activity-004",
     type: "research_updated",
-    title: "Vestiges product definition aligned",
+    title: "V6 platform definition aligned",
     entityId: "vestiges",
     date: "2026-06-22",
-    summary: "VASTE flagship positioning, knowledge graph model and long-term mission documented.",
+    summary: "Future V6 mapping and CRM research context documented.",
   },
   {
     id: "activity-005",

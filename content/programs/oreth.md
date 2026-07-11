@@ -4,14 +4,14 @@ type: program
 slug:
   canonical: oreth
 title: ORETH
-subtitle: Audio Intelligence Program
-abstract: ORETH is an Electronic Artefacts audio intelligence and artistic research program concerned with signal analysis, pattern detection, memory, machine listening and experimental music production.
-description: A public program record for ORETH as both an audio research system and the technical-cultural layer connected to Palimpsests.
+subtitle: Archived Speech-Synthesis Research Prototype
+abstract: ORETH is an archived Electronic Artefacts R&D prototype that explored how an initially imitative speech system could learn to speak from sensor-based experience rather than a fixed corpus. ORETH also signs the album Palimpsests.
+description: A public record that distinguishes ORETH’s archived speech-synthesis research prototype from its current artistic signature on Palimpsests.
 locale: en
 visibility: public
 publicationClass: canonical
-status: prototype
-maturity: prototype
+status: archived
+maturity: archived
 confidence: observed
 version:
   version: 1.0.0
@@ -21,25 +21,22 @@ version:
 authors:
   - id: ea:organization:electronic-artefacts
 publisher: ea:organization:electronic-artefacts
-mandate: Develop an audio research program that connects machine listening, signal analysis, pattern recognition and artistic production.
+mandate: Investigate whether a sensor-connected artificial system could progress from imitation toward self-organized speech without relying on a predefined corpus.
 domain: Audio Intelligence
 capabilities:
-  - Frequency-domain observation
-  - Event and transient detection
-  - Pattern recognition across sonic material
-  - Machine-listening research
-  - Experimental music production
-  - Audio archive interpretation
-  - Palimpsests research support
+  - Sensor-informed speech research
+  - Adaptive vocal learning experiments
+  - Signal observation and pattern analysis
+  - Prototype interfaces and research notes
 architecture:
   - Signal capture and preparation layer
   - Analysis and feature extraction layer
   - Pattern interpretation layer
   - Artistic production and archive layer
 lifecycle:
-  - Concept foundation in 2024
-  - Prototype research around audio analysis in 2025
-  - Palimpsests-linked publication layer in 2026
+  - Internal R&D prototype
+  - Archived technical research
+  - Artistic signature for Palimpsests
 maintainers:
   - id: ea:organization:electronic-artefacts
 tags:
@@ -59,40 +56,29 @@ disciplines:
 
 ## Mandate
 
-ORETH is the Electronic Artefacts program that treats sound as both material and evidence. It connects practical audio production with research questions about signal, memory, pattern, noise and listening systems.
+ORETH was an internal R&D prototype for speech synthesis and learning. Its original premise was deliberately unusual: begin with an imitative, “parrot” form of artificial intelligence, connect it to sensors, and investigate whether it could discover its own logic for learning to speak rather than be trained from a predefined speech corpus.
 
-The program is not only a music identity. It is a research layer for studying how sonic material can be observed, segmented, transformed and preserved without reducing it to a neutral file. A recorded fragment can be a composition, a sample, a trace of a session, a clue about a process, a cultural artefact and a future training object at the same time.
+The work is archived. It is not a product, a public service or a current software offer. The record preserves the research intent and its technical lineage without presenting the prototype as a deployed system.
 
 ## Research position
 
-ORETH sits between audio engineering, machine listening, sound design and archive work. Its current position is deliberately experimental: it uses analysis as a way to understand sonic structure, but it does not treat automated analysis as a replacement for artistic judgment.
-
-The program is connected to Palimpsests because that project makes memory, inheritance and transmission explicit. A palimpsest is a surface overwritten by later marks while earlier traces remain partly visible. In sound, the same logic appears through saturation, sampling, room tone, compression history, noise floors, spectral residue and repeated motifs.
+The prototype explored speech as an emergent relation between perception, signal, feedback and expression. Its research questions concerned adaptive learning, sensor-informed experience and the conditions under which a system can form vocal behavior. These experiments are historical research, not claims about a finished model or autonomous system.
 
 ## Technical scope
 
-The technical scope includes frequency-domain analysis, onset and transient detection, segment comparison, signal annotation, audio feature extraction, visual inspection, prototype interfaces and research notes.
-
-Early experiments around Python audio tooling, numerical analysis and visual plotting inform the program, but the public record focuses on concepts and methods rather than promising a specific production package.
+The technical record includes experimental audio and signal work, adaptive-learning hypotheses, prototype interfaces and research notes. It documents an exploratory program rather than a reproducible production package.
 
 ## Artistic scope
 
-ORETH also names the public artistic layer that carries the Palimpsests cycle. The artistic output should remain legible as music first. The research layer explains how listening, analysis and memory interact, but it should not turn the work into a technical demonstration.
+ORETH also names the artistic signature used for *Palimpsests*. This is a distinct use of the name: the album is signed by ORETH, while the historical prototype remains archived. The music should be understood as an artistic work, not as a demonstration of the R&D system.
 
 ## Applications
 
-The program supports:
-
-- machine-listening research for creative use;
-- annotation of audio artefacts and recordings;
-- sonic archives where provenance matters;
-- composition systems built around recurrence and transformation;
-- essays on signal, memory, entropy and musical form;
-- future tools that help creators inspect and preserve audio process.
+The public record supports research interpretation, archival context and the cultural presentation of *Palimpsests*. It does not offer a product, model, API or production system.
 
 ## Limitations
 
-ORETH is an active prototype program. Public claims should remain scoped to documented concepts, project records and preserved artefacts. Performance claims, model claims and production-system claims require separate evidence before they become canonical.
+ORETH is archived. Public claims remain limited to the preserved prototype, its documented research questions and the distinct artistic use of the name. No performance, model or production-system claim is implied.
 
 ## References
 

@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/projects/palimpsests/#webpage",
       "url": "https://electronicartefacts.com/projects/palimpsests/",
       "name": "Palimpsests",
-      "description": "A canonical project record for Palimpsests as a compound audio, visual and research publication within Electronic Artefacts.",
+      "description": "A canonical record for Palimpsests as an ORETH album and a demonstration of Electronic Artefacts’ capacity to produce music, media and cultural campaigns.",
       "inLanguage": "en",
       "datePublished": "2026-06-23",
       "dateModified": "2026-06-23",
@@ -35,8 +35,8 @@
       "@id": "https://electronicartefacts.com/id/project/palimpsests/",
       "identifier": "ea:project:palimpsests",
       "name": "Palimpsests",
-      "abstract": "Palimpsests is an Electronic Artefacts cultural project and conceptual album cycle connected to ORETH, memory, inheritance, transmission, entropy, signal and layered artistic production.",
-      "description": "Palimpsests is an Electronic Artefacts cultural project and conceptual album cycle connected to ORETH, memory, inheritance, transmission, entropy, signal and layered artistic production.",
+      "abstract": "Palimpsests is a five-chapter conceptual album signed by ORETH. It follows the evolution of a system through digital culture, memory, transformation and transmission.",
+      "description": "Palimpsests is a five-chapter conceptual album signed by ORETH. It follows the evolution of a system through digital culture, memory, transformation and transmission.",
       "url": "https://electronicartefacts.com/projects/palimpsests/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/projects/palimpsests/#webpage"
@@ -81,7 +81,7 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 306
+      "wordCount": 282
     },
     {
       "@type": "Organization",

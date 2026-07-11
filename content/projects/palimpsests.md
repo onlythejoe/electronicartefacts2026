@@ -4,9 +4,9 @@ type: project
 slug:
   canonical: palimpsests
 title: Palimpsests
-subtitle: Conceptual Audio Publication
-abstract: Palimpsests is an Electronic Artefacts cultural project and conceptual album cycle connected to ORETH, memory, inheritance, transmission, entropy, signal and layered artistic production.
-description: A canonical project record for Palimpsests as a compound audio, visual and research publication within Electronic Artefacts.
+subtitle: Five-Chapter Album by ORETH
+abstract: Palimpsests is a five-chapter conceptual album signed by ORETH. It follows the evolution of a system through digital culture, memory, transformation and transmission.
+description: A canonical record for Palimpsests as an ORETH album and a demonstration of Electronic Artefacts’ capacity to produce music, media and cultural campaigns.
 locale: en
 visibility: public
 publicationClass: canonical
@@ -22,8 +22,8 @@ authors:
   - id: ea:organization:electronic-artefacts
 publisher: ea:organization:electronic-artefacts
 category: cultural
-brief: Publish a compound audio and research work around memory, inheritance, transmission and layered cultural traces.
-context: Palimpsests extends Electronic Artefacts beyond software and portfolio surfaces by treating music, images, notes and archives as one connected cultural publication.
+brief: Publish a five-chapter ORETH album about the evolution of a system across digital culture, memory, transformation and transmission.
+context: Palimpsests shows that Electronic Artefacts can produce music, media and cultural campaigns alongside software and research.
 stakeholders:
   - id: ea:organization:electronic-artefacts
 constraints:
@@ -31,9 +31,9 @@ constraints:
   - Keep research context useful without over-explaining the music.
   - Maintain provenance across audio, visual, textual and archival fragments.
 approach:
-  - Treat the album cycle as a compound publication rather than a single static release.
-  - Connect audio artefacts, visual references, research notes and concepts through typed relations.
-  - Use ORETH as the audio research layer for signal, listening and pattern interpretation.
+  - Structure the album in five chapters that trace a system’s evolution.
+  - Connect audio, visual and editorial material without reducing the album to a technical case study.
+  - Present ORETH as the artistic signature, distinct from the archived R&D prototype of the same name.
 outputs:
   - id: ea:project:palimpsests
 outcomes:
@@ -82,25 +82,23 @@ disciplines:
 
 ## Project thesis
 
-Palimpsests is a compound artistic publication built around layered memory. It uses the figure of the palimpsest to describe audio, image and research material that remains marked by previous states.
+Palimpsests is a conceptual album in five chapters, signed by ORETH. It follows the evolution of a system: how something emerges, accumulates memory, transforms, meets its limits and transmits what remains.
 
 Palimpsests is a cultural work before it is a technical case study. Its place within Electronic Artefacts reflects the studio’s belief that artistic production, software, research and archives are connected forms of knowledge.
 
 ## Concept
 
-A palimpsest is not a blank page. It is a surface that has carried earlier inscription, later erasure, partial rewriting and residual visibility. The project applies that idea to sound and digital culture: memory is not only stored, it is overwritten, compressed, distorted, recovered and reinterpreted.
+A palimpsest is not a blank page. It is a surface that has carried earlier inscription, later erasure, partial rewriting and residual visibility. The album uses that image to address digital life: information is stored, overwritten, compressed, distorted, recovered and reinterpreted.
 
 In audio, this appears through spectral residue, recurring motifs, degraded textures, room traces, sample memory and production decisions that leave audible marks. In archive work, it appears when a record survives with missing metadata, unstable context or uncertain provenance.
 
-## Relation to ORETH
+## ORETH signature
 
-ORETH supplies the audio research layer behind Palimpsests. It gives the project a language for signal, pattern, machine listening and sonic evidence without requiring the music to behave like documentation.
-
-The relationship is reciprocal. ORETH provides methods and questions. Palimpsests provides material, constraints and public form.
+Palimpsests is signed by ORETH. This artistic use of the name is separate from ORETH’s archived speech-synthesis R&D prototype. The album is a musical work; it does not claim to demonstrate or release that historical system.
 
 ## Knowledge role
 
-Palimpsests is useful for the Knowledge Hub because it demonstrates how cultural works can become graph nodes without becoming promotional case studies. It connects audio engineering, signal archaeology, digital preservation, visual culture, memory studies and generative systems.
+Palimpsests demonstrates the studio’s ability to produce music, media and cultural campaigns. Its public materials can connect sound, image, editorial work and research references while keeping the album’s artistic autonomy intact.
 
 ## Archive role
 
@@ -108,4 +106,4 @@ The project should preserve not only final releases but also references, visual 
 
 ## Status
 
-Palimpsests is active as a cultural dossier and publication model. Additional audio artefacts, notes, concept pages and relations can be added as the public evidence layer matures.
+Palimpsests is in active cultural production. The public dossier will grow with the album, its media and its editorial material as they are released.

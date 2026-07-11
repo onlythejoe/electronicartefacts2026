@@ -334,7 +334,7 @@
 <h2 id="electronic-artefacts-applications">Electronic Artefacts applications</h2>
 <p>VASTE should treat prompt injection as a core runtime concern. Any future assistant that reads the Knowledge Hub, edits relations, drafts archive metadata or calls MCP tools should assume that retrieved content is untrusted.</p>
 <p>The public site can also model good practice. Articles can cite sources, expose provenance and link entities without turning visible content into executable instructions. The graph remains the authority layer.</p>
-<p>For Palimpsests, ORETH and Vestiges, this matters because archives contain heterogeneous material: notes, filenames, captions, transcripts, comments and embedded metadata. All of it can inform interpretation. None of it should silently control tools.</p>
+<p>For Palimpsests, ORETH and V6, this matters because archives contain heterogeneous material: notes, filenames, captions, transcripts, comments and embedded metadata. All of it can inform interpretation. None of it should silently control tools.</p>
 <h2 id="implementation">Implementation</h2>
 <p>Start by classifying context into authority levels: system policy, developer workflow, user request, trusted internal record, retrieved public source, untrusted external source and model output. Keep those levels visible in prompts and code.</p>
 <p>Enforce permissions outside the model. Use allowlisted tools, typed schemas, relation validation, approval gates and output sanitization. For retrieval, apply access control before context assembly and label sources as evidence.</p>

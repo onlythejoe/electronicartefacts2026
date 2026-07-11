@@ -58,7 +58,7 @@ tags:
   - Living Archive
   - Provenance
   - Palimpsests
-  - Vestiges
+  - V6
 disciplines:
   - archives
   - art numérique

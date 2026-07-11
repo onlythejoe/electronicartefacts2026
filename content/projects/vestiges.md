@@ -2,11 +2,11 @@
 id: ea:project:vestiges
 type: project
 slug:
-  canonical: vestiges
-title: Vestiges
-subtitle: Living Knowledge Infrastructure
-abstract: Vestiges is the flagship VASTE platform for mapping, preserving and activating living know-how across people, practices, materials, places and institutions.
-description: A knowledge-first product where provenance, contribution, discovery and professional services grow from one historized graph.
+  canonical: v6
+title: V6
+subtitle: Art and Craft Mapping Platform
+abstract: V6 is a future platform that will map art and craft practices and develop CRM-oriented workflows as an applied test context for VASTE.
+description: An in-development VASTE test platform for art, craft, mapping and relationship management, targeted for 2027.
 locale: en
 visibility: public
 publicationClass: canonical
@@ -14,130 +14,78 @@ status: development
 maturity: prototype
 confidence: observed
 version:
-  version: 1.1.0
+  version: 1.2.0
   createdAt: "2025-01-01"
   publishedAt: "2026-06-22"
-  modifiedAt: "2026-06-24"
-  changeSummary: Refined product positioning, public editorial structure and social channel.
+  modifiedAt: "2026-07-11"
+  changeSummary: Repositioned as V6, an in-development VASTE test platform.
 authors:
   - id: ea:organization:electronic-artefacts
 publisher: ea:organization:electronic-artefacts
 category: internal
-brief: Create a durable public and professional infrastructure where living know-how can be documented, connected, trusted and put back into practice.
-context: Human know-how is distributed across people, workshops, institutions, materials, places and documents. Conventional directories and content systems isolate those elements, erase provenance and make transmission difficult.
+brief: Build a future art and craft mapping platform with CRM-oriented workflows as an applied test context for VASTE.
+context: Art and craft practices are distributed across people, workshops, institutions, materials, places and documents. V6 will explore how those relationships can be mapped and managed without flattening their context.
 stakeholders:
   - id: ea:organization:electronic-artefacts
 constraints:
-  - Preserve authorship, provenance and change over time.
-  - Support distributed contribution without weakening editorial trust.
-  - Keep knowledge primary while enabling services, learning and exchange.
-  - Make complex relations understandable to public and professional audiences.
+  - Preserve the context and provenance of mapped practices.
+  - Do not present the platform as a live service before it is available.
+  - Keep V6 distinct from the future VASTE product it helps to test.
 approach:
-  - Model people, organizations, techniques, materials, tools, works, places and documents as durable identities.
-  - Make teaching, making, using, restoring, supplying and certifying explicit, navigable and historized.
-  - Govern contribution through attributable roles, review states and contextual permissions.
-  - Use VASTE to coordinate graph identity, context, events and public projection.
+  - Map people, organizations, practices, materials, tools, works, places and documents as connected entities.
+  - Explore CRM workflows suited to art and craft.
+  - Use VASTE as the runtime research foundation for graph identity, context, events and public projection.
 outputs:
   - id: ea:project:vestiges
 outcomes:
-  - A knowledge-first platform architecture grounded in stable entities and typed relations.
-  - A public discovery model built from canonical knowledge pages and navigable relation paths.
-  - A contribution model connecting attribution, review, validation and governance.
-  - A professional layer where services, learning and collaboration emerge from trusted knowledge.
+  - A future art and craft mapping and CRM platform.
+  - An applied VASTE test context.
 evidence:
-  - id: ea:publication:foundational-lineage-001
+  - id: ea:program:vaste
 credits:
   - id: ea:organization:electronic-artefacts
 media:
-  - id: vestiges-logo
+  - id: v6-logo
     type: image
     src: /assets/media/projects/vestiges/logo-vestiges.png
-    alt: Vestiges monogram
-    caption: Vestiges monogram for the living knowledge platform.
-visualLanguage:
-  - Black
-  - White
-  - Ivory
-textures:
-  - Living graph
-  - Archival trace
-  - Editorial precision
-symbols:
-  - Monogram
-  - Trace
-  - Transmission
+    alt: V6 monogram
+    caption: V6 monogram for the future art and craft platform.
 tags:
-  - Vestiges
+  - V6
   - VASTE
-  - Knowledge Graph
+  - Art
   - Craft
-  - Culture
-  - Cultural Infrastructure
+  - CRM
+  - Mapping
 disciplines:
   - Technology
-  - Knowledge Graphs
-  - Culture
+  - Art
   - Craft
   - Design
 developmentFocus:
-  - Stable graph identity
-  - Provenance and history
+  - Practice mapping
+  - Relationship management
+  - Graph identity
   - Contextual permissions
-  - Contribution workflows
-  - Public knowledge projection
-  - Graph search and discovery
+  - Public projection
 marketingFocus:
-  - Living knowledge
-  - Cultural transmission
-  - Trusted contribution
-  - Public discovery
-  - Professional collaboration
-  - Long-term infrastructure
-socialLinks:
-  - label: Instagram @vestiges.world
-    href: https://www.instagram.com/vestiges.world/
+  - Art and craft mapping
+  - CRM research
+  - VASTE test platform
 ---
 
 ## Position
 
-Vestiges is the flagship public application of VASTE: a living knowledge infrastructure for culture, craft and human know-how. It is not a directory, an encyclopedia or a marketplace with editorial content attached. Its primary asset is a trusted graph of people, practices, materials, places, works and institutions.
+V6 is a future platform for mapping art and craft practices and developing CRM-oriented workflows. It is being prepared as an applied test context for VASTE, with domains and social presences reserved ahead of activation.
 
-## The problem
+## Platform thesis
 
-Know-how is rarely contained in one source. It moves through apprenticeship, gestures, tools, workshops, documents, schools, territories and repeated practice. When those elements are reduced to isolated profiles or articles, the paths of transmission disappear. Vestiges is designed to preserve those paths without freezing living practices into a static archive.
+The platform will treat relationships, practices, materials, people and places as connected context rather than disconnected records. Mapping and CRM workflows will be explored as one coherent system.
 
-## Product thesis
+## Applied VASTE research
 
-Knowledge comes first. Public pages, professional profiles, learning resources, project opportunities and economic services all grow from the same structured graph. A transaction can happen inside Vestiges, but it should remain connected to the knowledge, provenance and relationships that make it meaningful.
-
-## The living graph
-
-Every person, organization, technique, material, tool, work, place, project and document receives a durable identity. Relationships such as teaches, uses, makes, restores, supplies, certifies and participates in remain explicit, navigable and historized. The graph can therefore answer questions that a folder, feed or directory cannot.
-
-## Contribution and trust
-
-Vestiges is designed for distributed contribution with clear responsibility. Additions remain attributable, reviewable and contextual. Practitioners, institutions, schools, researchers and cultural organizations can contribute from different positions without collapsing expertise into a single anonymous voice.
-
-## Public discovery
-
-Each public node can expose a canonical page with a description, media, history, sources and connected entities. Discovery emerges from relation paths: a material leads to a technique, a technique to a practitioner, a practitioner to a place, a school, a work or a document. Search visibility is a projection of the knowledge model rather than a separate publishing layer.
-
-## Professional activation
-
-Trusted knowledge can support professional workspaces, project matching, training pathways, commissions, institutional research, specialist services and APIs. These functions sit on top of the graph. They do not replace its cultural and documentary purpose.
-
-## VASTE foundation
-
-VASTE provides the runtime foundation for identity, context, permissions, events and graph execution. It allows Vestiges to distinguish public knowledge from private working context, coordinate contribution states and preserve the history of entities and relationships as the platform evolves.
-
-## Current evidence
-
-The current public evidence is architectural: the product definition, entity and relation models, contribution logic, public-page strategy, visual identity and documented relationship to VASTE. Product availability, adoption and performance claims will be added only when they can be substantiated.
+V6 is intended to test VASTE in an art and craft context: addressable entities, typed relationships, contextual identity, permissions, events and public projections. It is a research application, not evidence of a released VASTE product.
 
 ## Development status
 
-Vestiges is in active development. The public record describes the product thesis and current architecture; interfaces, implementation details and access conditions will evolve through documented releases.
-
-## Public channel
-
-Follow the visual and editorial development of the platform on [Instagram @vestiges.world](https://www.instagram.com/vestiges.world/).
+V6 is in development with a target horizon of 2027. Its public presence, interfaces and access conditions will activate through documented releases. Until then, the record describes an intended platform and its research role, not a live service.

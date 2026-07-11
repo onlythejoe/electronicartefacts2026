@@ -127,7 +127,7 @@ test("project pages hide non-public references and internal relations", async ()
 
   assert.doesNotMatch(html, /Hidden Project Reference/);
   assert.doesNotMatch(html, /Internal-only delivery detail/);
-  assert.equal(routeIndex(entities)[project.id], "/projects/vestiges/");
+  assert.equal(routeIndex(entities)[project.id], "/projects/v6/");
 });
 
 test("editorial and publication renderers hide non-public typed references", async () => {

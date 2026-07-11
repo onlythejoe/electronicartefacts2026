@@ -6,7 +6,7 @@ slug:
 title: Runtime Theory
 subtitle: Research field
 abstract: Runtime Theory investigates the minimum identities, relations, contexts and event primitives required for a coherent executable system.
-description: An active Electronic Artefacts research field connecting early VOID experiments, VASTE and the definition of graph runtime.
+description: An active Electronic Artefacts research field connecting the archived VOID codebase, ARCA, VASTE and the definition of graph runtime.
 locale: en
 visibility: public
 publicationClass: canonical
@@ -58,7 +58,7 @@ Runtime Theory asks what is minimally necessary for a universe of entities to ex
 
 ## Origin
 
-The field grew from early software-engine experiments associated with VOID and later informed ARCA. Those experiments shifted from building a bounded engine toward more general questions about information systems and execution environments.
+The field grew from VOID, an archived codebase that investigated how reality itself might be modeled in software rather than how to build a conventional business program. Its work on fractal thinking, systems and unification became an important theoretical foundation. VOID later informed ARCA and, more directly, VASTE, its successor in the runtime lineage.
 
 ## Current position
 
@@ -70,7 +70,7 @@ The field advances through architecture models, prototypes, implementation notes
 
 ## Applications
 
-Vestiges applies Runtime Theory to a cultural knowledge platform. Its public thesis depends on addressable entities and historized relationships, while its operational model requires permissions, contribution context and controlled propagation.
+V6 applies Runtime Theory to a cultural knowledge platform. Its public thesis depends on addressable entities and historized relationships, while its operational model requires permissions, contribution context and controlled propagation.
 
 ## Open questions
 

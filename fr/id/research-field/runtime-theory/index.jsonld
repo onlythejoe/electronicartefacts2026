@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/research/fields/runtime-theory/#webpage",
       "url": "https://electronicartefacts.com/fr/research/fields/runtime-theory/",
       "name": "Théorie du runtime",
-      "description": "Champ de recherche actif d’Electronic Artefacts reliant les premiers travaux VOID, VASTE et la définition d’un runtime de graphe.",
+      "description": "Champ de recherche actif d’Electronic Artefacts reliant le code archivé de VOID, ARCA, VASTE et la définition d’un runtime de graphe.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-07-04",
@@ -76,7 +76,7 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 210
+      "wordCount": 237
     },
     {
       "@type": "Organization",

@@ -217,7 +217,7 @@ The challenge is performance. General semantic models may need compiled or speci
 
 ## Domain OS for culture
 
-Vestiges illustrates a cultural domain OS. The shared primitives include people, organizations, techniques, materials, tools, places, documents and works. Relations describe teaching, making, using, preserving and participating.
+V6 illustrates a cultural domain OS. The shared primitives include people, organizations, techniques, materials, tools, places, documents and works. Relations describe teaching, making, using, preserving and participating.
 
 Applications can include public knowledge pages, contribution workflows, institutional dashboards, learning paths and economic services. They share identity and provenance rather than operating as isolated databases.
 
@@ -279,7 +279,7 @@ Build one application that proves reuse, then a second application that consumes
 
 Add extension contracts only where repeated integration needs exist. Measure operational cost. Preserve exports and static public surfaces.
 
-For VASTE, Vestiges and the Knowledge Hub provide complementary proving grounds: runtime, applied product and public knowledge projection.
+For VASTE, V6 and the Knowledge Hub provide complementary proving grounds: runtime, applied product and public knowledge projection.
 
 ## Implementation
 
@@ -299,7 +299,7 @@ Read [Domain Operating System](/knowledge/concepts/domain-operating-system/), [G
 
 ## Related programs and projects
 
-See [VASTE](/programs/vaste/) and [Vestiges](/projects/vestiges/).
+See [VASTE](/programs/vaste/) and [V6](/projects/v6/).
 
 ## Glossary
 

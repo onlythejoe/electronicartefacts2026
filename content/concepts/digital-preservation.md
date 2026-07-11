@@ -6,7 +6,7 @@ slug:
 title: Digital Preservation
 definition: Digital preservation is the long-term work of keeping digital objects understandable, authentic, usable and accessible despite changes in formats, software, hardware and context.
 abstract: Digital preservation connects file formats, metadata, provenance, storage, rights, migration and interpretation into a long-term care practice for digital culture.
-description: A canonical definition of digital preservation for Electronic Artefacts archives, Palimpsests, Vestiges and knowledge infrastructure.
+description: A canonical definition of digital preservation for Electronic Artefacts archives, Palimpsests, V6 and knowledge infrastructure.
 locale: en
 visibility: public
 publicationClass: canonical
@@ -73,7 +73,7 @@ Digital objects are fragile in ways that are not always visible. A file can exis
 
 ## Electronic Artefacts position
 
-Electronic Artefacts treats digital preservation as part of the knowledge graph. An archive record should know what it is, where it came from, what it documents, what its rights are, and how it relates to projects or publications. This is especially relevant to Palimpsests, ORETH and Vestiges.
+Electronic Artefacts treats digital preservation as part of the knowledge graph. An archive record should know what it is, where it came from, what it documents, what its rights are, and how it relates to projects or publications. This is especially relevant to Palimpsests, ORETH and V6.
 
 ## Applications
 

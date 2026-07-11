@@ -6,7 +6,7 @@
       "@id": "https://electronicartefacts.com/fr/programs/oreth/#webpage",
       "url": "https://electronicartefacts.com/fr/programs/oreth/",
       "name": "ORETH",
-      "description": "Fiche publique du programme ORETH, à la fois système de recherche audio et couche technico-culturelle reliée à Palimpsests.",
+      "description": "Fiche publique distinguant le prototype archivé de synthèse vocale ORETH et sa signature artistique sur Palimpsests.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
       "dateModified": "2026-07-04",
@@ -34,8 +34,8 @@
       "@id": "https://electronicartefacts.com/fr/id/program/oreth/",
       "identifier": "ea:program:oreth-fr",
       "name": "ORETH",
-      "abstract": "ORETH relie intelligence audio, recherche artistique, signal, motifs, mémoire, écoute machine et production musicale expérimentale.",
-      "description": "ORETH relie intelligence audio, recherche artistique, signal, motifs, mémoire, écoute machine et production musicale expérimentale.",
+      "abstract": "ORETH est un prototype R&D interne archivé d’Electronic Artefacts. Il explorait l’apprentissage de la parole à partir de capteurs, sans corpus prédéfini. ORETH est aussi la signature artistique de l’album Palimpsests.",
+      "description": "ORETH est un prototype R&D interne archivé d’Electronic Artefacts. Il explorait l’apprentissage de la parole à partir de capteurs, sans corpus prédéfini. ORETH est aussi la signature artistique de l’album Palimpsests.",
       "url": "https://electronicartefacts.com/fr/programs/oreth/",
       "mainEntityOfPage": {
         "@id": "https://electronicartefacts.com/fr/programs/oreth/#webpage"
@@ -79,7 +79,7 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 377
+      "wordCount": 337
     },
     {
       "@type": "Organization",

@@ -14,9 +14,9 @@ test("builds required canonical and identifier routes", async () => {
   assert.equal(byId["ea:concept:graph-runtime"].route, "/knowledge/concepts/graph-runtime/");
   assert.equal(byId["ea:researchField:runtime-theory"].identifier, "/id/research-field/runtime-theory/");
   assert.equal(byId["ea:program:vaste"].route, "/programs/vaste/");
-  assert.equal(byId["ea:project:vestiges"].route, "/projects/vestiges/");
-  assert.equal(byId["ea:project:vestiges-fr"].route, "/fr/projects/vestiges/");
-  assert.equal(byId["ea:project:vestiges-fr"].identifier, "/fr/id/project/vestiges/");
+  assert.equal(byId["ea:project:vestiges"].route, "/projects/v6/");
+  assert.equal(byId["ea:project:vestiges-fr"].route, "/fr/projects/v6/");
+  assert.equal(byId["ea:project:vestiges-fr"].identifier, "/fr/id/project/v6/");
 });
 
 test("localizes non-default entity routes without changing English routes", async () => {
@@ -25,11 +25,11 @@ test("localizes non-default entity routes without changing English routes", asyn
   const frenchVestiges = {
     ...vestiges,
     locale: "fr",
-    slug: { canonical: "vestiges" },
+    slug: { canonical: "v6" },
   } as Entity;
 
-  assert.equal(routeForEntity(vestiges), "/projects/vestiges/");
-  assert.equal(routeForEntity(frenchVestiges), "/fr/projects/vestiges/");
+  assert.equal(routeForEntity(vestiges), "/projects/v6/");
+  assert.equal(routeForEntity(frenchVestiges), "/fr/projects/v6/");
 });
 
 test("allows the same slug in another locale when the entity id is distinct", async () => {
@@ -59,13 +59,13 @@ test("builds route alternates for translated entity groups", async () => {
   } as Entity;
 
   const alternates = buildI18nAlternates([...entities, frenchVestiges]);
-  assert.deepEqual(alternates["/projects/vestiges/"], {
-    en: "/projects/vestiges/",
-    fr: "/fr/projects/vestiges/",
+  assert.deepEqual(alternates["/projects/v6/"], {
+    en: "/projects/v6/",
+    fr: "/fr/projects/v6/",
   });
-  assert.deepEqual(alternates["/fr/projects/vestiges/"], {
-    en: "/projects/vestiges/",
-    fr: "/fr/projects/vestiges/",
+  assert.deepEqual(alternates["/fr/projects/v6/"], {
+    en: "/projects/v6/",
+    fr: "/fr/projects/v6/",
   });
 });
 

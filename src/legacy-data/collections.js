@@ -21,13 +21,13 @@ window.EA_COLLECTIONS = [
   },
   {
     id: "vestiges-collection",
-    title: "Vestiges Collection",
+    title: "V6 Collection",
     kind: "collection",
     type: "Collection",
     status: "development",
     visibility: "public",
-    summary: "Product, graph, culture and craft research connected to the Vestiges platform.",
-    rules: { entityIds: ["vestiges", "vaste", "graph-runtime-studies", "taxonomy-schema"], tags: ["Vestiges", "Knowledge Graph"], kinds: ["project", "program", "researchField", "researchLog", "artefact"] },
+    summary: "Research on art, craft, mapping and CRM connected to the future V6 platform.",
+    rules: { entityIds: ["vestiges", "vaste", "graph-runtime-studies", "taxonomy-schema"], tags: ["V6", "Knowledge Graph"], kinds: ["project", "program", "researchField", "researchLog", "artefact"] },
   },
   {
     id: "voice-capture-studio-collection",

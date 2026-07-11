@@ -3,7 +3,7 @@ window.EA_TAXONOMIES = {
     foundation: { label: "Foundation" },
     emergence: { label: "Emergence" },
     palimpsests: { label: "Palimpsests" },
-    vestiges: { label: "Vestiges" },
+    vestiges: { label: "V6" },
   },
   maturity: {
     concept: { label: "Concept" },

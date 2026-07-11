@@ -10,7 +10,7 @@ This file is generated from typed public records. Prefer each record's canonical
 - Canonical origin: https://electronicartefacts.com
 - Search endpoint: https://electronicartefacts.com/search/?q={search_term_string}
 - Public records: 232
-- Last curated source update: 2026-07-09
+- Last curated source update: 2026-07-11
 
 ## organization
 
@@ -29,25 +29,25 @@ This file is generated from typed public records. Prefer each record's canonical
 
 ## program
 
-- [ORETH](https://electronicartefacts.com/fr/programs/oreth/): Fiche publique du programme ORETH, à la fois système de recherche audio et couche technico-culturelle reliée à Palimpsests.
+- [ORETH](https://electronicartefacts.com/fr/programs/oreth/): Fiche publique distinguant le prototype archivé de synthèse vocale ORETH et sa signature artistique sur Palimpsests.
   - Entity ID: ea:program:oreth-fr
   - Identifier: https://electronicartefacts.com/fr/id/program/oreth/
   - JSON-LD: https://electronicartefacts.com/fr/id/program/oreth/index.jsonld
   - Modified: 2026-07-04
   - Keywords: ORETH, Intelligence audio, Écoute machine, Traitement du signal, Design sonore, Palimpsests, Musique expérimentale, Musique
-- [ORETH](https://electronicartefacts.com/programs/oreth/): A public program record for ORETH as both an audio research system and the technical-cultural layer connected to Palimpsests.
+- [ORETH](https://electronicartefacts.com/programs/oreth/): A public record that distinguishes ORETH’s archived speech-synthesis research prototype from its current artistic signature on Palimpsests.
   - Entity ID: ea:program:oreth
   - Identifier: https://electronicartefacts.com/id/program/oreth/
   - JSON-LD: https://electronicartefacts.com/id/program/oreth/index.jsonld
   - Modified: 2026-06-23
   - Keywords: ORETH, Audio Intelligence, Machine Listening, Signal Processing, Sound Design, Palimpsests, Experimental Music, Music
-- [VASTE](https://electronicartefacts.com/fr/programs/vaste/): Runtime propriétaire reliant Runtime Theory à des systèmes de graphe évaluables par dépôt encadré, pilotes, implémentation ou licence.
+- [VASTE](https://electronicartefacts.com/fr/programs/vaste/): VASTE relie Runtime Theory à un runtime en développement pour systèmes de graphe, exécution contextuelle, identité et mondes modulaires.
   - Entity ID: ea:program:vaste-fr
   - Identifier: https://electronicartefacts.com/fr/id/program/vaste/
   - JSON-LD: https://electronicartefacts.com/fr/id/program/vaste/index.jsonld
   - Modified: 2026-07-04
   - Keywords: VASTE, TypeScript, Graphe, Contexte, Identité, Simulation, Connaissance, Technologie
-- [VASTE](https://electronicartefacts.com/programs/vaste/): VASTE connects Runtime Theory to implemented graph systems and can be evaluated through scoped repository access, technical pilots, implementation work and licensing conversations.
+- [VASTE](https://electronicartefacts.com/programs/vaste/): VASTE connects Runtime Theory to an in-development runtime for graph systems, contextual execution, identity and modular world construction.
   - Entity ID: ea:program:vaste
   - Identifier: https://electronicartefacts.com/id/program/vaste/
   - JSON-LD: https://electronicartefacts.com/id/program/vaste/index.jsonld
@@ -56,30 +56,30 @@ This file is generated from typed public records. Prefer each record's canonical
 
 ## project
 
-- [Palimpsests](https://electronicartefacts.com/fr/projects/palimpsests/): Une œuvre musicale et éditoriale en cinq actes reliant recherche sonore, mémoire culturelle, archives et production visuelle.
+- [Palimpsests](https://electronicartefacts.com/fr/projects/palimpsests/): Une fiche canonique pour Palimpsests, album d’ORETH et démonstration de la capacité d’Electronic Artefacts à produire musique, médias et campagnes culturelles.
   - Entity ID: ea:project:palimpsests-fr
   - Identifier: https://electronicartefacts.com/fr/id/project/palimpsests/
   - JSON-LD: https://electronicartefacts.com/fr/id/project/palimpsests/index.jsonld
-  - Modified: 2026-06-25
-  - Keywords: Palimpsests, ORETH, Musique, Mémoire, Archives, Art sonore, Image, Recherche
-- [Palimpsests](https://electronicartefacts.com/projects/palimpsests/): A canonical project record for Palimpsests as a compound audio, visual and research publication within Electronic Artefacts.
+  - Modified: 2026-07-11
+  - Keywords: Palimpsests, ORETH, Musique, Culture numérique, Mémoire, Transmission, Art sonore, Image
+- [Palimpsests](https://electronicartefacts.com/projects/palimpsests/): A canonical record for Palimpsests as an ORETH album and a demonstration of Electronic Artefacts’ capacity to produce music, media and cultural campaigns.
   - Entity ID: ea:project:palimpsests
   - Identifier: https://electronicartefacts.com/id/project/palimpsests/
   - JSON-LD: https://electronicartefacts.com/id/project/palimpsests/index.jsonld
   - Modified: 2026-06-23
   - Keywords: Palimpsests, ORETH, Audio, Memory, Transmission, Signal, Digital Art, Music
-- [Vestiges](https://electronicartefacts.com/fr/projects/vestiges/): Un produit centré sur la connaissance où provenance, contribution, découverte et services professionnels émergent d’un même graphe historisé.
+- [V6](https://electronicartefacts.com/fr/projects/v6/): Une plateforme de test VASTE en développement pour l’art, l’artisanat, la cartographie et la gestion de relations, avec un horizon 2027.
   - Entity ID: ea:project:vestiges-fr
-  - Identifier: https://electronicartefacts.com/fr/id/project/vestiges/
-  - JSON-LD: https://electronicartefacts.com/fr/id/project/vestiges/index.jsonld
-  - Modified: 2026-07-04
-  - Keywords: Vestiges, VASTE, Graphe de connaissance, Savoir-faire, Culture, Infrastructure culturelle, Technologie, Graphes de connaissance
-- [Vestiges](https://electronicartefacts.com/projects/vestiges/): A knowledge-first product where provenance, contribution, discovery and professional services grow from one historized graph.
+  - Identifier: https://electronicartefacts.com/fr/id/project/v6/
+  - JSON-LD: https://electronicartefacts.com/fr/id/project/v6/index.jsonld
+  - Modified: 2026-07-11
+  - Keywords: V6, VASTE, Art, Artisanat, CRM, Cartographie, Technologie, Design
+- [V6](https://electronicartefacts.com/projects/v6/): An in-development VASTE test platform for art, craft, mapping and relationship management, targeted for 2027.
   - Entity ID: ea:project:vestiges
-  - Identifier: https://electronicartefacts.com/id/project/vestiges/
-  - JSON-LD: https://electronicartefacts.com/id/project/vestiges/index.jsonld
-  - Modified: 2026-06-24
-  - Keywords: Vestiges, VASTE, Knowledge Graph, Craft, Culture, Cultural Infrastructure, Technology, Knowledge Graphs
+  - Identifier: https://electronicartefacts.com/id/project/v6/
+  - JSON-LD: https://electronicartefacts.com/id/project/v6/index.jsonld
+  - Modified: 2026-07-11
+  - Keywords: V6, VASTE, Art, Craft, CRM, Mapping, Technology, Design
 - [Voice Capture Studio](https://electronicartefacts.com/fr/projects/voice-capture-studio/): Un studio d’enregistrement local-first pour datasets vocaux, voix off et doublage, construit comme une application de navigateur open source avec exports WAV et métadonnées structurées.
   - Entity ID: ea:project:voice-capture-studio-fr
   - Identifier: https://electronicartefacts.com/fr/id/project/voice-capture-studio/
@@ -95,13 +95,13 @@ This file is generated from typed public records. Prefer each record's canonical
 
 ## research field
 
-- [Runtime Theory](https://electronicartefacts.com/research/fields/runtime-theory/): An active Electronic Artefacts research field connecting early VOID experiments, VASTE and the definition of graph runtime.
+- [Runtime Theory](https://electronicartefacts.com/research/fields/runtime-theory/): An active Electronic Artefacts research field connecting the archived VOID codebase, ARCA, VASTE and the definition of graph runtime.
   - Entity ID: ea:researchField:runtime-theory
   - Identifier: https://electronicartefacts.com/id/research-field/runtime-theory/
   - JSON-LD: https://electronicartefacts.com/id/research-field/runtime-theory/index.jsonld
   - Modified: 2026-06-22
   - Keywords: Runtime Theory, Runtime, Theory, Execution, Events, Primitives, Technology, Research
-- [Théorie du runtime](https://electronicartefacts.com/fr/research/fields/runtime-theory/): Champ de recherche actif d’Electronic Artefacts reliant les premiers travaux VOID, VASTE et la définition d’un runtime de graphe.
+- [Théorie du runtime](https://electronicartefacts.com/fr/research/fields/runtime-theory/): Champ de recherche actif d’Electronic Artefacts reliant le code archivé de VOID, ARCA, VASTE et la définition d’un runtime de graphe.
   - Entity ID: ea:researchField:runtime-theory-fr
   - Identifier: https://electronicartefacts.com/fr/id/research-field/runtime-theory/
   - JSON-LD: https://electronicartefacts.com/fr/id/research-field/runtime-theory/index.jsonld
@@ -226,7 +226,7 @@ This file is generated from typed public records. Prefer each record's canonical
   - Identifier: https://electronicartefacts.com/id/publication/digital-preservation-and-living-archives/
   - JSON-LD: https://electronicartefacts.com/id/publication/digital-preservation-and-living-archives/index.jsonld
   - Modified: 2026-06-23
-  - Keywords: Digital Preservation and Living Archives, Digital Preservation, Living Archive, Provenance, Palimpsests, Vestiges, Archives, Digital Art
+  - Keywords: Digital Preservation and Living Archives, Digital Preservation, Living Archive, Provenance, Palimpsests, V6, Archives, Digital Art
 - [Données liées et pages publiques de connaissance](https://electronicartefacts.com/fr/publications/linked-data-and-public-knowledge-pages/): Repères pour comprendre Données liées et pages publiques de connaissance dans un contexte de conception : concepts clés, implications pratiques, limites et références reliées au graphe Electronic Artefacts.
   - Entity ID: ea:publication:linked-data-and-public-knowledge-pages-fr
   - Identifier: https://electronicartefacts.com/fr/id/publication/linked-data-and-public-knowledge-pages/
@@ -286,7 +286,7 @@ This file is generated from typed public records. Prefer each record's canonical
   - Identifier: https://electronicartefacts.com/fr/id/publication/knowledge-graphs-for-cultural-infrastructure/
   - JSON-LD: https://electronicartefacts.com/fr/id/publication/knowledge-graphs-for-cultural-infrastructure/index.jsonld
   - Modified: 2026-06-25
-  - Keywords: Graphes de connaissances pour les infrastructures culturelles, graphe de connaissances, infrastructure culturelle, Linked Data, Provenance, Vestiges, systèmes de connaissance, archives
+  - Keywords: Graphes de connaissances pour les infrastructures culturelles, graphe de connaissances, infrastructure culturelle, Linked Data, Provenance, V6, systèmes de connaissance, archives
 - [Graphisme procédural, shaders et systèmes visuels](https://electronicartefacts.com/fr/publications/procedural-graphics-shaders-and-visual-systems/): Repères pour comprendre Graphisme procédural, shaders et systèmes visuels dans un contexte de conception : concepts clés, implications pratiques, limites et références reliées au graphe Electronic Artefacts.
   - Entity ID: ea:publication:procedural-graphics-shaders-and-visual-systems-fr
   - Identifier: https://electronicartefacts.com/fr/id/publication/procedural-graphics-shaders-and-visual-systems/
@@ -359,12 +359,12 @@ This file is generated from typed public records. Prefer each record's canonical
   - JSON-LD: https://electronicartefacts.com/fr/id/publication/human-computer-interaction-for-creative-tools/index.jsonld
   - Modified: 2026-06-25
   - Keywords: Interaction humain-machine pour les outils créatifs, interaction humain-machine, outils créatifs, intelligence augmentée, accessibilité, design, programmation créative, intelligence artificielle
-- [Knowledge Graphs for Cultural Infrastructure](https://electronicartefacts.com/publications/knowledge-graphs-for-cultural-infrastructure/): A technical article on knowledge graphs, cultural heritage, provenance and public knowledge pages, connected to Vestiges and the Electronic Artefacts graph.
+- [Knowledge Graphs for Cultural Infrastructure](https://electronicartefacts.com/publications/knowledge-graphs-for-cultural-infrastructure/): A technical article on knowledge graphs, cultural heritage, provenance and public knowledge pages, connected to V6 and the Electronic Artefacts graph.
   - Entity ID: ea:publication:knowledge-graphs-for-cultural-infrastructure
   - Identifier: https://electronicartefacts.com/id/publication/knowledge-graphs-for-cultural-infrastructure/
   - JSON-LD: https://electronicartefacts.com/id/publication/knowledge-graphs-for-cultural-infrastructure/index.jsonld
   - Modified: 2026-06-23
-  - Keywords: Knowledge Graphs for Cultural Infrastructure, Knowledge Graph, Cultural Infrastructure, Linked Data, Provenance, Vestiges, Knowledge Systems, Archives
+  - Keywords: Knowledge Graphs for Cultural Infrastructure, Knowledge Graph, Cultural Infrastructure, Linked Data, Provenance, V6, Knowledge Systems, Archives
 - [L’open source comme infrastructure culturelle](https://electronicartefacts.com/fr/publications/open-source-as-cultural-infrastructure/): Repères pour comprendre L’open source comme infrastructure culturelle dans un contexte de conception : concepts clés, implications pratiques, limites et références reliées au graphe Electronic Artefacts.
   - Entity ID: ea:publication:open-source-as-cultural-infrastructure-fr
   - Identifier: https://electronicartefacts.com/fr/id/publication/open-source-as-cultural-infrastructure/
@@ -502,7 +502,7 @@ This file is generated from typed public records. Prefer each record's canonical
   - Identifier: https://electronicartefacts.com/fr/id/publication/digital-preservation-and-living-archives/
   - JSON-LD: https://electronicartefacts.com/fr/id/publication/digital-preservation-and-living-archives/index.jsonld
   - Modified: 2026-06-25
-  - Keywords: Préservation numérique et archives vivantes, Digital Préservation, Living Archive, Provenance, Palimpsests, Vestiges, archives, art numérique
+  - Keywords: Préservation numérique et archives vivantes, Digital Préservation, Living Archive, Provenance, Palimpsests, V6, archives, art numérique
 - [Procedural Graphics, Shaders and Visual Systems](https://electronicartefacts.com/publications/procedural-graphics-shaders-and-visual-systems/): A technical article on procedural graphics, shaders, WebGL, creative coding and generative visual systems.
   - Entity ID: ea:publication:procedural-graphics-shaders-and-visual-systems
   - Identifier: https://electronicartefacts.com/id/publication/procedural-graphics-shaders-and-visual-systems/

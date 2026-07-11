@@ -57,7 +57,7 @@ Folders impose a primary containment path. Graphs allow an artefact to relate si
 
 ## Electronic Artefacts position
 
-VASTE uses graph modeling for runtime concerns, while the Knowledge Hub uses it for semantic publication. Vestiges applies the same discipline to cultural knowledge and human know-how.
+VASTE uses graph modeling for runtime concerns, while the Knowledge Hub uses it for semantic publication. V6 applies the same discipline to cultural knowledge and human know-how.
 
 ## Limitations
 

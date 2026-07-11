@@ -72,7 +72,7 @@ IIIF, the International Image Interoperability Framework, provides APIs and data
 
 The IIIF Presentation API 3.0 describes resources such as collections, manifests, canvases, ranges and annotations. These are not only technical containers. They are a way to say how a cultural object should be seen, navigated and contextualized.
 
-For Electronic Artefacts, IIIF is relevant because projects such as Vestiges and Palimpsests involve compound records. The work is not just a media file. It is a structured object with parts, views, traces, evidence and interpretation.
+For Electronic Artefacts, IIIF is relevant because projects such as V6 and Palimpsests involve compound records. The work is not just a media file. It is a structured object with parts, views, traces, evidence and interpretation.
 
 ## Architecture
 
@@ -92,7 +92,7 @@ In IIIF, a collection groups manifests and other collections. It can represent a
 
 Collections are useful because cultural infrastructure often needs nested navigation. A project may contain series. A series may contain objects. An object may contain canvases. This structure lets readers move from overview to detail without relying on a folder tree.
 
-For Vestiges, collections could group crafts, institutions, regions, techniques or documentation campaigns. The important point is that collection structure is editorial, not merely storage.
+For V6, collections could group crafts, institutions, regions, techniques or documentation campaigns. The important point is that collection structure is editorial, not merely storage.
 
 ## Manifests
 
@@ -142,9 +142,9 @@ It does not replace fixity, storage redundancy, rights records, format monitorin
 
 A preservation plan should keep source assets, derivative assets, manifests, annotations, rights metadata and graph records together enough that future systems can reconstruct the object.
 
-## Vestiges
+## V6
 
-Vestiges is a natural IIIF-adjacent project because cultural heritage records often need more than one image and one paragraph. A craft object can have material details, maker context, workshop images, tool diagrams and institutional references.
+V6 is a natural IIIF-adjacent future platform because art and craft records can need more than one image and one paragraph. A craft object can have material details, maker context, workshop images, tool diagrams and institutional references.
 
 An IIIF manifest could expose the object for interoperable viewing. The Electronic Artefacts graph could connect that object to concepts, places, materials, techniques and evidence.
 

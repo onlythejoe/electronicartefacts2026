@@ -62,8 +62,8 @@
     {
       "id": "ea:project:vestiges-fr",
       "type": "project",
-      "title": "Vestiges",
-      "route": "/fr/projects/vestiges/",
+      "title": "V6",
+      "route": "/fr/projects/v6/",
       "status": "development",
       "confidence": "observed"
     },
@@ -137,7 +137,7 @@
       "target": "ea:concept:graph-runtime-fr",
       "predicate": "appliesConcept",
       "label": "Applies concept",
-      "statement": "Vestiges applies graph-runtime principles to cultural, craft and human-knowledge infrastructure.",
+      "statement": "V6 is intended to apply graph-runtime principles to art, craft and CRM-oriented infrastructure.",
       "confidence": "observed"
     },
     {

@@ -6,9 +6,9 @@
     "canonical": "palimpsests"
   },
   "title": "Palimpsests",
-  "subtitle": "Cycle musical et éditorial",
-  "abstract": "Palimpsests est un cycle conceptuel d’ORETH explorant mémoire, héritage, transformation et transmission à travers la composition sonore, l’image et la publication.",
-  "description": "Une œuvre musicale et éditoriale en cinq actes reliant recherche sonore, mémoire culturelle, archives et production visuelle.",
+  "subtitle": "Album en cinq chapitres signé ORETH",
+  "abstract": "Palimpsests est un album conceptuel en cinq chapitres signé ORETH. Il suit l’évolution d’un système à travers culture numérique, mémoire, transformation et transmission.",
+  "description": "Une fiche canonique pour Palimpsests, album d’ORETH et démonstration de la capacité d’Electronic Artefacts à produire musique, médias et campagnes culturelles.",
   "locale": "fr",
   "visibility": "public",
   "publicationClass": "canonical",
@@ -16,10 +16,10 @@
   "maturity": "development",
   "confidence": "published",
   "version": {
-    "version": "1.0.0",
+    "version": "1.1.0",
     "createdAt": "2024-01-01",
     "publishedAt": "2026-06-25",
-    "modifiedAt": "2026-06-25"
+    "modifiedAt": "2026-07-11"
   },
   "authors": [
     {
@@ -31,41 +31,41 @@
     "Palimpsests",
     "ORETH",
     "Musique",
+    "Culture numérique",
     "Mémoire",
-    "Archives"
+    "Transmission"
   ],
   "disciplines": [
     "Musique",
     "Art sonore",
     "Image",
-    "Recherche"
+    "Édition"
   ],
   "media": [
     {
       "id": "palimpsests-cover-fr",
       "type": "image",
       "src": "/assets/media/projects/palimpsests/P1288759-edit-1800.webp",
-      "alt": "Visuel du cycle Palimpsests",
-      "caption": "Image principale associée au cycle Palimpsests."
+      "alt": "Visuel de l’album Palimpsests",
+      "caption": "Image principale associée à l’album Palimpsests."
     }
   ],
   "category": "cultural",
-  "brief": "Construire un cycle artistique où son, mémoire, traces et transmission forment une seule surface éditoriale.",
-  "context": "Palimpsests rassemble des recherches musicales, visuelles et théoriques autour de ce qui demeure, se transforme et réapparaît à travers le temps.",
+  "brief": "Construire un album ORETH en cinq chapitres sur l’évolution d’un système, entre culture numérique, mémoire, transformation et transmission.",
+  "context": "Palimpsests montre qu’Electronic Artefacts peut produire musique, médias et campagnes culturelles, en plus du logiciel et de la recherche.",
   "stakeholders": [
     {
       "id": "ea:organization:electronic-artefacts"
     }
   ],
   "constraints": [
-    "Préserver l’autonomie de l’œuvre tout en documentant son contexte.",
-    "Relier les pièces sonores, images et textes sans réduire le projet à un simple catalogue.",
-    "Maintenir une continuité entre recherche, production et publication."
+    "Préserver l’autonomie de l’œuvre sans confondre l’album avec le prototype R&D archivé ORETH.",
+    "Relier les pièces sonores, images et textes sans réduire le projet à une démonstration technique."
   ],
   "approach": [
-    "Organiser le cycle en cinq actes.",
-    "Traiter les sons comme des traces transformables.",
-    "Relier la publication à ORETH et aux recherches sur l’archéologie du signal."
+    "Organiser l’album en cinq chapitres retraçant l’évolution d’un système.",
+    "Relier son, image et matière éditoriale sans réduire l’album à une étude de cas technique.",
+    "Présenter ORETH comme signature artistique, distincte du prototype R&D archivé du même nom."
   ],
   "outputs": [
     {
@@ -73,12 +73,12 @@
     }
   ],
   "outcomes": [
-    "Un cycle musical cohérent articulé autour de la mémoire et de la transmission.",
-    "Une surface éditoriale réunissant son, image, texte et archives."
+    "Un album conceptuel en cinq chapitres.",
+    "Une surface culturelle réunissant musique, médias et matière éditoriale."
   ],
   "evidence": [
     {
-      "id": "ea:publication:signal-archaeology-audio-memory-and-machine-listening"
+      "id": "ea:program:oreth-fr"
     }
   ],
   "credits": [
@@ -86,29 +86,12 @@
       "id": "ea:organization:electronic-artefacts"
     }
   ],
-  "visualLanguage": [
-    "Noir",
-    "Texture photographique",
-    "Traces lumineuses"
-  ],
-  "textures": [
-    "Mémoire",
-    "Érosion",
-    "Rémanence"
-  ],
-  "symbols": [
-    "Palimpseste",
-    "Trace",
-    "Cycle"
-  ],
-  "bodyHtml": "<h2 id=\"presentation\">Présentation</h2>\n<p>Palimpsests est un cycle musical et éditorial porté par ORETH. Le projet explore les manières dont une trace peut être conservée, altérée, recouverte puis rendue de nouveau perceptible. Le titre renvoie au palimpseste : un support réutilisé sur lequel les inscriptions précédentes ne disparaissent jamais complètement.</p>\n<h2 id=\"structure\">Structure</h2>\n<p>Le cycle est organisé en cinq actes. Cette structure crée une progression plutôt qu’une simple suite de morceaux. Chaque acte déplace la relation entre matière sonore, mémoire et transmission, depuis l’apparition d’une trace jusqu’à sa transformation et sa réactivation.</p>\n<h2 id=\"recherche-sonore\">Recherche sonore</h2>\n<p>La composition travaille avec des couches, des résidus, des répétitions, des dégradations et des événements qui reviennent sous une forme modifiée. Le son n’est pas seulement un résultat esthétique : il devient un moyen d’observer comment une information persiste lorsqu’elle traverse différents supports, gestes et contextes.</p>\n<h2 id=\"memoire-et-heritage\">Mémoire et héritage</h2>\n<p>Palimpsests ne cherche pas à représenter la mémoire comme une archive intacte. La mémoire y est active, partielle et reconstruite. Elle dépend de ce qui est transmis, oublié, transformé ou interprété par une nouvelle personne. L’héritage est donc compris comme un processus plutôt que comme un objet fixe.</p>\n<h2 id=\"surface-editoriale\">Surface éditoriale</h2>\n<p>La publication réunit musique, images, notes et documents dans une même surface. Les éléments visuels ne servent pas seulement d’illustrations ; ils prolongent la logique des traces, des superpositions et des transformations. Le projet peut ainsi être parcouru comme une œuvre musicale, un dossier de recherche et une archive en construction.</p>\n<h2 id=\"relation-a-oreth\">Relation à ORETH</h2>\n<p>ORETH fournit le cadre de recherche sonore du cycle. Les expérimentations autour de l’analyse, de l’écoute machine, des structures acoustiques et de l’archéologie du signal alimentent le projet sans remplacer la décision artistique.</p>\n<h2 id=\"etat-public\">État public</h2>\n<p>Le dossier public réunit le positionnement, la structure, les visuels, les relations avec ORETH et les sources de recherche déjà documentés. D’autres matériaux viendront le compléter après leur publication et leur validation éditoriale.</p>\n",
+  "bodyHtml": "<h2 id=\"presentation\">Présentation</h2>\n<p>Palimpsests est un album conceptuel en cinq chapitres, signé ORETH. Il suit l’évolution d’un système : son émergence, l’accumulation de mémoire, la transformation, les limites qu’il rencontre et ce qu’il transmet.</p>\n<h2 id=\"structure\">Structure</h2>\n<p>L’album est organisé en cinq chapitres. Cette structure crée une progression plutôt qu’une simple suite de morceaux et traite de culture numérique, de mémoire, de transformation et de transmission.</p>\n<h2 id=\"musique-medias-et-campagne-culturelle\">Musique, médias et campagne culturelle</h2>\n<p>Palimpsests montre qu’Electronic Artefacts peut produire de la musique, des médias et des campagnes culturelles. Le son, les images et la matière éditoriale prolongent une même œuvre, sans réduire l’album à un dossier technique.</p>\n<h2 id=\"signature-oreth\">Signature ORETH</h2>\n<p>Palimpsests est signé par ORETH. Cet usage artistique du nom est distinct du prototype R&amp;D de synthèse vocale, aujourd’hui archivé. L’album est une œuvre musicale ; il ne prétend pas démontrer ni publier ce système historique.</p>\n<h2 id=\"etat-public\">État public</h2>\n<p>Palimpsests est en production culturelle active. Le dossier public s’enrichira avec l’album, ses médias et ses matières éditoriales au fil de leur publication.</p>\n",
   "headings": [
     "Présentation",
     "Structure",
-    "Recherche sonore",
-    "Mémoire et héritage",
-    "Surface éditoriale",
-    "Relation à ORETH",
+    "Musique, médias et campagne culturelle",
+    "Signature ORETH",
     "État public"
   ],
   "headingItems": [
@@ -124,23 +107,13 @@
     },
     {
       "level": 2,
-      "title": "Recherche sonore",
-      "id": "recherche-sonore"
+      "title": "Musique, médias et campagne culturelle",
+      "id": "musique-medias-et-campagne-culturelle"
     },
     {
       "level": 2,
-      "title": "Mémoire et héritage",
-      "id": "memoire-et-heritage"
-    },
-    {
-      "level": 2,
-      "title": "Surface éditoriale",
-      "id": "surface-editoriale"
-    },
-    {
-      "level": 2,
-      "title": "Relation à ORETH",
-      "id": "relation-a-oreth"
+      "title": "Signature ORETH",
+      "id": "signature-oreth"
     },
     {
       "level": 2,

@@ -14,7 +14,7 @@ window.EA_TAXONOMIES = {
       "label": "Palimpsests"
     },
     "vestiges": {
-      "label": "Vestiges"
+      "label": "V6"
     }
   },
   "maturity": {
@@ -220,7 +220,7 @@ window.EA_ENTITIES = {
       "kind": "program",
       "type": "Proprietary Runtime",
       "status": "development",
-      "statusLabel": "Active Research",
+      "statusLabel": "R&D / 2027 target",
       "maturity": "development",
       "confidence": "published",
       "visibility": "public",
@@ -233,8 +233,8 @@ window.EA_ENTITIES = {
         "lastUpdated": "2026-06-12",
         "era": "foundation"
       },
-      "description": "VASTE is the primary proprietary runtime developed within Electronic Artefacts. The system explores graph architectures, contextual execution, identity systems, simulation frameworks, knowledge structures and modular world construction. Several projects inside the ecosystem directly inherit concepts, architectures or methodologies originating in VASTE.",
-      "summary": "Primary proprietary runtime for graph architectures, identity systems and modular world construction.",
+      "description": "VASTE is the future runtime platform developed within Electronic Artefacts. It is currently in R&D, exploring graph architectures, contextual execution, identity systems, simulation frameworks, knowledge structures and modular world construction, with delivery targeted for 2027.",
+      "summary": "Future runtime platform in R&D for graph architectures, identity systems and modular world construction.",
       "discipline": [
         "Technology",
         "Systems",
@@ -323,8 +323,8 @@ window.EA_ENTITIES = {
         "lastUpdated": "2026-06-12",
         "era": "foundation"
       },
-      "description": "ARCA is the historical origin of VASTE. The project was initially aimed at digital assets management, traceability and certification systems. Through successive experiments, its scope progressively shifted toward more fundamental questions related to information systems, execution environments and generalized runtime structures.",
-      "summary": "Ancestor of VASTE for certificates, NFTs, auctions, authenticity and digital assets.",
+      "description": "ARCA is an unpublished historical predecessor of VASTE. It has a substantial codebase and explored digital assets, traceability and certification systems, but it was never released. Its scope later shifted toward more fundamental questions about information systems, execution environments and generalized runtime structures.",
+      "summary": "Unpublished predecessor of VASTE for traceability, certification and digital assets.",
       "discipline": [
         "Technology",
         "Systems",
@@ -484,8 +484,8 @@ window.EA_ENTITIES = {
         "lastUpdated": "2026-06-12",
         "era": "palimpsests"
       },
-      "description": "ORETH is an experimental audio research program. The system explores the observation of complex acoustic phenomena through frequency analysis, event detection, pattern recognition and adaptive learning. Early prototypes were built in Python around libraries such as Librosa, PyQtGraph and NumPy.",
-      "summary": "Audio analysis, bio-inspired learning, sonic structures and ML experimentation.",
+      "description": "ORETH is an archived internal R&D prototype for speech synthesis and learning. It explored whether an initially imitative, sensor-connected system could discover its own logic for learning to speak without a predefined corpus. ORETH also names the artistic signature used for Palimpsests.",
+      "summary": "Archived speech-synthesis research prototype; artistic signature for Palimpsests.",
       "discipline": [
         "Music",
         "Technology",
@@ -564,8 +564,8 @@ window.EA_ENTITIES = {
         "lastUpdated": "2026-06-12",
         "era": "foundation"
       },
-      "description": "Forge is Electronic Artefacts’ internal Rust engine for reproducible artefact pipelines. It turns controlled inputs into inspectable outputs, beginning with video-to-3D object reconstruction and quality-gated refinement.",
-      "summary": "Internal Rust engine for traceable artefact production, refinement and release validation.",
+      "description": "Forge is Electronic Artefacts’ internal R&D software for reproducible artefact pipelines and collaboration work. It is available on request to partners and collaborators, not as a public product.",
+      "summary": "Internal R&D software for traceable artefact production, available on request for collaborations and partnerships.",
       "discipline": [
         "Creative Technology",
         "Computational Imaging",
@@ -1240,7 +1240,7 @@ window.EA_ENTITIES = {
     {
       "id": "void",
       "title": "VOID",
-      "subtitle": "Experimental Software Engine",
+      "subtitle": "Archived Reality-Modeling Research",
       "kind": "researchField",
       "type": "Experimental Software Engine",
       "status": "archived",
@@ -1255,8 +1255,8 @@ window.EA_ENTITIES = {
         "lastUpdated": "2026-06-12",
         "era": "foundation"
       },
-      "description": "VOID was one of the earliest software research projects developed within Electronic Artefacts. Originally conceived as an experimental engine, the project played a major role in shaping later reflections around systems architecture, modularity and creative technology.",
-      "summary": "Archived software engine that shaped later work on architecture, modularity and creative technology.",
+      "description": "VOID is an archived codebase and one of the earliest research projects developed within Electronic Artefacts. It investigated how reality itself might be modeled in software, rather than how to build a conventional business program. Its fractal and systems thinking became a theoretical foundation for later runtime work, especially VASTE.",
+      "summary": "Archived reality-modeling research that shaped fractal systems thinking and the theoretical foundations of VASTE.",
       "discipline": [
         "Research",
         "Systems",
@@ -2893,13 +2893,13 @@ window.EA_ENTITIES = {
     },
     {
       "id": "vestiges",
-      "title": "Vestiges",
-      "subtitle": "Living Knowledge Infrastructure",
+      "title": "V6",
+      "subtitle": "Art and Craft Mapping Platform",
       "kind": "project",
       "type": "Knowledge Infrastructure Platform",
       "category": "Platform",
       "status": "development",
-      "statusLabel": "In development",
+      "statusLabel": "In development / 2027 target",
       "maturity": "prototype",
       "confidence": "observed",
       "visibility": "public",
@@ -2924,11 +2924,11 @@ window.EA_ENTITIES = {
         "Craft",
         "Design"
       ],
-      "description": "Flagship VASTE platform for mapping, preserving and activating living know-how across people, practices, materials, places and institutions.",
-      "summary": "Living knowledge infrastructure for culture, craft, provenance and professional collaboration.",
-      "mission": "Make human know-how documentable, connected, trustworthy and usable across generations.",
-      "coreResource": "Knowledge",
-      "productPosition": "Vestiges is the flagship public application of VASTE. It is not a directory, encyclopedia or marketplace with content attached: its durable asset is a trusted graph of living knowledge.",
+      "description": "Future platform for mapping art and craft practices and developing CRM-oriented workflows as an applied test context for VASTE.",
+      "summary": "Future art and craft mapping and CRM platform; applied VASTE test context.",
+      "mission": "Test how art and craft practices can be mapped and managed as connected context.",
+      "coreResource": "Art and craft relationships",
+      "productPosition": "V6 is a future applied test platform for VASTE. It will map art and craft practices and develop CRM-oriented workflows; it is not yet a live public service.",
       "graphPrinciple": "Every person, organisation, technique, material, tool, work, place, project and document receives a durable identity. Teaching, making, using, restoring, supplying and certifying remain explicit, navigable and historised.",
       "graphNodeTypes": [
         "People",
@@ -3120,8 +3120,8 @@ window.EA_ENTITIES = {
           "href": "https://www.vaste.space/"
         },
         {
-          "label": "Instagram @vestiges.world",
-          "href": "https://www.instagram.com/vestiges.world/"
+          "label": "V6 research platform",
+          "href": "./projects.html"
         }
       ]
     },
@@ -3132,11 +3132,11 @@ window.EA_ENTITIES = {
       "kind": "project",
       "type": "External Creative Organisation",
       "category": "External Collaboration",
-      "status": "development",
-      "statusLabel": "External CTO partnership",
-      "maturity": "research",
+      "status": "archived",
+      "statusLabel": "Unpublished archive",
+      "maturity": "archived",
       "confidence": "observed",
-      "visibility": "public",
+      "visibility": "archive",
       "temporality": {
         "creationYear": "2025",
         "creationDate": "2025-01-01",
@@ -3159,8 +3159,8 @@ window.EA_ENTITIES = {
         "Architecture",
         "Research"
       ],
-      "description": "UnionMob is an independent creative organisation and external project owned and led by Zarah Nkounkou. Electronic Artefacts contributes as technological collaborator and CTO, rather than as owner or author of the UnionMob brand.",
-      "summary": "Independent creative organisation led by Zarah Nkounkou, with Electronic Artefacts serving as technological collaborator and CTO.",
+      "description": "UnionMob is an unpublished external collaboration archive. It was an independent creative organisation owned and led by Zarah Nkounkou; Electronic Artefacts contributed as technological collaborator and CTO, rather than as owner or author of the UnionMob brand.",
+      "summary": "Unpublished external collaboration archive led by Zarah Nkounkou, with Electronic Artefacts as technological collaborator and CTO.",
       "coreIdea": "The collaboration explores a bio-inspired organisational model where participants evolve through capabilities, facets and governed contexts, supported by a dedicated technical operating system.",
       "theme": "Independent creative ecosystem supported by external CTO leadership",
       "subThemes": [
@@ -3657,8 +3657,8 @@ window.EA_ENTITIES = {
       "kind": "project",
       "type": "Client Work / Photography Ecosystem",
       "category": "Client Work",
-      "status": "active",
-      "maturity": "production",
+      "status": "delivered",
+      "maturity": "delivered",
       "confidence": "published",
       "visibility": "public",
       "temporality": {
@@ -3679,8 +3679,8 @@ window.EA_ENTITIES = {
         "UX",
         "UI"
       ],
-      "description": "Photography CRM and portfolio ecosystem presented as a clean live system.",
-      "summary": "Photography CRM and portfolio ecosystem.",
+      "description": "Delivered client product for L’Œil de Meg: a photography CRM and portfolio ecosystem.",
+      "summary": "Delivered client photography CRM and portfolio product.",
       "tags": [
         "Photography",
         "Client Work"
@@ -4947,7 +4947,7 @@ window.EA_TIMELINES = [
       {
         "year": "2023",
         "title": "ARCA lineage",
-        "description": "Archive and certification experiments establish the lineage.",
+        "description": "Unpublished traceability and certification codebase establishes the lineage.",
         "type": "concept"
       },
       {
@@ -4975,10 +4975,10 @@ window.EA_TIMELINES = [
         "type": "production"
       },
       {
-        "year": "2026",
-        "title": "Public website",
-        "description": "External reference and studio presence.",
-        "type": "released"
+        "year": "2027",
+        "title": "Target delivery",
+        "description": "Future platform delivery target; scope remains under R&D.",
+        "type": "development"
       }
     ]
   },
@@ -4987,14 +4987,14 @@ window.EA_TIMELINES = [
     "entries": [
       {
         "year": "2025",
-        "title": "Artist formation",
-        "description": "Artist identity begins to take shape.",
+        "title": "Archived R&D",
+        "description": "Sensor-informed speech-synthesis research prototype is preserved as an archive.",
         "type": "concept"
       },
       {
         "year": "2026",
-        "title": "Palimpsests cycle",
-        "description": "Album cycle enters production.",
+        "title": "Palimpsests",
+        "description": "ORETH signs the five-chapter album in cultural production.",
         "type": "production"
       }
     ]
@@ -5039,21 +5039,21 @@ window.EA_TIMELINES = [
     "entries": [
       {
         "year": "2025",
-        "title": "Platform thesis",
-        "description": "Vestiges is framed as VASTE's flagship product for culture, craft and applied knowledge.",
+        "title": "V6 platform thesis",
+        "description": "V6 is framed as a future art and craft mapping and CRM platform.",
         "type": "concept"
       },
       {
         "year": "2026",
-        "title": "Knowledge graph model",
-        "description": "Actors, know-how, materials, places and institutions become explicit, addressable nodes.",
+        "title": "Applied research",
+        "description": "V6 is prepared as a VASTE test context; domains and social presences are reserved.",
         "type": "development"
       },
       {
-        "year": "2026",
-        "title": "Product architecture",
-        "description": "Collaborative contribution, native public pages, visual exploration and economic services are structured around the graph.",
-        "type": "prototype"
+        "year": "2027",
+        "title": "Target activation",
+        "description": "Platform activation is targeted for 2027.",
+        "type": "development"
       }
     ]
   },
@@ -5150,10 +5150,10 @@ window.EA_ACTIVITY = [
   {
     "id": "activity-004",
     "type": "research_updated",
-    "title": "Vestiges product definition aligned",
+    "title": "V6 platform definition aligned",
     "entityId": "vestiges",
     "date": "2026-06-22",
-    "summary": "VASTE flagship positioning, knowledge graph model and long-term mission documented."
+    "summary": "Future V6 mapping and CRM research context documented."
   },
   {
     "id": "activity-005",
@@ -5206,12 +5206,12 @@ window.EA_COLLECTIONS = [
   },
   {
     "id": "vestiges-collection",
-    "title": "Vestiges Collection",
+    "title": "V6 Collection",
     "kind": "collection",
     "type": "Collection",
     "status": "development",
     "visibility": "public",
-    "summary": "Product, graph, culture and craft research connected to the Vestiges platform.",
+    "summary": "Research on art, craft, mapping and CRM connected to the future V6 platform.",
     "rules": {
       "entityIds": [
         "vestiges",
@@ -5219,7 +5219,7 @@ window.EA_COLLECTIONS = [
         "graph-runtime-studies"
       ],
       "tags": [
-        "Vestiges",
+        "V6",
         "Knowledge Graph"
       ],
       "kinds": [
@@ -5950,7 +5950,7 @@ window.EA_PUBLIC_CATALOG = {
       "locale": "en",
       "title": "Digital Preservation",
       "summary": "Digital preservation connects file formats, metadata, provenance, storage, rights, migration and interpretation into a long-term care practice for digital culture.",
-      "description": "A canonical definition of digital preservation for Electronic Artefacts archives, Palimpsests, Vestiges and knowledge infrastructure.",
+      "description": "A canonical definition of digital preservation for Electronic Artefacts archives, Palimpsests, V6 and knowledge infrastructure.",
       "definition": "Digital preservation is the long-term work of keeping digital objects understandable, authentic, usable and accessible despite changes in formats, software, hardware and context.",
       "status": "active",
       "maturity": "research",
@@ -6208,7 +6208,7 @@ window.EA_PUBLIC_CATALOG = {
       "locale": "en",
       "title": "Graph Runtime",
       "summary": "Electronic Artefacts uses graph runtime to describe systems where entities, relationships, identity, context and events form an executable structure rather than a passive data model.",
-      "description": "A canonical definition of graph runtime, its scope, applications and relationship to VASTE, Runtime Theory and Vestiges.",
+      "description": "A canonical definition of graph runtime, its scope, applications and relationship to VASTE, Runtime Theory and V6.",
       "definition": "A graph runtime is an execution environment in which addressable entities and typed relationships participate directly in contextual computation.",
       "status": "active",
       "maturity": "research",
@@ -8987,11 +8987,11 @@ window.EA_PUBLIC_CATALOG = {
       "locale": "fr",
       "translationOf": "ea:program:oreth",
       "title": "ORETH",
-      "subtitle": "Programme d’intelligence audio",
-      "summary": "ORETH relie intelligence audio, recherche artistique, signal, motifs, mémoire, écoute machine et production musicale expérimentale.",
-      "description": "Fiche publique du programme ORETH, à la fois système de recherche audio et couche technico-culturelle reliée à Palimpsests.",
-      "status": "prototype",
-      "maturity": "prototype",
+      "subtitle": "Prototype archivé de recherche en synthèse vocale",
+      "summary": "ORETH est un prototype R&D interne archivé d’Electronic Artefacts. Il explorait l’apprentissage de la parole à partir de capteurs, sans corpus prédéfini. ORETH est aussi la signature artistique de l’album Palimpsests.",
+      "description": "Fiche publique distinguant le prototype archivé de synthèse vocale ORETH et sa signature artistique sur Palimpsests.",
+      "status": "archived",
+      "maturity": "archived",
       "confidence": "observed",
       "visibility": "public",
       "publicationClass": "canonical",
@@ -9027,9 +9027,9 @@ window.EA_PUBLIC_CATALOG = {
       "locale": "fr",
       "translationOf": "ea:program:vaste",
       "title": "VASTE",
-      "subtitle": "Runtime propriétaire",
-      "summary": "VASTE est le runtime propriétaire d’Electronic Artefacts pour architectures de graphe, exécution contextuelle, identité et mondes modulaires.",
-      "description": "Runtime propriétaire reliant Runtime Theory à des systèmes de graphe évaluables par dépôt encadré, pilotes, implémentation ou licence.",
+      "subtitle": "R&D runtime",
+      "summary": "VASTE est la future plateforme runtime d’Electronic Artefacts, actuellement en R&D, avec un horizon de livraison en 2027.",
+      "description": "VASTE relie Runtime Theory à un runtime en développement pour systèmes de graphe, exécution contextuelle, identité et mondes modulaires.",
       "status": "development",
       "maturity": "development",
       "confidence": "published",
@@ -9065,9 +9065,9 @@ window.EA_PUBLIC_CATALOG = {
       "locale": "fr",
       "translationOf": "ea:project:palimpsests",
       "title": "Palimpsests",
-      "subtitle": "Cycle musical et éditorial",
-      "summary": "Palimpsests est un cycle conceptuel d’ORETH explorant mémoire, héritage, transformation et transmission à travers la composition sonore, l’image et la publication.",
-      "description": "Une œuvre musicale et éditoriale en cinq actes reliant recherche sonore, mémoire culturelle, archives et production visuelle.",
+      "subtitle": "Album en cinq chapitres signé ORETH",
+      "summary": "Palimpsests est un album conceptuel en cinq chapitres signé ORETH. Il suit l’évolution d’un système à travers culture numérique, mémoire, transformation et transmission.",
+      "description": "Une fiche canonique pour Palimpsests, album d’ORETH et démonstration de la capacité d’Electronic Artefacts à produire musique, médias et campagnes culturelles.",
       "status": "active",
       "maturity": "development",
       "confidence": "published",
@@ -9077,20 +9077,21 @@ window.EA_PUBLIC_CATALOG = {
         "Palimpsests",
         "ORETH",
         "Musique",
+        "Culture numérique",
         "Mémoire",
-        "Archives"
+        "Transmission"
       ],
       "discipline": [
         "Musique",
         "Art sonore",
         "Image",
-        "Recherche"
+        "Édition"
       ],
       "route": "/fr/projects/palimpsests/",
       "identifier": "/fr/id/project/palimpsests/",
       "temporality": {
         "creationDate": "2024-01-01",
-        "lastUpdated": "2026-06-25",
+        "lastUpdated": "2026-07-11",
         "releaseDate": "2026-06-25",
         "creationYear": "2024"
       }
@@ -9102,35 +9103,34 @@ window.EA_PUBLIC_CATALOG = {
       "type": "project",
       "locale": "fr",
       "translationOf": "ea:project:vestiges",
-      "title": "Vestiges",
-      "subtitle": "Infrastructure de connaissance vivante",
-      "summary": "Vestiges est la plateforme VASTE pour cartographier, préserver et activer les savoir-faire vivants entre personnes, pratiques, matériaux et lieux.",
-      "description": "Un produit centré sur la connaissance où provenance, contribution, découverte et services professionnels émergent d’un même graphe historisé.",
+      "title": "V6",
+      "subtitle": "Plateforme de cartographie art et artisanat",
+      "summary": "V6 est une future plateforme destinée à cartographier les pratiques de l’art et de l’artisanat et à développer des workflows orientés CRM, comme contexte de test appliqué pour VASTE.",
+      "description": "Une plateforme de test VASTE en développement pour l’art, l’artisanat, la cartographie et la gestion de relations, avec un horizon 2027.",
       "status": "development",
       "maturity": "prototype",
       "confidence": "observed",
       "visibility": "public",
       "publicationClass": "canonical",
       "tags": [
-        "Vestiges",
+        "V6",
         "VASTE",
-        "Graphe de connaissance",
-        "Savoir-faire",
-        "Culture",
-        "Infrastructure culturelle"
+        "Art",
+        "Artisanat",
+        "CRM",
+        "Cartographie"
       ],
       "discipline": [
         "Technologie",
-        "Graphes de connaissance",
-        "Culture",
-        "Savoir-faire",
+        "Art",
+        "Artisanat",
         "Design"
       ],
-      "route": "/fr/projects/vestiges/",
-      "identifier": "/fr/id/project/vestiges/",
+      "route": "/fr/projects/v6/",
+      "identifier": "/fr/id/project/v6/",
       "temporality": {
         "creationDate": "2025-01-01",
-        "lastUpdated": "2026-07-04",
+        "lastUpdated": "2026-07-11",
         "releaseDate": "2026-06-25",
         "creationYear": "2025"
       }
@@ -9424,7 +9424,7 @@ window.EA_PUBLIC_CATALOG = {
         "Living Archive",
         "Provenance",
         "Palimpsests",
-        "Vestiges"
+        "V6"
       ],
       "discipline": [
         "archives",
@@ -9759,7 +9759,7 @@ window.EA_PUBLIC_CATALOG = {
         "infrastructure culturelle",
         "Linked Data",
         "Provenance",
-        "Vestiges"
+        "V6"
       ],
       "discipline": [
         "systèmes de connaissance",
@@ -10690,7 +10690,7 @@ window.EA_PUBLIC_CATALOG = {
       "title": "Théorie du runtime",
       "subtitle": "Champ de recherche",
       "summary": "Runtime Theory étudie les identités, relations, contextes et primitives d’événement nécessaires pour qu’un système exécutable reste cohérent.",
-      "description": "Champ de recherche actif d’Electronic Artefacts reliant les premiers travaux VOID, VASTE et la définition d’un runtime de graphe.",
+      "description": "Champ de recherche actif d’Electronic Artefacts reliant le code archivé de VOID, ARCA, VASTE et la définition d’un runtime de graphe.",
       "status": "active",
       "maturity": "research",
       "confidence": "validated",
@@ -11943,11 +11943,11 @@ window.EA_PUBLIC_CATALOG = {
       "type": "program",
       "locale": "en",
       "title": "ORETH",
-      "subtitle": "Audio Intelligence Program",
-      "summary": "ORETH is an Electronic Artefacts audio intelligence and artistic research program concerned with signal analysis, pattern detection, memory, machine listening and experimental music production.",
-      "description": "A public program record for ORETH as both an audio research system and the technical-cultural layer connected to Palimpsests.",
-      "status": "prototype",
-      "maturity": "prototype",
+      "subtitle": "Archived Speech-Synthesis Research Prototype",
+      "summary": "ORETH is an archived Electronic Artefacts R&D prototype that explored how an initially imitative speech system could learn to speak from sensor-based experience rather than a fixed corpus. ORETH also signs the album Palimpsests.",
+      "description": "A public record that distinguishes ORETH’s archived speech-synthesis research prototype from its current artistic signature on Palimpsests.",
+      "status": "archived",
+      "maturity": "archived",
       "confidence": "observed",
       "visibility": "public",
       "publicationClass": "canonical",
@@ -11982,9 +11982,9 @@ window.EA_PUBLIC_CATALOG = {
       "type": "program",
       "locale": "en",
       "title": "VASTE",
-      "subtitle": "Proprietary Runtime",
-      "summary": "VASTE is the primary proprietary runtime developed and commercialized by Electronic Artefacts for graph architectures, contextual execution, identity systems and modular world construction.",
-      "description": "VASTE connects Runtime Theory to implemented graph systems and can be evaluated through scoped repository access, technical pilots, implementation work and licensing conversations.",
+      "subtitle": "Runtime R&D",
+      "summary": "VASTE is the future Electronic Artefacts runtime platform, currently in R&D and targeted for delivery in 2027.",
+      "description": "VASTE connects Runtime Theory to an in-development runtime for graph systems, contextual execution, identity and modular world construction.",
       "status": "development",
       "maturity": "development",
       "confidence": "published",
@@ -12019,9 +12019,9 @@ window.EA_PUBLIC_CATALOG = {
       "type": "project",
       "locale": "en",
       "title": "Palimpsests",
-      "subtitle": "Conceptual Audio Publication",
-      "summary": "Palimpsests is an Electronic Artefacts cultural project and conceptual album cycle connected to ORETH, memory, inheritance, transmission, entropy, signal and layered artistic production.",
-      "description": "A canonical project record for Palimpsests as a compound audio, visual and research publication within Electronic Artefacts.",
+      "subtitle": "Five-Chapter Album by ORETH",
+      "summary": "Palimpsests is a five-chapter conceptual album signed by ORETH. It follows the evolution of a system through digital culture, memory, transformation and transmission.",
+      "description": "A canonical record for Palimpsests as an ORETH album and a demonstration of Electronic Artefacts’ capacity to produce music, media and cultural campaigns.",
       "status": "active",
       "maturity": "development",
       "confidence": "published",
@@ -12058,35 +12058,34 @@ window.EA_PUBLIC_CATALOG = {
       "kind": "project",
       "type": "project",
       "locale": "en",
-      "title": "Vestiges",
-      "subtitle": "Living Knowledge Infrastructure",
-      "summary": "Vestiges is the flagship VASTE platform for mapping, preserving and activating living know-how across people, practices, materials, places and institutions.",
-      "description": "A knowledge-first product where provenance, contribution, discovery and professional services grow from one historized graph.",
+      "title": "V6",
+      "subtitle": "Art and Craft Mapping Platform",
+      "summary": "V6 is a future platform that will map art and craft practices and develop CRM-oriented workflows as an applied test context for VASTE.",
+      "description": "An in-development VASTE test platform for art, craft, mapping and relationship management, targeted for 2027.",
       "status": "development",
       "maturity": "prototype",
       "confidence": "observed",
       "visibility": "public",
       "publicationClass": "canonical",
       "tags": [
-        "Vestiges",
+        "V6",
         "VASTE",
-        "Knowledge Graph",
+        "Art",
         "Craft",
-        "Culture",
-        "Cultural Infrastructure"
+        "CRM",
+        "Mapping"
       ],
       "discipline": [
         "Technology",
-        "Knowledge Graphs",
-        "Culture",
+        "Art",
         "Craft",
         "Design"
       ],
-      "route": "/projects/vestiges/",
-      "identifier": "/id/project/vestiges/",
+      "route": "/projects/v6/",
+      "identifier": "/id/project/v6/",
       "temporality": {
         "creationDate": "2025-01-01",
-        "lastUpdated": "2026-06-24",
+        "lastUpdated": "2026-07-11",
         "releaseDate": "2026-06-22",
         "creationYear": "2025"
       }
@@ -12372,7 +12371,7 @@ window.EA_PUBLIC_CATALOG = {
         "Living Archive",
         "Provenance",
         "Palimpsests",
-        "Vestiges"
+        "V6"
       ],
       "discipline": [
         "Archives",
@@ -12687,7 +12686,7 @@ window.EA_PUBLIC_CATALOG = {
       "title": "Knowledge Graphs for Cultural Infrastructure",
       "subtitle": "Technical Article",
       "summary": "This article explains how knowledge graphs support cultural infrastructure by giving people, works, sources, concepts, projects and archives stable identities and explicit relations.",
-      "description": "A technical article on knowledge graphs, cultural heritage, provenance and public knowledge pages, connected to Vestiges and the Electronic Artefacts graph.",
+      "description": "A technical article on knowledge graphs, cultural heritage, provenance and public knowledge pages, connected to V6 and the Electronic Artefacts graph.",
       "status": "active",
       "maturity": "research",
       "confidence": "published",
@@ -12698,7 +12697,7 @@ window.EA_PUBLIC_CATALOG = {
         "Cultural Infrastructure",
         "Linked Data",
         "Provenance",
-        "Vestiges"
+        "V6"
       ],
       "discipline": [
         "Knowledge Systems",
@@ -13604,7 +13603,7 @@ window.EA_PUBLIC_CATALOG = {
       "title": "Runtime Theory",
       "subtitle": "Research field",
       "summary": "Runtime Theory investigates the minimum identities, relations, contexts and event primitives required for a coherent executable system.",
-      "description": "An active Electronic Artefacts research field connecting early VOID experiments, VASTE and the definition of graph runtime.",
+      "description": "An active Electronic Artefacts research field connecting the archived VOID codebase, ARCA, VASTE and the definition of graph runtime.",
       "status": "active",
       "maturity": "research",
       "confidence": "validated",
@@ -15359,7 +15358,7 @@ window.EA_PUBLIC_CATALOG = {
       "subject": "ea:project:vestiges",
       "predicate": "appliesConcept",
       "object": "ea:concept:knowledge-graph",
-      "statement": "Vestiges applies knowledge-graph principles to culture, craft, institutions, techniques and public knowledge pages.",
+      "statement": "V6 is intended to test knowledge-graph principles for art, craft, institutions, techniques and CRM-oriented public surfaces.",
       "confidence": "observed",
       "createdAt": "2026-06-23",
       "reviewedAt": "2026-06-23",
@@ -17273,7 +17272,7 @@ window.EA_PUBLIC_CATALOG = {
       "subject": "ea:project:vestiges",
       "predicate": "poweredBy",
       "object": "ea:program:vaste",
-      "statement": "Vestiges uses VASTE as its graph runtime and contextual execution foundation.",
+      "statement": "V6 is intended to test VASTE as its graph runtime and contextual execution foundation.",
       "confidence": "observed",
       "createdAt": "2026-06-22",
       "reviewedAt": "2026-06-22",
@@ -17284,7 +17283,7 @@ window.EA_PUBLIC_CATALOG = {
       "subject": "ea:project:vestiges",
       "predicate": "appliesConcept",
       "object": "ea:concept:graph-runtime",
-      "statement": "Vestiges applies graph-runtime principles to cultural, craft and human-knowledge infrastructure.",
+      "statement": "V6 is intended to apply graph-runtime principles to art, craft and CRM-oriented infrastructure.",
       "confidence": "observed",
       "createdAt": "2026-06-22",
       "reviewedAt": "2026-06-22",
@@ -17317,7 +17316,7 @@ window.EA_PUBLIC_CATALOG = {
       "subject": "ea:project:vestiges",
       "predicate": "createdBy",
       "object": "ea:organization:electronic-artefacts",
-      "statement": "Electronic Artefacts created Vestiges as the flagship public application of VASTE.",
+      "statement": "Electronic Artefacts is developing V6 as an applied test platform for VASTE, focused on mapping art and craft practices and CRM-oriented workflows.",
       "confidence": "published",
       "createdAt": "2026-06-22",
       "reviewedAt": "2026-06-22",
@@ -17538,7 +17537,7 @@ window.EA_PUBLIC_CATALOG = {
       "subject": "ea:researchQuestion:first-conversation-understanding",
       "predicate": "implementedBy",
       "object": "ea:project:vestiges",
-      "statement": "Vestiges is listed as a current software or project answer for the research question \"How can an AI understand someone during its very first conversation?\".",
+      "statement": "V6 is listed as a current software or project answer for the research question \"How can an AI understand someone during its very first conversation?\".",
       "confidence": "observed",
       "validFrom": "2026-01-01",
       "createdAt": "2026-01-01",
@@ -17754,7 +17753,7 @@ window.EA_PUBLIC_CATALOG = {
       "subject": "ea:researchQuestion:self-explaining-knowledge-graph-software",
       "predicate": "implementedBy",
       "object": "ea:project:vestiges",
-      "statement": "Vestiges is listed as a current software or project answer for the research question \"How can software become explainable through its own knowledge graph?\".",
+      "statement": "V6 is listed as a current software or project answer for the research question \"How can software become explainable through its own knowledge graph?\".",
       "confidence": "validated",
       "validFrom": "2026-03-01",
       "createdAt": "2026-03-01",
@@ -18330,7 +18329,7 @@ window.EA_PUBLIC_CATALOG = {
     "ea:program:oreth-fr": "/fr/programs/oreth/",
     "ea:program:vaste-fr": "/fr/programs/vaste/",
     "ea:project:palimpsests-fr": "/fr/projects/palimpsests/",
-    "ea:project:vestiges-fr": "/fr/projects/vestiges/",
+    "ea:project:vestiges-fr": "/fr/projects/v6/",
     "ea:project:voice-capture-studio-fr": "/fr/projects/voice-capture-studio/",
     "ea:publication:ai-agents-vs-ai-workflows-fr": "/fr/publications/ai-agents-vs-ai-workflows/",
     "ea:publication:ai-search-structured-content-and-knowledge-graph-seo-fr": "/fr/publications/ai-search-structured-content-and-knowledge-graph-seo/",
@@ -18399,7 +18398,7 @@ window.EA_PUBLIC_CATALOG = {
     "ea:program:oreth": "/programs/oreth/",
     "ea:program:vaste": "/programs/vaste/",
     "ea:project:palimpsests": "/projects/palimpsests/",
-    "ea:project:vestiges": "/projects/vestiges/",
+    "ea:project:vestiges": "/projects/v6/",
     "ea:project:voice-capture-studio": "/projects/voice-capture-studio/",
     "ea:publication:ai-agents-vs-ai-workflows": "/publications/ai-agents-vs-ai-workflows/",
     "ea:publication:ai-search-structured-content-and-knowledge-graph-seo": "/publications/ai-search-structured-content-and-knowledge-graph-seo/",

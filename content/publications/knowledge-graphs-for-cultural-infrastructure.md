@@ -6,7 +6,7 @@ slug:
 title: Knowledge Graphs for Cultural Infrastructure
 subtitle: Technical Article
 abstract: This article explains how knowledge graphs support cultural infrastructure by giving people, works, sources, concepts, projects and archives stable identities and explicit relations.
-description: A technical article on knowledge graphs, cultural heritage, provenance and public knowledge pages, connected to Vestiges and the Electronic Artefacts graph.
+description: A technical article on knowledge graphs, cultural heritage, provenance and public knowledge pages, connected to V6 and the Electronic Artefacts graph.
 locale: en
 visibility: public
 publicationClass: published
@@ -56,7 +56,7 @@ tags:
   - Cultural Infrastructure
   - Linked Data
   - Provenance
-  - Vestiges
+  - V6
 disciplines:
   - Knowledge Systems
   - Archives
@@ -131,11 +131,11 @@ The implementation pattern is straightforward:
 7. Build search documents from titles, abstracts, bodies, tags and relations.
 8. Reject broken references during validation.
 
-The Electronic Artefacts graph already applies this pattern to VASTE, Runtime Theory, Graph Runtime and Vestiges. This article expands the same model into a broader knowledge hub.
+The Electronic Artefacts graph already applies this pattern to VASTE, Runtime Theory, Graph Runtime and V6. This article expands the same model into a broader knowledge hub.
 
 ## Practical applications
 
-For Vestiges, a knowledge graph can connect people, techniques, materials, works, documents and institutions. A reader could start from a craft material, follow it to a technique, then to a practitioner, then to a publication, then to a provenance record.
+For V6, a knowledge graph can connect people, techniques, materials, works, documents and institutions. A reader could start from a craft material, follow it to a technique, then to a practitioner, then to a publication, then to a provenance record.
 
 For Palimpsests, a graph can connect tracks, visual references, audio analysis, memory concepts, signal archaeology and publication context.
 
@@ -151,7 +151,7 @@ Useful tools and standards include RDF for graph thinking, JSON-LD for structure
 
 The current Electronic Artefacts build already generates canonical entity pages, identifier routes, JSON-LD files, search documents, a sitemap and local graph neighborhoods. That means the knowledge graph is not theoretical. It is the publishing substrate of the site.
 
-Vestiges is the strongest applied case because it needs to model living cultural knowledge without flattening people, materials and techniques into isolated cards.
+V6 is an intended applied case because it will map art and craft practices without flattening people, materials and techniques into isolated cards.
 
 ## Related concepts
 
@@ -159,7 +159,7 @@ Read the records for [Knowledge Graph](/knowledge/concepts/knowledge-graph/), [E
 
 ## Suggested reading
 
-Start with W3C RDF 1.1 Concepts, the CIDOC CRM overview and W3C PROV. Then compare those models with the Electronic Artefacts records for VASTE, Runtime Theory and Vestiges.
+Start with W3C RDF 1.1 Concepts, the CIDOC CRM overview and W3C PROV. Then compare those models with the Electronic Artefacts records for VASTE, Runtime Theory and V6.
 
 ## Related articles
 
@@ -188,4 +188,4 @@ The graph should also avoid false certainty. Cultural knowledge often contains u
 - W3C. RDF 1.1 Concepts and Abstract Syntax. 2014.
 - CIDOC CRM Special Interest Group. The CIDOC Conceptual Reference Model.
 - W3C. PROV-Overview. 2013.
-- Electronic Artefacts. VASTE, Runtime Theory, Graph Runtime and Vestiges records.
+- Electronic Artefacts. VASTE, Runtime Theory, Graph Runtime and V6 records.

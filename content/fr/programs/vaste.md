@@ -5,11 +5,9 @@ translationOf: ea:program:vaste
 slug:
   canonical: vaste
 title: VASTE
-subtitle: Runtime propriétaire
-abstract: VASTE est le runtime propriétaire d’Electronic Artefacts pour
-  architectures de graphe, exécution contextuelle, identité et mondes modulaires.
-description: Runtime propriétaire reliant Runtime Theory à des systèmes de
-  graphe évaluables par dépôt encadré, pilotes, implémentation ou licence.
+subtitle: R&D runtime
+abstract: VASTE est la future plateforme runtime d’Electronic Artefacts, actuellement en R&D, avec un horizon de livraison en 2027.
+description: VASTE relie Runtime Theory à un runtime en développement pour systèmes de graphe, exécution contextuelle, identité et mondes modulaires.
 locale: fr
 visibility: public
 publicationClass: canonical
@@ -24,9 +22,7 @@ version:
 authors:
   - id: ea:organization:electronic-artefacts
 publisher: ea:organization:electronic-artefacts
-mandate: Développer un runtime de graphe réutilisable pour l’exécution
-  contextuelle, l’identité, les structures de connaissance, la simulation et les
-  systèmes modulaires.
+mandate: Développer une plateforme runtime réutilisable pour l’exécution contextuelle, l’identité, les structures de connaissance, la simulation et les systèmes modulaires, avec un horizon de livraison en 2027.
 domain: Runtime Systems
 capabilities:
   - Entités de graphe adressables
@@ -35,8 +31,8 @@ capabilities:
   - Identité et permissions
   - Propagation d’événements
   - Structures de simulation
-  - Revue encadrée du dépôt
-  - Fondations pour pilotes et licences
+  - Recherche et prototypage runtime
+  - Fondations de la future plateforme
 architecture:
   - Couche d’entités de graphe
   - Couche de contexte et d’identité
@@ -46,7 +42,8 @@ lifecycle:
   - Héritage d’ARCA en 2023
   - Fondation conceptuelle en 2024
   - Prototype du runtime en 2025
-  - Évolution du runtime de graphe en 2026
+  - R&D du runtime de graphe en 2026
+  - Livraison de plateforme visée en 2027
 maintainers:
   - id: ea:organization:electronic-artefacts
 officialUrl: https://www.vaste.space/
@@ -65,34 +62,9 @@ disciplines:
 
 ## Mandat
 
-VASTE est le principal runtime propriétaire développé au sein d’Electronic Artefacts. Il explore les architectures de graphe, l’exécution contextuelle, les systèmes d’identité, les environnements de simulation, les structures de connaissance et la construction de mondes modulaires.
+VASTE est la future plateforme runtime développée au sein d’Electronic Artefacts. Elle est actuellement en R&D et explore les architectures de graphe, l’exécution contextuelle, les systèmes d’identité, les environnements de simulation, les structures de connaissance et la construction de mondes modulaires. Son horizon de livraison est 2027.
 
-Le programme n’est pas présenté uniquement comme un objet de recherche. Il constitue un actif technique pouvant être évalué, testé dans un pilote, licencié ou utilisé comme fondation d’une mission d’implémentation lorsqu’un partenaire a besoin d’une infrastructure fondée sur un graphe, de flux sensibles à l’identité ou d’une architecture de connaissance.
-
-## Accès commercial
-
-VASTE est accessible dans le cadre d’échanges commerciaux qualifiés plutôt que par téléchargement public. Le modèle d’accès expose le niveau approprié de code, de documentation et de contexte architectural sans traiter un moteur propriétaire comme un paquet générique.
-
-Les parcours d’accès comprennent notamment :
-
-- Revue du dépôt pour des acheteurs ou partenaires techniques qualifiés.
-- Revue architecturale guidée pour des équipes plateforme, produit ou institutionnelles.
-- Pilote limité à un cas concret de graphe, d’identité, de flux ou de système de connaissance.
-- Mission d’implémentation adaptant les concepts de VASTE à une surface de production.
-- Discussion de licence ou de partenariat pour soutenir une ligne produit plus longue.
-
-Une demande d’accès doit préciser le cas d’usage, l’organisation ou l’activité, l’identifiant GitHub, la fenêtre d’accès souhaitée, le contexte commercial et les éventuelles contraintes de confidentialité ou de licence.
-
-## Éléments évaluables
-
-Une revue qualifiée peut couvrir les éléments techniques et stratégiques nécessaires avant une décision de pilote ou de licence :
-
-- Modèle d’entités et de relations structurant les fiches du graphe.
-- Frontières d’identité, de permissions et de contexte.
-- Propagation d’événements et modèles de projection.
-- Intégration des interfaces publiques et conception des routes.
-- Publication du graphe de connaissance, recherche et identifiants sémantiques.
-- Compatibilité avec la pile existante, la feuille de route ou les contraintes institutionnelles.
+VASTE n’est aujourd’hui ni un produit public, ni un téléchargement, ni un service commercial. La fiche publique présente la direction de la recherche et les questions architecturales en cours ; disponibilité, interfaces et modalités d’accès seront annoncées lorsque la plateforme sera prête.
 
 ## Fondation de recherche
 
@@ -100,7 +72,7 @@ Le programme rend Runtime Theory opérationnelle. Il traite entités, relations,
 
 ## Architecture
 
-L’architecture actuelle repose sur des entités de graphe adressables, des relations typées, une identité contextuelle et la propagation d’événements. Les applications publiques peuvent construire des interfaces spécialisées tout en conservant une sémantique commune.
+L’architecture actuelle repose sur des entités de graphe adressables, des relations typées, une identité contextuelle et la propagation d’événements. Les prototypes de recherche peuvent construire des interfaces spécialisées tout en conservant une sémantique commune.
 
 Le programme s’organise en plusieurs couches :
 
@@ -109,39 +81,17 @@ Le programme s’organise en plusieurs couches :
 - Couche d’identité et de permissions : limites pour utilisateurs, organisations, mainteneurs, accès et visibilité.
 - Couche d’exécution : changements d’état, propagation et réponses du système.
 - Couche de projection : pages publiques, interfaces produit, documents de recherche, flux et interfaces externes.
-- Couche d’accès commercial : documentation, revue du dépôt, limites du pilote et planification de l’implémentation.
-
-## Adéquation
-
-VASTE est pertinent lorsque le problème produit est structurel plutôt que cosmétique. Il convient aux équipes qui doivent modéliser personnes, artefacts, droits, preuves, histoires, flux, projets, institutions ou nœuds de connaissance comme des entités connectées et évolutives.
-
-Les cas adaptés comprennent les plateformes de connaissance, infrastructures culturelles, archives, catalogues, fondations, collections, workflows de graphe soumis à permissions et architectures réutilisables entre plusieurs interfaces publiques.
-
-Les pages promotionnelles ponctuelles, le commerce électronique standard ou les projets où un CMS conventionnel suffit constituent de moins bons cas d’usage.
 
 ## Héritage
 
-VASTE est issu d’ARCA, un système antérieur consacré aux actifs numériques, à la traçabilité et à la certification. Son périmètre a évolué d’une plateforme spécialisée vers des structures généralisées d’exécution et d’information.
+VASTE succède à ARCA, un système antérieur doté d’une base de code importante, mais jamais publié. ARCA explorait les actifs numériques, la traçabilité et la certification ; son périmètre a ensuite évolué vers des structures généralisées d’exécution et d’information.
 
-## Implémentations
+## Applications de recherche
 
-Vestiges est le principal produit public utilisé pour démontrer le runtime dans un contexte concret de connaissance et d’économie. Il applique le modèle de graphe à la culture, aux savoir-faire et aux pratiques humaines.
+V6 est une future plateforme pensée comme terrain de test appliqué pour VASTE. Elle doit cartographier les pratiques de l’art et de l’artisanat et développer une couche orientée CRM pour cet écosystème. Les noms de domaine et présences sociales sont réservés, mais la plateforme reste en développement avec le même horizon 2027.
 
-D’autres programmes et projets Electronic Artefacts héritent du même modèle : fiches structurées, surfaces de publication réutilisables, héritage explicite, accès encadré et architecture prête pour l’implémentation.
-
-## Formats de collaboration
-
-VASTE peut entrer dans une collaboration sous quatre formes :
-
-- Revue technique : évaluer la structure du dépôt, les hypothèses du moteur et l’adéquation.
-- Pilote : définir un cas d’usage limité, une cible d’implémentation et des critères de réussite.
-- Réalisation : utiliser les modèles VASTE comme fondation d’un produit, d’une archive, d’une plateforme ou d’un système interne.
-- Licence : négocier l’usage de la logique, des modules ou des modèles architecturaux du moteur.
-
-Chaque format doit aboutir à une décision explicite : absence d’adéquation, recherche supplémentaire, pilote payant, périmètre d’implémentation, parcours de licence ou feuille de route de partenariat.
+D’autres travaux d’Electronic Artefacts peuvent nourrir ou tester certains aspects de la recherche, mais aucun ne doit être présenté comme un produit VASTE livré avant sa mise à disposition.
 
 ## État et limites
 
-VASTE reste en développement actif. Les affirmations architecturales sont publiées lorsqu’elles sont suffisamment stables, tandis que les détails d’implémentation et les caractéristiques de performance restent susceptibles d’évoluer.
-
-Un accès privé au dépôt n’implique pas un droit de redistribution, revente, sous-licence ou utilisation en production. Ces droits doivent faire l’objet d’un accord explicite avant tout déploiement commercial.
+VASTE reste en R&D active. Les affirmations architecturales sont publiées lorsqu’elles sont suffisamment stables, tandis que les détails d’implémentation, les caractéristiques de performance, le calendrier de livraison et le périmètre produit restent susceptibles d’évoluer. L’objectif actuel est une livraison en 2027.

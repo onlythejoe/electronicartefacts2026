@@ -50,7 +50,7 @@
   "category": "protocol",
   "roleInEcosystem": "IIIF provides interoperable resource structures such as collections, manifests, canvases, ranges and annotations for cultural object presentation.",
   "officialUrl": "https://iiif.io/api/presentation/3.0/",
-  "bodyHtml": "<h2 id=\"role\">Role</h2>\n<p>IIIF standardizes the presentation of digitized and born-digital cultural objects so viewers, archives and institutions can exchange compound object structures.</p>\n<h2 id=\"use\">Use</h2>\n<p>Electronic Artefacts can use IIIF concepts to reason about Vestiges objects, Palimpsests dossiers, audio-visual collections and annotation-aware public records.</p>\n<h2 id=\"references\">References</h2>\n<p>See the IIIF Presentation API 3.0 specification for collections, manifests, canvases, ranges and annotations.</p>\n",
+  "bodyHtml": "<h2 id=\"role\">Role</h2>\n<p>IIIF standardizes the presentation of digitized and born-digital cultural objects so viewers, archives and institutions can exchange compound object structures.</p>\n<h2 id=\"use\">Use</h2>\n<p>Electronic Artefacts can use IIIF concepts to reason about V6 objects, Palimpsests dossiers, audio-visual collections and annotation-aware public records.</p>\n<h2 id=\"references\">References</h2>\n<p>See the IIIF Presentation API 3.0 specification for collections, manifests, canvases, ranges and annotations.</p>\n",
   "headings": [
     "Role",
     "Use",

@@ -55,7 +55,7 @@ explicitMembers:
   - id: ea:technology:cloudevents
   - id: ea:technology:owl
   - id: ea:technology:skos
-selectionNote: La sélection privilégie des questions evergreen à forte demande de recherche et à liens structurels forts avec VASTE, Vestiges, ORETH, Palimpsests et le Knowledge Hub public.
+selectionNote: La sélection privilégie des questions evergreen à forte demande de recherche et à liens structurels forts avec VASTE, V6, ORETH, Palimpsests et le Knowledge Hub public.
 tags:
   - hub de connaissance
   - troisième vague
@@ -89,7 +89,7 @@ La collection comprend douze publications longues, douze concepts canoniques et 
 
 ## Chemins internes
 
-Les lecteurs venus des LLM peuvent poursuivre vers les agents, l’inférence locale, le RAG et la multimodalité. Les lecteurs orientés systèmes peuvent aller vers les graphes, événements, Redis, frontières de services et systèmes d’exploitation de domaine. VASTE, Vestiges, ORETH et Palimpsests fournissent les contextes appliqués.
+Les lecteurs venus des LLM peuvent poursuivre vers les agents, l’inférence locale, le RAG et la multimodalité. Les lecteurs orientés systèmes peuvent aller vers les graphes, événements, Redis, frontières de services et systèmes d’exploitation de domaine. VASTE, V6, ORETH et Palimpsests fournissent les contextes appliqués.
 
 ## Expansion future
 

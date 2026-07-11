@@ -137,7 +137,7 @@ Graphs can model time through version entities, event records and relation valid
 
 Temporal modeling prevents current state from erasing history. Cultural knowledge often depends on sequence: who learned from whom, how a technique moved, when an institution changed name.
 
-Vestiges needs this capacity because craft and cultural transmission are processes, not static profiles.
+V6 needs this capacity because craft and cultural transmission are processes, not static profiles.
 
 ## Permissions and context
 
@@ -183,7 +183,7 @@ Version control also complements graphs. Git records textual change history, whi
 
 The phrase "model the world with graphs" can invite overreach. No graph captures reality completely. A model selects entities and relations according to purpose.
 
-The first step is competency questions. What must the system answer? For Vestiges: who practices a technique, which materials it uses, where it is taught, what documents support the claim, and how it changed over time. These questions determine the graph.
+The first step is competency questions. What must the system answer? For V6: who practices a technique, which materials it uses, where it is taught, what documents support the claim, and how it changed over time. These questions determine the graph.
 
 The second step is evidence. A relation should have a source when it makes a substantive cultural claim.
 
@@ -225,9 +225,9 @@ The approach is valuable for systems where knowledge and workflow are inseparabl
 
 It also requires stronger controls. Execution should use bounded neighborhoods and validated predicates rather than arbitrary traversal.
 
-## Vestiges
+## V6
 
-Vestiges demonstrates why folders are insufficient for cultural knowledge. A craft technique belongs to people, places, materials, tools, institutions and works. No single hierarchy can represent all of these paths.
+V6 demonstrates why folders are insufficient for cultural knowledge. A craft technique belongs to people, places, materials, tools, institutions and works. No single hierarchy can represent all of these paths.
 
 A graph allows the platform to preserve transmission: a person learned from another person, taught at an institution, used a material and contributed to a work. Public pages can then tell coherent stories from the same structured records.
 
@@ -257,7 +257,7 @@ Read [Graph Modeling](/knowledge/concepts/graph-modeling/), [Knowledge Graph](/k
 
 ## Related programs and projects
 
-See [VASTE](/programs/vaste/) and [Vestiges](/projects/vestiges/).
+See [VASTE](/programs/vaste/) and [V6](/projects/v6/).
 
 ## Glossary
 

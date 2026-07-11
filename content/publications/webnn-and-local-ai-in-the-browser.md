@@ -141,7 +141,7 @@ Archives often contain sensitive or unpublished material. Browser-local inferenc
 
 Still, browser storage and caching must be handled carefully. A local browser feature can leave traces on a shared machine. The application should offer clear session boundaries and deletion controls.
 
-For Vestiges, a WebNN-enabled viewer could classify images or suggest metadata while preserving human review. For Palimpsests, it could assist with audio-visual annotation without exposing private source media.
+For V6, a WebNN-enabled viewer could classify images or suggest metadata while preserving human review. For Palimpsests, it could assist with audio-visual annotation without exposing private source media.
 
 ## WebNN and VASTE
 
