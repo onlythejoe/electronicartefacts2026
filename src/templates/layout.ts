@@ -16,7 +16,7 @@ export const renderLayout = ({ metadata, body, header, footer, jsonLd, pageClass
 <html lang="${metadata.language || site.language}">
   <head>
     <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
     <meta name="color-scheme" content="dark" />
     <meta name="description" content="${escapeHtml(metadata.description)}" />
     <meta name="robots" content="${escapeHtml(metadata.robots)}" />
@@ -61,8 +61,8 @@ export const renderLayout = ({ metadata, body, header, footer, jsonLd, pageClass
     <meta name="twitter:image:alt" content="${escapeHtml(metadata.imageAlt)}" />
     <title>${escapeHtml(metadata.title)}</title>
     <script type="application/ld+json">${JSON.stringify(jsonLd).replaceAll("<", "\\u003c")}</script>
-    <link rel="stylesheet" href="/assets/css/app.css?v=56" />
-    <script type="module" src="/assets/js/app.js?v=52"></script>
+    <link rel="stylesheet" href="/assets/css/app.css?v=58" />
+    <script type="module" src="/assets/js/app.js?v=54"></script>
   </head>
   <body data-page="${escapeHtml(pageClass)}" data-generated-page="true"${entryId ? ` data-entry-id="${escapeHtml(entryId)}"` : ""}>
     <a class="skip-link" href="#main">Skip to main content</a>

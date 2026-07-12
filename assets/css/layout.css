@@ -19,6 +19,9 @@
   grid-template-columns: minmax(0, 1fr);
   gap: var(--section-stack-gap);
   padding: clamp(1.05rem, 1.8vw, 1.45rem) 0 1.75rem;
+  min-height: max(0px, calc(100vh - var(--header-offset) - 3rem));
+  min-height: max(0px, calc(100svh - var(--header-offset) - 3rem));
+  min-height: max(0px, calc(100dvh - var(--header-offset) - 3rem));
 }
 
 section[data-render] {
@@ -38,7 +41,7 @@ section[data-render] {
 
 .shell-header.zone-card {
   position: fixed;
-  top: clamp(0.85rem, 1.5vw, 1.25rem);
+  top: calc(var(--safe-area-top) + clamp(0.85rem, 1.5vw, 1.25rem));
   left: var(--gutter);
   right: var(--gutter);
   z-index: 2000;

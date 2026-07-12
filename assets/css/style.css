@@ -14056,7 +14056,7 @@ body[data-page="home"] .home-intent-stage__channels {
 
   .shell-header.zone-card {
     --mobile-header-pad: 0.72rem;
-    top: 0.72rem;
+    top: calc(var(--safe-area-top) + 0.72rem);
     padding: var(--mobile-header-pad);
     border-radius: calc(var(--radius-lg) + 0.1rem);
   }

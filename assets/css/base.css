@@ -6,6 +6,8 @@
 
 html {
   min-height: 100%;
+  min-height: 100svh;
+  background: #030304;
   overflow-x: hidden;
   scroll-behavior: smooth;
   scrollbar-gutter: stable;
@@ -52,9 +54,12 @@ html {
 body {
   position: relative;
   margin: 0;
-  padding-top: calc(clamp(0.9rem, 1.7vw, 1.45rem) + var(--header-offset, 0px));
-  padding-bottom: clamp(0.9rem, 1.7vw, 1.45rem);
+  isolation: isolate;
+  padding-top: calc(var(--safe-area-top) + clamp(0.9rem, 1.7vw, 1.45rem) + var(--header-offset, 0px));
+  padding-bottom: calc(var(--safe-area-bottom) + clamp(0.9rem, 1.7vw, 1.45rem));
   min-height: 100vh;
+  min-height: 100svh;
+  min-height: 100dvh;
   overflow-x: hidden;
   color: var(--text);
   font-family: "Inter", "SF Pro Display", "SF Pro Text", "Segoe UI", system-ui, sans-serif;
@@ -66,6 +71,43 @@ body {
     radial-gradient(circle at top right, rgba(234, 220, 207, 0.06), transparent 24%),
     radial-gradient(circle at bottom center, rgba(255, 255, 255, 0.025), transparent 36%),
     linear-gradient(180deg, #08080a 0%, var(--bg) 62%, #020203 100%);
+}
+
+body::before,
+body::after {
+  content: "";
+  position: fixed;
+  right: -12vw;
+  left: -12vw;
+  z-index: -1;
+  height: clamp(7rem, 22svh, 15rem);
+  pointer-events: none;
+  filter: blur(22px);
+  opacity: 0.72;
+  transform: translateZ(0);
+}
+
+body::before {
+  top: calc(-1 * clamp(2.5rem, 7svh, 5.5rem));
+  background:
+    radial-gradient(ellipse at 24% 100%, rgba(234, 220, 207, 0.13), transparent 56%),
+    radial-gradient(ellipse at 78% 88%, rgba(124, 58, 237, 0.1), transparent 52%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.1), transparent 78%);
+}
+
+body::after {
+  bottom: calc(-1 * clamp(2.5rem, 7svh, 5.5rem));
+  background:
+    radial-gradient(ellipse at 70% 4%, rgba(234, 220, 207, 0.1), transparent 52%),
+    radial-gradient(ellipse at 20% 10%, rgba(148, 163, 184, 0.08), transparent 52%),
+    linear-gradient(0deg, rgba(0, 0, 0, 0.44), transparent 78%);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body::before,
+  body::after {
+    transform: none;
+  }
 }
 
 body > main,

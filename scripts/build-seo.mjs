@@ -401,9 +401,13 @@ for (const [file, config] of Object.entries(pages)) {
   }
 
   html = injectSeoH1(html, config);
+  html = html.replace(
+    /<meta\s+name="viewport"\s+content="[^"]*"\s*\/>/i,
+    '<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />',
+  );
   html = html.replace(/<main id="main"(?![^>]*\btabindex=)/, '<main id="main" tabindex="-1"');
-  html = html.replace(/assets\/css\/app\.css\?v=\d+/, "assets/css/app.css?v=57");
-  html = html.replace(/assets\/js\/app\.js\?v=\d+/, "assets/js/app.js?v=53");
+  html = html.replace(/assets\/css\/app\.css\?v=\d+/, "assets/css/app.css?v=58");
+  html = html.replace(/assets\/js\/app\.js\?v=\d+/, "assets/js/app.js?v=54");
 
   await writeFile(absolutePath, html);
 }
