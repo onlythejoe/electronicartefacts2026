@@ -72,6 +72,15 @@ const pages = [
     h1: "Une recherche qui prend la forme de systèmes, de méthodes et d’œuvres.",
   },
   {
+    source: "graph.html",
+    output: "fr/graph.html",
+    englishRoute: "/graph.html",
+    frenchRoute: "/fr/graph.html",
+    title: "Graphe public de connaissances | Electronic Artefacts",
+    description: "Explorez le graphe public d’Electronic Artefacts : recherches, systèmes, projets, publications et archives reliés.",
+    h1: "Le graphe public de connaissances d’Electronic Artefacts.",
+  },
+  {
     source: "archive.html",
     output: "fr/archive.html",
     englishRoute: "/archive.html",

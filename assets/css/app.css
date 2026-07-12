@@ -11177,6 +11177,7 @@ body[data-entry-id="vestiges"] .project-process__marker {
 }
 
 .global-graph__node text {
+  display: none;
   fill: rgba(247, 244, 239, 0.72);
   font-size: 1.25px;
   font-weight: 700;
@@ -11195,6 +11196,7 @@ body[data-entry-id="vestiges"] .project-process__marker {
 
 .global-graph__node:hover text,
 .global-graph__node:focus-visible text {
+  display: block;
   fill: var(--text);
   font-size: 1.6px;
 }

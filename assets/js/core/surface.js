@@ -400,9 +400,61 @@
       .replace(/\b\w/g, (char) => char.toUpperCase());
   const researchNumber = (question, index) => `${translate("Research")} #${String(question.priority || index + 1).padStart(3, "0")}`;
   const researchCoreNumber = (question, index) => `#${String(question.priority || index + 1).padStart(3, "0")}`;
-  const graphRouteForQuestion = (question) => {
-    const localeSegment = question.locale === "fr" ? "/fr" : "";
-    return `/graph/neighborhoods${localeSegment}/research-question/${question.legacyId || String(question.id || "").split(":").pop()}.json`;
+  const graphRouteForQuestion = (question) => question?.locale === "fr" ? "/fr/graph.html" : "/graph.html";
+  const globalGraph = () => {
+    const records = publicRecords().filter((record) => record.locale === pageLocale);
+    const visibleIds = new Set(records.map((record) => record.id));
+    const localizedIds = new Map(records.filter((record) => record.translationOf).map((record) => [record.translationOf, record.id]));
+    const localIdFor = (id) => visibleIds.has(id) ? id : localizedIds.get(id) || id;
+    const relations = publicRelations()
+      .map((relation) => ({ ...relation, subject: localIdFor(relation.subject), object: localIdFor(relation.object) }))
+      .filter((relation) => visibleIds.has(relation.subject) && visibleIds.has(relation.object));
+    const types = [...new Set(records.map((record) => record.type))].sort();
+    const typeLabel = (type) => nodeKindLabel({ type });
+    const typeIndex = new Map(types.map((type, index) => [type, index]));
+    const positions = new Map(records.map((record, index) => {
+      const group = typeIndex.get(record.type) || 0;
+      const groupCount = types.length || 1;
+      const recordsInGroup = records.filter((item) => item.type === record.type);
+      const positionInGroup = recordsInGroup.indexOf(record);
+      const angle = (positionInGroup / Math.max(recordsInGroup.length, 1)) * Math.PI * 2 - Math.PI / 2 + group * 0.14;
+      const radius = 22 + (group % 4) * 10 + Math.floor(group / 4) * 4;
+      return [record.id, { x: 50 + Math.cos(angle) * radius, y: 50 + Math.sin(angle) * radius }];
+    }));
+    const edgeMarkup = relations.map((relation) => {
+      const from = positions.get(relation.subject);
+      const to = positions.get(relation.object);
+      return from && to ? `<line data-global-graph-edge data-global-graph-from="${esc(relation.subject)}" data-global-graph-to="${esc(relation.object)}" x1="${from.x}" y1="${from.y}" x2="${to.x}" y2="${to.y}" />` : "";
+    }).join("");
+    const nodeMarkup = records.map((record) => {
+      const position = positions.get(record.id);
+      const color = nodeColorFor(record.type, typeIndex.get(record.type) || 0);
+      return `<a class="global-graph__node" data-global-graph-node data-global-graph-id="${esc(record.id)}" data-global-graph-type="${esc(record.type)}" href="${esc(routeForRecord(record))}" style="--node-color:${esc(color)}" aria-label="${esc(`${record.title} — ${typeLabel(record.type)}`)}"><title>${esc(`${record.title} — ${typeLabel(record.type)}`)}</title><circle cx="${position.x}" cy="${position.y}" r="1.25" /><text x="${position.x}" y="${position.y - 2.25}">${esc(record.title)}</text></a>`;
+    }).join("");
+    return `
+      <section class="zone-card hero global-graph" data-global-graph>
+        <div class="section-head global-graph__head">
+          <p class="eyebrow">${esc(translate("KNOWLEDGE GRAPH"))}</p>
+          <h2>${esc(translate("The public Electronic Artefacts graph."))}</h2>
+          <p class="lede">${esc(translate("Browse the public records and the relations that connect research, systems, projects, publications and archive material. Select a family to focus the map; each point opens its canonical record."))}</p>
+        </div>
+        <div class="global-graph__summary" aria-label="${esc(translate("Graph summary"))}">
+          <span><strong>${records.length}</strong> ${esc(translate("public records"))}</span>
+          <span><strong>${relations.length}</strong> ${esc(translate("relations"))}</span>
+          <span><strong>${types.length}</strong> ${esc(translate("record families"))}</span>
+        </div>
+        <div class="global-graph__filters" role="group" aria-label="${esc(translate("Filter graph"))}">
+          <button type="button" class="tag is-active" data-global-graph-filter="all" aria-pressed="true">${esc(translate("All records"))}</button>
+          ${types.map((type) => `<button type="button" class="tag" data-global-graph-filter="${esc(type)}" aria-pressed="false"><i style="--node-color:${esc(nodeColorFor(type, typeIndex.get(type) || 0))}"></i>${esc(typeLabel(type))}</button>`).join("")}
+        </div>
+        <div class="global-graph__canvas-wrap">
+          <svg class="global-graph__canvas" viewBox="0 0 100 100" role="img" aria-label="${esc(translate("Interactive global graph of public Electronic Artefacts records"))}">
+            <g class="global-graph__edges">${edgeMarkup}</g>
+            <g class="global-graph__nodes">${nodeMarkup}</g>
+          </svg>
+        </div>
+        <p class="global-graph__hint">${esc(translate("The map is a public reading surface, not an exhaustive model of private work. Hover or focus a point to read it; activate it to open the record."))}</p>
+      </section>`;
   };
   const compactRefs = (refs, limit, indexes) => (refs || [])
     .map((ref) => recordForRef(ref, indexes) || ref)
@@ -1330,6 +1382,7 @@
     nodesFromItems,
     ecosystemExplorer,
     researchAtlas,
+    globalGraph,
     startGraphSurfaceAnimation,
     startResearchAtlas,
     pageLens,

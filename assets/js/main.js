@@ -47,7 +47,7 @@
     latestArtefacts,
     routeCard,
   } = window.EA_VIEW;
-  const { crossNavigation, uxSurface, nodesFromItems, ecosystemExplorer, researchAtlas, startGraphSurfaceAnimation, startResearchAtlas, pageLens } = window.EA_SURFACE;
+  const { crossNavigation, uxSurface, nodesFromItems, ecosystemExplorer, researchAtlas, globalGraph, startGraphSurfaceAnimation, startResearchAtlas, pageLens } = window.EA_SURFACE;
   const indexes = catalog.indexes || {};
   const entityIndex = indexes.byId || {};
   const titleIndex = indexes.byTitleSlug || {};
@@ -3150,6 +3150,7 @@
     })}${ecosystemExplorer()}`;
 
   const renderResearchAtlas = () => researchAtlas ? researchAtlas() : "";
+  const renderGlobalGraph = () => globalGraph ? globalGraph() : "";
 
   const renderWorkForensics = () => {
     const workflow = [
@@ -4574,6 +4575,10 @@
       "research-notes": researchNotes,
       "cross-navigation": renderCrossNavigation,
     },
+    graph: {
+      "global-graph": renderGlobalGraph,
+      "cross-navigation": renderCrossNavigation,
+    },
     programs: {
       "programs-page": renderProgramsPage,
       "cross-navigation": renderCrossNavigation,
@@ -4693,6 +4698,26 @@
     selectFilter(filtersById.has(requested) ? requested : filters[0].id);
   };
 
+  const initGlobalGraph = () => {
+    const graph = document.querySelector("[data-global-graph]");
+    if (!graph) return;
+    const buttons = [...graph.querySelectorAll("[data-global-graph-filter]")];
+    const nodes = [...graph.querySelectorAll("[data-global-graph-node]")];
+    const edges = [...graph.querySelectorAll("[data-global-graph-edge]")];
+    const select = (type) => {
+      buttons.forEach((button) => {
+        const active = button.dataset.globalGraphFilter === type;
+        button.classList.toggle("is-active", active);
+        button.setAttribute("aria-pressed", String(active));
+      });
+      const visibleIds = new Set(nodes.filter((node) => type === "all" || node.dataset.globalGraphType === type).map((node) => node.dataset.globalGraphId));
+      nodes.forEach((node) => node.classList.toggle("is-muted", type !== "all" && node.dataset.globalGraphType !== type));
+      edges.forEach((edge) => edge.classList.toggle("is-muted", type !== "all" && (!visibleIds.has(edge.dataset.globalGraphFrom) || !visibleIds.has(edge.dataset.globalGraphTo))));
+      graph.dataset.activeGraphFilter = type;
+    };
+    buttons.forEach((button) => button.addEventListener("click", () => select(button.dataset.globalGraphFilter || "all")));
+  };
+
   const initPageInteractions = () => {
     initFilters(filterState);
     initSearch(searchState, renderSearchResults);
@@ -4700,6 +4725,7 @@
     initContactDiscovery();
     initCapabilityMaps();
     initProjectBrowser();
+    initGlobalGraph();
     initProgressiveGrids();
     initUXEnhancements(filterState);
     initEngagementPanels();

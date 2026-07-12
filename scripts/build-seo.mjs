@@ -51,6 +51,7 @@ const frenchRoutes = {
   "contact.html": "/fr/contact.html",
   "programs.html": "/fr/programs.html",
   "research.html": "/fr/research.html",
+  "graph.html": "/fr/graph.html",
   "archive.html": "/fr/archive.html",
   "mentions-legales.html": "/fr/mentions-legales.html",
   "confidentialite.html": "/fr/confidentialite.html",
@@ -103,6 +104,11 @@ const pages = {
     description:
       "Research on technology, knowledge systems and culture translated into prototypes, publications and working software.",
     h1: "Research that becomes systems, methods and works.",
+  },
+  "graph.html": {
+    title: "Public Knowledge Graph | Electronic Artefacts",
+    description: "Explore the public Electronic Artefacts knowledge graph: connected research, systems, projects, publications and archive records.",
+    h1: "The public Electronic Artefacts knowledge graph.",
   },
   "archive.html": {
     title: "Archive | Electronic Artefacts",
