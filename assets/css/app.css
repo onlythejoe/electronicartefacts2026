@@ -19614,13 +19614,14 @@ body:has(.detail-hero[data-entry-id="oeil-de-meg"]) .consent-banner__copy .tag:f
 
   .signature-banner--oreth .signature-banner__media {
     z-index: 0;
+    pointer-events: none;
   }
 
   .signature-banner--oreth .signature-banner__actions {
     position: absolute;
     bottom: clamp(1rem, 4vw, 1.35rem);
     left: clamp(1rem, 4vw, 1.35rem);
-    z-index: 5;
+    z-index: 4;
     width: max-content;
     max-width: calc(100% - clamp(2rem, 8vw, 2.7rem));
     gap: 0.45rem;
