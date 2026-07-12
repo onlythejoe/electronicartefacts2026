@@ -9,7 +9,7 @@
       "description": "Repères pour comprendre Observabilité des agents d'IA et des systèmes d'appel d'outils dans un contexte de conception : concepts clés, implications pratiques, limites et références reliées au graphe Electronic Artefacts.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
-      "dateModified": "2026-06-25",
+      "dateModified": "2026-07-12",
       "primaryImageOfPage": {
         "@type": "ImageObject",
         "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-social.jpg",
@@ -70,7 +70,7 @@
       "inLanguage": "fr",
       "dateCreated": "2026-06-24",
       "datePublished": "2026-06-25",
-      "dateModified": "2026-06-25",
+      "dateModified": "2026-07-12",
       "publisher": {
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
@@ -78,9 +78,9 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 140,
+      "wordCount": 1992,
       "citation": [
-        "Electronic Artefacts. \"Observabilité des agents d'IA et des systèmes d'appel d'outils\". Article technique, version 1.0.0, 2026.",
+        "Electronic Artefacts. \"Observabilité des agents d'IA et des systèmes d'appel d'outils\". Article technique, version 1.1.0, 2026.",
         {
           "@type": "CreativeWork",
           "name": "OpenTelemetry Semantic Conventions 1.42.0",
@@ -133,7 +133,7 @@
         "Observability",
         "agents d'IA"
       ],
-      "timeRequired": "PT1M",
+      "timeRequired": "PT10M",
       "isBasedOn": [
         {
           "@type": "CreativeWork",

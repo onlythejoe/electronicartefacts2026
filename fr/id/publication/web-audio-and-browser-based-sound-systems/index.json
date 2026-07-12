@@ -16,10 +16,10 @@
   "maturity": "research",
   "confidence": "published",
   "version": {
-    "version": "1.0.0",
+    "version": "1.1.0",
     "createdAt": "2026-06-24",
     "publishedAt": "2026-06-25",
-    "modifiedAt": "2026-06-25"
+    "modifiedAt": "2026-07-12"
   },
   "authors": [
     {
@@ -79,14 +79,32 @@
     }
   ],
   "citation": {
-    "preferred": "Electronic Artefacts. \"Web Audio et systèmes sonores dans le navigateur\". Article technique, version 1.0.0, 2026."
+    "preferred": "Electronic Artefacts. \"Web Audio et systèmes sonores dans le navigateur\". Article technique, version 1.1.0, 2026."
   },
-  "bodyHtml": "<h2 id=\"probleme\">Problème</h2>\n<p>Cette synthèse clarifie le sujet « Web Audio et systèmes sonores dans le navigateur » pour aider le lecteur à comprendre le vocabulaire, les enjeux pratiques et les liens avec les autres pages du graphe Electronic Artefacts.</p>\n<h2 id=\"architecture\">Architecture</h2>\n<p>Le sujet est présenté à travers ses composants, ses relations avec les concepts voisins et les décisions de conception qu’il implique.</p>\n<h2 id=\"mise-en-uvre\">Mise en œuvre</h2>\n<p>La page met l’accent sur les usages concrets, les contraintes de gouvernance et les conditions d’application dans un système réel.</p>\n<h2 id=\"elements-de-preuve\">Éléments de preuve</h2>\n<p>Les sources, relations et éléments de contexte restent associés à la fiche pour distinguer synthèse éditoriale, preuve et référence.</p>\n<h2 id=\"limites\">Limites</h2>\n<p>Les limites décrivent ce que la fiche ne couvre pas encore, les sources disponibles et les conditions d’usage documentées.</p>\n<h2 id=\"references\">Références</h2>\n<p>Les sources principales restent disponibles dans le bloc de références de la fiche.</p>\n",
+  "bodyHtml": "<h2 id=\"probleme\">Problème</h2>\n<p>Le web est souvent traité comme un endroit où les fichiers audio sont intégrés et lus. Ce point de vue est trop petit. Les navigateurs peuvent désormais héberger des systèmes sonores interactifs : synthétiseurs, échantillonneurs, analyseurs, visualisateurs, expériences audio spatiales, outils éducatifs et prototypes d’écoute automatique.</p>\n<p>Le problème est que de nombreux projets audio web restent des démos ou des expériences opaques. Ils font du son mais n’expliquent pas le système. Ils utilisent l’analyse mais ne préservent pas les paramètres. Ils produisent des interactions mais ne documentent pas le graphique audio.</p>\n<p>Electronic Artefacts a besoin d’une façon plus rigoureuse de penser au son basé sur le navigateur. L’audio Web devrait être considéré comme une architecture sonore publique, en particulier en ce qui concerne l’ORETH, l’archéologie des signaux et les pages interactives de connaissances.</p>\n<h2 id=\"presentation\">Présentation</h2>\n<p>Web Audio décrit la synthèse audio basée sur le navigateur, le routage, le traitement et l’analyse. L’API Web Audio organise le son à travers des nœuds connectés. Les oscillateurs, tampons, filtres, gains, analyseurs et destinations forment un graphique audio.</p>\n<p>Cette structure graphique est importante sur le plan conceptuel. Le son n’est pas une boîte noire. C’est un réseau de sources, de transformations, de paramètres et de sorties. Cela rend Web Audio particulièrement compatible avec le vocabulaire graphique plus large d’Electronic Artefacts.</p>\n<h2 id=\"contexte\">Contexte</h2>\n<p>Le son du navigateur a une signification culturelle et technique. Il réduit la barrière d’accès car un lecteur peut rencontrer un outil audio à l’intérieur d’une page. Il crée également des contraintes : politiques de navigateur, latence, budgets CPU, permissions, variation de périphérique et compatibilité à long terme.</p>\n<p>Pour un centre de connaissances, ces contraintes sont productives. Ils obligent les systèmes publics de sonorisation à documenter leurs hypothèses. Un article Web Audio peut expliquer non seulement le son, mais l’architecture qui rend le son possible.</p>\n<h2 id=\"historique\">Historique</h2>\n<p>L’audio web était centré sur la lecture de fichiers et les plugins. Les API audio natives du navigateur ont changé cela. La plateforme web est progressivement devenue capable de synthèse, d’analyse et de routage en temps réel sans nécessiter une application séparée.</p>\n<p>Ce changement correspond à des transitions antérieures dans le codage créatif. Lorsque la programmation visuelle s’est déplacée dans les navigateurs, les croquis sont devenus partageables. Lorsque l’audio est passé dans les navigateurs, les outils d’écoute et les expériences sonores pourraient devenir des pages publiques.</p>\n<h2 id=\"concepts-fondamentaux\">Concepts fondamentaux</h2>\n<p>Graphique audio : un réseau de nœuds audio connectés.</p>\n<p>Noeud audio: unité de traitement telle qu’une source, un filtre, un gain ou un analyseur.</p>\n<p>Buffer: données audio stockées utilisées pour la lecture ou le traitement.</p>\n<p>Analyseur : un noeud qui expose les données du domaine temporel ou de la fréquence.</p>\n<p>Latence : le délai entre l’entrée, le traitement et la sortie.</p>\n<p>Automatisation : changement de paramètre programmé dans le temps.</p>\n<h2 id=\"architecture\">Architecture</h2>\n<p>Un système de son basé sur navigateur a généralement quatre couches. La couche d’interface rassemble les gestes de l’utilisateur et affiche l’état. La couche graphique audio conduit et traite le son. La couche d’analyse extrait des caractéristiques ou des données visuelles. La couche de publication explique le système, les sources, les paramètres et les droits.</p>\n<p>ORETH peut utiliser cette architecture pour les prototypes publics. Une note d’écoute peut comprendre un analyseur, un spectrogramme ou un outil de comparaison. Une page Palimpsests peut utiliser Web Audio pour démontrer les résidus, la mémoire ou la transformation.</p>\n<h2 id=\"mise-en-uvre\">Mise en œuvre</h2>\n<p>La mise en œuvre commence par la conception du graphique audio. Quelles sont les sources? Quelles transformations se produisent? Quels paramètres sont exposés? Qu’est-ce que l’automatisation? Qu’est-ce qui est analysé?</p>\n<p>Ensuite, l’interface doit communiquer l’état. Si l’audio est muté jusqu’à l’interaction utilisateur, dites-le par le comportement plutôt que par l’encombre explicative. Si l’analyse est approximative, décrivez la confiance dans l’article.</p>\n<p>Questions de préservation. Enregistrer les hypothèses de l’API du navigateur, les taux d’échantillonnage, les fichiers sources, les plages de paramètres et la version. Si le système dépend des tampons générés ou des modèles externes, documentez ces dépendances.</p>\n<h2 id=\"applications-pratiques\">Applications pratiques</h2>\n<p>Web Audio peut soutenir des essais interactifs qui permettent aux lecteurs d’entendre un concept.</p>\n<p>Il peut supporter des prototypes ORETH pour l’extraction de fonctionnalités, la segmentation ou les démonstrations d’écoute.</p>\n<p>Il peut soutenir des outils éducatifs qui montrent des filtres, oscillateurs, enveloppes et spectres.</p>\n<p>Il peut prendre en charge des systèmes génératifs qui combinent l’état du graphique audio avec la sortie visuelle.</p>\n<p>Il peut prendre en charge les archives en créant des copies d’accès, des interfaces d’écoute et des pages de lecture riches en contexte.</p>\n<h2 id=\"outils\">Outils</h2>\n<p>Les outils utiles comprennent l’API Web Audio, AudioWorklet, AnalyserNode, Hors LigneAudioContext, Web MIDI, Canvas, WebGL, MediaRecorder, bibliothèques de spectrogramme, outils de somme de contrôle et pipelines de publication statique.</p>\n<h2 id=\"elements-de-preuve\">Éléments de preuve</h2>\n<p>La spécification W3C Web Audio cadre l’API autour des graphiques de routage des objets AudioNode. Ce modèle s’harmonise avec la pratique d’Electronic Artefacts de rendre la structure visible.</p>\n<p>Le Knowledge Hub a déjà des entités liées : <a href=\"/fr/knowledge/concepts/web-audio/\">Audio Web</a>, <a href=\"/fr/knowledge/technologies/web-audio-api/\">API Audio Web</a>, <a href=\"/fr/programs/oreth/\">ORETH</a> et <a href=\"/fr/knowledge/concepts/signal-archaeology/\">Archéologie des signaux</a>.</p>\n<h2 id=\"methode-editoriale\">Méthode éditoriale</h2>\n<p>Un article audio web ne devrait pas seulement décrire ce qu’un lecteur entend. Il devrait décrire le chemin du signal. Un diagramme simple ou une explication ordonnée peut être plus utile qu’une longue liste d’effets.</p>\n<p>L’article devrait également séparer les revendications perceptives des faits techniques. “Cela sonne plus chaud” est une interprétation. “Un filtre passe-bas supprime les fréquences supérieures” est une description technique.</p>\n<h2 id=\"erreurs-courantes\">Erreurs courantes</h2>\n<p>La première erreur est d’ignorer le comportement autoplay et permission. L’audio sur le web est médié par l’utilisateur.</p>\n<p>La deuxième erreur est de cacher la latence. L’interaction en temps réel dépend des conditions de l’appareil et du navigateur.</p>\n<p>La troisième erreur est de traiter la production d’analyse comme une vérité objective. Un analyseur fournit des données, pas un sens.</p>\n<h2 id=\"incidences-des-electronic-artefacts\">Incidences des Electronic Artefacts</h2>\n<p>Web Audio donne à Electronic Artefacts une voie vers la recherche publique. Au lieu de décrire les expériences audio uniquement en prose, le site peut éventuellement héberger des outils d’écoute qui restent connectés aux sources et aux concepts.</p>\n<p>ORETH doit être l’ancrage méthodologique. Les palimpsestes peuvent fournir un contexte artistique. L’archéologie des signaux peut fournir une discipline d’interprétation.</p>\n<h2 id=\"role-du-graphe-de-connaissances\">Rôle du graphe de connaissances</h2>\n<p>Web Audio s’intègre naturellement dans un graphique parce qu’un système audio est lui-même un réseau. Les sources se connectent aux nœuds de traitement. Les paramètres influencent le comportement. Les produits d’analyse deviennent des éléments de preuve. Les pages publiques relient le système aux articles, concepts, projets et programmes.</p>\n<p>Pour ORETH, cela signifie qu’un outil d’écoute du navigateur ne doit pas être traité comme une démo isolée. Il peut être représenté comme outil, artefact ou sortie de projet connecté aux fichiers sources, méthodes d’analyse, archéologie des signaux et enregistrements de préservation. Cette structure rend le système sonore plus facile à revoir plus tard.</p>\n<h2 id=\"criteres-d-evaluation\">Critères d’évaluation</h2>\n<p>Un système de son de navigateur doit être évalué par interaction, précision et soin. Ne commence-t-elle qu’après un geste clair de l’utilisateur ? Est-ce qu’il expose suffisamment l’état pour que le lecteur comprenne ce qui se passe? Respecte-t-il les limites des appareils? Décrivez-vous la confiance dans l’analyse? Préserve-t-il l’audio original séparément de l’accès ou des versions traitées?</p>\n<p>Ces critères sont importants car les interfaces audio peuvent se sentir convaincantes même lorsqu’elles sont techniquement fragiles. Une forme d’onde, un compteur ou un spectrogramme ne doit pas être traité comme une vérité sans contexte.</p>\n<h2 id=\"norme-editoriale\">Norme éditoriale</h2>\n<p>Chaque fois qu’un exemple Web Audio est publié, l’article doit nommer le chemin du signal. Il devrait indiquer au lecteur ce qui est joué, synthétisé, filtré, analysé ou enregistré. Si la page utilise des exemples de matériel, les droits et le contexte source devraient être visibles. Si l’outil génère du son, les paramètres et les graines aléatoires doivent être documentés dans la mesure du possible.</p>\n<h2 id=\"voie-de-lecture\">Voie de lecture</h2>\n<p>Un lecteur peut arriver à partir d’une question pratique de développement Web sur le son du navigateur. L’article devrait alors s’ouvrir dans un champ plus riche : graphiques audio, analyse des signaux, écoute interactive et conservation. Cela rend Web Audio pertinente non seulement pour les développeurs, mais aussi pour les musiciens, les concepteurs de sons et les chercheurs. La prochaine étape devrait être <a href=\"/fr/knowledge/concepts/signal-archaeology/\">Archéologie des signaux</a>, <a href=\"/fr/programs/oreth/\">ORETH</a> et les futurs outils d’écoute basés sur le navigateur.</p>\n<p>Cette voie est importante parce qu’elle transforme un sujet d’API technique en une voie de recherche plus large. Le navigateur devient un studio, une salle de classe et une interface d’archives à la fois.</p>\n<h2 id=\"travaux-futurs\">Travaux futurs</h2>\n<p>Les futures entrées devraient couvrir AudioWorklet, interfaces spectrogrammes, synthèse de navigateur, Web MIDI, extraction de fonctionnalités audio, latence, WebRTC audio, écoute interactive et préservation des œuvres sonores basées sur navigateur.</p>\n<h2 id=\"concepts-connexes\">Concepts connexes</h2>\n<p>Lire <a href=\"/fr/knowledge/concepts/web-audio/\">Audio Web</a>, <a href=\"/fr/knowledge/technologies/web-audio-api/\">API Audio Web</a>, <a href=\"/fr/knowledge/concepts/signal-archaeology/\">Archéologie des signaux</a>, <a href=\"/fr/knowledge/concepts/creative-coding/\">Codage créatif</a> et <a href=\"/fr/programs/oreth/\">ORETH</a>.</p>\n<h2 id=\"lecture-suggeree\">Lecture suggérée</h2>\n<p>Commencez par la spécification W3C Web Audio API, puis inspectez de petits exemples de graphiques audio et des notes de performance du navigateur.</p>\n<h2 id=\"articles-connexes\">Articles connexes</h2>\n<p>Continuer avec <a href=\"/fr/publications/signal-archaeology-audio-memory-and-machine-listening/\">Archéologie des signaux, mémoire audio et écoute automatique</a> et <a href=\"/fr/publications/generative-systems-cybernetics-and-creative-coding/\">Systèmes génériques, cybernétique et codage créatif</a>.</p>\n<h2 id=\"glossaire\">Glossaire</h2>\n<p>Graphique audio: noeuds de traitement audio connectés.</p>\n<p>Analyseur: noeud exposant les données audio pour inspection.</p>\n<p>AudioWorklet: mécanisme de traitement audio personnalisé dans un contexte de worklet.</p>\n<p>Latence: retard affectant l’interaction et la surveillance.</p>\n<h2 id=\"limites\">Limites</h2>\n<p>Le son basé sur le navigateur n’est pas un remplacement universel des logiciels audio natifs. Il a des contraintes de performance, de permission et de compatibilité.</p>\n<p>Il est le plus fort lorsque l’accès public, l’interaction et l’explication comptent plus que la puissance de production maximale.</p>\n<h2 id=\"references\">Références</h2>\n<ul>\n<li>W3C. Web Audio API 1.1.</li>\n<li>Electronic Artefacts. ORETH, Web Audio et enregistrements d’archéologie des signaux.</li>\n</ul>\n",
   "headings": [
     "Problème",
+    "Présentation",
+    "Contexte",
+    "Historique",
+    "Concepts fondamentaux",
     "Architecture",
     "Mise en œuvre",
+    "Applications pratiques",
+    "Outils",
     "Éléments de preuve",
+    "Méthode éditoriale",
+    "Erreurs courantes",
+    "Incidences des Electronic Artefacts",
+    "Rôle du graphe de connaissances",
+    "Critères d'évaluation",
+    "Norme éditoriale",
+    "Voie de lecture",
+    "Travaux futurs",
+    "Concepts connexes",
+    "Lecture suggérée",
+    "Articles connexes",
+    "Glossaire",
     "Limites",
     "Références"
   ],
@@ -95,6 +113,26 @@
       "level": 2,
       "title": "Problème",
       "id": "probleme"
+    },
+    {
+      "level": 2,
+      "title": "Présentation",
+      "id": "presentation"
+    },
+    {
+      "level": 2,
+      "title": "Contexte",
+      "id": "contexte"
+    },
+    {
+      "level": 2,
+      "title": "Historique",
+      "id": "historique"
+    },
+    {
+      "level": 2,
+      "title": "Concepts fondamentaux",
+      "id": "concepts-fondamentaux"
     },
     {
       "level": 2,
@@ -108,8 +146,78 @@
     },
     {
       "level": 2,
+      "title": "Applications pratiques",
+      "id": "applications-pratiques"
+    },
+    {
+      "level": 2,
+      "title": "Outils",
+      "id": "outils"
+    },
+    {
+      "level": 2,
       "title": "Éléments de preuve",
       "id": "elements-de-preuve"
+    },
+    {
+      "level": 2,
+      "title": "Méthode éditoriale",
+      "id": "methode-editoriale"
+    },
+    {
+      "level": 2,
+      "title": "Erreurs courantes",
+      "id": "erreurs-courantes"
+    },
+    {
+      "level": 2,
+      "title": "Incidences des Electronic Artefacts",
+      "id": "incidences-des-electronic-artefacts"
+    },
+    {
+      "level": 2,
+      "title": "Rôle du graphe de connaissances",
+      "id": "role-du-graphe-de-connaissances"
+    },
+    {
+      "level": 2,
+      "title": "Critères d'évaluation",
+      "id": "criteres-d-evaluation"
+    },
+    {
+      "level": 2,
+      "title": "Norme éditoriale",
+      "id": "norme-editoriale"
+    },
+    {
+      "level": 2,
+      "title": "Voie de lecture",
+      "id": "voie-de-lecture"
+    },
+    {
+      "level": 2,
+      "title": "Travaux futurs",
+      "id": "travaux-futurs"
+    },
+    {
+      "level": 2,
+      "title": "Concepts connexes",
+      "id": "concepts-connexes"
+    },
+    {
+      "level": 2,
+      "title": "Lecture suggérée",
+      "id": "lecture-suggeree"
+    },
+    {
+      "level": 2,
+      "title": "Articles connexes",
+      "id": "articles-connexes"
+    },
+    {
+      "level": 2,
+      "title": "Glossaire",
+      "id": "glossaire"
     },
     {
       "level": 2,

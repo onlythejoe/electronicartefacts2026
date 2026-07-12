@@ -16,10 +16,10 @@
   "maturity": "research",
   "confidence": "published",
   "version": {
-    "version": "1.0.0",
+    "version": "1.1.0",
     "createdAt": "2026-06-24",
     "publishedAt": "2026-06-25",
-    "modifiedAt": "2026-06-25"
+    "modifiedAt": "2026-07-12"
   },
   "authors": [
     {
@@ -92,15 +92,32 @@
     }
   ],
   "citation": {
-    "preferred": "Electronic Artefacts. \"Génération augmentée par récupération et systèmes de connaissance\". Article technique, version 1.0.0, 2026."
+    "preferred": "Electronic Artefacts. \"Génération augmentée par récupération et systèmes de connaissance\". Article technique, version 1.1.0, 2026."
   },
-  "bodyHtml": "<h2 id=\"probleme\">Problème</h2>\n<p>Cette synthèse clarifie le sujet « Génération augmentée par récupération et systèmes de connaissance » pour aider le lecteur à comprendre le vocabulaire, les enjeux pratiques et les liens avec les autres pages du graphe Electronic Artefacts.</p>\n<h2 id=\"architecture\">Architecture</h2>\n<p>Le sujet est présenté à travers ses composants, ses relations avec les concepts voisins et les décisions de conception qu’il implique.</p>\n<h2 id=\"mise-en-uvre\">Mise en œuvre</h2>\n<p>La page met l’accent sur les usages concrets, les contraintes de gouvernance et les conditions d’application dans un système réel.</p>\n<h2 id=\"elements-de-preuve\">Éléments de preuve</h2>\n<p>Les sources, relations et éléments de contexte restent associés à la fiche pour distinguer synthèse éditoriale, preuve et référence.</p>\n<h2 id=\"limites\">Limites</h2>\n<p>Les limites décrivent ce que la fiche ne couvre pas encore, les sources disponibles et les conditions d’usage documentées.</p>\n<h2 id=\"references\">Références</h2>\n<p>Les sources principales restent disponibles dans le bloc de références de la fiche.</p>\n",
+  "bodyHtml": "<h2 id=\"probleme\">Problème</h2>\n<p>Les modèles linguistiques peuvent générer des réponses fluides sans preuves actuelles ou attribuables. Les implémentations Naïves RAG ajoutent la recherche vectorielle mais laissent l’autorité du corpus, les permissions, l’identité source et la précision de citation non résolue.</p>\n<h2 id=\"presentation\">Présentation</h2>\n<p>La génération retrieval-augmentée, généralement raccourcie à RAG, relie un modèle générateur à un corps externe d’information. Au lieu de demander au modèle de ne répondre qu’à partir de paramètres appris et de l’invite de l’utilisateur, le système récupère les enregistrements pertinents et les place dans le contexte de travail du modèle. Le modèle produit ensuite une réponse éclairée par ces documents.</p>\n<p>Le modèle traite de deux limites des modèles paramétriques. Les connaissances stockées dans les poids des modèles sont difficiles à mettre à jour avec précision, et les extrants des modèles n’exposent pas intrinsèquement la provenance. La recherche externe permet à un corpus de changer indépendamment du modèle et crée une occasion de citer des sources.</p>\n<p>RAG est souvent réduit à trois étapes : des documents fractionnés, des morceaux d’intégration et une base de données vectorielle. Cette mise en œuvre peut produire une démonstration, mais elle n’est pas encore un système de connaissances digne de confiance. Le RAG durable exige la gouvernance de corpus, les métadonnées, les permissions, la conception des requêtes, le classement, l’assemblage contextuel, la citation, l’évaluation et la maintenance.</p>\n<h2 id=\"l-architecture-originale\">L’architecture originale</h2>\n<p>Le document RAG 2020 de Lewis et de ses collègues a combiné un modèle de séquence à séquence préformé avec un indice vectoriel dense utilisé comme mémoire non paramétrique. Un récupérateur a sélectionné les passages pertinents à une entrée, et le générateur a conditionné sa sortie sur le matériau récupéré.</p>\n<p>L’importante séparation conceptuelle est entre la mémoire paramétrique et la mémoire externe. Les paramètres du modèle encodent les modèles appris pendant la formation. Le corpus de recherche contient des documents adressables qui peuvent être mis à jour, inspectés et attribués. Un système peut remplacer ou corriger une source sans recycler le modèle linguistique complet.</p>\n<p>Les systèmes modernes de RAG prolongent cette conception avec la recherche hybride, le reclassage, les graphes de connaissances, la décomposition des requêtes, l’utilisation d’outils, la récupération active et l’évaluation en plusieurs étapes. La question sous-jacente demeure stable: comment le système devrait-il trouver et présenter les preuves appropriées pour une tâche génératrice?</p>\n<h2 id=\"architecture\">Architecture</h2>\n<p>L’architecture comprend l’ingestion de source, l’identité canonique, la segmentation, les métadonnées, les index lexiques ou vectoriels, la transformation des requêtes, la recherche de candidats, le reclassage, l’assemblage de contextes, la génération, la citation et l’évaluation.</p>\n<h2 id=\"architecture-corpus\">Architecture Corpus</h2>\n<p>RAG commence avant l’intégration. Le corpus a besoin d’une portée définie, d’un modèle d’autorité et d’un processus de mise à jour. Un dossier de PDF, d’exportations et de notes mixtes peut contenir des duplicatas, des versions remplacées, du matériel privé et des titres incohérents. L’indexation sans gouvernance rend ces problèmes plus difficiles à voir.</p>\n<p>Chaque source devrait avoir une identité stable et des métadonnées utiles : titre, auteur, date, type, droits, langue, version, visibilité et URL canonique. Les sections devraient conserver leur document et leur contexte de rubrique. Le texte dérivé du ROC ou la transcription doit pouvoir être distingué du texte source vérifié.</p>\n<p>Electronic Artefacts modélisent déjà beaucoup de ces exigences. Publications, concepts, programmes et projets ont des ID canoniques, des versions, des niveaux de confiance et des sources. Les relations les relient. Ce corpus structuré est meilleur matériel RAG que les morceaux anonymes car la récupération peut préserver le sens au-delà de la similitude textuelle.</p>\n<h2 id=\"segmentation-et-decoupage\">Segmentation et découpage</h2>\n<p>Les modèles linguistiques reçoivent un contexte délimité, si longtemps les documents sont divisés en unités de recherche. Le découpage détermine ce que le récupérateur peut retourner. Les catégories trop petites peuvent perdre des définitions et des qualifications. Les morceaux trop gros peuvent diluer la pertinence et consommer le contexte.</p>\n<p>Les fenêtres en jeton fixes sont faciles mais ignorent la structure. Des tentatives sémantiques pour séparer les changements de sujet, mais peuvent être instables. Le découpage des documents est effectué suivant les rubriques, paragraphes, listes, tableaux ou blocs de codes. La meilleure stratégie dépend du matériel et des questions.</p>\n<p>Un morceau devrait conserver un pointeur vers sa source et son emplacement parent. Il peut comprendre un préfixe de titre ou un résumé pour la recherche, tandis que le texte original reste disponible pour la citation. Overlap peut préserver la continuité, mais augmente la duplication et peut crowd résultats avec des passages presque identiques.</p>\n<p>Pour le centre de connaissances, les titres de section offrent des unités naturelles. Une question sur les limitations devrait récupérer la section de limitation avec l’identité de l’article et les sources, et non un paragraphe sans contexte.</p>\n<h2 id=\"recuperation-sparmee-dense-et-hybride\">Récupération sparmée, dense et hybride</h2>\n<p>La récupération sparse utilise des preuves lexicales telles que les termes exacts et la fréquence des termes. Il est fort pour les noms, les identifiants, les symboles de code et les phrases distinctives. Recherche dense des requêtes et des passages dans l’intégration des vecteurs, puis trouve des représentations à proximité. Il peut saisir la similitude sémantique lorsque la formulation diffère.</p>\n<p>Ni domine toutes les tâches. Une recherche dense peut confondre des concepts connexes ou manquer des identifiants exacts rares. La recherche lexique peut manquer les paraphrases. La récupération hybride combine des scores ou des ensembles de candidats. Les reclasseurs peuvent alors évaluer les résultats les plus prometteurs avec un modèle plus cher.</p>\n<p>La stratégie de recherche devrait refléter le corpus. Une archive technique avec des ID stables bénéficie d’une correspondance exacte. Une collection d’essais culturels bénéficie de la récupération sémantique. Le contenu multilingue peut nécessiter des intégrations translingues ou une indexation linguistique.</p>\n<p>L’évaluation doit permettre de déterminer si les éléments de preuve pertinents figurent dans l’ensemble des candidats, et non seulement si la réponse finale semble bonne.</p>\n<h2 id=\"embedures-et-leurs-limites\">Embedures et leurs limites</h2>\n<p>Une intégration est une représentation numérique conçue de façon à ce que les intrants connexes occupent les régions voisines sous une mesure de similarité choisie. Les inscriptions rendent la recherche sémantique pratique, mais elles n’expriment pas pourquoi deux éléments sont liés.</p>\n<p>Deux passages peuvent être proches parce qu’ils partagent un sujet, un style ou un vocabulaire. Une relation graphique typée peut dire qu’une publication documente un concept, un projet applique une méthode ou un programme alimente un produit. Ces significations sont différentes même lorsque le texte apparaît similaire.</p>\n<p>Les inscriptions changent aussi avec les modèles et le prétraitement. La réindexation peut modifier les quartiers. La similitude vectorielle est donc un indice, pas une couche de vérité canonique. Préserver l’identité de la source et la structure de la relation à l’extérieur du magasin d’intégration.</p>\n<h2 id=\"graphes-de-connaissances-et-rag-fonde-sur-un-graphe\">Graphes de connaissances et RAG fondé sur un graphe</h2>\n<p>Un graphe de connaissances représente explicitement les entités et les relations typées. Il peut améliorer la récupération en s’étendant d’une entité reconnue, en suivant les prédicats pertinents, en filtrant par type ou en assemblant un quartier délimité.</p>\n<p>Par exemple, une question sur l’écoute automatique dans Palimpsests pourrait résoudre l’entité du projet, suivre <code>poweredBy</code> à ORETH, suivre les concepts appliqués à l’archéologie des signaux, et récupérer les publications support. La recherche vectorielle seule peut renvoyer des articles audio similaires sans exposer ce chemin projet-programme-concept.</p>\n<p>La recherche de graphiques n’élimine pas la recherche de texte. Le graphique peut identifier les documents qui comptent, tandis que la récupération lexicale et sémantique sélectionne les meilleurs passages en eux. Cette architecture hybride préserve la structure explicable et le langage expressif.</p>\n<p>VASTE est un contexte de recherche naturel pour ce design. L’exécution contextuelle peut déterminer quel voisinage de graphe un utilisateur peut récupérer et quelles relations devraient influencer une réponse.</p>\n<h2 id=\"comprehension-des-requetes\">Compréhension des requêtes</h2>\n<p>Les questions des utilisateurs sont rarement des requêtes de recherche parfaites. Le système peut normaliser la terminologie, résoudre des entités, générer d’autres formulations ou décomposer une requête complexe en sous-questions. Chaque transformation peut améliorer le rappel ou introduire la dérive.</p>\n<p>La résolution des entités est particulièrement précieuse. “VASTE runtime” devrait cartographier le programme canonique plutôt qu’un sens générique de vaste. Les dates, versions et lieux peuvent restreindre la recherche. Une question de comparaison nécessite des preuves pour les deux parties, pas seulement le passage le plus similaire.</p>\n<p>Les systèmes actifs de récupération décident quand des preuves supplémentaires sont nécessaires pendant la génération. Cela peut aider les réponses à long terme, mais augmente les coûts et fait de la trajectoire de récupération une partie de l’évaluation.</p>\n<p>Les transformations de requêtes doivent être enregistrées. Lorsqu’un système répond mal, les ingénieurs doivent savoir si la source était absente, la question était fausse, le classement a échoué ou la génération a ignoré les preuves.</p>\n<h2 id=\"montage-du-contexte\">Montage du contexte</h2>\n<p>Les passages récupérés doivent être disposés dans un contexte que le modèle peut utiliser. L’assembleur peut regrouper les résultats par source, supprimer les duplicatas, attribuer des budgets symboliques et inclure des métadonnées. Questions de commande : les modèles peuvent prioriser les passages précoces ou tardifs différemment.</p>\n<p>Le contexte devrait distinguer les instructions de la preuve. Les documents récupérés sont des données non fiables et peuvent contenir du texte qui ressemble à des commandes. La demande doit indiquer que les sources doivent être analysées et non pas être suivies comme instructions du système.</p>\n<p>Les sources conflictuelles ne devraient pas être fusionnées silencieusement. Les dates, la confiance et la provenance aident le modèle à représenter un désaccord. Lorsque le corpus contient un enregistrement canonique et une note remplacée, les métadonnées d’état doivent affecter la sélection.</p>\n<p>Le contexte idéal n’est pas le plus grand contexte possible. Il s’agit de la plus petite preuve suffisante pour répondre avec exactitude à la question.</p>\n<h2 id=\"creation-et-citation\">Création et citation</h2>\n<p>Il faudrait demander au générateur de répondre à partir des éléments de preuve fournis, d’identifier l’incertitude et de joindre des citations aux allégations. Le format de citation devrait utiliser des identifiants source stables ou des URL plutôt que des chaînes bibliographiques générées par un modèle.</p>\n<p>Une citation n’est utile que si elle appuie l’énoncé connexe. Les systèmes doivent tester l’implication de citation: le passage cité justifie-t-il réellement la revendication? Un modèle peut citer une source pertinente tout en ajoutant des détails non pris en charge.</p>\n<p>Pour les réponses complexes, le système peut produire une représentation structurée intermédiaire avec des revendications et des références sources avant de rendre la prose. Le code déterministe peut valider que chaque citation indique un enregistrement récupéré.</p>\n<p>L’interface finale devrait permettre aux lecteurs d’ouvrir la source et de comprendre son autorité. Les citations cachées disponibles uniquement dans les journaux ne créent pas de confiance publique.</p>\n<h2 id=\"autorisations-et-vie-privee\">Autorisations et vie privée</h2>\n<p>RAG peut fuir l’information si la récupération ignore le contrôle d’accès. Le filtrage après génération est trop tard car le contenu privé peut déjà influencer la réponse. Les contraintes d’autorisation doivent s’appliquer lors de la sélection des candidats et de l’assemblage du contexte.</p>\n<p>Le récupérateur a besoin de l’identité de l’acteur, du but et de la visibilité des ressources. Un visiteur public ne devrait recevoir que des documents publics. Un membre du studio peut récupérer des notes internes. Un agent spécifique à un projet peut avoir accès à des documents restreints aux fins d’analyse, mais ne publier que les revendications dérivées approuvées.</p>\n<p>Les inscriptions elles-mêmes peuvent révéler une structure sensible. Des index distincts ou des filtres à métadonnées robustes peuvent être nécessaires. La suppression doit supprimer le texte source, les vecteurs, les caches et les résumés générés lorsque la politique l’exige.</p>\n<p>C’est une autre raison de connecter RAG avec l’exécution contextuelle plutôt que de le traiter comme un chatbot autonome.</p>\n<h2 id=\"evaluation\">Évaluation</h2>\n<p>L’évaluation du RAG devrait séparer les étapes. La couverture Corpus demande si la réponse existe dans le matériel indexé. Le rappel de récupération demande si des documents pertinents apparaissent. Le classement demande s’ils sont prioritaires. La qualité du contexte demande si les preuves sont suffisantes et non redondantes. La fidélité des générations demande si les revendications découlent de sources. Réponse qualité demande si le résultat est utile.</p>\n<p>Construisez un ensemble de questions à partir des besoins réels des utilisateurs. Inclure les questions sans réponse, les termes ambigus, les sources contradictoires, les faits sensibles aux versions et les limites des permissions. Un système doit savoir quand s’abstenir ou demander des éclaircissements.</p>\n<p>Les mesures automatisées peuvent comparer les passages récupérés avec des preuves marquées, tandis que les évaluateurs humains évaluent la nuance et l’utilité. Les évaluateurs basés sur des modèles peuvent aider mais ne devraient pas être la seule autorité.</p>\n<p>Défauts de piste par cause. “La réponse était fausse” n’est pas suffisamment actionnable pour un système à plusieurs étapes.</p>\n<h2 id=\"entretien\">Entretien</h2>\n<p>Un indice RAG est un produit dérivé. Lorsqu’une source change, les morceaux et les éléments d’intégration touchés doivent être mis à jour. Les suppressions et les changements d’accès doivent se propager. Les mises à jour de modèles peuvent nécessiter une re-embuding du corpus. Les matériaux dupliqués ou stalles doivent être taillés.</p>\n<p>Index buildings besoin manifeste que la version source d’enregistrement, la stratégie de découpe, le modèle d’intégration et la date. Cela permet une reproductibilité et un retour en arrière. La qualité de la recherche devrait être réévaluée après les changements.</p>\n<p>Le graphique peut aider à identifier l’impact. Si un concept change, les publications et les collections connexes peuvent être mises en attente pour examen. L’infrastructure de récupération fait alors partie de la gouvernance éditoriale plutôt que d’une expérience distincte.</p>\n<h2 id=\"mise-en-uvre\">Mise en œuvre</h2>\n<p>Commencez par un petit corpus faisant autorité et un ensemble de questions. Préserver les documents parent et les chemins de section, combiner la récupération exacte et sémantique, retourner les citations stables, et tester le filtrage de permission avant d’ajouter l’extension de requête agentique.</p>\n<h2 id=\"elements-de-preuve\">Éléments de preuve</h2>\n<p>Lewis et al. ont procédé à la récupération officielle en tant que mémoire non paramétrique combinée à un générateur. Plus tard, la recherche active-récupération explore des systèmes qui récupèrent des preuves supplémentaires pendant la génération plutôt qu’une seule fois au début.</p>\n<h2 id=\"implications-pour-electronic-artefacts\">Implications pour Electronic Artefacts</h2>\n<p>Le Knowledge Hub peut alimenter un assistant de recherche basé sur la source, un moteur de lecture connexe et une interface de recherche sémantique. VASTE peut fournir une recherche de graphiques identitaires. V6 peut répondre à des questions sur les personnes, les techniques, les matériaux et les institutions tout en exposant les chemins de relations. ORETH peut récupérer les annotations audio, les analyses et le contexte du projet.</p>\n<p>La surface publique devrait rester utile sans l’IA. Les pages canoniques, les citations et la navigation sont primaires. RAG est un moyen de demander cette bibliothèque structurée, pas un remplacement pour elle.</p>\n<p>Cet ordre est important pour la conservation à long terme. Les modèles et les index peuvent être reconstruits; les documents sources bien établis demeurent l’actif durable.</p>\n<h2 id=\"limites\">Limites</h2>\n<p>RAG ne garantit ni vérité ni exhaustivité. Les sources pertinentes peuvent être absentes, le classement peut échouer et les modèles peuvent ignorer ou fausser les données recueillies. L’évaluation du domaine et la responsabilité éditoriale demeurent nécessaires.</p>\n<h2 id=\"concepts-connexes\">Concepts connexes</h2>\n<p>Lire <a href=\"/fr/knowledge/concepts/retrieval-augmented-generation/\">Génération augmentée par récupération</a>, <a href=\"/fr/knowledge/concepts/knowledge-graph/\">Graphe de connaissances</a>, <a href=\"/fr/knowledge/concepts/metadata/\">Métadonnées</a>, <a href=\"/fr/knowledge/concepts/provenance/\">Provenance</a> et <a href=\"/fr/knowledge/concepts/large-language-model/\">Grand modèle de langage</a>.</p>\n<h2 id=\"programmes-connexes\">Programmes connexes</h2>\n<p>Voir <a href=\"/fr/programs/vaste/\">VASTE</a> et <a href=\"/fr/projects/v6/\">V6</a>.</p>\n<h2 id=\"glossaire\">Glossaire</h2>\n<p>Corpus: la collection de matériel disponible pour la récupération.</p>\n<p>Chunk : unité de récupération délimitée dérivée d’une source.</p>\n<p>Embedding : représentation vectorielle utilisée pour la recherche de similitude.</p>\n<p>Rerancher : un modèle qui réorganise les résultats des candidats.</p>\n<p>Fidèle : la mesure dans laquelle les revendications générées découlent des preuves fournies.</p>\n<p>Quartier graphique : un ensemble limité d’entités et de relations autour d’un nœud.</p>\n<h2 id=\"references\">Références</h2>\n<ul>\n<li>Lewis et al. Génération accrue de données pour les tâches de PNL axées sur le savoir. 2020.</li>\n<li>Jiang et al. Active Retrieval Augmented Generation. 2023.</li>\n</ul>\n",
   "headings": [
     "Problème",
+    "Présentation",
+    "L'architecture originale",
     "Architecture",
+    "Architecture Corpus",
+    "Segmentation et découpage",
+    "Récupération sparmée, dense et hybride",
+    "Embedures et leurs limites",
+    "Graphes de connaissances et RAG fondé sur un graphe",
+    "Compréhension des requêtes",
+    "Montage du contexte",
+    "Création et citation",
+    "Autorisations et vie privée",
+    "Évaluation",
+    "Entretien",
     "Mise en œuvre",
     "Éléments de preuve",
+    "Implications pour Electronic Artefacts",
     "Limites",
+    "Concepts connexes",
+    "Programmes connexes",
+    "Glossaire",
     "Références"
   ],
   "headingItems": [
@@ -111,8 +128,73 @@
     },
     {
       "level": 2,
+      "title": "Présentation",
+      "id": "presentation"
+    },
+    {
+      "level": 2,
+      "title": "L'architecture originale",
+      "id": "l-architecture-originale"
+    },
+    {
+      "level": 2,
       "title": "Architecture",
       "id": "architecture"
+    },
+    {
+      "level": 2,
+      "title": "Architecture Corpus",
+      "id": "architecture-corpus"
+    },
+    {
+      "level": 2,
+      "title": "Segmentation et découpage",
+      "id": "segmentation-et-decoupage"
+    },
+    {
+      "level": 2,
+      "title": "Récupération sparmée, dense et hybride",
+      "id": "recuperation-sparmee-dense-et-hybride"
+    },
+    {
+      "level": 2,
+      "title": "Embedures et leurs limites",
+      "id": "embedures-et-leurs-limites"
+    },
+    {
+      "level": 2,
+      "title": "Graphes de connaissances et RAG fondé sur un graphe",
+      "id": "graphes-de-connaissances-et-rag-fonde-sur-un-graphe"
+    },
+    {
+      "level": 2,
+      "title": "Compréhension des requêtes",
+      "id": "comprehension-des-requetes"
+    },
+    {
+      "level": 2,
+      "title": "Montage du contexte",
+      "id": "montage-du-contexte"
+    },
+    {
+      "level": 2,
+      "title": "Création et citation",
+      "id": "creation-et-citation"
+    },
+    {
+      "level": 2,
+      "title": "Autorisations et vie privée",
+      "id": "autorisations-et-vie-privee"
+    },
+    {
+      "level": 2,
+      "title": "Évaluation",
+      "id": "evaluation"
+    },
+    {
+      "level": 2,
+      "title": "Entretien",
+      "id": "entretien"
     },
     {
       "level": 2,
@@ -126,8 +208,28 @@
     },
     {
       "level": 2,
+      "title": "Implications pour Electronic Artefacts",
+      "id": "implications-pour-electronic-artefacts"
+    },
+    {
+      "level": 2,
       "title": "Limites",
       "id": "limites"
+    },
+    {
+      "level": 2,
+      "title": "Concepts connexes",
+      "id": "concepts-connexes"
+    },
+    {
+      "level": 2,
+      "title": "Programmes connexes",
+      "id": "programmes-connexes"
+    },
+    {
+      "level": 2,
+      "title": "Glossaire",
+      "id": "glossaire"
     },
     {
       "level": 2,

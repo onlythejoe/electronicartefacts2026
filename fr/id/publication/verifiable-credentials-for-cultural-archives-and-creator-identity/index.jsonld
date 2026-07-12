@@ -9,7 +9,7 @@
       "description": "Repères pour comprendre Identifiants vérifiables pour les archives culturelles et l’identité des créateurs dans un contexte de conception : concepts clés, implications pratiques, limites et références reliées au graphe Electronic Artefacts.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
-      "dateModified": "2026-06-25",
+      "dateModified": "2026-07-12",
       "primaryImageOfPage": {
         "@type": "ImageObject",
         "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-social.jpg",
@@ -69,7 +69,7 @@
       "inLanguage": "fr",
       "dateCreated": "2026-06-25",
       "datePublished": "2026-06-25",
-      "dateModified": "2026-06-25",
+      "dateModified": "2026-07-12",
       "publisher": {
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
@@ -77,9 +77,9 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 141,
+      "wordCount": 1820,
       "citation": [
-        "Electronic Artefacts. \"Identifiants vérifiables pour les archives culturelles et l’identité des créateurs\". Article technique, version 1.0.0, 2026.",
+        "Electronic Artefacts. \"Identifiants vérifiables pour les archives culturelles et l’identité des créateurs\". Article technique, version 1.1.0, 2026.",
         {
           "@type": "CreativeWork",
           "name": "Verifiable Credentials Data Model v2.0",
@@ -134,7 +134,7 @@
         "Verifiable Credentials",
         "Creator Identity"
       ],
-      "timeRequired": "PT1M",
+      "timeRequired": "PT9M",
       "isBasedOn": [
         {
           "@type": "CreativeWork",

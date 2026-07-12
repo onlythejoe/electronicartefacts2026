@@ -9,7 +9,7 @@
       "description": "Repères pour comprendre Redis Streams pour l’orchestration dans un contexte de conception : concepts clés, implications pratiques, limites et références reliées au graphe Electronic Artefacts.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
-      "dateModified": "2026-06-25",
+      "dateModified": "2026-07-12",
       "primaryImageOfPage": {
         "@type": "ImageObject",
         "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-social.jpg",
@@ -70,7 +70,7 @@
       "inLanguage": "fr",
       "dateCreated": "2026-06-24",
       "datePublished": "2026-06-25",
-      "dateModified": "2026-06-25",
+      "dateModified": "2026-07-12",
       "publisher": {
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
@@ -78,7 +78,7 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 135,
+      "wordCount": 2950,
       "citation": [
         "Electronic Artefacts. \"Redis Streams pour l’orchestration\". Article technique, version 1.0.0, 2026.",
         {
@@ -130,7 +130,7 @@
         "Redis Streams",
         "orchestration"
       ],
-      "timeRequired": "PT1M",
+      "timeRequired": "PT14M",
       "isBasedOn": [
         {
           "@type": "CreativeWork",

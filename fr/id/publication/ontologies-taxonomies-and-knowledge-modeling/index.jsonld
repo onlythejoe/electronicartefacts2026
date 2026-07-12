@@ -9,7 +9,7 @@
       "description": "Repères pour comprendre Ontologies, taxonomies et modélisation des connaissances dans un contexte de conception : concepts clés, implications pratiques, limites et références reliées au graphe Electronic Artefacts.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
-      "dateModified": "2026-06-25",
+      "dateModified": "2026-07-12",
       "primaryImageOfPage": {
         "@type": "ImageObject",
         "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-social.jpg",
@@ -70,7 +70,7 @@
       "inLanguage": "fr",
       "dateCreated": "2026-06-24",
       "datePublished": "2026-06-25",
-      "dateModified": "2026-06-25",
+      "dateModified": "2026-07-12",
       "publisher": {
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
@@ -78,9 +78,9 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 137,
+      "wordCount": 2675,
       "citation": [
-        "Electronic Artefacts. \"Ontologies, taxonomies et modélisation des connaissances\". Article technique, version 1.0.0, 2026.",
+        "Electronic Artefacts. \"Ontologies, taxonomies et modélisation des connaissances\". Article technique, version 1.1.0, 2026.",
         {
           "@type": "CreativeWork",
           "name": "OWL 2 Web Ontology Language Document Overview",
@@ -138,7 +138,7 @@
         "Ontology",
         "Taxonomy"
       ],
-      "timeRequired": "PT1M",
+      "timeRequired": "PT13M",
       "isBasedOn": [
         {
           "@type": "CreativeWork",

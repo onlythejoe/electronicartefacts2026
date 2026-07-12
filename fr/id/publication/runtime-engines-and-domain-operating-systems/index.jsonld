@@ -9,7 +9,7 @@
       "description": "Repères pour comprendre Moteurs d'exécution et systèmes d'exploitation de domaine dans un contexte de conception : concepts clés, implications pratiques, limites et références reliées au graphe Electronic Artefacts.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
-      "dateModified": "2026-06-25",
+      "dateModified": "2026-07-12",
       "primaryImageOfPage": {
         "@type": "ImageObject",
         "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-social.jpg",
@@ -70,7 +70,7 @@
       "inLanguage": "fr",
       "dateCreated": "2026-06-24",
       "datePublished": "2026-06-25",
-      "dateModified": "2026-06-25",
+      "dateModified": "2026-07-12",
       "publisher": {
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
@@ -78,9 +78,9 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 138,
+      "wordCount": 2810,
       "citation": [
-        "Electronic Artefacts. \"Moteurs d'exécution et systèmes d'exploitation de domaine\". Article technique, version 1.0.0, 2026.",
+        "Electronic Artefacts. \"Moteurs d'exécution et systèmes d'exploitation de domaine\". Article technique, version 1.1.0, 2026.",
         {
           "@type": "CreativeWork",
           "name": "POSIX.1-2024",
@@ -142,7 +142,7 @@
         "moteur d'exécution",
         "système d'exploitation de domaine"
       ],
-      "timeRequired": "PT1M",
+      "timeRequired": "PT13M",
       "isBasedOn": [
         {
           "@type": "CreativeWork",

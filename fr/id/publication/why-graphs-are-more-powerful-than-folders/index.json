@@ -16,10 +16,10 @@
   "maturity": "research",
   "confidence": "published",
   "version": {
-    "version": "1.0.0",
+    "version": "1.1.0",
     "createdAt": "2026-06-24",
     "publishedAt": "2026-06-25",
-    "modifiedAt": "2026-06-25"
+    "modifiedAt": "2026-07-12"
   },
   "authors": [
     {
@@ -90,15 +90,35 @@
     }
   ],
   "citation": {
-    "preferred": "Electronic Artefacts. \"Pourquoi les graphes sont plus puissants que les dossiers\". Article technique, version 1.0.0, 2026."
+    "preferred": "Electronic Artefacts. \"Pourquoi les graphes sont plus puissants que les dossiers\". Article technique, version 1.1.0, 2026."
   },
-  "bodyHtml": "<h2 id=\"probleme\">Problème</h2>\n<p>Cette synthèse clarifie le sujet « Pourquoi les graphes sont plus puissants que les dossiers » pour aider le lecteur à comprendre le vocabulaire, les enjeux pratiques et les liens avec les autres pages du graphe Electronic Artefacts.</p>\n<h2 id=\"architecture\">Architecture</h2>\n<p>Le sujet est présenté à travers ses composants, ses relations avec les concepts voisins et les décisions de conception qu’il implique.</p>\n<h2 id=\"mise-en-uvre\">Mise en œuvre</h2>\n<p>La page met l’accent sur les usages concrets, les contraintes de gouvernance et les conditions d’application dans un système réel.</p>\n<h2 id=\"elements-de-preuve\">Éléments de preuve</h2>\n<p>Les sources, relations et éléments de contexte restent associés à la fiche pour distinguer synthèse éditoriale, preuve et référence.</p>\n<h2 id=\"limites\">Limites</h2>\n<p>Les limites décrivent ce que la fiche ne couvre pas encore, les sources disponibles et les conditions d’usage documentées.</p>\n<h2 id=\"references\">Références</h2>\n<p>Les sources principales restent disponibles dans le bloc de références de la fiche.</p>\n",
+  "bodyHtml": "<h2 id=\"probleme\">Problème</h2>\n<p>Les hiérarchies de dossiers forcent les objets connectés à un seul emplacement primaire. À mesure que les projets grandissent, l’identité, la provenance, les relations interdisciplinaires et les multiples voies de découverte se cachent dans les noms de fichiers, les copies et la mémoire institutionnelle.</p>\n<h2 id=\"presentation\">Présentation</h2>\n<p>Les dossiers sont l’une des interfaces les plus réussies en informatique. Ils offrent un moyen familier de regrouper les documents, de naviguer dans le stockage et d’attribuer des noms. Leur limitation n’est pas que la hiérarchie soit obsolète. C’est qu’un dossier demande à chaque élément d’occuper une place principale.</p>\n<p>La plupart des connaissances réelles ne sont pas façonnées comme un arbre. Un enregistrement appartient à un album, a été produit au cours d’un projet, utilise une technique, contient une performance par une personne, dérive de fichiers sources, et peut être discuté par plusieurs publications. Un dossier peut stocker le fichier sous un seul chemin. Les autres relations doivent être dupliquées, écrites dans des noms de fichiers, cachées dans des métadonnées ou mémorisées par des personnes.</p>\n<p>Un graphique fait des relations de première classe. Les entités conservent des identités stables, et les bords tapés les relient à travers de nombreux contextes. Le même enregistrement peut rester un objet tout en apparaissant dans des vues projet, artiste, technique, archives et publication. C’est pourquoi les graphiques sont plus puissants pour les systèmes de connaissances, l’infrastructure culturelle et les produits complexes.</p>\n<p>La puissance ne signifie pas le remplacement. Les interfaces des dossiers et des arbres restent d’excellentes projections. Une architecture graphique devrait laisser les utilisateurs parcourir hiérarchiquement quand cela est utile, sans faire de la hiérarchie la seule vérité.</p>\n<h2 id=\"comment-les-dossiers-modele-l-information\">Comment les dossiers modèle l’information</h2>\n<p>Un chemin du système de fichiers exprime le confinement. <code>/projects/palimpsests/audio/final/master.wav</code> nous dit qu’un fichier se trouve dans une séquence de répertoires. Le chemin peut communiquer projet, moyen, statut et rôle en nommant des conventions.</p>\n<p>Ce modèle fonctionne lorsque la propriété est claire et que les relations sont pour la plupart uniques à nombreuses. Un projet contient des produits livrables. Un an contient des factures. Un dépôt logiciel contient des modules. Les chemins sont faciles à synchroniser, à archiver et à comprendre avec les outils de base.</p>\n<p>Les problèmes apparaissent quand un objet appartient à plusieurs endroits. Les équipes copient le fichier, créent des raccourcis ou choisissent un emplacement canonique et comptent sur la mémoire pour le reste. Des copies divergent. Les raccourcis se brisent. Les conventions nominatives deviennent des bases de données codées : <code>2026_Palimpsests_Master_v12_FINAL-2.wav</code>.</p>\n<p>La hiérarchie porte l’identité, la version, le statut et le contexte à la fois. Un changement de chemin peut ressembler à un changement d’identité même lorsque l’objet reste le même.</p>\n<h2 id=\"graphiques-primitifs\">Graphiques primitifs</h2>\n<p>Un graphique commence par des nœuds et des bords. Les nœuds représentent des entités telles que des projets, des personnes, des dossiers, des concepts ou des institutions. Les bords représentent des relations telles que <code>createdBy</code>, <code>partOf</code>, <code>documents</code>, <code>usesTechnology</code> ou <code>derivedFrom</code>.</p>\n<p>Propriétés joignent des valeurs supplémentaires : dates, titres, état et descriptions. Les identifiants stables permettent à une entité de rester la même même même si son titre ou son URL publique change.</p>\n<p>Les relations typées sont essentielles. Une visualisation en réseau où chaque ligne signifie « liée » n’est pas un graphe de connaissancess utile. Le type indique au logiciel et aux lecteurs comment interpréter la connexion.</p>\n<p>RDF formalise les énoncés graphiques comme sujet, prédicat et objet. Un système n’a pas besoin de stocker RDF en interne pour bénéficier de la discipline. Electronic Artefacts utilise des ID typés et des prédicats qui peuvent être publiés par JSON-LD et des sorties graphiques générées.</p>\n<h2 id=\"architecture\">Architecture</h2>\n<p>L’architecture sépare les nœuds canoniques et les relations typées du stockage et de la présentation. Les fichiers restent dans les dépôts ou les magasins d’objets, tandis que les ID stables les connectent aux enregistrements graphiques et aux vues générées.</p>\n<h2 id=\"nombreux-chemins-valides\">Nombreux chemins valides</h2>\n<p>Dans un arbre de dossiers, chaque élément a un chemin parent. Dans un graphique, un nœud peut être atteint par de nombreux chemins significatifs.</p>\n<p>Un lecteur peut passer de Palimpsests à ORETH par <code>poweredBy</code>, puis à Signal Archéologie par <code>appliesConcept</code>, puis à une publication par <code>documentedBy</code>. Un autre lecteur peut commencer par la préservation numérique et arriver au même projet par des relations d’archives.</p>\n<p>Ces chemins reflètent différentes questions. « Quel programme est le moteur de ce projet? » diffère de « Quels travaux démontrent ce concept? » Un graphique peut répondre à la fois sans dupliquer les enregistrements sous-jacents.</p>\n<p>Ceci est particulièrement précieux pour la découverte. Les utilisateurs connaissent rarement le dossier exact choisi par un éditeur. Ils abordent les gens, les thèmes, les outils, les lieux ou les problèmes.</p>\n<h2 id=\"identite-stable\">Identité stable</h2>\n<p>Les systèmes de dossiers assimilent souvent l’emplacement à l’identité. Déplacement d’un fichier change son chemin et peut casser des liens. Un graphique attribue un identifiant indépendant du placement actuel.</p>\n<p>Les ID d’Electronic Artefacts tels que <code>ea:program:vaste</code> ou <code>ea:concept:knowledge-graph</code> restent stables pendant que les pages publiques, les étiquettes et les métadonnées évoluent. Les relations se rapportent à l’identificateur, et non à un titre copié.</p>\n<p>L’identité stable supporte également la fusion. Si deux importations décrivent la même institution, elles peuvent être rapprochées d’un seul noeud. Si elles décrivent différentes institutions dont les noms sont similaires, des ID distincts conservent la distinction.</p>\n<p>L’identité canonique est fondamentale pour le référencement. Plusieurs articles peuvent être liés à une page de concept plutôt qu’à des définitions concurrentes. Les redirections et les alias peuvent préserver les anciennes URL.</p>\n<h2 id=\"provenance\">Provenance</h2>\n<p>Les dossiers montrent où un fichier est stocké, pas nécessairement d’où il vient. La provenance a besoin de relations : dérivées, créées par, numérisées, examinées par, remplaces ou générées.</p>\n<p>Un graphique peut relier un artefact au matériel source, aux événements de transformation, aux versions logicielles et aux décisions de publication. Cela rend le lignage interrogeable.</p>\n<p>Pour Palimpsests, un fichier audio final peut être relié à des tiges, des sessions, des enregistrements de référence, des analyses ORETH et des enregistrements de sortie. Publier chaque source privée est inutile; le graphique peut maintenir une provenance restreinte et exposer une projection publique.</p>\n<p>La provenance aide également les systèmes d’IA. Une réponse générée peut citer des nœuds sources canoniques plutôt que de s’appuyer sur des fragments de texte anonymes.</p>\n<h2 id=\"heure\">Heure</h2>\n<p>Les hiérarchies sont faibles pour représenter le changement. Un fichier peut passer de <code>draft</code> à <code>final</code>, mais l’état antérieur peut disparaître à moins que le contrôle de version ou les sauvegardes le préservent.</p>\n<p>Les graphiques peuvent modéliser le temps à travers les entités de version, les enregistrements d’événements et la validité de la relation. Une personne a occupé un rôle pendant une période. Un projet utilisait une technologie avant de migrer. Une revendication a été remplacée par une publication ultérieure.</p>\n<p>La modélisation temporelle empêche l’état actuel d’effacer l’histoire. Les connaissances culturelles dépendent souvent de la séquence : qui a appris de qui, comment une technique a bougé, quand une institution a changé de nom.</p>\n<p>V6 a besoin de cette capacité parce que l’artisanat et la transmission culturelle sont des processus et non des profils statiques.</p>\n<h2 id=\"autorisations-et-contexte\">Autorisations et contexte</h2>\n<p>Les permissions de dossier s’appliquent aux chemins et aux sous-arbres hérités. Ceci est efficace pour de nombreuses tâches de stockage. Les systèmes graphiques peuvent avoir besoin d’autorisations en fonction du type d’entité, de la relation, de l’adhésion au projet ou du but.</p>\n<p>Un éditeur peut lire un enregistrement source restreint mais ne publier qu’une citation dérivée. Un contributeur pourrait proposer une relation avec une institution mais ne pas changer son identité canonique. Un modèle pourrait analyser des documents privés tout en récupérant seulement les enregistrements autorisés pour l’utilisateur actuel.</p>\n<p>C’est une exécution contextuelle : le comportement dépend de l’acteur, de l’entité, de la relation et de l’état. VASTE traite ces conditions comme des problèmes d’exécution.</p>\n<p>Les permissions graphiques sont plus expressives mais plus difficiles à raisonner. Les systèmes ont besoin de règles et d’essais explicites pour éviter toute traversée accidentelle vers des nœuds restreints.</p>\n<h2 id=\"demande-de-renseignements\">Demande de renseignements</h2>\n<p>Les requêtes de dossiers sont généralement des chemins de recherche, des noms ou des contenus de fichiers. Des questions graphiques peuvent être posées sur les modèles : quelles publications documentent les concepts appliqués par VASTE ? Quelles techniques sont reliées à un matériau par une personne? Quels artefacts proviennent d’une source et manquent de métadonnées de conservation?</p>\n<p>Les requêtes de chemin exposent les relations indirectes. Ils peuvent appuyer les recommandations, l’analyse d’impact et la détection des anomalies.</p>\n<p>La recherche et la traversée du graphique se complètent. La recherche en texte intégral trouve des passages. Les requêtes graphiques trouvent des modèles structurels. Une interface de connaissance peut résoudre une entité par la recherche puis explorer son voisinage.</p>\n<p>La valeur de la requête dépend de la qualité de modélisation. Les relations et les doubles identités donnent des réponses vagues.</p>\n<h2 id=\"vues-generees\">Vues générées</h2>\n<p>Un graphique ne devrait pas forcer chaque utilisateur à une visualisation par nœuds. Il peut générer des vues conventionnelles : pages de projet, calendriers chronologiques, index de catégories, dossiers, tableaux et cartes.</p>\n<p>La même entité peut apparaître dans plusieurs vues sans duplication. Un index de publication trie par date. Une page discipline groupes par thème. Une page de projet affiche des programmes et des articles connexes. Une chronologie montre les événements.</p>\n<p>Cette séparation entre le modèle et la projection est l’un des plus grands avantages architecturaux. Les éditeurs conservent un enregistrement canonique; les systèmes de construction produisent des surfaces spécifiques au public.</p>\n<p>Electronic Artefacts suivent déjà ce modèle. Markdown front matter alimente les pages de l’entité, les routes d’identification, les documents de recherche, JSON-LD, les entrées du plan du site et les voisinages du graphe.</p>\n<h2 id=\"graphiques-et-systemes-de-fichiers\">Graphiques et systèmes de fichiers</h2>\n<p>Les graphiques ne suppriment pas le besoin de fichiers. Les documents sources, les médias et le code doivent encore être stockés. Le graphique doit les mentionner et les décrire.</p>\n<p>Une architecture pratique conserve des actifs binaires dans un système de fichiers ou un magasin d’objets, des enregistrements sources dans le contrôle de version ou une base de données, et des relations graphiques dans des données structurées. Les cartes d’identité stables font le pont entre ces couches.</p>\n<p>Les conventions de dossiers lisibles par l’homme restent utiles pour la maintenance. L’erreur est de traiter ces conventions comme le seul modèle de domaine.</p>\n<p>Le contrôle des versions complète également les graphiques. Git enregistre l’historique du changement textuel, tandis que les entités graphiques décrivent les relations sémantiques. L’un ne peut pas remplacer l’autre.</p>\n<h2 id=\"modeliser-le-monde\">Modéliser le monde</h2>\n<p>L’expression « modéliser le monde avec des graphiques » peut inciter à une trop grande ouverture. Aucun graphique ne capture complètement la réalité. Un modèle sélectionne les entités et les relations selon leur but.</p>\n<p>La première étape est la question des compétences. Que doit répondre le système? Pour V6 : qui pratique une technique, quels matériaux elle utilise, où elle est enseignée, quels documents appuient la revendication et comment elle a changé au fil du temps. Ces questions déterminent le graphique.</p>\n<p>La deuxième étape est la preuve. Une relation doit avoir une source lorsqu’elle fait une revendication culturelle substantielle.</p>\n<p>Le troisième est la gouvernance. Les nouveaux prédicats et types d’entités doivent être examinés. Sinon, le graphique devient une collection incontrôlée d’interprétations personnelles.</p>\n<p>Le quatrième est l’humilité. D’autres modèles peuvent être valides. Les catégories culturelles devraient soutenir les termes locaux et les interprétations contestées.</p>\n<h2 id=\"quand-un-dossier-suffit\">Quand un dossier suffit</h2>\n<p>Utilisez des dossiers lorsque le domaine a une structure de confinement stable, le nombre d’objets est limité et les relations croisées ne sont pas importantes. Les documents fiscaux personnels, les artefacts de construction et l’exportation d’un petit projet peuvent n’avoir besoin de rien de plus.</p>\n<p>Un graphique introduit la gestion de l’identité, la gouvernance des relations, l’outillage de requête et la complexité de l’interface. Il devrait résoudre de vrais problèmes.</p>\n<p>Un chemin de migration commun commence avec les fichiers et la matière première. Des ID et des références stables sont ajoutés. Une étape de construction génère des indices et des sorties de relation. Une base de données ne devient nécessaire que lorsque les requêtes de contribution, d’échelle ou d’exécution dépassent les flux statiques.</p>\n<p>Electronic Artefacts utilise cette approche progressive. Le système public gagne des propriétés graphiques sans rejeter Markdown et publication statique.</p>\n<h2 id=\"erreurs-de-graphique-communes\">Erreurs de graphique communes</h2>\n<p>La première défaillance est le théâtre graphique : un réseau visuel de nœuds sans sémantique tapée ni questions utiles.</p>\n<p>Le second est l’explosion de l’entité. Chaque phrase devient un nœud, produisant des milliers de pages vides.</p>\n<p>La troisième est la relation universelle. Tous les bords deviennent <code>relatedTo</code>, donc la traversée n’a aucune signification.</p>\n<p>Le quatrième manque de provenance. Les allégations apparaissent comme des faits sans source ni confiance.</p>\n<p>Le cinquième ignore les projections. Les utilisateurs sont obligés de naviguer directement dans le modèle de données.</p>\n<p>La sixième centralise tout. Un graphique devient une plateforme obligatoire même pour les composants indépendants qui n’ont besoin que d’un fichier simple.</p>\n<h2 id=\"vaste\">VASTE</h2>\n<p>VASTE étend la modélisation graphique en exécution. Les entités et les relations ne décrivent pas seulement un domaine; elles participent aux permissions, au contexte, aux événements et aux projections.</p>\n<p>Cela fait du graphique un substrat d’exécution. Une relation peut influencer quelle opération est autorisée ou quel événement se propage. Les applications publiques peuvent partager identité et sémantique tout en exposant différentes interfaces.</p>\n<p>Cette approche est utile pour les systèmes où les connaissances et les flux de travail sont indissociables : archives, plateformes culturelles, systèmes de droits et mémoire institutionnelle.</p>\n<p>Il faut également renforcer les contrôles. L’exécution devrait utiliser des quartiers délimités et des prédicats validés plutôt que des traversées arbitraires.</p>\n<h2 id=\"v6\">V6</h2>\n<p>V6 démontre pourquoi les dossiers sont insuffisants pour les connaissances culturelles. Une technique artisanale appartient aux personnes, aux lieux, aux matériaux, aux outils, aux institutions et aux œuvres. Aucune hiérarchie ne peut représenter tous ces chemins.</p>\n<p>Un graphique permet à la plateforme de préserver la transmission : une personne apprise d’une autre personne, enseignée dans un établissement, a utilisé un matériel et contribué à un travail. Les pages publiques peuvent ensuite raconter des histoires cohérentes à partir des mêmes documents structurés.</p>\n<p>Les services économiques peuvent émerger du graphique. Une liste de marché est liée aux compétences, au matériel et à la provenance vérifiés plutôt qu’à une carte de produit isolée.</p>\n<h2 id=\"centre-de-connaissances\">Centre de connaissances</h2>\n<p>Le Knowledge Hub utilise l’architecture graphique pour empêcher les articles de devenir des articles de blog isolés. Chaque publication documente les concepts, technologies, projets et programmes. Les collections créent des chemins de lecture curés. Les pages conceptuelles accumulent l’autorité.</p>\n<p>Les dossiers organisent toujours le dépôt. Le graphique fournit la structure intellectuelle publique. Cette coexistence est la réponse pratique au titre : les graphiques sont plus puissants parce qu’ils peuvent préserver de nombreuses relations, tandis que les dossiers restent utiles comme une seule vue.</p>\n<h2 id=\"mise-en-uvre\">Mise en œuvre</h2>\n<p>Commencez par ajouter des identifiants stables et des références typées aux enregistrements existants. Préserver le stockage des dossiers, générer des index de relations et des vues publiques, puis introduire une base de données graphique uniquement lorsque les requêtes d’exécution ou les mises à jour collaboratives l’exigent.</p>\n<h2 id=\"elements-de-preuve\">Éléments de preuve</h2>\n<p>RDF fournit un modèle standard de graphique objet-prédicat, tandis que CRM CIDOC montre comment les entités culturelles et les événements peuvent être intégrés dans des collections hétérogènes.</p>\n<h2 id=\"limites\">Limites</h2>\n<p>Les graphiques ajoutent la gouvernance et la complexité des requêtes. Des prédicats médiocres, des identités dupliquées et une traversée sans restriction peuvent rendre un graphique moins utilisable qu’une hiérarchie disciplinée. Chaque collection de fichiers ne nécessite pas un graphique.</p>\n<h2 id=\"concepts-connexes\">Concepts connexes</h2>\n<p>Lire <a href=\"/fr/knowledge/concepts/graph-modeling/\">Modélisation des graphiques</a>, <a href=\"/fr/knowledge/concepts/knowledge-graph/\">Graphe de connaissances</a>, <a href=\"/fr/knowledge/concepts/entity-identity/\">Identité de l’entité</a> et <a href=\"/fr/knowledge/concepts/provenance/\">Provenance</a>.</p>\n<h2 id=\"programmes-et-projets-connexes\">Programmes et projets connexes</h2>\n<p>Voir <a href=\"/fr/programs/vaste/\">VASTE</a> et <a href=\"/fr/projects/v6/\">V6</a>.</p>\n<h2 id=\"glossaire\">Glossaire</h2>\n<p>Hiérarchie : structure où les objets sont organisés par le confinement parent-enfant.</p>\n<p>Noeud : une entité adressable dans un graphique.</p>\n<p>Edge : une relation entre les nœuds.</p>\n<p>Prédice : le type ou la signification d’une relation graphique.</p>\n<p>Projection : une vue générée par un modèle sous-jacent.</p>\n<p>Requête de chemin : une requête qui suit une séquence de relations.</p>\n<h2 id=\"references\">Références</h2>\n<ul>\n<li>W3C. RDF 1.1 Concepts et syntaxe abstraite.</li>\n<li>CRM CIDOC Groupe d’intérêt spécial. Modèle conceptuel de référence du CIDOC.</li>\n</ul>\n",
   "headings": [
     "Problème",
+    "Présentation",
+    "Comment les dossiers modèle l'information",
+    "Graphiques primitifs",
     "Architecture",
+    "Nombreux chemins valides",
+    "Identité stable",
+    "Provenance",
+    "Heure",
+    "Autorisations et contexte",
+    "Demande de renseignements",
+    "Vues générées",
+    "Graphiques et systèmes de fichiers",
+    "Modéliser le monde",
+    "Quand un dossier suffit",
+    "Erreurs de graphique communes",
+    "VASTE",
+    "V6",
+    "Centre de connaissances",
     "Mise en œuvre",
     "Éléments de preuve",
     "Limites",
+    "Concepts connexes",
+    "Programmes et projets connexes",
+    "Glossaire",
     "Références"
   ],
   "headingItems": [
@@ -109,8 +129,93 @@
     },
     {
       "level": 2,
+      "title": "Présentation",
+      "id": "presentation"
+    },
+    {
+      "level": 2,
+      "title": "Comment les dossiers modèle l'information",
+      "id": "comment-les-dossiers-modele-l-information"
+    },
+    {
+      "level": 2,
+      "title": "Graphiques primitifs",
+      "id": "graphiques-primitifs"
+    },
+    {
+      "level": 2,
       "title": "Architecture",
       "id": "architecture"
+    },
+    {
+      "level": 2,
+      "title": "Nombreux chemins valides",
+      "id": "nombreux-chemins-valides"
+    },
+    {
+      "level": 2,
+      "title": "Identité stable",
+      "id": "identite-stable"
+    },
+    {
+      "level": 2,
+      "title": "Provenance",
+      "id": "provenance"
+    },
+    {
+      "level": 2,
+      "title": "Heure",
+      "id": "heure"
+    },
+    {
+      "level": 2,
+      "title": "Autorisations et contexte",
+      "id": "autorisations-et-contexte"
+    },
+    {
+      "level": 2,
+      "title": "Demande de renseignements",
+      "id": "demande-de-renseignements"
+    },
+    {
+      "level": 2,
+      "title": "Vues générées",
+      "id": "vues-generees"
+    },
+    {
+      "level": 2,
+      "title": "Graphiques et systèmes de fichiers",
+      "id": "graphiques-et-systemes-de-fichiers"
+    },
+    {
+      "level": 2,
+      "title": "Modéliser le monde",
+      "id": "modeliser-le-monde"
+    },
+    {
+      "level": 2,
+      "title": "Quand un dossier suffit",
+      "id": "quand-un-dossier-suffit"
+    },
+    {
+      "level": 2,
+      "title": "Erreurs de graphique communes",
+      "id": "erreurs-de-graphique-communes"
+    },
+    {
+      "level": 2,
+      "title": "VASTE",
+      "id": "vaste"
+    },
+    {
+      "level": 2,
+      "title": "V6",
+      "id": "v6"
+    },
+    {
+      "level": 2,
+      "title": "Centre de connaissances",
+      "id": "centre-de-connaissances"
     },
     {
       "level": 2,
@@ -126,6 +231,21 @@
       "level": 2,
       "title": "Limites",
       "id": "limites"
+    },
+    {
+      "level": 2,
+      "title": "Concepts connexes",
+      "id": "concepts-connexes"
+    },
+    {
+      "level": 2,
+      "title": "Programmes et projets connexes",
+      "id": "programmes-et-projets-connexes"
+    },
+    {
+      "level": 2,
+      "title": "Glossaire",
+      "id": "glossaire"
     },
     {
       "level": 2,

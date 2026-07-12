@@ -9,7 +9,7 @@
       "description": "Repères pour comprendre Systèmes génératifs, cybernétique et programmation créative dans un contexte de conception : concepts clés, implications pratiques, limites et références reliées au graphe Electronic Artefacts.",
       "inLanguage": "fr",
       "datePublished": "2026-06-25",
-      "dateModified": "2026-06-25",
+      "dateModified": "2026-07-12",
       "primaryImageOfPage": {
         "@type": "ImageObject",
         "url": "https://electronicartefacts.com/assets/media/projects/electronic-artefacts/electronic-artefacts-social.jpg",
@@ -68,7 +68,7 @@
       "inLanguage": "fr",
       "dateCreated": "2026-06-23",
       "datePublished": "2026-06-25",
-      "dateModified": "2026-06-25",
+      "dateModified": "2026-07-12",
       "publisher": {
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
@@ -76,9 +76,9 @@
         "@id": "https://electronicartefacts.com/id/organization/electronic-artefacts/"
       },
       "isAccessibleForFree": true,
-      "wordCount": 137,
+      "wordCount": 1685,
       "citation": [
-        "Electronic Artefacts. \"Systèmes génératifs, cybernétique et programmation créative\". Article technique, version 1.0.0, 2026.",
+        "Electronic Artefacts. \"Systèmes génératifs, cybernétique et programmation créative\". Article technique, version 1.1.0, 2026.",
         {
           "@type": "CreativeWork",
           "name": "Cybernetics or Control and Communication in the Animal and the Machine",
@@ -135,7 +135,7 @@
         "Cybernetics",
         "Generative Systems"
       ],
-      "timeRequired": "PT1M",
+      "timeRequired": "PT8M",
       "isBasedOn": [
         {
           "@type": "CreativeWork",

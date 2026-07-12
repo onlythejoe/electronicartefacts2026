@@ -14,10 +14,10 @@ status: active
 maturity: research
 confidence: published
 version:
-  version: 1.0.0
+  version: 1.1.0
   createdAt: 2026-06-24
   publishedAt: 2026-06-25
-  modifiedAt: 2026-06-25
+  modifiedAt: 2026-07-12
 authors:
   - id: ea:organization:electronic-artefacts
 publisher: ea:organization:electronic-artefacts
@@ -66,24 +66,134 @@ translationOf: ea:publication:iiif-and-compound-cultural-objects
 
 ## Problème
 
-Cette synthèse clarifie le sujet « IIIF et objets culturels composés » pour aider le lecteur à comprendre le vocabulaire, les enjeux pratiques et les liens avec les autres pages du graphe Electronic Artefacts.
+Les objets culturels correspondent rarement à un seul fichier. Un livre a des pages, une sculpture a des vues, un album a des pistes et des œuvres, une installation a vidéo, audio, diagrammes et documentation. Les galeries d'images plates et les dossiers de téléchargement masquent la structure qui donne un sens à ces objets.
+
+## Présentation
+
+IIIF, le Cadre international d'interopérabilité de l'image, fournit des API et des modèles de données pour la présentation d'objets culturels numériques. Elle est largement associée aux téléspectateurs d'images à haute résolution, mais l'API de présentation est plus large : elle modélise les objets composés, les vues, les séquences, les plages, les annotations et le contexte descriptif.
+
+L'API de présentation de l'IMF 3.0 décrit des ressources telles que des collections, des manifestes, des toiles, des gammes et des annotations. Ce ne sont pas seulement des conteneurs techniques. Ils sont une façon de dire comment un objet culturel doit être vu, navigué et contextualisé.
+
+Pour Electronic Artefacts, l'IMF est pertinent parce que des projets comme V6 et Palimpsestes comportent des enregistrements composés. Le travail n'est pas seulement un fichier multimédia. C'est un objet structuré avec des parties, des vues, des traces, des preuves et une interprétation.
 
 ## Architecture
 
-Le sujet est présenté à travers ses composants, ses relations avec les concepts voisins et les décisions de conception qu’il implique.
+Une architecture de présentation IIIF contient des actifs de source, des médias dérivés, des services d'image ou de médias, des manifestes, des toiles, des gammes, des annotations, des téléspectateurs et des dossiers de métadonnées externes. IIIF décrit la structure de la présentation, tandis que le graphe de connaissances qui l'entoure enregistre l'identité sémantique, la provenance, les droits et les relations entre les objets.
+
+## Objets composés
+
+Un objet composé est fait de plusieurs parties ou vues. Un manuscrit a des pages. Une peinture peut avoir des images visibles, infrarouges et de détail. Une sortie musicale peut avoir des pistes, couvrir l'art, des notes de liner et des vidéos. Une technique culturelle peut comporter des photographies, des diagrammes, des entrevues et des documents contextuels.
+
+Si chaque fichier est publié indépendamment, l'objet se dissout. Les utilisateurs peuvent voir des pièces mais pas l'ensemble. Les moteurs de recherche peuvent indexer des fragments sans comprendre leur relation. Les archives peuvent préserver les fichiers tout en perdant la structure de présentation.
+
+IIIF aide en séparant la structure des objets du stockage individuel des actifs. Un manifeste peut décrire comment les parties appartiennent ensemble et comment un spectateur doit les présenter.
+
+## Recouvrement
+
+En IIIF, un groupe de collection manifeste et d'autres collections. Il peut représenter un ensemble d'archives, une exposition, un résultat de recherche, une institution ou un ensemble d'objets curés.
+
+Les collections sont utiles parce que l'infrastructure culturelle a souvent besoin d'une navigation imbriquée. Un projet peut contenir des séries. Une série peut contenir des objets. Un objet peut contenir des toiles. Cette structure permet aux lecteurs de passer d'un aperçu à un détail sans compter sur un arbre de dossiers.
+
+Pour le V6, les collections pourraient regrouper des artisanats, des institutions, des régions, des techniques ou des campagnes de documentation. Le point important est que la structure de la collection est éditoriale, et pas seulement de stockage.
+
+## Manifestes
+
+Un manifeste décrit un objet ou une oeuvre à présenter. Il comprend des informations descriptives et la séquence ou la structure des vues nécessaires pour les rendre.
+
+Le manifeste est l'unité centrale qu'un spectateur peut charger. Il indique au client ce qu'est l'objet, ce qu'il a en toile, quelles ressources sont peintes sur ces toiles et quelles gammes ou structures les organisent.
+
+Pour les Palimpsestes, un manifeste pourrait décrire un dossier de sortie : image de couverture, pages de livrets, notes d'écoute, visuels et documentation liés aux pistes. Pour une archive visuelle, un manifeste pourrait décrire un artefact avec de multiples photographies et annotations.
+
+## Toiles
+
+Une toile est une surface virtuelle ou une étendue temporelle. Il fournit un cadre de coordination ou temporel où les ressources de contenu sont placées. C'est une abstraction puissante car elle peut représenter une page, un plan image, une durée vidéo ou une timeline audio.
+
+Une toile n'est pas l'image elle-même. C'est l'espace sur lequel les images, le texte, la vidéo ou l'audio peuvent être associés. Cette distinction permet des annotations, des superpositions et d'autres représentations.
+
+Pour les travaux audiovisuels, ce modèle est particulièrement utile. Une toile peut se référer aux médias temporels et les annotations peuvent indiquer des moments ou des segments.
+
+## Annotations
+
+IIIF utilise des annotations pour associer le contenu aux toiles ou parties de toiles. Une annotation peut placer une image sur une toile, ajouter une transcription, marquer une région, joindre des commentaires ou un lien à une autre ressource.
+
+Les annotations font des objets culturels des surfaces actives pour l'interprétation. Un chercheur peut relier un détail visuel à une note. Un conservateur peut identifier une technique. Un système peut associer le texte de transcription à l'audio.
+
+Les processus d'annotation nécessitent une gouvernance. Les annotations publiques, les annotations éditoriales et les annotations générées par la machine ne doivent pas s'effondrer en une seule couche. Chacun devrait avoir son auteur, sa confiance et son statut d'examinateur.
+
+## Présentation, pas découverte
+
+L'API de présentation de l'IMF se concentre explicitement sur la présentation d'objets composés aux humains. Il n'essaie pas de remplacer les normes de métadonnées pour la découverte ou la recherche.
+
+C'est important. IIIF peut dire à un spectateur comment rendre un objet et se déplacer à travers ses parties. Un graphe de connaissances peut décrire pourquoi l'objet compte, quelles personnes sont impliquées, quelles techniques il utilise, quelles sources soutiennent les revendications et comment il se rapporte à d'autres objets.
+
+La meilleure architecture les associe. IIIF gère la présentation d'objets riches. Les données liées et les métadonnées du site gèrent la découverte, l'identité sémantique et les relations entre les objets.
+
+## Données liées
+
+L'IMF utilise JSON-LD et adopte les principes des données liées. Ceci donne les modèles d'identificateurs web-natifs et les avantages d'interopérabilité.
+
+Cependant, utiliser JSON-LD ne rend pas automatiquement une archive sémantiquement riche. Un manifeste peut comprendre des étiquettes descriptives destinées à l'affichage humain plutôt qu'au raisonnement de la machine. Un travail sémantique plus profond nécessite toujours des vocabulaires contrôlés, des identificateurs d'entités et une modélisation des relations.
+
+Electronic Artefacts a déjà un modèle graphique pour les entités et les relations. La IIIF pourrait la compléter en ajoutant une structure de présentation pour certains objets riches en médias.
+
+## Préservation numérique
+
+La préservation n'est pas seulement la conservation des fichiers. Elle conserve une structure et un contexte suffisants pour l'interprétation future. IIIF peut aider à préserver la structure de présentation: quelle page a suivi, quelle image a montré quelle vue, quelle annotation a expliqué quelle région.
+
+Il ne remplace pas la fixité, la redondance de stockage, les enregistrements de droits, la surveillance du format ou la provenance. Il ajoute une couche de présentation qui peut rester utile à tous les téléspectateurs et institutions.
+
+Un plan de préservation devrait regrouper les actifs de source, les actifs dérivés, les manifestes, les annotations, les métadonnées sur les droits et les graphes afin que les systèmes futurs puissent reconstruire l'objet.
+
+## V6
+
+V6 est une plate-forme naturelle de l'IMF, car les documents d'art et d'artisanat peuvent nécessiter plus d'une image et un paragraphe. Un objet artisanal peut avoir des détails matériels, le contexte du fabricant, des images d'atelier, des diagrammes d'outils et des références institutionnelles.
+
+Un manifeste IIIF pourrait exposer l'objet à une vision interopérable. Le graphique d’Electronic Artefacts pourrait relier cet objet aux concepts, lieux, matériaux, techniques et preuves.
+
+Cette division empêche la page publique de devenir un article générique ou un spectateur brut. La page peut expliquer, le graphique peut se rapporter et IIIF peut présenter.
 
 ## Mise en œuvre
 
-La page met l’accent sur les usages concrets, les contraintes de gouvernance et les conditions d’application dans un système réel.
+Commencez par un objet composé qui a plusieurs images ou parties multimédias. Créer des ID stables pour l'objet et les actifs. Produire un manifeste IIIF qui décrit les toiles, les étiquettes, les résumés et les liens de ressources. Valider dans un visionneur IIIF.
+
+Connectez ensuite le manifeste au graphique du site : projet, concept, provenance, droits et sources. Évitez de traiter le manifeste comme la seule source de métadonnées.
 
 ## Éléments de preuve
 
-Les sources, relations et éléments de contexte restent associés à la fiche pour distinguer synthèse éditoriale, preuve et référence.
+L'API 3.0 de présentation IIIF définit les collections, manifestes, toiles, gammes et annotations pour la présentation d'objets composés. Il indique que la présentation est son objectif principal et que les métadonnées de découverte sont hors de sa portée directe.
+
+## Incidences des Electronic Artefacts
+
+L'IMF donne à Electronic Artefacts une référence mature pour les objets culturels riches en médias. Il est particulièrement utile lorsque le site a besoin d'une expérience de visionneur sans inventer un format d'archive personnalisé.
+
+Le principe de la conception est la complémentarité : IIIF pour la présentation, connaissances graphiques pour le sens, la provenance et la découverte.
 
 ## Limites
 
-Les limites décrivent ce que la fiche ne couvre pas encore, les sources disponibles et les conditions d’usage documentées.
+IIIF peut ajouter de la complexité à la mise en œuvre, surtout lorsqu'un petit projet n'a besoin que d'une simple page publique. Il est très utile lorsque les objets ont des vues multiples, des besoins de zoom profond, des médias chronométrés, des annotations ou des exigences d'interopérabilité institutionnelle.
+
+## Concepts connexes
+
+Lire [Préservation numérique](/fr/knowledge/concepts/digital-preservation/), [Données liées](/fr/knowledge/concepts/linked-data/), [Métadonnées](/fr/knowledge/concepts/metadata/) et [Graphe de connaissances](/fr/knowledge/concepts/knowledge-graph/).
+
+## Technologies connexes
+
+Voir [III F](/fr/knowledge/technologies/iiif/) et [JSON-LD](/fr/knowledge/technologies/json-ld/).
+
+## Glossaire
+
+Manifeste : une ressource IIIF décrivant comment présenter un objet composé.
+
+Canvas: un cadre spatial ou temporel pour le contenu de l'objet.
+
+Gamme : un groupement structurel à l'intérieur d'un manifeste.
+
+Annotation : lien entre une toile ou une région et son contenu ou commentaire.
+
+Collection : regroupement de manifestes ou d'autres collections.
 
 ## Références
 
-Les sources principales restent disponibles dans le bloc de références de la fiche.
+- IIIF Consortium. IIIF Présentation API 3.0.
+- IIIF Consortium. API d'image IIIF 3.0.
+- W3C JSON-LD 1.1.

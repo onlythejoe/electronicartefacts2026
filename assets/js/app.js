@@ -9733,7 +9733,7 @@ window.EA_PUBLIC_CATALOG = {
       "identifier": "/fr/id/publication/ai-agents-vs-ai-workflows/",
       "temporality": {
         "creationDate": "2026-06-24",
-        "lastUpdated": "2026-06-25",
+        "lastUpdated": "2026-07-12",
         "releaseDate": "2026-06-25",
         "creationYear": "2026"
       }
@@ -9771,7 +9771,7 @@ window.EA_PUBLIC_CATALOG = {
       "identifier": "/fr/id/publication/ai-search-structured-content-and-knowledge-graph-seo/",
       "temporality": {
         "creationDate": "2026-06-25",
-        "lastUpdated": "2026-06-25",
+        "lastUpdated": "2026-07-12",
         "releaseDate": "2026-06-25",
         "creationYear": "2026"
       }
@@ -9808,7 +9808,7 @@ window.EA_PUBLIC_CATALOG = {
       "identifier": "/fr/id/publication/algorithmic-composition-and-rule-based-music/",
       "temporality": {
         "creationDate": "2026-06-24",
-        "lastUpdated": "2026-06-25",
+        "lastUpdated": "2026-07-12",
         "releaseDate": "2026-06-25",
         "creationYear": "2026"
       }
@@ -9846,7 +9846,7 @@ window.EA_PUBLIC_CATALOG = {
       "identifier": "/fr/id/publication/c2pa-content-credentials-and-generative-media-provenance/",
       "temporality": {
         "creationDate": "2026-06-24",
-        "lastUpdated": "2026-06-25",
+        "lastUpdated": "2026-07-12",
         "releaseDate": "2026-06-25",
         "creationYear": "2026"
       }
@@ -9884,7 +9884,7 @@ window.EA_PUBLIC_CATALOG = {
       "identifier": "/fr/id/publication/contextual-execution-and-graph-runtimes/",
       "temporality": {
         "creationDate": "2026-06-23",
-        "lastUpdated": "2026-06-25",
+        "lastUpdated": "2026-07-12",
         "releaseDate": "2026-06-25",
         "creationYear": "2026"
       }
@@ -9921,7 +9921,7 @@ window.EA_PUBLIC_CATALOG = {
       "identifier": "/fr/id/publication/creative-coding-pedagogy-from-logo-to-p5js/",
       "temporality": {
         "creationDate": "2026-06-24",
-        "lastUpdated": "2026-06-25",
+        "lastUpdated": "2026-07-12",
         "releaseDate": "2026-06-25",
         "creationYear": "2026"
       }
@@ -9959,7 +9959,7 @@ window.EA_PUBLIC_CATALOG = {
       "identifier": "/fr/id/publication/digital-preservation-and-living-archives/",
       "temporality": {
         "creationDate": "2026-06-23",
-        "lastUpdated": "2026-06-25",
+        "lastUpdated": "2026-07-12",
         "releaseDate": "2026-06-25",
         "creationYear": "2026"
       }
@@ -9997,7 +9997,7 @@ window.EA_PUBLIC_CATALOG = {
       "identifier": "/fr/id/publication/event-driven-architecture-and-event-streams/",
       "temporality": {
         "creationDate": "2026-06-24",
-        "lastUpdated": "2026-06-25",
+        "lastUpdated": "2026-07-12",
         "releaseDate": "2026-06-25",
         "creationYear": "2026"
       }
@@ -10066,7 +10066,7 @@ window.EA_PUBLIC_CATALOG = {
       "identifier": "/fr/id/publication/generative-ai-latent-space-and-creative-workflows/",
       "temporality": {
         "creationDate": "2026-06-24",
-        "lastUpdated": "2026-06-25",
+        "lastUpdated": "2026-07-12",
         "releaseDate": "2026-06-25",
         "creationYear": "2026"
       }
@@ -10105,7 +10105,7 @@ window.EA_PUBLIC_CATALOG = {
       "identifier": "/fr/id/publication/generative-systems-cybernetics-and-creative-coding/",
       "temporality": {
         "creationDate": "2026-06-23",
-        "lastUpdated": "2026-06-25",
+        "lastUpdated": "2026-07-12",
         "releaseDate": "2026-06-25",
         "creationYear": "2026"
       }
@@ -10143,7 +10143,7 @@ window.EA_PUBLIC_CATALOG = {
       "identifier": "/fr/id/publication/how-large-language-models-actually-work/",
       "temporality": {
         "creationDate": "2026-06-24",
-        "lastUpdated": "2026-06-25",
+        "lastUpdated": "2026-07-12",
         "releaseDate": "2026-06-25",
         "creationYear": "2026"
       }
@@ -10180,7 +10180,7 @@ window.EA_PUBLIC_CATALOG = {
       "identifier": "/fr/id/publication/human-computer-interaction-for-creative-tools/",
       "temporality": {
         "creationDate": "2026-06-24",
-        "lastUpdated": "2026-06-25",
+        "lastUpdated": "2026-07-12",
         "releaseDate": "2026-06-25",
         "creationYear": "2026"
       }
@@ -10218,7 +10218,7 @@ window.EA_PUBLIC_CATALOG = {
       "identifier": "/fr/id/publication/hypertext-and-augmented-knowledge-systems/",
       "temporality": {
         "creationDate": "2026-06-24",
-        "lastUpdated": "2026-06-25",
+        "lastUpdated": "2026-07-12",
         "releaseDate": "2026-06-25",
         "creationYear": "2026"
       }
@@ -10256,7 +10256,7 @@ window.EA_PUBLIC_CATALOG = {
       "identifier": "/fr/id/publication/iiif-and-compound-cultural-objects/",
       "temporality": {
         "creationDate": "2026-06-24",
-        "lastUpdated": "2026-06-25",
+        "lastUpdated": "2026-07-12",
         "releaseDate": "2026-06-25",
         "creationYear": "2026"
       }
@@ -10294,7 +10294,7 @@ window.EA_PUBLIC_CATALOG = {
       "identifier": "/fr/id/publication/knowledge-graphs-for-cultural-infrastructure/",
       "temporality": {
         "creationDate": "2026-06-23",
-        "lastUpdated": "2026-06-25",
+        "lastUpdated": "2026-07-12",
         "releaseDate": "2026-06-25",
         "creationYear": "2026"
       }
@@ -10331,7 +10331,7 @@ window.EA_PUBLIC_CATALOG = {
       "identifier": "/fr/id/publication/linked-data-and-public-knowledge-pages/",
       "temporality": {
         "creationDate": "2026-06-23",
-        "lastUpdated": "2026-06-25",
+        "lastUpdated": "2026-07-12",
         "releaseDate": "2026-06-25",
         "creationYear": "2026"
       }
@@ -10369,7 +10369,7 @@ window.EA_PUBLIC_CATALOG = {
       "identifier": "/fr/id/publication/local-and-open-source-ai-systems/",
       "temporality": {
         "creationDate": "2026-06-24",
-        "lastUpdated": "2026-06-25",
+        "lastUpdated": "2026-07-12",
         "releaseDate": "2026-06-25",
         "creationYear": "2026"
       }
@@ -10406,7 +10406,7 @@ window.EA_PUBLIC_CATALOG = {
       "identifier": "/fr/id/publication/metadata-cataloguing-and-cultural-memory/",
       "temporality": {
         "creationDate": "2026-06-24",
-        "lastUpdated": "2026-06-25",
+        "lastUpdated": "2026-07-12",
         "releaseDate": "2026-06-25",
         "creationYear": "2026"
       }
@@ -10444,7 +10444,7 @@ window.EA_PUBLIC_CATALOG = {
       "identifier": "/fr/id/publication/microservices-modular-monoliths-and-system-boundaries/",
       "temporality": {
         "creationDate": "2026-06-24",
-        "lastUpdated": "2026-06-25",
+        "lastUpdated": "2026-07-12",
         "releaseDate": "2026-06-25",
         "creationYear": "2026"
       }
@@ -10481,7 +10481,7 @@ window.EA_PUBLIC_CATALOG = {
       "identifier": "/fr/id/publication/model-context-protocol-and-tool-using-ai-systems/",
       "temporality": {
         "creationDate": "2026-06-24",
-        "lastUpdated": "2026-06-25",
+        "lastUpdated": "2026-07-12",
         "releaseDate": "2026-06-25",
         "creationYear": "2026"
       }
@@ -10518,7 +10518,7 @@ window.EA_PUBLIC_CATALOG = {
       "identifier": "/fr/id/publication/motion-design-time-and-interface-semantics/",
       "temporality": {
         "creationDate": "2026-06-24",
-        "lastUpdated": "2026-06-25",
+        "lastUpdated": "2026-07-12",
         "releaseDate": "2026-06-25",
         "creationYear": "2026"
       }
@@ -10556,7 +10556,7 @@ window.EA_PUBLIC_CATALOG = {
       "identifier": "/fr/id/publication/multimodal-ai-across-text-image-audio-and-video/",
       "temporality": {
         "creationDate": "2026-06-24",
-        "lastUpdated": "2026-06-25",
+        "lastUpdated": "2026-07-12",
         "releaseDate": "2026-06-25",
         "creationYear": "2026"
       }
@@ -10594,7 +10594,7 @@ window.EA_PUBLIC_CATALOG = {
       "identifier": "/fr/id/publication/observability-for-ai-agents-and-tool-calling-systems/",
       "temporality": {
         "creationDate": "2026-06-24",
-        "lastUpdated": "2026-06-25",
+        "lastUpdated": "2026-07-12",
         "releaseDate": "2026-06-25",
         "creationYear": "2026"
       }
@@ -10632,7 +10632,7 @@ window.EA_PUBLIC_CATALOG = {
       "identifier": "/fr/id/publication/ontologies-taxonomies-and-knowledge-modeling/",
       "temporality": {
         "creationDate": "2026-06-24",
-        "lastUpdated": "2026-06-25",
+        "lastUpdated": "2026-07-12",
         "releaseDate": "2026-06-25",
         "creationYear": "2026"
       }
@@ -10669,7 +10669,7 @@ window.EA_PUBLIC_CATALOG = {
       "identifier": "/fr/id/publication/open-source-as-cultural-infrastructure/",
       "temporality": {
         "creationDate": "2026-06-24",
-        "lastUpdated": "2026-06-25",
+        "lastUpdated": "2026-07-12",
         "releaseDate": "2026-06-25",
         "creationYear": "2026"
       }
@@ -10706,7 +10706,7 @@ window.EA_PUBLIC_CATALOG = {
       "identifier": "/fr/id/publication/personal-knowledge-systems-and-digital-gardens/",
       "temporality": {
         "creationDate": "2026-06-24",
-        "lastUpdated": "2026-06-25",
+        "lastUpdated": "2026-07-12",
         "releaseDate": "2026-06-25",
         "creationYear": "2026"
       }
@@ -10743,7 +10743,7 @@ window.EA_PUBLIC_CATALOG = {
       "identifier": "/fr/id/publication/procedural-graphics-shaders-and-visual-systems/",
       "temporality": {
         "creationDate": "2026-06-24",
-        "lastUpdated": "2026-06-25",
+        "lastUpdated": "2026-07-12",
         "releaseDate": "2026-06-25",
         "creationYear": "2026"
       }
@@ -10781,7 +10781,7 @@ window.EA_PUBLIC_CATALOG = {
       "identifier": "/fr/id/publication/prompt-injection-and-trust-boundaries-in-ai-knowledge-systems/",
       "temporality": {
         "creationDate": "2026-06-25",
-        "lastUpdated": "2026-06-25",
+        "lastUpdated": "2026-07-12",
         "releaseDate": "2026-06-25",
         "creationYear": "2026"
       }
@@ -10819,7 +10819,7 @@ window.EA_PUBLIC_CATALOG = {
       "identifier": "/fr/id/publication/redis-streams-for-orchestration/",
       "temporality": {
         "creationDate": "2026-06-24",
-        "lastUpdated": "2026-06-25",
+        "lastUpdated": "2026-07-12",
         "releaseDate": "2026-06-25",
         "creationYear": "2026"
       }
@@ -10857,7 +10857,7 @@ window.EA_PUBLIC_CATALOG = {
       "identifier": "/fr/id/publication/responsible-ai-governance-for-creative-and-cultural-systems/",
       "temporality": {
         "creationDate": "2026-06-25",
-        "lastUpdated": "2026-06-25",
+        "lastUpdated": "2026-07-12",
         "releaseDate": "2026-06-25",
         "creationYear": "2026"
       }
@@ -10895,7 +10895,7 @@ window.EA_PUBLIC_CATALOG = {
       "identifier": "/fr/id/publication/retrieval-augmented-generation-and-knowledge-systems/",
       "temporality": {
         "creationDate": "2026-06-24",
-        "lastUpdated": "2026-06-25",
+        "lastUpdated": "2026-07-12",
         "releaseDate": "2026-06-25",
         "creationYear": "2026"
       }
@@ -10933,7 +10933,7 @@ window.EA_PUBLIC_CATALOG = {
       "identifier": "/fr/id/publication/runtime-engines-and-domain-operating-systems/",
       "temporality": {
         "creationDate": "2026-06-24",
-        "lastUpdated": "2026-06-25",
+        "lastUpdated": "2026-07-12",
         "releaseDate": "2026-06-25",
         "creationYear": "2026"
       }
@@ -10972,7 +10972,7 @@ window.EA_PUBLIC_CATALOG = {
       "identifier": "/fr/id/publication/signal-archaeology-audio-memory-and-machine-listening/",
       "temporality": {
         "creationDate": "2026-06-23",
-        "lastUpdated": "2026-06-25",
+        "lastUpdated": "2026-07-12",
         "releaseDate": "2026-06-25",
         "creationYear": "2026"
       }
@@ -11010,7 +11010,7 @@ window.EA_PUBLIC_CATALOG = {
       "identifier": "/fr/id/publication/systems-thinking-for-creative-practice/",
       "temporality": {
         "creationDate": "2026-06-24",
-        "lastUpdated": "2026-06-25",
+        "lastUpdated": "2026-07-12",
         "releaseDate": "2026-06-25",
         "creationYear": "2026"
       }
@@ -11047,7 +11047,7 @@ window.EA_PUBLIC_CATALOG = {
       "identifier": "/fr/id/publication/typography-reading-systems-and-digital-interfaces/",
       "temporality": {
         "creationDate": "2026-06-24",
-        "lastUpdated": "2026-06-25",
+        "lastUpdated": "2026-07-12",
         "releaseDate": "2026-06-25",
         "creationYear": "2026"
       }
@@ -11085,7 +11085,7 @@ window.EA_PUBLIC_CATALOG = {
       "identifier": "/fr/id/publication/verifiable-credentials-for-cultural-archives-and-creator-identity/",
       "temporality": {
         "creationDate": "2026-06-25",
-        "lastUpdated": "2026-06-25",
+        "lastUpdated": "2026-07-12",
         "releaseDate": "2026-06-25",
         "creationYear": "2026"
       }
@@ -11122,7 +11122,7 @@ window.EA_PUBLIC_CATALOG = {
       "identifier": "/fr/id/publication/web-audio-and-browser-based-sound-systems/",
       "temporality": {
         "creationDate": "2026-06-24",
-        "lastUpdated": "2026-06-25",
+        "lastUpdated": "2026-07-12",
         "releaseDate": "2026-06-25",
         "creationYear": "2026"
       }
@@ -11160,7 +11160,7 @@ window.EA_PUBLIC_CATALOG = {
       "identifier": "/fr/id/publication/webnn-and-local-ai-in-the-browser/",
       "temporality": {
         "creationDate": "2026-06-24",
-        "lastUpdated": "2026-06-25",
+        "lastUpdated": "2026-07-12",
         "releaseDate": "2026-06-25",
         "creationYear": "2026"
       }
@@ -11198,7 +11198,7 @@ window.EA_PUBLIC_CATALOG = {
       "identifier": "/fr/id/publication/why-graphs-are-more-powerful-than-folders/",
       "temporality": {
         "creationDate": "2026-06-24",
-        "lastUpdated": "2026-06-25",
+        "lastUpdated": "2026-07-12",
         "releaseDate": "2026-06-25",
         "creationYear": "2026"
       }

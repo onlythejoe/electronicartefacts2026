@@ -16,10 +16,10 @@
   "maturity": "research",
   "confidence": "published",
   "version": {
-    "version": "1.0.0",
+    "version": "1.1.0",
     "createdAt": "2026-06-23",
     "publishedAt": "2026-06-25",
-    "modifiedAt": "2026-06-25"
+    "modifiedAt": "2026-07-12"
   },
   "authors": [
     {
@@ -89,14 +89,27 @@
     }
   ],
   "citation": {
-    "preferred": "Electronic Artefacts. \"Données liées et pages publiques de connaissance\". Article technique, version 1.0.0, 2026."
+    "preferred": "Electronic Artefacts. \"Données liées et pages publiques de connaissance\". Article technique, version 1.1.0, 2026."
   },
-  "bodyHtml": "<h2 id=\"probleme\">Problème</h2>\n<p>Cette synthèse clarifie le sujet « Données liées et pages publiques de connaissance » pour aider le lecteur à comprendre le vocabulaire, les enjeux pratiques et les liens avec les autres pages du graphe Electronic Artefacts.</p>\n<h2 id=\"architecture\">Architecture</h2>\n<p>Le sujet est présenté à travers ses composants, ses relations avec les concepts voisins et les décisions de conception qu’il implique.</p>\n<h2 id=\"mise-en-uvre\">Mise en œuvre</h2>\n<p>La page met l’accent sur les usages concrets, les contraintes de gouvernance et les conditions d’application dans un système réel.</p>\n<h2 id=\"elements-de-preuve\">Éléments de preuve</h2>\n<p>Les sources, relations et éléments de contexte restent associés à la fiche pour distinguer synthèse éditoriale, preuve et référence.</p>\n<h2 id=\"limites\">Limites</h2>\n<p>Les limites décrivent ce que la fiche ne couvre pas encore, les sources disponibles et les conditions d’usage documentées.</p>\n<h2 id=\"references\">Références</h2>\n<p>Les sources principales restent disponibles dans le bloc de références de la fiche.</p>\n",
+  "bodyHtml": "<h2 id=\"probleme\">Problème</h2>\n<p>Beaucoup de pages de connaissances sont bien écrites mais mal adressables. Un humain peut les lire, mais une machine ne peut pas facilement dire à quelle entité la page décrit, quelle organisation l’a publiée, quelles sources elle cite, quels concepts elle se rapporte, ou si la page est la version canonique.</p>\n<p>Le problème devient pire lorsqu’un site compte sur le rendu côté navigateur. Un drawler, une archive ou un aperçu de lien peut recevoir un shell de page générique au lieu de l’entité réelle. La page peut sembler complète dans un navigateur moderne, mais le HTML initial peut encore être faible: titre générique, URL canonique manquante, aucune donnée structurée, aucun identifiant stable et aucun corps de contenu.</p>\n<p>Linked Data offre une discipline pratique pour résoudre ce problème. Il demande à un éditeur d’identifier les choses, de publier des descriptions utiles et de les relier à d’autres choses. Les pages de connaissances publiques n’ont pas besoin de devenir des applications sémantiques-web complexes, mais elles devraient emprunter les habitudes durables de Linked Data.</p>\n<h2 id=\"presentation\">Présentation</h2>\n<p>Une page de connaissance publique a deux publics. Le premier est humain : les lecteurs ont besoin d’explication, de contexte, d’exemples, de sources et de lectures connexes. La deuxième est la machine: moteurs de recherche, systèmes de recherche d’intelligence artificielle, archives, liens et outils internes ont besoin de métadonnées et d’identificateurs stables.</p>\n<p>Une bonne publication sert les deux publics de la même source. La page humaine doit être complète et la représentation de la machine doit décrire la même entité. JSON-LD est utile car il permet à un site statique d’intégrer des données structurées dans un format déjà familier pour l’outillage web.</p>\n<h2 id=\"contexte\">Contexte</h2>\n<p>La note Cool URIs de W3C explique une distinction sémantique-web clé : l’URL d’un document web et l’identité de la chose décrite par ce document peuvent être différentes. Cela compte pour une plateforme de connaissances. <code>/knowledge/concepts/provenance/</code> est une page lisible. <code>/id/concept/provenance/</code> peut être une voie d’identification pour le concept lui-même. Les deux peuvent pointer vers le même enregistrement conceptuel, mais ils servent différents modes d’accès.</p>\n<p>JSON-LD 1.1 définit une sérialisation basée sur JSON pour les données liées. Pour un site statique, JSON-LD peut être généré au moment de la construction à partir du même enregistrement typé utilisé pour rendre HTML.</p>\n<h2 id=\"historique\">Historique</h2>\n<p>Le Web a commencé par un système de liaison de documents. Les hyperliens facilitent la navigation, mais ils ne précisent pas en eux-mêmes quel type de relation existait. Le travail sur le Web sémantique a introduit un modèle plus fort de ressources, d’identificateurs et d’énoncés. Les données liées ont ensuite traduit ce modèle en pratiques d’édition Web.</p>\n<p>Les données structurées pour la recherche ont adopté certains des mêmes principes sous une forme pragmatique. <a href=\"http://Schema.org\">Schema.org</a> n’exige pas qu’un éditeur expose un ensemble de données RDF complet. Il permet à une page de s’identifier comme un Article, DefinedTerm, Organisation, SoftwareApplication ou CreativeWork, puis de fournir des propriétés telles que auteur, éditeur, datePublié, citation et environ.</p>\n<h2 id=\"concepts-fondamentaux\">Concepts fondamentaux</h2>\n<p>Le premier concept est l’identité canonique. Une page devrait avoir une URL publique préférée. Les itinéraires alternatifs et les chemins anciens peuvent rediriger ou identifier, mais l’URL canonique est la cible de citation publique.</p>\n<p>Le deuxième concept est l’identité de l’entité. La chose décrite devrait avoir un ID stable indépendant de la mise en page. Electronic Artefacts utilise des ID comme <code>ea:concept:linked-data</code> et des routes d’identification sous <code>/id/</code>.</p>\n<p>Le troisième concept est celui des données structurées. Les enregistrements JSON-LD devraient exposer le nom, la description, la date, l’éditeur, l’entité principale et les relations avec le sujet.</p>\n<p>Le quatrième concept est la correspondance visible. Les données structurées ne doivent pas dire des choses que la page visible ne supporte pas. Les machines devraient recevoir une version compressée de la même vérité éditoriale que les humains voient.</p>\n<h2 id=\"architecture\">Architecture</h2>\n<p>L’architecture des pages de connaissances publiques devrait comprendre :</p>\n<ul>\n<li>les enregistrements sources avec la front matter typé;</li>\n<li>généré des pages HTML sur des routes canoniques;</li>\n<li>les routes d’identification générés;</li>\n<li>les fichiers JSON-LD générés;</li>\n<li>les plans de site générés;</li>\n<li>les documents de recherche générés;</li>\n<li>les déclarations de relation interne typées;</li>\n<li>validation qui rejette les ID cassés et les triples dupliqués.</li>\n</ul>\n<p>Cela permet à un seul enregistrement de contenu de prendre en charge la lecture humaine, l’indexation de la recherche, la navigation graphique, la citation et l’exportation d’archives.</p>\n<h2 id=\"mise-en-uvre\">Mise en œuvre</h2>\n<p>Dans Electronic Artefacts, le chemin d’implémentation est :</p>\n<ol>\n<li>Auteur d’un enregistrement dans <code>content/</code>. 2. Valider son type et les champs requis. 3. Rendre le corps comme HTML. 4. Générer des métadonnées à partir de l’enregistrement. 5. Générer JSON-LD de la même entité. 6. Écrire un itinéraire canonique et un route d’identification. 7. Ajouter l’enregistrement aux documents de recherche et aux exportations de graphiques. 8. Ajouter des relations qui relient l’enregistrement à d’autres entités.</li>\n</ol>\n<p>Cette mise en œuvre est intentionnellement conservatrice. Il évite d’utiliser JavaScript comme source de métadonnées canoniques. Les scripts du navigateur peuvent améliorer l’interaction, mais le HTML généré initialement devrait déjà être suffisant pour l’indexation et la citation.</p>\n<h2 id=\"applications-pratiques\">Applications pratiques</h2>\n<p>Une page de concept comme <a href=\"/fr/knowledge/concepts/linked-data/\">Données liées</a> peut exposer une définition aux lecteurs, un terme JSON-LD défini aux machines, et des relations avec les pages RDF, JSON-LD et des graphes de connaissances.</p>\n<p>Une publication telle que cet article peut s’identifier comme un article, définir ses sujets, citer des sources et un lien avec des articles connexes.</p>\n<p>Une page de programme comme <a href=\"/fr/programs/vaste/\">VASTE</a> peut exposer le contexte des logiciels et de la recherche tout en reliant à Graph Runtime et Runtime Theory.</p>\n<h2 id=\"outils\">Outils</h2>\n<p>Les outils utiles incluent JSON-LD, <a href=\"http://Schema.org\">Schema.org</a>, sitemaps, liens canoniques, métadonnées générées, validation statique, enregistrements de contenu Markdown, relation YAML et génération d’index de recherche.</p>\n<h2 id=\"elements-de-preuve\">Éléments de preuve</h2>\n<p>La construction d’Electronic Artefacts génère des pages, JSON-LD, des documents de recherche et des voisinages du graphe à partir d’enregistrements sources typés. Cela signifie que le site public n’est plus seulement une interface visuelle. Il s’agit d’un ensemble de ressources de connaissances citatives.</p>\n<h2 id=\"liste-de-controle-editoriale\">Liste de contrôle éditoriale</h2>\n<p>Une page de connaissances publiques devrait passer une simple liste de vérification éditoriale avant la publication.</p>\n<p>Premièrement, la page devrait répondre à une question durable. Une page sur les données liées ne devrait pas seulement annoncer qu’un site utilise JSON-LD. Il devrait expliquer pourquoi l’identité stable compte, comment la page se rapporte à l’entité qu’elle décrit et ce qu’un lecteur peut faire ensuite.</p>\n<p>Deuxièmement, la page devrait exposer son identité. Le titre, l’URL canonique, l’identifiant de l’entité, la date de publication et la citation doivent tous pointer vers le même enregistrement. Si un lecteur copie l’URL ou un rampeur extrait le JSON-LD, les deux devraient résoudre le même objet intellectuel.</p>\n<p>Troisièmement, la page doit contenir des liens visibles qui reflètent le graphique. Si les données structurées indiquent qu’un article porte sur le RDF et le JSON-LD, l’article devrait également être lié à ces enregistrements technologiques dans les panneaux de corps ou de relations lisibles par l’homme.</p>\n<p>Quatrièmement, la page devrait nommer ses sources. Les données structurées peuvent identifier l’article, mais les sources expliquent pourquoi l’article mérite confiance. Ceci est particulièrement important pour des sujets tels que les normes, l’histoire culturelle et la préservation.</p>\n<p>Cinquièmement, la page devrait soutenir la poursuite. Lecture suggérée et articles connexes transformer une seule page d’atterrissage en un chemin à travers la bibliothèque plus large.</p>\n<h2 id=\"erreurs-courantes\">Erreurs courantes</h2>\n<p>L’erreur la plus courante est de confondre le marquage SEO avec l’architecture du savoir. Une page peut contenir des données structurées valides et être un objet de connaissance faible. Une autre erreur est de créer trop de pages peu profondes autour des synonymes. Les données liées, le RDF, le JSON-LD et le graphe de connaissances sont liés, mais ils ne devraient pas être regroupés en une seule page ou reproduits dans quatre articles presque identiques.</p>\n<p>Une troisième erreur est de traiter JSON-LD comme une décoration invisible. Si les données structurées ne sont jointes que pour les moteurs de recherche et ne sont pas reflétées dans le modèle éditorial visible, elles deviennent fragiles. Le Knowledge Hub devrait faire les mêmes revendications aux humains et aux machines.</p>\n<h2 id=\"incidences-des-electronic-artefacts\">Incidences des Electronic Artefacts</h2>\n<p>Pour Electronic Artefacts, Linked Data est une discipline d’édition. Il aide le site à relier le travail artistique, les systèmes logiciels, les publications de recherche et les archives sans les forcer dans un modèle visuel unique. Il donne également aux futurs systèmes d’IA une meilleure chance de récupérer le bon enregistrement plutôt que de deviner à partir de texte de page générique.</p>\n<p>Cela compte le plus à mesure que le corpus grandit. Un site de dix pages peut compter sur la mémoire humaine. Un site avec mille dossiers de connaissances a besoin d’identité persistante, de validation des relations et d’index générés.</p>\n<h2 id=\"concepts-connexes\">Concepts connexes</h2>\n<p>Lire <a href=\"/fr/knowledge/concepts/linked-data/\">Données liées</a>, <a href=\"/fr/knowledge/concepts/entity-identity/\">Identité de l’entité</a>, <a href=\"/fr/knowledge/technologies/rdf/\">RDF</a>, <a href=\"/fr/knowledge/technologies/json-ld/\">JSON-LD</a> et <a href=\"/fr/knowledge/concepts/knowledge-graph/\">Graphe de connaissances</a>.</p>\n<h2 id=\"lecture-suggeree\">Lecture suggérée</h2>\n<p>Commencez par W3C Cool URIs, JSON-LD 1.1 et <a href=\"http://Schema.org\">Schema.org</a> Article. Inspectez ensuite le JSON-LD généré pour une page de publication électronique Artefacts.</p>\n<h2 id=\"articles-connexes\">Articles connexes</h2>\n<p>Continuer avec <a href=\"/fr/publications/knowledge-graphs-for-cultural-infrastructure/\">Graphes de connaissances pour l’infrastructure culturelle</a> et <a href=\"/fr/publications/contextual-execution-and-graph-runtimes/\">Exécution contextuelle et exécution graphique</a>.</p>\n<h2 id=\"glossaire\">Glossaire</h2>\n<p>URL canonique : URL publique préférée pour une page.</p>\n<p>Itinéraire d’identification : itinéraire utilisé pour identifier l’entité décrite par une page.</p>\n<p>JSON-LD: Sérialisation JSON pour les données liées.</p>\n<p>Données structurées: métadonnées lisibles par machine intégrées dans une page ou liées à une page.</p>\n<h2 id=\"limites\">Limites</h2>\n<p>Les données liées ne garantissent pas l’autorité. Une page trompeuse peut publier JSON-LD parfait. La force vient de l’alignement : contenu précis, identité stable, sources visibles, métadonnées structurées et confiance honnête.</p>\n<p>La génération statique a aussi des compromis. Les mises à jour en temps réel nécessitent une reconstruction. Pour un centre de connaissances éditoriales, c’est généralement acceptable parce que l’examen et la stabilité comptent plus que la mutation instantanée.</p>\n<h2 id=\"references\">Références</h2>\n<ul>\n<li>W3C. Cool URIs pour le Web sémantique. 2008.</li>\n<li>W3C. JSON-LD 1.1. 2020.</li>\n<li><a href=\"http://xn--Schma-dsa.org\">Schéma.org</a>. Article.</li>\n<li>Electronic Artefacts. Registre des routes, générateur JSON-LD et documents de recherche.</li>\n</ul>\n",
   "headings": [
     "Problème",
+    "Présentation",
+    "Contexte",
+    "Historique",
+    "Concepts fondamentaux",
     "Architecture",
     "Mise en œuvre",
+    "Applications pratiques",
+    "Outils",
     "Éléments de preuve",
+    "Liste de contrôle éditoriale",
+    "Erreurs courantes",
+    "Incidences des Electronic Artefacts",
+    "Concepts connexes",
+    "Lecture suggérée",
+    "Articles connexes",
+    "Glossaire",
     "Limites",
     "Références"
   ],
@@ -105,6 +118,26 @@
       "level": 2,
       "title": "Problème",
       "id": "probleme"
+    },
+    {
+      "level": 2,
+      "title": "Présentation",
+      "id": "presentation"
+    },
+    {
+      "level": 2,
+      "title": "Contexte",
+      "id": "contexte"
+    },
+    {
+      "level": 2,
+      "title": "Historique",
+      "id": "historique"
+    },
+    {
+      "level": 2,
+      "title": "Concepts fondamentaux",
+      "id": "concepts-fondamentaux"
     },
     {
       "level": 2,
@@ -118,8 +151,53 @@
     },
     {
       "level": 2,
+      "title": "Applications pratiques",
+      "id": "applications-pratiques"
+    },
+    {
+      "level": 2,
+      "title": "Outils",
+      "id": "outils"
+    },
+    {
+      "level": 2,
       "title": "Éléments de preuve",
       "id": "elements-de-preuve"
+    },
+    {
+      "level": 2,
+      "title": "Liste de contrôle éditoriale",
+      "id": "liste-de-controle-editoriale"
+    },
+    {
+      "level": 2,
+      "title": "Erreurs courantes",
+      "id": "erreurs-courantes"
+    },
+    {
+      "level": 2,
+      "title": "Incidences des Electronic Artefacts",
+      "id": "incidences-des-electronic-artefacts"
+    },
+    {
+      "level": 2,
+      "title": "Concepts connexes",
+      "id": "concepts-connexes"
+    },
+    {
+      "level": 2,
+      "title": "Lecture suggérée",
+      "id": "lecture-suggeree"
+    },
+    {
+      "level": 2,
+      "title": "Articles connexes",
+      "id": "articles-connexes"
+    },
+    {
+      "level": 2,
+      "title": "Glossaire",
+      "id": "glossaire"
     },
     {
       "level": 2,

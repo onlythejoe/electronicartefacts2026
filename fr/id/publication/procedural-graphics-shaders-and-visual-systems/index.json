@@ -16,10 +16,10 @@
   "maturity": "research",
   "confidence": "published",
   "version": {
-    "version": "1.0.0",
+    "version": "1.1.0",
     "createdAt": "2026-06-24",
     "publishedAt": "2026-06-25",
-    "modifiedAt": "2026-06-25"
+    "modifiedAt": "2026-07-12"
   },
   "authors": [
     {
@@ -78,14 +78,32 @@
     }
   ],
   "citation": {
-    "preferred": "Electronic Artefacts. \"Graphisme procédural, shaders et systèmes visuels\". Article technique, version 1.0.0, 2026."
+    "preferred": "Electronic Artefacts. \"Graphisme procédural, shaders et systèmes visuels\". Article technique, version 1.1.0, 2026."
   },
-  "bodyHtml": "<h2 id=\"probleme\">Problème</h2>\n<p>Cette synthèse clarifie le sujet « Graphisme procédural, shaders et systèmes visuels » pour aider le lecteur à comprendre le vocabulaire, les enjeux pratiques et les liens avec les autres pages du graphe Electronic Artefacts.</p>\n<h2 id=\"architecture\">Architecture</h2>\n<p>Le sujet est présenté à travers ses composants, ses relations avec les concepts voisins et les décisions de conception qu’il implique.</p>\n<h2 id=\"mise-en-uvre\">Mise en œuvre</h2>\n<p>La page met l’accent sur les usages concrets, les contraintes de gouvernance et les conditions d’application dans un système réel.</p>\n<h2 id=\"elements-de-preuve\">Éléments de preuve</h2>\n<p>Les sources, relations et éléments de contexte restent associés à la fiche pour distinguer synthèse éditoriale, preuve et référence.</p>\n<h2 id=\"limites\">Limites</h2>\n<p>Les limites décrivent ce que la fiche ne couvre pas encore, les sources disponibles et les conditions d’usage documentées.</p>\n<h2 id=\"references\">Références</h2>\n<p>Les sources principales restent disponibles dans le bloc de références de la fiche.</p>\n",
+  "bodyHtml": "<h2 id=\"probleme\">Problème</h2>\n<p>Les visuels numériques sont souvent discutés comme des images terminées : une affiche, une interface, un cadre, un rendu, un immobile d’un système de mouvement. Les graphiques procéduraux déplacent l’attention de la sortie vers le système. La question importante devient : quelles règles, paramètres et transformations ont produit cette image ?</p>\n<p>Le problème est que les visuels procéduraux peuvent devenir génériques. Les champs de bruit, les particules, les gradients et les effets shader sont partout. Sans discipline conceptuelle, le travail procédural devient un style reconnaissable plutôt qu’une façon de penser.</p>\n<p>Electronic Artefacts a besoin de graphiques procéduraux comme sujet de connaissance parce que de nombreux systèmes visuels futurs seront générés, paramétrés, animés ou liés à l’état audio et graphique.</p>\n<h2 id=\"presentation\">Présentation</h2>\n<p>Les graphiques procéduraux sont générés à partir de règles. Les règles peuvent être mathématiques, physiques, typographiques, aléatoires, fondées sur des données ou interactives. Un shader peut calculer la couleur de chaque pixel. Un système de particules peut simuler le mouvement. Un système de mise en page peut organiser des éléments à partir de données graphiques.</p>\n<p>L’idée clé est que la forme visuelle n’est pas dessinée une fois. Il émerge d’un système qui peut être modifié, répété, mis en version et étudié.</p>\n<h2 id=\"contexte\">Contexte</h2>\n<p>Le codage créatif a rendu les graphismes procéduraux accessibles aux artistes et aux concepteurs. WebGL a apporté des systèmes visuels accélérés GPU dans les navigateurs. Les communautés de Shader ont rendu l’expérimentation au niveau du pixel instructible. Les plates-formes d’art génératif ont rendu les sorties procédurales collectables et publiques.</p>\n<p>Mais les graphiques procéduraux ont de la valeur au-delà du spectacle. Ils peuvent expliquer les données, exprimer l’identité, créer des archives interactives, visualiser l’audio et révéler les modèles structurels.</p>\n<h2 id=\"historique\">Historique</h2>\n<p>La fabrication d’images procédurales fait partie de l’histoire des graphismes informatiques, de l’art algorithmique, de la simulation, de la culture démoscène, des moteurs de jeu, des systèmes de conception et de la visualisation scientifique. Les premiers artistes informatiques utilisaient des comploteurs et des systèmes fondés sur des règles. Plus tard, les GPU et les shaders ont rendu la forme procédurale en temps réel largement disponible.</p>\n<p>Le navigateur a changé la distribution. Un visuel de procédure pourrait être visionné, inspecté et interagi avec une URL publique.</p>\n<h2 id=\"concepts-fondamentaux\">Concepts fondamentaux</h2>\n<p>Règle : une procédure qui détermine la sortie visuelle.</p>\n<p>Paramètre : une valeur qui modifie le comportement de la règle.</p>\n<p>Shader: code qui fonctionne sur le GPU pour calculer les résultats visuels.</p>\n<p>Bruit : variation de pseudo-randome structurée.</p>\n<p>Simulation : un système qui évolue selon les règles dans le temps.</p>\n<p>Grammaire visuelle : l’ensemble de contraintes qui rend les sorties liées.</p>\n<h2 id=\"architecture\">Architecture</h2>\n<p>Un système visuel de procédure a habituellement entrée, couche de règles, état, rendu et évaluation. L’entrée peut inclure le temps, l’audio, la position du pointeur, les données, les graines aléatoires ou les entités graphiques. La couche de règle transforme l’entrée. La mémoire des magasins publics. Le rendu convertit l’état en pixels. L’évaluation décide si la sortie communique, effectue et appartient.</p>\n<p>Pour Electronic Artefacts, les données graphiques peuvent être entrées. Un article, un projet ou un concept pourrait influencer la mise en page, la couleur, le mouvement ou le son. Le système visuel doit rester documenté pour que la relation soit compréhensible.</p>\n<h2 id=\"mise-en-uvre\">Mise en œuvre</h2>\n<p>La mise en œuvre peut commencer par un simple dessin de toile, puis se déplacer dans WebGL et les shaders lorsque la performance ou le contrôle des pixels est important. Le système doit exposer des paramètres significatifs: densité, échelle, rythme, relation de couleur, source d’entrée, comportement de graine et de temps.</p>\n<p>La préservation nécessite l’enregistrement du code, de la version, des plages de paramètres, des semences, des hypothèses du navigateur et des sorties exportées. Un travail de procédure qui ne peut pas être reconstruit peut encore être documenté, mais il perd une partie de son sens.</p>\n<h2 id=\"applications-pratiques\">Applications pratiques</h2>\n<p>Les graphiques procéduraux supportent les systèmes d’identité generative, les essais interactifs, les visualisateurs audio, les cartes d’archives, les œuvres basées sur la simulation, les mises en page de publication et les systèmes de mouvement axés sur les données.</p>\n<p>Pour les palimpsestes, les graphiques de procédure pourraient exprimer les couches, les résidus et la transformation. Pour ORETH, ils pouvaient visualiser les fonctionnalités audio. Pour VASTE, ils pourraient représenter l’état d’exécution du graphique.</p>\n<h2 id=\"outils\">Outils</h2>\n<p>Les outils utiles comprennent Canvas, SVG, WebGL, GLSL, Three.js, p5.js, Processing, shader editors, outils d’exportation d’images, profileurs de performance, contrôle de version et tests de régression screenshot.</p>\n<h2 id=\"elements-de-preuve\">Éléments de preuve</h2>\n<p>Khronos décrit WebGL comme une technologie de navigateur pour les graphiques de bas niveau basé sur OpenGL ES. Dans la pratique, cela rend les pipelines shader et GPU accessibles aux pages Web publiques.</p>\n<p>Electronic Artefacts a déjà des concepts qui soutiennent le travail procédural : <a href=\"/fr/knowledge/concepts/generative-system/\">Système générateur</a>, <a href=\"/fr/knowledge/concepts/creative-coding/\">Codage créatif</a> et <a href=\"/fr/knowledge/concepts/motion-design/\">Conception de mouvement</a>.</p>\n<h2 id=\"methode-editoriale\">Méthode éditoriale</h2>\n<p>Un article graphique de procédure devrait montrer la logique du système. Il devrait expliquer les entrées, les paramètres et les contraintes avant de présenter la sortie visuelle comme si elle était évidente.</p>\n<p>Les captures d’écran doivent être traitées comme une preuve d’un runtime, pas comme l’ensemble du travail.</p>\n<h2 id=\"erreurs-courantes\">Erreurs courantes</h2>\n<p>La première erreur est de traiter le hasard comme une profondeur. Le hasard a besoin de contraintes.</p>\n<p>La deuxième erreur est d’ignorer la performance. Un beau système qui échoue sur les appareils ordinaires est une infrastructure publique faible.</p>\n<p>La troisième erreur est de laisser le lecteur incapable de connecter le comportement visuel au concept.</p>\n<h2 id=\"incidences-des-electronic-artefacts\">Incidences des Electronic Artefacts</h2>\n<p>Les graphismes procéduraux peuvent aider Electronic Artefacts à construire un langage de recherche visuelle reconnaissable sans compter uniquement sur la marque statique. Le site peut développer des systèmes visuels qui répondent aux connaissances, au son et aux archives.</p>\n<p>Le centre de connaissances devrait documenter ces systèmes afin que les futurs lecteurs puissent comprendre leur signification technique et culturelle.</p>\n<h2 id=\"role-du-graphe-de-connaissances\">Rôle du graphe de connaissances</h2>\n<p>Les graphiques de procédure peuvent être représentés comme plus que des images. Un système visuel peut être alimenté par WebGL, mettre en œuvre un système génératif, utiliser des données graphiques, répondre à l’audio et produire des objets. Ce sont des relations distinctes. Un graphique peut les préserver d’une manière qu’une capture d’écran statique ne peut pas.</p>\n<p>Cela compte pour Electronic Artefacts parce que les futurs systèmes visuels peuvent connecter VASTE, ORETH et Palimpsests. Un shader pourrait visualiser les résidus audio. Une présentation générique pourrait répondre aux entités du savoir. Un système de mouvement pourrait exprimer des couches d’archives. Chaque produit devrait rester attaché à son système de règles et à son contexte.</p>\n<h2 id=\"criteres-d-evaluation\">Critères d’évaluation</h2>\n<p>Un système visuel procédural devrait être évalué par la cohérence, la performance, la pertinence et la préservation. Les paramètres créent-ils des variations significatives? La grammaire visuelle convient-elle au sujet? Est-ce qu’il fonctionne de manière fiable sur les appareils cibles? Le système peut-il être reconstruit ou au moins documenté plus tard?</p>\n<p>Elle devrait également être évaluée de manière critique. La complexité procédurale n’est pas la même que la profondeur culturelle. Une règle simple qui clarifie un concept peut être plus forte qu’un shader complexe sans rapport avec le contenu.</p>\n<h2 id=\"norme-editoriale\">Norme éditoriale</h2>\n<p>Lors de la publication de graphiques de procédure, inclure la logique de règle dans la prose. Nommez les entrées, paramètres et conditions de sortie. Si des captures d’écran sont affichées, identifiez-les comme des états capturés. Si le système est interactif, expliquez ce qui change l’interaction. Si le système utilise le caractère aléatoire, indiquez si les sorties sont répétables.</p>\n<p>Cela rend les systèmes visuels lisibles comme objets de recherche, pas seulement les surfaces esthétiques.</p>\n<h2 id=\"voie-de-lecture\">Voie de lecture</h2>\n<p>Les graphismes procéduraux attirent les lecteurs par curiosité visuelle, mais l’article ne doit pas s’arrêter aux effets. Il devrait passer de la sortie visible à la logique du système : règles, paramètres, shaders, conditions d’exécution et conservation. Un lecteur qui arrive pour WebGL peut quitter les systèmes générateurs de compréhension. Un designer qui arrive pour l’inspiration visuelle peut partir avec un modèle plus fort de grammaire visuelle.</p>\n<p>Ce sujet devrait pointer vers <a href=\"/fr/knowledge/concepts/motion-design/\">Conception de mouvement</a>, <a href=\"/fr/knowledge/concepts/creative-coding/\">Codage créatif</a>, <a href=\"/fr/knowledge/technologies/webgl/\">WebGL</a> et les futurs articles spécifiques au shader. C’est aussi un pont naturel vers les Palimpsestes, où les couches et la transformation peuvent devenir une méthode visuelle plutôt que de la décoration.</p>\n<p>Il peut également soutenir VASTE en rendant visible la structure graphique. Une interface procédurale peut montrer la densité, la relation, la confiance ou le changement au fil du temps, pourvu que la cartographie soit expliquée. Le but n’est pas de transformer chaque ensemble de données en spectacle. Le point est de donner une structure abstraite un comportement visuel lisible.</p>\n<p>Pour les lecteurs, cela crée un chemin de la curiosité visuelle à l’alphabétisation des systèmes. Ils peuvent commencer par des shaders et se terminer par une meilleure compréhension des graphiques, audio et archives.</p>\n<h2 id=\"travaux-futurs\">Travaux futurs</h2>\n<p>Les futurs articles devraient couvrir les ombres, le bruit, les particules, la typographie générative, la visualisation graphique, les visuels audioréactifs, la préservation WebGL et la conception de paramètres.</p>\n<h2 id=\"concepts-connexes\">Concepts connexes</h2>\n<p>Lire <a href=\"/fr/knowledge/concepts/procedural-graphics/\">Graphiques de procédure</a>, <a href=\"/fr/knowledge/technologies/webgl/\">WebGL</a>, <a href=\"/fr/knowledge/concepts/generative-system/\">Système générateur</a>, <a href=\"/fr/knowledge/concepts/creative-coding/\">Codage créatif</a> et <a href=\"/fr/knowledge/concepts/motion-design/\">Conception de mouvement</a>.</p>\n<h2 id=\"lecture-suggeree\">Lecture suggérée</h2>\n<p>Commencez par de petits exemples de shader, puis étudiez les fondamentaux WebGL et les croquis de codage créatifs qui exposent clairement les paramètres.</p>\n<h2 id=\"articles-connexes\">Articles connexes</h2>\n<p>Continuer avec <a href=\"/fr/publications/creative-coding-pedagogy-from-logo-to-p5js/\">Pédagogie de codage créatif de Logo à p5.js</a> et <a href=\"/fr/publications/motion-design-time-and-interface-semantics/\">Conception de mouvement, temps et sémantique d’interface</a>.</p>\n<h2 id=\"glossaire\">Glossaire</h2>\n<p>Shader: programme GPU utilisé pour le rendu.</p>\n<p>Semence: valeur utilisée pour initialiser la variation répétable.</p>\n<p>Bruit: signal pseudo-aléatoire avec structure.</p>\n<p>Grammaire visuelle : contraintes qui rendent les sorties cohérentes.</p>\n<h2 id=\"limites\">Limites</h2>\n<p>Les graphiques de procédure peuvent être difficiles à préserver car ils dépendent des conditions d’exécution. Les versions du navigateur, les différences GPU et les changements de bibliothèque comptent.</p>\n<p>Ils peuvent également devenir sténographie esthétique. Un article durable devrait relier le système au but, au matériel et au contexte.</p>\n<h2 id=\"references\">Références</h2>\n<ul>\n<li>Groupe Khronos. Le WebGL.</li>\n<li>Electronic Artefacts. Système génératif, codage créatif et enregistrements Motion Design.</li>\n</ul>\n",
   "headings": [
     "Problème",
+    "Présentation",
+    "Contexte",
+    "Historique",
+    "Concepts fondamentaux",
     "Architecture",
     "Mise en œuvre",
+    "Applications pratiques",
+    "Outils",
     "Éléments de preuve",
+    "Méthode éditoriale",
+    "Erreurs courantes",
+    "Incidences des Electronic Artefacts",
+    "Rôle du graphe de connaissances",
+    "Critères d'évaluation",
+    "Norme éditoriale",
+    "Voie de lecture",
+    "Travaux futurs",
+    "Concepts connexes",
+    "Lecture suggérée",
+    "Articles connexes",
+    "Glossaire",
     "Limites",
     "Références"
   ],
@@ -94,6 +112,26 @@
       "level": 2,
       "title": "Problème",
       "id": "probleme"
+    },
+    {
+      "level": 2,
+      "title": "Présentation",
+      "id": "presentation"
+    },
+    {
+      "level": 2,
+      "title": "Contexte",
+      "id": "contexte"
+    },
+    {
+      "level": 2,
+      "title": "Historique",
+      "id": "historique"
+    },
+    {
+      "level": 2,
+      "title": "Concepts fondamentaux",
+      "id": "concepts-fondamentaux"
     },
     {
       "level": 2,
@@ -107,8 +145,78 @@
     },
     {
       "level": 2,
+      "title": "Applications pratiques",
+      "id": "applications-pratiques"
+    },
+    {
+      "level": 2,
+      "title": "Outils",
+      "id": "outils"
+    },
+    {
+      "level": 2,
       "title": "Éléments de preuve",
       "id": "elements-de-preuve"
+    },
+    {
+      "level": 2,
+      "title": "Méthode éditoriale",
+      "id": "methode-editoriale"
+    },
+    {
+      "level": 2,
+      "title": "Erreurs courantes",
+      "id": "erreurs-courantes"
+    },
+    {
+      "level": 2,
+      "title": "Incidences des Electronic Artefacts",
+      "id": "incidences-des-electronic-artefacts"
+    },
+    {
+      "level": 2,
+      "title": "Rôle du graphe de connaissances",
+      "id": "role-du-graphe-de-connaissances"
+    },
+    {
+      "level": 2,
+      "title": "Critères d'évaluation",
+      "id": "criteres-d-evaluation"
+    },
+    {
+      "level": 2,
+      "title": "Norme éditoriale",
+      "id": "norme-editoriale"
+    },
+    {
+      "level": 2,
+      "title": "Voie de lecture",
+      "id": "voie-de-lecture"
+    },
+    {
+      "level": 2,
+      "title": "Travaux futurs",
+      "id": "travaux-futurs"
+    },
+    {
+      "level": 2,
+      "title": "Concepts connexes",
+      "id": "concepts-connexes"
+    },
+    {
+      "level": 2,
+      "title": "Lecture suggérée",
+      "id": "lecture-suggeree"
+    },
+    {
+      "level": 2,
+      "title": "Articles connexes",
+      "id": "articles-connexes"
+    },
+    {
+      "level": 2,
+      "title": "Glossaire",
+      "id": "glossaire"
     },
     {
       "level": 2,

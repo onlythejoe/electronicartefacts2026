@@ -16,10 +16,10 @@
   "maturity": "research",
   "confidence": "published",
   "version": {
-    "version": "1.0.0",
+    "version": "1.1.0",
     "createdAt": "2026-06-24",
     "publishedAt": "2026-06-25",
-    "modifiedAt": "2026-06-25"
+    "modifiedAt": "2026-07-12"
   },
   "authors": [
     {
@@ -81,14 +81,32 @@
     }
   ],
   "citation": {
-    "preferred": "Electronic Artefacts. \"L’open source comme infrastructure culturelle\". Article technique, version 1.0.0, 2026."
+    "preferred": "Electronic Artefacts. \"L’open source comme infrastructure culturelle\". Article technique, version 1.1.0, 2026."
   },
-  "bodyHtml": "<h2 id=\"probleme\">Problème</h2>\n<p>Cette synthèse clarifie le sujet « L’open source comme infrastructure culturelle » pour aider le lecteur à comprendre le vocabulaire, les enjeux pratiques et les liens avec les autres pages du graphe Electronic Artefacts.</p>\n<h2 id=\"architecture\">Architecture</h2>\n<p>Le sujet est présenté à travers ses composants, ses relations avec les concepts voisins et les décisions de conception qu’il implique.</p>\n<h2 id=\"mise-en-uvre\">Mise en œuvre</h2>\n<p>La page met l’accent sur les usages concrets, les contraintes de gouvernance et les conditions d’application dans un système réel.</p>\n<h2 id=\"elements-de-preuve\">Éléments de preuve</h2>\n<p>Les sources, relations et éléments de contexte restent associés à la fiche pour distinguer synthèse éditoriale, preuve et référence.</p>\n<h2 id=\"limites\">Limites</h2>\n<p>Les limites décrivent ce que la fiche ne couvre pas encore, les sources disponibles et les conditions d’usage documentées.</p>\n<h2 id=\"references\">Références</h2>\n<p>Les sources principales restent disponibles dans le bloc de références de la fiche.</p>\n",
+  "bodyHtml": "<h2 id=\"probleme\">Problème</h2>\n<p>Open source est souvent décrit comme un modèle de distribution de logiciels. C’est exact mais incomplet. Open source détermine également qui peut apprendre du code, adapter les outils, préserver les logiciels, les systèmes d’audit, construire des environnements créatifs et soutenir les communautés techniques.</p>\n<p>Le problème est que les discussions culturelles des logiciels se concentrent souvent sur les produits finis tout en ignorant l’infrastructure partagée ci-dessous. Des bibliothèques de codage créatives, des normes de navigateur, des outils de construction, des cadres audio, des polices, des gestionnaires de paquets et des systèmes de documentation façonnent ce que les artistes et les chercheurs peuvent essayer.</p>\n<p>Electronic Artefacts doit discuter de l’open source comme infrastructure culturelle : une couche matérielle qui soutient la pratique créative, l’édition du savoir et l’accès à long terme.</p>\n<h2 id=\"presentation\">Présentation</h2>\n<p>Open source signifie plus que le code source public. La définition de source ouverte décrit les termes de distribution qui permettent la redistribution, l’accès au code source, les oeuvres dérivées et la non-discrimination. Ces conditions légales sont importantes parce qu’elles permettent aux communautés d’étudier, de modifier et de diffuser des logiciels.</p>\n<p>Mais la valeur culturelle de l’open source dépend davantage que de la licence. Un projet peut être juridiquement ouvert et pratiquement inutilisable. Documentation, maintenance, gouvernance, exemples, tests et normes communautaires décident si le code devient une infrastructure.</p>\n<h2 id=\"contexte\">Contexte</h2>\n<p>La technologie créative dépend fortement de l’open source. Le traitement, p5.js, l’outillage WebGL, les bibliothèques audio, les cadres de visualisation et les systèmes de sites statiques élargissent ce que les créateurs individuels peuvent construire. Ils créent également des chaînes de dépendance. Une petite bibliothèque peut faire partie de milliers d’œuvres d’art, de sites Web ou d’outils de recherche.</p>\n<p>Open source appartient donc à un centre de connaissances sur l’art, les logiciels et la recherche. Ce n’est pas un sujet secondaire. Il explique comment les cultures techniques se reproduisent.</p>\n<h2 id=\"historique\">Historique</h2>\n<p>L’histoire de l’open source comprend le logiciel libre, le partage de code académique, la culture Unix, l’éthique du hacker, la collaboration Internet, la gouvernance communautaire et l’adoption institutionnelle. Le terme “open source” a aidé à clarifier la licence et la compatibilité commerciale, tandis que le logiciel libre a conservé un vocabulaire éthique plus fort autour des libertés des utilisateurs.</p>\n<p>Pour le codage créatif, open source a rendu les environnements de programmation enseignés. Les apprenants pourraient inspecter des exemples, copier des croquis, modifier les paramètres et partager les modifications. Cette boucle pédagogique a aidé le calcul à devenir un moyen créatif.</p>\n<h2 id=\"concepts-fondamentaux\">Concepts fondamentaux</h2>\n<p>Licence : les termes juridiques qui permettent ou limitent l’utilisation.</p>\n<p>Code source: le formulaire préféré pour comprendre et modifier les logiciels.</p>\n<p>Fourche : un chemin de développement divergent d’une base de code existante.</p>\n<p>Mainteneur : personne ou groupe responsable de l’examen, des rejets et de l’intendance.</p>\n<p>Dépendance : un composant logiciel utilisé par un autre projet.</p>\n<p>Communes : ressources partagées régies à des fins collectives.</p>\n<h2 id=\"architecture\">Architecture</h2>\n<p>L’infrastructure open source a des couches. La couche juridique définit les droits. La couche technique comprend les dépôts, les problèmes, les constructions, les essais et les rejets. La couche sociale comprend les responsables, les contributeurs, les normes et la gouvernance. La couche de documentation enseigne l’utilisation et préserve le contexte. La couche d’archives conserve le code, les versions et les dépendances récupérables.</p>\n<p>Quand une couche échoue, le projet s’affaiblit. Une bibliothèque avec licence permissive mais aucune documentation ne peut être inaccessible aux nouveaux utilisateurs. Un outil populaire avec des mainteneurs épuisés peut devenir une infrastructure fragile.</p>\n<h2 id=\"mise-en-uvre\">Mise en œuvre</h2>\n<p>Pour Electronic Artefacts, les sources ouvertes doivent être documentées avec précision. Si un projet utilise une bibliothèque open-source, l’article devrait nommer la bibliothèque, le rôle, la licence lorsque cela est pertinent et les implications de conservation. Si un outil est inspiré par la pratique open-source, l’article devrait séparer l’inspiration du statut réel de licence.</p>\n<p>Les outils internes peuvent également adopter des habitudes open-source sans être immédiatement publics : des fichiers README clairs, des versions, des fichiers de changement, des exemples, des notes d’émission et des enregistrements de dépendance.</p>\n<h2 id=\"applications-pratiques\">Applications pratiques</h2>\n<p>Open source soutient l’éducation parce que les apprenants peuvent inspecter les systèmes de travail.</p>\n<p>Il supporte la conservation parce que le code peut être archivé, reconstruit et étudié.</p>\n<p>Il soutient la pratique créative parce que les artistes peuvent adapter des outils au lieu d’attendre des vendeurs fermés.</p>\n<p>Il appuie les systèmes de connaissances parce que les schémas, les validateurs et les générateurs peuvent être revus et étendus.</p>\n<h2 id=\"outils\">Outils</h2>\n<p>Les outils utiles comprennent Git, dépôts publics, gestionnaires de paquets, trackers d’émission, changelogs, version sémantique, fichiers de licence, scanners de dépendance, générateurs de documentation et constructions de sites statiques.</p>\n<h2 id=\"elements-de-preuve\">Éléments de preuve</h2>\n<p>Le Hub de Connaissances d’Artefacts Électronique bénéficie lui-même de modèles techniques ouverts : Markdown structuré, pages générées, JSON-LD, validation graphique et sortie statique. Même lorsqu’un dépôt est spécifique à un projet, la culture des systèmes inspectables façonne le travail.</p>\n<p>Le codage créatif fournit également des preuves publiques. Le traitement et p5.js montrent comment des outils ouverts peuvent créer des communautés d’apprentissage autour du code, de l’art et de l’éducation.</p>\n<h2 id=\"methode-editoriale\">Méthode éditoriale</h2>\n<p>Un bon article open-source devrait faire la distinction entre licence, gouvernance et effet culturel. Il ne devrait pas appeler quelque chose open source simplement parce qu’il est visible en ligne. Il devrait demander qui peut l’utiliser, qui peut le modifier, qui le maintient et ce qui se passe si les dépendances disparaissent.</p>\n<h2 id=\"erreurs-courantes\">Erreurs courantes</h2>\n<p>La première erreur est d’assimiler code public à open source.</p>\n<p>La deuxième erreur est la romantisation de l’entretien non rémunéré. L’infrastructure a des coûts salariaux.</p>\n<p>La troisième erreur est d’ignorer les licences jusqu’à leur publication. Les droits devraient être documentés tôt.</p>\n<h2 id=\"incidences-des-electronic-artefacts\">Incidences des Electronic Artefacts</h2>\n<p>Electronic Artefacts peut traiter open source comme faisant partie de son environnement intellectuel. VASTE, ORETH et futurs outils devraient documenter les dépendances et les modèles réutilisables le cas échéant.</p>\n<p>Le Knowledge Hub peut également publier des articles éducatifs qui aident les lecteurs à comprendre non seulement ce qu’un outil fait, mais quelles conditions culturelles ont rendu possible.</p>\n<h2 id=\"role-du-graphe-de-connaissances\">Rôle du graphe de connaissances</h2>\n<p>La source ouverte devient plus lisible lorsqu’elle est représentée en relation. Un outil peut dépendre d’une bibliothèque. Un projet peut utiliser une technologie. Une publication peut documenter un concept. Un programme peut être maintenu par une organisation. Ces relations rendent l’infrastructure visible.</p>\n<p>Pour Electronic Artefacts, qui importe parce que les dépendances logicielles ne sont pas seulement construire des détails. Elles font partie des conditions culturelles et techniques du travail. Si un futur projet utilise Web Audio, WebGL, p5.js ou une bibliothèque de graphiques, le Knowledge Hub devrait être en mesure d’expliquer la relation entre le projet, l’outil et l’écosystème open source.</p>\n<h2 id=\"criteres-d-evaluation\">Critères d’évaluation</h2>\n<p>Un dossier open-source devrait répondre plus que « le code est-il public ? » Elle devrait se demander si la licence autorise l’utilisation et la modification, si la source est la forme de changement préférée, si les rejets sont identifiables, si les responsables sont visibles, si la documentation existe et si les dépendances peuvent être préservées.</p>\n<p>Les projets créatifs devraient également demander quel type d’apprentissage le logiciel permet. Une bibliothèque lisible et bien documentée peut devenir une pédagogie. Une bibliothèque puissante mais opaque peut encore être utile, mais elle joue un rôle culturel différent.</p>\n<h2 id=\"angle-de-conservation\">Angle de conservation</h2>\n<p>Open source aide à la préservation seulement lorsque le code et son contexte survivent. Un dépôt sans versions, exemples, licences ou enregistrements de dépendance peut être difficile à reconstruire. Une archive culturelle responsable devrait donc préserver non seulement le code source, mais aussi la documentation, les contraintes de version, les exemples d’entrées, les sorties et les instructions de construction.</p>\n<h2 id=\"voie-de-lecture\">Voie de lecture</h2>\n<p>Un visiteur de recherche peut arriver à travers une question pratique sur open source, le codage créatif ou la culture logicielle. L’article devrait déplacer ce lecteur de licence vers l’infrastructure: qui maintient le code, ce qui en dépend, comment il enseigne et comment il peut être préservé. De là, le chemin naturel mène à <a href=\"/fr/knowledge/concepts/creative-coding/\">Codage créatif</a>, <a href=\"/fr/knowledge/concepts/digital-preservation/\">Préservation numérique</a> et les archives logicielles futures.</p>\n<h2 id=\"travaux-futurs\">Travaux futurs</h2>\n<p>Les futures entrées devraient couvrir la préservation des logiciels, le codage créatif des bibliothèques, les archives de dépendance, les licences pour les projets culturels, les modèles de maintenance et la gouvernance open-source.</p>\n<h2 id=\"concepts-connexes\">Concepts connexes</h2>\n<p>Lire <a href=\"/fr/knowledge/concepts/open-source/\">Source ouverte</a>, <a href=\"/fr/knowledge/concepts/creative-coding/\">Codage créatif</a>, <a href=\"/fr/knowledge/concepts/internet-culture/\">Culture Internet</a> et <a href=\"/fr/knowledge/concepts/digital-preservation/\">Préservation numérique</a>.</p>\n<h2 id=\"lecture-suggeree\">Lecture suggérée</h2>\n<p>Commencez par la définition Open Source, puis étudiez des outils créatifs concrets tels que Processing et p5.js à travers des exemples et des histoires de dépôt.</p>\n<h2 id=\"articles-connexes\">Articles connexes</h2>\n<p>Continuer avec <a href=\"/fr/publications/creative-coding-pedagogy-from-logo-to-p5js/\">Pédagogie de codage créatif de Logo à p5.js</a> et <a href=\"/fr/publications/digital-preservation-and-living-archives/\">Conservation numérique et archives vivantes</a>.</p>\n<h2 id=\"glossaire\">Glossaire</h2>\n<p>Open source: logiciel distribué selon des modalités qui permettent l’utilisation, l’étude, la modification et la redistribution.</p>\n<p>Mainteneur : responsable d’un dépôt de projet et du processus de publication.</p>\n<p>Fourche : un chemin de développement séparé dérivé d’une base de code existante.</p>\n<p>Dépendance : logiciel requis par un autre système.</p>\n<h2 id=\"limites\">Limites</h2>\n<p>Open source ne résout pas tous les problèmes. Elle peut reproduire les inégalités, brûler les responsables et créer des chaînes de dépendance fragiles.</p>\n<p>Elle ne remplace pas non plus le jugement rédactionnel. Un système de connaissances publiques devrait documenter l’utilisation des sources ouvertes sans transformer chaque article en texte de plaidoyer logiciel.</p>\n<h2 id=\"references\">Références</h2>\n<ul>\n<li>Initiative sur les sources ouvertes. La définition de source ouverte.</li>\n<li>Fondation pour le traitement. p5.js.</li>\n<li>Electronic Artefacts. Codage créatif et enregistrements de préservation numérique.</li>\n</ul>\n",
   "headings": [
     "Problème",
+    "Présentation",
+    "Contexte",
+    "Historique",
+    "Concepts fondamentaux",
     "Architecture",
     "Mise en œuvre",
+    "Applications pratiques",
+    "Outils",
     "Éléments de preuve",
+    "Méthode éditoriale",
+    "Erreurs courantes",
+    "Incidences des Electronic Artefacts",
+    "Rôle du graphe de connaissances",
+    "Critères d'évaluation",
+    "Angle de conservation",
+    "Voie de lecture",
+    "Travaux futurs",
+    "Concepts connexes",
+    "Lecture suggérée",
+    "Articles connexes",
+    "Glossaire",
     "Limites",
     "Références"
   ],
@@ -97,6 +115,26 @@
       "level": 2,
       "title": "Problème",
       "id": "probleme"
+    },
+    {
+      "level": 2,
+      "title": "Présentation",
+      "id": "presentation"
+    },
+    {
+      "level": 2,
+      "title": "Contexte",
+      "id": "contexte"
+    },
+    {
+      "level": 2,
+      "title": "Historique",
+      "id": "historique"
+    },
+    {
+      "level": 2,
+      "title": "Concepts fondamentaux",
+      "id": "concepts-fondamentaux"
     },
     {
       "level": 2,
@@ -110,8 +148,78 @@
     },
     {
       "level": 2,
+      "title": "Applications pratiques",
+      "id": "applications-pratiques"
+    },
+    {
+      "level": 2,
+      "title": "Outils",
+      "id": "outils"
+    },
+    {
+      "level": 2,
       "title": "Éléments de preuve",
       "id": "elements-de-preuve"
+    },
+    {
+      "level": 2,
+      "title": "Méthode éditoriale",
+      "id": "methode-editoriale"
+    },
+    {
+      "level": 2,
+      "title": "Erreurs courantes",
+      "id": "erreurs-courantes"
+    },
+    {
+      "level": 2,
+      "title": "Incidences des Electronic Artefacts",
+      "id": "incidences-des-electronic-artefacts"
+    },
+    {
+      "level": 2,
+      "title": "Rôle du graphe de connaissances",
+      "id": "role-du-graphe-de-connaissances"
+    },
+    {
+      "level": 2,
+      "title": "Critères d'évaluation",
+      "id": "criteres-d-evaluation"
+    },
+    {
+      "level": 2,
+      "title": "Angle de conservation",
+      "id": "angle-de-conservation"
+    },
+    {
+      "level": 2,
+      "title": "Voie de lecture",
+      "id": "voie-de-lecture"
+    },
+    {
+      "level": 2,
+      "title": "Travaux futurs",
+      "id": "travaux-futurs"
+    },
+    {
+      "level": 2,
+      "title": "Concepts connexes",
+      "id": "concepts-connexes"
+    },
+    {
+      "level": 2,
+      "title": "Lecture suggérée",
+      "id": "lecture-suggeree"
+    },
+    {
+      "level": 2,
+      "title": "Articles connexes",
+      "id": "articles-connexes"
+    },
+    {
+      "level": 2,
+      "title": "Glossaire",
+      "id": "glossaire"
     },
     {
       "level": 2,

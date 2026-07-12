@@ -16,10 +16,10 @@
   "maturity": "research",
   "confidence": "published",
   "version": {
-    "version": "1.0.0",
+    "version": "1.1.0",
     "createdAt": "2026-06-24",
     "publishedAt": "2026-06-25",
-    "modifiedAt": "2026-06-25"
+    "modifiedAt": "2026-07-12"
   },
   "authors": [
     {
@@ -100,15 +100,38 @@
     }
   ],
   "citation": {
-    "preferred": "Electronic Artefacts. \"Moteurs d'exécution et systèmes d'exploitation de domaine\". Article technique, version 1.0.0, 2026."
+    "preferred": "Electronic Artefacts. \"Moteurs d'exécution et systèmes d'exploitation de domaine\". Article technique, version 1.1.0, 2026."
   },
-  "bodyHtml": "<h2 id=\"probleme\">Problème</h2>\n<p>Cette synthèse clarifie le sujet « Moteurs d’exécution et systèmes d’exploitation de domaine » pour aider le lecteur à comprendre le vocabulaire, les enjeux pratiques et les liens avec les autres pages du graphe Electronic Artefacts.</p>\n<h2 id=\"architecture\">Architecture</h2>\n<p>Le sujet est présenté à travers ses composants, ses relations avec les concepts voisins et les décisions de conception qu’il implique.</p>\n<h2 id=\"mise-en-uvre\">Mise en œuvre</h2>\n<p>La page met l’accent sur les usages concrets, les contraintes de gouvernance et les conditions d’application dans un système réel.</p>\n<h2 id=\"elements-de-preuve\">Éléments de preuve</h2>\n<p>Les sources, relations et éléments de contexte restent associés à la fiche pour distinguer synthèse éditoriale, preuve et référence.</p>\n<h2 id=\"limites\">Limites</h2>\n<p>Les limites décrivent ce que la fiche ne couvre pas encore, les sources disponibles et les conditions d’usage documentées.</p>\n<h2 id=\"references\">Références</h2>\n<p>Les sources principales restent disponibles dans le bloc de références de la fiche.</p>\n",
+  "bodyHtml": "<h2 id=\"probleme\">Problème</h2>\n<p>Les écosystèmes de produits reconstruisent à plusieurs reprises l’identité, les permissions, les workflows et les enregistrements de domaines dans des applications distinctes. La duplication fragmente le sens et rend coûteuses les intégrations, la gouvernance et l’évolution à long terme.</p>\n<h2 id=\"presentation\">Présentation</h2>\n<p>Les produits logiciels implémentent à plusieurs reprises les mêmes fondations : utilisateurs, organisations, permissions, enregistrements, workflows, événements, recherche et intégrations. À mesure qu’un écosystème grandit, des applications distinctes dupliquent ces structures et leur attribuent des significations légèrement différentes. Des fragments d’identité. Les règles divergent. Les données deviennent difficiles à déplacer.</p>\n<p>Un moteur d’exécution centralise une partie du modèle d’exécution. Il fournit des mécanismes stables grâce auxquels les objets de domaine sont chargés, validés, modifiés et observés. Un système d’exploitation de domaine va plus loin : il coordonne les identités partagées, les entités, les permissions, les événements et les points d’extension sur plusieurs applications dans un seul champ.</p>\n<p>L’expression système d’exploitation est métaphorique ici. Un OS commercial ou culturel ne remplace pas un noyau matériel, un programmeur de processus ou un pilote de périphérique. Il ressemble à un système d’exploitation parce qu’il fournit des services communs et des contrats que de nombreuses applications peuvent réutiliser.</p>\n<p>La métaphore n’est utile que lorsque la couche partagée est réelle. Un tableau de bord avec plusieurs éléments de menu n’est pas un système d’exploitation. Un OS de domaine crédible a une identité stable, des capacités régies, des règles exécutables, un état observable et des interfaces composables.</p>\n<h2 id=\"ce-que-fait-un-runtime\">Ce que fait un runtime</h2>\n<p>Un temps d’exécution est l’environnement dans lequel les abstractions d’un programme deviennent actives. Les runtimes linguistiques gèrent la mémoire, les types, l’horaire ou la collecte des ordures. Les moteurs de jeu exécutent des scènes, physique, entrée et rendu. Les moteurs de flux de travail exécutent des transitions d’état. Les runtimes du navigateur coordonnent les documents, les scripts, le réseautage et le rendu.</p>\n<p>Un domaine runtime exécute la sémantique du domaine. Il sait quelles entités existent, quelles opérations sont valides, quel acteur peut les exécuter, comment les changements d’état sont enregistrés et quelles projections ou événements suivent.</p>\n<p>L’exécution ne doit pas contenir toutes les fonctionnalités du produit. Il fournit le minimum de mécanismes partagés dont les applications doivent se comporter de manière cohérente.</p>\n<p>VASTE utilise l’idée d’un runtime graphique : les entités adressables et les relations typées participent au calcul contextuel.</p>\n<h2 id=\"systeme-d-exploitation\">Système d’exploitation</h2>\n<p>Les systèmes d’exploitation à usage général exposent les abstractions telles que les processus, les fichiers, les utilisateurs, les permissions et les appareils. Les applications s’appuient sur ces abstractions sans réimplanter le contrôle matériel.</p>\n<p>Un système d’exploitation de domaine expose des personnes, des organisations, des artefacts, des workflows, des droits, des événements ou d’autres primitifs de domaine. Les applications construisent des interfaces spécialisées sans inventer des systèmes d’identité et de permission incompatibles.</p>\n<p>L’analogie a des limites. Les systèmes de domaine sont souvent distribués, basés sur le Web et régis par des organisations plutôt qu’une seule machine. Leurs ressources peuvent être culturelles ou juridiques plutôt que computationnelles.</p>\n<p>Utilisez l’analogie pour poser des questions utiles: quels sont les primitifs partagés, quelles capacités sont accordées, comment l’état est isolé, et comment les applications interagissent? Ne l’utilisez pas comme marque pour une plateforme surdimensionnée.</p>\n<h2 id=\"domaine-primitifs\">Domaine primitifs</h2>\n<p>Les primitifs sont les plus petits concepts stables que l’on considère comme fondamentaux. Pour VASTE, il s’agit d’entités, de relations typées, d’identité, de contexte, d’événements et de projections.</p>\n<p>Les Primitives devraient être moins nombreuses et plus durables que les fonctionnalités d’application. Un <code>Person</code> ou <code>Artefact</code> peut prendre en charge de nombreux produits. Un <code>HomepageHeroCard</code> est une préoccupation d’interface et ne devrait pas entrer dans le domaine central.</p>\n<p>L’exécution nécessite des identifiants et des schémas stables. Les applications peuvent ajouter des champs locaux, mais le sens partagé doit rester cohérent.</p>\n<p>Le design primitif est un travail d’ontologie. Elle exige une portée et des exclusions explicites. Si tout devient primitif, l’exécution devient rigide et impossible à comprendre.</p>\n<h2 id=\"architecture\">Architecture</h2>\n<p>Un domaine OS contient l’identité canonique, les schémas d’entité et de relation, les transitions d’état, l’évaluation des capacités, les contrats d’événements, les constructeurs de projection et les interfaces d’extension sur les adaptateurs de stockage et de transport remplaçables.</p>\n<h2 id=\"identite\">Identité</h2>\n<p>L’identité répond que deux références indiquent la même chose. Un domaine OS a besoin d’identificateurs qui survivent au renommage, aux changements de route et aux limites d’application.</p>\n<p>L’identité de l’utilisateur n’est qu’une couche. Les organisations, les projets, les publications, les outils et les objets culturels ont également besoin d’une identité canonique. Les identificateurs externes peuvent s’inscrire dans les dossiers internes sans devenir la seule autorité.</p>\n<p>La résolution de l’identité devrait préserver l’incertitude. Deux noms semblables peuvent ne pas représenter une seule personne. Les dossiers de fusion sont une opération corrélative avec des exigences de provenance et de renversement.</p>\n<p>Les ID électroniques Artefacts créent cette fondation. VASTE peut l’étendre au comportement d’exécution et à l’intégration externe.</p>\n<h2 id=\"etat\">État</h2>\n<p>L’état comprend les valeurs actuelles, l’état du cycle de vie et l’historique pertinent. Une publication peut être rédigée, révisée, publiée, archivée ou remplacée. Une relation peut être proposée, validée ou rejetée.</p>\n<p>L’exécution fait appliquer des transitions valides. Une application ne doit pas contourner les règles en modifiant directement un champ de statut.</p>\n<p>L’état peut être stocké sous forme d’enregistrements courants, d’historique des événements ou des deux. Le choix dépend des besoins d’audit et de reconstruction. Les contrats stables ne devraient pas exposer inutilement la mise en oeuvre du stockage.</p>\n<p>La version protège le travail simultané. Les opérations peuvent nécessiter une version d’entité attendue et rejeter les mises à jour statiques.</p>\n<h2 id=\"autorisations-et-capacites\">Autorisations et capacités</h2>\n<p>Un OS de domaine a besoin d’un modèle de capacité. Les rôles seuls sont souvent insuffisants. Un éditeur peut publier une collection mais seulement commenter une autre. Un modèle peut lire des sources privées pour une tâche mais ne peut pas les exposer publiquement.</p>\n<p>Les capacités peuvent être évaluées à partir de l’identité de l’acteur, de l’entité cible, de la relation, de l’état, de l’organisation et de l’opération demandée. C’est une exécution contextuelle.</p>\n<p>L’exécution doit renvoyer les décisions explicables. “Dénié” est moins utile que “la publication est spéculative et nécessite un examen canonique.” Les registres des décisions appuient la vérification sans exposer de détails stratégiques sensibles.</p>\n<p>Les capacités devraient être accordées de façon étroite et révoquées de façon prévisible. Les modules d’extension ne devraient pas hériter de l’autorité mondiale par défaut.</p>\n<h2 id=\"evenements\">Événements</h2>\n<p>Les événements rendent les changements d’état observables. Lorsqu’une entité est publiée, les consommateurs peuvent mettre à jour la recherche, régénérer les pages publiques et aviser les abonnés.</p>\n<p>L’exécution définit la sémantique des événements de domaine; la technologie du transport les porte. Une enveloppe CloudEvents ou Redis Stream peut normaliser la livraison, mais le type d’événement et la signification de l’entité appartiennent au domaine.</p>\n<p>Les événements devraient inclure la causalité et la corrélation. Quelle commande a produit le changement ? Quel acteur ou processus l’a initié? Quelle est la version de l’entité?</p>\n<p>Les politiques de rejouage et de double emploi doivent être explicites. Les effets indésirables publics ne doivent pas se répéter aveuglément.</p>\n<h2 id=\"projections\">Projections</h2>\n<p>Différentes applications nécessitent des vues différentes de l’état partagé. Un site Web public n’a besoin que de champs publiés. Un éditeur a besoin d’un état de flux de travail et de sources. Un service de recherche nécessite un texte normalisé. Une exportation d’archives nécessite des métadonnées de préservation.</p>\n<p>Ce sont des projections. L’exécution fournit des enregistrements canoniques et des événements; les constructeurs de projection créent des modèles de lecture optimisés.</p>\n<p>Les projections publiques et privées imposent également des limites de divulgation. Les champs restreints ne doivent pas être filtrés uniquement dans le navigateur. La projection devrait les exclure avant publication.</p>\n<p>Electronic Artefacts génère des HTML statiques, JSON-LD, des index de recherche et des quartiers de graphiques à partir d’un modèle de contenu. Il s’agit déjà d’un petit modèle de gestion de domaine.</p>\n<h2 id=\"architecture-d-extension\">Architecture d’extension</h2>\n<p>Un domaine OS devient utile lorsque des extensions peuvent ajouter des capacités sans modifier le noyau pour chaque produit. Les extensions peuvent définir de nouveaux types d’entités, processeurs, vues, consommateurs d’événements ou adaptateurs d’intégration.</p>\n<p>Les contrats d’extension nécessitent des limites de version et de permission. Un plugin doit déclarer quels événements il consomme et quelles opérations il peut effectuer. Elle ne devrait pas atteindre des tables internes arbitraires.</p>\n<p>La compatibilité n’est pas une personnalisation illimitée. Des points d’extension stables sont choisis délibérément. Trop d’hameçons gèlent la mise en œuvre interne et augmentent le risque pour la sécurité.</p>\n<p>L’exécution devrait soutenir l’absence gracieuse. La suppression d’une seule extension ne devrait pas corrompre des entités non liées.</p>\n<h2 id=\"coques-d-application\">Coques d’application</h2>\n<p>Les applications fournissent des interfaces et des flux de travail pour des publics spécifiques. Une bibliothèque de recherche, un tableau de bord créateur et un marché culturel peuvent partager un runtime tout en présentant une navigation et une langue différentes.</p>\n<p>Le shell d’application ne devrait pas dupliquer les règles de domaine. Il demande à l’exécution si une action est valide et rend le résultat. L’état d’interface locale reste local.</p>\n<p>Cette séparation permet à un site public de rester statique et rapide alors que les surfaces administratives sont dynamiques. Il prend également en charge plusieurs clients sans permissions incompatibles.</p>\n<p>L’exécution n’est pas l’expérience utilisateur. Les bons produits nécessitent toujours une conception spécifique au domaine.</p>\n<h2 id=\"orchestration\">Orchestration</h2>\n<p>Un domaine OS coordonne souvent des processus en plusieurs étapes : examen, publication, contribution, paiement ou analyse. Certains flux sont des flux déterministes; d’autres comprennent des décisions d’ordre agentique ou humain.</p>\n<p>Le temps d’exécution doit représenter l’état et les limites, tandis que les moteurs de workflow spécialisés peuvent gérer les minuteurs, les relevés et la compensation. Évitez de reconstruire une plate-forme de workflow complète à moins que les exigences du domaine ne le justifient.</p>\n<p>Les événements relient les étapes. Les commandes demandent des transitions. Les tâches humaines restent des entités visibles avec la propriété et les délais.</p>\n<p>Les agents de l’IA peuvent participer en tant qu’acteurs délimités. Leurs propositions, outils et autorisations devraient être représentés comme d’autres opérations d’exécution.</p>\n<h2 id=\"integration-des-graphes-de-connaissances\">Intégration des graphes de connaissances</h2>\n<p>Les graphes de connaissances décrivent les entités et les relations. Un graphe runtime rend une partie de cette structure exécutable. Une relation peut influencer la permission, le routage, l’assemblage contextuel ou la propagation d’événements.</p>\n<p>Par exemple, une relation contributeur peut permettre d’éditer un projet. Les relations de sujet d’une publication peuvent déterminer quelles pages concept reconstruire. Un chemin de provenance peut déterminer si un artefact peut être libéré.</p>\n<p>L’exécution doit utiliser des prédicats explicites et une traversée limitée. Il serait dangereux d’autoriser la proximité arbitraire du graphique avec l’autorité d’octroi.</p>\n<p>Le graphique améliore également l’explication. Une décision peut citer les relations qui y ont contribué.</p>\n<h2 id=\"simulation\">Simulation</h2>\n<p>Les moteurs d’exécution peuvent supporter des simulations en représentant des agents, des environnements, des transitions d’état et des règles. Un modèle graphique est utile lorsque des entités simulées interagissent par des relations changeantes.</p>\n<p>La simulation devrait rester séparée de l’état canonique réel. Les résultats expérimentaux peuvent être stockés comme artefacts dérivés avec leur version de modèle et leurs hypothèses.</p>\n<p>L’intérêt de VASTE pour la construction modulaire mondiale est lié à cette capacité. Un runtime peut exécuter des mondes fictifs, analytiques ou opérationnels en utilisant des primitifs partagés.</p>\n<p>Le défi est la performance. Les modèles sémantiques généraux peuvent avoir besoin de représentations compilées ou spécialisées pour des simulations de grande envergure.</p>\n<h2 id=\"domaine-os-pour-la-culture\">Domaine OS pour la culture</h2>\n<p>V6 illustre un domaine culturel OS. Les primitifs communs comprennent des personnes, des organisations, des techniques, des matériaux, des outils, des lieux, des documents et des œuvres. Les relations décrivent l’enseignement, la fabrication, l’utilisation, la préservation et la participation.</p>\n<p>Les applications peuvent comprendre des pages de connaissances publiques, des flux de travail de contribution, des tableaux de bord institutionnels, des voies d’apprentissage et des services économiques. Ils partagent l’identité et la provenance plutôt que de fonctionner comme bases de données isolées.</p>\n<p>Le marché devient une projection des connaissances culturelles, et non le modèle central. Cela préserve la valeur intellectuelle même lorsque les services commerciaux changent.</p>\n<p>Les systèmes culturels ont également besoin d’un langage pluriel et de revendications contestées. L’exécution doit éviter de transformer une ontologie en autorité incontestable.</p>\n<h2 id=\"domain-os-pour-un-studio-creatif\">Domain OS pour un studio créatif</h2>\n<p>Un studio peut connecter projets, clients, artefacts, références, droits, outils, publications et archives. Il peut suivre comment la recherche devient la production et comment la production rend les connaissances.</p>\n<p>Electronic Artefacts ont déjà ces classes d’entités. Une future surface interne pourrait coordonner le statut éditorial, la provenance du projet, la préservation des médias et la publication publique.</p>\n<p>ORETH pourrait apporter des capacités d’analyse audio. Les palimpsestes pourraient utiliser des structures de publication composées. Le centre de connaissances pourrait recevoir des concepts et des méthodes validés.</p>\n<p>L’objectif n’est pas de centraliser chaque décision créative. Il empêche les connaissances structurelles de disparaître entre les dossiers et les applications.</p>\n<h2 id=\"construction-contre-achat\">Construction contre achat</h2>\n<p>Les plateformes générales fournissent l’authentification, les bases de données, les files d’attente et la gestion du contenu. Un domaine devrait réutiliser l’infrastructure des produits de base dans la mesure du possible.</p>\n<p>Construire la couche qui représente une sémantique de domaine distinctive ou crée une valeur stratégique durable. Acheter ou adopter des composants bien pris en charge pour le transport, le stockage et l’observabilité génériques.</p>\n<p>La valeur exclusive de VASTE devrait résider dans l’exécution graphique, le contexte et l’architecture de domaine, et non dans la réinventation de la cryptographie ou des bases de données.</p>\n<p>Les normes ouvertes améliorent la portabilité. JSON-LD, RDF mappages, CloudEvents et URLs stables peuvent exposer les données sans exiger des systèmes externes d’adopter le temps d’exécution interne.</p>\n<h2 id=\"gouvernance\">Gouvernance</h2>\n<p>Un domaine OS est une infrastructure institutionnelle. Les changements aux primitifs et les permissions affectent chaque application. La gouvernance nécessite des processus de proposition, d’examen, de migration et de déprécation.</p>\n<p>La propriété du schéma devrait être claire. Les auteurs d’extension ont besoin d’une politique de compatibilité. L’examen de la sécurité devrait porter sur les capacités et les projections de données.</p>\n<p>Les changements de vocabulaire public nécessitent une attention éditoriale. Un identifiant ne doit pas être réutilisé pour une signification différente. Les termes obsolètes devraient conserver des cartes.</p>\n<p>La gouvernance peut rester légère dans une petite organisation, mais les décisions doivent être consignées.</p>\n<h2 id=\"modes-de-defaillance\">Modes de défaillance</h2>\n<p>Le premier échec est le maximisme de la plate-forme. L’exécution tente de posséder toutes les fonctionnalités avant que les besoins partagés ne soient prouvés.</p>\n<p>La seconde est la métaphore sans substance. Un tableau de bord est appelé un OS malgré l’absence de contrats d’exécution stables.</p>\n<p>Le troisième est le goulot d’étranglement central. Chaque équipe doit attendre les changements fondamentaux.</p>\n<p>Le quatrième est l’abstraction. Les applications contournent l’exécution et modifient le stockage directement.</p>\n<p>Le cinquième est l’insécurité de prolongation. Les greffons sont largement accessibles.</p>\n<p>La sixième est la rigidité de l’ontologie. L’évolution du domaine devient plus difficile parce que les primitifs sont traités comme permanents.</p>\n<p>Le septième manque de voies de sortie. Les données ne peuvent pas être exportées sans la plateforme.</p>\n<h2 id=\"voie-de-mise-en-uvre\">Voie de mise en œuvre</h2>\n<p>Commencez par une identité d’entité stable et un petit vocabulaire prédicat. Ajouter la validation et les opérations en version. État canonique séparé des projections. Introduire des événements pour des changements significatifs. Autorisations de modèle par des capacités explicites.</p>\n<p>Construisez une application qui prouve la réutilisation, puis une deuxième application qui consomme les mêmes primitifs. La deuxième utilisation est le vrai test d’une plateforme.</p>\n<p>Ajouter les contrats d’extension uniquement lorsque des besoins d’intégration répétés existent. Mesurer les coûts opérationnels. Préserver les exportations et les surfaces publiques statiques.</p>\n<p>Pour VASTE, V6 et le Knowledge Hub fournissent des éléments de preuve complémentaires : durée d’exécution, produit appliqué et projection des connaissances publiques.</p>\n<h2 id=\"mise-en-uvre\">Mise en œuvre</h2>\n<p>Commencez par des ID stables, des opérations validées et un magasin d’état canonique. Générer des projections publiques et privées, publier des événements de domaine, puis prouver la réutilisation sur une deuxième application avant d’ajouter un large plugin ou une infrastructure de workflow.</p>\n<h2 id=\"elements-de-preuve\">Éléments de preuve</h2>\n<p>Les normes générales du système d’exploitation démontrent la valeur des interfaces partagées stables, la conception axée sur le domaine fournit un langage limité et des concepts de modèles, et CloudEvents fournit une enveloppe d’événement interopérable pour les extensions distribuées.</p>\n<h2 id=\"limites\">Limites</h2>\n<p>La métaphore du système d’exploitation peut encourager le maximisme de la plateforme. Un domaine devrait rester plus petit que les applications qu’il supporte, offrir des chemins d’exportation et éviter de centraliser des capacités non liées.</p>\n<h2 id=\"concepts-connexes\">Concepts connexes</h2>\n<p>Lire <a href=\"/fr/knowledge/concepts/domain-operating-system/\">Système d’exploitation du domaine</a>, <a href=\"/fr/knowledge/concepts/graph-runtime/\">Runtime de graphe</a>, <a href=\"/fr/knowledge/concepts/contextual-execution/\">Exécution contextuelle</a> et <a href=\"/fr/knowledge/concepts/event-driven-architecture/\">Architecture d’événements</a>.</p>\n<h2 id=\"programmes-et-projets-connexes\">Programmes et projets connexes</h2>\n<p>Voir <a href=\"/fr/programs/vaste/\">VASTE</a> et <a href=\"/fr/projects/v6/\">V6</a>.</p>\n<h2 id=\"glossaire\">Glossaire</h2>\n<p>Moteur d’exécution : un environnement qui exécute un ensemble d’abstractions et de règles.</p>\n<p>Système d’exploitation de domaine: une couche d’information et d’exécution partagée pour un champ.</p>\n<p>Primitif : entité ou opération fondamentale exposée par l’exécution.</p>\n<p>Capacité : une autorisation spécifique pour effectuer une opération.</p>\n<p>Projection : une vue dérivée de l’état canonique.</p>\n<p>Point d’extension : une interface gouvernée par laquelle les modules ajoutent un comportement.</p>\n<h2 id=\"references\">Références</h2>\n<ul>\n<li>Le Groupe ouvert et l’IEEE. POSIX.1-2024.</li>\n<li>Evans, Eric, référence de conception de domaine.</li>\n<li>Nuage Native Computing Foundation. Les événements nuageux.</li>\n</ul>\n",
   "headings": [
     "Problème",
+    "Présentation",
+    "Ce que fait un runtime",
+    "Système d'exploitation",
+    "Domaine primitifs",
     "Architecture",
+    "Identité",
+    "État",
+    "Autorisations et capacités",
+    "Événements",
+    "Projections",
+    "Architecture d'extension",
+    "Coques d'application",
+    "Orchestration",
+    "Intégration des graphes de connaissances",
+    "Simulation",
+    "Domaine OS pour la culture",
+    "Domain OS pour un studio créatif",
+    "Construction contre achat",
+    "Gouvernance",
+    "Modes de défaillance",
+    "Voie de mise en œuvre",
     "Mise en œuvre",
     "Éléments de preuve",
     "Limites",
+    "Concepts connexes",
+    "Programmes et projets connexes",
+    "Glossaire",
     "Références"
   ],
   "headingItems": [
@@ -119,8 +142,108 @@
     },
     {
       "level": 2,
+      "title": "Présentation",
+      "id": "presentation"
+    },
+    {
+      "level": 2,
+      "title": "Ce que fait un runtime",
+      "id": "ce-que-fait-un-runtime"
+    },
+    {
+      "level": 2,
+      "title": "Système d'exploitation",
+      "id": "systeme-d-exploitation"
+    },
+    {
+      "level": 2,
+      "title": "Domaine primitifs",
+      "id": "domaine-primitifs"
+    },
+    {
+      "level": 2,
       "title": "Architecture",
       "id": "architecture"
+    },
+    {
+      "level": 2,
+      "title": "Identité",
+      "id": "identite"
+    },
+    {
+      "level": 2,
+      "title": "État",
+      "id": "etat"
+    },
+    {
+      "level": 2,
+      "title": "Autorisations et capacités",
+      "id": "autorisations-et-capacites"
+    },
+    {
+      "level": 2,
+      "title": "Événements",
+      "id": "evenements"
+    },
+    {
+      "level": 2,
+      "title": "Projections",
+      "id": "projections"
+    },
+    {
+      "level": 2,
+      "title": "Architecture d'extension",
+      "id": "architecture-d-extension"
+    },
+    {
+      "level": 2,
+      "title": "Coques d'application",
+      "id": "coques-d-application"
+    },
+    {
+      "level": 2,
+      "title": "Orchestration",
+      "id": "orchestration"
+    },
+    {
+      "level": 2,
+      "title": "Intégration des graphes de connaissances",
+      "id": "integration-des-graphes-de-connaissances"
+    },
+    {
+      "level": 2,
+      "title": "Simulation",
+      "id": "simulation"
+    },
+    {
+      "level": 2,
+      "title": "Domaine OS pour la culture",
+      "id": "domaine-os-pour-la-culture"
+    },
+    {
+      "level": 2,
+      "title": "Domain OS pour un studio créatif",
+      "id": "domain-os-pour-un-studio-creatif"
+    },
+    {
+      "level": 2,
+      "title": "Construction contre achat",
+      "id": "construction-contre-achat"
+    },
+    {
+      "level": 2,
+      "title": "Gouvernance",
+      "id": "gouvernance"
+    },
+    {
+      "level": 2,
+      "title": "Modes de défaillance",
+      "id": "modes-de-defaillance"
+    },
+    {
+      "level": 2,
+      "title": "Voie de mise en œuvre",
+      "id": "voie-de-mise-en-uvre"
     },
     {
       "level": 2,
@@ -136,6 +259,21 @@
       "level": 2,
       "title": "Limites",
       "id": "limites"
+    },
+    {
+      "level": 2,
+      "title": "Concepts connexes",
+      "id": "concepts-connexes"
+    },
+    {
+      "level": 2,
+      "title": "Programmes et projets connexes",
+      "id": "programmes-et-projets-connexes"
+    },
+    {
+      "level": 2,
+      "title": "Glossaire",
+      "id": "glossaire"
     },
     {
       "level": 2,

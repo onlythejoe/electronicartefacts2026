@@ -16,10 +16,10 @@
   "maturity": "research",
   "confidence": "published",
   "version": {
-    "version": "1.0.0",
+    "version": "1.1.0",
     "createdAt": "2026-06-23",
     "publishedAt": "2026-06-25",
-    "modifiedAt": "2026-06-25"
+    "modifiedAt": "2026-07-12"
   },
   "authors": [
     {
@@ -93,14 +93,27 @@
     }
   ],
   "citation": {
-    "preferred": "Electronic Artefacts. \"Préservation numérique et archives vivantes\". Article technique, version 1.0.0, 2026."
+    "preferred": "Electronic Artefacts. \"Préservation numérique et archives vivantes\". Article technique, version 1.1.0, 2026."
   },
-  "bodyHtml": "<h2 id=\"probleme\">Problème</h2>\n<p>Cette synthèse clarifie le sujet « Préservation numérique et archives vivantes » pour aider le lecteur à comprendre le vocabulaire, les enjeux pratiques et les liens avec les autres pages du graphe Electronic Artefacts.</p>\n<h2 id=\"architecture\">Architecture</h2>\n<p>Le sujet est présenté à travers ses composants, ses relations avec les concepts voisins et les décisions de conception qu’il implique.</p>\n<h2 id=\"mise-en-uvre\">Mise en œuvre</h2>\n<p>La page met l’accent sur les usages concrets, les contraintes de gouvernance et les conditions d’application dans un système réel.</p>\n<h2 id=\"elements-de-preuve\">Éléments de preuve</h2>\n<p>Les sources, relations et éléments de contexte restent associés à la fiche pour distinguer synthèse éditoriale, preuve et référence.</p>\n<h2 id=\"limites\">Limites</h2>\n<p>Les limites décrivent ce que la fiche ne couvre pas encore, les sources disponibles et les conditions d’usage documentées.</p>\n<h2 id=\"references\">Références</h2>\n<p>Les sources principales restent disponibles dans le bloc de références de la fiche.</p>\n",
+  "bodyHtml": "<h2 id=\"probleme\">Problème</h2>\n<p>La culture numérique est facile à copier et difficile à préserver. Un fichier peut être dupliqué en quelques secondes, mais la signification à long terme dépend de beaucoup plus que les octets. Qui l’a fait ? Quelle version est-ce ? Quel logiciel l’a créé ? Quels droits s’appliquent? À quel projet appartient-il ? Est-ce un travail final, une trace de processus, une image de référence, une sortie générée, une exportation endommagée ou un artefact public ?</p>\n<p>Sauvegarde ne répond qu’une partie du problème : le fichier peut-il être récupéré après un échec ? La préservation numérique pose une question plus large : l’objet peut-il rester compréhensible, authentique, utilisable et accessible lorsque les formats, les logiciels, le matériel, les liens et le contexte culturel changent ?</p>\n<p>Cette distinction compte pour Electronic Artefacts parce que le site contient des œuvres numériques : images, audio, code, pages générées, JSON-LD, notes de recherche, supports de projet et publications expérimentales. Les archives ne sont pas un entrepôt à la fin de la production. Cela fait partie de la façon dont le travail reste intelligible.</p>\n<h2 id=\"presentation\">Présentation</h2>\n<p>La préservation numérique est une pratique de soins de longue durée pour les objets numériques et leur contexte. Il combine stockage, stratégie de format, métadonnées, provenance, droits, contrôles de fixité, migration, copies d’accès et interprétation.</p>\n<p>Une archive vivante est une archive qui peut continuer à recevoir des interprétations, des relations et des enregistrements actualisés sans prétendre que le passé est instable. La provenance de l’objet doit rester stable, mais la compréhension publique de cet objet peut s’approfondir avec le temps.</p>\n<h2 id=\"contexte\">Contexte</h2>\n<p>La Coalition pour la préservation numérique décrit la préservation numérique comme un domaine pratique concernant la gestion des ressources numériques au fil du temps. La Bibliothèque du Congrès maintient des lignes directrices sur la durabilité des formats parce que les formats de fichiers diffèrent en matière de transparence, de divulgation, d’adoption, de dépendances et de risque de préservation. Les niveaux de préservation numérique de la NDSA permettent aux organisations d’évaluer et d’améliorer les pratiques de préservation.</p>\n<p>Ces références partagent un principe : la préservation est organisationnelle et technique. Il ne suffit pas de stocker des fichiers. Un système de préservation doit savoir ce qu’il a, comment il peut le vérifier, comment il peut le migrer et comment un futur utilisateur peut le comprendre.</p>\n<h2 id=\"historique\">Historique</h2>\n<p>Archives systèmes numériques de longue date. Les archives matérielles gèrent la garde, la description, la conservation et l’accès. La préservation numérique a hérité de ces préoccupations et en a ajouté de nouvelles : défaillance des médias, obsolescence du format, dépendance des logiciels, pourriture des liens, perte de métadonnées, compression, dérive des versions et disparition des plates-formes.</p>\n<p>Le passage à la culture numérique a intensifié le problème. Une œuvre d’art numérique, un site Web, une session d’enregistrement ou un prototype de logiciel peut dépendre d’outils, de systèmes d’exploitation, de plugins, d’API et de modèles d’interaction qui disparaissent. Préserver seulement l’exportation finale peut effacer le processus qui a rendu le travail significatif.</p>\n<h2 id=\"concepts-fondamentaux\">Concepts fondamentaux</h2>\n<p>La fixité signifie vérifier qu’un fichier n’a pas changé de façon inattendue, habituellement par des comptes de chèques.</p>\n<p>La preuve signifie l’enregistrement de l’origine, de la garde, de la paternité, de la transformation et de la preuve.</p>\n<p>L’information sur la représentation signifie l’information nécessaire pour interpréter l’objet.</p>\n<p>Copie d’accès signifie une version préparée pour l’utilisation, séparée d’un maître de conservation.</p>\n<p>Migration signifie déplacer un objet ou des métadonnées dans un format ou un environnement plus récent.</p>\n<p>La sélection signifie décider ce qui mérite une attention de conservation.</p>\n<h2 id=\"architecture\">Architecture</h2>\n<p>Une archive vivante a besoin de plusieurs couches:</p>\n<ul>\n<li>conservation du stockage pour les fichiers sources importants;</li>\n<li>les dossiers de métadonnées avec identité, dates, droits et contexte;</li>\n<li>les déclarations de provenance;</li>\n<li>surveillance du format;</li>\n<li>les pages d’accès public;</li>\n<li>les relations graphiques avec les projets, les concepts et les publications;</li>\n<li>l’examen des états qui distinguent les enregistrements canoniques de l’interprétation spéculative.</li>\n</ul>\n<p>Pour un site web statique, la préservation inclut également les sorties générées. Les pages HTML, JSON-LD, les plans du site et les exportations de graphiques font partie du dossier public. Ils devraient être reproductibles à partir des dossiers sources, mais la conservation des instantanés générés peut encore aider les vérifications futures.</p>\n<h2 id=\"mise-en-uvre\">Mise en œuvre</h2>\n<p>La voie de mise en œuvre devrait commencer par l’inventaire. Qu’est-ce qui existe ? Quels sont les dossiers publics? Quels sont les fichiers sources ? Quels sont les dossiers ? Quels formats sont risqués? Quels documents n’ont pas de provenance ?</p>\n<p>Ensuite vient l’identité. Les objets importants doivent recevoir des identifiants et des itinéraires stables. Un enregistrement ne doit pas dépendre uniquement d’un nom de fichier image ou d’un nom de dossier.</p>\n<p>Alors vient la relation. Un artefact devrait dire à quel projet il appartient, à quelle publication il documente, quel concept il démontre et de quelle source ou processus de production il dérive.</p>\n<p>Enfin vient la revue. La préservation est en cours. Les dossiers nécessitent des dates de modification, des états de confiance et des vérifications périodiques.</p>\n<h2 id=\"applications-pratiques\">Applications pratiques</h2>\n<p>Pour Palimpsests, la préservation numérique signifie plus que stocker des œuvres d’album et des exportations audio. Cela signifie préserver suffisamment de contexte pour comprendre les décisions relatives à la mémoire, aux résidus, au signal et à la production.</p>\n<p>Pour ORETH, cela signifie préserver les notes de recherche et le contexte de l’analyse audio sans surclaimer les résultats de l’écoute automatique.</p>\n<p>Pour V6, la préservation est essentielle parce que la thèse de la plateforme dépend des connaissances culturelles vivantes, de la contribution, de la provenance et de l’interprétation publique.</p>\n<p>Pour le site Electronic Artefacts, il faut traiter les pages de connaissances générées comme des objets publics durables.</p>\n<h2 id=\"outils\">Outils</h2>\n<p>Les outils utiles comprennent les comptes de vérification, les inventaires de fichiers, les registres de formats, les vocabulaires contrôlés, les enregistrements de provenance, le contrôle des sources en version, les schémas de métadonnées, les exportations statiques, les archives Web et les index graphiques.</p>\n<h2 id=\"elements-de-preuve\">Éléments de preuve</h2>\n<p>Le dépôt actuel distingue déjà le contenu source, les pages générées, les sorties graphiques, les documents de recherche et les routes d’identification. Cette séparation permet la conservation car la source et la projection peuvent être inspectées séparément.</p>\n<h2 id=\"liste-de-controle-sur-la-preservation\">Liste de contrôle sur la préservation</h2>\n<p>Un petit studio ou un site de recherche peut commencer par une liste de vérification pratique.</p>\n<p>Identifier l’objet. Donnez des ID stables aux ouvrages, publications, médias et ensembles de données importants. Ne pas dépendre uniquement des noms de fichiers.</p>\n<p>Enregistrement de provenance. Créateur de documents, éditeur, date, projet source, droits, transformations et confiance. Si l’objet provient d’un système hérité, dites-le.</p>\n<p>Séparer les copies de conservation des copies d’accès. Une image Web compressée est utile pour les visiteurs, mais elle peut ne pas être le meilleur objet de préservation.</p>\n<p>Formats de piste et dépendances. Un fichier est plus facile à conserver lorsque son format est ouvert, documenté, largement adopté et non verrouillé à un outil abandonné.</p>\n<p>Vérifiez la fixité. Les contrôles n’expliquent pas le sens, mais ils aident à détecter les changements inattendus.</p>\n<p>Connectez l’objet. Un élément conservé doit être lié au projet, à la publication, au concept ou au programme qui le rend significatif.</p>\n<p>Révision périodique. La préservation n’est pas une seule action. C’est une pratique de maintenance.</p>\n<h2 id=\"erreurs-courantes\">Erreurs courantes</h2>\n<p>La première erreur est de traiter le stockage en nuage comme une conservation. Le stockage en nuage peut faire partie d’une infrastructure, mais sans métadonnées, droits, fixité, sensibilisation au format et pratique de récupération, il ne s’agit que du stockage à distance.</p>\n<p>La deuxième erreur est de préserver les sorties finales tout en rejetant le contexte. Pour une oeuvre culturelle, les ébauches, les références, les notes de procédé et les décisions de production peuvent avoir une valeur interprétative. Tous ne devraient pas être publics, mais un contexte important devrait être décrit.</p>\n<p>La troisième erreur est la sur-conservation sans sélection. Si tout est gardé avec la même priorité, l’archive devient difficile à maintenir et difficile à interpréter.</p>\n<h2 id=\"incidences-des-electronic-artefacts\">Incidences des Electronic Artefacts</h2>\n<p>Electronic Artefacts devraient traiter chaque projet majeur comme un contexte de préservation. VASTE a besoin d’architecture en version et d’enregistrements de licences. Les palimpsestes ont besoin d’une provenance audio, visuelle et interprétative. V6 a besoin de contribution et d’historique de validation. Le site lui-même a besoin d’instantanés et d’enregistrements sources générés parce que le graphique public fait partie de la production intellectuelle de l’institution.</p>\n<p>Cette approche donne la valeur d’archive au-delà de la nostalgie. Il fait du site un système de mémoire de travail.</p>\n<h2 id=\"concepts-connexes\">Concepts connexes</h2>\n<p>Lire <a href=\"/fr/knowledge/concepts/digital-preservation/\">Préservation numérique</a>, <a href=\"/fr/knowledge/concepts/provenance/\">Provenance</a>, <a href=\"/fr/knowledge/concepts/knowledge-graph/\">Graphe de connaissances</a>, <a href=\"/fr/projects/palimpsests/\">Palimpsestes</a> et <a href=\"/fr/projects/v6/\">V6</a>.</p>\n<h2 id=\"lecture-suggeree\">Lecture suggérée</h2>\n<p>Commencer par le Digital Preservation Coalition Handbook, Bibliothèque du Congrès Durabilité des formats numériques et niveaux de préservation numérique de la NDSA.</p>\n<h2 id=\"articles-connexes\">Articles connexes</h2>\n<p>Continuer avec <a href=\"/fr/publications/knowledge-graphs-for-cultural-infrastructure/\">Graphes de connaissances pour l’infrastructure culturelle</a> et <a href=\"/fr/publications/signal-archaeology-audio-memory-and-machine-listening/\">Archéologie des signaux, mémoire audio et écoute automatique</a>.</p>\n<h2 id=\"glossaire\">Glossaire</h2>\n<p>Fixité : preuve qu’un dossier n’a pas changé de façon inattendue.</p>\n<p>Migration : déplacer le contenu ou les métadonnées vers un nouveau format ou environnement.</p>\n<p>Archive vivante : une archive qui préserve la provenance stable tout en permettant à l’interprétation de croître.</p>\n<p>Information sur la représentation : contexte nécessaire pour comprendre un objet conservé.</p>\n<h2 id=\"limites\">Limites</h2>\n<p>La préservation peut devenir infinie si aucun critère de sélection n’existe. Une archive vivante ne devrait pas tout garder également. Elle devrait préserver les objets porteurs de preuves, de sens, de droits ou de valeur interprétative future.</p>\n<p>La préservation a également un coût écologique et économique. Le stockage, la migration et la redondance devraient être proportionnels à la signification.</p>\n<h2 id=\"references\">Références</h2>\n<ul>\n<li>Coalition pour la préservation numérique. Manuel de préservation numérique, 2e édition.</li>\n<li>Bibliothèque du Congrès. Durabilité des formats numériques.</li>\n<li>Alliance nationale de gérance numérique. Niveaux de préservation numérique.</li>\n<li>Electronic Artefacts. Palimpsestes et enregistrements V6.</li>\n</ul>\n",
   "headings": [
     "Problème",
+    "Présentation",
+    "Contexte",
+    "Historique",
+    "Concepts fondamentaux",
     "Architecture",
     "Mise en œuvre",
+    "Applications pratiques",
+    "Outils",
     "Éléments de preuve",
+    "Liste de contrôle sur la préservation",
+    "Erreurs courantes",
+    "Incidences des Electronic Artefacts",
+    "Concepts connexes",
+    "Lecture suggérée",
+    "Articles connexes",
+    "Glossaire",
     "Limites",
     "Références"
   ],
@@ -109,6 +122,26 @@
       "level": 2,
       "title": "Problème",
       "id": "probleme"
+    },
+    {
+      "level": 2,
+      "title": "Présentation",
+      "id": "presentation"
+    },
+    {
+      "level": 2,
+      "title": "Contexte",
+      "id": "contexte"
+    },
+    {
+      "level": 2,
+      "title": "Historique",
+      "id": "historique"
+    },
+    {
+      "level": 2,
+      "title": "Concepts fondamentaux",
+      "id": "concepts-fondamentaux"
     },
     {
       "level": 2,
@@ -122,8 +155,53 @@
     },
     {
       "level": 2,
+      "title": "Applications pratiques",
+      "id": "applications-pratiques"
+    },
+    {
+      "level": 2,
+      "title": "Outils",
+      "id": "outils"
+    },
+    {
+      "level": 2,
       "title": "Éléments de preuve",
       "id": "elements-de-preuve"
+    },
+    {
+      "level": 2,
+      "title": "Liste de contrôle sur la préservation",
+      "id": "liste-de-controle-sur-la-preservation"
+    },
+    {
+      "level": 2,
+      "title": "Erreurs courantes",
+      "id": "erreurs-courantes"
+    },
+    {
+      "level": 2,
+      "title": "Incidences des Electronic Artefacts",
+      "id": "incidences-des-electronic-artefacts"
+    },
+    {
+      "level": 2,
+      "title": "Concepts connexes",
+      "id": "concepts-connexes"
+    },
+    {
+      "level": 2,
+      "title": "Lecture suggérée",
+      "id": "lecture-suggeree"
+    },
+    {
+      "level": 2,
+      "title": "Articles connexes",
+      "id": "articles-connexes"
+    },
+    {
+      "level": 2,
+      "title": "Glossaire",
+      "id": "glossaire"
     },
     {
       "level": 2,

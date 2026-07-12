@@ -14,10 +14,10 @@ status: active
 maturity: research
 confidence: published
 version:
-  version: 1.0.0
+  version: 1.1.0
   createdAt: 2026-06-23
   publishedAt: 2026-06-25
-  modifiedAt: 2026-06-25
+  modifiedAt: 2026-07-12
 authors:
   - id: ea:organization:electronic-artefacts
 publisher: ea:organization:electronic-artefacts
@@ -52,7 +52,7 @@ sources:
     url: https://www.ndsa.org/publications/levels-of-digital-preservation/
 citation:
   preferred: Electronic Artefacts. "Préservation numérique et archives vivantes". Article technique,
-    version 1.0.0, 2026.
+    version 1.1.0, 2026.
 tags:
   - Digital Préservation
   - Living Archive
@@ -69,24 +69,149 @@ translationOf: ea:publication:digital-preservation-and-living-archives
 
 ## Problème
 
-Cette synthèse clarifie le sujet « Préservation numérique et archives vivantes » pour aider le lecteur à comprendre le vocabulaire, les enjeux pratiques et les liens avec les autres pages du graphe Electronic Artefacts.
+La culture numérique est facile à copier et difficile à préserver. Un fichier peut être dupliqué en quelques secondes, mais la signification à long terme dépend de beaucoup plus que les octets. Qui l'a fait ? Quelle version est-ce ? Quel logiciel l'a créé ? Quels droits s'appliquent? À quel projet appartient-il ? Est-ce un travail final, une trace de processus, une image de référence, une sortie générée, une exportation endommagée ou un artefact public ?
+
+Sauvegarde ne répond qu'une partie du problème : le fichier peut-il être récupéré après un échec ? La préservation numérique pose une question plus large : l'objet peut-il rester compréhensible, authentique, utilisable et accessible lorsque les formats, les logiciels, le matériel, les liens et le contexte culturel changent ?
+
+Cette distinction compte pour Electronic Artefacts parce que le site contient des œuvres numériques : images, audio, code, pages générées, JSON-LD, notes de recherche, supports de projet et publications expérimentales. Les archives ne sont pas un entrepôt à la fin de la production. Cela fait partie de la façon dont le travail reste intelligible.
+
+## Présentation
+
+La préservation numérique est une pratique de soins de longue durée pour les objets numériques et leur contexte. Il combine stockage, stratégie de format, métadonnées, provenance, droits, contrôles de fixité, migration, copies d'accès et interprétation.
+
+Une archive vivante est une archive qui peut continuer à recevoir des interprétations, des relations et des enregistrements actualisés sans prétendre que le passé est instable. La provenance de l'objet doit rester stable, mais la compréhension publique de cet objet peut s'approfondir avec le temps.
+
+## Contexte
+
+La Coalition pour la préservation numérique décrit la préservation numérique comme un domaine pratique concernant la gestion des ressources numériques au fil du temps. La Bibliothèque du Congrès maintient des lignes directrices sur la durabilité des formats parce que les formats de fichiers diffèrent en matière de transparence, de divulgation, d'adoption, de dépendances et de risque de préservation. Les niveaux de préservation numérique de la NDSA permettent aux organisations d'évaluer et d'améliorer les pratiques de préservation.
+
+Ces références partagent un principe : la préservation est organisationnelle et technique. Il ne suffit pas de stocker des fichiers. Un système de préservation doit savoir ce qu'il a, comment il peut le vérifier, comment il peut le migrer et comment un futur utilisateur peut le comprendre.
+
+## Historique
+
+Archives systèmes numériques de longue date. Les archives matérielles gèrent la garde, la description, la conservation et l'accès. La préservation numérique a hérité de ces préoccupations et en a ajouté de nouvelles : défaillance des médias, obsolescence du format, dépendance des logiciels, pourriture des liens, perte de métadonnées, compression, dérive des versions et disparition des plates-formes.
+
+Le passage à la culture numérique a intensifié le problème. Une œuvre d'art numérique, un site Web, une session d'enregistrement ou un prototype de logiciel peut dépendre d'outils, de systèmes d'exploitation, de plugins, d'API et de modèles d'interaction qui disparaissent. Préserver seulement l'exportation finale peut effacer le processus qui a rendu le travail significatif.
+
+## Concepts fondamentaux
+
+La fixité signifie vérifier qu'un fichier n'a pas changé de façon inattendue, habituellement par des comptes de chèques.
+
+La preuve signifie l'enregistrement de l'origine, de la garde, de la paternité, de la transformation et de la preuve.
+
+L'information sur la représentation signifie l'information nécessaire pour interpréter l'objet.
+
+Copie d'accès signifie une version préparée pour l'utilisation, séparée d'un maître de conservation.
+
+Migration signifie déplacer un objet ou des métadonnées dans un format ou un environnement plus récent.
+
+La sélection signifie décider ce qui mérite une attention de conservation.
 
 ## Architecture
 
-Le sujet est présenté à travers ses composants, ses relations avec les concepts voisins et les décisions de conception qu’il implique.
+Une archive vivante a besoin de plusieurs couches:
+
+- conservation du stockage pour les fichiers sources importants;
+- les dossiers de métadonnées avec identité, dates, droits et contexte;
+- les déclarations de provenance;
+- surveillance du format;
+- les pages d'accès public;
+- les relations graphiques avec les projets, les concepts et les publications;
+- l'examen des états qui distinguent les enregistrements canoniques de l'interprétation spéculative.
+
+Pour un site web statique, la préservation inclut également les sorties générées. Les pages HTML, JSON-LD, les plans du site et les exportations de graphiques font partie du dossier public. Ils devraient être reproductibles à partir des dossiers sources, mais la conservation des instantanés générés peut encore aider les vérifications futures.
 
 ## Mise en œuvre
 
-La page met l’accent sur les usages concrets, les contraintes de gouvernance et les conditions d’application dans un système réel.
+La voie de mise en œuvre devrait commencer par l'inventaire. Qu'est-ce qui existe ? Quels sont les dossiers publics? Quels sont les fichiers sources ? Quels sont les dossiers ? Quels formats sont risqués? Quels documents n'ont pas de provenance ?
+
+Ensuite vient l'identité. Les objets importants doivent recevoir des identifiants et des itinéraires stables. Un enregistrement ne doit pas dépendre uniquement d'un nom de fichier image ou d'un nom de dossier.
+
+Alors vient la relation. Un artefact devrait dire à quel projet il appartient, à quelle publication il documente, quel concept il démontre et de quelle source ou processus de production il dérive.
+
+Enfin vient la revue. La préservation est en cours. Les dossiers nécessitent des dates de modification, des états de confiance et des vérifications périodiques.
+
+## Applications pratiques
+
+Pour Palimpsests, la préservation numérique signifie plus que stocker des œuvres d'album et des exportations audio. Cela signifie préserver suffisamment de contexte pour comprendre les décisions relatives à la mémoire, aux résidus, au signal et à la production.
+
+Pour ORETH, cela signifie préserver les notes de recherche et le contexte de l'analyse audio sans surclaimer les résultats de l'écoute automatique.
+
+Pour V6, la préservation est essentielle parce que la thèse de la plateforme dépend des connaissances culturelles vivantes, de la contribution, de la provenance et de l'interprétation publique.
+
+Pour le site Electronic Artefacts, il faut traiter les pages de connaissances générées comme des objets publics durables.
+
+## Outils
+
+Les outils utiles comprennent les comptes de vérification, les inventaires de fichiers, les registres de formats, les vocabulaires contrôlés, les enregistrements de provenance, le contrôle des sources en version, les schémas de métadonnées, les exportations statiques, les archives Web et les index graphiques.
 
 ## Éléments de preuve
 
-Les sources, relations et éléments de contexte restent associés à la fiche pour distinguer synthèse éditoriale, preuve et référence.
+Le dépôt actuel distingue déjà le contenu source, les pages générées, les sorties graphiques, les documents de recherche et les routes d’identification. Cette séparation permet la conservation car la source et la projection peuvent être inspectées séparément.
+
+## Liste de contrôle sur la préservation
+
+Un petit studio ou un site de recherche peut commencer par une liste de vérification pratique.
+
+Identifier l'objet. Donnez des ID stables aux ouvrages, publications, médias et ensembles de données importants. Ne pas dépendre uniquement des noms de fichiers.
+
+Enregistrement de provenance. Créateur de documents, éditeur, date, projet source, droits, transformations et confiance. Si l'objet provient d'un système hérité, dites-le.
+
+Séparer les copies de conservation des copies d'accès. Une image Web compressée est utile pour les visiteurs, mais elle peut ne pas être le meilleur objet de préservation.
+
+Formats de piste et dépendances. Un fichier est plus facile à conserver lorsque son format est ouvert, documenté, largement adopté et non verrouillé à un outil abandonné.
+
+Vérifiez la fixité. Les contrôles n'expliquent pas le sens, mais ils aident à détecter les changements inattendus.
+
+Connectez l'objet. Un élément conservé doit être lié au projet, à la publication, au concept ou au programme qui le rend significatif.
+
+Révision périodique. La préservation n'est pas une seule action. C'est une pratique de maintenance.
+
+## Erreurs courantes
+
+La première erreur est de traiter le stockage en nuage comme une conservation. Le stockage en nuage peut faire partie d'une infrastructure, mais sans métadonnées, droits, fixité, sensibilisation au format et pratique de récupération, il ne s'agit que du stockage à distance.
+
+La deuxième erreur est de préserver les sorties finales tout en rejetant le contexte. Pour une oeuvre culturelle, les ébauches, les références, les notes de procédé et les décisions de production peuvent avoir une valeur interprétative. Tous ne devraient pas être publics, mais un contexte important devrait être décrit.
+
+La troisième erreur est la sur-conservation sans sélection. Si tout est gardé avec la même priorité, l'archive devient difficile à maintenir et difficile à interpréter.
+
+## Incidences des Electronic Artefacts
+
+Electronic Artefacts devraient traiter chaque projet majeur comme un contexte de préservation. VASTE a besoin d'architecture en version et d'enregistrements de licences. Les palimpsestes ont besoin d'une provenance audio, visuelle et interprétative. V6 a besoin de contribution et d'historique de validation. Le site lui-même a besoin d'instantanés et d'enregistrements sources générés parce que le graphique public fait partie de la production intellectuelle de l'institution.
+
+Cette approche donne la valeur d'archive au-delà de la nostalgie. Il fait du site un système de mémoire de travail.
+
+## Concepts connexes
+
+Lire [Préservation numérique](/fr/knowledge/concepts/digital-preservation/), [Provenance](/fr/knowledge/concepts/provenance/), [Graphe de connaissances](/fr/knowledge/concepts/knowledge-graph/), [Palimpsestes](/fr/projects/palimpsests/) et [V6](/fr/projects/v6/).
+
+## Lecture suggérée
+
+Commencer par le Digital Preservation Coalition Handbook, Bibliothèque du Congrès Durabilité des formats numériques et niveaux de préservation numérique de la NDSA.
+
+## Articles connexes
+
+Continuer avec [Graphes de connaissances pour l'infrastructure culturelle](/fr/publications/knowledge-graphs-for-cultural-infrastructure/) et [Archéologie des signaux, mémoire audio et écoute automatique](/fr/publications/signal-archaeology-audio-memory-and-machine-listening/).
+
+## Glossaire
+
+Fixité : preuve qu'un dossier n'a pas changé de façon inattendue.
+
+Migration : déplacer le contenu ou les métadonnées vers un nouveau format ou environnement.
+
+Archive vivante : une archive qui préserve la provenance stable tout en permettant à l'interprétation de croître.
+
+Information sur la représentation : contexte nécessaire pour comprendre un objet conservé.
 
 ## Limites
 
-Les limites décrivent ce que la fiche ne couvre pas encore, les sources disponibles et les conditions d’usage documentées.
+La préservation peut devenir infinie si aucun critère de sélection n'existe. Une archive vivante ne devrait pas tout garder également. Elle devrait préserver les objets porteurs de preuves, de sens, de droits ou de valeur interprétative future.
+
+La préservation a également un coût écologique et économique. Le stockage, la migration et la redondance devraient être proportionnels à la signification.
 
 ## Références
 
-Les sources principales restent disponibles dans le bloc de références de la fiche.
+- Coalition pour la préservation numérique. Manuel de préservation numérique, 2e édition.
+- Bibliothèque du Congrès. Durabilité des formats numériques.
+- Alliance nationale de gérance numérique. Niveaux de préservation numérique.
+- Electronic Artefacts. Palimpsestes et enregistrements V6.

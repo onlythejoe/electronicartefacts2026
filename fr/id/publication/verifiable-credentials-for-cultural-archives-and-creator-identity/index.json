@@ -16,10 +16,10 @@
   "maturity": "research",
   "confidence": "published",
   "version": {
-    "version": "1.0.0",
+    "version": "1.1.0",
     "createdAt": "2026-06-25",
     "publishedAt": "2026-06-25",
-    "modifiedAt": "2026-06-25"
+    "modifiedAt": "2026-07-12"
   },
   "authors": [
     {
@@ -93,15 +93,28 @@
     }
   ],
   "citation": {
-    "preferred": "Electronic Artefacts. \"Identifiants vérifiables pour les archives culturelles et l’identité des créateurs\". Article technique, version 1.0.0, 2026."
+    "preferred": "Electronic Artefacts. \"Identifiants vérifiables pour les archives culturelles et l’identité des créateurs\". Article technique, version 1.1.0, 2026."
   },
-  "bodyHtml": "<h2 id=\"probleme\">Problème</h2>\n<p>Cette synthèse clarifie le sujet « Identifiants vérifiables pour les archives culturelles et l’identité des créateurs » pour aider le lecteur à comprendre le vocabulaire, les enjeux pratiques et les liens avec les autres pages du graphe Electronic Artefacts.</p>\n<h2 id=\"architecture\">Architecture</h2>\n<p>Le sujet est présenté à travers ses composants, ses relations avec les concepts voisins et les décisions de conception qu’il implique.</p>\n<h2 id=\"mise-en-uvre\">Mise en œuvre</h2>\n<p>La page met l’accent sur les usages concrets, les contraintes de gouvernance et les conditions d’application dans un système réel.</p>\n<h2 id=\"elements-de-preuve\">Éléments de preuve</h2>\n<p>Les sources, relations et éléments de contexte restent associés à la fiche pour distinguer synthèse éditoriale, preuve et référence.</p>\n<h2 id=\"limites\">Limites</h2>\n<p>Les limites décrivent ce que la fiche ne couvre pas encore, les sources disponibles et les conditions d’usage documentées.</p>\n<h2 id=\"references\">Références</h2>\n<p>Les sources principales restent disponibles dans le bloc de références de la fiche.</p>\n",
+  "bodyHtml": "<h2 id=\"probleme\">Problème</h2>\n<p>Les systèmes créatifs et culturels doivent savoir qui a fait une œuvre, qui a signé une déclaration, quelle organisation a publié un document, quels droits s’appliquent et quelles preuves appuient une revendication. Les pages Web conventionnelles peuvent dire ces choses, mais elles sont souvent difficiles à vérifier, à réutiliser ou à transporter.</p>\n<p>Les références vérifiables offrent un moyen d’exprimer des revendications qui peuvent être vérifiées cryptographiquement. L’occasion est importante pour l’identité des créateurs et les archives. Le danger est de traiter une revendication signée comme une vérité finale plutôt qu’un seul morceau de provenance.</p>\n<h2 id=\"presentation\">Présentation</h2>\n<p>W3C Vérification des pouvoirs définit un modèle de données pour les créances faites par un émetteur au sujet d’un sujet et présentées à un vérificateur. Un titre peut représenter un permis de conduire, une affiliation, un certificat, une autorisation, une demande d’auteur ou une déclaration institutionnelle. Le modèle comprend l’émetteur, le sujet, les créances, la preuve, la validité et les métadonnées connexes.</p>\n<p>Pour les infrastructures culturelles, l’utilisation intéressante n’est pas seulement l’identité personnelle. Les lettres de créances peuvent exprimer des revendications lisibles par machine concernant les créateurs, les oeuvres, les événements d’archives, les droits, l’adhésion à la collection, l’approbation institutionnelle ou le statut de publication.</p>\n<p>Electronic Artefacts utilisent déjà l’identité et la provenance des entités dans les documents publics. Des références vérifiables pourraient étendre cette architecture en laissant certaines revendications devenir portables, signées et contrôlables indépendamment tout en restant intégrées dans un graphique plus large d’interprétation.</p>\n<h2 id=\"architecture\">Architecture</h2>\n<p>Une architecture de justificatifs vérifiable comprend les émetteurs, les détenteurs, les vérificateurs, les sujets de justificatifs, les réclamations, les mécanismes de preuve, le statut, les schémas, la politique de confiance, les contrôles de confidentialité et les documents graphiques qui contextualisent le justificatif. Le titre porte des revendications signées. L’archive décide de l’interprétation de ces revendications.</p>\n<h2 id=\"emetteurs-detenteurs-et-verificateurs\">Émetteurs, détenteurs et vérificateurs</h2>\n<p>Les rôles de base sont l’émetteur, le détenteur et le vérificateur. L’émetteur fait une réclamation. Le détenteur stocke et présente le titre. Le vérificateur vérifie le titre de créance et décide de faire confiance à l’émetteur pour ce contexte.</p>\n<p>Dans les systèmes culturels, ces rôles peuvent être flexibles. Un créateur peut détenir un titre délivré par un studio. Un musée peut délivrer une attestation d’acquisition. Une plateforme d’édition peut vérifier un titre de créateur avant d’afficher l’attribution. Une archive peut vérifier un titre institutionnel avant d’importer des documents.</p>\n<p>La confiance n’est pas automatique. Une signature valide prouve qu’un titre de créance n’a pas été altéré et a été émis par une clé. Elle ne prouve pas que l’émetteur fait autorité, est honnête ou approprié pour chaque créance.</p>\n<h2 id=\"reclamations-et-sujets\">Réclamations et sujets</h2>\n<p>Les lettres de créances expriment des revendications sur des sujets. Un sujet peut être une personne, une organisation, un travail, un événement, un ensemble de données, un projet ou une autre entité. Cela s’harmonise avec la pensée du graphe de connaissances parce que la revendication a besoin d’une identité de sujet stable.</p>\n<p>Par exemple, un titre de compétence peut indiquer qu’un organisme particulier a publié un dossier de projet à une date, qu’un créateur a contribué à une oeuvre ou qu’un examen des droits a été effectué. Ces revendications deviennent plus utiles lorsque les sujets ont des ID stables et des pages canoniques.</p>\n<p>L’allégation devrait être suffisamment étroite pour être vérifiée. “Cette œuvre est authentique” est trop large. « Cet organisme a signé ce document à cette date » est plus clair.</p>\n<h2 id=\"identite-du-createur\">Identité du créateur</h2>\n<p>L’identité du créateur est plus qu’un nom d’affichage. Elle peut comprendre des pseudonymes, des collectifs, des rôles, des périodes d’activité, des œuvres, des droits, des plateformes et des références institutionnelles. Les lettres de créances peuvent aider les créateurs à porter des revendications particulières à travers les systèmes sans dépendre entièrement des profils de plateforme.</p>\n<p>Un certificat de créateur pourrait supporter l’attribution, la vérification de portefeuille, l’accès contributeur ou les workflows de droits. Il ne devrait pas forcer l’exposition publique à l’identité légale lorsqu’une identité pseudonyme ou collective est l’identité culturelle significative.</p>\n<p>La conception pour les créateurs consiste à appuyer la divulgation sélective, les revendications spécifiques au rôle et les mécanismes de correction. L’infrastructure d’identité peut protéger les créateurs ou les exposer trop souvent selon la mise en œuvre.</p>\n<h2 id=\"provenance-des-archives\">Provenance des archives</h2>\n<p>Les archives peuvent utiliser des références pour renforcer la provenance. Un titre de créance peut attester le dépôt, l’examen, la publication, la transformation, l’apurement des droits ou l’action de préservation. Le justificatif peut être stocké aux côtés d’enregistrements graphiques et de métadonnées de fichiers.</p>\n<p>Cela complète la pensée du W3C PROV. PROV modèle des entités, des activités et des agents. Les lettres de créance vérifiables peuvent signer certaines réclamations concernant ces entités, activités et agents. Le graphique peut ensuite relier les revendications signées aux documents, sources et interprétation visibles.</p>\n<p>Les pouvoirs ne doivent pas remplacer la description des archives. Ils rendent certaines allégations vérifiables. Ils n’expliquent pas par eux-mêmes la signification culturelle.</p>\n<h2 id=\"comparaison-c2pa\">Comparaison C2PA</h2>\n<p>C2PA met l’accent sur la provenance des médias rattachés ou associés à des actifs. Les références vérifiables sont plus larges et peuvent exprimer de nombreuses sortes de revendications. Les deux approches peuvent travailler ensemble.</p>\n<p>Un atout médiatique peut porter des lettres de créances C2PA décrivant l’origine et les modifications du niveau de fichier. Une archive culturelle peut également stocker des références vérifiables sur l’identité du créateur, l’examen des droits ou la publication institutionnelle. La page publique peut expliquer comment ces couches se rapportent.</p>\n<p>La distinction est importante. La provenance au niveau du fichier n’est pas la même que l’identité du créateur. Un titre de créateur signé n’est pas le même que l’histoire de la transformation des médias. Une archive robuste peut modéliser les deux.</p>\n<h2 id=\"droits-et-autorisations\">Droits et autorisations</h2>\n<p>Les workflows de droits sont prometteurs mais sensibles. Un titre de compétence peut indiquer qu’une personne a accordé la permission d’une utilisation particulière, qu’une licence s’applique ou qu’un examen des droits a été effectué. Mais les droits sont légaux et contextuels. Un justificatif ne devrait pas les simplifier trop.</p>\n<p>Utiliser des types précis de revendications, des périodes de validité, des notes de compétence et des références de source. Conservez l’accord sous-jacent le cas échéant. Permettre la révocation ou les mises à jour de l’état lorsqu’un titre de compétence ne s’applique plus.</p>\n<p>L’exposition publique devrait éviter d’impliquer une autorisation plus large que le titre de compétence réellement accordé.</p>\n<h2 id=\"confidentialite\">Confidentialité</h2>\n<p>Les pouvoirs peuvent divulguer des renseignements. Les identifiants, les signatures, les modèles d’émetteurs et les présentations répétées peuvent permettre la corrélation. La spécification de W3C comprend des considérations de confidentialité pour la corrélation, les métadonnées et la minimisation des données basées sur les identifiants.</p>\n<p>Les archives culturelles ont besoin de soins supplémentaires parce que l’identité peut être politiquement, socialement ou personnellement sensible. La reconnaissance publique et la protection de la vie privée ne sont pas contraires, mais elles nécessitent une conception.</p>\n<p>Préférez les revendications minimales. Un dossier public peut devoir vérifier le rôle d’un artiste sans exposer une adresse, un nom légal ou des identifiants indépendants.</p>\n<h2 id=\"politique-de-confiance\">Politique de confiance</h2>\n<p>La vérification exige une politique. Quels émetteurs font confiance aux archives? Pour quels types de réclamations? Dans quelles conditions ? Que se passe-t-il lorsqu’une clé est tournée, qu’un titre de créance expire ou qu’un émetteur est compromis?</p>\n<p>Sans politique, la vérification devient théâtre. Un système peut afficher un contrôle vert alors que les utilisateurs ne savent pas ce qui a été effectivement vérifié. L’interface devrait indiquer ce qui a été vérifié et ce qui n’a pas été vérifié.</p>\n<p>Pour Electronic Artefacts, la politique de confiance pourrait être graph-aware. L’organisation peut se fier aux documents de publication, à un collaborateur pour les demandes de contribution au projet et à un organisme de normalisation pour la documentation du protocole, mais ce sont des relations de confiance différentes.</p>\n<h2 id=\"implications-pour-electronic-artefacts\">Implications pour Electronic Artefacts</h2>\n<p>Electronic Artefacts pourrait utiliser des justificatifs d’identité vérifiables pour signer des documents de publication, des déclarations de contribution du créateur, des événements de dépôt d’archives, des jalons d’examen des droits ou des énoncés de projet. Ces pouvoirs ne remplaceraient pas le centre de connaissances. Ils ajouteraient une couche de confiance portable à certaines revendications.</p>\n<p>Les palimpsestes pourraient bénéficier de lettres de créances qui distinguent la contribution du créateur, la provenance des médias et l’état de diffusion publique. V6 pourrait utiliser des identifiants pour connecter les objets d’archives aux déclarations institutionnelles. VASTE pourrait valider les références dans le cadre de l’exécution contextuelle avant d’accorder l’autorisation d’accès ou de publication.</p>\n<p>L’utilisation la plus précieuse est sélective. Toutes les relations n’ont pas besoin d’un justificatif. Les pouvoirs doivent être réservés aux réclamations pour lesquelles la portabilité, la vérification ou la confiance institutionnelle modifient le résultat.</p>\n<h2 id=\"mise-en-uvre\">Mise en œuvre</h2>\n<p>Commencez par un type d’allégation à faible risque : Electronic Artefacts signe un titre de créance affirmant qu’il a publié un article de centre de connaissances public spécifique avec une URL canonique et une date. Conservez l’ID du titre dans l’enregistrement graphique et exposez une note de vérification lisible par l’homme.</p>\n<p>Puis testez une demande de contribution pour un projet avec le consentement explicite. Définir l’identité de l’émetteur, les identifiants de sujet, le schéma de réclamation, le statut de révocation, la politique de confidentialité et le langage d’affichage avant de s’étendre.</p>\n<p>Ne commencez pas avec de larges portefeuilles d’identité ou l’automatisation des droits légaux. Commencez par des allégations étroites et inspectables qui améliorent la provenance.</p>\n<h2 id=\"elements-de-preuve\">Éléments de preuve</h2>\n<p>W3C Verifiable Identities Data Model v2.0 définit un modèle extensible pour les réclamations faites par les émetteurs au sujet de sujets et décrit les considérations de sécurité, de confidentialité, d’accessibilité et d’internationalisation. W3C PROV fournit un modèle de provenance plus large pour les entités, les activités et les agents. C2PA fournit un cadre de provenance propre aux médias pour les références de contenu.</p>\n<p>Ces normes mettent en évidence une approche stratifiée : revendications signées, graphiques de provenance, manifestes médiatiques et contexte éditorial.</p>\n<h2 id=\"limites\">Limites</h2>\n<p>Les références vérifiables ne résolvent pas la confiance par elles-mêmes. Une fausse réclamation peut être signée. Un titre valide peut être présenté dans un contexte trompeur. Un vérificateur peut faire confiance au mauvais émetteur. La vie privée peut être endommagée par une divulgation excessive.</p>\n<p>La technologie est la plus forte lorsque les créances sont étroites, que les émetteurs sont connus, que les sujets ont une identité stable et que la politique de vérification est visible.</p>\n<h2 id=\"concepts-connexes\">Concepts connexes</h2>\n<p>Lire <a href=\"/fr/knowledge/concepts/provenance/\">Provenance</a>, <a href=\"/fr/knowledge/concepts/entity-identity/\">Identité de l’entité</a>, <a href=\"/fr/knowledge/concepts/digital-preservation/\">Préservation numérique</a> et <a href=\"/fr/knowledge/concepts/linked-data/\">Données liées</a>.</p>\n<h2 id=\"technologies-connexes\">Technologies connexes</h2>\n<p>Voir <a href=\"/fr/knowledge/technologies/c2pa/\">C2PA</a>, <a href=\"/fr/knowledge/technologies/json-ld/\">JSON-LD</a> et <a href=\"/fr/knowledge/technologies/rdf/\">RDF</a>.</p>\n<h2 id=\"glossaire\">Glossaire</h2>\n<p>Titre de créance vérifiable : objet de données signé exprimant des créances d’un émetteur sur un sujet.</p>\n<p>Émetteur : le parti qui crée et signe un titre.</p>\n<p>Détenteur : la partie qui stocke et présente un titre.</p>\n<p>Vérificateur : la partie qui vérifie un titre et décide de lui faire confiance.</p>\n<p>Divulgation sélective: ne révéler que les revendications nécessaires à une interaction spécifique.</p>\n<h2 id=\"references\">Références</h2>\n<ul>\n<li>W3C. Modèle de données de vérification des pouvoirs v2.0. 2025.</li>\n<li>W3C. Aperçu de PROV. 2013.</li>\n<li>Coalition pour la provenance et l’authenticité du contenu. C2PA Spécifications.</li>\n</ul>\n",
   "headings": [
     "Problème",
+    "Présentation",
     "Architecture",
+    "Émetteurs, détenteurs et vérificateurs",
+    "Réclamations et sujets",
+    "Identité du créateur",
+    "Provenance des archives",
+    "Comparaison C2PA",
+    "Droits et autorisations",
+    "Confidentialité",
+    "Politique de confiance",
+    "Implications pour Electronic Artefacts",
     "Mise en œuvre",
     "Éléments de preuve",
     "Limites",
+    "Concepts connexes",
+    "Technologies connexes",
+    "Glossaire",
     "Références"
   ],
   "headingItems": [
@@ -112,8 +125,58 @@
     },
     {
       "level": 2,
+      "title": "Présentation",
+      "id": "presentation"
+    },
+    {
+      "level": 2,
       "title": "Architecture",
       "id": "architecture"
+    },
+    {
+      "level": 2,
+      "title": "Émetteurs, détenteurs et vérificateurs",
+      "id": "emetteurs-detenteurs-et-verificateurs"
+    },
+    {
+      "level": 2,
+      "title": "Réclamations et sujets",
+      "id": "reclamations-et-sujets"
+    },
+    {
+      "level": 2,
+      "title": "Identité du créateur",
+      "id": "identite-du-createur"
+    },
+    {
+      "level": 2,
+      "title": "Provenance des archives",
+      "id": "provenance-des-archives"
+    },
+    {
+      "level": 2,
+      "title": "Comparaison C2PA",
+      "id": "comparaison-c2pa"
+    },
+    {
+      "level": 2,
+      "title": "Droits et autorisations",
+      "id": "droits-et-autorisations"
+    },
+    {
+      "level": 2,
+      "title": "Confidentialité",
+      "id": "confidentialite"
+    },
+    {
+      "level": 2,
+      "title": "Politique de confiance",
+      "id": "politique-de-confiance"
+    },
+    {
+      "level": 2,
+      "title": "Implications pour Electronic Artefacts",
+      "id": "implications-pour-electronic-artefacts"
     },
     {
       "level": 2,
@@ -129,6 +192,21 @@
       "level": 2,
       "title": "Limites",
       "id": "limites"
+    },
+    {
+      "level": 2,
+      "title": "Concepts connexes",
+      "id": "concepts-connexes"
+    },
+    {
+      "level": 2,
+      "title": "Technologies connexes",
+      "id": "technologies-connexes"
+    },
+    {
+      "level": 2,
+      "title": "Glossaire",
+      "id": "glossaire"
     },
     {
       "level": 2,

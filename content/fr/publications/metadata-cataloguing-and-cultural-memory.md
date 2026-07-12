@@ -14,10 +14,10 @@ status: active
 maturity: research
 confidence: published
 version:
-  version: 1.0.0
+  version: 1.1.0
   createdAt: 2026-06-24
   publishedAt: 2026-06-25
-  modifiedAt: 2026-06-25
+  modifiedAt: 2026-07-12
 authors:
   - id: ea:organization:electronic-artefacts
 publisher: ea:organization:electronic-artefacts
@@ -51,7 +51,7 @@ sources:
     url: https://www.loc.gov/standards/premis/
 citation:
   preferred: Electronic Artefacts. "Métadonnées, catalogage et mémoire culturelle". Article technique,
-    version 1.0.0, 2026.
+    version 1.1.0, 2026.
 tags:
   - Metadata
   - Cataloguing
@@ -67,24 +67,153 @@ translationOf: ea:publication:metadata-cataloguing-and-cultural-memory
 
 ## Problème
 
-Cette synthèse clarifie le sujet « Métadonnées, catalogage et mémoire culturelle » pour aider le lecteur à comprendre le vocabulaire, les enjeux pratiques et les liens avec les autres pages du graphe Electronic Artefacts.
+La culture numérique crée d'énormes quantités de fichiers, pages, exportations, enregistrements, captures d'écran, notes, codes et fragments de médias. Sans métadonnées, ces objets perdent rapidement leur contexte. Un fichier peut encore ouvrir, mais n'explique plus qui l'a fait, pourquoi il existe, à quoi il se rapporte, à savoir s'il peut être utilisé ou comment il a changé.
+
+Le problème n'est pas seulement technique. Les métadonnées sont une mémoire culturelle. Il préserve les conditions qui rendent l'interprétation possible. Sans elle, les archives deviennent des archives. La recherche devient une supposition. Les graphes de connaissances deviennent des cartes faibles.
+
+Electronic Artefacts a besoin de métadonnées parce que son travail croise les logiciels, le son, la recherche, la conception, l'art et les systèmes. Le même objet peut être une sortie de projet, des preuves pour une revendication, un artefact préservé et une source pour les travaux futurs.
+
+## Présentation
+
+Les métadonnées sont des informations structurées sur une ressource. Elle peut être descriptive, administrative, structurelle ou axée sur la préservation. Les métadonnées descriptives aident à identifier et à découvrir un objet. Droits des métadonnées administratives, propriétés techniques et contexte de gestion. Les métadonnées structurelles expliquent les parties et les relations. La préservation des métadonnées enregistre les actions, les agents, les formats et la fixité.
+
+Pour le centre de connaissances, les métadonnées ne sont pas des documents cachés. Elle fait partie de la qualité des publications.
+
+## Contexte
+
+Dublin Core, METS et PREMIS proviennent de bibliothèques, d'archives et de contextes de préservation. Leurs détails diffèrent, mais ils partagent une prémisse : les ressources numériques nécessitent un contexte structuré.
+
+Electronic Artefacts n'ont pas besoin de reproduire toutes les normes d'archives. Elle doit respecter la même logique. Un document public doit nommer le titre, l'identificateur, le créateur, la date, la source, les droits, la relation, la confiance et la version dans la mesure du possible.
+
+## Historique
+
+Le catalogage précède les systèmes numériques. Bibliothèques, musées et archives ont élaboré des pratiques descriptives pour rendre les collections découvrables et responsables. Les réseaux numériques ont changé l'ampleur et la fragilité du problème. Les fichiers peuvent être copiés sans fin tout en perdant le contexte. Les liens peuvent circuler sans provenance. Les formats peuvent devenir obsolètes.
+
+Des normes de métadonnées sont apparues pour aborder différentes parties de cet environnement. Dublin Core offrait un vocabulaire général pour la description des ressources. METS a fourni un moyen d'encoder les métadonnées descriptives, administratives et structurelles pour les objets de bibliothèque numérique. PREMIS est axé sur la conservation des métadonnées.
+
+## Concepts fondamentaux
+
+Identification : une référence stable à une ressource.
+
+Titre : le nom utilisé pour identifier la ressource.
+
+Créateur : la personne ou l'organisation responsable de la création.
+
+Source : la ressource dont une autre ressource provient.
+
+Droits: contexte juridique et d'utilisation.
+
+Relation : une connexion structurée à une autre ressource.
+
+Fixité : preuve qu'un dossier n'a pas changé de façon inattendue.
 
 ## Architecture
 
-Le sujet est présenté à travers ses composants, ses relations avec les concepts voisins et les décisions de conception qu’il implique.
+Une architecture de métadonnées nécessite un schéma, un vocabulaire, une validation et un chemin de publication. Le schéma définit les champs requis. Le vocabulaire maintient les termes cohérents. Validation des captures valeurs manquantes ou mal formées. La publication expose les métadonnées aux lecteurs, aux moteurs de recherche et aux machines.
+
+Electronic Artefacts implémente cela par frontmatière, schémas d'entité, schémas de relation, pages générées, JSON-LD et documents de recherche. L'architecture est la plus forte lorsque l'article prose et les métadonnées de la machine sont d'accord.
 
 ## Mise en œuvre
 
-La page met l’accent sur les usages concrets, les contraintes de gouvernance et les conditions d’application dans un système réel.
+La mise en œuvre devrait commencer par des métadonnées viables minimales pour chaque document public : identifiant, type, titre, résumé, état, maturité, dates, auteur, éditeur, sujets et sources. Pour les objets sensibles à la conservation, ajoutez format, droits, provenance, fixité et relation aux fichiers originaux.
+
+Les métadonnées devraient être examinées lorsque le contenu change. Un article modifié devrait être mis à jour. Un concept spéculatif ne doit pas prétendre être canonique. Une source doit inclure accessibleÀ quand elle est Web.
+
+## Applications pratiques
+
+Les métadonnées améliorent la recherche en donnant aux documents des sujets et des descriptions clairs.
+
+Il améliore la navigation en permettant la production de contenu connexe à partir d'entités réelles.
+
+Il améliore la conservation en enregistrant l'origine, le format et le changement.
+
+Il améliore la confiance en montrant ce dont dépend une revendication.
+
+En V6, les métadonnées peuvent relier culture, métier, institutions, techniques et sources. Dans Palimpsests, il peut préserver les résidus audio et visuels. Dans ORETH, il peut documenter les résultats d'analyse et le contexte d'écoute automatique.
+
+## Outils
+
+Les outils utiles incluent les vocabulaires Dublin Core, PREMIS, METS, JSON-LD, RDF, YAML front matter, checksums, inventaires de fichiers, registres de sources, scripts de validation et génération de graphes de quartier.
 
 ## Éléments de preuve
 
-Les sources, relations et éléments de contexte restent associés à la fiche pour distinguer synthèse éditoriale, preuve et référence.
+Le centre de connaissances démontre déjà la valeur des métadonnées. Chaque entité porte le type, le statut, la maturité, la confiance, les dates et les sujets. Les pages générées transforment ces documents en surfaces de connaissances publiques.
+
+## Méthode éditoriale
+
+Les éditeurs devraient traiter les métadonnées comme de l'écriture. Une vague étiquette abstraite ou large affaiblit l'article. Une liste de sujets précise rend l'enregistrement découvrable et aide les futurs auteurs à y faire un lien.
+
+Les métadonnées devraient également enregistrer l'incertitude. Si une date est approximative, si l'attribution n'est pas claire ou si les droits sont inconnus, le dossier devrait le dire plutôt que de masquer l'écart.
+
+## Erreurs courantes
+
+La première erreur est de reporter les métadonnées jusqu'à la fin. Le contexte est plus facile à saisir lorsque le travail est créé.
+
+La deuxième erreur est la surpersonnalisation. Un vocabulaire privé peut se sentir expressif mais devenir difficile à intégrer.
+
+La troisième erreur est de traiter les étiquettes comme assez. Mots-clés contenu de groupe; métadonnées explique les ressources.
+
+## Incidences des Electronic Artefacts
+
+Electronic Artefacts peuvent utiliser des métadonnées pour connecter la production créative à la mémoire de recherche. Ceci est important parce que le site ne présente pas seulement des travaux. Il documente un écosystème.
+
+Le Knowledge Hub devrait continuer d'ajouter des notices conceptuelles, des sujets d'article, des pistes de sources et des énoncés de relations avant que le volume de contenu ne recouvre la structure.
+
+## Rôle du graphe de connaissances
+
+Les métadonnées sont le pont entre une page et un graphique. Un article de prose peut expliquer une idée, mais les métadonnées rendent cet article adressable, triable et réutilisable. Les sujets le connectent aux entités. Des sources le relient aux preuves. Les dates rendent la révision visible. Les niveaux de confiance indiquent aux lecteurs à quel point l'enregistrement est stable.
+
+Dans Electronic Artefacts, cela est particulièrement important parce que de nombreuses pages ne sont pas simplement des articles. Une page de projet peut être la preuve d'un concept. Une page de programme peut mettre en place un cadre. Une page technologique peut appuyer plusieurs publications. Les métadonnées permettent à ces rôles de rester distincts tout en restant connectés.
+
+## Critères d'évaluation
+
+Un enregistrement des métadonnées devrait être évalué par l'utilité et non par la densité. La meilleure question n'est pas « avons-nous rempli chaque champ? » mais « cela aidera-t-il un futur lecteur à comprendre, récupérer, faire confiance ou préserver l'objet? »
+
+De bonnes métadonnées nomment clairement la ressource, la distinguent de la page qui la décrit, identifient les créateurs et les sources, les droits d'enregistrement le cas échéant, relient les documents connexes et évitent toute fausse précision. Lorsque l'information est inconnue, le dossier devrait préserver l'incertitude plutôt que d'inventer la certitude.
+
+## Norme éditoriale
+
+Le centre de connaissances devrait traiter les modifications apportées aux métadonnées comme des modifications rédactionnelles. Si une source est ajoutée, un concept devient canonique ou un article est substantiellement révisé, les métadonnées devraient changer avec le texte. Ceci maintient le graphique honnête. Il rend également les documents de recherche générés et JSON-LD reflète l'état de publication réel.
+
+## Voie de lecture
+
+Les métadonnées peuvent se sentir abstraites jusqu'à ce qu'un lecteur perde son contexte. L'article devrait donc guider les lecteurs de questions quotidiennes, comme « quel est ce fichier ? » ou « d'où vient cette source ? », vers des concepts d'archives comme la provenance, la conservation des métadonnées et les relations graphiques. Le chemin le plus fort mène de [Métadonnées](/fr/knowledge/concepts/metadata/) à [Provenance](/fr/knowledge/concepts/provenance/), [Préservation numérique](/fr/knowledge/concepts/digital-preservation/) et [V6](/fr/projects/v6/).
+
+## Travaux futurs
+
+Les futures entrées devraient porter sur la conservation des métadonnées, les métadonnées sur les droits, la critique des sources, la durabilité des formats de fichiers, les comptes de contrôle, le catalogage des descriptions d'archives audio et graphiques.
+
+## Concepts connexes
+
+Lire [Métadonnées](/fr/knowledge/concepts/metadata/), [Provenance](/fr/knowledge/concepts/provenance/), [Préservation numérique](/fr/knowledge/concepts/digital-preservation/), [Graphe de connaissances](/fr/knowledge/concepts/knowledge-graph/) et [V6](/fr/projects/v6/).
+
+## Lecture suggérée
+
+Commencez par Dublin Core pour une description générale, puis étudiez METS et PREMIS pour la bibliothèque numérique et les contextes de préservation.
+
+## Articles connexes
+
+Continuer avec [Conservation numérique et archives vivantes](/fr/publications/digital-preservation-and-living-archives/) et [Graphes de connaissances pour l'infrastructure culturelle](/fr/publications/knowledge-graphs-for-cultural-infrastructure/).
+
+## Glossaire
+
+Métadonnées : information structurée sur une ressource.
+
+Catalogage: la pratique de la description des ressources pour la découverte et la gestion.
+
+PREMIS : une norme de conservation des métadonnées.
+
+METS : une norme pour l'encodage des métadonnées d'objets de bibliothèque numérique.
 
 ## Limites
 
-Les limites décrivent ce que la fiche ne couvre pas encore, les sources disponibles et les conditions d’usage documentées.
+Les métadonnées peuvent créer une fausse autorité. Un dossier bien structuré peut encore être erroné. Un examen, des sources et des niveaux de confiance demeurent nécessaires.
+
+Les métadonnées coûtent également du temps. La bonne réponse n'est pas de tout décrire de façon exhaustive, mais de saisir le contexte dont les futurs lecteurs auront réellement besoin.
 
 ## Références
 
-Les sources principales restent disponibles dans le bloc de références de la fiche.
+- Initiative sur les métadonnées de Dublin Core. Conditions de métadonnées DCMI.
+- Bibliothèque du Congrès. Les MET.
+- Bibliothèque du Congrès. PRÉMIS.
+- Electronic Artefacts. V6, Registres de graphes de connaissances et de préservation numérique.

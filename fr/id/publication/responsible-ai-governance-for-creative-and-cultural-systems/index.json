@@ -16,10 +16,10 @@
   "maturity": "research",
   "confidence": "published",
   "version": {
-    "version": "1.0.0",
+    "version": "1.1.0",
     "createdAt": "2026-06-25",
     "publishedAt": "2026-06-25",
-    "modifiedAt": "2026-06-25"
+    "modifiedAt": "2026-07-12"
   },
   "authors": [
     {
@@ -92,15 +92,29 @@
     }
   ],
   "citation": {
-    "preferred": "Electronic Artefacts. \"Gouvernance responsable de l'IA pour les systèmes créatifs et culturels\". Article technique, version 1.0.0, 2026."
+    "preferred": "Electronic Artefacts. \"Gouvernance responsable de l'IA pour les systèmes créatifs et culturels\". Article technique, version 1.1.0, 2026."
   },
-  "bodyHtml": "<h2 id=\"probleme\">Problème</h2>\n<p>Cette synthèse clarifie le sujet « Gouvernance responsable de l’IA pour les systèmes créatifs et culturels » pour aider le lecteur à comprendre le vocabulaire, les enjeux pratiques et les liens avec les autres pages du graphe Electronic Artefacts.</p>\n<h2 id=\"architecture\">Architecture</h2>\n<p>Le sujet est présenté à travers ses composants, ses relations avec les concepts voisins et les décisions de conception qu’il implique.</p>\n<h2 id=\"mise-en-uvre\">Mise en œuvre</h2>\n<p>La page met l’accent sur les usages concrets, les contraintes de gouvernance et les conditions d’application dans un système réel.</p>\n<h2 id=\"elements-de-preuve\">Éléments de preuve</h2>\n<p>Les sources, relations et éléments de contexte restent associés à la fiche pour distinguer synthèse éditoriale, preuve et référence.</p>\n<h2 id=\"limites\">Limites</h2>\n<p>Les limites décrivent ce que la fiche ne couvre pas encore, les sources disponibles et les conditions d’usage documentées.</p>\n<h2 id=\"references\">Références</h2>\n<p>Les sources principales restent disponibles dans le bloc de références de la fiche.</p>\n",
+  "bodyHtml": "<h2 id=\"probleme\">Problème</h2>\n<p>Les organisations créatives et culturelles adoptent l’IA pour l’écriture, la recherche, la génération d’images, l’analyse audio, la rédaction de métadonnées, la traduction, le codage et les opérations. Le risque n’est pas seulement qu’un modèle produise une mauvaise réponse. Le risque plus grand est que l’IA devienne une infrastructure discrètement sans qu’il soit clairement question de propriété, d’examen, de suivi des sources, de politique des droits ou d’intervention en cas d’incident.</p>\n<p>Les énoncés éthiques génériques de l’IA ne résolvent pas cela. Un studio a besoin d’une gouvernance opérationnelle : ce qui peut être automatisé, ce qui nécessite un examen, quels matériaux peuvent être envoyés à un modèle, comment les sources sont enregistrées, comment les extrants sont étiquetés et quand un système doit refuser ou augmenter.</p>\n<h2 id=\"presentation\">Présentation</h2>\n<p>La gouvernance responsable de l’IA est la discipline qui consiste à déterminer comment les systèmes d’IA sont sélectionnés, conçus, évalués, déployés, surveillés et retraités. Elle comprend des obligations juridiques, mais elle est plus large que la conformité. Il relie la gestion des risques, la conception de produits, les normes éditoriales, la sécurité, la vie privée, les droits et le jugement humain.</p>\n<p>La loi européenne sur l’IA et le cadre de gestion des risques de l’IA NIST donnent une orientation claire. La gouvernance de l’IA passe de principes abstraits à des rôles documentés, à des contrôles des risques, à la transparence, à la responsabilisation et à la gestion du cycle de vie. Même lorsqu’un studio créatif n’est pas un fournisseur de modèles de fondation, il agit toujours en tant que déployeur, intégrateur, éditeur ou concepteur de système en aval.</p>\n<p>Electronic Artefacts devraient traiter cela comme faisant partie de leur langage de conception. Des systèmes tels que VASTE, ORETH, Palimpsests et le Knowledge Hub peuvent utiliser l’IA, mais ils devraient exposer la provenance, préserver l’organisme humain et garder l’interprétation culturelle distincte de la production du modèle.</p>\n<h2 id=\"architecture\">Architecture</h2>\n<p>Une architecture responsable de gouvernance de l’IA comprend l’inventaire des systèmes, la classification des cas d’utilisation, la politique sur les données, les dossiers des modèles et des fournisseurs, les limites des outils et des délais, l’examen humain, la saisie de la provenance, l’évaluation, le traitement des incidents, le contrôle de l’accès, les événements de vérification et la divulgation publique, le cas échéant.</p>\n<h2 id=\"inventaire-des-cas-d-utilisation\">Inventaire des cas d ’ utilisation</h2>\n<p>La gouvernance commence par un inventaire. Les équipes doivent savoir où l’IA est utilisée avant de pouvoir la gérer. Un cas d’utilisation peut être la génération de contenu public, la recherche interne, la transcription d’archives, la variation d’image, la segmentation audio, la suggestion de métadonnées, l’assistance en code, la communication client ou la publication automatisée.</p>\n<p>Chaque cas d’utilisation devrait enregistrer le but, les utilisateurs, les sources de données, le fournisseur de modèles, les extrants, le niveau d’examen, les personnes touchées et les conséquences d’échec. Cela n’a pas besoin d’être bureaucratique. Une petite table est meilleure que l’adoption invisible.</p>\n<p>L’inventaire devrait distinguer les expériences des systèmes de production. Un prototype privé qui résume les articles publics est différent d’un workflow qui réécrit les documents clients ou publie des métadonnées d’archives.</p>\n<h2 id=\"classification-des-risques\">Classification des risques</h2>\n<p>Le risque dépend du contexte. Le même modèle peut présenter un faible risque pour les titres de brainstorming et un risque élevé pour la prise de décisions concernant les personnes, les droits ou les preuves publiques. Une archive culturelle a des préoccupations particulières parce que les métadonnées peuvent affecter l’attribution, la réputation, la sensibilité culturelle et l’interprétation future.</p>\n<p>Classer les cas d’utilisation par impact. L’aide à faible impact peut être plus légère. Les réclamations publiques, les déclarations de droits, les données à caractère personnel, le matériel culturel restreint et la publication irréversible nécessitent des contrôles plus stricts.</p>\n<p>L’objectif n’est pas de bloquer l’expérimentation. Il s’agit d’aligner les efforts d’examen sur les conséquences.</p>\n<h2 id=\"examen-humain\">Examen humain</h2>\n<p>L’examen humain ne devrait pas être vague. Un examinateur doit savoir ce qu’il vérifie : exactitude des faits, soutien de la source, tonalité, droits, vie privée, sensibilité culturelle, accessibilité, sécurité ou ajustement de la marque.</p>\n<p>Pour le travail créatif, la revue protège également la paternité. L’IA peut proposer, transformer et annoter, mais elle ne doit pas écraser silencieusement les décisions artistiques. Un système utile montre des alternatives, préserve les versions et rend l’acceptation explicite.</p>\n<p>En termes d’Electronic Artefacts, l’intelligence augmentée est le cadre préféré. L’IA devrait élargir la perception et la mémoire tout en laissant le jugement responsable aux gens.</p>\n<h2 id=\"provenance\">Provenance</h2>\n<p>La gouvernance de l’IA échoue lorsque les extrants perdent leur origine. Un champ texte, image, annotation audio ou métadonnées devrait préserver suffisamment de provenance pour expliquer comment il a été produit. Cela peut inclure le modèle, le modèle rapide, les enregistrements sources, l’éditeur, la date, la version d’outil et l’état d’examen.</p>\n<p>La provenance n’exige pas la publication de tous les détails privés. Elle exige un dossier interne fiable et une politique de divulgation publique. Une image générée peut nécessiter une étiquette visible. Une ébauche de métadonnées assistée par l’IA peut n’exiger qu’une piste de vérification interne jusqu’à ce qu’elle soit approuvée.</p>\n<p>Pour les archives et les infrastructures culturelles, la provenance n’est pas des frais administratifs. Elle fait partie de l’intelligibilité future du travail.</p>\n<h2 id=\"droits-et-droit-d-auteur\">Droits et droit d’auteur</h2>\n<p>La gouvernance créative de l’IA doit inclure les droits. Les équipes devraient savoir si le matériel source peut être téléchargé vers un fournisseur modèle, si les extrants générés peuvent être publiés, si les questions de formation ont une incidence sur les achats et comment les accords de collaboration traitent l’aide à l’IA.</p>\n<p>Les droits et la provenance sont liés mais non identiques. Un système peut enregistrer avec précision qu’une sortie a été générée à partir d’une source et n’a toujours pas la permission d’utiliser cette source. Inversement, un workflow sous licence nécessite toujours des dossiers d’attribution et de transformation clairs.</p>\n<p>Le plus sûr par défaut est de garder le matériel sensible, client, non libéré et tiers hors des modèles externes, sauf autorisation et conditions contractuelles explicites.</p>\n<h2 id=\"confidentialite\">Confidentialité</h2>\n<p>Les outils d’IA transforment souvent le travail privé en traitement externe. Une invitation peut comprendre des noms, des emplacements, des détails sur la santé, des pouvoirs, des ébauches, des contrats ou du matériel de projet non publié. La gouvernance doit définir ce qui peut quitter l’infrastructure locale.</p>\n<p>Les contrôles de confidentialité devraient fonctionner avant les appels de modèle. La réaction après génération est trop tardive. Pour les assistants internes, les filtres de recherche et le routage du modèle devraient dépendre du rôle de l’utilisateur, de la tâche et de la classe de données.</p>\n<p>Les systèmes locaux ou à poids ouvert peuvent réduire l’exposition des fournisseurs, mais ils ne suppriment pas les obligations de confidentialité. Les journaux, les intégrations, les caches et les résumés générés peuvent tous conserver des informations sensibles.</p>\n<h2 id=\"evaluation\">Évaluation</h2>\n<p>L’IA responsable nécessite une évaluation liée à la tâche. Un assistant aux métadonnées devrait être mis à l’essai pour déterminer le soutien de la source, la validité du champ, les noms hallucinés et la confiance inappropriée. Un flux d’images créatives devrait être évalué pour les droits, la divulgation et le contrôle des processus. Un flux de travail d’agent devrait être évalué pour les limites de sécurité et de permission des outils.</p>\n<p>L’évaluation devrait comprendre des cas contradictoires, des sources ambiguës et des scénarios sans réponse. Un système qui produit toujours quelque chose peut être moins digne de confiance que celui qui peut s’abstenir.</p>\n<p>Conservez les dossiers d’évaluation avec la version modèle, la version rapide, la version corpus et la version de schéma d’outil. Autrement, les améliorations et les régressions ne peuvent être expliquées.</p>\n<h2 id=\"documentation\">Documentation</h2>\n<p>La documentation doit être écrite pour les exploitants, les évaluateurs et les futurs responsables. Elle devrait expliquer l’objet, la portée, les limites connues, les sources de données, le processus d’examen, la voie d’escalade et les règles de divulgation publique.</p>\n<p>Pour les systèmes publics, la documentation peut faire partie de la confiance. Une page de centre de connaissances devrait identifier son auteur, son éditeur, sa date de modification et ses sources. Une future page assistée par l’IA devrait également être en mesure de dire comment l’IA a été utilisée si cette utilisation affecte l’interprétation.</p>\n<p>La documentation ne remplace pas les contrôles. C’est la carte qui permet d’inspecter les contrôles.</p>\n<h2 id=\"reponse-aux-incidents\">Réponse aux incidents</h2>\n<p>Les incidents liés à l’IA comprennent des erreurs factuelles, des fuites de renseignements personnels, des appels d’outils dangereux, des extrants biaisés, des violations des droits, une injection rapide, une publication non autorisée et une provenance trompeuse. La gouvernance a besoin d’un chemin pour les rapports, trier, corriger et postmortem.</p>\n<p>Un petit studio peut garder cette légèreté. Définir qui peut interrompre un workflow d’IA, comment les corrections publiques sont émises, où les événements d’audit sont stockés et comment les dossiers touchés sont examinés.</p>\n<p>La réponse à l’incident devrait être reprise dans l’évaluation. Si un système échoue dans la production, ajouter un test qui l’aurait attrapé.</p>\n<h2 id=\"implications-pour-electronic-artefacts\">Implications pour Electronic Artefacts</h2>\n<p>Pour VASTE, la gouvernance signifie les limites des outils, les permissions graphiques, les événements d’audit et l’exécution contextuelle. Pour ORETH, cela signifie une séparation soigneuse entre les mesures d’écoute et l’interprétation artistique. Pour Palimpsests, cela signifie documenter les milieux synthétiques ou transformés sans réduire l’œuvre à une étiquette d’avertissement. Pour le Knowledge Hub, cela signifie l’édition éditoriale basée sur la source.</p>\n<p>Le modèle commun est l’infrastructure avec la mémoire. Toute action d’IA qui change les connaissances, les médias ou la représentation du public devrait laisser une trace responsable.</p>\n<h2 id=\"mise-en-uvre\">Mise en œuvre</h2>\n<p>Commencez par un registre d’utilisation d’IA d’une page et une liste de vérification. Pour chaque workflow, définir les données autorisées, les données interdites, le fournisseur de modèles, le type de sortie, l’examinateur humain, la politique de conservation et la règle de divulgation.</p>\n<p>Ensuite, implémentez les contrôles dans le système : récupération basée sur le rôle, modèles rapides sous contrôle de version, schémas d’outils, portes d’approbation, télémétrie, champs de provenance et validation. Ne vous fiez pas à la seule politique lorsque le code peut empêcher un comportement dangereux.</p>\n<p>Enfin, examinez le registre tous les trimestres ou chaque fois qu’un modèle, un fournisseur, un ensemble de données ou un processus de publication change.</p>\n<h2 id=\"elements-de-preuve\">Éléments de preuve</h2>\n<p>La Commission européenne décrit la loi sur l’IA comme un cadre réglementaire comportant un calendrier d’application échelonné, y compris des dispositions déjà en vigueur et une applicabilité plus large le 2 août 2026. Le cadre de gestion des risques d’IA du NIST offre une structure volontaire pour la cartographie, la mesure, la gestion et la gestion des risques d’IA. Le Profil d’IA générative du NIST identifie les risques et les actions propres aux systèmes d’IA génératifs.</p>\n<p>Ensemble, ces sources indiquent une gouvernance du cycle de vie opérationnelle plutôt que des déclarations éthiques ponctuelles.</p>\n<h2 id=\"limites\">Limites</h2>\n<p>Cet article n’est pas un avis juridique. Les obligations en matière d’IA dépendent de la compétence, du rôle, du secteur, de l’utilisation des systèmes et du contexte contractuel. La gouvernance peut réduire les risques, mais elle ne peut éliminer l’incertitude dans les environnements de modèle, de plate-forme et de réglementation en évolution rapide.</p>\n<p>Les petites équipes ont également besoin de proportionnalité. Un processus de gouvernance trop lourd sera ignoré. L’objectif pratique est suffisamment clair pour guider les décisions réelles.</p>\n<h2 id=\"concepts-connexes\">Concepts connexes</h2>\n<p>Lire <a href=\"/fr/knowledge/concepts/generative-ai/\">IA générative</a>, <a href=\"/fr/knowledge/concepts/augmented-intelligence/\">Intelligence augmentée</a>, <a href=\"/fr/knowledge/concepts/provenance/\">Provenance</a>, <a href=\"/fr/knowledge/concepts/systems-thinking/\">Systèmes de réflexion</a> et <a href=\"/fr/knowledge/concepts/contextual-execution/\">Exécution contextuelle</a>.</p>\n<h2 id=\"articles-connexes\">Articles connexes</h2>\n<p>Continuer avec <a href=\"/fr/publications/c2pa-content-credentials-and-generative-media-provenance/\">C2PA Titres de compétence et provenance des médias génériques</a>, <a href=\"/fr/publications/observability-for-ai-agents-and-tool-calling-systems/\">Observabilité des agents d’IA et des systèmes d’appel d’outils</a> et <a href=\"/fr/publications/retrieval-augmented-generation-and-knowledge-systems/\">Systèmes de production et de connaissances enrichis par récupération</a>.</p>\n<h2 id=\"glossaire\">Glossaire</h2>\n<p>Gouvernance de l’IA: le système d’exploitation des décisions, des contrôles et des dossiers autour de l’utilisation de l’IA.</p>\n<p>Registre des cas d’utilisation : inventaire de l’endroit et des raisons pour lesquelles l’IA est utilisée.</p>\n<p>Examen humain : inspection responsable des extrants de l’IA en fonction de critères explicites.</p>\n<p>Provenance : information sur les sources, les transformations, les personnes, les outils et les décisions.</p>\n<p>Incident : une défaillance liée à l’IA qui nécessite une correction, un confinement ou un examen.</p>\n<h2 id=\"references\">Références</h2>\n<ul>\n<li>Commission européenne. Loi sur l’IA.</li>\n<li>Institut national de normalisation et de technologie. Cadre de gestion des risques de l’IA.</li>\n<li>Institut national de normalisation et de technologie. Cadre de gestion des risques de l’intelligence artificielle Profil de l’intelligence artificielle.</li>\n</ul>\n",
   "headings": [
     "Problème",
+    "Présentation",
     "Architecture",
+    "Inventaire des cas d ' utilisation",
+    "Classification des risques",
+    "Examen humain",
+    "Provenance",
+    "Droits et droit d'auteur",
+    "Confidentialité",
+    "Évaluation",
+    "Documentation",
+    "Réponse aux incidents",
+    "Implications pour Electronic Artefacts",
     "Mise en œuvre",
     "Éléments de preuve",
     "Limites",
+    "Concepts connexes",
+    "Articles connexes",
+    "Glossaire",
     "Références"
   ],
   "headingItems": [
@@ -111,8 +125,63 @@
     },
     {
       "level": 2,
+      "title": "Présentation",
+      "id": "presentation"
+    },
+    {
+      "level": 2,
       "title": "Architecture",
       "id": "architecture"
+    },
+    {
+      "level": 2,
+      "title": "Inventaire des cas d ' utilisation",
+      "id": "inventaire-des-cas-d-utilisation"
+    },
+    {
+      "level": 2,
+      "title": "Classification des risques",
+      "id": "classification-des-risques"
+    },
+    {
+      "level": 2,
+      "title": "Examen humain",
+      "id": "examen-humain"
+    },
+    {
+      "level": 2,
+      "title": "Provenance",
+      "id": "provenance"
+    },
+    {
+      "level": 2,
+      "title": "Droits et droit d'auteur",
+      "id": "droits-et-droit-d-auteur"
+    },
+    {
+      "level": 2,
+      "title": "Confidentialité",
+      "id": "confidentialite"
+    },
+    {
+      "level": 2,
+      "title": "Évaluation",
+      "id": "evaluation"
+    },
+    {
+      "level": 2,
+      "title": "Documentation",
+      "id": "documentation"
+    },
+    {
+      "level": 2,
+      "title": "Réponse aux incidents",
+      "id": "reponse-aux-incidents"
+    },
+    {
+      "level": 2,
+      "title": "Implications pour Electronic Artefacts",
+      "id": "implications-pour-electronic-artefacts"
     },
     {
       "level": 2,
@@ -128,6 +197,21 @@
       "level": 2,
       "title": "Limites",
       "id": "limites"
+    },
+    {
+      "level": 2,
+      "title": "Concepts connexes",
+      "id": "concepts-connexes"
+    },
+    {
+      "level": 2,
+      "title": "Articles connexes",
+      "id": "articles-connexes"
+    },
+    {
+      "level": 2,
+      "title": "Glossaire",
+      "id": "glossaire"
     },
     {
       "level": 2,
