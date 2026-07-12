@@ -102,6 +102,8 @@ Deterministic kernel mechanics
 
 These roles and their tested invariants are expanded in [The Five VASTE Primitives](/knowledge/concepts/vaste-five-primitives/).
 
+In a graph projection, only Vertices and the Ties between them are drawn as graph objects. Extensions are attached to Vertices rather than represented as nodes. Every Vertex is exposed through its own Surface membrane and resolved in a local Environment; selecting that Vertex reveals the Extensions it carries, the Actions that Environment admits and any Vertices contained there. A kernel may be present, but it is optional and is not required at the center of a root Vertex.
+
 ## Governed execution
 
 An Action is routed through a registered namespace, resolved against a System and Environment, checked for access and authority, interpreted by the execution engine, then expressed as typed effects. Only the runtime effect layer may mutate canonical state. Execution receipts, event records and replay surfaces make the path inspectable; this does not mean every backend is durable or every external effect is reversible.

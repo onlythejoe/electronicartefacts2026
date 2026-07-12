@@ -56,9 +56,13 @@ Une Action décrit une intention admise. Son contrat impose forme déclarative, 
 
 Surface est la membrane sans autorité par laquelle un Vertex-System est observé ou sollicité. Son invariant refuse les champs de runtime, store, dispatch ou mutation. `SurfaceSpec` enrichit cette membrane ; lifecycle et projection restent au runtime. Web, shell, API ou stream sont des supports, pas l’identité de la Surface.
 
+Cette membrane appartient au Vertex sélectionné ; elle n’est pas un nœud supplémentaire dans une vue du graphe. Cette vue dessine uniquement Vertex et Ties, puis expose Surface, Environment, extensions attachées et Actions disponibles depuis le Vertex sélectionné.
+
 ## Environment
 
 Environment est immuable et recréé pour chaque exécution. Il transporte System résolu, identité, claims d’autorité, permissions, scope, trace, tick, budgets et éventuellement une position dans le graphe. Il ne conserve explicitement ni persistance, ni état métier, ni résultat entre deux exécutions.
+
+Opérationnellement, c’est aussi là que le runtime résout le jeu d’Actions disponible au niveau d’un Vertex et le contexte local de contenance des Vertex imbriqués. Ce contexte s’inspecte depuis le Vertex ; Environment et Action ne sont pas dessinés comme nœuds du graphe.
 
 ## Frontières essentielles
 

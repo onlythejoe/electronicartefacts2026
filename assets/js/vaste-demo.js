@@ -1,10 +1,5 @@
 const palettes = {
   vertex: "#7dd3fc",
-  action: "#a78bfa",
-  surface: "#2dd4bf",
-  environment: "#f472b6",
-  extension: "#fbbf24",
-  system: "#e2e8f0",
 };
 
 const copy = {
@@ -24,7 +19,7 @@ const copy = {
     detached: (child) => `${child} detached`,
     alreadyRoot: "This Vertex is already at the root",
     root: "ROOT",
-    dragHint: "Drag a nucleus into a membrane to nest it",
+    dragHint: "Drag a Vertex into another Vertex’s Environment to nest it",
     linkHint: "Select two Vertices to create a Tie",
     none: "None",
     noActions: "No active Action",
@@ -46,7 +41,7 @@ const copy = {
     detached: (child) => `${child} détaché`,
     alreadyRoot: "Ce Vertex est déjà à la racine",
     root: "RACINE",
-    dragHint: "Glissez un noyau dans une membrane pour l’imbriquer",
+    dragHint: "Glissez un Vertex dans l’Environment d’un autre pour l’imbriquer",
     linkHint: "Sélectionnez deux Vertex pour créer une Tie",
     none: "Aucun",
     noActions: "Aucune Action active",
@@ -59,45 +54,38 @@ const sceneBlueprints = {
     label: "RUNTIME / SYSTEM:EA",
     state: { en: "SYSTEM ACTIVE", fr: "SYSTÈME ACTIF" },
     nodes: [
-      ["system:ea:root", "Root", "system", 0.5, 0.5, 126, "The canonical root Vertex closes the Electronic Artefacts System. Every visible element belongs to its structural closure.", "Le Vertex root canonique clôt le System Electronic Artefacts. Tout élément visible appartient à sa clôture structurelle.", { state: "ACTIVE · REV 2048", properties: ["type · system:root", "visibility · private", "version · 1"], surface: ["system:surface:operations", "projection · authorityless"], environment: ["system · system:ea", "scope · runtime", "budget · 48 work units"], extensions: ["intelligence · enabled", "world-model · enabled"], actions: ["runtime:observe · running", "graph:read · admitted"] }],
-      ["extension:intelligence", "Intelligence", "extension", 0.39, 0.38, 30, "Optional advisory cognition. It can recommend and contextualize, but owns neither truth nor runtime authority.", "Cognition consultative optionnelle. Elle recommande et contextualise, sans posséder ni vérité ni autorité runtime.", { state: "ENABLED · 1.0.0", properties: ["role · advisory cognition", "activation · eager", "authority · none"], surface: ["intelligence:surface:advisory", "projection · read-only"], environment: ["rtos · region", "tick budget · 16", "locality · 2"], extensions: [], actions: ["intelligence:observe · ready", "intelligence:recommend · idle"] }],
-      ["extension:world-model", "World Model", "extension", 0.62, 0.39, 34, "Actor-scoped provisional beliefs, confidence and clarification debt. Its graph remains advisory until explicit promotion.", "Croyances provisoires, confiance et dette de clarification liées à l’Actor. Son graphe reste consultatif jusqu’à promotion explicite.", { state: "ENABLED · 1.0.0", properties: ["truth · provisional", "scope · actor", "dependency · actor"], surface: ["world-model:surface:graph-frame", "projection · live beliefs"], environment: ["rtos · region", "tick budget · 8", "locality · 1"], extensions: ["actor · required"], actions: ["world-model:delta.ingest · running", "world-model:onboarding.ingest · ready"] }],
-      ["actor:founder", "Founding Actor", "vertex", 0.62, 0.45, 20, "An Actor is a specialized Vertex supplied by the Actor extension. Authority is resolved from graph state and the current Environment.", "Un Actor est un Vertex spécialisé fourni par l’extension Actor. Son autorité est résolue depuis le graphe et l’Environment courant.", { state: "PRESENT · AUTH RESOLVED", properties: ["type · actor:identity", "scope · situated", "claims · 2"], surface: ["actor:surface:presence", "exposure · internal"], environment: ["location · system:ea:root", "session · active", "authority · contextual"], extensions: ["actor · enabled"], actions: ["actor:session.open · complete", "graph:read · admitted"] }],
-      ["action:publish", "Publish", "action", 0.69, 0.62, 24, "Declarative intent admitted through namespace, capability, policy and runtime effect gates.", "Intention déclarative admise par les contrôles de namespace, capability, policy et effets runtime.", { state: "RUNNING · EFFECT 2/3", properties: ["declarative · true", "replayable · true", "deterministic · true"], surface: ["surface:public", "interaction · submit"], environment: ["trace · ea-publish-024", "authority · admitted", "budget · 1 effect"], extensions: ["knowledge · handler"], actions: ["knowledge:publish · running"] }],
-      ["surface:public", "Public Surface", "surface", 0.42, 0.65, 28, "An authorityless membrane that binds observable graph data to interactions. It is a view, never canonical truth.", "Membrane sans autorité reliant les données observables du graphe aux interactions. C’est une vue, jamais la vérité canonique.", { state: "PROJECTED · PUBLIC", properties: ["kind · membrane", "authority · none", "exposure · public"], surface: ["binding · vertex + tie", "action binding · publish"], environment: ["medium · browser", "locale · fr-FR", "access · public"], extensions: ["knowledge · contributor"], actions: ["surface:project · complete", "knowledge:publish · available"] }],
-      ["environment:local", "Environment", "environment", 0.31, 0.53, 25, "Immutable, ephemeral execution context carrying System, Actor claims, location, authority, timing and budgets.", "Contexte d’exécution immuable et éphémère portant System, claims d’Actor, position, autorité, temps et budgets.", { state: "EPHEMERAL · TRACE 024", properties: ["immutable · true", "persistence · none", "carry-over · none"], surface: ["observed by · operations"], environment: ["system · system:ea", "location · root", "work budget · 48"], extensions: [], actions: ["environment:read · complete"] }],
-      ["vertex:record", "Knowledge", "vertex", 0.50, 0.52, 20, "Serializable graph state with stable identity, namespaced type, data and System membership.", "État de graphe sérialisable avec identité stable, type namespaced, données et appartenance au System.", { state: "OBSERVABLE · VERSION 12", properties: ["type · knowledge:record", "visibility · public", "version · 12"], surface: ["surface:public", "binding · vertex"], environment: ["system · system:ea", "location · root"], extensions: ["knowledge · owner"], actions: ["knowledge:publish · available"] }],
+      ["system:ea:root", "Root", "vertex", 0.5, 0.5, 126, "The canonical root Vertex closes the Electronic Artefacts System. Its membrane has no required kernel; its Environment governs contained Vertices and available Actions.", "Le Vertex root canonique clôt le System Electronic Artefacts. Sa membrane n’impose aucun noyau ; son Environment régit les Vertex contenus et les Actions disponibles.", { state: "ACTIVE · REV 2048", properties: ["type · system:root", "visibility · private", "kernel · optional / absent"], surface: ["membrane · system:surface:operations", "projection · authorityless"], environment: ["system · system:ea", "location · root", "contained vertices · 4", "budget · 48 work units"], extensions: ["intelligence · enabled", "world-model · enabled", "actor · enabled", "knowledge · enabled"], actions: ["runtime:observe · running", "graph:read · admitted"] }],
+      ["vertex:cognition", "Advisory Cognition", "vertex", 0.38, 0.39, 28, "A domain Vertex whose capabilities come from the Intelligence extension. The extension is attached metadata, not a graph node.", "Un Vertex de domaine dont les capacités viennent de l’extension Intelligence. L’extension est attachée au Vertex, ce n’est pas un nœud du graphe.", { state: "OBSERVABLE · READY", properties: ["type · cognition:advisory", "authority · none", "kernel · optional"], surface: ["membrane · advisory", "projection · read-only"], environment: ["location · system:ea:root", "tick budget · 16", "locality · 1"], extensions: ["intelligence · enabled"], actions: ["intelligence:observe · ready", "intelligence:recommend · idle"] }],
+      ["vertex:world-model", "Situated World Model", "vertex", 0.61, 0.38, 31, "A Vertex carrying provisional actor-scoped beliefs through the World Model extension. Its Environment keeps those beliefs advisory until explicit promotion.", "Un Vertex portant des croyances provisoires liées à l’Actor via l’extension World Model. Son Environment les maintient consultatives jusqu’à promotion explicite.", { state: "OBSERVABLE · PROVISIONAL", properties: ["type · cognition:world-model", "truth · provisional", "scope · actor"], surface: ["membrane · graph-frame", "projection · live beliefs"], environment: ["location · system:ea:root", "tick budget · 8", "locality · 1"], extensions: ["world-model · enabled"], actions: ["world-model:delta.ingest · running", "world-model:onboarding.ingest · ready"] }],
+      ["actor:founder", "Founding Actor", "vertex", 0.64, 0.51, 22, "An Actor is a Vertex carrying the Actor extension. Authority is resolved from graph state and this Vertex’s current Environment.", "Un Actor est un Vertex portant l’extension Actor. Son autorité est résolue depuis le graphe et l’Environment courant de ce Vertex.", { state: "PRESENT · AUTH RESOLVED", properties: ["type · actor:identity", "scope · situated", "claims · 2"], surface: ["membrane · presence", "exposure · internal"], environment: ["location · system:ea:root", "session · active", "authority · contextual"], extensions: ["actor · enabled"], actions: ["actor:session.open · complete", "graph:read · admitted"] }],
+      ["vertex:public-knowledge", "Public Knowledge", "vertex", 0.42, 0.63, 27, "A public Vertex contained by Root. Its own Surface is the public membrane; publish remains an Action exposed only inside its Environment.", "Un Vertex public contenu par Root. Sa propre Surface est la membrane publique ; Publish reste une Action exposée uniquement dans son Environment.", { state: "OBSERVABLE · PUBLIC", properties: ["type · knowledge:record", "visibility · public", "version · 12"], surface: ["membrane · public", "binding · vertex + tie", "authority · none"], environment: ["location · system:ea:root", "medium · browser", "access · public", "action set · knowledge"], extensions: ["knowledge · enabled"], actions: ["surface:project · complete", "knowledge:publish · available"] }],
     ],
-    links: [[0, 1, "system:extension"], [0, 2, "system:extension"], [2, 3, "actor:owns-model"], [3, 4, "actor:requests"], [4, 5, "action:projects"], [6, 4, "environment:admits"], [7, 5, "surface:binds"]],
-    parents: [[0, 1], [0, 2], [2, 3], [0, 4], [0, 5], [0, 6], [0, 7]],
+    links: [[0, 1, "system:contains"], [0, 2, "system:contains"], [0, 3, "system:contains"], [0, 4, "system:contains"], [3, 2, "actor:scopes"], [3, 4, "actor:publishes"]],
+    parents: [[0, 1], [0, 2], [0, 3], [0, 4]],
   },
   portable: {
     label: "PORTABILITY / VAST:1",
     state: { en: "PACKAGE SEALED", fr: "PACKAGE SCELLÉ" },
     nodes: [
-      ["system:source", "Source System", "system", 0.2, 0.48, 44, "The original System-relative graph before export.", "Le graphe relatif au System avant export."],
-      ["package:vast1", ".vast package", "action", 0.5, 0.48, 42, "Canonical structure, manifest, boundary references and package hash.", "Structure canonique, manifeste, références de frontière et hash du package."],
-      ["system:target", "Rebound System", "system", 0.8, 0.48, 44, "Imported structure rebound to a different local System identity.", "Structure importée et rattachée à une nouvelle identité locale de System."],
-      ["vertex:graph", "Portable graph", "vertex", 0.21, 0.48, 23, "Vertices and Ties preserved in a System-relative canonical form.", "Vertex et Ties conservés sous une forme canonique relative au System."],
-      ["environment:authority", "Local authority", "environment", 0.66, 0.76, 29, "Credentials and effective authority are resolved again on arrival.", "Credentials et autorité effective sont résolus à nouveau à l’arrivée."],
-      ["surface:inspection", "Inspection Surface", "surface", 0.51, 0.5, 25, "A projection for reviewing the package before local admission.", "Une projection pour inspecter le package avant admission locale."],
+      ["system:source", "Source Root", "vertex", 0.25, 0.48, 62, "The source root Vertex before export. Its Environment exposes the export Action; the .vast package is not a graph node.", "Le Vertex root source avant export. Son Environment expose l’Action d’export ; le package .vast n’est pas un nœud du graphe.", { state: "ACTIVE · EXPORT READY", properties: ["type · system:root", "package format · vast/1"], surface: ["membrane · source inspection"], environment: ["system · source", "authority · local"], extensions: ["portability · enabled"], actions: ["graph:export · available"] }],
+      ["vertex:portable", "Portable Knowledge", "vertex", 0.25, 0.48, 24, "A contained Vertex whose identity and Ties are preserved in System-relative canonical form.", "Un Vertex contenu dont l’identité et les Ties sont conservées sous forme canonique relative au System.", { state: "SEALED · PORTABLE", properties: ["type · knowledge:record", "boundary · relative"], surface: ["membrane · contained"], environment: ["location · source root"], extensions: ["knowledge · declared"], actions: ["graph:read · available"] }],
+      ["system:target", "Rebound Root", "vertex", 0.75, 0.48, 62, "The imported root Vertex rebound to a new System identity. Its local Environment resolves credentials and authority again.", "Le Vertex root importé et rattaché à une nouvelle identité de System. Son Environment local résout à nouveau credentials et autorité.", { state: "IMPORTED · REVALIDATED", properties: ["type · system:root", "seal · verified"], surface: ["membrane · target inspection"], environment: ["system · target", "authority · revalidated"], extensions: ["portability · enabled"], actions: ["graph:import · complete", "system.mount · complete"] }],
     ],
-    links: [[0, 1], [1, 2], [0, 3], [3, 1], [1, 5], [5, 4], [4, 2]],
-    parents: [[0, 3], [1, 5]],
+    links: [[0, 1, "system:contains"], [0, 2, "vast:rebinds"]],
+    parents: [[0, 1]],
   },
   boot: {
     label: "ASSISTED BOOT / PLAN",
     state: { en: "ASSENT REQUIRED", fr: "ASSENTIMENT REQUIS" },
     nodes: [
-      ["vertex:intent", "Initial intent", "vertex", 0.14, 0.5, 29, "The purpose and constraints expressed at the beginning of boot.", "Le but et les contraintes exprimés au début du boot."],
-      ["surface:dialogue", "Boot dialogue", "surface", 0.34, 0.27, 30, "Conversation Surface used to clarify intent and expose decisions.", "Surface de conversation qui clarifie l’intention et expose les décisions."],
-      ["vertex:plan", "Sealed plan", "vertex", 0.52, 0.5, 39, "Declarative composition plan sealed by a hash before materialization.", "Plan de composition déclaratif scellé par un hash avant matérialisation."],
-      ["action:assent", "Explicit assent", "action", 0.7, 0.25, 29, "An admitted confirmation bound to the exact proposed plan.", "Confirmation admise, liée exactement au plan proposé."],
-      ["actor:founding", "Founding Actor", "vertex", 0.86, 0.51, 25, "The initial situated Actor admitted into the born graph.", "L’Actor situé initial admis dans le graphe né."],
-      ["system:born", "Born System", "system", 0.87, 0.5, 43, "The governed starting graph materialized through runtime-owned paths.", "Le graphe initial gouverné, matérialisé par les chemins du runtime."],
+      ["vertex:intent", "Initial Intent", "vertex", 0.15, 0.5, 28, "A Vertex containing the initial purpose and constraints.", "Un Vertex contenant le but initial et ses contraintes.", { state: "CAPTURED", properties: ["type · boot:intent"], surface: ["membrane · dialogue input"], environment: ["stage · discovery"], extensions: ["assisted-boot · enabled"], actions: ["boot:intent.refine · available"] }],
+      ["vertex:session", "Boot Session", "vertex", 0.36, 0.34, 33, "A Vertex whose dialogue Surface reveals clarification Actions supplied by its Environment.", "Un Vertex dont la Surface de dialogue révèle les Actions de clarification fournies par son Environment.", { state: "ACTIVE", properties: ["type · boot:session"], surface: ["membrane · conversation"], environment: ["stage · clarification", "actor · pending"], extensions: ["assisted-boot · enabled", "intelligence · optional"], actions: ["boot:message · available", "boot:clarify · ready"] }],
+      ["vertex:plan", "Sealed Plan", "vertex", 0.54, 0.5, 39, "A declarative plan Vertex. Explicit assent is an Action in its Environment, never a visible graph node.", "Un Vertex de plan déclaratif. L’assentiment explicite est une Action de son Environment, jamais un nœud visible du graphe.", { state: "SEALED · ASSENT REQUIRED", properties: ["type · boot:plan", "hash · stable"], surface: ["membrane · plan review"], environment: ["stage · assent", "authority · founding actor"], extensions: ["assisted-boot · enabled"], actions: ["boot:assent · available", "boot:materialize · blocked"] }],
+      ["actor:founding", "Founding Actor", "vertex", 0.76, 0.38, 25, "The initial situated Actor Vertex, carrying the Actor extension.", "Le Vertex Actor situé initial, portant l’extension Actor.", { state: "ADMITTED", properties: ["type · actor:identity", "scope · situated"], surface: ["membrane · presence"], environment: ["stage · genesis", "authority · contextual"], extensions: ["actor · enabled"], actions: ["boot:assent · complete"] }],
+      ["system:born", "Born Root", "vertex", 0.82, 0.58, 48, "The governed root Vertex materialized through runtime-owned paths. It contains the Founding Actor Vertex in its Environment.", "Le Vertex root gouverné matérialisé par les chemins du runtime. Il contient le Vertex Founding Actor dans son Environment.", { state: "BORN · GOVERNED", properties: ["type · system:root"], surface: ["membrane · system"], environment: ["system · born", "contained vertices · 1"], extensions: ["actor · enabled"], actions: ["system:observe · available"] }],
     ],
-    links: [[0, 1], [1, 2], [2, 3], [2, 4], [3, 5], [4, 5]],
-    parents: [[5, 4]],
+    links: [[0, 1, "boot:feeds"], [1, 2, "boot:composes"], [2, 3, "boot:requests-assent"], [2, 4, "boot:materializes"], [3, 4, "system:contains"]],
+    parents: [[4, 3]],
   },
 };
 
@@ -144,7 +132,7 @@ const initDemo = (root) => {
   };
 
   const reducedMotion = window.matchMedia?.("(prefers-reduced-motion: reduce)")?.matches ?? false;
-  const storageKey = "ea:vaste-graph-demo:v2";
+  const storageKey = "ea:vaste-graph-demo:v3";
   let width = 1;
   let height = 1;
   let ratio = 1;
@@ -259,7 +247,7 @@ const initDemo = (root) => {
     const node = selected || nodes[0];
     if (!node) return;
     const count = ties.filter((tie) => tie.a === node || tie.b === node).length;
-    elements.type.textContent = node.type === "system" ? "Root Vertex · System" : node.type[0].toUpperCase() + node.type.slice(1);
+    elements.type.textContent = node.id.startsWith("system:") ? "Root Vertex · System" : "Vertex";
     elements.title.textContent = node.name;
     elements.detail.textContent = node.copy[locale];
     elements.id.textContent = node.id;
@@ -345,7 +333,7 @@ const initDemo = (root) => {
     canvas.style.height = `${height}px`;
     context.setTransform(ratio, 0, 0, ratio, 0, 0);
     nodes.forEach((node) => {
-      const gutter = node.type === "system" ? 16 : Math.max(28, node.radius * 0.75);
+      const gutter = node.id.startsWith("system:") ? 16 : Math.max(28, node.radius * 0.75);
       node.nx = Math.max(gutter / width, Math.min(1 - gutter / width, node.nx));
       node.ny = Math.max(gutter / height, Math.min(1 - gutter / height, node.ny));
     });
@@ -450,7 +438,7 @@ const initDemo = (root) => {
   const drawNode = (node, time) => {
     const { x, y } = position(node);
     const radius = visualRadius(node);
-    const color = palettes[node.type] || palettes.vertex;
+    const color = palettes.vertex;
     const [r, g, b] = hexToRgb(color);
     const selectedNow = selected === node || linkingFrom === node;
     const contains = node.children.length > 0;
@@ -467,7 +455,7 @@ const initDemo = (root) => {
     }
     context.shadowColor = `rgba(${r}, ${g}, ${b}, ${selectedNow || dropTarget === node ? 0.58 : 0.25})`;
     context.shadowBlur = selectedNow || dropTarget === node ? 28 : 14;
-    context.fillStyle = `rgba(${r}, ${g}, ${b}, ${contains ? 0.025 : node.type === "system" ? 0.075 : 0.055})`;
+    context.fillStyle = `rgba(${r}, ${g}, ${b}, ${contains ? 0.025 : 0.055})`;
     context.strokeStyle = dropTarget === node ? `rgba(${r}, ${g}, ${b}, 1)` : contains ? "rgba(255,255,255,0.54)" : `rgba(${r}, ${g}, ${b}, ${selectedNow ? 0.88 : 0.38})`;
     context.lineWidth = dropTarget === node ? 2.2 : selectedNow ? 1.6 : contains ? 1.2 : 1;
     context.beginPath(); context.arc(x, y, radius + pulse, 0, Math.PI * 2); context.fill(); context.stroke();
@@ -480,24 +468,28 @@ const initDemo = (root) => {
       context.setLineDash([]);
     }
 
-    context.shadowBlur = 10;
-    context.fillStyle = color;
-    const nucleusRadius = contains
-      ? Math.max(4.5, Math.min(7, radius * 0.14))
-      : Math.max(4.5, Math.min(11, radius * 0.14));
-    context.beginPath(); context.arc(x, y, nucleusRadius, 0, Math.PI * 2); context.fill();
+    const hasKernel = !node.id.startsWith("system:") && !node.facts.properties?.includes("kernel · optional / absent");
+    if (hasKernel) {
+      context.shadowBlur = 10;
+      context.fillStyle = color;
+      const kernelRadius = contains
+        ? Math.max(4.5, Math.min(7, radius * 0.14))
+        : Math.max(4.5, Math.min(11, radius * 0.14));
+      context.beginPath(); context.arc(x, y, kernelRadius, 0, Math.PI * 2); context.fill();
+    }
     context.restore();
 
-    const nestedLabel = node.depth > 1;
-    const labelX = nestedLabel ? x + radius + 8 : x;
+    const nestedLabel = node.depth > 0;
+    const labelDirection = nestedLabel && node.parent && node.nx < node.parent.nx ? -1 : 1;
+    const labelX = nestedLabel ? x + labelDirection * (radius + 8) : x;
     const labelY = nestedLabel ? y - 2 : y + radius + 17;
     context.fillStyle = selectedNow ? "rgba(255,255,255,0.94)" : "rgba(255,255,255,0.67)";
     context.font = `${selectedNow ? 600 : 500} ${width < 520 ? 10 : 11}px ui-monospace, SFMono-Regular, Menlo, monospace`;
-    context.textAlign = nestedLabel ? "left" : "center";
+    context.textAlign = nestedLabel ? (labelDirection < 0 ? "right" : "left") : "center";
     context.fillText(node.name, labelX, labelY);
     context.fillStyle = `rgba(${r}, ${g}, ${b}, 0.65)`;
     context.font = "600 8px ui-monospace, SFMono-Regular, Menlo, monospace";
-    context.fillText(node.type.toUpperCase(), labelX, labelY + 13);
+    context.fillText("VERTEX", labelX, labelY + 13);
 
     if (contains) {
       context.fillStyle = "rgba(255,255,255,0.4)";

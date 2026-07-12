@@ -11,6 +11,7 @@ test("the VASTE dossier publishes a responsive interactive graph surface", async
 
   assert.match(template, /data-vaste-demo/);
   assert.match(template, /vaste-demo\.css\?v=3/);
+  assert.match(template, /vaste-demo\.js\?v=3/);
   assert.doesNotMatch(template, /vaste-demo__traffic/);
   assert.match(template, /data-demo-scene="runtime"/);
   assert.match(template, /data-demo-scene="portable"/);
@@ -30,9 +31,13 @@ test("the VASTE dossier publishes a responsive interactive graph surface", async
   assert.match(runtime, /parentId/);
   assert.match(runtime, /ResizeObserver/);
   assert.match(runtime, /system:ea:root/);
-  assert.match(runtime, /extension:intelligence/);
-  assert.match(runtime, /extension:world-model/);
+  assert.doesNotMatch(runtime, /\["[^"]+", "[^"]+", "(?:extension|action|surface|environment)"/);
+  assert.match(runtime, /\["vertex:cognition", "Advisory Cognition", "vertex"/);
+  assert.match(runtime, /\["vertex:world-model", "Situated World Model", "vertex"/);
+  assert.match(runtime, /\["vertex:public-knowledge", "Public Knowledge", "vertex"/);
   assert.match(runtime, /world-model:delta\.ingest · running/);
+  assert.match(runtime, /knowledge:publish · available/);
+  assert.match(runtime, /const hasKernel = !node\.id\.startsWith\("system:"\)/);
   assert.match(runtime, /facts: raw\[8\]/);
   assert.match(runtime, /prefers-reduced-motion/);
   assert.match(styles, /@media \(max-width: 900px\)/);

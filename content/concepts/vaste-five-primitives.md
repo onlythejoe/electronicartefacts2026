@@ -55,9 +55,13 @@ An Action describes admitted intent. The primitive contract requires it to be de
 
 Surface is the authorityless membrane through which a Vertex-System may be observed or interacted with. Its invariant scanner rejects runtime, store, dispatch and mutation-like fields. `SurfaceSpec` enriches the membrane; lifecycle and projection state are runtime-owned. A Surface can be materialized as web, shell, API, stream or another support, but the support is not its identity.
 
+This membrane belongs to the selected Vertex; it is not an additional node in a graph view. Such a view draws Vertices and Ties only, then exposes Surface, Environment, attached Extensions and available Actions through the selected Vertex.
+
 ## Environment
 
 Environment is immutable and recreated for an execution. It carries the resolved System, identity and authority claims, permissions, invocation scope, trace, execution tick, resource budgets and optional graph location. It explicitly carries no persistence, state storage, computation results or cross-execution accumulation.
+
+Operationally, this is also where the runtime resolves the Action set available at a Vertex and the local containment context for nested Vertices. That context is inspected through the Vertex; Environment and Action are not rendered as graph nodes.
 
 ## Boundaries that matter
 

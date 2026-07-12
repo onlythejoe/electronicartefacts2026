@@ -117,16 +117,13 @@ const renderVasteGraphDemo = (entity: Entity): string => {
           <p class="eyebrow">${french ? "SURFACE INTERACTIVE" : "INTERACTIVE SURFACE"}</p>
           <h2 id="vaste-demo-title">${french ? "Manipuler un système VASTE." : "Manipulate a VASTE system."}</h2>
           <p class="lede">${french
-            ? "Entrez dans le Vertex root, ses extensions et les cinq primitives. Sélectionnez chaque élément pour inspecter propriétés, membrane, Environment, Ties et Actions en cours."
-            : "Enter the root Vertex, its Extensions and all five primitives. Select any element to inspect properties, membrane, Environment, Ties and active Actions."}</p>
+            ? "Explorez un graphe composé uniquement de Vertex et de Ties. Sélectionnez un Vertex pour révéler sa Surface-membrane, son Environment, ses extensions et les Actions que cet Environment autorise."
+            : "Explore a graph made only of Vertices and Ties. Select a Vertex to reveal its Surface membrane, Environment, attached Extensions and the Actions that Environment admits."}</p>
         </div>
         <div class="vaste-demo__legend" aria-label="${french ? "Légende" : "Legend"}">
           <span><i data-tone="vertex"></i>Vertex</span>
-          <span><i data-tone="action"></i>Action</span>
-          <span><i data-tone="surface"></i>Surface</span>
-          <span><i data-tone="environment"></i>Environment</span>
           <span><i data-tone="tie"></i>Tie</span>
-          <span><i data-tone="extension"></i>Extension</span>
+          <span><i data-tone="surface"></i>${french ? "Surface · membrane du Vertex" : "Surface · Vertex membrane"}</span>
         </div>
       </div>
 
@@ -146,27 +143,27 @@ const renderVasteGraphDemo = (entity: Entity): string => {
           <div class="vaste-demo__canvas-shell" data-demo-canvas-shell>
             <canvas class="vaste-demo__canvas" data-demo-canvas></canvas>
             <div class="vaste-demo__canvas-label" aria-hidden="true"><span data-demo-scene-label>RUNTIME / SYSTEM:EA</span><i data-demo-frame>0000</i></div>
-            <p class="vaste-demo__hint" data-demo-hint>${french ? "Glissez un noyau dans une membrane pour l’imbriquer" : "Drag a nucleus into a membrane to nest it"}</p>
+            <p class="vaste-demo__hint" data-demo-hint>${french ? "Glissez un Vertex dans l’Environment d’un autre pour l’imbriquer" : "Drag a Vertex into another Vertex’s Environment to nest it"}</p>
           </div>
 
-          <aside class="vaste-demo__inspector" aria-label="${french ? "Inspecteur des primitives VASTE" : "VASTE primitive inspector"}">
+          <aside class="vaste-demo__inspector" aria-label="${french ? "Environment du Vertex sélectionné" : "Selected Vertex Environment"}">
             <div class="vaste-demo__selection-head">
               <p class="vaste-demo__inspector-kicker" data-demo-selection-type>Root Vertex</p>
               <h3 data-demo-selection-title>Root</h3>
-              <p data-demo-selection-copy>${french ? "Le Vertex root clôt le System et contient extensions, primitives et Vertex de domaine." : "The root Vertex closes the System and contains Extensions, primitives and domain Vertices."}</p>
+              <p data-demo-selection-copy>${french ? "Le Vertex root clôt le System. Sa Surface délimite sa membrane ; son Environment expose ses Vertex contenus, extensions et Actions disponibles." : "The root Vertex closes the System. Its Surface defines its membrane; its Environment exposes contained Vertices, attached Extensions and available Actions."}</p>
             </div>
             <dl class="vaste-demo__summary">
               <div><dt>ID</dt><dd data-demo-selection-id>system:ea:root</dd></div>
               <div><dt>${french ? "ÉTAT" : "STATE"}</dt><dd data-demo-selection-state>${french ? "OBSERVABLE" : "OBSERVABLE"}</dd></div>
               <div><dt>${french ? "LIENS" : "TIES"}</dt><dd data-demo-selection-links>5</dd></div>
               <div><dt>${french ? "PARENT" : "PARENT"}</dt><dd data-demo-selection-parent>—</dd></div>
-              <div><dt>${french ? "CONTENU" : "CHILDREN"}</dt><dd data-demo-selection-children>2</dd></div>
+              <div><dt>${french ? "VERTEX CONTENUS" : "CONTAINED VERTICES"}</dt><dd data-demo-selection-children>2</dd></div>
             </dl>
             <div class="vaste-demo__facts">
               <section><h4>${french ? "PROPRIÉTÉS" : "PROPERTIES"}</h4><ul data-demo-selection-properties></ul></section>
               <section><h4>SURFACE · ${french ? "MEMBRANE" : "MEMBRANE"}</h4><ul data-demo-selection-surface></ul></section>
-              <section><h4>ENVIRONMENT · ${french ? "CONTEXTE LOCAL" : "LOCAL CONTEXT"}</h4><ul data-demo-selection-environment></ul></section>
-              <section><h4>EXTENSIONS</h4><ul data-demo-selection-extensions></ul></section>
+              <section><h4>ENVIRONMENT · ${french ? "CONTEXTE ET JEU D’ACTIONS" : "CONTEXT AND ACTION SET"}</h4><ul data-demo-selection-environment></ul></section>
+              <section><h4>EXTENSIONS · ${french ? "PORTÉES PAR LE VERTEX" : "ATTACHED TO VERTEX"}</h4><ul data-demo-selection-extensions></ul></section>
               <section><h4>TIES · ${french ? "LIENS TYPÉS" : "TYPED LINKS"}</h4><ul data-demo-selection-ties-list></ul></section>
               <section><h4>ACTIONS · ${french ? "ÉTAT RUNTIME" : "RUNTIME STATE"}</h4><ul data-demo-selection-actions></ul></section>
             </div>
@@ -185,7 +182,7 @@ const renderVasteGraphDemo = (entity: Entity): string => {
           <span class="vaste-demo__live" data-demo-live aria-live="polite"></span>
         </div>
       </div>
-      <script type="module" src="/assets/js/vaste-demo.js?v=2"></script>
+      <script type="module" src="/assets/js/vaste-demo.js?v=3"></script>
     </section>`;
 };
 

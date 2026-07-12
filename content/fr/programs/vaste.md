@@ -103,6 +103,8 @@ Mécanique déterministe du kernel
 
 Ces responsabilités et leurs invariants testés sont détaillés dans [Les cinq primitives de VASTE](/fr/knowledge/concepts/vaste-five-primitives/).
 
+Dans une projection du graphe, seuls les Vertex et les Ties qui les relient sont dessinés comme objets du graphe. Les extensions sont attachées aux Vertex, jamais représentées comme des nœuds. Chaque Vertex est exposé par sa propre Surface-membrane et résolu dans un Environment local ; sélectionner ce Vertex révèle les extensions qu’il porte, les Actions admises par cet Environment et les éventuels Vertex qu’il contient. Un noyau peut exister, mais il reste facultatif et n’est pas requis au centre d’un Vertex root.
+
 ## Exécution gouvernée
 
 Une Action traverse un namespace enregistré, est résolue dans un System et un Environment, contrôlée pour l’accès et l’autorité, interprétée par l’execution engine puis traduite en effets typés. Seule la couche d’effets du runtime peut modifier l’état canonique. Receipts, événements et replay rendent ce chemin inspectable ; cela ne signifie pas que tout backend est durable ou tout effet externe réversible.
