@@ -9,16 +9,17 @@
     ]
   },
   "canonicalEntities": {
-    "english": 128,
-    "french": 128,
+    "english": 129,
+    "french": 129,
     "coveragePercent": 100
   },
   "editorialWords": {
-    "englishSourceWords": 78003,
-    "sourceWordsCoveredByFrenchRecords": 78003,
+    "englishSourceWords": 78333,
+    "sourceWordsCoveredByFrenchRecords": 78333,
     "coveragePercent": 100
   },
   "translatedEntityIds": [
+    "ea:artefact:vab-interface-prototype",
     "ea:artefact:vaste-validation-record",
     "ea:artefact:voice-capture-studio-repository",
     "ea:collection:knowledge-hub-fifth-wave",

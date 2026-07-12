@@ -5532,6 +5532,42 @@ window.EA_PUBLIC_CATALOG = {
   "schemaVersion": "1.0.0",
   "entities": [
     {
+      "id": "ea:artefact:vab-interface-prototype",
+      "legacyId": "vab-interface-prototype",
+      "kind": "artefact",
+      "type": "artefact",
+      "locale": "en",
+      "title": "VAB Interface Prototype",
+      "subtitle": "Assisted Boot Interaction Study",
+      "summary": "A preserved browser prototype that explores VAB conversation, editable memory, ceremony transitions and graph-reveal behavior without standing in for the VASTE runtime implementation.",
+      "description": "A factual archive record for the autonomous HTML, CSS and JavaScript VAB interaction prototype created in July 2026.",
+      "status": "archived",
+      "maturity": "prototype",
+      "confidence": "observed",
+      "visibility": "public",
+      "publicationClass": "published",
+      "tags": [
+        "VASTE",
+        "VAB",
+        "Assisted Boot",
+        "Interface Prototype",
+        "Human Computer Interaction"
+      ],
+      "discipline": [
+        "Interaction Design",
+        "Runtime Systems",
+        "Human Computer Interaction"
+      ],
+      "route": "/archive/artefacts/vab-interface-prototype/",
+      "identifier": "/id/artefact/vab-interface-prototype/",
+      "temporality": {
+        "creationDate": "2026-07-07",
+        "lastUpdated": "2026-07-13",
+        "releaseDate": "2026-07-13",
+        "creationYear": "2026"
+      }
+    },
+    {
       "id": "ea:artefact:vaste-validation-record",
       "legacyId": "vaste-validation-record",
       "kind": "artefact",
@@ -7486,6 +7522,43 @@ window.EA_PUBLIC_CATALOG = {
         "creationDate": "2026-06-24",
         "lastUpdated": "2026-06-24",
         "releaseDate": "2026-06-24",
+        "creationYear": "2026"
+      }
+    },
+    {
+      "id": "ea:artefact:vab-interface-prototype-fr",
+      "legacyId": "vab-interface-prototype-fr",
+      "kind": "artefact",
+      "type": "artefact",
+      "locale": "fr",
+      "translationOf": "ea:artefact:vab-interface-prototype",
+      "title": "Prototype d’interface VAB",
+      "subtitle": "Étude d’interaction pour Assisted Boot",
+      "summary": "Prototype navigateur conservé qui explore conversation VAB, mémoire modifiable, transition cérémonielle et révélation du graphe sans se substituer à l’implémentation runtime de VASTE.",
+      "description": "Fiche d’archive factuelle du prototype autonome HTML, CSS et JavaScript de l’interface VAB créé en juillet 2026.",
+      "status": "archived",
+      "maturity": "prototype",
+      "confidence": "observed",
+      "visibility": "public",
+      "publicationClass": "published",
+      "tags": [
+        "VASTE",
+        "VAB",
+        "Assisted Boot",
+        "prototype d’interface",
+        "interaction humain-machine"
+      ],
+      "discipline": [
+        "design d’interaction",
+        "systèmes runtime",
+        "interaction humain-machine"
+      ],
+      "route": "/fr/archive/artefacts/vab-interface-prototype/",
+      "identifier": "/fr/id/artefact/vab-interface-prototype/",
+      "temporality": {
+        "creationDate": "2026-07-07",
+        "lastUpdated": "2026-07-13",
+        "releaseDate": "2026-07-13",
         "creationYear": "2026"
       }
     },
@@ -11471,6 +11544,20 @@ window.EA_PUBLIC_CATALOG = {
       "currentUnderstanding": "La compréhension doit émerger progressivement. Une première conversation peut identifier des entités, objectifs, contraintes, risques et inconnues provisoires, puis garder ces hypothèses révisables.",
       "experiments": [
         {
+          "id": "assisted-boot-interface-prototype",
+          "title": "Prototype d’interface Assisted Boot",
+          "status": "observed",
+          "summary": "Un prototype navigateur VAB autonome et conservé explore compréhension provisoire, projection de mémoire modifiable, confirmation humaine et révélation du graphe tout en séparant explicitement simulation d’interface et état canonique du runtime.",
+          "relatedEntities": [
+            {
+              "id": "ea:concept:vab-and-genesis"
+            },
+            {
+              "id": "ea:artefact:vab-interface-prototype"
+            }
+          ]
+        },
+        {
           "id": "conversational-brief-capture",
           "title": "Capture conversationnelle du brief",
           "status": "active",
@@ -14562,6 +14649,20 @@ window.EA_PUBLIC_CATALOG = {
       "currentUnderstanding": "Understanding should emerge progressively. A first conversation can identify provisional entities, goals, constraints, risks and unknowns, then keep those claims revisable as more evidence arrives.",
       "experiments": [
         {
+          "id": "assisted-boot-interface-prototype",
+          "title": "Assisted Boot interface prototype",
+          "status": "observed",
+          "summary": "A preserved autonomous VAB browser prototype explores provisional understanding, editable memory projection, user confirmation and graph reveal while explicitly separating interface simulation from canonical runtime state.",
+          "relatedEntities": [
+            {
+              "id": "ea:concept:vab-and-genesis"
+            },
+            {
+              "id": "ea:artefact:vab-interface-prototype"
+            }
+          ]
+        },
+        {
           "id": "conversational-brief-capture",
           "title": "Conversational brief capture",
           "status": "active",
@@ -16288,6 +16389,17 @@ window.EA_PUBLIC_CATALOG = {
       "confidence": "observed",
       "createdAt": "2026-06-23",
       "reviewedAt": "2026-06-23",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:palimpsests-produced-by-electronic-artefacts",
+      "subject": "ea:project:palimpsests",
+      "predicate": "producedBy",
+      "object": "ea:organization:electronic-artefacts",
+      "statement": "Electronic Artefacts produces Palimpsests as a five-chapter ORETH album and compound cultural project.",
+      "confidence": "published",
+      "createdAt": "2026-01-01",
+      "reviewedAt": "2026-07-13",
       "visibility": "public"
     },
     {
@@ -18389,6 +18501,17 @@ window.EA_PUBLIC_CATALOG = {
       "confidence": "validated",
       "createdAt": "2026-07-11",
       "reviewedAt": "2026-07-11",
+      "visibility": "public"
+    },
+    {
+      "id": "ear:vab-evidenced-by-interface-prototype",
+      "subject": "ea:concept:vab-and-genesis",
+      "predicate": "evidencedBy",
+      "object": "ea:artefact:vab-interface-prototype",
+      "statement": "The preserved VAB browser prototype provides inspectable evidence of the Assisted Boot interaction study while remaining distinct from the VASTE runtime implementation.",
+      "confidence": "observed",
+      "createdAt": "2026-07-07",
+      "reviewedAt": "2026-07-13",
       "visibility": "public"
     },
     {
@@ -21290,6 +21413,7 @@ window.EA_PUBLIC_CATALOG = {
     }
   ],
   "routes": {
+    "ea:artefact:vab-interface-prototype": "/archive/artefacts/vab-interface-prototype/",
     "ea:artefact:vaste-validation-record": "/archive/artefacts/vaste-validation-record/",
     "ea:artefact:voice-capture-studio-repository": "/archive/artefacts/voice-capture-studio-repository/",
     "ea:collection:knowledge-hub-fifth-wave": "/archive/collections/knowledge-hub-fifth-wave/",
@@ -21344,6 +21468,7 @@ window.EA_PUBLIC_CATALOG = {
     "ea:concept:vaste-five-primitives": "/knowledge/concepts/vaste-five-primitives/",
     "ea:concept:voice-technology": "/knowledge/concepts/voice-technology/",
     "ea:concept:web-audio": "/knowledge/concepts/web-audio/",
+    "ea:artefact:vab-interface-prototype-fr": "/fr/archive/artefacts/vab-interface-prototype/",
     "ea:artefact:vaste-validation-record-fr": "/fr/archive/artefacts/vaste-validation-record/",
     "ea:artefact:voice-capture-studio-repository-fr": "/fr/archive/artefacts/voice-capture-studio-repository/",
     "ea:collection:knowledge-hub-fifth-wave-fr": "/fr/archive/collections/knowledge-hub-fifth-wave/",

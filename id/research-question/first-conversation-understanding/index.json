@@ -51,6 +51,20 @@
   "currentUnderstanding": "Understanding should emerge progressively. A first conversation can identify provisional entities, goals, constraints, risks and unknowns, then keep those claims revisable as more evidence arrives.",
   "experiments": [
     {
+      "id": "assisted-boot-interface-prototype",
+      "title": "Assisted Boot interface prototype",
+      "status": "observed",
+      "summary": "A preserved autonomous VAB browser prototype explores provisional understanding, editable memory projection, user confirmation and graph reveal while explicitly separating interface simulation from canonical runtime state.",
+      "relatedEntities": [
+        {
+          "id": "ea:concept:vab-and-genesis"
+        },
+        {
+          "id": "ea:artefact:vab-interface-prototype"
+        }
+      ]
+    },
+    {
       "id": "conversational-brief-capture",
       "title": "Conversational brief capture",
       "status": "active",

@@ -26,6 +26,14 @@
       "route": "/archive/artefacts/vaste-validation-record/",
       "status": "active",
       "confidence": "validated"
+    },
+    {
+      "id": "ea:artefact:vab-interface-prototype",
+      "type": "artefact",
+      "title": "VAB Interface Prototype",
+      "route": "/archive/artefacts/vab-interface-prototype/",
+      "status": "archived",
+      "confidence": "observed"
     }
   ],
   "edges": [
@@ -46,6 +54,15 @@
       "label": "Evidenced by",
       "statement": "The validation record documents plan assent sealing and the internal VAB-to-vast end-to-end scenario.",
       "confidence": "validated"
+    },
+    {
+      "id": "ear:vab-evidenced-by-interface-prototype",
+      "source": "ea:concept:vab-and-genesis",
+      "target": "ea:artefact:vab-interface-prototype",
+      "predicate": "evidencedBy",
+      "label": "Evidenced by",
+      "statement": "The preserved VAB browser prototype provides inspectable evidence of the Assisted Boot interaction study while remaining distinct from the VASTE runtime implementation.",
+      "confidence": "observed"
     }
   ]
 }

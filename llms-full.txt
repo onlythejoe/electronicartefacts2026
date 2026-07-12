@@ -9,8 +9,8 @@ This file is generated from typed public records. Prefer each record's canonical
 - Site language: en
 - Canonical origin: https://electronicartefacts.com
 - Search endpoint: https://electronicartefacts.com/search/?q={search_term_string}
-- Public records: 256
-- Last curated source update: 2026-07-12
+- Public records: 258
+- Last curated source update: 2026-07-13
 
 ## organization
 
@@ -1562,12 +1562,24 @@ This file is generated from typed public records. Prefer each record's canonical
   - JSON-LD: https://electronicartefacts.com/fr/id/artefact/voice-capture-studio-repository/index.jsonld
   - Modified: 2026-07-09
   - Keywords: Dépôt Voice Capture Studio, Voice Capture Studio, GitHub, open source, logiciel de navigateur, capture vocale, développement web, ingénierie audio
+- [Prototype d’interface VAB](https://electronicartefacts.com/fr/archive/artefacts/vab-interface-prototype/): Fiche d’archive factuelle du prototype autonome HTML, CSS et JavaScript de l’interface VAB créé en juillet 2026.
+  - Entity ID: ea:artefact:vab-interface-prototype-fr
+  - Identifier: https://electronicartefacts.com/fr/id/artefact/vab-interface-prototype/
+  - JSON-LD: https://electronicartefacts.com/fr/id/artefact/vab-interface-prototype/index.jsonld
+  - Modified: 2026-07-13
+  - Keywords: Prototype d’interface VAB, VASTE, VAB, Assisted Boot, prototype d’interface, interaction humain-machine, design d’interaction, systèmes runtime
 - [Registre des validations VASTE](https://electronicartefacts.com/fr/archive/artefacts/vaste-validation-record/): Preuves concernant primitives, exécution gouvernée, extensions, Assisted Boot et portabilité .vast, avec limites explicites.
   - Entity ID: ea:artefact:vaste-validation-record-fr
   - Identifier: https://electronicartefacts.com/fr/id/artefact/vaste-validation-record/
   - JSON-LD: https://electronicartefacts.com/fr/id/artefact/vaste-validation-record/index.jsonld
   - Modified: 2026-07-11
   - Keywords: Registre des validations VASTE, VASTE, Preuves, Validation, Runtime, Vérification logicielle, Runtime Systems
+- [VAB Interface Prototype](https://electronicartefacts.com/archive/artefacts/vab-interface-prototype/): A factual archive record for the autonomous HTML, CSS and JavaScript VAB interaction prototype created in July 2026.
+  - Entity ID: ea:artefact:vab-interface-prototype
+  - Identifier: https://electronicartefacts.com/id/artefact/vab-interface-prototype/
+  - JSON-LD: https://electronicartefacts.com/id/artefact/vab-interface-prototype/index.jsonld
+  - Modified: 2026-07-13
+  - Keywords: VAB Interface Prototype, VASTE, VAB, Assisted Boot, Interface Prototype, Human Computer Interaction, Interaction Design, Runtime Systems
 - [VASTE Validation Record](https://electronicartefacts.com/archive/artefacts/vaste-validation-record/): Evidence for VASTE primitives, governed execution, extensions, Assisted Boot and .vast portability, with explicit limits.
   - Entity ID: ea:artefact:vaste-validation-record
   - Identifier: https://electronicartefacts.com/id/artefact/vaste-validation-record/

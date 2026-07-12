@@ -1,5 +1,101 @@
 [
   {
+    "id": "ea:artefact:vab-interface-prototype",
+    "type": "artefact",
+    "slug": {
+      "canonical": "vab-interface-prototype"
+    },
+    "title": "VAB Interface Prototype",
+    "subtitle": "Assisted Boot Interaction Study",
+    "abstract": "A preserved browser prototype that explores VAB conversation, editable memory, ceremony transitions and graph-reveal behavior without standing in for the VASTE runtime implementation.",
+    "description": "A factual archive record for the autonomous HTML, CSS and JavaScript VAB interaction prototype created in July 2026.",
+    "locale": "en",
+    "visibility": "public",
+    "publicationClass": "published",
+    "status": "archived",
+    "maturity": "prototype",
+    "confidence": "observed",
+    "version": {
+      "version": "1.0.0",
+      "createdAt": "2026-07-07",
+      "publishedAt": "2026-07-13",
+      "modifiedAt": "2026-07-13"
+    },
+    "authors": [
+      {
+        "id": "ea:organization:electronic-artefacts"
+      }
+    ],
+    "publisher": "ea:organization:electronic-artefacts",
+    "tags": [
+      "VASTE",
+      "VAB",
+      "Assisted Boot",
+      "Interface Prototype",
+      "Human Computer Interaction"
+    ],
+    "disciplines": [
+      "Interaction Design",
+      "Runtime Systems",
+      "Human Computer Interaction"
+    ],
+    "sources": [
+      {
+        "title": "VAST Assisted Boot integration notes",
+        "publisher": "Electronic Artefacts",
+        "accessedAt": "2026-07-13",
+        "locator": "VASTE design-research archive, vast-assisted-boot-prototype/INTEGRATION_NOTES.md"
+      },
+      {
+        "title": "VAB browser prototype source",
+        "publisher": "Electronic Artefacts",
+        "accessedAt": "2026-07-13",
+        "locator": "VASTE design-research archive, vast-assisted-boot-prototype/index.html and script.js"
+      }
+    ],
+    "artefactType": "prototype",
+    "createdAt": "2026-07-07",
+    "provenance": "Preserved in the Electronic Artefacts VASTE design-research archive as an autonomous HTML, CSS and JavaScript prototype with integration notes and a documented browser runtime facade.",
+    "format": "HTML, CSS and JavaScript archive",
+    "preservationStatus": "stable",
+    "significance": "The prototype makes the intended Assisted Boot interaction model inspectable while preserving a strict boundary between interface simulation and the separately implemented VASTE Boot Assist service.",
+    "bodyHtml": "<h2 id=\"description\">Description</h2>\n<p>The VAB Interface Prototype is an autonomous browser study for the interaction language of VASTE Assisted Boot. It explores a continuous conversation surface, an authenticated Actor supplied by the session, an editable memory projection, a transition into a visual ceremony and a final graph reveal.</p>\n<p>Its JavaScript runtime exposes inspectable functions for draft preparation, cognitive previews, memory items, ceremony state and final graph data. These functions form a test facade for the prototype; they are not the canonical VASTE graph or authority layer.</p>\n<h2 id=\"provenance\">Provenance</h2>\n<p>The preserved archive contains HTML, CSS, JavaScript and integration notes. The notes define how a future or external orchestrator could provide structured lines, process state, voice timing and graph projections. They repeatedly distinguish local preview data from canonical runtime state.</p>\n<p>The current VASTE repository separately contains Boot Assist contracts, a service implementation, runtime adapters, a web materializer and integration tests. This artefact documents the autonomous design prototype only and must not be used as the sole evidence for those runtime capabilities.</p>\n<h2 id=\"significance\">Significance</h2>\n<p>The prototype tests a product question that static diagrams cannot answer: how can first intent, provisional understanding, user correction and governed system birth become legible as one interaction?</p>\n<p>It also records useful interface invariants. Identity comes from an admitted session rather than conversational inference. Provisional beliefs are not facts. Editing the visible memory projection must not mutate the raw world model directly. Entering the ceremony in the prototype previews acceptance; it does not prove that a backend admitted the request.</p>\n<h2 id=\"rights\">Rights</h2>\n<p>The archive is an Electronic Artefacts research artefact. This public record documents its role and limitations; it does not publish private runtime configuration, credentials or user conversation data.</p>\n<h2 id=\"limitations\">Limitations</h2>\n<p>The archive is not evidence of a production assistant or a completed Genesis handover. Its scripted conversation and local cognitive preview are interface simulations. Microphone capture and browser transcription may be exercised by the prototype, but no model understanding, canonical memory write, runtime provisioning or TTS pipeline should be inferred from that behavior.</p>\n",
+    "headings": [
+      "Description",
+      "Provenance",
+      "Significance",
+      "Rights",
+      "Limitations"
+    ],
+    "headingItems": [
+      {
+        "level": 2,
+        "title": "Description",
+        "id": "description"
+      },
+      {
+        "level": 2,
+        "title": "Provenance",
+        "id": "provenance"
+      },
+      {
+        "level": 2,
+        "title": "Significance",
+        "id": "significance"
+      },
+      {
+        "level": 2,
+        "title": "Rights",
+        "id": "rights"
+      },
+      {
+        "level": 2,
+        "title": "Limitations",
+        "id": "limitations"
+      }
+    ]
+  },
+  {
     "id": "ea:artefact:vaste-validation-record",
     "type": "artefact",
     "slug": {
@@ -5709,6 +5805,103 @@
         "level": 2,
         "title": "References",
         "id": "references"
+      }
+    ]
+  },
+  {
+    "id": "ea:artefact:vab-interface-prototype-fr",
+    "type": "artefact",
+    "translationOf": "ea:artefact:vab-interface-prototype",
+    "slug": {
+      "canonical": "vab-interface-prototype"
+    },
+    "title": "Prototype d’interface VAB",
+    "subtitle": "Étude d’interaction pour Assisted Boot",
+    "abstract": "Prototype navigateur conservé qui explore conversation VAB, mémoire modifiable, transition cérémonielle et révélation du graphe sans se substituer à l’implémentation runtime de VASTE.",
+    "description": "Fiche d’archive factuelle du prototype autonome HTML, CSS et JavaScript de l’interface VAB créé en juillet 2026.",
+    "locale": "fr",
+    "visibility": "public",
+    "publicationClass": "published",
+    "status": "archived",
+    "maturity": "prototype",
+    "confidence": "observed",
+    "version": {
+      "version": "1.0.0",
+      "createdAt": "2026-07-07",
+      "publishedAt": "2026-07-13",
+      "modifiedAt": "2026-07-13"
+    },
+    "authors": [
+      {
+        "id": "ea:organization:electronic-artefacts"
+      }
+    ],
+    "publisher": "ea:organization:electronic-artefacts",
+    "tags": [
+      "VASTE",
+      "VAB",
+      "Assisted Boot",
+      "prototype d’interface",
+      "interaction humain-machine"
+    ],
+    "disciplines": [
+      "design d’interaction",
+      "systèmes runtime",
+      "interaction humain-machine"
+    ],
+    "sources": [
+      {
+        "title": "Notes d’intégration VAST Assisted Boot",
+        "publisher": "Electronic Artefacts",
+        "accessedAt": "2026-07-13",
+        "locator": "Archive de design-recherche VASTE, vast-assisted-boot-prototype/INTEGRATION_NOTES.md"
+      },
+      {
+        "title": "Sources du prototype navigateur VAB",
+        "publisher": "Electronic Artefacts",
+        "accessedAt": "2026-07-13",
+        "locator": "Archive de design-recherche VASTE, vast-assisted-boot-prototype/index.html et script.js"
+      }
+    ],
+    "artefactType": "prototype",
+    "createdAt": "2026-07-07",
+    "provenance": "Prototype autonome HTML, CSS et JavaScript conservé dans les archives de design-recherche VASTE d’Electronic Artefacts avec ses notes d’intégration et une façade runtime documentée.",
+    "format": "Archive HTML, CSS et JavaScript",
+    "preservationStatus": "stable",
+    "significance": "Le prototype rend inspectable le modèle d’interaction d’Assisted Boot tout en maintenant une frontière stricte entre simulation d’interface et service Boot Assist implémenté séparément dans VASTE.",
+    "bodyHtml": "<h2 id=\"description\">Description</h2>\n<p>Le prototype d’interface VAB est une étude navigateur autonome du langage d’interaction de VASTE Assisted Boot. Il explore une surface de conversation continue, un Actor authentifié fourni par la session, une projection de mémoire modifiable, une transition vers une cérémonie visuelle et une révélation finale du graphe.</p>\n<p>Son runtime JavaScript expose des fonctions inspectables pour le brouillon, l’aperçu cognitif, les éléments de mémoire, l’état de cérémonie et le graphe final. Elles constituent une façade de test du prototype ; elles ne sont ni le graphe canonique ni la couche d’autorité de VASTE.</p>\n<h2 id=\"provenance\">Provenance</h2>\n<p>L’archive conservée contient HTML, CSS, JavaScript et notes d’intégration. Ces notes décrivent comment un orchestrateur pourrait fournir lignes structurées, état de processus, timings vocaux et projections de graphe. Elles distinguent explicitement les aperçus locaux de l’état canonique du runtime.</p>\n<p>Le dépôt VASTE actuel contient séparément contrats Boot Assist, service, adaptateurs runtime, matérialisation web et tests d’intégration. Cet artefact documente uniquement le prototype de design autonome et ne doit pas servir seul à prouver ces capacités runtime.</p>\n<h2 id=\"importance\">Importance</h2>\n<p>Le prototype étudie une question produit difficile à résoudre par un schéma statique : comment rendre lisibles dans une seule interaction l’intention initiale, la compréhension provisoire, la correction humaine et la naissance gouvernée d’un système ?</p>\n<p>Il fixe aussi plusieurs invariants. L’identité vient d’une session admise et non d’une inférence conversationnelle. Une croyance provisoire n’est pas un fait. Modifier la projection visible de la mémoire ne doit pas muter directement le world model brut. Dans ce prototype, entrer dans la cérémonie prévisualise une acceptation ; cela ne prouve pas qu’un backend a admis la requête.</p>\n<h2 id=\"droits\">Droits</h2>\n<p>L’archive est un artefact de recherche Electronic Artefacts. Cette fiche publique documente son rôle et ses limites sans publier configuration runtime privée, credentials ou données conversationnelles.</p>\n<h2 id=\"limites\">Limites</h2>\n<p>L’archive ne prouve ni un assistant de production ni un handover Genesis complet. Conversation scriptée et aperçu cognitif local sont des simulations d’interface. La capture micro et la transcription navigateur peuvent être exercées, mais elles ne prouvent pas compréhension par un modèle, écriture en mémoire canonique, provisioning runtime ou pipeline TTS.</p>\n",
+    "headings": [
+      "Description",
+      "Provenance",
+      "Importance",
+      "Droits",
+      "Limites"
+    ],
+    "headingItems": [
+      {
+        "level": 2,
+        "title": "Description",
+        "id": "description"
+      },
+      {
+        "level": 2,
+        "title": "Provenance",
+        "id": "provenance"
+      },
+      {
+        "level": 2,
+        "title": "Importance",
+        "id": "importance"
+      },
+      {
+        "level": 2,
+        "title": "Droits",
+        "id": "droits"
+      },
+      {
+        "level": 2,
+        "title": "Limites",
+        "id": "limites"
       }
     ]
   },
@@ -22087,6 +22280,20 @@
     "currentUnderstanding": "La compréhension doit émerger progressivement. Une première conversation peut identifier des entités, objectifs, contraintes, risques et inconnues provisoires, puis garder ces hypothèses révisables.",
     "experiments": [
       {
+        "id": "assisted-boot-interface-prototype",
+        "title": "Prototype d’interface Assisted Boot",
+        "status": "observed",
+        "summary": "Un prototype navigateur VAB autonome et conservé explore compréhension provisoire, projection de mémoire modifiable, confirmation humaine et révélation du graphe tout en séparant explicitement simulation d’interface et état canonique du runtime.",
+        "relatedEntities": [
+          {
+            "id": "ea:concept:vab-and-genesis"
+          },
+          {
+            "id": "ea:artefact:vab-interface-prototype"
+          }
+        ]
+      },
+      {
         "id": "conversational-brief-capture",
         "title": "Capture conversationnelle du brief",
         "status": "active",
@@ -35253,6 +35460,20 @@
     "hypothesis": "Conversation itself can become the onboarding protocol when the system treats each exchange as evidence, not merely as input for a profile form.",
     "currentUnderstanding": "Understanding should emerge progressively. A first conversation can identify provisional entities, goals, constraints, risks and unknowns, then keep those claims revisable as more evidence arrives.",
     "experiments": [
+      {
+        "id": "assisted-boot-interface-prototype",
+        "title": "Assisted Boot interface prototype",
+        "status": "observed",
+        "summary": "A preserved autonomous VAB browser prototype explores provisional understanding, editable memory projection, user confirmation and graph reveal while explicitly separating interface simulation from canonical runtime state.",
+        "relatedEntities": [
+          {
+            "id": "ea:concept:vab-and-genesis"
+          },
+          {
+            "id": "ea:artefact:vab-interface-prototype"
+          }
+        ]
+      },
       {
         "id": "conversational-brief-capture",
         "title": "Conversational brief capture",

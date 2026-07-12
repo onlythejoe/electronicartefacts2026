@@ -36,6 +36,14 @@
       "confidence": "observed"
     },
     {
+      "id": "ea:organization:electronic-artefacts",
+      "type": "organization",
+      "title": "Electronic Artefacts",
+      "route": "/organizations/electronic-artefacts/",
+      "status": "active",
+      "confidence": "canonical"
+    },
+    {
       "id": "ea:concept:signal-archaeology",
       "type": "concept",
       "title": "Signal Archaeology",
@@ -135,6 +143,15 @@
       "label": "Powered by",
       "statement": "Palimpsests uses ORETH as its audio intelligence and artistic research layer.",
       "confidence": "observed"
+    },
+    {
+      "id": "ear:palimpsests-produced-by-electronic-artefacts",
+      "source": "ea:project:palimpsests",
+      "target": "ea:organization:electronic-artefacts",
+      "predicate": "producedBy",
+      "label": "Produced by",
+      "statement": "Electronic Artefacts produces Palimpsests as a five-chapter ORETH album and compound cultural project.",
+      "confidence": "published"
     },
     {
       "id": "ear:palimpsests-applies-signal-archaeology",

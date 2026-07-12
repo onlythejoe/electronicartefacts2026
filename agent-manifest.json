@@ -84,9 +84,9 @@
     "technology": 40,
     "framework": 2,
     "collection": 12,
-    "artefact": 4
+    "artefact": 6
   },
-  "lastModified": "2026-07-12",
+  "lastModified": "2026-07-13",
   "records": [
     {
       "id": "ea:organization:electronic-artefacts-fr",
@@ -6688,6 +6688,32 @@
       "modifiedAt": "2026-07-09"
     },
     {
+      "id": "ea:artefact:vab-interface-prototype-fr",
+      "locale": "fr",
+      "translationOf": "ea:artefact:vab-interface-prototype",
+      "type": "artefact",
+      "title": "Prototype d’interface VAB",
+      "summary": "Fiche d’archive factuelle du prototype autonome HTML, CSS et JavaScript de l’interface VAB créé en juillet 2026.",
+      "url": "https://electronicartefacts.com/fr/archive/artefacts/vab-interface-prototype/",
+      "route": "/fr/archive/artefacts/vab-interface-prototype/",
+      "identifier": "https://electronicartefacts.com/fr/id/artefact/vab-interface-prototype/",
+      "jsonLd": "https://electronicartefacts.com/fr/id/artefact/vab-interface-prototype/index.jsonld",
+      "tags": [
+        "Prototype d’interface VAB",
+        "VASTE",
+        "VAB",
+        "Assisted Boot",
+        "prototype d’interface",
+        "interaction humain-machine",
+        "design d’interaction",
+        "systèmes runtime"
+      ],
+      "status": "archived",
+      "confidence": "observed",
+      "publishedAt": "2026-07-13",
+      "modifiedAt": "2026-07-13"
+    },
+    {
       "id": "ea:artefact:vaste-validation-record-fr",
       "locale": "fr",
       "translationOf": "ea:artefact:vaste-validation-record",
@@ -6711,6 +6737,31 @@
       "confidence": "validated",
       "publishedAt": "2026-07-11",
       "modifiedAt": "2026-07-11"
+    },
+    {
+      "id": "ea:artefact:vab-interface-prototype",
+      "locale": "en",
+      "type": "artefact",
+      "title": "VAB Interface Prototype",
+      "summary": "A factual archive record for the autonomous HTML, CSS and JavaScript VAB interaction prototype created in July 2026.",
+      "url": "https://electronicartefacts.com/archive/artefacts/vab-interface-prototype/",
+      "route": "/archive/artefacts/vab-interface-prototype/",
+      "identifier": "https://electronicartefacts.com/id/artefact/vab-interface-prototype/",
+      "jsonLd": "https://electronicartefacts.com/id/artefact/vab-interface-prototype/index.jsonld",
+      "tags": [
+        "VAB Interface Prototype",
+        "VASTE",
+        "VAB",
+        "Assisted Boot",
+        "Interface Prototype",
+        "Human Computer Interaction",
+        "Interaction Design",
+        "Runtime Systems"
+      ],
+      "status": "archived",
+      "confidence": "observed",
+      "publishedAt": "2026-07-13",
+      "modifiedAt": "2026-07-13"
     },
     {
       "id": "ea:artefact:vaste-validation-record",

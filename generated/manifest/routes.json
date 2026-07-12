@@ -1,5 +1,11 @@
 [
   {
+    "id": "ea:artefact:vab-interface-prototype",
+    "locale": "en",
+    "route": "/archive/artefacts/vab-interface-prototype/",
+    "identifier": "/id/artefact/vab-interface-prototype/"
+  },
+  {
     "id": "ea:artefact:vaste-validation-record",
     "locale": "en",
     "route": "/archive/artefacts/vaste-validation-record/",
@@ -322,6 +328,12 @@
     "locale": "en",
     "route": "/knowledge/concepts/web-audio/",
     "identifier": "/id/concept/web-audio/"
+  },
+  {
+    "id": "ea:artefact:vab-interface-prototype-fr",
+    "locale": "fr",
+    "route": "/fr/archive/artefacts/vab-interface-prototype/",
+    "identifier": "/fr/id/artefact/vab-interface-prototype/"
   },
   {
     "id": "ea:artefact:vaste-validation-record-fr",

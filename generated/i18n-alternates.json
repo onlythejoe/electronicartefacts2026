@@ -19,6 +19,10 @@
     "en": "/archive.html",
     "fr": "/fr/archive.html"
   },
+  "/archive/artefacts/vab-interface-prototype/": {
+    "en": "/archive/artefacts/vab-interface-prototype/",
+    "fr": "/fr/archive/artefacts/vab-interface-prototype/"
+  },
   "/archive/artefacts/vaste-validation-record/": {
     "en": "/archive/artefacts/vaste-validation-record/",
     "fr": "/fr/archive/artefacts/vaste-validation-record/"
@@ -109,6 +113,10 @@
   "/fr/archive.html": {
     "en": "/archive.html",
     "fr": "/fr/archive.html"
+  },
+  "/fr/archive/artefacts/vab-interface-prototype/": {
+    "en": "/archive/artefacts/vab-interface-prototype/",
+    "fr": "/fr/archive/artefacts/vab-interface-prototype/"
   },
   "/fr/archive/artefacts/vaste-validation-record/": {
     "en": "/archive/artefacts/vaste-validation-record/",

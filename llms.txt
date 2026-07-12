@@ -58,4 +58,4 @@ Use canonical HTML URLs for human-facing citations. Use identifier routes under 
 - [Humans.txt](https://electronicartefacts.com/humans.txt)
 - [Security.txt](https://electronicartefacts.com/.well-known/security.txt)
 
-Last curated source update: 2026-07-12
+Last curated source update: 2026-07-13

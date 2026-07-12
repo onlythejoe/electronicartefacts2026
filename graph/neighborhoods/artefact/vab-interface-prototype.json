@@ -1,0 +1,34 @@
+{
+  "id": "local:ea:artefact:vab-interface-prototype",
+  "kind": "local",
+  "focus": "ea:artefact:vab-interface-prototype",
+  "nodes": [
+    {
+      "id": "ea:artefact:vab-interface-prototype",
+      "type": "artefact",
+      "title": "VAB Interface Prototype",
+      "route": "/archive/artefacts/vab-interface-prototype/",
+      "status": "archived",
+      "confidence": "observed"
+    },
+    {
+      "id": "ea:concept:vab-and-genesis",
+      "type": "concept",
+      "title": "VAB and Genesis",
+      "route": "/knowledge/concepts/vab-and-genesis/",
+      "status": "experimental",
+      "confidence": "validated"
+    }
+  ],
+  "edges": [
+    {
+      "id": "ear:vab-evidenced-by-interface-prototype",
+      "source": "ea:concept:vab-and-genesis",
+      "target": "ea:artefact:vab-interface-prototype",
+      "predicate": "evidencedBy",
+      "label": "Evidenced by",
+      "statement": "The preserved VAB browser prototype provides inspectable evidence of the Assisted Boot interaction study while remaining distinct from the VASTE runtime implementation.",
+      "confidence": "observed"
+    }
+  ]
+}

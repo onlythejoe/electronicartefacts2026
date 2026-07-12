@@ -572,6 +572,17 @@
     "visibility": "public"
   },
   {
+    "id": "ear:palimpsests-produced-by-electronic-artefacts",
+    "subject": "ea:project:palimpsests",
+    "predicate": "producedBy",
+    "object": "ea:organization:electronic-artefacts",
+    "statement": "Electronic Artefacts produces Palimpsests as a five-chapter ORETH album and compound cultural project.",
+    "confidence": "published",
+    "createdAt": "2026-01-01",
+    "reviewedAt": "2026-07-13",
+    "visibility": "public"
+  },
+  {
     "id": "ear:oreth-applies-signal-archaeology",
     "subject": "ea:program:oreth",
     "predicate": "appliesConcept",
@@ -2670,6 +2681,17 @@
     "confidence": "validated",
     "createdAt": "2026-07-11",
     "reviewedAt": "2026-07-11",
+    "visibility": "public"
+  },
+  {
+    "id": "ear:vab-evidenced-by-interface-prototype",
+    "subject": "ea:concept:vab-and-genesis",
+    "predicate": "evidencedBy",
+    "object": "ea:artefact:vab-interface-prototype",
+    "statement": "The preserved VAB browser prototype provides inspectable evidence of the Assisted Boot interaction study while remaining distinct from the VASTE runtime implementation.",
+    "confidence": "observed",
+    "createdAt": "2026-07-07",
+    "reviewedAt": "2026-07-13",
     "visibility": "public"
   },
   {
