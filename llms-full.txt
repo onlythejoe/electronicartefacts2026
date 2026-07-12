@@ -238,7 +238,7 @@ This file is generated from typed public records. Prefer each record's canonical
   - Identifier: https://electronicartefacts.com/id/publication/digital-preservation-and-living-archives/
   - JSON-LD: https://electronicartefacts.com/id/publication/digital-preservation-and-living-archives/index.jsonld
   - Modified: 2026-06-23
-  - Keywords: Digital Preservation and Living Archives, Digital Preservation, Living Archive, Provenance, Palimpsests, V6, Archives, Digital Art
+  - Keywords: Digital Preservation and Living Archives, Digital Preservation, Living Archive, Provenance, Palimpsests, Vestiges, Archives, Digital Art
 - [Données liées et pages publiques de connaissance](https://electronicartefacts.com/fr/publications/linked-data-and-public-knowledge-pages/): Un article technique sur les données liées, JSON-LD, les URL canoniques, les identifiants et le référencement pour les plateformes de connaissances statiques.
   - Entity ID: ea:publication:linked-data-and-public-knowledge-pages-fr
   - Identifier: https://electronicartefacts.com/fr/id/publication/linked-data-and-public-knowledge-pages/
@@ -299,12 +299,12 @@ This file is generated from typed public records. Prefer each record's canonical
   - JSON-LD: https://electronicartefacts.com/fr/id/publication/responsible-ai-governance-for-creative-and-cultural-systems/index.jsonld
   - Modified: 2026-07-12
   - Keywords: Gouvernance responsable de l'IA pour les systèmes créatifs et culturels, Responsible AI, gouvernance de l'IA, technologies créatives, infrastructure culturelle, Provenance, intelligence artificielle, systèmes de connaissance
-- [Graphes de connaissances pour les infrastructures culturelles](https://electronicartefacts.com/fr/publications/knowledge-graphs-for-cultural-infrastructure/): Un article technique sur les graphes de connaissances, le patrimoine culturel, la provenance et les pages du savoir public, relié au V6 et au graphique d’Electronic Artefacts.
+- [Graphes de connaissances pour les infrastructures culturelles](https://electronicartefacts.com/fr/publications/knowledge-graphs-for-cultural-infrastructure/): Un article technique sur les graphes de connaissances, le patrimoine culturel, la provenance et les pages du savoir public, relié au Vestiges et au graphique d’Electronic Artefacts.
   - Entity ID: ea:publication:knowledge-graphs-for-cultural-infrastructure-fr
   - Identifier: https://electronicartefacts.com/fr/id/publication/knowledge-graphs-for-cultural-infrastructure/
   - JSON-LD: https://electronicartefacts.com/fr/id/publication/knowledge-graphs-for-cultural-infrastructure/index.jsonld
   - Modified: 2026-07-12
-  - Keywords: Graphes de connaissances pour les infrastructures culturelles, graphe de connaissances, infrastructure culturelle, Linked Data, Provenance, V6, systèmes de connaissance, archives
+  - Keywords: Graphes de connaissances pour les infrastructures culturelles, graphe de connaissances, infrastructure culturelle, Linked Data, Provenance, Vestiges, systèmes de connaissance, archives
 - [Graphisme procédural, shaders et systèmes visuels](https://electronicartefacts.com/fr/publications/procedural-graphics-shaders-and-visual-systems/): Un article technique sur les graphismes procéduraux, les shaders, WebGL, le codage créatif et les systèmes visuels génératifs.
   - Entity ID: ea:publication:procedural-graphics-shaders-and-visual-systems-fr
   - Identifier: https://electronicartefacts.com/fr/id/publication/procedural-graphics-shaders-and-visual-systems/
@@ -377,12 +377,12 @@ This file is generated from typed public records. Prefer each record's canonical
   - JSON-LD: https://electronicartefacts.com/fr/id/publication/human-computer-interaction-for-creative-tools/index.jsonld
   - Modified: 2026-07-12
   - Keywords: Interaction humain-machine pour les outils créatifs, interaction humain-machine, outils créatifs, intelligence augmentée, accessibilité, design, programmation créative, intelligence artificielle
-- [Knowledge Graphs for Cultural Infrastructure](https://electronicartefacts.com/publications/knowledge-graphs-for-cultural-infrastructure/): A technical article on knowledge graphs, cultural heritage, provenance and public knowledge pages, connected to V6 and the Electronic Artefacts graph.
+- [Knowledge Graphs for Cultural Infrastructure](https://electronicartefacts.com/publications/knowledge-graphs-for-cultural-infrastructure/): A technical article on knowledge graphs, cultural heritage, provenance and public knowledge pages, connected to Vestiges and the Electronic Artefacts graph.
   - Entity ID: ea:publication:knowledge-graphs-for-cultural-infrastructure
   - Identifier: https://electronicartefacts.com/id/publication/knowledge-graphs-for-cultural-infrastructure/
   - JSON-LD: https://electronicartefacts.com/id/publication/knowledge-graphs-for-cultural-infrastructure/index.jsonld
   - Modified: 2026-06-23
-  - Keywords: Knowledge Graphs for Cultural Infrastructure, Knowledge Graph, Cultural Infrastructure, Linked Data, Provenance, V6, Knowledge Systems, Archives
+  - Keywords: Knowledge Graphs for Cultural Infrastructure, Knowledge Graph, Cultural Infrastructure, Linked Data, Provenance, Vestiges, Knowledge Systems, Archives
 - [L’open source comme infrastructure culturelle](https://electronicartefacts.com/fr/publications/open-source-as-cultural-infrastructure/): Un article technique sur les logiciels libres, la maintenance, le codage créatif, l'infrastructure et la culture du savoir d'Electronic Artefacts.
   - Entity ID: ea:publication:open-source-as-cultural-infrastructure-fr
   - Identifier: https://electronicartefacts.com/fr/id/publication/open-source-as-cultural-infrastructure/
@@ -520,7 +520,7 @@ This file is generated from typed public records. Prefer each record's canonical
   - Identifier: https://electronicartefacts.com/fr/id/publication/digital-preservation-and-living-archives/
   - JSON-LD: https://electronicartefacts.com/fr/id/publication/digital-preservation-and-living-archives/index.jsonld
   - Modified: 2026-07-12
-  - Keywords: Préservation numérique et archives vivantes, Digital Préservation, Living Archive, Provenance, Palimpsests, V6, archives, art numérique
+  - Keywords: Préservation numérique et archives vivantes, Digital Préservation, Living Archive, Provenance, Palimpsests, Vestiges, archives, art numérique
 - [Procedural Graphics, Shaders and Visual Systems](https://electronicartefacts.com/publications/procedural-graphics-shaders-and-visual-systems/): A technical article on procedural graphics, shaders, WebGL, creative coding and generative visual systems.
   - Entity ID: ea:publication:procedural-graphics-shaders-and-visual-systems
   - Identifier: https://electronicartefacts.com/id/publication/procedural-graphics-shaders-and-visual-systems/

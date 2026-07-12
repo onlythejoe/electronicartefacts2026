@@ -779,6 +779,7 @@ window.EA_ENTITIES = {
     },
     {
       "id": "ea-lightweight-template",
+      "canonicalId": "ea:framework:electronic-artefacts-lightweight-template",
       "title": "Electronic Artefacts Lightweight Template",
       "subtitle": "Vanilla Web Framework",
       "kind": "program",
@@ -4771,6 +4772,7 @@ window.EA_ENTITIES = {
   "researchLogs": [
     {
       "id": "foundational-lineage-001",
+      "canonicalId": "ea:publication:foundational-lineage-001",
       "title": "Foundational Lineage #001",
       "kind": "researchLog",
       "type": "Research Log",
@@ -5341,6 +5343,7 @@ window.EA_COLLECTIONS = [
   },
   {
     "id": "voice-capture-studio-collection",
+    "canonicalId": "ea:collection:voice-capture-studio",
     "title": "Voice Capture Studio Collection",
     "kind": "collection",
     "type": "Collection",
@@ -6166,7 +6169,7 @@ window.EA_PUBLIC_CATALOG = {
       "locale": "en",
       "title": "Digital Preservation",
       "summary": "Digital preservation connects file formats, metadata, provenance, storage, rights, migration and interpretation into a long-term care practice for digital culture.",
-      "description": "A canonical definition of digital preservation for Electronic Artefacts archives, Palimpsests, V6 and knowledge infrastructure.",
+      "description": "A canonical definition of digital preservation for Electronic Artefacts archives, Palimpsests, Vestiges and knowledge infrastructure.",
       "definition": "Digital preservation is the long-term work of keeping digital objects understandable, authentic, usable and accessible despite changes in formats, software, hardware and context.",
       "status": "active",
       "maturity": "research",
@@ -6424,7 +6427,7 @@ window.EA_PUBLIC_CATALOG = {
       "locale": "en",
       "title": "Graph Runtime",
       "summary": "Electronic Artefacts uses graph runtime to describe systems where entities, relationships, identity, context and events form an executable structure rather than a passive data model.",
-      "description": "A canonical definition of graph runtime, its scope, applications and relationship to VASTE, Runtime Theory and V6.",
+      "description": "A canonical definition of graph runtime, its scope, applications and relationship to VASTE, Runtime Theory and Vestiges.",
       "definition": "A graph runtime is an execution environment in which addressable entities and typed relationships participate directly in contextual computation.",
       "status": "active",
       "maturity": "research",
@@ -8443,7 +8446,7 @@ window.EA_PUBLIC_CATALOG = {
       "translationOf": "ea:concept:graph-runtime",
       "title": "Runtime de graphe",
       "summary": "Electronic Artefacts emploie « runtime de graphe » pour désigner les systèmes où entités, relations, identité, contexte et événements forment une structure exécutable plutôt qu’un modèle de données passif.",
-      "description": "Une définition canonique du runtime de graphe, de son périmètre et de ses liens avec VASTE, Théorie du runtime et V6.",
+      "description": "Une définition canonique du runtime de graphe, de son périmètre et de ses liens avec VASTE, Théorie du runtime et Vestiges.",
       "definition": "Runtime de graphe désigne les environnements d'exécution où les entités, relations, permissions et événements du graphe participent directement au calcul.",
       "status": "active",
       "maturity": "research",
@@ -10135,7 +10138,7 @@ window.EA_PUBLIC_CATALOG = {
         "Living Archive",
         "Provenance",
         "Palimpsests",
-        "V6"
+        "Vestiges"
       ],
       "discipline": [
         "archives",
@@ -10497,7 +10500,7 @@ window.EA_PUBLIC_CATALOG = {
       "title": "Graphes de connaissances pour les infrastructures culturelles",
       "subtitle": "Article technique",
       "summary": "Cet article explique comment les graphes de connaissances soutiennent l'infrastructure culturelle en donnant aux personnes, aux œuvres, aux sources, aux concepts, aux projets et aux archives des identités stables et des relations explicites.",
-      "description": "Un article technique sur les graphes de connaissances, le patrimoine culturel, la provenance et les pages du savoir public, relié au V6 et au graphique d’Electronic Artefacts.",
+      "description": "Un article technique sur les graphes de connaissances, le patrimoine culturel, la provenance et les pages du savoir public, relié au Vestiges et au graphique d’Electronic Artefacts.",
       "status": "active",
       "maturity": "research",
       "confidence": "published",
@@ -10508,7 +10511,7 @@ window.EA_PUBLIC_CATALOG = {
         "infrastructure culturelle",
         "Linked Data",
         "Provenance",
-        "V6"
+        "Vestiges"
       ],
       "discipline": [
         "systèmes de connaissance",
@@ -13277,7 +13280,7 @@ window.EA_PUBLIC_CATALOG = {
         "Living Archive",
         "Provenance",
         "Palimpsests",
-        "V6"
+        "Vestiges"
       ],
       "discipline": [
         "Archives",
@@ -13629,7 +13632,7 @@ window.EA_PUBLIC_CATALOG = {
       "title": "Knowledge Graphs for Cultural Infrastructure",
       "subtitle": "Technical Article",
       "summary": "This article explains how knowledge graphs support cultural infrastructure by giving people, works, sources, concepts, projects and archives stable identities and explicit relations.",
-      "description": "A technical article on knowledge graphs, cultural heritage, provenance and public knowledge pages, connected to V6 and the Electronic Artefacts graph.",
+      "description": "A technical article on knowledge graphs, cultural heritage, provenance and public knowledge pages, connected to Vestiges and the Electronic Artefacts graph.",
       "status": "active",
       "maturity": "research",
       "confidence": "published",
@@ -13640,7 +13643,7 @@ window.EA_PUBLIC_CATALOG = {
         "Cultural Infrastructure",
         "Linked Data",
         "Provenance",
-        "V6"
+        "Vestiges"
       ],
       "discipline": [
         "Knowledge Systems",
