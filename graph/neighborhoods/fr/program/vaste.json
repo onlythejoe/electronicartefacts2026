@@ -274,6 +274,14 @@
       "route": "/fr/publications/a2a-agent-interoperability-and-governed-delegation/",
       "status": "active",
       "confidence": "published"
+    },
+    {
+      "id": "ea:publication:webmcp-and-the-agentic-web-fr",
+      "type": "publication",
+      "title": "WebMCP et le web agentique",
+      "route": "/fr/publications/webmcp-and-the-agentic-web/",
+      "status": "experimental",
+      "confidence": "published"
     }
   ],
   "edges": [
@@ -472,7 +480,7 @@
       "target": "ea:program:vaste-fr",
       "predicate": "poweredBy",
       "label": "Powered by",
-      "statement": "V6 is intended to test VASTE as its graph runtime and contextual execution foundation.",
+      "statement": "Vestiges is intended to test VASTE as its graph runtime and contextual execution foundation.",
       "confidence": "observed"
     },
     {
@@ -572,6 +580,15 @@
       "predicate": "documents",
       "label": "Documents",
       "statement": "A2A, Agent Interoperability and Governed Delegation documents VASTE as one of its declared subjects.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:webmcp-and-the-agentic-web-documents-vaste",
+      "source": "ea:publication:webmcp-and-the-agentic-web-fr",
+      "target": "ea:program:vaste-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "WebMCP and the Agentic Web documents VASTE as one of its declared subjects.",
       "confidence": "published"
     }
   ]

@@ -181,7 +181,7 @@
       "target": "ea:concept:knowledge-graph",
       "predicate": "appliesConcept",
       "label": "Applies concept",
-      "statement": "V6 is intended to test knowledge-graph principles for art, craft, institutions, techniques and CRM-oriented public surfaces.",
+      "statement": "Vestiges is intended to test knowledge-graph principles for art, craft, institutions, techniques and CRM-oriented public surfaces.",
       "confidence": "observed"
     },
     {
@@ -271,7 +271,7 @@
       "target": "ea:program:vaste",
       "predicate": "poweredBy",
       "label": "Powered by",
-      "statement": "V6 is intended to test VASTE as its graph runtime and contextual execution foundation.",
+      "statement": "Vestiges is intended to test VASTE as its graph runtime and contextual execution foundation.",
       "confidence": "observed"
     },
     {
@@ -280,7 +280,7 @@
       "target": "ea:concept:graph-runtime",
       "predicate": "appliesConcept",
       "label": "Applies concept",
-      "statement": "V6 is intended to apply graph-runtime principles to art, craft and CRM-oriented infrastructure.",
+      "statement": "Vestiges is intended to apply graph-runtime principles to art, craft and CRM-oriented infrastructure.",
       "confidence": "observed"
     },
     {
@@ -298,7 +298,7 @@
       "target": "ea:organization:electronic-artefacts",
       "predicate": "createdBy",
       "label": "Created by",
-      "statement": "Electronic Artefacts is developing V6 as an applied test platform for VASTE, focused on mapping art and craft practices and CRM-oriented workflows.",
+      "statement": "Electronic Artefacts is developing Vestiges as an applied test platform for VASTE, focused on mapping art and craft practices and CRM-oriented workflows.",
       "confidence": "published"
     },
     {

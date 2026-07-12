@@ -60,7 +60,7 @@
         {
           "@type": "PropertyValue",
           "name": "publicRelations",
-          "value": 500
+          "value": 501
         }
       ],
       "includedInDataCatalog": {

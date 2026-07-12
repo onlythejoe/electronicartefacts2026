@@ -1331,7 +1331,7 @@
       "documents Runtime Engines and Domain Operating Systems connects domain runtimes to graph execution.",
       "defines Runtime Theory supplies the research questions and boundaries used to define graph runtime within Electronic Artefacts.",
       "appliesConcept VASTE applies the graph-runtime concept through addressable entities, typed relationships, identity, context and event execution.",
-      "appliesConcept V6 is intended to apply graph-runtime principles to art, craft and CRM-oriented infrastructure.",
+      "appliesConcept Vestiges is intended to apply graph-runtime principles to art, craft and CRM-oriented infrastructure.",
       "appliesConcept The research question \"How can software become explainable through its own knowledge graph?\" applies Graph Runtime as part of its current model.",
       "documents Model Context Protocol and Tool-Using AI Systems documents Graph Runtime as one of its declared subjects."
     ],
@@ -1509,7 +1509,7 @@
     "questions": [],
     "relationLabels": [
       "documents AI Search, Structured Content and Knowledge Graph SEO documents knowledge graphs as an SEO architecture for AI retrieval.",
-      "appliesConcept V6 is intended to test knowledge-graph principles for art, craft, institutions, techniques and CRM-oriented public surfaces.",
+      "appliesConcept Vestiges is intended to test knowledge-graph principles for art, craft, institutions, techniques and CRM-oriented public surfaces.",
       "documents Knowledge Graphs for Cultural Infrastructure documents the knowledge-graph concept for cultural publishing.",
       "documents Hypertext and Augmented Knowledge Systems explains how knowledge graphs strengthen linked pages with explicit relations.",
       "documents Retrieval-Augmented Generation and Knowledge Systems explains graph-grounded retrieval.",
@@ -3949,7 +3949,7 @@
       "documents Runtime Engines and Domain Operating Systems connects domain runtimes to graph execution.",
       "defines Runtime Theory supplies the research questions and boundaries used to define graph runtime within Electronic Artefacts.",
       "appliesConcept VASTE applies the graph-runtime concept through addressable entities, typed relationships, identity, context and event execution.",
-      "appliesConcept V6 is intended to apply graph-runtime principles to art, craft and CRM-oriented infrastructure.",
+      "appliesConcept Vestiges is intended to apply graph-runtime principles to art, craft and CRM-oriented infrastructure.",
       "appliesConcept The research question \"How can software become explainable through its own knowledge graph?\" applies Graph Runtime as part of its current model.",
       "documents Model Context Protocol and Tool-Using AI Systems documents Graph Runtime as one of its declared subjects."
     ],
@@ -4124,7 +4124,7 @@
     "questions": [],
     "relationLabels": [
       "documents AI Search, Structured Content and Knowledge Graph SEO documents knowledge graphs as an SEO architecture for AI retrieval.",
-      "appliesConcept V6 is intended to test knowledge-graph principles for art, craft, institutions, techniques and CRM-oriented public surfaces.",
+      "appliesConcept Vestiges is intended to test knowledge-graph principles for art, craft, institutions, techniques and CRM-oriented public surfaces.",
       "documents Knowledge Graphs for Cultural Infrastructure documents the knowledge-graph concept for cultural publishing.",
       "documents Hypertext and Augmented Knowledge Systems explains how knowledge graphs strengthen linked pages with explicit relations.",
       "documents Retrieval-Augmented Generation and Knowledge Systems explains graph-grounded retrieval.",
@@ -5291,7 +5291,7 @@
     "relationLabels": [
       "publishedBy Electronic Artefacts publishes and maintains Foundational Lineage",
       "maintainedBy Electronic Artefacts develops and maintains the VASTE program.",
-      "createdBy Electronic Artefacts is developing V6 as an applied test platform for VASTE, focused on mapping art and craft practices and CRM-oriented workflows.",
+      "createdBy Electronic Artefacts is developing Vestiges as an applied test platform for VASTE, focused on mapping art and craft practices and CRM-oriented workflows.",
       "createdBy Electronic Artefacts created Voice Capture Studio as an open-source browser application for local-first speech recording.",
       "maintainedBy Electronic Artefacts maintains the Voice Capture Studio project, repository and public GitHub Pages deployment.",
       "publishedBy Voice Capture Studio is published by Electronic Artefacts as an open-source software artefact."
@@ -5424,7 +5424,7 @@
       "appliesConcept VASTE explores domain operating system architecture for graph-shaped products.",
       "appliesConcept VASTE applies the graph-runtime concept through addressable entities, typed relationships, identity, context and event execution.",
       "derivedFrom VASTE derives its runtime primitives and contextual execution questions from the Runtime Theory research field.",
-      "poweredBy V6 is intended to test VASTE as its graph runtime and contextual execution foundation.",
+      "poweredBy Vestiges is intended to test VASTE as its graph runtime and contextual execution foundation.",
       "maintainedBy Electronic Artefacts develops and maintains the VASTE program.",
       "hasPart VASTE is composed from the closed primitive roster Vertex, Tie, Action, Surface and Environment.",
       "hasPart VASTE implements the experimental vast/1 portable graph package format for whole-System and subtree closures.",
@@ -5435,7 +5435,8 @@
       "implementedBy VASTE is listed as a current software or project answer for the research question \"How can an AI understand someone during its very first conversation?\".",
       "implementedBy VASTE is listed as a current software or project answer for the research question \"How can software become explainable through its own knowledge graph?\".",
       "memberOfCollection VASTE is an explicit member of the Knowledge Hub Fifth Wave collection.",
-      "documents A2A, Agent Interoperability and Governed Delegation documents VASTE as one of its declared subjects."
+      "documents A2A, Agent Interoperability and Governed Delegation documents VASTE as one of its declared subjects.",
+      "documents WebMCP and the Agentic Web documents VASTE as one of its declared subjects."
     ],
     "relatedEntityIds": [
       "ea:publication:foundational-lineage-001",
@@ -5470,7 +5471,8 @@
       "ea:researchQuestion:first-conversation-understanding",
       "ea:researchQuestion:self-explaining-knowledge-graph-software",
       "ea:collection:knowledge-hub-fifth-wave",
-      "ea:publication:a2a-agent-interoperability-and-governed-delegation"
+      "ea:publication:a2a-agent-interoperability-and-governed-delegation",
+      "ea:publication:webmcp-and-the-agentic-web"
     ],
     "status": "development",
     "confidence": "validated",
@@ -5560,7 +5562,7 @@
     "relationLabels": [
       "documents IIIF and Compound Cultural Objects uses Vestiges as a cultural infrastructure context for compound object records.",
       "integratesWith Vestiges can integrate with IIIF for compound cultural object presentation and annotation-aware viewing.",
-      "appliesConcept V6 is intended to test knowledge-graph principles for art, craft, institutions, techniques and CRM-oriented public surfaces.",
+      "appliesConcept Vestiges is intended to test knowledge-graph principles for art, craft, institutions, techniques and CRM-oriented public surfaces.",
       "documents Knowledge Graphs for Cultural Infrastructure uses Vestiges as the applied cultural infrastructure example.",
       "documents Digital Preservation and Living Archives connects Vestiges to living archive and cultural knowledge preservation.",
       "documents Metadata, Cataloguing and Cultural Memory links metadata practice to the Vestiges cultural knowledge project.",
@@ -5570,10 +5572,10 @@
       "appliesConcept Vestiges applies ontology design to people, techniques, materials, institutions and cultural relations.",
       "appliesConcept Vestiges applies graph modeling to cultural knowledge and human know-how.",
       "appliesConcept Vestiges explores a domain operating system for cultural knowledge, contribution and exchange.",
-      "poweredBy V6 is intended to test VASTE as its graph runtime and contextual execution foundation.",
-      "appliesConcept V6 is intended to apply graph-runtime principles to art, craft and CRM-oriented infrastructure.",
+      "poweredBy Vestiges is intended to test VASTE as its graph runtime and contextual execution foundation.",
+      "appliesConcept Vestiges is intended to apply graph-runtime principles to art, craft and CRM-oriented infrastructure.",
       "evidencedBy Foundational Lineage",
-      "createdBy Electronic Artefacts is developing V6 as an applied test platform for VASTE, focused on mapping art and craft practices and CRM-oriented workflows.",
+      "createdBy Electronic Artefacts is developing Vestiges as an applied test platform for VASTE, focused on mapping art and craft practices and CRM-oriented workflows.",
       "implementedBy Vestiges is listed as a current software or project answer for the research question \"How can an AI understand someone during its very first conversation?\".",
       "implementedBy Vestiges is listed as a current software or project answer for the research question \"How can software become explainable through its own knowledge graph?\"."
     ],
@@ -8297,7 +8299,8 @@
       "documents WebMCP and the Agentic Web documents Browser Software as one of its declared subjects.",
       "documents WebMCP and the Agentic Web documents Human Computer Interaction as one of its declared subjects.",
       "documents WebMCP and the Agentic Web documents AI Agent as one of its declared subjects.",
-      "documents WebMCP and the Agentic Web documents Linked Data as one of its declared subjects."
+      "documents WebMCP and the Agentic Web documents Linked Data as one of its declared subjects.",
+      "documents WebMCP and the Agentic Web documents VASTE as one of its declared subjects."
     ],
     "relatedEntityIds": [
       "ea:collection:knowledge-hub-fifth-wave",
@@ -8306,7 +8309,8 @@
       "ea:concept:browser-software",
       "ea:concept:human-computer-interaction",
       "ea:concept:ai-agent",
-      "ea:concept:linked-data"
+      "ea:concept:linked-data",
+      "ea:program:vaste"
     ],
     "status": "experimental",
     "confidence": "published",
@@ -9548,7 +9552,7 @@
     "relationLabels": [
       "publishedBy Electronic Artefacts publishes and maintains Foundational Lineage",
       "maintainedBy Electronic Artefacts develops and maintains the VASTE program.",
-      "createdBy Electronic Artefacts is developing V6 as an applied test platform for VASTE, focused on mapping art and craft practices and CRM-oriented workflows.",
+      "createdBy Electronic Artefacts is developing Vestiges as an applied test platform for VASTE, focused on mapping art and craft practices and CRM-oriented workflows.",
       "createdBy Electronic Artefacts created Voice Capture Studio as an open-source browser application for local-first speech recording.",
       "maintainedBy Electronic Artefacts maintains the Voice Capture Studio project, repository and public GitHub Pages deployment.",
       "publishedBy Voice Capture Studio is published by Electronic Artefacts as an open-source software artefact."
@@ -9681,7 +9685,7 @@
       "appliesConcept VASTE explores domain operating system architecture for graph-shaped products.",
       "appliesConcept VASTE applies the graph-runtime concept through addressable entities, typed relationships, identity, context and event execution.",
       "derivedFrom VASTE derives its runtime primitives and contextual execution questions from the Runtime Theory research field.",
-      "poweredBy V6 is intended to test VASTE as its graph runtime and contextual execution foundation.",
+      "poweredBy Vestiges is intended to test VASTE as its graph runtime and contextual execution foundation.",
       "maintainedBy Electronic Artefacts develops and maintains the VASTE program.",
       "hasPart VASTE is composed from the closed primitive roster Vertex, Tie, Action, Surface and Environment.",
       "hasPart VASTE implements the experimental vast/1 portable graph package format for whole-System and subtree closures.",
@@ -9692,7 +9696,8 @@
       "implementedBy VASTE is listed as a current software or project answer for the research question \"How can an AI understand someone during its very first conversation?\".",
       "implementedBy VASTE is listed as a current software or project answer for the research question \"How can software become explainable through its own knowledge graph?\".",
       "memberOfCollection VASTE is an explicit member of the Knowledge Hub Fifth Wave collection.",
-      "documents A2A, Agent Interoperability and Governed Delegation documents VASTE as one of its declared subjects."
+      "documents A2A, Agent Interoperability and Governed Delegation documents VASTE as one of its declared subjects.",
+      "documents WebMCP and the Agentic Web documents VASTE as one of its declared subjects."
     ],
     "relatedEntityIds": [
       "ea:publication:foundational-lineage-001",
@@ -9727,7 +9732,8 @@
       "ea:researchQuestion:first-conversation-understanding",
       "ea:researchQuestion:self-explaining-knowledge-graph-software",
       "ea:collection:knowledge-hub-fifth-wave",
-      "ea:publication:a2a-agent-interoperability-and-governed-delegation"
+      "ea:publication:a2a-agent-interoperability-and-governed-delegation",
+      "ea:publication:webmcp-and-the-agentic-web"
     ],
     "status": "development",
     "confidence": "validated",
@@ -9819,7 +9825,7 @@
     "relationLabels": [
       "documents IIIF and Compound Cultural Objects uses Vestiges as a cultural infrastructure context for compound object records.",
       "integratesWith Vestiges can integrate with IIIF for compound cultural object presentation and annotation-aware viewing.",
-      "appliesConcept V6 is intended to test knowledge-graph principles for art, craft, institutions, techniques and CRM-oriented public surfaces.",
+      "appliesConcept Vestiges is intended to test knowledge-graph principles for art, craft, institutions, techniques and CRM-oriented public surfaces.",
       "documents Knowledge Graphs for Cultural Infrastructure uses Vestiges as the applied cultural infrastructure example.",
       "documents Digital Preservation and Living Archives connects Vestiges to living archive and cultural knowledge preservation.",
       "documents Metadata, Cataloguing and Cultural Memory links metadata practice to the Vestiges cultural knowledge project.",
@@ -9829,10 +9835,10 @@
       "appliesConcept Vestiges applies ontology design to people, techniques, materials, institutions and cultural relations.",
       "appliesConcept Vestiges applies graph modeling to cultural knowledge and human know-how.",
       "appliesConcept Vestiges explores a domain operating system for cultural knowledge, contribution and exchange.",
-      "poweredBy V6 is intended to test VASTE as its graph runtime and contextual execution foundation.",
-      "appliesConcept V6 is intended to apply graph-runtime principles to art, craft and CRM-oriented infrastructure.",
+      "poweredBy Vestiges is intended to test VASTE as its graph runtime and contextual execution foundation.",
+      "appliesConcept Vestiges is intended to apply graph-runtime principles to art, craft and CRM-oriented infrastructure.",
       "evidencedBy Foundational Lineage",
-      "createdBy Electronic Artefacts is developing V6 as an applied test platform for VASTE, focused on mapping art and craft practices and CRM-oriented workflows.",
+      "createdBy Electronic Artefacts is developing Vestiges as an applied test platform for VASTE, focused on mapping art and craft practices and CRM-oriented workflows.",
       "implementedBy Vestiges is listed as a current software or project answer for the research question \"How can an AI understand someone during its very first conversation?\".",
       "implementedBy Vestiges is listed as a current software or project answer for the research question \"How can software become explainable through its own knowledge graph?\"."
     ],
@@ -12556,7 +12562,8 @@
       "documents WebMCP and the Agentic Web documents Browser Software as one of its declared subjects.",
       "documents WebMCP and the Agentic Web documents Human Computer Interaction as one of its declared subjects.",
       "documents WebMCP and the Agentic Web documents AI Agent as one of its declared subjects.",
-      "documents WebMCP and the Agentic Web documents Linked Data as one of its declared subjects."
+      "documents WebMCP and the Agentic Web documents Linked Data as one of its declared subjects.",
+      "documents WebMCP and the Agentic Web documents VASTE as one of its declared subjects."
     ],
     "relatedEntityIds": [
       "ea:collection:knowledge-hub-fifth-wave",
@@ -12565,7 +12572,8 @@
       "ea:concept:browser-software",
       "ea:concept:human-computer-interaction",
       "ea:concept:ai-agent",
-      "ea:concept:linked-data"
+      "ea:concept:linked-data",
+      "ea:program:vaste"
     ],
     "status": "experimental",
     "confidence": "published",

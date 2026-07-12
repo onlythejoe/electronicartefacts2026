@@ -66,6 +66,14 @@
       "route": "/fr/knowledge/concepts/linked-data/",
       "status": "active",
       "confidence": "validated"
+    },
+    {
+      "id": "ea:program:vaste-fr",
+      "type": "program",
+      "title": "VASTE",
+      "route": "/fr/programs/vaste/",
+      "status": "development",
+      "confidence": "validated"
     }
   ],
   "edges": [
@@ -130,6 +138,15 @@
       "predicate": "documents",
       "label": "Documents",
       "statement": "WebMCP and the Agentic Web documents Linked Data as one of its declared subjects.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:webmcp-and-the-agentic-web-documents-vaste",
+      "source": "ea:publication:webmcp-and-the-agentic-web-fr",
+      "target": "ea:program:vaste-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "WebMCP and the Agentic Web documents VASTE as one of its declared subjects.",
       "confidence": "published"
     }
   ]
