@@ -9,7 +9,7 @@ This file is generated from typed public records. Prefer each record's canonical
 - Site language: en
 - Canonical origin: https://electronicartefacts.com
 - Search endpoint: https://electronicartefacts.com/search/?q={search_term_string}
-- Public records: 244
+- Public records: 256
 - Last curated source update: 2026-07-12
 
 ## organization
@@ -149,6 +149,18 @@ This file is generated from typed public records. Prefer each record's canonical
 
 ## publication
 
+- [A2A, Agent Interoperability and Governed Delegation](https://electronicartefacts.com/publications/a2a-agent-interoperability-and-governed-delegation/): Understand A2A agent cards, messages, tasks and artifacts, how A2A differs from MCP, and why agent interoperability still needs identity, policy and audit trails.
+  - Entity ID: ea:publication:a2a-agent-interoperability-and-governed-delegation
+  - Identifier: https://electronicartefacts.com/id/publication/a2a-agent-interoperability-and-governed-delegation/
+  - JSON-LD: https://electronicartefacts.com/id/publication/a2a-agent-interoperability-and-governed-delegation/index.jsonld
+  - Modified: 2026-07-12
+  - Keywords: A2A, Agent Interoperability and Governed Delegation, A2A, AI Agents, Agent Interoperability, Delegation, VASTE, Artificial Intelligence, Distributed Systems
+- [A2A, interopérabilité des agents et délégation gouvernée](https://electronicartefacts.com/fr/publications/a2a-agent-interoperability-and-governed-delegation/): Comprendre les Agent Cards, messages, tâches et artefacts A2A, la différence avec MCP et le besoin persistant d’identité, de politique et de traces d’audit.
+  - Entity ID: ea:publication:a2a-agent-interoperability-and-governed-delegation-fr
+  - Identifier: https://electronicartefacts.com/fr/id/publication/a2a-agent-interoperability-and-governed-delegation/
+  - JSON-LD: https://electronicartefacts.com/fr/id/publication/a2a-agent-interoperability-and-governed-delegation/index.jsonld
+  - Modified: 2026-07-12
+  - Keywords: A2A, interopérabilité des agents et délégation gouvernée, A2A, Agents IA, interopérabilité des agents, délégation, VASTE, intelligence artificielle, systèmes distribués
 - [Agents d'IA et workflows d'IA](https://electronicartefacts.com/fr/publications/ai-agents-vs-ai-workflows/): Comprendre la différence entre les agents d'IA et les flux de travail d'IA, quand utiliser chaque architecture, et comment concevoir des systèmes hybrides fiables.
   - Entity ID: ea:publication:ai-agents-vs-ai-workflows-fr
   - Identifier: https://electronicartefacts.com/fr/id/publication/ai-agents-vs-ai-workflows/
@@ -233,6 +245,12 @@ This file is generated from typed public records. Prefer each record's canonical
   - JSON-LD: https://electronicartefacts.com/fr/id/publication/linked-data-and-public-knowledge-pages/index.jsonld
   - Modified: 2026-07-12
   - Keywords: Données liées et pages publiques de connaissance, Linked Data, JSON-LD, Structured Data, SEO, Knowledge Pages, développement web, systèmes de connaissance
+- [EU AI Act Transparency, Content Provenance and Creative Practice](https://electronicartefacts.com/publications/eu-ai-act-transparency-content-provenance-and-creative-practice/): Prepare creative and cultural AI workflows for EU transparency rules with a layered approach to machine-readable marks, visible disclosure, provenance and editorial records.
+  - Entity ID: ea:publication:eu-ai-act-transparency-content-provenance-and-creative-practice
+  - Identifier: https://electronicartefacts.com/id/publication/eu-ai-act-transparency-content-provenance-and-creative-practice/
+  - JSON-LD: https://electronicartefacts.com/id/publication/eu-ai-act-transparency-content-provenance-and-creative-practice/index.jsonld
+  - Modified: 2026-07-12
+  - Keywords: EU AI Act Transparency, Content Provenance and Creative Practice, EU AI Act, AI Transparency, Synthetic Media, Content Provenance, C2PA, AI Governance, Digital Media
 - [Event-Driven Architecture and Event Streams](https://electronicartefacts.com/publications/event-driven-architecture-and-event-streams/): Learn event-driven architecture through event streams, delivery guarantees, schema evolution, idempotency, projections and runtime design.
   - Entity ID: ea:publication:event-driven-architecture-and-event-streams
   - Identifier: https://electronicartefacts.com/id/publication/event-driven-architecture-and-event-streams/
@@ -581,6 +599,12 @@ This file is generated from typed public records. Prefer each record's canonical
   - JSON-LD: https://electronicartefacts.com/id/publication/systems-thinking-for-creative-practice/index.jsonld
   - Modified: 2026-06-24
   - Keywords: Systems Thinking for Creative Practice, Systems Thinking, Creative Practice, Feedback, Complexity, Leverage Points, Systems Design, Cybernetics
+- [Transparence de l’AI Act, provenance des contenus et pratique créative](https://electronicartefacts.com/fr/publications/eu-ai-act-transparency-content-provenance-and-creative-practice/): Préparer les workflows culturels et créatifs aux règles européennes avec une approche combinant marquage machine, information visible, provenance et dossier éditorial.
+  - Entity ID: ea:publication:eu-ai-act-transparency-content-provenance-and-creative-practice-fr
+  - Identifier: https://electronicartefacts.com/fr/id/publication/eu-ai-act-transparency-content-provenance-and-creative-practice/
+  - JSON-LD: https://electronicartefacts.com/fr/id/publication/eu-ai-act-transparency-content-provenance-and-creative-practice/index.jsonld
+  - Modified: 2026-07-12
+  - Keywords: Transparence de l’AI Act, provenance des contenus et pratique créative, AI Act, transparence de l’IA, médias synthétiques, provenance des contenus, C2PA, gouvernance de l’IA, médias numériques
 - [Typographie, systèmes de lecture et interfaces numériques](https://electronicartefacts.com/fr/publications/typography-reading-systems-and-digital-interfaces/): Un article technique sur la typographie, les systèmes de lecture, les interfaces web, l'accessibilité et la conception éditoriale d'Electronic Artefacts.
   - Entity ID: ea:publication:typography-reading-systems-and-digital-interfaces-fr
   - Identifier: https://electronicartefacts.com/fr/id/publication/typography-reading-systems-and-digital-interfaces/
@@ -611,6 +635,18 @@ This file is generated from typed public records. Prefer each record's canonical
   - JSON-LD: https://electronicartefacts.com/fr/id/publication/web-audio-and-browser-based-sound-systems/index.jsonld
   - Modified: 2026-07-12
   - Keywords: Web Audio et systèmes sonores dans le navigateur, Web Audio, Audio Graph, Browser Sound, ORETH, ingénierie audio, développement web, programmation créative
+- [WebMCP and the Agentic Web](https://electronicartefacts.com/publications/webmcp-and-the-agentic-web/): Explore WebMCP, structured browser tools, declarative forms, permissions and why an agent-readable website still needs semantic HTML and accessible human interfaces.
+  - Entity ID: ea:publication:webmcp-and-the-agentic-web
+  - Identifier: https://electronicartefacts.com/id/publication/webmcp-and-the-agentic-web/
+  - JSON-LD: https://electronicartefacts.com/id/publication/webmcp-and-the-agentic-web/index.jsonld
+  - Modified: 2026-07-12
+  - Keywords: WebMCP and the Agentic Web, WebMCP, Agentic Web, Browser Agents, Human Agent Collaboration, Web Standards, Web Architecture, Human Computer Interaction
+- [WebMCP et le web agentique](https://electronicartefacts.com/fr/publications/webmcp-and-the-agentic-web/): Explorer WebMCP, les outils structurés du navigateur, les formulaires déclaratifs, les permissions et le rôle persistant du HTML sémantique et de l’accessibilité.
+  - Entity ID: ea:publication:webmcp-and-the-agentic-web-fr
+  - Identifier: https://electronicartefacts.com/fr/id/publication/webmcp-and-the-agentic-web/
+  - JSON-LD: https://electronicartefacts.com/fr/id/publication/webmcp-and-the-agentic-web/index.jsonld
+  - Modified: 2026-07-12
+  - Keywords: WebMCP et le web agentique, WebMCP, web agentique, agents de navigateur, collaboration humain-agent, standards du Web, architecture web, interaction humain-machine
 - [WebNN and Local AI in the Browser](https://electronicartefacts.com/publications/webnn-and-local-ai-in-the-browser/): Understand WebNN as a browser API for hardware-accelerated neural-network inference and local AI interaction design.
   - Entity ID: ea:publication:webnn-and-local-ai-in-the-browser
   - Identifier: https://electronicartefacts.com/id/publication/webnn-and-local-ai-in-the-browser/
@@ -1199,6 +1235,12 @@ This file is generated from typed public records. Prefer each record's canonical
   - JSON-LD: https://electronicartefacts.com/id/technology/activitypub/index.jsonld
   - Modified: 2026-06-24
   - Keywords: ActivityPub, Federation, Social Web, Internet Culture, Network Culture, Web Development
+- [Agent2Agent Protocol](https://electronicartefacts.com/knowledge/technologies/agent2agent-protocol/): A canonical guide to A2A agent cards, messages, tasks, artifacts, protocol bindings, security boundaries and its relationship with MCP.
+  - Entity ID: ea:technology:agent2agent-protocol
+  - Identifier: https://electronicartefacts.com/id/technology/agent2agent-protocol/
+  - JSON-LD: https://electronicartefacts.com/id/technology/agent2agent-protocol/index.jsonld
+  - Modified: 2026-07-12
+  - Keywords: Agent2Agent Protocol, A2A, AI Agents, Interoperability, Agent Protocols, Artificial Intelligence, Software Architecture, Distributed Systems
 - [Architecture Transformer](https://electronicartefacts.com/fr/knowledge/technologies/transformer-architecture/): Architecture Transformer est présenté comme une technologie de référence pour comprendre ses usages, ses limites et son rôle dans les systèmes Electronic Artefacts.
   - Entity ID: ea:technology:transformer-architecture-fr
   - Identifier: https://electronicartefacts.com/fr/id/technology/transformer-architecture/
@@ -1313,6 +1355,12 @@ This file is generated from typed public records. Prefer each record's canonical
   - JSON-LD: https://electronicartefacts.com/id/technology/owl/index.jsonld
   - Modified: 2026-06-24
   - Keywords: OWL, Web Ontology Language, Ontology, Semantic Web, Knowledge Systems
+- [Protocole Agent2Agent](https://electronicartefacts.com/fr/knowledge/technologies/agent2agent-protocol/): Guide canonique sur les Agent Cards, messages, tâches, artefacts, transports et frontières de sécurité du protocole A2A.
+  - Entity ID: ea:technology:agent2agent-protocol-fr
+  - Identifier: https://electronicartefacts.com/fr/id/technology/agent2agent-protocol/
+  - JSON-LD: https://electronicartefacts.com/fr/id/technology/agent2agent-protocol/index.jsonld
+  - Modified: 2026-07-12
+  - Keywords: Protocole Agent2Agent, A2A, Agents IA, interopérabilité, protocoles d’agents, intelligence artificielle, architecture logicielle, systèmes distribués
 - [RDF](https://electronicartefacts.com/fr/knowledge/technologies/rdf/): RDF est présenté comme une technologie de référence pour comprendre ses usages, ses limites et son rôle dans les systèmes Electronic Artefacts.
   - Entity ID: ea:technology:rdf-fr
   - Identifier: https://electronicartefacts.com/fr/id/technology/rdf/
@@ -1391,6 +1439,18 @@ This file is generated from typed public records. Prefer each record's canonical
   - JSON-LD: https://electronicartefacts.com/id/technology/webgl/index.jsonld
   - Modified: 2026-06-24
   - Keywords: WebGL, Shaders, Browser Graphics, Creative Coding, Web Development, Digital Art
+- [WebMCP](https://electronicartefacts.com/fr/knowledge/technologies/webmcp/): Fiche de maturité sur WebMCP, les outils intégrés aux pages, la médiation du navigateur, les origines et la collaboration humain-agent.
+  - Entity ID: ea:technology:webmcp-fr
+  - Identifier: https://electronicartefacts.com/fr/id/technology/webmcp/
+  - JSON-LD: https://electronicartefacts.com/fr/id/technology/webmcp/index.jsonld
+  - Modified: 2026-07-12
+  - Keywords: WebMCP, web agentique, agents de navigateur, standards du Web, architecture web, interaction humain-machine, intelligence artificielle
+- [WebMCP](https://electronicartefacts.com/knowledge/technologies/webmcp/): A maturity-aware record of WebMCP, in-page tools, browser mediation, origins, permissions and human-agent collaboration.
+  - Entity ID: ea:technology:webmcp
+  - Identifier: https://electronicartefacts.com/id/technology/webmcp/
+  - JSON-LD: https://electronicartefacts.com/id/technology/webmcp/index.jsonld
+  - Modified: 2026-07-12
+  - Keywords: WebMCP, Agentic Web, Browser Agents, Web Standards, Web Architecture, Human Computer Interaction, Artificial Intelligence
 - [WebNN](https://electronicartefacts.com/fr/knowledge/technologies/webnn/): WebNN est présenté comme une technologie de référence pour comprendre ses usages, ses limites et son rôle dans les systèmes Electronic Artefacts.
   - Entity ID: ea:technology:webnn-fr
   - Identifier: https://electronicartefacts.com/fr/id/technology/webnn/
@@ -1433,6 +1493,12 @@ This file is generated from typed public records. Prefer each record's canonical
   - JSON-LD: https://electronicartefacts.com/fr/id/collection/knowledge-hub-foundations/index.jsonld
   - Modified: 2026-07-04
   - Keywords: Fondations du hub de connaissance, hub de connaissance, collection éditoriale, fondations, bibliothèque de recherche, Publication sémantique, systèmes de connaissance, archives
+- [Hub de connaissance, cinquième vague](https://electronicartefacts.com/fr/archive/collections/knowledge-hub-fifth-wave/): Collection actuelle et sourcée sur interopérabilité agentique, web agentique, transparence de l’IA, provenance des contenus et infrastructures créatives gouvernées.
+  - Entity ID: ea:collection:knowledge-hub-fifth-wave-fr
+  - Identifier: https://electronicartefacts.com/fr/id/collection/knowledge-hub-fifth-wave/
+  - JSON-LD: https://electronicartefacts.com/fr/id/collection/knowledge-hub-fifth-wave/index.jsonld
+  - Modified: 2026-07-12
+  - Keywords: Hub de connaissance, cinquième vague, hub de connaissance, cinquième vague, interopérabilité agentique, web agentique, transparence de l’IA, Provenance, intelligence artificielle
 - [Hub de connaissance, deuxième vague](https://electronicartefacts.com/fr/archive/collections/knowledge-hub-second-wave/): Collection éditoriale de la deuxième vague du Knowledge Hub, conçue pour relier recherche culturelle, technologies web, design et intelligence artificielle.
   - Entity ID: ea:collection:knowledge-hub-second-wave-fr
   - Identifier: https://electronicartefacts.com/fr/id/collection/knowledge-hub-second-wave/
@@ -1451,6 +1517,12 @@ This file is generated from typed public records. Prefer each record's canonical
   - JSON-LD: https://electronicartefacts.com/fr/id/collection/knowledge-hub-third-wave/index.jsonld
   - Modified: 2026-07-04
   - Keywords: Hub de connaissance, troisième vague, hub de connaissance, troisième vague, intelligence artificielle, architecture des systèmes, calcul sur graphe, conception de systèmes, systèmes de connaissance
+- [Knowledge Hub Fifth Wave](https://electronicartefacts.com/archive/collections/knowledge-hub-fifth-wave/): A current, source-led collection on agent interoperability, the agentic web, AI transparency, content provenance and governed creative infrastructure.
+  - Entity ID: ea:collection:knowledge-hub-fifth-wave
+  - Identifier: https://electronicartefacts.com/id/collection/knowledge-hub-fifth-wave/
+  - JSON-LD: https://electronicartefacts.com/id/collection/knowledge-hub-fifth-wave/index.jsonld
+  - Modified: 2026-07-12
+  - Keywords: Knowledge Hub Fifth Wave, Knowledge Hub, Fifth Wave, Agent Interoperability, Agentic Web, AI Transparency, Provenance, Artificial Intelligence
 - [Knowledge Hub Foundations](https://electronicartefacts.com/archive/collections/knowledge-hub-foundations/): A curated collection grouping foundational Knowledge Hub concepts, technologies, programs, projects and publications.
   - Entity ID: ea:collection:knowledge-hub-foundations
   - Identifier: https://electronicartefacts.com/id/collection/knowledge-hub-foundations/

@@ -9,18 +9,19 @@
     ]
   },
   "canonicalEntities": {
-    "english": 122,
-    "french": 122,
+    "english": 128,
+    "french": 128,
     "coveragePercent": 100
   },
   "editorialWords": {
-    "englishSourceWords": 75310,
-    "sourceWordsCoveredByFrenchRecords": 75310,
+    "englishSourceWords": 78003,
+    "sourceWordsCoveredByFrenchRecords": 78003,
     "coveragePercent": 100
   },
   "translatedEntityIds": [
     "ea:artefact:vaste-validation-record",
     "ea:artefact:voice-capture-studio-repository",
+    "ea:collection:knowledge-hub-fifth-wave",
     "ea:collection:knowledge-hub-foundations",
     "ea:collection:knowledge-hub-fourth-wave",
     "ea:collection:knowledge-hub-second-wave",
@@ -79,6 +80,7 @@
     "ea:project:palimpsests",
     "ea:project:vestiges",
     "ea:project:voice-capture-studio",
+    "ea:publication:a2a-agent-interoperability-and-governed-delegation",
     "ea:publication:ai-agents-vs-ai-workflows",
     "ea:publication:ai-search-structured-content-and-knowledge-graph-seo",
     "ea:publication:algorithmic-composition-and-rule-based-music",
@@ -86,6 +88,7 @@
     "ea:publication:contextual-execution-and-graph-runtimes",
     "ea:publication:creative-coding-pedagogy-from-logo-to-p5js",
     "ea:publication:digital-preservation-and-living-archives",
+    "ea:publication:eu-ai-act-transparency-content-provenance-and-creative-practice",
     "ea:publication:event-driven-architecture-and-event-streams",
     "ea:publication:foundational-lineage-001",
     "ea:publication:generative-ai-latent-space-and-creative-workflows",
@@ -117,6 +120,7 @@
     "ea:publication:typography-reading-systems-and-digital-interfaces",
     "ea:publication:verifiable-credentials-for-cultural-archives-and-creator-identity",
     "ea:publication:web-audio-and-browser-based-sound-systems",
+    "ea:publication:webmcp-and-the-agentic-web",
     "ea:publication:webnn-and-local-ai-in-the-browser",
     "ea:publication:why-graphs-are-more-powerful-than-folders",
     "ea:researchField:runtime-theory",
@@ -124,6 +128,7 @@
     "ea:researchQuestion:self-explaining-knowledge-graph-software",
     "ea:researchQuestion:speech-dataset-reproducibility",
     "ea:technology:activitypub",
+    "ea:technology:agent2agent-protocol",
     "ea:technology:c2pa",
     "ea:technology:cloudevents",
     "ea:technology:css-fonts",
@@ -140,6 +145,7 @@
     "ea:technology:web-animations",
     "ea:technology:web-audio-api",
     "ea:technology:webgl",
+    "ea:technology:webmcp",
     "ea:technology:webnn"
   ]
 }

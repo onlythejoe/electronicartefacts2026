@@ -100,6 +100,14 @@
       "confidence": "observed"
     },
     {
+      "id": "ea:collection:knowledge-hub-fifth-wave",
+      "type": "collection",
+      "title": "Knowledge Hub Fifth Wave",
+      "route": "/archive/collections/knowledge-hub-fifth-wave/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
       "id": "ea:collection:knowledge-hub-foundations",
       "type": "collection",
       "title": "Knowledge Hub Foundations",
@@ -112,6 +120,14 @@
       "type": "collection",
       "title": "Knowledge Hub Fourth Wave",
       "route": "/archive/collections/knowledge-hub-fourth-wave/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:a2a-agent-interoperability-and-governed-delegation",
+      "type": "publication",
+      "title": "A2A, Agent Interoperability and Governed Delegation",
+      "route": "/publications/a2a-agent-interoperability-and-governed-delegation/",
       "status": "active",
       "confidence": "published"
     },
@@ -233,6 +249,15 @@
       "confidence": "observed"
     },
     {
+      "id": "ear:contextual-execution-member-of-collection-knowledge-hub-fifth-wave",
+      "source": "ea:concept:contextual-execution",
+      "target": "ea:collection:knowledge-hub-fifth-wave",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Contextual Execution is an explicit member of the Knowledge Hub Fifth Wave collection.",
+      "confidence": "canonical"
+    },
+    {
       "id": "ear:contextual-execution-member-of-collection-knowledge-hub-foundations",
       "source": "ea:concept:contextual-execution",
       "target": "ea:collection:knowledge-hub-foundations",
@@ -249,6 +274,15 @@
       "label": "Member of collection",
       "statement": "Contextual Execution is an explicit member of the Knowledge Hub Fourth Wave collection.",
       "confidence": "canonical"
+    },
+    {
+      "id": "ear:a2a-agent-interoperability-and-governed-delegation-documents-contextual-execution",
+      "source": "ea:publication:a2a-agent-interoperability-and-governed-delegation",
+      "target": "ea:concept:contextual-execution",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "A2A, Agent Interoperability and Governed Delegation documents Contextual Execution as one of its declared subjects.",
+      "confidence": "published"
     },
     {
       "id": "ear:microservices-modular-monoliths-and-system-boundaries-documents-contextual-execution",

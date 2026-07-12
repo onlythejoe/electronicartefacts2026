@@ -82,6 +82,14 @@
       "route": "/fr/archive/collections/voice-capture-studio/",
       "status": "active",
       "confidence": "published"
+    },
+    {
+      "id": "ea:publication:webmcp-and-the-agentic-web-fr",
+      "type": "publication",
+      "title": "WebMCP et le web agentique",
+      "route": "/fr/publications/webmcp-and-the-agentic-web/",
+      "status": "experimental",
+      "confidence": "published"
     }
   ],
   "edges": [
@@ -165,6 +173,15 @@
       "label": "Member of collection",
       "statement": "Human Computer Interaction is an explicit member of the Voice Capture Studio Collection collection.",
       "confidence": "canonical"
+    },
+    {
+      "id": "ear:webmcp-and-the-agentic-web-documents-human-computer-interaction",
+      "source": "ea:publication:webmcp-and-the-agentic-web-fr",
+      "target": "ea:concept:human-computer-interaction-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "WebMCP and the Agentic Web documents Human Computer Interaction as one of its declared subjects.",
+      "confidence": "published"
     }
   ]
 }

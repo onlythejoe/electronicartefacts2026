@@ -169,6 +169,132 @@
     ]
   },
   {
+    "id": "ea:collection:knowledge-hub-fifth-wave",
+    "type": "collection",
+    "slug": {
+      "canonical": "knowledge-hub-fifth-wave"
+    },
+    "title": "Knowledge Hub Fifth Wave",
+    "subtitle": "Agent Interoperability, Browser Capabilities and Public Trust",
+    "abstract": "Knowledge Hub Fifth Wave connects A2A delegation, WebMCP browser tools and EU synthetic-content transparency to Electronic Artefacts research on graphs, provenance and governed runtimes.",
+    "description": "A current, source-led collection on agent interoperability, the agentic web, AI transparency, content provenance and governed creative infrastructure.",
+    "locale": "en",
+    "visibility": "public",
+    "publicationClass": "published",
+    "status": "active",
+    "maturity": "research",
+    "confidence": "published",
+    "version": {
+      "version": "1.0.0",
+      "createdAt": "2026-07-12",
+      "publishedAt": "2026-07-12",
+      "modifiedAt": "2026-07-12"
+    },
+    "authors": [
+      {
+        "id": "ea:organization:electronic-artefacts"
+      }
+    ],
+    "publisher": "ea:organization:electronic-artefacts",
+    "tags": [
+      "Knowledge Hub",
+      "Fifth Wave",
+      "Agent Interoperability",
+      "Agentic Web",
+      "AI Transparency",
+      "Provenance"
+    ],
+    "disciplines": [
+      "Artificial Intelligence",
+      "Web Architecture",
+      "AI Governance",
+      "Cultural Infrastructure"
+    ],
+    "thesis": "Agentic infrastructure becomes durable only when interoperable capabilities remain bounded by visible interfaces, local authority, provenance and public transparency.",
+    "curator": [
+      {
+        "id": "ea:organization:electronic-artefacts"
+      }
+    ],
+    "explicitMembers": [
+      {
+        "id": "ea:publication:a2a-agent-interoperability-and-governed-delegation"
+      },
+      {
+        "id": "ea:publication:webmcp-and-the-agentic-web"
+      },
+      {
+        "id": "ea:publication:eu-ai-act-transparency-content-provenance-and-creative-practice"
+      },
+      {
+        "id": "ea:technology:agent2agent-protocol"
+      },
+      {
+        "id": "ea:technology:webmcp"
+      },
+      {
+        "id": "ea:technology:model-context-protocol"
+      },
+      {
+        "id": "ea:technology:c2pa"
+      },
+      {
+        "id": "ea:concept:ai-agent"
+      },
+      {
+        "id": "ea:concept:browser-software"
+      },
+      {
+        "id": "ea:concept:contextual-execution"
+      },
+      {
+        "id": "ea:concept:provenance"
+      },
+      {
+        "id": "ea:program:vaste"
+      },
+      {
+        "id": "ea:project:palimpsests"
+      }
+    ],
+    "selectionNote": "The wave selects recent primary-source developments that extend existing Electronic Artefacts themes without duplicating the fourth-wave foundations.",
+    "bodyHtml": "<h2 id=\"thesis\">Thesis</h2>\n<p>The agentic turn is not only a story about more capable models. It creates new boundaries between agents, browser interfaces, publishers and audiences. Those boundaries need protocols, but protocols become useful only when paired with authority, provenance and intelligible public records.</p>\n<h2 id=\"three-current-signals\">Three current signals</h2>\n<p>A2A formalizes collaboration between independent agent applications. WebMCP explores structured actions inside the browser rather than opaque screen control. The EU transparency framework turns synthetic-content provenance and disclosure into an immediate implementation concern.</p>\n<p>Together they describe one system: delegation upstream, action at the interface and accountability at publication.</p>\n<h2 id=\"editorial-position\">Editorial position</h2>\n<p>The collection avoids forecasts and product rankings. Each article separates implemented specifications, experimental proposals and regulatory obligations. It favors primary sources and translates them into design consequences for VASTE, the Knowledge Hub and Electronic Artefacts cultural production.</p>\n<h2 id=\"paths-through-the-graph\">Paths through the graph</h2>\n<p>Architecture readers can move from AI agents to MCP, A2A and contextual execution. Web readers can connect browser software, HCI and WebMCP. Cultural readers can connect generative AI, C2PA, provenance, Palimpsests and public transparency.</p>\n<h2 id=\"what-comes-next\">What comes next</h2>\n<p>The collection should evolve when A2A or WebMCP reaches a materially different maturity level and when final European implementation guidance changes the operational reading. Future additions should respond to evidence, not a publishing quota.</p>\n",
+    "headings": [
+      "Thesis",
+      "Three current signals",
+      "Editorial position",
+      "Paths through the graph",
+      "What comes next"
+    ],
+    "headingItems": [
+      {
+        "level": 2,
+        "title": "Thesis",
+        "id": "thesis"
+      },
+      {
+        "level": 2,
+        "title": "Three current signals",
+        "id": "three-current-signals"
+      },
+      {
+        "level": 2,
+        "title": "Editorial position",
+        "id": "editorial-position"
+      },
+      {
+        "level": 2,
+        "title": "Paths through the graph",
+        "id": "paths-through-the-graph"
+      },
+      {
+        "level": 2,
+        "title": "What comes next",
+        "id": "what-comes-next"
+      }
+    ]
+  },
+  {
     "id": "ea:collection:knowledge-hub-foundations",
     "type": "collection",
     "slug": {
@@ -5754,6 +5880,133 @@
         "level": 2,
         "title": "Droits",
         "id": "droits"
+      }
+    ]
+  },
+  {
+    "id": "ea:collection:knowledge-hub-fifth-wave-fr",
+    "type": "collection",
+    "translationOf": "ea:collection:knowledge-hub-fifth-wave",
+    "slug": {
+      "canonical": "knowledge-hub-fifth-wave"
+    },
+    "title": "Hub de connaissance, cinquième vague",
+    "subtitle": "Interopérabilité des agents, capacités du navigateur et confiance publique",
+    "abstract": "La cinquième vague relie délégation A2A, outils WebMCP et transparence européenne des contenus synthétiques aux recherches Electronic Artefacts sur graphes, provenance et runtimes gouvernés.",
+    "description": "Collection actuelle et sourcée sur interopérabilité agentique, web agentique, transparence de l’IA, provenance des contenus et infrastructures créatives gouvernées.",
+    "locale": "fr",
+    "visibility": "public",
+    "publicationClass": "published",
+    "status": "active",
+    "maturity": "research",
+    "confidence": "published",
+    "version": {
+      "version": "1.0.0",
+      "createdAt": "2026-07-12",
+      "publishedAt": "2026-07-12",
+      "modifiedAt": "2026-07-12"
+    },
+    "authors": [
+      {
+        "id": "ea:organization:electronic-artefacts"
+      }
+    ],
+    "publisher": "ea:organization:electronic-artefacts",
+    "tags": [
+      "hub de connaissance",
+      "cinquième vague",
+      "interopérabilité agentique",
+      "web agentique",
+      "transparence de l’IA",
+      "Provenance"
+    ],
+    "disciplines": [
+      "intelligence artificielle",
+      "architecture web",
+      "gouvernance de l’IA",
+      "infrastructure culturelle"
+    ],
+    "thesis": "Une infrastructure agentique ne devient durable que si ses capacités interopérables restent délimitées par des interfaces visibles, une autorité locale, la provenance et la transparence publique.",
+    "curator": [
+      {
+        "id": "ea:organization:electronic-artefacts"
+      }
+    ],
+    "explicitMembers": [
+      {
+        "id": "ea:publication:a2a-agent-interoperability-and-governed-delegation"
+      },
+      {
+        "id": "ea:publication:webmcp-and-the-agentic-web"
+      },
+      {
+        "id": "ea:publication:eu-ai-act-transparency-content-provenance-and-creative-practice"
+      },
+      {
+        "id": "ea:technology:agent2agent-protocol"
+      },
+      {
+        "id": "ea:technology:webmcp"
+      },
+      {
+        "id": "ea:technology:model-context-protocol"
+      },
+      {
+        "id": "ea:technology:c2pa"
+      },
+      {
+        "id": "ea:concept:ai-agent"
+      },
+      {
+        "id": "ea:concept:browser-software"
+      },
+      {
+        "id": "ea:concept:contextual-execution"
+      },
+      {
+        "id": "ea:concept:provenance"
+      },
+      {
+        "id": "ea:program:vaste"
+      },
+      {
+        "id": "ea:project:palimpsests"
+      }
+    ],
+    "selectionNote": "La vague retient des évolutions récentes appuyées sur des sources primaires et prolonge les thèmes Electronic Artefacts sans dupliquer les fondations de la quatrième vague.",
+    "bodyHtml": "<h2 id=\"these\">Thèse</h2>\n<p>Le tournant agentique ne raconte pas seulement des modèles plus capables. Il crée de nouvelles frontières entre agents, interfaces de navigateur, éditeurs et publics. Ces frontières ont besoin de protocoles, mais les protocoles ne deviennent utiles qu’avec autorité, provenance et dossiers publics intelligibles.</p>\n<h2 id=\"trois-signaux-actuels\">Trois signaux actuels</h2>\n<p>A2A formalise la collaboration entre applications agentiques indépendantes. WebMCP explore des actions structurées dans le navigateur plutôt qu’un pilotage opaque de l’écran. Le cadre européen transforme provenance et information sur les contenus synthétiques en problème d’implémentation immédiat.</p>\n<p>Ensemble, ils décrivent un seul système : délégation en amont, action dans l’interface et responsabilité au moment de publier.</p>\n<h2 id=\"position-editoriale\">Position éditoriale</h2>\n<p>La collection évite prévisions et classements de produits. Chaque article sépare spécifications implémentées, propositions expérimentales et obligations réglementaires. Les sources primaires sont traduites en conséquences de conception pour VASTE, le Knowledge Hub et la production culturelle Electronic Artefacts.</p>\n<h2 id=\"chemins-dans-le-graphe\">Chemins dans le graphe</h2>\n<p>Les lecteurs architecture passent des agents IA à MCP, A2A et l’exécution contextuelle. Les lecteurs web relient logiciel de navigateur, interaction humain-machine et WebMCP. Les lecteurs culturels relient IA générative, C2PA, provenance, Palimpsests et transparence publique.</p>\n<h2 id=\"suite\">Suite</h2>\n<p>La collection devra évoluer si A2A ou WebMCP franchit un vrai seuil de maturité et lorsque les orientations européennes finales modifieront la lecture opérationnelle. Les prochains ajouts doivent répondre à des preuves, pas à un quota éditorial.</p>\n",
+    "headings": [
+      "Thèse",
+      "Trois signaux actuels",
+      "Position éditoriale",
+      "Chemins dans le graphe",
+      "Suite"
+    ],
+    "headingItems": [
+      {
+        "level": 2,
+        "title": "Thèse",
+        "id": "these"
+      },
+      {
+        "level": 2,
+        "title": "Trois signaux actuels",
+        "id": "trois-signaux-actuels"
+      },
+      {
+        "level": 2,
+        "title": "Position éditoriale",
+        "id": "position-editoriale"
+      },
+      {
+        "level": 2,
+        "title": "Chemins dans le graphe",
+        "id": "chemins-dans-le-graphe"
+      },
+      {
+        "level": 2,
+        "title": "Suite",
+        "id": "suite"
       }
     ]
   },
@@ -11847,6 +12100,164 @@
     ]
   },
   {
+    "id": "ea:publication:a2a-agent-interoperability-and-governed-delegation-fr",
+    "type": "publication",
+    "translationOf": "ea:publication:a2a-agent-interoperability-and-governed-delegation",
+    "slug": {
+      "canonical": "a2a-agent-interoperability-and-governed-delegation"
+    },
+    "title": "A2A, interopérabilité des agents et délégation gouvernée",
+    "subtitle": "Article technique",
+    "abstract": "Analyse pratique du protocole Agent2Agent, de la découverte d’agents, du cycle des tâches, des artefacts et de la gouvernance nécessaire avant de déléguer entre agents IA indépendants.",
+    "description": "Comprendre les Agent Cards, messages, tâches et artefacts A2A, la différence avec MCP et le besoin persistant d’identité, de politique et de traces d’audit.",
+    "locale": "fr",
+    "visibility": "public",
+    "publicationClass": "published",
+    "status": "active",
+    "maturity": "research",
+    "confidence": "published",
+    "version": {
+      "version": "1.0.0",
+      "createdAt": "2026-07-12",
+      "publishedAt": "2026-07-12",
+      "modifiedAt": "2026-07-12"
+    },
+    "authors": [
+      {
+        "id": "ea:organization:electronic-artefacts"
+      }
+    ],
+    "publisher": "ea:organization:electronic-artefacts",
+    "tags": [
+      "A2A",
+      "Agents IA",
+      "interopérabilité des agents",
+      "délégation",
+      "VASTE"
+    ],
+    "disciplines": [
+      "intelligence artificielle",
+      "systèmes distribués",
+      "architecture logicielle"
+    ],
+    "sources": [
+      {
+        "title": "Agent2Agent Protocol Specification",
+        "url": "https://a2a-protocol.org/latest/specification/",
+        "publisher": "A2A Protocol Project",
+        "accessedAt": "2026-07-12"
+      },
+      {
+        "title": "Google Cloud donates A2A to Linux Foundation",
+        "url": "https://developers.googleblog.com/en/google-cloud-donates-a2a-to-linux-foundation/",
+        "publisher": "Google for Developers",
+        "publishedAt": "2025-06-23",
+        "accessedAt": "2026-07-12"
+      }
+    ],
+    "format": "technicalArticle",
+    "subjects": [
+      {
+        "id": "ea:technology:agent2agent-protocol"
+      },
+      {
+        "id": "ea:technology:model-context-protocol"
+      },
+      {
+        "id": "ea:concept:ai-agent"
+      },
+      {
+        "id": "ea:concept:contextual-execution"
+      },
+      {
+        "id": "ea:concept:provenance"
+      },
+      {
+        "id": "ea:program:vaste"
+      }
+    ],
+    "claims": [
+      "L’interopérabilité des agents est un contrat d’échange, pas une preuve que le travail délégué est autorisé ou correct.",
+      "Une délégation durable exige identité de tâche, autorité limitée, provenance et transitions d’état inspectables autour du protocole."
+    ],
+    "evidence": [
+      {
+        "id": "ea:technology:agent2agent-protocol"
+      },
+      {
+        "id": "ea:concept:contextual-execution"
+      }
+    ],
+    "citation": {
+      "preferred": "Electronic Artefacts. \"A2A, interopérabilité des agents et délégation gouvernée.\" Article technique, version 1.0.0, 2026."
+    },
+    "bodyHtml": "<h2 id=\"probleme\">Problème</h2>\n<p>Les agents IA passent d’assistants isolés à des systèmes capables de se répartir du travail. La difficulté n’est pas de faire circuler du JSON, mais de préserver le sens lorsque modèles, fournisseurs et runtimes différents négocient capacités, progression et résultats.</p>\n<p>Agent2Agent, ou A2A, traite cette couche d’échange. Le protocole ouvert décrit comment un agent annonce ses capacités, reçoit des messages, suit une tâche et renvoie des artefacts. L’agent distant peut rester opaque : collaborer ne doit pas exiger l’accès à sa mémoire privée, son prompt ou ses outils internes.</p>\n<h2 id=\"agent-cards-et-decouverte\">Agent Cards et découverte</h2>\n<p>Une Agent Card est la description publique d’un point d’accès A2A. Elle peut préciser identité, compétences, modes d’interaction, endpoint et authentification attendue. Elle rend la découverte lisible par machine, mais reste une déclaration, pas une attestation. Le client doit encore établir qui l’a publiée, si l’endpoint est fiable et quelles compétences sont autorisées.</p>\n<p>La découverte comporte donc deux couches : le protocole dit ce que l’agent affirme savoir faire ; la gouvernance décide sous quelle identité et quelle autorité cette affirmation peut être utilisée.</p>\n<h2 id=\"architecture\">Architecture</h2>\n<p>A2A distingue les messages conversationnels des tâches dont l’état évolue. Cette séparation convient aux travaux qui s’interrompent, demandent une précision ou produisent plusieurs livrables. Les messages portent instructions et clarifications ; les artefacts représentent textes, fichiers ou données structurées.</p>\n<p>Un vocabulaire partagé évite à chaque intégration d’inventer son cycle. Mais un état commun ne garantit pas une sémantique commune. « Terminé » signifie que l’exécution distante s’est achevée, pas que le résultat est vrai, sûr, licencié ou publiable.</p>\n<h2 id=\"a2a-et-mcp\">A2A et MCP</h2>\n<p>MCP et A2A sont complémentaires. MCP expose du contexte et des outils à une application IA ; A2A fait collaborer deux applications agentiques. Un agent peut employer MCP en interne et A2A à sa frontière, sans partager le même modèle de permissions.</p>\n<p>Cette distinction limite le rayon d’action. L’agent A2A distant ne doit pas hériter de tous les outils MCP du délégant. Chaque délégation mérite une enveloppe de capacités plus étroite et explicite.</p>\n<h2 id=\"mise-en-uvre\">Mise en œuvre</h2>\n<p>Une délégation sûre commence par un contrat de tâche : objectif, provenance des entrées, opérations permises, types d’artefacts, expiration, budget et politique de revue. Ce contrat relie acteur demandeur, agent distant, tâche et résultats à des identifiants stables.</p>\n<p>Chaque transition doit rester observable. Une trace durable consigne qui a délégué, quelle version de l’Agent Card a servi, quelles données ont franchi la frontière, quels états se sont succédé et quel artefact a été accepté. L’audit utile n’exige pas de conserver tous les prompts privés.</p>\n<h2 id=\"consequences-pour-vaste\">Conséquences pour VASTE</h2>\n<p>Pour VASTE, A2A est un protocole de bord. Un runtime pourrait projeter une capacité gouvernée dans une Agent Card, traduire une tâche reçue en entités et événements typés, puis retourner un artefact avec sa provenance. Le runtime — pas le protocole distant — validerait droits de l’acteur, contraintes relationnelles et état de publication.</p>\n<p>La règle de conception est nette : l’interopérabilité ouvre un canal, l’autorité reste locale. Un agent peut proposer ou exécuter un travail délimité ; il ne définit pas le sens du graphe qu’il rejoint.</p>\n<h2 id=\"elements-de-preuve\">Éléments de preuve</h2>\n<p>La spécification A2A définit Agent Cards, messages, tâches, artefacts et transports. La gouvernance via la Linux Foundation établit un cadre de projet ouvert ; elle ne dispense pas de vérifier chaque implémentation et sa politique de confiance.</p>\n<h2 id=\"limites\">Limites</h2>\n<p>A2A évolue encore et son adoption ne prouve pas une compatibilité de bout en bout. Authentification, confiance de service, injection de prompt, résidence des données, coûts et évaluation restent à la charge des applications. Les architectures multi-agents ajoutent aussi boucles, doublons, contradictions et relances en cascade.</p>\n<p>Le protocole est utile lorsqu’il remplace une vraie couture d’intégration. Là où une API déterministe suffit, ajouter une délégation agent-à-agent ne fait qu’augmenter l’incertitude.</p>\n<h2 id=\"a-lire-ensuite\">À lire ensuite</h2>\n<p>Poursuivre avec <a href=\"/fr/publications/model-context-protocol-and-tool-using-ai-systems/\">Model Context Protocol et systèmes d’IA utilisant des outils</a>, <a href=\"/fr/publications/ai-agents-vs-ai-workflows/\">Agents IA et workflows IA</a> et <a href=\"/fr/publications/contextual-execution-and-graph-runtimes/\">Exécution contextuelle et runtimes de graphe</a>.</p>\n<h2 id=\"references\">Références</h2>\n<ul>\n<li>A2A Protocol Project. Spécification Agent2Agent, dernière version consultée le 12 juillet 2026.</li>\n<li>Google for Developers. « Google Cloud donates A2A to Linux Foundation », 23 juin 2025.</li>\n</ul>\n",
+    "headings": [
+      "Problème",
+      "Agent Cards et découverte",
+      "Architecture",
+      "A2A et MCP",
+      "Mise en œuvre",
+      "Conséquences pour VASTE",
+      "Éléments de preuve",
+      "Limites",
+      "À lire ensuite",
+      "Références"
+    ],
+    "headingItems": [
+      {
+        "level": 2,
+        "title": "Problème",
+        "id": "probleme"
+      },
+      {
+        "level": 2,
+        "title": "Agent Cards et découverte",
+        "id": "agent-cards-et-decouverte"
+      },
+      {
+        "level": 2,
+        "title": "Architecture",
+        "id": "architecture"
+      },
+      {
+        "level": 2,
+        "title": "A2A et MCP",
+        "id": "a2a-et-mcp"
+      },
+      {
+        "level": 2,
+        "title": "Mise en œuvre",
+        "id": "mise-en-uvre"
+      },
+      {
+        "level": 2,
+        "title": "Conséquences pour VASTE",
+        "id": "consequences-pour-vaste"
+      },
+      {
+        "level": 2,
+        "title": "Éléments de preuve",
+        "id": "elements-de-preuve"
+      },
+      {
+        "level": 2,
+        "title": "Limites",
+        "id": "limites"
+      },
+      {
+        "level": 2,
+        "title": "À lire ensuite",
+        "id": "a-lire-ensuite"
+      },
+      {
+        "level": 2,
+        "title": "Références",
+        "id": "references"
+      }
+    ]
+  },
+  {
     "id": "ea:publication:ai-agents-vs-ai-workflows-fr",
     "type": "publication",
     "translationOf": "ea:publication:ai-agents-vs-ai-workflows",
@@ -13407,6 +13818,178 @@
         "level": 2,
         "title": "Limites",
         "id": "limites"
+      },
+      {
+        "level": 2,
+        "title": "Références",
+        "id": "references"
+      }
+    ]
+  },
+  {
+    "id": "ea:publication:eu-ai-act-transparency-content-provenance-and-creative-practice-fr",
+    "type": "publication",
+    "translationOf": "ea:publication:eu-ai-act-transparency-content-provenance-and-creative-practice",
+    "slug": {
+      "canonical": "eu-ai-act-transparency-content-provenance-and-creative-practice"
+    },
+    "title": "Transparence de l’AI Act, provenance des contenus et pratique créative",
+    "subtitle": "Guide d’implémentation",
+    "abstract": "Guide sourcé des obligations de transparence de l’AI Act applicables en août 2026, reliant marquage lisible par machine, étiquetage visible, deepfakes, textes d’intérêt public et provenance créative.",
+    "description": "Préparer les workflows culturels et créatifs aux règles européennes avec une approche combinant marquage machine, information visible, provenance et dossier éditorial.",
+    "locale": "fr",
+    "visibility": "public",
+    "publicationClass": "published",
+    "status": "active",
+    "maturity": "research",
+    "confidence": "published",
+    "version": {
+      "version": "1.0.0",
+      "createdAt": "2026-07-12",
+      "publishedAt": "2026-07-12",
+      "modifiedAt": "2026-07-12"
+    },
+    "authors": [
+      {
+        "id": "ea:organization:electronic-artefacts"
+      }
+    ],
+    "publisher": "ea:organization:electronic-artefacts",
+    "tags": [
+      "AI Act",
+      "transparence de l’IA",
+      "médias synthétiques",
+      "provenance des contenus",
+      "C2PA"
+    ],
+    "disciplines": [
+      "gouvernance de l’IA",
+      "médias numériques",
+      "infrastructure culturelle",
+      "préservation numérique"
+    ],
+    "sources": [
+      {
+        "title": "Code of Practice on Transparency of AI-Generated Content",
+        "url": "https://digital-strategy.ec.europa.eu/en/policies/code-practice-ai-generated-content",
+        "publisher": "Commission européenne",
+        "publishedAt": "2026-06-10",
+        "accessedAt": "2026-07-12"
+      },
+      {
+        "title": "Guidelines on obligations for General-Purpose AI providers",
+        "url": "https://digital-strategy.ec.europa.eu/en/faqs/guidelines-obligations-general-purpose-ai-providers",
+        "publisher": "Commission européenne",
+        "accessedAt": "2026-07-12"
+      },
+      {
+        "title": "C2PA Technical Specification 2.2",
+        "url": "https://spec.c2pa.org/specifications/specifications/2.2/specs/_attachments/C2PA_Specification.pdf",
+        "publisher": "Coalition for Content Provenance and Authenticity",
+        "publishedAt": "2025-05-01",
+        "accessedAt": "2026-07-12"
+      }
+    ],
+    "format": "technicalArticle",
+    "subjects": [
+      {
+        "id": "ea:technology:c2pa"
+      },
+      {
+        "id": "ea:concept:provenance"
+      },
+      {
+        "id": "ea:concept:generative-ai"
+      },
+      {
+        "id": "ea:concept:digital-preservation"
+      },
+      {
+        "id": "ea:concept:metadata"
+      },
+      {
+        "id": "ea:project:palimpsests"
+      }
+    ],
+    "claims": [
+      "Le marquage lisible par machine et l’information visible répondent à des problèmes distincts et doivent former des couches complémentaires.",
+      "Les organisations culturelles ont besoin de traces de provenance qui survivent aux exports et de libellés compréhensibles lorsque les métadonnées disparaissent."
+    ],
+    "evidence": [
+      {
+        "id": "ea:technology:c2pa"
+      },
+      {
+        "id": "ea:concept:provenance"
+      }
+    ],
+    "citation": {
+      "preferred": "Electronic Artefacts. \"Transparence de l’AI Act, provenance des contenus et pratique créative.\" Article technique, version 1.0.0, 2026."
+    },
+    "bodyHtml": "<h2 id=\"probleme\">Problème</h2>\n<p>À partir du 2 août 2026, les obligations de transparence de l’article 50 de l’AI Act s’appliquent à plusieurs usages interactifs et génératifs. Le code de bonnes pratiques publié par la Commission européenne en juin 2026 traduit une partie du cadre en mesures de marquage des sorties générées ou manipulées et d’étiquetage des deepfakes et de certains textes d’intérêt public.</p>\n<p>Cet article propose une lecture d’implémentation pour les organisations créatives et culturelles, pas un conseil juridique. La leçon centrale est opérationnelle : la transparence ne s’ajoute pas comme un badge en fin de production. Elle doit relier génération, montage, export, publication et conservation.</p>\n<h2 id=\"architecture\">Architecture</h2>\n<p>Le marquage lisible par machine aide les systèmes à détecter un média généré ou manipulé. L’étiquetage visible aide une personne à comprendre ce qu’elle voit. Les couches se complètent sans se remplacer.</p>\n<p>Les métadonnées peuvent disparaître lors d’une recompression, d’une capture ou d’un transcodage. Une mention visible peut survivre, mais manquer de détails pour une vérification automatisée. Une pratique robuste combine provenance embarquée ou associée et explication en langage clair à proximité du contenu.</p>\n<h2 id=\"fournisseur-et-deployeur\">Fournisseur et déployeur</h2>\n<p>Le cadre distingue les fournisseurs de systèmes IA des déployeurs qui les utilisent. Un fournisseur de modèle ou d’outil créatif peut devoir permettre le marquage et la détection. Un éditeur, studio ou établissement culturel peut devoir étiqueter le deepfake ou la publication d’intérêt public qui en résulte.</p>\n<p>Une organisation peut occuper plusieurs rôles. Un studio peut développer un système interne, l’opérer pour un client puis publier certaines sorties. Les responsabilités doivent être cartographiées par système et par usage, pas résumées dans une étiquette unique.</p>\n<h2 id=\"un-dossier-de-provenance-creative\">Un dossier de provenance créative</h2>\n<p>Un bon dossier répond à quelques questions : quel système a participé, quels actifs sources sont entrés, quelles transformations ont suivi, qui a revu le résultat, quels droits s’appliquent et où l’objet final a été publié ? Il distingue génération machine, montage conventionnel et contribution humaine sans réduire la création à un choix binaire.</p>\n<p>Les Content Credentials C2PA peuvent porter des affirmations signées et un historique de modifications. Elles constituent une infrastructure utile, pas une machine à vérité. Un credential valide indique qui a signé et si les données liées ont changé ; il ne prouve pas l’honnêteté de toutes les déclarations ni qu’un fichier sans marque est synthétique.</p>\n<h2 id=\"mise-en-uvre\">Mise en œuvre</h2>\n<p>Commencer par inventorier les usages d’IA interactive et de médias génératifs. Attribuer les rôles, types de contenus, contextes de publication et responsables. Pour chaque workflow, définir :</p>\n<ol>\n<li>un marquage lisible par machine lorsque cela est techniquement possible ;</li>\n<li>un libellé visible déclenché selon le contenu et son contexte ;</li>\n<li>un dossier interne durable sur outils, sources, revue et droits ;</li>\n<li>un repli pour les formats qui suppriment les métadonnées ;</li>\n<li>une voie de correction ou de retrait si une mention est erronée.</li>\n</ol>\n<p>Les libellés doivent être précis. « Créé avec l’IA » informe moins que « arrière-plan généré avec un système d’image IA puis monté par le studio ». La mention reste brève au point de consultation et peut renvoyer vers une provenance détaillée.</p>\n<h2 id=\"enjeux-culturels-et-creatifs\">Enjeux culturels et créatifs</h2>\n<p>Musées, labels, archives et studios protègent davantage que la conformité : ils administrent auteur·ices, interprétation et mémoire publique. Sur-étiqueter toute assistance mineure masque l’information importante ; sous-étiqueter une voix synthétique, un visage reconstruit ou une image documentaire fabriquée fragilise la confiance.</p>\n<p>Une politique éditoriale par risque distingue assistance, génération substantielle, simulation d’identité et affirmation d’intérêt public. Les questions utiles deviennent : qu’est-ce que l’IA a changé, le public peut-il être trompé, et quelle provenance comptera plus tard ?</p>\n<p>Pour Palimpsests ou de futurs médias ORETH, cela implique de consigner la lignée du matériau généré et traité sans sacrifier le récit artistique. La provenance doit enrichir le contexte de l’œuvre, pas l’aplatir en notice réglementaire.</p>\n<h2 id=\"seo-et-decouverte\">SEO et découverte</h2>\n<p>Un contenu transparent devient aussi plus interprétable par les moteurs et systèmes de récupération lorsque la page expose dates, attribution, sources, légendes et données structurées. Ces signaux ne garantissent aucun classement, mais réduisent l’ambiguïté sur l’éditeur, les affirmations et les modifications.</p>\n<p>Le meilleur dossier public est multicouche : article lisible, entité structurée, sources citées, URL stable, mention visible et provenance portable. Cette architecture sert d’abord le public et donne aux machines de meilleures preuves.</p>\n<h2 id=\"elements-de-preuve\">Éléments de preuve</h2>\n<p>La Commission indique que les obligations de transparence de l’article 50 s’appliquent à partir du 2 août 2026 et distingue marquage par les fournisseurs et étiquetage par les déployeurs. C2PA 2.2 apporte une couche technique de provenance ; le code européen fournit un cadre volontaire autour du marquage et de l’information visible.</p>\n<h2 id=\"limites\">Limites</h2>\n<p>Les orientations réglementaires et l’état de l’art technique évoluent. Avant de s’appuyer sur une checklist, il faut vérifier les lignes directrices finales de la Commission, le statut du code et l’application nationale. Certains systèmes existants bénéficient aussi de transitions.</p>\n<p>La conformité ne clôt pas la question éthique. Un deepfake techniquement marqué peut encore tromper par son placement ou son cadrage. La transparence doit être évaluée dans le contexte réel du public.</p>\n<h2 id=\"a-lire-ensuite\">À lire ensuite</h2>\n<p>Lire <a href=\"/fr/publications/c2pa-content-credentials-and-generative-media-provenance/\">C2PA, Content Credentials et provenance des médias génératifs</a>, <a href=\"/fr/publications/responsible-ai-governance-for-creative-and-cultural-systems/\">Gouvernance responsable de l’IA pour les systèmes créatifs et culturels</a> et <a href=\"/fr/publications/digital-preservation-and-living-archives/\">Préservation numérique et archives vivantes</a>.</p>\n<h2 id=\"references\">Références</h2>\n<ul>\n<li>Commission européenne. Code de bonnes pratiques sur la transparence des contenus générés par l’IA, 10 juin 2026.</li>\n<li>Commission européenne. Lignes directrices sur les obligations des fournisseurs de modèles d’IA à usage général, consultées le 12 juillet 2026.</li>\n<li>C2PA. Spécification technique Content Credentials 2.2, 1er mai 2025.</li>\n</ul>\n",
+    "headings": [
+      "Problème",
+      "Architecture",
+      "Fournisseur et déployeur",
+      "Un dossier de provenance créative",
+      "Mise en œuvre",
+      "Enjeux culturels et créatifs",
+      "SEO et découverte",
+      "Éléments de preuve",
+      "Limites",
+      "À lire ensuite",
+      "Références"
+    ],
+    "headingItems": [
+      {
+        "level": 2,
+        "title": "Problème",
+        "id": "probleme"
+      },
+      {
+        "level": 2,
+        "title": "Architecture",
+        "id": "architecture"
+      },
+      {
+        "level": 2,
+        "title": "Fournisseur et déployeur",
+        "id": "fournisseur-et-deployeur"
+      },
+      {
+        "level": 2,
+        "title": "Un dossier de provenance créative",
+        "id": "un-dossier-de-provenance-creative"
+      },
+      {
+        "level": 2,
+        "title": "Mise en œuvre",
+        "id": "mise-en-uvre"
+      },
+      {
+        "level": 2,
+        "title": "Enjeux culturels et créatifs",
+        "id": "enjeux-culturels-et-creatifs"
+      },
+      {
+        "level": 2,
+        "title": "SEO et découverte",
+        "id": "seo-et-decouverte"
+      },
+      {
+        "level": 2,
+        "title": "Éléments de preuve",
+        "id": "elements-de-preuve"
+      },
+      {
+        "level": 2,
+        "title": "Limites",
+        "id": "limites"
+      },
+      {
+        "level": 2,
+        "title": "À lire ensuite",
+        "id": "a-lire-ensuite"
       },
       {
         "level": 2,
@@ -20696,6 +21279,170 @@
     ]
   },
   {
+    "id": "ea:publication:webmcp-and-the-agentic-web-fr",
+    "type": "publication",
+    "translationOf": "ea:publication:webmcp-and-the-agentic-web",
+    "slug": {
+      "canonical": "webmcp-and-the-agentic-web"
+    },
+    "title": "WebMCP et le web agentique",
+    "subtitle": "Article de recherche",
+    "abstract": "Guide critique de WebMCP et du web agentique émergent, où les pages exposent des capacités typées aux agents de navigateur tout en préservant interface, origine et contrôle humain.",
+    "description": "Explorer WebMCP, les outils structurés du navigateur, les formulaires déclaratifs, les permissions et le rôle persistant du HTML sémantique et de l’accessibilité.",
+    "locale": "fr",
+    "visibility": "public",
+    "publicationClass": "published",
+    "status": "experimental",
+    "maturity": "research",
+    "confidence": "published",
+    "version": {
+      "version": "1.0.0",
+      "createdAt": "2026-07-12",
+      "publishedAt": "2026-07-12",
+      "modifiedAt": "2026-07-12"
+    },
+    "authors": [
+      {
+        "id": "ea:organization:electronic-artefacts"
+      }
+    ],
+    "publisher": "ea:organization:electronic-artefacts",
+    "tags": [
+      "WebMCP",
+      "web agentique",
+      "agents de navigateur",
+      "collaboration humain-agent",
+      "standards du Web"
+    ],
+    "disciplines": [
+      "architecture web",
+      "interaction humain-machine",
+      "intelligence artificielle"
+    ],
+    "sources": [
+      {
+        "title": "WebMCP Explainer and Draft",
+        "url": "https://github.com/webmachinelearning/webmcp",
+        "publisher": "W3C Web Machine Learning Community Group",
+        "accessedAt": "2026-07-12"
+      },
+      {
+        "title": "6 May 2026 AI Agent Protocol Community Group Meeting",
+        "url": "https://www.w3.org/events/meetings/cdb16df7-1ed9-4868-8429-b759e22b4bc7/20260506T210000/",
+        "publisher": "W3C",
+        "publishedAt": "2026-05-06",
+        "accessedAt": "2026-07-12"
+      }
+    ],
+    "format": "technicalArticle",
+    "subjects": [
+      {
+        "id": "ea:technology:webmcp"
+      },
+      {
+        "id": "ea:technology:model-context-protocol"
+      },
+      {
+        "id": "ea:concept:browser-software"
+      },
+      {
+        "id": "ea:concept:human-computer-interaction"
+      },
+      {
+        "id": "ea:concept:ai-agent"
+      },
+      {
+        "id": "ea:concept:linked-data"
+      }
+    ],
+    "claims": [
+      "Des outils de page structurés peuvent réduire l’automatisation fragile sans remplacer l’interface web visible.",
+      "Les actions lisibles par agent doivent rester soumises à la sécurité des origines, à l’intention humaine, à l’accessibilité et à une autorisation explicite."
+    ],
+    "evidence": [
+      {
+        "id": "ea:technology:webmcp"
+      },
+      {
+        "id": "ea:concept:browser-software"
+      }
+    ],
+    "citation": {
+      "preferred": "Electronic Artefacts. \"WebMCP et le web agentique.\" Article technique, version 1.0.0, 2026."
+    },
+    "bodyHtml": "<h2 id=\"probleme\">Problème</h2>\n<p>La plupart des agents de navigateur agissent aujourd’hui comme des utilisateurs pressés. Ils inspectent captures ou arbres d’accessibilité, devinent le contrôle utile puis simulent des clics. L’approche est générale, mais lente et fragile : une refonte, un libellé ambigu ou un composant différé peut rompre le parcours.</p>\n<p>WebMCP explore un autre contrat : laisser la page déclarer quelques outils structurés. Un agent pourrait invoquer <code>filter-archive</code>, <code>prepare-citation</code> ou <code>add-relation-draft</code> avec des arguments typés, en réutilisant la logique cliente et la session active.</p>\n<h2 id=\"architecture\">Architecture</h2>\n<p>La proposition expérimentale repose sur une interface de contexte au niveau de la page. Les scripts enregistrent des outils nommés avec description, schéma d’entrée et gestionnaire d’exécution. Une voie déclarative cherche à transformer les formulaires HTML ordinaires en capacités équivalentes, sans dupliquer leur comportement.</p>\n<p>Le navigateur arbitre découverte et invocation. La page conserve ainsi son origine, son cycle de vie et son état visible. Contrairement à une intégration backend distante, l’outil intégré agit sur le document que l’utilisateur regarde.</p>\n<h2 id=\"plus-robuste-qu-un-clic-simule-pas-automatiquement-sur\">Plus robuste qu’un clic simulé, pas automatiquement sûr</h2>\n<p>Un outil typé est moins ambigu qu’une coordonnée, mais ses conséquences peuvent être plus larges. Un clic reste contraint par l’interface ; un outil peut condenser plusieurs opérations. Son schéma doit donc définir entrées étroites, sorties prévisibles, validation et effets de bord.</p>\n<p>Les lectures constituent un bon départ. Recherche, filtrage, explication et préparation de brouillon apportent de la valeur sans valider silencieusement une transaction. Toute action destructive, financière, juridique ou éditoriale devrait déclencher une confirmation native indiquant précisément le changement.</p>\n<h2 id=\"origines-iframes-et-permissions\">Origines, iframes et permissions</h2>\n<p>La sécurité du Web repose sur origines, contextes de navigation et permissions. Les capacités agentiques doivent suivre ces frontières. Les iframes inter-origines posent des questions concrètes : quel document a enregistré l’outil, quel agent le découvre et quelle session utilisateur porte l’autorité ?</p>\n<p>Le brouillon aborde politique de permissions et exposition sélective, mais plusieurs détails restent ouverts. Cette incertitude invite à prototyper prudemment, pas à présenter la proposition comme un standard stabilisé.</p>\n<h2 id=\"l-interface-humaine-reste-premiere\">L’interface humaine reste première</h2>\n<p>Le web agentique ne doit pas devenir un second Web réservé aux machines. HTML sémantique, clavier, libellés, focus et erreurs claires servent humains, technologies d’assistance, moteurs de recherche et agents. Les outils structurés complètent ces bases ; ils ne réparent pas un produit inaccessible.</p>\n<p>La meilleure implémentation partage une opération métier entre interface humaine, sémantique accessible et outil agentique. Chaque surface l’exprime différemment sans dupliquer la règle sous-jacente.</p>\n<h2 id=\"mise-en-uvre\">Mise en œuvre</h2>\n<p>Pour un graphe, les outils de page peuvent proposer des opérations précises : récupérer un voisinage, comparer deux affirmations, exporter une citation ou préparer une relation. Identifiants stables et provenance facilitent l’évaluation par rapport à du texte extrait d’une carte visuelle.</p>\n<p>Electronic Artefacts pourrait exposer des outils de lecture du Knowledge Hub tout en maintenant contenus canoniques, JSON-LD et navigation ordinaire comme vérité publique. VASTE pourrait valider une relation proposée sans autoriser sa publication.</p>\n<h2 id=\"seo-et-lisibilite-machine\">SEO et lisibilité machine</h2>\n<p>WebMCP n’est pas un raccourci SEO. La visibilité dépend toujours de pages explorables, titres précis, liens internes, données structurées, preuves et prose utile. Les outils pilotent des actions dans une session active ; ils ne remplacent pas l’architecture indexable.</p>\n<p>Le recouvrement est conceptuel : moteurs et agents profitent d’entités, relations et sources explicites. Un site fondé sur des objets de connaissance stables est mieux préparé à la recherche humaine, à la récupération IA et aux futurs outils de navigateur qu’un site dont le sens n’existe que dans sa mise en page.</p>\n<h2 id=\"elements-de-preuve\">Éléments de preuve</h2>\n<p>Le dépôt WebMCP documente l’enregistrement impératif, une voie déclarative pour les formulaires et des questions ouvertes de sécurité et de confidentialité. Les échanges communautaires W3C de 2026 le situent dans un espace de standardisation émergent, pas comme une Recommandation achevée.</p>\n<h2 id=\"limites\">Limites</h2>\n<p>L’API reste expérimentale. Confirmations, schémas de sortie, streaming, navigation pendant l’exécution et exposition aux agents embarqués sont encore discutés. Le support navigateur et la compatibilité durable ne sont pas acquis.</p>\n<p>WebMCP doit être lu comme une direction de recherche porteuse d’un principe utile : exposer la plus petite capacité significative, préserver le contexte visible et laisser le navigateur faire respecter les frontières qu’il connaît déjà.</p>\n<h2 id=\"a-lire-ensuite\">À lire ensuite</h2>\n<p>Voir <a href=\"/fr/publications/model-context-protocol-and-tool-using-ai-systems/\">Model Context Protocol et systèmes d’IA utilisant des outils</a>, <a href=\"/fr/publications/human-computer-interaction-for-creative-tools/\">Interaction humain-machine pour les outils créatifs</a> et <a href=\"/fr/publications/ai-search-structured-content-and-knowledge-graph-seo/\">Recherche IA, contenu structuré et SEO des graphes de connaissance</a>.</p>\n<h2 id=\"references\">Références</h2>\n<ul>\n<li>W3C Web Machine Learning Community Group. Dépôt et document d’orientation WebMCP, consultés le 12 juillet 2026.</li>\n<li>W3C. Réunion de l’AI Agent Protocol Community Group, 6 mai 2026.</li>\n</ul>\n",
+    "headings": [
+      "Problème",
+      "Architecture",
+      "Plus robuste qu’un clic simulé, pas automatiquement sûr",
+      "Origines, iframes et permissions",
+      "L’interface humaine reste première",
+      "Mise en œuvre",
+      "SEO et lisibilité machine",
+      "Éléments de preuve",
+      "Limites",
+      "À lire ensuite",
+      "Références"
+    ],
+    "headingItems": [
+      {
+        "level": 2,
+        "title": "Problème",
+        "id": "probleme"
+      },
+      {
+        "level": 2,
+        "title": "Architecture",
+        "id": "architecture"
+      },
+      {
+        "level": 2,
+        "title": "Plus robuste qu’un clic simulé, pas automatiquement sûr",
+        "id": "plus-robuste-qu-un-clic-simule-pas-automatiquement-sur"
+      },
+      {
+        "level": 2,
+        "title": "Origines, iframes et permissions",
+        "id": "origines-iframes-et-permissions"
+      },
+      {
+        "level": 2,
+        "title": "L’interface humaine reste première",
+        "id": "l-interface-humaine-reste-premiere"
+      },
+      {
+        "level": 2,
+        "title": "Mise en œuvre",
+        "id": "mise-en-uvre"
+      },
+      {
+        "level": 2,
+        "title": "SEO et lisibilité machine",
+        "id": "seo-et-lisibilite-machine"
+      },
+      {
+        "level": 2,
+        "title": "Éléments de preuve",
+        "id": "elements-de-preuve"
+      },
+      {
+        "level": 2,
+        "title": "Limites",
+        "id": "limites"
+      },
+      {
+        "level": 2,
+        "title": "À lire ensuite",
+        "id": "a-lire-ensuite"
+      },
+      {
+        "level": 2,
+        "title": "Références",
+        "id": "references"
+      }
+    ]
+  },
+  {
     "id": "ea:publication:webnn-and-local-ai-in-the-browser-fr",
     "type": "publication",
     "translationOf": "ea:publication:webnn-and-local-ai-in-the-browser",
@@ -22015,6 +22762,99 @@
     ]
   },
   {
+    "id": "ea:technology:agent2agent-protocol-fr",
+    "type": "technology",
+    "translationOf": "ea:technology:agent2agent-protocol",
+    "slug": {
+      "canonical": "agent2agent-protocol"
+    },
+    "title": "Protocole Agent2Agent",
+    "alternateNames": [
+      "A2A"
+    ],
+    "abstract": "Agent2Agent est un protocole ouvert de découverte de capacités, de coordination de tâches et d’échange entre systèmes d’agents IA indépendants.",
+    "description": "Guide canonique sur les Agent Cards, messages, tâches, artefacts, transports et frontières de sécurité du protocole A2A.",
+    "locale": "fr",
+    "visibility": "public",
+    "publicationClass": "canonical",
+    "status": "experimental",
+    "maturity": "development",
+    "confidence": "canonical",
+    "version": {
+      "version": "1.0.0",
+      "createdAt": "2026-07-12",
+      "publishedAt": "2026-07-12",
+      "modifiedAt": "2026-07-12"
+    },
+    "authors": [
+      {
+        "id": "ea:organization:electronic-artefacts"
+      }
+    ],
+    "publisher": "ea:organization:electronic-artefacts",
+    "tags": [
+      "A2A",
+      "Agents IA",
+      "interopérabilité",
+      "protocoles d’agents"
+    ],
+    "disciplines": [
+      "intelligence artificielle",
+      "architecture logicielle",
+      "systèmes distribués"
+    ],
+    "sources": [
+      {
+        "title": "Agent2Agent Protocol Specification",
+        "url": "https://a2a-protocol.org/latest/specification/",
+        "publisher": "A2A Protocol Project",
+        "accessedAt": "2026-07-12"
+      },
+      {
+        "title": "Google Cloud donates A2A to Linux Foundation",
+        "url": "https://developers.googleblog.com/en/google-cloud-donates-a2a-to-linux-foundation/",
+        "publisher": "Google for Developers",
+        "publishedAt": "2025-06-23",
+        "accessedAt": "2026-07-12"
+      }
+    ],
+    "category": "protocol",
+    "roleInEcosystem": "A2A fournit un modèle pour découvrir des agents distants et coordonner des tâches délimitées sans exposer leur mémoire ni leurs outils internes.",
+    "officialUrl": "https://a2a-protocol.org/latest/specification/",
+    "versions": [
+      "0.3.0"
+    ],
+    "bodyHtml": "<h2 id=\"role\">Rôle</h2>\n<p>A2A définit un langage commun entre applications agentiques indépendantes. Un agent publie une Agent Card décrivant ses capacités, reçoit des messages, suit des tâches longues et renvoie des artefacts sans révéler son prompt, sa mémoire ou son implémentation.</p>\n<h2 id=\"frontiere\">Frontière</h2>\n<p>A2A et MCP répondent à des problèmes voisins. MCP relie une application IA à du contexte et des outils ; A2A coordonne le travail entre applications agentiques. Aucun des deux ne fournit seul une identité fiable, une autorisation complète ou une autonomie sûre.</p>\n<h2 id=\"maturite\">Maturité</h2>\n<p>Le protocole est ouvert et gouverné via la Linux Foundation, mais ses interfaces évoluent encore. La version 0.3.0 constitue un jalon de développement, pas une garantie d’interopérabilité universelle.</p>\n<h2 id=\"usage-electronic-artefacts\">Usage Electronic Artefacts</h2>\n<p>A2A peut servir de protocole de bord pour échanger des tâches gouvernées entre runtimes VASTE. VASTE conserverait la responsabilité des identités, permissions, provenances et transitions d’état.</p>\n",
+    "headings": [
+      "Rôle",
+      "Frontière",
+      "Maturité",
+      "Usage Electronic Artefacts"
+    ],
+    "headingItems": [
+      {
+        "level": 2,
+        "title": "Rôle",
+        "id": "role"
+      },
+      {
+        "level": 2,
+        "title": "Frontière",
+        "id": "frontiere"
+      },
+      {
+        "level": 2,
+        "title": "Maturité",
+        "id": "maturite"
+      },
+      {
+        "level": 2,
+        "title": "Usage Electronic Artefacts",
+        "id": "usage-electronic-artefacts"
+      }
+    ]
+  },
+  {
     "id": "ea:technology:c2pa-fr",
     "type": "technology",
     "translationOf": "ea:technology:c2pa",
@@ -23316,6 +24156,86 @@
     ]
   },
   {
+    "id": "ea:technology:webmcp-fr",
+    "type": "technology",
+    "translationOf": "ea:technology:webmcp",
+    "slug": {
+      "canonical": "webmcp"
+    },
+    "title": "WebMCP",
+    "abstract": "WebMCP est une proposition expérimentale pour exposer les capacités d’une page comme des outils structurés découvrables et invocables par des agents de navigateur.",
+    "description": "Fiche de maturité sur WebMCP, les outils intégrés aux pages, la médiation du navigateur, les origines et la collaboration humain-agent.",
+    "locale": "fr",
+    "visibility": "public",
+    "publicationClass": "canonical",
+    "status": "experimental",
+    "maturity": "research",
+    "confidence": "observed",
+    "version": {
+      "version": "1.0.0",
+      "createdAt": "2026-07-12",
+      "publishedAt": "2026-07-12",
+      "modifiedAt": "2026-07-12"
+    },
+    "authors": [
+      {
+        "id": "ea:organization:electronic-artefacts"
+      }
+    ],
+    "publisher": "ea:organization:electronic-artefacts",
+    "tags": [
+      "WebMCP",
+      "web agentique",
+      "agents de navigateur",
+      "standards du Web"
+    ],
+    "disciplines": [
+      "architecture web",
+      "interaction humain-machine",
+      "intelligence artificielle"
+    ],
+    "sources": [
+      {
+        "title": "WebMCP Explainer and Draft",
+        "url": "https://github.com/webmachinelearning/webmcp",
+        "publisher": "W3C Web Machine Learning Community Group",
+        "accessedAt": "2026-07-12"
+      }
+    ],
+    "category": "approach",
+    "roleInEcosystem": "WebMCP explore comment une page peut exposer des actions typées à un agent médié par le navigateur tout en conservant interface, session et origine actives.",
+    "officialUrl": "https://github.com/webmachinelearning/webmcp",
+    "bodyHtml": "<h2 id=\"role\">Rôle</h2>\n<p>WebMCP propose que les pages enregistrent des outils typés via des interfaces natives du navigateur. Un agent peut découvrir une action et fournir des arguments validés au lieu de reconstruire l’interaction depuis des pixels et des clics simulés.</p>\n<h2 id=\"perimetre\">Périmètre</h2>\n<p>La proposition vise la collaboration locale dans le navigateur, avec un humain présent. Elle complète les serveurs MCP et ne cherche pas à remplacer les sites, la sémantique d’accessibilité ou l’automatisation généraliste.</p>\n<h2 id=\"maturite\">Maturité</h2>\n<p>WebMCP reste une proposition communautaire expérimentale. Permissions, iframes, confirmation utilisateur, validation des sorties et streaming sont encore discutés. Une architecture de production ne doit pas considérer l’API actuelle comme stable.</p>\n<h2 id=\"usage-electronic-artefacts\">Usage Electronic Artefacts</h2>\n<p>L’idée centrale correspond à la marque : conserver une interface visible tout en exposant une surface d’action plus étroite et typée. Le Knowledge Hub pourrait proposer une navigation de graphe en lecture seule ou la préparation de relations sans abandonner le contrôle du DOM à l’agent.</p>\n",
+    "headings": [
+      "Rôle",
+      "Périmètre",
+      "Maturité",
+      "Usage Electronic Artefacts"
+    ],
+    "headingItems": [
+      {
+        "level": 2,
+        "title": "Rôle",
+        "id": "role"
+      },
+      {
+        "level": 2,
+        "title": "Périmètre",
+        "id": "perimetre"
+      },
+      {
+        "level": 2,
+        "title": "Maturité",
+        "id": "maturite"
+      },
+      {
+        "level": 2,
+        "title": "Usage Electronic Artefacts",
+        "id": "usage-electronic-artefacts"
+      }
+    ]
+  },
+  {
     "id": "ea:technology:webnn-fr",
     "type": "technology",
     "translationOf": "ea:technology:webnn",
@@ -24387,6 +25307,163 @@
         "level": 2,
         "title": "Related Electronic Artefacts Work",
         "id": "related-electronic-artefacts-work"
+      }
+    ]
+  },
+  {
+    "id": "ea:publication:a2a-agent-interoperability-and-governed-delegation",
+    "type": "publication",
+    "slug": {
+      "canonical": "a2a-agent-interoperability-and-governed-delegation"
+    },
+    "title": "A2A, Agent Interoperability and Governed Delegation",
+    "subtitle": "Technical Article",
+    "abstract": "A practical analysis of Agent2Agent protocol, agent discovery, task lifecycles, artifacts and the governance required before independent AI agents can safely delegate work.",
+    "description": "Understand A2A agent cards, messages, tasks and artifacts, how A2A differs from MCP, and why agent interoperability still needs identity, policy and audit trails.",
+    "locale": "en",
+    "visibility": "public",
+    "publicationClass": "published",
+    "status": "active",
+    "maturity": "research",
+    "confidence": "published",
+    "version": {
+      "version": "1.0.0",
+      "createdAt": "2026-07-12",
+      "publishedAt": "2026-07-12",
+      "modifiedAt": "2026-07-12"
+    },
+    "authors": [
+      {
+        "id": "ea:organization:electronic-artefacts"
+      }
+    ],
+    "publisher": "ea:organization:electronic-artefacts",
+    "tags": [
+      "A2A",
+      "AI Agents",
+      "Agent Interoperability",
+      "Delegation",
+      "VASTE"
+    ],
+    "disciplines": [
+      "Artificial Intelligence",
+      "Distributed Systems",
+      "Software Architecture"
+    ],
+    "sources": [
+      {
+        "title": "Agent2Agent Protocol Specification",
+        "url": "https://a2a-protocol.org/latest/specification/",
+        "publisher": "A2A Protocol Project",
+        "accessedAt": "2026-07-12"
+      },
+      {
+        "title": "Google Cloud donates A2A to Linux Foundation",
+        "url": "https://developers.googleblog.com/en/google-cloud-donates-a2a-to-linux-foundation/",
+        "publisher": "Google for Developers",
+        "publishedAt": "2025-06-23",
+        "accessedAt": "2026-07-12"
+      }
+    ],
+    "format": "technicalArticle",
+    "subjects": [
+      {
+        "id": "ea:technology:agent2agent-protocol"
+      },
+      {
+        "id": "ea:technology:model-context-protocol"
+      },
+      {
+        "id": "ea:concept:ai-agent"
+      },
+      {
+        "id": "ea:concept:contextual-execution"
+      },
+      {
+        "id": "ea:concept:provenance"
+      },
+      {
+        "id": "ea:program:vaste"
+      }
+    ],
+    "claims": [
+      "Agent interoperability is an exchange contract, not proof that delegated work is authorized or correct.",
+      "Durable delegation requires task identity, scoped authority, provenance and inspectable state transitions around the protocol."
+    ],
+    "evidence": [
+      {
+        "id": "ea:technology:agent2agent-protocol"
+      },
+      {
+        "id": "ea:concept:contextual-execution"
+      }
+    ],
+    "citation": {
+      "preferred": "Electronic Artefacts. \"A2A, Agent Interoperability and Governed Delegation.\" Technical article, version 1.0.0, 2026."
+    },
+    "bodyHtml": "<h2 id=\"problem\">Problem</h2>\n<p>AI agents are moving from isolated assistants toward systems that assign work to one another. The difficult part is not making two services exchange JSON. It is preserving meaning while different vendors, models and runtimes negotiate capabilities, progress and results.</p>\n<p>Agent2Agent, or A2A, addresses that exchange layer. The open protocol describes how an agent advertises capabilities, receives messages, manages a task and returns artifacts. It deliberately allows the remote agent to remain opaque: collaboration should not require access to its private memory, prompt or internal tools.</p>\n<h2 id=\"agent-cards-and-discovery\">Agent Cards and discovery</h2>\n<p>An Agent Card is the public description of an A2A endpoint. It can identify the agent, its skills, supported interaction modes, endpoint and authentication expectations. This makes discovery machine-readable, but a card is a claim, not an attestation. A client still needs to decide who published it, whether the endpoint is trusted and which declared skills may be used.</p>\n<p>Discovery therefore has two layers. The protocol can answer “what does this agent say it can do?” Governance must answer “under which identity and authority may we rely on it?”</p>\n<h2 id=\"architecture\">Architecture</h2>\n<p>A2A distinguishes conversational messages from tasks whose state can evolve over time. That distinction matters for work that pauses, requests more input or produces several outputs. A task may move through states while messages carry instructions or clarification. Artifacts represent deliverables such as text, files or structured data.</p>\n<p>The vocabulary is useful because it prevents every integration from inventing its own lifecycle. Yet shared states do not guarantee shared semantics. “Completed” can mean that a remote agent finished execution; it does not prove that the result is true, safe, licensed or fit to publish.</p>\n<h2 id=\"a2a-and-mcp\">A2A and MCP</h2>\n<p>MCP and A2A are complementary. MCP exposes context and tools to an AI application. A2A lets one agent application collaborate with another. An agent may use MCP internally and A2A externally, but the protocols should not be collapsed into one permission model.</p>\n<p>The distinction clarifies blast radius. A remote A2A agent should not inherit access to every MCP tool available to the delegating agent. Delegation needs an explicit, narrower capability envelope.</p>\n<h2 id=\"implementation\">Implementation</h2>\n<p>Safe delegation begins with a task contract: objective, input provenance, allowed operations, expected artifact types, expiry, budget and review policy. The contract should bind the requesting actor, remote agent, task and resulting artifacts to stable identifiers.</p>\n<p>Every transition should be observable. A durable audit record captures who delegated, which version of the Agent Card was used, what data crossed the boundary, which state changes occurred and which artifact was accepted. Sensitive payloads need minimization; useful auditability does not require retaining every private prompt.</p>\n<h2 id=\"implications-for-vaste\">Implications for VASTE</h2>\n<p>For VASTE, A2A is best treated as an edge protocol. A VASTE runtime could project a governed capability through an Agent Card, translate an incoming task into typed entities and events, and return an artifact with provenance. The runtime—not the remote protocol—would validate actor rights, relation constraints and publication state.</p>\n<p>This yields a practical design rule: interoperability may open a channel, but authority remains local. An agent can propose or perform bounded work; it cannot define the meaning of the graph it enters.</p>\n<h2 id=\"evidence\">Evidence</h2>\n<p>The A2A specification defines Agent Cards, messages, tasks, artifacts and protocol bindings. Its Linux Foundation governance establishes an open project home; it does not remove the need to verify individual implementations and trust policies.</p>\n<h2 id=\"limitations\">Limitations</h2>\n<p>A2A is evolving and adoption does not prove end-to-end compatibility. Authentication, service trust, prompt injection, data residency, cost control and result evaluation remain application responsibilities. Multi-agent architecture also adds failure modes: loops, duplicated work, contradictory outputs and cascading retries.</p>\n<p>The protocol is most valuable when it replaces a real integration seam. Adding agent-to-agent delegation where a deterministic API or workflow is enough only increases uncertainty.</p>\n<h2 id=\"related-reading\">Related reading</h2>\n<p>Continue with <a href=\"/publications/model-context-protocol-and-tool-using-ai-systems/\">Model Context Protocol and Tool-Using AI Systems</a>, <a href=\"/publications/ai-agents-vs-ai-workflows/\">AI Agents vs AI Workflows</a> and <a href=\"/publications/contextual-execution-and-graph-runtimes/\">Contextual Execution and Graph Runtimes</a>.</p>\n<h2 id=\"references\">References</h2>\n<ul>\n<li>A2A Protocol Project. Agent2Agent Protocol Specification, latest version accessed 12 July 2026.</li>\n<li>Google for Developers. “Google Cloud donates A2A to Linux Foundation,” 23 June 2025.</li>\n</ul>\n",
+    "headings": [
+      "Problem",
+      "Agent Cards and discovery",
+      "Architecture",
+      "A2A and MCP",
+      "Implementation",
+      "Implications for VASTE",
+      "Evidence",
+      "Limitations",
+      "Related reading",
+      "References"
+    ],
+    "headingItems": [
+      {
+        "level": 2,
+        "title": "Problem",
+        "id": "problem"
+      },
+      {
+        "level": 2,
+        "title": "Agent Cards and discovery",
+        "id": "agent-cards-and-discovery"
+      },
+      {
+        "level": 2,
+        "title": "Architecture",
+        "id": "architecture"
+      },
+      {
+        "level": 2,
+        "title": "A2A and MCP",
+        "id": "a2a-and-mcp"
+      },
+      {
+        "level": 2,
+        "title": "Implementation",
+        "id": "implementation"
+      },
+      {
+        "level": 2,
+        "title": "Implications for VASTE",
+        "id": "implications-for-vaste"
+      },
+      {
+        "level": 2,
+        "title": "Evidence",
+        "id": "evidence"
+      },
+      {
+        "level": 2,
+        "title": "Limitations",
+        "id": "limitations"
+      },
+      {
+        "level": 2,
+        "title": "Related reading",
+        "id": "related-reading"
+      },
+      {
+        "level": 2,
+        "title": "References",
+        "id": "references"
       }
     ]
   },
@@ -25944,6 +27021,177 @@
         "level": 2,
         "title": "Limitations",
         "id": "limitations"
+      },
+      {
+        "level": 2,
+        "title": "References",
+        "id": "references"
+      }
+    ]
+  },
+  {
+    "id": "ea:publication:eu-ai-act-transparency-content-provenance-and-creative-practice",
+    "type": "publication",
+    "slug": {
+      "canonical": "eu-ai-act-transparency-content-provenance-and-creative-practice"
+    },
+    "title": "EU AI Act Transparency, Content Provenance and Creative Practice",
+    "subtitle": "Implementation Guide",
+    "abstract": "A source-led guide to the EU AI Act transparency duties applying from August 2026, connecting machine-readable marking, visible labels, deepfakes, public-interest text and creative provenance.",
+    "description": "Prepare creative and cultural AI workflows for EU transparency rules with a layered approach to machine-readable marks, visible disclosure, provenance and editorial records.",
+    "locale": "en",
+    "visibility": "public",
+    "publicationClass": "published",
+    "status": "active",
+    "maturity": "research",
+    "confidence": "published",
+    "version": {
+      "version": "1.0.0",
+      "createdAt": "2026-07-12",
+      "publishedAt": "2026-07-12",
+      "modifiedAt": "2026-07-12"
+    },
+    "authors": [
+      {
+        "id": "ea:organization:electronic-artefacts"
+      }
+    ],
+    "publisher": "ea:organization:electronic-artefacts",
+    "tags": [
+      "EU AI Act",
+      "AI Transparency",
+      "Synthetic Media",
+      "Content Provenance",
+      "C2PA"
+    ],
+    "disciplines": [
+      "AI Governance",
+      "Digital Media",
+      "Cultural Infrastructure",
+      "Digital Preservation"
+    ],
+    "sources": [
+      {
+        "title": "Code of Practice on Transparency of AI-Generated Content",
+        "url": "https://digital-strategy.ec.europa.eu/en/policies/code-practice-ai-generated-content",
+        "publisher": "European Commission",
+        "publishedAt": "2026-06-10",
+        "accessedAt": "2026-07-12"
+      },
+      {
+        "title": "Guidelines on obligations for General-Purpose AI providers",
+        "url": "https://digital-strategy.ec.europa.eu/en/faqs/guidelines-obligations-general-purpose-ai-providers",
+        "publisher": "European Commission",
+        "accessedAt": "2026-07-12"
+      },
+      {
+        "title": "C2PA Technical Specification 2.2",
+        "url": "https://spec.c2pa.org/specifications/specifications/2.2/specs/_attachments/C2PA_Specification.pdf",
+        "publisher": "Coalition for Content Provenance and Authenticity",
+        "publishedAt": "2025-05-01",
+        "accessedAt": "2026-07-12"
+      }
+    ],
+    "format": "technicalArticle",
+    "subjects": [
+      {
+        "id": "ea:technology:c2pa"
+      },
+      {
+        "id": "ea:concept:provenance"
+      },
+      {
+        "id": "ea:concept:generative-ai"
+      },
+      {
+        "id": "ea:concept:digital-preservation"
+      },
+      {
+        "id": "ea:concept:metadata"
+      },
+      {
+        "id": "ea:project:palimpsests"
+      }
+    ],
+    "claims": [
+      "Machine-readable marking and visible disclosure solve different transparency problems and should be designed as complementary layers.",
+      "Cultural organizations need provenance records that survive export and editorial labels that remain understandable when metadata does not."
+    ],
+    "evidence": [
+      {
+        "id": "ea:technology:c2pa"
+      },
+      {
+        "id": "ea:concept:provenance"
+      }
+    ],
+    "citation": {
+      "preferred": "Electronic Artefacts. \"EU AI Act Transparency, Content Provenance and Creative Practice.\" Technical article, version 1.0.0, 2026."
+    },
+    "bodyHtml": "<h2 id=\"problem\">Problem</h2>\n<p>From 2 August 2026, Article 50 transparency obligations of the EU AI Act apply to several forms of interactive and generative AI. The European Commission’s June 2026 code of practice translates part of that legal framework into measures for marking AI-generated or manipulated outputs and labelling deepfakes and certain public-interest text.</p>\n<p>This article is an implementation reading for creative and cultural organizations, not legal advice. The central lesson is operational: transparency cannot be added as a badge at the end of production. It needs to connect generation, editing, export, publication and preservation.</p>\n<h2 id=\"architecture\">Architecture</h2>\n<p>Machine-readable marking helps systems detect that media was generated or manipulated. Visible labelling helps a person understand what they are seeing. The two layers overlap, but neither replaces the other.</p>\n<p>Metadata may be stripped when an image is recompressed, a video is captured or audio is transcoded. A visible notice may survive those transformations, yet provide too little detail for automated verification. Robust practice combines embedded or associated provenance with a plain-language disclosure near the content.</p>\n<h2 id=\"who-acts-provider-and-deployer\">Who acts: provider and deployer</h2>\n<p>The framework distinguishes providers of AI systems from deployers who use them. A model or creative-tool provider may need to enable machine-readable marking and detection. A publisher, studio or cultural institution may need to label the resulting deepfake or qualifying public-interest publication.</p>\n<p>One organization can occupy several roles across a workflow. A studio might build an internal generative system, operate it for a client and publish selected outputs. Responsibility should therefore be mapped per system and use, not reduced to a single company-wide label.</p>\n<h2 id=\"a-provenance-record-for-creative-work\">A provenance record for creative work</h2>\n<p>A useful production record answers: which model or system participated, what source assets entered, what transformations followed, who reviewed the result, what rights applied and where the final object was published. It should distinguish machine generation from conventional editing and human authorship without pretending that creative work is a binary.</p>\n<p>C2PA Content Credentials can support signed provenance assertions and change history. They are valuable infrastructure, not a universal truth machine. A valid credential can show who signed a claim and whether attached data was altered; it cannot prove that every claim inside the credential is honest or that an unmarked file is synthetic.</p>\n<h2 id=\"implementation\">Implementation</h2>\n<p>Start with an inventory of interactive AI and generative media uses. Assign provider or deployer roles, content types, publication contexts and responsible owners. For each workflow, define:</p>\n<ol>\n<li>a machine-readable marking path where technically feasible;</li>\n<li>a visible label triggered by the content and publication context;</li>\n<li>a durable internal record of tools, source material, review and rights;</li>\n<li>a fallback for formats or distribution channels that strip metadata;</li>\n<li>a correction and withdrawal path when a label or provenance claim is wrong.</li>\n</ol>\n<p>Labels should be specific. “Made with AI” says less than “background image generated with an AI image system and edited by the studio.” The disclosure should remain concise at the point of viewing, with a link to fuller provenance where the context warrants it.</p>\n<h2 id=\"creative-and-cultural-implications\">Creative and cultural implications</h2>\n<p>Museums, labels, archives and studios need to protect more than compliance. They manage authorship, interpretation and public memory. Over-labelling every low-level assistive operation can obscure meaningful disclosure; under-labelling a synthetic voice, reconstructed face or fabricated documentary image can damage trust.</p>\n<p>A risk-based editorial policy can distinguish assistive changes, substantial generation, identity simulation and public-interest claims. The decisive questions are not only “was AI used?” but “what did it change, could an audience be misled, and which provenance would matter later?”</p>\n<p>For Palimpsests or future ORETH media, this means recording the lineage of generated and processed material while preserving the artistic narrative. Provenance should expand the work’s context, not flatten it into a compliance notice.</p>\n<h2 id=\"relationship-to-seo-and-discovery\">Relationship to SEO and discovery</h2>\n<p>Transparent content can also be more legible to search and AI retrieval systems when the publication exposes dates, authorship, source notes, media captions and structured metadata. These signals do not guarantee ranking. They do reduce ambiguity around who published a page, what it claims and when it changed.</p>\n<p>The strongest public record is layered: readable article, structured entity, cited sources, stable URL, visible disclosure and portable provenance. This architecture serves audiences first and gives machines better evidence to interpret.</p>\n<h2 id=\"evidence\">Evidence</h2>\n<p>The Commission states that Article 50 transparency obligations apply from 2 August 2026 and separates provider marking duties from deployer labelling duties. C2PA 2.2 provides a technical provenance layer, while the Commission’s code supplies a voluntary compliance framework around marking and labelling.</p>\n<h2 id=\"limitations\">Limitations</h2>\n<p>The regulatory guidance and technical state of the art continue to evolve. Organizations should review the Commission’s final guidance, the adequacy status of the code and applicable national enforcement before relying on a checklist. Existing systems may also have transitional rules.</p>\n<p>Compliance does not end the ethical question. A technically marked deepfake can still deceive through placement or framing. Transparency must be evaluated in the actual audience context.</p>\n<h2 id=\"related-reading\">Related reading</h2>\n<p>Read <a href=\"/publications/c2pa-content-credentials-and-generative-media-provenance/\">C2PA, Content Credentials and Generative Media Provenance</a>, <a href=\"/publications/responsible-ai-governance-for-creative-and-cultural-systems/\">Responsible AI Governance for Creative and Cultural Systems</a> and <a href=\"/publications/digital-preservation-and-living-archives/\">Digital Preservation and Living Archives</a>.</p>\n<h2 id=\"references\">References</h2>\n<ul>\n<li>European Commission. Code of Practice on Transparency of AI-Generated Content, 10 June 2026.</li>\n<li>European Commission. Guidelines on obligations for general-purpose AI providers, accessed 12 July 2026.</li>\n<li>C2PA. Content Credentials Technical Specification 2.2, 1 May 2025.</li>\n</ul>\n",
+    "headings": [
+      "Problem",
+      "Architecture",
+      "Who acts: provider and deployer",
+      "A provenance record for creative work",
+      "Implementation",
+      "Creative and cultural implications",
+      "Relationship to SEO and discovery",
+      "Evidence",
+      "Limitations",
+      "Related reading",
+      "References"
+    ],
+    "headingItems": [
+      {
+        "level": 2,
+        "title": "Problem",
+        "id": "problem"
+      },
+      {
+        "level": 2,
+        "title": "Architecture",
+        "id": "architecture"
+      },
+      {
+        "level": 2,
+        "title": "Who acts: provider and deployer",
+        "id": "who-acts-provider-and-deployer"
+      },
+      {
+        "level": 2,
+        "title": "A provenance record for creative work",
+        "id": "a-provenance-record-for-creative-work"
+      },
+      {
+        "level": 2,
+        "title": "Implementation",
+        "id": "implementation"
+      },
+      {
+        "level": 2,
+        "title": "Creative and cultural implications",
+        "id": "creative-and-cultural-implications"
+      },
+      {
+        "level": 2,
+        "title": "Relationship to SEO and discovery",
+        "id": "relationship-to-seo-and-discovery"
+      },
+      {
+        "level": 2,
+        "title": "Evidence",
+        "id": "evidence"
+      },
+      {
+        "level": 2,
+        "title": "Limitations",
+        "id": "limitations"
+      },
+      {
+        "level": 2,
+        "title": "Related reading",
+        "id": "related-reading"
       },
       {
         "level": 2,
@@ -33200,6 +34448,169 @@
     ]
   },
   {
+    "id": "ea:publication:webmcp-and-the-agentic-web",
+    "type": "publication",
+    "slug": {
+      "canonical": "webmcp-and-the-agentic-web"
+    },
+    "title": "WebMCP and the Agentic Web",
+    "subtitle": "Research Article",
+    "abstract": "A critical guide to WebMCP and the emerging agentic web, where pages expose typed capabilities to browser agents while preserving interface state, origins and human oversight.",
+    "description": "Explore WebMCP, structured browser tools, declarative forms, permissions and why an agent-readable website still needs semantic HTML and accessible human interfaces.",
+    "locale": "en",
+    "visibility": "public",
+    "publicationClass": "published",
+    "status": "experimental",
+    "maturity": "research",
+    "confidence": "published",
+    "version": {
+      "version": "1.0.0",
+      "createdAt": "2026-07-12",
+      "publishedAt": "2026-07-12",
+      "modifiedAt": "2026-07-12"
+    },
+    "authors": [
+      {
+        "id": "ea:organization:electronic-artefacts"
+      }
+    ],
+    "publisher": "ea:organization:electronic-artefacts",
+    "tags": [
+      "WebMCP",
+      "Agentic Web",
+      "Browser Agents",
+      "Human Agent Collaboration",
+      "Web Standards"
+    ],
+    "disciplines": [
+      "Web Architecture",
+      "Human Computer Interaction",
+      "Artificial Intelligence"
+    ],
+    "sources": [
+      {
+        "title": "WebMCP Explainer and Draft",
+        "url": "https://github.com/webmachinelearning/webmcp",
+        "publisher": "W3C Web Machine Learning Community Group",
+        "accessedAt": "2026-07-12"
+      },
+      {
+        "title": "6 May 2026 AI Agent Protocol Community Group Meeting",
+        "url": "https://www.w3.org/events/meetings/cdb16df7-1ed9-4868-8429-b759e22b4bc7/20260506T210000/",
+        "publisher": "W3C",
+        "publishedAt": "2026-05-06",
+        "accessedAt": "2026-07-12"
+      }
+    ],
+    "format": "technicalArticle",
+    "subjects": [
+      {
+        "id": "ea:technology:webmcp"
+      },
+      {
+        "id": "ea:technology:model-context-protocol"
+      },
+      {
+        "id": "ea:concept:browser-software"
+      },
+      {
+        "id": "ea:concept:human-computer-interaction"
+      },
+      {
+        "id": "ea:concept:ai-agent"
+      },
+      {
+        "id": "ea:concept:linked-data"
+      }
+    ],
+    "claims": [
+      "Structured page tools can reduce brittle browser automation without replacing the visible web interface.",
+      "Agent-readable actions must remain subordinate to origin security, user intent, accessibility and explicit authorization."
+    ],
+    "evidence": [
+      {
+        "id": "ea:technology:webmcp"
+      },
+      {
+        "id": "ea:concept:browser-software"
+      }
+    ],
+    "citation": {
+      "preferred": "Electronic Artefacts. \"WebMCP and the Agentic Web.\" Technical article, version 1.0.0, 2026."
+    },
+    "bodyHtml": "<h2 id=\"problem\">Problem</h2>\n<p>Most browser agents currently operate like hurried users. They inspect screenshots or accessibility trees, infer which control might matter and simulate clicks. The approach is general, but it is also slow and fragile. A redesign, ambiguous label or delayed component can break the inferred path.</p>\n<p>WebMCP explores a different contract: let the page declare a small set of structured tools. An agent could invoke <code>filter-archive</code>, <code>prepare-citation</code> or <code>add-relation-draft</code> with typed arguments while the page reuses its existing client-side logic and active session.</p>\n<h2 id=\"architecture\">Architecture</h2>\n<p>The experimental proposal centers on a page-level model context interface. Scripts register named tools with descriptions, input schemas and execution handlers. A declarative path explores how ordinary HTML forms might expose equivalent capabilities without duplicating their behavior in JavaScript.</p>\n<p>The browser mediates discovery and invocation. This is important because the page retains its origin, lifecycle and visible state. Unlike a remote backend integration, an in-page tool can act on the same document the user sees.</p>\n<h2 id=\"better-than-simulated-clicks-not-automatically-safe\">Better than simulated clicks, not automatically safe</h2>\n<p>A typed tool is less ambiguous than pixel coordinates, but its consequences may be larger. A click is constrained by the current interface; a tool can compress several operations into one call. The schema therefore needs more than a persuasive description. It needs narrow inputs, predictable outputs, validation and a clear account of side effects.</p>\n<p>Read operations are the sensible starting point. Search, filtering, explanation and draft preparation can create value without silently committing a transaction. Destructive, financial, legal or publishing actions should require a browser-mediated confirmation that states what will change.</p>\n<h2 id=\"origins-frames-and-permissions\">Origins, frames and permissions</h2>\n<p>Web security is built around origins, browsing contexts and permissions. Agent capabilities must fit those boundaries rather than invent an invisible parallel authority system. Cross-origin frames raise difficult questions: which document registered the tool, which agent can discover it and whose user session supplies the authority?</p>\n<p>The draft discusses permissions policy and selective exposure, but several details remain open. That uncertainty is a reason to prototype carefully, not to market the proposal as a settled standard.</p>\n<h2 id=\"human-interfaces-remain-primary\">Human interfaces remain primary</h2>\n<p>An agentic web should not become a second web that only machines can operate. Semantic HTML, keyboard access, labels, focus management and clear error states still serve humans, assistive technologies, search crawlers and agents. Structured tools can complement these foundations; they cannot repair an inaccessible product model.</p>\n<p>The strongest implementation shares one domain operation across three surfaces: the human interface, accessibility semantics and the agent tool. Each surface expresses the operation differently, but none forks the underlying business rule.</p>\n<h2 id=\"implementation\">Implementation</h2>\n<p>For a knowledge graph, page tools can expose operations more precise than free-form browsing: retrieve a neighborhood, compare two claims, export a citation or prepare a relation proposal. Stable entity identifiers and provenance make the result easier to evaluate than text scraped from a rendered card.</p>\n<p>Electronic Artefacts could eventually expose read-only Knowledge Hub tools while keeping canonical content, JSON-LD and normal navigation as the public ground truth. VASTE could validate a proposed relation without granting the page authority to publish it.</p>\n<h2 id=\"seo-and-machine-readability\">SEO and machine readability</h2>\n<p>WebMCP is not an SEO shortcut. Search visibility still depends on crawlable pages, meaningful titles, internal links, structured data, evidence and useful prose. Agent tools address actions inside an active browser session; they do not replace the indexable information architecture.</p>\n<p>The useful overlap is conceptual: both search engines and agents benefit when entities, relations and sources are explicit. A site built around stable knowledge objects is better positioned for human search, AI retrieval and future browser tools than a site whose meaning exists only in visual layout.</p>\n<h2 id=\"evidence\">Evidence</h2>\n<p>The WebMCP repository documents imperative registration, a declarative direction for forms and open security and privacy questions. W3C community discussions in 2026 frame it as part of an emerging agentic-web standardization space, not a completed Recommendation.</p>\n<h2 id=\"limitations\">Limitations</h2>\n<p>The API remains experimental. Confirmation flows, output schemas, streaming, navigation during tool execution and exposure to embedded agents are still active design areas. Browser support and long-term compatibility cannot be assumed.</p>\n<p>Treat WebMCP as a research direction with a valuable principle: expose the smallest meaningful capability, preserve the user-visible context and let the browser enforce boundaries it already understands.</p>\n<h2 id=\"related-reading\">Related reading</h2>\n<p>See <a href=\"/publications/model-context-protocol-and-tool-using-ai-systems/\">Model Context Protocol and Tool-Using AI Systems</a>, <a href=\"/publications/human-computer-interaction-for-creative-tools/\">Human Computer Interaction for Creative Tools</a> and <a href=\"/publications/ai-search-structured-content-and-knowledge-graph-seo/\">AI Search, Structured Content and Knowledge Graph SEO</a>.</p>\n<h2 id=\"references\">References</h2>\n<ul>\n<li>W3C Web Machine Learning Community Group. WebMCP explainer and draft repository, accessed 12 July 2026.</li>\n<li>W3C. AI Agent Protocol Community Group meeting, 6 May 2026.</li>\n</ul>\n",
+    "headings": [
+      "Problem",
+      "Architecture",
+      "Better than simulated clicks, not automatically safe",
+      "Origins, frames and permissions",
+      "Human interfaces remain primary",
+      "Implementation",
+      "SEO and machine readability",
+      "Evidence",
+      "Limitations",
+      "Related reading",
+      "References"
+    ],
+    "headingItems": [
+      {
+        "level": 2,
+        "title": "Problem",
+        "id": "problem"
+      },
+      {
+        "level": 2,
+        "title": "Architecture",
+        "id": "architecture"
+      },
+      {
+        "level": 2,
+        "title": "Better than simulated clicks, not automatically safe",
+        "id": "better-than-simulated-clicks-not-automatically-safe"
+      },
+      {
+        "level": 2,
+        "title": "Origins, frames and permissions",
+        "id": "origins-frames-and-permissions"
+      },
+      {
+        "level": 2,
+        "title": "Human interfaces remain primary",
+        "id": "human-interfaces-remain-primary"
+      },
+      {
+        "level": 2,
+        "title": "Implementation",
+        "id": "implementation"
+      },
+      {
+        "level": 2,
+        "title": "SEO and machine readability",
+        "id": "seo-and-machine-readability"
+      },
+      {
+        "level": 2,
+        "title": "Evidence",
+        "id": "evidence"
+      },
+      {
+        "level": 2,
+        "title": "Limitations",
+        "id": "limitations"
+      },
+      {
+        "level": 2,
+        "title": "Related reading",
+        "id": "related-reading"
+      },
+      {
+        "level": 2,
+        "title": "References",
+        "id": "references"
+      }
+    ]
+  },
+  {
     "id": "ea:publication:webnn-and-local-ai-in-the-browser",
     "type": "publication",
     "slug": {
@@ -34506,6 +35917,101 @@
     ]
   },
   {
+    "id": "ea:technology:agent2agent-protocol",
+    "type": "technology",
+    "slug": {
+      "canonical": "agent2agent-protocol",
+      "aliases": [
+        "a2a-protocol"
+      ]
+    },
+    "title": "Agent2Agent Protocol",
+    "alternateNames": [
+      "A2A"
+    ],
+    "abstract": "Agent2Agent is an open protocol for capability discovery, task coordination and exchange between independent AI agent systems.",
+    "description": "A canonical guide to A2A agent cards, messages, tasks, artifacts, protocol bindings, security boundaries and its relationship with MCP.",
+    "locale": "en",
+    "visibility": "public",
+    "publicationClass": "canonical",
+    "status": "experimental",
+    "maturity": "development",
+    "confidence": "canonical",
+    "version": {
+      "version": "1.0.0",
+      "createdAt": "2026-07-12",
+      "publishedAt": "2026-07-12",
+      "modifiedAt": "2026-07-12"
+    },
+    "authors": [
+      {
+        "id": "ea:organization:electronic-artefacts"
+      }
+    ],
+    "publisher": "ea:organization:electronic-artefacts",
+    "tags": [
+      "A2A",
+      "AI Agents",
+      "Interoperability",
+      "Agent Protocols"
+    ],
+    "disciplines": [
+      "Artificial Intelligence",
+      "Software Architecture",
+      "Distributed Systems"
+    ],
+    "sources": [
+      {
+        "title": "Agent2Agent Protocol Specification",
+        "url": "https://a2a-protocol.org/latest/specification/",
+        "publisher": "A2A Protocol Project",
+        "accessedAt": "2026-07-12"
+      },
+      {
+        "title": "Google Cloud donates A2A to Linux Foundation",
+        "url": "https://developers.googleblog.com/en/google-cloud-donates-a2a-to-linux-foundation/",
+        "publisher": "Google for Developers",
+        "publishedAt": "2025-06-23",
+        "accessedAt": "2026-07-12"
+      }
+    ],
+    "category": "protocol",
+    "roleInEcosystem": "A2A provides a reference model for discovering remote agents and coordinating bounded tasks without exposing their internal memory or tools.",
+    "officialUrl": "https://a2a-protocol.org/latest/specification/",
+    "versions": [
+      "0.3.0"
+    ],
+    "bodyHtml": "<h2 id=\"role\">Role</h2>\n<p>A2A defines a shared language for independent agent applications. An agent can publish an Agent Card describing capabilities and interaction requirements, receive messages, manage long-running tasks and return artifacts without revealing its private prompt, memory or implementation.</p>\n<h2 id=\"boundary\">Boundary</h2>\n<p>A2A and MCP solve adjacent problems. MCP connects an AI application to context and tools; A2A coordinates work between agent applications. Neither protocol supplies authorization, trustworthy identity or safe autonomy by itself.</p>\n<h2 id=\"maturity\">Maturity</h2>\n<p>The protocol is open and governed through the Linux Foundation, but its interfaces are still evolving. Version 0.3.0 is a development milestone, not a guarantee of universal interoperability.</p>\n<h2 id=\"electronic-artefacts-use\">Electronic Artefacts use</h2>\n<p>A2A is relevant to VASTE as a possible edge protocol for exchanging governed tasks between runtimes. VASTE would still own entity identity, permissions, provenance and state transitions.</p>\n",
+    "headings": [
+      "Role",
+      "Boundary",
+      "Maturity",
+      "Electronic Artefacts use"
+    ],
+    "headingItems": [
+      {
+        "level": 2,
+        "title": "Role",
+        "id": "role"
+      },
+      {
+        "level": 2,
+        "title": "Boundary",
+        "id": "boundary"
+      },
+      {
+        "level": 2,
+        "title": "Maturity",
+        "id": "maturity"
+      },
+      {
+        "level": 2,
+        "title": "Electronic Artefacts use",
+        "id": "electronic-artefacts-use"
+      }
+    ]
+  },
+  {
     "id": "ea:technology:c2pa",
     "type": "technology",
     "slug": {
@@ -35697,6 +37203,85 @@
         "level": 2,
         "title": "References",
         "id": "references"
+      }
+    ]
+  },
+  {
+    "id": "ea:technology:webmcp",
+    "type": "technology",
+    "slug": {
+      "canonical": "webmcp"
+    },
+    "title": "WebMCP",
+    "abstract": "WebMCP is an experimental web-platform proposal for exposing page capabilities as structured tools that browser agents can discover and invoke.",
+    "description": "A maturity-aware record of WebMCP, in-page tools, browser mediation, origins, permissions and human-agent collaboration.",
+    "locale": "en",
+    "visibility": "public",
+    "publicationClass": "canonical",
+    "status": "experimental",
+    "maturity": "research",
+    "confidence": "observed",
+    "version": {
+      "version": "1.0.0",
+      "createdAt": "2026-07-12",
+      "publishedAt": "2026-07-12",
+      "modifiedAt": "2026-07-12"
+    },
+    "authors": [
+      {
+        "id": "ea:organization:electronic-artefacts"
+      }
+    ],
+    "publisher": "ea:organization:electronic-artefacts",
+    "tags": [
+      "WebMCP",
+      "Agentic Web",
+      "Browser Agents",
+      "Web Standards"
+    ],
+    "disciplines": [
+      "Web Architecture",
+      "Human Computer Interaction",
+      "Artificial Intelligence"
+    ],
+    "sources": [
+      {
+        "title": "WebMCP Explainer and Draft",
+        "url": "https://github.com/webmachinelearning/webmcp",
+        "publisher": "W3C Web Machine Learning Community Group",
+        "accessedAt": "2026-07-12"
+      }
+    ],
+    "category": "approach",
+    "roleInEcosystem": "WebMCP explores how a page can expose typed actions to a browser-mediated agent while retaining the active interface, session and origin context.",
+    "officialUrl": "https://github.com/webmachinelearning/webmcp",
+    "bodyHtml": "<h2 id=\"role\">Role</h2>\n<p>WebMCP proposes that web pages register typed tools through browser-native interfaces. An agent can discover an action and invoke validated arguments instead of reconstructing the interaction from pixels and simulated clicks.</p>\n<h2 id=\"scope\">Scope</h2>\n<p>The proposal targets local browser collaboration with a human present. It complements backend MCP servers and does not aim to replace websites, accessibility semantics or general browser automation.</p>\n<h2 id=\"maturity\">Maturity</h2>\n<p>WebMCP remains an experimental community proposal with open questions around permissions, embedded frames, user confirmation, output validation and streaming. Production designs should not treat its current API shape as stable.</p>\n<h2 id=\"electronic-artefacts-use\">Electronic Artefacts use</h2>\n<p>Its central idea fits Electronic Artefacts: preserve a visible interface while exposing a smaller, typed action surface. A future Knowledge Hub could offer read-only graph navigation or relation-draft tools without giving an agent unrestricted DOM control.</p>\n",
+    "headings": [
+      "Role",
+      "Scope",
+      "Maturity",
+      "Electronic Artefacts use"
+    ],
+    "headingItems": [
+      {
+        "level": 2,
+        "title": "Role",
+        "id": "role"
+      },
+      {
+        "level": 2,
+        "title": "Scope",
+        "id": "scope"
+      },
+      {
+        "level": 2,
+        "title": "Maturity",
+        "id": "maturity"
+      },
+      {
+        "level": 2,
+        "title": "Electronic Artefacts use",
+        "id": "electronic-artefacts-use"
       }
     ]
   },

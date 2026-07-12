@@ -52,11 +52,35 @@
       "confidence": "observed"
     },
     {
+      "id": "ea:collection:knowledge-hub-fifth-wave-fr",
+      "type": "collection",
+      "title": "Hub de connaissance, cinquième vague",
+      "route": "/fr/archive/collections/knowledge-hub-fifth-wave/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
       "id": "ea:collection:knowledge-hub-fourth-wave-fr",
       "type": "collection",
       "title": "Hub de connaissance, quatrième vague",
       "route": "/fr/archive/collections/knowledge-hub-fourth-wave/",
       "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:a2a-agent-interoperability-and-governed-delegation-fr",
+      "type": "publication",
+      "title": "A2A, interopérabilité des agents et délégation gouvernée",
+      "route": "/fr/publications/a2a-agent-interoperability-and-governed-delegation/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:webmcp-and-the-agentic-web-fr",
+      "type": "publication",
+      "title": "WebMCP et le web agentique",
+      "route": "/fr/publications/webmcp-and-the-agentic-web/",
+      "status": "experimental",
       "confidence": "published"
     }
   ],
@@ -107,6 +131,15 @@
       "confidence": "observed"
     },
     {
+      "id": "ear:model-context-protocol-member-of-collection-knowledge-hub-fifth-wave",
+      "source": "ea:technology:model-context-protocol-fr",
+      "target": "ea:collection:knowledge-hub-fifth-wave-fr",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Model Context Protocol is an explicit member of the Knowledge Hub Fifth Wave collection.",
+      "confidence": "canonical"
+    },
+    {
       "id": "ear:model-context-protocol-member-of-collection-knowledge-hub-fourth-wave",
       "source": "ea:technology:model-context-protocol-fr",
       "target": "ea:collection:knowledge-hub-fourth-wave-fr",
@@ -114,6 +147,15 @@
       "label": "Member of collection",
       "statement": "Model Context Protocol is an explicit member of the Knowledge Hub Fourth Wave collection.",
       "confidence": "canonical"
+    },
+    {
+      "id": "ear:a2a-agent-interoperability-and-governed-delegation-documents-model-context-protocol",
+      "source": "ea:publication:a2a-agent-interoperability-and-governed-delegation-fr",
+      "target": "ea:technology:model-context-protocol-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "A2A, Agent Interoperability and Governed Delegation documents Model Context Protocol as one of its declared subjects.",
+      "confidence": "published"
     },
     {
       "id": "ear:observability-for-ai-agents-and-tool-calling-systems-documents-model-context-protocol",
@@ -131,6 +173,15 @@
       "predicate": "documents",
       "label": "Documents",
       "statement": "Prompt Injection and Trust Boundaries in AI Knowledge Systems documents Model Context Protocol as one of its declared subjects.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:webmcp-and-the-agentic-web-documents-model-context-protocol",
+      "source": "ea:publication:webmcp-and-the-agentic-web-fr",
+      "target": "ea:technology:model-context-protocol-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "WebMCP and the Agentic Web documents Model Context Protocol as one of its declared subjects.",
       "confidence": "published"
     }
   ]

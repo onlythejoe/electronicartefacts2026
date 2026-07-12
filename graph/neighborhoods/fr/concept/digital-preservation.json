@@ -98,6 +98,14 @@
       "route": "/fr/publications/c2pa-content-credentials-and-generative-media-provenance/",
       "status": "active",
       "confidence": "published"
+    },
+    {
+      "id": "ea:publication:eu-ai-act-transparency-content-provenance-and-creative-practice-fr",
+      "type": "publication",
+      "title": "Transparence de l’AI Act, provenance des contenus et pratique créative",
+      "route": "/fr/publications/eu-ai-act-transparency-content-provenance-and-creative-practice/",
+      "status": "active",
+      "confidence": "published"
     }
   ],
   "edges": [
@@ -198,6 +206,15 @@
       "predicate": "documents",
       "label": "Documents",
       "statement": "C2PA Content Credentials and Generative Media Provenance documents Digital Preservation as one of its declared subjects.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:eu-ai-act-transparency-content-provenance-and-creative-practice-documents-digital-preservation",
+      "source": "ea:publication:eu-ai-act-transparency-content-provenance-and-creative-practice-fr",
+      "target": "ea:concept:digital-preservation-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "EU AI Act Transparency, Content Provenance and Creative Practice documents Digital Preservation as one of its declared subjects.",
       "confidence": "published"
     }
   ]

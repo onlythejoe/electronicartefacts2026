@@ -1311,18 +1311,48 @@
 .site-context-menu {
   position: fixed;
   z-index: 120;
+  isolation: isolate;
   width: min(18rem, calc(100vw - 1.25rem));
-  padding: 0.38rem;
-  border: 1px solid rgba(247, 244, 239, 0.15);
-  border-radius: 0.82rem;
-  background: rgba(8, 9, 11, 0.94);
-  box-shadow: 0 22px 58px rgba(0, 0, 0, 0.48), inset 0 1px rgba(255, 255, 255, 0.035);
-  backdrop-filter: blur(22px) saturate(115%);
-  -webkit-backdrop-filter: blur(22px) saturate(115%);
+  padding: 0.42rem;
+  overflow: hidden;
+  border: 1px solid rgba(247, 244, 239, 0.2);
+  border-radius: 0.92rem;
+  background:
+    linear-gradient(145deg, rgba(255, 255, 255, 0.095), rgba(255, 255, 255, 0.018) 48%, rgba(151, 121, 255, 0.035)),
+    rgba(7, 8, 11, 0.7);
+  box-shadow:
+    0 28px 72px rgba(0, 0, 0, 0.56),
+    0 8px 24px rgba(0, 0, 0, 0.28),
+    inset 0 1px rgba(255, 255, 255, 0.14),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.025);
+  backdrop-filter: blur(30px) saturate(145%) brightness(1.08);
+  -webkit-backdrop-filter: blur(30px) saturate(145%) brightness(1.08);
   animation: context-menu-in 120ms ease-out both;
 }
 
 .site-context-menu[hidden] { display: none; }
+
+.site-context-menu::before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  border-radius: inherit;
+  background:
+    radial-gradient(circle at 12% -12%, rgba(255, 255, 255, 0.2), transparent 42%),
+    radial-gradient(circle at 92% 112%, rgba(151, 121, 255, 0.1), transparent 48%);
+  pointer-events: none;
+}
+
+.site-context-menu::after {
+  content: "";
+  position: absolute;
+  z-index: 2;
+  inset: 1px;
+  border: 1px solid rgba(255, 255, 255, 0.045);
+  border-radius: calc(0.92rem - 1px);
+  pointer-events: none;
+}
 
 .site-context-menu__item {
   display: flex;
@@ -1341,12 +1371,15 @@
   font-size: 0.78rem;
   line-height: 1.25;
   text-align: left;
+  transition: background-color 100ms ease, box-shadow 100ms ease, transform 100ms ease;
 }
 
 .site-context-menu__item:hover,
 .site-context-menu__item:focus-visible {
   outline: none;
-  background: rgba(247, 244, 239, 0.095);
+  background: linear-gradient(100deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0.065));
+  box-shadow: inset 0 1px rgba(255, 255, 255, 0.09), 0 6px 18px rgba(0, 0, 0, 0.14);
+  transform: translateX(1px);
 }
 
 .site-context-menu__item kbd {
@@ -1357,7 +1390,7 @@
 .site-context-menu__separator {
   height: 1px;
   margin: 0.28rem 0.42rem;
-  background: rgba(247, 244, 239, 0.09);
+  background: linear-gradient(90deg, transparent, rgba(247, 244, 239, 0.16) 18%, rgba(247, 244, 239, 0.08) 82%, transparent);
 }
 
 @keyframes context-menu-in {
@@ -1367,6 +1400,7 @@
 
 @media (prefers-reduced-motion: reduce) {
   .site-context-menu { animation: none; }
+  .site-context-menu__item { transition: none; }
 }
 
 @media (max-width: 760px) {

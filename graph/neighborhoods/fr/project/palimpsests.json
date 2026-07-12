@@ -84,10 +84,26 @@
       "confidence": "published"
     },
     {
+      "id": "ea:collection:knowledge-hub-fifth-wave-fr",
+      "type": "collection",
+      "title": "Hub de connaissance, cinquième vague",
+      "route": "/fr/archive/collections/knowledge-hub-fifth-wave/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
       "id": "ea:collection:knowledge-hub-foundations-fr",
       "type": "collection",
       "title": "Fondations du hub de connaissance",
       "route": "/fr/archive/collections/knowledge-hub-foundations/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:eu-ai-act-transparency-content-provenance-and-creative-practice-fr",
+      "type": "publication",
+      "title": "Transparence de l’AI Act, provenance des contenus et pratique créative",
+      "route": "/fr/publications/eu-ai-act-transparency-content-provenance-and-creative-practice/",
       "status": "active",
       "confidence": "published"
     }
@@ -175,12 +191,30 @@
       "confidence": "published"
     },
     {
+      "id": "ear:palimpsests-member-of-collection-knowledge-hub-fifth-wave",
+      "source": "ea:project:palimpsests-fr",
+      "target": "ea:collection:knowledge-hub-fifth-wave-fr",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Palimpsests is an explicit member of the Knowledge Hub Fifth Wave collection.",
+      "confidence": "published"
+    },
+    {
       "id": "ear:palimpsests-member-of-collection-knowledge-hub-foundations",
       "source": "ea:project:palimpsests-fr",
       "target": "ea:collection:knowledge-hub-foundations-fr",
       "predicate": "memberOfCollection",
       "label": "Member of collection",
       "statement": "Palimpsests is an explicit member of the Knowledge Hub Foundations collection.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:eu-ai-act-transparency-content-provenance-and-creative-practice-documents-palimpsests",
+      "source": "ea:publication:eu-ai-act-transparency-content-provenance-and-creative-practice-fr",
+      "target": "ea:project:palimpsests-fr",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "EU AI Act Transparency, Content Provenance and Creative Practice documents Palimpsests as one of its declared subjects.",
       "confidence": "published"
     }
   ]

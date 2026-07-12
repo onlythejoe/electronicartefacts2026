@@ -36,10 +36,26 @@
       "confidence": "published"
     },
     {
+      "id": "ea:collection:knowledge-hub-fifth-wave",
+      "type": "collection",
+      "title": "Knowledge Hub Fifth Wave",
+      "route": "/archive/collections/knowledge-hub-fifth-wave/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
       "id": "ea:collection:knowledge-hub-fourth-wave",
       "type": "collection",
       "title": "Knowledge Hub Fourth Wave",
       "route": "/archive/collections/knowledge-hub-fourth-wave/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:eu-ai-act-transparency-content-provenance-and-creative-practice",
+      "type": "publication",
+      "title": "EU AI Act Transparency, Content Provenance and Creative Practice",
+      "route": "/publications/eu-ai-act-transparency-content-provenance-and-creative-practice/",
       "status": "active",
       "confidence": "published"
     }
@@ -73,6 +89,15 @@
       "confidence": "published"
     },
     {
+      "id": "ear:c2pa-member-of-collection-knowledge-hub-fifth-wave",
+      "source": "ea:technology:c2pa",
+      "target": "ea:collection:knowledge-hub-fifth-wave",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "C2PA is an explicit member of the Knowledge Hub Fifth Wave collection.",
+      "confidence": "canonical"
+    },
+    {
       "id": "ear:c2pa-member-of-collection-knowledge-hub-fourth-wave",
       "source": "ea:technology:c2pa",
       "target": "ea:collection:knowledge-hub-fourth-wave",
@@ -80,6 +105,15 @@
       "label": "Member of collection",
       "statement": "C2PA is an explicit member of the Knowledge Hub Fourth Wave collection.",
       "confidence": "canonical"
+    },
+    {
+      "id": "ear:eu-ai-act-transparency-content-provenance-and-creative-practice-documents-c2pa",
+      "source": "ea:publication:eu-ai-act-transparency-content-provenance-and-creative-practice",
+      "target": "ea:technology:c2pa",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "EU AI Act Transparency, Content Provenance and Creative Practice documents C2PA as one of its declared subjects.",
+      "confidence": "published"
     },
     {
       "id": "ear:verifiable-credentials-for-cultural-archives-and-creator-identity-documents-c2pa",

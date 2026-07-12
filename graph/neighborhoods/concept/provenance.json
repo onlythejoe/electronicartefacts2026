@@ -132,6 +132,14 @@
       "confidence": "published"
     },
     {
+      "id": "ea:collection:knowledge-hub-fifth-wave",
+      "type": "collection",
+      "title": "Knowledge Hub Fifth Wave",
+      "route": "/archive/collections/knowledge-hub-fifth-wave/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
       "id": "ea:collection:knowledge-hub-foundations",
       "type": "collection",
       "title": "Knowledge Hub Foundations",
@@ -152,6 +160,22 @@
       "type": "collection",
       "title": "Voice Capture Studio Collection",
       "route": "/archive/collections/voice-capture-studio/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:a2a-agent-interoperability-and-governed-delegation",
+      "type": "publication",
+      "title": "A2A, Agent Interoperability and Governed Delegation",
+      "route": "/publications/a2a-agent-interoperability-and-governed-delegation/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:eu-ai-act-transparency-content-provenance-and-creative-practice",
+      "type": "publication",
+      "title": "EU AI Act Transparency, Content Provenance and Creative Practice",
+      "route": "/publications/eu-ai-act-transparency-content-provenance-and-creative-practice/",
       "status": "active",
       "confidence": "published"
     },
@@ -301,6 +325,15 @@
       "confidence": "published"
     },
     {
+      "id": "ear:provenance-member-of-collection-knowledge-hub-fifth-wave",
+      "source": "ea:concept:provenance",
+      "target": "ea:collection:knowledge-hub-fifth-wave",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Provenance is an explicit member of the Knowledge Hub Fifth Wave collection.",
+      "confidence": "validated"
+    },
+    {
       "id": "ear:provenance-member-of-collection-knowledge-hub-foundations",
       "source": "ea:concept:provenance",
       "target": "ea:collection:knowledge-hub-foundations",
@@ -326,6 +359,24 @@
       "label": "Member of collection",
       "statement": "Provenance is an explicit member of the Voice Capture Studio Collection collection.",
       "confidence": "validated"
+    },
+    {
+      "id": "ear:a2a-agent-interoperability-and-governed-delegation-documents-provenance",
+      "source": "ea:publication:a2a-agent-interoperability-and-governed-delegation",
+      "target": "ea:concept:provenance",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "A2A, Agent Interoperability and Governed Delegation documents Provenance as one of its declared subjects.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:eu-ai-act-transparency-content-provenance-and-creative-practice-documents-provenance",
+      "source": "ea:publication:eu-ai-act-transparency-content-provenance-and-creative-practice",
+      "target": "ea:concept:provenance",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "EU AI Act Transparency, Content Provenance and Creative Practice documents Provenance as one of its declared subjects.",
+      "confidence": "published"
     },
     {
       "id": "ear:why-graphs-are-more-powerful-than-folders-documents-provenance",

@@ -52,6 +52,14 @@
       "confidence": "observed"
     },
     {
+      "id": "ea:collection:knowledge-hub-fifth-wave",
+      "type": "collection",
+      "title": "Knowledge Hub Fifth Wave",
+      "route": "/archive/collections/knowledge-hub-fifth-wave/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
       "id": "ea:collection:knowledge-hub-fourth-wave",
       "type": "collection",
       "title": "Knowledge Hub Fourth Wave",
@@ -65,6 +73,22 @@
       "title": "Knowledge Hub Third Wave",
       "route": "/archive/collections/knowledge-hub-third-wave/",
       "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:a2a-agent-interoperability-and-governed-delegation",
+      "type": "publication",
+      "title": "A2A, Agent Interoperability and Governed Delegation",
+      "route": "/publications/a2a-agent-interoperability-and-governed-delegation/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:webmcp-and-the-agentic-web",
+      "type": "publication",
+      "title": "WebMCP and the Agentic Web",
+      "route": "/publications/webmcp-and-the-agentic-web/",
+      "status": "experimental",
       "confidence": "published"
     }
   ],
@@ -115,6 +139,15 @@
       "confidence": "observed"
     },
     {
+      "id": "ear:ai-agent-member-of-collection-knowledge-hub-fifth-wave",
+      "source": "ea:concept:ai-agent",
+      "target": "ea:collection:knowledge-hub-fifth-wave",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "AI Agent is an explicit member of the Knowledge Hub Fifth Wave collection.",
+      "confidence": "validated"
+    },
+    {
       "id": "ear:ai-agent-member-of-collection-knowledge-hub-fourth-wave",
       "source": "ea:concept:ai-agent",
       "target": "ea:collection:knowledge-hub-fourth-wave",
@@ -131,6 +164,24 @@
       "label": "Member of collection",
       "statement": "AI Agent is an explicit member of the Knowledge Hub Third Wave collection.",
       "confidence": "validated"
+    },
+    {
+      "id": "ear:a2a-agent-interoperability-and-governed-delegation-documents-ai-agent",
+      "source": "ea:publication:a2a-agent-interoperability-and-governed-delegation",
+      "target": "ea:concept:ai-agent",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "A2A, Agent Interoperability and Governed Delegation documents AI Agent as one of its declared subjects.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:webmcp-and-the-agentic-web-documents-ai-agent",
+      "source": "ea:publication:webmcp-and-the-agentic-web",
+      "target": "ea:concept:ai-agent",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "WebMCP and the Agentic Web documents AI Agent as one of its declared subjects.",
+      "confidence": "published"
     }
   ]
 }

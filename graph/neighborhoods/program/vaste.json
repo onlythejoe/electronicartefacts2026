@@ -258,6 +258,22 @@
       "route": "/research/questions/self-explaining-knowledge-graph-software/",
       "status": "active",
       "confidence": "validated"
+    },
+    {
+      "id": "ea:collection:knowledge-hub-fifth-wave",
+      "type": "collection",
+      "title": "Knowledge Hub Fifth Wave",
+      "route": "/archive/collections/knowledge-hub-fifth-wave/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:a2a-agent-interoperability-and-governed-delegation",
+      "type": "publication",
+      "title": "A2A, Agent Interoperability and Governed Delegation",
+      "route": "/publications/a2a-agent-interoperability-and-governed-delegation/",
+      "status": "active",
+      "confidence": "published"
     }
   ],
   "edges": [
@@ -539,6 +555,24 @@
       "label": "Implemented by",
       "statement": "VASTE is listed as a current software or project answer for the research question \"How can software become explainable through its own knowledge graph?\".",
       "confidence": "validated"
+    },
+    {
+      "id": "ear:vaste-member-of-collection-knowledge-hub-fifth-wave",
+      "source": "ea:program:vaste",
+      "target": "ea:collection:knowledge-hub-fifth-wave",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "VASTE is an explicit member of the Knowledge Hub Fifth Wave collection.",
+      "confidence": "validated"
+    },
+    {
+      "id": "ear:a2a-agent-interoperability-and-governed-delegation-documents-vaste",
+      "source": "ea:publication:a2a-agent-interoperability-and-governed-delegation",
+      "target": "ea:program:vaste",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "A2A, Agent Interoperability and Governed Delegation documents VASTE as one of its declared subjects.",
+      "confidence": "published"
     }
   ]
 }

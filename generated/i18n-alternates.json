@@ -30,6 +30,10 @@
   "/archive/collections/": {
     "en": "/archive/collections/"
   },
+  "/archive/collections/knowledge-hub-fifth-wave/": {
+    "en": "/archive/collections/knowledge-hub-fifth-wave/",
+    "fr": "/fr/archive/collections/knowledge-hub-fifth-wave/"
+  },
   "/archive/collections/knowledge-hub-foundations/": {
     "en": "/archive/collections/knowledge-hub-foundations/",
     "fr": "/fr/archive/collections/knowledge-hub-foundations/"
@@ -113,6 +117,10 @@
   "/fr/archive/artefacts/voice-capture-studio-repository/": {
     "en": "/archive/artefacts/voice-capture-studio-repository/",
     "fr": "/fr/archive/artefacts/voice-capture-studio-repository/"
+  },
+  "/fr/archive/collections/knowledge-hub-fifth-wave/": {
+    "en": "/archive/collections/knowledge-hub-fifth-wave/",
+    "fr": "/fr/archive/collections/knowledge-hub-fifth-wave/"
   },
   "/fr/archive/collections/knowledge-hub-foundations/": {
     "en": "/archive/collections/knowledge-hub-foundations/",
@@ -382,6 +390,10 @@
     "fr": "/fr/knowledge/technologies/activitypub/",
     "en": "/knowledge/technologies/activitypub/"
   },
+  "/fr/knowledge/technologies/agent2agent-protocol/": {
+    "fr": "/fr/knowledge/technologies/agent2agent-protocol/",
+    "en": "/knowledge/technologies/agent2agent-protocol/"
+  },
   "/fr/knowledge/technologies/c2pa/": {
     "fr": "/fr/knowledge/technologies/c2pa/",
     "en": "/knowledge/technologies/c2pa/"
@@ -446,6 +458,10 @@
     "fr": "/fr/knowledge/technologies/webgl/",
     "en": "/knowledge/technologies/webgl/"
   },
+  "/fr/knowledge/technologies/webmcp/": {
+    "fr": "/fr/knowledge/technologies/webmcp/",
+    "en": "/knowledge/technologies/webmcp/"
+  },
   "/fr/knowledge/technologies/webnn/": {
     "fr": "/fr/knowledge/technologies/webnn/",
     "en": "/knowledge/technologies/webnn/"
@@ -506,6 +522,10 @@
     "en": "/publications/",
     "fr": "/fr/publications/"
   },
+  "/fr/publications/a2a-agent-interoperability-and-governed-delegation/": {
+    "fr": "/fr/publications/a2a-agent-interoperability-and-governed-delegation/",
+    "en": "/publications/a2a-agent-interoperability-and-governed-delegation/"
+  },
   "/fr/publications/ai-agents-vs-ai-workflows/": {
     "fr": "/fr/publications/ai-agents-vs-ai-workflows/",
     "en": "/publications/ai-agents-vs-ai-workflows/"
@@ -533,6 +553,10 @@
   "/fr/publications/digital-preservation-and-living-archives/": {
     "fr": "/fr/publications/digital-preservation-and-living-archives/",
     "en": "/publications/digital-preservation-and-living-archives/"
+  },
+  "/fr/publications/eu-ai-act-transparency-content-provenance-and-creative-practice/": {
+    "fr": "/fr/publications/eu-ai-act-transparency-content-provenance-and-creative-practice/",
+    "en": "/publications/eu-ai-act-transparency-content-provenance-and-creative-practice/"
   },
   "/fr/publications/event-driven-architecture-and-event-streams/": {
     "fr": "/fr/publications/event-driven-architecture-and-event-streams/",
@@ -657,6 +681,10 @@
   "/fr/publications/web-audio-and-browser-based-sound-systems/": {
     "fr": "/fr/publications/web-audio-and-browser-based-sound-systems/",
     "en": "/publications/web-audio-and-browser-based-sound-systems/"
+  },
+  "/fr/publications/webmcp-and-the-agentic-web/": {
+    "fr": "/fr/publications/webmcp-and-the-agentic-web/",
+    "en": "/publications/webmcp-and-the-agentic-web/"
   },
   "/fr/publications/webnn-and-local-ai-in-the-browser/": {
     "fr": "/fr/publications/webnn-and-local-ai-in-the-browser/",
@@ -922,6 +950,10 @@
     "fr": "/fr/knowledge/technologies/activitypub/",
     "en": "/knowledge/technologies/activitypub/"
   },
+  "/knowledge/technologies/agent2agent-protocol/": {
+    "fr": "/fr/knowledge/technologies/agent2agent-protocol/",
+    "en": "/knowledge/technologies/agent2agent-protocol/"
+  },
   "/knowledge/technologies/c2pa/": {
     "fr": "/fr/knowledge/technologies/c2pa/",
     "en": "/knowledge/technologies/c2pa/"
@@ -986,6 +1018,10 @@
     "fr": "/fr/knowledge/technologies/webgl/",
     "en": "/knowledge/technologies/webgl/"
   },
+  "/knowledge/technologies/webmcp/": {
+    "fr": "/fr/knowledge/technologies/webmcp/",
+    "en": "/knowledge/technologies/webmcp/"
+  },
   "/knowledge/technologies/webnn/": {
     "fr": "/fr/knowledge/technologies/webnn/",
     "en": "/knowledge/technologies/webnn/"
@@ -1046,6 +1082,10 @@
     "en": "/publications/",
     "fr": "/fr/publications/"
   },
+  "/publications/a2a-agent-interoperability-and-governed-delegation/": {
+    "fr": "/fr/publications/a2a-agent-interoperability-and-governed-delegation/",
+    "en": "/publications/a2a-agent-interoperability-and-governed-delegation/"
+  },
   "/publications/ai-agents-vs-ai-workflows/": {
     "fr": "/fr/publications/ai-agents-vs-ai-workflows/",
     "en": "/publications/ai-agents-vs-ai-workflows/"
@@ -1073,6 +1113,10 @@
   "/publications/digital-preservation-and-living-archives/": {
     "fr": "/fr/publications/digital-preservation-and-living-archives/",
     "en": "/publications/digital-preservation-and-living-archives/"
+  },
+  "/publications/eu-ai-act-transparency-content-provenance-and-creative-practice/": {
+    "fr": "/fr/publications/eu-ai-act-transparency-content-provenance-and-creative-practice/",
+    "en": "/publications/eu-ai-act-transparency-content-provenance-and-creative-practice/"
   },
   "/publications/event-driven-architecture-and-event-streams/": {
     "fr": "/fr/publications/event-driven-architecture-and-event-streams/",
@@ -1197,6 +1241,10 @@
   "/publications/web-audio-and-browser-based-sound-systems/": {
     "fr": "/fr/publications/web-audio-and-browser-based-sound-systems/",
     "en": "/publications/web-audio-and-browser-based-sound-systems/"
+  },
+  "/publications/webmcp-and-the-agentic-web/": {
+    "fr": "/fr/publications/webmcp-and-the-agentic-web/",
+    "en": "/publications/webmcp-and-the-agentic-web/"
   },
   "/publications/webnn-and-local-ai-in-the-browser/": {
     "fr": "/fr/publications/webnn-and-local-ai-in-the-browser/",

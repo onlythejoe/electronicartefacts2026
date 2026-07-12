@@ -100,6 +100,14 @@
       "confidence": "published"
     },
     {
+      "id": "ea:publication:eu-ai-act-transparency-content-provenance-and-creative-practice",
+      "type": "publication",
+      "title": "EU AI Act Transparency, Content Provenance and Creative Practice",
+      "route": "/publications/eu-ai-act-transparency-content-provenance-and-creative-practice/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
       "id": "ea:publication:iiif-and-compound-cultural-objects",
       "type": "publication",
       "title": "IIIF and Compound Cultural Objects",
@@ -206,6 +214,15 @@
       "predicate": "documents",
       "label": "Documents",
       "statement": "AI Search, Structured Content and Knowledge Graph SEO documents Metadata as one of its declared subjects.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:eu-ai-act-transparency-content-provenance-and-creative-practice-documents-metadata",
+      "source": "ea:publication:eu-ai-act-transparency-content-provenance-and-creative-practice",
+      "target": "ea:concept:metadata",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "EU AI Act Transparency, Content Provenance and Creative Practice documents Metadata as one of its declared subjects.",
       "confidence": "published"
     },
     {

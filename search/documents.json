@@ -73,6 +73,65 @@
     "modifiedAt": "2026-07-09"
   },
   {
+    "id": "ea:collection:knowledge-hub-fifth-wave",
+    "locale": "en",
+    "route": "/archive/collections/knowledge-hub-fifth-wave/",
+    "type": "collection",
+    "title": "Knowledge Hub Fifth Wave",
+    "alternateNames": [],
+    "abstract": "Knowledge Hub Fifth Wave connects A2A delegation, WebMCP browser tools and EU synthetic-content transparency to Electronic Artefacts research on graphs, provenance and governed runtimes.",
+    "headings": [
+      "Thesis",
+      "Three current signals",
+      "Editorial position",
+      "Paths through the graph",
+      "What comes next"
+    ],
+    "body": "Thesis The agentic turn is not only a story about more capable models. It creates new boundaries between agents, browser interfaces, publishers and audiences. Those boundaries need protocols, but protocols become useful only when paired with authority, provenance and intelligible public records. Three current signals A2A formalizes collaboration between independent agent applications. WebMCP explores structured actions inside the browser rather than opaque screen control. The EU transparency framework turns synthetic-content provenance and disclosure into an immediate implementation concern. Together they describe one system: delegation upstream, action at the interface and accountability at publication. Editorial position The collection avoids forecasts and product rankings. Each article separates implemented specifications, experimental proposals and regulatory obligations. It favors primary sources and translates them into design consequences for VASTE, the Knowledge Hub and Electronic Artefacts cultural production. Paths through the graph Architecture readers can move from AI agents to MCP, A2A and contextual execution. Web readers can connect browser software, HCI and WebMCP. Cultural readers can connect generative AI, C2PA, provenance, Palimpsests and public transparency. What comes next The collection should evolve when A2A or WebMCP reaches a materially different maturity level and when final European implementation guidance changes the operational reading. Future additions should respond to evidence, not a publishing quota.",
+    "tags": [
+      "Knowledge Hub",
+      "Fifth Wave",
+      "Agent Interoperability",
+      "Agentic Web",
+      "AI Transparency",
+      "Provenance"
+    ],
+    "questions": [],
+    "relationLabels": [
+      "memberOfCollection A2A, Agent Interoperability and Governed Delegation is an explicit member of the Knowledge Hub Fifth Wave collection.",
+      "memberOfCollection WebMCP and the Agentic Web is an explicit member of the Knowledge Hub Fifth Wave collection.",
+      "memberOfCollection EU AI Act Transparency, Content Provenance and Creative Practice is an explicit member of the Knowledge Hub Fifth Wave collection.",
+      "memberOfCollection Agent2Agent Protocol is an explicit member of the Knowledge Hub Fifth Wave collection.",
+      "memberOfCollection WebMCP is an explicit member of the Knowledge Hub Fifth Wave collection.",
+      "memberOfCollection Model Context Protocol is an explicit member of the Knowledge Hub Fifth Wave collection.",
+      "memberOfCollection C2PA is an explicit member of the Knowledge Hub Fifth Wave collection.",
+      "memberOfCollection AI Agent is an explicit member of the Knowledge Hub Fifth Wave collection.",
+      "memberOfCollection Browser Software is an explicit member of the Knowledge Hub Fifth Wave collection.",
+      "memberOfCollection Contextual Execution is an explicit member of the Knowledge Hub Fifth Wave collection.",
+      "memberOfCollection Provenance is an explicit member of the Knowledge Hub Fifth Wave collection.",
+      "memberOfCollection VASTE is an explicit member of the Knowledge Hub Fifth Wave collection.",
+      "memberOfCollection Palimpsests is an explicit member of the Knowledge Hub Fifth Wave collection."
+    ],
+    "relatedEntityIds": [
+      "ea:publication:a2a-agent-interoperability-and-governed-delegation",
+      "ea:publication:webmcp-and-the-agentic-web",
+      "ea:publication:eu-ai-act-transparency-content-provenance-and-creative-practice",
+      "ea:technology:agent2agent-protocol",
+      "ea:technology:webmcp",
+      "ea:technology:model-context-protocol",
+      "ea:technology:c2pa",
+      "ea:concept:ai-agent",
+      "ea:concept:browser-software",
+      "ea:concept:contextual-execution",
+      "ea:concept:provenance",
+      "ea:program:vaste",
+      "ea:project:palimpsests"
+    ],
+    "status": "active",
+    "confidence": "published",
+    "modifiedAt": "2026-07-12"
+  },
+  {
     "id": "ea:collection:knowledge-hub-foundations",
     "locale": "en",
     "route": "/archive/collections/knowledge-hub-foundations/",
@@ -558,8 +617,11 @@
       "documents Prompt Injection and Trust Boundaries in AI Knowledge Systems documents prompt-injection risks for AI agents.",
       "documents AI Agents vs AI Workflows documents model-directed agency and deterministic workflow boundaries.",
       "appliesConcept The research question \"How can an AI understand someone during its very first conversation?\" applies AI Agent as part of its current model.",
+      "memberOfCollection AI Agent is an explicit member of the Knowledge Hub Fifth Wave collection.",
       "memberOfCollection AI Agent is an explicit member of the Knowledge Hub Fourth Wave collection.",
-      "memberOfCollection AI Agent is an explicit member of the Knowledge Hub Third Wave collection."
+      "memberOfCollection AI Agent is an explicit member of the Knowledge Hub Third Wave collection.",
+      "documents A2A, Agent Interoperability and Governed Delegation documents AI Agent as one of its declared subjects.",
+      "documents WebMCP and the Agentic Web documents AI Agent as one of its declared subjects."
     ],
     "relatedEntityIds": [
       "ea:publication:model-context-protocol-and-tool-using-ai-systems",
@@ -567,8 +629,11 @@
       "ea:publication:prompt-injection-and-trust-boundaries-in-ai-knowledge-systems",
       "ea:publication:ai-agents-vs-ai-workflows",
       "ea:researchQuestion:first-conversation-understanding",
+      "ea:collection:knowledge-hub-fifth-wave",
       "ea:collection:knowledge-hub-fourth-wave",
-      "ea:collection:knowledge-hub-third-wave"
+      "ea:collection:knowledge-hub-third-wave",
+      "ea:publication:a2a-agent-interoperability-and-governed-delegation",
+      "ea:publication:webmcp-and-the-agentic-web"
     ],
     "status": "active",
     "confidence": "validated",
@@ -717,12 +782,16 @@
     "relationLabels": [
       "appliesConcept Voice Capture Studio applies browser-software principles by running as a static web application with local storage, microphone access and explicit exports.",
       "appliesConcept The research question \"How can speech datasets become reproducible, structured and privacy-first?\" applies Browser Software as part of its current model.",
-      "memberOfCollection Browser Software is an explicit member of the Voice Capture Studio Collection collection."
+      "memberOfCollection Browser Software is an explicit member of the Knowledge Hub Fifth Wave collection.",
+      "memberOfCollection Browser Software is an explicit member of the Voice Capture Studio Collection collection.",
+      "documents WebMCP and the Agentic Web documents Browser Software as one of its declared subjects."
     ],
     "relatedEntityIds": [
       "ea:project:voice-capture-studio",
       "ea:researchQuestion:speech-dataset-reproducibility",
-      "ea:collection:voice-capture-studio"
+      "ea:collection:knowledge-hub-fifth-wave",
+      "ea:collection:voice-capture-studio",
+      "ea:publication:webmcp-and-the-agentic-web"
     ],
     "status": "active",
     "confidence": "validated",
@@ -767,8 +836,10 @@
       "documents Event-Driven Architecture and Event Streams connects event propagation to contextual execution.",
       "documents Runtime Engines and Domain Operating Systems explains capability evaluation through contextual execution.",
       "appliesConcept The research question \"How can an AI understand someone during its very first conversation?\" applies Contextual Execution as part of its current model.",
+      "memberOfCollection Contextual Execution is an explicit member of the Knowledge Hub Fifth Wave collection.",
       "memberOfCollection Contextual Execution is an explicit member of the Knowledge Hub Foundations collection.",
       "memberOfCollection Contextual Execution is an explicit member of the Knowledge Hub Fourth Wave collection.",
+      "documents A2A, Agent Interoperability and Governed Delegation documents Contextual Execution as one of its declared subjects.",
       "documents Microservices, Modular Monoliths and System Boundaries documents Contextual Execution as one of its declared subjects.",
       "documents Redis Streams for Orchestration documents Contextual Execution as one of its declared subjects."
     ],
@@ -784,8 +855,10 @@
       "ea:publication:event-driven-architecture-and-event-streams",
       "ea:publication:runtime-engines-and-domain-operating-systems",
       "ea:researchQuestion:first-conversation-understanding",
+      "ea:collection:knowledge-hub-fifth-wave",
       "ea:collection:knowledge-hub-foundations",
       "ea:collection:knowledge-hub-fourth-wave",
+      "ea:publication:a2a-agent-interoperability-and-governed-delegation",
       "ea:publication:microservices-modular-monoliths-and-system-boundaries",
       "ea:publication:redis-streams-for-orchestration"
     ],
@@ -922,7 +995,8 @@
       "documents Metadata, Cataloguing and Cultural Memory connects metadata to digital preservation and long-term context.",
       "memberOfCollection Digital Preservation is an explicit member of the Knowledge Hub Foundations collection.",
       "memberOfCollection Digital Preservation is an explicit member of the Knowledge Hub Fourth Wave collection.",
-      "documents C2PA Content Credentials and Generative Media Provenance documents Digital Preservation as one of its declared subjects."
+      "documents C2PA Content Credentials and Generative Media Provenance documents Digital Preservation as one of its declared subjects.",
+      "documents EU AI Act Transparency, Content Provenance and Creative Practice documents Digital Preservation as one of its declared subjects."
     ],
     "relatedEntityIds": [
       "ea:publication:iiif-and-compound-cultural-objects",
@@ -935,7 +1009,8 @@
       "ea:publication:metadata-cataloguing-and-cultural-memory",
       "ea:collection:knowledge-hub-foundations",
       "ea:collection:knowledge-hub-fourth-wave",
-      "ea:publication:c2pa-content-credentials-and-generative-media-provenance"
+      "ea:publication:c2pa-content-credentials-and-generative-media-provenance",
+      "ea:publication:eu-ai-act-transparency-content-provenance-and-creative-practice"
     ],
     "status": "active",
     "confidence": "validated",
@@ -1112,6 +1187,7 @@
       "documents How Large Language Models Actually Work situates LLMs within generative AI.",
       "memberOfCollection Generative AI is an explicit member of the Knowledge Hub Second Wave collection.",
       "documents C2PA Content Credentials and Generative Media Provenance documents Generative AI as one of its declared subjects.",
+      "documents EU AI Act Transparency, Content Provenance and Creative Practice documents Generative AI as one of its declared subjects.",
       "documents Multimodal AI Across Text, Image, Audio and Video documents Generative AI as one of its declared subjects.",
       "documents WebNN and Local AI in the Browser documents Generative AI as one of its declared subjects."
     ],
@@ -1121,6 +1197,7 @@
       "ea:publication:how-large-language-models-actually-work",
       "ea:collection:knowledge-hub-second-wave",
       "ea:publication:c2pa-content-credentials-and-generative-media-provenance",
+      "ea:publication:eu-ai-act-transparency-content-provenance-and-creative-practice",
       "ea:publication:multimodal-ai-across-text-image-audio-and-video",
       "ea:publication:webnn-and-local-ai-in-the-browser"
     ],
@@ -1306,7 +1383,8 @@
       "appliesConcept Voice Capture Studio applies HCI principles by making recording modes, environment checks, local storage and quality gates visible before capture.",
       "appliesConcept The research question \"How can an AI understand someone during its very first conversation?\" applies Human Computer Interaction as part of its current model.",
       "memberOfCollection Human Computer Interaction is an explicit member of the Knowledge Hub Second Wave collection.",
-      "memberOfCollection Human Computer Interaction is an explicit member of the Voice Capture Studio Collection collection."
+      "memberOfCollection Human Computer Interaction is an explicit member of the Voice Capture Studio Collection collection.",
+      "documents WebMCP and the Agentic Web documents Human Computer Interaction as one of its declared subjects."
     ],
     "relatedEntityIds": [
       "ea:publication:webnn-and-local-ai-in-the-browser",
@@ -1317,7 +1395,8 @@
       "ea:project:voice-capture-studio",
       "ea:researchQuestion:first-conversation-understanding",
       "ea:collection:knowledge-hub-second-wave",
-      "ea:collection:voice-capture-studio"
+      "ea:collection:voice-capture-studio",
+      "ea:publication:webmcp-and-the-agentic-web"
     ],
     "status": "active",
     "confidence": "canonical",
@@ -1544,7 +1623,8 @@
       "appliesConcept The research question \"How can software become explainable through its own knowledge graph?\" applies Linked Data as part of its current model.",
       "memberOfCollection Linked Data is an explicit member of the Knowledge Hub Foundations collection.",
       "documents IIIF and Compound Cultural Objects documents Linked Data as one of its declared subjects.",
-      "documents Verifiable Credentials for Cultural Archives and Creator Identity documents Linked Data as one of its declared subjects."
+      "documents Verifiable Credentials for Cultural Archives and Creator Identity documents Linked Data as one of its declared subjects.",
+      "documents WebMCP and the Agentic Web documents Linked Data as one of its declared subjects."
     ],
     "relatedEntityIds": [
       "ea:publication:ai-search-structured-content-and-knowledge-graph-seo",
@@ -1553,7 +1633,8 @@
       "ea:researchQuestion:self-explaining-knowledge-graph-software",
       "ea:collection:knowledge-hub-foundations",
       "ea:publication:iiif-and-compound-cultural-objects",
-      "ea:publication:verifiable-credentials-for-cultural-archives-and-creator-identity"
+      "ea:publication:verifiable-credentials-for-cultural-archives-and-creator-identity",
+      "ea:publication:webmcp-and-the-agentic-web"
     ],
     "status": "active",
     "confidence": "validated",
@@ -1634,6 +1715,7 @@
       "memberOfCollection Metadata is an explicit member of the Knowledge Hub Second Wave collection.",
       "memberOfCollection Metadata is an explicit member of the Voice Capture Studio Collection collection.",
       "documents AI Search, Structured Content and Knowledge Graph SEO documents Metadata as one of its declared subjects.",
+      "documents EU AI Act Transparency, Content Provenance and Creative Practice documents Metadata as one of its declared subjects.",
       "documents IIIF and Compound Cultural Objects documents Metadata as one of its declared subjects."
     ],
     "relatedEntityIds": [
@@ -1648,6 +1730,7 @@
       "ea:collection:knowledge-hub-second-wave",
       "ea:collection:voice-capture-studio",
       "ea:publication:ai-search-structured-content-and-knowledge-graph-seo",
+      "ea:publication:eu-ai-act-transparency-content-provenance-and-creative-practice",
       "ea:publication:iiif-and-compound-cultural-objects"
     ],
     "status": "active",
@@ -2017,9 +2100,12 @@
       "appliesConcept Voice Capture Studio applies provenance concerns by keeping prompt identifiers, corpus versions, speaker context and export manifests visible.",
       "appliesConcept The research question \"How can software become explainable through its own knowledge graph?\" applies Provenance as part of its current model.",
       "appliesConcept The research question \"How can speech datasets become reproducible, structured and privacy-first?\" applies Provenance as part of its current model.",
+      "memberOfCollection Provenance is an explicit member of the Knowledge Hub Fifth Wave collection.",
       "memberOfCollection Provenance is an explicit member of the Knowledge Hub Foundations collection.",
       "memberOfCollection Provenance is an explicit member of the Knowledge Hub Fourth Wave collection.",
       "memberOfCollection Provenance is an explicit member of the Voice Capture Studio Collection collection.",
+      "documents A2A, Agent Interoperability and Governed Delegation documents Provenance as one of its declared subjects.",
+      "documents EU AI Act Transparency, Content Provenance and Creative Practice documents Provenance as one of its declared subjects.",
       "documents Why Graphs Are More Powerful Than Folders documents Provenance as one of its declared subjects."
     ],
     "relatedEntityIds": [
@@ -2038,9 +2124,12 @@
       "ea:project:voice-capture-studio",
       "ea:researchQuestion:self-explaining-knowledge-graph-software",
       "ea:researchQuestion:speech-dataset-reproducibility",
+      "ea:collection:knowledge-hub-fifth-wave",
       "ea:collection:knowledge-hub-foundations",
       "ea:collection:knowledge-hub-fourth-wave",
       "ea:collection:voice-capture-studio",
+      "ea:publication:a2a-agent-interoperability-and-governed-delegation",
+      "ea:publication:eu-ai-act-transparency-content-provenance-and-creative-practice",
       "ea:publication:why-graphs-are-more-powerful-than-folders"
     ],
     "status": "active",
@@ -2624,6 +2713,65 @@
     "modifiedAt": "2026-07-09"
   },
   {
+    "id": "ea:collection:knowledge-hub-fifth-wave-fr",
+    "locale": "fr",
+    "route": "/fr/archive/collections/knowledge-hub-fifth-wave/",
+    "type": "collection",
+    "title": "Hub de connaissance, cinquième vague",
+    "alternateNames": [],
+    "abstract": "La cinquième vague relie délégation A2A, outils WebMCP et transparence européenne des contenus synthétiques aux recherches Electronic Artefacts sur graphes, provenance et runtimes gouvernés.",
+    "headings": [
+      "Thèse",
+      "Trois signaux actuels",
+      "Position éditoriale",
+      "Chemins dans le graphe",
+      "Suite"
+    ],
+    "body": "Thèse Le tournant agentique ne raconte pas seulement des modèles plus capables. Il crée de nouvelles frontières entre agents, interfaces de navigateur, éditeurs et publics. Ces frontières ont besoin de protocoles, mais les protocoles ne deviennent utiles qu’avec autorité, provenance et dossiers publics intelligibles. Trois signaux actuels A2A formalise la collaboration entre applications agentiques indépendantes. WebMCP explore des actions structurées dans le navigateur plutôt qu’un pilotage opaque de l’écran. Le cadre européen transforme provenance et information sur les contenus synthétiques en problème d’implémentation immédiat. Ensemble, ils décrivent un seul système : délégation en amont, action dans l’interface et responsabilité au moment de publier. Position éditoriale La collection évite prévisions et classements de produits. Chaque article sépare spécifications implémentées, propositions expérimentales et obligations réglementaires. Les sources primaires sont traduites en conséquences de conception pour VASTE, le Knowledge Hub et la production culturelle Electronic Artefacts. Chemins dans le graphe Les lecteurs architecture passent des agents IA à MCP, A2A et l’exécution contextuelle. Les lecteurs web relient logiciel de navigateur, interaction humain-machine et WebMCP. Les lecteurs culturels relient IA générative, C2PA, provenance, Palimpsests et transparence publique. Suite La collection devra évoluer si A2A ou WebMCP franchit un vrai seuil de maturité et lorsque les orientations européennes finales modifieront la lecture opérationnelle. Les prochains ajouts doivent répondre à des preuves, pas à un quota éditorial.",
+    "tags": [
+      "hub de connaissance",
+      "cinquième vague",
+      "interopérabilité agentique",
+      "web agentique",
+      "transparence de l’IA",
+      "Provenance"
+    ],
+    "questions": [],
+    "relationLabels": [
+      "memberOfCollection A2A, Agent Interoperability and Governed Delegation is an explicit member of the Knowledge Hub Fifth Wave collection.",
+      "memberOfCollection WebMCP and the Agentic Web is an explicit member of the Knowledge Hub Fifth Wave collection.",
+      "memberOfCollection EU AI Act Transparency, Content Provenance and Creative Practice is an explicit member of the Knowledge Hub Fifth Wave collection.",
+      "memberOfCollection Agent2Agent Protocol is an explicit member of the Knowledge Hub Fifth Wave collection.",
+      "memberOfCollection WebMCP is an explicit member of the Knowledge Hub Fifth Wave collection.",
+      "memberOfCollection Model Context Protocol is an explicit member of the Knowledge Hub Fifth Wave collection.",
+      "memberOfCollection C2PA is an explicit member of the Knowledge Hub Fifth Wave collection.",
+      "memberOfCollection AI Agent is an explicit member of the Knowledge Hub Fifth Wave collection.",
+      "memberOfCollection Browser Software is an explicit member of the Knowledge Hub Fifth Wave collection.",
+      "memberOfCollection Contextual Execution is an explicit member of the Knowledge Hub Fifth Wave collection.",
+      "memberOfCollection Provenance is an explicit member of the Knowledge Hub Fifth Wave collection.",
+      "memberOfCollection VASTE is an explicit member of the Knowledge Hub Fifth Wave collection.",
+      "memberOfCollection Palimpsests is an explicit member of the Knowledge Hub Fifth Wave collection."
+    ],
+    "relatedEntityIds": [
+      "ea:publication:a2a-agent-interoperability-and-governed-delegation",
+      "ea:publication:webmcp-and-the-agentic-web",
+      "ea:publication:eu-ai-act-transparency-content-provenance-and-creative-practice",
+      "ea:technology:agent2agent-protocol",
+      "ea:technology:webmcp",
+      "ea:technology:model-context-protocol",
+      "ea:technology:c2pa",
+      "ea:concept:ai-agent",
+      "ea:concept:browser-software",
+      "ea:concept:contextual-execution",
+      "ea:concept:provenance",
+      "ea:program:vaste",
+      "ea:project:palimpsests"
+    ],
+    "status": "active",
+    "confidence": "published",
+    "modifiedAt": "2026-07-12"
+  },
+  {
     "id": "ea:collection:knowledge-hub-foundations-fr",
     "locale": "fr",
     "route": "/fr/archive/collections/knowledge-hub-foundations/",
@@ -3107,8 +3255,11 @@
       "documents Prompt Injection and Trust Boundaries in AI Knowledge Systems documents prompt-injection risks for AI agents.",
       "documents AI Agents vs AI Workflows documents model-directed agency and deterministic workflow boundaries.",
       "appliesConcept The research question \"How can an AI understand someone during its very first conversation?\" applies AI Agent as part of its current model.",
+      "memberOfCollection AI Agent is an explicit member of the Knowledge Hub Fifth Wave collection.",
       "memberOfCollection AI Agent is an explicit member of the Knowledge Hub Fourth Wave collection.",
-      "memberOfCollection AI Agent is an explicit member of the Knowledge Hub Third Wave collection."
+      "memberOfCollection AI Agent is an explicit member of the Knowledge Hub Third Wave collection.",
+      "documents A2A, Agent Interoperability and Governed Delegation documents AI Agent as one of its declared subjects.",
+      "documents WebMCP and the Agentic Web documents AI Agent as one of its declared subjects."
     ],
     "relatedEntityIds": [
       "ea:publication:model-context-protocol-and-tool-using-ai-systems",
@@ -3116,8 +3267,11 @@
       "ea:publication:prompt-injection-and-trust-boundaries-in-ai-knowledge-systems",
       "ea:publication:ai-agents-vs-ai-workflows",
       "ea:researchQuestion:first-conversation-understanding",
+      "ea:collection:knowledge-hub-fifth-wave",
       "ea:collection:knowledge-hub-fourth-wave",
-      "ea:collection:knowledge-hub-third-wave"
+      "ea:collection:knowledge-hub-third-wave",
+      "ea:publication:a2a-agent-interoperability-and-governed-delegation",
+      "ea:publication:webmcp-and-the-agentic-web"
     ],
     "status": "active",
     "confidence": "validated",
@@ -3263,12 +3417,16 @@
     "relationLabels": [
       "appliesConcept Voice Capture Studio applies browser-software principles by running as a static web application with local storage, microphone access and explicit exports.",
       "appliesConcept The research question \"How can speech datasets become reproducible, structured and privacy-first?\" applies Browser Software as part of its current model.",
-      "memberOfCollection Browser Software is an explicit member of the Voice Capture Studio Collection collection."
+      "memberOfCollection Browser Software is an explicit member of the Knowledge Hub Fifth Wave collection.",
+      "memberOfCollection Browser Software is an explicit member of the Voice Capture Studio Collection collection.",
+      "documents WebMCP and the Agentic Web documents Browser Software as one of its declared subjects."
     ],
     "relatedEntityIds": [
       "ea:project:voice-capture-studio",
       "ea:researchQuestion:speech-dataset-reproducibility",
-      "ea:collection:voice-capture-studio"
+      "ea:collection:knowledge-hub-fifth-wave",
+      "ea:collection:voice-capture-studio",
+      "ea:publication:webmcp-and-the-agentic-web"
     ],
     "status": "active",
     "confidence": "validated",
@@ -3313,8 +3471,10 @@
       "documents Event-Driven Architecture and Event Streams connects event propagation to contextual execution.",
       "documents Runtime Engines and Domain Operating Systems explains capability evaluation through contextual execution.",
       "appliesConcept The research question \"How can an AI understand someone during its very first conversation?\" applies Contextual Execution as part of its current model.",
+      "memberOfCollection Contextual Execution is an explicit member of the Knowledge Hub Fifth Wave collection.",
       "memberOfCollection Contextual Execution is an explicit member of the Knowledge Hub Foundations collection.",
       "memberOfCollection Contextual Execution is an explicit member of the Knowledge Hub Fourth Wave collection.",
+      "documents A2A, Agent Interoperability and Governed Delegation documents Contextual Execution as one of its declared subjects.",
       "documents Microservices, Modular Monoliths and System Boundaries documents Contextual Execution as one of its declared subjects.",
       "documents Redis Streams for Orchestration documents Contextual Execution as one of its declared subjects."
     ],
@@ -3330,8 +3490,10 @@
       "ea:publication:event-driven-architecture-and-event-streams",
       "ea:publication:runtime-engines-and-domain-operating-systems",
       "ea:researchQuestion:first-conversation-understanding",
+      "ea:collection:knowledge-hub-fifth-wave",
       "ea:collection:knowledge-hub-foundations",
       "ea:collection:knowledge-hub-fourth-wave",
+      "ea:publication:a2a-agent-interoperability-and-governed-delegation",
       "ea:publication:microservices-modular-monoliths-and-system-boundaries",
       "ea:publication:redis-streams-for-orchestration"
     ],
@@ -3460,7 +3622,8 @@
       "documents Metadata, Cataloguing and Cultural Memory connects metadata to digital preservation and long-term context.",
       "memberOfCollection Digital Preservation is an explicit member of the Knowledge Hub Foundations collection.",
       "memberOfCollection Digital Preservation is an explicit member of the Knowledge Hub Fourth Wave collection.",
-      "documents C2PA Content Credentials and Generative Media Provenance documents Digital Preservation as one of its declared subjects."
+      "documents C2PA Content Credentials and Generative Media Provenance documents Digital Preservation as one of its declared subjects.",
+      "documents EU AI Act Transparency, Content Provenance and Creative Practice documents Digital Preservation as one of its declared subjects."
     ],
     "relatedEntityIds": [
       "ea:publication:iiif-and-compound-cultural-objects",
@@ -3473,7 +3636,8 @@
       "ea:publication:metadata-cataloguing-and-cultural-memory",
       "ea:collection:knowledge-hub-foundations",
       "ea:collection:knowledge-hub-fourth-wave",
-      "ea:publication:c2pa-content-credentials-and-generative-media-provenance"
+      "ea:publication:c2pa-content-credentials-and-generative-media-provenance",
+      "ea:publication:eu-ai-act-transparency-content-provenance-and-creative-practice"
     ],
     "status": "active",
     "confidence": "validated",
@@ -3644,6 +3808,7 @@
       "documents How Large Language Models Actually Work situates LLMs within generative AI.",
       "memberOfCollection Generative AI is an explicit member of the Knowledge Hub Second Wave collection.",
       "documents C2PA Content Credentials and Generative Media Provenance documents Generative AI as one of its declared subjects.",
+      "documents EU AI Act Transparency, Content Provenance and Creative Practice documents Generative AI as one of its declared subjects.",
       "documents Multimodal AI Across Text, Image, Audio and Video documents Generative AI as one of its declared subjects.",
       "documents WebNN and Local AI in the Browser documents Generative AI as one of its declared subjects."
     ],
@@ -3653,6 +3818,7 @@
       "ea:publication:how-large-language-models-actually-work",
       "ea:collection:knowledge-hub-second-wave",
       "ea:publication:c2pa-content-credentials-and-generative-media-provenance",
+      "ea:publication:eu-ai-act-transparency-content-provenance-and-creative-practice",
       "ea:publication:multimodal-ai-across-text-image-audio-and-video",
       "ea:publication:webnn-and-local-ai-in-the-browser"
     ],
@@ -3834,7 +4000,8 @@
       "appliesConcept Voice Capture Studio applies HCI principles by making recording modes, environment checks, local storage and quality gates visible before capture.",
       "appliesConcept The research question \"How can an AI understand someone during its very first conversation?\" applies Human Computer Interaction as part of its current model.",
       "memberOfCollection Human Computer Interaction is an explicit member of the Knowledge Hub Second Wave collection.",
-      "memberOfCollection Human Computer Interaction is an explicit member of the Voice Capture Studio Collection collection."
+      "memberOfCollection Human Computer Interaction is an explicit member of the Voice Capture Studio Collection collection.",
+      "documents WebMCP and the Agentic Web documents Human Computer Interaction as one of its declared subjects."
     ],
     "relatedEntityIds": [
       "ea:publication:webnn-and-local-ai-in-the-browser",
@@ -3845,7 +4012,8 @@
       "ea:project:voice-capture-studio",
       "ea:researchQuestion:first-conversation-understanding",
       "ea:collection:knowledge-hub-second-wave",
-      "ea:collection:voice-capture-studio"
+      "ea:collection:voice-capture-studio",
+      "ea:publication:webmcp-and-the-agentic-web"
     ],
     "status": "active",
     "confidence": "canonical",
@@ -4065,7 +4233,8 @@
       "appliesConcept The research question \"How can software become explainable through its own knowledge graph?\" applies Linked Data as part of its current model.",
       "memberOfCollection Linked Data is an explicit member of the Knowledge Hub Foundations collection.",
       "documents IIIF and Compound Cultural Objects documents Linked Data as one of its declared subjects.",
-      "documents Verifiable Credentials for Cultural Archives and Creator Identity documents Linked Data as one of its declared subjects."
+      "documents Verifiable Credentials for Cultural Archives and Creator Identity documents Linked Data as one of its declared subjects.",
+      "documents WebMCP and the Agentic Web documents Linked Data as one of its declared subjects."
     ],
     "relatedEntityIds": [
       "ea:publication:ai-search-structured-content-and-knowledge-graph-seo",
@@ -4074,7 +4243,8 @@
       "ea:researchQuestion:self-explaining-knowledge-graph-software",
       "ea:collection:knowledge-hub-foundations",
       "ea:publication:iiif-and-compound-cultural-objects",
-      "ea:publication:verifiable-credentials-for-cultural-archives-and-creator-identity"
+      "ea:publication:verifiable-credentials-for-cultural-archives-and-creator-identity",
+      "ea:publication:webmcp-and-the-agentic-web"
     ],
     "status": "active",
     "confidence": "validated",
@@ -4154,6 +4324,7 @@
       "memberOfCollection Metadata is an explicit member of the Knowledge Hub Second Wave collection.",
       "memberOfCollection Metadata is an explicit member of the Voice Capture Studio Collection collection.",
       "documents AI Search, Structured Content and Knowledge Graph SEO documents Metadata as one of its declared subjects.",
+      "documents EU AI Act Transparency, Content Provenance and Creative Practice documents Metadata as one of its declared subjects.",
       "documents IIIF and Compound Cultural Objects documents Metadata as one of its declared subjects."
     ],
     "relatedEntityIds": [
@@ -4168,6 +4339,7 @@
       "ea:collection:knowledge-hub-second-wave",
       "ea:collection:voice-capture-studio",
       "ea:publication:ai-search-structured-content-and-knowledge-graph-seo",
+      "ea:publication:eu-ai-act-transparency-content-provenance-and-creative-practice",
       "ea:publication:iiif-and-compound-cultural-objects"
     ],
     "status": "active",
@@ -4524,9 +4696,12 @@
       "appliesConcept Voice Capture Studio applies provenance concerns by keeping prompt identifiers, corpus versions, speaker context and export manifests visible.",
       "appliesConcept The research question \"How can software become explainable through its own knowledge graph?\" applies Provenance as part of its current model.",
       "appliesConcept The research question \"How can speech datasets become reproducible, structured and privacy-first?\" applies Provenance as part of its current model.",
+      "memberOfCollection Provenance is an explicit member of the Knowledge Hub Fifth Wave collection.",
       "memberOfCollection Provenance is an explicit member of the Knowledge Hub Foundations collection.",
       "memberOfCollection Provenance is an explicit member of the Knowledge Hub Fourth Wave collection.",
       "memberOfCollection Provenance is an explicit member of the Voice Capture Studio Collection collection.",
+      "documents A2A, Agent Interoperability and Governed Delegation documents Provenance as one of its declared subjects.",
+      "documents EU AI Act Transparency, Content Provenance and Creative Practice documents Provenance as one of its declared subjects.",
       "documents Why Graphs Are More Powerful Than Folders documents Provenance as one of its declared subjects."
     ],
     "relatedEntityIds": [
@@ -4545,9 +4720,12 @@
       "ea:project:voice-capture-studio",
       "ea:researchQuestion:self-explaining-knowledge-graph-software",
       "ea:researchQuestion:speech-dataset-reproducibility",
+      "ea:collection:knowledge-hub-fifth-wave",
       "ea:collection:knowledge-hub-foundations",
       "ea:collection:knowledge-hub-fourth-wave",
       "ea:collection:voice-capture-studio",
+      "ea:publication:a2a-agent-interoperability-and-governed-delegation",
+      "ea:publication:eu-ai-act-transparency-content-provenance-and-creative-practice",
       "ea:publication:why-graphs-are-more-powerful-than-folders"
     ],
     "status": "active",
@@ -5255,7 +5433,9 @@
       "partOf VAB is the Assisted Boot orchestration path used to propose and materialize a governed VASTE System.",
       "evidencedBy The VASTE Validation Record maps major public claims to internal contracts, implementation, tests, commits and limitations.",
       "implementedBy VASTE is listed as a current software or project answer for the research question \"How can an AI understand someone during its very first conversation?\".",
-      "implementedBy VASTE is listed as a current software or project answer for the research question \"How can software become explainable through its own knowledge graph?\"."
+      "implementedBy VASTE is listed as a current software or project answer for the research question \"How can software become explainable through its own knowledge graph?\".",
+      "memberOfCollection VASTE is an explicit member of the Knowledge Hub Fifth Wave collection.",
+      "documents A2A, Agent Interoperability and Governed Delegation documents VASTE as one of its declared subjects."
     ],
     "relatedEntityIds": [
       "ea:publication:foundational-lineage-001",
@@ -5288,7 +5468,9 @@
       "ea:concept:vab-and-genesis",
       "ea:artefact:vaste-validation-record",
       "ea:researchQuestion:first-conversation-understanding",
-      "ea:researchQuestion:self-explaining-knowledge-graph-software"
+      "ea:researchQuestion:self-explaining-knowledge-graph-software",
+      "ea:collection:knowledge-hub-fifth-wave",
+      "ea:publication:a2a-agent-interoperability-and-governed-delegation"
     ],
     "status": "development",
     "confidence": "validated",
@@ -5329,7 +5511,9 @@
       "documents Generative Systems, Cybernetics and Creative Coding links Palimpsests to repetition, residue and transformation.",
       "documents Signal Archaeology, Audio Memory and Machine Listening links Palimpsests to audio memory and sonic residue.",
       "documents Multimodal AI Across Text, Image, Audio and Video uses Palimpsests as a compound media and provenance context.",
-      "memberOfCollection Palimpsests is an explicit member of the Knowledge Hub Foundations collection."
+      "memberOfCollection Palimpsests is an explicit member of the Knowledge Hub Fifth Wave collection.",
+      "memberOfCollection Palimpsests is an explicit member of the Knowledge Hub Foundations collection.",
+      "documents EU AI Act Transparency, Content Provenance and Creative Practice documents Palimpsests as one of its declared subjects."
     ],
     "relatedEntityIds": [
       "ea:publication:c2pa-content-credentials-and-generative-media-provenance",
@@ -5341,7 +5525,9 @@
       "ea:publication:generative-systems-cybernetics-and-creative-coding",
       "ea:publication:signal-archaeology-audio-memory-and-machine-listening",
       "ea:publication:multimodal-ai-across-text-image-audio-and-video",
-      "ea:collection:knowledge-hub-foundations"
+      "ea:collection:knowledge-hub-fifth-wave",
+      "ea:collection:knowledge-hub-foundations",
+      "ea:publication:eu-ai-act-transparency-content-provenance-and-creative-practice"
     ],
     "status": "active",
     "confidence": "published",
@@ -5498,6 +5684,58 @@
     "status": "active",
     "confidence": "published",
     "modifiedAt": "2026-07-09"
+  },
+  {
+    "id": "ea:publication:a2a-agent-interoperability-and-governed-delegation-fr",
+    "locale": "fr",
+    "route": "/fr/publications/a2a-agent-interoperability-and-governed-delegation/",
+    "type": "publication",
+    "format": "technicalArticle",
+    "title": "A2A, interopérabilité des agents et délégation gouvernée",
+    "alternateNames": [],
+    "abstract": "Analyse pratique du protocole Agent2Agent, de la découverte d’agents, du cycle des tâches, des artefacts et de la gouvernance nécessaire avant de déléguer entre agents IA indépendants.",
+    "headings": [
+      "Problème",
+      "Agent Cards et découverte",
+      "Architecture",
+      "A2A et MCP",
+      "Mise en œuvre",
+      "Conséquences pour VASTE",
+      "Éléments de preuve",
+      "Limites",
+      "À lire ensuite",
+      "Références"
+    ],
+    "body": "Problème Les agents IA passent d’assistants isolés à des systèmes capables de se répartir du travail. La difficulté n’est pas de faire circuler du JSON, mais de préserver le sens lorsque modèles, fournisseurs et runtimes différents négocient capacités, progression et résultats. Agent2Agent, ou A2A, traite cette couche d’échange. Le protocole ouvert décrit comment un agent annonce ses capacités, reçoit des messages, suit une tâche et renvoie des artefacts. L’agent distant peut rester opaque : collaborer ne doit pas exiger l’accès à sa mémoire privée, son prompt ou ses outils internes. Agent Cards et découverte Une Agent Card est la description publique d’un point d’accès A2A. Elle peut préciser identité, compétences, modes d’interaction, endpoint et authentification attendue. Elle rend la découverte lisible par machine, mais reste une déclaration, pas une attestation. Le client doit encore établir qui l’a publiée, si l’endpoint est fiable et quelles compétences sont autorisées. La découverte comporte donc deux couches : le protocole dit ce que l’agent affirme savoir faire ; la gouvernance décide sous quelle identité et quelle autorité cette affirmation peut être utilisée. Architecture A2A distingue les messages conversationnels des tâches dont l’état évolue. Cette séparation convient aux travaux qui s’interrompent, demandent une précision ou produisent plusieurs livrables. Les messages portent instructions et clarifications ; les artefacts représentent textes, fichiers ou données structurées. Un vocabulaire partagé évite à chaque intégration d’inventer son cycle. Mais un état commun ne garantit pas une sémantique commune. « Terminé » signifie que l’exécution distante s’est achevée, pas que le résultat est vrai, sûr, licencié ou publiable. A2A et MCP MCP et A2A sont complémentaires. MCP expose du contexte et des outils à une application IA ; A2A fait collaborer deux applications agentiques. Un agent peut employer MCP en interne et A2A à sa frontière, sans partager le même modèle de permissions. Cette distinction limite le rayon d’action. L’agent A2A distant ne doit pas hériter de tous les outils MCP du délégant. Chaque délégation mérite une enveloppe de capacités plus étroite et explicite. Mise en œuvre Une délégation sûre commence par un contrat de tâche : objectif, provenance des entrées, opérations permises, types d’artefacts, expiration, budget et politique de revue. Ce contrat relie acteur demandeur, agent distant, tâche et résultats à des identifiants stables. Chaque transition doit rester observable. Une trace durable consigne qui a délégué, quelle version de l’Agent Card a servi, quelles données ont franchi la frontière, quels états se sont succédé et quel artefact a été accepté. L’audit utile n’exige pas de conserver tous les prompts privés. Conséquences pour VASTE Pour VASTE, A2A est un protocole de bord. Un runtime pourrait projeter une capacité gouvernée dans une Agent Card, traduire une tâche reçue en entités et événements typés, puis retourner un artefact avec sa provenance. Le runtime — pas le protocole distant — validerait droits de l’acteur, contraintes relationnelles et état de publication. La règle de conception est nette : l’interopérabilité ouvre un canal, l’autorité reste locale. Un agent peut proposer ou exécuter un travail délimité ; il ne définit pas le sens du graphe qu’il rejoint. Éléments de preuve La spécification A2A définit Agent Cards, messages, tâches, artefacts et transports. La gouvernance via la Linux Foundation établit un cadre de projet ouvert ; elle ne dispense pas de vérifier chaque implémentation et sa politique de confiance. Limites A2A évolue encore et son adoption ne prouve pas une compatibilité de bout en bout. Authentification, confiance de service, injection de prompt, résidence des données, coûts et évaluation restent à la charge des applications. Les architectures multi-agents ajoutent aussi boucles, doublons, contradictions et relances en cascade. Le protocole est utile lorsqu’il remplace une vraie couture d’intégration. Là où une API déterministe suffit, ajouter une délégation agent-à-agent ne fait qu’augmenter l’incertitude. À lire ensuite Poursuivre avec Model Context Protocol et systèmes d’IA utilisant des outils , Agents IA et workflows IA et Exécution contextuelle et runtimes de graphe . Références A2A Protocol Project. Spécification Agent2Agent, dernière version consultée le 12 juillet 2026. Google for Developers. « Google Cloud donates A2A to Linux Foundation », 23 juin 2025.",
+    "tags": [
+      "A2A",
+      "Agents IA",
+      "interopérabilité des agents",
+      "délégation",
+      "VASTE"
+    ],
+    "questions": [],
+    "relationLabels": [
+      "memberOfCollection A2A, Agent Interoperability and Governed Delegation is an explicit member of the Knowledge Hub Fifth Wave collection.",
+      "documents A2A, Agent Interoperability and Governed Delegation documents Agent2Agent Protocol as one of its declared subjects.",
+      "documents A2A, Agent Interoperability and Governed Delegation documents Model Context Protocol as one of its declared subjects.",
+      "documents A2A, Agent Interoperability and Governed Delegation documents AI Agent as one of its declared subjects.",
+      "documents A2A, Agent Interoperability and Governed Delegation documents Contextual Execution as one of its declared subjects.",
+      "documents A2A, Agent Interoperability and Governed Delegation documents Provenance as one of its declared subjects.",
+      "documents A2A, Agent Interoperability and Governed Delegation documents VASTE as one of its declared subjects."
+    ],
+    "relatedEntityIds": [
+      "ea:collection:knowledge-hub-fifth-wave",
+      "ea:technology:agent2agent-protocol",
+      "ea:technology:model-context-protocol",
+      "ea:concept:ai-agent",
+      "ea:concept:contextual-execution",
+      "ea:concept:provenance",
+      "ea:program:vaste"
+    ],
+    "status": "active",
+    "confidence": "published",
+    "modifiedAt": "2026-07-12"
   },
   {
     "id": "ea:publication:ai-agents-vs-ai-workflows-fr",
@@ -5938,6 +6176,59 @@
       "ea:collection:knowledge-hub-foundations",
       "ea:collection:knowledge-hub-foundations",
       "ea:concept:knowledge-graph"
+    ],
+    "status": "active",
+    "confidence": "published",
+    "modifiedAt": "2026-07-12"
+  },
+  {
+    "id": "ea:publication:eu-ai-act-transparency-content-provenance-and-creative-practice-fr",
+    "locale": "fr",
+    "route": "/fr/publications/eu-ai-act-transparency-content-provenance-and-creative-practice/",
+    "type": "publication",
+    "format": "technicalArticle",
+    "title": "Transparence de l’AI Act, provenance des contenus et pratique créative",
+    "alternateNames": [],
+    "abstract": "Guide sourcé des obligations de transparence de l’AI Act applicables en août 2026, reliant marquage lisible par machine, étiquetage visible, deepfakes, textes d’intérêt public et provenance créative.",
+    "headings": [
+      "Problème",
+      "Architecture",
+      "Fournisseur et déployeur",
+      "Un dossier de provenance créative",
+      "Mise en œuvre",
+      "Enjeux culturels et créatifs",
+      "SEO et découverte",
+      "Éléments de preuve",
+      "Limites",
+      "À lire ensuite",
+      "Références"
+    ],
+    "body": "Problème À partir du 2 août 2026, les obligations de transparence de l’article 50 de l’AI Act s’appliquent à plusieurs usages interactifs et génératifs. Le code de bonnes pratiques publié par la Commission européenne en juin 2026 traduit une partie du cadre en mesures de marquage des sorties générées ou manipulées et d’étiquetage des deepfakes et de certains textes d’intérêt public. Cet article propose une lecture d’implémentation pour les organisations créatives et culturelles, pas un conseil juridique. La leçon centrale est opérationnelle : la transparence ne s’ajoute pas comme un badge en fin de production. Elle doit relier génération, montage, export, publication et conservation. Architecture Le marquage lisible par machine aide les systèmes à détecter un média généré ou manipulé. L’étiquetage visible aide une personne à comprendre ce qu’elle voit. Les couches se complètent sans se remplacer. Les métadonnées peuvent disparaître lors d’une recompression, d’une capture ou d’un transcodage. Une mention visible peut survivre, mais manquer de détails pour une vérification automatisée. Une pratique robuste combine provenance embarquée ou associée et explication en langage clair à proximité du contenu. Fournisseur et déployeur Le cadre distingue les fournisseurs de systèmes IA des déployeurs qui les utilisent. Un fournisseur de modèle ou d’outil créatif peut devoir permettre le marquage et la détection. Un éditeur, studio ou établissement culturel peut devoir étiqueter le deepfake ou la publication d’intérêt public qui en résulte. Une organisation peut occuper plusieurs rôles. Un studio peut développer un système interne, l’opérer pour un client puis publier certaines sorties. Les responsabilités doivent être cartographiées par système et par usage, pas résumées dans une étiquette unique. Un dossier de provenance créative Un bon dossier répond à quelques questions : quel système a participé, quels actifs sources sont entrés, quelles transformations ont suivi, qui a revu le résultat, quels droits s’appliquent et où l’objet final a été publié ? Il distingue génération machine, montage conventionnel et contribution humaine sans réduire la création à un choix binaire. Les Content Credentials C2PA peuvent porter des affirmations signées et un historique de modifications. Elles constituent une infrastructure utile, pas une machine à vérité. Un credential valide indique qui a signé et si les données liées ont changé ; il ne prouve pas l’honnêteté de toutes les déclarations ni qu’un fichier sans marque est synthétique. Mise en œuvre Commencer par inventorier les usages d’IA interactive et de médias génératifs. Attribuer les rôles, types de contenus, contextes de publication et responsables. Pour chaque workflow, définir : un marquage lisible par machine lorsque cela est techniquement possible ; un libellé visible déclenché selon le contenu et son contexte ; un dossier interne durable sur outils, sources, revue et droits ; un repli pour les formats qui suppriment les métadonnées ; une voie de correction ou de retrait si une mention est erronée. Les libellés doivent être précis. « Créé avec l’IA » informe moins que « arrière-plan généré avec un système d’image IA puis monté par le studio ». La mention reste brève au point de consultation et peut renvoyer vers une provenance détaillée. Enjeux culturels et créatifs Musées, labels, archives et studios protègent davantage que la conformité : ils administrent auteur·ices, interprétation et mémoire publique. Sur-étiqueter toute assistance mineure masque l’information importante ; sous-étiqueter une voix synthétique, un visage reconstruit ou une image documentaire fabriquée fragilise la confiance. Une politique éditoriale par risque distingue assistance, génération substantielle, simulation d’identité et affirmation d’intérêt public. Les questions utiles deviennent : qu’est-ce que l’IA a changé, le public peut-il être trompé, et quelle provenance comptera plus tard ? Pour Palimpsests ou de futurs médias ORETH, cela implique de consigner la lignée du matériau généré et traité sans sacrifier le récit artistique. La provenance doit enrichir le contexte de l’œuvre, pas l’aplatir en notice réglementaire. SEO et découverte Un contenu transparent devient aussi plus interprétable par les moteurs et systèmes de récupération lorsque la page expose dates, attribution, sources, légendes et données structurées. Ces signaux ne garantissent aucun classement, mais réduisent l’ambiguïté sur l’éditeur, les affirmations et les modifications. Le meilleur dossier public est multicouche : article lisible, entité structurée, sources citées, URL stable, mention visible et provenance portable. Cette architecture sert d’abord le public et donne aux machines de meilleures preuves. Éléments de preuve La Commission indique que les obligations de transparence de l’article 50 s’appliquent à partir du 2 août 2026 et distingue marquage par les fournisseurs et étiquetage par les déployeurs. C2PA 2.2 apporte une couche technique de provenance ; le code européen fournit un cadre volontaire autour du marquage et de l’information visible. Limites Les orientations réglementaires et l’état de l’art technique évoluent. Avant de s’appuyer sur une checklist, il faut vérifier les lignes directrices finales de la Commission, le statut du code et l’application nationale. Certains systèmes existants bénéficient aussi de transitions. La conformité ne clôt pas la question éthique. Un deepfake techniquement marqué peut encore tromper par son placement ou son cadrage. La transparence doit être évaluée dans le contexte réel du public. À lire ensuite Lire C2PA, Content Credentials et provenance des médias génératifs , Gouvernance responsable de l’IA pour les systèmes créatifs et culturels et Préservation numérique et archives vivantes . Références Commission européenne. Code de bonnes pratiques sur la transparence des contenus générés par l’IA, 10 juin 2026. Commission européenne. Lignes directrices sur les obligations des fournisseurs de modèles d’IA à usage général, consultées le 12 juillet 2026. C2PA. Spécification technique Content Credentials 2.2, 1er mai 2025.",
+    "tags": [
+      "AI Act",
+      "transparence de l’IA",
+      "médias synthétiques",
+      "provenance des contenus",
+      "C2PA"
+    ],
+    "questions": [],
+    "relationLabels": [
+      "memberOfCollection EU AI Act Transparency, Content Provenance and Creative Practice is an explicit member of the Knowledge Hub Fifth Wave collection.",
+      "documents EU AI Act Transparency, Content Provenance and Creative Practice documents C2PA as one of its declared subjects.",
+      "documents EU AI Act Transparency, Content Provenance and Creative Practice documents Provenance as one of its declared subjects.",
+      "documents EU AI Act Transparency, Content Provenance and Creative Practice documents Generative AI as one of its declared subjects.",
+      "documents EU AI Act Transparency, Content Provenance and Creative Practice documents Digital Preservation as one of its declared subjects.",
+      "documents EU AI Act Transparency, Content Provenance and Creative Practice documents Metadata as one of its declared subjects.",
+      "documents EU AI Act Transparency, Content Provenance and Creative Practice documents Palimpsests as one of its declared subjects."
+    ],
+    "relatedEntityIds": [
+      "ea:collection:knowledge-hub-fifth-wave",
+      "ea:technology:c2pa",
+      "ea:concept:provenance",
+      "ea:concept:generative-ai",
+      "ea:concept:digital-preservation",
+      "ea:concept:metadata",
+      "ea:project:palimpsests"
     ],
     "status": "active",
     "confidence": "published",
@@ -7969,6 +8260,59 @@
     "modifiedAt": "2026-07-12"
   },
   {
+    "id": "ea:publication:webmcp-and-the-agentic-web-fr",
+    "locale": "fr",
+    "route": "/fr/publications/webmcp-and-the-agentic-web/",
+    "type": "publication",
+    "format": "technicalArticle",
+    "title": "WebMCP et le web agentique",
+    "alternateNames": [],
+    "abstract": "Guide critique de WebMCP et du web agentique émergent, où les pages exposent des capacités typées aux agents de navigateur tout en préservant interface, origine et contrôle humain.",
+    "headings": [
+      "Problème",
+      "Architecture",
+      "Plus robuste qu’un clic simulé, pas automatiquement sûr",
+      "Origines, iframes et permissions",
+      "L’interface humaine reste première",
+      "Mise en œuvre",
+      "SEO et lisibilité machine",
+      "Éléments de preuve",
+      "Limites",
+      "À lire ensuite",
+      "Références"
+    ],
+    "body": "Problème La plupart des agents de navigateur agissent aujourd’hui comme des utilisateurs pressés. Ils inspectent captures ou arbres d’accessibilité, devinent le contrôle utile puis simulent des clics. L’approche est générale, mais lente et fragile : une refonte, un libellé ambigu ou un composant différé peut rompre le parcours. WebMCP explore un autre contrat : laisser la page déclarer quelques outils structurés. Un agent pourrait invoquer filter-archive , prepare-citation ou add-relation-draft avec des arguments typés, en réutilisant la logique cliente et la session active. Architecture La proposition expérimentale repose sur une interface de contexte au niveau de la page. Les scripts enregistrent des outils nommés avec description, schéma d’entrée et gestionnaire d’exécution. Une voie déclarative cherche à transformer les formulaires HTML ordinaires en capacités équivalentes, sans dupliquer leur comportement. Le navigateur arbitre découverte et invocation. La page conserve ainsi son origine, son cycle de vie et son état visible. Contrairement à une intégration backend distante, l’outil intégré agit sur le document que l’utilisateur regarde. Plus robuste qu’un clic simulé, pas automatiquement sûr Un outil typé est moins ambigu qu’une coordonnée, mais ses conséquences peuvent être plus larges. Un clic reste contraint par l’interface ; un outil peut condenser plusieurs opérations. Son schéma doit donc définir entrées étroites, sorties prévisibles, validation et effets de bord. Les lectures constituent un bon départ. Recherche, filtrage, explication et préparation de brouillon apportent de la valeur sans valider silencieusement une transaction. Toute action destructive, financière, juridique ou éditoriale devrait déclencher une confirmation native indiquant précisément le changement. Origines, iframes et permissions La sécurité du Web repose sur origines, contextes de navigation et permissions. Les capacités agentiques doivent suivre ces frontières. Les iframes inter-origines posent des questions concrètes : quel document a enregistré l’outil, quel agent le découvre et quelle session utilisateur porte l’autorité ? Le brouillon aborde politique de permissions et exposition sélective, mais plusieurs détails restent ouverts. Cette incertitude invite à prototyper prudemment, pas à présenter la proposition comme un standard stabilisé. L’interface humaine reste première Le web agentique ne doit pas devenir un second Web réservé aux machines. HTML sémantique, clavier, libellés, focus et erreurs claires servent humains, technologies d’assistance, moteurs de recherche et agents. Les outils structurés complètent ces bases ; ils ne réparent pas un produit inaccessible. La meilleure implémentation partage une opération métier entre interface humaine, sémantique accessible et outil agentique. Chaque surface l’exprime différemment sans dupliquer la règle sous-jacente. Mise en œuvre Pour un graphe, les outils de page peuvent proposer des opérations précises : récupérer un voisinage, comparer deux affirmations, exporter une citation ou préparer une relation. Identifiants stables et provenance facilitent l’évaluation par rapport à du texte extrait d’une carte visuelle. Electronic Artefacts pourrait exposer des outils de lecture du Knowledge Hub tout en maintenant contenus canoniques, JSON-LD et navigation ordinaire comme vérité publique. VASTE pourrait valider une relation proposée sans autoriser sa publication. SEO et lisibilité machine WebMCP n’est pas un raccourci SEO. La visibilité dépend toujours de pages explorables, titres précis, liens internes, données structurées, preuves et prose utile. Les outils pilotent des actions dans une session active ; ils ne remplacent pas l’architecture indexable. Le recouvrement est conceptuel : moteurs et agents profitent d’entités, relations et sources explicites. Un site fondé sur des objets de connaissance stables est mieux préparé à la recherche humaine, à la récupération IA et aux futurs outils de navigateur qu’un site dont le sens n’existe que dans sa mise en page. Éléments de preuve Le dépôt WebMCP documente l’enregistrement impératif, une voie déclarative pour les formulaires et des questions ouvertes de sécurité et de confidentialité. Les échanges communautaires W3C de 2026 le situent dans un espace de standardisation émergent, pas comme une Recommandation achevée. Limites L’API reste expérimentale. Confirmations, schémas de sortie, streaming, navigation pendant l’exécution et exposition aux agents embarqués sont encore discutés. Le support navigateur et la compatibilité durable ne sont pas acquis. WebMCP doit être lu comme une direction de recherche porteuse d’un principe utile : exposer la plus petite capacité significative, préserver le contexte visible et laisser le navigateur faire respecter les frontières qu’il connaît déjà. À lire ensuite Voir Model Context Protocol et systèmes d’IA utilisant des outils , Interaction humain-machine pour les outils créatifs et Recherche IA, contenu structuré et SEO des graphes de connaissance . Références W3C Web Machine Learning Community Group. Dépôt et document d’orientation WebMCP, consultés le 12 juillet 2026. W3C. Réunion de l’AI Agent Protocol Community Group, 6 mai 2026.",
+    "tags": [
+      "WebMCP",
+      "web agentique",
+      "agents de navigateur",
+      "collaboration humain-agent",
+      "standards du Web"
+    ],
+    "questions": [],
+    "relationLabels": [
+      "memberOfCollection WebMCP and the Agentic Web is an explicit member of the Knowledge Hub Fifth Wave collection.",
+      "documents WebMCP and the Agentic Web documents WebMCP as one of its declared subjects.",
+      "documents WebMCP and the Agentic Web documents Model Context Protocol as one of its declared subjects.",
+      "documents WebMCP and the Agentic Web documents Browser Software as one of its declared subjects.",
+      "documents WebMCP and the Agentic Web documents Human Computer Interaction as one of its declared subjects.",
+      "documents WebMCP and the Agentic Web documents AI Agent as one of its declared subjects.",
+      "documents WebMCP and the Agentic Web documents Linked Data as one of its declared subjects."
+    ],
+    "relatedEntityIds": [
+      "ea:collection:knowledge-hub-fifth-wave",
+      "ea:technology:webmcp",
+      "ea:technology:model-context-protocol",
+      "ea:concept:browser-software",
+      "ea:concept:human-computer-interaction",
+      "ea:concept:ai-agent",
+      "ea:concept:linked-data"
+    ],
+    "status": "experimental",
+    "confidence": "published",
+    "modifiedAt": "2026-07-12"
+  },
+  {
     "id": "ea:publication:webnn-and-local-ai-in-the-browser-fr",
     "locale": "fr",
     "route": "/fr/publications/webnn-and-local-ai-in-the-browser/",
@@ -8407,6 +8751,42 @@
     "modifiedAt": "2026-06-25"
   },
   {
+    "id": "ea:technology:agent2agent-protocol-fr",
+    "locale": "fr",
+    "route": "/fr/knowledge/technologies/agent2agent-protocol/",
+    "type": "technology",
+    "title": "Protocole Agent2Agent",
+    "alternateNames": [
+      "A2A"
+    ],
+    "abstract": "Agent2Agent est un protocole ouvert de découverte de capacités, de coordination de tâches et d’échange entre systèmes d’agents IA indépendants.",
+    "headings": [
+      "Rôle",
+      "Frontière",
+      "Maturité",
+      "Usage Electronic Artefacts"
+    ],
+    "body": "Rôle A2A définit un langage commun entre applications agentiques indépendantes. Un agent publie une Agent Card décrivant ses capacités, reçoit des messages, suit des tâches longues et renvoie des artefacts sans révéler son prompt, sa mémoire ou son implémentation. Frontière A2A et MCP répondent à des problèmes voisins. MCP relie une application IA à du contexte et des outils ; A2A coordonne le travail entre applications agentiques. Aucun des deux ne fournit seul une identité fiable, une autorisation complète ou une autonomie sûre. Maturité Le protocole est ouvert et gouverné via la Linux Foundation, mais ses interfaces évoluent encore. La version 0.3.0 constitue un jalon de développement, pas une garantie d’interopérabilité universelle. Usage Electronic Artefacts A2A peut servir de protocole de bord pour échanger des tâches gouvernées entre runtimes VASTE. VASTE conserverait la responsabilité des identités, permissions, provenances et transitions d’état.",
+    "tags": [
+      "A2A",
+      "Agents IA",
+      "interopérabilité",
+      "protocoles d’agents"
+    ],
+    "questions": [],
+    "relationLabels": [
+      "memberOfCollection Agent2Agent Protocol is an explicit member of the Knowledge Hub Fifth Wave collection.",
+      "documents A2A, Agent Interoperability and Governed Delegation documents Agent2Agent Protocol as one of its declared subjects."
+    ],
+    "relatedEntityIds": [
+      "ea:collection:knowledge-hub-fifth-wave",
+      "ea:publication:a2a-agent-interoperability-and-governed-delegation"
+    ],
+    "status": "experimental",
+    "confidence": "canonical",
+    "modifiedAt": "2026-07-12"
+  },
+  {
     "id": "ea:technology:c2pa-fr",
     "locale": "fr",
     "route": "/fr/knowledge/technologies/c2pa/",
@@ -8435,14 +8815,18 @@
       "documents C2PA Content Credentials and Generative Media Provenance documents C2PA as media provenance infrastructure.",
       "integratesWith Palimpsests can integrate with C2PA to attach signed provenance and production memory to public media derivatives.",
       "usesTechnology Verifiable Credentials for Cultural Archives and Creator Identity compares W3C credentials with C2PA media provenance.",
+      "memberOfCollection C2PA is an explicit member of the Knowledge Hub Fifth Wave collection.",
       "memberOfCollection C2PA is an explicit member of the Knowledge Hub Fourth Wave collection.",
+      "documents EU AI Act Transparency, Content Provenance and Creative Practice documents C2PA as one of its declared subjects.",
       "documents Verifiable Credentials for Cultural Archives and Creator Identity documents C2PA as one of its declared subjects."
     ],
     "relatedEntityIds": [
       "ea:publication:c2pa-content-credentials-and-generative-media-provenance",
       "ea:project:palimpsests",
       "ea:publication:verifiable-credentials-for-cultural-archives-and-creator-identity",
+      "ea:collection:knowledge-hub-fifth-wave",
       "ea:collection:knowledge-hub-fourth-wave",
+      "ea:publication:eu-ai-act-transparency-content-provenance-and-creative-practice",
       "ea:publication:verifiable-credentials-for-cultural-archives-and-creator-identity"
     ],
     "status": "active",
@@ -8665,9 +9049,12 @@
       "integratesWith VASTE can integrate with MCP as a scoped interface for graph resources, prompts and controlled tools.",
       "usesTechnology Prompt Injection and Trust Boundaries in AI Knowledge Systems uses MCP as a reference surface for resources, tools and host-side consent.",
       "usesTechnology The research question \"How can an AI understand someone during its very first conversation?\" uses Model Context Protocol as a relevant technical reference.",
+      "memberOfCollection Model Context Protocol is an explicit member of the Knowledge Hub Fifth Wave collection.",
       "memberOfCollection Model Context Protocol is an explicit member of the Knowledge Hub Fourth Wave collection.",
+      "documents A2A, Agent Interoperability and Governed Delegation documents Model Context Protocol as one of its declared subjects.",
       "documents Observability for AI Agents and Tool-Calling Systems documents Model Context Protocol as one of its declared subjects.",
-      "documents Prompt Injection and Trust Boundaries in AI Knowledge Systems documents Model Context Protocol as one of its declared subjects."
+      "documents Prompt Injection and Trust Boundaries in AI Knowledge Systems documents Model Context Protocol as one of its declared subjects.",
+      "documents WebMCP and the Agentic Web documents Model Context Protocol as one of its declared subjects."
     ],
     "relatedEntityIds": [
       "ea:publication:model-context-protocol-and-tool-using-ai-systems",
@@ -8675,9 +9062,12 @@
       "ea:program:vaste",
       "ea:publication:prompt-injection-and-trust-boundaries-in-ai-knowledge-systems",
       "ea:researchQuestion:first-conversation-understanding",
+      "ea:collection:knowledge-hub-fifth-wave",
       "ea:collection:knowledge-hub-fourth-wave",
+      "ea:publication:a2a-agent-interoperability-and-governed-delegation",
       "ea:publication:observability-for-ai-agents-and-tool-calling-systems",
-      "ea:publication:prompt-injection-and-trust-boundaries-in-ai-knowledge-systems"
+      "ea:publication:prompt-injection-and-trust-boundaries-in-ai-knowledge-systems",
+      "ea:publication:webmcp-and-the-agentic-web"
     ],
     "status": "active",
     "confidence": "canonical",
@@ -9022,6 +9412,40 @@
     "modifiedAt": "2026-06-25"
   },
   {
+    "id": "ea:technology:webmcp-fr",
+    "locale": "fr",
+    "route": "/fr/knowledge/technologies/webmcp/",
+    "type": "technology",
+    "title": "WebMCP",
+    "alternateNames": [],
+    "abstract": "WebMCP est une proposition expérimentale pour exposer les capacités d’une page comme des outils structurés découvrables et invocables par des agents de navigateur.",
+    "headings": [
+      "Rôle",
+      "Périmètre",
+      "Maturité",
+      "Usage Electronic Artefacts"
+    ],
+    "body": "Rôle WebMCP propose que les pages enregistrent des outils typés via des interfaces natives du navigateur. Un agent peut découvrir une action et fournir des arguments validés au lieu de reconstruire l’interaction depuis des pixels et des clics simulés. Périmètre La proposition vise la collaboration locale dans le navigateur, avec un humain présent. Elle complète les serveurs MCP et ne cherche pas à remplacer les sites, la sémantique d’accessibilité ou l’automatisation généraliste. Maturité WebMCP reste une proposition communautaire expérimentale. Permissions, iframes, confirmation utilisateur, validation des sorties et streaming sont encore discutés. Une architecture de production ne doit pas considérer l’API actuelle comme stable. Usage Electronic Artefacts L’idée centrale correspond à la marque : conserver une interface visible tout en exposant une surface d’action plus étroite et typée. Le Knowledge Hub pourrait proposer une navigation de graphe en lecture seule ou la préparation de relations sans abandonner le contrôle du DOM à l’agent.",
+    "tags": [
+      "WebMCP",
+      "web agentique",
+      "agents de navigateur",
+      "standards du Web"
+    ],
+    "questions": [],
+    "relationLabels": [
+      "memberOfCollection WebMCP is an explicit member of the Knowledge Hub Fifth Wave collection.",
+      "documents WebMCP and the Agentic Web documents WebMCP as one of its declared subjects."
+    ],
+    "relatedEntityIds": [
+      "ea:collection:knowledge-hub-fifth-wave",
+      "ea:publication:webmcp-and-the-agentic-web"
+    ],
+    "status": "experimental",
+    "confidence": "observed",
+    "modifiedAt": "2026-07-12"
+  },
+  {
     "id": "ea:technology:webnn-fr",
     "locale": "fr",
     "route": "/fr/knowledge/technologies/webnn/",
@@ -9266,7 +9690,9 @@
       "partOf VAB is the Assisted Boot orchestration path used to propose and materialize a governed VASTE System.",
       "evidencedBy The VASTE Validation Record maps major public claims to internal contracts, implementation, tests, commits and limitations.",
       "implementedBy VASTE is listed as a current software or project answer for the research question \"How can an AI understand someone during its very first conversation?\".",
-      "implementedBy VASTE is listed as a current software or project answer for the research question \"How can software become explainable through its own knowledge graph?\"."
+      "implementedBy VASTE is listed as a current software or project answer for the research question \"How can software become explainable through its own knowledge graph?\".",
+      "memberOfCollection VASTE is an explicit member of the Knowledge Hub Fifth Wave collection.",
+      "documents A2A, Agent Interoperability and Governed Delegation documents VASTE as one of its declared subjects."
     ],
     "relatedEntityIds": [
       "ea:publication:foundational-lineage-001",
@@ -9299,7 +9725,9 @@
       "ea:concept:vab-and-genesis",
       "ea:artefact:vaste-validation-record",
       "ea:researchQuestion:first-conversation-understanding",
-      "ea:researchQuestion:self-explaining-knowledge-graph-software"
+      "ea:researchQuestion:self-explaining-knowledge-graph-software",
+      "ea:collection:knowledge-hub-fifth-wave",
+      "ea:publication:a2a-agent-interoperability-and-governed-delegation"
     ],
     "status": "development",
     "confidence": "validated",
@@ -9342,7 +9770,9 @@
       "documents Generative Systems, Cybernetics and Creative Coding links Palimpsests to repetition, residue and transformation.",
       "documents Signal Archaeology, Audio Memory and Machine Listening links Palimpsests to audio memory and sonic residue.",
       "documents Multimodal AI Across Text, Image, Audio and Video uses Palimpsests as a compound media and provenance context.",
-      "memberOfCollection Palimpsests is an explicit member of the Knowledge Hub Foundations collection."
+      "memberOfCollection Palimpsests is an explicit member of the Knowledge Hub Fifth Wave collection.",
+      "memberOfCollection Palimpsests is an explicit member of the Knowledge Hub Foundations collection.",
+      "documents EU AI Act Transparency, Content Provenance and Creative Practice documents Palimpsests as one of its declared subjects."
     ],
     "relatedEntityIds": [
       "ea:publication:c2pa-content-credentials-and-generative-media-provenance",
@@ -9354,7 +9784,9 @@
       "ea:publication:generative-systems-cybernetics-and-creative-coding",
       "ea:publication:signal-archaeology-audio-memory-and-machine-listening",
       "ea:publication:multimodal-ai-across-text-image-audio-and-video",
-      "ea:collection:knowledge-hub-foundations"
+      "ea:collection:knowledge-hub-fifth-wave",
+      "ea:collection:knowledge-hub-foundations",
+      "ea:publication:eu-ai-act-transparency-content-provenance-and-creative-practice"
     ],
     "status": "active",
     "confidence": "published",
@@ -9511,6 +9943,58 @@
     "status": "active",
     "confidence": "published",
     "modifiedAt": "2026-07-09"
+  },
+  {
+    "id": "ea:publication:a2a-agent-interoperability-and-governed-delegation",
+    "locale": "en",
+    "route": "/publications/a2a-agent-interoperability-and-governed-delegation/",
+    "type": "publication",
+    "format": "technicalArticle",
+    "title": "A2A, Agent Interoperability and Governed Delegation",
+    "alternateNames": [],
+    "abstract": "A practical analysis of Agent2Agent protocol, agent discovery, task lifecycles, artifacts and the governance required before independent AI agents can safely delegate work.",
+    "headings": [
+      "Problem",
+      "Agent Cards and discovery",
+      "Architecture",
+      "A2A and MCP",
+      "Implementation",
+      "Implications for VASTE",
+      "Evidence",
+      "Limitations",
+      "Related reading",
+      "References"
+    ],
+    "body": "Problem AI agents are moving from isolated assistants toward systems that assign work to one another. The difficult part is not making two services exchange JSON. It is preserving meaning while different vendors, models and runtimes negotiate capabilities, progress and results. Agent2Agent, or A2A, addresses that exchange layer. The open protocol describes how an agent advertises capabilities, receives messages, manages a task and returns artifacts. It deliberately allows the remote agent to remain opaque: collaboration should not require access to its private memory, prompt or internal tools. Agent Cards and discovery An Agent Card is the public description of an A2A endpoint. It can identify the agent, its skills, supported interaction modes, endpoint and authentication expectations. This makes discovery machine-readable, but a card is a claim, not an attestation. A client still needs to decide who published it, whether the endpoint is trusted and which declared skills may be used. Discovery therefore has two layers. The protocol can answer “what does this agent say it can do?” Governance must answer “under which identity and authority may we rely on it?” Architecture A2A distinguishes conversational messages from tasks whose state can evolve over time. That distinction matters for work that pauses, requests more input or produces several outputs. A task may move through states while messages carry instructions or clarification. Artifacts represent deliverables such as text, files or structured data. The vocabulary is useful because it prevents every integration from inventing its own lifecycle. Yet shared states do not guarantee shared semantics. “Completed” can mean that a remote agent finished execution; it does not prove that the result is true, safe, licensed or fit to publish. A2A and MCP MCP and A2A are complementary. MCP exposes context and tools to an AI application. A2A lets one agent application collaborate with another. An agent may use MCP internally and A2A externally, but the protocols should not be collapsed into one permission model. The distinction clarifies blast radius. A remote A2A agent should not inherit access to every MCP tool available to the delegating agent. Delegation needs an explicit, narrower capability envelope. Implementation Safe delegation begins with a task contract: objective, input provenance, allowed operations, expected artifact types, expiry, budget and review policy. The contract should bind the requesting actor, remote agent, task and resulting artifacts to stable identifiers. Every transition should be observable. A durable audit record captures who delegated, which version of the Agent Card was used, what data crossed the boundary, which state changes occurred and which artifact was accepted. Sensitive payloads need minimization; useful auditability does not require retaining every private prompt. Implications for VASTE For VASTE, A2A is best treated as an edge protocol. A VASTE runtime could project a governed capability through an Agent Card, translate an incoming task into typed entities and events, and return an artifact with provenance. The runtime—not the remote protocol—would validate actor rights, relation constraints and publication state. This yields a practical design rule: interoperability may open a channel, but authority remains local. An agent can propose or perform bounded work; it cannot define the meaning of the graph it enters. Evidence The A2A specification defines Agent Cards, messages, tasks, artifacts and protocol bindings. Its Linux Foundation governance establishes an open project home; it does not remove the need to verify individual implementations and trust policies. Limitations A2A is evolving and adoption does not prove end-to-end compatibility. Authentication, service trust, prompt injection, data residency, cost control and result evaluation remain application responsibilities. Multi-agent architecture also adds failure modes: loops, duplicated work, contradictory outputs and cascading retries. The protocol is most valuable when it replaces a real integration seam. Adding agent-to-agent delegation where a deterministic API or workflow is enough only increases uncertainty. Related reading Continue with Model Context Protocol and Tool-Using AI Systems , AI Agents vs AI Workflows and Contextual Execution and Graph Runtimes . References A2A Protocol Project. Agent2Agent Protocol Specification, latest version accessed 12 July 2026. Google for Developers. “Google Cloud donates A2A to Linux Foundation,” 23 June 2025.",
+    "tags": [
+      "A2A",
+      "AI Agents",
+      "Agent Interoperability",
+      "Delegation",
+      "VASTE"
+    ],
+    "questions": [],
+    "relationLabels": [
+      "memberOfCollection A2A, Agent Interoperability and Governed Delegation is an explicit member of the Knowledge Hub Fifth Wave collection.",
+      "documents A2A, Agent Interoperability and Governed Delegation documents Agent2Agent Protocol as one of its declared subjects.",
+      "documents A2A, Agent Interoperability and Governed Delegation documents Model Context Protocol as one of its declared subjects.",
+      "documents A2A, Agent Interoperability and Governed Delegation documents AI Agent as one of its declared subjects.",
+      "documents A2A, Agent Interoperability and Governed Delegation documents Contextual Execution as one of its declared subjects.",
+      "documents A2A, Agent Interoperability and Governed Delegation documents Provenance as one of its declared subjects.",
+      "documents A2A, Agent Interoperability and Governed Delegation documents VASTE as one of its declared subjects."
+    ],
+    "relatedEntityIds": [
+      "ea:collection:knowledge-hub-fifth-wave",
+      "ea:technology:agent2agent-protocol",
+      "ea:technology:model-context-protocol",
+      "ea:concept:ai-agent",
+      "ea:concept:contextual-execution",
+      "ea:concept:provenance",
+      "ea:program:vaste"
+    ],
+    "status": "active",
+    "confidence": "published",
+    "modifiedAt": "2026-07-12"
   },
   {
     "id": "ea:publication:ai-agents-vs-ai-workflows",
@@ -9955,6 +10439,59 @@
     "status": "active",
     "confidence": "published",
     "modifiedAt": "2026-06-23"
+  },
+  {
+    "id": "ea:publication:eu-ai-act-transparency-content-provenance-and-creative-practice",
+    "locale": "en",
+    "route": "/publications/eu-ai-act-transparency-content-provenance-and-creative-practice/",
+    "type": "publication",
+    "format": "technicalArticle",
+    "title": "EU AI Act Transparency, Content Provenance and Creative Practice",
+    "alternateNames": [],
+    "abstract": "A source-led guide to the EU AI Act transparency duties applying from August 2026, connecting machine-readable marking, visible labels, deepfakes, public-interest text and creative provenance.",
+    "headings": [
+      "Problem",
+      "Architecture",
+      "Who acts: provider and deployer",
+      "A provenance record for creative work",
+      "Implementation",
+      "Creative and cultural implications",
+      "Relationship to SEO and discovery",
+      "Evidence",
+      "Limitations",
+      "Related reading",
+      "References"
+    ],
+    "body": "Problem From 2 August 2026, Article 50 transparency obligations of the EU AI Act apply to several forms of interactive and generative AI. The European Commission’s June 2026 code of practice translates part of that legal framework into measures for marking AI-generated or manipulated outputs and labelling deepfakes and certain public-interest text. This article is an implementation reading for creative and cultural organizations, not legal advice. The central lesson is operational: transparency cannot be added as a badge at the end of production. It needs to connect generation, editing, export, publication and preservation. Architecture Machine-readable marking helps systems detect that media was generated or manipulated. Visible labelling helps a person understand what they are seeing. The two layers overlap, but neither replaces the other. Metadata may be stripped when an image is recompressed, a video is captured or audio is transcoded. A visible notice may survive those transformations, yet provide too little detail for automated verification. Robust practice combines embedded or associated provenance with a plain-language disclosure near the content. Who acts: provider and deployer The framework distinguishes providers of AI systems from deployers who use them. A model or creative-tool provider may need to enable machine-readable marking and detection. A publisher, studio or cultural institution may need to label the resulting deepfake or qualifying public-interest publication. One organization can occupy several roles across a workflow. A studio might build an internal generative system, operate it for a client and publish selected outputs. Responsibility should therefore be mapped per system and use, not reduced to a single company-wide label. A provenance record for creative work A useful production record answers: which model or system participated, what source assets entered, what transformations followed, who reviewed the result, what rights applied and where the final object was published. It should distinguish machine generation from conventional editing and human authorship without pretending that creative work is a binary. C2PA Content Credentials can support signed provenance assertions and change history. They are valuable infrastructure, not a universal truth machine. A valid credential can show who signed a claim and whether attached data was altered; it cannot prove that every claim inside the credential is honest or that an unmarked file is synthetic. Implementation Start with an inventory of interactive AI and generative media uses. Assign provider or deployer roles, content types, publication contexts and responsible owners. For each workflow, define: a machine-readable marking path where technically feasible; a visible label triggered by the content and publication context; a durable internal record of tools, source material, review and rights; a fallback for formats or distribution channels that strip metadata; a correction and withdrawal path when a label or provenance claim is wrong. Labels should be specific. “Made with AI” says less than “background image generated with an AI image system and edited by the studio.” The disclosure should remain concise at the point of viewing, with a link to fuller provenance where the context warrants it. Creative and cultural implications Museums, labels, archives and studios need to protect more than compliance. They manage authorship, interpretation and public memory. Over-labelling every low-level assistive operation can obscure meaningful disclosure; under-labelling a synthetic voice, reconstructed face or fabricated documentary image can damage trust. A risk-based editorial policy can distinguish assistive changes, substantial generation, identity simulation and public-interest claims. The decisive questions are not only “was AI used?” but “what did it change, could an audience be misled, and which provenance would matter later?” For Palimpsests or future ORETH media, this means recording the lineage of generated and processed material while preserving the artistic narrative. Provenance should expand the work’s context, not flatten it into a compliance notice. Relationship to SEO and discovery Transparent content can also be more legible to search and AI retrieval systems when the publication exposes dates, authorship, source notes, media captions and structured metadata. These signals do not guarantee ranking. They do reduce ambiguity around who published a page, what it claims and when it changed. The strongest public record is layered: readable article, structured entity, cited sources, stable URL, visible disclosure and portable provenance. This architecture serves audiences first and gives machines better evidence to interpret. Evidence The Commission states that Article 50 transparency obligations apply from 2 August 2026 and separates provider marking duties from deployer labelling duties. C2PA 2.2 provides a technical provenance layer, while the Commission’s code supplies a voluntary compliance framework around marking and labelling. Limitations The regulatory guidance and technical state of the art continue to evolve. Organizations should review the Commission’s final guidance, the adequacy status of the code and applicable national enforcement before relying on a checklist. Existing systems may also have transitional rules. Compliance does not end the ethical question. A technically marked deepfake can still deceive through placement or framing. Transparency must be evaluated in the actual audience context. Related reading Read C2PA, Content Credentials and Generative Media Provenance , Responsible AI Governance for Creative and Cultural Systems and Digital Preservation and Living Archives . References European Commission. Code of Practice on Transparency of AI-Generated Content, 10 June 2026. European Commission. Guidelines on obligations for general-purpose AI providers, accessed 12 July 2026. C2PA. Content Credentials Technical Specification 2.2, 1 May 2025.",
+    "tags": [
+      "EU AI Act",
+      "AI Transparency",
+      "Synthetic Media",
+      "Content Provenance",
+      "C2PA"
+    ],
+    "questions": [],
+    "relationLabels": [
+      "memberOfCollection EU AI Act Transparency, Content Provenance and Creative Practice is an explicit member of the Knowledge Hub Fifth Wave collection.",
+      "documents EU AI Act Transparency, Content Provenance and Creative Practice documents C2PA as one of its declared subjects.",
+      "documents EU AI Act Transparency, Content Provenance and Creative Practice documents Provenance as one of its declared subjects.",
+      "documents EU AI Act Transparency, Content Provenance and Creative Practice documents Generative AI as one of its declared subjects.",
+      "documents EU AI Act Transparency, Content Provenance and Creative Practice documents Digital Preservation as one of its declared subjects.",
+      "documents EU AI Act Transparency, Content Provenance and Creative Practice documents Metadata as one of its declared subjects.",
+      "documents EU AI Act Transparency, Content Provenance and Creative Practice documents Palimpsests as one of its declared subjects."
+    ],
+    "relatedEntityIds": [
+      "ea:collection:knowledge-hub-fifth-wave",
+      "ea:technology:c2pa",
+      "ea:concept:provenance",
+      "ea:concept:generative-ai",
+      "ea:concept:digital-preservation",
+      "ea:concept:metadata",
+      "ea:project:palimpsests"
+    ],
+    "status": "active",
+    "confidence": "published",
+    "modifiedAt": "2026-07-12"
   },
   {
     "id": "ea:publication:event-driven-architecture-and-event-streams",
@@ -11982,6 +12519,59 @@
     "modifiedAt": "2026-06-24"
   },
   {
+    "id": "ea:publication:webmcp-and-the-agentic-web",
+    "locale": "en",
+    "route": "/publications/webmcp-and-the-agentic-web/",
+    "type": "publication",
+    "format": "technicalArticle",
+    "title": "WebMCP and the Agentic Web",
+    "alternateNames": [],
+    "abstract": "A critical guide to WebMCP and the emerging agentic web, where pages expose typed capabilities to browser agents while preserving interface state, origins and human oversight.",
+    "headings": [
+      "Problem",
+      "Architecture",
+      "Better than simulated clicks, not automatically safe",
+      "Origins, frames and permissions",
+      "Human interfaces remain primary",
+      "Implementation",
+      "SEO and machine readability",
+      "Evidence",
+      "Limitations",
+      "Related reading",
+      "References"
+    ],
+    "body": "Problem Most browser agents currently operate like hurried users. They inspect screenshots or accessibility trees, infer which control might matter and simulate clicks. The approach is general, but it is also slow and fragile. A redesign, ambiguous label or delayed component can break the inferred path. WebMCP explores a different contract: let the page declare a small set of structured tools. An agent could invoke filter-archive , prepare-citation or add-relation-draft with typed arguments while the page reuses its existing client-side logic and active session. Architecture The experimental proposal centers on a page-level model context interface. Scripts register named tools with descriptions, input schemas and execution handlers. A declarative path explores how ordinary HTML forms might expose equivalent capabilities without duplicating their behavior in JavaScript. The browser mediates discovery and invocation. This is important because the page retains its origin, lifecycle and visible state. Unlike a remote backend integration, an in-page tool can act on the same document the user sees. Better than simulated clicks, not automatically safe A typed tool is less ambiguous than pixel coordinates, but its consequences may be larger. A click is constrained by the current interface; a tool can compress several operations into one call. The schema therefore needs more than a persuasive description. It needs narrow inputs, predictable outputs, validation and a clear account of side effects. Read operations are the sensible starting point. Search, filtering, explanation and draft preparation can create value without silently committing a transaction. Destructive, financial, legal or publishing actions should require a browser-mediated confirmation that states what will change. Origins, frames and permissions Web security is built around origins, browsing contexts and permissions. Agent capabilities must fit those boundaries rather than invent an invisible parallel authority system. Cross-origin frames raise difficult questions: which document registered the tool, which agent can discover it and whose user session supplies the authority? The draft discusses permissions policy and selective exposure, but several details remain open. That uncertainty is a reason to prototype carefully, not to market the proposal as a settled standard. Human interfaces remain primary An agentic web should not become a second web that only machines can operate. Semantic HTML, keyboard access, labels, focus management and clear error states still serve humans, assistive technologies, search crawlers and agents. Structured tools can complement these foundations; they cannot repair an inaccessible product model. The strongest implementation shares one domain operation across three surfaces: the human interface, accessibility semantics and the agent tool. Each surface expresses the operation differently, but none forks the underlying business rule. Implementation For a knowledge graph, page tools can expose operations more precise than free-form browsing: retrieve a neighborhood, compare two claims, export a citation or prepare a relation proposal. Stable entity identifiers and provenance make the result easier to evaluate than text scraped from a rendered card. Electronic Artefacts could eventually expose read-only Knowledge Hub tools while keeping canonical content, JSON-LD and normal navigation as the public ground truth. VASTE could validate a proposed relation without granting the page authority to publish it. SEO and machine readability WebMCP is not an SEO shortcut. Search visibility still depends on crawlable pages, meaningful titles, internal links, structured data, evidence and useful prose. Agent tools address actions inside an active browser session; they do not replace the indexable information architecture. The useful overlap is conceptual: both search engines and agents benefit when entities, relations and sources are explicit. A site built around stable knowledge objects is better positioned for human search, AI retrieval and future browser tools than a site whose meaning exists only in visual layout. Evidence The WebMCP repository documents imperative registration, a declarative direction for forms and open security and privacy questions. W3C community discussions in 2026 frame it as part of an emerging agentic-web standardization space, not a completed Recommendation. Limitations The API remains experimental. Confirmation flows, output schemas, streaming, navigation during tool execution and exposure to embedded agents are still active design areas. Browser support and long-term compatibility cannot be assumed. Treat WebMCP as a research direction with a valuable principle: expose the smallest meaningful capability, preserve the user-visible context and let the browser enforce boundaries it already understands. Related reading See Model Context Protocol and Tool-Using AI Systems , Human Computer Interaction for Creative Tools and AI Search, Structured Content and Knowledge Graph SEO . References W3C Web Machine Learning Community Group. WebMCP explainer and draft repository, accessed 12 July 2026. W3C. AI Agent Protocol Community Group meeting, 6 May 2026.",
+    "tags": [
+      "WebMCP",
+      "Agentic Web",
+      "Browser Agents",
+      "Human Agent Collaboration",
+      "Web Standards"
+    ],
+    "questions": [],
+    "relationLabels": [
+      "memberOfCollection WebMCP and the Agentic Web is an explicit member of the Knowledge Hub Fifth Wave collection.",
+      "documents WebMCP and the Agentic Web documents WebMCP as one of its declared subjects.",
+      "documents WebMCP and the Agentic Web documents Model Context Protocol as one of its declared subjects.",
+      "documents WebMCP and the Agentic Web documents Browser Software as one of its declared subjects.",
+      "documents WebMCP and the Agentic Web documents Human Computer Interaction as one of its declared subjects.",
+      "documents WebMCP and the Agentic Web documents AI Agent as one of its declared subjects.",
+      "documents WebMCP and the Agentic Web documents Linked Data as one of its declared subjects."
+    ],
+    "relatedEntityIds": [
+      "ea:collection:knowledge-hub-fifth-wave",
+      "ea:technology:webmcp",
+      "ea:technology:model-context-protocol",
+      "ea:concept:browser-software",
+      "ea:concept:human-computer-interaction",
+      "ea:concept:ai-agent",
+      "ea:concept:linked-data"
+    ],
+    "status": "experimental",
+    "confidence": "published",
+    "modifiedAt": "2026-07-12"
+  },
+  {
     "id": "ea:publication:webnn-and-local-ai-in-the-browser",
     "locale": "en",
     "route": "/publications/webnn-and-local-ai-in-the-browser/",
@@ -12419,6 +13009,42 @@
     "modifiedAt": "2026-06-24"
   },
   {
+    "id": "ea:technology:agent2agent-protocol",
+    "locale": "en",
+    "route": "/knowledge/technologies/agent2agent-protocol/",
+    "type": "technology",
+    "title": "Agent2Agent Protocol",
+    "alternateNames": [
+      "A2A"
+    ],
+    "abstract": "Agent2Agent is an open protocol for capability discovery, task coordination and exchange between independent AI agent systems.",
+    "headings": [
+      "Role",
+      "Boundary",
+      "Maturity",
+      "Electronic Artefacts use"
+    ],
+    "body": "Role A2A defines a shared language for independent agent applications. An agent can publish an Agent Card describing capabilities and interaction requirements, receive messages, manage long-running tasks and return artifacts without revealing its private prompt, memory or implementation. Boundary A2A and MCP solve adjacent problems. MCP connects an AI application to context and tools; A2A coordinates work between agent applications. Neither protocol supplies authorization, trustworthy identity or safe autonomy by itself. Maturity The protocol is open and governed through the Linux Foundation, but its interfaces are still evolving. Version 0.3.0 is a development milestone, not a guarantee of universal interoperability. Electronic Artefacts use A2A is relevant to VASTE as a possible edge protocol for exchanging governed tasks between runtimes. VASTE would still own entity identity, permissions, provenance and state transitions.",
+    "tags": [
+      "A2A",
+      "AI Agents",
+      "Interoperability",
+      "Agent Protocols"
+    ],
+    "questions": [],
+    "relationLabels": [
+      "memberOfCollection Agent2Agent Protocol is an explicit member of the Knowledge Hub Fifth Wave collection.",
+      "documents A2A, Agent Interoperability and Governed Delegation documents Agent2Agent Protocol as one of its declared subjects."
+    ],
+    "relatedEntityIds": [
+      "ea:collection:knowledge-hub-fifth-wave",
+      "ea:publication:a2a-agent-interoperability-and-governed-delegation"
+    ],
+    "status": "experimental",
+    "confidence": "canonical",
+    "modifiedAt": "2026-07-12"
+  },
+  {
     "id": "ea:technology:c2pa",
     "locale": "en",
     "route": "/knowledge/technologies/c2pa/",
@@ -12446,14 +13072,18 @@
       "documents C2PA Content Credentials and Generative Media Provenance documents C2PA as media provenance infrastructure.",
       "integratesWith Palimpsests can integrate with C2PA to attach signed provenance and production memory to public media derivatives.",
       "usesTechnology Verifiable Credentials for Cultural Archives and Creator Identity compares W3C credentials with C2PA media provenance.",
+      "memberOfCollection C2PA is an explicit member of the Knowledge Hub Fifth Wave collection.",
       "memberOfCollection C2PA is an explicit member of the Knowledge Hub Fourth Wave collection.",
+      "documents EU AI Act Transparency, Content Provenance and Creative Practice documents C2PA as one of its declared subjects.",
       "documents Verifiable Credentials for Cultural Archives and Creator Identity documents C2PA as one of its declared subjects."
     ],
     "relatedEntityIds": [
       "ea:publication:c2pa-content-credentials-and-generative-media-provenance",
       "ea:project:palimpsests",
       "ea:publication:verifiable-credentials-for-cultural-archives-and-creator-identity",
+      "ea:collection:knowledge-hub-fifth-wave",
       "ea:collection:knowledge-hub-fourth-wave",
+      "ea:publication:eu-ai-act-transparency-content-provenance-and-creative-practice",
       "ea:publication:verifiable-credentials-for-cultural-archives-and-creator-identity"
     ],
     "status": "active",
@@ -12670,9 +13300,12 @@
       "integratesWith VASTE can integrate with MCP as a scoped interface for graph resources, prompts and controlled tools.",
       "usesTechnology Prompt Injection and Trust Boundaries in AI Knowledge Systems uses MCP as a reference surface for resources, tools and host-side consent.",
       "usesTechnology The research question \"How can an AI understand someone during its very first conversation?\" uses Model Context Protocol as a relevant technical reference.",
+      "memberOfCollection Model Context Protocol is an explicit member of the Knowledge Hub Fifth Wave collection.",
       "memberOfCollection Model Context Protocol is an explicit member of the Knowledge Hub Fourth Wave collection.",
+      "documents A2A, Agent Interoperability and Governed Delegation documents Model Context Protocol as one of its declared subjects.",
       "documents Observability for AI Agents and Tool-Calling Systems documents Model Context Protocol as one of its declared subjects.",
-      "documents Prompt Injection and Trust Boundaries in AI Knowledge Systems documents Model Context Protocol as one of its declared subjects."
+      "documents Prompt Injection and Trust Boundaries in AI Knowledge Systems documents Model Context Protocol as one of its declared subjects.",
+      "documents WebMCP and the Agentic Web documents Model Context Protocol as one of its declared subjects."
     ],
     "relatedEntityIds": [
       "ea:publication:model-context-protocol-and-tool-using-ai-systems",
@@ -12680,9 +13313,12 @@
       "ea:program:vaste",
       "ea:publication:prompt-injection-and-trust-boundaries-in-ai-knowledge-systems",
       "ea:researchQuestion:first-conversation-understanding",
+      "ea:collection:knowledge-hub-fifth-wave",
       "ea:collection:knowledge-hub-fourth-wave",
+      "ea:publication:a2a-agent-interoperability-and-governed-delegation",
       "ea:publication:observability-for-ai-agents-and-tool-calling-systems",
-      "ea:publication:prompt-injection-and-trust-boundaries-in-ai-knowledge-systems"
+      "ea:publication:prompt-injection-and-trust-boundaries-in-ai-knowledge-systems",
+      "ea:publication:webmcp-and-the-agentic-web"
     ],
     "status": "active",
     "confidence": "canonical",
@@ -13016,6 +13652,40 @@
     "status": "active",
     "confidence": "canonical",
     "modifiedAt": "2026-06-24"
+  },
+  {
+    "id": "ea:technology:webmcp",
+    "locale": "en",
+    "route": "/knowledge/technologies/webmcp/",
+    "type": "technology",
+    "title": "WebMCP",
+    "alternateNames": [],
+    "abstract": "WebMCP is an experimental web-platform proposal for exposing page capabilities as structured tools that browser agents can discover and invoke.",
+    "headings": [
+      "Role",
+      "Scope",
+      "Maturity",
+      "Electronic Artefacts use"
+    ],
+    "body": "Role WebMCP proposes that web pages register typed tools through browser-native interfaces. An agent can discover an action and invoke validated arguments instead of reconstructing the interaction from pixels and simulated clicks. Scope The proposal targets local browser collaboration with a human present. It complements backend MCP servers and does not aim to replace websites, accessibility semantics or general browser automation. Maturity WebMCP remains an experimental community proposal with open questions around permissions, embedded frames, user confirmation, output validation and streaming. Production designs should not treat its current API shape as stable. Electronic Artefacts use Its central idea fits Electronic Artefacts: preserve a visible interface while exposing a smaller, typed action surface. A future Knowledge Hub could offer read-only graph navigation or relation-draft tools without giving an agent unrestricted DOM control.",
+    "tags": [
+      "WebMCP",
+      "Agentic Web",
+      "Browser Agents",
+      "Web Standards"
+    ],
+    "questions": [],
+    "relationLabels": [
+      "memberOfCollection WebMCP is an explicit member of the Knowledge Hub Fifth Wave collection.",
+      "documents WebMCP and the Agentic Web documents WebMCP as one of its declared subjects."
+    ],
+    "relatedEntityIds": [
+      "ea:collection:knowledge-hub-fifth-wave",
+      "ea:publication:webmcp-and-the-agentic-web"
+    ],
+    "status": "experimental",
+    "confidence": "observed",
+    "modifiedAt": "2026-07-12"
   },
   {
     "id": "ea:technology:webnn",

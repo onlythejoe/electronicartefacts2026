@@ -28,11 +28,27 @@
       "confidence": "published"
     },
     {
+      "id": "ea:collection:knowledge-hub-fifth-wave",
+      "type": "collection",
+      "title": "Knowledge Hub Fifth Wave",
+      "route": "/archive/collections/knowledge-hub-fifth-wave/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
       "id": "ea:collection:voice-capture-studio",
       "type": "collection",
       "title": "Voice Capture Studio Collection",
       "route": "/archive/collections/voice-capture-studio/",
       "status": "active",
+      "confidence": "published"
+    },
+    {
+      "id": "ea:publication:webmcp-and-the-agentic-web",
+      "type": "publication",
+      "title": "WebMCP and the Agentic Web",
+      "route": "/publications/webmcp-and-the-agentic-web/",
+      "status": "experimental",
       "confidence": "published"
     }
   ],
@@ -56,6 +72,15 @@
       "confidence": "published"
     },
     {
+      "id": "ear:browser-software-member-of-collection-knowledge-hub-fifth-wave",
+      "source": "ea:concept:browser-software",
+      "target": "ea:collection:knowledge-hub-fifth-wave",
+      "predicate": "memberOfCollection",
+      "label": "Member of collection",
+      "statement": "Browser Software is an explicit member of the Knowledge Hub Fifth Wave collection.",
+      "confidence": "validated"
+    },
+    {
       "id": "ear:browser-software-member-of-collection-voice-capture-studio",
       "source": "ea:concept:browser-software",
       "target": "ea:collection:voice-capture-studio",
@@ -63,6 +88,15 @@
       "label": "Member of collection",
       "statement": "Browser Software is an explicit member of the Voice Capture Studio Collection collection.",
       "confidence": "validated"
+    },
+    {
+      "id": "ear:webmcp-and-the-agentic-web-documents-browser-software",
+      "source": "ea:publication:webmcp-and-the-agentic-web",
+      "target": "ea:concept:browser-software",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "WebMCP and the Agentic Web documents Browser Software as one of its declared subjects.",
+      "confidence": "published"
     }
   ]
 }

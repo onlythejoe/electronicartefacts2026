@@ -52,6 +52,14 @@
       "confidence": "published"
     },
     {
+      "id": "ea:publication:eu-ai-act-transparency-content-provenance-and-creative-practice",
+      "type": "publication",
+      "title": "EU AI Act Transparency, Content Provenance and Creative Practice",
+      "route": "/publications/eu-ai-act-transparency-content-provenance-and-creative-practice/",
+      "status": "active",
+      "confidence": "published"
+    },
+    {
       "id": "ea:publication:multimodal-ai-across-text-image-audio-and-video",
       "type": "publication",
       "title": "Multimodal AI Across Text, Image, Audio and Video",
@@ -112,6 +120,15 @@
       "predicate": "documents",
       "label": "Documents",
       "statement": "C2PA Content Credentials and Generative Media Provenance documents Generative AI as one of its declared subjects.",
+      "confidence": "published"
+    },
+    {
+      "id": "ear:eu-ai-act-transparency-content-provenance-and-creative-practice-documents-generative-ai",
+      "source": "ea:publication:eu-ai-act-transparency-content-provenance-and-creative-practice",
+      "target": "ea:concept:generative-ai",
+      "predicate": "documents",
+      "label": "Documents",
+      "statement": "EU AI Act Transparency, Content Provenance and Creative Practice documents Generative AI as one of its declared subjects.",
       "confidence": "published"
     },
     {

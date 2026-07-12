@@ -3579,6 +3579,149 @@
     "visibility": "public"
   },
   {
+    "id": "ear:a2a-agent-interoperability-and-governed-delegation-member-of-collection-knowledge-hub-fifth-wave",
+    "subject": "ea:publication:a2a-agent-interoperability-and-governed-delegation",
+    "predicate": "memberOfCollection",
+    "object": "ea:collection:knowledge-hub-fifth-wave",
+    "statement": "A2A, Agent Interoperability and Governed Delegation is an explicit member of the Knowledge Hub Fifth Wave collection.",
+    "confidence": "published",
+    "createdAt": "2026-07-12",
+    "reviewedAt": "2026-07-12",
+    "visibility": "public"
+  },
+  {
+    "id": "ear:webmcp-and-the-agentic-web-member-of-collection-knowledge-hub-fifth-wave",
+    "subject": "ea:publication:webmcp-and-the-agentic-web",
+    "predicate": "memberOfCollection",
+    "object": "ea:collection:knowledge-hub-fifth-wave",
+    "statement": "WebMCP and the Agentic Web is an explicit member of the Knowledge Hub Fifth Wave collection.",
+    "confidence": "published",
+    "createdAt": "2026-07-12",
+    "reviewedAt": "2026-07-12",
+    "visibility": "public"
+  },
+  {
+    "id": "ear:eu-ai-act-transparency-content-provenance-and-creative-practice-member-of-collection-knowledge-hub-fifth-wave",
+    "subject": "ea:publication:eu-ai-act-transparency-content-provenance-and-creative-practice",
+    "predicate": "memberOfCollection",
+    "object": "ea:collection:knowledge-hub-fifth-wave",
+    "statement": "EU AI Act Transparency, Content Provenance and Creative Practice is an explicit member of the Knowledge Hub Fifth Wave collection.",
+    "confidence": "published",
+    "createdAt": "2026-07-12",
+    "reviewedAt": "2026-07-12",
+    "visibility": "public"
+  },
+  {
+    "id": "ear:agent2agent-protocol-member-of-collection-knowledge-hub-fifth-wave",
+    "subject": "ea:technology:agent2agent-protocol",
+    "predicate": "memberOfCollection",
+    "object": "ea:collection:knowledge-hub-fifth-wave",
+    "statement": "Agent2Agent Protocol is an explicit member of the Knowledge Hub Fifth Wave collection.",
+    "confidence": "canonical",
+    "createdAt": "2026-07-12",
+    "reviewedAt": "2026-07-12",
+    "visibility": "public"
+  },
+  {
+    "id": "ear:webmcp-member-of-collection-knowledge-hub-fifth-wave",
+    "subject": "ea:technology:webmcp",
+    "predicate": "memberOfCollection",
+    "object": "ea:collection:knowledge-hub-fifth-wave",
+    "statement": "WebMCP is an explicit member of the Knowledge Hub Fifth Wave collection.",
+    "confidence": "observed",
+    "createdAt": "2026-07-12",
+    "reviewedAt": "2026-07-12",
+    "visibility": "public"
+  },
+  {
+    "id": "ear:model-context-protocol-member-of-collection-knowledge-hub-fifth-wave",
+    "subject": "ea:technology:model-context-protocol",
+    "predicate": "memberOfCollection",
+    "object": "ea:collection:knowledge-hub-fifth-wave",
+    "statement": "Model Context Protocol is an explicit member of the Knowledge Hub Fifth Wave collection.",
+    "confidence": "canonical",
+    "createdAt": "2026-06-24",
+    "reviewedAt": "2026-06-24",
+    "visibility": "public"
+  },
+  {
+    "id": "ear:c2pa-member-of-collection-knowledge-hub-fifth-wave",
+    "subject": "ea:technology:c2pa",
+    "predicate": "memberOfCollection",
+    "object": "ea:collection:knowledge-hub-fifth-wave",
+    "statement": "C2PA is an explicit member of the Knowledge Hub Fifth Wave collection.",
+    "confidence": "canonical",
+    "createdAt": "2026-06-24",
+    "reviewedAt": "2026-06-24",
+    "visibility": "public"
+  },
+  {
+    "id": "ear:ai-agent-member-of-collection-knowledge-hub-fifth-wave",
+    "subject": "ea:concept:ai-agent",
+    "predicate": "memberOfCollection",
+    "object": "ea:collection:knowledge-hub-fifth-wave",
+    "statement": "AI Agent is an explicit member of the Knowledge Hub Fifth Wave collection.",
+    "confidence": "validated",
+    "createdAt": "2026-06-24",
+    "reviewedAt": "2026-06-24",
+    "visibility": "public"
+  },
+  {
+    "id": "ear:browser-software-member-of-collection-knowledge-hub-fifth-wave",
+    "subject": "ea:concept:browser-software",
+    "predicate": "memberOfCollection",
+    "object": "ea:collection:knowledge-hub-fifth-wave",
+    "statement": "Browser Software is an explicit member of the Knowledge Hub Fifth Wave collection.",
+    "confidence": "validated",
+    "createdAt": "2026-07-09",
+    "reviewedAt": "2026-07-09",
+    "visibility": "public"
+  },
+  {
+    "id": "ear:contextual-execution-member-of-collection-knowledge-hub-fifth-wave",
+    "subject": "ea:concept:contextual-execution",
+    "predicate": "memberOfCollection",
+    "object": "ea:collection:knowledge-hub-fifth-wave",
+    "statement": "Contextual Execution is an explicit member of the Knowledge Hub Fifth Wave collection.",
+    "confidence": "canonical",
+    "createdAt": "2026-06-23",
+    "reviewedAt": "2026-06-23",
+    "visibility": "public"
+  },
+  {
+    "id": "ear:provenance-member-of-collection-knowledge-hub-fifth-wave",
+    "subject": "ea:concept:provenance",
+    "predicate": "memberOfCollection",
+    "object": "ea:collection:knowledge-hub-fifth-wave",
+    "statement": "Provenance is an explicit member of the Knowledge Hub Fifth Wave collection.",
+    "confidence": "validated",
+    "createdAt": "2026-06-23",
+    "reviewedAt": "2026-06-23",
+    "visibility": "public"
+  },
+  {
+    "id": "ear:vaste-member-of-collection-knowledge-hub-fifth-wave",
+    "subject": "ea:program:vaste",
+    "predicate": "memberOfCollection",
+    "object": "ea:collection:knowledge-hub-fifth-wave",
+    "statement": "VASTE is an explicit member of the Knowledge Hub Fifth Wave collection.",
+    "confidence": "validated",
+    "createdAt": "2024-01-01",
+    "reviewedAt": "2026-07-12",
+    "visibility": "public"
+  },
+  {
+    "id": "ear:palimpsests-member-of-collection-knowledge-hub-fifth-wave",
+    "subject": "ea:project:palimpsests",
+    "predicate": "memberOfCollection",
+    "object": "ea:collection:knowledge-hub-fifth-wave",
+    "statement": "Palimpsests is an explicit member of the Knowledge Hub Fifth Wave collection.",
+    "confidence": "published",
+    "createdAt": "2026-01-01",
+    "reviewedAt": "2026-06-23",
+    "visibility": "public"
+  },
+  {
     "id": "ear:knowledge-graphs-for-cultural-infrastructure-member-of-collection-knowledge-hub-foundations",
     "subject": "ea:publication:knowledge-graphs-for-cultural-infrastructure",
     "predicate": "memberOfCollection",
@@ -4679,6 +4822,72 @@
     "visibility": "public"
   },
   {
+    "id": "ear:a2a-agent-interoperability-and-governed-delegation-documents-agent2agent-protocol",
+    "subject": "ea:publication:a2a-agent-interoperability-and-governed-delegation",
+    "predicate": "documents",
+    "object": "ea:technology:agent2agent-protocol",
+    "statement": "A2A, Agent Interoperability and Governed Delegation documents Agent2Agent Protocol as one of its declared subjects.",
+    "confidence": "published",
+    "createdAt": "2026-07-12",
+    "reviewedAt": "2026-07-12",
+    "visibility": "public"
+  },
+  {
+    "id": "ear:a2a-agent-interoperability-and-governed-delegation-documents-model-context-protocol",
+    "subject": "ea:publication:a2a-agent-interoperability-and-governed-delegation",
+    "predicate": "documents",
+    "object": "ea:technology:model-context-protocol",
+    "statement": "A2A, Agent Interoperability and Governed Delegation documents Model Context Protocol as one of its declared subjects.",
+    "confidence": "published",
+    "createdAt": "2026-07-12",
+    "reviewedAt": "2026-07-12",
+    "visibility": "public"
+  },
+  {
+    "id": "ear:a2a-agent-interoperability-and-governed-delegation-documents-ai-agent",
+    "subject": "ea:publication:a2a-agent-interoperability-and-governed-delegation",
+    "predicate": "documents",
+    "object": "ea:concept:ai-agent",
+    "statement": "A2A, Agent Interoperability and Governed Delegation documents AI Agent as one of its declared subjects.",
+    "confidence": "published",
+    "createdAt": "2026-07-12",
+    "reviewedAt": "2026-07-12",
+    "visibility": "public"
+  },
+  {
+    "id": "ear:a2a-agent-interoperability-and-governed-delegation-documents-contextual-execution",
+    "subject": "ea:publication:a2a-agent-interoperability-and-governed-delegation",
+    "predicate": "documents",
+    "object": "ea:concept:contextual-execution",
+    "statement": "A2A, Agent Interoperability and Governed Delegation documents Contextual Execution as one of its declared subjects.",
+    "confidence": "published",
+    "createdAt": "2026-07-12",
+    "reviewedAt": "2026-07-12",
+    "visibility": "public"
+  },
+  {
+    "id": "ear:a2a-agent-interoperability-and-governed-delegation-documents-provenance",
+    "subject": "ea:publication:a2a-agent-interoperability-and-governed-delegation",
+    "predicate": "documents",
+    "object": "ea:concept:provenance",
+    "statement": "A2A, Agent Interoperability and Governed Delegation documents Provenance as one of its declared subjects.",
+    "confidence": "published",
+    "createdAt": "2026-07-12",
+    "reviewedAt": "2026-07-12",
+    "visibility": "public"
+  },
+  {
+    "id": "ear:a2a-agent-interoperability-and-governed-delegation-documents-vaste",
+    "subject": "ea:publication:a2a-agent-interoperability-and-governed-delegation",
+    "predicate": "documents",
+    "object": "ea:program:vaste",
+    "statement": "A2A, Agent Interoperability and Governed Delegation documents VASTE as one of its declared subjects.",
+    "confidence": "published",
+    "createdAt": "2026-07-12",
+    "reviewedAt": "2026-07-12",
+    "visibility": "public"
+  },
+  {
     "id": "ear:ai-agents-vs-ai-workflows-documents-large-language-model",
     "subject": "ea:publication:ai-agents-vs-ai-workflows",
     "predicate": "documents",
@@ -4764,6 +4973,72 @@
     "confidence": "published",
     "createdAt": "2026-06-23",
     "reviewedAt": "2026-06-23",
+    "visibility": "public"
+  },
+  {
+    "id": "ear:eu-ai-act-transparency-content-provenance-and-creative-practice-documents-c2pa",
+    "subject": "ea:publication:eu-ai-act-transparency-content-provenance-and-creative-practice",
+    "predicate": "documents",
+    "object": "ea:technology:c2pa",
+    "statement": "EU AI Act Transparency, Content Provenance and Creative Practice documents C2PA as one of its declared subjects.",
+    "confidence": "published",
+    "createdAt": "2026-07-12",
+    "reviewedAt": "2026-07-12",
+    "visibility": "public"
+  },
+  {
+    "id": "ear:eu-ai-act-transparency-content-provenance-and-creative-practice-documents-provenance",
+    "subject": "ea:publication:eu-ai-act-transparency-content-provenance-and-creative-practice",
+    "predicate": "documents",
+    "object": "ea:concept:provenance",
+    "statement": "EU AI Act Transparency, Content Provenance and Creative Practice documents Provenance as one of its declared subjects.",
+    "confidence": "published",
+    "createdAt": "2026-07-12",
+    "reviewedAt": "2026-07-12",
+    "visibility": "public"
+  },
+  {
+    "id": "ear:eu-ai-act-transparency-content-provenance-and-creative-practice-documents-generative-ai",
+    "subject": "ea:publication:eu-ai-act-transparency-content-provenance-and-creative-practice",
+    "predicate": "documents",
+    "object": "ea:concept:generative-ai",
+    "statement": "EU AI Act Transparency, Content Provenance and Creative Practice documents Generative AI as one of its declared subjects.",
+    "confidence": "published",
+    "createdAt": "2026-07-12",
+    "reviewedAt": "2026-07-12",
+    "visibility": "public"
+  },
+  {
+    "id": "ear:eu-ai-act-transparency-content-provenance-and-creative-practice-documents-digital-preservation",
+    "subject": "ea:publication:eu-ai-act-transparency-content-provenance-and-creative-practice",
+    "predicate": "documents",
+    "object": "ea:concept:digital-preservation",
+    "statement": "EU AI Act Transparency, Content Provenance and Creative Practice documents Digital Preservation as one of its declared subjects.",
+    "confidence": "published",
+    "createdAt": "2026-07-12",
+    "reviewedAt": "2026-07-12",
+    "visibility": "public"
+  },
+  {
+    "id": "ear:eu-ai-act-transparency-content-provenance-and-creative-practice-documents-metadata",
+    "subject": "ea:publication:eu-ai-act-transparency-content-provenance-and-creative-practice",
+    "predicate": "documents",
+    "object": "ea:concept:metadata",
+    "statement": "EU AI Act Transparency, Content Provenance and Creative Practice documents Metadata as one of its declared subjects.",
+    "confidence": "published",
+    "createdAt": "2026-07-12",
+    "reviewedAt": "2026-07-12",
+    "visibility": "public"
+  },
+  {
+    "id": "ear:eu-ai-act-transparency-content-provenance-and-creative-practice-documents-palimpsests",
+    "subject": "ea:publication:eu-ai-act-transparency-content-provenance-and-creative-practice",
+    "predicate": "documents",
+    "object": "ea:project:palimpsests",
+    "statement": "EU AI Act Transparency, Content Provenance and Creative Practice documents Palimpsests as one of its declared subjects.",
+    "confidence": "published",
+    "createdAt": "2026-07-12",
+    "reviewedAt": "2026-07-12",
     "visibility": "public"
   },
   {
@@ -5182,6 +5457,72 @@
     "confidence": "published",
     "createdAt": "2026-06-24",
     "reviewedAt": "2026-06-24",
+    "visibility": "public"
+  },
+  {
+    "id": "ear:webmcp-and-the-agentic-web-documents-webmcp",
+    "subject": "ea:publication:webmcp-and-the-agentic-web",
+    "predicate": "documents",
+    "object": "ea:technology:webmcp",
+    "statement": "WebMCP and the Agentic Web documents WebMCP as one of its declared subjects.",
+    "confidence": "published",
+    "createdAt": "2026-07-12",
+    "reviewedAt": "2026-07-12",
+    "visibility": "public"
+  },
+  {
+    "id": "ear:webmcp-and-the-agentic-web-documents-model-context-protocol",
+    "subject": "ea:publication:webmcp-and-the-agentic-web",
+    "predicate": "documents",
+    "object": "ea:technology:model-context-protocol",
+    "statement": "WebMCP and the Agentic Web documents Model Context Protocol as one of its declared subjects.",
+    "confidence": "published",
+    "createdAt": "2026-07-12",
+    "reviewedAt": "2026-07-12",
+    "visibility": "public"
+  },
+  {
+    "id": "ear:webmcp-and-the-agentic-web-documents-browser-software",
+    "subject": "ea:publication:webmcp-and-the-agentic-web",
+    "predicate": "documents",
+    "object": "ea:concept:browser-software",
+    "statement": "WebMCP and the Agentic Web documents Browser Software as one of its declared subjects.",
+    "confidence": "published",
+    "createdAt": "2026-07-12",
+    "reviewedAt": "2026-07-12",
+    "visibility": "public"
+  },
+  {
+    "id": "ear:webmcp-and-the-agentic-web-documents-human-computer-interaction",
+    "subject": "ea:publication:webmcp-and-the-agentic-web",
+    "predicate": "documents",
+    "object": "ea:concept:human-computer-interaction",
+    "statement": "WebMCP and the Agentic Web documents Human Computer Interaction as one of its declared subjects.",
+    "confidence": "published",
+    "createdAt": "2026-07-12",
+    "reviewedAt": "2026-07-12",
+    "visibility": "public"
+  },
+  {
+    "id": "ear:webmcp-and-the-agentic-web-documents-ai-agent",
+    "subject": "ea:publication:webmcp-and-the-agentic-web",
+    "predicate": "documents",
+    "object": "ea:concept:ai-agent",
+    "statement": "WebMCP and the Agentic Web documents AI Agent as one of its declared subjects.",
+    "confidence": "published",
+    "createdAt": "2026-07-12",
+    "reviewedAt": "2026-07-12",
+    "visibility": "public"
+  },
+  {
+    "id": "ear:webmcp-and-the-agentic-web-documents-linked-data",
+    "subject": "ea:publication:webmcp-and-the-agentic-web",
+    "predicate": "documents",
+    "object": "ea:concept:linked-data",
+    "statement": "WebMCP and the Agentic Web documents Linked Data as one of its declared subjects.",
+    "confidence": "published",
+    "createdAt": "2026-07-12",
+    "reviewedAt": "2026-07-12",
     "visibility": "public"
   },
   {
