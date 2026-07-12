@@ -16515,6 +16515,40 @@ article.publication-body--vaste {
 }
 @media(prefers-reduced-motion:reduce){.palimpsests-artist-hero__portrait>img{animation:none}}
 
+/* Palimpsests profile v3 — quiet campaign layout. */
+.palimpsests-artist-hero {
+  background:
+    radial-gradient(circle at 78% 24%,rgba(255,255,255,.72),transparent 26%),
+    linear-gradient(128deg,#eee9e1 0%,#ddd9d2 54%,#c9cccd 100%);
+}
+.palimpsests-artist-hero::after { display:none; }
+.palimpsests-artist-hero__halo { border:0;background:radial-gradient(ellipse at 52% 43%,rgba(255,255,255,.44),rgba(255,255,255,.06) 58%,transparent 72%);box-shadow:none; }
+.palimpsests-profile-window { border:0;border-radius:.65rem;background:rgba(245,242,236,.76);box-shadow:0 12px 28px rgba(49,53,58,.09);backdrop-filter:blur(12px); }
+.palimpsests-profile-window--status { display:none; }
+.palimpsests-orbit-dots i { width:.38rem;height:.38rem;border:0;background:rgba(78,86,95,.28);box-shadow:none; }
+@media(min-width:64.0625rem){
+  .palimpsests-artist-hero { min-height:clamp(42rem,calc(100svh - 3rem),55rem); }
+  .palimpsests-artist-hero__copy { width:min(40%,36rem);min-height:calc(clamp(42rem,calc(100svh - 3rem),55rem) - clamp(4rem,8vw,9.2rem)); }
+  .palimpsests-artist-hero h1 { font-size:clamp(4.7rem,7.2vw,8rem); }
+  .palimpsests-artist-hero__portrait>img { inset:auto -12% -8% auto;width:80%;height:auto;max-width:none;object-fit:initial;animation:palimpsests-model-reveal 900ms cubic-bezier(.16,.82,.24,1) both; }
+  .palimpsests-artist-hero__halo { inset:4% 0 0 40%; }
+  .palimpsests-profile-window--identity { top:10%;right:3%; }
+  .palimpsests-profile-window--work { left:48%;bottom:14%; }
+  .palimpsests-orbit-dots { inset:8% 3% 5% 47%;opacity:.48; }
+}
+@media(max-width:64rem){
+  .palimpsests-artist-hero__portrait { overflow:hidden; }
+  .palimpsests-artist-hero__halo { inset:7% 3% 0; }
+}
+@media(max-width:48rem){
+  .palimpsests-artist-hero { padding-bottom:0; }
+  .palimpsests-artist-hero__portrait { min-height:32rem;margin:0; }
+  .palimpsests-artist-hero__portrait>img { inset:auto -25% 8% auto;width:145%;height:auto;max-width:none;object-fit:initial;object-position:initial; }
+  .palimpsests-profile-window--identity { top:8%;right:.8rem; }
+  .palimpsests-profile-window--work { left:.8rem;bottom:8%; }
+  .palimpsests-orbit-dots { opacity:.35; }
+}
+
 /* Shared hover motion: responsive on entry, soft on arrival and return. */
 @media (hover: hover) and (pointer: fine) and (prefers-reduced-motion: no-preference) {
   .button,
