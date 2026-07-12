@@ -36,6 +36,7 @@ const jsSources = [
   "assets/js/core/view.js",
   "assets/js/core/surface.js",
   "assets/js/core/behaviors.js",
+  "assets/js/core/context-menu.js",
   "assets/js/main.js",
 ];
 

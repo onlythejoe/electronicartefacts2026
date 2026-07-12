@@ -6,6 +6,7 @@
   const { loadIncludes } = window.EA_INCLUDES;
   const { statusBadge, chip, tagRow, metadataList, linkRow, metricRail, cardLinkAttrs, cardOverlayLink } = window.EA_UI;
   const { initFilters, initSearch, initLanguageSwitcher, initCardLinks, initContactDiscovery, initCapabilityMaps, initProgressiveGrids, initUXEnhancements, initEngagementPanels, refreshCardSurfaces, syncNavigationState, syncSeoMeta } = window.EA_BEHAVIORS;
+  const { init: initContextMenu } = window.EA_CONTEXT_MENU || {};
   const {
     cardBaseAttrs,
     mediaFrom,
@@ -4804,6 +4805,7 @@
     initProgressiveGrids();
     initUXEnhancements(filterState);
     initEngagementPanels();
+    initContextMenu?.();
     startVasteEngineAnimation();
     startComputationFieldAnimation();
     initForgeArtifactViewer();
